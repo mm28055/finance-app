@@ -1,0 +1,74 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Company {
+  id              String   @id @default(uuid())
+  name            String
+  ticker          String   @unique
+  isin            String?  @unique
+  sector          String
+  businessProfile String? // The "Deep Dive" text (500 words)
+  aliases         String? // JSON string of aliases
+  isVisible       Boolean  @default(true) // For "Unsorted" or "Hidden" companies
+  status          String   @default("ACTIVE") // ACTIVE, ARCHIVED, UNSORTED
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  transcripts Transcript[]
+  financials  Financials[]
+}
+
+model Quarter {
+  id        String   @id @default(uuid())
+  name      String   @unique // e.g., "Q3 FY25"
+  startDate DateTime?
+  endDate   DateTime?
+  
+  transcripts Transcript[]
+  financials  Financials[]
+}
+
+model Transcript {
+  id        String   @id @default(uuid())
+  companyId String
+  quarterId String
+  fileUrl   String? // Path to PDF (local or cloud)
+  rawText   String? // OCR'd text
+  
+  // AI Analysis Output
+  financialHighlights  String? // JSON string
+  strategicInitiatives String? // JSON string
+  outlook              String? // JSON string
+  sentimentScore       Float?
+  
+  company Company @relation(fields: [companyId], references: [id])
+  quarter Quarter @relation(fields: [quarterId], references: [id])
+  
+  createdAt DateTime @default(now())
+}
+
+model Financials {
+  id        String   @id @default(uuid())
+  companyId String
+  quarterId String
+  
+  // The Matrix Data
+  revenue   Decimal
+  ebitda    Decimal
+  pat       Decimal
+  currency  String @default("INR")
+  
+  company Company @relation(fields: [companyId], references: [id])
+  quarter Quarter @relation(fields: [quarterId], references: [id])
+
+  @@unique([companyId, quarterId]) // One financial record per company per quarter
+}
