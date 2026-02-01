@@ -1,7 +1,10 @@
 import { PrismaClient } from '@prisma/client';
 
 const prismaClientSingleton = () => {
-    return new PrismaClient();
+    console.log('Initializing Prisma with Engine:', process.env.PRISMA_CLIENT_ENGINE_TYPE || 'default (library)');
+    return new PrismaClient({
+        log: ['error', 'warn'],
+    });
 };
 
 type PrismaClientSingleton = ReturnType<typeof prismaClientSingleton>;

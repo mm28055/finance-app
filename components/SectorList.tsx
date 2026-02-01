@@ -1,99 +1,130 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { CompanyRow } from './CompanyRow';
+import type { CompanyFinancials } from './FinancialMatrix';
+import { AnalysisResult } from '@/lib/ai-analyst';
+import { SectorSection } from './SectorSection';
+import { useAdmin } from '@/context/AdminContext';
+import { AddCompanyModal } from './AddCompanyModal';
+import { Plus, Search } from 'lucide-react';
 
-// Dummy Data for Preview
-const MOCK_DATA = [
-    {
-        sector: "Chemicals",
-        stats: { companies: 5, avgGrowth: "+12%", sentiment: 8.5 },
-        companies: [
-            {
-                name: "Deepak Nitrite", ticker: "DEEPAKNTR", price: 2450, priceChange: 1.2,
-                financials: {
-                    revenue: { currentQ: 2100, ytd: 5800, deltaQoQ: 5.2, deltaYoY: 12.1, deltaYTD: 8.5 },
-                    ebitda: { currentQ: 450, ytd: 1100, deltaQoQ: -2.1, deltaYoY: 5.5, deltaYTD: 3.2 },
-                    ebitdaMargin: { currentQ: 21.4, ytd: 19.0, deltaQoQ: -1.5, deltaYoY: -1.2, deltaYTD: 0 },
-                    pat: { currentQ: 280, ytd: 750, deltaQoQ: 8.5, deltaYoY: 15.2, deltaYTD: 10.0 },
-                    patMargin: { currentQ: 13.3, ytd: 12.9, deltaQoQ: 0.4, deltaYoY: 0.2, deltaYTD: 0 }
-                }
-            },
-            {
-                name: "Tata Chemicals", ticker: "TATACHEM", price: 1050, priceChange: -0.5,
-                financials: {
-                    revenue: { currentQ: 3800, ytd: 11200, deltaQoQ: -1.2, deltaYoY: -5.1, deltaYTD: -2.2 },
-                    ebitda: { currentQ: 620, ytd: 1800, deltaQoQ: -8.5, deltaYoY: -12.1, deltaYTD: -6.5 },
-                    ebitdaMargin: { currentQ: 16.3, ytd: 16.0, deltaQoQ: -1.2, deltaYoY: -1.1, deltaYTD: 0 },
-                    pat: { currentQ: 150, ytd: 480, deltaQoQ: -25.0, deltaYoY: -30.5, deltaYTD: -15.0 },
-                    patMargin: { currentQ: 3.9, ytd: 4.2, deltaQoQ: -1.0, deltaYoY: -1.5, deltaYTD: 0 }
-                }
-            }
-        ]
-    },
-    {
-        sector: "Banking",
-        stats: { companies: 3, avgGrowth: "+18%", sentiment: 9.2 },
-        companies: [
-            {
-                name: "HDFC Bank", ticker: "HDFCBANK", price: 1680, priceChange: 0.8,
-                financials: {
-                    revenue: { currentQ: 32000, ytd: 95000, deltaQoQ: 4.5, deltaYoY: 15.2, deltaYTD: 16.0 },
-                    ebitda: { currentQ: 0, ytd: 0, deltaQoQ: 0, deltaYoY: 0, deltaYTD: 0 }, // Not applicable for Banks usually, but kept for schema
-                    ebitdaMargin: { currentQ: 0, ytd: 0, deltaQoQ: 0, deltaYoY: 0, deltaYTD: 0 },
-                    pat: { currentQ: 16500, ytd: 48000, deltaQoQ: 3.2, deltaYoY: 21.0, deltaYTD: 19.5 },
-                    patMargin: { currentQ: 0, ytd: 0, deltaQoQ: 0, deltaYoY: 0, deltaYTD: 0 }
-                }
-            }
-        ]
+export interface EnrichedCompany {
+    id: string;
+    name: string;
+    ticker: string;
+    price: number;
+    priceChange: number;
+    financials: CompanyFinancials;
+    analysis?: AnalysisResult;
+    profile?: string;
+    summary?: {
+        quarter: string;
+        text: string;
     }
-];
+    history?: {
+        quarter: string;
+        analysis: AnalysisResult;
+        financials: CompanyFinancials;
+        pdfUrl?: string | null;
+    }[];
+    marketCap?: number;
+    currentPrice?: number;
+    bookValue?: number;
+    peRatio?: number;
+    pbRatio?: number;
+    dividendYield?: number;
+}
 
-export const SectorList = () => {
-    const [expandedSector, setExpandedSector] = useState("Chemicals");
+export interface SectorData {
+    sector: string;
+    stats: { companies: number; avgGrowth: string; sentiment: number };
+    companies: EnrichedCompany[];
+}
+
+export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
+    const { setAllSectors, isAdminMode } = useAdmin();
+    const [showNewSectorModal, setShowNewSectorModal] = useState(false);
+    const [searchQuery, setSearchQuery] = useState('');
+
+    // Register all sector names in context
+    useEffect(() => {
+        const sectorNames = sectors.map(s => s.sector);
+        setAllSectors(sectorNames);
+    }, [sectors, setAllSectors]);
+
+    // Filter companies based on search
+    const filteredSectors = useMemo(() => {
+        if (!searchQuery.trim()) return sectors;
+
+        const query = searchQuery.toLowerCase();
+        return sectors.map(sector => ({
+            ...sector,
+            companies: sector.companies.filter(co =>
+                co.name.toLowerCase().includes(query) ||
+                co.ticker.toLowerCase().includes(query)
+            )
+        })).filter(sector => sector.companies.length > 0);
+    }, [sectors, searchQuery]);
+
+    // Count total companies
+    const totalCompanies = sectors.reduce((sum, s) => sum + s.companies.length, 0);
+
+    if (sectors.length === 0) {
+        return <div className="text-gray-400 text-center py-10 text-sm">No companies found.</div>;
+    }
 
     return (
         <div className="space-y-4">
-            {MOCK_DATA.map((s) => (
-                <div key={s.sector} className="border border-neutral-800 rounded-lg overflow-hidden bg-neutral-900">
-                    {/* Sector Header */}
-                    <div
-                        onClick={() => setExpandedSector(expandedSector === s.sector ? "" : s.sector)}
-                        className="flex items-center justify-between px-6 py-4 bg-neutral-900 cursor-pointer hover:bg-neutral-800/60"
-                    >
-                        <div className="flex items-center gap-4">
-                            <h2 className="text-xl font-bold text-white">{s.sector}</h2>
-                            <span className="text-neutral-500 text-sm">({s.stats.companies} Co)</span>
-                        </div>
-                        <div className="flex items-center gap-6 text-sm">
-                            <div className="flex flex-col items-end">
-                                <span className="text-neutral-500 text-[10px] uppercase tracking-wider">Avg Growth</span>
-                                <span className="text-green-400 font-mono">{s.stats.avgGrowth}</span>
-                            </div>
-                            <div className="flex flex-col items-end">
-                                <span className="text-neutral-500 text-[10px] uppercase tracking-wider">Sentiment</span>
-                                <div className="flex items-center gap-1">
-                                    <div className="w-16 h-1.5 bg-neutral-700 rounded-full overflow-hidden">
-                                        <div style={{ width: `${(s.stats.sentiment / 10) * 100}%` }} className="h-full bg-blue-500"></div>
-                                    </div>
-                                    <span className="text-blue-400 font-bold">{s.stats.sentiment}</span>
-                                </div>
-                            </div>
-                            <div className="text-neutral-400">
-                                {expandedSector === s.sector ? '▼' : '▶'}
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Sector Content */}
-                    {expandedSector === s.sector && (
-                        <div className="border-t border-neutral-800 bg-black/20">
-                            {s.companies.map(co => (
-                                <CompanyRow key={co.ticker} company={co} />
-                            ))}
-                        </div>
-                    )}
+            {/* Search Bar */}
+            <div className="sticky top-0 bg-[#FAFBFC] z-10 pb-4">
+                <div className="relative">
+                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+                    <input
+                        type="text"
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        placeholder={`Search ${totalCompanies} companies...`}
+                        className="w-full pl-10 pr-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm text-gray-700 placeholder:text-gray-400 focus:outline-none focus:border-[#A5C4E2] focus:ring-2 focus:ring-[#D4E5F7] transition-all"
+                    />
                 </div>
+                {searchQuery && (
+                    <div className="text-[10px] text-gray-400 mt-2 ml-1">
+                        Found {filteredSectors.reduce((sum, s) => sum + s.companies.length, 0)} matches
+                    </div>
+                )}
+            </div>
+
+            {/* Sector List */}
+            {filteredSectors.map((s, index) => (
+                <SectorSection
+                    key={s.sector}
+                    name={s.sector}
+                    count={s.companies.length}
+                    companies={s.companies}
+                    defaultOpen={searchQuery.length > 0 || index === 0}
+                >
+                    {s.companies.map(co => (
+                        <CompanyRow key={co.ticker} company={co} />
+                    ))}
+                </SectorSection>
             ))}
+
+            {/* Add New Sector (Admin Mode) */}
+            {isAdminMode && (
+                <button
+                    onClick={() => setShowNewSectorModal(true)}
+                    className="w-full py-3 flex items-center justify-center gap-2 text-[#6B9FCC] hover:bg-[#D4E5F7] border border-dashed border-gray-300 rounded-xl text-xs font-medium transition-colors"
+                >
+                    <Plus className="w-4 h-4" />
+                    Add New Sector
+                </button>
+            )}
+
+            <AddCompanyModal
+                isOpen={showNewSectorModal}
+                onClose={() => setShowNewSectorModal(false)}
+                defaultSector=""
+            />
         </div>
     );
 };

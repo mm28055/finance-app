@@ -39,3 +39,21 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# =========================
+# App data (DO NOT COMMIT)
+# =========================
+
+# PDFs downloaded/processed by the app
+*.pdf
+
+# Data directories
+data/
+pdfs/
+uploads/
+
+# Local databases
+*.db
+# Logs and generated outputs
+*.log
+*.txt
+*.xlsx

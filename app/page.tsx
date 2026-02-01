@@ -1,42 +1,31 @@
-import { SectorList } from "@/components/SectorList";
+import { SectorList, SectorData } from "@/components/SectorList";
+import { getDashboardData } from "@/lib/data-service";
 
-export default function Home() {
+export const dynamic = 'force-dynamic';
+
+export default async function Home() {
+  const sectorList = await getDashboardData();
+
+
   return (
-    <main className="min-h-screen bg-neutral-900 text-white p-4">
+    <main className="min-h-screen bg-[#FAFBFC] p-6">
       {/* Header */}
-      <header className="flex justify-between items-center mb-6 pb-4 border-b border-neutral-800">
+      <header className="flex justify-between items-center mb-6 pb-4 border-b border-gray-200">
         <div>
-          <h1 className="text-2xl font-bold tracking-tight">Tijori Terminal</h1>
-          <p className="text-neutral-400 text-sm">Financial Intelligence Dashboard</p>
+          <h1 className="text-lg font-semibold text-gray-800 tracking-tight">Dashboard</h1>
+          <p className="text-gray-400 text-xs">Real-time earnings intelligence</p>
         </div>
-        <div className="flex gap-4">
-          <div className="bg-neutral-800 px-3 py-1 rounded text-xs flex items-center gap-2">
-            <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-            System Online
+        <div className="flex items-center gap-2">
+          <div className="bg-white border border-gray-200 px-2.5 py-1 rounded-lg text-[10px] flex items-center gap-1.5 text-gray-500">
+            <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse"></span>
+            Live
           </div>
         </div>
       </header>
 
-      {/* Metric Cards (Placeholder for now) */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-        {[
-          { label: "Transcripts Today", val: "12" },
-          { label: "High Growth Detected", val: "3", highlight: true },
-          { label: "Sectors Updated", val: "5" },
-          { label: "Pending Processing", val: "0" }
-        ].map((card, idx) => (
-          <div key={idx} className="bg-neutral-800 p-4 rounded-lg border border-neutral-700">
-            <div className="text-neutral-400 text-xs uppercase font-semibold">{card.label}</div>
-            <div className={`text-2xl font-mono mt-1 ${card.highlight ? 'text-green-400' : 'text-neutral-100'}`}>
-              {card.val}
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Main Sector Feed */}
-      <div className="max-w-7xl mx-auto">
-        <SectorList />
+      {/* Sector List */}
+      <div className="max-w-5xl">
+        <SectorList sectors={sectorList} />
       </div>
     </main>
   );
