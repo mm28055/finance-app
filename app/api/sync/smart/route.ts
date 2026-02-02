@@ -218,7 +218,7 @@ export async function POST(req: NextRequest) {
                                     revenue: analysis.financials.revenue ?? 0,
                                     ebitda: analysis.financials.ebitda ?? 0,
                                     pat: analysis.financials.pat ?? 0,
-                                    revenueYoY: parseFloat((analysis.financials.revenue_growth_yoy || "0").replace(/[^0-9.-]/g, '')) || 0
+                                    revenueYoY: parseFloat(String(analysis.financials.revenue_growth_yoy || "0").replace(/[^0-9.-]/g, '')) || 0
                                 },
                                 create: {
                                     companyId: co.id,
@@ -226,7 +226,7 @@ export async function POST(req: NextRequest) {
                                     revenue: analysis.financials.revenue ?? 0,
                                     ebitda: analysis.financials.ebitda ?? 0,
                                     pat: analysis.financials.pat ?? 0,
-                                    revenueYoY: parseFloat((analysis.financials.revenue_growth_yoy || "0").replace(/[^0-9.-]/g, '')) || 0
+                                    revenueYoY: parseFloat(String(analysis.financials.revenue_growth_yoy || "0").replace(/[^0-9.-]/g, '')) || 0
                                 }
                             }),
                             prisma.analysis.upsert({
@@ -237,7 +237,7 @@ export async function POST(req: NextRequest) {
                                     guidanceText: analysis.guidance?.text || "No guidance",
                                     guidanceSentiment: (analysis.guidance?.sentiment || "NEUTRAL").toUpperCase(),
                                     capexText: analysis.capex?.details || "",
-                                    capexValue: parseFloat((analysis.capex?.amount || "0").replace(/[^0-9.]/g, '')) || 0,
+                                    capexValue: parseFloat(String(analysis.capex?.amount || "0").replace(/[^0-9.]/g, '')) || 0,
                                     keyHighlights: JSON.stringify(analysis.summary?.highlights || []),
                                     deltaAnalysis: analysis.delta_analysis // SAVE DELTA REPORT
                                 },
