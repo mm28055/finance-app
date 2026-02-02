@@ -14,8 +14,8 @@ const inter = Inter({
 import { Providers } from "@/components/Providers";
 
 export const metadata: Metadata = {
-  title: "Tijori Terminal",
-  description: "Financial Intelligence Dashboard",
+  title: "Manish Con Call Analyzer",
+  description: "Strategic Intelligence Dashboard",
 };
 
 export default function RootLayout({

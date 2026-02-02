@@ -20,9 +20,9 @@ export const Sidebar = () => {
             <div className="p-5 border-b border-gray-100">
                 <div className="flex items-center gap-2 text-[#6B9FCC] mb-0.5">
                     <Activity className="w-4 h-4" />
-                    <span className="font-semibold text-sm tracking-tight text-gray-800">Tijori Terminal</span>
+                    <span className="font-semibold text-sm tracking-tight text-gray-800">Manish Con Call Analyzer</span>
                 </div>
-                <p className="text-gray-400 text-[10px]">v1.0 • Intelligence Dashboard</p>
+                <p className="text-gray-400 text-[10px]">v1.0 • Strategic Intelligence</p>
             </div>
 
             {/* Navigation */}
