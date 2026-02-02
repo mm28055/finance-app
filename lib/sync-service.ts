@@ -161,7 +161,7 @@ export async function processTranscript(transcriptId: string) {
                 guidanceSentiment: (aiResult.guidance?.sentiment || "NEUTRAL").toUpperCase(),
                 capexValue: parseFloat((aiResult.capex?.amount || "0").toString().replace(/[^0-9.]/g, '')) || 0,
                 capexText: aiResult.capex?.details || "",
-                keyHighlights: JSON.stringify(aiResult.summary.highlights),
+                keyHighlights: JSON.stringify(aiResult.summary?.highlights || []),
                 deltaAnalysis: aiResult.delta_analysis,
                 investorBrief: aiResult.investor_brief
             }
