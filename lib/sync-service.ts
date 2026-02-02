@@ -20,7 +20,19 @@ export async function processTranscript(transcriptId: string) {
     if (!textToAnalyze && transcript.fileUrl) {
         console.log(`  -> Extracting text from PDF: ${transcript.fileUrl}`);
         try {
-            const dataBuffer = fs.readFileSync(transcript.fileUrl);
+            let dataBuffer: Buffer;
+
+            // Handle Remote URL vs Local File
+            if (transcript.fileUrl.startsWith('http')) {
+                const response = await fetch(transcript.fileUrl);
+                if (!response.ok) throw new Error(`Fetch failed: ${response.statusText}`);
+                const arrayBuffer = await response.arrayBuffer();
+                dataBuffer = Buffer.from(arrayBuffer);
+            } else {
+                // Fallback for local files (Legacy dev mode)
+                dataBuffer = fs.readFileSync(transcript.fileUrl);
+            }
+
             const data = await pdf(dataBuffer);
             textToAnalyze = data.text;
         } catch (pdfErr: any) {

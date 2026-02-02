@@ -2,15 +2,25 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { processTranscript } from '@/lib/sync-service';
-import fs from 'fs';
-import path from 'path';
-import { pipeline } from 'stream';
-import { promisify } from 'util';
+import { createClient } from '@supabase/supabase-js';
 
-const pump = promisify(pipeline);
+// Vercel Serverless Config
+export const dynamic = 'force-dynamic';
+export const maxDuration = 60; // Allow 60s for upload/analysis
+
+// Init Supabase Admin
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY!;
+const BUCKET_NAME = 'Conf Call Pdfs';
+
+const supabase = (SUPABASE_URL && SUPABASE_KEY) ? createClient(SUPABASE_URL, SUPABASE_KEY) : null;
 
 export async function POST(req: NextRequest) {
     try {
+        if (!supabase) {
+            return NextResponse.json({ error: "Server missing Supabase credentials" }, { status: 500 });
+        }
+
         const formData = await req.formData();
         const file = formData.get('file') as File;
         const companyId = formData.get('companyId') as string;
@@ -25,45 +35,40 @@ export async function POST(req: NextRequest) {
         const company = await prisma.company.findUnique({ where: { id: companyId } });
         if (!company) return NextResponse.json({ error: "Company not found" }, { status: 404 });
 
-        // 2. Construct Standard Names (MATCHING smart-sync.ts)
-        // Logic: Q3 FY26. 
-        // Note: The UI might send "Q3 2026" (Calendar). We need to convert to FY if needed?
-        // Actually, let's assume UI sends the "Fiscal Year" or we derive it.
-        // Let's stick to the convention: User thinks in "Q3 FY26".
-        // But the input `year` from UI is likely the FY year if we label it so.
-        // Let's assume the UI sends the FY year directly to avoid confusion.
-
+        // 2. Construct Paths
         const fyName = `${qStr} FY${yearStr.slice(-2)}`; // "Q3 FY26"
         const safeName = company.name.replace(/[^a-z0-9]/gi, '_').trim();
         const sectorFolder = company.sector || 'Unsorted';
 
-        // Target Directory: Concalls/Sector/Q3 FY26
-        const targetDir = path.join(process.cwd(), 'Concalls', sectorFolder, fyName);
-        if (!fs.existsSync(targetDir)) {
-            fs.mkdirSync(targetDir, { recursive: true });
-        }
-
-        // Target Filename: Company_Name_Q3_FY26.pdf
+        // Supabase Path: Sector/Q3 FY26/Company_Q3_FY26.pdf
         const fileName = `${safeName}_${fyName.replace(/\s+/g, '_')}.pdf`;
-        const targetPath = path.join(targetDir, fileName);
+        const storagePath = `${sectorFolder}/${fyName}/${fileName}`;
 
-        // 3. Save File
+        // 3. Upload to Supabase
         const arrayBuffer = await file.arrayBuffer();
         const buffer = Buffer.from(arrayBuffer);
-        fs.writeFileSync(targetPath, buffer);
 
-        console.log(`📎 Manual Upload Saved: ${targetPath}`);
+        const { error: uploadError } = await supabase.storage
+            .from(BUCKET_NAME)
+            .upload(storagePath, buffer, {
+                contentType: 'application/pdf',
+                upsert: true
+            });
 
-        // 4. Update Database
-        // Ensure Quarter exists
+        if (uploadError) throw new Error(`Supabase Upload Failed: ${uploadError.message}`);
+
+        // 4. Get Public URL
+        const { data: { publicUrl } } = supabase.storage
+            .from(BUCKET_NAME)
+            .getPublicUrl(storagePath);
+
+        console.log(`☁️ Cloud Upload Success: ${publicUrl}`);
+
+        // 5. Update Database
         const quarter = await prisma.quarter.upsert({
             where: { name: fyName },
             update: {},
-            create: {
-                name: fyName,
-                year: parseInt(yearStr),
-                q: qStr
-            }
+            create: { name: fyName, year: parseInt(yearStr), q: qStr }
         });
 
         // Upsert Transcript
@@ -72,31 +77,27 @@ export async function POST(req: NextRequest) {
         const transcript = await prisma.transcript.upsert({
             where: { id: transcriptId },
             update: {
-                fileUrl: targetPath,
+                fileUrl: publicUrl,
                 hasAnalysis: false // Reset analysis since it's a new file
             },
             create: {
                 id: transcriptId,
                 companyId: company.id,
                 quarterId: quarter.id,
-                fileUrl: targetPath,
+                fileUrl: publicUrl,
                 hasAnalysis: false,
                 rawText: ''
             }
         });
 
-        // 5. Trigger Analysis Immediately (User expects results)
-        // We run this in background so UI returns fast? 
-        // Or await it? Await is better for feedback "Uploaded & Analyzed".
-        // But analysis takes 30s. Let's trigger in background.
-
+        // 6. Trigger Analysis
         processTranscript(transcript.id).catch(err =>
             console.error(`Manual Analysis Failed for ${company.name}:`, err)
         );
 
         return NextResponse.json({
             success: true,
-            message: "File uploaded. AI Analysis started in background."
+            message: "File uploaded to Cloud. AI Analysis started."
         });
 
     } catch (e: any) {
