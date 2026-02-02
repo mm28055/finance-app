@@ -185,7 +185,7 @@ export function AnalysisPanel({
                             </div>
                             <div className="bg-[#F8FAFC] border border-gray-100 p-2.5 rounded-lg">
                                 <h4 className="text-[9px] font-semibold text-gray-400 uppercase mb-1">Details</h4>
-                                <div className="text-xs text-gray-700 truncate">{activeData.capex.details}</div>
+                                <div className="text-xs text-gray-700 truncate">{activeData.capex?.details || '-'}</div>
                             </div>
                         </div>
 
@@ -193,7 +193,7 @@ export function AnalysisPanel({
                         <div>
                             <h4 className="text-[10px] font-semibold text-gray-500 uppercase mb-2">Highlights</h4>
                             <ul className="space-y-1.5 text-xs text-gray-600 list-disc pl-4 marker:text-[#A5C4E2]">
-                                {activeData.summary.highlights.map((h, i) => (
+                                {(activeData.summary?.highlights || []).map((h, i) => (
                                     <li key={i}>{h}</li>
                                 ))}
                             </ul>
@@ -243,11 +243,11 @@ export function AnalysisPanel({
 
                 {viewMode === "ANALYSIS" && activeData && (
                     <div className="flex-1 flex items-center justify-end px-2">
-                        <span className={`text-[9px] uppercase font-medium ${activeData.guidance.sentiment === 'positive'
+                        <span className={`text-[9px] uppercase font-medium ${activeData.guidance?.sentiment === 'positive'
                             ? 'text-emerald-500 bg-emerald-50'
                             : 'text-gray-500 bg-gray-100'
                             } px-2 py-0.5 rounded-full flex items-center gap-1`}>
-                            {activeData.guidance.sentiment === 'positive' ? <TrendingUp className="w-2.5 h-2.5" /> : <Minus className="w-2.5 h-2.5" />}
+                            {activeData.guidance?.sentiment === 'positive' ? <TrendingUp className="w-2.5 h-2.5" /> : <Minus className="w-2.5 h-2.5" />}
                             {activeData.management_tone}/10
                         </span>
                     </div>
