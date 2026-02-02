@@ -173,7 +173,7 @@ export function AnalysisPanel({
                                 <h4 className="text-[10px] font-semibold text-gray-500 uppercase">Guidance</h4>
                             </div>
                             <p className="text-xs text-gray-700 leading-relaxed">
-                                {activeData.guidance.text}
+                                {activeData.guidance?.text || 'No guidance extracted'}
                             </p>
                         </div>
 
@@ -181,7 +181,7 @@ export function AnalysisPanel({
                         <div className="grid grid-cols-2 gap-3">
                             <div className="bg-[#F8FAFC] border border-gray-100 p-2.5 rounded-lg">
                                 <h4 className="text-[9px] font-semibold text-gray-400 uppercase mb-1">Capex</h4>
-                                <div className="text-xs text-gray-800 font-medium">{activeData.capex.amount}</div>
+                                <div className="text-xs text-gray-800 font-medium">{activeData.capex?.amount || '-'}</div>
                             </div>
                             <div className="bg-[#F8FAFC] border border-gray-100 p-2.5 rounded-lg">
                                 <h4 className="text-[9px] font-semibold text-gray-400 uppercase mb-1">Details</h4>
