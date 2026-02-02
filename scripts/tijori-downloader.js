@@ -9,30 +9,59 @@ const TIJORI_API_KEY = "c74d557ef1cf4464820666dfb7dbc9e1";
 const DB_PATH = path.join(__dirname, '../data/db.json');
 const BASE_URL = "https://www.tijoristack.ai/api/v1";
 
-// Helper for download with Redirect Support
-async function downloadPdf(url, outputPath) {
-    const dir = path.dirname(outputPath);
-    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-    return new Promise((resolve, reject) => {
-        const file = fs.createWriteStream(outputPath);
+const { createClient } = require('@supabase/supabase-js');
+require('dotenv').config();
+
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
+const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
+const supabase = (SUPABASE_URL && SUPABASE_KEY) ? createClient(SUPABASE_URL, SUPABASE_KEY) : null;
+const BUCKET_NAME = 'Conf Call Pdfs';
+
+// Updated Download Helper: Supports Local OR Supabase
+async function handleFileDownload(url, localPath, subPath) {
+    // 1. Download Buffer
+    const buffer = await new Promise((resolve) => {
         const fetch = (currentUrl) => {
-            https.get(currentUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } }, response => {
-                if ([301, 302, 307].includes(response.statusCode) && response.headers.location) {
-                    fetch(response.headers.location);
+            https.get(currentUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } }, res => {
+                if ([301, 302, 307].includes(res.statusCode) && res.headers.location) {
+                    fetch(res.headers.location);
                     return;
                 }
-                if (response.statusCode !== 200) {
-                    file.close();
-                    fs.unlink(outputPath, () => { });
-                    reject(new Error(`Status ${response.statusCode}`));
-                    return;
-                }
-                response.pipe(file);
-                file.on('finish', () => { file.close(); resolve(true); });
-            }).on('error', err => { fs.unlink(outputPath, () => { }); reject(err); });
+                if (res.statusCode !== 200) { resolve(null); return; }
+
+                const chunks = [];
+                res.on('data', c => chunks.push(c));
+                res.on('end', () => resolve(Buffer.concat(chunks)));
+            }).on('error', () => resolve(null));
         };
         fetch(url);
     });
+
+    if (!buffer) throw new Error("Failed to download file buffer");
+
+    // 2. Upload to Supabase (Priority)
+    if (supabase) {
+        try {
+            const cloudKey = subPath.split(path.sep).join('/');
+
+            const { error: uploadError } = await supabase.storage
+                .from(BUCKET_NAME)
+                .upload(cloudKey, buffer, { contentType: 'application/pdf', upsert: true });
+
+            if (uploadError) throw uploadError;
+
+            const { data: { publicUrl } } = supabase.storage.from(BUCKET_NAME).getPublicUrl(cloudKey);
+            return { success: true, finalPath: publicUrl };
+        } catch (e) {
+            console.error(`   ⚠️ Supabase Upload Failed (${e.message}). Falling back to local.`);
+        }
+    }
+
+    // 3. Fallback to Local Disk
+    const dir = path.dirname(localPath);
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(localPath, buffer);
+    return { success: true, finalPath: localPath };
 }
 
 async function fetchFromTijori(isin) {
@@ -113,7 +142,7 @@ async function main() {
                     const legacyPath1 = path.join(quarterDirLegacy, `${safeName}.pdf`);
                     const legacyPath2 = path.join(quarterDirNew, `${safeName}.pdf`);
 
-                    const syncToDb = async (actualPath) => {
+                    const syncToDb = async (finalUrl) => {
                         try {
                             const dbCompany = await prisma.company.findUnique({ where: { isin: co.isin } });
                             if (!dbCompany) return;
@@ -133,11 +162,13 @@ async function main() {
                             });
 
                             if (existing) {
-                                await prisma.transcript.update({
-                                    where: { id: existing.id },
-                                    data: { fileUrl: actualPath }
-                                });
-                                console.log(`    [DB] Updated Link: ${dbCompany.name} (${fyq})`);
+                                if (existing.fileUrl !== finalUrl) {
+                                    await prisma.transcript.update({
+                                        where: { id: existing.id },
+                                        data: { fileUrl: finalUrl }
+                                    });
+                                    console.log(`    [DB] Updated Link: ${dbCompany.name} (${fyq})`);
+                                }
                             } else {
                                 const transcriptId = `real-${(dbCompany.ticker || dbCompany.id).toUpperCase()}-${fyq.replace(/\s+/g, '-')}`.replace(/[^a-zA-Z0-9-]/g, '');
                                 await prisma.transcript.create({
@@ -145,7 +176,7 @@ async function main() {
                                         id: transcriptId,
                                         companyId: dbCompany.id,
                                         quarterId: dbQuarter.id,
-                                        fileUrl: actualPath,
+                                        fileUrl: finalUrl,
                                         hasAnalysis: false
                                     }
                                 });
@@ -154,14 +185,21 @@ async function main() {
                         } catch (err) { console.error(`    [DB Error] ${err.message}`); }
                     };
 
+                    // Check if file exists locally or if DB has it (Legacy local check preserved but largely redundant if cloud-first)
                     if (fs.existsSync(cleanPath)) { await syncToDb(cleanPath); continue; }
-                    if (fs.existsSync(legacyPath1)) { await syncToDb(legacyPath1); continue; }
-                    if (fs.existsSync(legacyPath2)) { await syncToDb(legacyPath2); continue; }
 
+                    // New Cloud-First Logic
                     console.log(`  -> Downloading ${fyq}...`);
-                    if (await downloadPdf(link, cleanPath)) {
-                        await syncToDb(cleanPath);
-                        successCount++;
+                    try {
+                        const cloudSubPath = path.join(sectorFolder, fyq, `${safeName}_${fyq.replace(/\s+/g, '_')}.pdf`);
+                        const result = await handleFileDownload(link, cleanPath, cloudSubPath);
+
+                        if (result && result.success) {
+                            await syncToDb(result.finalPath);
+                            successCount++;
+                        }
+                    } catch (e) {
+                        console.error(`      Download failed: ${e.message}`);
                     }
                 }
             }

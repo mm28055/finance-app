@@ -43,16 +43,23 @@ next-env.d.ts
 # App data (DO NOT COMMIT)
 # =========================
 
+# App data (DO NOT COMMIT)
+# =========================
+
 # PDFs downloaded/processed by the app
 *.pdf
 
 # Data directories
 data/
+!data/prompt_config.json
+
 pdfs/
 uploads/
+Concalls/
 
 # Local databases
 *.db
+
 # Logs and generated outputs
 *.log
 *.txt

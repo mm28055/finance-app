@@ -4,8 +4,9 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 model Company {
@@ -18,15 +19,15 @@ model Company {
   aliases         String?
   isVisible       Boolean      @default(true)
   status          String       @default("ACTIVE")
-  createdAt       DateTime     @default(now())
-  updatedAt       DateTime     @updatedAt
-  bookValue       Decimal?
-  currentPrice    Decimal?
-  dividendYield   Decimal?
-  lastFinanceSync DateTime?
-  marketCap       Decimal?
-  pbRatio         Decimal?
-  peRatio         Decimal?
+  createdAt       DateTime     @default(now()) @db.Timestamptz(6)
+  updatedAt       DateTime     @updatedAt @db.Timestamptz(6)
+  bookValue       Decimal?     @db.Decimal
+  currentPrice    Decimal?     @db.Decimal
+  dividendYield   Decimal?     @db.Decimal
+  lastFinanceSync DateTime?    @db.Timestamptz(6)
+  marketCap       Decimal?     @db.Decimal
+  pbRatio         Decimal?     @db.Decimal
+  peRatio         Decimal?     @db.Decimal
   analyses        Analysis[]
   financials      Financials[]
   transcripts     Transcript[]
@@ -49,36 +50,33 @@ model Transcript {
   fileUrl     String?
   rawText     String?
   hasAnalysis Boolean  @default(false)
-  createdAt   DateTime @default(now())
-  quarter     Quarter  @relation(fields: [quarterId], references: [id])
+  createdAt   DateTime @default(now()) @db.Timestamptz(6)
+  filePath    String?
   company     Company  @relation(fields: [companyId], references: [id])
+  quarter     Quarter  @relation(fields: [quarterId], references: [id])
 
   @@unique([companyId, quarterId])
 }
 
 model Financials {
-  id         String   @id @default(uuid())
-  companyId  String
-  quarterId  String
-  revenue    Decimal?
-  ebitda     Decimal?
-  pat        Decimal?
-  revenueYoY Decimal?
-  ebitdaYoY  Decimal?
-  patYoY     Decimal?
-  
-  // New Metrics
-  financeCost  Decimal?
-  depreciation Decimal?
-  orderBook    Decimal?
-  volumeGrowth Decimal? // % growth
-
-  // Guidance Numeric
-  guidanceRevenue    Decimal? // Target Revenue
-  guidanceEbitdaMargin Decimal? // Target Margin %
-  guidancePat        Decimal? // Target PAT
-  quarter    Quarter  @relation(fields: [quarterId], references: [id])
-  company    Company  @relation(fields: [companyId], references: [id])
+  id                   String   @id @default(uuid())
+  companyId            String
+  quarterId            String
+  revenue              Decimal? @db.Decimal
+  ebitda               Decimal? @db.Decimal
+  pat                  Decimal? @db.Decimal
+  revenueYoY           Decimal? @db.Decimal
+  ebitdaYoY            Decimal? @db.Decimal
+  patYoY               Decimal? @db.Decimal
+  depreciation         Decimal? @db.Decimal
+  financeCost          Decimal? @db.Decimal
+  guidanceEbitdaMargin Decimal? @db.Decimal
+  guidancePat          Decimal? @db.Decimal
+  guidanceRevenue      Decimal? @db.Decimal
+  orderBook            Decimal? @db.Decimal
+  volumeGrowth         Decimal? @db.Decimal
+  company              Company  @relation(fields: [companyId], references: [id])
+  quarter              Quarter  @relation(fields: [quarterId], references: [id])
 
   @@unique([companyId, quarterId])
 }
@@ -92,20 +90,20 @@ model Analysis {
   guidanceText      String?
   guidanceSentiment String?
   capexText         String?
-  capexValue        Decimal?
+  capexValue        Decimal? @db.Decimal
   keyHighlights     String?
   deltaAnalysis     String?
   investorBrief     String?
-  quarter           Quarter  @relation(fields: [quarterId], references: [id])
   company           Company  @relation(fields: [companyId], references: [id])
+  quarter           Quarter  @relation(fields: [quarterId], references: [id])
 
   @@unique([companyId, quarterId])
 }
 
 model SyncJob {
   id        String    @id @default(cuid())
-  startTime DateTime  @default(now())
-  endTime   DateTime?
+  startTime DateTime  @default(now()) @db.Timestamptz(6)
+  endTime   DateTime? @db.Timestamptz(6)
   status    String    @default("RUNNING")
   logs      SyncLog[]
 }
@@ -113,7 +111,7 @@ model SyncJob {
 model SyncLog {
   id          String   @id @default(cuid())
   jobId       String
-  timestamp   DateTime @default(now())
+  timestamp   DateTime @default(now()) @db.Timestamptz(6)
   companyName String?
   quarter     String?
   status      String

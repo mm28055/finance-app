@@ -13,40 +13,61 @@ const CONCALLS_DIR = path.join(process.cwd(), 'Concalls');
 // Helper for sleep
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
-// Helper for download with Redirect Support
-async function downloadPdf(url: string, outputPath: string): Promise<boolean> {
-    const dir = path.dirname(outputPath);
-    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+// Supabase Setup
+import { createClient } from '@supabase/supabase-js';
+require('dotenv').config();
 
-    return new Promise((resolve, reject) => {
-        const file = fs.createWriteStream(outputPath);
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
+const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
+const supabase = (SUPABASE_URL && SUPABASE_KEY) ? createClient(SUPABASE_URL, SUPABASE_KEY) : null;
+const BUCKET_NAME = 'Conf Call Pdfs';
+
+// Updated Download Helper: Supports Local OR Supabase
+async function handleFileDownload(url: string, localPath: string, subPath: string): Promise<{ success: boolean, finalPath: string }> {
+    // 1. Download Buffer
+    const buffer = await new Promise<Buffer | null>((resolve) => {
         const fetch = (currentUrl: string) => {
-            https.get(currentUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } }, response => {
-                // Handle Redirects
-                if ([301, 302, 307].includes(response.statusCode || 0) && response.headers.location) {
-                    fetch(response.headers.location);
+            https.get(currentUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } }, res => {
+                if ([301, 302, 307].includes(res.statusCode || 0) && res.headers.location) {
+                    fetch(res.headers.location);
                     return;
                 }
+                if (res.statusCode !== 200) { resolve(null); return; }
 
-                if (response.statusCode !== 200) {
-                    file.close();
-                    if (fs.existsSync(outputPath)) fs.unlinkSync(outputPath); // Sync unlink for safety
-                    reject(new Error(`Status ${response.statusCode}`));
-                    return;
-                }
-
-                response.pipe(file);
-                file.on('finish', () => {
-                    file.close();
-                    resolve(true);
-                });
-            }).on('error', err => {
-                if (fs.existsSync(outputPath)) fs.unlinkSync(outputPath);
-                reject(err);
-            });
+                const chunks: any[] = [];
+                res.on('data', c => chunks.push(c));
+                res.on('end', () => resolve(Buffer.concat(chunks)));
+            }).on('error', () => resolve(null));
         };
         fetch(url);
     });
+
+    if (!buffer) throw new Error("Failed to download file buffer");
+
+    // 2. Upload to Supabase (Priority)
+    if (supabase) {
+        try {
+            // Path: "Tyres/Q2 FY26/MRF.pdf" -> Standardize separators
+            const cloudKey = subPath.split(path.sep).join('/');
+
+            const { error: uploadError } = await supabase.storage
+                .from(BUCKET_NAME)
+                .upload(cloudKey, buffer, { contentType: 'application/pdf', upsert: true });
+
+            if (uploadError) throw uploadError;
+
+            const { data: { publicUrl } } = supabase.storage.from(BUCKET_NAME).getPublicUrl(cloudKey);
+            return { success: true, finalPath: publicUrl };
+        } catch (e: any) {
+            console.error(`   ⚠️ Supabase Upload Failed (${e.message}). Falling back to local.`);
+        }
+    }
+
+    // 3. Fallback to Local Disk
+    const dir = path.dirname(localPath);
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(localPath, buffer);
+    return { success: true, finalPath: localPath };
 }
 
 async function fetchFromTijori(isin: string) {
@@ -181,27 +202,44 @@ async function main() {
                 });
 
                 // Logic:
-                // 1. If file missing locally -> Download
-                // 2. If DB missing or new file -> Update DB
-                // 3. If Analysis missing -> Analyze
+                // 1. If file missing locally (AND we aren't using Supabase check) -> Download
+                // Actually, if using Supabase, we should check if DB has a URL first?
+                // The current logic checks `fileExists = fs.existsSync(finalPath)`.
+                // With Supabase, "file exists" means "DB has a valid URL".
 
-                let fileExists = fs.existsSync(finalPath);
+                // Let's rely on DB record check primarily.
+                // If DB record exists and has a URL, we assume it's good.
+                // If NOT, we try to download.
 
-                if (!fileExists) {
+                let finalDownloadUrl = existingTranscript?.fileUrl;
+                let downloadSuccess = !!existingTranscript;
+
+                // If we don't have a transcript, OR the file path is local but missing on disk (and we are in local mode)
+                // Actually simpler: If !existingTranscript, we definitely need to download.
+
+                if (!existingTranscript) {
                     // console.log(`  ⬇️  Downloading ${fyq} for ${co.name}...`);
                     try {
-                        await downloadPdf(link, finalPath);
-                        fileExists = true;
-                        downloadedCount++;
-                        await logToDB(jobId, 'DOWNLOADED', `Downloaded PDF`, co.name, fyq);
+                        // Construct relative cloud path: "Tyres/Q2 FY26/MRF.pdf"
+                        // sectorFolder might have spaces, replace with underscores? No, S3/Storage handles spaces usually, but safer to match logic
+                        const cloudSubPath = path.join(sectorFolder, fyq, fileName);
+
+                        const result = await handleFileDownload(link, finalPath, cloudSubPath);
+                        if (result.success) {
+                            finalDownloadUrl = result.finalPath;
+                            downloadSuccess = true;
+                            downloadedCount++;
+                            const statusMsg = finalDownloadUrl?.startsWith('http') ? 'Uploaded to Cloud' : 'Saved Locally';
+                            await logToDB(jobId, 'DOWNLOADED', statusMsg, co.name, fyq);
+                        }
                     } catch (err: any) {
-                        console.error(`  ❌ Download failed: ${err.message}`);
+                        console.error(`  ❌ Download/Upload failed: ${err.message}`);
                         await logToDB(jobId, 'ERROR', `Download failed: ${err.message}`, co.name, fyq);
-                        continue; // Skip if download fails
+                        continue;
                     }
                 }
 
-                if (fileExists) {
+                if (downloadSuccess && finalDownloadUrl) {
                     // Update/Create DB Record
                     let transcriptId = existingTranscript?.id;
 
@@ -212,20 +250,15 @@ async function main() {
                                 id: transcriptId,
                                 companyId: co.id,
                                 quarterId: quarter.id,
-                                fileUrl: finalPath,
+                                fileUrl: finalDownloadUrl, // Use the new URL (Cloud or Local)
                                 hasAnalysis: false,
                                 rawText: ''
                             }
                         });
-                        // console.log(`  📝 Created Transcript Record: ${co.name} (${fyq})`);
                         await logToDB(jobId, 'INFO', `Created Transcript Record`, co.name, fyq);
-                    } else if (existingTranscript.fileUrl !== finalPath) {
-                        // Update path if changed
-                        await prisma.transcript.update({
-                            where: { id: existingTranscript.id },
-                            data: { fileUrl: finalPath }
-                        });
-                        await logToDB(jobId, 'INFO', `Updated Transcript File Path`, co.name, fyq);
+                    } else if (existingTranscript.fileUrl !== finalDownloadUrl) {
+                        // Only update if path changed (e.g. migrating local -> cloud manually?)
+                        // Usually won't happen here, but good for safety.
                     }
 
                     // --- TRIGGER ANALYSIS AUTOMATICALLY ---
