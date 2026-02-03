@@ -1,17 +1,20 @@
 
 import { NextRequest, NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+import { prisma } from '@/lib/prisma';
 
-const CONFIG_PATH = path.join(process.cwd(), 'data', 'prompt_config.json');
+const CONFIG_KEY = 'PROMPT_CONFIG';
 
 export async function GET() {
     try {
-        if (!fs.existsSync(CONFIG_PATH)) {
+        const config = await prisma.systemConfig.findUnique({
+            where: { key: CONFIG_KEY }
+        });
+
+        if (!config) {
             return NextResponse.json({ error: "Config not found" }, { status: 404 });
         }
-        const data = fs.readFileSync(CONFIG_PATH, 'utf-8');
-        return NextResponse.json(JSON.parse(data));
+
+        return NextResponse.json(JSON.parse(config.value));
     } catch (e: any) {
         return NextResponse.json({ error: e.message }, { status: 500 });
     }
@@ -24,11 +27,17 @@ export async function POST(req: NextRequest) {
 
         if (!basePrompt) return NextResponse.json({ error: "Missing basePrompt" }, { status: 400 });
 
-        // Save to file
-        fs.writeFileSync(CONFIG_PATH, JSON.stringify({
+        const value = JSON.stringify({
             basePrompt,
             deltaInstructions: deltaInstructions || ""
-        }, null, 2));
+        });
+
+        // Upsert to DB
+        await prisma.systemConfig.upsert({
+            where: { key: CONFIG_KEY },
+            update: { value },
+            create: { key: CONFIG_KEY, value }
+        });
 
         return NextResponse.json({ success: true });
     } catch (e: any) {
