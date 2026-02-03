@@ -10,14 +10,19 @@ export async function GET(req: NextRequest) {
         return NextResponse.json({ error: 'Path is required' }, { status: 400 });
     }
 
+    // Handle Cloud/Supabase URLs
+    if (filePath.startsWith('http://') || filePath.startsWith('https://')) {
+        return NextResponse.redirect(filePath);
+    }
+
+    // Handle Local Files (Legacy / Local Dev only)
     try {
-        // Security check: Ensure the path is within the allowed directories
-        // In this app, concalls are in process.cwd()/Concalls
         const resolvedPath = path.resolve(filePath);
         const allowedBase = path.join(process.cwd(), 'Concalls');
 
-        if (!resolvedPath.startsWith(allowedBase)) {
-            console.error('Access denied to path:', resolvedPath, 'allowed base:', allowedBase);
+        // Allow dev environment flexibility or strict check
+        if (!resolvedPath.startsWith(allowedBase) && process.env.NODE_ENV === 'production') {
+            console.error('Access denied to path:', resolvedPath);
             return NextResponse.json({ error: 'Access denied' }, { status: 403 });
         }
 
