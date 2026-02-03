@@ -52,9 +52,9 @@ export function SyncStatusPanel({ isOpen, onClose }: { isOpen: boolean; onClose:
     if (!isOpen) return null;
 
     return (
-        <div className="fixed bottom-4 right-4 w-96 bg-white rounded-xl shadow-2xl border border-gray-200 z-[100] flex flex-col overflow-hidden animate-in slide-in-from-bottom-2 duration-300">
+        <div className="fixed bottom-4 right-4 w-96 h-[500px] max-h-[85vh] bg-white rounded-xl shadow-2xl border border-gray-200 z-[100] flex flex-col overflow-hidden animate-in slide-in-from-bottom-2 duration-300">
             {/* Header */}
-            <div className="bg-gray-50 px-4 py-3 border-b border-gray-100 flex justify-between items-center">
+            <div className="bg-gray-50 px-4 py-3 border-b border-gray-100 flex justify-between items-center flex-shrink-0">
                 <div className="flex items-center gap-2">
                     {data?.status === 'RUNNING' ? (
                         <Loader2 className="w-4 h-4 text-blue-500 animate-spin" />
@@ -71,7 +71,7 @@ export function SyncStatusPanel({ isOpen, onClose }: { isOpen: boolean; onClose:
             </div>
 
             {/* Stats Bar */}
-            <div className="flex divide-x divide-gray-100 border-b border-gray-100 bg-white">
+            <div className="flex divide-x divide-gray-100 border-b border-gray-100 bg-white flex-shrink-0">
                 <div className="flex-1 py-2 text-center">
                     <div className="text-[10px] text-gray-500 uppercase font-medium">Downloaded</div>
                     <div className="text-sm font-bold text-gray-800">{data?.stats?.downloaded || 0}</div>
@@ -87,7 +87,7 @@ export function SyncStatusPanel({ isOpen, onClose }: { isOpen: boolean; onClose:
             </div>
 
             {/* Logs List */}
-            <div className="bg-[#F8FAFC] h-64 overflow-y-auto p-3 space-y-2 flex flex-col-reverse" ref={scrollRef}>
+            <div className="bg-[#F8FAFC] flex-1 overflow-y-auto p-3 space-y-2 flex flex-col-reverse min-h-0" ref={scrollRef}>
                 {/* flex-col-reverse to show newest at bottom? No, natural order is newest first in API? 
                     API sorts timestamp desc. So index 0 is newest. 
                     We want standard log view: Oldest at top?
@@ -95,7 +95,7 @@ export function SyncStatusPanel({ isOpen, onClose }: { isOpen: boolean; onClose:
                     So we should likely reverse them for display or just map them.
                 */}
                 {(data?.logs || []).map((log) => (
-                    <div key={log.id} className="flex gap-3 text-xs p-2 bg-white rounded border border-gray-100 shadow-sm">
+                    <div key={log.id} className="flex gap-3 text-xs p-2 bg-white rounded border border-gray-100 shadow-sm flex-shrink-0">
                         <div className="mt-0.5 flex-shrink-0">
                             {log.status === 'DOWNLOADED' && <FileText className="w-3.5 h-3.5 text-blue-500" />}
                             {log.status === 'ANALYZING' && <BrainCircuit className="w-3.5 h-3.5 text-purple-500 animate-pulse" />}
