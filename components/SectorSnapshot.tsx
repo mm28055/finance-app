@@ -112,8 +112,8 @@ export function SectorSnapshot({ sectorName, companies }: SectorSnapshotProps) {
                     <button
                         onClick={() => setViewMode('QUARTERLY')}
                         className={`text-[9px] px-2 py-0.5 rounded-md font-medium transition-all ${viewMode === 'QUARTERLY'
-                                ? 'bg-white text-gray-700 shadow-sm'
-                                : 'text-gray-400 hover:text-gray-600'
+                            ? 'bg-white text-gray-700 shadow-sm'
+                            : 'text-gray-400 hover:text-gray-600'
                             }`}
                     >
                         Quarterly
@@ -121,8 +121,8 @@ export function SectorSnapshot({ sectorName, companies }: SectorSnapshotProps) {
                     <button
                         onClick={() => setViewMode('YTD')}
                         className={`text-[9px] px-2 py-0.5 rounded-md font-medium transition-all ${viewMode === 'YTD'
-                                ? 'bg-white text-gray-700 shadow-sm'
-                                : 'text-gray-400 hover:text-gray-600'
+                            ? 'bg-white text-gray-700 shadow-sm'
+                            : 'text-gray-400 hover:text-gray-600'
                             }`}
                     >
                         YTD view
@@ -130,18 +130,30 @@ export function SectorSnapshot({ sectorName, companies }: SectorSnapshotProps) {
                 </div>
             </div>
 
-            <div className="flex gap-4 px-3 pb-3 pt-4" style={{ height: `${dynamicHeight}px` }}>
+            <div className="flex flex-col md:flex-row gap-4 px-3 pb-3 pt-4" style={{ height: 'auto', minHeight: `${dynamicHeight}px` }}>
                 {viewMode === 'QUARTERLY' ? (
                     <>
-                        <MiniChart dataKey="revenueQ" color="#4A90E2" title="Revenue (Q)" showAxis={true} />
-                        <MiniChart dataKey="ebitdaQ" color="#10B981" title="EBITDA (Q)" showMargin={true} />
-                        <MiniChart dataKey="patQ" color="#F59E0B" title="PAT (Q)" showMargin={true} />
+                        <div className="h-[250px] md:h-full flex-1">
+                            <MiniChart dataKey="revenueQ" color="#4A90E2" title="Revenue (Q)" showAxis={true} />
+                        </div>
+                        <div className="h-[250px] md:h-full flex-1">
+                            <MiniChart dataKey="ebitdaQ" color="#10B981" title="EBITDA (Q)" showMargin={true} />
+                        </div>
+                        <div className="h-[250px] md:h-full flex-1">
+                            <MiniChart dataKey="patQ" color="#F59E0B" title="PAT (Q)" showMargin={true} />
+                        </div>
                     </>
                 ) : (
                     <>
-                        <MiniChart dataKey="revenueYTD" color="#6366F1" title="Revenue (YTD)" showAxis={true} />
-                        <MiniChart dataKey="ebitdaYTD" color="#10B981" title="EBITDA (YTD)" showMargin={true} />
-                        <MiniChart dataKey="patYTD" color="#F59E0B" title="PAT (YTD)" showMargin={true} />
+                        <div className="h-[250px] md:h-full flex-1">
+                            <MiniChart dataKey="revenueYTD" color="#6366F1" title="Revenue (YTD)" showAxis={true} />
+                        </div>
+                        <div className="h-[250px] md:h-full flex-1">
+                            <MiniChart dataKey="ebitdaYTD" color="#10B981" title="EBITDA (YTD)" showMargin={true} />
+                        </div>
+                        <div className="h-[250px] md:h-full flex-1">
+                            <MiniChart dataKey="patYTD" color="#F59E0B" title="PAT (YTD)" showMargin={true} />
+                        </div>
                     </>
                 )}
             </div>
