@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+// Trigger Vercel Rebuild - Database Migration Update
 import { Sidebar } from "@/components/Sidebar";
 import { SectorChat } from "@/components/SectorChat";
 import { Toaster } from 'sonner';
