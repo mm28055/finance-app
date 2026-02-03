@@ -18,6 +18,30 @@ export function AdminProvider({ children }: { children: ReactNode }) {
     const [allSectors, setAllSectors] = useState<string[]>([]);
     const [refreshFn, setRefreshFn] = useState<(() => void) | null>(null);
 
+    // Initial Check
+    React.useEffect(() => {
+        const isUnlocked = localStorage.getItem('admin_secret') === 'tattva_master';
+        if (isUnlocked) setAdminMode(true);
+    }, []);
+
+    // Also listen for manual toggle
+    const toggleAdmin = (val: boolean) => {
+        if (val) {
+            // Setting to True - Ensure unlocked
+            const isUnlocked = localStorage.getItem('admin_secret') === 'tattva_master';
+            if (isUnlocked) {
+                setAdminMode(true);
+            } else {
+                // If not unlocked, maybe prompt? Or for now just deny.
+                // Actually, let's allow setting it if they are clicking the toggle, assuming the toggle is only visible if unlocked.
+                // But if they are just toggling 'off', clear it?
+                setAdminMode(val);
+            }
+        } else {
+            setAdminMode(false);
+        }
+    };
+
     const refreshData = () => {
         if (refreshFn) refreshFn();
     };

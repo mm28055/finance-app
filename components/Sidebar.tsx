@@ -76,64 +76,71 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
                     </div>
                 </div>
 
-                {/* Admin Toggle */}
-                <div className="p-4 border-t border-gray-100 bg-gray-50/50">
-                    <div className="flex items-center justify-between mb-3">
-                        <span className="text-[10px] font-medium text-gray-500 flex items-center gap-1.5">
-                            <ShieldAlert className="w-3 h-3" />
-                            Edit Mode
-                        </span>
-                        <button
-                            onClick={() => setAdminMode(!isAdminMode)}
-                            className={cn(
-                                "w-8 h-4 rounded-full relative transition-colors duration-200 ease-in-out",
-                                isAdminMode ? "bg-[#6B9FCC]" : "bg-gray-300"
-                            )}
-                        >
-                            <div className={cn(
-                                "w-3 h-3 bg-white rounded-full absolute top-0.5 transition-transform duration-200 shadow-sm",
-                                isAdminMode ? "translate-x-4" : "translate-x-0.5"
-                            )}></div>
-                        </button>
-                    </div>
-                    {isAdminMode && (
-                        <div className="mt-4 space-y-2 border-t border-gray-100 pt-4">
-                            <div className="text-[10px] text-gray-400 font-medium uppercase mb-2 tracking-wider">Sync Controls</div>
-
-                            {/* Global Smart Sync */}
+                {/* Admin Toggle (Only visible if unlocked) */}
+                {/* Secret Unlock: Visit /?unlock=tattva to reveal */}
+                {typeof window !== 'undefined' && (localStorage.getItem('admin_secret') === 'tattva_master' || new URLSearchParams(window.location.search).get('unlock') === 'tattva') && (
+                    <div className="p-4 border-t border-gray-100 bg-gray-50/50">
+                        <div className="flex items-center justify-between mb-3">
+                            <span className="text-[10px] font-medium text-gray-500 flex items-center gap-1.5">
+                                <ShieldAlert className="w-3 h-3" />
+                                Edit Mode
+                            </span>
                             <button
-                                onClick={async () => {
-                                    setShowSyncPanel(true); // Open Panel Immediately
-                                    const id = toast.loading('Global Smart Sync Started', { description: 'Monitor progress in the panel >' });
-                                    try {
-                                        // Calls the updated /api/sync/tijori which now runs smart-sync.ts
-                                        const res = await fetch('/api/sync/tijori', { method: 'POST' });
-                                        const data = await res.json();
-                                        if (data.success) {
-                                            toast.dismiss(id);
-                                        } else {
-                                            toast.error('Sync Failed', { id, description: data.error });
-                                        }
-                                    } catch (e) {
-                                        toast.error('Network Error', { id });
-                                    }
+                                onClick={() => {
+                                    // Persist unlock
+                                    localStorage.setItem('admin_secret', 'tattva_master');
+                                    setAdminMode(!isAdminMode);
                                 }}
-                                className="w-full flex items-center gap-2 px-3 py-2 rounded-lg bg-[#6B9FCC] text-white hover:bg-[#4A7AAF] transition-all text-[11px] font-medium shadow-sm active:scale-95 group"
+                                className={cn(
+                                    "w-8 h-4 rounded-full relative transition-colors duration-200 ease-in-out",
+                                    isAdminMode ? "bg-[#6B9FCC]" : "bg-gray-300"
+                                )}
                             >
-                                <RefreshCw className="w-3.5 h-3.5 group-hover:animate-spin" />
-                                Global Smart Sync
-                            </button>
-                            {/* Configure AI */}
-                            <button
-                                onClick={() => setShowPromptEditor(true)}
-                                className="w-full flex items-center gap-2 px-3 py-2 rounded-lg bg-white border border-gray-200 text-gray-600 hover:bg-[#F0F7FF] hover:border-[#6B9FCC] hover:text-[#6B9FCC] transition-all text-[11px] font-medium group"
-                            >
-                                <BrainCircuit className="w-3.5 h-3.5 group-hover:text-purple-500" />
-                                Configure AI Brain
+                                <div className={cn(
+                                    "w-3 h-3 bg-white rounded-full absolute top-0.5 transition-transform duration-200 shadow-sm",
+                                    isAdminMode ? "translate-x-4" : "translate-x-0.5"
+                                )}></div>
                             </button>
                         </div>
-                    )}
-                </div>
+                        {isAdminMode && (
+                            <div className="mt-4 space-y-2 border-t border-gray-100 pt-4">
+                                <div className="text-[10px] text-gray-400 font-medium uppercase mb-2 tracking-wider">Sync Controls</div>
+
+                                {/* Global Smart Sync */}
+                                <button
+                                    onClick={async () => {
+                                        setShowSyncPanel(true); // Open Panel Immediately
+                                        const id = toast.loading('Global Smart Sync Started', { description: 'Monitor progress in the panel >' });
+                                        try {
+                                            // Calls the updated /api/sync/tijori which now runs smart-sync.ts
+                                            const res = await fetch('/api/sync/tijori', { method: 'POST' });
+                                            const data = await res.json();
+                                            if (data.success) {
+                                                toast.dismiss(id);
+                                            } else {
+                                                toast.error('Sync Failed', { id, description: data.error });
+                                            }
+                                        } catch (e) {
+                                            toast.error('Network Error', { id });
+                                        }
+                                    }}
+                                    className="w-full flex items-center gap-2 px-3 py-2 rounded-lg bg-[#6B9FCC] text-white hover:bg-[#4A7AAF] transition-all text-[11px] font-medium shadow-sm active:scale-95 group"
+                                >
+                                    <RefreshCw className="w-3.5 h-3.5 group-hover:animate-spin" />
+                                    Global Smart Sync
+                                </button>
+                                {/* Configure AI */}
+                                <button
+                                    onClick={() => setShowPromptEditor(true)}
+                                    className="w-full flex items-center gap-2 px-3 py-2 rounded-lg bg-white border border-gray-200 text-gray-600 hover:bg-[#F0F7FF] hover:border-[#6B9FCC] hover:text-[#6B9FCC] transition-all text-[11px] font-medium group"
+                                >
+                                    <BrainCircuit className="w-3.5 h-3.5 group-hover:text-purple-500" />
+                                    Configure AI Brain
+                                </button>
+                            </div>
+                        )}
+                    </div>
+                )}
 
                 {showPromptEditor && <PromptEditor onClose={() => setShowPromptEditor(false)} />}
                 <SyncStatusPanel isOpen={showSyncPanel} onClose={() => setShowSyncPanel(false)} />
