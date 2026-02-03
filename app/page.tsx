@@ -13,7 +13,7 @@ export default async function Home() {
       <header className="flex justify-between items-center mb-6 pb-4 border-b border-gray-200">
         <div>
           <h1 className="text-lg font-semibold text-gray-800 tracking-tight">Dashboard</h1>
-          <p className="text-gray-400 text-xs">Real-time earnings intelligence</p>
+          <p className="text-gray-400 text-xs">Real-Time Earning Intelligence</p>
         </div>
         <div className="flex items-center gap-2">
           <div className="bg-white border border-gray-200 px-2.5 py-1 rounded-lg text-[10px] flex items-center gap-1.5 text-gray-500">
