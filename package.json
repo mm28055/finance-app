@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "postinstall": "prisma generate",
-    "sync": "npx tsx scripts/smart-sync.ts"
+    "sync": "npx tsx scripts/tijori-downloader.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
