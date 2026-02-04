@@ -155,7 +155,7 @@ export function SectorChat() {
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 z-50 md:inset-auto md:bottom-6 md:right-6 md:w-[600px] md:h-[700px] bg-white md:rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex flex-col animate-in slide-in-from-bottom-5 duration-300 overflow-hidden">
+        <div className="fixed inset-0 z-50 md:inset-auto md:bottom-6 md:right-6 md:w-[600px] md:h-[800px] bg-white md:rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex flex-col animate-in slide-in-from-bottom-5 duration-300 overflow-hidden">
 
             {/* Header */}
             <div className="p-4 border-b border-gray-100 flex justify-between items-center bg-white/80 backdrop-blur-md z-10 sticky top-0">
