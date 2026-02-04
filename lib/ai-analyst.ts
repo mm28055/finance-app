@@ -56,7 +56,7 @@ export async function analyzeTranscript(transcriptText: string, previousQuarterD
         const dbConfig = await prisma.systemConfig.findUnique({
             where: { key: 'PROMPT_CONFIG' }
         });
-        
+
         if (dbConfig) {
             config = JSON.parse(dbConfig.value);
         } else {
@@ -180,10 +180,9 @@ Use EXACTLY the following structure with ## headers (to trigger the alternating 
 - What new risks have appeared? Did any previous risks get resolved or downplayed?
 - Contrast management's confidence levels between the two calls.
 `;
-}
-    } catch (e) { console.error("Failed to load prompt config", e); }
 
-const prompt = `
+
+    const prompt = `
 ${config.basePrompt}
 
 ${isDelta ? config.deltaInstructions : ''}
@@ -207,83 +206,83 @@ Return a JSON object with two keys:
 }
 `;
 
-try {
-    if (!process.env.GOOGLE_AI_KEY) {
-        throw new Error("GOOGLE_AI_KEY is missing from environment variables.");
+    try {
+        if (!process.env.GOOGLE_AI_KEY) {
+            throw new Error("GOOGLE_AI_KEY is missing from environment variables.");
+        }
+
+        const result = await geminiPro.generateContent(prompt);
+        const response = await result.response;
+        const text = response.text();
+
+        // Clean markdown if present
+        const jsonStr = text.replace(/```json/g, '').replace(/```/g, '').trim();
+        const parsed = JSON.parse(jsonStr);
+
+        // Handle new format with investor_brief
+        const structuredData = parsed.structured_data || parsed;
+        const investorBrief = parsed.investor_brief || null;
+
+        const safeFinancials = structuredData.financials || {};
+        const safeGuidance = structuredData.guidance || {};
+        const safeCapex = structuredData.capex || {};
+        const safeSummary = structuredData.summary || {};
+
+        // Validate and Default (Deep Merge)
+        const parseNum = (v: any) => {
+            if (typeof v === 'number') return v;
+            if (!v) return 0;
+            return parseFloat(v.toString().replace(/[^0-9.-]/g, '')) || 0;
+        };
+
+        return {
+            financials: {
+                revenue: parseNum(safeFinancials.revenue),
+                revenue_growth_yoy: parseNum(safeFinancials.revenue_growth_yoy),
+                volume_growth_yoy: safeFinancials.volume_growth_yoy ? parseNum(safeFinancials.volume_growth_yoy) : undefined,
+                gross_margin_percent: safeFinancials.gross_margin_percent ? parseNum(safeFinancials.gross_margin_percent) : undefined,
+                ebitda: parseNum(safeFinancials.ebitda),
+                ebitda_margin_percent: parseNum(safeFinancials.ebitda_margin_percent),
+                finance_cost: safeFinancials.finance_cost ? parseNum(safeFinancials.finance_cost) : undefined,
+                depreciation: safeFinancials.depreciation ? parseNum(safeFinancials.depreciation) : undefined,
+                pat: parseNum(safeFinancials.pat),
+                pat_margin_percent: safeFinancials.pat_margin_percent ? parseNum(safeFinancials.pat_margin_percent) : undefined,
+                eps: safeFinancials.eps ? parseNum(safeFinancials.eps) : undefined,
+                order_book: safeFinancials.order_book ? parseNum(safeFinancials.order_book) : undefined
+            },
+            guidance_numeric: structuredData.guidance_numeric ? {
+                revenue_target: structuredData.guidance_numeric.revenue_target ? parseNum(structuredData.guidance_numeric.revenue_target) : undefined,
+                revenue_growth_target: structuredData.guidance_numeric.revenue_growth_target ? parseNum(structuredData.guidance_numeric.revenue_growth_target) : undefined,
+                ebitda_margin_target: structuredData.guidance_numeric.ebitda_margin_target ? parseNum(structuredData.guidance_numeric.ebitda_margin_target) : undefined,
+                pat_target: structuredData.guidance_numeric.pat_target ? parseNum(structuredData.guidance_numeric.pat_target) : undefined
+            } : undefined,
+            management_tone: structuredData.management_tone || 5,
+
+            // Legacy Fields (Optional)
+            guidance: {
+                text: safeGuidance.text || "No guidance extracted",
+                sentiment: safeGuidance.sentiment || "neutral",
+                delta: safeGuidance.delta || "none"
+            },
+            capex: {
+                amount: safeCapex.amount || "-",
+                details: safeCapex.details || "No capex details",
+                delta: safeCapex.delta || "none"
+            },
+            summary: {
+                highlights: safeSummary.highlights || [],
+                lowlights: safeSummary.lowlights || []
+            },
+            delta_analysis: structuredData.delta_analysis || undefined,
+            investor_brief: investorBrief
+        };
+
+    } catch (error: any) {
+        console.error("AI Analysis Detail Error:", {
+            message: error.message,
+            stack: error.stack,
+            status: error?.status
+        });
+        throw new Error(`AI Analysis Failed (Structure): ${error.message}`);
     }
-
-    const result = await geminiPro.generateContent(prompt);
-    const response = await result.response;
-    const text = response.text();
-
-    // Clean markdown if present
-    const jsonStr = text.replace(/```json/g, '').replace(/```/g, '').trim();
-    const parsed = JSON.parse(jsonStr);
-
-    // Handle new format with investor_brief
-    const structuredData = parsed.structured_data || parsed;
-    const investorBrief = parsed.investor_brief || null;
-
-    const safeFinancials = structuredData.financials || {};
-    const safeGuidance = structuredData.guidance || {};
-    const safeCapex = structuredData.capex || {};
-    const safeSummary = structuredData.summary || {};
-
-    // Validate and Default (Deep Merge)
-    const parseNum = (v: any) => {
-        if (typeof v === 'number') return v;
-        if (!v) return 0;
-        return parseFloat(v.toString().replace(/[^0-9.-]/g, '')) || 0;
-    };
-
-    return {
-        financials: {
-            revenue: parseNum(safeFinancials.revenue),
-            revenue_growth_yoy: parseNum(safeFinancials.revenue_growth_yoy),
-            volume_growth_yoy: safeFinancials.volume_growth_yoy ? parseNum(safeFinancials.volume_growth_yoy) : undefined,
-            gross_margin_percent: safeFinancials.gross_margin_percent ? parseNum(safeFinancials.gross_margin_percent) : undefined,
-            ebitda: parseNum(safeFinancials.ebitda),
-            ebitda_margin_percent: parseNum(safeFinancials.ebitda_margin_percent),
-            finance_cost: safeFinancials.finance_cost ? parseNum(safeFinancials.finance_cost) : undefined,
-            depreciation: safeFinancials.depreciation ? parseNum(safeFinancials.depreciation) : undefined,
-            pat: parseNum(safeFinancials.pat),
-            pat_margin_percent: safeFinancials.pat_margin_percent ? parseNum(safeFinancials.pat_margin_percent) : undefined,
-            eps: safeFinancials.eps ? parseNum(safeFinancials.eps) : undefined,
-            order_book: safeFinancials.order_book ? parseNum(safeFinancials.order_book) : undefined
-        },
-        guidance_numeric: structuredData.guidance_numeric ? {
-            revenue_target: structuredData.guidance_numeric.revenue_target ? parseNum(structuredData.guidance_numeric.revenue_target) : undefined,
-            revenue_growth_target: structuredData.guidance_numeric.revenue_growth_target ? parseNum(structuredData.guidance_numeric.revenue_growth_target) : undefined,
-            ebitda_margin_target: structuredData.guidance_numeric.ebitda_margin_target ? parseNum(structuredData.guidance_numeric.ebitda_margin_target) : undefined,
-            pat_target: structuredData.guidance_numeric.pat_target ? parseNum(structuredData.guidance_numeric.pat_target) : undefined
-        } : undefined,
-        management_tone: structuredData.management_tone || 5,
-
-        // Legacy Fields (Optional)
-        guidance: {
-            text: safeGuidance.text || "No guidance extracted",
-            sentiment: safeGuidance.sentiment || "neutral",
-            delta: safeGuidance.delta || "none"
-        },
-        capex: {
-            amount: safeCapex.amount || "-",
-            details: safeCapex.details || "No capex details",
-            delta: safeCapex.delta || "none"
-        },
-        summary: {
-            highlights: safeSummary.highlights || [],
-            lowlights: safeSummary.lowlights || []
-        },
-        delta_analysis: structuredData.delta_analysis || undefined,
-        investor_brief: investorBrief
-    };
-
-} catch (error: any) {
-    console.error("AI Analysis Detail Error:", {
-        message: error.message,
-        stack: error.stack,
-        status: error?.status
-    });
-    throw new Error(`AI Analysis Failed (Structure): ${error.message}`);
-}
 }
