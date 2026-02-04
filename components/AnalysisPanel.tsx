@@ -134,21 +134,32 @@ export function AnalysisPanel({
                         const content = activeData.investor_brief.trim();
                         const sections = content.split(/\n(?=##\s)/g);
 
-                        // DELTA HEADERS TO HIDE (If leaked into main brief)
-                        const DELTA_BLACKLIST = [
-                            "NARRATIVE SHIFT",
-                            "GUIDANCE EVOLUTION",
-                            "EXECUTION VS. PROMISE",
-                            "RISK LANDSCAPE EVOLUTION"
+                        // ALLOWLIST: Only these sections are allowed in the Analysis Tab
+                        // This prevents Delta content (or any other future hallucinations) from leaking in.
+                        const ANALYSIS_ALLOWLIST = [
+                            "KEY HIGHLIGHTS",
+                            "ANALYST VERDICT",
+                            "GUIDANCE",
+                            "CREDIBILITY",
+                            "STRATEGIC GROWTH",
+                            "FINANCIAL PERFORMANCE",
+                            "SEGMENT ANALYSIS",
+                            "ORDER BOOK",
+                            "REVENUE VISIBILITY",
+                            "CAPITAL ALLOCATION",
+                            "BALANCE SHEET",
+                            "Q&A ANALYSIS",
+                            "MEDIUM-TERM INVESTMENT THESIS"
                         ];
 
                         return sections.map((section, idx) => {
-                            // Check if this section is a delta section
+                            // Check header
                             const headerMatch = section.match(/^##\s+(.+)$/m);
                             if (headerMatch) {
                                 const headerText = headerMatch[1].toUpperCase();
-                                if (DELTA_BLACKLIST.some(b => headerText.includes(b))) {
-                                    return null; // Skip this section
+                                // If the header does NOT contain any of the allowed keywords, skip it.
+                                if (!ANALYSIS_ALLOWLIST.some(allowed => headerText.includes(allowed))) {
+                                    return null;
                                 }
                             }
 

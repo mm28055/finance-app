@@ -168,6 +168,10 @@ Use EXACTLY the following structure with ## headers (to trigger the alternating 
 - Institutional analysis of the strategic story change since last quarter.
 - Identify any "Goalpost Moving" or walking back of previous strategic claims.
 
+## EMPHASIS
+- What specifically was emphasized this quarter that was NOT emphasized last quarter?
+- Conversely, what was downplayed or omitted this quarter compared to last?
+
 ## Guidance Evolution & Target Tracking
 - Compare current Revenue/EBITDA/Margin targets against what was promised 90 days ago.
 - Highlight any new long-term visions (Vision 2030, etc.) introduced or modified.
