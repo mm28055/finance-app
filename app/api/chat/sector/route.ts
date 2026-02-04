@@ -71,21 +71,47 @@ ${content}
 `;
         }).join('\n');
 
+        // --- RAG INTEGRATION START ---
+        // Search for specific details in the raw transcripts
+        let ragContext = "";
+        try {
+            const { searchSectorTranscripts } = await import('@/lib/rag');
+            const ragResults = await searchSectorTranscripts(sector, message, 5); // Top 5 chunks
+
+            if (ragResults.length > 0) {
+                ragContext = `
+\n\n=== RELEVANT TRANSCRIPT EXCERPTS (Deep Dive) ===
+The following are exact quotes from the raw call transcripts found in our database:
+${ragResults.map((r, i) => `
+[Exerpt ${i + 1}] (Distance: ${r.distance.toFixed(4)})
+"${r.content}"
+`).join('\n')}
+================================================
+`;
+            }
+        } catch (e) {
+            console.error("RAG Search Failed:", e);
+            // Non-blocking: continue without RAG if it fails
+        }
+        // --- RAG INTEGRATION END ---
+
         const prompt = `
 You are a Senior Equity Analyst covering the **${sector}** sector in India.
-You have access to the following concall analysis summaries:
+You have access to the following concall analysis summaries AND specific raw transcript excerpts:
 
 ${context}
+${ragContext}
 
 USER QUESTION: "${message}"
 
 INSTRUCTIONS:
 1. Answer with specific data from the context above.
 2. Use **bold** for key numbers and company names.
-3. Compare companies where relevant.
-4. Format with clear markdown (headers, bullets).
-5. If data is missing, say so - don't make up numbers.
-6. Keep response focused and concise (max 400 words).
+3. If the answer is found in the "Relevant Transcript Excerpts", cite it explicitly (e.g., "According to the transcript...").
+4. Compare companies where relevant.
+5. Format with clear markdown (headers, bullets).
+6. If data is missing, say so - don't make up numbers.
+7. Keep response focused and concise (max 400 words).
 `;
 
         const result = await geminiPro.generateContent(prompt);

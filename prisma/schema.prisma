@@ -31,6 +31,7 @@ model Company {
   analyses        Analysis[]
   financials      Financials[]
   transcripts     Transcript[]
+  transcriptChunks TranscriptChunk[]
 }
 
 model Quarter {
@@ -41,6 +42,7 @@ model Quarter {
   analyses    Analysis[]
   financials  Financials[]
   transcripts Transcript[]
+  transcriptChunks TranscriptChunk[]
 }
 
 model Transcript {
@@ -135,4 +137,22 @@ model SectorChat {
   createdAt DateTime @default(now())
   
   @@index([sector])
+}
+
+model TranscriptChunk {
+  id        String   @id @default(uuid())
+  content   String
+  embedding Unsupported("vector(768)")? // Gemini 1.5/Pro embedding dimension
+
+  sector    String
+  companyId String
+  quarterId String
+  
+  company   Company @relation(fields: [companyId], references: [id])
+  quarter   Quarter @relation(fields: [quarterId], references: [id])
+
+  createdAt DateTime @default(now())
+
+  @@index([sector])
+  @@index([companyId])
 }
