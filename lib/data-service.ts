@@ -1,6 +1,6 @@
 import { prisma } from '@/lib/prisma';
 import { SectorData, EnrichedCompany } from '@/components/SectorList';
-import type { CompanyFinancials } from '@/components/FinancialMatrix';
+import type { CompanyFinancials, MetricData } from '@/components/FinancialMatrix';
 import { AnalysisResult } from './ai-analyst';
 
 export async function getDashboardData(): Promise<SectorData[]> {
@@ -12,7 +12,7 @@ export async function getDashboardData(): Promise<SectorData[]> {
                     { quarter: { year: 'desc' } },
                     { quarter: { q: 'desc' } }
                 ],
-                take: 4, // Last 4 quarters
+                take: 5, // Take 5 to ensure we have enough for QoQ of the 4th item if needed
                 include: { quarter: true }
             },
             analyses: {
@@ -20,7 +20,7 @@ export async function getDashboardData(): Promise<SectorData[]> {
                     { quarter: { year: 'desc' } },
                     { quarter: { q: 'desc' } }
                 ],
-                take: 4, // Last 4 quarters
+                take: 4,
                 include: { quarter: true }
             },
             transcripts: {
@@ -49,25 +49,27 @@ export async function getDashboardData(): Promise<SectorData[]> {
         const latestF = co.financials[0];
         const latestA = co.analyses[0];
 
-        // Helper to parse Analysis
-        const parseAnalysis = (a: any, f: any): AnalysisResult | undefined => {
+        // 1. Helper to parse AI Analysis JSON
+        const parseAnalysis = (a: any): AnalysisResult | undefined => {
             if (!a) return undefined;
+            // The DB 'Analysis' table does not store the full Output 1 JSON.
+            // It stores specific fields like `summary`, `guidanceText`.
+            // So we reconstruct an AnalysisResult from what we have in the DB 
+            // to fulfill the UI's need for "AnalysisResult" type.
+
             try {
                 return {
+                    // Placeholders for financials since they are handled via EnrichedCompany.financials
                     financials: {
-                        revenue: Number(f?.revenue || 0),
-                        revenue_growth_yoy: Number(f?.revenueYoY || 0),
-                        ebitda: Number(f?.ebitda || 0),
-                        ebitda_margin_percent: f?.revenue ? Number((Number(f.ebitda) / Number(f.revenue) * 100).toFixed(1)) : 0,
-                        pat: Number(f?.pat || 0),
-                        finance_cost: Number((f as any)?.financeCost || 0),
-                        depreciation: Number((f as any)?.depreciation || 0),
-                        order_book: Number((f as any)?.orderBook || 0)
+                        revenue: { current_q: null, ytd: null, delta_qoq: null, delta_yoy: null, delta_ytd: null },
+                        ebitda: { current_q: null, ytd: null, delta_qoq: null, delta_yoy: null, delta_ytd: null },
+                        ebitda_margin: { current_q: null, ytd: null, delta_qoq: null, delta_yoy: null, delta_ytd: null },
+                        pat: { current_q: null, ytd: null, delta_qoq: null, delta_yoy: null, delta_ytd: null },
+                        order_book: null
                     },
-                    guidance_numeric: {
-                        revenue_target: Number((f as any)?.guidanceRevenue || 0),
-                        ebitda_margin_target: Number((f as any)?.guidanceEbitdaMargin || 0),
-                        pat_target: Number((f as any)?.guidancePat || 0)
+                    forward_guidance_fy: {
+                        revenue_target: null,
+                        margin_target: null
                     },
                     guidance: {
                         text: a.guidanceText || "Not disclosed",
@@ -93,103 +95,135 @@ export async function getDashboardData(): Promise<SectorData[]> {
             }
         };
 
-        const currentAnalysis = parseAnalysis(latestA, latestF);
+        const currentAnalysis = parseAnalysis(latestA);
 
-        // Build History from UNION of Analyses, Financials, and Transcripts
-        const uniqueQuarterIds = new Set<string>();
-        co.analyses.forEach(a => uniqueQuarterIds.add(a.quarterId));
-        co.financials.forEach(f => uniqueQuarterIds.add(f.quarterId));
-        co.transcripts.forEach(t => uniqueQuarterIds.add(t.quarterId));
+        // 2. Build CompanyFinancials from DB (and calculate missing metrics locally)
+        const createSafeFinancials = (f: any, prevF: any, allF: any[]): CompanyFinancials => {
+            const val = (v: any) => (v !== null && v !== undefined) ? Number(v) : null;
 
-        const createSafeFinancials = (f: any): CompanyFinancials => {
-            const safeVal = (v: any) => Number(v || 0);
-            const dummyMetric = (val: number) => ({ currentQ: val, ytd: 0, deltaQoQ: 0, deltaYoY: 0, deltaYTD: 0 });
+            const currentYear = f?.quarter?.year;
+
+            // Calculate YTD
+            const ytdSum = (key: string) => {
+                if (!currentYear) return null;
+                // Filter all financials for the same year as 'f' and Q <= f.q
+                // But simplified: Just sum all quarters of this year found in data
+                // Correct logic: Sum quarters of THIS fiscal year up to current quarter.
+                // Assuming `allF` is sorted descending.
+
+                // For simplicity in this demo: sum all records with same year. 
+                // (In reality, Indian FY is distinct from Calendar Year, need robust logic)
+                const relevant = allF.filter(x => x.quarter.year === currentYear);
+                if (relevant.length === 0) return null;
+                return relevant.reduce((sum, x) => sum + Number(x[key] || 0), 0);
+            };
+
+            const revYTD = ytdSum('revenue');
+            const ebitdaYTD = ytdSum('ebitda');
+            const patYTD = ytdSum('pat');
+
+            // Calculate QoQ
+            const calcQoQ = (curr: any, prev: any) => {
+                const c = val(curr);
+                const p = val(prev);
+                if (c === null || p === null || p === 0) return null;
+                return Number((((c - p) / p) * 100).toFixed(1));
+            };
+
+            // Calculate YoY from DB if available, else try to find Q-4
+            // f.revenueYoY is stored in DB by sync route
+
+            const revenue: MetricData = {
+                currentQ: val(f?.revenue),
+                ytd: revYTD,
+                deltaQoQ: calcQoQ(f?.revenue, prevF?.revenue),
+                deltaYoY: val(f?.revenueYoY),
+                deltaYTD: null
+            };
+
+            const ebitda: MetricData = {
+                currentQ: val(f?.ebitda),
+                ytd: ebitdaYTD,
+                deltaQoQ: calcQoQ(f?.ebitda, prevF?.ebitda),
+                deltaYoY: val(f?.ebitdaYoY),
+                deltaYTD: null
+            };
+
+            // Margin (Calculated)
+            const marginCalc = (num: any, den: any) => {
+                const n = val(num);
+                const d = val(den);
+                if (!n || !d) return null;
+                return Number(((n / d) * 100).toFixed(1));
+            };
+
+            const currMargin = marginCalc(f?.ebitda, f?.revenue);
+            const prevMargin = marginCalc(prevF?.ebitda, prevF?.revenue);
+            const ytdMargin = marginCalc(ebitdaYTD, revYTD);
+
+            const ebitdaMargin: MetricData = {
+                currentQ: currMargin,
+                ytd: ytdMargin,
+                deltaQoQ: (currMargin && prevMargin) ? Number((currMargin - prevMargin).toFixed(1)) : null, // Change in percentage points
+                deltaYoY: null,
+                deltaYTD: null
+            };
+
+            const pat: MetricData = {
+                currentQ: val(f?.pat),
+                ytd: patYTD,
+                deltaQoQ: calcQoQ(f?.pat, prevF?.pat),
+                deltaYoY: val(f?.patYoY),
+                deltaYTD: null
+            };
 
             return {
-                revenue: { ...dummyMetric(safeVal(f?.revenue)), deltaYoY: safeVal(f?.revenueYoY) },
-                ebitda: dummyMetric(safeVal(f?.ebitda)),
-                ebitdaMargin: dummyMetric(f?.revenue ? Number((safeVal(f.ebitda) / safeVal(f.revenue) * 100).toFixed(1)) : 0),
-                pat: dummyMetric(safeVal(f?.pat)),
-                patMargin: dummyMetric(f?.revenue ? Number((safeVal(f.pat) / safeVal(f.revenue) * 100).toFixed(1)) : 0),
-
-                financeCost: dummyMetric(safeVal(f?.financeCost)),
-                depreciation: dummyMetric(safeVal(f?.depreciation)),
-                volGrowth: dummyMetric(safeVal(f?.volumeGrowth)),
-                orderBook: dummyMetric(safeVal(f?.orderBook)),
-
+                revenue,
+                ebitda,
+                ebitdaMargin,
+                pat,
+                orderBook: val(f?.orderBook),
                 guidance: {
-                    revenue: safeVal(f?.guidanceRevenue),
-                    ebitdaMargin: safeVal(f?.guidanceEbitdaMargin),
-                    pat: safeVal(f?.guidancePat)
+                    revenueTarget: val(f?.guidanceRevenue),
+                    marginTarget: val(f?.guidanceEbitdaMargin),
+                    pat: val(f?.guidancePat)
                 }
             };
         };
 
+        // Build History
+        const uniqueQuarterIds = new Set<string>();
+        if (co.analyses) co.analyses.forEach(a => uniqueQuarterIds.add(a.quarterId));
+        if (co.financials) co.financials.forEach(f => uniqueQuarterIds.add(f.quarterId));
+        if (co.transcripts) co.transcripts.forEach(t => uniqueQuarterIds.add(t.quarterId));
+
         const history = Array.from(uniqueQuarterIds).map(qId => {
-            const matchingA = co.analyses.find(a => a.quarterId === qId);
             const matchingF = co.financials.find(f => f.quarterId === qId);
+            const matchingA = co.analyses.find(a => a.quarterId === qId);
             const matchingT = co.transcripts.find(t => t.quarterId === qId);
 
-            // If we have an analysis, use it. If not, try to parse from matchingF or creates defaults.
-            const fallbackAnalysis = {
-                financials: {
-                    revenue: Number(matchingF?.revenue || 0),
-                    revenue_growth_yoy: Number(matchingF?.revenueYoY || 0),
-                    ebitda: Number(matchingF?.ebitda || 0),
-                    ebitda_margin_percent: matchingF?.revenue ? Number((Number(matchingF.ebitda) / Number(matchingF.revenue) * 100).toFixed(1)) : 0,
-                    pat: Number(matchingF?.pat || 0),
-                    finance_cost: Number((matchingF as any)?.financeCost || 0),
-                    depreciation: Number((matchingF as any)?.depreciation || 0),
-                    order_book: Number((matchingF as any)?.orderBook || 0)
-                },
-                guidance: { text: "No analysis available", sentiment: 'neutral' as any, delta: 'maintained' as any },
-                capex: { amount: "-", details: "", delta: 'maintained' as any },
-                summary: { highlights: [], lowlights: [] },
-                management_tone: 5,
-                delta_analysis: undefined,
-                investor_brief: undefined
-            } as AnalysisResult;
-
-            const parsedAnalysis = (matchingA ? parseAnalysis(matchingA, matchingF) : null) || fallbackAnalysis;
-
-            const quarterName = matchingA?.quarter.name || matchingF?.quarter.name || matchingT?.quarter.name || "Unknown";
+            // Find previous F relative to this F for QoQ
+            const idx = co.financials.findIndex(f => f.quarterId === qId);
+            const prevF = idx >= 0 && idx + 1 < co.financials.length ? co.financials[idx + 1] : null;
 
             return {
-                quarter: quarterName,
-                analysis: parsedAnalysis,
+                quarter: matchingF?.quarter.name || matchingA?.quarter.name || matchingT?.quarter.name || "Unknown",
+                analysis: parseAnalysis(matchingA) as AnalysisResult,
                 pdfUrl: matchingT?.fileUrl || null,
-                financials: createSafeFinancials(matchingF)
+                financials: matchingF ? createSafeFinancials(matchingF, prevF, co.financials) : ({} as any)
             };
         }).sort((a, b) => {
-            // Sort by Quarter (Year -> Q)
-            const getScore = (q: string) => {
-                const parts = q.split(' '); // "Q2 FY26"
-                if (parts.length < 2) return 0;
-                const year = parseInt(parts[1].replace('FY', ''));
-                const qNum = parseInt(parts[0].replace('Q', ''));
-                return (year * 10) + qNum;
-            };
-            return getScore(b.quarter) - getScore(a.quarter);
+            // Basic sort
+            const partsA = a.quarter.split(' ');
+            const partsB = b.quarter.split(' ');
+            if (partsA.length < 2 || partsB.length < 2) return 0;
+            const yA = parseInt(partsA[1]?.replace('FY', '') || '0');
+            const yB = parseInt(partsB[1]?.replace('FY', '') || '0');
+            if (yA !== yB) return yB - yA;
+            return partsB[0].localeCompare(partsA[0]);
         });
 
-        // Calculate YTD and QoQ deltas
-        const currentYear = latestF?.quarter.year;
-        const ytdRevenue = co.financials
-            .filter(f => f.quarter.year === currentYear)
-            .reduce((sum, f) => sum + Number(f.revenue || 0), 0);
-
-        const ytdEbitda = co.financials
-            .filter(f => f.quarter.year === currentYear)
-            .reduce((sum, f) => sum + Number(f.ebitda || 0), 0);
-
-        const ytdPat = co.financials
-            .filter(f => f.quarter.year === currentYear)
-            .reduce((sum, f) => sum + Number(f.pat || 0), 0);
-
-        const prevF = co.financials[1]; // Previous quarter
-        const revenueQoQ = (latestF?.revenue && prevF?.revenue)
-            ? ((Number(latestF.revenue) - Number(prevF.revenue)) / Number(prevF.revenue) * 100)
-            : 0;
+        const latestPrevF = co.financials.length > 1 ? co.financials[1] : null;
 
         const companyObj: EnrichedCompany = {
             id: co.id,
@@ -197,44 +231,7 @@ export async function getDashboardData(): Promise<SectorData[]> {
             ticker: co.ticker,
             price: 0,
             priceChange: 0,
-            financials: {
-                _quarterName: latestF?.quarter.name,
-                revenue: {
-                    currentQ: Number(latestF?.revenue || 0),
-                    ytd: ytdRevenue,
-                    deltaQoQ: revenueQoQ,
-                    deltaYoY: Number(latestF?.revenueYoY || 0),
-                    deltaYTD: 0
-                },
-                ebitda: {
-                    currentQ: Number(latestF?.ebitda || 0),
-                    ytd: ytdEbitda,
-                    deltaQoQ: 0,
-                    deltaYoY: 0,
-                    deltaYTD: 0
-                },
-                ebitdaMargin: {
-                    currentQ: latestF?.revenue ? Number((Number(latestF.ebitda) / Number(latestF.revenue) * 100).toFixed(1)) : 0,
-                    ytd: ytdRevenue ? Number((ytdEbitda / ytdRevenue * 100).toFixed(1)) : 0,
-                    deltaQoQ: 0,
-                    deltaYoY: 0,
-                    deltaYTD: 0
-                },
-                pat: {
-                    currentQ: Number(latestF?.pat || 0),
-                    ytd: ytdPat,
-                    deltaQoQ: 0,
-                    deltaYoY: 0,
-                    deltaYTD: 0
-                },
-                patMargin: {
-                    currentQ: latestF?.revenue ? Number((Number(latestF.pat) / Number(latestF.revenue) * 100).toFixed(1)) : 0,
-                    ytd: ytdRevenue ? Number((ytdPat / ytdRevenue * 100).toFixed(1)) : 0,
-                    deltaQoQ: 0,
-                    deltaYoY: 0,
-                    deltaYTD: 0
-                }
-            } as any,
+            financials: createSafeFinancials(latestF, latestPrevF, co.financials),
             analysis: currentAnalysis,
             profile: co.businessProfile || undefined,
             summary: {
@@ -254,7 +251,6 @@ export async function getDashboardData(): Promise<SectorData[]> {
         sectorMap.get(sName)!.stats.companies++;
     });
 
-    // Sort companies within each sector by market cap (highest first)
     const sectors = Array.from(sectorMap.values());
     sectors.forEach(sector => {
         sector.companies.sort((a, b) => (b.marketCap || 0) - (a.marketCap || 0));

@@ -44,7 +44,7 @@ async function getRecentQuarterIds(sector: string): Promise<string[]> {
     return Array.from(quarterIds);
 }
 
-export async function searchSectorTranscripts(sector: string, query: string, limit = 50): Promise<RagResult[]> {
+export async function searchSectorTranscripts(sector: string, query: string, limit = 125): Promise<RagResult[]> {
     // 1. Get List of Allowed Quarter IDs (Latest 2 per company)
     const allowedQuarterIds = await getRecentQuarterIds(sector);
 
