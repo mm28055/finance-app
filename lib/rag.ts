@@ -25,13 +25,18 @@ export interface RagResult {
  */
 // Helper to get recent quarter IDs for a sector to filter RAG
 async function getRecentQuarterIds(sector: string): Promise<string[]> {
+    // We use the Transcript table because RAG searches raw transcripts.
+    // Finding the latest 2 quarters that actually HAVE transcripts for each company in the sector.
     const companies = await prisma.company.findMany({
-        where: { sector, isVisible: true },
+        where: { sector: sector, isVisible: true },
         select: {
             id: true,
-            analyses: {
-                take: 2, // Latest 2 quarters
-                orderBy: { quarter: { year: 'desc' } }, // Approximate sorting
+            transcripts: {
+                take: 2,
+                orderBy: [
+                    { quarter: { year: 'desc' } },
+                    { quarter: { q: 'desc' } }
+                ],
                 select: { quarterId: true }
             }
         }
@@ -39,7 +44,7 @@ async function getRecentQuarterIds(sector: string): Promise<string[]> {
 
     const quarterIds = new Set<string>();
     companies.forEach(c => {
-        c.analyses.forEach(a => quarterIds.add(a.quarterId));
+        c.transcripts.forEach(t => quarterIds.add(t.quarterId));
     });
     return Array.from(quarterIds);
 }
