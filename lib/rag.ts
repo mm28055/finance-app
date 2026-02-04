@@ -22,7 +22,7 @@ export interface RagResult {
  * Searches for relevant transcript chunks within a specific sector.
  * Uses pgvector cosine distance definition (<=>).
  */
-export async function searchSectorTranscripts(sector: string, query: string, limit = 10): Promise<RagResult[]> {
+export async function searchSectorTranscripts(sector: string, query: string, limit = 50): Promise<RagResult[]> {
     // 1. Generate Vector for the Query
     const vector = await generateEmbedding(query);
 

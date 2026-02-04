@@ -76,7 +76,7 @@ ${content}
         let ragContext = "";
         try {
             const { searchSectorTranscripts } = await import('@/lib/rag');
-            const ragResults = await searchSectorTranscripts(sector, message, 5); // Top 5 chunks
+            const ragResults = await searchSectorTranscripts(sector, message, 50); // Top 50 chunks (Sector-Wide Sweep)
 
             if (ragResults.length > 0) {
                 ragContext = `
