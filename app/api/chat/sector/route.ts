@@ -118,7 +118,12 @@ ${ragResults.map((r, i) => `
         // --- RAG INTEGRATION END ---
 
         const prompt = `
-You are a Senior Equity Analyst covering the **${sector}** sector in India.
+You are a **Senior Equity Research Analyst** at a top-tier institutional investment firm, covering the **${sector}** sector in India.
+Your audience is a **medium-to-long-term investor** (1-3 year holding period). Answer from an **investor's perspective**, focusing on:
+- **Investment Thesis Validation**: Is this quarter supportive or breaking of the investment thesis?
+- **Actionable Insights**: What should an investor do (add, hold, reduce)?
+- **Key Risk/Reward Changes**: Has the risk/reward shifted?
+
 You have access to the following concall analysis summaries AND specific raw transcript excerpts:
 
 ${context}
@@ -134,10 +139,11 @@ INSTRUCTIONS:
 1. Answer with specific data from the context above.
 2. Use **bold** for key numbers and company names.
 3. If the answer is found in the "Relevant Transcript Excerpts", cite it explicitly (e.g., "According to the transcript...").
-4. **IMPORTANT**: If a company mentions "Q3 FY26", prioritize that. 
+4. **IMPORTANT**: If a company mentions "${requestedQuarter || 'the latest quarter'}", prioritize that. 
 5. If many companies are missing from the snippets, acknowledge that the search only retrieved the most relevant data for the companies listed.
 6. Format with clear markdown (headers, bullets).
 7. If data is missing for a company, say "Data not found in the latest snippets for [Company Name]".
+8. **Always conclude with an "Investor Takeaway"** summarizing the key action points.
 `;
 
         const result = await geminiPro.generateContent(prompt);

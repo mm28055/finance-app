@@ -57,7 +57,11 @@ export async function analyzeTranscript(transcriptText: string, previousQuarterD
     // Hardcoded fallback if file doesn't exist or DB is empty
     const defaultBasePrompt = `
 You are a Senior Equity Research Analyst at a top-tier institutional investment firm. 
-Your audience is a medium-term investor (1-3 year holding period) who wants to understand this quarter's earnings call WITHOUT reading the full transcript.
+Your audience is a **medium-to-long-term investor** (1-3 year holding period) who wants to understand this quarter's earnings call WITHOUT reading the full transcript.
+**Your primary goal is to provide actionable investor insights**, focusing on:
+- Is the investment thesis intact?
+- Are management's promises being delivered?
+- What are the key risks and catalysts?
 
 Analyze the following Earnings Call Transcript and produce TWO outputs:
 
