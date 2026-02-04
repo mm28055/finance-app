@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
 
         // Flatten to get all analyses
         const analyses = companies.flatMap(co =>
-            co.analyses.map(a => ({ ...a, company: co }))
+            co.analyses.map(a => ({ ...a, company: co } as any))
         );
 
         if (analyses.length === 0) {
@@ -38,22 +38,57 @@ export async function POST(req: NextRequest) {
             const co = a.company;
             const q = a.quarter;
 
-            // Parse keyHighlights if it's JSON
-            let highlights: string[] = [];
+            // PARSE STRUCTURED DATA (New Source of Truth)
+            let structured: any = {};
             try {
-                if (a.keyHighlights) {
-                    highlights = JSON.parse(a.keyHighlights);
+                if (a.structuredData) {
+                    structured = typeof a.structuredData === 'string'
+                        ? JSON.parse(a.structuredData)
+                        : a.structuredData;
                 }
-            } catch (e) {
-                highlights = a.keyHighlights ? [a.keyHighlights] : [];
+            } catch (e) { console.error("JSON Parse Error", e); }
+
+            // Fallback to legacy columns if structured data is missing
+            const guidance = structured?.guidance?.text
+                || a.guidanceText
+                || 'N/A';
+
+            const sentiment = structured?.guidance?.sentiment
+                || a.guidanceSentiment
+                || 'N/A';
+
+            const capex = structured?.capex?.amount
+                ? `${structured.capex.amount} (${structured.capex.details || ''})`
+                : (a.capexText || 'N/A');
+
+            const tone = structured?.management_tone || a.managementTone || 'N/A';
+
+            // Highlights
+            let highlights: string[] = [];
+            if (structured?.summary?.highlights) {
+                highlights = structured.summary.highlights;
+            } else {
+                try {
+                    if (a.keyHighlights) {
+                        highlights = JSON.parse(a.keyHighlights);
+                    }
+                } catch (e) {
+                    highlights = a.keyHighlights ? [a.keyHighlights] : [];
+                }
             }
+
+            // Financials (if available in structured data)
+            const financials = structured?.financials ? `
+  - Revenue: ${structured.financials.revenue || 'N/A'} (${structured.financials.revenue_growth_yoy || ''} YoY)
+  - EBITDA: ${structured.financials.ebitda || 'N/A'} margin: ${structured.financials.ebitda_margin_percent || ''}%
+  - PAT: ${structured.financials.pat || 'N/A'}` : '';
 
             return `
 **${co.name} (${co.ticker}) - ${q.name}**
-- Guidance: ${a.guidanceText || 'N/A'} (${a.guidanceSentiment || 'N/A'})
-- Capex: ${a.capexText || 'N/A'}
-- Tone: ${a.managementTone || 'N/A'}
-- Highlights: ${highlights.slice(0, 3).join('; ') || 'N/A'}
+- Guidance: ${guidance} (${sentiment})
+- Capex: ${capex}
+- Tone: ${tone}${financials}
+- Highlights: ${highlights.slice(0, 4).join('; ') || 'N/A'}
 `;
         }).join('\n');
 
