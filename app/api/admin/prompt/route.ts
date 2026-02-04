@@ -5,38 +5,52 @@ import { prisma } from '@/lib/prisma';
 const CONFIG_KEY = 'PROMPT_CONFIG';
 
 const DEFAULT_CONFIG = {
-    basePrompt: `You are a Senior Equity Research Analyst at a top-tier institutional investment firm. 
+  basePrompt: `You are a Senior Equity Research Analyst at a top-tier institutional investment firm. 
 Your audience is a medium-term investor (1-3 year holding period) who wants to understand this quarter's earnings call WITHOUT reading the full transcript.
 
 Analyze the following Earnings Call Transcript and produce TWO outputs:
 
 ---
 **OUTPUT 1: STRUCTURED DATA (JSON)**
-Extract specific metrics into this JSON structure. Use ONLY numbers (no text) for revenue, ebitda, and pat.
+Extract specific metrics into this JSON structure. 
+IMPORTANT: If a specific value is NOT explicitly mentioned in the text, return null. Do NOT estimate or calculate it yourself.
+
 {
   "financials": {
-    "revenue": <number in Cr>,
-    "ebitda": <number in Cr>,
-    "pat": <number in Cr>,
-    "revenue_growth_yoy": "<X%>",
-    "ebitda_margin_percent": <number>
+    "revenue": {
+      "current_q": <number in Cr>,
+      "ytd": <number in Cr>,
+      "delta_qoq": <number %>,
+      "delta_yoy": <number %>,
+      "delta_ytd": <number %>
+    },
+    "ebitda": {
+      "current_q": <number in Cr>,
+      "ytd": <number in Cr>,
+      "delta_qoq": <number %>,
+      "delta_yoy": <number %>,
+      "delta_ytd": <number %>
+    },
+    "ebitda_margin": {
+      "current_q": <number %>,
+      "ytd": <number %>,
+      "delta_qoq": <number % or bps>,
+      "delta_yoy": <number % or bps>,
+      "delta_ytd": <number % or bps>
+    },
+    "pat": {
+      "current_q": <number in Cr>,
+      "ytd": <number in Cr>,
+      "delta_qoq": <number %>,
+      "delta_yoy": <number %>,
+      "delta_ytd": <number %>
+    },
+    "order_book": <number in Cr>
   },
-  "guidance": {
-    "text": "<2-3 sentence summary of forward guidance>",
-    "sentiment": "positive|neutral|negative",
-    "delta": "increased|maintained|decreased|none"
-  },
-  "capex": {
-    "amount": "<₹X Cr or range>",
-    "details": "<brief purpose>",
-    "delta": "increased|maintained|decreased|none"
-  },
-  "summary": {
-    "highlights": ["point1", "point2", "point3"],
-    "lowlights": ["risk1", "risk2"]
-  },
-  "management_tone": <1-10>,
-  "delta_analysis": "## Narrative Shift\\n- Institutional analysis of the strategic story change...\\n\\n## Guidance Evolution\\n- Detailed comparison of targets...\\n\\n## Promises vs. Performance Scorecard\\n- Tracking specific Q-Minus-1 commitments...\\n\\n## Risk Landscape Evolution\\n- New vs. Closed risks..."
+  "forward_guidance_fy": {
+    "revenue_target": <number in Cr or null>,
+    "margin_target": <number % or null>
+  }
 }
 
 ---
@@ -94,66 +108,49 @@ Return a JSON object with two keys:
   "structured_data": { ...the JSON from Output 1... },
   "investor_brief": "...the full markdown from Output 2..."
 }`,
-    deltaInstructions: `**DELTA ANALYSIS CONTEXT & REPORT REQUIREMENTS**
+  deltaInstructions: `**DELTA ANALYSIS CONTEXT & REPORT REQUIREMENTS**
 You have been provided with BOTH the current quarter and previous quarter transcripts.
-In your "delta_analysis" field (Output 1), write a SOPHISTICATED DELTA REPORT (approx. 400 words).
-Use EXACTLY the following structure with ## headers (to trigger the alternating green UI):
-
-## Narrative Shift & Strategic Pivot
-- Institutional analysis of the strategic story change since last quarter.
-- Identify any "Goalpost Moving" or walking back of previous strategic claims.
-
-## Guidance Evolution & Target Tracking
-- Compare current Revenue/EBITDA/Margin targets against what was promised 90 days ago.
-- Highlight any new long-term visions (Vision 2030, etc.) introduced or modified.
-
-## Execution vs. Promise
-- Did they meet the specific project milestones or order book conversion timelines set last quarter?
-- Call out specific "hits" (achievements) and "misses" (excuses).
-
-## Risk Landscape Evolution
-- What new risks have appeared? Did any previous risks get resolved or downplayed?
-- Contrast management's confidence levels between the two calls.`
+In your "investor_brief" (Output 2), integrate these insights where appropriate, or add a specific "Delta Analysis" section if the findings are critical.`
 };
 
 export async function GET() {
-    try {
-        const config = await prisma.systemConfig.findUnique({
-            where: { key: CONFIG_KEY }
-        });
+  try {
+    const config = await prisma.systemConfig.findUnique({
+      where: { key: CONFIG_KEY }
+    });
 
-        if (!config) {
-            // First run: Return Defaults so UI can populate and user can save
-            return NextResponse.json(DEFAULT_CONFIG);
-        }
-
-        return NextResponse.json(JSON.parse(config.value));
-    } catch (e: any) {
-        return NextResponse.json({ error: e.message }, { status: 500 });
+    if (!config) {
+      // First run: Return Defaults so UI can populate and user can save
+      return NextResponse.json(DEFAULT_CONFIG);
     }
+
+    return NextResponse.json(JSON.parse(config.value));
+  } catch (e: any) {
+    return NextResponse.json({ error: e.message }, { status: 500 });
+  }
 }
 
 export async function POST(req: NextRequest) {
-    try {
-        const body = await req.json();
-        const { basePrompt, deltaInstructions } = body;
+  try {
+    const body = await req.json();
+    const { basePrompt, deltaInstructions } = body;
 
-        if (!basePrompt) return NextResponse.json({ error: "Missing basePrompt" }, { status: 400 });
+    if (!basePrompt) return NextResponse.json({ error: "Missing basePrompt" }, { status: 400 });
 
-        const value = JSON.stringify({
-            basePrompt,
-            deltaInstructions: deltaInstructions || ""
-        });
+    const value = JSON.stringify({
+      basePrompt,
+      deltaInstructions: deltaInstructions || ""
+    });
 
-        // Upsert to DB
-        await prisma.systemConfig.upsert({
-            where: { key: CONFIG_KEY },
-            update: { value },
-            create: { key: CONFIG_KEY, value }
-        });
+    // Upsert to DB
+    await prisma.systemConfig.upsert({
+      where: { key: CONFIG_KEY },
+      update: { value },
+      create: { key: CONFIG_KEY, value }
+    });
 
-        return NextResponse.json({ success: true });
-    } catch (e: any) {
-        return NextResponse.json({ error: e.message }, { status: 500 });
-    }
+    return NextResponse.json({ success: true });
+  } catch (e: any) {
+    return NextResponse.json({ error: e.message }, { status: 500 });
+  }
 }

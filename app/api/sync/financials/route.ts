@@ -59,6 +59,10 @@ Extract ONLY these metrics for the CURRENT QUARTER being discussed:
 5. Revenue YoY Growth (%) - compared to same quarter last year
 6. EBITDA YoY Growth (%)
 7. PAT YoY Growth (%)
+8. Order Book (₹ Crores) - Total outstanding order book/backlog at end of quarter
+9. Guidance: Revenue Target (₹ Crores) - for FULL Fiscal Year
+10. Guidance: EBITDA Margin Target (%) - for FULL Fiscal Year
+11. Guidance: PAT Target (₹ Crores) - for FULL Fiscal Year
 
 Return ONLY valid JSON:
 {
@@ -68,7 +72,11 @@ Return ONLY valid JSON:
   "pat": 30,
   "revenueYoY": 42,
   "ebitdaYoY": 35,
-  "patYoY": 28
+  "patYoY": 28,
+  "orderBook": 1500,
+  "guidanceRevenue": 1000,
+  "guidanceEbitdaMargin": 25,
+  "guidancePat": 120
 }
 
 If a metric is NOT mentioned, use null. Do NOT guess or calculate.
@@ -174,7 +182,11 @@ export async function POST(request: Request) {
                 pat: geminiData?.pat ?? screenerData?.pat ?? null,
                 revenueYoY: geminiData?.revenueYoY ?? null,
                 ebitdaYoY: geminiData?.ebitdaYoY ?? null,
-                patYoY: geminiData?.patYoY ?? null
+                patYoY: geminiData?.patYoY ?? null,
+                orderBook: geminiData?.orderBook ?? null,
+                guidanceRevenue: geminiData?.guidanceRevenue ?? null,
+                guidanceEbitdaMargin: geminiData?.guidanceEbitdaMargin ?? null,
+                guidancePat: geminiData?.guidancePat ?? null
             };
 
             // Step 5: Save to database
@@ -191,7 +203,11 @@ export async function POST(request: Request) {
                     pat: finalData.pat,
                     revenueYoY: finalData.revenueYoY,
                     ebitdaYoY: finalData.ebitdaYoY,
-                    patYoY: finalData.patYoY
+                    patYoY: finalData.patYoY,
+                    orderBook: finalData.orderBook,
+                    guidanceRevenue: finalData.guidanceRevenue,
+                    guidanceEbitdaMargin: finalData.guidanceEbitdaMargin,
+                    guidancePat: finalData.guidancePat
                 },
                 create: {
                     companyId: company.id,
@@ -201,7 +217,11 @@ export async function POST(request: Request) {
                     pat: finalData.pat,
                     revenueYoY: finalData.revenueYoY,
                     ebitdaYoY: finalData.ebitdaYoY,
-                    patYoY: finalData.patYoY
+                    patYoY: finalData.patYoY,
+                    orderBook: finalData.orderBook,
+                    guidanceRevenue: finalData.guidanceRevenue,
+                    guidanceEbitdaMargin: finalData.guidanceEbitdaMargin,
+                    guidancePat: finalData.guidancePat
                 }
             });
 

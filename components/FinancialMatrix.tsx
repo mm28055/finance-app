@@ -3,11 +3,11 @@ import React from 'react';
 import { ArrowUpRight, ArrowDownRight, Minus } from 'lucide-react';
 
 export interface MetricData {
-    currentQ: number;
-    ytd: number;
-    deltaQoQ: number;
-    deltaYoY: number;
-    deltaYTD: number;
+    currentQ: number | null;
+    ytd: number | null;
+    deltaQoQ: number | null;
+    deltaYoY: number | null;
+    deltaYTD: number | null;
 }
 
 export interface CompanyFinancials {
@@ -15,16 +15,20 @@ export interface CompanyFinancials {
     ebitda: MetricData;
     ebitdaMargin: MetricData;
     pat: MetricData;
-    patMargin: MetricData;
+
+    // Optional / Extra metrics
     financeCost?: MetricData;
     depreciation?: MetricData;
     volGrowth?: MetricData;
-    orderBook?: MetricData;
+
+    // Simplified to single number as per user request
+    orderBook?: number | null;
+
     guidance?: {
-        revenue?: number;
-        revenueGrowth?: number;
-        ebitdaMargin?: number;
-        pat?: number;
+        revenueTarget?: number | null;
+        marginTarget?: number | null;
+        revenueGrowth?: number | null; // Keep for backward compat if needed, or remove
+        pat?: number | null;
     }
 }
 
@@ -32,83 +36,46 @@ export function FinancialMatrix({ financials, quarterName }: { financials?: Comp
     const metrics = [
         {
             name: "Revenue",
-            current: financials?.revenue?.currentQ ? `₹${financials.revenue.currentQ.toLocaleString()}cr` : "-",
-            ytd: financials?.revenue?.ytd ? `₹${financials.revenue.ytd.toLocaleString()}cr` : "-",
-            qoq: financials?.revenue?.deltaQoQ ?? null,
-            yoy: financials?.revenue?.deltaYoY ?? null,
-            deltaYtd: financials?.revenue?.deltaYTD ?? null
-        },
-        {
-            name: "Vol. Growth",
-            current: financials?.volGrowth?.currentQ ? `${financials.volGrowth.currentQ}%` : "-",
-            ytd: "-",
-            qoq: null,
-            yoy: null,
-            deltaYtd: null,
-            hideIfEmpty: true
+            data: financials?.revenue
         },
         {
             name: "EBITDA",
-            current: financials?.ebitda?.currentQ ? `₹${financials.ebitda.currentQ.toLocaleString()}cr` : "-",
-            ytd: financials?.ebitda?.ytd ? `₹${financials.ebitda.ytd.toLocaleString()}cr` : "-",
-            qoq: financials?.ebitda?.deltaQoQ ?? null,
-            yoy: financials?.ebitda?.deltaYoY ?? null,
-            deltaYtd: financials?.ebitda?.deltaYTD ?? null
+            data: financials?.ebitda
         },
         {
             name: "Margin",
-            current: financials?.ebitdaMargin?.currentQ ? `${financials.ebitdaMargin.currentQ}%` : "-",
-            ytd: financials?.ebitdaMargin?.ytd ? `${financials.ebitdaMargin.ytd}%` : "-",
-            qoq: financials?.ebitdaMargin?.deltaQoQ ?? null,
-            yoy: financials?.ebitdaMargin?.deltaYoY ?? null,
-            deltaYtd: financials?.ebitdaMargin?.deltaYTD ?? null
-        },
-        {
-            name: "Finance Cost",
-            current: financials?.financeCost?.currentQ ? `₹${financials.financeCost.currentQ.toLocaleString()}cr` : "-",
-            ytd: financials?.financeCost?.ytd ? `₹${financials.financeCost.ytd.toLocaleString()}cr` : "-",
-            qoq: financials?.financeCost?.deltaQoQ ?? null,
-            yoy: financials?.financeCost?.deltaYoY ?? null,
-            deltaYtd: financials?.financeCost?.deltaYTD ?? null,
-            hideIfEmpty: true
-        },
-        {
-            name: "Depreciation",
-            current: financials?.depreciation?.currentQ ? `₹${financials.depreciation.currentQ.toLocaleString()}cr` : "-",
-            ytd: financials?.depreciation?.ytd ? `₹${financials.depreciation.ytd.toLocaleString()}cr` : "-",
-            qoq: financials?.depreciation?.deltaQoQ ?? null,
-            yoy: financials?.depreciation?.deltaYoY ?? null,
-            deltaYtd: financials?.depreciation?.deltaYTD ?? null,
-            hideIfEmpty: true
+            data: financials?.ebitdaMargin,
+            isPercent: true
         },
         {
             name: "PAT",
-            current: financials?.pat?.currentQ ? `₹${financials.pat.currentQ.toLocaleString()}cr` : "-",
-            ytd: financials?.pat?.ytd ? `₹${financials.pat.ytd.toLocaleString()}cr` : "-",
-            qoq: financials?.pat?.deltaQoQ ?? null,
-            yoy: financials?.pat?.deltaYoY ?? null,
-            deltaYtd: financials?.pat?.deltaYTD ?? null
+            data: financials?.pat
         },
         {
             name: "Order Book",
-            current: financials?.orderBook?.currentQ ? `₹${financials.orderBook.currentQ.toLocaleString()}cr` : "-",
-            ytd: "-",
-            qoq: null,
-            yoy: null,
-            deltaYtd: null,
-            hideIfEmpty: true
+            isOrderBook: true,
+            val: financials?.orderBook
         }
     ];
 
-    const Percentage = ({ val }: { val: number | null }) => {
-        if (val === null) return <span className="text-gray-300">-</span>;
+    const fmtVal = (val: number | null | undefined, isPercent?: boolean) => {
+        if (val === null || val === undefined) return "-";
+        if (isPercent) return `${val}%`;
+        return `₹${val.toLocaleString()}cr`;
+    };
+
+    const Percentage = ({ val, isBps }: { val: number | null | undefined, isBps?: boolean }) => {
+        if (val === null || val === undefined) return <span className="text-gray-300">-</span>;
         const color = val > 0 ? "text-emerald-500" : val < 0 ? "text-red-400" : "text-gray-400";
         const Icon = val > 0 ? ArrowUpRight : val < 0 ? ArrowDownRight : Minus;
+
+        // margin deltas might be in bps if needed, but assuming % for now based on prompt
+        const suffix = isBps ? " bps" : "%";
 
         return (
             <div className={`flex items-center justify-end gap-0.5 font-medium ${color}`}>
                 <Icon className="w-3 h-3" />
-                {Math.abs(val)}%
+                {Math.abs(val)}{suffix}
             </div>
         );
     };
@@ -134,15 +101,33 @@ export function FinancialMatrix({ financials, quarterName }: { financials?: Comp
                     </thead>
                     <tbody className="divide-y divide-gray-50">
                         {metrics.map((m) => {
-                            if (m.hideIfEmpty && m.current === "-") return null;
+                            if (m.isOrderBook) {
+                                // Special row for Order Book (Single Cell spanning columns or just Current Q)
+                                // User asked for "Order Book" to be a single number. 
+                                // We can put it in Current Q and leave others blank.
+                                return (
+                                    <tr key={m.name} className="hover:bg-[#F8FAFC]">
+                                        <td className="text-left px-4 py-2 font-medium text-gray-700 text-[11px]">{m.name}</td>
+                                        <td className="px-3 py-2 text-gray-800 font-mono text-[11px]">{fmtVal(m.val, false)}</td>
+                                        <td className="px-3 py-2 text-gray-300">-</td>
+                                        <td className="px-3 py-2 text-gray-300">-</td>
+                                        <td className="px-3 py-2 text-gray-300">-</td>
+                                        <td className="px-3 py-2 text-gray-300">-</td>
+                                    </tr>
+                                )
+                            }
+
+                            const d = m.data;
+                            if (!d) return null; // Should not happen for core metrics if defaults are handled
+
                             return (
                                 <tr key={m.name} className="hover:bg-[#F8FAFC]">
                                     <td className="text-left px-4 py-2 font-medium text-gray-700 text-[11px]">{m.name}</td>
-                                    <td className="px-3 py-2 text-gray-800 font-mono text-[11px]">{m.current}</td>
-                                    <td className="px-3 py-2 text-gray-500 font-mono text-[11px]">{m.ytd}</td>
-                                    <td className="px-3 py-2 text-[11px]"><Percentage val={m.qoq} /></td>
-                                    <td className="px-3 py-2 text-[11px]"><Percentage val={m.yoy} /></td>
-                                    <td className="px-3 py-2 text-[11px]"><Percentage val={m.deltaYtd} /></td>
+                                    <td className="px-3 py-2 text-gray-800 font-mono text-[11px]">{fmtVal(d.currentQ, m.isPercent)}</td>
+                                    <td className="px-3 py-2 text-gray-500 font-mono text-[11px]">{fmtVal(d.ytd, m.isPercent)}</td>
+                                    <td className="px-3 py-2 text-[11px]"><Percentage val={d.deltaQoQ} /></td>
+                                    <td className="px-3 py-2 text-[11px]"><Percentage val={d.deltaYoY} /></td>
+                                    <td className="px-3 py-2 text-[11px]"><Percentage val={d.deltaYTD} /></td>
                                 </tr>
                             );
                         })}
@@ -154,28 +139,23 @@ export function FinancialMatrix({ financials, quarterName }: { financials?: Comp
                     <div className="border-t border-gray-100 bg-[#FAFAFA] p-3">
                         <h4 className="text-[9px] font-bold text-gray-400 uppercase tracking-widest mb-2">Forward Guidance (FY)</h4>
                         <div className="grid grid-cols-2 gap-x-4 gap-y-2">
-                            {financials.guidance.revenue && (
+                            {financials.guidance.revenueTarget !== null && financials.guidance.revenueTarget !== undefined && (
                                 <div className="flex justify-between items-center text-[10px]">
                                     <span className="text-gray-500">Revenue Target</span>
-                                    <span className="font-mono font-semibold text-gray-700">₹{financials.guidance.revenue.toLocaleString()}cr</span>
+                                    <span className="font-mono font-semibold text-gray-700">₹{financials.guidance.revenueTarget.toLocaleString()}cr</span>
                                 </div>
                             )}
-                            {financials.guidance.revenueGrowth && (
+                            {financials.guidance.marginTarget !== null && financials.guidance.marginTarget !== undefined && (
+                                <div className="flex justify-between items-center text-[10px]">
+                                    <span className="text-gray-500">Margin Target</span>
+                                    <span className="font-mono font-semibold text-gray-700">{financials.guidance.marginTarget}%</span>
+                                </div>
+                            )}
+                            {/* Fallback for legacy fields if they exist */}
+                            {financials.guidance.revenueGrowth !== undefined && financials.guidance.revenueGrowth !== null && (
                                 <div className="flex justify-between items-center text-[10px]">
                                     <span className="text-gray-500">Rev Growth Target</span>
                                     <span className="font-mono font-semibold text-emerald-600">+{financials.guidance.revenueGrowth}%</span>
-                                </div>
-                            )}
-                            {financials.guidance.ebitdaMargin && (
-                                <div className="flex justify-between items-center text-[10px]">
-                                    <span className="text-gray-500">Margin Target</span>
-                                    <span className="font-mono font-semibold text-gray-700">{financials.guidance.ebitdaMargin}%</span>
-                                </div>
-                            )}
-                            {financials.guidance.pat && (
-                                <div className="flex justify-between items-center text-[10px]">
-                                    <span className="text-gray-500">PAT Target</span>
-                                    <span className="font-mono font-semibold text-gray-700">₹{financials.guidance.pat.toLocaleString()}cr</span>
                                 </div>
                             )}
                         </div>
