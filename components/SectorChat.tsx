@@ -47,18 +47,21 @@ export function SectorChat() {
     const [messages, setMessages] = useState<Message[]>([]);
     const [input, setInput] = useState("");
     const [isTyping, setIsTyping] = useState(false);
+    const [isLoadingHistory, setIsLoadingHistory] = useState(false);
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
     // Load history when sector changes
     useEffect(() => {
         if (isOpen && activeSector) {
             setMessages([]); // Clear previous state first
+            setIsLoadingHistory(true);
             fetch(`/api/chat/history?sector=${encodeURIComponent(activeSector)}`)
                 .then(res => res.json())
                 .then(data => {
                     if (Array.isArray(data)) setMessages(data);
                 })
-                .catch(err => console.error("Failed to load history:", err));
+                .catch(err => console.error("Failed to load history:", err))
+                .finally(() => setIsLoadingHistory(false));
         }
     }, [isOpen, activeSector]);
 
@@ -186,7 +189,12 @@ export function SectorChat() {
 
             {/* Chat Area - Scrollable */}
             <div className="flex-1 overflow-y-auto p-4 space-y-4 custom-scrollbar bg-[#FAFBFC]">
-                {messages.length === 0 && (
+                {isLoadingHistory && (
+                    <div className="flex justify-center items-center h-full">
+                        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#6B9FCC]"></div>
+                    </div>
+                )}
+                {!isLoadingHistory && messages.length === 0 && (
                     <div className="text-center text-gray-400 text-xs mt-24">
                         <Bot className="w-10 h-10 mx-auto mb-3 text-gray-300" />
                         <p className="text-sm text-gray-500">Ask about <strong className="text-[#6B9FCC]">{activeSector}</strong></p>
