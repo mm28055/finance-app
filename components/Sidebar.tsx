@@ -142,9 +142,9 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
                     </div>
                 )}
 
-                {showPromptEditor && <PromptEditor onClose={() => setShowPromptEditor(false)} />}
-                <SyncStatusPanel isOpen={showSyncPanel} onClose={() => setShowSyncPanel(false)} />
             </aside>
+            {showPromptEditor && <PromptEditor onClose={() => setShowPromptEditor(false)} />}
+            <SyncStatusPanel isOpen={showSyncPanel} onClose={() => setShowSyncPanel(false)} />
         </>
     );
 };
