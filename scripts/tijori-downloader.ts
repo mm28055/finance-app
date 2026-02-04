@@ -22,13 +22,33 @@ const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const supabase = (SUPABASE_URL && SUPABASE_KEY) ? createClient(SUPABASE_URL, SUPABASE_KEY) : null;
 const BUCKET_NAME = 'Conf Call Pdfs';
 
+// Global Job ID for logging
+let CURRENT_JOB_ID: string | null = null;
+
+async function logToDb(status: string, message: string, companyName: string = 'System', quarter: string = '-') {
+    if (!CURRENT_JOB_ID) return;
+    try {
+        await prisma.syncLog.create({
+            data: {
+                jobId: CURRENT_JOB_ID,
+                status,
+                message: message.substring(0, 190), // truncate to fit
+                companyName,
+                quarter
+            }
+        });
+    } catch (e) { console.error("Logging failed", e); }
+}
+
 // Helper to trigger analysis/ingestion
-async function triggerIngestion(transcriptId: string, companyName: string) {
+async function triggerIngestion(transcriptId: string, companyName: string, quarter: string = '-') {
     console.log(`    [Trigger] Starting AI Analysis & RAG for ${companyName}...`);
     try {
         await processTranscript(transcriptId);
+        await logToDb('COMPLETED', 'Analysis & RAG Ingestion Done', companyName, quarter);
     } catch (e: any) {
         console.error(`    [Error] Analysis failed: ${e.message}`);
+        await logToDb('ERROR', `Analysis Failed: ${e.message}`, companyName, quarter);
     }
 }
 
@@ -107,6 +127,12 @@ function getFinancialQuarter(dateStr: string) {
 
 async function main() {
     console.log("🚀 Starting Smart Universal Sync (TS)...");
+
+    // Create SyncJob
+    const job = await prisma.syncJob.create({ data: { status: 'RUNNING' } });
+    CURRENT_JOB_ID = job.id;
+    console.log(`[Job ID] ${job.id}`);
+
     if (!fs.existsSync(DB_PATH)) {
         console.error("DB File not found:", DB_PATH);
         return;
@@ -160,7 +186,7 @@ async function main() {
                     // We only care about the new/clean path logic for syncing
                     const cleanPath = path.join(quarterDirNew, `${safeName}_${fyq.replace(/\s+/g, '_')}.pdf`);
 
-                    const syncToDb = async (finalUrl: string) => {
+                    const syncToDb = async (finalUrl: string, isNewDownload: boolean) => {
                         try {
                             const dbCompany = await prisma.company.findUnique({ where: { isin: co.isin } });
                             if (!dbCompany) return;
@@ -189,8 +215,9 @@ async function main() {
                                         data: { fileUrl: finalUrl }
                                     });
                                     console.log(`    [DB] Updated Link: ${dbCompany.name} (${fyq})`);
+                                    await logToDb('DOWNLOADED', 'Updated Link from Tijori', dbCompany.name, fyq);
                                     // Trigger Ingestion on update
-                                    await triggerIngestion(realTranscriptId, dbCompany.name);
+                                    await triggerIngestion(realTranscriptId, dbCompany.name, fyq);
                                 }
                             } else {
                                 const transcriptId = `real-${(dbCompany.ticker || dbCompany.id).toUpperCase()}-${fyq.replace(/\s+/g, '-')}`.replace(/[^a-zA-Z0-9-]/g, '');
@@ -205,14 +232,20 @@ async function main() {
                                     }
                                 });
                                 console.log(`    [DB] Created Link: ${dbCompany.name} (${fyq})`);
+                                if (isNewDownload) {
+                                    await logToDb('DOWNLOADED', 'New Transcript Found', dbCompany.name, fyq);
+                                }
                                 // Trigger Ingestion on create
-                                await triggerIngestion(realTranscriptId, dbCompany.name);
+                                await triggerIngestion(realTranscriptId, dbCompany.name, fyq);
                             }
-                        } catch (err: any) { console.error(`    [DB Error] ${err.message}`); }
+                        } catch (err: any) {
+                            console.error(`    [DB Error] ${err.message}`);
+                            await logToDb('ERROR', `DB Sync Error: ${err.message}`, co.name, fyq);
+                        }
                     };
 
                     // Check if file exists locally or if DB has it
-                    if (fs.existsSync(cleanPath)) { await syncToDb(cleanPath); continue; }
+                    if (fs.existsSync(cleanPath)) { await syncToDb(cleanPath, false); continue; }
 
                     // New Cloud-First Logic
                     console.log(`  -> Downloading ${fyq}...`);
@@ -221,18 +254,20 @@ async function main() {
                         const result = await handleFileDownload(link, cleanPath, cloudSubPath);
 
                         if (result && result.success) {
-                            await syncToDb(result.finalPath);
+                            await syncToDb(result.finalPath, true);
                             successCount++;
                         }
                     } catch (e: any) {
                         console.error(`      Download failed: ${e.message}`);
+                        await logToDb('ERROR', `Download Failed: ${e.message}`, co.name, fyq);
                     }
                 }
             }
-            await new Promise(r => setTimeout(r, 2000));
+            // await new Promise(r => setTimeout(r, 2000));
         } catch (e: any) { console.error(`  Error: ${e.message}`); }
     }
     console.log(`✅ Success: ${successCount} new files.`);
+    await prisma.syncJob.update({ where: { id: job.id }, data: { status: 'COMPLETED', endTime: new Date() } });
 }
 
 main().catch(e => console.error(e)).finally(async () => { await prisma.$disconnect(); });
