@@ -112,38 +112,30 @@ export async function processTranscript(transcriptId: string) {
                 }
             },
             update: {
-                revenue: parseNum(aiResult.financials.revenue),
-                ebitda: parseNum(aiResult.financials.ebitda),
-                pat: parseNum(aiResult.financials.pat),
-                revenueYoY: parseNum(aiResult.financials.revenue_growth_yoy),
+                revenue: parseNum(aiResult.financials.revenue.current_q),
+                ebitda: parseNum(aiResult.financials.ebitda.current_q),
+                pat: parseNum(aiResult.financials.pat.current_q),
+                revenueYoY: parseNum(aiResult.financials.revenue.delta_yoy),
 
                 // NEW FIELDS
-                financeCost: parseNum(aiResult.financials.finance_cost),
-                depreciation: parseNum(aiResult.financials.depreciation),
-                volumeGrowth: parseNum(aiResult.financials.volume_growth_yoy),
                 orderBook: parseNum(aiResult.financials.order_book),
 
-                guidanceRevenue: parseNum(aiResult.guidance_numeric?.revenue_target),
-                guidanceEbitdaMargin: parseNum(aiResult.guidance_numeric?.ebitda_margin_target),
-                guidancePat: parseNum(aiResult.guidance_numeric?.pat_target)
+                guidanceRevenue: parseNum(aiResult.forward_guidance_fy.revenue_target),
+                guidanceEbitdaMargin: parseNum(aiResult.forward_guidance_fy.margin_target),
             } as any,
             create: {
                 companyId: transcript.companyId,
                 quarterId: transcript.quarterId,
-                revenue: parseNum(aiResult.financials.revenue),
-                ebitda: parseNum(aiResult.financials.ebitda),
-                pat: parseNum(aiResult.financials.pat),
-                revenueYoY: parseNum(aiResult.financials.revenue_growth_yoy),
+                revenue: parseNum(aiResult.financials.revenue.current_q),
+                ebitda: parseNum(aiResult.financials.ebitda.current_q),
+                pat: parseNum(aiResult.financials.pat.current_q),
+                revenueYoY: parseNum(aiResult.financials.revenue.delta_yoy),
 
                 // NEW FIELDS
-                financeCost: parseNum(aiResult.financials.finance_cost),
-                depreciation: parseNum(aiResult.financials.depreciation),
-                volumeGrowth: parseNum(aiResult.financials.volume_growth_yoy),
                 orderBook: parseNum(aiResult.financials.order_book),
 
-                guidanceRevenue: parseNum(aiResult.guidance_numeric?.revenue_target),
-                guidanceEbitdaMargin: parseNum(aiResult.guidance_numeric?.ebitda_margin_target),
-                guidancePat: parseNum(aiResult.guidance_numeric?.pat_target)
+                guidanceRevenue: parseNum(aiResult.forward_guidance_fy.revenue_target),
+                guidanceEbitdaMargin: parseNum(aiResult.forward_guidance_fy.margin_target),
             } as any
         }),
         prisma.analysis.upsert({

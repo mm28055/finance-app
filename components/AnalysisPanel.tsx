@@ -221,7 +221,7 @@ export function AnalysisPanel({
                         <div>
                             <h4 className="text-[10px] font-semibold text-gray-500 uppercase mb-2">Highlights</h4>
                             <ul className="space-y-1.5 text-xs text-gray-600 list-disc pl-4 marker:text-[#A5C4E2]">
-                                {(activeData.summary?.highlights || []).map((h, i) => (
+                                {(activeData.summary?.highlights || []).map((h: string, i: number) => (
                                     <li key={i}>{h}</li>
                                 ))}
                             </ul>
@@ -290,7 +290,7 @@ export function AnalysisPanel({
             {/* Footer */}
             {viewMode === "ANALYSIS" && (
                 <div className="px-3 py-2 border-t border-gray-100 flex justify-between items-center bg-gray-50/50">
-                    <span className="text-[9px] text-gray-400">Gemini 3 Pro</span>
+                    <span className="text-[9px] text-gray-400">Gemini 1.5 Pro</span>
                     <button className="flex items-center gap-1 text-[10px] text-[#6B9FCC] hover:text-[#4A7AAF] transition-colors">
                         <Download className="w-3 h-3" />
                         Export

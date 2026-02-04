@@ -215,18 +215,18 @@ export async function POST(req: NextRequest) {
                             prisma.financials.upsert({
                                 where: { companyId_quarterId: { companyId: co.id, quarterId: quarter.id } },
                                 update: {
-                                    revenue: analysis.financials.revenue ?? 0,
-                                    ebitda: analysis.financials.ebitda ?? 0,
-                                    pat: analysis.financials.pat ?? 0,
-                                    revenueYoY: parseFloat(String(analysis.financials.revenue_growth_yoy || "0").replace(/[^0-9.-]/g, '')) || 0
+                                    revenue: analysis.financials.revenue.current_q ?? 0,
+                                    ebitda: analysis.financials.ebitda.current_q ?? 0,
+                                    pat: analysis.financials.pat.current_q ?? 0,
+                                    revenueYoY: parseFloat(String(analysis.financials.revenue.delta_yoy || "0").replace(/[^0-9.-]/g, '')) || 0
                                 },
                                 create: {
                                     companyId: co.id,
                                     quarterId: quarter.id,
-                                    revenue: analysis.financials.revenue ?? 0,
-                                    ebitda: analysis.financials.ebitda ?? 0,
-                                    pat: analysis.financials.pat ?? 0,
-                                    revenueYoY: parseFloat(String(analysis.financials.revenue_growth_yoy || "0").replace(/[^0-9.-]/g, '')) || 0
+                                    revenue: analysis.financials.revenue.current_q ?? 0,
+                                    ebitda: analysis.financials.ebitda.current_q ?? 0,
+                                    pat: analysis.financials.pat.current_q ?? 0,
+                                    revenueYoY: parseFloat(String(analysis.financials.revenue.delta_yoy || "0").replace(/[^0-9.-]/g, '')) || 0
                                 }
                             }),
                             prisma.analysis.upsert({
