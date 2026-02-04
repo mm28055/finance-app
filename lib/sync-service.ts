@@ -15,6 +15,12 @@ export async function processTranscript(transcriptId: string) {
         throw new Error(`Transcript ${transcriptId} not found`);
     }
 
+    // OPTIMIZATION: If analysis exists, don't re-burn tokens.
+    if (transcript.hasAnalysis) {
+        console.log(`  -> [Skipped] Analysis already exists for ${transcript.company.name}.`);
+        return { success: true, status: 'SKIPPED_EXISTING' };
+    }
+
     // 1. Extract Text from PDF if necessary
     let textToAnalyze = transcript.rawText;
     if (!textToAnalyze && transcript.fileUrl) {
