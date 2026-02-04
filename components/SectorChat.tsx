@@ -52,37 +52,45 @@ export function SectorChat() {
     // Load history when sector changes
     useEffect(() => {
         if (isOpen && activeSector) {
-            const history = loadChatHistory(activeSector);
-            setMessages(history);
+            setMessages([]); // Clear previous state first
+            fetch(`/api/chat/history?sector=${encodeURIComponent(activeSector)}`)
+                .then(res => res.json())
+                .then(data => {
+                    if (Array.isArray(data)) setMessages(data);
+                })
+                .catch(err => console.error("Failed to load history:", err));
         }
     }, [isOpen, activeSector]);
 
-    // Save history whenever messages change
-    useEffect(() => {
-        if (activeSector && messages.length > 0) {
-            saveChatHistory(activeSector, messages);
-        }
-    }, [messages, activeSector]);
+    // Note: We no longer auto-save to localStorage. 
+    // Messages are saved to DB individually as they are sent/received.
 
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     }, [messages]);
 
-    const handleClearHistory = useCallback(() => {
+    const handleClearHistory = useCallback(async () => {
         if (activeSector) {
-            clearChatHistory(activeSector);
-            setMessages([]);
+            try {
+                await fetch(`/api/chat/history?sector=${encodeURIComponent(activeSector)}`, {
+                    method: 'DELETE'
+                });
+                setMessages([]);
+            } catch (e) {
+                console.error("Failed to clear history:", e);
+            }
         }
     }, [activeSector]);
 
     const handleSend = async () => {
         if (!input.trim() || !activeSector) return;
 
+        const timestamp = Date.now();
         const userMsg: Message = {
-            id: Date.now().toString(),
+            id: timestamp.toString(),
             role: 'user',
             content: input,
-            timestamp: Date.now()
+            timestamp
         };
 
         setMessages(prev => [...prev, userMsg]);
@@ -90,6 +98,14 @@ export function SectorChat() {
         setIsTyping(true);
 
         try {
+            // 1. Save User Message to DB
+            await fetch('/api/chat/history', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ ...userMsg, sector: activeSector })
+            });
+
+            // 2. Get AI Response
             const res = await fetch('/api/chat/sector', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -102,14 +118,23 @@ export function SectorChat() {
             if (!res.ok) throw new Error("API Failed");
 
             const data = await res.json();
+            const aiTimestamp = Date.now();
 
             const botMsg: Message = {
-                id: (Date.now() + 1).toString(),
+                id: aiTimestamp.toString(),
                 role: 'assistant',
                 content: data.content,
-                timestamp: Date.now()
+                timestamp: aiTimestamp
             };
             setMessages(prev => [...prev, botMsg]);
+
+            // 3. Save AI Message to DB
+            await fetch('/api/chat/history', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ ...botMsg, sector: activeSector })
+            });
+
         } catch (err) {
             console.error("Chat Error:", err);
             const errorMsg: Message = {

@@ -125,3 +125,14 @@ model SystemConfig {
   value     String   // JSON string
   updatedAt DateTime @updatedAt
 }
+
+model SectorChat {
+  id        String   @id @default(uuid())
+  sector    String   // e.g. "Defense", "Banking"
+  role      String   // "user" or "assistant"
+  content   String   // The text message
+  timestamp BigInt   // Unix timestamp for ordering
+  createdAt DateTime @default(now())
+  
+  @@index([sector])
+}
