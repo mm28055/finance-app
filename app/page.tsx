@@ -15,7 +15,7 @@ export default async function Home() {
       {/* Header */}
       <header className="flex justify-between items-center mb-6 pb-4 border-b border-gray-200">
         <div>
-          <h1 className="text-lg font-semibold text-gray-800 tracking-tight">Dashboard</h1>
+          <h1 className="text-lg font-semibold text-gray-800 tracking-tight">Manish Dashboard</h1>
           <p className="text-gray-400 text-xs">Real-Time Earning Intelligence</p>
         </div>
         <div className="flex items-center gap-4">
