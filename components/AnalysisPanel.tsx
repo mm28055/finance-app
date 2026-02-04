@@ -134,7 +134,24 @@ export function AnalysisPanel({
                         const content = activeData.investor_brief.trim();
                         const sections = content.split(/\n(?=##\s)/g);
 
+                        // DELTA HEADERS TO HIDE (If leaked into main brief)
+                        const DELTA_BLACKLIST = [
+                            "NARRATIVE SHIFT",
+                            "GUIDANCE EVOLUTION",
+                            "EXECUTION VS. PROMISE",
+                            "RISK LANDSCAPE EVOLUTION"
+                        ];
+
                         return sections.map((section, idx) => {
+                            // Check if this section is a delta section
+                            const headerMatch = section.match(/^##\s+(.+)$/m);
+                            if (headerMatch) {
+                                const headerText = headerMatch[1].toUpperCase();
+                                if (DELTA_BLACKLIST.some(b => headerText.includes(b))) {
+                                    return null; // Skip this section
+                                }
+                            }
+
                             const isBlue = idx % 2 !== 0;
                             return (
                                 <div key={idx} className={`${isBlue ? 'bg-[#F0F7FF]' : 'bg-white'} p-5 border-b border-gray-100 last:border-0`}>
