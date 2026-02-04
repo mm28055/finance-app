@@ -155,10 +155,10 @@ export function SectorChat() {
     if (!isOpen) return null;
 
     return (
-        <div className="fixed bottom-4 right-4 w-[480px] h-[680px] bg-white border border-gray-200 rounded-2xl shadow-2xl flex flex-col z-50 animate-in slide-in-from-bottom-5 duration-300">
+        <div className="fixed inset-0 z-50 md:inset-auto md:bottom-6 md:right-6 md:w-[600px] md:h-[700px] bg-white md:rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex flex-col animate-in slide-in-from-bottom-5 duration-300 overflow-hidden">
 
             {/* Header */}
-            <div className="p-3 border-b border-gray-100 flex justify-between items-center bg-gradient-to-r from-[#D4E5F7] to-white rounded-t-2xl">
+            <div className="p-4 border-b border-gray-100 flex justify-between items-center bg-white/80 backdrop-blur-md z-10 sticky top-0">
                 <div className="flex items-center gap-2">
                     <div className="bg-[#6B9FCC] p-2 rounded-lg text-white">
                         <Sparkles className="w-4 h-4" />
@@ -208,10 +208,10 @@ export function SectorChat() {
                 {messages.map(msg => (
                     <div key={msg.id} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                         <div className={`
-                            max-w-[90%] rounded-2xl px-4 py-3 text-sm leading-relaxed
+                            max-w-[85%] rounded-2xl px-5 py-3.5 text-sm leading-relaxed shadow-sm
                             ${msg.role === 'user'
-                                ? 'bg-[#6B9FCC] text-white rounded-br-sm'
-                                : 'bg-white border border-gray-100 text-gray-700 rounded-bl-sm shadow-sm'}
+                                ? 'bg-[#2D3748] text-white rounded-br-none'
+                                : 'bg-white border border-gray-100 text-gray-700 rounded-bl-none'}
                         `}>
                             {msg.role === 'user' ? (
                                 msg.content
@@ -253,7 +253,7 @@ export function SectorChat() {
             </div>
 
             {/* Input */}
-            <div className="p-4 border-t border-gray-100 bg-white rounded-b-2xl">
+            <div className="p-4 border-t border-gray-100 bg-white md:rounded-b-2xl">
                 <div className="relative">
                     <input
                         type="text"
