@@ -115,6 +115,7 @@ model SyncLog {
   companyName String?
   quarter     String?
   status      String
+  message     String?
   job         SyncJob  @relation(fields: [jobId], references: [id])
 }
 
