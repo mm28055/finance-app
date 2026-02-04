@@ -62,7 +62,7 @@ export const CompanyRow = ({ company }: { company: EnrichedCompany }) => {
             {/* Compact Row */}
             <div
                 onClick={() => !isAdminMode && setExpanded(!expanded)}
-                className={`flex items-center px-4 py-2.5 bg-white ${!isAdminMode ? 'hover:bg-[#F8FAFC] cursor-pointer' : ''} transition-colors group`}
+                className={`flex items-center px-4 py-2.5 bg-white ${!isAdminMode ? 'hover:bg-[#F8FAFC] cursor-pointer' : ''} transition-colors group overflow-x-auto md:overflow-visible`}
             >
                 {/* Company Info - Single Line */}
                 {/* Company Info - Fixed Width for Alignment */}
