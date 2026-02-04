@@ -133,25 +133,25 @@ export function SectorSnapshot({ sectorName, companies }: SectorSnapshotProps) {
             <div className="flex flex-col md:flex-row gap-4 px-3 pb-3 pt-4" style={{ height: 'auto', minHeight: `${dynamicHeight}px` }}>
                 {viewMode === 'QUARTERLY' ? (
                     <>
-                        <div className="h-[200px] md:h-[300px] flex-1">
+                        <div className="flex-1" style={{ height: dynamicHeight }}>
                             <MiniChart dataKey="revenueQ" color="#4A90E2" title="Revenue (Q)" showAxis={true} />
                         </div>
-                        <div className="h-[200px] md:h-[300px] flex-1">
+                        <div className="flex-1" style={{ height: dynamicHeight }}>
                             <MiniChart dataKey="ebitdaQ" color="#10B981" title="EBITDA (Q)" showMargin={true} />
                         </div>
-                        <div className="h-[200px] md:h-[300px] flex-1">
+                        <div className="flex-1" style={{ height: dynamicHeight }}>
                             <MiniChart dataKey="patQ" color="#F59E0B" title="PAT (Q)" showMargin={true} />
                         </div>
                     </>
                 ) : (
                     <>
-                        <div className="h-[200px] md:h-[300px] flex-1">
+                        <div className="flex-1" style={{ height: dynamicHeight }}>
                             <MiniChart dataKey="revenueYTD" color="#6366F1" title="Revenue (YTD)" showAxis={true} />
                         </div>
-                        <div className="h-[200px] md:h-[300px] flex-1">
+                        <div className="flex-1" style={{ height: dynamicHeight }}>
                             <MiniChart dataKey="ebitdaYTD" color="#10B981" title="EBITDA (YTD)" showMargin={true} />
                         </div>
-                        <div className="h-[200px] md:h-[300px] flex-1">
+                        <div className="flex-1" style={{ height: dynamicHeight }}>
                             <MiniChart dataKey="patYTD" color="#F59E0B" title="PAT (YTD)" showMargin={true} />
                         </div>
                     </>
