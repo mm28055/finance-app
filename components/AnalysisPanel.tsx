@@ -11,37 +11,51 @@ export function AnalysisPanel({
     analysis,
     quarterName,
     history,
-    profile
+    profile,
+    activeQuarterIndex = 0,
+    onQuarterChange
 }: {
     analysis?: AnalysisResult,
     quarterName?: string,
     history?: { quarter: string; analysis: AnalysisResult; financials: CompanyFinancials }[],
-    profile?: string
+    profile?: string,
+    activeQuarterIndex?: number,
+    onQuarterChange?: (idx: number) => void
 }) {
     const safeHistory = history && history.length > 0
         ? history
         : (analysis ? [{ quarter: quarterName || "LATEST", analysis, financials: {} as any }] : []);
 
-    const [activeQuarter, setActiveQuarter] = useState<string>(quarterName || "LATEST");
-    const [activeData, setActiveData] = useState<AnalysisResult | undefined>(analysis);
+    const [activeQuarter, setActiveQuarter] = useState<string>(
+        safeHistory[activeQuarterIndex]?.quarter || quarterName || "LATEST"
+    );
+    const [activeData, setActiveData] = useState<AnalysisResult | undefined>(
+        safeHistory[activeQuarterIndex]?.analysis || analysis
+    );
     const [viewMode, setViewMode] = useState<"ANALYSIS" | "PROFILE" | "DELTA">("ANALYSIS");
 
+    // Sync with external activeQuarterIndex when it changes
     useEffect(() => {
-        if (safeHistory.length > 0) {
-            const match = safeHistory.find(h => h.quarter === activeQuarter) || safeHistory[0];
-            setActiveData(match.analysis);
+        if (safeHistory.length > 0 && activeQuarterIndex < safeHistory.length) {
+            const match = safeHistory[activeQuarterIndex];
             setActiveQuarter(match.quarter);
-        } else if (analysis) {
-            setActiveData(analysis);
-        }
-    }, [activeQuarter, safeHistory, analysis]);
-
-    const handleTabClick = (q: string) => {
-        setViewMode("ANALYSIS");
-        const match = safeHistory.find(h => h.quarter === q);
-        if (match) {
-            setActiveQuarter(q);
             setActiveData(match.analysis);
+            if (viewMode === "PROFILE" || viewMode === "DELTA") {
+                // If we were on Profile or Delta, and a quarter is clicked, switch back to Analysis
+                // Actually, stay in current mode but update the underlying data
+            } else {
+                setViewMode("ANALYSIS");
+            }
+        }
+    }, [activeQuarterIndex, safeHistory]);
+
+    const handleTabClick = (q: string, idx: number) => {
+        setViewMode("ANALYSIS");
+        setActiveQuarter(q);
+        const match = safeHistory[idx];
+        if (match) {
+            setActiveData(match.analysis);
+            onQuarterChange?.(idx);
         }
     };
 
@@ -236,10 +250,10 @@ export function AnalysisPanel({
         <div className="bg-white border border-gray-200 rounded-xl overflow-hidden h-full flex flex-col">
             {/* Tabs */}
             <div className="flex border-b border-gray-100 overflow-x-auto custom-scrollbar bg-gray-50/50">
-                {safeHistory.map((item) => (
+                {safeHistory.map((item, idx) => (
                     <button
                         key={item.quarter}
-                        onClick={() => handleTabClick(item.quarter)}
+                        onClick={() => handleTabClick(item.quarter, idx)}
                         className={`px-3 py-2 text-[10px] font-medium border-b-2 transition-colors whitespace-nowrap ${activeQuarter === item.quarter && viewMode === "ANALYSIS"
                             ? 'text-[#6B9FCC] border-[#6B9FCC] bg-white'
                             : 'text-gray-400 border-transparent hover:text-gray-600'

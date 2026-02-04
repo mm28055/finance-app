@@ -263,6 +263,8 @@ export const CompanyRow = ({ company }: { company: EnrichedCompany }) => {
                                 quarterName={selectedData?.quarter || company.summary?.quarter}
                                 history={company.history}
                                 profile={company.profile}
+                                activeQuarterIndex={selectedQuarterIdx}
+                                onQuarterChange={(idx: number) => setSelectedQuarterIdx(idx)}
                             />
                         </div>
                     </div>
