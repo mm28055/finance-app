@@ -185,5 +185,16 @@ export async function processTranscript(transcriptId: string) {
     ]);
 
     console.log(`[SyncService] Completed processing for ${transcript.company.name}`);
+
+    // 5. Trigger RAG Ingestion (Auto-Index)
+    try {
+        const { ingestTranscript } = await import('./rag-ingest');
+        console.log(`[SyncService] Triggering RAG Ingestion for ${transcript.company.ticker}...`);
+        await ingestTranscript(transcript.id);
+    } catch (e: any) {
+        console.error(`[SyncService] RAG Ingestion failed: ${e.message}`);
+        // Non-blocking, return success for the main analysis
+    }
+
     return { success: true };
 }

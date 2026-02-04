@@ -1,35 +1,49 @@
-const fs = require('fs');
-const path = require('path');
-const https = require('https');
-const { PrismaClient } = require('@prisma/client');
+
+import fs from 'fs';
+import path from 'path';
+import https from 'https';
+import { PrismaClient } from '@prisma/client';
+import { createClient } from '@supabase/supabase-js';
+import dotenv from 'dotenv';
+
+// Import the centralized processing logic (includes AI Analysis + RAG Ingestion)
+import { processTranscript } from '../lib/sync-service';
+
+dotenv.config();
 
 const prisma = new PrismaClient();
 
 const TIJORI_API_KEY = "c74d557ef1cf4464820666dfb7dbc9e1";
-const DB_PATH = path.join(__dirname, '../data/db.json');
+const DB_PATH = path.join(process.cwd(), 'data/db.json');
 const BASE_URL = "https://www.tijoristack.ai/api/v1";
-
-const { createClient } = require('@supabase/supabase-js');
-require('dotenv').config();
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const supabase = (SUPABASE_URL && SUPABASE_KEY) ? createClient(SUPABASE_URL, SUPABASE_KEY) : null;
 const BUCKET_NAME = 'Conf Call Pdfs';
 
-// Updated Download Helper: Supports Local OR Supabase
-async function handleFileDownload(url, localPath, subPath) {
+// Helper to trigger analysis/ingestion
+async function triggerIngestion(transcriptId: string, companyName: string) {
+    console.log(`    [Trigger] Starting AI Analysis & RAG for ${companyName}...`);
+    try {
+        await processTranscript(transcriptId);
+    } catch (e: any) {
+        console.error(`    [Error] Analysis failed: ${e.message}`);
+    }
+}
+
+async function handleFileDownload(url: string, localPath: string, subPath: string) {
     // 1. Download Buffer
-    const buffer = await new Promise((resolve) => {
-        const fetch = (currentUrl) => {
+    const buffer = await new Promise<Buffer | null>((resolve) => {
+        const fetch = (currentUrl: string) => {
             https.get(currentUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } }, res => {
-                if ([301, 302, 307].includes(res.statusCode) && res.headers.location) {
+                if ([301, 302, 307].includes(res.statusCode || 0) && res.headers.location) {
                     fetch(res.headers.location);
                     return;
                 }
                 if (res.statusCode !== 200) { resolve(null); return; }
 
-                const chunks = [];
+                const chunks: any[] = [];
                 res.on('data', c => chunks.push(c));
                 res.on('end', () => resolve(Buffer.concat(chunks)));
             }).on('error', () => resolve(null));
@@ -42,6 +56,7 @@ async function handleFileDownload(url, localPath, subPath) {
     // 2. Upload to Supabase (Priority)
     if (supabase) {
         try {
+            // Unify separators to forward slash for cloud storage
             const cloudKey = subPath.split(path.sep).join('/');
 
             const { error: uploadError } = await supabase.storage
@@ -52,7 +67,7 @@ async function handleFileDownload(url, localPath, subPath) {
 
             const { data: { publicUrl } } = supabase.storage.from(BUCKET_NAME).getPublicUrl(cloudKey);
             return { success: true, finalPath: publicUrl };
-        } catch (e) {
+        } catch (e: any) {
             console.error(`   ⚠️ Supabase Upload Failed (${e.message}). Falling back to local.`);
         }
     }
@@ -64,9 +79,9 @@ async function handleFileDownload(url, localPath, subPath) {
     return { success: true, finalPath: localPath };
 }
 
-async function fetchFromTijori(isin) {
+async function fetchFromTijori(isin: string) {
     if (!isin) return null;
-    return new Promise((resolve, reject) => {
+    return new Promise<any>((resolve, reject) => {
         const url = `${BASE_URL}/concalls/list/?isin=${isin}`;
         const options = { headers: { 'Authorization': `Bearer ${TIJORI_API_KEY}` } };
         https.get(url, options, (res) => {
@@ -77,7 +92,7 @@ async function fetchFromTijori(isin) {
     });
 }
 
-function getFinancialQuarter(dateStr) {
+function getFinancialQuarter(dateStr: string) {
     const d = new Date(dateStr);
     const m = d.getMonth();
     const y = d.getFullYear();
@@ -91,15 +106,20 @@ function getFinancialQuarter(dateStr) {
 }
 
 async function main() {
-    console.log("🚀 Starting Smart Universal Sync...");
-    if (!fs.existsSync(DB_PATH)) return;
+    console.log("🚀 Starting Smart Universal Sync (TS)...");
+    if (!fs.existsSync(DB_PATH)) {
+        console.error("DB File not found:", DB_PATH);
+        return;
+    }
     const db = JSON.parse(fs.readFileSync(DB_PATH, 'utf-8'));
 
     const sectorArg = process.argv.find(arg => arg.startsWith('--sector='))?.split('=')[1];
 
     let successCount = 0;
-    for (let i = 0; i < db.companies.length; i++) {
-        const co = db.companies[i];
+    // Iterate Companies
+    const companies: any[] = db.companies;
+    for (let i = 0; i < companies.length; i++) {
+        const co = companies[i];
 
         // Robust Sector Filter
         if (sectorArg) {
@@ -110,7 +130,7 @@ async function main() {
 
         if (!co.isin) continue;
 
-        console.log(`[${i + 1}/${db.companies.length}] Syncing ${co.name}...`);
+        console.log(`[${i + 1}/${companies.length}] Syncing ${co.name}...`);
 
         try {
             const response = await fetchFromTijori(co.isin);
@@ -136,13 +156,11 @@ async function main() {
                     const sectorFolder = (co.sector || 'Unsorted');
                     const safeName = co.name.replace(/[^a-z0-9]/gi, '_').trim();
                     const quarterDirNew = path.join(process.cwd(), 'Concalls', sectorFolder, fyq);
-                    const quarterDirLegacy = path.join(process.cwd(), 'Concalls', sectorFolder, `${qType.toLowerCase()} ${qYear}`);
 
+                    // We only care about the new/clean path logic for syncing
                     const cleanPath = path.join(quarterDirNew, `${safeName}_${fyq.replace(/\s+/g, '_')}.pdf`);
-                    const legacyPath1 = path.join(quarterDirLegacy, `${safeName}.pdf`);
-                    const legacyPath2 = path.join(quarterDirNew, `${safeName}.pdf`);
 
-                    const syncToDb = async (finalUrl) => {
+                    const syncToDb = async (finalUrl: string) => {
                         try {
                             const dbCompany = await prisma.company.findUnique({ where: { isin: co.isin } });
                             if (!dbCompany) return;
@@ -161,16 +179,22 @@ async function main() {
                                 }
                             });
 
+                            let realTranscriptId = '';
+
                             if (existing) {
+                                realTranscriptId = existing.id;
                                 if (existing.fileUrl !== finalUrl) {
                                     await prisma.transcript.update({
                                         where: { id: existing.id },
                                         data: { fileUrl: finalUrl }
                                     });
                                     console.log(`    [DB] Updated Link: ${dbCompany.name} (${fyq})`);
+                                    // Trigger Ingestion on update
+                                    await triggerIngestion(realTranscriptId, dbCompany.name);
                                 }
                             } else {
                                 const transcriptId = `real-${(dbCompany.ticker || dbCompany.id).toUpperCase()}-${fyq.replace(/\s+/g, '-')}`.replace(/[^a-zA-Z0-9-]/g, '');
+                                realTranscriptId = transcriptId;
                                 await prisma.transcript.create({
                                     data: {
                                         id: transcriptId,
@@ -181,11 +205,13 @@ async function main() {
                                     }
                                 });
                                 console.log(`    [DB] Created Link: ${dbCompany.name} (${fyq})`);
+                                // Trigger Ingestion on create
+                                await triggerIngestion(realTranscriptId, dbCompany.name);
                             }
-                        } catch (err) { console.error(`    [DB Error] ${err.message}`); }
+                        } catch (err: any) { console.error(`    [DB Error] ${err.message}`); }
                     };
 
-                    // Check if file exists locally or if DB has it (Legacy local check preserved but largely redundant if cloud-first)
+                    // Check if file exists locally or if DB has it
                     if (fs.existsSync(cleanPath)) { await syncToDb(cleanPath); continue; }
 
                     // New Cloud-First Logic
@@ -198,13 +224,13 @@ async function main() {
                             await syncToDb(result.finalPath);
                             successCount++;
                         }
-                    } catch (e) {
+                    } catch (e: any) {
                         console.error(`      Download failed: ${e.message}`);
                     }
                 }
             }
             await new Promise(r => setTimeout(r, 2000));
-        } catch (e) { console.error(`  Error: ${e.message}`); }
+        } catch (e: any) { console.error(`  Error: ${e.message}`); }
     }
     console.log(`✅ Success: ${successCount} new files.`);
 }

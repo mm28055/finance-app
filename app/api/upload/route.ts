@@ -95,9 +95,23 @@ export async function POST(req: NextRequest) {
             console.error(`Manual Analysis Failed for ${company.name}:`, err)
         );
 
+        // 7. AUTO-INGEST into RAG (New Step)
+        try {
+            // We perform this asynchronously so we don't block the upload response
+            // But in serverless (Vercel), we should ideally await it or use Inngest/Background Jobs.
+            // For this app, awaiting is safer to ensure it finishes.
+            const { ingestTranscript } = await import('@/lib/rag-ingest');
+            console.log("Triggering RAG Ingestion...");
+            await ingestTranscript(transcript.id);
+        } catch (err) {
+            console.error("RAG Auto-Ingest Failed:", err);
+            // Don't fail the upload just because RAG failed
+        }
+
         return NextResponse.json({
             success: true,
-            message: "File uploaded to Cloud. AI Analysis started."
+            transcriptId: transcript.id,
+            message: "Uploaded and RAG-Indexed successfully"
         });
 
     } catch (e: any) {
