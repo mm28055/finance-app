@@ -85,7 +85,8 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
                                 const res = await fetch(`/api/sync/financials?sector=${encodeURIComponent(name)}`, { method: 'POST' });
                                 const data = await res.json();
                                 if (data.success) {
-                                    toast.success(`Synced ${data.count} companies`, { description: 'Refresh to see updated financials' });
+                                    toast.success(`Synced ${data.count} companies`, { description: 'Refreshing to update dashboard...' });
+                                    setTimeout(() => window.location.reload(), 1500);
                                 } else {
                                     toast.error('Sync failed', { description: data.error });
                                 }

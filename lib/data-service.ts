@@ -258,3 +258,23 @@ export async function getDashboardData(): Promise<SectorData[]> {
 
     return sectors.sort((a, b) => a.sector.localeCompare(b.sector));
 }
+
+export async function getTranscriptStats() {
+    const quarters = await prisma.quarter.findMany({
+        orderBy: [
+            { year: 'desc' },
+            { q: 'desc' },
+        ],
+        take: 3,
+        include: {
+            _count: {
+                select: { transcripts: true }
+            }
+        }
+    });
+
+    return quarters.map(q => ({
+        name: q.name,
+        count: q._count.transcripts
+    }));
+}

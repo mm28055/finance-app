@@ -106,7 +106,10 @@ export async function POST(request: Request) {
 
         // Get companies in sector with ALL transcripts (we'll pick latest quarter)
         const companies = await prisma.company.findMany({
-            where: { sector, isVisible: true },
+            where: {
+                sector: { equals: sector, mode: 'insensitive' },
+                isVisible: true
+            },
             include: {
                 transcripts: {
                     include: { quarter: true }
