@@ -243,7 +243,6 @@ export async function getDashboardData(): Promise<SectorData[]> {
             currentPrice: co.currentPrice ? Number(co.currentPrice) : undefined,
             bookValue: co.bookValue ? Number(co.bookValue) : undefined,
             peRatio: co.peRatio ? Number(co.peRatio) : undefined,
-            peRatio: co.peRatio ? Number(co.peRatio) : undefined,
             pbRatio: co.pbRatio ? Number(co.pbRatio) : undefined,
             dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
             geminiScore: currentAnalysis?.investibility_score
