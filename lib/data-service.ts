@@ -87,7 +87,8 @@ export async function getDashboardData(): Promise<SectorData[]> {
                     },
                     management_tone: parseInt(a.managementTone || "5"),
                     delta_analysis: a.deltaAnalysis || undefined,
-                    investor_brief: a.investorBrief || undefined
+                    investor_brief: a.investorBrief || undefined,
+                    investibility_score: a.investibilityScore || undefined
                 };
             } catch (e) {
                 console.error("Failed to parse analysis", e);
