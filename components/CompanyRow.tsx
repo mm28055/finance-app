@@ -108,7 +108,7 @@ export const CompanyRow = ({ company }: { company: EnrichedCompany }) => {
                                 <div className="flex items-center gap-1.5 px-1.5 py-0.5 bg-[#F0F9FF] rounded border border-[#BAE6FD]">
                                     <span className="text-[9px] text-[#0EA5E9] font-bold uppercase tracking-wider">AI Score</span>
                                     <span className={`text-[10px] font-bold ${company.geminiScore >= 80 ? 'text-emerald-600' :
-                                            company.geminiScore >= 50 ? 'text-amber-600' : 'text-red-500'
+                                        company.geminiScore >= 50 ? 'text-amber-600' : 'text-red-500'
                                         }`}>
                                         {company.geminiScore}/100
                                     </span>
@@ -142,8 +142,15 @@ export const CompanyRow = ({ company }: { company: EnrichedCompany }) => {
                                         <button
                                             onClick={(e) => {
                                                 e.stopPropagation();
-                                                const viewUrl = `/api/transcripts/view?path=${encodeURIComponent(q.pdfUrl!)}`;
-                                                window.open(viewUrl, '_blank');
+                                                const url = q.pdfUrl!;
+                                                // If it's a web URL (Supabase/Amazon S3), open directly
+                                                if (url.startsWith('http')) {
+                                                    window.open(url, '_blank');
+                                                } else {
+                                                    // Legacy local path
+                                                    const viewUrl = `/api/transcripts/view?path=${encodeURIComponent(url)}`;
+                                                    window.open(viewUrl, '_blank');
+                                                }
                                             }}
                                             className={`px-1.5 py-0.5 text-[9px] rounded-r border transition-all ${idx === selectedQuarterIdx
                                                 ? 'bg-[#5A8EBC] text-white border-[#5A8EBC] hover:bg-[#4A7AAF]'
