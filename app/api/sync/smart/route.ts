@@ -239,7 +239,8 @@ export async function POST(req: NextRequest) {
                                     capexText: analysis.capex?.details || "",
                                     capexValue: parseFloat(String(analysis.capex?.amount || "0").replace(/[^0-9.]/g, '')) || 0,
                                     keyHighlights: JSON.stringify(analysis.summary?.highlights || []),
-                                    deltaAnalysis: analysis.delta_analysis // SAVE DELTA REPORT
+                                    deltaAnalysis: analysis.delta_analysis, // SAVE DELTA REPORT
+                                    investibilityScore: analysis.investibility_score // SAVE SCORE
                                 },
                                 create: {
                                     companyId: co.id,
@@ -251,7 +252,8 @@ export async function POST(req: NextRequest) {
                                     capexText: analysis.capex?.details || "",
                                     capexValue: parseFloat((analysis.capex?.amount || "0").replace(/[^0-9.]/g, '')) || 0,
                                     keyHighlights: JSON.stringify(analysis.summary?.highlights || []),
-                                    deltaAnalysis: analysis.delta_analysis // SAVE DELTA REPORT
+                                    deltaAnalysis: analysis.delta_analysis, // SAVE DELTA REPORT
+                                    investibilityScore: analysis.investibility_score // SAVE SCORE
                                 }
                             })
                         ]);

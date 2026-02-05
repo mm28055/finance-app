@@ -32,6 +32,9 @@ export interface AnalysisResult {
 
     // NEW: Comprehensive Investor Brief (rich markdown)
     investor_brief?: string;
+
+    // NEW: Investibility Score (0-100)
+    investibility_score?: number;
 }
 
 export async function analyzeTranscript(transcriptText: string, previousQuarterData?: any, previousTranscriptText?: string): Promise<AnalysisResult> {
@@ -56,18 +59,20 @@ export async function analyzeTranscript(transcriptText: string, previousQuarterD
 
     // Hardcoded fallback if file doesn't exist or DB is empty
     const defaultBasePrompt = `
-You are a Senior Equity Research Analyst at a top-tier institutional investment firm. 
-Your audience is a **medium-to-long-term investor** (1-3 year holding period) who wants to understand this quarter's earnings call WITHOUT reading the full transcript.
+You are a **Senior Equity Research Analyst** at a top-tier institutional investment firm.
+Your audience is a medium-to-long-term investor (1-3 year holding period) who wants to understand this quarter's earnings call WITHOUT reading the full transcript.
+
 **Your primary goal is to provide actionable investor insights**, focusing on:
 - Is the investment thesis intact?
 - Are management's promises being delivered?
 - What are the key risks and catalysts?
+- **INVESTIBILITY SCORE**: A quantitative rating (0-100) of your conviction.
 
 Analyze the following Earnings Call Transcript and produce TWO outputs:
 
 ---
 **OUTPUT 1: STRUCTURED DATA (JSON)**
-Extract specific metrics into this JSON structure. 
+Extract specific metrics into this JSON structure.
 IMPORTANT: If a specific value is NOT explicitly mentioned in the text, return null. Do NOT estimate or calculate it yourself.
 
 {
@@ -105,8 +110,16 @@ IMPORTANT: If a specific value is NOT explicitly mentioned in the text, return n
   "forward_guidance_fy": {
     "revenue_target": <number in Cr or null>,
     "margin_target": <number % or null>
-  }
+  },
+  "investibility_score": <number 0-100>
 }
+
+**SCORING RUBRIC (Guide for investibility_score):**
+Rate the company based on your expert judgment of the quarter.
+- **90-100 (Thesis Affirming)**: Exceptional execution. High growth (>20%), margin expansion, strong guidance upgrade, and very confident management tone. "Top Pick".
+- **70-89 (Solid Compounder)**: Good steady performance. Meeting expectations, stable guidance, no red flags. Thesis is intact.
+- **40-69 (Watchlist / Mixed)**: Mixed bag. Decent numbers but poor guidance, or good guidance but execution miss. Watch and wait.
+- **0-39 (Thesis Breaking)**: Fundamental deterioration. Revenue decline, margin collapse, guidance cut, or evasive management. "Sell/Avoid".
 
 ---
 **OUTPUT 2: INVESTOR BRIEF (Rich Markdown)**
@@ -252,6 +265,7 @@ Return a JSON object with two keys:
                 margin_target: parseNum(safeGuidance.margin_target)
             },
             investor_brief: investorBrief,
+            investibility_score: parseNum(structuredData.investibility_score) || undefined,
             // Legacy / Defaults for safety
             management_tone: 5
         };

@@ -96,6 +96,7 @@ model Analysis {
   keyHighlights     String?
   deltaAnalysis     String?
   investorBrief     String?
+  investibilityScore Int?     // 0-100 Score by Gemini Senior Analyst
   company           Company  @relation(fields: [companyId], references: [id])
   quarter           Quarter  @relation(fields: [quarterId], references: [id])
 
