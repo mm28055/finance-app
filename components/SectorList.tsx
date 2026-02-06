@@ -110,8 +110,8 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
 
     return (
         <div className="space-y-4">
-            {/* Search Bar & Sort Toggle */}
-            <div className="sticky top-0 bg-[#FAFBFC] z-10 pb-4 flex gap-3 items-center">
+            {/* Search Bar & Sort Toggle & Color Theme */}
+            <div className="sticky top-0 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 z-30 py-3 -mx-2 px-3 border-b border-gray-100 flex gap-3 items-center shadow-sm mb-4">
                 <div className="relative flex-1">
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                     <input
@@ -119,31 +119,46 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         placeholder={`Search ${totalCompanies} companies...`}
-                        className="w-full pl-10 pr-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm text-gray-700 placeholder:text-gray-400 focus:outline-none focus:border-[#A5C4E2] focus:ring-2 focus:ring-[#D4E5F7] transition-all"
+                        className="w-full pl-10 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-700 placeholder:text-gray-400 focus:outline-none focus:border-[#A5C4E2] focus:ring-2 focus:ring-[#D4E5F7] transition-all"
                     />
                 </div>
 
                 {/* Sort Toggle */}
-                <div className="bg-white border border-gray-200 p-1 rounded-xl flex items-center shadow-sm">
+                <div className="flex items-center flex-shrink-0 bg-gray-50 border border-gray-200 p-1 rounded-lg">
                     <button
                         onClick={() => setSortBy('marketCap')}
-                        className={`px-3 py-1.5 text-xs font-medium rounded-lg transition-all ${sortBy === 'marketCap'
-                            ? 'bg-gray-100 text-gray-800'
+                        className={`px-2.5 py-1.5 text-xs font-medium rounded-md transition-all ${sortBy === 'marketCap'
+                            ? 'bg-white text-gray-800 shadow-sm'
                             : 'text-gray-400 hover:text-gray-600'
                             }`}
                     >
-                        Market Cap
+                        MCap
                     </button>
                     <button
                         onClick={() => setSortBy('gemini')}
-                        className={`px-3 py-1.5 text-xs font-medium rounded-lg transition-all flex items-center gap-1.5 ${sortBy === 'gemini'
-                            ? 'bg-[#E0F2FE] text-[#0284C7]'
+                        className={`px-2.5 py-1.5 text-xs font-medium rounded-md transition-all flex items-center gap-1.5 ${sortBy === 'gemini'
+                            ? 'bg-[#E0F2FE] text-[#0284C7] shadow-sm'
                             : 'text-gray-400 hover:text-gray-600'
                             }`}
                     >
                         <span className="w-1.5 h-1.5 rounded-full bg-[#0EA5E9] animate-pulse"></span>
-                        Gemini Rank
+                        AI Rank
                     </button>
+                </div>
+
+                {/* Color Theme Selector */}
+                <div className="flex items-center gap-2 flex-shrink-0 bg-gray-50 border border-gray-200 p-1.5 rounded-lg">
+                    <span className="text-[10px] font-semibold text-gray-400 uppercase tracking-wide ml-1">Theme</span>
+                    <div className="flex items-center gap-1">
+                        {(Object.keys(COLOR_THEMES) as ColorThemeKey[]).map((themeKey) => (
+                            <button
+                                key={themeKey}
+                                onClick={() => setSelectedTheme(themeKey)}
+                                className={`w-5 h-5 rounded transition-all ${COLOR_THEMES[themeKey].dot} ${selectedTheme === themeKey ? 'ring-2 ring-offset-2 ring-gray-300 scale-110 shadow-sm' : 'opacity-60 hover:opacity-100 hover:scale-105'}`}
+                                title={COLOR_THEMES[themeKey].name}
+                            />
+                        ))}
+                    </div>
                 </div>
             </div>
 
