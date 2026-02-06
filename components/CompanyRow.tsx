@@ -11,7 +11,10 @@ function shortQuarter(q: string): string {
     return q.replace('FY', '').replace(' ', ' ');
 }
 
-export const CompanyRow = ({ company }: { company: EnrichedCompany }) => {
+export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: 'text-[#4A7AAF]' } }: {
+    company: EnrichedCompany;
+    colorTheme?: { bg: string; text: string };
+}) => {
     const [expanded, setExpanded] = useState(false);
     const { isAdminMode, allSectors } = useAdmin();
     const [isDeleting, setIsDeleting] = useState(false);
@@ -67,7 +70,7 @@ export const CompanyRow = ({ company }: { company: EnrichedCompany }) => {
                 {/* Company Info - Single Line */}
                 {/* Company Info - Fixed Width for Alignment */}
                 <div className="flex items-center gap-3 w-[290px] flex-shrink-0 border-r border-gray-100 pr-4 mr-4">
-                    <div className="w-7 h-7 rounded-md bg-[#D4E5F7] text-[#4A7AAF] flex items-center justify-center text-[10px] font-semibold flex-shrink-0">
+                    <div className={`w-7 h-7 rounded-md ${colorTheme.bg} ${colorTheme.text} flex items-center justify-center text-[10px] font-semibold flex-shrink-0 transition-colors`}>
                         {company.ticker.substring(0, 2)}
                     </div>
                     <div className="flex items-center gap-2 min-w-0 flex-1">

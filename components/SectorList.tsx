@@ -6,7 +6,17 @@ import { AnalysisResult } from '@/lib/ai-analyst';
 import { SectorSection } from './SectorSection';
 import { useAdmin } from '@/context/AdminContext';
 import { AddCompanyModal } from './AddCompanyModal';
-import { Plus, Search } from 'lucide-react';
+import { Plus, Search, Palette } from 'lucide-react';
+
+export const COLOR_THEMES = {
+    blue: { name: 'Blue', bg: 'bg-[#D4E5F7]', text: 'text-[#4A7AAF]', dot: 'bg-[#4A7AAF]' },
+    emerald: { name: 'Emerald', bg: 'bg-emerald-100', text: 'text-emerald-700', dot: 'bg-emerald-600' },
+    amber: { name: 'Amber', bg: 'bg-amber-100', text: 'text-amber-700', dot: 'bg-amber-600' },
+    rose: { name: 'Rose', bg: 'bg-rose-100', text: 'text-rose-700', dot: 'bg-rose-600' },
+    purple: { name: 'Purple', bg: 'bg-purple-100', text: 'text-purple-700', dot: 'bg-purple-600' },
+};
+
+export type ColorThemeKey = keyof typeof COLOR_THEMES;
 
 export interface EnrichedCompany {
     id: string;
@@ -46,6 +56,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
     const { setAllSectors, isAdminMode } = useAdmin();
     const [showNewSectorModal, setShowNewSectorModal] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
+    const [selectedTheme, setSelectedTheme] = useState<ColorThemeKey>('blue');
 
     const [sortBy, setSortBy] = useState<'marketCap' | 'gemini'>('marketCap');
 
@@ -152,7 +163,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                     defaultOpen={searchQuery.length > 0 || index === 0}
                 >
                     {s.companies.map(co => (
-                        <CompanyRow key={co.ticker} company={co} />
+                        <CompanyRow key={co.ticker} company={co} colorTheme={COLOR_THEMES[selectedTheme]} />
                     ))}
                 </SectorSection>
             ))}
