@@ -246,7 +246,8 @@ export async function getDashboardData(): Promise<SectorData[]> {
             peRatio: co.peRatio ? Number(co.peRatio) : undefined,
             pbRatio: co.pbRatio ? Number(co.pbRatio) : undefined,
             dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
-            geminiScore: currentAnalysis?.investibility_score
+            geminiScore: currentAnalysis?.investibility_score,
+            colorTag: co.colorTag || undefined
         };
 
         sectorMap.get(sName)?.companies.push(companyObj);

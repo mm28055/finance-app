@@ -44,6 +44,7 @@ export interface EnrichedCompany {
     pbRatio?: number;
     dividendYield?: number;
     geminiScore?: number;
+    colorTag?: string;
 }
 
 export interface SectorData {

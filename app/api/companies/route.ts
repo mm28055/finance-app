@@ -76,7 +76,8 @@ export async function PUT(req: NextRequest) {
             ticker: body.ticker?.toUpperCase(),
             isin: body.isin,
             sector: body.sector,
-            businessProfile: body.businessProfile
+            businessProfile: body.businessProfile,
+            colorTag: body.colorTag
         }
     });
 

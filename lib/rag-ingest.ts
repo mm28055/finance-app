@@ -6,14 +6,14 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 const prisma = new PrismaClient();
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_AI_KEY!);
 
-const MODEL_NAME = "text-embedding-004";
+const MODEL_NAME = "gemini-embedding-001";
 const CHUNK_SIZE = 1000;
 const CHUNK_OVERLAP = 200;
 
 async function generateEmbedding(text: string) {
     const model = genAI.getGenerativeModel({ model: MODEL_NAME });
     const result = await model.embedContent(text);
-    return result.embedding.values;
+    return result.embedding.values.slice(0, 768);
 }
 
 function splitText(text: string, size: number, overlap: number) {

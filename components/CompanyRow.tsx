@@ -6,6 +6,8 @@ import { Trash2, ArrowRight, FileText } from 'lucide-react';
 import type { EnrichedCompany } from './SectorList';
 import { useAdmin } from '@/context/AdminContext';
 
+import { COLOR_THEMES, ColorThemeKey } from './SectorList';
+
 // Helper to format quarter: "Q3 FY26" -> "Q3 26"
 function shortQuarter(q: string): string {
     return q.replace('FY', '').replace(' ', ' ');
@@ -19,6 +21,8 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     const { isAdminMode, allSectors } = useAdmin();
     const [isDeleting, setIsDeleting] = useState(false);
     const [showSectorDropdown, setShowSectorDropdown] = useState(false);
+    const [showColorPicker, setShowColorPicker] = useState(false);
+    const [customColorTag, setCustomColorTag] = useState<string | null>(company.colorTag || null);
     const [selectedQuarterIdx, setSelectedQuarterIdx] = useState(0); // 0 = latest
 
     // Get selected quarter data
@@ -60,8 +64,27 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
         }
     };
 
+    const handleColorChange = async (colorKey: string | null) => {
+        setCustomColorTag(colorKey);
+        setShowColorPicker(false);
+        try {
+            await fetch('/api/companies', {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id: company.id, colorTag: colorKey })
+            });
+        } catch (e) {
+            console.error('Failed to update color', e);
+        }
+    };
+
+    // Determine effective colors
+    const effectiveTheme = customColorTag && COLOR_THEMES[customColorTag as ColorThemeKey]
+        ? COLOR_THEMES[customColorTag as ColorThemeKey]
+        : colorTheme;
+
     return (
-        <div className="border-b border-gray-100 last:border-0">
+        <div className="border-b border-gray-100 last:border-0 relative">
             {/* Compact Row */}
             <div
                 onClick={() => !isAdminMode && setExpanded(!expanded)}
@@ -70,8 +93,49 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                 {/* Company Info - Single Line */}
                 {/* Company Info - Fixed Width for Alignment */}
                 <div className="flex items-center gap-3 w-[290px] flex-shrink-0 border-r border-gray-100 pr-4 mr-4">
-                    <div className={`w-7 h-7 rounded-md ${colorTheme.bg} ${colorTheme.text} flex items-center justify-center text-[10px] font-semibold flex-shrink-0 transition-colors`}>
-                        {company.ticker.substring(0, 2)}
+                    <div className="relative">
+                        <div
+                            className={`w-7 h-7 rounded-md ${effectiveTheme.bg} ${effectiveTheme.text} flex items-center justify-center text-[10px] font-semibold flex-shrink-0 transition-colors cursor-context-menu`}
+                            onContextMenu={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                setShowColorPicker(!showColorPicker);
+                            }}
+                        >
+                            {company.ticker.substring(0, 2)}
+                        </div>
+
+                        {/* Color Context Menu */}
+                        {showColorPicker && (
+                            <div className="absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-xl z-50 p-2 min-w-[120px] animate-in fade-in zoom-in-95 duration-100">
+                                <div className="text-[10px] text-gray-400 font-medium mb-2 px-1 uppercase tracking-wider">Set Color</div>
+                                <div className="flex gap-1.5 flex-wrap">
+                                    {(Object.keys(COLOR_THEMES) as ColorThemeKey[]).map((key) => (
+                                        <button
+                                            key={key}
+                                            onClick={(e) => { e.stopPropagation(); handleColorChange(key); }}
+                                            className={`w-5 h-5 rounded-full ${COLOR_THEMES[key].dot} hover:scale-110 transition-transform ${customColorTag === key ? 'ring-2 ring-offset-1 ring-gray-400' : ''}`}
+                                            title={COLOR_THEMES[key].name}
+                                        />
+                                    ))}
+                                    <button
+                                        onClick={(e) => { e.stopPropagation(); handleColorChange(null); }}
+                                        className="w-5 h-5 rounded-full border border-gray-300 flex items-center justify-center text-gray-400 hover:text-gray-600 hover:border-gray-400 text-[10px]"
+                                        title="Reset to Theme"
+                                    >
+                                        ✕
+                                    </button>
+                                </div>
+                            </div>
+                        )}
+
+                        {/* Click outside listener could be added here or rely on specific close actions */}
+                        {showColorPicker && (
+                            <div
+                                className="fixed inset-0 z-40"
+                                onClick={(e) => { e.stopPropagation(); setShowColorPicker(false); }}
+                            />
+                        )}
                     </div>
                     <div className="flex items-center gap-2 min-w-0 flex-1">
                         <span className="text-sm font-medium text-gray-800 truncate" title={company.name}>{company.name}</span>

@@ -156,6 +156,21 @@ async function main() {
 
         if (!co.isin) continue;
 
+        // FAST SKIP: If latest quarter (Q3 FY26) already has analysis, skip Tijori API call
+        const dbCompanyCheck = await prisma.company.findUnique({ where: { isin: co.isin } });
+        if (dbCompanyCheck) {
+            const latestQuarter = await prisma.quarter.findFirst({ where: { name: 'Q3 FY26' } });
+            if (latestQuarter) {
+                const existingTranscript = await prisma.transcript.findFirst({
+                    where: { companyId: dbCompanyCheck.id, quarterId: latestQuarter.id, hasAnalysis: true }
+                });
+                if (existingTranscript) {
+                    console.log(`[${i + 1}/${companies.length}] ${co.name} - Q3 Complete, skipping.`);
+                    continue;
+                }
+            }
+        }
+
         console.log(`[${i + 1}/${companies.length}] Syncing ${co.name}...`);
 
         try {
@@ -175,10 +190,11 @@ async function main() {
                 const qType = fyq.split(' ')[0];
                 const qYear = 2000 + parseInt(fyq.split('FY')[1]);
 
-                // STRICT FILTER: Q2 FY26 or later
-                const isFY26OrLater = qYear > 2026 || (qYear === 2026 && (qType === 'Q2' || qType === 'Q3' || qType === 'Q4'));
+                // UPDATED FILTER: Q2 FY26 or later (as requested by user to fix missing Delta Analysis)
+                // This ensures we catch any missing Q2 back-data for new companies.
+                const isTargetQuarter = qYear > 2026 || (qYear === 2026 && (qType === 'Q2' || qType === 'Q3' || qType === 'Q4'));
 
-                if (isFY26OrLater) {
+                if (isTargetQuarter) {
                     const sectorFolder = (co.sector || 'Unsorted');
                     const safeName = co.name.replace(/[^a-z0-9]/gi, '_').trim();
                     const quarterDirNew = path.join(process.cwd(), 'Concalls', sectorFolder, fyq);

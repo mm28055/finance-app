@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_AI_KEY);
 
 // Config
-const MODEL_NAME = "text-embedding-004";
+const MODEL_NAME = "gemini-embedding-001";
 const CHUNK_SIZE = 1000;
 const CHUNK_OVERLAP = 200;
 

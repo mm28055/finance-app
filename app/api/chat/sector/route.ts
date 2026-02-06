@@ -91,8 +91,8 @@ ${content}
         let totalChunksFound = 0;
 
         try {
-            const { searchSectorTranscripts } = await import('@/lib/rag');
-            const ragResults = await searchSectorTranscripts(sector, message, 125); // Top 125 chunks (~32k tokens)
+            const { searchSectorTranscriptsBalanced } = await import('@/lib/rag');
+            const ragResults = await searchSectorTranscriptsBalanced(sector, message, 125); // Balanced: 1 chunk per company guaranteed
             totalChunksFound = ragResults.length;
 
             if (ragResults.length > 0) {

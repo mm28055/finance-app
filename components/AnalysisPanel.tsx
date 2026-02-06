@@ -95,7 +95,7 @@ export function AnalysisPanel({
                     {activeData?.delta_analysis ? (
                         (() => {
                             const content = activeData.delta_analysis.trim();
-                            const sections = content.split(/\n(?=##\s)/g);
+                            const sections = content.split(/\n(?=##?\s)/g);
 
                             return sections.map((section, idx) => {
                                 const isGreen = idx % 2 !== 0;
@@ -155,15 +155,25 @@ export function AnalysisPanel({
                             "ANALYST VERDICT",
                             "GUIDANCE",
                             "CREDIBILITY",
-                            "STRATEGIC GROWTH",
-                            "FINANCIAL PERFORMANCE",
-                            "SEGMENT ANALYSIS",
+                            "STRATEGIC",
+                            "FINANCIAL",
+                            "SEGMENT",
                             "ORDER BOOK",
-                            "REVENUE VISIBILITY",
-                            "CAPITAL ALLOCATION",
+                            "REVENUE",
+                            "CAPITAL",
                             "BALANCE SHEET",
-                            "Q&A ANALYSIS",
-                            "MEDIUM-TERM INVESTMENT THESIS"
+                            "Q&A",
+                            "THESIS",
+                            "SUMMARY",
+                            "OPERATIONAL",
+                            "EXECUTION"
+                        ];
+
+                        // BLOCKLIST: Specifically prevent Delta content from leaking into Analysis Tab
+                        const ANALYSIS_BLOCKLIST = [
+                            "DELTA ANALYSIS",
+                            "NARRATIVE SHIFT",
+                            "RISK LANDSCAPE"
                         ];
 
                         return sections.map((section, idx) => {
@@ -171,6 +181,10 @@ export function AnalysisPanel({
                             const headerMatch = section.match(/^##\s+(.+)$/m);
                             if (headerMatch) {
                                 const headerText = headerMatch[1].toUpperCase();
+                                // Block deltas first
+                                if (ANALYSIS_BLOCKLIST.some(blocked => headerText.includes(blocked))) {
+                                    return null;
+                                }
                                 // If the header does NOT contain any of the allowed keywords, skip it.
                                 if (!ANALYSIS_ALLOWLIST.some(allowed => headerText.includes(allowed))) {
                                     return null;
@@ -304,7 +318,7 @@ export function AnalysisPanel({
             {/* Footer */}
             {viewMode === "ANALYSIS" && (
                 <div className="px-3 py-2 border-t border-gray-100 flex justify-between items-center bg-gray-50/50">
-                    <span className="text-[9px] text-gray-400">Gemini 1.5 Pro</span>
+                    <span className="text-[9px] text-gray-400">Gemini 3 Pro Preview</span>
                     <button className="flex items-center gap-1 text-[10px] text-[#6B9FCC] hover:text-[#4A7AAF] transition-colors">
                         <Download className="w-3 h-3" />
                         Export

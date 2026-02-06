@@ -180,11 +180,14 @@ Return a JSON object with two keys:
 
     config.basePrompt = config.basePrompt || defaultBasePrompt;
 
-    config.deltaInstructions = `
+    // Only set default deltaInstructions if not loaded from DB
+    if (!config.deltaInstructions) {
+        config.deltaInstructions = `
 **DELTA ANALYSIS CONTEXT & REPORT REQUIREMENTS**
 You have been provided with BOTH the current quarter and previous quarter transcripts.
 In your "investor_brief" (Output 2), integrate these insights where appropriate, or add a specific "Delta Analysis" section if the findings are critical.
 `;
+    }
 
 
     const prompt = `
@@ -265,6 +268,7 @@ Return a JSON object with two keys:
                 margin_target: parseNum(safeGuidance.margin_target)
             },
             investor_brief: investorBrief,
+            delta_analysis: structuredData.delta_analysis || null,
             investibility_score: parseNum(structuredData.investibility_score) || undefined,
             // Legacy / Defaults for safety
             management_tone: 5

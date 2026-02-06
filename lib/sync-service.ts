@@ -53,10 +53,21 @@ export async function processTranscript(transcriptId: string) {
     }
 
     // 2. Get Previous Quarter Data for Context
+    // Q4→Q3, Q3→Q2, Q2→Q1 (same year), Q1→Q4 (previous year)
+    const getPrevQuarterInfo = (currentQ: string, currentYear: number) => {
+        switch (currentQ) {
+            case 'Q4': return { q: 'Q3', year: currentYear };
+            case 'Q3': return { q: 'Q2', year: currentYear };
+            case 'Q2': return { q: 'Q1', year: currentYear };
+            case 'Q1': return { q: 'Q4', year: currentYear - 1 };
+            default: return { q: 'Q3', year: currentYear };
+        }
+    };
+    const prevQInfo = getPrevQuarterInfo(transcript.quarter.q, transcript.quarter.year);
     const prevQuarter = await prisma.quarter.findFirst({
         where: {
-            year: transcript.quarter.year,
-            q: transcript.quarter.q === 'Q3' ? 'Q2' : (transcript.quarter.q === 'Q2' ? 'Q1' : 'Q4')
+            year: prevQInfo.year,
+            q: prevQInfo.q
         }
     });
 
@@ -152,7 +163,7 @@ export async function processTranscript(transcriptId: string) {
                 }
             },
             update: {
-                summary: (aiResult.summary?.highlights || []).join('\n'),
+                summary: (aiResult.summary?.highlights || []).join('\n') || aiResult.investor_brief?.substring(0, 500) || "",
                 managementTone: (aiResult.management_tone || "5").toString(),
                 guidanceText: aiResult.guidance?.text || "No guidance",
                 guidanceSentiment: (aiResult.guidance?.sentiment || "NEUTRAL").toUpperCase(),
@@ -160,12 +171,13 @@ export async function processTranscript(transcriptId: string) {
                 capexText: aiResult.capex?.details || "",
                 keyHighlights: JSON.stringify(aiResult.summary?.highlights || []),
                 deltaAnalysis: aiResult.delta_analysis,
-                investorBrief: aiResult.investor_brief
+                investorBrief: aiResult.investor_brief,
+                investibilityScore: aiResult.investibility_score
             },
             create: {
                 companyId: transcript.companyId,
                 quarterId: transcript.quarterId,
-                summary: (aiResult.summary?.highlights || []).join('\n'),
+                summary: (aiResult.summary?.highlights || []).join('\n') || aiResult.investor_brief?.substring(0, 500) || "",
                 managementTone: (aiResult.management_tone || "5").toString(),
                 guidanceText: aiResult.guidance?.text || "No guidance",
                 guidanceSentiment: (aiResult.guidance?.sentiment || "NEUTRAL").toUpperCase(),
@@ -173,7 +185,8 @@ export async function processTranscript(transcriptId: string) {
                 capexText: aiResult.capex?.details || "",
                 keyHighlights: JSON.stringify(aiResult.summary?.highlights || []),
                 deltaAnalysis: aiResult.delta_analysis,
-                investorBrief: aiResult.investor_brief
+                investorBrief: aiResult.investor_brief,
+                investibilityScore: aiResult.investibility_score
             }
         }),
         prisma.transcript.update({
