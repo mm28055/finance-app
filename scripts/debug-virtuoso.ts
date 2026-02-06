@@ -44,7 +44,7 @@ async function main() {
         console.log(`Transcript: ${t ? '✅ Found' : '❌ MISSING'}`);
         console.log(`Analysis:   ${a ? '✅ Found' : '❌ MISSING'}`);
         if (a) {
-            console.log(`  - Delta Analysis: ${a.delta_analysis ? '✅ Present' : '❌ NULL'}`);
+            console.log(`  - Delta Analysis: ${a.deltaAnalysis ? '✅ Present' : '❌ NULL'}`);
         }
     }
 }
