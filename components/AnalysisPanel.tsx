@@ -72,22 +72,48 @@ export function AnalysisPanel({
     const renderContent = () => {
         if (viewMode === "PROFILE") {
             return (
-                <div className="text-xs text-gray-600 leading-relaxed p-3">
+                <div className="text-xs text-gray-700 leading-relaxed bg-[#FFFBF0] min-h-full p-6">
                     <ReactMarkdown
                         remarkPlugins={[remarkGfm]}
                         components={{
-                            p: ({ node, ...props }) => <p className="mb-3 text-gray-600" {...props} />,
-                            h1: ({ node, ...props }) => <h1 className="text-sm font-semibold text-gray-800 mb-3 border-b border-gray-100 pb-2" {...props} />,
-                            h2: ({ node, ...props }) => <h2 className="text-xs font-semibold text-[#6B9FCC] mt-4 mb-2 uppercase tracking-wide" {...props} />,
-                            ul: ({ node, ...props }) => <ul className="list-disc pl-4 mb-3 space-y-1 marker:text-[#A5C4E2]" {...props} />,
-                            li: ({ node, ...props }) => <li className="text-gray-600" {...props} />,
+                            h1: ({ node, ...props }) => (
+                                <h1 className="text-lg font-serif font-bold text-[#92702A] mb-6 pb-2 border-b-2 border-amber-200/60" {...props} />
+                            ),
+                            h2: ({ node, ...props }) => (
+                                <h2 className="text-sm font-bold text-[#92702A] mt-8 mb-4 uppercase tracking-wider border-l-4 border-[#D4AF37] pl-3" {...props} />
+                            ),
+                            h3: ({ node, ...props }) => (
+                                <h3 className="text-xs font-bold text-[#A68932] mt-6 mb-2" {...props} />
+                            ),
+                            p: ({ node, ...props }) => <p className="mb-4 text-gray-800 leading-relaxed font-sans" {...props} />,
+                            ul: ({ node, ...props }) => <ul className="list-disc pl-5 mb-4 space-y-2 marker:text-[#C9A84C]" {...props} />,
+                            li: ({ node, ...props }) => <li className="text-gray-800 pl-1" {...props} />,
+                            strong: ({ node, ...props }) => <strong className="font-bold text-[#5C4033]" {...props} />,
+                            em: ({ node, ...props }) => <em className="text-gray-700 font-medium not-italic" {...props} />,
+                            hr: ({ node, ...props }) => <hr className="my-8 border-amber-200/40" {...props} />,
+                            blockquote: ({ node, ...props }) => (
+                                <blockquote className="border-l-4 border-[#D4AF37] pl-4 py-2 my-4 bg-white/60 rounded-r text-gray-700 italic shadow-sm" {...props} />
+                            ),
+                            table: ({ node, ...props }) => (
+                                <div className="overflow-x-auto my-6 rounded-lg border border-amber-200 shadow-sm bg-white">
+                                    <table className="min-w-full text-xs" {...props} />
+                                </div>
+                            ),
+                            thead: ({ node, ...props }) => <thead className="bg-[#FDF8EC] border-b border-amber-200" {...props} />,
+                            th: ({ node, ...props }) => (
+                                <th className="px-4 py-3 text-left text-[10px] font-bold text-[#92702A] uppercase tracking-wider" {...props} />
+                            ),
+                            td: ({ node, ...props }) => (
+                                <td className="px-4 py-3 text-gray-700 border-b border-gray-50 last:border-0" {...props} />
+                            ),
                         }}
                     >
-                        {profile || "No profile available."}
+                        {(profile || "No profile available.").trim()}
                     </ReactMarkdown>
                 </div>
             );
         }
+
 
         if (viewMode === "DELTA") {
             return (
@@ -290,7 +316,7 @@ export function AnalysisPanel({
                 <button
                     onClick={handleProfileClick}
                     className={`px-3 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap ${viewMode === "PROFILE"
-                        ? 'text-[#9B8AC4] border-[#9B8AC4] bg-white'
+                        ? 'text-[#92702A] border-[#D4AF37] bg-white'
                         : 'text-gray-400 border-transparent hover:text-gray-600'
                         }`}
                 >
