@@ -71,45 +71,71 @@ export function AnalysisPanel({
 
     const renderContent = () => {
         if (viewMode === "PROFILE") {
+            // Split by H1 or H2 at the start of a line to create distinct sections for coloring
+            const content = (profile || "No profile available.").trim();
+            // This regex matches newlines followed by # or ## (headers), keeping the delimiter in the next chunk
+            // We use specific splitting to ensure we don't break tables inside sections
+            const sections = content.split(/^(?=#{1,2}\s)/gm).filter(Boolean);
+
             return (
-                <div className="text-xs text-gray-700 leading-relaxed bg-[#FFFBF0] min-h-full p-6">
-                    <ReactMarkdown
-                        remarkPlugins={[remarkGfm]}
-                        components={{
-                            h1: ({ node, ...props }) => (
-                                <h1 className="text-lg font-serif font-bold text-[#92702A] mb-6 pb-2 border-b-2 border-amber-200/60" {...props} />
-                            ),
-                            h2: ({ node, ...props }) => (
-                                <h2 className="text-sm font-bold text-[#92702A] mt-8 mb-4 uppercase tracking-wider border-l-4 border-[#D4AF37] pl-3" {...props} />
-                            ),
-                            h3: ({ node, ...props }) => (
-                                <h3 className="text-xs font-bold text-[#A68932] mt-6 mb-2" {...props} />
-                            ),
-                            p: ({ node, ...props }) => <p className="mb-4 text-gray-800 leading-relaxed font-sans" {...props} />,
-                            ul: ({ node, ...props }) => <ul className="list-disc pl-5 mb-4 space-y-2 marker:text-[#C9A84C]" {...props} />,
-                            li: ({ node, ...props }) => <li className="text-gray-800 pl-1" {...props} />,
-                            strong: ({ node, ...props }) => <strong className="font-bold text-[#5C4033]" {...props} />,
-                            em: ({ node, ...props }) => <em className="text-gray-700 font-medium not-italic" {...props} />,
-                            hr: ({ node, ...props }) => <hr className="my-8 border-amber-200/40" {...props} />,
-                            blockquote: ({ node, ...props }) => (
-                                <blockquote className="border-l-4 border-[#D4AF37] pl-4 py-2 my-4 bg-white/60 rounded-r text-gray-700 italic shadow-sm" {...props} />
-                            ),
-                            table: ({ node, ...props }) => (
-                                <div className="overflow-x-auto my-6 rounded-lg border border-amber-200 shadow-sm bg-white">
-                                    <table className="min-w-full text-xs" {...props} />
-                                </div>
-                            ),
-                            thead: ({ node, ...props }) => <thead className="bg-[#FDF8EC] border-b border-amber-200" {...props} />,
-                            th: ({ node, ...props }) => (
-                                <th className="px-4 py-3 text-left text-[10px] font-bold text-[#92702A] uppercase tracking-wider" {...props} />
-                            ),
-                            td: ({ node, ...props }) => (
-                                <td className="px-4 py-3 text-gray-700 border-b border-gray-50 last:border-0" {...props} />
-                            ),
-                        }}
-                    >
-                        {(profile || "No profile available.").trim()}
-                    </ReactMarkdown>
+                <div className="text-xs text-gray-700 leading-relaxed font-sans min-h-full flex flex-col">
+                    {sections.map((section, idx) => {
+                        // Alternating backgrounds: White vs. Warm Gold (#FFFBF0)
+                        const isGoldBg = idx % 2 !== 0;
+
+                        return (
+                            <div
+                                key={idx}
+                                // Last section shouldn't have a border, others get a subtle gold separator
+                                className={`${isGoldBg ? 'bg-[#FFFBF0]' : 'bg-white'} p-6 border-b border-amber-100 last:border-0`}
+                            >
+                                <ReactMarkdown
+                                    remarkPlugins={[remarkGfm]}
+                                    components={{
+                                        // H1: Main Title - Black, Sans-serif, but with Gold underline
+                                        h1: ({ node, ...props }) => (
+                                            <h1 className="text-lg font-bold text-gray-900 mb-6 pb-2 border-b-2 border-amber-200" {...props} />
+                                        ),
+                                        // H2: Section Headers - Black, Sans-serif, Gold left-border accent
+                                        h2: ({ node, ...props }) => (
+                                            <h2 className="text-sm font-bold text-gray-900 mb-4 uppercase tracking-wider border-l-4 border-[#D4AF37] pl-3" {...props} />
+                                        ),
+                                        // H3: Sub-headers - Gold text to keep some premium feel
+                                        h3: ({ node, ...props }) => (
+                                            <h3 className="text-xs font-bold text-[#A68932] mt-4 mb-2" {...props} />
+                                        ),
+                                        // Text: Gray-800 for high contrast
+                                        p: ({ node, ...props }) => <p className="mb-4 text-gray-800 leading-relaxed" {...props} />,
+                                        // Lists: Gold bullets
+                                        ul: ({ node, ...props }) => <ul className="list-disc pl-5 mb-4 space-y-2 marker:text-[#C9A84C]" {...props} />,
+                                        li: ({ node, ...props }) => <li className="text-gray-800 pl-1" {...props} />,
+                                        // Strong: Deep brown/black
+                                        strong: ({ node, ...props }) => <strong className="font-bold text-gray-900" {...props} />,
+                                        hr: ({ node, ...props }) => <hr className="my-8 border-amber-200/40" {...props} />,
+                                        // Blockquote: Gold border, italic gray
+                                        blockquote: ({ node, ...props }) => (
+                                            <blockquote className="border-l-4 border-[#D4AF37] pl-4 py-2 my-4 bg-white/50 rounded-r text-gray-700 italic" {...props} />
+                                        ),
+                                        // Tables: Clean styling with gold/amber accents on headers
+                                        table: ({ node, ...props }) => (
+                                            <div className="overflow-x-auto my-6 rounded-lg border border-amber-200 shadow-sm bg-white">
+                                                <table className="min-w-full text-xs" {...props} />
+                                            </div>
+                                        ),
+                                        thead: ({ node, ...props }) => <thead className="bg-[#FDF8EC] border-b border-amber-200" {...props} />,
+                                        th: ({ node, ...props }) => (
+                                            <th className="px-4 py-3 text-left text-[10px] font-bold text-gray-900 uppercase tracking-wider" {...props} />
+                                        ),
+                                        td: ({ node, ...props }) => (
+                                            <td className="px-4 py-3 text-gray-700 border-b border-gray-50 last:border-0" {...props} />
+                                        ),
+                                    }}
+                                >
+                                    {section.trim()}
+                                </ReactMarkdown>
+                            </div>
+                        );
+                    })}
                 </div>
             );
         }
