@@ -86,8 +86,8 @@ export function AnalysisPanel({
                         return (
                             <div
                                 key={idx}
-                                // Last section shouldn't have a border, others get a subtle gold separator
-                                className={`${isGoldBg ? 'bg-[#FFFBF0]' : 'bg-white'} p-6 border-b border-amber-100 last:border-0`}
+                                // Alternating backgrounds provide sufficient separation, border removed
+                                className={`${isGoldBg ? 'bg-[#FFFBF0]' : 'bg-white'} p-6 transition-colors`}
                             >
                                 <ReactMarkdown
                                     remarkPlugins={[remarkGfm]}
