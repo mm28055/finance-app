@@ -92,7 +92,7 @@ ${content}
 
         try {
             const { searchSectorTranscriptsBalanced } = await import('@/lib/rag');
-            const ragResults = await searchSectorTranscriptsBalanced(sector, message, 125); // Balanced: 1 chunk per company guaranteed
+            const ragResults = await searchSectorTranscriptsBalanced(sector, message, 125, requestedQuarter); // Pass quarter for strict filtering
             totalChunksFound = ragResults.length;
 
             if (ragResults.length > 0) {

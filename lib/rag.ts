@@ -85,14 +85,25 @@ export async function searchSectorTranscripts(sector: string, query: string, lim
  * Phase 1: Get 1 most relevant chunk per company (guaranteed coverage)
  * Phase 2: Fill remaining budget with global best matches
  */
-export async function searchSectorTranscriptsBalanced(sector: string, query: string, totalLimit = 125): Promise<RagResult[]> {
+export async function searchSectorTranscriptsBalanced(sector: string, query: string, totalLimit = 125, targetQuarter?: string): Promise<RagResult[]> {
     // 1. Get allowed quarters and company list
     const companies = await prisma.company.findMany({
         where: { sector: sector, isVisible: true },
         select: { id: true }
     });
     const companyIds = companies.map(c => c.id);
-    const allowedQuarterIds = await getRecentQuarterIds(sector);
+
+    // If targetQuarter specified (e.g., "Q3"), filter strictly to that quarter
+    let allowedQuarterIds: string[];
+    if (targetQuarter) {
+        const targetQ = await prisma.quarter.findFirst({
+            where: { name: { contains: targetQuarter, mode: 'insensitive' } },
+            orderBy: { year: 'desc' }
+        });
+        allowedQuarterIds = targetQ ? [targetQ.id] : await getRecentQuarterIds(sector);
+    } else {
+        allowedQuarterIds = await getRecentQuarterIds(sector);
+    }
 
     if (allowedQuarterIds.length === 0 || companyIds.length === 0) return [];
 

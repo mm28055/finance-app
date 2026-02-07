@@ -171,7 +171,13 @@ async function main() {
             }
         }
 
-        console.log(`[${i + 1}/${companies.length}] Syncing ${co.name}...`);
+        // Check if existing company (has any transcripts) to enable STRICT MODE
+        const existingTranscriptCount = dbCompanyCheck
+            ? await prisma.transcript.count({ where: { companyId: dbCompanyCheck.id } })
+            : 0;
+        const isExistingCompany = existingTranscriptCount > 0;
+
+        console.log(`[${i + 1}/${companies.length}] Syncing ${co.name}... ${isExistingCompany ? '(Strict Mode)' : '(New Company)'}`);
 
         try {
             const response = await fetchFromTijori(co.isin);
@@ -190,9 +196,19 @@ async function main() {
                 const qType = fyq.split(' ')[0];
                 const qYear = 2000 + parseInt(fyq.split('FY')[1]);
 
-                // UPDATED FILTER: Q2 FY26 or later (as requested by user to fix missing Delta Analysis)
-                // This ensures we catch any missing Q2 back-data for new companies.
-                const isTargetQuarter = qYear > 2026 || (qYear === 2026 && (qType === 'Q2' || qType === 'Q3' || qType === 'Q4'));
+                // UPDATED FILTER: Strict Mode Logic
+                // If Existing Company: ONLY allow Q3 FY26 or newer (Ignore Q2 to protect links)
+                // If New Company: Allow Q2 FY26 (Need it for Delta)
+
+                let isTargetQuarter = false;
+
+                if (isExistingCompany) {
+                    // Strict Mode: Only Q3 FY26 or newer
+                    isTargetQuarter = qYear > 2026 || (qYear === 2026 && (qType === 'Q3' || qType === 'Q4'));
+                } else {
+                    // New Company: Allow Q2 for Delta
+                    isTargetQuarter = qYear > 2026 || (qYear === 2026 && (qType === 'Q2' || qType === 'Q3' || qType === 'Q4'));
+                }
 
                 if (isTargetQuarter) {
                     const sectorFolder = (co.sector || 'Unsorted');
@@ -225,7 +241,11 @@ async function main() {
 
                             if (existing) {
                                 realTranscriptId = existing.id;
-                                if (existing.fileUrl !== finalUrl) {
+                                // PROTECTION: Never overwrite a Supabase URL with a non-Supabase (Tijori) one
+                                const isExistingSupabase = existing.fileUrl && existing.fileUrl.includes('supabase.co');
+
+                                if (existing.fileUrl !== finalUrl && !isExistingSupabase) {
+                                    console.log(`   Updating link for ${co.name} (${fyq})...`);
                                     await prisma.transcript.update({
                                         where: { id: existing.id },
                                         data: { fileUrl: finalUrl }

@@ -224,7 +224,14 @@ Return a JSON object with two keys:
         const text = response.text();
 
         // Clean markdown if present
-        const jsonStr = text.replace(/```json/g, '').replace(/```/g, '').trim();
+        let jsonStr = text.replace(/```json/g, '').replace(/```/g, '').trim();
+
+        // Extract JSON block if there's extra text around it
+        const jsonMatch = jsonStr.match(/\{[\s\S]*\}/);
+        if (jsonMatch) {
+            jsonStr = jsonMatch[0];
+        }
+
         const parsed = JSON.parse(jsonStr);
 
         // Handle new format with investor_brief
