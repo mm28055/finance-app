@@ -6,7 +6,7 @@ import { AnalysisResult } from '@/lib/ai-analyst';
 import { SectorSection } from './SectorSection';
 import { useAdmin } from '@/context/AdminContext';
 import { AddCompanyModal } from './AddCompanyModal';
-import { Plus, Search, Palette } from 'lucide-react';
+import { Plus, Search } from 'lucide-react';
 
 export const COLOR_THEMES = {
     blue: { name: 'Blue', bg: 'bg-[#D4E5F7]', text: 'text-[#4A7AAF]', dot: 'bg-[#4A7AAF]' },
@@ -57,7 +57,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
     const { setAllSectors, isAdminMode } = useAdmin();
     const [showNewSectorModal, setShowNewSectorModal] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
-    const [selectedTheme, setSelectedTheme] = useState<ColorThemeKey>('blue');
+
 
     const [sortBy, setSortBy] = useState<'marketCap' | 'gemini'>('marketCap');
 
@@ -146,21 +146,6 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                         AI Rank
                     </button>
                 </div>
-
-                {/* Color Theme Selector */}
-                <div className="flex items-center gap-2 flex-shrink-0 bg-gray-50 border border-gray-200 p-1.5 rounded-lg">
-                    <span className="text-[10px] font-semibold text-gray-400 uppercase tracking-wide ml-1">Theme</span>
-                    <div className="flex items-center gap-1">
-                        {(Object.keys(COLOR_THEMES) as ColorThemeKey[]).map((themeKey) => (
-                            <button
-                                key={themeKey}
-                                onClick={() => setSelectedTheme(themeKey)}
-                                className={`w-5 h-5 rounded transition-all ${COLOR_THEMES[themeKey].dot} ${selectedTheme === themeKey ? 'ring-2 ring-offset-2 ring-gray-300 scale-110 shadow-sm' : 'opacity-60 hover:opacity-100 hover:scale-105'}`}
-                                title={COLOR_THEMES[themeKey].name}
-                            />
-                        ))}
-                    </div>
-                </div>
             </div>
 
             {searchQuery && (
@@ -179,7 +164,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                     defaultOpen={searchQuery.length > 0 || index === 0}
                 >
                     {s.companies.map(co => (
-                        <CompanyRow key={co.ticker} company={co} colorTheme={COLOR_THEMES[selectedTheme]} />
+                        <CompanyRow key={co.ticker} company={co} colorTheme={COLOR_THEMES.blue} />
                     ))}
                 </SectorSection>
             ))}
