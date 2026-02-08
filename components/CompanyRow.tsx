@@ -26,7 +26,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     const [selectedQuarterIdx, setSelectedQuarterIdx] = useState(0); // 0 = latest
 
     // Get selected quarter data
-    const quarters = useMemo(() => company.history || [], [company.history]);
+    const quarters = useMemo(() => (company.history || []).slice(0, 2), [company.history]);
     const selectedData = quarters[selectedQuarterIdx] || quarters[0];
 
     const handleDelete = async (e: React.MouseEvent) => {
