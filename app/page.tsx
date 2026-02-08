@@ -34,7 +34,7 @@ export default async function Home() {
       </div>
 
       <footer className="mt-12 text-center text-[11px] text-gray-400 pb-4">
-        <p>I am hobbyist investor. This is for my personal use. Reach out at manishmaheshwari@gmail.com</p>
+        <p>I am hobbyist investor. This is for my personal use. Reach out at manishmaheswari@gmail.com</p>
       </footer>
     </main>
   );
