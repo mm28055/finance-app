@@ -59,7 +59,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
     const [searchQuery, setSearchQuery] = useState('');
 
 
-    const [sortBy, setSortBy] = useState<'marketCap' | 'gemini'>('marketCap');
+    const [sortBy, setSortBy] = useState<'marketCap' | 'gemini'>('gemini');
 
     // Register all sector names in context
     useEffect(() => {
