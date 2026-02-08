@@ -173,7 +173,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                             )}
                             {company.geminiScore !== undefined && (
                                 <div className="flex items-center gap-1.5 px-1.5 py-0.5 bg-[#F0F9FF] rounded border border-[#BAE6FD]">
-                                    <span className="text-[9px] text-[#0EA5E9] font-bold uppercase tracking-wider">AI Score</span>
+
                                     <span className={`text-[10px] font-bold ${company.geminiScore >= 80 ? 'text-emerald-600' :
                                         company.geminiScore >= 50 ? 'text-amber-600' : 'text-red-500'
                                         }`}>
