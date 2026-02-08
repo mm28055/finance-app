@@ -32,6 +32,10 @@ export default async function Home() {
       <div className="max-w-5xl">
         <SectorList sectors={sectorList} />
       </div>
+
+      <footer className="mt-12 text-center text-[10px] text-gray-400 pb-4">
+        <p>I am hobbyist investor. This is for my personal use. Reach out at manishmaheshwari@gmail.com</p>
+      </footer>
     </main>
   );
 }
