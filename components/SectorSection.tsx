@@ -1,7 +1,7 @@
 
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronDown, ChevronRight, MessageSquare, Plus, LayoutGrid, RefreshCw } from 'lucide-react';
 import { useSectorChat } from '@/context/SectorChatContext';
 import { SectorSnapshot } from '@/components/SectorSnapshot';
@@ -26,6 +26,11 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
     const [isSyncing, setIsSyncing] = useState(false);
     const { openChat } = useSectorChat();
     const { isAdminMode } = useAdmin();
+
+    // Sync isOpen with defaultOpen so clearing a search re-collapses sectors
+    useEffect(() => {
+        setIsOpen(defaultOpen);
+    }, [defaultOpen]);
 
     const handleChatClick = (e: React.MouseEvent) => {
         e.stopPropagation();
