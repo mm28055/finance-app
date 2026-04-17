@@ -36,7 +36,12 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     const [detailError, setDetailError] = useState<string | null>(null);
 
     useEffect(() => {
-        if (!expanded || detail || detailLoading) return;
+        if (!expanded || detail) return;
+        // NOTE: detailLoading is intentionally NOT in the deps array. Including
+        // it would cause setDetailLoading(true) to re-run this effect, which
+        // fires the cleanup, which flips `cancelled` to true on the in-flight
+        // fetch — and the response would then be silently dropped. Result:
+        // eternal skeleton.
         let cancelled = false;
         setDetailLoading(true);
         setDetailError(null);
@@ -59,7 +64,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                 setDetailLoading(false);
             });
         return () => { cancelled = true; };
-    }, [expanded, company.id, detail, detailLoading]);
+    }, [expanded, company.id, detail]);
 
     // Prefer fetched detail (richer) over the light homepage object.
     const effective = detail || company;
