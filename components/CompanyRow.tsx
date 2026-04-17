@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { FinancialMatrix } from './FinancialMatrix';
 import { AnalysisPanel } from './AnalysisPanel';
 import { Trash2, ArrowRight, FileText } from 'lucide-react';
@@ -25,8 +25,47 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     const [customColorTag, setCustomColorTag] = useState<string | null>(company.colorTag || null);
     const [selectedQuarterIdx, setSelectedQuarterIdx] = useState(0); // 0 = latest
 
+    // On-demand company detail.
+    // The homepage ships a lightweight `company` (no history/analysis/profile
+    // — those are stripped to keep Supabase egress tiny). When the user
+    // expands the row, we fetch the full detail for just this company and
+    // cache it locally so subsequent collapse/expand is instant.
+    const hasDetailAlready = Boolean(company.history && company.history.length > 0);
+    const [detail, setDetail] = useState<EnrichedCompany | null>(hasDetailAlready ? company : null);
+    const [detailLoading, setDetailLoading] = useState(false);
+    const [detailError, setDetailError] = useState<string | null>(null);
+
+    useEffect(() => {
+        if (!expanded || detail || detailLoading) return;
+        let cancelled = false;
+        setDetailLoading(true);
+        setDetailError(null);
+        fetch(`/api/companies/${company.id}/detail`)
+            .then(async (res) => {
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                return res.json();
+            })
+            .then((data: EnrichedCompany) => {
+                if (cancelled) return;
+                setDetail(data);
+            })
+            .catch((err) => {
+                if (cancelled) return;
+                console.error('Failed to load company detail', err);
+                setDetailError('Failed to load details. Click to retry.');
+            })
+            .finally(() => {
+                if (cancelled) return;
+                setDetailLoading(false);
+            });
+        return () => { cancelled = true; };
+    }, [expanded, company.id, detail, detailLoading]);
+
+    // Prefer fetched detail (richer) over the light homepage object.
+    const effective = detail || company;
+
     // Get selected quarter data
-    const quarters = useMemo(() => (company.history || []).slice(0, 2), [company.history]);
+    const quarters = useMemo(() => (effective.history || []).slice(0, 2), [effective.history]);
     const selectedData = quarters[selectedQuarterIdx] || quarters[0];
 
     const handleDelete = async (e: React.MouseEvent) => {
@@ -335,22 +374,47 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
             {
                 expanded && !isAdminMode && (
                     <div className="bg-[#F8FAFC] p-4 border-t border-gray-100 flex flex-col lg:flex-row gap-4 animate-in slide-in-from-top-1 duration-150">
-                        <div className="flex-1">
-                            <FinancialMatrix
-                                financials={selectedData?.financials || company.financials}
-                                quarterName={selectedData?.quarter || company.summary?.quarter}
-                            />
-                        </div>
-                        <div className="flex-1">
-                            <AnalysisPanel
-                                analysis={selectedData?.analysis || company.analysis}
-                                quarterName={selectedData?.quarter || company.summary?.quarter}
-                                history={company.history}
-                                profile={company.profile}
-                                activeQuarterIndex={selectedQuarterIdx}
-                                onQuarterChange={(idx: number) => setSelectedQuarterIdx(idx)}
-                            />
-                        </div>
+                        {detailLoading && !detail ? (
+                            // Skeleton while the first fetch is in flight.
+                            <>
+                                <div className="flex-1 space-y-2">
+                                    <div className="h-4 w-32 bg-gray-200 rounded animate-pulse" />
+                                    <div className="h-24 w-full bg-gray-100 rounded animate-pulse" />
+                                    <div className="h-24 w-full bg-gray-100 rounded animate-pulse" />
+                                </div>
+                                <div className="flex-1 space-y-2">
+                                    <div className="h-4 w-40 bg-gray-200 rounded animate-pulse" />
+                                    <div className="h-32 w-full bg-gray-100 rounded animate-pulse" />
+                                    <div className="h-16 w-full bg-gray-100 rounded animate-pulse" />
+                                </div>
+                            </>
+                        ) : detailError && !detail ? (
+                            <button
+                                onClick={() => { setDetailError(null); setDetail(null); }}
+                                className="text-xs text-red-500 hover:text-red-700"
+                            >
+                                {detailError}
+                            </button>
+                        ) : (
+                            <>
+                                <div className="flex-1">
+                                    <FinancialMatrix
+                                        financials={selectedData?.financials || effective.financials}
+                                        quarterName={selectedData?.quarter || effective.summary?.quarter}
+                                    />
+                                </div>
+                                <div className="flex-1">
+                                    <AnalysisPanel
+                                        analysis={selectedData?.analysis || effective.analysis}
+                                        quarterName={selectedData?.quarter || effective.summary?.quarter}
+                                        history={effective.history}
+                                        profile={effective.profile}
+                                        activeQuarterIndex={selectedQuarterIdx}
+                                        onQuarterChange={(idx: number) => setSelectedQuarterIdx(idx)}
+                                    />
+                                </div>
+                            </>
+                        )}
                     </div>
                 )
             }

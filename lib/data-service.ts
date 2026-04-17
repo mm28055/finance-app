@@ -3,6 +3,362 @@ import { SectorData, EnrichedCompany } from '@/components/SectorList';
 import type { CompanyFinancials, MetricData } from '@/components/FinancialMatrix';
 import { AnalysisResult } from './ai-analyst';
 
+/**
+ * Lightweight dashboard query used by the homepage.
+ *
+ * IMPORTANT: This intentionally does NOT fetch Transcripts (rawText is huge)
+ * and does NOT fetch Analysis text blobs (summary, keyHighlights,
+ * deltaAnalysis, investorBrief, capexText, guidanceText, managementTone).
+ * Only the investibilityScore is pulled from Analysis so the homepage can
+ * sort by AI rank. Financials are included (they're small decimals) so
+ * SectorSnapshot aggregates keep working.
+ *
+ * Full per-company detail is loaded on-demand via getCompanyDetail(id).
+ */
+export async function getDashboardDataLight(): Promise<SectorData[]> {
+    const companies = await prisma.company.findMany({
+        where: { isVisible: true },
+        select: {
+            id: true,
+            name: true,
+            ticker: true,
+            sector: true,
+            colorTag: true,
+            marketCap: true,
+            currentPrice: true,
+            bookValue: true,
+            peRatio: true,
+            pbRatio: true,
+            dividendYield: true,
+            financials: {
+                orderBy: [
+                    { quarter: { year: 'desc' } },
+                    { quarter: { q: 'desc' } }
+                ],
+                take: 5, // buffer for QoQ calculation of the latest 2 quarters
+                select: {
+                    quarterId: true,
+                    revenue: true,
+                    ebitda: true,
+                    pat: true,
+                    revenueYoY: true,
+                    ebitdaYoY: true,
+                    patYoY: true,
+                    guidanceRevenue: true,
+                    guidanceEbitdaMargin: true,
+                    guidancePat: true,
+                    orderBook: true,
+                    quarter: { select: { name: true, year: true, q: true } }
+                }
+            },
+            analyses: {
+                orderBy: [
+                    { quarter: { year: 'desc' } },
+                    { quarter: { q: 'desc' } }
+                ],
+                take: 1,
+                select: {
+                    investibilityScore: true,
+                    quarter: { select: { name: true } }
+                }
+            }
+        }
+    });
+
+    const sectorMap = new Map<string, SectorData>();
+
+    companies.forEach(co => {
+        const sName = co.sector;
+        if (!sectorMap.has(sName)) {
+            sectorMap.set(sName, {
+                sector: sName,
+                stats: { companies: 0, avgGrowth: "+0%", sentiment: 0 },
+                companies: []
+            });
+        }
+
+        const latestF = co.financials[0];
+        const latestPrevF = co.financials.length > 1 ? co.financials[1] : null;
+        const latestA = co.analyses[0];
+
+        const companyObj: EnrichedCompany = {
+            id: co.id,
+            name: co.name,
+            ticker: co.ticker,
+            price: 0,
+            priceChange: 0,
+            // Compute financials locally — SectorSnapshot needs these aggregates.
+            financials: createSafeFinancials(latestF, latestPrevF, co.financials),
+            // analysis, profile, summary, history are intentionally omitted here —
+            // the client fetches them on-demand via getCompanyDetail(id) when a
+            // user expands a company row.
+            marketCap: co.marketCap ? Number(co.marketCap) : undefined,
+            currentPrice: co.currentPrice ? Number(co.currentPrice) : undefined,
+            bookValue: co.bookValue ? Number(co.bookValue) : undefined,
+            peRatio: co.peRatio ? Number(co.peRatio) : undefined,
+            pbRatio: co.pbRatio ? Number(co.pbRatio) : undefined,
+            dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
+            geminiScore: latestA?.investibilityScore ?? undefined,
+            colorTag: co.colorTag || undefined
+        };
+
+        sectorMap.get(sName)?.companies.push(companyObj);
+        sectorMap.get(sName)!.stats.companies++;
+    });
+
+    const sectors = Array.from(sectorMap.values());
+    sectors.forEach(sector => {
+        sector.companies.sort((a, b) => (b.marketCap || 0) - (a.marketCap || 0));
+    });
+
+    return sectors.sort((a, b) => a.sector.localeCompare(b.sector));
+}
+
+/**
+ * Full detail for a single company. Called on-demand when a user expands a
+ * company row on the dashboard. Includes financials history, analyses
+ * history (with text blobs), and transcript PDF links for the latest
+ * quarters. Transcript rawText is NEVER selected — only fileUrl.
+ */
+export async function getCompanyDetail(id: string): Promise<EnrichedCompany | null> {
+    const co = await prisma.company.findUnique({
+        where: { id },
+        select: {
+            id: true,
+            name: true,
+            ticker: true,
+            sector: true,
+            colorTag: true,
+            businessProfile: true,
+            marketCap: true,
+            currentPrice: true,
+            bookValue: true,
+            peRatio: true,
+            pbRatio: true,
+            dividendYield: true,
+            financials: {
+                orderBy: [
+                    { quarter: { year: 'desc' } },
+                    { quarter: { q: 'desc' } }
+                ],
+                take: 5,
+                include: { quarter: true }
+            },
+            analyses: {
+                orderBy: [
+                    { quarter: { year: 'desc' } },
+                    { quarter: { q: 'desc' } }
+                ],
+                take: 2,
+                include: { quarter: true }
+            },
+            transcripts: {
+                orderBy: [
+                    { quarter: { year: 'desc' } },
+                    { quarter: { q: 'desc' } }
+                ],
+                take: 2,
+                // Skip rawText — only need the PDF link + quarter reference.
+                select: {
+                    quarterId: true,
+                    fileUrl: true,
+                    quarter: { select: { name: true } }
+                }
+            }
+        }
+    });
+
+    if (!co) return null;
+
+    const latestF = co.financials[0];
+    const latestA = co.analyses[0];
+    const latestPrevF = co.financials.length > 1 ? co.financials[1] : null;
+
+    const currentAnalysis = parseAnalysis(latestA);
+
+    // Build History (same logic as before, scoped to one company)
+    const uniqueQuarterIds = new Set<string>();
+    co.analyses.forEach(a => uniqueQuarterIds.add(a.quarterId));
+    co.financials.forEach(f => uniqueQuarterIds.add(f.quarterId));
+    co.transcripts.forEach(t => uniqueQuarterIds.add(t.quarterId));
+
+    const history = Array.from(uniqueQuarterIds).map(qId => {
+        const matchingF = co.financials.find(f => f.quarterId === qId);
+        const matchingA = co.analyses.find(a => a.quarterId === qId);
+        const matchingT = co.transcripts.find(t => t.quarterId === qId);
+
+        const idx = co.financials.findIndex(f => f.quarterId === qId);
+        const prevF = idx >= 0 && idx + 1 < co.financials.length ? co.financials[idx + 1] : null;
+
+        return {
+            quarter: matchingF?.quarter.name || matchingA?.quarter.name || matchingT?.quarter.name || "Unknown",
+            analysis: parseAnalysis(matchingA) as AnalysisResult,
+            pdfUrl: matchingT?.fileUrl || null,
+            financials: matchingF ? createSafeFinancials(matchingF, prevF, co.financials) : ({} as any)
+        };
+    }).sort((a, b) => {
+        const partsA = a.quarter.split(' ');
+        const partsB = b.quarter.split(' ');
+        if (partsA.length < 2 || partsB.length < 2) return 0;
+        const yA = parseInt(partsA[1]?.replace('FY', '') || '0');
+        const yB = parseInt(partsB[1]?.replace('FY', '') || '0');
+        if (yA !== yB) return yB - yA;
+        return partsB[0].localeCompare(partsA[0]);
+    });
+
+    return {
+        id: co.id,
+        name: co.name,
+        ticker: co.ticker,
+        price: 0,
+        priceChange: 0,
+        financials: createSafeFinancials(latestF, latestPrevF, co.financials),
+        analysis: currentAnalysis,
+        profile: co.businessProfile || undefined,
+        summary: {
+            quarter: latestF?.quarter.name || "N/A",
+            text: latestA?.investorBrief || latestA?.summary || co.businessProfile || "No analysis available."
+        },
+        history,
+        marketCap: co.marketCap ? Number(co.marketCap) : undefined,
+        currentPrice: co.currentPrice ? Number(co.currentPrice) : undefined,
+        bookValue: co.bookValue ? Number(co.bookValue) : undefined,
+        peRatio: co.peRatio ? Number(co.peRatio) : undefined,
+        pbRatio: co.pbRatio ? Number(co.pbRatio) : undefined,
+        dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
+        geminiScore: currentAnalysis?.investibility_score,
+        colorTag: co.colorTag || undefined
+    };
+}
+
+// -----------------------------------------------------------------------------
+// Shared helpers (used by both getDashboardDataLight and getCompanyDetail)
+// -----------------------------------------------------------------------------
+
+function parseAnalysis(a: any): AnalysisResult | undefined {
+    if (!a) return undefined;
+    try {
+        return {
+            financials: {
+                revenue: { current_q: null, ytd: null, delta_qoq: null, delta_yoy: null, delta_ytd: null },
+                ebitda: { current_q: null, ytd: null, delta_qoq: null, delta_yoy: null, delta_ytd: null },
+                ebitda_margin: { current_q: null, ytd: null, delta_qoq: null, delta_yoy: null, delta_ytd: null },
+                pat: { current_q: null, ytd: null, delta_qoq: null, delta_yoy: null, delta_ytd: null },
+                order_book: null
+            },
+            forward_guidance_fy: {
+                revenue_target: null,
+                margin_target: null
+            },
+            guidance: {
+                text: a.guidanceText || "Not disclosed",
+                sentiment: (a.guidanceSentiment?.toLowerCase() as any) || 'neutral',
+                delta: 'maintained'
+            },
+            capex: {
+                amount: a.capexValue ? `₹${a.capexValue}cr` : "-",
+                details: a.capexText || "",
+                delta: 'maintained'
+            },
+            summary: {
+                highlights: a.keyHighlights ? JSON.parse(a.keyHighlights) : [],
+                lowlights: []
+            },
+            management_tone: parseInt(a.managementTone || "5"),
+            delta_analysis: a.deltaAnalysis || undefined,
+            investor_brief: a.investorBrief || undefined,
+            investibility_score: a.investibilityScore || undefined
+        };
+    } catch (e) {
+        console.error("Failed to parse analysis", e);
+        return undefined;
+    }
+}
+
+function createSafeFinancials(f: any, prevF: any, allF: any[]): CompanyFinancials {
+    const val = (v: any) => (v !== null && v !== undefined) ? Number(v) : null;
+
+    const currentYear = f?.quarter?.year;
+
+    const ytdSum = (key: string) => {
+        if (!currentYear) return null;
+        const relevant = allF.filter(x => x.quarter.year === currentYear);
+        if (relevant.length === 0) return null;
+        return relevant.reduce((sum, x) => sum + Number(x[key] || 0), 0);
+    };
+
+    const revYTD = ytdSum('revenue');
+    const ebitdaYTD = ytdSum('ebitda');
+    const patYTD = ytdSum('pat');
+
+    const calcQoQ = (curr: any, prev: any) => {
+        const c = val(curr);
+        const p = val(prev);
+        if (c === null || p === null || p === 0) return null;
+        return Number((((c - p) / p) * 100).toFixed(1));
+    };
+
+    const revenue: MetricData = {
+        currentQ: val(f?.revenue),
+        ytd: revYTD,
+        deltaQoQ: calcQoQ(f?.revenue, prevF?.revenue),
+        deltaYoY: val(f?.revenueYoY),
+        deltaYTD: null
+    };
+
+    const ebitda: MetricData = {
+        currentQ: val(f?.ebitda),
+        ytd: ebitdaYTD,
+        deltaQoQ: calcQoQ(f?.ebitda, prevF?.ebitda),
+        deltaYoY: val(f?.ebitdaYoY),
+        deltaYTD: null
+    };
+
+    const marginCalc = (num: any, den: any) => {
+        const n = val(num);
+        const d = val(den);
+        if (!n || !d) return null;
+        return Number(((n / d) * 100).toFixed(1));
+    };
+
+    const currMargin = marginCalc(f?.ebitda, f?.revenue);
+    const prevMargin = marginCalc(prevF?.ebitda, prevF?.revenue);
+    const ytdMargin = marginCalc(ebitdaYTD, revYTD);
+
+    const ebitdaMargin: MetricData = {
+        currentQ: currMargin,
+        ytd: ytdMargin,
+        deltaQoQ: (currMargin && prevMargin) ? Number((currMargin - prevMargin).toFixed(1)) : null,
+        deltaYoY: null,
+        deltaYTD: null
+    };
+
+    const pat: MetricData = {
+        currentQ: val(f?.pat),
+        ytd: patYTD,
+        deltaQoQ: calcQoQ(f?.pat, prevF?.pat),
+        deltaYoY: val(f?.patYoY),
+        deltaYTD: null
+    };
+
+    return {
+        revenue,
+        ebitda,
+        ebitdaMargin,
+        pat,
+        orderBook: val(f?.orderBook),
+        guidance: {
+            revenueTarget: val(f?.guidanceRevenue),
+            marginTarget: val(f?.guidanceEbitdaMargin),
+            pat: val(f?.guidancePat)
+        }
+    };
+}
+
+// -----------------------------------------------------------------------------
+// Legacy: kept temporarily for backwards compatibility. Prefer getDashboardDataLight.
+// -----------------------------------------------------------------------------
+
 export async function getDashboardData(): Promise<SectorData[]> {
     const companies = await prisma.company.findMany({
         where: { isVisible: true },
