@@ -2,7 +2,7 @@ import { SectorList, SectorData } from "@/components/SectorList";
 import { getDashboardData, getTranscriptStats } from "@/lib/data-service";
 import { TranscriptStats } from "@/components/TranscriptStats";
 
-export const revalidate = 300;
+export const dynamic = 'force-dynamic';
 
 export default async function Home() {
   const [sectorList, stats] = await Promise.all([
