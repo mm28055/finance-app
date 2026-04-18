@@ -186,13 +186,16 @@ async function cleanupOldQuarters(companyId: string, companyName: string, jobId:
 function parseArgs() {
     const args = process.argv.slice(2);
     let companyFilter: string | null = null;
+    let sweep = false;
     for (let i = 0; i < args.length; i++) {
         if ((args[i] === '--company' || args[i] === '-c') && args[i + 1]) {
             companyFilter = args[i + 1].trim();
             i++;
+        } else if (args[i] === '--sweep') {
+            sweep = true;
         }
     }
-    return { companyFilter };
+    return { companyFilter, sweep };
 }
 
 async function resolveSingleCompany(filter: string) {
@@ -220,7 +223,7 @@ async function resolveSingleCompany(filter: string) {
 }
 
 async function main() {
-    const { companyFilter } = parseArgs();
+    const { companyFilter, sweep } = parseArgs();
     const singleMode = !!companyFilter;
 
     console.log(singleMode
@@ -249,65 +252,72 @@ async function main() {
 
     await logToDB(jobId, 'INFO', `Starting sync for ${companies.length} companies...`);
 
-    // --- RULE 2: Pre-Sync Stale Data Sweep ---
+    // --- RULE 2: Pre-Sync Stale Data Sweep (opt-in via --sweep) ---
     // If a company's oldest transcript is more than 2 quarters behind the
-    // global latest quarter, delete it — frees Supabase space before new downloads.
-    console.log(`\n🧹 Running stale data sweep before downloads...`);
+    // global latest quarter, delete it. Normally redundant because the
+    // per-company rolling window runs after each analysis. Only run this
+    // when --sweep is passed (e.g. once at the start of a fresh results
+    // cycle, or after suspected data drift).
+    if (!sweep) {
+        console.log(`\n⏭️  Skipping stale data sweep (pass --sweep to run it).`);
+    } else {
+        console.log(`\n🧹 Running stale data sweep before downloads...`);
 
-    const qNum = (q: string) => parseInt(q.replace('Q', '')) || 0;
-    const qPos = (year: number, q: string) => year * 4 + qNum(q);
+        const qNum = (q: string) => parseInt(q.replace('Q', '')) || 0;
+        const qPos = (year: number, q: string) => year * 4 + qNum(q);
 
-    const allQuarters = await prisma.quarter.findMany({
-        orderBy: [{ year: 'desc' }, { q: 'desc' }]
-    });
+        const allQuarters = await prisma.quarter.findMany({
+            orderBy: [{ year: 'desc' }, { q: 'desc' }]
+        });
 
-    if (allQuarters.length >= 2) {
-        const latestPos = qPos(allQuarters[0].year, allQuarters[0].q);
-        let cleanedCount = 0;
+        if (allQuarters.length >= 2) {
+            const latestPos = qPos(allQuarters[0].year, allQuarters[0].q);
+            let cleanedCount = 0;
 
-        for (const co of companies) {
-            const coTranscripts = await prisma.transcript.findMany({
-                where: { companyId: co.id },
-                include: { quarter: true },
-                orderBy: [{ quarter: { year: 'asc' } }, { quarter: { q: 'asc' } }]
-            });
+            for (const co of companies) {
+                const coTranscripts = await prisma.transcript.findMany({
+                    where: { companyId: co.id },
+                    include: { quarter: true },
+                    orderBy: [{ quarter: { year: 'asc' } }, { quarter: { q: 'asc' } }]
+                });
 
-            if (coTranscripts.length === 0) continue;
+                if (coTranscripts.length === 0) continue;
 
-            for (const t of coTranscripts) {
-                const tPos = qPos(t.quarter.year, t.quarter.q);
-                const gap = latestPos - tPos;
+                for (const t of coTranscripts) {
+                    const tPos = qPos(t.quarter.year, t.quarter.q);
+                    const gap = latestPos - tPos;
 
-                if (gap > 2) {
-                    const qName = t.quarter.name;
+                    if (gap > 2) {
+                        const qName = t.quarter.name;
 
-                    if (t.fileUrl && t.fileUrl.startsWith('http') && supabase) {
-                        try {
-                            const urlParts = t.fileUrl.split(`/storage/v1/object/public/${BUCKET_NAME}/`);
-                            if (urlParts.length === 2) {
-                                const storagePath = decodeURIComponent(urlParts[1]);
-                                await supabase.storage.from(BUCKET_NAME).remove([storagePath]);
-                                console.log(`   🗑️ [Stale] Deleted PDF: ${storagePath}`);
+                        if (t.fileUrl && t.fileUrl.startsWith('http') && supabase) {
+                            try {
+                                const urlParts = t.fileUrl.split(`/storage/v1/object/public/${BUCKET_NAME}/`);
+                                if (urlParts.length === 2) {
+                                    const storagePath = decodeURIComponent(urlParts[1]);
+                                    await supabase.storage.from(BUCKET_NAME).remove([storagePath]);
+                                    console.log(`   🗑️ [Stale] Deleted PDF: ${storagePath}`);
+                                }
+                            } catch (e: any) {
+                                console.error(`   ⚠️ Supabase stale cleanup error: ${e.message}`);
                             }
-                        } catch (e: any) {
-                            console.error(`   ⚠️ Supabase stale cleanup error: ${e.message}`);
                         }
+
+                        await prisma.transcriptChunk.deleteMany({ where: { companyId: co.id, quarterId: t.quarterId } });
+                        await prisma.analysis.deleteMany({ where: { companyId: co.id, quarterId: t.quarterId } });
+                        await prisma.financials.deleteMany({ where: { companyId: co.id, quarterId: t.quarterId } });
+                        await prisma.transcript.delete({ where: { id: t.id } });
+
+                        await logToDB(jobId, 'CLEANUP', `[Stale] Deleted ${qName} (gap: ${gap} quarters)`, co.name, qName);
+                        cleanedCount++;
                     }
-
-                    await prisma.transcriptChunk.deleteMany({ where: { companyId: co.id, quarterId: t.quarterId } });
-                    await prisma.analysis.deleteMany({ where: { companyId: co.id, quarterId: t.quarterId } });
-                    await prisma.financials.deleteMany({ where: { companyId: co.id, quarterId: t.quarterId } });
-                    await prisma.transcript.delete({ where: { id: t.id } });
-
-                    await logToDB(jobId, 'CLEANUP', `[Stale] Deleted ${qName} (gap: ${gap} quarters)`, co.name, qName);
-                    cleanedCount++;
                 }
             }
+            console.log(`   Stale sweep done: cleaned ${cleanedCount} old transcripts.`);
+            await logToDB(jobId, 'INFO', `Pre-sync stale sweep: deleted ${cleanedCount} transcripts with gap >2`);
+        } else {
+            console.log(`   Only ${allQuarters.length} quarter(s) in DB — no stale sweep needed.`);
         }
-        console.log(`   Stale sweep done: cleaned ${cleanedCount} old transcripts.`);
-        await logToDB(jobId, 'INFO', `Pre-sync stale sweep: deleted ${cleanedCount} transcripts with gap >2`);
-    } else {
-        console.log(`   Only ${allQuarters.length} quarter(s) in DB — no stale sweep needed.`);
     }
 
     console.log(`\n🎯 Syncing ${companies.length} companies...`);
