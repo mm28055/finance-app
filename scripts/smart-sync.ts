@@ -325,6 +325,13 @@ async function main() {
             const response: any = await fetchFromTijori(co.isin);
             const list = Array.isArray(response) ? response : (response?.data || []);
 
+            // Sort oldest -> newest so delta analysis has prior quarter in DB when current quarter is processed.
+            list.sort((a: any, b: any) => {
+                const ta = new Date(a.concall_event_time || 0).getTime();
+                const tb = new Date(b.concall_event_time || 0).getTime();
+                return ta - tb;
+            });
+
             for (const item of list) {
                 let link = item.transcript;
                 if (!link || !link.startsWith('http')) continue;
