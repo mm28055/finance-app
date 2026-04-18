@@ -183,8 +183,49 @@ async function cleanupOldQuarters(companyId: string, companyName: string, jobId:
     }
 }
 
+function parseArgs() {
+    const args = process.argv.slice(2);
+    let companyFilter: string | null = null;
+    for (let i = 0; i < args.length; i++) {
+        if ((args[i] === '--company' || args[i] === '-c') && args[i + 1]) {
+            companyFilter = args[i + 1].trim();
+            i++;
+        }
+    }
+    return { companyFilter };
+}
+
+async function resolveSingleCompany(filter: string) {
+    // Match by ISIN (exact), ticker (ci exact), or name (ci contains)
+    const companies = await prisma.company.findMany({
+        where: {
+            status: 'ACTIVE',
+            OR: [
+                { isin: filter },
+                { ticker: { equals: filter, mode: 'insensitive' } },
+                { name: { contains: filter, mode: 'insensitive' } },
+            ],
+        },
+        select: { id: true, name: true, isin: true, sector: true, ticker: true },
+    });
+
+    if (companies.length === 0) {
+        throw new Error(`No ACTIVE company matches "${filter}" (by ISIN, ticker, or name).`);
+    }
+    if (companies.length > 1) {
+        const list = companies.map(c => `  - ${c.name.trim()} (${c.ticker || 'no-ticker'}, ${c.isin || 'no-isin'})`).join('\n');
+        throw new Error(`Multiple matches for "${filter}":\n${list}\nRe-run with ticker or ISIN to disambiguate.`);
+    }
+    return companies;
+}
+
 async function main() {
-    console.log("🚀 Starting Unified Smart Sync (Download + Analyze)...");
+    const { companyFilter } = parseArgs();
+    const singleMode = !!companyFilter;
+
+    console.log(singleMode
+        ? `🚀 Starting Smart Sync (single company: "${companyFilter}")...`
+        : "🚀 Starting Unified Smart Sync (Download + Analyze)...");
 
     // 1. Create Sync Job
     const job = await prisma.syncJob.create({
@@ -193,11 +234,18 @@ async function main() {
     const jobId = job.id;
     console.log(`Processing Job ID: ${jobId}`);
 
-    // 1. Get Active Companies
-    const companies = await prisma.company.findMany({
-        where: { status: 'ACTIVE' },
-        select: { id: true, name: true, isin: true, sector: true, ticker: true }
-    });
+    // 1. Get Active Companies (filtered if --company flag given)
+    const companies = singleMode
+        ? await resolveSingleCompany(companyFilter!)
+        : await prisma.company.findMany({
+            where: { status: 'ACTIVE' },
+            select: { id: true, name: true, isin: true, sector: true, ticker: true }
+        });
+
+    if (singleMode) {
+        const c = companies[0];
+        console.log(`   Resolved to: ${c.name.trim()} (ticker=${c.ticker}, isin=${c.isin})`);
+    }
 
     await logToDB(jobId, 'INFO', `Starting sync for ${companies.length} companies...`);
 
