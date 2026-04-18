@@ -33,8 +33,11 @@ export interface EnrichedCompany {
     }
     history?: {
         quarter: string;
-        analysis: AnalysisResult;
-        financials: CompanyFinancials;
+        // analysis + financials are only populated by getCompanyDetail (on expand).
+        // The lightweight homepage load omits them and provides just quarter + pdfUrl
+        // so the row can render PDF transcript icons without pulling heavy blobs.
+        analysis?: AnalysisResult;
+        financials?: CompanyFinancials;
         pdfUrl?: string | null;
     }[];
     marketCap?: number;

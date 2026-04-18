@@ -17,7 +17,7 @@ export function AnalysisPanel({
 }: {
     analysis?: AnalysisResult,
     quarterName?: string,
-    history?: { quarter: string; analysis: AnalysisResult; financials: CompanyFinancials }[],
+    history?: { quarter: string; analysis?: AnalysisResult; financials?: CompanyFinancials; pdfUrl?: string | null }[],
     profile?: string,
     activeQuarterIndex?: number,
     onQuarterChange?: (idx: number) => void

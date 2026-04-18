@@ -61,6 +61,20 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
                     investibilityScore: true,
                     quarter: { select: { name: true } }
                 }
+            },
+            // Minimal transcript info so the row can render PDF icons without
+            // loading the heavy rawText/analysis blobs. Only fileUrl + quarter
+            // name are pulled; ~2 KB per company at most.
+            transcripts: {
+                orderBy: [
+                    { quarter: { year: 'desc' } },
+                    { quarter: { q: 'desc' } }
+                ],
+                take: 2,
+                select: {
+                    fileUrl: true,
+                    quarter: { select: { name: true } }
+                }
             }
         }
     });
@@ -81,6 +95,14 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
         const latestPrevF = co.financials.length > 1 ? co.financials[1] : null;
         const latestA = co.analyses[0];
 
+        // Minimal history: quarter + pdfUrl only, so the row can show PDF icons.
+        // Full analysis + financials per quarter are filled in by getCompanyDetail
+        // when a user expands the row.
+        const lightHistory = co.transcripts.map(t => ({
+            quarter: t.quarter.name,
+            pdfUrl: t.fileUrl || null
+        }));
+
         const companyObj: EnrichedCompany = {
             id: co.id,
             name: co.name,
@@ -89,9 +111,11 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             priceChange: 0,
             // Compute financials locally — SectorSnapshot needs these aggregates.
             financials: createSafeFinancials(latestF, latestPrevF, co.financials),
-            // analysis, profile, summary, history are intentionally omitted here —
-            // the client fetches them on-demand via getCompanyDetail(id) when a
-            // user expands a company row.
+            // analysis, profile, summary are intentionally omitted here — the
+            // client fetches them on-demand via getCompanyDetail(id) when a
+            // user expands a company row. `history` is included but only with
+            // the bare {quarter, pdfUrl} needed to render the PDF icons.
+            history: lightHistory.length > 0 ? lightHistory : undefined,
             marketCap: co.marketCap ? Number(co.marketCap) : undefined,
             currentPrice: co.currentPrice ? Number(co.currentPrice) : undefined,
             bookValue: co.bookValue ? Number(co.bookValue) : undefined,
