@@ -26,11 +26,18 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     const [selectedQuarterIdx, setSelectedQuarterIdx] = useState(0); // 0 = latest
 
     // On-demand company detail.
-    // The homepage ships a lightweight `company` (no history/analysis/profile
-    // — those are stripped to keep Supabase egress tiny). When the user
-    // expands the row, we fetch the full detail for just this company and
-    // cache it locally so subsequent collapse/expand is instant.
-    const hasDetailAlready = Boolean(company.history && company.history.length > 0);
+    // The homepage ships a lightweight `company` (scalars + a minimal
+    // {quarter, pdfUrl} history so row-level PDF icons render). Full analysis
+    // text, financials history, and profile are stripped to keep Supabase
+    // egress tiny. When the user expands the row, we fetch the full detail
+    // for just this company and cache it locally so subsequent collapse/
+    // expand is instant.
+    //
+    // IMPORTANT: check `company.analysis` (not just history) — history is
+    // now always populated on the light fetch, but `analysis` is only set
+    // by getCompanyDetail. Using history here would skip the detail fetch
+    // and leave the analysis panel empty.
+    const hasDetailAlready = Boolean(company.analysis);
     const [detail, setDetail] = useState<EnrichedCompany | null>(hasDetailAlready ? company : null);
     const [detailLoading, setDetailLoading] = useState(false);
     const [detailError, setDetailError] = useState<string | null>(null);
