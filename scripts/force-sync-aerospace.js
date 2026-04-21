@@ -6,7 +6,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 // Minimal AI Analyst Setup for script
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "YOUR_KEY_HERE");
-const model = genAI.getGenerativeModel({ model: "gemini-3-pro-preview" }); // Using 1.5 Pro for script stability if 3 is preview
+const model = genAI.getGenerativeModel({ model: "gemini-3.1-pro-preview" });
 
 async function analyzeTranscript(text) {
     // simplified prompt for testing
