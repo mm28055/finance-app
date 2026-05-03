@@ -21,6 +21,7 @@ model Company {
   status          String       @default("ACTIVE")
   colorTag        String?      // Stores the custom color theme key (e.g. 'purple', 'emerald')
   notes           String?
+  conviction      String?      // 'HIGH' | 'MEDIUM' | 'LOW' | null
   createdAt       DateTime     @default(now()) @db.Timestamptz(6)
   updatedAt       DateTime     @updatedAt @db.Timestamptz(6)
   bookValue       Decimal?     @db.Decimal

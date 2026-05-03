@@ -49,7 +49,16 @@ export interface EnrichedCompany {
     geminiScore?: number;
     colorTag?: string;
     notes?: string;
+    conviction?: string;
 }
+
+export const CONVICTION_CONFIG = {
+    HIGH:   { label: 'High',   pill: 'bg-emerald-100 text-emerald-700', dot: 'bg-emerald-500' },
+    MEDIUM: { label: 'Medium', pill: 'bg-amber-100 text-amber-700',     dot: 'bg-amber-500'   },
+    LOW:    { label: 'Low',    pill: 'bg-rose-100 text-rose-600',       dot: 'bg-rose-400'    },
+} as const;
+
+export type ConvictionLevel = keyof typeof CONVICTION_CONFIG;
 
 export interface SectorData {
     sector: string;
@@ -64,6 +73,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
 
 
     const [sortBy, setSortBy] = useState<'marketCap' | 'gemini'>('gemini');
+    const [convictionFilter, setConvictionFilter] = useState<'ALL' | 'HIGH' | 'MEDIUM' | 'LOW' | 'WATCHLIST'>('ALL');
 
     // Register all sector names in context
     useEffect(() => {
@@ -71,11 +81,11 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
         setAllSectors(sectorNames);
     }, [sectors, setAllSectors]);
 
-    // Filter companies based on search AND sort them
+    // Filter companies based on search AND conviction AND sort them
     const filteredSectors = useMemo(() => {
         let result = sectors;
 
-        // 1. Filter
+        // 1. Search filter
         if (searchQuery.trim()) {
             const query = searchQuery.toLowerCase();
             result = result.map(sector => ({
@@ -87,7 +97,17 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             })).filter(sector => sector.companies.length > 0);
         }
 
-        // 2. Sort
+        // 2. Conviction filter
+        if (convictionFilter !== 'ALL') {
+            result = result.map(sector => ({
+                ...sector,
+                companies: sector.companies.filter(co =>
+                    convictionFilter === 'WATCHLIST' ? !!co.conviction : co.conviction === convictionFilter
+                )
+            })).filter(sector => sector.companies.length > 0);
+        }
+
+        // 3. Sort
         return result.map(sector => {
             const sortedCompanies = [...sector.companies].sort((a, b) => {
                 if (sortBy === 'gemini') {
@@ -104,7 +124,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             });
             return { ...sector, companies: sortedCompanies };
         });
-    }, [sectors, searchQuery, sortBy]);
+    }, [sectors, searchQuery, sortBy, convictionFilter]);
 
     // Count total companies
     const totalCompanies = sectors.reduce((sum, s) => sum + s.companies.length, 0);
@@ -115,40 +135,59 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
 
     return (
         <div className="space-y-4">
-            {/* Search Bar & Sort Toggle & Color Theme */}
-            <div className="sticky top-0 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 z-30 py-3 -mx-2 px-3 border-b border-gray-100 flex gap-3 items-center shadow-sm mb-4">
-                <div className="relative flex-1">
-                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
-                    <input
-                        type="text"
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                        placeholder={`Search ${totalCompanies} companies...`}
-                        className="w-full pl-10 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-700 placeholder:text-gray-400 focus:outline-none focus:border-[#A5C4E2] focus:ring-2 focus:ring-[#D4E5F7] transition-all"
-                    />
+            {/* Toolbar: Search + Sort + Conviction Filter */}
+            <div className="sticky top-0 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 z-30 py-2.5 -mx-2 px-3 border-b border-gray-100 shadow-sm mb-4 flex flex-col gap-2">
+                {/* Row 1: Search + Sort */}
+                <div className="flex gap-3 items-center">
+                    <div className="relative flex-1">
+                        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+                        <input
+                            type="text"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            placeholder={`Search ${totalCompanies} companies...`}
+                            className="w-full pl-10 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-700 placeholder:text-gray-400 focus:outline-none focus:border-[#A5C4E2] focus:ring-2 focus:ring-[#D4E5F7] transition-all"
+                        />
+                    </div>
+                    <div className="flex items-center flex-shrink-0 bg-gray-50 border border-gray-200 p-1 rounded-lg">
+                        <button
+                            onClick={() => setSortBy('marketCap')}
+                            className={`px-2.5 py-1.5 text-xs font-medium rounded-md transition-all ${sortBy === 'marketCap' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-400 hover:text-gray-600'}`}
+                        >MCap</button>
+                        <button
+                            onClick={() => setSortBy('gemini')}
+                            className={`px-2.5 py-1.5 text-xs font-medium rounded-md transition-all flex items-center gap-1.5 ${sortBy === 'gemini' ? 'bg-[#E0F2FE] text-[#0284C7] shadow-sm' : 'text-gray-400 hover:text-gray-600'}`}
+                        >
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#0EA5E9] animate-pulse"></span>
+                            AI Rank
+                        </button>
+                    </div>
                 </div>
 
-                {/* Sort Toggle */}
-                <div className="flex items-center flex-shrink-0 bg-gray-50 border border-gray-200 p-1 rounded-lg">
-                    <button
-                        onClick={() => setSortBy('marketCap')}
-                        className={`px-2.5 py-1.5 text-xs font-medium rounded-md transition-all ${sortBy === 'marketCap'
-                            ? 'bg-white text-gray-800 shadow-sm'
-                            : 'text-gray-400 hover:text-gray-600'
-                            }`}
-                    >
-                        MCap
-                    </button>
-                    <button
-                        onClick={() => setSortBy('gemini')}
-                        className={`px-2.5 py-1.5 text-xs font-medium rounded-md transition-all flex items-center gap-1.5 ${sortBy === 'gemini'
-                            ? 'bg-[#E0F2FE] text-[#0284C7] shadow-sm'
-                            : 'text-gray-400 hover:text-gray-600'
-                            }`}
-                    >
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#0EA5E9] animate-pulse"></span>
-                        AI Rank
-                    </button>
+                {/* Row 2: Conviction Filter */}
+                <div className="flex items-center gap-1.5">
+                    <span className="text-[9px] text-gray-400 font-medium uppercase tracking-wider mr-0.5">Conviction:</span>
+                    {(['ALL', 'HIGH', 'MEDIUM', 'LOW', 'WATCHLIST'] as const).map(f => {
+                        const active = convictionFilter === f;
+                        let cls = '';
+                        if (active) {
+                            if (f === 'ALL') cls = 'bg-gray-800 text-white border-gray-800';
+                            else if (f === 'WATCHLIST') cls = 'bg-[#6B9FCC] text-white border-[#6B9FCC]';
+                            else if (f === 'HIGH') cls = 'bg-emerald-500 text-white border-emerald-500';
+                            else if (f === 'MEDIUM') cls = 'bg-amber-400 text-white border-amber-400';
+                            else cls = 'bg-rose-400 text-white border-rose-400';
+                        } else {
+                            cls = 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600';
+                        }
+                        const label = f === 'ALL' ? 'All' : f === 'WATCHLIST' ? '★ Watchlist' : f === 'HIGH' ? '▲ High' : f === 'MEDIUM' ? '◆ Medium' : '▼ Low';
+                        return (
+                            <button
+                                key={f}
+                                onClick={() => setConvictionFilter(f)}
+                                className={`px-2 py-0.5 text-[10px] font-medium rounded border transition-all ${cls}`}
+                            >{label}</button>
+                        );
+                    })}
                 </div>
             </div>
 

@@ -78,7 +78,8 @@ export async function PUT(req: NextRequest) {
             sector: body.sector,
             businessProfile: body.businessProfile,
             colorTag: body.colorTag,
-            notes: body.notes
+            notes: body.notes,
+            conviction: body.conviction ?? undefined
         }
     });
 

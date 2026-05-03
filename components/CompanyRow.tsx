@@ -7,7 +7,9 @@ import { Trash2, ArrowRight, FileText } from 'lucide-react';
 import type { EnrichedCompany } from './SectorList';
 import { useAdmin } from '@/context/AdminContext';
 
-import { COLOR_THEMES, ColorThemeKey } from './SectorList';
+import { COLOR_THEMES, ColorThemeKey, CONVICTION_CONFIG, ConvictionLevel } from './SectorList';
+
+const CONVICTION_CYCLE: (ConvictionLevel | null)[] = [null, 'HIGH', 'MEDIUM', 'LOW'];
 
 // Helper to format quarter: "Q3 FY26" -> "Q3 26"
 function shortQuarter(q: string): string {
@@ -28,6 +30,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     const [localNotes, setLocalNotes] = useState('');
     const notesTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
     const notesInitialized = useRef(false);
+    const [localConviction, setLocalConviction] = useState<ConvictionLevel | null>(
+        (company.conviction as ConvictionLevel) || null
+    );
 
     // On-demand company detail.
     // The homepage ships a lightweight `company` (scalars + a minimal
@@ -103,6 +108,18 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     // Get selected quarter data
     const quarters = useMemo(() => (effective.history || []).slice(0, 2), [effective.history]);
     const selectedData = quarters[selectedQuarterIdx] || quarters[0];
+
+    const handleConvictionClick = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        const idx = CONVICTION_CYCLE.indexOf(localConviction);
+        const next = CONVICTION_CYCLE[(idx + 1) % CONVICTION_CYCLE.length];
+        setLocalConviction(next);
+        fetch('/api/companies', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: company.id, conviction: next })
+        }).catch(console.error);
+    };
 
     const handleDelete = async (e: React.MouseEvent) => {
         e.stopPropagation();
@@ -214,6 +231,19 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                     </div>
                     <div className="flex items-center gap-2 min-w-0 flex-1">
                         <span className="text-sm font-medium text-gray-800 truncate" title={company.name}>{company.name}</span>
+                        <button
+                            onClick={handleConvictionClick}
+                            title={localConviction ? `Conviction: ${localConviction} — click to change` : 'Click to set conviction'}
+                            className="flex-shrink-0"
+                        >
+                            {localConviction ? (
+                                <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded-full ${CONVICTION_CONFIG[localConviction].pill}`}>
+                                    {localConviction === 'HIGH' ? '▲' : localConviction === 'MEDIUM' ? '◆' : '▼'} {localConviction[0]}
+                                </span>
+                            ) : (
+                                <span className="text-[10px] text-gray-200 hover:text-gray-400 transition-colors leading-none">●</span>
+                            )}
+                        </button>
                     </div>
                 </div>
 

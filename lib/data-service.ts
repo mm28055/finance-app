@@ -24,6 +24,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             ticker: true,
             sector: true,
             colorTag: true,
+            conviction: true,
             marketCap: true,
             currentPrice: true,
             bookValue: true,
@@ -123,7 +124,8 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             pbRatio: co.pbRatio ? Number(co.pbRatio) : undefined,
             dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
             geminiScore: latestA?.investibilityScore ?? undefined,
-            colorTag: co.colorTag || undefined
+            colorTag: co.colorTag || undefined,
+            conviction: co.conviction || undefined
         };
 
         sectorMap.get(sName)?.companies.push(companyObj);
@@ -155,6 +157,7 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
             colorTag: true,
             businessProfile: true,
             notes: true,
+            conviction: true,
             marketCap: true,
             currentPrice: true,
             bookValue: true,
@@ -253,7 +256,8 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
         dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
         geminiScore: currentAnalysis?.investibility_score,
         colorTag: co.colorTag || undefined,
-        notes: co.notes || undefined
+        notes: co.notes || undefined,
+        conviction: co.conviction || undefined
     };
 }
 
