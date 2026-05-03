@@ -2,12 +2,11 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, ChevronRight, MessageSquare, Plus, LayoutGrid, RefreshCw } from 'lucide-react';
+import { ChevronDown, ChevronRight, MessageSquare, Plus, LayoutGrid } from 'lucide-react';
 import { useSectorChat } from '@/context/SectorChatContext';
 import { SectorSnapshot } from '@/components/SectorSnapshot';
 import { useAdmin } from '@/context/AdminContext';
 import { AddCompanyModal } from './AddCompanyModal';
-import { toast } from 'sonner';
 
 import { EnrichedCompany } from './SectorList';
 
@@ -23,7 +22,6 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
     const [isOpen, setIsOpen] = useState(defaultOpen);
     const [showSnapshot, setShowSnapshot] = useState(false);
     const [showAddModal, setShowAddModal] = useState(false);
-    const [isSyncing, setIsSyncing] = useState(false);
     const { openChat } = useSectorChat();
     const { isAdminMode } = useAdmin();
 
@@ -78,33 +76,6 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
                         title={`Chat with ${name}`}
                     >
                         <MessageSquare className="w-3 h-3" />
-                    </div>
-                    {/* Sync Financials Button - Available for all sectors */}
-                    <div
-                        onClick={async (e) => {
-                            e.stopPropagation();
-                            if (isSyncing) return;
-                            setIsSyncing(true);
-                            toast.info('Syncing financials...', { description: 'Extracting from PDFs + Screener' });
-                            try {
-                                const res = await fetch(`/api/sync/financials?sector=${encodeURIComponent(name)}`, { method: 'POST' });
-                                const data = await res.json();
-                                if (data.success) {
-                                    toast.success(`Synced ${data.count} companies`, { description: 'Refreshing to update dashboard...' });
-                                    setTimeout(() => window.location.reload(), 1500);
-                                } else {
-                                    toast.error('Sync failed', { description: data.error });
-                                }
-                            } catch (err) {
-                                toast.error('Network error');
-                            } finally {
-                                setIsSyncing(false);
-                            }
-                        }}
-                        className={`p-1 rounded transition-all cursor-pointer ${isSyncing ? 'text-[#6B9FCC] animate-spin' : 'text-gray-400 hover:text-green-600 hover:bg-green-50'}`}
-                        title="Sync Financials (Gemini + Screener)"
-                    >
-                        <RefreshCw className="w-3 h-3" />
                     </div>
                 </div>
 
