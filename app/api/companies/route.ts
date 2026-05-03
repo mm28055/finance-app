@@ -77,7 +77,8 @@ export async function PUT(req: NextRequest) {
             isin: body.isin,
             sector: body.sector,
             businessProfile: body.businessProfile,
-            colorTag: body.colorTag
+            colorTag: body.colorTag,
+            notes: body.notes
         }
     });
 

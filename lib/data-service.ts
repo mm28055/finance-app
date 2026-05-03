@@ -154,6 +154,7 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
             sector: true,
             colorTag: true,
             businessProfile: true,
+            notes: true,
             marketCap: true,
             currentPrice: true,
             bookValue: true,
@@ -251,7 +252,8 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
         pbRatio: co.pbRatio ? Number(co.pbRatio) : undefined,
         dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
         geminiScore: currentAnalysis?.investibility_score,
-        colorTag: co.colorTag || undefined
+        colorTag: co.colorTag || undefined,
+        notes: co.notes || undefined
     };
 }
 

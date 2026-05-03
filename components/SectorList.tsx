@@ -48,6 +48,7 @@ export interface EnrichedCompany {
     dividendYield?: number;
     geminiScore?: number;
     colorTag?: string;
+    notes?: string;
 }
 
 export interface SectorData {

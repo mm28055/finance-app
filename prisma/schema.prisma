@@ -20,6 +20,7 @@ model Company {
   isVisible       Boolean      @default(true)
   status          String       @default("ACTIVE")
   colorTag        String?      // Stores the custom color theme key (e.g. 'purple', 'emerald')
+  notes           String?
   createdAt       DateTime     @default(now()) @db.Timestamptz(6)
   updatedAt       DateTime     @updatedAt @db.Timestamptz(6)
   bookValue       Decimal?     @db.Decimal

@@ -1,7 +1,8 @@
 "use client";
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { FinancialMatrix } from './FinancialMatrix';
 import { AnalysisPanel } from './AnalysisPanel';
+import { FinancialTrendChart } from './FinancialTrendChart';
 import { Trash2, ArrowRight, FileText } from 'lucide-react';
 import type { EnrichedCompany } from './SectorList';
 import { useAdmin } from '@/context/AdminContext';
@@ -24,6 +25,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     const [showColorPicker, setShowColorPicker] = useState(false);
     const [customColorTag, setCustomColorTag] = useState<string | null>(company.colorTag || null);
     const [selectedQuarterIdx, setSelectedQuarterIdx] = useState(0); // 0 = latest
+    const [localNotes, setLocalNotes] = useState('');
+    const notesTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+    const notesInitialized = useRef(false);
 
     // On-demand company detail.
     // The homepage ships a lightweight `company` (scalars + a minimal
@@ -72,6 +76,26 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
             });
         return () => { cancelled = true; };
     }, [expanded, company.id, detail]);
+
+    // Initialize notes once when detail first loads.
+    useEffect(() => {
+        if (detail && !notesInitialized.current) {
+            setLocalNotes(detail.notes || '');
+            notesInitialized.current = true;
+        }
+    }, [detail]);
+
+    const handleNotesChange = (value: string) => {
+        setLocalNotes(value);
+        if (notesTimerRef.current) clearTimeout(notesTimerRef.current);
+        notesTimerRef.current = setTimeout(() => {
+            fetch('/api/companies', {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id: company.id, notes: value })
+            }).catch(console.error);
+        }, 600);
+    };
 
     // Prefer fetched detail (richer) over the light homepage object.
     const effective = detail || company;
@@ -385,7 +409,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
             {/* Expanded Content */}
             {
                 expanded && !isAdminMode && (
-                    <div className="bg-[#F8FAFC] p-4 border-t border-gray-100 flex flex-col lg:flex-row gap-4 animate-in slide-in-from-top-1 duration-150">
+                    <div className="bg-[#F8FAFC] p-4 border-t border-gray-100 flex flex-col gap-4 animate-in slide-in-from-top-1 duration-150">
                         {detailLoading && !detail ? (
                             // Skeleton while the first fetch is in flight.
                             <>
@@ -409,21 +433,43 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                             </button>
                         ) : (
                             <>
-                                <div className="flex-1">
-                                    <FinancialMatrix
-                                        financials={selectedData?.financials || effective.financials}
-                                        quarterName={selectedData?.quarter || effective.summary?.quarter}
-                                    />
+                                <div className="flex flex-col lg:flex-row gap-4">
+                                    <div className="flex-1">
+                                        <FinancialMatrix
+                                            financials={selectedData?.financials || effective.financials}
+                                            quarterName={selectedData?.quarter || effective.summary?.quarter}
+                                        />
+                                    </div>
+                                    <div className="flex-1">
+                                        <AnalysisPanel
+                                            analysis={selectedData?.analysis || effective.analysis}
+                                            quarterName={selectedData?.quarter || effective.summary?.quarter}
+                                            history={effective.history}
+                                            profile={effective.profile}
+                                            activeQuarterIndex={selectedQuarterIdx}
+                                            onQuarterChange={(idx: number) => setSelectedQuarterIdx(idx)}
+                                        />
+                                    </div>
                                 </div>
-                                <div className="flex-1">
-                                    <AnalysisPanel
-                                        analysis={selectedData?.analysis || effective.analysis}
-                                        quarterName={selectedData?.quarter || effective.summary?.quarter}
-                                        history={effective.history}
-                                        profile={effective.profile}
-                                        activeQuarterIndex={selectedQuarterIdx}
-                                        onQuarterChange={(idx: number) => setSelectedQuarterIdx(idx)}
-                                    />
+
+                                {/* Bottom Row: Trend Chart + Notes */}
+                                <div className="flex flex-col lg:flex-row gap-4">
+                                    {effective.history && effective.history.length >= 2 && (
+                                        <div className="flex-1">
+                                            <FinancialTrendChart history={effective.history} />
+                                        </div>
+                                    )}
+                                    <div className="w-full lg:w-64 flex-shrink-0">
+                                        <div className="bg-white border border-gray-200 rounded-xl p-4 h-full">
+                                            <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-2">My Notes</p>
+                                            <textarea
+                                                value={localNotes}
+                                                onChange={(e) => handleNotesChange(e.target.value)}
+                                                placeholder="Add your research notes..."
+                                                className="w-full h-28 text-xs text-gray-700 bg-transparent resize-none focus:outline-none placeholder:text-gray-300 leading-relaxed"
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
                             </>
                         )}
