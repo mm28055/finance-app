@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { X, Send, Bot, Sparkles, Trash2 } from 'lucide-react';
+import { X, Send, Bot, Sparkles, Trash2, Minus } from 'lucide-react';
 import { useSectorChat } from '@/context/SectorChatContext';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -44,6 +44,7 @@ function clearChatHistory(sector: string): void {
 
 export function SectorChat() {
     const { isOpen, activeSector, closeChat } = useSectorChat();
+    const [isMinimized, setIsMinimized] = useState(false);
     const [messages, setMessages] = useState<Message[]>([]);
     const [input, setInput] = useState("");
     const [isTyping, setIsTyping] = useState(false);
@@ -155,7 +156,7 @@ export function SectorChat() {
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 z-50 md:inset-auto md:bottom-6 md:right-6 md:w-[600px] md:h-[800px] bg-white md:rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex flex-col animate-in slide-in-from-bottom-5 duration-300 overflow-hidden">
+        <div className={`fixed inset-0 z-50 md:inset-auto md:bottom-6 md:right-6 md:w-[600px] bg-white md:rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex flex-col animate-in slide-in-from-bottom-5 duration-300 overflow-hidden ${isMinimized ? 'md:h-auto' : 'md:h-[800px]'}`}>
 
             {/* Header */}
             <div className="p-4 border-b border-gray-100 flex justify-between items-center bg-white/80 backdrop-blur-md z-10 sticky top-0">
@@ -172,7 +173,7 @@ export function SectorChat() {
                     </div>
                 </div>
                 <div className="flex items-center gap-1">
-                    {messages.length > 0 && (
+                    {messages.length > 0 && !isMinimized && (
                         <button
                             onClick={handleClearHistory}
                             className="text-gray-400 hover:text-red-500 transition-colors p-1"
@@ -181,6 +182,9 @@ export function SectorChat() {
                             <Trash2 className="w-4 h-4" />
                         </button>
                     )}
+                    <button onClick={() => setIsMinimized(m => !m)} className="text-gray-400 hover:text-gray-600 transition-colors p-1" title={isMinimized ? 'Expand' : 'Minimize'}>
+                        <Minus className="w-5 h-5" />
+                    </button>
                     <button onClick={closeChat} className="text-gray-400 hover:text-gray-600 transition-colors p-1">
                         <X className="w-5 h-5" />
                     </button>
@@ -188,7 +192,7 @@ export function SectorChat() {
             </div>
 
             {/* Chat Area - Scrollable */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-4 custom-scrollbar bg-[#FAFBFC]">
+            {!isMinimized && <div className="flex-1 overflow-y-auto p-4 space-y-4 custom-scrollbar bg-[#FAFBFC]">
                 {isLoadingHistory && (
                     <div className="flex justify-center items-center h-full">
                         <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#6B9FCC]"></div>
@@ -250,10 +254,10 @@ export function SectorChat() {
                     </div>
                 )}
                 <div ref={messagesEndRef} />
-            </div>
+            </div>}
 
             {/* Input */}
-            <div className="p-4 border-t border-gray-100 bg-white md:rounded-b-2xl">
+            {!isMinimized && <div className="p-4 border-t border-gray-100 bg-white md:rounded-b-2xl">
                 <div className="relative">
                     <input
                         type="text"
@@ -271,7 +275,7 @@ export function SectorChat() {
                         <Send className="w-4 h-4" />
                     </button>
                 </div>
-            </div>
+            </div>}
         </div>
     );
 }
