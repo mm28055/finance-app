@@ -122,60 +122,59 @@ async function logToDB(jobId: string, status: string, message: string, companyNa
 }
 
 // --- RULE 1 & 2: Rolling Window Cleanup ---
-// Keeps only the latest 2 quarters per company.
-// Deletes old Supabase PDFs + DB records (Analysis, Financials, TranscriptChunk, Transcript).
+// Transcripts/PDFs/Analysis/Chunks: keep latest 2 quarters.
+// Financials: keep latest 5 quarters (need 5 to compute YoY = same quarter last year).
 async function cleanupOldQuarters(companyId: string, companyName: string, jobId: string) {
     try {
-        // Get all transcripts for this company, sorted newest first
+        // --- Transcripts / PDFs / Analysis / Chunks: keep latest 2 ---
         const allTranscripts = await prisma.transcript.findMany({
             where: { companyId },
             include: { quarter: true },
             orderBy: [{ quarter: { year: 'desc' } }, { quarter: { q: 'desc' } }]
         });
 
-        if (allTranscripts.length <= 2) return; // Nothing to clean
+        if (allTranscripts.length > 2) {
+            const toDelete = allTranscripts.slice(2);
+            for (const old of toDelete) {
+                const qName = old.quarter.name;
 
-        // Keep the latest 2, delete the rest
-        const toDelete = allTranscripts.slice(2);
-
-        for (const old of toDelete) {
-            const qName = old.quarter.name;
-
-            // 1. Delete PDF from Supabase
-            if (old.fileUrl && old.fileUrl.startsWith('http') && supabase) {
-                try {
-                    // Extract storage path from public URL
-                    // URL format: https://xxx.supabase.co/storage/v1/object/public/Conf Call Pdfs/Sector/Quarter/File.pdf
-                    const urlParts = old.fileUrl.split(`/storage/v1/object/public/${BUCKET_NAME}/`);
-                    if (urlParts.length === 2) {
-                        const storagePath = decodeURIComponent(urlParts[1]);
-                        const { error } = await supabase.storage.from(BUCKET_NAME).remove([storagePath]);
-                        if (error) {
-                            console.error(`   ⚠️ Supabase delete failed for ${companyName} ${qName}: ${error.message}`);
-                        } else {
-                            console.log(`   🗑️ Deleted Supabase PDF: ${storagePath}`);
+                // 1. Delete PDF from Supabase
+                if (old.fileUrl && old.fileUrl.startsWith('http') && supabase) {
+                    try {
+                        const urlParts = old.fileUrl.split(`/storage/v1/object/public/${BUCKET_NAME}/`);
+                        if (urlParts.length === 2) {
+                            const storagePath = decodeURIComponent(urlParts[1]);
+                            const { error } = await supabase.storage.from(BUCKET_NAME).remove([storagePath]);
+                            if (error) {
+                                console.error(`   ⚠️ Supabase delete failed for ${companyName} ${qName}: ${error.message}`);
+                            } else {
+                                console.log(`   🗑️ Deleted Supabase PDF: ${storagePath}`);
+                            }
                         }
+                    } catch (e: any) {
+                        console.error(`   ⚠️ Supabase cleanup error: ${e.message}`);
                     }
-                } catch (e: any) {
-                    console.error(`   ⚠️ Supabase cleanup error: ${e.message}`);
                 }
+
+                // 2. Delete DB records — Financials are kept separately below
+                await prisma.transcriptChunk.deleteMany({ where: { companyId, quarterId: old.quarterId } });
+                await prisma.analysis.deleteMany({ where: { companyId, quarterId: old.quarterId } });
+                await prisma.transcript.delete({ where: { id: old.id } });
+                await logToDB(jobId, 'CLEANUP', `Deleted old ${qName} transcript/PDF/analysis`, companyName, qName);
             }
+        }
 
-            // 2. Delete DB records (order matters for FK constraints)
-            await prisma.transcriptChunk.deleteMany({
-                where: { companyId, quarterId: old.quarterId }
-            });
-            await prisma.analysis.deleteMany({
-                where: { companyId, quarterId: old.quarterId }
-            });
-            await prisma.financials.deleteMany({
-                where: { companyId, quarterId: old.quarterId }
-            });
-            await prisma.transcript.delete({
-                where: { id: old.id }
-            });
+        // --- Financials: keep latest 5 (supports YoY across all quarters) ---
+        const allFinancials = await prisma.financials.findMany({
+            where: { companyId },
+            include: { quarter: true },
+            orderBy: [{ quarter: { year: 'desc' } }, { quarter: { q: 'desc' } }]
+        });
 
-            await logToDB(jobId, 'CLEANUP', `Deleted old ${qName} data (PDF + DB)`, companyName, qName);
+        if (allFinancials.length > 5) {
+            for (const old of allFinancials.slice(5)) {
+                await prisma.financials.delete({ where: { id: old.id } });
+            }
         }
     } catch (e: any) {
         console.error(`   ⚠️ Cleanup failed for ${companyName}: ${e.message}`);
@@ -305,16 +304,37 @@ async function main() {
 
                         await prisma.transcriptChunk.deleteMany({ where: { companyId: co.id, quarterId: t.quarterId } });
                         await prisma.analysis.deleteMany({ where: { companyId: co.id, quarterId: t.quarterId } });
-                        await prisma.financials.deleteMany({ where: { companyId: co.id, quarterId: t.quarterId } });
                         await prisma.transcript.delete({ where: { id: t.id } });
-
-                        await logToDB(jobId, 'CLEANUP', `[Stale] Deleted ${qName} (gap: ${gap} quarters)`, co.name, qName);
+                        await logToDB(jobId, 'CLEANUP', `[Stale] Deleted ${qName} transcript/PDF (gap: ${gap})`, co.name, qName);
                         cleanedCount++;
                     }
                 }
             }
             console.log(`   Stale sweep done: cleaned ${cleanedCount} old transcripts.`);
             await logToDB(jobId, 'INFO', `Pre-sync stale sweep: deleted ${cleanedCount} transcripts with gap >2`);
+
+            // Separate Financials stale sweep — keep 5 quarters per company (gap > 5)
+            let financialsCleanedCount = 0;
+            for (const co of companies) {
+                const coFinancials = await prisma.financials.findMany({
+                    where: { companyId: co.id },
+                    include: { quarter: true },
+                    orderBy: [{ quarter: { year: 'desc' } }, { quarter: { q: 'desc' } }]
+                });
+                if (coFinancials.length > 5) {
+                    for (const f of coFinancials.slice(5)) {
+                        const fPos = qPos(f.quarter.year, f.quarter.q);
+                        const gap = latestPos - fPos;
+                        if (gap > 5) {
+                            await prisma.financials.delete({ where: { id: f.id } });
+                            financialsCleanedCount++;
+                        }
+                    }
+                }
+            }
+            if (financialsCleanedCount > 0) {
+                console.log(`   Financials stale sweep done: cleaned ${financialsCleanedCount} old records.`);
+            }
         } else {
             console.log(`   Only ${allQuarters.length} quarter(s) in DB — no stale sweep needed.`);
         }
