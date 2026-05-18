@@ -204,10 +204,11 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
 
     const currentAnalysis = parseAnalysis(latestA);
 
-    // Build History (same logic as before, scoped to one company)
+    // Build History — tabs are driven by transcript/analysis presence only.
+    // Financials retain a wider 5-quarter window for YoY math but must not
+    // resurrect tabs for quarters whose transcript/analysis were pruned.
     const uniqueQuarterIds = new Set<string>();
     co.analyses.forEach(a => uniqueQuarterIds.add(a.quarterId));
-    co.financials.forEach(f => uniqueQuarterIds.add(f.quarterId));
     co.transcripts.forEach(t => uniqueQuarterIds.add(t.quarterId));
 
     const history = Array.from(uniqueQuarterIds).map(qId => {

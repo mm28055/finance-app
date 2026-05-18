@@ -4,30 +4,15 @@ import { processTranscript } from '@/lib/sync-service';
 
 export async function POST(request: Request) {
     try {
-        console.log("Sync Started: Strictly filtering for Q2 & Q3 2026...");
+        console.log("Sync Started: analyzing any pending transcripts (rolling window).");
 
-        // 1. Get/Create the target Quarters
-        const targetQuarters = ["Q2 FY26", "Q3 FY26"];
-        const quarters = await Promise.all(targetQuarters.map(async (qName) => {
-            const [q, yearInput] = qName.split(' ');
-            return prisma.quarter.upsert({
-                where: { name: qName },
-                update: {},
-                create: {
-                    name: qName,
-                    year: 2026,
-                    q: q
-                }
-            });
-        }));
-
-        const quarterIds = quarters.map(q => q.id);
-
-        // 2. Find transcripts that haven't been analyzed yet for these quarters
+        // Find transcripts that haven't been analyzed yet. We no longer hardcode
+        // quarter names here — inbound transcripts are filtered upstream by the
+        // smart-sync path against the rolling window. This route simply drains
+        // anything still flagged hasAnalysis=false.
         // RESTRICTION: Only "Aerospace defence" sector as per user request
         const transcripts = await prisma.transcript.findMany({
             where: {
-                quarterId: { in: quarterIds },
                 hasAnalysis: false,
                 company: {
                     sector: "Aerospace defence"

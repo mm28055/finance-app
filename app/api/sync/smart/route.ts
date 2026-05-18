@@ -4,6 +4,7 @@ import path from 'path';
 import https from 'https';
 import { prisma } from '@/lib/prisma';
 import { analyzeTranscript } from '@/lib/ai-analyst';
+import { shouldAcceptQuarter, pruneCompanyToWindow, quarterScore } from '@/lib/quarters';
 
 // pdf-parse doesn't have a good ESM export, using require
 const pdf = require('pdf-parse');
@@ -117,29 +118,39 @@ export async function POST(req: NextRequest) {
         for (const co of companies) {
             if (!co.isin) continue;
 
-            // OPTIMIZATION: Check if we ALREADY have the latest Q3 2026 transcript
-            // If we do, skip the expensive Tijori API call entirely.
-            const latestQ = await prisma.quarter.findFirst({ where: { name: 'Q3 2026' } });
-            if (latestQ) {
-                const existing = await prisma.transcript.findFirst({
-                    where: { companyId: co.id, quarterId: latestQ.id, hasAnalysis: true }
-                });
-                if (existing) {
-                    // console.log(`[Sync] Skipping ${co.name} - Already has Q3 2026 Analysis.`);
-                    continue;
-                }
-            }
-
             try {
                 // Only hit API if we are missing data
                 const response: any = await fetchFromTijori(co.isin);
                 const list = Array.isArray(response) ? response : (response?.data || []);
 
+                // Compute the newest fiscal quarter Tijori reports for this company.
+                // If we already have an analyzed transcript at-or-newer than that
+                // quarter, skip the company entirely.
+                const tijoriScores = list
+                    .filter((it: any) => it.transcript && it.concall_event_time)
+                    .map((it: any) => quarterScore(getFinancialQuarter(it.concall_event_time)));
+                const newestAvailable = tijoriScores.length ? Math.max(...tijoriScores) : 0;
+
+                if (newestAvailable > 0) {
+                    const ourLatestAnalyzed = await prisma.transcript.findFirst({
+                        where: { companyId: co.id, hasAnalysis: true },
+                        include: { quarter: true },
+                        orderBy: [{ quarter: { year: 'desc' } }, { quarter: { q: 'desc' } }]
+                    });
+                    if (ourLatestAnalyzed && quarterScore(ourLatestAnalyzed.quarter.name) >= newestAvailable) {
+                        continue;
+                    }
+                }
+
                 for (const item of list) {
                     if (!item.transcript) continue;
 
                     const fyqName = getFinancialQuarter(item.concall_event_time);
-                    if (fyqName !== 'Q3 2026' && fyqName !== 'Q2 2026') continue;
+                    // Rolling-window filter: accept only quarters at or newer than
+                    // the older of this company's latest 2 stored quarters. For a
+                    // company with no transcripts yet, everything is accepted.
+                    const accept = await shouldAcceptQuarter(co.id, fyqName);
+                    if (!accept) continue;
 
                     const quarter = await prisma.quarter.upsert({
                         where: { name: fyqName },
@@ -267,6 +278,11 @@ export async function POST(req: NextRequest) {
                                 }
                             })
                         ]);
+
+                        // Rolling-window cleanup: prune anything outside latest 2 quarters
+                        // (5 for financials). Without this, manually-resurrected quarter
+                        // rows from prior buggy runs would keep rendering UI tabs.
+                        await pruneCompanyToWindow(co.id);
 
                         analysisCount++;
                     } catch (aiError) {

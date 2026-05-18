@@ -2,6 +2,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { processTranscript } from '@/lib/sync-service';
+import { pruneCompanyToWindow } from '@/lib/quarters';
 import { createClient } from '@supabase/supabase-js';
 
 // Vercel Serverless Config
@@ -90,10 +91,11 @@ export async function POST(req: NextRequest) {
             }
         });
 
-        // 6. Trigger Analysis
-        processTranscript(transcript.id).catch(err =>
-            console.error(`Manual Analysis Failed for ${company.name}:`, err)
-        );
+        // 6. Trigger Analysis, then prune to rolling window so older quarters
+        // don't keep showing up as tabs in the UI.
+        processTranscript(transcript.id)
+            .then(() => pruneCompanyToWindow(company.id))
+            .catch(err => console.error(`Manual Analysis Failed for ${company.name}:`, err));
 
         // 7. AUTO-INGEST into RAG (New Step)
         try {
