@@ -464,14 +464,11 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                         ) : (
                             <>
                                 <div className="flex flex-col lg:flex-row gap-4">
-                                    <div className="flex-1 flex flex-col gap-4">
+                                    <div className="flex-1 flex flex-col">
                                         <FinancialMatrix
                                             financials={selectedData?.financials || effective.financials}
                                             quarterName={selectedData?.quarter || effective.summary?.quarter}
                                         />
-                                        {effective.history && effective.history.length >= 2 && (
-                                            <FinancialTrendChart history={effective.history} />
-                                        )}
                                         <div className="bg-white border border-gray-200 rounded-xl p-4">
                                             <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-2">My Notes</p>
                                             <textarea
@@ -481,6 +478,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                                 className="w-full h-28 text-xs text-gray-700 bg-transparent resize-none focus:outline-none placeholder:text-gray-300 leading-relaxed"
                                             />
                                         </div>
+                                        {effective.history && effective.history.length >= 2 && (
+                                            <FinancialTrendChart history={effective.history} />
+                                        )}
                                     </div>
                                     <div className="flex-1">
                                         <AnalysisPanel
