@@ -179,7 +179,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
         <div className="border-b border-gray-100 last:border-0 relative">
             {/* Compact Row */}
             <div
-                onClick={() => !isAdminMode && setExpanded(!expanded)}
+                onClick={() => setExpanded(!expanded)}
                 className={`flex items-center px-4 py-2.5 bg-white ${!isAdminMode ? 'hover:bg-[#F8FAFC] cursor-pointer' : ''} transition-colors group overflow-x-auto md:overflow-visible`}
             >
                 {/* Company Info - Single Line */}
@@ -339,12 +339,10 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                     )}
                 </div>
 
-                {/* Expand Arrow (View Mode) */}
-                {!isAdminMode && (
-                    <div className="flex items-center flex-shrink-0">
-                        <ArrowRight className={`w-3.5 h-3.5 text-gray-300 group-hover:text-[#6B9FCC] transition-colors ${expanded ? 'rotate-90' : ''}`} />
-                    </div>
-                )}
+                {/* Expand Arrow */}
+                <div className="flex items-center flex-shrink-0">
+                    <ArrowRight className={`w-3.5 h-3.5 text-gray-300 group-hover:text-[#6B9FCC] transition-colors ${expanded ? 'rotate-90' : ''}`} />
+                </div>
 
                 {/* Admin Controls */}
                 {isAdminMode && (
@@ -438,7 +436,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
 
             {/* Expanded Content */}
             {
-                expanded && !isAdminMode && (
+                expanded && (
                     <div className="bg-[#F8FAFC] p-4 border-t border-gray-100 flex flex-col gap-4 animate-in slide-in-from-top-1 duration-150">
                         {detailLoading && !detail ? (
                             // Skeleton while the first fetch is in flight.
