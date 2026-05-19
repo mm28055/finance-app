@@ -22,6 +22,7 @@ model Company {
   colorTag        String?      // Stores the custom color theme key (e.g. 'purple', 'emerald')
   notes           String?
   conviction      String?      // 'HIGH' | 'MEDIUM' | 'LOW' | null
+  isWatched       Boolean      @default(false)
   createdAt       DateTime     @default(now()) @db.Timestamptz(6)
   updatedAt       DateTime     @updatedAt @db.Timestamptz(6)
   bookValue       Decimal?     @db.Decimal
