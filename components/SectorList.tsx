@@ -201,7 +201,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                     name={s.sector}
                     count={s.companies.length}
                     companies={s.companies}
-                    defaultOpen={searchQuery.length > 0}
+                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL'}
                 >
                     {s.companies.map(co => (
                         <CompanyRow key={co.ticker} company={co} colorTheme={COLOR_THEMES.blue} />
