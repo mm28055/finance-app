@@ -73,7 +73,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
 
 
     const [sortBy, setSortBy] = useState<'marketCap' | 'gemini'>('gemini');
-    const [convictionFilter, setConvictionFilter] = useState<'ALL' | 'HIGH' | 'MEDIUM' | 'LOW' | 'WATCHLIST'>('ALL');
+    const [convictionFilter, setConvictionFilter] = useState<'ALL' | 'HIGH' | 'MEDIUM' | 'LOW'>('ALL');
 
     // Register all sector names in context
     useEffect(() => {
@@ -101,9 +101,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
         if (convictionFilter !== 'ALL') {
             result = result.map(sector => ({
                 ...sector,
-                companies: sector.companies.filter(co =>
-                    convictionFilter === 'WATCHLIST' ? !!co.conviction : co.conviction === convictionFilter
-                )
+                companies: sector.companies.filter(co => co.conviction === convictionFilter)
             })).filter(sector => sector.companies.length > 0);
         }
 
@@ -167,19 +165,18 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                 {/* Row 2: Conviction Filter */}
                 <div className="flex items-center gap-1.5">
                     <span className="text-[9px] text-gray-400 font-medium uppercase tracking-wider mr-0.5">Conviction:</span>
-                    {(['ALL', 'HIGH', 'MEDIUM', 'LOW', 'WATCHLIST'] as const).map(f => {
+                    {(['ALL', 'HIGH', 'MEDIUM', 'LOW'] as const).map(f => {
                         const active = convictionFilter === f;
                         let cls = '';
                         if (active) {
                             if (f === 'ALL') cls = 'bg-gray-800 text-white border-gray-800';
-                            else if (f === 'WATCHLIST') cls = 'bg-[#6B9FCC] text-white border-[#6B9FCC]';
                             else if (f === 'HIGH') cls = 'bg-emerald-500 text-white border-emerald-500';
                             else if (f === 'MEDIUM') cls = 'bg-amber-400 text-white border-amber-400';
                             else cls = 'bg-rose-400 text-white border-rose-400';
                         } else {
                             cls = 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600';
                         }
-                        const label = f === 'ALL' ? 'All' : f === 'WATCHLIST' ? '★ Watchlist' : f === 'HIGH' ? '▲ High' : f === 'MEDIUM' ? '◆ Medium' : '▼ Low';
+                        const label = f === 'ALL' ? 'All' : f === 'HIGH' ? '▲ High' : f === 'MEDIUM' ? '◆ Medium' : '▼ Low';
                         return (
                             <button
                                 key={f}
