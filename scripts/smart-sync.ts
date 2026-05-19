@@ -371,6 +371,28 @@ async function main() {
                 return ta - tb;
             });
 
+            // Staleness gate: if this company's newest concall is older than 6
+            // months, skip the whole company. Prevents downloading ancient
+            // transcripts for companies that have stopped filing (e.g. Timken
+            // India whose latest is Q1 FY26 from Aug 2025).
+            const STALENESS_MS = 1000 * 60 * 60 * 24 * 30 * 6; // ~6 months
+            const newestDateMs = list.reduce((max: number, it: any) => {
+                if (!it.transcript || typeof it.transcript !== 'string' || !it.transcript.startsWith('http')) return max;
+                const t = new Date(it.concall_event_time || 0).getTime();
+                return Number.isFinite(t) && t > max ? t : max;
+            }, 0);
+            if (newestDateMs === 0) {
+                await logToDB(jobId, 'SKIPPED', 'No usable concall from Tijori', co.name);
+                await sleep(1000);
+                continue;
+            }
+            if (Date.now() - newestDateMs > STALENESS_MS) {
+                const ageMonths = ((Date.now() - newestDateMs) / (1000 * 60 * 60 * 24 * 30)).toFixed(1);
+                await logToDB(jobId, 'SKIPPED', `Stale data — newest concall is ${ageMonths} months old`, co.name);
+                await sleep(1000);
+                continue;
+            }
+
             // Rolling-window inbound filter: only the latest 2 quarters Tijori
             // has for THIS company are eligible. Prevents wasted Q1/Q2 work for
             // brand-new companies and stops re-downloading old quarters once
