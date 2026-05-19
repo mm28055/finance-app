@@ -1,28 +1,32 @@
 import { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
+// Single-admin app: credentials are read from environment variables so they
+// don't sit in source control. Next-auth's built-in /api/auth/signin page
+// handles the form — no custom page needed.
 export const authOptions: NextAuthOptions = {
     providers: [
         CredentialsProvider({
             name: "Credentials",
             credentials: {
-                email: { label: "Email", type: "text", placeholder: "user@tijori.com" },
+                email: { label: "Email", type: "text" },
                 password: { label: "Password", type: "password" }
             },
-            async authorize(credentials, req) {
-                // Mock Auth for Local Development
-                // in a real app, you'd check prisma db here
-                if (credentials?.email === "admin@tijori.com" && credentials?.password === "admin") {
-                    return { id: "1", name: "Tijori Admin", email: "admin@tijori.com" }
+            async authorize(credentials) {
+                const expectedEmail = process.env.ADMIN_EMAIL;
+                const expectedPassword = process.env.ADMIN_PASSWORD;
+                if (!expectedEmail || !expectedPassword) return null;
+                if (
+                    credentials?.email === expectedEmail &&
+                    credentials?.password === expectedPassword
+                ) {
+                    return { id: "1", name: "Admin", email: expectedEmail };
                 }
-                return null
+                return null;
             }
         })
     ],
     session: {
         strategy: "jwt"
-    },
-    pages: {
-        signIn: '/auth/signin', // Custom signin page if we want later
     }
 };

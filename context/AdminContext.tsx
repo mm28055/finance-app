@@ -1,6 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { useSession, signIn, signOut } from "next-auth/react";
 
 interface AdminContextType {
     isAdminMode: boolean;
@@ -14,31 +15,18 @@ interface AdminContextType {
 const AdminContext = createContext<AdminContextType | undefined>(undefined);
 
 export function AdminProvider({ children }: { children: ReactNode }) {
-    const [isAdminMode, setAdminMode] = useState(false);
+    const { status } = useSession();
+    const isAdminMode = status === "authenticated";
     const [allSectors, setAllSectors] = useState<string[]>([]);
     const [refreshFn, setRefreshFn] = useState<(() => void) | null>(null);
 
-    // Initial Check
-    React.useEffect(() => {
-        const isUnlocked = localStorage.getItem('admin_secret') === 'tattva_master';
-        if (isUnlocked) setAdminMode(true);
-    }, []);
-
-    // Also listen for manual toggle
-    const toggleAdmin = (val: boolean) => {
+    // Toggling admin mode = signing in / out via next-auth. The session cookie
+    // is the source of truth; localStorage is no longer used.
+    const setAdminMode = (val: boolean) => {
         if (val) {
-            // Setting to True - Ensure unlocked
-            const isUnlocked = localStorage.getItem('admin_secret') === 'tattva_master';
-            if (isUnlocked) {
-                setAdminMode(true);
-            } else {
-                // If not unlocked, maybe prompt? Or for now just deny.
-                // Actually, let's allow setting it if they are clicking the toggle, assuming the toggle is only visible if unlocked.
-                // But if they are just toggling 'off', clear it?
-                setAdminMode(val);
-            }
+            signIn();
         } else {
-            setAdminMode(false);
+            signOut();
         }
     };
 

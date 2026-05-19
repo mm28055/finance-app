@@ -76,32 +76,28 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
                     </div>
                 </div>
 
-                {/* Admin Toggle (Only visible if unlocked) */}
-                {/* Secret Unlock: Visit /?unlock=tattva to reveal */}
-                {typeof window !== 'undefined' && (localStorage.getItem('admin_secret') === 'tattva_master' || new URLSearchParams(window.location.search).get('unlock') === 'tattva') && (
-                    <div className="p-4 border-t border-gray-100 bg-gray-50/50">
-                        <div className="flex items-center justify-between mb-3">
-                            <span className="text-[10px] font-medium text-gray-500 flex items-center gap-1.5">
-                                <ShieldAlert className="w-3 h-3" />
-                                Edit Mode
-                            </span>
-                            <button
-                                onClick={() => {
-                                    // Persist unlock
-                                    localStorage.setItem('admin_secret', 'tattva_master');
-                                    setAdminMode(!isAdminMode);
-                                }}
-                                className={cn(
-                                    "w-8 h-4 rounded-full relative transition-colors duration-200 ease-in-out",
-                                    isAdminMode ? "bg-[#6B9FCC]" : "bg-gray-300"
-                                )}
-                            >
-                                <div className={cn(
-                                    "w-3 h-3 bg-white rounded-full absolute top-0.5 transition-transform duration-200 shadow-sm",
-                                    isAdminMode ? "translate-x-4" : "translate-x-0.5"
-                                )}></div>
-                            </button>
-                        </div>
+                {/* Admin Toggle — clicking when off triggers next-auth sign-in;
+                    clicking when on signs out. Anyone sees the toggle, but only
+                    valid credentials unlock edit mode. */}
+                <div className="p-4 border-t border-gray-100 bg-gray-50/50">
+                    <div className="flex items-center justify-between mb-3">
+                        <span className="text-[10px] font-medium text-gray-500 flex items-center gap-1.5">
+                            <ShieldAlert className="w-3 h-3" />
+                            {isAdminMode ? 'Edit Mode' : 'Sign in to edit'}
+                        </span>
+                        <button
+                            onClick={() => setAdminMode(!isAdminMode)}
+                            className={cn(
+                                "w-8 h-4 rounded-full relative transition-colors duration-200 ease-in-out",
+                                isAdminMode ? "bg-[#6B9FCC]" : "bg-gray-300"
+                            )}
+                        >
+                            <div className={cn(
+                                "w-3 h-3 bg-white rounded-full absolute top-0.5 transition-transform duration-200 shadow-sm",
+                                isAdminMode ? "translate-x-4" : "translate-x-0.5"
+                            )}></div>
+                        </button>
+                    </div>
                         {isAdminMode && (
                             <div className="mt-4 space-y-2 border-t border-gray-100 pt-4">
                                 <div className="text-[10px] text-gray-400 font-medium uppercase mb-2 tracking-wider">Sync Controls</div>
@@ -139,8 +135,7 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
                                 </button>
                             </div>
                         )}
-                    </div>
-                )}
+                </div>
 
             </aside>
             {showPromptEditor && <PromptEditor onClose={() => setShowPromptEditor(false)} />}

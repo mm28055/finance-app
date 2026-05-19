@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
 
-// GET: List all companies
+// GET: List all companies (open to all visitors)
 export async function GET() {
     const companies = await prisma.company.findMany({
         orderBy: { sector: 'asc' }
@@ -9,8 +11,12 @@ export async function GET() {
     return NextResponse.json(companies);
 }
 
-// POST: Add new company
+// POST: Add new company (auth required)
 export async function POST(req: NextRequest) {
+    const session = await getServerSession(authOptions);
+    if (!session) {
+        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
     const body = await req.json();
 
     // Validate required fields
@@ -42,8 +48,12 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: true, company: newCompany });
 }
 
-// DELETE: Remove company by ID
+// DELETE: Remove company by ID (auth required)
 export async function DELETE(req: NextRequest) {
+    const session = await getServerSession(authOptions);
+    if (!session) {
+        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
     const { searchParams } = new URL(req.url);
     const id = searchParams.get('id');
 
@@ -61,8 +71,12 @@ export async function DELETE(req: NextRequest) {
     return NextResponse.json({ success: true });
 }
 
-// PUT: Update company (change sector, name, etc.)
+// PUT: Update company (change sector, notes, conviction, etc.) — auth required
 export async function PUT(req: NextRequest) {
+    const session = await getServerSession(authOptions);
+    if (!session) {
+        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
     const body = await req.json();
 
     if (!body.id) {
