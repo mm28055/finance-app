@@ -655,7 +655,7 @@ export async function getTranscriptStats() {
             { year: 'desc' },
             { q: 'desc' },
         ],
-        take: 3,
+        take: 2,
         include: {
             _count: {
                 select: { transcripts: true }
