@@ -102,6 +102,15 @@ function getFinancialQuarter(dateStr: string) {
     return `${q} FY${fy.toString().slice(-2)}`;
 }
 
+// Numeric ordering score for "Q3 FY26" — higher means newer.
+function quarterScore(name: string): number {
+    const parts = name.split(' ');
+    if (parts.length < 2) return 0;
+    const q = parseInt(parts[0].replace('Q', '')) || 0;
+    const fy = parseInt(parts[1].replace('FY', '')) || 0;
+    return fy * 10 + q;
+}
+
 
 // Helper for DB Logging
 async function logToDB(jobId: string, status: string, message: string, companyName?: string, quarter?: string) {
@@ -362,6 +371,16 @@ async function main() {
                 return ta - tb;
             });
 
+            // Rolling-window inbound filter: only the latest 2 quarters Tijori
+            // has for THIS company are eligible. Prevents wasted Q1/Q2 work for
+            // brand-new companies and stops re-downloading old quarters once
+            // newer ones have arrived.
+            const allScores: number[] = list
+                .filter((it: any) => it.transcript && typeof it.transcript === 'string' && it.transcript.startsWith('http') && it.concall_event_time)
+                .map((it: any) => quarterScore(getFinancialQuarter(it.concall_event_time)));
+            const uniqueDesc: number[] = Array.from(new Set(allScores)).sort((a, b) => b - a);
+            const top2Scores: Set<number> = new Set(uniqueDesc.slice(0, 2));
+
             for (const item of list) {
                 let link = item.transcript;
                 if (!link || !link.startsWith('http')) continue;
@@ -377,14 +396,9 @@ async function main() {
                 const rawYear = parseInt(fyq.split('FY')[1]);
                 const qYear = 2000 + rawYear;
 
-                // STRICT FILTER: Q2 FY26 or later (As per user logic)
-                // FY26 = 2026.
-                // qYear is the Calendar Year of the FY end? No, getFinancialQuarter returns FY end year.
-                // Ex: Oct 2025 -> Q3 FY26. getFinancialQuarter logic: m=9 (Oct), fy=2026. Correct.
-
-                const isFY26OrLater = qYear > 2026 || (qYear === 2026 && (qType === 'Q2' || qType === 'Q3' || qType === 'Q4'));
-
-                if (!isFY26OrLater) continue;
+                // Skip anything outside the latest 2 quarters Tijori reports
+                // for this company.
+                if (!top2Scores.has(quarterScore(fyq))) continue;
 
                 // Setup Paths
                 const sectorFolder = (co.sector || 'Unsorted');
