@@ -100,6 +100,11 @@ export async function processTranscript(transcriptId: string) {
         return { success: false, error: 'NO_TEXT_AVAILABLE' };
     }
 
+    // Some PDFs extract with embedded null bytes (0x00). Postgres rejects these
+    // in any text column ("invalid byte sequence for encoding UTF8: 0x00"),
+    // which would abort the save transaction. Strip them before use.
+    textToAnalyze = textToAnalyze.replace(/\u0000/g, '');
+
     // 2. Get Previous Quarter Data for Context
     // Q4→Q3, Q3→Q2, Q2→Q1 (same year), Q1→Q4 (previous year)
     const getPrevQuarterInfo = (currentQ: string, currentYear: number) => {
