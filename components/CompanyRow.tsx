@@ -310,7 +310,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                             setSelectedQuarterIdx(idx);
                                             setExpanded(true);
                                         }}
-                                        className={`px-2 py-0.5 text-[9px] font-semibold rounded-l transition-all flex items-center gap-1 border-y border-l ${idx === selectedQuarterIdx
+                                        className={`px-2 py-0.5 text-[9px] font-semibold rounded-l transition-all flex items-center gap-1 border-y border-l whitespace-nowrap flex-shrink-0 ${idx === selectedQuarterIdx
                                             ? 'bg-[#6B9FCC] text-white border-[#6B9FCC]'
                                             : 'bg-white text-gray-500 border-gray-200 hover:bg-[#F1F5F9] hover:text-[#6B9FCC]'
                                             }`}
