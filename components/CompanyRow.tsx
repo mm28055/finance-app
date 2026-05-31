@@ -277,13 +277,20 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                 </div>
                             )}
                             {company.geminiScore !== undefined && (
-                                <div className="flex items-center gap-1.5 px-1.5 py-0.5 bg-[#F0F9FF] rounded border border-[#BAE6FD]">
+                                <div className="flex items-center gap-1 px-1.5 py-0.5 bg-[#F0F9FF] rounded border border-[#BAE6FD]">
 
                                     <span className={`text-[10px] font-bold ${company.geminiScore >= 80 ? 'text-emerald-600' :
                                         company.geminiScore >= 50 ? 'text-amber-600' : 'text-red-500'
                                         }`}>
                                         {company.geminiScore}/100
                                     </span>
+                                    {company.geminiScoreDelta !== undefined && (
+                                        <span className={`text-[10px] font-semibold ${company.geminiScoreDelta > 0 ? 'text-emerald-600' :
+                                            company.geminiScoreDelta < 0 ? 'text-red-500' : 'text-gray-400'
+                                            }`}>
+                                            ({company.geminiScoreDelta > 0 ? '+' : ''}{company.geminiScoreDelta})
+                                        </span>
+                                    )}
                                 </div>
                             )}
                         </div>

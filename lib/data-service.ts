@@ -57,7 +57,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
                     { quarter: { year: 'desc' } },
                     { quarter: { q: 'desc' } }
                 ],
-                take: 1,
+                take: 2, // latest + immediately-previous, for score delta
                 select: {
                     investibilityScore: true,
                     quarter: { select: { name: true } }
@@ -95,6 +95,14 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
         const latestF = co.financials[0];
         const latestPrevF = co.financials.length > 1 ? co.financials[1] : null;
         const latestA = co.analyses[0];
+        const prevA = co.analyses.length > 1 ? co.analyses[1] : null;
+        // Delta vs the immediately-previous quarter. Only computed when BOTH
+        // quarters have a score; otherwise left undefined so the UI shows the
+        // score with no delta (instead of a misleading "+88").
+        const geminiScoreDelta =
+            latestA?.investibilityScore != null && prevA?.investibilityScore != null
+                ? latestA.investibilityScore - prevA.investibilityScore
+                : undefined;
 
         // Minimal history: quarter + pdfUrl only, so the row can show PDF icons.
         // Full analysis + financials per quarter are filled in by getCompanyDetail
@@ -124,6 +132,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             pbRatio: co.pbRatio ? Number(co.pbRatio) : undefined,
             dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
             geminiScore: latestA?.investibilityScore ?? undefined,
+            geminiScoreDelta,
             colorTag: co.colorTag || undefined,
             conviction: co.conviction || undefined
         };
@@ -200,9 +209,15 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
 
     const latestF = co.financials[0];
     const latestA = co.analyses[0];
+    const prevA = co.analyses.length > 1 ? co.analyses[1] : null;
     const latestPrevF = co.financials.length > 1 ? co.financials[1] : null;
 
     const currentAnalysis = parseAnalysis(latestA);
+    // Delta vs immediately-previous quarter; undefined unless both are scored.
+    const geminiScoreDelta =
+        latestA?.investibilityScore != null && prevA?.investibilityScore != null
+            ? latestA.investibilityScore - prevA.investibilityScore
+            : undefined;
 
     // Build History — tabs are driven by transcript/analysis presence only.
     // Financials retain a wider 5-quarter window for YoY math but must not
@@ -256,6 +271,7 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
         pbRatio: co.pbRatio ? Number(co.pbRatio) : undefined,
         dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
         geminiScore: currentAnalysis?.investibility_score,
+        geminiScoreDelta,
         colorTag: co.colorTag || undefined,
         notes: co.notes || undefined,
         conviction: co.conviction || undefined
@@ -435,6 +451,12 @@ export async function getDashboardData(): Promise<SectorData[]> {
 
         const latestF = co.financials[0];
         const latestA = co.analyses[0];
+        const prevA = co.analyses.length > 1 ? co.analyses[1] : null;
+        // Delta vs immediately-previous quarter; undefined unless both are scored.
+        const geminiScoreDelta =
+            latestA?.investibilityScore != null && prevA?.investibilityScore != null
+                ? latestA.investibilityScore - prevA.investibilityScore
+                : undefined;
 
         // 1. Helper to parse AI Analysis JSON
         const parseAnalysis = (a: any): AnalysisResult | undefined => {
@@ -634,6 +656,7 @@ export async function getDashboardData(): Promise<SectorData[]> {
             pbRatio: co.pbRatio ? Number(co.pbRatio) : undefined,
             dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
             geminiScore: currentAnalysis?.investibility_score,
+            geminiScoreDelta,
             colorTag: co.colorTag || undefined
         };
 
