@@ -62,6 +62,7 @@ export async function DELETE(req: NextRequest) {
     }
 
     // Delete related records first (cascade)
+    await prisma.transcriptChunk.deleteMany({ where: { companyId: id } });
     await prisma.transcript.deleteMany({ where: { companyId: id } });
     await prisma.financials.deleteMany({ where: { companyId: id } });
     await prisma.analysis.deleteMany({ where: { companyId: id } });
