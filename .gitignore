@@ -68,3 +68,6 @@ Concalls/
 # Temporary data
 temp/
 
+# Timestamped profile backups written by the enrichment scripts
+scripts/.profile-backup-*.json
+
