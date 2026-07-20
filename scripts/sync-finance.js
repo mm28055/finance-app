@@ -151,19 +151,49 @@ async function fetchScreener(company) {
 }
 
 // ================= HYBRID SYNC =================
+// Optional CLI filter: `--company <isin|ticker|name>` (repeatable) forces a
+// sync for the matching companies regardless of lastFinanceSync freshness.
+// Without it, behaviour is unchanged: sweep every visible company that is
+// null/stale (>12h).
+function parseFilters() {
+    const args = process.argv.slice(2);
+    const filters = [];
+    for (let i = 0; i < args.length; i++) {
+        if ((args[i] === '--company' || args[i] === '-c') && args[i + 1]) {
+            filters.push(args[i + 1].trim());
+            i++;
+        }
+    }
+    return filters;
+}
+
 async function syncFinance() {
+    const filters = parseFilters();
+
     const yesterday = new Date();
     yesterday.setHours(yesterday.getHours() - 12); // Sync if not updated in last 12 hours
 
-    const companies = await prisma.company.findMany({
-        where: {
+    const where = filters.length > 0
+        ? {
+            OR: filters.flatMap(f => [
+                { isin: f },
+                { ticker: { equals: f, mode: 'insensitive' } },
+                { name: { contains: f, mode: 'insensitive' } },
+            ]),
+        }
+        : {
             isVisible: true,
             OR: [
                 { lastFinanceSync: null },
-                { lastFinanceSync: { lt: yesterday } }
-            ]
-        }
-    });
+                { lastFinanceSync: { lt: yesterday } },
+            ],
+        };
+
+    const companies = await prisma.company.findMany({ where });
+
+    if (filters.length > 0) {
+        console.log(`🎯 Targeted finance sync for filters: ${filters.join(', ')}`);
+    }
 
     console.log(`🚀 Starting hybrid finance sync for ${companies.length} companies...\n`);
 
