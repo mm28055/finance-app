@@ -105,6 +105,19 @@ export async function processTranscript(transcriptId: string) {
     // which would abort the save transaction. Strip them before use.
     textToAnalyze = textToAnalyze.replace(/\u0000/g, '');
 
+    // Guard: skip placeholders / non-transcripts. Tijori sometimes lists a
+    // 1-page exchange intimation ("transcript to follow") in the transcript
+    // field before the real transcript is uploaded. Analyzing that yields a
+    // meaningless score/financials, so bail out WITHOUT marking hasAnalysis —
+    // a later sync can retry once the full transcript is available. Real
+    // concall transcripts run ~30k-90k chars; placeholders are well under 2k.
+    const MIN_TRANSCRIPT_CHARS = 5000;
+    const contentChars = textToAnalyze.replace(/\s+/g, ' ').trim().length;
+    if (contentChars < MIN_TRANSCRIPT_CHARS) {
+        console.warn(`  -> [Skipped] Transcript too short for ${transcript.company.name} (${contentChars} chars < ${MIN_TRANSCRIPT_CHARS}). Likely a placeholder, not a real transcript.`);
+        return { success: false, error: 'TRANSCRIPT_TOO_SHORT', chars: contentChars };
+    }
+
     // 2. Get Previous Quarter Data for Context
     // Q4→Q3, Q3→Q2, Q2→Q1 (same year), Q1→Q4 (previous year)
     const getPrevQuarterInfo = (currentQ: string, currentYear: number) => {
