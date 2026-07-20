@@ -14,21 +14,27 @@ export async function generatePenetratingProfile(ticker: string) {
     console.log(`\n🚀 Generating Penetrating Profile for: ${ticker}`);
 
     // 1. Fetch Company & Transcripts
-    const company = await prisma.company.findFirst({
-        where: {
-            OR: [
-                { ticker: ticker },
-                { name: { contains: ticker } } // Flexible search
-            ]
-        },
-        include: {
-            transcripts: {
-                orderBy: { createdAt: 'desc' },
-                take: 2,
-                include: { quarter: true }
-            }
+    // Resolve by EXACT ticker (unique) first, then fall back to an EXACT name
+    // match. Do NOT use `name contains ticker` — a substring match mis-resolves
+    // to the wrong company (e.g. "CCL" -> "OCCL", "Borosil" -> "Borosil
+    // Renewables"), silently skipping the intended company.
+    const transcriptInclude = {
+        transcripts: {
+            orderBy: { createdAt: 'desc' as const },
+            take: 2,
+            include: { quarter: true }
         }
+    };
+    let company = await prisma.company.findUnique({
+        where: { ticker },
+        include: transcriptInclude
     });
+    if (!company) {
+        company = await prisma.company.findFirst({
+            where: { name: ticker },
+            include: transcriptInclude
+        });
+    }
 
     if (!company) {
         console.error(`❌ Company '${ticker}' not found in database.`);
