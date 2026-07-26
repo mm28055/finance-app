@@ -1,4 +1,10 @@
 
+// MUST stay the first import. `import` statements are hoisted and run before any
+// top-level require(), so a mid-file require('dotenv').config() executes AFTER
+// lib/gemini has already read process.env — meaning the API keys would load as an
+// accident of import order (lib/prisma happens to pull .env in first today). One
+// reorder and Gemini would silently start with zero keys.
+import 'dotenv/config';
 import fs from 'fs';
 import path from 'path';
 import https from 'https';
@@ -7,6 +13,7 @@ import https from 'https';
 // Node process alive after the sync finishes (the script appears to hang).
 import { prisma } from '../lib/prisma';
 import { processTranscript } from '../lib/sync-service';
+import { updateCompanyProfile } from '../lib/profile-service';
 import { pruneCompany, TRANSCRIPT_WINDOW, ANALYSIS_WINDOW, FINANCIALS_WINDOW } from '../lib/retention';
 
 const TIJORI_API_KEY = "c74d557ef1cf4464820666dfb7dbc9e1";
@@ -14,16 +21,15 @@ const BASE_URL = "https://www.tijoristack.ai/api/v1";
 const CONCALLS_DIR = path.join(process.cwd(), 'Concalls');
 
 // How many companies are processed at once. Companies are independent, so this is
-// safe; the practical ceiling is the Gemini rate limit, not the code. Override
-// with --concurrency=N.
-const DEFAULT_CONCURRENCY = 3;
+// safe; the practical ceiling is the Gemini rate limit, not the code — budget
+// roughly 3 companies per API key. Override with --concurrency=N.
+const DEFAULT_CONCURRENCY = 6;
 
 // Helper for sleep
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
-// Supabase Setup
+// Supabase Setup (env already loaded by the dotenv/config import at the top)
 import { createClient } from '@supabase/supabase-js';
-require('dotenv').config();
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -188,6 +194,7 @@ function parseArgs() {
     const args = process.argv.slice(2);
     let companyFilter: string | null = null;
     let sweep = false;
+    let withProfiles = false;
     let concurrency = DEFAULT_CONCURRENCY;
     for (let i = 0; i < args.length; i++) {
         if ((args[i] === '--company' || args[i] === '-c') && args[i + 1]) {
@@ -195,6 +202,8 @@ function parseArgs() {
             i++;
         } else if (args[i] === '--sweep') {
             sweep = true;
+        } else if (args[i] === '--with-profiles') {
+            withProfiles = true;
         } else if (args[i].startsWith('--concurrency=')) {
             concurrency = parseInt(args[i].split('=')[1]) || DEFAULT_CONCURRENCY;
         } else if (args[i] === '--concurrency' && args[i + 1]) {
@@ -202,7 +211,7 @@ function parseArgs() {
             i++;
         }
     }
-    return { companyFilter, sweep, concurrency: Math.max(1, concurrency) };
+    return { companyFilter, sweep, withProfiles, concurrency: Math.max(1, concurrency) };
 }
 
 async function resolveSingleCompany(filter: string) {
@@ -230,7 +239,7 @@ async function resolveSingleCompany(filter: string) {
 }
 
 async function main() {
-    const { companyFilter, sweep, concurrency } = parseArgs();
+    const { companyFilter, sweep, withProfiles, concurrency } = parseArgs();
     const singleMode = !!companyFilter;
 
     console.log(singleMode
@@ -370,10 +379,14 @@ async function main() {
         }
     }
 
-    console.log(`\n🎯 Syncing ${companies.length} companies (${concurrency} at a time)...`);
+    console.log(`\n🎯 Syncing ${companies.length} companies (${concurrency} at a time)${withProfiles ? ', refreshing profiles as they report' : ''}...`);
+    if (!withProfiles) {
+        console.log(`   (profiles NOT refreshed — pass --with-profiles to include them)`);
+    }
     let downloadedCount = 0;
     let analyzedCount = 0;
     let completedCount = 0;
+    let profileCount = 0;
 
     // One company end-to-end: fetch its concall list, download + analyze + index
     // each eligible quarter, then prune. Quarters WITHIN a company stay strictly
@@ -381,6 +394,8 @@ async function main() {
     // the previous quarter already stored.
     async function syncOneCompany(co: typeof companies[number]) {
         if (!co.isin) return;
+        // Newest quarter this company got analyzed in this run, if any.
+        let newestAnalyzedQuarter: string | null = null;
         try {
             const response: any = await fetchFromTijori(co.isin);
             const list = Array.isArray(response) ? response : (response?.data || []);
@@ -536,12 +551,22 @@ async function main() {
                             analyzedCount++;
                             await logToDB(jobId, 'COMPLETED', `Analysis Finished`, co.name, fyq);
 
+                            // Remember the newest quarter analyzed so the profile is
+                            // refreshed ONCE per company after the loop, even when two
+                            // quarters land together.
+                            if (!newestAnalyzedQuarter || quarterScore(fyq) > quarterScore(newestAnalyzedQuarter)) {
+                                newestAnalyzedQuarter = fyq;
+                            }
+
                             // RULE 1: Per-company rolling window cleanup
                             await cleanupOldQuarters(co.id, co.name, jobId);
 
                             // Rate Limit Helper
-                            console.log(`  ⏳ Cooling down (10s)...`);
-                            await sleep(10000);
+                            // Small breather only — lib/gemini.ts already rotates keys
+                            // and retries on a 429, which is what the old 10s sleep was
+                            // crudely standing in for. At 79 analyses that sleep alone
+                            // cost 13 minutes of the run.
+                            await sleep(2000);
 
                         } catch (aiErr: any) {
                             console.error(`  ⚠️ AI Failed: ${aiErr.message}`);
@@ -551,11 +576,27 @@ async function main() {
                 }
             }
 
-            // NOTE: company profiles are deliberately NOT refreshed here. Profile
-            // upkeep is a manual, discretionary step — run
-            // `npx tsx scripts/batch-profile-generator.ts --stale` when you want it.
-            // Sync stamps nothing profile-related, so `--stale` will list every
-            // company whose quarter has moved past its profile.
+            // Profile refresh is OPT-IN (--with-profiles). Without the flag sync
+            // stamps nothing profile-related, so profiles stay entirely manual via
+            // `scripts/batch-profile-generator.ts --stale`. Either way this runs only
+            // after every quarter the company reported has been analyzed, indexed and
+            // pruned, and a failure here never invalidates a good analysis — the next
+            // run retries it, since profileQuarter stays unstamped.
+            if (withProfiles && newestAnalyzedQuarter) {
+                try {
+                    const res = await updateCompanyProfile(co.id, newestAnalyzedQuarter);
+                    if (res.updated) {
+                        profileCount++;
+                        console.log(`  📝 Profile ${res.mode === 'revise' ? 'revised' : 'created'} for ${co.name.trim()} ${newestAnalyzedQuarter} (${res.chars} chars)`);
+                        await logToDB(jobId, 'PROFILE', `Profile ${res.mode === 'revise' ? 'revised' : 'created'} for ${newestAnalyzedQuarter}`, co.name, newestAnalyzedQuarter);
+                    } else {
+                        console.log(`  ⏭️ Profile skipped for ${co.name.trim()}: ${res.reason}`);
+                    }
+                } catch (profErr: any) {
+                    console.error(`  ⚠️ Profile update failed for ${co.name.trim()}: ${profErr.message}`);
+                    await logToDB(jobId, 'ERROR', `Profile update failed: ${profErr.message}`, co.name, newestAnalyzedQuarter);
+                }
+            }
         } catch (e: any) {
             console.error(`Error processing ${co.name}: ${e.message}`);
             await logToDB(jobId, 'ERROR', `Error processing company: ${e.message}`, co.name);
@@ -593,7 +634,7 @@ async function main() {
     console.log(`\n⏱️  Sync loop took ${((Date.now() - startedAt) / 60000).toFixed(1)} min.`);
 
     console.log(`\n✨ Smart Sync Complete!`);
-    await logToDB(jobId, 'INFO', `Sync Finished. Downloaded: ${downloadedCount}, Analyzed: ${analyzedCount}`);
+    await logToDB(jobId, 'INFO', `Sync Finished. Downloaded: ${downloadedCount}, Analyzed: ${analyzedCount}${withProfiles ? `, Profiles: ${profileCount}` : ''}`);
 
     await prisma.syncJob.update({
         where: { id: jobId },
