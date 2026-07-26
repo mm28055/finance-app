@@ -21,28 +21,114 @@ async function resolveScreenerUrl(isin: string | null, ticker: string, name: str
     return trySearch(name);
 }
 
-function extractQuarterlyValue(html: string, label: string): number | null {
-    const idx = html.indexOf(label);
-    if (idx === -1) return null;
-    const slice = html.substring(idx, idx + 400);
-    const match = slice.match(/class="number">([\d,]+)/);
-    return match ? parseFloat(match[1].replace(/,/g, '')) : null;
+// Screener's quarterly table is a plain HTML grid: row 0 is the column headers
+// ("Mar 2023", "Jun 2023", ...), each later row is a metric ("Sales",
+// "Operating Profit", "Net Profit"). We parse it properly rather than counting
+// characters — the previous version searched for `>Sales` and `class="number">`
+// inside a fixed 15,000-char window, all four of which stopped matching when
+// Screener changed their markup, and it failed silently for months.
+
+const stripTags = (s: string) =>
+    s.replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+
+// "1,234" -> 1234, "-119" -> -119, "" / "-" / "12%" -> null for value cells.
+function parseCell(text: string): number | null {
+    const t = text.replace(/,/g, '').trim();
+    if (!t || t === '-' || t.includes('%')) return null;
+    const n = Number(t);
+    return Number.isFinite(n) ? n : null;
 }
 
-async function fetchScreenerQuarterly(isin: string | null, ticker: string, name: string) {
+/**
+ * The Screener column label for a fiscal quarter. Indian FY runs Apr-Mar, and
+ * Screener labels columns by the month the quarter ENDS:
+ *   Q1 FY27 = Apr-Jun 2026 -> "Jun 2026"
+ *   Q4 FY27 = Jan-Mar 2027 -> "Mar 2027"
+ */
+export function screenerColumnFor(quarterName: string): string | null {
+    const m = quarterName.trim().match(/^Q([1-4])\s*FY(\d{2})$/i);
+    if (!m) return null;
+    const q = parseInt(m[1]);
+    const fy = 2000 + parseInt(m[2]);
+    const endMonth = ({ 1: 'Jun', 2: 'Sep', 3: 'Dec', 4: 'Mar' } as Record<number, string>)[q];
+    if (!endMonth) return null;
+    const endYear = q === 4 ? fy : fy - 1;
+    return `${endMonth} ${endYear}`;
+}
+
+interface QuarterTable {
+    columns: string[];
+    rows: Map<string, (number | null)[]>;
+}
+
+function parseQuartersTable(html: string): QuarterTable | null {
+    const start = html.indexOf('id="quarters"');
+    if (start === -1) return null;
+    const end = html.indexOf('</section>', start);
+    const section = html.substring(start, end === -1 ? start + 40000 : end);
+
+    const trs: string[] = section.match(/<tr[^>]*>[\s\S]*?<\/tr>/g) || [];
+    if (trs.length < 2) return null;
+
+    const cellsOf = (tr: string): string[] =>
+        (tr.match(/<t[hd][^>]*>[\s\S]*?<\/t[hd]>/g) || []).map(stripTags);
+
+    // Header row: first cell is the (empty) metric-name corner.
+    const header = cellsOf(trs[0]);
+    const columns = header.slice(1);
+    if (columns.length === 0) return null;
+
+    const rows = new Map<string, (number | null)[]>();
+    for (const tr of trs.slice(1)) {
+        const cells = cellsOf(tr);
+        if (cells.length < 2) continue;
+        // Expandable rows render as "Sales +" — drop the toggle marker.
+        const label = cells[0].replace(/\s*\+$/, '').trim();
+        rows.set(label, cells.slice(1).map(parseCell));
+    }
+    return { columns, rows };
+}
+
+/**
+ * Quarterly revenue / EBITDA / PAT for ONE specific quarter, or null.
+ *
+ * Returns null rather than guessing when the requested quarter has no column —
+ * Screener often lags the concall by weeks, and silently importing the previous
+ * quarter's numbers would be worse than leaving the gap visible.
+ */
+export async function fetchScreenerQuarterly(isin: string | null, ticker: string, name: string, quarterName: string) {
+    const wanted = screenerColumnFor(quarterName);
+    if (!wanted) return null;
+
     const url = await resolveScreenerUrl(isin, ticker, name);
     if (!url) return null;
+
     try {
         const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
         if (!res.ok) return null;
-        const html = await res.text();
-        const qIdx = html.indexOf('id="quarters"');
-        if (qIdx === -1) return null;
-        const section = html.substring(qIdx, qIdx + 15000);
+        const table = parseQuartersTable(await res.text());
+        if (!table) return null;
+
+        const col = table.columns.findIndex(c => c.toLowerCase() === wanted.toLowerCase());
+        if (col === -1) {
+            console.log(`     Screener has no "${wanted}" column yet (latest: ${table.columns[table.columns.length - 1]})`);
+            return null;
+        }
+
+        const pick = (...labels: string[]) => {
+            for (const l of labels) {
+                const row = table.rows.get(l);
+                if (row && row[col] !== undefined && row[col] !== null) return row[col];
+            }
+            return null;
+        };
+
         return {
-            revenue: extractQuarterlyValue(section, '>Sales'),
-            ebitda:  extractQuarterlyValue(section, '>Operating Profit'),
-            pat:     extractQuarterlyValue(section, '>Net Profit'),
+            // Banks/NBFCs label the top line "Revenue" instead of "Sales".
+            revenue: pick('Sales', 'Revenue'),
+            ebitda: pick('Operating Profit'),
+            pat: pick('Net Profit'),
+            column: wanted,
         };
     } catch {
         return null;
@@ -204,12 +290,14 @@ export async function processTranscript(transcriptId: string) {
             const s = await fetchScreenerQuarterly(
                 transcript.company.isin ?? null,
                 transcript.company.ticker,
-                transcript.company.name
+                transcript.company.name,
+                transcript.quarter.name
             );
             if (s) {
-                if (!revenue && s.revenue) { revenue = s.revenue; console.log(`     Revenue from Screener: ${revenue}`); }
-                if (!ebitda && s.ebitda)   { ebitda  = s.ebitda;  console.log(`     EBITDA from Screener: ${ebitda}`);  }
-                if (!pat    && s.pat)      { pat     = s.pat;     console.log(`     PAT from Screener: ${pat}`);     }
+                // `!= null` not `!`: a genuine 0, or a negative EBITDA, is data.
+                if (!revenue && s.revenue != null) { revenue = s.revenue; console.log(`     Revenue from Screener (${s.column}): ${revenue}`); }
+                if (!ebitda && s.ebitda != null) { ebitda = s.ebitda; console.log(`     EBITDA from Screener (${s.column}): ${ebitda}`); }
+                if (!pat && s.pat != null) { pat = s.pat; console.log(`     PAT from Screener (${s.column}): ${pat}`); }
             }
             await new Promise(r => setTimeout(r, 1000)); // polite delay
         } catch (e: any) {
