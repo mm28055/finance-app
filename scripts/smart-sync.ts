@@ -1,14 +1,22 @@
 
-import { PrismaClient } from '@prisma/client';
 import fs from 'fs';
 import path from 'path';
 import https from 'https';
+// Shared client, NOT a second `new PrismaClient()` — lib/sync-service.ts and
+// lib/rag-ingest.ts use the singleton, and an extra connected client keeps the
+// Node process alive after the sync finishes (the script appears to hang).
+import { prisma } from '../lib/prisma';
 import { processTranscript } from '../lib/sync-service';
+import { pruneCompany, TRANSCRIPT_WINDOW, ANALYSIS_WINDOW, FINANCIALS_WINDOW } from '../lib/retention';
 
-const prisma = new PrismaClient();
 const TIJORI_API_KEY = "c74d557ef1cf4464820666dfb7dbc9e1";
 const BASE_URL = "https://www.tijoristack.ai/api/v1";
 const CONCALLS_DIR = path.join(process.cwd(), 'Concalls');
+
+// How many companies are processed at once. Companies are independent, so this is
+// safe; the practical ceiling is the Gemini rate limit, not the code. Override
+// with --concurrency=N.
+const DEFAULT_CONCURRENCY = 3;
 
 // Helper for sleep
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
@@ -130,60 +138,45 @@ async function logToDB(jobId: string, status: string, message: string, companyNa
     }
 }
 
-// --- RULE 1 & 2: Rolling Window Cleanup ---
-// Transcripts/PDFs/Analysis/Chunks: keep latest 2 quarters.
-// Financials: keep latest 5 quarters (need 5 to compute YoY = same quarter last year).
-async function cleanupOldQuarters(companyId: string, companyName: string, jobId: string) {
+// Removes the Supabase PDF backing a transcript row. No-op for local paths.
+async function deleteStoredPdf(fileUrl: string | null, companyName: string, qName: string) {
+    if (!fileUrl || !fileUrl.startsWith('http') || !supabase) return;
     try {
-        // --- Transcripts / PDFs / Analysis / Chunks: keep latest 2 ---
-        const allTranscripts = await prisma.transcript.findMany({
-            where: { companyId },
-            include: { quarter: true },
-            orderBy: [{ quarter: { year: 'desc' } }, { quarter: { q: 'desc' } }]
-        });
-
-        if (allTranscripts.length > 2) {
-            const toDelete = allTranscripts.slice(2);
-            for (const old of toDelete) {
-                const qName = old.quarter.name;
-
-                // 1. Delete PDF from Supabase
-                if (old.fileUrl && old.fileUrl.startsWith('http') && supabase) {
-                    try {
-                        const urlParts = old.fileUrl.split(`/storage/v1/object/public/${BUCKET_NAME}/`);
-                        if (urlParts.length === 2) {
-                            const storagePath = decodeURIComponent(urlParts[1]);
-                            const { error } = await supabase.storage.from(BUCKET_NAME).remove([storagePath]);
-                            if (error) {
-                                console.error(`   ⚠️ Supabase delete failed for ${companyName} ${qName}: ${error.message}`);
-                            } else {
-                                console.log(`   🗑️ Deleted Supabase PDF: ${storagePath}`);
-                            }
-                        }
-                    } catch (e: any) {
-                        console.error(`   ⚠️ Supabase cleanup error: ${e.message}`);
-                    }
-                }
-
-                // 2. Delete DB records — Financials are kept separately below
-                await prisma.transcriptChunk.deleteMany({ where: { companyId, quarterId: old.quarterId } });
-                await prisma.analysis.deleteMany({ where: { companyId, quarterId: old.quarterId } });
-                await prisma.transcript.delete({ where: { id: old.id } });
-                await logToDB(jobId, 'CLEANUP', `Deleted old ${qName} transcript/PDF/analysis`, companyName, qName);
+        const urlParts = fileUrl.split(`/storage/v1/object/public/${BUCKET_NAME}/`);
+        if (urlParts.length === 2) {
+            const storagePath = decodeURIComponent(urlParts[1]);
+            const { error } = await supabase.storage.from(BUCKET_NAME).remove([storagePath]);
+            if (error) {
+                console.error(`   ⚠️ Supabase delete failed for ${companyName} ${qName}: ${error.message}`);
+            } else {
+                console.log(`   🗑️ Deleted Supabase PDF: ${storagePath}`);
             }
         }
+    } catch (e: any) {
+        console.error(`   ⚠️ Supabase cleanup error: ${e.message}`);
+    }
+}
 
-        // --- Financials: keep latest 5 (supports YoY across all quarters) ---
-        const allFinancials = await prisma.financials.findMany({
-            where: { companyId },
-            include: { quarter: true },
-            orderBy: [{ quarter: { year: 'desc' } }, { quarter: { q: 'desc' } }]
+// --- RULE 1 & 2: Rolling Window Cleanup ---
+// Windows live in lib/retention.ts:
+//   Transcripts/PDFs/Chunks: latest 2 quarters.
+//   Analysis: latest 4 quarters (outlives the transcript it was written from).
+//   deltaAnalysis: newest quarter only.
+//   Financials: latest 5 quarters (need 5 to compute YoY = same quarter last year).
+async function cleanupOldQuarters(companyId: string, companyName: string, jobId: string) {
+    try {
+        const result = await pruneCompany(prisma, companyId, {
+            onTranscriptEvict: async (t) => {
+                await deleteStoredPdf(t.fileUrl, companyName, t.quarterName);
+                await logToDB(jobId, 'CLEANUP', `Deleted old ${t.quarterName} transcript/PDF/chunks (analysis kept)`, companyName, t.quarterName);
+            },
+            onAnalysisEvict: async (a) => {
+                await logToDB(jobId, 'CLEANUP', `Deleted old ${a.quarterName} analysis`, companyName, a.quarterName);
+            }
         });
 
-        if (allFinancials.length > 5) {
-            for (const old of allFinancials.slice(5)) {
-                await prisma.financials.delete({ where: { id: old.id } });
-            }
+        if (result.deltasCleared > 0) {
+            console.log(`   🧽 Cleared ${result.deltasCleared} superseded delta report(s) for ${companyName}.`);
         }
     } catch (e: any) {
         console.error(`   ⚠️ Cleanup failed for ${companyName}: ${e.message}`);
@@ -195,15 +188,21 @@ function parseArgs() {
     const args = process.argv.slice(2);
     let companyFilter: string | null = null;
     let sweep = false;
+    let concurrency = DEFAULT_CONCURRENCY;
     for (let i = 0; i < args.length; i++) {
         if ((args[i] === '--company' || args[i] === '-c') && args[i + 1]) {
             companyFilter = args[i + 1].trim();
             i++;
         } else if (args[i] === '--sweep') {
             sweep = true;
+        } else if (args[i].startsWith('--concurrency=')) {
+            concurrency = parseInt(args[i].split('=')[1]) || DEFAULT_CONCURRENCY;
+        } else if (args[i] === '--concurrency' && args[i + 1]) {
+            concurrency = parseInt(args[i + 1]) || DEFAULT_CONCURRENCY;
+            i++;
         }
     }
-    return { companyFilter, sweep };
+    return { companyFilter, sweep, concurrency: Math.max(1, concurrency) };
 }
 
 async function resolveSingleCompany(filter: string) {
@@ -231,7 +230,7 @@ async function resolveSingleCompany(filter: string) {
 }
 
 async function main() {
-    const { companyFilter, sweep } = parseArgs();
+    const { companyFilter, sweep, concurrency } = parseArgs();
     const singleMode = !!companyFilter;
 
     console.log(singleMode
@@ -261,11 +260,13 @@ async function main() {
     await logToDB(jobId, 'INFO', `Starting sync for ${companies.length} companies...`);
 
     // --- RULE 2: Pre-Sync Stale Data Sweep (opt-in via --sweep) ---
-    // If a company's oldest transcript is more than 2 quarters behind the
-    // global latest quarter, delete it. Normally redundant because the
-    // per-company rolling window runs after each analysis. Only run this
-    // when --sweep is passed (e.g. once at the start of a fresh results
-    // cycle, or after suspected data drift).
+    // Deletes data that has fallen more than its retention window behind the
+    // global latest quarter: transcripts/PDFs/chunks at TRANSCRIPT_WINDOW,
+    // analyses at the wider ANALYSIS_WINDOW. Delta reports are never touched
+    // here — they are only replaced by a newer delta. Normally redundant because
+    // the per-company rolling window runs after each analysis. Only run this
+    // when --sweep is passed (e.g. once at the start of a fresh results cycle,
+    // or after suspected data drift).
     if (!sweep) {
         console.log(`\n⏭️  Skipping stale data sweep (pass --sweep to run it).`);
     } else {
@@ -295,34 +296,54 @@ async function main() {
                     const tPos = qPos(t.quarter.year, t.quarter.q);
                     const gap = latestPos - tPos;
 
-                    if (gap > 2) {
+                    if (gap > TRANSCRIPT_WINDOW) {
                         const qName = t.quarter.name;
 
-                        if (t.fileUrl && t.fileUrl.startsWith('http') && supabase) {
-                            try {
-                                const urlParts = t.fileUrl.split(`/storage/v1/object/public/${BUCKET_NAME}/`);
-                                if (urlParts.length === 2) {
-                                    const storagePath = decodeURIComponent(urlParts[1]);
-                                    await supabase.storage.from(BUCKET_NAME).remove([storagePath]);
-                                    console.log(`   🗑️ [Stale] Deleted PDF: ${storagePath}`);
-                                }
-                            } catch (e: any) {
-                                console.error(`   ⚠️ Supabase stale cleanup error: ${e.message}`);
-                            }
-                        }
+                        await deleteStoredPdf(t.fileUrl, co.name, qName);
 
+                        // Analysis is NOT deleted here — it has its own, wider
+                        // window and is swept separately below.
                         await prisma.transcriptChunk.deleteMany({ where: { companyId: co.id, quarterId: t.quarterId } });
-                        await prisma.analysis.deleteMany({ where: { companyId: co.id, quarterId: t.quarterId } });
                         await prisma.transcript.delete({ where: { id: t.id } });
-                        await logToDB(jobId, 'CLEANUP', `[Stale] Deleted ${qName} transcript/PDF (gap: ${gap})`, co.name, qName);
+                        await logToDB(jobId, 'CLEANUP', `[Stale] Deleted ${qName} transcript/PDF/chunks (gap: ${gap})`, co.name, qName);
                         cleanedCount++;
                     }
                 }
             }
             console.log(`   Stale sweep done: cleaned ${cleanedCount} old transcripts.`);
-            await logToDB(jobId, 'INFO', `Pre-sync stale sweep: deleted ${cleanedCount} transcripts with gap >2`);
+            await logToDB(jobId, 'INFO', `Pre-sync stale sweep: deleted ${cleanedCount} transcripts with gap >${TRANSCRIPT_WINDOW}`);
 
-            // Separate Financials stale sweep — keep 5 quarters per company (gap > 5)
+            // Analysis stale sweep — wider window, so written analysis survives
+            // the transcript it came from.
+            //
+            // Deliberately does NOT touch deltaAnalysis: a delta is only ever
+            // replaced by a newer one (see pruneCompany), never purged on its
+            // own. Clearing deltas here would strip them before the replacement
+            // quarter has been analyzed.
+            let analysisCleanedCount = 0;
+            for (const co of companies) {
+                const coAnalyses = await prisma.analysis.findMany({
+                    where: { companyId: co.id },
+                    include: { quarter: true },
+                    orderBy: [{ quarter: { year: 'desc' } }, { quarter: { q: 'desc' } }]
+                });
+                if (coAnalyses.length === 0) continue;
+
+                for (const a of coAnalyses) {
+                    const gap = latestPos - qPos(a.quarter.year, a.quarter.q);
+                    if (gap > ANALYSIS_WINDOW) {
+                        await prisma.analysis.delete({ where: { id: a.id } });
+                        await logToDB(jobId, 'CLEANUP', `[Stale] Deleted ${a.quarter.name} analysis (gap: ${gap})`, co.name, a.quarter.name);
+                        analysisCleanedCount++;
+                    }
+                }
+            }
+            if (analysisCleanedCount > 0) {
+                console.log(`   Analysis stale sweep done: deleted ${analysisCleanedCount} analyses.`);
+                await logToDB(jobId, 'INFO', `Pre-sync analysis sweep: deleted ${analysisCleanedCount} analyses (gap >${ANALYSIS_WINDOW})`);
+            }
+
+            // Separate Financials stale sweep — keep 5 quarters per company
             let financialsCleanedCount = 0;
             for (const co of companies) {
                 const coFinancials = await prisma.financials.findMany({
@@ -330,11 +351,11 @@ async function main() {
                     include: { quarter: true },
                     orderBy: [{ quarter: { year: 'desc' } }, { quarter: { q: 'desc' } }]
                 });
-                if (coFinancials.length > 5) {
-                    for (const f of coFinancials.slice(5)) {
+                if (coFinancials.length > FINANCIALS_WINDOW) {
+                    for (const f of coFinancials.slice(FINANCIALS_WINDOW)) {
                         const fPos = qPos(f.quarter.year, f.quarter.q);
                         const gap = latestPos - fPos;
-                        if (gap > 5) {
+                        if (gap > FINANCIALS_WINDOW) {
                             await prisma.financials.delete({ where: { id: f.id } });
                             financialsCleanedCount++;
                         }
@@ -349,17 +370,17 @@ async function main() {
         }
     }
 
-    console.log(`\n🎯 Syncing ${companies.length} companies...`);
+    console.log(`\n🎯 Syncing ${companies.length} companies (${concurrency} at a time)...`);
     let downloadedCount = 0;
     let analyzedCount = 0;
+    let completedCount = 0;
 
-    for (let i = 0; i < companies.length; i++) {
-        const co = companies[i];
-        if (!co.isin) continue;
-
-        // Log progress every 10 companies
-        if (i % 10 === 0) console.log(`[${i + 1}/${companies.length}] Scanning ${co.name}...`);
-
+    // One company end-to-end: fetch its concall list, download + analyze + index
+    // each eligible quarter, then prune. Quarters WITHIN a company stay strictly
+    // sequential oldest -> newest, because the delta analysis for a quarter needs
+    // the previous quarter already stored.
+    async function syncOneCompany(co: typeof companies[number]) {
+        if (!co.isin) return;
         try {
             const response: any = await fetchFromTijori(co.isin);
             const list = Array.isArray(response) ? response : (response?.data || []);
@@ -383,25 +404,24 @@ async function main() {
             }, 0);
             if (newestDateMs === 0) {
                 await logToDB(jobId, 'SKIPPED', 'No usable concall from Tijori', co.name);
-                await sleep(1000);
-                continue;
+                return;
             }
             if (Date.now() - newestDateMs > STALENESS_MS) {
                 const ageMonths = ((Date.now() - newestDateMs) / (1000 * 60 * 60 * 24 * 30)).toFixed(1);
                 await logToDB(jobId, 'SKIPPED', `Stale data — newest concall is ${ageMonths} months old`, co.name);
-                await sleep(1000);
-                continue;
+                return;
             }
 
-            // Rolling-window inbound filter: only the latest 2 quarters Tijori
-            // has for THIS company are eligible. Prevents wasted Q1/Q2 work for
-            // brand-new companies and stops re-downloading old quarters once
-            // newer ones have arrived.
+            // Rolling-window inbound filter: only the latest TRANSCRIPT_WINDOW
+            // quarters Tijori has for THIS company are eligible. Prevents wasted
+            // Q1/Q2 work for brand-new companies and stops re-downloading old
+            // quarters once newer ones have arrived — including quarters whose
+            // transcript was pruned but whose analysis we still keep.
             const allScores: number[] = list
                 .filter((it: any) => it.transcript && typeof it.transcript === 'string' && it.transcript.startsWith('http') && it.concall_event_time)
                 .map((it: any) => quarterScore(getFinancialQuarter(it.concall_event_time)));
             const uniqueDesc: number[] = Array.from(new Set(allScores)).sort((a, b) => b - a);
-            const top2Scores: Set<number> = new Set(uniqueDesc.slice(0, 2));
+            const top2Scores: Set<number> = new Set(uniqueDesc.slice(0, TRANSCRIPT_WINDOW));
 
             for (const item of list) {
                 let link = item.transcript;
@@ -530,14 +550,47 @@ async function main() {
                     }
                 }
             }
-            // Small polite delay between companies
-            await sleep(1000);
+
+            // NOTE: company profiles are deliberately NOT refreshed here. Profile
+            // upkeep is a manual, discretionary step — run
+            // `npx tsx scripts/batch-profile-generator.ts --stale` when you want it.
+            // Sync stamps nothing profile-related, so `--stale` will list every
+            // company whose quarter has moved past its profile.
         } catch (e: any) {
             console.error(`Error processing ${co.name}: ${e.message}`);
             await logToDB(jobId, 'ERROR', `Error processing company: ${e.message}`, co.name);
         }
     }
 
+    // Shared-cursor worker pool: each worker takes the next company as soon as it
+    // finishes, so one slow company never stalls the rest. A crash in one company
+    // is already contained by syncOneCompany's own try/catch.
+    let cursor = 0;
+    async function syncWorker(slot: number) {
+        // Stagger starts so N workers don't hit Tijori/Gemini in the same instant.
+        await sleep(slot * 2000);
+
+        while (true) {
+            const idx = cursor++;
+            if (idx >= companies.length) return;
+            const co = companies[idx];
+            if (!co.isin) continue;
+
+            await syncOneCompany(co);
+
+            completedCount++;
+            if (completedCount % 10 === 0) {
+                console.log(`   …${completedCount}/${companies.length} companies done (downloaded ${downloadedCount}, analyzed ${analyzedCount})`);
+            }
+            await sleep(1000);
+        }
+    }
+
+    const startedAt = Date.now();
+    await Promise.all(
+        Array.from({ length: Math.min(concurrency, companies.length) }, (_, i) => syncWorker(i))
+    );
+    console.log(`\n⏱️  Sync loop took ${((Date.now() - startedAt) / 60000).toFixed(1)} min.`);
 
     console.log(`\n✨ Smart Sync Complete!`);
     await logToDB(jobId, 'INFO', `Sync Finished. Downloaded: ${downloadedCount}, Analyzed: ${analyzedCount}`);

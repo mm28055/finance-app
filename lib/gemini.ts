@@ -22,6 +22,18 @@ function getClient(): GoogleGenerativeAI {
     return new GoogleGenerativeAI(key);
 }
 
+/**
+ * Round-robin client for callers that don't go through RotatingModel — notably
+ * the embedding model used by RAG ingestion, which would otherwise hammer a
+ * single key while the analysis calls spread across all of them.
+ */
+export function nextClient(): GoogleGenerativeAI {
+    return getClient();
+}
+
+/** Number of keys available, so callers can size their own concurrency. */
+export const GEMINI_KEY_COUNT = ALL_KEYS.length;
+
 class RotatingModel {
     private modelName: string;
 
