@@ -80,8 +80,12 @@ export function FinancialMatrix({ financials, quarterName }: { financials?: Comp
         );
     };
 
+    // Note: deliberately NO `h-full` on the card below. This card sits above the
+    // My Notes box in a flex column, and h-full stretched it to match the much
+    // taller analysis panel beside it — leaving thousands of pixels of blank space
+    // between the financials table and the notes box.
     return (
-        <div className="bg-white border border-gray-200 rounded-xl overflow-hidden h-full flex flex-col">
+        <div className="bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col">
             <div className="bg-gray-50 px-4 py-2.5 border-b border-gray-100 flex justify-between items-center flex-shrink-0">
                 <h3 className="text-[10px] font-semibold text-gray-500 uppercase tracking-wider">Financials ({quarterName || 'Latest'})</h3>
                 <span className="text-[9px] text-gray-400 font-medium">Consolidated</span>

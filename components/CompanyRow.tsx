@@ -6,6 +6,7 @@ import { FinancialTrendChart } from './FinancialTrendChart';
 import { Trash2, ArrowRight, FileText } from 'lucide-react';
 import type { EnrichedCompany } from './SectorList';
 import { useAdmin } from '@/context/AdminContext';
+import { ANALYSIS_WINDOW } from '@/lib/retention';
 
 import { COLOR_THEMES, ColorThemeKey, CONVICTION_CONFIG, ConvictionLevel } from './SectorList';
 
@@ -105,8 +106,10 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     // Prefer fetched detail (richer) over the light homepage object.
     const effective = detail || company;
 
-    // Get selected quarter data
-    const quarters = useMemo(() => (effective.history || []).slice(0, 2), [effective.history]);
+    // Get selected quarter data. Capped at the analysis retention window —
+    // quarters past the (narrower) transcript window still get a tab, they just
+    // have no PDF button.
+    const quarters = useMemo(() => (effective.history || []).slice(0, ANALYSIS_WINDOW), [effective.history]);
     const selectedData = quarters[selectedQuarterIdx] || quarters[0];
 
     const handleConvictionClick = (e: React.MouseEvent) => {
@@ -469,7 +472,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                         ) : (
                             <>
                                 <div className="flex flex-col lg:flex-row gap-4">
-                                    <div className="flex-1 flex flex-col">
+                                    {/* items-start so the cards keep their natural height instead
+                                        of stretching to the analysis panel's height. */}
+                                    <div className="flex-1 flex flex-col gap-4 items-stretch self-start w-full">
                                         <FinancialMatrix
                                             financials={selectedData?.financials || effective.financials}
                                             quarterName={selectedData?.quarter || effective.summary?.quarter}
