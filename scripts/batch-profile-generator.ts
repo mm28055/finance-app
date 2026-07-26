@@ -15,6 +15,12 @@ import 'dotenv/config';
  *   npx tsx scripts/batch-profile-generator.ts --stale --dry-run  list what's behind, change nothing
  *   npx tsx scripts/batch-profile-generator.ts --limit=50         first 50 (alphabetical)
  *   npx tsx scripts/batch-profile-generator.ts --force            redo even if already stamped
+ *   npx tsx scripts/batch-profile-generator.ts --quarter="Q1 FY27"
+ *
+ * --quarter restricts to companies whose NEWEST stored quarter is that one, i.e.
+ * the companies that just reported. Without it, --stale also picks up every
+ * company still sitting on an older quarter (most of the universe), which is
+ * usually not what you want mid-season.
  *   npx tsx scripts/batch-profile-generator.ts --stale --concurrency=6
  *
  * Companies run CONCURRENCY at a time (default 3). Each one is an independent
@@ -36,6 +42,7 @@ async function main() {
     const limitArg = args.find(a => a.startsWith('--limit='));
     const offsetArg = args.find(a => a.startsWith('--offset='));
     const concArg = args.find(a => a.startsWith('--concurrency='));
+    const quarterArg = args.find(a => a.startsWith('--quarter='));
     const staleOnly = args.includes('--stale');
     const dryRun = args.includes('--dry-run');
     const force = args.includes('--force');
@@ -43,8 +50,9 @@ async function main() {
     const LIMIT = limitArg ? parseInt(limitArg.split('=')[1]) : Infinity;
     const OFFSET = offsetArg ? parseInt(offsetArg.split('=')[1]) : 0;
     const CONCURRENCY = Math.max(1, concArg ? parseInt(concArg.split('=')[1]) || DEFAULT_CONCURRENCY : DEFAULT_CONCURRENCY);
+    const QUARTER = quarterArg ? quarterArg.split('=').slice(1).join('=').replace(/^["']|["']$/g, '').trim() : null;
 
-    console.log(`🔧 Batch Settings: Limit=${LIMIT === Infinity ? 'ALL' : LIMIT}, Offset=${OFFSET}, StaleOnly=${staleOnly}, Force=${force}, DryRun=${dryRun}, Concurrency=${CONCURRENCY}`);
+    console.log(`🔧 Batch Settings: Limit=${LIMIT === Infinity ? 'ALL' : LIMIT}, Offset=${OFFSET}, Quarter=${QUARTER || 'any'}, StaleOnly=${staleOnly}, Force=${force}, DryRun=${dryRun}, Concurrency=${CONCURRENCY}`);
 
     // Every company that has something to build a profile from, plus the newest
     // quarter it has a transcript for. Staleness is `profileQuarter` vs that
@@ -78,6 +86,8 @@ async function main() {
             latestQuarter: c.transcripts[0]?.quarter.name || null
         }))
         .filter(c => c.latestQuarter)
+        // Scope to companies that just reported a specific quarter.
+        .filter(c => !QUARTER || c.latestQuarter === QUARTER)
         .filter(c => {
             if (!staleOnly) return true;
             if (!c.hasProfile) return true;
