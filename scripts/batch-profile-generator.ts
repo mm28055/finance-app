@@ -1,168 +1,150 @@
-import { PrismaClient } from '@prisma/client';
-import { searchWeb } from '../lib/web-search';
-import { generatePenetratingProfile } from './generate-penetrating-profile';
-import fs from 'fs';
-import path from 'path';
+import { prisma } from '../lib/prisma';
+import { updateCompanyProfile } from '../lib/profile-service';
+import { quarterScore } from '../lib/quarters';
 import 'dotenv/config';
 
-// Initialize Prisma
-const prisma = new PrismaClient();
-const TEMP_DATA_DIR = path.join(process.cwd(), 'temp', 'investor-data');
+/**
+ * Batch driver for company profiles — the ONLY thing that refreshes profiles in
+ * bulk. Sync never touches them, so profiles move only when you run this.
+ *
+ * `--stale` compares each company's stored profileQuarter against the newest
+ * quarter it has a transcript for, so after a sync cycle this lists exactly the
+ * companies whose profile has fallen behind.
+ *
+ *   npx tsx scripts/batch-profile-generator.ts --stale            report + update everything behind
+ *   npx tsx scripts/batch-profile-generator.ts --stale --dry-run  list what's behind, change nothing
+ *   npx tsx scripts/batch-profile-generator.ts --limit=50         first 50 (alphabetical)
+ *   npx tsx scripts/batch-profile-generator.ts --force            redo even if already stamped
+ *   npx tsx scripts/batch-profile-generator.ts --stale --concurrency=6
+ *
+ * Companies run CONCURRENCY at a time (default 3). Each one is an independent
+ * Gemini call and DB write, so parallelism is safe; the ceiling is the Gemini
+ * rate limit, which lib/gemini.ts already absorbs by rotating keys on a 429.
+ */
 
-// Ensure temp dir exists
-if (!fs.existsSync(TEMP_DATA_DIR)) {
-    fs.mkdirSync(TEMP_DATA_DIR, { recursive: true });
-}
+// Shared client, NOT a second `new PrismaClient()` — lib/profile-service.ts uses
+// the singleton, and an extra connected client keeps the Node process alive after
+// the work is done (the script appears to hang forever).
+const DEFAULT_CONCURRENCY = 3;
 
 async function delay(ms: number) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function processCompany(company: { id: string, name: string, ticker: string }) {
-    console.log(`\n\n🎯 Processing: ${company.name} (${company.ticker})`);
-
-    // 1. Check if Investor Data JSON exists
-    const safeName = company.ticker.replace(/[^a-z0-9]/gi, '_').toLowerCase();
-    const jsonPath = path.join(TEMP_DATA_DIR, `${safeName}.json`);
-
-    if (!fs.existsSync(jsonPath)) {
-        console.log(`🔍 Searching web for data...`);
-
-        try {
-            // A. Search for Investor Presentation
-            const presQuery = `${company.name} investor presentation`;
-            const presResults = await searchWeb(presQuery, 5);
-
-            // B. Search for News
-            const newsQuery = `${company.name} business news`; // Yahoo might not like "news" suffix alone?
-            const newsResults = await searchWeb(newsQuery, 3);
-
-            // C. Construct Data Object
-            const investorData = {
-                companyName: company.name,
-                ticker: company.ticker,
-                scrapedAt: new Date().toISOString(),
-                investorPresentations: presResults.map(r => ({
-                    title: r.title,
-                    link: r.link,
-                    snippet: r.snippet
-                })),
-                recentNews: newsResults.map(r => ({
-                    title: r.title,
-                    link: r.link,
-                    snippet: r.snippet
-                })),
-                // Placeholders for future expansion
-                strategic_focus: "Extracted from search results",
-                segments: [],
-                geography: []
-            };
-
-            // D. Save to JSON
-            fs.writeFileSync(jsonPath, JSON.stringify(investorData, null, 2));
-            console.log(`✅ Saved investor data to ${jsonPath}`);
-
-            // Delay to be nice to Yahoo
-            await delay(2000);
-
-        } catch (error) {
-            console.error(`❌ Search failed for ${company.name}: ${error}`);
-            // Continue anyway, generate profile with just transcripts
-        }
-    } else {
-        console.log(`⏭️ Investor data already exists. Skipping search.`);
-    }
-
-    // 2. Generate Profile
-    try {
-        await generatePenetratingProfile(company.ticker);
-    } catch (error) {
-        console.error(`❌ Profile generation failed for ${company.name}: ${error}`);
-    }
-}
-
 async function main() {
-    // Parse CLI arguments for batch control
     const args = process.argv.slice(2);
     const limitArg = args.find(a => a.startsWith('--limit='));
     const offsetArg = args.find(a => a.startsWith('--offset='));
-    const filterArg = args.find(a => a.startsWith('--filter=')); // e.g., --filter=q3-analysis
-
-    // Default to processing all if no limit specified, or user can set a limit (e.g., 200)
-    // If user has 250 call limit, better to default to something safe or let them specify.
-    // Let's default to NO limit (process all) but log instructions.
+    const concArg = args.find(a => a.startsWith('--concurrency='));
+    const staleOnly = args.includes('--stale');
+    const dryRun = args.includes('--dry-run');
+    const force = args.includes('--force');
 
     const LIMIT = limitArg ? parseInt(limitArg.split('=')[1]) : Infinity;
     const OFFSET = offsetArg ? parseInt(offsetArg.split('=')[1]) : 0;
-    const FILTER = filterArg ? filterArg.split('=')[1] : null;
+    const CONCURRENCY = Math.max(1, concArg ? parseInt(concArg.split('=')[1]) || DEFAULT_CONCURRENCY : DEFAULT_CONCURRENCY);
 
-    console.log(`🔧 Batch Settings: Limit=${LIMIT === Infinity ? 'ALL' : LIMIT}, Offset=${OFFSET}, Filter=${FILTER || 'None'}`);
+    console.log(`🔧 Batch Settings: Limit=${LIMIT === Infinity ? 'ALL' : LIMIT}, Offset=${OFFSET}, StaleOnly=${staleOnly}, Force=${force}, DryRun=${dryRun}, Concurrency=${CONCURRENCY}`);
 
-    // Build Where Clause
-    let whereClause: any = {
-        transcripts: {
-            some: {} // Must have at least one transcript
-        }
-    };
-
-    if (FILTER === 'q3-analysis') {
-        console.log("🔍 Filtering for companies with Q3 FY26 Analysis...");
-        whereClause.analyses = {
-            some: {
-                quarter: {
-                    name: "Q3 FY26"
-                }
-            }
-        };
-    } else if (FILTER === 'q3-missing-profile') {
-        console.log("🔍 Filtering for companies with Q3 FY26 Analysis that have MISSING or STALE profiles...");
-        whereClause.analyses = {
-            some: {
-                quarter: {
-                    name: "Q3 FY26"
-                }
-            }
-        };
-        whereClause.OR = [
-            { businessProfile: null },
-            { businessProfile: "" },
-            {
-                NOT: {
-                    businessProfile: {
-                        contains: "Q3 FY26"
-                    }
-                }
-            }
-        ];
-    }
-
-    // 1. Fetch all companies that have transcripts AND match filter
+    // Every company that has something to build a profile from, plus the newest
+    // quarter it has a transcript for. Staleness is `profileQuarter` vs that
+    // quarter — no hardcoded quarter name, so this keeps working next cycle.
     const companies = await prisma.company.findMany({
-        where: whereClause,
+        where: { transcripts: { some: {} } },
         select: {
             id: true,
             name: true,
             ticker: true,
-            businessProfile: true // To check if profile exists
+            profileQuarter: true,
+            businessProfile: true,
+            transcripts: {
+                orderBy: [{ quarter: { year: 'desc' } }, { quarter: { q: 'desc' } }],
+                take: 1,
+                select: { quarter: { select: { name: true } } }
+            }
         },
-        orderBy: {
-            name: 'asc'
-        },
-        // Apply pagination at DB level for efficiency
+        orderBy: { name: 'asc' },
         skip: OFFSET,
         take: LIMIT === Infinity ? undefined : LIMIT
     });
 
-    console.log(`📋 Found ${companies.length} companies to process (Total in DB with transcripts may be higher).`);
+    const targets = companies
+        .map(c => ({
+            id: c.id,
+            name: c.name.trim(),
+            ticker: c.ticker,
+            profileQuarter: c.profileQuarter,
+            hasProfile: !!(c.businessProfile || '').trim(),
+            latestQuarter: c.transcripts[0]?.quarter.name || null
+        }))
+        .filter(c => c.latestQuarter)
+        .filter(c => {
+            if (!staleOnly) return true;
+            if (!c.hasProfile) return true;
+            if (!c.profileQuarter) return true;
+            return quarterScore(c.profileQuarter) < quarterScore(c.latestQuarter!);
+        });
 
-    // 2. Loop and Process
-    let processedCount = 0;
-    for (const company of companies) {
-        await processCompany(company);
-        processedCount++;
+    console.log(`📋 ${targets.length} companies to process.\n`);
+
+    if (dryRun) {
+        targets.forEach(c => {
+            console.log(`   ${c.name}: profile at ${c.profileQuarter || (c.hasProfile ? 'unstamped' : 'none')} → latest ${c.latestQuarter}`);
+        });
+        console.log(`\n🔍 DRY RUN — nothing was changed.`);
+        return;
     }
 
-    console.log(`\n✅ Completed batch of ${processedCount} companies.`);
+    let updated = 0;
+    let skipped = 0;
+    let failed = 0;
+    let done = 0;
+
+    // Shared cursor worker pool. Each worker pulls the next company as soon as it
+    // finishes, so one slow company doesn't stall the others (which a fixed
+    // chunk-of-N approach would).
+    let cursor = 0;
+    const total = targets.length;
+
+    async function worker(slot: number) {
+        // Stagger starts so N calls don't hit Gemini in the same instant.
+        await delay(slot * 1500);
+
+        while (true) {
+            const idx = cursor++;
+            if (idx >= total) return;
+            const c = targets[idx];
+
+            try {
+                const res = await updateCompanyProfile(c.id, c.latestQuarter!, { force });
+                done++;
+                if (res.updated) {
+                    updated++;
+                    console.log(`[${done}/${total}] ✅ ${c.name} → ${c.latestQuarter}: ${res.mode === 'revise' ? 'revised' : 'created'} (${res.chars} chars)`);
+                } else {
+                    skipped++;
+                    console.log(`[${done}/${total}] ⏭️ ${c.name}: skipped — ${res.reason}`);
+                }
+            } catch (error: any) {
+                done++;
+                failed++;
+                console.error(`[${done}/${total}] ❌ ${c.name}: ${error.message}`);
+            }
+
+            await delay(1000);
+        }
+    }
+
+    const startedAt = Date.now();
+    await Promise.all(
+        Array.from({ length: Math.min(CONCURRENCY, total) }, (_, i) => worker(i))
+    );
+    const mins = ((Date.now() - startedAt) / 60000).toFixed(1);
+
+    console.log(`\n✅ Done in ${mins} min. Updated: ${updated}, Skipped: ${skipped}, Failed: ${failed}`);
+    if (failed > 0) {
+        console.log(`   Re-run the same command to retry the failures — anything already done is skipped.`);
+    }
 }
 
 main()

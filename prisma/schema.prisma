@@ -16,6 +16,11 @@ model Company {
   isin            String?      @unique
   sector          String
   businessProfile String?
+  // Freshness of businessProfile. Stores the quarter NAME ("Q1 FY27") rather
+  // than a Quarter FK so it survives the quarter-row cleanup. `updatedAt` can't
+  // serve this purpose — it's bumped by price syncs, notes and conviction edits.
+  profileQuarter   String?
+  profileUpdatedAt DateTime? @db.Timestamptz(6)
   aliases         String?
   isVisible       Boolean      @default(true)
   status          String       @default("ACTIVE")
