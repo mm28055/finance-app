@@ -2,6 +2,8 @@ import { prisma } from '@/lib/prisma';
 import { SectorData, EnrichedCompany } from '@/components/SectorList';
 import type { CompanyFinancials, MetricData } from '@/components/FinancialMatrix';
 import { AnalysisResult } from './ai-analyst';
+import { ANALYSIS_WINDOW, TRANSCRIPT_WINDOW, FINANCIALS_WINDOW } from './retention';
+import { quarterScore } from './quarters';
 
 /**
  * Lightweight dashboard query used by the homepage.
@@ -52,12 +54,15 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
                     quarter: { select: { name: true, year: true, q: true } }
                 }
             },
+            // Scores only (no text blobs). The two newest drive the score delta;
+            // the rest are here so the collapsed row shows the same quarter tabs
+            // the expanded row will.
             analyses: {
                 orderBy: [
                     { quarter: { year: 'desc' } },
                     { quarter: { q: 'desc' } }
                 ],
-                take: 2, // latest + immediately-previous, for score delta
+                take: ANALYSIS_WINDOW,
                 select: {
                     investibilityScore: true,
                     quarter: { select: { name: true } }
@@ -71,7 +76,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
                     { quarter: { year: 'desc' } },
                     { quarter: { q: 'desc' } }
                 ],
-                take: 2,
+                take: TRANSCRIPT_WINDOW,
                 select: {
                     fileUrl: true,
                     quarter: { select: { name: true } }
@@ -104,13 +109,21 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
                 ? latestA.investibilityScore - prevA.investibilityScore
                 : undefined;
 
-        // Minimal history: quarter + pdfUrl only, so the row can show PDF icons.
-        // Full analysis + financials per quarter are filled in by getCompanyDetail
+        // Minimal history: quarter + pdfUrl only, so the row can show its quarter
+        // tabs and PDF icons. Driven by the analysis window (wider) with PDF links
+        // attached from the transcript window (narrower), so quarters whose
+        // transcript has rolled off still get a tab — just no PDF button. Full
+        // analysis + financials per quarter are filled in by getCompanyDetail
         // when a user expands the row.
-        const lightHistory = co.transcripts.map(t => ({
-            quarter: t.quarter.name,
-            pdfUrl: t.fileUrl || null
-        }));
+        const pdfByQuarter = new Map(co.transcripts.map(t => [t.quarter.name, t.fileUrl || null]));
+        const lightQuarters = [
+            ...co.analyses.map(a => a.quarter.name),
+            // A just-downloaded quarter can have a transcript before its analysis.
+            ...co.transcripts.map(t => t.quarter.name)
+        ];
+        const lightHistory = Array.from(new Set(lightQuarters))
+            .sort((a, b) => quarterScore(b) - quarterScore(a))
+            .map(q => ({ quarter: q, pdfUrl: pdfByQuarter.get(q) ?? null }));
 
         const companyObj: EnrichedCompany = {
             id: co.id,
@@ -152,8 +165,10 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
 /**
  * Full detail for a single company. Called on-demand when a user expands a
  * company row on the dashboard. Includes financials history, analyses
- * history (with text blobs), and transcript PDF links for the latest
- * quarters. Transcript rawText is NEVER selected — only fileUrl.
+ * history (with text blobs) for the latest ANALYSIS_WINDOW quarters, and
+ * transcript PDF links for the latest TRANSCRIPT_WINDOW quarters — so the
+ * oldest tabs render analysis text with no PDF button once their transcript
+ * has rolled off. Transcript rawText is NEVER selected — only fileUrl.
  */
 export async function getCompanyDetail(id: string): Promise<EnrichedCompany | null> {
     const co = await prisma.company.findUnique({
@@ -178,7 +193,7 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
                     { quarter: { year: 'desc' } },
                     { quarter: { q: 'desc' } }
                 ],
-                take: 5,
+                take: FINANCIALS_WINDOW,
                 include: { quarter: true }
             },
             analyses: {
@@ -186,7 +201,7 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
                     { quarter: { year: 'desc' } },
                     { quarter: { q: 'desc' } }
                 ],
-                take: 2,
+                take: ANALYSIS_WINDOW,
                 include: { quarter: true }
             },
             transcripts: {
@@ -194,7 +209,7 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
                     { quarter: { year: 'desc' } },
                     { quarter: { q: 'desc' } }
                 ],
-                take: 2,
+                take: TRANSCRIPT_WINDOW,
                 // Skip rawText — only need the PDF link + quarter reference.
                 select: {
                     quarterId: true,

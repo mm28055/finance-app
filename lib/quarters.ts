@@ -1,4 +1,5 @@
 import { prisma } from '@/lib/prisma';
+import { pruneCompany, TRANSCRIPT_WINDOW } from '@/lib/retention';
 
 // Maps a concall event date to its reported fiscal quarter (Indian FY: Apr-Mar).
 // Concalls are filed AFTER quarter-end, so the event-date month determines
@@ -32,15 +33,15 @@ export function quarterScore(name: string): number {
 }
 
 // Returns the cutoff quarter score for accepting inbound concalls for a company.
-// Policy: accept anything at or newer than the OLDER of the latest 2 quarters
-// already stored. If fewer than 2 exist, fall back to "anything newer than what
+// Policy: accept anything at or newer than the OLDEST transcript still inside
+// the transcript window. If fewer exist, fall back to "anything newer than what
 // we have" (or accept everything if the company has no transcripts yet).
 export async function getAcceptanceCutoff(companyId: string): Promise<number> {
     const latest = await prisma.transcript.findMany({
         where: { companyId },
         include: { quarter: true },
         orderBy: [{ quarter: { year: 'desc' } }, { quarter: { q: 'desc' } }],
-        take: 2
+        take: TRANSCRIPT_WINDOW
     });
     if (latest.length === 0) return 0;
     const scores = latest.map(t => quarterScore(t.quarter.name));
@@ -54,35 +55,11 @@ export async function shouldAcceptQuarter(companyId: string, quarterName: string
     return quarterScore(quarterName) >= cutoff;
 }
 
-// Rolling-window cleanup for a single company. Keeps the latest 2 transcripts
-// (and their analyses/chunks) and the latest 5 financials rows. Safe to call
-// after any insert. PDF storage cleanup is handled separately by the main
-// smart-sync script — this DB-only version is sufficient to prevent stale
+// Rolling-window cleanup for a single company — see lib/retention.ts for the
+// windows (transcripts/PDF/chunks 2, analysis 4, delta 1, financials 5). Safe
+// to call after any insert. PDF storage cleanup is handled separately by the
+// main smart-sync script — this DB-only version is sufficient to prevent stale
 // tabs from showing up in the UI.
 export async function pruneCompanyToWindow(companyId: string) {
-    const allTranscripts = await prisma.transcript.findMany({
-        where: { companyId },
-        include: { quarter: true },
-        orderBy: [{ quarter: { year: 'desc' } }, { quarter: { q: 'desc' } }]
-    });
-
-    if (allTranscripts.length > 2) {
-        for (const old of allTranscripts.slice(2)) {
-            await prisma.transcriptChunk.deleteMany({ where: { companyId, quarterId: old.quarterId } });
-            await prisma.analysis.deleteMany({ where: { companyId, quarterId: old.quarterId } });
-            await prisma.transcript.delete({ where: { id: old.id } });
-        }
-    }
-
-    const allFinancials = await prisma.financials.findMany({
-        where: { companyId },
-        include: { quarter: true },
-        orderBy: [{ quarter: { year: 'desc' } }, { quarter: { q: 'desc' } }]
-    });
-
-    if (allFinancials.length > 5) {
-        for (const old of allFinancials.slice(5)) {
-            await prisma.financials.delete({ where: { id: old.id } });
-        }
-    }
+    await pruneCompany(prisma, companyId);
 }

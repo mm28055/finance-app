@@ -279,9 +279,10 @@ export async function POST(req: NextRequest) {
                             })
                         ]);
 
-                        // Rolling-window cleanup: prune anything outside latest 2 quarters
-                        // (5 for financials). Without this, manually-resurrected quarter
-                        // rows from prior buggy runs would keep rendering UI tabs.
+                        // Rolling-window cleanup — windows in lib/retention.ts
+                        // (transcripts/PDF/chunks 2, analysis 4, delta 1, financials 5).
+                        // Without this, manually-resurrected quarter rows from prior
+                        // buggy runs would keep rendering UI tabs.
                         await pruneCompanyToWindow(co.id);
 
                         analysisCount++;
