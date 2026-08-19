@@ -192,11 +192,11 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
             {/* Compact Row */}
             <div
                 onClick={() => setExpanded(!expanded)}
-                className={`flex items-center px-4 py-2.5 bg-white ${!isAdminMode ? 'hover:bg-[#F8FAFC] cursor-pointer' : ''} transition-colors group overflow-x-auto md:overflow-visible`}
+                className={`flex items-center px-3 2xl:px-4 py-2.5 bg-white ${!isAdminMode ? 'hover:bg-[#F8FAFC] cursor-pointer' : ''} transition-colors group overflow-x-auto md:overflow-visible`}
             >
                 {/* Company Info - Single Line */}
                 {/* Company Info - Fixed Width for Alignment */}
-                <div className="flex items-center gap-3 w-[290px] flex-shrink-0 border-r border-gray-100 pr-4 mr-4">
+                <div className="flex items-center gap-3 w-56 2xl:w-[290px] flex-shrink-0 border-r border-gray-100 pr-3 mr-3 2xl:pr-4 2xl:mr-4">
                     <div className="relative">
                         <div
                             className={`w-7 h-7 rounded-md ${effectiveTheme.bg} ${effectiveTheme.text} flex items-center justify-center text-[10px] font-semibold flex-shrink-0 transition-colors cursor-context-menu`}
@@ -260,12 +260,12 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                 </div>
 
                 {/* Data Stack (Valuation + Quarters) - Single Line Row */}
-                <div className="flex items-center gap-4 flex-1 min-w-0">
+                <div className="flex items-center gap-3 2xl:gap-4 flex-1 min-w-0">
                     {/* Valuation Strip — a fixed-width column per metric so every
                         row lines up vertically. Cells render empty rather than
                         collapsing, otherwise a company missing (say) P/B would pull
                         everything after it out of alignment. */}
-                    <div className="grid grid-cols-[38px_40px_62px_48px_52px_90px] items-center gap-2 flex-shrink-0">
+                    <div className="grid grid-cols-[36px_36px_58px_44px_48px_84px] gap-1.5 2xl:grid-cols-[38px_40px_62px_48px_52px_90px] 2xl:gap-2 items-center flex-shrink-0">
                         {/* Price */}
                         <span className="text-[10px] text-gray-700 font-semibold text-right" title="Current price">
                             {company.currentPrice ? `₹${company.currentPrice}` : ''}
@@ -337,7 +337,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
 
                     {/* Quarter Tabs */}
                     {quarters.length > 0 && (
-                        <div className="flex items-center gap-1.5 border-l border-gray-200 pl-4">
+                        <div className="flex items-center gap-1 pl-3 2xl:gap-1.5 2xl:pl-4 border-l border-gray-200">
                             {quarters.map((q, idx) => (
                                 <div
                                     key={q.quarter}

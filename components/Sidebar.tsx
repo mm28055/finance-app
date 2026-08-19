@@ -32,7 +32,7 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
             )}
 
             <aside className={cn(
-                "w-60 bg-white border-r border-gray-200 flex flex-col h-screen fixed left-0 top-0 overflow-hidden shadow-sm transition-transform duration-300 z-50",
+                "w-[200px] 2xl:w-60 bg-white border-r border-gray-200 flex flex-col h-screen fixed left-0 top-0 overflow-hidden shadow-sm transition-transform duration-300 z-50",
                 isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
             )}>
                 {/* Brand */}

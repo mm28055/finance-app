@@ -46,7 +46,7 @@ export default function RootLayout({
           <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
           <SectorChat />
           <NotesPanel />
-          <div className="pt-14 md:pt-0 md:pl-60 transition-all duration-300">
+          <div className="pt-14 md:pt-0 md:pl-[200px] 2xl:pl-60 transition-all duration-300">
             {children}
           </div>
           <Toaster position="bottom-right" richColors />
