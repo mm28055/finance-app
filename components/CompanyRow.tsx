@@ -110,6 +110,15 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     // quarters past the (narrower) transcript window still get a tab, they just
     // have no PDF button.
     const quarters = useMemo(() => (effective.history || []).slice(0, ANALYSIS_WINDOW), [effective.history]);
+
+    // How far the price sits below its 52-week high. Computed live rather than
+    // stored, so it stays right between finance syncs.
+    const drawdown = useMemo(() => {
+        const price = company.currentPrice;
+        const high = company.fiftyTwoWeekHigh;
+        if (!price || !high || high <= 0) return null;
+        return Math.round(((high - price) / high) * 100);
+    }, [company.currentPrice, company.fiftyTwoWeekHigh]);
     const selectedData = quarters[selectedQuarterIdx] || quarters[0];
 
     const handleConvictionClick = (e: React.MouseEvent) => {
@@ -257,26 +266,37 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                         <div className="flex items-center gap-3">
                             {company.currentPrice && (
                                 <div className="flex items-center gap-1.5">
-                                    <span className="text-[9px] text-gray-400 font-medium uppercase tracking-wider">Price</span>
                                     <span className="text-[10px] text-gray-700 font-semibold">₹{company.currentPrice}</span>
+                                    {/* Distance from the 52-week high. The ₹ figure carries the
+                                        "price" meaning on its own, so the label is dropped to
+                                        pay for this without widening the row. */}
+                                    {drawdown !== null && (
+                                        <span
+                                            className={`text-[10px] font-semibold ${drawdown >= 25 ? 'text-red-500'
+                                                : drawdown >= 10 ? 'text-amber-600'
+                                                    : 'text-emerald-600'
+                                                }`}
+                                            title={`52-week high ₹${company.fiftyTwoWeekHigh}${company.fiftyTwoWeekLow ? ` · low ₹${company.fiftyTwoWeekLow}` : ''}`}
+                                        >
+                                            {drawdown <= 0 ? 'At high' : `−${drawdown}%`}
+                                        </span>
+                                    )}
                                 </div>
                             )}
                             {company.marketCap && (
                                 <div className="flex items-center gap-1.5">
-                                    <span className="text-[9px] text-gray-400 font-medium uppercase tracking-wider">MCap</span>
-                                    <span className="text-[10px] text-gray-600 font-semibold">₹{Math.round(company.marketCap).toLocaleString()}cr</span>
+                                    {company.currentPrice && <span className="text-[10px] text-gray-300 leading-none">·</span>}
+                                    <span className="text-[10px] text-gray-600 font-semibold" title="Market cap">₹{Math.round(company.marketCap).toLocaleString()}cr</span>
                                 </div>
                             )}
                             {company.peRatio && (
-                                <div className="flex items-center gap-1.5 px-1 bg-gray-50 rounded border border-gray-100">
-                                    <span className="text-[9px] text-gray-400 font-medium uppercase">P/E</span>
-                                    <span className="text-[10px] text-gray-600 font-semibold">{company.peRatio}</span>
+                                <div className="flex items-center px-1.5 bg-gray-50 rounded border border-gray-100" title={`P/E ratio: ${company.peRatio}`}>
+                                    <span className="text-[10px] text-gray-600 font-semibold">{company.peRatio}x</span>
                                 </div>
                             )}
                             {company.pbRatio && (
-                                <div className="flex items-center gap-1.5 px-1 bg-gray-50 rounded border border-gray-100">
-                                    <span className="text-[9px] text-gray-400 font-medium uppercase">P/B</span>
-                                    <span className="text-[10px] text-gray-600 font-semibold">{company.pbRatio}</span>
+                                <div className="flex items-center px-1.5 bg-gray-50 rounded border border-gray-100" title={`P/B ratio: ${company.pbRatio}`}>
+                                    <span className="text-[10px] text-gray-600 font-semibold">{company.pbRatio}x</span>
                                 </div>
                             )}
                             {company.geminiScore !== undefined && (

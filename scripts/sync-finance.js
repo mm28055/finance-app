@@ -138,16 +138,30 @@ async function fetchScreener(company) {
         const peRatio = extractScreenerValue(html, 'Stock P/E');
         const dividendYield = extractScreenerValue(html, 'Dividend Yield');
 
+        const { fiftyTwoWeekHigh, fiftyTwoWeekLow } = extractScreenerRange(html);
+
         let pbRatio = null;
         if (currentPrice && bookValue && bookValue > 0) {
             pbRatio = Math.round((currentPrice / bookValue) * 100) / 100;
         }
 
-        return { marketCap, currentPrice, bookValue, peRatio, pbRatio, dividendYield, source: 'screener' };
+        return { marketCap, currentPrice, bookValue, peRatio, pbRatio, dividendYield, fiftyTwoWeekHigh, fiftyTwoWeekLow, source: 'screener' };
     } catch (e) {
         console.error(`Screener error for ${company.ticker}:`, e.message);
         return null;
     }
+}
+
+// Screener renders the 52-week band as: High / Low  ₹ <number>139</number> / <number>70.4</number>
+// The generic extractor only grabs the first number, so pull the pair here.
+function extractScreenerRange(html) {
+    const regex = /High\s*\/\s*Low[\s\S]{0,200}?number">([\d,.]+)<\/span>\s*\/\s*<span class="number">([\d,.]+)/i;
+    const match = html.match(regex);
+    if (!match) return { fiftyTwoWeekHigh: null, fiftyTwoWeekLow: null };
+    return {
+        fiftyTwoWeekHigh: parseFloat(match[1].replace(/,/g, '')),
+        fiftyTwoWeekLow: parseFloat(match[2].replace(/,/g, ''))
+    };
 }
 
 // ================= HYBRID SYNC =================
@@ -232,6 +246,10 @@ async function syncFinance() {
                 peRatio: data.peRatio || undefined,
                 pbRatio: data.pbRatio || undefined,
                 dividendYield: data.dividendYield || undefined,
+                // Google doesn't expose the 52w band, so leave the stored
+                // value untouched when it's the source that answered.
+                fiftyTwoWeekHigh: data.fiftyTwoWeekHigh || undefined,
+                fiftyTwoWeekLow: data.fiftyTwoWeekLow || undefined,
                 lastFinanceSync: new Date()
             }
         });

@@ -33,6 +33,8 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             peRatio: true,
             pbRatio: true,
             dividendYield: true,
+            fiftyTwoWeekHigh: true,
+            fiftyTwoWeekLow: true,
             financials: {
                 orderBy: [
                     { quarter: { year: 'desc' } },
@@ -144,6 +146,8 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             peRatio: co.peRatio ? Number(co.peRatio) : undefined,
             pbRatio: co.pbRatio ? Number(co.pbRatio) : undefined,
             dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
+            fiftyTwoWeekHigh: co.fiftyTwoWeekHigh ? Number(co.fiftyTwoWeekHigh) : undefined,
+            fiftyTwoWeekLow: co.fiftyTwoWeekLow ? Number(co.fiftyTwoWeekLow) : undefined,
             geminiScore: latestA?.investibilityScore ?? undefined,
             geminiScoreDelta,
             colorTag: co.colorTag || undefined,
@@ -188,6 +192,8 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
             peRatio: true,
             pbRatio: true,
             dividendYield: true,
+            fiftyTwoWeekHigh: true,
+            fiftyTwoWeekLow: true,
             financials: {
                 orderBy: [
                     { quarter: { year: 'desc' } },
@@ -285,6 +291,8 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
         peRatio: co.peRatio ? Number(co.peRatio) : undefined,
         pbRatio: co.pbRatio ? Number(co.pbRatio) : undefined,
         dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
+        fiftyTwoWeekHigh: co.fiftyTwoWeekHigh ? Number(co.fiftyTwoWeekHigh) : undefined,
+        fiftyTwoWeekLow: co.fiftyTwoWeekLow ? Number(co.fiftyTwoWeekLow) : undefined,
         geminiScore: currentAnalysis?.investibility_score,
         geminiScoreDelta,
         colorTag: co.colorTag || undefined,
@@ -670,6 +678,8 @@ export async function getDashboardData(): Promise<SectorData[]> {
             peRatio: co.peRatio ? Number(co.peRatio) : undefined,
             pbRatio: co.pbRatio ? Number(co.pbRatio) : undefined,
             dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
+            fiftyTwoWeekHigh: co.fiftyTwoWeekHigh ? Number(co.fiftyTwoWeekHigh) : undefined,
+            fiftyTwoWeekLow: co.fiftyTwoWeekLow ? Number(co.fiftyTwoWeekLow) : undefined,
             geminiScore: currentAnalysis?.investibility_score,
             geminiScoreDelta,
             colorTag: co.colorTag || undefined

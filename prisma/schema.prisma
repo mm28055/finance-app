@@ -32,6 +32,9 @@ model Company {
   bookValue       Decimal?     @db.Decimal
   currentPrice    Decimal?     @db.Decimal
   dividendYield   Decimal?     @db.Decimal
+  // 52-week high/low, scraped from Screener's "High / Low" row alongside price.
+  fiftyTwoWeekHigh Decimal?    @db.Decimal
+  fiftyTwoWeekLow  Decimal?    @db.Decimal
   lastFinanceSync DateTime?    @db.Timestamptz(6)
   marketCap       Decimal?     @db.Decimal
   pbRatio         Decimal?     @db.Decimal
