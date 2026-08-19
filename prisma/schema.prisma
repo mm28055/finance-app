@@ -165,3 +165,17 @@ model TranscriptChunk {
   @@index([sector])
   @@index([companyId])
 }
+
+// Free-form notes. `scope` is "SECTOR" (key = sector name) or "GENERAL"
+// (key = "__general__"), so one table backs both the per-sector notepad and
+// the global one.
+model Note {
+  id        String   @id @default(uuid())
+  scope     String
+  key       String
+  content   String   @default("")
+  createdAt DateTime @default(now()) @db.Timestamptz(6)
+  updatedAt DateTime @updatedAt @db.Timestamptz(6)
+
+  @@unique([scope, key])
+}

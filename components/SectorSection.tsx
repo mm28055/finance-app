@@ -2,8 +2,9 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, ChevronRight, MessageSquare, Plus, LayoutGrid } from 'lucide-react';
+import { ChevronDown, ChevronRight, MessageSquare, Plus, LayoutGrid, StickyNote } from 'lucide-react';
 import { useSectorChat } from '@/context/SectorChatContext';
+import { useNotes } from '@/context/NotesContext';
 import { SectorSnapshot } from '@/components/SectorSnapshot';
 import { useAdmin } from '@/context/AdminContext';
 import { AddCompanyModal } from './AddCompanyModal';
@@ -23,6 +24,7 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
     const [showSnapshot, setShowSnapshot] = useState(false);
     const [showAddModal, setShowAddModal] = useState(false);
     const { openChat } = useSectorChat();
+    const { openSectorNotes } = useNotes();
     const { isAdminMode } = useAdmin();
 
     // Sync isOpen with defaultOpen so clearing a search re-collapses sectors
@@ -33,6 +35,11 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
     const handleChatClick = (e: React.MouseEvent) => {
         e.stopPropagation();
         openChat(name);
+    };
+
+    const handleNotesClick = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        openSectorNotes(name);
     };
 
     const handleAddClick = (e: React.MouseEvent) => {
@@ -76,6 +83,14 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
                         title={`Chat with ${name}`}
                     >
                         <MessageSquare className="w-3 h-3" />
+                    </div>
+                    {/* Notes Button */}
+                    <div
+                        onClick={handleNotesClick}
+                        className="p-1 text-gray-400 hover:text-[#6B9FCC] hover:bg-[#D4E5F7] rounded transition-all cursor-pointer"
+                        title={`${name} notes`}
+                    >
+                        <StickyNote className="w-3 h-3" />
                     </div>
                 </div>
 

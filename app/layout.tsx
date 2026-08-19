@@ -7,6 +7,7 @@ import "./globals.css";
 // Trigger Vercel Rebuild - Database Migration Update
 import { Sidebar } from "@/components/Sidebar";
 import { SectorChat } from "@/components/SectorChat";
+import { NotesPanel } from "@/components/NotesPanel";
 import { Toaster } from 'sonner';
 import { Menu } from 'lucide-react';
 
@@ -44,6 +45,7 @@ export default function RootLayout({
 
           <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
           <SectorChat />
+          <NotesPanel />
           <div className="pt-14 md:pt-0 md:pl-60 transition-all duration-300">
             {children}
           </div>
