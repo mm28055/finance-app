@@ -261,47 +261,63 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
 
                 {/* Data Stack (Valuation + Quarters) - Single Line Row */}
                 <div className="flex items-center gap-4 flex-1 min-w-0">
-                    {/* Valuation Strip */}
-                    {(company.currentPrice || company.marketCap) && (
-                        <div className="flex items-center gap-3">
-                            {company.currentPrice && (
-                                <div className="flex items-center gap-1.5">
-                                    <span className="text-[10px] text-gray-700 font-semibold">₹{company.currentPrice}</span>
-                                    {/* Distance from the 52-week high. The ₹ figure carries the
-                                        "price" meaning on its own, so the label is dropped to
-                                        pay for this without widening the row. */}
-                                    {drawdown !== null && (
-                                        <span
-                                            className={`text-[10px] font-semibold ${drawdown >= 25 ? 'text-red-500'
-                                                : drawdown >= 10 ? 'text-amber-600'
-                                                    : 'text-emerald-600'
-                                                }`}
-                                            title={`52-week high ₹${company.fiftyTwoWeekHigh}${company.fiftyTwoWeekLow ? ` · low ₹${company.fiftyTwoWeekLow}` : ''}`}
-                                        >
-                                            {drawdown <= 0 ? 'At high' : `−${drawdown}%`}
-                                        </span>
-                                    )}
-                                </div>
-                            )}
-                            {company.marketCap && (
-                                <div className="flex items-center gap-1.5">
-                                    {company.currentPrice && <span className="text-[10px] text-gray-300 leading-none">·</span>}
-                                    <span className="text-[10px] text-gray-600 font-semibold" title="Market cap">₹{Math.round(company.marketCap).toLocaleString()}cr</span>
-                                </div>
-                            )}
-                            {company.peRatio && (
-                                <div className="flex items-center px-1.5 bg-gray-50 rounded border border-gray-100" title={`P/E ratio: ${company.peRatio}`}>
-                                    <span className="text-[10px] text-gray-600 font-semibold">{company.peRatio}x</span>
-                                </div>
-                            )}
-                            {company.pbRatio && (
-                                <div className="flex items-center px-1.5 bg-gray-50 rounded border border-gray-100" title={`P/B ratio: ${company.pbRatio}`}>
-                                    <span className="text-[10px] text-gray-600 font-semibold">{company.pbRatio}x</span>
-                                </div>
-                            )}
-                            {company.geminiScore !== undefined && (
-                                <div className="flex items-center gap-1 px-1.5 py-0.5 bg-[#F0F9FF] rounded border border-[#BAE6FD]">
+                    {/* Valuation Strip — a fixed-width column per metric so every
+                        row lines up vertically. Cells render empty rather than
+                        collapsing, otherwise a company missing (say) P/B would pull
+                        everything after it out of alignment. */}
+                    <div className="grid grid-cols-[38px_40px_62px_48px_52px_90px] items-center gap-2 flex-shrink-0">
+                        {/* Price */}
+                        <span className="text-[10px] text-gray-700 font-semibold text-right" title="Current price">
+                            {company.currentPrice ? `₹${company.currentPrice}` : ''}
+                        </span>
 
+                        {/* Distance from the 52-week high. The ₹ figure carries the
+                            "price" meaning on its own, so the label is dropped to
+                            pay for this without widening the row. */}
+                        <span
+                            className={`text-[10px] font-semibold text-right ${drawdown === null ? ''
+                                : drawdown >= 25 ? 'text-red-500'
+                                    : drawdown >= 10 ? 'text-amber-600'
+                                        : 'text-emerald-600'
+                                }`}
+                            title={drawdown === null ? undefined : `52-week high ₹${company.fiftyTwoWeekHigh}${company.fiftyTwoWeekLow ? ` · low ₹${company.fiftyTwoWeekLow}` : ''}`}
+                        >
+                            {drawdown === null ? '' : drawdown <= 0 ? 'At high' : `−${drawdown}%`}
+                        </span>
+
+                        {/* Market cap */}
+                        <span className="text-[10px] text-gray-600 font-semibold text-right" title="Market cap">
+                            {company.marketCap ? `₹${Math.round(company.marketCap).toLocaleString()}cr` : ''}
+                        </span>
+
+                        {/* P/E */}
+                        <div className="flex">
+                            {company.peRatio ? (
+                                <span
+                                    className="w-full text-center px-1 py-0.5 bg-gray-50 rounded border border-gray-100 text-[10px] text-gray-600 font-semibold"
+                                    title={`P/E ratio: ${company.peRatio}`}
+                                >
+                                    {company.peRatio}x
+                                </span>
+                            ) : null}
+                        </div>
+
+                        {/* P/B */}
+                        <div className="flex">
+                            {company.pbRatio ? (
+                                <span
+                                    className="w-full text-center px-1 py-0.5 bg-gray-50 rounded border border-gray-100 text-[10px] text-gray-600 font-semibold"
+                                    title={`P/B ratio: ${company.pbRatio}`}
+                                >
+                                    {company.pbRatio}x
+                                </span>
+                            ) : null}
+                        </div>
+
+                        {/* AI score */}
+                        <div className="flex">
+                            {company.geminiScore !== undefined ? (
+                                <div className="w-full flex items-center justify-center gap-1 px-1 py-0.5 bg-[#F0F9FF] rounded border border-[#BAE6FD]" title="AI investibility score">
                                     <span className={`text-[10px] font-bold ${company.geminiScore >= 80 ? 'text-emerald-600' :
                                         company.geminiScore >= 50 ? 'text-amber-600' : 'text-red-500'
                                         }`}>
@@ -315,9 +331,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                         </span>
                                     )}
                                 </div>
-                            )}
+                            ) : null}
                         </div>
-                    )}
+                    </div>
 
                     {/* Quarter Tabs */}
                     {quarters.length > 0 && (
