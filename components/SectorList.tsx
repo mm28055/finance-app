@@ -46,6 +46,7 @@ export interface EnrichedCompany {
     peRatio?: number;
     pbRatio?: number;
     dividendYield?: number;
+    roce?: number;
     fiftyTwoWeekHigh?: number;
     fiftyTwoWeekLow?: number;
     geminiScore?: number;

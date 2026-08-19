@@ -137,6 +137,7 @@ async function fetchScreener(company) {
         const bookValue = extractScreenerValue(html, 'Book Value');
         const peRatio = extractScreenerValue(html, 'Stock P/E');
         const dividendYield = extractScreenerValue(html, 'Dividend Yield');
+        const roce = extractScreenerValue(html, 'ROCE');
 
         const { fiftyTwoWeekHigh, fiftyTwoWeekLow } = extractScreenerRange(html);
 
@@ -145,7 +146,7 @@ async function fetchScreener(company) {
             pbRatio = Math.round((currentPrice / bookValue) * 100) / 100;
         }
 
-        return { marketCap, currentPrice, bookValue, peRatio, pbRatio, dividendYield, fiftyTwoWeekHigh, fiftyTwoWeekLow, source: 'screener' };
+        return { marketCap, currentPrice, bookValue, peRatio, pbRatio, dividendYield, roce, fiftyTwoWeekHigh, fiftyTwoWeekLow, source: 'screener' };
     } catch (e) {
         console.error(`Screener error for ${company.ticker}:`, e.message);
         return null;
@@ -246,6 +247,7 @@ async function syncFinance() {
                 peRatio: data.peRatio || undefined,
                 pbRatio: data.pbRatio || undefined,
                 dividendYield: data.dividendYield || undefined,
+                roce: data.roce || undefined,
                 // Google doesn't expose the 52w band, so leave the stored
                 // value untouched when it's the source that answered.
                 fiftyTwoWeekHigh: data.fiftyTwoWeekHigh || undefined,

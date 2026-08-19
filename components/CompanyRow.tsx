@@ -8,6 +8,11 @@ import type { EnrichedCompany } from './SectorList';
 import { useAdmin } from '@/context/AdminContext';
 import { ANALYSIS_WINDOW } from '@/lib/retention';
 
+// Quarter tabs shown in the collapsed row. Deliberately narrower than
+// ANALYSIS_WINDOW (which still governs what is retained and analysed) — the
+// row only has the width for two, and the space pays for the RoCE column.
+const ROW_QUARTERS = 2;
+
 import { COLOR_THEMES, ColorThemeKey, CONVICTION_CONFIG, ConvictionLevel } from './SectorList';
 
 const CONVICTION_CYCLE: (ConvictionLevel | null)[] = [null, 'HIGH', 'MEDIUM', 'LOW'];
@@ -106,10 +111,12 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     // Prefer fetched detail (richer) over the light homepage object.
     const effective = detail || company;
 
-    // Get selected quarter data. Capped at the analysis retention window —
-    // quarters past the (narrower) transcript window still get a tab, they just
-    // have no PDF button.
-    const quarters = useMemo(() => (effective.history || []).slice(0, ANALYSIS_WINDOW), [effective.history]);
+    // Get selected quarter data. Capped at ROW_QUARTERS — older quarters are
+    // still analysed and retained, they just don't get a tab in the row.
+    const quarters = useMemo(
+        () => (effective.history || []).slice(0, Math.min(ROW_QUARTERS, ANALYSIS_WINDOW)),
+        [effective.history]
+    );
 
     // How far the price sits below its 52-week high. Computed live rather than
     // stored, so it stays right between finance syncs.
@@ -265,7 +272,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                         row lines up vertically. Cells render empty rather than
                         collapsing, otherwise a company missing (say) P/B would pull
                         everything after it out of alignment. */}
-                    <div className="grid grid-cols-[36px_36px_58px_44px_48px_84px] gap-1.5 2xl:grid-cols-[38px_40px_62px_48px_52px_90px] 2xl:gap-2 items-center flex-shrink-0">
+                    <div className="grid grid-cols-[36px_36px_58px_44px_48px_56px_84px] gap-1.5 2xl:grid-cols-[38px_40px_62px_48px_52px_60px_90px] 2xl:gap-2 items-center flex-shrink-0">
                         {/* Price */}
                         <span className="text-[10px] text-gray-700 font-semibold text-right" title="Current price">
                             {company.currentPrice ? `₹${company.currentPrice}` : ''}
@@ -310,6 +317,21 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                     title={`P/B ratio: ${company.pbRatio}`}
                                 >
                                     {company.pbRatio}x
+                                </span>
+                            ) : null}
+                        </div>
+
+                        {/* RoCE — keeps a label because, unlike ₹ and the "x"
+                            suffix, a bare percentage here would read as the
+                            52-week drawdown. */}
+                        <div className="flex">
+                            {company.roce ? (
+                                <span
+                                    className="w-full flex items-center justify-center gap-0.5 px-1 py-0.5 bg-gray-50 rounded border border-gray-100"
+                                    title={`RoCE (return on capital employed): ${company.roce}%`}
+                                >
+                                    <span className="text-[8px] text-gray-400 font-medium uppercase">RoCE</span>
+                                    <span className="text-[10px] text-gray-600 font-semibold">{Math.round(company.roce)}%</span>
                                 </span>
                             ) : null}
                         </div>
