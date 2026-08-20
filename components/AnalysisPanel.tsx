@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { Download, TrendingUp, TrendingDown, Minus } from 'lucide-react';
+import { Download } from 'lucide-react';
 import { AnalysisResult } from '@/lib/ai-analyst';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -390,18 +390,6 @@ export function AnalysisPanel({
                     NOTES
                     {hasNotes && <span className="w-1.5 h-1.5 rounded-full bg-[#6B9FCC]" />}
                 </button>
-
-                {viewMode === "ANALYSIS" && activeData && (
-                    <div className="flex-1 flex items-center justify-end px-2">
-                        <span className={`text-[9px] uppercase font-medium ${activeData.guidance?.sentiment === 'positive'
-                            ? 'text-emerald-500 bg-emerald-50'
-                            : 'text-gray-500 bg-gray-100'
-                            } px-2 py-0.5 rounded-full flex items-center gap-1`}>
-                            {activeData.guidance?.sentiment === 'positive' ? <TrendingUp className="w-2.5 h-2.5" /> : <Minus className="w-2.5 h-2.5" />}
-                            {activeData.management_tone}/10
-                        </span>
-                    </div>
-                )}
             </div>
 
             {/* Content */}
