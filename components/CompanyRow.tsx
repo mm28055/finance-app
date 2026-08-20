@@ -34,6 +34,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     const [customColorTag, setCustomColorTag] = useState<string | null>(company.colorTag || null);
     const [selectedQuarterIdx, setSelectedQuarterIdx] = useState(0); // 0 = latest
     const [localNotes, setLocalNotes] = useState('');
+    const [notesStatus, setNotesStatus] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
     const notesTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
     const notesInitialized = useRef(false);
     const [localConviction, setLocalConviction] = useState<ConvictionLevel | null>(
@@ -100,11 +101,19 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
         setLocalNotes(value);
         if (notesTimerRef.current) clearTimeout(notesTimerRef.current);
         notesTimerRef.current = setTimeout(() => {
+            setNotesStatus('saving');
             fetch('/api/companies', {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ id: company.id, notes: value })
-            }).catch(console.error);
+            })
+                .then((res) => {
+                    // A 401 here means edit mode is off — surface that rather
+                    // than reporting a save that never happened.
+                    if (!res.ok) throw new Error(`Save failed (${res.status})`);
+                    setNotesStatus('saved');
+                })
+                .catch((e) => { console.error(e); setNotesStatus('error'); });
         }, 600);
     };
 
@@ -537,15 +546,6 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                             financials={selectedData?.financials || effective.financials}
                                             quarterName={selectedData?.quarter || effective.summary?.quarter}
                                         />
-                                        <div className="bg-white border border-gray-200 rounded-xl p-4">
-                                            <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-2">My Notes</p>
-                                            <textarea
-                                                value={localNotes}
-                                                onChange={(e) => handleNotesChange(e.target.value)}
-                                                placeholder="Add your research notes..."
-                                                className="w-full h-28 text-xs text-gray-700 bg-transparent resize-none focus:outline-none placeholder:text-gray-300 leading-relaxed"
-                                            />
-                                        </div>
                                         {effective.history && effective.history.length >= 2 && (
                                             <FinancialTrendChart history={effective.history} />
                                         )}
@@ -556,6 +556,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                             quarterName={selectedData?.quarter || effective.summary?.quarter}
                                             history={effective.history}
                                             profile={effective.profile}
+                                            notes={localNotes}
+                                            onNotesChange={handleNotesChange}
+                                            notesStatus={notesStatus}
                                             activeQuarterIndex={selectedQuarterIdx}
                                             onQuarterChange={(idx: number) => setSelectedQuarterIdx(idx)}
                                         />

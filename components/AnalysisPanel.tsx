@@ -12,6 +12,9 @@ export function AnalysisPanel({
     quarterName,
     history,
     profile,
+    notes = '',
+    onNotesChange,
+    notesStatus = 'idle',
     activeQuarterIndex = 0,
     onQuarterChange
 }: {
@@ -19,6 +22,9 @@ export function AnalysisPanel({
     quarterName?: string,
     history?: { quarter: string; analysis?: AnalysisResult; financials?: CompanyFinancials; pdfUrl?: string | null }[],
     profile?: string,
+    notes?: string,
+    onNotesChange?: (value: string) => void,
+    notesStatus?: 'idle' | 'saving' | 'saved' | 'error',
     activeQuarterIndex?: number,
     onQuarterChange?: (idx: number) => void
 }) {
@@ -32,7 +38,11 @@ export function AnalysisPanel({
     const [activeData, setActiveData] = useState<AnalysisResult | undefined>(
         safeHistory[activeQuarterIndex]?.analysis || analysis
     );
-    const [viewMode, setViewMode] = useState<"ANALYSIS" | "PROFILE" | "DELTA">("ANALYSIS");
+    const [viewMode, setViewMode] = useState<"ANALYSIS" | "PROFILE" | "DELTA" | "NOTES">("ANALYSIS");
+
+    // Drives the brighter NOTES tab, so the tab itself says whether
+    // anything has been written for this company.
+    const hasNotes = notes.trim().length > 0;
 
     // Sync with external activeQuarterIndex when it changes
     useEffect(() => {
@@ -40,7 +50,7 @@ export function AnalysisPanel({
             const match = safeHistory[activeQuarterIndex];
             setActiveQuarter(match.quarter);
             setActiveData(match.analysis);
-            if (viewMode === "PROFILE" || viewMode === "DELTA") {
+            if (viewMode === "PROFILE" || viewMode === "DELTA" || viewMode === "NOTES") {
                 // If we were on Profile or Delta, and a quarter is clicked, switch back to Analysis
                 // Actually, stay in current mode but update the underlying data
             } else {
@@ -64,12 +74,30 @@ export function AnalysisPanel({
         setActiveQuarter("PROFILE");
     };
 
+    const handleNotesClick = () => {
+        setViewMode("NOTES");
+        setActiveQuarter("NOTES");
+    };
+
     const handleDeltaClick = () => {
         setViewMode("DELTA");
         setActiveQuarter("DELTA");
     };
 
     const renderContent = () => {
+        if (viewMode === "NOTES") {
+            return (
+                <div className="p-4 h-full flex flex-col bg-white">
+                    <textarea
+                        value={notes}
+                        onChange={(e) => onNotesChange?.(e.target.value)}
+                        placeholder="Add your research notes on this company — thesis, red flags, things to check next quarter…"
+                        className="w-full flex-1 min-h-[220px] text-xs text-gray-700 bg-transparent resize-none focus:outline-none placeholder:text-gray-300 leading-relaxed"
+                    />
+                </div>
+            );
+        }
+
         if (viewMode === "PROFILE") {
             // Split by H1 or H2 at the start of a line to create distinct sections for coloring
             const content = (profile || "No profile available.").trim();
@@ -349,6 +377,20 @@ export function AnalysisPanel({
                     PROFILE
                 </button>
 
+                <button
+                    onClick={handleNotesClick}
+                    className={`px-3 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap flex items-center gap-1 ${viewMode === "NOTES"
+                        ? 'text-[#4A7AAF] border-[#6B9FCC] bg-white'
+                        : hasNotes
+                            ? 'text-gray-700 border-transparent hover:text-[#4A7AAF]'
+                            : 'text-gray-400 border-transparent hover:text-gray-600'
+                        }`}
+                    title={hasNotes ? 'Notes written for this company' : 'No notes yet'}
+                >
+                    NOTES
+                    {hasNotes && <span className="w-1.5 h-1.5 rounded-full bg-[#6B9FCC]" />}
+                </button>
+
                 {viewMode === "ANALYSIS" && activeData && (
                     <div className="flex-1 flex items-center justify-end px-2">
                         <span className={`text-[9px] uppercase font-medium ${activeData.guidance?.sentiment === 'positive'
@@ -368,6 +410,16 @@ export function AnalysisPanel({
             </div>
 
             {/* Footer */}
+            {viewMode === "NOTES" && (
+                <div className="px-3 py-2 border-t border-gray-100 flex justify-end items-center bg-gray-50/50">
+                    <span className={`text-[9px] ${notesStatus === 'error' ? 'text-red-500' : 'text-gray-400'}`}>
+                        {notesStatus === 'saving' ? 'Saving…'
+                            : notesStatus === 'saved' ? 'Saved'
+                                : notesStatus === 'error' ? 'Not saved — turn on edit mode to save notes'
+                                    : 'Saves automatically'}
+                    </span>
+                </div>
+            )}
             {viewMode === "ANALYSIS" && (
                 <div className="px-3 py-2 border-t border-gray-100 flex justify-between items-center bg-gray-50/50">
                     <span className="text-[9px] text-gray-400">Gemini 3 Pro Preview</span>
