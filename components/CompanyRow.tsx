@@ -140,8 +140,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     }, [company.currentPrice, company.fiftyTwoWeekHigh]);
     const selectedData = quarters[selectedQuarterIdx] || quarters[0];
 
-    // Target hit — the price is at or above what was set for it.
-    const targetHit = targetPrice !== null && !!company.currentPrice && company.currentPrice >= targetPrice;
+    // Target hit — a target is a buy price, so it triggers when the price has
+    // fallen TO it or below, not when it has run past it.
+    const targetHit = targetPrice !== null && !!company.currentPrice && company.currentPrice <= targetPrice;
 
     const saveTarget = (value: number | null) => {
         const previous = targetPrice;
@@ -317,22 +318,23 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                             price reaches it; clearing the target turns it off. */}
                         <div className="relative flex justify-end">
                             <button
+                                disabled={!isAdminMode}
                                 onClick={(e) => {
                                     e.stopPropagation();
                                     setTargetDraft(targetPrice !== null ? String(targetPrice) : '');
                                     setShowTargetInput(!showTargetInput);
                                 }}
-                                className={`text-[10px] font-semibold text-right hover:underline ${targetHit ? 'text-emerald-600' : 'text-gray-700'}`}
+                                className={`text-[10px] font-semibold text-right ${isAdminMode ? 'hover:underline' : 'cursor-default'} ${targetHit ? 'text-emerald-600' : 'text-gray-700'}`}
                                 title={
                                     targetPrice !== null
-                                        ? `Target ₹${targetPrice}${targetHit ? ' — reached' : ''} · click to change`
-                                        : 'Current price — click to set a target'
+                                        ? `Buy target ₹${targetPrice}${targetHit ? ' — reached' : ''}${isAdminMode ? ' · click to change' : ''}`
+                                        : isAdminMode ? 'Current price — click to set a target' : 'Current price'
                                 }
                             >
                                 {company.currentPrice ? `₹${company.currentPrice}` : '—'}
                             </button>
 
-                            {showTargetInput && (
+                            {isAdminMode && showTargetInput && (
                                 <>
                                     <div
                                         className="fixed inset-0 z-40"
