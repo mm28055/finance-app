@@ -1,6 +1,7 @@
 
 import { prisma } from '@/lib/prisma';
 import { Prisma } from '@prisma/client';
+import { GENERAL_Q } from '@/lib/retention';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_AI_KEY!);
@@ -31,8 +32,12 @@ async function getRecentQuarterIds(sector: string): Promise<string[]> {
         where: { sector: sector, isVisible: true },
         select: {
             id: true,
+            // The two latest QUARTERS. General slots are excluded from this take(2)
+            // so an investor meet can never push a real quarter out of the search
+            // window — they are added back separately below.
             transcripts: {
                 take: 2,
+                where: { quarter: { q: { not: GENERAL_Q } } },
                 orderBy: [
                     { quarter: { year: 'desc' } },
                     { quarter: { q: 'desc' } }
@@ -46,6 +51,19 @@ async function getRecentQuarterIds(sector: string): Promise<string[]> {
     companies.forEach(c => {
         c.transcripts.forEach(t => quarterIds.add(t.quarterId));
     });
+
+    // General documents (investor meets, analyst days) that are still inside their
+    // own retention window stay searchable — they are real company commentary,
+    // just not tied to a quarter's results.
+    const generalTranscripts = await prisma.transcript.findMany({
+        where: {
+            quarter: { q: GENERAL_Q },
+            company: { sector, isVisible: true }
+        },
+        select: { quarterId: true }
+    });
+    generalTranscripts.forEach(t => quarterIds.add(t.quarterId));
+
     return Array.from(quarterIds);
 }
 

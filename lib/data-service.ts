@@ -3,7 +3,7 @@ import { SectorData, EnrichedCompany } from '@/components/SectorList';
 import type { CompanyFinancials, MetricData } from '@/components/FinancialMatrix';
 import { AnalysisResult } from './ai-analyst';
 import { ANALYSIS_WINDOW, TRANSCRIPT_WINDOW, FINANCIALS_WINDOW } from './retention';
-import { quarterScore } from './quarters';
+import { quarterScore, GENERAL_Q } from './quarters';
 
 /**
  * Lightweight dashboard query used by the homepage.
@@ -61,6 +61,13 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             // the rest are here so the collapsed row shows the same quarter tabs
             // the expanded row will.
             analyses: {
+                // General slots are excluded here: this list drives the row's
+                // headline score and its quarter-on-quarter delta, and a General
+                // row sorts newest (its fiscal year is the current one), so an
+                // investor meet's score would be shown as the company's latest
+                // quarterly score. The General analysis is still readable — it is
+                // included in getCompanyDetail's history below.
+                where: { quarter: { q: { not: GENERAL_Q } } },
                 orderBy: [
                     { quarter: { year: 'desc' } },
                     { quarter: { q: 'desc' } }
@@ -75,6 +82,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             // loading the heavy rawText/analysis blobs. Only fileUrl + quarter
             // name are pulled; ~2 KB per company at most.
             transcripts: {
+                where: { quarter: { q: { not: GENERAL_Q } } },
                 orderBy: [
                     { quarter: { year: 'desc' } },
                     { quarter: { q: 'desc' } }
@@ -704,6 +712,9 @@ export async function getDashboardData(): Promise<SectorData[]> {
 
 export async function getTranscriptStats() {
     const quarters = await prisma.quarter.findMany({
+        // General slots are documents, not quarters — they must not appear as one
+        // of the two "latest quarters" in the header stats.
+        where: { q: { not: GENERAL_Q } },
         orderBy: [
             { year: 'desc' },
             { q: 'desc' },

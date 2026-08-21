@@ -1,5 +1,5 @@
 import { prisma } from '@/lib/prisma';
-import { pruneCompany, TRANSCRIPT_WINDOW } from '@/lib/retention';
+import { pruneCompany, TRANSCRIPT_WINDOW, GENERAL_Q } from '@/lib/retention';
 
 // Maps a concall event date to its reported fiscal quarter (Indian FY: Apr-Mar).
 // Concalls are filed AFTER quarter-end, so the event-date month determines
@@ -38,7 +38,10 @@ export function quarterScore(name: string): number {
 // we have" (or accept everything if the company has no transcripts yet).
 export async function getAcceptanceCutoff(companyId: string): Promise<number> {
     const latest = await prisma.transcript.findMany({
-        where: { companyId },
+        // General slots are excluded: they are not quarters, so letting one into
+        // the window would drag the cutoff down to its score (~0) and make the
+        // company accept every ancient concall Tijori still lists.
+        where: { companyId, quarter: { q: { not: GENERAL_Q } } },
         include: { quarter: true },
         orderBy: [{ quarter: { year: 'desc' } }, { quarter: { q: 'desc' } }],
         take: TRANSCRIPT_WINDOW
@@ -62,4 +65,45 @@ export async function shouldAcceptQuarter(companyId: string, quarterName: string
 // tabs from showing up in the UI.
 export async function pruneCompanyToWindow(companyId: string) {
     await pruneCompany(prisma, companyId);
+}
+
+// -----------------------------------------------------------------------------
+// "General" slots — non-quarterly documents (investor meets, analyst days, AGMs)
+// and any extra document filed inside a quarter that already has an earnings
+// call. See lib/doc-type.ts for why these are separated.
+//
+// They live in the Quarter table like any other row (Transcript/Analysis both
+// require a quarterId) but are marked with q = 'GEN' and named after the event
+// date, so two meets in one quarter never collide. Every ordering/retention path
+// filters them out via isGeneralQuarter — a General slot must never displace a
+// real quarter in a rolling window, nor act as the "latest quarter".
+// -----------------------------------------------------------------------------
+
+/** Sentinel stored in Quarter.q for non-quarterly documents (defined in
+ *  lib/retention.ts, which this module already depends on, and re-exported
+ *  here so quarter-shaped callers have one import). */
+export { GENERAL_Q };
+
+/** True for a Quarter row (or name) representing a non-quarterly document. */
+export function isGeneralQuarter(quarter: { q: string } | string): boolean {
+    if (typeof quarter === 'string') return quarter.startsWith('General ');
+    return quarter.q === GENERAL_Q;
+}
+
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+/**
+ * Slot name for a non-quarterly document, e.g. "General 06 Jul 2026".
+ * Keyed by event date so a company can hold several in the same quarter.
+ */
+export function generalQuarterName(eventDate: string | Date): string {
+    const d = new Date(eventDate);
+    const dd = d.getDate().toString().padStart(2, '0');
+    return `General ${dd} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
+}
+
+/** Fiscal year (Indian FY, Apr-Mar) an event date belongs to — for Quarter.year. */
+export function fiscalYearOf(eventDate: string | Date): number {
+    const d = new Date(eventDate);
+    return d.getMonth() <= 2 ? d.getFullYear() : d.getFullYear() + 1;
 }

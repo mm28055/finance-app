@@ -3,7 +3,7 @@ import path from 'path';
 import { prisma } from './prisma';
 import { geminiPro } from './gemini';
 import { searchWeb } from './web-search';
-import { quarterScore } from './quarters';
+import { quarterScore, GENERAL_Q } from './quarters';
 
 // -----------------------------------------------------------------------------
 // Company profile upkeep.
@@ -245,8 +245,11 @@ export async function updateCompanyProfile(
 
     // Newest-first, by quarter — NOT by createdAt, which reorders whenever an
     // older PDF happens to be downloaded later.
+    // General slots (investor meets, analyst days) are excluded: a profile is
+    // stamped with a quarter and written from that quarter's earnings call, and
+    // letting a General row into this window would push a real quarter out of it.
     const transcripts = await prisma.transcript.findMany({
-        where: { companyId },
+        where: { companyId, quarter: { q: { not: GENERAL_Q } } },
         include: { quarter: true },
         orderBy: [{ quarter: { year: 'desc' } }, { quarter: { q: 'desc' } }],
         take: 2

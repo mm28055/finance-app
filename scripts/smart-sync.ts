@@ -15,6 +15,11 @@ import { prisma } from '../lib/prisma';
 import { processTranscript } from '../lib/sync-service';
 import { updateCompanyProfile } from '../lib/profile-service';
 import { pruneCompany, TRANSCRIPT_WINDOW, ANALYSIS_WINDOW, FINANCIALS_WINDOW } from '../lib/retention';
+import { BUCKET_NAME, storagePathFromUrl } from '../lib/storage';
+import { generalQuarterName, fiscalYearOf, GENERAL_Q } from '../lib/quarters';
+import { classifyTranscript, isRelatedEntityCall } from '../lib/doc-type';
+// @ts-ignore - pdf-parse ships no types
+import pdfParse from 'pdf-parse';
 
 const TIJORI_API_KEY = "c74d557ef1cf4464820666dfb7dbc9e1";
 const BASE_URL = "https://www.tijoristack.ai/api/v1";
@@ -34,10 +39,9 @@ import { createClient } from '@supabase/supabase-js';
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const supabase = (SUPABASE_URL && SUPABASE_KEY) ? createClient(SUPABASE_URL, SUPABASE_KEY) : null;
-const BUCKET_NAME = 'Conf Call Pdfs';
 
 // Updated Download Helper: Supports Local OR Supabase
-async function handleFileDownload(url: string, localPath: string, subPath: string): Promise<{ success: boolean, finalPath: string }> {
+async function handleFileDownload(url: string, localPath: string, subPath: string): Promise<{ success: boolean, finalPath: string, buffer: Buffer }> {
     // 1. Download Buffer
     const buffer = await new Promise<Buffer | null>((resolve) => {
         const fetch = (currentUrl: string) => {
@@ -71,7 +75,7 @@ async function handleFileDownload(url: string, localPath: string, subPath: strin
             if (uploadError) throw uploadError;
 
             const { data: { publicUrl } } = supabase.storage.from(BUCKET_NAME).getPublicUrl(cloudKey);
-            return { success: true, finalPath: publicUrl };
+            return { success: true, finalPath: publicUrl, buffer };
         } catch (e: any) {
             console.error(`   ⚠️ Supabase Upload Failed (${e.message}). Falling back to local.`);
         }
@@ -81,7 +85,7 @@ async function handleFileDownload(url: string, localPath: string, subPath: strin
     const dir = path.dirname(localPath);
     if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(localPath, buffer);
-    return { success: true, finalPath: localPath };
+    return { success: true, finalPath: localPath, buffer };
 }
 
 async function fetchFromTijori(isin: string) {
@@ -148,15 +152,16 @@ async function logToDB(jobId: string, status: string, message: string, companyNa
 async function deleteStoredPdf(fileUrl: string | null, companyName: string, qName: string) {
     if (!fileUrl || !fileUrl.startsWith('http') || !supabase) return;
     try {
-        const urlParts = fileUrl.split(`/storage/v1/object/public/${BUCKET_NAME}/`);
-        if (urlParts.length === 2) {
-            const storagePath = decodeURIComponent(urlParts[1]);
-            const { error } = await supabase.storage.from(BUCKET_NAME).remove([storagePath]);
-            if (error) {
-                console.error(`   ⚠️ Supabase delete failed for ${companyName} ${qName}: ${error.message}`);
-            } else {
-                console.log(`   🗑️ Deleted Supabase PDF: ${storagePath}`);
-            }
+        const storagePath = storagePathFromUrl(fileUrl);
+        if (!storagePath) {
+            console.error(`   ⚠️ Could not derive storage path for ${companyName} ${qName}: ${fileUrl}`);
+            return;
+        }
+        const { error } = await supabase.storage.from(BUCKET_NAME).remove([storagePath]);
+        if (error) {
+            console.error(`   ⚠️ Supabase delete failed for ${companyName} ${qName}: ${error.message}`);
+        } else {
+            console.log(`   🗑️ Deleted Supabase PDF: ${storagePath}`);
         }
     } catch (e: any) {
         console.error(`   ⚠️ Supabase cleanup error: ${e.message}`);
@@ -438,6 +443,15 @@ async function main() {
             const uniqueDesc: number[] = Array.from(new Set(allScores)).sort((a, b) => b - a);
             const top2Scores: Set<number> = new Set(uniqueDesc.slice(0, TRANSCRIPT_WINDOW));
 
+            // How many eligible documents we've already seen for each quarter in
+            // this pass. Tijori files investor meets, analyst days and business
+            // updates under the quarter their event date falls in, so a quarter can
+            // carry more than one document. The first is the candidate earnings
+            // call; everything after it is an extra and goes to a General slot,
+            // instead of being silently dropped by the one-transcript-per-quarter
+            // unique constraint (which is what used to happen).
+            const seenPerQuarter = new Map<string, number>();
+
             for (const item of list) {
                 let link = item.transcript;
                 if (!link || !link.startsWith('http')) continue;
@@ -457,28 +471,85 @@ async function main() {
                 // for this company.
                 if (!top2Scores.has(quarterScore(fyq))) continue;
 
-                // Setup Paths
+                const seq = seenPerQuarter.get(fyq) || 0;
+                seenPerQuarter.set(fyq, seq + 1);
+                const isFirstOfQuarter = seq === 0;
+
+                const eventDate = new Date(item.concall_event_time);
+                // The General slot this document would occupy if it turns out not
+                // to be this company's earnings call for the quarter. Keyed by
+                // event date, so two documents inside one quarter never collide.
+                const genName = generalQuarterName(item.concall_event_time);
+
+                const existingByName = async (name: string) => {
+                    const q = await prisma.quarter.findUnique({ where: { name } });
+                    if (!q) return null;
+                    return prisma.transcript.findUnique({
+                        where: { companyId_quarterId: { companyId: co.id, quarterId: q.id } },
+                        include: { quarter: true }
+                    });
+                };
+
+                // --- Which slot does this document belong in? ---
+                // Identity first: sourceEventDate says exactly which document a
+                // stored row came from, so "already have this one" never has to be
+                // inferred from list position. Rows written before that column
+                // existed have it null and fall back to the old assumption — the
+                // first document listed for a quarter is the one sitting in it.
+                // Matched by DAY, not by exact timestamp. The stored value can come
+                // from Tijori (which carries a time) or from the transcript's own
+                // stated date (which does not), and an exact comparison between the
+                // two silently fails — re-downloading a document already held.
+                const dayStart = new Date(Date.UTC(
+                    eventDate.getUTCFullYear(), eventDate.getUTCMonth(), eventDate.getUTCDate()
+                ));
+                const dayEnd = new Date(dayStart.getTime() + 24 * 60 * 60 * 1000);
+
+                let targetName = fyq;
+                let existingTranscript = await prisma.transcript.findFirst({
+                    where: { companyId: co.id, sourceEventDate: { gte: dayStart, lt: dayEnd } },
+                    include: { quarter: true }
+                });
+
+                if (existingTranscript) {
+                    targetName = existingTranscript.quarter.name;
+                } else {
+                    const genExisting = await existingByName(genName);
+                    if (genExisting) {
+                        existingTranscript = genExisting;
+                        targetName = genName;
+                    } else {
+                        const qExisting = await existingByName(fyq);
+                        if (qExisting && !qExisting.sourceEventDate && isFirstOfQuarter) {
+                            // Legacy row, no event date recorded: assume it is this
+                            // document. Backfilled below so the guess is made once.
+                            existingTranscript = qExisting;
+                            targetName = fyq;
+                        } else if (qExisting) {
+                            // The quarter is already held by a different document.
+                            targetName = genName;
+                        }
+                    }
+                }
+
+                // Record the event date on a legacy row so the next run matches it
+                // by identity instead of position.
+                if (existingTranscript && existingTranscript.sourceEventDate?.getTime() !== eventDate.getTime()) {
+                    await prisma.transcript.update({
+                        where: { id: existingTranscript.id },
+                        data: { sourceEventDate: eventDate }
+                    });
+                }
+
+                // Setup Paths (folder follows whichever slot we land in)
                 const sectorFolder = (co.sector || 'Unsorted');
                 const safeName = co.name.replace(/[^a-z0-9]/gi, '_').trim();
-                const dirPath = path.join(CONCALLS_DIR, sectorFolder, fyq);
-                // Standardize filename: Company_Name_Q3_FY26.pdf
-                const fileName = `${safeName}_${fyq.replace(/\s+/g, '_')}.pdf`;
-                const finalPath = path.join(dirPath, fileName);
 
-                // --- CHECK DB STATUS ---
-                // First ensure Quarter exists
-                const quarter = await prisma.quarter.upsert({
-                    where: { name: fyq },
-                    update: {},
-                    create: { name: fyq, year: qYear, q: qType }
-                });
-
-                // Find existing transcript
-                const existingTranscript = await prisma.transcript.findUnique({
-                    where: {
-                        companyId_quarterId: { companyId: co.id, quarterId: quarter.id }
-                    }
-                });
+                const pathsFor = (slotName: string) => {
+                    const dirPath = path.join(CONCALLS_DIR, sectorFolder, slotName);
+                    const fileName = `${safeName}_${slotName.replace(/\s+/g, '_')}.pdf`;
+                    return { dirPath, fileName, finalPath: path.join(dirPath, fileName) };
+                };
 
                 // Logic:
                 // 1. If file missing locally (AND we aren't using Supabase check) -> Download
@@ -497,20 +568,54 @@ async function main() {
                 // Actually simpler: If !existingTranscript, we definitely need to download.
 
                 if (!existingTranscript) {
-                    // console.log(`  ⬇️  Downloading ${fyq} for ${co.name}...`);
                     try {
-                        // Construct relative cloud path: "Tyres/Q2 FY26/MRF.pdf"
-                        // sectorFolder might have spaces, replace with underscores? No, S3/Storage handles spaces usually, but safer to match logic
-                        const cloudSubPath = path.join(sectorFolder, fyq, fileName);
+                        // Download once to a temporary location, then decide the
+                        // slot from what the document actually is. Extras skip the
+                        // classification: being the second document in a quarter is
+                        // already enough to keep them out of the quarter slot.
+                        const originalTarget = targetName;
+                        const probe = pathsFor(targetName);
+                        const result = await handleFileDownload(
+                            link, probe.finalPath, path.join(sectorFolder, targetName, probe.fileName)
+                        );
+                        if (!result.success) throw new Error('download reported failure');
 
-                        const result = await handleFileDownload(link, finalPath, cloudSubPath);
-                        if (result.success) {
-                            finalDownloadUrl = result.finalPath;
-                            downloadSuccess = true;
-                            downloadedCount++;
-                            const statusMsg = finalDownloadUrl?.startsWith('http') ? 'Uploaded to Cloud' : 'Saved Locally';
-                            await logToDB(jobId, 'DOWNLOADED', statusMsg, co.name, fyq);
+                        if (targetName === fyq) {
+                            let text = '';
+                            try {
+                                text = (await pdfParse(result.buffer)).text || '';
+                            } catch {
+                                // Unparseable PDF: leave it in the quarter slot and
+                                // let processTranscript surface the problem.
+                            }
+                            const verdict = classifyTranscript(text);
+                            const related = isRelatedEntityCall(text, co.name);
+                            if (verdict.type === 'GENERAL' || related) {
+                                targetName = genName;
+                                const why = related
+                                    ? "a related entity's call, not this company's"
+                                    : 'not an earnings call';
+                                console.log(`  📄 ${co.name.trim()}: ${fyq} document is ${why} — filing as "${genName}".`);
+                                await logToDB(jobId, 'INFO', `${why} — filed as ${genName}`, co.name, fyq);
+                            }
                         }
+
+                        // Re-upload under the final slot when classification moved
+                        // it, so the stored path matches the slot it belongs to.
+                        if (targetName !== originalTarget) {
+                            const dest = pathsFor(targetName);
+                            const moved = await handleFileDownload(
+                                link, dest.finalPath, path.join(sectorFolder, targetName, dest.fileName)
+                            );
+                            finalDownloadUrl = moved.finalPath;
+                        } else {
+                            finalDownloadUrl = result.finalPath;
+                        }
+
+                        downloadSuccess = true;
+                        downloadedCount++;
+                        const statusMsg = finalDownloadUrl?.startsWith('http') ? 'Uploaded to Cloud' : 'Saved Locally';
+                        await logToDB(jobId, 'DOWNLOADED', statusMsg, co.name, targetName);
                     } catch (err: any) {
                         console.error(`  ❌ Download/Upload failed: ${err.message}`);
                         await logToDB(jobId, 'ERROR', `Download failed: ${err.message}`, co.name, fyq);
@@ -518,12 +623,29 @@ async function main() {
                     }
                 }
 
+                // The slot is settled — create its Quarter row now.
+                const isGeneralSlot = targetName !== fyq;
+                const quarter = await prisma.quarter.upsert({
+                    where: { name: targetName },
+                    update: {},
+                    create: isGeneralSlot
+                        ? { name: targetName, year: fiscalYearOf(item.concall_event_time), q: GENERAL_Q }
+                        : { name: targetName, year: qYear, q: qType }
+                });
+
                 if (downloadSuccess && finalDownloadUrl) {
                     // Update/Create DB Record
                     let transcriptId = existingTranscript?.id;
 
                     if (!existingTranscript) {
-                        transcriptId = `real-${(co.ticker || co.id).toUpperCase()}-${fyq.replace(/\s+/g, '-')}`.replace(/[^a-zA-Z0-9-]/g, '');
+                        transcriptId = `real-${(co.ticker || co.id).toUpperCase()}-${targetName.replace(/\s+/g, '-')}`.replace(/[^a-zA-Z0-9-]/g, '');
+                        // Ids used to be derived from the quarter alone, so rows that
+                        // have since moved slots can already own the name we just
+                        // built. Fall back to a unique one rather than aborting the
+                        // whole company on a constraint error.
+                        if (await prisma.transcript.findUnique({ where: { id: transcriptId } })) {
+                            transcriptId = `${transcriptId}-${eventDate.toISOString().slice(0, 10)}`;
+                        }
                         await prisma.transcript.create({
                             data: {
                                 id: transcriptId,
@@ -531,10 +653,11 @@ async function main() {
                                 quarterId: quarter.id,
                                 fileUrl: finalDownloadUrl, // Use the new URL (Cloud or Local)
                                 hasAnalysis: false,
-                                rawText: ''
+                                rawText: '',
+                                sourceEventDate: eventDate
                             }
                         });
-                        await logToDB(jobId, 'INFO', `Created Transcript Record`, co.name, fyq);
+                        await logToDB(jobId, 'INFO', `Created Transcript Record`, co.name, targetName);
                     } else if (existingTranscript.fileUrl !== finalDownloadUrl) {
                         // Only update if path changed (e.g. migrating local -> cloud manually?)
                         // Usually won't happen here, but good for safety.
@@ -545,16 +668,20 @@ async function main() {
 
                     if (needsAnalysis && transcriptId) {
                         // console.log(`  🤖 Triggering AI Analysis for ${co.name}...`);
-                        await logToDB(jobId, 'ANALYZING', `Analysis Started`, co.name, fyq);
+                        await logToDB(jobId, 'ANALYZING', `Analysis Started`, co.name, targetName);
                         try {
                             await processTranscript(transcriptId);
                             analyzedCount++;
-                            await logToDB(jobId, 'COMPLETED', `Analysis Finished`, co.name, fyq);
+                            await logToDB(jobId, 'COMPLETED', `Analysis Finished`, co.name, targetName);
 
                             // Remember the newest quarter analyzed so the profile is
                             // refreshed ONCE per company after the loop, even when two
                             // quarters land together.
-                            if (!newestAnalyzedQuarter || quarterScore(fyq) > quarterScore(newestAnalyzedQuarter)) {
+                            // General documents are deliberately excluded: the
+                            // profile is stamped with a quarter, and stamping it
+                            // "General 06 Jul 2026" would both read wrong and make
+                            // the company look permanently stale to --stale runs.
+                            if (!isGeneralSlot && (!newestAnalyzedQuarter || quarterScore(fyq) > quarterScore(newestAnalyzedQuarter))) {
                                 newestAnalyzedQuarter = fyq;
                             }
 
@@ -570,7 +697,7 @@ async function main() {
 
                         } catch (aiErr: any) {
                             console.error(`  ⚠️ AI Failed: ${aiErr.message}`);
-                            await logToDB(jobId, 'ERROR', `Analysis Failed: ${aiErr.message}`, co.name, fyq);
+                            await logToDB(jobId, 'ERROR', `Analysis Failed: ${aiErr.message}`, co.name, targetName);
                         }
                     }
                 }

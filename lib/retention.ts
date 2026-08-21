@@ -34,6 +34,24 @@ export const DELTA_WINDOW = 1;
 /** Financials rows: 5 so YoY (t-4) is computable for the latest quarter. */
 export const FINANCIALS_WINDOW = 5;
 
+/**
+ * Sentinel stored in Quarter.q for "General" slots — investor meets, analyst
+ * days, AGMs and any extra document filed inside a quarter that already has an
+ * earnings call. Defined here rather than in lib/quarters.ts because that module
+ * imports this one; re-exported there for callers.
+ */
+export const GENERAL_Q = 'GEN';
+
+/**
+ * General slots get their own windows, applied independently of the quarterly
+ * ones. They must never share a window with real quarters: a General row sorts
+ * below same-year quarters, so it would be the first thing evicted (losing the
+ * document the moment two quarters exist) while still counting against the
+ * quarterly budget.
+ */
+export const GENERAL_TRANSCRIPT_WINDOW = 2;
+export const GENERAL_ANALYSIS_WINDOW = 4;
+
 // Newest quarter first. `q` is a string ('Q1'..'Q4') so a desc string sort is
 // also a desc quarter sort within a fiscal year.
 const NEWEST_FIRST = [
@@ -62,13 +80,18 @@ export interface PruneHooks {
  */
 export async function pruneCompany(db: PrismaClient, companyId: string, hooks: PruneHooks = {}) {
     // --- Transcripts + PDFs + RAG chunks: keep TRANSCRIPT_WINDOW ---
-    const transcripts = await db.transcript.findMany({
+    const allTranscripts = await db.transcript.findMany({
         where: { companyId },
         include: { quarter: true },
         orderBy: NEWEST_FIRST
     });
+    const transcripts = allTranscripts.filter(t => t.quarter.q !== GENERAL_Q);
+    const generalTranscripts = allTranscripts.filter(t => t.quarter.q === GENERAL_Q);
 
-    for (const old of transcripts.slice(TRANSCRIPT_WINDOW)) {
+    for (const old of [
+        ...transcripts.slice(TRANSCRIPT_WINDOW),
+        ...generalTranscripts.slice(GENERAL_TRANSCRIPT_WINDOW)
+    ]) {
         await hooks.onTranscriptEvict?.({
             id: old.id,
             quarterId: old.quarterId,
@@ -80,13 +103,18 @@ export async function pruneCompany(db: PrismaClient, companyId: string, hooks: P
     }
 
     // --- Analyses: keep ANALYSIS_WINDOW ---
-    const analyses = await db.analysis.findMany({
+    const allAnalyses = await db.analysis.findMany({
         where: { companyId },
         include: { quarter: true },
         orderBy: NEWEST_FIRST
     });
+    const analyses = allAnalyses.filter(a => a.quarter.q !== GENERAL_Q);
+    const generalAnalyses = allAnalyses.filter(a => a.quarter.q === GENERAL_Q);
 
-    for (const old of analyses.slice(ANALYSIS_WINDOW)) {
+    for (const old of [
+        ...analyses.slice(ANALYSIS_WINDOW),
+        ...generalAnalyses.slice(GENERAL_ANALYSIS_WINDOW)
+    ]) {
         await hooks.onAnalysisEvict?.({
             id: old.id,
             quarterId: old.quarterId,
@@ -120,7 +148,7 @@ export async function pruneCompany(db: PrismaClient, companyId: string, hooks: P
 
     // --- Financials: keep FINANCIALS_WINDOW ---
     const financials = await db.financials.findMany({
-        where: { companyId },
+        where: { companyId, quarter: { q: { not: GENERAL_Q } } },
         include: { quarter: true },
         orderBy: NEWEST_FIRST
     });

@@ -64,6 +64,13 @@ model Transcript {
   fileUrl     String?
   rawText     String?
   hasAnalysis Boolean  @default(false)
+  // The concall event this document came from. Identity for the sync: Tijori can
+  // list several documents inside one quarter (an investor meet, a related
+  // entity's call, the company's own results call), and without the event date
+  // the only way to tell "already have this one" from "this is a different
+  // document" was its position in the list — which put IRB's InvIT call in the
+  // quarter slot and the company's real Q1 FY27 call in a General slot.
+  sourceEventDate DateTime? @db.Timestamptz(6)
   createdAt   DateTime @default(now()) @db.Timestamptz(6)
   filePath    String?
   company     Company  @relation(fields: [companyId], references: [id])
