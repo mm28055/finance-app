@@ -36,6 +36,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             roce: true,
             fiftyTwoWeekHigh: true,
             fiftyTwoWeekLow: true,
+            targetPrice: true,
             financials: {
                 orderBy: [
                     { quarter: { year: 'desc' } },
@@ -158,6 +159,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             roce: co.roce ? Number(co.roce) : undefined,
             fiftyTwoWeekHigh: co.fiftyTwoWeekHigh ? Number(co.fiftyTwoWeekHigh) : undefined,
             fiftyTwoWeekLow: co.fiftyTwoWeekLow ? Number(co.fiftyTwoWeekLow) : undefined,
+            targetPrice: co.targetPrice ? Number(co.targetPrice) : undefined,
             geminiScore: latestA?.investibilityScore ?? undefined,
             geminiScoreDelta,
             colorTag: co.colorTag || undefined,
@@ -205,6 +207,7 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
             roce: true,
             fiftyTwoWeekHigh: true,
             fiftyTwoWeekLow: true,
+            targetPrice: true,
             financials: {
                 orderBy: [
                     { quarter: { year: 'desc' } },
@@ -693,6 +696,7 @@ export async function getDashboardData(): Promise<SectorData[]> {
             roce: co.roce ? Number(co.roce) : undefined,
             fiftyTwoWeekHigh: co.fiftyTwoWeekHigh ? Number(co.fiftyTwoWeekHigh) : undefined,
             fiftyTwoWeekLow: co.fiftyTwoWeekLow ? Number(co.fiftyTwoWeekLow) : undefined,
+            targetPrice: co.targetPrice ? Number(co.targetPrice) : undefined,
             geminiScore: currentAnalysis?.investibility_score,
             geminiScoreDelta,
             colorTag: co.colorTag || undefined

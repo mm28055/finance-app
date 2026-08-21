@@ -27,6 +27,9 @@ model Company {
   colorTag        String?      // Stores the custom color theme key (e.g. 'purple', 'emerald')
   notes           String?
   conviction      String?      // 'HIGH' | 'MEDIUM' | 'LOW' | null
+  // Price the row should start celebrating at. Set by hand from the row;
+  // null means no target and the price renders in its normal grey.
+  targetPrice     Decimal?     @db.Decimal
   createdAt       DateTime     @default(now()) @db.Timestamptz(6)
   updatedAt       DateTime     @updatedAt @db.Timestamptz(6)
   bookValue       Decimal?     @db.Decimal

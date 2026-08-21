@@ -94,7 +94,9 @@ export async function PUT(req: NextRequest) {
             businessProfile: body.businessProfile,
             colorTag: body.colorTag,
             notes: body.notes,
-            conviction: body.conviction ?? undefined
+            conviction: body.conviction ?? undefined,
+            // null clears the target; undefined (field absent) leaves it alone.
+            targetPrice: body.targetPrice === undefined ? undefined : body.targetPrice
         }
     });
 

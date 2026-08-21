@@ -49,6 +49,7 @@ export interface EnrichedCompany {
     roce?: number;
     fiftyTwoWeekHigh?: number;
     fiftyTwoWeekLow?: number;
+    targetPrice?: number;
     geminiScore?: number;
     geminiScoreDelta?: number;
     colorTag?: string;

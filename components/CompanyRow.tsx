@@ -34,6 +34,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     const [customColorTag, setCustomColorTag] = useState<string | null>(company.colorTag || null);
     const [selectedQuarterIdx, setSelectedQuarterIdx] = useState(0); // 0 = latest
     const [localNotes, setLocalNotes] = useState('');
+    const [targetPrice, setTargetPrice] = useState<number | null>(company.targetPrice ?? null);
+    const [showTargetInput, setShowTargetInput] = useState(false);
+    const [targetDraft, setTargetDraft] = useState('');
     const [notesStatus, setNotesStatus] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
     const notesTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
     const notesInitialized = useRef(false);
@@ -136,6 +139,34 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
         return Math.round(((high - price) / high) * 100);
     }, [company.currentPrice, company.fiftyTwoWeekHigh]);
     const selectedData = quarters[selectedQuarterIdx] || quarters[0];
+
+    // Target hit — the price is at or above what was set for it.
+    const targetHit = targetPrice !== null && !!company.currentPrice && company.currentPrice >= targetPrice;
+
+    const saveTarget = (value: number | null) => {
+        const previous = targetPrice;
+        setTargetPrice(value);
+        setShowTargetInput(false);
+        fetch('/api/companies', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: company.id, targetPrice: value })
+        })
+            .then((res) => {
+                // A 401 means edit mode is off. Put the old target back rather
+                // than leaving a green price that nothing has actually saved.
+                if (!res.ok) throw new Error(`Save failed (${res.status})`);
+            })
+            .catch((e) => { console.error(e); setTargetPrice(previous); });
+    };
+
+    const handleTargetSubmit = () => {
+        const trimmed = targetDraft.trim();
+        if (!trimmed) { saveTarget(null); return; }
+        const parsed = Number(trimmed);
+        if (!isFinite(parsed) || parsed <= 0) { setShowTargetInput(false); return; }
+        saveTarget(parsed);
+    };
 
     const handleConvictionClick = (e: React.MouseEvent) => {
         e.stopPropagation();
@@ -282,10 +313,67 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                         collapsing, otherwise a company missing (say) P/B would pull
                         everything after it out of alignment. */}
                     <div className="grid grid-cols-[36px_36px_58px_44px_48px_56px_84px] gap-1.5 2xl:grid-cols-[38px_40px_62px_48px_52px_60px_90px] 2xl:gap-2 items-center flex-shrink-0">
-                        {/* Price */}
-                        <span className="text-[10px] text-gray-700 font-semibold text-right" title="Current price">
-                            {company.currentPrice ? `₹${company.currentPrice}` : ''}
-                        </span>
+                        {/* Price — click to set a target. Turns green once the
+                            price reaches it; clearing the target turns it off. */}
+                        <div className="relative flex justify-end">
+                            <button
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    setTargetDraft(targetPrice !== null ? String(targetPrice) : '');
+                                    setShowTargetInput(!showTargetInput);
+                                }}
+                                className={`text-[10px] font-semibold text-right hover:underline ${targetHit ? 'text-emerald-600' : 'text-gray-700'}`}
+                                title={
+                                    targetPrice !== null
+                                        ? `Target ₹${targetPrice}${targetHit ? ' — reached' : ''} · click to change`
+                                        : 'Current price — click to set a target'
+                                }
+                            >
+                                {company.currentPrice ? `₹${company.currentPrice}` : '—'}
+                            </button>
+
+                            {showTargetInput && (
+                                <>
+                                    <div
+                                        className="fixed inset-0 z-40"
+                                        onClick={(e) => { e.stopPropagation(); setShowTargetInput(false); }}
+                                    />
+                                    <div
+                                        className="absolute top-full left-0 mt-1 z-50 bg-white border border-gray-200 rounded shadow-lg p-2 flex items-center gap-1"
+                                        onClick={(e) => e.stopPropagation()}
+                                    >
+                                        <span className="text-[10px] text-gray-400">₹</span>
+                                        <input
+                                            autoFocus
+                                            type="number"
+                                            value={targetDraft}
+                                            onChange={(e) => setTargetDraft(e.target.value)}
+                                            onKeyDown={(e) => {
+                                                if (e.key === 'Enter') handleTargetSubmit();
+                                                if (e.key === 'Escape') setShowTargetInput(false);
+                                            }}
+                                            placeholder="Target"
+                                            className="w-16 text-[10px] px-1 py-0.5 border border-gray-200 rounded focus:outline-none focus:border-gray-400"
+                                        />
+                                        <button
+                                            onClick={handleTargetSubmit}
+                                            className="text-[10px] font-semibold text-emerald-600 hover:text-emerald-700 px-1"
+                                        >
+                                            Set
+                                        </button>
+                                        {targetPrice !== null && (
+                                            <button
+                                                onClick={() => { setTargetDraft(''); saveTarget(null); }}
+                                                className="text-[10px] text-gray-400 hover:text-gray-600 px-1"
+                                                title="Remove target"
+                                            >
+                                                Off
+                                            </button>
+                                        )}
+                                    </div>
+                                </>
+                            )}
+                        </div>
 
                         {/* Distance from the 52-week high. The ₹ figure carries the
                             "price" meaning on its own, so the label is dropped to
