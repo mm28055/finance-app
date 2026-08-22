@@ -65,15 +65,6 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
                         >
                             Dashboard
                         </button>
-                        {/* View Logs Trigger (Only if not running, to view past logs) */}
-                        {isAdminMode && (
-                            <button
-                                onClick={() => setShowSyncPanel(true)}
-                                className="w-full text-left px-3 py-2 rounded-lg hover:bg-[#D4E5F7] text-gray-600 hover:text-gray-900 transition-colors text-xs font-medium flex items-center gap-2"
-                            >
-                                Sync Logs
-                            </button>
-                        )}
                     </div>
 
                     <GeneralNotesList onNavigate={onClose} />
