@@ -2,11 +2,13 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { X, StickyNote, Minus, Check, Loader2 } from 'lucide-react';
 import { useNotes } from '@/context/NotesContext';
+import { useAdmin } from '@/context/AdminContext';
 
 type SaveState = 'idle' | 'loading' | 'saving' | 'saved';
 
 export function NotesPanel() {
     const { isOpen, activeNote, closeNotes } = useNotes();
+    const { isAdminMode } = useAdmin();
     const [isMinimized, setIsMinimized] = useState(false);
     const [content, setContent] = useState("");
     const [state, setState] = useState<SaveState>('idle');
@@ -85,7 +87,7 @@ export function NotesPanel() {
                             {state === 'saving' && (<><Loader2 className="w-3 h-3 animate-spin" /> Saving…</>)}
                             {state === 'saved' && (<><Check className="w-3 h-3 text-emerald-500" /> Saved</>)}
                             {state === 'loading' && 'Loading…'}
-                            {state === 'idle' && 'Saves automatically'}
+                            {state === 'idle' && (isAdminMode ? 'Saves automatically' : 'Read only — sign in to edit')}
                         </p>
                     </div>
                 </div>
@@ -104,12 +106,13 @@ export function NotesPanel() {
                 <div className="flex-1 p-4 bg-[#FAFBFC] overflow-hidden">
                     <textarea
                         value={content}
+                        readOnly={!isAdminMode}
                         onChange={(e) => { isDirty.current = true; setContent(e.target.value); }}
                         onBlur={() => { if (isDirty.current) persist(contentRef.current, noteRef.current); }}
-                        placeholder={activeNote.scope === 'SECTOR'
+                        placeholder={!isAdminMode ? '' : activeNote.scope === 'SECTOR'
                             ? `Write your notes on ${activeNote.key} companies — theses, red flags, things to watch…`
                             : `Write anything — company ideas, watchlist, meeting takeaways…`}
-                        className="w-full h-full resize-none bg-white border border-gray-200 rounded-xl p-4 text-sm leading-relaxed text-gray-700 focus:outline-none focus:border-[#A5C4E2] focus:ring-2 focus:ring-[#D4E5F7] placeholder:text-gray-400 custom-scrollbar transition-all"
+                        className={`w-full h-full resize-none border border-gray-200 ${isAdminMode ? 'bg-white' : 'bg-gray-50 cursor-default'} rounded-xl p-4 text-sm leading-relaxed text-gray-700 focus:outline-none focus:border-[#A5C4E2] focus:ring-2 focus:ring-[#D4E5F7] placeholder:text-gray-400 custom-scrollbar transition-all`}
                     />
                 </div>
             )}

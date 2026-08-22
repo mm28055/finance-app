@@ -1,6 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
 import { defaultNoteTitle } from '@/lib/notes';
+
+// Reading notes is open to any visitor; changing them needs a signed-in editor.
+async function requireEditor() {
+    const session = await getServerSession(authOptions);
+    return session ? null : NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+}
 
 // GET: With `list=1`, returns every note in the scope (key + title only) so the
 // sidebar can render them. Otherwise returns one note's body for a scope/key
@@ -49,6 +57,9 @@ export async function GET(req: NextRequest) {
 // autosaving a body never wipes the name.
 export async function POST(req: NextRequest) {
     try {
+        const denied = await requireEditor();
+        if (denied) return denied;
+
         const { scope, key, content, title } = await req.json();
 
         if (!scope || !key) {
@@ -73,6 +84,9 @@ export async function POST(req: NextRequest) {
 // PATCH: Rename a note. Creates the row if the note has never been saved.
 export async function PATCH(req: NextRequest) {
     try {
+        const denied = await requireEditor();
+        if (denied) return denied;
+
         const { scope, key, title } = await req.json();
 
         if (!scope || !key) {
@@ -100,6 +114,9 @@ export async function PATCH(req: NextRequest) {
 // DELETE: Remove a note for good.
 export async function DELETE(req: NextRequest) {
     try {
+        const denied = await requireEditor();
+        if (denied) return denied;
+
         const { searchParams } = new URL(req.url);
         const scope = searchParams.get('scope');
         const key = searchParams.get('key');

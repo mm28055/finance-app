@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { cn } from "@/lib/utils";
 import { FileText, Plus, Pencil, Trash2 } from 'lucide-react';
 import { useNotes } from '@/context/NotesContext';
+import { useAdmin } from '@/context/AdminContext';
 
 interface GeneralNotesListProps {
     onNavigate?: () => void;
@@ -10,6 +11,7 @@ interface GeneralNotesListProps {
 
 export function GeneralNotesList({ onNavigate }: GeneralNotesListProps) {
     const { generalNotes, activeNote, isOpen, openGeneralNote, createGeneralNote, renameGeneralNote, deleteGeneralNote } = useNotes();
+    const { isAdminMode } = useAdmin();
     // `null` means "not creating"; a string is the name being typed for a new note.
     const [draftName, setDraftName] = useState<string | null>(null);
     const [renamingKey, setRenamingKey] = useState<string | null>(null);
@@ -43,19 +45,21 @@ export function GeneralNotesList({ onNavigate }: GeneralNotesListProps) {
         <div className="mt-4">
             <div className="px-4 mb-2 flex items-center justify-between">
                 <span className="text-[10px] font-medium text-gray-400 uppercase tracking-wider">Notes</span>
-                <button
-                    onClick={() => { setDraftName(""); setConfirmKey(null); }}
-                    className="text-gray-400 hover:text-[#6B9FCC] transition-colors p-0.5 rounded hover:bg-[#D4E5F7]"
-                    title="New note"
-                >
-                    <Plus className="w-3.5 h-3.5" />
-                </button>
+                {isAdminMode && (
+                    <button
+                        onClick={() => { setDraftName(""); setConfirmKey(null); }}
+                        className="text-gray-400 hover:text-[#6B9FCC] transition-colors p-0.5 rounded hover:bg-[#D4E5F7]"
+                        title="New note"
+                    >
+                        <Plus className="w-3.5 h-3.5" />
+                    </button>
+                )}
             </div>
 
             <div className="space-y-0.5 px-3">
                 {generalNotes.length === 0 && !isDrafting && (
                     <p className="px-3 py-2 text-[11px] text-gray-400 leading-relaxed">
-                        No notes yet — hit + to add one.
+                        {isAdminMode ? "No notes yet — hit + to add one." : "No notes yet."}
                     </p>
                 )}
 
@@ -99,7 +103,7 @@ export function GeneralNotesList({ onNavigate }: GeneralNotesListProps) {
                                 <span className="truncate">{note.title}</span>
                             </button>
 
-                            {confirmKey === note.key ? (
+                            {!isAdminMode ? null : confirmKey === note.key ? (
                                 <div className="flex items-center gap-1.5 shrink-0">
                                     <button
                                         onClick={() => { setConfirmKey(null); deleteGeneralNote(note.key); }}
