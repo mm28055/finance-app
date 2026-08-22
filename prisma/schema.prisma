@@ -187,6 +187,9 @@ model Note {
   id        String   @id @default(uuid())
   scope     String
   key       String
+  // Only general notes carry a user-chosen name. Sector notes are named after
+  // their sector, so they leave this null.
+  title     String?
   content   String   @default("")
   createdAt DateTime @default(now()) @db.Timestamptz(6)
   updatedAt DateTime @updatedAt @db.Timestamptz(6)

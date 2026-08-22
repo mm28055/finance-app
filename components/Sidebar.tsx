@@ -1,13 +1,13 @@
 "use client";
 import React from 'react';
 import { cn } from "@/lib/utils";
-import { Activity, ShieldAlert, RefreshCw, LayoutGrid, BrainCircuit, StickyNote } from 'lucide-react';
+import { Activity, ShieldAlert, RefreshCw, LayoutGrid, BrainCircuit } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useAdmin } from '@/context/AdminContext';
-import { useNotes } from '@/context/NotesContext';
 import { toast } from 'sonner';
 import { PromptEditor } from './PromptEditor';
 import { SyncStatusPanel } from './SyncStatusPanel';
+import { GeneralNotesList } from './GeneralNotesList';
 
 interface SidebarProps {
     isOpen?: boolean;
@@ -17,7 +17,6 @@ interface SidebarProps {
 export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
     const router = useRouter();
     const { isAdminMode, setAdminMode } = useAdmin();
-    const { openGeneralNotes } = useNotes();
     const [showPromptEditor, setShowPromptEditor] = React.useState(false);
     const [showSyncPanel, setShowSyncPanel] = React.useState(false);
 
@@ -66,16 +65,6 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
                         >
                             Dashboard
                         </button>
-                        <button
-                            onClick={() => {
-                                openGeneralNotes();
-                                if (onClose) onClose();
-                            }}
-                            className="w-full text-left px-3 py-2 rounded-lg hover:bg-[#D4E5F7] text-gray-600 hover:text-gray-900 transition-colors text-xs font-medium flex items-center gap-2"
-                        >
-                            <StickyNote className="w-3.5 h-3.5" />
-                            General Notes
-                        </button>
                         {/* View Logs Trigger (Only if not running, to view past logs) */}
                         {isAdminMode && (
                             <button
@@ -86,6 +75,8 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
                             </button>
                         )}
                     </div>
+
+                    <GeneralNotesList onNavigate={onClose} />
                 </div>
 
                 {/* Admin Toggle — clicking when off triggers next-auth sign-in;
