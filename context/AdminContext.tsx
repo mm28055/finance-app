@@ -6,8 +6,6 @@ import { useSession, signIn, signOut } from "next-auth/react";
 interface AdminContextType {
     isAdminMode: boolean;
     setAdminMode: (value: boolean) => void;
-    allSectors: string[];
-    setAllSectors: (sectors: string[]) => void;
     refreshData: () => void;
     registerRefresh: (fn: () => void) => void;
 }
@@ -17,7 +15,6 @@ const AdminContext = createContext<AdminContextType | undefined>(undefined);
 export function AdminProvider({ children }: { children: ReactNode }) {
     const { status } = useSession();
     const isAdminMode = status === "authenticated";
-    const [allSectors, setAllSectors] = useState<string[]>([]);
     const [refreshFn, setRefreshFn] = useState<(() => void) | null>(null);
 
     // Toggling admin mode = signing in / out via next-auth. The session cookie
@@ -39,7 +36,7 @@ export function AdminProvider({ children }: { children: ReactNode }) {
     };
 
     return (
-        <AdminContext.Provider value={{ isAdminMode, setAdminMode, allSectors, setAllSectors, refreshData, registerRefresh }}>
+        <AdminContext.Provider value={{ isAdminMode, setAdminMode, refreshData, registerRefresh }}>
             {children}
         </AdminContext.Provider>
     );

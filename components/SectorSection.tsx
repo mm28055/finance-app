@@ -2,12 +2,10 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, ChevronRight, MessageSquare, Plus, LayoutGrid, StickyNote } from 'lucide-react';
+import { ChevronDown, ChevronRight, MessageSquare, LayoutGrid, StickyNote } from 'lucide-react';
 import { useSectorChat } from '@/context/SectorChatContext';
 import { useNotes } from '@/context/NotesContext';
 import { SectorSnapshot } from '@/components/SectorSnapshot';
-import { useAdmin } from '@/context/AdminContext';
-import { AddCompanyModal } from './AddCompanyModal';
 
 import { EnrichedCompany } from './SectorList';
 
@@ -22,10 +20,8 @@ interface SectorSectionProps {
 export function SectorSection({ name, count, companies = [], children, defaultOpen = false }: SectorSectionProps) {
     const [isOpen, setIsOpen] = useState(defaultOpen);
     const [showSnapshot, setShowSnapshot] = useState(false);
-    const [showAddModal, setShowAddModal] = useState(false);
     const { openChat } = useSectorChat();
     const { openSectorNotes } = useNotes();
-    const { isAdminMode } = useAdmin();
 
     // Sync isOpen with defaultOpen so clearing a search re-collapses sectors
     useEffect(() => {
@@ -40,11 +36,6 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
     const handleNotesClick = (e: React.MouseEvent) => {
         e.stopPropagation();
         openSectorNotes(name);
-    };
-
-    const handleAddClick = (e: React.MouseEvent) => {
-        e.stopPropagation();
-        setShowAddModal(true);
     };
 
     return (
@@ -106,25 +97,8 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
             {isOpen && (
                 <div className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm ml-5 animate-in slide-in-from-top-1 duration-150">
                     {children}
-
-                    {/* Add Company Button (Admin Mode) */}
-                    {isAdminMode && (
-                        <button
-                            onClick={handleAddClick}
-                            className="w-full py-2.5 flex items-center justify-center gap-1.5 text-[#6B9FCC] hover:bg-[#D4E5F7] border-t border-gray-100 text-xs font-medium transition-colors"
-                        >
-                            <Plus className="w-3.5 h-3.5" />
-                            Add Company
-                        </button>
-                    )}
                 </div>
             )}
-
-            <AddCompanyModal
-                isOpen={showAddModal}
-                onClose={() => setShowAddModal(false)}
-                defaultSector={name}
-            />
         </section>
     );
 }

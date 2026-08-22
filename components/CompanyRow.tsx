@@ -27,9 +27,8 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     colorTheme?: { bg: string; text: string };
 }) => {
     const [expanded, setExpanded] = useState(false);
-    const { isAdminMode, allSectors } = useAdmin();
+    const { isAdminMode } = useAdmin();
     const [isDeleting, setIsDeleting] = useState(false);
-    const [showSectorDropdown, setShowSectorDropdown] = useState(false);
     const [showColorPicker, setShowColorPicker] = useState(false);
     const [customColorTag, setCustomColorTag] = useState<string | null>(company.colorTag || null);
     const [selectedQuarterIdx, setSelectedQuarterIdx] = useState(0); // 0 = latest
@@ -197,22 +196,6 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
         } catch (e) {
             alert('Network error');
             setIsDeleting(false);
-        }
-    };
-
-    const handleSectorChange = async (newSector: string) => {
-        setShowSectorDropdown(false);
-        try {
-            const res = await fetch('/api/companies', {
-                method: 'PUT',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ id: company.id, sector: newSector })
-            });
-            if (res.ok) {
-                window.location.reload();
-            }
-        } catch (e) {
-            alert('Failed');
         }
     };
 
@@ -514,82 +497,6 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                 {/* Admin Controls */}
                 {isAdminMode && (
                     <div className="flex items-center gap-2 flex-shrink-0">
-                        {/* Manual Upload */}
-                        <button
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                const q = window.prompt("Enter Quarter (e.g. Q3 2026):", "Q3 2026");
-                                if (q) {
-                                    // Parse Q and Year
-                                    // simple parsing logic
-                                    const parts = q.toUpperCase().split(' '); // ["Q3", "2026"]
-                                    if (parts.length < 2) { alert("Invalid Format. Use 'Q3 2026'"); return; }
-
-                                    // Store temporarily to access in onChange
-                                    (window as any).uploadContext = { q: parts[0], year: parts[1], companyId: company.id };
-                                    document.getElementById(`upload-${company.id}`)?.click();
-                                }
-                            }}
-                            className="p-1.5 text-gray-400 hover:text-[#6B9FCC] hover:bg-[#F0F7FF] rounded transition-colors"
-                            title="Manual Upload (Paperclip)"
-                        >
-                            <span className="text-lg leading-none">📎</span>
-                        </button>
-                        <input
-                            type="file"
-                            id={`upload-${company.id}`}
-                            style={{ display: 'none' }}
-                            accept=".pdf"
-                            onChange={async (e) => {
-                                const file = e.target.files?.[0];
-                                const ctx = (window as any).uploadContext;
-                                if (!file || !ctx) return;
-
-                                const formData = new FormData();
-                                formData.append('file', file);
-                                formData.append('companyId', ctx.companyId);
-                                formData.append('q', ctx.q);
-                                formData.append('year', ctx.year);
-
-                                try {
-                                    const btn = e.target as HTMLInputElement;
-                                    btn.value = ''; // Reset
-                                    alert(`Uploading ${file.name} as ${ctx.q} FY${ctx.year.slice(-2)}...`);
-
-                                    const res = await fetch('/api/upload', { method: 'POST', body: formData });
-                                    const data = await res.json();
-
-                                    if (res.ok) {
-                                        alert("Success! Analysis running in background.");
-                                        window.location.reload();
-                                    } else {
-                                        alert("Error: " + data.error);
-                                    }
-                                } catch (err) { alert("Upload Failed"); }
-                            }}
-                        />
-
-                        <div className="relative">
-                            <button
-                                onClick={(e) => { e.stopPropagation(); setShowSectorDropdown(!showSectorDropdown); }}
-                                className="px-2 py-1 text-[10px] bg-gray-100 hover:bg-gray-200 text-gray-600 rounded font-medium"
-                            >
-                                Move
-                            </button>
-                            {showSectorDropdown && (
-                                <div className="absolute top-full right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-20 min-w-[140px] max-h-48 overflow-y-auto">
-                                    {allSectors.filter(s => s !== (company as any).sector).map(s => (
-                                        <button
-                                            key={s}
-                                            onClick={(e) => { e.stopPropagation(); handleSectorChange(s); }}
-                                            className="w-full text-left px-3 py-1.5 text-[11px] text-gray-600 hover:bg-[#D4E5F7]"
-                                        >
-                                            {s}
-                                        </button>
-                                    ))}
-                                </div>
-                            )}
-                        </div>
                         <button
                             onClick={handleDelete}
                             disabled={isDeleting}

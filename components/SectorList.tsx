@@ -1,12 +1,10 @@
 "use client";
-import React, { useEffect, useState, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { CompanyRow } from './CompanyRow';
 import type { CompanyFinancials } from './FinancialMatrix';
 import { AnalysisResult } from '@/lib/ai-analyst';
 import { SectorSection } from './SectorSection';
-import { useAdmin } from '@/context/AdminContext';
-import { AddCompanyModal } from './AddCompanyModal';
-import { Plus, Search } from 'lucide-react';
+import { Search } from 'lucide-react';
 
 export const COLOR_THEMES = {
     blue: { name: 'Blue', bg: 'bg-[#D4E5F7]', text: 'text-[#4A7AAF]', dot: 'bg-[#4A7AAF]' },
@@ -72,19 +70,11 @@ export interface SectorData {
 }
 
 export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
-    const { setAllSectors, isAdminMode } = useAdmin();
-    const [showNewSectorModal, setShowNewSectorModal] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
 
 
     const [sortBy, setSortBy] = useState<'marketCap' | 'gemini'>('gemini');
     const [convictionFilter, setConvictionFilter] = useState<'ALL' | 'HIGH' | 'MEDIUM' | 'LOW'>('ALL');
-
-    // Register all sector names in context
-    useEffect(() => {
-        const sectorNames = sectors.map(s => s.sector);
-        setAllSectors(sectorNames);
-    }, [sectors, setAllSectors]);
 
     // Filter companies based on search AND conviction AND sort them
     const filteredSectors = useMemo(() => {
@@ -213,23 +203,6 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                     ))}
                 </SectorSection>
             ))}
-
-            {/* Add New Sector (Admin Mode) */}
-            {isAdminMode && (
-                <button
-                    onClick={() => setShowNewSectorModal(true)}
-                    className="w-full py-3 flex items-center justify-center gap-2 text-[#6B9FCC] hover:bg-[#D4E5F7] border border-dashed border-gray-300 rounded-xl text-xs font-medium transition-colors"
-                >
-                    <Plus className="w-4 h-4" />
-                    Add New Sector
-                </button>
-            )}
-
-            <AddCompanyModal
-                isOpen={showNewSectorModal}
-                onClose={() => setShowNewSectorModal(false)}
-                defaultSector=""
-            />
         </div>
     );
 };
