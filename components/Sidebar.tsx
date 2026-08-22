@@ -2,7 +2,6 @@
 import React from 'react';
 import { cn } from "@/lib/utils";
 import { Activity, ShieldAlert, RefreshCw, LayoutGrid, BrainCircuit } from 'lucide-react';
-import { useRouter } from 'next/navigation';
 import { useAdmin } from '@/context/AdminContext';
 import { toast } from 'sonner';
 import { PromptEditor } from './PromptEditor';
@@ -15,7 +14,6 @@ interface SidebarProps {
 }
 
 export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
-    const router = useRouter();
     const { isAdminMode, setAdminMode } = useAdmin();
     const [showPromptEditor, setShowPromptEditor] = React.useState(false);
     const [showSyncPanel, setShowSyncPanel] = React.useState(false);
@@ -54,19 +52,6 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
 
                 {/* Navigation */}
                 <div className="flex-1 overflow-y-auto py-4 custom-scrollbar">
-                    <div className="px-4 mb-2 text-[10px] font-medium text-gray-400 uppercase tracking-wider">Navigation</div>
-                    <div className="space-y-0.5 px-3">
-                        <button
-                            onClick={() => {
-                                router.push('/');
-                                if (onClose) onClose();
-                            }}
-                            className="w-full text-left px-3 py-2 rounded-lg hover:bg-[#D4E5F7] text-gray-600 hover:text-gray-900 transition-colors text-xs font-medium"
-                        >
-                            Dashboard
-                        </button>
-                    </div>
-
                     <GeneralNotesList onNavigate={onClose} />
                 </div>
 

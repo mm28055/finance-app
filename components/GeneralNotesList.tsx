@@ -42,7 +42,7 @@ export function GeneralNotesList({ onNavigate }: GeneralNotesListProps) {
     const inputClass = "w-full bg-white border border-[#A5C4E2] rounded-lg px-2 py-1.5 text-xs text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#D4E5F7]";
 
     return (
-        <div className="mt-4">
+        <div>
             <div className="px-4 mb-2 flex items-center justify-between">
                 <span className="text-[10px] font-medium text-gray-400 uppercase tracking-wider">Notes</span>
                 {isAdminMode && (
