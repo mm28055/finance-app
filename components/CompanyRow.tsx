@@ -307,7 +307,12 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                     setTargetDraft(targetPrice !== null ? String(targetPrice) : '');
                                     setShowTargetInput(!showTargetInput);
                                 }}
-                                className={`text-[10px] font-semibold text-right ${isAdminMode ? 'hover:underline' : 'cursor-default'} ${targetHit ? 'text-emerald-600' : 'text-gray-700'}`}
+                                className={`text-[10px] font-semibold text-right ${isAdminMode ? 'hover:underline' : 'cursor-default'} ${targetHit ? 'text-emerald-600'
+                                    // Muted grey = a target is set and the price
+                                    // hasn't come down to it yet, so a glance down
+                                    // the column shows which names are being watched.
+                                    : targetPrice !== null ? 'text-gray-400'
+                                        : 'text-gray-700'}`}
                                 title={
                                     targetPrice !== null
                                         ? `Buy target ₹${targetPrice}${targetHit ? ' — reached' : ''}${isAdminMode ? ' · click to change' : ''}`
