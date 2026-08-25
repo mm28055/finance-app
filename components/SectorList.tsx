@@ -48,6 +48,15 @@ export interface EnrichedCompany {
     fiftyTwoWeekHigh?: number;
     fiftyTwoWeekLow?: number;
     targetPrice?: number;
+    // Forward revenue guidance from the newest quarter's investor brief.
+    guidance?: {
+        min: number | null;
+        max: number | null;
+        fy?: string;
+        basis: string;      // 'STATED' | 'IMPLIED' | 'NONE'
+        quote?: string;
+        quarter: string;
+    };
     geminiScore?: number;
     geminiScoreDelta?: number;
     colorTag?: string;

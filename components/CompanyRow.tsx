@@ -7,6 +7,7 @@ import { Trash2, ArrowRight, FileText } from 'lucide-react';
 import type { EnrichedCompany } from './SectorList';
 import { useAdmin } from '@/context/AdminContext';
 import { ANALYSIS_WINDOW } from '@/lib/retention';
+import { guidanceMidpoint, meetsGuidanceThreshold, formatGuidanceRange, GUIDANCE_GROWTH_THRESHOLD } from '@/lib/guidance';
 
 // Quarter tabs shown in the collapsed row. Deliberately narrower than
 // ANALYSIS_WINDOW (which still governs what is retained and analysed) — the
@@ -143,6 +144,21 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     // fallen TO it or below, not when it has run past it.
     const targetHit = targetPrice !== null && !!company.currentPrice && company.currentPrice <= targetPrice;
 
+    // Forward guidance on the newest quarter. Three states on the name: green
+    // when the guided midpoint clears the bar, faded when a number exists but
+    // falls short, normal when management gave nothing to go on.
+    const guidance = company.guidance;
+    const guidanceMid = guidanceMidpoint(guidance);
+    const guidanceGreen = meetsGuidanceThreshold(guidance);
+    const guidanceTitle = guidanceMid === null
+        ? company.name
+        : `${company.name} — guiding ${formatGuidanceRange(guidance)}`
+        + `${guidance?.fy ? ` for ${guidance.fy}` : ''}`
+        + ` (midpoint ${guidanceMid}%, ${guidance?.basis === 'IMPLIED' ? 'implied' : 'stated'}, ${guidance?.quarter})`
+        + `${guidance?.quote ? `
+
+“${guidance.quote}”` : ''}`;
+
     const saveTarget = (value: number | null) => {
         const previous = targetPrice;
         setTargetPrice(value);
@@ -273,7 +289,14 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                         )}
                     </div>
                     <div className="flex items-center gap-2 min-w-0 flex-1">
-                        <span className="text-sm font-medium text-gray-800 truncate" title={company.name}>{company.name}</span>
+                        <span
+                            className={`text-sm font-medium truncate ${guidanceGreen ? 'text-emerald-600 font-semibold'
+                                : guidanceMid !== null ? 'text-gray-400'
+                                    : 'text-gray-800'}`}
+                            title={guidanceTitle}
+                        >
+                            {company.name}
+                        </span>
                         <button
                             onClick={handleConvictionClick}
                             title={localConviction ? `Conviction: ${localConviction} — click to change` : 'Click to set conviction'}

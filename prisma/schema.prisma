@@ -119,6 +119,16 @@ model Analysis {
   deltaAnalysis     String?
   investorBrief     String?
   investibilityScore Int?     // 0-100 Score by Gemini Senior Analyst
+  // Forward revenue guidance, read back out of `investorBrief` by
+  // scripts/extract-guidance.ts. Stored as a range because managements guide in
+  // ranges ("15-20%"); a single figure sets both ends. Lives on Analysis rather
+  // than Company so the number always travels with the quarter that said it —
+  // that is what makes "use the latest quarter" and staleness free.
+  guidanceGrowthMin Decimal? @db.Decimal
+  guidanceGrowthMax Decimal? @db.Decimal
+  guidanceFy        String?  // fiscal year the guidance covers, e.g. "FY27"
+  guidanceBasis     String?  // 'STATED' | 'IMPLIED' | 'NONE'
+  guidanceQuote     String?  // verbatim sentence, so any green name is traceable
   company           Company  @relation(fields: [companyId], references: [id])
   quarter           Quarter  @relation(fields: [quarterId], references: [id])
 

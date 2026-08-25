@@ -76,6 +76,11 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
                 take: ANALYSIS_WINDOW,
                 select: {
                     investibilityScore: true,
+                    guidanceGrowthMin: true,
+                    guidanceGrowthMax: true,
+                    guidanceFy: true,
+                    guidanceBasis: true,
+                    guidanceQuote: true,
                     quarter: { select: { name: true } }
                 }
             },
@@ -162,6 +167,19 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             targetPrice: co.targetPrice ? Number(co.targetPrice) : undefined,
             geminiScore: latestA?.investibilityScore ?? undefined,
             geminiScoreDelta,
+            // Guidance is read from the newest quarter only. When a fresh
+            // quarter lands with a weaker number the row follows it down on its
+            // own — there is no separate staleness rule to keep in sync.
+            guidance: latestA?.guidanceBasis
+                ? {
+                    min: latestA.guidanceGrowthMin !== null ? Number(latestA.guidanceGrowthMin) : null,
+                    max: latestA.guidanceGrowthMax !== null ? Number(latestA.guidanceGrowthMax) : null,
+                    fy: latestA.guidanceFy || undefined,
+                    basis: latestA.guidanceBasis,
+                    quote: latestA.guidanceQuote || undefined,
+                    quarter: latestA.quarter.name
+                }
+                : undefined,
             colorTag: co.colorTag || undefined,
             conviction: co.conviction || undefined
         };
