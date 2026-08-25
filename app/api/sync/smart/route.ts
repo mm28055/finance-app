@@ -279,6 +279,16 @@ export async function POST(req: NextRequest) {
                             })
                         ]);
 
+                        // Read forward guidance out of the brief. Non-blocking:
+                        // the analysis is already saved, and guidance is an
+                        // extra on top of it, never a reason to fail the sync.
+                        try {
+                            const { extractGuidanceForQuarter } = await import('@/lib/guidance-extract');
+                            await extractGuidanceForQuarter(co.id, quarter.id);
+                        } catch (gErr: any) {
+                            console.error(`Guidance extraction failed for ${co.name}:`, gErr.message);
+                        }
+
                         // Rolling-window cleanup — windows in lib/retention.ts
                         // (transcripts/PDF/chunks 2, analysis 4, delta 1, financials 5).
                         // Without this, manually-resurrected quarter rows from prior

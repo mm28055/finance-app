@@ -393,7 +393,18 @@ export async function processTranscript(transcriptId: string) {
 
     console.log(`[SyncService] Completed processing for ${transcript.company.name}`);
 
-    // 5. Trigger RAG Ingestion (Auto-Index)
+    // 5. Read forward guidance out of the brief we just wrote.
+    // Non-blocking for the same reason as RAG below: the analysis has already
+    // been saved, and a guidance read that fails must not fail the sync. The
+    // company simply shows no guidance until the next run picks it up.
+    try {
+        const { extractGuidanceForQuarter } = await import('./guidance-extract');
+        await extractGuidanceForQuarter(transcript.companyId, transcript.quarterId);
+    } catch (e: any) {
+        console.error(`[SyncService] Guidance extraction failed: ${e.message}`);
+    }
+
+    // 6. Trigger RAG Ingestion (Auto-Index)
     try {
         const { ingestTranscript } = await import('./rag-ingest');
         console.log(`[SyncService] Triggering RAG Ingestion for ${transcript.company.ticker}...`);

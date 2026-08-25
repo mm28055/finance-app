@@ -15,8 +15,11 @@
  *   npx tsx scripts/extract-guidance.ts --force            # redo done rows
  */
 import { prisma } from '../lib/prisma';
-import { geminiFlash, GEMINI_KEY_COUNT } from '../lib/gemini';
+import { GEMINI_KEY_COUNT } from '../lib/gemini';
 import { GENERAL_Q } from '../lib/retention';
+// The prompt and the parser live in lib/ because the sync pipeline calls them
+// too — this script is the bulk/re-check front end for the same logic.
+import { extractGuidanceForAnalysis } from '../lib/guidance-extract';
 import {
     guidanceMidpoint,
     formatGuidanceRange,
@@ -45,96 +48,19 @@ const RECHECK_GREEN = has('--recheck-green');
 // 429 storm costs more than the parallelism saves.
 const CONCURRENCY = Math.max(1, Math.min(GEMINI_KEY_COUNT, 4));
 
-interface Extracted {
-    growth_min: number | null;
-    growth_max: number | null;
-    fy: string | null;
-    basis: 'STATED' | 'IMPLIED' | 'NONE';
-    quote: string | null;
-}
-
-const PROMPT = (company: string, quarter: string, brief: string) => `
-You are reading an equity analyst's brief on ${company} for ${quarter}. Your only
-job is to report what management said about FORWARD REVENUE GROWTH.
-
-Return STRICT JSON, nothing else:
-{
-  "growth_min": <number or null>,
-  "growth_max": <number or null>,
-  "fy": "<fiscal year the guidance covers, e.g. FY27, or null>",
-  "basis": "STATED" | "IMPLIED" | "NONE",
-  "quote": "<the verbatim sentence you took this from, or null>"
-}
-
-RULES
-- Percentages of REVENUE GROWTH only. Ignore margin, PAT, EBITDA and order-book
-  guidance. Ignore growth already delivered — this is about the road ahead.
-- A range ("15-20% growth") sets growth_min=15, growth_max=20.
-- A single figure ("we expect 25% growth") sets both to 25.
-- A floor ("at least 20%", "north of 20%") sets growth_min=20, growth_max=null.
-  A ceiling ("up to 15%") sets growth_max=15, growth_min=null.
-- basis "STATED": management put a REVENUE growth number or range on the record
-  directly. Nothing else qualifies. In particular these are NOT stated:
-    * "double-digit growth" with no figure — that is a band, not a number
-    * "in line with the market/industry" — even where the brief quotes the
-      market's own rate elsewhere
-    * VOLUME or tonnage growth — revenue also moves with price and mix, so a
-      volume guide is evidence about revenue, not a statement of it
-  Each of those is IMPLIED at best. Read them as such and say so.
-- basis "IMPLIED": no revenue growth percentage was given outright, but the
-  brief gives you real numbers to derive one from — a revenue target for a
-  future year against today's revenue, a doubling in N years, an order book with
-  a stated execution period, or one of the cases listed above. Do the arithmetic
-  and say IMPLIED. Judgement is welcome here; invention is not.
-- basis "NONE": management declined to guide, spoke only qualitatively
-  ("optimistic", "strong demand", "outgrow the industry" with no figures), or
-  the brief simply does not say. Set every other field to null.
-- If guidance covers several years, take the NEAREST full year.
-- An ANNUAL growth rate. If the brief gives a multi-year target ("₹9,000 Cr by
-  FY30 from ₹4,000 Cr today"), annualise it — do not report the total.
-- NEVER invent an upper bound. A phrase that only sets a floor is stored as a
-  floor: "double-digit growth" is growth_min=10, growth_max=null — NOT 10-99.
-  "north of 20%" is growth_min=20, growth_max=null. Inventing a ceiling turns a
-  modest guide into a spectacular one, which is the worst error you can make
-  here. When in doubt leave growth_max null.
-- If the brief itself says no specific figure was given, the answer is NONE.
-  This overrides everything else: when the text says "no specific numerical
-  guidance", you may not then derive one from an order book and report it. Do
-  not reach for a round number to fill the gap.
-- CONDITIONAL or SPECULATIVE language is not guidance. "could potentially
-  double", "if pricing holds", "has the ambition to", "sees an opportunity to"
-  — these are possibilities management floated, not commitments they made.
-  Answer NONE. Only report a number management actually committed to, or one
-  that follows arithmetically from firm figures they gave.
-- Never invent a number to be helpful. NONE is a perfectly good answer and is
-  more useful to the reader than a guess.
-
-BRIEF
-${brief.substring(0, 12000)}
-`;
-
-function parseJson(text: string): Extracted | null {
-    let s = text.replace(/```json/g, '').replace(/```/g, '').trim();
-    const m = s.match(/\{[\s\S]*\}/);
-    if (m) s = m[0];
-    try {
-        const p = JSON.parse(s);
-        const num = (v: any): number | null => {
-            if (v === null || v === undefined || v === '') return null;
-            const n = typeof v === 'number' ? v : parseFloat(String(v).replace(/[^0-9.-]/g, ''));
-            return isNaN(n) ? null : n;
-        };
-        const basis = String(p.basis || 'NONE').toUpperCase();
-        return {
-            growth_min: num(p.growth_min),
-            growth_max: num(p.growth_max),
-            fy: p.fy ? String(p.fy).trim() : null,
-            basis: basis === 'STATED' || basis === 'IMPLIED' ? basis : 'NONE',
-            quote: p.quote ? String(p.quote).trim() : null
-        };
-    } catch {
-        return null;
-    }
+/** --dry: same read, no write, so a sample can be reviewed before committing. */
+async function previewOnly(analysisId: string) {
+    const { GUIDANCE_PROMPT, parseGuidanceJson } = await import('../lib/guidance-extract');
+    const { geminiFlash } = await import('../lib/gemini');
+    const a = await prisma.analysis.findUnique({
+        where: { id: analysisId },
+        select: { investorBrief: true, company: { select: { name: true } }, quarter: { select: { name: true } } }
+    });
+    if (!a?.investorBrief) return null;
+    const res = await geminiFlash.generateContent(
+        GUIDANCE_PROMPT(a.company.name, a.quarter.name, a.investorBrief)
+    );
+    return parseGuidanceJson((await res.response).text());
 }
 
 /**
@@ -218,11 +144,10 @@ async function main() {
             const name = t.company.name;
             const quarter = t.analysis.quarter.name;
             try {
-                const res = await geminiFlash.generateContent(
-                    PROMPT(name, quarter, t.analysis.investorBrief!)
-                );
-                const parsed = parseJson((await res.response).text());
-                if (!parsed) { failed++; console.log(`  ✗ ${name} — unparseable response`); continue; }
+                const parsed = DRY
+                    ? await previewOnly(t.analysis.id)
+                    : await extractGuidanceForAnalysis(t.analysis.id);
+                if (!parsed) { failed++; console.log(`  ✗ ${name} — no usable answer`); continue; }
 
                 const g = { min: parsed.growth_min, max: parsed.growth_max, basis: parsed.basis };
                 const mid = guidanceMidpoint(g);
@@ -248,19 +173,6 @@ async function main() {
                         (parsed.quote || '').slice(0, 90)
                     ].join('  ')
                 );
-
-                if (!DRY) {
-                    await prisma.analysis.update({
-                        where: { id: t.analysis.id },
-                        data: {
-                            guidanceGrowthMin: parsed.growth_min,
-                            guidanceGrowthMax: parsed.growth_max,
-                            guidanceFy: parsed.fy,
-                            guidanceBasis: parsed.basis,
-                            guidanceQuote: parsed.quote
-                        }
-                    });
-                }
             } catch (e: any) {
                 failed++;
                 console.log(`  ✗ ${name} — ${e.message}`);
