@@ -148,9 +148,10 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     // when the guided midpoint clears the bar, faded when a number exists but
     // falls short, normal when management gave nothing to go on.
     //
-    // The midpoint drives the colour but is deliberately left out of the
-    // tooltip: the range is right there, and restating its own average reads as
-    // arithmetic performed at the reader.
+    // The tooltip carries the range, the year it covers, and the sentence it
+    // came from — nothing else. The midpoint is the range's own average, and
+    // the quarter is always the newest one, so both were saying out loud what
+    // the reader could already see.
     const guidance = company.guidance;
     const guidanceMid = guidanceMidpoint(guidance);
     const guidanceHigh = meetsGuidanceThreshold(guidance);
@@ -158,7 +159,6 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
         ? company.name
         : `${company.name} — guiding ${formatGuidanceRange(guidance)}`
         + `${guidance?.fy ? ` for ${guidance.fy}` : ''}`
-        + ` (${guidance?.basis === 'IMPLIED' ? 'implied' : 'stated'}, ${guidance?.quarter})`
         + `${guidance?.quote ? `
 
 “${guidance.quote}”` : ''}`;
