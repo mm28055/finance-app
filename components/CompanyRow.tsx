@@ -149,7 +149,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     // falls short, normal when management gave nothing to go on.
     const guidance = company.guidance;
     const guidanceMid = guidanceMidpoint(guidance);
-    const guidanceGreen = meetsGuidanceThreshold(guidance);
+    const guidanceHigh = meetsGuidanceThreshold(guidance);
     const guidanceTitle = guidanceMid === null
         ? company.name
         : `${company.name} — guiding ${formatGuidanceRange(guidance)}`
@@ -290,7 +290,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                     </div>
                     <div className="flex items-center gap-2 min-w-0 flex-1">
                         <span
-                            className={`text-sm font-medium truncate ${guidanceGreen ? 'text-emerald-500 font-semibold'
+                            className={`text-sm font-medium truncate ${guidanceHigh ? 'text-indigo-500'
                                 : guidanceMid !== null ? 'text-gray-400'
                                     : 'text-gray-800'}`}
                             title={guidanceTitle}
