@@ -148,17 +148,25 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     // when the guided midpoint clears the bar, faded when a number exists but
     // falls short, normal when management gave nothing to go on.
     //
-    // The tooltip carries the range, the year it covers, and the sentence it
-    // came from — nothing else. The midpoint is the range's own average, and
-    // the quarter is always the newest one, so both were saying out loud what
-    // the reader could already see.
+    // The tooltip carries the range, the year it covers, whether it was stated
+    // or inferred, and the sentence it came from — nothing else. The company
+    // name is what you are hovering over, the midpoint is the range's own
+    // average, and the quarter is always the newest one; all three were saying
+    // out loud what the reader could already see.
+    //
+    // Companies with no guidance keep the plain name as their tooltip, which is
+    // how a clipped name stays readable.
     const guidance = company.guidance;
     const guidanceMid = guidanceMidpoint(guidance);
     const guidanceHigh = meetsGuidanceThreshold(guidance);
     const guidanceTitle = guidanceMid === null
         ? company.name
-        : `${company.name} — guiding ${formatGuidanceRange(guidance)}`
+        : `Guiding ${formatGuidanceRange(guidance)}`
         + `${guidance?.fy ? ` for ${guidance.fy}` : ''}`
+        // Kept where the quarter was dropped: this one word says whether the
+        // number is management's own or arithmetic done on their figures, which
+        // the reader cannot recover from the range alone.
+        + ` (${guidance?.basis === 'IMPLIED' ? 'implied' : 'stated'})`
         + `${guidance?.quote ? `
 
 “${guidance.quote}”` : ''}`;
