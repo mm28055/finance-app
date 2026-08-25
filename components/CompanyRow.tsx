@@ -290,7 +290,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                     </div>
                     <div className="flex items-center gap-2 min-w-0 flex-1">
                         <span
-                            className={`text-sm font-medium truncate ${guidanceHigh ? 'text-indigo-500'
+                            className={`text-sm font-medium truncate ${guidanceHigh ? 'text-[#6B9FCC]'
                                 : guidanceMid !== null ? 'text-gray-400'
                                     : 'text-gray-800'}`}
                             title={guidanceTitle}
