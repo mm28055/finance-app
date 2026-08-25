@@ -144,9 +144,13 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     // fallen TO it or below, not when it has run past it.
     const targetHit = targetPrice !== null && !!company.currentPrice && company.currentPrice <= targetPrice;
 
-    // Forward guidance on the newest quarter. Three states on the name: green
+    // Forward guidance on the newest quarter. Three states on the name: marked
     // when the guided midpoint clears the bar, faded when a number exists but
     // falls short, normal when management gave nothing to go on.
+    //
+    // The midpoint drives the colour but is deliberately left out of the
+    // tooltip: the range is right there, and restating its own average reads as
+    // arithmetic performed at the reader.
     const guidance = company.guidance;
     const guidanceMid = guidanceMidpoint(guidance);
     const guidanceHigh = meetsGuidanceThreshold(guidance);
@@ -154,7 +158,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
         ? company.name
         : `${company.name} — guiding ${formatGuidanceRange(guidance)}`
         + `${guidance?.fy ? ` for ${guidance.fy}` : ''}`
-        + ` (midpoint ${guidanceMid}%, ${guidance?.basis === 'IMPLIED' ? 'implied' : 'stated'}, ${guidance?.quarter})`
+        + ` (${guidance?.basis === 'IMPLIED' ? 'implied' : 'stated'}, ${guidance?.quarter})`
         + `${guidance?.quote ? `
 
 “${guidance.quote}”` : ''}`;
