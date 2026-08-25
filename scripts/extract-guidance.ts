@@ -35,6 +35,10 @@ const DRY = has('--dry');
 const FORCE = has('--force');
 const LIMIT = val('--limit') ? parseInt(val('--limit')!, 10) : undefined;
 const ONLY = val('--only');
+// Re-examine only the companies currently showing green. Tightening the prompt
+// can only ever demote a row, and a wrong green is the error that costs the
+// reader trust, so this is the cohort worth paying to re-read.
+const RECHECK_GREEN = has('--recheck-green');
 
 // Concurrency follows the key count like the rest of the pipeline, so one key
 // isn't hammered while the others idle. Capped: these are small prompts, but a
@@ -93,9 +97,15 @@ RULES
   "north of 20%" is growth_min=20, growth_max=null. Inventing a ceiling turns a
   modest guide into a spectacular one, which is the worst error you can make
   here. When in doubt leave growth_max null.
-- If the brief itself says no specific figure was given, and you cannot derive
-  one from actual numbers elsewhere in the brief, the answer is NONE. Do not
-  reach for a round number to fill the gap.
+- If the brief itself says no specific figure was given, the answer is NONE.
+  This overrides everything else: when the text says "no specific numerical
+  guidance", you may not then derive one from an order book and report it. Do
+  not reach for a round number to fill the gap.
+- CONDITIONAL or SPECULATIVE language is not guidance. "could potentially
+  double", "if pricing holds", "has the ambition to", "sees an opportunity to"
+  — these are possibilities management floated, not commitments they made.
+  Answer NONE. Only report a number management actually committed to, or one
+  that follows arithmetically from firm figures they gave.
 - Never invent a number to be helpful. NONE is a perfectly good answer and is
   more useful to the reader than a guess.
 
@@ -161,6 +171,8 @@ async function main() {
                     id: true,
                     investorBrief: true,
                     guidanceBasis: true,
+                    guidanceGrowthMin: true,
+                    guidanceGrowthMax: true,
                     quarter: { select: { name: true } }
                 }
             },
@@ -181,7 +193,12 @@ async function main() {
         .filter(t => t.analysis?.investorBrief)
         // Already-extracted rows are skipped so the run is resumable after a
         // rate-limit stop; --force redoes them.
-        .filter(t => FORCE || !t.analysis.guidanceBasis);
+        .filter(t => (FORCE || RECHECK_GREEN) || !t.analysis.guidanceBasis)
+        .filter(t => !RECHECK_GREEN || meetsGuidanceThreshold({
+            min: t.analysis.guidanceGrowthMin !== null ? Number(t.analysis.guidanceGrowthMin) : null,
+            max: t.analysis.guidanceGrowthMax !== null ? Number(t.analysis.guidanceGrowthMax) : null,
+            basis: t.analysis.guidanceBasis
+        }));
 
     if (LIMIT) targets = targets.slice(0, LIMIT);
 
