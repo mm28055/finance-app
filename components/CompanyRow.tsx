@@ -331,7 +331,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                         row lines up vertically. Cells render empty rather than
                         collapsing, otherwise a company missing (say) P/B would pull
                         everything after it out of alignment. */}
-                    <div className="grid grid-cols-[36px_36px_58px_44px_48px_56px_84px] gap-1.5 2xl:grid-cols-[38px_40px_62px_48px_52px_60px_90px] 2xl:gap-2 items-center flex-shrink-0">
+                    <div className="grid grid-cols-[42px_38px_60px_56px_56px_56px_58px_84px] gap-1.5 2xl:grid-cols-[44px_40px_64px_60px_60px_60px_62px_90px] 2xl:gap-2 items-center flex-shrink-0">
                         {/* Price — click to set a target. Turns green once the
                             price reaches it; clearing the target turns it off. */}
                         <div className="relative flex justify-end">
@@ -419,26 +419,44 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                             {company.marketCap ? `₹${Math.round(company.marketCap).toLocaleString()}cr` : ''}
                         </span>
 
-                        {/* P/E */}
+                        {/* P/E, P/B and P/S. Two bare "x" chips could be told
+                            apart by position; three can't, so each carries its
+                            name the way RoCE does. */}
                         <div className="flex">
                             {company.peRatio ? (
                                 <span
-                                    className="w-full text-center px-1 py-0.5 bg-gray-50 rounded border border-gray-100 text-[10px] text-gray-600 font-semibold"
+                                    className="w-full flex items-center justify-center gap-0.5 px-1 py-0.5 bg-gray-50 rounded border border-gray-100"
                                     title={`P/E ratio: ${company.peRatio}`}
                                 >
-                                    {company.peRatio}x
+                                    <span className="text-[8px] text-gray-400 font-medium">P/E</span>
+                                    <span className="text-[10px] text-gray-600 font-semibold">{company.peRatio}x</span>
                                 </span>
                             ) : null}
                         </div>
 
-                        {/* P/B */}
                         <div className="flex">
                             {company.pbRatio ? (
                                 <span
-                                    className="w-full text-center px-1 py-0.5 bg-gray-50 rounded border border-gray-100 text-[10px] text-gray-600 font-semibold"
+                                    className="w-full flex items-center justify-center gap-0.5 px-1 py-0.5 bg-gray-50 rounded border border-gray-100"
                                     title={`P/B ratio: ${company.pbRatio}`}
                                 >
-                                    {company.pbRatio}x
+                                    <span className="text-[8px] text-gray-400 font-medium">P/B</span>
+                                    <span className="text-[10px] text-gray-600 font-semibold">{company.pbRatio}x</span>
+                                </span>
+                            ) : null}
+                        </div>
+
+                        {/* P/S — market cap over the last four quarters' sales.
+                            Empty for a company whose quarterly table Screener
+                            hasn't filled four columns of yet. */}
+                        <div className="flex">
+                            {company.psRatio ? (
+                                <span
+                                    className="w-full flex items-center justify-center gap-0.5 px-1 py-0.5 bg-gray-50 rounded border border-gray-100"
+                                    title={`P/S ratio (market cap ÷ trailing 12-month sales): ${company.psRatio}`}
+                                >
+                                    <span className="text-[8px] text-gray-400 font-medium">P/S</span>
+                                    <span className="text-[10px] text-gray-600 font-semibold">{company.psRatio}x</span>
                                 </span>
                             ) : null}
                         </div>

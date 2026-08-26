@@ -43,6 +43,14 @@ model Company {
   marketCap       Decimal?     @db.Decimal
   pbRatio         Decimal?     @db.Decimal
   peRatio         Decimal?     @db.Decimal
+  // Trailing-twelve-month sales, summed from Screener's last four quarterly
+  // columns. Stored rather than derived from `financials` because those only
+  // cover quarters we hold a concall for — a third of the book has gaps there.
+  // P/S is computed at read time so the daily market-cap refresh moves it
+  // without a re-scrape; the sales figure itself only changes once a quarter,
+  // so `lastSalesSync` lets the sweep skip it for a week at a time.
+  ttmSales        Decimal?     @db.Decimal
+  lastSalesSync   DateTime?    @db.Timestamptz(6)
   analyses        Analysis[]
   financials      Financials[]
   transcripts     Transcript[]

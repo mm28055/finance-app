@@ -105,7 +105,7 @@ function extractScreenerValue(html, label) {
     return null;
 }
 
-async function fetchScreener(company) {
+async function fetchScreenerHtml(company) {
     let url = null;
 
     // Priority 1: ISIN (Most reliable)
@@ -130,8 +130,18 @@ async function fetchScreener(company) {
             headers: { 'User-Agent': 'Mozilla/5.0' }
         });
         if (!response.ok) return null;
-        const html = await response.text();
+        return await response.text();
+    } catch (e) {
+        console.error(`Screener error for ${company.ticker}:`, e.message);
+        return null;
+    }
+}
 
+async function fetchScreener(company) {
+    const html = await fetchScreenerHtml(company);
+    if (!html) return null;
+
+    try {
         const marketCap = extractScreenerValue(html, 'Market Cap');
         const currentPrice = extractScreenerValue(html, 'Current Price');
         const bookValue = extractScreenerValue(html, 'Book Value');
@@ -146,11 +156,63 @@ async function fetchScreener(company) {
             pbRatio = Math.round((currentPrice / bookValue) * 100) / 100;
         }
 
-        return { marketCap, currentPrice, bookValue, peRatio, pbRatio, dividendYield, roce, fiftyTwoWeekHigh, fiftyTwoWeekLow, source: 'screener' };
+        return { marketCap, currentPrice, bookValue, peRatio, pbRatio, dividendYield, roce, fiftyTwoWeekHigh, fiftyTwoWeekLow, ttmSales: parseTtmSales(html), source: 'screener' };
     } catch (e) {
         console.error(`Screener error for ${company.ticker}:`, e.message);
         return null;
     }
+}
+
+// ================= TTM SALES =================
+// Screener's quarterly table is a plain HTML grid: row 0 is the column headers
+// ("Mar 2023", "Jun 2023", ...) and each later row is a metric ("Sales",
+// "Operating Profit"). Summing the last four Sales cells gives trailing-twelve-
+// month revenue, which is what P/S is measured against. Parsed properly rather
+// than by character windows — the same brittle-regex approach silently broke
+// the quarterly import for months when Screener changed their markup.
+
+const stripTags = (s) =>
+    s.replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+
+// "1,234" -> 1234, "-119" -> -119, "" / "-" / "12%" -> null.
+function parseQuarterCell(text) {
+    const t = text.replace(/,/g, '').trim();
+    if (!t || t === '-' || t.includes('%')) return null;
+    const n = Number(t);
+    return Number.isFinite(n) ? n : null;
+}
+
+function parseTtmSales(html) {
+    const start = html.indexOf('id="quarters"');
+    if (start === -1) return null;
+    const end = html.indexOf('</section>', start);
+    const section = html.substring(start, end === -1 ? start + 40000 : end);
+
+    const trs = section.match(/<tr[^>]*>[\s\S]*?<\/tr>/g) || [];
+    if (trs.length < 2) return null;
+
+    const cellsOf = (tr) => (tr.match(/<t[hd][^>]*>[\s\S]*?<\/t[hd]>/g) || []).map(stripTags);
+
+    let row = null;
+    for (const tr of trs.slice(1)) {
+        const cells = cellsOf(tr);
+        if (cells.length < 2) continue;
+        // Expandable rows render as "Sales +" — drop the toggle marker.
+        const label = cells[0].replace(/\s*\+$/, '').trim();
+        // Banks/NBFCs label the top line "Revenue" instead of "Sales".
+        if (label === 'Sales' || label === 'Revenue') {
+            row = cells.slice(1).map(parseQuarterCell);
+            break;
+        }
+    }
+    if (!row) return null;
+
+    // Take the last four columns that actually carry a number. A partial year
+    // would understate sales and so overstate P/S — return null instead.
+    const values = row.filter(v => v !== null);
+    if (values.length < 4) return null;
+    const ttm = values.slice(-4).reduce((a, b) => a + b, 0);
+    return ttm > 0 ? Math.round(ttm * 100) / 100 : null;
 }
 
 // Screener renders the 52-week band as: High / Low  ₹ <number>139</number> / <number>70.4</number>
@@ -212,10 +274,25 @@ async function syncFinance() {
 
     console.log(`🚀 Starting hybrid finance sync for ${companies.length} companies...\n`);
 
-    let googleSuccess = 0, screenerSuccess = 0, failed = 0;
+    // Sales only move when results are declared, so the quarterly table is
+    // re-read weekly rather than on every sweep. Market cap refreshes daily and
+    // P/S is divided at read time, so the ratio still tracks the price.
+    const salesCutoff = new Date();
+    salesCutoff.setDate(salesCutoff.getDate() - 7);
+
+    // Companies Google answers for need a second, Screener-only round trip for
+    // sales. Capped per run so the nightly job can't walk past its 90-minute
+    // timeout; whatever is left over is picked up by the next sweep.
+    let salesBudget = 200;
+
+    let googleSuccess = 0, screenerSuccess = 0, failed = 0, salesUpdated = 0;
 
     for (const company of companies) {
         process.stdout.write(`${company.ticker.padEnd(20)}`);
+
+        const salesStale = !company.ttmSales
+            || !company.lastSalesSync
+            || company.lastSalesSync < salesCutoff;
 
         // Try Google Finance first (fast)
         let data = await fetchGoogleFinance(company.ticker);
@@ -237,6 +314,22 @@ async function syncFinance() {
             }
         }
 
+        // Google carries no revenue history, so a stale sales figure means one
+        // extra Screener hit — skipped when Screener already answered above,
+        // since that page has been parsed already.
+        let ttmSales = data.ttmSales ?? null;
+        let salesChecked = data.source === 'screener';
+        if (!ttmSales && salesStale && !salesChecked && salesBudget > 0) {
+            salesBudget--;
+            const html = await fetchScreenerHtml(company);
+            if (html) {
+                ttmSales = parseTtmSales(html);
+                salesChecked = true;
+            }
+            await new Promise(r => setTimeout(r, 2000)); // Be polite
+        }
+        if (ttmSales) salesUpdated++;
+
         // Update database
         await prisma.company.update({
             where: { id: company.id },
@@ -252,6 +345,11 @@ async function syncFinance() {
                 // value untouched when it's the source that answered.
                 fiftyTwoWeekHigh: data.fiftyTwoWeekHigh || undefined,
                 fiftyTwoWeekLow: data.fiftyTwoWeekLow || undefined,
+                ttmSales: ttmSales || undefined,
+                // Stamped on every look, not just a hit: a company whose
+                // quarterly table has fewer than four filled columns would
+                // otherwise be re-fetched on every sweep forever.
+                lastSalesSync: salesChecked ? new Date() : undefined,
                 lastFinanceSync: new Date()
             }
         });
@@ -264,6 +362,7 @@ async function syncFinance() {
     console.log(`   Google Finance: ${googleSuccess}`);
     console.log(`   Screener.in:    ${screenerSuccess}`);
     console.log(`   Not Found:      ${failed}`);
+    console.log(`   TTM sales:      ${salesUpdated}`);
 }
 
 syncFinance()

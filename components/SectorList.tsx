@@ -43,6 +43,8 @@ export interface EnrichedCompany {
     bookValue?: number;
     peRatio?: number;
     pbRatio?: number;
+    // Market cap over trailing-twelve-month sales, divided server-side.
+    psRatio?: number;
     dividendYield?: number;
     roce?: number;
     fiftyTwoWeekHigh?: number;

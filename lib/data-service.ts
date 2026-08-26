@@ -6,6 +6,19 @@ import { ANALYSIS_WINDOW, TRANSCRIPT_WINDOW, FINANCIALS_WINDOW } from './retenti
 import { quarterScore, GENERAL_Q } from './quarters';
 
 /**
+ * Price to sales, divided at read time so the daily market-cap refresh moves it
+ * without re-scraping the quarterly table. Rounded to one decimal because the
+ * row shows a single figure and 5.51x-style precision is false comfort on a
+ * ratio built from a scraped top line.
+ */
+function priceToSales(marketCap: any, ttmSales: any): number | undefined {
+    if (!marketCap || !ttmSales) return undefined;
+    const mc = Number(marketCap), sales = Number(ttmSales);
+    if (!(sales > 0)) return undefined;
+    return Math.round((mc / sales) * 10) / 10;
+}
+
+/**
  * Lightweight dashboard query used by the homepage.
  *
  * IMPORTANT: This intentionally does NOT fetch Transcripts (rawText is huge)
@@ -32,6 +45,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             bookValue: true,
             peRatio: true,
             pbRatio: true,
+            ttmSales: true,
             dividendYield: true,
             roce: true,
             fiftyTwoWeekHigh: true,
@@ -160,6 +174,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             bookValue: co.bookValue ? Number(co.bookValue) : undefined,
             peRatio: co.peRatio ? Number(co.peRatio) : undefined,
             pbRatio: co.pbRatio ? Number(co.pbRatio) : undefined,
+            psRatio: priceToSales(co.marketCap, co.ttmSales),
             dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
             roce: co.roce ? Number(co.roce) : undefined,
             fiftyTwoWeekHigh: co.fiftyTwoWeekHigh ? Number(co.fiftyTwoWeekHigh) : undefined,
@@ -221,6 +236,7 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
             bookValue: true,
             peRatio: true,
             pbRatio: true,
+            ttmSales: true,
             dividendYield: true,
             roce: true,
             fiftyTwoWeekHigh: true,
@@ -322,6 +338,7 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
         bookValue: co.bookValue ? Number(co.bookValue) : undefined,
         peRatio: co.peRatio ? Number(co.peRatio) : undefined,
         pbRatio: co.pbRatio ? Number(co.pbRatio) : undefined,
+        psRatio: priceToSales(co.marketCap, co.ttmSales),
         dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
         roce: co.roce ? Number(co.roce) : undefined,
         fiftyTwoWeekHigh: co.fiftyTwoWeekHigh ? Number(co.fiftyTwoWeekHigh) : undefined,
@@ -710,6 +727,7 @@ export async function getDashboardData(): Promise<SectorData[]> {
             bookValue: co.bookValue ? Number(co.bookValue) : undefined,
             peRatio: co.peRatio ? Number(co.peRatio) : undefined,
             pbRatio: co.pbRatio ? Number(co.pbRatio) : undefined,
+            psRatio: priceToSales(co.marketCap, co.ttmSales),
             dividendYield: co.dividendYield ? Number(co.dividendYield) : undefined,
             roce: co.roce ? Number(co.roce) : undefined,
             fiftyTwoWeekHigh: co.fiftyTwoWeekHigh ? Number(co.fiftyTwoWeekHigh) : undefined,

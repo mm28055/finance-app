@@ -29,7 +29,7 @@ export default async function Home() {
       </header>
 
       {/* Sector List */}
-      <div className="max-w-5xl">
+      <div className="max-w-6xl">
         <SectorList sectors={sectorList} />
       </div>
 
