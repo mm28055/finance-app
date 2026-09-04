@@ -5,6 +5,7 @@ import type { CompanyFinancials } from './FinancialMatrix';
 import { AnalysisResult } from '@/lib/ai-analyst';
 import { SectorSection } from './SectorSection';
 import { Search } from 'lucide-react';
+import { meetsGuidanceThreshold, GUIDANCE_GROWTH_THRESHOLD } from '@/lib/guidance';
 
 export const COLOR_THEMES = {
     blue: { name: 'Blue', bg: 'bg-[#D4E5F7]', text: 'text-[#4A7AAF]', dot: 'bg-[#4A7AAF]' },
@@ -86,6 +87,9 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
 
     const [sortBy, setSortBy] = useState<'marketCap' | 'gemini'>('gemini');
     const [convictionFilter, setConvictionFilter] = useState<'ALL' | 'HIGH' | 'MEDIUM' | 'LOW'>('ALL');
+    // Independent of conviction: keeps only the companies whose name renders blue,
+    // i.e. those guiding at or above the growth threshold.
+    const [guidanceOnly, setGuidanceOnly] = useState(false);
 
     // Filter companies based on search AND conviction AND sort them
     const filteredSectors = useMemo(() => {
@@ -111,7 +115,15 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             })).filter(sector => sector.companies.length > 0);
         }
 
-        // 3. Sort
+        // 3. High-growth guidance filter (the blue names)
+        if (guidanceOnly) {
+            result = result.map(sector => ({
+                ...sector,
+                companies: sector.companies.filter(co => meetsGuidanceThreshold(co.guidance))
+            })).filter(sector => sector.companies.length > 0);
+        }
+
+        // 4. Sort
         return result.map(sector => {
             const sortedCompanies = [...sector.companies].sort((a, b) => {
                 if (sortBy === 'gemini') {
@@ -128,7 +140,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             });
             return { ...sector, companies: sortedCompanies };
         });
-    }, [sectors, searchQuery, sortBy, convictionFilter]);
+    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly]);
 
     // Count total companies
     const totalCompanies = sectors.reduce((sum, s) => sum + s.companies.length, 0);
@@ -191,6 +203,15 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                             >{label}</button>
                         );
                     })}
+
+                    <span className="w-px h-3 bg-gray-200 mx-1" />
+                    <button
+                        onClick={() => setGuidanceOnly(v => !v)}
+                        title={`Only companies guiding ${GUIDANCE_GROWTH_THRESHOLD}%+ revenue growth`}
+                        className={`px-2 py-0.5 text-[10px] font-medium rounded border transition-all ${guidanceOnly
+                            ? 'bg-[#6B9FCC] text-white border-[#6B9FCC]'
+                            : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
+                    >{`▲ ${GUIDANCE_GROWTH_THRESHOLD}%+ Guidance`}</button>
                 </div>
             </div>
 
@@ -207,7 +228,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                     name={s.sector}
                     count={s.companies.length}
                     companies={s.companies}
-                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL'}
+                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly}
                 >
                     {s.companies.map(co => (
                         <CompanyRow key={co.ticker} company={co} colorTheme={COLOR_THEMES.blue} />
