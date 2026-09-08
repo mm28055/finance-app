@@ -670,7 +670,25 @@ async function main() {
                         // console.log(`  🤖 Triggering AI Analysis for ${co.name}...`);
                         await logToDB(jobId, 'ANALYZING', `Analysis Started`, co.name, targetName);
                         try {
-                            await processTranscript(transcriptId);
+                            // processTranscript REPORTS a refusal, it does not throw one:
+                            // a placeholder PDF (Tijori sometimes files a press release or
+                            // an exchange intimation in the transcript field), an
+                            // extraction failure or an empty document all come back as
+                            // { success: false, error }. Ignoring that return counted them
+                            // as analysed and logged "Analysis Finished", so a quarter with
+                            // no Analysis row looked done — Alembic Pharma Q1 FY27 read as
+                            // analysed while its "transcript" was a 4-page press release.
+                            // hasAnalysis stays false either way, so a later sync retries.
+                            const result = await processTranscript(transcriptId);
+
+                            if (!result?.success) {
+                                const reason = (result as any)?.error || 'UNKNOWN';
+                                console.warn(`  ⏭️ Analysis skipped for ${co.name.trim()} ${targetName}: ${reason}`);
+                                await logToDB(jobId, 'SKIPPED', `Analysis skipped: ${reason}`, co.name, targetName);
+                                await sleep(2000);
+                                continue;
+                            }
+
                             analyzedCount++;
                             await logToDB(jobId, 'COMPLETED', `Analysis Finished`, co.name, targetName);
 
