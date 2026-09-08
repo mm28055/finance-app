@@ -309,6 +309,14 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                         >
                             {company.name}
                         </span>
+                        {company.isSme && (
+                            <span
+                                className="flex-shrink-0 text-[9px] font-semibold px-1.5 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200"
+                                title="Listed on NSE Emerge / BSE SME"
+                            >
+                                SME
+                            </span>
+                        )}
                         <button
                             onClick={handleConvictionClick}
                             title={localConviction ? `Conviction: ${localConviction} — click to change` : 'Click to set conviction'}

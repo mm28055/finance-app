@@ -62,6 +62,8 @@ export interface EnrichedCompany {
     };
     geminiScore?: number;
     geminiScoreDelta?: number;
+    /** Listed on NSE Emerge / BSE SME. Set by `scripts/mark-sme.ts`. */
+    isSme?: boolean;
     colorTag?: string;
     notes?: string;
     conviction?: string;

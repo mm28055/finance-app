@@ -15,6 +15,10 @@ model Company {
   ticker          String       @unique
   isin            String?      @unique
   sector          String
+  // Listed on NSE Emerge or BSE SME rather than the main board. Set from the
+  // exchanges' own scrip lists by `scripts/mark-sme.ts` — re-run it after adding
+  // companies, and after a migration (SMEs graduate to the main board).
+  isSme           Boolean      @default(false)
   businessProfile String?
   // Freshness of businessProfile. Stores the quarter NAME ("Q1 FY27") rather
   // than a Quarter FK so it survives the quarter-row cleanup. `updatedAt` can't

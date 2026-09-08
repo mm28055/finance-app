@@ -38,6 +38,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             name: true,
             ticker: true,
             sector: true,
+            isSme: true,
             colorTag: true,
             conviction: true,
             marketCap: true,
@@ -195,6 +196,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
                     quarter: latestA.quarter.name
                 }
                 : undefined,
+            isSme: co.isSme,
             colorTag: co.colorTag || undefined,
             conviction: co.conviction || undefined
         };
@@ -227,6 +229,7 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
             name: true,
             ticker: true,
             sector: true,
+            isSme: true,
             colorTag: true,
             businessProfile: true,
             notes: true,
@@ -345,6 +348,7 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
         fiftyTwoWeekLow: co.fiftyTwoWeekLow ? Number(co.fiftyTwoWeekLow) : undefined,
         geminiScore: currentAnalysis?.investibility_score,
         geminiScoreDelta,
+        isSme: co.isSme,
         colorTag: co.colorTag || undefined,
         notes: co.notes || undefined,
         conviction: co.conviction || undefined
@@ -735,6 +739,7 @@ export async function getDashboardData(): Promise<SectorData[]> {
             targetPrice: co.targetPrice ? Number(co.targetPrice) : undefined,
             geminiScore: currentAnalysis?.investibility_score,
             geminiScoreDelta,
+            isSme: co.isSme,
             colorTag: co.colorTag || undefined
         };
 
