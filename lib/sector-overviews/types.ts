@@ -15,6 +15,7 @@ export type Stance =
     | 'SCALEUP'      // sound execution, ordinary economics; pay for delivery
     | 'TURNAROUND'   // numbers are broken but fixable; needs evidence first
     | 'CYCLICAL'     // earnings set by prices, not contracts
+    | 'HARVEST'      // high returns, no growth; own for the cash, not the compounding
     | 'AVOID';       // structural problem, not a timing problem
 
 export const STANCE_CONFIG: Record<Stance, { label: string; blurb: string; pill: string; dot: string; hex: string }> = {
@@ -52,6 +53,13 @@ export const STANCE_CONFIG: Record<Stance, { label: string; blurb: string; pill:
         pill: 'bg-slate-200 text-slate-600',
         dot: 'bg-slate-400',
         hex: '#64748B',
+    },
+    HARVEST: {
+        label: 'Harvest',
+        blurb: 'High returns, no growth. Own it for the cash, not the compounding.',
+        pill: 'bg-teal-100 text-teal-700',
+        dot: 'bg-teal-500',
+        hex: '#0D9488',
     },
     AVOID: {
         label: 'Avoid',

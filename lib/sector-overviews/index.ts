@@ -1,5 +1,7 @@
 import { SectorOverview } from './types';
 import { pharmaCdmo } from './pharma-cdmo';
+import { pharma } from './pharma';
+import { pharmaApi } from './pharma-api';
 
 export * from './types';
 
@@ -7,7 +9,7 @@ export * from './types';
  * Every written overview, keyed by the sector name it belongs to.
  * Add a new file alongside `pharma-cdmo.ts` and register it here.
  */
-const OVERVIEWS: SectorOverview[] = [pharmaCdmo];
+const OVERVIEWS: SectorOverview[] = [pharmaCdmo, pharma, pharmaApi];
 
 const BY_SECTOR = new Map(OVERVIEWS.map(o => [o.sector.toLowerCase(), o]));
 
