@@ -52,6 +52,16 @@ const EARNINGS_PATTERNS: RegExp[] = [
     /\bresults?\s+(call|conference\s+call)\b/i,
     /\bQ[1-4]\s*(FY)?\s*'?\d{2,4}\b[^.]{0,40}\b(call|concall|conference)\b/i,
     /\b(quarter|quarterly)\s+(results?|earnings)\s+(call|conference)\b/i,
+    // Smaller companies hold their results call and call it an "Investor/Analyst
+    // Meeting" — Aartech Solonics filed its Q1 FY27 results discussion that way,
+    // and the general marker above sent the company's only quarterly call to a
+    // General slot, leaving the quarter empty. What settles it is the stated
+    // PURPOSE: a document convened to discuss results for a named quarter is
+    // that quarter's earnings call whatever the invitation was titled. Anchored
+    // on "quarter ended" so an annual meeting ("year ended") and a meet that
+    // merely mentions a quarter in passing both stay out — the header is the
+    // cover letter, where the subject line states what the document is.
+    /\b(financial\s+)?(results?|performance)\b[^.]{0,60}\bquarter\s+ended\b/i,
 ];
 
 export interface Classification {
