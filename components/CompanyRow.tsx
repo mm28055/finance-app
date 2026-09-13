@@ -3,7 +3,8 @@ import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { FinancialMatrix } from './FinancialMatrix';
 import { AnalysisPanel } from './AnalysisPanel';
 import { FinancialTrendChart } from './FinancialTrendChart';
-import { Trash2, ArrowRight, FileText } from 'lucide-react';
+import { Trash2, ArrowRight, FileText, Briefcase } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 import type { EnrichedCompany } from './SectorList';
 import { useAdmin } from '@/context/AdminContext';
 import { ANALYSIS_WINDOW } from '@/lib/retention';
@@ -43,6 +44,8 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     const [localConviction, setLocalConviction] = useState<ConvictionLevel | null>(
         (company.conviction as ConvictionLevel) || null
     );
+    const [inPortfolio, setInPortfolio] = useState(Boolean(company.inPortfolio));
+    const router = useRouter();
 
     // On-demand company detail.
     // The homepage ships a lightweight `company` (scalars + a minimal
@@ -208,6 +211,24 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
         }).catch(console.error);
     };
 
+    const handlePortfolioClick = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        const next = !inPortfolio;
+        setInPortfolio(next);
+        fetch('/api/companies', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: company.id, inPortfolio: next })
+        })
+            .then((res) => {
+                if (!res.ok) throw new Error(`Save failed (${res.status})`);
+                // ZPortfolio is assembled on the server; refetch so the row
+                // joins or leaves that section.
+                router.refresh();
+            })
+            .catch((err) => { console.error(err); setInPortfolio(!next); });
+    };
+
     const handleDelete = async (e: React.MouseEvent) => {
         e.stopPropagation();
         if (!confirm(`Delete "${company.name}"?`)) return;
@@ -330,6 +351,19 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                 <span className="text-[10px] text-gray-200 hover:text-gray-400 transition-colors leading-none">●</span>
                             )}
                         </button>
+                        {/* Held marker — always shown when held, clickable in edit mode */}
+                        {(inPortfolio || isAdminMode) && (
+                            <button
+                                onClick={handlePortfolioClick}
+                                disabled={!isAdminMode}
+                                title={inPortfolio
+                                    ? `In your portfolio${isAdminMode ? ' — click to remove' : ''}`
+                                    : 'Click to add to your portfolio'}
+                                className={`flex-shrink-0 ${isAdminMode ? '' : 'cursor-default'}`}
+                            >
+                                <Briefcase className={`w-3 h-3 ${inPortfolio ? 'text-[#4A7AAF]' : 'text-gray-200 hover:text-gray-400'}`} />
+                            </button>
+                        )}
                     </div>
                 </div>
 

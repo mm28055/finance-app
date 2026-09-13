@@ -2,6 +2,7 @@ import { prisma } from '@/lib/prisma';
 import { SectorData, EnrichedCompany } from '@/components/SectorList';
 import type { CompanyFinancials, MetricData } from '@/components/FinancialMatrix';
 import { AnalysisResult } from './ai-analyst';
+import { PORTFOLIO_SECTOR } from './portfolio';
 import { ANALYSIS_WINDOW, TRANSCRIPT_WINDOW, FINANCIALS_WINDOW } from './retention';
 import { quarterScore, GENERAL_Q } from './quarters';
 
@@ -73,6 +74,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
                     quarter: { select: { name: true, year: true, q: true } }
                 }
             },
+            inPortfolio: true,
             // Scores only (no text blobs). The two newest drive the score delta;
             // the rest are here so the collapsed row shows the same quarter tabs
             // the expanded row will.
@@ -197,6 +199,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
                 }
                 : undefined,
             isSme: co.isSme,
+            inPortfolio: co.inPortfolio,
             colorTag: co.colorTag || undefined,
             conviction: co.conviction || undefined
         };
@@ -209,8 +212,23 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
     sectors.forEach(sector => {
         sector.companies.sort((a, b) => (b.marketCap || 0) - (a.marketCap || 0));
     });
+    sectors.sort((a, b) => a.sector.localeCompare(b.sector));
 
-    return sectors.sort((a, b) => a.sector.localeCompare(b.sector));
+    // Held companies again, as the same objects rather than copies, in a
+    // section of their own at the bottom.
+    const held = sectors
+        .flatMap(s => s.companies)
+        .filter(c => c.inPortfolio)
+        .sort((a, b) => (b.marketCap || 0) - (a.marketCap || 0));
+    if (held.length > 0) {
+        sectors.push({
+            sector: PORTFOLIO_SECTOR,
+            stats: { companies: held.length, avgGrowth: "+0%", sentiment: 0 },
+            companies: held
+        });
+    }
+
+    return sectors;
 }
 
 /**

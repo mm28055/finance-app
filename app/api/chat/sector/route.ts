@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { geminiPro } from '@/lib/gemini';
+import { sectorCompanyWhere } from '@/lib/portfolio';
 
 export async function POST(req: NextRequest) {
     try {
@@ -12,7 +13,7 @@ export async function POST(req: NextRequest) {
 
         // Fetch companies in this sector with their analyses
         const companies = await prisma.company.findMany({
-            where: { sector: sector, isVisible: true },
+            where: sectorCompanyWhere(sector),
             include: {
                 analyses: {
                     include: { quarter: true },

@@ -2,6 +2,7 @@
 import { prisma } from '@/lib/prisma';
 import { Prisma } from '@prisma/client';
 import { GENERAL_Q } from '@/lib/retention';
+import { isPortfolioSector, sectorCompanyWhere } from '@/lib/portfolio';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_AI_KEY!);
@@ -20,6 +21,16 @@ export interface RagResult {
     distance: number;
 }
 
+// Chunks carry their company's sector, but ZPortfolio isn't one, so its chunks
+// are picked out by company instead.
+async function chunkScope(sector: string): Promise<Prisma.Sql> {
+    if (!isPortfolioSector(sector)) return Prisma.sql`sector = ${sector}`;
+    const held = await prisma.company.findMany({ where: sectorCompanyWhere(sector), select: { id: true } });
+    return held.length > 0
+        ? Prisma.sql`"companyId" IN (${Prisma.join(held.map(c => c.id))})`
+        : Prisma.sql`FALSE`;
+}
+
 /**
  * Searches for relevant transcript chunks within a specific sector.
  * Uses pgvector cosine distance definition (<=>).
@@ -29,7 +40,7 @@ async function getRecentQuarterIds(sector: string): Promise<string[]> {
     // We use the Transcript table because RAG searches raw transcripts.
     // Finding the latest 2 quarters that actually HAVE transcripts for each company in the sector.
     const companies = await prisma.company.findMany({
-        where: { sector: sector, isVisible: true },
+        where: sectorCompanyWhere(sector),
         select: {
             id: true,
             // The two latest QUARTERS. General slots are excluded from this take(2)
@@ -58,7 +69,7 @@ async function getRecentQuarterIds(sector: string): Promise<string[]> {
     const generalTranscripts = await prisma.transcript.findMany({
         where: {
             quarter: { q: GENERAL_Q },
-            company: { sector, isVisible: true }
+            company: sectorCompanyWhere(sector)
         },
         select: { quarterId: true }
     });
@@ -75,6 +86,7 @@ export async function searchSectorTranscripts(sector: string, query: string, lim
 
     // 2. Generate Vector for the Query
     const vector = await generateEmbedding(query);
+    const scope = await chunkScope(sector);
 
     // 3. Perform Vector Search via Raw SQL with Filter
     const results = await prisma.$queryRaw`
@@ -84,7 +96,7 @@ export async function searchSectorTranscripts(sector: string, query: string, lim
             "quarterId",
             (embedding <=> ${vector}::vector) as distance
         FROM "TranscriptChunk"
-        WHERE sector = ${sector}
+        WHERE ${scope}
         AND "quarterId" IN (${Prisma.join(allowedQuarterIds)})
         ORDER BY distance ASC
         LIMIT ${limit};
@@ -106,7 +118,7 @@ export async function searchSectorTranscripts(sector: string, query: string, lim
 export async function searchSectorTranscriptsBalanced(sector: string, query: string, totalLimit = 125, targetQuarter?: string): Promise<RagResult[]> {
     // 1. Get allowed quarters and company list
     const companies = await prisma.company.findMany({
-        where: { sector: sector, isVisible: true },
+        where: sectorCompanyWhere(sector),
         select: { id: true }
     });
     const companyIds = companies.map(c => c.id);
@@ -126,6 +138,7 @@ export async function searchSectorTranscriptsBalanced(sector: string, query: str
     if (allowedQuarterIds.length === 0 || companyIds.length === 0) return [];
 
     const vector = await generateEmbedding(query);
+    const scope = await chunkScope(sector);
 
     // Phase 1: Get 1 best chunk per company (guaranteed representation)
     const guaranteedChunks = await prisma.$queryRaw`
@@ -135,7 +148,7 @@ export async function searchSectorTranscriptsBalanced(sector: string, query: str
             "quarterId",
             (embedding <=> ${vector}::vector) as distance
         FROM "TranscriptChunk"
-        WHERE sector = ${sector}
+        WHERE ${scope}
         AND "quarterId" IN (${Prisma.join(allowedQuarterIds)})
         ORDER BY "companyId", distance ASC;
     ` as any[];
@@ -153,7 +166,7 @@ export async function searchSectorTranscriptsBalanced(sector: string, query: str
                 "quarterId",
                 (embedding <=> ${vector}::vector) as distance
             FROM "TranscriptChunk"
-            WHERE sector = ${sector}
+            WHERE ${scope}
             AND "quarterId" IN (${Prisma.join(allowedQuarterIds)})
             ORDER BY distance ASC
             LIMIT ${remainingBudget + guaranteedChunks.length};

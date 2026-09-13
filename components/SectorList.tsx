@@ -6,6 +6,7 @@ import { AnalysisResult } from '@/lib/ai-analyst';
 import { SectorSection } from './SectorSection';
 import { Search } from 'lucide-react';
 import { meetsGuidanceThreshold, GUIDANCE_GROWTH_THRESHOLD } from '@/lib/guidance';
+import { isPortfolioSector } from '@/lib/portfolio';
 
 export const COLOR_THEMES = {
     blue: { name: 'Blue', bg: 'bg-[#D4E5F7]', text: 'text-[#4A7AAF]', dot: 'bg-[#4A7AAF]' },
@@ -64,6 +65,8 @@ export interface EnrichedCompany {
     geminiScoreDelta?: number;
     /** Listed on NSE Emerge / BSE SME. Set by `scripts/mark-sme.ts`. */
     isSme?: boolean;
+    /** Held in the portfolio, so also listed under ZPortfolio. */
+    inPortfolio?: boolean;
     colorTag?: string;
     notes?: string;
     conviction?: string;
@@ -144,8 +147,12 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
         });
     }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly]);
 
-    // Count total companies
-    const totalCompanies = sectors.reduce((sum, s) => sum + s.companies.length, 0);
+    // Count total companies. ZPortfolio repeats companies listed elsewhere, so
+    // it is left out of both counts.
+    const countCompanies = (list: SectorData[]) => list
+        .filter(s => !isPortfolioSector(s.sector))
+        .reduce((sum, s) => sum + s.companies.length, 0);
+    const totalCompanies = countCompanies(sectors);
 
     if (sectors.length === 0) {
         return <div className="text-gray-400 text-center py-10 text-sm">No companies found.</div>;
@@ -219,7 +226,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
 
             {searchQuery && (
                 <div className="text-[10px] text-gray-400 -mt-2 ml-1 mb-2">
-                    Found {filteredSectors.reduce((sum, s) => sum + s.companies.length, 0)} matches
+                    Found {countCompanies(filteredSectors)} matches
                 </div>
             )}
 

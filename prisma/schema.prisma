@@ -19,6 +19,9 @@ model Company {
   // exchanges' own scrip lists by `scripts/mark-sme.ts` — re-run it after adding
   // companies, and after a migration (SMEs graduate to the main board).
   isSme           Boolean      @default(false)
+  // Held in the personal portfolio. These companies stay in their own sector and
+  // are listed a second time under ZPortfolio (see lib/portfolio.ts).
+  inPortfolio     Boolean      @default(false)
   businessProfile String?
   // Freshness of businessProfile. Stores the quarter NAME ("Q1 FY27") rather
   // than a Quarter FK so it survives the quarter-row cleanup. `updatedAt` can't

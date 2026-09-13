@@ -95,6 +95,7 @@ export async function PUT(req: NextRequest) {
             colorTag: body.colorTag,
             notes: body.notes,
             conviction: body.conviction ?? undefined,
+            inPortfolio: typeof body.inPortfolio === 'boolean' ? body.inPortfolio : undefined,
             // null clears the target; undefined (field absent) leaves it alone.
             targetPrice: body.targetPrice === undefined ? undefined : body.targetPrice
         }
