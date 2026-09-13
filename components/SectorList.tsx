@@ -95,6 +95,8 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
     // Independent of conviction: keeps only the companies whose name renders blue,
     // i.e. those guiding at or above the growth threshold.
     const [guidanceOnly, setGuidanceOnly] = useState(false);
+    // Keeps only the companies whose latest concall scored 90 or more.
+    const [topScoreOnly, setTopScoreOnly] = useState(false);
 
     // Filter companies based on search AND conviction AND sort them
     const filteredSectors = useMemo(() => {
@@ -128,7 +130,15 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             })).filter(sector => sector.companies.length > 0);
         }
 
-        // 4. Sort
+        // 4. Latest concall scored 90+
+        if (topScoreOnly) {
+            result = result.map(sector => ({
+                ...sector,
+                companies: sector.companies.filter(co => (co.geminiScore ?? 0) >= 90)
+            })).filter(sector => sector.companies.length > 0);
+        }
+
+        // 5. Sort
         return result.map(sector => {
             const sortedCompanies = [...sector.companies].sort((a, b) => {
                 if (sortBy === 'gemini') {
@@ -145,7 +155,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             });
             return { ...sector, companies: sortedCompanies };
         });
-    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly]);
+    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, topScoreOnly]);
 
     // Count total companies. ZPortfolio repeats companies listed elsewhere, so
     // it is left out of both counts.
@@ -221,6 +231,13 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                             ? 'bg-[#6B9FCC] text-white border-[#6B9FCC]'
                             : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
                     >{`▲ ${GUIDANCE_GROWTH_THRESHOLD}%+ Guidance`}</button>
+                    <button
+                        onClick={() => setTopScoreOnly(v => !v)}
+                        title="Only companies whose latest concall scored 90 or more"
+                        className={`px-2 py-0.5 text-[10px] font-medium rounded border transition-all ${topScoreOnly
+                            ? 'bg-emerald-500 text-white border-emerald-500'
+                            : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
+                    >★ 90+ Score</button>
                 </div>
             </div>
 
@@ -237,7 +254,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                     name={s.sector}
                     count={s.companies.length}
                     companies={s.companies}
-                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly}
+                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || topScoreOnly}
                 >
                     {s.companies.map(co => (
                         <CompanyRow key={co.ticker} company={co} colorTheme={COLOR_THEMES.blue} />
