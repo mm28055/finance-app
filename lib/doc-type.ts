@@ -62,6 +62,10 @@ const EARNINGS_PATTERNS: RegExp[] = [
     // merely mentions a quarter in passing both stay out — the header is the
     // cover letter, where the subject line states what the document is.
     /\b(financial\s+)?(results?|performance)\b[^.]{0,60}\bquarter\s+ended\b/i,
+    // Large companies say it outright: SBI files every results call as the
+    // "Q1FY27 post results Analyst Meet", which the analyst-meet marker above
+    // sent to a General slot, emptying both of its quarters.
+    /\bpost[\s-]*(results?|earnings)\b[^.]{0,40}\b(call|concall|conference|meet|meeting)\b/i,
 ];
 
 export interface Classification {
