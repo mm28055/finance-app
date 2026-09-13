@@ -95,8 +95,9 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
     // Independent of conviction: keeps only the companies whose name renders blue,
     // i.e. those guiding at or above the growth threshold.
     const [guidanceOnly, setGuidanceOnly] = useState(false);
-    // Keeps only the companies whose latest concall scored 90 or more.
-    const [topScoreOnly, setTopScoreOnly] = useState(false);
+    // Keeps only the companies whose latest concall scored 90+ (TOP) or 60 and
+    // under (LOW). The two bands can't overlap, so only one is on at a time.
+    const [scoreBand, setScoreBand] = useState<'TOP' | 'LOW' | null>(null);
 
     // Filter companies based on search AND conviction AND sort them
     const filteredSectors = useMemo(() => {
@@ -130,11 +131,12 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             })).filter(sector => sector.companies.length > 0);
         }
 
-        // 4. Latest concall scored 90+
-        if (topScoreOnly) {
+        // 4. Latest concall score band. Unscored companies are in neither band.
+        if (scoreBand) {
             result = result.map(sector => ({
                 ...sector,
-                companies: sector.companies.filter(co => (co.geminiScore ?? 0) >= 90)
+                companies: sector.companies.filter(co => co.geminiScore != null &&
+                    (scoreBand === 'TOP' ? co.geminiScore >= 90 : co.geminiScore <= 60))
             })).filter(sector => sector.companies.length > 0);
         }
 
@@ -155,7 +157,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             });
             return { ...sector, companies: sortedCompanies };
         });
-    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, topScoreOnly]);
+    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, scoreBand]);
 
     // Count total companies. ZPortfolio repeats companies listed elsewhere, so
     // it is left out of both counts.
@@ -232,12 +234,19 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                             : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
                     >{`▲ ${GUIDANCE_GROWTH_THRESHOLD}%+ Guidance`}</button>
                     <button
-                        onClick={() => setTopScoreOnly(v => !v)}
+                        onClick={() => setScoreBand(b => b === 'TOP' ? null : 'TOP')}
                         title="Only companies whose latest concall scored 90 or more"
-                        className={`px-2 py-0.5 text-[10px] font-medium rounded border transition-all ${topScoreOnly
+                        className={`px-2 py-0.5 text-[10px] font-medium rounded border transition-all ${scoreBand === 'TOP'
                             ? 'bg-emerald-500 text-white border-emerald-500'
                             : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
                     >★ 90+ Score</button>
+                    <button
+                        onClick={() => setScoreBand(b => b === 'LOW' ? null : 'LOW')}
+                        title="Only companies whose latest concall scored 60 or less"
+                        className={`px-2 py-0.5 text-[10px] font-medium rounded border transition-all ${scoreBand === 'LOW'
+                            ? 'bg-rose-400 text-white border-rose-400'
+                            : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
+                    >▼ ≤60 Score</button>
                 </div>
             </div>
 
@@ -254,7 +263,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                     name={s.sector}
                     count={s.companies.length}
                     companies={s.companies}
-                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || topScoreOnly}
+                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null}
                 >
                     {s.companies.map(co => (
                         <CompanyRow key={co.ticker} company={co} colorTheme={COLOR_THEMES.blue} />
