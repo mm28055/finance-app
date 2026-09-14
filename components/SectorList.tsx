@@ -98,6 +98,9 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
     // Keeps only the companies whose latest concall scored 90+ (TOP) or 60 and
     // under (LOW). The two bands can't overlap, so only one is on at a time.
     const [scoreBand, setScoreBand] = useState<'TOP' | 'LOW' | null>(null);
+    // Keeps only the companies whose score moved 20+ points, up or down, from
+    // the previous quarter's concall.
+    const [bigMoveOnly, setBigMoveOnly] = useState(false);
 
     // Filter companies based on search AND conviction AND sort them
     const filteredSectors = useMemo(() => {
@@ -140,7 +143,15 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             })).filter(sector => sector.companies.length > 0);
         }
 
-        // 5. Sort
+        // 5. Score moved 20+ either way since the previous quarter
+        if (bigMoveOnly) {
+            result = result.map(sector => ({
+                ...sector,
+                companies: sector.companies.filter(co => Math.abs(co.geminiScoreDelta ?? 0) >= 20)
+            })).filter(sector => sector.companies.length > 0);
+        }
+
+        // 6. Sort
         return result.map(sector => {
             const sortedCompanies = [...sector.companies].sort((a, b) => {
                 if (sortBy === 'gemini') {
@@ -157,7 +168,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             });
             return { ...sector, companies: sortedCompanies };
         });
-    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, scoreBand]);
+    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, scoreBand, bigMoveOnly]);
 
     // Count total companies. ZPortfolio repeats companies listed elsewhere, so
     // it is left out of both counts.
@@ -247,6 +258,13 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                             ? 'bg-rose-400 text-white border-rose-400'
                             : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
                     >▼ ≤60 Score</button>
+                    <button
+                        onClick={() => setBigMoveOnly(v => !v)}
+                        title="Only companies whose score moved 20 or more points, up or down, since last quarter"
+                        className={`px-2 py-0.5 text-[10px] font-medium rounded border transition-all ${bigMoveOnly
+                            ? 'bg-purple-500 text-white border-purple-500'
+                            : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
+                    >± 20 Score Move</button>
                 </div>
             </div>
 
@@ -263,7 +281,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                     name={s.sector}
                     count={s.companies.length}
                     companies={s.companies}
-                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null}
+                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null || bigMoveOnly}
                 >
                     {s.companies.map(co => (
                         <CompanyRow key={co.ticker} company={co} colorTheme={COLOR_THEMES.blue} />
