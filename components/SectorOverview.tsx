@@ -65,6 +65,8 @@ interface Row {
     pe: number | null;
     marketCap: number | null;
     growth: number | null;
+    orderBook: number | null;
+    ttmSales: number | null;
     /** Scatter only: draw the label under the bubble to dodge a neighbour. */
     labelBelow?: boolean;
 }
@@ -117,6 +119,8 @@ export function SectorOverview({ overview, companies }: {
             pe: co?.peRatio ?? null,
             marketCap: co?.marketCap ?? null,
             growth: co?.financials?.revenue?.deltaYoY ?? null,
+            orderBook: co?.financials?.orderBook ?? null,
+            ttmSales: co?.ttmSales ?? null,
         };
     }), [overview.verdicts, byName, labels]);
 
@@ -152,6 +156,25 @@ export function SectorOverview({ overview, companies }: {
     };
     const medRoce = median(scatterData.map(r => r.roce!));
     const medPe = median(scatterData.map(r => r.pe!));
+
+    // The P/E axis follows the data: sectors run from single-digit cyclicals to
+    // triple-digit stories, and a fixed range leaves one end unlabelled.
+    const peValues = scatterData.map(r => r.pe!);
+    const peDomain: [number, number] = peValues.length
+        // Extra headroom on top: the highest bubble carries its label above it.
+        ? [Math.max(1, Math.min(...peValues) * 0.8), Math.max(...peValues) * 1.6]
+        : [10, 100];
+    const peTicks = [5, 10, 15, 20, 30, 45, 60, 90, 120, 250, 500, 800]
+        .filter(t => t >= peDomain[0] && t <= peDomain[1]);
+
+    // Order book cover, in months of trailing revenue. Only meaningful for
+    // project businesses, so the chart appears only when enough of the sector
+    // reports a book to compare.
+    const coverData = rows
+        .filter(r => (r.orderBook ?? 0) > 0 && (r.ttmSales ?? 0) > 0)
+        .map(r => ({ ...r, cover: (r.orderBook! / r.ttmSales!) * 12 }))
+        .sort((a, b) => b.cover - a.cover);
+    const noBook = rows.filter(r => !((r.orderBook ?? 0) > 0)).map(r => r.label);
 
     // Companies in the sector that the note does not yet cover.
     const covered = new Set(overview.verdicts.map(v => v.company.trim().toLowerCase()));
@@ -200,7 +223,7 @@ export function SectorOverview({ overview, companies }: {
 
                 <ChartCard
                     title="Where the margins are"
-                    subtitle={`EBITDA margin, ${overview.asOfQuarter}. The four business models separate cleanly.`}
+                    subtitle={`EBITDA margin, latest reported quarter (${overview.asOfQuarter} for most).`}
                     height={Math.max(220, marginData.length * 24 + 30)}
                 >
                     <ResponsiveContainer width="100%" height="100%">
@@ -251,8 +274,8 @@ export function SectorOverview({ overview, companies }: {
                             />
                             <YAxis
                                 type="number" dataKey="pe" name="P/E"
-                                scale="log" domain={[25, 900]}
-                                ticks={[30, 60, 120, 250, 500]}
+                                scale="log" domain={peDomain}
+                                ticks={peTicks}
                                 tick={{ fontSize: 9, fill: '#9CA3AF' }}
                                 tickLine={false}
                                 width={38}
@@ -317,6 +340,50 @@ export function SectorOverview({ overview, companies }: {
                     </ResponsiveContainer>
                 </ChartCard>
             </div>
+
+            {coverData.length >= 3 && (
+                <div className="px-5 pb-4 -mt-1 border-b border-gray-100">
+                    <ChartCard
+                        title="Revenue visibility"
+                        subtitle={`Order book as months of trailing revenue.${noBook.length ? ` No reported book: ${noBook.join(', ')} — short-cycle product sales.` : ''}`}
+                        height={coverData.length * 26 + 20}
+                    >
+                        <ResponsiveContainer width="100%" height="100%">
+                            <BarChart data={coverData} layout="vertical" margin={{ top: 0, right: 64, left: 0, bottom: 0 }}>
+                                <XAxis type="number" hide domain={[0, (max: number) => max * 1.15]} />
+                                <YAxis
+                                    type="category"
+                                    dataKey="label"
+                                    width={104}
+                                    tick={{ fontSize: 9, fill: '#6B7280' }}
+                                    axisLine={false}
+                                    tickLine={false}
+                                />
+                                <ReferenceLine x={12} stroke="#D1D5DB" strokeDasharray="3 3" />
+                                <Tooltip
+                                    cursor={{ fill: '#F3F4F6' }}
+                                    contentStyle={{ fontSize: 11, borderRadius: 8, border: '1px solid #E5E7EB' }}
+                                    formatter={(v: any, _n: any, item: any) => [
+                                        `${Number(v).toFixed(1)} months (${fmtCr(item?.payload?.orderBook)} book)`,
+                                        'Cover',
+                                    ]}
+                                />
+                                <Bar dataKey="cover" radius={[0, 3, 3, 0]} barSize={13} isAnimationActive={false}>
+                                    {coverData.map((r, i) => (
+                                        <Cell key={i} fill={STANCE_CONFIG[r.verdict.stance].hex} fillOpacity={0.85} />
+                                    ))}
+                                    <LabelList
+                                        dataKey="cover"
+                                        position="right"
+                                        formatter={(v: any) => `${Number(v).toFixed(1)} mo`}
+                                        style={{ fontSize: 9, fill: '#9CA3AF' }}
+                                    />
+                                </Bar>
+                            </BarChart>
+                        </ResponsiveContainer>
+                    </ChartCard>
+                </div>
+            )}
 
             {/* ── The note ─────────────────────────────────────────────── */}
             <div className="px-5 py-4 border-b border-gray-100 space-y-6">
