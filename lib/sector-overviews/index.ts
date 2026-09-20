@@ -11,6 +11,8 @@ import { industrialManufacturing } from './industrial-manufacturing';
 import { industrialRailway } from './industrial-railway';
 import { industrialMachinery } from './industrial-machinery';
 import { industrialProducts } from './industrial-products';
+import { electAndRefrac } from './elect-and-refrac';
+import { electricalTransformers } from './electrical-transformers';
 
 export * from './types';
 
@@ -18,7 +20,7 @@ export * from './types';
  * Every written overview, keyed by the sector name it belongs to.
  * Add a new file alongside `pharma-cdmo.ts` and register it here.
  */
-const OVERVIEWS: SectorOverview[] = [pharmaCdmo, pharma, pharmaApi, pumpsCompEng, packaging, bearings, cables, aerospaceDefence, industrialManufacturing, industrialProducts, industrialRailway, industrialMachinery];
+const OVERVIEWS: SectorOverview[] = [pharmaCdmo, pharma, pharmaApi, pumpsCompEng, packaging, bearings, cables, aerospaceDefence, industrialManufacturing, industrialProducts, industrialRailway, industrialMachinery, electAndRefrac, electricalTransformers];
 
 const BY_SECTOR = new Map(OVERVIEWS.map(o => [o.sector.toLowerCase(), o]));
 
