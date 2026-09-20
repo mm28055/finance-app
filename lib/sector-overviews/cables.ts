@@ -2,137 +2,119 @@ import { SectorOverview } from './types';
 
 export const cables: SectorOverview = {
     sector: 'Cables',
-    title: 'Cables',
+    title: 'Cables & Wires',
     standfirst:
-        'Eight companies reporting 15-100% revenue growth, most of it the price of copper and aluminium. Underneath are four different businesses, and the real question is who still earns a good return once metal prices stop rising and Aditya Birla and Adani start selling wire.',
-    lastUpdated: '2026-09-19',
+        'Eight companies selling copper and aluminium wrapped in plastic. That sounds like a commodity and mostly is — except in two places. In house wiring, India is one of the few countries where wire is a branded consumer purchase, and the brand and the dealer network are worth more than the factory. In high-voltage and specialised products, the barrier is a certification that takes years and a customer who will not risk a failure underground. Everything else in this sector is a conversion fee on metal, and should be valued as one.',
+    lastUpdated: '2026-09-20',
     asOfQuarter: 'Q1 FY27',
 
     sections: [
         {
             heading: 'Recommendation, up front',
             body: [
-                '**RR Kabel** is the business I would own. It is the best-run company here, with a 28% return on capital, 50-day working capital and margins rising for the right reasons, and 45x is a fair price for that. **Dynamic Cables** is the smaller, cheaper position at 24x for a 26% return. **KSH International** is a real leader in a tight market, but the stock has tripled since listing and management has told us Q1 is the high point for the year, so I would wait. **Finolex Cables** looks cheap at 27x, but a one-off gain on fibre stock flattered this year\'s profit, and its core house-wire business is the most exposed to the new entrants. **Laser Power** and **Paramount** are recovery stories that depend on specific events: Laser needs its debt repaid, Paramount needs US tariffs to stay gone. I would not own **Advait Energy** or **JD Cables** until they show they can turn profit into cash.',
-                'Before anything else, the Committee should know two things. **First, this dashboard sector does not include India\'s three cable leaders, Polycab, KEI and Havells.** What we have are the challengers and the specialists. **Second, headline growth in this sector is mostly the price of metal.** Copper is around $14,000-14,500 a tonne, close to a record. RR Kabel\'s revenue grew 54%, but its volume grew only about 17%. At Dynamic Cables, 33% revenue growth was 5-6% volume. At Paramount, 17% revenue growth was about 4% more metal going through the plant. Finolex said its core building-wire volume grew in the low single digits. Anyone reading these results as 30-50% growth businesses will overpay.',
+                '**Start with a fact the dashboard hides: the listed leaders of this industry — Polycab, KEI and Havells — are not in this sector list.** These eight are the second tier. Polycab holds about 18% of the Indian wire and cable market, KEI 9% and RR Kabel 7%, in a market that is roughly 74% organised with nobody above a fifth. So the question for every company here is not "can it beat the industry" but "what does it own that the top three and the new entrants cannot copy".',
+                '**RR Kabel is the one with a genuine answer, and it is distribution.** It reaches about 1.5 lakh retail touchpoints, added 20-25,000 of them last year, and sells into the one part of this industry with consumer economics: management\'s own numbers are that wires earn 11-12% margins domestically against about 5% on export, while cables earn 11-12% on export against 6-7% domestically. In other words the profit pool is branded house wire sold to electricians and retailers, and RR has spent a decade building the shelf space to reach them. Its fast-moving electrical goods arm has just reached operational breakeven, which removes the drag that made the stock hard to own.',
+                '**KSH International owns the stickiest customer relationships in this list.** It makes winding wire and continuously transposed conductor — the copper that goes inside large power transformers — for 120-plus transformer makers, with more than 95% repeat business, year-long value-addition contracts covering 80-85% of customers, and a growing share of 765kV and high-voltage direct-current work. A transformer maker qualifies its conductor supplier and does not casually change; the copper itself is booked at order and passed through, so what KSH sells is conversion value per tonne, which rose from ₹66,000 to ₹93,000 in a year. The business is excellent; the share price has already tripled since listing and management has all but said this quarter is the peak of unit economics.',
+                '**Dynamic Cables is the disciplined small one worth owning on weakness,** with 80% of contracts on full metal pass-through, 26% returns and a new plant in September. **Finolex Cables is cheap and carries the sector\'s biggest strategic question** — it is overwhelmingly a house-wire company at the exact moment UltraTech has committed ₹1,800cr to become the second-largest wires maker by capacity. **I would avoid Advait Energy and JD Cables:** in both, a decent niche is being used to fund unrelated expansion with almost no cash conversion.',
             ],
         },
         {
-            heading: 'What we are actually looking at',
+            heading: 'The value chain: where a conversion fee becomes a margin',
             body: [
-                'The dashboard calls all eight "cables". There are really four kinds of business in the group, and each one has different economics.',
+                'Copper and aluminium are 70-80% of the cost of most products here, and roughly 80% of contracts pass metal straight through. That makes the metal price almost irrelevant to profit and highly relevant to reported revenue — which is why this quarter\'s growth numbers are so misleading.',
             ],
             points: [
                 {
-                    label: 'Branded wires and cables sold through dealers: RR Kabel, Finolex Cables',
-                    text: 'House wires and low-voltage cables sold to electricians and homeowners through dealers and retail counters, plus fans, lights and switches. The brand, the dealer network and electrician loyalty are the moat. Finolex is overwhelmingly a wire company: about 60% of its electrical revenue is building wire and only 7-8% is power cable. RR Kabel is broader, with cable volume growing over 25% and wires about 12%. **This is the segment Aditya Birla and Adani are entering.**',
+                    label: 'Metal and rod — the part almost nobody should own',
+                    text: 'Finolex is the only one here with its own copper rod plant, and it sat idle all quarter for want of commercial cooking gas, turning ₹403cr of segment revenue into ₹8cr. **Backward integration into a commodity adds risk without adding margin;** the rest of the sector buys rod and is better off for it.',
                 },
                 {
-                    label: 'Power cables for projects and industry: Dynamic Cables, Paramount, Laser Power, JD Cables',
-                    text: 'High- and low-voltage power cables and overhead conductors, sold on order to utilities, electricity boards, contractors, solar parks and factories. Customers buy through tenders and approved-vendor lists, so qualifications matter more than brands. Margins are thinner and about 80% of contracts pass metal prices straight through. Laser and JD Cables also do construction contracting (EPC), which ties up much more cash.',
+                    label: 'Branded house wire — the profit pool',
+                    text: 'Sold through dealers and retailers to electricians and small builders, with brand, BIS certification and shelf presence doing the work. Domestic wire margins are 11-12% against 6-7% for domestic cables. **RR Kabel and Finolex live here;** it is the only part of this industry with consumer-style economics, and therefore the part that attracts conglomerates.',
                 },
                 {
-                    label: 'Transformer wire: KSH International',
-                    text: 'Not a cable maker at all. KSH makes copper winding wire, and about 75% of its revenue comes from continuously transposed conductor (CTC), used inside large power transformers. It is really a bet on the transformer shortage, and its customers are the 120-plus companies that make transformers, including Hitachi Energy.',
+                    label: 'Industrial and utility cables — a conversion fee with approvals attached',
+                    text: 'Low, medium and high-voltage power cables sold to industrial buyers, state electricity boards and project contractors. Approvals per voltage class and per utility are the barrier: Paramount expects 132kV approvals about a year after production starts and full extra-high-voltage certification only by FY29; JD Cables\' business is essentially its vendor registrations with eastern and north-eastern state boards. **Margins here are 6-10% and set by the tender, not by the brand.**',
                 },
                 {
-                    label: 'Transmission-line hardware and green energy: Advait Energy',
-                    text: 'Advait sells to the same power utilities but makes a different product: optical ground wire for the top of pylons, emergency restoration towers, stringing tools and live-line stringing services. Around that core it is building solar EPC, battery storage, electrolysers, fuel cells and carbon credits.',
+                    label: 'Specialised conductors and optical ground wire — commodity plus a licence',
+                    text: 'Aluminium conductors, high-temperature low-sag conductors and optical ground wire for transmission lines. Every player now has a technology tie-up: as Dynamic\'s management put it, "every player is doing this technology tie-up with the three, four, five people globally", and Laser conceded that re-conductoring tenders are technology-agnostic, so all of them can bid. **A licence everybody can buy is not a moat.**',
+                },
+                {
+                    label: 'Winding wire and transformer conductor — the best position in this list',
+                    text: 'KSH sells into the bill of materials of a power transformer. The customer qualifies the supplier, the copper is booked against the order, and the price is a value-addition rate per tonne negotiated annually. **This is the only sub-segment here where the customer is technically locked in and the metal risk is genuinely someone else\'s.**',
+                },
+                {
+                    label: 'Downstream projects — a different business with different risks',
+                    text: 'Laser earns 20% margins on turnkey transmission projects against about 10% in manufacturing, but 100% of that revenue comes from government customers and it consumes working capital. JD Cables has gone further and taken on highway civil works. **Adding an EPC arm converts a product company into a contractor, and contractors are valued on cash, not on order books.**',
                 },
             ],
         },
         {
-            heading: 'Metal prices are doing most of the work, and are starting to hurt demand',
+            heading: 'What actually keeps a competitor out',
             body: [
-                'Cable makers do not bet on copper. Most pass metal costs through, either by changing list prices (retail wire) or through price-variation clauses tied to the IEEMA index (project cables). Dynamic describes its cost structure as roughly 80% raw material, 10% overheads and 10% EBITDA. So when copper rises 40%, revenue rises about 25% and **EBITDA in rupees rises with it, even when nothing real has changed.** That is why growth looks so strong this quarter.',
-                'This quarter also showed the downside. **High metal prices are now putting customers off.** Dynamic\'s order book was flat quarter-on-quarter at ₹811cr. Its management said "price is king" and that nobody wants to book cable for projects five to eight months away at these prices, so orders have become shorter and smaller. RR Kabel and Finolex both reported dealers running down stock at the end of June when copper fell briefly, which cut volumes. Paramount limits fixed-price orders to three or four months and books the metal the next day. Finolex\'s CEO thinks copper will not return to $8,000, and we should not assume it will either. But a sector whose earnings rise with metal prices will see them fall when metal falls.',
-                '**Profit also carried some one-offs this quarter.** RR Kabel had a ₹14cr provision reversal and higher other income from the weaker rupee, which its CFO said was not "a normal run rate". Finolex had a large windfall in its fibre business (below). Paramount\'s FY26 other income included about ₹28cr from maturing keyman insurance policies, which will not repeat.',
-            ],
-        },
-        {
-            heading: 'Birla and Adani are coming, and not everyone is exposed',
-            body: [
-                'On 3-4 September the Aditya Birla Group launched **Ultravolt**, a ₹1,800cr wires and cables business inside UltraTech Cement. It starts with wires and low-voltage cables from Jhagadia in Gujarat and sells through UltraTech\'s existing building-products network. Birla says it will be the second-largest wire maker by capacity and wants to be in the top two within five years. **Birla also makes its own aluminium, and the Adani Group, whose wire business Praneetha Cables is due to launch around December 2026, is building a 2-million-tonne aluminium smelter.** Cable stocks fell up to 8% on the day. RR Kabel fell 3.5% and Finolex about 2%.',
-                'The damage will fall unevenly, and the transcripts show where. RR Kabel\'s CFO said wires earn 11-12% domestically, better than domestic cables at 6-7%. **Retail house wire is the most profitable domestic product, and it is exactly where the new entrants are starting.** Finolex has the most at stake: building wire is about 60% of its electrical business, and that volume is already growing only in the low single digits. RR Kabel is exposed but diversified, with cables, exports and fans and lights alongside wire. The B2B names are much less exposed because selling to utilities needs years of approvals. Dynamic noted that Birla and Adani are both currently its customers. KSH\'s transformer customers and Advait\'s utility customers do not buy retail wire at all.',
-                'I expect the first effect to be on prices and dealer margins, not on volumes. It probably also explains why the dealer-network stocks trade on high multiples today. **A multiple that assumes the market stays in the same few hands for the next decade is the thing most at risk.**',
-            ],
-        },
-        {
-            heading: 'Where the margin actually is',
-            body: [
-                'RR Kabel gave the clearest map of the sector\'s economics on its call. **Cables earn 11-12% EBITDA in exports but only 6-7% in India. Wires are the reverse: 11-12% in India and about 5% in exports.** India is unusual because wire is sold to consumers as a branded product. Almost everywhere else, a cable is an industrial product sold on specification.',
-                'That explains why exports are rising across the group. Dynamic\'s exports went from 7% to 13% of sales and it has shipped its first US order. KSH exports about 27% of revenue and wants to return to its historical 40%. Paramount\'s exports were 29% of Q1 revenue. RR Kabel sells mainly to Europe and the Middle East. **The US matters most for Paramount.** In FY26 its US shipments faced a combined 50% duty while Korean and Vietnamese competitors paid 10-18%, and it lost 4-4.5% EBITDA on every US sale. The US Supreme Court has since struck those tariffs down. Paramount now targets ₹700-800cr of US exports this year, and its customers bear any future tariff changes. That is a real improvement. It is also a reminder that one ruling can cut a company\'s export profits in half.',
-            ],
-        },
-        {
-            heading: 'Grid spending: everyone claims it, few earn from it yet',
-            body: [
-                'India\'s transmission build-out drives most of this sector, but the calls separate those already earning from it and those who only say they will.',
+                'Four barriers exist in this industry. Only two of them are durable.',
             ],
             points: [
                 {
-                    label: 'Already earning: KSH International',
-                    text: 'KSH makes the wire that goes into large transformers, and transformers are one of the tightest supply chains in the grid. Its EBITDA per tonne rose from ₹66,000 a year ago to ₹93,000, helped by a record share of CTC and more than 25% of CTC volume going into 765kV and HVDC equipment. It signed a five-year framework agreement with Hitachi Energy. **But management admitted the agreement has "no quantity or price defined as of right now", and said it is "comfortable" with ₹75,000 a tonne for the full year, which means the next nine months will be well below Q1.**',
+                    label: 'Durable: the dealer network and the electrician',
+                    text: 'House wire is chosen by an electrician or a contractor from what the local retailer stocks, on brand and margin rather than specification. Building 1.5 lakh touchpoints (RR) or a decades-old brand (Finolex) takes years and continuous trade spending. **This is the sector\'s real moat, and it is the reason a cement company with ₹1,800cr can attack it** — money buys shelf space faster than it buys technology.',
                 },
                 {
-                    label: 'Earning in a niche: Advait Energy',
-                    text: 'Advait\'s core business (optical ground wire, emergency restoration systems and stringing) earns about 16% margins and grew 52% last year, with approvals from more than ten utilities. It is a real niche. The trouble is everything the company has built around it (see below).',
+                    label: 'Durable: customer qualification in critical applications',
+                    text: 'A transformer maker, a utility or a refinery qualifies a supplier and re-tests after any change. KSH\'s 95%-plus repeat rate across 120 original-equipment makers, Dynamic\'s licences across voltage classes, and JD\'s state-board registrations are all versions of this. **The higher the voltage and the worse the consequence of failure, the longer the qualification and the fewer the bidders** — which is why moving from low to high voltage is the most reliable way for a cable company to improve its economics.',
                 },
                 {
-                    label: 'Not yet earning: high-temperature conductors (HTLS)',
-                    text: 'HTLS conductors let utilities carry more power on existing towers, and everyone has signed a technology partner. **Laser Power, which licensed TS Conductors technology in March 2025, said on its call: "till now we have not booked any revenue".** It imports the carbon core from the US and has bid for about ₹1,250cr of ₹3,500cr of tenders. An analyst pointed out that four other companies hold the same TS licence and that the tenders are open to any technology. Dynamic called HTLS "futuristic" and said "every player" is doing these partnerships. Paramount has about ₹100cr of specialised conductor orders in hand. JD Cables plans to start. **These partnerships are becoming standard, so owning one is no longer an advantage.**',
+                    label: 'Temporary: capacity when the market is short',
+                    text: 'Paramount is running its plants at essentially 100% and says "the problem is not selling… the problem is manufacturing"; Dynamic is at 85%; RR is at 90% in cables. Tight capacity flatters margins until the industry\'s new lines arrive — and everybody is building.',
                 },
                 {
-                    label: 'Data centres: mostly talk so far',
-                    text: 'RR Kabel said data centres are "still more in the announcement phase" and a "very low" share of sales. Dynamic called them "very, very nascent". Finolex makes fibre cables with up to 1,728 fibres, while competitors already supply hyperscalers with 7,000-fibre cables. KSH\'s link is indirect, through transformers, UPS systems and generators.',
+                    label: 'Not a barrier at all: a technology tie-up',
+                    text: 'High-temperature low-sag conductors and data-centre cabling are described as differentiators by almost every company here. Laser has a licence and has booked no revenue from it; Dynamic calls it futuristic; RR says data centres are "still more in the announcement phase" and a very low share of revenue. **Treat all of it as marketing until a purchase order appears.**',
                 },
             ],
         },
         {
-            heading: 'Finolex\'s fibre windfall, and why the Committee should not annualise it',
+            heading: 'The competitive threat that matters: conglomerates buying into the profit pool',
             body: [
-                'Finolex\'s communication cable business made revenue of ₹176cr, up 62%, at about a 30% margin. The reason is a global shortage of optical fibre. **Finolex bought fibre in November-December 2025 at $5-6 per kilometre and sold it at spot prices that reached $17-18 and are now $12-13.** Management told analysts to "refrain from annualizing" the result and expects the margin to fall to low double digits by the year end.',
-                'The longer-term opportunity is real but limited by supply. Finolex will double its fibre-drawing capacity from 4 to 8 million km by September. Its own preform plant (preforms are the glass rods fibre is drawn from) can supply only about 4 million km, so it must buy the rest in a market where "some suppliers have broken their contracts midway and changed the prices". Its germanium supply, a restricted input, is described as "hand-to-mouth". Management valued the full 8 million km at about $88m of fibre sales. India uses about 25 million km of fibre a year, compared with more than 400 million in China, so the growth opportunity is large. But Q1 was a pricing windfall that happened to arrive while the new capacity was being built, and the capacity does not prove the margin will last.',
+                'UltraTech has committed ₹1,800cr to Ultravolt and expects to be the second-largest player in wires by capacity; Adani has been linked with the same market. They are not coming for the tender-driven cable business — they are coming for branded house wire, which is where the 11-12% margins are, and they arrive with cement-scale distribution, dealer relationships and balance sheets.',
+                '**Who is exposed, in order.** Finolex, where building wire is about 60% of the electrical segment and construction wire volumes are already growing in low single digits. RR Kabel, which is better positioned because roughly a third of its business is exports and its cables arm is scaling, but whose retail expansion now runs into a funded competitor. Dynamic, which is entering business-to-business building wire rather than retail precisely to avoid this fight. The pure industrial and utility names — Paramount, JD, Laser — are largely unaffected because a conglomerate will not chase a state electricity board tender.',
+                '**The mitigating factor is approvals and habit.** Dynamic\'s management notes that both Adani and Birla are currently its customers and that "long approval processes protect" incumbents in industrial cables. In retail wire there is no such protection — only brand and trade loyalty, which is exactly what a large marketing budget attacks. **I would not own a pure house-wire story at a premium multiple into this entry.**',
             ],
         },
         {
-            heading: 'The real divide in this sector is cash',
+            heading: 'Are the margins structural? Read tonnes, not revenue',
             body: [
-                'Put the eight side by side and the clearest difference is not growth or margin but **whether profits turn into cash.**',
-            ],
-            points: [
-                {
-                    label: 'Cash-generative',
-                    text: 'RR Kabel runs on about 50 days of working capital and improved receivables by three days. Dynamic has historically turned its working capital more than four times a year. Its debt rose this quarter only because the same amount of metal cost 20-30% more.',
-                },
-                {
-                    label: 'Improving but not there yet',
-                    text: 'KSH has cut working capital from 71 to 60 days and targets 30-35, but it is not yet generating cash from operations, and its Q1 interest cost (₹17cr) was half of last year\'s total. Paramount runs on 96 days and raised ₹122cr of equity this quarter to fund its new plant.',
-                },
-                {
-                    label: 'Construction contracting is using up cash',
-                    text: '**JD Cables reported operating cash flow of −₹74cr last year against a profit of ₹32cr**, with working capital at 110-120 days as it moves into highway construction contracts. **Advait generated ₹5.8cr of operating cash on ₹58cr of profit**, and its debt-to-equity doubled to 0.46. Laser runs 100-120 days of working capital with ₹800cr of new government EPC projects starting up, and its operating cash flow was negative last year and slightly negative in Q1. All three sell mainly to government utilities, which pay slowly.',
-                },
+                'Metal inflation of roughly 40% made this quarter\'s revenue growth close to meaningless. The honest measures are volume and margin per tonne.',
+                '**The gap between revenue and volume this quarter:** RR Kabel grew revenue 54% on 17% volume growth; Paramount grew revenue 17% on about 4% more metal throughput; Dynamic grew 33% on 5-6% volume; Finolex grew 44% with building wire volumes in low single digits. **Management at RR estimated the industry itself grew "10-12% at most" in real terms.**',
+                '**What is structural.** RR\'s wire and cable segment margin of 9.9% (from 7.6%) is described as purely organic scale with no inventory gain, and the company guides roughly 100 basis points of improvement a year towards 10.5% — that is operating leverage on a distribution network, and it should hold. KSH\'s value-addition per tonne is contractual and rising with mix (765kV and direct-current work is above a quarter of its conductor volume), though management is explicit that Phase 2 fixed costs and more standard-wire mix will dilute it from here. Dynamic\'s 80% pass-through contracts and 26% returns are structural for as long as it stays disciplined about which tenders it bids.',
+                '**What is not.** Finolex\'s communication division earned about 30% margins because it bought optical fibre at $5-6 a kilometre in late 2025 and sold into a spot market that peaked at $17-18; management says explicitly to "refrain from annualizing" and expects low double digits by year-end. Paramount\'s recovery is mechanical — the removal of a 50% US duty that had made its American exports loss-making — rather than earned. Laser\'s profit improvement comes mostly from repaying ₹490cr of debt with IPO money, worth about ₹40cr a year pre-tax; that is real, but it happens once.',
+                '**And the cost that never passes through is working capital.** Metal inflation inflates inventory and receivables at the same time: Dynamic\'s debt rose on inventory value with unchanged quantities; KSH is not yet operating-cash-flow positive and its interest cost in one quarter was half of the previous full year; JD Cables produced negative ₹74cr of operating cash flow against ₹32cr of profit. **In a pass-through business, cash conversion is the only real test of quality.**',
             ],
         },
         {
-            heading: 'Capacity: who is building, and when it arrives',
+            heading: 'Where the next five years of growth come from',
             body: [
-                'Almost everyone is expanding, and the timing decides near-term growth. **RR Kabel** is spending ₹1,200cr over FY26-28, about 80% on cables. Its cable plants run at about 90% and its wire plants at 65-70%, and it is moving into high-voltage cables. **Finolex** doubles fibre capacity in September and plans about ₹300cr of capex. **KSH** goes from 43,445 to about 59,000 tonnes by March 2027, funded by its IPO. **Dynamic\'s** ₹45cr plant was due in September 2026 after earlier delays. At its usual 6-7x asset turn, that is ₹270-315cr of revenue potential, but meaningful sales start only in Q4. **Paramount** is capacity-bound, with plants at about 100%: "the problem is not selling… the problem is manufacturing". Its ₹300cr Narmadapuram plant has spent only about ₹30cr and starts partially in Q1 FY28. **JD Cables\'** Dankuni plant was promised for March 2026 and was still waiting for an electricity connection in June.',
-                '**Laser Power is the warning sign.** An analyst noted that capacity rose from 62,000 to 85,400 tonnes over three years while production stayed flat at about 62% utilisation. Management\'s explanation is a shift to specialised, lower-volume products. That may be true, but it means more capacity is not the same as more sales.',
+                '**The grid.** India is rebuilding transmission and distribution at a pace that shows up first in transformers and conductors, which is KSH\'s and Laser\'s market, and then in distribution cables, which is Dynamic\'s and JD\'s. KSH is expanding capacity from 43,445 to about 59,000 tonnes by March 2027 into a market where transformer makers\' own order books run three to five years.',
+                '**Housing and premiumisation.** Wire demand follows completions rather than launches, and the shift from unorganised to organised suppliers continues at about 2-3 percentage points a year — slow, steady and the basis of RR\'s and Finolex\'s volume growth.',
+                '**Exports, now that the American door has reopened.** Paramount spent FY26 exporting into a 50% combined duty at a 4-4.5% operating loss; with tariffs invalidated it targets ₹700-800cr of US revenue and has gone from two US distributors to eight. RR has just received its first US approvals and Dynamic has made first shipments. **Export cable margins are 11-12% against 6-7% domestically, so this is a mix improvement, not just volume.**',
+                '**Optical fibre, with a hard constraint.** Finolex is doubling fibre drawing capacity from 4 to 8 million fibre-km in one step by September, but its own preform plant supports only about 4 million, so the rest must be bought in a market where "some suppliers have broken their contracts midway" and nobody signs beyond a year. Germanium tetrachloride is restricted and helium prices have tripled. **The preform, not the draw tower, is the barrier — and Finolex does not yet control it.** India uses about 25 million fibre-km a year against China\'s 400 million, so the demand runway is real if the input can be secured.',
+                '**Data centres and high-temperature conductors: later and smaller than claimed.** Every management here mentions both; none has material revenue. The honest version came from RR — "still more in the announcement phase" — and from Dynamic, which calls its data-centre work "very, very nascent" and limited to ordinary power cables.',
+            ],
+        },
+        {
+            heading: 'Governance and disclosure: three things I would not ignore',
+            body: [
+                '**Advait Energy** has a good core in transmission accessories (16% standalone margins, approvals from ten-plus utility boards) and is using it to fund six new businesses — solar contracting, batteries, electrolysers, fuel cells, carbon credits and an independent power arm — with FY26 operating cash flow of ₹5.8cr against ₹58cr of profit, gearing doubling, and ₹300-350cr of capital spending planned against roughly ₹715cr of revenue. On the call, asked who owns the 20% of the carbon subsidiary the company does not, the managing director said "that you can ask on email". **Part of its battery revenue is engineering work for its own group company.**',
+                '**JD Cables** is a small state-board cable supplier that has moved into highway civil construction, guides EPC margins that are not credible for that work, and produced negative ₹74cr of operating cash flow on ₹32cr of profit. Its managing director could not answer basic questions on the call and reports only half-yearly.',
+                '**Laser Power & Infra** presents standalone numbers while the consolidated accounts contain a one-off gain, meaning the comparable prior-year profit is roughly ₹120cr rather than ₹150cr; it also carries a deferred tax shield that defers cash taxes to FY28. None of this is improper, but it flatters the apparent improvement.',
             ],
         },
         {
             heading: 'What would change the picture',
-            body: [],
-            points: [
-                {
-                    label: 'Upside',
-                    text: 'Metal prices level off at high levels and project customers stop waiting and place their delayed orders (Dynamic, Paramount, Laser). HTLS re-conductoring tenders are awarded and the winners turn out to be in this group. Birla and Adani grow the market by speeding up the move from unbranded to branded wire, rather than starting a price war.',
-                },
-                {
-                    label: 'Downside',
-                    text: 'Copper falls sharply. Revenue would drop, dealers would run down stock, and absolute profits would fall even if margins held. Ultravolt starts a dealer-margin war in house wire. US tariffs return in another form. State electricity boards pay late, which would hit the EPC-heavy names first.',
-                },
+            body: [
+                '**For the better:** Ultravolt turning out to compete on capacity rather than on price; RR\'s consumer-goods arm holding breakeven through the weak season; KSH converting the Hitachi Energy framework agreement into defined quantities and prices; Finolex securing preform supply or building Phase 2; Paramount\'s Narmadapuram plant arriving on time in FY28 and its 132kV approvals landing; a fall in copper, which would release working capital across the whole sector.',
+                '**For the worse:** a price war in house wire as UltraTech buys share; copper staying near $14,000 a tonne, which traps cash in inventory and, as Dynamic found, makes customers postpone orders for projects five to eight months out; optical fibre spot prices normalising faster than Finolex adds capacity; and, for the project-linked names, state electricity boards slowing payments.',
             ],
         },
     ],
@@ -141,102 +123,92 @@ export const cables: SectorOverview = {
         {
             company: 'RR Kabel Ltd.',
             stance: 'COMPOUNDER',
-            what: 'Wires and cables sold through dealers in India, with a growing export business plus a fans, lights and switches (FMEG) business.',
-            view: '**The best-run company in the group.** Q1 revenue grew 54% to ₹3,168cr. Wire and cable volume grew 17%, well ahead of the 10-12% management estimates for the industry, and cables grew more than 25%. The wire and cable margin rose from 7.6% to 9.9%. Management said this was "purely organic… no inventory gain" and came mainly from scale. It is still guiding to 10.5% for FY28, a target it has almost reached, which suggests conservatism. The FMEG business (₹288cr, +28%) broke even for the first time after losing ₹7-9cr a quarter. Working capital is about 50 days. The ₹1,200cr "Project Rise" capex goes mainly into cables, where plants run at about 90%, and into high-voltage cables where it is still small. At 45x for a 28% return, the price is fair for the quality.',
-            watch: 'The revenue growth is mostly metal: a roughly 40% rise in metal costs added about 25% to product prices. Profit included a ₹14cr provision reversal and rupee-driven other income that the CFO called not "a normal run rate". **Retail wire, its highest-margin domestic product at 11-12%, is where Ultravolt is starting.** The stock fell 3.5% on the launch. Dealers ran down stock at the end of Q1. Management warned the FMEG break-even may not hold in the seasonally weaker Q2. Domestic cables earn only 6-7% until scale improves, so faster cable growth pulls the average margin down for a while. US export approvals are "just the beginning".',
-        },
-        {
-            company: 'Finolex Cables',
-            stance: 'CYCLICAL',
-            what: 'A long-established building-wire brand, mostly house wire, with automotive, agricultural and solar cables, an optical-fibre and telecom cable business, and a high-voltage cable joint venture with Sumitomo.',
-            view: 'The cheapest large company in the group at 27x. It has a strong wire brand and a debt-free balance sheet. Q1 revenue grew 44% to ₹2,013cr and profit before tax 62%. The electrical business (₹1,767cr) earns about 10.5%, which management says is sustainable. Automotive, solar, agricultural and flexible cables are growing volume at high double digits. **The fibre business is a real long-term option:** capacity doubles to 8 million km in September, India uses a fraction of China\'s fibre, and demand looks "fairly robust for at least 2 years". The Sumitomo high-voltage joint venture made ₹24cr last year, and exports in Q1 alone equalled all of FY26.',
-            watch: '**Q1 profit was flattered by a fibre windfall.** Fibre bought at $5-6 per km was sold at up to $17-18, and management said to "refrain from annualizing" the roughly 30% communications margin. Half the new fibre capacity depends on buying preforms in a market where suppliers have broken contracts, and germanium supply is "hand-to-mouth". **The core business is about 60% building wire, growing only low single digits, and it is the product Birla and Adani are going after.** Q1 also had operational problems: the copper-rod plant was shut all quarter because commercial LPG was unavailable, and fans could not be supplied during a hot summer. A new CFO joined in June. The 16% return on capital is modest for a brand this strong.',
+            what: 'Branded house wire and power cables sold through about 1.5 lakh retail touchpoints, plus a fast-moving electrical goods business in fans, switches, lighting and appliances.',
+            view: 'The best-executed business in this list, and its moat is the part of the industry with consumer economics: domestic wire earns 11-12% against 6-7% for domestic cables, and reaching the electrician requires a network that took a decade to build. Volume grew 17% (cables above 25%) against an industry management estimates at 10-12%, segment margin improved from 7.6% to 9.9% on scale with no inventory gain, and the consumer-goods arm reached operational breakeven, removing a long-standing drag. Exports are a genuine mix improvement — cable margins abroad are roughly double domestic — with first US approvals just received. The ₹1,200cr "Project Rise" investment is roughly 80% cables, taking it from low voltage towards high voltage where competition thins.',
+            watch: 'UltraTech\'s ₹1,800cr entry aims at precisely its most profitable product. Reported growth of 54% is mostly metal inflation; watch volume. Q1 profit included a ₹14cr provision reversal and unusually high other income, and end-quarter channel destocking followed the metal correction.',
         },
         {
             company: 'KSH International',
             stance: 'PRICED',
-            what: 'Copper winding wires, mainly continuously transposed conductor (CTC) for large power transformers, sold to more than 120 transformer makers in India and abroad.',
-            view: '**The only company here already earning well from the grid build-out.** Q1 revenue more than doubled to ₹1,164cr on about 30% higher volume, and EBITDA per tonne rose to ₹93,000 from ₹66,000 a year ago. The drivers were a record CTC share, more than 25% of CTC volume going into 765kV and HVDC transformers, new customers paying market-linked rates, and exports at about 27% of revenue. Orders are made to order with copper booked at once, so there is no real metal-price gain. More than 95% of revenue comes from repeat customers. Capacity rises from 43,445 to about 59,000 tonnes by March 2027, and it has a five-year framework agreement with Hitachi Energy.',
-            watch: '**Management framed ₹75,000 per tonne as the level it is "comfortable" delivering for the year, well below Q1\'s ₹93,000, which implies the next nine months average below last year\'s Q4.** The Hitachi agreement has "no quantity or price defined as of right now". The company is not yet generating cash from operations, and interest cost is rising as working capital is financed at 6-9.5%. Transformer makers are delaying pickups "by a few weeks" because of their own capacity bottlenecks. The stock is roughly 3x its low since listing and trades at 54x. That prices in the peak.',
-        },
-        {
-            company: 'Laser Power & Infra',
-            stance: 'SCALEUP',
-            what: 'A Kolkata maker of power cables and conductors that also runs power-distribution EPC projects for state utilities; listed in July 2026.',
-            view: 'The IPO fixes the biggest problem. **Q1 finance cost of ₹36cr took more than half of the ₹66cr EBITDA.** Repaying ₹490cr of debt saves about ₹40cr a year before tax, which alone brings the forward multiple from about 36x to the mid-20s. The ₹2,788cr order book covers more than a year of sales. It is split roughly evenly between manufacturing (₹1,433cr) and EPC (₹1,356cr), and EPC earns 15-20% EBITDA. High-voltage cables rose from 9% to 29% of sales over nine quarters. A carry-forward tax loss from an FY23 acquisition means it pays no cash tax until FY28.',
-            watch: '**Its HTLS licence has produced no revenue yet**, and four other companies hold the same licence. Manufacturing revenue fell 2.7% in Q1. Capacity rose 38% over three years while production stayed flat. The 15-16% growth guide is for revenue, not volume. Management presented standalone numbers; an analyst pointed out that FY26 consolidated profit included about ₹32cr of one-time gains, making comparable profit about ₹120cr, not ₹150cr. Working capital is 100-120 days, operating cash flow is negative, and about 65% of revenue is from government customers. It was the first call as a listed company, and even the cable-conductor mix had to be corrected mid-call.',
+            what: 'Magnet winding wire and continuously transposed conductor — the insulated copper inside large power transformers — supplied to 120-plus transformer makers.',
+            view: 'The most locked-in customer base in this sector. Conductor is qualified into the transformer design, more than 95% of business is repeat, and 80-85% of customers sign annual value-addition contracts — so copper is booked against the order and passed through, and what KSH actually sells is conversion value per tonne. That value rose from ₹66,000 to ₹93,000 a tonne in a year on a record share of continuously transposed conductor, over a quarter of it for 765kV and direct-current applications, and new customers at market-linked rates above legacy ones. Capacity goes from 43,445 to about 59,000 tonnes by March 2027 into transformer order books running three to five years.',
+            watch: 'Management guides ₹75,000 a tonne for the year, which implies the remaining nine months run below even last year\'s fourth quarter — this quarter is the peak of unit economics by its own framing. The Hitachi Energy framework agreement has "no quantity or price defined as of right now". The business is not yet operating-cash-flow positive and quarterly interest is running at half of last year\'s full-year charge.',
         },
         {
             company: 'Dynamic Cables',
             stance: 'COMPOUNDER',
-            what: 'A Jaipur maker of high- and low-voltage power cables, solar cables and conductors, sold mainly to private industry, contractors and solar developers, with a growing export business.',
-            view: '**The best value in the group: 24x for a 26% return on capital and a 10-15-year record of 18-20% annual growth.** Q1 revenue grew 33% to ₹349cr and EBITDA grew 41% at a 10.9% margin. About 80% of contracts pass metal prices through. Exports rose from 7% to 13% of sales, including a first US shipment at margins similar to India. Solar cables (about 20% of sales) are expected to grow 25-30% a year for three to four years. The ₹45cr new plant can add ₹270-315cr of revenue at its usual asset turn. High-voltage cables are 68% of the mix, which is the right direction.',
-            watch: '**Volume grew only 5-6%. The order book was flat quarter-on-quarter at ₹811cr** because customers would not book cable at peak metal prices, so the next two quarters will be slow until the new plant ramps in Q4. That plant has slipped before. HTLS and data centres are "futuristic" and "very, very nascent", with no edge claimed. Railway signalling was "temporarily held back" by competition. Debt rose as metal inflated inventory. It is small, so one lost large customer or slow payments from a solar developer would show quickly.',
+            what: 'Medium and high-voltage power cables and conductors for utilities, industry, solar developers and, increasingly, exports; based in Jaipur.',
+            view: 'A disciplined business-to-business maker with the right structural choices: roughly 80% of contracts carry full metal pass-through, high voltage has risen from 64% to 68% of the mix, private customers are 71% and exports 13% (from 7%), and returns are 26%. It is entering building wire through the business-to-business channel rather than fighting for retail shelf space, and it has installed its first electron-beam line — a genuine capability step for specialised cables. Approvals across voltage classes and utilities are what keep the conglomerates out of its market.',
+            watch: 'Volume grew only 5-6% because customers postponed orders when metal spiked — the order book is flat at ₹811cr and customers now book only two to four months out. The new plant slipped to September, with meaningful revenue only from the fourth quarter. Its high-temperature conductor and data-centre plans are, by its own admission, nothing yet.',
         },
         {
-            company: 'Advait Energy',
-            stance: 'AVOID',
-            what: 'Transmission-line products and services (optical ground wire, emergency restoration systems, stringing tools and live-line work), plus a growing set of green-energy businesses: solar EPC, battery storage, electrolysers, fuel cells and carbon credits.',
-            view: 'The core business is good. The transmission products business grew 52% to ₹448cr last year at about 16% EBITDA, holds approvals with more than ten utilities, and has a niche most cable makers do not touch. The order book rose 159% to ₹1,304cr. Management guides 40%+ growth this year and a ₹1,600-1,650cr year-end order book. A 2.5 GWh battery plant is due in September-October. **If the green businesses work, this could become a much larger company.**',
-            watch: '**FY26 operating cash flow was ₹5.8cr against ₹58cr of profit, and debt-to-equity doubled to 0.46.** Planned FY27 capex of ₹300-350cr is about 45% of revenue, funded mostly by debt. About ₹43-46cr of Q4 battery revenue was EPC work for a group company\'s own project. The carbon business was moved into an 80%-owned subsidiary, and when an analyst asked who owns the other 20%, the managing director replied: "That you can ask on email." Four new subsidiaries were created to raise equity "as and when" needed. Electrolyser timelines have slipped three times, and the fuel-cell answer has been repeated "since last 2 or 3 years". There was no Q1 FY27 call in our data.',
+            company: 'Finolex Cables',
+            stance: 'CYCLICAL',
+            what: 'One of India\'s best-known electrical brands: building wire (about 60% of the electrical segment), auto and agricultural cables, optical fibre and communication cables, and an extra-high-voltage joint venture with Sumitomo.',
+            view: 'Cheap, with a strong brand and a net-cash balance sheet, but the profile is more exposed than it looks. It is overwhelmingly a house-wire company — low and high-voltage cables are only 7-8% of the electrical segment — at the moment a well-funded conglomerate has declared for that exact market. This quarter\'s headline was flattered by the communication division earning about 30% margins on fibre bought at $5-6 a kilometre and sold near a $12-18 spot price, which management told investors not to annualise. The optical fibre expansion from 4 to 8 million fibre-km is the real opportunity, and the extra-high-voltage joint venture with Sumitomo is the right long-term positioning.',
+            watch: 'Preform supply is the constraint — its own plant covers only half the new drawing capacity, contracts are being broken in the market, and germanium tetrachloride is restricted. Its copper rod plant sat idle all quarter for want of cooking gas, and the consumer-goods business missed the summer fan season for the same reason.',
         },
         {
             company: 'Paramount Communications',
             stance: 'TURNAROUND',
-            what: 'A north-Indian maker (plants in Haryana and Rajasthan) of power, telecom and railway cables. It supplies domestic industry and is a flexible exporter to US distributors, moving capacity between India and the US as margins shift.',
-            view: 'The margin recovery is mechanical and already starting. **In FY26, US exports faced a combined 50% duty and lost 4-4.5% EBITDA on every sale. The US Supreme Court has struck those tariffs down.** Operating EBITDA margin rose 320bps to 6.6% in Q1, and management targets its FY25 level of about 8% by Q4. US exports are targeted at ₹700-800cr this year through eight distributors, up from two, and customers now bear future tariff changes. Domestic industrial sales grew 90% to ₹296cr. The plants are full, and a ₹122cr equity raise keeps debt-to-equity at 0.15 while the new Narmadapuram plant is built.',
-            watch: '**Real growth is small: about 4% more metal went through the plant.** Q1 profit grew only 3.7%, and the equity raise dilutes it further. The return on capital is only 12%, the lowest here, yet the stock trades at 33x. FY26 other income included about ₹28cr of one-off insurance maturities. Only about ₹30cr of the ₹300cr new plant has been spent; it starts partially in Q1 FY28, and needs a year of approvals for 132kV cables. Management gave inconsistent revenue targets for it (₹500cr and ₹700cr for FY28). Its competitive position in the US depends on trade policy it cannot control, and it has no real position in high-fibre-count optical cable.',
+            what: 'Power and telecom cables for industrial, government and export customers, with a large swing business into the United States.',
+            view: 'The recovery is mechanical and therefore reliable: in FY26 its US exports carried a 25% reciprocal plus 25% Section 232 duty — 50% against competitors at 10-18% — and ran at a 4-4.5% operating loss. With those tariffs invalidated, it targets ₹700-800cr of US revenue, has gone from two American distributors to eight, and has pushed tariff risk onto customers. Export margins run about 1.5 points above domestic. Both plants are effectively full, so this is a capacity story: the Narmadapuram plant (partial operation in Q1 FY28) is the next leg, with 132kV approvals about a year after production and extra-high-voltage certification by FY29.',
+            watch: 'Revenue grew 17% on about 4% more metal throughput; returns are only 12%; Q1 included a ₹122cr equity raise that dilutes per-share numbers; and the plant\'s revenue targets have been stated inconsistently (₹500cr, ₹700cr and ₹1,200cr at various utilisations). Machinery has long lead times industry-wide.',
+        },
+        {
+            company: 'Laser Power & Infra',
+            stance: 'SCALEUP',
+            what: 'Kolkata-based maker of power cables and conductors (about 90% cables), with a turnkey transmission and distribution projects arm; listed in July 2026.',
+            view: 'Two things are genuinely improving. High-tension cables have gone from 9% to 29% of revenue over nine quarters, which is the right direction even if high-tension margins are only two to three points better. And the balance sheet has been fixed: ₹490cr of debt repaid from the IPO saves roughly ₹40cr a year pre-tax against finance costs that were consuming 55% of EBITDA. The projects arm earns about 20% margins against 10% in manufacturing, and the combined order book is ₹2,788cr.',
+            watch: 'About 65% of revenue comes from government customers and the entire projects book is public-sector, so working capital and payment cycles are the risk — operating cash flow was slightly negative this quarter. Its high-temperature low-sag licence has produced no revenue and four other companies hold similar tie-ups, with tenders written technology-agnostic. Capacity is rising 62,000 to 85,400 tonnes while production is flat.',
+        },
+        {
+            company: 'Advait Energy',
+            stance: 'AVOID',
+            what: 'Transmission accessories — optical ground wire, emergency restoration systems, stringing tools — plus solar contracting, batteries, electrolysers, fuel cells and carbon credits.',
+            view: 'The core is good: a niche in transmission hardware with approvals from more than ten utility boards, its own testing laboratory and standalone margins of about 16%. Everything around it is the problem. Six new businesses are being funded with ₹300-350cr of capital spending — roughly 45% of revenue — while FY26 operating cash flow was ₹5.8cr against ₹58cr of reported profit and gearing doubled to 0.46. Some battery revenue is engineering work billed to its own group company, four new subsidiaries were created "as and when we need to raise equity", and the electrolyser milestone has moved three times.',
+            watch: 'A simple answer to who owns the 20% of the carbon subsidiary the company does not — a question the managing director declined to answer on the call — and evidence that profit turns into cash. Until both, the disclosure does not support the valuation.',
         },
         {
             company: 'JD Cables',
             stance: 'AVOID',
-            what: 'A small Kolkata maker of aerial bunched cables, power cables and overhead conductors for electricity boards in eastern and north-eastern India, now moving into highway and power EPC contracting. SME-listed, reports half-yearly.',
-            view: 'On paper it is the cheapest stock here at 14x with a 34% return on capital. FY26 revenue grew 46% to ₹365cr and profit grew 44% to ₹32cr. It has a ₹515cr order book and has bid for more than ₹1,000cr of tenders. It has new vendor approvals in Rajasthan, Punjab and Himachal Pradesh, and the Dankuni plant, once connected to power, should double capacity and add higher-value products.',
-            watch: '**Operating cash flow was −₹74cr against a ₹32cr profit.** About ₹300cr of the order book is civil and electrical work on a national highway, which is outside its expertise and only 10% complete. Management gave EPC margins of 8% net profit and then agreed with an analyst that they would match the 12-13% EBITDA of the cable business, which is not credible. Other expenses rose from ₹4cr to ₹24cr, explained as pending bills. Revenue guidance was quietly cut from ₹600-700cr to about ₹550-580cr. Dankuni is late, still waiting for an electricity connection. The managing director pitched a new state government as a demand driver and could not answer basic questions. Our dashboard\'s trailing sales figure (₹614cr) is well above the ₹365cr reported for FY26 and looks wrong.',
+            what: 'Low-tension aerial bunched cables, power cables and aluminium conductors for state electricity boards in eastern and north-eastern India, now moving into highway construction.',
+            view: 'The cable business is a legitimate small niche built on state-board vendor approvals, running at 82-85% utilisation with 12-13% margins. But the company is using it to enter six-laning civil works with no track record, guides EPC margins that are not credible for highway contracting, and produced negative ₹74cr of operating cash flow against ₹32cr of profit while inventory rose and payables fell. The new plant promised for March 2026 was still awaiting an electricity connection in June, and management confused two of its own facilities on the call.',
+            watch: 'Cash conversion first, and then whether the new products (high-temperature conductors, medium-voltage covered conductor) actually clear BIS and state-board approvals. Reporting is half-yearly and disclosure is poor.',
         },
     ],
 
     closing: {
         heading: 'What I actually think',
         body: [
-            'My view on all eight.',
-            '**RR Kabel is the one I would own.** It is the only company here growing volume well above the industry while its margins rise and it keeps its cash cycle tight, and it has cables, exports and FMEG to balance the house-wire risk. Ultravolt is a real threat to the 11-12% wire margin, and I expect a period of pressure on dealer margins. But RR is big enough, diversified enough and well enough run to come through it, and a sell-off on entry news is when I would want to add.',
-            '**Dynamic Cables is the second position, sized for its small scale.** 24x for a 26% return and a long growth record is the best price for quality in the group. The next two quarters will be dull, with volume at 5-6% and a flat order book, until the new plant arrives. For a patient holder, that is a reason to buy rather than avoid.',
-            '**KSH International is a business I like at a price I do not.** It is the purest grid play here and the Hitachi agreement matters. But management has told us Q1\'s ₹93,000 per tonne is above what it expects for the year, cash flow is not yet positive, and 54x after a tripling assumes the peak lasts. I would buy it after the numbers come down, not before.',
-            '**Finolex looks cheap for reasons that will not last.** Take out the fibre windfall and it is a slow-growing house-wire business facing Birla and Adani, with fibre growth that depends on preforms it cannot fully make itself. I would hold it only as a fibre option and would not treat 27x as a bargain.',
-            '**Laser Power is a deleveraging trade, not yet a franchise.** The interest saving is real and quick. The HTLS story is not yet, and neither is volume growth. I would want to see manufacturing volume grow and operating cash flow turn positive before owning it.',
-            '**Paramount is a recovery that depends on trade policy.** Margins are coming back because a court removed a tariff, not because the business changed. At 33x for a 12% return, I would wait for the new plant to be built and approved.',
-            '**Advait and JD Cables I would avoid for the same reason: profits that do not turn into cash.** Advait\'s core business deserves respect, but not the unanswered ownership question, the group-company revenue or the debt-funded spread into six new businesses. JD Cables\' 14x multiple means nothing when operating cash flow is −₹74cr and the growth comes from highway construction.',
-            'What would change my view on the whole sector: a sharp fall in copper, which would cut reported growth and profits at the same time, and the first six months of Ultravolt\'s dealer terms. If Birla uses its own aluminium and cement distribution to cut wire prices, today\'s multiples on the dealer-network names will come down.',
+            '**RR Kabel Ltd. is the holding.** In an industry where metal is a pass-through and capacity is available to anyone with capital, the durable asset is the route to the electrician — and RR has built it, with 1.5 lakh touchpoints, real volume growth against an industry growing 10-12%, margins improving on scale rather than on inventory gains, and a consumer-goods arm that has stopped losing money. It is also the only company here with a credible export mix, which earns roughly double domestic margins in cables.',
+            '**KSH International is the best business model in the sector at a price that already knows it.** Being qualified inside a power transformer, with 95% repeat business and annual value-addition contracts, is as close to a contractual moat as this industry offers. But the stock has roughly tripled since listing, management\'s own guidance implies unit economics fall from here, and the business does not yet generate operating cash. I would wait for the dilution from Phase 2 to show up in a print.',
+            '**Dynamic Cables is the one to accumulate on weakness.** Full pass-through contracts, rising high-voltage mix, 26% returns, a first electron-beam line, and the sense on the call of a management that knows exactly which orders it does not want. The next two quarters will look slow until the new plant runs.',
+            '**Finolex Cables is cheap for a reason that is about to be tested.** A great brand, a net-cash balance sheet and a genuine fibre opportunity, attached to a house-wire business facing a ₹1,800cr entrant, a communication division whose margin was an inventory windfall, and a preform constraint it does not yet control. I would rather own it after UltraTech\'s first full year than before it.',
+            '**Paramount Communications and Laser Power & Infra are both mechanical recoveries** — a tariff removed in one case, debt repaid in the other. Both are real and both are finite; neither has yet shown a competitive advantage that outlasts the event. Paramount\'s next leg depends on a plant in FY28; Laser\'s depends on government payment cycles.',
+            '**Advait Energy and JD Cables I would leave alone.** In both, a serviceable niche is financing unrelated ambition with cash the business does not produce, and in Advait\'s case with an ownership question its management would not answer on a public call.',
+            'The discipline for this sector is simple and worth repeating: read tonnes, not revenue; read margin per tonne, not margin per cent; and ask who the customer is. When the customer is an electrician choosing a brand, the moat is distribution. When it is a transformer maker or a utility, the moat is qualification. When it is a tender, there is no moat at all.',
         ],
         bottomLine:
-            'Most of this sector\'s growth is metal price, and its best-margin product is where the conglomerates are entering. Own RR Kabel and Dynamic, which have real volume growth, high returns and cash discipline; wait for a better price on KSH; do not mistake Finolex\'s fibre windfall for a re-rating; and avoid the companies whose profits are not turning into cash.',
+            'Copper passes through, so growth in rupees means nothing — what matters is who owns the route to the customer. Own the distribution (RR Kabel Ltd.) and the qualified niche (Dynamic Cables on weakness), respect but wait on the transformer-conductor franchise (KSH International), test Finolex Cables against a funded new entrant, treat Paramount Communications and Laser Power & Infra as finite recoveries, and avoid Advait Energy and JD Cables until profit becomes cash.',
     },
 
     sources: [
         {
-            label: 'Aditya Birla Group launches wires and cables business Ultravolt — UltraTech press release',
-            url: 'https://www.ultratechcement.com/corporate/media/press-releases/aditya-birla-group-launches-wires-and-cables-business-ultravolt-marks-the-groups-fourth-new-business-foray-in-three-years',
-        },
-        {
-            label: '\'Ultravolt\' shock: Polycab, KEI and others fall up to 8% on de-rating fears — Business Standard',
-            url: 'https://www.business-standard.com/markets/news/ultravolt-shock-polycab-kei-others-crash-up-to-8-on-de-rating-fears-126090400270_1.html',
-        },
-        {
-            label: 'Adani and UltraTech\'s entry raises stakes for India\'s cable makers — The Core',
-            url: 'https://www.thecore.in/business/adani-ultratech-india-wires-and-cables-2026-866586',
-        },
-        {
-            label: 'Birla vs Adani in wires and cables: Praneetha Cables and aluminium integration — Chai & Charts',
-            url: 'https://chaiandcharts.substack.com/p/birla-vs-adani-wirescables-the-next',
-        },
-        {
-            label: 'Copper price holds near record — MINING.COM',
-            url: 'https://www.mining.com/copper-price-holds-near-record-as-london-warehouse-bidding-war-looms/',
-        },
-        {
-            label: 'India wire and cable market size and outlook 2026-2031 — Mordor Intelligence',
+            label: 'India wire and cable market: organised share and company positions — Mordor Intelligence',
             url: 'https://www.mordorintelligence.com/industry-reports/india-wire-and-cable-market',
+        },
+        {
+            label: 'UltraTech\'s ₹1,800 crore Ultravolt entry hits cable and wire stocks — Upstox',
+            url: 'https://upstox.com/news/market-news/stocks/ultra-tech-s-1-800-crore-ultravolt-foray-polycab-rr-kabel-kei-industries-finolex-cables-in-focus/article-199787/',
+        },
+        {
+            label: 'KEI, Polycab, RR Kabel fall as UltraTech enters wires and cables — Angel One',
+            url: 'https://www.angelone.in/news/stocks/kei-industries-polycab-rr-kabel-share-price-fall-as-ultratech-enters-wires-and-cables-market-with-ultravolt',
+        },
+        {
+            label: 'India wires and cables market size and structure — Fortune Business Insights',
+            url: 'https://www.fortunebusinessinsights.com/india-wires-and-cables-market-109992',
         },
     ],
 };
