@@ -49,7 +49,7 @@ export const STANCE_CONFIG: Record<Stance, { label: string; blurb: string; pill:
     },
     CYCLICAL: {
         label: 'Cyclical',
-        blurb: 'Sold as a CDMO, paid like a commodity. Mind the entry price.',
+        blurb: 'Earnings are set by the cycle, not by the contract. Mind the entry price.',
         pill: 'bg-slate-200 text-slate-600',
         dot: 'bg-slate-400',
         hex: '#64748B',
