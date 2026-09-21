@@ -99,7 +99,12 @@ export function DataTableView({ table }: { table: DataTable }) {
 
 // ── 1. Ranking and takeaways ─────────────────────────────────────────────────
 
-export function RankingBlock({ verdicts, takeaways }: { verdicts: CompanyVerdict[]; takeaways?: string[] }) {
+export function RankingBlock({ verdicts, takeaways, byName }: {
+    verdicts: CompanyVerdict[];
+    takeaways?: string[];
+    /** Live figures, shown under each name when given. */
+    byName?: Map<string, EnrichedCompany>;
+}) {
     const ranked = byRank(verdicts);
     return (
         <div className="mt-3 space-y-4">
@@ -109,7 +114,7 @@ export function RankingBlock({ verdicts, takeaways }: { verdicts: CompanyVerdict
                         <tr className="bg-[#F4F6F8] text-left text-gray-600">
                             <th className="font-semibold px-2.5 py-1.5 w-8">#</th>
                             <th className="font-semibold px-2.5 py-1.5 w-[34%] min-w-[140px]">Company and view</th>
-                            <th className="font-semibold px-2.5 py-1.5">Why</th>
+                            <th className="font-semibold px-2.5 py-1.5">What it does, and why it ranks here</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -120,8 +125,21 @@ export function RankingBlock({ verdicts, takeaways }: { verdicts: CompanyVerdict
                                     <div className="font-semibold text-gray-800">{v.company}</div>
                                     <div className="mt-1"><StancePill stance={v.stance} /></div>
                                     {v.segment && <div className="text-[10px] text-gray-400 mt-1 leading-snug">{v.segment}</div>}
+                                    {byName && (() => {
+                                        const co = byName.get(v.company.trim().toLowerCase());
+                                        return (
+                                            <div className="flex flex-wrap gap-x-3 mt-1 text-[10px] text-gray-400">
+                                                <span>MCap <span className="text-gray-600 font-medium">{fmtCr(co?.marketCap ?? null)}</span></span>
+                                                <span>P/E <span className="text-gray-600 font-medium">{fmtNum(co?.peRatio ?? null)}</span></span>
+                                                <span>ROCE <span className="text-gray-600 font-medium">{fmtNum(co?.roce ?? null, '%')}</span></span>
+                                            </div>
+                                        );
+                                    })()}
                                 </td>
-                                <td className="px-2.5 py-2 text-gray-600 leading-relaxed"><RichText text={v.view} /></td>
+                                <td className="px-2.5 py-2 leading-relaxed">
+                                    {v.what && <p className="text-[11px] text-gray-500"><RichText text={v.what} /></p>}
+                                    <p className={`text-gray-600 ${v.what ? 'mt-1.5' : ''}`}><RichText text={v.view} /></p>
+                                </td>
                             </tr>
                         ))}
                     </tbody>

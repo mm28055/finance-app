@@ -356,7 +356,7 @@ export function SectorOverview({ overview, companies }: {
 
     const renderEmbed = (sec: typeof overview.sections[number]) => (
         <>
-            {sec.embed === 'ranking' && <RankingBlock verdicts={overview.verdicts} takeaways={overview.takeaways} />}
+            {sec.embed === 'ranking' && <RankingBlock verdicts={overview.verdicts} takeaways={overview.takeaways} byName={byName} />}
             {sec.embed === 'metrics' && overview.metrics && overview.metrics.length > 0 && (
                 <MetricsGrid series={overview.metrics} verdicts={overview.verdicts} labels={labels} />
             )}

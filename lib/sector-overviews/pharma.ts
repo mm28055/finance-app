@@ -205,7 +205,7 @@ export const pharma: SectorOverview = {
             periods: [...FY, '5 yrs'],
             scale: 'sequential',
             source: 'Filed annual cash-flow statements and profit and loss (via Screener): cash from operating activities ÷ operating profit. The last column divides five years of operating cash by five years of operating profit.',
-            note: 'Operating cash is after tax, so 70–80% is a normal, healthy level. Above 100% means stock and receivables were run down; below 50% means profit is being tied up in them. Blank where operating profit or operating cash was negative in a way that makes the ratio meaningless. Quarterly cash flows are not filed; the Q1 FY27 figures managements gave on their calls are in section 6.',
+            note: 'Operating cash is after tax, so 70–80% is a normal, healthy level. Above 100% means stock and receivables were run down; below 50% means profit is being tied up in them. Blank where operating profit or operating cash was negative in a way that makes the ratio meaningless. Quarterly cash flows are not filed; the Q1 FY27 figures managements gave on their calls are in section 5.',
             values: {
                 'Zydus Lifesciences': [63, 70, 60, 96, 25, 60],
                 'Ipca Laboratories': [65, 86, 71, 76, 57, 69],
@@ -314,14 +314,14 @@ export const pharma: SectorOverview = {
         {
             heading: '1. Recommendation and key takeaways',
             body: [
-                "Ranked by attractiveness at today's prices. The ranking weighs how durable the moat is, how structural the margins are, how visible the growth is and what the price already assumes. Each line says why. Sections 3–9 support it.",
+                "Ranked by attractiveness at today's prices. The ranking weighs how durable the moat is, how structural the margins are, how visible the growth is and what the price already assumes. Each line says what the company does and why it ranks where it does. Sections 3–8 support it.",
             ],
             embed: 'ranking',
         },
         {
             heading: '2. Charts: margins, growth, returns, cash cycle and cash conversion',
             body: [
-                "Five views of the same 25 companies. Use the buttons to switch between them. Every figure comes from filed results or filed ratios. Where a figure is missing it is left blank, not estimated. Hover over a cell for any caveat. **Pharma companies sell products, not projects, so there are no order books to chart.** The one large contract in the list, Sai Parenterals' AUD 202m (₹1,300cr) EBOS agreement, is in section 7.",
+                "Five views of the same 25 companies. Use the buttons to switch between them. Every figure comes from filed results or filed ratios. Where a figure is missing it is left blank, not estimated. Hover over a cell for any caveat. **Pharma companies sell products, not projects, so there are no order books to chart.** The one large contract in the list, Sai Parenterals' AUD 202m (₹1,300cr) EBOS agreement, is in section 6.",
                 "**Why these figures differ from the rest of the dashboard.** Several of the dashboard's own quarterly records disagree with the filed accounts, so this note does not use them. Strides shows ₹5,522cr of revenue in one quarter against ₹1,265cr filed. JB Chem shows the same quarter twice. Caplin's revenue appears to halve in one quarter. The charts below are built from the filings.",
             ],
             embed: 'metrics',
@@ -370,14 +370,7 @@ export const pharma: SectorOverview = {
             ],
         },
         {
-            heading: '4. Company snapshots',
-            body: [
-                "What each company does and where it sits in the value chain, grouped by which book it is in.",
-            ],
-            embed: 'snapshots',
-        },
-        {
-            heading: '5. Moat (comparative)',
+            heading: '4. Moat (comparative)',
             body: [
                 "Five things can protect a drug company's profits. They are listed below, and each company is graded on each one. The grade is the reason a customer (a doctor, a retailer, a foreign buyer) cannot easily switch to someone else. Direction says whether that advantage is growing or shrinking, based on what was said on the latest call.",
             ],
@@ -407,7 +400,7 @@ export const pharma: SectorOverview = {
             ],
         },
         {
-            heading: '6. Margins (comparative)',
+            heading: '5. Margins (comparative)',
             body: [
                 "The operating-margin chart in section 2 shows five patterns. Only one of them is a structural high margin.",
             ],
@@ -500,7 +493,7 @@ export const pharma: SectorOverview = {
             ],
         },
         {
-            heading: '7. Growth and capex (comparative)',
+            heading: '6. Growth and capex (comparative)',
             body: [
                 "What each management has said it will deliver, what it is spending, what it expects to earn on that spending, and whether it delivered last time. **Track record matters most here.** The companies that did what they said last quarter are Zydus, Emcure, Corona, Ipca, Rubicon, Sakar and Marksans. Alembic and Orchid have missed or softened targets. My observations come first; the full table follows.",
             ],
@@ -574,7 +567,7 @@ export const pharma: SectorOverview = {
             ],
         },
         {
-            heading: '8. Risk factors',
+            heading: '7. Risk factors',
             body: [
                 "Sector-level risks first, then company-specific ones, with a note on whether management dealt with each on the latest call.",
             ],
@@ -639,7 +632,7 @@ export const pharma: SectorOverview = {
             ],
         },
         {
-            heading: '9. Valuation (comparative)',
+            heading: '8. Valuation (comparative)',
             body: [
                 "A price only makes sense against the growth it assumes. The rough rule used here: to earn about 12% a year while the stock's multiple drifts down to a mature 18 times over ten years, earnings must compound at roughly **13% at 20x, 16% at 25x, 18% at 30x, 21% at 40x, 26% at 60x and 33% at 100x.** The chart shows return on capital against the P/E. The table then sets each company's required growth against what it is actually delivering and guiding.",
             ],
@@ -850,7 +843,7 @@ export const pharma: SectorOverview = {
     ],
 
     closing: {
-        heading: '10. Summary review',
+        heading: '9. Summary review',
         body: [
             "**Book one, India branded, is where to be, and the difference between names is price, not quality.** Zydus Lifesciences is the best combination of franchise, pipeline and price in the sector. Emcure Pharma holds the moat hardest to copy and trades roughly where its delivery justifies. Corona Remedies is the cleanest example of legally protected pricing but needs almost twice its guided growth to justify 63.8x. RPG Life Sciences has the best return history in the list and has just started buying businesses. Jagsonpal Pharma needs its reported growth to catch up with its secondary sales. Eris Lifesciences runs an excellent business with poor capital allocation, and Bhopal is the test. Sanofi India is a dividend stream on a shrinking base. Indoco Remedies owns a good dental franchise hidden behind a blocked US plant.",
             "**Of the hybrids, Ajanta Pharma and Ipca Laboratories are good companies at prices that assume their best year is normal.** Ajanta's 35% return compares with a 23% ten-year average. Ipca's 17% is above a 13–14% norm. Alembic Pharma is cheap because three years of 13% returns say the new plants have not paid off yet.",
