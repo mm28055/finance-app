@@ -422,7 +422,41 @@ export const pharma: SectorOverview = {
         {
             heading: '7. Growth and capex (comparative)',
             body: [
-                "What each management has said it will deliver, what it is spending, what it expects to earn on that spending, and whether it delivered last time. **Track record matters most here.** The companies that did what they said last quarter are Zydus, Emcure, Corona, Ipca, Rubicon, Sakar and Marksans. Alembic and Orchid have missed or softened targets.",
+                "What each management has said it will deliver, what it is spending, what it expects to earn on that spending, and whether it delivered last time. **Track record matters most here.** The companies that did what they said last quarter are Zydus, Emcure, Corona, Ipca, Rubicon, Sakar and Marksans. Alembic and Orchid have missed or softened targets. My observations come first; the full table follows.",
+            ],
+            points: [
+                {
+                    label: 'The India book barely needs capital; the export book cannot grow without it',
+                    text: "Corona, RPG and Jagsonpal grow by adding sales representatives, not factories. Corona adds 200–250 people a year and runs a 7-day cash cycle. That is why their returns sit at 23–33%: each rupee of growth needs very little new capital. The export and speciality names are the opposite. Zydus is spending ₹1,500–1,600cr this year, Ajanta ~₹400cr, Gufic has already put in ~₹300cr, and Sai is building plants in two countries. **The more a company's growth depends on new plants, the more its return on capital will lag its revenue growth, and the chart in section 2 shows exactly that.**",
+                },
+                {
+                    label: 'In pharma, acquisitions are the real capex, and the record on them is poor',
+                    text: "Nine of the 24 listed companies are buying growth. Zydus is buying four businesses at once, Emcure paid for Mantra and Gennova, RPG an API business, Jagsonpal Equitas, Rubicon Arena Lifesciences, Natco 49% of Adcock Ingram for ₹3,000cr, Sai Noumed plus two private stakes, Beta the Nibvin IVF business, and Eris Biocon's Indian insulin business before them. **The multi-year evidence on this list says be sceptical.** Eris kept its 35% margin and saw its return on capital fall from 60% to 14% as acquisitions swelled the capital base. Natco's own management describes Adcock's return as \"marginally better than bank interest\". An acquisition that grows revenue but earns less than the business it joins lowers returns for years. The test for each deal is whether returns hold after it, not whether revenue rises.",
+                },
+                {
+                    label: 'Few managements say what they expect to earn on the money',
+                    text: "Only four give a number that can be checked. Zydus targets margins of 28–30% within about five years. Sakar says its existing Bavla plant can support ₹800–1,000cr of revenue with no more capex, three to four times today's ₹272cr. Gufic puts the revenue potential of its ₹300cr of plant at ₹1,600–1,800cr, against ₹974cr today. Rubicon reports a 36% quarterly return even with a quarter of its capital not yet earning. **Caplin, the company spending most heavily relative to its history, declined to guide at all**, while its return on capital fell for the tenth straight year. When a company will not say what it expects to earn, assume the answer is less than it earns today.",
+                },
+                {
+                    label: 'Built capacity is cheap growth, but someone else controls the timing',
+                    text: "Sakar, Gufic, Beta, Alembic and Orchid have already spent the money, so every extra rupee of sales from here comes at high incremental margins. That is the most attractive kind of growth in the sector. But in every case the switch is held by someone else: Sakar needs partners to win tenders, Gufic needs EU approval (pending since December 2025), Beta needs its September EU audit, Alembic needs its new plants to fill, and Orchid needs its 7-ACA plant commissioned. **Price these on the date the switch flips, not on the capacity figure.**",
+                },
+                {
+                    label: 'Read guidance by who is giving it',
+                    text: "The managements fall into three groups. **Conservative guiders** beat their numbers routinely, so their guidance is a floor. Ajanta guided the US to mid-to-high teens for FY26 and delivered 49%; Corona guided 15% and delivered 21.6%; Marksans guided 15–20% and printed 35.6% in Q1. **Precise guiders** hit the number almost exactly, so their guidance is the forecast: Zydus guided a 24% margin and delivered 24.1%, and Emcure's India recovery landed as promised. **Slippers** move the target when it approaches, so their guidance should be discounted: Alembic softened its India goal from beating the market to 'closer to market growth', Orchid pushed its licensing timeline out again, and Natco's ₹3,300–3,400cr sales guide needs a far stronger second half than Q1's ₹735cr run-rate.",
+                },
+                {
+                    label: 'Not all growth is the same quality',
+                    text: "Four kinds of growth show up in this list, in falling order of quality. **Price-led growth on existing brands** needs no capital and repeats every year: Corona's 8.7% price growth. **Volume from existing capacity**: RPG growing 1.6–1.8 times the market on volume, Marksans filling the Goa plant. **Growth from new capacity or launches**, which costs capital first: Zydus's Saroglitazar, Rubicon's own plants, Wockhardt's Zaynich. **Bought or borrowed growth**, which flatters the headline. Sai's revenue is not comparable year on year because of the Noumed acquisition, Fredun's 90% quarter was partly orders pulled forward, and Emcure's partnered products add revenue at a lower margin. When comparing growth rates, first check which kind each one is.",
+                },
+                {
+                    label: 'Growth is being paid for in working capital at several companies',
+                    text: "Look at the cash-cycle view in section 2 alongside this table. Granules is growing 22% while its filed cash cycle has lengthened from 135 to 256 days. Alembic's has gone from 237 to 381 days, Eris's from 59 to 129, and Zydus's from 160 to 212. **Revenue that arrives with more stock and slower collections is worth less than the same revenue from Corona or Marksans**, whose cycles are short or shortening (Marksans reports 159 → 132 days). Rubicon is candid that it expects to hold 125–130 days.",
+                },
+                {
+                    label: 'Which growth is most and least visible',
+                    text: "**Most visible:** Zydus (guidance met to the decimal, a pipeline with dated milestones), Emcure (partner products already launched), Corona (repeat chronic prescriptions), Sai (an exclusive contract to 2034) and Rubicon (a filed pipeline with a high approval-to-launch rate). **Least visible:** Natco (the next exclusivity is unknowable in advance), Wockhardt (one drug, rationed by hospitals), Indoco and Granules (each waiting on an FDA decision), Beta (an audit) and Orchid (a plant commissioning that keeps slipping).",
+                },
             ],
             tables: [
                 {
