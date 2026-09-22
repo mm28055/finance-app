@@ -85,8 +85,13 @@ export const STANCE_CONFIG: Record<Stance, { label: string; blurb: string; pill:
  *  - `snapshots` short company cards, grouped by `CompanyVerdict.segment`
  *  - `moat`      the comparative grading table built from `moat`
  *  - `scatter`   return on capital against P/E, from live figures
+ *  - `valuechain`  the value-chain diagram built from `valueChain`
+ *  - `margingrid`  the operating-margin grid on its own (the `opm` metric)
+ *  - `cashbars`    five-year operating profit against operating cash, from `cashBars`
+ *  - `growthprice` my growth range against the growth the price needs, from `growthVsPrice`
  */
-export type SectionEmbed = 'ranking' | 'metrics' | 'snapshots' | 'moat' | 'scatter';
+export type SectionEmbed = 'ranking' | 'metrics' | 'snapshots' | 'moat' | 'scatter'
+    | 'valuechain' | 'margingrid' | 'cashbars' | 'growthprice';
 
 /** A plain comparison table. Cells honour `**bold**`; the first column is the row label. */
 export interface DataTable {
@@ -104,8 +109,8 @@ export interface OverviewSection {
     points?: { label: string; text: string }[];
     /** Comparison tables, rendered after the points. */
     tables?: DataTable[];
-    /** A structured block, rendered last in the section unless `embedFirst`. */
-    embed?: SectionEmbed;
+    /** Structured blocks, rendered last in the section unless `embedFirst`. */
+    embed?: SectionEmbed | SectionEmbed[];
     /** Render the embed straight after the opening paragraphs, before points and tables. */
     embedFirst?: boolean;
 }
@@ -128,6 +133,39 @@ export interface CompanyVerdict {
     rank?: number;
     /** Which part of the sector it belongs to; snapshots are grouped by this. */
     segment?: string;
+    /**
+     * One-line reason for the rank. When present the ranking row shows this
+     * instead of `what` + `view`, and the row opens into the profile below.
+     */
+    why?: string;
+    /** Labelled lines (moat, margins, cash, growth, risk…) shown when the row is opened. */
+    profile?: { label: string; text: string }[];
+}
+
+/** One stage of the value chain, with the companies that sit in it. */
+export interface ValueChainStage {
+    name: string;
+    /** How much of the sector's profit this stage earns. */
+    profit: 'high' | 'mixed' | 'low';
+    note: string;
+    companies: string[];
+}
+
+/** Five-year operating profit, operating cash and free cash, in ₹ crore. */
+export interface CashBar {
+    company: string;
+    ebitda: number;
+    ocf: number;
+    fcf: number;
+}
+
+/** My own earnings-growth range for the next 3–5 years, against what the P/E requires. */
+export interface GrowthEstimate {
+    company: string;
+    low: number;
+    base: number;
+    high: number;
+    needs: number;
 }
 
 /**
@@ -193,12 +231,21 @@ export interface SectorOverview {
     takeaways?: string[];
     metrics?: MetricSeries[];
     moat?: { sources: MoatSource[]; rows: MoatRow[] };
+    /** Show the moat grid as letters only; the reasons live in the company profiles. */
+    moatCompact?: boolean;
+    /** Three or four lines above the ranking: what to own, hold, wait on, avoid. */
+    headline?: { label: string; text: string }[];
+    valueChain?: ValueChainStage[];
+    cashBars?: CashBar[];
+    growthVsPrice?: GrowthEstimate[];
     sections: OverviewSection[];
     verdicts: CompanyVerdict[];
     /** The closing opinion. Rendered after the company cards, set apart from the note. */
     closing?: {
         heading: string;
         body: string[];
+        /** Short lists rendered after the body, e.g. what to do, what would change the view. */
+        lists?: { heading: string; items: string[] }[];
         /** Pulled out and shown large — the one line to remember. */
         bottomLine: string;
     };

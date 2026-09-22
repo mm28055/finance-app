@@ -99,49 +99,103 @@ export function DataTableView({ table }: { table: DataTable }) {
 
 // ── 1. Ranking and takeaways ─────────────────────────────────────────────────
 
-export function RankingBlock({ verdicts, takeaways, byName }: {
+export function RankingBlock({ verdicts, takeaways, byName, headline }: {
     verdicts: CompanyVerdict[];
     takeaways?: string[];
     /** Live figures, shown under each name when given. */
     byName?: Map<string, EnrichedCompany>;
+    /** Own / hold / wait / avoid lines shown above the table. */
+    headline?: { label: string; text: string }[];
 }) {
     const ranked = byRank(verdicts);
+    // Rows with a one-line `why` are compact and open into the company profile.
+    const compact = ranked.some(v => v.why);
+    const [open, setOpen] = React.useState<string | null>(null);
+    const live = (v: CompanyVerdict) => {
+        if (!byName) return null;
+        const co = byName.get(v.company.trim().toLowerCase());
+        return (
+            <div className="flex flex-wrap gap-x-3 mt-1 text-[10px] text-gray-400">
+                <span>MCap <span className="text-gray-600 font-medium">{fmtCr(co?.marketCap ?? null)}</span></span>
+                <span>P/E <span className="text-gray-600 font-medium">{fmtNum(co?.peRatio ?? null)}</span></span>
+                <span>ROCE <span className="text-gray-600 font-medium">{fmtNum(co?.roce ?? null, '%')}</span></span>
+            </div>
+        );
+    };
     return (
         <div className="mt-3 space-y-4">
+            {headline && headline.length > 0 && (
+                <div className="grid gap-2 sm:grid-cols-2 max-w-4xl">
+                    {headline.map(h => (
+                        <div key={h.label} className="border border-gray-200 rounded-lg px-3 py-2 bg-[#FAFBFC]">
+                            <div className="text-[10px] font-semibold uppercase tracking-wide text-[#4A7AAF]">{h.label}</div>
+                            <p className="text-[12px] text-gray-700 mt-0.5 leading-relaxed"><RichText text={h.text} /></p>
+                        </div>
+                    ))}
+                </div>
+            )}
+            {compact && <p className="text-[10.5px] text-gray-400">Click a company to open its profile.</p>}
             <div className="overflow-x-auto border border-gray-200 rounded-lg">
                 <table className="w-full text-[11.5px] border-collapse">
                     <thead>
                         <tr className="bg-[#F4F6F8] text-left text-gray-600">
                             <th className="font-semibold px-2.5 py-1.5 w-8">#</th>
                             <th className="font-semibold px-2.5 py-1.5 w-[34%] min-w-[140px]">Company and view</th>
-                            <th className="font-semibold px-2.5 py-1.5">What it does, and why it ranks here</th>
+                            <th className="font-semibold px-2.5 py-1.5">{compact ? 'Why it ranks here' : 'What it does, and why it ranks here'}</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {ranked.map(v => (
-                            <tr key={v.company} className="border-t border-gray-100 align-top">
-                                <td className="px-2.5 py-2 text-gray-400 font-semibold tabular-nums">{v.rank ?? '—'}</td>
-                                <td className="px-2.5 py-2">
-                                    <div className="font-semibold text-gray-800">{v.company}</div>
-                                    <div className="mt-1"><StancePill stance={v.stance} /></div>
-                                    {v.segment && <div className="text-[10px] text-gray-400 mt-1 leading-snug">{v.segment}</div>}
-                                    {byName && (() => {
-                                        const co = byName.get(v.company.trim().toLowerCase());
-                                        return (
-                                            <div className="flex flex-wrap gap-x-3 mt-1 text-[10px] text-gray-400">
-                                                <span>MCap <span className="text-gray-600 font-medium">{fmtCr(co?.marketCap ?? null)}</span></span>
-                                                <span>P/E <span className="text-gray-600 font-medium">{fmtNum(co?.peRatio ?? null)}</span></span>
-                                                <span>ROCE <span className="text-gray-600 font-medium">{fmtNum(co?.roce ?? null, '%')}</span></span>
+                        {ranked.map(v => {
+                            const isOpen = compact && open === v.company;
+                            return (
+                                <React.Fragment key={v.company}>
+                                    <tr
+                                        className={`border-t border-gray-100 align-top ${compact ? 'cursor-pointer hover:bg-[#F7FAFD]' : ''} ${isOpen ? 'bg-[#F7FAFD]' : ''}`}
+                                        onClick={compact ? () => setOpen(o => (o === v.company ? null : v.company)) : undefined}
+                                        aria-expanded={compact ? isOpen : undefined}
+                                    >
+                                        <td className="px-2.5 py-2 text-gray-400 font-semibold tabular-nums">{v.rank ?? '—'}</td>
+                                        <td className="px-2.5 py-2">
+                                            <div className="font-semibold text-gray-800 flex items-center gap-1">
+                                                {compact && <span className="text-gray-400 text-[10px] w-3">{isOpen ? '▾' : '▸'}</span>}
+                                                {v.company}
                                             </div>
-                                        );
-                                    })()}
-                                </td>
-                                <td className="px-2.5 py-2 leading-relaxed">
-                                    {v.what && <p className="text-[11px] text-gray-500"><RichText text={v.what} /></p>}
-                                    <p className={`text-gray-600 ${v.what ? 'mt-1.5' : ''}`}><RichText text={v.view} /></p>
-                                </td>
-                            </tr>
-                        ))}
+                                            <div className="mt-1"><StancePill stance={v.stance} /></div>
+                                            {v.segment && <div className="text-[10px] text-gray-400 mt-1 leading-snug">{v.segment}</div>}
+                                            {live(v)}
+                                        </td>
+                                        <td className="px-2.5 py-2 leading-relaxed">
+                                            {v.why ? (
+                                                <p className="text-gray-700"><RichText text={v.why} /></p>
+                                            ) : (
+                                                <>
+                                                    {v.what && <p className="text-[11px] text-gray-500"><RichText text={v.what} /></p>}
+                                                    <p className={`text-gray-600 ${v.what ? 'mt-1.5' : ''}`}><RichText text={v.view} /></p>
+                                                </>
+                                            )}
+                                        </td>
+                                    </tr>
+                                    {isOpen && (
+                                        <tr className="bg-[#F7FAFD]">
+                                            <td />
+                                            <td colSpan={2} className="px-2.5 pb-3">
+                                                <div className="border-l-2 pl-3 space-y-1.5 max-w-3xl" style={{ borderColor: STANCE_CONFIG[v.stance].hex }}>
+                                                    <p className="text-[11.5px] text-gray-500 italic leading-relaxed"><RichText text={v.what} /></p>
+                                                    {(v.profile ?? []).map(p => (
+                                                        <p key={p.label} className="text-[11.5px] text-gray-600 leading-relaxed">
+                                                            <span className="font-semibold text-gray-800">{p.label}: </span><RichText text={p.text} />
+                                                        </p>
+                                                    ))}
+                                                    <p className="text-[11.5px] text-gray-600 leading-relaxed">
+                                                        <span className="font-semibold text-gray-800">Watch: </span><RichText text={v.watch} />
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    )}
+                                </React.Fragment>
+                            );
+                        })}
                     </tbody>
                 </table>
             </div>
@@ -453,11 +507,13 @@ const TREND_STYLE: Record<MoatRow['trend'], { icon: string; label: string; cls: 
     narrowing: { icon: '↘', label: 'Narrowing', cls: 'text-rose-600' },
 };
 
-export function MoatTable({ sources, rows, verdicts, labels }: {
+export function MoatTable({ sources, rows, verdicts, labels, compact = false }: {
     sources: MoatSource[];
     rows: MoatRow[];
     verdicts: CompanyVerdict[];
     labels: Map<string, string>;
+    /** Letters only; the reasons are left to the company profiles. */
+    compact?: boolean;
 }) {
     const order = byRank(verdicts).map(v => v.company);
     const sorted = [...rows].sort((a, b) => order.indexOf(a.company) - order.indexOf(b.company));
@@ -476,9 +532,9 @@ export function MoatTable({ sources, rows, verdicts, labels }: {
                         <tr className="bg-[#F4F6F8] text-left text-gray-600">
                             <th className="sticky left-0 bg-[#F4F6F8] font-semibold px-2 py-1.5 min-w-[120px]">Company</th>
                             {sources.map(s => (
-                                <th key={s.key} className="font-semibold px-2 py-1.5 min-w-[150px] align-bottom">{s.label}</th>
+                                <th key={s.key} className={`font-semibold px-2 py-1.5 align-bottom ${compact ? 'text-center min-w-[84px]' : 'min-w-[150px]'}`}>{s.label}</th>
                             ))}
-                            <th className="font-semibold px-2 py-1.5 min-w-[190px] align-bottom">Direction</th>
+                            <th className={`font-semibold px-2 py-1.5 align-bottom ${compact ? 'min-w-[90px]' : 'min-w-[190px]'}`}>Direction</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -491,8 +547,8 @@ export function MoatTable({ sources, rows, verdicts, labels }: {
                                     const g = r.grades[s.key] ?? { grade: '-' as MoatGrade, note: '' };
                                     const st = GRADE_STYLE[g.grade];
                                     return (
-                                        <td key={s.key} className="px-2 py-1.5">
-                                            <div className="flex items-start gap-1.5">
+                                        <td key={s.key} className="px-2 py-1.5" title={compact ? g.note : undefined}>
+                                            <div className={`flex items-start gap-1.5 ${compact ? 'justify-center' : ''}`}>
                                                 <span
                                                     className="inline-flex items-center justify-center w-[18px] h-[18px] rounded-[4px] text-[10px] font-bold flex-shrink-0"
                                                     style={{ background: st.bg, color: st.fg, border: g.grade === '-' ? '1px solid #E5E7EB' : undefined }}
@@ -500,7 +556,7 @@ export function MoatTable({ sources, rows, verdicts, labels }: {
                                                 >
                                                     {g.grade === '-' ? '–' : g.grade}
                                                 </span>
-                                                <span className="text-gray-500 leading-snug">{g.note}</span>
+                                                {!compact && <span className="text-gray-500 leading-snug">{g.note}</span>}
                                             </div>
                                         </td>
                                     );
@@ -509,7 +565,7 @@ export function MoatTable({ sources, rows, verdicts, labels }: {
                                     <div className={`font-semibold ${TREND_STYLE[r.trend].cls}`}>
                                         <span aria-hidden>{TREND_STYLE[r.trend].icon}</span> {TREND_STYLE[r.trend].label}
                                     </div>
-                                    <div className="text-gray-500 leading-snug mt-0.5">{r.trendNote}</div>
+                                    {!compact && <div className="text-gray-500 leading-snug mt-0.5">{r.trendNote}</div>}
                                 </td>
                             </tr>
                         ))}
@@ -518,6 +574,7 @@ export function MoatTable({ sources, rows, verdicts, labels }: {
             </div>
             <p className="text-[10px] text-gray-400 mt-1.5">
                 A = decisive advantage · B = real but contestable · C = modest · D = weak or absent · – = not relevant to this business.
+                {compact && ' Hover over a grade for the reason; each company profile in the ranking explains its grades.'}
             </p>
         </div>
     );

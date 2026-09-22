@@ -3,6 +3,7 @@ import { pharmaCdmo } from './pharma-cdmo';
 import { pharma } from './pharma';
 import { pharmaApi } from './pharma-api';
 import { pumpsCompEng } from './pumps-comp-eng';
+import { pumpsCompEngV2 } from './pumps-comp-eng-v2';
 import { packaging } from './packaging';
 import { bearings } from './bearings';
 import { cables } from './cables';
@@ -32,4 +33,14 @@ export function getSectorOverview(sector: string): SectorOverview | undefined {
 
 export function hasSectorOverview(sector: string): boolean {
     return BY_SECTOR.has(sector.toLowerCase());
+}
+
+/**
+ * Rewrites shown beside the published note so the two can be compared.
+ * The sector page offers a switch whenever a sector has one.
+ */
+const DRAFTS = new Map([pumpsCompEngV2].map(o => [o.sector.toLowerCase(), o]));
+
+export function getSectorOverviewDraft(sector: string): SectorOverview | undefined {
+    return DRAFTS.get(sector.toLowerCase());
 }
