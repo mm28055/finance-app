@@ -438,6 +438,7 @@ export const electricalEquipment: SectorOverview = {
             heading: '5. Margins (comparative)',
             body: [
                 "A margin lasts if the product is custom, qualified and sold with price-variation clauses. It is fragile if it is standard, tendered or fixed-price. Q1 FY27, with copper, silver and steel spiking, was the test.",
+                "Whether the profit turns into cash is in section 2 (the **Cash conversion** and **Free cash flow** tabs) and on each company card in Tab 2.",
             ],
             points: [
                 {
@@ -451,29 +452,6 @@ export const electricalEquipment: SectorOverview = {
                 {
                     label: 'Squeezed: fixed-price and standard products',
                     text: "**Genus** cut its FY27 margin guide from 20–21% to 18% because its contracts have no pass-through. **Salzer's** switchgear margin fell from about 12% to 7.5–8%, and it cut its full-year guide to 8–8.5%. **RMC** made a loss in Q3 FY26 when solar input costs overran old orders.",
-                },
-            ],
-            tables: [
-                {
-                    caption: 'Operating profit (EBITDA) versus operating cash, FY22–FY26 (₹cr, consolidated)',
-                    numericColumns: [1, 2, 3, 4, 5, 6],
-                    columns: ['Company', 'Operating profit, 5 yrs', 'Operating cash, 5 yrs', 'Cash ÷ profit', 'Free cash after capex, 5 yrs', 'Net profit, 5 yrs', 'FY26: profit → cash'],
-                    rows: [
-                        ['Elecon Engg.Co', '2,139', '1,636', '**76%**', '1,390', '1,490', '523 → 314'],
-                        ['Triveni Turbine', '1,608', '1,198', '**75%**', '999', '1,440', '452 → 111'],
-                        ['Apar Inds.', '6,936', '2,918', '**42%**', '972', '3,518', '1,922 → 968'],
-                        ['TD Power Systems', '972', '353', '**36%**', '111', '699', '335 → 129'],
-                        ['KP Green Engg.', '438', '151', '**34%**', '−430', '260', '245 → 155'],
-                        ['Salzer Electronics', '563', '67', '**12%**', '−163', '217', '148 → 46'],
-                        ['GE Power', '−324', '1,169', 'n/m', '1,154', '−445', '269 → 469'],
-                        ['Genus Power', '1,710', '−700', '**negative**', '−1,219', '1,076', '965 → −219'],
-                        ['Inox Wind', '1,349', '−2,401', '**negative**', '−4,752', '−315', '891 → −598'],
-                        ['Exicom Tele-Sys.', '93', '−169', '**negative**', '−1,148', '−307', '−103 → −87'],
-                        ['Servotech Renew', '172', '−72', '**negative**', '−235', '92', '67 → −2'],
-                        ['RIR Power Electr', '44', '−20', '**negative**', '−129', '31', '10 → −22'],
-                        ['RMC Switchgears (FY23–26)', '159', '8', '**5%**', '−38', '80', '47 → −12'],
-                    ],
-                    note: 'Filed annual accounts (Screener). Free cash = operating cash minus capex. GE Power India’s ratio is not meaningful because it earned operating losses for most of the period while collecting cash on old contracts. Genus’s negative cash reflects meters it funds under 8–9 year concessions. RMC has four years of consolidated data.',
                 },
             ],
         },
