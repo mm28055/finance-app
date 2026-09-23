@@ -10,7 +10,7 @@ const intro: OverviewSection[] = [
     {
         heading: 'How to read this tab',
         body: [
-            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live, except for ACE and TIL, whose dashboard figures are wrong), then what it makes, where the money comes from and its charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed figures (Ather, Ajax and Zelio standalone, the others consolidated); splits are from each company's latest presentation or call. The cost chart uses India's price index for lithium-ion batteries (electric vehicles) or hot-rolled steel (equipment). Zelio is SME-listed and reports half-yearly.",
+            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live, except for ACE, whose dashboard market value is wrong), then what it makes, where the money comes from and its charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed figures (Ather, Ajax and Zelio standalone, the others consolidated); splits are from each company's latest presentation or call. The cost chart uses India's price index for lithium-ion batteries (electric vehicles) or hot-rolled steel (equipment). Zelio is SME-listed and reports half-yearly.",
         ],
     },
     {

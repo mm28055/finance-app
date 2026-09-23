@@ -1311,8 +1311,8 @@ export const vehiclesCharts: Record<string, ProfileCharts> = {
 };
 
 // Fixed valuation inputs as of the note date; market value and P/E are live on the page.
-// Left out: Action Const.Eq. (the dashboard’s market value, ₹369cr, is far below Screener’s ₹14,973cr) and TIL
-// (loss-making, but the dashboard shows a P/E), as of 23 Sep 2026.
+// Left out: Action Const.Eq. (the dashboard’s market value, ₹369cr, is far below Screener’s ₹14,973cr), as of 23 Sep 2026.
+// TIL loses money after interest, so it is flagged loss-making (the dashboard shows a P/E).
 export const vehiclesValuationInputs: Record<string, ValuationInput> = {
     "Ather Energy": {
         "netDebt": -711,
@@ -1355,5 +1355,12 @@ export const vehiclesValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 59.0,
         "mcapAtWriting": 692.0,
         "peAtWriting": 27.8
+    },
+    "TIL": {
+        "lossMaking": true,
+        "netDebt": 365,
+        "ttmEbitda": 19.0,
+        "mcapAtWriting": 2147.0,
+        "peAtWriting": null
     }
 };

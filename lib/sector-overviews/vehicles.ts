@@ -20,7 +20,7 @@ export const vehicles: SectorOverview = {
     leadCharts: true,
     valuation: {
         writtenOn: '23 Sep 2026',
-        // ACE and TIL are left out of the live table: the dashboard's figures for them are wrong.
+        // ACE is left out of the live table (its dashboard market value is wrong); TIL is flagged loss-making.
         inputs: vehiclesValuationInputs,
         // My base-case earnings growth, % a year over three to five years (section 6).
         myGrowth: {
@@ -36,7 +36,7 @@ export const vehicles: SectorOverview = {
         },
     },
     standfirst:
-        "Nine makers of vehicles and machines. Four are electric: Ather and Ola make electric scooters, Zelio makes cheap low-speed scooters for small towns, and Olectra makes electric buses. Three make construction equipment: ACE (cranes), Ajax (self-loading concrete mixers) and TIL (cranes and defence handling equipment). Two make farm machinery: VST (power tillers and small tractors) and Indo Farm (tractors and cranes). Electric scooters are the fastest-growing market, but the winners are Ather and the big two-wheeler companies, not Ola. Every chart uses filed results and five years of history. ACE and TIL are left out of the live valuation because the dashboard's figures for them are wrong.",
+        "Nine makers of vehicles and machines. Four are electric: Ather and Ola make electric scooters, Zelio makes cheap low-speed scooters for small towns, and Olectra makes electric buses. Three make construction equipment: ACE (cranes), Ajax (self-loading concrete mixers) and TIL (cranes and defence handling equipment). Two make farm machinery: VST (power tillers and small tractors) and Indo Farm (tractors and cranes). Electric scooters are the fastest-growing market, but the winners are Ather and the big two-wheeler companies, not Ola. Every chart uses filed results and five years of history. ACE is left out of the live valuation because the dashboard's market value for it is wrong, and TIL is shown as loss-making.",
     lastUpdated: '2026-09-23',
     asOfQuarter: 'Q1 FY27',
 
@@ -519,7 +519,7 @@ export const vehicles: SectorOverview = {
                 },
                 {
                     label: 'Data problems on the dashboard',
-                    text: "The dashboard shows **ACE** at a market value of ₹369cr (Screener: ₹14,973cr) and **TIL** and **Ola** with P/Es although they lose money. ACE and TIL are left out of the live table; check any price on an exchange website before acting.",
+                    text: "The dashboard shows **ACE** at a market value of ₹369cr (Screener: ₹14,973cr) and **TIL** and **Ola** with P/Es although they lose money. ACE is left out of the live table and TIL is shown as loss-making; check any price on an exchange website before acting.",
                 },
             ],
         },
@@ -548,7 +548,7 @@ export const vehicles: SectorOverview = {
                 },
                 {
                     label: 'Not measurable on earnings',
-                    text: "**Ather** and **Ola** lose money; **TIL** loses money after interest. ACE and TIL are not in the live table because the dashboard's figures for them are wrong.",
+                    text: "**Ather** and **Ola** lose money; **TIL** loses money after interest. ACE is not in the live table because the dashboard's market value for it is wrong; TIL is shown there as loss-making.",
                 },
             ],
             embed: 'valuation',

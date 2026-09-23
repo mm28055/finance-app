@@ -43,7 +43,7 @@ export function liveValuation(
     const input = block?.inputs[company];
     if (!block || !input) return null;
     const mcap = live?.marketCap ?? input.mcapAtWriting;
-    const lossMaking = input.ttmEbitda !== null && input.ttmEbitda <= 0;
+    const lossMaking = !!input.lossMaking || (input.ttmEbitda !== null && input.ttmEbitda <= 0);
     const pe = lossMaking ? null : (live?.peRatio ?? input.peAtWriting);
     const ev = mcap !== null && mcap !== undefined ? mcap + (input.netDebt ?? 0) : null;
     const evEbitda = ev !== null && input.ttmEbitda && input.ttmEbitda > 0 ? ev / input.ttmEbitda : null;

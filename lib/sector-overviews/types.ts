@@ -101,6 +101,8 @@ export interface ValuationInput {
     /** Market value and P/E on the day the note was written, to flag big moves since. */
     mcapAtWriting: number | null;
     peAtWriting: number | null;
+    /** Set when the company loses money after tax even though operating profit is positive, so the page shows no P/E whatever the dashboard says. */
+    lossMaking?: boolean;
     /** Lenders only: net worth (share capital plus reserves) at the latest year end, ₹cr, for price-to-book. */
     bookValue?: number | null;
 }
