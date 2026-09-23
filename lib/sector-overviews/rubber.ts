@@ -210,20 +210,21 @@ export const rubber: SectorOverview = {
         {
             heading: '3. The sector',
             body: [
-                "Rubber reaches a tyre or glove in two ways: made new from petrochemicals, or recovered from old tyres.",
+                "Rubber reaches a tyre or glove in two ways: made new from petrochemicals, or recovered from old tyres. The three companies here sit on opposite sides of that line, so the same news (dear oil, a war, a new rule) can help one and hurt another.",
+                "All three had their best quarter ever in Q1 FY27, and the prices of what they sell rose sharply in the same quarter (table below). **The main job of this section is to separate what is lasting from what came with that quarter.**",
             ],
             points: [
                 {
                     label: 'Value chain',
-                    text: "**New rubber**: butadiene, acrylonitrile and styrene (all from oil) → synthetic rubber and latex (Apcotex) → tyre makers, glove makers, paper mills and construction-chemical firms. **Recycled rubber**: scrap tyres → shredded into crumb, reclaimed rubber, fuel oil and carbon black (Tinna, GRP) → road contractors, tyre makers and industry. **The profit sits where a product is hard to replace**: Apcotex as the main local NBR maker, and the recyclers where their product is approved by a big tyre maker.",
+                    text: "**New rubber**: butadiene, acrylonitrile and styrene (all from oil) → synthetic rubber and latex (Apcotex) → tyre makers, glove makers, paper mills and construction-chemical firms. Apcotex's customers include MRF, Apollo, JK Paper, ITC, Pidilite and Sika, and glove makers in Malaysia, Thailand and Vietnam. **Recycled rubber**: scrap tyres → shredded into crumb, then made into fine rubber powder, reclaimed rubber, fuel oil and carbon black (Tinna, GRP) → road contractors, tyre makers and industry. Both recyclers also turn waste plastic into plastic compounds for carmakers and appliance makers. **The profit sits where a product is hard to replace**: Apcotex as the main local NBR maker, and the recyclers where their product is approved by a big tyre maker.",
                 },
                 {
                     label: 'Where the demand comes from',
-                    text: "Tyres, cars and gloves for Apcotex; roads (rubber mixed into bitumen), tyre makers blending recycled rubber, and industry for the recyclers. Regulation is a driver for recyclers: tyre makers must pay for the collection and recycling of old tyres, and the recyclers sell them credits for doing it.",
+                    text: "**Apcotex** sells about 70% latex and 30% synthetic rubber, and about two-thirds of sales are in India, where its volumes grew 10% in Q1 across paper, construction, rubber goods and textiles. Nitrile latex for gloves, which did not exist in its sales five years ago, is now about 10%. **Tinna** sells to four groups: roads (rubber mixed into bitumen), industry (fine powder and reclaimed rubber for tyre makers, up 58% in Q1), consumer (sports tracks and turf, about 8–10% of sales) and steel abrasives. **GRP** sells mostly reclaimed rubber, over half of it abroad, plus recycled plastics. **Regulation is a driver for recyclers**: tyre makers must pay for the collection and recycling of old tyres, and the recyclers sell them credits for doing it.",
                 },
                 {
                     label: 'Cycles and policy',
-                    text: "**Apcotex's cycle is the petrochemical spread** and the global glove-latex cycle, which is only now coming out of oversupply. **The recyclers' cycle runs the other way**: dear oil and dear bitumen make their products more attractive. Freight and war matter for all three this year: Apcotex's exports to the Middle East were cut off, and Tinna's imported turf materials tripled in price.",
+                    text: "**Apcotex's cycle is the petrochemical spread** and the global glove-latex cycle. After COVID, Apcotex and its rivals all added capacity at once, and glove latex has been in oversupply since; management says it is only now normalising. **The recyclers' cycle runs the other way**: dear oil and dear bitumen make their products more attractive, because buyers switch to recycled rubber when new rubber and bitumen cost more. Freight and war matter for all three this year: Apcotex's exports to the Middle East were cut off, Tinna's imported turf materials tripled in price, and GRP lost some sales to countries that make goods for the US after the US raised tariffs.",
                 },
                 {
                     label: 'What these companies actually depend on',
@@ -233,11 +234,23 @@ export const rubber: SectorOverview = {
             tables: [
                 {
                     caption: 'Profit pools, from filed figures',
-                    columns: ['Position', 'Who', 'Operating margin (last five quarters)', 'Return on capital (FY26)', 'Five-year cash conversion'],
+                    columns: ['Position', 'Who', 'Operating margin (last five quarters)', 'Return on capital (FY26)', 'Five-year cash conversion', 'Free cash flow (FY26)'],
                     rows: [
-                        ['Synthetic rubber and latex', 'Apcotex', '10–22%', '20%', '**70%**'],
-                        ['Tyre recyclers', 'Tinna, GRP', '6–22%', '7–22%', '**61–66%**'],
+                        ['Synthetic rubber and latex', 'Apcotex', '10–22%', '20%', '**70%**', '₹159cr'],
+                        ['Tyre recyclers', 'Tinna, GRP', '6–22%', '7–22%', '**61–66%**', 'Tinna −₹52cr; GRP −₹16cr'],
                     ],
+                    note: 'Free cash flow is operating cash minus spending on fixed assets (Screener).',
+                },
+                {
+                    caption: 'Prices of what they sell: India wholesale price index (Q1 FY24 = 100)',
+                    numericColumns: [2, 3, 4, 5],
+                    columns: ['Product', 'Main seller here', 'Q1 FY26', 'Q4 FY26', 'Q1 FY27', 'Operating margin, Q1 FY27'],
+                    rows: [
+                        ['Synthetic rubber', 'Apcotex', '118', '120', '128', '22%'],
+                        ['Rubber crumb', 'Tinna', '114', '116', '127', '22%'],
+                        ['Reclaimed rubber', 'GRP', '107', '118', '125', '11%'],
+                    ],
+                    note: 'Office of the Economic Adviser, quarterly averages. All three prices jumped in Q1 FY27, and recycled rubber rose about as fast as new rubber.',
                 },
             ],
         },
@@ -251,60 +264,72 @@ export const rubber: SectorOverview = {
             points: [
                 {
                     label: 'Lasting: the main local maker',
-                    text: "**Apcotex** is the main Indian NBR maker, with about 30% of a market otherwise supplied by imports, so Indian buyers get shorter lead times and less stock to carry than if they imported. Its dual-fuel plants proved their worth this year. Customers in tyre cord and gloves take 6–12 months to approve a new latex supplier.",
+                    text: "**Apcotex** is the main Indian NBR maker, with about 30% of a market otherwise supplied by imports, so Indian buyers get shorter lead times and less stock to carry than if they imported. Its plants can run on coal or gas and it buys raw materials from several countries, which kept it running when rivals stopped this year. Customers in tyre cord and gloves take 6–12 months to approve a new latex supplier. It has added six or seven glove-latex grades and about 25 new products, and now sells to eight industries.",
                 },
                 {
                     label: 'Lasting but policy-dependent: recycling credits',
-                    text: "**Tinna** and **GRP** earn credits for recycling tyres collected in India, and rules requiring recycled content in cars from FY28 add demand. Tinna's scale (185,000 tonnes of crushing a year) gives it the best access to scrap. These are real advantages, but they rest on rules.",
+                    text: "**Tinna** and **GRP** earn credits for recycling tyres collected in India, and rules requiring recycled content in cars from FY28 add demand. Tinna's scale (185,000 tonnes of crushing a year, rising to 235,000) gives it the best access to scrap, and it is adding sourcing bases in South Africa and Chile. GRP was the first reclaimed-rubber maker in the world to earn ISCC Plus certification (a sustainability standard some customers value). These are real advantages, but they rest on rules.",
                 },
                 {
                     label: 'Wearing: basic shredding',
-                    text: "Anyone can shred a tyre. The recyclers' margins last only if they keep moving to harder products: fine rubber powder, polymer masterbatches and recovered carbon black. If they stand still, small local shredders undercut them.",
+                    text: "Anyone can shred a tyre. The recyclers' margins last only if they keep moving to harder products: fine rubber powder, polymer masterbatches and recovered carbon black. Tinna's joint managing director said nothing in the business is \"that difficult\" for a determined rival; its edge is years of process learning and patient customer approvals. If they stand still, small local shredders undercut them.",
                 },
                 {
-                    label: 'Barely a moat: GRP’s balance sheet',
-                    text: "**GRP** has good products and certifications, but its net debt is about five times FY26 operating profit, which leaves little room if the carbon-black plant is slow to win approvals.",
+                    label: 'Thin: GRP’s balance sheet',
+                    text: "**GRP** has good products and certifications, but its net debt is about five times FY26 operating profit, which leaves little room if the carbon-black plant is slow to win approvals. Management says any faster expansion of its Gujarat plants would first need the company to reduce debt.",
                 },
                 {
                     label: 'Competitors outside the list',
-                    text: "In synthetic rubber, **Synthos**, **Zeon**, **Kumho** and Chinese makers supply India through imports; Malaysian and Chinese latex makers compete in gloves. In recycling, dozens of small local shredders and reclaim makers compete on basic products.",
+                    text: "In synthetic rubber, **Synthos**, **Zeon**, **Kumho** and Chinese makers supply India through imports; Malaysian and Chinese latex makers compete in gloves, and Apcotex notes new latex capacity in Malaysia and China. In recycling, dozens of small local shredders and reclaim makers compete on basic products.",
                 },
             ],
         },
         {
             heading: '5. Margins (comparative)',
             body: [
-                "Are the margins structural? All three had a record quarter, so the question is what a normal year looks like.",
+                "Are the margins structural? All three had a record quarter, so the question is what a normal year looks like. The cost structures differ: materials were 66% of Apcotex's FY26 sales but 51–52% of the recyclers', while power and factory costs were 20% of GRP's sales. So Apcotex lives on the gap between its selling price and petrochemical prices, and the recyclers on scrap prices and running costs.",
                 "Whether the profit turns into cash is in section 2 (the **Cash conversion** and **Free cash flow** tabs) and on each company card in Tab 2.",
             ],
             points: [
                 {
                     label: 'Structural: what management calls normal',
-                    text: "**Apcotex** says 15–16% on average, well below Q1's 22%. **Tinna** raised its FY27 guidance to 18–20% and declined to promise the 22% of Q1. **GRP** targets 10–14% in reclaimed rubber, 10–15% in plastics and 18–20% in pyrolysis once carbon black is running.",
+                    text: "**Apcotex** says 15–16% on average, well below Q1's 22%, and its glove latex has still not returned to the 15–16% it earned before COVID. **Tinna** raised its FY27 guidance to 18–20% and declined to promise the 22% of Q1; it says most of the gain came from cheaper raw materials and more high-value products, not stock gains. **GRP** targets 10–14% in reclaimed rubber (it averaged 9–10% in the last two years), 10–15% in plastics and 18–20% in pyrolysis once carbon black is running, which it expects around FY28.",
                 },
                 {
                     label: 'Cyclical: this year’s supply shock',
-                    text: "Apcotex's 22% came partly from rivals being shut by gas shortages and about 2 points from stock bought before prices rose; management said so plainly. Tinna's road business benefits from dear bitumen, which will ease when oil does.",
+                    text: "Apcotex's 22% came partly from rivals being shut by gas shortages and about 2 points from stock bought before prices rose; management said so plainly. Tinna's road business benefits from dear bitumen, which will ease when oil does. **GRP**'s gross margin actually fell to 48.3% as scrap costs rose; its operating margin rose because sales grew 26% and fixed costs were spread over more of them. Its prices are reset quarterly, half-yearly or yearly, so its margin lags cost changes.",
                 },
                 {
                     label: 'Not structural: credits and one-offs',
-                    text: "Tinna sold ₹25cr of credits it had built up in earlier years; GRP earned ₹4.9cr of credits in Q1. Credits count at the profit line, so strip them out when comparing years.",
+                    text: "**Tinna** earns about ₹25–30cr of credits a year, counted in profit before tax. An analyst on the call worked out that FY26 profit before tax of ₹72cr was about ₹51cr without credits, and management agreed the numbers. The ₹25cr of credits it sold in Q1 (about 1 lakh credits at the ₹2,500 floor price) had already been booked as profit in earlier years, so they brought cash, not Q1 profit. **GRP** earned ₹4.9cr of credits in Q1, more than half of its ₹8.4cr profit before tax. **Strip credits out when comparing years.**",
                 },
                 {
                     label: 'Working capital: the biggest drains',
-                    text: "**GRP** holds about 100 days of working capital, mostly scrap stock and export receivables, though it cut this by 8 days in Q1.",
+                    text: "**GRP** has the longest cycle, about 105 days on filed figures at March, mostly scrap stock and export receivables. The company says it cut this by 8 days in Q1, to 86 days on its own measure.",
                 },
                 {
                     label: 'Working capital: getting worse',
-                    text: "**Tinna**'s cycle lengthened from 49 to 64 days over two years as it grew abroad. **Apcotex** built stock this year at higher raw-material prices.",
+                    text: "**Tinna**'s cycle lengthened from 49 to 64 days over two years on filed figures as it grew abroad; management puts its blended figure at about 50 days and says it has barely moved. **Apcotex** holds the same number of days of stock, but at higher raw-material prices, so its net cash fell from about ₹70cr in March to about ₹40cr in June.",
                 },
                 {
                     label: 'Working capital: improving',
-                    text: "**Apcotex**'s cycle has fallen to 40 days and it turned more than all of FY26's operating profit into cash (115%).",
+                    text: "**Apcotex**'s cycle has fallen to 40 days and it turned more than all of FY26's operating profit into cash (115%), leaving ₹159cr of free cash.",
                 },
                 {
                     label: 'Working capital: built into the business',
                     text: "Recyclers must stock scrap tyres when they are available; synthetic-rubber makers hold petrochemicals bought at market prices. **Judge each against its own history, not against the others.**",
+                },
+            ],
+            tables: [
+                {
+                    caption: 'Q1 FY27 cash and capital, as stated on the calls',
+                    columns: ['Company', 'What management said', 'Balance sheet'],
+                    rows: [
+                        ['Apcotex Inds', 'Net cash about ₹40cr, down from ₹70cr in March as stock values rose; 15–20% of the ₹220cr capex spent, self-funded so far, but it expects to borrow in the next couple of quarters', 'Net cash ₹67cr at March'],
+                        ['Tinna Rubber', '₹27cr of capex in Q1, out of about ₹100cr planned for FY27–28 (about ₹60cr to be completed in FY27); ₹25cr of past credits turned into cash', 'Net debt ₹125cr at March'],
+                        ['GRP', 'FY27 capex ₹90–100cr; ₹91cr invested in pyrolysis so far; reducing debt is “not entirely in our hands”, with no firm plan', 'Net debt ₹207cr at March'],
+                    ],
+                    note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. None of the three announced a buyback.',
                 },
             ],
         },
@@ -316,35 +341,35 @@ export const rubber: SectorOverview = {
             points: [
                 {
                     label: 'Growth driver: import substitution',
-                    text: "**Apcotex** is spending about ₹220cr on new capacity due in April–June 2027, which it expects to add about ₹600cr of revenue. Its NBR plant runs full, and India still imports much of what it uses.",
+                    text: "**Apcotex** is spending about ₹220cr on new capacity due in April–June 2027, which it expects to add about ₹600cr of revenue, roughly 40% more volume. Its NBR plant runs full, and India still imports much of what it uses. A cheaper design cut the NBR part of the cost to ₹130–140cr, which made the expansion pay without import duties. A further glove-latex expansion is designed but waits on three or four more months of stable margins.",
                 },
                 {
                     label: 'Growth driver: recycling rules and roads',
-                    text: "**Tinna** targets ₹670–700cr of revenue in FY27 and ₹1,000cr by 2029, with margins above 18%. Its crushing capacity rises 27% to 235,000 tonnes this year. **GRP** guides about 20% revenue growth in FY27.",
+                    text: "**Tinna** targets ₹670–700cr of revenue in FY27 and ₹1,000cr by FY29, with margins above 18% and return on capital above 30%. Its crushing capacity rises 27% to 235,000 tonnes this year, and it has a 15,000-tonne rubberised-bitumen order for FY27. **GRP** guides about 20% revenue growth in FY27, with reclaimed-rubber volumes up about 20% and plastics up over 20%, then mid-teen growth after that.",
                 },
                 {
                     label: 'Growth driver: new products',
-                    text: "**GRP**'s recovered-carbon-black plant is due in October 2026, with tyre-maker approvals expected by Q4 FY27; its pyrolysis business targets ₹250–300cr of revenue at peak. **Tinna** starts selling pyrolysis oil in Q2 FY27 and recovered carbon black in Q3.",
+                    text: "**GRP**'s recovered-carbon-black plant is due in October 2026, with tyre-maker approvals expected to take several quarters; its pyrolysis business goes to 45,000 tonnes this year and 75,000 in FY28, targeting ₹250–300cr of revenue at peak. **Tinna** starts selling pyrolysis oil in Q2 FY27 and making recovered carbon black in Q3; together they are expected to be 7–10% of FY27 revenue (₹50–60cr). Its polymer masterbatch sales tripled to ₹12cr in Q1 and should reach 10% of revenue, and its construction-chemicals arm aims to pass ₹100cr of revenue.",
                 },
                 {
                     label: 'Growth driver: going abroad',
-                    text: "**Tinna** has plants or projects in Oman, South Africa, Chile and Saudi Arabia. Oman earns an 8.5% margin; Saudi Arabia keeps being delayed by the regional conflict.",
+                    text: "**Tinna** has plants or projects in Oman, South Africa, Chile and Saudi Arabia, aiming for 10 locations. Oman earns an 8.5% margin; South Africa has started exporting and should break even in Q2; Saudi Arabia keeps being delayed by the regional conflict. **GRP** has set up a base in Europe and says exports will again become most of its reclaimed-rubber sales.",
                 },
                 {
                     label: 'Delivering or beating',
-                    text: "**Apcotex** delivered its best quarter ever and remained in net cash. **Tinna** raised its margin guidance and completed its Haryana expansion on schedule. **GRP** recovered its US volumes and passed on Q4's cost increases.",
+                    text: "**Apcotex** delivered its best quarter ever and remained in net cash. **Tinna** raised its margin guidance and completed its Haryana masterbatch expansion on schedule. **GRP** recovered its US volumes, passed on Q4's cost increases and ran its pyrolysis reactor continuously for 25 days in July, the industry test for a working plant.",
                 },
                 {
                     label: 'Cautious',
-                    text: "**Apcotex** would not promise another quarter like Q1 and warned that Middle East exports depend on the conflict ending.",
+                    text: "**Apcotex** would not promise another quarter like Q1 and warned that Middle East exports depend on the conflict ending; it will confirm the start date of its NBR expansion only on the Q3 call.",
                 },
                 {
                     label: 'Missed',
-                    text: "**Tinna**'s Saudi plant has been delayed again. **GRP** lost money in Q4 FY26 when US tariffs hit its exports.",
+                    text: "**Tinna**'s Saudi plant has been delayed again, and its consumer business fell as turf materials tripled in price. **GRP** lost money in Q4 FY26 when US tariffs hit its exports, and closed its polymer composite business for good.",
                 },
                 {
                     label: 'Mixed',
-                    text: "**GRP**'s growth rests on a plant that is not yet commissioned and products not yet approved by customers.",
+                    text: "**GRP**'s growth rests on a plant that is not yet commissioned and products not yet approved by customers. Its pyrolysis unit is still below break-even, and some sales to non-US countries lost in the tariff episode have not come back.",
                 },
                 {
                     label: 'My outlook',
@@ -363,29 +388,43 @@ export const rubber: SectorOverview = {
                     ],
                     note: 'My own judgement, not guidance. The growth each price needs is in the live valuation table in section 8.',
                 },
+                {
+                    caption: 'Guidance, capex and track record',
+                    badgeColumn: 3,
+                    columns: ['Company', 'Guidance', 'Capex', 'Track record'],
+                    rows: [
+                        ['Apcotex Inds', 'Margin 15–16% on average; about ₹600cr of added revenue from 2027', '₹220cr, due April–June 2027; self-funded so far', '**Beat**: record Q1, net cash kept'],
+                        ['Tinna Rubber', 'FY27 revenue ₹670–700cr, margin 18–20% (raised); ₹1,000cr by FY29', 'About ₹100cr over FY27–28; ₹27cr spent in Q1', '**On track**: Saudi delayed'],
+                        ['GRP', 'About 20% revenue growth in FY27; margin targets by business', '₹90–100cr in FY27 within a ₹250cr plan', '**Mixed**: Q1 recovery after a Q4 loss'],
+                    ],
+                },
             ],
         },
         {
             heading: '7. Risk factors',
             body: [
-                "The risks fall into four groups. For each, what management addressed and what it left unanswered.",
+                "The risks fall into five groups. For each, what management addressed and what it left unanswered.",
             ],
             points: [
                 {
                     label: 'The peak quarter',
-                    text: "All three printed record margins in Q1 FY27 on conditions that will not last. Apcotex said so; Tinna declined to promise the rate; GRP's new guidance is above anything it has earned for a full year.",
+                    text: "All three printed record margins in Q1 FY27 on conditions that will not last. **Apcotex** said so and quantified its stock gain; **Tinna** declined to promise the rate and said new plants abroad will add costs before they add sales; **GRP** says Q1 is \"not a one-time occurrence\", but its targets are above anything it has earned for a full year.",
                 },
                 {
                     label: 'Oil prices',
-                    text: "A fall in oil would help Apcotex's costs but make recycled rubber less attractive against new rubber and bitumen, which hurts Tinna and GRP. A rise does the opposite.",
+                    text: "A fall in oil would help **Apcotex**'s costs but make recycled rubber less attractive against new rubber and bitumen, which hurts **Tinna** and **GRP**. A rise does the opposite. Apcotex's raw materials are priced in dollars, so a weaker rupee raises its costs about as much as its export prices and gives it little net benefit.",
                 },
                 {
-                    label: 'Rules can change',
-                    text: "Recycling credits and recycled-content rules support both recyclers. A change to the credit price or to scrap-tyre import rules would hit profits directly.",
+                    label: 'Credits, rules and disclosure',
+                    text: "Recycling credits and recycled-content rules support both recyclers. A change to the credit price or to scrap-tyre import rules would hit profits directly. **Tinna**'s credits were explained unclearly on the call (several analysts asked how they are booked), and its promoters' holding fell from 73.8% to 67.2% between September 2023 and June 2026. **GRP**'s promoters hold about 40%; **Apcotex**'s holding has been unchanged at 58.2%.",
                 },
                 {
                     label: 'New plants and debt',
-                    text: "**GRP**'s carbon-black plant must win tyre-maker approvals, and its debt is high for its size. **Tinna**'s projects abroad add freight and political risk. **Apcotex**'s expansion is self-funded.",
+                    text: "**GRP**'s carbon-black plant must win tyre-maker approvals, and its debt is high for its size; management says the timing of reducing debt is not in its hands. **Tinna** has spent more cash than it earned for three years (free cash −₹52cr in FY26), and its projects abroad add freight and political risk. **Apcotex**'s expansion is self-funded so far, though it plans to borrow a little.",
+                },
+                {
+                    label: 'War, freight and tariffs',
+                    text: "**Apcotex**'s volumes fell 10–12% in Q1 because Middle East customers could not be reached; exports are about a third of its sales. **Tinna**'s Saudi project and Oman volumes depend on the same conflict. **GRP** exports over half its output; the US tariff episode already cost it one business line and some sales to third countries.",
                 },
             ],
         },
@@ -398,15 +437,23 @@ export const rubber: SectorOverview = {
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**Apcotex** holds net cash, so it is a little cheaper than its P/E suggests. **GRP**'s debt makes it dearer than even its P/E does.",
+                    text: "**Apcotex** holds net cash, so its EV/EBITDA of about 12x is a little cheaper than its P/E of about 20x suggests. **Tinna** (net debt ₹125cr) trades at about 18x EV/EBITDA against a P/E of about 30x. **GRP**'s debt makes it dearer than even its P/E does: about 27x EV/EBITDA, with net debt over four times its operating profit of the last year.",
                 },
                 {
                     label: 'Reasonable',
-                    text: "**Apcotex** and **Tinna**: prices that ask for about the growth I expect. Remember that both are on record margins today.",
+                    text: "**Apcotex** and **Tinna**: prices that ask for about the growth I expect (about 13% a year for Apcotex against my 15%, about 18% for Tinna against my 18%). Remember that both are on record margins today.",
+                },
+                {
+                    label: 'Full',
+                    text: "None of the three today. **Tinna** is closest: if I strip out its credits or cut my estimate by more than two points, its price moves from reasonable to full.",
                 },
                 {
                     label: 'Stretched',
-                    text: "**GRP**: its FY26 profit was so small that the price rests on the carbon-black plant working.",
+                    text: "**GRP**: its FY26 profit was so small that the price rests on the carbon-black plant working. At a P/E of about 156x it needs earnings to compound at roughly 39% a year, about double my 20%.",
+                },
+                {
+                    label: 'Watch the peak quarter',
+                    text: "The P/Es use the last four quarters, which include each company's record Q1. **Apcotex**'s ₹117cr of operating profit in Q1 is almost half of its ₹256cr for the year; if margins return to 15–16%, the P/E on a normal year is higher than it looks today.",
                 },
             ],
             embed: 'valuation',
@@ -449,5 +496,10 @@ export const rubber: SectorOverview = {
     sources: [
         { label: 'Filed quarterly results, annual ratios and cash flows — Screener.in', url: 'https://www.screener.in/company/APCOTEXIND/' },
         { label: 'Wholesale price index: synthetic rubber, rubber crumb, reclaimed rubber — Office of the Economic Adviser, Government of India', url: 'https://eaindustry.nic.in/' },
+        { label: 'CPCB directs producers to procure EPR certificates for tyre disposal — Business Standard (Feb 2024)', url: 'https://www.business-standard.com/india-news/cpcb-directs-producers-to-procure-epr-certificates-for-tire-disposal-124022000980_1.html' },
+        { label: 'EPR portal for waste tyre management — Central Pollution Control Board', url: 'https://eprtyres.cpcb.gov.in/' },
+        { label: 'NITI Aayog proposes standards for tyre pyrolysis oil and recovered carbon black — Down To Earth (May 2026)', url: 'https://www.downtoearth.org.in/waste/waste-tyre-management-overhaul-niti-aayog-proposes-new-standards-for-tyre-pyrolysis-oil-and-recovered-carbon-black' },
+        { label: 'Use of crumb rubber in road construction — Press Information Bureau, Government of India', url: 'https://pib.gov.in/PressReleaseIframePage.aspx?PRID=1777240' },
+        { label: 'Glove makers face prolonged recovery amid intense Chinese competition — The Edge Malaysia (2026)', url: 'https://theedgemalaysia.com/node/815243' },
     ],
 };
