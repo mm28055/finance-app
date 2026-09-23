@@ -214,19 +214,20 @@ export const tyres: SectorOverview = {
             heading: '3. The sector',
             body: [
                 "A tyre is mostly rubber and oil-based chemicals held together by steel and fabric. The makers buy those at market prices and sell the tyre through dealers and to carmakers.",
+                "Crisil counts about ₹1.36 lakh crore of industry revenue in FY26, with six large makers earning about 85% of it. The three here are among them; **MRF** and **Balkrishna** are the best-known names outside this list.",
             ],
             points: [
                 {
                     label: 'Value chain',
-                    text: "Natural rubber (from Kerala and South-East Asia), synthetic rubber, carbon black, nylon and steel cord → tyre plant → **dealer or carmaker** → driver or fleet owner. Materials are 55–62% of sales, so the rubber price decides the year. **The profit pool sits in replacement**, where a driver or fleet owner buys from a dealer and a trusted brand earns a premium; carmakers buy at lower margins, with price changes that follow costs by a quarter or more.",
+                    text: "Natural rubber (from Kerala and South-East Asia), synthetic rubber, carbon black, nylon and steel cord → tyre plant → **dealer or carmaker** → driver or fleet owner. Materials are 55–62% of sales, so the rubber price decides the year. Apollo says about half its materials are imported, and Indian rubber prices quickly follow the cost of imports, so **a weaker rupee raises costs even for rubber grown in Kerala**. **The profit pool sits in replacement**, where a driver or fleet owner buys from a dealer and a trusted brand earns a premium; carmakers buy at lower margins, with price changes that follow costs by a quarter or more.",
                 },
                 {
                     label: 'Where the demand comes from',
-                    text: "Replacement demand follows the number of vehicles on the road and how far they travel, so it grows steadily. Carmaker demand follows vehicle sales, which have been strong: Indian plants are at 90–95% of capacity. Exports and Europe (Apollo's Vredestein) add a third leg, now helped by European duties on Chinese tyres.",
+                    text: "Replacement demand follows the number of vehicles on the road and how far they travel, so it grows steadily. Carmaker demand follows vehicle sales, which have been strong: Indian plants are at 90–95% of capacity. Exports and Europe (Apollo's Vredestein) add a third leg. For FY27, ICRA expects Indian tyre demand to grow 5–7% in units and Crisil 4–5%. The companies are seeing more for now: **JK**'s Indian volumes rose 25% in Q1, and **Apollo**'s replacement, carmaker and export volumes each grew 10–15%. **CEAT** expects some slowing in Q2, with a weak monsoon a risk to rural demand, but not a collapse.",
                 },
                 {
                     label: 'Cycles and policy',
-                    text: "**The cycle is rubber, not demand.** Natural rubber is about 63% dearer than in Q1 FY24 (India's wholesale price index) and hit ₹225–280 a kilo this year. Price increases come in monthly steps of 2–5%, so margins fall first and recover later. Policy matters at the edges: new European anti-dumping duties on Chinese tyres help Apollo's European business, and US duties of about 29–50% limit exports there.",
+                    text: "**The cycle is rubber, not demand.** Natural rubber is about 63% dearer than in Q1 FY24 (India's wholesale price index). Apollo paid about ₹225 a kilo on average in Q1 and expects more than ₹260 in Q2; CEAT says Kerala rubber at about ₹280 is the highest in 15 years. Price increases come in monthly steps of 2–5%, so margins fall first and recover later. Crisil expects the industry's operating margin to fall from 14.2% in FY26 to about 11.5–12% in FY27 and recover to 13–13.5% in FY28, and calls it **a lag in passing on costs, not a lasting reset**. Policy matters at the edges: from July 2026 the European Union charges 4.3–45.3% duties on Chinese car tyres, which held 28% of that market in 2024; the US charges 29% on car and truck tyres and 10% on off-highway tyres (CEAT).",
                 },
                 {
                     label: 'What these companies actually depend on',
@@ -242,6 +243,16 @@ export const tyres: SectorOverview = {
                         ['Two-wheeler and car led', 'CEAT', '8–14%', '19%', '**93%**'],
                     ],
                 },
+                {
+                    caption: 'Where the tyres go and where the rubber comes from (Q1 FY27 calls)',
+                    columns: ['Company', 'Product mix', 'Who buys', 'Plants', 'Rubber bought'],
+                    rows: [
+                        ['Apollo Tyres', 'Truck tyres the core in India; car tyres the focus in Europe (Vredestein)', 'India 74% of Q1 revenue; Indian replacement volume +13%, carmakers +10%, exports +15%', 'India running in the 90s; Dutch plant closed June 2026; Hungary rising from 17,000 to 21,000 car tyres a day', 'About half Indian, half imported'],
+                        ['CEAT', 'Two-wheeler, car, truck and farm tyres; split given only yearly', 'Replacement 50%, carmakers 30%, exports 20% (23% with Camso)', 'High use in most categories; Nagpur two-wheeler line being added', 'About two-thirds imported, one-third Indian'],
+                        ['JK Tyre & Indust', 'Truck and bus 56%, cars 27%, two- and three-wheelers 5%, farm and other 12%', 'Indian volume +25% (carmakers +42%); Mexico −32%', '95% in India; about 80% including Mexico', 'Not disclosed'],
+                    ],
+                    note: 'Product and customer splits are by revenue where the company gave them; Apollo did not give a product split on the call.',
+                },
             ],
         },
         {
@@ -254,23 +265,23 @@ export const tyres: SectorOverview = {
             points: [
                 {
                     label: 'Lasting: brands at the dealer',
-                    text: "Replacement buyers choose at the dealer, and a brand with a wide network earns a premium. **Apollo** says it has regained a truck-tyre replacement share above 30% and grew replacement volumes 13% in Q1 while halving advertising. **CEAT** is the leading two-wheeler brand. These networks take decades to build.",
+                    text: "Replacement buyers choose at the dealer, and a brand with a wide network earns a premium. **Apollo** says it has regained a truck-tyre replacement share above 30% (and 21%-plus in car tyres) and grew replacement volumes 13% in Q1 while halving advertising. **CEAT** is the leading two-wheeler brand and pushed an 11% price rise through replacement within a quarter while spending only about 2% of sales on marketing. **JK** holds truck fleets with more than 100 Truck Wheels service centres and more than 700 Pit Shops. These networks take decades to build.",
                 },
                 {
                     label: 'Lasting but narrow: specialist products',
-                    text: "**CEAT** fits about a quarter of new electric cars and electric two-wheelers, which need quieter, lower-resistance tyres; the replacements follow. **Apollo**'s Vredestein brand holds real know-how in European all-season tyres. **JK**'s smart-tyre sensors help it keep truck fleets.",
+                    text: "**CEAT** fits about a quarter of new electric cars and electric two-wheelers, which need quieter, lower-resistance tyres; the replacements follow. **Apollo**'s Vredestein brand holds real know-how in European all-season tyres, and high-performance tyres are roughly 40%-plus of its European sales (a rough estimate on the call). **JK**'s smart-tyre sensors help it keep truck fleets. These edges are real but cover only part of each company's sales.",
                 },
                 {
                     label: 'Wearing: pricing power in a cost shock',
-                    text: "None of the three could pass on this year's rubber spike in time. Costs rose 16–20% in a quarter; price increases of 7–11% followed, and each says another 4–8% is needed. Competitors raised prices by similar amounts, which is what keeps the industry's margins recovering, but always late.",
+                    text: "None of the three could pass on this year's rubber spike in time. Costs rose 16–20% in a quarter; price increases of 7–11% followed, and each says another 4–6% is needed. Apollo's rule of thumb is that prices must rise by about two-thirds of the raw-material rise. Competitors raised prices by similar amounts, which is what keeps the industry's margins recovering, but always late. **The other side of this: CEAT says it will hold prices when rubber falls until margins are back to normal, and that the industry has usually done so.**",
                 },
                 {
                     label: 'Barely a moat: overseas plants',
-                    text: "**JK**'s Mexican unit (JK Tornel) lost 32% of its volume in a quarter to supply shortages and a labour slowdown. **CEAT**'s Camso business is losing money while it takes over customers from Michelin. **Apollo**'s Dutch plant had to close. Owning plants abroad has so far diluted returns.",
+                    text: "**JK**'s Mexican unit (JK Tornel) lost 32% of its volume in a quarter to supply shortages and a labour slowdown, and management says prices are harder to pass on in Mexico than in India. **CEAT**'s Camso business is losing money while it takes over customers from Michelin. **Apollo**'s Dutch plant had to close, and 20–25% of its European farm-tyre business is now bought in from two outside makers. Owning plants abroad has so far diluted returns.",
                 },
                 {
                     label: 'Competitors outside the list',
-                    text: "**MRF**, India's largest tyre maker, and **Balkrishna Industries** (off-highway tyres) are not in this group. **Bridgestone**, **Michelin** and **Goodyear** compete in cars and premium sizes; Chinese makers compete on price in trucks and abroad.",
+                    text: "**MRF**, India's largest tyre maker, and **Balkrishna Industries** (off-highway tyres) are not in this group. **Bridgestone**, **Michelin** and **Goodyear** compete in cars and premium sizes; Chinese makers compete on price in trucks and abroad. Imports are under 5% of Indian demand (ICRA), so at home the fight is mostly among Indian brands.",
                 },
             ],
         },
@@ -283,31 +294,43 @@ export const tyres: SectorOverview = {
             points: [
                 {
                     label: 'Structural: a mid-teens margin in a normal year',
-                    text: "In FY24–FY26, with rubber easing, all three earned 13–15% and returns of 14–20%. That is a fair picture of mid-cycle. **Apollo** has held the highest level (15% for most of the last year), helped by Europe and truck tyres.",
+                    text: "In FY24–FY26, with rubber easing, all three earned 13–15% and returns of 14–20%. That is a fair picture of mid-cycle, and it matches Crisil's 14.2% for the industry in FY26. **Apollo** has held the highest level (15% for most of the last year), helped by Europe and truck tyres. CEAT says its normal gross margin (sales minus materials) is 40–41%; Q1 was 33.9%.",
                 },
                 {
                     label: 'Cyclical: the rubber shock',
-                    text: "Q1 FY27 margins fell to 12% at Apollo, 8% at CEAT and 7% at JK as raw-material costs rose 16–20% in a quarter. Each management expects recovery in the second half as price increases catch up and, they hope, rubber eases after the monsoon. JK now targets 11–13% by H2.",
+                    text: "Q1 FY27 margins fell to 12% at Apollo, 8% at CEAT and 7% at JK as raw-material costs rose 16–20% in a quarter. Each management expects recovery in the second half as price increases catch up and, they hope, rubber eases after the monsoon. JK now targets 11–13% by H2 and about 10–11% for the full year. Apollo points out that tyre makers have always recorded their best margins when rubber starts to fall, which is the upside if prices hold.",
                 },
                 {
                     label: 'Not structural: one-off losses',
-                    text: "**CEAT**'s ₹48cr Sri Lankan-rupee loss (it is converting part of that loan into equity) and Camso's start-up losses. **Apollo**'s double-running costs in Europe while production moves from the Netherlands to Hungary. **JK**'s Mexico disruption. These should fade; the rubber cycle will not.",
+                    text: "**CEAT**'s ₹48cr Sri Lankan-rupee loss (it is converting part of that loan into equity) and Camso's start-up losses. **Apollo**'s double-running costs in Europe while production moves from the Netherlands to Hungary: its European margin was 8.9%, about 11% without the overlap, and it targets the high teens. **JK**'s Mexico disruption. These should fade; the rubber cycle will not.",
                 },
                 {
                     label: 'Working capital: the biggest drains',
-                    text: "**JK** tied up the most in stock and receivables relative to its size, and its net debt rose ₹500cr in Q1 alone to fund working capital and capex. **Apollo**'s cycle has lengthened from 54 to 93 days in four years.",
+                    text: "**JK** tied up the most in stock and receivables relative to its size: about ₹1,679cr over five years, with debtor days up from 60 to 72, and its net debt rose ₹500cr in Q1 alone to fund working capital and capex. **Apollo** absorbed about ₹2,256cr over five years on a larger base; its cycle lengthened from 54 to 93 days, mostly because it now pays suppliers faster (payable days fell from 104 to 76).",
                 },
                 {
                     label: 'Working capital: getting worse',
-                    text: "All three built rubber stock this year to protect supply; CEAT's debt rose ₹232cr in Q1 partly for that reason. Expect cash conversion to dip in FY27.",
+                    text: "All three built rubber stock this year to protect supply. CEAT's working capital rose ₹138cr in Q1 and its debt ₹232cr, partly for that reason, and it has tax credits building up on its GST account that it hopes to recover over two quarters. JK's working capital rose with both rubber and selling prices. Expect cash conversion to dip in FY27.",
                 },
                 {
                     label: 'Working capital: improving',
-                    text: "**CEAT** runs a negative cash cycle: its dealers pay faster than it pays suppliers, so growth releases cash. That is why it has converted 93% of five years' operating profit into cash.",
+                    text: "**CEAT** runs a negative cash cycle: it pays suppliers after about 132 days, while its stock and customer credit together take about 111 days, so growth releases cash. It released a small ₹62cr over five years while the others absorbed thousands of crores. That is why it has converted 93% of five years' operating profit into cash.",
                 },
                 {
                     label: 'Working capital: built into the business',
                     text: "Tyre makers hold a month or two of rubber and finished tyres and give dealers credit; carmakers pay on their own terms. **Judge each against its own history, not against the others.**",
+                },
+            ],
+            tables: [
+                {
+                    caption: 'Q1 FY27 cash and capital, as stated on the calls',
+                    columns: ['Company', 'What management said', 'Balance sheet'],
+                    rows: [
+                        ['Apollo Tyres', 'Net debt about ₹1,700cr, 0.4x operating profit; Q1 capex ₹650cr (₹500cr in India); expects to be a net borrower this year', 'Net debt ₹2,631cr at March'],
+                        ['CEAT', 'Debt ₹3,243cr, up ₹232cr on extra rubber stock; 1.6x operating profit; Q1 capex ₹293cr; $24.5m of the Sri Lankan loan to become equity; AA rating reaffirmed', 'Net debt ₹3,229cr at March'],
+                        ['JK Tyre & Indust', 'Net debt ₹4,945cr, up ₹500cr in the quarter; 2.56x operating profit; another ₹500–700cr of borrowing expected in FY27', 'Net debt ₹4,581cr at March'],
+                    ],
+                    note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. The March figures (Screener) include lease liabilities, so they differ from the companies’ own definitions.',
                 },
             ],
         },
@@ -319,27 +342,27 @@ export const tyres: SectorOverview = {
             points: [
                 {
                     label: 'Growth driver: more vehicles on the road',
-                    text: "Replacement demand grows with the vehicle fleet and freight, steadily and without much help from anyone. Q1 replacement volumes grew 13% at Apollo and mid-teens at CEAT; JK's truck replacement grew 15%.",
+                    text: "Replacement demand grows with the vehicle fleet and freight, steadily and without much help from anyone. Q1 replacement volumes grew 13% at Apollo and mid-teens at CEAT; JK's truck replacement grew 15%. Carmaker demand added more: JK's carmaker volumes rose 42% and its farm tyres 31%.",
                 },
                 {
                     label: 'Growth driver: premium sizes and electric vehicles',
-                    text: "Bigger rims and EV tyres earn more per tyre. **CEAT**'s 17-inch-plus replacement volumes doubled; **JK**'s 16-inch-plus sizes are 35% of its car tyres. EV tyres also wear out 5–10% faster, which speeds up replacement.",
+                    text: "Bigger rims and EV tyres earn more per tyre. **CEAT**'s 17-inch-plus replacement volumes doubled; **JK**'s 16-inch-plus sizes are 35% of its car tyres; **Apollo** won carmaker approvals on several EV platforms. EV tyres also wear out 5–10% faster (JK), which speeds up replacement.",
                 },
                 {
                     label: 'Growth driver: new capacity',
-                    text: "**Apollo** guided to more than ₹3,000cr of capex this year (₹650cr in Q1) for car-tyre capacity in Hungary and Andhra Pradesh. **JK** has committed ₹4,980cr to add 24% capacity at Chennai by FY29, 7% of it this year. **CEAT** spends ₹1,300–1,400cr this year and has approved ₹1,205cr more for two-wheeler tyres through FY31. All three say their Indian plants are 90–95% full, so this capacity has demand behind it today.",
+                    text: "**Apollo** guided to more than ₹3,000cr of capex this year (₹650cr in Q1) for car-tyre capacity in Hungary and Andhra Pradesh. **JK** has committed ₹4,980cr to add 24% capacity at Chennai by FY29, 7% of it this year. **CEAT** spends ₹1,300–1,400cr this year and has approved ₹1,205cr more for 53,000 two-wheeler tyres a day through FY31. All three say their Indian plants are 90–95% full, so this capacity has demand behind it today. Crisil counts about ₹18,000cr of spending at the six largest makers over FY27–FY28, nearly twice the previous two years.",
                 },
                 {
                     label: 'Growth driver: exports and off-highway tyres',
-                    text: "**CEAT**'s international sales grew about 30% and it is taking over Camso's customers directly (90% by September 2026). **Apollo** benefits from European duties on Chinese tyres. Off-highway and farm tyres earn more but depend on a few export markets.",
+                    text: "**CEAT**'s international sales grew about 30% and it is taking over Camso's customers directly (90% by September 2026); Camso runs at about $120m a year at customer prices. **Apollo** benefits from European duties on Chinese tyres, though its Middle East and US exports are behind plan. Off-highway and farm tyres earn more but depend on a few export markets.",
                 },
                 {
                     label: 'Delivering or beating',
-                    text: "**Apollo** closed its Dutch plant on schedule in June 2026 and delivered its strongest Indian growth in 14 quarters. **CEAT** delivered the 10% price increase it promised and is on schedule with Camso's integration.",
+                    text: "**Apollo** closed its Dutch plant on schedule in June 2026 and delivered its strongest Indian growth in 14 quarters. **CEAT** delivered the 10% price increase it promised (11% by July) and is on schedule with Camso's integration. **JK** kept its promise of full Indian plants (95%).",
                 },
                 {
                     label: 'Cautious',
-                    text: "All three moved margin recovery to the second half of FY27 and expect another 8–10% cost rise in Q2.",
+                    text: "All three moved margin recovery to the second half of FY27 and expect another 8–10% cost rise in Q2. JK guides 10–11% revenue growth and a full-year margin of about 10–11%, below FY26. CEAT expects demand to moderate a little in Q2.",
                 },
                 {
                     label: 'Missed',
@@ -347,7 +370,7 @@ export const tyres: SectorOverview = {
                 },
                 {
                     label: 'Mixed',
-                    text: "**Apollo**'s CFO of 22 years resigned without explanation, and its managing director missed the Q1 call.",
+                    text: "**Apollo**'s CFO of 22 years resigned without explanation, and its managing director missed the Q1 call. Its European margin fell to 8.9% during the move to Hungary, and 20–25% of its European farm-tyre business now depends on outside makers.",
                 },
                 {
                     label: 'My outlook',
@@ -366,29 +389,43 @@ export const tyres: SectorOverview = {
                     ],
                     note: 'My own judgement, not guidance. The growth each price needs is in the live valuation table in section 8.',
                 },
+                {
+                    caption: 'Guidance, capex and track record',
+                    badgeColumn: 3,
+                    columns: ['Company', 'Guidance', 'Capex', 'Track record'],
+                    rows: [
+                        ['Apollo Tyres', 'No revenue target; Europe back to high-teens margin after the move; 15–16% total price rise needed (11%-plus taken)', 'More than ₹3,000cr in FY27 (₹650cr in Q1); Hungary +4,000 car tyres a day in H2, Andhra Pradesh twice that from late FY27', '**Delivered**: Dutch plant closed on time'],
+                        ['CEAT', '4–6% more price rises needed; all Camso customers moved by Q2; full Camso value chain in FY28', '₹1,300–1,400cr in FY27 (₹293cr in Q1); ₹1,205cr for two-wheeler tyres through FY31', '**Mixed**: price rise delivered, Camso loss-making'],
+                        ['JK Tyre & Indust', 'Revenue +10–11%; margin about 10–11% for FY27, 11–13% in H2; debt up ₹500–700cr', '₹4,980cr for 24% more capacity by FY29, about 7% this year', '**Missed**: costs rose 20% against 8–10% forecast; Mexico −32%'],
+                    ],
+                },
             ],
         },
         {
             heading: '7. Risk factors',
             body: [
-                "The risks fall into four groups. For each, what management addressed and what it left unanswered.",
+                "The risks fall into five groups. For each, what management addressed and what it left unanswered.",
             ],
             points: [
                 {
                     label: 'Rubber stays dear',
-                    text: "Every management is counting on rubber easing after the monsoon. If it does not, the further 4–8% price increases each says it needs will test demand. Natural rubber hit ₹280 a kilo this year, a 15-year high by CEAT's account.",
+                    text: "Every management is counting on rubber easing after the monsoon: **Apollo** expects it to cool from Q3, and **JK** says Indian prices have started to soften. If they do not, the further 4–6% price increases each says it needs will test demand. Natural rubber hit ₹280 a kilo this year, the highest in 15 years by **CEAT**'s account, and Q2 rubber is already bought at those prices. None said how far margins would fall if rubber stays there.",
                 },
                 {
                     label: 'Capacity arriving together',
-                    text: "All three are adding capacity for FY28–FY29. If the truck cycle turns as the lines start, prices and returns fall together. None of them has said what return it expects on the new plants.",
+                    text: "**Apollo**, **JK** and **CEAT** are all adding capacity for FY28–FY29, and Crisil counts about ₹18,000cr across the six largest makers in two years. Crisil thinks phased start-ups and steady demand limit the risk of too much capacity. But if the truck cycle turns as the lines start, prices and returns fall together. None of them has said what return it expects on the new plants.",
                 },
                 {
                     label: 'Debt and currency',
-                    text: "**JK**'s net debt is about ₹4,900cr and management expects it to rise by another ₹500–700cr this year. **CEAT** lost ₹48cr on a Sri Lankan-rupee loan in one quarter. A weaker rupee raises the cost of imported rubber and chemicals for all three.",
+                    text: "**JK**'s net debt is about ₹4,900cr and management expects it to rise by another ₹500–700cr this year. **CEAT** lost ₹48cr on a Sri Lankan-rupee loan in one quarter as that currency fell from about 312–315 to 335 to the dollar; about $56m of the loan stays after the equity conversion, so the risk shrinks but does not go away. **Apollo** will turn net borrower this year. A weaker rupee (93–94 to about 96.50 in Q1) raises the cost of imported rubber and chemicals for all three.",
                 },
                 {
-                    label: 'People and plants abroad',
-                    text: "**Apollo**'s CFO left after 22 years without an explanation. **JK**'s Mexican unit faces labour and supply problems and a review of the US–Mexico–Canada trade agreement. **CEAT**'s Camso integration runs to FY28.",
+                    label: 'People, owners and plants abroad',
+                    text: "**Apollo**'s CFO left after 22 years without an explanation. **JK**'s Mexican unit faced labour and supply problems; management says both are resolved and that the US–Mexico–Canada trade agreement has been renewed for 10 years, but Mexico still has to prove it. **JK**'s promoters hold 51.7%, down from 56.3% in September 2023, while **Apollo**'s (36.9%) and **CEAT**'s (47.3%) are steady. **CEAT**'s Camso integration runs to FY28.",
+                },
+                {
+                    label: 'Demand after steep price rises',
+                    text: "Tyre prices are rising 15%-plus in a few months, far faster than usual. **CEAT** expects truck replacement demand to grow only mid-single digits and flags a weak monsoon as a risk to rural sales; **Apollo**'s exports to the Middle East and the US are behind plan. Crisil expects industry volumes to slow to 4–5% in FY27 from 7–8%. If buyers push back, volumes fall just as the new plants need them.",
                 },
             ],
         },
@@ -401,15 +438,23 @@ export const tyres: SectorOverview = {
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "All three carry net debt. **JK**'s is the largest relative to profit, so it is dearer than its P/E suggests; **Apollo**'s is the smallest.",
+                    text: "All three carry net debt. On P/E, **CEAT** (about 22x) looks far dearer than **JK** (about 14x) and **Apollo** (about 12x). On EV/EBITDA the gap narrows to 8.4x, 7.9x and 6.9x, because **JK**'s ₹4,581cr of net debt is 2.4 times its operating profit against 0.6 times at Apollo. **JK** is dearer than its P/E suggests; **Apollo** is the cheapest on both.",
                 },
                 {
                     label: 'Reasonable',
-                    text: "**Apollo** and **JK Tyre**: prices that ask for less growth than a normal cycle delivers. For JK, the debt is the reason it is cheap.",
+                    text: "**Apollo** and **JK Tyre**. Apollo's price asks for about 8% a year against my 10%; JK's for about 9–10% against my 8%, close enough to count as fair. For JK, the debt is the reason it is cheap.",
                 },
                 {
                     label: 'Full',
-                    text: "**CEAT**: a little ahead of my estimate, for the best cash converter and the strongest position in two-wheelers and EVs.",
+                    text: "**CEAT**: the price asks for about 14% a year against my 12%, a little ahead of my estimate, for the best cash converter and the strongest position in two-wheelers and EVs.",
+                },
+                {
+                    label: 'Stretched',
+                    text: "None of the three. Tyre shares are 23–43% below their 52-week highs after the rubber shock.",
+                },
+                {
+                    label: 'Cheap for a reason: trailing profit is about to fall',
+                    text: "The P/E uses the last four quarters, three of which earned 13–15% margins. If FY27 margins average 10–12%, as JK and Crisil expect, trailing profit will fall and **today's P/Es will look higher next year even if prices stay put**. That is why I lean on the balance sheet and the cycle rather than the headline P/E.",
                 },
             ],
             embed: 'valuation',
@@ -452,5 +497,10 @@ export const tyres: SectorOverview = {
     sources: [
         { label: 'Filed quarterly results, annual ratios and cash flows — Screener.in', url: 'https://www.screener.in/company/APOLLOTYRE/consolidated/' },
         { label: 'Wholesale price index, natural rubber — Office of the Economic Adviser, Government of India', url: 'https://eaindustry.nic.in/' },
+        { label: 'Tyre makers’ operating margins to moderate in FY27: Crisil — Autocar Professional (Aug 2026)', url: 'https://www.autocarpro.in/news/tyre-makers-operating-margins-to-moderate-in-fy27-crisil-134248' },
+        { label: 'Tyre makers’ margins to fall to 12% as raw material costs outpace price hikes; ₹18,000cr of capex over two years: Crisil — Upstox (Aug 2026)', url: 'https://upstox.com/news/business-news/latest-updates/tyre-makers-margins-to-fall-to-12-as-raw-material-costs-outpace-price-hikes-crisil/article-199158/' },
+        { label: 'Indian tyre industry: sharp spike in crude prices to exert pressure on margins in FY2027 — ICRA (Mar 2026)', url: 'https://www.icra.in/Rating/DownloadResearchSummaryReport?id=6873' },
+        { label: 'Top Indian tyre makers line up over ₹7,500 crore capex for FY27 — Autocar Professional (Jun 2026)', url: 'https://www.autocarpro.in/news/tyre-makers-line-up-fresh-capex-as-capacity-nears-peak-despite-cost-shock-133027' },
+        { label: 'Commission imposes anti-dumping duties on passenger car and light lorry tyres from China — European Commission (Jul 2026)', url: 'https://policy.trade.ec.europa.eu/news/commission-imposes-anti-dumping-duties-passenger-car-and-light-lorry-tyres-china-2026-07-09_en' },
     ],
 };
