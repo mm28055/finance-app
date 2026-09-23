@@ -180,7 +180,7 @@ function cellColour(v: number, s: MetricSeries, stats: { min: number; max: numbe
     if (s.scale === 'diverging') {
         if (stats.maxAbs === 0 || Math.abs(v) < stats.maxAbs * 0.04) return { bg: MID, dark: false };
         const t = Math.min(1, Math.abs(v) / stats.maxAbs);
-        if (v < 0) {
+        if (s.invert ? v > 0 : v < 0) {
             const i = Math.min(RED.length - 1, Math.floor(t * RED.length));
             return { bg: RED[i], dark: i >= RED.length - 1 };
         }
@@ -197,6 +197,7 @@ function fmtMetric(v: number, unit: MetricSeries['unit']) {
     const n = Number.isInteger(v) ? v.toString() : v.toFixed(1);
     if (unit === '%') return `${n}%`;
     if (unit === 'cr') return Math.abs(v) >= 1000 ? `${(v / 1000).toFixed(1)}k` : `${Math.round(v)}`;
+    if (unit === 'x') return `${v.toFixed(1)}x`;
     return `${Math.round(v)}`;
 }
 
@@ -362,11 +363,11 @@ export function MetricsGrid({ series, verdicts, labels }: {
                 <div className="flex items-center gap-1.5">
                     {s.scale === 'diverging' ? (
                         <>
-                            <span>Shrinking</span>
+                            <span>{s.legend?.[0] ?? 'Shrinking'}</span>
                             {[...RED].reverse().map(c => <span key={c} className="w-3.5 h-2.5 rounded-[2px]" style={{ background: c }} />)}
                             <span className="w-3.5 h-2.5 rounded-[2px]" style={{ background: MID }} />
                             {BLUE.map(c => <span key={c} className="w-3.5 h-2.5 rounded-[2px]" style={{ background: c }} />)}
-                            <span>Growing</span>
+                            <span>{s.legend?.[1] ?? 'Growing'}</span>
                         </>
                     ) : (
                         <>

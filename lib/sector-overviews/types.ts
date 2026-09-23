@@ -138,13 +138,17 @@ export interface CompanyVerdict {
 export interface MetricSeries {
     key: string;
     label: string;
-    unit: '%' | 'cr' | 'days';
+    unit: '%' | 'cr' | 'days' | 'x';
     /** Column labels, oldest first — "Q1 FY26" or "FY24". */
     periods: string[];
     /** `sequential` shades by size; `diverging` centres on zero (growth rates). */
     scale: 'sequential' | 'diverging';
     /** Shown beside the legend so a reader knows which direction is good. */
     lowerIsBetter?: boolean;
+    /** Diverging scales: colour negatives blue and positives red (e.g. net debt, where below zero means net cash). */
+    invert?: boolean;
+    /** Diverging scales: words at the two ends of the legend, red end first. Defaults to Shrinking / Growing. */
+    legend?: [string, string];
     /** Where the figures come from. */
     source: string;
     /** Caveats specific to this metric, shown under the grid. */
@@ -199,6 +203,38 @@ export interface BusinessProfile {
     customers: string[];
     difficulty: { level: 'Very high' | 'High' | 'Medium' | 'Low'; text: string };
     moat: string;
+    /** What its sales depend on: demand drivers, volume vs price, order book, capacity, seasonality, concentration, policy. */
+    salesDrivers?: string[];
+    /** The main raw materials and bought-in parts, with their share of cost where known. */
+    inputs?: string;
+    /** How input prices reach the operating margin: pass-through, lag, rule of thumb, and what happened last time. */
+    costEffect?: string;
+    /** Named rivals and how the company compares. */
+    competitors?: { name: string; note: string }[];
+    /** Market share or rank, and capacity use. */
+    position?: string;
+    /** Debt or cash, planned spending, ownership, and whether it has raised equity. */
+    money?: string;
+    /** Two or three things that would change the story. */
+    watch?: string[];
+    /** Small charts drawn from filed figures. */
+    charts?: ProfileCharts;
+}
+
+/** Figures for the three charts on a company card; all from filings (Screener) or official price indices. */
+export interface ProfileCharts {
+    /** Where each ₹100 of sales goes in the latest year. */
+    costSplit?: { year: string; parts: MixPart[]; note?: string };
+    /** Quarterly operating margin against the price of the main input (index, first period = 100). */
+    marginVsInput?: {
+        input: string;
+        periods: string[];
+        margin: (number | null)[];
+        index: (number | null)[];
+        note?: string;
+    };
+    /** Operating profit, operating cash and free cash by year, ₹cr. */
+    profitVsCash?: { years: string[]; ebitda: (number | null)[]; ocf: (number | null)[]; fcf: (number | null)[]; note?: string };
 }
 
 export interface SectorOverview {
