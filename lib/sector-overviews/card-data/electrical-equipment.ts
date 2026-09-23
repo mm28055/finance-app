@@ -1,4 +1,4 @@
-import { ProfileCharts } from '../types';
+import { ProfileCharts, ValuationInput } from '../types';
 
 // Generated from filed figures (Screener) and the India wholesale price index. Do not edit by hand.
 export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
@@ -1939,5 +1939,87 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
             "inventory5y": -13,
             "payables5y": 2
         }
+    }
+};
+
+// Fixed valuation inputs as of the note date; market value and P/E are live on the page.
+export const electricalEquipmentValuationInputs: Record<string, ValuationInput> = {
+    "Elecon Engg.Co": {
+        "netDebt": -683,
+        "ttmEbitda": 502.0,
+        "mcapAtWriting": 10014.0,
+        "peAtWriting": 33.1
+    },
+    "TD Power Systems": {
+        "netDebt": -181,
+        "ttmEbitda": 383.0,
+        "mcapAtWriting": 24373.0,
+        "peAtWriting": 88.6
+    },
+    "Triveni Turbine": {
+        "netDebt": -546,
+        "ttmEbitda": 427.0,
+        "mcapAtWriting": 17637.0,
+        "peAtWriting": 50.8
+    },
+    "GE Power": {
+        "netDebt": -412,
+        "ttmEbitda": 304.0,
+        "mcapAtWriting": 4549.0,
+        "peAtWriting": 12.3
+    },
+    "Apar Inds.": {
+        "netDebt": 224,
+        "ttmEbitda": 2171.0,
+        "mcapAtWriting": 76832.0,
+        "peAtWriting": 63.7
+    },
+    "Genus Power": {
+        "netDebt": 1580,
+        "ttmEbitda": 973.0,
+        "mcapAtWriting": 9483.0,
+        "peAtWriting": 14.5
+    },
+    "Salzer Electronics": {
+        "netDebt": 525,
+        "ttmEbitda": 137.0,
+        "mcapAtWriting": 978.0,
+        "peAtWriting": 22.4
+    },
+    "RMC Switchgears": {
+        "netDebt": 92,
+        "ttmEbitda": 29.7,
+        "mcapAtWriting": 241.0,
+        "peAtWriting": 11.8
+    },
+    "Inox Wind": {
+        "netDebt": 975,
+        "ttmEbitda": 861.0,
+        "mcapAtWriting": 13423.0,
+        "peAtWriting": 39.0
+    },
+    "KP Green Engg.": {
+        "netDebt": 340,
+        "ttmEbitda": 245.0,
+        "mcapAtWriting": 1490.0,
+        "peAtWriting": 11.0
+    },
+    "Exicom Tele-Sys.": {
+        "netDebt": 649,
+        "ttmEbitda": -87.0,
+        "mcapAtWriting": 2277.0,
+        "peAtWriting": null
+    },
+    "Servotech Renew": {
+        "netDebt": 140,
+        "ttmEbitda": 77.0,
+        "mcapAtWriting": 1596.0,
+        "peAtWriting": 42.6
+    },
+    "RIR Power Electr": {
+        "netDebt": -6,
+        "ttmEbitda": 10.2,
+        "mcapAtWriting": 1525.0,
+        "peAtWriting": 214.0
     }
 };

@@ -5,8 +5,9 @@
  * is to make, and why customers stay. Grouped by segment in ranking order.
  */
 import React from 'react';
-import { BusinessProfile, CompanyVerdict, MixPart, ProfileCharts, STANCE_CONFIG } from '@/lib/sector-overviews';
-import { RichText, StancePill, byRank } from './SectorOverviewBlocks';
+import { BusinessProfile, CompanyVerdict, LiveValuation, MixPart, MOVE_FLAG, ProfileCharts, STANCE_CONFIG, ValuationBlock, liveValuation } from '@/lib/sector-overviews';
+import { PriceCheckBadge, RichText, StancePill, byRank } from './SectorOverviewBlocks';
+import type { EnrichedCompany } from './SectorList';
 
 // Categorical slices for a stacked bar, dark to light so adjacent parts separate.
 const SLICE = ['#184f95', '#3987e5', '#6da7ec', '#9ec5f4', '#cde2fb', '#94a3b8', '#cbd5e1', '#e2e8f0'];
@@ -274,8 +275,15 @@ function ProfitVsCash({ data }: { data: NonNullable<ProfileCharts['profitVsCash'
     );
 }
 
-function ProfileCard({ p, verdict }: { p: BusinessProfile; verdict?: CompanyVerdict }) {
-    const stats = p.charts?.stats;
+function ProfileCard({ p, verdict, lv, writtenOn }: { p: BusinessProfile; verdict?: CompanyVerdict; lv?: LiveValuation | null; writtenOn?: string }) {
+    // P/E and EV/EBITDA follow today's price; the other key numbers come from the latest filed results.
+    const stats = p.charts?.stats?.map(s => {
+        if (!lv) return s;
+        if (s.label === 'P/E') return { ...s, label: 'P/E (live)', value: lv.pe === null ? 'Loss-making' : `${lv.pe.toFixed(1)}x` };
+        if (s.label === 'EV/EBITDA') return { ...s, label: 'EV/EBITDA (live)', value: lv.evEbitda === null ? 'n/m' : `${lv.evEbitda.toFixed(1)}x` };
+        return s;
+    });
+    const moved = lv?.moved ?? null;
     const hasCharts = !!(p.charts && (p.charts.costSplit || p.charts.marginVsInput || p.charts.profitVsCash));
     return (
         <article
@@ -310,8 +318,22 @@ function ProfileCard({ p, verdict }: { p: BusinessProfile; verdict?: CompanyVerd
                             <div className="text-[13px] font-semibold text-gray-800 tabular-nums leading-snug">{s.value}</div>
                         </div>
                     ))}
-                    {p.charts?.statsAsOf && <div className="self-end text-[9.5px] text-gray-400 pb-1">as of {p.charts.statsAsOf}</div>}
+                    {lv && lv.needed !== null && (
+                        <div title="Earnings growth a year the live price needs, against my own estimate" className="border border-gray-200 rounded-md px-2 py-1 bg-white min-w-[92px]">
+                            <div className="text-[9.5px] text-gray-400 uppercase tracking-wide leading-tight">Price needs / I expect</div>
+                            <div className="text-[13px] font-semibold text-gray-800 tabular-nums leading-snug flex items-center gap-1.5">
+                                {Math.round(lv.needed)}% / {lv.mine === null ? '—' : `${Math.round(lv.mine)}%`}
+                                <PriceCheckBadge check={lv.check} />
+                            </div>
+                        </div>
+                    )}
+                    {p.charts?.statsAsOf && <div className="self-end text-[9.5px] text-gray-400 pb-1">other figures as of {p.charts.statsAsOf}</div>}
                 </div>
+            )}
+            {moved !== null && Math.abs(moved) > MOVE_FLAG && (
+                <p className="mt-1.5 text-[11px] text-[#9A5B00]">
+                    The price has moved {moved >= 0 ? 'up' : 'down'} {Math.abs(Math.round(moved * 100))}% since this note was written{writtenOn ? ` (${writtenOn})` : ''}; the verdict may need a fresh look.
+                </p>
             )}
 
             {/* Layer 2: what it sells, where the money comes from, and the charts */}
@@ -433,9 +455,12 @@ function ProfileCard({ p, verdict }: { p: BusinessProfile; verdict?: CompanyVerd
     );
 }
 
-export function BusinessProfiles({ profiles, verdicts }: {
+export function BusinessProfiles({ profiles, verdicts, valuation, byName }: {
     profiles: BusinessProfile[];
     verdicts: CompanyVerdict[];
+    /** Fixed valuation inputs; with `byName`, the cards show live P/E, EV/EBITDA and a price check. */
+    valuation?: ValuationBlock;
+    byName?: Map<string, EnrichedCompany>;
 }) {
     const byCompany = new Map(profiles.map(p => [p.company, p]));
     const verdictOf = new Map(verdicts.map(v => [v.company, v]));
@@ -474,7 +499,15 @@ export function BusinessProfiles({ profiles, verdicts }: {
                 <div key={g.segment}>
                     <div className="text-[10.5px] font-semibold uppercase tracking-wide text-[#6B9FCC] mb-2">{g.segment}</div>
                     <div className="grid gap-3 lg:grid-cols-2 items-start">
-                        {g.rows.map(p => <ProfileCard key={p.company} p={p} verdict={verdictOf.get(p.company)} />)}
+                        {g.rows.map(p => (
+                            <ProfileCard
+                                key={p.company}
+                                p={p}
+                                verdict={verdictOf.get(p.company)}
+                                lv={liveValuation(p.company, valuation, byName?.get(p.company.trim().toLowerCase()))}
+                                writtenOn={valuation?.writtenOn}
+                            />
+                        ))}
                     </div>
                 </div>
             ))}

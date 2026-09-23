@@ -86,7 +86,30 @@ export const STANCE_CONFIG: Record<Stance, { label: string; blurb: string; pill:
  *  - `moat`      the comparative grading table built from `moat`
  *  - `scatter`   return on capital against P/E, from live figures
  */
-export type SectionEmbed = 'ranking' | 'metrics' | 'snapshots' | 'moat' | 'scatter';
+export type SectionEmbed = 'ranking' | 'metrics' | 'snapshots' | 'moat' | 'scatter' | 'valuation';
+
+/**
+ * What the live valuation needs besides today's price. Balance-sheet and profit figures change only
+ * with new results, so they are fixed in the note and refreshed each quarter; market value and P/E
+ * come from the live company record.
+ */
+export interface ValuationInput {
+    /** Borrowings (incl. leases) minus cash, ₹cr; negative = net cash. */
+    netDebt: number | null;
+    /** Operating profit over the last four quarters (or two half-years), ₹cr. */
+    ttmEbitda: number | null;
+    /** Market value and P/E on the day the note was written, to flag big moves since. */
+    mcapAtWriting: number | null;
+    peAtWriting: number | null;
+}
+
+export interface ValuationBlock {
+    /** Date the fixed inputs and the written verdicts were set, e.g. "23 Sep 2026". */
+    writtenOn: string;
+    inputs: Record<string, ValuationInput>;
+    /** My base-case earnings growth, % a year, 3–5 years. The judgement part; not live. */
+    myGrowth: Record<string, number | null>;
+}
 
 /** A plain comparison table. Cells honour `**bold**`; the first column is the row label. */
 export interface DataTable {
@@ -294,6 +317,8 @@ export interface SectorOverview {
     moat?: { sources: MoatSource[]; rows: MoatRow[] };
     /** Open Tab 1 with the margin bar chart and the quality-vs-price chart, as the older notes do. */
     leadCharts?: boolean;
+    /** Inputs for the live valuation table (`embed: 'valuation'`) and the live numbers on company cards. */
+    valuation?: ValuationBlock;
     /** Show the moat grid as letters only; the reasons live in the business tab. */
     moatCompact?: boolean;
     /**

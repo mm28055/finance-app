@@ -12,8 +12,12 @@ import {
     MoatGrade,
     MoatRow,
     MoatSource,
+    MOVE_FLAG,
+    PriceCheck,
     Stance,
     STANCE_CONFIG,
+    ValuationBlock,
+    liveValuation,
 } from '@/lib/sector-overviews';
 import { EnrichedCompany } from './SectorList';
 
@@ -149,6 +153,91 @@ export function DataTableView({ table }: { table: DataTable }) {
                 </div>
             )}
             {table.note && <p className="text-[10px] text-gray-400 mt-1.5 leading-relaxed">{table.note}</p>}
+        </div>
+    );
+}
+
+// ── Live valuation ───────────────────────────────────────────────────────────
+
+const CHECK_TONE: Record<PriceCheck, string> = {
+    Fits: 'bg-[#E3F4EA] text-[#1E7B45] border-[#BFE3CD]',
+    Full: 'bg-[#FFF4E0] text-[#9A5B00] border-[#F5DDB0]',
+    Stretched: 'bg-[#FDECEC] text-[#B42323] border-[#F5C6C6]',
+    'n/a': 'bg-gray-50 text-gray-500 border-gray-200',
+};
+
+export function PriceCheckBadge({ check }: { check: PriceCheck }) {
+    return (
+        <span className={`inline-block px-1.5 py-[1px] rounded border text-[10px] font-semibold whitespace-nowrap ${CHECK_TONE[check]}`}>
+            {check === 'n/a' ? 'No estimate' : `Price ${check.toLowerCase()}`}
+        </span>
+    );
+}
+
+const x1 = (v: number | null) => (v === null ? '—' : `${v.toFixed(1)}x`);
+const pct0 = (v: number | null) => (v === null ? '—' : `${Math.round(v)}%`);
+
+/**
+ * The valuation table, recomputed from today's market value and P/E each time the page loads.
+ * Net debt and trailing operating profit are the note's fixed inputs; my growth estimate is the
+ * written judgement. A company whose value has moved more than 15% since the note is flagged.
+ */
+export function LiveValuationTable({ verdicts, byName, block, labels }: {
+    verdicts: CompanyVerdict[];
+    byName: Map<string, EnrichedCompany>;
+    block: ValuationBlock;
+    labels: Map<string, string>;
+}) {
+    const rows = byRank(verdicts).map(v => ({
+        v,
+        lv: liveValuation(v.company, block, byName.get(v.company.trim().toLowerCase())),
+    })).filter(r => r.lv);
+    const flagged = rows.filter(r => r.lv!.moved !== null && Math.abs(r.lv!.moved) > MOVE_FLAG);
+    const cols = ['Company', 'Price check', 'P/E', 'EV/EBITDA', 'Growth the price needs', 'My growth estimate', 'Net debt ÷ EBITDA', 'Price since note'];
+    return (
+        <div className="mt-3">
+            <div className="text-[10px] font-semibold text-gray-600 uppercase tracking-wide mb-1.5">What today’s price assumes (live)</div>
+            <div className="overflow-x-auto border border-gray-200 rounded-lg">
+                <table className="w-full text-[11.5px] border-collapse">
+                    <thead>
+                        <tr className="bg-[#F4F6F8]">
+                            {cols.map((c, i) => (
+                                <th key={c} className={`font-semibold text-gray-600 px-2.5 py-1.5 border-b border-gray-200 align-bottom ${i >= 2 ? 'text-right min-w-[72px]' : 'text-left'} ${i === 0 ? 'sticky left-0 bg-[#F4F6F8] min-w-[120px]' : ''}`}>{c}</th>
+                            ))}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {rows.map(({ v, lv }, ri) => {
+                            const zebra = ri % 2 === 1 ? 'bg-[#FAFBFC]' : 'bg-white';
+                            const moved = lv!.moved;
+                            const big = moved !== null && Math.abs(moved) > MOVE_FLAG;
+                            const nd = lv!.netDebtToEbitda;
+                            return (
+                                <tr key={v.company} className={`border-b border-gray-100 last:border-0 ${zebra}`}>
+                                    <td className={`px-2.5 py-1.5 sticky left-0 ${zebra} font-semibold text-gray-800 whitespace-nowrap`}>{labels.get(v.company) ?? v.company}</td>
+                                    <td className="px-2.5 py-1.5"><PriceCheckBadge check={lv!.check} /></td>
+                                    <td className="px-2.5 py-1.5 text-right tabular-nums text-gray-700">{lv!.pe === null ? 'loss' : x1(lv!.pe)}</td>
+                                    <td className="px-2.5 py-1.5 text-right tabular-nums text-gray-700">{x1(lv!.evEbitda)}</td>
+                                    <td className="px-2.5 py-1.5 text-right tabular-nums text-gray-700">{pct0(lv!.needed)}</td>
+                                    <td className="px-2.5 py-1.5 text-right tabular-nums font-semibold text-gray-800">{pct0(lv!.mine)}</td>
+                                    <td className="px-2.5 py-1.5 text-right tabular-nums text-gray-700">{nd === null ? '—' : nd < 0 ? 'net cash' : x1(nd)}</td>
+                                    <td className={`px-2.5 py-1.5 text-right tabular-nums ${big ? 'font-semibold text-[#9A5B00]' : 'text-gray-500'}`}>
+                                        {moved === null ? '—' : Math.round(moved * 100) === 0 ? '0%' : `${moved > 0 ? '+' : '−'}${Math.abs(Math.round(moved * 100))}%`}
+                                    </td>
+                                </tr>
+                            );
+                        })}
+                    </tbody>
+                </table>
+            </div>
+            {flagged.length > 0 && (
+                <p className="text-[11px] text-[#9A5B00] mt-1.5">
+                    Price has moved more than 15% since this note was written ({block.writtenOn}) for {flagged.map(r => labels.get(r.v.company) ?? r.v.company).join(', ')}. The written verdict may need a fresh look.
+                </p>
+            )}
+            <p className="text-[10px] text-gray-400 mt-1.5 leading-relaxed">
+                P/E and market value are live. EV/EBITDA = live market value plus net debt, ÷ operating profit over the last four quarters. Net debt and operating profit are from the latest filed results as of {block.writtenOn} and are refreshed each quarter. Growth the price needs: earnings growth a year for the price to earn about 12% a year while the P/E drifts to 18x over ten years. Price check judges the price only (cash and governance are in the text): green when my estimate is within two points of what the price needs or above it, amber up to six points short, red beyond. Loss-making companies get no P/E or check.
+            </p>
         </div>
     );
 }

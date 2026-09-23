@@ -1,5 +1,6 @@
 import { SectorOverview } from './types';
 import { electricalEquipmentBusinesses } from './electrical-equipment-businesses';
+import { electricalEquipmentValuationInputs } from './card-data/electrical-equipment';
 
 // Quarter and year columns used by every metric below.
 const Q = ['Q1 FY26', 'Q2 FY26', 'Q3 FY26', 'Q4 FY26', 'Q1 FY27'];
@@ -18,6 +19,26 @@ export const electricalEquipment: SectorOverview = {
     businesses: electricalEquipmentBusinesses,
     moatCompact: true,
     leadCharts: true,
+    valuation: {
+        writtenOn: '23 Sep 2026',
+        inputs: electricalEquipmentValuationInputs,
+        // My base-case earnings growth, % a year over three to five years (section 6).
+        myGrowth: {
+            'Elecon Engg.Co': 17,
+            'TD Power Systems': 28,
+            'Triveni Turbine': 16,
+            'GE Power': 8,
+            'Apar Inds.': 18,
+            'Genus Power': 20,
+            'Salzer Electronics': 15,
+            'RMC Switchgears': 5,
+            'Inox Wind': 20,
+            'KP Green Engg.': 25,
+            'Exicom Tele-Sys.': null,
+            'Servotech Renew': 15,
+            'RIR Power Electr': 30,
+        },
+    },
     standfirst:
         "Thirteen companies that make the hardware of electricity, from generators and steam turbines to conductors, smart meters, wind turbines and EV chargers. They share a tailwind (India's grid build-out and the global rush for power equipment) but not a business model. The engineered-machine makers earn high returns and collect their cash. Several of the grid and wind companies report strong profits that have not yet turned into cash. Every chart uses filed results and five years of history.",
     lastUpdated: '2026-09-23',
@@ -352,9 +373,9 @@ export const electricalEquipment: SectorOverview = {
         {
             heading: '1. Recommendation, up front',
             body: [
-                "**Elecon is the one I would own.** India's biggest industrial gearbox maker turns about three-quarters of its operating profit into cash, holds about ₹680cr of net cash, and earns 21–31% on capital. At 33x earnings, or 19x EV/EBITDA once its cash is counted, the price roughly matches the 17% a year I expect it to grow. Its margin has slipped from 24% to 21% as foreign rivals cut prices; that is the thing to watch.",
-                "**TD Power and Triveni are the quality names to follow, not chase.** TD Power is the purest play on the global shortage of power equipment: revenue grew 72% in Q1 with steady margins and contracts that pass on metal costs. But only about a third of its profit has become cash, it is raising equity, and 89x earnings needs about 31% growth a year for a decade. Triveni is a high-return, cash-rich turbine maker having a weak year; I would buy it on a lower price or a margin recovery.",
-                "**GE Power India is the cheap option, and Apar the expensive leader.** GE Power trades at 12x with net cash after finishing its turnaround, but its revenue has halved and its parent controls strategy. Apar has world-class scale and new US approvals, but at 64x while raising equity the price is ahead of my 18% growth estimate.",
+                "**Elecon is the one I would own.** India's biggest industrial gearbox maker turns about three-quarters of its operating profit into cash, holds about ₹680cr of net cash, and earns 21–31% on capital. Once its cash is counted, the price roughly matches the 17% a year I expect it to grow. Its margin has slipped from 24% to 21% as foreign rivals cut prices; that is the thing to watch.",
+                "**TD Power and Triveni are the quality names to follow, not chase.** TD Power is the purest play on the global shortage of power equipment: revenue grew 72% in Q1 with steady margins and contracts that pass on metal costs. But only about a third of its profit has become cash, it is raising equity, and its price needs close to 30% growth a year for a decade. Triveni is a high-return, cash-rich turbine maker having a weak year; I would buy it on a lower price or a margin recovery.",
+                "**GE Power India is the cheap option, and Apar the expensive leader.** GE Power trades on a low multiple with net cash after finishing its turnaround, but its revenue has halved and its parent controls strategy. Apar has world-class scale and new US approvals, but while it raises equity its price is well ahead of my 18% growth estimate.",
                 "**Two things to hold onto before reading the rest.** First, **profit and cash separate this sector.** The machine makers collect their cash; Genus, Inox Wind, KP Green and the power-electronics names report profits they have not collected. Second, **P/E misleads here.** Elecon, Triveni and GE Power hold net cash, so they are cheaper than their P/E suggests; Salzer and RMC carry 3–4 years of profit in debt, so they are dearer. I would avoid **RMC, Servotech and RIR**, and treat **Genus, KP Green, Inox Wind and Exicom** as unproven until their cash catches up with their profits.",
             ],
         },
@@ -522,24 +543,24 @@ export const electricalEquipment: SectorOverview = {
             tables: [
                 {
                     caption: 'My estimate of earnings growth over the next three to five years',
-                    numericColumns: [2, 3],
-                    columns: ['Company', 'What drives it', 'Earnings growth: low / base / high', 'Price needs'],
+                    numericColumns: [2],
+                    columns: ['Company', 'What drives it', 'Earnings growth: low / base / high'],
                     rows: [
-                        ['TD Power Systems', 'Global generator shortage; capacity to ₹4,000cr+', '20% / **28%** / 35%', '~31%'],
-                        ['Elecon Engg.Co', 'Gears for steel, cement, power, marine; exports', '12% / **17%** / 22%', '~19%'],
-                        ['Triveni Turbine', 'Exports, aftermarket, US combined-cycle', '10% / **16%** / 22%', '~24%'],
-                        ['Apar Inds.', 'Transmission build-out; US data-centre cables', '12% / **18%** / 24%', '~27%'],
-                        ['GE Power', 'Services on a shrinking fleet', '0% / **8%** / 15%', '~8%'],
-                        ['Genus Power', 'Meter installations, then O&M annuities', '10% / **20%** / 30%', '~10%'],
-                        ['KP Green Engg.', 'Towers, structures, galvanising', '10% / **25%** / 40%', '~7%'],
-                        ['Salzer Electronics', 'Switchgear and cables; margin recovery', '5% / **15%** / 22%', '~14%'],
-                        ['Inox Wind', 'Wind additions; equipment-supply model', '5% / **20%** / 35%', '~21%'],
-                        ['Servotech Renew', 'Batteries, rooftop solar, chargers', '5% / **15%** / 25%', '~22%'],
-                        ['RIR Power Electr', 'Thyristors; silicon-carbide plant', '10% / **30%** / 60%', '~43%'],
-                        ['RMC Switchgears', 'Utility EPC; PulseBox', '−10% / **5%** / 15%', '~7%'],
-                        ['Exicom Tele-Sys.', 'Telecom power; EV chargers; Tritium', 'Loss-making; no estimate', 'n/a'],
+                        ['TD Power Systems', 'Global generator shortage; capacity to ₹4,000cr+', '20% / **28%** / 35%'],
+                        ['Elecon Engg.Co', 'Gears for steel, cement, power, marine; exports', '12% / **17%** / 22%'],
+                        ['Triveni Turbine', 'Exports, aftermarket, US combined-cycle', '10% / **16%** / 22%'],
+                        ['Apar Inds.', 'Transmission build-out; US data-centre cables', '12% / **18%** / 24%'],
+                        ['GE Power', 'Services on a shrinking fleet', '0% / **8%** / 15%'],
+                        ['Genus Power', 'Meter installations, then O&M annuities', '10% / **20%** / 30%'],
+                        ['KP Green Engg.', 'Towers, structures, galvanising', '10% / **25%** / 40%'],
+                        ['Salzer Electronics', 'Switchgear and cables; margin recovery', '5% / **15%** / 22%'],
+                        ['Inox Wind', 'Wind additions; equipment-supply model', '5% / **20%** / 35%'],
+                        ['Servotech Renew', 'Batteries, rooftop solar, chargers', '5% / **15%** / 25%'],
+                        ['RIR Power Electr', 'Thyristors; silicon-carbide plant', '10% / **30%** / 60%'],
+                        ['RMC Switchgears', 'Utility EPC; PulseBox', '−10% / **5%** / 15%'],
+                        ['Exicom Tele-Sys.', 'Telecom power; EV chargers; Tritium', 'Loss-making; no estimate'],
                     ],
-                    note: 'My own judgement, not guidance. For Genus and KP Green the low P/E already allows for growth; the question is cash, not earnings.',
+                    note: 'My own judgement, not guidance. The growth each price needs is in the live valuation table in section 8.',
                 },
             ],
         },
@@ -591,38 +612,15 @@ export const electricalEquipment: SectorOverview = {
                     text: "**Genus** and **KP Green** need little growth, but neither has produced free cash over five years and both are borrowing to grow.",
                 },
                 {
-                    label: 'Full',
-                    text: "**TD Power, Triveni and Apar**: good businesses whose prices need more growth than I expect.",
+                    label: 'Full or stretched',
+                    text: "**TD Power, Triveni and Apar**: good businesses whose prices need more growth than I expect; the live table shows by how much.",
                 },
                 {
                     label: 'Stretched or speculative',
                     text: "**Inox Wind** (burning cash), **Servotech**, **RIR** (priced on a plant not yet running) and **Exicom** (loss-making). **RMC** looks cheap, but revenue just fell 56% and it carries debt.",
                 },
             ],
-            tables: [
-                {
-                    caption: 'What the price assumes',
-                    columns: ['Company', 'Verdict', 'P/E', 'EV/EBITDA', 'Net debt ÷ EBITDA', 'Growth the price needs', 'My growth estimate'],
-                    badgeColumn: 1,
-                    numericColumns: [2, 3, 4, 5, 6],
-                    rows: [
-                        ['Elecon Engg.Co', '**Reasonable**', '33.1', '18.6', 'net cash', '~19%', '~17%'],
-                        ['TD Power Systems', '**Full**', '88.6', '63.2', 'net cash', '~31%', '~28%'],
-                        ['Triveni Turbine', '**Full**', '50.8', '40.0', 'net cash', '~24%', '~16%'],
-                        ['Apar Inds.', '**Full**', '63.7', '35.5', '0.1', '~27%', '~18%'],
-                        ['GE Power', '**Reasonable**', '12.3', '13.6', 'net cash', '~8%', '~8%'],
-                        ['Genus Power', '**Cheap, cash-negative**', '14.5', '11.4', '1.6', '~10%', '~20%'],
-                        ['KP Green Engg.', '**Cheap, cash-negative**', '11.0', '7.5', '1.4', '~7%', '~25%'],
-                        ['Salzer Electronics', '**Fair, but indebted**', '22.4', '11.0', '3.8', '~14%', '~15%'],
-                        ['Inox Wind', '**Stretched on cash**', '39.0', '16.7', '1.1', '~21%', '~20%'],
-                        ['Exicom Tele-Sys.', '**Speculative**', 'loss', 'n/m', 'n/m', 'n/a', 'n/a'],
-                        ['Servotech Renew', '**Stretched**', '42.6', '22.5', '1.8', '~22%', '~15%'],
-                        ['RIR Power Electr', '**Speculative**', '214', '149', 'net cash', '~43%', '~30%'],
-                        ['RMC Switchgears', '**Cheap for a reason**', '11.8', '11.2', '3.1', '~7%', '~5%'],
-                    ],
-                    note: 'Green = reasonable, amber = full or mixed, red = stretched. Net debt in ₹cr and return on capital are on each company card (Tab 2) and in the chart tabs. P/E and market value from Screener on 23 September 2026. EV = market value + borrowings (including leases) − cash; mutual-fund investments counted as cash for Elecon and Triveni only. EBITDA = operating profit over the last four quarters (last two half-years for KP Green; FY26 for RMC). GE Power reports ₹880cr of cash including bank deposits, more than the Screener cash figure used here.',
-                },
-            ],
+            embed: 'valuation',
         },
     ],
 
@@ -630,37 +628,37 @@ export const electricalEquipment: SectorOverview = {
         {
             company: 'Elecon Engg.Co', rank: 1, stance: 'COMPOUNDER', segment: MACHINES,
             what: "India's leading industrial gearbox maker, plus material-handling equipment (conveyors, stackers, wagon tipplers), with assembly and sales companies in Europe, the UK, the US and Singapore.",
-            view: "**The best combination of quality and price here.** It turned 76% of operating profit into cash over five years, holds ₹700cr of net cash, and earns 21–31% on capital. The order book is up 37%. It guides only low double-digit growth this year but keeps a ₹5,000cr target for FY30. At 33x it needs ~19% against my ~17%.",
+            view: "**The best combination of quality and price here.** It turned 76% of operating profit into cash over five years, holds ₹700cr of net cash, and earns 21–31% on capital. The order book is up 37%. It guides only low double-digit growth this year but keeps a ₹5,000cr target for FY30. The price roughly matches my ~17% growth estimate.",
             watch: 'Conversion of the record order book in H2; the naval and defence orders; gear margins back to ~24%.',
         },
         {
             company: 'TD Power Systems', rank: 2, stance: 'PRICED', segment: MACHINES,
             what: "Makes generators (up to about 100 MW) and motors for gas engines, gas and steam turbines and hydro plants, mostly for global equipment makers; exports are the majority of orders.",
-            view: "**The purest play on the global power-equipment shortage.** Revenue grew 72% in Q1 at a steady 18–19% margin, and it guides ₹2,600cr for FY27. But only 36% of profit has turned into cash over five years, it is raising equity, and at 89x it needs ~31% growth a year.",
+            view: "**The purest play on the global power-equipment shortage.** Revenue grew 72% in Q1 at a steady 18–19% margin, and it guides ₹2,600cr for FY27. But only 36% of profit has turned into cash over five years, it is raising equity, and the price needs close to 30% growth a year.",
             watch: 'The large-generator plan; US data-centre orders; working capital and the size of the equity raise.',
         },
         {
             company: 'Triveni Turbine', rank: 3, stance: 'PRICED', segment: MACHINES,
             what: "Designs and makes steam turbines up to 100 MW for industry and power, and services and refurbishes turbines worldwide; 6,000+ installed in 80+ countries.",
-            view: "**A high-return, cash-generative business in a slow patch.** Return on capital has been 21–41%, working capital is negative, and aftermarket orders more than doubled. But Q1 margin fell to 18%, domestic orders dropped 35%, and at 51x it needs ~24% against my ~16%.",
+            view: "**A high-return, cash-generative business in a slow patch.** Return on capital has been 21–41%, working capital is negative, and aftermarket orders more than doubled. But Q1 margin fell to 18%, domestic orders dropped 35%, and the price needs more than my ~16% growth estimate.",
             watch: 'H2 margin recovery; US product orders; domestic ordering.',
         },
         {
             company: 'Apar Inds.', rank: 4, stance: 'PRICED', segment: GRID,
             what: "One of the world's largest makers of power-line conductors, plus transformer and specialty oils, and power, railway, defence and data-centre cables.",
-            view: "**World-class scale and new approvals, at a full price.** It won Google, Microsoft and Meta approvals and large US and European utility contracts. But Q1's 12.4% margin was flattered by oil inventory gains, five-year cash conversion is 42%, it is raising equity, and at 64x it needs ~27% against my ~18%.",
+            view: "**World-class scale and new approvals, at a full price.** It won Google, Microsoft and Meta approvals and large US and European utility contracts. But Q1's 12.4% margin was flattered by oil inventory gains, five-year cash conversion is 42%, it is raising equity, and the price needs well above my ~18% growth estimate.",
             watch: 'Oil margins normalising; US cable orders; the size of the equity raise.',
         },
         {
             company: 'GE Power', rank: 5, stance: 'TURNAROUND', segment: MACHINES,
             what: "The Indian services arm of GE Vernova's steam power business: maintenance, upgrades and spares for steam turbines and boilers, including other makers' fleets. Its Durgapur factory is moving to JSW Energy.",
-            view: "**A finished turnaround at a low price, but a shrinking business.** Net worth rose from ₹57cr to ₹483cr in two years, cash is ₹880cr, and FY26 EBITDA was ₹277cr. But revenue has halved since FY22, the parent controls strategy, and Q1 margin dropped to 15%. At 12x it needs ~8%.",
+            view: "**A finished turnaround at a low price, but a shrinking business.** Net worth rose from ₹57cr to ₹483cr in two years, cash is ₹880cr, and FY26 EBITDA was ₹277cr. But revenue has halved since FY22, the parent controls strategy, and Q1 margin dropped to 15%. The price asks for little growth.",
             watch: 'Services order booking; margins after Q3–Q4 FY26 one-offs; the Durgapur demerger.',
         },
         {
             company: 'Genus Power', rank: 6, stance: 'SCALEUP', segment: GRID,
             what: "One of India's largest smart-meter makers, and a meter service provider (AMISP) that installs, owns and runs meters for utilities under 8–9 year concessions through a platform with GIC.",
-            view: "**Fast growth and a low P/E, but it is really financing meters.** Revenue nearly doubled in FY26 and it guides ₹6,000–6,500cr for FY27, but operating cash was negative for three years (−₹700cr over five), borrowings are ₹2,302cr, and contracts are fixed-price. At 14.5x the price is low, but the cash only arrives from FY28.",
+            view: "**Fast growth and a low P/E, but it is really financing meters.** Revenue nearly doubled in FY26 and it guides ₹6,000–6,500cr for FY27, but operating cash was negative for three years (−₹700cr over five), borrowings are ₹2,302cr, and contracts are fixed-price. The multiple is low, but the cash only arrives from FY28.",
             watch: 'Operating cash turning positive; net debt peaking near ₹2,000cr; new tender wins.',
         },
         {
@@ -672,7 +670,7 @@ export const electricalEquipment: SectorOverview = {
         {
             company: 'Salzer Electronics', rank: 8, stance: 'SCALEUP', segment: GRID,
             what: "Industrial switchgear (switches, contactors, relays, transformers), wires and cables (mostly white-label), and building electrical products; about 15% sold through Lauritz Knudsen (Schneider).",
-            view: "**Steady revenue growth, ordinary economics.** Revenue has grown ~23% a year for five years, but return on capital is 9–13%, the margin guide was cut to 8–8.5%, and only 12% of profit became cash over five years. A smart-meter plant sits idle. At 22x it is fairly priced for what it is.",
+            view: "**Steady revenue growth, ordinary economics.** Revenue has grown ~23% a year for five years, but return on capital is 9–13%, the margin guide was cut to 8–8.5%, and only 12% of profit became cash over five years. A smart-meter plant sits idle. It is fairly priced for what it is.",
             watch: 'Switchgear margin back to 9–9.5% in H2; a decision on the smart-meter investment.',
         },
         {
@@ -684,7 +682,7 @@ export const electricalEquipment: SectorOverview = {
         {
             company: 'Inox Wind', rank: 10, stance: 'TURNAROUND', segment: WIND,
             what: "Wind-turbine maker (3 MW platform, 4 MW coming) with an order book of 4.4 GW; part of the Inox GFL group, whose Inox Green services the turbines and whose Inox Clean is a major buyer.",
-            view: "**Big order book, poor cash record.** Over five years it booked ₹1,349cr of operating profit but consumed ₹2,401cr of operating cash, with a 443-day cash cycle. Its largest customer is a group company, it has missed guidance repeatedly, and it is raising equity. At 39x it needs ~21% growth.",
+            view: "**Big order book, poor cash record.** Over five years it booked ₹1,349cr of operating profit but consumed ₹2,401cr of operating cash, with a 443-day cash cycle. Its largest customer is a group company, it has missed guidance repeatedly, and it is raising equity. The price needs about 20% growth a year.",
             watch: 'Receivables falling as it shifts to equipment supply; H2 delivery against the +75% guide.',
         },
         {
@@ -696,7 +694,7 @@ export const electricalEquipment: SectorOverview = {
         {
             company: 'Servotech Renew', rank: 12, stance: 'AVOID', segment: POWERELEC,
             what: "EV chargers, rooftop solar, battery packs for storage and e-rickshaws, and a sports-management subsidiary that owns a cricket franchise.",
-            view: "**Growth without disclosure or cash.** Revenue rose 58% in Q1, but operating cash has been negative in three of five years, management gives no guidance or capacity numbers and says margins are 'not very important', and group money is going into a sports business. At 43x it needs ~22%.",
+            view: "**Growth without disclosure or cash.** Revenue rose 58% in Q1, but operating cash has been negative in three of five years, management gives no guidance or capacity numbers and says margins are 'not very important', and group money is going into a sports business. The price needs more growth than I expect.",
             watch: 'Positive operating cash; basic disclosure of capacity and order book.',
         },
         {
@@ -710,10 +708,10 @@ export const electricalEquipment: SectorOverview = {
     closing: {
         heading: '9. Summary review',
         body: [
-            "**Machine makers.** **Elecon: own.** Cash-rich, well run, and its price (33x earnings, 19x EV/EBITDA) roughly matches the growth I expect. **TD Power: follow, don't chase.** The fastest growth in the sector, but 89x needs about 31% a year for a decade. **Triveni: wait.** A high-return business in a weak year; buy on a margin recovery or a lower price. **GE Power India: cheap but shrinking.** 12x earnings with net cash, but revenue has halved and the parent controls strategy.",
-            "**Grid products.** **Apar: quality leader, full price.** Global approvals and scale, but 64x while raising equity. **Genus: wait for the cash.** Low P/E, but it is financing meters and cash only arrives from FY28. **Salzer: pass.** Low returns and debt of nearly four years' operating profit. **RMC: avoid.** Revenue fell 56% and bills are going unpaid.",
+            "**Machine makers.** **Elecon: own.** Cash-rich, well run, and its price roughly matches the growth I expect. **TD Power: follow, don't chase.** The fastest growth in the sector, but the price needs it to continue for a decade. **Triveni: wait.** A high-return business in a weak year; buy on a margin recovery or a lower price. **GE Power India: cheap but shrinking.** A low multiple and net cash, but revenue has halved and the parent controls strategy.",
+            "**Grid products.** **Apar: quality leader, full price.** Global approvals and scale, but a full price while it raises equity. **Genus: wait for the cash.** Low P/E, but it is financing meters and cash only arrives from FY28. **Salzer: pass.** Low returns and debt of nearly four years' operating profit. **RMC: avoid.** Revenue fell 56% and bills are going unpaid.",
             "**Wind and structures.** **KP Green: cheap, but only a small position.** Fast growth at 11x, offset by rising debt, a promoter royalty and group orders. **Inox Wind: avoid until receivables fall.** It has used far more cash than it earned.",
-            "**Power electronics.** **Exicom: speculative.** A real Indian business, but Tritium's losses sink the group; wait for break-even. **Servotech: avoid.** Cash burn and little disclosure at 43x. **RIR: avoid.** 214x earnings on a silicon-carbide plant that is not yet running and has no confirmed customers.",
+            "**Power electronics.** **Exicom: speculative.** A real Indian business, but Tritium's losses sink the group; wait for break-even. **Servotech: avoid.** Cash burn and little disclosure at a high multiple. **RIR: avoid.** A very high price on a silicon-carbide plant that is not yet running and has no confirmed customers.",
             "**What would change my view.** A slowdown in US data-centre spending would hurt TD Power, Triveni and Apar first. Genus reaching positive operating cash early would make it attractive. Inox Wind collecting its receivables would change its story.",
             "**What to watch next quarter.** TD Power's equity raise; Triveni's second-half margin; Elecon's order conversion; Apar's oil margin; Genus's cash flow; Inox Wind's receivables; Exicom's break-even; RIR's first silicon-carbide customers.",
         ],

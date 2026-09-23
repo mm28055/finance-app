@@ -69,7 +69,7 @@ const profiles: BusinessProfile[] = [
     // ── Engineered machines ──────────────────────────────────────────────────
     {
         company: 'Elecon Engg.Co',
-        inShort: ["**India's biggest industrial gearbox maker**, selling to steel, cement, power and sugar plants in India and abroad.", "**Good:** high returns, strong cash generation and ₹680cr of net cash. **Watch:** foreign rivals are cutting prices and margins have slipped from 24% to 21%.", "**Verdict: best buy in the sector.** At 33x earnings (19x EV/EBITDA) the price roughly matches the growth I expect."],
+        inShort: ["**India's biggest industrial gearbox maker**, selling to steel, cement, power and sugar plants in India and abroad.", "**Good:** high returns, strong cash generation and ₹680cr of net cash. **Watch:** foreign rivals are cutting prices and margins have slipped from 24% to 21%.", "**Verdict: best buy in the sector.** The price roughly matches the growth I expect."],
         tagline: "India's leading industrial gearbox maker, with a material-handling equipment business and assembly and sales companies abroad.",
         revenue: '₹2,366cr (FY26, consolidated)',
         products: [
@@ -100,7 +100,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'TD Power Systems',
-        inShort: ["**Makes generators and motors** for global engine and turbine makers; most orders are exports, driven by US data centres.", "**Good:** revenue up 72% with steady margins, and contracts pass on metal costs. **Bad:** little of its profit has turned into cash, and it is raising equity.", "**Verdict: great business, full price.** At 89x earnings it needs about 31% growth a year for ten years."],
+        inShort: ["**Makes generators and motors** for global engine and turbine makers; most orders are exports, driven by US data centres.", "**Good:** revenue up 72% with steady margins, and contracts pass on metal costs. **Bad:** little of its profit has turned into cash, and it is raising equity.", "**Verdict: great business, full price.** The price needs close to 30% growth a year for ten years."],
         tagline: "Bangalore-based maker of generators and motors, sold mostly to global engine and turbine makers; one of the few independent suppliers in its size range.",
         revenue: '₹1,856cr (FY26, consolidated)',
         products: [
@@ -130,7 +130,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Triveni Turbine',
-        inShort: ["**One of the world's leading makers of industrial steam turbines** up to 100 MW, plus a growing spares and service business.", "**Good:** high returns, net cash, and customers pay in advance. **Bad:** it prices orders a year ahead, so cost rises hit margins (down to 12% in Q1).", "**Verdict: quality at a full price.** At 51x earnings it needs about 24% growth; I expect about 16%."],
+        inShort: ["**One of the world's leading makers of industrial steam turbines** up to 100 MW, plus a growing spares and service business.", "**Good:** high returns, net cash, and customers pay in advance. **Bad:** it prices orders a year ahead, so cost rises hit margins (down to 12% in Q1).", "**Verdict: quality at a full price.** The price needs more growth than the 16% a year I expect."],
         tagline: "One of the world's leading makers of industrial steam turbines up to 100 MW, with 6,000+ installed in 80+ countries.",
         revenue: '₹2,181cr (FY26, consolidated)',
         products: [
@@ -161,7 +161,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'GE Power',
-        inShort: ["**GE Vernova's Indian arm**, now mainly servicing steam turbines and boilers at Indian power plants.", "**Good:** turnaround complete, net cash, very little spending needed. **Bad:** revenue has halved since FY22 and the parent controls strategy.", "**Verdict: cheap but shrinking.** At 12x earnings the price asks for little growth."],
+        inShort: ["**GE Vernova's Indian arm**, now mainly servicing steam turbines and boilers at Indian power plants.", "**Good:** turnaround complete, net cash, very little spending needed. **Bad:** revenue has halved since FY22 and the parent controls strategy.", "**Verdict: cheap but shrinking.** The price asks for little growth."],
         tagline: "GE Power India: the Indian arm of GE Vernova's steam power business, now mainly servicing steam turbines and boilers at power plants.",
         revenue: '₹1,269cr (FY26, consolidated)',
         products: [
@@ -191,7 +191,7 @@ const profiles: BusinessProfile[] = [
     // ── Grid products ────────────────────────────────────────────────────────
     {
         company: 'Apar Inds.',
-        inShort: ["**One of the world's largest makers of power-line conductors**, plus transformer oils and specialty cables.", "**Good:** global scale and new US utility and data-centre approvals; metal costs are passed through. **Bad:** thin margins (8%), weak cash conversion, and it is raising equity.", "**Verdict: excellent franchise, full price.** At 64x earnings it needs about 27% growth; I expect about 18%."],
+        inShort: ["**One of the world's largest makers of power-line conductors**, plus transformer oils and specialty cables.", "**Good:** global scale and new US utility and data-centre approvals; metal costs are passed through. **Bad:** thin margins (8%), weak cash conversion, and it is raising equity.", "**Verdict: excellent franchise, full price.** The price needs well above the 18% a year I expect."],
         tagline: "One of the world's largest makers of power-line conductors, also a major maker of transformer oils and specialty cables.",
         revenue: '₹22,902cr (FY26, consolidated)',
         products: [
@@ -221,7 +221,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Genus Power',
-        inShort: ["**One of India's largest smart-meter makers**, which also installs and runs meters for utilities under 8–9 year contracts.", "**Good:** fast growth and a big order book. **Bad:** fixed prices with no cost pass-through, and it borrows to fund the meters (₹1,580cr net debt).", "**Verdict: cheap on profit, not on cash.** At 14.5x earnings it is low, but cash only starts coming in from FY28."],
+        inShort: ["**One of India's largest smart-meter makers**, which also installs and runs meters for utilities under 8–9 year contracts.", "**Good:** fast growth and a big order book. **Bad:** fixed prices with no cost pass-through, and it borrows to fund the meters (₹1,580cr net debt).", "**Verdict: cheap on profit, not on cash.** The multiple is low, but cash only starts coming in from FY28."],
         tagline: "One of India's largest smart-meter makers, and a meter service provider that installs, owns and runs meters for utilities under long concessions.",
         revenue: '₹4,751cr (FY26, consolidated)',
         products: [
@@ -251,7 +251,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Salzer Electronics',
-        inShort: ["**Makes industrial switches, wires and cables**, much of it for other brands.", "**Good:** steady revenue growth. **Bad:** low returns, copper price rises hit margins with a lag, and net debt is about 4 years of operating profit.", "**Verdict: fair price for an ordinary business**, but more indebted than its 22x P/E suggests."],
+        inShort: ["**Makes industrial switches, wires and cables**, much of it for other brands.", "**Good:** steady revenue growth. **Bad:** low returns, copper price rises hit margins with a lag, and net debt is about 4 years of operating profit.", "**Verdict: fair price for an ordinary business**, but more indebted than its P/E suggests."],
         tagline: "Coimbatore-based maker of industrial switchgear, wires and cables, and building electrical products, with a large white-label business.",
         revenue: '₹1,758cr (FY26, consolidated)',
         products: [
@@ -280,7 +280,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'RMC Switchgears',
-        inShort: ["**Small Jaipur maker of meter boxes and feeder pillars**, which also builds solar and power projects for state utilities.", "**Bad:** revenue fell 56% in Q1, unpaid bills are rising, and most contracts are fixed-price government tenders.", "**Verdict: avoid.** It looks cheap at 12x, but for good reasons."],
+        inShort: ["**Small Jaipur maker of meter boxes and feeder pillars**, which also builds solar and power projects for state utilities.", "**Bad:** revenue fell 56% in Q1, unpaid bills are rising, and most contracts are fixed-price government tenders.", "**Verdict: avoid.** It looks cheap, but for good reasons."],
         tagline: "Jaipur-based maker of meter enclosures and feeder pillars, which also builds distribution and solar projects for state utilities.",
         revenue: '₹402cr (FY26, consolidated)',
         products: [
@@ -311,7 +311,7 @@ const profiles: BusinessProfile[] = [
     // ── Wind and structures ──────────────────────────────────────────────────
     {
         company: 'Inox Wind',
-        inShort: ["**Wind-turbine maker** from the Inox GFL group, with a 4.4 GW order book.", "**Good:** big order book and margins around 20%. **Bad:** it has used far more cash than it earned, relies on group orders, and keeps issuing shares.", "**Verdict: a turnaround that has not yet shown up in cash.** At 39x earnings it needs about 21% growth."],
+        inShort: ["**Wind-turbine maker** from the Inox GFL group, with a 4.4 GW order book.", "**Good:** big order book and margins around 20%. **Bad:** it has used far more cash than it earned, relies on group orders, and keeps issuing shares.", "**Verdict: a turnaround that has not yet shown up in cash.** The price needs about 20% growth a year."],
         tagline: "Wind-turbine maker from the Inox GFL group, with a 4.4 GW order book; group companies service the turbines and are major buyers.",
         revenue: '₹4,397cr (FY26, consolidated)',
         products: [
@@ -341,7 +341,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'KP Green Engg.',
-        inShort: ["**Makes galvanised steel towers and structures** for power lines, telecom and solar farms; part of the KP group.", "**Good:** fast growth, margins near 20%, and steel price rises are passed on. **Bad:** free cash is negative, debt is rising, and it pays a royalty to its promoter.", "**Verdict: cheap (11x earnings, 7.5x EV/EBITDA) but with governance and cash questions.**"],
+        inShort: ["**Makes galvanised steel towers and structures** for power lines, telecom and solar farms; part of the KP group.", "**Good:** fast growth, margins near 20%, and steel price rises are passed on. **Bad:** free cash is negative, debt is rising, and it pays a royalty to its promoter.", "**Verdict: cheap on profit, but with governance and cash questions.**"],
         tagline: "Surat-based maker of galvanised steel structures (towers, solar mounting structures, poles, crash barriers), part of the KP group; listed on the BSE SME platform.",
         revenue: '₹1,246cr (FY26, standalone)',
         products: [
@@ -403,7 +403,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Servotech Renew',
-        inShort: ["**Makes EV chargers, solar inverters and battery packs**, and runs a small charging network.", "**Bad:** commodity products, little disclosure, negative cash flow, and money going into a sports business.", "**Verdict: avoid.** At 43x earnings the price is high for what it is."],
+        inShort: ["**Makes EV chargers, solar inverters and battery packs**, and runs a small charging network.", "**Bad:** commodity products, little disclosure, negative cash flow, and money going into a sports business.", "**Verdict: avoid.** The price is high for what it is."],
         tagline: "Delhi-based maker of EV chargers, solar inverters and battery packs, which also runs an EV charging network and a sports subsidiary.",
         revenue: '₹672cr (FY26, consolidated)',
         products: [
@@ -428,7 +428,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'RIR Power Electr',
-        inShort: ["**Tiny maker of high-power silicon chips** (thyristors), building a ₹618cr silicon-carbide chip plant.", "**Bad:** the new plant costs almost seven times current sales and has no proven customers yet.", "**Verdict: avoid.** At 214x earnings the price rests on a plant not yet running."],
+        inShort: ["**Tiny maker of high-power silicon chips** (thyristors), building a ₹618cr silicon-carbide chip plant.", "**Bad:** the new plant costs almost seven times current sales and has no proven customers yet.", "**Verdict: avoid.** The price rests on a plant not yet running."],
         tagline: "A small maker of high-power silicon semiconductors (thyristors, diodes) in Gujarat, building a silicon-carbide chip plant in Odisha.",
         revenue: '₹91cr (FY26, consolidated)',
         products: [

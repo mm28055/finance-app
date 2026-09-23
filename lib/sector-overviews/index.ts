@@ -17,6 +17,7 @@ import { electricalEquipment } from './electrical-equipment';
 import { emsElectronics } from './ems-electronics';
 
 export * from './types';
+export * from './live-valuation';
 
 /**
  * Every written overview, keyed by the sector name it belongs to.

@@ -16,6 +16,7 @@ import {
     RichText,
     StancePill,
     DataTableView,
+    LiveValuationTable,
     RankingBlock,
     MetricsGrid,
     SnapshotsBlock,
@@ -408,6 +409,9 @@ export function SectorOverview({ overview, companies }: {
                 <MoatTable sources={overview.moat.sources} rows={overview.moat.rows} verdicts={overview.verdicts} labels={labels} compact={overview.moatCompact} />
             )}
             {sec.embed === 'scatter' && <div className="mt-3 max-w-3xl flex">{scatterCard}</div>}
+            {sec.embed === 'valuation' && overview.valuation && (
+                <LiveValuationTable verdicts={overview.verdicts} byName={byName} block={overview.valuation} labels={labels} />
+            )}
         </>
     );
 
@@ -470,7 +474,7 @@ export function SectorOverview({ overview, companies }: {
                 {tab === 2 && overview.businesses ? (
                     <div className="px-5 py-4 border-b border-gray-100 space-y-7">
                         {overview.businesses.intro.map(renderSection)}
-                        <BusinessProfiles profiles={overview.businesses.profiles} verdicts={overview.verdicts} />
+                        <BusinessProfiles profiles={overview.businesses.profiles} verdicts={overview.verdicts} valuation={overview.valuation} byName={byName} />
                     </div>
                 ) : (
                     <>
