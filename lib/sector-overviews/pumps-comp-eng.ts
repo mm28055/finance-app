@@ -1,4 +1,5 @@
 import { SectorOverview } from './types';
+import { pumpsCompEngBusinesses } from './pumps-comp-eng-businesses';
 
 // Quarter and year columns used by every metric below.
 const Q = ['Q1 FY26', 'Q2 FY26', 'Q3 FY26', 'Q4 FY26', 'Q1 FY27'];
@@ -14,6 +15,8 @@ export const pumpsCompEng: SectorOverview = {
     sector: 'Pumps Comp & Eng',
     title: 'Pumps, Compressors & Engines',
     format: 'ranked',
+    businesses: pumpsCompEngBusinesses,
+    moatCompact: true,
     standfirst:
         "Nine makers of pumps, compressors, engines and generator sets, sorted into four businesses before anything is compared. " +
         "Compressor makers win on the customer's electricity bill and earn the steadiest returns. Engineered-pump makers win on qualification for nuclear, thermal and data-centre work. Engine and genset makers win on channel and service. Solar-pump makers sell into government schemes that set the price and pay late. Every chart uses filed results and five years of history.",
@@ -256,20 +259,20 @@ export const pumpsCompEng: SectorOverview = {
             embedFirst: true,
             points: [
                 {
-                    label: 'Strongest: Elgi and Kirloskar Pneumatic',
-                    text: "**Elgi** sells on the customer's electricity bill. Its MD says about 80% of buyers choose on energy efficiency and maintenance, not price, and Elgi's models are the most efficient in about 70% of industrial categories. Warranty costs under 1% of sales let it offer ten-year and lifetime warranties. **Kirloskar Pneumatic** makes its own forgings and castings. Material cost fell from 47.6% to 43.9% of sales in a quarter when everyone else's rose. It maintains more than 1,000 CNG stations, an annuity growing 25–30% a year.",
+                    label: 'Strongest',
+                    text: "**Elgi and Kirloskar Pneumatic.** Both sell to buyers who choose on running cost and reliability rather than price, and both make their key parts themselves. Both are widening their lead.",
                 },
                 {
-                    label: 'Qualification moats: KSB and Kirloskar Brothers',
-                    text: "**KSB** has supplied the primary coolant pump for every Indian pressurised heavy-water reactor since 1978 and holds ₹1,235cr of nuclear orders. **Kirloskar Brothers** claims to be the world's largest maker of concrete volute pumps. It says one supplied in 1994 has lost only 2% efficiency in 30 years, against 1–1.5 points a year for ordinary pumps. It has 100% of metallic volute pumps for nuclear plants and is qualifying for primary circuits. **These take years to earn and cannot be bought, but the customer (NPCIL, utilities) also controls the timing.**",
+                    label: 'Hardest to copy',
+                    text: "**KSB and Kirloskar Brothers' nuclear and large-pump approvals**, which take years to earn. The catch is that the customer (NPCIL, utilities) controls the timing.",
                 },
                 {
-                    label: 'Channel and service moats: Kirloskar Oil',
-                    text: "Its distribution and aftermarket arm has grown double digits for 12 straight quarters (+20% in Q1). It can offer a two-hour service response on mission-critical sites. It owns its engines, unlike Powerica, whose genset engine is Cummins' and which has watched Cummins take some data-centre projects directly.",
+                    label: 'Best service network',
+                    text: "**Kirloskar Oil.** It owns its engines; **Powerica** does not (its engine is Cummins'), which is its weak point.",
                 },
                 {
-                    label: 'Weakest: the solar-pump pair',
-                    text: "**Shakti** and **Oswal** make good products, but the state sets the price, the farmer chooses among dozens of empanelled suppliers, and the agency pays when it pays. Oswal counted 40–45 bidders on recent tenders. **When a scheme pauses, bidders crowd into whichever state is still ordering and prices collapse,** which is what happened in Maharashtra this year.",
+                    label: 'Weakest',
+                    text: "**Shakti and Oswal.** The state sets the price and dozens of approved suppliers compete, so when a scheme pauses, prices fall. How each company's advantage works is explained in Tab 2.",
                 },
                 {
                     label: 'Competitors outside the list',
@@ -608,6 +611,15 @@ export const pumpsCompEng: SectorOverview = {
 
     sources: [
         { label: 'Filed quarterly results, annual ratios and cash flows — Screener.in', url: 'https://www.screener.in/company/KIRLPNU/' },
+        { label: 'Elgi Equipments Q1 FY27 analyst presentation', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7f9a307e-052e-44ab-b2ad-d832fac54572.pdf' },
+        { label: 'Kirloskar Pneumatic Q1 FY27 earnings presentation', url: 'https://www.kirloskarpneumatic.com/documents/3010307/7918279/Investor+Presentation+Q1+FY27.pdf/1f9950ac-cac1-a7c0-3f65-1f392226b675?t=1784638441869' },
+        { label: 'Kirloskar Brothers Q1 FY27 investor presentation', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=9fd479cb-c122-45c4-89e5-0d7a30ae00d1.pdf' },
+        { label: 'KSB institutional investors’ meet, 19 August 2026', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fcbb9518-aacd-4d7e-8656-681e1504839b.pdf' },
+        { label: 'Kirloskar Oil Engines Q1 FY27 earnings presentation', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=cf9b65f3-589a-4498-99d2-7cfa4ecdf82d.pdf' },
+        { label: 'Powerica Q1 FY27 investor presentation', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=49250ba5-d18b-4854-b661-0cfb7f7e0b05.pdf' },
+        { label: 'Greaves Cotton Q1 FY27 investor presentation', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=50abfc8f-8df0-4b0b-9434-419e016a3632.pdf' },
+        { label: 'Shakti Pumps Q1 FY27 investor presentation', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f9d76706-2e38-4d54-a998-c556b1a602bc.pdf' },
+        { label: 'Oswal Pumps Q1 FY27 investor presentation', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=59ac28fb-f1b3-418d-8753-61f736b91d76.pdf' },
         { label: 'India pump market: size, structure and shares — Mordor Intelligence', url: 'https://www.mordorintelligence.com/industry-reports/india-industrial-pump' },
         { label: 'India air compressor market: leading players and growth — Next Move Strategy Consulting', url: 'https://www.nextmsc.com/report/india-air-compressor-market' },
         { label: 'PM KUSUM 2.0: expected size and timing — Reslink Energy', url: 'https://www.reslink.org/blogs/pm-kusum-2-0-is-coming-india-s-rs-50-000-crore-agricultural-solar-push/' },

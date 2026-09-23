@@ -173,6 +173,34 @@ export interface MoatRow {
     trendNote: string;
 }
 
+/** One slice of a revenue or order-book split, as a percentage of the whole. */
+export interface MixPart {
+    label: string;
+    share: number;
+}
+
+/**
+ * A company's business model, for the "what the companies do" tab: what it
+ * sells, where the money comes from, who buys, how hard it is to make, and
+ * why customers stay. Figures come from filings, presentations and calls.
+ */
+export interface BusinessProfile {
+    /** Must match `Company.name` exactly. */
+    company: string;
+    /** One line: what the business is. */
+    tagline: string;
+    /** Latest full-year revenue as filed (Screener), e.g. "₹3,951cr (FY26, consolidated)". */
+    revenue: string;
+    products: { name: string; text: string }[];
+    /** Where the revenue comes from, in words. */
+    revenueText: string;
+    /** Up to two stacked bars, e.g. by business and by geography. */
+    mixes?: { caption: string; parts: MixPart[]; note?: string }[];
+    customers: string[];
+    difficulty: { level: 'Very high' | 'High' | 'Medium' | 'Low'; text: string };
+    moat: string;
+}
+
 export interface SectorOverview {
     /** Must match `Company.sector`. */
     sector: string;
@@ -193,6 +221,14 @@ export interface SectorOverview {
     takeaways?: string[];
     metrics?: MetricSeries[];
     moat?: { sources: MoatSource[]; rows: MoatRow[] };
+    /** Show the moat grid as letters only; the reasons live in the business tab. */
+    moatCompact?: boolean;
+    /**
+     * The second tab, "What the companies do": a primer on the products and
+     * how each business sells, then one business-model profile per company.
+     * When present, the ranking drops its "what it does" line.
+     */
+    businesses?: { intro: OverviewSection[]; profiles: BusinessProfile[] };
     sections: OverviewSection[];
     verdicts: CompanyVerdict[];
     /** The closing opinion. Rendered after the company cards, set apart from the note. */

@@ -99,11 +99,13 @@ export function DataTableView({ table }: { table: DataTable }) {
 
 // ── 1. Ranking and takeaways ─────────────────────────────────────────────────
 
-export function RankingBlock({ verdicts, takeaways, byName }: {
+export function RankingBlock({ verdicts, takeaways, byName, hideWhat = false }: {
     verdicts: CompanyVerdict[];
     takeaways?: string[];
     /** Live figures, shown under each name when given. */
     byName?: Map<string, EnrichedCompany>;
+    /** Leave out "what it does" when the note has a separate business tab. */
+    hideWhat?: boolean;
 }) {
     const ranked = byRank(verdicts);
     return (
@@ -114,7 +116,9 @@ export function RankingBlock({ verdicts, takeaways, byName }: {
                         <tr className="bg-[#F4F6F8] text-left text-gray-600">
                             <th className="font-semibold px-2.5 py-1.5 w-8">#</th>
                             <th className="font-semibold px-2.5 py-1.5 w-[34%] min-w-[140px]">Company and view</th>
-                            <th className="font-semibold px-2.5 py-1.5">What it does, and why it ranks here</th>
+                            <th className="font-semibold px-2.5 py-1.5">
+                                {hideWhat ? 'Why it ranks here (what each company does is in Tab 2)' : 'What it does, and why it ranks here'}
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -137,8 +141,8 @@ export function RankingBlock({ verdicts, takeaways, byName }: {
                                     })()}
                                 </td>
                                 <td className="px-2.5 py-2 leading-relaxed">
-                                    {v.what && <p className="text-[11px] text-gray-500"><RichText text={v.what} /></p>}
-                                    <p className={`text-gray-600 ${v.what ? 'mt-1.5' : ''}`}><RichText text={v.view} /></p>
+                                    {v.what && !hideWhat && <p className="text-[11px] text-gray-500"><RichText text={v.what} /></p>}
+                                    <p className={`text-gray-600 ${v.what && !hideWhat ? 'mt-1.5' : ''}`}><RichText text={v.view} /></p>
                                 </td>
                             </tr>
                         ))}
@@ -453,11 +457,13 @@ const TREND_STYLE: Record<MoatRow['trend'], { icon: string; label: string; cls: 
     narrowing: { icon: '↘', label: 'Narrowing', cls: 'text-rose-600' },
 };
 
-export function MoatTable({ sources, rows, verdicts, labels }: {
+export function MoatTable({ sources, rows, verdicts, labels, compact = false }: {
     sources: MoatSource[];
     rows: MoatRow[];
     verdicts: CompanyVerdict[];
     labels: Map<string, string>;
+    /** Letters only; the reasons are left to the business tab. */
+    compact?: boolean;
 }) {
     const order = byRank(verdicts).map(v => v.company);
     const sorted = [...rows].sort((a, b) => order.indexOf(a.company) - order.indexOf(b.company));
@@ -476,9 +482,9 @@ export function MoatTable({ sources, rows, verdicts, labels }: {
                         <tr className="bg-[#F4F6F8] text-left text-gray-600">
                             <th className="sticky left-0 bg-[#F4F6F8] font-semibold px-2 py-1.5 min-w-[120px]">Company</th>
                             {sources.map(s => (
-                                <th key={s.key} className="font-semibold px-2 py-1.5 min-w-[150px] align-bottom">{s.label}</th>
+                                <th key={s.key} className={`font-semibold px-2 py-1.5 align-bottom ${compact ? 'text-center min-w-[84px]' : 'min-w-[150px]'}`}>{s.label}</th>
                             ))}
-                            <th className="font-semibold px-2 py-1.5 min-w-[190px] align-bottom">Direction</th>
+                            <th className={`font-semibold px-2 py-1.5 align-bottom ${compact ? 'min-w-[100px]' : 'min-w-[190px]'}`}>Direction</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -491,8 +497,8 @@ export function MoatTable({ sources, rows, verdicts, labels }: {
                                     const g = r.grades[s.key] ?? { grade: '-' as MoatGrade, note: '' };
                                     const st = GRADE_STYLE[g.grade];
                                     return (
-                                        <td key={s.key} className="px-2 py-1.5">
-                                            <div className="flex items-start gap-1.5">
+                                        <td key={s.key} className="px-2 py-1.5" title={compact ? g.note : undefined}>
+                                            <div className={`flex items-start gap-1.5 ${compact ? 'justify-center' : ''}`}>
                                                 <span
                                                     className="inline-flex items-center justify-center w-[18px] h-[18px] rounded-[4px] text-[10px] font-bold flex-shrink-0"
                                                     style={{ background: st.bg, color: st.fg, border: g.grade === '-' ? '1px solid #E5E7EB' : undefined }}
@@ -500,7 +506,7 @@ export function MoatTable({ sources, rows, verdicts, labels }: {
                                                 >
                                                     {g.grade === '-' ? '–' : g.grade}
                                                 </span>
-                                                <span className="text-gray-500 leading-snug">{g.note}</span>
+                                                {!compact && <span className="text-gray-500 leading-snug">{g.note}</span>}
                                             </div>
                                         </td>
                                     );
@@ -509,7 +515,7 @@ export function MoatTable({ sources, rows, verdicts, labels }: {
                                     <div className={`font-semibold ${TREND_STYLE[r.trend].cls}`}>
                                         <span aria-hidden>{TREND_STYLE[r.trend].icon}</span> {TREND_STYLE[r.trend].label}
                                     </div>
-                                    <div className="text-gray-500 leading-snug mt-0.5">{r.trendNote}</div>
+                                    {!compact && <div className="text-gray-500 leading-snug mt-0.5">{r.trendNote}</div>}
                                 </td>
                             </tr>
                         ))}
@@ -518,6 +524,7 @@ export function MoatTable({ sources, rows, verdicts, labels }: {
             </div>
             <p className="text-[10px] text-gray-400 mt-1.5">
                 A = decisive advantage · B = real but contestable · C = modest · D = weak or absent · – = not relevant to this business.
+                {compact && ' Hover over a grade for the reason; Tab 2 explains each company’s moat in full.'}
             </p>
         </div>
     );

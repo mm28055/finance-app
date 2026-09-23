@@ -21,6 +21,7 @@ import {
     SnapshotsBlock,
     MoatTable,
 } from './SectorOverviewBlocks';
+import { BusinessProfiles } from './SectorBusinesses';
 
 const SUFFIXES = /\s+(Limited|Ltd|Laboratories|Lifesciences|Life Sciences|Industries|Pharmaceutic|Biosciences|Specialty|Biotech|Drugs|Pharmalabs|Pharmova|Pharma|Captab|Ingrevia|Labs|Healthcare|Research|Remedies|India)\.?$/i;
 
@@ -82,6 +83,10 @@ export function SectorOverview({ overview, companies }: {
     overview: SectorOverviewData;
     companies: EnrichedCompany[];
 }) {
+    // A note with a business tab opens on the analysis; Tab 2 explains the companies.
+    const [tab, setTab] = React.useState<1 | 2>(1);
+    const hasBusinessTab = !!overview.businesses;
+
     const byName = React.useMemo(() => {
         const m = new Map<string, EnrichedCompany>();
         (companies || []).forEach(c => m.set(c.name.trim().toLowerCase(), c));
@@ -356,13 +361,13 @@ export function SectorOverview({ overview, companies }: {
 
     const renderEmbed = (sec: typeof overview.sections[number]) => (
         <>
-            {sec.embed === 'ranking' && <RankingBlock verdicts={overview.verdicts} takeaways={overview.takeaways} byName={byName} />}
+            {sec.embed === 'ranking' && <RankingBlock verdicts={overview.verdicts} takeaways={overview.takeaways} byName={byName} hideWhat={hasBusinessTab} />}
             {sec.embed === 'metrics' && overview.metrics && overview.metrics.length > 0 && (
                 <MetricsGrid series={overview.metrics} verdicts={overview.verdicts} labels={labels} />
             )}
             {sec.embed === 'snapshots' && <SnapshotsBlock verdicts={overview.verdicts} byName={byName} />}
             {sec.embed === 'moat' && overview.moat && (
-                <MoatTable sources={overview.moat.sources} rows={overview.moat.rows} verdicts={overview.verdicts} labels={labels} />
+                <MoatTable sources={overview.moat.sources} rows={overview.moat.rows} verdicts={overview.verdicts} labels={labels} compact={overview.moatCompact} />
             )}
             {sec.embed === 'scatter' && <div className="mt-3 max-w-3xl flex">{scatterCard}</div>}
         </>
@@ -407,15 +412,41 @@ export function SectorOverview({ overview, companies }: {
         return (
             <div className="ml-5 mb-3 bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden animate-in slide-in-from-top-1 duration-150">
                 {masthead}
-                <div className="px-5 py-4 border-b border-gray-100 space-y-7">
-                    {overview.sections.map(renderSection)}
-                    {uncovered.length > 0 && (
-                        <p className="text-[10px] text-gray-400">
-                            Not yet covered by this note: {uncovered.map(c => c.name).join(', ')}.
-                        </p>
-                    )}
-                </div>
-                {closingBlock}
+                {hasBusinessTab && (
+                    <div className="px-5 pt-3 flex flex-wrap gap-1.5 border-b border-gray-100" role="tablist">
+                        {([[1, 'Tab 1 · The analysis'], [2, 'Tab 2 · What the companies do']] as const).map(([k, label]) => (
+                            <button
+                                key={k}
+                                role="tab"
+                                aria-selected={tab === k}
+                                onClick={() => setTab(k)}
+                                className={`text-[11.5px] px-3 py-1.5 rounded-t-md border border-b-0 -mb-px transition-colors ${tab === k
+                                    ? 'bg-white border-gray-200 text-[#4A7AAF] font-semibold'
+                                    : 'bg-[#F4F6F8] border-transparent text-gray-500 hover:text-[#4A7AAF]'}`}
+                            >
+                                {label}
+                            </button>
+                        ))}
+                    </div>
+                )}
+                {tab === 2 && overview.businesses ? (
+                    <div className="px-5 py-4 border-b border-gray-100 space-y-7">
+                        {overview.businesses.intro.map(renderSection)}
+                        <BusinessProfiles profiles={overview.businesses.profiles} verdicts={overview.verdicts} />
+                    </div>
+                ) : (
+                    <>
+                        <div className="px-5 py-4 border-b border-gray-100 space-y-7">
+                            {overview.sections.map(renderSection)}
+                            {uncovered.length > 0 && (
+                                <p className="text-[10px] text-gray-400">
+                                    Not yet covered by this note: {uncovered.map(c => c.name).join(', ')}.
+                                </p>
+                            )}
+                        </div>
+                        {closingBlock}
+                    </>
+                )}
                 {sourcesBlock}
             </div>
         );
