@@ -29,8 +29,8 @@ const SUFFIXES = /\s+(Limited|Ltd|Laboratories|Lifesciences|Life Sciences|Indust
 const shortName = (name: string) => {
     const base = name.replace(/\s*\(.*\)$/, '').trim();
     const short = base.replace(SUFFIXES, '').trim();
-    // "State Bank of India" must not become "State Bank of".
-    return /\bof$/i.test(short) ? base : short;
+    // "State Bank of India" must not become "State Bank of", nor "Pine Labs" a bare "Pine".
+    return /\bof$/i.test(short) || /^\S{1,4}$/.test(short) ? base : short;
 };
 
 /**
