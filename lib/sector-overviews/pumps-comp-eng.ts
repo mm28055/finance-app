@@ -1,11 +1,12 @@
 import { SectorOverview } from './types';
 import { pumpsCompEngBusinesses } from './pumps-comp-eng-businesses';
+import { pumpsCompEngValuationInputs } from './card-data/pumps-comp-eng';
 
 // Quarter and year columns used by every metric below.
 const Q = ['Q1 FY26', 'Q2 FY26', 'Q3 FY26', 'Q4 FY26', 'Q1 FY27'];
 const FY = ['FY22', 'FY23', 'FY24', 'FY25', 'FY26'];
 
-// Segment labels. The ranking, the metric grid and the moat table are grouped by these.
+// Segment labels. The metric grid, the moat table and the company cards are grouped by these.
 const COMP = 'Compressors — sold on lifetime running cost';
 const PUMP = 'Engineered pumps — sold on reliability and qualification';
 const ENG = 'Engines and generator sets — sold on channel and service';
@@ -17,23 +18,28 @@ export const pumpsCompEng: SectorOverview = {
     format: 'ranked',
     businesses: pumpsCompEngBusinesses,
     moatCompact: true,
+    leadCharts: true,
+    valuation: {
+        writtenOn: '21 Sep 2026',
+        inputs: pumpsCompEngValuationInputs,
+        // My base-case earnings growth, % a year over three to five years (section 6).
+        myGrowth: {
+            'Elgi Equipments': 17,
+            'Kirloskar Pneumatic': 18,
+            'Kirloskar Brothers': 14,
+            'KSB': 13,
+            'Kirloskar Oil': 15,
+            'Powerica': 18,
+            'Greaves Cotton': 15,
+            'Shakti Pumps': 8,
+            'Oswal Pumps': 5,
+        },
+    },
     standfirst:
         "Nine makers of pumps, compressors, engines and generator sets, sorted into four businesses before anything is compared. " +
         "Compressor makers win on the customer's electricity bill and earn the steadiest returns. Engineered-pump makers win on qualification for nuclear, thermal and data-centre work. Engine and genset makers win on channel and service. Solar-pump makers sell into government schemes that set the price and pay late. Every chart uses filed results and five years of history.",
-    lastUpdated: '2026-09-21',
+    lastUpdated: '2026-09-23',
     asOfQuarter: 'Q1 FY27',
-
-    takeaways: [
-        "**Separate the four businesses first.** Compressors (Elgi, Kirloskar Pneumatic) have earned 18–30% on capital for five years. Engineered pumps (KSB, Kirloskar Brothers) earn 20–28% now, off a lower base at Kirloskar Brothers. Engines and gensets (Kirloskar Oil, Powerica, Greaves) earn 10–27%, depending on who owns the engine. Solar pumps (Shakti, Oswal) earned the highest returns in the sector in FY25 and have since seen margins halve.",
-        "**The solar-pump boom has turned.** Shakti's operating margin fell from 23% to 10% in a year, and Oswal's from 27% to 16%. Maharashtra tender prices fell 8–9% as 40-plus bidders crowded into one state while the national PM-KUSUM 2.0 scheme stayed delayed. Both depend on state agencies that pay late: Oswal's receivables stretched to 229 days, and Shakti has about ₹1,770cr outstanding, including ₹450cr of retention money.",
-        "**Operating profit versus operating cash separates the sector cleanly.** Over FY22–FY26 Kirloskar Oil (standalone) earned ₹2,586cr of operating profit and collected ₹1,888cr of operating cash (73%). Kirloskar Brothers earned ₹2,280cr and collected ₹1,533cr (67%), Elgi ₹2,338cr and ₹1,365cr (58%, rising to 78% in FY26) and Powerica ₹1,607cr and ₹1,456cr (91%). At the other end, KSB turned ₹1,468cr of operating profit into only ₹522cr (36%), and ₹95cr of free cash after capex. Shakti turned ₹1,427cr into ₹250cr (18%). Oswal earned ₹1,184cr and had **negative** operating cash of ₹96cr.",
-        "**The solar pair has not yet produced any free cash.** Over five years Shakti's free cash after capex was −₹129cr and Oswal's −₹363cr, against reported net profit of ₹897cr and ₹806cr. Shakti's borrowings rose from ₹75cr to ₹505cr, and it is spending ₹1,500–1,700cr more on solar cells and modules.",
-        "**My own growth estimates (section 6) are below what most prices assume.** Over the next three to five years I expect earnings to grow about 18% a year at Kirloskar Pneumatic and Powerica, 17% at Elgi, 14–15% at Kirloskar Brothers and Kirloskar Oil, and 13% at KSB. The solar pair should manage only single digits once scheme prices settle. Only Kirloskar Pneumatic and Powerica are priced at or below my estimate.",
-        "**Kirloskar Pneumatic is the best combination of quality and price.** Return on capital has risen every year from 18% to 30%, and it has no debt. It guides 18–20% margins and ₹2,100cr of revenue for FY27 (+19%). At 33x it needs about 19% growth a year.",
-        "**Nuclear and data centres are real, but slower than the headlines.** KSB has ₹1,235cr of nuclear orders, about 45% of its order book, but NPCIL's own test bed broke down and testing slipped to September. Kirloskar Brothers booked about ₹110cr of nuclear pump orders in Q1. Kirloskar Oil won its first hyperscale data-centre order, about 192 MW. Powerica's data-centre order book doubled to ₹1,100cr.",
-        "**Margins everywhere were squeezed by the West Asia war, and the recovery is promised for H2.** Kirloskar Oil's standalone margin fell from 13.5% to 11.2%, KSB grew only 2–3% in H1, and Powerica's genset margin was 5.6%. Each management says price increases catch up in Q2–Q3.",
-        "**KSB is the most expensive for what it is delivering.** At 53x it needs about 25% a year from a business that grew 2–3% in the first half and has turned only 36% of its profit into cash over five years, as receivables from state solar schemes built up.",
-    ],
 
     metrics: [
         {
@@ -89,6 +95,7 @@ export const pumpsCompEng: SectorOverview = {
         },
         {
             key: 'roce',
+            more: true,
             label: 'Return on capital by year',
             unit: '%',
             periods: FY,
@@ -161,6 +168,131 @@ export const pumpsCompEng: SectorOverview = {
                 'Oswal Pumps': 'FY25 and FY26 negative: receivables from state agencies grew faster than profit.',
             },
         },
+        {
+            key: 'fcf',
+            label: 'Free cash flow ÷ sales',
+            unit: '%',
+            periods: [...FY, '5 yrs'],
+            scale: 'diverging',
+            legend: ['Burning cash', 'Generating cash'],
+            source: 'Filed cash-flow statements (Screener): operating cash minus spending on fixed assets, as a share of sales. The last column uses five-year totals. Kirloskar Oil and Kirloskar Pneumatic standalone; KSB calendar years (CY21–CY25).',
+            note: 'Shows who funds growth from its own cash and who needs borrowing. Acquisitions and investments in subsidiaries are not included.',
+            values: {
+                'Elgi Equipments': [1.1, 3.2, 7.3, 8.4, 7.6, 5.9],
+                'Kirloskar Pneumatic': [1.7, -0.2, 8.4, 8.4, 9.2, 6.1],
+                'Kirloskar Brothers': [1.0, 5.3, 6.4, 6.6, 4.4, 4.9],
+                'KSB': [1.6, -3.8, 2.2, 3.4, -0.0, 0.8],
+                'Kirloskar Oil': [3.4, 3.4, 3.3, 5.4, 3.4, 3.8],
+                'Powerica': [8.9, 8.2, 1.4, -3.2, -4.1, 1.3],
+                'Greaves Cotton': [-7.1, -7.9, -11.8, -3.6, -1.8, -6.1],
+                'Shakti Pumps': [-0.4, 1.5, -0.7, -3.5, -2.1, -1.6],
+                'Oswal Pumps': [8.3, 6.5, -1.1, -14.0, -10.4, -7.3],
+            },
+            cellNotes: {
+                'Powerica': 'FY25–FY26: spending on new wind farms, funded from its own cash.',
+                'Greaves Cotton': 'Consolidated, including electric-scooter losses. The standalone engine business produced about ₹790cr of free cash over five years.',
+                'Oswal Pumps': 'FY25–FY26: unpaid bills from state scheme agencies.',
+            },
+        },
+        {
+            key: 'leverage',
+            label: 'Net debt ÷ operating profit',
+            unit: 'x',
+            periods: FY,
+            scale: 'diverging',
+            invert: true,
+            legend: ['More debt', 'Net cash'],
+            source: 'Filed balance sheets and profit and loss (Screener): borrowings (including leases) minus cash, ÷ operating profit. Mutual-fund investments are counted as cash for Kirloskar Pneumatic only.',
+            note: 'How many years of operating profit it would take to repay net debt. Below zero means more cash than debt. Nobody here is heavily borrowed.',
+            values: {
+                'Elgi Equipments': [0.5, 0.0, -0.3, -0.6, -0.3],
+                'Kirloskar Pneumatic': [-1.7, -1.7, -2.0, -1.8, -1.6],
+                'Kirloskar Brothers': [1.1, 0.1, -0.2, -0.3, -0.3],
+                'KSB': [-1.7, -1.0, -0.9, -0.9, -0.7],
+                'Kirloskar Oil': [0.2, 0.1, 0.2, -0.2, -0.6],
+                'Powerica': [1.8, 0.7, 0.4, 0.8, -1.0],
+                'Greaves Cotton': [6.3, -4.0, -2.6, -2.5, -0.7],
+                'Shakti Pumps': [0.6, 0.9, -0.5, 0.0, -0.4],
+                'Oswal Pumps': [1.9, 0.9, 0.5, 0.8, -0.3],
+            },
+            cellNotes: {
+                'Kirloskar Oil': 'Standalone engine business; excludes the lending subsidiary, Arka Fincap.',
+                'Oswal Pumps': 'FY26 includes money from its 2025 share sale; the company reported net debt of ₹266cr by June 2026.',
+                'Powerica': 'FY26: cash rose from ₹43cr to ₹961cr during the year.',
+            },
+        },
+        {
+            key: 'capex',
+            more: true,
+            label: 'Capex ÷ sales',
+            unit: '%',
+            periods: [...FY, '5 yrs'],
+            scale: 'sequential',
+            source: 'Filed cash-flow statements (Screener): spending on fixed assets as a share of sales. The last column uses five-year totals.',
+            note: 'How capital-hungry growth is. Most of these companies spend about their depreciation; Powerica is building wind farms, and Shakti’s solar-cell plant is only starting.',
+            values: {
+                'Elgi Equipments': [1.6, 2.3, 1.5, 2.7, 3.9, 2.5],
+                'Kirloskar Pneumatic': [9.0, 3.4, 5.4, 4.8, 3.8, 5.0],
+                'Kirloskar Brothers': [2.7, 3.6, 2.8, 2.0, 3.0, 2.8],
+                'KSB': [2.5, 5.9, 4.1, 4.0, 3.5, 4.0],
+                'Kirloskar Oil': [2.5, 2.9, 5.7, 5.4, 5.6, 4.6],
+                'Powerica': [5.4, 2.6, 11.4, 12.6, 19.1, 11.1],
+                'Greaves Cotton': [3.9, 2.9, 6.0, 2.8, 2.8, 3.6],
+                'Shakti Pumps': [1.9, 2.5, 4.4, 4.3, 6.7, 4.5],
+                'Oswal Pumps': [9.7, 6.5, 3.3, 3.4, 6.6, 5.4],
+            },
+            cellNotes: {
+                'Shakti Pumps': 'It plans ₹1,500–1,700cr more by September 2027 on solar cells and modules, about three-fifths of a year’s sales.',
+            },
+        },
+        {
+            key: 'turnover',
+            more: true,
+            label: 'Sales per ₹1 of fixed assets',
+            unit: 'x',
+            periods: FY,
+            scale: 'sequential',
+            source: 'Filed accounts (Screener): sales ÷ net fixed assets at year end.',
+            note: 'Higher means more sales from each rupee of plant. Powerica is low because it owns wind farms; the solar-pump makers are high because they assemble.',
+            values: {
+                'Elgi Equipments': [4.6, 5.2, 5.5, 5.9, 5.7],
+                'Kirloskar Pneumatic': [4.5, 5.6, 5.7, 5.6, 5.2],
+                'Kirloskar Brothers': [5.7, 7.0, 6.3, 6.9, 6.5],
+                'KSB': [4.8, 5.2, 5.4, 5.8, 5.8],
+                'Kirloskar Oil': [7.3, 9.7, 9.9, 5.6, 6.0],
+                'Powerica': [1.7, 2.2, 2.3, 3.1, 2.5],
+                'Greaves Cotton': [4.7, 7.3, 3.2, 3.4, 3.9],
+                'Shakti Pumps': [8.1, 6.6, 9.2, 11.1, 8.6],
+                'Oswal Pumps': [5.1, 4.8, 7.8, 10.7, 12.7],
+            },
+        },
+        {
+            key: 'orderCover',
+            more: true,
+            label: 'Order book ÷ yearly sales',
+            unit: 'x',
+            periods: ['Latest'],
+            scale: 'sequential',
+            source: 'Latest order book from the Q1 FY27 call or presentation ÷ sales over the last four quarters (Screener).',
+            note: 'Years of work already booked. Blank where the company does not publish an order book: Elgi, Kirloskar Oil and Greaves sell mostly through dealers. Kirloskar Brothers’ book excludes small pumps.',
+            values: {
+                'Elgi Equipments': [null],
+                'Kirloskar Pneumatic': [1.0],
+                'Kirloskar Brothers': [0.9],
+                'KSB': [1.0],
+                'Kirloskar Oil': [null],
+                'Powerica': [0.5],
+                'Greaves Cotton': [null],
+                'Shakti Pumps': [0.3],
+                'Oswal Pumps': [null],
+            },
+            cellNotes: {
+                'KSB': 'Nuclear is 45% of the ₹2,744cr book and is delivered over several years.',
+                'Powerica': 'Genset book only (₹1,700cr); the wind farms sell power on 25-year contracts.',
+                'Shakti Pumps': '₹1,000cr, about four months of work; scheme orders arrive in batches.',
+                'Oswal Pumps': 'Published in pumps (22,025) and megawatts, not rupees.',
+            },
+        },
     ],
 
     moat: {
@@ -195,17 +327,19 @@ export const pumpsCompEng: SectorOverview = {
 
     sections: [
         {
-            heading: '1. Recommendation and key takeaways',
+            heading: '1. Recommendation, up front',
             body: [
-                "Ranked by attractiveness at today's prices. The ranking weighs how durable the moat is, how structural the margins are, whether profit turns into cash and what the price already assumes. Each line says what the company does and why it ranks where it does. Sections 3–8 support it.",
+                "**Kirloskar Pneumatic is the one I would own first.** It makes air, refrigeration and gas compressors, including its own forgings and castings, and its return on capital has risen every year from 18% to 30% with no debt. Material costs fell as a share of sales in a quarter when they rose everywhere else. It guides 19% growth for FY27 at 18–20% margins, and its price asks for about what I expect it to deliver.",
+                "**Powerica is the second buy, and the cheapest good business here.** It assembles generator sets around Cummins engines for data centres and industry, and owns wind farms that earn most of its profit. Its data-centre order book has doubled, it turned 91% of five years' operating profit into cash, and its owned wind capacity is set to nearly double. The weak point is Cummins, which can sell large projects directly. **Elgi and Kirloskar Brothers are good businesses to follow**: Elgi has the best product (the most efficient compressors in most categories) and Kirloskar Brothers is qualifying for nuclear and US data-centre work, but both prices already assume their best case.",
+                "**Wait on Kirloskar Oil and KSB.** Kirloskar Oil has the strongest genset channel and service network and won its first hyperscale data-centre order, but its margin has fallen three quarters running and its price needs far more growth than I expect. KSB owns India's longest nuclear-pump record, but grew only 2–3% in the first half, NPCIL's test bed has delayed its deliveries, and it has turned only about a third of five years' profit into cash.",
+                "**Two things to hold onto before reading the rest.** First, **who sets the price decides the margin.** Compressor buyers choose on their electricity bill, so Elgi and Kirloskar Pneumatic hold margins; state agencies set solar-pump prices and 40-plus suppliers bid, so Shakti's and Oswal's margins have halved. Second, **reported profit is not cash for the solar pair**: most of it is money owed by state agencies. I would **pass on Greaves** (a decent engine business funding a loss-making scooter company) and **Shakti** (margins halved while it spends heavily on solar cells), and **wait on Oswal**, which is cheap only if its receivables are collected.",
             ],
-            embed: 'ranking',
         },
         {
             heading: '2. Charts: margins, growth, returns, cash cycle and cash conversion',
             body: [
-                "Five views of the same nine companies, grouped by business. Use the buttons to switch between them. Every figure comes from filed results or filed ratios; where a figure is missing it is left blank, not estimated. Hover over a cell for any caveat. Order books, where companies publish them, are in section 6.",
-                "**Two companies are shown standalone.** Kirloskar Oil's consolidated accounts include Arka Fincap, a lender, which distorts margins, returns and cash flow. Kirloskar Pneumatic's consolidated history is only two years long. Greaves is shown consolidated, because the electric-scooter losses are what its shareholders own, with the core business noted.",
+                "The six views that matter most, with four more behind **More measures**. Companies are grouped by business. Every figure comes from filed results or filed ratios (Screener); where a figure is missing it is left blank, not estimated. Hover over a cell for any caveat.",
+                "**Two companies are shown standalone.** Kirloskar Oil's consolidated accounts include Arka Fincap, a lender, which distorts margins, returns and cash flow. Kirloskar Pneumatic's consolidated history is only two years long. Greaves is shown consolidated, because the electric-scooter losses are what its shareholders own. KSB reports calendar years. **Start with cash conversion and free cash flow**: they separate the solar pair from everyone else more clearly than margins do.",
             ],
             embed: 'metrics',
         },
@@ -232,8 +366,8 @@ export const pumpsCompEng: SectorOverview = {
                     text: "**Solar pumps are almost entirely policy:** PM-KUSUM 2.0 is said to be with the Prime Minister's Office, and every solar-pump company expects it “next month”. Nuclear depends on NPCIL's ordering and the SHANTI Act that opens the sector. Emissions rules (CPCB IV+) reset the genset market in 2024. US tariffs (25% on Elgi's compressors) and the West Asia war hit exports this quarter.",
                 },
                 {
-                    label: 'Where the profit pools sit',
-                    text: "The table uses each group's filed results. Compressors earn the most consistently. Engineered pumps earn well once a company is qualified. Engines depend on who owns the engine. Solar pumps earned the most at the peak and are now earning the least.",
+                    label: 'What these companies actually depend on',
+                    text: "The labels say pumps, compressors and engines, but each share rests on something different. **Kirloskar Pneumatic** depends on gas: city gas stations, biogas and oil and gas packages. **Elgi** depends on factories replacing old compressors with efficient ones, in India and the US. **Kirloskar Brothers** and **KSB** depend on water, power and, later, NPCIL's nuclear calendar. **Kirloskar Oil** and **Powerica** depend on data centres and industry buying backup power, and Powerica also on Cummins's choices and the wind. **Greaves** depends on how fast its scooter business stops losing money. **Shakti** and **Oswal** depend on PM-KUSUM 2.0 and on state agencies paying. **Buy each for what it actually depends on, not for the sector label.**",
                 },
             ],
             tables: [
@@ -253,26 +387,26 @@ export const pumpsCompEng: SectorOverview = {
         {
             heading: '4. Moat (comparative)',
             body: [
-                "Five things protect profits in this sector. Each company is graded on each one. The grade is the reason a customer cannot easily switch. Direction says whether that protection is growing or shrinking, based on what was said on the latest call.",
+                "Five things protect profits in this sector. Each company is graded on each one; hover over a grade for the reason. How each company's advantage works is explained in Tab 2.",
             ],
             embed: 'moat',
             embedFirst: true,
             points: [
                 {
-                    label: 'Strongest',
-                    text: "**Elgi and Kirloskar Pneumatic.** Both sell to buyers who choose on running cost and reliability rather than price, and both make their key parts themselves. Both are widening their lead.",
+                    label: 'Lasting: compressors sold on the electricity bill',
+                    text: "A compressor's electricity over its life costs many times its price, so about 80% of buyers choose on running cost. **Elgi** is the most efficient maker in about 70% of industrial categories and makes its own motors; **Kirloskar Pneumatic** makes its own forgings and castings and maintains more than 1,000 CNG stations. Both edges should last, because efficiency comes from design and in-house parts that take years to build. The threat is at the low end, where Chinese machines are cheap; Elgi has launched a low-cost range to meet them.",
                 },
                 {
-                    label: 'Hardest to copy',
-                    text: "**KSB and Kirloskar Brothers' nuclear and large-pump approvals**, which take years to earn. The catch is that the customer (NPCIL, utilities) controls the timing.",
+                    label: 'Lasting but shrinking: nuclear and large-pump qualification',
+                    text: "**KSB** has supplied the primary coolant pumps in every Indian heavy-water reactor since 1978, and **Kirloskar Brothers** holds all of India's nuclear metallic volute pump work. These approvals take years and last. But KSB's near-monopoly is shrinking: Kirloskar Brothers has proved performance for primary pumps and Flowserve is also bidding, so the next eight-reactor tender may have three bidders instead of one. And in both cases NPCIL, not the company, decides the timing.",
                 },
                 {
-                    label: 'Best service network',
-                    text: "**Kirloskar Oil.** It owns its engines; **Powerica** does not (its engine is Cummins'), which is its weak point.",
+                    label: 'Wearing away: gensets and diesel engines',
+                    text: "**Kirloskar Oil** has one of the widest service networks in India and its aftermarket has grown double digits for 12 quarters, but batteries paired with smaller gensets are cutting how many hours backup sets run, which erodes fuel, spares and service over time. **Powerica** depends on Cummins, which has started selling some data-centre projects directly. **Greaves**'s diesel three-wheeler engines are slowly giving way to electric and CNG vehicles.",
                 },
                 {
-                    label: 'Weakest',
-                    text: "**Shakti and Oswal.** The state sets the price and dozens of approved suppliers compete, so when a scheme pauses, prices fall. How each company's advantage works is explained in Tab 2.",
+                    label: 'Barely a moat: solar pumps for state schemes',
+                    text: "**Shakti** makes its own motors, controllers and inverters, and **Oswal** its own pumps, motors and modules, which lowers cost. But the state sets the price, 40-plus approved suppliers bid, and the buyer pays when it pays. When the scheme paused, Maharashtra tender prices fell 8–9%. Cost advantages do not become pricing power in this market.",
                 },
                 {
                     label: 'Competitors outside the list',
@@ -283,258 +417,164 @@ export const pumpsCompEng: SectorOverview = {
         {
             heading: '5. Margins (comparative)',
             body: [
-                "The margin chart in section 2 shows four patterns. The West Asia war raised metal, freight and energy costs for everyone in Q1; what matters is who could pass them on.",
+                "Are the margins structural? The West Asia war raised metal, freight and energy costs for everyone in Q1; what matters is who could pass them on, and how fast.",
+                "Whether the profit turns into cash is in section 2 (the **Cash conversion** and **Free cash flow** tabs) and on each company card in Tab 2.",
             ],
             points: [
                 {
-                    label: 'Steady and rising: compressors',
-                    text: "**Elgi (14–16%)** held its margin even though it under-priced the raw-material rise (it expected 3%, got 5–6%) and absorbs a 25% US tariff. It targets 18% by FY31. **Kirloskar Pneumatic (13–26%, averaging about 20%)** swings with its lumpy Q4, but its annual margin rose from 14% to 21% in five years. Management commits to 18–20%. **Both margins are structural,** because the customer buys on running cost and both make their own key components (Elgi its motors, Kirloskar Pneumatic its forgings).",
+                    label: 'Structural: compressors, and pumps at a lower level',
+                    text: "**Elgi** (14–16%) held its margin even though raw materials rose 5–6% against the 3–4% it planned for, and it absorbs a 25% US tariff; it targets 18% by FY31. **Kirloskar Pneumatic**'s annual margin rose from 14% to 21% in five years; quarters swing because Q4 is always the biggest, and it guides 18–20%. **Kirloskar Brothers** (11–13%) and **KSB** (about 13% over a cycle) earn less but steadily, because qualified large pumps are not bought on price alone. **I expect all four margins to hold**, with KSB squeezed until its price rises catch up with its foundries' 12–15% increases.",
                 },
                 {
-                    label: 'Steady at a lower level: pumps and own engines',
-                    text: "**Kirloskar Brothers (11–13%)**: standalone margin rose to 13.7% while overseas subsidiaries fell to 5% as chemical-industry service work in the UK dried up. It has raised prices about 10% since January. **KSB (9–17%)** targets 13–14% but raised prices by only single digits while its foundries charged it 12–15% more, and fixed-price projects cannot be repriced. **Kirloskar Oil (11–14%)** fell three quarters running as employee costs rose 40% and exports dropped. It says the pricing lag clears in three to six months.",
+                    label: 'Cyclical: engines and gensets',
+                    text: "**Kirloskar Oil**'s standalone margin fell from 13.5% to 11.2% over three quarters as costs rose before prices and employee costs jumped 40%; dealer products reprice within three to six months, so I expect most of it back. **Powerica** is two businesses: gensets on Cummins engines earned 5.6% in Q1, while wind earned 49% and new wind projects 82–83%. Its group margin rises as wind grows. **Greaves**'s core engines earn 11–14%, but the group earns 6–8% after scooter losses.",
                 },
                 {
-                    label: 'Thin on the core, fat on the side: Powerica and Greaves',
-                    text: "**Powerica's** genset business earned 5.6% in Q1 on Cummins engines. Its wind business earned 48.6%, and new wind projects earn 82–83%. **The group margin is mostly the wind farms.** **Greaves's** core engine business earns 11–14%, but the consolidated margin is 6–8% because of electric-scooter losses. Burn is now in single digits, and management says the scooter business turns positive in four to six quarters.",
+                    label: 'Not structural: solar pumps',
+                    text: "**Shakti** fell from 23% to 10%: about 6 points from raw materials and 4 from lower selling prices. **Oswal** fell from 27% to 16%: about 8–9 points from tender prices, 3–3.5 from raw materials and 1–1.5 from lost scale. Both call it temporary, but Oswal's own chairman said current bid prices are not sustainable for the industry. With 40-plus suppliers holding capacity, **I do not expect FY25's margins to return.**",
                 },
                 {
-                    label: 'Collapsed: solar pumps',
-                    text: "**Shakti** fell from 23% to 10%. Management puts about 6 points on raw materials and 4 on lower selling prices. **Oswal** fell from 27% to 16%: about 8–9 points from tender prices, 3–3.5 from raw materials, 1–1.5 from lost scale. Both call it temporary. Oswal guides 15–17% for FY27, **but its own CMD said current bid prices “are not sustainable” for the industry,** which describes the problem rather than a fix.",
+                    label: 'Working capital: the biggest drains',
+                    text: "Over FY22–FY26, **Oswal** tied up ₹1,054cr in working capital, almost all in unpaid bills (₹1,203cr): its customers now take 199 days to pay, up from 38. **Shakti** tied up ₹867cr, again mostly bills (₹1,065cr, 173 days), and says about ₹1,770cr is owed to it including ₹450cr of retention money. **Greaves** tied up ₹717cr, mostly outside bills and stock (items Screener groups as other, which include its finance arm's lending). **This is why the solar pair's profits have not become cash.**",
                 },
                 {
-                    label: 'Operating profit versus operating cash: how to read the table below',
-                    text: "Operating cash is counted after tax, so a business that collects normally converts **70–80%** of its operating profit (EBITDA). Below 50% means profit is being tied up in unpaid bills or stock. Free cash is what is left after capex, and it is the money that can actually pay dividends or fund growth. The table sets five years of each, in rupees, against each other.",
+                    label: 'Working capital: getting worse',
+                    text: "**KSB** tied up ₹615cr: its customers now take 118 days to pay, up from 68–81, because state solar-pump agencies pay late, and it holds 197 days of stock, partly exports waiting to ship. That is the main reason it turned only 36% of profit into cash, surprising for a company of its quality. Management says both improve in the second half. **Oswal** also now pays its own suppliers faster (46 days, from 78), which adds to the squeeze.",
                 },
                 {
-                    label: 'Good converters: Powerica, Kirloskar Oil, Kirloskar Brothers, Greaves core',
-                    text: "**Powerica** turned ₹1,607cr of operating profit into ₹1,456cr of operating cash (91%), and FY26 cash (₹453cr) was higher than its operating profit (₹376cr). But free cash was only ₹337cr, and negative in FY25 and FY26, because it is spending on wind farms. That is capex funded from its own cash, not a collection problem. **Kirloskar Oil (standalone)** converted 73% and holds ₹485cr net cash, with a 25-day cash cycle. **Kirloskar Brothers** converted 67% and, because it spends only about its depreciation, turned 69% of net profit into free cash. The best on free cash is **Greaves's standalone engine business**: ₹793cr of free cash on ₹812cr of net profit. All of it and more has gone into the scooter business, which is why consolidated free cash is −₹614cr.",
+                    label: 'Working capital: improving',
+                    text: "**Kirloskar Pneumatic** cut its stock from 132 to 88 days and its cash cycle from 128 to 90. **Elgi**'s cash conversion rose every year from 23% to 78% as it ran down the stock it built in the supply-chain crunch. **Kirloskar Brothers**' customers pay in 53 days, down from 62.",
                 },
                 {
-                    label: 'Improving: Elgi and Kirloskar Pneumatic',
-                    text: "**Elgi** converted only 23% in FY22 and 38% in FY23 as it built stock through the supply-chain crunch. It has risen every year since, to 78% in FY26 (₹454cr of cash on ₹583cr of operating profit), and its cash cycle fell from 135 to 114 days. **Kirloskar Pneumatic** converted 66% over five years, with one weak year (24% in FY23). In Q1 FY27 capital employed in compression fell by ₹44cr, a sign cash is still coming in.",
-                },
-                {
-                    label: 'Weak: KSB, and the solar pair',
-                    text: "**KSB's 36% is the surprise in a company of its quality.** Over five years it collected ₹522cr on ₹1,468cr of operating profit and generated only ₹95cr of free cash, 9% of reported net profit. In CY25 cash was ₹93cr on ₹377cr of operating profit. Management blames receivables from state solar-pump agencies and export stock held back by the war, and says both improve in H2. **Shakti** collected ₹250cr on ₹1,427cr (18%). In FY25, its best year for profit, it collected ₹20cr on ₹603cr. It has about ₹760cr not yet due, ₹560cr of debtors and ₹450cr of retention money. **Oswal** reported ₹514cr of operating profit in FY26 and had −₹77cr of operating cash. Its receivables reached 229 days. **For both, reported profit is mostly money owed by state agencies.**",
-                },
-            ],
-            tables: [
-                {
-                    caption: 'Operating profit (EBITDA) versus operating cash, FY22–FY26 (₹cr)',
-                    columns: ['Company', 'Operating profit, 5 yrs', 'Operating cash, 5 yrs', 'Cash ÷ profit', 'Free cash after capex, 5 yrs', 'Free cash ÷ net profit', 'FY26: profit → cash'],
-                    rows: [
-                        ['Powerica', '1,607', '1,456', '**91%**', '337', '43%', '376 → 453'],
-                        ['Kirloskar Oil (standalone)', '2,586', '1,888', '**73%**', '877', '51%', '735 → 511'],
-                        ['Kirloskar Brothers', '2,280', '1,533', '**67%**', '1,019', '69%', '545 → 334'],
-                        ['Kirloskar Pneumatic (standalone)', '1,171', '775', '**66%**', '432', '54%', '363 → 228'],
-                        ['Elgi Equipments', '2,338', '1,365', '**58%**', '1,042', '64%', '583 → 454'],
-                        ['Greaves Cotton (standalone core)', '1,009', '809', '**80%**', '793', '98%', '320 → 348'],
-                        ['Greaves Cotton (consolidated)', '619', '−334', '**negative**', '−614', 'negative', '239 → 33'],
-                        ['KSB (CY21–CY25)', '1,468', '522', '**36%**', '95', '9%', '377 → 93'],
-                        ['Shakti Pumps', '1,427', '250', '**18%**', '−129', 'negative', '422 → 124'],
-                        ['Oswal Pumps', '1,184', '−96', '**negative**', '−363', 'negative', '514 → −77'],
-                    ],
-                    note: 'Filed annual accounts (via Screener). Operating profit is before interest, tax and depreciation; operating cash is after tax and working capital; free cash is operating cash minus capex. Net profit over five years: Elgi 1,641, Kirloskar Pneumatic 796, Kirloskar Brothers 1,476, KSB 1,058, Kirloskar Oil 1,733, Powerica 782, Greaves standalone 812, Shakti 897, Oswal 806.',
-                },
-                {
-                    caption: 'How structural is each margin?',
-                    columns: ['Company', 'Range (5 quarters)', 'Verdict', 'Why'],
-                    rows: [
-                        ['Elgi Equipments', '14–16%', '**Structural, rising**', 'Efficiency leadership; own motors; 18% by FY31'],
-                        ['Kirloskar Pneumatic', '13–26%', '**Structural at ~20%**', 'Own forgings and castings; guides 18–20%'],
-                        ['Kirloskar Brothers', '11–13%', '**Structural, standalone rising**', 'Price rises ~10%; overseas service mix weak'],
-                        ['KSB', '9–17%', '**Structural at ~13%, squeezed**', 'Fixed-price projects; price rises lag costs'],
-                        ['Kirloskar Oil', '11–14%', '**Squeezed, recoverable**', 'Pricing lag; employee costs +40%'],
-                        ['Powerica', '10–16%', '**Two businesses**', 'Gensets ~6%; wind ~49%'],
-                        ['Greaves Cotton', '6–8%', '**Diluted**', 'Core 11–14%; scooter losses'],
-                        ['Shakti Pumps', '10–23%', '**Cyclical, at the bottom**', 'Scheme prices and raw materials'],
-                        ['Oswal Pumps', '16–27%', '**Cyclical, falling**', 'Tender prices −9%; rooftop lower margin'],
-                    ],
-                },
-                {
-                    caption: 'Q1 FY27 cash and balance sheet, as stated on the calls',
-                    columns: ['Company', 'What management said', 'Balance sheet'],
-                    rows: [
-                        ['Kirloskar Pneumatic', 'Capital employed in compression fell by ₹44cr in the quarter', 'No debt; rating raised to AA'],
-                        ['Kirloskar Oil', 'Cash cycle 25 days; inventory up to 64 days', 'Standalone net cash ₹485cr'],
-                        ['Elgi Equipments', 'Capex mainly the new campus and land in Italy', 'Net cash “very strong”'],
-                        ['Powerica', 'No capex needed for gensets on one shift', 'Net cash ₹193cr'],
-                        ['Kirloskar Brothers', 'Inventory up while the foundry was modernised; capex equal to depreciation', 'Borrowings ₹250cr at FY26'],
-                        ['KSB', 'Stock built for export orders awaiting clearance; solar receivables to improve in H2', 'Essentially debt-free'],
-                        ['Greaves Cotton', '₹331cr into the scooter business and ₹50cr into the finance arm', 'Standalone cash ₹426cr in March'],
-                        ['Shakti Pumps', '₹760cr not yet due, ₹560cr debtors, ₹450cr retention; ₹1,800cr of bank lines', 'Borrowings ₹505cr at FY26'],
-                        ['Oswal Pumps', 'Cash cycle 224 days (172 in March); receivables 229 days', 'Net debt ₹266cr'],
-                    ],
-                    note: 'Indian companies file cash flows only half-yearly, so the quarter is visible only where management spoke about it.',
+                    label: 'Working capital: built into the business',
+                    text: "**Kirloskar Oil** runs a 25–34-day cycle because dealers pay quickly and suppliers give about 80 days' credit; only ₹281cr went into working capital in five years. **Powerica** absorbed only ₹30cr. **Kirloskar Brothers** and **Elgi** hold 130–145 days of stock because large engineered pumps and a global compressor range need it. **Judge each against its own history, not against the others.**",
                 },
             ],
         },
         {
             heading: '6. Growth and capex (comparative)',
             body: [
-                "What each management says it will deliver, what it is spending, what it expects to earn on that spending, and whether it delivered last time. It ends with my own estimate of each company's growth over the next three to five years, based on the calls, the filed history and the outlook for the economy and the sector. My observations come first; the tables follow.",
+                "Where the next five years of growth come from, how each company has done against what it promised, and my own estimate of earnings growth.",
             ],
             points: [
                 {
-                    label: 'The quality companies barely need capital',
-                    text: "Kirloskar Brothers spends about its depreciation. Elgi's capex is mostly a new campus. Powerica runs its genset plant on one shift at 75–80% use. Kirloskar Pneumatic spends ₹100cr a year plus a ₹320cr commitment to Ziffra, a new air-conditioning compressor business under a production-linked incentive scheme. **Growth here comes from filling existing plants and new products, which is why returns hold.**",
+                    label: 'Growth driver: data centres',
+                    text: "New data centres need backup gensets, cooling pumps and fire systems. **Kirloskar Oil** won its first hyperscale order (about 192 MW) with a five-to-six-year service contract; **Powerica**'s data-centre book went from ₹400–500cr to ₹1,100cr in a year; **Kirloskar Brothers** sells $7.5–10m cooling and fire packages per US hyperscale site, where data centres are 23% of its US revenue; **KSB** supplies liquid-cooling pumps through global makers. I expect this to run for three to five years, but competition is rising (Powerica said so directly) and Cummins can take projects from its own dealer.",
                 },
                 {
-                    label: 'The solar pair is spending the most, at the worst time',
-                    text: "Shakti plans ₹1,500–1,700cr by September 2027, about ₹800cr this year, on a 0.5 GW module line and a 2.2 GW cell-and-module plant. It is funded partly by an ₹800cr term loan, while its margin has halved and 18% of profit turns into cash. It targets ₹5,000cr of revenue by 2029. Oswal is adding 1 GW of module capacity by the end of Q2 and is entering rooftop solar, where its CMD admits margins “cannot match” PM-KUSUM. **Both are building capacity in solar modules, where the industry is heading into overcapacity.**",
+                    label: 'Growth driver: gas',
+                    text: "City gas stations are projected to go from about 7,000 to 15,000 by 2031, and biogas plants are being built under government schemes. **Kirloskar Pneumatic** makes the CNG and biogas compressors and maintains the stations, with record biogas bookings. This is a steady, decade-long driver, but package orders arrive in lumps and some Middle East orders were delayed in Q1.",
                 },
                 {
-                    label: 'Data centres are the growth everyone is chasing',
-                    text: "Kirloskar Oil's first hyperscale order (about 192 MW) is recognised this year, with a five-to-six-year service contract. Powerica's data-centre book went from ₹400–500cr to ₹1,100cr in a year, to be executed over 12–18 months. Kirloskar Brothers sells $7.5–10m cooling and fire packages per hyperscale site in the US, where data centres are 23% of revenue. KSB supplies liquid-cooling pumps through global OEMs. **Competition is rising (Powerica said so directly), and Cummins can take projects from its own dealer.**",
+                    label: 'Growth driver: nuclear',
+                    text: "The SHANTI Act opens nuclear power to more investment, and India targets 100 GW by 2047. **KSB** (₹1,235cr of nuclear orders), **Kirloskar Brothers** (about ₹110cr of nuclear orders in Q1) and **Kirloskar Oil** (an NPCIL genset order) benefit. It is real but slow: equipment revenue arrives about four years after an order, and KSB can ship at most one primary pump a quarter until NPCIL's test bed is fixed.",
                 },
                 {
-                    label: 'Nuclear is real but slow and outside the companies’ control',
-                    text: "KSB's primary coolant pumps for Gorakhpur are built, but NPCIL's test bed failed. Each pump needs 500 hours of testing, and KSB can ship at most one a quarter. It expects a tender for eight more reactors “in the next few months”. Kirloskar Brothers has proved hydraulic and mechanical performance for primary pumps and is finishing metallurgy trials. Kirloskar Oil's NPCIL genset order pays by milestone, with nothing in Q1. **Nuclear revenue arrives about four years after an order.**",
+                    label: 'Growth driver: efficiency and factory spending',
+                    text: "Factories replacing old compressors and pumps with efficient ones grow demand faster than the economy. **Elgi** grew 16–17% in constant currency in Q1, taking share in India and the US (+37%); **Kirloskar Pneumatic** gains share with its KHOLOS centrifugal machines and adds air-conditioning compressors under a production scheme from FY28. This driver is steady and long, following India's manufacturing investment.",
                 },
                 {
-                    label: 'My outlook: the economy and the sector',
-                    text: "These are my own estimates, not company guidance (table at the end of this section). **The starting point is the economy.** If India's nominal GDP grows about 10–11% a year, industrial equipment makers usually grow roughly in line or a little faster, because manufacturing capex, power and water spending rise with it. Beyond that, three demand streams are genuinely above trend: **data centres** (new capacity needs gensets, cooling pumps and fire systems), **gas** (city gas stations are projected to go from about 7,000 to 15,000 by 2031, according to Kirloskar Pneumatic) and **nuclear** (the SHANTI Act opens the sector, but equipment revenue lags orders by about four years). One stream is below trend and uncertain: **solar pumps**, where PM-KUSUM 2.0 is still awaiting approval and prices have already fallen. Two headwinds apply to everyone: raw-material and freight costs from the West Asia war, and US tariffs on exports.",
+                    label: 'Growth driver: solar-pump schemes',
+                    text: "PM-KUSUM installations went from about 1.5 lakh in FY24 to 5 lakh in FY26, then stalled while phase two waits for approval. **Shakti** and **Oswal** depend on it; both are also moving into solar modules and rooftop solar, where the industry is heading into overcapacity. Even if KUSUM 2.0 is approved soon, I expect prices to stay near today's lower level.",
                 },
                 {
-                    label: 'Compressors: the best growth outlook, 15–18% a year',
-                    text: "**Kirloskar Pneumatic** has the widest set of drivers: CNG compressors as gas stations double, biogas (record bookings), KHOLOS centrifugals, refrigeration for cold chains, and from FY28 air-conditioning compressors under the PLI scheme. It has a year of orders in hand and guides +19% for FY27. I expect **about 18%** earnings growth, with margins held at 18–20%. **Elgi** grows by taking share: it grows faster than India's industrial output because its efficient compressors replace older ones, and North America (+37%) and Europe (now at breakeven) add to that. Stripping out currency, it grew 16–17% in Q1. With margins rising towards 18%, I expect **about 17%**. That is healthy, but short of the ~22% its price assumes.",
+                    label: 'Delivering or beating',
+                    text: "**Powerica** grew 27% in Q1 with a doubled data-centre book. **Elgi** grew 23% in Q1 (16–17% in constant currency) and keeps a conservative margin target. **Kirloskar Pneumatic** kept its ₹2,100cr FY27 guide after a soft Q1, which it usually meets.",
                 },
                 {
-                    label: 'Engineered pumps: steady, 13–14%, with nuclear as the upside',
-                    text: "**Kirloskar Brothers'** revenue grew only about 7% a year from FY23 to FY26, and earnings fell in FY26. Its drivers now are water supply, thermal power, US data-centre packages and, later, nuclear. I expect **about 14%** earnings growth. The upside case (18%) needs the US framework contract and primary-circuit nuclear orders to land. **KSB** has the bigger nuclear book (₹1,235cr) but can ship only about one primary pump a quarter until NPCIL's test bed is fixed, its valves margin is weak, and solar receivables absorb cash. I expect **about 13%**. Both are good businesses whose growth is limited by customers' timetables, not by demand.",
+                    label: 'Cautious',
+                    text: "**Kirloskar Brothers** guides only double-digit growth, a figure it usually meets, and spends about its depreciation. **Greaves** delivered growth in its core engines but not margin, and promises scooter break-even in four to six quarters.",
                 },
                 {
-                    label: 'Engines and gensets: 15–18%, if the data-centre boom holds',
-                    text: "**Powerica** has the most visible growth. Its genset order book is ₹1,700cr, more than half from data centres, and owned wind capacity is set to rise from 330 MW to 634 MW. New wind projects earn 82–83% EBITDA margins, so profit should grow faster than revenue as wind's share rises. I expect **about 18%**, with the risk that Cummins keeps taking large projects directly. **Kirloskar Oil** has real drivers (data centres, 12 quarters of double-digit aftermarket growth, railways, marine, defence), but its $2bn target implies about 23% a year from a business that grew 9–19% last year while margins fell. I expect **about 15%**, with margins back to about 13%. **Greaves** is the widest range: the core should grow 14–17%, and consolidated earnings could grow much faster if scooter losses stop, or not at all if they don't. My base case is **about 15%**.",
+                    label: 'Missed',
+                    text: "**KSB** aimed for double-digit growth and grew 2–3% in the first half. **Oswal**'s Q1 revenue fell 8% and its FY27 plan (+20–25%) leans on ₹800–1,000cr from a rooftop business it has just started. **Shakti**'s margin halved and it gives no margin guidance.",
                 },
                 {
-                    label: 'Solar pumps: single digits until the scheme and prices settle',
-                    text: "PM-KUSUM installations went from about 1.5 lakh in FY24 to 5 lakh in FY26, but that peak came with 23–27% margins that bidders have since competed away. Even if KUSUM 2.0 is approved soon, I expect prices to stay near today's level because 40-plus suppliers now hold capacity. **Shakti** should grow volume, but its earnings are likely to grow only **about 8%** from FY26's base while margins stay near 10–13%. Its own target once cells are running is about 15%. **Oswal** is shifting to rooftop solar, which its own CMD says earns less. I expect **about 5%**, and less if receivables force it to slow down. **A faster scheme approval at better prices is the upside; nothing in the calls suggests margins return to FY25 levels.**",
+                    label: 'Mixed or silent',
+                    text: "**Kirloskar Oil** targets $2bn of revenue by FY30, about 2.3 times FY26, while its margin has fallen three quarters running, and would not split price from volume. How many years of work each company has booked is in the **Order book ÷ yearly sales** chart tab above.",
                 },
                 {
-                    label: 'Read guidance by who is giving it',
-                    text: "**Conservative:** Kirloskar Pneumatic (kept ₹2,100cr despite a soft Q1), Elgi (margin target of 18% by FY31, not next year). **Precise:** Kirloskar Brothers (double-digit growth, a figure it usually meets). **Stretched:** Kirloskar Oil ($2bn revenue by FY30, about 2.3 times FY26), Shakti (₹5,000cr by 2029), Oswal (20–25% growth this year with ₹800–1,000cr from a rooftop business it has just started, and 30–40% a year after). **Missed:** KSB (aimed for double digits, grew 2–3% in H1), Oswal (a CMD answering why the stock has halved since listing).",
+                    label: 'My outlook',
+                    text: "If India's nominal GDP grows about 10–11% a year, industrial equipment makers usually grow roughly in line or a little faster. Data centres, gas and nuclear are genuinely above trend; solar pumps are below it and uncertain. **I expect the compressor makers and Powerica to compound at 17–18%, the pump and engine makers at 13–15%, and the solar pair in single digits.**",
                 },
             ],
             tables: [
                 {
-                    caption: 'Guidance, order books, capex and track record',
-                    columns: ['Company', 'Guidance', 'Order book', 'Capex', 'Track record'],
-                    rows: [
-                        ['Elgi Equipments', 'Margin 18% by FY31', 'Not published (product business)', 'New campus; land in Italy', '**Conservative**: Q1 +23%'],
-                        ['Kirloskar Pneumatic', '₹2,100cr FY27 (+19%); margin 18–20%', '₹1,854cr (~1 year)', '₹100cr + ₹320cr Ziffra over FY27–28', '**Conservative**: kept guidance after +10% Q1'],
-                        ['Kirloskar Brothers', 'Double-digit growth', 'Domestic ₹2,558cr + overseas ₹1,505cr (excl. small pumps)', 'About equal to depreciation', '**Precise**: standalone margin up'],
-                        ['KSB', 'Aims for double digits; margin 13–14%', '₹2,744cr (nuclear ₹1,235cr)', '₹80–120cr a year', '**Missed**: H1 +2–3%'],
-                        ['Kirloskar Oil', '$2bn revenue by FY30', 'Not published; NPCIL order pending', 'Not given', '**Stretched**: margin down three quarters'],
-                        ['Powerica', 'Double-digit growth; margin recovery from Q3', 'Gensets ₹1,700cr (data centres ₹1,100cr)', 'Wind: 330 → 634 MW', '**Delivering**: +27%'],
-                        ['Greaves Cotton', 'Core 16–20% CAGR; FY27 margins held', 'Not published', '₹331cr to scooters; ₹50cr to finance', '**Mixed**: growth yes, margin no'],
-                        ['Shakti Pumps', '₹5,000cr by 2029', '₹1,000cr (two quarters)', '₹1,500–1,700cr by Sept 2027', '**Stretched**: margin halved'],
-                        ['Oswal Pumps', '+20–25% FY27; margin 15–17%; 30–40% later', '22,025 pumps + 72 MW solar EPC', '1 GW module line by end of Q2', '**Missed**: Q1 −8%'],
-                    ],
-                },
-                {
                     caption: 'My estimate of earnings growth over the next three to five years',
-                    columns: ['Company', 'What drives it', 'Revenue growth', 'Margin direction', 'Earnings growth: low / base / high', 'Price needs'],
+                    numericColumns: [2],
+                    columns: ['Company', 'What drives it', 'Earnings growth: low / base / high'],
                     rows: [
-                        ['Kirloskar Pneumatic', 'Industrial capex, CGD stations, biogas, Ziffra from FY28', '15–18%', 'Holds 18–20%', '13% / **18%** / 22%', '~19%'],
-                        ['Powerica', 'Data-centre gensets; wind capacity nearly doubling', '12–15%', 'Rising (wind mix)', '12% / **18%** / 22%', '~16%'],
-                        ['Elgi Equipments', 'Share gains in India and the US; Europe past breakeven', '13–15%', 'Rising towards 18%', '12% / **17%** / 20%', '~22%'],
-                        ['Kirloskar Brothers', 'Water, power, nuclear, US data centres', '11–13%', 'Slowly rising', '10% / **14%** / 18%', '~20%'],
-                        ['Kirloskar Oil (standalone)', 'Data centres, share gains, aftermarket, exports', '13–16%', 'Back to ~13%', '10% / **15%** / 20%', '~25%'],
-                        ['KSB', 'Nuclear deliveries from CY27; aftermarket', '10–13%', 'Flat at 13–14%', '8% / **13%** / 17%', '~25%'],
-                        ['Greaves Cotton', 'Core engines; scooter losses shrinking', '14–17% (core)', 'Rising if scooters break even', '5% / **15%** / 25%+', '~23%'],
-                        ['Shakti Pumps', 'PM-KUSUM 2.0; cells and modules; exports', '10–15%', 'Stays 10–13%, not back to 23%', '−5% / **8%** / 20%', '~17%'],
-                        ['Oswal Pumps', 'State tenders; rooftop solar', '10–20%', 'Falls towards 13–15%', '−10% / **5%** / 15%', '~5%'],
+                        ['Kirloskar Pneumatic', 'Industrial capex, gas stations, biogas, AC compressors from FY28', '13% / **18%** / 22%'],
+                        ['Powerica', 'Data-centre gensets; wind capacity nearly doubling', '12% / **18%** / 22%'],
+                        ['Elgi Equipments', 'Share gains in India and the US; Europe past breakeven', '12% / **17%** / 20%'],
+                        ['Kirloskar Brothers', 'Water, power, nuclear, US data centres', '10% / **14%** / 18%'],
+                        ['Kirloskar Oil', 'Data centres, share gains, aftermarket, exports', '10% / **15%** / 20%'],
+                        ['KSB', 'Nuclear deliveries from CY27; aftermarket', '8% / **13%** / 17%'],
+                        ['Greaves Cotton', 'Core engines; scooter losses shrinking', '5% / **15%** / 25%+'],
+                        ['Shakti Pumps', 'PM-KUSUM 2.0; cells and modules; exports', '−5% / **8%** / 20%'],
+                        ['Oswal Pumps', 'State tenders; rooftop solar', '−10% / **5%** / 15%'],
                     ],
-                    note: 'My own judgement from the calls, filed history and the sector outlook above, not company guidance. Base case assumes India’s nominal GDP grows about 10–11% a year and no recession. “Price needs” is the growth the current P/E requires (section 8).',
+                    note: 'My own judgement, not guidance. Base case assumes India’s nominal GDP grows about 10–11% a year and no recession. The growth each price needs is in the live valuation table in section 8.',
                 },
             ],
         },
         {
             heading: '7. Risk factors',
             body: [
-                "Sector-wide risks first, then each company. The table records which risks management addressed on the call and which it avoided or left unresolved.",
+                "The risks fall into five groups. For each, what management addressed and what it left unanswered.",
             ],
             points: [
                 {
-                    label: 'Government schemes and payment',
-                    text: "Shakti and Oswal live on PM-KUSUM and state programmes. A delay cuts volume and, by crowding bidders into fewer tenders, cuts price too. Payment runs through state nodal agencies whose timing no company controls. KSB is now exposed to the same receivables.",
+                    label: 'Government schemes and late payment',
+                    text: "**Shakti and Oswal** live on PM-KUSUM and state programmes; a delay cuts volume and, by crowding bidders into fewer tenders, cuts price too. Shakti disclosed exactly what it is owed (₹760cr not yet due, ₹560cr of debtors, ₹450cr of retention) and says KUSUM 2.0 comes 'next month', but **gave no margin guidance and would not split its ₹5,000cr target**. Oswal quantified its margin loss by cause, but its FY27 target leans on a new business. **KSB** is now exposed to the same agencies' late payments.",
                 },
                 {
-                    label: 'Input costs and fixed-price contracts',
-                    text: "Metals, castings, freight and gas all rose with the West Asia war. Companies selling through dealers reprice within a quarter; project and tender businesses (KSB, Powerica's older orders, the solar pair) cannot.",
+                    label: 'Input costs and fixed prices',
+                    text: "Metals, castings, freight and gas all rose with the West Asia war. Dealer businesses (**Kirloskar Oil, Elgi**) reprice within a quarter or two; project and tender businesses (**KSB**, **Powerica**'s older orders, the solar pair) cannot. Powerica said its contracts have no escalation clause. **Kirloskar Oil would not give the price-versus-volume split** or its share-option costs.",
                 },
                 {
                     label: 'Batteries and gensets',
-                    text: "Battery storage paired with smaller generators that run fewer hours is becoming the design for backup power. It does not end the genset sale but erodes fuel, spares and service, which is the most profitable part for Kirloskar Oil and Powerica.",
+                    text: "Battery storage paired with smaller gensets that run fewer hours is becoming the design for backup power. It does not end the genset sale but erodes fuel, spares and service, the most profitable part for **Kirloskar Oil** and **Powerica**. Neither addressed it directly on the call.",
                 },
                 {
-                    label: 'Dependence on someone else’s decision',
-                    text: "Powerica depends on Cummins' channel choices. KSB depends on its German parent for technology and pays royalties under an advance pricing agreement, and group software costs (SAP S/4HANA) will be charged to it next year. Nuclear revenue depends on NPCIL's test bed and ordering calendar.",
+                    label: 'Depending on someone else’s decision',
+                    text: "**Powerica** depends on Cummins's channel choices and **declined to comment on Cummins taking data-centre projects directly**. **KSB** depends on its German parent for technology, pays royalties, and will be charged group software costs next year that it has not quantified. **KSB and Kirloskar Brothers** depend on NPCIL's test bed and ordering calendar. **Elgi** absorbs a 25% US tariff and would not split screw from piston sales.",
                 },
-            ],
-            tables: [
                 {
-                    caption: 'Company-specific risks and how management handled them',
-                    columns: ['Company', 'Key risk', 'Addressed on the call', 'Avoided or unresolved'],
-                    rows: [
-                        ['Elgi Equipments', 'US tariffs; Chinese low-end competition', '25% tariff absorbed; new low-cost range launched against China', 'Would not split screw and piston sales or give semiconductor revenue'],
-                        ['Kirloskar Pneumatic', 'Middle East packages delayed', 'Limited to package orders; guidance kept', 'Would not quantify the revenue deferred from Q1'],
-                        ['Kirloskar Brothers', 'Overseas margins; dispatch delays', 'Foundry fixed; UK service work returns in Q2–Q3', 'Nuclear share of order book not given'],
-                        ['KSB', 'Nuclear delay; weak H1; cash conversion', 'Test-bed problem and solar receivables explained', 'Group SAP costs next year not quantified'],
-                        ['Kirloskar Oil', 'Margin decline; employee costs +40%', 'Pricing lag of 3–6 months explained', '**Would not give share-option costs or the price-versus-volume split**'],
-                        ['Powerica', 'Genset margin 5.6%; Cummins dependence', 'Price rises phased in; recovery from Q3', '**Declined to comment on Cummins taking data-centre projects directly**'],
-                        ['Greaves Cotton', 'Scooter losses; margin down 2–2.5 points', 'Burn in single digits; break-even in 4–6 quarters', 'Scooter-business valuation not discussed'],
-                        ['Shakti Pumps', 'Margin collapse; receivables; capex', 'Receivables split disclosed; KUSUM 2.0 “next month”', '**No margin guidance; would not split the ₹5,000cr target**'],
-                        ['Oswal Pumps', 'Pricing; receivables; delivery on guidance', 'Margin loss quantified by cause', '**Some rooftop projects book revenue now and profit over five years; FY27 target leans on a new business**'],
-                    ],
+                    label: 'Capital allocation and family disputes',
+                    text: "**Greaves** keeps sending cash to its scooter business (₹331cr more this year) and did not discuss what that business is worth. **Shakti** is spending ₹1,500–1,700cr on solar cells and modules while its margin has halved and debt has risen. The three **Kirloskar** companies share a brand whose use is in litigation between the family groups.",
                 },
             ],
         },
         {
             heading: '8. Valuation (comparative)',
             body: [
-                "A price only makes sense against the growth it assumes. The rough rule used here: to earn about 12% a year while the multiple drifts down to a mature 18 times over ten years, earnings must compound at roughly **13% at 20x, 16% at 25x, 18% at 30x, 21% at 40x, 26% at 60x and 33% at 100x.** The chart shows return on capital against the P/E; the table sets each company's required growth against what it is delivering, what it guides and my own estimate from section 6.",
+                "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it gives credit for cash and charges for debt. Where the two disagree, the balance sheet, heavy depreciation or losses in a side business are the reason.",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **5% at 9x, 16% at 26x, 17% at 27x, 19% at 34x, 22% at 42x, 23% at 46x and 25% at 53–55x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E.",
             ],
-            embed: 'scatter',
-            embedFirst: true,
             points: [
                 {
-                    label: 'Plausible',
-                    text: "**Kirloskar Pneumatic** (33x; needs ~19%; my estimate ~18%; guides 19% for FY27 at 18–20% margins with rising returns). **Powerica** (26x; needs ~16%; my estimate ~18%; double-digit genset growth plus wind capacity nearly doubling, though the genset margin is thin). These are the only two where my estimate is at or near what the price needs.",
+                    label: 'What EV/EBITDA changes',
+                    text: "**Kirloskar Pneumatic** holds about ₹595cr of cash and treasury investments, so it is cheaper than its P/E suggests. **Greaves** looks far cheaper on EV/EBITDA than on P/E because scooter losses and depreciation sit between operating profit and earnings. **Kirloskar Oil**'s P/E is on group earnings including its lender; the EV/EBITDA here uses the engine business alone, which is the cleaner view. **Shakti and Oswal** look cheap on both, but their operating profit has not turned into cash.",
+                },
+                {
+                    label: 'Reasonable',
+                    text: "**Kirloskar Pneumatic** (price close to my estimate, rising returns, no debt) and **Powerica** (the price needs less growth than I expect, with strong cash conversion).",
                 },
                 {
                     label: 'Full',
-                    text: "**Elgi** (42x; needs ~22%; my estimate ~17%; growing 16–17% in constant currency with margins heading to 18%). **Kirloskar Brothers** (36x; needs ~20%; my estimate ~14%; guides double digits, with nuclear and US data centres as the upside). Both are good businesses whose prices already assume the upside case.",
+                    text: "**Elgi** and **Kirloskar Brothers**: good businesses whose prices already assume their upside case.",
                 },
                 {
                     label: 'Stretched',
-                    text: "**KSB** (53x; needs ~25%; my estimate ~13%; grew 2–3% in H1). **Kirloskar Oil** (55x on consolidated earnings including the lender; needs ~25%; my estimate ~15%; guides about 23% a year to FY30 with margins falling now). **Greaves** (46x; needs ~23%; my estimate ~15% with a very wide range; the price includes a loss-making scooter business).",
+                    text: "**KSB** and **Kirloskar Oil** (prices that need roughly 25% a year against my 13–15%), **Greaves** (the price includes a loss-making scooter business) and **Shakti** (margins halved and 18% cash conversion).",
                 },
                 {
                     label: 'Cheap for a reason',
-                    text: "**Shakti** (27x; needs ~17%; margins halved and cash conversion of 18%). **Oswal** (9.4x; needs only ~5%, but operating cash has been negative for two years and the price has fallen 65% from its high).",
+                    text: "**Oswal**: the price asks for almost no growth, about what I expect, but operating cash has been negative for two years and the price has fallen about 65% from its high.",
                 },
             ],
-            tables: [
-                {
-                    caption: 'What the price assumes',
-                    columns: ['Company', 'P/E', 'Return on capital (5-yr range)', 'Growth the price needs', 'What it is delivering or guiding', 'My estimate (section 6)', 'Verdict'],
-                    rows: [
-                        ['Elgi Equipments', '41.6', '19–24%', '~22%', '+23% Q1 (16–17% constant currency)', '~17%', '**Full**'],
-                        ['Kirloskar Pneumatic', '33.2', '18–30%', '~19%', '₹2,100cr guided (+19%)', '~18%', '**Plausible**'],
-                        ['Kirloskar Brothers', '35.6', '11–28%', '~20%', 'Double digits guided', '~14%', '**Full**'],
-                        ['KSB', '53.2', '21–25%', '~25%', '+2–3% H1', '~13%', '**Stretched**'],
-                        ['Kirloskar Oil', '55.2', '10–19% (standalone)', '~25%', '$2bn by FY30', '~15%', '**Stretched**'],
-                        ['Powerica', '26.0', '10–27%', '~16%', '+27% Q1', '~18%', '**Plausible**'],
-                        ['Greaves Cotton', '46.1', '−1% to 10% (consolidated)', '~23%', 'Core 16–20%', '~15% (wide range)', '**Stretched**'],
-                        ['Shakti Pumps', '26.9', '10–55%', '~17%', '₹5,000cr by 2029', '~8%', '**Stretched on cash**'],
-                        ['Oswal Pumps', '9.4', '38–78%', '~5%', '+20–25% guided; Q1 −8%', '~5%', '**Cheap for a reason**'],
-                    ],
-                    note: 'P/E and live returns update with the dashboard; required growth uses the P/E shown on 21 September 2026. Kirloskar Oil’s P/E is on consolidated earnings including Arka Fincap.',
-                },
-            ],
+            embed: 'valuation',
         },
     ],
 
@@ -542,71 +582,71 @@ export const pumpsCompEng: SectorOverview = {
         {
             company: 'Kirloskar Pneumatic', rank: 1, stance: 'COMPOUNDER', segment: COMP,
             what: "Makes air compressors, refrigeration compressors (for cold storage, dairies, fisheries) and gas compression packages (CNG, oil and gas, biogas), and maintains more than 1,000 CNG stations. It makes its own forgings and castings.",
-            view: "**The best combination of quality and price in the sector.** Return on capital has risen every year from 18% to 30%, it has no debt, and material cost fell from 47.6% to 43.9% of sales in a quarter when costs rose everywhere. It turned 66% of operating profit into cash over five years. It guides ₹2,100cr (+19%) at 18–20% margins; at 33x it needs ~19% a year, and I expect about 18%.",
+            view: "**The best combination of quality and price in the sector.** Return on capital has risen every year from 18% to 30%, it has no debt, and material cost fell from 47.6% to 43.9% of sales in a quarter when costs rose everywhere. It turned 66% of operating profit into cash over five years. It guides ₹2,100cr (+19%) at 18–20% margins, and the price roughly matches my ~18% estimate.",
             watch: 'Q2 catch-up after a soft Q1; Middle East package orders; Ziffra air-conditioning compressors ramping in FY28.',
         },
         {
-            company: 'Elgi Equipments', rank: 2, stance: 'COMPOUNDER', segment: COMP,
+            company: 'Powerica', rank: 2, stance: 'SCALEUP', segment: ENG,
+            what: "Assembles generator sets around Cummins engines for data centres and industry (83% of revenue), and owns 330 MW of wind farms selling power on 25-year contracts, plus wind construction work for others.",
+            view: "**Cheap, cash-generative and two businesses in one.** The genset book grew with ₹1,100cr of data-centre orders, but it earns only 5.6% on Cummins's engine. Wind earns 49%, rising to 82–83% on new projects, and owned capacity is set to nearly double to 634 MW. It turned 91% of operating profit into cash over five years, though wind capex made free cash negative in FY25–FY26. The price needs less than my ~18% estimate.",
+            watch: 'Genset margin recovering from Q3; Cummins’ channel choices on data-centre projects; wind projects on schedule.',
+        },
+        {
+            company: 'Elgi Equipments', rank: 3, stance: 'COMPOUNDER', segment: COMP,
             what: "Industrial air compressors sold worldwide under its own brand, about half outside India, plus a small automotive-equipment business. It makes its own motors and competes with Atlas Copco and Ingersoll Rand.",
-            view: "**The strongest product moat on the page, at a full price.** Its compressors are the most efficient in about 70% of categories, warranty costs are under 1% of sales, and its Demand Match technology is winning new customers. Returns have held at 19–24% for five years, and cash conversion has risen to 78%. At 42x it needs ~22%; I expect about 17%.",
+            view: "**The strongest product moat on the page, at a full price.** Its compressors are the most efficient in about 70% of categories, warranty costs are under 1% of sales, and its Demand Match technology is winning new customers. Returns have held at 19–24% for five years, and cash conversion has risen to 78%. The price needs more than my ~17% estimate.",
             watch: 'Price increases catching up by Q3; the new low-cost range against Chinese imports; US tariffs.',
         },
         {
             company: 'Kirloskar Brothers', rank: 4, stance: 'COMPOUNDER', segment: PUMP,
             what: "India's largest pump maker: small pumps for homes and farms, large engineered pumps for power, water, oil and gas, and nuclear plants, and packaged cooling and fire systems for data centres. Subsidiaries include SPP (UK and US).",
-            view: "**A qualification moat, at a full price.** It is the world's largest maker of concrete volute pumps, holds 100% of nuclear metallic volute pumps, and is qualifying for primary circuits. Returns rose from 11% to 20–28%, and it turned 67% of operating profit into cash (₹1,533cr on ₹2,280cr over five years). At 36x it needs ~20%; I expect about 14%, so the price already assumes nuclear and US data centres deliver.",
+            view: "**A qualification moat, at a full price.** It is the world's largest maker of concrete volute pumps, holds all of India's nuclear metallic volute pump work, and is qualifying for primary circuits. Returns rose from 11% to 20–28%, and it turned 67% of operating profit into cash over five years. The price needs more than my ~14% estimate, so it already assumes nuclear and US data centres deliver.",
             watch: 'Nuclear primary-pump orders; the US data-centre framework contract; UK service work returning.',
-        },
-        {
-            company: 'Powerica', rank: 3, stance: 'SCALEUP', segment: ENG,
-            what: "Assembles generator sets around Cummins engines for data centres and industry (81% of revenue), and owns 330 MW of wind farms selling power on 25-year contracts, plus wind construction work for others.",
-            view: "**Cheap, cash-generative and two businesses in one.** The genset book grew 26% with ₹1,100cr of data-centre orders, but it earns only 5.6% on Cummins' engine. Wind earns 49%, rising to 82–83% on new projects, and owned capacity is set to nearly double to 634 MW. It turned 91% of operating profit into cash over five years (₹1,456cr on ₹1,607cr), though wind capex made free cash negative in FY25–FY26. At 26x it needs ~16%; I expect about 18%, the best fit of growth and price in the sector.",
-            watch: 'Genset margin recovering from Q3; Cummins’ channel choices on data-centre projects; wind projects on schedule.',
         },
         {
             company: 'Kirloskar Oil', rank: 5, stance: 'PRICED', segment: ENG,
             what: "Makes diesel and gas engines and generator sets up to high horsepower, runs a wide genset distribution and service network, owns a pumps business (La-Gajjar), and holds a lending subsidiary (Arka Fincap) it plans to separate.",
-            view: "**The strongest channel and service business, with margins going the wrong way.** It won its first hyperscale data-centre order and gained domestic share. Aftermarket has grown double digits for 12 quarters, and it holds ₹485cr of standalone net cash. It turned 73% of standalone operating profit into cash over five years. But the standalone margin fell from 13.5% to 11.2% as employee costs rose 40%. At 55x it needs ~25%; I expect about 15%.",
+            view: "**The strongest channel and service business, with margins going the wrong way.** It won its first hyperscale data-centre order and gained domestic share. Aftermarket has grown double digits for 12 quarters, and it turned 73% of standalone operating profit into cash over five years. But the standalone margin fell from 13.5% to 11.2% as employee costs rose 40%. The price needs far more than my ~15% estimate.",
             watch: 'Margin back above 13% as price rises land; the Arka separation; NPCIL milestones.',
         },
         {
             company: 'KSB', rank: 6, stance: 'PRICED', segment: PUMP,
             what: "Indian arm of Germany's KSB: engineered pumps for power, nuclear, oil and gas; standard pumps for buildings, water and farms (including solar pumps); valves; and a spares and service business. Its financial year is the calendar year.",
-            view: "**A nuclear franchise priced as if it were already earning.** It holds ₹1,235cr of nuclear orders and returns of 21–25%. But H1 sales grew only 2–3%, NPCIL's test bed delayed its pumps, and valves margins fell to single digits. Over five years it turned ₹1,468cr of operating profit into only ₹522cr of operating cash (36%) and ₹95cr of free cash. At 53x it needs ~25%; I expect about 13%.",
+            view: "**A nuclear franchise priced as if it were already earning.** It holds ₹1,235cr of nuclear orders and returns of 21–25%. But H1 sales grew only 2–3%, NPCIL's test bed delayed its pumps, and valves margins fell to single digits. Over five years it turned only 36% of operating profit into cash. The price needs far more than my ~13% estimate.",
             watch: 'Gorakhpur pump testing from September; the eight-reactor tender; receivables from solar agencies.',
         },
         {
-            company: 'Shakti Pumps', rank: 7, stance: 'CYCLICAL', segment: SOLAR,
+            company: 'Greaves Cotton', rank: 7, stance: 'TURNAROUND', segment: ENG,
+            what: "Makes small diesel engines (three-wheelers, microcars), gensets, fire-pump and defence engines and automotive components, and owns most of Greaves Electric Mobility (Ampere scooters) and a vehicle-finance arm.",
+            view: "**A decent core carrying a costly bet.** The core business grew 16–19% at 11–14% margins and converts about 80% of profit to cash. But ₹331cr more went into the scooter business this year, and consolidated returns have been −1% to 10% for five years. The price needs more than my ~15% estimate, which has a very wide range depending on the scooter business.",
+            watch: 'Scooter business reaching break-even in 4–6 quarters as promised; core margin recovering in H2.',
+        },
+        {
+            company: 'Shakti Pumps', rank: 8, stance: 'CYCLICAL', segment: SOLAR,
             what: "India's largest solar-pump maker for government schemes (PM-KUSUM and state programmes), with its own motors, controllers and inverters, exports, and new businesses in rooftop solar, electric-vehicle motors and solar cells and modules.",
-            view: "**Volume is booming; profit and cash are not.** Pumps installed rose 58%, but the margin halved to 10%. Five-year cash conversion is 18%, and about ₹1,770cr is owed to it. It is spending ₹1,500–1,700cr on solar cells and modules, and targets only about 15% margin once they are running. Over five years it collected ₹250cr of cash on ₹1,427cr of operating profit. At 27x it needs ~17%; I expect about 8%.",
+            view: "**Volume is booming; profit and cash are not.** Pumps installed rose 58%, but the margin halved to about 10%. Five-year cash conversion is 18%, and about ₹1,770cr is owed to it. It is spending ₹1,500–1,700cr on solar cells and modules, and targets only about 15% margin once they are running. The price needs about twice my ~8% estimate.",
             watch: 'PM-KUSUM 2.0 approval; collections from state agencies; the solar-module line starting in September.',
         },
         {
-            company: 'Oswal Pumps', rank: 8, stance: 'CYCLICAL', segment: SOLAR,
-            what: "Solar pumps and motors for government schemes, plus solar modules, and now rooftop solar (PM Surya Ghar) and wires and cables. It listed recently.",
-            view: "**Priced for decline, and the cash says why.** Revenue fell 8% and margin fell 11 points in a year as tender prices dropped 9% and volumes fell. Receivables reached 229 days, and operating cash has been negative for two years. FY27 guidance of +20–25% leans on ₹800–1,000cr from a rooftop business it has just started. At 9.4x it needs only ~5%, about what I expect, but it is only cheap if the receivables are collected.",
+            company: 'Oswal Pumps', rank: 9, stance: 'CYCLICAL', segment: SOLAR,
+            what: "Solar pumps and motors for government schemes, plus solar modules, and now rooftop solar (PM Surya Ghar) and wires and cables. It listed in 2025.",
+            view: "**Priced for decline, and the cash says why.** Revenue fell 8% and margin fell 11 points in a year as tender prices dropped 9% and volumes fell. Customers now take about 200 days to pay, and operating cash has been negative for two years. FY27 guidance of +20–25% leans on ₹800–1,000cr from a rooftop business it has just started. The price asks for only about my ~5% estimate, but it is only cheap if the receivables are collected.",
             watch: 'Receivables coming down in Q3 as promised; the Maharashtra tender; whether rooftop revenue carries any profit.',
-        },
-        {
-            company: 'Greaves Cotton', rank: 9, stance: 'TURNAROUND', segment: ENG,
-            what: "Makes small diesel engines (three-wheelers, microcars), gensets, fire-pump and defence engines and automotive components, and owns most of Greaves Electric Mobility (Ampere scooters) and a vehicle-finance arm.",
-            view: "**A decent core carrying a costly bet.** The core business grew 16–19% at 11–14% margins and converts 80% of profit to cash. But ₹331cr more went into the scooter business this year, and consolidated returns have been −1% to 10% for five years. At 46x it needs ~23%; I expect about 15%, with a very wide range depending on the scooter business.",
-            watch: 'Scooter business reaching break-even in 4–6 quarters as promised; core margin recovering in H2.',
         },
     ],
 
     closing: {
         heading: '9. Summary review',
         body: [
-            "**Among the compressor makers, own Kirloskar Pneumatic and hold Elgi Equipments.** Both sell on the customer's electricity bill and make their own key parts. Kirloskar Pneumatic has rising returns, no debt and a price that matches its guidance. Elgi has the better product and global reach at a fuller price.",
-            "**Among the pump makers, Kirloskar Brothers is the better buy and KSB the better-known name.** Kirloskar Brothers has turned nuclear qualification and data-centre packages into rising returns and converts profit to cash well, but at 36x its price already assumes the upside: I expect about 14% growth against the ~20% needed. KSB owns the longest nuclear record in India, but its growth stalled in H1, its cash conversion is poor, and 53x assumes the nuclear orders are already paying.",
-            "**Among the engine makers, Powerica is the best buy and Kirloskar Oil the strongest franchise.** Powerica's wind farms carry a thin genset business, data-centre demand is strong, it converts 91% of operating profit into cash, and my ~18% growth estimate exceeds the ~16% its price needs. Kirloskar Oil has the best channel and a real data-centre win, but its margins must recover to justify 55x. Greaves Cotton's core is sound, but the price includes a scooter business that still loses money.",
-            "**The solar-pump pair is at the bottom of a scheme cycle, and neither turns profit into cash.** Shakti Pumps is growing volume and spending heavily on solar cells. Oswal Pumps is cheap because its volume, price and collections all fell at once. Both depend on PM-KUSUM 2.0, which every management says is imminent.",
+            "**Compressors.** **Kirloskar Pneumatic: own.** Rising returns, no debt and a price that matches its guidance. **Elgi: follow.** The best product and global reach, at a price that already assumes its upside; buy on a fall.",
+            "**Engineered pumps.** **Kirloskar Brothers: follow.** Nuclear qualification and US data-centre packages have lifted returns, but the price already assumes both deliver. **KSB: wait.** The longest nuclear record in India, but first-half growth stalled, cash conversion is poor and the price assumes nuclear is already paying.",
+            "**Engines and gensets.** **Powerica: own.** Wind farms carry a thin genset business, data-centre demand is strong, and it converts most of its profit into cash, at a price below my estimate. **Kirloskar Oil: wait.** The best channel and a real data-centre win, but margins must recover first. **Greaves: pass.** A sound core engine business, but the price includes a scooter business that still loses money.",
+            "**Solar pumps.** **Shakti: pass.** Volume is growing, but margins halved and it is spending heavily on solar cells. **Oswal: wait.** Cheap because volume, price and collections all fell at once; wait for the receivables to come down.",
             "**What would change my view.** PM-KUSUM 2.0 approved with prices above Maharashtra's would lift both solar names quickly. Kirloskar Oil's margin back above 13% would make it the top engine pick. NPCIL clearing its test bed and ordering eight reactors would re-rate KSB and Kirloskar Brothers. A sign that batteries are cutting genset running hours faster than expected would hurt Kirloskar Oil and Powerica.",
-            "**What to monitor next quarter.** Kirloskar Pneumatic: the Q2 catch-up. Elgi: price increases landing. Kirloskar Brothers: nuclear orders and the US framework. KSB: pump testing and H2 growth. Kirloskar Oil and Powerica: margin recovery. Greaves: scooter losses. Shakti and Oswal: the scheme decision and collections from state agencies.",
+            "**What to watch next quarter.** Kirloskar Pneumatic's Q2 catch-up; Elgi's price increases; Kirloskar Brothers' nuclear orders and US framework deal; KSB's pump testing and second-half growth; Kirloskar Oil's and Powerica's margin recovery; Greaves's scooter losses; the scheme decision and state collections for Shakti and Oswal.",
         ],
         bottomLine:
-            "Sort by business, then check the cash. Own Kirloskar Pneumatic and Powerica, the two where my growth estimate matches or beats what the price needs; hold Elgi Equipments and Kirloskar Brothers, good businesses priced for their upside case; wait on Kirloskar Oil and KSB until margins and nuclear deliveries catch up with the price; and treat the solar-pump makers as a scheme cycle whose profits are still sitting in receivables.",
+            "Sort by business, then check the cash. Own Kirloskar Pneumatic and Powerica, the two where my growth estimate matches or beats what the price needs; follow Elgi Equipments and Kirloskar Brothers, good businesses priced for their upside case; wait on Kirloskar Oil and KSB until margins and nuclear deliveries catch up with the price; and treat the solar-pump makers as a scheme cycle whose profits are still sitting in receivables.",
     },
 
     sources: [

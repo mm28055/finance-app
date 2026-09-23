@@ -1,4 +1,5 @@
 import { BusinessProfile, OverviewSection } from './types';
+import { pumpsCompEngCharts } from './card-data/pumps-comp-eng';
 
 // Tab 2 of the Pumps Comp & Eng note: what each company actually does.
 // Revenue totals are the filed figures (Screener). Splits come from the
@@ -9,7 +10,7 @@ const intro: OverviewSection[] = [
     {
         heading: 'How to read this tab',
         body: [
-            "One profile per company, grouped the same way as Tab 1. Each covers what it sells, where its revenue comes from, who buys and how, how hard the product is to make, and why customers stay. Revenue totals are the filed figures; the splits are what each company published in its latest investor presentation or said on its call. Where a split is not disclosed, the profile says so rather than guessing.",
+            "One profile per company, grouped the same way as Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it sells, where the money comes from and three charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are the filed figures; the splits are what each company published in its latest investor presentation or said on its call. Where a split is not disclosed, the profile says so rather than guessing.",
         ],
     },
     {
@@ -83,6 +84,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'High', text: "Gas compressors must meet oil-industry standards and run continuously in hazardous sites; a centrifugal compressor range takes years to design and prove. Owning its forging and casting shops gives it control over the hardest parts." },
         moat: "Installed base and approvals: once an oil company or gas distributor has standardised on its packages and it maintains the stations, switching is costly and risky. Its own foundry and forge keep costs and delivery in its hands.",
+        inShort: ["**Makes air, refrigeration and gas compressors** and CNG and biogas packages, with its own forgings and castings, and maintains 1,000+ CNG stations.", "**Good:** return on capital up every year from 18% to 30%, and no debt. **Watch:** package orders are lumpy and some Middle East orders slipped.", "**Verdict: own.** The price roughly matches the growth I expect."],
+        salesDrivers: ["**Gas**: CNG stations are projected to double to about 15,000 by 2031; gas is 35–40% of the business.", "**Industrial capex**: record air-compressor orders, with KHOLOS centrifugal machines gaining share.", "**Biogas and refrigeration**: record biogas bookings; refrigeration for cold chains, dairies and fisheries.", "**New products**: air-conditioning compressors (Ziffra) under a production scheme from FY28.", "**Order book**: ₹1,854cr, about a year of sales."],
+        inputs: "**Steel forgings and castings** (which it makes itself), motors, bearings, steel fabrication and bought-in components for packages. Materials were 50% of sales in FY26.",
+        costEffect: "**Well protected.** Making its own forgings and castings keeps costs in its hands, and material cost fell from 47.6% to 43.9% of sales in Q1 even as metals rose. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points (21% to 16%). **What happened:** India's steel-forging price index fell slightly over the chart period, and its margin trended up from about 11% to 15–26% by quarter (Q4 is always the biggest).",
+        competitors: [{ name: 'Atlas Copco, Ingersoll Rand', note: 'Global leaders in air compressors.' }, { name: 'Elgi Equipments', note: 'Indian rival in air compressors.' }, { name: 'Burckhardt, Ariel (packagers)', note: 'Rivals in gas compression packages.' }],
+        position: "**A leading Indian maker of gas compression packages for city gas**, and a growing player in centrifugal and refrigeration compressors.",
+        money: "Debt-free, with about ₹595cr of cash and treasury investments; its credit rating was raised to AA. It spends about ₹100cr a year plus ₹320cr on Ziffra over FY27–28. Promoters hold **39%**.",
+        watch: ["The Q2 catch-up after a soft Q1.", "Middle East package orders.", "Ziffra air-conditioning compressors from FY28."],
+        charts: pumpsCompEngCharts['Kirloskar Pneumatic'],
     },
     {
         company: 'Elgi Equipments',
@@ -105,6 +115,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'High', text: "The screw element (two rotors machined to micron gaps) decides efficiency and is hard to design and make well. Elgi designs its own and makes most of its motors, and its warranty costs are under 1% of sales. Chinese makers compete at the low end on price." },
         moat: "Efficiency and reliability: its machines are the most efficient in about 70% of industrial categories, so a buyer saves on electricity every year. Long warranties, a growing service business, and owned distributors in the US and Australia keep customers.",
+        inShort: ["**Makes industrial air compressors** sold worldwide under its own brand, about half outside India, plus a small automotive-equipment business.", "**Good:** the most efficient compressors in about 70% of categories, and cash conversion up to 78%. **Watch:** a 25% US tariff and cheap Chinese machines at the low end.", "**Verdict: follow.** The best product here, but priced for more growth than I expect."],
+        salesDrivers: ["**Factories replacing old compressors** with efficient ones: about 80% of buyers choose on running cost.", "**Share gains in India**: India grew 28% in Q1, mostly on volume, and its Demand Match technology wins new customers.", "**North America and Europe**: North America grew 37%; Europe is now at breakeven.", "**Spares and service**: 28–30% of India sales, but only 15–16% abroad against peers' ~38%, so there is room to grow."],
+        inputs: "**Iron castings, steel, copper and aluminium** (for its own motors), bearings and electronics. Materials were 49% of sales in FY26; staff are a large 20%.",
+        costEffect: "**Passed on with a lag.** It planned for a 3–4% rise in material costs and got 5%, and raises prices over a few months rather than at once. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points (15% to 10%). **What happened:** the castings price index was flat over the chart period, and its margin rose from about 12% to 15% on efficiency and mix.",
+        competitors: [{ name: 'Atlas Copco, Ingersoll Rand', note: 'The global leaders; Elgi competes on efficiency, not price.' }, { name: 'Kaeser, Kirloskar Pneumatic', note: 'Rivals in India and Europe.' }, { name: 'Chinese makers', note: 'Cheap low-end machines; Elgi launched a low-cost range against them.' }],
+        position: "**India's largest air-compressor maker and one of the few Indian brands selling globally**, with owned distributors in the US and Australia.",
+        money: "Net cash about ₹185cr (Screener). Capex is mainly a new campus and land in Italy. Promoters hold **31%**, unchanged.",
+        watch: ["Price increases catching up by Q3.", "The low-cost range against Chinese imports.", "US tariffs."],
+        charts: pumpsCompEngCharts['Elgi Equipments'],
     },
 
     // ── Engineered pumps ─────────────────────────────────────────────────────
@@ -131,6 +150,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'High', text: "Low for small pumps, where many compete. Very high for large engineered and nuclear pumps: custom hydraulic design, its own foundry, test beds for multi-megawatt pumps, and nuclear quality approval that takes years." },
         moat: "Track record and scale in large pumps: water and power buyers specify proven suppliers, and it has the foundry, test facilities and references few can match. Its dealer network and brand protect the small-pump business, though that part is competitive.",
+        inShort: ["**India's largest pump maker**: home and farm pumps, large engineered pumps for power, water and nuclear, and data-centre cooling packages in the US.", "**Good:** returns up from 11% to 20–28%, and good cash conversion. **Watch:** overseas margins fell as UK service work dried up.", "**Verdict: follow.** A qualification moat at a price that assumes its upside."],
+        salesDrivers: ["**Water and power projects** in India: irrigation, city water and thermal plants.", "**Nuclear**: about ₹110cr of orders in Q1, and qualifying for primary-circuit pumps.", "**US data centres**: $7.5–10m cooling and fire packages per hyperscale site; 23% of US revenue.", "**Small pumps** through dealers: 45–50% of the Indian parent's sales.", "**Order book**: ₹2,558cr domestic and ₹1,505cr overseas, excluding small pumps."],
+        inputs: "**Iron and steel castings** (from its own foundry), copper for motors, steel and stampings. Materials were 49% of sales in FY26.",
+        costEffect: "**Partly passed on.** It has raised prices about 10% since January; project orders reprice more slowly than dealer pumps. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points (12% to 7%). **What happened:** the castings index was flat over the chart period; its margin moved from about 12% to 10–13%, with the Indian parent rising and overseas subsidiaries falling to 5%.",
+        competitors: [{ name: 'KSB, Flowserve', note: 'Rivals in large engineered and nuclear pumps.' }, { name: 'Grundfos, Xylem, Wilo', note: 'Global pump makers in buildings and water.' }, { name: 'CRI, Shakti and many small makers', note: 'Rivals in small and farm pumps.' }],
+        position: "**India's largest pump maker** and the world's largest maker of concrete volute pumps.",
+        money: "Net cash about ₹155cr (Screener; borrowings ₹250cr at FY26). Capex is about equal to depreciation. Promoters hold **66%**, unchanged.",
+        watch: ["Nuclear primary-pump orders.", "The US data-centre framework contract.", "UK service work returning in Q2–Q3."],
+        charts: pumpsCompEngCharts['Kirloskar Brothers'],
     },
     {
         company: 'KSB',
@@ -154,6 +182,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'Very high', text: "Nuclear pumps need the highest quality approvals (it was the first pump company to get the ISO 19443 nuclear-safety certification), 500 hours of testing per pump, and decades of references. Standard pumps are ordinary engineering." },
         moat: "The German parent's designs, plus 47 years of Indian nuclear supply that no new entrant can match quickly. For standard pumps the dealer network and brand help, but competition is wide.",
+        inShort: ["**The Indian arm of Germany's KSB**: engineered pumps for power, nuclear, oil and gas, standard pumps, valves and service. Its year is the calendar year.", "**Good:** primary coolant pumps in every Indian heavy-water reactor since 1978, and ₹1,235cr of nuclear orders. **Bad:** H1 growth of 2–3% and only 36% of profit turned into cash.", "**Verdict: wait.** The price assumes the nuclear orders are already paying."],
+        salesDrivers: ["**Nuclear**: 45% of the ₹2,744cr order book, but it can ship at most one primary pump a quarter until NPCIL's test bed is fixed.", "**Standard pumps** through 800 dealers: about half of domestic orders, including solar pumps for state schemes.", "**Service (SupremeServ)**: growing about 15% a year.", "**Exports and data-centre liquid-cooling pumps** through global makers."],
+        inputs: "**Castings** (partly from its own foundries at Ahmednagar), steel, copper and bought-in motors. Materials were 54% of sales in CY25.",
+        costEffect: "**Lags costs.** It raised prices by single digits while its foundries charged 12–15% more, and fixed-price projects cannot be repriced; customers do not accept every increase suppliers ask for. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points (13% to 8%). **What happened:** the castings index was flat over the chart period, yet its margin slipped from about 14% to 12% on mix and weak valves.",
+        competitors: [{ name: 'Kirloskar Brothers, Flowserve', note: 'Now bidding for nuclear primary pumps against it.' }, { name: 'Grundfos, Xylem, Sulzer', note: 'Global rivals in engineered and building pumps.' }],
+        position: "**India's incumbent supplier of nuclear primary coolant pumps**, backed by its German parent's designs.",
+        money: "Net cash about ₹278cr (Screener); essentially debt-free. It pays royalties to its parent and will bear group software costs next year. The German parent holds **70%**, up from 67%.",
+        watch: ["Gorakhpur pump testing from September.", "The eight-reactor tender.", "Receivables from solar agencies."],
+        charts: pumpsCompEngCharts['KSB'],
     },
 
     // ── Engines and gensets ──────────────────────────────────────────────────
@@ -179,6 +216,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'Medium', text: "The engine, the hard part, is Cummins'. Powerica's skill is engineering, packaging, installing and servicing large sets, and running large projects on time. Wind farms need land, grid connection and capital more than technology." },
         moat: "Long relationships with Cummins and with customers, execution record on large data-centre and industrial jobs, and 25-year wind contracts with state buyers. The weak point is that Cummins can sell direct.",
+        inShort: ["**Builds generator sets around Cummins engines** for data centres and industry, and owns 330 MW of wind farms selling power on 25-year contracts.", "**Good:** a doubled data-centre order book and 91% of five years' profit turned into cash. **Watch:** a thin 5.6% genset margin, and Cummins can sell direct.", "**Verdict: own.** The price needs less growth than I expect."],
+        salesDrivers: ["**Data centres**: order book ₹1,100cr, about half the ₹1,700cr genset book, executed over 12–18 months.", "**Industrial and commercial gensets** through its long-standing Cummins channel.", "**Wind**: owned capacity set to nearly double from 330 MW to 634 MW; new projects earn 82–83% margins.", "**Genset plant runs on one shift** at 75–80% use, so little capex is needed there."],
+        inputs: "**Cummins engines, copper-wound alternators, steel enclosures and control panels.** Materials were 65% of sales in FY26; wind farms have almost no material cost.",
+        costEffect: "**Lagged on gensets.** Contracts have no escalation clause, and passing on cost rises takes one or two quarters. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 6–7 points, almost all from gensets. **What happened:** copper rose by about two-fifths since late 2024; its group margin still moved from about 12% to 14% because wind's share grew.",
+        competitors: [{ name: 'Cummins India (direct) and other Cummins dealers', note: 'Cummins has taken some data-centre projects directly.' }, { name: 'Kirloskar Oil, Caterpillar, Sterling & Wilson', note: 'Rivals in large gensets.' }],
+        position: "**One of Cummins's largest genset partners in India**, with a strong data-centre record.",
+        money: "Net cash about ₹389cr at FY26 (Screener); cash rose from ₹43cr to ₹961cr during the year. Wind farms are funded from its own cash. Promoters hold **77%**.",
+        watch: ["Genset margin recovering from Q3.", "Cummins's choices on data-centre projects.", "Wind projects on schedule."],
+        charts: pumpsCompEngCharts['Powerica'],
     },
     {
         company: 'Kirloskar Oil',
@@ -203,6 +249,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'High', text: "Designing engines that meet India's CPCB IV+ emission rules and stay reliable across a huge range (a few kW to 10 MW) takes decades of engineering. Very large engines for data centres and ships are the hardest, and where it is newest." },
         moat: "Its own engines plus one of the largest service networks: it can get an engineer to a critical site within two hours, and its spares and service business has grown double digits for 12 straight quarters. Brand trust in small and mid-size gensets is strong; in very large sets Cummins is the incumbent.",
+        inShort: ["**Makes diesel and gas engines and generator sets** with one of India's widest service networks, plus pumps (La-Gajjar) and a lending arm it plans to separate.", "**Good:** domestic share gains, a first hyperscale data-centre order and 12 quarters of double-digit aftermarket growth. **Bad:** margin down three quarters in a row.", "**Verdict: wait.** The price needs far more growth than I expect."],
+        salesDrivers: ["**Power generation**: 49% of engine-business revenue; it holds about 28% of India's genset market.", "**Data centres**: a first hyperscale order of about 192 MW, with a five-to-six-year service contract.", "**Spares and service**: 18% of engine revenue, growing double digits for 12 quarters.", "**Industrial engines, railways, marine, defence and exports** (exports fell in Q1)."],
+        inputs: "**Castings and forgings**, steel, copper and alternators for gensets, and electronics. Materials were 65% of standalone sales in FY26.",
+        costEffect: "**Passed on with a three-to-six-month lag.** Gross margin fell about 0.6–0.7 points year on year while price rises caught up. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 6–7 points. **What happened:** the castings index was flat over the chart period, but its margin fell from about 12–13% to 11% as employee costs rose about 40% and exports dropped.",
+        competitors: [{ name: 'Cummins India', note: 'The incumbent in high-horsepower and data-centre gensets.' }, { name: 'Caterpillar, Kohler, Mahindra Powerol', note: 'Rivals across genset sizes.' }],
+        position: "**India's largest genset maker by volume**, with its own engines and a service engineer within two hours of critical sites.",
+        money: "Standalone net cash about ₹422cr (Screener; company figure ₹485cr). Promoters hold **41%**, unchanged.",
+        watch: ["Margin back above 13% as price rises land.", "The Arka Fincap separation.", "NPCIL order milestones."],
+        charts: pumpsCompEngCharts['Kirloskar Oil'],
     },
     {
         company: 'Greaves Cotton',
@@ -225,6 +280,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'Medium', text: "Small diesel engines are mature technology, but meeting each new emission rule is costly. Electric scooters are easy to assemble and hard to make money on; the battery is the main cost." },
         moat: "Long supply relationships with three-wheeler makers and a vast mechanic network. But diesel three-wheelers are slowly giving way to electric and CNG ones, and the scooter business competes with much larger players.",
+        inShort: ["**Makes small diesel engines, gensets and fire-pump engines**, and owns most of an electric-scooter maker (Ampere) and a finance arm.", "**Good:** the core engine business grows 16–19% and turns most of its profit into cash. **Bad:** that cash keeps going into scooters, which still lose money.", "**Verdict: pass.** The price includes a costly bet."],
+        salesDrivers: ["**Three-wheeler and microcar engines**: 16% of group revenue, slowly losing ground to electric and CNG vehicles.", "**Gensets and industrial engines**, including fire-pump and defence engines.", "**Electric three-wheelers**: its share rose from about 3.2% to 5.6% in a year.", "**Electric scooters (Ampere)**: about ₹786cr of revenue, still loss-making."],
+        inputs: "**Castings, steel, aluminium and platinum-group metals** for engines; batteries and motors for electric vehicles. Materials were 67% of consolidated sales in FY26.",
+        costEffect: "**Passed on with a lag.** Engine prices are partly index-linked; it expects price rises and cost cuts to show from Q2 and fully in the second half. **Rule of thumb:** a 10% rise in material costs not passed on would wipe out most of its 7% group margin. **What happened:** the castings index was flat over the chart period; its group margin rose from a loss to about 6% as scooter losses narrowed.",
+        competitors: [{ name: 'Mahindra, Kirloskar Oil', note: 'Rivals in small engines and gensets.' }, { name: 'Ather, TVS, Bajaj, Ola', note: 'Much larger rivals in electric scooters.' }],
+        position: "**A leading maker of small diesel engines for three-wheelers**, and a small player in electric two- and three-wheelers.",
+        money: "Net cash about ₹170cr (Screener, consolidated); standalone cash ₹426cr in March. ₹331cr more went into the scooter business this year and ₹50cr into the finance arm. Promoters hold **56%**.",
+        watch: ["Scooter business reaching break-even in 4–6 quarters.", "Core margin recovering in the second half.", "Further capital sent to the scooter business."],
+        charts: pumpsCompEngCharts['Greaves Cotton'],
     },
 
     // ── Solar pumps ──────────────────────────────────────────────────────────
@@ -249,6 +313,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'Medium', text: "Pumps and motors are mature. The harder part is the electronics that let a pump run efficiently on varying sunlight, which Shakti designs itself (15 patents), and installing and servicing hundreds of thousands of pumps in remote villages." },
         moat: "Scale and execution record in the scheme, and in-house electronics that lower costs. But the buyer (the state) sets the price and dozens of approved suppliers compete, so pricing power is weak.",
+        inShort: ["**India's largest solar-pump maker** for government schemes, with its own motors, controllers and inverters, and new solar-cell and module plants.", "**Good:** pumps installed rose 58%. **Bad:** the margin halved to about 10%, and about ₹1,770cr is owed to it.", "**Verdict: pass.** Profit is mostly money owed by state agencies."],
+        salesDrivers: ["**PM-KUSUM and state schemes**: 77% of FY26 revenue; it estimates a 25% share of PM-KUSUM.", "**Exports**: 15% of revenue, mainly the Middle East, Africa and the US.", "**Scheme timing**: KUSUM 2.0 is awaiting approval; the order book (₹1,000cr) is about four months of work.", "**New businesses**: rooftop solar, EV motors and a 2.2 GW cell-and-module plant."],
+        inputs: "**Copper and steel** for pumps and motors, electronics for controllers, and **solar panels**. Materials were 69% of sales in FY26.",
+        costEffect: "**Not protected.** Scheme prices are fixed at tender, so it bears raw-material rises. Management put the margin fall at about 6 points from raw materials and 4 from lower prices. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 7 points. **What happened:** copper rose by about half over the chart period; its margin rose to 23% at the scheme peak, then fell back to about 10%.",
+        competitors: [{ name: 'Oswal, CRI, Kirloskar Brothers', note: 'Rivals on state scheme tenders.' }, { name: '40-plus unlisted makers', note: 'Approved suppliers bidding on the same tenders.' }],
+        position: "**The largest supplier to PM-KUSUM**, with about a quarter of the scheme.",
+        money: "Screener shows ₹505cr of borrowings against ₹684cr of cash at FY26. It plans ₹1,500–1,700cr of capex by September 2027, part-funded by an ₹800cr term loan. Promoters hold **50%**, down from 56%.",
+        watch: ["PM-KUSUM 2.0 approval.", "Collections from state agencies.", "The module line starting in September."],
+        charts: pumpsCompEngCharts['Shakti Pumps'],
     },
     {
         company: 'Oswal Pumps',
@@ -271,6 +344,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'Low', text: "Pumps, motors and panel assembly are established technologies with many makers. The difficulty is running a large installation and service operation and funding the long wait for state payments." },
         moat: "Low-cost integrated manufacturing and strong positions in Haryana and Maharashtra. But 40–45 bidders compete on state tenders, so the moat is thin; it is diversifying into rooftop and utility solar, where margins are lower.",
+        inShort: ["**Makes solar pumps and motors for state schemes**, plus solar modules, and is moving into rooftop solar and cables; listed in 2025.", "**Good:** low-cost, integrated manufacturing. **Bad:** tender prices fell 9%, volumes fell, and operating cash has been negative for two years.", "**Verdict: wait.** Cheap only if its receivables are collected."],
+        salesDrivers: ["**State schemes**: about 80% of product revenue (Maharashtra's Magel Tyala and other state schemes 49%, PM-KUSUM 27%).", "**Tender prices**: down 8–9% as 40-plus bidders crowded into Maharashtra.", "**Rooftop solar (PM Surya Ghar)**: it hopes for ₹800–1,000cr this year, at lower margins.", "**Modules**: a 1 GW line by the end of Q2."],
+        inputs: "**Copper and steel** for pumps and motors, and **solar cells** for its modules. Materials were 61% of sales in FY26.",
+        costEffect: "**Not protected.** Tender prices are fixed; it put the margin fall at 8–9 points from prices, 3–3.5 from raw materials and 1–1.5 from lost scale. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 6 points. **What happened:** copper rose by about half since early 2024 and its margin fell from about 20% to 16%, with much larger falls within the year.",
+        competitors: [{ name: 'Shakti, CRI', note: 'Rivals on state tenders.' }, { name: 'Tata Power Solar, Waaree and others', note: 'Much larger rivals in rooftop solar.' }],
+        position: "**A strong player in Haryana and Maharashtra solar-pump schemes.**",
+        money: "Net cash about ₹154cr at FY26 (Screener, after its share sale); the company reported net debt of ₹266cr by June 2026. Promoters hold **76%**.",
+        watch: ["Receivables coming down in Q3 as promised.", "The next Maharashtra tender.", "Whether rooftop revenue carries any profit."],
+        charts: pumpsCompEngCharts['Oswal Pumps'],
     },
 ];
 
