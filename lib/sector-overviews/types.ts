@@ -241,6 +241,23 @@ export interface ProfileCharts {
     stats?: { label: string; value: string; note?: string }[];
     /** Date the stats were taken, e.g. "23 Sep 2026". */
     statsAsOf?: string;
+    /**
+     * Where cash is tied up: [first year, latest year] for debtor, stock and supplier days and the
+     * cash cycle, plus five-year cash movements in ₹cr from the cash-flow statement (negative = cash
+     * absorbed, positive = cash released).
+     */
+    workingCapital?: {
+        fromYear: string;
+        toYear: string;
+        debtorDays: [number | null, number | null];
+        inventoryDays: [number | null, number | null];
+        payableDays: [number | null, number | null];
+        cycleDays: [number | null, number | null];
+        absorbed5y: number | null;
+        receivables5y: number | null;
+        inventory5y: number | null;
+        payables5y: number | null;
+    };
     /** Where each ₹100 of sales goes in the latest year. */
     costSplit?: { year: string; parts: MixPart[]; note?: string };
     /** Quarterly operating margin against the price of the main input (index, first period = 100). */

@@ -133,7 +133,31 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 "value": "22%"
             }
         ],
-        "statsAsOf": "23 Sep 2026"
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                125,
+                111
+            ],
+            "inventoryDays": [
+                167,
+                98
+            ],
+            "payableDays": [
+                173,
+                94
+            ],
+            "cycleDays": [
+                119,
+                115
+            ],
+            "absorbed5y": -161,
+            "receivables5y": -254,
+            "inventory5y": -55,
+            "payables5y": -99
+        }
     },
     "TD Power Systems": {
         "costSplit": {
@@ -266,7 +290,31 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 "value": "18%"
             }
         ],
-        "statsAsOf": "23 Sep 2026"
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                110,
+                146
+            ],
+            "inventoryDays": [
+                134,
+                148
+            ],
+            "payableDays": [
+                97,
+                121
+            ],
+            "cycleDays": [
+                147,
+                173
+            ],
+            "absorbed5y": -435,
+            "receivables5y": -555,
+            "inventory5y": -313,
+            "payables5y": 299
+        }
     },
     "Triveni Turbine": {
         "costSplit": {
@@ -399,7 +447,31 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 "value": "21%"
             }
         ],
-        "statsAsOf": "23 Sep 2026"
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                43,
+                107
+            ],
+            "inventoryDays": [
+                138,
+                84
+            ],
+            "payableDays": [
+                85,
+                176
+            ],
+            "cycleDays": [
+                97,
+                15
+            ],
+            "absorbed5y": -156,
+            "receivables5y": -634,
+            "inventory5y": -62,
+            "payables5y": 528
+        }
     },
     "GE Power": {
         "costSplit": {
@@ -528,7 +600,31 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 "value": "21%"
             }
         ],
-        "statsAsOf": "23 Sep 2026"
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                334,
+                219
+            ],
+            "inventoryDays": [
+                20,
+                107
+            ],
+            "payableDays": [
+                263,
+                395
+            ],
+            "cycleDays": [
+                91,
+                -69
+            ],
+            "absorbed5y": 1294,
+            "receivables5y": 1153,
+            "inventory5y": 40,
+            "payables5y": -216
+        }
     },
     "Apar Inds.": {
         "costSplit": {
@@ -661,7 +757,31 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 "value": "8%"
             }
         ],
-        "statsAsOf": "23 Sep 2026"
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                99,
+                85
+            ],
+            "inventoryDays": [
+                108,
+                84
+            ],
+            "payableDays": [
+                207,
+                138
+            ],
+            "cycleDays": [
+                1,
+                30
+            ],
+            "absorbed5y": -2556,
+            "receivables5y": -4316,
+            "inventory5y": -2554,
+            "payables5y": 4315
+        }
     },
     "Genus Power": {
         "costSplit": {
@@ -794,7 +914,31 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 "value": "20%"
             }
         ],
-        "statsAsOf": "23 Sep 2026"
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                297,
+                115
+            ],
+            "inventoryDays": [
+                185,
+                170
+            ],
+            "payableDays": [
+                161,
+                97
+            ],
+            "cycleDays": [
+                320,
+                188
+            ],
+            "absorbed5y": -2162,
+            "receivables5y": -1029,
+            "inventory5y": -1175,
+            "payables5y": 600
+        }
     },
     "Salzer Electronics": {
         "costSplit": {
@@ -927,7 +1071,31 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 "value": "8%"
             }
         ],
-        "statsAsOf": "23 Sep 2026"
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                99,
+                92
+            ],
+            "inventoryDays": [
+                140,
+                137
+            ],
+            "payableDays": [
+                47,
+                52
+            ],
+            "cycleDays": [
+                192,
+                177
+            ],
+            "absorbed5y": -426,
+            "receivables5y": -231,
+            "inventory5y": -288,
+            "payables5y": 154
+        }
     },
     "RMC Switchgears": {
         "costSplit": {
@@ -1036,7 +1204,31 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 "value": "12%"
             }
         ],
-        "statsAsOf": "23 Sep 2026"
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY19",
+            "toYear": "FY26",
+            "debtorDays": [
+                140,
+                186
+            ],
+            "inventoryDays": [
+                54,
+                22
+            ],
+            "payableDays": [
+                145,
+                75
+            ],
+            "cycleDays": [
+                49,
+                134
+            ],
+            "absorbed5y": -131,
+            "receivables5y": -198,
+            "inventory5y": -9,
+            "payables5y": 64
+        }
     },
     "Inox Wind": {
         "costSplit": {
@@ -1169,7 +1361,31 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 "value": "20%"
             }
         ],
-        "statsAsOf": "23 Sep 2026"
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                627,
+                353
+            ],
+            "inventoryDays": [
+                940,
+                268
+            ],
+            "payableDays": [
+                663,
+                178
+            ],
+            "cycleDays": [
+                905,
+                443
+            ],
+            "absorbed5y": -4412,
+            "receivables5y": -3660,
+            "inventory5y": -632,
+            "payables5y": -63
+        }
     },
     "KP Green Engg.": {
         "costSplit": {
@@ -1280,7 +1496,31 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 "value": "20%"
             }
         ],
-        "statsAsOf": "23 Sep 2026"
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                85,
+                93
+            ],
+            "inventoryDays": [
+                218,
+                195
+            ],
+            "payableDays": [
+                33,
+                138
+            ],
+            "cycleDays": [
+                271,
+                150
+            ],
+            "absorbed5y": -245,
+            "receivables5y": -312,
+            "inventory5y": -452,
+            "payables5y": 400
+        }
     },
     "Exicom Tele-Sys.": {
         "costSplit": {
@@ -1413,7 +1653,31 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 "value": "-9%"
             }
         ],
-        "statsAsOf": "23 Sep 2026"
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                73,
+                130
+            ],
+            "inventoryDays": [
+                76,
+                193
+            ],
+            "payableDays": [
+                93,
+                171
+            ],
+            "cycleDays": [
+                57,
+                152
+            ],
+            "absorbed5y": -219,
+            "receivables5y": -269,
+            "inventory5y": -287,
+            "payables5y": 338
+        }
     },
     "Servotech Renew": {
         "costSplit": {
@@ -1546,7 +1810,31 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 "value": "10%"
             }
         ],
-        "statsAsOf": "23 Sep 2026"
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                70,
+                119
+            ],
+            "inventoryDays": [
+                40,
+                43
+            ],
+            "payableDays": [
+                33,
+                101
+            ],
+            "cycleDays": [
+                77,
+                61
+            ],
+            "absorbed5y": -230,
+            "receivables5y": -197,
+            "inventory5y": -45,
+            "payables5y": 118
+        }
     },
     "RIR Power Electr": {
         "costSplit": {
@@ -1626,6 +1914,30 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 "value": "11%"
             }
         ],
-        "statsAsOf": "23 Sep 2026"
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                90,
+                85
+            ],
+            "inventoryDays": [
+                210,
+                163
+            ],
+            "payableDays": [
+                112,
+                50
+            ],
+            "cycleDays": [
+                188,
+                199
+            ],
+            "absorbed5y": -62,
+            "receivables5y": -10,
+            "inventory5y": -13,
+            "payables5y": 2
+        }
     }
 };

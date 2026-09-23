@@ -49,6 +49,61 @@ function VerticalMix({ caption, parts, note, height = 150 }: { caption: string; 
     );
 }
 
+/** Debtor, stock and supplier days (first year → latest) and where five years of working capital went. */
+function WorkingCapital({ wc }: { wc: NonNullable<ProfileCharts['workingCapital']> }) {
+    const rows: [string, [number | null, number | null], string][] = [
+        ['Customers pay in', wc.debtorDays, ''],
+        ['Stock is held for', wc.inventoryDays, ''],
+        ['Suppliers are paid in', wc.payableDays, ''],
+        ['Cash is tied up for (cycle)', wc.cycleDays, ''],
+    ];
+    const arrow = (a: number | null, b: number | null) => {
+        if (a === null || b === null) return '';
+        return b > a + 5 ? '↑' : b < a - 5 ? '↓' : '→';
+    };
+    const cr = (v: number) => `₹${Math.abs(v).toLocaleString('en-IN')}cr`;
+    const drains = ([['customer bills', wc.receivables5y], ['stock', wc.inventory5y]] as [string, number | null][])
+        .filter(([, v]) => v !== null && v < 0)
+        .sort((a, b) => (a[1] as number) - (b[1] as number));
+    return (
+        <div>
+            <table className="text-[11.5px] text-gray-600 border-collapse">
+                <thead>
+                    <tr className="text-[9.5px] uppercase tracking-wide text-gray-400">
+                        <th className="text-left font-semibold pr-3 pb-0.5">Days</th>
+                        <th className="text-right font-semibold pr-2 pb-0.5">{wc.fromYear}</th>
+                        <th className="text-right font-semibold pb-0.5">{wc.toYear}</th>
+                        <th />
+                    </tr>
+                </thead>
+                <tbody>
+                    {rows.map(([label, [a, b], tail]) => (
+                        <tr key={label}>
+                            <td className="pr-3 py-[1px]">{label}{tail ? ` ${tail}` : ''}</td>
+                            <td className="text-right tabular-nums pr-2">{a ?? '—'}</td>
+                            <td className="text-right tabular-nums font-semibold text-gray-800">{b ?? '—'}</td>
+                            <td className="pl-1.5 text-gray-400">{arrow(a, b)}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+            {wc.absorbed5y !== null && (
+                <p className="text-[12px] text-gray-600 leading-relaxed mt-1">
+                    Over five years, working capital {wc.absorbed5y < 0 ? 'absorbed' : 'released'}{' '}
+                    <span className="font-semibold text-gray-800">{cr(wc.absorbed5y)}</span> of cash in total
+                    {drains.length > 0 && wc.absorbed5y < 0 && (
+                        <>: {drains.map(([k, v]) => `${k} took ${cr(v as number)}`).join(' and ')}</>
+                    )}
+                    {drains.length > 0 && wc.absorbed5y < 0 && wc.payables5y !== null && wc.payables5y > 0 && (
+                        <>, partly offset by paying suppliers more slowly ({cr(wc.payables5y)})</>
+                    )}
+                    {wc.absorbed5y >= 0 && wc.receivables5y !== null && wc.receivables5y > 0 && <>, mostly by collecting old bills</>}.
+                </p>
+            )}
+        </div>
+    );
+}
+
 function Label({ children }: { children: React.ReactNode }) {
     return <div className="text-[10px] font-semibold uppercase tracking-wide text-[#4A7AAF] mb-1">{children}</div>;
 }
@@ -318,6 +373,12 @@ function ProfileCard({ p, verdict }: { p: BusinessProfile; verdict?: CompanyVerd
                             <section>
                                 <Label>How input prices hit its margin</Label>
                                 <p className="text-[12px] text-gray-600 leading-relaxed"><RichText text={p.costEffect} /></p>
+                            </section>
+                        )}
+                        {p.charts?.workingCapital && (
+                            <section>
+                                <Label>Where its cash is tied up</Label>
+                                <WorkingCapital wc={p.charts.workingCapital} />
                             </section>
                         )}
                         <section>

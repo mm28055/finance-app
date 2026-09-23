@@ -111,7 +111,6 @@ export const electricalEquipment: SectorOverview = {
         },
         {
             key: 'ccc',
-            more: true,
             label: 'Cash conversion cycle by year',
             unit: 'days',
             periods: FY,
@@ -362,7 +361,7 @@ export const electricalEquipment: SectorOverview = {
         {
             heading: '2. Charts: margins, growth, returns, cash cycle and cash conversion',
             body: [
-                "The five views that matter most, with five more behind **More measures**. Companies are grouped by business. All figures are filed (Screener), consolidated except RIR's quarters (standalone). KP Green reports half-yearly, so its figures sit in two columns only. Hover over a starred name for its caveat. **Start with cash conversion and free cash flow**: they separate this sector more clearly than any margin does. Net debt ÷ operating profit shows who is borrowing to grow; capex ÷ sales and sales per rupee of fixed assets show how capital-hungry each business is.",
+                "The six views that matter most, with four more behind **More measures**. Companies are grouped by business. All figures are filed (Screener), consolidated except RIR's quarters (standalone). KP Green reports half-yearly, so its figures sit in two columns only. Hover over a starred name for its caveat. **Start with cash conversion and free cash flow**: they separate this sector more clearly than any margin does. The cash conversion cycle shows how many days cash is tied up in bills and stock; net debt ÷ operating profit shows who is borrowing to grow; capex ÷ sales and sales per rupee of fixed assets show how capital-hungry each business is.",
             ],
             embed: 'metrics',
         },
@@ -456,8 +455,20 @@ export const electricalEquipment: SectorOverview = {
                     text: "**Genus** cut its margin guide from 20–21% to 18% because its meter contracts have no pass-through, and chip prices rose. **Salzer** raises prices only after pending orders are filled, so every copper spike squeezes it; its margin fell to 6%. **RMC** swung from an 11% margin to a loss and back to 21% within five quarters on fixed-price government work. **Servotech** and **Exicom** sell close-to-commodity electronics.",
                 },
                 {
-                    label: "The hidden cost: working capital",
-                    text: "A high margin can still tie up a lot of cash. **Inox Wind** has run a cash cycle of 290–900 days, **Genus** funds meters it will be paid for over eight years, and **Salzer**, **RIR** and **TD Power** carry 170–200 days. **In this sector, return on capital and cash conversion are the honest measures, not the margin.**",
+                    label: "Working capital: the biggest drains",
+                    text: "Over FY22–FY26, **Inox Wind** tied up ₹4,410cr in working capital, ₹3,660cr of it in unpaid customer bills; its customers now take 353 days to pay, up from 238 in FY24. **Genus** tied up ₹2,160cr, split between meters and parts in stock (₹1,175cr) and bills (₹1,030cr), because it builds meters for its own contracts and is paid over years. **Apar** tied up ₹2,560cr, but that is mostly higher metal prices raising the value of its stock and bills; its days have barely moved and its suppliers fund much of it.",
+                },
+                {
+                    label: "Working capital: getting worse",
+                    text: "**TD Power**'s customers now take 146 days to pay, up from 110 in FY22, and ₹435cr went into working capital; this is the main reason only about a third of its profit has become cash. **Triveni**'s customers take 107 days, up from about 40 in FY22–FY23, which has been offset so far by paying suppliers more slowly (176 days, up from 85 in FY22); if that reverses, its cash conversion will fall. **Exicom**'s stock has doubled to 193 days with Tritium, and **KP Green** holds 195 days of steel after stocking up ahead of price rises.",
+                },
+                {
+                    label: "Working capital: improving",
+                    text: "**Genus**'s customers now pay in 115 days, down from 297 in FY22, the first sign its cash will follow its profit. **Elecon** has cut its stock from 167 to 98 days. **GE Power India** released ₹1,290cr of cash over five years by collecting bills on old projects.",
+                },
+                {
+                    label: "Working capital: built into the business",
+                    text: "Some long cycles are structural rather than a warning. **Salzer** holds about 137 days of stock across thousands of switch and cable variants and pays suppliers in about 50 days. **RMC**'s customers take 186 days, partly because utilities hold back 10% of each contract until completion. **Expect these to stay long; judge them against their own history, not against the machine makers.**",
                 },
             ],
         },
