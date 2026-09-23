@@ -480,20 +480,24 @@ export const electricalEquipment: SectorOverview = {
         {
             heading: '6. Growth and capex (comparative)',
             body: [
-                "What each company guides and is spending, then my own estimate of earnings growth over three to five years. Several of these companies are raising equity, which tells you how much capital their growth needs.",
+                "How each company has done against what it promised, then my own estimate of earnings growth over three to five years.",
             ],
             points: [
                 {
-                    label: 'The global shortage names',
-                    text: "**TD Power** is adding capacity and entering larger generators; **Triveni** expects growth weighted to the second half; **Apar** is raising equity and giving no guidance while its export conductor orders grow.",
+                    label: 'Delivering or beating',
+                    text: "**TD Power** raised guidance again and now targets ₹2,600cr (+40%), adding capacity and raising equity. **KP Green** grew 79% in FY26 and targets 40–50% a year. **GE Power India** completed its turnaround. **Apar** had a record quarter but gives no guidance while it raises equity.",
                 },
                 {
-                    label: 'The domestic machine makers',
-                    text: "**Elecon** is cautious for FY27 but keeps its FY30 target and funds expansion from its own cash. **GE Power India** is now a steady services business.",
+                    label: 'Cautious',
+                    text: "**Elecon** tends to under-promise: low double-digit growth this year, ₹5,000cr by FY30, funded from its own cash.",
                 },
                 {
-                    label: 'The capital-hungry growers',
-                    text: "**Genus**, **Inox Wind** and **KP Green** all guide to fast growth, and all need borrowing or new shares to fund it.",
+                    label: 'Missed',
+                    text: "**Triveni**'s Q1 margin fell to 18%, though it expects a stronger second half. **Salzer** cut its margin guide to 8–8.5%. **RMC**'s Q1 sales fell 56%, yet it still aims for ₹5,000cr by 2030. **Inox Wind** has missed for several quarters and now promises +75%. **RIR** has missed past targets.",
+                },
+                {
+                    label: 'Mixed or silent',
+                    text: "**Genus** hit its sales targets (₹6,000–6,500cr guided for FY27) but not its cash. **Exicom** slipped back into loss and promises group break-even in Q2–Q3. **Servotech** gives no guidance. How many years of work each company has booked is in the **Order book ÷ yearly sales** chart tab above.",
                 },
                 {
                     label: 'My outlook',
@@ -501,27 +505,6 @@ export const electricalEquipment: SectorOverview = {
                 },
             ],
             tables: [
-                {
-                    caption: 'Guidance, order books and track record',
-                    layout: 'cards',
-                    columns: ['Company', 'Track record', 'What it promised for FY27', 'Order book (years of sales)'],
-                    badgeColumn: 1,
-                    rows: [
-                        ['TD Power Systems', '**Beat** raised guidance again', '₹2,600cr sales (+40%); margin 18–19%', '₹2,208cr (1.0)'],
-                        ['Triveni Turbine', '**Missed** Q1 margin 18% vs 26% a year ago', 'Growth weighted to H2; margin 20%+', '₹2,180cr (1.0)'],
-                        ['Elecon Engg.Co', '**Conservative** tends to under-promise', 'Low double-digit growth; ₹5,000cr by FY30', '₹1,518cr (0.6)'],
-                        ['GE Power', '**Delivered** turnaround done', 'Only cash-earning service work', '₹734cr orders in FY26'],
-                        ['Apar Inds.', '**Strong** record quarter', 'None while raising equity', '₹12,115cr (0.5)'],
-                        ['Genus Power', '**Mixed** sales delivered, cash negative', '₹6,000–6,500cr sales; margin 18%', '₹25,173cr (4.9, mostly 8–9 yr service)'],
-                        ['Salzer Electronics', '**Missed** margin guide cut', 'Margin 8–8.5%', 'Not published'],
-                        ['RMC Switchgears', '**Missed** Q1 sales −56%', '₹5,000cr by 2030 (aspiration)', '₹850cr (2.1)'],
-                        ['Inox Wind', '**Missed** several quarters', 'Sales +75%', '4.4 GW'],
-                        ['KP Green Engg.', '**Beat** FY26 sales +79%', '40–50% growth a year; margin 16–20%', '₹1,831cr (1.5)'],
-                        ['Exicom Tele-Sys.', '**Mixed** back into loss in Q1', 'Group break-even in Q2–Q3', '₹1,400cr+ (1.1)'],
-                        ['Servotech Renew', '**No guidance**', '—', 'Not published'],
-                        ['RIR Power Electr', '**Missed** past targets', '₹30cr+ sales a quarter; SiC wafers ₹12–15cr', 'Not published'],
-                    ],
-                },
                 {
                     caption: 'My estimate of earnings growth over the next three to five years',
                     numericColumns: [2, 3],
