@@ -17,19 +17,11 @@ export const electricalEquipment: SectorOverview = {
     format: 'ranked',
     businesses: electricalEquipmentBusinesses,
     moatCompact: true,
+    leadCharts: true,
     standfirst:
         "Thirteen companies that make the hardware of electricity, from generators and steam turbines to conductors, smart meters, wind turbines and EV chargers. They share a tailwind (India's grid build-out and the global rush for power equipment) but not a business model. The engineered-machine makers earn high returns and collect their cash. Several of the grid and wind companies report strong profits that have not yet turned into cash. Every chart uses filed results and five years of history.",
     lastUpdated: '2026-09-23',
     asOfQuarter: 'Q1 FY27',
-
-    takeaways: [
-        "**Separate four businesses first.** Engineered machines (TD Power, Triveni Turbine, Elecon, GE Power India) earn 20–40% on capital and mostly turn profit into cash. Grid products (Apar, Genus, Salzer, RMC) range from world-class (Apar) to struggling (RMC). Wind and steel structures (Inox Wind, KP Green) are growing fast on borrowed working capital. Power electronics (Exicom, Servotech, RIR) are early-stage and mostly loss-making or cash-negative.",
-        "**Profit and cash diverge sharply.** Over FY22–FY26 Elecon turned 76% of operating profit into cash and Triveni 75%. At the other end, Inox Wind booked ₹1,349cr of operating profit but **burned ₹2,401cr of operating cash** (and ₹4,752cr after capex). Genus booked ₹1,710cr and used ₹700cr, because it owns the smart meters it installs and is paid over 8–9 years. Salzer collected 12%, Servotech, RIR and Exicom less than nothing.",
-        "**The global power-equipment shortage is real, and TD Power is its purest beneficiary here.** 93% of its new orders in Q1 were exports, largely generators for US data-centre gas engines and turbines. Revenue grew 72% at a steady 18–19% margin, and it guides ₹2,600cr for FY27 (+40%). At 88.6x it needs about 31% growth a year.",
-        "**India's own demand is steadier than the headlines.** TD Power calls domestic demand 'subdued', growing 10–12% a year. Triveni's domestic orders fell 35% in Q1. Elecon guides only low double-digit growth despite a record order book, because customers delayed decisions when steel and copper prices jumped.",
-        "**Governance and disclosure vary widely, and it matters here.** KP Green pays a 2% brand royalty on revenue to its promoter and gets 22–23% of orders from group companies. Inox Wind's largest customer is its own group company. Servotech's management says margins are 'not very important'. RMC aims to go from ₹400cr to ₹5,000cr of revenue by 2030 after a quarter in which revenue fell 56%.",
-        "**Only a few are priced below what they can deliver.** Elecon (33x, needs ~19%) and GE Power India (12x, needs ~8%) look reasonable against my estimates. Genus and KP Green look cheap on P/E but are cash-negative. TD Power, Triveni and Apar are good businesses priced for 24–31% growth.",
-    ],
 
     metrics: [
         {
@@ -359,11 +351,13 @@ export const electricalEquipment: SectorOverview = {
 
     sections: [
         {
-            heading: '1. Recommendation and key takeaways',
+            heading: '1. Recommendation, up front',
             body: [
-                "Ranked by attractiveness at today's price: durability of the advantage, whether profit turns into cash, governance, and what the price assumes. What each company does is explained in Tab 2.",
+                "**Elecon is the one I would own.** India's biggest industrial gearbox maker turns about three-quarters of its operating profit into cash, holds about ₹680cr of net cash, and earns 21–31% on capital. At 33x earnings, or 19x EV/EBITDA once its cash is counted, the price roughly matches the 17% a year I expect it to grow. Its margin has slipped from 24% to 21% as foreign rivals cut prices; that is the thing to watch.",
+                "**TD Power and Triveni are the quality names to follow, not chase.** TD Power is the purest play on the global shortage of power equipment: revenue grew 72% in Q1 with steady margins and contracts that pass on metal costs. But only about a third of its profit has become cash, it is raising equity, and 89x earnings needs about 31% growth a year for a decade. Triveni is a high-return, cash-rich turbine maker having a weak year; I would buy it on a lower price or a margin recovery.",
+                "**GE Power India is the cheap option, and Apar the expensive leader.** GE Power trades at 12x with net cash after finishing its turnaround, but its revenue has halved and its parent controls strategy. Apar has world-class scale and new US approvals, but at 64x while raising equity the price is ahead of my 18% growth estimate.",
+                "**Two things to hold onto before reading the rest.** First, **profit and cash separate this sector.** The machine makers collect their cash; Genus, Inox Wind, KP Green and the power-electronics names report profits they have not collected. Second, **P/E misleads here.** Elecon, Triveni and GE Power hold net cash, so they are cheaper than their P/E suggests; Salzer and RMC carry 3–4 years of profit in debt, so they are dearer. I would avoid **RMC, Servotech and RIR**, and treat **Genus, KP Green, Inox Wind and Exicom** as unproven until their cash catches up with their profits.",
             ],
-            embed: 'ranking',
         },
         {
             heading: '2. Charts: margins, growth, returns, cash cycle and cash conversion',
@@ -538,10 +532,8 @@ export const electricalEquipment: SectorOverview = {
             heading: '8. Valuation (comparative)',
             body: [
                 "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it gives credit for cash and charges for debt. Where the two disagree, the balance sheet is the reason.",
-                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **8% at 12x, 14% at 22x, 19% at 33x, 24% at 50x, 27% at 64x and 31% at 89x.** The chart shows return on capital against the P/E.",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **8% at 12x, 14% at 22x, 19% at 33x, 24% at 50x, 27% at 64x and 31% at 89x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E.",
             ],
-            embed: 'scatter',
-            embedFirst: true,
             points: [
                 {
                     label: 'What EV/EBITDA changes',

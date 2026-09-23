@@ -359,6 +359,44 @@ export function SectorOverview({ overview, companies }: {
         </>
     );
 
+    const marginCard = (
+        <ChartCard
+            title="Where the margins are"
+            subtitle={`EBITDA margin, latest reported quarter (${overview.asOfQuarter} for most).`}
+            height={Math.max(220, marginData.length * 24 + 30)}
+        >
+            <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={marginData} layout="vertical" margin={{ top: 0, right: 34, left: 0, bottom: 0 }}>
+                    <XAxis type="number" hide domain={[0, 'dataMax + 8']} />
+                    <YAxis
+                        type="category"
+                        dataKey="label"
+                        width={104}
+                        tick={{ fontSize: 9, fill: '#6B7280' }}
+                        axisLine={false}
+                        tickLine={false}
+                    />
+                    <Tooltip
+                        cursor={{ fill: '#F3F4F6' }}
+                        contentStyle={{ fontSize: 11, borderRadius: 8, border: '1px solid #E5E7EB' }}
+                        formatter={(v: any) => [`${Number(v).toFixed(1)}%`, 'EBITDA margin']}
+                    />
+                    <Bar dataKey="margin" radius={[0, 3, 3, 0]} barSize={13} isAnimationActive={false}>
+                        {marginData.map((r, i) => (
+                            <Cell key={i} fill={STANCE_CONFIG[r.verdict.stance].hex} fillOpacity={0.85} />
+                        ))}
+                        <LabelList
+                            dataKey="margin"
+                            position="right"
+                            formatter={(v: any) => `${Number(v).toFixed(0)}%`}
+                            style={{ fontSize: 9, fill: '#9CA3AF' }}
+                        />
+                    </Bar>
+                </BarChart>
+            </ResponsiveContainer>
+        </ChartCard>
+    );
+
     const renderEmbed = (sec: typeof overview.sections[number]) => (
         <>
             {sec.embed === 'ranking' && <RankingBlock verdicts={overview.verdicts} takeaways={overview.takeaways} byName={byName} hideWhat={hasBusinessTab} />}
@@ -436,6 +474,12 @@ export function SectorOverview({ overview, companies }: {
                     </div>
                 ) : (
                     <>
+                        {overview.leadCharts && (
+                            <div className="px-5 py-4 border-b border-gray-100 flex gap-3 flex-col lg:flex-row">
+                                {marginCard}
+                                {scatterCard}
+                            </div>
+                        )}
                         <div className="px-5 py-4 border-b border-gray-100 space-y-7">
                             {overview.sections.map(renderSection)}
                             {uncovered.length > 0 && (
@@ -460,41 +504,7 @@ export function SectorOverview({ overview, companies }: {
             {/* ── Charts ───────────────────────────────────────────────── */}
             <div className="px-5 py-4 border-b border-gray-100 flex gap-3 flex-col lg:flex-row">
 
-                <ChartCard
-                    title="Where the margins are"
-                    subtitle={`EBITDA margin, latest reported quarter (${overview.asOfQuarter} for most).`}
-                    height={Math.max(220, marginData.length * 24 + 30)}
-                >
-                    <ResponsiveContainer width="100%" height="100%">
-                        <BarChart data={marginData} layout="vertical" margin={{ top: 0, right: 34, left: 0, bottom: 0 }}>
-                            <XAxis type="number" hide domain={[0, 'dataMax + 8']} />
-                            <YAxis
-                                type="category"
-                                dataKey="label"
-                                width={104}
-                                tick={{ fontSize: 9, fill: '#6B7280' }}
-                                axisLine={false}
-                                tickLine={false}
-                            />
-                            <Tooltip
-                                cursor={{ fill: '#F3F4F6' }}
-                                contentStyle={{ fontSize: 11, borderRadius: 8, border: '1px solid #E5E7EB' }}
-                                formatter={(v: any) => [`${Number(v).toFixed(1)}%`, 'EBITDA margin']}
-                            />
-                            <Bar dataKey="margin" radius={[0, 3, 3, 0]} barSize={13} isAnimationActive={false}>
-                                {marginData.map((r, i) => (
-                                    <Cell key={i} fill={STANCE_CONFIG[r.verdict.stance].hex} fillOpacity={0.85} />
-                                ))}
-                                <LabelList
-                                    dataKey="margin"
-                                    position="right"
-                                    formatter={(v: any) => `${Number(v).toFixed(0)}%`}
-                                    style={{ fontSize: 9, fill: '#9CA3AF' }}
-                                />
-                            </Bar>
-                        </BarChart>
-                    </ResponsiveContainer>
-                </ChartCard>
+                {marginCard}
 
                 {scatterCard}
             </div>

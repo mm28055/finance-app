@@ -275,6 +275,8 @@ export interface SectorOverview {
     takeaways?: string[];
     metrics?: MetricSeries[];
     moat?: { sources: MoatSource[]; rows: MoatRow[] };
+    /** Open Tab 1 with the margin bar chart and the quality-vs-price chart, as the older notes do. */
+    leadCharts?: boolean;
     /** Show the moat grid as letters only; the reasons live in the business tab. */
     moatCompact?: boolean;
     /**
