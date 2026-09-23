@@ -1,222 +1,414 @@
 import { SectorOverview } from './types';
+import { electAndRefracBusinesses } from './elect-and-refrac-businesses';
+
+// Quarter and year columns used by every metric below.
+const Q = ['Q1 FY26', 'Q2 FY26', 'Q3 FY26', 'Q4 FY26', 'Q1 FY27'];
+const FY = ['FY22', 'FY23', 'FY24', 'FY25', 'FY26'];
+
+// Segment labels. The ranking, the metric grid and the moat table are grouped by these.
+const ELECTRODE = 'Graphite electrodes — a global oligopoly';
+const REFRAC = 'Refractories — many suppliers, sticky customers';
 
 export const electAndRefrac: SectorOverview = {
     sector: 'Elect and Refrac',
     title: 'Electrodes and Refractories',
+    format: 'ranked',
+    businesses: electAndRefracBusinesses,
+    moatCompact: true,
     standfirst:
-        'Three companies selling things that get burned up inside somebody else\'s furnace. They are a small fraction of a steelmaker\'s cost and an absolute precondition for the plant running at all, which is the definition of a good place to sell from — but only two of the three have converted that position into pricing power. The difference between them is not chemistry. It is how many other people in the world can make the same thing.',
-    lastUpdated: '2026-09-20',
+        "Three companies that sell things steelmakers burn up. HEG makes graphite electrodes for electric arc furnaces, in a global industry with only a handful of producers outside China. RHI Magnesita and IFGL make refractories, the heat-resistant linings of furnaces, ladles and casters, in an industry with hundreds of suppliers. That one difference in structure explains most of the gap in their results. Every chart uses filed results and five years of history.",
+    lastUpdated: '2026-09-23',
     asOfQuarter: 'Q1 FY27',
+
+    takeaways: [
+        "**Separate the two industries first.** Graphite electrodes have five producers that matter outside China, controlling roughly 80% of capacity. HEG is one of them, with the world's largest single-site plant. Refractories have hundreds of producers, and RHI Magnesita leads India with a 30%+ share. Electrode makers earn 15–25% margins in normal years; Indian refractory makers earn 7–14%.",
+        "**Filed profits are distorted this year at two of the three.** RHI Magnesita wrote off the ₹556cr of goodwill left from its Dalmia OCL acquisition in Q4 FY26, a non-cash charge that turned the year into a loss. HEG booked a mark-to-market loss of roughly ₹230cr on its 9.98% stake in US rival GrafTech in the same quarter, inside operating costs. Underneath, both businesses improved in Q1 FY27.",
+        "**Cash conversion is weak across the sector.** Over FY22–FY26 RHI Magnesita turned 59% of operating profit into operating cash, HEG 49% and IFGL only 35%. HEG and IFGL generated no free cash over five years after capex. Electrode making ties up stock for months (HEG's cash cycle is 320–480 days), and IFGL keeps absorbing losses in Europe.",
+        "**HEG is the cheapest and the best-placed, but it is a cycle.** It ran above 90% utilisation while Western capacity reportedly runs at 60–65%, and its standalone margin was 29% in Q1. At 12.8x and below book value it needs only ~8% growth a year. The risks are electrode prices, needle-coke costs, possible US duties, and a demerger that splits off its battery-materials and hydro businesses.",
+        "**RHI Magnesita is the quality refractory business, at a full price.** It guides a 13% margin (Q1 was 14.5% adjusted), holds a 30%+ share, is adding captive quartzite mining, and is moving customers onto long service contracts. But it has earned 6–11% on capital since the Dalmia deal, and at 42.5x on filed earnings (about 31x on Q1's adjusted run rate) it needs 18–22% growth a year.",
+        "**IFGL has good products and no pricing power.** Standalone EBITDA fell 17% in Q1 because fuel and raw-material costs rose faster than it could raise prices. Europe is still loss-making, and return on capital has fallen every year from 11% to 5%. At 33x it needs ~19% growth from a business that is still repairing itself.",
+    ],
+
+    metrics: [
+        {
+            key: 'opm',
+            label: 'Operating margin by quarter',
+            unit: '%',
+            periods: Q,
+            scale: 'sequential',
+            source: 'Filed quarterly results (consolidated), operating profit ÷ sales.',
+            note: 'Operating margin excludes other income. HEG’s Q4 FY26 figure includes a mark-to-market loss of roughly ₹230cr on its GrafTech shares, booked in other expenses; without it the quarter would have been about 14%.',
+            values: {
+                'HEG': [17, 17, 22, -25, 22],
+                'RHI Magnesita': [11, 11, 13, 9, 14],
+                'IFGL Refractories': [8, 8, 5, 8, 7],
+            },
+            cellNotes: {
+                'HEG': 'Q4 FY26: loss on the GrafTech stake inside other expenses (₹367cr vs ~₹130cr normally). Standalone margin in Q1 FY27 was 29% by the company’s EBITDA measure, which includes other income.',
+                'RHI Magnesita': 'Q1 FY27 adjusted EBITDA margin 14.5% (company). The Q4 FY26 goodwill write-off sits below operating profit.',
+                'IFGL Refractories': 'Standalone margin 10.5% in Q1 FY27 vs 13.5% a year earlier (company).',
+            },
+        },
+        {
+            key: 'growth',
+            label: 'Revenue growth, year on year',
+            unit: '%',
+            periods: Q,
+            scale: 'diverging',
+            source: 'Filed quarterly revenue (consolidated), each quarter against the same quarter a year earlier.',
+            values: {
+                'HEG': [7, 23, 37, 12, 11],
+                'RHI Magnesita': [9, 19, 8, 2, 6],
+                'IFGL Refractories': [9, 19, 24, 8, 13],
+            },
+            cellNotes: {
+                'HEG': 'Q1 FY27: volumes slightly lower; growth came from better prices and mix (company).',
+                'RHI Magnesita': 'Q1 FY27: shipments 122 kt, down 6% year on year; growth from price and mix.',
+            },
+        },
+        {
+            key: 'roce',
+            label: 'Return on capital by year',
+            unit: '%',
+            periods: FY,
+            scale: 'sequential',
+            source: 'Filed annual ratios (consolidated): return on capital employed.',
+            note: 'RHI Magnesita’s fall from 37% reflects the capital (mostly goodwill) added by the Dalmia OCL and Hi-Tech acquisitions in FY23, as well as lower margins.',
+            values: {
+                'HEG': [14, 15, 9, 4, 8],
+                'RHI Magnesita': [37, 11, 9, 7, 6],
+                'IFGL Refractories': [11, 10, 9, 6, 5],
+            },
+            cellNotes: {
+                'HEG': 'Capital includes a large treasury, the GrafTech stake and an investment in Bhilwara Energy; the electrode business alone earns more.',
+                'RHI Magnesita': 'FY26 capital still included Dalmia goodwill until the Q4 write-off.',
+            },
+        },
+        {
+            key: 'ccc',
+            label: 'Cash conversion cycle by year',
+            unit: 'days',
+            periods: FY,
+            scale: 'sequential',
+            lowerIsBetter: true,
+            source: 'Filed annual ratios: debtor days + inventory days − payable days.',
+            note: 'Electrode production takes about six weeks per batch and producers hold months of needle coke, so HEG’s cycle is structurally long.',
+            values: {
+                'HEG': [331, 483, 321, 421, 323],
+                'RHI Magnesita': [114, 125, 132, 148, 126],
+                'IFGL Refractories': [122, 151, 126, 154, 148],
+            },
+        },
+        {
+            key: 'cash',
+            label: 'Cash conversion (operating cash ÷ operating profit)',
+            unit: '%',
+            periods: [...FY, '5 yrs'],
+            scale: 'sequential',
+            source: 'Filed annual cash-flow statements and profit and loss (consolidated): cash from operating activities ÷ operating profit. The last column divides five years of operating cash by five years of operating profit.',
+            note: 'Operating cash is after tax, so 70–80% is healthy. Blank where operating profit or operating cash was negative.',
+            values: {
+                'HEG': [null, 18, 160, 108, 53, 49],
+                'RHI Magnesita': [7, 66, 49, 77, 92, 59],
+                'IFGL Refractories': [3, 4, 98, 22, 46, 35],
+            },
+            cellNotes: {
+                'HEG': 'FY22: operating cash was −₹141cr as stock was built during the electrode price upcycle.',
+                'IFGL Refractories': 'FY22–FY23: almost no operating cash (₹4cr and ₹6cr) as receivables and stock rose.',
+            },
+        },
+    ],
+
+    moat: {
+        sources: [
+            { key: 'scale', label: 'Scale and cost position', description: 'Plant size and cost per tonne against competitors.' },
+            { key: 'tech', label: 'Technology and know-how', description: 'Process knowledge, product performance, R&D and approvals that take years to copy.' },
+            { key: 'service', label: 'Embedded service', description: 'Engineers and equipment inside the customer’s plant under long contracts.' },
+            { key: 'raw', label: 'Raw-material security', description: 'Own mines or long-term supply of the key input (needle coke, magnesite, quartzite).' },
+            { key: 'price', label: 'Pricing power', description: 'Ability to pass on cost increases quickly. A = price follows the market; D = absorbs costs.' },
+        ],
+        rows: [
+            { company: 'HEG', trend: 'widening', trendNote: 'Utilisation above 90% while Western capacity reportedly runs at 60–65%; expanding to 115,000 tonnes by early 2028, the only new capacity announced outside China.',
+                grades: { scale: { grade: 'A', note: 'World’s largest single-site electrode plant (100,000 t)' }, tech: { grade: 'B', note: 'Last new Western entrant was HEG itself, in 1976' }, service: { grade: 'C', note: 'Product sale, little embedded service' }, raw: { grade: 'C', note: 'Buys needle coke from a few global suppliers' }, price: { grade: 'B', note: 'Oligopoly; follows GrafTech and Tokai price moves' } } },
+            { company: 'RHI Magnesita', trend: 'widening', trendNote: 'Gained flow-control share; running India’s first robotic caster operation at JSW on a five-year contract; captive quartzite mine opening.',
+                grades: { scale: { grade: 'A', note: '30%+ Indian share; 8 plants' }, tech: { grade: 'A', note: 'Austrian parent’s R&D and product range' }, service: { grade: 'B', note: '4PRO: robots, digital scans, full-line service' }, raw: { grade: 'B', note: 'Captive quartzite mine; Minpro recycling JV' }, price: { grade: 'C', note: 'Q1 price rise was a “war surcharge”' } } },
+            { company: 'IFGL Refractories', trend: 'narrowing', trendNote: 'Standalone EBITDA −17% as costs outran prices; management calls its price increases temporary and margin-neutral.',
+                grades: { scale: { grade: 'C', note: 'Niche flow-control specialist' }, tech: { grade: 'B', note: 'Nozzles and slide-gate systems; US thin-slab product' }, service: { grade: 'B', note: 'Engineers stationed at customer plants' }, raw: { grade: 'D', note: 'Buys all key minerals' }, price: { grade: 'D', note: 'Absorbed fuel and raw-material spikes in Q1' } } },
+        ],
+    },
 
     sections: [
         {
-            heading: 'Recommendation, up front',
+            heading: '1. Recommendation and key takeaways',
             body: [
-                '**HEG owns the only genuine global moat in this note, and it is the simplest kind: scale that nobody can match.** Its 100,000-tonne single-site graphite electrode plant is the largest in the world and is going to 115,000 tonnes by early 2028, against next-largest plants of roughly 70,000 tonnes. There are only three or four producers of consequence outside China. The proof is in the utilisation gap — HEG ran above 90% through the quarter while Western competitors sat at 60-65%, and it expanded standalone margins to 29% while doing it. **When two competitors publicly announce price increases of $600-1,200 and $930 a tonne and you are the lowest-cost producer, you do not have to negotiate; you follow.**',
-                '**RHI Magnesita is the best business in Indian refractories and currently the worst-priced.** It holds roughly 30-32% of the Indian steel refractory market and about 40% in cement, it is net cash at ₹452cr, and it is doing the right structural things — captive quartzite mines opening, a mineral-processing joint venture, and a deliberate shift from selling bricks to managing customers\' entire refractory operation under multi-year robotic-lease contracts. But it earns 6.46% on capital at 40.7x, and that gap is the whole argument for waiting.',
-                '**IFGL is the clearest illustration of what happens without pricing power.** Its technology is genuinely good — zircon nozzles delivering 85-119 heats against an industry standard of 65-80 — and it still lost 17% of standalone EBITDA year on year because liquefied petroleum gas and raw material costs spiked and it could not pass them on fast enough. Management calls its price increases "temporary" and explicitly says they do not add margin. **That is a price-taker describing itself accurately.**',
-                '**The demand backdrop is genuinely good for all three and should not be confused with the investment case.** Indian crude steel output rose about 7.1% in the first half of calendar 2026 to roughly 87 million tonnes, Indian steel demand is forecast to grow 7.4% this year and 9.2% next, announced Indian steel capex is of the order of ₹50,000-60,000cr this financial year, and roughly 71 million tonnes of new electric-arc-furnace capacity is scheduled globally between now and the end of 2028. **Every company here will grow. Only one of them gets to keep the money.**',
+                "Ranked by attractiveness at today's price: how durable the advantage is, whether profit turns into cash, and what the price assumes. What each company does is explained in Tab 2.",
             ],
+            embed: 'ranking',
         },
         {
-            heading: 'The value chain, and where these three sit in it',
+            heading: '2. Charts: margins, growth, returns, cash cycle and cash conversion',
             body: [
-                'Steel is made either in a blast furnace or an electric arc furnace, and both need consumables that are destroyed in the process. These three sell into that gap, but they occupy two completely different industry structures.',
+                "Five views of the three companies, grouped by industry. All figures are consolidated filed results (Screener). Hover over a starred name for its caveat. **Two of the five views are distorted by one-off items in Q4 FY26**: HEG's loss on its GrafTech stake sits inside operating costs, and RHI Magnesita's goodwill write-off sits below operating profit, so it does not affect the margin chart.",
+            ],
+            embed: 'metrics',
+        },
+        {
+            heading: '3. The sector',
+            body: [
+                "Steel is made either by melting iron ore in a blast furnace or by melting scrap and direct-reduced iron in an electric arc furnace. Both routes destroy two kinds of consumable: the linings that hold molten metal (refractories) and, in arc furnaces, the electrodes that carry the current.",
             ],
             points: [
                 {
-                    label: 'The lining — refractories, consumed per tonne of steel',
-                    text: 'RHI Magnesita and IFGL make the bricks, castables, nozzles, porous plugs and tap-hole clay that separate molten metal from the steel shell of a vessel. **The customer economics are the attractive part: refractories are a small share of the cost of a tonne of steel, and a refractory failure stops the plant and can injure people.** That makes procurement managers risk-averse and makes a proven supplier hard to dislodge. Demand has two components — a recurring maintenance stream that tracks tonnes produced, and lumpy project or "first-fill" orders that track capital spending.',
+                    label: 'Value chain',
+                    text: "Raw materials (magnesite, alumina, quartzite and zircon for refractories; petroleum needle coke for electrodes) → the manufacturer (bricks, castables, nozzles, electrodes) → installation and management inside the steel plant → consumed and replaced within days to months. **Steel uses about 10–15 kg of refractories per tonne**, and refractories are about 3% of a steelmaker's costs (RHI Magnesita). Cement uses far less (about 0.5% of cost). The small cost share and the high cost of failure make buyers careful, but large steel groups still negotiate hard.",
                 },
                 {
-                    label: 'The conductor — graphite electrodes, consumed per tonne of arc-furnace steel',
-                    text: 'HEG makes the ultra-high-power electrodes that carry current into an electric arc furnace and are burned away in the process. **This is a fundamentally better industry structure than refractories**, for one reason: making an electrode takes needle coke, a long baking and graphitisation cycle of roughly a month and a half, and decades of accumulated process knowledge, and there are only a handful of credible producers outside China. Refractories, by contrast, has hundreds of producers.',
+                    label: 'Demand drivers',
+                    text: "Steel output (India's rose 7.1% in the first half of 2026 to about 87 Mt; the world outside China rose 2.1%), new steel plants (first-fill refractory orders), and the shift from blast furnaces to arc furnaces, which adds electrode demand. The OECD expects about 71 Mt of new arc-furnace capacity worldwide between 2026 and 2028. **No new blast furnaces are being built in Europe or the US** (HEG).",
                 },
                 {
-                    label: 'And the direction the whole chain is moving — blast furnace to arc furnace',
-                    text: 'Decarbonisation policy, particularly the European carbon border mechanism, is pushing new steel capacity toward electric arc furnaces. **No new blast furnaces are being built in Europe or the United States; all the new capacity is arc furnace.** That is directly additive to electrode demand and broadly neutral for refractories, which are needed either way. It is the single most important structural fact in this note and it works entirely in HEG\'s favour.',
+                    label: 'Industry structure',
+                    text: "**Electrodes are a global oligopoly.** Outside China, capacity is roughly 786,000 tonnes, and five producers (GrafTech, Resonac, HEG, Tokai Carbon, Graphite India) hold about 82% of it. That capacity has shrunk nearly 18% as rivals closed plants (industry estimates). **Refractories are fragmented**: hundreds of producers, Chinese imports, and domestic and multinational rivals adding capacity in India (RHI Magnesita).",
                 },
                 {
-                    label: 'The commercial model everyone is chasing — selling management rather than material',
-                    text: 'Both refractory companies are moving from product supply to total refractory management: RHI\'s 4PRO platform, now including five-year robotic casting leases with customers such as JSW, and IFGL\'s TRM contracts, already 30-40% of monthly revenue with its engineers stationed inside customer plants. **The logic is sound — you cannot easily dismiss a supplier whose people are running part of your process** — but it lengthens the sales cycle, requires the supplier to fund the equipment, and has not yet shown up in either company\'s return on capital.',
+                    label: 'Cyclicality and policy',
+                    text: "Electrode prices swing with global steel utilisation and needle-coke costs, so HEG's margins have ranged from about 12% to over 25% in five years. Refractory volumes follow steel output more steadily. Trade policy matters to both: the US is considering anti-dumping and countervailing duties on Indian electrodes (under 10% of HEG's sales), and Europe's carbon border tax (CBAM) pushes steelmakers towards arc furnaces.",
+                },
+            ],
+            tables: [
+                {
+                    caption: 'Profit pools, from filed figures',
+                    columns: ['Model', 'Who', 'Operating margin (FY22–FY26)', 'Return on capital (FY22–FY26)', 'Why'],
+                    rows: [
+                        ['Graphite electrodes', 'HEG', '12–25%', '4–15%', 'Oligopoly pricing, but a long cash cycle and a large idle treasury dilute returns'],
+                        ['Refractories, market leader', 'RHI Magnesita', '11–19%', '6–37%', 'Scale and technology; returns diluted by acquisition goodwill'],
+                        ['Refractories, specialist', 'IFGL Refractories', '7–11%', '5–11%', 'Good products, weak pricing, loss-making European subsidiaries'],
+                    ],
                 },
             ],
         },
         {
-            heading: 'What actually stops a customer switching',
+            heading: '4. Moat (comparative)',
             body: [
-                'Graded by durability, and the three companies score very differently.',
+                "Five things protect profits here. The grid grades each company on each one; hover over a grade for the reason. How each company's advantage works is explained in Tab 2.",
+            ],
+            embed: 'moat',
+            embedFirst: true,
+            points: [
+                {
+                    label: 'Strongest',
+                    text: "**HEG**, because there are so few alternatives. A new electrode plant takes years, needle-coke contracts and decades of process knowledge; HEG says it was itself the last new entrant in the Western world, in 1976.",
+                },
+                {
+                    label: 'Widening',
+                    text: "**RHI Magnesita**, as it moves from selling bricks to running customers' refractory operations (robots, scanning, full-line service) and secures its own raw materials. Both raise switching costs.",
+                },
+                {
+                    label: 'Weakest',
+                    text: "**IFGL.** Its nozzles and slide-gate systems perform well, but it buys all its minerals and cannot pass on cost spikes quickly.",
+                },
+                {
+                    label: 'Competitors outside the list',
+                    text: "**Graphite India** (India's other electrode maker, which also owns 6.82% of GrafTech), **GrafTech**, **Tokai Carbon** and **Resonac** in electrodes. **Vesuvius (Foseco), Calderys, Krosaki, Shinagawa and Chinese suppliers** in refractories.",
+                },
+            ],
+        },
+        {
+            heading: '5. Margins (comparative)',
+            body: [
+                "The test for a lasting margin here is simple: when input costs rise 10%, how quickly does the selling price follow? Q1 FY27 was that test: needle coke, magnesite, LPG, freight and energy all rose with the West Asia war.",
             ],
             points: [
                 {
-                    label: 'Being one of four people in the world who can make it — the strongest moat here',
-                    text: 'HEG\'s position is not about switching costs at all; it is about the absence of alternatives. Global ultra-high-power electrode demand is roughly 600,000 tonnes and the credible non-Chinese supply base is a handful of plants. **HEG\'s scale advantage is widening rather than eroding:** at 115,000 tonnes it will be more than 60% larger than the next plant in the world. A customer can shop around, but it is shopping among four sellers who all face the same needle coke bill.',
+                    label: 'HEG: high but cyclical',
+                    text: "Filed operating margins over five years ran from 12% (FY25) to 25% (FY23). Q1 FY27 standalone EBITDA was 29% (company measure), helped by old, cheaper needle coke still in stock and better prices. **Management says it can hold margins as needle coke rises, because it is booked up to September and will raise prices for later orders**; two rivals have announced increases of $600–1,200 and $930 a tonne. The squeeze, if any, arrives around November–January, when costlier coke reaches production.",
                 },
                 {
-                    label: 'Verified performance in a consequence-heavy application — hard, and IFGL genuinely has it',
-                    text: 'IFGL\'s zircon nozzles run 85-119 heats against an industry standard of 65-80, and its energy-optimising furnace linings passed 1,000 heats in a maiden campaign at Vizag. **Those numbers are the moat: a plant manager choosing between a nozzle that lasts 70 heats and one that lasts 100 is not really comparing prices.** The problem is that verified performance buys the order, not the margin, when the counterparty is an integrated steel producer with procurement leverage.',
+                    label: 'RHI Magnesita: steady at 11–14%',
+                    text: "The margin fell from 19% in FY22 to 11% in FY26 as the lower-margin Dalmia business was added and competition rose. Q1 FY27's 14.5% adjusted margin came from flow-control products (35% of revenue, where price rises stick) and a 'war surcharge'. **Management still guides 13%**, calling anything above it upside. Magnesite rose another 6–8% in the last two months.",
                 },
                 {
-                    label: 'Embedded operations and equipment on site — durable once it exists',
-                    text: 'A five-year robotic casting lease is a genuinely different relationship from a brick order: RHI supplies the refractories, maintains the robot, and is inside the customer\'s process for half a decade. IFGL\'s TRM engineers sit in the plant. **This is the most promising thing either company is doing, and it is still early** — the sales cycle is long by design and the capital is the supplier\'s.',
+                    label: 'IFGL: low and falling',
+                    text: "The consolidated margin fell from 11% to 7% over five years. In Q1 the standalone gross margin dropped from 47% to 43%, and EBITDA fell 17%, because LPG and raw materials rose faster than prices. **Management calls its price increases temporary and says they add no margin.** Its goal is a double-digit consolidated margin once the UK and German subsidiaries break even.",
                 },
                 {
-                    label: 'Category leadership and installed reference base — real, but not protective on price',
-                    text: 'RHI holds about 30-32% of Indian steel refractories and roughly 40% of cement, serving hundreds of customers across nine sites, and competitors have been losing share to it. **Share is worth having and it is not the same as pricing power** — RHI still had to describe its Q1 price increases as a "war surcharge" rather than a price rise, which tells you exactly how they were negotiated.',
+                    label: 'A margin only counts if it turns into cash',
+                    text: "Five-year conversion of operating profit into operating cash: **RHI Magnesita 59%, HEG 49%, IFGL 35%.** RHI Magnesita has improved steadily (77% in FY25, 92% in FY26). HEG swings with stock levels. IFGL has not produced free cash in five years.",
+                },
+            ],
+            tables: [
+                {
+                    caption: 'Operating profit (EBITDA) versus operating cash, FY22–FY26 (₹cr, consolidated)',
+                    columns: ['Company', 'Operating profit, 5 yrs', 'Operating cash, 5 yrs', 'Cash ÷ profit', 'Free cash after capex, 5 yrs', 'Net profit, 5 yrs', 'FY26: profit → cash'],
+                    rows: [
+                        ['RHI Magnesita', '2,231', '1,318', '**59%**', '881', '−477 (after write-offs)', '443 → 409'],
+                        ['HEG', '2,190', '1,077', '**49%**', '−552', '1,731', '399 → 213'],
+                        ['IFGL Refractories', '718', '253', '**35%**', '−217', '316', '137 → 63'],
+                    ],
+                    note: 'Filed annual accounts (Screener). Free cash is operating cash minus capex. HEG’s negative free cash reflects its expansion from 80,000 to 100,000 tonnes and spending on the anode plant (moving to HEG Greentech). RHI Magnesita’s five-year net loss comes from write-offs of acquisition goodwill, not from operations. HEG’s net profit includes other income from its treasury and its share of Bhilwara Energy’s profits.',
                 },
                 {
-                    label: 'The anti-moat: commodity bricks into a market with too much capacity',
-                    text: 'Roughly 70% of refractories consumed in India are made locally and 30% imported, of which about two-thirds comes from China. Add domestic overcapacity and both multinational and local greenfield expansion, and **the basic brick and monolithic segment has no defence at all.** RHI\'s response is to walk away from low-margin cement volume; IFGL\'s response is to accept lean margins to win new accounts. One of those is a strategy and the other is a symptom.',
+                    caption: 'Q1 FY27 cash and balance sheet, as stated by the companies',
+                    columns: ['Company', 'What management said', 'Balance sheet'],
+                    rows: [
+                        ['HEG', 'Treasury of about ₹858cr; no long-term debt. HEG Greentech will carry about ₹1,500cr of gross debt by March 2027 for the anode plant', 'Debt-free (electrode business)'],
+                        ['RHI Magnesita', 'Operating cash ₹81cr on ₹147cr EBITDA; stock built deliberately ahead of H2 orders', 'Net cash ₹140cr; cash and equivalents ₹452cr'],
+                        ['IFGL Refractories', 'Staff costs about 10% of standalone revenue; Chinese JV land already paid for', 'Net debt ₹74cr (March 2026)'],
+                    ],
                 },
             ],
         },
         {
-            heading: 'Technical barriers, graded',
+            heading: '6. Growth and capex (comparative)',
             body: [
-                'Difficulty of manufacture varies enormously across what looks like one industry.',
+                "What each company says it will deliver and spend, then my own estimate of earnings growth over the next three to five years.",
             ],
             points: [
                 {
-                    label: 'Very hard — ultra-high-power graphite electrodes',
-                    text: 'A needle coke supply relationship, a month-and-a-half production cycle, graphitisation furnaces, and decades of recipe knowledge. **Nobody has entered this industry successfully outside China in a very long time, and the incumbents are running plants that took generations to optimise.** HEG is leveraging exactly this capability — fifty years of graphitisation expertise — to enter synthetic graphite anode materials for batteries.',
+                    label: 'HEG: volume capped, price decides',
+                    text: "The plant runs at 90–95% (94,000–95,000 tonnes is the practical peak). Growth comes from the 15,000-tonne expansion by early 2028 and from electrode prices. The battery-anode plant (20,000 tonnes, ₹2,200cr, production from Q1 FY28) and the hydro and storage businesses move to HEG Greentech. Management targets ₹600–700cr of anode revenue in year one, rising to ₹1,500–1,600cr in year three at about 35% EBITDA.",
                 },
                 {
-                    label: 'Hard — flow control and isostatic products',
-                    text: 'Nozzles, tube changers, porous plugs, slide gates. Performance is measurable in heats and the failure mode is catastrophic, so qualification is slow and reference-driven. Flow control is now about 35% of RHI\'s total revenue and is where its price increases actually stuck; it is also where IFGL\'s technical edge is verifiable.',
+                    label: 'RHI Magnesita: steel growth plus a little',
+                    text: "It guides volume growth equal to steel and cement growth plus 1–2 points (7–8% this year; 9% is 'a stretch') and a 13% margin. Capex is modest (₹80–100cr a year). Coke-oven and glass project orders arrive in H2, and the coke-oven order books the plant for 14–16 months. Indian steel capex is ₹50,000–60,000cr this year by management's estimate.",
                 },
                 {
-                    label: 'Moderate — specialty castables, mag-carbon brick, casting flux, ramming mass',
-                    text: 'Real formulation science and real customer trials, but many capable producers. IFGL is adding mag-carbon brick and casting flux for ₹150-200cr of peak revenue and has begun producing Sheffield\'s plastic ramming mass at Vizag. **Worth doing; not worth a premium multiple.**',
+                    label: 'IFGL: repair before growth',
+                    text: "It targets double-digit domestic growth and a double-digit consolidated margin, plus ₹150–200cr of peak revenue from two new product lines (magnesia-carbon bricks and casting flux). The Chinese joint venture in Gujarat is on hold awaiting Indian government approval.",
                 },
                 {
-                    label: 'Low — bulk bricks and monolithics',
-                    text: 'Where the Chinese imports and the domestic overcapacity live, and where price sets the allocation. Every company here is trying to move revenue out of this bucket, which is the correct instinct.',
+                    label: 'My outlook',
+                    text: "India's steel output should keep growing 7–9% a year, which carries refractory volumes. Electrode demand depends on arc-furnace additions outside China, which are real but slow. **The key variables are HEG's electrode price and RHI Magnesita's margin, not volume.**",
+                },
+            ],
+            tables: [
+                {
+                    caption: 'Guidance, capex and track record',
+                    columns: ['Company', 'Guidance', 'Capex', 'Track record'],
+                    rows: [
+                        ['HEG', 'Utilisation 90–95%; hold ~28–29% margins', '15,000 t expansion by early 2028; anode plant moves to Greentech', '**Beat**: Q1 margin far above the 17–18% it warned of'],
+                        ['RHI Magnesita', 'Volume = market + 1–2 pts; EBITDA margin 13%', '₹80–100cr a year; Minpro JV ₹35cr', '**Delivered**: margin above guidance in Q1'],
+                        ['IFGL Refractories', 'Double-digit domestic growth; double-digit consolidated margin', 'Modest; Gujarat JV on hold', '**Missed**: margins down, Europe still loss-making'],
+                    ],
                 },
                 {
-                    label: 'And the adjacency that is harder than it looks — battery anode materials',
-                    text: 'HEG\'s Greentech venture will make synthetic graphite anode material, where **China controls roughly 97% of global supply.** The protection is regulatory rather than technical — Indian incentives and US rules restricting Chinese battery material create a market for a non-Chinese supplier. That is a real opportunity and a rented moat, and it is exposed to both Chinese price aggression and a change in battery chemistry.',
+                    caption: 'My estimate of earnings growth over the next three to five years',
+                    columns: ['Company', 'What drives it', 'Earnings growth: low / base / high', 'Price needs'],
+                    rows: [
+                        ['HEG (electrode business)', 'Electrode prices, 15% more capacity, needle-coke costs', '−5% / **8%** / 15%', '~8%'],
+                        ['RHI Magnesita', 'Steel volumes, flow-control mix, captive mining savings', '10% / **14%** / 18%', '18–22%'],
+                        ['IFGL Refractories', 'Recovery from a depressed base if Europe breaks even', '5% / **15%** / 30%', '~19%'],
+                    ],
+                    note: 'My own judgement, not company guidance. RHI Magnesita’s estimate is from normalised (pre-write-off) earnings. Required growth uses the rule in section 8.',
                 },
             ],
         },
         {
-            heading: 'Who they are competing against',
+            heading: '7. Risk factors',
             body: [
-                '**In electrodes, the competition is an oligopoly that is currently behaving like one.** GrafTech has announced increases of $600-1,200 a tonne depending on size and grade, and Tokai Carbon has announced roughly $930. HEG\'s management said plainly that it will follow. **Announced pricing in a four-player market is the clearest evidence of structure anywhere in these notes** — although management is equally clear that how much of it steelmakers actually absorb will only be visible in a quarter or two, because everyone is booked out three to four months ahead.',
-                '**In Indian refractories, the competition is fragmented, importing, and expanding.** The Indian market is roughly $3.4bn, about 8% of global revenue. RHI competes against Vesuvius India, Tata Krosaki, IFGL and a long tail of local producers, and against Chinese imports that supply roughly a fifth of Indian consumption. Both Vesuvius India and Tata Krosaki have been losing share while RHI has held its own — but management is explicit that competitive intensity is rising from both multinational and domestic greenfield capacity.',
-                '**In the raw material, the competition is China again.** China accounts for around 60% of global magnesite production, which is why a 6-8% move in magnesite prices over two months lands directly on RHI\'s cost line and why backward integration into captive quartzite and a mineral-processing joint venture is worth more than it sounds.',
-                '**And a note on trade policy, which cuts both ways.** HEG faces United States anti-dumping and countervailing duty investigations with determinations due around September; management puts US exposure below 10% of sales and is confident it can redirect volume, which the Middle East disruption already demonstrated. Meanwhile IFGL\'s planned Gujarat joint venture with a Chinese partner **has been stalled by the Indian government under the Press Note 3 regime**, with money already spent on land. Protectionism is a tailwind in one direction and a stranded asset in the other.',
-            ],
-        },
-        {
-            heading: 'Are the margins structural?',
-            body: [
-                'Three very different answers, and the arithmetic is unusually clean.',
+                "Sector-wide risks first, then each company. The table records which risks management addressed on the call and which it avoided or left open.",
             ],
             points: [
                 {
-                    label: 'HEG — structural, and currently understated',
-                    text: 'Standalone EBITDA margin of 29% and consolidated 27%, on 11% revenue growth with volumes slightly *down* — that is realisation and mix, which is exactly what a cost leader with pricing power should produce. **Management had guided 17-18% for the first half and delivered 29%**, then raised its expectation to holding the high twenties. Needle coke is up $200-300 a tonne and total electrode cost is heading up 10-15%, but the book is sold forward and the price increases land from October, so the spread is managed rather than surprised. Debt-free with an ₹858cr treasury.',
+                    label: 'Steel cycle and Chinese exports',
+                    text: "China still exported about 55 Mt of steel in the first half of 2026, holding down global prices and utilisation. Trade barriers are protecting steelmakers for now, but lower utilisation outside China would hit electrode prices first.",
                 },
                 {
-                    label: 'RHI — improving for identifiable structural reasons',
-                    text: 'Margin went from 10.8% a year ago to 14.1%, and the drivers are the right ones: flow control mix, price increases that stuck, and operating leverage. Ahead of it sit two permanent cost changes — the Charaipani and Bikampali quartzite mines opening, and the Minpro joint venture with Khemka, a ₹35cr initial investment at 8-10% EBITDA with a payback under three years. **Management asked directly whether the mines mean higher volume or higher margin answered "margin will improve."** Guidance stays at 13%, which after a 14.1% quarter is a conservative floor.',
+                    label: 'Input costs',
+                    text: "Needle coke is up $200–300 a tonne; magnesite is up 6–8%; LPG and freight spiked in Q1. Whoever cannot reprice quickly loses margin.",
                 },
                 {
-                    label: 'IFGL — not structural, and management says so',
-                    text: 'Standalone gross margin fell from 47% to 43% and standalone EBITDA fell 17% year on year on raw material and fuel costs. **The price increases being implemented are described as "temporary price increases based on the increase in input costs" that generate no additional margin.** Consolidated margin is 7.8% against an aspirational "double-digit" target that has been deferred repeatedly. Staff costs run at about 10% of standalone revenue. Europe is loss-making, with Monocon UK targeting breakeven and Hoffman aiming for breakeven by the end of FY27.',
+                    label: 'Trade actions',
+                    text: "US anti-dumping and countervailing duty decisions on Indian electrodes are expected around September. HEG says the US is under 10% of sales and it would keep supplying there, even if it lost some share.",
                 },
+            ],
+            tables: [
                 {
-                    label: 'And one earnings-quality item to strip out',
-                    text: '**HEG\'s reported profit is being moved around by a foreign equity holding rather than by the business.** Q4 FY26 showed a consolidated EBITDA loss of ₹108cr and a ₹119cr net loss driven by a mark-to-market write-down on its GrafTech stake; this quarter roughly ₹35cr of the ₹43cr of other income is a fair-valuation gain on the same investment. Neither figure tells you anything about electrodes. Value the operating business and treat the stake as a separate, volatile asset.',
+                    caption: 'Company-specific risks and how management handled them',
+                    columns: ['Company', 'Key risk', 'Addressed on the call', 'Avoided or unresolved'],
+                    rows: [
+                        ['HEG', 'Electrode prices; needle coke; demerger complexity; GrafTech stake swings', 'Cost timing explained; US exposure quantified; Greentech debt (~₹1,500cr) disclosed', '**Would not say where Middle East volumes went or give price-increase figures**'],
+                        ['RHI Magnesita', 'Competition and pricing; raw materials; returns on acquired capital', 'Goodwill write-off explained (non-cash); 13% guide held', '**Would not split price vs mix or quantify mining savings**; auditor resigned mid-year to align with the group'],
+                        ['IFGL Refractories', 'Cost pass-through; European losses; stalled Chinese JV', 'JV status disclosed honestly; Europe break-even plan', '**Would not give Monocon’s loss**; price rises described as temporary'],
+                    ],
                 },
             ],
         },
         {
-            heading: 'Where the growth comes from',
+            heading: '8. Valuation (comparative)',
             body: [
-                '**Indian steel capacity, which is the base case for all three.** Crude steel output up about 7.1% in the first half of calendar 2026, demand forecast to grow 7.4% in 2026 and 9.2% in 2027, and announced steel sector capital spending of roughly ₹50,000-60,000cr this year. SAIL\'s new Bhilai melt shop adds around 6-6.5 million tonnes and is still six to eight months away from talking to refractory suppliers. **Project and first-fill orders are the lumpy, high-value part of that** — RHI has a coke oven battery project that will keep it fully booked for 14-16 months, plus two glass projects and a silica project landing in the second half.',
-                '**Global arc furnace build-out, which is HEG\'s specific tailwind.** Roughly 71 million tonnes of new electric arc furnace capacity is planned globally for completion by the end of 2028, with 25-30 million tonnes already in operation and about 60 million tonnes due across 2026-28. HEG is expanding 100,000 to 115,000 tonnes by early 2028 precisely against that.',
-                '**Cost deflation, which is growth in disguise.** RHI\'s captive quartzite mines and the Minpro joint venture change the cost base permanently rather than winning a negotiation. It is also localising four to five more products from its global parent\'s portfolio within about a year, which is free portfolio expansion.',
-                '**HEG\'s demerger, which is the dated catalyst in this note.** The composite scheme has been heard by the National Company Law Tribunal and awaits pronouncement. It splits a debt-free graphite business with ₹858cr of treasury from a Greentech entity carrying about ₹1,500cr of gross project debt. **Greentech is not a slide:** the 20,000-tonne anode plant starts commercial production in Q1 FY28 with roughly 70% of capacity being contracted on three-to-five-year agreements with tier-one cell makers, guided at ₹600-700cr of revenue in year one rising to ₹1,500-1,600cr by year three at 35% margins, alongside 300MW of debt-free hydro generating ₹320-350cr of free cash flow a year.',
-                '**IFGL\'s self-help, which is real but small.** Technology transfer from Sheffield with plastic ramming mass now in production at Vizag, mag-carbon brick and casting flux worth ₹150-200cr at peak, Khurda greenfield capacity with a ₹20cr research facility, Monocon pushing into foundry products, and new offices in Saudi Arabia and Australia. The two genuine swing factors are outside its control: British Steel getting its blast furnace back and the former Liberty Steel melt shops restarting around November-December.',
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **8% at 13x, 16% at 25x, 19% at 33x and 22% at 42x.** The chart shows return on capital against the P/E.",
             ],
-        },
-        {
-            heading: 'Risks worth naming',
-            body: [
-                '**Everything here is a derivative of steel utilisation.** About 80% of RHI\'s revenue is steel. If Indian safeguard tariffs were rolled back and cheap Chinese steel flooded in, domestic utilisation would fall and both volume and pricing leverage would go with it. Global steel production was still marginally *down* in the first half of 2026, and Chinese exports remain historically elevated at 55 million tonnes; the industry is being held up by trade defence, not by demand.',
-                '**Input costs arrive faster than price increases, for everyone.** Magnesite up 6-8% in two months, needle coke up $200-300 a tonne, ocean freight and energy elevated by Middle East disruption, and liquefied petroleum gas availability constrained. HEG manages the lag through forward booking, RHI recovered it with surcharges, IFGL absorbed it. **That ranking is the ranking of pricing power in this sector.**',
-                '**Trade policy, in both directions.** HEG faces US anti-dumping and countervailing determinations around September on under 10% of sales. IFGL\'s Gujarat joint venture is stalled indefinitely under Press Note 3 with land already bought.',
-                '**HEG\'s demerger mechanics deserve scrutiny.** The swap ratio and the consolidation take promoter holding to roughly 62%, and the Greentech entity absorbs the project debt while the graphite business keeps the cash. That may well be the right structure, but minority holders should satisfy themselves on the valuation of the private energy assets being folded in before the record date.',
-                '**And the technology risk inside Greentech.** Synthetic graphite anode capacity is a bet that lithium-ion chemistry stays dominant and that Chinese producers — who hold about 97% of the market — do not simply price the new entrant out before the plant reaches scale. Management points to eight-to-ten-year customer commitments as mitigation; that is a real answer, not a complete one.',
+            embed: 'scatter',
+            embedFirst: true,
+            points: [
+                {
+                    label: 'Cheap',
+                    text: "**HEG** (12.8x, below book value; needs ~8%). The P/E includes treasury income and the Bhilwara Energy share, and the demerger will split the price between the two companies, so value the electrode business on its own cash flows.",
+                },
+                {
+                    label: 'Stretched',
+                    text: "**RHI Magnesita** (42.5x on filed earnings; about 31x on Q1's adjusted earnings annualised; needs 18–22% against my ~14%). **IFGL** (32.8x; needs ~19% from a business whose returns have fallen five years running).",
+                },
             ],
-        },
-        {
-            heading: 'What would change the picture',
-            body: [
-                '**For the better:** confirmation that the announced global electrode price increases are actually being absorbed by steelmakers, which would move HEG\'s earnings materially and is visible within two quarters; a clean demerger order with a sensible record date, which converts a conglomerate discount into two priced assets; RHI quantifying the cost benefit of captive quartzite and Minpro, which it has so far declined to do; and IFGL getting Monocon UK and Hoffman to breakeven, which alone would lift consolidated margin toward double digits.',
-                '**For the worse:** a rollback of Indian steel safeguard duties; an adverse US anti-dumping outcome large enough to force HEG to redirect its highest-priced volumes; needle coke inflation outrunning price increases in a softening steel market; and, for IFGL specifically, a formal refusal of the Gujarat joint venture, which would strand the land and end the cement-segment expansion plan.',
+            tables: [
+                {
+                    caption: 'What the price assumes',
+                    columns: ['Company', 'P/E', 'Return on capital (5-yr range)', 'Growth the price needs', 'My estimate', 'Verdict'],
+                    rows: [
+                        ['HEG', '12.8', '4–15%', '~8%', '~8%', '**Cheap for a cyclical**'],
+                        ['RHI Magnesita', '42.5 (≈31 adjusted)', '6–37%', '18–22%', '~14%', '**Stretched**'],
+                        ['IFGL Refractories', '32.8', '5–11%', '~19%', '~15%', '**Stretched**'],
+                    ],
+                    note: 'P/E from Screener on 23 September 2026. RHI Magnesita’s adjusted figure is my calculation: Q1 FY27 adjusted EPS of ₹3.1 × 4 against a ₹385 share price.',
+                },
             ],
         },
     ],
 
     verdicts: [
         {
-            company: 'HEG',
-            stance: 'CYCLICAL',
-            what: 'The world\'s largest single-site graphite electrode plant, plus a soon-to-be-demerged Greentech business in battery anode materials, hydro power and energy storage.',
-            view: '**The best competitive position in this note and one of the clearest in any of them: scale in an industry with three or four credible non-Chinese producers.** At 100,000 tonnes going to 115,000 by early 2028, against next-largest plants of about 70,000, HEG is the low-cost producer and behaves like it — above 90% utilisation while Western peers ran 60-65%, 29% standalone margins against guidance of 17-18%, and the ability to follow rather than initiate when GrafTech and Tokai announce increases of $600-1,200 and $930 a tonne. Debt-free with an ₹858cr treasury at 12.8x and below book value. The demerger is a dated catalyst on top: the graphite business keeps the cash while Greentech takes the ₹1,500cr of project debt, a 20,000-tonne anode plant starts in Q1 FY28 with roughly 70% of capacity being contracted on three-to-five-year deals, and 300MW of debt-free hydro already throws off ₹320-350cr of free cash flow a year.',
-            watch: '**Electrode prices are set by the cycle, and the cycle is being propped up by trade defence rather than demand** — global steel output was still marginally down in the first half of 2026. Needle coke is up $200-300 a tonne with the impact landing late in the year. US anti-dumping and countervailing determinations are due around September on under 10% of sales. Reported profit is distorted in both directions by mark-to-market swings on the GrafTech stake — a ₹119cr loss last quarter, a fair-value gain this one — so value the operating business separately. And the demerger takes promoter holding to about 62%, which is worth checking before the record date.',
+            company: 'HEG', rank: 1, stance: 'CYCLICAL', segment: ELECTRODE,
+            what: "Graphite electrodes for electric arc furnaces from the world's largest single-site plant (100,000 tonnes), exported to about 35 countries. Its battery-anode, hydro-power and storage businesses are being demerged into HEG Greentech.",
+            view: "**The strongest position in this sector: scale in an industry with five real producers outside China.** It ran above 90% utilisation while Western capacity reportedly runs at 60–65%, earned a 29% standalone margin in Q1, and is debt-free with an ₹858cr treasury. At 12.8x and below book it needs only ~8% growth. It is a cycle, not a compounder: five-year cash conversion is 49% and free cash was negative during the expansion.",
+            watch: 'Electrode price increases from October; needle-coke costs from November; US duty decisions; the demerger record date.',
         },
         {
-            company: 'RHI Magnesita',
-            stance: 'PRICED',
-            what: 'India\'s largest refractory producer — bricks, castables, flow control and tap-hole clay for steel and cement — shifting from product supply to managing customers\' refractory operations.',
-            view: 'The category leader with roughly 30-32% of Indian steel refractories and about 40% of cement, and it is doing the three things that would make that leadership pay. **Flow control is now around 35% of revenue and is where price increases actually stick.** The 4PRO model moves the relationship from selling bricks to five-year robotic casting leases that include the refractories and the maintenance — genuinely hard to unwind once installed. And the cost base is being changed permanently rather than negotiated: the Charaipani and Bikampali quartzite mines are opening and the Minpro joint venture with Khemka adds mineral processing at a payback under three years. Margins went from 10.8% to 14.1% year on year with a 13% guide that now reads as a floor, on a net cash balance sheet of ₹452cr and a fully booked 14-16 month coke oven project.',
-            watch: '**6.46% on capital at 40.7x is the entire problem, and it has not yet moved.** About 80% of revenue is a derivative of steel utilisation, cement customers are running at 55-60% and forcing the company to walk away from volume, and Chinese imports supply roughly a fifth of Indian refractory consumption into a market that already has too much capacity. The Q1 price increase was a "war surcharge", not a price rise — it comes back off when input costs do. Management has declined to quantify the savings from captive mining. Excellent business, wrong price today.',
+            company: 'RHI Magnesita', rank: 2, stance: 'PRICED', segment: REFRAC,
+            what: "India's largest refractory maker (30%+ share), the Indian arm of Austria's RHI Magnesita group, serving steel, cement, non-ferrous and glass plants.",
+            view: "**The best refractory business, at a price that assumes the improvement has already happened.** Flow control (35% of revenue) and the 4PRO service contracts are raising switching costs, and a captive quartzite mine is opening. But return on capital has been 6–11% since the Dalmia deal, the margin guide is only 13%, and at 42.5x (about 31x adjusted) it needs 18–22% growth against my ~14%.",
+            watch: 'Margins holding above 13% as magnesite rises; mining savings quantified; the H2 coke-oven and glass orders.',
         },
         {
-            company: 'IFGL Refractories',
-            stance: 'TURNAROUND',
-            what: 'Specialist refractory maker — nozzles, porous plugs, ramming mass, casting flux — with Indian plants and loss-making operations in the UK and Germany plus a profitable US business.',
-            view: 'The technology is genuinely good and measurable, which is the reason to look at all: **zircon nozzles running 85-119 heats against an industry standard of 65-80, and furnace linings that passed 1,000 heats in a maiden campaign at Vizag.** Total refractory management contracts are already 30-40% of monthly revenue with engineers stationed inside customer plants. The American business is the crown jewel, delivering double-digit revenue and margin growth with a specialised thin-slab caster product designed in India and made in the US. Technology transfer from Sheffield has begun converting, with plastic ramming mass now in commercial production at Vizag, and mag-carbon brick and casting flux add ₹150-200cr at peak. Two external catalysts are visible: British Steel, now in public ownership, restoring its blast furnace, and the former Liberty Steel melt shops potentially restarting around November-December.',
-            watch: '**4.92% on capital, a 7.8% consolidated margin, and the stock 41% off its high — this is a price-taker and the quarter proved it.** Standalone EBITDA fell 17% year on year because fuel and raw material costs rose and the pass-through lagged, and management describes its price increases as temporary and margin-neutral. Europe is still bleeding, with both Monocon UK and Hoffman on breakeven-by-FY27 promises that depend on customers restarting plants. The Gujarat joint venture is stalled under Press Note 3 with the land already paid for. Staff costs sit at about 10% of standalone revenue. Nothing to do until Europe breaks even and the price increases hold.',
+            company: 'IFGL Refractories', rank: 3, stance: 'TURNAROUND', segment: REFRAC,
+            what: "Specialist flow-control refractories (nozzles, slide-gate and purging systems) made in India, with subsidiaries in the US, UK, Germany and China.",
+            view: "**Good products, no pricing power, and a European drag.** Standalone EBITDA fell 17% in Q1 as costs outran prices; management says its price increases add no margin. Return on capital has fallen from 11% to 5%, and five-year cash conversion is 35%. The US business is strong. At 32.8x it needs ~19% growth.",
+            watch: 'Monocon UK and Hofmann reaching break-even in FY27; British Steel and Specialty Steel restarting; price increases holding.',
         },
     ],
 
     closing: {
-        heading: 'What I actually think',
+        heading: '9. Summary review',
         body: [
-            'Three companies selling consumables into the same furnaces, and the return on capital differs by a factor of two because of one variable: how many other people can supply the same thing.',
-            '**HEG is the position I would take, and I would take it on the structure rather than the quarter.** Being the largest single-site producer in a global industry with three or four credible non-Chinese players is a durable advantage, and the widening scale gap to 115,000 tonnes makes it more durable rather than less. The evidence is not the margin; it is the utilisation gap — above 90% while Western capacity sits at 60-65% — because that is what a cost curve looks like from the bottom. At 12.8x and below book, debt-free with ₹858cr of treasury, with 71 million tonnes of new arc furnace capacity coming globally by 2028 and a demerger that separates a cash-generating cyclical from a funded growth asset, the risk-reward is asymmetric. **The honest caveat is in the label: electrode earnings are set by the cycle, and this cycle is being held up by anti-dumping duties rather than by steel demand.** Size it as a cyclical bought cheap, not as a compounder.',
-            '**RHI Magnesita is the company I would most like to own and will not buy here.** Everything about the strategy is right — flow control at 35% of revenue is where pricing power actually exists, the 4PRO robotic leases genuinely change the relationship, and captive quartzite plus the Minpro joint venture are permanent cost changes rather than a negotiation won. Net cash, a 14-16 month booked project, and a 13% guide that now looks conservative after a 14.1% quarter. But 6.46% on capital at 40.7x means the market is already paying for the improvement and the improvement has not arrived. **I want to see two things before paying up: the captive mining benefit quantified, which management has so far refused to do, and one quarter where a price increase is a price increase rather than a "war surcharge" that reverses when freight normalises.**',
-            '**IFGL Refractories is a genuine turnaround with good technology and no pricing power, and those two facts have to be held together.** A nozzle that runs 85-119 heats against a standard of 65-80 is a real product advantage, and it still could not stop a 17% fall in standalone EBITDA when liquefied petroleum gas spiked, because the counterparty is an integrated steel producer and the contract has a lag in it. Management deserves credit for saying so plainly, and for admitting that the Gujarat joint venture is stalled rather than pretending otherwise. At 4.92% on capital with Europe still loss-making, the things that fix this are mostly not in the company\'s hands — British Steel\'s blast furnace, the Liberty Steel restart, and a government approval. **Watchlist, with two specific triggers: Monocon UK at breakeven, and a price increase that management does not describe as temporary.**',
-            'The question I would put to all three: when your input costs rise 10%, how long before your selling price does? HEG answers in one quarter and books forward to manage it. RHI answers with a surcharge it negotiated within the quarter. IFGL answers that there is a time lag and it absorbed the cost. **That single answer explains the entire spread in returns across this sector, and no amount of technology closes it.**',
+            "**HEG is the one to own, as a cycle.** Few producers, the lowest cost and the largest plant give it pricing power when steel demand recovers. At 12.8x and below book the price already allows for a bad cycle. The demerger separates a cash-generating electrode business from a capital-hungry battery-materials venture, which makes the electrode business easier to value.",
+            "**RHI Magnesita is the better long-term business, at the wrong price.** Its strategy is right (flow control, service contracts, captive raw materials), and the write-off removes the Dalmia goodwill that held down its returns. But a 13% margin guide does not support 42x filed earnings. I would buy it closer to 25–30x adjusted earnings.",
+            "**IFGL Refractories needs Europe fixed before it is investable.** Its products are good and the US business is strong, but it cannot reprice fast enough and its European subsidiaries lose money.",
+            "**What would change my view.** A sharp fall in electrode prices, or US duties above 20%, would hurt HEG. RHI Magnesita holding 14%+ margins with the mining savings would justify more of its price. IFGL's Europe breaking even and its consolidated margin reaching 10% would make it interesting at a lower price.",
+            "**What to watch next quarter.** HEG: price increases on October bookings and the demerger timetable. RHI Magnesita: margin as magnesite rises, and the coke-oven order. IFGL: Europe's losses and the standalone margin.",
         ],
         bottomLine:
-            'Own the scarcity, not the technology. HEG is the only company here that cannot easily be replaced, and it is trading below book with a demerger catalyst attached. RHI Magnesita is the better-run business at the wrong price until its captive mining shows up in the returns. IFGL Refractories has the best product performance in the sector and the least ability to charge for it.',
+            "Own the scarcity. HEG is one of five electrode makers that matter outside China, and it trades below book. RHI Magnesita is the better-run refractory business but priced for improvements it has not yet delivered. IFGL has good products and too little pricing power.",
     },
 
     sources: [
-        {
-            label: 'India refractories market size and import structure — IMARC Group',
-            url: 'https://www.imarcgroup.com/india-refractories-market',
-        },
-        {
-            label: 'Global refractories market structure and outlook — Mordor Intelligence',
-            url: 'https://www.mordorintelligence.com/industry-reports/refractories-market',
-        },
-        {
-            label: 'Global steel industry battles surplus supply and protectionism — S&P Global',
-            url: 'https://www.spglobal.com/energy/en/news-research/latest-news/metals/011226-global-steel-industry-battles-surplus-supply-protectionism',
-        },
-        {
-            label: 'Graphite electrode market: producers, capacity and growth — Grand View Research',
-            url: 'https://www.grandviewresearch.com/industry-analysis/graphite-electrode-market-report',
-        },
-        {
-            label: 'Graphite electrode market size and key players including HEG — OpenPR',
-            url: 'https://www.openpr.com/news/4499608/graphite-electrode-market-to-reach-usd-14-7-billion-by-2033',
-        },
+        { label: 'Filed quarterly results, annual ratios and cash flows — Screener.in', url: 'https://www.screener.in/company/RHIM/consolidated/' },
+        { label: 'HEG Q1 FY27 investor presentation', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=393ba8bf-2ea2-45bb-9257-de3b5890e9e4.pdf' },
+        { label: 'HEG Greentech investor presentation (demerger), July 2026', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=88bdd2bc-5c8c-4533-afa7-016ceccb8057.pdf' },
+        { label: 'RHI Magnesita India Q1 FY27 investor presentation', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=233e5cd6-88dc-4089-b94d-7e4ffd692b01.pdf' },
+        { label: 'IFGL Refractories Q1 FY27 investor presentation', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=97a9566b-87e6-40ed-86d2-32aaeb01f31c.pdf' },
+        { label: 'RHI Magnesita completes acquisition of Dalmia OCL', url: 'https://www.rhimagnesitaindia.com/media/news-events/rhi-magnesita-completes-acquisition-of-dalmia-ocl/1/82' },
+        { label: 'Graphite electrode capacity outside China and the leading producers — Zennivesh', url: 'https://zennivesh.substack.com/p/graftech-the-phoenix-of-the-graphite' },
+        { label: 'India refractories market size — IMARC Group', url: 'https://www.imarcgroup.com/india-refractories-market' },
+        { label: 'Global steel industry battles surplus supply and protectionism — S&P Global', url: 'https://www.spglobal.com/energy/en/news-research/latest-news/metals/011226-global-steel-industry-battles-surplus-supply-protectionism' },
     ],
 };
