@@ -388,6 +388,10 @@ export const electricalEquipment: SectorOverview = {
                     label: 'Policy',
                     text: "RDSS (smart meters and distribution upgrades), PM-KUSUM and PM Surya Ghar (solar), PM E-Drive (EV charging), ALMM and localisation rules (wind), and semiconductor incentives (RIR). US tariffs matter to exporters: Apar says aluminium products carry a 50% Section 232 duty, which customers absorb because US makers pay it on imported aluminium too.",
                 },
+                {
+                    label: "What these companies actually depend on",
+                    text: "The label says electrical equipment, but the thing that moves each share is different. **TD Power** is a bet on US data-centre power: 93% of its Q1 orders were exports, largely generators for gas engines and turbines being bought to power data centres. **Triveni** depends on Indian industrial spending plus exports and service work. **Elecon** rides Indian steel, cement and power-plant construction. **GE Power India** depends on how often India's coal plants are overhauled. **Genus** depends on government metering money under RDSS; **Inox Wind** and **KP Green** on their own group companies for large orders (a fifth of KP Green's book); **Exicom** on turning Tritium around; and **RIR** on one silicon-carbide plant. **Buy each for what it actually depends on, not for the sector label.**",
+                },
             ],
             tables: [
                 {
@@ -411,16 +415,20 @@ export const electricalEquipment: SectorOverview = {
             embedFirst: true,
             points: [
                 {
-                    label: 'Strongest',
-                    text: "**Triveni and TD Power**, both qualified with the world's turbine and engine makers, and **Apar**, now approved for US data-centre cables and by large US and European utilities. Approvals like these take years and are not won on price alone.",
+                    label: "Lasting: qualification with the world’s equipment makers",
+                    text: "**TD Power** and **Triveni** are approved by the global engine and turbine makers, which takes years of testing and cannot be won on price alone. Today the global shortage makes these approvals even more valuable, because customers need suppliers who can deliver. The risk is the other side of that: when the shortage ends, big customers usually add a second supplier to push prices down. **Apar** has built the same kind of edge in the last two years with US utility and data-centre approvals, and it is widening.",
                 },
                 {
-                    label: 'Installed-base moats',
-                    text: "**GE Power India** services a large fleet of GE and Alstom steam turbines and boilers. **Genus** earns 8–9 years of O&M on the meters it installs. **Triveni's** aftermarket is 29% of its order book.",
+                    label: "Lasting but slowly shrinking: the installed base",
+                    text: "**GE Power India** earns its money servicing GE and Alstom steam turbines already running in Indian power plants, and **Triveni**'s aftermarket is 29% of its order book. Service work is repeat business at good margins, because the owner of the design is the natural repairer. But GE Power's base is coal plants, which India will slowly retire over the next 15–20 years, so this edge lasts but does not grow.",
                 },
                 {
-                    label: 'Weakest',
-                    text: "**RMC, Servotech and Salzer** sell standard products or tendered work, with little to stop a customer switching. **Inox Wind** depends heavily on its own group as a buyer.",
+                    label: "Wearing away: catalogue products facing new plants",
+                    text: "**Elecon** leads Indian industrial gears, but more than half of its gear sales are catalogue products, and Flender, SEW, NORD and Bonfiglioli are building Indian plants to compete on exactly those. Its engineered and naval gearboxes are harder to copy. Expect its advantage to hold in heavy engineering and to narrow in standard gear motors, which is part of why its margin fell from 24% to 21%.",
+                },
+                {
+                    label: "Barely a moat: tenders, standard parts and commodity electronics",
+                    text: "**Genus** has scale in smart meters, but prices are set by tender and fixed for years, so scale does not bring pricing power. **Salzer**'s switchgear, **RMC**'s meter boxes and **Servotech**'s chargers and inverters can be bought from many makers. **Inox Wind** and **KP Green** win work partly because their own group buys it, which is a relationship, not a moat.",
                 },
                 {
                     label: 'Competitors outside the list',
@@ -431,30 +439,54 @@ export const electricalEquipment: SectorOverview = {
         {
             heading: '5. Margins (comparative)',
             body: [
-                "A margin lasts if the product is custom, qualified and sold with price-variation clauses. It is fragile if it is standard, tendered or fixed-price. Q1 FY27, with copper, silver and steel spiking, was the test.",
+                "Are the margins structural? A margin lasts if the product is custom, qualified and sold with price-variation clauses. It is fragile if it is standard, tendered or fixed-price. Q1 FY27, with copper, silver and steel spiking, was the test.",
                 "Whether the profit turns into cash is in section 2 (the **Cash conversion** and **Free cash flow** tabs) and on each company card in Tab 2.",
             ],
             points: [
                 {
-                    label: 'Held: the engineered machines',
-                    text: "**TD Power** kept 18–19% through the commodity spike, using price-variation clauses, cost cuts, mix and currency. **Elecon's** gears earned about 18% at the EBIT level, and management targets 24% EBITDA; its catalogue prices reset monthly. **Triveni's** dip (from ~26% to 18% company EBITDA) was about mix and timing, not pricing, and management reaffirms a 20%+ PBT margin over the medium term.",
+                    label: "Structural: engineered machines with cost pass-through",
+                    text: "**TD Power** has earned 17–19% for years and held it through the Q1 metal spike, because its contracts carry price-variation clauses and each generator is designed for one customer. **Triveni** has averaged around 20% over the cycle; its Q1 dip to 12–18% came from orders priced a year ago and more low-price domestic work, not from lost pricing power. **Elecon**'s engineered gears belong here too. **These margins should hold, provided volumes come**, although the shortage may be adding a point or two to TD Power's that will fade.",
                 },
                 {
-                    label: 'Flattered: Apar and GE Power India',
-                    text: "**Apar's** 12.4% Q1 margin came largely from its oil division earning 3.6 times its usual per-litre profit on cheap inventory; the conductor and cable divisions earned their normal 8.5% and 10.6%. **GE Power India's** 32–34% margins in Q3–Q4 FY26 fell to 15% in Q1 FY27.",
+                    label: "Cyclical: good today, set by the cycle",
+                    text: "**Apar** earns a steady conversion margin on conductors and cables, but its oil division swings with base-oil prices and stock gains: Q1's 12.4% group margin was helped by oil earning 3.6 times its usual per-litre profit. **Inox Wind** earns about 20% now, but it made operating losses in FY22–FY23 when volumes were low, so its margin depends on factories being full. **KP Green**'s 20% depends on steel prices and utilisation, and **GE Power India**'s 32–34% late-FY26 margins included one-offs; 15% in Q1 is nearer normal.",
                 },
                 {
-                    label: 'Squeezed: fixed-price and standard products',
-                    text: "**Genus** cut its FY27 margin guide from 20–21% to 18% because its contracts have no pass-through. **Salzer's** switchgear margin fell from about 12% to 7.5–8%, and it cut its full-year guide to 8–8.5%. **RMC** made a loss in Q3 FY26 when solar input costs overran old orders.",
+                    label: "Not structural: fixed prices and standard products",
+                    text: "**Genus** cut its margin guide from 20–21% to 18% because its meter contracts have no pass-through, and chip prices rose. **Salzer** raises prices only after pending orders are filled, so every copper spike squeezes it; its margin fell to 6%. **RMC** swung from an 11% margin to a loss and back to 21% within five quarters on fixed-price government work. **Servotech** and **Exicom** sell close-to-commodity electronics.",
+                },
+                {
+                    label: "The hidden cost: working capital",
+                    text: "A high margin can still tie up a lot of cash. **Inox Wind** has run a cash cycle of 290–900 days, **Genus** funds meters it will be paid for over eight years, and **Salzer**, **RIR** and **TD Power** carry 170–200 days. **In this sector, return on capital and cash conversion are the honest measures, not the margin.**",
                 },
             ],
         },
         {
             heading: '6. Growth and capex (comparative)',
             body: [
-                "How each company has done against what it promised, then my own estimate of earnings growth over three to five years.",
+                "Where the next five years of growth come from, how each company has done against what it promised, and my own estimate of earnings growth.",
             ],
             points: [
+                {
+                    label: "Growth driver: the global shortage of power equipment",
+                    text: "US data centres and grid upgrades have pushed gas-turbine lead times to about four years, and generators and gas engines are sold out. **TD Power** (93% export orders, capacity heading to ₹4,000cr+) and **Triveni** (US combined-cycle projects, a fast-growing aftermarket) benefit most. I expect the shortage to last two to three more years. The risk is a slowdown in hyperscaler spending, which would show in their orders about a year later.",
+                },
+                {
+                    label: "Growth driver: India's grid build-out",
+                    text: "India plans about ₹9 lakh crore of transmission investment to 2032, and every line needs conductors and towers. **Apar** (which also has a large export conductor book) and **KP Green** (towers and solar structures) are the clearest beneficiaries; **RMC** gets distribution work. The runway is long, but government buyers set prices by tender and pay slowly, so this growth needs working capital.",
+                },
+                {
+                    label: "Growth driver: smart meters",
+                    text: "About 31–32 crore meters are being replaced under the RDSS scheme. **Genus**, with about 22–23% of awards, is in its peak installation years now (FY27–FY28). After that, revenue shifts to a steadier ₹800–900cr a year of operation and maintenance, so **its growth will slow sharply after FY28 even as its cash improves.**",
+                },
+                {
+                    label: "Growth driver: wind, rooftop solar and EV charging",
+                    text: "India is adding 8–10 GW of wind a year (**Inox Wind**), rooftop solar under PM Surya Ghar (**Servotech**), and chargers under PM E-Drive (**Exicom**, **Servotech**). These markets will grow, but they are policy-driven and crowded, so I expect revenue to grow faster than profit.",
+                },
+                {
+                    label: "Growth driver: Indian factory spending",
+                    text: "Steel, cement and power plants buy gearboxes and turbines. **Elecon** and **Triveni**'s domestic business depend on this, and it is steadier than the headlines: TD Power puts Indian demand growth at 10–12% a year. Elecon's ₹5,000cr FY30 target implies about 21% a year, which needs exports to do much of the work.",
+                },
                 {
                     label: 'Delivering or beating',
                     text: "**TD Power** raised guidance again and now targets ₹2,600cr (+40%), adding capacity and raising equity. **KP Green** grew 79% in FY26 and targets 40–50% a year. **GE Power India** completed its turnaround. **Apar** had a record quarter but gives no guidance while it raises equity.",
