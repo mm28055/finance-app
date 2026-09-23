@@ -1,0 +1,174 @@
+import { BusinessProfile, OverviewSection } from './types';
+import { travelCharts } from './card-data/travel';
+
+// Tab 2 of the Travel Services note: what each company actually does.
+// Revenue totals are the filed figures (Screener). Splits come from the
+// companies' latest presentations, annual reports and calls; where a split is
+// not disclosed, the text says so.
+
+const intro: OverviewSection[] = [
+    {
+        heading: 'How to read this tab',
+        body: [
+            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it sells, where the money comes from and three charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed figures; splits are from each company's latest presentation or call. The cost chart uses India's jet-fuel price index, a guide to airfares rather than a cost these companies pay directly.",
+        ],
+    },
+    {
+        heading: 'The services, in plain words',
+        body: [
+            "Four ways of earning from travel.",
+        ],
+        points: [
+            {
+                label: 'Visa and citizen services',
+                text: "Collecting visa and passport applications, fingerprints and photos on behalf of governments, for a fee paid by each applicant; plus banking and government services in Indian villages (BLS).",
+            },
+            {
+                label: 'Online booking',
+                text: "Apps and websites that sell train, bus and flight tickets and hotel rooms, earning a commission from the supplier and a fee from the traveller (ixigo, Yatra).",
+            },
+            {
+                label: 'Corporate travel and events',
+                text: "Managing companies' business travel and staging conferences and incentive trips (MICE) (Yatra, Thomas Cook).",
+            },
+            {
+                label: 'Forex, holidays and resorts',
+                text: "Foreign currency and travel cards, packaged holidays, and stays at Sterling's resorts (Thomas Cook).",
+            },
+        ],
+    },
+    {
+        heading: 'Three ways of selling',
+        body: [
+            "Who pays decides how the price is set and how fast the cash comes in.",
+        ],
+        tables: [
+            {
+                columns: ['Model', 'Who', 'How the price is set', 'How fast the cash comes'],
+                rows: [
+                    ['**Fee per applicant, under a government contract**', 'BLS', 'Set in the tender; extra services on top', 'Up front'],
+                    ['**Commission and convenience fee per booking**', 'ixigo, Yatra', 'Set by airlines, railways and competition', 'Up front from travellers; later from airlines'],
+                    ['**Corporate accounts and packages**', 'Yatra, Thomas Cook', 'Negotiated per client or per package', 'On credit for companies; up front for holidays'],
+                ],
+            },
+        ],
+    },
+];
+
+const profiles: BusinessProfile[] = [
+    {
+        company: "BLS International",
+        inShort: ["**One of the world's two biggest visa-outsourcing firms**: embassies pay it to take in visa applications (forms, fingerprints, photos, fees) while they still decide who gets a visa. It also runs a large village banking and government-services network in India.", "**Good:** a 40% margin in visas, revenue up 25% in Q1 FY27 and ₹1,103cr of net cash on Screener. **Watch:** visa volumes have stopped growing, so growth now leans on higher fees, the lower-margin digital arm and acquisitions.", "**Verdict: own.** The price looks modest for the growth and cash the business produces."],
+        tagline: "Visa, passport and citizen-services partner to governments in 66+ countries, plus a digital services arm that runs banking agents, Aadhaar centres and e-governance counters across India.",
+        revenue: "₹2,998cr (FY26, consolidated)",
+        products: [
+            { name: "Visa and consular services", text: "Runs visa application centres for foreign governments and Indian missions: document checks, biometrics, e-visas, passport renewals and attestation. The applicant pays a service fee on top of the visa fee, plus extras such as courier, photocopies, insurance and translation. It handled 11.3 lakh applications in Q1 FY27." },
+            { name: "Citizenship and residency services", text: "Helps wealthy families obtain residency or citizenship in other countries through investment programmes. It brought in about ₹17.5cr in Q1 FY27, against about ₹11cr a year earlier." },
+            { name: "Digital services (BLS E-Services)", text: "About 1.58 lakh touchpoints across India where agents act as a bank's local counter (the 'business correspondent' model, mostly for SBI), plus loan distribution, insurance and government-to-citizen services. Money handled through the banking agents was over ₹29,500cr in the quarter." },
+            { name: "Aadhaar centres (UIDAI)", text: "A six-year contract worth about ₹2,500cr of revenue to run Aadhaar enrolment and update centres. Management expects full revenue from Q4 FY27 to Q1 FY28, at a lower 10–15% margin." },
+        ],
+        revenueText: "Visa and consular services were **63% of Q1 FY27 revenue** (₹560cr, up 22%) and digital services 37% (₹330cr, up 32%). Visas earn far more: **close to 90% of group operating profit**, at a 40.3% margin against 8.2% for digital. Growth in visas came from price, not volume: applications were flat, while net revenue per application rose 11% to ₹3,521. Bought businesses matter too; iDATA alone added about ₹72.5cr in the quarter. The company does not split revenue by country.",
+        mixes: [
+            { caption: "Revenue by segment, Q1 FY27 (company)", parts: [{ label: "Visa and consular", share: 63 }, { label: "Digital services", share: 37 }] },
+            { caption: "Operating profit (EBITDA) by segment, Q1 FY27 (company)", parts: [{ label: "Visa and consular", share: 89 }, { label: "Digital services", share: 11 }], note: "Visa ₹226cr and digital ₹27cr of segment EBITDA." },
+        ],
+        customers: ["**Governments and embassies** that hand it their visa paperwork: over 46 government clients on Screener's summary, with recent wins from Belarus, Portugal, Slovakia and Italy. The traveller pays the fee, not the government.", "**Indian government bodies**: the Ministry of External Affairs for passport and consular work, UIDAI for Aadhaar, and states such as West Bengal for health-scheme card checks.", "**Banks and insurers** that pay commission for its agents to open accounts, take deposits and sell loans and policies; SBI is the largest banking client."],
+        difficulty: { level: "High", text: "Winning a visa contract means passing government tenders and security checks, handling sensitive biometric data without leaks, and running centres in dozens of countries to strict service levels. Few firms worldwide can do this at scale. The digital arm is easier to copy; it depends on the size of the agent network rather than special technology." },
+        moat: "Governments rarely switch a visa provider mid-contract because the risk of data or service failures is high, and a global network is expensive to build. The weakness is that contracts are re-tendered, and a dispute or lost bid with a big government can remove a slice of revenue quickly.",
+        salesDrivers: ["**Number of visa applicants**: outbound travel from India and other countries. Volumes were flat in Q1 FY27 at 11.3 lakh because the Middle East conflict hit travel; management says numbers are coming back now that the war is over.", "**Fee per application**: net revenue per application rose 11% on higher prices in new contracts and a better mix. Management expects visa revenue growth of 12–15% a year (7–8% travel growth plus about 5% from pricing and mix).", "**Winning tenders**: several government tenders are in the pipeline over the next 8–12 months; some contracts end each year and are replaced by new ones.", "**Digital network growth**: more banking-agent transactions, loan distribution and the Aadhaar ramp-up. Digital profit is growing faster than its revenue because the cost base is largely fixed.", "**Acquisitions**: about ₹1,100cr spent on acquisitions last year and ₹148cr on Atyati Technologies (about ₹275cr revenue and ₹20–21cr EBITDA), with a stated target return of 17–20%."],
+        inputs: "**No real materials.** Its main costs are running application centres and paying partners and banking agents (the line Screener labels power and factory costs, 47% of sales in FY26) and staff (16%). Materials were 0.3% of sales in FY26.",
+        costEffect: "**Mostly insulated.** Visa service fees are fixed in each government contract, so cost rises are recovered mainly through new contracts and renewals; digital fees are set per transaction. **Rule of thumb:** materials are almost nil, so a 10% rise in material costs not passed on would cut the margin by about 0 points (28% stays 28%); a 10% rise in staff costs not recovered would cut it by about 1.6 points. **What happened:** India's jet-fuel (ATF) wholesale price index roughly doubled (100 to 212) from Q1 FY24 to Q1 FY27, yet the margin rose from 20.9% to 28.3%. BLS buys no fuel; the index is only a loose guide to travel demand. The margin rose because BLS moved from partner-run to self-run visa centres, which lifted net revenue per application and cut the direct-cost line from about 68% of sales in FY22–FY23 to 47% in FY26, and because the digital arm gained scale. The Middle East conflict pulled the margin down to 25.0% in Q4 FY26 before it recovered.",
+        competitors: [{ name: "VFS Global", note: "The world's largest visa-outsourcing firm (privately owned); BLS's main rival in most tenders." }, { name: "TLScontact", note: "Strong with European governments; competes for Schengen visa contracts." }, { name: "Other banking-agent networks (e.g. Fino, Spice Money) and government Common Service Centres", note: "Compete with the digital arm for bank and citizen-service transactions; margins are thin across this business." }],
+        position: "**One of the two biggest visa-outsourcing firms in the world**, with about 17% of the market by value and 10% by volume in 2024 (excluding the US), per Screener's summary. It works for governments in more than 66 countries.",
+        money: "Screener shows **₹1,103cr of net cash** (March 2026); the company put net cash at ₹1,617cr at June 2026. Operating cash of ₹903cr in FY26 was more than its operating profit. Capex on the Aadhaar project will total about ₹125cr (₹75cr spent so far). Investors on the call pushed for a buyback; management said the board will decide and acquisitions come first. Promoters hold **70.4%**, down slightly from 71.5% in Sep 2023.",
+        watch: ["Visa application volumes returning to growth after the Middle East conflict.", "Aadhaar project reaching full revenue by Q4 FY27–Q1 FY28.", "How the cash pile is used: acquisitions, dividends or a buyback."],
+        charts: travelCharts["BLS International"],
+    },
+    {
+        company: "Le Travenues Techno",
+        inShort: ["**Le Travenues Technology trades as ixigo**: an online travel agent (OTA), meaning an app or website that sells tickets and rooms for a commission. It sells train, bus and flight tickets and now budget hotels, mostly to travellers from smaller towns.", "**Good:** 63% of online train bookings made through travel apps, a fast-growing bus business and ₹952cr of net cash. **Bad:** a thin 5% margin, flight growth held back by dear airfares, and heavy spending on hotels and AI.", "**Verdict: wait.** A strong product, but the price needs much more profit growth than I expect in the near term."],
+        tagline: "India's second-largest online travel agent, known as ixigo, built on train, bus and flight booking apps (ixigo, ConfirmTkt, AbhiBus) used by budget travellers.",
+        revenue: "₹1,228cr (FY26, consolidated)",
+        products: [
+            { name: "Trains (ixigo, ConfirmTkt)", text: "Books Indian Railways tickets through IRCTC, with waitlist predictions, free-cancellation cover, food delivery on trains (17 lakh meals in Q1 FY27) and metro tickets. It sold 2.44 crore train tickets in the quarter." },
+            { name: "Flights", text: "Domestic and international air tickets, earning commission and fees on each booking. About 29 lakh flight tickets and ₹2,342cr of bookings by value in Q1 FY27." },
+            { name: "Buses (AbhiBus)", text: "Private and state-run bus tickets, with extras such as a replacement taxi if a bus breaks down, a tool for offline agents (BusBizz) and software for bus operators. About 89 lakh bus tickets and ₹947cr of bookings in Q1 FY27." },
+            { name: "Hotels", text: "Budget and mid-market hotels, with direct deals with 10,000+ hotels in about 700 towns. It sold about 5 lakh room nights in Q1 FY27 and bought 54.66% of Revvstay to add hotel supply." },
+        ],
+        revenueText: "Trains were **40% of Q1 FY27 revenue** (₹141cr), flights 29% (₹105cr), buses 29% (₹103cr) and hotels and others about 2%. Gross bookings (the total value of tickets sold, or GTV) were ₹5,524cr, up 19%, but ixigo keeps only a slice of that. That slice is its **take rate**: for buses about 11–11.5% before discounts and 10.8% after. **Buses are now the biggest profit source**: 37% of contribution (profit after the direct costs of each booking), against 36% for trains and 28% for flights; hotels and others lost ₹3cr.",
+        mixes: [
+            { caption: "Revenue by business, Q1 FY27 (company)", parts: [{ label: "Trains", share: 40 }, { label: "Flights", share: 29 }, { label: "Buses", share: 29 }, { label: "Hotels and others", share: 2 }] },
+        ],
+        customers: ["**Budget travellers in smaller towns**, often called the 'next billion users', who start with a train or bus ticket and later move up to flights. About 8.5 crore people use the apps each month and about 42 lakh buy something.", "**Suppliers**: airlines, bus operators and hotels pay commissions; on trains, where IRCTC controls ticketing, ixigo earns mainly from fees and add-ons.", "**Traders and small businesses** who already book with GST numbers; ixigo plans a business-travel product."],
+        difficulty: { level: "Medium", text: "A travel app is easy to build, but getting 8.5 crore monthly users, links to IRCTC, airlines, thousands of bus operators and 10,000 hotels, and the trust to handle refunds is not. Much of the business runs on rules set by others (IRCTC, airlines), which limits control." },
+        moat: "Its train app is a daily habit for millions of budget travellers, which gives it cheap customers to sell buses, flights and hotels to: 90% of hotel bookings come from existing users. The weakness is dependence on IRCTC rules and two big airlines, whose policy changes and capacity cuts it cannot control.",
+        salesDrivers: ["**Airfares and airline seats**: when fares jump, fewer first-time flyers move up from train to plane. In Q1 FY27 domestic fares on ixigo rose 22% and international fares 38%; for July–September Air India cut capacity by about 20% and IndiGo by about 10%.", "**Railway rules**: tighter Tatkal access for OTAs, fewer waitlisted tickets and extra authentication cut train tickets sold by 8% in Q1 FY27, even as ixigo's share of OTA train bookings rose from about 60% to 63%.", "**Bus travel**: new highways, more buses and dear airfares; AbhiBus bookings by value grew 39%, and over 60% in 17 states.", "**Hotels**: the next growth engine. ixigo wants to be No. 1 for mid-market and budget hotels in 4–5 years and says it will spend to get there.", "**Discount and marketing spend**: it aims to keep discounts plus marketing around 4% of GTV; advertising jumped about 80% from the previous quarter during the IPL season."],
+        inputs: "**No materials.** Its costs are marketing and discounts, payment and service costs, technology and AI computing, and staff (18% of sales in FY26). Materials were nil in FY26.",
+        costEffect: "**Mostly insulated from materials, exposed to airfares.** ixigo buys no fuel. Dearer jet fuel reaches it through airfares: it earns more per flight because it is paid on a higher fare, but fewer budget travellers fly. **Rule of thumb:** materials are nil, so a 10% rise in material costs not passed on would cut the margin by about 0 points (5% stays 5%); a 10% rise in staff costs not recovered would cut it by about 1.8 points. **What happened:** India's jet-fuel (ATF) wholesale price index roughly doubled (100 to 212) from Q1 FY24 to Q1 FY27, and the margin slipped from 6.4% to 5.6%. Fuel did matter here: the Iran conflict pushed up fares, and flight passengers grew only 4% in Q1 FY27 while flight bookings by value grew 27%. But the margin fell mainly because ixigo chose to spend on hotels, AI and advertising, while railway rules held back train volumes. The company's own adjusted margin, which leaves out share-based pay, was 8.2%.",
+        competitors: [{ name: "MakeMyTrip (with Goibibo and redBus)", note: "The market leader in flights and hotels, and ixigo's main rival in buses through redBus." }, { name: "IRCTC's own website and app", note: "Sells most online train tickets directly and sets the rules for OTAs." }, { name: "EaseMyTrip, Cleartrip", note: "Smaller flight-focused OTAs competing on price." }, { name: "Oyo and hotel booking sites", note: "Established players in budget hotels, where ixigo is still small." }],
+        position: "**The largest OTA for train tickets (63% of the OTA train market) and India's second-largest online travel agent overall**, per Screener's summary. In buses it is one of two big online players, and it calls itself the fastest-growing flight OTA.",
+        money: "Screener shows **₹952cr of net cash** (March 2026), up from ₹358cr a year earlier, mostly because it raised about ₹1,290cr of fresh equity in FY26 (Screener financing cash flow; the share count rose about 13%). Interest and other income runs at about ₹29–30cr a quarter, about as much as its adjusted operating profit. Customers pay upfront and suppliers are paid later, so operating cash has been about 1.9 times operating profit over five years. It bought 54.66% of Revvstay (price not given in the call). ixigo has no promoter group; foreign investors hold about 61% and domestic institutions 13% (Screener, June 2026).",
+        watch: ["Airline capacity and fares, and whether train-to-plane upgrades return.", "Hotel spending: losses in the 'others' line and Revvstay's progress.", "Any easing of railway booking rules for OTAs."],
+        charts: travelCharts["Le Travenues Techno"],
+    },
+    {
+        company: "Yatra Online",
+        inShort: ["**India's largest corporate travel manager**, booking flights, hotels and MICE trips (company Meetings, Incentive trips, Conferences and Exhibitions) for about 1,300 larger firms and many small ones, plus a consumer online travel agent (OTA) website and app.", "**Good:** 97% of corporate clients stay, and hotel bookings are growing 30%+. **Bad:** the margin fell to 6.6%, MICE and airline commissions are weak, and for years cash went into giving credit to corporate clients.", "**Verdict: pass.** Thin margins, patchy cash flow and an unresolved parent-company structure."],
+        tagline: "Online travel company that earns most of its profit from managing business travel and events for Indian companies, with a smaller consumer booking business.",
+        revenue: "₹1,007cr (FY26, consolidated)",
+        products: [
+            { name: "Corporate travel platform", text: "A booking tool with company travel rules, approvals and 24x7 service for large firms, plus TravelPro for small and mid-sized firms and Recap, an expense-management product (20+ customers since launch)." },
+            { name: "MICE", text: "Plans and books company meetings, incentive trips, conferences and exhibitions. Management says MICE earns 9–10% of turnover and, because staff costs are fixed, an operating margin of 40%+." },
+            { name: "Air tickets", text: "Flight bookings for corporate and retail customers: ₹1,658cr of bookings and 12.6 lakh passengers in Q1 FY27, with Yatra keeping about 4.2% of the value." },
+            { name: "Hotels and packages", text: "Domestic hotel rooms and holiday packages: ₹388cr of bookings and 5.48 lakh room nights in Q1 FY27, with Yatra keeping about 9.95% of the value." },
+            { name: "Kanoo Travel partnership", text: "Takes Yatra's corporate travel technology to the Middle East with a regional travel company; revenue started in July 2026 after set-up costs were taken in Q1." },
+        ],
+        revenueText: "Reported revenue (₹188cr in Q1 FY27, down 10%) mixes commissions with the full value of MICE trips, so the cleaner measure is **gross margin, meaning revenue less service costs: ₹123cr, up 6%**. Of that, **air was 57%**, hotels and packages 31% and other services 12%. Yatra's take rate (the share of booking value it keeps) is about 4.2% on air and 9.95% on hotels. Business customers are in the mid-60s % of the mix and consumers the rest; international travel is now under 30%.",
+        mixes: [
+            { caption: "Gross margin by business, Q1 FY27 (company)", parts: [{ label: "Air", share: 57 }, { label: "Hotels and packages", share: 31 }, { label: "Other", share: 12 }], note: "Other is the remainder of ₹122.7cr total gross margin; the call did not break it out." },
+            { caption: "Business mix, Q1 FY27 (management, approximate)", parts: [{ label: "Corporate (B2B)", share: 65 }, { label: "Consumer (B2C)", share: 35 }] },
+        ],
+        customers: ["**Large companies**: 1,300+ large and mid-sized firms use its platform, usually on 2–3-year contracts, with net retention of about 97%.", "**Small and mid-sized firms** through TravelPro, on annual contracts; Screener's summary counts about 58,000 SME clients.", "**Consumers and travel agents** booking flights and hotels on the website, app and partner sites."],
+        difficulty: { level: "Medium", text: "A corporate travel platform with policy rules, approvals, expense links and round-the-clock service takes years to build and to win trust. Consumer flight booking is easy to copy and competes on discounts." },
+        moat: "Changing corporate travel managers is a hassle, so clients stay (97% retention). But airlines control commissions and bonuses, and companies cut MICE and business travel quickly when budgets tighten.",
+        salesDrivers: ["**MICE events**: MICE revenue was about ₹30cr lower in Q1 FY27 as international group trips were cancelled or moved to India, costing about ₹6cr of gross margin. Management says Q2 MICE bookings are running about 50% above Q1.", "**Airline commissions and bonuses**: the air take rate fell from 4.6% to 4.2% because airlines, especially Middle Eastern carriers, had not settled their annual volume bonuses (PLBs); management expects improvement in the second half.", "**Airfares and company budgets**: international fares 20–30% higher are putting off group travel, and some industries such as IT are limiting non-essential trips.", "**New corporate clients**: 53 new clients in Q1 FY27 with about ₹220cr of expected yearly bookings, 30+ of them through TravelPro.", "**Hotels**: standalone hotel bookings grew 34% and room nights 30%; the goal is to move the gross-margin mix from about 60-40 air to hotels to 50-50 in 2–3 years."],
+        inputs: "**No materials.** The main cost is service costs, chiefly the flights, hotels and venues it buys for MICE groups, which Screener lumps under power and factory costs (53% of sales in FY26); staff are 17% and rose with hiring for the Kanoo project. Materials were nil in FY26.",
+        costEffect: "**Partly passed on.** On commission bookings, higher fares do not cost Yatra directly, since it earns a percentage of the fare. MICE trips are priced per event, so a jump in airfares between quote and trip squeezes that event's margin. **Rule of thumb:** materials are nil, so a 10% rise in material costs not passed on would cut the margin by about 0 points (8% stays 8%); a 10% rise in staff costs not recovered would cut it by about 1.7 points. **What happened:** India's jet-fuel (ATF) wholesale price index roughly doubled (100 to 212) from Q1 FY24 to Q1 FY27, and the margin fell from 14.5% to 6.6%. The starting quarter was unusually high (the next one was minus 9%), so that fall overstates the trend. Yatra buys no fuel, but dearer fuel mattered through fares: international tickets 20–30% dearer put off group travel and hurt MICE. Weak MICE, lower airline commissions and Kanoo set-up costs drove the latest drop. Management's 20%+ margin target is measured against gross margin, not revenue; on that basis it was 12.3% in Q1 FY27.",
+        competitors: [{ name: "MakeMyTrip (with Goibibo)", note: "A much larger consumer OTA that also runs a business-travel product." }, { name: "ixigo, EaseMyTrip, Cleartrip", note: "Consumer flight OTAs competing on discounts." }, { name: "Global travel management firms and Thomas Cook India", note: "Compete for large corporate accounts and MICE business." }],
+        position: "**India's largest managed corporate travel company** (Screener's summary), with 1,300+ enterprise clients, and a small player in consumer bookings. Its air passenger volume grew about 5% in Q1 FY27, roughly twice the market.",
+        money: "Screener shows **₹12cr of net debt** (March 2026: ₹91cr cash, ₹103cr borrowings); the company said cash and term deposits were ₹198cr at June 2026. Unlike consumer OTAs, Yatra gives corporate clients credit, so operating cash was negative in FY22–FY25 and turned positive (₹76cr) only in FY26; five-year cash conversion is not meaningful. It is working with banks on a corporate card to cut this working capital, but has not agreed who bears the card fees. Promoters (the US-listed parent) hold **62.7%**, down from 64.5% in Sep 2023; a plan to merge the US parent into the Indian company has no timeline.",
+        watch: ["MICE recovery in Q2 and airline bonuses being settled.", "Whether the Kanoo partnership turns profitable from Q2 as promised.", "The corporate card deal and progress on merging the US parent."],
+        charts: travelCharts["Yatra Online"],
+    },
+    {
+        company: "Thomas Cook India",
+        inShort: ["**A travel and foreign-exchange group**: holidays, business travel and MICE (company Meetings, Incentive trips, Conferences and Exhibitions), forex cards and cash, Sterling holiday resorts, and a theme-park photo business (DEI).", "**Good:** forex and Sterling resorts are doing well and there is ₹842cr of net cash on Screener. **Bad:** the Middle East conflict hit its Dubai-based businesses hard, the margin fell to 4.4% and management gave no guidance for FY27.", "**Verdict: wait.** Wait until the Middle East businesses recover and the margin turns up."],
+        tagline: "India's oldest travel company (founded 1881), now controlled by Fairfax and spanning holidays, corporate travel, forex, resorts and ground services for tourists abroad.",
+        revenue: "₹8,398cr (FY26, consolidated)",
+        products: [
+            { name: "Holidays (Thomas Cook, SOTC)", text: "Package tours for Indian families: domestic, short-haul Asia, long-haul Europe and America, and pilgrimage trips through its Bhakti and Darshan platforms. Domestic grew 29% in Q1 FY27 while long-haul fell 28%." },
+            { name: "Business travel, MICE and destination management", text: "Books travel for companies (₹700cr+ of tickets and hotels in the quarter), runs MICE groups of 50 to 2,400 people (₹542cr turnover) and handles ground services for foreign tourists through businesses in Asia, Africa, the Middle East and the US." },
+            { name: "Foreign exchange", text: "Currency notes, remittances for students and forex cards (prepaid cards loaded with foreign currency to spend abroad). It earns on the gap between buying and selling rates; segment EBIT margin was 45.3%. Cards are also sold through Blinkit in 12 cities." },
+            { name: "Sterling Holidays", text: "78 resorts, hotels and retreats with nearly 3,800 rooms in 65+ destinations, selling rooms, food and memberships. Q1 FY27 revenue was about ₹170cr at a 37% EBITDA margin, its best quarter ever." },
+            { name: "DEI (theme-park photos)", text: "Takes and sells souvenir photos at theme parks and attractions; about half its business is in the Middle East. Revenue fell to ₹131cr from ₹210cr in Q1 FY27." },
+        ],
+        revenueText: "Travel is by far the biggest line: **₹1,711cr of Q1 FY27 revenue, down 14%**, of which B2B (corporate travel, MICE and destination management) was 63% and holidays 37%. Sterling brought in about ₹170cr and DEI ₹131cr. The company did not give forex revenue on the call; forex earns a spread, so its revenue is small, but it is highly profitable. Forex can also earn float income (interest on customer money held before it is paid out), which sits in other income; the call gave no figure. Total income was ₹2,153cr, down 12%.",
+        mixes: [
+            { caption: "Travel revenue by type, Q1 FY27 (company)", parts: [{ label: "B2B (corporate, MICE, destination services)", share: 63 }, { label: "Holidays (B2C)", share: 37 }] },
+            { caption: "Share of total income by business, Q1 FY27 (approximate)", parts: [{ label: "Travel", share: 79 }, { label: "Sterling resorts", share: 8 }, { label: "DEI photos", share: 6 }, { label: "Forex and other", share: 7 }], note: "Forex and other is the remainder of ₹2,153cr total income; segment figures may include sales between group companies." },
+        ],
+        customers: ["**Families and holidaymakers**, increasingly choosing domestic, short-haul Asia (Japan, Korea, Vietnam) and pilgrimage trips over Europe and the US.", "**Companies**: business travel for corporate accounts (7 added in Q1 FY27) and MICE groups, 77% of them going abroad.", "**Students and travellers buying forex**, plus foreign tourists, tour operators and theme parks served by the overseas businesses."],
+        difficulty: { level: "Medium", text: "Selling holidays and corporate travel is easy to enter and price-competitive, especially in B2B. Forex needs a Reserve Bank of India licence, branches and a delivery network; resorts need land and capital; running ground services abroad takes local know-how." },
+        moat: "A long-trusted brand, the forex licence and network, and the Sterling resort chain are hard to copy. The travel business itself earns thin margins (a 4–5% EBIT target), and B2B prices are set by competition.",
+        salesDrivers: ["**The Middle East conflict**: revenue at Desert Adventures, its Middle East ground-services business, fell 89%, and DEI swung from ₹10.6cr of EBIT to a ₹15.2cr loss. Middle East business recovered to under 20% of normal in April–June and 30–35% in July.", "**Where Indians holiday**: long-haul sales fell 28% while domestic grew 29% and short-haul (outside the Middle East) 21%. Short-haul trips earn similar margins but are 20–25% cheaper per booking.", "**Company spending**: MICE turnover grew 14% and corporate travel bookings 15%; management says these businesses grow 12–15% a year.", "**Overseas travel and study**: forex retail turnover grew 8% and education forex 36%, against falling industry numbers; Blinkit card sales rose 34%.", "**Resort demand**: Sterling occupancy rose 7 points to 77% and room rates 10% to ₹7,809; 35+ more properties (2,000+ rooms) are in the pipeline."],
+        inputs: "**No materials.** Its main cost is the travel it buys for customers (flights, hotel rooms, ground transport, event venues), which Screener lumps under power and factory costs (74% of sales in FY26); staff are 14%. Materials were nil in FY26.",
+        costEffect: "**Partly passed on.** Package prices are fixed when a holiday is sold, so a sudden jump in airfares or a weaker rupee squeezes that trip's margin. Management said airline costs and forex rates have risen and it must stay competitive, while aiming for take rates (the share of booking value it keeps) of 14–15%. **Rule of thumb:** materials are nil, so a 10% rise in material costs not passed on would cut the margin by about 0 points (5% stays 5%); a 1% rise in the cost of the travel it buys, not passed on, would cut it by about 0.7 points. **What happened:** India's jet-fuel (ATF) wholesale price index roughly doubled (100 to 212) from Q1 FY24 to Q1 FY27 and the margin fell from 6.5% to 4.4%. Thomas Cook buys no fuel; dearer fuel reaches it only through airfares, so the index is a loose guide at best. The real drag was the Middle East conflict (costs at Desert Adventures and DEI could not be cut as fast as revenue fell) and weak long-haul holidays. Sterling resorts moved the other way, to a record 37% margin.",
+        competitors: [{ name: "MakeMyTrip", note: "The largest online travel agent; competes for holidays and hotels, especially with younger buyers who book online." }, { name: "Banks and online forex firms (e.g. BookMyForex)", note: "Sell forex cards and remittances; Thomas Cook says about 24% of its forex transactions are already digital." }, { name: "Tour operators (Veena World, Kesari) and corporate travel firms (Yatra, global agencies)", note: "Compete on price for packaged holidays, business travel and MICE." }, { name: "Club Mahindra (Mahindra Holidays)", note: "The bigger rival to Sterling in membership-based holiday resorts." }],
+        position: "**One of India's biggest integrated travel and forex groups**, with the oldest brand in the business. The research summary calls it a leader in organised forex and MICE; the company did not give market shares.",
+        money: "Screener shows **₹842cr of net cash** (March 2026), and Sterling on its own is debt-free with over ₹370cr of cash. Customers pay for holidays and forex before Thomas Cook pays suppliers, so operating cash has been about twice operating profit over five years. Capex was ₹126cr in FY26. Promoters (Fairfax Financial, through Fairbridge Capital) hold **64.8%**, down from 72.3% in Sep 2023.",
+        watch: ["Recovery of the Middle East businesses (DEI, Desert Adventures) and cost cuts showing in Q2.", "Long-haul holiday bookings after the 28% fall in Q1.", "Sterling's resort pipeline and whether its margin holds near 37%."],
+        charts: travelCharts["Thomas Cook India"],
+    },
+];
+
+export const travelServicesBusinesses = { intro, profiles };
