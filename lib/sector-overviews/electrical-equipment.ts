@@ -548,46 +548,28 @@ export const electricalEquipment: SectorOverview = {
         {
             heading: '7. Risk factors',
             body: [
-                "Sector-wide risks first, then each company.",
+                "The risks fall into five groups. For each, what management addressed and what it left unanswered.",
             ],
             points: [
                 {
-                    label: 'The data-centre cycle',
-                    text: "TD Power, Triveni and Apar's cable business lean on US data-centre and grid spending. TD Power points to non-refundable advances its customers have taken, but a slowdown in hyperscaler spending would hit orders a year later.",
+                    label: 'Export and data-centre demand',
+                    text: "**TD Power, Triveni and Apar** lean on US data-centre and grid spending. TD Power points to customer advances but **would not say what share of orders comes from data centres**. Triveni's domestic orders fell 35% and it gave no second-half margin figure. Apar also faces metal swings, one-off oil gains and US tariffs.",
                 },
                 {
-                    label: 'Government payment and fixed prices',
-                    text: "Genus, RMC, Inox Wind (PSU orders), Elecon (PSU steel and power) and KP Green (BSNL) depend on public buyers who set prices and pay slowly.",
+                    label: 'Government buyers and fixed prices',
+                    text: "**Genus** has no cost pass-through and depends on decisions by its GIC platform. **RMC**'s revenue fell 56%, and it **will not split its order book**. **Elecon** is waiting on a defence order while multinationals cut prices. **Salzer** passes copper costs on late and **has not decided what to do with its idle smart-meter plant**.",
                 },
                 {
-                    label: 'Equity dilution',
-                    text: "Apar, TD Power and Inox Wind are all raising equity. Genus's peak net debt is about ₹2,000cr, and KP Green's borrowings rose from ₹100cr to ₹349cr in a year.",
+                    label: 'Cash burn and dilution',
+                    text: "**Inox Wind does not disclose its receivables** and is raising equity again, as are **TD Power** and **Apar**. **KP Green**'s borrowings rose from ₹100cr to ₹349cr in a year. **Exicom**'s Tritium still loses money, and **Servotech** burns cash. Genus's net debt should peak near ₹2,000cr.",
                 },
                 {
-                    label: 'Governance',
-                    text: "Related-party sales (Inox Wind to Inox Green; KP Green to KP group companies), a promoter brand royalty (KP Green), and thin disclosure (Servotech, KP Green's half-yearly reporting) need watching.",
+                    label: 'Governance and disclosure',
+                    text: "**KP Green** pays its promoter a 2% brand royalty, gets a fifth of orders from group companies and reports only half-yearly. **Inox Wind**'s largest customer is a group company. **Servotech does not disclose capacity, order book or margins.** **GE Power India**'s parent controls strategy.",
                 },
-            ],
-            tables: [
                 {
-                    caption: 'Company-specific risks and how management handled them',
-                    layout: 'cards',
-                    columns: ['Company', 'Main risk', 'What management said', 'Still unanswered'],
-                    rows: [
-                        ['TD Power Systems', 'US data-centre dependence; cash conversion; dilution', 'Demand backed by customer advances; capacity plan', '**Would not give data-centre share of orders or advance terms**'],
-                        ['Triveni Turbine', 'Domestic slowdown; margins', 'Mix and timing explained', 'No margin number for H2'],
-                        ['Elecon Engg.Co', 'PSU delays; MNC competition', 'Order book and FY30 target', 'Defence order still not placed'],
-                        ['GE Power', 'Shrinking revenue; parent control', 'Durgapur exit explained', 'No growth guidance'],
-                        ['Apar Inds.', 'Metal volatility; oil inventory gains; US tariffs', 'Oil provision explained', '**No guidance (fund-raise)**'],
-                        ['Genus Power', 'Cash burn; fixed prices; debt', 'Cash-flow path to FY28', 'Platform (GIC) decisions outside its control'],
-                        ['Salzer Electronics', 'Commodity pass-through; smart-meter plant', 'Price rises scheduled', '**No decision on the idle smart-meter investment**'],
-                        ['RMC Switchgears', 'Receivables; revenue collapse', 'Retention money explained', '**Order book split not given; 10x aspiration**'],
-                        ['Inox Wind', 'Receivables; group dependence; guidance misses', 'Pivot to equipment supply', '**Receivables not disclosed**'],
-                        ['KP Green Engg.', 'Royalty; group orders; inventory and debt', 'Royalty defended as brand cost', '**Half-yearly reporting only**'],
-                        ['Exicom Tele-Sys.', 'Tritium losses', 'Breakeven timeline', 'High Tritium depreciation'],
-                        ['Servotech Renew', 'Cash burn; disclosure', 'Capacity plans', '**Capacity, order book and margins not disclosed**'],
-                        ['RIR Power Electr', 'SiC execution; valuation', 'Plant timeline, bank loan', 'Customers for SiC wafers not confirmed'],
-                    ],
+                    label: 'One-project bets',
+                    text: "**RIR**'s value rests on a silicon-carbide plant that needs a bank loan and **has no confirmed customers yet**.",
                 },
             ],
         },
