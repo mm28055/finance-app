@@ -230,24 +230,24 @@ export const logistics: SectorOverview = {
         {
             heading: '3. The sector',
             body: [
-                "Logistics is anything that moves or stores goods. These four do it at three very different points.",
+                "Logistics is anything that moves or stores goods. These four do it at three very different points. The government's own study (DPIIT with NCAER, 2025) puts India's logistics cost at about 7.97% of GDP, well below the 13–14% often quoted, and the National Logistics Policy aims to push it lower still. Within that, two pockets are growing much faster than the economy: **parcels for online shopping**, which Redseer expects to grow 15–20% a year to about 1 billion a month by 2030, and **imported energy**, since India buys about 60% of its LPG from abroad.",
             ],
             points: [
                 {
                     label: 'Value chain',
-                    text: "**Ports**: ships unload LPG, chemicals and ammonia into shore tanks (Aegis), which are then moved inland by pipeline, rail or truck. **Line-haul and last mile**: parcels are collected from sellers, sorted at hubs, trucked between cities and delivered to doorsteps (Delhivery, Shadowfax). **Contract logistics**: warehouses and factory supply lines run for a single large customer, plus sea and air freight booked on its behalf (TVS Supply Chain). **The profit sits with scarce assets and dense networks**, not with the trucks.",
+                    text: "**Ports**: ships unload LPG, chemicals and ammonia into shore tanks (Aegis), which are then moved inland by pipeline, rail or truck. **Line-haul and last mile**: parcels are collected from sellers, sorted at hubs, trucked between cities and delivered to doorsteps (Delhivery, Shadowfax). **Contract logistics**: warehouses and factory supply lines run for a single large customer, plus sea and air freight booked on its behalf (TVS Supply Chain). **The profit sits with scarce assets and dense networks**, not with the trucks. Aegis earns about ₹1,000 of operating profit on every tonne that simply passes through its terminals, and far more on the LPG it sells itself; the parcel companies earn a few rupees on each parcel and make it up on volume.",
                 },
                 {
                     label: 'Where the demand comes from',
-                    text: "India imports most of its LPG and much of its chemicals and ammonia, so port tankage grows with energy use. Online shopping, direct-to-consumer brands and ten-minute quick-commerce apps drive parcel volumes: Delhivery handled 322 million parcels in Q1 and guides 20–30% volume growth. Manufacturing and global trade drive contract logistics and forwarding.",
+                    text: "India imports most of its LPG and much of its chemicals and ammonia, so port tankage grows with energy use. Online shopping, direct-to-consumer brands and ten-minute quick-commerce apps drive parcel volumes: Delhivery handled 322 million parcels in Q1 and guides 20–30% volume growth, and Shadowfax handled nearly 25 crore orders, up 83%. Redseer estimates that outside logistics firms (3PLs, or third-party logistics providers) carry nearly 70% of the shipments of specialist online shops and about a third of the big marketplaces' volumes. Manufacturing and global trade drive contract logistics and forwarding: TVS Supply Chain's India business grew 44% in Q1.",
                 },
                 {
                     label: 'Cycles and policy',
-                    text: "**Parcels are steady; freight forwarding is cyclical.** Sea and air freight rates swing with wars and shipping routes, which helped TVS Supply Chain this quarter. New labour codes and state minimum-wage rises push up delivery costs; Delhivery and Shadowfax both say they are passing them on. Aegis's LPG business depends on Middle East supply, which was disrupted this year.",
+                    text: "**Parcels are steady; freight forwarding is cyclical.** Sea and air freight rates swing with wars and shipping routes, which helped TVS Supply Chain this quarter. New labour codes and state minimum-wage rises push up delivery costs; Delhivery and Shadowfax both say they are passing them on, but wage rises have no automatic price clause the way diesel does. Aegis's LPG business depends on Middle East supply: the government says about 90% of India's LPG imports normally pass through the Strait of Hormuz, which was disrupted this year. Aegis says it kept terminal volumes steady by buying from other regions.",
                 },
                 {
                     label: 'What these companies actually depend on',
-                    text: "**Aegis** depends on India's LPG and chemical imports and on its new ammonia business; **Delhivery** on online shopping and on keeping Amazon's and Flipkart's own delivery arms at bay; **Shadowfax** on quick commerce and a few large platforms; **TVS Supply Chain** on global trade and turning new contracts into profit. **Buy each for what it actually depends on, not for the sector label.**",
+                    text: "**Aegis** depends on India's LPG and chemical imports and on its new ammonia business; **Delhivery** on online shopping and on keeping Amazon's and Flipkart's own delivery arms at bay; **Shadowfax** on quick commerce and a few large platforms (Amazon has just entered its top ten customers); **TVS Supply Chain** on global trade and turning new contracts into profit. **Buy each for what it actually depends on, not for the sector label.**",
                 },
             ],
             tables: [
@@ -259,6 +259,21 @@ export const logistics: SectorOverview = {
                         ['Parcel and last-mile delivery', 'Delhivery, Shadowfax', '3–8%', '1–10%', '**Not meaningful (early losses)**'],
                         ['Contract logistics and forwarding', 'TVS Supply Chain', '7–8%', '10%', '**84%**'],
                     ],
+                },
+                {
+                    caption: 'What each business moves, and what moves its margin (Q1 FY27, company calls)',
+                    columns: ['Company and business', 'Q1 FY27 volume or revenue', 'Growth, year on year', 'What moves the margin'],
+                    rows: [
+                        ['Aegis: LPG distribution', '2.77 lakh tonnes', '+91%', 'Margin per tonne: about ₹4,000 until FY25, now "₹7,000 plus" (company)'],
+                        ['Aegis: LPG terminals', '1.124 million tonnes handled', 'Steady despite the war', 'Contracted fees; about ₹1,000 a tonne'],
+                        ['Aegis: liquids terminals', '₹178cr revenue, ₹136cr operating profit', '+24% revenue', 'Tank use; Mumbai already runs at high use'],
+                        ['Delhivery: express parcels', '322 million parcels', '+55% (includes Ecom Express)', 'Density and wages; target 16–18% service margin'],
+                        ['Delhivery: part-truckload freight', '5.42 lakh tonnes', '+18%', 'Diesel (passed on a month later) and price per unit, up to nearly ₹12'],
+                        ['Shadowfax: all services', '₹1,358cr revenue, nearly 25 crore orders', '+65% revenue, +83% orders', 'Rider pay, linehaul, lost-parcel costs (5.5% of revenue)'],
+                        ['TVS Supply Chain: supply-chain services', '₹2,417cr revenue', '+22%', 'Start-up costs of new contracts; 8.1% margin'],
+                        ['TVS Supply Chain: freight forwarding', '₹918cr revenue', '+51%', 'Ocean and air freight rates; 4.1% margin'],
+                    ],
+                    note: 'Figures as stated on the Q1 FY27 earnings calls. Delhivery’s service margin is its own measure before corporate costs.',
                 },
             ],
         },
@@ -272,23 +287,23 @@ export const logistics: SectorOverview = {
             points: [
                 {
                     label: 'Lasting: waterfront and contracts',
-                    text: "**Aegis** owns terminals at seven ports, where waterfront land is scarce and heavily regulated, and ties them to pipelines and rail. Its contracts run 15–20 years (HPCL at Haldia to 2038; Hindustan Zinc for a third of the new ammonia terminal). A rival cannot copy that quickly.",
+                    text: "**Aegis** owns terminals at seven ports, where waterfront land is scarce and heavily regulated, and ties them to pipelines and rail. Its contracts run 15–20 years (HPCL at Haldia to 2038; Hindustan Zinc for a third of the new ammonia terminal; a new 15-year deal at Pipavav for over 0.5 million tonnes a year of petroleum products). Kandla alone holds 952,000 cubic metres of liquid tanks and 48,000 tonnes of LPG, and its big terminals can empty a very large gas carrier in one go, which saves customers waiting time and freight. A rival cannot copy that quickly.",
                 },
                 {
                     label: 'Lasting but contested: network density',
-                    text: "**Delhivery** delivered 322 million parcels in Q1 alone and bought Ecom Express, so its routes are the fullest in the country. **Shadowfax** reaches 16,372 pin codes and adds about 8 a day. Density lowers cost per parcel; the threat is Amazon and Flipkart opening their own delivery networks to other sellers.",
+                    text: "**Delhivery** delivered 322 million parcels in Q1 alone and bought Ecom Express; Redseer estimates it now carries nearly half of traditional e-commerce shipments, so its routes are the fullest in the country. **Shadowfax** reaches 16,372 pin codes, adds about 8 a day, and says it is the only national parcel firm offering same-day delivery. It claims 28–30% of express parcels and more than half of the deliveries that quick-commerce apps hand to outsiders. Density lowers cost per parcel; the threat is Amazon and Flipkart opening their own delivery networks to other sellers.",
                 },
                 {
-                    label: 'Wearing: freight forwarding',
-                    text: "**TVS Supply Chain**'s forwarding arm (about 28% of revenue) earns 2–5% and follows global freight rates. Its warehouse and supply-chain business is stickier because its systems are built into customers' operations.",
+                    label: 'Narrow in warehouses, wearing in freight',
+                    text: "**TVS Supply Chain** runs about 25 million sq ft of warehouses, roughly 85% used, and most are set up for a named customer under a contract that covers it if volumes fall. About two-thirds of its record ₹543cr of new business in Q1 came from existing customers, a sign that clients stay and add work once its systems are built into their factories. Its forwarding arm (about 28% of revenue) is different: it earns 2–5% and follows global freight rates. Management admits forwarding growth may slow, but expects margins to stay near 4% thanks to cost cuts, fewer suppliers and better buying of shipping space.",
                 },
                 {
-                    label: 'Barely a moat: pricing in parcels',
-                    text: "Parcel pricing is set by a few very large customers. **Shadowfax** chose to absorb part of this year's diesel and wage increases to keep clients, and **Delhivery**'s service margin rose only 5% on 28% revenue growth.",
+                    label: 'Thin: pricing in parcels',
+                    text: "Parcel pricing is set by a few very large customers. **Shadowfax** chose to absorb five days of this year's diesel rise to keep clients, and its rate cards cut the price as customers send more volume. **Delhivery**'s operating profit rose only 5% on 28% revenue growth. Delhivery says price cutting has stopped now that there are fewer rivals, but neither company has yet shown it can raise prices beyond passing on costs.",
                 },
                 {
                     label: 'Competitors outside the list',
-                    text: "**Amazon Transportation Services**, **Ekart** (Flipkart), **Xpressbees**, **Blue Dart** and **Ecom Express** (now Delhivery) in parcels; **Allcargo**, **Mahindra Logistics** and **DHL** in contract logistics and forwarding; **Indian Oil**, **HPCL** and **Confidence Petroleum** in LPG storage and distribution.",
+                    text: "**Amazon Transportation Services**, **Ekart** (Flipkart), **Xpressbees**, **Blue Dart** and **Ecom Express** (now Delhivery) in parcels; **Allcargo**, **Mahindra Logistics** and **DHL** in contract logistics and forwarding; **Indian Oil**, **HPCL** and **Confidence Petroleum** in LPG storage and distribution. In quick commerce, the apps' own rider fleets are the main alternative to Shadowfax.",
                 },
             ],
         },
@@ -301,31 +316,44 @@ export const logistics: SectorOverview = {
             points: [
                 {
                     label: 'Structural: terminals and density',
-                    text: "**Aegis**'s terminal fees are contractual and steady. **Delhivery** targets 16–18% service margins in express parcels and a 15.5% exit margin in part-truckload freight in FY27, up from 13.4%. **Shadowfax** guides 1–2 points of margin expansion a year. These margins rise with volume because the network is already built.",
+                    text: "**Aegis**'s terminal fees are contractual and steady, and its liquids business has grown operating profit for five quarters in a row (₹136cr in Q1, up 28%). **Delhivery** targets 16–18% service margins in express parcels, and says it will be near the top of that range in the second half; in part-truckload freight it aims to exit FY27 at 15–15.5%, up from 13.4%. **Shadowfax** earned a 4.9% adjusted margin in Q1 (its own measure) and guides 1–2 points of expansion a year; it cut lost-parcel costs from 7.9% of revenue a year ago to 5.5%. These margins rise with volume because the network is already built.",
                 },
                 {
                     label: 'Cyclical: gas and freight',
-                    text: "**Aegis**'s LPG distribution margin rose from about ₹4,000 a tonne historically to about ₹7,000; management says volume will keep it there, but part of it reflects this year's disrupted markets. **TVS Supply Chain**'s forwarding margin rose from 2.4% to 4.1% on high ocean freight rates.",
+                    text: "**Aegis**'s LPG distribution margin rose from about ₹4,000 a tonne until FY25 to about ₹7,000. Management admits the jump came partly from this year's disrupted markets, but argues that bigger volumes will let it ship LPG in very large carriers (freight of roughly $15 against about $50 on medium-sized ships, its own rough figures) and so keep the margin once the war premium fades. Its LPG operating profit rose 296% to ₹591cr in Q1. **TVS Supply Chain**'s forwarding margin rose from 2.4% in Q4 to 4.1% on higher ocean volumes, cost cuts and better buying; it aims for 5%.",
                 },
                 {
-                    label: 'Not structural: start-up costs',
-                    text: "**TVS Supply Chain**'s warehouse margin dipped to 8.1% on the costs of starting new contracts; it targets 9.5–10% by Q4. **Delhivery**'s supply-chain unit dipped for the same reason, with normal margins expected by Q3.",
+                    label: 'Not structural: start-up and one-off costs',
+                    text: "**TVS Supply Chain**'s supply-chain margin fell from 9.3% in Q4 to 8.1% on the costs of starting new contracts (and because Q4 carries annual price increases); it expects about 9% in Q2 and 9.5–10% by Q4. **Delhivery**'s supply-chain unit dipped for the same reason: two large new contracts, with a build-up period in which it pays rent and staff before billing starts. It also absorbed about ₹35cr of one-off costs from labour shortages, elections and weather, and contract labour rose to 12.8% of revenue from 12.2%.",
                 },
                 {
                     label: 'Working capital: the biggest drains',
-                    text: "Delivery companies are paid by large platforms on credit and pay riders weekly; **Shadowfax** and **Delhivery** carry 45–60 days.",
+                    text: "Delivery companies are paid by large platforms on credit and pay riders weekly; **Shadowfax** and **Delhivery** carry 45–60 days. Neither gave a Q1 figure, and Delhivery dropped working capital from its Q1 discussion after highlighting it in Q4.",
                 },
                 {
                     label: 'Working capital: getting worse',
-                    text: "**Aegis**'s stock of LPG for resale grows with its distribution volumes. **TVS Supply Chain** is funding new contracts with short-term debt.",
+                    text: "**Shadowfax**'s cycle has lengthened from 36 days in FY24 to 45–48 days in FY25–FY26. **TVS Supply Chain** is funding new contracts with short-term debt, and higher short-term warehouse rents pushed its quarterly other expenses from ₹257cr a year ago to ₹329cr.",
                 },
                 {
                     label: 'Working capital: improving',
-                    text: "**Delhivery**'s cycle has fallen from 77 to 48 days since FY23, and its operating cash has exceeded operating profit for three years. **Aegis** turned 140% of FY26 operating profit into cash.",
+                    text: "**Delhivery**'s cycle has fallen from 77 to 48 days since FY23, and its operating cash has exceeded operating profit for three years. **Aegis**'s cycle fell from 20 days in FY25 to −12 in FY26, and it turned 140% of FY26 operating profit into cash. Its LPG distribution needs little working capital, because franchisees pay for the outlets.",
                 },
                 {
                     label: 'Working capital: built into the business',
-                    text: "Forwarders collect from customers after paying shipping lines, or before, depending on terms; terminals are paid monthly. **Judge each against its own history, not against the others.**",
+                    text: "Forwarders collect from customers after paying shipping lines, or before, depending on terms; this is why **TVS Supply Chain** shows a cycle of about −170 days. Terminals are paid monthly. **Judge each against its own history, not against the others.**",
+                },
+            ],
+            tables: [
+                {
+                    caption: 'Q1 FY27 cash and capital, as stated on the calls',
+                    columns: ['Company', 'What management said', 'Balance sheet'],
+                    rows: [
+                        ['Aegis Logistics', 'Cash and liquid reserves above ₹5,940cr, spread across group companies; cumulative capex to reach about $1.2bn this year, with a $5bn pipeline to FY31; target debt about 0.6 times equity; the Aegis Vopak venture funds its own capex with new equity and borrowing', 'Net cash ₹45cr'],
+                        ['Delhivery', 'No cash or working-capital update; ₹17cr of cash integration costs for Ecom Express in Q1 against ₹300cr guided in total; up to ₹160–175cr for new businesses this year; fleet lending to go mainly through partners', 'Net cash ₹1,742cr'],
+                        ['Shadowfax Tech.', 'About ₹60cr of capex in Q1, 77% on sorting centres and automation, front-loaded before the festive season', 'Net cash ₹786cr'],
+                        ['TVS Supply Chain Sol', 'Fuel and container costs passed on to customers; interest-rate risk managed centrally; merging wholly owned subsidiaries, so no dilution; no debt figure given', 'Net debt ₹2,031cr'],
+                    ],
+                    note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. Balance sheet from Screener; debt includes leases where filed, and Delhivery’s and Shadowfax’s treasury investments count as cash.',
                 },
             ],
         },
@@ -337,31 +365,31 @@ export const logistics: SectorOverview = {
             points: [
                 {
                     label: 'Growth driver: India’s energy imports',
-                    text: "**Aegis** targets about $1.2bn of cumulative capex by FY27 and up to $5bn by 2030, including new LPG and liquid tanks at JNPA and the ammonia terminal at Pipavav, where Japan's ITOCHU has bought 10% with the option to go to 25%. It targets 2 million tonnes of LPG distribution by FY28.",
+                    text: "**Aegis** targets about $1.2bn of cumulative capex by FY27 and a pipeline of about $5bn to FY31, including the ammonia terminal at Pipavav, where Japan's ITOCHU has bought 10% and intends to go to 25% within three years. The biggest single project is a ₹1,675cr expansion at JNPA (India's highest-revenue major port): 3.18 lakh cubic metres of liquid tanks, 77,236 tonnes of LPG storage and a bottling plant, with the first liquid phase due in Q3; the board has just added a 52,000-tonne LPG tank there. Kochi and Kandla are also expanding, and it has signed a non-binding agreement for a possible ₹20,000cr role at the new Vadhavan port. LPG distribution volume is meant to pass 1 million tonnes this year and head to 2 million, and management calls 25% a year the floor for terminal volumes.",
                 },
                 {
                     label: 'Growth driver: online shopping and quick commerce',
-                    text: "**Delhivery** expects the top of its 20–30% express volume range. **Shadowfax** raised its FY27 revenue guidance from 27–30% to 38–40%, opened 47 dark stores (small city warehouses for quick delivery) in Q1 and aims for 100.",
+                    text: "**Delhivery** expects the top of its 20–30% express volume range; parcels from direct-to-consumer brands, where it has an outsized share of heavier parcels, keep growing 40–45% a year. **Shadowfax** raised its FY27 revenue guidance from 27–30% to 38–40%, grew quick-commerce deliveries 53%, opened 47 dark stores (small city warehouses for quick delivery) in Q1 with 20 more on the way, and aims for 100.",
                 },
                 {
                     label: 'Growth driver: outsourced supply chains',
-                    text: "**TVS Supply Chain** won a record ₹543cr of new business in Q1, has a pipeline above ₹7,500cr, bought Swamy & Sons in FMCG logistics and formed a joint venture with ALA for European aerospace and defence.",
+                    text: "**TVS Supply Chain** won a record ₹543cr of new business in Q1, has a pipeline above ₹7,500cr and has historically converted 20–25% of its pipeline within 12–18 months. It bought Swamy & Sons in FMCG logistics and formed a joint venture with ALA for aerospace and defence parts; revenue starts in the second half and management hopes for about ₹2,000cr a year by the fifth year. It aims for mid-teens revenue growth this year.",
                 },
                 {
                     label: 'Growth driver: new services',
-                    text: "**Delhivery Direct** (parcels for individuals) is ahead of plan, and Delhivery Local handles same-city vans. **Shadowfax**'s heavy-goods service grew 170% to ₹75cr of annual revenue.",
+                    text: "**Delhivery**'s new consumer and same-city van services (Delhivery Direct and Delhivery Local) are ahead of plan, already at about ₹150cr a year against a ₹250cr goal for FY27 (the call used this figure for both services), and the first city for vans, Ahmedabad, should break even in Q3. **Shadowfax**'s heavy-goods service grew 170% to ₹75cr of annual revenue and already covers 10,000 pin codes (target raised to 12,000); its self-serve platform for small sellers signed 1,200 paying sellers in its first quarter.",
                 },
                 {
                     label: 'Delivering or beating',
-                    text: "**Aegis** commissioned the Pipavav ammonia terminal and the Jamnagar–Loni pipeline link as promised. **Shadowfax** hit its full-year heavy-goods target in one quarter. **Delhivery** posted record Q1 volumes despite about ₹35cr of one-off costs.",
+                    text: "**Aegis** commissioned the Pipavav ammonia terminal and the Jamnagar–Loni pipeline link as promised, and its Q1 earnings per share of ₹13.80 were already 54% of the whole of FY26. **Shadowfax** hit its full-year heavy-goods target in one quarter and raised revenue guidance. **Delhivery** posted record Q1 volumes despite about ₹35cr of one-off costs.",
                 },
                 {
                     label: 'Cautious',
-                    text: "**Delhivery** expects its supply-chain unit's margins to normalise only by Q3.",
+                    text: "**Delhivery** expects its supply-chain unit's margins to normalise only by Q3, and admits that wage rises have no automatic price clause. **Aegis** would not give a margin for ammonia distribution until it has a quarter of sales. **Shadowfax** kept its margin guidance unchanged despite raising revenue guidance, saying it will reinvest any extra profit.",
                 },
                 {
                     label: 'Missed',
-                    text: "**TVS Supply Chain** moved its 4% pre-tax margin target from FY27 to FY28.",
+                    text: "**TVS Supply Chain** moved its 4% pre-tax margin target from FY27 to FY28, calling this year's goal an aspiration. Its pre-tax margin was about 1% in Q1.",
                 },
                 {
                     label: 'Mixed',
@@ -369,7 +397,7 @@ export const logistics: SectorOverview = {
                 },
                 {
                     label: 'My outlook',
-                    text: "**I expect Aegis to compound earnings at about 18%, slower than its record quarter suggests, and Shadowfax at about 30% from a small base.** Delhivery's profit should grow fast as its network fills, but from so low a base that the percentage says little. TVS Supply Chain should grow profit faster than revenue if new contracts reach normal margins.",
+                    text: "**I expect Aegis to compound earnings at about 18%, slower than its record quarter and its own 25%-plus goal suggest, and Shadowfax at about 30% from a small base.** Aegis's new tanks are real, but the distribution margin is the swing factor. Delhivery's profit should grow fast as its network fills, but from so low a base that the percentage says little. TVS Supply Chain should grow profit faster than revenue if new contracts reach normal margins; I allow about 25%, from a small profit.",
                 },
             ],
             tables: [
@@ -385,29 +413,44 @@ export const logistics: SectorOverview = {
                     ],
                     note: 'My own judgement, not guidance. The growth each price needs is in the live valuation table in section 8.',
                 },
+                {
+                    caption: 'Guidance, capex and track record',
+                    badgeColumn: 3,
+                    columns: ['Company', 'Guidance', 'Capex', 'Track record'],
+                    rows: [
+                        ['Aegis Logistics', 'Earnings per share to keep growing 25%+ a year; distribution margin ₹7,000+ a tonne; distribution volume toward 2 million tonnes', 'About $1.2bn cumulative by FY27; $5bn pipeline to FY31', '**Delivered**: ammonia terminal and pipeline link on time'],
+                        ['Delhivery', 'Express volume +20–30% (upper end); express service margin 16–18% in H2; freight exit margin 15–15.5%', 'Below 5% of sales (4.0% in FY26); up to ₹160–175cr on new businesses', '**Mixed**: record volumes, supply-chain margins delayed to Q3'],
+                        ['Shadowfax Tech.', 'FY27 revenue +38–40% (raised from 27–30%); margin +1–2 points a year; 100 dark stores', 'About ₹60cr in Q1, mostly sorting centres', '**Beat**: guidance raised; heavy-goods target hit in Q1'],
+                        ['TVS Supply Chain Sol', 'Revenue growth mid-teens; supply-chain margin 9.5–10% by Q4; 4% pre-tax margin by FY28', 'Little (1.3–2.5% of sales a year)', '**Behind**: 4% target moved out a year'],
+                    ],
+                },
             ],
         },
         {
             heading: '7. Risk factors',
             body: [
-                "The risks fall into four groups. For each, what management addressed and what it left unanswered.",
+                "The risks fall into five groups. For each, what management addressed and what it left unanswered.",
             ],
             points: [
                 {
                     label: 'Big customers building their own',
-                    text: "Amazon and Flipkart run their own delivery networks and are opening them to outside sellers. That caps what **Delhivery** and **Shadowfax** can charge, and Shadowfax depends heavily on large platforms.",
+                    text: "Amazon and Flipkart run their own delivery networks and are opening them to outside sellers. That caps what **Delhivery** and **Shadowfax** can charge, and Shadowfax depends heavily on large platforms; Amazon has just joined its top ten customers. Delhivery says it has won share even from customers with their own networks, but will not call it a lasting shift. Delhivery's chief executive also expects quick-commerce apps to squeeze the rates they pay for dark stores and last-mile riders, the very work Shadowfax is expanding into.",
                 },
                 {
                     label: 'Labour and fuel',
-                    text: "Gig-worker shortages, new labour codes and state wage rises (about ₹2.5cr a month for Shadowfax) raise delivery costs. Both parcel companies say they can pass these on; Shadowfax absorbed part of it this quarter.",
+                    text: "Gig-worker shortages, new labour codes and state wage rises (about ₹2.2–2.5cr a month for Shadowfax) raise delivery costs. Diesel clauses pass fuel on within days (Shadowfax) or a month (Delhivery's freight contracts), but wage rises must be negotiated customer by customer. Both parcel companies say they can pass these on; Shadowfax absorbed part of it this quarter and Delhivery took about ₹35cr of one-off costs.",
                 },
                 {
                     label: 'Energy markets and a large capex plan',
-                    text: "**Aegis**'s distribution margin may fall back as energy markets normalise, and its plan to spend up to $5bn by 2030 carries construction and utilisation risk. A faster shift from LPG to piped gas would slow its core business.",
+                    text: "**Aegis**'s distribution margin may fall back as energy markets normalise, and its $5bn pipeline to FY31, including the possible ₹20,000cr Vadhavan project, carries construction and utilisation risk. Moving into ammonia distribution brings new industrial customers it has not served before. A faster shift from LPG to piped gas would slow its core business; management says there is room for both.",
                 },
                 {
                     label: 'A global slowdown',
-                    text: "**TVS Supply Chain**'s management named a global recession as its biggest risk: forwarding volumes would fall and new warehouse contracts would be delayed.",
+                    text: "**TVS Supply Chain**'s management named a global recession as its biggest risk: forwarding volumes would fall and new warehouse contracts would be delayed. With net debt of about ₹2,031cr and a pre-tax margin near 1%, it has little room if volumes drop.",
+                },
+                {
+                    label: 'Disclosure and new ventures',
+                    text: "**Delhivery** stopped discussing working capital and free cash in Q1 after featuring them in Q4, has reshaped its board, and got a licence in July to arrange loans for truck owners; it says lending will mostly sit with partners, not on its own books. **Aegis** will not split revenue by port or by customer type, and its cash is spread across group companies. **Shadowfax**'s promoters hold about 16.5% and **Delhivery** has no promoter, so ordinary shareholders carry more of the oversight. **TVS Supply Chain**'s promoter holding has stayed near 43%.",
                 },
             ],
         },
@@ -420,19 +463,27 @@ export const logistics: SectorOverview = {
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**TVS Supply Chain** looks expensive on P/E because depreciation and interest take most of its operating profit; on EV/EBITDA it is the cheapest here. **Delhivery** and **Shadowfax** hold net cash from their share sales.",
+                    text: "**TVS Supply Chain** looks expensive on P/E (about 82x) because depreciation, lease costs and interest take most of its operating profit; on EV/EBITDA (about 9.5x) it is the cheapest here, but that measure counts profit before paying for warehouse leases. **Delhivery** (net cash ₹1,742cr) and **Shadowfax** (₹786cr) hold cash from their share sales, which trims their EV/EBITDA to about 49x and 57x. **Aegis** is roughly debt-free on Screener's figures, so its EV/EBITDA of about 26x tells much the same story as its P/E of about 39x.",
+                },
+                {
+                    label: 'Reasonable',
+                    text: "**None of the four at today's prices.** On the formula above, Aegis would fit my ~18% estimate at about 30x earnings, against about 39x today.",
                 },
                 {
                     label: 'Full',
-                    text: "**Aegis** and **Shadowfax**: each needs a little more growth than I expect. Both are delivering strongly today.",
+                    text: "**Aegis** (about 39x, needing roughly 21% a year) and **Shadowfax** (about 99x, needing roughly 33%): each needs a little more growth than I expect. Both are delivering strongly today.",
                 },
                 {
                     label: 'Stretched',
-                    text: "**TVS Supply Chain**: its profit after tax is small, so the P/E needs growth well above my estimate, even though EV/EBITDA looks modest.",
+                    text: "**TVS Supply Chain**: its profit after tax is small (₹22.5cr in Q1), so the P/E of about 82x needs roughly 31% a year against my ~25%, even though EV/EBITDA looks modest.",
+                },
+                {
+                    label: 'Cheap for a reason',
+                    text: "**TVS Supply Chain**'s low EV/EBITDA reflects thin margins after rent and interest, net debt of about ₹2,031cr and a margin target that has already slipped. It becomes interesting only if the pre-tax margin climbs from about 1% toward the 4% it promises for FY28.",
                 },
                 {
                     label: 'Not measurable on earnings',
-                    text: "**Delhivery**'s profit is too small for its P/E to mean anything; judge it on EV/EBITDA and on whether its margin reaches the 16–18% it targets in express parcels.",
+                    text: "**Delhivery**'s profit is too small for its P/E (about 272x) to mean anything; judge it on EV/EBITDA and on whether its margin reaches the 16–18% it targets in express parcels.",
                 },
             ],
             embed: 'valuation',
@@ -482,5 +533,11 @@ export const logistics: SectorOverview = {
     sources: [
         { label: 'Filed quarterly results, annual ratios and cash flows — Screener.in', url: 'https://www.screener.in/company/AEGISLOG/consolidated/' },
         { label: 'Wholesale price index, high-speed diesel — Office of the Economic Adviser, Government of India', url: 'https://eaindustry.nic.in/' },
+        { label: 'India’s 3PL market rewrites the leaderboard on the road to a billion parcels — Redseer (via Business Standard)', url: 'https://www.business-standard.com/content/press-releases-ani/logistics-at-scale-india-s-3pl-market-rewrites-the-leaderboard-on-the-road-to-a-billion-parcels-says-redseer-125092600834_1.html' },
+        { label: 'From growth engine to global edge: India’s logistics cost at 7.97% of GDP — Press Information Bureau', url: 'https://www.pib.gov.in/PressReleasePage.aspx?PRID=2195125&reg=3&lang=2' },
+        { label: 'Assessment of Logistics Cost in India — DPIIT and NCAER', url: 'https://www.dpiit.gov.in/static/uploads/2025/09/c0d7c33f0b737ed71728ff6c2a35f1e7.pdf' },
+        { label: 'Energy supplies remain secure: India imports about 60% of its LPG — Press Information Bureau', url: 'https://www.pib.gov.in/PressReleasePage.aspx?PRID=2238525&reg=3&lang=1' },
+        { label: 'Reforms, infra key to India’s next phase of gas demand growth (International Gas Union report) — Business Standard', url: 'https://www.business-standard.com/industry/news/reforms-infra-key-to-india-s-next-phase-of-gas-demand-growth-report-126072600140_1.html' },
+        { label: 'Company earnings calls and presentations, Q1 FY27', url: 'https://www.bseindia.com/' },
     ],
 };
