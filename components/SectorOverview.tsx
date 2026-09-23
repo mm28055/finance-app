@@ -26,8 +26,12 @@ import { BusinessProfiles } from './SectorBusinesses';
 
 const SUFFIXES = /\s+(Limited|Ltd|Laboratories|Lifesciences|Life Sciences|Industries|Pharmaceutic|Biosciences|Specialty|Biotech|Drugs|Pharmalabs|Pharmova|Pharma|Captab|Ingrevia|Labs|Healthcare|Research|Remedies|India)\.?$/i;
 
-const shortName = (name: string) =>
-    name.replace(/\s*\(.*\)$/, '').replace(SUFFIXES, '').trim();
+const shortName = (name: string) => {
+    const base = name.replace(/\s*\(.*\)$/, '').trim();
+    const short = base.replace(SUFFIXES, '').trim();
+    // "State Bank of India" must not become "State Bank of".
+    return /\bof$/i.test(short) ? base : short;
+};
 
 /**
  * Chart labels, shortened but never ambiguous. "Jubilant Pharmova" and

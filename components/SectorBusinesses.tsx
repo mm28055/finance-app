@@ -156,7 +156,7 @@ function Swatch({ color, label }: { color: string; label: string }) {
 
 function CostSplit({ data }: { data: NonNullable<ProfileCharts['costSplit']> }) {
     return (
-        <ChartFrame title={`Where each ₹100 of sales goes, ${data.year}`} note={data.note}>
+        <ChartFrame title={`Where each ₹100 of ${data.base ?? 'sales'} goes, ${data.year}`} note={data.note}>
             <VerticalMix caption="" parts={data.parts} height={130} />
         </ChartFrame>
     );
@@ -276,10 +276,11 @@ function ProfitVsCash({ data }: { data: NonNullable<ProfileCharts['profitVsCash'
 }
 
 function ProfileCard({ p, verdict, lv, writtenOn }: { p: BusinessProfile; verdict?: CompanyVerdict; lv?: LiveValuation | null; writtenOn?: string }) {
-    // P/E and EV/EBITDA follow today's price; the other key numbers come from the latest filed results.
+    // P/E, EV/EBITDA and price-to-book follow today's price; the other key numbers come from the latest filed results.
     const stats = p.charts?.stats?.map(s => {
         if (!lv) return s;
         if (s.label === 'P/E') return { ...s, label: 'P/E (live)', value: lv.pe === null ? 'Loss-making' : `${lv.pe.toFixed(1)}x` };
+        if (s.label === 'P/B') return { ...s, label: 'Price ÷ book (live)', value: lv.pb === null ? 'n/m' : `${lv.pb.toFixed(1)}x` };
         if (s.label === 'EV/EBITDA') return { ...s, label: 'EV/EBITDA (live)', value: lv.evEbitda === null ? 'n/m' : `${lv.evEbitda.toFixed(1)}x` };
         return s;
     });

@@ -101,6 +101,8 @@ export interface ValuationInput {
     /** Market value and P/E on the day the note was written, to flag big moves since. */
     mcapAtWriting: number | null;
     peAtWriting: number | null;
+    /** Lenders only: net worth (share capital plus reserves) at the latest year end, ₹cr, for price-to-book. */
+    bookValue?: number | null;
 }
 
 export interface ValuationBlock {
@@ -109,6 +111,11 @@ export interface ValuationBlock {
     inputs: Record<string, ValuationInput>;
     /** My base-case earnings growth, % a year, 3–5 years. The judgement part; not live. */
     myGrowth: Record<string, number | null>;
+    /**
+     * Banks and lenders: debt is their raw material and operating profit means little, so the table
+     * shows price-to-book instead of EV/EBITDA and drops net debt.
+     */
+    lender?: boolean;
 }
 
 /** A plain comparison table. Cells honour `**bold**`; the first column is the row label. */
@@ -282,7 +289,7 @@ export interface ProfileCharts {
         payables5y: number | null;
     };
     /** Where each ₹100 of sales goes in the latest year. */
-    costSplit?: { year: string; parts: MixPart[]; note?: string };
+    costSplit?: { year: string; parts: MixPart[]; note?: string; /** What the ₹100 is, default "sales" (lenders use "income"). */ base?: string };
     /** Quarterly operating margin against the price of the main input (index, first period = 100). */
     marginVsInput?: {
         input: string;

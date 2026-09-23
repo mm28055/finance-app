@@ -9,6 +9,8 @@ export interface LiveValuation {
     pe: number | null;
     evEbitda: number | null;
     netDebtToEbitda: number | null;
+    /** Live market value ÷ net worth (lenders). */
+    pb: number | null;
     /** Growth a year the live P/E needs, %. */
     needed: number | null;
     /** My base-case growth, %. */
@@ -57,6 +59,7 @@ export function liveValuation(
         pe: pe && pe > 0 ? pe : null,
         evEbitda,
         netDebtToEbitda: input.netDebt !== null && input.ttmEbitda && input.ttmEbitda > 0 ? input.netDebt / input.ttmEbitda : null,
+        pb: mcap && input.bookValue && input.bookValue > 0 ? mcap / input.bookValue : null,
         needed,
         mine,
         check,
