@@ -1,0 +1,136 @@
+import { BusinessProfile, OverviewSection } from './types';
+import { rubberCharts } from './card-data/rubber';
+
+// Tab 2 of the Rubber note: what each company actually does.
+// Revenue totals are the filed figures (Screener). Splits come from the
+// companies' latest presentations, annual reports and calls; where a split is
+// not disclosed, the text says so.
+
+const intro: OverviewSection[] = [
+    {
+        heading: 'How to read this tab',
+        body: [
+            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it sells, where the money comes from and three charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed figures (Apcotex standalone); splits are from each company's latest presentation or call.",
+        ],
+    },
+    {
+        heading: 'The products, in plain words',
+        body: [
+            "One company makes new rubber; two recover it from old tyres.",
+        ],
+        points: [
+            {
+                label: 'Synthetic rubber and latex',
+                text: "**Nitrile rubber (NBR)**, an oil-resistant rubber for hoses, seals and rollers, and **synthetic latex**, a milky liquid rubber used to dip tyre cord, coat paper, waterproof buildings and make medical gloves (Apcotex).",
+            },
+            {
+                label: 'Crumb and powder rubber',
+                text: "Scrap tyres shredded into crumb for rubberised road bitumen, sports surfaces and fine powder that tyre makers blend back in (Tinna).",
+            },
+            {
+                label: 'Reclaimed rubber',
+                text: "Old rubber chemically softened so it can be reused in new tyres and rubber goods, mostly exported (GRP).",
+            },
+            {
+                label: 'Fuel oil, carbon black and credits',
+                text: "Pyrolysis heats tyres without air to make fuel oil and recovered carbon black, a substitute for the black filler in tyres (GRP, Tinna). Both also sell recycling credits (EPR) to companies that must pay for tyre recycling.",
+            },
+        ],
+    },
+    {
+        heading: 'Three ways of selling',
+        body: [
+            "Who the customer is decides how the price is set and how fast the cash comes in.",
+        ],
+        tables: [
+            {
+                columns: ['Model', 'Who', 'How the price is set', 'How fast the cash comes'],
+                rows: [
+                    ['**Industrial buyers in India**', 'Apcotex, Tinna', 'Formula prices that follow petrochemical or bitumen costs', 'Normal credit terms'],
+                    ['**Tyre makers and exporters**', 'GRP, Tinna, Apcotex (gloves)', 'Contracts and spot prices; freight matters', 'Slower: goods at sea'],
+                    ['**Recycling credits**', 'Tinna, GRP', 'Sold to producers at set floor prices', 'When credits are sold'],
+                ],
+            },
+        ],
+    },
+];
+
+const profiles: BusinessProfile[] = [
+    {
+        company: 'Apcotex Inds',
+        inShort: ["**India's leading maker of synthetic rubber (NBR) and synthetic latex**, the oil-based rubbers that go into hoses, seals, gloves, paper coating, tyre cord and waterproofing.", "**Good:** a record Q1 FY27 margin of 22%, net cash, and a ₹220cr expansion that should add about ₹600cr of sales from mid-2027. **Watch:** part of that margin was one-off (a supply crunch among rivals and inventory gains); management's own average is 15–16%.", "**Verdict: own.** A well-run local leader with room to grow, at a price that does not depend on Q1's margin lasting."],
+        tagline: "India's leading maker of synthetic rubber (nitrile rubber, high-styrene rubber) and synthetic latex, started in 1980 as the latex division of Asian Paints.",
+        revenue: '₹1,442cr (FY26, standalone)',
+        products: [
+            { name: 'Nitrile rubber (NBR)', text: "Synthetic rubber made from butadiene and acrylonitrile, prized because it resists oil and fuel, so it goes into car hoses, seals, gaskets, rice-husking rolls and footwear. Also sold as blends and powder, and a carboxylated grade (XNBR). The plant runs full and Apcotex holds about 30% of the Indian market; imports supply the rest." },
+            { name: 'High-styrene rubber', text: "A harder synthetic rubber blended into footwear and other moulded rubber goods." },
+            { name: 'Nitrile latex', text: "Synthetic latex is a milky liquid of tiny rubber particles in water; glove makers dip moulds in nitrile latex to make medical and examination gloves. About 10% of the business, built up over the last three to four years, and just coming out of a long global glut." },
+            { name: 'Other synthetic latex', text: "Vinyl-pyridine latex that bonds tyre cord to rubber, styrene-butadiene latex for coating paper and backing carpets, and styrene-acrylics for construction waterproofing and textiles. About 25 new grades were added recently, including oil-drilling uses; it now sells to eight industries." },
+            { name: 'ApcoBuild', text: "A small construction-products business that is growing but still a minor part of sales." },
+        ],
+        revenueText: "Apcotex **does not split revenue** by product or by country on its call; the one figure given is that **nitrile latex is about 10% of the business**. Q1 FY27 revenue rose **40% to ₹526cr** because selling prices followed oil-linked raw materials up, even though **volumes fell 10–12%**: domestic volumes grew 10%, while exports to the Middle East and North Africa were cut by the war there and higher sea freight.",
+        customers: ["**Indian paper mills, construction-chemical makers and textile and carpet makers**, which buy synthetic latex; management says domestic demand is strong across all of them.", "**Tyre makers** (latex for tyre cord) and **auto-component and rubber-goods makers** (NBR for hoses, seals and rollers), who save on stock and lead time by buying locally instead of importing.", "**Glove makers** for nitrile latex, plus export customers in the Middle East and North Africa."],
+        difficulty: { level: 'High', text: "Making emulsion polymers means handling flammable, toxic gases such as butadiene and acrylonitrile in large reactors and hitting each customer's recipe exactly. Customers test and approve each grade before switching, which takes months, and new plants cost hundreds of crores." },
+        moat: "Being the local supplier gives Indian buyers shorter lead times and less stock to carry than imports, and approved grades are rarely switched. Its plants can run on coal or gas and it buys raw materials from several countries, so it keeps supplying when rivals stop. The weakness is that these are near-commodity products: NBR still loses 70% of India's market to imports, and Asian glove-latex capacity keeps prices in check.",
+        salesDrivers: ["**Indian industrial demand**: paper, construction, rubber goods and textiles all grew; domestic volumes rose 10% in Q1 FY27.", "**Oil prices**: when butadiene, styrene and acrylonitrile get dearer, Apcotex's prices rise with them, which lifts revenue even when volumes fall.", "**Capacity**: NBR is sold out. A ₹220cr programme nearly doubles NBR capacity (from about April 2027) and adds synthetic latex (by about June 2027), which management says adds about ₹600cr of sales. A further nitrile-latex phase is designed but not yet approved.", "**Exports**: shipments to the Middle East and North Africa should return when the war ends; management says orders came back during a lull.", "**The nitrile-latex cycle**: glove-latex prices were poor for two years after a wave of new capacity worldwide and are now improving."],
+        inputs: "**Petrochemical building blocks**: butadiene, acrylonitrile and styrene, bought in India or imported but all priced in dollars, plus coal and gas to fuel the plants. Materials were 66% of sales in FY26.",
+        costEffect: "**Passed on.** Selling prices move with raw-material prices, and the Q1 FY27 jump in input costs was passed to customers; the cost shows up as more money tied up in stock and receivables. A weaker rupee raises costs and prices together, so it gives little net gain. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 7 points (12% to 5%). **What happened:** its inputs have no Indian price index, so the chart uses India's synthetic-rubber price index as a rough stand-in; it ended Q1 FY27 28% above Q1 FY24, while the margin went from 9.4% to 22.2%. Input prices did not drive that. The margin sat between about 8% and 14% for most of the period and jumped only in the last quarter, when gas shortages hit rivals with only one fuel source, its dual-fuel plants kept running on coal, and tight supply let it raise prices. Management admits inventory gains added about 2 points, and nitrile latex stopped dragging the margin down.",
+        competitors: [{ name: 'Imported NBR', note: 'Asian and European producers such as LG Chem, Kumho, Zeon and Arlanxeo supply about 70% of Indian NBR demand.' }, { name: 'Asian nitrile-latex makers', note: 'Large producers in Malaysia, Korea and China selling to the same glove makers; new capacity in China and Malaysia is the main threat to prices.' }, { name: 'Global latex makers (e.g. Synthomer, Trinseo)', note: 'Multinationals in paper and carpet latex; management says Apcotex can decide and buy faster than large MNCs.' }],
+        position: "**About 30% of India's NBR market** and a leading Indian maker of synthetic latex; there are few latex imports into India.",
+        money: "Screener shows net cash of about ₹67cr at March 2026 (cash and investments of ₹163cr against borrowings of ₹96cr). The company put net cash at about ₹70cr in March and ₹40cr at the end of June, after dearer raw materials tied up more working capital. The ₹220cr expansion is 15–20% spent and self-funded so far; it expects to take some debt in the next couple of quarters. Promoters hold **58.2%**, unchanged over three years.",
+        watch: ["How far the margin falls back toward the 15–16% average as supply eases.", "NBR and latex expansions starting on time in Q1 FY28.", "Exports to the Middle East and the nitrile-latex expansion decision."],
+        charts: rubberCharts['Apcotex Inds'],
+    },
+    {
+        company: 'Tinna Rubber',
+        inShort: ["**One of Asia's largest recyclers of old tyres**, turning them into crumb rubber for roads, fine rubber powder and reclaimed rubber for tyre makers, and steel abrasives.", "**Good:** fast growth, a record 22% margin in Q1 FY27 and a shift to higher-value products. **Bad:** about ₹21cr of FY26's ₹72cr pre-tax profit came from EPR credits, a regulatory income, and spending on new plants has left ₹125cr of net debt and three years of negative free cash flow.", "**Verdict: follow.** A capable operator, but too much of the profit rests on EPR credits to buy at this price."],
+        tagline: "One of Asia's largest tyre recyclers, making crumb rubber, rubberised bitumen, fine rubber powder, reclaimed rubber and steel abrasives, with a plant in Oman, a new one in South Africa and one planned in Saudi Arabia.",
+        revenue: '₹542cr (FY26, consolidated)',
+        products: [
+            { name: 'Infrastructure: crumb rubber and rubberised bitumen', text: "Old tyres are shredded, the steel and fibre removed, and the rubber ground into granules (crumb rubber). Mixed into bitumen, it makes a road surface that lasts longer and uses less bitumen. Tinna sells the crumb modifier, modified bitumen and bitumen emulsions to road builders." },
+            { name: 'Industrial: fine powder and reclaimed rubber', text: "Micronised rubber powder (MRP) is crumb ground very fine so tyre and rubber-goods makers can mix it into new compounds. Reclaimed rubber is crumb treated with heat and chemicals to partly undo the curing, so it can replace some virgin rubber. MRP capacity reaches 20,000 tonnes a year by Q3 FY27, which management believes is the world's largest." },
+            { name: 'Steel abrasives', text: "Steel wire pulled from tyres is cut into small shot used to blast-clean metal. Tinna has also become sole Indian distributor for a Chinese abrasives maker, aiming for about 50% volume growth." },
+            { name: 'Consumer surfaces', text: "Rubber granules for sports tracks and artificial turf; about 8–10% of the business, hurt in Q1 FY27 when the binder and synthetic grass contractors use nearly tripled in price." },
+            { name: 'New products', text: "Polymer composite masterbatch (PCMB), pellets of recycled plastic compound sold to parts makers (₹12cr in Q1 FY27, 8% of revenue); tyre pyrolysis oil, a fuel made by heating tyres without air (sales from Q2 FY27); and recovered carbon black, the black powder left from that process, which can partly replace new carbon black (sales by Q4 FY27)." },
+        ],
+        revenueText: "Tinna **does not give a full revenue split** by segment. On the Q1 FY27 call it said **Industrial revenue grew 58%** and **Infrastructure 7%**, while Consumer and Steel volumes fell; consumer is about 8–10% of the business and **PCMB 8%**. **Export volumes rose 46%**. Total Q1 FY27 revenue was ₹156cr, up 20%. The Oman plant made about ₹9cr of revenue in the quarter. Management guides to **₹670–700cr for FY27**. On top of sales, Tinna earns **EPR credits**: under extended producer responsibility rules, tyre makers must prove that a set tonnage of old tyres has been recycled, so registered recyclers earn a credit for what they process and sell it to them, currently near a floor price of about ₹2,500 a credit. Management puts this at ₹25–30cr of pre-tax profit a year.",
+        customers: ["**Road contractors and highway builders**, who buy crumb rubber and rubberised bitumen; the bitumen shortage in 2026 pushed more of them to it.", "**Tyre and rubber-goods makers in India and abroad**, for fine powder and reclaimed rubber, often to meet recycled-content and emissions goals.", "**Sports-surface contractors** (granules) and **metal-finishing and foundry users** (steel abrasives)."],
+        difficulty: { level: 'Medium', text: "Shredding tyres is simple and many small firms do it. Making fine powder and reclaim consistent enough for tyre makers, and winning their approval, is slow: Tinna sold under 100 tonnes of MRP a month in 2015–16. Management says the barrier is know-how and patience with customer approvals rather than technology." },
+        moat: "Scale in buying scrap tyres, registered-recycler status for EPR credits, and years of customer approvals give Tinna an edge over small shredders. The weakness is that basic crumb rubber is easy to copy, and a large slice of profit depends on EPR credits whose value is set by regulation.",
+        salesDrivers: ["**Road building and bitumen prices**: dearer, scarcer bitumen makes rubberised bitumen the cheaper choice; Tinna has a 15,000-tonne processing order for FY27.", "**Tyre makers' use of recycled rubber**, driven by high virgin-rubber prices and emissions goals.", "**Capacity**: India tyre-crushing plants run at 88%; capacity rises 27% to 235,000 tonnes a year in FY27, funded by ₹100cr of capex over FY27–FY28.", "**New products**: pyrolysis oil and recovered carbon black should be 7–10% of FY27 revenue (about ₹50–60cr); PCMB is aimed at 10%.", "**Overseas plants**: Oman is profitable again, South Africa should break even in Q2 FY27, and a 24,000-tonne Saudi plant waits on the Middle East calming down."],
+        inputs: "**End-of-life tyres**, bought in India and abroad (a new Chile subsidiary helps source them), plus bitumen and chemicals. Materials were 52% of sales in FY26.",
+        costEffect: "**Partly passed on.** Tinna sells on short contracts and spot, and says it now controls feedstock costs better by keeping more options on where it buys tyres. Freight and imported tyres are the swing costs. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points (17% to 12%). **What happened:** India's rubber-crumb price index ended Q1 FY27 27% above Q1 FY24, and the margin rose from 15.0% to 21.8%. That index tracks what Tinna sells more than what it buys, which is scrap tyres. The margin was driven by other things: EPR credits (₹25–30cr a year, which reach operating profit), a shift toward fine powder, reclaim and PCMB, cheaper feedstock, and the bitumen shortage. West Asia freight trouble hurt Oman and the consumer business, and the margin dipped to 12% in Q3 FY25 before recovering. Management calls inventory gains marginal.",
+        competitors: [{ name: 'GRP', note: 'Older Indian reclaimed-rubber maker, mainly exporting to global tyre makers; also building pyrolysis and carbon-black plants.' }, { name: 'Small local shredders', note: 'Many unorganised firms make basic crumb rubber and compete on price.' }, { name: 'Virgin materials', note: 'New rubber, bitumen and carbon black; when crude oil is cheap, the case for recycled substitutes weakens.' }],
+        position: "**One of Asia's largest tyre recyclers**, with 185,000 tonnes a year of crushing capacity in India and, from Q3 FY27, what it believes is the world's largest fine-rubber-powder capacity.",
+        money: "Screener shows net debt of about ₹125cr. Free cash flow has been negative for three years (–₹52cr in FY26) as capex of ₹109cr outran operating cash. The company plans ₹100cr of capex over FY27–FY28 (₹27cr spent in Q1 FY27) and turned ₹25cr of previously booked EPR credits into cash in Q1. Promoters hold **67.2%**, down from 73.8% in September 2023.",
+        watch: ["How much profit comes from EPR credits versus products.", "Pyrolysis oil and carbon-black plants starting on schedule.", "Debt as overseas plants and new capacity are built."],
+        charts: rubberCharts['Tinna Rubber'],
+    },
+    {
+        company: 'GRP',
+        inShort: ["**A 50-year-old maker of reclaimed rubber from old tyres**, sold mostly abroad to global tyre makers, now adding tyre pyrolysis, recovered carbon black and recycled plastics.", "**Good:** exports recovered after US tariffs and the Q1 FY27 margin rose to 11%. **Bad:** thin margins (8% in FY26), ₹207cr of net debt, five years of negative free cash flow, and the plan leans on a carbon-black plant tyre makers have not yet approved.", "**Verdict: pass.** Returns are low and the price already assumes the new businesses work."],
+        tagline: "A reclaimed-rubber maker supplying global tyre companies, building a tyre-pyrolysis and carbon-black business and recycling nylon and plastics for car parts.",
+        revenue: '₹535cr (FY26, consolidated)',
+        products: [
+            { name: 'Reclaimed rubber', text: "Old tyres, tubes and rubber waste are ground and treated with heat and chemicals to partly undo the curing, giving a rubber that tyre, conveyor-belt and rubber-goods makers mix in to replace some new rubber. The core business; sold to 8 of the world's top 10 tyre makers." },
+            { name: 'Custom die forms', text: "Parts die-cut from end-of-life tyres, sold mainly for export; volumes are back to pre-tariff levels." },
+            { name: 'Pyrova Energy (pyrolysis)', text: "A crumb-rubber and continuous pyrolysis plant that heats shredded tyres without air to make pyrolysis oil, sold as industrial fuel. A plant to clean the leftover char into recovered carbon black (a partial substitute for new carbon black in tyres) should start in October 2026. About ₹91cr invested so far; not yet profitable." },
+            { name: 'Engineering plastics', text: "Recycled nylon compounds, mainly for car parts, plus furniture and appliances; volumes grew 27% in Q1 FY27 as new rules require recycled plastic in vehicles." },
+            { name: 'Recycled polyolefins and windmills', text: "Recycled polypropylene and polyethylene through a subsidiary, for packaging, appliances and cars, which turned profitable in Q1 FY27; plus wind turbines. A polymer-composite business was shut after US tariffs." },
+        ],
+        revenueText: "GRP now reports two segments, **Rubber Recycling** (reclaim, die forms and Pyrova) and **Others** (plastics and windmills), but gave **no revenue split** on the call; Screener's company description puts reclaim at about 89% of revenue (undated). **More than half of revenue comes from exports.** Q1 FY27 total income rose 26% to ₹157cr, with standalone rubber-recycling revenue up 34%, reclaim volumes up 12% and reclaim exports up 20%. **EPR income was ₹4.9cr** in the quarter. Management expects about 20% revenue growth in FY27.",
+        customers: ["**Global tyre makers** in North America, Europe, Latin America and India, which use reclaim in tyre compounds and need to show recycled content.", "**Conveyor-belt, auto-component and rubber-goods makers**, for reclaim and die forms.", "**Car-parts, appliance and packaging makers** (recycled plastics) and **industrial fuel users** (pyrolysis oil)."],
+        difficulty: { level: 'Medium', text: "Reclaiming rubber is an old, known process; the hard part is consistent quality that global tyre makers approve. Recovered carbon black is harder: the pyrolysis reactors took from October 2025 to July 2026 to run 25 days a month, and tyre makers will take several quarters to approve the carbon black." },
+        moat: "Long approvals with most of the world's big tyre makers, and being the first reclaim maker certified under ISCC Plus (an international standard that traces recycled content), keep customers loyal. The weakness is price: reclaim only sells when it is cheaper than new rubber, and margins have averaged just 9–10%.",
+        salesDrivers: ["**Virgin rubber and carbon-black prices**: when these rise with oil, tyre makers use more reclaim.", "**Exports and US trade policy**: direct US sales are back at better margins, but volumes routed through other countries have not fully returned.", "**Reclaim volumes**: management expects close to 20% growth in FY27 and mid-teens after that, with plants being debottlenecked.", "**Pyrova**: scaling to 45,000 tonnes, another 30,000 tonnes and a 12,000-tonne carbon-black plant in Gujarat planned, aiming at ₹250–300cr of revenue.", "**EPR rules**: EPR (extended producer responsibility) rules make producers prove a share of their waste is recycled; recyclers earn credits they can sell, and rules requiring recycled plastic in cars help the plastics arm."],
+        inputs: "**Scrap tyres, tubes and rubber waste**, plus nylon and plastic waste for the plastics arm, and reclaiming chemicals. Power and factory costs are high at 20% of sales. Materials were 51% of sales in FY26.",
+        costEffect: "**Partly, with a lag.** Most price contracts reset quarterly, half-yearly or yearly, so a jump in scrap costs hits the margin first and is recovered later; management says most of the recent rise has now been passed on. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points (8% to 3%). **What happened:** India's reclaimed-rubber price index ended Q1 FY27 25% above Q1 FY24, and the margin went from 6.6% to 10.8%. That index tracks what GRP sells more than what it buys, which is scrap tyres. The margin swung between about 6% and 20% on other things: US tariffs in FY26 cut exports and closed the composite business, scrap costs rose ahead of prices, and Pyrova start-up costs weighed. In Q1 FY27 exports returned, a weaker rupee and better prices helped, plastics turned around, and EPR income added ₹4.9cr.",
+        competitors: [{ name: 'Tinna Rubber', note: "One of Asia's largest tyre recyclers; makes reclaim and fine rubber powder and is also building pyrolysis and carbon-black plants." }, { name: 'Small Indian reclaim makers', note: 'Unorganised units that compete on price, mostly in the domestic market.' }, { name: 'Virgin rubber and carbon black', note: 'What reclaim and recovered carbon black replace; cheap oil makes them harder to beat.' }],
+        position: "**Supplies 8 of the world's top 10 tyre makers**, is the first reclaim maker with ISCC Plus certification, and gained about 1 point of domestic market share last year.",
+        money: "Screener shows net debt of about ₹207cr; borrowings rose from ₹147cr to ₹208cr in FY26. Free cash flow has been negative in each of the last five years. FY27 capex is ₹90–100cr within a ₹250cr investment plan, and management has no firm plan to cut debt. Promoters hold **40.1%**, little changed from 40.4% in September 2023.",
+        watch: ["The carbon-black plant starting in October 2026 and tyre-maker approvals.", "Reclaim margin moving toward the 10–14% target.", "Debt, and how much profit comes from EPR income."],
+        charts: rubberCharts['GRP'],
+    },
+];
+
+export const rubberBusinesses = { intro, profiles };
