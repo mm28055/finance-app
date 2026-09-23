@@ -1,0 +1,225 @@
+import { BusinessProfile, OverviewSection } from './types';
+import { healthProductsCharts } from './card-data/health-products';
+
+// Tab 2 of the Health Products note: what each company actually does.
+// Revenue totals are the filed figures (Screener). Splits come from the
+// companies' latest presentations, annual reports and calls; where a split is
+// not disclosed, the text says so.
+
+const intro: OverviewSection[] = [
+    {
+        heading: 'How to read this tab',
+        body: [
+            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it sells, where the money comes from and three charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed figures (Poly Medicure and Laxmi Dental consolidated, the others standalone); splits are from each company's latest presentation or call. Three of these companies are SME-listed and report half-yearly.",
+        ],
+    },
+    {
+        heading: 'The products, in plain words',
+        body: [
+            "Everyday health products that are not medicines.",
+        ],
+        points: [
+            {
+                label: 'Hospital disposables and devices',
+                text: "IV cannulas (the small tubes put into a vein for a drip), infusion sets, dialysis products and heart, cancer and orthopaedic devices (Poly Medicure).",
+            },
+            {
+                label: 'Lab plastics',
+                text: "Pipette tips, tubes, petri dishes and bottles used in research, diagnostics and drug-making labs (Tarsons).",
+            },
+            {
+                label: 'Dental products',
+                text: "Crowns, bridges and clear aligners made for dentists (Laxmi Dental), dental cements, root-canal files and 3D-printing resins (Prevest), and an online store selling dental supplies (DentalKart).",
+            },
+            {
+                label: 'Hearing aids and electronics',
+                text: "Hearing aids for government schemes and clinics, alongside mobile phones and display screens (OSEL).",
+            },
+        ],
+    },
+    {
+        heading: 'Three ways of selling',
+        body: [
+            "Who the customer is decides how the price is set and how fast the cash comes in.",
+        ],
+        tables: [
+            {
+                columns: ['Model', 'Who', 'How the price is set', 'How fast the cash comes'],
+                rows: [
+                    ['**Hospitals, labs and distributors**', 'Poly Medicure, Tarsons, Prevest', 'Price lists, raised when costs rise (more easily in India than abroad)', 'Normal credit terms'],
+                    ['**Dentists and dental groups**', 'Laxmi Dental, DentalKart, Prevest', 'Per case or per order', 'Fast in India; slower abroad'],
+                    ['**Government tenders and enterprise projects**', 'OSEL', 'Won on price', 'Slow: up to 120 days'],
+                ],
+            },
+        ],
+    },
+];
+
+const profiles: BusinessProfile[] = [
+    {
+        company: 'Poly Medicure',
+        inShort: ["**India's leading maker of IV cannulas and drip sets**, selling to almost every large private hospital in India and to 125 countries, and now adding heart, bone and kidney-care products.", "**Good:** ₹489cr of net cash, proven ability to raise prices to hospitals, and new heart and orthopaedic businesses growing fast. **Watch:** the margin has slipped from 27% to 24%, Chinese dialysers are undercutting it and Middle East orders are stuck at ports.", "**Verdict: follow.** A high-quality business, but the price already assumes its plan to double sales by FY30 works."],
+        tagline: "A leading Indian maker of plastic disposable medical devices (IV cannulas, drip sets, blood and dialysis products), with a growing heart, bone and kidney-care range and two recently bought European companies.",
+        revenue: '₹1,875cr (FY26, consolidated)',
+        products: [
+            { name: 'Infusion therapy', text: "IV cannulas (the thin plastic tube put into a vein to give drips and drugs), drip sets and extension lines. Its original business and still the cash engine: ₹259cr in Q1 FY27, up 11%, with India up more than 20%." },
+            { name: 'Renal care', text: "Dialysers (the filters that clean a patient's blood during kidney dialysis), blood tubing and dialysis machines. Sales fell 3.8% to ₹43cr in Q1 FY27 because cheap Chinese dialysers are undercutting it." },
+            { name: 'Cardiology and critical care', text: "Heart catheters and devices from the Pendra Care purchase and its own Genous range, plus newer machine-based therapies. Grew from ₹2.9cr to ₹28.6cr in a year, mostly through the acquisition." },
+            { name: 'Orthopaedics', text: "Bone implants and instruments made by CTF in Europe, bought in FY26. Added ₹49cr in Q1 FY27; production is to move partly to India once Indian approvals come." },
+            { name: 'Other devices', text: "Blood collection, anaesthesia, urology, surgery, wound drainage and other disposables across 12 specialties: ₹149cr in Q1 FY27, up 18.5%." },
+        ],
+        revenueText: "Infusion products were **about half of Q1 FY27 revenue (₹259cr of ₹525cr)**; the new heart and bone businesses together were about 15%. In the standalone Indian company, **exports were two-thirds of sales** (₹282cr) and India one-third (₹146cr). The acquisitions added ₹72cr in the quarter, so organic growth was 12%.",
+        mixes: [
+            { caption: 'Revenue by business, Q1 FY27 (company call)', parts: [{ label: 'Infusion therapy', share: 49 }, { label: 'Other devices', share: 28 }, { label: 'Orthopaedics', share: 9 }, { label: 'Renal care', share: 8 }, { label: 'Cardiology', share: 5 }] },
+            { caption: 'Standalone revenue by market, Q1 FY27', parts: [{ label: 'Exports', share: 66 }, { label: 'India', share: 34 }] },
+        ],
+        customers: ["**Private and corporate hospitals in India**: management says it is now present in almost every corporate hospital in the country.", "**Distributors in about 125 countries**, with Europe the biggest export region (₹187cr in Q1 FY27). It sells direct in Italy and plans to go direct in three or four more European countries and Brazil.", "**Dialysis centres and heart and bone surgeons** for the newer, higher-priced products."],
+        difficulty: { level: 'High', text: "Each device needs regulatory approval in every market (Europe's strict medical-device rules, India's CDSCO). Implanted heart and bone devices can take two to three years to register and need clinical trials, so new products and new factories take years to pay off." },
+        moat: "Thirty years of quality record with hospitals, European approvals, 399 patents and low Indian costs let it raise prices without losing customers. The weak spot is lower-end products such as dialysers, where Chinese makers ship into India duty-free under the ASEAN trade deal.",
+        salesDrivers: ["**Indian hospital spending**: more private hospitals, health insurance and Ayushman Bharat push hospitals toward good-quality Indian devices instead of costlier imports. Domestic infusion sales grew more than 20% in Q1 FY27.", "**Export demand**: Europe recovered to 17.6% organic growth after new customers were added, but Middle East sales fell 32% because ships are not calling at Gulf ports. Management says the order book there is full.", "**New products and therapies**: it plans 25–30 launches a year and has about 25 products awaiting European approval, with heart, cancer-care and bone products the focus.", "**Acquisitions**: Pendra Care and CTF are growing in single digits; cross-selling through Poly Medicure's network should start from FY28 once approvals come.", "**Trade protection**: India has started an anti-dumping investigation into dialysers from China and Malaysia; a duty would help the kidney-care business."],
+        inputs: "**Medical-grade plastics**, mainly polypropylene and other oil-linked polymers moulded into cannulas, tubing and sets, plus needles, packaging and bought-in parts for machines. Materials were 26% of sales in FY26.",
+        costEffect: "**Mostly passed on, with a lag.** It raised prices to hospitals at the start of FY27 to cover costlier plastics, and in kidney care chose to raise prices and lose some volume rather than chase Chinese prices. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 3 points (24% to 21%). **What happened:** India's polypropylene index rose about 15% from Q1 FY24 to Q1 FY27 while the margin fell from 27% to 24%. Plastics were only part of the story. The European acquisitions carry higher staff and overhead costs, a 35% jump in Haryana's minimum wage lifted staff costs 29%, and the Middle East shipping crisis cut exports. The margin bottomed at about 21% in Q4 FY26, then recovered in Q1 FY27 as the price increase and stock bought at older prices kicked in.",
+        competitors: [{ name: 'BD and B. Braun', note: 'Global leaders in IV cannulas and infusion sets, with bigger brands but higher costs.' }, { name: 'Chinese dialyser makers', note: 'Undercutting prices in India by shipping duty-free under the ASEAN trade deal; the target of the anti-dumping probe.' }, { name: 'Meril Life Sciences and multinationals', note: 'Well-established in heart devices, which Poly Medicure only entered two years ago.' }],
+        position: "**India's market leader in infusion and vascular-access devices**, with global scale (supplies to 125 countries) but still a newcomer in kidney care, heart devices and orthopaedics.",
+        money: "Screener shows **₹489cr of net cash**; the company puts its cash at about ₹855cr against about ₹250cr of working-capital loans in the Indian company and roughly €9m of loans at CTF. The cash is kept for acquisitions and two new plants (Palwal near Faridabad, due around March 2027, and Noida, due in Q1 FY28). Capex is planned at ₹200–225cr in FY27. Promoters hold **62%** (Screener shows 53% in September 2023; the call does not explain the change).",
+        watch: ["The government's decision on anti-dumping duty on Chinese and Malaysian dialysers.", "Middle East shipments restarting and the consolidated margin staying in the 23–25% range.", "The new Palwal and Noida plants getting approvals and filling up."],
+        charts: healthProductsCharts['Poly Medicure'],
+    },
+    {
+        company: 'Tarsons Products',
+        inShort: ["**One of India's largest makers of plastic labware**: the tubes, pipette tips, dishes and bottles used in research, pharma and diagnostic laboratories.", "**Good:** sales are growing again (standalone up 21% in Q1 FY27) and a four-year building programme is nearly finished. **Bad:** polymer costs have jumped 25–50% with little passed on, there is ₹269cr of net debt, and depreciation and interest from the new plants now eat up almost all of the operating profit.", "**Verdict: wait.** I would like to see the new plants filling up and plastic prices settling before buying."],
+        tagline: "A maker of plastic labware (single-use and reusable laboratory plasticware and small lab equipment), expanding into cell-culture and bioprocess products for vaccine and biotech makers.",
+        revenue: '₹333cr (FY26, standalone)',
+        products: [
+            { name: 'Consumables', text: "Single-use labware (plastic items that labs throw away after one use): pipette tips, centrifuge tubes, petri dishes, vials and similar items. High-volume, repeat purchases." },
+            { name: 'Reusables', text: "Tougher plastic bottles, beakers, measuring cylinders, racks and boxes that labs use again and again." },
+            { name: 'Bioprocess containers', text: "Media bottles and roller bottles used to grow cells when making vaccines and biotech medicines. Launched last year from the new Panchla plant and already selling." },
+            { name: 'Cell-culture products', text: "Flasks and plates for growing cells, a market dominated by multinationals. Trial runs are under way; management hopes new products will bring in ₹65–70cr in FY28." },
+            { name: 'Benchtop equipment', text: "Small lab instruments; a very small part of sales today that management wants to grow through its distributors." },
+        ],
+        revenueText: "These figures cover the Indian company only; the German subsidiary Nerbe (sales of roughly ₹90cr a year, per an analyst on the call) is left out. Management describes the business as **roughly 65% India and 35% exports**. Exports include **white-label work**: products made for other companies to sell under their own brand names. It does not split revenue between consumables and reusables on the call.",
+        mixes: [
+            { caption: 'Revenue by market (management rough split)', parts: [{ label: 'India', share: 65 }, { label: 'Exports', share: 35 }] },
+        ],
+        customers: ["**Research institutes and universities**, many of them government-funded and buying through the GeM tender portal; management says the government is only 15–20% of the roughly ₹1,300cr Indian market.", "**Pharma companies, contract research firms, diagnostic labs and hospitals**, reached through a long-standing Indian distributor network.", "**Overseas brands and distributors** in Europe and the US (often white-label) and branded sales elsewhere."],
+        difficulty: { level: 'Medium', text: "Moulding precise, sterile, contamination-free plastic items at scale is harder than ordinary plastics, and cell-culture products need special surfaces and long customer trials. Customers first take a new maker as a back-up supplier, so winning share takes years." },
+        moat: "A wide range delivered reliably through decades-old Indian distributor ties keeps Indian labs loyal, and little Chinese product competes directly in India. Abroad it is a price-taker: it has been unable to raise export prices against global brands and Chinese rivals.",
+        salesDrivers: ["**Indian lab demand**: after years of destocking, domestic sales grew 17% in Q1 FY27; the Indian market normally grows high single digits.", "**Exports**: up 29% in Q1 FY27 after a weak FY26, though management admits part of this was shipment timing and shipping from India is still disrupted by the West Asia crisis.", "**New plants**: Panchla and Amta should be 20–25% of standalone sales in FY28; management sees about ₹400cr of extra sales at full use, taking peak sales to ₹750–800cr.", "**Biotech push**: the government's Biopharma Shakti scheme and India's vaccine and biologics makers are the target for its bioprocess and cell-culture range."],
+        inputs: "**Plastic granules**, mainly polypropylene and other polymers, moulded into tubes, tips, dishes and bottles, plus packaging and moulds. Materials were 29% of sales in FY26, up from 21% in FY22.",
+        costEffect: "**Partly passed on in India, not abroad.** Key polymer prices rose 25–50% in recent months; it took only a marginal price increase in India (full effect one quarter later) and almost none abroad, where global rivals have held prices. Management put the hit at about 5 points of gross margin. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 3 points (33% to 30%). **What happened:** India's polypropylene index rose about 15% from Q1 FY24 to Q1 FY27 and the standalone margin fell from 34% to 28%. On top of dearer plastic, the new plants carry running costs before they are full. Further down, standalone depreciation is expected to peak at ₹105–110cr in FY27 plus about ₹20cr of interest, which is why profit is so thin.",
+        competitors: [{ name: 'Thermo Fisher and Corning', note: 'Global labware and cell-culture leaders with strong brands; they dominate cell culture in India.' }, { name: 'Abdos and Accumax', note: 'Indian labware brands competing on quality, price and range.' }, { name: 'Chinese makers', note: 'Fierce competition in Europe and the US; little direct overlap with Tarsons in India.' }],
+        position: "**One of India's largest labware makers**, a leading domestic brand competing with imports, but a small, price-taking player abroad.",
+        money: "Screener shows **₹269cr of net debt**; management put gross debt at about ₹380cr and net debt at ₹330–340cr on the call (audio unclear, probably including Nerbe). It repays about ₹70cr of loans this year and expects net debt to fall by about ₹40cr. No major new capex beyond finishing about ₹160cr of work in progress and ₹20cr of advances; maintenance spend up to ₹20–25cr a year. Promoters hold **47%**, unchanged.",
+        watch: ["Full commissioning of the Panchla plant, already delayed to Q2–Q3 FY27.", "Polymer prices and whether margins recover from 28%.", "Early orders for cell-culture products and progress on cutting debt."],
+        charts: healthProductsCharts['Tarsons Products'],
+    },
+    {
+        company: 'OSEL Devices',
+        inShort: ["**A small maker of hearing aids, LED display screens and Philips-branded mobile phones**, SME-listed and reporting only half-yearly.", "**Good:** FY26 sales grew 57% to ₹293cr with an 18% margin, and it is the largest supplier of hearing aids to the Indian government. **Bad:** operating cash flow has been negative for two years, it had to correct an earlier cash-flow statement, and it borrows against IPO money parked in mutual funds.", "**Verdict: pass.** Three unrelated businesses and weak financial reporting; I would wait for clean, cash-generating results."],
+        tagline: "An SME-listed electronics company making hearing aids for government schemes and clinics, LED display systems for banks, malls and defence, and Philips-branded phones under licence.",
+        revenue: '₹293cr (FY26, standalone)',
+        products: [
+            { name: 'Hearing aids', text: "Small devices worn in or behind the ear that make sounds louder. It holds US FDA registration and Indian medical-device licences, and mostly sells entry-level units to the government at ₹2,500–3,000 each. The most profitable line." },
+            { name: 'LED display systems', text: "Large screens for advertising, bank branches, boardrooms and defence command centres, with its own content software charged at ₹700–800 a month per screen (about 300 sites live)." },
+            { name: 'Mobile phones', text: "Philips-branded feature phones (4.5 lakh sold in FY26, about ₹55cr) and, from March 2026, smartphones, under a licence covering India only. Assembly is done by a contract manufacturer." },
+            { name: 'Hearing clinics (SFL)', text: "A chain of multi-brand hearing clinics bought recently (about ₹26–27cr of sales), where hearing aids sell for ₹35,000–40,000. It is not in the FY26 figures." },
+        ],
+        revenueText: "FY26 sales were ₹293cr. **Hearing aids were about 42%** (a figure put by an analyst and not disputed), **phones about ₹55cr (19%)** and LED displays and others the rest. Exports, from LEDs and hearing aids, were ₹23cr. No segment margins were given on the call.",
+        mixes: [
+            { caption: 'Revenue by business, FY26 (call)', parts: [{ label: 'Hearing aids', share: 42 }, { label: 'LED displays and other', share: 39 }, { label: 'Mobile phones', share: 19 }], note: 'Hearing-aid share quoted by an analyst; phone revenue from management.' },
+        ],
+        customers: ["**The Government of India**, the biggest buyer of its hearing aids through tenders.", "**Banks, mall chains and defence users** (a national bank for 1,800–2,000 branches, the Indian Military Academy, Naval Academy, Air Force, DRDO and ISRO) for LED screens.", "**Phone buyers in small towns and villages**, through about 200 distributors and 13,000 shops."],
+        difficulty: { level: 'Medium', text: "Hearing aids need medical certification and product development; LED screens are assembled from bought-in parts and phones are made by a contractor, so those two are easy to copy." },
+        moat: "Medical certifications and its place as the government's main hearing-aid supplier, plus display software that makes screens harder to swap out. The phone business depends entirely on the Philips licence, and LED screens compete with cheap imports.",
+        salesDrivers: ["**Phones**: sales of 60,000–70,000 feature phones a month plus new smartphones; management expects phones to become the biggest line by revenue.", "**Retail hearing aids**: selling through its own clinics at many times the government price.", "**LED contracts**: the bank roll-out, defence command centres and a target of up to 100,000 screens on its software within two to three years; ₹25–30cr of March sales slipped into April.", "**Exports**: ₹23cr in FY26, targeting ₹50cr in FY27, and a planned port-side export hub at JNPA (Navi Mumbai) from April 2027."],
+        inputs: "**Electronic parts**: LED modules, circuit boards, chips, batteries and phone components. Materials were 77% of sales in FY26, and staff only 2%, because much of the work is assembly or outsourced.",
+        costEffect: "**Partly passed on.** Government tenders and project orders are priced when won, so cost rises in between squeeze margins; phones earn a fixed 25–30% on the price to distributors. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 8 points (18% to 10%). **What happened:** India's circuit-board price index slipped about 3% from H1 FY24 to H2 FY26 while the margin rose from about 18% to 20%. The gain came from growth and a richer mix of hearing aids rather than cheaper parts.",
+        competitors: [{ name: 'Global hearing-aid brands (Sonova, Demant, WS Audiology, GN, Starkey)', note: 'The "Big Five", dominant in premium hearing aids with far bigger research budgets.' }, { name: 'Chinese LED screen makers', note: 'Low-cost imports that set prices for display hardware.' }, { name: 'Feature-phone brands', note: 'Established brands such as Lava, itel and Nokia-branded phones in a crowded market.' }],
+        position: "**The largest supplier of hearing aids to the Government of India** (management's claim), and a small player in LED displays and phones.",
+        money: "Screener shows **₹45cr of net debt**, with borrowings up from ₹9cr in FY22 to ₹94cr in FY26 and operating cash flow negative in FY25 and FY26 as unpaid customer bills rose (LED projects can take 120 days to collect). On the call it confirmed that about ₹50cr of short-term borrowing had been wrongly counted as operating cash in an earlier cash-flow statement and has been corrected; the manager answering said he was not a finance specialist. IPO money raised for working capital sits in mutual funds while it borrows ₹30cr against them, which roughly doubled interest costs in H2 FY26. Capex for the JNPA hub is not yet costed. Promoters hold **65%**, down from 72% in September 2024. It plans quarterly results from Q3 FY27.",
+        watch: ["First quarterly results and whether operating cash flow turns positive.", "Integration of the SFL clinics and hearing-aid margins.", "The size and funding of the JNPA hub."],
+        charts: healthProductsCharts['OSEL Devices'],
+    },
+    {
+        company: 'Prevest Denpro',
+        inShort: ["**A small, highly profitable maker of dental materials** (fillings, cements, root-canal products and 3D-printing resins) selling in 92 countries.", "**Good:** a 36% margin, ₹82cr of net cash, no debt and spare factory capacity. **Watch:** growth slowed to 14% in FY26 (under 3% in Q4), and the founder-MD had a medical emergency in June 2026.", "**Verdict: own.** A reasonable price for a debt-free, very profitable business still growing in the teens."],
+        tagline: "An SME-listed maker of dental consumables and digital-dentistry materials, exporting to 92 countries and making products for large global dental companies under their names.",
+        revenue: '₹72cr (FY26, standalone)',
+        products: [
+            { name: 'Restorative and preventive materials', text: "Filling materials, cements, bonding agents and impression materials that dentists use every day." },
+            { name: 'Root-canal (endodontic) products', text: "Files and materials for root-canal treatment; its file system is seeing growing repeat orders." },
+            { name: 'Digital dentistry', text: "3D-printing resins (sales up 40.5% in FY26) and Omni-brand chairside 3D printers (up 162%, sold since November 2024). It aims to launch a fully Indian-made printer by 2028." },
+            { name: 'Disinfectants and oral care', text: "A new disinfectant range launched in FY26 and the OraDoc consumer oral-care range, whose sales fell 2% as new US cosmetics rules and Gulf shipping problems held up exports." },
+            { name: 'Private-label manufacturing', text: "Products made for three or four large global dental companies to sell under their own names; US sales, including this, grew 37.6% in FY26." },
+        ],
+        revenueText: "FY26 revenue was ₹72cr: **exports grew 17.6% and India 9%**. The company does not disclose the split between India and exports, or by product.",
+        customers: ["**Dentists in India**, through distributors now expanding into smaller Tier 2 and Tier 3 towns, supported by training programmes.", "**Distributors in 92 countries**, plus direct and online sales in the US through its subsidiary Accudent and a new UAE subsidiary.", "**Large global dental companies** that buy its products to sell under their own brands."],
+        difficulty: { level: 'Medium', text: "Dental materials need chemistry know-how, product licences in each country and certified quality systems. It has two newly licensed products and four more close to market." },
+        moat: "Low Indian production costs, quality certification and in-house research let it undercut multinationals on price, and some of those multinationals buy from it. It is small next to global giants with large sales forces and brands.",
+        salesDrivers: ["**Exports and US private label**: exhibitions in the US are bringing in more private-label and online orders.", "**Digital dentistry**: more dental procedures moving to digital workflows, feeding printer and resin sales.", "**Domestic reach**: more distributors and sales staff in smaller cities; domestic sales rose 16% in H2 FY26 over H1.", "**Capacity is not a limit**: traditional lines run at 67–68% (enough for about ₹125cr of sales) and the new resin, disinfectant and oral-care lines at only 18–20%."],
+        inputs: "**Chemicals, resins, powders and packaging**, some of them imported; in-house research is replacing imported raw materials. Materials were 23% of sales in FY26, down from 26% in FY22.",
+        costEffect: "**Mostly insulated.** Materials are a small share of sales and falling as it makes more of its own raw materials; its costs are mainly staff, marketing and dentist education. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 2 points (36% to 34%). **What happened:** India's dental-materials price index was flat from Q1 FY24 to Q1 FY27 and the margin eased only from 37% to 35%. The small dip came from other costs (marketing, exhibitions, the new subsidiaries and new lines running well below capacity) rising from 15% to 22% of sales over five years.",
+        competitors: [{ name: 'Dentsply Sirona', note: 'Global dental giant with a far larger range; not yet a full digital-dentistry portfolio, according to Prevest.' }, { name: 'Ivoclar', note: 'Premium restorative materials maker with strong brands.' }, { name: '3Shape and other digital specialists', note: 'Leaders in scanners and digital dentistry systems.' }],
+        position: "**A small niche exporter**: ₹72cr of sales, but selling to 92 countries and supplying global brands, with some of the highest margins in the sector.",
+        money: "Screener shows **₹82cr of net cash** and no debt. Its main capex is done and no large spend is planned. It pays a small dividend. Promoters hold **74%**, unchanged. The chairman and managing director, Atul Modi, had a medical emergency in June 2026 that forced the results call to be postponed; he is recovering, and the CFO and whole-time director led the call.",
+        watch: ["Chairman and MD Atul Modi's return to work.", "Whether growth recovers after the weak Q4 FY26.", "Filling the new resin, disinfectant and oral-care lines."],
+        charts: healthProductsCharts['Prevest Denpro'],
+    },
+    {
+        company: 'Laxmi Denta',
+        inShort: ["**Laxmi Dental makes custom crowns and bridges for dentists in India and abroad, plus clear aligners** (invisible teeth-straightening trays), aligner sheets and children's dental products.", "**Good:** debt-free, a record 19% margin in Q1 FY27, and exports up 37%. **Watch:** price competition in aligners, thin-margin scanner sales, and dependence on US trade policy.", "**Verdict: follow.** Growing well, but I want a few more quarters of steady margins after last year's dip."],
+        tagline: "An integrated dental products company: India's largest exporting dental lab, a clear-aligner brand, aligner materials and children's dental products, sold through dentists.",
+        revenue: '₹278cr (FY26, consolidated)',
+        products: [
+            { name: 'Dental lab (crowns and bridges)', text: "Custom crowns (a cap fitted over a damaged tooth) and bridges (false teeth anchored to the teeth on either side of a gap), designed digitally and made to each patient's scan, under the Illusion Dental Lab name. Lab revenue grew 23.5% in Q1 FY27." },
+            { name: 'Clear aligners', text: "Transparent plastic trays that gradually straighten teeth, an alternative to metal braces, sold only through dentists. Grew about 28% in Q1 FY27." },
+            { name: 'Aligner materials', text: "Plastic sheets and machines sold to other aligner makers and labs; grew about 29% in Q1 FY27." },
+            { name: 'Intraoral scanners', text: "Digital wands that take a 3D scan of the teeth instead of a messy mould. It resells them to dentists at about ₹3 lakh each at a thin 15–20% margin, to win their crown and aligner orders; 800–1,000 are planned this year." },
+            { name: "Children's dental products", text: "A smaller business making products for children's dentistry; grew 54% in Q1 FY27." },
+        ],
+        revenueText: "Q1 FY27 revenue was ₹75cr. **Aligners and aligner materials were about ₹24cr, roughly a third**; the dental lab (including scanner resales) and children's products made up the rest. Within the lab, **international sales grew 37%** (helped by the dollar rising from ₹85 to ₹95) and India grew 12% excluding scanners. The call does not give a full India-versus-export split.",
+        mixes: [
+            { caption: 'Revenue by business, Q1 FY27 (derived from call)', parts: [{ label: 'Dental lab, scanners and other', share: 68 }, { label: 'Aligners and materials', share: 32 }], note: 'Aligner figure (₹23.8cr) quoted by an analyst from company data; the rest is the remainder.' },
+        ],
+        customers: ["**Dentists and clinics in India**: 75–80% of its domestic network already sends digital scans. It never sells aligners directly to patients.", "**Dental labs, distributors and clinic chains abroad**, mainly in the US, where a new US-based chief executive was hired this year.", "**Other aligner makers and labs** that buy its aligner sheets and machines."],
+        difficulty: { level: 'Medium', text: "Every crown and aligner is custom-made, needing skilled technicians, digital design and international quality systems. It is labour-heavy (staff are 37% of sales) and the lab runs at 90–95% of capacity." },
+        moat: "Thirty-six years of trust with dentists, global quality standards and the only branded crown business in India, plus scanners that tie dentists into its digital workflow. The weakness is aligners, where well-funded rivals compete hard on price.",
+        salesDrivers: ["**Scanner placements**: dentists who get a scanner start sending lab and aligner orders after 6–18 months, which management expects to lift domestic lab growth above 12%.", "**US exports**: US tariffs on India fell back to 10% after touching 50%; a new US chief executive and trade-show presence aim to win more clinic chains.", "**Aligner adoption**: more general dentists offering aligners, helped by dentist training, a home monitoring tool and brand advertising with Kareena Kapoor.", "**Capacity**: aligners run at about 70% of capacity; a planned owned plant in Palghar would have about three times today's space."],
+        inputs: "**Zirconia and metal for crowns, plastic sheets and resins for aligners, and scanners bought for resale.** Staff, not materials, is the biggest cost. Materials were 21% of sales in FY26.",
+        costEffect: "**Mostly insulated.** Each crown or aligner is priced as a custom job and materials are a modest share; the gross margin was 78.6% in Q1 FY27. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 2 points (16% to 14%). **What happened:** India's dental-materials price index was flat from Q3 FY24 to Q1 FY27 while the margin rose from 8% to 19%. The swings came from elsewhere: growth spreading fixed costs, then a dip to about 11% in Q3 FY26 caused by US tariffs, India's new labour code and heavy share-based pay (ESOP) costs, then a recovery as tariffs eased and ESOP costs halved. Scanner-heavy quarters pull the gross margin down.",
+        competitors: [{ name: 'Align Technology (Invisalign)', note: 'The global aligner leader, sold at premium prices.' }, { name: 'Indian aligner start-ups', note: 'Backed by private equity and competing hard on price.' }, { name: 'Local and overseas dental labs', note: 'Thousands of small Indian labs, and low-cost labs abroad competing for US work.' }],
+        position: "**India's largest exporting dental lab and second-largest domestic lab**, and the country's only company across the whole dental chain from lab work to aligners and materials.",
+        money: "Screener shows **₹24cr of net cash** and the company says it is debt-free. It listed in January 2025. Operating cash flow was slightly negative in FY26 as working capital rose. It has signed a letter of intent for land at Palghar to replace two rented sites costing about ₹2cr a year in rent, and plans new machinery in FY27; costs are not yet disclosed. Promoters hold **42%**, steady, and management says they bought shares at around ₹200.",
+        watch: ["Domestic lab growth picking up from 12%.", "Margin holding in the 18–20% target range as scanner sales swing.", "The cost and smoothness of the move to the owned Palghar plant."],
+        charts: healthProductsCharts['Laxmi Denta'],
+    },
+    {
+        company: 'Vasa Denticity',
+        inShort: ["**Runs DentalKart, an online store selling 23,000 dental products to dentists across India**, about half of them under its own brands.", "**Good:** ₹48cr of net cash and no debt; stock shortages of its own brands are being fixed and the margin recovered to 6% in Q1 FY27. **Bad:** a thin-margin trading business whose margin fell to almost zero in late FY26, operating cash flow has been negative for three years, and a shareholder raised disclosure concerns on the call.", "**Verdict: pass.** Too little profit and too much stock tied up for the price."],
+        tagline: "An SME-listed B2B marketplace (an online store selling to businesses, here dental clinics) for dental consumables, instruments and equipment, with its own private-label brands. It trades as DentalKart.",
+        revenue: '₹277cr (FY26, standalone)',
+        products: [
+            { name: 'Dental consumables', text: "Fillings, cements, root-canal files and other everyday clinic supplies across 11 categories; the largest part of sales and the highest margins." },
+            { name: 'Own brands', text: "Private-label products (made by contract suppliers and sold under DentalKart's own brand names), about half of sales. They earn more than third-party brands and give it control of price and availability." },
+            { name: 'Digital dentistry and equipment', text: "Scanners, milling machines, 3D printers and imaging, started in September 2025; under 10% of sales at a 10–12% gross margin, sold to win later consumable orders. Large items such as dental chairs are also sold offline with installation." },
+            { name: 'Smileworks lab and services', text: "A small dental lab making crowns (about ₹1cr a quarter), plus paid memberships, dentist training and planned advertising for brands on the site." },
+        ],
+        revenueText: "Almost all sales are in India. **Own brands are about half of sales** and other brands the other half; **digital dentistry is under 10%**. More than half of sales come from smaller Tier 2 and Tier 3 towns. It does not split revenue by product category.",
+        mixes: [
+            { caption: 'Revenue by brand type, Q1 FY27 (MD on call)', parts: [{ label: 'Own brands', share: 50 }, { label: 'Other brands', share: 50 }] },
+        ],
+        customers: ["**Dentists and dental clinics across India**: about 2.8 lakh dental professionals are registered and about half have ordered.", "**Dental students and clinic staff**, reached through webinars and training.", "**Paying members**, who spend about twice as much a year as non-members."],
+        difficulty: { level: 'Low', text: "It makes little itself. The hard parts are keeping thousands of items in stock, fast delivery to small towns, handling returns and warranties well, and sourcing reliable own-brand products." },
+        moat: "The widest range of dental products available to small-town dentists, at uniform prices. Dentists can switch easily, though, and offline dealers win on credit, demonstrations and on-site service.",
+        salesDrivers: ["**Dentists shifting from offline dealers**: about 97% of the market still buys offline and DentalKart has about 3%.", "**Own-brand availability**: stock-outs peaked at 33% last year, fell to 12.9% in Q1 FY27 and are targeted below 5% by December.", "**Bigger orders**: expensive digital equipment lifted the average order 27% in Q1 FY27, but order numbers grew only 8% as marketing was held tight.", "**Faster delivery**: the Insta-Dent same-day or next-day service is being piloted in big cities; average delivery is under four days nationally."],
+        inputs: "**Finished dental products bought from Indian and foreign makers**, including contract-made own-brand goods; a weaker rupee raises import costs. Materials (goods bought for resale) were 71% of sales in FY26. Warehousing, delivery and marketing are the other main costs.",
+        costEffect: "**Partly passed on.** It sets prices on the site but faces price-sensitive dentists, and the mix between own brands and other brands matters more than product prices. **Rule of thumb:** a 10% rise in purchase costs not passed on would cut the margin by about 7 points (4% to a loss of about 3%). **What happened:** India's dental-materials price index was flat from Q1 FY24 to Q1 FY27, yet the margin fell from 9% to 6%, and to almost zero in Q4 FY26. People, licence and supply problems left its own brands out of stock, so dentists bought thinner-margin third-party products; low-margin digital equipment and too many warehouses added to the damage. Gross margin rose again in Q1 FY27 as stock came back and warehouses were cut from seven to five. Management's target is a 27–30% gross margin.",
+        competitors: [{ name: 'Local offline dental dealers', note: 'Still about 97% of the market; they offer credit, demos and on-site service.' }, { name: 'MedikaBazaar and other online suppliers', note: 'Broad medical-supply platforms that discount common products.' }, { name: 'Brands selling through their own distributors', note: 'Multinationals such as Septodont increasingly also list on DentalKart.' }],
+        position: "**About 3% of India's dental-supplies market** by management's estimate, the leading online-first seller in a market still dominated by offline dealers.",
+        money: "Screener shows **₹48cr of net cash** and no debt; after a planned acquisition (IDS) was called off, the cash is being used as working capital. Stock has piled up (Screener puts inventory at about 150 days of sales) and operating cash flow was negative in each of the last three years. Promoters hold **60%**, down from 70% in June 2023. On the call, a shareholder said his questions from the previous call had been removed from the transcript and recording; the MD said he would check. Earlier quarters' order numbers were also corrected after what the company called an internal error.",
+        watch: ["Own-brand stock-outs falling below 5% by December.", "Gross margin moving toward the 27–30% target without new customers drying up.", "Inventory and operating cash flow, and the quality of disclosure."],
+        charts: healthProductsCharts['Vasa Denticity'],
+    },
+];
+
+export const healthProductsBusinesses = { intro, profiles };
