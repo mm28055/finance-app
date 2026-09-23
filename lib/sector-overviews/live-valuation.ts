@@ -46,7 +46,7 @@ export function liveValuation(
     const lossMaking = !!input.lossMaking || (input.ttmEbitda !== null && input.ttmEbitda <= 0);
     const pe = lossMaking ? null : (live?.peRatio ?? input.peAtWriting);
     const ev = mcap !== null && mcap !== undefined ? mcap + (input.netDebt ?? 0) : null;
-    const evEbitda = ev !== null && input.ttmEbitda && input.ttmEbitda > 0 ? ev / input.ttmEbitda : null;
+    const evEbitda = !lossMaking && ev !== null && input.ttmEbitda && input.ttmEbitda > 0 ? ev / input.ttmEbitda : null;
     const needed = growthNeeded(pe);
     const mine = block.myGrowth[company] ?? null;
     let check: PriceCheck = 'n/a';
