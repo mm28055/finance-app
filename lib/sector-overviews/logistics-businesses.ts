@@ -1,0 +1,165 @@
+import { BusinessProfile, OverviewSection } from './types';
+import { logisticsCharts } from './card-data/logistics';
+
+// Tab 2 of the Logistics note: what each company actually does.
+// Revenue totals are the filed figures (Screener). Splits come from the
+// companies' latest presentations, annual reports and calls; where a split is
+// not disclosed, the text says so.
+
+const intro: OverviewSection[] = [
+    {
+        heading: 'How to read this tab',
+        body: [
+            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it sells, where the money comes from and three charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed figures; splits are from each company's latest presentation or call. The cost chart uses India's diesel price index as a rough guide to fuel costs.",
+        ],
+    },
+    {
+        heading: 'The services, in plain words',
+        body: [
+            "Four companies, three very different jobs.",
+        ],
+        points: [
+            {
+                label: 'Port terminals and gas distribution',
+                text: "Shore tanks and jetties where ships unload LPG, chemicals and ammonia, rented out on long contracts, plus LPG bought abroad and sold to industry, autogas stations and homes (Aegis).",
+            },
+            {
+                label: 'Parcel delivery',
+                text: "Collecting parcels from online sellers, sorting them at hubs, trucking them between cities and delivering them to doorsteps, plus part-truckload freight for businesses (Delhivery, Shadowfax).",
+            },
+            {
+                label: 'Quick commerce and local delivery',
+                text: "Ten-minute deliveries from small city warehouses (dark stores) for grocery and speciality apps, and same-city vans (Shadowfax, Delhivery).",
+            },
+            {
+                label: 'Contract logistics and freight forwarding',
+                text: "Running warehouses, factory supply lines and spare-parts networks for large companies, and booking sea and air freight for them (TVS Supply Chain).",
+            },
+        ],
+    },
+    {
+        heading: 'Three ways of selling',
+        body: [
+            "Who the customer is decides how the price is set and how fast the cash comes in.",
+        ],
+        tables: [
+            {
+                columns: ['Model', 'Who', 'How the price is set', 'How fast the cash comes'],
+                rows: [
+                    ['**Long take-or-pay contracts**', 'Aegis (terminals)', 'Fixed fees for 15–20 years, paid whether or not the tanks are used', 'Monthly'],
+                    ['**Per parcel or per tonne**', 'Delhivery, Shadowfax', 'Rate cards by weight and distance; big platforms negotiate hard', 'Credit to large platforms; weekly payouts to riders'],
+                    ['**Multi-year service contracts and freight bookings**', 'TVS Supply Chain', 'Cost plus a fee for warehouses; market rates for freight', 'Normal credit terms'],
+                ],
+            },
+        ],
+    },
+];
+
+const profiles: BusinessProfile[] = [
+    {
+        company: 'Aegis Logistics',
+        inShort: ["**A leading owner of port terminals for LPG (cooking and industrial gas) and liquid chemicals**, which also imports LPG and sells it to factories and businesses across India.", "**Good:** long take-or-pay terminal contracts, profit up 212% in Q1 FY27 and a large cash pile funding a big expansion. **Watch:** its LPG selling margin jumped from about ₹4,000 to over ₹7,000 a tonne during the Middle East supply crunch, and management says it will stay there.", "**Verdict: follow.** A strong business, but today's profit leans on a selling margin that has yet to prove it can last once supply returns to normal."],
+        tagline: "Port terminals that store and move LPG, ammonia and liquid chemicals, plus a business that buys LPG abroad and distributes it in India.",
+        revenue: '₹8,333cr (FY26, consolidated)',
+        products: [
+            { name: 'LPG terminals', text: "Refrigerated and pressurised tanks at Mumbai, Kandla, Pipavav, Mangalore and Haldia where ships unload imported LPG, which then leaves by truck, rail or pipeline. An LPG terminal earns a fee on each tonne passing through (its throughput): 1.124 million tonnes in Q1 FY27, steady despite the war." },
+            { name: 'LPG sourcing and distribution', text: "Buys LPG cargoes abroad and sells the gas to industrial and commercial users across India through franchisees. Distribution volume was a record 2.77 lakh tonnes in Q1 FY27, up 91% in a year." },
+            { name: 'Liquid terminals', text: "About 2 million cubic metres of tanks at six ports, rented to companies storing chemicals and petroleum products. Q1 FY27 revenue was ₹178cr, up 24%, its fifth straight quarter of higher EBITDA." },
+            { name: 'Ammonia', text: "A 36,000-tonne ammonia terminal at Pipavav, opened in Q1 FY27, with a 15-year take-or-pay contract with Hindustan Zinc for part of it. Aegis plans to sell ammonia to industrial users from the rest." },
+        ],
+        revenueText: "Gas (LPG and ammonia) was **92% of Q1 FY27 revenue** and liquids 8%. Because gas revenue includes the full value of the LPG it resells, profit is more balanced: gas earned **₹591cr of EBITDA** (81%) and liquids ₹136cr (19%). Within gas, management says terminal throughput earns about ₹1,000 a tonne, distribution over ₹7,000 a tonne, and sourcing adds little. It does not split revenue by port.",
+        mixes: [
+            { caption: 'Revenue by division, Q1 FY27', parts: [{ label: 'Gas (LPG and ammonia)', share: 92 }, { label: 'Liquids', share: 8 }] },
+            { caption: 'EBITDA by division, Q1 FY27', parts: [{ label: 'Gas (LPG and ammonia)', share: 81 }, { label: 'Liquids', share: 19 }], note: 'Normalised EBITDA of ₹727cr, from the Q1 FY27 call.' },
+        ],
+        customers: ["**State oil companies such as HPCL**, which uses the Haldia LPG terminal under an exclusive agreement running to 2038, and other LPG importers who rent tank space.", "**Industrial and commercial LPG users** supplied by the distribution arm, such as the ceramic makers of Morbi; many new private customers were added over the past year.", "**Chemical and fuel companies** renting liquid tanks, and long take-or-pay users such as **Hindustan Zinc** (ammonia) and a large conglomerate that has committed over 0.5 million tonnes a year through a new rail loading point at Pipavav."],
+        difficulty: { level: 'High', text: "Waterfront land at ports is scarce and tightly regulated, and refrigerated LPG and ammonia tanks, jetties and pipeline links take years to approve and build. Once a terminal is tied into pipelines and rail, customers rarely move." },
+        moat: "Scarce port land, links to pipelines and rail, and long take-or-pay contracts make its terminals hard to replace, and owning the whole chain from ship to customer let it keep supplying during the Middle East disruption. The weakness is that the distribution margin depends on LPG market conditions, and piped natural gas could slow LPG demand over time.",
+        salesDrivers: ["**LPG distribution volume**: it went from 5 lakh to 7.5 lakh tonnes last year; management hopes to cross 1 million tonnes this year and is aiming for 2 million, helped by the large new terminals at Pipavav and Mangalore.", "**The distribution margin per tonne**: about ₹4,000 until FY25, over ₹7,000 now. Management says buying in very large gas carriers (much cheaper freight per tonne) will keep it there after the war premium fades. This is the biggest swing factor for profit.", "**Terminal throughput**: management expects at least 25% volume growth a year in the terminal business, more once the Jamnagar–Loni pipeline (now running) and the Kandla–Gorakhpur pipeline (due this half) carry gas inland.", "**New capacity**: a ₹1,675cr expansion at JNPA (318,100 cubic metres of liquid tanks, 77,236 tonnes of LPG storage and a bottling plant), a further 52,000-tonne LPG tank there, and more liquid tanks at Mumbai, Kandla, Kochi and Mangalore.", "**India's reliance on imported LPG and chemicals**, plus a new push into selling ammonia to industry, where margins are much higher than for storage."],
+        inputs: "**LPG bought for resale** is almost all of its material cost: it buys cargoes abroad at international prices and sells them on in India. The terminals themselves need little besides power and staff. Materials were 77% of sales in FY26.",
+        costEffect: "**Passed on.** LPG is priced off international benchmarks and resold month by month (the company says it does not hold stock to bet on prices), so higher gas prices lift revenue more than they hurt profit; terminal fees are charged per tonne handled. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 8 points (17% to 9%). **What happened:** India's diesel wholesale price index went from 100 in Q1 FY24 to 119 in Q1 FY27, but diesel barely matters to this business. The margin rose from 9.3% to 30.3% because the distribution margin per tonne jumped from about ₹4,000 to over ₹7,000, distribution volume rose 91% in a year and terminal throughput grew. Because sales include the full value of the LPG it resells, swings in LPG prices and sourcing volume also move the percentage from quarter to quarter.",
+        competitors: [{ name: 'State oil companies (IOC, BPCL, HPCL)', note: 'Run their own LPG import terminals and bottling plants; they are also its biggest terminal customers and its rivals in selling LPG to industry.' }, { name: 'Private LPG importers and sellers', note: 'Compete for industrial customers such as the Morbi ceramic makers, who switch to whichever fuel is cheapest.' }, { name: 'Adani and other port groups', note: 'Port operators with their own LPG and liquid terminals, such as Adani at Mundra.' }, { name: 'IMC and other tank-farm companies', note: 'Independent liquid-storage operators competing for chemical and fuel storage at Kandla, Haldia and other ports.' }],
+        position: "**A leading independent operator of LPG and liquid terminals in India**, with about 2 million cubic metres of liquid tanks and roughly 2.5 lakh tonnes of LPG storage across seven ports. Kandla is its largest site; Mumbai runs at high utilisation.",
+        money: "Screener shows about **₹45cr of net cash**; the company puts its cash and liquid investments at about ₹5,900cr, against borrowings of ₹4,150cr at March 2026. Cumulative capex is to reach about $1.2bn this year, with a further pipeline of about $5bn to FY31, funded by equity, its own cash and debt while keeping debt near 0.6 times equity. It has also signed a non-binding agreement for a possible ₹20,000cr role in the new Vadhavan port. Aegis Vopak Terminals, its terminal joint venture with Vopak where much of the building is happening, funds itself with its own equity and has agreed to issue new shares; Japan's ITOCHU bought 10% of the Pipavav terminal company and plans to go to 25%. Promoters hold **58.1%**, unchanged since September 2023.",
+        watch: ["Whether the ₹7,000-a-tonne distribution margin holds as Middle East supply returns to normal.", "The start of ammonia sales to industry and the margins they earn.", "Delivery of the JNPA expansion and the pipeline links on time and on budget."],
+        charts: logisticsCharts['Aegis Logistics'],
+    },
+    {
+        company: 'Delhivery',
+        inShort: ["**India's largest third-party logistics company**, delivering parcels for online sellers, moving part-truckload freight for businesses and running warehouses.", "**Good:** record volumes, market-share gains after buying Ecom Express, and ₹1,742cr of net cash. **Bad:** margins are thin, and Q1 FY27 EBITDA grew only 5% as wage and fuel costs rose.", "**Verdict: wait.** Profit is still too small to value it on; I want to see margins reach management's targets first."],
+        tagline: "A nationwide logistics network: express parcels for e-commerce, part-truckload freight, warehousing and cross-border shipping.",
+        revenue: '₹10,508cr (FY26, consolidated)',
+        products: [
+            { name: 'Express parcels', text: "Door-to-door delivery of online orders (express parcels), including returns, cash collection and same-day and next-day options. It handled 322 million parcels in Q1 FY27, up 55%, partly because Ecom Express was not in the numbers a year earlier." },
+            { name: 'Part-truckload freight', text: "Carrying loads too small to fill a whole truck (part-truckload, or PTL) for many businesses on shared trucks through its hubs. It moved 542,000 tonnes in Q1 FY27, up 18%, with revenue up over 20% as prices rose." },
+            { name: 'Supply chain services', text: "Contract logistics: running warehouses and fulfilment centres for brands and handling their orders end to end, under multi-year contracts. About ₹200cr of revenue in Q1 FY27." },
+            { name: 'New businesses', text: "Delhivery Local (hiring vans for deliveries within a city, in six cities), Delhivery Direct (a consumer app to send parcels anywhere in India), cross-border shipping, and a finance arm, approved in July, to help truck owners get loans and insurance." },
+        ],
+        revenueText: "The company did not give a full revenue split on the Q1 FY27 call. What it did say: **supply chain services were about ₹200cr** of a quarter of nearly ₹3,000cr (up 28%), part-truckload revenue grew over 20% and express volumes 55%. Express parcels are the largest business.",
+        customers: ["**E-commerce marketplaces, direct-to-consumer (D2C) brands and small sellers**: D2C volumes grow 40–45% a year, and most new customers are D2C brands and small businesses.", "**Manufacturers, distributors and traders** using part-truckload freight, including brands supplying the warehouses and dark stores of quick-commerce apps.", "**Large companies in e-commerce, industrials and consumer durables** that outsource warehousing; two big new contracts started in Q1 FY27."],
+        difficulty: { level: 'High', text: "A national network of sorting hubs, automated sorting machines, thousands of delivery points and routing software took over a decade and years of losses to build. Few rivals now have the scale to match its cost per parcel." },
+        moat: "Scale and density: more parcels through the same hubs and trucks lowers the cost of each, and customers moved to it when weaker rivals slipped on service. The weakness is that its biggest customers, the marketplaces, run their own delivery arms and can move volume in-house.",
+        salesDrivers: ["**Online shopping growth**: management expects express volumes to grow 20–30% this year, towards the top of that range, with D2C brands growing fastest.", "**Market share**: after buying Ecom Express it says volume is consolidating with the strongest networks, and it gained share both from other logistics firms and from customers' own delivery arms.", "**Freight pricing and network use**: part-truckload yield (price per unit carried) rose 37 paise in Q1 FY27, only 6 paise of it from fuel; management targets a 15–15.5% service margin in this business by the end of FY27, up from 13.4%.", "**Seasonality**: October–December is the peak for parcels and January–March for freight, so the network is expanded in the first half and Q1 margins are usually the weakest.", "**Warehousing contract wins** in e-commerce, cars and consumer durables; new contracts lose money for the first 45–60 days while stock builds up."],
+        inputs: "**Services, not materials.** It buys almost no materials (0% of FY26 sales). The big costs are freight, handling and servicing (75% of sales in Screener's split, covering line-haul trucks between hubs, air freight, contract labour and rent) and staff (15%). Contract labour alone was ₹371cr in Q1 FY27.",
+        costEffect: "**Mostly passed on, with a lag.** Freight contracts are re-priced every month against the previous month's average diesel price, covering about 97–98% of volume; e-commerce contracts have different terms. Minimum-wage rises have no automatic clause and have to be negotiated. **Rule of thumb:** it buys almost no materials, so the usual materials test gives about 0 points; the fuel-sensitive part, line-haul trucking, was put at around 30% of revenue on the call, so a 10% rise there not passed on would cut the margin by about 3 points (6% to 3%). **What happened:** India's diesel wholesale price index rose from 100 in Q1 FY24 to 119 in Q1 FY27, while the margin rose from -0.7% to 4.7%. Diesel was not the story: volumes grew faster than the fixed network costs, Ecom Express volume was added and freight prices rose. The dip from 7.5% in Q4 FY26 came from a month's lag in fuel pass-through, minimum-wage rises, extra staff to protect service and start-up costs on new warehouse contracts, which management put at about ₹35cr.",
+        competitors: [{ name: 'Shadowfax', note: 'The other large national parcel network; stronger in quick-commerce and food deliveries and growing faster from a smaller base.' }, { name: 'Ekart (Flipkart) and Amazon', note: "The marketplaces' own delivery arms, which carry much of their volume and are opening up to outside sellers." }, { name: 'Xpressbees and other parcel firms', note: 'Smaller third-party networks losing share as volume consolidates.' }, { name: 'TCI Express, VRL, Safexpress, Gati', note: 'Established freight carriers competing with its part-truckload business.' }],
+        position: "**India's largest third-party express parcel network** and, by its own account, **the second-largest part-truckload freight player**. It says it serves only about 3% of India's shippers, so there is plenty of room to grow.",
+        money: "Screener shows **₹1,742cr of net cash**. Capex has fallen from ₹601cr in FY23 to ₹422cr in FY26 (Screener). Integrating Ecom Express was budgeted at about ₹300cr of cash cost; ₹17cr was spent in Q1 FY27. The new finance arm is meant to lend mainly through partner lenders, not its own balance sheet. It has **no promoter**: institutions own most of the shares (foreign 42%, Indian 43%).",
+        watch: ["Express margin reaching the 16–18% target in the second half of FY27.", "Price rises to cover minimum-wage increases.", "Whether marketplaces pull volume back in-house."],
+        charts: logisticsCharts['Delhivery'],
+    },
+    {
+        company: 'Shadowfax Tech.',
+        inShort: ["**A fast-growing delivery company for online shopping, quick commerce and food apps**, using gig riders and its own sorting network across more than 16,000 pin codes.", "**Good:** revenue up 65% in Q1 FY27, a fifth straight quarter of 65%-plus growth, with margins rising and ₹786cr of net cash. **Watch:** margins are thin, giant platforms have strong bargaining power, and it listed recently, so the record is short.", "**Verdict: follow.** Growth and execution look strong, but I want a longer record at these margins."],
+        tagline: "Asset-light last-mile delivery for e-commerce parcels, quick commerce and food delivery, plus heavy-goods and high-value shipments.",
+        revenue: '₹4,202cr (FY26, consolidated)',
+        products: [
+            { name: 'Express parcels', text: "Delivery and return pickups of online orders for marketplaces and brands. Includes Prime (same-day and next-day delivery for D2C brands, up 2.7 times in a year) and Shadowfax 360, a self-service platform that signed up more than 1,200 small sellers in its first quarter." },
+            { name: 'Hyperlocal and quick commerce', text: "Last-mile delivery (the final trip to the customer's door) within a city for quick-commerce and food-delivery apps, often within minutes. Up 53% year on year in Q1 FY27; Amazon Now is a major new customer." },
+            { name: 'Prime Large', text: "Delivery of heavy goods such as appliances and furniture in small commercial vehicles. About ₹75cr of annual revenue, up about 170%, now reaching 10,000 pin codes." },
+            { name: 'Other logistics', text: "CriticaLog (high-value shipments, bought about 18 months ago) and shared dark stores (small city warehouses for very fast delivery) for specialist brands: 47 live and 20 more on the way, towards 100 this year." },
+        ],
+        revenueText: "The company does not split revenue by business on the call; express parcels are the largest part. Q1 FY27 revenue was **₹1,358cr, up 65%**, on **nearly 25 crore orders, up 83%**. Dark stores are about 10–12% of other-logistics revenue.",
+        customers: ["**Large e-commerce marketplaces**, who use it alongside their own delivery arms; Amazon is now in its top 10 customers.", "**Quick-commerce and food-delivery apps**: five or six large quick-commerce players and many specialists in beauty, fashion and pet care. It says it handles over half of the deliveries these apps outsource.", "**D2C brands and small sellers**: more than 400 use Prime and over 1,200 sellers joined Shadowfax 360 in its first quarter. This is the fastest-growing group."],
+        difficulty: { level: 'Medium', text: "Riding scooters to doors is easy to copy; what is hard is a dense national network of sorting centres and pin codes, enough riders at peak times, and software that routes millions of orders cheaply. Big platforms can and do build their own." },
+        moat: "Density and cost: each new pin code switches on existing clients' orders at once, and it is one of only two national third-party parcel networks that held service through the recent disruption. The weakness is bargaining power: its biggest customers are giant platforms that can take delivery in-house, and its rate cards already cut prices as volumes rise.",
+        salesDrivers: ["**Online and quick-commerce growth**: management raised FY27 revenue growth guidance to 38–40% from 27–30%, and expects margins to rise 1–2 points.", "**Share gains**: it puts its express parcel share at 28–30%, up from 27–29% a quarter earlier, as volume consolidates with the two big national networks.", "**Outsourcing by platforms**: quick-commerce apps outsource about 12–15% of deliveries today and could go to 20–25%, it says.", "**Coverage**: 716 pin codes added in Q1 FY27 to reach 16,372; each new pin code brings in existing clients' orders straight away.", "**Festive season**: capacity and capex are built up in the first half ahead of the sale-season peak."],
+        inputs: "**Services, not materials.** It buys almost no materials (0% of FY26 sales). The largest cost is payouts to delivery partners (gig riders), then line-haul transport between hubs (18.8% of revenue in Q1 FY27), lost and damaged shipments (5.5% of revenue) and staff (9% of FY26 sales).",
+        costEffect: "**Mostly passed on.** Many contracts let it pass diesel rises straight through; in Q1 FY27 it chose to absorb the first 5 days. Rider pay is not linked to fuel, but riders expect more when petrol rises, and minimum-wage rises in several states added cost. **Rule of thumb:** it buys almost no materials, so the materials test gives about 0 points; a 10% rise in line-haul transport (18.8% of revenue) not passed on would cut the margin by about 2 points (5% to 3%). **What happened:** India's diesel wholesale price index rose from 100 in Q3 FY25 to 123 in Q1 FY27, while the margin rose from 3.0% to 6.8%. Scale drove it: orders grew much faster than fixed costs, the network got denser, and losses on lost shipments fell from 7.9% to 5.5% of revenue in a year.",
+        competitors: [{ name: 'Delhivery', note: 'The largest third-party parcel network and the other big national player; stronger in freight and warehousing.' }, { name: 'Ekart (Flipkart), Amazon and app fleets', note: "The marketplaces' and apps' own delivery arms, which carry most of their volume and decide how much is outsourced." }, { name: 'Xpressbees and other parcel firms', note: 'Smaller third-party networks losing share as volume consolidates.' }],
+        position: "**One of India's two large national third-party parcel networks**, with a **28–30% share of express parcels** by its own estimate and, it says, **over half of the deliveries quick-commerce apps outsource**.",
+        money: "Screener shows **₹786cr of net cash**; cash rose sharply in FY26 around its listing. It spends ahead of the festive peak: Q1 FY27 capex was about ₹60cr (a figure raised on the call), 77% of it on sorting centres and automation. Promoters hold **16.5%**, little changed from 16.6% in March 2026.",
+        watch: ["Margin gains of 1–2 points in FY27, as promised.", "Pricing pressure from large platform customers.", "Whether dark stores and Prime Large pay off at scale."],
+        charts: logisticsCharts['Shadowfax Tech.'],
+    },
+    {
+        company: 'TVS Supply Chain Sol',
+        inShort: ["**A contract-logistics company**: it runs warehouses, parts supply to factory assembly lines and spare-parts networks for manufacturers, and forwards freight by sea and air, in 26 countries.", "**Good:** record new business wins, revenue up 29% in Q1 FY27 and a pipeline of over ₹7,500cr. **Bad:** thin margins, profit before tax of only about 1% of sales and ₹2,031cr of net debt.", "**Verdict: wait.** Management's 4% pre-tax margin target has slipped to FY28; I want to see it delivered."],
+        tagline: "Supply-chain services for manufacturers (factory parts supply, warehousing, spare parts) plus global freight forwarding.",
+        revenue: '₹11,003cr (FY26, consolidated)',
+        products: [
+            { name: 'Integrated supply chain solutions', text: "Contract logistics, where it runs a customer's logistics under multi-year contracts: buying and supplying parts to assembly lines (in-plant logistics), storing finished goods and running spare-parts (aftermarket) networks. ₹2,417cr of revenue in Q1 FY27, up 22%." },
+            { name: 'Global forwarding solutions', text: "Freight forwarding: booking and managing sea and air shipments on carriers' ships and planes for customers. ₹918cr in Q1 FY27, up 51%, mainly from higher ocean volumes out of India and rising freight rates." },
+            { name: 'Technology and 4PL', text: "In some markets it manages a client's whole supply chain, including other providers (known as 4PL), using its own transport-management software, warehouse robotics and a new Oracle ERP in India." },
+            { name: 'New ventures', text: "Swamy & Sons 3PL, a logistics firm bought in Q1 FY27, and a joint venture with Italy's ALA Group for aerospace and defence parts, due to start earning in the second half of FY27." },
+        ],
+        revenueText: "Supply-chain solutions were **72% of Q1 FY27 revenue** and forwarding 28%, but supply chain earns far more: an **8.1% EBITDA margin against 4.1%** for forwarding, so it made about 84% of segment EBITDA. India grew 44% year on year; the company also works in Europe, North America and Asia-Pacific but gave no regional split on the call.",
+        mixes: [
+            { caption: 'Revenue by segment, Q1 FY27', parts: [{ label: 'Supply-chain solutions', share: 72 }, { label: 'Freight forwarding', share: 28 }] },
+            { caption: 'EBITDA by segment, Q1 FY27', parts: [{ label: 'Supply-chain solutions', share: 84 }, { label: 'Freight forwarding', share: 16 }], note: 'Adjusted segment EBITDA of ₹196cr and ₹38cr, from the Q1 FY27 call.' },
+        ],
+        customers: ["**Manufacturers of cars and motorcycles, industrial goods and consumer products**, for whom it runs factory, warehouse and spare-parts work; recent wins include a premium motorcycle maker in Europe, a kitchen-appliance maker and an Indian beverages company.", "**Renewable and clean-energy companies**, including an Asia-based renewable energy provider won in Q1 FY27.", "**Exporters and importers** using its forwarding arm, such as a packaging group, a telecom equipment maker and an industrial automation company. About two-thirds of new business comes from existing customers."],
+        difficulty: { level: 'Medium', text: "Running parts supply inside a customer's plant or a spare-parts network needs process know-how, systems and trained staff, and new contracts take one to two quarters to settle. Freight forwarding is easy to enter and highly competitive." },
+        moat: "Once it runs a customer's plant logistics and systems, switching is disruptive, so contracts tend to renew and grow. The weakness is thin margins across the board and a forwarding arm with no real edge, exposed to global freight rates and trade cycles.",
+        salesDrivers: ["**New business wins**: a record ₹543cr in Q1 FY27 (21% of the year-earlier quarter's revenue) and a pipeline above ₹7,500cr, of which it usually converts 20–25% within 12–18 months.", "**Customers' production volumes**, since much of its work is tied to factory output; a global recession is the risk management flags most.", "**Freight rates and volumes** in forwarding: Q1 FY27 benefited from higher ocean volumes out of India and rising rates.", "**Guidance**: mid-teens revenue growth in FY27, with the supply-chain margin back to 9% in Q2 and 9.5–10% by Q4.", "**New ventures**: Swamy & Sons and the ALA aerospace joint venture, which management hopes could reach ₹2,000cr of revenue in its fifth year."],
+        inputs: "**Mostly services.** Materials, mainly parts bought for customers as part of its supply-chain contracts, were 19% of sales in FY26. Bigger costs are freight, clearing, forwarding and handling (₹991cr in Q1 FY27, about 30% of revenue), staff (23% of FY26 sales) and subcontracting.",
+        costEffect: "**Passed on, with a short lag.** Contracts in every country pass fuel and container-cost rises to customers, and wage rises are passed on too; supply-chain prices are also corrected, often in Q4. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 2 points (7% to 5%). **What happened:** India's diesel wholesale price index rose from 100 in Q1 FY24 to 119 in Q1 FY27, while the margin slipped from 7.4% to 6.7%. Fuel was not the driver: the margin moved with start-up costs on new contracts, customer price corrections in Q4, freight-rate swings in forwarding (whose margin went from 2.1% to 4.1% in a year) and cost cutting.",
+        competitors: [{ name: 'Mahindra Logistics', note: 'The closest listed Indian contract-logistics peer, strong with car makers.' }, { name: 'DHL Supply Chain, Kuehne+Nagel, DSV', note: 'Global giants in contract logistics and forwarding, far larger and with worldwide networks.' }, { name: 'Allcargo and other Indian forwarders', note: 'Compete for sea and air freight forwarding out of India.' }],
+        position: "**A mid-sized global contract-logistics player with Indian roots**, working in 26 countries across four continents, with about 25 million sq ft of warehousing that is roughly 85% used.",
+        money: "Screener shows **₹2,031cr of net debt**. Capex was ₹278cr in FY26 (Screener); most warehouses are leased and backed by customer contracts. It is merging wholly owned subsidiaries into the parent, with no new shares issued. Promoters hold **43.0%**, down slightly from 43.4% in September 2023.",
+        watch: ["Supply-chain margin back to 9% in Q2 and 9.5–10% by Q4.", "Progress toward a 4% pre-tax margin, now targeted for FY28.", "Freight rates, and a possible global slowdown hitting forwarding."],
+        charts: logisticsCharts['TVS Supply Chain Sol'],
+    },
+];
+
+export const logisticsBusinesses = { intro, profiles };
