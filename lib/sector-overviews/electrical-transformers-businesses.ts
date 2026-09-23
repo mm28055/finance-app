@@ -1,4 +1,5 @@
 import { BusinessProfile, OverviewSection } from './types';
+import { electricalTransformersCharts } from './card-data/electrical-transformers';
 
 // Tab 2 of the Electrical Transformers note: what each company actually does.
 // Revenue totals are the filed figures (Screener). Splits come from the
@@ -9,7 +10,7 @@ const intro: OverviewSection[] = [
     {
         heading: 'How to read this tab',
         body: [
-            "One profile per company, grouped as in Tab 1. Each covers what it sells, where the revenue comes from, who buys and how, how hard the product is to make, and why customers stay. Revenue totals are filed figures; splits are from each company's latest presentation, annual report or call. Some splits are of the order book rather than revenue, and the caption says so.",
+            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it sells, where the money comes from and three charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed figures; splits are from each company's latest presentation, annual report or call. Some splits are of the order book rather than revenue, and the caption says so.",
         ],
     },
     {
@@ -88,6 +89,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'High', text: "220 kV is established; 400 kV needs a destructive short-circuit test and Power Grid approval per plant. 765 kV design is being licensed from a partner for a $3–5m fee and a 2–4% royalty." },
         moat: "Approvals up the voltage ladder and price-variation clauses on 60–75% of utility orders. The top-end technology is rented, not owned.",
+        inShort: ["**A Gujarat power-transformer maker** moving up from 220 kV to 400 kV and 765 kV, selling to state grids, Power Grid and renewable developers.", "**Good:** the fastest volume growth among the makers and price-variation clauses on most utility orders. **Watch:** only about half its profit has become cash, and its 765 kV design is licensed, not owned.", "**Verdict: own.** The price roughly matches the growth I expect."],
+        salesDrivers: ["**Transmission spending by Power Grid and state utilities**: 66% of Q1 revenue came from transmission and distribution, and each new substation needs several large transformers.", "**Moving up the voltage ladder**: 400 kV revenue from FY28 and 765 kV bids from Q4 FY27 bring bigger units with fewer rivals.", "**Renewables and storage**: 19% of Q1 revenue; a new 5,000 MVA inverter-duty plant by December.", "**Capacity sets the pace, not demand**: Q1's 48% growth came from volume at new plants, with no change in prices or mix, management said.", "**Exports are a future lever**, planned partly as a hedge against the domestic capacity race; none today."],
+        inputs: "**Copper** for the windings, **CRGO electrical steel** for the core (mostly imported), transformer **oil**, steel for the tank, insulation pressboard and bushings. Materials were 70% of sales in FY26.",
+        costEffect: "**Mostly passed on.** 60–75% of utility orders carry price-variation clauses, and it buys material order by order rather than stocking up. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 7 points (19% to 12%). **What happened:** copper rose by about a third over the chart period, yet the margin rose from about 14% to 16–17%; in Q1 FY27's spike management said the clause let it pass on most of the increase. The chart uses copper because India's price index has no series for CRGO steel.",
+        competitors: [{ name: 'Transformers & Rectifiers (TARIL)', note: 'The largest Indian-owned rival at 400 kV and above.' }, { name: 'Hitachi Energy, Siemens Energy, GE Vernova', note: 'Multinationals that dominate 765 kV and HVDC transformers.' }, { name: 'CG Power, BHEL', note: 'Large Indian makers of power transformers for utilities.' }, { name: 'Chinese makers with Indian plants', note: 'Now allowed into public tenders; Atlanta says it has seen no effect on pricing yet.' }],
+        position: "**One of the fastest-growing power-transformer makers in India**, with 273 customers (from 77 in FY22) and Power Grid's 400 kV approval. Still smaller than TARIL and the multinationals at the top voltages.",
+        money: "Net cash of about ₹49cr at FY26 (Screener). It bought Atlanta Trafo for about ₹260cr including its debt. Promoters hold **87%**.",
+        watch: ["The 400 kV short-circuit test and first 400 kV revenue from FY28.", "The royalty cost of the 765 kV technology tie-up.", "Cash conversion: operating cash has been about half of operating profit."],
+        charts: electricalTransformersCharts['Atlanta Electricals'],
     },
     {
         company: 'Shilchar Tech.',
@@ -110,6 +120,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'Medium', text: "Custom-built transformers up to 132 kV are a proven skill shared by many makers. The step to 220 kV will need new customer approvals and type tests." },
         moat: "Speed, quality and an export network built over 19 years. No technology edge; returns depend on the global shortage.",
+        inShort: ["**A debt-free Gujarat transformer maker** (up to 132 kV) that sells about half its output abroad, mostly solar, wind and industrial units.", "**Good:** the highest returns among the makers and an expansion paid from its own cash. **Bad:** exports stalled on freight costs and its margin halved in Q1.", "**Verdict: own, buying in steps.** The price asks a little more than I expect from today's lower base."],
+        salesDrivers: ["**Exports**: 52% of FY26 revenue, to the US, Middle East and Africa, riding the global transformer shortage. It sells from the factory gate, so freight costs decide when customers collect.", "**Indian private buyers**: solar and wind developers, steel, cement and EPC firms. It avoids state utility tenders.", "**Capacity**: the existing 7,500 MVA runs nearly full; the 6,500 MVA plant from April 2027 adds 220 kV and drives growth from FY28.", "**Mix**: export orders earn roughly 10% more than domestic ones, so the export share moves the margin as much as volume does."],
+        inputs: "**Copper** windings, **CRGO steel** cores, transformer oil, steel tanks and insulation. Materials were 62% of sales in FY26.",
+        costEffect: "**Partly passed on, with a lag.** On orders delivered in Q4 and Q1 it passed on only 50–60% of the price rise. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 6 points. **What happened:** copper rose by about half over the chart period. The margin climbed above 30% while export prices were high, then fell to 16% in Q1 FY27 as exports stalled and cost rises were only partly recovered.",
+        competitors: [{ name: 'Voltamp Transformers', note: 'Gujarat neighbour selling to Indian industry.' }, { name: 'Transformers & Rectifiers, Atlanta', note: 'Larger makers in the same 66–220 kV range at home.' }, { name: 'Korean, Turkish and Chinese makers', note: 'Its main rivals for export orders.' }],
+        position: "**A mid-sized maker (7,500 MVA) with an unusually large export share** for its size, and among the highest-return transformer makers in India.",
+        money: "Debt-free, with about ₹246cr of net cash and investments. The expansion is funded from its own cash. Promoters hold **62%**, down from 66%.",
+        watch: ["Freight costs and export collections recovering.", "The Q2 margin: how much of the cost rise it recovers.", "The 220 kV plant starting in April 2027."],
+        charts: electricalTransformersCharts['Shilchar Tech.'],
     },
     {
         company: 'Voltamp Transformers',
@@ -131,6 +150,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'Medium', text: "A mature range up to 120 MVA. The 220 kV plant is a step up that will need approvals." },
         moat: "A long record with industrial buyers, reliable delivery and a debt-free balance sheet. No clear technology edge.",
+        inShort: ["**A Vadodara transformer maker** selling mainly to industry (steel, cement, refineries, data centres) rather than utilities.", "**Good:** debt-free with about ₹1,068cr of net cash and investments, and very steady. **Bad:** no earnings calls or guidance, and it says margins will normalise.", "**Verdict: wait.** The price needs much more growth than I expect."],
+        salesDrivers: ["**Industrial investment in India**: steel, metals, cement, chemicals, pharmaceuticals, refineries and data centres.", "**Capacity**: above 100% utilisation for two years; the 220 kV plant from July 2026 adds 6,000 MVA and bigger units.", "**Selective ordering**: it skips low-margin utility tenders, which protects margins but caps growth.", "**Order book**: ₹1,510cr (12,377 MVA), about eight months of sales."],
+        inputs: "**Copper**, **CRGO steel**, oil and steel tanks. Materials were 53% of sales and manufacturing costs another 24% in FY26 (as filed).",
+        costEffect: "**Not disclosed.** Voltamp does not say how many of its orders carry price-variation clauses. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points. **What happened:** its margin was near 15% at both ends of the chart period while copper rose by about half, so it has passed most rises on over time; it peaked higher in FY25, and management expects it to normalise.",
+        competitors: [{ name: 'Bharat Bijlee', note: 'Listed maker of transformers and motors for industry.' }, { name: 'Siemens, Hitachi Energy', note: 'Multinationals competing for large industrial and data-centre orders.' }, { name: 'Shilchar, TARIL', note: 'Indian makers in the same voltage range.' }],
+        position: "**One of India's most established transformer makers for industrial buyers**; it sold 16,514 MVA in FY26.",
+        money: "About ₹1,068cr of net cash and investments, including a ₹995cr investment portfolio. It proposed a ₹101cr dividend. Promoters hold **30%**, down from 38%.",
+        watch: ["The 220 kV plant ramping up.", "Whether margins settle near 15% or lower.", "Order-book growth from ₹1,510cr."],
+        charts: electricalTransformersCharts['Voltamp Transformers'],
     },
     {
         company: 'Supreme Power',
@@ -153,6 +181,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'Medium', text: "Standard designs up to 220 kV. Data-centre and larger orders need a 165 MVA type test first, and bigger units need a new plant." },
         moat: "Price-variation clauses on 80–85% of orders, the best in the sector. Otherwise small, regional and competing with larger makers.",
+        inShort: ["**A Chennai transformer maker** (up to 200 MVA and 220 kV) selling to southern utilities, EPC firms and industry; listed on the NSE SME platform.", "**Good:** price-variation clauses on 80–85% of orders and an order book three times sales. **Bad:** small, burning cash while it builds, and it missed its own FY26 guidance.", "**Verdict: follow.** The price fits, but the new plant has to prove itself."],
+        salesDrivers: ["**Southern state utilities** (Karnataka, Kerala, Tamil Nadu), now entering Maharashtra and Telangana.", "**Filling the new Kannur plant**: capacity is now 9,000 MVA, and the new plant runs at 20–25%.", "**Bigger units**: 77% of the order book is power transformers; a 165 MVA order and its type test open larger work, including data centres.", "**Customer readiness**: it guides ₹250–300cr against ₹377cr scheduled because 10–20% of customers may not be ready to take delivery."],
+        inputs: "**Copper**, **CRGO steel**, oil and steel tanks. Materials were 78% of sales in FY26, the highest share here.",
+        costEffect: "**Well protected.** 80–85% of orders carry price-variation clauses, and it generally does not take orders without one. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 8 points. **What happened:** copper rose by about half over the chart period and its margin still rose from about 11% to 15–16%; its Q1 gross margin rose to 28.8%.",
+        competitors: [{ name: 'SGB Transformers, Voltamp, ABB (Hitachi Energy)', note: 'Named on its call as its main rivals.' }, { name: 'Atlanta, TARIL', note: 'Larger makers in the same utility tenders.' }],
+        position: "**A small regional maker**, one of the few SME-listed companies making 220 kV transformers.",
+        money: "Net debt about ₹36cr. Management says no equity is needed this year, but more capital may be needed by FY28; CRISIL rates it BBB. Promoters hold **57%**.",
+        watch: ["Utilisation at the new plant.", "The 165 MVA type test.", "A move to the main board, and funding needs in FY28."],
+        charts: electricalTransformersCharts['Supreme Power'],
     },
     {
         company: 'Transformers & Rect',
@@ -174,6 +211,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'Very high', text: "It makes the full range to 1,200 kV and has an HVDC repair qualification from Power Grid. Running three large plants efficiently has proved harder: one is at 27% utilisation." },
         moat: "Range, approvals and scale that few Indian makers match. Weak cash conversion and credibility issues limit what that is worth.",
+        inShort: ["**One of India's largest transformer makers**, with a range up to 1,200 kV and specialist furnace and rectifier units.", "**Good:** the widest range, 75,000+ MVA of capacity and a ₹6,630cr order book. **Bad:** only 11% of five years' operating profit became cash.", "**Verdict: wait.** The price fits, but it has to show cash first."],
+        salesDrivers: ["**Power Grid and state transmission**: about half its customers are government, including one Power Grid order above ₹1,000cr.", "**Private developers and industry**: Adani, ReNew, Jindal and others; a ₹150cr US export order.", "**Utilisation, not capacity**: existing plants can support ₹5,000–6,000cr of revenue, but Changodar runs at 27%.", "**Making its own inputs**: ₹900–1,000cr to make 80–85% of its materials in-house, which it says adds 2–3 points of margin from FY28."],
+        inputs: "**Copper** conductors, **CRGO steel**, pressboard, bushings, oil and steel. Materials were 68% of sales in FY26. It is starting to make its own conductors, pressboard, bushings and processed CRGO.",
+        costEffect: "**Protected by price-variation clauses**, management says, though it gives no share. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 7 points. **What happened:** its margin rose from under 3% in FY22 to about 16% as the shortage lifted prices, even while copper rose by about half. It stocked up on steel and copper in FY26, which tied up cash.",
+        competitors: [{ name: 'Hitachi Energy, Siemens Energy, GE Vernova', note: 'Multinationals it meets at the highest voltages.' }, { name: 'Atlanta, BHEL, CG Power', note: 'Indian rivals in 220–400 kV.' }, { name: 'Vadodara makers and small firms', note: 'Its rivals in 33–220 kV, where prices are tighter.' }],
+        position: "**Among the few Indian-owned makers able to build 765 kV and above**, with one of the largest capacities in the country.",
+        money: "Net debt about ₹316cr (Screener); ₹145cr of QIP money is still unspent for backward integration. Promoters hold **64%**, down from 75%.",
+        watch: ["Changodar utilisation rising from 27%.", "Working-capital days and operating cash turning positive.", "Backward-integration plants starting on time."],
+        charts: electricalTransformersCharts['Transformers & Rect'],
     },
     // ── Components ────────────────────────────────────────────────────────────
     {
@@ -197,6 +243,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'Very high', text: "Bushings must work flawlessly for decades at high voltage, and qualification takes years. Making its own resin cores is new for Yash and for India." },
         moat: "Approvals and a 96% repeat-order rate on a small but critical part. Buyers rarely switch to save money when failure is so costly.",
+        inShort: ["**Makes bushings**, the insulated parts that carry power through a transformer's wall, for transformer makers and utilities in 60+ countries; listed on the BSE SME platform.", "**Good:** 96% repeat orders and one of fewer than 12 independent makers worldwide. **Bad:** only a third of its profit has become cash, and it is raising equity.", "**Verdict: follow.** The best moat here, priced close to the growth I expect; buy on a fall."],
+        salesDrivers: ["**Every new transformer**: each needs several bushings, so its volume follows the whole industry's.", "**Replacements**: utilities replacing bushings on old transformers (retrofits, 6–7% of revenue, high margin).", "**The new plant** (from about October 2026, up to 550 kV), which will make its own resin cores instead of importing them.", "**Exports**: 7% of FY26 sales, targeted at 20%+ in two to three years through a US subsidiary and European distributors."],
+        inputs: "**Resin-impregnated paper cores** (imported from a Swiss partner today), **copper and aluminium** conductors, insulator housings and oil. Materials were 51% of sales in FY26.",
+        costEffect: "**Passed on through pricing.** It prices orders to allow for supplier increases and currency moves, and has arrangements to pass rises on. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points. **What happened:** copper rose by about a third over the chart period and its margin rose from about 23% to 26%. The bigger cost risk is the rupee, because cores are imported until the new plant runs.",
+        competitors: [{ name: 'Hitachi Energy, Trench, CG Power', note: 'The established bushing makers.' }, { name: 'MIM and other Indian makers', note: 'Smaller domestic rivals.' }, { name: 'Chinese and European makers', note: 'Its rivals in exports; the government has considered allowing Chinese bushings back in.' }],
+        position: "**One of India's largest independent bushing makers**, at a time when bushing supply is short worldwide.",
+        money: "Net debt about ₹18cr (debt-to-equity 0.17). The board approved a ₹150cr raise; management plans to draw ₹100–110cr. Promoters hold **55%**, down from 58%.",
+        watch: ["The new plant making its own cores on time.", "Exports rising from 7%.", "Cash conversion as the plant settles."],
+        charts: electricalTransformersCharts['Yash Highvoltage'],
     },
     {
         company: 'Quality Power El',
@@ -219,6 +274,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'Very high', text: "HVDC reactors, STATCOMs and high-voltage instrument transformers need specialist design and long approval by global equipment makers. A new plant needs about 60 customer audits before it can run fully." },
         moat: "Approvals with the world's largest grid-equipment makers and niche technology. Its advantage is spread across several partly owned businesses.",
+        inShort: ["**A group of specialist grid-equipment makers** in India and Turkey: reactors and HVDC coils, instrument transformers, power-quality systems and storage converters.", "**Good:** approved by Hitachi, Siemens and GE Vernova, with a ₹1,945cr order book. **Bad:** partners own 49% of its two largest businesses, and a new plant needs about 60 customer audits.", "**Verdict: follow.** Good technology, but the price needs more growth than I expect."],
+        salesDrivers: ["**HVDC and grid-stability projects** in India and Europe, which need reactors, coils and STATCOMs.", "**Global equipment makers outsourcing parts**: Hitachi, Siemens and GE Vernova buy from it; it aims to complement them, not compete.", "**The new Sangli plant**, whose output depends on passing about 60 customer audits over six months.", "**Storage and acquisitions**: a 4 GW storage-converter plant in Turkey and a proposed insulator-maker purchase."],
+        inputs: "**Aluminium and copper** wire for coils and reactors, **steel**, insulation, oil and electronic parts for converters. Materials were 60% of sales in FY26.",
+        costEffect: "**Depends on the business.** Mehru passes copper and oil on within about eight weeks; the parent feels aluminium price changes about six months later because of its long winding cycle. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 6 points. **What happened:** aluminium rose by about three-fifths over the chart period, yet its margin rose from about 8% to 18% as the acquisitions changed its mix. Q1's cost rise will show in Q2 and Q3.",
+        competitors: [{ name: 'Hitachi Energy, Siemens Energy, GE Vernova', note: 'Also its customers; they make some of the same parts themselves.' }, { name: 'Trench, CG Power', note: 'Rivals in reactors and instrument transformers.' }, { name: 'Chinese HVDC suppliers', note: 'Four Chinese firms with Indian plants may bid for HVDC work.' }],
+        position: "**One of few Indian makers of HVDC reactors and power-quality systems**, selling to 200+ customers in 100+ countries.",
+        money: "About ₹208cr of net cash (group debt about ₹23cr), falling as it funds expansion itself. Promoters hold **74%**. Partners own 49% of Endoks and Mehru.",
+        watch: ["Sangli audits and the Q3 margin dip.", "The insulator acquisition.", "Hyperinflation accounting in Turkey."],
+        charts: electricalTransformersCharts['Quality Power El'],
     },
     {
         company: 'Rishabh Instruments',
@@ -241,6 +305,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'Medium', text: "Precision instruments need design and certification (UL for the US), but many competitors exist. Die-casting is a commodity business." },
         moat: "Its own designs, a broad range and 60–70% gross margins on core products. None in die-casting.",
+        inShort: ["**Makes electrical measuring instruments**, current transformers and solar inverters in India and Poland, plus a loss-making die-casting business.", "**Good:** instrumentation grows 20–25% a year at about a 25% margin, and the group has net cash. **Bad:** die-casting (22–31% of sales) still loses money.", "**Verdict: pass.** A good business inside a weak one."],
+        salesDrivers: ["**Grid and industrial instrumentation** in India and Europe, including grid-control equipment for German grid upgrades.", "**Solar inverters**: EPC contractors turning away from Chinese kits.", "**The US**: about ₹30cr of sales, targeted at ₹100cr.", "**Die-casting shrinking on purpose** as it exits unprofitable contracts, which cuts sales but helps margin."],
+        inputs: "**Electronic parts and circuit boards**, copper and steel for current transformers, and **aluminium** for die-casting. Materials were 38% of sales and staff 30% in FY26.",
+        costEffect: "**Mostly insulated.** Core products earn 60–70% gross margins, so a metal spike barely moves them; die-casting is the exposed part. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 4 points. **What happened:** circuit-board prices were flat over the chart period, and the margin rose from about 10% to 17% as die-casting losses shrank.",
+        competitors: [{ name: 'Secure Meters, Schneider, Siemens', note: 'Rivals in panel meters and power-quality analysers.' }, { name: 'Fluke, Megger', note: 'Global names in test and measurement tools.' }, { name: 'Chinese inverter makers', note: 'The main competition in solar inverters.' }],
+        position: "**A niche instrument maker with its own designs**, selling in India, Europe, the US and China; small in each market.",
+        money: "Net cash about ₹121cr at FY26 (Screener); the company puts it at ₹161cr in June 2026. Promoters hold **69%**.",
+        watch: ["Die-casting breakeven by the end of FY27.", "Any sale or demerger of die-casting.", "US growth."],
+        charts: electricalTransformersCharts['Rishabh Instruments'],
     },
     // ── Medium-voltage equipment ──────────────────────────────────────────────
     {
@@ -260,6 +333,15 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'High', text: "Switchgear and protection systems need group technology and software. It does not play in high-voltage transmission." },
         moat: "Schneider's brand, technology and software make switching costly for customers. Weak contract terms (only 20–25% reprice) cap margins.",
+        inShort: ["**Schneider Electric's listed Indian unit**, making distribution transformers, medium-voltage switchgear, relays and grid software up to 33 kV.", "**Good:** record orders, with data centres and chip plants over a fifth of the backlog. **Bad:** only 20–25% of contracts pass on metal prices, and Q1's margin was 5%.", "**Verdict: avoid.** The price needs close to 40% growth a year."],
+        salesDrivers: ["**Data centres and chip plants**: India's data-centre capacity is expected to rise from about 1.6 GW to 8 GW by 2030.", "**Distribution upgrades** under RDSS (about ₹3 lakh crore), through state tenders.", "**Railways and industry**: metros, Vande Bharat trains, cement, metals and mining.", "**Exports**: about 10–12% of revenue."],
+        inputs: "**Copper, aluminium and steel** for transformers and switchgear, electronic parts for relays, and labour. Materials were 63% of sales in FY26.",
+        costEffect: "**Poorly protected.** Only 20–25% of contracts carry price variation; state tenders often do not allow it, and it raised prices later than rivals. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 6 points. **What happened:** copper rose by about half over the chart period and its margin fell from about 10% to 5% in Q1 FY27 on fixed-price orders booked before December.",
+        competitors: [{ name: 'Siemens, ABB India, Hitachi Energy', note: 'Multinationals in medium-voltage switchgear and automation.' }, { name: 'CG Power', note: 'Indian rival in switchgear and transformers.' }, { name: 'Local distribution-transformer makers', note: 'Compete on price in state tenders.' }],
+        position: "**A leading medium-voltage supplier in India** backed by group technology; it does not make equipment above 33 kV.",
+        money: "Net debt about ₹275cr (Screener). It plans ₹500cr of capex over three years. The Schneider group holds **75%**.",
+        watch: ["Margin recovery as old fixed-price orders run off.", "The share of new contracts with price variation.", "Data-centre order flow."],
+        charts: electricalTransformersCharts['Schneider Ele. Infra'],
     },
 ];
 
