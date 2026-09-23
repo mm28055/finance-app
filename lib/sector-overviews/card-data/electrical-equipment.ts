@@ -107,7 +107,33 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 359.0,
                 194.0
             ]
-        }
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "33.1x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "18.6x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹683cr net cash",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "76%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "22%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     },
     "TD Power Systems": {
         "costSplit": {
@@ -214,7 +240,33 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 -16.0,
                 18.0
             ]
-        }
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "88.6x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "63.2x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹181cr net cash",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "36%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "18%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     },
     "Triveni Turbine": {
         "costSplit": {
@@ -321,7 +373,33 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 144.0,
                 39.0
             ]
-        }
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "50.8x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "40.0x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹546cr net cash",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "75%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "21%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     },
     "GE Power": {
         "costSplit": {
@@ -424,7 +502,33 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 376.0,
                 467.0
             ]
-        }
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "12.3x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "13.6x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹412cr net cash",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "n/m",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "21%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     },
     "Apar Inds.": {
         "costSplit": {
@@ -531,7 +635,33 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 781.0,
                 231.0
             ]
-        }
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "63.7x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "35.5x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹224cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "42%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "8%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     },
     "Genus Power": {
         "costSplit": {
@@ -638,7 +768,33 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 -556.0,
                 -516.0
             ]
-        }
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "14.5x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "11.4x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹1,580cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "-41%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "20%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     },
     "Salzer Electronics": {
         "costSplit": {
@@ -745,7 +901,33 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 -80.0,
                 -13.0
             ]
-        }
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "22.4x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "11.0x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹525cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "12%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "8%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     },
     "RMC Switchgears": {
         "costSplit": {
@@ -828,7 +1010,33 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 -5.010000000000002,
                 -34.15
             ]
-        }
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "11.8x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "11.2x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹92cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "6%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "12%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     },
     "Inox Wind": {
         "costSplit": {
@@ -935,7 +1143,33 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 -482.0,
                 -1247.0
             ]
-        }
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "39.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "16.7x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹975cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "-178%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "20%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     },
     "KP Green Engg.": {
         "costSplit": {
@@ -1020,7 +1254,33 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 -165.0,
                 -211.0
             ]
-        }
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "11.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "7.5x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹340cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "34%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "20%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     },
     "Exicom Tele-Sys.": {
         "costSplit": {
@@ -1127,7 +1387,33 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 -714.0,
                 -335.0
             ]
-        }
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "Loss-making"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "n/m",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹649cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "-182%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "-9%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     },
     "Servotech Renew": {
         "costSplit": {
@@ -1234,7 +1520,33 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 -73.0,
                 -105.0
             ]
-        }
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "42.6x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "22.5x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹140cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "-42%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "10%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     },
     "RIR Power Electr": {
         "costSplit": {
@@ -1288,6 +1600,32 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 -49.68,
                 -48.629999999999995
             ]
-        }
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "214.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "149.1x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹6cr net cash",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "-45%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "11%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     }
 };

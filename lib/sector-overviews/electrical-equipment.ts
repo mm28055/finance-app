@@ -94,6 +94,7 @@ export const electricalEquipment: SectorOverview = {
         },
         {
             key: 'roce',
+            more: true,
             label: 'Return on capital by year',
             unit: '%',
             periods: FY,
@@ -118,6 +119,7 @@ export const electricalEquipment: SectorOverview = {
         },
         {
             key: 'ccc',
+            more: true,
             label: 'Cash conversion cycle by year',
             unit: 'days',
             periods: FY,
@@ -234,6 +236,7 @@ export const electricalEquipment: SectorOverview = {
         },
         {
             key: 'capex',
+            more: true,
             label: 'Capex ÷ sales',
             unit: '%',
             periods: [...FY, '5 yrs'],
@@ -258,6 +261,7 @@ export const electricalEquipment: SectorOverview = {
         },
         {
             key: 'turnover',
+            more: true,
             label: 'Sales per ₹1 of fixed assets',
             unit: 'x',
             periods: FY,
@@ -286,6 +290,7 @@ export const electricalEquipment: SectorOverview = {
         },
         {
             key: 'orderCover',
+            more: true,
             label: 'Order book ÷ yearly sales',
             unit: 'x',
             periods: ['Latest'],
@@ -363,7 +368,7 @@ export const electricalEquipment: SectorOverview = {
         {
             heading: '2. Charts: margins, growth, returns, cash cycle and cash conversion',
             body: [
-                "Ten views of the 13 companies, grouped by business. All figures are filed (Screener), consolidated except RIR's quarters (standalone). KP Green reports half-yearly, so its figures sit in two columns only. Hover over a starred name for its caveat. **Start with cash conversion and free cash flow**: they separate this sector more clearly than any margin does. Net debt ÷ operating profit shows who is borrowing to grow; capex ÷ sales and sales per rupee of fixed assets show how capital-hungry each business is.",
+                "The five views that matter most, with five more behind **More measures**. Companies are grouped by business. All figures are filed (Screener), consolidated except RIR's quarters (standalone). KP Green reports half-yearly, so its figures sit in two columns only. Hover over a starred name for its caveat. **Start with cash conversion and free cash flow**: they separate this sector more clearly than any margin does. Net debt ÷ operating profit shows who is borrowing to grow; capex ÷ sales and sales per rupee of fixed assets show how capital-hungry each business is.",
             ],
             embed: 'metrics',
         },
@@ -447,10 +452,6 @@ export const electricalEquipment: SectorOverview = {
                     label: 'Squeezed: fixed-price and standard products',
                     text: "**Genus** cut its FY27 margin guide from 20–21% to 18% because its contracts have no pass-through. **Salzer's** switchgear margin fell from about 12% to 7.5–8%, and it cut its full-year guide to 8–8.5%. **RMC** made a loss in Q3 FY26 when solar input costs overran old orders.",
                 },
-                {
-                    label: 'Cash tells a different story from margins',
-                    text: "Five-year conversion of operating profit into cash: **Elecon 76%, Triveni 75%, Apar 42%, TD Power 36%, KP Green 34%, Salzer 12%.** Genus (−41%), Inox Wind (−178%), Exicom, Servotech and RIR consumed cash. **TD Power's 36% is the one to watch**: its receivables and stock grow with 70% sales growth, and it is raising equity.",
-                },
             ],
             tables: [
                 {
@@ -483,19 +484,19 @@ export const electricalEquipment: SectorOverview = {
             points: [
                 {
                     label: 'The global shortage names',
-                    text: "**TD Power** guides ₹2,600cr for FY27 (+40%), has capacity for about ₹3,200cr in FY28, and plans ₹4,000cr+ for FY29–30, plus possible entry into generators above 100 MW. It is raising equity. **Triveni** expects growth back-ended into H2, with US product orders converting later this year and a CO₂ energy-storage pilot with NTPC. **Apar** is raising equity and gave no guidance; it has ₹10,190cr of conductor orders, 57% export.",
+                    text: "**TD Power** is adding capacity and entering larger generators; **Triveni** expects growth weighted to the second half; **Apar** is raising equity and giving no guidance while its export conductor orders grow.",
                 },
                 {
                     label: 'The domestic machine makers',
-                    text: "**Elecon** guides low double-digit growth for FY27 but keeps a ₹5,000cr revenue target for FY30 (about 21% a year from ₹2,366cr), with ₹400cr of capex over FY26–FY28 and ₹700cr net cash. **GE Power India** is a services business now, booking about ₹734cr of orders a year.",
+                    text: "**Elecon** is cautious for FY27 but keeps its FY30 target and funds expansion from its own cash. **GE Power India** is now a steady services business.",
                 },
                 {
                     label: 'The capital-hungry growers',
-                    text: "**Genus** guides ₹6,000–6,500cr for FY27 (+27–37%) at an 18% margin, with net debt peaking near ₹2,000cr and positive operating cash from FY28. **Inox Wind** guides +75% revenue, having missed guidance repeatedly, and is raising equity. **KP Green** targets 40–50% growth a year to 2030, with its plants at 30–34% utilisation.",
+                    text: "**Genus**, **Inox Wind** and **KP Green** all guide to fast growth, and all need borrowing or new shares to fund it.",
                 },
                 {
                     label: 'My outlook',
-                    text: "The export shortage in power equipment should last at least two to three more years, supporting TD Power and Triveni. India's grid spending (transmission, meters, wind) is large and policy-backed but slow-paying. **I expect the cash-generative machine makers to compound; the cash-hungry grid and wind names to grow revenue faster than they grow value.**",
+                    text: "The export shortage in power equipment should last two to three more years. India's grid spending is large but slow-paying. **I expect the cash-generative machine makers to compound; the cash-hungry grid and wind names to grow revenue faster than they grow value.**",
                 },
             ],
             tables: [
@@ -596,23 +597,23 @@ export const electricalEquipment: SectorOverview = {
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**Elecon, Triveni and GE Power are cheaper than their P/E suggests**, because they hold net cash (₹680cr, ₹550cr and ₹410cr). **Salzer and RMC are dearer than they look**: their P/Es of 22x and 12x sit on net debt of 3–4 years of operating profit. **Genus and Inox Wind** carry ₹1,580cr and ₹980cr of net debt, which the P/E ignores.",
+                    text: "**Elecon, Triveni and GE Power are cheaper than their P/E suggests**, because they hold net cash. **Salzer and RMC are dearer than they look**: their low P/Es sit on 3–4 years of operating profit in debt. **Genus and Inox Wind** carry debt that the P/E ignores.",
                 },
                 {
                     label: 'Reasonable',
-                    text: "**Elecon** (33x earnings, **19x EV/EBITDA**; needs ~19%, I expect ~17%; net cash and 76% cash conversion). **GE Power India** (12x, 14x EV/EBITDA; needs ~8%, I expect ~8%; cash-rich but shrinking and parent-controlled).",
+                    text: "**Elecon** (net cash, strong cash conversion, price close to my growth estimate) and **GE Power India** (cash-rich but shrinking and parent-controlled).",
                 },
                 {
                     label: 'Cheap on earnings, not on cash',
-                    text: "**Genus** (14.5x, 11x EV/EBITDA) and **KP Green** (11x, 7.5x) need little growth, but neither has produced free cash over five years and both are borrowing to grow.",
+                    text: "**Genus** and **KP Green** need little growth, but neither has produced free cash over five years and both are borrowing to grow.",
                 },
                 {
                     label: 'Full',
-                    text: "**TD Power** (89x, 63x EV/EBITDA; needs ~31%, I expect ~28%), **Triveni** (51x, 40x; needs ~24%, I expect ~16%), **Apar** (64x, 36x; needs ~27%, I expect ~18%).",
+                    text: "**TD Power, Triveni and Apar**: good businesses whose prices need more growth than I expect.",
                 },
                 {
                     label: 'Stretched or speculative',
-                    text: "**Inox Wind** (39x on a cash-burning business), **Servotech** (43x), **RIR** (214x, 149x EV/EBITDA on a plant not yet running). **Exicom** is loss-making. **RMC** looks cheap at 12x, but revenue just fell 56% and it carries debt.",
+                    text: "**Inox Wind** (burning cash), **Servotech**, **RIR** (priced on a plant not yet running) and **Exicom** (loss-making). **RMC** looks cheap, but revenue just fell 56% and it carries debt.",
                 },
             ],
             tables: [

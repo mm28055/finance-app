@@ -223,6 +223,8 @@ function ProfitVsCash({ data }: { data: NonNullable<ProfileCharts['profitVsCash'
 }
 
 function ProfileCard({ p, verdict }: { p: BusinessProfile; verdict?: CompanyVerdict }) {
+    const stats = p.charts?.stats;
+    const hasCharts = !!(p.charts && (p.charts.costSplit || p.charts.marginVsInput || p.charts.profitVsCash));
     return (
         <article
             id={anchorId(p.company)}
@@ -240,63 +242,65 @@ function ProfileCard({ p, verdict }: { p: BusinessProfile; verdict?: CompanyVerd
                 </div>
             </div>
 
-            <div className="grid gap-x-6 gap-y-3 md:grid-cols-2 mt-3">
-                <div className="space-y-3">
-                    <section>
-                        <Label>What it sells</Label>
-                        <ul className="space-y-1.5">
-                            {p.products.map(pr => (
-                                <li key={pr.name} className="text-[12px] text-gray-600 leading-relaxed">
-                                    <span className="font-semibold text-gray-800">{pr.name}.</span> <RichText text={pr.text} />
-                                </li>
-                            ))}
-                        </ul>
-                    </section>
-                    <section>
-                        <Label>Who buys, and how</Label>
-                        <ul className="space-y-1">
-                            {p.customers.map((c, i) => (
-                                <li key={i} className="flex gap-2 text-[12px] text-gray-600 leading-relaxed">
-                                    <span className="mt-[7px] w-1 h-1 rounded-full bg-[#A5C4E2] flex-shrink-0" />
-                                    <span><RichText text={c} /></span>
-                                </li>
-                            ))}
-                        </ul>
-                    </section>
-                </div>
-                <div className="space-y-3">
-                    <section>
-                        <Label>Where the money comes from</Label>
-                        <p className="text-[12px] text-gray-600 leading-relaxed"><RichText text={p.revenueText} /></p>
-                        {p.mixes?.map(m => <MixBar key={m.caption} {...m} />)}
-                    </section>
-                    <section>
-                        <Label>How hard it is to make</Label>
-                        <p className="text-[12px] text-gray-600 leading-relaxed">
-                            <span className={`inline-block mr-1.5 px-1.5 py-0.5 rounded text-[9.5px] font-semibold uppercase tracking-wide align-[1px] ${LEVEL_STYLE[p.difficulty.level]}`}>
-                                {p.difficulty.level}
-                            </span>
-                            <RichText text={p.difficulty.text} />
-                        </p>
-                    </section>
-                    <section>
-                        <Label>Why customers stay</Label>
-                        <p className="text-[12px] text-gray-600 leading-relaxed"><RichText text={p.moat} /></p>
-                    </section>
-                </div>
-            </div>
-
-            {p.charts && (p.charts.costSplit || p.charts.marginVsInput || p.charts.profitVsCash) && (
-                <div className="grid gap-2 md:grid-cols-3 mt-3">
-                    {p.charts.costSplit && <CostSplit data={p.charts.costSplit} />}
-                    {p.charts.marginVsInput && <MarginVsInput data={p.charts.marginVsInput} />}
-                    {p.charts.profitVsCash && <ProfitVsCash data={p.charts.profitVsCash} />}
+            {/* Layer 1: the short version */}
+            {p.inShort && (
+                <div className="mt-2.5 rounded-md bg-[#F3F7FC] border border-[#DCE8F6] px-3 py-2">
+                    <div className="text-[10px] font-semibold uppercase tracking-wide text-[#4A7AAF] mb-1">In short</div>
+                    <Bullets items={p.inShort} />
                 </div>
             )}
 
-            {(p.salesDrivers || p.inputs || p.costEffect || p.competitors || p.position || p.money || p.watch) && (
-                <div className="grid gap-x-6 gap-y-3 md:grid-cols-2 mt-3">
+            {stats && stats.length > 0 && (
+                <div className="mt-2 flex flex-wrap gap-1.5" aria-label="Key numbers">
+                    {stats.map(s => (
+                        <div key={s.label} title={s.note} className="border border-gray-200 rounded-md px-2 py-1 bg-white min-w-[92px]">
+                            <div className="text-[9.5px] text-gray-400 uppercase tracking-wide leading-tight">{s.label}</div>
+                            <div className="text-[13px] font-semibold text-gray-800 tabular-nums leading-snug">{s.value}</div>
+                        </div>
+                    ))}
+                    {p.charts?.statsAsOf && <div className="self-end text-[9.5px] text-gray-400 pb-1">as of {p.charts.statsAsOf}</div>}
+                </div>
+            )}
+
+            {/* Layer 2: what it sells, where the money comes from, and the charts */}
+            <div className="grid gap-x-6 gap-y-3 md:grid-cols-2 mt-3">
+                <section>
+                    <Label>What it sells</Label>
+                    <ul className="space-y-1.5">
+                        {p.products.map(pr => (
+                            <li key={pr.name} className="text-[12px] text-gray-600 leading-relaxed">
+                                <span className="font-semibold text-gray-800">{pr.name}.</span> <RichText text={pr.text} />
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+                <section>
+                    <Label>Where the money comes from</Label>
+                    <p className="text-[12px] text-gray-600 leading-relaxed"><RichText text={p.revenueText} /></p>
+                    {p.mixes?.map(m => <MixBar key={m.caption} {...m} />)}
+                </section>
+            </div>
+
+            {hasCharts && (
+                <div className="grid gap-2 md:grid-cols-3 mt-3">
+                    {p.charts!.costSplit && <CostSplit data={p.charts!.costSplit} />}
+                    {p.charts!.marginVsInput && <MarginVsInput data={p.charts!.marginVsInput} />}
+                    {p.charts!.profitVsCash && <ProfitVsCash data={p.charts!.profitVsCash} />}
+                </div>
+            )}
+
+            {/* Layer 3: everything else, folded away */}
+            <details className="mt-3 group">
+                <summary className="cursor-pointer select-none text-[11px] font-semibold text-[#4A7AAF] hover:underline list-none flex items-center gap-1">
+                    <span className="inline-block transition-transform group-open:rotate-90">▸</span>
+                    More detail: customers, sales drivers, costs, competitors, ownership
+                </summary>
+                <div className="grid gap-x-6 gap-y-3 md:grid-cols-2 mt-2.5">
                     <div className="space-y-3">
+                        <section>
+                            <Label>Who buys, and how</Label>
+                            <Bullets items={p.customers} />
+                        </section>
                         {p.salesDrivers && (
                             <section>
                                 <Label>What drives its sales</Label>
@@ -315,8 +319,21 @@ function ProfileCard({ p, verdict }: { p: BusinessProfile; verdict?: CompanyVerd
                                 <p className="text-[12px] text-gray-600 leading-relaxed"><RichText text={p.costEffect} /></p>
                             </section>
                         )}
+                        <section>
+                            <Label>How hard it is to make</Label>
+                            <p className="text-[12px] text-gray-600 leading-relaxed">
+                                <span className={`inline-block mr-1.5 px-1.5 py-0.5 rounded text-[9.5px] font-semibold uppercase tracking-wide align-[1px] ${LEVEL_STYLE[p.difficulty.level]}`}>
+                                    {p.difficulty.level}
+                                </span>
+                                <RichText text={p.difficulty.text} />
+                            </p>
+                        </section>
                     </div>
                     <div className="space-y-3">
+                        <section>
+                            <Label>Why customers stay</Label>
+                            <p className="text-[12px] text-gray-600 leading-relaxed"><RichText text={p.moat} /></p>
+                        </section>
                         {p.competitors && (
                             <section>
                                 <Label>Competitors</Label>
@@ -349,7 +366,7 @@ function ProfileCard({ p, verdict }: { p: BusinessProfile; verdict?: CompanyVerd
                         )}
                     </div>
                 </div>
-            )}
+            </details>
         </article>
     );
 }

@@ -209,6 +209,8 @@ export function MetricsGrid({ series, verdicts, labels }: {
     labels: Map<string, string>;
 }) {
     const [active, setActive] = React.useState(0);
+    const [showMore, setShowMore] = React.useState(false);
+    const moreCount = series.filter(m => m.more).length;
     const [hover, setHover] = React.useState<Hover | null>(null);
     const wrapRef = React.useRef<HTMLDivElement>(null);
     const s = series[Math.min(active, series.length - 1)];
@@ -272,7 +274,7 @@ export function MetricsGrid({ series, verdicts, labels }: {
         <div className="mt-3">
             {/* One row of metric switches above the grid */}
             <div className="flex flex-wrap gap-1.5 mb-2.5" role="tablist">
-                {series.map((m, i) => (
+                {series.map((m, i) => (m.more && !showMore) ? null : (
                     <button
                         key={m.key}
                         role="tab"
@@ -280,11 +282,27 @@ export function MetricsGrid({ series, verdicts, labels }: {
                         onClick={() => { setActive(i); setHover(null); }}
                         className={`text-[10.5px] px-2.5 py-1 rounded-md border transition-colors ${i === active
                             ? 'bg-[#4A7AAF] border-[#4A7AAF] text-white font-semibold'
-                            : 'bg-white border-gray-200 text-gray-600 hover:border-[#A5C4E2]'}`}
+                            : m.more
+                                ? 'bg-[#F8FAFC] border-dashed border-gray-300 text-gray-600 hover:border-[#A5C4E2]'
+                                : 'bg-white border-gray-200 text-gray-600 hover:border-[#A5C4E2]'}`}
                     >
                         {m.label}
                     </button>
                 ))}
+                {moreCount > 0 && (
+                    <button
+                        type="button"
+                        aria-expanded={showMore}
+                        onClick={() => {
+                            if (showMore && series[active]?.more) setActive(series.findIndex(x => !x.more));
+                            setShowMore(v => !v);
+                            setHover(null);
+                        }}
+                        className="text-[10.5px] px-2.5 py-1 rounded-md text-[#4A7AAF] font-semibold hover:underline"
+                    >
+                        {showMore ? 'Fewer measures' : `More measures (${moreCount})`}
+                    </button>
+                )}
             </div>
 
             <div ref={wrapRef} className="relative">

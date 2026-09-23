@@ -145,6 +145,8 @@ export interface MetricSeries {
     scale: 'sequential' | 'diverging';
     /** Shown beside the legend so a reader knows which direction is good. */
     lowerIsBetter?: boolean;
+    /** Hide this tab behind the "More measures" button. */
+    more?: boolean;
     /** Diverging scales: colour negatives blue and positives red (e.g. net debt, where below zero means net cash). */
     invert?: boolean;
     /** Diverging scales: words at the two ends of the legend, red end first. Defaults to Shrinking / Growing. */
@@ -203,6 +205,8 @@ export interface BusinessProfile {
     customers: string[];
     difficulty: { level: 'Very high' | 'High' | 'Medium' | 'Low'; text: string };
     moat: string;
+    /** Three short lines shown first: what it does, what makes it good or bad, and the verdict with the price. */
+    inShort?: string[];
     /** What its sales depend on: demand drivers, volume vs price, order book, capacity, seasonality, concentration, policy. */
     salesDrivers?: string[];
     /** The main raw materials and bought-in parts, with their share of cost where known. */
@@ -223,6 +227,10 @@ export interface BusinessProfile {
 
 /** Figures for the three charts on a company card; all from filings (Screener) or official price indices. */
 export interface ProfileCharts {
+    /** One row of key numbers at the top of the card (P/E, EV/EBITDA, net debt, cash conversion, margin). */
+    stats?: { label: string; value: string; note?: string }[];
+    /** Date the stats were taken, e.g. "23 Sep 2026". */
+    statsAsOf?: string;
     /** Where each ₹100 of sales goes in the latest year. */
     costSplit?: { year: string; parts: MixPart[]; note?: string };
     /** Quarterly operating margin against the price of the main input (index, first period = 100). */
