@@ -30,7 +30,7 @@ const shortName = (name: string) => {
     const base = name.replace(/\s*\(.*\)$/, '').trim();
     const short = base.replace(SUFFIXES, '').trim();
     // "State Bank of India" must not become "State Bank of", nor "Pine Labs" a bare "Pine".
-    return /\bof$/i.test(short) || /^\S{1,4}$/.test(short) ? base : short;
+    return /(\bof|\band|&)$/i.test(short) || /^\S{1,4}$/.test(short) ? base : short;
 };
 
 /**
