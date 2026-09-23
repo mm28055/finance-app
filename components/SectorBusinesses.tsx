@@ -225,7 +225,7 @@ function ProfileCard({ p, verdict }: { p: BusinessProfile; verdict?: CompanyVerd
     return (
         <article
             id={anchorId(p.company)}
-            className="border border-gray-200 rounded-lg bg-white px-4 py-3 scroll-mt-4"
+            className="border border-gray-200 rounded-lg bg-white px-4 py-3 scroll-mt-4 min-w-0"
             style={verdict ? { borderLeftWidth: 3, borderLeftColor: STANCE_CONFIG[verdict.stance].hex } : undefined}
         >
             <div className="flex flex-wrap items-start justify-between gap-2">
@@ -260,7 +260,7 @@ function ProfileCard({ p, verdict }: { p: BusinessProfile; verdict?: CompanyVerd
             )}
 
             {/* Layer 2: what it sells, where the money comes from, and the charts */}
-            <div className="grid gap-x-6 gap-y-3 md:grid-cols-2 mt-3">
+            <div className="space-y-3 mt-3">
                 <section>
                     <Label>What it sells</Label>
                     <ul className="space-y-1.5">
@@ -283,7 +283,7 @@ function ProfileCard({ p, verdict }: { p: BusinessProfile; verdict?: CompanyVerd
             </div>
 
             {hasCharts && (
-                <div className="grid gap-2 md:grid-cols-3 mt-3">
+                <div className="grid gap-2 sm:grid-cols-2 mt-3">
                     {p.charts!.costSplit && <CostSplit data={p.charts!.costSplit} />}
                     {p.charts!.marginVsInput && <MarginVsInput data={p.charts!.marginVsInput} />}
                     {p.charts!.profitVsCash && <ProfitVsCash data={p.charts!.profitVsCash} />}
@@ -296,7 +296,7 @@ function ProfileCard({ p, verdict }: { p: BusinessProfile; verdict?: CompanyVerd
                     <span className="inline-block transition-transform group-open:rotate-90">▸</span>
                     More detail: customers, sales drivers, costs, competitors, ownership
                 </summary>
-                <div className="grid gap-x-6 gap-y-3 md:grid-cols-2 mt-2.5">
+                <div className="space-y-3 mt-2.5">
                     <div className="space-y-3">
                         <section>
                             <Label>Who buys, and how</Label>
@@ -412,7 +412,7 @@ export function BusinessProfiles({ profiles, verdicts }: {
             {groups.map(g => (
                 <div key={g.segment}>
                     <div className="text-[10.5px] font-semibold uppercase tracking-wide text-[#6B9FCC] mb-2">{g.segment}</div>
-                    <div className="space-y-3">
+                    <div className="grid gap-3 lg:grid-cols-2 items-start">
                         {g.rows.map(p => <ProfileCard key={p.company} p={p} verdict={verdictOf.get(p.company)} />)}
                     </div>
                 </div>
