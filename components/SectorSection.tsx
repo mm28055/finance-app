@@ -7,7 +7,7 @@ import { useSectorChat } from '@/context/SectorChatContext';
 import { useNotes } from '@/context/NotesContext';
 import { SectorSnapshot } from '@/components/SectorSnapshot';
 import { SectorOverview } from '@/components/SectorOverview';
-import { getSectorOverview, getSectorOverviewDraft } from '@/lib/sector-overviews';
+import { getSectorOverview } from '@/lib/sector-overviews';
 
 import { EnrichedCompany } from './SectorList';
 
@@ -28,9 +28,6 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
 
     // Only sectors with a written note in lib/sector-overviews get the tab.
     const overview = getSectorOverview(name);
-    // A rewrite under review sits beside the published note behind a switch.
-    const draft = getSectorOverviewDraft(name);
-    const [showDraft, setShowDraft] = useState(false);
 
     const togglePanel = (next: 'snapshot' | 'overview') => (e: React.MouseEvent) => {
         e.stopPropagation();
@@ -121,31 +118,7 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
 
             {/* Sector Overview */}
             {isOpen && panel === 'overview' && overview && (
-                <>
-                    {draft && (
-                        <div className="ml-5 mb-2 flex items-center gap-1.5 text-[11px]" role="tablist">
-                            <span className="text-gray-400 mr-1">Version:</span>
-                            {[{ key: false, label: 'Original' }, { key: true, label: 'New layout (draft)' }].map(o => (
-                                <button
-                                    key={o.label}
-                                    role="tab"
-                                    aria-selected={showDraft === o.key}
-                                    onClick={() => setShowDraft(o.key)}
-                                    className={`px-2.5 py-1 rounded-md border transition-colors ${showDraft === o.key
-                                        ? 'bg-[#4A7AAF] border-[#4A7AAF] text-white font-semibold'
-                                        : 'bg-white border-gray-200 text-gray-600 hover:border-[#A5C4E2]'}`}
-                                >
-                                    {o.label}
-                                </button>
-                            ))}
-                        </div>
-                    )}
-                    <SectorOverview
-                        key={showDraft && draft ? 'draft' : 'original'}
-                        overview={showDraft && draft ? draft : overview}
-                        companies={companies}
-                    />
-                </>
+                <SectorOverview overview={overview} companies={companies} />
             )}
 
             {/* Company List */}

@@ -21,7 +21,6 @@ import {
     SnapshotsBlock,
     MoatTable,
 } from './SectorOverviewBlocks';
-import { ValueChainBlock, CashBarsBlock, GrowthPriceBlock } from './SectorOverviewVisuals';
 
 const SUFFIXES = /\s+(Limited|Ltd|Laboratories|Lifesciences|Life Sciences|Industries|Pharmaceutic|Biosciences|Specialty|Biotech|Drugs|Pharmalabs|Pharmova|Pharma|Captab|Ingrevia|Labs|Healthcare|Research|Remedies|India)\.?$/i;
 
@@ -312,24 +311,6 @@ export function SectorOverview({ overview, companies }: {
                     ))}
                 </div>
 
-                {overview.closing.lists && overview.closing.lists.length > 0 && (
-                    <div className="grid gap-4 md:grid-cols-3 mt-3">
-                        {overview.closing.lists.map(l => (
-                            <div key={l.heading}>
-                                <div className="text-[10px] font-semibold uppercase tracking-wide text-gray-600 mb-1.5">{l.heading}</div>
-                                <ul className="space-y-1.5">
-                                    {l.items.map((it, i) => (
-                                        <li key={i} className="flex gap-2">
-                                            <span className="mt-[7px] w-1 h-1 rounded-full bg-[#A5C4E2] flex-shrink-0" />
-                                            <p className="text-[12px] text-gray-600 leading-relaxed"><RichText text={it} /></p>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
-                    </div>
-                )}
-
                 <div className="mt-4 border-l-2 border-[#6B9FCC] pl-3.5 py-1">
                     <div className="text-[9px] font-semibold text-[#6B9FCC] uppercase tracking-wider mb-1">
                         Bottom line
@@ -373,35 +354,17 @@ export function SectorOverview({ overview, companies }: {
         </>
     );
 
-    // When a section shows the margin grid on its own, the charts tab set leaves
-    // it out so the same grid is not drawn twice.
-    const embedsOf = (sec: typeof overview.sections[number]) =>
-        sec.embed === undefined ? [] : Array.isArray(sec.embed) ? sec.embed : [sec.embed];
-    const marginGridElsewhere = overview.sections.some(s => embedsOf(s).includes('margingrid'));
-    const opmSeries = (overview.metrics ?? []).filter(m => m.key === 'opm');
-    const tabSeries = (overview.metrics ?? []).filter(m => !(marginGridElsewhere && m.key === 'opm'));
-
     const renderEmbed = (sec: typeof overview.sections[number]) => (
         <>
-            {embedsOf(sec).map(e => (
-                <React.Fragment key={e}>
-                    {e === 'ranking' && <RankingBlock verdicts={overview.verdicts} takeaways={overview.takeaways} byName={byName} headline={overview.headline} />}
-                    {e === 'metrics' && tabSeries.length > 0 && (
-                        <MetricsGrid series={tabSeries} verdicts={overview.verdicts} labels={labels} />
-                    )}
-                    {e === 'margingrid' && opmSeries.length > 0 && (
-                        <MetricsGrid series={opmSeries} verdicts={overview.verdicts} labels={labels} />
-                    )}
-                    {e === 'snapshots' && <SnapshotsBlock verdicts={overview.verdicts} byName={byName} />}
-                    {e === 'moat' && overview.moat && (
-                        <MoatTable sources={overview.moat.sources} rows={overview.moat.rows} verdicts={overview.verdicts} labels={labels} compact={overview.moatCompact} />
-                    )}
-                    {e === 'scatter' && <div className="mt-3 max-w-3xl flex">{scatterCard}</div>}
-                    {e === 'valuechain' && overview.valueChain && <ValueChainBlock stages={overview.valueChain} labels={labels} />}
-                    {e === 'cashbars' && overview.cashBars && <CashBarsBlock bars={overview.cashBars} labels={labels} period="FY22–FY26" />}
-                    {e === 'growthprice' && overview.growthVsPrice && <GrowthPriceBlock rows={overview.growthVsPrice} labels={labels} />}
-                </React.Fragment>
-            ))}
+            {sec.embed === 'ranking' && <RankingBlock verdicts={overview.verdicts} takeaways={overview.takeaways} byName={byName} />}
+            {sec.embed === 'metrics' && overview.metrics && overview.metrics.length > 0 && (
+                <MetricsGrid series={overview.metrics} verdicts={overview.verdicts} labels={labels} />
+            )}
+            {sec.embed === 'snapshots' && <SnapshotsBlock verdicts={overview.verdicts} byName={byName} />}
+            {sec.embed === 'moat' && overview.moat && (
+                <MoatTable sources={overview.moat.sources} rows={overview.moat.rows} verdicts={overview.verdicts} labels={labels} />
+            )}
+            {sec.embed === 'scatter' && <div className="mt-3 max-w-3xl flex">{scatterCard}</div>}
         </>
     );
 
