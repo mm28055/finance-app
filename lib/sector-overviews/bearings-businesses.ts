@@ -1,0 +1,200 @@
+import { BusinessProfile, OverviewSection } from './types';
+import { bearingsCharts } from './card-data/bearings';
+
+// Tab 2 of the Bearings note: what each company actually does.
+// Revenue totals are the filed figures (Screener). Splits come from the
+// companies' latest presentations, annual reports and calls; where a split is
+// not disclosed, the text says so.
+
+const intro: OverviewSection[] = [
+    {
+        heading: 'How to read this tab',
+        body: [
+            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it sells, where the money comes from and three charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed figures; splits are from each company's latest presentation or call.",
+        ],
+    },
+    {
+        heading: 'The products, in plain words',
+        body: [
+            "A bearing lets one part turn smoothly against another: a wheel on an axle, a shaft inside a gearbox, a motor's rotor. It is a set of rolling elements (balls, rollers or needles) held between two rings by a cage.",
+        ],
+        points: [
+            {
+                label: 'Ball and roller bearings',
+                text: "**Ball bearings** handle lighter, faster loads (fans, motors, two-wheelers). **Tapered and spherical roller bearings** carry heavy loads in trucks, railway wagons, steel mills and wind turbines (Timken's speciality). **Needle roller bearings** are thin and compact, used where space is tight, such as car gearboxes and steering (NRB's speciality).",
+            },
+            {
+                label: 'Cages',
+                text: "The part that keeps the rolling elements evenly spaced. Made of brass, steel or plastic. Most bearing makers buy these from specialists such as Harsha.",
+            },
+            {
+                label: 'Original equipment versus replacement',
+                text: "**Original equipment**: sold to vehicle and machine makers, designed in for the life of a model, at thin margins. **Replacement (aftermarket)**: sold through distributors under the maker's brand when bearings wear out, at much higher margins, and threatened by cheap fakes.",
+            },
+            {
+                label: 'Services',
+                text: "Remanufacturing worn bearings, monitoring machines for early signs of failure, and running maintenance shops inside customers' plants (SKF Industrial). Paid for by uptime rather than by the part.",
+            },
+        ],
+    },
+    {
+        heading: 'Three ways of selling',
+        body: [
+            "Who the customer is decides how the price is set and how fast the cash comes in.",
+        ],
+        tables: [
+            {
+                columns: ['Model', 'Who', 'How the price is set', 'How fast the cash comes'],
+                rows: [
+                    ['**Vehicle and machine makers**', 'NRB, SKF India, Timken, SKF Industrial', 'Negotiated per programme; steel linked to an index with a lag', 'Normal credit terms'],
+                    ['**Distributors (replacement)**', 'SKF India, SKF Industrial, Timken', 'Price list set by the maker', 'Fast'],
+                    ['**Railways and public sector**', 'Timken', 'Fixed annual rate contracts', 'Slow; prices reset only at renewal'],
+                    ['**Other bearing makers**', 'Harsha', 'Negotiated; metal passed through with a lag', 'Normal credit terms'],
+                ],
+            },
+        ],
+    },
+];
+
+const profiles: BusinessProfile[] = [
+    {
+        company: 'NRB Bearing',
+        inShort: ["**India's biggest home-grown bearing maker**, specialising in needle and cylindrical roller bearings for gearboxes, steering and chassis, sold to vehicle makers in India, Europe and the US.", "**Good:** it owns its designs, has more than ₹1,100cr of lifetime orders nominated, and about 70% of its products are used in petrol, hybrid and electric vehicles alike. **Bad:** it carries a lot of stock, has some debt, and its long-term sales targets are extrapolations rather than plans.", "**Verdict: own.** The only company here that owns its own position; check the price on the exchange first, because this site's market data for it is wrong."],
+        tagline: "India's leading needle roller bearing maker, with plants in India and the US, a German presence, a new aerospace unit and an Italian joint venture for industrial bearings.",
+        revenue: '₹1,335cr (FY26, consolidated)',
+        products: [
+            { name: 'Needle roller bearings', text: "Small, compact bearings for gearboxes, steering columns and two-wheeler engines, where space is tight. NRB was the first to make them in India, and Screener puts its share of that Indian market at about 60%." },
+            { name: 'Cylindrical roller and drawn-cup bearings', text: "Heavier bearings for trucks, tractors and industrial gearboxes, plus lightweight drawn-cup bearings. A 75%-owned joint venture with Italy's Unitec will make large industrial cylindrical bearings from April 2027." },
+            { name: 'Precision components', text: "Shafts, housings and planet pins made alongside the bearings; the company says it makes about 4,000 products. Its first US-made order is planet pins for the General Motors Corvette." },
+            { name: 'Aerospace and defence', text: "It bought Mahant Toolroom to get an already-certified aerospace business, and makes spherical plain bearings for the Sukhoi-30 fighter. The order book is about ₹50cr; the target is ₹300cr of sales by 2031." },
+            { name: 'SNL Bearings', text: "A listed subsidiary that sells a cheaper, well-regarded brand, mainly in the replacement market and for two-wheeler and farm uses. Management admits it sometimes takes sales from NRB." },
+        ],
+        revenueText: "The company gives approximate splits. **About 75% is sold in India and 25% exported.** By end market, two- and three-wheelers are about 30%, trucks and buses 27–30%, **industrial 14% (up from 11%, and growing 34% a year)**, cars about 12% (sold mainly through gearbox and steering suppliers) and the replacement market 10–12%.",
+        mixes: [
+            { caption: 'Revenue by geography (company, Q1 FY27)', parts: [{ label: 'India', share: 75 }, { label: 'Exports', share: 25 }] },
+            { caption: 'Revenue by end market, approximate (company, Q1 FY27)', parts: [{ label: 'Two- and three-wheelers', share: 30 }, { label: 'Trucks and buses', share: 28 }, { label: 'Industrial', share: 14 }, { label: 'Cars', share: 12 }, { label: 'Replacement market', share: 11 }, { label: 'Other', share: 5 }], note: "The company gives ranges; 'Other' is the unexplained remainder." },
+        ],
+        customers: ["**European carmakers' gearbox and steering suppliers**: every BMW from the 1 to the 7 Series, and Mercedes models from the A-Class to the Maybach, carry its bearings in the transmission. A BMW steering programme starts in 2027.", "**Indian two-wheeler, truck and tractor makers**, plus heavy-vehicle defence programmes in the US and France supplied through Meritor, and new industrial customers such as JCB in the UK.", "**Aerospace and defence**, including HAL for the Sukhoi-30, and General Motors through an existing gearbox supplier for its first US-made order."],
+        difficulty: { level: 'High', text: "Each bearing is designed with the customer three to five years before a vehicle launches and then tested for months. NRB uses its own simulation software and in-house know-how in materials, seals and lubrication. Aerospace parts are harder still: management says fewer than five companies worldwide can make the Sukhoi bearing." },
+        moat: "Once designed into a gearbox or steering system, NRB supplies it for the life of the model, often with 60–100% of that part. The weakness is stock: it holds 90–110 days of inventory in India, Germany and the US to guarantee deliveries, which ties up cash.",
+        salesDrivers: ["**Vehicle production** in India and Europe: two-wheelers, trucks and cars are still most of sales, so a slowdown in any of them shows up quickly.", "**Nominations turning into sales**: lifetime orders already won rose from ₹800cr to more than ₹1,100cr, including the General Motors order that was open only to bearings made in the US.", "**Industrial growth**: industrial sales grew 34% last quarter, and the Unitec joint venture adds about ₹130cr of sales capacity from April 2027.", "**Capacity**: plants run close to full, so growth depends on a ₹270cr expansion; management says every ₹100cr of capex supports about ₹130cr of sales.", "**New areas** such as aerospace, robotics, drones and data-centre cooling are small today. The ₹300cr aerospace target for 2031 is an ambition, not an order book."],
+        inputs: "**Bearing-grade alloy steel** (bars, tubes and wire) is the main material, plus seals, grease and bought-in parts. Power, freight and staff are also big costs because the parts are machined and heat-treated in-house. Materials were 39% of sales in FY26.",
+        costEffect: "**Partly passed on, with a lag.** NRB recovers cost rises through price increases and value engineering (redesigning parts to cost less), but management says this takes time. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 4 points (17% to 13%). **What happened:** India's alloy and stainless steel bar price index was flat (100 to 99) from Q1 FY24 to Q1 FY27, while the margin rose from 16.5% to 17.3% as sales grew and industrial work increased. The latest pressure is not steel: power, freight, petroleum and dollar costs added about ₹10cr in Q1 FY27.",
+        competitors: [{ name: 'Schaeffler (INA), NTN, JTEKT', note: 'Global needle-bearing makers competing for the same gearbox and steering programmes, with bigger research budgets.' }, { name: 'SKF, Schaeffler India, Timken, NBC', note: 'The larger bearing suppliers in India, with broader ranges but less focus on needle rollers.' }, { name: 'SNL Bearings (its own subsidiary)', note: 'A cheaper brand that keeps price-sensitive replacement buyers in the group rather than losing them to rivals.' }],
+        position: "**India's leading needle roller bearing maker**, with an estimated 60% of that segment (Screener); the company says its bearings are in over 90% of vehicles on Indian roads. Overall it is the fifth of India's big bearing suppliers, after SKF, Schaeffler, Timken and NBC.",
+        money: "Screener shows net debt of about ₹121cr (₹154cr of borrowings against ₹33cr of cash; about ₹47cr if its ₹74cr of investments are counted). A ₹270cr expansion is under way (₹60cr spent, ₹100cr ordered), plus about ₹110cr for the Unitec joint venture. It has an AA- credit rating. Promoters hold **44.7%**, down from 50.6% in September 2023; an analyst on the call said promoter share pledges had been reduced after a change in ownership control. **This site's database record for NRB carries another company's market value (about ₹79cr), so its live P/E here is wrong: check the price on the NSE or BSE before acting.**",
+        watch: ["The margin holding in the 18–20% band management promises as power and freight costs rise.", "The Unitec joint venture starting on time in April 2027 at its new Aurangabad site.", "Conversion of the ₹1,100cr of nominations, and aerospace orders growing beyond today's ₹50cr."],
+        charts: bearingsCharts['NRB Bearing'],
+    },
+    {
+        company: 'Harsha Engineers Int',
+        inShort: ["**India's biggest maker of precision bearing cages**, the parts that hold the balls or rollers apart inside a bearing, supplying Timken, Schaeffler, SKF, NBC, NSK, NTN and others.", "**Good:** it has 80–90% of its big customers' cage purchases in India, and bushings and stampings are growing about 30% a year. **Bad:** a loss-making Romanian plant, a new Indian plant still in the red and a low-margin solar business pull group returns down.", "**Verdict: own.** A cheap way to own the whole bearing industry's volume, and the weak parts can be separated from the strong core."],
+        tagline: "Outsourced cage maker to the world's big bearing companies, with plants in India, China and Romania, plus bushings, stampings and a small solar contracting arm.",
+        revenue: '₹1,627cr (FY26, consolidated)',
+        products: [
+            { name: 'Bearing cages', text: "Brass, steel and polyamide (plastic) cages made to each customer's drawing, in India, China and Romania. Large cages for wind and industrial bearings are a newer line, about ₹49cr in FY26." },
+            { name: 'Bronze bushings', text: "Sleeve-type bearings for compressors and machinery. About ₹125cr of sales in FY26, up 35% in Q1 FY27." },
+            { name: 'Stampings', text: "Pressed metal parts for white goods, railways and sensors. About ₹60cr in FY26, up 31% in Q1 FY27." },
+            { name: 'Solar contracting (EPC)', text: "Designs and builds solar plants for customers. Lumpy and not core: about ₹200cr expected in FY27 at a 7–8% operating margin." },
+        ],
+        revenueText: "Engineering (cages, bushings, stampings) was **₹421cr, 92% of Q1 FY27 revenue**, and solar contracting ₹36cr. **Exports from India were ₹139cr** in the quarter, and the China unit sold about ₹120cr in FY26. The company does not give a full split between India, China and Romania, and it reports China and Romania together.",
+        mixes: [
+            { caption: 'Revenue by business, Q1 FY27 (company)', parts: [{ label: 'Engineering (cages, bushings, stampings)', share: 92 }, { label: 'Solar contracting', share: 8 }] },
+        ],
+        customers: ["**The global bearing majors**: Timken, Schaeffler, SKF, NBC, FAG, NSK and NTN, supplied at more than 80 of their plants. The top ten customers are about 80% of revenue, and the order among the top four keeps changing.", "**Japanese bearing makers** (about ₹72cr of sales in FY26) and a compressor maker, Highly, for bushings.", "**Solar project owners** in India, for the contracting business."],
+        difficulty: { level: 'High', text: "Cages must be made to very fine tolerances in three different materials, and few suppliers can do brass, steel and polyamide under one roof. Each new part must pass the bearing maker's approval before volume orders come, which takes time." },
+        moat: "Bearing makers find it cheaper to outsource cages than to run small in-house lines, and once a cage is approved they rarely switch; one customer plant told an analyst 95–97% of its cages come from Harsha. The weakness is concentration: a handful of customers decide its volumes and could take cage-making back in-house.",
+        salesDrivers: ["**Bearing industry volumes**: cage sales rise and fall with its customers' output in India and abroad.", "**Outsourcing by the majors**: growth beyond the industry rate depends on customers handing over more parts, especially large cages, where its share is still low.", "**New products**: bushings and stampings are guided to grow about 30% in FY27.", "**The new Harsha Advantage plant**: it sold ₹13cr in Q1 FY27 against a ₹140cr-plus target for the year, and lost about ₹4cr in the quarter.", "**Metal prices**: because costs are passed on, higher brass and steel prices lift reported sales by a few percent, a few months later."],
+        inputs: "**Brass (copper and zinc) and steel strip** are the main materials, plus polyamide for plastic cages and bronze for bushings. Materials were 52% of sales in FY26.",
+        costEffect: "**Passed on, with about a four-month lag.** Most customer contracts adjust prices for metal costs, so margins dip when metals jump and recover once new prices apply. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points (15% to 10%). **What happened:** India's copper price index (the best guide to brass cage costs, though Harsha also uses steel and polyamide) rose 49% from Q1 FY24 to Q1 FY27, yet the margin rose from 12.1% to 14.7% because the rises were passed on. The lag still bites: in Q1 FY27 an 8% jump across all its materials, plus a ₹4cr currency loss, cut the engineering margin by about 3.6 points from the previous quarter.",
+        competitors: [{ name: "Customers' own cage shops", note: 'The bearing majors can make cages themselves; the real risk is them taking work back or moving it between their plants.' }, { name: 'Other cage makers worldwide', note: 'Harsha has only about 6.5% of the global organised cage market (Screener), so abroad it competes with many suppliers, including in China, where it is adding steel-cage capacity.' }],
+        position: "**India's largest precision bearing cage maker**, with an estimated 50–60% of the Indian market (Screener) and 80–90% of its major customers' cage purchases in India, and about 6.5% of the global organised market.",
+        money: "Screener shows net cash of about ₹146cr: ₹473cr of investments and ₹45cr of cash against ₹372cr of borrowings, which nearly doubled in FY26. Operating cash flow fell to ₹68cr in FY26 from ₹206cr. Capex of ₹180–200cr is planned over FY27–FY28, including a $10m steel-cage expansion in China funded by local debt. Promoters hold **75%**, up slightly from 74.6% in September 2023.",
+        watch: ["Harsha Advantage reaching its ₹140cr sales target and breaking even.", "Romania's losses shrinking; management says breakeven depends on one key customer returning.", "The engineering margin getting back to about 18% once metal price rises are passed on."],
+        charts: bearingsCharts['Harsha Engineers Int'],
+    },
+    {
+        company: 'SKF India (Industrial)',
+        inShort: ["**The industrial half of SKF India**, split off in October 2025: bearings, seals and lubrication for wind, steel, railways, pumps, motors and gearboxes, plus repair and monitoring services.", "**Good:** a strong brand with distributors, ₹564cr of net cash and a growing services arm. **Bad:** the margin fell to about 9% on currency losses and separation costs, a ₹900–950cr plant only produces from 2028, and the managing director changed weeks after its first results call.", "**Verdict: wait.** A good franchise, but the next two years are heavy spending at low margins, and only a year or so of separate figures exist."],
+        tagline: "SKF's listed industrial bearing and services business in India, newly separated from the automotive business and building a large new plant near Pune.",
+        revenue: '₹3,440cr (FY26, standalone)',
+        products: [
+            { name: 'Industrial bearings', text: "The full SKF range of ball, tapered, spherical and cylindrical roller bearings, made in India or imported, mostly from Europe. A new tapered roller bearing line making 3 million units a year is running." },
+            { name: 'Railway bearings', text: "Axle-box bearings and newly launched railway wheel-set bearings, which the company says extend maintenance intervals by almost 20%." },
+            { name: 'Services and remanufacturing', text: "Reconditioning used bearings (mainly for railways, also paper and metals), condition monitoring, and running whole bearing shops inside steel mills. About 6–7% of revenue, growing by double digits." },
+            { name: 'Seals and lubrication', text: "Seals and lubrication systems. Some group lubrication and wind-bearing products made outside the listed company are sold through it as traded goods." },
+        ],
+        revenueText: "By channel, **equipment makers were 54% of Q1 FY27 revenue and distributors 34%** (up from 32%); the rest is exports and supplies to SKF India, the automotive company, which are being run down. Services are about 6–7%. **Only one or two years of separate figures exist**: Screener's FY25 covers a single quarter and FY26 is the first full year.",
+        mixes: [
+            { caption: 'Revenue by channel, Q1 FY27 (company)', parts: [{ label: 'Equipment makers (OEM)', share: 54 }, { label: 'Distributors', share: 34 }, { label: 'Exports and sales to SKF India', share: 12 }] },
+        ],
+        customers: ["**Industrial equipment makers**: wind turbine and gearbox makers such as Suzlon and ZF (it just won a ₹140cr wind gearbox order), tractor makers (a ₹35cr order), and pump, motor and gear makers.", "**Steel mills and Indian Railways**, such as Tata Steel and SAIL, served directly and through its services arm.", "**Distributors** supplying factories that replace worn bearings, the highest-margin channel."],
+        difficulty: { level: 'High', text: "Large bearings for wind turbines, steel mills and railways need very clean steel, precise heat treatment and grinding, and long customer approvals. The technology comes from the Swedish parent, AB SKF; the Indian company makes and sells it." },
+        moat: "A failed bearing in a wind turbine or rolling mill costs far more than the bearing, so customers stick with trusted brands, and the SKF name protects distributor sales against fakes. The weakness is heavy reliance on European imports, which exposes margins to the rupee, and the parent keeping some related businesses outside the listed company.",
+        salesDrivers: ["**Industrial investment in India**: new steel capacity, wind farms (India's wind capacity is growing about 10% a year) and railways.", "**Distribution share**: distributor sales earn high double-digit margins against high single-digit margins on sales to equipment makers, so the mix matters as much as volume.", "**Services**: remanufacturing and condition monitoring, growing by double digits from a small base.", "**Capacity**: space is tight until the new Pune plant opens in 2028; one more tapered bearing line arrives in early 2027.", "**An ambition to double the business in five years**, which management calls an aspiration, not a promise."],
+        inputs: "**Bearing steel and finished bearings bought from SKF factories abroad**, mainly in Europe, which are resold here; that is why materials are such a high share. Materials, including traded goods, were 68% of sales in FY26.",
+        costEffect: "**Partly passed on; the bigger risk is the rupee.** Price rises go through to distributors fairly quickly but contracts with equipment makers adjust more slowly, and euro-priced imports cost more when the rupee falls. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 7 points (11% to 4%). **What happened:** India's alloy and stainless steel bar price index rose 8% from Q4 FY25 (the first separately reported quarter) to Q1 FY27, while the margin fell from 22.3% to 9.1%. Steel explains little of that: the rupee's fall caused about ₹15cr of currency losses in Q1 FY27, IT separation costs added about ₹15cr a quarter, and more low-margin equipment-maker sales diluted the mix. Management puts the underlying margin at about 12%.",
+        competitors: [{ name: 'Schaeffler India (FAG)', note: 'The other big multinational, competing across industrial and automotive bearings.' }, { name: 'Timken India', note: 'Strongest in tapered and spherical roller bearings for railways, off-highway and heavy industry.' }, { name: 'NBC and low-cost imports', note: "Compete on price in general-machinery bearings, where SKF's edge is thinner." }],
+        position: "**One of India's two largest bearing suppliers**: SKF and Schaeffler together hold about 37% of a roughly $5.2bn Indian market, and this company carries SKF's industrial half, the more profitable part of that market.",
+        money: "Screener shows net cash of about ₹564cr (₹569cr of cash, ₹5cr of borrowings). The new Pune (Vithalwadi) plant will cost ₹900–950cr (the finance head later said ₹850–900cr), producing from 2028 with a stated five-to-seven-year payback. Promoters (AB SKF) hold **52.6%**, unchanged since listing. The group's Ahmedabad factory, lubrication and wind-bearing businesses stay outside the listed company; management says a merger is not being actively considered.",
+        watch: ["The margin getting back to the 14–16% range once IT separation costs end in about two quarters.", "The distributor share rising above 34%.", "The Pune plant staying on schedule for 2028, and the new managing director's first moves."],
+        charts: bearingsCharts['SKF India (Industrial)'],
+    },
+    {
+        company: 'Timken India',
+        inShort: ["**The Indian arm of America's Timken**, making tapered, spherical and cylindrical roller bearings for railways, trucks, tractors, heavy industry and wind, and exporting to the group.", "**Good:** India's strongest position in railway bearings, ₹389cr of net cash and fast growth from wind and steel customers. **Bad:** railway orders have slowed, the new Bharuch plant is only near breakeven, and about a quarter of sales is traded group product.", "**Verdict: wait.** A good business, but the price needs more growth than I expect, and the parent decides how much export work India gets."],
+        tagline: "Heavy-duty roller bearing maker for railways, off-highway vehicles and process industries, majority-owned by The Timken Company of the US.",
+        revenue: '₹3,419cr (FY26, standalone)',
+        products: [
+            { name: 'Tapered roller bearings', text: "The core product: bearings that take heavy loads from two directions, used in railway, truck and tractor axles, and exported to Timken in the US." },
+            { name: 'Spherical and cylindrical roller bearings', text: "Now made at the new Bharuch plant in Gujarat instead of being imported, for steel mills, wind gearboxes, mining and cement. Plain bearings are being added there too." },
+            { name: 'Railway bearings', text: "Axle-box bearings for freight wagons and locomotives, approved by Indian Railways. A new rail plant at Jamshedpur is due to start production by the end of 2026." },
+            { name: 'Distribution and services', text: "Replacement bearings through distributors, plus power-transmission products, maintenance contracts and refurbishment." },
+        ],
+        revenueText: "Q1 FY27 revenue of ₹929cr split into **railways ₹200cr (22%)**, **exports and sales to the group about ₹200cr (21%)**, process industries ₹186cr, trucks and tractors ₹184cr and distribution ₹154cr. **About 75% is made in India and 25% traded** (bought from the group and resold).",
+        mixes: [
+            { caption: 'Revenue by segment, Q1 FY27 (company)', parts: [{ label: 'Railways', share: 22 }, { label: 'Exports and group sales', share: 21 }, { label: 'Process industries', share: 20 }, { label: 'Trucks and tractors', share: 20 }, { label: 'Distribution', share: 17 }] },
+        ],
+        customers: ["**Indian Railways and wagon builders**, on tenders and fixed annual rate contracts.", "**Truck, tractor and off-highway makers** (backhoes, excavators); it does not supply cars or two-wheelers.", "**Steel mills, wind-gearbox makers and other process industries**, plus distributors and the Timken group abroad, especially in the US."],
+        difficulty: { level: 'High', text: "Railway and heavy-duty bearings need approvals that take years, and every part from a new plant must pass customer approval again, as Bharuch is doing now. The metallurgy and designs come from the US parent." },
+        moat: "Approved railway bearings and bearings designed into trucks and wind gearboxes are rarely switched, and the Timken name carries weight with heavy-industry buyers. The weakness is that the parent decides which country makes what; it says production lines can be moved to wherever it earns more.",
+        salesDrivers: ["**Railway spending**: railway sales grew only about 3% in Q1 FY27 because government money was diverted to defence and infrastructure; they should recover when tenders resume.", "**Wind and steel projects**: process industries grew about 30% on 5MW-plus wind gearboxes and new steel mills.", "**Exports to the US**: group sales grew 21%, with US demand firm while Europe, China and South-East Asia were weaker.", "**Truck and tractor cycles**, about a fifth of sales.", "**New capacity**: Bharuch's spherical lines are 40–45% used and aim for 70%; capex runs at 8–10% of sales each year."],
+        inputs: "**Alloy bearing steel** (bars, tubes and forgings), plus finished bearings bought from the group for resale, grinding wheels, carbide tools and grease. Materials, including traded goods, were 61% of sales in FY26.",
+        costEffect: "**Partly passed on.** Truck and tractor customers accept price rises quickly, but railways, public-sector firms and large cement plants are on fixed annual rate contracts that only reset at renewal. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 6 points (18% to 12%). **What happened:** India's alloy and stainless steel bar price index was flat (100 to 99) from Q1 FY24 to Q1 FY27, and the margin barely moved (18.9% to 18.5%). A steel rise of about ₹5,000 a tonne in 2026 was largely recovered, and gross margin was up 1 point on a year earlier.",
+        competitors: [{ name: 'SKF India (Industrial)', note: "Full industrial range and a strong distributor network; it has just launched railway wheel-set bearings, Timken's home ground." }, { name: 'Schaeffler India', note: 'Competes in industrial, truck and tractor bearings.' }, { name: 'NBC (National Engineering)', note: 'Indian-owned maker with a large share of the replacement market.' }],
+        position: "**India's leading railway bearing supplier** and the third-largest bearing company in India after SKF and Schaeffler, strongest in tapered and spherical roller bearings for heavy loads.",
+        money: "Screener shows net cash of about ₹389cr (₹224cr of cash and ₹180cr of investments against ₹15cr of borrowings). Capex runs at 8–10% of sales a year (₹297cr in FY26) for Bharuch, the Jamshedpur rail plant and plain bearings, paid from its own cash. Promoters (The Timken Company) hold **51.1%**, down from 57.7% in September 2023 as the parent sold shares. The merger of Timken GGB into Timken India awaits tribunal approval.",
+        watch: ["Railway tenders resuming, and the Jamshedpur rail plant starting by the end of 2026.", "Bharuch reaching 70% use on its spherical lines and turning a profit.", "Whether the parent's review of its product portfolio moves export work away from India."],
+        charts: bearingsCharts['Timken India'],
+    },
+    {
+        company: 'SKF India',
+        inShort: ["**The automotive half of SKF India** after the October 2025 split: bearings and wheel-end units for two-wheelers, cars and trucks, plus replacement sales through dealers.", "**Good:** a strong brand, sales growth guided at about 20% for FY27 and ₹306cr of net cash. **Bad:** a crowded replacement market full of fakes, electric-vehicle orders that pay only from late 2028, and a Q1 margin helped by stock revaluation.", "**Verdict: pass.** An ordinary auto-parts volume business; the growth that would justify the price is years away."],
+        tagline: "SKF's listed automotive bearing business in India, supplying two-wheeler, car and truck makers and the vehicle replacement market.",
+        revenue: '₹3,763cr (FY26, consolidated)',
+        products: [
+            { name: 'Two-wheeler bearings', text: "Engine, gearbox and wheel bearings for motorcycles and scooters; two-wheelers are 54% of its sales to vehicle makers." },
+            { name: 'Car and truck bearings and wheel-end units', text: "Wheel hubs and drivetrain bearings. A new wheel-end order from a large carmaker localising its bearings starts in late 2028." },
+            { name: 'Electric-vehicle motor bearings', text: "High-speed, electrically insulated bearings for electric motors. Still in development, with production from mid-2027 and meaningful sales only in late 2028." },
+            { name: 'Vehicle replacement market', text: "Replacement bearings and kits sold through dealers under the SKF brand; about 20% of sales." },
+        ],
+        revenueText: "In Q1 FY27, **vehicle makers were 62% of sales**, the replacement market 20%, sales to SKF India (Industrial) 10% and exports 8%. Of sales to vehicle makers, **two-wheelers were 54%**, cars 31% and trucks 15%. **The five-year history includes the industrial business until it left in October 2025**: FY26 revenue of ₹3,763cr includes six months of it, and the automotive business alone has sold about ₹575–595cr a quarter since.",
+        mixes: [
+            { caption: 'Sales by channel, Q1 FY27 (company)', parts: [{ label: 'Vehicle makers', share: 62 }, { label: 'Replacement market', share: 20 }, { label: 'Sales to SKF India (Industrial)', share: 10 }, { label: 'Exports', share: 8 }] },
+            { caption: 'Sales to vehicle makers by type, Q1 FY27 (company)', parts: [{ label: 'Two-wheelers', share: 54 }, { label: 'Cars', share: 31 }, { label: 'Trucks', share: 15 }] },
+        ],
+        customers: ["**Two-wheeler makers** such as TVS, Honda and Suzuki, the largest customer group.", "**Car and truck makers**, including a large carmaker that will buy locally made wheel-end units from late 2028.", "**Dealers and mechanics** in the replacement market, and SKF India (Industrial), which buys some products it cannot make itself."],
+        difficulty: { level: 'Medium', text: "Vehicle bearings are designed in and tested for each model, but many sizes are standard, and in the replacement market cheap and fake bearings compete freely. The technology comes from AB SKF." },
+        moat: "Once approved on a model, it supplies that part for the model's life, and the SKF brand reassures buyers in a market with fakes. The weakness: two-wheeler makers bargain hard, and management admits the replacement market is 'a completely different game' with many rivals.",
+        salesDrivers: ["**Vehicle production**, especially two-wheelers, which picked up after the GST reforms.", "**Capacity**: plants are about 93% loaded; ₹170–180cr of new Haridwar lines start in Q4 FY27, with the sales effect in FY28.", "**New programmes**: electric-motor bearings from mid-2027 and a car wheel-end order from late 2028.", "**Replacement-market pricing**: sales there have flattened and it gave discounts in the last two months.", "**Sales to its industrial sister** (about 10%), which management plans to reduce as it uses the capacity for vehicle customers."],
+        inputs: "**Bearing steel** (bars, tubes and wire), plus balls, seals and grease, and finished bearings bought from SKF India (Industrial) and the group. Materials were 60% of sales in FY26.",
+        costEffect: "**Passed on, with a one-to-two-quarter lag.** Contracts with vehicle makers are linked to a commodity index, and currency changes are being negotiated. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 6 points (12% to 6%). **What happened:** India's alloy and stainless steel bar price index was flat (100 to 99) from Q1 FY24 to Q1 FY27, while the margin slipped from 17.7% to 15.0%. The swings came from the demerger, not steel: the margin fell to 5.5% in Q4 FY26 on separation costs, and Q1 FY27's recovery was partly helped by stock revaluation.",
+        competitors: [{ name: 'Schaeffler India', note: 'The main multinational rival in car and two-wheeler bearings.' }, { name: 'NBC and NRB', note: 'Indian makers: NBC is strong in the replacement market, NRB in needle bearings for gearboxes and steering.' }, { name: 'Unbranded and fake bearings', note: 'Undercut prices in the replacement market.' }],
+        position: "**One of the two leading multinational bearing suppliers to Indian vehicle makers**, alongside Schaeffler; SKF and Schaeffler together hold about 37% of India's bearing market across all uses.",
+        money: "Screener shows net cash of about ₹306cr (₹300cr of cash, ₹9cr of investments, ₹3cr of borrowings), down from ₹1,222cr in FY24, when the industrial business was still included. Capex of about ₹500cr is planned over FY26–FY28, mainly Haridwar lines for two-wheeler and electric-motor bearings, meant to cut its reliance on its industrial sister. Promoters (AB SKF) hold **52.6%**, unchanged over three years.",
+        watch: ["Whether the ~17% margin management expects holds once the stock revaluation gain fades.", "The Haridwar lines starting in Q4 FY27 and sales to the industrial sister falling.", "Electric-vehicle and car wheel-end orders starting on time in 2027–28."],
+        charts: bearingsCharts['SKF India'],
+    },
+];
+
+export const bearingsBusinesses = { intro, profiles };

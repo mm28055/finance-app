@@ -1,186 +1,509 @@
 import { SectorOverview } from './types';
+import { bearingsBusinesses } from './bearings-businesses';
+import { bearingsValuationInputs } from './card-data/bearings';
+
+// Quarter and year columns used by every metric below.
+const Q = ['Q1 FY26', 'Q2 FY26', 'Q3 FY26', 'Q4 FY26', 'Q1 FY27'];
+const FY = ['FY22', 'FY23', 'FY24', 'FY25', 'FY26'];
+
+// Segment labels. The metric grid, the moat table and the company cards are grouped by these.
+const OWN = 'Indian-owned: own designs and positions';
+const MNC = 'Multinational subsidiaries: parent’s designs and catalogue';
 
 export const bearings: SectorOverview = {
     sector: 'Bearings',
     title: 'Bearings',
+    format: 'ranked',
+    businesses: bearingsBusinesses,
+    moatCompact: true,
+    leadCharts: true,
+    valuation: {
+        writtenOn: '23 Sep 2026',
+        inputs: bearingsValuationInputs,
+        // My base-case earnings growth, % a year over three to five years (section 6).
+        myGrowth: {
+            'NRB Bearing': 17,
+            'Harsha Engineers Int': 16,
+            'SKF India (Industrial)': 14,
+            'Timken India': 15,
+            'SKF India': 14,
+        },
+    },
     standfirst:
-        'Five companies in a genuinely good industry. A bearing is a few hundred rupees of steel that, if it fails, stops a locomotive, a gearbox or a production line — so it is designed in years ahead, validated for the life of the programme, and re-ordered without a tender. The catch is that three of these five are the Indian manufacturing arms of foreign parents who own the designs, allocate the export volumes and decide which businesses sit inside the listed company. Knowing whose moat you are actually buying is the whole exercise here.',
-    lastUpdated: '2026-09-20',
+        "Five companies in a genuinely good industry. A bearing is a few hundred rupees of steel that, if it fails, stops a locomotive, a gearbox or a production line, so it is designed in years ahead, validated for the life of the programme and re-ordered without a tender. The catch is that three of these five are the Indian arms of foreign parents who own the designs, allocate export volumes and decide which businesses sit inside the listed company. Knowing whose moat you are actually buying is the whole exercise. Every chart uses filed results and five years of history.",
+    lastUpdated: '2026-09-23',
     asOfQuarter: 'Q1 FY27',
+
+    metrics: [
+        {
+            key: 'opm',
+            label: 'Operating margin by quarter',
+            unit: '%',
+            periods: Q,
+            scale: 'sequential',
+            source: 'Filed quarterly results (Screener), operating profit ÷ sales. Timken and SKF India (Industrial) standalone; the rest consolidated.',
+            note: 'Operating margin excludes other income. A bearing maker’s margin is mostly a statement about its mix: sales through distributors earn far more than sales to vehicle and machine makers.',
+            values: {
+                'NRB Bearing': [16, 17, 18, 18, 17],
+                'Harsha Engineers Int': [15, 14, 14, 15, 15],
+                'SKF India (Industrial)': [11, 13, 12, 9, 9],
+                'Timken India': [18, 18, 13, 22, 19],
+                'SKF India': [13, 13, 14, 6, 15],
+            },
+            cellNotes: {
+                'SKF India': 'Q4 FY26 includes demerger costs; Q1 FY27 gross margin was partly helped by revaluing stock (company).',
+                'SKF India (Industrial)': 'Management has guided a committed margin band of 14–16% on its own measure.',
+            },
+        },
+        {
+            key: 'growth',
+            label: 'Revenue growth, year on year',
+            unit: '%',
+            periods: Q,
+            scale: 'diverging',
+            source: 'Filed quarterly revenue, each quarter against the same quarter a year earlier.',
+            note: 'SKF India’s falls from Q3 FY26 are the demerger of its industrial business, not lost sales; SKF India (Industrial) has filed separately only since then.',
+            values: {
+                'NRB Bearing': [7, 8, 18, 13, 19],
+                'Harsha Engineers Int': [6, 7, 21, 27, 25],
+                'SKF India (Industrial)': [null, null, null, 31, 18],
+                'Timken India': [3, 3, 14, 14, 15],
+                'SKF India': [6, 5, -54, -51, -54],
+            },
+        },
+        {
+            key: 'roce',
+            more: true,
+            label: 'Return on capital by year',
+            unit: '%',
+            periods: FY,
+            scale: 'sequential',
+            source: 'Filed annual ratios (Screener): return on capital employed.',
+            note: 'SKF India’s history includes the industrial business until FY26.',
+            values: {
+                'NRB Bearing': [15, 16, 15, 16, 18],
+                'Harsha Engineers Int': [18, 17, 12, 12, 13],
+                'SKF India (Industrial)': [null, null, null, null, 30],
+                'Timken India': [29, 28, 23, 21, 18],
+                'SKF India': [31, 34, 29, 29, 24],
+            },
+        },
+        {
+            key: 'ccc',
+            label: 'Cash conversion cycle by year',
+            unit: 'days',
+            periods: FY,
+            scale: 'sequential',
+            lowerIsBetter: true,
+            source: 'Filed annual ratios (Screener): debtor days + inventory days − payable days.',
+            note: 'NRB holds a lot of stock because it makes thousands of part numbers for export customers; SKF runs short because its distributors pay quickly.',
+            values: {
+                'NRB Bearing': [275, 292, 338, 332, 281],
+                'Harsha Engineers Int': [173, 204, 187, 166, 171],
+                'SKF India (Industrial)': [null, null, null, 329, 56],
+                'Timken India': [160, 124, 142, 129, 116],
+                'SKF India': [96, 69, 56, 88, 33],
+            },
+            cellNotes: {
+                'SKF India (Industrial)': 'FY25 is a carve-out year and not comparable.',
+            },
+        },
+        {
+            key: 'cash',
+            label: 'Cash conversion (operating cash ÷ operating profit)',
+            unit: '%',
+            periods: [...FY, '5 yrs'],
+            scale: 'sequential',
+            source: 'Filed annual cash-flow statements and profit and loss (Screener): cash from operating activities ÷ operating profit. The last column divides all filed years of operating cash by operating profit.',
+            note: 'Operating cash is after tax, so 70–80% is healthy. Everyone here dipped in FY22 as steel prices and stock rose.',
+            values: {
+                'NRB Bearing': [11, 35, 65, 42, 104, 56],
+                'Harsha Engineers Int': [21, 72, 80, 118, 28, 62],
+                'SKF India (Industrial)': [null, null, null, -11, 42, 26],
+                'Timken India': [6, 61, 59, 65, 71, 54],
+                'SKF India': [10, 92, 87, 27, 81, 60],
+            },
+        },
+        {
+            key: 'fcf',
+            label: 'Free cash flow ÷ sales',
+            unit: '%',
+            periods: [...FY, '5 yrs'],
+            scale: 'diverging',
+            legend: ['Burning cash', 'Generating cash'],
+            source: 'Filed cash-flow statements (Screener): operating cash minus spending on fixed assets, as a share of sales. The last column uses all filed years.',
+            note: 'Everyone here funds itself; nobody burns cash over five years. Timken’s and SKF Industrial’s new plants will weigh on this over the next two years.',
+            values: {
+                'NRB Bearing': [-1.5, 1.9, 6.0, 0.2, 10.2, 3.7],
+                'Harsha Engineers Int': [-1.1, 4.6, 4.4, -0.2, -3.2, 0.8],
+                'SKF India (Industrial)': [null, null, null, -3.9, 2.0, 1.0],
+                'Timken India': [-2.1, 9.9, 2.7, 0.3, 4.1, 3.2],
+                'SKF India': [-1.0, 13.5, 10.8, 1.5, 3.6, 5.9],
+            },
+        },
+        {
+            key: 'leverage',
+            label: 'Net debt ÷ operating profit',
+            unit: 'x',
+            periods: FY,
+            scale: 'diverging',
+            invert: true,
+            legend: ['More debt', 'Net cash'],
+            source: 'Filed balance sheets and profit and loss (Screener): borrowings (including leases) minus cash, ÷ operating profit. Treasury investments are counted as cash for Timken, both SKFs and Harsha.',
+            note: 'Below zero means more cash than debt. This is a cash-rich sector; only NRB carries modest net debt.',
+            values: {
+                'NRB Bearing': [1.6, 1.4, 0.4, 0.7, 0.5],
+                'Harsha Engineers Int': [2.0, -0.8, -1.0, -1.0, -0.6],
+                'SKF India (Industrial)': [null, null, null, -2.8, -1.4],
+                'Timken India': [-0.2, -0.7, -0.8, -0.8, -0.6],
+                'SKF India': [-0.7, -1.3, -1.7, -1.0, -0.7],
+            },
+        },
+        {
+            key: 'capex',
+            more: true,
+            label: 'Capex ÷ sales',
+            unit: '%',
+            periods: [...FY, '5 yrs'],
+            scale: 'sequential',
+            source: 'Filed cash-flow statements (Screener): spending on fixed assets as a share of sales. The last column uses all filed years.',
+            note: 'Timken is building a rail plant at Jamshedpur and filling Bharuch; SKF Industrial’s ₹900–950cr Pune plant has barely started to show.',
+            values: {
+                'NRB Bearing': [3.2, 3.9, 4.5, 6.8, 7.9, 5.5],
+                'Harsha Engineers Int': [3.8, 5.4, 5.4, 14.8, 7.4, 7.4],
+                'SKF India (Industrial)': [null, null, null, 1.4, 2.7, 2.5],
+                'Timken India': [3.6, 2.2, 9.0, 12.0, 8.7, 7.4],
+                'SKF India': [2.5, 2.5, 2.8, 2.7, 6.1, 3.2],
+            },
+        },
+        {
+            key: 'turnover',
+            more: true,
+            label: 'Sales per ₹1 of fixed assets',
+            unit: 'x',
+            periods: FY,
+            scale: 'sequential',
+            source: 'Filed accounts (Screener): sales ÷ net fixed assets at year end.',
+            note: 'Higher means more sales from each rupee of plant. SKF’s figures are high partly because a quarter or more of its sales are traded goods bought from the group.',
+            values: {
+                'NRB Bearing': [2.6, 3.0, 3.2, 3.2, 3.2],
+                'Harsha Engineers Int': [3.7, 3.5, 3.3, 3.4, 2.5],
+                'SKF India (Industrial)': [null, null, null, 4.0, 16.3],
+                'Timken India': [2.6, 3.3, 3.4, 3.9, 2.4],
+                'SKF India': [9.1, 10.2, 9.7, 8.9, 8.6],
+            },
+            cellNotes: {
+                'SKF India (Industrial)': 'FY26 is distorted by how assets were split at the demerger.',
+            },
+        },
+    ],
+
+    moat: {
+        sources: [
+            { key: 'design', label: 'Designed in', description: 'Chosen during the design of a gearbox, axle or motor and bought for the life of that programme.' },
+            { key: 'own', label: 'Owns its technology', description: 'Owns the designs and process knowledge, rather than licensing a parent’s catalogue.' },
+            { key: 'after', label: 'Aftermarket and services', description: 'Branded replacement sales and services, where margins are highest.' },
+            { key: 'scale', label: 'Scale and range', description: 'Capacity, range and share of the customer’s spend.' },
+            { key: 'control', label: 'Control of its strategy', description: 'A = decides its own capacity, exports and product range; D = a parent decides.' },
+        ],
+        rows: [
+            { company: 'NRB Bearing', trend: 'widening', trendNote: 'Lifetime nominations past ₹1,100cr; a General Motors programme open only to US-made bearings; a BMW steering programme from 2027.',
+                grades: { design: { grade: 'A', note: 'In every BMW 1–7 series and Mercedes transmission' }, own: { grade: 'A', note: 'Own needle and roller bearing designs' }, after: { grade: 'C', note: 'Mostly original-equipment sales' }, scale: { grade: 'B', note: 'Leader in needle bearings in India' }, control: { grade: 'A', note: 'Indian-owned' } } },
+            { company: 'Harsha Engineers Int', trend: 'stable', trendNote: 'Core cage business growing; Romania and a new plant still dilute returns.',
+                grades: { design: { grade: 'B', note: 'Cages qualified into every major’s bearings' }, own: { grade: 'B', note: 'Own cage-making know-how' }, after: { grade: 'D', note: 'Sells only to bearing makers' }, scale: { grade: 'A', note: '80–90% of India’s outsourced cages' }, control: { grade: 'B', note: 'Indian-owned, but customers could make cages themselves' } } },
+            { company: 'SKF India (Industrial)', trend: 'stable', trendNote: 'Distribution share rising to 34%, but margin band guided down and the MD left weeks after listing.',
+                grades: { design: { grade: 'A', note: 'Designed into industrial machines and wind gearboxes' }, own: { grade: 'C', note: 'Parent’s designs and catalogue' }, after: { grade: 'A', note: 'Distribution 34% of sales; services 6–7%' }, scale: { grade: 'A', note: 'Full industrial range' }, control: { grade: 'C', note: 'Parent keeps a factory and lubrication business outside' } } },
+            { company: 'Timken India', trend: 'stable', trendNote: 'Rail franchise intact but rail spending diverted; Bharuch near breakeven.',
+                grades: { design: { grade: 'A', note: 'Approved railway bearings; long qualification' }, own: { grade: 'C', note: 'Parent’s designs' }, after: { grade: 'B', note: 'Distribution about a sixth of sales' }, scale: { grade: 'B', note: 'Strongest in tapered and spherical rollers' }, control: { grade: 'D', note: 'Parent decides export allocation' } } },
+            { company: 'SKF India', trend: 'narrowing', trendNote: 'Automotive aftermarket plateaued with discounting; EV content only from 2028.',
+                grades: { design: { grade: 'B', note: 'Two-wheeler and car programmes' }, own: { grade: 'C', note: 'Parent’s designs' }, after: { grade: 'B', note: 'Brand counts against fake bearings' }, scale: { grade: 'B', note: 'Capacity about 93% loaded' }, control: { grade: 'C', note: 'Buys from its industrial sibling' } } },
+        ],
+    },
 
     sections: [
         {
-            heading: 'Recommendation, up front',
+            heading: '1. Recommendation, up front',
             body: [
-                '**NRB Bearings is the only company in this list that owns what makes it valuable.** It designs its own needle and cylindrical roller bearings, holds the nominations itself, and has accumulated more than ₹1,100cr of lifetime programme awards. Its content sits inside every BMW 1 to 7 series and every Mercedes from the A-class to the Maybach transmission, with a BMW steering programme launching in 2027, and it has just won a General Motors programme that is open only to bearings made in the United States — which is why the American plant matters. It also makes spherical plain bearings for the Sukhoi-30, a product management says fewer than five companies worldwide can supply. That is a real, ownable franchise. **The caveat is practical: our database\'s figures for NRB are corrupted** (it shows a ₹75cr market value and a negative margin against actual quarterly revenue of ₹370cr and profit of ₹38cr), so the price must be checked elsewhere before acting.',
-                '**Harsha Engineers is the picks-and-shovels supplier to everybody else here, and the cheapest way to own bearing volumes.** It makes the cages that hold the rollers apart — a component the majors have chosen to outsource — and supplies Timken, Schaeffler, SKF, NBC, FAG, NSK and NTN across more than 80 of their plants, with 80-90% of the Indian wallet. Its volume is therefore the sum of the industry\'s volume, not one company\'s share. The reason it is cheap is that a good core business is being diluted by a loss-making Romanian unit, a greenfield plant ramping slowly and a low-margin solar contracting arm.',
-                '**SKF India (Industrial) is the highest-quality franchise and the wrong moment.** It earns about 30% on capital and sits in the better half of the bearing market — industrial distribution, where margins are high double-digit against high single-digit at original-equipment customers. But it is spending ₹900-950cr on a new Pune plant with a stated five-to-seven-year payback (roughly a 14-20% pre-tax return against its current 30%), management has guided its committed margin band down to 14-16%, the managing director changed within months of listing, and the parent still keeps a factory, the lubrication business and the wind-bearing business outside the listed company, selling them through it as traded goods.',
-                '**Timken India and SKF India (the automotive half) are good businesses whose strategic decisions are taken elsewhere.** Timken owns India\'s strongest position in railway bearings, but its parent is divesting its own global automotive business and told investors that production lines "can be moved around and serve the market where there is a better chance of making more money" — India\'s export allocation is not India\'s decision. The automotive SKF entity is a two-wheeler and passenger-car supplier whose electric-vehicle content does not become meaningful until late 2028.',
+                "**NRB Bearings is the one I would own, because it is the only company here that owns what makes it valuable.** It designs its own needle and cylindrical roller bearings, holds more than ₹1,100cr of lifetime programme nominations, and sits inside every BMW 1–7 series and Mercedes transmission, with a BMW steering programme launching in 2027 and a General Motors win open only to US-made bearings. About 70% of its applications work in petrol, hybrid and electric drivetrains. **One practical caveat: this site's price data for NRB is wrong** (it belongs to a different, tiny company), so NRB is left out of the live valuation table; check its price on the exchange before acting.",
+                "**Harsha Engineers is the cheapest way to own the industry's volume.** It makes the cages that hold the rollers apart and supplies Timken, Schaeffler, SKF, NBC, NSK and NTN across more than 80 of their plants, with 80–90% of the Indian outsourced market. Its price roughly matches the growth I expect. It looks mediocre because a loss-making Romanian unit, a slow new plant and a low-margin solar arm dilute a good core.",
+                "**SKF India (Industrial) is the best franchise at the wrong moment; Timken India is a good business whose strategy is set in Ohio.** SKF Industrial earns about 30% on capital from industrial distribution and services, but it is spending ₹900–950cr on a plant that will earn much less, has guided its margin band down and lost its managing director weeks after listing. Timken owns India's strongest railway-bearing position, but its parent decides export allocation and railway spending has been diverted. I would wait on both.",
+                "**Two things to hold onto before reading the rest.** First, **mix is destiny**: sales through distributors earn high double-digit margins and sales to vehicle makers high single digits, so watch the distribution share, not the headline margin. Second, **ask whose moat it is**: three of the five rent their technology from a foreign parent that also decides what sits inside the listed company. I would **pass on SKF India**, the automotive half, whose electric-vehicle content arrives only in late 2028.",
             ],
         },
         {
-            heading: 'Why bearings is a good industry in the first place',
+            heading: '2. Charts: margins, growth, returns, cash cycle and cash conversion',
             body: [
-                'Before the individual companies, it is worth being precise about where the economics come from, because it is not the product — it is the position.',
-                '**A bearing is designed in, not bought in.** An original-equipment customer selects a bearing during the design of a gearbox, axle or motor, validates it over months of testing, and then buys it for the life of that programme — typically five to seven years, and far longer for a locomotive or a machine tool. Changing supplier means re-validating and carrying the warranty risk of a failure that stops the customer\'s product. This is why NRB talks about "lifetime nominations" rather than orders, and why a win in 2026 is revenue in 2029.',
-                '**The aftermarket is where the money is.** Bearings wear out. The replacement market is served through distributors under the maker\'s brand, at prices the buyer cannot verify against a bill of materials, and against a background of spurious product that makes brand the only assurance of authenticity. SKF\'s industrial business is explicit about it: original-equipment margins are "high single-digit", distribution margins "high double-digit". **Any bearing company\'s margin is therefore mostly a statement about its mix, not its efficiency,** and original-equipment-led growth mathematically dilutes it.',
-                '**The technology is in metallurgy and microns, and it sits with the global parents.** Performance comes from steel cleanliness (oxygen and inclusion content), heat treatment, grinding to sub-micron tolerances, cage design, seals and grease chemistry, and increasingly from electrical insulation for electric-vehicle motors, where stray currents pit the raceways. **None of that development happens in the listed Indian entities of the multinationals** — they are manufacturing and distribution licences with access to a global catalogue. The Indian-owned companies, NRB and Harsha, own their own design and process knowledge, which is exactly why they are more interesting as businesses and more ordinary as financials.',
+                "The six views that matter most, with three more behind **More measures**. Companies are grouped by who owns the technology. All figures are filed (Screener): Timken and SKF India (Industrial) standalone, the rest consolidated. **The SKF demerger distorts the history**: SKF India's figures before FY26 include the industrial business, and SKF India (Industrial) has only one or two years on its own. None of these companies publishes an order book, so there is no order-cover tab. Hover over a starred name for its caveat.",
             ],
+            embed: 'metrics',
         },
         {
-            heading: 'The value chain, and who sits where',
+            heading: '3. The sector',
             body: [
-                'Five companies, four different positions.',
+                "India's bearing market is roughly $5.2bn and unusually concentrated: the top five suppliers hold about 60%, with SKF and Schaeffler alone around 37%, followed by Timken, NBC (the CK Birla company) and NRB. Vehicle and machine makers buy more than half; the rest is replacement.",
             ],
             points: [
                 {
-                    label: 'Component supplier to the whole industry — Harsha Engineers',
-                    text: 'Brass, steel and polyamide cages, plus bushings and stampings. **Its customers are its own sector\'s leaders,** which means it grows with total industry volume and with the majors\' willingness to outsource. Top-ten customers are about 80% of revenue and the ranking among them rotates; Indian wallet share is 80-90%, and one plant is said to be at 95-97%. That is near-monopoly supply, with the corresponding hostage problem.',
+                    label: 'A bearing is designed in, not bought in',
+                    text: "A vehicle or machine maker selects a bearing while designing a gearbox, axle or motor, tests it for months and then buys it for the life of the programme, typically five to seven years and far longer for a locomotive. Changing supplier means re-testing and carrying the risk of a failure. **This is why nominations won today are revenue in 2029**, and why share moves only at the next platform.",
                 },
                 {
-                    label: 'Designer-owner in a defended niche — NRB Bearings',
-                    text: 'Needle and cylindrical roller bearings, where compactness matters — transmissions, chassis, steering. About 70% of its applications are common to petrol, hybrid and electric drivetrains, so it is largely indifferent to the transition. It owns the customer relationship and the design, sells 75% domestic and 25% export, and is pushing into aerospace, robotics and industrial adjacencies.',
+                    label: 'The aftermarket is where the money is',
+                    text: "Bearings wear out, and replacements are sold through distributors under the maker's brand, against a background of fake products that makes the brand the buyer's only assurance. SKF says original-equipment margins are high single digits and distribution margins high double digits. **Any bearing maker's margin is therefore mostly a statement about its mix.**",
                 },
                 {
-                    label: 'Industrial catalogue and services — SKF India (Industrial)',
-                    text: 'The full industrial range sold 54% to original-equipment customers and 34% through distribution, plus a growing services business (remanufacturing, condition monitoring, running steel-mill maintenance shops) at 6-7% of revenue. **Services are the most defensible revenue in the sector** because they attach the supplier to the customer\'s uptime rather than to a purchase order.',
+                    label: 'The technology sits with the global parents',
+                    text: "Performance comes from steel cleanliness, heat treatment, grinding to fractions of a micron, cage design, seals and grease, and increasingly from electrical insulation for electric motors. None of that development happens in the listed Indian arms of the multinationals. **NRB and Harsha own their design and process knowledge**, which makes them more interesting as businesses and more ordinary in their returns.",
                 },
                 {
-                    label: 'Automotive catalogue — SKF India, and Timken India in its mobile segment',
-                    text: 'Two-wheeler, passenger-car and commercial-vehicle bearings sold to vehicle makers and through the automotive aftermarket. SKF\'s automotive entity is 62% original equipment (two-wheelers are 54% of that), 20% aftermarket. Volume follows vehicle production; content per vehicle rises slowly.',
+                    label: 'Steel and contracts',
+                    text: "Steel rose about ₹5,000 a tonne this year. Vehicle and truck makers accept price rises with a lag of one to two quarters; railways, public-sector and cement customers hold fixed annual rate contracts until renewal. Distributors reprice fastest.",
                 },
                 {
-                    label: 'Heavy and rail-weighted industrial — Timken India',
-                    text: 'Tapered and spherical roller bearings for railways (22% of revenue), off-highway and heavy trucks, and process industries such as steel and wind gearboxes. **Railways is the franchise: locomotive and wagon bearings are approved products with long qualification and a captive buyer** — which also means its growth is hostage to the Railways\' budget, which this quarter was diverted towards defence and infrastructure.',
+                    label: 'What these companies actually depend on',
+                    text: "**NRB** depends on European car and truck programmes and its own new nominations (a quarter of sales is exported). **Harsha** depends on the whole industry's volume and on the majors continuing to outsource cages. **SKF Industrial** depends on Indian factory spending, wind and distribution. **Timken** depends on the Railways' budget and on its parent's export allocation. **SKF India** depends on two-wheeler and car production. **Buy each for what it actually depends on, not for the sector label.**",
+                },
+            ],
+            tables: [
+                {
+                    caption: 'Profit pools, from filed figures',
+                    columns: ['Model', 'Who', 'Operating margin (last five quarters)', 'Return on capital (FY26)', 'Five-year cash conversion'],
+                    rows: [
+                        ['Designer-owner in a niche', 'NRB', '16–18%', '18%', '**56%**'],
+                        ['Component supplier to the industry', 'Harsha', '14–15%', '13%', '**62%**'],
+                        ['Industrial catalogue and services', 'SKF India (Industrial), Timken', '9–22%', '18–30%', '**26–54%**'],
+                        ['Automotive catalogue', 'SKF India', '6–15%', '24%', '**60%**'],
+                    ],
                 },
             ],
         },
         {
-            heading: 'Whose moat is it? The parent-subsidiary question',
+            heading: '4. Moat (comparative)',
             body: [
-                'This is the most important analytical question in the sector and it is rarely asked, because the numbers of the multinational subsidiaries look so good.',
-                '**Timken India.** The parent owns 80%. It has divested its belts business and said in May that it is divesting its global automotive original-equipment business. Asked what that means for India, management deflected — India\'s focus is off-highway, heavy truck and rail. More revealing was the answer on capacity: global lines "can be moved around and serve the market where there is a better chance of making more money". **India\'s exports and inter-company sales, about a fifth of revenue, are therefore an allocation decision made in Ohio, not a competitive position owned in Jamshedpur.** Roughly a quarter of revenue is traded product bought from the group rather than made in India.',
-                '**SKF India (Industrial).** An analyst asked on its first call why an Ahmedabad factory, the lubrication business and a wind-bearing business sit outside the listed company and are sold through it as traded goods, citing how 3M and Bosch consolidated theirs. Management said a merger is "not actively considering". **Minority shareholders are therefore buying a distribution and manufacturing vehicle while some of the group\'s Indian profit pools stay in unlisted hands.** The managing director who presented that first call left for a regional role six weeks later.',
-                '**SKF India (automotive).** Post-demerger it buys and re-sells goods from its industrial sibling at a related-party markup — 10% of its revenue is sales back to the industrial entity — and its capital spending is explicitly "primarily for reducing our dependency on industrial". That is an admission that a chunk of today\'s margin belongs to a related party.',
-                '**By contrast, NRB and Harsha own their positions outright** — with the ordinary consequences: no global catalogue to fall back on, no parent to fund a downturn, and returns that look pedestrian next to SKF\'s 30%. **The premium multiples in this sector are attached to the companies with the least control over their own strategy.** That is not a reason to avoid them, but it should be priced.',
+                "Five things protect profits here. The grid grades each company on each one; hover over a grade for the reason. How each company's advantage works is explained in Tab 2.",
+            ],
+            embed: 'moat',
+            embedFirst: true,
+            points: [
+                {
+                    label: 'Lasting: designed in for the life of a programme',
+                    text: "Every company here benefits from being designed into a gearbox, axle, locomotive or wind turbine and re-ordered for years. **NRB** holds the nominations itself; **Timken**'s approved railway bearings take years to qualify and have a captive buyer; **SKF Industrial**'s services (remanufacturing, condition monitoring, running steel-mill maintenance shops) attach it to customers' uptime. These edges should last as long as the programmes do.",
+                },
+                {
+                    label: 'Lasting but not owned: the parent’s catalogue',
+                    text: "**Timken, SKF Industrial and SKF India** sell a global catalogue and brand they do not own. The parent decides export volumes (Timken's parent said production lines 'can be moved around' to wherever it makes more money), keeps some Indian businesses outside the listed company (SKF's Ahmedabad factory, lubrication and wind-bearing businesses) and takes royalties. The moat lasts; the question is how much of it minority shareholders get.",
+                },
+                {
+                    label: 'Wearing away: the automotive aftermarket',
+                    text: "**SKF India**'s replacement business has plateaued and it has been discounting, as cheap imported and fake bearings compete at the bottom of the market. Brand still matters, but this is where margins are under the most pressure.",
+                },
+                {
+                    label: 'A different kind of moat: Harsha',
+                    text: "**Harsha** has 80–90% of India's outsourced cage market and supplies every major, so its volume is the industry's volume. Its risk is not a rival cage maker but its customers deciding to make cages themselves or move volume between their own plants. That makes it a strong but hostage position.",
+                },
+                {
+                    label: 'Competitors outside the list',
+                    text: "Schaeffler India (the largest, not in this sector list), NBC (National Engineering Industries), NTN, NSK and JTEKT, plus imported and fake replacement bearings.",
+                },
             ],
         },
         {
-            heading: 'Are the margins structural?',
+            heading: '5. Margins (comparative)',
             body: [
-                'Three things decide a bearing maker\'s margin: mix between original equipment and aftermarket, how quickly steel moves through the contract, and capacity utilisation. None of them is about being clever.',
+                "Are the margins structural? Three things decide a bearing maker's margin: the mix between vehicle-maker and replacement sales, how quickly steel moves through the contract, and how full the plants are.",
+                "Whether the profit turns into cash is in section 2 (the **Cash conversion** and **Free cash flow** tabs) and on each company card in Tab 2.",
             ],
             points: [
                 {
-                    label: 'Mix is destiny',
-                    text: 'SKF Industrial\'s distribution share rose from 32% to 34% and that is the single most valuable trend in its business; it also guides that heavy original-equipment growth will dilute margin. SKF Automotive\'s aftermarket has plateaued and it has been discounting for two months. Timken\'s distribution segment is ₹154cr of a ₹929cr quarter. **Watch the distribution share, not the headline margin.**',
+                    label: 'Structural: NRB and the industrial catalogue',
+                    text: "**NRB** has held 16–18% for five quarters with index-linked steel pass-through and a one-to-two-quarter lag. **Timken** (18–22% in most quarters) and **SKF Industrial** earn well from distribution and heavy industrial work; SKF Industrial's distribution share rose from 32% to 34%, its single most valuable trend. **I expect these to hold**, though SKF Industrial guides its committed band to 14–16% and heavy original-equipment growth will dilute it.",
                 },
                 {
-                    label: 'Steel passes through, but not everywhere and not at once',
-                    text: 'Steel rose about ₹5,000 a tonne this year (₹1,500-1,600 in January, ₹3,500 in April). Timken passed it to heavy truck and tractor customers but **not** to railways, public-sector and cement customers, who hold fixed annual rate contracts until renewal — a structural lag in exactly its largest segment. NRB has index-linked pass-through with a one-to-two-quarter lag and holds 18-20% margins. Harsha has a roughly four-month lag and lost margin on an 8% input rise. SKF Automotive\'s Q1 gross margin of 51% against 42.5% in the previous quarter was partly inventory revaluation, not pricing.',
+                    label: 'Cyclical: capacity filling and steel lags',
+                    text: "**Timken** could not pass steel to railway, public-sector and cement customers on fixed annual contracts, and its Bharuch plant is only near breakeven at 40–45% utilisation. **Harsha** lost margin on an 8% input rise with a four-month lag, and its new plant lost about ₹4cr in a quarter. Both should recover as plants fill and contracts reset.",
                 },
                 {
-                    label: 'Utilisation and the J-curve',
-                    text: 'Several of these companies are spending heavily into capacity that dilutes returns before it adds to them. SKF Industrial\'s ₹900-950cr Pune plant produces from 2028 with a five-to-seven-year payback — roughly 14-20% pre-tax against a business currently earning about 30%. Timken\'s Bharuch plant is at 40-45% utilisation on spherical roller lines and only "very close to breakeven", and its Jamshedpur rail plant has slipped to the end of the calendar year. Harsha\'s greenfield unit lost about ₹4cr in the quarter. **For the next two years, capital spending is a headwind to returns across this sector, not a driver of them.**',
+                    label: 'Not structural: one-offs and related-party margins',
+                    text: "**SKF India**'s Q1 gross margin jumped from 42.5% to 51%, partly from revaluing stock rather than pricing, and about 10% of its revenue is sales to its industrial sibling on related-party terms. **Harsha**'s solar contracting arm earns only 7–8%. Strip these out before judging either.",
                 },
                 {
-                    label: 'What is genuinely structural',
-                    text: 'Aftermarket brand value, service and remanufacturing contracts, and programme nominations already won. SKF\'s services at 6-7% of revenue growing double-digit, and NRB\'s ₹1,100cr of lifetime nominations, are the two pieces of durable economics in this sector that do not depend on a cycle or a parent.',
+                    label: 'Working capital: the biggest drains',
+                    text: "Over FY22–FY26, **Timken** tied up ₹690cr in working capital, mostly customer bills (₹423cr) and stock (₹410cr), partly offset by suppliers. **SKF India** tied up ₹503cr, mostly customer bills (₹775cr before the demerger), offset by paying suppliers more slowly. **NRB** tied up ₹277cr, almost all in stock (₹241cr).",
+                },
+                {
+                    label: 'Working capital: getting worse',
+                    text: "**Harsha**'s five-year cash conversion is a respectable 62%, but it fell to 28% in FY26 as the new plant and solar contracting absorbed cash. **Timken**'s suppliers are now paid in 105 days (from 76–82), which has so far helped, but its customers take 85 days to pay, up from 75.",
+                },
+                {
+                    label: 'Working capital: improving',
+                    text: "**NRB** turned more than all of its FY26 operating profit into cash (104%) and cut stock from 349 to 302 days. **Timken**'s stock fell from 171 to 136 days over five years. **SKF India**'s cash cycle fell to 33 days after the demerger.",
+                },
+                {
+                    label: 'Working capital: built into the business',
+                    text: "**NRB** will always carry about 300 days of stock across thousands of part numbers for export customers, and **Harsha** about 170 days across many cage sizes for 80+ plants. **Judge each against its own history, not against the others.**",
                 },
             ],
         },
         {
-            heading: 'Competition and the shape of the market',
+            heading: '6. Growth and capex (comparative)',
             body: [
-                'India\'s bearing market is roughly $5.2bn and unusually concentrated: the top five suppliers hold about 60%, with SKF and Schaeffler alone around 37%, followed by Timken, NBC (the CK Birla company) and NRB. Original-equipment customers are more than half the market; the rest is replacement.',
-                '**Competition is by segment, not across the board.** Schaeffler and SKF fight for automotive and general industrial; Timken is strongest in tapered and spherical rollers for rail, off-highway and process; NRB owns the needle-roller niche where compactness matters and where its competitors are Schaeffler\'s INA, NTN and JTEKT; NBC holds a large share of the Indian aftermarket brand space. **Nobody is trying to take a competitor\'s installed programme mid-life, because the customer will not re-validate for a small saving** — share moves at the next platform, which is why nominations are the leading indicator and quarterly revenue is the lagging one.',
-                '**The genuine threat is at the bottom, not the top:** imported and spurious replacement bearings, which SKF\'s automotive management describes as "a completely different game… many competitors… spurious products". That pressure hits the aftermarket margin that funds everything else.',
-                '**And Harsha faces a different competitive structure entirely.** Its risk is not a rival cage maker but its customers deciding to make cages themselves, or shifting volumes between their own plants. Being at 80-90% of the Indian wallet is both its moat and the reason its growth is capped at the industry\'s growth rate plus outsourcing share.',
+                "Where the next five years of growth come from, how each company has done against what it promised, and my own estimate of earnings growth.",
+            ],
+            points: [
+                {
+                    label: 'Growth driver: railways, when the money returns',
+                    text: "**Timken**'s rail revenue of ₹200cr a quarter grew only about 3% because government money was diverted to defence and infrastructure. The fleet and freight plans have not changed, so this is deferral rather than loss, and Timken's new Jamshedpur rail plant is being built for it. It should last a decade once spending resumes.",
+                },
+                {
+                    label: 'Growth driver: industrial spending and wind',
+                    text: "**Timken**'s process-industry sales grew 28–30% on steel mills and gearboxes for 5 MW-plus wind turbines; **SKF Industrial** won a ₹140cr wind gearbox order. Wind is the best new industrial use for bearings because the units are large, tolerances tight and replacement real. This follows India's factory and renewable investment for years.",
+                },
+                {
+                    label: 'Growth driver: exports and localisation',
+                    text: "**NRB**'s General Motors win requires US-made bearings, which is why its South Carolina plant matters; its Italian joint venture for industrial bearings starts in April 2027. **Harsha** is adding steel-cage capacity in China and trying to fix Romania. **Timken**'s exports grew 21%, but volumes are allocated by its parent.",
+                },
+                {
+                    label: 'Growth driver: electric vehicles, later than hoped',
+                    text: "**SKF India** says its electric-vehicle platforms produce from mid-2027 with meaningful revenue only in late calendar 2028. **NRB** is comfortable either way, since about 70% of its applications work in any drivetrain. Nobody here gets an electric-vehicle earnings boost before 2028.",
+                },
+                {
+                    label: 'Delivering or beating',
+                    text: "**NRB** grew 19% in Q1 and raised its FY31 aspiration to about ₹2,730–3,000cr. **Harsha**'s Indian engineering business grew 21%, with bushings up 35% and stampings 31%. **SKF India** raised guidance to about 20% revenue growth.",
+                },
+                {
+                    label: 'Cautious',
+                    text: "**Timken** gives no numbers and blamed rail tenders for slow growth. **SKF India (Industrial)** guided its committed margin band down to 14–16%.",
+                },
+                {
+                    label: 'Missed',
+                    text: "**Harsha** trimmed its margin guidance on the same call it reaffirmed it; its new plant needs about three times its current run rate to hit its ₹140cr target, and Romania's breakeven depends on one customer returning.",
+                },
+                {
+                    label: 'Mixed or silent',
+                    text: "**NRB** guides by extrapolation rather than plan, and its aerospace order book has been quoted at both ₹50cr and ₹70cr. **SKF Industrial** would not say whether the parent's Indian businesses outside the listed company will be folded in.",
+                },
+                {
+                    label: 'My outlook',
+                    text: "Bearing demand grows with Indian vehicle and factory output plus exports, roughly 10–14% a year in value. **I expect the companies that own their positions (NRB, Harsha) to compound at 16–17%, and the multinational subsidiaries at 14–15% as new plants weigh on returns for two years.**",
+                },
+            ],
+            tables: [
+                {
+                    caption: 'My estimate of earnings growth over the next three to five years',
+                    numericColumns: [2],
+                    columns: ['Company', 'What drives it', 'Earnings growth: low / base / high'],
+                    rows: [
+                        ['NRB Bearing', 'European programmes, US localisation, industrial and aerospace', '10% / **17%** / 22%'],
+                        ['Harsha Engineers Int', 'Industry cage volumes; Romania and new plant recovering', '10% / **16%** / 22%'],
+                        ['SKF India (Industrial)', 'Distribution, services, wind; Pune plant from 2028', '10% / **14%** / 18%'],
+                        ['Timken India', 'Railways, process industries, exports', '10% / **15%** / 20%'],
+                        ['SKF India', 'Two-wheelers and cars; EV content from 2028', '8% / **14%** / 18%'],
+                    ],
+                    note: 'My own judgement, not guidance. The growth each price needs is in the live valuation table in section 8 (NRB is left out; see there).',
+                },
             ],
         },
         {
-            heading: 'Where the next five years of growth come from',
+            heading: '7. Risk factors',
             body: [
-                '**Railways, when the money returns.** Timken\'s rail revenue of ₹200cr grew only about 3% because government funds were "diverted to defence and infrastructure" and tenders slipped. The fleet and freight-tonnage plans have not changed, so this is deferral rather than loss — and Timken\'s new Jamshedpur rail plant is being built for it.',
-                '**Industrial capital spending and wind.** Timken\'s process-industry segment grew 28-30% on steel mills running for export and on gearboxes for 5MW-plus wind turbines; SKF Industrial won a ₹140cr wind gearbox order. **Wind is the best new industrial application in bearings because the units are large, the tolerances tight and the replacement cycle real.**',
-                '**Electrification, later than the enthusiasm suggests.** SKF Automotive says its electric-vehicle platforms are developmental, with production from mid-2027 and meaningful revenue only in the last quarter of calendar 2028; a new passenger-car wheel-end localisation win starts at the same time. NRB\'s position is more comfortable — about 70% of its applications are drivetrain-agnostic — but nobody here gets an electric-vehicle earnings boost before 2028.',
-                '**Localisation and export programmes.** NRB\'s General Motors planet-pin win is open only to bearings made in America, which is why its South Carolina plant matters; its Italian joint venture for industrial cylindrical roller bearings commissions in April 2027 at about ₹130cr of capacity. Harsha is expanding steel-cage capacity in China ($10m, commissioning FY28) and trying to fix Romania.',
-                '**Aerospace and defence, as an option not a plan.** NRB targets ₹300cr of revenue and ₹90cr of profit from aerospace by 2031 against an order book of roughly ₹50cr today, and it has a Sukhoi-30 spherical plain bearing that few companies worldwide can make. Treat the 2031 number as an aspiration; treat the qualification as real.',
+                "The risks fall into four groups. For each, what management addressed and what it left unanswered.",
+            ],
+            points: [
+                {
+                    label: 'The parent decides',
+                    text: "**Timken**'s parent is divesting its global automotive business and says production lines can be moved to wherever it earns more; asked what that means for India, management deflected. **SKF**'s parent keeps an Ahmedabad factory, lubrication and wind-bearing businesses outside the listed company and said a merger is 'not actively' being considered. About a quarter of Timken's revenue is traded product from the group.",
+                },
+                {
+                    label: 'Capital spending ahead of returns',
+                    text: "**SKF Industrial**'s ₹900–950cr Pune plant produces from 2028 with a five-to-seven-year payback, roughly 14–20% pre-tax against a business earning about 30%. **Timken**'s Bharuch plant is at 40–45% utilisation and its rail plant has slipped to the end of the year. **Harsha**'s new plant lost money. Managements gave timelines but not returns.",
+                },
+                {
+                    label: 'Customer concentration and cycles',
+                    text: "**Harsha**'s top ten customers are about 80% of revenue, and a major taking cages back in-house would hurt. A two-wheeler or tractor downturn would hit **SKF India** and Harsha's volumes together. **Timken** depends on railway budgets.",
+                },
+                {
+                    label: 'Leadership and disclosure',
+                    text: "**SKF Industrial**'s managing director left weeks after its first investor call. **NRB** guides by extrapolation. **SKF India**'s margin includes a stock gain and related-party sales it is spending to reduce. And for investors on this site: **NRB's market data here is wrong**, so its live multiples cannot be used.",
+                },
             ],
         },
         {
-            heading: 'What would change the picture',
+            heading: '8. Valuation (comparative)',
             body: [
-                '**For the better:** railway ordering resuming, which lifts Timken immediately; SKF Industrial\'s distribution share continuing to climb, or the parent folding the Ahmedabad factory, lubrication and wind-bearing businesses into the listed company; Harsha turning Romania around and ramping its greenfield unit, which would lift group returns without any change in the core; NRB converting its ₹1,100cr of nominations and its US localisation win on schedule.',
-                '**For the worse:** a global parent re-allocating export volumes away from India; the capital-spending J-curves at SKF Industrial and Timken taking longer than promised; steel staying high while fixed annual rate contracts with railways and public-sector customers hold prices down; a two-wheeler or tractor downturn, which hits SKF Automotive and Harsha\'s core cage volumes together; and for Harsha specifically, any sign of a major customer taking cages back in-house.',
+                "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it gives credit for cash and charges for debt. Where the two disagree, the balance sheet is the reason.",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **17% at 27x, 19% at 32x, 20% at 35–37x and 26% at 60x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **NRB is left out of the live table** because this site's price record for it belongs to a different company; on Screener's figures its price needs a little more growth than I expect.",
             ],
+            points: [
+                {
+                    label: 'What EV/EBITDA changes',
+                    text: "Everyone except NRB holds net cash, so the two measures mostly agree. **SKF India** looks cheaper on EV/EBITDA because its cash is large relative to its smaller post-demerger business. **Timken**'s price is high on both.",
+                },
+                {
+                    label: 'Reasonable',
+                    text: "**Harsha**: the price roughly matches the growth I expect, with the Romanian and new-plant problems as upside if fixed.",
+                },
+                {
+                    label: 'Full',
+                    text: "**NRB** (on Screener's price): a little ahead of what I expect.",
+                },
+                {
+                    label: 'Stretched',
+                    text: "**Timken** and **SKF India (Industrial)**: good franchises whose prices need several points more growth than I expect while their new plants dilute returns. **SKF India**: a volume business priced above the growth I expect.",
+                },
+            ],
+            embed: 'valuation',
         },
     ],
 
     verdicts: [
         {
-            company: 'NRB Bearing',
-            stance: 'SCALEUP',
-            what: 'India\'s largest home-grown bearing company: needle and cylindrical roller bearings for transmissions, chassis and steering, with a US plant, a German presence and an Italian joint venture.',
-            view: 'The only company here that owns its designs, its nominations and its customer relationships. Content in every BMW 1 to 7 series and Mercedes A-class to Maybach transmission, a BMW steering programme from 2027, and lifetime nominations past ₹1,100cr including a General Motors programme restricted to US-made bearings — the reason its South Carolina plant exists. About 70% of applications work in petrol, hybrid and electric drivetrains, so it is largely indifferent to the transition. Margins of 18-20% with index-linked pass-through, and a genuine option in aerospace (Sukhoi-30 spherical plain bearings, a product fewer than five companies worldwide supply).',
-            watch: 'Our database\'s figures for NRB are corrupted — it shows a ₹75cr market value against actual quarterly revenue of ₹370cr — so check the real price first. Management guides by extrapolation rather than plan (the FY31 target moved from ₹2,500cr to "₹2,730cr, aspirational 3,000"), aerospace order-book numbers have shifted between ₹50cr and ₹70cr across interviews, and capital spending of ₹270cr earns only about 1.3x asset turns.',
+            company: 'NRB Bearing', rank: 1, stance: 'SCALEUP', segment: OWN,
+            what: "India's largest home-grown bearing company: needle and cylindrical roller bearings for transmissions, chassis and steering, with a US plant, a German presence and an Italian joint venture.",
+            view: "**The only company here that owns its designs, nominations and customers.** Content in every BMW and Mercedes transmission, more than ₹1,100cr of lifetime nominations including a US-only General Motors programme, 16–18% margins with index-linked pass-through, and a real aerospace qualification. This site's price data for it is wrong, so check the price on the exchange; on Screener's figures it needs a little more than my ~17% estimate.",
+            watch: 'Nominations converting; the US and Italian plants; the aerospace order book.',
         },
         {
-            company: 'Harsha Engineers Int',
-            stance: 'SCALEUP',
-            what: 'The world\'s largest independent maker of precision bearing cages — brass, steel and polyamide — supplying Timken, Schaeffler, SKF, NBC, FAG, NSK and NTN across 80-plus of their plants, plus bushings and stampings.',
-            view: 'A structural position most component makers would envy: 80-90% of the Indian cage wallet, top-ten customers at about 80% of revenue with the ranking rotating between them, and volumes that track the entire industry rather than any one player. The Indian engineering business grew 21% and adjacent products are scaling fast — bushings up 35%, stampings up 31%. At the cheapest multiple in the sector, you are buying the industry\'s volume through its supplier.',
-            watch: 'Group returns of about 13% are dragged by three things that have nothing to do with cages: Romania still loses money and breakeven depends on one customer returning; the new Harsha Advantage plant needs roughly three times its current quarterly run-rate to hit its ₹140cr target and lost ₹4cr this quarter; and a low-margin solar contracting business adds ₹200cr of revenue at 7-8%. Margin guidance was quietly trimmed on the same call it was reaffirmed.',
+            company: 'Harsha Engineers Int', rank: 2, stance: 'SCALEUP', segment: OWN,
+            what: "The world's largest independent maker of precision bearing cages (brass, steel, polyamide), supplying Timken, Schaeffler, SKF, NBC, NSK and NTN across 80+ plants, plus bushings and stampings.",
+            view: "**The industry's volume through its supplier.** 80–90% of the Indian outsourced cage market, with the core business growing 21%. Group returns of about 13% are dragged down by a loss-making Romanian unit, a slow new plant and low-margin solar contracting. The price roughly matches my ~16% estimate.",
+            watch: 'Romania breakeven; the new plant’s ramp; any customer taking cages in-house.',
         },
         {
-            company: 'SKF India (Industrial)',
-            stance: 'PRICED',
-            what: 'The industrial half of SKF India after the demerger: the full industrial bearing catalogue sold 54% to original-equipment makers and 34% through distribution, plus remanufacturing and condition-monitoring services.',
-            view: 'The best economics in the sector — about 30% return on capital — because it is weighted to industrial distribution, where margins are high double-digit against high single-digit at original-equipment customers, and because its services arm (6-7% of revenue, growing double-digit) attaches it to customers\' uptime rather than to purchase orders. Wind gearbox and tractor order wins show the catalogue still opens doors.',
-            watch: 'Three things argue for waiting. The committed margin band was guided down to 14-16% (an analyst noted the earlier range was 16-19%, which management did not dispute), a ₹900-950cr Pune plant produces only from 2028 with a five-to-seven-year payback that is dilutive to a 30%-return business, and the managing director left weeks after the first investor call. An Ahmedabad factory, the lubrication business and a wind-bearing business remain outside the listed company and are sold through it as traded goods.',
+            company: 'SKF India (Industrial)', rank: 3, stance: 'PRICED', segment: MNC,
+            what: "The industrial half of SKF India after the demerger: the full industrial bearing range sold to machine makers and through distributors, plus remanufacturing and condition-monitoring services.",
+            view: "**The best economics in the sector at the wrong moment.** About 30% return on capital from distribution (34% of sales) and services. But the committed margin band was guided down to 14–16%, a ₹900–950cr plant will dilute returns until 2028 and beyond, and the managing director left weeks after listing. The price needs more than my ~14% estimate.",
+            watch: 'Distribution share; the Pune plant; whether the parent folds its outside businesses in.',
         },
         {
-            company: 'Timken India',
-            stance: 'PRICED',
-            what: 'Tapered and spherical roller bearings for railways (22% of revenue), off-highway and heavy trucks, process industries and exports; 80% owned by Timken of the United States.',
-            view: 'India\'s strongest position in railway bearings, which is an approval-led business with a captive buyer and long qualification — and a new Jamshedpur rail plant being built for it. Process industries grew 28-30% on steel and 5MW-plus wind gearboxes, and exports grew 21% with US demand resilient. Gross margin improved 100 basis points to 39.9% despite steel rising about ₹5,000 a tonne.',
-            watch: 'Rail revenue grew only about 3% as government money was diverted; steel cannot be passed to railway, public-sector and cement customers until fixed annual rate contracts renew; Bharuch is at 40-45% utilisation and only "very close to breakeven"; and about a quarter of revenue is traded product from the group. Most importantly, the parent is divesting its global automotive business and says lines can be moved between countries — India\'s export allocation is decided abroad.',
+            company: 'Timken India', rank: 4, stance: 'PRICED', segment: MNC,
+            what: "Tapered and spherical roller bearings for railways (22% of revenue), off-highway and heavy trucks, process industries and exports; majority-owned by Timken of the US.",
+            view: "**India's best railway-bearing franchise, with strategy set abroad.** Process industries grew 28–30% and exports 21%, but rail grew only 3%, steel cannot be passed to fixed-contract customers, Bharuch is near breakeven, and about a quarter of revenue is traded group product. The price needs far more than my ~15% estimate.",
+            watch: 'Railway ordering; Bharuch utilisation; the parent’s export allocation.',
         },
         {
-            company: 'SKF India',
-            stance: 'PRICED',
-            what: 'The automotive half of SKF India after the demerger: bearings and units for two-wheelers (54% of original-equipment sales), passenger cars and commercial vehicles, plus an automotive aftermarket business.',
-            view: 'A competent volume business in the largest, most competitive part of the market, with guidance raised to about 20% revenue growth and roughly 17% margins, capacity about 93% loaded and a debottlenecking plus new Haridwar lines arriving in FY27. It has the SKF brand in the replacement channel, which is worth a great deal against spurious product.',
-            watch: 'The margin quality is the question: Q1 gross margin of 51% against 42.5% in the previous quarter was attributed partly to inventory revaluation, and about 10% of revenue is sales to its industrial sibling at related-party terms, with capital spending explicitly aimed at reducing that dependence. The electric-vehicle content that justifies the multiple is developmental, with production from mid-2027 and meaningful revenue only in late calendar 2028, and the aftermarket has plateaued with discounting in the last two months.',
+            company: 'SKF India', rank: 5, stance: 'PRICED', segment: MNC,
+            what: "The automotive half of SKF India after the demerger: bearings and units for two-wheelers, cars and commercial vehicles, plus automotive replacement sales.",
+            view: "**A competent volume business with questions about its margin.** Guidance was raised to about 20% revenue growth and plants are about 93% loaded, but Q1's margin was helped by revaluing stock, about 10% of revenue is related-party sales, the aftermarket has plateaued, and EV content arrives only in late 2028. The price needs more than my ~14% estimate.",
+            watch: 'Margins without one-offs; EV programme timing; related-party sales falling.',
         },
     ],
 
     closing: {
-        heading: 'What I actually think',
+        heading: '9. Summary review',
         body: [
-            '**Own what you can own.** NRB Bearing is the only company in this sector whose competitive position belongs to its own shareholders: its designs, its programme nominations, its US localisation win, its aerospace qualification. The reported financials are ordinary next to SKF\'s, and the management guides by extrapolation rather than plan, but a supplier with content in every BMW and Mercedes transmission and more than ₹1,100cr of lifetime nominations is a business, not a cycle. Check the price independently — our data for it is wrong.',
-            '**Harsha Engineers Int is the cheapest way to own the industry rather than a company in it.** Cages are outsourced by every major, Harsha has 80-90% of the Indian wallet, and its volumes therefore rise with total bearing demand. Everything that makes it look mediocre — Romania, the greenfield ramp, solar contracting — is separable from the core, which is exactly why the cheapness is interesting. The ramp of the new plant is the event to watch.',
-            '**SKF India (Industrial) is the franchise I would most like to own at a better time.** Industrial distribution and services are the highest-quality revenue in bearings, and a 30% return on capital is not an accident. But the next two years are a capital-spending J-curve into a plant earning far less than the existing business, the committed margin range has been walked down, the leadership changed at birth, and profitable pieces of the group sit outside the listed company. Those are all reasons to wait rather than to avoid.',
-            '**Timken India owns the best single niche here — railway bearings — inside a company whose strategy is set in Ohio.** The rail plant, the process-industry growth and the export strength are real. So is the fact that a fifth of revenue depends on an allocation decision by a parent that has just told the market it moves production to wherever it earns more, and that a quarter of revenue is simply traded product.',
-            '**SKF India, the automotive entity, is the most ordinary proposition of the five:** a two-wheeler and passenger-car volume business with a strong brand in the replacement channel, whose electric-vehicle story does not arrive until late 2028 and whose current margin includes an inventory gain and a related-party arrangement it is spending money to reduce.',
-            'The habit I would keep across this sector: read the distribution and aftermarket share rather than the headline margin, read nominations rather than quarterly orders, and ask every time whether the thing being praised — a catalogue, a technology, an export contract — actually belongs to the company you are buying.',
+            "**Indian-owned.** **NRB: own.** The only company whose position belongs to its own shareholders: designs, nominations, a US localisation win and an aerospace qualification. Check its price on the exchange; this site's data for it is wrong. **Harsha: own.** The cheapest way to own the whole industry's volume, with the diluting pieces separable from a good core.",
+            "**Multinational subsidiaries.** **SKF India (Industrial): wait.** The best franchise, but two years of plant spending, a lower margin band and a leadership change argue for a better entry. **Timken India: wait.** The best railway niche inside a company whose export strategy is set abroad. **SKF India: pass.** A two-wheeler and car volume business whose EV story arrives only in late 2028.",
+            "**What would change my view.** Railway ordering resuming (Timken); SKF Industrial's distribution share climbing or the parent folding in its outside businesses; Harsha fixing Romania and its new plant; NRB converting nominations on schedule. For the worse: a parent moving export volume away from India, steel staying high on fixed contracts, or a two-wheeler and tractor downturn.",
+            "**What to watch next quarter.** NRB's nominations and US plant; Harsha's new plant and Romania; SKF Industrial's distribution share and Pune spend; Timken's rail revenue; SKF India's margin without one-offs.",
         ],
         bottomLine:
-            'Bearings is an industry with real moats — design-in for the life of a programme, an aftermarket protected by brand, and services attached to uptime — but in India three of the five listed vehicles rent those moats from a parent. Own the two that own their own positions (NRB Bearing on its designs and nominations, Harsha Engineers Int on the industry\'s cage volumes), and wait for a better entry into SKF India (Industrial), Timken India and SKF India rather than paying a premium for someone else\'s franchise.',
+            "Bearings has real moats (design-in for the life of a programme, a brand-protected aftermarket and services tied to uptime), but three of the five listed companies rent them from a parent. Own the two that own their positions (NRB Bearing and Harsha Engineers Int) and wait for a better entry into SKF India (Industrial) and Timken India rather than paying a premium for someone else's franchise.",
     },
 
     sources: [
-        {
-            label: 'India bearings market: size, concentration and leading players — Astute Analytica',
-            url: 'https://www.astuteanalytica.com/industry-report/india-bearings-market',
-        },
-        {
-            label: 'India bearings market share and company landscape — Ken Research',
-            url: 'https://www.kenresearch.com/industry-reports/india-bearings-market',
-        },
-        {
-            label: 'Top bearing manufacturers in India and their positioning — Kompass',
-            url: 'https://in.solutions.kompass.com/blog/top-10-bearing-manufacturers-in-india/',
-        },
+        { label: 'Filed quarterly results, annual ratios and cash flows — Screener.in', url: 'https://www.screener.in/company/NRBBEARING/consolidated/' },
+        { label: 'India bearings market: size, concentration and leading players — Astute Analytica', url: 'https://www.astuteanalytica.com/industry-report/india-bearings-market' },
+        { label: 'India bearings market share and company landscape — Ken Research', url: 'https://www.kenresearch.com/industry-reports/india-bearings-market' },
+        { label: 'Top bearing manufacturers in India and their positioning — Kompass', url: 'https://in.solutions.kompass.com/blog/top-10-bearing-manufacturers-in-india/' },
     ],
 };
