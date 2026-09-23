@@ -56,42 +56,98 @@ export function byRank(verdicts: CompanyVerdict[]): CompanyVerdict[] {
 
 // ── Comparison tables ────────────────────────────────────────────────────────
 
+const GOOD_WORDS = /^(beat|delivered|strong|conservative|on track|ahead|reasonable|fair$)/i;
+const BAD_WORDS = /^(missed|walked back|cut|behind|stretched|speculative|cheap for a reason|avoid|hard to justify)/i;
+
+/** A cell whose leading **Word** becomes a coloured badge; the rest stays as text. */
+function BadgeCell({ text }: { text: string }) {
+    const m = text.match(/^\*\*(.+?)\*\*[\s:·—-]*(.*)$/);
+    if (!m) return <RichText text={text} />;
+    const [, word, rest] = m;
+    const tone = GOOD_WORDS.test(word)
+        ? 'bg-[#E3F4EA] text-[#1E7B45] border-[#BFE3CD]'
+        : BAD_WORDS.test(word)
+            ? 'bg-[#FDECEC] text-[#B42323] border-[#F5C6C6]'
+            : 'bg-[#FFF4E0] text-[#9A5B00] border-[#F5DDB0]';
+    return (
+        <span>
+            <span className={`inline-block px-1.5 py-[1px] mr-1.5 rounded border text-[10px] font-semibold whitespace-nowrap ${tone}`}>{word}</span>
+            {rest && <RichText text={rest} />}
+        </span>
+    );
+}
+
+function TableCell({ table, cell, ci }: { table: DataTable; cell: string; ci: number }) {
+    return ci === table.badgeColumn ? <BadgeCell text={cell} /> : <RichText text={cell} />;
+}
+
+/** Text-heavy tables: one small box per row, the first cell as its title and the rest labelled beneath. */
+function DataCards({ table }: { table: DataTable }) {
+    return (
+        <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-3">
+            {table.rows.map((r, ri) => (
+                <div key={ri} className="border border-gray-200 rounded-lg bg-white px-3 py-2">
+                    <div className="text-[12px] font-semibold text-gray-800 mb-1">{r[0]}</div>
+                    <dl className="space-y-1">
+                        {r.slice(1).map((cell, k) => {
+                            const ci = k + 1;
+                            if (!cell || cell === '—') return null;
+                            return (
+                                <div key={ci}>
+                                    <dt className="text-[9.5px] font-semibold uppercase tracking-wide text-gray-400">{table.columns[ci]}</dt>
+                                    <dd className="text-[11.5px] text-gray-600 leading-snug m-0"><TableCell table={table} cell={cell} ci={ci} /></dd>
+                                </div>
+                            );
+                        })}
+                    </dl>
+                </div>
+            ))}
+        </div>
+    );
+}
+
 export function DataTableView({ table }: { table: DataTable }) {
+    const num = new Set(table.numericColumns ?? []);
     return (
         <div className="mt-3">
             {table.caption && (
                 <div className="text-[10px] font-semibold text-gray-600 uppercase tracking-wide mb-1.5">{table.caption}</div>
             )}
-            <div className="overflow-x-auto border border-gray-200 rounded-lg">
-                <table className="w-full text-[11px] border-collapse">
-                    <thead>
-                        <tr className="bg-[#F4F6F8]">
-                            {table.columns.map((c, i) => (
-                                <th
-                                    key={i}
-                                    className={`text-left font-semibold text-gray-600 px-2.5 py-1.5 border-b border-gray-200 align-bottom ${i === 0 ? 'sticky left-0 bg-[#F4F6F8] min-w-[120px]' : 'min-w-[110px]'}`}
-                                >
-                                    {c}
-                                </th>
-                            ))}
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {table.rows.map((r, ri) => (
-                            <tr key={ri} className="border-b border-gray-100 last:border-0 align-top">
-                                {r.map((cell, ci) => (
-                                    <td
-                                        key={ci}
-                                        className={`px-2.5 py-1.5 leading-relaxed ${ci === 0 ? 'sticky left-0 bg-white font-semibold text-gray-800' : 'text-gray-600'}`}
+            {table.layout === 'cards' ? <DataCards table={table} /> : (
+                <div className="overflow-x-auto border border-gray-200 rounded-lg">
+                    <table className="w-full text-[11.5px] border-collapse">
+                        <thead>
+                            <tr className="bg-[#F4F6F8]">
+                                {table.columns.map((c, i) => (
+                                    <th
+                                        key={i}
+                                        className={`font-semibold text-gray-600 px-2.5 py-1.5 border-b border-gray-200 align-bottom ${num.has(i) ? 'text-right' : 'text-left'} ${i === 0 ? 'sticky left-0 bg-[#F4F6F8] min-w-[120px]' : num.has(i) ? 'min-w-[72px]' : 'min-w-[110px]'}`}
                                     >
-                                        <RichText text={cell} />
-                                    </td>
+                                        {c}
+                                    </th>
                                 ))}
                             </tr>
-                        ))}
-                    </tbody>
-                </table>
-            </div>
+                        </thead>
+                        <tbody>
+                            {table.rows.map((r, ri) => {
+                                const zebra = ri % 2 === 1 ? 'bg-[#FAFBFC]' : 'bg-white';
+                                return (
+                                    <tr key={ri} className={`border-b border-gray-100 last:border-0 align-top ${zebra}`}>
+                                        {r.map((cell, ci) => (
+                                            <td
+                                                key={ci}
+                                                className={`px-2.5 py-1.5 leading-relaxed ${ci === 0 ? `sticky left-0 ${zebra} font-semibold text-gray-800 whitespace-nowrap` : num.has(ci) ? 'text-right tabular-nums text-gray-700 whitespace-nowrap' : 'text-gray-600'}`}
+                                            >
+                                                <TableCell table={table} cell={cell} ci={ci} />
+                                            </td>
+                                        ))}
+                                    </tr>
+                                );
+                            })}
+                        </tbody>
+                    </table>
+                </div>
+            )}
             {table.note && <p className="text-[10px] text-gray-400 mt-1.5 leading-relaxed">{table.note}</p>}
         </div>
     );

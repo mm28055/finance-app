@@ -10,7 +10,6 @@ import { RichText, StancePill, byRank } from './SectorOverviewBlocks';
 
 // Categorical slices for a stacked bar, dark to light so adjacent parts separate.
 const SLICE = ['#184f95', '#3987e5', '#6da7ec', '#9ec5f4', '#cde2fb', '#94a3b8', '#cbd5e1', '#e2e8f0'];
-const DARK_TEXT_FROM = 3;
 
 const LEVEL_STYLE: Record<BusinessProfile['difficulty']['level'], string> = {
     'Very high': 'bg-[#184f95] text-white',
@@ -21,33 +20,31 @@ const LEVEL_STYLE: Record<BusinessProfile['difficulty']['level'], string> = {
 
 const anchorId = (company: string) => `biz-${company.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
 
-function MixBar({ caption, parts, note }: { caption: string; parts: MixPart[]; note?: string }) {
+/**
+ * The same split drawn as an upright column: one slice per row, top to bottom,
+ * each slice's height proportional to its share (with a floor so small slices
+ * stay readable) and its label and share beside it.
+ */
+function VerticalMix({ caption, parts, note, height = 150 }: { caption: string; parts: MixPart[]; note?: string; height?: number }) {
     const total = parts.reduce((a, p) => a + p.share, 0) || 1;
     return (
-        <div className="mt-2">
-            {caption && <div className="text-[10px] font-semibold text-gray-500 uppercase tracking-wide mb-1">{caption}</div>}
-            <div className="flex h-3.5 rounded overflow-hidden border border-gray-200" role="img" aria-label={`${caption}: ${parts.map(p => `${p.label} ${p.share}%`).join(', ')}`}>
+        <div className="mt-2 min-w-0">
+            {caption && <div className="text-[10px] font-semibold text-gray-500 uppercase tracking-wide mb-1.5">{caption}</div>}
+            <div role="img" aria-label={`${caption}: ${parts.map(p => `${p.label} ${p.share}%`).join(', ')}`}>
                 {parts.map((p, i) => (
-                    <div
-                        key={p.label}
-                        title={`${p.label}: ${p.share}%`}
-                        style={{ width: `${(p.share / total) * 100}%`, background: SLICE[i % SLICE.length] }}
-                        className={i > 0 ? 'border-l border-white' : ''}
-                    />
-                ))}
-            </div>
-            <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1">
-                {parts.map((p, i) => (
-                    <span key={p.label} className="flex items-center gap-1 text-[10.5px] text-gray-600">
-                        <span
-                            className="w-2.5 h-2.5 rounded-[2px] flex-shrink-0"
-                            style={{ background: SLICE[i % SLICE.length], border: i >= DARK_TEXT_FROM ? '1px solid #CBD5E1' : undefined }}
+                    <div key={p.label} className="flex items-stretch gap-2" title={`${p.label}: ${p.share}%`}>
+                        <div
+                            className={`w-7 flex-shrink-0 ${i === 0 ? 'rounded-t' : ''} ${i === parts.length - 1 ? 'rounded-b' : ''} ${i > 0 ? 'border-t border-white' : ''}`}
+                            style={{ height: Math.max(16, (p.share / total) * height), background: SLICE[i % SLICE.length] }}
                         />
-                        {p.label} <span className="tabular-nums text-gray-800 font-medium">{p.share}%</span>
-                    </span>
+                        <div className="flex items-center text-[11px] text-gray-600 leading-tight">
+                            <span className="tabular-nums font-semibold text-gray-800 w-9 flex-shrink-0">{p.share}%</span>
+                            <span>{p.label}</span>
+                        </div>
+                    </div>
                 ))}
             </div>
-            {note && <p className="text-[10px] text-gray-400 mt-0.5 leading-snug">{note}</p>}
+            {note && <p className="text-[10px] text-gray-400 mt-1 leading-snug">{note}</p>}
         </div>
     );
 }
@@ -104,7 +101,7 @@ function Swatch({ color, label }: { color: string; label: string }) {
 function CostSplit({ data }: { data: NonNullable<ProfileCharts['costSplit']> }) {
     return (
         <ChartFrame title={`Where each ₹100 of sales goes, ${data.year}`} note={data.note}>
-            <MixBar caption="" parts={data.parts} />
+            <VerticalMix caption="" parts={data.parts} height={130} />
         </ChartFrame>
     );
 }
@@ -277,7 +274,11 @@ function ProfileCard({ p, verdict }: { p: BusinessProfile; verdict?: CompanyVerd
                 <section>
                     <Label>Where the money comes from</Label>
                     <p className="text-[12px] text-gray-600 leading-relaxed"><RichText text={p.revenueText} /></p>
-                    {p.mixes?.map(m => <MixBar key={m.caption} {...m} />)}
+                    {p.mixes && p.mixes.length > 0 && (
+                        <div className={`grid gap-4 ${p.mixes.length > 1 ? 'sm:grid-cols-2' : ''}`}>
+                            {p.mixes.map(m => <VerticalMix key={m.caption} {...m} />)}
+                        </div>
+                    )}
                 </section>
             </div>
 

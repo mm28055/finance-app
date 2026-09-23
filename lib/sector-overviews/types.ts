@@ -94,6 +94,16 @@ export interface DataTable {
     columns: string[];
     rows: string[][];
     note?: string;
+    /**
+     * Column whose leading `**Word**` is drawn as a coloured badge (green for
+     * Beat/Delivered/Strong/Conservative/On track, red for Missed/Walked back,
+     * amber otherwise), e.g. a track-record column.
+     */
+    badgeColumn?: number;
+    /** Columns holding numbers: right-aligned, tabular figures. */
+    numericColumns?: number[];
+    /** `cards` draws each row as a small box (first cell as the title, other cells labelled beneath) — for text-heavy tables. */
+    layout?: 'table' | 'cards';
 }
 
 export interface OverviewSection {
