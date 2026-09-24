@@ -26,12 +26,12 @@ export const ironSteel: SectorOverview = {
             'Manaksia Coated Metals': 20,
             'Aeroflex Industries': 25,
             'Venus Pipes & Tubes': 15,
-            'Scoda Tubes': 15,
+            'Scoda Tubes': 12,
         },
     },
     standfirst:
-        "Five companies that turn steel into something more useful, not steel mills. Man Industries makes large pipes for oil, gas and water pipelines and has just bought a plant in Saudi Arabia. Manaksia coats and paints steel sheet, mostly for export. Venus and Scoda make stainless-steel pipes and tubes, and Aeroflex makes stainless-steel flexible hoses and, suddenly, cooling equipment for AI data centres. Their profit depends on how much they add on top of the steel and how quickly they turn orders into cash. Every chart uses filed results and five years of history.",
-    lastUpdated: '2026-09-23',
+        "Five companies that turn steel into something more useful; none of them is a steel mill. Man Industries makes large pipes for oil, gas and water pipelines and in May bought a pipe plant in Saudi Arabia. Manaksia coats and paints steel sheet, mostly for export. Venus and Scoda make stainless-steel pipes and tubes, and Aeroflex makes stainless-steel flexible hoses and, since late 2025, cooling equipment for AI data centres. Their profit depends on how much they add on top of the steel, how fast they pass on cost changes and how quickly orders turn into cash. This note draws on each company's last two earnings calls, FY26 annual report, latest presentation and rating report, and on ICRA, CRISIL and India Ratings for the sector. Every chart uses filed results and five years of history.",
+    lastUpdated: '2026-09-24',
     asOfQuarter: 'Q1 FY27',
 
     metrics: [
@@ -51,7 +51,9 @@ export const ironSteel: SectorOverview = {
                 'Scoda Tubes': [15, 15, 15, 14, 13],
             },
             cellNotes: {
-                'Scoda Tubes': 'Latest call is for Q4 FY26; a gas shortage stopped its piercing plant for a time in early FY26.',
+                'Man Industries (I)': 'The company’s own Q1 FY27 margin of 14.6% includes ₹12cr of other income; the filed operating margin is 13.6%.',
+                'Manaksia Coated Metals': 'The company’s own margins (6.8% in Q4 FY26, 11.06% in Q1 FY27) are on total income and include other income.',
+                'Scoda Tubes': 'Scoda holds calls only every six months, so there was no Q1 FY27 call. Gas-supply cuts stopped the plant for 15–17 days in March 2026 and about two weeks in April 2026.',
             },
         },
         {
@@ -68,6 +70,10 @@ export const ironSteel: SectorOverview = {
                 'Aeroflex Industries': [-7, 17, 21, 37, 73],
                 'Venus Pipes & Tubes': [15, 28, 29, 17, 16],
                 'Scoda Tubes': [6, 4, 17, 0, 28],
+            },
+            cellNotes: {
+                'Man Industries (I)': 'Q4 FY26’s −5% is against a Q4 FY25 that included ₹369cr of one-off real-estate revenue (the Merino Shelters project).',
+                'Scoda Tubes': 'Q1 FY27’s +28% is against a weak Q1 FY26; profit after tax fell 26% in the quarter.',
             },
         },
         {
@@ -95,13 +101,17 @@ export const ironSteel: SectorOverview = {
             scale: 'sequential',
             lowerIsBetter: true,
             source: 'Filed annual ratios (Screener): debtor days + inventory days − payable days.',
-            note: 'Stainless-steel pipe makers hold a lot of stock across many sizes and grades; Scoda’s rose above 200 days when its piercing plant stopped.',
+            note: 'Stainless-steel pipe makers hold a lot of stock across many sizes and grades; Scoda’s reached 211 days in FY26 as stock built up with its new capacity and the March gas shutdown.',
             values: {
                 'Man Industries (I)': [-8, 95, 63, 104, 114],
                 'Manaksia Coated Metals': [75, 66, 68, 53, 96],
                 'Aeroflex Industries': [84, 132, 116, 129, 112],
                 'Venus Pipes & Tubes': [133, 123, 114, 132, 124],
                 'Scoda Tubes': [189, 151, 162, 164, 211],
+            },
+            cellNotes: {
+                'Scoda Tubes': 'CARE Ratings lists a working-capital cycle above 150 days as a downgrade trigger.',
+                'Venus Pipes & Tubes': 'Screener puts FY26 inventory at 183 days; the company calculates 121.',
             },
         },
         {
@@ -158,6 +168,11 @@ export const ironSteel: SectorOverview = {
                 'Venus Pipes & Tubes': [1.2, 0.9, 1.0, 1.1, 1.4],
                 'Scoda Tubes': [10.9, 3.7, 3.1, 2.1, 1.5],
             },
+            cellNotes: {
+                'Man Industries (I)': 'CRISIL says only about ₹300cr of the ₹657cr cash at March 2026 was free of liens.',
+                'Manaksia Coated Metals': 'Excludes ₹115cr of bills discounted with banks at March 2026, shown only as a contingent liability.',
+                'Venus Pipes & Tubes': 'Net debt rose to about ₹325cr by June 2026; a ₹372cr share issue, put to a vote on 8 October, would roughly clear it.',
+            },
         },
         {
             key: 'capex',
@@ -210,10 +225,11 @@ export const ironSteel: SectorOverview = {
                 'Scoda Tubes': [0.3],
             },
             cellNotes: {
-                'Man Industries (I)': 'About ₹3,600cr across India and Saudi Arabia.',
+                'Man Industries (I)': 'About ₹3,600cr across India and Saudi Arabia, of which India ₹2,200–2,300cr.',
                 'Venus Pipes & Tubes': 'More than ₹600cr, plus a ₹185cr letter of intent for data-centre piping not yet booked.',
-                'Manaksia Coated Metals': 'About ₹450cr.',
-                'Scoda Tubes': 'About ₹175cr at Q4 FY26.',
+                'Manaksia Coated Metals': 'About ₹450cr on the call; ₹420cr in the Q1 FY27 presentation, 87% for export.',
+                'Aeroflex Industries': 'Not disclosed: skids run on a yearly plan with quarterly purchase orders.',
+                'Scoda Tubes': 'About ₹175cr at its FY26 call in May 2026 (calls are half-yearly).',
             },
         },
     ],
@@ -244,49 +260,70 @@ export const ironSteel: SectorOverview = {
         {
             heading: '1. Recommendation, up front',
             body: [
-                "**Man Industries is the one to own.** It makes large-diameter pipes for oil, gas and water pipelines, and has just bought National Pipe Company in Saudi Arabia, which gives it a local plant with Aramco approval, where buyers prefer local supply. It guides about ₹5,000cr of revenue this year (up from about ₹3,900cr over the last four quarters) at 14–16% margins, has a ₹3,600cr order book, and is the only company here that has turned its profit into cash over five years. Debt will rise to about ₹1,600cr this year to fund a coating plant in Dammam and a stainless-steel plant in Jammu.",
-                "**Follow Manaksia Coated Metals.** It coats and paints steel sheet for export, earned a record ₹10,400 a tonne in Q1 and is nearly tripling colour-coating capacity; management guides revenue up about 45% this year. But it has turned almost none of its profit into cash over five years.",
-                "**Wait on Aeroflex, Venus and Scoda.** Aeroflex's data-centre cooling skids have transformed its growth, but they depend on one customer and the price assumes years of it. Venus and Scoda make good stainless-steel pipes but keep spending more than they earn, and Venus's profit has been flat for several quarters despite its growth.",
-                "**Two things to hold onto before reading the rest.** First, **these are converters, not mills**: they buy steel and sell a product, so the margin depends on how much value they add and how fast they pass on cost changes. Second, **cash is the weak point**: four of the five have spent more than they earned over five years building new lines.",
+                "**No company here is a clear buy at today's price; Man Industries comes closest, so follow it.** It makes large-diameter welded pipes for oil, gas and water pipelines and on 21 May bought National Pipe Company (NPC) in Saudi Arabia for US$102mn (about ₹1,000cr), an Aramco-approved plant that came with no debt. Man's filed operating margin has risen from 8% in FY24 to 14% in Q1 FY27, and in FY26 it turned 119% of operating profit into operating cash, the best record here. But in August management trimmed this year's revenue target to the bottom of its range, debt will rise to about ₹1,600cr by March 2027, and the auditor flags a SEBI order against the chairman and MD (stayed on appeal) and an income-tax search. The price asks for a little more growth than I expect, so I would buy only on weakness or once the Saudi plant proves its run-rate.",
+                "**Follow Manaksia Coated Metals.** It coats and paints steel sheet for roofs, walls and appliances, two-thirds of it exported, and earned a record ₹10,401 of operating profit a tonne in Q1 FY27, twice FY23's level, after passing on the Q4 fuel and freight spike. A second colour-coating line nearly triples its painting capacity from Q2, and management guides revenue of ₹1,300–1,350cr this year against ₹884cr in FY26. The price asks for about the growth I expect. The catch is cash: operating cash was negative in FY26, ₹115cr of bills were discounted with banks without showing as debt, and the auditor noted that customer and supplier balances were unconfirmed.",
+                "**Wait on Scoda, Venus and Aeroflex.** **Scoda Tubes** asks for a little more growth than I now expect: since listing in June 2025 it has missed its revenue, margin and plant-start targets, and its 211-day cash cycle is well above the 150 days CARE Ratings treats as a downgrade trigger. **Venus Pipes** has grown sales about 45% since early 2024 while quarterly profit has sat at ₹24–28cr; it cut its margin guide within one quarter and on 16 September approved a ₹372cr share issue at about 26% below the market price. **Aeroflex** is the best operator on the page, with Q1 revenue up 72% at a 23% margin, but its data-centre skids go to one customer with no patents behind them, it is appealing a ₹41.8cr tax demand, and its price needs growth well above what I expect.",
+                "**Two things to hold onto before reading the rest.** First, **these are converters, not mills**: they buy steel and sell a product, so the margin depends on how much value they add and how fast they pass on cost changes, and this year's steel-price upswing helps the mills more than them. Second, **cash is the weak point**: four of the five have spent more than they earned over five years building new lines, and most are now adding debt or issuing shares to keep building.",
             ],
         },
         {
             heading: '2. Charts: margins, growth, returns, cash cycle and cash conversion',
             body: [
                 "The six views that matter most, with four more behind **More measures**, including order book ÷ yearly sales. Every figure comes from filed results (Venus and Scoda standalone). Hover over a starred name for its caveat.",
+                "**Why these figures differ from the rest of the dashboard.** The dashboard's own quarterly records mix measures for this group: Man's Q4 FY26 is a standalone figure, and Aeroflex's and Manaksia's revenue is total income, with company margins that count other income. The charts use filed operating figures. Scoda holds calls only every six months, so its Q1 FY27 figures come from filed results and its August presentation.",
             ],
             embed: 'metrics',
         },
         {
             heading: '3. The sector',
             body: [
-                "Steel leaves the mill as coil, plate or bar. These companies turn it into pipes, hoses and coated sheet.",
+                "Steel leaves the mill as coil, plate or bar. These companies turn it into pipes, hoses and coated sheet, and sell to oil companies, utilities, builders, plant makers and data centres. Sources: ICRA, CRISIL Ratings and India Ratings outlooks, the petroleum regulator PNGRB, European Commission and US trade notices, Welspun Corp's Q1 FY27 call, and company filings.",
             ],
             points: [
                 {
                     label: 'Value chain',
-                    text: "Steel mill → **coil and plate** → large welded line pipe (Man) or coated and colour-coated sheet (Manaksia). Stainless-steel bar → **mother hollow** (a rough tube pierced from bar) → finished **seamless** pipe and tube (Venus, Scoda). Stainless strip → **welded** pipe and flexible hose (Venus, Scoda, Aeroflex) → assemblies. **The profit sits in the added value**: coating, assemblies, spooling and approvals, not in the steel itself.",
+                    text: "Steel mill → **hot-rolled coil and plate** → large welded line pipe (Man), or cold-rolled coil coated with aluminium-zinc and paint (Manaksia). Stainless-steel bar → **mother hollow** (a rough tube pierced from solid bar) → finished **seamless** pipe and tube (Venus, Scoda). Stainless strip → **welded** pipe and flexible hose (Venus, Aeroflex, soon Scoda) → assemblies, fittings, spools and cooling skids. **The profit sits in the added value, not in the steel**: Aeroflex's assemblies earn 22–26% against 16–20% for bare hose, Scoda says seamless earns 16–18% against 12–13% for welded, and Manaksia earns ₹1,000–3,000 a tonne more on Alu-Zinc than on plain galvanised sheet. ICRA puts the integrated mills' own operating margin at about 14.8% in FY26, so a converter only beats its supplier by doing something the mill does not.",
                 },
                 {
                     label: 'Where the demand comes from',
-                    text: "Oil, gas and water pipelines in India and the Gulf (Man); roofing and cladding abroad (Manaksia); power plants, chemicals, pharma and oil and gas (Venus, Scoda); and AI data centres, which need liquid cooling and high-grade piping (Aeroflex, Venus).",
+                    text: "**Line pipe** follows pipeline budgets. In India that looks tired: PNGRB data show 8,251km of gas pipeline under construction in June 2026, 2,208km less than a year earlier, and Welspun Corp, India's largest pipe maker, says water-pipe demand under the Jal Jeevan Mission is “under severe pressure” from fund shortages and overcapacity. The Gulf is the opposite: Aramco guides US$50–55bn of capex for 2026, which is why Man bought a Saudi plant. **Stainless pipe** follows power, chemical and oil-and-gas plant building; India made 4.45 million tonnes of stainless steel in FY26 (+14%), and the industry body ISSDA expects demand to grow 7–8% a year to FY28. **Data centres** are the one new pool: Aeroflex counts about 40 cooling skids per megawatt against a pipeline of more than 9 gigawatts of Indian projects. I found no independent forecast for **coated sheet**, which follows roofing, warehouses and appliances.",
                 },
                 {
-                    label: 'Cycles and policy',
-                    text: "**Steel and nickel prices move revenue, not usually margin**, because most orders pass on raw-material costs. Energy matters more this year: LPG and gas prices spiked, hitting Manaksia in Q4 and stopping Scoda's piercing plant for a time. Trade rules matter: Europe is cutting its import quota for seamless steel tubes and charging a steep duty above it, which threatens Venus's and Scoda's exports.",
+                    label: 'Cycles, prices and policy',
+                    text: "**Carbon steel is in an up-leg.** India's safeguard duty on flat steel (11.5% until April 2027, then 11%; stainless is excluded) protects the mills, hot-rolled coil reached a four-year high in September after rising ₹4,000 a tonne since August (Reuters, citing BigMint), and CRISIL expects domestic steel prices to rise 6–8% this year. That raises costs for Man and Manaksia, which buy the steel and pass it on with a lag of one to three months; the lag is why Manaksia's margin fell to 6% in Q4 FY26. **Stainless costs jumped too**: Scoda says Indian stainless bar and scrap rose 25–30% after the West Asia war, and because orders are priced three to four months ahead, Venus and Scoda saw revenue rise while margins stalled. Nickel has since eased from about US$19,350 a tonne in June to about US$16,600–16,900 in early September. **Trade rules are tightening abroad**: the EU cut its tariff-free steel quota by 47% from 1 July with a 50% duty above it, and the US charges 50% on steel pipe.",
                 },
                 {
                     label: 'What these companies actually depend on',
-                    text: "**Man** depends on pipeline projects in India and the Gulf and on running its Saudi plant well; **Manaksia** on export demand and its new colour-coating line; **Aeroflex** on one data-centre customer; **Venus** on value-added products and domestic demand; **Scoda** on its welded plant and tenders from BHEL and NTPC. **Buy each for what it actually depends on, not for the sector label.**",
+                    text: "**Man** depends on Aramco and Gulf pipeline orders and on NPC running at ₹300–500cr a quarter from Q2; **Manaksia** on filling its new paint line with export orders and on steel, zinc and fuel costs not jumping mid-quarter; **Aeroflex** on one data-centre customer's dispatch plan and on winning a second; **Venus** on fittings and spools lifting its margin from 16%; **Scoda** on its welded plant, the BHEL boiler-tube tender and a steady gas supply. **Buy each for what it actually depends on, not for the sector label.**",
                 },
             ],
             tables: [
                 {
-                    caption: 'Profit pools, from filed figures',
-                    columns: ['Position', 'Who', 'Operating margin (last five quarters)', 'Return on capital (FY26)', 'Five-year cash conversion'],
+                    caption: 'Profit pools, FY26 (filed figures)',
+                    columns: ['Position', 'Who', 'Sales', 'Operating margin (last five quarters)', 'Profit after tax (share of group)', 'Five-year cash conversion'],
                     rows: [
-                        ['Carbon-steel line pipe and coated sheet', 'Man, Manaksia', '6–15%', '16–18%', '**13–97%**'],
-                        ['Stainless-steel pipes, tubes and hoses', 'Aeroflex, Venus, Scoda', '13–24%', '17–21%', '**−4% to 51%**'],
+                        ['Large-diameter line pipe', 'Man', '₹3,564cr', '7–15%', '₹170cr (42%)', '**97%**'],
+                        ['Coated sheet', 'Manaksia', '₹884cr', '6–12%', '₹41cr (10%)', '**13%**'],
+                        ['Hoses, assemblies and cooling skids', 'Aeroflex', '₹442cr', '18–24%', '₹56cr (14%)', '**51%**'],
+                        ['Stainless pipe and tube', 'Venus, Scoda', '₹1,686cr', '13–16%', '₹141cr (35%)', '**29% and −4%**'],
+                    ],
+                    note: 'Group total: ₹6,576cr of sales and ₹408cr of profit after tax in FY26; shares are rounded. Cash conversion is operating cash ÷ operating profit over FY22–FY26.',
+                },
+                {
+                    caption: 'The sector in numbers',
+                    columns: ['Item', 'Figure', 'What it means', 'Source'],
+                    rows: [
+                        ['India steel demand, FY27', '+9–10% (FY26: +7.6%)', 'Budget spending on roads, railways and infrastructure up about 25%', 'ICRA (May 2026)'],
+                        ['India steel demand, FY27', '+5–7%', 'Slower, on a high FY26 base', 'CRISIL Ratings (Aug 2026)'],
+                        ['India steel demand, FY27', 'High single digit; outlook neutral', 'New mill capacity broadly matches demand', 'India Ratings (Aug 2026)'],
+                        ['Domestic steel prices, FY27', '+6–8%; hot-rolled coil at a four-year high in September', '**Dearer input for Man and Manaksia**', 'CRISIL Ratings; Reuters citing BigMint'],
+                        ['India safeguard duty on flat steel', '11.5% to April 2027, then 11%; stainless excluded', 'Protects the mills; converters pay more', 'Government notification, via SEAISI'],
+                        ['EU steel safeguard, from 1 July 2026', 'Tariff-free quota down 47% to 18.3mn t; 50% duty above it', '**Exporters to Europe squeezed**', 'European Commission'],
+                        ['US tariff on steel', '50% on steel pipe; about 10–15% on Aeroflex’s hoses', 'The US is largely shut to plain pipe', 'GHY International; Aeroflex Q4 call'],
+                        ['Indian gas pipelines', '28,157km running; 8,251km being built, down 21% in a year', 'Domestic line-pipe backlog shrinking', 'PNGRB (Jun 2026)'],
+                        ['Saudi welded-pipe capacity', 'About 2.5mn t, with 1.05mn t more due within two years', '**About 40% more supply**', 'Man Industries annual report FY26'],
+                        ['Stainless steel demand', 'Mid-single digit in FY27; 7–8% a year to FY28', 'Steady, not booming', 'India Ratings; ISSDA'],
+                        ['Nickel price, 2026', 'US$15,250–19,000 a tonne', 'Moves stainless revenue more than margin', 'ING, Goldman Sachs, Fastmarkets, Wood Mackenzie (via JSL)'],
                     ],
                 },
             ],
@@ -301,104 +338,122 @@ export const ironSteel: SectorOverview = {
             points: [
                 {
                     label: 'Lasting: approvals from big buyers',
-                    text: "Oil companies approve pipe suppliers slowly and rarely switch. **Man** already had approvals across the Gulf; buying National Pipe Company added a local Saudi plant with long-standing Aramco approval, where the buyer favours local supply.",
+                    text: "Oil companies approve pipe suppliers slowly and rarely switch; Aramco's vendor approval alone takes one to two years of audits. **Man** already had three decades of API and oil-company approvals and is one of India's top four welded-pipe makers (CRISIL). NPC adds a plant inside Saudi Arabia, the only one there with both straight-seam and spiral mills, just as Aramco's local-content rule (IKTVA) favours in-Kingdom suppliers: local content reached 70% in February and the target is 75% by 2030. Man paid about 1.5 times NPC's 2025 operating profit, where listed Saudi rivals trade at about 9.5 times by management's reckoning. **The limit is that every order is still won in a price bid, and Saudi rivals are adding about 40% more capacity.**",
                 },
                 {
-                    label: 'Lasting but narrow: products built with the customer',
-                    text: "**Aeroflex** co-develops each data-centre cooling skid with its customer, so switching would mean redesigning the cooling system. But management says it holds no patents on the skids, and one customer accounts for this business.",
+                    label: 'Lasting but narrow: products designed with the customer',
+                    text: "**Aeroflex** designs each liquid-cooling skid floor by floor with its customer and must pass strict end-customer audits; winning that customer took 10–11 months from first talk to first order, and Aeroflex's own team now does design work the customer once did. But management says openly it holds no patents on skids, every skid goes to one exclusive partner (the Indian arm of a US-headquartered cooling company), and Parker and Senior plc also make skids. The average skid price fell from ₹4.99 lakh in Q3 FY26 to ₹3.11 lakh in Q1 FY27, which management puts down to design, not competition. **A real switching cost, but only one customer deep.**",
                 },
                 {
-                    label: 'Wearing: plain pipe and plain sheet',
-                    text: "Basic stainless pipe and galvanised sheet have many makers. **Venus**, **Scoda** and **Manaksia** are all moving to value-added products (fittings, spooling, welded large-diameter pipe, colour-coated sheet) because the basic product earns too little.",
+                    label: 'Cost edge: making its own mother hollow',
+                    text: "**Scoda** pierces its own mother hollow from Indian round bar instead of importing it, and CARE credits that with lifting its margin from 11% in FY23 to 15–16% in FY24–FY25; 70% of its hollow is now made in-house, with 100% targeted by FY28. **Venus** is fully integrated in seamless and is adding fittings and spools; a data-centre owner chose it for a ₹185cr spooling letter of intent after a plant visit and audit, because it makes both pipe and fittings. BHEL and BARC now accept hot-pierced pipe, where they once bought only extruded pipe, which widened the market for both. **Integration cuts cost; it has not yet shown up as pricing power.**",
+                },
+                {
+                    label: 'Pricing power: thin everywhere but Aeroflex',
+                    text: "**Venus**'s margin has sat at 16% for eight quarters, and its CFO says competition is there “but not as such undercutting”. **Scoda** sells through requests for quotation, and an analyst on its FY26 call said listed rivals earn 1–2 points more. **Manaksia** resets export prices each quarter, so costs pass through with a one-to-two-month lag; a shock quarter like Q4 FY26 costs about four points of margin. **Man**'s contracts are fixed-price once a tender is won, so, as CRISIL notes, later cost swings cannot be passed on. **Only Aeroflex's assemblies and skids are priced on design rather than on the steel.**",
                 },
                 {
                     label: 'Barely a moat: export access',
-                    text: "Europe is an important market for Indian stainless tubes, and it is cutting its import quota; exporters above the quota face a steep duty. Access that depends on trade rules can shrink quickly.",
+                    text: "Exports are a large share of every company here: 65% of Manaksia's Q1 volume, 58% of Aeroflex's Q1 sales, 47% of Scoda's, 29% of Venus's (and over 40% of its order book), and over 80% of Man's Indian order book. From 1 July the EU cut its tariff-free steel quota by 47% with a 50% duty above it; Venus says the seamless-tube quota fell by 25%, and Scoda dropped a planned purchase of a Polish pipe trader because of the change. The US charges 50% on steel pipe. **Access that depends on trade rules can shrink with a single notification, which is why Man's local Saudi plant is worth more than an export order book.**",
                 },
                 {
                     label: 'Competitors outside the list',
-                    text: "**Welspun Corp**, **Jindal SAW** and **Ratnamani Metals** in line pipe and stainless pipe; **East Pipes** and **Arabian Pipes** in Saudi Arabia; **JSW Steel** and **Tata Steel** in coated sheet; **Parker Hannifin** in flexible hoses and flow control.",
+                    text: "**Welspun Corp** (order book ₹25,750cr, net cash ₹2,336cr, with plants in Saudi Arabia and the US) and **Jindal SAW** in line pipe; **East Pipes** and **Arabian Pipes** in Saudi Arabia; **Ratnamani Metals** in stainless pipe and nuclear spooling; **JSW Steel**, **Tata BlueScope** and **AM/NS India** in coated sheet, which also supply Manaksia's steel; **Parker Hannifin** and **Senior plc** in hoses and skids. **Welspun is the benchmark for Man: the same Saudi strategy, a far larger order book and a net-cash balance sheet.**",
                 },
             ],
         },
         {
             heading: '5. Margins (comparative)',
             body: [
-                "Are the margins structural? For converters, the question is how much value each adds on top of the steel.",
+                "Are the margins structural? For converters, the question is how much value each adds on top of the steel, and whether the company's own margin matches the filed one.",
                 "Whether the profit turns into cash is in section 2 (the **Cash conversion** and **Free cash flow** tabs) and on each company card in Tab 2.",
             ],
             points: [
                 {
                     label: 'Structural: value-added products',
-                    text: "**Aeroflex** has lifted its margin to about 23% as assemblies and skids replace plain hose and targets 25%. **Venus** has held 16% and aims for 18% in FY28 from fittings and spooling. **Scoda** guides 14–15%.",
+                    text: "**Aeroflex** lifted its margin from 18% in Q1 FY26 to 23% as assemblies (22–26%), bellows (28–30%) and skids replaced bare hose (16–20%); it targets 25% within a few years, and held 23% in Q1 despite hiring for two new sites and paying higher freight. **Venus** has held 16% for eight quarters, down from 18–20% in FY24, and now says fittings and spools will take it to 18% only in about two years. **Scoda** says seamless earns 16–18% and welded 12–13%, so its welded expansion will dilute its blended margin. **Only Aeroflex has shown a margin that rises with mix.**",
                 },
                 {
                     label: 'Cyclical: order mix and energy costs',
-                    text: "**Man**'s margin swings with the mix of pipeline orders (7% to 15% over five quarters); it guides 14–16% this year and expects its Saudi plant to earn 15–18%. **Manaksia**'s fell to 6% in Q4 on LPG and freight costs and recovered to 11% in Q1 once passed on.",
+                    text: "**Man**'s filed margin swung between 7% and 15% over five quarters with its order mix. Gross margin went from about 22% in FY25 to 38% in FY26 on delivered-to-site contracts and coating, but fell from 54% in Q4 to 36% in Q1. The company's Q1 margin (14.6%) includes ₹12cr of other income; filed, it was 13.6%. Management now talks of 14–15% this year and 14–16% over three to five years, but says it “cannot commit to it”. **Manaksia** fell to 6% in Q4 FY26 when LPG went from ₹60 to ₹200 a kilo and freight doubled, then recovered to 11% in Q1 on orders priced to cover the new costs. **Both margins are real, but they will keep swinging.**",
                 },
                 {
                     label: 'Not structural: start-up and shutdown costs',
-                    text: "**Scoda**'s gas-related shutdown and **Venus**'s new lines (with profit flat while capacity ramps) weigh on today's figures; they should fade as the lines fill.",
+                    text: "**Scoda** lost 15–17 days of output in March when Qatari gas supply stopped, and about two weeks more in April. Its Q1 FY27 margin fell to 12.9% even though gross margin rose to 32.0%, so the squeeze was in power, gas, freight and labour, not steel. **Venus**'s new seamless, fittings and welded lines and **Aeroflex**'s Taloja and Chakan sites carry staff and depreciation ahead of sales: Aeroflex's depreciation rose from ₹6cr in FY24 to ₹26cr in FY26, so profit after tax grew 6% last year while operating profit grew 25%. **These costs should fade as the lines fill; Scoda's dependence on gas will not.**",
                 },
                 {
                     label: 'Working capital: the biggest drains',
-                    text: "**Scoda**'s cycle rose above 200 days when its plant stopped, and it has had negative operating cash over five years. **Manaksia** holds stock across many colours and grades; its working capital stretched in Q1.",
+                    text: "**Scoda**'s cash cycle reached 211 days in FY26 (164 a year earlier), with 217 days of stock, after it said in November that inventory would fall. Operating cash was −₹14cr and free cash −₹130cr, and CARE Ratings lists a cycle above 150 days as a downgrade trigger. **Manaksia**'s working capital went from 20 days in FY24 to 87 in FY26 as it stocked hundreds of export sizes; operating cash turned negative (−₹14cr) and bills discounted with banks more than doubled to ₹115cr. **Both are funding growth with stock and with their lenders.**",
                 },
                 {
-                    label: 'Working capital: getting worse',
-                    text: "**Venus** and **Aeroflex** are funding growth with stock; Venus explained that working-capital debt is holding back profit after tax.",
+                    label: 'Working capital: heavy but steady',
+                    text: "**Venus** holds 183 days of stock on Screener's measure (the company calculates 121) and runs a 124-day cycle; CRISIL puts its gross current assets at 215 days. Its operating cash rose to ₹112cr in FY26, but free cash has been negative every year since FY22. **Aeroflex**'s working capital has sat at 107–126 days for three years, heavy for a hose maker, and it raised ₹55cr of new shares in February mainly to fund it. **Neither is getting worse, but neither funds its own growth.**",
                 },
                 {
-                    label: 'Working capital: improving',
-                    text: "**Man**'s large orders come with customer advances, which is why its cash conversion swings but averages well over five years.",
+                    label: 'Working capital: improving, for now',
+                    text: "**Man** turned ₹515cr of operating cash in FY26, 119% of operating profit, after only ₹68cr in FY25, helped by customer advances on large orders; five-year conversion is 97%. But its balance sheet is heavier than that suggests: stock was 251 days on Screener's measure, CRISIL says its bank working-capital lines were about 77% used, only about ₹300cr of its ₹657cr of cash was free of liens, and NPC will need US$100–125mn of working capital. **Man's cash record is the best here, but FY27 will test it.**",
                 },
                 {
                     label: 'Working capital: built into the business',
-                    text: "Stainless-pipe makers must stock many sizes and grades; line-pipe makers work to order. **Judge each against its own history, not against the others.**",
+                    text: "Stainless-pipe makers stock many sizes and grades, so 120–200 days is normal; line-pipe makers work to order, often with advances; coaters hold coil in hundreds of sizes, which Manaksia says a cold-rolling mill of its own would roughly halve. **Judge each against its own history, not against the others.**",
+                },
+            ],
+            tables: [
+                {
+                    caption: 'Q1 FY27 cash and capital, as stated on the calls',
+                    columns: ['Company', 'What management said', 'Balance sheet'],
+                    rows: [
+                        ['Man Industries (I)', 'Debt to peak about ₹1,600cr by March 2027, then ₹1,400cr in FY28; FY27 interest about ₹190cr (₹152cr in FY26); FY27 capex about ₹580cr', 'Cash ₹657cr and borrowings ₹628cr at March (Screener); CRISIL: about ₹300cr of the cash unencumbered'],
+                        ['Manaksia Coated Metals', 'Gross debt about ₹115cr in July, peaking at ₹125–130cr; debt to stay below 1.25 times equity', 'Net debt ₹96cr at March (Screener), plus ₹115cr of discounted bills off the balance sheet'],
+                        ['Aeroflex Industries', 'No cash figure given; ₹55cr raised in February at ₹182.70 a share, mainly for working capital', 'Borrowings ₹9cr; net cash ₹61cr at March'],
+                        ['Venus Pipes & Tubes', 'Net debt about ₹325cr at 30 June; FY27 capex ₹100–110cr (was ₹90–100cr)', 'Borrowings ₹287cr at March; ₹372cr share issue approved 16 Sep, vote on 8 Oct'],
+                        ['Scoda Tubes', 'No Q1 call. In May: debt to peak about ₹250cr, capex about ₹100cr, no new shares', 'Borrowings ₹187cr at March; net debt ₹113cr (Screener)'],
+                    ],
+                    note: 'Indian companies file cash flows only half-yearly, so no Q1 operating-cash figure exists. Scoda holds calls every six months; its line uses the May 2026 call.',
                 },
             ],
         },
         {
             heading: '6. Growth and capex (comparative)',
             body: [
-                "Where the next five years of growth come from, how each company has done against what it promised, and my own estimate of earnings growth.",
+                "Where the next five years of growth come from, how each company has done against what it promised on its Q4 FY26 call (Scoda's November and May calls), and my own estimate of earnings growth.",
             ],
             points: [
                 {
-                    label: 'Growth driver: pipelines in India and the Gulf',
-                    text: "**Man** expects National Pipe Company to add ₹1,200–1,500cr of revenue this year (management gave both figures), is building a coating plant in Dammam and a ₹600cr stainless-steel plant in Jammu (both due around March 2027), and sees a large bid pipeline as Gulf buyers diversify supply.",
+                    label: 'Growth driver: the Gulf and Man’s Saudi plant',
+                    text: "NPC made SAR 793mn (about ₹1,899cr) of revenue in 2025 at a 24.8% operating margin, a rich year of Aramco orders; management expects 15–18% from here. **Man** guides about ₹1,200cr of Saudi revenue this year after only ₹43cr in Q1 (about 20 working days), plus a US$40–50mn coating and double-jointing plant in Dammam by March 2027 that should add 3–4 points to NPC's margin once Aramco places full-package orders. Its bid pipeline is ₹24,000cr, 70% in the Middle East and North Africa, and it won ₹600cr of new orders on 10 September. **The demand is there; the question is price, with about 1.05 million tonnes of new Saudi capacity due within two years.**",
                 },
                 {
                     label: 'Growth driver: AI data centres',
-                    text: "**Aeroflex** is expanding skid capacity from 9,000 to 15,000 units a year (delayed to Q3 by machinery suppliers) and has begun exporting data-centre hoses. **Venus** has a ₹185cr letter of intent for data-centre piping.",
+                    text: "**Aeroflex** sold 1,040 skids worth ₹32.4cr in Q1 FY27, up from 46 in Q3 FY26, and is taking capacity from 9,000 to 15,000 a year by October–November, a quarter later than planned because machine suppliers are late. At about 75% use, management puts skid revenue at ₹325–330cr a year on ₹48cr of capex. **Venus** has a ₹185cr spooling letter of intent from one data-centre owner, backed by ₹70cr of capex, with output due from the end of Q3; **Scoda** hopes to sell welded pipe to data centres from Q4 FY27 but has only enquiries so far. **The pool is new and real, but each company has one anchor customer or none.**",
                 },
                 {
-                    label: 'Growth driver: new lines',
-                    text: "**Manaksia** is raising colour-coating capacity from 86,000 to 236,000 tonnes a year in Q2 and guides ₹1,300–1,350cr of revenue this year and ₹1,700–1,750cr next. **Scoda** is adding a welded-pipe plant (8,000 tonnes in H2 FY27, 21,150 tonnes by H1 FY28) and guides 25% revenue growth.",
+                    label: 'Growth driver: new capacity',
+                    text: "**Manaksia**'s second colour-coating line (₹65cr, 150,000 tonnes) takes painting capacity from 86,000 to 236,000 tonnes a year from Q2, and management guides ₹1,300–1,350cr of revenue this year and ₹1,700–1,750cr next; a ₹350cr second phase (a cold-rolling mill and a second Alu-Zinc line) from FY28 underpins its aim of tripling revenue by FY29. **Scoda** is adding welded pipe (13,150 tonnes in H2 FY27, 21,150 tonnes by H1 FY28) next to seamless capacity doubled to 20,068 tonnes. **Venus** now has about 48,000 tonnes, seven times its FY19 capacity. **Capacity is not the constraint for anyone here; filling it at a good price is.**",
                 },
                 {
                     label: 'Growth driver: moving up the value chain',
-                    text: "**Venus** commissioned fittings in May and a spooling plant is due in Q3 (pre-built piping sections delivered ready to install).",
+                    text: "**Venus** started fittings in May (5–7% of FY27 revenue, 8–10% in FY28) and expects spools to be 10–15% of FY28 revenue. **Man** is building a ₹600cr, 22,000-tonne stainless seamless-pipe plant in Jammu (₹350cr spent) for ₹200–300cr of first-year sales. **Aeroflex** is pushing assemblies, bellows and a data-centre fire-hose assembly for its largest US customer. **Each is trying to earn what the steel alone no longer pays.**",
                 },
                 {
                     label: 'Delivering or beating',
-                    text: "**Man** closed its Saudi purchase and kept its plants on schedule. **Aeroflex** grew 73% and lifted its margin. **Manaksia** passed on its cost spike and hit record profit per tonne.",
+                    text: "**Aeroflex** promised about 35% growth and a 23% margin on its May call and delivered 72% and 23.04% in Q1; skids already reached 23% of revenue against a 20–22% target for the year. **Manaksia** promised to pass on the Q4 cost spike and did, with a record ₹10,401 a tonne. **Man** closed the Saudi purchase and reaffirmed its plant dates.",
                 },
                 {
                     label: 'Cautious',
-                    text: "**Venus** now says its margin will stay below 17% this year, pushing its 18% target to FY28.",
+                    text: "**Man** kept its plan but moved to the bottom of it: FY27 revenue went from ₹5,000–5,500cr in May to “around ₹5,000cr” in August, with India trimmed from ₹4,000cr to ₹3,800cr and Saudi from ₹1,500–2,000cr to about ₹1,200cr. That needs about ₹1,300cr a quarter for the rest of the year against ₹1,053cr in Q1. Its longer-term targets also differ by document: 30–35% growth a year on the May call, 22–25% in the chairman's letter and 20–25% revenue growth over five years in the September presentation.",
                 },
                 {
                     label: 'Missed',
-                    text: "**Scoda**'s welded plant slipped from Q1 to H2 FY27 because of equipment delays from China. **Aeroflex**'s 15,000-unit capacity slipped to Q3.",
+                    text: "**Scoda** guided 20% growth and 15–16% margins for FY26 in November, with welded output from Q1 FY27; it delivered 7% and 14.7%, and moved welded to H2 FY27 because Chinese machines were late. Its FY27 guide is 25% growth at 14–15%, but Q1 ran at a ₹500cr annual pace against about ₹650cr needed, at 12.9%, with profit down 26%. It now needs about ₹175cr a quarter, more than its best quarter so far (₹152cr).",
                 },
                 {
                     label: 'Mixed',
-                    text: "**Venus**'s revenue has grown fast but its quarterly profit has stayed flat, and its exports face shipping problems and a smaller EU quota.",
+                    text: "**Venus** kept its 20% growth target but grew 16% in Q1, and its margin guide went from “towards 17%” in May to “less than 17%” in August, with the MD and CFO giving different figures on the same call. The order book rose by a third to ₹600cr, but a BHEL order it expected “in 30–45 days” in May was not mentioned in August. **Manaksia** met its margin promise, but its paint line slipped from July to Q2 and its Alu-Zinc line is filling more slowly than it said.",
                 },
                 {
                     label: 'My outlook',
-                    text: "**I expect Man and Manaksia to compound earnings at 18–20% as new capacity arrives, Aeroflex at about 25% if its data-centre customer keeps ordering, and Venus and Scoda at about 15%.** The risk throughout is cash: growth that needs more stock and more plant than it returns.",
+                    text: "**I expect Manaksia to compound earnings at about 20% and Man at about 18% as new capacity fills, Aeroflex at about 25% if its skid customer keeps ordering, Venus at about 15% and Scoda at about 12%.** I have cut Scoda from 15% after this research: it missed every FY26 target, its Q1 FY27 profit fell 26%, and it needs a record ₹175cr a quarter to meet this year's guide. Man's FY27 jump is largely bought with the Saudi plant, but interest rises to about ₹190cr and Saudi prices are under pressure, so I would not pay for the 25–30% growth management talks of for FY28. At Venus, the share issue adds about 11% more shares even as it cuts interest. **The risk throughout is cash: growth that needs more stock and more plant than it returns.**",
                 },
             ],
             tables: [
@@ -407,37 +462,57 @@ export const ironSteel: SectorOverview = {
                     numericColumns: [2],
                     columns: ['Company', 'What drives it', 'Earnings growth: low / base / high'],
                     rows: [
-                        ['Man Industries (I)', 'Saudi plant; pipelines; coating and stainless plants', '10% / **18%** / 25%'],
-                        ['Manaksia Coated Metals', 'Colour-coating capacity; exports', '10% / **20%** / 28%'],
-                        ['Aeroflex Industries', 'Data-centre skids; assemblies', '12% / **25%** / 35%'],
-                        ['Venus Pipes & Tubes', 'Fittings and spooling; domestic demand', '8% / **15%** / 22%'],
-                        ['Scoda Tubes', 'Welded plant; power tenders; exports', '8% / **15%** / 22%'],
+                        ['Man Industries (I)', 'Saudi plant; Gulf pipelines; Dammam coating and Jammu stainless', '10% / **18%** / 25%'],
+                        ['Manaksia Coated Metals', 'Second paint line; exports; phase 2 from FY28', '10% / **20%** / 28%'],
+                        ['Aeroflex Industries', 'Data-centre skids; assemblies; exports', '12% / **25%** / 35%'],
+                        ['Venus Pipes & Tubes', 'Fittings and spools; domestic plants; new shares dilute', '8% / **15%** / 22%'],
+                        ['Scoda Tubes', 'Welded plant; seamless use; power tenders; exports', '6% / **12%** / 17%'],
                     ],
                     note: 'My own judgement, not guidance. The growth each price needs is in the live valuation table in section 8.',
+                },
+                {
+                    caption: 'Guidance, capex and track record',
+                    badgeColumn: 3,
+                    columns: ['Company', 'Guidance', 'Capex', 'Track record'],
+                    rows: [
+                        ['Man Industries (I)', 'Revenue about ₹5,000cr (was ₹5,000–5,500cr); margin 14–15%; FY28 +25–30%', 'About ₹580cr in FY27: Jammu ₹600cr (₹350cr spent), Dammam US$40–50mn', '**Trimmed**: plan kept but at the low end; Jammu may be six months late (CRISIL)'],
+                        ['Manaksia Coated Metals', 'Revenue ₹1,300–1,350cr this year, ₹1,700–1,750cr next; margin 10–12%', '₹140cr phase 1 nearly done; ₹350cr phase 2 from FY28', '**Delivered** the margin recovery; paint line July → Q2; Alu-Zinc slower'],
+                        ['Aeroflex Industries', 'Revenue about +35%; margin about 23%, 25% later', '₹48cr skids; ₹54cr hoses', '**Beat**: +72% at 23%; 15,000 skids a quarter late'],
+                        ['Venus Pipes & Tubes', 'Revenue +20%; margin below 17% (was towards 17%); 18% in about two years', '₹100–110cr (was ₹90–100cr)', '**Cut**: margin guide lowered in one quarter; Q1 +16%; BHEL order unmentioned'],
+                        ['Scoda Tubes', 'Revenue +25% (about ₹650cr); margin 14–15% (was 15–16%)', 'About ₹100cr: welded lines and solar', '**Missed**: FY26 growth, margin and welded date; Q1 margin 12.9%'],
+                    ],
                 },
             ],
         },
         {
             heading: '7. Risk factors',
             body: [
-                "The risks fall into four groups. For each, what management addressed and what it left unanswered.",
+                "The risks fall into six groups. For each, what management addressed and what it left unanswered, including findings from the annual reports and rating reports.",
             ],
             points: [
                 {
-                    label: 'One customer or one project',
-                    text: "**Aeroflex**'s skid business depends on a single data-centre customer. **Man**'s year depends on winning and executing a few large pipeline orders; it said its Saudi rivals are adding capacity.",
+                    label: 'Governance at Man',
+                    text: "SEBI's final order of 29 September 2025, from a forensic audit, fined **Man**, its chairman, managing director and former CFO ₹25 lakh each and barred them from the securities market for two years; the appeals tribunal stayed it on 10 October 2025 and the case is pending. The income-tax department searched its premises in FY26, and the auditor put both matters under an emphasis of matter. About 20% of the promoters' shares are pledged to lenders, two promoter groups have disputed share ownership since FY15, and CRISIL lists adverse SEBI findings as a downgrade trigger. **None of this has touched the numbers yet, but a tribunal loss would revive the two-year bar on the chairman and MD.**",
                 },
                 {
-                    label: 'Cash and debt',
-                    text: "**Man**'s debt will rise to about ₹1,600cr this year before falling. **Venus** and **Scoda** keep borrowing to fund stock and plants. **Manaksia** plans about ₹350cr more capex for cold rolling and Alu-Zinc.",
+                    label: 'Accounting flags and tax demands',
+                    text: "**Manaksia**'s auditor added an emphasis of matter because receivables, advances and payables are “subject to confirmation”, and ₹115cr of bills discounted with banks (₹54.6cr a year earlier) sit outside debt as a contingent liability; it has also lent ₹4.45cr to a loss-making snacks subsidiary now being merged in. **Aeroflex** faces a ₹41.76cr income-tax demand for 2018-19, about three-quarters of FY26 profit, which treats bank interest waived before its current owners bought it as income; it has appealed and says the income was disclosed. **Man** has ₹106cr of receivables in arbitration, its income-tax disputes doubled to ₹76.5cr, and about 40% of its FY26 revenue was booked in a Taiwan branch audited by another firm.",
+                },
+                {
+                    label: 'One customer, one letter, one tender',
+                    text: "**Aeroflex**'s skids, 23% of Q1 sales and most of its growth, go to one exclusive partner that fixes dispatches only two months ahead, and its largest export customer is about a quarter of sales. **Venus**'s spooling plan rests on one letter of intent that is not yet a firm order. **Man**'s year rests on a handful of large bids while Saudi Arabia adds about 40% more welded-pipe capacity; management admits “some pressure on prices” but denies a price war. **Scoda** has waited since late 2025 for a BHEL tender that keeps slipping.",
                 },
                 {
                     label: 'Trade rules',
-                    text: "A smaller EU import quota for seamless tubes, with a steep duty above it, threatens **Venus**'s and **Scoda**'s exports to Europe.",
+                    text: "The EU's new safeguard (from 1 July, with a review in June 2027) and the US 50% tariff hit the exporters: **Scoda** (47% of Q1 revenue), **Manaksia** (65% of volume, mostly Europe, Africa and Latin America, none to the US), **Venus** (29%, with exports down 9% in Q1) and **Aeroflex** (58%, with 59% of FY26 exports going to the Americas). India's own safeguard duty helps the mills that supply Man and Manaksia, not the converters. **Europe is the market most likely to shrink further; the EU's carbon border tax also moved to its full phase in January.**",
                 },
                 {
-                    label: 'Energy and shipping',
-                    text: "Gas and LPG prices and Middle East shipping hit **Scoda** and **Manaksia** this year; Aeroflex's export logistics costs rose.",
+                    label: 'Cash, debt and dilution',
+                    text: "**Man**'s borrowings rise about two and a half times to roughly ₹1,600cr by March 2027 and interest to about ₹190cr; CRISIL expects gearing of 0.6–0.7 times equity, up from 0.25. **Venus** approved a ₹372cr preferential issue at ₹1,670 a share, about 26% below the market, to 18 outside investors; the vote is on 8 October, and it adds about 11% more shares. **Manaksia** has issued warrants at ₹18 and ₹65 (the share is now about ₹132) and plans more equity for phase 2. **Scoda** expects debt to rise ₹50cr to about ₹250cr while its cash cycle sits above CARE's trigger. **Growth here is being paid for by lenders and new shareholders, not by cash from operations.**",
+                },
+                {
+                    label: 'Execution and dates',
+                    text: "**Man**'s annual report says the Jammu plant was deferred by land-acquisition delays, and CRISIL expects completion in September 2027, six months after management's date; the Dammam plant's capacity was given as 4 million square metres in May and 4 lakh in August. **Aeroflex**'s last 6,000 skids and its extra hose capacity each slipped a quarter. **Scoda** holds calls only twice a year and discloses no volumes or prices, and investors complained on its FY26 call that results came late. **Treat dates in this group as targets, not commitments.**",
                 },
             ],
         },
@@ -445,24 +520,28 @@ export const ironSteel: SectorOverview = {
             heading: '8. Valuation (comparative)',
             body: [
                 "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it gives credit for cash and charges for debt. Where the two disagree, the balance sheet is the reason.",
-                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **14% at 21x, 18% at 31x, 20% at 35x, 23% at 44x and 33% at 100x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E.",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **14% at 21x, 18% at 31x, 20% at 35x, 23% at 44x and 33% at 100x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **Only Manaksia's price fits my estimate; Man and Scoda are full, and Venus and Aeroflex are stretched.**",
             ],
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**Man** and **Aeroflex** held net cash at March; **Venus**, **Manaksia** and **Scoda** carry debt the P/E ignores.",
+                    text: "**Man** and **Aeroflex** held net cash at March, so they look a little cheaper on EV/EBITDA than on P/E; but Man's net cash will turn into about ₹1,600cr of debt within a year, which the March figure does not show. **Venus**, **Manaksia** and **Scoda** carry debt the P/E ignores, and Manaksia's ₹115cr of discounted bills are not in the figure either. Venus's share issue, if approved, would roughly clear its ₹325cr of net debt.",
                 },
                 {
-                    label: 'Reasonable',
-                    text: "**Man**, **Manaksia** and **Scoda**: prices that ask for about the growth I expect. For Scoda, the weak cash record is the reason to wait.",
+                    label: 'Fits: Manaksia',
+                    text: "**Manaksia** needs about 19–20% a year against my ~20% estimate; management's own FY27 guide implies much faster growth this year, so the price is not demanding if the paint line fills. **The only price here that asks for no more than I expect; the reason to follow rather than own is cash, not valuation.**",
                 },
                 {
-                    label: 'Full',
-                    text: "**Venus**: more growth than its flat recent profit suggests.",
+                    label: 'Full: Man and Scoda',
+                    text: "**Man**'s price needs about 20% a year against my ~18%, a little more than I expect. FY27 earnings should jump as NPC is consolidated, so the question is FY28 and beyond, when the Dammam and Jammu plants must earn their keep and interest has risen. **The best position here, but at a full price and with governance questions open: follow, and buy on weakness or once NPC runs at ₹300cr-plus a quarter.** **Scoda** needs about 14% a year against my ~12%; the price is modest in absolute terms, but its record since listing is a string of misses and its working capital sits above the rating trigger, so **wait**.",
                 },
                 {
-                    label: 'Stretched',
-                    text: "**Aeroflex**: the price assumes years of data-centre growth from one customer.",
+                    label: 'Stretched: Venus and Aeroflex',
+                    text: "**Venus** needs about 23% a year against my ~15%, from a company whose profit has been flat for over two years and which is issuing shares at a 26% discount to its market price. **Aeroflex** needs about 33% a year against my ~25%; it is growing faster than that today, but the price assumes skids keep scaling with one customer and no patents. **Both are good businesses at prices that leave no room for a slip.**",
+                },
+                {
+                    label: 'Quality of earnings',
+                    text: "**Man**'s FY26 profit absorbed about ₹25cr of currency losses on Jammu equipment, and its FY25 included ₹369cr of one-off real-estate revenue. **Scoda**'s FY26 profit was helped by depreciation halving to ₹9cr and by ₹11cr of other income on IPO cash. **Manaksia**'s and Man's own EBITDA figures include other income. **Use the filed operating margin, not the company's headline.**",
                 },
             ],
             embed: 'valuation',
@@ -472,50 +551,74 @@ export const ironSteel: SectorOverview = {
     verdicts: [
         {
             company: 'Man Industries (I)', rank: 1, stance: 'SCALEUP', segment: CARBON,
-            what: "Makes large-diameter steel pipes (and coats them) for oil, gas and water pipelines in India and the Gulf, and has just bought National Pipe Company in Saudi Arabia.",
-            view: "**A pipe maker that became a Gulf insider.** The Saudi plant brings Aramco approval and local supply; revenue guidance is about ₹5,000cr at 14–16% margins, the order book is ₹3,600cr, and it converts profit to cash better than any peer here. Debt peaks at about ₹1,600cr this year. The price asks for about my ~18% estimate.",
-            watch: 'Saudi plant revenue from Q2; Dammam coating and Jammu plants by March 2027; debt.',
+            what: "Makes large-diameter welded steel pipes, and coats them, for oil, gas and water pipelines in India and the Gulf; since May 2026 it also owns National Pipe Company, an Aramco-approved plant in Saudi Arabia.",
+            view: "**The best position here, at a full price: follow.** Filed margin up from 8% to 14%, a ₹3,600cr order book, 119% cash conversion in FY26 and a Saudi plant bought for about 1.5 times its 2025 operating profit. But FY27 revenue guidance slipped to the low end (about ₹5,000cr), debt peaks near ₹1,600cr, the Jammu plant may be six months late, and a stayed SEBI order and an income-tax search sit in the auditor's report. The price asks for a little more than my ~18% estimate.",
+            watch: 'NPC revenue of ₹300–500cr a quarter from Q2; the Dammam and Jammu start dates against CRISIL’s September 2027; the SEBI appeal and the promoter pledge.',
         },
         {
             company: 'Manaksia Coated Metals', rank: 2, stance: 'SCALEUP', segment: CARBON,
-            what: "Coats and paints steel sheet (colour-coated and Alu-Zinc) for roofing, cladding and appliances, about two-thirds exported.",
-            view: "**Capacity nearly tripling into a strong order book.** Record ₹10,400 a tonne profit in Q1, margins of 10–12% targeted, and revenue guidance of ₹1,300–1,350cr this year. But five-year cash conversion is 13% and it plans more capex. The price asks for about my ~20% estimate.",
-            watch: 'The new colour-coating line filling; working capital; the ₹350cr capex plan.',
+            what: "Coats cold-rolled steel with aluminium-zinc (Alu-Zinc) and paints it for roofing, cladding and appliances, about two-thirds exported, from a port-side plant in Kutch, Gujarat.",
+            view: "**Capacity nearly tripling into export demand, at a price that fits.** A record ₹10,401 a tonne in Q1, margin back to 11%, and guidance of ₹1,300–1,350cr this year against ₹884cr in FY26. But operating cash was negative in FY26, ₹115cr of bills are discounted off the balance sheet, the auditor flagged unconfirmed balances, and more equity is planned. The price asks for about my ~20% estimate.",
+            watch: 'The second paint line at 50–60% in H2; operating cash turning positive and discounted bills falling; how phase 2 is funded.',
         },
         {
             company: 'Scoda Tubes', rank: 3, stance: 'SCALEUP', segment: STAINLESS,
-            what: "Makes stainless-steel seamless pipes and tubes from its own mother hollows, adding welded pipe; recently listed.",
-            view: "**A sensible plan, a weak cash record.** It guides 25% revenue growth at 14–15% margins and is adding welded capacity, but operating cash has been negative over five years and the welded plant is late. The price asks for about my ~15% estimate.",
-            watch: 'The welded plant starting; working capital back toward 160 days; BHEL and NTPC tenders.',
+            what: "Makes stainless-steel seamless pipes and tubes from its own mother hollow at Mehsana, Gujarat, for power, oil and gas and heat-exchanger makers; listed in June 2025 and adding welded pipe.",
+            view: "**A modest price for a company that keeps missing.** It guides 25% growth at 14–15% margins, but missed its FY26 revenue, margin and plant targets; Q1 FY27 margin was 12.9% with profit down 26%, and its 211-day cash cycle is above CARE's 150-day trigger. The price asks for a little more than my ~12% estimate.",
+            watch: 'Welded output in H2 FY27; revenue near ₹175cr a quarter; inventory back toward 160 days.',
         },
         {
             company: 'Venus Pipes & Tubes', rank: 4, stance: 'PRICED', segment: STAINLESS,
-            what: "Makes stainless-steel seamless and welded pipes, now adding fittings and pre-built piping sections (spooling), for power, chemicals, oil and gas and data centres.",
-            view: "**Fast growth, flat profit, little cash.** Order book above ₹600cr and a ₹185cr data-centre letter of intent, but quarterly profit has been flat, margin guidance slipped to FY28 and five-year cash conversion is 29%. The price needs more than my ~15% estimate.",
-            watch: 'Spooling from Q3; margin toward 17–18%; exports under the EU quota.',
+            what: "Makes stainless-steel seamless and welded pipes in Kutch, Gujarat, now adding fittings and pre-built piping sections (spools), for power, chemicals, oil and gas and data centres.",
+            view: "**Fast growth, flat profit, new shares.** Sales grew 28% a year for three years and the order book reached ₹600cr plus a ₹185cr data-centre letter of intent, but quarterly profit has sat at ₹24–28cr since early 2024, the FY27 margin guide was cut below 17%, and a ₹372cr share issue at about 26% below market goes to a vote on 8 October. The price needs far more than my ~15% estimate.",
+            watch: 'The share-issue vote on 8 October; spool revenue from Q3 and the letter of intent turning firm; margin above 17%.',
         },
         {
             company: 'Aeroflex Industries', rank: 5, stance: 'PRICED', segment: STAINLESS,
-            what: "Makes stainless-steel flexible hoses and assemblies for industry and, since FY26, liquid-cooling skid assemblies for AI data centres.",
-            view: "**A hose maker transformed by data centres, priced for it.** Revenue up 73% and margins about 23%, with skids now about 23% of revenue. But skids depend on one customer, it holds no patents on them, and returns have fallen from 36% to 19%. The price needs far more than my ~25% estimate.",
-            watch: 'Skid capacity at 15,000 units by Q3; new data-centre customers; exports.',
+            what: "Makes stainless-steel flexible hoses, assemblies and bellows, mostly for export, and since late FY26 liquid-cooling skid assemblies for Indian data centres.",
+            view: "**The best operator here, priced for years of it.** Q1 revenue up 72% at a 23% margin, skids already 23% of sales, and net cash. But every skid goes to one customer, it has no patents on them, free cash was negative in FY25 and FY26, and a ₹41.8cr tax demand is under appeal. The price needs far more than my ~25% estimate.",
+            watch: '15,000-unit skid capacity by November; a second skid customer or first export skid order; the tax appeal.',
         },
     ],
 
     closing: {
         heading: '9. Summary review',
         body: [
-            "**Carbon-steel line pipe and coated sheet.** **Man Industries: own.** Gulf approvals, a new Saudi plant and the best cash record. **Manaksia Coated Metals: follow.** Big capacity coming, but cash must follow.",
-            "**Stainless-steel pipes, tubes and hoses.** **Aeroflex: wait.** A real data-centre business, priced for years of it. **Venus Pipes: wait** for profit to grow with revenue. **Scoda Tubes: wait** for cash to follow growth.",
-            "**What would change my view.** For the better: Venus's or Scoda's operating cash turning positive; Aeroflex winning a second data-centre customer. For the worse: pipeline orders slowing in the Gulf, or Europe tightening its import quota further.",
-            "**What to watch next quarter.** Man's Saudi revenue; Manaksia's new line; Aeroflex's skid volumes; Venus's margin; Scoda's welded plant.",
+            "**Carbon-steel line pipe and coated sheet.** **Man Industries: follow.** The best position and cash record here, a cheap Saudi purchase and Aramco approval, but guidance at the low end, debt rising to about ₹1,600cr and a governance record that deserves a discount. **Manaksia Coated Metals: follow.** The price fits and the new line should lift earnings; cash and funding must follow.",
+            "**Stainless-steel pipes, tubes and hoses.** **Scoda Tubes: wait.** A modest price, but a little more than I now expect, until its cash cycle falls back below CARE's trigger and it hits a target. **Venus Pipes: wait** until profit grows with revenue and the share issue settles. **Aeroflex: wait.** A real data-centre business, priced for years of it.",
+            "**What would change my view.** For the better: NPC running at ₹300–500cr a quarter with Man's margin at 14% or more; Manaksia's operating cash turning positive; Aeroflex winning a second skid customer; Venus's margin above 17%. For the worse: a tribunal loss for Man's chairman and MD; Saudi pipe prices falling as new capacity arrives; the EU tightening its quota further; a rating cut for Scoda.",
+            "**What to watch next quarter.** Man's Saudi revenue and debt; Manaksia's paint line and cash; Aeroflex's skid capacity; Venus's share-issue vote and spool start; Scoda's welded plant and half-year cash flow.",
         ],
         bottomLine:
-            "Own the pipe maker with approvals and cash (Man Industries), follow the coated-sheet maker adding capacity (Manaksia Coated Metals), and wait on the stainless-steel names (Aeroflex Industries, Venus Pipes, Scoda Tubes) until their cash catches up with their growth or their price.",
+            "No steel converter is a clear buy today. Follow Man Industries, the best position at a full price, and Manaksia Coated Metals, where the price fits but cash must follow; wait on Scoda Tubes, Venus Pipes and Aeroflex Industries until their cash, or their price, catches up with their growth.",
     },
 
     sources: [
         { label: 'Filed quarterly results, annual ratios and cash flows — Screener.in', url: 'https://www.screener.in/company/MANINDS/consolidated/' },
         { label: 'Wholesale price index, steel products — Office of the Economic Adviser, Government of India', url: 'https://eaindustry.nic.in/' },
+        { label: 'Steel industry trends and outlook, May 2026 — ICRA', url: 'https://www.icra.in/Rating/DownloadResearchSpecialCommentReport?id=6940' },
+        { label: 'India to remain among the fastest-growing steel markets in FY27 — India Ratings, via Autocar Professional', url: 'https://www.autocarpro.in/news/india-to-remain-among-fastest-growing-steel-markets-in-fy27-despite-global-oversupply-ind-ra-133883' },
+        { label: 'Primary steelmakers to earn ₹10,500–11,000 a tonne in FY27 — CRISIL Ratings, via Investment Guru India', url: 'https://investmentguruindia.com/newsdetail/primary-steelmakers-may-sustain-operating-profitability-at-rs-10-500-11-000-per-tonne-in-fy27-crisil257114' },
+        { label: 'Indian steel prices set to rise further — Reuters, via Kitco', url: 'https://www.kitco.com/news/off-the-wire/2026-09-08/indian-steel-prices-set-rise-further-coking-coal-costs-demand-revival' },
+        { label: 'India safeguard duty on flat steel — SEAISI', url: 'https://www.seaisi.org/details/27708?type=news-rooms' },
+        { label: 'New EU safeguard on steel imports — European Commission, Access2Markets', url: 'https://trade.ec.europa.eu/access-to-markets/en/news/new-eu-safeguards-steel-imports-third-countries' },
+        { label: 'US Section 232 tariffs now on full customs value — GHY International', url: 'https://www.ghy.com/trade-compliance/us-adjusts-section-232-tariffs-on-aluminum-steel-and-copper-full-customs-value-now-applies/' },
+        { label: 'Natural gas pipeline network, June 2026 — PNGRB', url: 'https://pngrb.gov.in/data-bank/20260630_NGPL.pdf' },
+        { label: 'Stainless steel outlook 2026, citing ISSDA and nickel forecasts — JSL Global Commodities', url: 'https://jslgc.com/stainless-steel-trading-market-outlook-2026-global-supply-shifts-and-indias-demand-engine/' },
+        { label: 'Welspun Corp: Q1 FY27 earnings call transcript', url: 'https://www.welspuncorp.com/uploads/investor_data/investorreport_Financial%20year%202026%20-%202027_1713.pdf' },
+        { label: 'Man Industries: Annual Report FY26 (BSE)', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=9627e5dc-a6a3-40e6-b412-2313a0e99f33.pdf' },
+        { label: 'Man Industries: corporate presentation, September 2026 (BSE)', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=77e49d9f-1b07-4dd0-9b72-b5945c81e6ea.pdf' },
+        { label: 'Man Industries: Q1 FY27 earnings call transcript', url: 'https://mangroup.com/wp-content/uploads/2026/08/Concall-Transcript_12.08.2026.pdf' },
+        { label: 'Man Industries: rating rationale, June 2026 — CRISIL', url: 'https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/ManIndustriesIndiaLimited_June%2001_%202026_RR_397079.html' },
+        { label: 'Manaksia Coated Metals: Q1 FY27 investor presentation (BSE)', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=318fe867-a8e8-495e-bac4-26169558a2ff.pdf' },
+        { label: 'Manaksia Coated Metals: Annual Report FY26 (BSE)', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/3e1855ce-f42b-402f-9c1c-c6060517efc4.pdf' },
+        { label: 'Aeroflex Industries: Q1 FY27 investor presentation (BSE)', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=667a7c2b-69e4-4a7c-862a-b051b31878d7.pdf' },
+        { label: 'Aeroflex Industries: Annual Report FY26 (BSE)', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/495241e9-b8bc-421c-a545-e105b1907145.pdf' },
+        { label: 'Venus Pipes & Tubes: Q1 FY27 investor presentation (BSE)', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7a16fc29-a391-420a-9ecb-36eca90f1c10.pdf' },
+        { label: 'Venus Pipes & Tubes: board outcome on the preferential issue, 16 Sep 2026 (BSE)', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ba5d64d6-69fd-464e-8fbe-0a30be31acc4.pdf' },
+        { label: 'Venus Pipes & Tubes: rating rationale, June 2026 — CRISIL', url: 'https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/VenusPipesandTubesLimited_June%2023_%202026_RR_398750.html' },
+        { label: 'Scoda Tubes: FY26 earnings call transcript (BSE)', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=0dfc17fa-14d6-40d5-8a2c-e1dcdd5c9842.pdf' },
+        { label: 'Scoda Tubes: Q1 FY27 investor presentation (BSE)', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6d20b9c6-00d5-4ba9-a996-f35673ed2f54.pdf' },
+        { label: 'Scoda Tubes: rating rationale, December 2025 — CARE Ratings', url: 'https://www.careratings.com/upload/CompanyFiles/PR/202512141235_Scoda_Tubes_Limited.pdf' },
     ],
 };
