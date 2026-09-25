@@ -9,7 +9,7 @@ Research date: 25 Sep 2026. Latest quarter: Q1 FY27 (Apr–Jun 2026). Consolidat
 - Volumes Q1 FY27: India 109,000 t; international 117,000 t. [Q1 call]
 - India: Nielsen market share 23.1% (MAT Jun-26, vs 23.7% for FY26); 6.44 million households (Kantar, up from 4.56 million in MAT'23); ~172,000 outlets directly reached (flat); 40%+ share on e-commerce platforms; regional (non-basmati) rice ~₹170 cr and growing at a high double-digit rate. [IP Q1FY27] [Q4 call] [Q1 call]
 - Organic: over 30 years exporting; 110,000 ha of certified farmland; ~12% of India's organic food exports. The business moved from selling to wholesalers to its own consumer-brand (CPG) model in Europe (new plant plus a sales organisation), and holds 30% of the European brand Leev. [IP Q1FY27] [Q4 call]
-- Capacity: 8 lakh tonnes of paddy-to-rice milling in India, similar packing capacity; plants in India, the US (new RTH plant due to start Q2 FY27, plus a Houston warehouse), the UK/Europe and Africa. [Q4 call] [ICRA/CRISIL Feb-26]
+- Capacity: 8 lakh tonnes of paddy-to-rice milling in India, similar packing capacity; plants in India, the US (new RTH plant due to start Q2 FY27, plus a Houston warehouse), the UK/Europe and Africa. [Q4 call] [CRISIL Feb-26]
 
 ## Key numbers
 - Quarterly revenue (₹ cr): Jun-25 2,464 → Sep-25 2,766 → Dec-25 2,809 → Mar-26 2,907 → Jun-26 3,152. Operating profit: 265 → 309 → 314 → 267 → 354. OPM: 11% → 11% → 11% → 9% → 11%. Net profit: 168 → 164 → 157 → 136 → 183. [Screener]
