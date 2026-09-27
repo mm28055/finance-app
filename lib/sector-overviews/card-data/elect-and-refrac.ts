@@ -477,13 +477,6 @@ export const electAndRefracCharts: Record<string, ProfileCharts> = {
 
 // Fixed valuation inputs as of the note date; market value and P/E are live on the page.
 export const electAndRefracValuationInputs: Record<string, ValuationInput> = {
-    "HEG": {
-        // Adjusted: net of the ₹858cr treasury; operating profit excludes the ~₹230cr GrafTech mark-to-market loss.
-        "netDebt": -312,
-        "ttmEbitda": 494,
-        "mcapAtWriting": 4515.0,
-        "peAtWriting": 12.8
-    },
     "RHI Magnesita": {
         "netDebt": 57,
         "ttmEbitda": 477.0,
