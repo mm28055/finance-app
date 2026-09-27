@@ -336,6 +336,12 @@ export interface SectorOverview {
      * When present, the ranking drops its "what it does" line.
      */
     businesses?: { intro: OverviewSection[]; profiles: BusinessProfile[] };
+    /**
+     * Large sectors only: a few business-model groups, each a complete note with
+     * its own two tabs, shown as group tabs on the one sector page. When set, the
+     * wrapper's own sections and verdicts stay empty.
+     */
+    buckets?: { label: string; note: SectorOverview }[];
     sections: OverviewSection[];
     verdicts: CompanyVerdict[];
     /** The closing opinion. Rendered after the company cards, set apart from the note. */

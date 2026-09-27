@@ -1,0 +1,700 @@
+import { SectorOverview } from './types';
+import { constructionRoadsBusinesses } from './construction-roads-businesses';
+import { constructionValuationInputs } from './card-data/construction';
+
+// Quarter and year columns used by every metric below.
+const Q = ['Q1 FY26', 'Q2 FY26', 'Q3 FY26', 'Q4 FY26', 'Q1 FY27'];
+const FY = ['FY22', 'FY23', 'FY24', 'FY25', 'FY26'];
+
+// Segment labels. The metric grid, the moat table and the company cards are grouped by these.
+const TOLL = 'Toll owners and asset-light developers';
+const BUILD = 'Road builders that build and sell HAM projects';
+
+export const constructionRoads: SectorOverview = {
+    sector: 'Construction',
+    title: 'Construction · Road builders and developers',
+    format: 'ranked',
+    businesses: constructionRoadsBusinesses,
+    moatCompact: true,
+    leadCharts: true,
+    valuation: {
+        writtenOn: '27 Sep 2026',
+        inputs: constructionValuationInputs,
+        // My base-case earnings growth, % a year over three to five years (section 6).
+        myGrowth: {
+            'GR Infraprojects': 8,
+            'IRB Infra.Devl.': 13,
+            'Ceigall India': 12,
+            'Welspun Enterp': 14,
+            'KNR Constructions': 2,
+            'Dilip Buildcon': 6,
+            'PNC Infratech': -5,
+            'H.G. Infra Engg.': 9,
+            'Ashoka Buildcon': -6,
+        },
+    },
+    standfirst:
+        "Nine companies that build India's highways or own them. This is one of five groups on the Construction page; the others cover government project managers, diversified heavy-civil contractors, building contractors, and energy and steel-structure builders. Two here are owners more than builders: **IRB Infrastructure** runs toll roads, mostly through two investment trusts it sponsors, and **Welspun Enterprises** develops roads, water plants and tunnels and hands most of the building to sub-contractors. The other seven are road contractors that also invest in hybrid-annuity (HAM) projects, where the government pays 40% of the cost during building and the rest as annuities over 15 years, and then sell those projects to infrastructure trusts: **GR Infraprojects**, **Dilip Buildcon**, **Ceigall**, **PNC Infratech**, **KNR Constructions**, **Ashoka Buildcon** and **H.G. Infra**. Most are now moving into coal-mine operation, power lines, battery storage, railways or water. This edition was built from both earnings calls for every company, the FY26 annual reports, rating reports from CRISIL, CARE and India Ratings, and sector work from ICRA, CareEdge, India Ratings, CRISIL and PRS. The headline: highway awards have fallen by almost half from their FY22 peak, bids now come in 20–35% below the government's estimate, and bitumen more than doubled after the West Asia war began, so road-building margins have dropped from 14–20% to 8–12%. The annual reports and filings turned up a three-year ban on bidding for national-highway work, three CBI cases flagged by auditors, a qualified opinion on internal controls after a vendor fraud, ₹1,363cr owed by Telangana under an auditor's emphasis, a rating withdrawn while on Negative outlook, and a lot of profit that came from selling projects or winning claims rather than from building roads. Every chart uses filed results.",
+    lastUpdated: '2026-09-27',
+    asOfQuarter: 'Q1 FY27',
+
+    metrics: [
+        {
+            key: 'opm',
+            label: 'Operating margin by quarter',
+            unit: '%',
+            periods: Q,
+            scale: 'sequential',
+            source: 'Filed quarterly results (Screener). Operating profit ÷ revenue. Consolidated unless noted as standalone.',
+            note: 'These are consolidated margins, and for road builders they flatter the construction business: they include interest-like income on hybrid-annuity (HAM) projects and, for IRB, toll roads earning about 91% and fair-value gains on its trust units. The companies’ own standalone construction margins in Q1 FY27 were much lower: GR 11.0%, Dilip Buildcon 10.3%, Ceigall 13.4%, PNC 12.1% before claims, H.G. Infra 8.5%, Ashoka 7.2% before other income and KNR about 5.5% before one-off claims.',
+            values: {
+                'IRB Infra.Devl.': [45, 53, 55, 56, 54],
+                'Welspun Enterp': [21, 22, 20, 20, 20],
+                'GR Infraprojects': [20, 24, 20, 15, 17],
+                'Dilip Buildcon': [20, 24, 18, 17, 18],
+                'Ceigall India': [13, 14, 14, 16, 15],
+                'PNC Infratech': [26, 22, 20, 17, 31],
+                'KNR Constructions': [30, 30, 22, 24, 16],
+                'Ashoka Buildcon': [32, 32, 24, 13, 17],
+                'H.G. Infra Engg.': [17, 23, 22, 17, 28],
+            },
+            cellNotes: {
+                'IRB Infra.Devl.': 'Toll roads (91% margin) and trust income (94%) lift the group; construction earns about 15%. Revenue includes non-cash fair-value gains on trust units.',
+                'PNC Infratech': 'Q1 FY27 includes ₹217.66cr of arbitration claims; CARE puts the standalone margin before claims at 12.1%.',
+                'KNR Constructions': 'Standalone Q4 FY26 margin was 5.3%; Q1 FY27 was about 5.5% before ₹46cr of one-off claims.',
+                'H.G. Infra Engg.': 'Q1 FY27 consolidated figure includes project companies’ building and finance income; the standalone construction margin was 8.5%.',
+                'Ashoka Buildcon': 'Standalone Q1 FY27 margin was 7.2% before other income.',
+            },
+        },
+        {
+            key: 'growth',
+            label: 'Revenue growth, year on year',
+            unit: '%',
+            periods: Q,
+            scale: 'diverging',
+            source: 'Filed quarterly revenue, each quarter against the same quarter a year earlier. Consolidated unless noted as standalone.',
+            note: 'Two things shrink consolidated revenue besides slow building: project companies sold to trusts leave the accounts (PNC, KNR, Ashoka, H.G.), and fewer highway awards since FY24 left thin order books. The recovery at GR, Ceigall and PNC in Q1 FY27 came as long-delayed start dates on new projects finally arrived.',
+            values: {
+                'IRB Infra.Devl.': [13, 10, -8, -10, 2],
+                'Welspun Enterp': [-9, -4, -12, 14, -8],
+                'GR Infraprojects': [-2, 15, 36, 10, 40],
+                'Dilip Buildcon': [-16, -23, -17, -26, -9],
+                'Ceigall India': [2, 5, 19, 37, 16],
+                'PNC Infratech': [-34, -21, -18, -5, 19],
+                'KNR Constructions': [-38, -67, -12, -29, -4],
+                'Ashoka Buildcon': [-23, -26, -23, -27, -21],
+                'H.G. Infra Engg.': [-3, 0, 12, 5, -26],
+            },
+            cellNotes: {
+                'IRB Infra.Devl.': 'Construction revenue fell 21% in Q1 FY27 while trust income rose 87%.',
+                'KNR Constructions': 'KNR began FY26 with an order book of only ₹5,052cr (CRISIL), and sold several HAM projects.',
+                'PNC Infratech': 'Standalone Q1 FY27 revenue rose 34% as three HAM projects got start dates in Q3 FY26.',
+                'Dilip Buildcon': 'FY26 revenue fell 21%; coal-mine revenue in Q1 FY27 was ₹362cr against a ₹2,500cr target for the year.',
+            },
+        },
+        {
+            key: 'roce',
+            label: 'Return on capital by year',
+            unit: '%',
+            periods: FY,
+            scale: 'diverging',
+            legend: ['Losing money', 'Making money'],
+            source: 'Filed annual ratios (Screener): return on capital employed. Consolidated unless noted as standalone.',
+            note: 'Toll roads and HAM projects tie up a lot of capital, so developers earn less on capital than pure builders. Several recent years are lifted by gains on selling projects to trusts, which count in profit but will not recur.',
+            values: {
+                'IRB Infra.Devl.': [9, 9, 9, 8, 7],
+                'Welspun Enterp': [5, 10, 18, 18, 17],
+                'GR Infraprojects': [16, 22, 17, 14, 12],
+                'Dilip Buildcon': [3, 5, 10, 15, 13],
+                'Ceigall India': [33, 27, 30, 19, 17],
+                'PNC Infratech': [15, 15, 16, 14, 8],
+                'KNR Constructions': [20, 21, 26, 29, 10],
+                'Ashoka Buildcon': [25, 28, 27, 40, 26],
+                'H.G. Infra Engg.': [28, 25, 24, 17, 11],
+            },
+            cellNotes: {
+                'Ashoka Buildcon': 'FY26 includes a ₹2,416cr gain on selling project companies (Dec-25 quarter); FY25 and FY26 are not a guide to the building business.',
+                'KNR Constructions': 'FY25 profit (₹1,002cr) included gains on selling HAM projects; FY26 shows the building business after the margin fell.',
+                'Dilip Buildcon': 'FY26 profit relied on ₹1,396cr of other income, much of it gains on selling assets, and a tax rate of about 4%.',
+                'Ceigall India': 'Management puts the fall after FY24 partly down to the IPO (August 2024) enlarging the capital base.',
+                'Welspun Enterp': 'FY23 profit included the gain on selling six road projects in 2022.',
+            },
+        },
+        {
+            key: 'ccc',
+            more: true,
+            label: 'Cash conversion cycle by year',
+            unit: 'days',
+            periods: FY,
+            scale: 'diverging',
+            lowerIsBetter: true,
+            source: 'Filed annual ratios (Screener): debtor days + inventory days − payable days. Consolidated unless noted as standalone.',
+            note: 'This measure misses where road builders’ cash is really stuck: in unbilled work and HAM receivables, which sit outside debtors and stock. The rating agencies’ gross current asset days are the better guide: 271 at Welspun (CRISIL), 277 at H.G. and 289 at PNC (CARE), all at March 2026 and all rising.',
+            values: {
+                'IRB Infra.Devl.': [13, -84, -306, -95, 67],
+                'Welspun Enterp': [37, -327, -337, -370, -422],
+                'GR Infraprojects': [24, 17, 13, 11, 32],
+                'Dilip Buildcon': [165, 74, 85, 103, 187],
+                'Ceigall India': [15, -78, -26, -151, -95],
+                'PNC Infratech': [30, 59, 49, 65, 97],
+                'KNR Constructions': [36, 18, 42, 40, 38],
+                'Ashoka Buildcon': [-52, -28, -49, -46, -68],
+                'H.G. Infra Engg.': [11, -26, -41, -78, -171],
+            },
+            cellNotes: {
+                'Welspun Enterp': 'Large payables to sub-contractors make this negative; CRISIL puts gross current assets at 271 days, up from 228.',
+                'H.G. Infra Engg.': 'CARE: gross current asset days rose from 218 to 277 in FY26 on HAM unbilled revenue and unpaid scope changes.',
+                'GR Infraprojects': 'Company figure: working capital 148 days at June 2026 (117 at March 2025).',
+                'KNR Constructions': 'Standalone working capital jumped from 78 to 133 days in Q1 FY27; about ₹1,450cr is owed by Telangana.',
+                'Ceigall India': 'Unbilled revenue days rose from 94 to 133 at March 2026 (company).',
+                'IRB Infra.Devl.': 'Mostly a toll business, so this measure means little here.',
+            },
+        },
+        {
+            key: 'cash',
+            label: 'Cash conversion (operating cash ÷ operating profit)',
+            unit: '%',
+            periods: [...FY, '5 yrs'],
+            scale: 'diverging',
+            legend: ['Cash lagging profit', 'Cash following profit'],
+            source: 'Filed cash-flow statements and P&L (Screener). The last column uses all five years. Consolidated unless noted as standalone.',
+            note: 'HAM accounting makes developers look worse here than they are: the money spent building a HAM project counts as operating cash out, while the cash that comes back, as annuities or from selling the project, arrives years later and partly as investing cash. Even so, a five-year figure below zero means the business has needed outside money to grow.',
+            values: {
+                'IRB Infra.Devl.': [14, 56, 134, 57, 52, 63],
+                'Welspun Enterp': [195, 140, -81, -43, 15, 6],
+                'GR Infraprojects': [10, -14, -75, -125, -173, -69],
+                'Dilip Buildcon': [209, 297, 76, 6, 68, 97],
+                'Ceigall India': [-73, -25, -41, -100, -16, -49],
+                'PNC Infratech': [-33, -91, -12, -3, 404, 28],
+                'KNR Constructions': [-42, 130, -28, -35, -21, -3],
+                'Ashoka Buildcon': [20, 25, 34, 57, 35, 36],
+                'H.G. Infra Engg.': [-45, -16, -29, -83, 25, -30],
+            },
+            cellNotes: {
+                'PNC Infratech': 'FY26 operating cash of ₹4,593cr includes ₹515.75cr received under NHAI settlements and, probably, HAM receivables collected around the sale of 12 projects.',
+                'GR Infraprojects': 'Operating cash was −₹2,811cr in FY26 as HAM building inside project companies counted as operating spend.',
+            },
+        },
+        {
+            key: 'fcf',
+            label: 'Free cash flow ÷ revenue',
+            unit: '%',
+            periods: [...FY, '5 yrs'],
+            scale: 'diverging',
+            legend: ['Burning cash', 'Generating cash'],
+            source: 'Filed cash-flow statements (Screener): operating cash minus spending on fixed assets, as a share of revenue. Consolidated unless noted as standalone.',
+            note: 'Only IRB and Ashoka have produced free cash in most years, IRB from its tolls and Ashoka from its toll and annuity projects; PNC’s positive five-year figure rests on FY26 alone. The rest have spent more than they earned, mostly on HAM projects, solar and battery plants and mining equipment, and have relied on selling projects to bring the money back.',
+            values: {
+                'IRB Infra.Devl.': [-17.7, 20.8, 51.5, 23.3, 17.9, 20.8],
+                'Welspun Enterp': [-11.1, 6.8, -14.4, -8.8, 2.2, -4.4],
+                'GR Infraprojects': [-3.2, -7.0, -19.0, -29.7, -36.2, -18.5],
+                'Dilip Buildcon': [-24.7, -10.1, -37.2, -36.5, -22.6, -26.8],
+                'Ceigall India': [-19.4, -11.8, -12.4, -20.0, -4.2, -12.4],
+                'PNC Infratech': [-8.0, -19.1, -3.3, -1.3, 79.5, 5.0],
+                'KNR Constructions': [-19.2, 25.6, -8.6, -12.5, -6.0, -4.0],
+                'Ashoka Buildcon': [3.5, 3.9, 6.2, 15.5, 7.2, 7.8],
+                'H.G. Infra Engg.': [-10.4, -10.3, -10.1, -48.2, -13.4, -18.9],
+            },
+            cellNotes: {
+                'PNC Infratech': 'FY26 is a one-off: settlement receipts and the asset sale to Vertis Infrastructure Trust.',
+                'H.G. Infra Engg.': 'FY25–FY26 include building solar and battery-storage projects funded with project debt.',
+                'Dilip Buildcon': 'Capital spending here includes coal-mine and project-company assets, not just the building fleet.',
+            },
+        },
+        {
+            key: 'leverage',
+            label: 'Net debt ÷ operating profit',
+            unit: 'x',
+            periods: FY,
+            scale: 'diverging',
+            invert: true,
+            legend: ['More debt', 'Net cash'],
+            source: 'Filed balance sheets and P&L (Screener): borrowings minus cash and treasury investments, ÷ operating profit. Consolidated unless noted as standalone.',
+            note: 'Consolidated debt here is mostly loans taken by project companies and repaid from tolls or government annuities. The building businesses carry far less: standalone, GR borrows ₹239cr, KNR nothing, and PNC has ₹133cr of net cash, while Dilip Buildcon (₹2,106cr net), H.G. (₹1,834cr gross) and Ashoka (about ₹2,100cr including loans from subsidiaries) carry real debt.',
+            values: {
+                'IRB Infra.Devl.': [5.8, 4.6, 5.6, 4.9, 4.5],
+                'Welspun Enterp': [9.8, -5.4, -1.1, 0.1, -0.0],
+                'GR Infraprojects': [2.4, 1.9, 1.5, 2.5, 2.3],
+                'Dilip Buildcon': [10.6, 6.5, 4.6, 3.9, 4.4],
+                'Ceigall India': [0.7, 1.2, 1.3, 1.5, 1.6],
+                'PNC Infratech': [2.6, 3.5, 3.3, 3.7, 2.6],
+                'KNR Constructions': [1.5, 0.5, 0.8, 0.9, 2.9],
+                'Ashoka Buildcon': [1.6, 2.5, 2.1, 0.6, 0.5],
+                'H.G. Infra Engg.': [1.4, 1.8, 1.2, 3.8, 4.7],
+            },
+            cellNotes: {
+                'Ashoka Buildcon': 'Screener shows ₹1,608cr of borrowings at March 2026; the company states ₹2,778cr, probably because project companies held for sale are shown separately.',
+                'KNR Constructions': 'FY26 rises because operating profit halved, not because debt grew; project debt fell to ₹1,975cr by June after sales.',
+                'H.G. Infra Engg.': 'Consolidated borrowings rose from ₹1,513cr (FY24) to ₹5,029cr (FY26) for HAM, solar and battery projects.',
+                'IRB Infra.Devl.': 'Includes a US$ bond (₹4,502cr); company net debt to equity was 0.51x at June 2026.',
+            },
+        },
+        {
+            key: 'capex',
+            more: true,
+            label: 'Capex ÷ revenue',
+            unit: '%',
+            periods: [...FY, '5 yrs'],
+            scale: 'sequential',
+            source: 'Filed cash-flow statements (Screener): spending on fixed assets as a share of revenue. Consolidated unless noted as standalone.',
+            note: 'A road builder’s own equipment costs little; HAM projects are financial assets and do not show here. The high figures are other things: Dilip Buildcon’s coal mines and projects, H.G.’s solar and battery plants, and IRB’s toll concessions. KNR’s new mining contract will lift its figure sharply: it plans ₹350–400cr of capex in FY27.',
+            values: {
+                'IRB Infra.Devl.': [23.9, 6.7, 3.2, 2.6, 9.6, 8.6],
+                'Welspun Enterp': [32.5, 5.7, 2.5, 1.4, 0.9, 5.3],
+                'GR Infraprojects': [5.1, 3.1, 1.3, 2.1, 2.8, 2.9],
+                'Dilip Buildcon': [41.7, 36.8, 46.2, 37.7, 36.0, 39.9],
+                'Ceigall India': [7.5, 8.3, 5.5, 4.9, 1.9, 4.9],
+                'PNC Infratech': [1.1, 0.8, 0.6, 0.5, 6.1, 1.5],
+                'KNR Constructions': [9.9, 3.8, 1.9, 0.6, 0.5, 3.3],
+                'Ashoka Buildcon': [2.4, 2.2, 1.5, 1.2, 1.6, 1.7],
+                'H.G. Infra Engg.': [1.8, 7.3, 4.3, 30.9, 18.2, 13.1],
+            },
+            cellNotes: {
+                'Dilip Buildcon': 'Standalone capex is under ₹100cr a year; the rest is coal-mine development and project companies.',
+            },
+        },
+    ],
+
+    moat: {
+        sources: [
+            { key: 'execution', label: 'Execution record', description: 'Finishing projects on time or early, earning completion bonuses and winning repeat work.' },
+            { key: 'balance', label: 'Balance sheet', description: 'Enough net worth and little enough debt to fund project equity and pass the highway authority’s tougher bidding rules.' },
+            { key: 'recycling', label: 'Asset recycling', description: 'Selling finished projects to infrastructure trusts at a gain, so the capital comes back for the next round.' },
+            { key: 'niche', label: 'Work beyond plain highways', description: 'Businesses with fewer bidders: toll concessions, tunnels, elevated roads, water plants, mine operation.' },
+            { key: 'cash', label: 'Cash and governance', description: 'Whether profit turns into cash, and a clean record with auditors, rating agencies and the highway authority.' },
+        ],
+        rows: [
+            { company: 'GR Infraprojects', trend: 'narrowing', trendNote: 'Standalone margin 12.65% → 11.0% as bids come in 30–40% below estimates; Q1 revenue +40% but orders negligible.',
+                grades: { execution: { grade: 'B', note: 'Own fleet; standalone revenue +33% in Q1' }, balance: { grade: 'A', note: 'Standalone debt ₹239cr; CARE AA+' }, recycling: { grade: 'B', note: 'Four HAMs sold at ~1.2x book' }, niche: { grade: 'C', note: 'Pipelines, power lines, BharatNet: all new' }, cash: { grade: 'D', note: 'CBI emphasis; tax search; NTPC guarantee invoked' } } },
+            { company: 'IRB Infra.Devl.', trend: 'widening', trendNote: 'Toll +26%, underlying interest −13%, trust payouts ~3.8x; asset transfer signed on time; still no new toll-road wins.',
+                grades: { execution: { grade: 'B', note: 'Refinancing and transfer delivered as promised' }, balance: { grade: 'C', note: 'Net debt ₹18,116cr; both trusts AAA' }, recycling: { grade: 'A', note: '~43% of TOT awards; ₹1.4 lakh cr target' }, niche: { grade: 'A', note: 'About 10% of India’s toll revenue' }, cash: { grade: 'C', note: 'Return on equity ~4%; fair-value gains' } } },
+            { company: 'Ceigall India', trend: 'widening', trendNote: 'Revenue +16%, standalone margin 11.4% → 13.4%; first HAM sale closed; inflow guide raised to ₹6,000cr.',
+                grades: { execution: { grade: 'B', note: 'Elevated corridors; early-completion bonuses' }, balance: { grade: 'B', note: 'Standalone debt ~0.2x equity' }, recycling: { grade: 'C', note: 'First sale closed in Q1 FY27' }, niche: { grade: 'B', note: 'Elevated roads, tunnels, flyovers' }, cash: { grade: 'C', note: 'Qualified control opinion; cash negative 5 years' } } },
+            { company: 'Welspun Enterp', trend: 'stable', trendNote: 'Revenue flat for two years and −8% in Q1; margin ~20%; Pune–Shirur start moved to Q3; CRISIL upgraded to AA.',
+                grades: { execution: { grade: 'B', note: 'FY26 revenue guide met exactly' }, balance: { grade: 'A', note: 'Net debt ₹109cr; CRISIL AA' }, recycling: { grade: 'B', note: 'Six roads sold at ~₹9,000cr EV (2022)' }, niche: { grade: 'A', note: 'Mumbai water plants; micro-tunnelling' }, cash: { grade: 'C', note: 'Operating cash weak three years' } } },
+            { company: 'KNR Constructions', trend: 'narrowing', trendNote: 'Margin 19% → 9% in FY26; underlying Q1 about 5.5%; FY27 guide cut to 8–9%; Telangana still unpaid.',
+                grades: { execution: { grade: 'A', note: '9,000+ lane-km; completion bonuses' }, balance: { grade: 'A', note: 'Standalone debt nil; CRISIL AA' }, recycling: { grade: 'A', note: 'Guruvayur sold at 2.5x invested equity' }, niche: { grade: 'C', note: 'Mining 45% of book, untested' }, cash: { grade: 'C', note: '₹1,363cr Telangana dues under emphasis' } } },
+            { company: 'Dilip Buildcon', trend: 'stable', trendNote: 'Record FY26 orders, but Q1 inflow ₹268cr, revenue −9% and mine revenue far below plan.',
+                grades: { execution: { grade: 'B', note: '~90% of ₹45,000cr HAMs finished early' }, balance: { grade: 'D', note: 'Consolidated net debt ₹7,801cr' }, recycling: { grade: 'B', note: '11 HAMs moving to Anantam trust' }, niche: { grade: 'B', note: '~₹1.03 lakh cr of coal-mine contracts' }, cash: { grade: 'C', note: 'FY26 profit leaned on other income' } } },
+            { company: 'PNC Infratech', trend: 'narrowing', trendNote: 'Three-year NHAI and ministry bidding ban from September 2026; CARE rating on watch Negative.',
+                grades: { execution: { grade: 'A', note: '~100 projects; ₹56.39cr completion bonus' }, balance: { grade: 'A', note: 'Standalone net cash ₹133cr' }, recycling: { grade: 'A', note: '12 assets to KKR trust, ₹9,006cr EV' }, niche: { grade: 'C', note: 'Coal, water and airports are new' }, cash: { grade: 'D', note: 'Barred by its main client' } } },
+            { company: 'H.G. Infra Engg.', trend: 'narrowing', trendNote: 'Standalone margin 14.5% → 8.5%; Q1 loss; standalone debt up to ₹1,834cr; CARE outlook Negative.',
+                grades: { execution: { grade: 'C', note: 'FY26 orders ₹1,300cr against ₹10,000cr' }, balance: { grade: 'D', note: 'Consolidated debt ~₹5,000cr' }, recycling: { grade: 'B', note: 'Five HAMs to Neo for ₹1,384cr' }, niche: { grade: 'C', note: 'Battery and solar unproven (CARE)' }, cash: { grade: 'D', note: 'CBI/ACB arrests under emphasis' } } },
+            { company: 'Ashoka Buildcon', trend: 'narrowing', trendNote: 'Standalone margin 7.2% before other income; guidance cut within 12 weeks; project sale slipped again.',
+                grades: { execution: { grade: 'C', note: 'Standalone revenue −17% in FY26' }, balance: { grade: 'C', note: 'CRISIL AA- Negative, then withdrawn' }, recycling: { grade: 'B', note: '~₹2,960cr from 10 assets' }, niche: { grade: 'B', note: 'Power lines, rail and overseas work' }, cash: { grade: 'D', note: 'CBI chargesheet emphasis; NHAI suspension' } } },
+        ],
+    },
+
+    sections: [
+        {
+            heading: '1. Recommendation, up front',
+            body: [
+                "**No road name earns an ‘own’ today. Follow GR Infraprojects, IRB, Ceigall and Welspun Enterprises, and use the Q2 results in October and November to decide.** **GR Infraprojects** is the one I would buy first. Its construction business borrows only ₹239cr, CARE rates it AA+, and Q1 FY27 revenue rose 40% (33% standalone) as long-delayed projects finally started. The price needs only about 4% a year of earnings growth against my ~8%, and the shares trade below book value. What holds me back is the list of loose ends: its auditor draws attention to a 2022 CBI case in which three employees were arrested with highway officials, the tax department searched its offices and the promoters' homes in October 2025, NTPC invoked ₹90.87cr of guarantees after GR walked away from a battery-storage contract in September, and the standalone margin slipped from 12.65% to 11.0%. **I would buy GR on a clean Q2 with orders arriving and no new legal surprise.**",
+                "**IRB**, India's largest private toll-road owner, is a different animal. Combined tolls rose 26% in Q1, profit rose 51%, refinancing of ₹14,650cr cut underlying interest about 13%, and the promised transfer of two roads to its public trust (value ₹4,605cr) was signed on 22 September, on time. But the return on equity is about 4%, revenue includes non-cash fair-value gains on trust units, its flagship Mumbai–Pune concession ends in April 2030, and it has won no new toll road this year. The price needs about 14% a year against my ~13%. **Ceigall** is the one road builder still growing with rising margins (revenue +16%, standalone margin 13.4%, an order book of ₹18,568cr, 4.6 times FY26 revenue), but its auditor qualified its opinion on internal controls after a ₹8.985cr vendor fraud, operating cash has been negative for five years, and it must put about ₹1,600cr into projects in FY27–FY28; the price needs about 14% against my ~12%. **Welspun Enterprises** has the cleanest balance sheet here (net debt ₹109cr, upgraded to AA by CRISIL on 21 September) and a genuine niche in Mumbai water plants and micro-tunnelling, but revenue has been flat at ₹3,600–3,700cr for two years, fell 8% in Q1, and the price needs about 18% a year against my ~14%.",
+                "**Wait on KNR, Dilip Buildcon, PNC and H.G. Infra.** **KNR** has no standalone debt and a CRISIL AA rating, but its margin fell from 19% to 9% in FY26, the underlying Q1 margin was about 5.5%, and Telangana owes it about ₹1,450cr, of which ₹1,363cr is under an auditor's emphasis. **Dilip Buildcon** has ~₹1.03 lakh cr of long coal-mining contracts, but Q1 revenue fell 9%, mine revenue ran far below its ₹2,500cr target, consolidated net debt is ₹7,801cr, and FY26 profit leaned on ₹1,396cr of other income. **PNC** went into FY27 with net cash and a refilled order book, then the highway authority barred it from bidding for three years (letter of 11 September) after a stretch of the Kanpur–Lucknow expressway failed; its Q1 profit also included ₹217.66cr of arbitration claims. **H.G. Infra** made a loss in Q1, its standalone margin fell to 8.5%, CARE turned its outlook Negative, and its auditor flags a CBI/ACB case in which four employees were arrested; it promises ₹4,000cr of revenue in H2 at about 15%, which I doubt.",
+                "**Pass on Ashoka Buildcon.** The shares look cheapest of all, below half of book value, but the building business earned 7.2% before other income in Q1, guidance was cut from 20% growth to 10–15% within 12 weeks, the sale of six project companies has slipped at every update, the auditor flags a CBI chargesheet over NHAI work in Bihar, the highway authority suspended it from bidding (stayed by the Delhi High Court), and CRISIL withdrew its rating at the company's request while it carried a Negative outlook. Most of its consolidated profit comes from project companies, several of which are being sold.",
+                "**Three things to hold onto before reading the rest.** First, **the award slowdown is policy, not a blip**: the government now awards highways only once land and approvals are mostly in place, which CRISIL calls ‘largely structural’, and companies say NHAI awarded only about 107 km in Q1 FY27. Second, **road-building margins have reset lower**: ICRA finds 71% of NHAI and ministry EPC contracts in the last three years went more than 20% below the official estimate, and bitumen more than doubled in 2026, so FY27 standalone margins are guided at 8–12% against 14–20% a few years ago. Third, **read the building business, not the consolidated profit**: HAM finance income, gains on selling projects, fair-value gains and arbitration awards make up much of the reported profit at IRB, PNC, KNR, Dilip Buildcon and Ashoka. The standalone construction margin is the number that tells you how the business is doing.",
+            ],
+        },
+        {
+            heading: '2. Charts: margins, growth, returns and cash conversion',
+            body: [
+                "The six views that matter most, with two more behind **More measures**. Every figure comes from filed consolidated results. For this group that matters: a consolidated road builder includes its HAM project companies, whose income looks like interest and carries high margins, and its toll roads. So the operating margin chart shows 15–31% for companies whose building business earned 5.5–13.4% in Q1 FY27; the note under the chart gives each company's own standalone figure. Hover over a starred name for its caveat. Each company card in Tab 2 also plots the quarterly margin against the official wholesale price index for bitumen, which jumped 49% in Q1 FY27 from the quarter before.",
+                "**Where the numbers disagree.** Screener's consolidated operating margin for KNR in FY26 (26%) includes HAM income, while the company's standalone construction margin was 8.5%. Screener shows PNC's return on equity at 2.4%, which does not square with ₹832cr of consolidated profit on about ₹6,800cr of net worth; it looks like a calculation quirk. Screener shows Ashoka's borrowings at ₹1,608cr, while the company states ₹2,778cr, probably because project companies held for sale are shown separately. H.G.'s Q1 transcript gives a ‘PAT margin of 4.04%’ in a quarter with a loss; it should read −4.04%. The charts use Screener's filed figures throughout.",
+            ],
+            embed: 'metrics',
+        },
+        {
+            heading: '3. The sector',
+            body: [
+                "Construction as a whole is in its second slow year. ICRA's sample of 19 listed builders earns about ₹1.28 trillion of revenue; it grew more than 20% a year in FY22–FY24, was flat in FY25, grew an estimated 2–4% in FY26, and ICRA forecasts 6–8% in FY27, with operating margins falling to 10.1–10.6% against 13–14% in FY21. Money is not the problem: the FY27 Union Budget raised central capital spending 11.5% to about ₹12.2 lakh crore, with ₹3,09,875cr for the road ministry (+7.9%) and ₹2,81,377cr for railways (+10.1%) (PRS). The problem is projects that are ready to build. Within Construction, the profit has moved away from roads: ICRA expects diversified contractors (metro, tunnels, water, power lines) to grow 8–10% in FY27 while road-focused ones stay under pressure, and India Ratings expects credit stress in the sector to last through FY27. **My view: roads are the weakest of the five Construction groups this year, and FY27 is likely the bottom for road-building margins, but not yet for road-building volumes. The companies that will do well are the ones with the balance sheet to wait and the skills to win non-road work.**",
+            ],
+            points: [
+                {
+                    label: 'The award slowdown',
+                    text: "National-highway awards fell from a peak of 12,731 km in FY22 to about 7,000 km in FY26, and the pace of building is expected to fall to about 21 km a day in FY27 from 36.8 km a day in FY21 (CareEdge, September 2026). ICRA counted 7,538 km awarded in FY25 and only 1,951 km in the first eight months of FY26, down 24%; a broker count cited in the press puts NHAI's own FY26 awards at 3,124 km, down 22%. The cause is a deliberate policy of awarding only projects whose land and approvals are largely in hand, which CRISIL describes as ‘largely structural’, and India Ratings says delayed Q4 FY26 awards pushed the recovery into FY27. Companies say NHAI awarded only about 107 km in Q1 FY27, although it has put 54 projects worth about ₹1.8 lakh crore out for bidding this year (26 EPC, 21 HAM, 7 toll). **My view: plan for awards to stay near FY26 levels in FY27, with states rather than the centre doing more of the work; CareEdge expects state road spending to outpace central spending this year.**",
+                },
+                {
+                    label: 'Bid discounts, and HAM against EPC against toll',
+                    text: "There are three ways to win a highway. In **EPC**, the government pays for the road and the builder simply builds it; it is the most crowded format, and ICRA finds 71% of NHAI and ministry EPC contracts in the last three years went more than 20% below the official cost estimate, with contractors telling the press of bids 30–35% below. GR's CFO says bids now come in 30–40% below the authority's estimate against about 20% above five years ago: ‘It is not that construction cost is increasing; it is basically revenue which is decreasing.’ In **HAM** (hybrid annuity), the government pays 40% of the cost during building and the rest as annuities over 15 years, so the builder must put in equity and wait; discounts reached 16% in FY25 and 21% in the first ten months of FY26. In **toll (BOT)**, the developer funds everything and takes the traffic risk; the government is reviving it with about ₹75,000cr targeted and a revised framework, and ICRA expects toll collections to grow 6–8% in FY27. Toll has the fewest bidders, though Ashoka will bid only where ‘we are sure about traffic and execution’. **My view: HAM and toll reward strong balance sheets, and plain EPC now rewards only the lowest-cost builder, so the gap between GR, KNR and PNC on one side and H.G. and Ashoka on the other should widen.**",
+                },
+                {
+                    label: 'Bitumen and the West Asia shock',
+                    text: "Bitumen went from about ₹30,000 a tonne in February 2026 to ₹70,000–75,000 in July, India imports 30–40% of what it uses, and asphalt work stalled across the country (Autocar Professional). The official wholesale price index for bitumen rose 49% in Q1 FY27 from the quarter before. GR says about 40% of a road's cost is linked to crude oil (fuel about 15%, bitumen 20–25%). The ministry rebased bitumen prices from 1 April 2026 and moved price adjustment from quarterly to monthly, but contractors had to choose between compensation and extra time, not both, and diesel is not covered. Dilip Buildcon says the government reimburses about 60–65% of the abnormal increase, and its CEO recalled buying diesel at ₹140 a litre. Toll-road owners are the exception: IRB's building book is small and toll rates reset each April with wholesale inflation, so a bitumen spike eventually raises its tariffs. **My view: this is a margin hit for FY27, not a permanent one, because contracts priced in 2026 carry today's costs; I would not expect margins to return to the old 14–20% while bids stay this aggressive.**",
+                },
+                {
+                    label: 'Where the money is going instead',
+                    text: "Almost every road builder here is diversifying, into areas the budget and the rating agencies favour. **Power lines**: management at PNC cites a ₹6 lakh crore five-year transmission plan, and GR, Ashoka (33% of its book), H.G. and Dilip Buildcon have all won transmission work. **Coal mines**: Dilip Buildcon has about ₹1.03 lakh crore of mine-operation contracts, mining is 45% of KNR's order book and 14.9% of PNC's. **Railways and metros**: 21% of H.G.'s book. **Water**: Welspun's water book is about ₹14,000cr, and PNC and Dilip Buildcon carry Jal Jeevan Mission work, extended to December 2028. **Battery storage and solar**: H.G., Ceigall, Dilip Buildcon and GR. **My view: diversification fills order books, but most of it is new work with new counterparties; GR has already walked away from a battery contract, and KNR says its battery bids went ‘very bad’.**",
+                },
+            ],
+            tables: [
+                {
+                    caption: 'Profit pools, from filed figures',
+                    columns: ['Group', 'Who', 'Operating margin (last five quarters)', 'Return on capital (FY26)', 'Five-year cash conversion', 'Why'],
+                    rows: [
+                        ['Toll owners and asset-light developers', 'IRB, Welspun', '20–56%', '7–17%', '**6–63%**', 'Toll roads earn about 91% and trust income 94% at IRB, but need huge capital; Welspun earns ~20% on specialist water and tunnel work done by sub-contractors'],
+                        ['Road builders, consolidated', 'GR, Dilip Buildcon, Ceigall, PNC, KNR, Ashoka, H.G.', '13–32%', '8–26%', '**−69% to 97%**', 'Includes HAM finance income, gains on selling projects and claims; cash goes into HAM equity and comes back years later'],
+                        ['Road building alone (standalone, Q1 FY27, company figures)', 'Same seven', '5.5–13.4%', 'Not disclosed', 'Not disclosed', 'Bids 20–35% below estimates and dear bitumen leave the builder a thin margin; Ceigall and PNC highest, KNR and Ashoka lowest'],
+                        ['Selling finished projects (one-off)', 'Ashoka, KNR, GR, Welspun', 'Not an operating margin', 'n/a', 'n/a', 'Ashoka booked ₹2,416cr in one quarter; KNR sold Guruvayur for ₹485.86cr against ₹193.32cr invested; real value, but it does not recur'],
+                    ],
+                    note: 'Consolidated figures from Screener. Standalone margins are the companies’ own: GR 11.0%, Dilip Buildcon 10.3%, Ceigall 13.4%, PNC 12.1% before claims, H.G. 8.5%, Ashoka 7.2% before other income, KNR about 5.5% before one-off claims.',
+                },
+                {
+                    caption: 'The market: size, growth and policy (named forecasters)',
+                    columns: ['Measure', 'Latest', 'Outlook', 'Source'],
+                    rows: [
+                        ['Listed construction revenue (19 companies)', 'About ₹1.28 trillion; +2–4% in FY26 (estimate) after a flat FY25', '**+6–8% in FY27; margin 10.1–10.6%**', 'ICRA, Mar 2026'],
+                        ['Construction order inflows', 'Road awards weak; water payments slow', '**About +10% in FY27**', 'ICRA, Mar 2026'],
+                        ['EPC revenue (second view)', 'About 20% a year in FY22–FY24', '**About +10% in FY27; credit stress through FY27**', 'India Ratings (press coverage)'],
+                        ['National-highway awards', '12,731 km (FY22 peak) → about 7,000 km (FY26)', 'Awards only for ‘ready’ projects', 'CareEdge, Sep 2026'],
+                        ['Awards, second count', '7,538 km in FY25; 1,951 km in 8M FY26 (−24%)', 'Subdued', 'ICRA, Feb 2026'],
+                        ['Pace of building', '36.8 km/day (FY21); 25 km/day (FY26)', '**About 21 km/day (~7,750 km) in FY27**', 'CareEdge, Sep 2026; CARE'],
+                        ['Ministry road building', '10,660 km in FY25', '**9,000–9,500 km in FY27**', 'ICRA, Feb 2026'],
+                        ['Road spending, government and private', '₹0.94 lakh cr (FY16) → ₹2.62 lakh cr (FY26)', 'States to outpace the centre in FY27', 'CareEdge, Sep 2026'],
+                        ['Budget, FY27', 'Central capex ~₹12.2 lakh cr (+11.5%); road ministry ₹3,09,875cr (+7.9%)', 'Railways ₹2,81,377cr (+10.1%)', 'PRS, Feb 2026'],
+                        ['Bid discounts', '71% of EPC contracts >20% below estimate (three years)', 'HAM −16% (FY25), −21% (10M FY26)', 'ICRA, Feb 2026'],
+                        ['Toll collections', 'IRB group +26% in Q1 FY27 with new roads', '**+6–8% in FY27**', 'ICRA, Feb 2026'],
+                        ['Bitumen', '~₹30,000/t (Feb 2026) → ₹70,000–75,000/t (Jul 2026); 30–40% imported', 'Monthly price adjustment from Apr 2026', 'Autocar Professional, Jul 2026'],
+                        ['NHAI bidding pipeline, FY27', '54 projects, about ₹1.8 lakh cr (26 EPC, 21 HAM, 7 toll)', 'About ₹75,000cr of toll projects targeted', 'Company calls (PNC, KNR, Ashoka)'],
+                        ['Interest cover, construction companies', '3.2–3.5x in FY26', '**3.1–3.4x in FY27**', 'ICRA, Mar 2026'],
+                    ],
+                    note: 'India Ratings’ figures were read in press coverage because its page did not load. CRISIL’s earlier forecast of road-EPC margins holding at 13–14% on cheaper steel and bitumen was overtaken by the 2026 bitumen spike. The pipeline figures are what management said on the calls, not an official release.',
+                },
+            ],
+        },
+        {
+            heading: '4. Moat (comparative)',
+            body: [
+                "Five things protect profits in this group. The grid grades each company on each one; how each company's business works is explained in Tab 2. The short version: in plain highway building there is almost no moat left, so what separates these companies is the balance sheet, the ability to sell finished projects at a gain, and a clean record.",
+            ],
+            embed: 'moat',
+            embedFirst: true,
+            points: [
+                {
+                    label: 'Lasting: toll concessions with inflation-linked prices',
+                    text: "**IRB** is the only company here whose main asset is a long toll concession rather than a construction order. The group has 17,355 lane-km in 13 states, about 10% of India's toll revenue and about 43% of the toll-operate-transfer (TOT) roads the government has auctioned so far. Tolls reset each April with wholesale inflation; the FY27 rise was only 2.5–3%, but with wholesale inflation near 8% management expects a much larger rise in April 2027. Its partners Cintra (19.9%) and a GIC affiliate (16.9%) co-invest in its private trust, and both trusts are rated AAA, which lowers its cost of money. IRB bids at a 15–16% return and sells into its public trust at 12–12.5%, keeping the difference. **My view: this is a real advantage, but a concession is a wasting asset: the wholly owned Mumbai–Pune road, the flagship, ends in April 2030, and new toll auctions keep slipping.**",
+                },
+                {
+                    label: 'Growing: the balance sheet as a barrier',
+                    text: "NHAI now requires bidders to show higher net worth (25% of the project, 50% for investor-backed bidders, per IRB's call) and extra performance security (IRB doubts this will thin the field much), and it is moving back to toll projects where the developer funds everything. That favours builders with little debt: **GR** (standalone borrowings ₹239cr, CARE AA+), **KNR** (no standalone debt, CRISIL AA), **PNC** (standalone net cash ₹133cr before the ban) and **Welspun** (net debt ₹109cr, upgraded to AA). GR's management expects stricter rules to ‘limit participation’ to strong balance sheets. It works against **H.G.** (consolidated debt about ₹5,000cr, CARE Negative), **Dilip Buildcon** (consolidated net debt ₹7,801cr) and **Ashoka** (CRISIL rating withdrawn while Negative). **My view: this is the one moat in road building that is widening, and it is why GR and KNR deserve more patience than their margins alone would earn.**",
+                },
+                {
+                    label: 'Proven: selling finished projects at a gain',
+                    text: "A HAM project that has finished building is worth more to a long-term investor than it cost the builder, so selling it is how road builders recover capital. **KNR** sold its Guruvayur project for ₹485.86cr against ₹193.32cr invested, about 2.5 times. **PNC** sold 12 assets to KKR's Vertis trust at an enterprise value of ₹9,005.7cr, which cut consolidated borrowings from ₹9,364cr to ₹5,170cr in FY26. **Welspun** sold six roads in 2022 at about ₹9,000cr and is selling Aunta–Simaria at about ₹1,000cr. **GR** sold four HAM projects to its own Indus trust at about 1.2 times book, and **Ceigall** closed its first sale to Neo at a return above plan. **Ashoka** has realised about ₹2,960cr from ten assets, but CRISIL notes that its debt stayed at ₹2,847cr ‘despite the receipt of around Rs 2,900 crore’, because the money bought out a private-equity partner and paid working-capital debt. **My view: the skill is real, but the buyers are often trusts the builder sponsors (GR, Dilip Buildcon, IRB), so the price deserves a sceptical look.**",
+                },
+                {
+                    label: 'Niches with fewer bidders',
+                    text: "**Welspun**'s managing director says 20–25% margins on its Mumbai water plants are ‘a technology play’ that is not available ‘in the run-of-the-mill water project’; its tunnelling arm, Welspun Michigan Engineers, earned a 21% margin on ₹874cr of FY26 revenue and its machines are ‘100% occupied’. **Ceigall** specialises in elevated corridors, tunnels and flyovers and targets a 25% project return. **Dilip Buildcon**'s coal-mine contracts are long, fixed-rate per tonne with inflation adjustment, and management targets 24–25% margins. **KNR**'s management has not yet worked out the margin on its first mining contract, and **PNC** has already cut its coal revenue target. **My view: Welspun's and Ceigall's niches show up in their margins today; the mining niches are promises until the mines run at full rate.**",
+                },
+                {
+                    label: 'Eroding: speed and early completion',
+                    text: "Most of these builders made their names by finishing early. **Dilip Buildcon** says about 90% of its ₹45,000cr of HAM projects finished early. **PNC** earned a ₹56.39cr early-completion bonus on the Samruddhi expressway. But speed no longer protects margins when bids come in 20–35% below estimate: KNR's margin fell from about 19% to 9%, H.G.'s from about 14.5% to 8.5% and GR's from about 14% to 11%. H.G. describes ‘intensifying competition and lower margins, as always’, and PNC calls it ‘very unhealthy competition for the last two to three years’. **My view: in plain highway EPC the moat has largely gone; a builder's record now wins it the chance to bid, not a better price.**",
+                },
+                {
+                    label: 'Who else competes',
+                    text: "Larger diversified builders such as **Afcons**, **NCC** and **J Kumar** bid for elevated roads, tunnels and metros, and the government-owned **IRCON** takes rail and highway work; all four sit in other Construction groups on this page, and Larsen & Toubro competes for the largest jobs. ICRA says new entrants have also made water and metro work more competitive. In toll roads, IRB typically faces 5–7 bidders on a toll auction, and the buyers of finished projects include KKR-backed Vertis, Neo, EAAA and NHAI's own trust. **The market for plain highways is crowded; the markets for toll concessions and complex structures are not.**",
+                },
+            ],
+        },
+        {
+            heading: '5. Margins (comparative)',
+            body: [
+                "Are the margins structural? Three patterns: margins from toll concessions and niches that hold, building margins that swing with bitumen and project timing, and a large part of reported profit that comes from claims, asset sales and accounting rather than from building roads.",
+                "Whether profit turns into cash is in section 2 (the **Cash conversion** and **Free cash flow** tabs) and on each company card in Tab 2.",
+            ],
+            points: [
+                {
+                    label: 'Structural: tolls and specialist work',
+                    text: "**IRB**'s toll segment earned a 91% margin and its trust segment 94% in Q1 FY27, while its construction and maintenance work, done for its own trusts, earned 15%; the group margin has risen from 45% to 54–56% over five quarters as the mix shifted. **Welspun** has held about 20–22% in every quarter, on water plants and tunnelling rather than roads, and says it is conservatively guiding ‘18% plus’ for FY27. **Ceigall**'s standalone margin rose from 11.4% to 13.4% in Q1, and it still guides 11–12.5% for the year. **My view: IRB's margin is real but needs huge capital, so its return on capital is only about 7%; Welspun's is the best-quality margin in the group, but it has not come with growth.**",
+                },
+                {
+                    label: 'Cyclical: bitumen, land and start dates',
+                    text: "Road-building margins have fallen with bitumen and with idle time on sites waiting for land. **GR**'s standalone margin went from 12.65% to 11.0% in a year and it guides 10–11%. **H.G.**'s fell from 14.49% in the first nine months of FY26 to 9.84% in Q4 and 8.78% in Q1 FY27 (CARE's figures). **KNR**'s standalone margin was 5.3% in Q4 FY26. **Dilip Buildcon** cut its margin guide to ‘around 10% to 12%’. Most expect H2 to be better as monthly bitumen compensation kicks in and new projects start: KNR guides 10–12% for H2 and H.G. about 15%. **My view: H2 will be better than H1, but H.G.'s promised 15% needs a jump of more than six points in two quarters, which I would not bank on.**",
+                },
+                {
+                    label: 'Not structural: claims, asset sales and fair values',
+                    text: "**PNC**'s Q1 consolidated margin of 31% included ₹217.66cr of arbitration claims; before them CARE puts the standalone margin at 12.1%, and FY26 had another ₹435cr of claims and bonus. **KNR**'s Q1 standalone margin of 15% included about ₹46cr of one-off claims; without them it was about 5.5%. **Ashoka**'s Dec-25 quarter booked ₹2,416cr of other income from selling project companies, so its FY26 profit of ₹2,576cr says little about the business. **Dilip Buildcon**'s FY26 profit of ₹1,398cr rested on ₹1,396cr of other income and a tax rate of about 4%. **IRB**'s FY25 profit of ₹6,481cr included a ₹5,804cr fair-value gain, and its revenue still includes non-cash gains on trust units. **My view: compare these companies on standalone construction margins and cash, not on the consolidated profit line.**",
+                },
+                {
+                    label: 'Working capital: the biggest drains',
+                    text: "**KNR** is owed about ₹1,450cr by the Telangana irrigation department, about 30% of its net worth; the state has offered ₹650cr in instalments of ₹70–90cr a month, and the chairman says ‘unless you don't push, things will not happen’. **PNC** has ₹925cr of water-scheme debtors, ₹741cr of it due from government, plus ₹153cr from Andhra Pradesh irrigation. **GR**'s working capital rose from 117 days (March 2025) to 148 days (June 2026), with ₹1,784cr owed by its own HAM companies and oil-and-gas bills paid only on completion in May 2027. **Dilip Buildcon** runs at 133 days, with inventory days on Screener at 474 and about ₹400cr stuck in water schemes.",
+                },
+                {
+                    label: 'Working capital: getting worse',
+                    text: "**H.G.**'s gross current asset days rose from 218 to 277 in FY26 on HAM unbilled revenue, unpaid scope changes and a solar client whose loans were not tied up; CARE will cut the rating if they do not fall below 220. **PNC**'s rose from 158 in FY24 to 289 in FY26, and **Welspun**'s from 228 to 271 on slow water collections (CRISIL). **KNR**'s standalone working capital went from 78 to 133 days in one quarter. **Ceigall**'s unbilled revenue days rose from 94 to 133. **Ashoka** put about ₹250cr into new projects in Q1 and says its power-line receivables will normalise only by Q4 FY27.",
+                },
+                {
+                    label: 'Working capital: improving',
+                    text: "**IRB**'s trusts are now sending cash back: ₹102cr from the private trust and about ₹35cr from the public one in Q1, against ₹27cr and ₹19cr a year earlier. **PNC**'s net working capital improved to 110 days at June on water and Maharashtra receipts. **Ceigall** and **Welspun** note that the ministry has restored monthly HAM payments after NHAI moved to milestone payments in April 2024, which should shrink unbilled work. **Welspun** will cut about ₹800cr of debt when the Aunta–Simaria sale closes in Q2.",
+                },
+                {
+                    label: 'Working capital: built into HAM',
+                    text: "A HAM builder spends its own equity and working capital during construction, collects 40% of the cost in milestones, and gets the rest back over 15 years or by selling the project. That is why consolidated operating cash is negative at **GR** (−₹2,811cr in FY26), **Ceigall** (negative for five years) and **H.G.** (free cash negative for five years), and why the equity still to go in matters: ₹3,346cr at GR, ₹3,019cr committed in total at H.G. (₹1,665cr already in), about ₹1,600cr at Ceigall over FY27–FY28, ₹436cr at PNC and about ₹210cr plus ₹510cr for two new projects at KNR. **Judge each against its own history and its equity schedule, not against a factory company.**",
+                },
+            ],
+            tables: [
+                {
+                    caption: 'Q1 FY27 cash and capital, as stated on the calls',
+                    columns: ['Company', 'What management said', 'Balance sheet'],
+                    rows: [
+                        ['GR Infraprojects', 'Standalone borrowings ₹239cr; ₹3,346cr of project equity still to invest (₹900–1,000cr in FY27); capex ~₹300cr; trust payouts ₹200–250cr a year', 'Consolidated borrowings ₹5,286cr, mostly project debt; Screener net debt ₹3,660cr; CARE AA+'],
+                        ['IRB Infra.Devl.', 'Refinanced ₹14,650cr; underlying interest ₹401cr vs ₹462cr; no equity raise; net debt to equity to zero by FY30', 'Borrowings ₹20,027cr (March) incl. a US$ bond; Screener net debt ₹18,116cr'],
+                        ['Ceigall India', 'Equity ₹859cr in FY27 and ₹744cr in FY28; capex ₹30–35cr; ₹100cr commercial paper approved', 'Borrowings ₹1,311cr; ~₹320cr in deposits; Screener net debt ₹932cr'],
+                        ['Welspun Enterp', 'Cash ₹1,792cr, net debt ₹109cr at June; ₹1,500cr Pune–Shirur equity from warrants and asset sales; Aunta–Simaria sale cuts ~₹800cr of debt', 'Net worth ₹3,324cr; ₹1,372cr of guarantees for project companies; CRISIL AA'],
+                        ['KNR Constructions', 'Standalone debt nil, cash ₹310cr; capex ₹350–400cr for mining; buyback still ‘under consideration’', 'Project debt ₹2,438cr → ₹1,975cr after sales; Screener net debt ₹2,067cr; CRISIL AA'],
+                        ['Dilip Buildcon', 'Standalone net debt ₹2,106cr (up from ₹1,880cr); to fall ₹600–800cr in FY27 and to zero by FY28; working capital 133 → 120 days', 'Consolidated net debt ₹7,801cr; ₹2,612cr committed to subsidiaries; CRISIL A'],
+                        ['PNC Infratech', 'Standalone net cash ₹133cr (bank debt ₹428cr, deposits ₹485cr, cash ₹1,046cr); project equity ₹226cr due in FY27; capex ~₹150cr', 'Consolidated debt ₹5,448cr, cash ₹2,870cr; CARE AA+ on watch Negative'],
+                        ['H.G. Infra Engg.', 'Standalone debt ₹1,627cr → ₹1,834cr, to be cut to ₹900cr by March; ₹583cr of equity due in the rest of FY27; ₹725cr of sale proceeds due', 'Consolidated borrowings ₹5,029cr (FY26); Screener net debt ₹4,775cr; CARE AA Negative'],
+                        ['Ashoka Buildcon', 'About ₹2,100cr standalone debt incl. loans from subsidiaries; target ₹500–700cr of outside debt after the project sale; capex ~₹125cr', 'Company consolidated debt ₹2,778cr (March); Screener net debt ₹945cr; CRISIL rating withdrawn'],
+                    ],
+                    note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. Consolidated debt includes project-company loans repaid from tolls or annuities.',
+                },
+            ],
+        },
+        {
+            heading: '6. Growth and capex (comparative)',
+            body: [
+                "Where the next five years of growth could come from, how each company did against what it promised on its Q4 FY26 call, and my own estimate of earnings growth. In this group, growth in reported profit and growth in the business can point in opposite directions, because selling projects both books a gain and removes future income.",
+            ],
+            points: [
+                {
+                    label: 'Growth driver: toll and HAM projects put out again',
+                    text: "NHAI has put 54 projects worth about ₹1.8 lakh crore out for bidding this year, and the government wants about ₹75,000cr of toll roads, with NHAI now tendering bigger packages that Ashoka's managing director says ‘will definitely rationalize the competition’. **GR** has about ₹32,000cr of bids awaiting opening and guides ₹20,000cr of orders; **Dilip Buildcon** has ₹15,000–20,000cr awaiting opening; **PNC** had 24 bids worth ₹32,000cr in, including 10 national-highway HAMs, before its ban. **IRB** expects ₹40,000–50,000cr of toll-road auctions a year from a government pipeline of about ₹4.4 lakh crore, but three auctions were postponed to late August after NHAI raised the upfront spending required. **My view: the pipeline is real, but the award rate is the bottleneck; I assume FY27 awards near FY26 levels, with toll projects rewarding the strongest balance sheets.**",
+                },
+                {
+                    label: 'Growth driver: recycling capital through trusts',
+                    text: "**IRB** plans to grow the assets it manages from about ₹80,000cr to ₹1.4 lakh crore in three to four years and to move another ₹30,000–35,000cr of roads to its public trust over two to three years, with no new equity at IRB: ‘the growth is primarily going to come by unlocking capital.’ **Dilip Buildcon** will move its 11 remaining HAMs to the Anantam trust by March 2027 for about ₹1,750–1,800cr of units. **H.G.** expects ₹725cr more from Neo, **Ashoka** about ₹1,150cr for six projects, **Ceigall** more than ₹400cr for three, and **Welspun** about ₹1,000cr of enterprise value for Aunta–Simaria. **My view: recycling lets a road builder grow without new shares, but every slipped closing leaves debt higher for longer.**",
+                },
+                {
+                    label: 'Growth driver: coal mines, power lines and batteries',
+                    text: "**Dilip Buildcon** targets about 57 million tonnes of coal a year by FY29 and mine revenue of ₹2,500cr in FY27, ₹3,000cr+ in FY28 and about ₹4,000cr in FY29, and expects three-quarters of its profit to come from mines and assets by FY29. **KNR**'s Kusmunda mine adds about ₹400cr of revenue a year from FY28 but needs ₹500–600cr of equipment; **PNC** cut its coal revenue target for FY28 from ₹1,400cr to about ₹500cr because the land handed over was patchy and local people resisted. **H.G.** expects annuity-like income of ₹250cr+ a year from solar, about ₹225cr from its 1,470 MWh of battery storage and about ₹215cr from three power-line projects. **My view: these are sensible places to go, but they are capital-hungry and new; mine revenue in particular has disappointed at both Dilip Buildcon and PNC in the first year.**",
+                },
+                {
+                    label: 'Growth driver: tolls, tariffs and water',
+                    text: "**IRB**'s combined daily toll across its roads and trusts was about ₹27cr in Q1, up 26% with new roads, and August toll revenue was ₹807cr, up 25%; the private trust's average daily toll rose 45%, and the wholly owned Mumbai–Pune road 9% and Ahmedabad–Vadodara 21%. Management calls the next two years a ‘Goldilocks situation’. **Welspun**'s growth rests on the Pune–Shirur elevated toll road (about ₹5,400cr of building from Q3 FY27, then 25 years of tolls), the Dharavi, Bhandup and Panjrapur water plants in Mumbai, and a water book of about ₹14,000cr. **My view: toll growth is the most dependable driver in this group; Welspun's Pune–Shirur bet is large for its size and carries traffic risk.**",
+                },
+                {
+                    label: 'Delivering or beating',
+                    text: "**IRB** delivered everything it promised in May: refinancing that cut interest, the asset transfer signed within the first half as promised, construction revenue on track to cross ₹3,000cr, and profit up 51%. **GR** guided about 15% growth for FY27 and grew standalone revenue 33% in Q1, keeping a 10–11% margin guide. **Ceigall** promised ‘minimum 15%’ growth and 11–12.5% margins and delivered 15.7% and 13.4%, closed its first HAM sale and nudged its order guide up from ₹5,500cr to ₹6,000cr. **Welspun** met its FY26 revenue guide almost exactly (₹3,615cr against ₹3,600cr) and beat its margin guide.",
+                },
+                {
+                    label: 'Cautious',
+                    text: "**Ceigall** kept its 11–12.5% margin guide despite 13.4% in Q1, and **Welspun** kept ‘18% plus’ against 22.9% delivered, citing war-related cost risk. **GR**'s CFO: ‘Execution rate we have to assume at same level. I don't think it is going to increase.’ **KNR** raised its revenue figure to ₹2,200–2,300cr once new projects had start dates.",
+                },
+                {
+                    label: 'Missed',
+                    text: "**H.G.** won ₹1,300cr of orders in FY26 against ₹10,000cr hoped for, cut FY27 revenue from ‘₹6,500cr plus’ (with ₹7,000cr affirmed) to ₹6,000–6,500cr, and delivered an 8.5% margin and a loss in Q1 while standalone debt rose; the chairman called the quarter ‘disheartening’. **Ashoka** cut FY27 growth from 20% to 10–15%, orders from ₹8,000–10,000cr to ₹6,000–8,000cr and its margin from about 10% to 9–9.5%, all within 12 weeks, and its project sale moved from June to September, then to 31 October for only three of the six. **KNR** cut its FY27 margin from about 10% to 8–9%. **Dilip Buildcon** reaffirmed 30–40% FY27 growth after a Q1 in which revenue fell 9%, orders were ₹268cr and standalone net debt rose rather than fell.",
+                },
+                {
+                    label: 'Mixed',
+                    text: "**PNC** grew standalone revenue 34% in Q1 and kept its ₹6,000cr revenue target, but cut coal revenue and trimmed its order guide to ₹12,000–15,000cr, and all of it was set before the September ban from national-highway bidding. **Welspun** softened FY27 growth from ‘15%, 20%’ to ‘more closer to 15% than 20%’ after an 8% fall in Q1, and said orders expected in H1 may move to H2. **GR** beat on revenue but won almost no orders in Q1 and missed its Q4 FY26 revenue guide (₹2,521cr against about ₹3,000cr).",
+                },
+                {
+                    label: 'My outlook',
+                    text: "**I expect earnings growth of about 14% a year at Welspun, 13% at IRB, 12% at Ceigall, 9% at H.G., 8% at GR, 6% at Dilip Buildcon and 2% at KNR, and earnings to shrink about 5% a year at PNC and 6% at Ashoka.** These are growth rates from today's reported profit, which is why they look odd. H.G.'s base includes a loss-making quarter, so a return to FY26-level profit would give strong growth. PNC's and Ashoka's bases include claims and income from projects being sold, so even a healthy building business would report less. GR's and KNR's include HAM income that falls as projects are sold. **My view: the best business outcome in this group, IRB's, is already mostly in its price; the cheapest prices, at GR, PNC and Ashoka, reflect real problems.**",
+                },
+            ],
+            tables: [
+                {
+                    caption: 'My estimate of earnings growth over the next three to five years',
+                    numericColumns: [2],
+                    columns: ['Company', 'What drives it', 'Earnings growth: low / base / high'],
+                    rows: [
+                        ['Welspun Enterp', 'Pune–Shirur from FY28; water plants; asset-sale gains; margin easing from ~20%', '6% / **14%** / 20%'],
+                        ['IRB Infra.Devl.', 'Toll growth, April 2027 tariff reset, lower interest, trust payouts; Mumbai–Pune ends 2030', '6% / **13%** / 20%'],
+                        ['Ceigall India', 'Revenue 15%+; margin easing to 12–13%; interest on HAM debt', '5% / **12%** / 18%'],
+                        ['H.G. Infra Engg.', 'Recovery from a loss quarter; battery and solar income; debt falling if sales close', '−5% / **9%** / 20%'],
+                        ['GR Infraprojects', 'Revenue 15–20%; margin 10–11%; HAM income falling as projects are sold', '2% / **8%** / 14%'],
+                        ['Dilip Buildcon', 'Coal-mine ramp; building revenue recovery; interest falling', '−5% / **6%** / 15%'],
+                        ['KNR Constructions', 'Revenue above ₹3,000cr in FY28 at 11–12%; mining; HAM income sold away', '−6% / **2%** / 9%'],
+                        ['PNC Infratech', 'Claims income fades; national-highway ban; water, coal and state work', '−15% / **−5%** / 5%'],
+                        ['Ashoka Buildcon', 'Project companies sold; building margin to 10.5–11% in FY28', '−15% / **−6%** / 3%'],
+                    ],
+                    note: 'My own judgement, not guidance. The growth each price needs is in the live valuation table in section 8.',
+                },
+                {
+                    caption: 'Guidance, capex and track record (Q4 FY26 call promise against Q1 FY27 delivery)',
+                    badgeColumn: 3,
+                    columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
+                    rows: [
+                        ['GR Infraprojects', 'Revenue +15–20% (25% possible); margin 10–11%; orders ~₹20,000cr', '~₹300cr; project equity ₹900–1,000cr', '**Beat**: standalone +33%; orders negligible in Q1'],
+                        ['IRB Infra.Devl.', 'Construction revenue >₹3,000cr; toll ~10%; profit growth 25% a year to FY30', 'Little at IRB; new roads in the private trust', '**Delivered**: refinancing and transfer on time; no toll wins'],
+                        ['Ceigall India', 'Revenue +15% minimum; margin 11–12.5%; orders ₹6,000cr (was ₹5,500cr)', '₹30–35cr; equity ₹859cr', '**Beat**: +15.7%, 13.4% standalone; first sale closed'],
+                        ['Welspun Enterp', 'Revenue ‘closer to 15%’ (was 15–20%); margin 18%+; orders ₹8,000–10,000cr', 'Pune–Shirur equity ~₹1,500cr', '**Softened**: revenue −8%; orders slipping to H2'],
+                        ['KNR Constructions', 'Revenue ₹2,200–2,300cr; margin 8–9% (was ~10%); orders ₹8,000–10,000cr', '₹350–400cr, mostly mining', '**Cut**: underlying margin ~5.5%'],
+                        ['Dilip Buildcon', 'Revenue +30–40% from Q3; margin 10–12% (was 11–12%); debt −₹600–800cr', 'Under ₹100cr standalone; mine plant ₹2,730cr in its project company', '**Slipping**: revenue −9%; mines far behind; debt up'],
+                        ['PNC Infratech', 'Revenue ~₹6,000cr; margin ~12%; orders ₹12,000–15,000cr; coal ~₹500cr (was ₹600cr)', '~₹150cr; project equity ₹226cr', '**Mixed**: +34%, but guidance predates the NHAI ban'],
+                        ['H.G. Infra Engg.', 'Revenue ₹6,000–6,500cr (was ₹6,500cr+); margin 13.5–14%; debt to ₹900cr', 'Equity ₹583cr in rest of FY27', '**Walked back**: margin 8.5%, loss, debt up'],
+                        ['Ashoka Buildcon', 'Revenue +10–15% (was 20%); margin 9–9.5% (was ~10%); orders ₹6,000–8,000cr', '~₹125cr', '**Walked back**: three cuts in 12 weeks; sale delayed'],
+                    ],
+                },
+            ],
+        },
+        {
+            heading: '7. Risk factors',
+            body: [
+                "The risks fall into six groups. Several of the most important came from annual reports, stock-exchange filings and rating reports rather than from the calls, and in this group they are unusually serious.",
+            ],
+            points: [
+                {
+                    label: 'Enforcement: bans, suspensions and CBI cases',
+                    text: "**PNC**: after pavement on about 300 metres of the Kanpur–Lucknow (Awadh) expressway failed in the July rains, NHAI extended the concession company's debarment to PNC itself, which ‘will not be able to participate in any bid of MoRTH/NHAI ... for a period of three years’ (letter of 11 September); PNC is contesting it. **Ashoka**: a CBI chargesheet over NHAI work in Bihar is under an auditor's emphasis of matter, and NHAI's November 2025 bidding suspension is only held in abeyance by the Delhi High Court. **H.G.**: in January 2026 four employees were arrested by the CBI/ACB in Patna over railway projects, and offices and the chairman's home were searched; no chargesheet yet. **GR**: a 2022 CBI case in which employees were arrested with NHAI officials is stayed by the Gauhati High Court and flagged by the auditor, and the tax department searched its offices and the homes of promoters and the CFO in October 2025. **Dilip Buildcon**: a Kerala court's adviser called the July slope failure at its Wayanad tunnel foreseeable; the company calls it a natural calamity. **My view: the risk of one bad stretch of road shutting a builder out of its main market is now real, and the market is right to price it.**",
+                },
+                {
+                    label: 'Awards and start dates',
+                    text: "Won projects cannot be built until the authority declares an ‘appointed date’, and these keep slipping. **GR** waited over a year for Agra–Gwalior and has two more HAMs expected around December. **PNC**'s FY26 fall came mainly from three NHAI HAMs and one state project worth more than ₹4,400cr that lacked start dates. **Ceigall** has only 62% of the land for its Ludhiana bypass, **H.G.**'s DLF project is 3% done for lack of land and its Thane metro job faces local disruption, and **KNR**'s Mysore–Kushalnagar packages are only 18–20% built after protests. I expect more guidance cuts in the Q2 results where the H2 ramp depends on start dates, especially at H.G., PNC, KNR and Dilip Buildcon.",
+                },
+                {
+                    label: 'State payments',
+                    text: "**KNR**'s ₹1,363.3cr on Kaleswaram Package 4 is flagged by its auditor as ‘considered as good for recovery by the management’, and a further revised estimate of more than ₹700cr still needs government approval. **PNC** is owed ₹741cr by state water schemes and ₹153cr by Andhra Pradesh irrigation. **Welspun**'s Uttar Pradesh water schemes are paying slowly, and **Dilip Buildcon** has about ₹400cr stuck in water schemes. The pattern is national: about ₹50,000cr of the Jal Jeevan Mission's FY26 budget went unspent, and the first central tranche of JJM 2.0 in April 2026 was only ₹1,561cr across five states. Central agencies such as NHAI are generally described as prompt payers; states are not.",
+                },
+                {
+                    label: 'Accounting and auditors',
+                    text: "**Ceigall**'s auditor gave a qualified opinion on internal financial controls after a January 2026 stock-take found ₹8.985cr of ‘bogus purchases’ by employees colluding with vendors at four sites; no cash was lost, but some new controls were untested at the report date, and a subsidiary whose HAM concession NHAI terminated is now accounted for as not a going concern. **IRB** carries a ₹4,132cr receivable from its own private trust at fair value, a key audit matter, and its profits depend on how assets are priced between two trusts it sponsors. **KNR**'s contingent civil claims rose from ₹0.26cr to ₹182.2cr in a year with no explanation in the report. Tax claims are piling up: a ₹321.6cr GST notice at **GR**, a ₹94.0cr notice at **H.G.**, about ₹223cr of tax disputes at **Ashoka** and ₹646cr of claims at **KNR**.",
+                },
+                {
+                    label: 'Capital commitments and leverage',
+                    text: "**H.G.** has committed ₹3,019cr of equity to HAM, battery and power-line projects, with ₹1,354cr still to go, while its consolidated borrowings have more than tripled from ₹1,513cr to ₹5,029cr in two years and its interest bill doubled to ₹469cr. **GR** has ₹3,346cr of project equity to invest plus ₹450–500cr for warehousing this year. **Dilip Buildcon** has consolidated net debt of about ₹7,800cr, more than its market value, and ₹2,612cr committed to subsidiaries. **KNR** is spending ₹900cr–₹1,000cr on mining equipment for contracts it has never run. **Welspun**'s ₹1,500cr Pune–Shirur equity is large against its net worth of ₹3,324cr, and toll projects carry no price escalation.",
+                },
+                {
+                    label: 'Ratings and new ventures',
+                    text: "CARE put **PNC**'s AA+ on watch with negative implications after the ban and will downgrade if net debt exceeds operating profit or the margin drops below 12%. CARE turned **H.G.**'s outlook Negative on 3 September and will cut it if gross current asset days stay above 220. CRISIL reaffirmed **Ashoka** at AA- with a Negative outlook in June and then withdrew the rating at the company's request. **GR** terminated NTPC's Mouda battery-storage contracts on 16 September, citing the war, and NTPC invoked a ₹49.53cr bank guarantee and ₹41.34cr of surety bonds the next day; **H.G.** buys battery cells from CATL, carrying currency and technology risk; **Ashoka** now works in Guyana, Liberia, Angola and Saudi Arabia; **Welspun** has about ₹500cr in an offshore oil block and now leans towards developing it.",
+                },
+            ],
+        },
+        {
+            heading: '8. Valuation (comparative)',
+            body: [
+                "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it charges for debt. In this group the two disagree sharply, because consolidated debt is large and much of it sits in project companies. Neither is ideal: profit includes one-off gains, and consolidated debt includes loans repaid by annuities. I also look at price against book value, since several of these companies trade below the value of their net assets.",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **−2% to 0% at 5–6x, 4–6% at 8–10x, 7–8% at 11–12x, 13–14% at 20–22x and 18% at 30x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **Most of this group is priced for little or no growth, and five of the nine fit my estimates; none is stretched. That is the market saying it does not trust the earnings, and in several cases it is right.**",
+            ],
+            points: [
+                {
+                    label: 'What EV/EBITDA changes',
+                    text: "**Dilip Buildcon** (net debt ₹7,713cr) and **H.G.** (₹4,775cr) have more net debt than market value, so they look far less cheap on EV/EBITDA than on P/E. **IRB**'s ₹18,116cr of net debt makes the whole business worth almost twice its market value. **GR** (₹3,660cr), **PNC** (₹2,932cr) and **KNR** (₹2,067cr) carry mostly project debt that annuities repay, while their building arms have little or none. **Welspun** is the only company here with essentially no net debt. **My view: for the road builders, check the standalone balance sheet first; the consolidated debt is real, but it comes with annuity income attached.**",
+                },
+                {
+                    label: 'Fits: the price asks for no more than I expect',
+                    text: "**GR** needs about 4% a year against my ~8%, the widest margin of safety here, and trades below book value with an AA+ rating; the legal list is why it is ‘follow’ rather than ‘own’. **IRB** needs about 14% against my ~13%, and **Ceigall** about 14% against ~12%: both fit, but with little room for error. **H.G.** needs about 7% against my ~9% and **Dilip Buildcon** about 8% against ~6%; both fit only because their current profit is depressed or flattered, and both carry heavy debt, so I would wait.",
+                },
+                {
+                    label: 'Full: prices that ask a little more than I expect',
+                    text: "**Welspun** needs about 18% a year against my ~14%; it has the best balance sheet and margins in the group, but revenue has not grown for two years, and the price assumes Pune–Shirur and the water plants arrive on time. **KNR** needs about 5–6% against my ~2%; it is cash-rich, but its building margin has collapsed and Telangana owes it about 30% of its net worth. **PNC** needs roughly no growth against my −5%, and **Ashoka** a decline of about 2% a year against my −6%: their low prices already assume shrinking profits, but not as much as I expect.",
+                },
+                {
+                    label: 'Why low P/Es here are not bargains',
+                    text: "Low prices are telling you something. **PNC**'s profit includes ₹217.66cr of claims in Q1 alone and it has lost its main client for three years; its shares fell 55% in a year. **Ashoka**'s rests on project companies it is selling, its rating was withdrawn while Negative, and its shares fell 40%. **H.G.**'s fell 53% after a loss quarter and a CBI case, and **KNR**'s fell 40% as its margin collapsed. **My view: in a sector this exposed to enforcement and state payments, a low P/E is the starting point for research, not the conclusion.**",
+                },
+                {
+                    label: 'A check from book value and project sales',
+                    text: "Several companies trade well below book value: **Ashoka** at about half, **PNC** at about half, **KNR** at about two-thirds, **GR** at about 0.84 times, **H.G.** at about 0.9 times and **Dilip Buildcon** near book; **IRB** is about at book and **Welspun** well above it. Project sales give a check on what the assets are worth: **KNR** sold Guruvayur at about 2.5 times the equity it invested, **GR** sold four HAMs at about 1.2 times book, and **IRB** transfers roads at a 12–12.5% return after bidding at 15–16%. If those prices hold, the book values of GR, KNR and PNC are not inflated. The risk is receivables: KNR's Telangana dues and PNC's water debtors are both inside book value.",
+                },
+            ],
+            embed: 'valuation',
+        },
+    ],
+
+    verdicts: [
+        {
+            company: 'GR Infraprojects', rank: 1, stance: 'CYCLICAL', segment: BUILD,
+            what: "An Udaipur-based highway builder and HAM developer with its own large equipment fleet, now adding power lines, pipelines, tunnels, BharatNet fibre and warehousing; it sells finished projects to its own Indus trust.",
+            view: "**Cheap and financially strong, with too many loose ends to own yet.** Standalone borrowings are ₹239cr, CARE rates it AA+, and Q1 revenue rose 40% as projects started. But its standalone margin fell to 11.0%, consolidated operating cash was −₹2,811cr in FY26, ₹3,346cr of project equity is still to invest, and the auditor flags a 2022 CBI case alongside a 2025 tax search, a ₹321.6cr GST notice and NTPC's ₹90.87cr guarantee invocation. The price needs about 4% a year against my ~8%.",
+            watch: 'Orders towards the ₹20,000cr guide in Q2–Q3; the NTPC battery dispute settled without a large loss; standalone margin holding at 10–11%.',
+        },
+        {
+            company: 'IRB Infra.Devl.', rank: 2, stance: 'SCALEUP', segment: TOLL,
+            what: "India's largest private toll-road company: it owns two roads outright and sponsors, builds for and runs two infrastructure trusts, with 17,355 lane-km and about 10% of India's toll revenue; Cintra and a GIC affiliate own 36.8%.",
+            view: "**Doing what it promised, on thin returns.** Tolls rose 26% and profit 51% in Q1, refinancing cut interest, and the asset transfer to its public trust was signed on schedule. But return on equity is about 4%, revenue includes non-cash fair-value gains and a ₹4,132cr fair-valued receivable from its own trust, net debt is ₹18,116cr, and the flagship Mumbai–Pune concession ends in April 2030. The price needs about 14% a year against my ~13%.",
+            watch: 'A new toll-road win at a 15–16% return; the April 2027 tariff reset; net debt falling towards the FY30 zero target.',
+        },
+        {
+            company: 'Ceigall India', rank: 3, stance: 'SCALEUP', segment: BUILD,
+            what: "A Ludhiana-based builder of elevated corridors, flyovers, tunnels and expressways, listed in August 2024, now adding solar, battery storage and power lines; the Sehgal family owns 82%.",
+            view: "**The one road builder still growing with rising margins.** Revenue rose 16% in Q1, its standalone margin rose to 13.4%, the order book is ₹18,568cr and its first HAM sale closed above plan. But its auditor qualified its internal-control opinion after a ₹8.985cr vendor fraud, operating cash has been negative for five years, a HAM concession was terminated, and about ₹1,600cr of equity must go into projects in FY27–FY28. The price needs about 14% a year against my ~12%.",
+            watch: 'The two remaining sales to Neo closing in Q2–Q3; operating cash turning positive; a clean internal-control report for FY27.',
+        },
+        {
+            company: 'Welspun Enterp', rank: 4, stance: 'SCALEUP', segment: TOLL,
+            what: "The Welspun group's infrastructure developer: Mumbai water and wastewater plants, micro-tunnelling through its 60%-owned Welspun Michigan Engineers, and road projects built mostly by sub-contractors and then sold.",
+            view: "**The best balance sheet and margins here, but no growth for two years.** Net debt is ₹109cr, CRISIL upgraded it to AA, and margins run near 20%. But revenue has been flat at ₹3,600–3,700cr, fell 8% in Q1, growth guidance has softened to about 15%, operating cash has been weak for three years, and the ₹1,500cr Pune–Shirur toll bet carries traffic risk. The price needs about 18% a year against my ~14%.",
+            watch: 'Aunta–Simaria sale closing in Q2; Pune–Shirur appointed date in Q3; quarterly revenue back above ₹1,000cr.',
+        },
+        {
+            company: 'KNR Constructions', rank: 5, stance: 'TURNAROUND', segment: BUILD,
+            what: "A Hyderabad-based highway and irrigation builder and HAM developer, now moving into coal-mine operation, which is 45% of its order book.",
+            view: "**A strong balance sheet with a broken margin.** It has no standalone debt, ₹310cr of cash and a CRISIL AA rating, and it sells HAM projects well (Guruvayur at about 2.5 times invested equity). But its margin fell from 19% to 9% in FY26, the underlying Q1 margin was about 5.5%, Telangana owes it about ₹1,450cr under an auditor's emphasis, and its new mining work needs ₹900cr–₹1,000cr of equipment. The price needs about 5–6% a year against my ~2%.",
+            watch: 'Telangana paying its ₹70–90cr monthly instalments; H2 margin reaching 10–12%; Kusmunda mine running without eating the cash pile.',
+        },
+        {
+            company: 'Dilip Buildcon', rank: 6, stance: 'TURNAROUND', segment: BUILD,
+            what: "A Bhopal-based builder of roads, canals, tunnels and power lines that is turning itself into a coal-mine operator (about ₹1.03 lakh cr of contracts) and an owner of HAM, solar and power-line assets.",
+            view: "**A big plan that has not shown up in the numbers yet.** FY26 orders were a record ₹18,548cr and its coal-mine contracts are worth about ₹1.03 lakh cr. But FY26 revenue fell 21%, Q1 fell 9% with only ₹268cr of new orders, mine revenue was ₹362cr against ₹2,500cr targeted for the year, FY26 profit leaned on ₹1,396cr of other income, and consolidated net debt of about ₹7,800cr exceeds its market value. The price needs about 8% a year against my ~6%.",
+            watch: 'Revenue stepping up sharply in Q3–Q4; coal leaving Siarmal faster; standalone net debt falling by ₹600–800cr as promised.',
+        },
+        {
+            company: 'PNC Infratech', rank: 7, stance: 'TURNAROUND', segment: BUILD,
+            what: "An Agra-based highway builder and HAM developer that also builds water schemes, canals and airports and has started coal-mining work; it sold 12 projects to KKR's Vertis trust.",
+            view: "**A sound balance sheet cut off from its main client.** It has standalone net cash of ₹133cr and a ₹19,100cr order book, and grew standalone revenue 34% in Q1. But NHAI has barred it from national-highway bidding for three years, CARE's rating is on watch Negative, Q1 profit included ₹217.66cr of arbitration claims, and ₹925cr is owed on water schemes. The price needs roughly no growth against my −5%.",
+            watch: 'The court challenge to the debarment; non-NHAI orders replacing highway work; water-scheme dues coming in.',
+        },
+        {
+            company: 'H.G. Infra Engg.', rank: 8, stance: 'TURNAROUND', segment: BUILD,
+            what: "A Jaipur-based highway builder and HAM developer that has moved into railways, metros, solar, battery storage and power lines; its largest new order is a sub-contract on Welspun's Pune–Shirur road.",
+            view: "**A good builder that borrowed at the wrong time.** Its record was among the best, and the order book is ₹14,502cr. But the standalone margin fell to 8.5%, Q1 was a loss, consolidated borrowings have tripled to ₹5,029cr, CARE's outlook is Negative, four employees were arrested in a CBI/ACB case its auditor flags, and the H2 plan needs about ₹4,000cr of revenue at about 15%. The price needs about 7% a year against my ~9%.",
+            watch: 'Standalone debt falling towards ₹900cr; ₹725cr of sale proceeds from Neo arriving; Q2 revenue near ₹1,000cr at a double-digit margin.',
+        },
+        {
+            company: 'Ashoka Buildcon', rank: 9, stance: 'TURNAROUND', segment: BUILD,
+            what: "A Nashik-based builder of roads, power lines and railways with a growing overseas book, which has sold most of its toll and HAM projects to pay off a private-equity partner and debt.",
+            view: "**Cheap for reasons that have not gone away.** Its shares trade near half of book value and it has realised about ₹2,960cr from project sales. But the building business earned 7.2% before other income in Q1, guidance was cut three ways in 12 weeks, the six-project sale keeps slipping, its auditor flags a CBI chargesheet, NHAI's suspension is only stayed, and CRISIL withdrew its rating while Negative. The price needs a decline of about 2% a year against my −6%.",
+            watch: 'The three-project sale closing by 31 October; the Delhi High Court ruling on the NHAI suspension; Acuité’s AA rating holding after CRISIL’s withdrawal.',
+        },
+    ],
+
+    closing: {
+        heading: '9. Summary review',
+        body: [
+            "**Toll owners and asset-light developers.** **IRB Infrastructure (IRB Infra.Devl.): follow**; the toll business is working and management keeps its promises, but the price already asks for about what I expect, on a 4% return on equity. **Welspun Enterprises: follow**; the best balance sheet in the group, and a buy once revenue grows again and Pune–Shirur is financed.",
+            "**Road builders that build and sell HAM projects.** **GR Infraprojects: follow**, and the first to buy on a clean Q2; strong, cheap and growing again, with a legal list to clear. **Ceigall: follow**; growing with rising margins, but it must show cash and cleaner controls. **KNR Constructions: wait** for Telangana to pay and margins to recover. **Dilip Buildcon: wait** until the coal mines and the promised debt cut show up. **PNC Infratech: wait** for the courts to rule on its ban. **H.G. Infra: wait** for H2 delivery and lower debt. **Ashoka Buildcon: pass** while enforcement, rating and sale delays pile up.",
+            "**What would change my view.** For the better: NHAI awards recovering towards FY24 levels with fewer deep discounts; bitumen falling back as the West Asia war eases; PNC's ban quashed; Telangana and the water schemes paying; IRB winning toll auctions at its target return. For the worse: another builder banned or charged over quality; H2 guidance cuts in the Q2 results, which the sector research expects at several of these companies; project sales slipping again at Ashoka and H.G.; GR's disputes turning into cash losses.",
+            "**What to watch next quarter.** GR's orders; IRB's toll growth and auctions; Ceigall's project sales; Welspun's Pune–Shirur start; KNR's Telangana receipts and margin; Dilip Buildcon's revenue and coal volumes; PNC's court case; H.G.'s debt and H2 run-rate; Ashoka's project-sale closing.",
+        ],
+        bottomLine:
+            "No road name is an own today. Follow GR Infraprojects, IRB, Ceigall and Welspun Enterprises, with GR first to buy on a clean Q2; wait on KNR, Dilip Buildcon, PNC and H.G. Infra until payments, mines, courts or debt cuts come through; pass on Ashoka Buildcon.",
+    },
+
+    sources: [
+        { label: 'Filed quarterly results, annual ratios and cash flows — Screener.in', url: 'https://www.screener.in/company/GRINFRA/consolidated/' },
+        { label: 'Revenue growth of construction players to improve by 6–8% in 2026-27 — ICRA, Mar 2026', url: 'https://www.icra.in/CommonService/OpenMediaS3?Key=9dd3c3d4-668d-47a7-844a-ccc99949a6ca' },
+        { label: 'Road execution by MoRTH likely to moderate in FY2026-27 (ICRA) — EPC World, Feb 2026', url: 'https://www.epcworld.in/icra-road-execution-by-morth-likely-to-moderate-in-fy2026-27-owing-to-slowdown-in-project-awarding/' },
+        { label: 'State road capex to outpace central capex in FY27; pace slows to 21 km/day (CareEdge) — The Tribune, Sep 2026', url: 'https://www.tribuneindia.com/news/business/state-road-capex-to-outpace-central-capex-in-fy27-construction-pace-slows-to-21-km-day-from-36-8-in-fy21-careedge' },
+        { label: 'Union Budget 2026-27 analysis — PRS Legislative Research, Feb 2026', url: 'https://prsindia.org/files/budget/budget_parliament/2026/Union_Budget_Analysis-2026-27.pdf' },
+        { label: 'Bitumen price shock stalls road work — Autocar Professional, Jul 2026', url: 'https://www.autocarpro.in/news/bitumen-price-shock-stalls-road-work-forces-equipment-industry-to-temper-fy27-growth-hopes-133839' },
+        { label: 'Diversified infra players a better bet amid weak road order inflows — Business Standard, Jan 2026', url: 'https://www.business-standard.com/amp/markets/news/diversified-infra-players-better-bet-amid-weak-road-order-inflows-126010900840_1.html' },
+        { label: 'JJM 2.0 payment delays for contractors — The Core, 2026', url: 'https://www.thecore.in/opinion/the-plinth/businessinfrastructurejal-jeevan-mission-2-payment-delays-contractors-state-funding-869745' },
+        { label: 'IRB Infrastructure Q1 FY27 investor presentation', url: 'https://www.irb.co.in/home/wp-content/uploads/2026/07/Investor-Presentation-IRB_-Q1FY27_final.pdf' },
+        { label: 'IRB Infrastructure Annual Report FY26 (key audit matters) — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=564705ec-3512-4a4a-a7a7-9846a93f2428.pdf' },
+        { label: 'IRB Infrastructure rating rationale — CRISIL, Dec 2025', url: 'https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/IRBInfrastructureDevelopersLimited_December%2010_%202025_RR_382666.html' },
+        { label: 'G R Infraprojects Annual Report FY26 (CBI emphasis of matter) — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/773aa1fd-453d-4ebd-897b-b29094197326.pdf' },
+        { label: 'G R Infraprojects rating rationale — CARE, Jan 2026', url: 'https://www.careratings.com/upload/CompanyFiles/PR/202601150132_G_R_Infraprojects_Limited.pdf' },
+        { label: 'G R Infraprojects: termination of NTPC battery-storage contracts — BSE, Sep 2026', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ae32fbbc-5436-4afc-9492-0ee0303f1e50.pdf' },
+        { label: 'Ceigall India Q1 FY27 investor presentation — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=edb8f6f6-33fe-4a5c-b528-aee1c1831712.pdf' },
+        { label: 'Ceigall India Annual Report FY26 (qualified internal-control opinion) — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8fac5244-bb27-4733-8049-8fdf33561b4b.pdf' },
+        { label: 'Welspun Enterprises rating rationale (upgrade to AA) — CRISIL, Sep 2026', url: 'https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/WelspunEnterprisesLimited_September%2021_%202026_RR_400597.html' },
+        { label: 'Welspun Enterprises Annual Report FY26 — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/34dbb2f7-9fe2-453e-8027-5356ec467cb0.pdf' },
+        { label: 'KNR Constructions rating rationale — CRISIL, Aug 2026', url: 'https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/KNRConstructionsLimited_August%2003_%202026_RR_400775.html' },
+        { label: 'KNR Constructions Annual Report FY26 (Telangana emphasis of matter) — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=6098c704-e676-4370-b005-63d61e16d9a7.pdf' },
+        { label: 'KNR Constructions: sale of the Guruvayur project company — BSE, Sep 2026', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=180830fb-dba9-439e-b1c7-b383a2cd695d.pdf' },
+        { label: 'Dilip Buildcon Annual Report FY26 — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2ab414db-96cd-4280-a694-8c56e87107b7.pdf' },
+        { label: 'Wayanad landslip report highlights oversight — Onmanorama, Jul 2026', url: 'https://www.onmanorama.com/news/kerala/2026/07/19/wayanad-landslip-report-highlights-oversight-dilip-buildcon.html' },
+        { label: 'PNC Infratech: NHAI debarment disclosure — BSE, Sep 2026', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=4262ecf2-a5ba-4998-9735-f5fcbd0c2810.pdf' },
+        { label: 'PNC Infratech rating rationale (watch Negative) — CARE, Sep 2026', url: 'https://www.careratings.com/upload/CompanyFiles/PR/202609120905_PNC_Infratech_Limited.pdf' },
+        { label: 'PNC Infratech Annual Report FY26 — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8dfd4985-c36f-4762-b758-ab9006650d52.pdf' },
+        { label: 'Ashoka Buildcon rating rationale (reaffirmed and withdrawn) — CRISIL, Jun 2026', url: 'https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/AshokaBuildconLimited_June%2012_%202026_RR_397950.html' },
+        { label: 'Ashoka Buildcon Annual Report FY26 (CBI emphasis of matter) — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=108ab479-291c-4200-b846-fa318adcd757.pdf' },
+        { label: 'Ashoka Buildcon: extension of project-company sale — BSE, Sep 2026', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=769be569-7bea-4e64-a271-caa5e1798742.pdf' },
+        { label: 'H.G. Infra Engineering rating rationale (outlook Negative) — CARE, Sep 2026', url: 'https://www.careratings.com/upload/CompanyFiles/PR/202609160921_H.G._Infra_Engineering_Limited.pdf' },
+        { label: 'H.G. Infra Engineering Annual Report FY26 (CBI/ACB emphasis of matter) — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/d0b13a40-41c3-44d7-b9c1-ee3795a00e8e.pdf' },
+        { label: 'Company earnings calls and presentations, Q4 FY26 and Q1 FY27', url: 'https://www.bseindia.com/' },
+    ],
+};

@@ -84,7 +84,7 @@ function ChartCard({ title, subtitle, children, height }: {
     );
 }
 
-export function SectorOverview({ overview, companies }: {
+function SingleSectorOverview({ overview, companies }: {
     overview: SectorOverviewData;
     companies: EnrichedCompany[];
 }) {
@@ -651,6 +651,50 @@ export function SectorOverview({ overview, companies }: {
             {closingBlock}
 
             {sourcesBlock}
+        </div>
+    );
+}
+
+/**
+ * Large sectors are split into a few business-model groups ("buckets"), each a
+ * complete note with its own two tabs. The page shows one tab per group above
+ * the note; a plain sector renders its single note directly.
+ */
+export function SectorOverview({ overview, companies }: {
+    overview: SectorOverviewData;
+    companies: EnrichedCompany[];
+}) {
+    const buckets = overview.buckets;
+    const [active, setActive] = React.useState(0);
+    if (!buckets?.length) return <SingleSectorOverview overview={overview} companies={companies} />;
+    const current = buckets[Math.min(active, buckets.length - 1)];
+    return (
+        <div className="ml-5 mb-3">
+            <div className="mb-2 px-4 py-3 bg-gradient-to-r from-[#F4F9FE] to-white border border-gray-200 rounded-xl">
+                <div className="flex items-center gap-2">
+                    <BookOpen className="w-3.5 h-3.5 text-[#6B9FCC]" />
+                    <h2 className="text-base font-semibold text-gray-800 tracking-tight">{overview.title} — Sector Overview</h2>
+                </div>
+                <p className="text-xs text-gray-500 mt-1.5 max-w-3xl leading-relaxed">{overview.standfirst}</p>
+                <div className="flex flex-wrap gap-1.5 mt-3" role="tablist" aria-label={`${overview.title} groups`}>
+                    {buckets.map((b, i) => (
+                        <button
+                            key={b.label}
+                            role="tab"
+                            aria-selected={i === active}
+                            onClick={() => setActive(i)}
+                            className={`text-[11.5px] px-3 py-1.5 rounded-md border transition-colors ${i === active
+                                ? 'bg-[#4A7AAF] border-[#4A7AAF] text-white font-semibold'
+                                : 'bg-white border-gray-200 text-gray-600 hover:text-[#4A7AAF] hover:border-[#A5C4E2]'}`}
+                        >
+                            {b.label} <span className={i === active ? 'text-white/80' : 'text-gray-400'}>· {b.note.verdicts.length}</span>
+                        </button>
+                    ))}
+                </div>
+            </div>
+            <div className="-ml-5">
+                <SingleSectorOverview key={current.label} overview={current.note} companies={companies} />
+            </div>
         </div>
     );
 }
