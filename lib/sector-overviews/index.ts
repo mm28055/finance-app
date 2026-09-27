@@ -2,6 +2,7 @@ import { SectorOverview } from './types';
 import { pharmaCdmo } from './pharma-cdmo';
 import { software } from './software';
 import { chemicals } from './chemicals';
+import { consumerDurables } from './consumer-durables';
 import { construction } from './construction';
 import { realty } from './realty';
 import { foodProducts } from './food-products';
@@ -52,7 +53,7 @@ export * from './live-valuation';
  * Every written overview, keyed by the sector name it belongs to.
  * Add a new file alongside `pharma-cdmo.ts` and register it here.
  */
-const OVERVIEWS: SectorOverview[] = [pharmaCdmo, chemicals, software, construction, realty, foodProducts, retail, healthcare, commercialServices, agrochemicalFertilizers, hotelsAndTravels, pharmaOthers, solarPvCellsEpc, vehicles, oil, hospitals, miningMetalsRecycle, platformCos, forging, finance, healthProducts, plastics, utilities, ironSteel, constructionPower, hardware, travelServices, logistics, rubber, tyres, pharma, pharmaApi, pumpsCompEng, packaging, bearings, cables, aerospaceDefence, industrialManufacturing, industrialProducts, industrialRailway, industrialMachinery, electAndRefrac, electricalTransformers, electricalEquipment, emsElectronics];
+const OVERVIEWS: SectorOverview[] = [pharmaCdmo, consumerDurables, chemicals, software, construction, realty, foodProducts, retail, healthcare, commercialServices, agrochemicalFertilizers, hotelsAndTravels, pharmaOthers, solarPvCellsEpc, vehicles, oil, hospitals, miningMetalsRecycle, platformCos, forging, finance, healthProducts, plastics, utilities, ironSteel, constructionPower, hardware, travelServices, logistics, rubber, tyres, pharma, pharmaApi, pumpsCompEng, packaging, bearings, cables, aerospaceDefence, industrialManufacturing, industrialProducts, industrialRailway, industrialMachinery, electAndRefrac, electricalTransformers, electricalEquipment, emsElectronics];
 
 const BY_SECTOR = new Map(OVERVIEWS.map(o => [o.sector.toLowerCase(), o]));
 
