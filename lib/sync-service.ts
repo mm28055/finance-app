@@ -5,20 +5,87 @@ const pdf = require('pdf-parse');
 
 // ── Screener.in quarterly fallback ──────────────────────────────────────────
 
+// Screener's search is fuzzy and its first hit is regularly a different
+// company — "ANUP" returns Anupam Finserv, "STAR" returns Star Health — so a
+// candidate has to prove it is the same company before its numbers are used.
+// This fills in revenue/EBITDA/PAT the transcript didn't state, which makes an
+// unverified match worse here than a missing one: a quarter would carry another
+// company's results and read as real. Twin of the matcher in
+// scripts/sync-finance.js; that script is plain JS run by node, so the two
+// cannot share a module today — change both together.
+const NAME_NOISE = /\b(Ltd|Limited|Engg|Engineering|Industry|Industries|Corp|Corporation|Inc|Co|Com|Pvt|The|India)\.?\b/gi;
+
+function normaliseName(s: string): string {
+    return (s || '')
+        .replace(NAME_NOISE, ' ')
+        .replace(/[^a-z0-9 ]/gi, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .toLowerCase();
+}
+
+/** Dice coefficient over letter bigrams — tolerant of spelling drift
+ *  ("Refrigrations" vs "Refrigerations"), still separates "Anup" from "Anupam". */
+function nameSimilarity(a: string, b: string): number {
+    const bigrams = (s: string) => {
+        const out: string[] = [];
+        for (let i = 0; i < s.length - 1; i++) out.push(s.slice(i, i + 2));
+        return out;
+    };
+    const A = bigrams(a), B = bigrams(b);
+    if (!A.length || !B.length) return a && a === b ? 1 : 0;
+    const pool = [...B];
+    let hits = 0;
+    for (const g of A) {
+        const i = pool.indexOf(g);
+        if (i > -1) { hits++; pool.splice(i, 1); }
+    }
+    return (2 * hits) / (A.length + B.length);
+}
+
+/** Screener slugs an NSE company by its symbol, a BSE-only one by scrip code. */
+function screenerSlug(url: string): string {
+    const parts = (url || '').split('/').filter(p => p && p !== 'company' && p !== 'consolidated');
+    return parts[parts.length - 1] || '';
+}
+
+const MIN_NAME_MATCH = 0.75;
+
 async function resolveScreenerUrl(isin: string | null, ticker: string, name: string): Promise<string | null> {
-    const trySearch = async (q: string) => {
+    const searchScreener = async (q: string): Promise<{ name: string; url: string }[]> => {
         try {
             const res = await fetch(`https://www.screener.in/api/company/search/?q=${encodeURIComponent(q)}`, {
                 headers: { 'User-Agent': 'Mozilla/5.0' }
             });
             const data = await res.json();
-            if (data?.[0]?.url) return `https://www.screener.in${data[0].url}`;
-        } catch {}
-        return null;
+            return Array.isArray(data) ? data.filter((r: any) => r?.url && r?.name) : [];
+        } catch {
+            return [];
+        }
     };
-    if (isin) { const u = await trySearch(isin); if (u) return u; }
-    const u2 = await trySearch(ticker); if (u2) return u2;
-    return trySearch(name);
+
+    const pick = (results: { name: string; url: string }[]) => {
+        const want = (ticker || '').trim().toLowerCase();
+        if (want) {
+            const exact = results.find(r => screenerSlug(r.url).toLowerCase() === want);
+            if (exact) return exact;
+        }
+        const wantName = normaliseName(name);
+        let best: { name: string; url: string } | null = null;
+        let bestScore = 0;
+        for (const r of results) {
+            const score = nameSimilarity(wantName, normaliseName(r.name));
+            if (score > bestScore) { best = r; bestScore = score; }
+        }
+        return bestScore >= MIN_NAME_MATCH ? best : null;
+    };
+
+    for (const q of [isin, ticker, name, normaliseName(name)]) {
+        if (!q) continue;
+        const hit = pick(await searchScreener(q));
+        if (hit) return `https://www.screener.in${hit.url}`;
+    }
+    return null;
 }
 
 // Screener's quarterly table is a plain HTML grid: row 0 is the column headers

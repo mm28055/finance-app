@@ -47,51 +47,94 @@ async function fetchGoogleFinance(ticker) {
 }
 
 // ================= SCREENER.IN (FALLBACK) =================
-async function resolveScreenerUrl(query) {
-    if (!query) return null;
+// Screener's search is fuzzy and its first hit is regularly a DIFFERENT
+// company: "ANUP" returns Anupam Finserv (₹1.8), "STAR" returns Star Health.
+// This used to take data[0] — and, failing that, retry on ever-shorter
+// fragments of the name — so those companies' price and market cap were
+// written onto ours with nothing to flag it: NRB Bearing showed ₹79 cr,
+// Hind Rectifiers ₹4.5 lakh cr.
+//
+// A candidate now has to prove it is the same company before it is used, and
+// no proof means no data. A stale number is recoverable; a confidently wrong
+// one is not, and these sit on the dashboard looking exactly like the rest.
+const NAME_NOISE = /\b(Ltd|Limited|Engg|Engineering|Industry|Industries|Corp|Corporation|Inc|Co|Com|Pvt|The|India)\.?\b/gi;
 
-    const cleanQuery = query
-        .replace(/\b(Ltd|Limited|Engg|Engineering|Industry|Industries|Corp|Corporation|Inc|Co|Com|Pvt)\.?\b/gi, '')
-        .replace(/[&.]/g, ' ')
+function normaliseName(s) {
+    return (s || '')
+        .replace(NAME_NOISE, ' ')
+        .replace(/[^a-z0-9 ]/gi, ' ')
         .replace(/\s+/g, ' ')
-        .trim();
+        .trim()
+        .toLowerCase();
+}
 
-    const trySearch = async (q) => {
-        try {
-            const res = await fetch(`https://www.screener.in/api/company/search/?q=${encodeURIComponent(q)}`, {
-                headers: { 'User-Agent': 'Mozilla/5.0' }
-            });
-            const data = await res.json();
-            if (data && data[0] && data[0].url) {
-                return `https://www.screener.in${data[0].url}`;
-            }
-        } catch (e) { }
-        return null;
+// Dice coefficient over letter bigrams. Tolerant of the spelling drift between
+// our names and the exchanges' ("Shree Refrigrations" vs "Shree Refrigerations")
+// while still keeping "Anup" clear of "Anupam".
+function nameSimilarity(a, b) {
+    const bigrams = (s) => {
+        const out = [];
+        for (let i = 0; i < s.length - 1; i++) out.push(s.slice(i, i + 2));
+        return out;
     };
-
-    // Try original
-    let url = await trySearch(query);
-    if (url) return url;
-
-    // Try cleaned
-    if (cleanQuery !== query && cleanQuery.length > 2) {
-        url = await trySearch(cleanQuery);
-        if (url) return url;
+    const A = bigrams(a), B = bigrams(b);
+    if (!A.length || !B.length) return a && a === b ? 1 : 0;
+    const pool = [...B];
+    let hits = 0;
+    for (const g of A) {
+        const i = pool.indexOf(g);
+        if (i > -1) { hits++; pool.splice(i, 1); }
     }
+    return (2 * hits) / (A.length + B.length);
+}
 
-    // Try first two words
-    const words = cleanQuery.split(' ');
-    if (words.length > 2) {
-        url = await trySearch(words.slice(0, 2).join(' '));
-        if (url) return url;
+// Screener slugs an NSE-listed company by its symbol (/company/HIRECT/) and a
+// BSE-only one by its scrip code (/company/544458/), so a slug equal to our
+// ticker is proof of identity on its own.
+function screenerSlug(url) {
+    const parts = (url || '').split('/').filter(p => p && p !== 'company' && p !== 'consolidated');
+    return parts[parts.length - 1] || '';
+}
+
+const MIN_NAME_MATCH = 0.75;
+
+function verifiedPick(company, results) {
+    const ticker = (company.ticker || '').trim().toLowerCase();
+    if (ticker) {
+        const exact = results.find(r => screenerSlug(r.url).toLowerCase() === ticker);
+        if (exact) return exact;
     }
-
-    // Try first word only if it's long enough
-    if (words.length >= 1 && words[0].length > 3) {
-        url = await trySearch(words[0]);
-        if (url) return url;
+    const want = normaliseName(company.name);
+    let best = null, bestScore = 0;
+    for (const r of results) {
+        const score = nameSimilarity(want, normaliseName(r.name));
+        if (score > bestScore) { best = r; bestScore = score; }
     }
+    return bestScore >= MIN_NAME_MATCH ? best : null;
+}
 
+async function searchScreener(query) {
+    if (!query) return [];
+    try {
+        const res = await fetch(`https://www.screener.in/api/company/search/?q=${encodeURIComponent(query)}`, {
+            headers: { 'User-Agent': 'Mozilla/5.0' }
+        });
+        const data = await res.json();
+        return Array.isArray(data) ? data.filter(r => r && r.url && r.name) : [];
+    } catch (e) {
+        return [];
+    }
+}
+
+async function resolveScreenerUrl(company) {
+    const queries = [company.isin, company.ticker, company.name, normaliseName(company.name)];
+    const tried = new Set();
+    for (const q of queries) {
+        if (!q || tried.has(q)) continue;
+        tried.add(q);
+        const hit = verifiedPick(company, await searchScreener(q));
+        if (hit) return `https://www.screener.in${hit.url}`;
+    }
     return null;
 }
 
@@ -106,24 +149,12 @@ function extractScreenerValue(html, label) {
 }
 
 async function fetchScreenerHtml(company) {
-    let url = null;
+    const url = await resolveScreenerUrl(company);
 
-    // Priority 1: ISIN (Most reliable)
-    if (company.isin) {
-        url = await resolveScreenerUrl(company.isin);
-    }
-
-    // Priority 2: Ticker
     if (!url) {
-        url = await resolveScreenerUrl(company.ticker);
+        console.warn(`\n   ⚠️ No verifiable Screener match for ${company.name.trim()} (${company.ticker}) — leaving its figures untouched.`);
+        return null;
     }
-
-    // Priority 3: Name
-    if (!url) {
-        url = await resolveScreenerUrl(company.name);
-    }
-
-    if (!url) return null;
 
     try {
         const response = await fetch(url, {
