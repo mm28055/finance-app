@@ -770,12 +770,6 @@ export const bearingsValuationInputs: Record<string, ValuationInput> = {
         "mcapAtWriting": 14161.0,
         "peAtWriting": 36.9
     },
-    "SKF India": {
-        "netDebt": -306,
-        "ttmEbitda": 369.0,
-        "mcapAtWriting": 7501.0,
-        "peAtWriting": 32.3
-    },
     "Harsha Engineers Int": {
         "netDebt": -146,
         "ttmEbitda": 252.0,
