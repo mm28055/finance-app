@@ -586,7 +586,7 @@ export const solarPvCellsEpc: SectorOverview = {
                 },
                 {
                     label: 'Fits: prices that ask for my growth or less',
-                    text: "**Alpex** needs about 6% a year against my 10%, **Australian Premium** about 3–4% against my 5%, and **Oriana** about 8% against my 10%. **Emmvee** needs about 12% against my 12% and **Insolation** about 6% against my 5%, so these two only just fit. For Insolation the price is not the problem; its capex and related-party dealings are. For Oriana, the fit depends on its reported profit, most of which has not yet come back as cash.",
+                    text: "**Alpex** needs about 6% a year against my 10%, **Australian Premium** about 3–4% against my 5% on Screener's figures (the dashboard's P/E for this half-yearly reporter is wrong, so it is left out of the live table), and **Oriana** about 8% against my 10%. **Emmvee** needs about 12% against my 12% and **Insolation** about 6% against my 5%, so these two only just fit. For Insolation the price is not the problem; its capex and related-party dealings are. For Oriana, the fit depends on its reported profit, most of which has not yet come back as cash.",
                 },
                 {
                     label: 'Full',

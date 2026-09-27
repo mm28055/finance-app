@@ -1082,11 +1082,5 @@ export const solarValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 172.0,
         "mcapAtWriting": 793.0,
         "peAtWriting": 9.95
-    },
-    "Australian Prem": {
-        "netDebt": 11,
-        "ttmEbitda": 95.0,
-        "mcapAtWriting": 475.0,
-        "peAtWriting": 8.21
     }
 };
