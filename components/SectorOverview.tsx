@@ -276,7 +276,7 @@ function SingleSectorOverview({ overview, companies }: {
                     </h2>
                 </div>
                 <p className="text-xs text-gray-500 mt-1.5 max-w-2xl leading-relaxed">
-                    {overview.standfirst}
+                    <RichText text={overview.standfirst} />
                 </p>
             </div>
             <div className="text-[10px] text-gray-400 text-right flex-shrink-0 leading-relaxed">
@@ -675,7 +675,7 @@ export function SectorOverview({ overview, companies }: {
                     <BookOpen className="w-3.5 h-3.5 text-[#6B9FCC]" />
                     <h2 className="text-base font-semibold text-gray-800 tracking-tight">{overview.title} — Sector Overview</h2>
                 </div>
-                <p className="text-xs text-gray-500 mt-1.5 max-w-3xl leading-relaxed">{overview.standfirst}</p>
+                <p className="text-xs text-gray-500 mt-1.5 max-w-3xl leading-relaxed"><RichText text={overview.standfirst} /></p>
                 <div className="flex flex-wrap gap-1.5 mt-3" role="tablist" aria-label={`${overview.title} groups`}>
                     {buckets.map((b, i) => (
                         <button
