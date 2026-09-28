@@ -1,0 +1,13 @@
+{
+    "_note": "Screener pages for companies whose stored name the search cannot match (renamed, abbreviated or ambiguous). Keyed by ISIN. Used by lib/sync-service.ts and scripts/sync-finance.js before any search.",
+    "INE183A01024": "/company/FINPIPE/consolidated/",
+    "INE0M4D01010": "/company/SETL/consolidated/",
+    "INE116A01032": "/company/APCOTEXIND/",
+    "INE133A01011": "/company/JSWDULUX/consolidated/",
+    "INE00M201021": "/company/SWSOLAR/consolidated/",
+    "INE994E01018": "/company/3BBLACKBIO/consolidated/",
+    "INE019J01013": "/company/533259/consolidated/",
+    "INE483S01020": "/company/CCAVENUE/consolidated/",
+    "INE811A01020": "/company/KIRLPNU/",
+    "INE288301026": "/company/544844/"
+}

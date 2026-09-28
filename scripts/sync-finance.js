@@ -139,7 +139,12 @@ async function searchScreener(query) {
     }
 }
 
+// Renamed or hard-to-match companies have a fixed page, keyed by ISIN.
+const SCREENER_OVERRIDES = require('../lib/screener-overrides.json');
+
 async function resolveScreenerUrl(company) {
+    const fixed = company.isin && SCREENER_OVERRIDES[company.isin];
+    if (fixed) return `https://www.screener.in${fixed}`;
     // Last resort: the first word alone ("Waaree Renewables" finds nothing on
     // Screener, "waaree" finds both Waaree companies and the word check picks one).
     const queries = [company.isin, company.ticker, company.name, normaliseName(company.name), normaliseName(company.name).split(' ')[0]];

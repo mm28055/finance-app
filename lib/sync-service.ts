@@ -2,6 +2,7 @@ import { prisma } from './prisma';
 import { analyzeTranscript } from './ai-analyst';
 import fs from 'fs';
 import { GENERAL_Q } from './retention';
+import SCREENER_OVERRIDES from './screener-overrides.json';
 const pdf = require('pdf-parse');
 
 // ── Screener.in quarterly fallback ──────────────────────────────────────────
@@ -58,6 +59,9 @@ export async function resolveScreenerUrl(
     isin: string | null, ticker: string, name: string,
     get: (url: string, init?: RequestInit) => Promise<Response> = fetch
 ): Promise<string | null> {
+    // Renamed or hard-to-match companies have a fixed page (lib/screener-overrides.json).
+    const fixed = isin ? (SCREENER_OVERRIDES as Record<string, string>)[isin] : undefined;
+    if (fixed) return `https://www.screener.in${fixed}`;
     const searchScreener = async (q: string): Promise<{ name: string; url: string }[]> => {
         try {
             const res = await get(`https://www.screener.in/api/company/search/?q=${encodeURIComponent(q)}`, {
