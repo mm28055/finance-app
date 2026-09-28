@@ -14,5 +14,96 @@
     "subject": "Demerger (automotive / industrial split)",
     "why": "Put SKF India into the live table once July–September 2026 results are filed (first four clean post-split quarters); until then its trailing P/E uses too small a profit base.",
     "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Maxvolt Energy Indus",
+    "sector": "EMS & Electronics",
+    "subject": "Not in the EMS & Electronics note",
+    "why": "Add a company section to the EMS & Electronics note (or write the note if the sector has none).",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Aurum Proptech",
+    "sector": "Platform Cos",
+    "subject": "Moved sector: Software → Platform Cos",
+    "why": "Move its section from the Software note to the Platform Cos note.",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Bajaj Consumer Care",
+    "sector": "Consumer Durables",
+    "subject": "Not in the Consumer Durables note",
+    "why": "Add a company section to the Consumer Durables note (or write the note if the sector has none).",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Anondita Medicare",
+    "sector": "Health Products",
+    "subject": "Not in the Health Products note",
+    "why": "Add a company section to the Health Products note (or write the note if the sector has none).",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Clean Max Env. Energ",
+    "sector": "Solar PV Cells EPC",
+    "subject": "Not in the Solar PV Cells EPC note",
+    "why": "Add a company section to the Solar PV Cells EPC note (or write the note if the sector has none).",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "One Mobikwik Systems",
+    "sector": "Platform Cos",
+    "subject": "Not in the Platform Cos note",
+    "why": "Add a company section to the Platform Cos note (or write the note if the sector has none).",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Saregama India",
+    "sector": "Media and Entertainment",
+    "subject": "Not in the Media and Entertainment note",
+    "why": "Add a company section to the Media and Entertainment note (or write the note if the sector has none).",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "TruAlt Bioenergy",
+    "sector": "Oil",
+    "subject": "Not in the Oil note",
+    "why": "Add a company section to the Oil note (or write the note if the sector has none).",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Railtel Corporation of India",
+    "sector": "Software",
+    "subject": "Not in the Software note",
+    "why": "Add a company section to the Software note (or write the note if the sector has none).",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Basilic Fly Studio",
+    "sector": "Media and Entertainment",
+    "subject": "Not in the Media and Entertainment note",
+    "why": "Add a company section to the Media and Entertainment note (or write the note if the sector has none).",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Tips Music",
+    "sector": "Media and Entertainment",
+    "subject": "Not in the Media and Entertainment note",
+    "why": "Add a company section to the Media and Entertainment note (or write the note if the sector has none).",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Infibeam Avenues",
+    "sector": "Platform Cos",
+    "subject": "Not in the Platform Cos note",
+    "why": "Add a company section to the Platform Cos note (or write the note if the sector has none).",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Cosmic CRF",
+    "sector": "Industrial - Railway",
+    "subject": "Not in the Industrial - Railway note",
+    "why": "Add a company section to the Industrial - Railway note (or write the note if the sector has none).",
+    "addedOn": "2026-09-28"
   }
 ]

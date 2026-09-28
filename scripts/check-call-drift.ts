@@ -3,7 +3,8 @@
  * far from today's price since its note was written (an "own" that has become
  * stretched, a "wait"/"pass" that has come to fit) and adds them to lib/corporate-actions/needs-attention.json, which is read at the
  * start of each working session so the call gets a fresh look before the quarterly
- * refresh. Nothing on the site changes by itself.
+ * refresh. It also lists companies moved to another sector, or sitting in a sector whose
+ * note does not cover them. Nothing on the site changes by itself.
  *
  *   npx tsx scripts/check-call-drift.ts            (writes new entries)
  *   npx tsx scripts/check-call-drift.ts --dry-run  (prints only)
@@ -37,6 +38,22 @@ async function main() {
         if (why) drifts.push({ company: co.name, sector: ci.sector, call: ci.call, check, why });
     }
 
+    // Sector moves: a company whose note is in another sector, or a company in a sector
+    // whose note does not cover it (new, or moved from Misc). Misc and the portfolio have
+    // no notes by design.
+    const coverage: { company: string; sector: string; subject: string; why: string }[] = [];
+    for (const co of companies) {
+        if (/^(misc|zportfolio)$/i.test(co.sector.trim())) continue;
+        const ci = info.get(co.name.trim().toLowerCase());
+        if (ci && ci.sector.toLowerCase() !== co.sector.toLowerCase()) {
+            coverage.push({ company: co.name, sector: co.sector, subject: `Moved sector: ${ci.sector} → ${co.sector}`, why: `Move its section from the ${ci.sector} note to the ${co.sector} note.` });
+        } else if (!ci) {
+            coverage.push({ company: co.name, sector: co.sector, subject: `Not in the ${co.sector} note`, why: `Add a company section to the ${co.sector} note (or write the note if the sector has none).` });
+        }
+    }
+    console.log(`${coverage.length} companies need a note change for their sector:`);
+    for (const c of coverage) console.log(`  ${c.company} | ${c.subject}`);
+
     console.log(`${drifts.length} companies in extreme drift:`);
     for (const d of drifts) console.log(`  ${d.sector} | ${d.company} | ${d.call} → ${d.check}`);
     if (dryRun) { await prisma.$disconnect(); return; }
@@ -49,6 +66,11 @@ async function main() {
         const exists = list.some(e => e.company === d.company && e.subject === `Call drift: ${d.call} → ${d.check}` && !e.handled);
         if (exists) continue;
         list.push({ company: d.company, sector: d.sector, subject: `Call drift: ${d.call} → ${d.check}`, why: `${d.why}. Revisit the call.`, addedOn: today });
+        added++;
+    }
+    for (const c of coverage) {
+        if (list.some(e => e.company === c.company && e.subject === c.subject && !e.handled)) continue;
+        list.push({ company: c.company, sector: c.sector, subject: c.subject, why: c.why, addedOn: today });
         added++;
     }
     if (added) fs.writeFileSync(FILE, JSON.stringify(list, null, 2) + '\n');
