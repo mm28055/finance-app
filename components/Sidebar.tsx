@@ -1,11 +1,8 @@
 "use client";
 import React from 'react';
 import { cn } from "@/lib/utils";
-import { Activity, ShieldAlert, RefreshCw, LayoutGrid, BrainCircuit } from 'lucide-react';
+import { Activity, ShieldAlert } from 'lucide-react';
 import { useAdmin } from '@/context/AdminContext';
-import { toast } from 'sonner';
-import { PromptEditor } from './PromptEditor';
-import { SyncStatusPanel } from './SyncStatusPanel';
 import { GeneralNotesList } from './GeneralNotesList';
 
 interface SidebarProps {
@@ -15,8 +12,6 @@ interface SidebarProps {
 
 export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
     const { isAdminMode, setAdminMode } = useAdmin();
-    const [showPromptEditor, setShowPromptEditor] = React.useState(false);
-    const [showSyncPanel, setShowSyncPanel] = React.useState(false);
 
     return (
         <>
@@ -77,48 +72,9 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
                             )}></div>
                         </button>
                     </div>
-                        {isAdminMode && (
-                            <div className="mt-4 space-y-2 border-t border-gray-100 pt-4">
-                                <div className="text-[10px] text-gray-400 font-medium uppercase mb-2 tracking-wider">Sync Controls</div>
-
-                                {/* Global Smart Sync */}
-                                <button
-                                    onClick={async () => {
-                                        setShowSyncPanel(true); // Open Panel Immediately
-                                        const id = toast.loading('Global Smart Sync Started', { description: 'Monitor progress in the panel >' });
-                                        try {
-                                            // Calls the updated /api/sync/tijori which now runs smart-sync.ts
-                                            const res = await fetch('/api/sync/tijori', { method: 'POST' });
-                                            const data = await res.json();
-                                            if (data.success) {
-                                                toast.dismiss(id);
-                                            } else {
-                                                toast.error('Sync Failed', { id, description: data.error });
-                                            }
-                                        } catch (e) {
-                                            toast.error('Network Error', { id });
-                                        }
-                                    }}
-                                    className="w-full flex items-center gap-2 px-3 py-2 rounded-lg bg-[#6B9FCC] text-white hover:bg-[#4A7AAF] transition-all text-[11px] font-medium shadow-sm active:scale-95 group"
-                                >
-                                    <RefreshCw className="w-3.5 h-3.5 group-hover:animate-spin" />
-                                    Global Smart Sync
-                                </button>
-                                {/* Configure AI */}
-                                <button
-                                    onClick={() => setShowPromptEditor(true)}
-                                    className="w-full flex items-center gap-2 px-3 py-2 rounded-lg bg-white border border-gray-200 text-gray-600 hover:bg-[#F0F7FF] hover:border-[#6B9FCC] hover:text-[#6B9FCC] transition-all text-[11px] font-medium group"
-                                >
-                                    <BrainCircuit className="w-3.5 h-3.5 group-hover:text-purple-500" />
-                                    Configure AI Brain
-                                </button>
-                            </div>
-                        )}
                 </div>
 
             </aside>
-            {showPromptEditor && <PromptEditor onClose={() => setShowPromptEditor(false)} />}
-            <SyncStatusPanel isOpen={showSyncPanel} onClose={() => setShowSyncPanel(false)} />
         </>
     );
 };
