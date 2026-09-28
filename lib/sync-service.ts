@@ -1,6 +1,7 @@
 import { prisma } from './prisma';
 import { analyzeTranscript } from './ai-analyst';
 import fs from 'fs';
+import { GENERAL_Q } from './retention';
 const pdf = require('pdf-parse');
 
 // ── Screener.in quarterly fallback ──────────────────────────────────────────
@@ -466,7 +467,8 @@ export async function processTranscript(transcriptId: string) {
                 keyHighlights: JSON.stringify(aiResult.summary?.highlights || []),
                 deltaAnalysis: aiResult.delta_analysis,
                 investorBrief: aiResult.investor_brief,
-                investibilityScore: aiResult.investibility_score
+                // AGMs and special calls are read, not scored: only results calls carry a score.
+                investibilityScore: transcript.quarter.q === GENERAL_Q ? null : aiResult.investibility_score
             },
             create: {
                 companyId: transcript.companyId,
@@ -480,7 +482,8 @@ export async function processTranscript(transcriptId: string) {
                 keyHighlights: JSON.stringify(aiResult.summary?.highlights || []),
                 deltaAnalysis: aiResult.delta_analysis,
                 investorBrief: aiResult.investor_brief,
-                investibilityScore: aiResult.investibility_score
+                // AGMs and special calls are read, not scored: only results calls carry a score.
+                investibilityScore: transcript.quarter.q === GENERAL_Q ? null : aiResult.investibility_score
             }
         }),
         prisma.transcript.update({
