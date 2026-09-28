@@ -72,5 +72,7 @@ export function extremeDrift(call: Call, then: PriceCheck, now: PriceCheck, move
     if (moved !== undefined && (moved === null || Math.abs(moved) < DRIFT_MOVE)) return null;
     if (call === 'own' && now === 'Stretched') return `Call is own; the price check has moved from ${then.toLowerCase()} to stretched since the note`;
     if ((call === 'wait' || call === 'pass') && now === 'Fits') return `Call is ${call}; the price check has moved from ${then.toLowerCase()} to fits since the note`;
+    // A follow waiting for a better price that now has it: a candidate for own.
+    if (call === 'follow' && now === 'Fits') return `Call is follow; the price check has moved from ${then.toLowerCase()} to fits since the note — a possible upgrade to own`;
     return null;
 }
