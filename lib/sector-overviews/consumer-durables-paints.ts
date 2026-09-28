@@ -266,7 +266,7 @@ export const consumerDurablesPaints: SectorOverview = {
                 },
                 {
                     label: 'Raw materials and price rises in FY27',
-                    text: "The war lifted crude-linked inputs from March 2026. **Kansai** raised house-paint prices four times (about 2% on 25 March, then 5–6% each on 10 April, 21 April and 11 May), low teens in all, and about 5% in industrial; it expects about 3% more in house paints in Q2. **JSW Dulux** cited 24–25% raw-material inflation and said the industry still needed about 3–4% more pricing. **Sirca** raised prices 5% in April and 5% in May. Industrial prices follow one to two quarters late because car-makers renegotiate on a schedule. **My view: price rises have covered costs so far, but Q2 carries dearer stock, and any fall in crude will be competed away quickly in a price war.**",
+                    text: "The war lifted crude-linked inputs from March 2026. **Kansai** raised house-paint prices four times (about 2% on 25 March, then 5–6% each on 10 April, 21 April and 11 May), low teens in all, and about 5% in industrial; it expects about 3% more in house paints in Q2. **JSW Dulux** said in May that raw-material inflation was 24–25% and the industry still needed about 3–4% more pricing; in August it said only that its increases had been in line with the industry, while the newcomers kept discounting. **Sirca** raised prices 5% in April and 5% in May. Industrial prices follow one to two quarters late because car-makers renegotiate on a schedule. **My view: price rises have covered costs so far, but Q2 carries dearer stock, and any fall in crude will be competed away quickly in a price war.**",
                 },
                 {
                     label: 'Industrial and wood coatings: the less crowded pools',
@@ -482,7 +482,7 @@ export const consumerDurablesPaints: SectorOverview = {
                 },
                 {
                     label: 'Raw materials, the rupee and supply',
-                    text: "Raw materials are 55–60% of sales and mostly crude-linked; management at **Kansai** said crude near US$100 a barrel was manageable at the prices already taken. **Sirca** depends on imported acrylic, and a nitrocellulose cotton shortage cost it ₹4–5cr of March sales. **JSW Dulux** still licenses AkzoNobel's international industrial brands and pays royalty to AkzoNobel companies (the amount was not verified). A weaker rupee lifts all of these costs.",
+                    text: "Raw materials are 55–60% of sales and mostly crude-linked; management at **Kansai** said in May that crude near US$100 a barrel should be okay at the prices already taken, and in August that raw-material costs had eased slightly from their June peak. **Sirca** depends on imported acrylic, and a nitrocellulose cotton shortage cost it ₹4–5cr of March sales. **JSW Dulux** still licenses AkzoNobel's international industrial brands and pays royalty to AkzoNobel companies (the amount was not verified). A weaker rupee lifts all of these costs.",
                 },
                 {
                     label: 'Execution: plants, systems and concentration',
