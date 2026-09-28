@@ -77,10 +77,21 @@ export async function resolveScreenerUrl(isin: string | null, ticker: string, na
             const score = nameSimilarity(wantName, normaliseName(r.name));
             if (score > bestScore) { best = r; bestScore = score; }
         }
-        return bestScore >= MIN_NAME_MATCH ? best : null;
+        if (bestScore >= MIN_NAME_MATCH) return best;
+        // Abbreviated or renamed stored names: every word of ours must start a
+        // word of the candidate's (or vice versa), and only one may qualify.
+        const tokens = (s: string) => normaliseName(s).split(' ').filter(t => t.length >= 2);
+        const ours = tokens(name);
+        if (!ours.length) return null;
+        const fits = results.filter(r => {
+            const theirs = tokens(r.name);
+            return ours.every(t => theirs.some(u => u.startsWith(t) || t.startsWith(u)));
+        });
+        return fits.length === 1 ? fits[0] : null;
     };
 
-    for (const q of [isin, ticker, name, normaliseName(name)]) {
+    // Last resort: the first word alone (the word check then picks one candidate).
+    for (const q of [isin, ticker, name, normaliseName(name), normaliseName(name).split(' ')[0]]) {
         if (!q) continue;
         const hit = pick(await searchScreener(q));
         if (hit) return `https://www.screener.in${hit.url}`;

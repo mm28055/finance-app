@@ -110,7 +110,20 @@ function verifiedPick(company, results) {
         const score = nameSimilarity(want, normaliseName(r.name));
         if (score > bestScore) { best = r; bestScore = score; }
     }
-    return bestScore >= MIN_NAME_MATCH ? best : null;
+    if (bestScore >= MIN_NAME_MATCH) return best;
+    // Fallback for abbreviated or renamed stored names ("Ahluwalia Contr.",
+    // "Waaree Renewables" vs "Waaree Renewable Technologies", "HEG" vs "HEG
+    // Advanced Materials"): every word of our name must start a word of the
+    // candidate's name (or the other way round), and exactly one candidate may
+    // qualify. "Anup Enginee" still does not match "Anupam Finserv".
+    const tokens = s => normaliseName(s).split(' ').filter(t => t.length >= 2);
+    const ours = tokens(company.name);
+    if (!ours.length) return null;
+    const fits = results.filter(r => {
+        const theirs = tokens(r.name);
+        return ours.every(t => theirs.some(u => u.startsWith(t) || t.startsWith(u)));
+    });
+    return fits.length === 1 ? fits[0] : null;
 }
 
 async function searchScreener(query) {
@@ -127,7 +140,9 @@ async function searchScreener(query) {
 }
 
 async function resolveScreenerUrl(company) {
-    const queries = [company.isin, company.ticker, company.name, normaliseName(company.name)];
+    // Last resort: the first word alone ("Waaree Renewables" finds nothing on
+    // Screener, "waaree" finds both Waaree companies and the word check picks one).
+    const queries = [company.isin, company.ticker, company.name, normaliseName(company.name), normaliseName(company.name).split(' ')[0]];
     const tried = new Set();
     for (const q of queries) {
         if (!q || tried.has(q)) continue;
