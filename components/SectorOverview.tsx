@@ -94,13 +94,15 @@ const capitalise = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
  * Supplies today's figures to the note's text ({pe:Company|38.7} and friends,
  * see RichText), from the same live valuation the table uses.
  */
-function SingleSectorOverview({ overview, companies }: {
+function SingleSectorOverview({ overview, companies, lookup }: {
     overview: SectorOverviewData;
     companies: EnrichedCompany[];
+    /** Every company on the dashboard, so a company moved to another sector keeps its live figures here. */
+    lookup?: EnrichedCompany[];
 }) {
     const resolve = React.useMemo<LiveTextResolver>(() => {
         const byName = new Map<string, EnrichedCompany>();
-        (companies || []).forEach(c => byName.set(c.name.trim().toLowerCase(), c));
+        (lookup || companies || []).forEach(c => byName.set(c.name.trim().toLowerCase(), c));
         const block = overview.valuation;
         const live = (company: string) => liveValuation(company, block, byName.get(company.trim().toLowerCase()));
         return (field, arg) => {
@@ -129,17 +131,18 @@ function SingleSectorOverview({ overview, companies }: {
                 default: return null;
             }
         };
-    }, [overview, companies]);
+    }, [overview, companies, lookup]);
     return (
         <LiveTextContext.Provider value={resolve}>
-            <SingleSectorOverviewBody overview={overview} companies={companies} />
+            <SingleSectorOverviewBody overview={overview} companies={companies} lookup={lookup} />
         </LiveTextContext.Provider>
     );
 }
 
-function SingleSectorOverviewBody({ overview, companies }: {
+function SingleSectorOverviewBody({ overview, companies, lookup }: {
     overview: SectorOverviewData;
     companies: EnrichedCompany[];
+    lookup?: EnrichedCompany[];
 }) {
     // A note with a business tab opens on the analysis; Tab 2 explains the companies.
     const [tab, setTab] = React.useState<1 | 2>(1);
@@ -147,9 +150,9 @@ function SingleSectorOverviewBody({ overview, companies }: {
 
     const byName = React.useMemo(() => {
         const m = new Map<string, EnrichedCompany>();
-        (companies || []).forEach(c => m.set(c.name.trim().toLowerCase(), c));
+        (lookup || companies || []).forEach(c => m.set(c.name.trim().toLowerCase(), c));
         return m;
-    }, [companies]);
+    }, [companies, lookup]);
 
     const labels = React.useMemo(
         () => buildLabels(overview.verdicts.map(v => v.company)),
@@ -713,13 +716,14 @@ function SingleSectorOverviewBody({ overview, companies }: {
  * complete note with its own two tabs. The page shows one tab per group above
  * the note; a plain sector renders its single note directly.
  */
-export function SectorOverview({ overview, companies }: {
+export function SectorOverview({ overview, companies, lookup }: {
     overview: SectorOverviewData;
     companies: EnrichedCompany[];
+    lookup?: EnrichedCompany[];
 }) {
     const buckets = overview.buckets;
     const [active, setActive] = React.useState(0);
-    if (!buckets?.length) return <SingleSectorOverview overview={overview} companies={companies} />;
+    if (!buckets?.length) return <SingleSectorOverview overview={overview} companies={companies} lookup={lookup} />;
     const current = buckets[Math.min(active, buckets.length - 1)];
     return (
         <div className="ml-5 mb-3">
@@ -746,7 +750,7 @@ export function SectorOverview({ overview, companies }: {
                 </div>
             </div>
             <div className="-ml-5">
-                <SingleSectorOverview key={current.label} overview={current.note} companies={companies} />
+                <SingleSectorOverview key={current.label} overview={current.note} companies={companies} lookup={lookup} />
             </div>
         </div>
     );

@@ -211,6 +211,10 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
         });
     }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, scoreBand, bigMoveOnly, activeTag, companiesWith]);
 
+    // Every company once (ZPortfolio repeats them), so a sector note can still find a
+    // company that has been moved to another sector.
+    const allCompanies = useMemo(() => sectors.filter(s => !isPortfolioSector(s.sector)).flatMap(s => s.companies), [sectors]);
+
     // Count total companies. ZPortfolio repeats companies listed elsewhere, so
     // it is left out of both counts.
     const countCompanies = (list: SectorData[]) => list
@@ -335,6 +339,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                     name={s.sector}
                     count={s.companies.length}
                     companies={s.companies}
+                    allCompanies={allCompanies}
                     defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null || bigMoveOnly || !!activeTag}
                 >
                     {s.companies.map(co => {

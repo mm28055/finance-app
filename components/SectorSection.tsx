@@ -17,11 +17,13 @@ interface SectorSectionProps {
     name: string;
     count: number;
     companies?: EnrichedCompany[];
+    /** Every company on the dashboard, for notes that discuss a company since moved elsewhere. */
+    allCompanies?: EnrichedCompany[];
     children: React.ReactNode;
     defaultOpen?: boolean;
 }
 
-export function SectorSection({ name, count, companies = [], children, defaultOpen = false }: SectorSectionProps) {
+export function SectorSection({ name, count, companies = [], allCompanies, children, defaultOpen = false }: SectorSectionProps) {
     const [isOpen, setIsOpen] = useState(defaultOpen);
     // Snapshot and Overview behave as tabs: at most one is open at a time.
     const [panel, setPanel] = useState<'none' | 'snapshot' | 'overview' | 'filings'>('none');
@@ -142,7 +144,7 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
 
             {/* Sector Overview */}
             {isOpen && panel === 'overview' && overview && (
-                <SectorOverview overview={overview} companies={companies} />
+                <SectorOverview overview={overview} companies={companies} lookup={allCompanies} />
             )}
 
             {/* Material filings */}
