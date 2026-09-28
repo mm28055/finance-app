@@ -475,11 +475,11 @@ export const constructionRoads: SectorOverview = {
                 },
                 {
                     label: 'Delivering or beating',
-                    text: "**IRB** delivered everything it promised in May: refinancing that cut interest, the asset transfer signed within the first half as promised, construction revenue on track to cross ₹3,000cr, and profit up 51%. **GR** guided about 15% growth for FY27 and grew standalone revenue 33% in Q1, keeping a 10–11% margin guide. **Ceigall** promised ‘minimum 15%’ growth and 11–12.5% margins and delivered 15.7% and 13.4%, closed its first HAM sale and nudged its order guide up from ₹5,500cr to ₹6,000cr. **Welspun** met its FY26 revenue guide almost exactly (₹3,615cr against ₹3,600cr) and beat its margin guide.",
+                    text: "**IRB** delivered everything it promised in May: refinancing that cut interest, the asset transfer signed within the first half as promised, construction revenue on track to cross ₹3,000cr, and profit up 51%. **GR** grew standalone revenue 33% in Q1 against the ‘range of 15%’ it guided in May, and in August guided 15–20% for FY27 (25% if start dates arrive on time) with a 10–11% margin, widened from 10.5–11%. **Ceigall** promised ‘minimum 15%’ growth and 11–12.5% margins and delivered 15.7% and 13.4%, closed its first HAM sale and nudged its order guide up from ₹5,500cr to ₹6,000cr. **Welspun** met its FY26 revenue guide almost exactly (₹3,615cr against ₹3,600cr) and beat its margin guide.",
                 },
                 {
                     label: 'Cautious',
-                    text: "**Ceigall** kept its 11–12.5% margin guide despite 13.4% in Q1, and **Welspun** kept ‘18% plus’ against 22.9% delivered, citing war-related cost risk. **GR**'s CFO: ‘Execution rate we have to assume at same level. I don't think it is going to increase.’ **KNR** raised its revenue figure to ₹2,200–2,300cr once new projects had start dates.",
+                    text: "**Ceigall** kept its 11–12.5% margin guide despite 13.4% in Q1, and **Welspun** kept ‘18% plus’ against 22.9% delivered, citing war-related cost risk. **GR**'s CFO said in May, ‘Execution rate we have to assume at same level. I don't think it is going to increase’; after Q1's 33% rise the August call guided 15–20% growth instead. **KNR** raised its revenue figure to ₹2,200–2,300cr once new projects had start dates.",
                 },
                 {
                     label: 'Missed',

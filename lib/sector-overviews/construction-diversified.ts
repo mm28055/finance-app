@@ -59,7 +59,7 @@ export const constructionDiversified: SectorOverview = {
             },
             cellNotes: {
                 'Afcons Infra': "Q4 FY26 carried about ₹260–265cr of one-off charges (a new bad-debt provisioning method, a provision after an adverse arbitration development and extra cost on a marine job) and produced Afcons's first quarterly loss since 2010. The company's own measure, which includes other income, was 9.6% in Q1 FY27.",
-                'Cemindia Projects': "Q4 FY26 was lifted by provisions released on completed metro jobs; management called it 'not a regular phenomenon' and guides about 10–10.5%.",
+                'Cemindia Projects': "Q4 FY26 was lifted by provisions released on completed metro jobs; on the Q4 call management called it 'not a regular phenomenon' and guided about 10–10.5%; on the July call it guided '10% plus', double digit.",
                 'Power Mech Proj.': "Q1 FY27 was hit by war-related material costs, a smaller share of penalties on a Karnataka mining-royalty contract and high costs at a new coal mine. The company guides 12.5% for FY27 on its own measure, which includes other income; Q1 was 10.8% on that measure.",
                 'GPT Infraprojects': "Includes Alcon, the railway-signalling company bought on 1 January 2026, and the Ghana sleeper plant. GPT's standalone margin was 13.8% in Q1 FY27 (company figure).",
                 'SPML Infra': "Q4 FY26 was cut by one-off legal and arbitration costs and bad-debt provisions. Management says new orders are taken only at margins above 10%.",
@@ -477,7 +477,7 @@ export const constructionDiversified: SectorOverview = {
                 },
                 {
                     label: 'Cautious',
-                    text: "**Afcons** gives no FY27 revenue or margin guidance because of ‘uncertainty around… war’, pointing instead to a ‘strong FY28 and FY29’. **NCC** withheld guidance on the Q4 call, saying there were ‘too many variables in the equation’. **Patel**'s finance head would not commit to a 15% margin.",
+                    text: "**Afcons** gives no FY27 revenue or margin guidance because of ‘uncertainty around… war’, pointing instead to a ‘strong FY28 and FY29’. **NCC** withheld guidance on the May call, saying there were ‘too many variables in the equation’, before giving FY27 numbers in August. **Patel**'s finance head would not commit to a 15% margin.",
                 },
                 {
                     label: 'Missed',
@@ -518,7 +518,7 @@ export const constructionDiversified: SectorOverview = {
                         ['Power Mech Proj.', 'FY27 revenue about ₹7,300cr (+21%); margin 12.5%; orders ₹12,000cr', 'About ₹400cr for the Tasra washery plus about ₹400cr in the project company', '**Mixed**: Q1 revenue +26%; margin 10.8% against 12.5%; FY26 revenue and orders missed'],
                         ['NCC', 'FY27 revenue +8–10%; margin 8.5–9%; orders ₹22,000–25,000cr (first guidance in several quarters)', '₹500cr in FY27 (₹912cr in FY26)', '**Beating**: Q1 revenue +12% at a 9% margin; no Q4 guidance to compare'],
                         ['GPT Infraprojects', 'FY27 revenue about ₹1,700cr (+30%); margin 14–15%; orders ₹3,000cr-plus', 'Small; no new debt', '**At risk**: Q1 revenue −3.5% and orders about ₹130cr; needs about ₹1,400cr in nine months'],
-                        ['Cemindia Projects', 'Revenue +25% in FY27 and FY28; margin 10–10.5%; orders about ₹25,000cr', '₹350–400cr; up to ₹5,000cr raise approved', '**Mixed**: margin and orders on track; Q1 revenue +6% against 25%; fund-raising reversal'],
+                        ['Cemindia Projects', 'Revenue +25% in FY27 and FY28; margin ‘10% plus’ (10–10.5% in April); orders about ₹25,000cr', '₹350–400cr; up to ₹5,000cr raise approved', '**Mixed**: margin and orders on track; Q1 revenue +6% against 25%; fund-raising reversal'],
                         ['Patel Engineering', 'FY27 revenue +10%, FY28 +15%; margin 13–14%; orders about ₹8,000cr', 'Low; tunnel machines as projects need', '**On track**: FY26 flat as guided; Q1 +4% at 14%; order book fell to ₹14,636cr'],
                         ['Afcons Infra', 'No revenue or margin guidance; orders at least ₹30,000cr; net debt ₹2,700–2,800cr by March 2027', '₹700–800cr in FY27; ₹600–650cr in FY28', '**Missed**: FY26 revenue −5% against +5%; receivables promised by June not collected'],
                         ['SPML Infra', 'FY27 revenue, operating profit and profit +25%-plus; orders ₹5,000cr-plus; battery revenue ₹200–300cr in Q4', 'Battery plant to 5 GWh, ₹236–238cr, now H1 FY28', '**Slipped**: FY26 revenue short of target; battery expansion delayed by about six months'],

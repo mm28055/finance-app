@@ -61,7 +61,7 @@ export const constructionPower: SectorOverview = {
             periods: Q,
             scale: 'diverging',
             source: 'Filed quarterly revenue, each quarter against the same quarter a year earlier.',
-            note: 'Q1 FY27 was slow almost everywhere: labour shortages around state elections, Middle East shipping delays and diesel shortages at factories. All five kept their full-year guidance.',
+            note: 'Q1 FY27 was slow almost everywhere: labour shortages around state elections, Middle East shipping delays and diesel shortages at factories. All five kept their full-year revenue guidance, though Techno Electric dropped its ₹60 earnings-per-share target for ‘at least 25%’ growth.',
             values: {
                 'Kalpataru Proj.': [35, 32, 16, 10, 4],
                 'KEC International': [11, 19, 12, -7, 0],
@@ -369,7 +369,7 @@ export const constructionPower: SectorOverview = {
                 },
                 {
                     label: 'Not structural: problem projects',
-                    text: "**KEC**'s margin fell to 5.8% in Q1 from 7.0% a year earlier, worse than the ‘not beyond 100 basis points’ (one percentage point) worst case it gave in May; its standalone margin was 4.0%. Management now says double-digit margins in FY27 are ‘not possible’, high single digits ‘should be possible’ in FY28, and double digits ‘maybe FY29’. **My view: until the finished metro and railway jobs are handed over, KEC's reported margin understates its transmission business and overstates the rest of the group.**",
+                    text: "**KEC**'s margin fell to 5.8% in Q1 from 7.0% a year earlier, worse than the ‘not beyond 100 basis points’ (one percentage point) worst case it gave in May; its standalone margin was 4.0%. On the August call management said double-digit margins in FY27 are ‘not possible’ and high single digits ‘should be possible’ in FY28; the ‘maybe FY29’ for double digits dates from May and was not repeated. **My view: until the finished metro and railway jobs are handed over, KEC's reported margin understates its transmission business and overstates the rest of the group.**",
                 },
                 {
                     label: 'Working capital: the biggest drains',
@@ -469,7 +469,7 @@ export const constructionPower: SectorOverview = {
                         ['KEC International', 'Revenue +12–15%; net debt ~₹5,500cr by March; no margin guide', '~₹400cr', '**Missed**: Q1 revenue flat; margin −1.2 points; net debt down ₹154cr'],
                         ['Techno Electric &Eng', 'Revenue ₹4,000cr+; margin 13–14%; EPS ₹60 dropped for ‘25%+ growth’', '₹1,250cr (₹1,000cr data centres)', '**Mixed**: orders beat; FY26 EPS ₹46.6 against ~₹50; data-centre revenue cut'],
                         ['Transrail Lighting', 'Revenue +20%; margin ~11%; orders ₹10,000cr+', 'IPO-funded plants; ₹203cr of equipment', '**Behind**: Q1 revenue +5%, orders ~₹1,000cr; margin beat'],
-                        ['Skipper', 'Revenue +15%; profit ~+30%; 20–25% growth from FY28', '~₹250cr in FY27', '**Slipping**: profit on track; capacity late twice; Q1 revenue +4.5%'],
+                        ['Skipper', 'Revenue +15%; profit ~+30%; ‘higher revenue growth next year’ (May: 20–25% from FY28)', '~₹250cr in FY27', '**Slipping**: profit on track; capacity late twice; Q1 revenue +4.5%'],
                     ],
                     note: 'Techno Electric’s and Skipper’s guidance comes from unofficial transcripts; the headline numbers were checked against filings, but the exact wording could not be.',
                 },
