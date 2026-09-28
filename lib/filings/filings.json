@@ -1,22 +1,22 @@
 {
- "updated": "2026-09-28T14:44:35.890Z",
+ "updated": "2026-09-28T20:56:52.341Z",
  "from": "2026-09-01",
  "to": "2026-09-28",
  "companiesBySector": {
-  "Pumps Comp & Eng": 9,
   "Packaging": 10,
   "Cables": 8,
+  "Pumps Comp & Eng": 9,
   "Plastics": 6,
   "Consumer Durables": 43,
   "Forging": 7,
   "Healthcare": 15,
   "Pharma CDMO": 16,
-  "Industrial Manufacturing": 21,
   "Elect and Refrac": 3,
   "Industrial Products": 13,
   "Rubber": 3,
   "Industrial Machinery": 4,
   "Industrial - Railway": 7,
+  "Industrial Manufacturing": 21,
   "Food Products": 18,
   "Construction": 32,
   "Platform Cos": 11,
@@ -82,6 +82,226 @@
    "headline": "Xponentia Group sold 6.4% stake (about ₹986cr) in the open market",
    "summary": "Non-promoter Xponentia Group and its affiliates sold 28.34 lakh shares, representing a 6.42% stake in the company, through the open market. The sale is worth approximately ₹986 crore at the current share price and reduces their combined holding from 15.75% to 9.33%.",
    "url": "https://nsearchives.nseindia.com/corporate/team_sandeshc_28092026123357_SAST5.pdf"
+  },
+  {
+   "company": "TruAlt Bioenergy",
+   "sector": "Oil",
+   "date": "2026-09-28",
+   "category": "Pledge",
+   "tone": "watch",
+   "headline": "Promoter group pledged 0.35% of shares (₹13.2cr)",
+   "summary": "Promoter group member Kamala Murugesh Nirani pledged 0.35% of the company (3,00,000 shares given to lenders as security) valued at ₹13.2 crore at an average price of ₹439, compared to today's ₹458. Her holding remained unchanged at 4.9% before and after the transaction.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_24291_20260928_193756753_WEB.html"
+  },
+  {
+   "company": "PNC Infratech",
+   "sector": "Construction",
+   "date": "2026-09-28",
+   "category": "Promoter trade",
+   "tone": "good",
+   "headline": "Promoter group bought 0.18% (₹6.4cr) at about ₹140",
+   "summary": "Promoter group members Meena Jain and Ashita Jain bought 0.18% of the company for ₹6.4cr in the open market. They paid an average price of ₹140 per share—higher than today's price of ₹131—increasing their combined stake from 10.0% to 10.2%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_12451_20260928_180539483_WEB.html"
+  },
+  {
+   "company": "BLS International",
+   "sector": "Travel Services",
+   "date": "2026-09-28",
+   "category": "Disposal",
+   "tone": "watch",
+   "headline": "Subsidiary sells lending unit with ₹100cr turnover to related party for ₹59 lakh",
+   "summary": "Step-down subsidiary Atyati Technologies is selling its Joint Liability Group lending business to TVAM Technologies via a slump sale for just ₹59.49 lakh, which is equal to its net worth. The unit generated a turnover of ₹100.56 crore last year (over 3% of the company's total yearly sales). The transaction is a related-party deal, as an Atyati director is also a director and member of the buying entity.",
+   "url": "https://nsearchives.nseindia.com/corporate/BLS_28092026235718_Intimationregulation30JLGBUSINESSsigned.pdf"
+  },
+  {
+   "company": "Hexagon Nutrition",
+   "sector": "Pharma Others",
+   "date": "2026-09-28",
+   "category": "Management change",
+   "tone": "info",
+   "headline": "Chairman and Executive Director Arun Kelkar completes his term",
+   "summary": "Mr. Arun Kelkar has stepped down as Chairman and Executive Director of Hexagon Nutrition upon the completion of his term on September 28, 2026. He had provided leadership and guidance to the company since its incorporation.",
+   "url": "https://nsearchives.nseindia.com/corporate/HEXAGONNUTRITION_28092026230636_Intimation-Cessation_of_Arun_Sir_v2__1_.pdf"
+  },
+  {
+   "company": "Saksoft",
+   "sector": "Software",
+   "date": "2026-09-28",
+   "category": "Credit rating",
+   "tone": "good",
+   "headline": "CARE upgrades long-term credit rating to CARE A+; Stable",
+   "summary": "CARE Ratings has upgraded the company's credit rating for its long-term bank facilities from CARE A; Stable to CARE A+; Stable. The rated amount for these facilities was also enhanced from ₹12 crore to ₹40 crore. The rating for its short-term bank facilities was reaffirmed at CARE A1.",
+   "url": "https://nsearchives.nseindia.com/corporate/SAKSOFT_28092026200449_Revised_credit_rating_SE_intimationsigned.pdf"
+  },
+  {
+   "company": "Ola Electric",
+   "sector": "Vehicles",
+   "date": "2026-09-28",
+   "category": "Fund-raise",
+   "tone": "info",
+   "headline": "Board approves rights issue of up to ₹1,000 crore",
+   "summary": "The Board of Directors has approved raising up to ₹1,000 crore through a rights issue of partly paid-up equity shares. The specific terms, including the issue price and rights entitlement ratio, are yet to be determined, so the exact dilution and price discount cannot be calculated yet. At ₹1,000 crore, the fund-raise represents about 5.7% of the company's current market value.",
+   "url": "https://nsearchives.nseindia.com/corporate/OLAELECTRIC_28092026195546_SEintimationOutcomeofBMRightsIssue.pdf"
+  },
+  {
+   "company": "Krsnaa Diagnostics",
+   "sector": "Healthcare",
+   "date": "2026-09-28",
+   "category": "Disposal",
+   "tone": "info",
+   "headline": "Approved sale of diagnostic equipment for up to ₹120cr",
+   "summary": "The Board has approved the sale of identified diagnostic equipment for up to ₹120 crore to identified purchasers. This strategic move aims to transition towards an asset-light model, recycle capital into the core diagnostic business, and improve return on capital employed. The sale amount represents about 15% of the company's yearly sales.",
+   "url": "https://nsearchives.nseindia.com/corporate/KRSNAA_28092026185936_543328.pdf"
+  },
+  {
+   "company": "Ellen. Indl. Gas",
+   "sector": "Chemicals",
+   "date": "2026-09-28",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Won ₹481 crore turnkey contract from BHEL for Air Separation Unit",
+   "summary": "Ellenbarrie Industrial Gases has secured a ₹481 crore contract from Bharat Heavy Electricals Limited (BHEL) for a 1200 TPD cryogenic Air Separation Unit on a build and transfer basis. The project will be executed over eight quarters and is expected to be commissioned in FY29. The order value is highly significant, representing over 135% of the company's last 12 months' sales.",
+   "url": "https://nsearchives.nseindia.com/corporate/ELLENBARRIE2024_28092026184137_Announcement_Press_Release_BHEl_28092026.pdf"
+  },
+  {
+   "company": "Eureka Forbes",
+   "sector": "Consumer Durables",
+   "date": "2026-09-28",
+   "category": "Legal",
+   "tone": "watch",
+   "headline": "UP GST authority issues show-cause notice for ₹273.4 crore",
+   "summary": "Eureka Forbes has received a show-cause notice from Uttar Pradesh GST authorities for FY23, alleging a tax liability of ₹149.21 crore along with interest and penalties for a total of ₹273.40 crore. This demand is significant at nearly 10% of the company's yearly sales. The company believes the notice is without merit, noting it was computed using pan-India financial information, and plans to contest it.",
+   "url": "https://nsearchives.nseindia.com/corporate/SHILPAJAIN_28092026181858_Regulation_30_-_GST_SCN_signed.pdf"
+  },
+  {
+   "company": "NCC",
+   "sector": "Construction",
+   "date": "2026-09-28",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Wins ₹1,077cr water-supply order in Andhra Pradesh",
+   "summary": "NCC has received a contract worth ₹1,076.71 crore (excluding GST) from the Rural Water Supply and Sanitation Department, Government of Andhra Pradesh. The project involves providing drinking water supply under a multi-village scheme over 24 months. The order size is substantial, equivalent to about 5% of the company's yearly sales.",
+   "url": "https://nsearchives.nseindia.com/corporate/NCC_28092026162831_Reg30.pdf"
+  },
+  {
+   "company": "SH Kelkar & Co",
+   "sector": "Chemicals",
+   "date": "2026-09-28",
+   "category": "Credit rating",
+   "tone": "watch",
+   "headline": "CRISIL revises outlook on ₹372cr bank loans to Negative, rating AA- reaffirmed",
+   "summary": "CRISIL Ratings has reaffirmed the long-term credit rating on the company's ₹372 crore bank loan facilities at CRISIL AA-. However, the outlook has been revised from Stable to Negative, indicating a potential future downgrade risk.",
+   "url": "https://nsearchives.nseindia.com/corporate/9152077850_28092026161723_SHKCRISILCreditRatingIntimationFinalSigned.pdf"
+  },
+  {
+   "company": "Clean Max Env. Energ",
+   "sector": "Solar PV Cells EPC",
+   "date": "2026-09-28",
+   "category": "Debt",
+   "tone": "info",
+   "headline": "Raised ₹2,500cr through private placement of green bonds",
+   "summary": "CleanMax raised ₹2,500 crore through a private placement of secured, fixed-rate green bonds (NCDs). The bonds span maturities of 2 to 10 years with coupons between 8.25% and 8.76%. This is a massive debt raise for the company, exceeding its yearly sales of ₹2,342 crore.",
+   "url": "https://nsearchives.nseindia.com/corporate/CLEANMAX_28092026160234_PRDEbt.pdf"
+  },
+  {
+   "company": "Vikram Solar",
+   "sector": "Solar PV Cells EPC",
+   "date": "2026-09-28",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Secured 400 MW solar module supply order from a leading domestic EPC player",
+   "summary": "Vikram Solar has secured a contract to supply 400 MW of high-efficiency N-Type TOPCon solar modules to a leading domestic EPC company for agricultural-feeder projects in Maharashtra. The order is scheduled to be executed by March 2027 and represents a significant capacity commitment for the company.",
+   "url": "https://nsearchives.nseindia.com/corporate/VSLCS_28092026155441_VSLREG30INTIMATION28092026.pdf"
+  },
+  {
+   "company": "Azad Engineering",
+   "sector": "Aerospace defence",
+   "date": "2026-09-28",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Inaugurated two exclusive manufacturing facilities for GE Vernova",
+   "summary": "Azad Engineering has inaugurated two new exclusive lean manufacturing facilities for GE Vernova's Gas Power business in Hyderabad, spanning 7,600 sq.m each. This expands the company's footprint to three dedicated facilities for the global energy giant, enhancing its capacity to manufacture highly engineered airfoils and specialized machined parts.",
+   "url": "https://nsearchives.nseindia.com/corporate/AZAD2356_28092026142511_Inauguration_Letter.pdf"
+  },
+  {
+   "company": "Saksoft",
+   "sector": "Software",
+   "date": "2026-09-28",
+   "category": "Management change",
+   "tone": "info",
+   "headline": "Appointed Gurmeet Chahal as CEO of material US subsidiary",
+   "summary": "Saksoft has appointed Mr. Gurmeet Chahal as the Chief Executive Officer of its material subsidiary, Saksoft Inc. (US), effective October 12, 2026. He will also be designated as Senior Management Personnel of the company. Mr. Chahal brings around three decades of experience, having previously held senior roles at Digitide and Genpact.",
+   "url": "https://nsearchives.nseindia.com/corporate/SAKSOFT_28092026142319_Outcome_of_BMfinalsigned.pdf"
+  },
+  {
+   "company": "Advait Energy",
+   "sector": "Cables",
+   "date": "2026-09-28",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Secures 1 GWh battery cell supply agreement with Hithium for upcoming facility",
+   "summary": "Advait's subsidiary has signed a Master Supply Agreement with global manufacturer Hithium to purchase up to 1 GWh of lithium iron phosphate battery cells over the next year. The supply will support the company's planned 2.5 GWh Battery Energy Storage System (BESS) assembly facility in Gujarat as it prepares to commence commercial production.",
+   "url": "https://nsearchives.nseindia.com/corporate/ADVAITENERGY_28092026141104_SE_intimation__MSA_with_Hithium_revisednew2809_s.pdf"
+  },
+  {
+   "company": "Global Health (Medanta)",
+   "sector": "Hospitals",
+   "date": "2026-09-28",
+   "category": "Strategy",
+   "tone": "good",
+   "headline": "Acquired land in Ghaziabad for ₹166cr to build a 350+ bed hospital",
+   "summary": "Global Health (Medanta) has been allotted a 10,560 sq. meter land parcel in Ghaziabad by the UP Housing & Development Board for approximately ₹165.82 crore. The site can accommodate a new hospital with over 350 beds. Management is currently developing a detailed project plan for the proposed facility.",
+   "url": "https://nsearchives.nseindia.com/corporate/MEDANTA21_28092026134402_GHLINTIMATION28092026Signed.pdf"
+  },
+  {
+   "company": "RateGain Travel Tech",
+   "sector": "Software",
+   "date": "2026-09-28",
+   "category": "Management change",
+   "tone": "info",
+   "headline": "Appointed Chetan Garg as Chief Financial Officer",
+   "summary": "RateGain Travel Technologies has appointed Chetan Garg as its new Chief Financial Officer. He brings nearly two decades of financial leadership experience, having most recently served as CFO of Optum India.",
+   "url": "https://nsearchives.nseindia.com/corporate/RATEGAIN_28092026131853_RG_PR_28092026.pdf"
+  },
+  {
+   "company": "Ganesh Consumer Prod",
+   "sector": "Food Products",
+   "date": "2026-09-28",
+   "category": "Disposal",
+   "tone": "info",
+   "headline": "Board approves sale of assets at Hyderabad unit",
+   "summary": "The Board of Directors has approved the sale of movable and immovable assets and properties pertaining to the company's Hyderabad unit. The divestment is part of a strategic move to focus operations on the Eastern India geography.",
+   "url": "https://nsearchives.nseindia.com/corporate/GANESH_NSE_28092026124024_Outcome_of_Board_Meeting.pdf"
+  },
+  {
+   "company": "Arvind SmartSpaces",
+   "sector": "Realty",
+   "date": "2026-09-28",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Adds new Bengaluru residential project with ₹470cr top-line potential",
+   "summary": "Arvind SmartSpaces has added a new residential high-rise project in Bengaluru on a joint development basis. The 2.5-acre project has an estimated saleable area of 3.6 lakh sq. ft. and a top-line potential of ₹470 crore, which is substantial against the company's yearly sales of ₹780 crore.",
+   "url": "https://nsearchives.nseindia.com/corporate/539301_28092026123104_MediaRelease28092026.pdf"
+  },
+  {
+   "company": "Madhya Bharat Agro Products",
+   "sector": "Agrochemical & Fertilizers",
+   "date": "2026-09-28",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Starts commercial production at 300 TPD phosphoric acid plant",
+   "summary": "Madhya Bharat Agro Products has successfully commenced commercial production at its new 300 tonnes-per-day phosphoric acid plant in Dhule, Maharashtra. The capacity addition will support the company's core fertilizer and agrochemical manufacturing operations.",
+   "url": "https://nsearchives.nseindia.com/corporate/MBAPL_28092026115258_MBAPL_-_Dhule_PA.pdf"
+  },
+  {
+   "company": "Man Infra",
+   "sector": "Construction",
+   "date": "2026-09-28",
+   "category": "Agreement",
+   "tone": "good",
+   "headline": "Partners with Godrej Properties for Marine Lines project, to recoup ₹300cr investment",
+   "summary": "Man Infraconstruction has transferred the development rights for its 2.5-acre Marine Lines residential project to Godrej Properties. The company will benefit from a revenue-sharing arrangement on the project's estimated ₹6,000 crore revenue potential. Additionally, MICL will recoup its existing investment of over ₹300 crore in the project, providing a substantial cash inflow relative to its yearly sales of ₹666 crore.",
+   "url": "https://nsearchives.nseindia.com/corporate/kunjalparekh_28092026081058_MICL.pdf"
   },
   {
    "company": "Quality Power El",
@@ -202,6 +422,16 @@
    "headline": "Announces ₹31.7cr solar investment and plans to enter data centre sector",
    "summary": "During its AGM, management announced a ₹31.7 crore investment in an 8.79 MW captive solar plant, which is expected to generate annual savings of about ₹8.7 crore. The company also outlined plans to marginally expand capacity and enter new sectors such as data centres by FY28.",
    "url": "https://nsearchives.nseindia.com/corporate/SCODA_26092026185752_AGM_Proceedings.pdf"
+  },
+  {
+   "company": "Shaily Engg. Plastic",
+   "sector": "Plastics",
+   "date": "2026-09-26",
+   "category": "Credit rating",
+   "tone": "good",
+   "headline": "CARE upgraded rating on ₹35cr short-term bank facilities to A1+",
+   "summary": "CARE Ratings has upgraded its credit rating on the company's short-term bank facilities of ₹35 crore to CARE A1+ from CARE A1. The rating on long-term bank facilities of ₹239.24 crore was reaffirmed at CARE A+ with a Stable outlook.",
+   "url": "https://nsearchives.nseindia.com/corporate/Shailyengineering_26092026160641_Covering_Letter_Revised__Credit_rating.pdf"
   },
   {
    "company": "Aequs",
