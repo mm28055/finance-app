@@ -20,7 +20,7 @@ export const vehicles: SectorOverview = {
     leadCharts: true,
     valuation: {
         writtenOn: '23 Sep 2026',
-        // ACE is left out of the live table (its dashboard market value is wrong); TIL is flagged loss-making.
+        // TIL is flagged loss-making.
         inputs: vehiclesValuationInputs,
         // My base-case earnings growth, % a year over three to five years (section 6).
         myGrowth: {
@@ -36,7 +36,7 @@ export const vehicles: SectorOverview = {
         },
     },
     standfirst:
-        "Nine makers of vehicles and machines, in four markets that run on different clocks. Four are electric: Ather and Ola make electric scooters, Zelio makes cheap low-speed scooters for small towns, and Olectra makes electric buses. Three make construction equipment: ACE (cranes), Ajax (self-loading concrete mixers) and TIL (cranes and defence handling equipment). Two make farm machinery: VST (power tillers and small tractors) and Indo Farm (tractors and cranes). This note draws on each company's last two earnings calls, its latest presentation, annual report and credit rating, and on sector work by Crisil, ICRA and ICEMA. The short version: **the best businesses here are niche leaders in machinery, not the electric names**, and the annual reports turned up more warning signs than the calls did. ACE is left out of the live valuation because the dashboard's market value for it belongs to another company, and TIL is shown as loss-making.",
+        "Nine makers of vehicles and machines, in four markets that run on different clocks. Four are electric: Ather and Ola make electric scooters, Zelio makes cheap low-speed scooters for small towns, and Olectra makes electric buses. Three make construction equipment: ACE (cranes), Ajax (self-loading concrete mixers) and TIL (cranes and defence handling equipment). Two make farm machinery: VST (power tillers and small tractors) and Indo Farm (tractors and cranes). This note draws on each company's last two earnings calls, its latest presentation, annual report and credit rating, and on sector work by Crisil, ICRA and ICEMA. The short version: **the best businesses here are niche leaders in machinery, not the electric names**, and the annual reports turned up more warning signs than the calls did. In the live valuation, TIL is shown as loss-making.",
     lastUpdated: '2026-09-23',
     asOfQuarter: 'Q1 FY27',
 
@@ -274,7 +274,7 @@ export const vehicles: SectorOverview = {
         {
             heading: '1. Recommendation, up front',
             body: [
-                "**No company here is a clear buy today; follow ACE and Zelio.** ACE (Action Construction Equipment) is India's leading crane maker: it claims more than 63% of mobile cranes, has earned 32–42% on its capital over the last three years, holds ₹1,352cr of net cash and turned 92% of five years' operating profit into cash. In Q1 FY27 it pushed through about 10% of price rises and still sold 17% more cranes and machines, the clearest sign of pricing power in this group. On Screener's price (P/E about 34; the dashboard's market value belongs to another company) it needs about 20% a year against my 15%. **Zelio**'s cheap small-town scooters grew 82% in FY26 and beat its own guidance, but it used cash in FY26 and is raising ₹168cr eleven months after its IPO.",
+                "**No company here is a clear buy today; follow ACE and Zelio.** ACE (Action Construction Equipment) is India's leading crane maker: it claims more than 63% of mobile cranes, has earned 32–42% on its capital over the last three years, holds ₹1,352cr of net cash and turned 92% of five years' operating profit into cash. In Q1 FY27 it pushed through about 10% of price rises and still sold 17% more cranes and machines, the clearest sign of pricing power in this group. At a P/E of about 33 it needs about 19% a year against my 15%, so its price is full. **Zelio**'s cheap small-town scooters grew 82% in FY26 and beat its own guidance, but it used cash in FY26 and is raising ₹168cr eleven months after its IPO.",
                 "**Wait on Ajax, Olectra, Ather and VST.** **Olectra**'s revenue rose 66% to ₹575.5cr in Q1 (the company's figure; the dashboard stores ₹525.5cr), but profit before tax rose 3%, deliveries have sat near 350 buses a quarter for a year, its margin fell to 12.7%, and its claim to be number one in registrations is not what Vahan data shows: it was fourth. I expect about 20% a year from it; the price needs about 26%. **Ajax** sells three in every four self-loading mixers (75.1% in Q1) and holds ₹1,119cr of cash, but its revenue has been flat at about ₹2,100cr for two years, it withdrew FY27 guidance and trimmed its long-term margin band to 12–15%. **Ather** is the one new-age scooter maker that now earns money at the operating level (₹9cr of EBITDA in Q1, 0.7% of revenue), with 1.5 lakh paid pre-orders; but its only factory is full, its share slipped to about 16% in August as TVS and Bajaj filled the gap, and the ₹5,000-a-scooter subsidy ended on 31 July. **VST**'s tillers had a record FY26, but tiller sales fell about 13% in July–August, and most of the stretch promises it made in May were dropped or delayed by August.",
                 "**Pass on Indo Farm and TIL; avoid Ola.** **Indo Farm** earns about 8% on its capital, runs a 240-day operating cycle, guarantees its own finance company's bank loans, and its new crane plant has slipped four times. **TIL** lost ₹5.45cr in Q1, its auditor qualified the FY26 accounts over ₹107cr of tax assets (about 96% of its net worth), and it bought Tulip from its own promoter group for ₹119cr. **Ola**'s FY26 accounts carry a going-concern flag from its auditor and covenant breaches; its revenue has been 43–57% below the year before for five straight quarters, and it ran at about 13,000 scooters a month against a stated break-even of 20,000–25,000.",
                 "**Three things to hold onto before reading the rest.** First, **a growing market does not mean a growing company**: electric two-wheeler registrations rose 73% in April–July, yet Ola's fell 26% in April–August and Olectra's share of electric-bus registrations fell to 9.5%. Second, **equipment demand follows public construction**: domestic construction-equipment sales fell 6.7% in FY26 on project delays and costlier machines, and ICEMA now expects 9–12% growth in FY27. Third, **read the annual reports, not just the calls**: the going-concern flag at Ola, the qualified audit at TIL, the guarantees at Indo Farm and the related-party approvals at Olectra and Zelio were not discussed on the calls.",
@@ -537,7 +537,7 @@ export const vehicles: SectorOverview = {
                 },
                 {
                     label: 'Data problems on the dashboard',
-                    text: "The dashboard shows **ACE** at a market value of ₹369cr, which belongs to another company (Screener shows ₹14,973cr), so ACE is left out of the live valuation table. It shows **TIL** with a P/E although TIL lost ₹5.45cr in Q1 and about ₹31cr in FY26, so TIL is flagged as loss-making. It stores **Olectra**'s Q1 revenue as ₹525.5cr, but the company's two segments add to ₹575.5cr, and this note uses the company figure. **Check any price on an exchange website before acting.**",
+                    text: "The dashboard shows **TIL** with a P/E although TIL lost ₹5.45cr in Q1 and about ₹31cr in FY26, so TIL is flagged as loss-making. It stores **Olectra**'s Q1 revenue as ₹525.5cr, but the company's two segments add to ₹575.5cr, and this note uses the company figure. **Check any price on an exchange website before acting.**",
                 },
             ],
         },
@@ -545,7 +545,7 @@ export const vehicles: SectorOverview = {
             heading: '8. Valuation (comparative)',
             body: [
                 "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it gives credit for cash and charges for debt. Where the two disagree, the balance sheet is the reason.",
-                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **17% at 28x, 20% at 34–35x, 26% at 59x and 29% at 75x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E.",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **17% at 28x, 19% at 33x, 20% at 35x, 26% at 59x and 29% at 75x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E.",
             ],
             points: [
                 {
@@ -558,7 +558,7 @@ export const vehicles: SectorOverview = {
                 },
                 {
                     label: 'Full',
-                    text: "**Ajax** and **Indo Farm** (each needing about 17% a year) each need more than my ~12%. For Ajax that is a return to double-digit volume growth that management has just declined to promise; for Indo Farm it is a crane plant that has not yet started. On Screener's figures, **ACE** (P/E about 34, EV/EBITDA about 26) needs about 20% a year against my 15%, so it is full too; its own ₹6,000–6,200cr target would close most of that gap if it is met.",
+                    text: "**Ajax** and **Indo Farm** (each needing about 17% a year) each need more than my ~12%. For Ajax that is a return to double-digit volume growth that management has just declined to promise; for Indo Farm it is a crane plant that has not yet started. **ACE** (market value about ₹14,525cr, P/E about 33, EV/EBITDA about 25) needs about 19% a year against my 15%, so it is full too; its own ₹6,000–6,200cr target would close most of that gap if it is met.",
                 },
                 {
                     label: 'Stretched',
@@ -566,7 +566,7 @@ export const vehicles: SectorOverview = {
                 },
                 {
                     label: 'Not measurable on earnings',
-                    text: "**Ather** and **Ola** lose money after tax, and **TIL** lost money in Q1 and in FY26, so P/E means nothing for them. ACE is not in the live table because the dashboard's market value for it is wrong; TIL is shown there as loss-making.",
+                    text: "**Ather** and **Ola** lose money after tax, and **TIL** lost money in Q1 and in FY26, so P/E means nothing for them. TIL is shown in the live table as loss-making.",
                 },
                 {
                     label: 'What the loss-makers’ prices assume',
@@ -581,7 +581,7 @@ export const vehicles: SectorOverview = {
         {
             company: 'Action Const.Eq.', rank: 1, stance: 'PRICED', segment: CONSTRUCTION,
             what: "ACE: India's leading maker of pick-and-carry cranes (it claims 63%+ of mobile cranes), plus tower cranes, backhoe loaders, road machinery, forklifts, defence equipment and tractors.",
-            view: "**The best-run business here, at a full price.** It raised prices about 10% and still sold 17% more machines in Q1, earns 32–42% on capital, holds ₹1,352cr of net cash and converted 92% of five years' operating profit into cash. Management has still not given FY27 guidance and says steel is up about 20%. On Screener's price it needs about 20% a year against my ~15%.",
+            view: "**The best-run business here, at a full price.** It raised prices about 10% and still sold 17% more machines in Q1, earns 32–42% on capital, holds ₹1,352cr of net cash and converted 92% of five years' operating profit into cash. Management has still not given FY27 guidance and says steel is up about 20%. At a P/E of about 33 it needs about 19% a year against my ~15%.",
             watch: 'The full-year guidance promised for September; whether the June price rise holds against steel; how the ₹1,352cr of cash is spent on acquisitions.',
         },
         {
@@ -638,7 +638,7 @@ export const vehicles: SectorOverview = {
         heading: '9. Summary review',
         body: [
             "**Electric scooters and buses.** **Zelio E-Mobility: follow** until cash follows profit. **Olectra Greentech: wait** until deliveries reach 500 a quarter and the BEST and related-party questions are answered; the price needs more growth than I expect. **Ather Energy: wait**: the best new-age scooter business, priced as if the second factory has already worked. **Ola Electric: avoid.**",
-            "**Construction equipment.** **Action Const.Eq. (ACE): follow** for a better price, and check its price outside the dashboard. **Ajax Engineering: wait** for its market to recover and a plan for its cash. **TIL: pass** until the audit is clean and the company makes money.",
+            "**Construction equipment.** **Action Const.Eq. (ACE): follow** for a better price. **Ajax Engineering: wait** for its market to recover and a plan for its cash. **TIL: pass** until the audit is clean and the company makes money.",
             "**Farm machinery.** **VST Tillers Tractors: wait** for guidance and a better price. **Indo Farm: pass**; the new plant has to work first.",
             "**What would change my view.** For the better: a price fall that brings ACE or Ajax to fair value; Olectra delivering 600–700 buses a quarter at a 12% margin; Zelio reporting positive operating cash; Ather keeping EBITDA positive after the subsidy. For the worse: a rule change for slow scooters; a rare-earth magnet squeeze; a weak monsoon on top of the tractor peak; more delays in public projects.",
             "**What to watch next quarter.** ACE's full-year guidance; Olectra's Q2 deliveries and its AGM votes; Ajax's second-half demand; Ather's margin without the subsidy; Ola's registrations and cash; Zelio's half-year cash flow; VST's Rabi sales; Indo Farm's crane plant; TIL's standalone profit.",
