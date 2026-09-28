@@ -1,21 +1,64 @@
-import type { SectorOverview } from './types';
+import type { SectorOverview, ValuationBlock } from './types';
+import { liveValuation, type PriceCheck } from './live-valuation';
 
 /** The call each note gives a company, read from its "Verdict: …" line on Tab 2. */
 export type Call = 'own' | 'follow' | 'wait' | 'pass' | 'avoid';
 export const CALLS: Call[] = ['own', 'follow', 'wait', 'pass', 'avoid'];
 
-/** Company name (lower case) → the note's call, across every note and group tab. */
-export function companyCalls(overviews: SectorOverview[]): Map<string, Call> {
-    const out = new Map<string, Call>();
-    const read = (note: SectorOverview) => {
+export interface CallInfo {
+    call: Call;
+    /** The company's key in its note (valuation inputs are keyed by it). */
+    key: string;
+    sector: string;
+    /** The note (or group tab) the call is in. */
+    noteTitle: string;
+    valuation?: ValuationBlock;
+}
+
+/** Company name (lower case) → the note's call and where it lives, across every note and group tab. */
+export function companyCallInfo(overviews: SectorOverview[]): Map<string, CallInfo> {
+    const out = new Map<string, CallInfo>();
+    const read = (note: SectorOverview, sector: string) => {
         for (const p of note.businesses?.profiles || []) {
             const m = (p.inShort || []).join(' ').match(/Verdict:\s*(own|follow|wait|pass|avoid)\b/i);
-            if (m) out.set(p.company.trim().toLowerCase(), m[1].toLowerCase() as Call);
+            if (m) out.set(p.company.trim().toLowerCase(), {
+                call: m[1].toLowerCase() as Call, key: p.company, sector, noteTitle: note.title, valuation: note.valuation,
+            });
         }
     };
     for (const ov of overviews) {
-        if (ov.buckets?.length) ov.buckets.forEach(b => read(b.note));
-        else read(ov);
+        if (ov.buckets?.length) ov.buckets.forEach(b => read(b.note, ov.sector));
+        else read(ov, ov.sector);
     }
     return out;
+}
+
+/** Company name (lower case) → the note's call. */
+export function companyCalls(overviews: SectorOverview[]): Map<string, Call> {
+    return new Map([...companyCallInfo(overviews)].map(([k, v]) => [k, v.call]));
+}
+
+/** Today's price check for a company under its note's valuation inputs ('n/a' when not measured live). */
+export function livePriceCheck(info: CallInfo | undefined, live: { marketCap?: number | null; peRatio?: number | null } | undefined): PriceCheck {
+    if (!info) return 'n/a';
+    return liveValuation(info.key, info.valuation, live)?.check ?? 'n/a';
+}
+
+/** The price check on the day the note was written (its fixed inputs, no live prices). */
+export function writtenPriceCheck(info: CallInfo | undefined): PriceCheck {
+    if (!info) return 'n/a';
+    return liveValuation(info.key, info.valuation, undefined)?.check ?? 'n/a';
+}
+
+/**
+ * Extreme drift: the price check has moved since the note was written, and against the
+ * call — an "own" that has become stretched, or a "wait"/"pass" that has come to fit.
+ * A call written knowing the price already fitted ("the price fits, but wait for the
+ * FDA") is not drift. Returns the reason, or null.
+ */
+export function extremeDrift(call: Call, then: PriceCheck, now: PriceCheck): string | null {
+    if (then === now || now === 'n/a' || then === 'n/a') return null;
+    if (call === 'own' && now === 'Stretched') return `Call is own; the price check has moved from ${then.toLowerCase()} to stretched since the note`;
+    if ((call === 'wait' || call === 'pass') && now === 'Fits') return `Call is ${call}; the price check has moved from ${then.toLowerCase()} to fits since the note`;
+    return null;
 }

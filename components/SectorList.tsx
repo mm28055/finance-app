@@ -8,7 +8,7 @@ import { Search } from 'lucide-react';
 import { meetsGuidanceThreshold, GUIDANCE_GROWTH_THRESHOLD } from '@/lib/guidance';
 import { isPortfolioSector } from '@/lib/portfolio';
 import { useTags } from '@/context/TagsContext';
-import { allSectorOverviews, companyCalls, CALLS, type Call } from '@/lib/sector-overviews';
+import { allSectorOverviews, companyCallInfo, livePriceCheck, CALLS, type Call } from '@/lib/sector-overviews';
 
 export const COLOR_THEMES = {
     blue: { name: 'Blue', bg: 'bg-[#D4E5F7]', text: 'text-[#4A7AAF]', dot: 'bg-[#4A7AAF]' },
@@ -19,6 +19,14 @@ export const COLOR_THEMES = {
 };
 
 export type ColorThemeKey = keyof typeof COLOR_THEMES;
+
+// Live price check colours, as in the notes' valuation table (no red: stretched is light purple).
+const CHECK_STYLE: Record<string, string> = {
+    Fits: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+    Full: 'bg-amber-50 text-amber-700 border-amber-200',
+    Stretched: 'bg-[#F3EEFC] text-[#6B3FA0] border-[#DDCDF5]',
+    'n/a': 'bg-gray-50 text-gray-400 border-gray-200',
+};
 
 export interface EnrichedCompany {
     id: string;
@@ -132,7 +140,8 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
     // A tag that no longer exists (its last company was untagged) stops filtering.
     const activeTag = allTags.some(t => t.tag === tagFilter) ? tagFilter : '';
     // The call each sector note gives a company (own / follow / wait / pass / avoid).
-    const calls = useMemo(() => companyCalls(allSectorOverviews()), []);
+    const callInfo = useMemo(() => companyCallInfo(allSectorOverviews()), []);
+    const calls = useMemo(() => new Map([...callInfo].map(([k, v]) => [k, v.call])), [callInfo]);
     const [callFilter, setCallFilter] = useState<Call | ''>('');
     const callCounts = useMemo(() => {
         const seen = new Set<string>();
@@ -378,14 +387,28 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                 >
                     {s.companies.map(co => {
                         const rowKey = `${s.sector}:${co.ticker}`;
+                        // With the call filter on, each row shows the note's call beside
+                        // today's live price check, so drift is visible at a glance.
+                        const ci = callFilter ? callInfo.get(co.name.trim().toLowerCase()) : undefined;
+                        const check = ci ? livePriceCheck(ci, { marketCap: co.marketCap, peRatio: co.peRatio }) : 'n/a';
                         return (
-                            <CompanyRow
-                                key={co.ticker}
-                                company={co}
-                                colorTheme={COLOR_THEMES.blue}
-                                expanded={openRowKey === rowKey}
-                                onExpandedChange={(open) => setOpenRowKey(open ? rowKey : null)}
-                            />
+                            <React.Fragment key={co.ticker}>
+                                {ci && (
+                                    <div className="flex items-center gap-1.5 px-3 pt-1.5 -mb-1 text-[10px] bg-white">
+                                        <span className="px-1.5 py-px rounded bg-[#D4E5F7] text-[#4A7AAF] font-semibold uppercase tracking-wide">{ci.call}</span>
+                                        <span className="text-gray-400">price today</span>
+                                        <span className={`px-1.5 py-px rounded border font-medium ${CHECK_STYLE[check]}`}>
+                                            {check === 'n/a' ? 'not measured' : check.toLowerCase()}
+                                        </span>
+                                    </div>
+                                )}
+                                <CompanyRow
+                                    company={co}
+                                    colorTheme={COLOR_THEMES.blue}
+                                    expanded={openRowKey === rowKey}
+                                    onExpandedChange={(open) => setOpenRowKey(open ? rowKey : null)}
+                                />
+                            </React.Fragment>
                         );
                     })}
                 </SectorSection>

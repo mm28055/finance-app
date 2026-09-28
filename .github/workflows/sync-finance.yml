@@ -46,6 +46,16 @@ jobs:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           DIRECT_URL: ${{ secrets.DIRECT_URL }}
 
+      # Calls whose price has drifted far since the note (an own now stretched, a
+      # wait/pass now fitting) go to needs-attention.json for the next session.
+      - name: Check calls against today's prices
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        run: npx tsx scripts/check-call-drift.ts
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+
       - name: Commit the corporate-actions record
         if: ${{ !cancelled() }}
         run: |
