@@ -16,6 +16,8 @@ import { guidanceMidpoint, meetsGuidanceThreshold, formatGuidanceRange, GUIDANCE
 const ROW_QUARTERS = 2;
 
 import { COLOR_THEMES, ColorThemeKey, CONVICTION_CONFIG, ConvictionLevel } from './SectorList';
+import { getCompanyFilings } from '@/lib/filings';
+import { TONE_STYLE, CompanyFilings } from './SectorFilings';
 
 const CONVICTION_CYCLE: (ConvictionLevel | null)[] = [null, 'HIGH', 'MEDIUM', 'LOW'];
 
@@ -29,6 +31,8 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     colorTheme?: { bg: string; text: string };
 }) => {
     const [expanded, setExpanded] = useState(false);
+    // Material exchange filings from the sector's digest, if one exists.
+    const companyFilings = useMemo(() => getCompanyFilings(company.name), [company.name]);
     const { isAdminMode } = useAdmin();
     const [isDeleting, setIsDeleting] = useState(false);
     const [showColorPicker, setShowColorPicker] = useState(false);
@@ -330,6 +334,16 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                         >
                             {company.name}
                         </span>
+                        {companyFilings.length > 0 && (
+                            <button
+                                type="button"
+                                onClick={(e) => { e.stopPropagation(); setExpanded(true); }}
+                                className={`flex-shrink-0 cursor-pointer hover:opacity-80 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border ${TONE_STYLE[companyFilings.some(f => f.tone === 'watch') ? 'watch' : companyFilings.some(f => f.tone === 'good') ? 'good' : 'info'].chip}`}
+                                title={companyFilings.map(f => `${f.date}: ${f.headline}`).join('\n')}
+                            >
+                                {companyFilings.length} new
+                            </button>
+                        )}
                         {company.isSme && (
                             <span
                                 className="flex-shrink-0 text-[9px] font-semibold px-1.5 py-0.5 rounded-full bg-gray-100 text-gray-500 border border-gray-200"
@@ -645,6 +659,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                         />
                                         {effective.history && effective.history.length >= 2 && (
                                             <FinancialTrendChart history={effective.history} />
+                                        )}
+                                        {companyFilings.length > 0 && (
+                                            <CompanyFilings filings={companyFilings} />
                                         )}
                                     </div>
                                     <div className="flex-1">

@@ -2,12 +2,14 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, ChevronRight, MessageSquare, LayoutGrid, StickyNote, BookOpen } from 'lucide-react';
+import { ChevronDown, ChevronRight, MessageSquare, LayoutGrid, StickyNote, BookOpen, Bell } from 'lucide-react';
 import { useSectorChat } from '@/context/SectorChatContext';
 import { useNotes } from '@/context/NotesContext';
 import { SectorSnapshot } from '@/components/SectorSnapshot';
 import { SectorOverview } from '@/components/SectorOverview';
 import { getSectorOverview } from '@/lib/sector-overviews';
+import { getSectorFilings } from '@/lib/filings';
+import { SectorFilings } from '@/components/SectorFilings';
 
 import { EnrichedCompany } from './SectorList';
 
@@ -22,14 +24,17 @@ interface SectorSectionProps {
 export function SectorSection({ name, count, companies = [], children, defaultOpen = false }: SectorSectionProps) {
     const [isOpen, setIsOpen] = useState(defaultOpen);
     // Snapshot and Overview behave as tabs: at most one is open at a time.
-    const [panel, setPanel] = useState<'none' | 'snapshot' | 'overview'>('none');
+    const [panel, setPanel] = useState<'none' | 'snapshot' | 'overview' | 'filings'>('none');
     const { openChat } = useSectorChat();
     const { openSectorNotes } = useNotes();
 
     // Only sectors with a written note in lib/sector-overviews get the tab.
     const overview = getSectorOverview(name);
+    // Only sectors with a filings digest get the Filings tab.
+    const filings = getSectorFilings(name);
+    const watchCount = filings ? filings.filings.filter(f => f.tone === 'watch').length : 0;
 
-    const togglePanel = (next: 'snapshot' | 'overview') => (e: React.MouseEvent) => {
+    const togglePanel = (next: 'snapshot' | 'overview' | 'filings') => (e: React.MouseEvent) => {
         e.stopPropagation();
         setPanel(p => (p === next ? 'none' : next));
         if (!isOpen) setIsOpen(true);
@@ -90,6 +95,20 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
                             <span className="text-[9px] font-semibold uppercase tracking-wide">Overview</span>
                         </div>
                     )}
+                    {/* Filings Button — only where a filings digest exists */}
+                    {filings && (
+                        <div
+                            onClick={togglePanel('filings')}
+                            className={`px-1.5 py-1 rounded transition-all cursor-pointer flex items-center gap-1 ${panel === 'filings' ? 'text-[#6B9FCC] bg-[#D4E5F7]' : 'text-gray-400 hover:text-[#6B9FCC] hover:bg-[#D4E5F7]'}`}
+                            title={`${name} material filings`}
+                        >
+                            <Bell className="w-3 h-3" />
+                            <span className="text-[9px] font-semibold uppercase tracking-wide">Filings</span>
+                            <span className={`text-[9px] font-semibold px-1 rounded-full ${watchCount ? 'bg-[#F3EEFC] text-[#6B3FA0]' : 'bg-[#EAF2FA] text-[#35577A]'}`}>
+                                {filings.filings.length}
+                            </span>
+                        </div>
+                    )}
                     {/* Chat Button */}
                     <div
                         onClick={handleChatClick}
@@ -119,6 +138,11 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
             {/* Sector Overview */}
             {isOpen && panel === 'overview' && overview && (
                 <SectorOverview overview={overview} companies={companies} />
+            )}
+
+            {/* Material filings */}
+            {isOpen && panel === 'filings' && filings && (
+                <SectorFilings data={filings} />
             )}
 
             {/* Company List */}
