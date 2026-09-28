@@ -72,6 +72,8 @@ export interface EnrichedCompany {
         basis: string;      // 'STATED' | 'IMPLIED' | 'NONE'
         quote?: string;
         quarter: string;
+        /** Set when a later AGM or special call supersedes the results call, e.g. "AGM, 23 Sep". */
+        source?: string;
     };
     geminiScore?: number;
     geminiScoreDelta?: number;

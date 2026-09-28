@@ -1,4 +1,5 @@
 import type { PrismaClient } from '@prisma/client';
+import { generalSlotDate } from './doc-label';
 
 // -----------------------------------------------------------------------------
 // Rolling-window retention policy (per company).
@@ -52,6 +53,13 @@ export const GENERAL_Q = 'GEN';
 export const GENERAL_TRANSCRIPT_WINDOW = 2;
 export const GENERAL_ANALYSIS_WINDOW = 4;
 
+// General rows all share q = 'GEN' and their fiscal year, so the database order
+// among them is arbitrary; they are ranked by the date in their slot name, newest
+// first, before the General window is applied.
+const newestGeneralFirst = <T extends { quarter: { name: string } }>(rows: T[]): T[] =>
+    [...rows].sort((a, b) =>
+        (generalSlotDate(b.quarter.name)?.getTime() ?? 0) - (generalSlotDate(a.quarter.name)?.getTime() ?? 0));
+
 // Newest quarter first. `q` is a string ('Q1'..'Q4') so a desc string sort is
 // also a desc quarter sort within a fiscal year.
 const NEWEST_FIRST = [
@@ -86,7 +94,7 @@ export async function pruneCompany(db: PrismaClient, companyId: string, hooks: P
         orderBy: NEWEST_FIRST
     });
     const transcripts = allTranscripts.filter(t => t.quarter.q !== GENERAL_Q);
-    const generalTranscripts = allTranscripts.filter(t => t.quarter.q === GENERAL_Q);
+    const generalTranscripts = newestGeneralFirst(allTranscripts.filter(t => t.quarter.q === GENERAL_Q));
 
     for (const old of [
         ...transcripts.slice(TRANSCRIPT_WINDOW),
@@ -109,7 +117,7 @@ export async function pruneCompany(db: PrismaClient, companyId: string, hooks: P
         orderBy: NEWEST_FIRST
     });
     const analyses = allAnalyses.filter(a => a.quarter.q !== GENERAL_Q);
-    const generalAnalyses = allAnalyses.filter(a => a.quarter.q === GENERAL_Q);
+    const generalAnalyses = newestGeneralFirst(allAnalyses.filter(a => a.quarter.q === GENERAL_Q));
 
     for (const old of [
         ...analyses.slice(ANALYSIS_WINDOW),

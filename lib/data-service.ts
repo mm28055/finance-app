@@ -4,8 +4,57 @@ import { SectorData, EnrichedCompany } from '@/components/SectorList';
 import type { CompanyFinancials, MetricData } from '@/components/FinancialMatrix';
 import { AnalysisResult } from './ai-analyst';
 import { PORTFOLIO_SECTOR } from './portfolio';
-import { ANALYSIS_WINDOW, TRANSCRIPT_WINDOW, FINANCIALS_WINDOW } from './retention';
+import { ANALYSIS_WINDOW, TRANSCRIPT_WINDOW, FINANCIALS_WINDOW, GENERAL_ANALYSIS_WINDOW } from './retention';
 import { quarterScore, GENERAL_Q } from './quarters';
+import { generalDocLabel, generalDocSource, generalSlotDate } from './doc-label';
+import { quarterEndDate } from './doc-type';
+
+type GuidanceRow = {
+    guidanceGrowthMin: any;
+    guidanceGrowthMax: any;
+    guidanceFy: string | null;
+    guidanceBasis: string | null;
+    guidanceQuote: string | null;
+};
+
+const guidanceOf = (a: GuidanceRow, quarter: string, source?: string) => ({
+    min: a.guidanceGrowthMin !== null ? Number(a.guidanceGrowthMin) : null,
+    max: a.guidanceGrowthMax !== null ? Number(a.guidanceGrowthMax) : null,
+    fy: a.guidanceFy || undefined,
+    basis: a.guidanceBasis!,
+    quote: a.guidanceQuote || undefined,
+    quarter,
+    source,
+});
+
+/**
+ * Newer guidance from an AGM or special call. The row's guidance normally comes
+ * from the newest quarter's results call; when management later puts a revenue
+ * growth number on the record at an AGM or special call, that number is the
+ * current one. Only a STATED figure overrides — a vague comment never does.
+ * "Newer" means held after that quarter's call (its transcript's event date,
+ * or its download date; failing both, 60 days after the quarter closed).
+ */
+function newerStatedGuidance(
+    latestQuarter: string | undefined,
+    latestCall: Date | null,
+    generals: (GuidanceRow & { quarter: { name: string }; investorBrief: string | null })[]
+) {
+    let after: number;
+    if (!latestQuarter) after = 0;
+    else if (latestCall) after = latestCall.getTime();
+    else {
+        const end = quarterEndDate(latestQuarter);
+        after = end ? end.getTime() + 60 * 86400000 : Infinity;
+    }
+    const best = generals
+        .filter(g => g.guidanceBasis === 'STATED' && (g.guidanceGrowthMin !== null || g.guidanceGrowthMax !== null))
+        .map(g => ({ g, at: generalSlotDate(g.quarter.name)?.getTime() ?? 0 }))
+        .filter(x => x.at > after)
+        .sort((a, b) => b.at - a.at)[0];
+    if (!best) return undefined;
+    return guidanceOf(best.g, best.g.quarter.name, generalDocSource(best.g.quarter.name, best.g.investorBrief) || undefined);
+}
 
 /**
  * Price to sales, divided at read time so the daily market-cap refresh moves it
@@ -55,6 +104,9 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             fiftyTwoWeekLow: true,
             targetPrice: true,
             financials: {
+                // Quarters only — an AGM's or special call's figures are not a
+                // quarter's results and would otherwise pose as the latest.
+                where: { quarter: { q: { not: GENERAL_Q } } },
                 orderBy: [
                     { quarter: { year: 'desc' } },
                     { quarter: { q: 'desc' } }
@@ -114,11 +166,37 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
                 take: TRANSCRIPT_WINDOW,
                 select: {
                     fileUrl: true,
+                    sourceEventDate: true,
+                    createdAt: true,
                     quarter: { select: { name: true } }
                 }
             }
         }
     });
+
+    // AGM / special-call analyses carrying a stated revenue-growth number — the
+    // candidates that can supersede a row's results-call guidance. Few rows, so
+    // the brief is read too (it labels older "General" slots AGM vs special call).
+    const generalGuidance = await prisma.analysis.findMany({
+        where: {
+            quarter: { q: GENERAL_Q },
+            guidanceBasis: 'STATED',
+            company: { isVisible: true },
+            OR: [{ guidanceGrowthMin: { not: null } }, { guidanceGrowthMax: { not: null } }],
+        },
+        select: {
+            companyId: true,
+            guidanceGrowthMin: true,
+            guidanceGrowthMax: true,
+            guidanceFy: true,
+            guidanceBasis: true,
+            guidanceQuote: true,
+            investorBrief: true,
+            quarter: { select: { name: true } }
+        }
+    });
+    const generalGuidanceBy = new Map<string, typeof generalGuidance>();
+    for (const g of generalGuidance) generalGuidanceBy.set(g.companyId, [...(generalGuidanceBy.get(g.companyId) || []), g]);
 
     const sectorMap = new Map<string, SectorData>();
 
@@ -190,17 +268,18 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             geminiScoreDelta,
             // Guidance is read from the newest quarter only. When a fresh
             // quarter lands with a weaker number the row follows it down on its
-            // own — there is no separate staleness rule to keep in sync.
-            guidance: latestA?.guidanceBasis
-                ? {
-                    min: latestA.guidanceGrowthMin !== null ? Number(latestA.guidanceGrowthMin) : null,
-                    max: latestA.guidanceGrowthMax !== null ? Number(latestA.guidanceGrowthMax) : null,
-                    fy: latestA.guidanceFy || undefined,
-                    basis: latestA.guidanceBasis,
-                    quote: latestA.guidanceQuote || undefined,
-                    quarter: latestA.quarter.name
-                }
-                : undefined,
+            // own — there is no separate staleness rule to keep in sync. The one
+            // exception: a stated number from a later AGM or special call.
+            guidance: (() => {
+                const latestT = co.transcripts.find(t => t.quarter.name === latestA?.quarter.name);
+                const later = newerStatedGuidance(
+                    latestA?.quarter.name,
+                    latestT ? (latestT.sourceEventDate || latestT.createdAt) : null,
+                    generalGuidanceBy.get(co.id) || []
+                );
+                if (later) return later;
+                return latestA?.guidanceBasis ? guidanceOf(latestA, latestA.quarter.name) : undefined;
+            })(),
             isSme: co.isSme,
             inPortfolio: co.inPortfolio,
             colorTag: co.colorTag || undefined,
@@ -267,6 +346,7 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
             fiftyTwoWeekLow: true,
             targetPrice: true,
             financials: {
+                where: { quarter: { q: { not: GENERAL_Q } } },
                 orderBy: [
                     { quarter: { year: 'desc' } },
                     { quarter: { q: 'desc' } }
@@ -274,7 +354,11 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
                 take: FINANCIALS_WINDOW,
                 include: { quarter: true }
             },
+            // Quarters only: the newest of these drives the score, its delta
+            // and the summary. AGM / special-call analyses are read below and
+            // added to the tabs after the quarters.
             analyses: {
+                where: { quarter: { q: { not: GENERAL_Q } } },
                 orderBy: [
                     { quarter: { year: 'desc' } },
                     { quarter: { q: 'desc' } }
@@ -282,12 +366,10 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
                 take: ANALYSIS_WINDOW,
                 include: { quarter: true }
             },
+            // No take: retention already caps these (two quarters plus two
+            // General documents), and a cap here let a General row push the
+            // older quarter's PDF link out.
             transcripts: {
-                orderBy: [
-                    { quarter: { year: 'desc' } },
-                    { quarter: { q: 'desc' } }
-                ],
-                take: TRANSCRIPT_WINDOW,
                 // Skip rawText — only need the PDF link + quarter reference.
                 select: {
                     quarterId: true,
@@ -299,6 +381,16 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
     });
 
     if (!co) return null;
+
+    // AGM / special-call analyses, newest first by the date in the slot name
+    // (they share q = 'GEN' and a fiscal year, so the database cannot order them).
+    const generalAnalyses = (await prisma.analysis.findMany({
+        where: { companyId: id, quarter: { q: GENERAL_Q } },
+        include: { quarter: true }
+    }))
+        .sort((a, b) => (generalSlotDate(b.quarter.name)?.getTime() ?? 0) - (generalSlotDate(a.quarter.name)?.getTime() ?? 0))
+        .slice(0, GENERAL_ANALYSIS_WINDOW);
+    const allAnalyses = [...co.analyses, ...generalAnalyses];
 
     const latestF = co.financials[0];
     const latestA = co.analyses[0];
@@ -316,32 +408,38 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
     // Financials retain a wider 5-quarter window for YoY math but must not
     // resurrect tabs for quarters whose transcript/analysis were pruned.
     const uniqueQuarterIds = new Set<string>();
-    co.analyses.forEach(a => uniqueQuarterIds.add(a.quarterId));
+    allAnalyses.forEach(a => uniqueQuarterIds.add(a.quarterId));
     co.transcripts.forEach(t => uniqueQuarterIds.add(t.quarterId));
 
     const history = Array.from(uniqueQuarterIds).map(qId => {
         const matchingF = co.financials.find(f => f.quarterId === qId);
-        const matchingA = co.analyses.find(a => a.quarterId === qId);
+        const matchingA = allAnalyses.find(a => a.quarterId === qId);
         const matchingT = co.transcripts.find(t => t.quarterId === qId);
 
         const idx = co.financials.findIndex(f => f.quarterId === qId);
         const prevF = idx >= 0 && idx + 1 < co.financials.length ? co.financials[idx + 1] : null;
+        const name = matchingF?.quarter.name || matchingA?.quarter.name || matchingT?.quarter.name || "Unknown";
 
         return {
-            quarter: matchingF?.quarter.name || matchingA?.quarter.name || matchingT?.quarter.name || "Unknown",
+            // General slots read "AGM · 23 Sep 2026" / "Special call · 5 Sep 2026".
+            quarter: generalDocLabel(name, matchingA?.investorBrief || matchingA?.summary),
+            slot: name,
             analysis: parseAnalysis(matchingA) as AnalysisResult,
             pdfUrl: matchingT?.fileUrl || null,
             financials: matchingF ? createSafeFinancials(matchingF, prevF, co.financials) : ({} as any)
         };
-    }).sort((a, b) => {
-        const partsA = a.quarter.split(' ');
-        const partsB = b.quarter.split(' ');
-        if (partsA.length < 2 || partsB.length < 2) return 0;
-        const yA = parseInt(partsA[1]?.replace('FY', '') || '0');
-        const yB = parseInt(partsB[1]?.replace('FY', '') || '0');
-        if (yA !== yB) return yB - yA;
-        return partsB[0].localeCompare(partsA[0]);
-    });
+    })
+        // A General slot whose analysis has rolled off has no tab of its own.
+        .filter(h => !generalSlotDate(h.slot) || h.analysis || h.pdfUrl)
+        // Quarters first, newest first; then AGMs / special calls, newest first.
+        .sort((a, b) => {
+            const ga = generalSlotDate(a.slot), gb = generalSlotDate(b.slot);
+            if (ga && gb) return gb.getTime() - ga.getTime();
+            if (ga) return 1;
+            if (gb) return -1;
+            return quarterScore(b.slot) - quarterScore(a.slot);
+        })
+        .map(({ slot, ...h }) => h);
 
     // Trend chart: every stored quarter of figures, not just quarters with a call.
     const trend = co.financials

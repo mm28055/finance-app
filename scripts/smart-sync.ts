@@ -15,7 +15,7 @@ import { prisma } from '../lib/prisma';
 import { processTranscript } from '../lib/sync-service';
 import { updateCompanyProfile } from '../lib/profile-service';
 import { pruneCompany, TRANSCRIPT_WINDOW, ANALYSIS_WINDOW, FINANCIALS_WINDOW } from '../lib/retention';
-import { BUCKET_NAME, storagePathFromUrl } from '../lib/storage';
+import { supabaseAdmin as supabase, uploadTranscriptPdf, deleteStoredPdf } from '../lib/transcript-storage';
 import { generalQuarterName, fiscalYearOf, GENERAL_Q } from '../lib/quarters';
 import { classifyTranscript, isRelatedEntityCall } from '../lib/doc-type';
 // @ts-ignore - pdf-parse ships no types
@@ -33,12 +33,9 @@ const DEFAULT_CONCURRENCY = 6;
 // Helper for sleep
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
-// Supabase Setup (env already loaded by the dotenv/config import at the top)
-import { createClient } from '@supabase/supabase-js';
-
-const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
-const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
-const supabase = (SUPABASE_URL && SUPABASE_KEY) ? createClient(SUPABASE_URL, SUPABASE_KEY) : null;
+// Supabase client and PDF upload/delete live in lib/transcript-storage.ts (shared
+// with scripts/sync-exchange-transcripts.ts); env is already loaded by the
+// dotenv/config import at the top.
 
 // Updated Download Helper: Supports Local OR Supabase
 async function handleFileDownload(url: string, localPath: string, subPath: string): Promise<{ success: boolean, finalPath: string, buffer: Buffer }> {
@@ -67,14 +64,7 @@ async function handleFileDownload(url: string, localPath: string, subPath: strin
         try {
             // Path: "Tyres/Q2 FY26/MRF.pdf" -> Standardize separators
             const cloudKey = subPath.split(path.sep).join('/');
-
-            const { error: uploadError } = await supabase.storage
-                .from(BUCKET_NAME)
-                .upload(cloudKey, buffer, { contentType: 'application/pdf', upsert: true });
-
-            if (uploadError) throw uploadError;
-
-            const { data: { publicUrl } } = supabase.storage.from(BUCKET_NAME).getPublicUrl(cloudKey);
+            const publicUrl = await uploadTranscriptPdf(cloudKey, buffer);
             return { success: true, finalPath: publicUrl, buffer };
         } catch (e: any) {
             console.error(`   ⚠️ Supabase Upload Failed (${e.message}). Falling back to local.`);
@@ -145,26 +135,6 @@ async function logToDB(jobId: string, status: string, message: string, companyNa
         });
     } catch (e) {
         // Ignore logging errors to not break sync
-    }
-}
-
-// Removes the Supabase PDF backing a transcript row. No-op for local paths.
-async function deleteStoredPdf(fileUrl: string | null, companyName: string, qName: string) {
-    if (!fileUrl || !fileUrl.startsWith('http') || !supabase) return;
-    try {
-        const storagePath = storagePathFromUrl(fileUrl);
-        if (!storagePath) {
-            console.error(`   ⚠️ Could not derive storage path for ${companyName} ${qName}: ${fileUrl}`);
-            return;
-        }
-        const { error } = await supabase.storage.from(BUCKET_NAME).remove([storagePath]);
-        if (error) {
-            console.error(`   ⚠️ Supabase delete failed for ${companyName} ${qName}: ${error.message}`);
-        } else {
-            console.log(`   🗑️ Deleted Supabase PDF: ${storagePath}`);
-        }
-    } catch (e: any) {
-        console.error(`   ⚠️ Supabase cleanup error: ${e.message}`);
     }
 }
 

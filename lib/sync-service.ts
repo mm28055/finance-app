@@ -51,10 +51,15 @@ function screenerSlug(url: string): string {
 
 const MIN_NAME_MATCH = 0.75;
 
-export async function resolveScreenerUrl(isin: string | null, ticker: string, name: string): Promise<string | null> {
+// `get` lets a caller pace its Screener requests (the exchange transcript sync
+// keeps them at least 3 s apart); it defaults to a plain fetch.
+export async function resolveScreenerUrl(
+    isin: string | null, ticker: string, name: string,
+    get: (url: string, init?: RequestInit) => Promise<Response> = fetch
+): Promise<string | null> {
     const searchScreener = async (q: string): Promise<{ name: string; url: string }[]> => {
         try {
-            const res = await fetch(`https://www.screener.in/api/company/search/?q=${encodeURIComponent(q)}`, {
+            const res = await get(`https://www.screener.in/api/company/search/?q=${encodeURIComponent(q)}`, {
                 headers: { 'User-Agent': 'Mozilla/5.0' }
             });
             const data = await res.json();

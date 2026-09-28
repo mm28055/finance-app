@@ -183,6 +183,8 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
         // number is management's own or arithmetic done on their figures, which
         // the reader cannot recover from the range alone.
         + ` (${guidance?.basis === 'IMPLIED' ? 'implied' : 'stated'})`
+        // Said after the results call, at an AGM or special call.
+        + `${guidance?.source ? ` — from ${guidance.source}` : ''}`
         + `${guidance?.quote ? `
 
 “${guidance.quote}”` : ''}`;

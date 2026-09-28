@@ -1,5 +1,6 @@
 import { prisma } from '@/lib/prisma';
 import { pruneCompany, TRANSCRIPT_WINDOW, GENERAL_Q } from '@/lib/retention';
+import { generalSlotName, isGeneralSlotName, type GeneralKind } from '@/lib/doc-label';
 
 // Maps a concall event date to its reported fiscal quarter (Indian FY: Apr-Mar).
 // Concalls are filed AFTER quarter-end, so the event-date month determines
@@ -86,20 +87,18 @@ export { GENERAL_Q };
 
 /** True for a Quarter row (or name) representing a non-quarterly document. */
 export function isGeneralQuarter(quarter: { q: string } | string): boolean {
-    if (typeof quarter === 'string') return quarter.startsWith('General ');
+    if (typeof quarter === 'string') return isGeneralSlotName(quarter);
     return quarter.q === GENERAL_Q;
 }
-
-const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 /**
  * Slot name for a non-quarterly document, e.g. "General 06 Jul 2026".
  * Keyed by event date so a company can hold several in the same quarter.
+ * With a kind the prefix records what the document is ("AGM 23 Sep 2026",
+ * "Special call 05 Sep 2026") — see lib/doc-label.ts.
  */
-export function generalQuarterName(eventDate: string | Date): string {
-    const d = new Date(eventDate);
-    const dd = d.getDate().toString().padStart(2, '0');
-    return `General ${dd} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
+export function generalQuarterName(eventDate: string | Date, kind?: GeneralKind): string {
+    return generalSlotName(eventDate, kind);
 }
 
 /** Fiscal year (Indian FY, Apr-Mar) an event date belongs to — for Quarter.year. */
