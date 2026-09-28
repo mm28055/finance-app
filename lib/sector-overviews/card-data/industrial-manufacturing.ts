@@ -2954,7 +2954,12 @@ export const industrialManufacturingValuationInputs: Record<string, ValuationInp
         "mcapAtWriting": 8119.0,
         "peAtWriting": 94.9
     },
-    // The Anup Enginee is left out: the site database record carries a wrong market value.
+    "The Anup Enginee": {
+        "netDebt": 97,
+        "ttmEbitda": 143.0,
+        "mcapAtWriting": 3408.0,
+        "peAtWriting": 39.7
+    },
     "JNK": {
         "netDebt": -108,
         "ttmEbitda": 104.0,

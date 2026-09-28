@@ -325,7 +325,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'The Anup Enginee',
-        inShort: ["**Makes heat exchangers, pressure vessels, columns and reactors** for refineries and petrochemical, fertiliser, power and nuclear plants; half of sales are exports, mainly to the Middle East.", "**Good:** fully certified, a record ₹985cr order book and a new plant already built. **Bad:** fixed-price contracts leave it exposed to steel costs; the Q1 FY27 margin was 7% and FY27 guidance is only about 15%.", "**Verdict: follow.** A strong fabricator in a reset year, with new orders taken close to historic margins; not measured live here because this site's price data for it is wrong."],
+        inShort: ["**Makes heat exchangers, pressure vessels, columns and reactors** for refineries and petrochemical, fertiliser, power and nuclear plants; half of sales are exports, mainly to the Middle East.", "**Good:** fully certified, a record ₹985cr order book and a new plant already built. **Bad:** fixed-price contracts leave it exposed to steel costs; the Q1 FY27 margin was 7% and FY27 guidance is only about 15%.", "**Verdict: follow.** A strong fabricator in a reset year, with new orders taken close to historic margins; the price needs about 21% a year against my ~18%, which is Full."],
         tagline: "A certified maker of custom heat exchangers and pressure equipment for oil and gas, petrochemical, fertiliser, power and nuclear plants.",
         revenue: '₹822cr (FY26, consolidated)',
         products: [
@@ -350,8 +350,8 @@ const profiles: BusinessProfile[] = [
             { name: 'Lower-tier Indian fabricators', note: 'Win standard exchangers and vessels on price, which is why Anup is moving into niche products.' },
         ],
         position: "**One of India's leading heat-exchanger and pressure-vessel makers**, with ASME U, U2 and S stamps, nuclear work and approvals from process licensors.",
-        money: "Net debt was ₹97cr at March 2026 (Screener) after a working-capital squeeze; the company says it was back to about ₹1cr of net cash by August (₹45cr of cash against ₹44cr of long-term debt). Capex should be ₹40–50cr a year (CARE). Operating cash was −₹7cr in FY25 and ₹2cr in FY26, and ₹197cr of March receivables was not yet billed. CARE rates it AA- but says a margin below 18% for long could lead to a downgrade, against FY27 guidance of about 15%. **This site's database shows a share price of ₹1.71 and a market value of ₹32cr for Anup, against about ₹1,677 and ₹3,359cr on the exchange, so it is not measured live here; check the price on the exchange.** Promoters hold **41%**, down from 43% in September 2023.",
-        watch: ["Check the share price on the exchange, not this site's figures.", "Whether second-half margins lift the year to the guided 15%.", "Execution of the ₹985cr order book and the technical-services target."],
+        money: "Net debt was ₹97cr at March 2026 (Screener) after a working-capital squeeze; the company says it was back to about ₹1cr of net cash by August (₹45cr of cash against ₹44cr of long-term debt). Capex should be ₹40–50cr a year (CARE). Operating cash was −₹7cr in FY25 and ₹2cr in FY26, and ₹197cr of March receivables was not yet billed. CARE rates it AA- but says a margin below 18% for long could lead to a downgrade, against FY27 guidance of about 15%. At a market value of about ₹3,322cr and a P/E of about 38.7, the price needs about 21% a year against my ~18%, which is **Full**. Promoters hold **41%**, down from 43% in September 2023.",
+        watch: ["Whether second-half margins lift the year to the guided 15%.", "Execution of the ₹985cr order book and the technical-services target."],
         charts: industrialManufacturingCharts['The Anup Enginee'],
     },
     {
