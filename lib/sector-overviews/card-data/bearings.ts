@@ -776,5 +776,10 @@ export const bearingsValuationInputs: Record<string, ValuationInput> = {
         "mcapAtWriting": 4218.0,
         "peAtWriting": 27.2
     },
-    // NRB Bearing is left out: the site database record for it carries another company's market data.
+    "NRB Bearing": {
+        "netDebt": 121,
+        "ttmEbitda": 245.0,
+        "mcapAtWriting": 5276.0,
+        "peAtWriting": 35.3
+    }
 };
