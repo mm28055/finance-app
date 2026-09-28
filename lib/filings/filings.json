@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-28T03:36:21.228Z",
- "from": "2026-09-22",
+ "updated": "2026-09-28T05:44:39.596Z",
+ "from": "2026-09-21",
  "to": "2026-09-28",
  "companiesBySector": {
   "Packaging": 10,
@@ -64,14 +64,14 @@
    "url": "https://nsearchives.nseindia.com/corporate/KALPATPOWR_28092026084735_SEIntimationPR28092026.pdf"
   },
   {
-   "company": "Jyoti CNC Auto.",
-   "sector": "Industrial Machinery",
-   "date": "2026-09-27",
-   "category": "Operations",
-   "tone": "info",
-   "headline": "Minor fire at Rajkot plant extinguished within an hour with no financial impact",
-   "summary": "A fire occurred at one of the coating facilities in the company's Rajkot manufacturing plant. It was fully extinguished within 30 to 60 minutes with no casualties. Operations have resumed normally without disruption or material financial loss.",
-   "url": "https://nsearchives.nseindia.com/corporate/JYOTICNC_NSE_27092026123252_BSEnseJCALClarificationONFireIncident27092026.pdf"
+   "company": "Dilip Buildcon",
+   "sector": "Construction",
+   "date": "2026-09-28",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Declared L-1 bidder for ₹688.23cr NHAI highway project in Maharashtra",
+   "summary": "Dilip Buildcon has emerged as the lowest bidder for a ₹688.23 crore NHAI project to construct a 4-lane elevated corridor in Solapur City on a Hybrid Annuity Mode. The project has a 24-month execution period. This is a material win, equal to about 7.9% of the company's trailing 12-month sales.",
+   "url": "https://nsearchives.nseindia.com/corporate/DBL_28092026095321_Intimation.pdf"
   },
   {
    "company": "Quality Power El",
@@ -174,16 +174,6 @@
    "url": "https://nsearchives.nseindia.com/corporate/CHEMPLASTS_26092026090752_Intimation_to_Stock_Exchange-_EDC_Karaikal_-Re_Commence_sd.pdf"
   },
   {
-   "company": "RPG Life Sciences",
-   "sector": "Pharma",
-   "date": "2026-09-26",
-   "category": "Merger",
-   "tone": "info",
-   "headline": "Subsidiary RPG Active Pharma to absorb step-down unit Actis Generics",
-   "summary": "The company's subsidiary, RPG Active Pharma, will merge with its wholly owned unit, Actis Generics. Actis Generics had a net worth of ₹34.6 crore and revenue of ₹46 crore in FY26. The internal restructuring aims to simplify the corporate structure and involves no new share issuance.",
-   "url": "https://nsearchives.nseindia.com/corporate/RPGLIFE_26092026001205_Intimation_Letter.pdf"
-  },
-  {
    "company": "Wheels India",
    "sector": "Auto Related",
    "date": "2026-09-26",
@@ -192,6 +182,16 @@
    "headline": "Allots 11.97 lakh shares via QIP at ₹2088 each to raise ₹250cr",
    "summary": "Wheels India has approved the allotment of 11.97 lakh equity shares to qualified institutional buyers at ₹2088 per share, raising ₹250 crore. This adds 4.67% more shares, diluting existing investors by 4.46%. The issue price represents a roughly 9% discount to the current share price of ₹2296.",
    "url": "https://nsearchives.nseindia.com/corporate/WHEELS_26092026000409_WILReg3025092026.pdf"
+  },
+  {
+   "company": "Scoda Tubes",
+   "sector": "Iron and Steel",
+   "date": "2026-09-26",
+   "category": "Strategy",
+   "tone": "good",
+   "headline": "Announces ₹31.7cr solar investment and plans to enter data centre sector",
+   "summary": "During its AGM, management announced a ₹31.7 crore investment in an 8.79 MW captive solar plant, which is expected to generate annual savings of about ₹8.7 crore. The company also outlined plans to marginally expand capacity and enter new sectors such as data centres by FY28.",
+   "url": "https://nsearchives.nseindia.com/corporate/SCODA_26092026185752_AGM_Proceedings.pdf"
   },
   {
    "company": "Aequs",
@@ -204,6 +204,106 @@
    "sector": "Aerospace defence"
   },
   {
+   "company": "Aditya Infotech",
+   "sector": "Industrial Manufacturing",
+   "date": "2026-09-25",
+   "category": "Fund-raise",
+   "tone": "info",
+   "headline": "Aditya Infotech allots 43.26 lakh shares via QIP to raise ₹1,500 crore",
+   "summary": "Aditya Infotech has allotted 43.26 lakh equity shares to institutional buyers through a QIP, raising approximately ₹1,500 crore. The issue price of ₹3,467 per share is at a roughly 6% discount to the current market price of ₹3,688. The allotment increases the total share count by 3.66%, resulting in a 3.53% dilution for existing shareholders.",
+   "url": "https://nsearchives.nseindia.com/corporate/CPPLUS_25092026235505_stxallotdsc.pdf"
+  },
+  {
+   "company": "Borosil",
+   "sector": "Consumer Durables",
+   "date": "2026-09-25",
+   "category": "Regulatory",
+   "tone": "good",
+   "headline": "DGTR recommends 5-year anti-dumping duty on Chinese glassware imports",
+   "summary": "The Directorate General of Trade Remedies (DGTR) has recommended imposing an anti-dumping duty on Borosilicate Table and Kitchen Glassware from China for five years. The investigation was initiated by Borosil, which is the sole domestic producer of these goods in India. This is a positive development expected to significantly improve the company's competitive position against dumped imports.",
+   "url": "https://nsearchives.nseindia.com/corporate/BOROSIL_25092026205729_SE_Intimation.pdf"
+  },
+  {
+   "company": "Suraj Estate",
+   "sector": "Realty",
+   "date": "2026-09-25",
+   "category": "Acquisition",
+   "tone": "info",
+   "headline": "Acquires Mahim development rights for ₹82.72cr; estimated GDV of ₹800cr",
+   "summary": "Suraj Estate's subsidiary has completed the acquisition of development rights for a 2,941 sq meter plot in Mahim (West), Mumbai, for an investment of ₹82.72 crore. The plot will be amalgamated with an existing commercial project to generate around 1.50 lakh sq ft of saleable area with an estimated Gross Development Value (GDV) of ₹800 crore. This is a significant addition, with the expected GDV exceeding the company's trailing 12-month sales of ₹569 crore.",
+   "url": "https://nsearchives.nseindia.com/corporate/SURAJ_25092026174109_25-09-2026-_Intimation_to_the_Stock_Exchanges.pdf"
+  },
+  {
+   "company": "Sedemac Mechatronics",
+   "sector": "Auto Related",
+   "date": "2026-09-25",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Limited commercial production begins at new Pune manufacturing facility",
+   "summary": "Sedemac Mechatronics has commenced limited commercial production at its new Manufacturing Facility-3 in Pune, Maharashtra, effective September 25, 2026. The company will progressively operationalize the remaining manufacturing processes at the plant. This marks a positive step in the company's capacity expansion plans.",
+   "url": "https://nsearchives.nseindia.com/corporate/SEDEMAC2007_25092026165649_20260925-IntimationofstartofProd.pdf"
+  },
+  {
+   "company": "RR Kabel Ltd.",
+   "sector": "Cables",
+   "date": "2026-09-25",
+   "category": "Acquisition",
+   "tone": "info",
+   "headline": "Executes agreement to acquire U M Cables' business undertaking",
+   "summary": "RR Kabel has executed a Business Transfer Agreement to acquire the business undertaking of U M Cables Limited, a wholly-owned subsidiary of Usha Martin Limited. The transaction is structured as a slump sale on a going concern basis. Financial details were disclosed in an earlier intimation and are not included in this filing.",
+   "url": "https://nsearchives.nseindia.com/corporate/RRKL1995_25092026165354_Intimation_Reg_30_BTA.pdf"
+  },
+  {
+   "company": "TruAlt Bioenergy",
+   "sector": "Misc",
+   "date": "2026-09-25",
+   "category": "Insider trade",
+   "tone": "good",
+   "headline": "Promoter group buys 1.52 lakh shares for ₹6.69 crore in the open market",
+   "summary": "Nirani Holdings Private Limited, part of the promoter group, purchased 1,52,201 equity shares from the open market for ₹6.69 crore. The shares were bought at an average price of ₹439.32 each, raising the entity's stake from 1.93% to 2.11%. Open-market purchases by promoters are often seen as a sign of confidence in the company's prospects.",
+   "url": "https://nsearchives.nseindia.com/corporate/TRUALTNSE123_25092026160919_SEBI_PIT_25092026-Sd.pdf"
+  },
+  {
+   "company": "Signatureglobal Ind.",
+   "sector": "Realty",
+   "date": "2026-09-25",
+   "category": "Acquisition",
+   "tone": "info",
+   "headline": "Secures 194-acre land parcel in Gurugram with ₹5,500-6,000cr GDV potential",
+   "summary": "Signatureglobal has acquired 25 acres and signed collaboration agreements for 169.22 acres in Farrukhnagar, Gurugram for a luxury villa project. The transaction adds 6.77 million sq. ft. of developable area to its pipeline with an estimated Gross Development Value of ₹5,500-6,000 crore, a massive addition compared to its ₹2,281 crore trailing annual sales.",
+   "url": "https://nsearchives.nseindia.com/corporate/SGLOBAL_25092026160505_collabagreesigned.pdf"
+  },
+  {
+   "company": "Ellen. Indl. Gas",
+   "sector": "Chemicals",
+   "date": "2026-09-25",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Commissions 325 TPD Air Separation Unit under 15-year take-or-pay contract",
+   "summary": "Ellenbarrie has successfully commissioned a 325 Tons per day (TPD) Air Separation Unit at Jai Balaji Industries' Durgapur facility. Revenues from this 15-year take-or-pay gas supply agreement commence immediately, providing long-term visibility for a company with annual sales of ₹356 crore.",
+   "url": "https://nsearchives.nseindia.com/corporate/ELLENBARRIE2024_25092026141614_Announcement_Commissioning_of_Jai_Balaji_ASU_Plant25092026.pdf"
+  },
+  {
+   "company": "Kalpataru Proj.",
+   "sector": "Construction - Power",
+   "date": "2026-09-25",
+   "category": "Strategy",
+   "tone": "good",
+   "headline": "Subsidiary Linjemontage lists in Sweden, yielding SEK 711.5M for KPIL",
+   "summary": "KPIL's step-down subsidiary Linjemontage has successfully listed on Nasdaq Stockholm at a total valuation of SEK 2,357 million. KPIL retains a 65.9% stake and will receive a gross consideration of approximately SEK 711.5 million. The move unlocks significant value for shareholders and generates substantial cash for the company.",
+   "url": "https://nsearchives.nseindia.com/corporate/KALPATPOWR_25092026125040_SEIntimationPR25092026.pdf"
+  },
+  {
+   "company": "Arihant Superstruct.",
+   "sector": "Realty",
+   "date": "2026-09-25",
+   "category": "Strategy",
+   "tone": "good",
+   "headline": "Partners with ITC Hotels for luxury property; projects ₹150-200cr annual revenue",
+   "summary": "Arihant's subsidiary has signed an agreement with ITC Hotels to develop a 227-room luxury property under the 'Mementos' brand. Slated for completion in three years, the hotel is projected to generate ₹150-200 crores in annual revenue with a 45% operating margin. This marks a major strategic expansion into hospitality, representing a substantial new annuity income stream compared to the company's ₹561 crore yearly sales.",
+   "url": "https://nsearchives.nseindia.com/corporate/ARIHANTSUP_25092026123342_ASL_Press_Release_25092026.pdf"
+  },
+  {
    "company": "AXISCADES Technologies",
    "date": "2026-09-24",
    "category": "Debt",
@@ -212,6 +312,216 @@
    "summary": "It allotted 20,000 secured, unrated and unlisted debentures of ₹1 lakh each, ₹200cr in all, on a private placement. On the same day it approved a ₹20cr corporate guarantee for its subsidiary Cloud Wave, replacing the personal guarantees of the sellers. New borrowing while most of the Akkodis sale money is still deferred adds to the balance-sheet risk flagged in the note.",
    "url": "https://nsearchives.nseindia.com/corporate/AXISCADES_24092026112656_Allotment24092026.pdf",
    "sector": "Aerospace defence"
+  },
+  {
+   "company": "RPG Life Sciences",
+   "sector": "Pharma",
+   "date": "2026-09-24",
+   "category": "Acquisition",
+   "tone": "info",
+   "headline": "Completes acquisition of 100% stake in Actis Generics",
+   "summary": "RPG Life Sciences' subsidiary, RPG Active Pharma Limited (RPGAP), has completed the acquisition of the entire stake in Actis Generics Private Limited. Following the closure of the July 2026 share purchase agreement, Actis is now a wholly-owned subsidiary of RPGAP.",
+   "url": "https://nsearchives.nseindia.com/corporate/RPGLIFE_24092026213619_Intimation_letter.pdf"
+  },
+  {
+   "company": "Lemon Tree Hotels",
+   "sector": "Hotels and Travels",
+   "date": "2026-09-24",
+   "category": "Acquisition",
+   "tone": "info",
+   "headline": "Subsidiary acquires land in Mumbai for ₹120cr to develop 172-key hotel",
+   "summary": "Lemon Tree's material subsidiary, Fleur Hotels, has completed the acquisition of a 989 sq. metre land parcel in Bandra (East), Mumbai, for ₹120 crore. The site will be used to develop a 172-key upscale Lemon Tree Premier hotel adjoining the Bandra Kurla Complex. The acquisition cost represents roughly 8% of the company's annual sales.",
+   "url": "https://nsearchives.nseindia.com/corporate/LEMONTREE_24092026213041_Reg_30.pdf"
+  },
+  {
+   "company": "Laser Power & Infra",
+   "sector": "Cables",
+   "date": "2026-09-24",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Allotted 40 acres of land in West Bengal for a new manufacturing facility",
+   "summary": "The company has received an in-principle approval from WBIDC for the allotment of approximately 40 acres of land at Vidyasagar Industrial Park, Kharagpur. The land, allotted on a 99-year lease, will be used to set up a new manufacturing facility for integrated power cables and conductors to expand capacity and support future growth.",
+   "url": "https://nsearchives.nseindia.com/corporate/LASERPOWER_24092026211227_Letter_for_land_allotment.pdf"
+  },
+  {
+   "company": "Signatureglobal Ind.",
+   "sector": "Realty",
+   "date": "2026-09-24",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Targets ₹10,000cr pre-sales and ₹15,000cr project launches in FY27",
+   "summary": "At its AGM, the company provided strong FY27 guidance, targeting project launches worth ₹15,000 crore and pre-sales of nearly ₹10,000 crore. It also aims for ₹5,000 crore in collections, indicating massive scale compared to its last 12 months' reported sales of ₹2,281 crore. Shareholders also approved the appointment of S.N. Dhawan & Co LLP as statutory auditors.",
+   "url": "https://nsearchives.nseindia.com/corporate/SGLOBAL_24092026210614_outcomeagmsigned.pdf"
+  },
+  {
+   "company": "Tarsons Products",
+   "sector": "Health Products",
+   "date": "2026-09-24",
+   "category": "Governance",
+   "tone": "watch",
+   "headline": "AGM held to ratify waiver of excessive managerial remuneration",
+   "summary": "Tarsons Products held its AGM to transact business including the approval of material related-party transactions with its step-down subsidiary, Nerbe Plus GmbH & Co. KG. Notably, shareholders were also asked to approve and ratify the waiver of excessive managerial remuneration paid to executive and non-executive directors.",
+   "url": "https://nsearchives.nseindia.com/corporate/TARSONS_24092026182337_SE_Proceedings_43rd_AGM.pdf"
+  },
+  {
+   "company": "Max Estates",
+   "sector": "Realty",
+   "date": "2026-09-24",
+   "category": "Governance",
+   "tone": "watch",
+   "headline": "Shareholders approve related-party land acquisition and preferential share issue",
+   "summary": "Shareholders approved a material related-party transaction to acquire securities in land-owning companies. They also approved a preferential issue of equity shares via a share swap. The exact number of shares, issue price, and resulting dilution are not provided in this voting-results filing.",
+   "url": "https://nsearchives.nseindia.com/corporate/MEL_24092026175310_MEL_Result_Intimation_24092026_Done.pdf"
+  },
+  {
+   "company": "Manba Finance",
+   "sector": "Finance",
+   "date": "2026-09-24",
+   "category": "Fund-raise",
+   "tone": "info",
+   "headline": "Preferential issue of up to 50 lakh equity shares at ₹135 to raise ₹67.5 crore",
+   "summary": "Manba Finance will hold an EGM to approve a preferential issue of up to 50 lakh equity shares at ₹135 each to raise ₹67.5 crore, alongside an issuance of fully convertible warrants. The equity issue alone increases the share count by 9.9% (a 9% dilution for current holders) and is priced slightly below the current market price of ₹139.",
+   "url": "https://nsearchives.nseindia.com/corporate/MANBA_24092026172257_SEIntimationsd.pdf"
+  },
+  {
+   "company": "TCPL Packaging",
+   "sector": "Packaging",
+   "date": "2026-09-24",
+   "category": "Strategy",
+   "tone": "info",
+   "headline": "Incorporates WOS with ₹10 crore capital for EV battery films business",
+   "summary": "TCPL Packaging has incorporated a wholly-owned subsidiary, TCPL Energy Materials Limited, with an authorized share capital of ₹10 crore. The new entity will manufacture lithium-ion battery separator films for electric vehicles and energy storage. This marks a significant strategic diversification outside its traditional packaging business.",
+   "url": "https://nsearchives.nseindia.com/corporate/TCPLPACK_24092026163826_TEML-STK-.pdf"
+  },
+  {
+   "company": "TruAlt Bioenergy",
+   "sector": "Misc",
+   "date": "2026-09-24",
+   "category": "Pledge",
+   "tone": "watch",
+   "headline": "Promoter entity pledges 1.63% stake (14 lakh shares) to secure debt",
+   "summary": "Promoter group entity Nirani Holdings has pledged 14 lakh shares, representing 1.63% of the company's equity, to Jio Credit. The ₹58.1 crore pledge secures debt taken by the promoters to finance further share acquisitions in the company.",
+   "url": "https://nsearchives.nseindia.com/corporate/TRUALTNSE123_24092026162714_Pledge_Intimation_Sd_2409.pdf"
+  },
+  {
+   "company": "NGL Fine-Chem",
+   "sector": "Pharma API",
+   "date": "2026-09-24",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Commissions Phase II of Tarapur Greenfield facility with ₹222cr investment",
+   "summary": "NGL Fine-Chem has commenced commercial production at Phase II of its Greenfield API facility in Tarapur, marking the full commissioning of the plant. The total investment for the expansion is ₹222 crore, financed via ₹84 crore in term loans and ₹138 crore from internal accruals. This represents a substantial capital expenditure equivalent to roughly 42% of the company's trailing 12-month sales of ₹525 crore, which will augment flexible manufacturing capacity for its diverse product portfolio.",
+   "url": "https://nsearchives.nseindia.com/corporate/NGL2022_24092026152741_Final_Reg_30_Disclosure_Commissioning_of_Phase_II_24092026_Signed.pdf"
+  },
+  {
+   "company": "Interarch Building",
+   "sector": "Construction",
+   "date": "2026-09-24",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Starts Phase 1 of new heavy structural steel plant in AP with 24,000 MT/pa capacity",
+   "summary": "Interarch has inaugurated Phase 1 of its heavy structural steel manufacturing facility in Attivaram, Andhra Pradesh, featuring an initial capacity of 24,000 MT per annum. The new plant expands the company's portfolio beyond conventional PEB applications into complex, high-performance structural steel for high-growth sectors. Civil works for Phase 2 at the site are currently underway.",
+   "url": "https://nsearchives.nseindia.com/corporate/INTERARCH1983_24092026152418_PressReleaseUnderReg30.pdf"
+  },
+  {
+   "company": "OnEMI Technology",
+   "sector": "Finance",
+   "date": "2026-09-24",
+   "category": "Strategy",
+   "tone": "info",
+   "headline": "Shareholders approve alteration of MOA object clause",
+   "summary": "At the 10th Annual General Meeting, shareholders passed all resolutions with the requisite majority. Notably, this included a special resolution to alter the object clause of the company's Memorandum of Association, which clears the way for potential changes or expansions to its permitted business activities.",
+   "url": "https://nsearchives.nseindia.com/corporate/ONEMI_24092026151613_Votingresultsintimationupload.pdf"
+  },
+  {
+   "company": "Pine Labs",
+   "sector": "Platform Cos",
+   "date": "2026-09-24",
+   "category": "Strategy",
+   "tone": "good",
+   "headline": "Pine Labs partners with Google Cloud for AI-driven agentic commerce",
+   "summary": "Pine Labs has announced a strategic collaboration with Google Cloud to develop next-generation agentic commerce products for Indian merchants. The partnership will leverage Google's Gemini AI to create a unified ecosystem bridging merchant operations, customer engagement, and payment infrastructure.",
+   "url": "https://nsearchives.nseindia.com/corporate/PINELABS_24092026132822_PR_PLL_new.pdf"
+  },
+  {
+   "company": "JNK",
+   "sector": "Industrial Manufacturing",
+   "date": "2026-09-24",
+   "category": "Credit rating",
+   "tone": "good",
+   "headline": "CRISIL upgrades outlook to Stable and reaffirms ratings on ₹604cr bank facilities",
+   "summary": "CRISIL has reaffirmed the company's long-term and short-term ratings at A- and A2+, while upgrading the outlook from 'Negative' to 'Stable'. The total rated bank loan facilities were also enhanced from ₹457 crore to ₹604 crore.",
+   "url": "https://nsearchives.nseindia.com/corporate/JNKINDIA23_24092026130742_JNK_Reg_30_Disclosure_Revision_of_Credit_rating.pdf"
+  },
+  {
+   "company": "Arkade",
+   "sector": "Realty",
+   "date": "2026-09-24",
+   "category": "Business update",
+   "tone": "good",
+   "headline": "Upcoming project GDV hits ₹18,000cr; FY26 pre-sales reach ₹901cr",
+   "summary": "Arkade Developers provided a business update marking two years since its IPO. The company's upcoming project gross development value (GDV) has surged 500% to ₹18,000 crore. Additionally, FY26 pre-sales reached ₹901 crore and recent land acquisitions in Goregaon and Thane totalled approximately ₹530 crore.",
+   "url": "https://nsearchives.nseindia.com/corporate/ARKADE_24092026130842_Press_Release.pdf"
+  },
+  {
+   "company": "H.G. Infra Engg.",
+   "sector": "Construction",
+   "date": "2026-09-24",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Completion certificate received for ₹1393cr highway project in Delhi",
+   "summary": "H.G. Infra Engineering has received the completion certificate from NHAI for a ₹1393.11 crore highway project in Delhi. The 6-lane Urban Extension Road package has been declared fit for commercial operation. This completed project represents nearly 29% of the company's annual sales, marking a significant execution milestone.",
+   "url": "https://nsearchives.nseindia.com/corporate/HGINFRA_24092026125831_FinalIntimation.pdf"
+  },
+  {
+   "company": "Aether Industries",
+   "sector": "Pharma CDMO",
+   "date": "2026-09-24",
+   "category": "Credit rating",
+   "tone": "good",
+   "headline": "Crisil assigns upgraded AA- and A1+ ratings for ₹636cr bank facilities",
+   "summary": "Crisil has assigned long-term and short-term credit ratings of AA- (Stable) and A1+ for the company's ₹636 crore bank facilities. This represents an upgrade from the previous ratings of ICRA A+ and ICRA A1, reflecting an improved credit profile.",
+   "url": "https://nsearchives.nseindia.com/corporate/AETHER_24092026114049_35.pdf"
+  },
+  {
+   "company": "Whirlpool India",
+   "sector": "Consumer Durables",
+   "date": "2026-09-24",
+   "category": "Ownership change",
+   "tone": "info",
+   "headline": "Promoter exploring sale of its stake in a potential control transaction",
+   "summary": "Whirlpool India clarified news reports regarding its promoter selling its entire stake, which had caused shares to surge 17%. The company confirmed receiving communication that promoter Whirlpool Mauritius intends to sell its shares in a control transaction and is currently exploring this with multiple potential counterparties. Whirlpool India noted it is not a party to these negotiations.",
+   "url": "https://nsearchives.nseindia.com/corporate/llogesh_24092026113320_SE_intimation_marketrumour_signed.pdf"
+  },
+  {
+   "company": "Kalpataru Proj.",
+   "sector": "Construction - Power",
+   "date": "2026-09-24",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Secures new orders worth ₹2,025 crore across business segments",
+   "summary": "Kalpataru Projects has secured new orders worth ₹2,025 crore across its power transmission, buildings, and oil and gas businesses. The contract wins equate to about 7.4% of trailing 12-month sales, bringing the company's year-to-date order intake to ₹13,219 crore.",
+   "url": "https://nsearchives.nseindia.com/corporate/KALPATPOWR_24092026084832_SEIntimationPR24092026.pdf"
+  },
+  {
+   "company": "Landmark Cars",
+   "sector": "Retail",
+   "date": "2026-09-24",
+   "category": "Strategy",
+   "tone": "good",
+   "headline": "Landmark Cars partners with OLX India for pre-owned car platform",
+   "summary": "Landmark Cars has entered a strategic partnership with OLX India to create an integrated pre-owned car platform. Under the revenue-sharing agreement, OLX will manage the online customer journey while Landmark's 140+ retail outlets will serve as physical experience centres for vehicle inspections and handovers. This alliance enables the company to significantly scale its used-car operations by tapping into OLX's 23 million annual users.",
+   "url": "https://nsearchives.nseindia.com/corporate/LANDMARK_24092026083226_PressReleaseOLX.pdf"
+  },
+  {
+   "company": "Cartrade Tech",
+   "sector": "Platform Cos",
+   "date": "2026-09-24",
+   "category": "Strategy",
+   "tone": "good",
+   "headline": "OLX India partners with Landmark Cars for phygital used-car platform",
+   "summary": "CarTrade Tech's platform OLX India has formed a strategic partnership with premium auto retailer Landmark Cars to build a physical-digital pre-owned car platform. The tie-up integrates Landmark's network of over 140 physical touchpoints with OLX's digital reach of 23 million annual users. Vehicles will be acquired and sold on a revenue-sharing basis, initially launching in select cities before a pan-India rollout.",
+   "url": "https://nsearchives.nseindia.com/corporate/CARTRADE_24092026080817_CarTrade_-_Landmark.pdf"
   },
   {
    "company": "Avantel",
@@ -254,6 +564,246 @@
    "sector": "Aerospace defence"
   },
   {
+   "company": "Anupam Rasayan",
+   "sector": "Chemicals",
+   "date": "2026-09-23",
+   "category": "Debt",
+   "tone": "watch",
+   "headline": "Pledges shares and gives corporate guarantee for ₹300cr subsidiary debt",
+   "summary": "Anupam Rasayan has pledged its 100% stake in subsidiary Mates Visa Consultancy and a 15% stake in Purebliss Pharma Solutions to secure up to ₹300 crore in non-convertible debentures issued by the subsidiary. The company has also provided an unconditional corporate guarantee for the debt, the proceeds of which will be used to acquire securities of Bliss GVS Pharma.",
+   "url": "https://nsearchives.nseindia.com/corporate/ANURAS_23092026235444_ARILSLDSTX20260923063Regulation30Disclosure.pdf"
+  },
+  {
+   "company": "Borosil",
+   "sector": "Consumer Durables",
+   "date": "2026-09-23",
+   "category": "Operations",
+   "tone": "watch",
+   "headline": "Commercial production from third double-wall line delayed to Jan 2027",
+   "summary": "Borosil announced a delay in commencing commercial production from the third double-wall line at its wholly owned subsidiary, Stylenest India Limited. Originally expected in Q2 FY27, production is now slated for January 2027. The delay is attributed to supply-chain constraints for equipment imported from China and scheduling issues with the supplier's technical personnel.",
+   "url": "https://nsearchives.nseindia.com/corporate/BOROSIL_23092026215211_SE_Intimation.pdf"
+  },
+  {
+   "company": "Clean Science",
+   "sector": "Chemicals",
+   "date": "2026-09-23",
+   "category": "Regulatory",
+   "tone": "watch",
+   "headline": "GST search and seizure proceedings initiated at company premises",
+   "summary": "The Maharashtra GST department initiated search and seizure proceedings at the registered office and manufacturing units of the company and its subsidiary, Clean Fino Chem, on September 23, 2026. While the company states there is currently no material impact on operations or financials, the action poses a potential risk of future tax demands or penalties.",
+   "url": "https://nsearchives.nseindia.com/corporate/CLEAN_23092026204111_Intimation_of_Search_seizure_23092026.pdf"
+  },
+  {
+   "company": "Hexagon Nutrition",
+   "sector": "Pharma Others",
+   "date": "2026-09-23",
+   "category": "Governance",
+   "tone": "watch",
+   "headline": "Promoters abstain from voting on resolutions; company seeks legal opinion",
+   "summary": "Hexagon Nutrition disclosed that its promoter shareholders abstained from voting on certain undisclosed resolutions. The company is now seeking an independent legal opinion to determine the appropriate course of action. This unusual governance development warrants monitoring by investors.",
+   "url": "https://nsearchives.nseindia.com/corporate/HEXAGONNUTRITION_23092026200007_HNL-_AGM-Explanatory.pdf"
+  },
+  {
+   "company": "Ola Electric",
+   "sector": "Vehicles",
+   "date": "2026-09-23",
+   "category": "Fund-raise",
+   "tone": "info",
+   "headline": "Seeking Board approval for rights issue of equity shares",
+   "summary": "Ola Electric is seeking Board approval for a proposed rights issue of equity shares to allow participation by all eligible shareholders. The exact issue size, price, and dilution details have not been disclosed in this filing.",
+   "url": "https://nsearchives.nseindia.com/corporate/OLAELECTRIC_23092026192603_Intimation_Press_Release_Ola_Electric.pdf"
+  },
+  {
+   "company": "AGI Greenpac",
+   "sector": "Packaging",
+   "date": "2026-09-23",
+   "category": "Management change",
+   "tone": "info",
+   "headline": "Shareholders approve appointment of Shashvat Somany as Joint MD",
+   "summary": "Shareholders at the AGM have approved the appointment of Mr. Shashvat Somany as Director and Joint Managing Director of the company. The appointment is effective from October 1, 2026.",
+   "url": "https://nsearchives.nseindia.com/corporate/HSIL_23092026190447_Regulation30.pdf"
+  },
+  {
+   "company": "Max Estates",
+   "sector": "Realty",
+   "date": "2026-09-23",
+   "category": "Joint venture",
+   "tone": "good",
+   "headline": "Signs MoU for Ghaziabad joint development project with ₹2,500-3,000cr GDV potential",
+   "summary": "Max Estates has signed a binding Memorandum of Understanding for a Joint Development Agreement for a 9.76-acre land parcel in Ghaziabad. The capital-light, revenue-sharing project offers 1.5 million sq. ft. of development potential and an estimated Gross Development Value of ₹2,500-3,000 crore. This marks the company's entry into Ghaziabad and is highly material compared to its ₹200 crore trailing twelve-month sales.",
+   "url": "https://nsearchives.nseindia.com/corporate/MEL_23092026185742_20260923PressRelease.pdf"
+  },
+  {
+   "company": "Aarti Pharmalabs",
+   "sector": "Pharma CDMO",
+   "date": "2026-09-23",
+   "category": "Management change",
+   "tone": "info",
+   "headline": "Rashesh Gogri appointed MD; Hetal Gogri Gala transitions to WTD",
+   "summary": "Smt. Hetal Gogri Gala will transition from Managing Director to Whole-time Director effective October 1, 2026. Concurrently, Shri Rashesh C. Gogri will assume the role of Managing Director. Additionally, Shri Rajendra Gogri has stepped down as a Non-Executive Director following the recent AGM.",
+   "url": "https://nsearchives.nseindia.com/corporate/AARTIPHARMA_23092026185218_SE_Intimation_Updatessigned.pdf"
+  },
+  {
+   "company": "Rainbow Children's Medicare",
+   "sector": "Hospitals",
+   "date": "2026-09-23",
+   "category": "Management change",
+   "tone": "info",
+   "headline": "Sudarshan Patodia appointed as Group Chief Financial Officer",
+   "summary": "Rainbow Children's Medicare has appointed Mr. Sudarshan Patodia as Chief Financial Officer and Group CFO, effective September 23, 2026. He is a Chartered Accountant with nearly two decades of experience, having previously served as CFO at Centre for Sight.",
+   "url": "https://nsearchives.nseindia.com/corporate/RAINBOWUSER_23092026184312_Intimation.pdf"
+  },
+  {
+   "company": "Pitti Engineering",
+   "sector": "Industrial Manufacturing",
+   "date": "2026-09-23",
+   "category": "Merger",
+   "tone": "info",
+   "headline": "Merger of Pitti Industries and Dakshin Foundry into company becomes effective",
+   "summary": "Pitti Engineering announced that the scheme of amalgamation of Pitti Industries Private Limited and Dakshin Foundry Private Limited into the company became effective on September 23, 2026. The appointed date for the merger is April 1, 2026. Consequently, the authorized share capital of the company has been combined and increased to ₹196.89 crore.",
+   "url": "https://nsearchives.nseindia.com/corporate/PITTIENG_23092026173410_Effectivenessofscheme.pdf"
+  },
+  {
+   "company": "Fractal Analytics",
+   "sector": "Software",
+   "date": "2026-09-23",
+   "category": "Management change",
+   "tone": "watch",
+   "headline": "CCO and Cogentiq CEO Matthew Gennone resigns effective October 2",
+   "summary": "Mr. Matthew Gennone has resigned as Chief Commercial Officer and CEO of Cogentiq to pursue a CEO opportunity at another organization. He will step down at the close of business on October 2, 2026. The Cogentiq team will report to Srikanth Velamakanni on an interim basis while commercial responsibilities are distributed across business units.",
+   "url": "https://nsearchives.nseindia.com/corporate/FRACTAL_23092026172004_SE_Intimation_SMP_resignation.pdf"
+  },
+  {
+   "company": "Concord Biotech",
+   "sector": "Pharma API",
+   "date": "2026-09-23",
+   "category": "Bonus issue",
+   "tone": "info",
+   "headline": "Board approves 1:1 bonus share issue",
+   "summary": "The board has approved a 1:1 bonus issue, granting one free equity share for every share held. This creates 100% more shares, increasing the total from 10.46 crore to 20.92 crore, but results in 0% dilution to existing holders. The shares are issued at nil cost by capitalizing ₹10.46 crore from the share premium account.",
+   "url": "https://nsearchives.nseindia.com/corporate/CONCORD_23092026171254_OutcomeofBM23092026.pdf"
+  },
+  {
+   "company": "GHCL",
+   "sector": "Chemicals",
+   "date": "2026-09-23",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Declared preferred bidder for limestone mine block with 5.67 lakh MT reserve in Gujarat",
+   "summary": "GHCL has been declared the preferred bidder in an e-auction for a composite license for the Kadaya limestone block in Gujarat. The mining block spans 6.8797 hectares and holds an estimated 5,67,337 metric tonnes of limestone reserves. The company must submit a performance security within 45 days to receive the formal Letter of Intent, securing a vital raw material source for its chemical operations.",
+   "url": "https://nsearchives.nseindia.com/corporate/GHCL_23092026165707_GHCL_Intimation_Preferred_Bidder_MininingLease_September2026.pdf"
+  },
+  {
+   "company": "Kiri Industries",
+   "sector": "Chemicals",
+   "date": "2026-09-23",
+   "category": "Fund-raise",
+   "tone": "info",
+   "headline": "Valuation sets preferential warrant issue price at ₹422.93",
+   "summary": "Kiri Industries issued a corrigendum to its AGM notice regarding a proposed preferential issue of convertible warrants. A newly required valuation report has priced the warrants at ₹422.93 each, which is a discount to the current market price of ₹558. The filing notes the issue will account for over 5% of the post-issue fully diluted share capital, though exact warrant numbers were not disclosed in this document.",
+   "url": "https://nsearchives.nseindia.com/corporate/KIRIINDUS_23092026162114_KILCorrigendumtoSE23092026_S.pdf"
+  },
+  {
+   "company": "Exide Industries",
+   "sector": "Auto Related",
+   "date": "2026-09-23",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Subsidiary commissions Phase-I of 6 GWh lithium-ion cell facility in Bengaluru",
+   "summary": "Exide's material subsidiary, Exide Energy Solutions Limited, successfully commissioned Phase-I of its lithium-ion cell manufacturing facility on September 23, 2026. The Bengaluru-based plant has a capacity of 6 GWh and will produce advanced lithium-ion cells across multiple chemistries for mobility and energy storage applications.",
+   "url": "https://nsearchives.nseindia.com/corporate/EXIDEIND_23092026161655_sdREG30_EESL.pdf"
+  },
+  {
+   "company": "Kross",
+   "sector": "Auto Related",
+   "date": "2026-09-23",
+   "category": "Fund-raise",
+   "tone": "info",
+   "headline": "Corrigendum details preferential issue of 15 lakh shares and 15 lakh warrants",
+   "summary": "Kross has issued a corrigendum to its postal ballot regarding a preferential allotment of 15 lakh equity shares and 15 lakh convertible warrants to promoters and non-promoters. Assuming full conversion, the 30 lakh new shares will expand the outstanding share base by 4.65%, diluting existing shareholders by 4.4%.",
+   "url": "https://nsearchives.nseindia.com/corporate/8910457293_23092026142114_Reg_30_Corrigendum_PB.pdf"
+  },
+  {
+   "company": "Tega Industries",
+   "sector": "Industrial Manufacturing",
+   "date": "2026-09-23",
+   "category": "Regulatory",
+   "tone": "good",
+   "headline": "Canadian tribunal rules in favour of subsidiary, imposing duties on Chinese imports",
+   "summary": "The Canadian International Trade Tribunal has ruled that dumped and subsidized Chinese forged grinding media threaten the domestic industry. Anti-dumping and countervailing duties will now be collected by Canadian authorities, which Tega expects to positively impact the business prospects of its indirect subsidiary, Moly-Cop Canada.",
+   "url": "https://nsearchives.nseindia.com/corporate/TEGA_23092026140140_Intimation_Reg_30_anti_dumping_sd.pdf"
+  },
+  {
+   "company": "Tega Industries",
+   "sector": "Industrial Manufacturing",
+   "date": "2026-09-23",
+   "category": "Fund-raise",
+   "tone": "info",
+   "headline": "Shareholders approve fund-raise via preferential issue",
+   "summary": "Shareholders have approved a special resolution to raise funds through a preferential issue on a private placement basis. The filing does not disclose the amount to be raised, the issue price, or the number of shares to be issued to calculate dilution.",
+   "url": "https://nsearchives.nseindia.com/corporate/TEGA_23092026135844_Intimation_of_Postal_Ballot_Result_sd.pdf"
+  },
+  {
+   "company": "Intellect Design Arena",
+   "sector": "Software",
+   "date": "2026-09-23",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Cargills Bank expands partnership, upgrades to Intellect's eMACH.ai platform",
+   "summary": "Intellect Design Arena has expanded its strategic partnership with Sri Lanka's Cargills Bank. The bank has chosen to upgrade to Intellect's Composable eMACH.ai platform across core banking, lending, trade finance, and treasury. The financial value of the contract was not disclosed.",
+   "url": "https://nsearchives.nseindia.com/corporate/INTELLECT_23092026131740_PressRelease23092026signed.pdf"
+  },
+  {
+   "company": "Oswal Pumps",
+   "sector": "Pumps Comp & Eng",
+   "date": "2026-09-23",
+   "category": "Credit rating",
+   "tone": "watch",
+   "headline": "ICRA revises credit rating outlook to Negative on rising receivables",
+   "summary": "ICRA has reaffirmed Oswal Pumps' long-term credit rating at ICRA A+ but revised its outlook from stable to negative. The agency cited a substantial build-up in receivables and moderating profitability due to rising input costs and increased competition. The rating outlook for its material subsidiary, Oswal Solar Energy, was similarly revised to negative.",
+   "url": "https://nsearchives.nseindia.com/corporate/OSWALPUMPS_23092026115523_SELetterICRACreditRatingOPL23092026.pdf"
+  },
+  {
+   "company": "Supriya Lifescience",
+   "sector": "Pharma API",
+   "date": "2026-09-23",
+   "category": "Legal",
+   "tone": "watch",
+   "headline": "Court allows release of seized API for ₹72L deposit; criminal proceedings continue",
+   "summary": "The Bombay High Court has allowed the provisional release of a 200 kg consignment of Ketamine Hydrochloride, subject to a ₹72 lakh deposit. However, the court clarified that authorities may continue adjudication and criminal proceedings under the NDPS Act, highlighting ongoing regulatory risks.",
+   "url": "https://nsearchives.nseindia.com/corporate/SUPRIYA_23092026113122_DisclosureunderReg230926.pdf"
+  },
+  {
+   "company": "Skipper",
+   "sector": "Construction - Power",
+   "date": "2026-09-23",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Order wins worth ₹797 crore for domestic and international T&D projects",
+   "summary": "Skipper Limited has secured new orders aggregating to ₹797 crore for domestic and international Power T&D projects, including export orders to Australia. This substantial win represents about 14% of the company's trailing 12-month sales and strengthens its high-voltage transmission infrastructure portfolio.",
+   "url": "https://nsearchives.nseindia.com/corporate/skipper_23092026104600_Press_ReleaseOrder.pdf"
+  },
+  {
+   "company": "Garware Hi-Tech",
+   "sector": "Plastics",
+   "date": "2026-09-23",
+   "category": "Strategy",
+   "tone": "good",
+   "headline": "Signs MoU with Lubrizol for TPU films; announces ₹118cr capex",
+   "summary": "Garware Hi-Tech Films has signed an MoU with Lubrizol to develop and manufacture TPU-based film solutions in India. The company will invest ₹118 crore (about 5.2% of yearly sales) in advanced TPU film extrusion capabilities, expected to be operational by December 2026. The backward integration will expand PPF capacity and is projected to improve consolidated EBITDA margins by 150-200 basis points.",
+   "url": "https://nsearchives.nseindia.com/corporate/GRWRHITECH_23092026102246_Reg_-_30_-_Press_Release.pdf"
+  },
+  {
+   "company": "Oswal Pumps",
+   "sector": "Pumps Comp & Eng",
+   "date": "2026-09-23",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Wins ₹297.5cr order for 46.7 MW rooftop solar project in Telangana",
+   "summary": "Oswal Pumps has secured a ₹297.5 crore (including GST) order from TGREDCO to install 46.7 MW of rooftop solar capacity across 9,937 government schools in Telangana. The project must be completed within 180 days and represents about 14% of trailing 12-month sales, marking the company's entry into the state.",
+   "url": "https://nsearchives.nseindia.com/corporate/OSWALPUMPS_23092026085715_SELetterTREDCLOrderOPL23092026.pdf"
+  },
+  {
    "company": "AXISCADES Technologies",
    "date": "2026-09-22",
    "category": "New subsidiary",
@@ -282,6 +832,386 @@
    "summary": "Shareholders will vote on 15 October on issuing 25.73 lakh new shares at ₹1,166 each, about ₹300cr, on a preferential basis. That adds about 6.8% to the roughly 3.79 crore shares in issue, so existing holders are diluted by about 6.4%, and the price is about 17% below the recent share price of about ₹1,400.",
    "url": "https://nsearchives.nseindia.com/corporate/9886945009_22092026160309_EGM_notice.pdf",
    "sector": "Aerospace defence"
+  },
+  {
+   "company": "Kirloskar Oil",
+   "sector": "Pumps Comp & Eng",
+   "date": "2026-09-22",
+   "category": "Governance",
+   "tone": "watch",
+   "headline": "Shareholders reject special resolution to increase ESOP pool",
+   "summary": "A special resolution to increase the employee stock option grant pool by 100,000 options to 1.5 million was defeated in a postal ballot. The proposal received 70.35% votes in favour, falling short of the 75% majority required to pass.",
+   "url": "https://nsearchives.nseindia.com/corporate/KIRLOSENG_22092026232234_SE_PostalBallotresults_Sept26.pdf"
+  },
+  {
+   "company": "Yatharth Hospital",
+   "sector": "Hospitals",
+   "date": "2026-09-22",
+   "category": "Fund-raise",
+   "tone": "info",
+   "headline": "EGM called to approve preferential issue of equity shares and warrants",
+   "summary": "Yatharth Hospital has called an EGM on October 15, 2026, to approve a preferential issue of equity shares and warrants to an investor. To accommodate the allotment, the authorized share capital will be increased by 3.5 crore shares, which represents a maximum of 36.3% more shares and up to 26.7% potential dilution to existing holders. The exact issue size and pricing are not detailed in the provided excerpt.",
+   "url": "https://nsearchives.nseindia.com/corporate/YATHARTH_22092026212546_NoticeEGM.pdf"
+  },
+  {
+   "company": "Orchid Pharma",
+   "sector": "Pharma",
+   "date": "2026-09-22",
+   "category": "Acquisition",
+   "tone": "info",
+   "headline": "Purchases previously leased land in Tamil Nadu, ending DBS Bank arrangement",
+   "summary": "Orchid Pharma has purchased previously leased land in Patibulum Village, Tamil Nadu. The acquisition concludes the erstwhile lease arrangement and ends DBS Bank's rights to the property, resolving a prior dispute. The transaction provides the company with full ownership clarity, though the purchase value was not disclosed.",
+   "url": "https://nsearchives.nseindia.com/corporate/ORCHPHARMA_22092026211150_Stx_Ltr_sd.pdf"
+  },
+  {
+   "company": "Arvind SmartSpaces",
+   "sector": "Realty",
+   "date": "2026-09-22",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Records ₹500+ crore bookings in 30 days at new Bengaluru project",
+   "summary": "Arvind SmartSpaces announced bookings of over ₹500 crore at its new premium residential project, Arvind Sylva, in Bengaluru within 30 days of launch. This represents about 60% of the project's ₹860 crore revenue potential, a highly significant figure compared to the company's trailing annual sales of ₹780 crore.",
+   "url": "https://nsearchives.nseindia.com/corporate/539301_22092026203811_MediaRelease22092026.pdf"
+  },
+  {
+   "company": "Aarti Pharmalabs",
+   "sector": "Pharma CDMO",
+   "date": "2026-09-22",
+   "category": "Strategy",
+   "tone": "good",
+   "headline": "Targets 15-18% revenue and EBITDA CAGR over 3-4 years",
+   "summary": "The company outlined its growth outlook at the AGM, targeting a 15-18% CAGR for revenue and EBITDA over the next 3-4 years. It also guided for FY27 capex of around ₹400 crore and announced upcoming capex for Atali Block 2 for specific CDMO/CMO projects.",
+   "url": "https://nsearchives.nseindia.com/corporate/AARTIPHARMA_22092026181609_APL_Shareholders_PPT_AGM_SE_7thSD.pdf"
+  },
+  {
+   "company": "Digitide Solutions",
+   "sector": "Software",
+   "date": "2026-09-22",
+   "category": "Management change",
+   "tone": "watch",
+   "headline": "Chief Revenue & Growth Officer Saket Bhatnagar resigns",
+   "summary": "Saket Bhatnagar has resigned as Chief Revenue & Growth Officer, effective September 21, 2026, to pursue opportunities outside the organization. Investors should monitor the departure of a key executive responsible for revenue growth.",
+   "url": "https://nsearchives.nseindia.com/corporate/DIGITIDE_22092026180358_Digitide_SE_Intimation_for_Resignation_of_SMP.pdf"
+  },
+  {
+   "company": "TeamLease Services",
+   "sector": "Commercial Services",
+   "date": "2026-09-22",
+   "category": "Disposal",
+   "tone": "info",
+   "headline": "Completes exit from joint venture Crystal HR via stake sale and buyback",
+   "summary": "TeamLease Services has completed the divestment of its entire 30% stake (3,000 equity shares) in joint venture Crystal HR and Security Solutions. The exit was executed by transferring 1,800 shares to a JV promoter and tendering the remaining 1,200 shares for a buyback by the JV.",
+   "url": "https://nsearchives.nseindia.com/corporate/TEAMLEASE_22092026162654_TeamLeaseIntimationonExtinguishmentofCrystalSecurities.pdf"
+  },
+  {
+   "company": "Tega Industries",
+   "sector": "Industrial Manufacturing",
+   "date": "2026-09-22",
+   "category": "Governance",
+   "tone": "watch",
+   "headline": "Shareholders approve multiple related-party deals and subsidiary pledges",
+   "summary": "Shareholders have approved 18 material related-party transactions among various step-down subsidiaries through a postal ballot. They also approved the creation of pledges or security interests over the shares and assets of the company's material subsidiaries.",
+   "url": "https://nsearchives.nseindia.com/corporate/TEGA_22092026155318_Intimation_of_Results_Postal_Ballot_sd.pdf"
+  },
+  {
+   "company": "Solex Energy",
+   "sector": "Solar PV Cells EPC",
+   "date": "2026-09-22",
+   "category": "Strategy",
+   "tone": "good",
+   "headline": "Targets ₹4,500cr revenue by FY28; announces ₹4,000cr capex plan",
+   "summary": "Solex Energy outlined a major growth strategy at its AGM, targeting ₹4,500 crore in revenue by FY28. The company plans to invest ₹4,000 crore by FY30 to build up to 5.2 GW of solar cell and 10 GWh of battery storage capacities. It also highlighted current order visibility exceeding ₹3,400 crore, which is more than double its recent annual sales.",
+   "url": "https://nsearchives.nseindia.com/corporate/SOLEX_22092026153521_Press_Release.pdf"
+  },
+  {
+   "company": "Borosil",
+   "sector": "Consumer Durables",
+   "date": "2026-09-22",
+   "category": "Strategy",
+   "tone": "info",
+   "headline": "Scraps ₹42cr direct capex plan, shifts Bharuch facility to BSL",
+   "summary": "Borosil has cancelled its plan to directly invest ₹42 crore in a new glassware manufacturing facility at Bharuch, Gujarat. Instead, the facility will be funded and set up by Borosil Scientific Limited (BSL). Borosil will now meet its long-term product needs through its existing manufacturing arrangement with BSL.",
+   "url": "https://nsearchives.nseindia.com/corporate/BOROSIL_22092026142900_SEIntimation.pdf"
+  },
+  {
+   "company": "Rites",
+   "sector": "Construction",
+   "date": "2026-09-22",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Upward revision of South Central Railway order to ₹154.65cr",
+   "summary": "RITES has announced an upward revision for an ongoing railway electrification project with South Central Railway, originally awarded in 2020. The total project cost has increased from ₹97.96 crore to ₹154.65 crore. The revised total order value represents approximately 6.3% of the company's trailing 12-month sales.",
+   "url": "https://nsearchives.nseindia.com/corporate/RITES_22092026141041_IntimationSigned22092026.pdf"
+  },
+  {
+   "company": "Ceigall India",
+   "sector": "Construction",
+   "date": "2026-09-22",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Commissions additional 5 MW solar power capacity in Maharashtra",
+   "summary": "Ceigall Green Energy MH2 Limited, a wholly-owned subsidiary, has successfully commissioned an additional 5 MW solar power plant in Maharashtra. This brings its operational capacity to 10 MW out of a total planned 147 MW project. The commissioning was achieved ahead of schedule, making the project eligible for early-commissioning incentives, with power being sold to MSEDCL.",
+   "url": "https://nsearchives.nseindia.com/corporate/ceigall_22092026123035_Intimation.pdf"
+  },
+  {
+   "company": "Borosil Renewables",
+   "sector": "Industrial Products",
+   "date": "2026-09-22",
+   "category": "Operations",
+   "tone": "watch",
+   "headline": "600 TPD capacity expansion delayed to Mar 2027; cost rises by ₹150cr to ₹1100cr",
+   "summary": "Borosil Renewables has delayed the commissioning of its 600 TPD capacity expansion at Bharuch from December 2026 to March 2027 due to supply chain disruptions. The project's estimated cost has also increased by ₹150 crores to ₹1,100 crores, which will be funded through internal accruals. Once completed, total installed capacity will rise from 1,000 TPD to 1,600 TPD.",
+   "url": "https://nsearchives.nseindia.com/corporate/BORORENEW12_22092026120903_OUTCOME_1_-_revised.pdf"
+  },
+  {
+   "company": "Syrma SGS Tech.",
+   "sector": "EMS & Electronics",
+   "date": "2026-09-22",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Subsidiary inaugurates 120,000 sq ft MedTech manufacturing facility in Jodhpur",
+   "summary": "Syrma Johari MedTech, a subsidiary of the company, has inaugurated a new Medical Plastics and Precision Molding Facility in Jodhpur. The new 120,000+ sq. ft. plant will manufacture precision medical components, expanding the group's global MedTech manufacturing capabilities.",
+   "url": "https://nsearchives.nseindia.com/corporate/SYRMASGS_22092026120309_DisclosureSJMLInauguration.pdf"
+  },
+  {
+   "company": "Stylam Industrie",
+   "sector": "Consumer Durables",
+   "date": "2026-09-22",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Starts production at new laminate plant adding 60,000 tonnes annual capacity",
+   "summary": "Stylam Industries has commenced commercial production at its new laminate plant in Manak Tabra, Haryana. The ₹300 crore facility adds 5.25 crore square meters (60,000 tonnes) of annual capacity, significantly expanding its existing capacity of 8.60 crore square meters. The expansion was financed entirely through internal accruals.",
+   "url": "https://nsearchives.nseindia.com/corporate/STYLAMIND_22092026104225_Intimation_for_commencement.pdf"
+  },
+  {
+   "company": "Puravankara",
+   "sector": "Realty",
+   "date": "2026-09-22",
+   "category": "Acquisition",
+   "tone": "good",
+   "headline": "Enters Delhi-NCR market, securing 13.44-acre land with ₹5,200cr GDV potential",
+   "summary": "Puravankara has entered the Delhi-NCR real estate market by securing a 13.44-acre land parcel in Greater Noida. The site offers a saleable potential of 4.57 million sq ft and an estimated gross development value (GDV) of ₹5,200 crore. This major expansion is highly material, as the project's potential GDV exceeds the company's trailing 12-month sales of ₹4,064 crore.",
+   "url": "https://nsearchives.nseindia.com/corporate/PURVA_22092026091214_SEintimation.pdf"
+  },
+  {
+   "company": "Beta Drugs",
+   "sector": "Pharma",
+   "date": "2026-09-22",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Receives regulatory approvals to enter Azerbaijan oncology market",
+   "summary": "Beta Drugs has received regulatory approvals for its oncology portfolio in Azerbaijan across multiple dosage forms. The company has already filed 15 product dossiers and expects to file another 15 within a month. This expansion aims to build its international presence, with commercialization expected during the current financial year.",
+   "url": "https://nsearchives.nseindia.com/corporate/BETA_22092026084934_update.pdf"
+  },
+  {
+   "company": "Sterling and Wilson",
+   "sector": "Construction",
+   "date": "2026-09-22",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Secures solar and energy storage EPC orders totaling approximately ₹985 crore",
+   "summary": "Sterling and Wilson Renewable Energy has won two orders totaling approximately ₹985 crore, which is equivalent to about 13% of its annual sales. The awards include a 534.3 MWp solar project in Rajasthan for a new client and a 616 MWh turnkey energy storage project in South Africa.",
+   "url": "https://nsearchives.nseindia.com/corporate/SWSOLAR_22092026082702_SE_PRESSRELEASE_signed.pdf"
+  },
+  {
+   "company": "Welspun Enterp",
+   "sector": "Construction",
+   "date": "2026-09-21",
+   "category": "Credit rating",
+   "tone": "good",
+   "headline": "CRISIL upgrades long-term credit rating to AA/Stable",
+   "summary": "CRISIL has upgraded Welspun Enterprises' long-term credit rating to AA/Stable from AA-/Positive for its Rs. 2,600 crore bank loan facilities. Ratings for material subsidiaries Welspun Michigan Engineers and Welspun EDAC JV were also upgraded. This reflects an improvement in the company's credit profile and could lead to lower borrowing costs.",
+   "url": "https://nsearchives.nseindia.com/corporate/WELENT_21092026232838_Final.pdf"
+  },
+  {
+   "company": "Lemon Tree Hotels",
+   "sector": "Hotels and Travels",
+   "date": "2026-09-21",
+   "category": "Management change",
+   "tone": "info",
+   "headline": "Founder Patanjali Keswani to transition to Non-Executive Chairman in 2027",
+   "summary": "Shareholders have approved the appointment of founder Patanjali Govind Keswani as Chairman and Non-Executive Director, effective April 1, 2027. He will step down from his executive responsibilities at the end of his current 18-month tenure as Executive Chairman to ensure leadership continuity.",
+   "url": "https://nsearchives.nseindia.com/corporate/LEMONTREE_21092026211939_Intimation.pdf"
+  },
+  {
+   "company": "Godrej Agrovet",
+   "sector": "Food Products",
+   "date": "2026-09-21",
+   "category": "Management change",
+   "tone": "watch",
+   "headline": "Crop Care Business CEO Rajavelu N.K. resigns; Sivaram Yadavalli named interim CEO",
+   "summary": "Mr. Rajavelu N.K. has resigned as the Chief Executive Officer of the Crop Care Business to pursue an external opportunity, effective November 24, 2026. Mr. Sivaram Yadavalli, currently Head of Strategy & Business Development, will take on the additional role of interim CEO for the segment starting November 25, 2026.",
+   "url": "https://nsearchives.nseindia.com/corporate/GODREJAGRO_21092026211837_BSENSESMPCHANGES21092026.pdf"
+  },
+  {
+   "company": "Wheels India",
+   "sector": "Auto Related",
+   "date": "2026-09-21",
+   "category": "Fund-raise",
+   "tone": "info",
+   "headline": "Allots 12.32 lakh shares at ₹1,461 each to raise ₹180cr via preferential issue",
+   "summary": "Wheels India has allotted 12.32 lakh equity shares on a preferential basis to investors including TSF Investments and promoter group members, raising ₹180 crore. The issue price of ₹1,461 is at a significant discount to the current market price of ₹2,296. The allotment adds 5.0% more shares to the pre-issue base of 2.44 crore, resulting in a 4.8% dilution for existing shareholders.",
+   "url": "https://nsearchives.nseindia.com/corporate/WHEELS_21092026190949_WILReg3021092026.pdf"
+  },
+  {
+   "company": "Aarti Industries",
+   "sector": "Chemicals",
+   "date": "2026-09-21",
+   "category": "Management change",
+   "tone": "info",
+   "headline": "Promoters transition to non-executive roles; Suyog Kotecha named MD & CEO",
+   "summary": "Promoters Rajendra V. Gogri, Rashesh C. Gogri, and Renil R. Gogri will transition to non-executive board roles from October 1, 2026. Suyog Kotecha will assume the role of Managing Director and CEO for a five-year term, marking a shift to professional executive leadership.",
+   "url": "https://nsearchives.nseindia.com/corporate/AARTIIND_21092026184320_AARTIIND_Proceeding_2026.pdf"
+  },
+  {
+   "company": "Syrma SGS Tech.",
+   "sector": "EMS & Electronics",
+   "date": "2026-09-21",
+   "category": "Management change",
+   "tone": "info",
+   "headline": "Jayesh Doshi appointed Whole-time Director until 2031",
+   "summary": "Syrma SGS Technology has appointed Jayesh Nagindas Doshi as a Whole-time Director for a term ending March 2031. He previously served as a Non-Executive Director and brings 37 years of experience in corporate finance and strategy. This filing is a clarification of an earlier intimation regarding the appointment.",
+   "url": "https://nsearchives.nseindia.com/corporate/SYRMASGS_21092026183839_Wtdclarification21092026.pdf"
+  },
+  {
+   "company": "Zota Health Care",
+   "sector": "Pharma Others",
+   "date": "2026-09-21",
+   "category": "Governance",
+   "tone": "watch",
+   "headline": "Proxy firm IiAS opposes promoter pay and related-party deals",
+   "summary": "Proxy advisory firm IiAS has recommended shareholders vote against the reappointment of the MD, promoter remuneration, and material related-party transactions. The company defended its policies, stating that total promoter pay is capped at ₹12 crore annually until FY30 and that the related-party deals are necessary to support its 87.78%-owned subsidiary.",
+   "url": "https://nsearchives.nseindia.com/corporate/ZOTA_21092026183403_Response21092026.pdf"
+  },
+  {
+   "company": "GK Energy",
+   "sector": "Construction",
+   "date": "2026-09-21",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Wins 150MW BESS order in Maharashtra yielding ₹42.8cr yearly revenue",
+   "summary": "GK Energy has received a Letter of Award for a 150 MW / 300 MWh Battery Energy Storage System in Maharashtra. The 15-year contract will generate yearly revenues of ₹42.84 crore, opening a new and significant business line for the company in the energy storage segment.",
+   "url": "https://nsearchives.nseindia.com/corporate/GKENERGY_21092026183326_Intimation_sd.pdf"
+  },
+  {
+   "company": "Transrail Lighting",
+   "sector": "Construction - Power",
+   "date": "2026-09-21",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Conductor manufacturing capacity increased by 70% to 40,800 Km/annum",
+   "summary": "Transrail Lighting has completed phase 1 of its brownfield expansion at the Silvassa facility. The company's conductor manufacturing capacity has increased by 70% from 24,000 Km/annum to 40,800 Km/annum. A planned phase 2 expansion will eventually double the original capacity to meet growing market demand.",
+   "url": "https://nsearchives.nseindia.com/corporate/TRANSRAIL_21092026181724_TransrailLightingLimitedConductorphase1.pdf"
+  },
+  {
+   "company": "OnEMI Technology",
+   "sector": "Finance",
+   "date": "2026-09-21",
+   "category": "Fund-raise",
+   "tone": "info",
+   "headline": "₹832cr fund-raise via preferential issue of 2.65cr shares",
+   "summary": "OnEMI Technology is seeking shareholder approval to raise up to ₹832.2 crore via a preferential issue of 2.65 crore equity shares. The issue price of ₹314.11 is at a discount to the current market price of ₹348. The allotment will increase the total share count by 14.9%, resulting in a 13% dilution for existing shareholders.",
+   "url": "https://nsearchives.nseindia.com/corporate/ONEMI_21092026180518_Intimation_EGMNotice_21092026.pdf"
+  },
+  {
+   "company": "Virtuoso Optoelectro",
+   "sector": "EMS & Electronics",
+   "date": "2026-09-21",
+   "category": "Fund-raise",
+   "tone": "info",
+   "headline": "Proposes Rs 85cr preferential issue to QIBs for capacity expansion",
+   "summary": "Virtuoso Optoelectronics is raising Rs 85 crores via a preferential issue of 16.9 lakh shares to QIBs including ICICI Prudential and Clarus Capital. The implied issue price is roughly Rs 503, slightly below the current market price, resulting in 4.9% more shares and 4.7% dilution for existing investors. The proceeds will fund working capital and expand deep freezer capacity from 1.5 lakh to 2.5 lakh units per annum.",
+   "url": "https://nsearchives.nseindia.com/corporate/VIRTUOSO_21092026163939_BSENSE_Disclosure.pdf"
+  },
+  {
+   "company": "Akzo Nobel",
+   "sector": "Consumer Durables",
+   "date": "2026-09-21",
+   "category": "Corporate action",
+   "tone": "info",
+   "headline": "Shareholders approve stock split via postal ballot",
+   "summary": "Shareholders have approved a resolution for the sub-division of the company's equity shares via a postal ballot. The related alterations to the capital clauses of the Memorandum and Articles of Association were also passed with the requisite majority.",
+   "url": "https://nsearchives.nseindia.com/corporate/AKZOINDIA_21092026163627_JSWDuluxPostalBallot_ResultsAndScrutinizersReport21stSept2026.pdf"
+  },
+  {
+   "company": "Neogen Chemicals",
+   "sector": "Chemicals",
+   "date": "2026-09-21",
+   "category": "Fund-raise",
+   "tone": "info",
+   "headline": "Raises ₹600cr via first-ever QIP at ₹2,255/share",
+   "summary": "Neogen Chemicals has successfully raised ₹600 crore through a Qualified Institutions Placement that was oversubscribed 6.5 times. The company allotted 26.61 lakh shares at an issue price of ₹2,255 each, below the current market price of ₹2,385. This increases the total share count by 9.7%, resulting in an 8.9% dilution to existing shareholders, with proceeds allocated for debt repayment and working capital.",
+   "url": "https://nsearchives.nseindia.com/corporate/NEOGEN_21092026160124_PRfinal.pdf"
+  },
+  {
+   "company": "Onward Technologies",
+   "sector": "Software",
+   "date": "2026-09-21",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Bags ₹44.46cr, 3-year digital services contract renewal",
+   "summary": "Onward Technologies has secured a three-year renewal of a managed digital services contract valued at ₹44.46 crore from a major heavy equipment manufacturer. The renewed domestic order is 72% larger than the previous contract and represents about 8% of the company's yearly sales.",
+   "url": "https://nsearchives.nseindia.com/corporate/MD11015_21092026151047_Updated_Stock_Exchange_Intimation_-_Contract_Renewal.pdf"
+  },
+  {
+   "company": "Thyrocare Technologies",
+   "sector": "Healthcare",
+   "date": "2026-09-21",
+   "category": "Disposal",
+   "tone": "info",
+   "headline": "Sells subsidiary Nueclear Healthcare for ₹141.4cr",
+   "summary": "Thyrocare is selling its wholly owned subsidiary Nueclear Healthcare to Trovera Healthcare for roughly ₹141.4 crore, exiting the radiology business. The consideration includes ₹81.9 crore in cash and ₹59.5 crore in preference shares of the buyer. The subsidiary contributed ₹44.6 crore (5.4%) to the company's consolidated turnover last year.",
+   "url": "https://nsearchives.nseindia.com/corporate/THYROCARE_21092026150858_Outcome_Intimation-BM.pdf"
+  },
+  {
+   "company": "Dilip Buildcon",
+   "sector": "Construction",
+   "date": "2026-09-21",
+   "category": "Divestment",
+   "tone": "good",
+   "headline": "Sells solar portfolio to Alpha Alternatives at ₹6,829cr enterprise value",
+   "summary": "Dilip Buildcon is divesting its stake in ten under-construction solar SPVs to Alpha Alternatives at an enterprise value of ₹6,829 crore. Alpha Alternatives will fund 49% of the project's ₹1,253 crore equity during construction and acquire the remaining 51% upon completion, advancing the company's asset-light strategy and aiding deleveraging.",
+   "url": "https://nsearchives.nseindia.com/corporate/DBL_21092026144957_Press_release.pdf"
+  },
+  {
+   "company": "BASF India",
+   "sector": "Chemicals",
+   "date": "2026-09-21",
+   "category": "Strategy",
+   "tone": "good",
+   "headline": "Evaluates potential MDI production complex investment in Gujarat",
+   "summary": "BASF is in the advanced stages of a feasibility study to construct a new MDI production complex. The company has secured an industrial land parcel in Dahej, Gujarat for the potential investment. A final decision will depend on the study's outcome and necessary regulatory approvals.",
+   "url": "https://nsearchives.nseindia.com/corporate/BASFIL_21092026132704_SEletter21092026Signed.pdf"
+  },
+  {
+   "company": "Cohance Lifesciences",
+   "sector": "Pharma CDMO",
+   "date": "2026-09-21",
+   "category": "Regulatory",
+   "tone": "watch",
+   "headline": "USFDA issues Form 483 with 5 observations for Jaggaiahpet API facility",
+   "summary": "The USFDA inspected the company's API manufacturing facility in Jaggaiahpet, Andhra Pradesh, from 14 to 19 September 2026. The inspection concluded with the issuance of a Form 483 containing five observations. The company will submit its response and corrective action plan within the stipulated timeline.",
+   "url": "https://nsearchives.nseindia.com/corporate/SUVENPHARMROHIT_21092026113933_Cohance_USFDA_disclosure_21Sept26.pdf"
+  },
+  {
+   "company": "Dilip Buildcon",
+   "sector": "Construction",
+   "date": "2026-09-21",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Declared L-1 bidder for ₹1,265 crore transmission project",
+   "summary": "Dilip Buildcon has been declared the lowest bidder by RECPDCL for a power transmission project in Maharashtra. The EPC contract is valued at ₹1,265 crore (excluding GST), which represents a significant 14.5% of the company's trailing 12-month sales. The project will be executed on a Build, Own, Operate and Transfer (BOOT) basis with a 24-month construction period.",
+   "url": "https://nsearchives.nseindia.com/corporate/DBL_21092026104511_L1.pdf"
+  },
+  {
+   "company": "Himadri Speciality",
+   "sector": "Chemicals",
+   "date": "2026-09-21",
+   "category": "Acquisition",
+   "tone": "info",
+   "headline": "Approves acquisition of DBRL's Tyre Business with ₹149.31cr turnover via demerger",
+   "summary": "The board has approved a scheme to acquire the Tyre Business of Dalmia Bharat Refractories Ltd via a demerger. The target business had a turnover of ₹149.31 crore in the previous financial year, representing about 3.39% of Himadri's annual sales. Himadri will issue new shares to eligible DBRL shareholders to complete the transaction.",
+   "url": "https://nsearchives.nseindia.com/corporate/HSCL_21092026100138_Boardoutcome21092026.pdf"
   }
  ]
 }
