@@ -2996,7 +2996,12 @@ export const industrialManufacturingValuationInputs: Record<string, ValuationInp
         "mcapAtWriting": 1815.0,
         "peAtWriting": 19.1
     },
-    // Shree Refrigrations is left out: the site database record carries a wrong market value.
+    "Shree Refrigrations": {
+        "netDebt": -21,
+        "ttmEbitda": 33.0,
+        "mcapAtWriting": 1360.0,
+        "peAtWriting": 63.1
+    },
     "WPIL": {
         "netDebt": -23,
         "ttmEbitda": 344.0,

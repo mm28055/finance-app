@@ -644,7 +644,7 @@ export const industrialManufacturing: SectorOverview = {
                         ['Tega Industries', 'Molycop deleveraging; mining cycle', 'Loss-making after the deal; no estimate'],
                         ['John Cockerill', 'Steel-plant orders; parent’s choices', 'Loss-making as a group; no estimate'],
                     ],
-                    note: 'My own judgement, not guidance. The growth each price needs is in the live valuation table in section 8 (Shree, Isgec, United Heat Transfer and Tega are not in it; see there).',
+                    note: 'My own judgement, not guidance. The growth each price needs is in the live valuation table in section 8 (Isgec, United Heat Transfer and Tega are not in it; see there).',
                 },
                 {
                     caption: 'Guidance, capex and track record (Q4 FY26 call promise against Q1 FY27 delivery)',
@@ -703,8 +703,8 @@ export const industrialManufacturing: SectorOverview = {
                     text: "**Everest Kanto** faces a ₹351cr GST, interest and penalty demand, about 28% of its market value, over product classification; management expects clarity in 6–12 months. **John Cockerill** faces ₹236cr of service-tax demands against a standalone net worth of ₹209cr, plus a customer's arbitration claim over a cold-rolling mill. **Aditya Infotech** carries ₹39cr of customs and ₹35cr of GST demands. **Gala** faces a patent suit from Nord-Lock over its Gallock washers and an August income-tax search. **HPL**'s promoter entity has pledged about 2.42% of the shares, and a ₹129.6cr settlement from Havells went to the promoter group, not the listed company.",
                 },
                 {
-                    label: 'Parents, partners, policy and this site’s data',
-                    text: "**JNK** needs its Korean parent for export heaters and has no signed renewal; **John Cockerill**'s parent sold 4.6% of the shares before selling the listed company its other metals businesses; **Aditya Infotech**'s share rests on a rule the government could relax, as it did for Chinese transformer makers; **Praj** waits on E25–E30; **WPIL** is barred from new bids in Madhya Pradesh; **HPL** faces Adani, which bought the installer IntelliSmart and may buy a meter maker; **Jash** faces a threatened 100% US tariff. And for investors using this site: **Shree's market data here are wrong**, so its multiples must be checked on the exchange.",
+                    label: 'Parents, partners and policy',
+                    text: "**JNK** needs its Korean parent for export heaters and has no signed renewal; **John Cockerill**'s parent sold 4.6% of the shares before selling the listed company its other metals businesses; **Aditya Infotech**'s share rests on a rule the government could relax, as it did for Chinese transformer makers; **Praj** waits on E25–E30; **WPIL** is barred from new bids in Madhya Pradesh; **HPL** faces Adani, which bought the installer IntelliSmart and may buy a meter maker; **Jash** faces a threatened 100% US tariff.",
                 },
             ],
         },
@@ -712,7 +712,7 @@ export const industrialManufacturing: SectorOverview = {
             heading: '8. Valuation (comparative)',
             body: [
                 "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it gives credit for cash and charges for debt. Where the two disagree, the balance sheet is the reason.",
-                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **5% at 10x, 13% at 19x, 16% at 25x, 18–20% at 31–35x, 21% at 38x, 22% at 43x, 24% at 51x, 27% at 65x, 30% at 80x, 32% at 93–95x and 35% at 117x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **Four companies are not in the live table**: Shree because this site's market data for it is wrong, Isgec and United Heat Transfer because they joined the sector after the table's inputs were set, and Tega because its acquisition makes the pre-deal figures misleading.",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **5% at 10x, 13% at 19x, 16% at 25x, 18–20% at 31–35x, 21% at 38x, 22% at 43x, 24% at 51x, 27% at 65x, 30% at 80x, 32% at 93–95x and 35% at 117x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **Three companies are not in the live table**: Isgec and United Heat Transfer because they joined the sector after the table's inputs were set, and Tega because its acquisition makes the pre-deal figures misleading.",
             ],
             points: [
                 {
@@ -729,7 +729,7 @@ export const industrialManufacturing: SectorOverview = {
                 },
                 {
                     label: 'Stretched',
-                    text: "**Aditya Infotech** needs about 32% a year against my ~25%, a real brand priced for more than its cash shows. **Standard Glass** needs about 32% against ~15%, **ICE Make** about 32% against ~10%, **HLE** about 30% against ~10% and **Praj** about 35% against ~10%: prices far ahead of what these businesses are delivering.",
+                    text: "**Aditya Infotech** needs about 32% a year against my ~25%, a real brand priced for more than its cash shows. **Shree** needs about 28% against my ~20%, a real naval niche whose price runs ahead of a first half still to be tested. **Standard Glass** needs about 32% against ~15%, **ICE Make** about 32% against ~10%, **HLE** about 30% against ~10% and **Praj** about 35% against ~10%: prices far ahead of what these businesses are delivering.",
                 },
                 {
                     label: 'Earnings quality: which P/Es flatter',
@@ -737,7 +737,7 @@ export const industrialManufacturing: SectorOverview = {
                 },
                 {
                     label: 'Not in the live table: judge these on the exchange price',
-                    text: "**Shree**'s P/E on Screener of about 68 needs about 28% against my ~20%, which would be Stretched. **Isgec** trades at about 25 times reported profit on Screener, needing about 16% against my ~15%, which would fit, but its reported return on equity is only 4% because of the Philippine losses. **United Heat Transfer** trades at about 76 times on Screener, needing about 29% against my ~12%. **Tega** has no P/E because it lost money over the last year. **John Cockerill** has a live P/E, but it rests on standalone profit while the group lost money, so I give no estimate and no check.",
+                    text: "**Isgec** trades at about 25 times reported profit on Screener, needing about 16% against my ~15%, which would fit, but its reported return on equity is only 4% because of the Philippine losses. **United Heat Transfer** trades at about 76 times on Screener, needing about 29% against my ~12%. **Tega** has no P/E because it lost money over the last year. **John Cockerill** has a live P/E, but it rests on standalone profit while the group lost money, so I give no estimate and no check.",
                 },
             ],
             embed: 'valuation',
@@ -808,7 +808,7 @@ export const industrialManufacturing: SectorOverview = {
         {
             company: 'Shree Refrigrations', rank: 11, stance: 'SCALEUP', segment: BRAND,
             what: "Air-conditioning, ventilation and refrigeration systems for naval warships and submarines, plus spares and service; listed on the SME platform and reporting half-yearly.",
-            view: "**The registration is the moat; the first half is the test.** The only Indian firm cleared by all three naval directorates, about 64% of naval cooling tenders, a ₹280cr book and 40% growth guided. But three shipyards give about 69% of revenue, the cash cycle is about 377 days, spares fell to 7% of sales, and FY26 profit carried a 14% tax rate. Its market data here is wrong; on Screener's price it needs about 28% a year against my ~20%.",
+            view: "**The registration is the moat; the first half is the test.** The only Indian firm cleared by all three naval directorates, about 64% of naval cooling tenders, a ₹280cr book and 40% growth guided. But three shipyards give about 69% of revenue, the cash cycle is about 377 days, spares fell to 7% of sales, and FY26 profit carried a 14% tax rate. At a P/E of about 67 it needs about 28% a year against my ~20%, which is Stretched.",
             watch: 'H1 FY27 results in November; spares back toward 15% of sales; working capital toward 325–330 days.',
         },
         {
@@ -879,7 +879,7 @@ export const industrialManufacturing: SectorOverview = {
             "**Qualified component suppliers.** **Pitti: own.** The core holding: designed in, costs passed through, markets tied to electricity, at a price that fits; watch its debt. **Gala: own.** The same model at a smaller scale, with 25 years of vendor codes; watch its cash and the tax search. **Tega: wait.** The best wear-parts model, now a leveraged bet on mining with a loss to digest.",
             "**Process-technology owners.** **Jash: follow.** A niche leader building abroad; slightly dear and exposed to tariffs. **GMM Pfaudler: follow.** The technology leader, but its profit leaks to interest and tax and its CFO is leaving. **Kilburn: wait.** Good margins, stalled orders and no cash for two years. **Praj: wait** for a blending decision. **HLE Glascoat: pass.** Premium technology on a core that has lost pricing power. **Standard Glass: avoid.** A changing story, contradictory working-capital figures and rising related-party buying.",
             "**Certified fabricators.** **Anup Engineering (The Anup Enginee): follow.** A record book in a reset year; the price needs about 21% a year against my ~18%, which is Full. **DEE Development: follow.** Capacity built and a record book; the audit qualification must go. **Isgec: follow.** A strong engineering core behind a loss-making Philippine plant. **JNK: wait.** Its book and its parent relationship need refilling and renewing. **Everest Kanto: pass.** Cheap, shrinking and facing a large GST demand. **John Cockerill: avoid.** The technology belongs to the parent. **United Heat Transfer: avoid.** A flat business priced for one trial order.",
-            "**Branded and regulated products.** **Aditya Infotech: follow.** A real brand, partly built on a rule, priced ahead of its cash. **Shree Refrigerations (Shree Refrigrations): wait** for the first-half result; check its price on the exchange. **WPIL: wait.** Needs the states to pay. **HPL Electric: pass.** Meter prices keep falling. **ICE Make: avoid.** Growth bought with margin and new shares.",
+            "**Branded and regulated products.** **Aditya Infotech: follow.** A real brand, partly built on a rule, priced ahead of its cash. **Shree Refrigerations (Shree Refrigrations): wait** for the first-half result; the price already asks for more than I expect. **WPIL: wait.** Needs the states to pay. **HPL Electric: pass.** Meter prices keep falling. **ICE Make: avoid.** Growth bought with margin and new shares.",
             "**What would change my view.** For the better: GMM's margin recovering and its tax fixed; Anup's new book delivering near 20% margins in FY28; DEE's clean audit opinion; Kilburn's orders arriving; Isgec selling or fixing the Philippine plant; state payments for WPIL; a dated E25 mandate for Praj. For the worse: another cost spike on fixed-price contracts; Pitti adding a debt-funded plant before the last two earn; a change to the CCTV testing rule; Tega's deleveraging slipping.",
             "**What to watch next quarter.** Pitti's margin and debt; Gala's cash and the tax search; Jash's Rodney Hunt; GMM's margin; Anup's Q2 revenue; DEE's audit opinion; Isgec's Philippine plant; Kilburn's orders; Tega's first full Molycop quarter; the November half-years at Shree and United Heat Transfer; WPIL's collections; Aditya Infotech's operating cash.",
         ],

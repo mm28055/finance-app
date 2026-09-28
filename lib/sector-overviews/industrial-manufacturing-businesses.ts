@@ -575,7 +575,7 @@ const profiles: BusinessProfile[] = [
             { name: 'Global chiller makers', note: 'In data centres it faces 30-40 established players, about 70% of them present in India.' },
         ],
         position: "**Market leader in Indian naval cooling, with about 64% share** and a retrofit win rate close to 100%; eight projects are under way.",
-        money: "Net cash of about ₹21cr on Screener (₹58cr cash against ₹37cr debt), helped by a ₹95cr IPO on the SME platform in FY26 that also paid off costly loans. No major capex is planned for two years. CARE upgraded it to BBB-/Stable in September 2026. Cash is tied up for about 370 days (down from 570), with receivables around 250 days. Promoters hold **44.6%**. **Check the price yourself:** this site's database carries a market value for Shree that is far too large, so the live multiples shown on this page are wrong; look up the share price on the exchange (BSE) before judging value.",
+        money: "Net cash of about ₹21cr on Screener (₹58cr cash against ₹37cr debt), helped by a ₹95cr IPO on the SME platform in FY26 that also paid off costly loans. No major capex is planned for two years. CARE upgraded it to BBB-/Stable in September 2026. Cash is tied up for about 370 days (down from 570), with receivables around 250 days. Promoters hold **44.6%**. At a market value of about ₹1,446cr and a P/E of about 67, the price needs about 28% a year against my ~20%, which is **Stretched**.",
         watch: ["Working capital falling further below 370 days.", "A steadier first half in FY27.", "Spares and service rising back toward 15% of sales."],
         charts: industrialManufacturingCharts['Shree Refrigrations'],
     },
