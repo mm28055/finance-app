@@ -912,6 +912,120 @@ export const healthProductsCharts: Record<string, ProfileCharts> = {
             "inventory5y": -9,
             "payables5y": -1
         }
+    },
+    "Anondita Medicare": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 44
+                },
+                {
+                    "label": "Staff",
+                    "share": 7
+                },
+                {
+                    "label": "Other costs",
+                    "share": 12
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 37
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "marginVsInput": {
+            "input": "Natural rubber price",
+            "periods": [
+                "H1 FY25",
+                "H2 FY25",
+                "H1 FY26",
+                "H2 FY26"
+            ],
+            "margin": [
+                32.3,
+                34.8,
+                35.2,
+                37.3
+            ],
+            "index": [
+                100,
+                93,
+                96,
+                95
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                26.0,
+                51.0
+            ],
+            "ocf": [
+                -7.0,
+                11.0
+            ],
+            "fcf": [
+                -27.0,
+                -52.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "63.7x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "43.0x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹21cr",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "n/m",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "37%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY25",
+            "toYear": "FY26",
+            "debtorDays": [
+                127,
+                138
+            ],
+            "inventoryDays": [
+                128,
+                125
+            ],
+            "payableDays": [
+                36,
+                48
+            ],
+            "cycleDays": [
+                218,
+                214
+            ],
+            "absorbed5y": -70,
+            "receivables5y": -36,
+            "inventory5y": -10,
+            "payables5y": -1
+        }
     }
 };
 
@@ -952,5 +1066,11 @@ export const healthProductsValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 27.0,
         "mcapAtWriting": 456.0,
         "peAtWriting": 20.2
+    },
+    "Anondita Medicare": {
+        "netDebt": 21,
+        "ttmEbitda": 50.0,
+        "mcapAtWriting": 2131.0,
+        "peAtWriting": 63.7
     }
 };

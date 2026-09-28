@@ -28,10 +28,11 @@ export const healthProducts: SectorOverview = {
             'Prevest Denpro': 15,
             'Laxmi Denta': 15,
             'Vasa Denticity': 15,
+            'Anondita Medicare': 20,
         },
     },
     standfirst:
-        "Six small and mid-sized companies that make or sell health products other than medicines. Poly Medicure makes hospital disposables such as IV cannulas and dialysis products; Tarsons makes plastic labware; OSEL makes hearing aids alongside phones and display screens. Three are in dentistry: Laxmi Dental makes crowns and clear aligners, Prevest makes dental materials, and DentalKart (Vasa Denticity) sells dental supplies online. India still imports 70–80% of the medical devices it uses, and Indian makers compete in consumables rather than machines. Three of the six are SME-listed; OSEL reports only half-yearly, while Prevest and DentalKart publish quarterly figures. Every chart uses filed results and five years of history.",
+        "Seven small and mid-sized companies that make or sell health products other than medicines. Poly Medicure makes hospital disposables such as IV cannulas and dialysis products; Tarsons makes plastic labware; OSEL makes hearing aids alongside phones and display screens; Anondita Medicare makes condoms for India's AIDS-control programme, its own Cobra brand and, since June, South Africa. Three are in dentistry: Laxmi Dental makes crowns and clear aligners, Prevest makes dental materials, and DentalKart (Vasa Denticity) sells dental supplies online. India still imports 70–80% of the medical devices it uses, and Indian makers compete in consumables rather than machines. Four of the seven are SME-listed; OSEL and Anondita report only half-yearly, while Prevest and DentalKart publish quarterly figures. Every chart uses filed results and five years of history.",
     lastUpdated: '2026-09-23',
     asOfQuarter: 'Q1 FY27',
 
@@ -42,7 +43,7 @@ export const healthProducts: SectorOverview = {
             unit: '%',
             periods: Q,
             scale: 'sequential',
-            source: 'Filed quarterly results (Screener): Poly Medicure and Laxmi Dental consolidated, the others standalone. OSEL reports half-yearly, so its figures sit in the Q2 and Q4 columns. Operating profit ÷ sales.',
+            source: 'Filed quarterly results (Screener): Poly Medicure, Laxmi Dental and Anondita consolidated, the others standalone. OSEL and Anondita report half-yearly, so their figures sit in the Q2 and Q4 columns. Operating profit ÷ sales.',
             note: 'Prevest earns 34–38% on dental materials; DentalKart, a distributor, earns 0–8%.',
             values: {
                 'Poly Medicure': [26, 26, 22, 21, 24],
@@ -51,8 +52,10 @@ export const healthProducts: SectorOverview = {
                 'Prevest Denpro': [35, 36, 34, 38, 35],
                 'Laxmi Denta': [18, 15, 11, 19, 19],
                 'Vasa Denticity': [5, 8, 3, 0, 6],
+                'Anondita Medicare': [null, 35, null, 37, null],
             },
             cellNotes: {
+                'Anondita Medicare': 'Half-years (consolidated). Margin rose with more own-brand sales and a cheaper raw-material mix (company).',
                 'Tarsons Products': 'Standalone; polymer costs rose 25–50% and it could not pass them on to export buyers (company).',
                 'Vasa Denticity': 'Q4 FY26 margin fell to zero as its own-brand products ran out of stock.',
             },
@@ -72,8 +75,10 @@ export const healthProducts: SectorOverview = {
                 'Prevest Denpro': [18, 15, 23, 2, 24],
                 'Laxmi Denta': [10, 26, 6, 21, 14],
                 'Vasa Denticity': [12, 22, 14, -1, 37],
+                'Anondita Medicare': [null, 72, null, 83, null],
             },
             cellNotes: {
+                'Anondita Medicare': 'Half-years against the same half a year earlier (company figures). New capacity of 307 million pieces started only in late February 2026.',
                 'Poly Medicure': 'Q1 FY27 includes Citieffe (Italy) and PendraCare (Netherlands), bought in FY26; the Indian company grew 12.3% (company).',
                 'Vasa Denticity': 'Q1 FY27 growth came mostly from bigger orders of low-margin digital equipment; order numbers rose 8% (company).',
             },
@@ -94,8 +99,10 @@ export const healthProducts: SectorOverview = {
                 'Prevest Denpro': [40, 32, 27, 25, 25],
                 'Laxmi Denta': [-1, 1, 18, 19, 15],
                 'Vasa Denticity': [95, 80, 45, 22, 9],
+                'Anondita Medicare': [null, null, null, null, 44],
             },
             cellNotes: {
+                'Anondita Medicare': 'The listed company took over the promoter’s business in April 2024, so there is only one full year to measure.',
                 'Poly Medicure': 'Held down by ₹484cr of unspent share-sale money (March 2026), two recent acquisitions and new plants still filling.',
             },
         },
@@ -115,6 +122,10 @@ export const healthProducts: SectorOverview = {
                 'Prevest Denpro': [83, 130, 181, 211, 227],
                 'Laxmi Denta': [81, 61, 47, -132, 147],
                 'Vasa Denticity': [37, 45, 90, 110, 139],
+                'Anondita Medicare': [null, null, null, 218, 214],
+            },
+            cellNotes: {
+                'Anondita Medicare': 'About 42% of sales go to the government, which pays in 120 days or more; most of it is billed in the last quarter.',
             },
         },
         {
@@ -132,6 +143,10 @@ export const healthProducts: SectorOverview = {
                 'Prevest Denpro': [47, 50, 55, 68, 62, 57],
                 'Laxmi Denta': [-29, 156, 33, 102, -11, 46],
                 'Vasa Denticity': [0, 20, -58, -22, -245, -59],
+                'Anondita Medicare': [null, null, null, -27, 22, 5],
+            },
+            cellNotes: {
+                'Anondita Medicare': 'Last column covers two years only (FY25–FY26): ₹4cr of operating cash against ₹77cr of operating profit.',
             },
         },
         {
@@ -150,6 +165,10 @@ export const healthProducts: SectorOverview = {
                 'Prevest Denpro': [5.6, -7.1, 13.0, 20.7, 19.8, 11.9],
                 'Laxmi Denta': [-8.8, 2.5, -3.6, 11.7, -8.3, -1.0],
                 'Vasa Denticity': [-1.3, 0.0, -7.6, -9.5, -11.6, -7.8],
+                'Anondita Medicare': [null, null, null, -35.1, -38.0, -36.9],
+            },
+            cellNotes: {
+                'Anondita Medicare': 'Last column covers two years only; it spent ₹63cr on new lines in FY26, paid for mainly by its ₹69.5cr share sale.',
             },
         },
         {
@@ -169,8 +188,10 @@ export const healthProducts: SectorOverview = {
                 'Prevest Denpro': [-2.8, -2.0, -2.5, -3.0, -3.2],
                 'Laxmi Denta': [7.0, 5.3, 2.2, -2.3, -0.5],
                 'Vasa Denticity': [0.2, 0.0, -1.4, -2.1, -4.4],
+                'Anondita Medicare': [null, null, null, 0.9, 0.4],
             },
             cellNotes: {
+                'Anondita Medicare': 'Year-end figure. It raised ₹91cr more in a rights issue in September 2026, so it now holds net cash.',
                 'Laxmi Denta': 'The company reports about ₹99cr of cash, deposits and investments at March 2026, much of it IPO money in deposits; this ratio counts only part of it, so net cash is understated.',
                 'Tarsons Products': 'Year-end figure. Management put net debt at ₹330–340cr (gross about ₹380cr) in August 2026.',
             },
@@ -191,6 +212,10 @@ export const healthProducts: SectorOverview = {
                 'Prevest Denpro': [12.9, 27.1, 6.7, 3.1, 2.5, 9.3],
                 'Laxmi Denta': [7.3, 6.2, 7.7, 6.7, 6.5, 6.8],
                 'Vasa Denticity': [1.3, 1.6, 1.2, 7.5, 1.8, 3.2],
+                'Anondita Medicare': [null, null, null, 26.0, 46.0, 38.8],
+            },
+            cellNotes: {
+                'Anondita Medicare': 'Last column covers two years only.',
             },
         },
         {
@@ -209,6 +234,7 @@ export const healthProducts: SectorOverview = {
                 'Prevest Denpro': [5.4, 7.1, 2.1, 2.3, 2.7],
                 'Laxmi Denta': [3.4, 4.0, 4.2, 4.7, 4.4],
                 'Vasa Denticity': [77.0, 61.5, 85.0, 16.1, 12.0],
+                'Anondita Medicare': [null, null, null, 5.9, 3.5],
             },
         },
     ],
@@ -234,6 +260,8 @@ export const healthProducts: SectorOverview = {
                 grades: { reg: { grade: 'B', note: 'Exports crowns and aligners to the US and Europe' }, brand: { grade: 'B', note: 'Strong with Indian dentists' }, tech: { grade: 'B', note: 'Digital crowns and aligners' }, pass: { grade: 'B', note: 'Margins back to 19%' }, cash: { grade: 'C', note: 'Five-year cash conversion 46%' } } },
             { company: 'Vasa Denticity', trend: 'stable', trendNote: 'Stock-outs of own brands cut to about 13%; still thin margins.',
                 grades: { reg: { grade: 'C', note: 'Distributor' }, brand: { grade: 'B', note: 'Leading online dental store (DentalKart)' }, tech: { grade: 'D', note: 'Resells others’ products' }, pass: { grade: 'C', note: 'Competes on price' }, cash: { grade: 'D', note: 'Negative operating cash' } } },
+            { company: 'Anondita Medicare', trend: 'widening', trendNote: 'New approvals (MDSAP, South Africa) and first export orders; capacity up by more than half.',
+                grades: { reg: { grade: 'B', note: 'MDSAP, WHO-GMP, South African SABS' }, brand: { grade: 'C', note: 'Cobra is a regional brand' }, tech: { grade: 'C', note: 'Standard product; builds its own machines' }, pass: { grade: 'C', note: 'Government tenders set prices' }, cash: { grade: 'D', note: 'Little operating cash; assets still in the promoter’s old firm' } } },
         ],
     },
 
@@ -244,13 +272,14 @@ export const healthProducts: SectorOverview = {
                 "**Prevest Denpro is the one to own, in a small size.** It makes dental cements, root-canal materials and files, and 3D-printing resins in one plant in Jammu, sells in more than 90 countries, and makes products for three or four large dental companies to sell under their own names. It has earned a 35–36% operating margin for three years, turned ₹15cr of operating cash into ₹13cr of free cash in FY26, and has no debt. Its older lines run at 67–68% of capacity, enough for about ₹125cr of sales against ₹72cr today, so growth needs no new plant. Q1 FY27 sales rose 21% and profit 28%, after a weak Q4 in which it missed its own promise of more than 20% growth for the half-year. The price asks for about {need:Prevest Denpro|13}% a year, below my 15%. **The risks are size and people**: it is SME-listed and thinly traded, and its 72-year-old founder had a medical emergency in June.",
                 "**Follow Poly Medicure and Laxmi Dental.** **Poly Medicure** is the best franchise here. It makes about 600 million IV cannulas a year, roughly 11% of world supply by its own count, and a 4–5% price increase stuck with hospitals in Q1 FY27. But the group is getting worse at using money. Return on capital has halved from 24% to 12% in two years, free cash has been negative for four years, ₹484cr of its ₹1,000cr share sale was still sitting in deposits and funds in March, and its newest acquisition, PendraCare, earns a margin of about 1%. Q1 revenue rose 30%, yet profit fell 8%. The price needs about {need:Poly Medicure|25}% a year against my 15%. **Laxmi Dental** is a recovery at a {label:Laxmi Denta|full} price: its margin is back to 19% and it has reinstated a 15–20% growth aim. But operating cash was negative in FY26 and adjusted operating profit grew only 8% in Q1, so I expect about 15% a year, a little less than the {need:Laxmi Denta|18}% the price asks.",
                 "**Pass on Tarsons, DentalKart and OSEL.** **Tarsons** has India's best-known labware brand and turns its operating profit into cash, but it has spent about ₹893cr, twice a year's sales, on plants that keep slipping, for products it cannot price up abroad. It reported its first loss (₹1.4cr) in Q1 FY27, one quarter after promising there would be none, and the plants are late for the third time. **DentalKart** (Vasa Denticity) cut its gross-margin target, dropped its revenue guidance, and lost its CFO, company secretary and an independent director within five months. **OSEL** grew 57% in FY26, but it had to correct a cash-flow statement that counted about ₹50cr of borrowing as operating cash, and it buys ₹44cr a year from a promoter-group firm. **Neither DentalKart nor OSEL has turned profit into cash in either of the last two years.**",
-                "**Three things to hold onto before reading the rest.** First, **making beats reselling**: the makers of approved, branded consumables (Poly Medicure, Tarsons, Prevest) earn 21–38% operating margins; the online distributor earns 0–8%. Second, **policy is cutting both ways**: a lower 5% GST and an anti-dumping probe on Chinese dialysers help, while the EU trade deal, a waiver of Indian trials for EU-approved devices and a proposed 20% cap on trade margins bring more competition and price pressure. Third, **half this list is very small and lightly policed**: three companies are SME-listed with a few hundred crore of market value, and the worst governance findings in this note come from two of them.",
+                "**Pass on Anondita Medicare too, despite the best growth here.** It makes condoms in Noida for India's AIDS-control programme (about 42% of sales) and for its own Cobra brand, and in June won its first export orders, ₹48.5cr from South Africa. FY26 revenue rose 78% to ₹137cr at a 37% operating margin and a 44% return on capital. But it turned ₹51cr of operating profit into only ₹11cr of operating cash, because the government pays in 120 days or more. Its promises are loose: on the May call it spoke of ₹250–500cr of revenue in FY27 and ₹1,000cr within two years, while its August rights-issue document projects about ₹205cr. The annual report adds that its property deeds and some loans are still in the name of the promoter's old business, and that it has advanced ₹4.9cr to a promoter-family firm. The price needs about {need:Anondita Medicare|27}% a year against my 20%, which is **{label:Anondita Medicare|stretched}**.",
+                "**Three things to hold onto before reading the rest.** First, **making beats reselling**: the makers of approved, branded consumables (Poly Medicure, Tarsons, Prevest) earn 21–38% operating margins; the online distributor earns 0–8%. Second, **policy is cutting both ways**: a lower 5% GST and an anti-dumping probe on Chinese dialysers help, while the EU trade deal, a waiver of Indian trials for EU-approved devices and a proposed 20% cap on trade margins bring more competition and price pressure. Third, **half this list is very small and lightly policed**: four companies are SME-listed, and the worst governance findings in this note come from three of them.",
             ],
         },
         {
             heading: '2. Charts: margins, growth, returns, cash cycle and cash conversion',
             body: [
-                "The six views that matter most, with three more behind **More measures**. Every figure comes from filed results (Poly Medicure and Laxmi Dental consolidated, the others standalone). OSEL reports half-yearly, so some quarters are blank. None of these companies publishes an order book. Hover over a starred name for its caveat.",
+                "The six views that matter most, with three more behind **More measures**. Every figure comes from filed results (Poly Medicure, Laxmi Dental and Anondita consolidated, the others standalone). OSEL and Anondita report half-yearly, so some quarters are blank, and Anondita has only two years of history as a company. None of these companies publishes an order book. Hover over a starred name for its caveat.",
             ],
             embed: 'metrics',
         },
@@ -262,11 +291,11 @@ export const healthProducts: SectorOverview = {
             points: [
                 {
                     label: 'Value chain',
-                    text: "Plastic resin, chemicals and electronic parts → **makers** of disposables, labware, dental materials and devices (Poly Medicure, Tarsons, Prevest, Laxmi Dental, OSEL) → distributors, dealers and online stores (DentalKart) → hospitals, labs, dentists and patients. **The profit sits with approved makers of branded consumables.** Poly Medicure's Indian plants earned a 28% operating margin in Q1 FY27 and Prevest 35%, because a product with regulatory approval and a name doctors trust is hard to replace. DentalKart, which resells, earned 0–8% over the last five quarters; OSEL, which assembles bought-in electronics, earns 17–20% but has not turned it into cash. Tarsons adds a third lesson: a good maker that builds far ahead of demand earns 6% on its capital until the plants fill.",
+                    text: "Plastic resin, chemicals and electronic parts → **makers** of disposables, labware, dental materials, condoms and devices (Poly Medicure, Tarsons, Prevest, Laxmi Dental, Anondita, OSEL) → distributors, dealers and online stores (DentalKart) → hospitals, labs, dentists and patients. **The profit sits with approved makers of branded consumables.** Poly Medicure's Indian plants earned a 28% operating margin in Q1 FY27 and Prevest 35%, because a product with regulatory approval and a name doctors trust is hard to replace. DentalKart, which resells, earned 0–8% over the last five quarters; OSEL, which assembles bought-in electronics, earns 17–20% but has not turned it into cash. Tarsons adds a third lesson: a good maker that builds far ahead of demand earns 6% on its capital until the plants fill. **Anondita** adds a fourth: a low-cost maker can earn a 37% margin selling condoms to the government, but the government pays in 120 days or more, so the profit arrives as receivables rather than cash.",
                 },
                 {
                     label: 'Where the demand comes from',
-                    text: "Hospitals are the main buyers of disposables, and they are growing: CRISIL Ratings expects private-hospital revenue to rise 14–15% in FY27, a fifth straight double-digit year, with more than 10,000 beds added over FY26–27. Poly Medicure says insurance now pays 60–65% of hospital bills, up from about 50%, which pushes hospitals toward good Indian devices over costlier imports. In dentistry, IMARC sizes Indian dental consumables at US$1.24 billion in 2025, growing 8.7% a year to 2034, and Frost & Sullivan (in Laxmi Dental's presentation) expects clear aligners to grow about 23% a year and crowns about 12%; India has about 2 dentists per 10,000 people against 6-plus in the US and Germany. Lab plastics are a small market (₹1,200–1,300cr, by Tarsons' estimate) just leaving a three-year slump after COVID, and fewer than 3% of Indians who need a hearing aid have one. **My view: domestic demand is healthy and mid-cycle; exports are the swing factor.**",
+                    text: "Hospitals are the main buyers of disposables, and they are growing: CRISIL Ratings expects private-hospital revenue to rise 14–15% in FY27, a fifth straight double-digit year, with more than 10,000 beds added over FY26–27. Poly Medicure says insurance now pays 60–65% of hospital bills, up from about 50%, which pushes hospitals toward good Indian devices over costlier imports. In dentistry, IMARC sizes Indian dental consumables at US$1.24 billion in 2025, growing 8.7% a year to 2034, and Frost & Sullivan (in Laxmi Dental's presentation) expects clear aligners to grow about 23% a year and crowns about 12%; India has about 2 dentists per 10,000 people against 6-plus in the US and Germany. Lab plastics are a small market (₹1,200–1,300cr, by Tarsons' estimate) just leaving a three-year slump after COVID, and fewer than 3% of Indians who need a hearing aid have one. Condoms are a steady market of about ₹2,600–2,800cr in India, by Anondita's own estimate, led by Mankind's Manforce with about 27%; the bigger swing is donor-funded buying abroad, where UN agencies and aid programmes distribute an estimated 1.5–2 billion condoms a year and only a handful of firms make female condoms. **My view: domestic demand is healthy and mid-cycle; exports are the swing factor.**",
                 },
                 {
                     label: 'Cycles and policy',
@@ -274,7 +303,7 @@ export const healthProducts: SectorOverview = {
                 },
                 {
                     label: 'What these companies actually depend on',
-                    text: "**Poly Medicure** depends on hospital demand, on its new heart, bone and dialysis lines, and on an anti-dumping duty against Chinese dialysers; **Tarsons** on finishing its plants and finding buyers for what they make; **Prevest** on exports, US private label and its founder's health; **Laxmi Dental** on US dental groups, aligner pricing and turning profit into cash; **DentalKart** on keeping its own brands in stock and rebuilding its management; **OSEL** on government hearing-aid tenders, its new clinics and cleaning up its reporting. **Buy each for what it actually depends on, not for the sector label.**",
+                    text: "**Poly Medicure** depends on hospital demand, on its new heart, bone and dialysis lines, and on an anti-dumping duty against Chinese dialysers; **Tarsons** on finishing its plants and finding buyers for what they make; **Prevest** on exports, US private label and its founder's health; **Laxmi Dental** on US dental groups, aligner pricing and turning profit into cash; **DentalKart** on keeping its own brands in stock and rebuilding its management; **OSEL** on government hearing-aid tenders, its new clinics and cleaning up its reporting; **Anondita** on Indian and South African government tenders, on starting its female-condom plant and on untangling itself from the promoter family's other firms. **Buy each for what it actually depends on, not for the sector label.**",
                 },
             ],
             tables: [
@@ -286,6 +315,7 @@ export const healthProducts: SectorOverview = {
                         ['Capital-heavy labware maker', 'Tarsons', '28–35% (standalone)', '6%', '**81%**', 'Good cash from operations, eaten by ₹893cr of plants'],
                         ['Custom dental work', 'Laxmi Dental', '11–19%', '15%', '**46%**', 'Labour-heavy; scanners and US tariffs swing the margin'],
                         ['Electronics assembly', 'OSEL', '17–20% (half-years)', '24%', '**−69%**', 'Bought-in parts, tender prices, slow-paying customers'],
+                        ['Low-cost condoms: government and own brand', 'Anondita', '32–37% (half-years)', '44%', '**5% (two years)**', 'Cheap to make; the government pays in 120 days'],
                         ['Online distribution', 'DentalKart', '0–8%', '9%', '**−59%**', 'Resells others’ goods; stock ties up the cash'],
                     ],
                 },
@@ -301,6 +331,8 @@ export const healthProducts: SectorOverview = {
                         ['Crowns and aligners', 'Crowns and bridges ~US$1.4bn (2023)', 'Crowns ~12% a year; aligners **~23% a year**', 'Frost & Sullivan, in Laxmi Dental’s presentation'],
                         ['Lab plastics', '₹1,200–1,300cr; industry −8% in FY26', 'Back to high single digits', 'Tarsons, Q4 FY26 and Q1 FY27 calls'],
                         ['Hearing aids', 'US$235mn; ~7 lakh units a year; under 3% use', 'US$376mn', 'IMARC, in OSEL’s presentation'],
+                        ['Condoms, India', '₹2,600–2,800cr (FY26 estimate); Manforce ~27%, Durex ~16%', 'About 7.5% a year to FY33', 'Anondita’s presentation (company estimate, citing MarkNtel and Mordor)'],
+                        ['Female condoms, world', '700mn–1.5bn pieces a year of public and commercial demand', 'Veru (FC2) and Cupid supply most of it', 'Anondita’s presentation (company estimate)'],
                         ['Device incentive scheme (PLI)', '₹3,420cr budget; **₹157cr paid** by Dec 2025', 'Production period ends FY27', 'Department of Pharmaceuticals, via The Core'],
                         ['US tariff on India', '10% since 24 Jul 2026 (50% in 2025)', 'No expiry date', 'The Week, Jul 2026'],
                         ['Trade-margin cap', 'Proposed 20% cap on the cost-to-price gap', 'Category by category more likely', 'Parliamentary committee, Aug 2026; Medical Buyer'],
@@ -331,12 +363,16 @@ export const healthProducts: SectorOverview = {
                     text: "**Tarsons** could not pass on a 25–70% jump in plastic costs: its export price rises were “close to zero”, and management said a 30–40% rise would hand share to multinationals sitting on imported stock. **Poly Medicure**'s weak spot is dialysis. Chinese dialysers enter duty-free through the ASEAN trade deal and pay 5% GST, while Poly Medicure pays 18% GST on its inputs; its kidney-care sales fell 3.8% in Q1 and it has asked for an anti-dumping duty. **Laxmi Dental**'s aligner brand held its price against funded rivals, so its sales were roughly flat in FY26 before recovering 28% in Q1. **Pricing power at home does not travel.**",
                 },
                 {
+                    label: 'Cost and approvals, not brand',
+                    text: "**Anondita**'s edge is cost. It builds its own dipping machines under a patent held by its managing director, laminates its own foil and prints its own packs, and says this lets it add lines faster and cheaper than rivals who import machinery; its gross margin rose from about 50% to 56% in FY26. It has the approvals that institutional buyers ask for (WHO-GMP, MDSAP for five regulated markets, South Africa's SABS) and qualified as a vendor under South Africa's national condom tender. Its brand is small: Cobra sells through 195 distributors in eight or nine states, while Manforce holds about 27% of the Indian market and Durex about 16% (company estimates). Prices on the government side are set by tender; as a small maker it can take up to 25% of a tender by matching the lowest bid. **My view: a real cost advantage in a commodity product, which protects margins only while the plant stays full.**",
+                },
+                {
                     label: 'Barely a moat: reselling and assembly',
                     text: "**DentalKart** has about 2–3% of Indian dental supply against 97% bought from offline dealers, and earns only 10–15% gross margin on multinational brands. It could not pass on the rupee's fall: “If we increase the prices, we fear that we might lose some customers.” Dentists use several suppliers, so switching costs are low. **OSEL** assembles LED screens from Chinese parts, sells phones under a Philips licence made by a contractor, and sells entry-level hearing aids to government schemes at ₹2,500–3,000 a unit; its clinic chain SFL sells at ₹35,000–40,000, which is the reason for buying it. **Neither has a moat yet; both are trying to buy or build one.**",
                 },
                 {
                     label: 'Competitors outside the list',
-                    text: "**BD**, **B. Braun**, Medtronic, Nipro and Chinese dialyser makers in hospital disposables, with **Meril** in heart devices; **Thermo Fisher**, **Corning** and **Eppendorf** in labware, plus Indian brands Abdos and Accumax; **Dentsply Sirona**, **Ivoclar**, **3M (Solventum)** and **Align Technology** in dentistry, with makeO–Zenyum and other funded aligner brands on price; **Medikabazaar** online; and the global “Big Five” hearing-aid makers (Sonova, Demant, WS Audiology, GN, Starkey) at the premium end.",
+                    text: "**BD**, **B. Braun**, Medtronic, Nipro and Chinese dialyser makers in hospital disposables, with **Meril** in heart devices; **Thermo Fisher**, **Corning** and **Eppendorf** in labware, plus Indian brands Abdos and Accumax; **Dentsply Sirona**, **Ivoclar**, **3M (Solventum)** and **Align Technology** in dentistry, with makeO–Zenyum and other funded aligner brands on price; **Medikabazaar** online; the global “Big Five” hearing-aid makers (Sonova, Demant, WS Audiology, GN, Starkey) at the premium end; and **Mankind** (Manforce), **Reckitt** (Durex), TTK (Skore), HLL Lifecare and **Cupid** in condoms, with **Veru** (FC2) the leading female-condom maker.",
                 },
             ],
         },
@@ -356,12 +392,16 @@ export const healthProducts: SectorOverview = {
                     text: "**Tarsons**'s standalone margin fell from 31.2% to 28.1% in Q1 and its gross margin from 71.4% to 67.1%, still above the 65% floor it promised; the group earned 23.6%. The bigger problem sits below the operating line: depreciation rose from ₹22cr in FY22 to ₹97cr in FY26 and interest from ₹4cr to ₹23cr, so profit fell from ₹101cr to ₹14cr. **Laxmi Dental** recovered from 11% in Q3 FY26 to 19.2% in Q1 FY27, but part of that came from a 62% fall in thin-margin scanner sales and lower share-based pay; adjusted operating profit rose only 8%. If it places the 800–1,000 scanners it plans this year, its gross margin will slip back. **Laxmi's margin is recovering; its quality needs another two quarters to judge.**",
                 },
                 {
+                    label: 'Rising, but not yet tested: Anondita',
+                    text: "**Anondita**'s operating margin has risen every half-year, from 32% in H1 FY25 to 37% in H2 FY26. Materials fell from 50% to 44% of sales as more went out under its own brand, the plant ran fuller and it changed its latex formula; other costs tripled to ₹18.4cr with listing fees, new rented buildings, certification and advertising. Natural rubber latex is the main input, and management says it buys ahead of the Kerala monsoon to smooth prices. Its own presentation assumes an operating margin of about 30% in FY27, lower than FY26, even though the managing director told the call margins would improve “110%”. **My view: the margin is good, but it has not yet been tested by a latex spike, a lost tender or the cost of building Cobra outside its home states.**",
+                },
+                {
                     label: 'Not structural: reselling and assembly',
                     text: "**DentalKart**'s margin fell to 0.4% in Q4 FY26 and recovered to 6.1% in Q1. Its gross margin was 33.6% a year earlier and 24.8% now, hit by own-brand stock-outs and a costlier rupee, and it cut its target band from 30–33% to 27–30% “on review of achievable mix and FX”. Digital equipment, its fastest-growing line, earns only 10–12% gross. **OSEL** earns about 18% overall but will not disclose segment margins; on its calls it gave hearing aids a 30–35% gross margin, LED screens about 15% and phones 25–30%. **Both margins depend on mix, not on any power to set price.**",
                 },
                 {
                     label: 'Working capital: the biggest drains',
-                    text: "**OSEL**'s operating cash was −₹69cr in FY25 and −₹23cr in FY26; LED projects can take 120 days to bill, and CRISIL puts its current assets at about 350 days of sales. Its first-half FY26 statement had counted about ₹50cr of borrowing as operating cash; corrected, that half's operating cash was about −₹40cr, not +₹10cr. **DentalKart**'s operating cash has been negative for three years (−₹11cr, −₹4cr, −₹25cr), as inventory days rose from 99 to 151 and stock grew another ₹12.7cr in Q1 FY27. **These two are growing on working capital, not on profit.**",
+                    text: "**OSEL**'s operating cash was −₹69cr in FY25 and −₹23cr in FY26; LED projects can take 120 days to bill, and CRISIL puts its current assets at about 350 days of sales. Its first-half FY26 statement had counted about ₹50cr of borrowing as operating cash; corrected, that half's operating cash was about −₹40cr, not +₹10cr. **DentalKart**'s operating cash has been negative for three years (−₹11cr, −₹4cr, −₹25cr), as inventory days rose from 99 to 151 and stock grew another ₹12.7cr in Q1 FY27. **Anondita** earned ₹34cr of profit in FY26 but only ₹11cr of operating cash, after −₹7cr in FY25: receivables rose ₹25cr and stock ₹7cr, and ₹37cr of its ₹65cr of Q4 sales went to the government, which pays in 120 days or more. The CFO expects export sales, paid in advance or by letter of credit, to fix this; the rights-issue document instead sets aside ₹25.7cr of new money for working capital. **These three are growing on working capital, not on profit.**",
                 },
                 {
                     label: 'Working capital: getting worse',
@@ -387,8 +427,9 @@ export const healthProducts: SectorOverview = {
                         ['DentalKart', 'Inventory up ₹12.7cr in the quarter; 120–150 inventory days near term', 'Net cash ₹47cr (Mar 2026); bank lines closed in July'],
                         ['OSEL Devices (H2 FY26 call)', '₹30cr borrowed against mutual funds as “interest arbitrage”', 'Borrowings ₹94cr; operating cash −₹23cr in FY26'],
                         ['Prevest Denpro (no Q1 call)', 'Capex done; no big spend needed', 'Debt-free; free cash ₹13cr in FY26'],
+                        ['Anondita Medicare (H2 FY26 call)', 'Cash to improve as exports are paid in advance; ~₹62cr capex on male-condom lines', 'Net debt ~₹21cr (Mar 2026); ₹91cr rights issue in Sep 2026; rated BWR BBB/Stable'],
                     ],
-                    note: 'OSEL and Prevest hold calls only half-yearly; their latest were on FY26 results. Cash-flow statements are filed half-yearly.',
+                    note: 'OSEL, Prevest and Anondita hold calls only half-yearly; their latest were on FY26 results. Cash-flow statements are filed half-yearly.',
                 },
             ],
         },
@@ -415,6 +456,10 @@ export const healthProducts: SectorOverview = {
                     text: "**OSEL** bought 90.69% of SFL, a hearing-clinic chain with ₹26–27cr of sales and a database of 100,000-plus patients, and says ₹500cr of revenue in FY27 is possible against ₹293cr in FY26; it targets ₹50cr of exports (₹23cr last year) and a port-side plant from April 2027. **DentalKart** has replaced its revenue guidance with a “North Star” of doubling every three to four years; 97% of dental supply is still bought offline, and it is piloting same-day delivery. **Both are growth stories that have not yet produced cash.**",
                 },
                 {
+                    label: 'Growth driver: condom tenders abroad and female condoms',
+                    text: "**Anondita** added 307 million pieces a year in February 2026 (to 869 million) and has about 250 million more on trial; it won ₹48.5cr of South African orders in June for delivery by September, under a five-year national tender. Its rights issue funds a ₹54.6cr female-condom plant of 120 million pieces a year, 60 million of it to run in FY27, a product it has made only on trial and which most aid buyers will take only after WHO/UNFPA pre-qualification, still pending. The August offer document projects turnover of about ₹205cr in FY27, ₹450cr in FY28 and ₹950cr in FY29. **My view: the capacity and the first export orders are real; the later numbers depend on a product not yet made at scale and an approval not yet won.**",
+                },
+                {
                     label: 'Delivering or beating',
                     text: "**Poly Medicure** delivered its promised second-half rise (+21% against 20%) and a 26.8% Indian margin in FY26 against a 25–27% guide, then beat the top of its margin band in Q1 and widened its Indian revenue guide up to ₹1,900–2,000cr. **Laxmi Dental** went from refusing to guide in May to a 15–20% growth and 18–20% margin aim in August, and delivered 19.2% in Q1.",
                 },
@@ -428,11 +473,11 @@ export const healthProducts: SectorOverview = {
                 },
                 {
                     label: 'Mixed',
-                    text: "**OSEL** grew 57% in FY26, but its second half was flat on the first after ₹25–30cr of LED sales slipped into April, its 5 lakh-phone order target is not confirmed as met, and it will start quarterly reporting “maybe from the third quarter”. No first-half FY27 results are out yet.",
+                    text: "**OSEL** grew 57% in FY26, but its second half was flat on the first after ₹25–30cr of LED sales slipped into April, its 5 lakh-phone order target is not confirmed as met, and it will start quarterly reporting “maybe from the third quarter”. No first-half FY27 results are out yet. **Anondita** delivered the South African orders it promised on the May call “in a few days” (₹43cr on 1 June, ₹5cr on 23 June). But the 250 million pieces of new male-condom capacity, due in full production “this year” and installed “by the second quarter”, were still on trial in August, with four lines now due by January 2027. Its female-condom plan shrank from 240 million pieces and ₹330cr of FY27 revenue on the call to 60 million pieces running in FY27 in the offer document, and nothing has been said since about the UN hearing in Geneva it expected in June. Its first-half results are due in October.",
                 },
                 {
                     label: 'My outlook',
-                    text: "Domestic consumables demand should grow about 10–14% a year to FY29, and exports 12–20% if the US tariff stays near 10% and West Asia shipping normalises. **I expect all five companies with measurable profit to compound earnings at about 15%: Poly Medicure, Laxmi Dental and Prevest on their own strengths, DentalKart and OSEL only if they fix their cash.** Poly Medicure's revenue should grow faster than that, but falling treasury income and rising depreciation hold back its earnings; Laxmi's adjusted operating profit was flat in FY26 and up only 8% in Q1. Tarsons's profit should jump once its plants fill, but from so low a base that a percentage says little.",
+                    text: "Domestic consumables demand should grow about 10–14% a year to FY29, and exports 12–20% if the US tariff stays near 10% and West Asia shipping normalises. **I expect five of the companies with measurable profit to compound earnings at about 15%: Poly Medicure, Laxmi Dental and Prevest on their own strengths, DentalKart and OSEL only if they fix their cash. Anondita should grow faster, about 20%, from a small base and with far wider error bars.** Its own ₹205cr plan for FY27 is 49% growth, slower than FY26's 78%, and more depreciation, a lower margin and new shares will take some of that before it reaches earnings. Poly Medicure's revenue should grow faster than that, but falling treasury income and rising depreciation hold back its earnings; Laxmi's adjusted operating profit was flat in FY26 and up only 8% in Q1. Tarsons's profit should jump once its plants fill, but from so low a base that a percentage says little.",
                 },
             ],
             tables: [
@@ -446,6 +491,7 @@ export const healthProducts: SectorOverview = {
                         ['Prevest Denpro', 'Exports and US private label; 3D resins; idle lines filling', '10% / **15%** / 22%'],
                         ['OSEL Devices', 'Hearing-aid clinics; displays; exports; working capital', '5% / **15%** / 25%'],
                         ['Vasa Denticity', 'Own brands in stock; gross margin back to 27–30%', '5% / **15%** / 25%'],
+                        ['Anondita Medicare', 'South African and Indian tenders; new lines; female condoms; getting paid', '5% / **20%** / 35%'],
                         ['Tarsons Products', 'New plants filling; depreciation and interest falling', 'Profit too small to estimate from'],
                     ],
                     note: 'My own judgement, not guidance. The growth each price needs is in the live valuation table in section 8.',
@@ -461,6 +507,7 @@ export const healthProducts: SectorOverview = {
                         ['DentalKart', 'No revenue guide; gross margin 27–30% (cut from 30–33%); stock-outs below 5% by Dec', 'Little', '**Walked back**: margin target cut; recovery from 0.4% to 6.1% started'],
                         ['OSEL Devices', '₹500cr-plus “possible”; exports ₹50cr (half-yearly calls)', 'SFL ~₹30cr; export plant not costed', '**Mixed**: +57% in FY26; H2 flat; cash statement corrected'],
                         ['Prevest Denpro', 'None for FY27 (June call); ₹100cr sales within three years (Nov 2025 call)', 'None needed', '**Missed**: H2 FY26 +12% against >20%; Q1 +21%'],
+                        ['Anondita Medicare', 'FY27 turnover ~₹205cr (Aug offer document); ₹250–500cr and ₹1,000cr in two years said on the May call; margin ~30%', '~₹62cr on male lines (250mn pieces now due by Jan 2027); ₹54.6cr female plant', '**Mixed**: South African orders won; new lines late; female plan halved; no H1 results yet'],
                     ],
                 },
             ],
@@ -468,7 +515,7 @@ export const healthProducts: SectorOverview = {
         {
             heading: '7. Risk factors',
             body: [
-                "The risks fall into six groups. For each, what management addressed and what the annual reports and rating agencies added.",
+                "The risks fall into seven groups. For each, what management addressed and what the annual reports and rating agencies added.",
             ],
             points: [
                 {
@@ -476,12 +523,16 @@ export const healthProducts: SectorOverview = {
                     text: "**OSEL** corrected a cash-flow statement only after investors spotted it; its spokesman said, “I am not a finance specialist”, and a promoter director holds the CFO role. It bought ₹44.3cr of goods in FY26 (about 15% of revenue) from Guardian Technologies, a promoter-group firm, issued warrants to a promoter at ₹268 while public investors paid ₹340, and lists SFL, the clinic chain it bought for ~₹30cr, among its common-control parties. Its auditor noted that stock quantities could not be matched directly between its bank statements and its books. **DentalKart** lost its CFO (March), company secretary (July) and an independent director (August); an investor said on the Q1 call that part of his earlier exchange had been removed from the transcript and recording, and earlier order figures were restated after “an internal error”. **These are the findings that decide my pass on both.**",
                 },
                 {
+                    label: 'Governance at Anondita: still tangled with the promoter’s firms',
+                    text: "**Anondita** took over its promoter's proprietorship in April 2024, yet its FY26 auditor still flags that the title deeds of all its properties, a ₹2.9cr bank loan, fixed deposits, a bank guarantee and 12 of its 15 vehicles remain in the old firm's name. The auditor's order report adds ₹14.6cr lent to its subsidiary in the year with no repayment schedule, and says advance income tax was not paid regularly. The accounts show a ₹4.9cr advance outstanding to Anondita Healthcare, a promoter-family partnership, a ₹2.2cr guarantee for that firm's car loan, and a factory rented from another promoter company. The September AGM asks to raise related-party limits to ₹55.5cr with the managing director and to let the subsidiary buy up to ₹20cr of goods from the partnership. Its Cobra brand sits in that 89%-owned subsidiary, which the managing director said he may list separately. The promoters also declined their share of the ₹91cr rights issue, and NSE fined the company for a late related-party filing. **None of this is fraud, but it is a lot for a company one year after listing.**",
+                },
+                {
                     label: 'Related parties and capital use at the larger ones',
                     text: "**Poly Medicure** paid ₹87cr for job work in FY26 (₹89cr in FY25) to Vitromed Healthcare, a promoter-group firm, which also bought ₹23cr of goods from Poly Medicure. Pay to its key managers was ₹47.4cr, about a seventh of group profit, and it paid ₹33cr for a bankrupt mineral-water company with no stated link to medical devices. Its auditor gave a clean opinion; goodwill of ₹274cr is the key audit matter. **Tarsons**'s auditor found that the edit log was not kept for changes by certain users with special access, a control weakness though not a qualification, and Tarsons guarantees ₹108.6cr of its Singapore subsidiary's loan. **Nothing here is fraud; all of it is worth watching.**",
                 },
                 {
                     label: 'Capital ahead of returns',
-                    text: "**Poly Medicure** raised ₹1,000cr in 2024 and bought two European companies, and its return on capital fell from 24% to 12%; treasury income was about 28% of pre-tax profit in FY26 and will shrink as the cash is spent. **Tarsons** has spent about ₹893cr, 12% over budget, and FY27 depreciation of ₹105–110cr plus about ₹20cr of interest will absorb most of its operating profit. CARE (April 2026) shows its interest cover falling from 10.4 times to 5.7 times and would downgrade above 3 times debt to operating profit. **Laxmi Dental** still had ₹54.7cr of IPO money unused 14 months after listing.",
+                    text: "**Poly Medicure** raised ₹1,000cr in 2024 and bought two European companies, and its return on capital fell from 24% to 12%; treasury income was about 28% of pre-tax profit in FY26 and will shrink as the cash is spent. **Tarsons** has spent about ₹893cr, 12% over budget, and FY27 depreciation of ₹105–110cr plus about ₹20cr of interest will absorb most of its operating profit. CARE (April 2026) shows its interest cover falling from 10.4 times to 5.7 times and would downgrade above 3 times debt to operating profit. **Laxmi Dental** still had ₹54.7cr of IPO money unused 14 months after listing. **Anondita** raised ₹69.5cr in its August 2025 listing and ₹91cr more in September 2026, and spent ₹63cr on plant in FY26; free cash was −₹27cr and −₹52cr in its two years as a company.",
                 },
                 {
                     label: 'Policy',
@@ -493,7 +544,7 @@ export const healthProducts: SectorOverview = {
                 },
                 {
                     label: 'Key people',
-                    text: "**Prevest**'s founder-MD, 72, had a medical emergency in June; the Q4 call was postponed and led by the CFO, his wife, and there is no stated succession plan. **DentalKart** has no professional chief executive and none is planned. **Small companies depend on their founders more than their disclosures admit.**",
+                    text: "**Prevest**'s founder-MD, 72, had a medical emergency in June; the Q4 call was postponed and led by the CFO, his wife, and there is no stated succession plan. **DentalKart** has no professional chief executive and none is planned. Brickwork calls **Anondita**'s management “promoter-centric”; its founder builds the machines himself, and a director, the company secretary and a promoter left its board or staff in FY26. **Small companies depend on their founders more than their disclosures admit.**",
                 },
             ],
         },
@@ -506,11 +557,11 @@ export const healthProducts: SectorOverview = {
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**Poly Medicure**, **Prevest**, **Laxmi Dental** and **DentalKart** hold net cash, so they are a little cheaper than their P/Es suggest. **Tarsons** carries about ₹269cr of net debt at the year-end (₹330–340cr by management's August figure), and its EV/EBITDA is far lower than its P/E because depreciation and interest eat most of its operating profit. **OSEL** carries ₹45cr of net debt, some of it borrowed against its own mutual funds.",
+                    text: "**Poly Medicure**, **Prevest**, **Laxmi Dental** and **DentalKart** hold net cash, so they are a little cheaper than their P/Es suggest. **Tarsons** carries about ₹269cr of net debt at the year-end (₹330–340cr by management's August figure), and its EV/EBITDA is far lower than its P/E because depreciation and interest eat most of its operating profit. **OSEL** carries ₹45cr of net debt, some of it borrowed against its own mutual funds. **Anondita** had about ₹21cr of net debt in March, but its ₹91cr rights issue in September leaves it with net cash, so its EV/EBITDA now overstates the debt.",
                 },
                 {
                     label: 'The quality of the earnings behind the price',
-                    text: "About 28% of **Poly Medicure**'s FY26 pre-tax profit was treasury income on its share-sale cash, which shrinks as the cash goes into plants and acquisitions; that is why Q1 profit fell 8% on 30% more revenue. **Prevest**'s other income is about 18% of pre-tax profit. **Laxmi Dental**'s adjusted operating profit was flat in FY26 and up 8% in Q1. **DentalKart**'s profit is at a low point, so its P/E is high partly for that reason, but the company has already cut the margin target the recovery depends on.",
+                    text: "About 28% of **Poly Medicure**'s FY26 pre-tax profit was treasury income on its share-sale cash, which shrinks as the cash goes into plants and acquisitions; that is why Q1 profit fell 8% on 30% more revenue. **Prevest**'s other income is about 18% of pre-tax profit. **Laxmi Dental**'s adjusted operating profit was flat in FY26 and up 8% in Q1. **DentalKart**'s profit is at a low point, so its P/E is high partly for that reason, but the company has already cut the margin target the recovery depends on. **Anondita**'s profit is real on the income statement but has not yet become cash: ₹11cr of operating cash against ₹34cr of profit in FY26.",
                 },
                 {
                     label: 'Reasonable',
@@ -522,7 +573,7 @@ export const healthProducts: SectorOverview = {
                 },
                 {
                     label: 'Stretched',
-                    text: "**Poly Medicure** needs about {need:Poly Medicure|25}% a year against my 15%: the price assumes the FY30 doubling arrives with earnings keeping pace, while treasury income falls and returns are at 12%. **DentalKart** needs about {need:Vasa Denticity|26}% against my 15%, from a business that has not produced operating cash in three years. Poly Medicure is a good business at a full price; DentalKart is not yet a good business.",
+                    text: "**Poly Medicure** needs about {need:Poly Medicure|25}% a year against my 15%: the price assumes the FY30 doubling arrives with earnings keeping pace, while treasury income falls and returns are at 12%. **DentalKart** needs about {need:Vasa Denticity|26}% against my 15%, from a business that has not produced operating cash in three years. **Anondita** needs about {need:Anondita Medicare|27}% a year against my 20%: the price already assumes the offer document's jump to ₹450cr of turnover in FY28 arrives with the margin intact and gets paid in cash. Poly Medicure is a good business at a full price; DentalKart is not yet a good business; Anondita may be a good business, but it has not yet shown it.",
                 },
                 {
                     label: 'Not measurable on earnings',
@@ -530,7 +581,7 @@ export const healthProducts: SectorOverview = {
                 },
                 {
                     label: 'What would move the labels',
-                    text: "For **Poly Medicure**, an anti-dumping duty on dialysers and acquired units reaching mid-teens margins would support faster growth. For **Laxmi Dental**, operating cash back above ₹30cr a year and adjusted operating profit growing with sales would lift my estimate toward what the price needs. For **Tarsons**, cell-culture orders in the second half and net debt below ₹300cr would make its earnings worth estimating.",
+                    text: "For **Poly Medicure**, an anti-dumping duty on dialysers and acquired units reaching mid-teens margins would support faster growth. For **Laxmi Dental**, operating cash back above ₹30cr a year and adjusted operating profit growing with sales would lift my estimate toward what the price needs. For **Tarsons**, cell-culture orders in the second half and net debt below ₹300cr would make its earnings worth estimating. For **Anondita**, a first half with positive operating cash, the old firm's assets and loans transferred, and female-condom sales booked would lift my estimate; a lower price would do the rest.",
                 },
             ],
             embed: 'valuation',
@@ -574,18 +625,24 @@ export const healthProducts: SectorOverview = {
             view: "**Fast growth, weak cash and weak governance.** Revenue grew 57% in FY26, but operating cash was negative in both FY25 and FY26 and it had to correct a cash-flow statement that counted ₹50cr of borrowing as operating cash. It buys ₹44cr a year from a promoter-group firm. The price needs about {need:OSEL Devices|15}% a year, matching my ~15%; the governance is the reason to pass.",
             watch: 'Positive operating cash in H1 FY27; related-party purchases falling; segment margins disclosed.',
         },
+        {
+            company: 'Anondita Medicare', rank: 7, stance: 'SCALEUP', segment: DEVICES,
+            what: "Makes male condoms in Noida for India's AIDS-control programme, its own Cobra brand (plus bought-in gloves and test kits) and, since June 2026, South African government orders; plans a female-condom plant. SME-listed, reporting half-yearly.",
+            view: "**Fast, profitable growth that has not yet turned into cash, from a company still tangled with its promoter's firms.** FY26 revenue rose 78% to ₹137cr at a 37% operating margin, but operating cash was only ₹11cr and free cash −₹52cr. Management's targets range from ₹205cr (August offer document) to ₹1,000cr within two years (May call), and its auditor flags property and loans still in the promoter's old firm. The price needs about {need:Anondita Medicare|27}% a year against my ~20%.",
+            watch: 'H1 FY27 operating cash and debtor days; the 250mn-piece lines running and female-condom sales booked; assets transferred out of the old proprietorship and loans to promoter firms repaid.',
+        },
     ],
 
     closing: {
         heading: '9. Summary review',
         body: [
             "**Dental products.** **Prevest Denpro: own**, in a small size: the most profitable maker here, debt-free, with spare capacity and a price that asks for less than it delivers. **Laxmi Dental: follow** for a better price or until operating cash recovers. **Vasa Denticity (DentalKart): pass** until margins, cash and the management team stabilise.",
-            "**Medical devices and lab plastics.** **Poly Medicure: follow** for a better price and proof that its new spending earns a return. **Tarsons: pass**: the plants are late again, it broke its no-loss promise within a quarter, and it cannot price up abroad. **OSEL Devices: pass** until cash follows growth and related-party dealings shrink.",
-            "**What would change my view.** For the better: an anti-dumping duty on dialysers (Poly Medicure); Tarsons's cell-culture orders arriving and net debt below ₹300cr; Laxmi Dental's operating cash above ₹30cr; DentalKart two quarters of rising gross margin with positive cash. For the worse: a broad 20% trade-margin cap; Prevest missing again or its founder unable to return; Poly Medicure's returns falling further.",
-            "**What to watch next quarter.** Poly Medicure's revenue run-rate and Middle East shipments; Tarsons's plant start-up and loss or profit; Laxmi Dental's scanner placements and margin; DentalKart's gross margin; Prevest's and OSEL's half-year results, including OSEL's operating cash.",
+            "**Medical devices and lab plastics.** **Poly Medicure: follow** for a better price and proof that its new spending earns a return. **Tarsons: pass**: the plants are late again, it broke its no-loss promise within a quarter, and it cannot price up abroad. **OSEL Devices: pass** until cash follows growth and related-party dealings shrink. **Anondita Medicare: pass**: the fastest grower and the richest margin here, but the price already assumes its most ambitious plan, its profit is stuck in government receivables, and its assets and dealings are still mixed up with the promoter's family firms.",
+            "**What would change my view.** For the better: an anti-dumping duty on dialysers (Poly Medicure); Tarsons's cell-culture orders arriving and net debt below ₹300cr; Laxmi Dental's operating cash above ₹30cr; DentalKart two quarters of rising gross margin with positive cash; Anondita a cash-positive half-year and a clean break from the promoter's old firm. For the worse: a broad 20% trade-margin cap; Prevest missing again or its founder unable to return; Poly Medicure's returns falling further.",
+            "**What to watch next quarter.** Poly Medicure's revenue run-rate and Middle East shipments; Tarsons's plant start-up and loss or profit; Laxmi Dental's scanner placements and margin; DentalKart's gross margin; Prevest's, OSEL's and Anondita's half-year results, including OSEL's and Anondita's operating cash and whether Anondita's South African orders were shipped.",
         ],
         bottomLine:
-            "Own the profitable maker (Prevest Denpro); follow Poly Medicure and Laxmi Denta for a better price and better cash; and pass on Tarsons Products, whose plants keep slipping, and on the reseller and the assembler whose cash and governance have not kept up with growth (Vasa Denticity, OSEL Devices).",
+            "Own the profitable maker (Prevest Denpro); follow Poly Medicure and Laxmi Denta for a better price and better cash; and pass on Tarsons Products, whose plants keep slipping, on the reseller and the assembler whose cash and governance have not kept up with growth (Vasa Denticity, OSEL Devices); and on Anondita Medicare, a fast-growing condom maker whose price asks for more than its cash and governance yet support.",
     },
 
     sources: [
@@ -611,5 +668,10 @@ export const healthProducts: SectorOverview = {
         { label: 'Vasa Denticity (DentalKart) Annual Report FY26 — NSE', url: 'https://archives.nseindia.com/annual_reports/SME_AR_31254_DENTALKART_2025_2026_A_12139155_03092026171827.pdf' },
         { label: 'Vasa Denticity Q1 FY27 earnings call transcript — NSE', url: 'https://nsearchives.nseindia.com/corporate/VASADENTICITY_17082026195240_Intimation_of_Transcript_Final.pdf' },
         { label: 'Prevest Denpro Annual Report FY26 — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/bcbe55ac-b495-4666-a22d-96a96c82f716.pdf' },
+        { label: 'Anondita Medicare Annual Report FY26 — NSE', url: 'https://archives.nseindia.com/annual_reports/SME_AR_31627_ANONDITA_2025_2026_A_5974729_05092026220118.pdf' },
+        { label: 'Anondita Medicare H2 FY26 investor presentation — NSE', url: 'https://nsearchives.nseindia.com/corporate/ANONDITA_27052026140858_AML_Intimation_of_Investor_Presentation_H2FY26.pdf' },
+        { label: 'Anondita Medicare H2 FY26 earnings call transcript — company', url: 'https://anonditamedicare.com/march/Anondita%20Medicare%20LImited%20-%20H2%20%20FY26%20Earnings%20Call%20Transcript.pdf' },
+        { label: 'Anondita Medicare rights issue Letter of Offer, August 2026 — NSE', url: 'https://nsearchives.nseindia.com/corporate/ANONDITA_28082026190941_Intimation_of_Final_Letter_of_Offer_Anondita.pdf' },
+        { label: 'Anondita Medicare rating rationale — Brickwork Ratings, May 2026', url: 'https://bcrisp.in///BLRHTML/HTMLDocument/ViewRatingRationaleInitial?id=208155' },
     ],
 };

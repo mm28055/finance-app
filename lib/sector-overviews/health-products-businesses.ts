@@ -10,7 +10,7 @@ const intro: OverviewSection[] = [
     {
         heading: 'How to read this tab',
         body: [
-            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it sells, where the money comes from and three charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed figures (Poly Medicure and Laxmi Dental consolidated, the others standalone); splits are from each company's latest presentation or call. Three of these companies are SME-listed; OSEL reports only half-yearly, while Prevest and DentalKart publish quarterly figures.",
+            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it sells, where the money comes from and three charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed figures (Poly Medicure, Laxmi Dental and Anondita consolidated, the others standalone); splits are from each company's latest presentation or call. Four of these companies are SME-listed; OSEL and Anondita report only half-yearly, while Prevest and DentalKart publish quarterly figures.",
         ],
     },
     {
@@ -35,6 +35,10 @@ const intro: OverviewSection[] = [
                 label: 'Hearing aids and electronics',
                 text: "Hearing aids for government schemes and clinics, alongside mobile phones and display screens (OSEL).",
             },
+            {
+                label: 'Condoms',
+                text: "Male condoms for government family-planning and AIDS-control programmes in India and South Africa and for its own Cobra brand, with female condoms planned (Anondita Medicare).",
+            },
         ],
     },
     {
@@ -48,7 +52,7 @@ const intro: OverviewSection[] = [
                 rows: [
                     ['**Hospitals, labs and distributors**', 'Poly Medicure, Tarsons, Prevest', 'Price lists, raised when costs rise (more easily in India than abroad)', 'Normal credit terms'],
                     ['**Dentists and dental groups**', 'Laxmi Dental, DentalKart, Prevest', 'Per case or per order', 'Fast in India; slower abroad'],
-                    ['**Government tenders and enterprise projects**', 'OSEL', 'Won on price', 'Slow: up to 120 days'],
+                    ['**Government tenders and enterprise projects**', 'OSEL, Anondita', 'Won on price', 'Slow: up to 120 days or more'],
                 ],
             },
         ],
@@ -139,6 +143,35 @@ const profiles: BusinessProfile[] = [
         money: "Screener shows **₹45cr of net debt**, with borrowings up from ₹9cr in FY22 to ₹94cr in FY26 and operating cash flow negative in FY25 and FY26 as unpaid customer bills rose (LED projects can take 120 days to collect). On the call it confirmed that about ₹50cr of short-term borrowing had been wrongly counted as operating cash in an earlier cash-flow statement and has been corrected; the manager answering said he was not a finance specialist. IPO money raised for working capital sits in mutual funds while it borrows ₹30cr against them, which roughly doubled interest costs in H2 FY26. Capex for the JNPA hub is not yet costed. The annual report shows ₹44.3cr of purchases in FY26 (about 15% of sales) from Guardian Technologies, a promoter-group company, and warrants issued to a promoter at ₹268 a share while public investors paid ₹340. Promoters hold **65%**, down from 72% in September 2024. It plans quarterly results from Q3 FY27.",
         watch: ["First quarterly results and whether operating cash flow turns positive.", "Integration of the SFL clinics and hearing-aid margins.", "The size and funding of the JNPA hub."],
         charts: healthProductsCharts['OSEL Devices'],
+    },
+    {
+        company: 'Anondita Medicare',
+        inShort: ["**A low-cost condom maker in Noida** that supplies India's AIDS-control programme, sells its own Cobra brand and, since June 2026, ships to South Africa; SME-listed and reporting half-yearly.", "**Good:** FY26 sales rose 78% to ₹137cr at a 37% operating margin, and capacity has grown by more than half. **Bad:** only ₹11cr of that year's profit came in as cash, management's targets contradict each other, and property and loans still sit with the promoter's old firm.", "**Verdict: pass.** A real, fast-growing business, but the price assumes its boldest plans come true and the cash and governance have not caught up."],
+        tagline: "An SME-listed maker of male latex condoms for government programmes, its own Cobra brand and export tenders, planning to add female condoms.",
+        revenue: '₹137cr (FY26, consolidated)',
+        products: [
+            { name: 'Male condoms', text: "Latex condoms in many flavours and textures, each one tested electronically for holes. About ₹118cr of FY26 sales from roughly 432 million pieces; capacity is now 869 million pieces a year with 250 million more on trial." },
+            { name: 'Cobra brand', text: "Its own retail brand, owned by an 89%-held subsidiary, sold through 26 super stockists, 195 distributors and about 4,600 shops in eight or nine states, mainly in North and East India." },
+            { name: 'Government supply', text: "Condoms for the Government of India's Nirodh and AIDS-control programmes under a rate contract, and since June 2026 for South Africa's national condom tender through local distributors." },
+            { name: 'Gloves, test kits and pills', text: "Surgical and household gloves, pregnancy test kits, emergency contraceptive pills and similar products, mostly made by others under the Cobra name: about ₹19cr of FY26 sales." },
+            { name: 'Female condoms (planned)', text: "Made so far only on trial, on machines it designed itself. A ₹54.6cr plant for 120 million pieces a year is being funded by its September rights issue, with 60 million pieces meant to run in FY27." },
+        ],
+        revenueText: "FY26 sales were ₹137cr. The CFO put **about 42% to the government** and **58% to its own brand and other buyers**; by product, **condoms were ₹118cr** and gloves and other items about ₹19cr. Exports were under 10% of sales, but ₹48.5cr of South African orders were due for delivery by September 2026. It does not give margins by channel; management says its own brand earns more than government supply.",
+        mixes: [
+            { caption: 'Revenue by customer, FY26 (call)', parts: [{ label: 'Government', share: 42 }, { label: 'Own brand and other buyers', share: 58 }] },
+            { caption: 'Revenue by product, FY26 (call)', parts: [{ label: 'Condoms', share: 86 }, { label: 'Gloves and other products', share: 14 }] },
+        ],
+        customers: ["**The Government of India**, through its AIDS-control and Nirodh programmes: about 42% of sales, paid in 120 days or more and billed mostly in the last quarter.", "**Shops and chemists**, through super stockists and distributors for the Cobra brand; it gives new distributors credit to win them.", "**South Africa's government condom programme**, through local distributors (₹43cr and ₹5cr orders in June 2026), with Brazil, Kenya, Nepal and aid agencies as targets."],
+        difficulty: { level: 'Medium', text: "Condoms are a regulated medical device made to a global standard (ISO 4074), and export tenders need approvals such as MDSAP and South Africa's SABS, which it has. But the product is standard, and many Indian and Asian makers can supply it. Female condoms are harder: few firms make them, and most aid buyers need WHO/UNFPA pre-qualification, which it does not yet have." },
+        moat: "Low cost: it builds its own machines under a patent held by its managing director and does its own foil and packaging, and it holds the approvals tender buyers ask for. The brand is small against Manforce and Durex, and government prices are set by tender.",
+        salesDrivers: ["**Government tenders**: management expects Indian government sales to grow only 5–10% and wants to hold them near 40% of the total because of the slow payment.", "**Exports**: a five-year South African tender (about 1 billion pieces a year, of which it hopes for a quarter) and early orders from Kenya, Nepal and Brazil; its presentation targets 25% of sales from exports in FY27.", "**New capacity**: 307 million pieces added in February 2026 and 250 million more due by January 2027; the CFO put the maximum turnover on this capacity at about ₹325cr.", "**Female condoms**: the offer document plans 60 million pieces in FY27; on the May call the managing director spoke of ₹330cr of female-condom revenue in FY27, a figure the later document does not repeat.", "**The Cobra brand**: expected to grow 5–10% this year in its existing states, supported by advertising and distributor credit."],
+        inputs: "**Natural rubber latex from Kerala** is the main raw material, with silicone oil, foil and packaging, much of which it makes itself. Materials were 44% of sales in FY26, down from 50%.",
+        costEffect: "**Partly passed on.** Government and export prices are fixed when a tender is won, so a latex spike in between hurts; it buys latex ahead of the Kerala monsoon to smooth the cost. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 4 points (37% to 33%). **What happened:** India's natural rubber price index eased about 5% from H1 FY25 to H2 FY26 while the margin rose from 32% to 37%. Most of the gain came from selling more under its own brand, running the plant fuller and a cheaper latex formula, not from cheaper rubber.",
+        competitors: [{ name: 'Mankind (Manforce) and Reckitt (Durex)', note: 'The two biggest Indian brands, with about 27% and 16% of the market by company estimates; far bigger advertising budgets.' }, { name: 'HLL Lifecare, TTK (Skore) and Cupid', note: 'Established Indian makers; Cupid is also a major female-condom supplier to aid agencies.' }, { name: 'Veru (FC2)', note: 'The US-based leader in female condoms, the market Anondita wants to enter.' }],
+        position: "**A small player in a ₹2,600–2,800cr Indian condom market** (company estimate), strong in North India, which says it was the only supplier on the Government of India's latest Nirodh rate contract.",
+        money: "Screener shows **₹21cr of net debt** at March 2026 (₹34cr of borrowings, ₹10cr of cash); its ₹91cr rights issue at ₹950 a share, allotted in September 2026, now leaves it with net cash. It raised ₹69.5cr at its August 2025 listing and spent ₹63cr on plant in FY26, so free cash was −₹52cr. Brickwork rates its bank loans BBB/Stable. The auditor notes that the deeds of all its properties, a ₹2.9cr bank loan and 12 of its 15 vehicles are still in the name of the promoter's old business, and the accounts show a ₹4.9cr advance to a promoter-family partnership and a factory rented from a promoter company. Promoters hold **62.4%**, up from 61.8% in September 2025; they did not take up their rights shares, which takes them to about 59%.",
+        watch: ["H1 FY27 operating cash and whether debtor days fall as exports grow.", "The 250mn-piece lines and the female-condom plant running, and WHO/UNFPA pre-qualification.", "Assets and loans moved out of the old proprietorship; advances to promoter firms repaid."],
+        charts: healthProductsCharts['Anondita Medicare'],
     },
     {
         company: 'Prevest Denpro',
