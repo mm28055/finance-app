@@ -1,6 +1,6 @@
 // -----------------------------------------------------------------------------
-// NSE corporate-announcements feed — shared by the daily filings digest
-// (scripts/sync-filings.ts) and the exchange transcript sync
+// NSE corporate-announcements and insider-trading feeds — shared by the daily
+// filings digest (scripts/sync-filings.ts) and the exchange transcript sync
 // (scripts/sync-exchange-transcripts.ts).
 //
 // NSE's API refuses requests without the cookies its home page sets, so the
@@ -66,6 +66,134 @@ export async function nseListedIsins(): Promise<Set<string>> {
         for (const m of (await res.text()).matchAll(/\bIN[A-Z0-9]{10}\b/g)) isins.add(m[0]);
     }
     return isins;
+}
+
+// -----------------------------------------------------------------------------
+// Insider-trading disclosures (SEBI PIT Reg 7(2)): promoters, directors and
+// officers must report their trades within two trading days. Since May 2026 NSE
+// publishes these only as XBRL filings: `corporates-pit-gg` lists the filings
+// and each one's XBRL file carries the numbers. (The older `corporates-pit`
+// feed, with the numbers inline, stopped on 2 May 2026.)
+// -----------------------------------------------------------------------------
+
+/** One insider-trading filing in NSE's list. */
+export interface NsePitFiling {
+    appId: string;
+    /** "28-Sep-2026 12:23:20" (IST). */
+    broadcastDateTime: string;
+    companyName: string;
+    symbol: string;
+    /** "Regulation 7 (2)" for trades; other PIT regulations also appear. */
+    regulation: string;
+    /** "Original" or "Revision". */
+    typeOfSubmission?: string;
+    /** Human-readable copy of the filing. */
+    ixbrl?: string;
+    /** Machine-readable XBRL file with the numbers. */
+    xmlFileName?: string;
+    [key: string]: any;
+}
+
+/** Every insider-trading filing (main board and SME) between two DD-MM-YYYY dates, inclusive. */
+export async function nseInsiderFilings(from: string, to: string): Promise<NsePitFiling[]> {
+    const cookie = await nseCookie();
+    const out: NsePitFiling[] = [];
+    for (const index of ['equities', 'sme']) {
+        const res = await fetch(`https://www.nseindia.com/api/corporates-pit-gg?index=${index}&from_date=${from}&to_date=${to}`, {
+            headers: { 'User-Agent': NSE_UA, Cookie: cookie, Referer: 'https://www.nseindia.com/companies-listing/corporate-filings-insider-trading' },
+        });
+        if (!res.ok) throw new Error(`NSE insider-trading ${index} feed returned ${res.status}`);
+        const data = await res.json();
+        const rows = Array.isArray(data) ? data : data?.data;
+        if (Array.isArray(rows)) out.push(...rows);
+        await sleep(1500);
+    }
+    return out;
+}
+
+/** One person's trade inside an insider-trading filing. Percentages are of the company's shares (0-100). */
+export interface PitTrade {
+    /** "Promoters", "Promoter Group", "Director", "Key Managerial Personnel", "Other", ... */
+    category: string;
+    person: string;
+    /** "Equity", "Warrants", ... */
+    instrument: string;
+    /** "Buy", "Sell", "Pledge", "Pledge Revoke", "Invocation of pledge", ... as filed. */
+    transactionType: string;
+    /** "Market Sale", "Pledge Creation", "Inter-se-Transfer", "Gift", "ESOP", ... as filed. */
+    mode: string;
+    sharesBefore: number | null;
+    pctBefore: number | null;
+    shares: number | null;
+    /** Rupees, as filed (may be 0 or missing for pledges). */
+    value: number | null;
+    sharesAfter: number | null;
+    pctAfter: number | null;
+    /** yyyy-mm-dd */
+    fromDate: string;
+    toDate: string;
+}
+
+export interface PitDisclosure {
+    isin: string;
+    symbol: string;
+    company: string;
+    regulation: string;
+    revised: boolean;
+    trades: PitTrade[];
+}
+
+/**
+ * Reads the numbers out of one insider-trading XBRL file. Returns null if the
+ * file cannot be fetched. The XBRL states holdings as fractions (0.0065 = 0.65%);
+ * they are returned here as percentages. A few filers type the percentage itself,
+ * so callers should sanity-check against the company's share count.
+ */
+export async function nsePitDisclosure(xmlUrl: string): Promise<PitDisclosure | null> {
+    let xml: string;
+    try {
+        const res = await fetch(xmlUrl, { headers: { 'User-Agent': NSE_UA } });
+        if (!res.ok) return null;
+        xml = await res.text();
+    } catch {
+        return null;
+    }
+    const byCtx = new Map<string, Record<string, string>>();
+    for (const m of xml.matchAll(/<in-bse-co:(\w+)\s+contextRef="([^"]+)"[^>]*>([^<]*)<\/in-bse-co:\1>/g)) {
+        const ctx = byCtx.get(m[2]) || {};
+        ctx[m[1]] = m[3].trim();
+        byCtx.set(m[2], ctx);
+    }
+    const head = byCtx.get('MainI') || {};
+    const num = (s?: string) => { const n = parseFloat(String(s ?? '').replace(/,/g, '')); return Number.isFinite(n) ? n : null; };
+    const pct = (s?: string) => { const n = num(s); return n === null ? null : n * 100; };
+    const trades: PitTrade[] = [];
+    for (const [ctx, f] of byCtx) {
+        if (ctx === 'MainI' || !f.NameOfThePerson) continue;
+        trades.push({
+            category: f.CategoryOfPerson || '',
+            person: f.NameOfThePerson,
+            instrument: f.TypeOfInstrument || '',
+            transactionType: f.SecuritiesAcquiredOrDisposedTransactionType || '',
+            mode: f.ModeOfAcquisitionOrDisposal || '',
+            sharesBefore: num(f.SecuritiesHeldPriorToAcquisitionOrDisposalNumberOfSecurity),
+            pctBefore: pct(f.SecuritiesHeldPriorToAcquisitionOrDisposalPercentageOfShareholding),
+            shares: num(f.SecuritiesAcquiredOrDisposedNumberOfSecurity),
+            value: num(f.SecuritiesAcquiredOrDisposedValueOfSecurity),
+            sharesAfter: num(f.SecuritiesHeldPostAcquistionOrDisposalNumberOfSecurity),
+            pctAfter: pct(f.SecuritiesHeldPostAcquistionOrDisposalPercentageOfShareholding),
+            fromDate: f.DateOfAllotmentAdviceOrAcquisitionOfSharesOrSaleOfSharesSpecifyFromDate || '',
+            toDate: f.DateOfAllotmentAdviceOrAcquisitionOfSharesOrSaleOfSharesSpecifyToDate || '',
+        });
+    }
+    return {
+        isin: head.ISINCode || '',
+        symbol: head.Symbol || '',
+        company: head.NameOfTheCompany || '',
+        regulation: head.DisclosureUnderRegulation || '',
+        revised: /^true$/i.test(head.RevisedFilling || ''),
+        trades,
+    };
 }
 
 /** "25-Sep-2026 18:23:48" (IST) -> Date, or null. */
