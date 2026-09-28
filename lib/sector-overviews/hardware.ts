@@ -478,15 +478,15 @@ export const hardware: SectorOverview = {
                 },
                 {
                     label: 'Reasonable',
-                    text: "**Rashi** needs about 12% a year, roughly my estimate, for a distributor that has grown sales about 22% a year for five years. But its trailing profit includes its best quarters ever: if the profit margin returned to the 1.5–1.75% its CFO calls normal, today's profit would be about 15–27% too high. **A fair price for a full cycle, not a cheap one.**",
+                    text: "**Rashi** needs about {need:Rashi Peripheral|12}% a year, roughly my estimate, for a distributor that has grown sales about 22% a year for five years. But its trailing profit includes its best quarters ever: if the profit margin returned to the 1.5–1.75% its CFO calls normal, today's profit would be about 15–27% too high. **A fair price for a full cycle, not a cheap one.**",
                 },
                 {
                     label: 'Full',
-                    text: "**GNG** needs about 26% a year against my ~22%. That is below what it is delivering now (profit +56% in Q1, and guidance implying profit growth of roughly 45–50% in FY27), but part of the margin is stock gains that reverse when memory prices fall, and the cash has not followed the profit. I would pay this only once operating cash turns positive.",
+                    text: "**GNG** needs about {need:GNG Electronics|26}% a year against my ~22%. That is below what it is delivering now (profit +56% in Q1, and guidance implying profit growth of roughly 45–50% in FY27), but part of the margin is stock gains that reverse when memory prices fall, and the cash has not followed the profit. I would pay this only once operating cash turns positive.",
                 },
                 {
                     label: 'Full, with an option',
-                    text: "**Control Print** needs about 15% a year against my ~11%, so it is also full. The label hides an option as well as a risk: trailing profit (₹39cr) is held down by ₹31.2cr of foreign losses that earn no tax relief, while the Indian business alone made ₹80cr after tax in FY26. If the Italian loss falls to the €1.5m management targeted in May, group profit rises sharply without the core growing at all; if more money goes to Italy, it does not. **Today the market is roughly paying for the core business alone.**",
+                    text: "**Control Print** needs about {need:Control Print|15}% a year against my ~11%, so it is also {label:Control Print|full}. The label hides an option as well as a risk: trailing profit (₹39cr) is held down by ₹31.2cr of foreign losses that earn no tax relief, while the Indian business alone made ₹80cr after tax in FY26. If the Italian loss falls to the €1.5m management targeted in May, group profit rises sharply without the core growing at all; if more money goes to Italy, it does not. **Today the market is roughly paying for the core business alone.**",
                 },
                 {
                     label: 'Not measurable on earnings',
@@ -505,7 +505,7 @@ export const hardware: SectorOverview = {
         {
             company: 'GNG Electronics', rank: 1, stance: 'SCALEUP', segment: TRADE,
             what: "Buys retired business laptops and desktops in bulk, refurbishes them in Navi Mumbai, Sharjah and the US, and sells them under its Electronics Bazaar brand with warranties of up to three years; about 64% of revenue is earned abroad.",
-            view: "**The best growth here, bought with cash it has not yet earned back.** Revenue +32% in Q1 at a 12% operating margin, and FY27 guidance raised to 30%. But operating cash was negative ₹215cr in FY26, net debt is back at ₹406cr a year after a ₹400cr share issue, and the overseas profit is audited by a small Sharjah firm. The price needs about 26% a year against my ~22%.",
+            view: "**The best growth here, bought with cash it has not yet earned back.** Revenue +32% in Q1 at a 12% operating margin, and FY27 guidance raised to 30%. But operating cash was negative ₹215cr in FY26, net debt is back at ₹406cr a year after a ₹400cr share issue, and the overseas profit is audited by a small Sharjah firm. The price needs about {need:GNG Electronics|26}% a year against my ~22%.",
             watch: 'Operating cash turning positive in the September half; gross margin holding if memory prices ease; net debt against the ~₹300cr promised.',
         },
         {
@@ -517,7 +517,7 @@ export const hardware: SectorOverview = {
         {
             company: 'Control Print', rank: 3, stance: 'TURNAROUND', segment: MAKE,
             what: "Makes coding and marking printers that print dates, batch codes and barcodes on packs, and sells the inks, spares and service; also owns a loss-making sachet-packaging business in Italy and a small track-and-trace unit.",
-            view: "**A good core business with an expensive, unaudited detour.** The Indian business earns about 60% gross margin, about 86% of revenue is recurring and it holds net cash. But the foreign subsidiaries lost ₹31.2cr in FY26 in accounts no auditor checked, break-even slipped to H1 FY28 and Q1 standalone revenue grew only 4.2%. The price needs about 15% a year against my ~11%.",
+            view: "**A good core business with an expensive, unaudited detour.** The Indian business earns about 60% gross margin, about 86% of revenue is recurring and it holds net cash. But the foreign subsidiaries lost ₹31.2cr in FY26 in accounts no auditor checked, break-even slipped to H1 FY28 and Q1 standalone revenue grew only 4.2%. The price needs about {need:Control Print|15}% a year against my ~11%.",
             watch: 'The Italian loss falling towards €1.5m a year; core growth back to 10–15% after the price rise; the final QR-code rule for medicines.',
         },
         {
@@ -532,7 +532,7 @@ export const hardware: SectorOverview = {
         heading: '9. Summary review',
         body: [
             "**Refurbishing and distributing.** **GNG Electronics: follow.** The most structural growth here, but its cash, its debt and its overseas audit need to catch up with its profits. **Rashi Peripheral: follow.** A fair price for a well-run distributor in a very good year; the year will not last.",
-            "**Making and servicing equipment.** **Control Print: wait** until the Italian losses clearly shrink; the price is full for my ~11%, and the core alone is worth owning at the right price. **TVS Electronics: avoid.** Shrinking operating profit, a reversed margin, large unprovided tax claims and a promoter brand fee.",
+            "**Making and servicing equipment.** **Control Print: wait** until the Italian losses clearly shrink; the price is {label:Control Print|full} for my ~11%, and the core alone is worth owning at the right price. **TVS Electronics: avoid.** Shrinking operating profit, a reversed margin, large unprovided tax claims and a promoter brand fee.",
             "**What would change my view.** For the better: GNG's operating cash turning positive while its margin holds; Control Print fixing or closing Italy. For the worse: memory prices falling in 2027 while GNG and Rashi hold large stocks; dealers cutting their stocks; another loss at TVS Electronics.",
             "**What to watch next quarter.** GNG: cash flow and net debt in the September half-year accounts. Rashi: growth, the price share of it, and VDA. Control Print: Italian losses and core growth. TVS Electronics: a return to profit, and whether it holds a call.",
         ],

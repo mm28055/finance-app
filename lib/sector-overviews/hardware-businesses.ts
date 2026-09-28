@@ -58,7 +58,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'GNG Electronics',
-        inShort: ["**India's largest refurbisher of laptops and desktops**, trading as Electronics Bazaar. It buys used business laptops in bulk, repairs and tests them, and resells them with a warranty in 49 countries, India included.", "**Good:** sales grew 34% in FY26 and the margin is rising as dearer new laptops push buyers to refurbished ones. **Bad:** almost all the profit has gone into stock and receivables, so operating cash flow was negative ₹215cr in FY26 and net debt rose to ₹406cr by June 2026.", "**Verdict: follow.** A real growth story, but it leans on a memory-chip shortage that will not last for ever, and the cash is tied up in stock. The price is full: it needs about 26% a year against my ~22%."],
+        inShort: ["**India's largest refurbisher of laptops and desktops**, trading as Electronics Bazaar. It buys used business laptops in bulk, repairs and tests them, and resells them with a warranty in 49 countries, India included.", "**Good:** sales grew 34% in FY26 and the margin is rising as dearer new laptops push buyers to refurbished ones. **Bad:** almost all the profit has gone into stock and receivables, so operating cash flow was negative ₹215cr in FY26 and net debt rose to ₹406cr by June 2026.", "**Verdict: follow.** A real growth story, but it leans on a memory-chip shortage that will not last for ever, and the cash is tied up in stock. The price is {label:GNG Electronics|full}: it needs about {need:GNG Electronics|26}% a year against my ~22%."],
         tagline: "India's biggest refurbisher of used business laptops and desktops, selling under the Electronics Bazaar brand in India, the US, Europe and the Middle East.",
         revenue: '₹1,891cr (FY26, consolidated)',
         products: [
@@ -114,7 +114,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Control Print',
-        inShort: ["**India's home-grown maker of coding and marking printers**: machines on factory lines that print the date, batch number and codes on packs, plus the inks, spares and servicing that go with them.", "**Good:** a sticky, cash-generating core business with ₹58cr of net cash and more than 23,000 printers in use. **Bad:** the margin has fallen from about 25% to 13% as staff costs rose and new packaging and track-and-trace ventures lose money.", "**Verdict: wait.** The core is sound, but I want to see the Italian packaging business stop losing money first. The price is full: it needs about 15% a year against my ~11%."],
+        inShort: ["**India's home-grown maker of coding and marking printers**: machines on factory lines that print the date, batch number and codes on packs, plus the inks, spares and servicing that go with them.", "**Good:** a sticky, cash-generating core business with ₹58cr of net cash and more than 23,000 printers in use. **Bad:** the margin has fallen from about 25% to 13% as staff costs rose and new packaging and track-and-trace ventures lose money.", "**Verdict: wait.** The core is sound, but I want to see the Italian packaging business stop losing money first. The price is {label:Control Print|full}: it needs about {need:Control Print|15}% a year against my ~11%."],
         tagline: "Indian maker of industrial coding and marking printers and their inks, with newer packaging, track-and-trace and safety-products businesses.",
         revenue: '₹482cr (FY26, consolidated)',
         products: [

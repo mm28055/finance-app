@@ -479,11 +479,11 @@ export const finance: SectorOverview = {
                 },
                 {
                     label: 'Fits: the three banks',
-                    text: "**SBI** needs only about 6% a year against my ~10%: the price assumes its return on equity falls well below today's, which would need a far bigger rise in bad loans than Q1's small uptick. **ICICI** needs about 11–12% against my ~13%, because the market already pays for its quality. **HDFC Bank** needs about 9–10% against my ~10%, the thinnest cushion of the three: it only just fits, so the price allows for a slow margin recovery but not for a messy succession or a further slide in returns.",
+                    text: "**SBI** needs only about {need:State Bank of India|6}% a year against my ~10%: the price assumes its return on equity falls well below today's, which would need a far bigger rise in bad loans than Q1's small uptick. **ICICI** needs about {need:ICICI Bank|11–12}% against my ~13%, because the market already pays for its quality. **HDFC Bank** needs about {need:HDFC Bank|9–10}% against my ~10%, the thinnest cushion of the three: it only just fits, so the price allows for a slow margin recovery but not for a messy succession or a further slide in returns.",
                 },
                 {
                     label: 'Fits on paper: the non-banks, discounted for a reason',
-                    text: "**Northern Arc** needs about 7% a year against my ~14%, **Manba** about 9% against my ~12% and **OnEMI** about 13% against my ~19%. The gaps are wide because the market discounts what the headlines hide: Northern Arc's accounting swing and private-equity selling, OnEMI's losses outside its credit-cost line and quick return to the market for capital, Manba's own-book bad loans and reliance on Maharashtra. **I would not buy any of them on the P/E alone.**",
+                    text: "**Northern Arc** needs about {need:Northern ARC Capital|7}% a year against my ~14%, **Manba** about {need:Manba Finance|9}% against my ~12% and **OnEMI** about {need:OnEMI Technology|13}% against my ~19%. The gaps are wide because the market discounts what the headlines hide: Northern Arc's accounting swing and private-equity selling, OnEMI's losses outside its credit-cost line and quick return to the market for capital, Manba's own-book bad loans and reliance on Maharashtra. **I would not buy any of them on the P/E alone.**",
                 },
                 {
                     label: 'P/E flatters lenders at the top of the credit cycle',
@@ -502,37 +502,37 @@ export const finance: SectorOverview = {
         {
             company: 'ICICI Bank', rank: 1, stance: 'COMPOUNDER', segment: BANKS,
             what: "India's second-largest private bank, lending to households, small businesses, farmers and companies, with life and general insurance, fund-management and broking companies.",
-            view: "**The best-run big bank, priced for it.** Return on equity of 16–19% for four years, a core margin flat at 4.28% through rate cuts, loans up 19.6% and gross bad loans down to 1.38%. But Q1 profit growth of 15.9% rests on a 0.32% credit cost that management calls about 0.50% in a normal year, and deposits grew only 14%. The price needs about 11–12% a year against my ~13%.",
+            view: "**The best-run big bank, priced for it.** Return on equity of 16–19% for four years, a core margin flat at 4.28% through rate cuts, loans up 19.6% and gross bad loans down to 1.38%. But Q1 profit growth of 15.9% rests on a 0.32% credit cost that management calls about 0.50% in a normal year, and deposits grew only 14%. The price needs about {need:ICICI Bank|11–12}% a year against my ~13%.",
             watch: 'Deposit growth closing the gap with loans; credit cost back toward 0.50%; release of the ₹1,283cr RBI-ordered farm provision.',
         },
         {
             company: 'HDFC Bank', rank: 2, stance: 'COMPOUNDER', segment: BANKS,
             what: "India's largest private bank, lending to households, small businesses and companies from about 9,700 branches; merged with HDFC Ltd, the mortgage lender, in 2023.",
-            view: "**Clean loans, a franchise in transition.** Gross bad loans are 1.17% and provisions ample, but the margin fell to 3.26%, cheap deposits to 32% and return on equity to 13.8%, and standalone profit rose only 5% (9.8% adjusted). The chairman, CEO and CFO all change within about eight months, with a Supreme Court appeal involving the CEO pending. The price needs about 9–10% a year against my ~10%, so it only just fits.",
+            view: "**Clean loans, a franchise in transition.** Gross bad loans are 1.17% and provisions ample, but the margin fell to 3.26%, cheap deposits to 32% and return on equity to 13.8%, and standalone profit rose only 5% (9.8% adjusted). The chairman, CEO and CFO all change within about eight months, with a Supreme Court appeal involving the CEO pending. The price needs about {need:HDFC Bank|9–10}% a year against my ~10%, so it only just fits.",
             watch: 'An RBI-approved new CEO before 26 October; the margin steadying near 3.3% as bonds roll off; cheap deposits back above 34%.',
         },
         {
             company: 'State Bank of India', rank: 3, stance: 'CYCLICAL', segment: BANKS,
             what: "India's largest bank, mainly government-owned, with the largest deposit base and branch network, lending to households, farmers, small firms and big companies.",
-            view: "**Cheap for a reason, but cheap enough.** Return on equity about 16% on filed figures (17.9% on its own measure), a 3.00% domestic margin, credit cost of 0.27% and loan-growth guidance raised to 14–15%. Against that, deposits grew 9.7% while loans grew 18.6%, bad loans rose in rupees and the ECL number slipped to Q2. The price needs about 6% a year against my ~10%.",
+            view: "**Cheap for a reason, but cheap enough.** Return on equity about 16% on filed figures (17.9% on its own measure), a 3.00% domestic margin, credit cost of 0.27% and loan-growth guidance raised to 14–15%. Against that, deposits grew 9.7% while loans grew 18.6%, bad loans rose in rupees and the ECL number slipped to Q2. The price needs about {need:State Bank of India|6}% a year against my ~10%.",
             watch: 'The ECL impact due with Q2 results; early-overdue large loans (₹1,687cr, up from ₹932cr); domestic margin at or above 3%.',
         },
         {
             company: 'Northern ARC Capital', rank: 4, stance: 'SCALEUP', segment: NBFC,
             what: "Northern Arc: a non-bank lender that started by lending to and raising money for other lenders and now mostly lends directly to consumers, small businesses and rural borrowers.",
-            view: "**A good transition, a soft quarter and noisy accounts.** Direct loans are 64% of the book and gross bad loans 1%, but the margin fell to 9.3%, profit fell 14% on the quarter and return on equity is 11.5%. FY26 profit was helped by reversing an RBI-ordered provision, which its auditor flagged, and a private-equity holder is selling. The price needs about 7% a year against my ~14%; I want to see the margin reach 9.5% first.",
+            view: "**A good transition, a soft quarter and noisy accounts.** Direct loans are 64% of the book and gross bad loans 1%, but the margin fell to 9.3%, profit fell 14% on the quarter and return on equity is 11.5%. FY26 profit was helped by reversing an RBI-ordered provision, which its auditor flagged, and a private-equity holder is selling. The price needs about {need:Northern ARC Capital|7}% a year against my ~14%; I want to see the margin reach 9.5% first.",
             watch: 'Margin at 9.5% in Q2 and near 10% by March; overdue loans (1.2% at March) against ICRA’s 3% trigger; further private-equity block sales.',
         },
         {
             company: 'OnEMI Technology', rank: 5, stance: 'SCALEUP', segment: NBFC,
             what: "OnEMI: runs Kissht, an app that makes digital personal loans in minutes, plus loans against property; more than half its loans sit on partner lenders' books, with OnEMI covering first losses.",
-            view: "**High returns, untested loans, more capital than promised.** Loans up 61%, return on assets 5.05% and credit cost down to 6.80%, but guarantee payments add about a point of losses outside that figure, bad loans sit at its 2.25% ceiling and cover has fallen to 84%. Four months after listing it approved an ₹832cr share sale, having said in May it was comfortably capitalised. The price needs about 13% a year against my ~19%; I want a full credit cycle before owning.",
+            view: "**High returns, untested loans, more capital than promised.** Loans up 61%, return on assets 5.05% and credit cost down to 6.80%, but guarantee payments add about a point of losses outside that figure, bad loans sit at its 2.25% ceiling and cover has fallen to 84%. Four months after listing it approved an ₹832cr share sale, having said in May it was comfortably capitalised. The price needs about {need:OnEMI Technology|13}% a year against my ~19%; I want a full credit cycle before owning.",
             watch: 'Bad loans and collections through the second half; borrowing cost down a point by March 2027; RBI rules on first-loss guarantees.',
         },
         {
             company: 'Manba Finance', rank: 6, stance: 'SCALEUP', segment: NBFC,
             what: "A small non-bank lender making two-wheeler loans through about 1,800 dealers, mainly in Maharashtra, Gujarat and Rajasthan, now adding three-wheeler, used-vehicle, personal, small-business and property loans.",
-            view: "**Fast approvals, weak cushion, stretched targets.** The highest bad loans in the group (3.41% on managed loans, 3.60% on its own book), only 26% provided for, 57% of loans in Maharashtra and a flat Q1 book. Its ₹100cr issue at ₹135 restores capital but dilutes holders by about 13%, and its 3.5% return-on-assets target compares with about 2.7% in Q1. The price needs about 9% a year against my ~12%; loan quality is the reason to pass.",
+            view: "**Fast approvals, weak cushion, stretched targets.** The highest bad loans in the group (3.41% on managed loans, 3.60% on its own book), only 26% provided for, 57% of loans in Maharashtra and a flat Q1 book. Its ₹100cr issue at ₹135 restores capital but dilutes holders by about 13%, and its 3.5% return-on-assets target compares with about 2.7% in Q1. The price needs about {need:Manba Finance|9}% a year against my ~12%; loan quality is the reason to pass.",
             watch: 'Loans reaching ₹2,000cr by December; own-book bad loans below 3.7%; borrowing cost back under 10.8%.',
         },
     ],
