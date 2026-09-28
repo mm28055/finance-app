@@ -1033,13 +1033,18 @@ export const solarCharts: Record<string, ProfileCharts> = {
 };
 
 // Fixed valuation inputs as of the note date; market value and P/E are live on the page.
-// Waaree Renewables is left out: the dashboard carries its parent Waaree Energies’ market value (₹71,706cr against Screener’s ₹8,872cr) as of 23 Sep 2026.
 export const solarValuationInputs: Record<string, ValuationInput> = {
     "Emmvee Photovoltaic Power Ltd": {
         "netDebt": -51,
         "ttmEbitda": 1932.0,
         "mcapAtWriting": 23072.0,
         "peAtWriting": 18.1
+    },
+    "Waaree Renewables": {
+        "netDebt": -244,
+        "ttmEbitda": 697.0,
+        "mcapAtWriting": 8872.0,
+        "peAtWriting": 17.5
     },
     "Vikram Solar": {
         "netDebt": -1117,
@@ -1082,5 +1087,11 @@ export const solarValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 172.0,
         "mcapAtWriting": 793.0,
         "peAtWriting": 9.95
+    },
+    "Australian Prem": {
+        "netDebt": 11,
+        "ttmEbitda": 95.0,
+        "mcapAtWriting": 475.0,
+        "peAtWriting": 8.21
     }
 };

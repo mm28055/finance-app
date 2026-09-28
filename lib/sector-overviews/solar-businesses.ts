@@ -10,7 +10,7 @@ const intro: OverviewSection[] = [
     {
         heading: 'How to read this tab',
         body: [
-            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live, except Waaree Renewables, whose dashboard figures belong to its parent), then what it makes, where the money comes from and its charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed consolidated figures; capacities and splits are from each company's latest call. India publishes no wholesale price index for solar cells or modules, so there is no cost-versus-input chart. Oriana, Alpex and Australian Premium Solar are SME-listed.",
+            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it makes, where the money comes from and its charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed consolidated figures; capacities and splits are from each company's latest call. India publishes no wholesale price index for solar cells or modules, so there is no cost-versus-input chart. Oriana, Alpex and Australian Premium Solar are SME-listed.",
         ],
     },
     {
@@ -54,7 +54,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Waaree Renewables',
-        inShort: ["**The solar-park construction arm of the Waaree group** (Waaree Renewable Technologies): it designs and builds large solar plants for power producers and companies, and has just bought control of a builder of power lines and substations.", "**Good:** returns on capital above 80%, ₹244cr of net cash (Screener) and a steady 19–20% operating margin for two years. **Watch:** the solar order book has shrunk to 2.4 GW, 30–40% of orders come from Waaree group companies, and a mostly debt-funded purchase of a lower-margin transmission business means management now aims for a margin of only about 15%.", "**Verdict: follow.** A high-return contractor whose price needs about 12% a year, in line with my estimate; I want third-party orders refilling the book and fewer sales to group companies first."],
+        inShort: ["**The solar-park construction arm of the Waaree group** (Waaree Renewable Technologies): it designs and builds large solar plants for power producers and companies, and has just bought control of a builder of power lines and substations.", "**Good:** returns on capital above 80%, ₹244cr of net cash (Screener) and a steady 19–20% operating margin for two years. **Watch:** the solar order book has shrunk to 2.4 GW, 30–40% of orders come from Waaree group companies, and a mostly debt-funded purchase of a lower-margin transmission business means management now aims for a margin of only about 15%.", "**Verdict: follow.** A high-return contractor whose price needs about 11% a year against my 12%; I want third-party orders refilling the book and fewer sales to group companies first."],
         tagline: "The solar EPC (engineering, procurement and construction) company of the Waaree group, now adding transmission lines and substations, battery-storage projects and a small portfolio of its own solar plants.",
         revenue: '₹3,331cr (FY26, consolidated)',
         products: [
