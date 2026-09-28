@@ -515,19 +515,19 @@ export const utilities: SectorOverview = {
                 },
                 {
                     label: 'Fits: Enviro Infra',
-                    text: "The price needs about 13% a year against my ~15%, the only price here that asks for less than I expect. The discount is there for a reason: three years of negative operating cash, a cyber fraud, and guidance trimmed within a quarter. **Cheap on earnings, but it only becomes a buy when the cash arrives.**",
+                    text: "The price needs about {need:Enviro Infra Engine.|13}% a year against my ~15%, the only price here that asks for less than I expect. The discount is there for a reason: three years of negative operating cash, a cyber fraud, and guidance trimmed within a quarter. **Cheap on earnings, but it only becomes a buy when the cash arrives.**",
                 },
                 {
                     label: 'Full: Wabag',
-                    text: "The price needs about 19% a year against my ~15% estimate, a little more than I expect. Revenue growth of 15–20% is well supported by the order book; the gap is the margin, which was about 9% in Q1 without the currency gain. **The best business here and the closest to a buy, but not one at today's price: follow, and buy on weakness or once the margin is back above 11%.**",
+                    text: "The price needs about {need:Va Tech Wabag|19}% a year against my ~15% estimate, a little more than I expect. Revenue growth of 15–20% is well supported by the order book; the gap is the margin, which was about 9% in Q1 without the currency gain. **The best business here and the closest to a buy, but not one at today's price: follow, and buy on weakness or once the margin is back above 11%.**",
                 },
                 {
                     label: 'Full: Antony',
-                    text: "The price needs about 12% a year against my ~10%, a little more than I expect. Q1 profit was close to zero, so the price is looking through the quarter to a margin recovery by FY28. **If the Pune plant restarts safely and the margin returns to about 20%, it fits; a Kanjurmarg loss would make it expensive.**",
+                    text: "The price needs about {need:Antony Waste Hand|12}% a year against my ~10%, a little more than I expect. Q1 profit was close to zero, so the price is looking through the quarter to a margin recovery by FY28. **If the Pune plant restarts safely and the margin returns to about 20%, it fits; a Kanjurmarg loss would make it expensive.**",
                 },
                 {
                     label: 'Stretched: Ion Exchange and EMS',
-                    text: "**Ion Exchange** needs about 26% a year against my ~15%; the price assumes the chemicals margin returns toward 18–20% and the projects arm breaks even within about 18 months, neither of which has started. **EMS** needs about 18% a year against my ~5%, with revenue still falling on the year and governance questions open. **Both need far more growth than they are delivering.**",
+                    text: "**Ion Exchange** needs about {need:ION Exchage|26}% a year against my ~15%; the price assumes the chemicals margin returns toward 18–20% and the projects arm breaks even within about 18 months, neither of which has started. **EMS** needs about {need:EMS Limited|18}% a year against my ~5%, with revenue still falling on the year and governance questions open. **Both need far more growth than they are delivering.**",
                 },
                 {
                     label: 'Quality of earnings',
