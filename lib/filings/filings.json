@@ -1,13 +1,13 @@
 {
- "updated": "2026-09-28T05:44:39.596Z",
- "from": "2026-09-21",
+ "updated": "2026-09-28T08:00:15.545Z",
+ "from": "2026-09-02",
  "to": "2026-09-28",
  "companiesBySector": {
-  "Packaging": 10,
   "Pumps Comp & Eng": 9,
+  "Packaging": 10,
   "Cables": 8,
   "Plastics": 6,
-  "Consumer Durables": 42,
+  "Consumer Durables": 43,
   "Forging": 7,
   "Healthcare": 15,
   "Pharma CDMO": 16,
@@ -16,19 +16,18 @@
   "Industrial Products": 13,
   "Rubber": 3,
   "Industrial Machinery": 4,
+  "Industrial - Railway": 7,
   "Food Products": 18,
   "Construction": 32,
-  "Platform Cos": 8,
+  "Platform Cos": 11,
   "Bearings": 5,
-  "Oil": 9,
-  "Industrial - Railway": 6,
-  "EMS & Electronics": 12,
+  "Oil": 10,
+  "EMS & Electronics": 13,
   "Auto Related": 50,
   "Software": 44,
   "Vehicles": 9,
   "Electrical Equipment": 13,
-  "Misc": 12,
-  "Solar PV Cells EPC": 10,
+  "Solar PV Cells EPC": 11,
   "Electrical Transformers": 9,
   "Aerospace defence": 18,
   "Construction - Power": 5,
@@ -44,13 +43,14 @@
   "Realty": 20,
   "Iron and Steel": 7,
   "Retail": 18,
+  "Health Products": 7,
   "Tyres": 3,
   "Hotels and Travels": 11,
   "Travel Services": 4,
   "Hospitals": 9,
-  "Health Products": 6,
   "Commercial Services": 14,
-  "Hardware": 4
+  "Hardware": 4,
+  "Media and Entertainment": 3
  },
  "filings": [
   {
@@ -72,6 +72,16 @@
    "headline": "Declared L-1 bidder for ₹688.23cr NHAI highway project in Maharashtra",
    "summary": "Dilip Buildcon has emerged as the lowest bidder for a ₹688.23 crore NHAI project to construct a 4-lane elevated corridor in Solapur City on a Hybrid Annuity Mode. The project has a 24-month execution period. This is a material win, equal to about 7.9% of the company's trailing 12-month sales.",
    "url": "https://nsearchives.nseindia.com/corporate/DBL_28092026095321_Intimation.pdf"
+  },
+  {
+   "company": "Sedemac Mechatronics",
+   "sector": "Auto Related",
+   "date": "2026-09-28",
+   "category": "Large holder",
+   "tone": "info",
+   "headline": "Xponentia Group sold 6.4% stake (about ₹986cr) in the open market",
+   "summary": "Non-promoter Xponentia Group and its affiliates sold 28.34 lakh shares, representing a 6.42% stake in the company, through the open market. The sale is worth approximately ₹986 crore at the current share price and reduces their combined holding from 15.75% to 9.33%.",
+   "url": "https://nsearchives.nseindia.com/corporate/team_sandeshc_28092026123357_SAST5.pdf"
   },
   {
    "company": "Quality Power El",
@@ -304,6 +314,46 @@
    "url": "https://nsearchives.nseindia.com/corporate/ARIHANTSUP_25092026123342_ASL_Press_Release_25092026.pdf"
   },
   {
+   "company": "Ramkrishna Forgings",
+   "sector": "Auto Related",
+   "date": "2026-09-25",
+   "category": "Promoter trade",
+   "tone": "good",
+   "headline": "Promoter bought 1.8% (₹200cr) at about ₹588",
+   "summary": "Promoter and Director Mr. Chaitanya Jalan bought 1.8% of the company (34,00,000 shares worth ₹200cr) through a preferential offer at an average price of ₹588, well below the current price of ₹705. This purchase increased his total holding from 1.6% to 3.5%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_2188_20260925_165745771_WEB.html"
+  },
+  {
+   "company": "TruAlt Bioenergy",
+   "sector": "Oil",
+   "date": "2026-09-25",
+   "category": "Promoter trade",
+   "tone": "good",
+   "headline": "Promoter group bought 0.18% (₹6.7cr) at about ₹439",
+   "summary": "Promoter group entity Nirani Holdings Private Limited bought 1,52,201 shares (0.18% of the company) for ₹6.7 crore at an average price of ₹439, which is below today's price of ₹451. This market purchase increased their total holding from 1.9% to 2.1%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_24291_20260925_161354953_WEB.html"
+  },
+  {
+   "company": "Aarti Pharmalabs",
+   "sector": "Pharma CDMO",
+   "date": "2026-09-25",
+   "category": "Promoter trade",
+   "tone": "watch",
+   "headline": "Promoter group sold 2.8% (₹209cr) at about ₹819",
+   "summary": "Promoters and promoter group entities sold 2.8% of the company for ₹209cr via a market sale. They sold at an average price of ₹819—compared to the current price of ₹934—reducing their combined holding from 3.4% to 1.5%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_21272_20260922_182957991_WEB.html"
+  },
+  {
+   "company": "NRB Bearing",
+   "sector": "Bearings",
+   "date": "2026-09-25",
+   "category": "Promoter trade",
+   "tone": "watch",
+   "headline": "Promoter sold 0.27% (₹14.0cr) at about ₹528",
+   "summary": "Promoter Harshbeena Zaveri sold 0.27% of the company (2,66,080 shares) in the open market for ₹14.0cr. The shares were sold at an average price of ₹528—below the current market price of ₹549—reducing her total holding from 41.5% to 41.2%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_1867_20260922_173251030_WEB.html"
+  },
+  {
    "company": "AXISCADES Technologies",
    "date": "2026-09-24",
    "category": "Debt",
@@ -522,6 +572,36 @@
    "headline": "OLX India partners with Landmark Cars for phygital used-car platform",
    "summary": "CarTrade Tech's platform OLX India has formed a strategic partnership with premium auto retailer Landmark Cars to build a physical-digital pre-owned car platform. The tie-up integrates Landmark's network of over 140 physical touchpoints with OLX's digital reach of 23 million annual users. Vehicles will be acquired and sold on a revenue-sharing basis, initially launching in select cities before a pan-India rollout.",
    "url": "https://nsearchives.nseindia.com/corporate/CARTRADE_24092026080817_CarTrade_-_Landmark.pdf"
+  },
+  {
+   "company": "TD Power Systems",
+   "sector": "Electrical Equipment",
+   "date": "2026-09-24",
+   "category": "Promoter trade",
+   "tone": "good",
+   "headline": "Promoter group bought 0.40% (₹75.0cr) at about ₹600",
+   "summary": "Promoters and Directors Nikhil Kumar and Mohib Nomanbhai Khericha bought 0.40% of the company (12,50,000 shares) via allotment for ₹75.0cr. They paid an average price of ₹600 per share, which is below the current price of ₹719, increasing their holding from 8.3% to 8.7%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_5180_20260924_202242902_WEB.html"
+  },
+  {
+   "company": "Capillary Technologies",
+   "sector": "Software",
+   "date": "2026-09-24",
+   "category": "Large holder",
+   "tone": "info",
+   "headline": "Kotak Mahindra AMC crosses 5% shareholding threshold",
+   "summary": "Kotak Mahindra Asset Management Company has submitted a disclosure under SEBI SAST Regulation 29(1). This indicates that the asset manager has acquired a stake crossing the 5% threshold, making it a new large institutional shareholder in the company.",
+   "url": "https://nsearchives.nseindia.com/corporate/team_bbodade_14082026190950_CAPILLARY.pdf"
+  },
+  {
+   "company": "Eureka Forbes",
+   "sector": "Consumer Durables",
+   "date": "2026-09-24",
+   "category": "Pledge",
+   "tone": "watch",
+   "headline": "Promoter pledged 5.90% of shares",
+   "summary": "Promoter Lunolux Limited has created an additional pledge over 1.14 crore shares, representing 5.90% of the company's total paid-up share capital. The shares were pledged to Catalyst Trusteeship Limited acting as a security agent for lenders under an existing facility agreement.",
+   "url": "https://nsearchives.nseindia.com/corporate/team_bbodade_07082026183154_EUREKAFORB.pdf"
   },
   {
    "company": "Avantel",
@@ -1212,6 +1292,186 @@
    "headline": "Approves acquisition of DBRL's Tyre Business with ₹149.31cr turnover via demerger",
    "summary": "The board has approved a scheme to acquire the Tyre Business of Dalmia Bharat Refractories Ltd via a demerger. The target business had a turnover of ₹149.31 crore in the previous financial year, representing about 3.39% of Himadri's annual sales. Himadri will issue new shares to eligible DBRL shareholders to complete the transaction.",
    "url": "https://nsearchives.nseindia.com/corporate/HSCL_21092026100138_Boardoutcome21092026.pdf"
+  },
+  {
+   "company": "Aequs",
+   "sector": "Aerospace defence",
+   "date": "2026-09-21",
+   "category": "Pledge",
+   "tone": "watch",
+   "headline": "Promoter pledged 15.0% of shares (₹2,301cr)",
+   "summary": "Promoter Melligeri Private Family Foundation (Mellwood Trustee Services Private Limited) pledged 15.0% of the company (10,05,13,070 shares worth ₹2,301cr), giving the shares to lenders as security at an average price of ₹229 versus today's price of ₹263. Their total holding remained unchanged, going from 15.0% before the pledge to 15.0% after.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_26252_20260921_214424965_WEB.html"
+  },
+  {
+   "company": "Greenpanel Inds.",
+   "sector": "Consumer Durables",
+   "date": "2026-09-21",
+   "category": "Promoter trade",
+   "tone": "good",
+   "headline": "Promoter group bought 0.99% (₹18.9cr) at about ₹155",
+   "summary": "Promoter group members, including director Shobhan Mittal, Bluesky Projects, and Prime Holdings, purchased 0.99% of the company in the open market for ₹18.9cr. They paid an average price of ₹155 per share, slightly below the current ₹160, increasing their total ownership from 53.3% to 54.3%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_17613_20260921_170213279_WEB.html"
+  },
+  {
+   "company": "Patel Engineering",
+   "sector": "Construction",
+   "date": "2026-09-21",
+   "category": "Pledge",
+   "tone": "good",
+   "headline": "Promoter group freed 6.2% of shares from pledge",
+   "summary": "Promoters Janky Patel and Praham India LLP secured the release of 6,16,71,158 shares (6.2% of the company) that were previously given to lenders as security, an event valued at an estimated ₹168 crore at today's price of ₹27.2. Following this pledge release, their combined ownership stake remains unchanged, going from 7.2% before to 7.2% after.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_2262_20260921_163403458_WEB.html"
+  },
+  {
+   "company": "Manaksia Coated Metals",
+   "sector": "Iron and Steel",
+   "date": "2026-09-21",
+   "category": "Promoter trade",
+   "tone": "good",
+   "headline": "Promoter group bought 0.75% (₹5.2cr) at about ₹65.0",
+   "summary": "Promoter group members Karan and Tushar Agrawal bought 0.75% of the company (8,00,000 shares) for ₹5.2cr via an allotment at an average price of ₹65.0, compared to today's price of ₹128. This purchase increased their combined holding from 11.8% to 12.5%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_11754_20260921_154232256_WEB.html"
+  },
+  {
+   "company": "ION Exchage",
+   "sector": "Utilities",
+   "date": "2026-09-18",
+   "category": "Promoter trade",
+   "tone": "watch",
+   "headline": "Promoter group sold 0.24% (₹15.5cr) at about ₹441",
+   "summary": "Promoter group member Dinesh Sharma sold 3,50,450 shares (0.24% of the company) in a market sale worth ₹15.5cr. He sold at an average price of ₹441, which is higher than today's price of ₹414, reducing his holding from 3.7% to 3.5%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_185_20260918_173203378_WEB.html"
+  },
+  {
+   "company": "MTAR Technologies",
+   "sector": "Aerospace defence",
+   "date": "2026-09-18",
+   "category": "Promoter trade",
+   "tone": "watch",
+   "headline": "Promoter sold 0.06% (₹14.1cr at today's price)",
+   "summary": "Promoter Leelavathi Parvatha Reddy sold 20,000 shares (0.06% of the company) on the open market, worth an estimated ₹14.1 crore at today's price of ₹7,050. Following this sale, her holding decreased from 4.3% to 4.2%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_19009_20260918_171910434_WEB.html"
+  },
+  {
+   "company": "GNG Electronics",
+   "sector": "Hardware",
+   "date": "2026-09-18",
+   "category": "Promoter trade",
+   "tone": "watch",
+   "headline": "Promoter sold 3.9% (₹175cr) at about ₹390",
+   "summary": "Promoter Vidhi S Khandelwal sold 3.9% of the company (44,87,203 shares) in a market sale for ₹175cr. The shares were sold at an average price of ₹390, compared to today's price of ₹671, reducing her holding from 15.7% to 11.8%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_25012_20260918_114014618_WEB.html"
+  },
+  {
+   "company": "TruAlt Bioenergy",
+   "sector": "Oil",
+   "date": "2026-09-17",
+   "category": "Promoter trade",
+   "tone": "good",
+   "headline": "Promoter group bought 0.25% (₹9.1cr) at about ₹418",
+   "summary": "Promoter group Nirani Holdings Private Limited bought 2,18,275 shares (0.25% of the company) for ₹9.1 crore in the open market. They paid an average price of ₹418—below today's price of ₹451—increasing their total holding from 1.7% to 1.9%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_24291_20260915_191958634_WEB.html"
+  },
+  {
+   "company": "NRB Bearing",
+   "sector": "Bearings",
+   "date": "2026-09-16",
+   "category": "Promoter trade",
+   "tone": "watch",
+   "headline": "Promoter group sold 0.53% (₹25.8cr) at about ₹505",
+   "summary": "Promoter Harshbeena Zaveri and the Trilochan Singh Sahney Trust 1 sold 5,10,000 shares (0.53% of the company) for ₹25.8cr in a market sale. The shares were sold at an average price of ₹505—below the current price of ₹549—reducing their holding from 42.0% to 41.5%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_1867_20260916_204311104_WEB.html"
+  },
+  {
+   "company": "Network People Services",
+   "sector": "Software",
+   "date": "2026-09-16",
+   "category": "Promoter trade",
+   "tone": "watch",
+   "headline": "Promoter sold 0.39% (₹13.0cr) at about ₹1,580",
+   "summary": "Promoter and Director Savita Vashist sold 82,313 shares (0.39% of the company) for ₹13.0cr at an average price of ₹1,580, which is below the current price of ₹1,707. This market sale decreased her total holding from 24.1% to 23.7%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_19148_20260916_163802378_WEB.html"
+  },
+  {
+   "company": "Control Print",
+   "sector": "Hardware",
+   "date": "2026-09-15",
+   "category": "Promoter trade",
+   "tone": "good",
+   "headline": "Promoter group bought 0.31% (₹2.9cr) at about ₹580",
+   "summary": "Promoter Basant Kumar Kabra bought 50,000 shares (0.31% of the company) on the open market for ₹2.9 crore. The shares were acquired at an average price of ₹580—slightly below the current price of ₹595—increasing his total holding from 18.2% to 18.5%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_13947_20260915_174513754_WEB.html"
+  },
+  {
+   "company": "RIR Power Electr",
+   "sector": "Electrical Equipment",
+   "date": "2026-09-12",
+   "category": "Promoter trade",
+   "tone": "watch",
+   "headline": "Promoter group sold 1.0% (₹15.5cr) at about ₹185",
+   "summary": "Promoter group member Jitendra Uttamchand Mehta sold 8,37,240 shares (1.0% of the company) for ₹15.5cr in a market sale at an average price of ₹185, just below the current price of ₹186. This transaction reduced his holding from 1.3% to 0.22%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_27951_20260912_123328951_WEB.html"
+  },
+  {
+   "company": "South West Pinnacle",
+   "sector": "Oil",
+   "date": "2026-09-11",
+   "category": "Promoter trade",
+   "tone": "watch",
+   "headline": "Promoter group sold 2.5% (₹18.5cr) at about ₹225",
+   "summary": "Promoters and Directors Mr. Vikas Jain and Mr. Piyush Jain sold 8,20,000 shares (2.5% of the company) on the open market for ₹18.5 crore. The shares were sold at an average price of ₹225—higher than the current price of ₹188—reducing their combined holding from 58.7% to 56.2%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_15798_20260911_171104322_WEB.html"
+  },
+  {
+   "company": "Sakar Healthcare",
+   "sector": "Pharma",
+   "date": "2026-09-10",
+   "category": "Promoter trade",
+   "tone": "watch",
+   "headline": "Promoter sold 0.54% (₹11.8cr) at about ₹981",
+   "summary": "Promoter Aarsh S. Shah sold 0.54% of the company (1,20,100 shares) for ₹11.8cr on the open market at an average price of ₹981, which is lower than today's price of ₹1,117. This sale reduced his holding from 6.1% to 5.6%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_14283_20260910_161343806_WEB.html"
+  },
+  {
+   "company": "Aarti Pharmalabs",
+   "sector": "Pharma CDMO",
+   "date": "2026-09-09",
+   "category": "Promoter trade",
+   "tone": "watch",
+   "headline": "Promoter group sold 0.16% (₹13.0cr) at about ₹871",
+   "summary": "Promoter group members Safechem Enterprises Private Limited and Relacion Trusteeship Services Private Limited sold 1,49,400 shares (0.16% of the company) in the open market for ₹13.0 crore. The shares were sold at an average price of ₹871 compared to today's ₹934, reducing their holding from 1.3% to 1.1%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_21272_20260909_123452849_WEB.html"
+  },
+  {
+   "company": "MTAR Technologies",
+   "sector": "Aerospace defence",
+   "date": "2026-09-08",
+   "category": "Promoter trade",
+   "tone": "watch",
+   "headline": "Promoter sold 0.06% (₹12.7cr at today's price)",
+   "summary": "Promoter K Shalini sold 18,000 shares (0.06% of the company) in a market sale, worth an estimated ₹12.7 crore at today's price of ₹7,050. Her holding went from 1.3% before the sale to 1.3% after.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_19009_20260908_153742688_WEB.html"
+  },
+  {
+   "company": "IRB Infra.Devl.",
+   "sector": "Construction",
+   "date": "2026-09-07",
+   "category": "Promoter trade",
+   "tone": "good",
+   "headline": "Promoter group bought 0.11% (₹25.6cr) at about ₹19.8",
+   "summary": "Promoter group member IRB Holding Private Limited bought 0.11% of the company (1,28,91,600 shares) for ₹25.6 crore via market purchase at an average price of ₹19.8, which is higher than the current price of ₹17.2. This transaction increased their holding from 30.2% to 30.3%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_2724_20260907_181440136_WEB.html"
+  },
+  {
+   "company": "IRB Infra.Devl.",
+   "sector": "Construction",
+   "date": "2026-09-02",
+   "category": "Promoter trade",
+   "tone": "good",
+   "headline": "Promoter group bought 0.26% (₹60.9cr) at about ₹19.3",
+   "summary": "Promoter group member IRB Holding Private Limited bought a 0.26% stake (3,15,00,000 shares) for ₹60.9cr through a market purchase. They paid an average of ₹19.3 per share—which is above the current ₹17.2 price—increasing their holding from 29.9% to 30.2%.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_2724_20260902_201334367_WEB.html"
   }
  ]
 }
