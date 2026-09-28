@@ -111,7 +111,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
                     { quarter: { year: 'desc' } },
                     { quarter: { q: 'desc' } }
                 ],
-                take: 5, // buffer for QoQ calculation of the latest 2 quarters
+                take: 6, // latest quarter, the same quarter last year, and a spare for a blank row
                 select: {
                     quarterId: true,
                     revenue: true,
@@ -252,6 +252,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             // Which quarter those figures are, so the leaderboard can mark a
             // company still on an older quarter than its peers.
             financialsQuarter: latestF?.quarter.name,
+            board: leaderboardFigures(co.financials, fIdx),
             // analysis, profile, summary are intentionally omitted here — the
             // client fetches them on-demand via getCompanyDetail(id) when a
             // user expands a company row. `history` is included but only with
@@ -534,6 +535,41 @@ function parseAnalysis(a: any): AnalysisResult | undefined {
         console.error("Failed to parse analysis", e);
         return undefined;
     }
+}
+
+/**
+ * The leaderboard's figures for one company, from its stored quarters (newest
+ * first): the latest quarter with results against the same quarter a year
+ * earlier, and the last four quarters summed. Nulls where a figure is missing
+ * or not meaningful (growth on a loss-making base).
+ */
+function leaderboardFigures(rows: any[], idx: number) {
+    const f = rows[idx];
+    if (!f || f.revenue === null || f.revenue === undefined) return undefined;
+    const n = (v: any) => (v === null || v === undefined ? null : Number(v));
+    const growth = (c: number | null, p: number | null) =>
+        c === null || p === null || p <= 0 ? null : Math.round(((c - p) / p) * 1000) / 10;
+    const margin = (e: number | null, r: number | null) => (e === null || !r ? null : Math.round((e / r) * 1000) / 10);
+    const lastYear = rows.find(x => x.quarter.q === f.quarter.q && x.quarter.year === f.quarter.year - 1);
+    const rev = n(f.revenue), ebitda = n(f.ebitda), pat = n(f.pat);
+    const m = margin(ebitda, rev);
+    const mPrev = lastYear ? margin(n(lastYear.ebitda), n(lastYear.revenue)) : null;
+    const four = rows.slice(idx, idx + 4);
+    const ttmOk = four.length === 4 && four.every(x => x.revenue !== null && x.revenue !== undefined);
+    const sum = (k: string) => (ttmOk ? four.reduce((a, x) => a + Number(x[k] ?? 0), 0) : null);
+    return {
+        quarter: f.quarter.name as string,
+        revenue: rev,
+        revenueYoY: lastYear ? growth(rev, n(lastYear.revenue)) : n(f.revenueYoY),
+        ebitda,
+        margin: m,
+        marginChange: m !== null && mPrev !== null ? Math.round((m - mPrev) * 10) / 10 : null,
+        pat,
+        patYoY: lastYear ? growth(pat, n(lastYear.pat)) : null,
+        ttmRevenue: sum('revenue'),
+        ttmEbitda: sum('ebitda'),
+        ttmPat: sum('pat'),
+    };
 }
 
 function createSafeFinancials(f: any, prevF: any, allF: any[]): CompanyFinancials {

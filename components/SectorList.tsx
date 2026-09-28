@@ -28,6 +28,14 @@ export interface EnrichedCompany {
     financials: CompanyFinancials;
     // Quarter the headline financials belong to (e.g. "Q1 FY27").
     financialsQuarter?: string;
+    // Leaderboard figures: latest quarter vs a year earlier, and the last four quarters.
+    board?: {
+        quarter: string;
+        revenue: number | null; revenueYoY: number | null;
+        ebitda: number | null; margin: number | null; marginChange: number | null;
+        pat: number | null; patYoY: number | null;
+        ttmRevenue: number | null; ttmEbitda: number | null; ttmPat: number | null;
+    };
     analysis?: AnalysisResult;
     profile?: string;
     summary?: {
