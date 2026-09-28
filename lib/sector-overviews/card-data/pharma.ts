@@ -3787,6 +3787,12 @@ export const pharmaValuationInputs: Record<string, ValuationInput> = {
         "mcapAtWriting": 14974.0,
         "peAtWriting": 13.1
     },
+    "Strides Pharma": {
+        "netDebt": 1545,
+        "ttmEbitda": 935.0,
+        "mcapAtWriting": 11295.0,
+        "peAtWriting": 19.5
+    },
     "Sai Parenterals": {
         "netDebt": 52,
         "ttmEbitda": 50.8,

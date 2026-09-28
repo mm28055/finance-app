@@ -814,16 +814,16 @@ export const pharma: SectorOverview = {
             heading: '8. Valuation (comparative)',
             body: [
                 "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it gives credit for cash and charges for debt. Where the two disagree, the balance sheet is the reason.",
-                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **13% at 20x, 16% at 25x, 18% at 30x, 21% at 40x, 26% at 60x and 33% at 100x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **This is a fully priced sector**: only Marksans fits, and even the large companies need more growth than I expect, so the question is usually price, not quality.",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **13% at 20x, 16% at 25x, 18% at 30x, 21% at 40x, 26% at 60x and 33% at 100x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **This is a fully priced sector**: only Marksans and Strides fit, and even the large companies need more growth than I expect, so the question is usually price, not quality.",
             ],
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**Natco** (₹3,964cr of net cash on the March figures, about ₹1,400cr after the July Adcock payment), **Caplin** (₹1,259cr), **Marksans** (₹647cr on Screener, ₹1,031cr by the company's June figure), **Ajanta** (₹433cr), **RPG** and **Sanofi India** (₹257cr each) and **Jagsonpal** (₹98cr) hold more cash than debt, so they are cheaper than their P/Es suggest. **Zydus** (₹11,079cr on Screener, which does not count its ₹7,540cr of investments), **Eris** (₹2,292cr), **Wockhardt** (₹1,983cr), **Emcure** (₹1,373cr), **Alembic** (₹1,227cr) and **Indoco** (₹1,057cr) carry debt the P/E ignores. **Granules**' ₹563cr is before the ₹1,096cr of warrant money it received in September, which leaves it with net cash.",
+                    text: "**Natco** (₹3,964cr of net cash on the March figures, about ₹1,400cr after the July Adcock payment), **Caplin** (₹1,259cr), **Marksans** (₹647cr on Screener, ₹1,031cr by the company's June figure), **Ajanta** (₹433cr), **RPG** and **Sanofi India** (₹257cr each) and **Jagsonpal** (₹98cr) hold more cash than debt, so they are cheaper than their P/Es suggest. **Zydus** (₹11,079cr on Screener, which does not count its ₹7,540cr of investments), **Eris** (₹2,292cr), **Wockhardt** (₹1,983cr), **Strides** (₹1,545cr), **Emcure** (₹1,373cr), **Alembic** (₹1,227cr) and **Indoco** (₹1,057cr) carry debt the P/E ignores. **Granules**' ₹563cr is before the ₹1,096cr of warrant money it received in September, which leaves it with net cash.",
                 },
                 {
                     label: 'Fits: a price that asks for about what I expect',
-                    text: "**Marksans** needs about 18% a year against my ~17%. That is the only fit in the sector, and the margin of safety is thin: Q1's 25% margin includes cheap stock, so if the margin settles at the 21–22% management guides, growth has to come from volume and from the European purchases. I would still rather own it at this price than any of the others, because it is the one exporter with its own route to the customer, net cash and a record of beating guidance.",
+                    text: "**Marksans** needs about 18% a year against my ~17%, and the margin of safety is thin: Q1's 25% margin includes cheap stock, so if the margin settles at the 21–22% management guides, growth has to come from volume and from the European purchases. I would still rather own it at this price than any of the others, because it is the one exporter with its own route to the customer, net cash and a record of beating guidance. **Strides** (about ₹10,819cr, P/E about 18.7) needs about 12% against my ~14%, but I keep it at wait until the Bengaluru FDA outcome and the December drug-quota decision, and because 27% of its promoters' shares are pledged.",
                 },
                 {
                     label: 'Full: close to the line',
@@ -839,7 +839,7 @@ export const pharma: SectorOverview = {
                 },
                 {
                     label: 'Not in the live table, or not measurable',
-                    text: "**Strides** is not priced live because the dashboard's figures for it are wrong: it stores a market value of about ₹32,884cr against Screener's roughly ₹11,000cr, and a P/E of 39 against about 19 on Screener in late September. On Screener's figures it needs about 12–13% a year against my ~14%, which would fit, but I keep it at wait until the Bengaluru FDA outcome and the December drug-quota decision, and because 27% of its promoters' shares are pledged. **Indoco** loses money after tax, and **Orchid**'s profit is too small for its P/E to mean anything; both are priced on one event (the FDA re-inspection, the 7-ACA plant). **JB Chem & Pharma** no longer trades.",
+                    text: "**Indoco** loses money after tax, and **Orchid**'s profit is too small for its P/E to mean anything; both are priced on one event (the FDA re-inspection, the 7-ACA plant). **JB Chem & Pharma** no longer trades.",
                 },
             ],
             embed: 'valuation',
@@ -934,7 +934,7 @@ export const pharma: SectorOverview = {
         {
             company: 'Strides Pharma', rank: 15, stance: 'TURNAROUND', segment: EXPORT,
             what: "Makes niche oral generics (soft gels, liquids, modified-release) and, at its New York plant, controlled substances and nasal sprays, for US, European, Australian and African buyers.",
-            view: "**A genuine turnaround with a stalled US engine.** Margin rose from 14% to 19% in two years and CARE upgraded it to A+, but US revenue has been flat at about $284–291m for two years, Q1 broke a promise of sequential growth, and 27% of promoter shares are pledged. Not priced live because the dashboard's figures are wrong; on Screener's it needs about 12–13% against my ~14%.",
+            view: "**A genuine turnaround with a stalled US engine.** Margin rose from 14% to 19% in two years and CARE upgraded it to A+, but US revenue has been flat at about $284–291m for two years, Q1 broke a promise of sequential growth, and 27% of promoter shares are pledged. The price needs about 12% a year against my ~14%.",
             watch: 'The Bengaluru FDA outcome; the December DEA quota decision; the Sandoz Africa deal closing (management now hopes for Q2) and contributing from H2.',
         },
         {
