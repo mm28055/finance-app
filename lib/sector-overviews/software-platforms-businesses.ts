@@ -224,7 +224,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'E2E Networks',
-        inShort: ["**An Indian GPU cloud that rents Nvidia chips by the hour** to AI start-ups, companies, researchers and IndiaAI allottees; L&T owns 18.45% and is also a partner and customer.", "**Good:** its monthly revenue run-rate nearly doubled to ₹71.8cr in Q1 and the operating margin reached 75%. **Bad:** depreciation takes about half of that, borrowing jumped from about ₹103cr to about ₹450cr in a quarter, and GPU rents fall when supply catches up.", "**Verdict: pass.** Outstanding execution, but the price assumes the GPU shortage lasts for years."],
+        inShort: ["**An Indian GPU cloud that rents Nvidia chips by the hour** to AI start-ups, companies, researchers and IndiaAI allottees; L&T owns 18.45% and is also a partner and customer.", "**Good:** its monthly revenue run-rate nearly doubled to ₹71.8cr in Q1 and the operating margin reached 75%. **Bad:** depreciation takes about half of that, borrowing jumped from about ₹103cr to about ₹450cr in a quarter, and GPU rents fall when supply catches up.", "**Verdict: follow.** Outstanding execution; on Q1's profit for a full year the price is within my estimate, but debt and GPU rents need watching."],
         tagline: "An Indian 'neocloud' that owns Nvidia GPUs in rented data-centre space and rents out computing power by the hour or on prepaid contracts, with its own TIR software platform.",
         revenue: '₹246cr (FY26, standalone)',
         products: [
