@@ -4,7 +4,15 @@
     "sector": "Elect and Refrac",
     "exDate": "07-Sep-2026",
     "subject": "Demerger",
-    "why": "Demerger — sector note needs rewriting",
+    "why": "Demerger — note updated 28 Sep 2026. Still open: add HEG Graphite Ltd (the electrode business, listing expected second half of October 2026) to Elect and Refrac, and put HEG Advanced Materials into the live table once it files results of its own.",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "SKF India",
+    "sector": "Bearings",
+    "exDate": "01-Oct-2025",
+    "subject": "Demerger (automotive / industrial split)",
+    "why": "Put SKF India into the live table once July–September 2026 results are filed (first four clean post-split quarters); until then its trailing P/E uses too small a profit base.",
     "addedOn": "2026-09-28"
   }
 ]
