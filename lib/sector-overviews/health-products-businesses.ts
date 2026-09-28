@@ -58,7 +58,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Poly Medicure',
-        inShort: ["**India's leading maker of IV cannulas and drip sets**, selling to almost every large private hospital in India and to 125 countries, and now adding heart, bone and kidney-care products.", "**Good:** ₹489cr of net cash, proven ability to raise prices to hospitals, and new heart and orthopaedic businesses growing fast. **Watch:** the margin has slipped from 27% to 24%, Chinese dialysers are undercutting it and Middle East orders are stuck at ports.", "**Verdict: follow.** A high-quality business, but the price asks for about 25% a year against my 15%, as returns have halved to 12% and treasury income falls."],
+        inShort: ["**India's leading maker of IV cannulas and drip sets**, selling to almost every large private hospital in India and to 125 countries, and now adding heart, bone and kidney-care products.", "**Good:** ₹489cr of net cash, proven ability to raise prices to hospitals, and new heart and orthopaedic businesses growing fast. **Watch:** the margin has slipped from 27% to 24%, Chinese dialysers are undercutting it and Middle East orders are stuck at ports.", "**Verdict: follow.** A high-quality business, but the price asks for about {need:Poly Medicure|25}% a year against my 15%, as returns have halved to 12% and treasury income falls."],
         tagline: "A leading Indian maker of plastic disposable medical devices (IV cannulas, drip sets, blood and dialysis products), with a growing heart, bone and kidney-care range and two recently bought European companies.",
         revenue: '₹1,875cr (FY26, consolidated)',
         products: [
@@ -167,7 +167,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Laxmi Denta',
-        inShort: ["**Laxmi Dental makes custom crowns and bridges for dentists in India and abroad, plus clear aligners** (invisible teeth-straightening trays), aligner sheets and children's dental products.", "**Good:** debt-free, a record 19% margin in Q1 FY27, and exports up 37%. **Watch:** price competition in aligners, thin-margin scanner sales, and dependence on US trade policy.", "**Verdict: follow.** Growing well, but the price asks for about 18% a year against my 15%, and operating cash was negative in FY26."],
+        inShort: ["**Laxmi Dental makes custom crowns and bridges for dentists in India and abroad, plus clear aligners** (invisible teeth-straightening trays), aligner sheets and children's dental products.", "**Good:** debt-free, a record 19% margin in Q1 FY27, and exports up 37%. **Watch:** price competition in aligners, thin-margin scanner sales, and dependence on US trade policy.", "**Verdict: follow.** Growing well, but the price asks for about {need:Laxmi Denta|18}% a year against my 15%, and operating cash was negative in FY26."],
         tagline: "An integrated dental products company: India's largest exporting dental lab, a clear-aligner brand, aligner materials and children's dental products, sold through dentists.",
         revenue: '₹278cr (FY26, consolidated)',
         products: [

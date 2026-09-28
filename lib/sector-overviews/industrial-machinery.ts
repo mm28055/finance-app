@@ -499,11 +499,11 @@ export const industrialMachinery: SectorOverview = {
                 },
                 {
                     label: 'Full',
-                    text: "**Macpower** needs about 25% a year against my ~22%, a gap that a margin above 18% in FY28 could close. **Jyoti** needs about 30% against my ~25%; the gap is modest, but the Huron and cash risks mean I would not pay it until the second-half cash flow arrives.",
+                    text: "**Macpower** needs about {need:Macpower CNC|25}% a year against my ~22%, a gap that a margin above 18% in FY28 could close. **Jyoti** needs about {need:Jyoti CNC Auto.|30}% against my ~25%; the gap is modest, but the Huron and cash risks mean I would not pay it until the second-half cash flow arrives.",
                 },
                 {
                     label: 'Stretched',
-                    text: "**LMW** needs about 33% a year against my ~24%, and **Mamata** about 32% against my ~20%. Both are good assets priced for a recovery that has not yet shown up in the numbers.",
+                    text: "**LMW** needs about {need:LMW|33}% a year against my ~24%, and **Mamata** about {need:Mamata Machinery|32}% against my ~20%. Both are good assets priced for a recovery that has not yet shown up in the numbers.",
                 },
                 {
                     label: 'Trough profits: why the gap is not the whole story',
@@ -522,25 +522,25 @@ export const industrialMachinery: SectorOverview = {
         {
             company: 'Macpower CNC', rank: 1, stance: 'SCALEUP', segment: TOOLS,
             what: "Rajkot maker of entry and mid-range CNC turning and machining centres, averaging about ₹20 lakh each, sold mainly to small job shops, with a premium NEXA range and a small defence book.",
-            view: "**The best execution in the group, at a full price.** Q1 FY27 sales rose 56% and profit 110% off a weak base, the order book is ₹456cr (+32%), a 4–6% price rise stuck, and it has almost no debt. But the plant is near full until the 13-acre site opens around Q2 FY28, the margin is stuck near 16% by outsourced parts, and 259 days of stock left only ₹3cr of free cash in FY26. The price needs about 25% a year against my ~22%.",
+            view: "**The best execution in the group, at a {label:Macpower CNC|full} price.** Q1 FY27 sales rose 56% and profit 110% off a weak base, the order book is ₹456cr (+32%), a 4–6% price rise stuck, and it has almost no debt. But the plant is near full until the 13-acre site opens around Q2 FY28, the margin is stuck near 16% by outsourced parts, and 259 days of stock left only ₹3cr of free cash in FY26. The price needs about {need:Macpower CNC|25}% a year against my ~22%.",
             watch: '13-acre site on schedule for Q2 FY28; margin above 17–18% by Q3 FY27; the 60-acre land actually signed.',
         },
         {
             company: 'Jyoti CNC Auto.', rank: 2, stance: 'PRICED', segment: TOOLS,
             what: "India's largest listed CNC machine-tool maker, from entry-level lathes to 5-axis machines, with its own foundry in Rajkot and Huron, a French maker of large 5-axis machines.",
-            view: "**The strongest Indian business here, wrapped in the most risk.** The India business grew 37% in Q1 at a 27% margin, the order book is ₹4,848cr and capacity rises from 6,000 to 16,000 machines from October. But the auditor doubts the French subsidiary is a going concern while about ₹500cr of the parent's money sits in it, a promoter has 6.7% of the company pledged, and borrowings reached ₹853cr as three years of operating cash summed to less than zero. The price needs about 30% a year against my ~25%.",
+            view: "**The strongest Indian business here, wrapped in the most risk.** The India business grew 37% in Q1 at a 27% margin, the order book is ₹4,848cr and capacity rises from 6,000 to 16,000 machines from October. But the auditor doubts the French subsidiary is a going concern while about ₹500cr of the parent's money sits in it, a promoter has 6.7% of the company pledged, and borrowings reached ₹853cr as three years of operating cash summed to less than zero. The price needs about {need:Jyoti CNC Auto.|30}% a year against my ~25%.",
             watch: 'Operating cash near half of operating profit in H2 FY27; Huron licences, the French case and any write-down; the new plant filling without price cuts.',
         },
         {
             company: 'LMW', rank: 3, stance: 'CYCLICAL', segment: PROCESS,
             what: "India's leading maker of textile spinning lines, plus CNC machine tools, a foundry and an aerospace-parts unit; part of the Coimbatore Lakshmi group.",
-            view: "**A leading franchise at the bottom of its cycle, priced as if the recovery were already here.** Q1 sales rose 24%, the aerospace order book jumped to about ₹1,000cr, and it holds about ₹1,970cr of cash with no debt. But textile machinery earned ₹9.8cr on ₹1,801cr of sales in FY26, treasury income is most of the profit, return on capital is 6%, and management expects a gradual recovery. The price needs about 33% a year against my ~24%.",
+            view: "**A leading franchise at the bottom of its cycle, priced as if the recovery were already here.** Q1 sales rose 24%, the aerospace order book jumped to about ₹1,000cr, and it holds about ₹1,970cr of cash with no debt. But textile machinery earned ₹9.8cr on ₹1,801cr of sales in FY26, treasury income is most of the profit, return on capital is 6%, and management expects a gradual recovery. The price needs about {need:LMW|33}% a year against my ~24%.",
             watch: 'Textile utilisation above 75% with active orders rising; aerospace revenue towards ₹300cr; how the cash, the UAE investment and group-company purchases are used.',
         },
         {
             company: 'Mamata Machinery', rank: 4, stance: 'TURNAROUND', segment: PROCESS,
             what: "Ahmedabad maker of bag and pouch-making, form-fill-seal packaging and blown-film machines, sold in 80+ countries, with patented sealing technology and a recyclable-film process (RecTech).",
-            view: "**Real engineering in a broken year.** FY26 revenue fell 8% and the operating margin halved to 10%; Q1 FY27 was a loss as customers delayed deliveries, after two sets of guidance were missed. It holds about ₹69cr of cash, domestic packaging grew 55% and RecTech is certified recyclable in Europe. The price needs about 32% a year against my ~20%, which already assumes a partial recovery.",
+            view: "**Real engineering in a broken year.** FY26 revenue fell 8% and the operating margin halved to 10%; Q1 FY27 was a loss as customers delayed deliveries, after two sets of guidance were missed. It holds about ₹69cr of cash, domestic packaging grew 55% and RecTech is certified recyclable in Europe. The price needs about {need:Mamata Machinery|32}% a year against my ~20%, which already assumes a partial recovery.",
             watch: 'H1 FY27 results and the ₹80cr of promised deliveries; US orders; director pay and related-party spending against profit.',
         },
     ],
