@@ -657,9 +657,10 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                             financials={selectedData?.financials || effective.financials}
                                             quarterName={selectedData?.quarter || effective.summary?.quarter}
                                         />
-                                        {effective.history && effective.history.length >= 2 && (
-                                            <FinancialTrendChart history={effective.history} />
-                                        )}
+                                        {(() => {
+                                            const trend = effective.trend && effective.trend.length >= 2 ? effective.trend : effective.history;
+                                            return trend && trend.length >= 2 ? <FinancialTrendChart history={trend} /> : null;
+                                        })()}
                                         {companyFilings.length > 0 && (
                                             <CompanyFilings filings={companyFilings} />
                                         )}

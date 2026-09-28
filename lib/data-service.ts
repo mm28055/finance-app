@@ -341,10 +341,19 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
         return partsB[0].localeCompare(partsA[0]);
     });
 
+    // Trend chart: every stored quarter of figures, not just quarters with a call.
+    const trend = co.financials
+        .filter(f => /^Q[1-4] FY\d{2}$/.test(f.quarter.name))
+        .map((f, i) => ({
+            quarter: f.quarter.name,
+            financials: createSafeFinancials(f, co.financials[i + 1] ?? null, co.financials),
+        }));
+
     return {
         id: co.id,
         name: co.name,
         ticker: co.ticker,
+        trend,
         price: 0,
         priceChange: 0,
         financials: createSafeFinancials(latestF, latestPrevF, co.financials),

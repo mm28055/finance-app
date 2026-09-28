@@ -51,7 +51,7 @@ function screenerSlug(url: string): string {
 
 const MIN_NAME_MATCH = 0.75;
 
-async function resolveScreenerUrl(isin: string | null, ticker: string, name: string): Promise<string | null> {
+export async function resolveScreenerUrl(isin: string | null, ticker: string, name: string): Promise<string | null> {
     const searchScreener = async (q: string): Promise<{ name: string; url: string }[]> => {
         try {
             const res = await fetch(`https://www.screener.in/api/company/search/?q=${encodeURIComponent(q)}`, {
@@ -128,7 +128,7 @@ interface QuarterTable {
     rows: Map<string, (number | null)[]>;
 }
 
-function parseQuartersTable(html: string): QuarterTable | null {
+export function parseQuartersTable(html: string): QuarterTable | null {
     const start = html.indexOf('id="quarters"');
     if (start === -1) return null;
     const end = html.indexOf('</section>', start);
@@ -170,36 +170,47 @@ export async function fetchScreenerQuarterly(isin: string | null, ticker: string
     const url = await resolveScreenerUrl(isin, ticker, name);
     if (!url) return null;
 
-    try {
-        const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-        if (!res.ok) return null;
-        const table = parseQuartersTable(await res.text());
-        if (!table) return null;
+    // Consolidated first; companies without subsidiaries (and some that file late)
+    // show an empty consolidated table, so fall back to the standalone page.
+    const standalone = url.replace(/consolidated\/?$/, '');
+    const pages = url === standalone ? [url] : [url, standalone];
 
-        const col = table.columns.findIndex(c => c.toLowerCase() === wanted.toLowerCase());
-        if (col === -1) {
-            console.log(`     Screener has no "${wanted}" column yet (latest: ${table.columns[table.columns.length - 1]})`);
-            return null;
-        }
+    for (const page of pages) {
+        try {
+            const res = await fetch(page, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+            if (!res.ok) continue;
+            const table = parseQuartersTable(await res.text());
+            if (!table) continue;
 
-        const pick = (...labels: string[]) => {
-            for (const l of labels) {
-                const row = table.rows.get(l);
-                if (row && row[col] !== undefined && row[col] !== null) return row[col];
+            const col = table.columns.findIndex(c => c.toLowerCase() === wanted.toLowerCase());
+            if (col === -1) {
+                console.log(`     Screener has no "${wanted}" column yet on ${page} (latest: ${table.columns[table.columns.length - 1]})`);
+                continue;
             }
-            return null;
-        };
 
-        return {
+            const pick = (...labels: string[]) => {
+                for (const l of labels) {
+                    const row = table.rows.get(l);
+                    if (row && row[col] !== undefined && row[col] !== null) return row[col];
+                }
+                return null;
+            };
+
             // Banks/NBFCs label the top line "Revenue" instead of "Sales".
-            revenue: pick('Sales', 'Revenue'),
-            ebitda: pick('Operating Profit'),
-            pat: pick('Net Profit'),
-            column: wanted,
-        };
-    } catch {
-        return null;
+            const revenue = pick('Sales', 'Revenue');
+            if (revenue == null) continue;
+            return {
+                revenue,
+                ebitda: pick('Operating Profit'),
+                pat: pick('Net Profit'),
+                column: wanted,
+                consolidated: page !== standalone,
+            };
+        } catch {
+            continue;
+        }
     }
+    return null;
 }
 
 // ────────────────────────────────────────────────────────────────────────────
@@ -350,26 +361,30 @@ export async function processTranscript(transcriptId: string) {
     let ebitda  = parseNum(aiResult.financials.ebitda.current_q);
     let pat     = parseNum(aiResult.financials.pat.current_q);
 
-    // --- Screener fallback: fill any zeros Gemini left behind ---
-    if (!revenue || !ebitda || !pat) {
-        try {
-            console.log(`  -> Gemini missing values, trying Screener for ${transcript.company.name}...`);
-            const s = await fetchScreenerQuarterly(
-                transcript.company.isin ?? null,
-                transcript.company.ticker,
-                transcript.company.name,
-                transcript.quarter.name
-            );
-            if (s) {
-                // `!= null` not `!`: a genuine 0, or a negative EBITDA, is data.
-                if (!revenue && s.revenue != null) { revenue = s.revenue; console.log(`     Revenue from Screener (${s.column}): ${revenue}`); }
-                if (!ebitda && s.ebitda != null) { ebitda = s.ebitda; console.log(`     EBITDA from Screener (${s.column}): ${ebitda}`); }
-                if (!pat && s.pat != null) { pat = s.pat; console.log(`     PAT from Screener (${s.column}): ${pat}`); }
-            }
-            await new Promise(r => setTimeout(r, 1000)); // polite delay
-        } catch (e: any) {
-            console.warn(`  -> Screener fallback failed: ${e.message}`);
+    // --- Screener first: the filed results are the source of truth for revenue,
+    // operating profit (EBITDA) and profit. The transcript figures are used only
+    // when Screener has not yet posted the quarter. Note Screener's operating
+    // profit excludes other income, so it can sit a little below the EBITDA
+    // management quotes on the call.
+    try {
+        const s = await fetchScreenerQuarterly(
+            transcript.company.isin ?? null,
+            transcript.company.ticker,
+            transcript.company.name,
+            transcript.quarter.name
+        );
+        if (s) {
+            // `!= null` not truthiness: a genuine 0, or a negative EBITDA, is data.
+            if (s.revenue != null) revenue = s.revenue;
+            if (s.ebitda != null) ebitda = s.ebitda;
+            if (s.pat != null) pat = s.pat;
+            console.log(`  -> Financials from Screener (${s.column}, ${s.consolidated ? 'consolidated' : 'standalone'}): rev ${revenue}, EBITDA ${ebitda}, PAT ${pat}`);
+        } else {
+            console.log(`  -> Screener has no ${transcript.quarter.name} figures yet; keeping the transcript's numbers`);
         }
+        await new Promise(r => setTimeout(r, 1000)); // polite delay
+    } catch (e: any) {
+        console.warn(`  -> Screener lookup failed (${e.message}); keeping the transcript's numbers`);
     }
 
     // --- YoY from DB (same quarter, previous fiscal year) ---

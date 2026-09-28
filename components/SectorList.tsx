@@ -40,6 +40,12 @@ export interface EnrichedCompany {
         financials?: CompanyFinancials;
         pdfUrl?: string | null;
     }[];
+    // Every stored quarter of filed figures (up to FINANCIALS_WINDOW), newest
+    // first, for the trend chart — including quarters without a call analysis.
+    trend?: {
+        quarter: string;
+        financials?: CompanyFinancials;
+    }[];
     marketCap?: number;
     currentPrice?: number;
     bookValue?: number;
