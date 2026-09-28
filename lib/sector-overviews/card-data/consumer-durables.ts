@@ -5077,6 +5077,114 @@ export const consumerDurablesCharts: Record<string, ProfileCharts> = {
             "inventory5y": -38,
             "payables5y": 99
         }
+    },
+    "Bajaj Consumer Care": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 39
+                },
+                {
+                    "label": "Power and factory costs",
+                    "share": 3
+                },
+                {
+                    "label": "Staff",
+                    "share": 12
+                },
+                {
+                    "label": "Other costs",
+                    "share": 27
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 19
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                174.0,
+                141.0,
+                155.0,
+                128.0,
+                221.0
+            ],
+            "ocf": [
+                129.0,
+                101.0,
+                116.0,
+                65.0,
+                197.0
+            ],
+            "fcf": [
+                118.0,
+                95.0,
+                111.0,
+                59.0,
+                164.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "28.5x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "22.6x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹390cr net cash",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "74%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "19%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                8,
+                24
+            ],
+            "inventoryDays": [
+                57,
+                52
+            ],
+            "payableDays": [
+                45,
+                34
+            ],
+            "cycleDays": [
+                19,
+                42
+            ],
+            "absorbed5y": -55,
+            "receivables5y": -55,
+            "inventory5y": -18,
+            "payables5y": 26
+        }
     }
 };
 
@@ -5337,5 +5445,11 @@ export const consumerDurablesValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 90.0,
         "mcapAtWriting": 472.0,
         "peAtWriting": 20.7
+    },
+    "Bajaj Consumer Care": {
+        "netDebt": -390,
+        "ttmEbitda": 264.0,
+        "mcapAtWriting": 6364.0,
+        "peAtWriting": 28.5
     }
 };
