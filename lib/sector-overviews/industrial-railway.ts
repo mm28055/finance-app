@@ -468,7 +468,7 @@ export const industrialRailway: SectorOverview = {
                         ['MV Electrosystems', '₹400cr revenue in FY27; 10 sets in September, 40 a month from January; profitable in 2–3 months', 'Little; second unit built; test rigs by December', '**Untested**: first call; no deliveries in July–August'],
                         ['Titagarh Railsystems', '~200 coaches in FY27 (±10%); wagons 600–650 a month; first Vande Bharat end-Q3/Q4', '~₹367cr in FY26; shipyard ~₹600–610cr; aluminium line by Q1 FY28', '**Slipping**: wagons cut from ‘higher than last year’ to 428 a month; 30 coaches; wheels and shipyard late'],
                         ['Texmaco Rail', 'Growth ‘in 1 or 2 years’ (was FY27); revenue 2x by 2030 at a mid-teens margin', '₹1,500–2,000cr to 2030; ₹167cr in FY26', '**Missed**: Q1 sales −17%; freight-car margin 5.5%; wagon target dropped'],
-                        ['Jupiter Wagons', 'FY27 ‘much better’; ₹10,000cr revenue by 2030 at 15%+ margin', 'Odisha wheels ₹2,600–3,000cr; ₹533cr in FY26', '**Missed**: Q1 revenue −14% on the quarter; tender line dropped; brakes on time'],
+                        ['Jupiter Wagons', '60–70% of the order book delivered in FY27, with output improving over the next three quarters (May: FY27 ‘much better’); ₹10,000cr revenue by 2030 at 15%+ margin (May)', 'Odisha wheels ₹2,600–3,000cr; ₹533cr in FY26', '**Missed**: Q1 revenue −14% on the quarter; tender line dropped; brakes on time'],
                     ],
                 },
             ],

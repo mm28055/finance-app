@@ -316,7 +316,7 @@ export const industrialMachinery: SectorOverview = {
                 },
                 {
                     label: 'Pricing power: tested this year',
-                    text: "West Asia pushed input costs up about 3–3.5%. **Jyoti** raised prices on all new orders from 1 May after 2–3% raw-material inflation; **Macpower** raised 4–6% from 1 June and customers accepted it. **LMW** took no machine-tool price rise at Q4 and is offsetting costs through savings. **Mamata** says it is the most expensive packaging-machine maker in India and still wins, but its gross margin fell from 60.8% to 54.6% as lower-margin Indian sales replaced US ones. **The two CNC makers passed costs on; the two process-machinery makers could not.**",
+                    text: "West Asia pushed input costs up about 3–3.5%. **Jyoti** raised prices on all new orders from 1 May after 2–3% raw-material inflation; **Macpower** raised 4–6% from 1 June and customers accepted it. **LMW** took no machine-tool price rise in Q4; in July it said price revisions do happen, but it is offsetting costs mainly through savings. **Mamata** says it is the most expensive packaging-machine maker in India and still wins, but its gross margin fell from 60.8% to 54.6% as lower-margin Indian sales replaced US ones. **The two CNC makers passed costs on; the two process-machinery makers mostly absorbed them.**",
                 },
                 {
                     label: 'Narrow: service, speed and repeat orders',
@@ -340,7 +340,7 @@ export const industrialMachinery: SectorOverview = {
             points: [
                 {
                     label: 'Structural: Jyoti’s Indian business',
-                    text: "The standalone Indian business earned 28.9% in FY26 and 27.2% in Q1 FY27, with gross margin up 2.3 points to 52.8%, from scale, its own foundry and an aerospace-heavy mix. The group margin was only 21.4% in Q1 because Huron booked costs without revenue and there was a ₹10cr currency loss, against a currency gain a year earlier. Management promises at least 25% even at a ₹30-lakh average price, but the price per machine has already fallen from ₹40–45 lakh in FY25 to about ₹34–35 lakh as cheap machines grow. **I think the Indian margin holds; the group margin depends on Huron, which is guided at only 8–10%.**",
+                    text: "The standalone Indian business earned 28.9% in FY26 and 27.2% in Q1 FY27, with gross margin up 2.3 points to 52.8%, from scale, its own foundry and an aerospace-heavy mix. The group margin was only 21.4% in Q1 because Huron booked costs without revenue and there was a ₹10cr currency loss, against a currency gain a year earlier. On the August call management said the business is designed to stay “close to” a 25% margin (in May it had promised at least 25% even at a ₹30-lakh average price), but the price per machine has already fallen from ₹40–45 lakh in FY25 to about ₹34–35 lakh as cheap machines grow. **I think the Indian margin holds; the group margin depends on Huron, which is guided at only 8–10%.**",
                 },
                 {
                     label: 'Capped but rising: Macpower',
@@ -462,7 +462,7 @@ export const industrialMachinery: SectorOverview = {
             points: [
                 {
                     label: 'Huron: a legal and accounting risk, not just a delay',
-                    text: "French authorities opened a judicial investigation in April 2026 into suspected export of dual-use machines (machines that could serve military uses) against EU law. Huron's director-general was barred from duties and €3.02m of funds plus two properties were seized. **Jyoti**'s auditor, Choksi & Co., added an emphasis of matter that the French holding company may not be a going concern, while the parent carries ₹341.6cr of investment and ₹160.1cr of loans in it, not written down. Management said the case could take “two, three or five years”, and the machines awaiting licences grew from ₹67cr to about ₹100cr. **A write-down of up to ₹500cr is the tail risk to watch.**",
+                    text: "French authorities opened a judicial investigation in April 2026 into suspected export of dual-use machines (machines that could serve military uses) against EU law. Huron's director-general was barred from duties and €3.02m of funds plus two properties were seized. **Jyoti**'s auditor, Choksi & Co., added an emphasis of matter that the French holding company may not be a going concern, while the parent carries ₹341.6cr of investment and ₹160.1cr of loans in it, not written down. On the August call management said it does not expect a resolution “in the very near future” and ruled out an impairment in FY27 (in May it had said the case could take “two, three, or five years”), and the machines awaiting licences grew from ₹67cr to about ₹100cr. **A write-down of up to ₹500cr is the tail risk to watch.**",
                 },
                 {
                     label: 'Governance and related parties',

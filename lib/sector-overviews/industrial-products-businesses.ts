@@ -81,7 +81,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'ESAB India', note: 'Market leader and part of a global group; the benchmark for brand and range.' }, { name: 'D&H Sécheron, EWAC, Lincoln Electric', note: 'Other established brands in consumables; Lincoln also competes in equipment.' }],
         position: "**Number two in Indian welding consumables with about 17–18% share** of a fragmented market, behind ESAB.",
         money: "Net cash of **₹137cr** (Screener, March 2026), with almost no debt. Capital spending of ₹30–40cr a year for two years is funded from cash; doubling volume over five to seven years would need ₹100–150cr of plant. A fresh ₹14cr income-tax demand is under appeal, and a ₹36.4cr BIS penalty, still in court, has not been provided for. Promoters hold **54%**, down from 57% in September 2023.",
-        watch: ["EBITDA margin moving up the promised 1 point from about 12%.", "Process-equipment line breaking even as management promises.", "Progress towards the ₹2,000cr FY29 revenue ambition, which management will not commit to."],
+        watch: ["EBITDA margin moving up the 1–2 points promised on the April call, which the July presentation softened to margins “at similar levels”.", "Process-equipment line breaking even as management promises.", "Progress towards the ₹2,000cr FY29 revenue ambition, which management will not commit to."],
         charts: industrialProductsCharts["Ador Welding"],
     },
     {

@@ -370,7 +370,7 @@ export const bearings: SectorOverview = {
                         ['NRB Bearing', 'Capex programme ₹270cr: ₹60cr spent, ₹100cr ordered; ₹110cr for the Unitec joint venture', 'Net debt ₹121cr (March); CRISIL expects about ₹150cr of new debt'],
                         ['SKF India', 'FY27 capex ₹170–180cr within ₹500cr over FY26–FY28; FY26 cash conversion about 85%', 'Net cash ₹306cr (March); FY26 dividend ₹40 a share (about ₹198cr)'],
                         ['SKF India (Industrial)', 'Operating cash ₹54.7cr; working capital 17.5% of sales, guided 19–20%; plant ₹900–950cr', 'Net cash ₹564cr (March); no debt'],
-                        ['Timken India', 'Debt-free; capex 8–10% of sales (about ₹300–370cr); big dividends ‘every 3–4 years’', 'Cash and funds ₹268cr (annual report); Screener’s ₹389cr net cash also counts the ₹129cr GGB purchase'],
+                        ['Timken India', 'Debt-free; capex 8–10% of sales (about ₹300–370cr); a larger dividend ‘every few years’ (May call)', 'Cash and funds ₹268cr (annual report); Screener’s ₹389cr net cash also counts the ₹129cr GGB purchase'],
                     ],
                     note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s.',
                 },
@@ -408,7 +408,7 @@ export const bearings: SectorOverview = {
                 },
                 {
                     label: 'Missed',
-                    text: "**Timken**'s Bharuch was to reach about 70% use ‘by July’; in August the target moved to August–September for the spherical lines only, and Bharuch revenue fell from ₹60cr to ₹50cr. **SKF Industrial**'s ‘around 13% by the end of 2026’ became ‘about 12% now’, with IT separation costs running two more quarters, while plant capex rose from ₹800cr-plus to ₹900–950cr. **Harsha** dropped its promise of extra margin, its foreign units lost ₹3.3cr in Q1 against a ₹2–4cr full-year guide, and large cages were flat against 15–20% growth promised. **SKF India**'s aftermarket shrank after discounts.",
+                    text: "**Timken**'s Bharuch was to reach about 70% use ‘by July’; in August the target moved to August–September for the spherical lines only, and Bharuch revenue fell from ₹60cr to ₹50cr. **SKF Industrial**'s May target of about 13% by the end of 2026 slipped: in August the finance head said ‘12% is a fair number’ for current performance, with IT separation costs running two more quarters, while plant capex rose from ₹800cr-plus to ₹900–950cr. **Harsha** dropped its promise of extra margin, its foreign units lost ₹3.3cr in Q1 against a ₹2–4cr full-year guide, and large cages were flat against 15–20% growth promised. **SKF India**'s aftermarket shrank after discounts.",
                 },
                 {
                     label: 'Mixed',

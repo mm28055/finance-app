@@ -517,7 +517,7 @@ export const pumpsCompEng: SectorOverview = {
                 },
                 {
                     label: 'Delivering or beating',
-                    text: "**Elgi** said in May that Q1 would grow about as fast as last year with a similar margin; it grew 23% (16% without currency) and lifted its margin. **Powerica** promised double-digit growth and grew 27%. **Kirloskar Oil** delivered the hyperscale data-centre entry it had talked about, and **Greaves**' core grew 16% (19% like-for-like), inside its 16–18% band.",
+                    text: "**Elgi** said in May that Q1 would grow about as fast as last year with a similar margin; it grew 23% (16% without currency) and lifted its margin. **Powerica** promised double-digit growth and grew 27%. **Kirloskar Oil** delivered the hyperscale data-centre entry it had talked about, and **Greaves**' core grew 16% (19% like-for-like), inside its growth band (widened in August to 16–20% from May's 16–18%).",
                 },
                 {
                     label: 'Cautious',
