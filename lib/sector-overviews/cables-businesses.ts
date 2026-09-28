@@ -63,7 +63,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'RR Kabel Ltd.',
-        inShort: ["**Branded house wire and power cables**, sold through more than 2 lakh retail touchpoints across India and exported to 66 countries (mainly Europe and the Middle East), plus a small fans, lights and switches business.", "**Good:** real volume growth of 17% against an industry growing 10–12%, margins rising on scale, and the fans-and-lights arm has stopped losing money. **Watch:** UltraTech is spending ₹1,800cr to attack the same house-wire market.", "**Verdict: follow.** The best-run business in this list, but the price asks for about 23% a year against the ~20% I expect; buy on a weak quarter."],
+        inShort: ["**Branded house wire and power cables**, sold through more than 2 lakh retail touchpoints across India and exported to 66 countries (mainly Europe and the Middle East), plus a small fans, lights and switches business.", "**Good:** real volume growth of 17% against an industry growing 10–12%, margins rising on scale, and the fans-and-lights arm has stopped losing money. **Watch:** UltraTech is spending ₹1,800cr to attack the same house-wire market.", "**Verdict: follow.** The best-run business in this list, but the price asks for about {need:RR Kabel Ltd.|23}% a year against the ~20% I expect; buy on a weak quarter."],
         tagline: "One of India's larger wire and cable makers, selling house wire under a consumer brand and growing fast in industrial power cables and exports.",
         revenue: '₹9,722cr (FY26, consolidated)',
         products: [
@@ -118,7 +118,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'KSH International',
-        inShort: ["**Makes winding wire**, the insulated copper coiled inside power transformers and motors, and is India's largest exporter of it.", "**Good:** customers design its wire into their transformers and rarely switch; more than 95% of business is repeat. **Bad:** it has not yet turned profit into cash, the top ten customers are 51% of sales, and its CEO resigned in March 2026.", "**Verdict: wait.** An excellent niche that beat every target in Q1, but the price needs about 25% a year against the ~22% I expect, and cash has to arrive first."],
+        inShort: ["**Makes winding wire**, the insulated copper coiled inside power transformers and motors, and is India's largest exporter of it.", "**Good:** customers design its wire into their transformers and rarely switch; more than 95% of business is repeat. **Bad:** it has not yet turned profit into cash, the top ten customers are 51% of sales, and its CEO resigned in March 2026.", "**Verdict: wait.** An excellent niche that beat every target in Q1, but the price needs about {need:KSH International|25}% a year against the ~22% I expect, and cash has to arrive first."],
         tagline: "A 45-year-old maker of magnet winding wire, mainly continuously transposed conductor for large power transformers; recently listed.",
         revenue: '₹3,107cr (FY26, standalone)',
         products: [

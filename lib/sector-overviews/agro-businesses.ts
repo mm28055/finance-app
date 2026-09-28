@@ -107,7 +107,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'GSFC',
-        inShort: ["**A Gujarat government-promoted maker of fertilisers and industrial chemicals**: urea, DAP, ammonium phosphate sulphate and ammonium sulphate for farmers, and caprolactam, nylon, melamine and other chemicals for industry.", "**Good:** about ₹4,783cr of net cash and investments against a market value of about ₹6,200cr, record Q1 fertiliser sales and strong caprolactam profits. **Bad:** return on capital is only about 7%, sulphur costs have crushed fertiliser margins, and melamine sales stopped under cheap Chinese imports.", "**Verdict: follow.** Cheap against its cash and assets, but low returns and state control mean that value may not reach shareholders soon."],
+        inShort: ["**A Gujarat government-promoted maker of fertilisers and industrial chemicals**: urea, DAP, ammonium phosphate sulphate and ammonium sulphate for farmers, and caprolactam, nylon, melamine and other chemicals for industry.", "**Good:** about ₹4,783cr of net cash and investments against a market value of about {mcap:GSFC|₹6,200cr}, record Q1 fertiliser sales and strong caprolactam profits. **Bad:** return on capital is only about 7%, sulphur costs have crushed fertiliser margins, and melamine sales stopped under cheap Chinese imports.", "**Verdict: follow.** Cheap against its cash and assets, but low returns and state control mean that value may not reach shareholders soon."],
         tagline: "A Gujarat state-promoted fertiliser and industrial-chemicals company, with fertilisers about four-fifths of sales.",
         revenue: '₹10,946cr (FY26, consolidated)',
         products: [
