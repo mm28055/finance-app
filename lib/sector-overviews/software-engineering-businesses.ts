@@ -108,7 +108,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Tata Technologies',
-        inShort: ["**An engineering firm that designs whole vehicles, aircraft parts and industrial machines** and resells design software, anchored by Tata Motors and Jaguar Land Rover.", "**Good:** revenue from carmakers other than its anchor clients grew 56% in Q1 and it signed a $100m Tenneco deal. **Watch:** the margin is stuck at 16%, below the 18% it earned before FY26, and the company no longer restates that target.", "**Verdict: wait.** A real recovery, but the margin has not followed, and the price already needs about 22% a year of growth."],
+        inShort: ["**An engineering firm that designs whole vehicles, aircraft parts and industrial machines** and resells design software, anchored by Tata Motors and Jaguar Land Rover.", "**Good:** revenue from carmakers other than its anchor clients grew 56% in Q1 and it signed a $100m Tenneco deal. **Watch:** the margin is stuck at 16%, below the 18% it earned before FY26, and the company no longer restates that target.", "**Verdict: wait.** A real recovery, but the margin has not followed, and the price already needs about {need:Tata Technologies|22}% a year of growth."],
         tagline: "An engineering firm that designs complete vehicles, aircraft parts and industrial machines, and resells product-lifecycle-management software, anchored by Tata Motors and Jaguar Land Rover.",
         revenue: '₹5,506cr (FY26, consolidated)',
         products: [
