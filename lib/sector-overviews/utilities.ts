@@ -462,7 +462,7 @@ export const utilities: SectorOverview = {
                     columns: ['Company', 'Guidance', 'Capex', 'Track record'],
                     rows: [
                         ['Va Tech Wabag', 'Revenue +15–20%; margin 13–14% this year (13–15% medium term)', 'Almost none; growth needs only working capital', '**Delivered** revenue (+21%), Kuwait and UAE; margin about 9% without the currency gain'],
-                        ['ION Exchage', 'None numeric; Roha 25% used in FY27; one large old project to close', '₹30–40cr maintenance; about $40mn over two years for Oman', '**Slipping**: Roha softer than expected; chemicals profit −52%'],
+                        ['ION Exchage', 'None numeric; Roha 25% used in FY27; in August, a significant part of one large old project to be done by March, depending on the client (in May it was to close this year)', '₹30–40cr maintenance; about $40mn over two years for Oman', '**Slipping**: Roha softer than expected; chemicals profit −52%'],
                         ['Enviro Infra Engine.', 'Revenue ₹2,000cr; profit ₹260–270cr; margin 19–20%', '₹20–30cr for water; Suyog ₹311cr in three parts; own solar and battery plants', '**Cut**: FY26 missed badly; FY27 profit and margin trimmed in one quarter'],
                         ['EMS Limited', 'Revenue ₹900–950cr (was about ₹1,000cr)', 'None planned', '**Missed**: FY26 −25% against +20%; West Bengal a quarter late; pledge promise broken'],
                         ['Antony Waste Hand', 'Revenue +6–9% plus 10–15% from new contracts; margin back to 20–22% by FY28', 'About ₹750cr, mostly Andhra Pradesh waste-to-energy', '**Walked back**: margin, labour-cost and Pune promises reversed within one quarter'],

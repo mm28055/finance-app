@@ -439,7 +439,7 @@ export const platformCos: SectorOverview = {
                 },
                 {
                     label: 'Missed',
-                    text: "**Pine Labs** pre-warned that Q1 would be at the low end of its 21–23.5% range and grew 20%; adjusted EBITDA was ₹126cr against the ₹135–140cr the CEO wanted, contribution margin 72.3% against 73–75%, and working capital 16% against 15% or less. **Macfos** promised about 50% growth and an ~8% profit margin; Q1 delivered 38% and 7.1%, and its operating margin fell 1.6 points.",
+                    text: "**Pine Labs** pre-warned that Q1 would be at the low end of its 21–23.5% range and grew 20%; adjusted EBITDA was ₹126cr against the ₹135–140cr the CEO wanted, contribution margin 72.3% against 73–75%, and working capital 16% against 15% or less. **Macfos** promised about 50% growth and an ~8% profit margin in October 2025; on its latest call, in April, it gave no growth number (‘We will see about the plateau when it happens’). Q1 delivered 38% and 7.1%, and its operating margin fell 1.6 points.",
                 },
                 {
                     label: 'Mixed',

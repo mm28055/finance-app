@@ -476,7 +476,7 @@ export const ironSteel: SectorOverview = {
                     columns: ['Company', 'Guidance', 'Capex', 'Track record'],
                     rows: [
                         ['Man Industries (I)', 'Revenue about ₹5,000cr (was ₹5,000–5,500cr); margin 14–15%; FY28 +25–30%', 'About ₹580cr in FY27: Jammu ₹600cr (₹350cr spent), Dammam US$40–50mn', '**Trimmed**: plan kept but at the low end; Jammu may be six months late (CRISIL)'],
-                        ['Manaksia Coated Metals', 'Revenue ₹1,300–1,350cr this year, ₹1,700–1,750cr next; margin 10–12%', '₹140cr phase 1 nearly done; ₹350cr phase 2 from FY28', '**Delivered** the margin recovery; paint line July → Q2; Alu-Zinc slower'],
+                        ['Manaksia Coated Metals', 'Revenue ₹1,300–1,350cr this year, ₹1,700–1,750cr next; margin about 11% with 1–2 points more possible, timing unclear (10–12% in May)', '₹140cr phase 1 nearly done; ₹350cr phase 2 from FY28', '**Delivered** the margin recovery; paint line July → Q2; Alu-Zinc slower'],
                         ['Aeroflex Industries', 'Revenue about +35%; margin about 23%, 25% later', '₹48cr skids; ₹54cr hoses', '**Beat**: +72% at 23%; 15,000 skids a quarter late'],
                         ['Venus Pipes & Tubes', 'Revenue +20%; margin below 17% (was towards 17%); 18% in about two years', '₹100–110cr (was ₹90–100cr)', '**Cut**: margin guide lowered in one quarter; Q1 +16%; BHEL order unmentioned'],
                         ['Scoda Tubes', 'Revenue +25% (about ₹650cr); margin 14–15% (was 15–16%)', 'About ₹100cr: welded lines and solar', '**Missed**: FY26 growth, margin and welded date; Q1 margin 12.9%'],

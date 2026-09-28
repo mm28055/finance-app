@@ -404,7 +404,7 @@ export const healthProducts: SectorOverview = {
                 },
                 {
                     label: 'Growth driver: digital dentistry and exports',
-                    text: "**Laxmi Dental**'s international lab sales grew 37% in Q1 (about 25% without the rupee's fall) and its aligners 28–29%; it has hired a US chief executive and signed a letter of intent for land that would give its Indian plants about three times their present space. The US is about 20% of its revenue, and management called a 10% tariff “not a dealbreaker”. **Prevest**'s US business grew 38% in FY26, its printers 162% and resins 40.5% from small bases, and it aims to pass ₹100cr of sales within three years, about 12% a year. Its new lines run at only 18–20% of capacity, so that growth needs little money. **This is the best-funded growth in the sector: capacity already built, customers already buying.**",
+                    text: "**Laxmi Dental**'s international lab sales grew 37% in Q1 (about 25% without the rupee's fall) and its aligners 28–29%; it has hired a US chief executive and signed a letter of intent for land that would give its Indian plants about three times their present space. The US is about 20% of its revenue, and management called a 10% tariff “not a dealbreaker”. **Prevest**'s US business grew 38% in FY26, its printers 162% and resins 40.5% from small bases, and in November 2025 it aimed to pass ₹100cr of sales within three years, about 12% a year; its June call gave no numbers. Its new lines run at only 18–20% of capacity, so that growth needs little money. **This is the best-funded growth in the sector: capacity already built, customers already buying.**",
                 },
                 {
                     label: 'Growth driver: lab research and biopharma',
@@ -460,7 +460,7 @@ export const healthProducts: SectorOverview = {
                         ['Laxmi Dental', 'Revenue +15–20%; margin 18–20% (reinstated)', '₹18.4cr in FY26; Palghar cost not given', '**Delivered**: margin 19.2%; revenue +13.9%, just under'],
                         ['DentalKart', 'No revenue guide; gross margin 27–30% (cut from 30–33%); stock-outs below 5% by Dec', 'Little', '**Walked back**: margin target cut; recovery from 0.4% to 6.1% started'],
                         ['OSEL Devices', '₹500cr-plus “possible”; exports ₹50cr (half-yearly calls)', 'SFL ~₹30cr; export plant not costed', '**Mixed**: +57% in FY26; H2 flat; cash statement corrected'],
-                        ['Prevest Denpro', 'None for FY27; ₹100cr sales within three years (half-yearly calls)', 'None needed', '**Missed**: H2 FY26 +12% against >20%; Q1 +21%'],
+                        ['Prevest Denpro', 'None for FY27 (June call); ₹100cr sales within three years (Nov 2025 call)', 'None needed', '**Missed**: H2 FY26 +12% against >20%; Q1 +21%'],
                     ],
                 },
             ],

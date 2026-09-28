@@ -445,7 +445,7 @@ export const travelServices: SectorOverview = {
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
                         ['BLS International', 'Revenue 15–20% a year for five years (20–25% in May); visa margin ~40%, digital 7–8%; tax ~12%', 'Aadhaar ₹125cr (₹75cr spent); Atyati ₹138cr; ~₹2,000cr of acquisitions over 4–5 years', '**Beat, target cut**: revenue +25%, profit +12%'],
-                        ['Le Travenues Techno', 'No numbers; contribution margin floor ~36–37%; growth to "look up" in Q1', 'Small; some AI spend capitalised; Brevistay ₹65.69cr; Trenes ~₹125cr', '**Delivered**: bookings +19%; adjusted EBITDA −7%'],
+                        ['Le Travenues Techno', 'No numbers; contribution margin floor ~36–37%; now plans for no early relief on train rules (in May it hoped a new railway ticketing system in August or September would help)', 'Small; some AI spend capitalised; Brevistay ₹65.69cr; Trenes ~₹125cr', '**Delivered**: bookings +19%; adjusted EBITDA −7%'],
                         ['Yatra Online', 'No FY27 guidance; gross margin +20% and adjusted EBITDA +30% a year over 2–3 years; ~20% EBITDA/gross margin in H2', '₹43cr in FY26; people and technology', '**Behind**: adjusted EBITDA −39%; card delayed'],
                         ['Thomas Cook India', 'Double-digit earnings growth withdrawn; travel margin 4–5%; H2 better than H1', 'Commitments ₹41cr; Sterling rooms mostly leased or managed', '**Missed**: travel 2.4%; DEI loss wider; Sterling beat'],
                     ],
