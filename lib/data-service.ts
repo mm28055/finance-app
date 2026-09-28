@@ -210,8 +210,11 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             });
         }
 
-        const latestF = co.financials[0];
-        const latestPrevF = co.financials.length > 1 ? co.financials[1] : null;
+        // Newest quarter with results. A blank row (a half-yearly SME's
+        // mid-year call, which has no results behind it) is passed over.
+        const fIdx = Math.max(0, co.financials.findIndex(f => f.revenue !== null));
+        const latestF = co.financials[fIdx];
+        const latestPrevF = co.financials.length > fIdx + 1 ? co.financials[fIdx + 1] : null;
         const latestA = co.analyses[0];
         const prevA = co.analyses.length > 1 ? co.analyses[1] : null;
         // Delta vs the immediately-previous quarter. Only computed when BOTH
@@ -246,6 +249,9 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             priceChange: 0,
             // Compute financials locally — SectorSnapshot needs these aggregates.
             financials: createSafeFinancials(latestF, latestPrevF, co.financials),
+            // Which quarter those figures are, so the leaderboard can mark a
+            // company still on an older quarter than its peers.
+            financialsQuarter: latestF?.quarter.name,
             // analysis, profile, summary are intentionally omitted here — the
             // client fetches them on-demand via getCompanyDetail(id) when a
             // user expands a company row. `history` is included but only with
@@ -538,8 +544,10 @@ function createSafeFinancials(f: any, prevF: any, allF: any[]): CompanyFinancial
     const ytdSum = (key: string) => {
         if (!currentYear) return null;
         const relevant = allF.filter(x => x.quarter.year === currentYear);
-        if (relevant.length === 0) return null;
-        return relevant.reduce((sum, x) => sum + Number(x[key] || 0), 0);
+        // Blank quarters (no results filed) don't count; all blank → no YTD.
+        const known = relevant.filter(x => x[key] !== null && x[key] !== undefined);
+        if (known.length === 0) return null;
+        return known.reduce((sum, x) => sum + Number(x[key]), 0);
     };
 
     const revYTD = ytdSum('revenue');
@@ -732,8 +740,9 @@ export async function getDashboardData(): Promise<SectorData[]> {
                 // For simplicity in this demo: sum all records with same year. 
                 // (In reality, Indian FY is distinct from Calendar Year, need robust logic)
                 const relevant = allF.filter(x => x.quarter.year === currentYear);
-                if (relevant.length === 0) return null;
-                return relevant.reduce((sum, x) => sum + Number(x[key] || 0), 0);
+                const known = relevant.filter(x => x[key] !== null && x[key] !== undefined);
+                if (known.length === 0) return null;
+                return known.reduce((sum, x) => sum + Number(x[key]), 0);
             };
 
             const revYTD = ytdSum('revenue');

@@ -378,9 +378,9 @@ export async function processTranscript(transcriptId: string) {
     };
 
     // Extract Gemini values
-    let revenue = parseNum(aiResult.financials.revenue.current_q);
-    let ebitda  = parseNum(aiResult.financials.ebitda.current_q);
-    let pat     = parseNum(aiResult.financials.pat.current_q);
+    let revenue: number | null = parseNum(aiResult.financials.revenue.current_q);
+    let ebitda: number | null  = parseNum(aiResult.financials.ebitda.current_q);
+    let pat: number | null     = parseNum(aiResult.financials.pat.current_q);
 
     // --- Screener first: the filed results are the source of truth for revenue,
     // operating profit (EBITDA) and profit. The transcript figures are used only
@@ -407,6 +407,11 @@ export async function processTranscript(transcriptId: string) {
     } catch (e: any) {
         console.warn(`  -> Screener lookup failed (${e.message}); keeping the transcript's numbers`);
     }
+
+    // A call with no results behind it (a half-yearly SME's mid-year call, an
+    // investor meet) comes back as all zeros. Store blanks, not zeros, so the
+    // card shows "-" instead of ₹0cr and a false −100%.
+    if (!revenue && !ebitda && !pat) { revenue = null; ebitda = null; pat = null; }
 
     // --- YoY from DB (same quarter, previous fiscal year) ---
     let revenueYoY: number | null = parseNum(aiResult.financials.revenue.delta_yoy) || null;
