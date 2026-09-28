@@ -410,7 +410,7 @@ export const electAndRefrac: SectorOverview = {
                 },
                 {
                     label: 'Mixed',
-                    text: "**HEG** said on the Q1 call that about 70% of anode capacity would be contracted within one to one-and-a-half months; no contract had been announced by 27 September. **IFGL**'s group revenue grew 13% and its US business is strong, but the profit growth came partly from lower goodwill amortisation.",
+                    text: "**HEG** said on the Q1 call that about 70% of anode capacity would be contracted within one to one-and-a-half months; no anode contract had been announced by 28 September. The only order filed since the split is for battery banks: ₹217.56cr (including GST) from Indus Towers to its Replus arm on 18 September, to be supplied by 31 March 2027. **IFGL**'s group revenue grew 13% and its US business is strong, but the profit growth came partly from lower goodwill amortisation.",
                 },
                 {
                     label: 'My outlook',
@@ -482,7 +482,7 @@ export const electAndRefrac: SectorOverview = {
             points: [
                 {
                     label: 'HEG: the live numbers are pre-split',
-                    text: "The dashboard values **HEG** at about ₹4,500–4,700cr: today's share price (about ₹244, down from ₹728 before the ex-date) times the old 19.3cr shares. After the merger there are about 32.97cr shares, so the listed company is worth about ₹8,050cr. Its P/E divides that price by the old company's profit, which came mostly from electrodes the listed company no longer owns, and its EV/EBITDA uses pre-split operating profit and cash. **Neither number means anything for HEG Advanced Materials or HEG Graphite, so I have set no growth estimate and there is no price check.** I will value both once HEG Graphite lists in late October and each files results of its own.",
+                    text: "The dashboard values **HEG** (NSE symbol HEGAM since 22 September) at about ₹4,613cr: today's share price (about ₹239, down from ₹728 before the ex-date) times the old 19.3cr shares. After the merger there are about 32.97cr shares, so the listed company is worth about ₹7,900cr. Its P/E divides that price by the old company's profit, which came mostly from electrodes the listed company no longer owns, and its EV/EBITDA uses pre-split operating profit and cash. **Neither number means anything for HEG Advanced Materials or HEG Graphite, so I have set no growth estimate and there is no price check.** I will value both once HEG Graphite lists in late October and each files results of its own.",
                 },
                 {
                     label: 'What EV/EBITDA changes',
@@ -502,7 +502,7 @@ export const electAndRefrac: SectorOverview = {
                 },
                 {
                     label: 'Not measurable: HEG',
-                    text: "**HEG** (now HEG Advanced Materials) has no meaningful P/E, for the reasons above. Its value rests on an anode plant with no revenue until FY28, hydro cash of ₹320–350cr a year and about ₹1,500cr of debt by March 2027. HEG Graphite, the electrode company, lists later; at the next update I will judge it on its own profit and cash.",
+                    text: "**HEG** (now HEG Advanced Materials) is still not measured live: Screener's P/E of about 13 is the old company's profit on the old share count, and the listed company has not yet filed results of its own. Its value rests on an anode plant with no revenue until FY28, hydro cash of ₹320–350cr a year and about ₹1,500cr of debt by March 2027. HEG Graphite, the electrode company, lists later; at the next update I will judge it on its own profit and cash.",
                 },
             ],
             embed: 'valuation',
