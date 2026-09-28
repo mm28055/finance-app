@@ -26,11 +26,20 @@ function shortQuarter(q: string): string {
     return q.replace('FY', '').replace(' ', ' ');
 }
 
-export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: 'text-[#4A7AAF]' } }: {
+export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: 'text-[#4A7AAF]' }, expanded = false, onExpandedChange }: {
     company: EnrichedCompany;
     colorTheme?: { bg: string; text: string };
+    // Owned by the list so that opening one row closes the others.
+    expanded?: boolean;
+    onExpandedChange?: (open: boolean) => void;
 }) => {
-    const [expanded, setExpanded] = useState(false);
+    const rowHeaderRef = useRef<HTMLDivElement>(null);
+    const setExpanded = (open: boolean) => onExpandedChange?.(open);
+    // Closing a row above this one shifts this row up the page; bring its
+    // header back into view if it slid off the top.
+    useEffect(() => {
+        if (expanded) requestAnimationFrame(() => rowHeaderRef.current?.scrollIntoView({ block: 'nearest' }));
+    }, [expanded]);
     // Material exchange filings from the sector's digest, if one exists.
     const companyFilings = useMemo(() => getCompanyFilings(company.name), [company.name]);
     const { isAdminMode } = useAdmin();
@@ -275,8 +284,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
         <div className="border-b border-gray-100 last:border-0 relative">
             {/* Compact Row */}
             <div
+                ref={rowHeaderRef}
                 onClick={() => setExpanded(!expanded)}
-                className={`flex items-center px-3 2xl:px-4 py-2.5 bg-white ${!isAdminMode ? 'hover:bg-[#F8FAFC] cursor-pointer' : ''} transition-colors group overflow-x-auto md:overflow-visible`}
+                className={`scroll-mt-28 flex items-center px-3 2xl:px-4 py-2.5 bg-white ${!isAdminMode ? 'hover:bg-[#F8FAFC] cursor-pointer' : ''} transition-colors group overflow-x-auto md:overflow-visible`}
             >
                 {/* Company Info - Single Line */}
                 {/* Company Info - Fixed Width for Alignment */}

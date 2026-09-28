@@ -108,6 +108,9 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
     // Keeps only the companies whose score moved 20+ points, up or down, from
     // the previous quarter's concall.
     const [bigMoveOnly, setBigMoveOnly] = useState(false);
+    // Only one company row is open at a time. Keyed by sector too, because
+    // ZPortfolio repeats companies that are also listed in their own sector.
+    const [openRowKey, setOpenRowKey] = useState<string | null>(null);
 
     // Filter companies based on search AND conviction AND sort them
     const filteredSectors = useMemo(() => {
@@ -290,9 +293,18 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                     companies={s.companies}
                     defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null || bigMoveOnly}
                 >
-                    {s.companies.map(co => (
-                        <CompanyRow key={co.ticker} company={co} colorTheme={COLOR_THEMES.blue} />
-                    ))}
+                    {s.companies.map(co => {
+                        const rowKey = `${s.sector}:${co.ticker}`;
+                        return (
+                            <CompanyRow
+                                key={co.ticker}
+                                company={co}
+                                colorTheme={COLOR_THEMES.blue}
+                                expanded={openRowKey === rowKey}
+                                onExpandedChange={(open) => setOpenRowKey(open ? rowKey : null)}
+                            />
+                        );
+                    })}
                 </SectorSection>
             ))}
         </div>
