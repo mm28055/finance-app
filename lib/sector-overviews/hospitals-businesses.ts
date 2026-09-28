@@ -10,7 +10,7 @@ const intro: OverviewSection[] = [
     {
         heading: 'How to read this tab',
         body: [
-            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live, except Narayana, whose dashboard price is wrong), then what it offers, where the money comes from and its charts; patients and payers, costs, competitors and ownership are under **More detail**. Revenue totals are filed consolidated figures; beds, occupancy and splits are from each company's latest call. Hospitals have no main raw material, so there is no cost-versus-input chart.",
+            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it offers, where the money comes from and its charts; patients and payers, costs, competitors and ownership are under **More detail**. Revenue totals are filed consolidated figures; beds, occupancy and splits are from each company's latest call. Hospitals have no main raw material, so there is no cost-versus-input chart.",
         ],
     },
     {

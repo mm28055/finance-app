@@ -965,8 +965,13 @@ export const hospitalsCharts: Record<string, ProfileCharts> = {
 };
 
 // Fixed valuation inputs as of the note date; market value and P/E are live on the page.
-// Narayana Hrudayalaya is left out: the dashboard’s market value for it is wrong (about twice Screener’s) as of 23 Sep 2026.
 export const hospitalsValuationInputs: Record<string, ValuationInput> = {
+    "Narayana Hrudayalaya": {
+        "netDebt": 3156,
+        "ttmEbitda": 1742.0,
+        "mcapAtWriting": 39230.0,
+        "peAtWriting": 45.5
+    },
     "Global Health (Medanta)": {
         "netDebt": 57,
         "ttmEbitda": 979.0,
