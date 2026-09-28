@@ -1100,6 +1100,123 @@ export const oilCharts: Record<string, ProfileCharts> = {
             "inventory5y": -19,
             "payables5y": 2
         }
+    },
+    "TruAlt Bioenergy": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 65
+                },
+                {
+                    "label": "Power and factory costs",
+                    "share": 10
+                },
+                {
+                    "label": "Staff",
+                    "share": 3
+                },
+                {
+                    "label": "Other costs",
+                    "share": 6
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 16
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "marginVsInput": {
+            "input": "Maize (grain feedstock) price",
+            "periods": [
+                "Q1 FY25",
+                "Q2 FY25",
+                "Q3 FY25",
+                "Q4 FY25",
+                "Q1 FY26",
+                "Q2 FY26",
+                "Q3 FY26",
+                "Q4 FY26",
+                "Q1 FY27"
+            ],
+            "margin": [
+                7.1,
+                4.4,
+                30.1,
+                17.0,
+                13.8,
+                -4.3,
+                18.8,
+                21.6,
+                21.2
+            ],
+            "index": [
+                100,
+                107,
+                106,
+                109,
+                106,
+                105,
+                100,
+                96,
+                96
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                105.0,
+                188.0,
+                309.0,
+                290.0
+            ],
+            "ocf": [
+                233.0,
+                35.0,
+                342.0,
+                -296.0
+            ],
+            "fcf": [
+                -43.0,
+                -322.0,
+                82.0,
+                -807.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "24.6x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "13.8x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹1,562cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "n/m",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "17%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     }
 };
 
@@ -1158,5 +1275,11 @@ export const oilValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 67.0,
         "mcapAtWriting": 636.0,
         "peAtWriting": 15.9
+    },
+    "TruAlt Bioenergy": {
+        "netDebt": 1562,
+        "ttmEbitda": 392.0,
+        "mcapAtWriting": 3844.0,
+        "peAtWriting": 24.6
     }
 };

@@ -10,13 +10,13 @@ const intro: OverviewSection[] = [
     {
         heading: 'How to read this tab',
         body: [
-            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it sells, where the money comes from and its charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed consolidated figures; splits are from each company's latest presentation or call. The cost chart uses India's crude-oil price index for Chennai Petroleum, Gulf Oil and Gandhar; the service and terminal companies have no such chart because oil is not their raw material.",
+            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it sells, where the money comes from and its charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed consolidated figures; splits are from each company's latest presentation or call. The cost chart uses India's crude-oil price index for Chennai Petroleum, Gulf Oil and Gandhar, and the maize price index for TruAlt; the service and terminal companies have no such chart because oil is not their raw material.",
         ],
     },
     {
         heading: 'The businesses, in plain words',
         body: [
-            "Nine companies that earn from oil and gas in three very different ways.",
+            "Ten companies that earn from oil and gas, or from replacing them, in four very different ways.",
         ],
         points: [
             {
@@ -31,10 +31,14 @@ const intro: OverviewSection[] = [
                 label: 'Port tank terminals',
                 text: "Storing imported LPG, fuels and chemicals in tanks at ports and charging a fee per tonne or per kilolitre of tank space (Aegis Vopak, Ganesh Benzoplast). Like a toll road: expensive to build, then high margins for decades.",
             },
+            {
+                label: 'Biofuels',
+                text: "Making ethanol from sugar-cane molasses, maize and broken rice, which the oil companies blend into petrol, and gas from sugar-mill waste (TruAlt Bioenergy). The government fixes the price per litre and the oil companies decide each year how much they buy, so profit is the gap between that fixed price and the cost of grain and molasses.",
+            },
         ],
     },
     {
-        heading: 'Three ways of earning',
+        heading: 'Four ways of earning',
         body: [
             "What sets the price decides how much the oil cycle moves each company's profit.",
         ],
@@ -45,6 +49,7 @@ const intro: OverviewSection[] = [
                     ['**Day rates and contracts**', 'Deep, Jindal Drilling, Asian Energy, South West Pinnacle', 'Contract rates fixed for years; how many rigs and crews are working', 'Slow: state oil companies pay in months'],
                     ['**Spreads**', 'Chennai Petroleum, Gulf Oil, Gandhar', 'Product prices minus crude or base-oil prices; brand power for Gulf Oil', 'Normal credit terms; stock of oil must be financed'],
                     ['**Tank fees**', 'Aegis Vopak, Ganesh Benzoplast', 'Fee per tonne or per kilolitre of tank; how full the tanks are', 'Steady; customers pay monthly'],
+                    ['**Set prices, allotted volumes**', 'TruAlt Bioenergy', 'Government ethanol price minus maize and molasses costs; the volume the oil companies allot', 'Oil companies pay in about three weeks, but stocks of grain and unsold ethanol tie up cash'],
                 ],
             },
         ],
@@ -293,6 +298,33 @@ const profiles: BusinessProfile[] = [
         money: "Screener shows **₹3,424cr of net debt**, about five times a year's operating profit. The ₹10,000cr first phase should be finished by March 2027 (June 2027 at worst), and the $5bn plan is to be funded by debt (management caps gearing at 0.6 and debt at 3.5 times EBITDA, though Screener's figures put it above that today), internal cash and new equity. In FY26 it bought about ₹1,700cr of terminals from its own promoter group (Mangalore for ₹1,040cr and Pipavav for ₹658cr) and revalued plant up by ₹405cr; the auditors made this a key audit matter. On its own measure net debt was 2.64 times operating profit at March. Promoters hold **87%** and must bring this down to 75% by around June 2028 (the date is unclear in the transcript), which means a large share sale. The dividend is tiny.",
         watch: ["LPG volumes returning to at least 25% growth.", "The first 100,000 cbm at JNPA in Q3 FY27 and ₹10,000cr of assets by March 2027.", "The size and price of the promoter share sale due by 2028."],
         charts: oilCharts['Aegis Vopak Terminals'],
+    },
+    {
+        company: 'TruAlt Bioenergy',
+        inShort: ["**India's largest maker of fuel ethanol**, from five distilleries in Karnataka that run on sugar-cane molasses and, since early 2026, maize and broken rice; it sells mainly to the state oil companies for blending into petrol, makes compressed biogas with GAIL and Sumitomo, and plans a jet-fuel plant.", "**Good:** the plant conversion is done, Q1 FY27 revenue doubled to ₹627cr at a 21% margin, and biogas earns 55–60% margins with GAIL as buyer. **Bad:** the oil companies allotted it only about a third of the ethanol it bid for, dearer maize is squeezing the margin, FY26 operating cash was −₹296cr, net debt is about ₹1,560cr, and about 26% of its shares are pledged, with a new pledge added in September.", "**Verdict: wait.** The price asks for a little more growth than I expect from a business whose volumes and costs are set by others."],
+        tagline: "A fuel-ethanol producer with 2,000 kilolitres a day of distillery capacity in Karnataka, plus compressed-biogas plants, seven fuel stations and a planned sustainable aviation fuel plant.",
+        revenue: '₹1,728cr (FY26, consolidated)',
+        products: [
+            { name: 'Fuel ethanol', text: "Five distilleries (Mudhol 700, Jamkhandi 500, Khanapur 400, Kerakalmatti 200 and Badami 200 kilolitres a day), 1,300 of them now able to use grain as well as molasses. It sold 8.29 crore litres in Q1 FY27 at about ₹67–68 a litre, running at about 60% of capacity." },
+            { name: 'By-products and ENA', text: "Dried distillers' grains (DDGS, an animal feed left over from grain, ₹45cr in Q1), extra neutral alcohol for liquor makers (₹37cr) and CO2." },
+            { name: 'Compressed biogas', text: "A 10-tonne-a-day plant owned 51:49 with GAIL, making gas from press mud and spent wash plus organic manure; ₹11cr of Q1 revenue at a 55.6% operating margin. Four 20-tonne plants with Sumitomo are due between August and December 2026, and six with GAIL are to be built." },
+            { name: 'Fuel stations and jet fuel', text: "Seven franchise fuel stations (about ₹105cr a year of sales at a thin margin), with expansion paused. A 100 million litre a year ethanol-to-jet-fuel plant in Andhra Pradesh, costing about ₹2,000–2,250cr, is at the engineering stage and targeted for FY29." },
+        ],
+        revenueText: "**Almost all revenue is ethanol and its by-products**: ₹1,705cr of FY26's ₹1,728cr, with biogas ₹22.5cr (annual report segment note). In Q1 FY27 **grain-based ethanol (₹314cr) overtook sugar-based (₹277cr)**, per the call. Revenue swings with allotments and shutdowns: ₹1,908cr in FY25, then ₹1,728cr in FY26 when three plants were shut for conversion and the oil companies allotted about 26 crore litres of a 72 crore bid.",
+        mixes: [
+            { caption: 'Revenue by segment, FY26 (annual report)', parts: [{ label: 'Ethanol and other products', share: 99 }, { label: 'Compressed biogas', share: 1 }] },
+        ],
+        customers: ["**Indian Oil, BPCL and HPCL**, which buy through an annual tender under the ethanol blending programme at government-set prices, and pay in about three weeks.", "**Private fuel marketers** such as Nayara and Jio-bp (8 crore litres ordered for 2025-26, though they later sought to cut the ₹60 price), and **liquor makers** for extra neutral alcohol.", "**GAIL** for biogas, and fertiliser companies such as IFFCO for the organic manure."],
+        difficulty: { level: 'Medium', text: "Distilleries are proven technology and India already has more ethanol capacity than the oil companies buy. What is harder to copy is its scale, grain-and-molasses flexibility and a sugar group next door; getting good biogas yields took the company itself years of learning." },
+        moat: "Scale, cheap group feedstock, biomass-fired boilers and dual feed make it a low-cost producer. But the government sets the price and the oil companies set the volume, so low cost helps it survive a glut rather than earn more.",
+        salesDrivers: ["**The annual tender**: it got about 34% of its bid for 2025-26, and FY27 orders in hand are 44 crore litres against capacity of about 55 crore.", "**The court case**: the Karnataka High Court ordered the oil companies in February to take 15 crore litres (about ₹1,062cr) it missed while its plants were shut; they had not lifted it by late July.", "**Higher blending**: India reached 20% ethanol in petrol in 2025-26; fuel standards for E22–E30 exist, but a roadmap beyond 20% is still awaited.", "**Biogas plants**: ten new plants with Sumitomo and GAIL should add revenue from Q4 FY27, ramping to about 85% use in FY28.", "**Jet fuel and exports**: the Andhra Pradesh plant could use 20 crore litres a year of its own ethanol from FY29; ethanol exports are being discussed but are not yet allowed."],
+        inputs: "**Maize, broken rice and cane molasses and syrup**, much of the molasses from its promoters' Nirani Sugars (₹879cr of purchases in FY26). Maize bought at ₹17–22 a kg gave about ₹15–16 a litre of contribution; at ₹25.5 a kg it is ₹6–7. Materials were 65% of sales in FY26.",
+        costEffect: "**Not protected.** The ethanol price is fixed by the government for each feedstock (₹71 a litre from maize, ₹60 from B-heavy molasses) and rarely changes, so dearer grain comes straight out of the margin; its defence is buying grain when it is cheap and switching feed. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 7 points (17% to 10%). **What happened:** India's wholesale price index for maize was roughly flat, 100 in Q1 FY25 and 96 in Q1 FY27, while the margin went from 7.1% to 21.2%, dipping to −4.3% in Q2 FY26. The index did not drive it: plant shutdowns for conversion, the size of each quarter's allotment and the timing of cheap maize purchases did.",
+        competitors: [{ name: 'Sugar-company distilleries', note: 'Balrampur Chini, Triveni, Shree Renuka and co-operative mills; co-operatives get first call in the tender.' }, { name: 'Grain-only distilleries', note: 'Plants built for maize and rice, now about half of India’s ethanol capacity.' }, { name: 'Other biogas producers', note: 'Sugar groups and oil companies are building plants; TruAlt says few have enough feedstock nearby to reach 10 tonnes a day.' }],
+        position: "**The largest single ethanol producer in India by installed capacity** (2,000 kilolitres a day; about 3.6% of national capacity in FY25, per its IPO documents as summarised by Screener).",
+        money: "Screener shows **₹1,562cr of net debt** at March 2026, about four years of operating profit, with ₹166cr of interest over the last year. It raised ₹750cr of new money in its October 2025 IPO at ₹496 a share, mostly for working capital. Biogas plans need ₹950–1,000cr over FY27–FY28, about ₹650–700cr of it borrowed (CRISIL), and the jet-fuel plant about ₹2,000cr more, with financing not yet set. CRISIL rates it A- with a Negative outlook and notes that a required debt-service reserve has not been created. No dividend. Promoters hold **70.55%**, unchanged since listing; about 2.23 crore shares (26% of the company) are pledged to its lenders SBI and IREDA, and in September a promoter company pledged 14 lakh more to Jio Credit to fund buying shares. The exchanges fined it about ₹5.4 lakh each for having no woman independent director through Q1 FY27.",
+        watch: ["The 2026-27 ethanol tender allocation and the court-ordered 15 crore litres.", "The promoter pledge released and operating cash turning positive.", "The first Sumitomo biogas plants running, and how the jet-fuel plant is financed."],
+        charts: oilCharts['TruAlt Bioenergy'],
     },
 ];
 

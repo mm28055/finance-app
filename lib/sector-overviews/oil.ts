@@ -10,6 +10,7 @@ const FY = ['FY22', 'FY23', 'FY24', 'FY25', 'FY26'];
 const SERVICES = 'Oilfield and exploration services — rigs, compressors and crews';
 const PRODUCTS = 'Refining and oil products — fuels, lubricants and white oils';
 const TERMINALS = 'Port tank terminals — LPG, fuels and chemicals';
+const BIOFUELS = 'Biofuels — ethanol and compressed biogas';
 
 export const oil: SectorOverview = {
     sector: 'Oil',
@@ -32,10 +33,11 @@ export const oil: SectorOverview = {
             'Gandhar Oil Refinery (India)': 0,
             'Chennai Petroleum Corporation': 0,
             'Aegis Vopak Terminals': 20,
+            'TruAlt Bioenergy': 12,
         },
     },
     standfirst:
-        "Nine companies that earn from oil and gas in three different ways. Four rent out rigs, compressors and crews or drill exploration holes: Deep Industries, Jindal Drilling, Asian Energy and South West Pinnacle. Three turn oil into products: Chennai Petroleum refines crude for Indian Oil, Gulf Oil sells branded lubricants, and Gandhar makes white oils for creams and medicines. Two run tank terminals at ports: Aegis Vopak and Ganesh Benzoplast. 2026 has been shaped by the near-closure of the Strait of Hormuz, which gave refiners and white-oil makers record spreads, cut India's LPG imports and left lubricant makers short of base oil. This note draws on both recent earnings calls, the FY26 annual reports, rating reports and forecasts from EIA, IEA, ICRA and others; every chart uses filed results.",
+        "Ten companies that earn from oil and gas, or from replacing them, in four different ways. Four rent out rigs, compressors and crews or drill exploration holes: Deep Industries, Jindal Drilling, Asian Energy and South West Pinnacle. Three turn oil into products: Chennai Petroleum refines crude for Indian Oil, Gulf Oil sells branded lubricants, and Gandhar makes white oils for creams and medicines. Two run tank terminals at ports: Aegis Vopak and Ganesh Benzoplast. One, TruAlt Bioenergy, makes the ethanol that is blended into petrol and is building compressed-biogas and jet-fuel plants. 2026 has been shaped by the near-closure of the Strait of Hormuz, which gave refiners and white-oil makers record spreads, cut India's LPG imports and left lubricant makers short of base oil, while the ethanol maker's volumes were set by an oil-company tender and a court case. This note draws on both recent earnings calls, the FY26 annual reports, rating reports and forecasts from EIA, IEA, ICRA and others; every chart uses filed results.",
     lastUpdated: '2026-09-23',
     asOfQuarter: 'Q1 FY27',
 
@@ -47,7 +49,7 @@ export const oil: SectorOverview = {
             periods: Q,
             scale: 'sequential',
             source: 'Filed quarterly results (Screener), all consolidated. Operating profit ÷ revenue.',
-            note: 'Three very different businesses: terminals earn about 75% (Aegis Vopak), rig and compression services 30–45% (Deep, Jindal), and refiners and blenders 1–16% on a high oil price (Chennai Petroleum, Gulf Oil, Gandhar).',
+            note: 'Very different businesses: terminals earn about 75% (Aegis Vopak), rig and compression services 30–45% (Deep, Jindal), the ethanol maker about 20% when its plants run (TruAlt), and refiners and blenders 1–16% on a high oil price (Chennai Petroleum, Gulf Oil, Gandhar).',
             values: {
                 'Deep Industries': [41, 42, 45, 33, 39],
                 'Gulf Oil Lubricant': [12, 12, 13, 13, 13],
@@ -58,12 +60,14 @@ export const oil: SectorOverview = {
                 'Gandhar Oil Refinery (India)': [5, 6, 5, 6, 16],
                 'Chennai Petroleum Corporation': [1, 7, 9, 12, 6],
                 'Aegis Vopak Terminals': [75, 73, 75, 74, 76],
+                'TruAlt Bioenergy': [14, -4, 19, 22, 21],
             },
             cellNotes: {
                 'Gandhar Oil Refinery (India)': 'Q1 FY27 spread jumped to ₹28,145 a kilolitre from a normal ₹8,274 as oil markets were disrupted.',
                 'Chennai Petroleum Corporation': 'Swings with refining margins and gains or losses on crude stocks. The dashboard’s stored quarterly records for this company are zero; these figures are from the filings.',
                 'Deep Industries': 'Operating profit excludes other income. The company’s own margin (43.6% in Q1 FY27) and the dashboard’s stored margins include about ₹24cr a quarter of other income.',
                 'Ganesh Benzoplast': 'The dashboard stores Q3 and Q4 FY26 operating profit as zero; the filings show ₹22cr and ₹21cr.',
+                'TruAlt Bioenergy': 'Q2 FY26 was a loss because three distilleries were shut for about three months to add grain feed. The company’s own 23.5% margin for Q1 FY27 includes other income; this is 21.2%.',
             },
         },
         {
@@ -73,7 +77,10 @@ export const oil: SectorOverview = {
             periods: Q,
             scale: 'diverging',
             source: 'Filed quarterly revenue, each quarter against the same quarter a year earlier.',
-            note: 'Refiners’ and blenders’ revenue follows the oil price as much as volumes: the Q1 FY27 jumps at Chennai Petroleum and Gandhar are mostly price.',
+            note: 'Refiners’ and blenders’ revenue follows the oil price as much as volumes: the Q1 FY27 jumps at Chennai Petroleum and Gandhar are mostly price. TruAlt’s swings follow its ethanol allocations and plant shutdowns.',
+            cellNotes: {
+                'TruAlt Bioenergy': 'FY26 revenue fell 9%: the oil companies allotted it 34% of the ethanol it bid for, and three plants were shut in Q2 FY26 for conversion. Q1 FY27 is against that weak quarter.',
+            },
             values: {
                 'Deep Industries': [63, 69, 43, 49, 40],
                 'Gulf Oil Lubricant': [14, 12, 11, 11, 31],
@@ -84,6 +91,7 @@ export const oil: SectorOverview = {
                 'Gandhar Oil Refinery (India)': [-9, 13, 16, 14, 92],
                 'Chennai Petroleum Corporation': [-13, 35, 21, -3, 85],
                 'Aegis Vopak Terminals': [35, 26, 48, 22, 12],
+                'TruAlt Bioenergy': [54, -70, 72, -34, 106],
             },
         },
         {
@@ -105,6 +113,7 @@ export const oil: SectorOverview = {
                 'Gandhar Oil Refinery (India)': [39, 37, 22, 11, 13],
                 'Chennai Petroleum Corporation': [20, 45, 35, 4, 35],
                 'Aegis Vopak Terminals': [null, 8, 8, 9, 8],
+                'TruAlt Bioenergy': [null, null, 11, 14, 10],
             },
         },
         {
@@ -126,9 +135,11 @@ export const oil: SectorOverview = {
                 'Gandhar Oil Refinery (India)': [22, 38, 63, 79, 83],
                 'Chennai Petroleum Corporation': [43, 17, 24, 23, 29],
                 'Aegis Vopak Terminals': [null, 72, 85, 55, 74],
+                'TruAlt Bioenergy': [null, -72, 92, -14, 170],
             },
             cellNotes: {
                 'Aegis Vopak Terminals': 'Debtor days only; FY22 not filed.',
+                'TruAlt Bioenergy': 'FY26 stock rose by ₹318cr (unsold ethanol and maize bought cheaply) and payables fell ₹199cr. Listed in October 2025; FY22 not available.',
             },
         },
         {
@@ -149,8 +160,10 @@ export const oil: SectorOverview = {
                 'Gandhar Oil Refinery (India)': [68, 28, -25, 9, 54, 26],
                 'Chennai Petroleum Corporation': [38, 101, 60, 130, 62, 74],
                 'Aegis Vopak Terminals': [null, 75, 85, 100, 102, 95],
+                'TruAlt Bioenergy': [null, 222, 21, 110, -99, 35],
             },
             cellNotes: {
+                'TruAlt Bioenergy': 'FY26 operating cash was −₹296cr on ₹290cr of operating profit, as unsold ethanol and cheap maize piled up; the last column covers four years.',
                 'Jindal Drilling and Industries': 'FY25 operating cash (₹864cr) was far above operating profit (₹241cr), a year in which ₹607cr for the Jindal Pioneer rig was still owed; FY26 operating cash (₹178cr) came after ₹476cr of that was paid (annual report).',
             },
         },
@@ -173,6 +186,7 @@ export const oil: SectorOverview = {
                 'Gandhar Oil Refinery (India)': [1.4, 0.8, -3.0, 0.4, 3.0, 0.5],
                 'Chennai Petroleum Corporation': [0.8, 7.0, 3.2, 1.1, 3.2, 3.4],
                 'Aegis Vopak Terminals': [null, -2.0, -58.0, 55.8, 0.1, null],
+                'TruAlt Bioenergy': [null, -5.6, -26.3, 4.3, -46.7, -19.4],
             },
         },
         {
@@ -199,6 +213,7 @@ export const oil: SectorOverview = {
                 'Gandhar Oil Refinery (India)': [0.0, 0.4, -0.0, 0.9, 0.8],
                 'Chennai Petroleum Corporation': [3.4, 0.7, 0.6, 2.6, 0.1],
                 'Aegis Vopak Terminals': [null, 10.3, 8.0, 5.7, 5.0],
+                'TruAlt Bioenergy': [null, 10.9, 8.8, 4.6, 5.4],
             },
         },
         {
@@ -220,6 +235,7 @@ export const oil: SectorOverview = {
                 'Gandhar Oil Refinery (India)': [3.3, 1.4, 1.3, 0.0, 0.0, 1.1],
                 'Chennai Petroleum Corporation': [1.6, 0.5, 0.9, 1.2, 1.4, 1.1],
                 'Aegis Vopak Terminals': [null, 50.7, 118.0, 17.2, 75.9, null],
+                'TruAlt Bioenergy': [null, 36.2, 29.2, 13.6, 29.6, 25.0],
             },
         },
         {
@@ -241,6 +257,7 @@ export const oil: SectorOverview = {
                 'Gandhar Oil Refinery (India)': [18.6, 17.1, 11.4, 8.7, 8.5],
                 'Chennai Petroleum Corporation': [6.2, 10.0, 8.8, 8.1, 8.8],
                 'Aegis Vopak Terminals': [null, 0.1, 0.2, 0.2, 0.1],
+                'TruAlt Bioenergy': [null, 0.6, 0.9, 1.0, 0.8],
             },
         },
     ],
@@ -272,6 +289,8 @@ export const oil: SectorOverview = {
                 grades: { contract: { grade: 'B', note: 'About 94% of revenue from Indian Oil' }, asset: { grade: 'A', note: 'Coastal refinery near Chennai' }, brand: { grade: 'C', note: 'Sells a commodity' }, cycle: { grade: 'D', note: 'Profit swings with refining margins' }, cash: { grade: 'B', note: 'Low debt; auditor note on ₹1,473cr Cauvery spend' } } },
             { company: 'Aegis Vopak Terminals', trend: 'stable', trendNote: 'Liquids up 31% but gas revenue down 3.5% in Q1; JNPA start slipped to Q3 FY27.',
                 grades: { contract: { grade: 'A', note: 'Long terminal contracts' }, asset: { grade: 'A', note: 'Terminals at seven ports' }, brand: { grade: 'B', note: 'Vopak is a global terminal operator' }, cycle: { grade: 'A', note: 'Fee per tonne stored' }, cash: { grade: 'C', note: '~₹1,700cr of terminals bought from the promoter group' } } },
+            { company: 'TruAlt Bioenergy', trend: 'stable', trendNote: 'Grain conversion done; got 34% of the ethanol it bid for; 44 crore litres of orders for FY27.',
+                grades: { contract: { grade: 'C', note: 'Annual oil-company tender; allocations cut despite a long-term agreement' }, asset: { grade: 'B', note: 'Largest ethanol capacity, 65% able to use grain' }, brand: { grade: 'C', note: 'Sells a commodity at government-set prices' }, cycle: { grade: 'D', note: 'Maize prices and allocations set profit' }, cash: { grade: 'D', note: 'FY26 operating cash −₹296cr; 26% of shares pledged' } } },
         ],
     },
 
@@ -281,21 +300,21 @@ export const oil: SectorOverview = {
             body: [
                 "**Own Deep Industries and Gulf Oil, each for a different reason and each with a caveat.** **Deep** rents gas compressors, rigs and crews to ONGC and Oil India; revenue rose 40% in Q1 FY27, the order book stands at ₹3,047cr, and management now targets profit of about ₹350cr in FY27 and ₹500cr in FY28. Even measured on reported profit, which is lower than the dashboard shows, the price asks for far less growth than that. Governance is the price of admission: ₹458cr of write-offs over two years on the Kandla business it merged in, and a loan to the promoter company Prabha Energy that reached ₹135cr before ₹86cr came back in Q1. **Gulf Oil** grew lubricant volumes 17% against a market growing 3–4%, held a 12.9% margin through a base-oil shortage, and has about ₹680cr of net cash on its annual report.",
                 "**Follow Jindal Drilling, South West Pinnacle, Ganesh Benzoplast and Asian Energy.** **Jindal Drilling** has ₹1,310cr of contracted work at a low price, but FY27 revenue looks set to fall 10–15% as three rigs go off hire, ONGC cut the rate on its latest contract, its two best-paid contracts end by October 2027, and its real cash is far smaller than Screener shows. **South West Pinnacle**'s order book reached a record ₹761cr and revenue has grown about 35% a year for two years, but operating cash was ₹12cr in FY26 against ₹33cr of profit, and its top three customers were 72% of revenue. **Ganesh Benzoplast** owns scarce, full tanks at JNPT, but a 25-year lease renewal lifted its rent on the older plots from ₹2cr to ₹24.25cr a year, the expansion has slipped to December 2026, it skipped the dividend it had promised, and the auditor's note on a ₹45cr fraud case is still in the accounts. **Asian Energy** has grown revenue from ₹305cr to ₹791cr in two years, but missed its FY26 guidance, earned an 8.1% margin in Q1 against 12–13% guided, and its case now rests on merging in its promoter's Oilmax on terms minority shareholders cannot easily check.",
-                "**Wait on Gandhar, Chennai Petroleum and Aegis Vopak.** **Gandhar** made ₹206cr in Q1 FY27, more than in all of FY26, because the Hormuz crisis more than tripled its spread; management itself calls the conditions exceptional, and CRISIL expects margins to fall back to their old 4.5–8.5% range. **Chennai Petroleum** is a well-run refinery earning war-time margins, but it sells about 94% of its output to Indian Oil at formula prices, held no Q1 call, and its auditors have flagged ₹1,473cr sunk into a joint-venture refinery that still awaits approvals. **Aegis Vopak** owns the best assets in the sector, but reported profit fell 7% in Q1, two promised start dates slipped within one quarter, it bought about ₹1,700cr of terminals from its own promoter group in FY26, and the price still needs about {need:Aegis Vopak Terminals|36}% growth a year.",
+                "**Wait on Gandhar, Chennai Petroleum, Aegis Vopak and TruAlt Bioenergy.** **Gandhar** made ₹206cr in Q1 FY27, more than in all of FY26, because the Hormuz crisis more than tripled its spread; management itself calls the conditions exceptional, and CRISIL expects margins to fall back to their old 4.5–8.5% range. **Chennai Petroleum** is a well-run refinery earning war-time margins, but it sells about 94% of its output to Indian Oil at formula prices, held no Q1 call, and its auditors have flagged ₹1,473cr sunk into a joint-venture refinery that still awaits approvals. **Aegis Vopak** owns the best assets in the sector, but reported profit fell 7% in Q1, two promised start dates slipped within one quarter, it bought about ₹1,700cr of terminals from its own promoter group in FY26, and the price still needs about {need:Aegis Vopak Terminals|36}% growth a year. **TruAlt Bioenergy**, India's largest ethanol maker, earned ₹133cr of operating profit in Q1 FY27 on maize it had bought cheaply, but it does not control either lever that matters: the oil companies gave it 34% of the ethanol it bid for last year, and maize at today's ₹25.5 a kg cuts its margin from ₹15–16 a litre to ₹6–7. FY26 operating cash was −₹296cr, net debt is about ₹1,560cr, CRISIL has it on Negative outlook, and a ₹2,000cr-plus jet-fuel plant is next. Its promoters have pledged about 26% of the company's shares, said in July the pledge would be released this quarter and added a new one in September, and the exchanges fined it for going a whole quarter without a woman director. The price needs about {need:TruAlt Bioenergy|16}% a year against my ~12%.",
                 "**Two things to hold onto before reading the rest.** First, **a low P/E at the top of a cycle is a trap**: the refiner and the white-oil maker look cheapest precisely because 2026's Hormuz shock pushed their spreads to records, and EIA and ICRA both expect those to fade during 2027. Second, **for the service companies, ONGC is both the market and the ceiling**: its exploration budget is up about 20% this year, but it cancelled a four-rig tender rather than pay higher day rates, so more work does not automatically mean better prices. One more caveat runs through the whole note: several of the dashboard's stored quarterly records for this sector are wrong (section 8 lists them), and the charts and text here use the filings instead.",
             ],
         },
         {
             heading: '2. Charts: margins, growth, cash cycle and cash conversion',
             body: [
-                "The six views that matter most, with three more behind **More measures**. Every figure comes from filed consolidated results. The three businesses look very different on every measure, so compare each company with others of its kind. Hover over a starred name for its caveat.",
+                "The six views that matter most, with three more behind **More measures**. Every figure comes from filed consolidated results. The four businesses look very different on every measure, so compare each company with others of its kind. Hover over a starred name for its caveat.",
             ],
             embed: 'metrics',
         },
         {
             heading: '3. The sector',
             body: [
-                "India imports about 89% of the crude it uses (a record 88.7% in FY26, per ThePrint's reading of official data), refines it at home and produces a shrinking amount through ONGC and Oil India. 2026 has been shaped by one event. A US–Israeli air war on Iran from late February effectively closed the Strait of Hormuz, through which about half of India's crude imports and about 90% of its LPG imports normally pass, according to the Observer Research Foundation. A ceasefire came on 8 April, but ship-tracking data still showed only 5–13 vessels a day in early September against about 100 before the war (Al Jazeera). Brent crude went from about $69 a barrel in February to a peak near $118–126 in March, fell to about $70 in July and was back around $100–117 in September, against an FY26 average of $66. **For these nine companies the shock cut both ways**: the refiner and the white-oil maker earned record spreads, the LPG terminals lost volume, and the lubricant makers scrambled for base oil.",
+                "India imports about 89% of the crude it uses (a record 88.7% in FY26, per ThePrint's reading of official data), refines it at home and produces a shrinking amount through ONGC and Oil India. 2026 has been shaped by one event. A US–Israeli air war on Iran from late February effectively closed the Strait of Hormuz, through which about half of India's crude imports and about 90% of its LPG imports normally pass, according to the Observer Research Foundation. A ceasefire came on 8 April, but ship-tracking data still showed only 5–13 vessels a day in early September against about 100 before the war (Al Jazeera). Brent crude went from about $69 a barrel in February to a peak near $118–126 in March, fell to about $70 in July and was back around $100–117 in September, against an FY26 average of $66. **For these ten companies the shock cut both ways**: the refiner and the white-oil maker earned record spreads, the LPG terminals lost volume, and the lubricant makers scrambled for base oil. The ethanol maker should in principle gain when oil is dear, since every litre of ethanol blended is a litre of petrol not imported, but its sales are set by an annual tender rather than the oil price.",
             ],
             points: [
                 {
@@ -311,8 +330,12 @@ export const oil: SectorOverview = {
                     text: "**Spreads swing, contracts do not, and policy leans on both.** EIA, the US energy statistics agency, expects Brent to average about $90 in the second half of 2026 and $74 in 2027 as Middle East output recovers from Q2 2027; ICRA's normal Singapore refining margin is $5–6 a barrel, against more than $10 since the crisis began. The government cut excise duty by ₹10 a litre in March, raised export duties on diesel and jet fuel to keep product at home, and raised pump prices four times in May. Upstream, ONGC plans more than ₹30,000cr of capex in FY27 with exploration up about 20% to ₹12,000cr, Oil India targets 100 wells against 74 in FY26, and the Cabinet approved the ₹84,084cr Samudra Manthan offshore exploration scheme on 31 July. But ONGC cancelled a tender for four jack-up rigs in April, citing “unusual” rate increases, and the deep-sea blocks in the latest bidding rounds are not due for bids until 15 November. **More activity is coming; better prices for contractors are not guaranteed.**",
                 },
                 {
+                    label: 'Ethanol: a policy market with spare capacity',
+                    text: "India reached 20% ethanol blending in petrol in the 2025-26 supply year, five years ahead of the original target, and oil-company purchases have grown from about 38 crore litres a decade ago to more than 1,200 crore litres (figures from **TruAlt**'s annual report). But installed capacity has raced ahead to about 1,995 crore litres a year, half of it grain-based, so the binding limit is the annual tender, not demand. In the 2025-26 tender the oil companies ranked suppliers (co-operative mills first, then long-term contract holders, then by feedstock and by state), and TruAlt was allotted about 26 crore litres of the 72 crore it bid for; a Karnataka High Court order for 15 crore litres more is stuck behind a Supreme Court case. Prices are fixed by the government per feedstock (₹71 a litre from maize, ₹60 from B-heavy molasses, ₹58 from government rice), and management does not expect a rise this year. Blending above 20% is the upside: the company says the target has been raised to 21% and fuel standards for E22 to E30 now exist, but the 2025–30 roadmap is still awaited; CRISIL's rating report and the company's own calls both treat the next tender as the thing to watch. **Ethanol is a government-run market with too many plants; the winner is whoever gets the allocation and the cheapest grain.**",
+                },
+                {
                     label: 'What these companies actually depend on',
-                    text: "**Deep** on ONGC tenders, new wells at its production contract and recovering its promoter loan; **Jindal** on re-contracting three rigs at decent day rates and on a Supreme Court ruling; **South West Pinnacle** on two big contracts and on funding its coal block; **Asian Energy** on the Oilmax merger and on margins recovering; **Gulf Oil** on its brand, on price rises sticking and on base-oil supply; **Gandhar** on how long base oil stays scarce; **Chennai Petroleum** on refining margins, Indian Oil and the Cauvery project; **Aegis Vopak** on LPG imports returning and JNPA starting; **Ganesh Benzoplast** on its new JNPT tanks. **Buy each for what it actually depends on, not for the sector label.**",
+                    text: "**Deep** on ONGC tenders, new wells at its production contract and recovering its promoter loan; **Jindal** on re-contracting three rigs at decent day rates and on a Supreme Court ruling; **South West Pinnacle** on two big contracts and on funding its coal block; **Asian Energy** on the Oilmax merger and on margins recovering; **Gulf Oil** on its brand, on price rises sticking and on base-oil supply; **Gandhar** on how long base oil stays scarce; **Chennai Petroleum** on refining margins, Indian Oil and the Cauvery project; **Aegis Vopak** on LPG imports returning and JNPA starting; **Ganesh Benzoplast** on its new JNPT tanks; **TruAlt** on its ethanol allocation, maize prices and funding its biogas and jet-fuel plants. **Buy each for what it actually depends on, not for the sector label.**",
                 },
             ],
             tables: [
@@ -322,6 +345,7 @@ export const oil: SectorOverview = {
                     rows: [
                         ['Oilfield and exploration services', 'Deep, Jindal, South West Pinnacle, Asian Energy', '8–45%', '14–20%', '**8–125%**', 'Owned rigs and compressors on contract earn 30–45%; project and staffing work earns 8–14%'],
                         ['Refining and oil products', 'Chennai Petroleum, Gulf Oil, Gandhar', '1–16%', '13–35%', '**26–74%**', 'A spread over oil; only Gulf’s brand holds it steady'],
+                        ['Biofuels', 'TruAlt', '−4 to 22%', '10%', '**35%** (four years)', 'Government-set ethanol prices; profit is the gap to maize and molasses costs'],
                         ['Port tank terminals', 'Aegis Vopak, Ganesh Benzoplast', '18–76%', '8–15%', '**74–95%**', 'Fees for tank space; costly to build, then high margins'],
                     ],
                 },
@@ -340,6 +364,7 @@ export const oil: SectorOverview = {
                         ['Offshore exploration', 'Samudra Manthan approved 31 Jul 2026', '₹84,084cr to FY31; half of deep-sea drilling cost subsidised', 'Union Cabinet'],
                         ['Jack-up day rates (Jindal)', 'ONGC four-rig tender cancelled April 2026 over rate rises', 'ONGC resisting; Jindal’s latest award about $47,800 a day', 'Ocean Energy Resources; Jindal call'],
                         ['Port petroleum traffic', '272.3m tonnes at major ports, +16.2% (FY26)', 'Five new strategic reserve sites planned after the crisis', 'Indian Infrastructure; government'],
+                        ['India ethanol', '20% blending reached in 2025-26; capacity ~1,995 crore litres against purchases above 1,200 crore', 'Target raised to 21% and fuel standards for E22–E30 set; the 2025–30 roadmap still awaited', 'TruAlt annual report; company calls'],
                         ['Lubricants', '5.77bn litres (2026)', '~3.1% a year to 6.73bn litres by 2031', 'Mordor Intelligence'],
                         ['Base oil', 'Gulf Group III supply offline; Group II traded below diesel', 'Not normal until at least mid-2027', 'Argus and ICIS, via ILMA, May 2026'],
                         ['White oils (Gandhar)', '$551m Indian market (2025)', '~8% a year to $1.19bn by 2035 (indicative only)', 'Expert Market Research'],
@@ -377,8 +402,12 @@ export const oil: SectorOverview = {
                     text: "**Chennai Petroleum** has beaten the Singapore benchmark margin every year for five or six years ($3.4 a barrel better in FY26), ran at 112% of capacity and sits in the top quartile of seven international efficiency benchmarks. But it sells about 94% of its revenue to its parent at the industry transfer price, so efficiency is its only lever. **South West Pinnacle** wins private work on its record (Hindustan Zinc's ₹307cr contract, its largest ever, and a ₹166cr Reliance extension), but its top three customers were 72% of FY26 revenue. **Asian Energy**'s integrated field contract with Vedanta is hard to displace once installed, but CRISIL rates it only BBB+, reflecting its modest scale and slow collections.",
                 },
                 {
+                    label: 'Scale and cheap feed, but the buyer sets price and volume',
+                    text: "**TruAlt** has India's largest ethanol capacity (2,000 kilolitres a day across five Karnataka plants), 1,300 of it now able to run on maize or broken rice as well as cane, so it can operate 300-plus days instead of a 100-day crushing season. Its promoters' sugar mills (Nirani Sugars) supply molasses and press mud next door, its boilers burn cheap biomass, and grain gives about 450 litres a tonne against about 317 from sugar feed. Those are real cost advantages. But the price per litre is fixed by the government, and the volume by the oil companies' tender: last year it was allotted about a third of what it bid for, and private buyers walked away from ₹60 orders when ethanol became plentiful. Its biogas plants are different: GAIL takes the gas and the joint venture earns 55–60% margins, but that business was ₹11cr of Q1's ₹627cr. **Low cost helps it survive a glut; it does not let it sell more.**",
+                },
+                {
                     label: 'Competitors outside the list',
-                    text: "In lubricants: **Castrol** (the most profitable), Indian Oil's **Servo** (the largest by volume), HPCL, BPCL's MAK, **Shell** and Veedol. In refining: **Reliance**, **Nayara** and the state refiners. In drilling: ONGC's and Oil India's own fleets, which own about half of India's onshore rigs, and international jack-up owners. In seismic: **Alphageo**. In white oils: **Savita**, **Apar** and Shell. At every port, state and private terminal operators compete for land and customers.",
+                    text: "In lubricants: **Castrol** (the most profitable), Indian Oil's **Servo** (the largest by volume), HPCL, BPCL's MAK, **Shell** and Veedol. In refining: **Reliance**, **Nayara** and the state refiners. In drilling: ONGC's and Oil India's own fleets, which own about half of India's onshore rigs, and international jack-up owners. In seismic: **Alphageo**. In white oils: **Savita**, **Apar** and Shell. In ethanol: the distilleries of sugar companies such as **Balrampur Chini**, **Triveni** and **Shree Renuka**, co-operative mills that get first call on the tender, and new grain-only distilleries. At every port, state and private terminal operators compete for land and customers.",
                 },
             ],
         },
@@ -395,7 +424,7 @@ export const oil: SectorOverview = {
                 },
                 {
                     label: 'Cyclical: this year’s windfall',
-                    text: "**Gandhar**'s spread jumped to ₹28,145 a kilolitre in Q1 FY27 from ₹7,923–9,351 in the four quarters before, and its margin to 16.2% against a history of 4.5–8.5%. Management said in May that it would try to hold “around 6%”, then in July called Q1 the result of “exceptional market conditions”, first hoping it would last the year and then only “one or two quarters”. **Chennai Petroleum**'s refining margin went from $4.22 a barrel in FY25 to $9.2 in FY26, $13.75 in Q4 and $8.78 in Q1 FY27, and Q1 included a one-off ₹385cr price revision, about 28% of pre-tax profit. Each $1 a barrel is worth roughly ₹700cr of operating profit a year, which is how profit could be ₹214cr in FY25 and ₹3,103cr in FY26. **Neither margin is a new normal.**",
+                    text: "**Gandhar**'s spread jumped to ₹28,145 a kilolitre in Q1 FY27 from ₹7,923–9,351 in the four quarters before, and its margin to 16.2% against a history of 4.5–8.5%. Management said in May that it would try to hold “around 6%”, then in July called Q1 the result of “exceptional market conditions”, first hoping it would last the year and then only “one or two quarters”. **Chennai Petroleum**'s refining margin went from $4.22 a barrel in FY25 to $9.2 in FY26, $13.75 in Q4 and $8.78 in Q1 FY27, and Q1 included a one-off ₹385cr price revision, about 28% of pre-tax profit. Each $1 a barrel is worth roughly ₹700cr of operating profit a year, which is how profit could be ₹214cr in FY25 and ₹3,103cr in FY26. **TruAlt**'s 21% in Q1 FY27 (its best quarter since listing, against −4% to 22% in FY26) came from maize bought between October and February at ₹17–22 a kg, on which it made ₹15–16 a litre; at the ₹25.5 a kg maize cost in late July, management put the margin at ₹6–7 a litre, and the company's own 23.5% counts other income. CRISIL treats 15–16% as the sustainable margin and would downgrade below 12%. **None of these three margins is a new normal.**",
                 },
                 {
                     label: 'Not structural: thin service margins',
@@ -403,7 +432,7 @@ export const oil: SectorOverview = {
                 },
                 {
                     label: 'Working capital: the biggest drains',
-                    text: "**South West Pinnacle** turned ₹33cr of FY26 profit into only ₹12cr of operating cash; debtors reached 175 days, and much of the revenue is booked by stage of completion before it is billed, which its auditor made a key audit matter. **Asian Energy** had negative operating cash in FY24 and FY25 and ₹53cr in FY26; CRISIL counted 284 debtor days in September 2025, far above the 45–75 days management calls normal. **Gandhar**'s operating cash was −₹69cr in FY24, ₹15cr in FY25 and ₹128cr in FY26, and its payables rose from ₹315cr to ₹430cr in Q1 as revenue jumped. **These three have turned 8–44% of five years' operating profit into cash.**",
+                    text: "**South West Pinnacle** turned ₹33cr of FY26 profit into only ₹12cr of operating cash; debtors reached 175 days, and much of the revenue is booked by stage of completion before it is billed, which its auditor made a key audit matter. **Asian Energy** had negative operating cash in FY24 and FY25 and ₹53cr in FY26; CRISIL counted 284 debtor days in September 2025, far above the 45–75 days management calls normal. **Gandhar**'s operating cash was −₹69cr in FY24, ₹15cr in FY25 and ₹128cr in FY26, and its payables rose from ₹315cr to ₹430cr in Q1 as revenue jumped. **TruAlt** was worse still: FY26 operating cash was −₹296cr on ₹290cr of operating profit, as ₹318cr more stock (unsold ethanol, then cheap maize) and ₹199cr less owed to suppliers were funded from the IPO and new short-term loans, and its bank limits were 82% used over the year to July (CRISIL). **These four have turned less than half of their operating profit into cash over the years on file.**",
                 },
                 {
                     label: 'Working capital: better than it looks',
@@ -431,9 +460,10 @@ export const oil: SectorOverview = {
                         ['Asian Energy Services', 'No Q1 call. Presentation: “remain confident” of FY27 guidance', 'Borrowings ₹159cr against ₹157cr of cash, of which ₹92cr unencumbered (CRISIL); guarantee lines 76% used'],
                         ['Gandhar Oil Refinery (India)', 'Payables up from ₹315cr to ₹430cr; interim dividend about ₹20cr; any expansion from its own cash', 'Borrowings ₹315cr, mostly at Texol; unencumbered cash only about ₹33cr at March (CRISIL); ₹116.7cr guarantee for Texol'],
                         ['Chennai Petroleum Corporation', 'No Q1 call. April call: ₹2,000cr of projects over 2–3 years plus about ₹500cr a year of maintenance', 'Net debt ₹973cr at March (company); ₹1,473cr of Cauvery spend held for transfer; FY26 dividend ₹62'],
+                        ['TruAlt Bioenergy', 'Promoter pledge to be released “this quarter”; a de-leveraging plan “in the next few days”; finance cost about ₹180cr a year', 'Net debt ₹1,562cr at March (Screener); FY26 operating cash −₹296cr; debt-service reserve account not yet created (CRISIL, August)'],
                         ['Aegis Vopak Terminals', '₹10,000cr of assets by March 2027, “worst case June ’27”; gearing capped at 0.6 and debt at 3.5x EBITDA', 'Screener net debt ₹3,424cr; company measure 2.64x EBITDA at March; capital commitments ₹1,677cr'],
                     ],
-                    note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. Chennai Petroleum, Ganesh Benzoplast and Asian Energy held no Q1 FY27 call, and Jindal Drilling held none for Q4 FY26. Year-end figures are from the FY26 annual reports and rating reports.',
+                    note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. Chennai Petroleum, Ganesh Benzoplast and Asian Energy held no Q1 FY27 call, and Jindal Drilling held none for Q4 FY26. TruAlt’s pledge had not been released by 24 September, when a new one was filed. Year-end figures are from the FY26 annual reports and rating reports.',
                 },
             ],
         },
@@ -460,6 +490,10 @@ export const oil: SectorOverview = {
                     text: "**Gulf Oil** aims to grow volumes two to three times as fast as the market and is spending only ₹55cr to lift capacity 70% to 2.4 lakh kL by March 2027; premium oils (below 10% of volume) should add 1–1.5 points of mix a year. It has put about ₹225cr into EV chargers through Tirex, targeting ₹300–400cr of revenue in three to four years, but Q1 was slow as e-bus depots were delayed. **Gandhar** guides 8–11% volume growth with plants 97% used, but has promised a capex plan “next quarter” on two calls running. **Chennai Petroleum** is building a ₹1,600cr, 250,000-tonne unit for the Group II/III base oils India imports, which will also compete with Gandhar's imported feedstock later.",
                 },
                 {
+                    label: 'Growth driver: fuller distilleries, then gas and jet fuel',
+                    text: "**TruAlt** needs no more ethanol capex: at full use its plants make about 55 crore litres a year, roughly ₹4,000cr of revenue at ₹67–68 a litre, against about 24–26 crore litres sold in FY26 and 44 crore litres of orders in hand for FY27. The court-ordered 15 crore litres would be on top. The next step is biogas: about ₹760cr (CRISIL says ₹950–1,000cr over FY27–FY28, ₹650–700cr of it borrowed) for ten plants with Sumitomo and GAIL, owned 51%; at the company's ₹4.5cr of revenue per tonne a day, the extra 132 tonnes would bring about ₹590cr of revenue at full use, ramping 40% in FY27 and 85% in FY28. After that comes a ₹2,000–2,250cr jet-fuel plant in Andhra Pradesh, with a ₹150cr government grant and revenue hoped for in FY29, though the annual report calls the state agreement non-binding and financing is not settled. **Filling the ethanol plants is the growth I can count; the rest is borrowed and years away.**",
+                },
+                {
                     label: 'Delivering or beating',
                     text: "**Deep** guided 25–30% revenue growth in May and delivered 40% in Q1, with profit up 44.5%, then firmed an analyst's “possible” ₹500cr FY28 profit into its own target. **Gulf Oil** promised to protect its 12–14% margin and grow at two to three times the market, and delivered 12.9% and 17% volume growth, though management admitted some of that was customers stocking up. **South West Pinnacle** grew revenue 53% against its ~20% guide and its order book 31% in one quarter; it has beaten its own growth guidance for two years and still did not raise it.",
                 },
@@ -473,11 +507,11 @@ export const oil: SectorOverview = {
                 },
                 {
                     label: 'Mixed',
-                    text: "**Jindal** re-contracted Jindal Pioneer as hoped, but at about $47,800 a day against its $62,000 bid and in rupees; its refurbishment estimate rose from ₹50–100cr to ₹90–110cr a rig, and management now says revenue will fall in the second half. **Deep**'s production contract slipped from “a month or two” to new wells contributing only in Q4 FY27 or Q1 FY28, after a gas leak and fire at the Mori-5 well in January. **Gandhar** beat its “around 6%” margin guide by ten points, but because of the war, not anything it controls.",
+                    text: "**Jindal** re-contracted Jindal Pioneer as hoped, but at about $47,800 a day against its $62,000 bid and in rupees; its refurbishment estimate rose from ₹50–100cr to ₹90–110cr a rig, and management now says revenue will fall in the second half. **Deep**'s production contract slipped from “a month or two” to new wells contributing only in Q4 FY27 or Q1 FY28, after a gas leak and fire at the Mori-5 well in January. **Gandhar** beat its “around 6%” margin guide by ten points, but because of the war, not anything it controls. **TruAlt** doubled revenue year on year to ₹627cr and secured its ₹150cr jet-fuel grant, but in May it targeted 55 crore litres for FY27 with the court quantity lifted by September; in July it guided 44 crore litres without it and could give no date, and one of four Sumitomo biogas sites is held up by a land dispute.",
                 },
                 {
                     label: 'My outlook',
-                    text: "**I expect Deep to compound earnings at about 25%, Aegis Vopak at about 20%, South West Pinnacle at about 18%, Asian Energy at about 15%, Gulf Oil at about 12%, Ganesh Benzoplast at about 10% and Jindal at about 4%.** Deep's targets are credible because the order book and rigs already exist, but they start from reported profit of about ₹224cr over the last twelve months, not the adjusted figure. Aegis Vopak's assets will earn more once JNPA and LPG volumes arrive, but the promoter share sale and rising depreciation will slow profit per share. For **Gandhar** and **Chennai Petroleum**, today's earnings are at a peak, so I expect little or no growth from here over three to five years. **I have cut Jindal to about 4% and Asian Energy to about 15%**: Jindal's revenue will fall this year and its best-paid contracts roll off by October 2027, while Asian Energy has missed its guidance twice running.",
+                    text: "**I expect Deep to compound earnings at about 25%, Aegis Vopak at about 20%, South West Pinnacle at about 18%, Asian Energy at about 15%, Gulf Oil and TruAlt at about 12%, Ganesh Benzoplast at about 10% and Jindal at about 4%.** Deep's targets are credible because the order book and rigs already exist, but they start from reported profit of about ₹224cr over the last twelve months, not the adjusted figure. Aegis Vopak's assets will earn more once JNPA and LPG volumes arrive, but the promoter share sale and rising depreciation will slow profit per share. For **Gandhar** and **Chennai Petroleum**, today's earnings are at a peak, so I expect little or no growth from here over three to five years. **I have cut Jindal to about 4% and Asian Energy to about 15%**: Jindal's revenue will fall this year and its best-paid contracts roll off by October 2027, while Asian Energy has missed its guidance twice running. For TruAlt I start from ₹159cr of trailing profit, which already includes the cheap-maize quarter: higher volumes and biogas should lift it, but dearer maize, about ₹166cr a year of interest and new borrowing for the gas and jet-fuel plants hold it back.",
                 },
             ],
             tables: [
@@ -491,6 +525,7 @@ export const oil: SectorOverview = {
                         ['South West Pinnacle', 'Hindustan Zinc and Reliance; coal block from FY29', '10% / **18%** / 25%'],
                         ['Asian Energy Services', 'Indian growth; Kuiper margins; Oilmax fields; a record of missed guidance', '5% / **15%** / 22%'],
                         ['Gulf Oil Lubricant', 'Volume share gains; premium mix; EV chargers', '8% / **12%** / 16%'],
+                        ['TruAlt Bioenergy', 'Ethanol plants fuller; maize prices; biogas from FY28; interest on new debt', '0% / **12%** / 20%'],
                         ['Ganesh Benzoplast', 'New JNPT tanks at 65–80% margins; rent absorbed', '4% / **10%** / 16%'],
                         ['Jindal Drilling and Industries', 'FY27 revenue falling; three rigs to re-contract; high-rate contracts expiring by Oct 2027', '−5% / **4%** / 10%'],
                         ['Gandhar Oil Refinery (India)', 'Volume +8–11%; spreads normalise', '−15% / **0%** / 10%'],
@@ -511,6 +546,7 @@ export const oil: SectorOverview = {
                         ['Asian Energy Services', 'May: Indian revenue +30–40%; group margin 12–13%; Kuiper $60–65m', 'About ₹50cr (its share of new wells)', '**Missed**: margin 8.1%; Indian revenue +29%; Kuiper below pace'],
                         ['Gandhar Oil Refinery (India)', 'May: margin “around 6%”; volume about 10%; capex plan soon', 'None approved; Taloja plan pending on both calls', '**Beat**, on windfall spreads: margin 16.2%, volume +8%'],
                         ['Chennai Petroleum Corporation', 'April: no margin guidance; no major interruptions in H1; ₹2,000cr of projects', '₹1,600cr base oils; ₹400cr fuel stations; ~₹500cr a year maintenance', '**Cyclical**: margin $8.78 a barrel against $13.75; ₹385cr one-off in Q1'],
+                        ['TruAlt Bioenergy', 'May: 55 crore litres in FY27, including 15 by court order within H1; biogas to 162 tonnes a day by Q4 FY27; no more ethanol capex', 'Biogas ₹950–1,000cr over FY27–FY28 (CRISIL); jet fuel ₹2,000–2,250cr', '**Mixed**: revenue +106%, margin 21%; volume guide cut to 44 crore litres; court quantity slipped'],
                         ['Aegis Vopak Terminals', 'June: throughput +30–40% in FY27; JNPA phase 1 in Q1 FY27; pipeline link in H1', 'JNPA ₹1,675cr; ₹4,000–5,000cr a year; $5bn by 2030–31', '**Behind**: gas revenue −3.5%; JNPA to Q3; target cut to 25%'],
                     ],
                 },
@@ -528,19 +564,19 @@ export const oil: SectorOverview = {
                 },
                 {
                     label: 'One buyer: the state',
-                    text: "**Jindal**'s two best contracts roll off soonest: Virtue-I at $80,633 a day in October 2026 and Jindal Supreme at $88,859 in October 2027, while new awards are coming in at $36,000–48,000. It also holds about ₹160–163cr from a 15-year arbitration with ONGC that it must repay if it loses at the Supreme Court; it booked ₹100cr of that as a gain in Q2 FY26 and reversed it in Q3, and the auditor has flagged the original ₹66.3cr receivable, outstanding for more than seven years. **Deep** depends on ONGC tenders won at the lowest price, though no single client was more than 40% of FY26 revenue. **Chennai Petroleum** made about 94% of FY26 revenue from its parent, Indian Oil. **Depending on the state brings volume, not bargaining power.**",
+                    text: "**Jindal**'s two best contracts roll off soonest: Virtue-I at $80,633 a day in October 2026 and Jindal Supreme at $88,859 in October 2027, while new awards are coming in at $36,000–48,000. It also holds about ₹160–163cr from a 15-year arbitration with ONGC that it must repay if it loses at the Supreme Court; it booked ₹100cr of that as a gain in Q2 FY26 and reversed it in Q3, and the auditor has flagged the original ₹66.3cr receivable, outstanding for more than seven years. **Deep** depends on ONGC tenders won at the lowest price, though no single client was more than 40% of FY26 revenue. **Chennai Petroleum** made about 94% of FY26 revenue from its parent, Indian Oil. **TruAlt** sells almost all its ethanol to the state oil companies at government-set prices; they allotted it about 34% of its bid for 2025-26 despite a long-term offtake agreement, and 15 crore litres the Karnataka High Court ordered them to take in February (worth about ₹1,062cr) had not been lifted by late July. **Depending on the state brings volume, not bargaining power.**",
                 },
                 {
                     label: 'Promoter dealings',
-                    text: "**Aegis Vopak** bought about ₹1,700cr of terminals from its own promoter group in FY26 (Mangalore for ₹1,040cr and Pipavav for ₹658cr), then revalued its plant up by ₹405cr; the auditors made the purchases a key audit matter, and every new terminal is built by the parent and transferred, most recently a ₹142.5cr propane tank. **Deep**'s loan to promoter company Prabha Energy rose from ₹58.65cr in FY24 to ₹134.8cr plus ₹19cr of interest at March 2026, although CARE had said in 2024 it expected no major increase, and Deep bought 70% of another promoter-linked company in December. **Asian Energy** is merging in its promoter's Oilmax at 117 of its shares for every 10 Oilmax shares; the stock fell 13% on the announcement, and it has approved up to ₹1,000cr of mine work for Oilmax. **Gulf Oil** pays its promoter group ₹43.8cr a year in royalty, and **South West Pinnacle**'s chairman sits personally on the board of its joint-venture partner.",
+                    text: "**Aegis Vopak** bought about ₹1,700cr of terminals from its own promoter group in FY26 (Mangalore for ₹1,040cr and Pipavav for ₹658cr), then revalued its plant up by ₹405cr; the auditors made the purchases a key audit matter, and every new terminal is built by the parent and transferred, most recently a ₹142.5cr propane tank. **Deep**'s loan to promoter company Prabha Energy rose from ₹58.65cr in FY24 to ₹134.8cr plus ₹19cr of interest at March 2026, although CARE had said in 2024 it expected no major increase, and Deep bought 70% of another promoter-linked company in December. **Asian Energy** is merging in its promoter's Oilmax at 117 of its shares for every 10 Oilmax shares; the stock fell 13% on the announcement, and it has approved up to ₹1,000cr of mine work for Oilmax. **Gulf Oil** pays its promoter group ₹43.8cr a year in royalty, and **South West Pinnacle**'s chairman sits personally on the board of its joint-venture partner. **TruAlt** bought ₹879cr of raw materials from its promoters' Nirani Sugars in FY26 (₹1,081cr in FY25). It bought 51% of its biogas subsidiary TruAlt Gas for ₹24 a share in October 2025; in April 2026 Sumitomo bought its 49% from the promoters' Nirani Holdings, not from TruAlt, at ₹30.90 a share (about ₹35cr, annual report). About 2.23 crore TruAlt shares, 26% of the company and 36.8% of the promoters' stake, are pledged to its lenders SBI and IREDA; the CFO said in July they would be released this quarter, yet on 22 September Nirani Holdings pledged 14 lakh more to Jio Credit to secure a loan the promoters are using to buy more shares.",
                 },
                 {
                     label: 'Accounting and auditors’ notes',
-                    text: "**Deep**'s auditor wrote two emphasis-of-matter paragraphs (notes it asks readers to see, without qualifying the opinion) on the Kandla restatement and on disputed receivables, and the ₹458cr of Kandla write-offs over FY25–FY26 turned FY25 into a loss. Its “adjusted” Q4 FY26 profit of ₹148.6cr, which is what the dashboard stores, exceeds that quarter's pre-exceptional pre-tax profit of ₹88.5cr because of a ₹112.5cr tax credit; reported profit was a loss of ₹7.2cr. **Chennai Petroleum**'s auditors drew attention to ₹1,473cr of Cauvery spending carried as held for transfer while approvals are pending, and noted that the board lacked the required independent directors through FY26. **Ganesh Benzoplast**'s auditor repeated its note on a ₹45cr fraud allegedly committed by a former chief executive, although management had said in February it would drop out; the founder-CFO stepped down in May. **Jindal**'s auditor flagged its old ONGC receivable, and **South West Pinnacle** has a small subsidiary with a going-concern doubt.",
+                    text: "**Deep**'s auditor wrote two emphasis-of-matter paragraphs (notes it asks readers to see, without qualifying the opinion) on the Kandla restatement and on disputed receivables, and the ₹458cr of Kandla write-offs over FY25–FY26 turned FY25 into a loss. Its “adjusted” Q4 FY26 profit of ₹148.6cr, which is what the dashboard stores, exceeds that quarter's pre-exceptional pre-tax profit of ₹88.5cr because of a ₹112.5cr tax credit; reported profit was a loss of ₹7.2cr. **Chennai Petroleum**'s auditors drew attention to ₹1,473cr of Cauvery spending carried as held for transfer while approvals are pending, and noted that the board lacked the required independent directors through FY26. **Ganesh Benzoplast**'s auditor repeated its note on a ₹45cr fraud allegedly committed by a former chief executive, although management had said in February it would drop out; the founder-CFO stepped down in May. **Jindal**'s auditor flagged its old ONGC receivable, and **South West Pinnacle** has a small subsidiary with a going-concern doubt. **TruAlt**'s auditor added an emphasis paragraph because the three converted distilleries have not yet been split into components in the asset register; a ₹10.5cr GST reversal belonging to FY26 was corrected through reserves in Q1, which the company called its tax consultants' oversight; and NSE and BSE each fined it about ₹5.4 lakh because its board had no woman independent director for the whole of Q1 FY27, plus a smaller fine for late notice of a board meeting. A director was appointed on 22 September. Acuité, a rating agency, classed it “non-cooperative” in June 2025 for not supplying information.",
                 },
                 {
                     label: 'Debt and big projects',
-                    text: "**Aegis Vopak** plans ₹4,000–5,000cr of capex a year for two years, and its promoters must sell shares to bring their 87% stake down to 75% by around June 2028. **Chennai Petroleum** owns 25% of the Cauvery refinery, whose cost has risen from ₹29,361cr to a recast ₹45,000cr or so, and a study may propose expanding Manali from 210,000 to 280,000 barrels a day. **South West Pinnacle**'s ₹350–400cr coal block compares with equity of about ₹204cr, and CRISIL called its funding “not finalised”. **Jindal**'s ₹270–330cr of refurbishments exceeds its own net cash of ₹183cr. **Every one of these is a bet made at the top of a cycle or ahead of approvals.**",
+                    text: "**Aegis Vopak** plans ₹4,000–5,000cr of capex a year for two years, and its promoters must sell shares to bring their 87% stake down to 75% by around June 2028. **Chennai Petroleum** owns 25% of the Cauvery refinery, whose cost has risen from ₹29,361cr to a recast ₹45,000cr or so, and a study may propose expanding Manali from 210,000 to 280,000 barrels a day. **South West Pinnacle**'s ₹350–400cr coal block compares with equity of about ₹204cr, and CRISIL called its funding “not finalised”. **Jindal**'s ₹270–330cr of refurbishments exceeds its own net cash of ₹183cr. **TruAlt** carries about ₹1,560cr of net debt, about four times operating profit, with ₹650–700cr more planned for biogas and a ₹2,000cr-plus jet-fuel plant not yet financed; CRISIL has had it on Negative outlook since October 2025 and notes that a required three-month debt-service reserve has not been set aside. **Every one of these is a bet made at the top of a cycle or ahead of approvals.**",
                 },
                 {
                     label: 'Geopolitics and ownership',
@@ -557,7 +593,7 @@ export const oil: SectorOverview = {
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**Gulf Oil** holds net cash (₹641cr on Screener, about ₹680cr on its annual report), so it is cheaper than its P/E suggests. **Jindal Drilling** looks the same, but less so than the live figure implies: Screener counts ₹792cr of investments as cash, while the company's own liquid investments were ₹248cr at June and its net cash ₹183cr, so the live EV/EBITDA overstates its cash by several hundred crore. **Aegis Vopak**'s ₹3,424cr of net debt on Screener makes it more expensive on EV/EBITDA than even its P/E suggests.",
+                    text: "**Gulf Oil** holds net cash (₹641cr on Screener, about ₹680cr on its annual report), so it is cheaper than its P/E suggests. **Jindal Drilling** looks the same, but less so than the live figure implies: Screener counts ₹792cr of investments as cash, while the company's own liquid investments were ₹248cr at June and its net cash ₹183cr, so the live EV/EBITDA overstates its cash by several hundred crore. **Aegis Vopak**'s ₹3,424cr of net debt on Screener makes it more expensive on EV/EBITDA than even its P/E suggests. **TruAlt** carries ₹1,562cr of net debt against a market value of about {mcap:TruAlt Bioenergy|₹3,844cr}, so an owner of the whole business pays noticeably more than the share price alone shows, and ₹166cr a year of interest is why a ₹392cr operating profit became ₹159cr of net profit.",
                 },
                 {
                     label: 'Fits: prices that ask for about my growth or less',
@@ -569,7 +605,7 @@ export const oil: SectorOverview = {
                 },
                 {
                     label: 'Full',
-                    text: "**Gandhar** needs about {need:Gandhar Oil Refinery (India)|4}% a year and I expect none once spreads normalise. The live P/E rests on a trailing year that includes the one-off Hormuz quarter; on FY26's normal profit of ₹137cr the multiple would be more than twice as high, and the price would need about 13% a year. **Asian Energy** needs about {need:Asian Energy Services|20}% a year against my 15%: the growth is real, but after two missed guides and with the Oilmax merger terms unchecked, I will not pay for the whole promised path.",
+                    text: "**Gandhar** needs about {need:Gandhar Oil Refinery (India)|4}% a year and I expect none once spreads normalise. The live P/E rests on a trailing year that includes the one-off Hormuz quarter; on FY26's normal profit of ₹137cr the multiple would be more than twice as high, and the price would need about 13% a year. **Asian Energy** needs about {need:Asian Energy Services|20}% a year against my 15%: the growth is real, but after two missed guides and with the Oilmax merger terms unchecked, I will not pay for the whole promised path. **TruAlt** needs about {need:TruAlt Bioenergy|16}% a year against my 12%, so the price is {label:TruAlt Bioenergy|full}. Its trailing profit already includes Q1's cheap-maize quarter; on FY26's ₹97cr the price would need a good deal more. The case for paying up would be a clean 2026-27 allocation above 40 crore litres and the court quantity lifted.",
                 },
                 {
                     label: 'Stretched',
@@ -577,7 +613,7 @@ export const oil: SectorOverview = {
                 },
                 {
                     label: 'Dashboard figures to treat with care',
-                    text: "Several stored quarterly records are wrong, and the text above uses the filings instead. **Chennai Petroleum**'s stored quarters are zero; it held no Q1 FY27 call. **Gulf Oil**'s Q2–Q4 FY26 are stored as zero and its stored Q1 profit (₹127.5cr) is standalone; consolidated profit was ₹120.8cr. **Aegis Vopak**'s stored Q1 profit (₹124.9cr) is cash profit; reported profit was ₹66.1cr, down 7%. **Deep**'s stored Q4 profit is the adjusted ₹148.6cr (reported −₹7.2cr) and its stored margins include other income. **Asian Energy**'s stored Q4 profit is zero (actual about ₹33cr), and it held no Q1 call. **Jindal Drilling**'s Q3 FY26 and **Ganesh Benzoplast**'s Q3 and Q4 operating profit are stored as zero.",
+                    text: "Several stored quarterly records are wrong, and the text above uses the filings instead. **Chennai Petroleum**'s stored quarters are zero; it held no Q1 FY27 call. **Gulf Oil**'s Q2–Q4 FY26 are stored as zero and its stored Q1 profit (₹127.5cr) is standalone; consolidated profit was ₹120.8cr. **Aegis Vopak**'s stored Q1 profit (₹124.9cr) is cash profit; reported profit was ₹66.1cr, down 7%. **Deep**'s stored Q4 profit is the adjusted ₹148.6cr (reported −₹7.2cr) and its stored margins include other income. **Asian Energy**'s stored Q4 profit is zero (actual about ₹33cr), and it held no Q1 call. **Jindal Drilling**'s Q3 FY26 and **Ganesh Benzoplast**'s Q3 and Q4 operating profit are stored as zero. **TruAlt**'s stored figures match the filings, but the stored analysis quotes the company's 23.5% Q1 margin, which includes other income (21.2% without), and the call and presentation label its +106% revenue growth as quarter on quarter when it is year on year.",
                 },
             ],
             embed: 'valuation',
@@ -639,6 +675,12 @@ export const oil: SectorOverview = {
             view: "**Excellent assets, full price, promoter-built.** A 76.7% margin and long contracts, but reported Q1 profit fell 7% to ₹66.1cr, JNPA slipped to Q3 and the throughput target was cut to 25%. It bought about ₹1,700cr of terminals from its promoter group in FY26, which the auditors flagged. The price needs about {need:Aegis Vopak Terminals|36}% a year against my ~20%.",
             watch: 'JNPA phase 1 in Q3 FY27; LPG volumes back above 1 million tonnes a quarter; terms of the promoter share sale due by 2028.',
         },
+        {
+            company: 'TruAlt Bioenergy', rank: 10, stance: 'CYCLICAL', segment: BIOFUELS,
+            what: "India's largest fuel-ethanol maker, with five distilleries in Karnataka that run on cane molasses and, since early 2026, maize and broken rice, selling mainly to the state oil companies; it also makes compressed biogas with GAIL and Sumitomo and plans a jet-fuel plant.",
+            view: "**Built out, but the tender and maize decide the profit.** Q1 FY27 revenue doubled year on year to ₹627cr at a 21% margin on cheaply stocked maize, but it has only 44 crore litres of orders for FY27 against capacity of about 55, and at today's maize prices the margin falls from ₹15–16 a litre to ₹6–7. FY26 operating cash was −₹296cr, net debt is ₹1,562cr, CRISIL rates it A- on Negative outlook, and about 26% of its shares are pledged, with a new pledge added in September. The price needs about {need:TruAlt Bioenergy|16}% a year against my ~12%.",
+            watch: 'The 2026-27 ethanol tender allocation and the court-ordered 15 crore litres; the promoter pledge released and operating cash turning positive; the first Sumitomo biogas plants running and how the jet-fuel plant is financed.',
+        },
     ],
 
     closing: {
@@ -647,11 +689,12 @@ export const oil: SectorOverview = {
             "**Oilfield and exploration services.** **Deep Industries: own**, watching the promoter loan and the auditor's notes. **Jindal Drilling and Industries: follow** until its three rigs are re-contracted at decent rates; the price is low but FY27 will be weaker. **South West Pinnacle: follow** until cash follows the order book. **Asian Energy Services: follow** through its merger, but it must stop missing guidance.",
             "**Refining and oil products.** **Gulf Oil Lubricant: own**: the only brand here, gaining share with cash in hand. **Gandhar Oil Refinery (India): wait** for spreads to normalise. **Chennai Petroleum Corporation: wait**: cheap at a cyclical peak, with the Cauvery project unresolved.",
             "**Port tank terminals.** **Ganesh Benzoplast: follow** as the rent shock is absorbed and the new tanks arrive. **Aegis Vopak Terminals: wait** for a price that fits and cleaner dealings with its promoter.",
-            "**What would change my view.** For the better: ONGC paying higher day rates in its next jack-up tender; Deep recovering the full promoter loan; Aegis Vopak's price falling toward its growth. For the worse: Jindal's rigs re-contracting below $45,000 a day; fresh related-party lending or write-offs at Deep; spreads staying high long enough to tempt me into Gandhar and Chennai Petroleum near the top.",
-            "**What to watch next quarter.** Deep's loan repayment; Gulf Oil's volumes after the stock-up; Jindal Pioneer starting in October; Gandhar's spread; Chennai Petroleum's margin through its shutdown; Aegis Vopak's JNPA start; South West Pinnacle's operating cash; Asian Energy's margin; Ganesh Benzoplast's first new tanks.",
+            "**Biofuels.** **TruAlt Bioenergy: wait**: the plants are built, but volumes depend on the oil companies' tender and a court case, profit on maize prices, and the cash, the pledge and the governance record all need to improve before I would pay for growth.",
+            "**What would change my view.** For the better: ONGC paying higher day rates in its next jack-up tender; Deep recovering the full promoter loan; Aegis Vopak's price falling toward its growth. For the worse: Jindal's rigs re-contracting below $45,000 a day; fresh related-party lending or write-offs at Deep; spreads staying high long enough to tempt me into Gandhar and Chennai Petroleum near the top; TruAlt adding debt for its jet-fuel plant before its ethanol cash flow is proven.",
+            "**What to watch next quarter.** Deep's loan repayment; Gulf Oil's volumes after the stock-up; Jindal Pioneer starting in October; Gandhar's spread; Chennai Petroleum's margin through its shutdown; Aegis Vopak's JNPA start; South West Pinnacle's operating cash; Asian Energy's margin; Ganesh Benzoplast's first new tanks; TruAlt's Q2 volume against its 11 crore litre plan and whether its pledge is released.",
         ],
         bottomLine:
-            "Own the contracted compression business and the brand (Deep Industries, Gulf Oil Lubricant), follow the names still proving their contracts or their cash (Jindal Drilling and Industries, South West Pinnacle, Ganesh Benzoplast, Asian Energy Services), and wait on the peak-spread producers and the expensive terminal (Gandhar Oil Refinery (India), Chennai Petroleum Corporation, Aegis Vopak Terminals).",
+            "Own the contracted compression business and the brand (Deep Industries, Gulf Oil Lubricant), follow the names still proving their contracts or their cash (Jindal Drilling and Industries, South West Pinnacle, Ganesh Benzoplast, Asian Energy Services), and wait on the peak-spread producers, the expensive terminal and the ethanol maker whose volumes are set by the state (Gandhar Oil Refinery (India), Chennai Petroleum Corporation, Aegis Vopak Terminals, TruAlt Bioenergy).",
     },
 
     sources: [
@@ -691,6 +734,12 @@ export const oil: SectorOverview = {
         { label: 'Ganesh Benzoplast, Annual Report 2025-26', url: 'https://www.ganeshbenzoplast.com/pdf/annual-report/Annual_Report_2025_26.pdf' },
         { label: 'South West Pinnacle, Annual Report 2025-26', url: 'https://www.southwestpinnacle.com/images/pdf/Annual%20report/Annual_Report_FY_2025-26.pdf' },
         { label: 'South West Pinnacle, CRISIL rating letter and rationale, December 2025', url: 'https://www.southwestpinnacle.com/images/pdf/LODR//CRISIL%20RATING/CREDIT%20RATING%2006.12.25.pdf' },
-        { label: 'Wholesale price index, crude petroleum — Office of the Economic Adviser, Government of India', url: 'https://eaindustry.nic.in/' },
+        { label: 'TruAlt Bioenergy, Integrated Annual Report 2025-26 (BSE filing)', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/e06c23c5-f94a-43b8-a6f2-b140f233824d.pdf' },
+        { label: 'TruAlt Bioenergy, Q1 FY27 investor presentation (BSE filing)', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7d95c3a8-dfd0-4874-9792-f69beb278982.pdf' },
+        { label: 'TruAlt Bioenergy, Q1 FY27 earnings call transcript (BSE filing)', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=3adcdbf2-69a2-42e0-a804-ec1242d3729b.pdf' },
+        { label: 'TruAlt Bioenergy, rating rationale — CRISIL, August 2026', url: 'https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/TruAltBioenergyLimited_August%2013_%202026_RR_401631.html' },
+        { label: 'TruAlt Bioenergy, promoter pledge disclosure, 24 September 2026 (BSE filing)', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=65152d82-767d-445f-8173-0dfd2da1e9ef.pdf' },
+        { label: 'TruAlt Bioenergy, board comments on exchange fines, 23 September 2026 (BSE filing)', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f668de52-63af-46fb-a228-5e29ed6d2f4c.pdf' },
+        { label: 'Wholesale price indices, crude petroleum and maize — Office of the Economic Adviser, Government of India', url: 'https://eaindustry.nic.in/' },
     ],
 };
