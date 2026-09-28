@@ -558,7 +558,7 @@ export const chemicalsCommodity: SectorOverview = {
                 },
                 {
                     label: 'Delivering or beating',
-                    text: "**Deepak Nitrite** said Q1 would beat Q4 and last year's Q1, and delivered record operating profit of ₹540cr against ₹376cr and ₹190cr; its troubled nitric-acid plant was stabilised as promised. **Deepak Fertilisers** promised better growth and margins in FY27 and delivered a 26% margin. **Epigral** held its margin in the promised 22–25% band (25%), announced its new projects in July as promised, and cut its quarterly interest cost to ₹7cr from ₹23cr. **Fairchem** guided an 8% margin for FY27 and delivered 10.1%. **Archean**'s derivatives subsidiary turned profitable at the operating level, as promised, and its bromine price rose about 50%.",
+                    text: "**Deepak Nitrite** said Q1 would beat Q4 and last year's Q1, and delivered record operating profit of ₹540cr against ₹376cr and ₹190cr; its troubled nitric-acid plant was stabilised as promised. **Deepak Fertilisers** promised better growth and margins in FY27 and delivered a 26% margin. **Epigral** held its margin in the promised 22–25% band (25%), announced its new projects in July as promised, and cut its quarterly interest cost to ₹7cr from ₹23cr. **Fairchem** guided an 8% margin for FY27 in May and delivered 10.1%; in July it said it could hold about 10%. **Archean**'s derivatives subsidiary turned profitable at the operating level, as promised, and its bromine price rose about 50%.",
                 },
                 {
                     label: 'Cautious',
@@ -570,7 +570,7 @@ export const chemicalsCommodity: SectorOverview = {
                 },
                 {
                     label: 'Mixed',
-                    text: "**Deepak Fertilisers** kept its ‘end of this quarter’ start for Gopalpur and Dahej on the call, but its annual report, published later, says H2 FY27, after two earlier delays. **Epigral**'s volume grew 5% against a 10–12% full-year guide, and on 27 September its chairman said the ECH and CPVC doubling would start ‘within a couple of months’, a quarter later than promised. **IG** kept its 2 lakh-tonne phthalic target but sold only 40,000–45,000 tonnes in Q1 and cut its plasticiser target from 20,000–25,000 to 15,000–20,000 tonnes, with start-up six months after mechanical completion. **Archean** beat on bromine price but sold 325 tonnes less bromine than its run-rate and 12% less salt. **Deepak Nitrite**'s polycarbonate plant slipped by one to three quarters.",
+                    text: "**Deepak Fertilisers** kept its ‘end of this quarter’ start for Gopalpur and Dahej on the call, but its annual report, published later, says H2 FY27, after two earlier delays. **Epigral**'s volume grew 5% against the 10–12% full-year guide it gave in May, which it did not repeat in July, and on 27 September its chairman said the ECH and CPVC doubling would start ‘within a couple of months’, a quarter later than promised. **IG** kept its 2 lakh-tonne phthalic target but sold only 40,000–45,000 tonnes in Q1 and cut its plasticiser target from 20,000–25,000 to 15,000–20,000 tonnes, with start-up six months after mechanical completion. **Archean** beat on bromine price but sold 325 tonnes less bromine than its run-rate and 12% less salt. **Deepak Nitrite**'s polycarbonate plant slipped by one to three quarters.",
                 },
                 {
                     label: 'My outlook',

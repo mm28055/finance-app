@@ -51,7 +51,7 @@ export const chemicalsFluorine: SectorOverview = {
             cellNotes: {
                 'Gujarat Fluorochemic': "Q3 FY26 was hit by the R-22 production-quota limit and Q4 by Middle East shipping trouble and bigger battery losses after the LiPF6 plant started on 5 January. In Q1 FY27 the chemicals segment earned 29% (₹458cr of operating profit) while the battery unit lost ₹30cr (company segment figures).",
                 'Navin Fluorine Intl': "Company figure 34.2% in Q1 FY27. Management now guides 32–33%, plus or minus 1 point, for one to two years, up from ‘we will endeavour to do 30%’ in April.",
-                'Tanfac Industries': "Company figure 15.3% in Q1 FY27 (operating profit ₹28.6cr), the bottom of its 15–18% range: sulphur, its main acid input, rose from about ₹30/kg to about ₹105/kg, and it bought grid power during an acid-plant shutdown.",
+                'Tanfac Industries': "Company figure 15.3% in Q1 FY27 (operating profit ₹28.6cr), the bottom of the 15–18% range it gave in May (on the July call it guided 16–19% from Q2): sulphur, its main acid input, rose from about ₹30/kg to about ₹105/kg, and it bought grid power during an acid-plant shutdown.",
                 'Stallion India Fluor': "Q1 FY27's 18% is a one-off: the managing director said half of the quarter's operating profit came from gains on stock bought before the Gulf supply shock. The company's headline 20.3% includes other income. He guided profit after tax back to about 10% of sales for the rest of FY27.",
             },
         },
@@ -408,7 +408,7 @@ export const chemicalsFluorine: SectorOverview = {
                 },
                 {
                     label: 'Cautious',
-                    text: "**Navin** says specialty chemicals will not return to ‘30% EBITDA that's taken for granted’, crop-chemical prices in Latin America are under pressure, and its Project Nectar plant will reach only 75–80% use by the end of FY28. **Gujarat Fluorochemicals** grew fluoropolymers 15%, the bottom of its 15–20% range, and says volumes are capped until new lines come in about a year. **Tanfac**'s Q1 margin was at the bottom of its 15–18% range.",
+                    text: "**Navin** says specialty chemicals will not return to ‘30% EBITDA that's taken for granted’, crop-chemical prices in Latin America are under pressure, and its Project Nectar plant will reach only 75–80% use by the end of FY28. **Gujarat Fluorochemicals** grew fluoropolymers 15%, the bottom of the 15–20% range it gave in May (in August it said 17–20% a year), and says volumes are capped until new lines come in about a year. **Tanfac**'s Q1 margin was at the bottom of the 15–18% range it gave in May; it now guides 16–19% from Q2.",
                 },
                 {
                     label: 'Missed',
@@ -416,7 +416,7 @@ export const chemicalsFluorine: SectorOverview = {
                 },
                 {
                     label: 'Mixed',
-                    text: "**Gujarat Fluorochemicals** kept its target of ₹100cr-plus of battery sales in Q4 FY27, but LFP cathode revenue moved to ‘towards the end of this financial year’ and binder sales to ‘the next couple of quarters’. **Navin**'s Chemours plant slipped from early July to the end of Q2. **Tanfac** gave figures for the first time (at least 30% growth in FY27, more than 60% in FY28), but they do not add up with May's FY28 range of ₹1,600–2,000cr: 60% on about ₹925cr is about ₹1,480cr. Its R-32 start moved from October–November to firing in late November with full output by mid-February 2027.",
+                    text: "**Gujarat Fluorochemicals** kept its target of ₹100cr-plus of battery sales in Q4 FY27, but LFP cathode revenue moved to ‘towards the end of this financial year’, and the PVDF binder, which in May was fully qualified and due to start selling within two quarters, was described in August as still close to finishing qualification. **Navin**'s Chemours plant slipped from early July to the end of Q2. **Tanfac** gave figures for the first time (at least 30% growth in FY27, more than 60% in FY28), but they do not add up with May's FY28 range of ₹1,600–2,000cr: 60% on about ₹925cr is about ₹1,480cr. Its R-32 start moved from October–November to firing in late November with full output by mid-February 2027.",
                 },
                 {
                     label: 'My outlook',
@@ -442,8 +442,8 @@ export const chemicalsFluorine: SectorOverview = {
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
                         ['Navin Fluorine Intl', 'Margin 32–33% ±1 point; contract manufacturing US$100m in FY27; R-32 +15,000t in Q3 FY27; working capital 75–80 days', 'About ₹3,000cr over three to four years, all from own cash: R-32 ₹236.5cr, cGMP4 Phase 2 ₹125cr, debottlenecking ₹75cr, advanced materials ₹90cr', '**Beat**: growth 44% against ‘double-digit’; margin 34% against 30%; Chemours plant a quarter late'],
-                        ['Gujarat Fluorochemic', 'Fluoropolymers 17–20% a year; R-32 20,000t from Q2 FY27; battery sales ₹100cr+ a quarter by Q4 FY27; full battery earnings FY29', '₹3,100–3,150cr in FY27 (battery ₹2,300cr); ₹6,000cr in batteries by FY28', '**Mixed**: polymers at the bottom of the range; R-32 on time; Oman reversed in 11 weeks; cathode sales pushed to year-end'],
-                        ['Tanfac Industries', 'FY27 growth at least 30% at a 21–22% margin; FY28 growth over 60% at about 25%; R-32 full output by mid-Feb 2027', 'R-32 ₹390cr; ₹1,500–1,700cr over four years; ₹250cr share sale plus about ₹100cr preferential issue', '**Mixed**: margin at the bottom of 15–18%; volumes down; R-32 a few weeks later; FY28 figures inconsistent'],
+                        ['Gujarat Fluorochemic', 'Fluoropolymers 17–20% a year; R-32 20,000t from Q2 FY27; battery sales ₹100cr+ a quarter by Q4 FY27; full battery earnings FY29', '₹3,100–3,150cr in FY27 (battery ₹2,300cr); ₹6,000cr in batteries by FY28', '**Mixed**: polymers at the bottom of May’s 15–20% range; R-32 on time; Oman reversed in 11 weeks; cathode sales pushed to year-end'],
+                        ['Tanfac Industries', 'FY27 growth at least 30% at a 21–22% blended margin (16–19% from Q2 before R-32); FY28 growth over 60% at about 25%; R-32 full output by mid-Feb 2027', 'R-32 ₹390cr; ₹1,500–1,700cr over four years; ₹250cr share sale plus about ₹100cr preferential issue', '**Mixed**: margin at the bottom of May’s 15–18%; volumes down; R-32 a few weeks later; FY28 figures inconsistent'],
                         ['Stallion India Fluor', '30–35% revenue growth a year; FY28 revenue over ₹1,100cr at 15%+ profit margin; FY27 profit goal dropped', 'R-32 about ₹310cr from rights money; HFO plant ₹350–400cr unfunded', '**Walked back**: all three projects 2–4 months late; FY27 profit goal dropped; no-dilution pledge reversed'],
                     ],
                     note: 'Navin and Gujarat Fluorochemicals figures are consolidated; Tanfac and Stallion standalone. Stallion’s headline revenue and EBITDA include other income.',
