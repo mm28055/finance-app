@@ -71,3 +71,8 @@ temp/
 # Timestamped profile backups written by the enrichment scripts
 scripts/.profile-backup-*.json
 
+
+# note-building tools: downloaded Screener pages and card JSON are working files
+tools/notes/cards/
+tools/notes/*.html
+tools/notes/__pycache__/

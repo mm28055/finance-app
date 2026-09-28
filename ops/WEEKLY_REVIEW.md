@@ -1,0 +1,60 @@
+# Weekly review (run by a scheduled Claude session every Sunday)
+
+You are keeping the sector notes of this investment dashboard (Next.js; notes in `lib/sector-overviews/`) current
+for the owner, a non-technical long-term investor in Indian listed companies. Daily GitHub jobs already update prices,
+filings, transcripts and shareholding by themselves. Your job is the part that needs judgement: the follow-ups those
+jobs record in `lib/corporate-actions/needs-attention.json`.
+
+Work in this repository only. You have no database access and must not need it: company sector, price, market value
+and P/E for every company are in `lib/corporate-actions/companies.json` (refreshed each weekday). Do not launch
+sub-agents. Today's date: run `date`.
+
+## 1. What to do
+Read `lib/corporate-actions/needs-attention.json`. Work on entries WITHOUT a `handled` field, oldest first, at most 10
+per run (the rest wait for next week). If there are none, stop: change nothing, commit nothing.
+
+For each entry, by its `subject`/`why`:
+
+- **Call drift** ("Call drift: own → Stretched", "wait → Fits", "follow → Fits" …): a focused review, not a rewrite.
+  Read the company's verdict, its Tab 2 card (`<note>-businesses.ts`, the `Verdict:` line) and what the note was
+  waiting for. Check the company's NSE filings of the last 6 weeks (see `lib/filings/filings.json` first) and any news
+  explaining the price move. Then keep or change the call consistently everywhere it appears (verdict view, Tab 2
+  `Verdict:` line, section 1 paragraph, closing line), adding one dated sentence why. A "follow" whose price now fits
+  with the thesis intact is a candidate for "own"; an "own" now stretched may drop to "follow".
+- **Shareholding** (promoter holding fell 5+ points, or pledges jumped 20+ points): find out why from NSE filings
+  (promoter sale, share issue/dilution, merger, pledge for a loan …). Add one dated sentence to the company's risks
+  or watch items; change the call only if it clearly warrants it, and say why.
+- **Demerger** / new listing: update the company's section to describe the business as it now is; add a newly
+  listed company only if the entry asks for it (it will already be on the dashboard in that sector).
+- **Moved sector** / **Not in the <sector> note**: follow `tools/notes/docs/ADD_COMPANY_BRIEF.md` (research, card data
+  with `tools/notes/fetch.py`, `card.py`, `chartdata.py`, Tab 1 and Tab 2). Paths in that brief that start with `S/`
+  mean a temporary folder of your own; the tools live in `tools/notes/`. For a move, cut the company's section from
+  the old note and add it to the new one, re-ranked against its new peers.
+
+Then mark the entry done: add `"handled": "<YYYY-MM-DD>: <one line: what you found and did>"`. Never delete entries.
+
+## 2. House rules (all mandatory)
+- Calls: own / follow / wait / pass / avoid. "own" only when the live price check is Fits. Rank own → follow → wait →
+  pass → avoid. Stance must match: COMPOUNDER only for own, AVOID only for avoid.
+- Price check: growth needed = (P/E × 0.1726)^0.1 − 1 (P/E from companies.json); Fits if my growth − needed ≥ −2,
+  Full if ≥ −6, else Stretched. Loss-makers get myGrowth null and no label.
+- The latest earnings call wins over older statements; older ones only as dated history.
+- Price-dependent figures in prose use live placeholders (`{need:KEY|n}`, `{label:KEY|fits}`, `{pe:KEY|x}`,
+  `{mcap:KEY|₹xcr}`, `{count:fits|three}`; KEY = the exact key in the note's valuation inputs) — see
+  `tools/notes/docs/LIVE_TEXT_BRIEF.md`. Never hard-code P/E or EV/EBITDA multiples in prose.
+- Figures from Screener (screener.in, the company's page) or the company's own filings — never invented. Screener is
+  rate-limited: one request every 5 seconds at most.
+- Plain English, short sentences, ₹/cr/lakh, bold company names and conclusions, balanced `**`.
+- Never write notes for the "Misc" sector or the portfolio. Never merge sectors. Do not rewrite whole notes: the
+  quarterly refresh does that. Edit only `lib/sector-overviews/**` and `lib/corporate-actions/needs-attention.json`
+  (and `lib/screener-overrides.json` if a company's Screener page cannot otherwise be found).
+
+## 3. Check, then publish
+1. `npm ci` (once), then `npx tsc --noEmit -p .` — must be clean.
+2. `npx tsx scripts/check-notes.ts` — must print "All notes pass."
+3. Append a short entry to `ops/weekly-log.md`: the date, each entry handled (company — what changed), and any call
+   changed (old → new, one-line reason). Plain English; the owner reads this.
+4. Commit per note ("<Sector>: <what changed>"), plus one commit for needs-attention.json and the log; end every
+   commit message with the line `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
+5. Push to `master` (the site publishes itself). If checks fail and you cannot fix them, or the push to master is
+   refused, push to a branch `weekly-review/<YYYY-MM-DD>` instead and say so at the top of the log entry.

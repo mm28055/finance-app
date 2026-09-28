@@ -22,8 +22,23 @@ async function main() {
     const info = companyCallInfo(allSectorOverviews());
     const companies = await prisma.company.findMany({
         where: { isVisible: true },
-        select: { name: true, sector: true, marketCap: true, peRatio: true },
+        select: { name: true, sector: true, marketCap: true, peRatio: true, currentPrice: true, ticker: true, isin: true },
     });
+
+    // A small daily snapshot of every company (sector, price, market value, P/E), committed
+    // by the 4pm job, so the weekly Claude review can check notes without database access.
+    if (!dryRun) {
+        const snap = companies
+            .map(c => ({
+                name: c.name.trim(), sector: c.sector, ticker: c.ticker, isin: c.isin,
+                price: c.currentPrice === null ? null : Number(c.currentPrice),
+                marketCap: c.marketCap === null ? null : Number(c.marketCap),
+                peRatio: c.peRatio === null ? null : Number(c.peRatio),
+            }))
+            .sort((a, b) => a.sector.localeCompare(b.sector) || a.name.localeCompare(b.name));
+        fs.writeFileSync(path.join(process.cwd(), 'lib', 'corporate-actions', 'companies.json'),
+            JSON.stringify({ updated: new Date().toISOString().slice(0, 10), companies: snap }, null, 1) + '\n');
+    }
 
     const drifts: { company: string; sector: string; call: string; check: string; why: string }[] = [];
     for (const co of companies) {
