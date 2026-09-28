@@ -12,7 +12,7 @@ import 'dotenv/config';
 import fs from 'fs';
 import path from 'path';
 import { prisma } from '../lib/prisma';
-import { allSectorOverviews, companyCallInfo, livePriceCheck, writtenPriceCheck, extremeDrift } from '../lib/sector-overviews';
+import { allSectorOverviews, companyCallInfo, livePriceCheck, writtenPriceCheck, movedSinceNote, extremeDrift } from '../lib/sector-overviews';
 
 const FILE = path.join(process.cwd(), 'lib', 'corporate-actions', 'needs-attention.json');
 
@@ -28,11 +28,12 @@ async function main() {
     for (const co of companies) {
         const ci = info.get(co.name.trim().toLowerCase());
         if (!ci) continue;
-        const check = livePriceCheck(ci, {
+        const live = {
             marketCap: co.marketCap === null ? null : Number(co.marketCap),
             peRatio: co.peRatio === null ? null : Number(co.peRatio),
-        });
-        const why = extremeDrift(ci.call, writtenPriceCheck(ci), check);
+        };
+        const check = livePriceCheck(ci, live);
+        const why = extremeDrift(ci.call, writtenPriceCheck(ci), check, movedSinceNote(ci, live));
         if (why) drifts.push({ company: co.name, sector: ci.sector, call: ci.call, check, why });
     }
 

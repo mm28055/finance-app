@@ -39,10 +39,19 @@ export function companyCalls(overviews: SectorOverview[]): Map<string, Call> {
 }
 
 /** Today's price check for a company under its note's valuation inputs ('n/a' when not measured live). */
+/** Change in market value since the note was written, as a fraction (0.12 = +12%). */
+export function movedSinceNote(info: CallInfo | undefined, live: { marketCap?: number | null; peRatio?: number | null } | undefined): number | null {
+    if (!info) return null;
+    return liveValuation(info.key, info.valuation, live)?.moved ?? null;
+}
+
 export function livePriceCheck(info: CallInfo | undefined, live: { marketCap?: number | null; peRatio?: number | null } | undefined): PriceCheck {
     if (!info) return 'n/a';
     return liveValuation(info.key, info.valuation, live)?.check ?? 'n/a';
 }
+
+/** Smallest change in market value since the note (as a fraction) that can count as drift. */
+export const DRIFT_MOVE = 0.10;
 
 /** The price check on the day the note was written (its fixed inputs, no live prices). */
 export function writtenPriceCheck(info: CallInfo | undefined): PriceCheck {
@@ -56,8 +65,11 @@ export function writtenPriceCheck(info: CallInfo | undefined): PriceCheck {
  * A call written knowing the price already fitted ("the price fits, but wait for the
  * FDA") is not drift. Returns the reason, or null.
  */
-export function extremeDrift(call: Call, then: PriceCheck, now: PriceCheck): string | null {
+export function extremeDrift(call: Call, then: PriceCheck, now: PriceCheck, moved?: number | null): string | null {
     if (then === now || now === 'n/a' || then === 'n/a') return null;
+    // A company sitting on the line flips on a small move; only a real move (10%+ in
+    // market value since the note) counts as drift.
+    if (moved !== undefined && (moved === null || Math.abs(moved) < DRIFT_MOVE)) return null;
     if (call === 'own' && now === 'Stretched') return `Call is own; the price check has moved from ${then.toLowerCase()} to stretched since the note`;
     if ((call === 'wait' || call === 'pass') && now === 'Fits') return `Call is ${call}; the price check has moved from ${then.toLowerCase()} to fits since the note`;
     return null;
