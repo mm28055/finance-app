@@ -21,15 +21,42 @@ import {
 } from '@/lib/sector-overviews';
 import { EnrichedCompany } from './SectorList';
 
-/** Renders `**bold**` and nothing else. */
+/**
+ * Live figures inside a note's text. A note writes `{pe:Company|38.7}` where a
+ * figure depends on today's price; the page swaps in today's value from the same
+ * calculation as the live valuation table, so the sentence never goes stale.
+ * The part after `|` is the figure when the note was written, shown only when no
+ * live value is available. Fields: pe, ev (EV/EBITDA), need (growth the price
+ * needs, %), mine (my estimate, %), mcap (₹ crore), label / Label (fits, full,
+ * stretched), count / Count (how many live rows are fits|full|stretched|live,
+ * as a word).
+ */
+export type LiveTextResolver = (field: string, arg: string) => string | null;
+export const LiveTextContext = React.createContext<LiveTextResolver | null>(null);
+const LIVE_TOKEN = /(\{(?:pe|ev|need|mine|mcap|label|Label|count|Count):[^|{}]+(?:\|[^{}]*)?\})/g;
+
+function LiveFigure({ token }: { token: string }) {
+    const resolve = React.useContext(LiveTextContext);
+    const m = token.match(/^\{(\w+):([^|{}]+)(?:\|([^{}]*))?\}$/);
+    if (!m) return <>{token}</>;
+    const [, field, arg, fallback] = m;
+    const live = resolve ? resolve(field, arg.trim()) : null;
+    return <>{live ?? fallback ?? ''}</>;
+}
+
+/** Renders `**bold**` and live figures (`{pe:Company|38.7}`), nothing else. */
 export function RichText({ text }: { text: string }) {
+    const inline = (chunk: string, key: string | number) =>
+        chunk.split(LIVE_TOKEN).map((q, j) =>
+            j % 2 === 1 ? <LiveFigure key={`${key}-${j}`} token={q} /> : <React.Fragment key={`${key}-${j}`}>{q}</React.Fragment>
+        );
     const parts = text.split(/(\*\*[^*]+\*\*)/g);
     return (
         <>
             {parts.map((p, i) =>
                 p.startsWith('**') && p.endsWith('**')
-                    ? <strong key={i} className="font-semibold text-gray-800">{p.slice(2, -2)}</strong>
-                    : <React.Fragment key={i}>{p}</React.Fragment>
+                    ? <strong key={i} className="font-semibold text-gray-800">{inline(p.slice(2, -2), i)}</strong>
+                    : <React.Fragment key={i}>{inline(p, i)}</React.Fragment>
             )}
         </>
     );

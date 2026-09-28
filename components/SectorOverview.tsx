@@ -10,10 +10,13 @@ import {
     CompanyVerdict,
     Stance,
     STANCE_CONFIG,
+    liveValuation,
 } from '@/lib/sector-overviews';
 import { EnrichedCompany } from './SectorList';
 import {
     RichText,
+    LiveTextContext,
+    type LiveTextResolver,
     StancePill,
     DataTableView,
     LiveValuationTable,
@@ -84,7 +87,57 @@ function ChartCard({ title, subtitle, children, height }: {
     );
 }
 
+const NUMBER_WORDS = ['none', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'];
+const capitalise = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+
+/**
+ * Supplies today's figures to the note's text ({pe:Company|38.7} and friends,
+ * see RichText), from the same live valuation the table uses.
+ */
 function SingleSectorOverview({ overview, companies }: {
+    overview: SectorOverviewData;
+    companies: EnrichedCompany[];
+}) {
+    const resolve = React.useMemo<LiveTextResolver>(() => {
+        const byName = new Map<string, EnrichedCompany>();
+        (companies || []).forEach(c => byName.set(c.name.trim().toLowerCase(), c));
+        const block = overview.valuation;
+        const live = (company: string) => liveValuation(company, block, byName.get(company.trim().toLowerCase()));
+        return (field, arg) => {
+            if (field === 'count' || field === 'Count') {
+                if (!block) return null;
+                const all = overview.verdicts.map(v => live(v.company)).filter(Boolean);
+                const want = arg.toLowerCase();
+                const n = want === 'live' ? all.filter(x => x!.check !== 'n/a').length
+                    : all.filter(x => x!.check.toLowerCase() === want).length;
+                const word = NUMBER_WORDS[n] ?? String(n);
+                return field === 'Count' ? capitalise(word) : word;
+            }
+            if (field === 'mcap') {
+                const co = byName.get(arg.toLowerCase());
+                return co?.marketCap ? `₹${Math.round(co.marketCap).toLocaleString('en-IN')}cr` : null;
+            }
+            const lv = live(arg);
+            if (!lv) return null;
+            switch (field) {
+                case 'pe': return lv.pe === null ? null : lv.pe >= 100 ? String(Math.round(lv.pe)) : lv.pe.toFixed(1);
+                case 'ev': return lv.evEbitda === null ? null : lv.evEbitda.toFixed(1);
+                case 'need': return lv.needed === null ? null : String(Math.round(lv.needed));
+                case 'mine': return lv.mine === null ? null : String(Math.round(lv.mine));
+                case 'label': return lv.check === 'n/a' ? null : lv.check.toLowerCase();
+                case 'Label': return lv.check === 'n/a' ? null : lv.check;
+                default: return null;
+            }
+        };
+    }, [overview, companies]);
+    return (
+        <LiveTextContext.Provider value={resolve}>
+            <SingleSectorOverviewBody overview={overview} companies={companies} />
+        </LiveTextContext.Provider>
+    );
+}
+
+function SingleSectorOverviewBody({ overview, companies }: {
     overview: SectorOverviewData;
     companies: EnrichedCompany[];
 }) {
