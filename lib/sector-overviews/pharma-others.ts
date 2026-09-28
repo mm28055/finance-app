@@ -649,7 +649,7 @@ export const pharmaOthers: SectorOverview = {
         {
             company: 'Q-Line Biotech', rank: 7, stance: 'SCALEUP', segment: ANIMAL,
             what: "Makes blood-test analysers and the reagents they use, moving from importing to making; about 65% of sales to government health programmes; SME-listed, reports half-yearly.",
-            view: "**Better margins, doubtful revenue quality.** Gross margin rose from 53% to 61% and profit about doubled in FY26, but somewhere between 44% (CARE) and 66% (annual report) of sales go to a partnership with one of its directors as partner, free cash has been negative four years and group guarantees rose. The price needs about {need:Q-Line Biotech|17}% a year against my ~15%.",
+            view: "**Better margins, doubtful revenue quality.** Gross margin rose from 53% to 61% and profit about doubled in FY26, but somewhere between 44% (CARE) and 66% (annual report) of sales go to a partnership with one of its directors as partner, free cash has been negative four years and group guarantees rose. The price needs about {need:Q-Line Biotech|17}% a year against my ~15%. By 28 September the price had fallen about 6% and the price check reads {label:Q-Line Biotech|fits}; the call stays wait until the November half-year results and a smaller related-party share of sales.",
             watch: 'H1 FY27 revenue of about ₹185–195cr (November); the related-party share of sales and receivables; guarantees actually closing.',
         },
         {

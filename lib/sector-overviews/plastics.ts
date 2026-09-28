@@ -512,7 +512,7 @@ export const plastics: SectorOverview = {
                 },
                 {
                     label: 'Full: Garware, Shaily, Prince and Finolex',
-                    text: "**Shaily** needs about {need:Shaily Engg. Plastic|31}% a year against my ~25%; pen volumes are growing faster than that today, so a better entry is more likely to come from a slip than from a change in the story. **Prince** needs about {need:Prince Pipes|17}% against my ~15%, from a low FY26 base with margins recovering. **It is borderline**: it misses “fits” by a fraction of a point, so a small fall in the price or one more good quarter would tip it; the Negative rating outlook and a 7% volume fall argue for waiting until then. **Finolex** needs about {need:Finolex Inds|10}% against my ~6%; the cash protects the downside, but the pipe business is losing share. **Garware** needs about {need:Garware Hi-Tech|21}% against my ~17%; see below. **Each needs a little more than I expect.**",
+                    text: "**Shaily** needs about {need:Shaily Engg. Plastic|31}% a year against my ~25%; pen volumes are growing faster than that today, so a better entry is more likely to come from a slip than from a change in the story. **Prince** needs about {need:Prince Pipes|17}% against my ~15%, from a low FY26 base with margins recovering. **It is borderline**: at the price when this was written it missed “fits” by a fraction of a point, and by 28 September a fall of about 3% had brought the price check to {label:Prince Pipes|fits}; the Negative rating outlook and a 7% volume fall still argue for waiting for one more good quarter. **Finolex** needs about {need:Finolex Inds|10}% against my ~6%; the cash protects the downside, but the pipe business is losing share. **Garware** needs about {need:Garware Hi-Tech|21}% against my ~17%; see below. **Each needs a little more than I expect.**",
                 },
                 {
                     label: 'Garware: the best business, at a full price',
@@ -553,7 +553,7 @@ export const plastics: SectorOverview = {
         {
             company: 'Prince Pipes', rank: 4, stance: 'TURNAROUND', segment: PIPES,
             what: "Makes PVC, CPVC, PPR and polypropylene pipes and fittings for plumbing, drainage and farms across India, plus a small bathware business (Aquel).",
-            view: "**A recovery that is real but young.** The margin has held at 13% for two quarters, this time without stock gains, and working capital fell from 98 to 45 days in FY26, releasing ₹526cr of operating cash. But Q1 volume fell 7%, stock rose to 100 days, bathware still loses ₹5cr a quarter and CRISIL keeps a Negative outlook. The price needs about {need:Prince Pipes|17}% a year against my ~15% estimate, a borderline gap.",
+            view: "**A recovery that is real but young.** The margin has held at 13% for two quarters, this time without stock gains, and working capital fell from 98 to 45 days in FY26, releasing ₹526cr of operating cash. But Q1 volume fell 7%, stock rose to 100 days, bathware still loses ₹5cr a quarter and CRISIL keeps a Negative outlook. The price needs about {need:Prince Pipes|17}% a year against my ~15% estimate, a borderline gap. By 28 September the price had fallen about 3% and the price check reads {label:Prince Pipes|fits}; the call stays wait until volume grows again and stock comes back to 65–75 days.",
             watch: 'Volume against the 12–15% guide; stock back to 65–75 days; bathware at break-even in the December quarter.',
         },
         {
@@ -574,7 +574,7 @@ export const plastics: SectorOverview = {
         heading: '9. Summary review',
         body: [
             "**Engineered plastics and films.** **Time Technoplast: own.** Steady profit growth, costs passed on and a price that asks for less than I expect; the cash cycle is the thing to watch. **Garware Hi-Tech: follow.** The best business here, at a full price. **Shaily: follow.** A real pen business, with a partner's pause, a promoter sale and slow lines to clear first.",
-            "**Plastic pipes.** **Prince Pipes: wait** for volume to follow the margin; its price is only just short of fitting. **Finolex: wait** for its share to stop falling and a plan for the cash. **Apollo Pipes: avoid** until it delivers what it promises.",
+            "**Plastic pipes.** **Prince Pipes: wait** for volume to follow the margin; its price is on the edge of fitting. **Finolex: wait** for its share to stop falling and a plan for the cash. **Apollo Pipes: avoid** until it delivers what it promises.",
             "**What would change my view.** For the better: a stable PVC regime after January and pipe volumes recovering in H2; Time's working capital falling to 100 days; Shaily winning a contract with an original drug maker. For the worse: another resin crash; CRISIL's volume fall proving right; Dr Reddy's restart slipping; Garware losing its largest US customer.",
             "**What to watch next quarter.** Time Technoplast's working capital and composite orders; Garware's TPU line and its Q2 margin without the refund; Shaily's pen volumes and second line; the pipe makers' Q2 volumes, Prince's stock days and Apollo's promised double-digit growth.",
         ],

@@ -172,7 +172,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Laser Power & Infra',
-        inShort: ["**Kolkata-based maker of power cables and conductors**, with a growing business building power-distribution projects for state utilities; listed in July 2026.", "**Good:** ₹490cr of IPO money repaid debt that was eating over half of operating profit, and high-voltage cables are a rising share. **Watch:** government projects tie up cash, and operating cash flow was negative last year.", "**Verdict: wait.** The debt fix is real but happens once; I want to see project cash come in first."],
+        inShort: ["**Kolkata-based maker of power cables and conductors**, with a growing business building power-distribution projects for state utilities; listed in July 2026.", "**Good:** ₹490cr of IPO money repaid debt that was eating over half of operating profit, and high-voltage cables are a rising share. **Watch:** government projects tie up cash, and operating cash flow was negative last year.", "**Verdict: wait.** The debt fix is real but happens once; I want to see project cash come in first. The price check reads {label:Laser Power & Infra|fits} after a fall of about 7% by 28 September, but that is not what the call waits for."],
         tagline: "An eastern-India maker of power cables and aluminium conductors that also builds electricity distribution projects for state utilities.",
         revenue: '₹2,326cr (FY26, consolidated)',
         products: [

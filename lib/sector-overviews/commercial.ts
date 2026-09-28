@@ -708,7 +708,7 @@ export const commercialServices: SectorOverview = {
         {
             company: 'Krystal Integrated Services', rank: 10, stance: 'TURNAROUND', segment: PEOPLE,
             what: "Provides housekeeping, security, staffing and catering, about 70% for government hospitals, schools and public bodies.",
-            view: "**A turnaround case: orders, but cash and governance are slipping.** It has a ₹2,500cr-plus consolidated order book and a steady 6–7% margin. But FY26 revenue grew 5% against an 18–20% target, receivables reached 118 days, it lent ₹77.8cr to a former promoter-group firm, and CRISIL cut it to BBB+ (negative) without a word on the call. The price needs about {need:Krystal Integrated Services|9}% a year against my ~7%.",
+            view: "**A turnaround case: orders, but cash and governance are slipping.** It has a ₹2,500cr-plus consolidated order book and a steady 6–7% margin. But FY26 revenue grew 5% against an 18–20% target, receivables reached 118 days, it lent ₹77.8cr to a former promoter-group firm, and CRISIL cut it to BBB+ (negative) without a word on the call. The price needs about {need:Krystal Integrated Services|9}% a year against my ~7%. By 28 September the price had fallen about 3% and the price check reads {label:Krystal Integrated Services|fits}; the call stays wait until the ₹77.8cr loan is repaid and the rating steadies.",
             watch: 'The ₹77.8cr loan being repaid; receivables below 110 days; the ₹300cr share sale.',
         },
         {

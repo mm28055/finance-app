@@ -606,7 +606,7 @@ export const cables: SectorOverview = {
         {
             company: 'Laser Power & Infra', rank: 5, stance: 'SCALEUP', segment: TENDER,
             what: "Kolkata-based maker of power cables and aluminium conductors (73% of FY26 revenue), with a projects arm building distribution networks for state utilities; listed July 2026.",
-            view: "**Two real improvements, both finite, and early warning signs.** High-tension cables rose to about 29% of revenue and ₹490cr of IPO money repaid debt, saving about ₹40cr a year of interest. But FY26 revenue fell about 10%, plants ran at 62%, customers take 216 days to pay, operating cash was −₹119cr, and its company secretary resigned two months after listing. The price needs about {need:Laser Power & Infra|20}% a year against my ~18%.",
+            view: "**Two real improvements, both finite, and early warning signs.** High-tension cables rose to about 29% of revenue and ₹490cr of IPO money repaid debt, saving about ₹40cr a year of interest. But FY26 revenue fell about 10%, plants ran at 62%, customers take 216 days to pay, operating cash was −₹119cr, and its company secretary resigned two months after listing. The price needs about {need:Laser Power & Infra|20}% a year against my ~18%. By 28 September the price had fallen about 7% and the price check reads {label:Laser Power & Infra|fits}; the call stays wait until operating cash turns positive and customers pay faster.",
             watch: 'Operating cash turning positive as projects bill; revenue growth back in the mid-teens; the value of its first HTLS orders.',
         },
         {

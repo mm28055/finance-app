@@ -165,7 +165,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Prince Pipes',
-        inShort: ["**One of India's top six plastic-pipe makers**, selling PVC, CPVC and other pipes for plumbing, drainage and farms through dealers.", "**Good:** the margin rose to 13% in Q1 FY27 on a better mix and new plants are built. **Bad:** volumes fell 7%, stock rose to 100 days, and the bathware business still loses money.", "**Verdict: wait.** Promising, and the price is only just short of fitting, but it needs to show steady volume growth first."],
+        inShort: ["**One of India's top six plastic-pipe makers**, selling PVC, CPVC and other pipes for plumbing, drainage and farms through dealers.", "**Good:** the margin rose to 13% in Q1 FY27 on a better mix and new plants are built. **Bad:** volumes fell 7%, stock rose to 100 days, and the bathware business still loses money.", "**Verdict: wait.** Promising, and after a small fall the price is on the edge of fitting (the check reads {label:Prince Pipes|fits} on 28 September), but it needs to show steady volume growth first."],
         tagline: "A maker of plastic pipes and fittings for plumbing, drainage and agriculture, with a small bathware business.",
         revenue: '₹2,598cr (FY26, standalone)',
         products: [

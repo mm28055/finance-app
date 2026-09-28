@@ -667,7 +667,7 @@ export const healthcare: SectorOverview = {
                 },
                 {
                     label: 'Full: prices that ask a few points more than I expect',
-                    text: "**GPT Healthcare** needs about {need:GPT Healthcare (Agilus)|17}% a year against my ~15%, **3B BlackBio** about 14% against my ~12%, and **Krsnaa** about {need:Krsnaa Diagnostics|12}% against my ~10%: each is only just outside a fair price. **Indegene** needs about {need:Indegene|20}% against my ~15% and **Vimta** about {need:Vimta Labs|19}% against my ~14%. GPT and Indegene are the ones I would buy first on a weak quarter, because their earnings are depressed by things that should pass (Raipur's losses, a delayed contract). 3B's price leans on its cash and on an acquisition not yet made; Krsnaa's low price reflects debt, slow payers and a record of missed guidance, which is why it is a wait despite the label.",
+                    text: "**GPT Healthcare** needs about {need:GPT Healthcare (Agilus)|17}% a year against my ~15%, **3B BlackBio** about 14% against my ~12%, and **Krsnaa** about {need:Krsnaa Diagnostics|12}% against my ~10%: each was only just outside a fair price when this was written. **Indegene** needs about {need:Indegene|20}% against my ~15% and **Vimta** about {need:Vimta Labs|19}% against my ~14%. GPT and Indegene are the ones I would buy first on a weak quarter, because their earnings are depressed by things that should pass (Raipur's losses, a delayed contract). 3B's price leans on its cash and on an acquisition not yet made; Krsnaa's low price reflects debt, slow payers and a record of missed guidance, which is why it is a wait despite the label.",
                 },
                 {
                     label: 'Stretched: the quality chains',
@@ -766,7 +766,7 @@ export const healthcare: SectorOverview = {
         {
             company: 'Krsnaa Diagnostics', rank: 13, stance: 'TURNAROUND', segment: DIAG,
             what: "Runs radiology and pathology centres in government hospitals under long state contracts, at prices 70–95% below private labs, plus a young retail arm; about 85% of revenue comes from these contracts.",
-            view: "**Cheap for reasons.** Like-for-like growth is 12–13% at a 25–29% margin. But it has missed its growth guidance for years, Q1 profit fell 19% as interest and depreciation rose, debt is 3.0 times operating profit against ICRA's 2.3 trigger, receivables over a year old jumped to ₹38.3cr, and its auditor drew attention to ₹62.7cr of tax demands after a search. The price needs about {need:Krsnaa Diagnostics|12}% a year against my ~10%.",
+            view: "**Cheap for reasons.** Like-for-like growth is 12–13% at a 25–29% margin. But it has missed its growth guidance for years, Q1 profit fell 19% as interest and depreciation rose, debt is 3.0 times operating profit against ICRA's 2.3 trigger, receivables over a year old jumped to ₹38.3cr, and its auditor drew attention to ₹62.7cr of tax demands after a search. The price needs about {need:Krsnaa Diagnostics|12}% a year against my ~10%. By 28 September the price had fallen about 4% and the price check reads {label:Krsnaa Diagnostics|fits}; the call stays wait until it collects its dues and meets a guide, and on 8 September its first appeals against the tax demands were dismissed or only partly allowed (it is appealing again).",
             watch: 'Rajasthan revenue roughly doubling in Q2; debtor days below 120; a permanent CFO.',
         },
         {
