@@ -8,7 +8,7 @@ import { useNotes } from '@/context/NotesContext';
 import { SectorSnapshot } from '@/components/SectorSnapshot';
 import { SectorOverview } from '@/components/SectorOverview';
 import { getSectorOverview } from '@/lib/sector-overviews';
-import { getSectorFilings } from '@/lib/filings';
+import { SECTOR_FILING_DAYS } from '@/lib/filings/types';
 import { SectorFilings } from '@/components/SectorFilings';
 
 import { EnrichedCompany } from './SectorList';
@@ -30,9 +30,14 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
 
     // Only sectors with a written note in lib/sector-overviews get the tab.
     const overview = getSectorOverview(name);
-    // Only sectors with a filings digest get the Filings tab.
-    const filings = getSectorFilings(name);
-    const watchCount = filings ? filings.filings.filter(f => f.tone === 'watch').length : 0;
+    // Filings tab: shown when any company here has a material filing in the last
+    // month. Counts come from the headlines already on each company.
+    const monthAgo = React.useMemo(() => {
+        const d = new Date(); d.setDate(d.getDate() - SECTOR_FILING_DAYS); return d.toISOString().slice(0, 10);
+    }, []);
+    const recent = companies.flatMap(c => (c.filingHeadlines || []).filter(h => h.date >= monthAgo));
+    const filingCount = recent.length;
+    const watchCount = recent.filter(h => h.tone === 'watch').length;
 
     const togglePanel = (next: 'snapshot' | 'overview' | 'filings') => (e: React.MouseEvent) => {
         e.stopPropagation();
@@ -96,7 +101,7 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
                         </div>
                     )}
                     {/* Filings Button — only where a filings digest exists */}
-                    {filings && (
+                    {filingCount > 0 && (
                         <div
                             onClick={togglePanel('filings')}
                             className={`px-1.5 py-1 rounded transition-all cursor-pointer flex items-center gap-1 ${panel === 'filings' ? 'text-[#6B9FCC] bg-[#D4E5F7]' : 'text-gray-400 hover:text-[#6B9FCC] hover:bg-[#D4E5F7]'}`}
@@ -105,7 +110,7 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
                             <Bell className="w-3 h-3" />
                             <span className="text-[9px] font-semibold uppercase tracking-wide">Filings</span>
                             <span className={`text-[9px] font-semibold px-1 rounded-full ${watchCount ? 'bg-[#F3EEFC] text-[#6B3FA0]' : 'bg-[#EAF2FA] text-[#35577A]'}`}>
-                                {filings.filings.length}
+                                {filingCount}
                             </span>
                         </div>
                     )}
@@ -141,8 +146,8 @@ export function SectorSection({ name, count, companies = [], children, defaultOp
             )}
 
             {/* Material filings */}
-            {isOpen && panel === 'filings' && filings && (
-                <SectorFilings data={filings} />
+            {isOpen && panel === 'filings' && (
+                <SectorFilings sector={name} />
             )}
 
             {/* Company List */}

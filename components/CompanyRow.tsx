@@ -16,7 +16,6 @@ import { guidanceMidpoint, meetsGuidanceThreshold, formatGuidanceRange, GUIDANCE
 const ROW_QUARTERS = 2;
 
 import { COLOR_THEMES, ColorThemeKey, CONVICTION_CONFIG, ConvictionLevel } from './SectorList';
-import { getCompanyFilings } from '@/lib/filings';
 import { TONE_STYLE, CompanyFilings } from './SectorFilings';
 
 const CONVICTION_CYCLE: (ConvictionLevel | null)[] = [null, 'HIGH', 'MEDIUM', 'LOW'];
@@ -41,7 +40,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
         if (expanded) requestAnimationFrame(() => rowHeaderRef.current?.scrollIntoView({ block: 'nearest' }));
     }, [expanded]);
     // Material exchange filings from the sector's digest, if one exists.
-    const companyFilings = useMemo(() => getCompanyFilings(company.name), [company.name]);
+    const companyFilings = company.filingHeadlines || [];
     const { isAdminMode } = useAdmin();
     const [isDeleting, setIsDeleting] = useState(false);
     const [showColorPicker, setShowColorPicker] = useState(false);
@@ -351,7 +350,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                 className={`flex-shrink-0 cursor-pointer hover:opacity-80 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border ${TONE_STYLE[companyFilings.some(f => f.tone === 'watch') ? 'watch' : companyFilings.some(f => f.tone === 'good') ? 'good' : 'info'].chip}`}
                                 title={companyFilings.map(f => `${f.date}: ${f.headline}`).join('\n')}
                             >
-                                {companyFilings.length} new
+                                {companyFilings.length} {companyFilings.length === 1 ? 'filing' : 'filings'}
                             </button>
                         )}
                         {company.isSme && (
@@ -671,8 +670,8 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                             const trend = effective.trend && effective.trend.length >= 2 ? effective.trend : effective.history;
                                             return trend && trend.length >= 2 ? <FinancialTrendChart history={trend} /> : null;
                                         })()}
-                                        {companyFilings.length > 0 && (
-                                            <CompanyFilings filings={companyFilings} />
+                                        {effective.filings && effective.filings.length > 0 && (
+                                            <CompanyFilings filings={effective.filings} />
                                         )}
                                     </div>
                                     <div className="flex-1">

@@ -46,6 +46,10 @@ export interface EnrichedCompany {
         quarter: string;
         financials?: CompanyFinancials;
     }[];
+    // Material exchange filings (last three months): headlines on every row for
+    // the chip and its hover; full summaries only on the detail fetch.
+    filingHeadlines?: import('@/lib/filings/types').FilingHeadline[];
+    filings?: import('@/lib/filings/types').MaterialFiling[];
     marketCap?: number;
     currentPrice?: number;
     bookValue?: number;

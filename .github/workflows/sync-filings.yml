@@ -1,0 +1,49 @@
+name: Daily Filings Digest
+
+on:
+  schedule:
+    - cron: '30 14 * * 1-6'  # 8:00pm IST, Monday to Saturday (after the day's filings)
+  workflow_dispatch:          # Allow manual trigger from GitHub UI
+
+# The job commits lib/filings/filings.json back to the repository, which redeploys the site.
+permissions:
+  contents: write
+
+jobs:
+  filings:
+    name: Summarise material filings
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Read and summarise the last two days of filings
+        run: npx tsx scripts/sync-filings.ts
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+          GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
+          GOOGLE_AI_KEYS: ${{ secrets.GOOGLE_AI_KEYS }}
+
+      - name: Commit the updated digest
+        run: |
+          if git diff --quiet lib/filings/filings.json; then
+            echo "No new material filings."
+            exit 0
+          fi
+          git config user.name "filings-bot"
+          git config user.email "filings-bot@users.noreply.github.com"
+          git add lib/filings/filings.json
+          git commit -m "Update material filings digest"
+          git push
