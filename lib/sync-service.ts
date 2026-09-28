@@ -3,6 +3,8 @@ import { analyzeTranscript } from './ai-analyst';
 import fs from 'fs';
 import { GENERAL_Q } from './retention';
 import SCREENER_OVERRIDES from './screener-overrides.json';
+import { normaliseName, nameSimilarity, MIN_NAME_MATCH, tokensFit, namesOf, sameCompanyName } from './name-match';
+import { nseSymbolForIsin } from './corporate-actions/nse-lists';
 const pdf = require('pdf-parse');
 
 // ── Screener.in quarterly fallback ──────────────────────────────────────────
@@ -15,35 +17,6 @@ const pdf = require('pdf-parse');
 // company's results and read as real. Twin of the matcher in
 // scripts/sync-finance.js; that script is plain JS run by node, so the two
 // cannot share a module today — change both together.
-const NAME_NOISE = /\b(Ltd|Limited|Engg|Engineering|Industry|Industries|Corp|Corporation|Inc|Co|Com|Pvt|The|India)\.?\b/gi;
-
-function normaliseName(s: string): string {
-    return (s || '')
-        .replace(NAME_NOISE, ' ')
-        .replace(/[^a-z0-9 ]/gi, ' ')
-        .replace(/\s+/g, ' ')
-        .trim()
-        .toLowerCase();
-}
-
-/** Dice coefficient over letter bigrams — tolerant of spelling drift
- *  ("Refrigrations" vs "Refrigerations"), still separates "Anup" from "Anupam". */
-function nameSimilarity(a: string, b: string): number {
-    const bigrams = (s: string) => {
-        const out: string[] = [];
-        for (let i = 0; i < s.length - 1; i++) out.push(s.slice(i, i + 2));
-        return out;
-    };
-    const A = bigrams(a), B = bigrams(b);
-    if (!A.length || !B.length) return a && a === b ? 1 : 0;
-    const pool = [...B];
-    let hits = 0;
-    for (const g of A) {
-        const i = pool.indexOf(g);
-        if (i > -1) { hits++; pool.splice(i, 1); }
-    }
-    return (2 * hits) / (A.length + B.length);
-}
 
 /** Screener slugs an NSE company by its symbol, a BSE-only one by scrip code. */
 function screenerSlug(url: string): string {
@@ -51,17 +24,73 @@ function screenerSlug(url: string): string {
     return parts[parts.length - 1] || '';
 }
 
-const MIN_NAME_MATCH = 0.75;
+// Screener blocks bursts, so every request from this module is kept at least
+// 2.5 s apart. Callers with their own pacing pass it in as `get`.
+const SCREENER_GAP_MS = 2500;
+let lastScreenerRequest = 0;
+async function pacedScreenerFetch(url: string, init?: RequestInit): Promise<Response> {
+    const wait = lastScreenerRequest + SCREENER_GAP_MS - Date.now();
+    if (wait > 0) await new Promise(r => setTimeout(r, wait));
+    try {
+        return await fetch(url, { ...init, headers: { 'User-Agent': 'Mozilla/5.0', ...(init?.headers || {}) } });
+    } finally {
+        lastScreenerRequest = Date.now();
+    }
+}
+
+// The direct-page check below already downloads the company page, so it is
+// kept for the caller that asks for the same URL next (a handful at most).
+const screenerPageCache = new Map<string, string>();
+function rememberPage(url: string, html: string) {
+    screenerPageCache.set(url, html);
+    while (screenerPageCache.size > 10) screenerPageCache.delete(screenerPageCache.keys().next().value!);
+}
+
+/** The company name a Screener page is about, from its <title> ("Hirect Ltd share price | ..."). */
+function screenerPageName(html: string): string | null {
+    const m = html.match(/<title>\s*([\s\S]*?)\s+share price\b/i);
+    return m ? m[1].replace(/&amp;/g, '&').replace(/&#x27;|&#39;/g, "'").trim() : null;
+}
 
 // `get` lets a caller pace its Screener requests (the exchange transcript sync
-// keeps them at least 3 s apart); it defaults to a plain fetch.
+// keeps them at least 3 s apart); it defaults to a fetch paced at 2.5 s.
+// `aliases` is Company.aliases — names the company has been known by, added
+// automatically by scripts/sync-corporate-actions.ts when it is renamed.
 export async function resolveScreenerUrl(
     isin: string | null, ticker: string, name: string,
-    get: (url: string, init?: RequestInit) => Promise<Response> = fetch
+    get: (url: string, init?: RequestInit) => Promise<Response> = pacedScreenerFetch,
+    aliases?: string | null
 ): Promise<string | null> {
     // Renamed or hard-to-match companies have a fixed page (lib/screener-overrides.json).
     const fixed = isin ? (SCREENER_OVERRIDES as Record<string, string>)[isin] : undefined;
     if (fixed) return `https://www.screener.in${fixed}`;
+    const names = namesOf(name, aliases);
+
+    // Direct page: the company's current NSE symbol (read from NSE's list by
+    // ISIN, so a changed symbol is followed automatically) or, for a BSE-only
+    // company, its scrip code — Screener keeps that page across renames.
+    // Accepted only when the page's own name is ours or one of our aliases.
+    const t = (ticker || '').trim().toUpperCase();
+    const symbol = (await nseSymbolForIsin(isin)) || (/^[A-Z][A-Z0-9&-]{0,19}$/.test(t) ? t : null);
+    const direct = /^\d{6}$/.test(t)
+        ? `https://www.screener.in/company/${t}/`
+        : symbol ? `https://www.screener.in/company/${encodeURIComponent(symbol)}/consolidated/` : null;
+    if (direct) {
+        try {
+            const res = await get(direct, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+            if (res.ok) {
+                const html = await res.text();
+                const pageName = screenerPageName(html);
+                // The page came from our own ISIN's symbol, so either direction of the
+                // word check will do ("Apar Inds." vs "Apar Industries Ltd").
+                if (pageName && (sameCompanyName(names, pageName) || names.some(n => tokensFit(pageName, n)))) {
+                    rememberPage(direct, html);
+                    return direct;
+                }
+            }
+        } catch { /* fall through to the search */ }
+    }
+
     const searchScreener = async (q: string): Promise<{ name: string; url: string }[]> => {
         try {
             const res = await get(`https://www.screener.in/api/company/search/?q=${encodeURIComponent(q)}`, {
@@ -80,29 +109,30 @@ export async function resolveScreenerUrl(
             const exact = results.find(r => screenerSlug(r.url).toLowerCase() === want);
             if (exact) return exact;
         }
-        const wantName = normaliseName(name);
         let best: { name: string; url: string } | null = null;
         let bestScore = 0;
         for (const r of results) {
-            const score = nameSimilarity(wantName, normaliseName(r.name));
-            if (score > bestScore) { best = r; bestScore = score; }
+            for (const n of names) {
+                const score = nameSimilarity(normaliseName(n), normaliseName(r.name));
+                if (score > bestScore) { best = r; bestScore = score; }
+            }
         }
         if (bestScore >= MIN_NAME_MATCH) return best;
         // Abbreviated or renamed stored names: every word of ours must start a
         // word of the candidate's (or vice versa), and only one may qualify.
-        const tokens = (s: string) => normaliseName(s).split(' ').filter(t => t.length >= 2);
-        const ours = tokens(name);
-        if (!ours.length) return null;
-        const fits = results.filter(r => {
-            const theirs = tokens(r.name);
-            return ours.every(t => theirs.some(u => u.startsWith(t) || t.startsWith(u)));
-        });
-        return fits.length === 1 ? fits[0] : null;
+        for (const n of names) {
+            const fits = results.filter(r => tokensFit(n, r.name));
+            if (fits.length === 1) return fits[0];
+        }
+        return null;
     };
 
     // Last resort: the first word alone (the word check then picks one candidate).
-    for (const q of [isin, ticker, name, normaliseName(name), normaliseName(name).split(' ')[0]]) {
-        if (!q) continue;
+    const queries = [isin, ticker, ...names, ...names.map(normaliseName), normaliseName(name).split(' ')[0]];
+    const tried = new Set<string>();
+    for (const q of queries) {
+        if (!q || tried.has(q)) continue;
+        tried.add(q);
         const hit = pick(await searchScreener(q));
         if (hit) return `https://www.screener.in${hit.url}`;
     }
@@ -184,11 +214,11 @@ export function parseQuartersTable(html: string): QuarterTable | null {
  * Screener often lags the concall by weeks, and silently importing the previous
  * quarter's numbers would be worse than leaving the gap visible.
  */
-export async function fetchScreenerQuarterly(isin: string | null, ticker: string, name: string, quarterName: string) {
+export async function fetchScreenerQuarterly(isin: string | null, ticker: string, name: string, quarterName: string, aliases?: string | null) {
     const wanted = screenerColumnFor(quarterName);
     if (!wanted) return null;
 
-    const url = await resolveScreenerUrl(isin, ticker, name);
+    const url = await resolveScreenerUrl(isin, ticker, name, undefined, aliases);
     if (!url) return null;
 
     // Consolidated first; companies without subsidiaries (and some that file late)
@@ -198,9 +228,13 @@ export async function fetchScreenerQuarterly(isin: string | null, ticker: string
 
     for (const page of pages) {
         try {
-            const res = await fetch(page, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-            if (!res.ok) continue;
-            const table = parseQuartersTable(await res.text());
+            let html = screenerPageCache.get(page);
+            if (html === undefined) {
+                const res = await pacedScreenerFetch(page);
+                if (!res.ok) continue;
+                html = await res.text();
+            }
+            const table = parseQuartersTable(html);
             if (!table) continue;
 
             const col = table.columns.findIndex(c => c.toLowerCase() === wanted.toLowerCase());
@@ -392,7 +426,8 @@ export async function processTranscript(transcriptId: string) {
             transcript.company.isin ?? null,
             transcript.company.ticker,
             transcript.company.name,
-            transcript.quarter.name
+            transcript.quarter.name,
+            transcript.company.aliases
         );
         if (s) {
             // `!= null` not truthiness: a genuine 0, or a negative EBITDA, is data.

@@ -98,17 +98,34 @@ function screenerSlug(url) {
 
 const MIN_NAME_MATCH = 0.75;
 
+// Stored name plus Company.aliases (comma-separated names the company has been
+// known by — scripts/sync-corporate-actions.ts adds one when it is renamed).
+function namesOf(company) {
+    return [company.name, ...(company.aliases || '').split(',')].map(s => (s || '').trim()).filter(Boolean);
+}
+
+const nameTokens = s => normaliseName(s).split(' ').filter(t => t.length >= 2);
+
+// Every word of ours starts a word of theirs (or the other way round).
+function tokensFit(ours, theirs) {
+    const a = nameTokens(ours), b = nameTokens(theirs);
+    if (!a.length || !b.length) return false;
+    return a.every(t => b.some(u => u.startsWith(t) || t.startsWith(u)));
+}
+
 function verifiedPick(company, results) {
     const ticker = (company.ticker || '').trim().toLowerCase();
     if (ticker) {
         const exact = results.find(r => screenerSlug(r.url).toLowerCase() === ticker);
         if (exact) return exact;
     }
-    const want = normaliseName(company.name);
+    const names = namesOf(company);
     let best = null, bestScore = 0;
     for (const r of results) {
-        const score = nameSimilarity(want, normaliseName(r.name));
-        if (score > bestScore) { best = r; bestScore = score; }
+        for (const n of names) {
+            const score = nameSimilarity(normaliseName(n), normaliseName(r.name));
+            if (score > bestScore) { best = r; bestScore = score; }
+        }
     }
     if (bestScore >= MIN_NAME_MATCH) return best;
     // Fallback for abbreviated or renamed stored names ("Ahluwalia Contr.",
@@ -116,22 +133,31 @@ function verifiedPick(company, results) {
     // Advanced Materials"): every word of our name must start a word of the
     // candidate's name (or the other way round), and exactly one candidate may
     // qualify. "Anup Enginee" still does not match "Anupam Finserv".
-    const tokens = s => normaliseName(s).split(' ').filter(t => t.length >= 2);
-    const ours = tokens(company.name);
-    if (!ours.length) return null;
-    const fits = results.filter(r => {
-        const theirs = tokens(r.name);
-        return ours.every(t => theirs.some(u => u.startsWith(t) || t.startsWith(u)));
-    });
-    return fits.length === 1 ? fits[0] : null;
+    for (const n of names) {
+        const fits = results.filter(r => tokensFit(n, r.name));
+        if (fits.length === 1) return fits[0];
+    }
+    return null;
+}
+
+// Screener blocks bursts: every request to it goes through here, at least
+// 2.5 s after the previous one.
+const SCREENER_GAP_MS = 2500;
+let lastScreenerRequest = 0;
+async function screenerGet(url) {
+    const wait = lastScreenerRequest + SCREENER_GAP_MS - Date.now();
+    if (wait > 0) await new Promise(r => setTimeout(r, wait));
+    try {
+        return await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+    } finally {
+        lastScreenerRequest = Date.now();
+    }
 }
 
 async function searchScreener(query) {
     if (!query) return [];
     try {
-        const res = await fetch(`https://www.screener.in/api/company/search/?q=${encodeURIComponent(query)}`, {
-            headers: { 'User-Agent': 'Mozilla/5.0' }
-        });
+        const res = await screenerGet(`https://www.screener.in/api/company/search/?q=${encodeURIComponent(query)}`);
         const data = await res.json();
         return Array.isArray(data) ? data.filter(r => r && r.url && r.name) : [];
     } catch (e) {
@@ -142,12 +168,80 @@ async function searchScreener(query) {
 // Renamed or hard-to-match companies have a fixed page, keyed by ISIN.
 const SCREENER_OVERRIDES = require('../lib/screener-overrides.json');
 
+// NSE symbol by ISIN, from NSE's own equity lists (main board and SME), read
+// once per run. Twin of loadNseListings in lib/corporate-actions/nse-lists.ts.
+// If NSE is unreachable the map is empty and the lookup falls back to the ticker.
+let nseSymbols = null;
+async function nseSymbolForIsin(isin) {
+    if (!isin) return null;
+    if (!nseSymbols) {
+        nseSymbols = new Map();
+        const lists = [
+            'https://nsearchives.nseindia.com/content/equities/EQUITY_L.csv',
+            'https://nsearchives.nseindia.com/emerge/corporates/content/SME_EQUITY_L.csv',
+        ];
+        for (const url of lists) {
+            try {
+                const res = await fetch(url, {
+                    headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36' },
+                    signal: AbortSignal.timeout(30000),
+                });
+                if (!res.ok) continue;
+                for (const line of (await res.text()).split(/\r?\n/).slice(1)) {
+                    const cells = line.split(',').map(c => c.trim());
+                    const code = cells.find(c => /^IN[A-Z0-9]{10}$/.test(c));
+                    if (code && cells[0]) nseSymbols.set(code, cells[0].toUpperCase());
+                }
+            } catch (e) { /* unreachable: fall back to the ticker */ }
+        }
+    }
+    return nseSymbols.get(isin) || null;
+}
+
+// The company name a Screener page is about, from its <title> ("Hirect Ltd share price | ...").
+function screenerPageName(html) {
+    const m = html.match(/<title>\s*([\s\S]*?)\s+share price\b/i);
+    return m ? m[1].replace(/&amp;/g, '&').replace(/&#x27;|&#39;/g, "'").trim() : null;
+}
+
+// Page downloaded by the direct check below, handed to fetchScreenerHtml so
+// the same page is not requested twice.
+const pageCache = new Map();
+
 async function resolveScreenerUrl(company) {
     const fixed = company.isin && SCREENER_OVERRIDES[company.isin];
     if (fixed) return `https://www.screener.in${fixed}`;
+    const names = namesOf(company);
+
+    // Direct page: the company's current NSE symbol (read from NSE's list by
+    // ISIN, so a changed symbol is followed automatically) or, for a BSE-only
+    // company, its scrip code — Screener keeps that page across renames.
+    // Accepted only when the page's own name is ours or one of our aliases.
+    const t = (company.ticker || '').trim().toUpperCase();
+    const symbol = (await nseSymbolForIsin(company.isin)) || (/^[A-Z][A-Z0-9&-]{0,19}$/.test(t) ? t : null);
+    const direct = /^\d{6}$/.test(t)
+        ? `https://www.screener.in/company/${t}/`
+        : symbol ? `https://www.screener.in/company/${encodeURIComponent(symbol)}/consolidated/` : null;
+    if (direct) {
+        try {
+            const res = await screenerGet(direct);
+            if (res.ok) {
+                const html = await res.text();
+                const pageName = screenerPageName(html);
+                // The page came from our own ISIN's symbol, so either direction of the
+                // word check will do ("Apar Inds." vs "Apar Industries Ltd").
+                if (pageName && names.some(n => nameSimilarity(normaliseName(n), normaliseName(pageName)) >= MIN_NAME_MATCH || tokensFit(n, pageName) || tokensFit(pageName, n))) {
+                    pageCache.clear();
+                    pageCache.set(direct, html);
+                    return direct;
+                }
+            }
+        } catch (e) { /* fall through to the search */ }
+    }
+
     // Last resort: the first word alone ("Waaree Renewables" finds nothing on
     // Screener, "waaree" finds both Waaree companies and the word check picks one).
-    const queries = [company.isin, company.ticker, company.name, normaliseName(company.name), normaliseName(company.name).split(' ')[0]];
+    const queries = [company.isin, company.ticker, ...names, ...names.map(normaliseName), normaliseName(company.name).split(' ')[0]];
     const tried = new Set();
     for (const q of queries) {
         if (!q || tried.has(q)) continue;
@@ -187,10 +281,14 @@ async function fetchScreenerHtml(company) {
         return null;
     }
 
+    const cached = pageCache.get(url);
+    if (cached) {
+        pageCache.delete(url);
+        return cached;
+    }
+
     try {
-        const response = await fetch(url, {
-            headers: { 'User-Agent': 'Mozilla/5.0' }
-        });
+        const response = await screenerGet(url);
         if (!response.ok) return null;
         return await response.text();
     } catch (e) {

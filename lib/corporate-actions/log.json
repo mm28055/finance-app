@@ -1,0 +1,98 @@
+[
+  {
+    "date": "2026-09-28T06:12:10.574Z",
+    "company": "Akzo Nobel",
+    "field": "ticker",
+    "old": "AKZOINDIA",
+    "new": "JSWDULUX",
+    "source": "NSE symbol change AKZOINDIA → JSWDULUX"
+  },
+  {
+    "date": "2026-09-28T06:12:10.574Z",
+    "company": "Akzo Nobel",
+    "field": "aliases",
+    "old": null,
+    "new": "JSW Dulux",
+    "source": "NSE name change → JSW Dulux Limited"
+  },
+  {
+    "date": "2026-09-28T06:12:10.574Z",
+    "company": "HEG",
+    "field": "ticker",
+    "old": "HEG",
+    "new": "HEGAM",
+    "source": "NSE symbol change HEG → HEGAM"
+  },
+  {
+    "date": "2026-09-28T06:12:10.574Z",
+    "company": "Hind Rectifiers",
+    "field": "aliases",
+    "old": null,
+    "new": "Hirect",
+    "source": "NSE name change → Hirect Limited"
+  },
+  {
+    "date": "2026-09-28T06:12:10.574Z",
+    "company": "Infibeam Avenues",
+    "field": "aliases",
+    "old": null,
+    "new": "AvenuesAI",
+    "source": "NSE name change → AvenuesAI Limited"
+  },
+  {
+    "date": "2026-09-28T06:12:10.574Z",
+    "company": "Kirloskar Pneumatic",
+    "field": "isin",
+    "old": "INE811A01020",
+    "new": "INE811A01038",
+    "source": "same issuer code (INE811A01…) — re-issued ISIN"
+  },
+  {
+    "date": "2026-09-28T06:12:10.574Z",
+    "company": "Pondy Oxides & Chem.",
+    "field": "isin",
+    "old": "INE063E01053",
+    "new": "INE063E01061",
+    "source": "same issuer code (INE063E01…) — re-issued ISIN"
+  },
+  {
+    "date": "2026-09-28T06:12:10.574Z",
+    "company": "Sastasundar Ventures",
+    "field": "aliases",
+    "old": null,
+    "new": "Health X Platform",
+    "source": "NSE name change → Health X Platform Limited"
+  },
+  {
+    "date": "2026-09-28T06:12:10.574Z",
+    "company": "Sequent Scientific",
+    "field": "aliases",
+    "old": null,
+    "new": "Viyash Scientific",
+    "source": "NSE name change → Viyash Scientific Limited"
+  },
+  {
+    "date": "2026-09-28T06:12:10.574Z",
+    "company": "Shriram Pistons",
+    "field": "aliases",
+    "old": null,
+    "new": "SPR Auto Technologies",
+    "source": "NSE name change → SPR Auto Technologies Limited"
+  },
+  {
+    "date": "2026-09-28T06:12:10.574Z",
+    "company": "Standard Glass",
+    "field": "ticker",
+    "old": "SGLTL",
+    "new": "SETL",
+    "source": "NSE symbol change SGLTL → SETL"
+  },
+  {
+    "date": "2026-09-28T06:12:10.574Z",
+    "company": "Standard Glass",
+    "field": "aliases",
+    "old": null,
+    "new": "Standard Engineering Technology",
+    "source": "NSE name change → Standard Engineering Technology Limited"
+  }
+]

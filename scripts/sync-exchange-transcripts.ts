@@ -53,7 +53,7 @@ const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 type DocType = 'RESULTS' | 'AGM' | 'SPECIAL';
 const TYPE_LABEL: Record<DocType, string> = { RESULTS: 'results call', AGM: 'AGM', SPECIAL: 'special call' };
 
-interface Company { id: string; name: string; isin: string | null; sector: string; ticker: string }
+interface Company { id: string; name: string; isin: string | null; sector: string; ticker: string; aliases: string | null }
 interface Doc {
     co: Company;
     source: 'NSE' | 'SCREENER';
@@ -176,7 +176,7 @@ async function screenerDocs(companies: Company[], from: Date, to: Date): Promise
     const docs: Doc[] = [];
     for (const co of companies) {
         try {
-            const url = await resolveScreenerUrl(co.isin, co.ticker, co.name, screenerFetch);
+            const url = await resolveScreenerUrl(co.isin, co.ticker, co.name, screenerFetch, co.aliases);
             if (!url) { console.log(`${co.name.trim()} | - | - | Screener page not found`); continue; }
             const res = await screenerFetch(url.replace(/consolidated\/?$/, ''));
             if (!res.ok) { console.log(`${co.name.trim()} | - | - | Screener page returned ${res.status}`); continue; }
@@ -210,7 +210,7 @@ async function main() {
 
     let companies: Company[] = (await prisma.company.findMany({
         where: { status: 'ACTIVE', isin: { not: null } },
-        select: { id: true, name: true, isin: true, sector: true, ticker: true },
+        select: { id: true, name: true, isin: true, sector: true, ticker: true, aliases: true },
     }));
     if (only.length) {
         companies = companies.filter(c => only.some(o => c.name.toLowerCase().includes(o) || c.ticker.toLowerCase() === o || c.isin?.toLowerCase() === o));

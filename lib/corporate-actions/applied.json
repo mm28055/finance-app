@@ -1,0 +1,41 @@
+[
+  {
+    "isin": "INE811A01020",
+    "symbol": "KIRLPNU",
+    "subject": "Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share",
+    "exDate": "18-Aug-2026",
+    "company": "Kirloskar Pneumatic",
+    "kind": "split",
+    "appliedOn": "2026-09-28",
+    "factor": 2
+  },
+  {
+    "isin": "INE419M01019",
+    "symbol": "TDPOWERSYS",
+    "subject": "Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share",
+    "exDate": "24-Aug-2026",
+    "company": "TD Power Systems",
+    "kind": "split",
+    "appliedOn": "2026-09-28",
+    "factor": 2
+  },
+  {
+    "isin": "INE545A01024",
+    "symbol": "HEGAM",
+    "subject": "Demerger",
+    "exDate": "07-Sep-2026",
+    "company": "HEG",
+    "kind": "demerger",
+    "appliedOn": "2026-09-28"
+  },
+  {
+    "isin": "482086",
+    "symbol": "ORIANA",
+    "subject": "FACE VALUE SPLIT (SUB-DIVISION) - FROM RS 10/- PER SHARE TO RS 2/- PER SHARE",
+    "exDate": "18-Sep-2026",
+    "company": "Oriana Power",
+    "kind": "split",
+    "appliedOn": "2026-09-28",
+    "factor": 5
+  }
+]
