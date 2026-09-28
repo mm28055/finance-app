@@ -6485,6 +6485,12 @@ export const autoRelatedValuationInputs: Record<string, ValuationInput> = {
         "mcapAtWriting": 22740.0,
         "peAtWriting": 36.2
     },
+    "Shriram Pistons": {
+        "netDebt": 797,
+        "ttmEbitda": 939.0,
+        "mcapAtWriting": 22019.0,
+        "peAtWriting": 37.8
+    },
     "Tenneco Clean Air": {
         "netDebt": -519,
         "ttmEbitda": 943.0,
