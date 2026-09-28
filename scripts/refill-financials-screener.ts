@@ -76,7 +76,7 @@ async function main() {
     let written = 0, created = 0, noPage = 0, noQuarter = 0;
     for (const [i, c] of companies.entries()) {
         const found = await screenerTable(c.isin ?? null, c.ticker, c.name);
-        await sleep(1200);
+        await sleep(2500); // gentle: Screener blocks bursts
         if (!found) { noPage++; console.log(`[${i + 1}/${companies.length}] ${c.name}: no verified Screener page — left as is`); continue; }
         const { table, consolidated } = found;
         const get = (label: string, col: number) => { const r = table.rows.get(label); return r && r[col] != null ? r[col] : null; };
