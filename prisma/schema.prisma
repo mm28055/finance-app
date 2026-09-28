@@ -63,6 +63,7 @@ model Company {
   transcripts     Transcript[]
   transcriptChunks TranscriptChunk[]
   tags            CompanyTag[]
+  shareholding    ShareholdingQuarter[]
 }
 
 model Quarter {
@@ -235,4 +236,28 @@ model CompanyTag {
 
   @@unique([companyId, tag])
   @@index([tag])
+}
+
+// Quarterly shareholding pattern, as Screener labels the columns ("Sep 2026").
+// Filled by scripts/sync-finance.js from the page it already downloads; the
+// last 12 periods are kept. `pledged` is the share of the promoter holding
+// pledged, from the NSE shareholding filing (scripts/sync-corporate-actions.ts).
+// All figures are percentages. Read with raw SQL (lib/shareholding.ts).
+model ShareholdingQuarter {
+  id           String   @id @default(uuid())
+  companyId    String
+  period       String
+  periodEnd    DateTime @db.Date
+  promoter     Decimal  @db.Decimal
+  fii          Decimal  @db.Decimal
+  dii          Decimal  @db.Decimal
+  government   Decimal  @db.Decimal
+  public       Decimal  @db.Decimal
+  shareholders Int?
+  pledged      Decimal? @db.Decimal
+  updatedAt    DateTime @default(now()) @updatedAt @db.Timestamptz(6)
+  company      Company  @relation(fields: [companyId], references: [id], onDelete: Cascade)
+
+  @@unique([companyId, period])
+  @@index([companyId, periodEnd])
 }
