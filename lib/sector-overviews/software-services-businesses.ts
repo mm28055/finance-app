@@ -10,13 +10,13 @@ const intro: OverviewSection[] = [
     {
         heading: 'How to read this tab',
         body: [
-            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it does, where the money comes from and its charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed consolidated figures; R Systems keeps a calendar year, so its total is for CY25. Splits are from each company's latest call, presentation or annual report, and most are for Q1 FY27. These businesses buy almost no raw materials, so there is no cost-versus-input chart: for all but Sonata and Xtranet, staff are 50–70% of sales, and the margin moves with **wage rises, how fully staff are kept busy on billable work (utilisation), the use of subcontractors and onsite staff abroad, and the rupee**. Each card gives a rule of thumb for what an unrecovered 10% rise in pay would do to the margin.",
+            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it does, where the money comes from and its charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed consolidated figures (RailTel's are standalone, as it reports); R Systems keeps a calendar year, so its total is for CY25. Splits are from each company's latest call, presentation or annual report, and most are for Q1 FY27. These businesses buy almost no raw materials, so there is no cost-versus-input chart: for all but Sonata, Xtranet and RailTel, staff are 50–70% of sales, and the margin moves with **wage rises, how fully staff are kept busy on billable work (utilisation), the use of subcontractors and onsite staff abroad, and the rupee**. Each card gives a rule of thumb for what an unrecovered 10% rise in pay would do to the margin.",
         ],
     },
     {
         heading: 'The businesses, in plain words',
         body: [
-            "Twelve companies that sell the time and skill of software engineers and data scientists, in three groups.",
+            "Thirteen companies that sell the time and skill of software engineers and data scientists, in three groups.",
         ],
         points: [
             {
@@ -28,13 +28,13 @@ const intro: OverviewSection[] = [
                 text: "Fractal Analytics and Latent View build data platforms, AI models and analytics for very large US companies, helping them price, forecast, market and detect fraud. **They charge more per person than general IT firms and are the ones clients are paying more for as AI spreads**, but they depend on a few big clients, and big-tech clients are moving money from outsourcing to AI data centres.",
             },
             {
-                label: 'Indian government system integrator',
-                text: "Xtranet builds and runs data centres and network centres for Indian government bodies, installs business software and runs a licensed digital-signature business. **It sells in India, not abroad, and about 40% of its revenue is hardware resold at 6–8%**, so its margin depends on the share of higher-margin services, and government customers pay slowly.",
+                label: 'Indian government system integrators',
+                text: "RailTel and Xtranet sell in India, not abroad, mostly to government bodies. **RailTel** is the Railways' telecom company: it leases bandwidth and sells broadband on its own fibre along railway tracks, runs data centres, and takes on IT, surveillance and signalling projects that it largely subcontracts, at 4–5% margins. Xtranet builds and runs data centres and network centres for Indian government bodies, installs business software and runs a licensed digital-signature business. **About 40% of Xtranet's revenue is hardware resold at 6–8%, and two-thirds of RailTel's is low-margin project work**, so both margins depend on the share of higher-margin services, and government customers pay slowly.",
             },
         ],
     },
     {
-        heading: 'Four ways of earning',
+        heading: 'Five ways of earning',
         body: [
             "How each business earns decides what its margin means and how quickly profit turns into cash.",
         ],
@@ -45,7 +45,8 @@ const intro: OverviewSection[] = [
                     ['**Hours or managed teams**', 'Most of the group: Zensar, Birlasoft, Mastek, Happiest Minds, R Systems, Saksoft, InfoBeans, Expleo, Latent View', 'A rate per person per hour or month, or a fixed fee for a contracted team; AI lets clients ask for 10–30% off at renewal', 'Clients pay in about 55–80 days; salaries go out monthly and bonuses are paid in Q1'],
                     ['**Fixed-price and outcome-priced projects**', 'Fractal (42% of revenue), Sonata (21% of international engagements), Birlasoft and Mastek (about half), Latent View (18–20%)', 'A price for a result or a deliverable; the company keeps productivity gains but carries the risk of overruns', 'Billed on milestones, so unbilled work builds up and cash lags revenue'],
                     ['**A resale margin on licences**', 'Sonata (Indian arm, about 73% of revenue)', 'About 3% gross contribution on Microsoft and cloud licences resold at list prices', 'Collects from customers before paying Microsoft, so working capital is negative'],
-                    ['**Government projects and subscriptions**', 'Xtranet', 'Build fees over 6–18 months, then 3–7 years of operating fees; hardware resold at 6–8%; annual digital-signature renewals', 'Governments take 120–150 days on build bills; old receivables are the main risk'],
+                    ['**Government projects and subscriptions**', 'Xtranet; RailTel (projects)', 'Build fees over 6–18 months, then 3–7 years of operating fees; hardware resold at 6–8%; annual digital-signature renewals; RailTel’s projects earn 4–5%', 'Governments take 120–175 days on build bills; old receivables are the main risk'],
+                    ['**Network leases and hosting**', 'RailTel (telecom and data centres)', 'Monthly or yearly rent for bandwidth, fibre, tower space, broadband and hosted applications; a 26.7% segment result in FY26', 'Recurring, but government renewals can arrive late, as in Q1 FY27'],
                 ],
             },
         ],
@@ -188,6 +189,34 @@ const profiles: BusinessProfile[] = [
         money: "Screener shows **₹96cr of net debt**: borrowings were ₹410cr in December (₹275cr of bonds raised for Novigo and ₹95cr of leases) against a cash surplus of ₹314cr. CRISIL rates it AA-. Capex is negligible and it pays high interim dividends. Blackstone, the promoter, holds **51.85%**, from 51.93% three years ago; any Blackstone sale is an overhang.",
         watch: ["Constant-currency growth of 3–4% a quarter.", "Bookings above $85M.", "Margin above 18% as currency gains fade."],
         charts: softwareCharts['R Systems International'],
+    },
+    {
+        company: 'Railtel Corporation of India',
+        inShort: ["**The Railways' own telecom and IT company**, leasing bandwidth and selling broadband on fibre laid along railway tracks, running data centres, and building IT, surveillance and signalling projects for railways and state governments.", "**Good:** revenue up 23% in FY26, a record ₹11,747cr order book, no debt and ₹590cr of net cash. **Bad:** two-thirds of revenue is project work earning about 4%, receivables are growing faster than sales, and Q1 profit was flat.", "**Verdict: follow.** The price roughly matches the growth I expect, with little to spare."],
+        tagline: "A Navratna railway company with a national fibre network and data centres, plus a large government IT and signalling projects business.",
+        revenue: '₹4,277cr (FY26, standalone)',
+        products: [
+            { name: 'Telecom services', text: "Bandwidth leased to telecom companies, government bodies and enterprises (long distance, ₹134cr in Q1 FY27), RailWire home broadband (₹112cr; 6.23 lakh subscribers) and fibre and tower space for other operators (₹27cr)." },
+            { name: 'Data centres and digital services', text: "Tier-III data centres at Gurgaon and Secunderabad, government cloud hosting (including the Railways' hospital system and e-office) and Aadhaar checks at exam centres; ₹202cr of data-centre revenue in FY26, booked inside telecom." },
+            { name: 'Railway projects', text: "Kavach train protection (about ₹1,000cr of orders), video surveillance at over 5,000 stations, tunnel communications, electronic interlocking, and Wi-Fi at 6,117 stations." },
+            { name: 'Government IT projects', text: "IT systems for state governments and public bodies, such as Maharashtra's registration offices (₹1,136cr) and science labs for Bihar's schools (₹822cr), plus safe-city cameras and hospital systems; much of the work is subcontracted." },
+        ],
+        revenueText: "**Projects were 65% of FY26 revenue (₹2,777cr)** and telecom, including data centres, 35% (₹1,501cr). Telecom earned a 26.7% segment result and projects 3.9%. In Q1 FY27 projects brought ₹532cr and telecom ₹361cr. **Indian Railways was about 16% of FY26 revenue**; in March the order book was 43% state governments, 25% Railways, 17% central government departments and 11% public-sector companies.",
+        mixes: [
+            { caption: 'Revenue by segment, FY26 (annual report)', parts: [{ label: 'Projects', share: 65 }, { label: 'Telecom and data centres', share: 35 }] },
+            { caption: 'Order book by customer, March 2026 (investor presentation)', parts: [{ label: 'State governments', share: 43 }, { label: 'Indian Railways', share: 25 }, { label: 'Central government departments', share: 17 }, { label: 'Public-sector companies', share: 11 }, { label: 'Banks, private firms and telecoms', share: 4 }] },
+        ],
+        customers: ["**Indian Railways**: bandwidth, the RailNet intranet, station Wi-Fi, hosted applications and signalling and safety projects (₹693cr of FY26 revenue).", "**State and central government bodies and public-sector companies**: IT, education, health and surveillance projects, and hosting; ICRA notes that being a government company helps it win such work.", "**Telecom companies, enterprises and 6.2 lakh broadband homes**; new bandwidth customers include the Air Force and Starlink."],
+        difficulty: { level: 'High', text: "Its fibre route along railway tracks cannot be copied, and railway signalling needs approvals and a track record. The project work, though, is won in open tenders on price, and much of it is subcontracted." },
+        moat: "The exclusive railway right of way and its standing as the Railways' own company bring steady telecom income and a stream of project work. The weakness is price: telecom prices keep falling, and projects earn only 4–5%.",
+        salesDrivers: ["**Government digital spending**: state IT, education, health and safe-city projects drove ₹7,363cr of new orders in FY26, and management expects ₹3,000–3,500cr of project revenue in FY27.", "**Railway safety and modernisation**: Kavach on more than 2,000 route km, plus surveillance and signalling; management expects Kavach revenue to start in FY27 but no new Kavach tenders this year.", "**Data centres**: ₹202cr of revenue in FY26, about ₹300cr targeted for FY27 and about ₹500cr by FY28, from a 10 MW Noida site (first 5 MW by May 2027) and space leased from Adani and Anant Raj.", "**Telecom prices and renewals**: bandwidth and broadband prices keep falling, and long-distance revenue fell 11% in Q1 because government renewals were late.", "**Year-end timing**: Q4 brought 39% of FY26 revenue."],
+        inputs: "**Subcontracted project work and equipment are the main cost**: contractors, cameras, servers and network gear for projects, plus network upkeep, licence fees (₹91.6cr to the telecom department in FY26) and a revenue share to the Railways (₹46.0cr). These costs were 79% of sales in FY26; staff, only 928 people, were 6%.",
+        costEffect: "**Mostly passed on.** Project prices are fixed when bid, but ICRA notes that much of the work is placed back to back with subcontractors, so cost changes largely sit with them. **Rule of thumb:** a 10% rise in these costs not passed on would cut the margin by about 8 points (15% to 7%). **What happened:** there is no price index for this; the filed margin fell from 24% in FY22 to 15% in FY26 because low-margin projects took a rising share of revenue (61% in FY25, 65% in FY26), not because input costs rose.",
+        competitors: [{ name: 'Airtel, Jio, Tata Communications, PowerGrid', note: 'Long-distance fibre and bandwidth; the telecom companies have far larger networks and set prices.' }, { name: 'Local broadband firms and wireless home broadband', note: 'Compete with RailWire, keeping revenue per user under pressure.' }, { name: 'Government system integrators and signalling firms', note: 'Bid for the same state IT and railway projects, including Xtranet in government data centres.' }],
+        position: "**The only national fibre network laid along India's railways**, one of the few profit-making telecom companies in government hands, and by its own count the 13th-largest broadband provider (4th in rural subscribers).",
+        money: "Screener shows **₹590cr of net cash**: cash and bank balances of ₹654cr against ₹64cr of borrowings, which are leases. Part of the bank balance is margin money for ₹1,482cr of guarantees given to customers. ICRA rates it AA (Stable). FY27 capex is ‘300 crores and above’ (May call) or about ₹241cr (annual report), mostly data centres, paid from its own cash. Dividend ₹3.25 a share for FY26. The government holds **72.84%**, unchanged for three years.",
+        watch: ["Data-centre revenue near ₹300cr in FY27 and Noida's first 5 MW on time.", "Kavach revenue starting, and new Kavach tenders.", "Receivables and credit-loss charges growing slower than revenue."],
+        charts: softwareCharts['Railtel Corporation of India'],
     },
     {
         company: 'Fractal Analytics',

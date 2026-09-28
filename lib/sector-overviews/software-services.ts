@@ -9,7 +9,7 @@ const FY = ['FY22', 'FY23', 'FY24', 'FY25', 'FY26'];
 // Segment labels. The metric grid, the moat table and the company cards are grouped by these.
 const SERV = 'Mid-size IT services exporters';
 const DATA = 'Data and AI analytics specialists';
-const DOM = 'Indian government system integrator';
+const DOM = 'Indian government system integrators';
 
 export const softwareServices: SectorOverview = {
     sector: 'Software',
@@ -35,10 +35,11 @@ export const softwareServices: SectorOverview = {
             'Saksoft': 7,
             'Expleo Solutions': 4,
             'Xtranet Technologies': 15,
+            'Railtel Corporation of India': 13,
         },
     },
     standfirst:
-        "Twelve companies that sell the time and skill of software engineers and data scientists, mostly to clients in the US, the UK and Europe. This is one of five groups on the Software page; the others cover engineering-design services, business-process and healthcare operations, software products and platforms, and messaging, advertising and AI-infrastructure firms. Nine are mid-size IT services exporters: **Zensar**, **Sonata Software**, **Birlasoft**, **Mastek**, **Happiest Minds**, **R Systems**, **Saksoft**, **InfoBeans** and **Expleo**. Two, **Fractal Analytics** and **Latent View**, specialise in data and AI work. The odd one out is **Xtranet**, a Bhopal system integrator that builds data centres for Indian government bodies and listed in July 2026. **Happiest Minds** agreed on 31 August to merge into ITC Infotech, so its call is really a view on the swap terms. This edition was built from both earnings calls for every company, the FY26 annual reports, rating reports from ICRA, CRISIL and CARE, and sector work from NASSCOM, Gartner, ISG and brokers. The headline: dollar revenue has barely grown for most of these companies for two years, and much of the double-digit growth in rupees comes from a rupee that fell about 11% in a year. AI is letting clients do the same work with fewer people and ask for the savings back, and the US wants to tax H-1B visas and outsourcing. The annual reports and calls turned up an auditor's warning over a ₹220cr claim at Latent View, loans from Expleo's subsidiaries to its French parent, three-year-old unpaid bills and missed filings at Xtranet, receivables counted as cash at InfoBeans, and attrition quoted on calls well below the figure in the annual report at R Systems and Expleo. Every chart uses filed results.",
+        "Thirteen companies that sell the time and skill of software engineers and data scientists, mostly to clients in the US, the UK and Europe. This is one of five groups on the Software page; the others cover engineering-design services, business-process and healthcare operations, software products and platforms, and messaging, advertising and AI-infrastructure firms. Nine are mid-size IT services exporters: **Zensar**, **Sonata Software**, **Birlasoft**, **Mastek**, **Happiest Minds**, **R Systems**, **Saksoft**, **InfoBeans** and **Expleo**. Two, **Fractal Analytics** and **Latent View**, specialise in data and AI work. Two sell in India instead, mostly to government: **RailTel**, the Railways' own telecom and IT company, which leases bandwidth on fibre laid along railway tracks, runs data centres and builds IT and signalling projects for railways and state governments; and **Xtranet**, a Bhopal system integrator that builds data centres for Indian government bodies and listed in July 2026. **Happiest Minds** agreed on 31 August to merge into ITC Infotech, so its call is really a view on the swap terms. This edition was built from both earnings calls for every company, the FY26 annual reports, rating reports from ICRA, CRISIL and CARE, and sector work from NASSCOM, Gartner, ISG and brokers. The headline: dollar revenue has barely grown for most of these companies for two years, and much of the double-digit growth in rupees comes from a rupee that fell about 11% in a year. AI is letting clients do the same work with fewer people and ask for the savings back, and the US wants to tax H-1B visas and outsourcing. The annual reports and calls turned up an auditor's warning over a ₹220cr claim at Latent View, loans from Expleo's subsidiaries to its French parent, three-year-old unpaid bills and missed filings at Xtranet, a board with a single independent director and ₹238cr of three-year-old receivables at RailTel, receivables counted as cash at InfoBeans, and attrition quoted on calls well below the figure in the annual report at R Systems and Expleo. Every chart uses filed results.",
     lastUpdated: '2026-09-27',
     asOfQuarter: 'Q1 FY27',
 
@@ -50,7 +51,7 @@ export const softwareServices: SectorOverview = {
             periods: Q,
             scale: 'sequential',
             source: 'Filed quarterly results (Screener). Operating profit ÷ revenue. Consolidated unless noted as standalone.',
-            note: "These are Screener’s operating margins, which count every cost the company files. The companies’ own ‘adjusted’ margins leave out share-based pay, one-off bonuses and hedging losses and run 1–4 points higher: Fractal 16.8% in Q1 FY27, R Systems 20.1%, InfoBeans 22.6% (it adds other income) and Happiest Minds 17.5%. The weaker rupee lifted every exporter here in FY26 and Q1 FY27; without it, most margins would be flat or lower. Sonata looks low because three-quarters of its revenue is resold Microsoft licences in India.",
+            note: "These are Screener’s operating margins, which count every cost the company files. The companies’ own ‘adjusted’ margins leave out share-based pay, one-off bonuses and hedging losses and run 1–4 points higher: Fractal 16.8% in Q1 FY27, R Systems 20.1%, InfoBeans 22.6% (it adds other income) and Happiest Minds 17.5%. The weaker rupee lifted every exporter here in FY26 and Q1 FY27; without it, most margins would be flat or lower. Sonata looks low because three-quarters of its revenue is resold Microsoft licences in India, and RailTel because two-thirds of its revenue is government project work at 4–5%.",
             values: {
                 'Fractal Analytics': [11, 9, 13, 20, 13],
                 'Zensar Technologies': [15, 15, 17, 16, 15],
@@ -64,8 +65,10 @@ export const softwareServices: SectorOverview = {
                 'Xtranet Technologies': [12, null, null, 22, 21],
                 'InfoBeans Technologies': [21, 25, 22, 20, 20],
                 'Expleo Solutions': [12, 17, 16, 15, 14],
+                'Railtel Corporation of India': [16, 16, 15, 14, 15],
             },
             cellNotes: {
+                "Railtel Corporation of India": "Standalone. Two businesses in one: telecom and data centres earned a 26.7% segment result in FY26 and projects 3.9% (annual report). Projects grew to 65% of revenue, which is why the blended margin fell from 24% in FY22.",
                 "Fractal Analytics": "Company adjusted EBITDA: 15.0% (Q1 FY26), 22.1% (Q4 FY26), 16.8% (Q1 FY27). Q4 included about 1.5 points of a UK grant and pay true-ups; the rupee added 2.7 points to Q1 gross margin.",
                 "Zensar Technologies": "Q1 FY27 includes a one-off 1.3-point reversal of management bonuses; the underlying margin was nearer 13.3%.",
                 "Birlasoft": "Q4 FY26 includes about 3.4 points of one-offs (forex gains and a bonus and leave reversal); Q1 FY27’s 16.1% (company) was clean.",
@@ -85,7 +88,7 @@ export const softwareServices: SectorOverview = {
             periods: Q,
             scale: 'diverging',
             source: 'Filed quarterly revenue, each quarter against the same quarter a year earlier. Consolidated unless noted as standalone.',
-            note: "Rupee growth flatters every exporter here. The rupee averaged ₹94.71 to the dollar in Q1 FY27 against ₹85.57 a year earlier, about 11% weaker, so a company with flat dollar revenue shows about 11% growth in rupees. In constant currency (stripping out exchange rates) most of this group grew 0–10%. Acquisitions add more: R Systems bought Novigo in November 2025 and Saksoft bought three firms in FY25.",
+            note: "Rupee growth flatters every exporter here. The rupee averaged ₹94.71 to the dollar in Q1 FY27 against ₹85.57 a year earlier, about 11% weaker, so a company with flat dollar revenue shows about 11% growth in rupees. In constant currency (stripping out exchange rates) most of this group grew 0–10%. Acquisitions add more: R Systems bought Novigo in November 2025 and Saksoft bought three firms in FY25. RailTel and Xtranet sell in India, so their growth owes nothing to the rupee.",
             values: {
                 'Fractal Analytics': [null, null, 21, 17, 20],
                 'Zensar Technologies': [8, 9, 8, 7, 9],
@@ -99,8 +102,10 @@ export const softwareServices: SectorOverview = {
                 'Xtranet Technologies': [null, null, null, null, 11],
                 'InfoBeans Technologies': [15, 28, 40, 38, 37],
                 'Expleo Solutions': [3, 9, 8, 12, 12],
+                'Railtel Corporation of India': [33, 13, 19, 28, 20],
             },
             cellNotes: {
+                "Railtel Corporation of India": "Standalone. Government projects are billed near March, so Q4 carried 39% of FY26 revenue; Q1 FY27 growth of 20% matches the company’s 20–25% aim.",
                 "Fractal Analytics": "Listed in FY26, so earlier comparisons are not published. Q1 FY27 was +20% in rupees but +9% in constant currency, and fell 0.4% from Q4.",
                 "Zensar Technologies": "Q1 FY27 dollar revenue fell 2.0% in constant currency from a year earlier.",
                 "Birlasoft": "Q1 FY27 was +7% in rupees but −3.6% in dollars; FY26 fell 6.5% in constant currency.",
@@ -137,8 +142,10 @@ export const softwareServices: SectorOverview = {
                 'Xtranet Technologies': [null, null, 31, 43, 33],
                 'InfoBeans Technologies': [27, 19, 12, 17, 29],
                 'Expleo Solutions': [36, 39, 20, 21, 24],
+                'Railtel Corporation of India': [16, 16, 20, 22, 23],
             },
             cellNotes: {
+                "Railtel Corporation of India": "Standalone; Screener’s consolidated page for RailTel stops in 2023. The rise since FY23 comes from revenue growing faster than the capital it needs, as subcontractors carry much of the project work.",
                 "Fractal Analytics": "Losses in FY22–FY23 while it invested ahead of its IPO; FY26 includes ₹957cr of IPO cash.",
                 "Sonata Software": "The licence-resale business needs almost no capital; the International business alone earns about 14.9% (company), held down by Quant goodwill.",
                 "Latent View Analytic": "Diluted by over ₹900cr of IPO cash in treasury investments.",
@@ -157,7 +164,7 @@ export const softwareServices: SectorOverview = {
             scale: 'diverging',
             lowerIsBetter: true,
             source: 'Filed annual ratios (Screener): debtor days + inventory days − payable days. Consolidated unless noted as standalone.',
-            note: "Most of these companies wait 55–80 days to be paid, which is normal for exporters with large US clients. The exceptions tell a story: Sonata is negative because its Indian resale arm collects from customers before paying Microsoft, and Xtranet’s jumped as it stocked hardware and waited on government bills.",
+            note: "Most of these companies wait 55–80 days to be paid, which is normal for exporters with large US clients. The exceptions tell a story: Sonata is negative because its Indian resale arm collects from customers before paying Microsoft, Xtranet’s jumped as it stocked hardware and waited on government bills, and RailTel waits 160–195 days because its customers are government bodies.",
             values: {
                 'Fractal Analytics': [112, 92, 89, 77, 79],
                 'Zensar Technologies': [69, 55, 55, 55, 59],
@@ -171,8 +178,10 @@ export const softwareServices: SectorOverview = {
                 'Xtranet Technologies': [null, -24, 22, 10, 96],
                 'InfoBeans Technologies': [91, 61, 75, 80, 77],
                 'Expleo Solutions': [85, 97, 94, 79, 76],
+                'Railtel Corporation of India': [160, 195, 180, 166, 175],
             },
             cellNotes: {
+                "Railtel Corporation of India": "Debtor days only (no stock). Gross receivables were ₹2,196cr at March 2026, up 29%, and ₹238cr of them are over three years old (annual report).",
                 "Sonata Software": "The resale business collects from Indian customers before paying Microsoft and others.",
                 "Birlasoft": "FY26 rose as unbilled work grew 65% (management blamed paperwork delays at two clients); the company says DSO fell back to 55 days in Q1 FY27.",
                 "Latent View Analytic": "Decision Point’s consumer-goods clients pay in 90–120 days.",
@@ -190,7 +199,7 @@ export const softwareServices: SectorOverview = {
             scale: 'diverging',
             legend: ['Cash lagging profit', 'Cash following profit'],
             source: 'Filed cash-flow statements and P&L (Screener). The last column uses all five years. Consolidated unless noted as standalone.',
-            note: "For people businesses, operating cash of 65–90% of operating profit is typical, because tax comes out of cash but not out of operating profit. Saksoft, InfoBeans and Zensar turn profit into cash best; Xtranet, which funds hardware and government receivables, is the weakest.",
+            note: "For people businesses, operating cash of 65–90% of operating profit is typical, because tax comes out of cash but not out of operating profit. Saksoft, InfoBeans and Zensar turn profit into cash best; Xtranet, which funds hardware and government receivables, is the weakest, and RailTel has slipped to about half as government customers pay later.",
             values: {
                 'Fractal Analytics': [null, null, 281, 124, 93, 133],
                 'Zensar Technologies': [51, 129, 74, 69, 84, 79],
@@ -204,8 +213,10 @@ export const softwareServices: SectorOverview = {
                 'Xtranet Technologies': [null, 0, -5, 19, 44, 25],
                 'InfoBeans Technologies': [123, 108, 86, 74, 75, 91],
                 'Expleo Solutions': [19, 12, 48, 108, 70, 51],
+                'Railtel Corporation of India': [70, 75, 120, 48, 50, 70],
             },
             cellNotes: {
+                "Railtel Corporation of India": "Standalone. FY25–FY26 fell as bills to state governments and Indian Railways were paid more slowly; dues from Railways rose from ₹420cr to ₹615cr in FY26.",
                 "Fractal Analytics": "FY24’s 281% sits on a tiny operating profit (₹57cr); the company calls about 70% of adjusted EBITDA its steady state.",
                 "Birlasoft": "FY26 fell on a jump in unbilled work; Q1 FY27 operating cash was 108% of EBITDA (company).",
                 "Mastek": "FY26 operating cash of ₹542cr was about 1.3 times net profit.",
@@ -221,7 +232,7 @@ export const softwareServices: SectorOverview = {
             scale: 'diverging',
             legend: ['Burning cash', 'Generating cash'],
             source: 'Filed cash-flow statements (Screener): operating cash minus spending on fixed assets, as a share of revenue. Consolidated unless noted as standalone.',
-            note: "Every company here except Xtranet produces free cash every year, typically 9–16% of revenue, which is why they can pay dividends and buy small companies without borrowing. Xtranet has burnt cash every year as it funded hardware stock and slow government payers.",
+            note: "Every exporter here produces free cash every year, typically 9–16% of revenue, which is why they can pay dividends and buy small companies without borrowing. The two government suppliers are weaker: Xtranet has burnt cash every year as it funded hardware stock and slow government payers, and RailTel, which also spends on its own network, turned negative in FY25 and barely positive in FY26.",
             values: {
                 'Fractal Analytics': [-13.0, -3.3, 6.2, 11.4, 5.8, 3.5],
                 'Zensar Technologies': [6.6, 14.0, 12.8, 10.0, 12.6, 11.3],
@@ -235,8 +246,10 @@ export const softwareServices: SectorOverview = {
                 'Xtranet Technologies': [null, -0.4, -3.4, -6.2, -6.0, -4.4],
                 'InfoBeans Technologies': [27.7, 18.7, 11.4, 11.4, 13.8, 15.8],
                 'Expleo Solutions': [-0.1, -2.3, 5.6, 16.7, 10.5, 6.7],
+                'Railtel Corporation of India': [9.3, 5.5, 13.5, -2.0, 1.0, 4.1],
             },
             cellNotes: {
+                "Railtel Corporation of India": "Standalone. It owns its fibre network and data centres, so capex takes 6–9% of revenue; FY25 turned negative as receivables grew.",
                 "Fractal Analytics": "FY22–FY23 were loss-making years before its IPO.",
                 "Happiest Minds": "FY23 probably reflects its office campus in Bengaluru, which it owns and funded with a 10-year loan maturing in 2032.",
                 "Xtranet Technologies": "Negative every year FY23–FY26; ₹102cr of the July 2026 IPO money is earmarked for working capital.",
@@ -266,8 +279,10 @@ export const softwareServices: SectorOverview = {
                 'Xtranet Technologies': [null, 1.3, 1.9, 0.8, 1.3],
                 'InfoBeans Technologies': [-1.0, -1.1, -1.9, -2.1, -1.8],
                 'Expleo Solutions': [-1.3, -0.7, -1.2, -1.2, -2.2],
+                'Railtel Corporation of India': [-0.8, -0.7, -1.1, -1.0, -0.9],
             },
             cellNotes: {
+                "Railtel Corporation of India": "Net cash ₹590cr at March 2026; part of its bank balances is margin money held against ₹1,482cr of bank guarantees given to customers.",
                 "Fractal Analytics": "FY26 includes ₹957cr of IPO cash; it repaid ₹286cr of long-term debt in April 2026 and is now debt-free apart from leases.",
                 "Sonata Software": "Includes acquisition debt for Quant (US, 2023); the company put net cash at about ₹65cr in June 2026.",
                 "Mastek": "Borrowings of ₹438cr (March 2026) are acquisition loans; net cash was about ₹500cr at June.",
@@ -286,7 +301,7 @@ export const softwareServices: SectorOverview = {
             periods: [...FY, '5 yrs'],
             scale: 'sequential',
             source: 'Filed cash-flow statements (Screener): spending on fixed assets as a share of revenue. Consolidated unless noted as standalone.',
-            note: "IT services need little equipment: most spend under 2% of revenue on offices and computers. Higher figures here are one-offs: offices, capitalised software development, or (at Xtranet) data-centre capacity.",
+            note: "IT services need little equipment: most spend under 2% of revenue on offices and computers. Higher figures here are one-offs (offices, capitalised software development, or data-centre capacity at Xtranet), except at RailTel, which owns a national fibre network and data centres and spends 6–9% of revenue every year.",
             values: {
                 'Fractal Analytics': [3.9, 1.7, 1.1, 3.0, 6.6, 3.6],
                 'Zensar Technologies': [1.3, 0.8, 0.3, 0.7, 0.9, 0.8],
@@ -300,8 +315,10 @@ export const softwareServices: SectorOverview = {
                 'Xtranet Technologies': [null, 0.4, 3.0, 9.4, 13.7, 7.7],
                 'InfoBeans Technologies': [2.2, 1.3, 0.5, 1.3, 2.7, 1.7],
                 'Expleo Solutions': [3.4, 4.9, 1.8, 0.8, 0.3, 2.0],
+                'Railtel Corporation of India': [7.7, 9.0, 8.2, 9.3, 6.4, 8.0],
             },
             cellNotes: {
+                "Railtel Corporation of India": "Fibre network, station Wi-Fi and data centres. FY27 plan: ‘300 crores and above’ (May call) or about ₹241cr (annual report), mostly the Noida data centre.",
                 "Fractal Analytics": "FY26 includes capitalised R&D (₹78cr of its ₹212cr R&D spend).",
                 "Happiest Minds": "FY23 is probably its office campus in Bengaluru’s Electronic City, funded with a 10-year loan maturing in 2032.",
                 "Xtranet Technologies": "Data-centre capacity for its digital-signature business; fixed assets rose from ₹24cr to ₹60cr in FY26.",
@@ -343,6 +360,8 @@ export const softwareServices: SectorOverview = {
                 grades: { clients: { grade: 'C', note: '$1M+ clients 17 → 11' }, niche: { grade: 'B', note: 'Payments-testing simulators' }, ai: { grade: 'D', note: 'Clients keep all AI savings' }, balance: { grade: 'A', note: 'Net cash ₹352.8cr' }, cash: { grade: 'D', note: '35% of revenue and loans to parent' } } },
             { company: 'Xtranet Technologies', trend: 'stable', trendNote: 'Margin 6% → 17% as services rose to ~60% of revenue; Q1 +10.5% against a 35–40% target.',
                 grades: { clients: { grade: 'C', note: 'Government ~47%; one order 42% of book' }, niche: { grade: 'B', note: 'One of ~11 licensed signature authorities' }, ai: { grade: '-', note: 'Hardware and integration, not AI' }, balance: { grade: 'C', note: 'CRISIL BBB-; IPO repays lines' }, cash: { grade: 'D', note: 'Auditor emphasis; ₹33.6cr >3 years' } } },
+            { company: 'Railtel Corporation of India', trend: 'stable', trendNote: 'Order book up from ₹8,563cr to ₹11,747cr in two quarters, but projects at 4–5% margins are now 65% of revenue and Q1 profit was flat.',
+                grades: { clients: { grade: 'B', note: 'Railways and PSUs; book 2.7× revenue' }, niche: { grade: 'A', note: 'Exclusive railway right of way, 63,000 km' }, ai: { grade: 'C', note: 'Railway AI models at pilot stage' }, balance: { grade: 'A', note: 'Debt-free; ₹590cr net cash; ICRA AA' }, cash: { grade: 'C', note: 'Receivables +29%; one independent director' } } },
         ],
     },
 
@@ -350,19 +369,20 @@ export const softwareServices: SectorOverview = {
         {
             heading: '1. Recommendation, up front',
             body: [
-                "**Own Zensar and InfoBeans. Follow Mastek, Birlasoft, R Systems and Fractal Analytics.** **Zensar** is the one I would own for its cash. It holds about $317.5M (roughly ₹2,900–3,000cr) of cash and investments, about 30% of its market value; ICRA rates it AA+; voluntary attrition has stayed below 10% for six quarters; and the FY26 dividend of ₹15 a share yields about 3.5%. Organic dollar growth has been only 1–3% a year for three years, and Q1 FY27 revenue was 2.0% lower than a year earlier in constant currency. But a $210M, 5.5-year AI-automation deal with a large financial-services client, signed in February, reaches full speed from Q3 and is worth about 6% of revenue a year. The price needs about {need:Zensar Technologies|8}% a year of earnings growth, which is what I expect. The risk is management's hunt for an acquisition with $150–200M of revenue, which would use most of the cash. **I would own it as a cash-rich income holding, not a growth story, and rethink if it overpays for a big deal.**",
+                "**Own Zensar and InfoBeans. Follow Mastek, Birlasoft, R Systems, RailTel and Fractal Analytics.** **Zensar** is the one I would own for its cash. It holds about $317.5M (roughly ₹2,900–3,000cr) of cash and investments, about 30% of its market value; ICRA rates it AA+; voluntary attrition has stayed below 10% for six quarters; and the FY26 dividend of ₹15 a share yields about 3.5%. Organic dollar growth has been only 1–3% a year for three years, and Q1 FY27 revenue was 2.0% lower than a year earlier in constant currency. But a $210M, 5.5-year AI-automation deal with a large financial-services client, signed in February, reaches full speed from Q3 and is worth about 6% of revenue a year. The price needs about {need:Zensar Technologies|8}% a year of earnings growth, which is what I expect. The risk is management's hunt for an acquisition with $150–200M of revenue, which would use most of the cash. **I would own it as a cash-rich income holding, not a growth story, and rethink if it overpays for a big deal.**",
                 "**InfoBeans** is the only company here growing fast in dollars without buying the growth. Revenue rose 37% in Q1 FY27 (about 20% in dollars), return on capital recovered from 12% in FY24 to 29%, it has no debt, and 94% of clients come back each year. The price needs about {need:InfoBeans Technologies|11}% a year against my ~15%, the widest margin of safety among the growers. Two things keep the position small. The promoters have a window to sell or pledge up to 3% of the company until October and have already sold some. And its slides count ₹108–119cr of receivables inside ‘cash’, which overstates liquidity by nearly half. Margins are also being stepped down to fund AI and US sales, and management asks for 9–12 months of patience. **Own a small position; add if dollar growth holds near 20% and the margin heads back towards the company's 24% target.**",
                 "**Mastek** has the best niche in the group, three decades of UK government work that earns about 20%, and the price needs only about {need:Mastek|7}% a year against my ~9%. But dollar revenue fell 2.4% in Q1, the 16% margin it promised in April slipped to 15.4% within one quarter, North America earns about 6% on ₹1,333cr of goodwill, and the Middle East is hurt by the West Asia war. I want to see its $25M US federal deal ramp up in H2 before owning it. **Birlasoft** has stopped shrinking, with its first positive constant-currency quarter after six, and its margin is 16.1% without one-offs against 12.4% a year ago; cash of ₹2,879cr is about 38% of its market value. But dollar revenue is still 3.6% below last year, net-new deal wins fell about 25%, the top five clients now give 43% of revenue, and senior managers keep leaving. The price needs about {need:Birlasoft|8}% against my ~8%. **R Systems** grew 18% in dollars and 30% in rupees, but organic revenue was flat in January–March, bookings stalled at $82.9M, and its own bridge credits about two-thirds of the margin gain to the rupee; the price needs about {need:R Systems International|9}% against my ~8%. **Fractal Analytics** is the best business here, with 117% net revenue retention and no client lost in Q1, but constant-currency growth slowed to 9%, its CFO left five months after the IPO, and the price needs about {need:Fractal Analytics|21}% a year against my ~18%.",
+                "**RailTel** is different from everything else here: the Railways' own telecom company, selling bandwidth on 63,000 km of fibre laid along railway tracks, running data centres, and building IT, surveillance and signalling projects for railways and state governments. Revenue grew 23% in FY26 to ₹4,277cr and 20% in Q1 FY27, the order book reached ₹11,747cr (2.7 times a year's revenue), it has no debt and ₹590cr of net cash, and ICRA rates it AA. But it is really two companies: telecom and data centres earned a 26.7% segment result in FY26, while projects, now 65% of revenue, earned 3.9%, so every year of growth lowers the blended margin. Receivables rose 29% in FY26, ₹238cr are over three years old, and a provision for slow payers left Q1 profit flat at ₹66cr. The price needs about {need:Railtel Corporation of India|14}% a year against my ~13%, which is {label:Railtel Corporation of India|fits}, but only just. **Follow: I would buy once data centres reach the promised ₹300cr of revenue and receivables stop growing faster than sales.**",
                 "**Wait on Happiest Minds, Latent View, Sonata Software and Saksoft.** **Happiest Minds** is now a bet on its merger into ITC Infotech: holders will get 25 ITC Infotech shares for every 81 they own, which the valuers price at ₹405 a share against a market price near ₹310. The founder gets ₹390–400 in cash for half his stake, public holders get unlisted paper until a listing expected in FY28, and there is no open offer. That 23% gap is the reward for 15 months of approvals and for trusting a valuation of an unlisted company. **Latent View** missed its Q1 dollar guide, cut its margin target, changed chief executive, and its auditor flags a ₹220cr claim by the sellers of Decision Point against the ₹70cr the company expects to pay. **Sonata**'s International margin fell from 20.2% to 15.4% a quarter after management promised it would hold, and its CEO left in May. **Saksoft**'s revenue has been flat at about ₹249cr for four quarters, and management has warned it may cut its FY27 target after Q2.",
                 "**Pass on Expleo Solutions and Xtranet.** **Expleo** looks cheapest of all, needing only about {need:Expleo Solutions|5}% a year, and in July it recommended a ₹110-a-share dividend, about 45% of its cash. But constant-currency revenue fell 0.4% in FY26, management says clients keep all the savings AI brings, 35% of revenue comes from its French parent's group, its subsidiaries have lent ₹97.5cr to the parent, and a new ₹24.1cr management fee now flows to the parent. **Xtranet**, listed in July, builds data centres for Indian government bodies and promises 35–40% growth a year after a 10.5% Q1. Its auditor flags ₹2.69cr of unbooked interest owed to small suppliers, ₹33.6cr of receivables are more than three years overdue with almost no provision, and for eight years it did not file consolidated accounts with the registrar.",
-                "**Three things to hold onto before reading the rest.** First, **read dollar or constant-currency growth, not rupee growth**: the rupee fell about 11% against the dollar in a year, so Birlasoft's +7% in rupees was −3.6% in dollars, and Expleo's +8.1% in FY26 was −0.4% in constant currency. Second, **AI is deflating this work**: Kotak Institutional Equities estimates AI productivity will cut Indian IT services revenue by 3–3.5% a year through FY28, and Mastek, Saksoft and Expleo all describe renewals at lower prices. Third, **the cash piles are the margin of safety**: Zensar, Birlasoft, Expleo and Latent View hold cash worth 18–38% of their market value, which is why prices are low but balance sheets are strong. What these companies lack is growth, not money.",
+                "**Three things to hold onto before reading the rest.** First, **read dollar or constant-currency growth, not rupee growth**: the rupee fell about 11% against the dollar in a year, so Birlasoft's +7% in rupees was −3.6% in dollars, and Expleo's +8.1% in FY26 was −0.4% in constant currency. Second, **AI is deflating this work**: Kotak Institutional Equities estimates AI productivity will cut Indian IT services revenue by 3–3.5% a year through FY28, and Mastek, Saksoft and Expleo all describe renewals at lower prices. Third, **the cash piles are the margin of safety**: Zensar, Birlasoft, Expleo and Latent View hold cash worth 18–38% of their market value, which is why prices are low but balance sheets are strong. What these companies lack is growth, not money. The two Indian government suppliers, RailTel and Xtranet, are the reverse: plenty of growth, but slow-paying customers.",
             ],
         },
         {
             heading: '2. Charts: margins, growth, returns and cash conversion',
             body: [
-                "The six views that matter most, with two more behind **More measures**. Every figure comes from filed consolidated results on Screener. Two things matter for this group. First, the rupee: an exporter with flat dollar revenue shows about 11% growth in rupees in Q1 FY27, and a weaker rupee also lifts margins, so the growth chart flatters every company; the notes give constant-currency figures where companies disclose them. Second, **R Systems** keeps a calendar year, so its April–June quarter sits in the Q1 FY27 column and Screener's annual ratios for it are not shown. **Fractal** and **Xtranet** listed recently, so their early years are thin. Hover over a starred name for its caveat.",
-                "**Where the numbers disagree.** Companies quote ‘adjusted’ margins that leave out share-based pay and one-offs: Fractal's 16.8% against Screener's 13% in Q1, R Systems' 20.1% against 18%, and InfoBeans' 22.6%, which also includes other income. Happiest Minds quotes a return on capital of 23.9% on its own definition; Screener shows 13%. InfoBeans' slides count receivables as cash. Several transcripts stored on the dashboard were machine-made and wrong: Birlasoft's Q1 margin appears as 15.1% instead of 16.1%, R Systems' revenue as $72.6M instead of $63.6M, and the second half of InfoBeans' Q4 transcript is another company's call. Every figure in this note was checked against the official filings, and the charts use Screener's filed figures throughout.",
+                "The six views that matter most, with two more behind **More measures**. Every figure comes from filed consolidated results on Screener. Two things matter for this group. First, the rupee: an exporter with flat dollar revenue shows about 11% growth in rupees in Q1 FY27, and a weaker rupee also lifts margins, so the growth chart flatters every exporter; the notes give constant-currency figures where companies disclose them. Second, **R Systems** keeps a calendar year, so its April–June quarter sits in the Q1 FY27 column and Screener's annual ratios for it are not shown. **Fractal** and **Xtranet** listed recently, so their early years are thin. **RailTel**'s figures are standalone, because Screener's consolidated page for it stops in 2023; the company itself reports standalone results, and ICRA rates it on them. Hover over a starred name for its caveat.",
+                "**Where the numbers disagree.** Companies quote ‘adjusted’ margins that leave out share-based pay and one-offs: Fractal's 16.8% against Screener's 13% in Q1, R Systems' 20.1% against 18%, and InfoBeans' 22.6%, which also includes other income. Happiest Minds quotes a return on capital of 23.9% on its own definition; Screener shows 13%. InfoBeans' slides count receivables as cash. Several transcripts stored on the dashboard were machine-made and wrong: Birlasoft's Q1 margin appears as 15.1% instead of 16.1%, R Systems' revenue as $72.6M instead of $63.6M, and the second half of InfoBeans' Q4 transcript is another company's call. For RailTel, the stored profile put its telecom margin at 20–21%, where the annual report shows a 26.7% segment result, and described a 10 MW data-centre target as an upgrade from 5 MW, when the March presentation already showed a 10 MW site with a 5 MW first phase. Every figure in this note was checked against the official filings, and the charts use Screener's filed figures throughout.",
             ],
             embed: 'metrics',
         },
@@ -388,6 +408,10 @@ export const softwareServices: SectorOverview = {
                     label: 'US visa rules and captive centres',
                     text: "Two US threats hang over the group. The $100,000 fee on new H-1B work visas, imposed in September 2025, was struck down by a Boston federal judge as a tax Congress never approved, and the appeals court refused to pause that ruling on 24 July 2026; the Department of Homeland Security then proposed a $103,265 fee per petition by rulemaking in late August, which will also be challenged in court. The HIRE Act, a proposed 25% tax on payments for outsourced services, is stuck in the Senate Finance Committee; it is a tail risk, not a base case. Companies with more staff at client sites are more exposed: **Zensar** bills 46.5% of revenue onsite and **Saksoft** 43%, against 14.6% at **Happiest Minds**. The slower threat is captive centres, the Indian offices that foreign companies run themselves: 2,117 of them earned $98.4bn in FY26 (Zinnov–NASSCOM), and many now do work that used to be outsourced. For small firms they are also customers: **R Systems** has helped 8–9 mid-size US firms set up Indian centres. **My view: the visa fee is a legal fight the industry is winning; captive centres are the bigger long-run threat.**",
                 },
+                {
+                    label: 'India: railway and government digital spending',
+                    text: "Two companies here sell to the Indian state rather than to foreign clients. **RailTel**'s order book reached ₹11,747cr in July 2026; in March it was split between state governments (43%), Indian Railways (25%), central government departments (17%) and public-sector companies (11%). It won ₹7,363cr of new orders in FY26, led by a ₹1,136cr modernisation of Maharashtra's registration offices and ₹822cr of science labs for Bihar's schools. The Railways' safety programme is the higher-margin part: RailTel holds about ₹1,000cr of Kavach train-protection orders covering more than 2,000 route km, but management expects no new Kavach tenders this year while awarded work is carried out. ICRA notes that the Railways now open more tenders to private bidders, yet says RailTel's order procurement 'remains healthy'. **Xtranet** chases similar state data-centre and IT tenders, with a ₹1,200cr bid pipeline. **My view: government digital spending is growing far faster than export IT, but it is won on low bids, paid slowly and open to cancellation; RailTel had state orders of ₹17cr and ₹20cr cancelled in April and September 2026.**",
+                },
             ],
             tables: [
                 {
@@ -398,9 +422,10 @@ export const softwareServices: SectorOverview = {
                         ['Niche mid-size exporters', 'Mastek, InfoBeans, Saksoft, Zensar, R Systems, Happiest Minds', '14–25%', '13–29%', '**63–91%**', 'A clear vertical or partner niche (UK government, banks, Salesforce, product engineering) holds margins in the mid-to-high teens'],
                         ['Generalists under price pressure', 'Birlasoft, Expleo', '11–18%', '21–24%', '**51–74%**', 'ERP, testing and maintenance work, where clients keep the AI savings'],
                         ['Licence resale', 'Sonata (India arm)', '5–8% consolidated; about 3% gross contribution on resale', '31%', '**68%**', 'Needs almost no capital, so returns are high, but Microsoft can bill large customers directly'],
-                        ['Government system integration', 'Xtranet', '12–22%', '33%', '**25%**', 'Services earn 20–22%, hardware resale 6–8%; government customers pay slowly'],
+                        ['Government system integration', 'Xtranet; RailTel’s project arm', '12–22% (Xtranet); about 4% segment result (RailTel projects, FY26)', '23–33%', '**25–70%**', 'Services earn 20–22%, hardware resale and subcontracted projects 4–8%; government customers pay slowly'],
+                        ['Railway telecom and data centres', 'RailTel’s telecom arm', '26.7% segment result (FY26); about 35–40% before depreciation (management)', 'Not split out', 'Not split out', 'An exclusive fibre route along railway tracks and government hosting work, but bandwidth and broadband prices keep falling'],
                     ],
-                    note: 'Consolidated figures from Screener. Company-adjusted margins run 1–4 points higher. R Systems keeps a calendar year; its return on capital was 19% in CY25 (Screener). Fractal’s five-year cash figure is lifted by one year on a tiny profit base.',
+                    note: 'Consolidated figures from Screener (RailTel standalone; its segment results are from the FY26 annual report). Company-adjusted margins run 1–4 points higher. R Systems keeps a calendar year; its return on capital was 19% in CY25 (Screener). Fractal’s five-year cash figure is lifted by one year on a tiny profit base.',
                 },
                 {
                     caption: 'The market: size, growth and policy (named forecasters)',
@@ -417,6 +442,7 @@ export const softwareServices: SectorOverview = {
                         ['H-1B visa fee', '$100,000 fee struck down; appeals court refused a pause (24 Jul 2026)', 'New $103,265 fee proposed by rule (Aug 2026)', 'Press reports, Jul–Sep 2026'],
                         ['HIRE Act (25% tax on outsourcing payments)', 'Stuck in the Senate Finance Committee', 'Tail risk', 'congress.gov; RSM'],
                         ['Attrition', '12–15% at most companies', 'Wage inflation contained', 'Company data, Q1 FY27'],
+                        ['Railway and government IT orders (RailTel)', 'Order book ₹11,747cr (Jul 2026); FY26 new orders ₹7,363cr; state governments 43%, Railways 25% (Mar 2026)', '**No new Kavach tenders expected in FY27; Railways moving to open tenders**', 'RailTel calls and presentation, 2026; ICRA, Feb 2026'],
                     ],
                     note: 'The Kotak, JPMorgan and Motilal Oswal forecasts, the NASSCOM FY27 outlook and the Zinnov–NASSCOM figures were read in press summaries because the original pages were blocked or paywalled. Visa and HIRE Act status as of September 2026.',
                 },
@@ -440,7 +466,11 @@ export const softwareServices: SectorOverview = {
                 },
                 {
                     label: 'Partner franchises: useful, but not owned',
-                    text: "Several companies lean on a bigger partner's platform. **Sonata** has worked with Microsoft for over 30 years and is one of about 40 firms invited to be a Copilot ‘depth partner’, but Microsoft moved some large Indian customers to direct billing, and the number of resale customers above 10% of that arm's revenue fell from two to one. Sonata then won back two or three customers who had been discussing direct billing. **InfoBeans** is an elite Salesforce and ServiceNow partner, and **Saksoft** bought Salesforce and ServiceNow specialists in FY25. **Xtranet**'s XtraTrust is one of about 11 private licensed certifying authorities for digital signatures, with 8.5 lakh renewing subscribers and 10,000+ resellers; that is a real regulatory barrier, but it brought in only ₹38cr in FY26, and eMudhra is the main rival. **My view: a partner's badge brings deal flow, but the partner sets the terms; only Xtranet's licence is a barrier the company owns.**",
+                    text: "Several companies lean on a bigger partner's platform. **Sonata** has worked with Microsoft for over 30 years and is one of about 40 firms invited to be a Copilot ‘depth partner’, but Microsoft moved some large Indian customers to direct billing, and the number of resale customers above 10% of that arm's revenue fell from two to one. Sonata then won back two or three customers who had been discussing direct billing. **InfoBeans** is an elite Salesforce and ServiceNow partner, and **Saksoft** bought Salesforce and ServiceNow specialists in FY25. **Xtranet**'s XtraTrust is one of about 11 private licensed certifying authorities for digital signatures, with 8.5 lakh renewing subscribers and 10,000+ resellers; that is a real regulatory barrier, but it brought in only ₹38cr in FY26, and eMudhra is the main rival. **My view: a partner's badge brings deal flow, but the partner sets the terms; only Xtranet's licence and RailTel's railway route (next point) are barriers the companies own.**",
+                },
+                {
+                    label: 'Owned: a railway right of way',
+                    text: "**RailTel** has the one physical moat in the group. When it was set up in 2000 it took over the Railways' fibre along the tracks, and it holds the exclusive right to lay fibre there; the network is now over 63,000 route km, with points of presence at 6,117 stations. Because that route is separate from the road-side fibre of the telecom companies, private operators and data-centre builders are asking it for dark fibre, and Starlink and the Air Force are new bandwidth customers. Being the Railways' own company brings nomination-style work from Railways and other public bodies, a 'critical information infrastructure' designation and government cloud hosting (it hosts the Railways' hospital system across 716 health units). The limit is price: the chairman says 'there is continuous pressure on prices in telecom', RailWire broadband revenue per user is falling, and national bandwidth revenue fell 11% in Q1 because government renewals were late. **My view: the route protects RailTel's telecom income and wins it project work, but it does not let it raise prices; the moat is real, the pricing power is not.**",
                 },
                 {
                     label: 'Client stickiness, and its limits',
@@ -465,7 +495,7 @@ export const softwareServices: SectorOverview = {
             points: [
                 {
                     label: 'Structural: niches that hold mid-to-high-teen margins',
-                    text: "**Mastek**'s UK and Europe business earned 19.7% in FY26 and 19.8% in FY25, steady through the cycle. **Saksoft** has earned 18–20% (Screener) in each of the last five quarters, and a 24–28% return on capital for a decade, even as revenue stalled. **InfoBeans** earned 20–25% in every quarter of FY26. **Fractal** raised its gross margin by 2.2 points in FY26 by moving to output-based contracts, raising prices and working faster, before any currency effect. **Latent View**'s AI projects earn 55–58% gross margin against a 50.8% average. **My view: these are the margins to trust, because they held while dollar revenue was flat; a specialism, not size, is what protects margins in this group.**",
+                    text: "**Mastek**'s UK and Europe business earned 19.7% in FY26 and 19.8% in FY25, steady through the cycle. **Saksoft** has earned 18–20% (Screener) in each of the last five quarters, and a 24–28% return on capital for a decade, even as revenue stalled. **InfoBeans** earned 20–25% in every quarter of FY26. **Fractal** raised its gross margin by 2.2 points in FY26 by moving to output-based contracts, raising prices and working faster, before any currency effect. **Latent View**'s AI projects earn 55–58% gross margin against a 50.8% average. **RailTel** shows the opposite pattern: each of its two businesses is steady, but the mix is not. Telecom and data centres earned a 26.7% segment result in FY26 (22.2% in FY25) and projects 3.9% (4.4%), and management promises to hold projects at 4–5%; but projects rose from 61% to 65% of revenue, so the blended margin slid from 24% in FY22 to 15%. The chairman calls it ‘simple mathematics’. **My view: these are the margins to trust, because they held while dollar revenue was flat; a specialism, not size, is what protects margins in this group. RailTel's margin will keep drifting down unless data centres grow faster than projects.**",
                 },
                 {
                     label: 'Cyclical: the rupee and one-offs',
@@ -477,11 +507,11 @@ export const softwareServices: SectorOverview = {
                 },
                 {
                     label: 'Working capital: the biggest drains',
-                    text: "**Xtranet** is the outlier. Its debtor days were 114 and inventory days 128 in FY26, CRISIL put gross current assets at 328 days in March 2025, and standalone inventory nearly doubled from ₹40.8cr to ₹77.7cr as it stocked hardware ahead of price rises. Of its ₹111cr of standalone receivables, ₹33.6cr is more than three years past due, against a provision of ₹0.4cr. Among the exporters, **Happiest Minds** waits 92 days including unbilled work, **Latent View** 80 days because Decision Point's consumer-goods clients pay in 90–120 days, and **Expleo**'s debtor days rose to 108 in Q1 from 91 a year earlier.",
+                    text: "**Xtranet** is the outlier. Its debtor days were 114 and inventory days 128 in FY26, CRISIL put gross current assets at 328 days in March 2025, and standalone inventory nearly doubled from ₹40.8cr to ₹77.7cr as it stocked hardware ahead of price rises. Of its ₹111cr of standalone receivables, ₹33.6cr is more than three years past due, against a provision of ₹0.4cr. **RailTel** is the other large drain: debtor days were 175 in FY26, gross receivables ₹2,196cr, ₹238cr of them over three years old against a ₹143cr loss allowance, and ₹898cr more is unbilled work. Its auditor made the expected-credit-loss estimate a key audit matter; management calls the charge ‘non-cash’ and says ‘none of the accounts are doubtful’, yet only about a quarter of the ₹98cr owed by government bodies for more than five years has been provided for (private dues that old, ₹23cr, are fully provided). ICRA sees less risk than the headline, because many project receivables are matched by amounts owed to subcontractors and customers pay advances. Among the exporters, **Happiest Minds** waits 92 days including unbilled work, **Latent View** 80 days because Decision Point's consumer-goods clients pay in 90–120 days, and **Expleo**'s debtor days rose to 108 in Q1 from 91 a year earlier.",
                 },
                 {
                     label: 'Working capital: getting worse',
-                    text: "**Birlasoft**'s unbilled revenue rose 65% to ₹312cr in FY26 and receivables to ₹901cr from ₹791cr, and operating cash fell from ₹718cr (FY24) to ₹481cr (FY26) even as profit held; management blamed paperwork delays at two clients. **Zensar** says clients are ‘stretching’ payment terms, with billed receivables at 75 days. **Mastek** took a doubtful-debt provision on delayed Middle East collections in Q1, and $2.5M of collections slipped into July. **Expleo**'s rise from 91 to 108 days comes as its $1M+ client count fell.",
+                    text: "**Birlasoft**'s unbilled revenue rose 65% to ₹312cr in FY26 and receivables to ₹901cr from ₹791cr, and operating cash fell from ₹718cr (FY24) to ₹481cr (FY26) even as profit held; management blamed paperwork delays at two clients. **Zensar** says clients are ‘stretching’ payment terms, with billed receivables at 75 days. **Mastek** took a doubtful-debt provision on delayed Middle East collections in Q1, and $2.5M of collections slipped into July. **Expleo**'s rise from 91 to 108 days comes as its $1M+ client count fell. **RailTel**'s receivables grew 29% in FY26 against 23% revenue growth, dues from Indian Railways alone rose from ₹420cr to ₹615cr, and operating cash fell to about half of operating profit in both FY25 and FY26; a provision for ageing dues then wiped out Q1 profit growth.",
                 },
                 {
                     label: 'Working capital: improving',
@@ -509,6 +539,7 @@ export const softwareServices: SectorOverview = {
                         ['Saksoft', 'Net cash about ₹223cr (March); acquisitions capped at ~₹100cr of target revenue, paid from cash', 'Borrowings ₹44cr; goodwill ₹518cr (48% of assets); CARE A (Sep 2025)'],
                         ['Expleo Solutions', 'Net cash ₹352.8cr (June); ₹110-a-share dividend recommended in July; three acquisition targets in due diligence', 'Borrowings ₹8cr (leases); ₹97.5cr lent to the French parent'],
                         ['Xtranet Technologies', 'IPO raised ₹166.8cr in July (₹102cr for working capital, ₹20.2cr to repay debt); data-centre capacity to expand next quarter', 'Borrowings ₹86cr (March); CRISIL BBB- (Mar 2026)'],
+                        ['Railtel Corporation of India', 'No debt; FY27 capex ‘300 crores and above’ (May call; about ₹241cr in the annual report); the credit-loss charge is ‘non-cash’ and reversible when paid; FY26 dividend ₹3.25 a share', 'Borrowings ₹64cr (leases); cash and bank balances ₹654cr (March); bank guarantees given ₹1,482cr; ICRA AA (Stable), Feb 2026'],
                     ],
                     note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. Expleo held no Q1 call; its figures come from the Q1 deck and annual report. R Systems’ quarter is April–June 2026, its Q2 CY26.',
                 },
@@ -517,7 +548,7 @@ export const softwareServices: SectorOverview = {
         {
             heading: '6. Growth and capex (comparative)',
             body: [
-                "Where the next five years of growth could come from, how each company did against what it promised on its Q4 FY26 call, and my own estimate of earnings growth. Capex hardly matters here: most of these companies spend under 2% of revenue on offices and laptops, so the real investment decisions are hiring, sales teams and acquisitions.",
+                "Where the next five years of growth could come from, how each company did against what it promised on its Q4 FY26 call, and my own estimate of earnings growth. Capex hardly matters here: most of these companies spend under 2% of revenue on offices and laptops, so the real investment decisions are hiring, sales teams and acquisitions. **RailTel** is the exception: it owns its fibre network and data centres, spent ₹272cr (6.4% of revenue) in FY26, and plans ‘300 crores and above’ for FY27, mostly on data centres.",
             ],
             points: [
                 {
@@ -534,7 +565,7 @@ export const softwareServices: SectorOverview = {
                 },
                 {
                     label: 'Growth driver: India’s own digital build-out',
-                    text: "**Xtranet** is the only company here selling mostly in India. It has an order book of ₹373cr across 55 projects (about 55% executable this year), a bid pipeline of about ₹1,200cr with 40–45% at an advanced stage, and a target of 35–40% revenue growth a year for three years. Its data-centre contracts bill 50–60% as building work over 6–18 months, then 40–50% as operation and maintenance over 3–7 years, so about half the order book recurs. Other companies are leaning on India too: **Happiest Minds** now earns 18.3% of revenue in India, and **Sonata**'s Indian resale business grew gross contribution 14.5% in Q1. **My view: Indian government work grows fast but is won on lowest bids and paid slowly; Xtranet's target needs Q2–Q4 revenue about 42% above the same months of FY26.**",
+                    text: "**RailTel** and **Xtranet** are the only companies here selling mostly in India. **RailTel** is the larger bet on it. It has ₹11,747cr of orders and expects to turn ₹3,000–3,500cr of them into project revenue in FY27, against ₹2,777cr in FY26; Management expects Kavach revenue to start this year; approval of its technology partner's system by the Railways' standards body was, in July, ‘likely to happen at any time now’. Its data-centre revenue rose from ₹127cr in FY25 to ₹202cr in FY26, and it targets about ₹300cr in FY27 and about ₹500cr by FY28, from a 10 MW site being built in Noida (first 5 MW due by May 2027, per its March presentation) and capacity leased from Adani and Anant Raj, where it installs its own servers and sells managed cloud. It is also building air-gapped AI models for the Railways. **Xtranet** has an order book of ₹373cr across 55 projects (about 55% executable this year), a bid pipeline of about ₹1,200cr with 40–45% at an advanced stage, and a target of 35–40% revenue growth a year for three years. Its data-centre contracts bill 50–60% as building work over 6–18 months, then 40–50% as operation and maintenance over 3–7 years, so about half the order book recurs. Other companies are leaning on India too: **Happiest Minds** now earns 18.3% of revenue in India, and **Sonata**'s Indian resale business grew gross contribution 14.5% in Q1. **My view: Indian government work grows fast but is won on lowest bids and paid slowly. RailTel's data centres are the part worth paying for, because they earn more than its telecom arm; Xtranet's target needs Q2–Q4 revenue about 42% above the same months of FY26.**",
                 },
                 {
                     label: 'Delivering or beating',
@@ -550,11 +581,11 @@ export const softwareServices: SectorOverview = {
                 },
                 {
                     label: 'Mixed',
-                    text: "**Happiest Minds** kept its 12.5% constant-currency guide, but Q1 grew 6.7%, the margin sat at the bottom of its 17.5–18.5% range, one of two delayed Arttha licence deals now looks unlikely, and it added 32 people against a plan of about 1,050. **Xtranet** beat its IPO-time FY26 revenue estimate (₹365cr against ₹350–355cr) and its Q1 margin of 20.6% is ahead of plan, but Q1 revenue grew only 10.5% against a 35–40% target. **InfoBeans**' company-basis margin of 22.6% was below its 24% target, which management had warned about. **Birlasoft** promised 30–40% more salespeople by mid-FY27, but its sales and support headcount fell from 1,025 to 1,014.",
+                    text: "**Happiest Minds** kept its 12.5% constant-currency guide, but Q1 grew 6.7%, the margin sat at the bottom of its 17.5–18.5% range, one of two delayed Arttha licence deals now looks unlikely, and it added 32 people against a plan of about 1,050. **Xtranet** beat its IPO-time FY26 revenue estimate (₹365cr against ₹350–355cr) and its Q1 margin of 20.6% is ahead of plan, but Q1 revenue grew only 10.5% against a 35–40% target. **InfoBeans**' company-basis margin of 22.6% was below its 24% target, which management had warned about. **Birlasoft** promised 30–40% more salespeople by mid-FY27, but its sales and support headcount fell from 1,025 to 1,014. **RailTel** grew revenue 20% in Q1, in line with the ‘around 20%’ it guided in May (in July it accepted an analyst's 25%), and won ₹1,688cr of orders against ₹721cr a year earlier; but profit was flat after a provision for slow payers that it had not flagged, national bandwidth revenue fell 11% on late government renewals, and the edge data centres it named in May were scaled back to small additions.",
                 },
                 {
                     label: 'My outlook',
-                    text: "**I expect earnings growth of about 18% a year at Fractal, 15% at InfoBeans and Xtranet, 12% at Latent View, 11% at Happiest Minds on its own, 9% at Mastek, 8% at Zensar, Birlasoft, R Systems and Sonata, 7% at Saksoft and 4% at Expleo.** These assume dollar revenue grows 3–8% a year for most of the exporters, a steady rupee, and margins roughly where they are. The data and AI specialists and InfoBeans get more because their work is in demand and priced on results. Expleo gets least because its constant-currency revenue is flat, AI shrinks its testing work, and paying out ₹171cr of dividend will cut its interest income. Xtranet's figure is high but uncertain: it could be much higher if government orders arrive, or much lower if old receivables are written off. **My view: in this group the cheap stocks are cheap for a reason, but the cash piles mean the downside is limited; the question is which companies can grow in dollars again.**",
+                    text: "**I expect earnings growth of about 18% a year at Fractal, 15% at InfoBeans and Xtranet, 13% at RailTel, 12% at Latent View, 11% at Happiest Minds on its own, 9% at Mastek, 8% at Zensar, Birlasoft, R Systems and Sonata, 7% at Saksoft and 4% at Expleo.** These assume dollar revenue grows 3–8% a year for most of the exporters, a steady rupee, and margins roughly where they are. The data and AI specialists and InfoBeans get more because their work is in demand and priced on results. Expleo gets least because its constant-currency revenue is flat, AI shrinks its testing work, and paying out ₹171cr of dividend will cut its interest income. Xtranet's figure is high but uncertain: it could be much higher if government orders arrive, or much lower if old receivables are written off. RailTel's revenue should grow near 20% a year, but I expect profit to grow more slowly, because low-margin projects keep gaining share, depreciation rises with data-centre spending and slow payers cost it provisions. **My view: in this group the cheap stocks are cheap for a reason, but the cash piles mean the downside is limited; the question is which companies can grow in dollars again.**",
                 },
             ],
             tables: [
@@ -566,6 +597,7 @@ export const softwareServices: SectorOverview = {
                         ['Fractal Analytics', 'Constant-currency growth back to low-to-mid teens; margin gains; Qure.ai losses narrowing', '10% / **18%** / 25%'],
                         ['InfoBeans Technologies', 'Dollar growth near 20%; margin back towards 24% (company basis); rupee steady', '6% / **15%** / 22%'],
                         ['Xtranet Technologies', '₹373cr order book and ₹1,200cr pipeline; more services; old receivables a write-off risk', '0% / **15%** / 30%'],
+                        ['Railtel Corporation of India', 'Revenue near 20% on an ₹11,747cr order book; projects at 4–5% gain share; data centres to ~₹300cr in FY27; Kavach from this year; credit-loss charges', '5% / **13%** / 20%'],
                         ['Latent View Analytic', '12% dollar guide; margin 20–21%; treasury income; a possible acquisition', '5% / **12%** / 18%'],
                         ['Happiest Minds', 'Standalone: 7–12% constant currency, margin 17.5–18.5%; after the merger, ITC Infotech’s growth', '5% / **11%** / 15%'],
                         ['Mastek', 'UK public-sector growth; US federal deal from H2; Middle East flat; margin ~15%', '3% / **9%** / 14%'],
@@ -595,8 +627,9 @@ export const softwareServices: SectorOverview = {
                         ['Saksoft', 'FY27 ₹1,200–1,250cr kept, may be restated after Q2; Q2 ‘muted’', 'Negligible; bolt-ons up to ₹100cr of revenue', '**Missed**: revenue flat against a 14–15% ‘bare minimum’'],
                         ['Expleo Solutions', '‘Sustainable double-digit growth’; EBITDA 15.5–16%; an acquisition ‘very likely’', 'Small; Bengaluru aerospace lab', '**Missed**: margin 14.5%; no deal; dividend instead'],
                         ['Xtranet Technologies', 'FY27 ‘500 plus crores’ (+35–40%); margin up 0.5–0.75 points', 'IPO: ₹8.5cr for IT systems; data-centre capacity', '**Behind**: Q1 +10.5%; margin 20.6%, ahead'],
+                        ['Railtel Corporation of India', 'FY27 revenue growth ‘around 20%’ (May), 25% accepted in July; project revenue ₹3,000–3,500cr at 4–5% margins; data centres ~₹300cr in FY27, ~₹500cr by FY28', '‘300 crores and above’ (about ₹241cr in the annual report), mostly data centres; 10 MW Noida site, first 5 MW by May 2027', '**Mixed**: revenue +20% as guided and orders more than doubled; profit flat on credit-loss charges; bandwidth −11%; Kavach approval still pending'],
                     ],
-                    note: 'Expleo’s promises are from its Q4 FY26 call (it holds calls only at half-year and year-end), checked against its Q1 deck. Xtranet listed in July 2026 and has had one call; its record is against the FY26 estimate in its IPO-time rating report. R Systems’ quarters are calendar quarters.',
+                    note: 'Expleo’s promises are from its Q4 FY26 call (it holds calls only at half-year and year-end), checked against its Q1 deck. Xtranet listed in July 2026 and has had one call; its record is against the FY26 estimate in its IPO-time rating report. R Systems’ quarters are calendar quarters. RailTel publishes no quarterly presentation; its guidance is from the May and July calls.',
                 },
             ],
         },
@@ -608,7 +641,7 @@ export const softwareServices: SectorOverview = {
             points: [
                 {
                     label: 'Auditor flags and missed filings',
-                    text: "**Latent View**'s auditor added an emphasis of matter over the purchase of the last 20% of Decision Point: the sellers claim ₹220.3cr, the company estimates at most ₹70.3cr and has booked ₹67.7cr, and the auditor says the dispute ‘may have an adverse effect on the functioning of the Group’; it also found an audit-trail gap in Decision Point's books. **Xtranet**'s auditor draws attention to ₹2.69cr of late-payment interest owed to small suppliers that the company will book only if it wins a ₹25.8cr claim against one of its own debtors. Its secretarial audit shows it never filed consolidated accounts with the registrar for FY2015-16 to FY2022-23 (penalties of ₹13.08 lakh) and used private-placement money before filing the allotment. **Fractal** paid ₹2.6cr in FY26 to settle a case over ₹40.5cr of tax deducted from staff pay and deposited late in FY20. At **Saksoft**, fifteen subsidiaries, about 85% of revenue, are audited by other firms. **My view: Latent View's claim could cost about three-quarters of a year's profit if the sellers win in full; Xtranet's record argues for a governance discount until it has a few clean years as a listed company.**",
+                    text: "**Latent View**'s auditor added an emphasis of matter over the purchase of the last 20% of Decision Point: the sellers claim ₹220.3cr, the company estimates at most ₹70.3cr and has booked ₹67.7cr, and the auditor says the dispute ‘may have an adverse effect on the functioning of the Group’; it also found an audit-trail gap in Decision Point's books. **Xtranet**'s auditor draws attention to ₹2.69cr of late-payment interest owed to small suppliers that the company will book only if it wins a ₹25.8cr claim against one of its own debtors. Its secretarial audit shows it never filed consolidated accounts with the registrar for FY2015-16 to FY2022-23 (penalties of ₹13.08 lakh) and used private-placement money before filing the allotment. **Fractal** paid ₹2.6cr in FY26 to settle a case over ₹40.5cr of tax deducted from staff pay and deposited late in FY20. At **Saksoft**, fifteen subsidiaries, about 85% of revenue, are audited by other firms. **RailTel**'s accounts are clean (no qualification, and the government auditor, the CAG, made no comments on FY26), but its auditor points out that the board has only one independent director, against the one-third the law requires; NSE and BSE fined it for board composition in May and again in August 2026, and institutional holders voted against a director's reappointment at the August AGM. The directors are appointed by the government, so the company cannot fix this itself. Its key audit matters are revenue on unfinished contracts, credit-loss provisions and ₹447cr of contingent liabilities, mostly arbitration and court claims. **My view: Latent View's claim could cost about three-quarters of a year's profit if the sellers win in full; Xtranet's record argues for a governance discount until it has a few clean years as a listed company.**",
                 },
                 {
                     label: 'Related parties and minority shareholders',
@@ -620,7 +653,7 @@ export const softwareServices: SectorOverview = {
                 },
                 {
                     label: 'Client concentration and in-sourcing',
-                    text: "**Latent View**'s top five clients are 57% of revenue and its top ten 72%, and its largest tech client removed $7–9M of annual work after a leadership change. **Birlasoft**'s top five rose to 43.4%, **Saksoft**'s are 39% with two big clients deferring spend, **Fractal**'s top ten are 51.8%, and **Sonata**'s top ten are 51% of International revenue, led by a shrinking tech account. **Zensar**'s largest technology client is moving work in-house; in July management said its slowdown ‘might be more muted going forward’ because ‘there is not too much to go down from there’, after budgeting in April for ‘continuous decline’. **Xtranet**'s two largest customers were 22% of FY26 revenue, and its single largest order, 42% of its backlog, comes from another system integrator, Dynacons, rather than the end client. **My view: in a year when big tech is moving money to AI data centres, a concentrated tech client list is the biggest single risk in this group.**",
+                    text: "**Latent View**'s top five clients are 57% of revenue and its top ten 72%, and its largest tech client removed $7–9M of annual work after a leadership change. **Birlasoft**'s top five rose to 43.4%, **Saksoft**'s are 39% with two big clients deferring spend, **Fractal**'s top ten are 51.8%, and **Sonata**'s top ten are 51% of International revenue, led by a shrinking tech account. **Zensar**'s largest technology client is moving work in-house; in July management said its slowdown ‘might be more muted going forward’ because ‘there is not too much to go down from there’, after budgeting in April for ‘continuous decline’. **Xtranet**'s two largest customers were 22% of FY26 revenue, and its single largest order, 42% of its backlog, comes from another system integrator, Dynacons, rather than the end client. **RailTel** has the opposite problem: almost all its customers are arms of the state. Indian Railways alone was ₹693cr of FY26 revenue (about 16%) and owed it ₹615cr at March, state governments are 43% of the order book, and state orders are sometimes cancelled. Its bank guarantees to customers doubled to ₹1,482cr in FY26 as project wins grew. **My view: in a year when big tech is moving money to AI data centres, a concentrated tech client list is the biggest single risk in this group; for RailTel, the risk is not losing customers but waiting for them to pay.**",
                 },
                 {
                     label: 'Goodwill and acquisitions',
@@ -636,16 +669,16 @@ export const softwareServices: SectorOverview = {
             heading: '8. Valuation (comparative)',
             body: [
                 "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it credits cash and charges for debt. In this group the difference matters, because several companies hold cash worth a fifth to two-fifths of their market value; after taking the cash out, the business itself is cheaper than the P/E suggests. Profit also includes interest on that cash: about 28% of Latent View's pre-tax profit comes from treasury income.",
-                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **5% at 9–10x, 7–9% at 11–13x, 9–11% at 14–17x, 13% at 20x, 16% at 26x and 20–21% at 37–39x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **{Count:fits|Six} of the {count:live|twelve} fit my estimates and {count:full|six} are full; {count:stretched|none} is stretched. The market prices most of this group for single-digit growth, which is about what the dollar numbers justify; the value is in the cash, not the growth.**",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **5% at 9–10x, 7–9% at 11–13x, 9–11% at 14–17x, 13% at 20x, 16% at 26x and 20–21% at 37–39x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **{Count:fits|Seven} of the {count:live|thirteen} fit my estimates and {count:full|six} are full; {count:stretched|none} is stretched. The market prices most of this group for single-digit growth, which is about what the dollar numbers justify; the value is in the cash, not the growth.**",
             ],
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "Net cash is large at **Zensar** (₹2,774cr), **Birlasoft** (₹2,496cr), **Fractal** (₹1,985cr) and **Latent View** (₹1,218cr), and meaningful at **Mastek** (₹501cr), **Expleo** (₹368cr), **InfoBeans** (₹209cr) and **Saksoft** (₹207cr). On EV/EBITDA, Birlasoft and Expleo are the cheapest businesses in the group once their cash is set aside, followed by Mastek, R Systems and Zensar. **Sonata** (₹116cr), **R Systems** (₹96cr), **Happiest Minds** (₹77cr) and **Xtranet** (₹83cr, before its IPO money) show small net debt, mostly from acquisitions or, at Happiest Minds, from borrowing against its own deposits. **My view: for the cash-rich companies, the question is what management does with the cash; a buyback at these prices would do more for shareholders than most acquisitions.**",
+                    text: "Net cash is large at **Zensar** (₹2,774cr), **Birlasoft** (₹2,496cr), **Fractal** (₹1,985cr) and **Latent View** (₹1,218cr), and meaningful at **RailTel** (₹590cr, though part of its bank balance backs guarantees given to customers), **Mastek** (₹501cr), **Expleo** (₹368cr), **InfoBeans** (₹209cr) and **Saksoft** (₹207cr). On EV/EBITDA, Birlasoft and Expleo are the cheapest businesses in the group once their cash is set aside, followed by Mastek, R Systems and Zensar. **Sonata** (₹116cr), **R Systems** (₹96cr), **Happiest Minds** (₹77cr) and **Xtranet** (₹83cr, before its IPO money) show small net debt, mostly from acquisitions or, at Happiest Minds, from borrowing against its own deposits. **My view: for the cash-rich companies, the question is what management does with the cash; a buyback at these prices would do more for shareholders than most acquisitions.**",
                 },
                 {
                     label: 'Fits: the price asks for no more than I expect',
-                    text: "**Zensar** needs about {need:Zensar Technologies|8}% a year against my ~8%, with nearly a third of its value in cash and a 3.5% yield. **InfoBeans** needs about {need:InfoBeans Technologies|11}% against my ~15%, the widest margin here. **Mastek** needs about {need:Mastek|7}% against my ~9%, **Birlasoft** about {need:Birlasoft|8}% against ~8%, and **R Systems** about {need:R Systems International|9}% against ~8%. **Expleo** needs only about {need:Expleo Solutions|5}% against my ~4%: it fits on price, but I pass on it for the parent-company dealings, not for valuation.",
+                    text: "**Zensar** needs about {need:Zensar Technologies|8}% a year against my ~8%, with nearly a third of its value in cash and a 3.5% yield. **InfoBeans** needs about {need:InfoBeans Technologies|11}% against my ~15%, the widest margin here. **Mastek** needs about {need:Mastek|7}% against my ~9%, **Birlasoft** about {need:Birlasoft|8}% against ~8%, and **R Systems** about {need:R Systems International|9}% against ~8%. **Expleo** needs only about {need:Expleo Solutions|5}% against my ~4%: it fits on price, but I pass on it for the parent-company dealings, not for valuation. **RailTel** needs about {need:Railtel Corporation of India|14}% against my ~13%, which fits only just; its revenue is growing near 20%, but the price already assumes most of that reaches profit, which it has not done for two years.",
                 },
                 {
                     label: 'Full: prices that ask a little more than I expect',
@@ -661,7 +694,7 @@ export const softwareServices: SectorOverview = {
                 },
                 {
                     label: 'A check from dividends',
-                    text: "Cash returns support the cheap names. **Zensar** yields about 3.5% (₹15 a share, about 44% of profit), **R Systems** about 3.4%, **Sonata** about 2.8% (a 47% payout) and **Happiest Minds** about 2%. **Birlasoft** pays out only about 35% despite cash worth 38% of its value, and analysts on both calls pressed it for a policy; **Latent View** pays nothing. **Saksoft** pays about 10% of profit and spends the rest on acquisitions. **A higher payout or a buyback at Birlasoft would be the single most valuable decision any board in this group could make.**",
+                    text: "Cash returns support the cheap names. **Zensar** yields about 3.5% (₹15 a share, about 44% of profit), **R Systems** about 3.4%, **Sonata** about 2.8% (a 47% payout) and **Happiest Minds** about 2%. **Birlasoft** pays out only about 35% despite cash worth 38% of its value, and analysts on both calls pressed it for a policy; **Latent View** pays nothing. **Saksoft** pays about 10% of profit and spends the rest on acquisitions. **RailTel** pays about 30% of profit (₹3.25 a share for FY26), a yield of about 1.25%, and as a government company it is expected to keep paying. **A higher payout or a buyback at Birlasoft would be the single most valuable decision any board in this group could make.**",
                 },
             ],
             embed: 'valuation',
@@ -700,43 +733,49 @@ export const softwareServices: SectorOverview = {
             watch: 'Constant-currency growth of 3–4% a quarter; bookings above $85M; the margin above 18% as currency gains fade.',
         },
         {
-            company: 'Fractal Analytics', rank: 6, stance: 'PRICED', segment: DATA,
+            company: 'Railtel Corporation of India', rank: 6, stance: 'SCALEUP', segment: DOM,
+            what: "The Railways' own telecom and IT company (government 72.84%): bandwidth, broadband and data-centre services on 63,000 km of fibre along railway tracks, plus IT, surveillance and signalling projects for railways and state governments, which are two-thirds of revenue.",
+            view: "**Fast-growing on orders, slow-growing on profit.** Revenue rose 23% in FY26 and 20% in Q1, the order book is ₹11,747cr (2.7 years of revenue), it is debt-free with ₹590cr of net cash, and data centres are targeted to reach ₹300cr of revenue this year. But projects earn about 4% and keep gaining share, receivables grew 29% last year with ₹238cr over three years old, and a credit-loss charge left Q1 profit flat. The price needs about {need:Railtel Corporation of India|14}% a year against my ~13%.",
+            watch: 'Data-centre revenue near ₹300cr and the first 5 MW at Noida on time; Kavach revenue starting in FY27; receivables growing no faster than revenue.',
+        },
+        {
+            company: 'Fractal Analytics', rank: 7, stance: 'PRICED', segment: DATA,
             what: "A pure-play enterprise AI and analytics firm listed in FY26, serving very large consumer-goods, healthcare, bank and tech clients mostly in the US; it owns 31.5% of medical-imaging AI firm Qure.ai.",
             view: "**The best franchise here, priced for it.** Net revenue retention is 117%, no client left in Q1, 42% of revenue is priced on output, and it has ₹1,639cr of cash. But constant-currency growth slowed to 9% against a 13% history, TMT fell 22%, the CFO left, profit leans on tax credits and absorbs about ₹23cr a quarter of Qure.ai losses. The price needs about {need:Fractal Analytics|21}% a year against my ~18%.",
             watch: 'TMT growing again in Q2; Cogentiq revenue disclosed and rising; a new CFO named.',
         },
         {
-            company: 'Happiest Minds', rank: 7, stance: 'SCALEUP', segment: SERV,
+            company: 'Happiest Minds', rank: 8, stance: 'SCALEUP', segment: SERV,
             what: "A Bengaluru digital-engineering firm (IPO 2020) serving banks, healthcare and education clients, now merging into ITC Infotech at 25 ITC Infotech shares for every 81 Happiest Minds shares.",
             view: "**A merger arbitrage, not a business call.** The swap is worth about ₹405 a share on the valuers' figures against a price near ₹310, but public holders get unlisted paper until about FY28, the founder takes cash at ₹390–400, and there is no open offer. As a standalone business it was drifting: 6.7% constant-currency growth against a 12.5% guide and licence deals slipping. The price needs about {need:Happiest Minds|13}% a year against my ~11%.",
             watch: 'Competition-regulator and shareholder approvals; ITC Infotech disclosing its client and group-company revenue; the listing timetable.',
         },
         {
-            company: 'Latent View Analytic', rank: 8, stance: 'PRICED', segment: DATA,
+            company: 'Latent View Analytic', rank: 9, stance: 'PRICED', segment: DATA,
             what: "A Chennai-based data and analytics firm serving US tech, payments and consumer-goods companies (90% North America), with a large Databricks practice and the Decision Point pricing-analytics unit.",
             view: "**Growth has stalled and the story is being reset.** Dollar revenue fell 3.5% from Q4 against guidance of −1.5% to −2%, the margin target was cut to 20–21%, a new CEO has just arrived, and the top five clients are 57% of revenue. Its auditor flags a ₹220cr claim over Decision Point against the ₹70cr it expects to pay, and about 28% of pre-tax profit is treasury income. The price needs about {need:Latent View Analytic|16}% a year against my ~12%.",
             watch: 'Q2 dollar revenue back to growth; the Decision Point claim settled near the company’s figure; the terms of the pending acquisition.',
         },
         {
-            company: 'Sonata Software', rank: 9, stance: 'TURNAROUND', segment: SERV,
+            company: 'Sonata Software', rank: 10, stance: 'TURNAROUND', segment: SERV,
             what: "Two businesses in one: International IT services on Microsoft's stack (a quarter of revenue, two-thirds of profit) and Indian resale of Microsoft and cloud licences (three-quarters of revenue at about 3% gross contribution).",
             view: "**The part that earns the value is stuck.** International dollar revenue has been flat to down for two years, its largest client is shrinking, EBITDA fell from 20.2% to 15.4% a quarter after management promised stability, and the CEO left in May. The Indian resale arm is steadier than feared but depends on Microsoft's billing policy. The price needs about {need:Sonata Software|10}% a year against my ~8%.",
             watch: 'International EBITDA back above 18% for two quarters; its top five clients growing again; no further Microsoft direct billing in India.',
         },
         {
-            company: 'Saksoft', rank: 10, stance: 'HARVEST', segment: SERV,
+            company: 'Saksoft', rank: 11, stance: 'HARVEST', segment: SERV,
             what: "A Chennai IT services firm doing application, testing, Salesforce and ServiceNow work for mid-size clients in tech, banking and logistics; 52% of revenue from the Americas.",
             view: "**High returns, no growth.** Margins hold at about 18%, return on capital has been 24–28% for a decade and cash runs above 100% of EBITDA. But revenue has been flat at about ₹249cr for four quarters, organic constant-currency growth has been near zero for a year, headcount is falling, and management may cut its FY27 target after Q2. The price needs about {need:Saksoft|9}% a year against my ~7%.",
             watch: 'Q2–Q3 revenue growth from the ₹249cr run-rate; the $28M pipeline converting; top-five client spending.',
         },
         {
-            company: 'Expleo Solutions', rank: 11, stance: 'HARVEST', segment: SERV,
+            company: 'Expleo Solutions', rank: 12, stance: 'HARVEST', segment: SERV,
             what: "The Indian arm (71.05%) of France's Expleo group: software testing and digital engineering for banks and insurers (82% of revenue), plus aerospace and a shrinking automotive practice.",
             view: "**Cheap for reasons tied to its parent.** It needs only about {need:Expleo Solutions|5}% a year against my ~4%, holds ₹352.8cr of net cash and recommended a ₹110 dividend. But constant-currency revenue fell 0.4% in FY26, clients keep all AI savings, 35% of revenue comes from the parent group, subsidiaries lent ₹97.5cr to the parent and a new ₹24.1cr fee went to it. The annual report puts attrition at 25%, not the 15% said on the call.",
             watch: 'Loans to the parent repaid; constant-currency growth above 8%; an acquisition finally announced.',
         },
         {
-            company: 'Xtranet Technologies', rank: 12, stance: 'SCALEUP', segment: DOM,
+            company: 'Xtranet Technologies', rank: 13, stance: 'SCALEUP', segment: DOM,
             what: "A Bhopal system integrator that builds and runs data centres and network centres for Indian government bodies, implements ERP and runs XtraTrust, a licensed digital-signature authority; listed July 2026.",
             view: "**Improving, but priced for promises from a company with a patchy record.** Margins rose from 6% to 17% as services grew, and the IPO repaired a stretched balance sheet. But Q1 grew 10.5% against a 35–40% target, 42% of the order book sits with one prime contractor, ₹33.6cr of receivables are over three years old with almost no provision, and it skipped eight years of consolidated filings. The price needs about {need:Xtranet Technologies|20}% a year against my ~15%.",
             watch: 'H1 revenue of at least ₹200cr; old receivables collected or provided for; a clean first annual report as a listed company.',
@@ -748,12 +787,12 @@ export const softwareServices: SectorOverview = {
         body: [
             "**Mid-size IT services exporters.** **Zensar Technologies: own** for its cash, dividend and the bank deal ramping from Q3. **InfoBeans Technologies: own** a small position; the one company growing fast in dollars. **Mastek: follow**; a strong UK franchise that needs North America to turn. **Birlasoft: follow**; stopped shrinking, with a third of its value in cash. **R Systems International: follow**; good margins, but the rupee did much of the work. **Happiest Minds: wait** for the ITC Infotech approvals. **Sonata Software: wait** for its International margin to recover under new leaders. **Saksoft: wait** for revenue to move off a flat line. **Expleo Solutions: pass** while its parent takes loans and fees.",
             "**Data and AI analytics specialists.** **Fractal Analytics: follow**; the best franchise here, but the price already assumes growth returns quickly. **Latent View Analytic: wait** for growth to restart and the Decision Point claim to settle.",
-            "**Indian government system integrator.** **Xtranet Technologies: pass**; improving, but priced for its targets before its governance has been tested as a listed company.",
-            "**What would change my view.** For the better: dollar growth returning to mid-single digits across the group as AI projects scale, as Motilal Oswal's upside case expects; buybacks at Birlasoft or Zensar; the H-1B fee finally dropped. For the worse: a quick rupee recovery, which would reverse this year's boost; big-tech clients moving more work in-house; a Mastek goodwill write-down; Latent View losing its claim in full; more cash moving from Expleo to its parent.",
-            "**What to watch next quarter.** Zensar's deal ramp and margin; InfoBeans' dollar growth; Mastek's US ramp; Birlasoft's second growth quarter; R Systems' organic growth; Fractal's TMT recovery and new CFO; the Happiest Minds approvals; Latent View's dollar revenue; Sonata's International margin; Saksoft's guidance review; Expleo's parent loans; Xtranet's first-half revenue.",
+            "**Indian government system integrators.** **Railtel Corporation of India: follow**; a debt-free railway telecom company with a unique fibre route and a record order book, whose profit lags its revenue as low-margin projects and slow payers grow. **Xtranet Technologies: pass**; improving, but priced for its targets before its governance has been tested as a listed company.",
+            "**What would change my view.** For the better: dollar growth returning to mid-single digits across the group as AI projects scale, as Motilal Oswal's upside case expects; buybacks at Birlasoft or Zensar; the H-1B fee finally dropped. For the worse: a quick rupee recovery, which would reverse this year's boost; big-tech clients moving more work in-house; a Mastek goodwill write-down; Latent View losing its claim in full; more cash moving from Expleo to its parent; RailTel's government receivables growing faster than its revenue again.",
+            "**What to watch next quarter.** Zensar's deal ramp and margin; InfoBeans' dollar growth; Mastek's US ramp; Birlasoft's second growth quarter; R Systems' organic growth; Fractal's TMT recovery and new CFO; the Happiest Minds approvals; Latent View's dollar revenue; Sonata's International margin; Saksoft's guidance review; Expleo's parent loans; RailTel's Kavach revenue, data-centre revenue and receivables; Xtranet's first-half revenue.",
         ],
         bottomLine:
-            "Own Zensar for its cash and InfoBeans for its dollar growth; follow Mastek, Birlasoft, R Systems and Fractal Analytics; wait on Happiest Minds (a swap into ITC Infotech), Latent View, Sonata Software and Saksoft; pass on Expleo Solutions and Xtranet. Read constant-currency growth, not rupee growth, and treat the cash piles as the margin of safety.",
+            "Own Zensar for its cash and InfoBeans for its dollar growth; follow Mastek, Birlasoft, R Systems, RailTel and Fractal Analytics; wait on Happiest Minds (a swap into ITC Infotech), Latent View, Sonata Software and Saksoft; pass on Expleo Solutions and Xtranet. Read constant-currency growth, not rupee growth, and treat the cash piles as the margin of safety; for the Indian government suppliers, watch the receivables.",
     },
 
     sources: [
@@ -791,6 +830,10 @@ export const softwareServices: SectorOverview = {
         { label: 'Expleo Solutions Annual Report FY26 (related-party loans and fees) — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/396c38f0-c005-47c7-b805-89c4df6f68a7.pdf' },
         { label: 'Xtranet Technologies Annual Report FY26 (auditor emphasis, secretarial audit) — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=9d7de504-8901-427b-9fdf-58fbff2743cd.pdf' },
         { label: 'Xtranet Technologies rating rationale — CRISIL, Mar 2026', url: 'https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/XtranetTechnologiesLimited_March%2031_%202026_RR_392467.html' },
+        { label: 'RailTel Corporation of India Annual Report FY26 (segments, receivables, auditor’s report)', url: 'https://railtel.in/images/pdf/Annual%20Reports/Annual%20Report%202025-26.pdf' },
+        { label: 'RailTel investor meet presentation (order book split, data-centre plan) — BSE, Mar 2026', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=b73dff80-51b1-4545-8046-22c97c748098.pdf' },
+        { label: 'RailTel rating rationale — ICRA, Feb 2026', url: 'https://www.icra.in/Rating/ShowRationalReportFilePdf/140966' },
+        { label: 'RailTel filed results (standalone) — Screener.in', url: 'https://www.screener.in/company/RAILTEL/' },
         { label: 'Company earnings calls and presentations, Q4 FY26 and Q1 FY27', url: 'https://www.bseindia.com/' },
     ],
 };

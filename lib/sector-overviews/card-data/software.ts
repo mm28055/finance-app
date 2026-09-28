@@ -4545,6 +4545,106 @@ export const softwareCharts: Record<string, ProfileCharts> = {
             "inventory5y": 0,
             "payables5y": 7
         }
+    },
+    "Railtel Corporation of India": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Project subcontracts, equipment and network costs",
+                    "share": 79
+                },
+                {
+                    "label": "Staff",
+                    "share": 6
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 15
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                368.0,
+                379.0,
+                464.0,
+                535.0,
+                638.0
+            ],
+            "ocf": [
+                258.0,
+                284.0,
+                556.0,
+                255.0,
+                316.0
+            ],
+            "fcf": [
+                141.0,
+                108.0,
+                346.0,
+                -70.0,
+                44.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "22.4x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "11.8x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹590cr net cash",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "70%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "15%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                160,
+                175
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                160,
+                175
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        }
     }
 };
 
@@ -4814,5 +4914,11 @@ export const softwareValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 73.0,
         "mcapAtWriting": 640.0,
         "peAtWriting": 14.2
+    },
+    "Railtel Corporation of India": {
+        "netDebt": -590,
+        "ttmEbitda": 652.0,
+        "mcapAtWriting": 8296.0,
+        "peAtWriting": 22.4
     }
 };
