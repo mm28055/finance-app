@@ -138,12 +138,23 @@ async function resolveScreenerUrl(company) {
     return null;
 }
 
+// Screener's top ratios are one <li> each: <span class="name">Stock P/E</span>
+// <span class="value"><span class="number">27.0</span></span>. Read the number
+// inside the matching <li> only. A loss-maker's P/E cell is EMPTY, and the old
+// "label, then the next number within 200 characters" regex could run on into
+// the neighbouring field; an empty cell must come back as null.
 function extractScreenerValue(html, label) {
-    const escapedLabel = label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const regex = new RegExp(`${escapedLabel}[\\s\\S]{0,200}?number">([\\d,.]+)`, 'i');
-    const match = html.match(regex);
-    if (match && match[1]) {
-        return parseFloat(match[1].replace(/,/g, ''));
+    const start = html.indexOf('id="top-ratios"');
+    const scope = start === -1 ? html : html.substring(start, start + 6000);
+    const items = scope.match(/<li[^>]*>[\s\S]*?<\/li>/g) || [];
+    const want = label.toLowerCase();
+    for (const li of items) {
+        const name = (li.match(/<span class="name">([\s\S]*?)<\/span>/) || [])[1];
+        if (!name || name.replace(/\s+/g, ' ').trim().toLowerCase() !== want) continue;
+        const num = (li.match(/<span class="number">([\d,.\-]*)<\/span>/) || [])[1];
+        if (!num) return null;
+        const v = parseFloat(num.replace(/,/g, ''));
+        return Number.isFinite(v) ? v : null;
     }
     return null;
 }
@@ -325,24 +336,19 @@ async function syncFinance() {
             || !company.lastSalesSync
             || company.lastSalesSync < salesCutoff;
 
-        // Try Google Finance first (fast)
-        let data = await fetchGoogleFinance(company.ticker);
-
+        // Screener only. Google Finance's quote page no longer carries a
+        // machine-readable price, and its P/E used a different profit basis
+        // (it kept P/Es on loss-makers such as Exicom), so it is not used.
+        const data = await fetchScreener(company);
         if (data && data.currentPrice) {
-            googleSuccess++;
-            console.log(`✅ Google: ₹${data.currentPrice}`);
+            screenerSuccess++;
+            console.log(`📊 Screener: ₹${data.currentPrice}`);
+            await new Promise(r => setTimeout(r, 2000)); // Be polite
         } else {
-            // Fallback to Screener.in
-            data = await fetchScreener(company);
-            if (data && data.currentPrice) {
-                screenerSuccess++;
-                console.log(`📊 Screener: ₹${data.currentPrice}`);
-                await new Promise(r => setTimeout(r, 2000)); // Be polite
-            } else {
-                failed++;
-                console.log(`❌ Not found`);
-                continue;
-            }
+            failed++;
+            console.log(`❌ Not found`);
+            await new Promise(r => setTimeout(r, 2000));
+            continue;
         }
 
         // Google carries no revenue history, so a stale sales figure means one
@@ -368,9 +374,12 @@ async function syncFinance() {
                 marketCap: data.marketCap || undefined,
                 currentPrice: data.currentPrice || undefined,
                 bookValue: data.bookValue || undefined,
-                peRatio: data.peRatio || undefined,
-                pbRatio: data.pbRatio || undefined,
-                dividendYield: data.dividendYield || undefined,
+                // Written even when null: an empty Screener P/E means a loss,
+                // and keeping the old figure is how loss-makers kept showing
+                // stale P/Es for months.
+                peRatio: data.peRatio ?? null,
+                pbRatio: data.pbRatio ?? null,
+                dividendYield: data.dividendYield ?? null,
                 roce: data.roce || undefined,
                 // Google doesn't expose the 52w band, so leave the stored
                 // value untouched when it's the source that answered.
