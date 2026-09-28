@@ -264,3 +264,23 @@ export function isAgmDocument(rawText: string | null | undefined, subject?: stri
     const e = EARNINGS_PATTERNS.map(p => head.search(p)).filter(i => i >= 0);
     return e.length === 0 || a < Math.min(...e);
 }
+
+/**
+ * True when a document reads as a call or meeting transcript — used for exchange
+ * filings whose subject does not say "transcript" ("General Updates", "Updates").
+ * Needs length, call/meeting language near the top, and the shape of a
+ * transcript: a moderator/operator, or many speaker turns ("Name: ..."). Cover
+ * letters, presentations, BRSRs and annual reports fail one of these.
+ */
+export function looksLikeCallTranscript(rawText: string | null | undefined): boolean {
+    if (!rawText) return false;
+    const flat = rawText.replace(/\s+/g, ' ');
+    if (flat.length < 5000) return false;
+    const head = flat.slice(0, 4000);
+    if (/\b(business\s+responsibility|annual\s+report|investor\s+presentation|earnings\s+presentation|notice\s+of\s+(?:the\s+)?(?:\d+\w*\s+)?annual)\b/i.test(head)
+        && !/\btranscript\b/i.test(head)) return false;
+    if (!/\b(call|con-?call|conference|meet|meeting|transcript|webinar)\b/i.test(head)) return false;
+    if (/\b(moderator|operator)\s*:/i.test(flat)) return true;
+    const turns = (rawText.match(/(?:^|\n)\s*[A-Z][A-Za-z.'-]+(?:\s+[A-Z][A-Za-z.'-]+){0,3}\s*:\s/g) || []).length;
+    return turns >= 20 && /\bquestions?\b/i.test(flat);
+}
