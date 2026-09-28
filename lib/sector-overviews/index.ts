@@ -49,6 +49,7 @@ import { emsElectronics } from './ems-electronics';
 
 export * from './types';
 export * from './live-valuation';
+export * from './calls';
 
 /**
  * Every written overview, keyed by the sector name it belongs to.
@@ -60,6 +61,11 @@ const BY_SECTOR = new Map(OVERVIEWS.map(o => [o.sector.toLowerCase(), o]));
 
 export function getSectorOverview(sector: string): SectorOverview | undefined {
     return BY_SECTOR.get(sector.toLowerCase());
+}
+
+/** Every written note, for features that look across all sectors (e.g. the call filter). */
+export function allSectorOverviews(): SectorOverview[] {
+    return OVERVIEWS;
 }
 
 export function hasSectorOverview(sector: string): boolean {

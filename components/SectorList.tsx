@@ -8,6 +8,7 @@ import { Search } from 'lucide-react';
 import { meetsGuidanceThreshold, GUIDANCE_GROWTH_THRESHOLD } from '@/lib/guidance';
 import { isPortfolioSector } from '@/lib/portfolio';
 import { useTags } from '@/context/TagsContext';
+import { allSectorOverviews, companyCalls, CALLS, type Call } from '@/lib/sector-overviews';
 
 export const COLOR_THEMES = {
     blue: { name: 'Blue', bg: 'bg-[#D4E5F7]', text: 'text-[#4A7AAF]', dot: 'bg-[#4A7AAF]' },
@@ -130,6 +131,18 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
     const [tagFilter, setTagFilter] = useState('');
     // A tag that no longer exists (its last company was untagged) stops filtering.
     const activeTag = allTags.some(t => t.tag === tagFilter) ? tagFilter : '';
+    // The call each sector note gives a company (own / follow / wait / pass / avoid).
+    const calls = useMemo(() => companyCalls(allSectorOverviews()), []);
+    const [callFilter, setCallFilter] = useState<Call | ''>('');
+    const callCounts = useMemo(() => {
+        const seen = new Set<string>();
+        const n: Record<string, number> = {};
+        sectors.filter(s => !isPortfolioSector(s.sector)).forEach(s => s.companies.forEach(co => {
+            const c = calls.get(co.name.trim().toLowerCase());
+            if (c && !seen.has(co.id)) { seen.add(co.id); n[c] = (n[c] || 0) + 1; }
+        }));
+        return n;
+    }, [sectors, calls]);
     // Only one company row is open at a time. Keyed by sector too, because
     // ZPortfolio repeats companies that are also listed in their own sector.
     const [openRowKey, setOpenRowKey] = useState<string | null>(null);
@@ -192,7 +205,15 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             })).filter(sector => sector.companies.length > 0);
         }
 
-        // 7. Sort
+        // 7. The note's call
+        if (callFilter) {
+            result = result.map(sector => ({
+                ...sector,
+                companies: sector.companies.filter(co => calls.get(co.name.trim().toLowerCase()) === callFilter)
+            })).filter(sector => sector.companies.length > 0);
+        }
+
+        // 8. Sort
         return result.map(sector => {
             const sortedCompanies = [...sector.companies].sort((a, b) => {
                 if (sortBy === 'gemini') {
@@ -209,7 +230,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             });
             return { ...sector, companies: sortedCompanies };
         });
-    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, scoreBand, bigMoveOnly, activeTag, companiesWith]);
+    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, scoreBand, bigMoveOnly, activeTag, companiesWith, callFilter, calls]);
 
     // Every company once (ZPortfolio repeats them), so a sector note can still find a
     // company that has been moved to another sector.
@@ -310,6 +331,19 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                             ? 'bg-purple-500 text-white border-purple-500'
                             : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
                     >± 20 Score Move</button>
+                    <select
+                        value={callFilter}
+                        onChange={e => setCallFilter(e.target.value as Call | '')}
+                        title="Only companies the sector notes give this call"
+                        className={`px-1.5 py-0.5 text-[10px] font-medium rounded border transition-all cursor-pointer focus:outline-none ${callFilter
+                            ? 'bg-[#4A7AAF] text-white border-[#4A7AAF]'
+                            : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
+                    >
+                        <option value="">📝 Note's call</option>
+                        {CALLS.map(c => (
+                            <option key={c} value={c}>{c.charAt(0).toUpperCase() + c.slice(1)} ({callCounts[c] || 0})</option>
+                        ))}
+                    </select>
                     {allTags.length > 0 && (
                         <select
                             value={activeTag}
@@ -340,7 +374,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                     count={s.companies.length}
                     companies={s.companies}
                     allCompanies={allCompanies}
-                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null || bigMoveOnly || !!activeTag}
+                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null || bigMoveOnly || !!activeTag || !!callFilter}
                 >
                     {s.companies.map(co => {
                         const rowKey = `${s.sector}:${co.ticker}`;
