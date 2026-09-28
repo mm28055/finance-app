@@ -11,11 +11,22 @@ interface SectorSnapshotProps {
 export function SectorSnapshot({ sectorName, companies }: SectorSnapshotProps) {
     const [viewMode, setViewMode] = React.useState<'QUARTERLY' | 'YTD'>('QUARTERLY');
 
+    // The quarter most companies here have reported; anyone still on an older
+    // one is marked, so a March quarter isn't ranked as if it were June's.
+    const quarterRank = (q?: string) => {
+        const m = q?.match(/^Q([1-4]) FY(\d{2})$/);
+        return m ? Number(m[2]) * 10 + Number(m[1]) : -1;
+    };
+    const newestQ = (companies || []).reduce<string | undefined>(
+        (best, co) => (quarterRank(co.financialsQuarter) > quarterRank(best) ? co.financialsQuarter : best), undefined);
+
     const data = (companies || []).map(co => {
         let name = co.name || "N/A";
         // Clean common suffixes to save space
         name = name.replace(/ (Limited|Ltd|Corporation|Corp|Technologies|Tech|Systems|India)\.?/gi, '').trim();
-        const truncatedName = name.length > 20 ? name.substring(0, 18) + '...' : name;
+        const stale = !!co.financialsQuarter && !!newestQ && co.financialsQuarter !== newestQ;
+        const base = name.length > (stale ? 14 : 20) ? name.substring(0, stale ? 12 : 18) + '…' : name;
+        const truncatedName = stale ? `${base} (${co.financialsQuarter!.replace(' FY', "'")})` : base;
 
         return {
             name: truncatedName,
@@ -86,8 +97,11 @@ export function SectorSnapshot({ sectorName, companies }: SectorSnapshotProps) {
                                 const rev = viewMode === 'QUARTERLY' ? row.revenueQ : row.revenueYTD;
                                 const marginVal = showMargin && rev ? ((value / rev) * 100).toFixed(1) + '%' : '';
 
+                                // Losses draw leftwards from zero, so the label goes just
+                                // right of the zero line, in red, never on top of the bar.
+                                const negative = Number(value) < 0;
                                 return (
-                                    <text x={x + width + 4} y={y + height / 2 + 1} fill={color} fontSize={8} fontWeight={700} dominantBaseline="middle">
+                                    <text x={Math.max(x, x + width) + 4} y={y + height / 2 + 1} fill={negative ? '#B42323' : color} fontSize={8} fontWeight={700} dominantBaseline="middle">
                                         {fmt(value)} {showMargin && marginVal && <tspan fill="#6B7280" fontWeight={400}>({marginVal})</tspan>}
                                     </text>
                                 );

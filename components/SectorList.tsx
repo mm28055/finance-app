@@ -26,6 +26,8 @@ export interface EnrichedCompany {
     price: number;
     priceChange: number;
     financials: CompanyFinancials;
+    // Quarter the headline financials belong to (e.g. "Q1 FY27").
+    financialsQuarter?: string;
     analysis?: AnalysisResult;
     profile?: string;
     summary?: {
