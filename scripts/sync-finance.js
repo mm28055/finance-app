@@ -1,4 +1,4 @@
-const { PrismaClient } = require('@prisma/client');
+const { PrismaClient, Prisma } = require('@prisma/client');
 const prisma = new PrismaClient();
 
 // ================= GOOGLE FINANCE =================
@@ -316,7 +316,7 @@ async function fetchScreener(company) {
             pbRatio = Math.round((currentPrice / bookValue) * 100) / 100;
         }
 
-        return { marketCap, currentPrice, bookValue, peRatio, pbRatio, dividendYield, roce, fiftyTwoWeekHigh, fiftyTwoWeekLow, ttmSales: parseTtmSales(html), source: 'screener' };
+        return { marketCap, currentPrice, bookValue, peRatio, pbRatio, dividendYield, roce, fiftyTwoWeekHigh, fiftyTwoWeekLow, ttmSales: parseTtmSales(html), shareholding: safeShareholding(html), source: 'screener' };
     } catch (e) {
         console.error(`Screener error for ${company.ticker}:`, e.message);
         return null;
@@ -375,6 +375,102 @@ function parseTtmSales(html) {
     return ttm > 0 ? Math.round(ttm * 100) / 100 : null;
 }
 
+// ================= SHAREHOLDING =================
+// Screener's "Shareholding Pattern" card carries a quarterly table (id
+// "quarterly-shp"): header cells are period labels ("Sep 2026" — an
+// off-cycle filing can add a month such as "Jul 2026") and each row is a
+// holder class with a percentage per period, then "No. of Shareholders".
+// The same table appears on the consolidated and standalone pages. Read from
+// the page this sync already downloads — no extra request.
+const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+
+// "Sep 2026" -> last day of that month (UTC), or null.
+function periodEndOf(label) {
+    const m = (label || '').match(/^([A-Za-z]{3})[a-z]*\s+(\d{4})$/);
+    if (!m) return null;
+    const mon = MONTHS.indexOf(m[1].toLowerCase());
+    if (mon < 0) return null;
+    return new Date(Date.UTC(+m[2], mon + 1, 0));
+}
+
+const pctCell = (t) => {
+    const v = parseFloat((t || '').replace(/[,%\s]/g, ''));
+    return Number.isFinite(v) ? v : null;
+};
+
+function parseShareholding(html) {
+    const start = html.indexOf('id="quarterly-shp"');
+    if (start === -1) return [];
+    const end = html.indexOf('</table>', start);
+    const table = html.substring(start, end === -1 ? start + 30000 : end);
+    const trs = table.match(/<tr[^>]*>[\s\S]*?<\/tr>/g) || [];
+    if (trs.length < 2) return [];
+    const cellsOf = (tr) => (tr.match(/<t[hd][^>]*>[\s\S]*?<\/t[hd]>/g) || []).map(stripTags);
+
+    const periods = cellsOf(trs[0]).slice(1);
+    const rows = {};
+    for (const tr of trs.slice(1)) {
+        const cells = cellsOf(tr);
+        if (cells.length < 2) continue;
+        const label = cells[0].replace(/\s*\+$/, '').trim().toLowerCase();
+        const key = label.startsWith('promoter') ? 'promoter'
+            : label.startsWith('fii') ? 'fii'
+            : label.startsWith('dii') ? 'dii'
+            : label.startsWith('government') ? 'government'
+            : label.startsWith('public') ? 'public'
+            : label.startsWith('no. of shareholders') ? 'shareholders'
+            : null;
+        if (key) rows[key] = cells.slice(1);
+    }
+
+    const out = [];
+    periods.forEach((period, i) => {
+        const periodEnd = periodEndOf(period);
+        if (!periodEnd) return;
+        const val = (k) => (rows[k] ? pctCell(rows[k][i]) : null);
+        const promoter = val('promoter'), fii = val('fii'), dii = val('dii'), government = val('government'), pub = val('public');
+        // A column with no holder figures at all is not a period we can use.
+        if ([promoter, fii, dii, government, pub].every(v => v === null)) return;
+        const holders = rows.shareholders ? parseInt((rows.shareholders[i] || '').replace(/[^\d]/g, ''), 10) : NaN;
+        out.push({
+            period, periodEnd,
+            promoter: promoter ?? 0, fii: fii ?? 0, dii: dii ?? 0, government: government ?? 0, public: pub ?? 0,
+            shareholders: Number.isFinite(holders) ? holders : null,
+        });
+    });
+    return out;
+}
+
+// A markup change must never cost the day's prices.
+function safeShareholding(html) {
+    try { return parseShareholding(html); } catch (e) { return []; }
+}
+
+const SHAREHOLDING_KEEP = 12;
+const { randomUUID } = require('crypto');
+
+// Raw SQL so this does not depend on a regenerated Prisma client. `pledged` is
+// never touched here — it comes from the NSE filing (sync-corporate-actions.ts).
+async function saveShareholding(companyId, rows) {
+    if (!rows.length) return 0;
+    // One statement for all periods; a row is rewritten only when a figure changed.
+    const values = rows.slice(-SHAREHOLDING_KEEP).map(r => Prisma.sql`(${randomUUID()}, ${companyId}, ${r.period}, ${r.periodEnd}::date, ${r.promoter}, ${r.fii}, ${r.dii}, ${r.government}, ${r.public}, ${r.shareholders}::int, now())`);
+    await prisma.$executeRaw`
+        INSERT INTO "ShareholdingQuarter" ("id", "companyId", "period", "periodEnd", "promoter", "fii", "dii", "government", "public", "shareholders", "updatedAt")
+        VALUES ${Prisma.join(values)}
+        ON CONFLICT ("companyId", "period") DO UPDATE SET
+            "periodEnd" = EXCLUDED."periodEnd", "promoter" = EXCLUDED."promoter", "fii" = EXCLUDED."fii",
+            "dii" = EXCLUDED."dii", "government" = EXCLUDED."government", "public" = EXCLUDED."public",
+            "shareholders" = EXCLUDED."shareholders", "updatedAt" = now()
+        WHERE ("ShareholdingQuarter"."promoter", "ShareholdingQuarter"."fii", "ShareholdingQuarter"."dii", "ShareholdingQuarter"."government", "ShareholdingQuarter"."public", "ShareholdingQuarter"."shareholders")
+            IS DISTINCT FROM (EXCLUDED."promoter", EXCLUDED."fii", EXCLUDED."dii", EXCLUDED."government", EXCLUDED."public", EXCLUDED."shareholders")`;
+    await prisma.$executeRaw`
+        DELETE FROM "ShareholdingQuarter" WHERE "companyId" = ${companyId} AND "id" NOT IN (
+            SELECT "id" FROM "ShareholdingQuarter" WHERE "companyId" = ${companyId}
+            ORDER BY "periodEnd" DESC LIMIT ${SHAREHOLDING_KEEP})`;
+    return rows.length;
+}
+
 // Screener renders the 52-week band as: High / Low  ₹ <number>139</number> / <number>70.4</number>
 // The generic extractor only grabs the first number, so pull the pair here.
 function extractScreenerRange(html) {
@@ -392,6 +488,11 @@ function extractScreenerRange(html) {
 // sync for the matching companies regardless of lastFinanceSync freshness.
 // Without it, behaviour is unchanged: sweep every visible company that is
 // null/stale (>12h).
+//
+// `--shareholding-only` reads just the shareholding table, for every visible
+// company (or the --company matches), whatever their freshness, and writes
+// nothing else — prices, ratios and lastFinanceSync are left for the daily
+// run. Used to backfill the table; one Screener page per company.
 function parseFilters() {
     const args = process.argv.slice(2);
     const filters = [];
@@ -404,8 +505,34 @@ function parseFilters() {
     return filters;
 }
 
+const SHAREHOLDING_ONLY = process.argv.includes('--shareholding-only');
+
+async function syncShareholdingOnly(filters) {
+    const where = filters.length > 0
+        ? { OR: filters.flatMap(f => [{ isin: f }, { ticker: { equals: f, mode: 'insensitive' } }, { name: { contains: f, mode: 'insensitive' } }]) }
+        : { isVisible: true };
+    const companies = await prisma.company.findMany({ where, orderBy: { name: 'asc' } });
+    console.log(`📋 Shareholding-only sync for ${companies.length} companies...
+`);
+    let filled = 0, empty = 0, failed = 0;
+    for (const company of companies) {
+        process.stdout.write(`${company.ticker.padEnd(20)}`);
+        const html = await fetchScreenerHtml(company);
+        if (!html) { failed++; console.log('❌ No page'); continue; }
+        const rows = safeShareholding(html);
+        if (!rows.length) { empty++; console.log('— no shareholding table'); continue; }
+        await saveShareholding(company.id, rows);
+        filled++;
+        const last = rows[rows.length - 1];
+        console.log(`✓ ${rows.length} periods, latest ${last.period}: promoter ${last.promoter}%`);
+    }
+    console.log(`
+✅ Shareholding: ${filled} filled, ${empty} without a table, ${failed} without a page`);
+}
+
 async function syncFinance() {
     const filters = parseFilters();
+    if (SHAREHOLDING_ONLY) return syncShareholdingOnly(filters);
 
     const yesterday = new Date();
     yesterday.setHours(yesterday.getHours() - 12); // Sync if not updated in last 12 hours
@@ -445,7 +572,7 @@ async function syncFinance() {
     // timeout; whatever is left over is picked up by the next sweep.
     let salesBudget = 200;
 
-    let googleSuccess = 0, screenerSuccess = 0, failed = 0, salesUpdated = 0;
+    let googleSuccess = 0, screenerSuccess = 0, failed = 0, salesUpdated = 0, shareholdingSaved = 0;
 
     for (const company of companies) {
         process.stdout.write(`${company.ticker.padEnd(20)}`);
@@ -485,6 +612,16 @@ async function syncFinance() {
         }
         if (ttmSales) salesUpdated++;
 
+        // Shareholding pattern, from the same page. Never fails the price write.
+        if (data.shareholding && data.shareholding.length) {
+            try {
+                await saveShareholding(company.id, data.shareholding);
+                shareholdingSaved++;
+            } catch (e) {
+                console.warn(`   ⚠️ Shareholding not saved for ${company.ticker}: ${e.message}`);
+            }
+        }
+
         // Update database
         await prisma.company.update({
             where: { id: company.id },
@@ -521,6 +658,7 @@ async function syncFinance() {
     console.log(`   Screener.in:    ${screenerSuccess}`);
     console.log(`   Not Found:      ${failed}`);
     console.log(`   TTM sales:      ${salesUpdated}`);
+    console.log(`   Shareholding:   ${shareholdingSaved}`);
 }
 
 syncFinance()

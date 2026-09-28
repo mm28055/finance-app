@@ -105,5 +105,117 @@
     "subject": "Not in the Industrial - Railway note",
     "why": "Add a company section to the Industrial - Railway note (or write the note if the sector has none).",
     "addedOn": "2026-09-28"
+  },
+  {
+    "company": "DEE Development",
+    "sector": "Industrial Manufacturing",
+    "exDate": null,
+    "subject": "Shareholding Jul 2026",
+    "why": "Promoter holding fell 5.1 pts (70.2% in Jun 2026 → 65.1% in Jul 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Leela Palaces Hotels",
+    "sector": "Hotels and Travels",
+    "exDate": null,
+    "subject": "Shareholding Jun 2026",
+    "why": "Pledged share of promoter holding jumped to 73.7% from 0% (Mar 2026 → Jun 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Hemant Surgical Inds",
+    "sector": "Healthcare",
+    "exDate": null,
+    "subject": "Shareholding May 2026",
+    "why": "Promoter holding fell 6.1 pts (58.9% in Mar 2026 → 52.8% in May 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Craftsman Automation",
+    "sector": "Auto Related",
+    "exDate": null,
+    "subject": "Shareholding Jun 2026",
+    "why": "Promoter holding fell 6.3 pts (48.7% in Mar 2026 → 42.4% in Jun 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Skipper",
+    "sector": "Construction - Power",
+    "exDate": null,
+    "subject": "Shareholding Jul 2026",
+    "why": "Promoter holding fell 5 pts (66.5% in Jun 2026 → 61.5% in Jul 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "NRB Bearing",
+    "sector": "Bearings",
+    "exDate": null,
+    "subject": "Shareholding Jun 2026",
+    "why": "Promoter holding fell 6.5 pts (51.2% in Mar 2026 → 44.7% in Jun 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Afcons Infra",
+    "sector": "Construction",
+    "exDate": null,
+    "subject": "Shareholding Jun 2026",
+    "why": "Pledged share of promoter holding jumped to 100% from 60.1% (Mar 2026 → Jun 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "ICE Make Refrig.",
+    "sector": "Industrial Manufacturing",
+    "exDate": null,
+    "subject": "Shareholding Sep 2026",
+    "why": "Promoter holding fell 9.7 pts (74.2% in Jun 2026 → 64.5% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Beta Drugs",
+    "sector": "Pharma",
+    "exDate": null,
+    "subject": "Shareholding Jun 2026",
+    "why": "Promoter holding fell 5.5 pts (64.6% in Mar 2026 → 59.1% in Jun 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Belrise Industries",
+    "sector": "Auto Related",
+    "exDate": null,
+    "subject": "Shareholding Jul 2026",
+    "why": "Promoter holding fell 5.3 pts (66.5% in Jun 2026 → 61.1% in Jul 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Viceroy Hotels",
+    "sector": "Hotels and Travels",
+    "exDate": null,
+    "subject": "Shareholding Sep 2026",
+    "why": "Promoter holding fell 10.1 pts (84.1% in Jun 2026 → 74% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Cohance Lifesciences",
+    "sector": "Pharma CDMO",
+    "exDate": null,
+    "subject": "Shareholding Jun 2026",
+    "why": "Pledged share of promoter holding jumped to 94.6% from 0% (Mar 2026 → Jun 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "KRN Heat Exchan",
+    "sector": "Industrial Products",
+    "exDate": null,
+    "subject": "Shareholding Jun 2026",
+    "why": "Promoter holding fell 5.1 pts (70.8% in Mar 2026 → 65.7% in Jun 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Blue Jet Healthcare",
+    "sector": "Pharma API",
+    "exDate": null,
+    "subject": "Shareholding Jul 2026",
+    "why": "Promoter holding fell 6.7 pts (79.8% in Jun 2026 → 73.2% in Jul 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-09-28"
   }
 ]

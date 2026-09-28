@@ -6,6 +6,8 @@
  *   npx tsx scripts/sync-corporate-actions.ts               (actions of the last 10 days)
  *   npx tsx scripts/sync-corporate-actions.ts --days=60
  *   npx tsx scripts/sync-corporate-actions.ts --dry-run     (prints, writes nothing)
+ *   npx tsx scripts/sync-corporate-actions.ts --pledges-only [--pledge-days=200] [--pledge-cap=1500]
+ *                                                           (step 4 alone, e.g. to backfill)
  *
  * 1. Identity repair, for every visible company, against NSE's own lists:
  *    - ISIN no longer listed -> find the current listing by ticker (following
@@ -25,9 +27,16 @@
  *    rewritten, together with any new NSE listing that looks like the spun-off
  *    company (never added automatically).
  *
+ * 4. Shareholding: the pledged share of promoter holding, from each company's
+ *    NSE shareholding filing, onto its ShareholdingQuarter row (see
+ *    lib/corporate-actions/shareholding.ts); and a needs-attention entry when
+ *    the latest period shows promoter holding down 2+ points or the pledge up
+ *    10+ points (once per company and period).
+ *
  * Every applied action is recorded in lib/corporate-actions/applied.json so it
  * is never applied twice, and every automatic change in log.json (last 200).
- * Only Company.isin, ticker, aliases and targetPrice are ever written.
+ * Only Company.isin, ticker, aliases and targetPrice, and
+ * ShareholdingQuarter.pledged, are ever written.
  */
 import 'dotenv/config';
 import fs from 'fs';
@@ -38,6 +47,7 @@ import {
     type NseListing, type SymbolChange, type NseCorporateAction,
 } from '../lib/corporate-actions/nse-lists';
 import { normaliseName, nameSimilarity, namesOf, sameCompanyName } from '../lib/name-match';
+import { syncPledges, shareholdingFollowUps } from '../lib/corporate-actions/shareholding';
 
 const DIR = path.join(process.cwd(), 'lib', 'corporate-actions');
 const APPLIED_FILE = path.join(DIR, 'applied.json');
@@ -51,6 +61,17 @@ const DAY = 86400000;
 const DEMERGER_WATCH_DAYS = 365;
 
 const DRY = process.argv.includes('--dry-run');
+const PLEDGES_ONLY = process.argv.includes('--pledges-only');
+const PLEDGE_DAYS = (() => {
+    const a = process.argv.find(x => x.startsWith('--pledge-days='));
+    const n = a ? parseInt(a.split('=')[1], 10) : 120;
+    return Number.isFinite(n) && n > 0 ? n : 120;
+})();
+const PLEDGE_CAP = (() => {
+    const a = process.argv.find(x => x.startsWith('--pledge-cap='));
+    const n = a ? parseInt(a.split('=')[1], 10) : 500;
+    return Number.isFinite(n) && n > 0 ? n : 500;
+})();
 const DAYS = (() => {
     const a = process.argv.find(x => x.startsWith('--days='));
     const n = a ? parseInt(a.split('=')[1], 10) : 10;
@@ -144,6 +165,34 @@ function classify(subject: string): { kind: Kind; factor?: number } | null {
     return null;
 }
 
+// ── 4. Shareholding ──────────────────────────────────────────────────────────
+
+/** Pledges onto the stored periods, then shareholding follow-ups for the notes. Never throws. */
+async function shareholdingStep(attention: Attention[], addAttention: (a: Omit<Attention, 'addedOn'>) => void, symbolOf: (isin: string) => string | undefined) {
+    console.log(`\n── Shareholding: pledges from NSE filings (last ${PLEDGE_DAYS} days)`);
+    try {
+        const r = await syncPledges({ days: PLEDGE_DAYS, dry: DRY, cap: PLEDGE_CAP, symbolOf });
+        console.log(`  ${r.filings} filings listed; ${r.waiting} stored periods without a pledge figure, ${r.matched} matched, ${r.updated} filled, ${r.unreadable} unreadable`);
+    } catch (e: any) {
+        console.warn(`  NSE shareholding filings unavailable (${e.message}) — skipped this run`);
+    }
+    try {
+        // Once per company and period, whatever the wording.
+        const seen = new Set(attention.map(a => `${a.company}|${a.subject}`));
+        let added = 0;
+        for (const f of await shareholdingFollowUps()) {
+            const subject = `Shareholding ${f.period}`;
+            if (seen.has(`${f.company}|${subject}`)) continue;
+            seen.add(`${f.company}|${subject}`);
+            addAttention({ company: f.company, sector: f.sector, exDate: null, subject, why: f.why });
+            added++;
+        }
+        console.log(`  Shareholding follow-ups: ${added} new`);
+    } catch (e: any) {
+        console.warn(`  Shareholding follow-ups skipped (${e.message})`);
+    }
+}
+
 // ── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -227,6 +276,14 @@ async function main() {
         attentionKeys.add(k);
         newAttention.push({ ...a, addedOn: isoDay(new Date())! });
     };
+
+    if (PLEDGES_ONLY) {
+        await shareholdingStep(attention, addAttention, isin => byIsin.get(isin)?.symbol);
+        for (const a of newAttention) console.log(`  - ${a.company} [${a.sector}]: ${a.why}`);
+        if (DRY) return console.log('\n(dry run — database and files untouched)');
+        if (newAttention.length) writeJson(ATTENTION_FILE, [...attention, ...newAttention]);
+        return;
+    }
 
     async function write(c: { id: string; name: string }, field: 'isin' | 'ticker' | 'aliases' | 'targetPrice', oldV: string | null, newV: string | number, source: string) {
         changes.push({ date: stamp, company: c.name.trim(), field, old: oldV, new: String(newV), source });
@@ -448,6 +505,8 @@ async function main() {
             });
         }
     }
+
+    await shareholdingStep(attention, addAttention, isin => byIsin.get(isin)?.symbol);
 
     // ── Summary and files ───────────────────────────────────────────────────
     const count = (f: string) => changes.filter(x => x.field === f).length;

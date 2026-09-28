@@ -8,6 +8,41 @@ import { ANALYSIS_WINDOW, TRANSCRIPT_WINDOW, FINANCIALS_WINDOW, GENERAL_ANALYSIS
 import { quarterScore, GENERAL_Q } from './quarters';
 import { generalDocLabel, generalDocSource, generalSlotDate } from './doc-label';
 import { quarterEndDate } from './doc-type';
+import { holdingNotes, holdingWarnings, toHoldingRow, type HoldingRow } from './shareholding';
+
+type RawHolding = {
+    companyId: string; period: string; periodEnd: Date; promoter: unknown; fii: unknown; dii: unknown;
+    government: unknown; public: unknown; shareholders: number | null; pledged: unknown;
+};
+
+/**
+ * Shareholding rows by company, oldest first, in one query. Raw SQL so the
+ * dashboard does not depend on a regenerated Prisma client. `since` limits the
+ * light load to the periods the warnings look at (about five quarters).
+ */
+async function holdingRowsBy(companyIds: string[] | null, since: Date | null): Promise<Map<string, HoldingRow[]>> {
+    const out = new Map<string, HoldingRow[]>();
+    let rows: RawHolding[] = [];
+    try {
+        rows = companyIds
+            ? await prisma.$queryRaw<RawHolding[]>`
+                SELECT "companyId", "period", "periodEnd", "promoter", "fii", "dii", "government", "public", "shareholders", "pledged"
+                FROM "ShareholdingQuarter" WHERE "companyId" = ANY(${companyIds}) ORDER BY "periodEnd"`
+            : await prisma.$queryRaw<RawHolding[]>`
+                SELECT "companyId", "period", "periodEnd", "promoter", "fii", "dii", "government", "public", "shareholders", "pledged"
+                FROM "ShareholdingQuarter" WHERE "periodEnd" >= ${since ?? new Date(0)} ORDER BY "periodEnd"`;
+    } catch (e) {
+        // Table missing (migration not applied) or unreachable: the dashboard still loads.
+        console.error('Shareholding rows unavailable', e);
+        return out;
+    }
+    for (const r of rows) {
+        const list = out.get(r.companyId) || [];
+        list.push(toHoldingRow(r));
+        out.set(r.companyId, list);
+    }
+    return out;
+}
 
 type GuidanceRow = {
     guidanceGrowthMin: any;
@@ -198,6 +233,17 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
     const generalGuidanceBy = new Map<string, typeof generalGuidance>();
     for (const g of generalGuidance) generalGuidanceBy.set(g.companyId, [...(generalGuidanceBy.get(g.companyId) || []), g]);
 
+    // Shareholding: the last ~15 months for every company, in one query. The
+    // row only needs the latest promoter / pledge figures and the warnings.
+    const holdingBy = await holdingRowsBy(null, new Date(Date.now() - 460 * 86400000));
+    const lightHolding = (id: string): EnrichedCompany['holding'] => {
+        const rows = holdingBy.get(id);
+        if (!rows?.length) return undefined;
+        const latest = rows[rows.length - 1];
+        const pledged = [...rows].reverse().find(r => r.pledged !== null)?.pledged ?? null;
+        return { period: latest.period, promoter: latest.promoter, pledged, notes: holdingWarnings(rows) };
+    };
+
     const sectorMap = new Map<string, SectorData>();
 
     companies.forEach(co => {
@@ -290,7 +336,8 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             isSme: co.isSme,
             inPortfolio: co.inPortfolio,
             colorTag: co.colorTag || undefined,
-            conviction: co.conviction || undefined
+            conviction: co.conviction || undefined,
+            holding: lightHolding(co.id)
         };
 
         sectorMap.get(sName)?.companies.push(companyObj);
@@ -456,11 +503,22 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
             financials: createSafeFinancials(f, co.financials[i + 1] ?? null, co.financials),
         }));
 
+    const holdingRows = (await holdingRowsBy([co.id], null)).get(co.id) || [];
+    const latestHolding = holdingRows[holdingRows.length - 1];
+    const holding: EnrichedCompany['holding'] = latestHolding ? {
+        period: latestHolding.period,
+        promoter: latestHolding.promoter,
+        pledged: [...holdingRows].reverse().find(r => r.pledged !== null)?.pledged ?? null,
+        notes: holdingNotes(holdingRows),
+        rows: holdingRows,
+    } : undefined;
+
     return {
         id: co.id,
         name: co.name,
         ticker: co.ticker,
         trend,
+        holding,
         filings: getCompanyFilings(co.name),
         filingHeadlines: getCompanyFilingHeadlines(co.name),
         price: 0,

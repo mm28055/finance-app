@@ -70,6 +70,16 @@ export interface EnrichedCompany {
     // the chip and its hover; full summaries only on the detail fetch.
     filingHeadlines?: import('@/lib/filings/types').FilingHeadline[];
     filings?: import('@/lib/filings/types').MaterialFiling[];
+    // Shareholding (lib/shareholding.ts). The light load carries only the latest
+    // promoter / pledge figures and the warnings; `rows` (oldest first, up to 12)
+    // and the positive notes come with the detail fetch.
+    holding?: {
+        period: string;
+        promoter: number;
+        pledged: number | null;
+        notes: import('@/lib/shareholding').HoldingNote[];
+        rows?: import('@/lib/shareholding').HoldingRow[];
+    };
     marketCap?: number;
     currentPrice?: number;
     bookValue?: number;
@@ -134,6 +144,8 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
     // Keeps only the companies whose score moved 20+ points, up or down, from
     // the previous quarter's concall.
     const [bigMoveOnly, setBigMoveOnly] = useState(false);
+    // Keeps only the companies with a shareholding warning (lib/shareholding.ts).
+    const [holdingOnly, setHoldingOnly] = useState(false);
     // The owner's own tags: keeps only the companies carrying the chosen tag.
     const { allTags, companiesWith } = useTags();
     const [tagFilter, setTagFilter] = useState('');
@@ -205,6 +217,14 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             })).filter(sector => sector.companies.length > 0);
         }
 
+        // 5b. Shareholding warning: promoter selling, pledges, institutions leaving
+        if (holdingOnly) {
+            result = result.map(sector => ({
+                ...sector,
+                companies: sector.companies.filter(co => (co.holding?.notes || []).some(n => n.tone === 'watch'))
+            })).filter(sector => sector.companies.length > 0);
+        }
+
         // 6. Owner's tag
         if (activeTag) {
             const ids = companiesWith(activeTag);
@@ -239,7 +259,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             });
             return { ...sector, companies: sortedCompanies };
         });
-    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, scoreBand, bigMoveOnly, activeTag, companiesWith, callFilter, calls]);
+    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, scoreBand, bigMoveOnly, holdingOnly, activeTag, companiesWith, callFilter, calls]);
 
     // Every company once (ZPortfolio repeats them), so a sector note can still find a
     // company that has been moved to another sector.
@@ -340,6 +360,13 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                             ? 'bg-purple-500 text-white border-purple-500'
                             : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
                     >± 20 Score Move</button>
+                    <button
+                        onClick={() => setHoldingOnly(v => !v)}
+                        title="Only companies where promoters sold 1+ point in a quarter (2+ in a year), 10%+ of promoter shares are pledged (or pledges rose 5+ points), or FIIs / DIIs cut 2+ points"
+                        className={`px-2 py-0.5 text-[10px] font-medium rounded border transition-all ${holdingOnly
+                            ? 'bg-purple-500 text-white border-purple-500'
+                            : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
+                    >⚠ Holding changes</button>
                     <select
                         value={callFilter}
                         onChange={e => setCallFilter(e.target.value as Call | '')}
@@ -383,7 +410,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                     count={s.companies.length}
                     companies={s.companies}
                     allCompanies={allCompanies}
-                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null || bigMoveOnly || !!activeTag || !!callFilter}
+                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null || bigMoveOnly || holdingOnly || !!activeTag || !!callFilter}
                 >
                     {s.companies.map(co => {
                         const rowKey = `${s.sector}:${co.ticker}`;
