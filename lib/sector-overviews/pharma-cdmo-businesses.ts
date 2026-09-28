@@ -368,7 +368,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Innova Captab',
-        inShort: ["**Makes tablets, capsules, syrups and injections for Indian drug companies under contract**: it is a contract formulation maker (a CDMO), so the brand owner sells the medicine and Innova is paid for making it. About 30% of revenue comes from its own branded generics, and a new Jammu plant makes antibiotics.", "**Good:** revenue +34% and volume +22% in Q1 FY27, and the Jammu plant has started to make a profit. **Bad:** returns fell from 31% to 15% while Jammu was built, and with R&D at 0.7–1% of revenue its protection is service, not technology.", "**Verdict: follow.** Growing fastest in the group, but the price already asks for about 23% a year of earnings growth against the 20%-plus volume growth it guides."],
+        inShort: ["**Makes tablets, capsules, syrups and injections for Indian drug companies under contract**: it is a contract formulation maker (a CDMO), so the brand owner sells the medicine and Innova is paid for making it. About 30% of revenue comes from its own branded generics, and a new Jammu plant makes antibiotics.", "**Good:** revenue +34% and volume +22% in Q1 FY27, and the Jammu plant has started to make a profit. **Bad:** returns fell from 31% to 15% while Jammu was built, and with R&D at 0.7–1% of revenue its protection is service, not technology.", "**Verdict: follow.** Growing fastest in the group, but the price already asks for about {need:Innova Captab|23}% a year of earnings growth against the 20%-plus volume growth it guides."],
         tagline: "A contract maker of finished medicines for Indian pharma companies, with its own branded generics in India and export markets and a new antibiotics plant in Jammu.",
         revenue: '₹1,630cr (FY26, consolidated)',
         products: [
@@ -400,7 +400,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Windlas Biotech',
-        inShort: ["**Makes tablets, capsules, syrups and now injections for Indian drug companies under contract**: it is a contract formulation maker (a CDMO), so the brand owner sells the medicine and Windlas is paid a fee for making it. It also sells its own trade generics and has a small export arm.", "**Good:** 14 straight record quarters, net cash and 90% of five years' operating profit turned into cash. **Bad:** margins of only 10–13%, and trade generics lost its codeine cough syrups.", "**Verdict: own.** The price asks for about 20% a year of earnings growth, close to what it has delivered."],
+        inShort: ["**Makes tablets, capsules, syrups and now injections for Indian drug companies under contract**: it is a contract formulation maker (a CDMO), so the brand owner sells the medicine and Windlas is paid a fee for making it. It also sells its own trade generics and has a small export arm.", "**Good:** 14 straight record quarters, net cash and 90% of five years' operating profit turned into cash. **Bad:** margins of only 10–13%, and trade generics lost its codeine cough syrups.", "**Verdict: own.** The price asks for about {need:Windlas Biotech|20}% a year of earnings growth, close to what it has delivered."],
         tagline: "One of India's top five contract makers of finished medicines for Indian pharma companies, with its own trade generics and a small export business.",
         revenue: '₹904cr (FY26, consolidated)',
         products: [
@@ -461,7 +461,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Aether Industries',
-        inShort: ["**Makes hard-to-make specialty chemicals, mostly under long-term exclusive contracts** for global companies such as Baker Hughes (oilfield chemicals), Milliken and Saudi Aramco, plus its own intermediates for pharma and farm-chemical makers. It is a chemical company with a contract arm, not a drug maker.", "**Good:** a 31% margin, revenue +27% in Q1 FY27, and a research partnership with Dow on silicones. **Bad:** only 20% of five years' operating profit arrived as cash, it holds about a year of sales in stock, and borrowings rose from ₹16cr to ₹458cr.", "**Verdict: pass.** The price asks for about 32% a year of earnings growth from a business that has not yet turned its profit into cash."],
+        inShort: ["**Makes hard-to-make specialty chemicals, mostly under long-term exclusive contracts** for global companies such as Baker Hughes (oilfield chemicals), Milliken and Saudi Aramco, plus its own intermediates for pharma and farm-chemical makers. It is a chemical company with a contract arm, not a drug maker.", "**Good:** a 31% margin, revenue +27% in Q1 FY27, and a research partnership with Dow on silicones. **Bad:** only 20% of five years' operating profit arrived as cash, it holds about a year of sales in stock, and borrowings rose from ₹16cr to ₹458cr.", "**Verdict: pass.** The price asks for about {need:Aether Industries|32}% a year of earnings growth from a business that has not yet turned its profit into cash."],
         tagline: "A specialty-chemicals maker moving from its own intermediates to exclusive long-term contracts, building a large new site at Panoli and entering semiconductor materials.",
         revenue: '₹1,160cr (FY26, consolidated)',
         products: [

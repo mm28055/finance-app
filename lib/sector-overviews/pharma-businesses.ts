@@ -249,7 +249,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Zydus Lifesciences',
-        inShort: ["**India's fourth-largest drug company**, selling chronic-disease brands to Indian doctors, generics and a growing specialty business in the US, and consumer brands such as Glucon-D and Sugar Free.", "**Good:** India has beaten the market for three years, return on capital has been 21–24% for three years, and it hit its 24% margin guide almost exactly. **Watch:** only 25% of FY26 operating profit turned into cash, and four acquisitions are being digested at once.", "**Verdict: follow.** A widening franchise, but FY27 profit is falling (Q1 net profit down about 35%) and the price needs about 15% a year against the roughly 12% I expect."],
+        inShort: ["**India's fourth-largest drug company**, selling chronic-disease brands to Indian doctors, generics and a growing specialty business in the US, and consumer brands such as Glucon-D and Sugar Free.", "**Good:** India has beaten the market for three years, return on capital has been 21–24% for three years, and it hit its 24% margin guide almost exactly. **Watch:** only 25% of FY26 operating profit turned into cash, and four acquisitions are being digested at once.", "**Verdict: follow.** A widening franchise, but FY27 profit is falling (Q1 net profit down about 35%) and the price needs about {need:Zydus Lifesciences|15}% a year against the roughly 12% I expect."],
         tagline: "Diversified Indian drug maker moving from US generics toward branded and specialty medicines, with its own new molecules and a consumer-wellness arm.",
         revenue: '₹27,148cr (FY26, consolidated)',
         products: [
