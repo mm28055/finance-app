@@ -354,7 +354,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Epack Durable',
-        inShort: ["**A contract designer and maker of room ACs, small and large appliances and components** for brands such as Voltas, Blue Star, Havells, Godrej, Whirlpool and Haier, with a plant dedicated to Hisense.", "**Good:** revenue grew 34% in Q1 FY27, room-AC revenue 44%, and its top two customers fell to 38% of sales. **Bad:** its auditor qualified the FY26 accounts and found a control weakness, CRISIL cut it to BB, and net debt is ₹691cr on a 6% margin.", "**Verdict: avoid.** Governance warnings and debt-funded growth. It lost money over the last four quarters, so it has no meaningful P/E; its whole business is valued at about 23 times operating profit."],
+        inShort: ["**A contract designer and maker of room ACs, small and large appliances and components** for brands such as Voltas, Blue Star, Havells, Godrej, Whirlpool and Haier, with a plant dedicated to Hisense.", "**Good:** revenue grew 34% in Q1 FY27, room-AC revenue 44%, and its top two customers fell to 38% of sales. **Bad:** its auditor qualified the FY26 accounts and found a control weakness, CRISIL cut it to BB, and net debt is ₹691cr on a 6% margin.", "**Verdict: avoid.** Governance warnings and debt-funded growth. It lost money over the last four quarters, so it has no meaningful P/E; its whole business is valued at about {ev:Epack Durable|23} times operating profit."],
         tagline: "An Indian contract manufacturer that designs and builds ACs and appliances sold under other companies' brands, making many of its own components.",
         revenue: '₹1,894cr (FY26, consolidated)',
         products: [
