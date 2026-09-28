@@ -893,7 +893,12 @@ export const industrialRailwayCharts: Record<string, ProfileCharts> = {
 
 // Fixed valuation inputs as of the note date; market value and P/E are live on the page.
 export const industrialRailwayValuationInputs: Record<string, ValuationInput> = {
-    // Hind Rectifiers is left out: the site database record for it carries a wrong market value.
+    "Hind Rectifiers": {
+        "netDebt": 225,
+        "ttmEbitda": 103.0,
+        "mcapAtWriting": 4390.0,
+        "peAtWriting": 74.3
+    },
     "Titagarh Railsystems": {
         "netDebt": 306,
         "ttmEbitda": 351.0,
