@@ -5390,6 +5390,12 @@ export const chemicalsValuationInputs: Record<string, ValuationInput> = {
         "mcapAtWriting": 13362.0,
         "peAtWriting": 50.5
     },
+    "Sudarshan Chemicals": {
+        "netDebt": 832,
+        "ttmEbitda": 656.0,
+        "mcapAtWriting": 9704.0,
+        "peAtWriting": 95.6
+    },
     "Alkyl Amines": {
         "netDebt": -252,
         "ttmEbitda": 342.0,
