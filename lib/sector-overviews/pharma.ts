@@ -786,7 +786,7 @@ export const pharma: SectorOverview = {
             points: [
                 {
                     label: 'US tariffs, prices and regulators',
-                    text: "Generics are exempt from the April 2026 US tariffs only until a review due around April 2027. **Rubicon** (99% US) had no specific answer when asked about it; **Caplin**'s chairman said “cross the bridge when we reach it”; **Strides** makes about a third of its US sales at its New York plant and **Marksans** has one at Farmingdale, which is a partial hedge. Regulators are the other binary risk: **Zydus** received a US warning letter at Baddi in June for talc testing (supplies unaffected, not mentioned on the call); **Granules** has waited 19 months for a re-inspection at Gagillapur, after earlier dates “skipped three times”; **Indoco**'s sterile Goa plant (Plants II and III, not Plant I as this note said before) is still blocked; **Strides** had observations at Bengaluru in May, **Ajanta** five at Paithan, and **Rubicon**'s Pithampur closure report is awaited. In Europe, **Eris**'s Swiss plants failed inspection in March, **Gufic**'s Indore certificate has been “soon” since December, and **Beta**'s audit has slipped three times. **Owning several US-exposed names is one tariff bet, not several.**",
+                    text: "Generics are exempt from the April 2026 US tariffs only until a review due around April 2027. **Rubicon** (99% US) had no specific answer when asked about it; **Caplin**'s chairman said “cross the bridge when we reach it”; **Strides** makes about a third of its US sales at its New York plant and **Marksans** has one at Farmingdale, which is a partial hedge. Regulators are the other binary risk: **Zydus** received a US warning letter at Baddi in June for talc testing (supplies unaffected, not mentioned on the call); **Granules** has waited 19 months for a re-inspection at Gagillapur, after earlier dates “skipped three times”; **Indoco**'s sterile Goa plant (Plants II and III, not Plant I as this note said before) is still blocked; **Strides** had observations at Bengaluru in May, **Ajanta** five at Paithan, and **Rubicon**'s Pithampur closure report is awaited. In Europe, **Eris**'s Swiss plants failed inspection in March, **Gufic**'s Indore certificate, pending since a December audit, now waits on answers to EU queries (management hopes to hear “in the next month or 2”), and **Beta**'s audit has slipped three times. **Owning several US-exposed names is one tariff bet, not several.**",
                 },
                 {
                     label: 'Tax searches, disputes and audit remarks',
@@ -935,7 +935,7 @@ export const pharma: SectorOverview = {
             company: 'Strides Pharma', rank: 15, stance: 'TURNAROUND', segment: EXPORT,
             what: "Makes niche oral generics (soft gels, liquids, modified-release) and, at its New York plant, controlled substances and nasal sprays, for US, European, Australian and African buyers.",
             view: "**A genuine turnaround with a stalled US engine.** Margin rose from 14% to 19% in two years and CARE upgraded it to A+, but US revenue has been flat at about $284–291m for two years, Q1 broke a promise of sequential growth, and 27% of promoter shares are pledged. Not priced live because the dashboard's figures are wrong; on Screener's it needs about 12–13% against my ~14%.",
-            watch: 'The Bengaluru FDA outcome; the December DEA quota decision; the Sandoz Africa brands closing in H2.',
+            watch: 'The Bengaluru FDA outcome; the December DEA quota decision; the Sandoz Africa deal closing (management now hopes for Q2) and contributing from H2.',
         },
         {
             company: 'Sakar Healthcare', rank: 16, stance: 'SCALEUP', segment: SPECIAL,
@@ -946,7 +946,7 @@ export const pharma: SectorOverview = {
         {
             company: 'Gufic Biosciences', rank: 17, stance: 'SCALEUP', segment: SPECIAL,
             what: "One of India's largest makers of freeze-dried injections, with its own hospital, fertility and botulinum-toxin brands, contract work for 70-plus drug companies, and a new plant at Indore.",
-            view: "**Real technical barriers and a plant filling up, with weak cash.** Indore went from about 18% to 30–35% use, Q1 profit nearly doubled and growth guidance rose to 15–20%. But the EU certificate has been “soon” since December, operating cash was ₹45cr in FY26 and debt sits at about ₹400cr. The price needs about 26% a year against my ~18%.",
+            view: "**Real technical barriers and a plant filling up, with weak cash.** Indore went from about 18% to 30–35% use, Q1 profit nearly doubled and growth guidance rose to 15–20%. But the EU certificate, pending since a December audit, now waits on answers to EU queries (management hopes to hear “in the next month or 2”), operating cash was ₹45cr in FY26 and debt sits at about ₹400cr. The price needs about 26% a year against my ~18%.",
             watch: 'The EU certificate for Indore; Indore at 40–45% by March; working-capital days falling.',
         },
         {

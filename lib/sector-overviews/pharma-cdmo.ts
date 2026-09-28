@@ -497,7 +497,7 @@ export const pharmaCdmo: SectorOverview = {
             points: [
                 {
                     label: 'Structural: science, scarce capacity and cost-plus',
-                    text: "**Anthem** held a 39.6% company margin in Q1 while revenue fell 23%, because material costs fell 37%, faster than sales, helped by making a key intermediate itself since FY26; the CEO warns that ‘just to maintain them would be a yeoman task’. **Sai**'s pricing caps it at 28–30%, and **Neuland** guides ‘25% plus… anything above that is kind of a bonus’, so its 35% in Q1 should not be treated as the base. **Gland**'s Indian business earned 38% in FY26 and 41% in Q4, and management now targets about 30% for the group soon and 35% in three to four years as Cenexi improves. The formulation makers are structural but thin: **Akums**' contract arm earned 17% in Q1 under cost-plus pricing, **Innova** guides 15–16% (±2 points) and **Windlas** earned 13.6% before share-option costs. **My view: these margins are earned, and for Gland they are still rising.**",
+                    text: "**Anthem** held a 39.6% company margin in Q1 while revenue fell 23%, because material costs fell 37%, faster than sales, helped by making a key intermediate itself since FY26; with 60% of this year's order book in hand, management says ‘I do not see any challenge with margins this year’ but will not predict beyond it. **Sai**'s pricing caps it at 28–30%, and **Neuland** guides ‘25% plus… anything above that is kind of a bonus’, so its 35% in Q1 should not be treated as the base. **Gland**'s Indian business earned 38% in FY26 and 41% in Q4, and management now targets about 30% for the group soon and 35% in three to four years as Cenexi improves. The formulation makers are structural but thin: **Akums**' contract arm earned 17% in Q1 under cost-plus pricing, **Innova** guides 15–16% (±2 points) and **Windlas** earned 13.6% before share-option costs. **My view: these margins are earned, and for Gland they are still rising.**",
                 },
                 {
                     label: 'Not structural: windfall quarters and one-offs',
@@ -806,7 +806,7 @@ export const pharmaCdmo: SectorOverview = {
             company: 'Dishman Carbogen (Carbogen Amcis)', rank: 16, stance: 'AVOID', segment: INNOV,
             what: "Contract development and manufacturing through Swiss-based Carbogen Amcis and Indian sites, plus cholesterol and vitamin D products, with about ₹4,800cr of goodwill.",
             view: "**A real conjugate franchise trapped in a weak balance sheet.** FY26 operating profit of ₹566cr was eaten by depreciation and ₹174cr of interest, Q1 lost ₹58cr when one order slipped, and FY27 growth was cut to single digits. Its auditor flagged a breached covenant, India Ratings downgraded it, and its fix is a promoter loan of up to CHF 200m that has slipped a quarter. No growth estimate.",
-            watch: 'The promoter loan arriving and interest falling to ₹35cr a quarter; covenant waivers closed; net debt below CHF 140m.',
+            watch: 'The promoter loan arriving and interest falling below the ₹35–40cr a quarter management expects without it; covenant waivers closed; net debt below CHF 140m.',
         },
     ],
 

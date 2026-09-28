@@ -614,7 +614,7 @@ export const pharmaOthers: SectorOverview = {
             company: 'Jeena Sikho Lifecare', rank: 1, stance: 'SCALEUP', segment: CARE,
             what: "Runs India's largest organised chain of Ayurvedic hospitals and clinics (62 hospitals, about 2,400 beds), treating liver, kidney and lifestyle diseases, and sells its own Ayurvedic medicines, mostly online.",
             view: "**High returns and real cash, with slower growth underneath and governance questions.** FY26 operating margin 44%, return on capital 64% and ₹221cr of free cash; beds 59% full. But Q1 operating profit rose only 17%, beds and other promises slipped, and the annual report shows a GST turnover-suppression order and an auditor who resigned. The price asks for about 17% a year against my ~20%.",
-            watch: 'Beds past 2,800 and operating profit growth back above 25% in Q2; the GST appeal and any new auditor remarks; margin above 40% as discounted beds fill.',
+            watch: 'Beds on course to “definitely cross 3,000 this year”, as now promised, and operating profit growth back above 25% in Q2; the GST appeal and any new auditor remarks; margin above 40% as discounted beds fill.',
         },
         {
             company: 'Hexagon Nutrition', rank: 2, stance: 'SCALEUP', segment: INGREDIENTS,

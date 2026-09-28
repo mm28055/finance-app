@@ -518,7 +518,7 @@ export const pharmaApi: SectorOverview = {
                 },
                 {
                     label: 'Cautious',
-                    text: "**Alivus** kept its 30–32% margin guide after a better quarter, citing “this war situation”. **Aarti Drugs** says prices will fall when raw materials do. **NGL** told investors its margins will moderate. **Concord** pushed its 40% margin target to FY28, and **Shilpa** gives no revenue guidance and called 35% margins “an ambitious target”.",
+                    text: "**Alivus** kept its 30–32% margin guide after a better quarter, citing “this war situation”. **Aarti Drugs** says prices will fall when raw materials do. **NGL** told investors its margins will moderate. **Concord** pushed its 40% margin target to FY28, and **Shilpa** gives no revenue guidance and now expects margins to stay “in a similar range” of about 30%, preferring to “be conservative and overdeliver” (in May it called 35% “an ambitious target”).",
                 },
                 {
                     label: 'Missed',
@@ -561,7 +561,7 @@ export const pharmaApi: SectorOverview = {
                     rows: [
                         ['Alivus Life Sciences', 'Revenue +10–12% in FY27 (new, second-half weighted); margin 30–32%', '~₹540cr in FY27 from own cash; Solapur by Diwali', '**Mixed**: margin beat; Solapur a quarter late; contract deals not yet signed'],
                         ['Acutaas Chemicals', 'Revenue +25%; margin similar to FY26’s 35.9%; ₹1,000cr of contract revenue by FY28', '~₹90–95cr in FY27, plus an R&D centre and land', '**Delivering**: Q1 +59%; battery supply started; Korean plant early; one product a quarter late'],
-                        ['Aarti Drugs', 'Margin 13.5–14% (“15% should be very easy” later); volume +10–15% for two years', '₹300–400cr brownfield over 2–3 years', '**Mixed**: margin and methylamines beat; volume +3.5% against 8–10%'],
+                        ['Aarti Drugs', 'Margin: “14% is quite doable” (13.5–14% in May), and “15% should be very easy” once the new plants fill; volume +10–15% for two years', '₹300–400cr brownfield over 2–3 years', '**Mixed**: margin and methylamines beat; volume +3.5% against 8–10%'],
                         ['IOL Chem & Pharma', 'Revenue +15–20%; margin 14–15%; FY28 +15–20% at 15–17%', '₹495cr of new projects; ₹200–250cr a year; ₹1,200–1,400cr greenfield over 4–5 years', '**Beat**: Q1 +37% at 14.6% against ~15% and 14–14.5%; did not raise'],
                         ['Concord Biotech', 'Growth above its historical ~18%; 40% margin by FY28', '₹20–30cr maintenance on the call; ICRA says ₹120–130cr', '**Mixed**: Q1 +26%, partly price-led; injectables at 5%'],
                         ['Shilpa Medicare', 'None; margin about 30%', '₹361cr in FY26; ₹114cr in Q1', '**Mixed**: record quarter; partner’s US rejection; EU patch launch unconfirmed'],
