@@ -10,6 +10,7 @@ const FY = ['FY22', 'FY23', 'FY24', 'FY25', 'FY26'];
 const HIGHMIX = 'High-reliability EMS: industrial, aerospace, defence';
 const SCALE = 'Scale EMS building components (PCBs, chips)';
 const DURABLES = 'Consumer-durable and lighting contract makers';
+const BATTERY = 'Lithium battery packs under its own brand';
 
 export const emsElectronics: SectorOverview = {
     sector: 'EMS & Electronics',
@@ -35,10 +36,11 @@ export const emsElectronics: SectorOverview = {
             'PG Electroplast': 22,
             'Virtuoso Optoelectro': 25,
             'IKIO Technologies': 18,
+            'Maxvolt Energy Indus': 20,
         },
     },
     standfirst:
-        "Twelve Indian contract manufacturers: companies that build electronics and appliances designed or branded by someone else. Demand is strong: KPMG expects India's EMS market to grow from US$40–45bn in FY25 to about US$150bn by FY30. But this is a thin-margin business that needs a lot of working capital and factory spending, and over five years eleven of the twelve spent more cash than they generated. The difference between them is who they build for: aircraft, defence and industrial customers pay for reliability and stay for years, while air-conditioner brands shop on price every season. The annual reports matter here too: Amber's FY26 accounts carry a qualified audit opinion and Kaynes is changing auditor after disclosure lapses. At today's prices I would own none of them outright. Every chart uses filed results and five years of history.",
+        "Thirteen Indian electronics makers: twelve contract manufacturers that build electronics and appliances designed or branded by someone else, and one own-brand assembler of lithium battery packs. Demand is strong: KPMG expects India's EMS market to grow from US$40–45bn in FY25 to about US$150bn by FY30. But this is a thin-margin business that needs a lot of working capital and factory spending, and over five years twelve of the thirteen spent more cash than they generated. The difference between them is who they build for: aircraft, defence and industrial customers pay for reliability and stay for years, while air-conditioner brands shop on price every season. The annual reports matter here too: Amber's FY26 accounts carry a qualified audit opinion and Kaynes is changing auditor after disclosure lapses. At today's prices I would own none of them outright. Every chart uses filed results and five years of history.",
     lastUpdated: '2026-09-28',
     asOfQuarter: 'Q1 FY27',
 
@@ -49,8 +51,8 @@ export const emsElectronics: SectorOverview = {
             unit: '%',
             periods: Q,
             scale: 'sequential',
-            source: 'Filed quarterly results, operating profit ÷ sales. Consolidated, except Centum and Vinyas (standalone).',
-            note: 'Aimtron, Vinyas and Sahasra (SME platforms) report half-yearly: H1 and H2 FY26 sit in the Q2 and Q4 columns.',
+            source: 'Filed quarterly results, operating profit ÷ sales. Consolidated, except Centum, Vinyas and Maxvolt (standalone).',
+            note: 'Aimtron, Vinyas, Sahasra and Maxvolt (SME platforms) report half-yearly: H1 and H2 FY26 sit in the Q2 and Q4 columns.',
             values: {
                 'Avalon Tech': [9, 10, 11, 12, 12],
                 'Cyient DLM': [9, 10, 9, 12, 10],
@@ -64,8 +66,10 @@ export const emsElectronics: SectorOverview = {
                 'PG Electroplast': [8, 5, 8, 7, 7],
                 'Virtuoso Optoelectro': [10, 10, 12, 9, 9],
                 'IKIO Technologies': [9, 11, 15, 16, 13],
+                'Maxvolt Energy Indus': [null, 14, null, 10, null],
             },
             cellNotes: {
+                'Maxvolt Energy Indus': 'Half-yearly, standalone. H2 FY26 fell to 10.3% as imported cells got dearer, the rupee weakened and more sales went to vehicle makers at lower margins.',
                 'Syrma SGS Tech.': 'Q1 FY27: more consumer work in the mix, and passing on higher component costs lowers the percentage margin even when rupee profit holds.',
                 'Centum Electronics': 'Standalone (continuing business). Its French subsidiary was exited in June 2026.',
                 'PG Electroplast': 'Paid a fixed fee per unit, so rising copper and aluminium prices shrink the percentage margin even when profit per unit is stable.',
@@ -93,11 +97,13 @@ export const emsElectronics: SectorOverview = {
                 'PG Electroplast': [14, -2, 46, -10, 35],
                 'Virtuoso Optoelectro': [null, null, null, 32, 85],
                 'IKIO Technologies': [-6, 31, 20, 47, 41],
+                'Maxvolt Energy Indus': [null, 223, null, 148, null],
             },
             cellNotes: {
                 'Kaynes Technology': 'Q1 FY27: core EMS grew about 48%; smart-meter sales fell 12% because the company slowed supplies until state utilities pay.',
                 'Cyient DLM': 'FY26 revenue fell as large programmes ended; growth returned in Q4 FY26.',
                 'PG Electroplast': 'Air-conditioner sales swing with the summer: a weak season in 2025, a strong one in 2026.',
+                'Maxvolt Energy Indus': 'Half-years against the same half a year earlier, from a small base (₹40cr in H1 FY25).',
             },
         },
         {
@@ -107,7 +113,7 @@ export const emsElectronics: SectorOverview = {
             unit: '%',
             periods: FY,
             scale: 'sequential',
-            source: 'Filed annual ratios: return on capital employed. Consolidated, except Centum, Aimtron, Vinyas, Virtuoso and Sahasra (standalone, for five comparable years).',
+            source: 'Filed annual ratios: return on capital employed. Consolidated, except Centum, Aimtron, Vinyas, Virtuoso, Sahasra and Maxvolt (standalone, for five comparable years).',
             note: 'Returns fell at IKIO, Kaynes and PG Electroplast after they raised equity and built plants that are not yet full.',
             values: {
                 'Avalon Tech': [24, 17, 6, 13, 19],
@@ -122,6 +128,10 @@ export const emsElectronics: SectorOverview = {
                 'PG Electroplast': [13, 17, 19, 19, 10],
                 'Virtuoso Optoelectro': [19, 18, 13, 12, 10],
                 'IKIO Technologies': [41, 31, 22, 8, 9],
+                'Maxvolt Energy Indus': [null, 19, 66, 32, 27],
+            },
+            cellNotes: {
+                'Maxvolt Energy Indus': 'FY24: a very small capital base (₹12cr of equity) before its February 2025 listing.',
             },
         },
         {
@@ -146,8 +156,10 @@ export const emsElectronics: SectorOverview = {
                 'PG Electroplast': [78, 67, 57, 68, 69],
                 'Virtuoso Optoelectro': [86, 96, 70, 65, 70],
                 'IKIO Technologies': [226, 227, 241, 225, 253],
+                'Maxvolt Energy Indus': [147, -56, 80, 154, 124],
             },
             cellNotes: {
+                'Maxvolt Energy Indus': 'FY23: suppliers were paid in 209 days on ₹14cr of sales. FY26: stock tripled to ₹62cr as it moved to holding 4–5 months of imported cells.',
                 'Kaynes Technology': 'Understates the problem: most of the ₹1,311cr owed for smart meters sits in long-term receivables outside this ratio.',
             },
         },
@@ -172,12 +184,14 @@ export const emsElectronics: SectorOverview = {
                 'PG Electroplast': [-105, 26, 72, -16, 18, 11],
                 'Virtuoso Optoelectro': [110, -29, 27, 165, 4, 50],
                 'IKIO Technologies': [-19, 73, -5, 58, 21, 23],
+                'Maxvolt Energy Indus': [null, -57, -111, -311, -72, -145],
             },
             cellNotes: {
                 'Amber Enterprises': 'High because brands pay quickly and suppliers give credit; the cash then goes into factories and acquisitions (free cash −₹826cr over five years).',
                 'Kaynes Technology': 'FY26: −₹600cr of operating cash on ₹578cr of operating profit, mostly unpaid smart-meter bills.',
                 'Cyient DLM': 'Four years (FY23–FY26).',
                 'Sahasra Electronic': 'Three years (FY24–FY26).',
+                'Maxvolt Energy Indus': 'FY22 blank: operating profit was close to zero. Five years: −₹84cr of operating cash against ₹58cr of operating profit.',
             },
         },
         {
@@ -187,7 +201,7 @@ export const emsElectronics: SectorOverview = {
             periods: [...FY, '5 yrs'],
             scale: 'diverging',
             legend: ['Burning cash', 'Generating cash'],
-            source: 'Filed cash-flow statements (Screener): operating cash minus spending on fixed assets, as a share of sales. The last column uses all filed years. Consolidated, except Centum, Vinyas, Aimtron, Sahasra and Virtuoso (standalone).',
+            source: 'Filed cash-flow statements (Screener): operating cash minus spending on fixed assets, as a share of sales. The last column uses all filed years. Consolidated, except Centum, Vinyas, Aimtron, Sahasra, Virtuoso and Maxvolt (standalone).',
             note: 'Shows who funds growth from its own cash and who needs borrowing or new shares. Acquisitions are not included, which flatters Amber, Kaynes and Aimtron.',
             values: {
                 'Avalon Tech': [-0.2, -4.2, -2.2, -1.9, 0.2, -1.5],
@@ -202,12 +216,14 @@ export const emsElectronics: SectorOverview = {
                 'PG Electroplast': [-21.5, -5.0, -1.4, -11.6, -13.5, -10.3],
                 'Virtuoso Optoelectro': [-3.5, -19.0, -8.9, 1.4, -16.8, -9.5],
                 'IKIO Technologies': [-7.2, 10.3, -20.3, -12.6, -11.1, -9.2],
+                'Maxvolt Energy Indus': [-42.5, -0.1, -18.2, -45.3, -15.3, -22.3],
             },
             cellNotes: {
                 'Kaynes Technology': 'FY25–FY26: about ₹800cr a year on chip-packaging and circuit-board plants, plus unpaid smart-meter bills.',
                 'Cyient DLM': 'Four filed years (FY23–FY26).',
                 'Sahasra Electronic': 'Three filed years (FY24–FY26).',
                 'Aimtron': 'FY22: a small base (₹26cr of sales) and a new plant.',
+                'Maxvolt Energy Indus': 'FY22: a tiny base (₹6cr of sales). FY25–FY26: stock and dealer credit grew with sales, which more than doubled each year.',
             },
         },
         {
@@ -233,11 +249,13 @@ export const emsElectronics: SectorOverview = {
                 'PG Electroplast': [4.8, 3.0, 1.0, -1.2, 0.5],
                 'Virtuoso Optoelectro': [3.4, 2.6, 2.6, 3.2, 4.1],
                 'IKIO Technologies': [1.5, 1.5, -1.3, -0.9, 0.2],
+                'Maxvolt Energy Indus': [null, 3.0, 0.9, 0.6, 1.6],
             },
             cellNotes: {
                 'Syrma SGS Tech.': 'Company figure for June 2026: net cash of ₹122cr, counting ₹800cr+ of treasury, cash and investments.',
                 'Amber Enterprises': 'Screener borrowings include leases and subsidiaries’ debt; the company’s own net-debt figure is lower (₹1,225cr).',
                 'Kaynes Technology': 'FY24: cash from its share sale (QIP), since spent on new plants.',
+                'Maxvolt Energy Indus': 'Excludes deposits and funds (₹27cr in FY25 from its IPO, ₹22cr in FY26). FY26: borrowings rose from ₹10cr to ₹85cr, mostly to pay for stock.',
             },
         },
         {
@@ -262,6 +280,10 @@ export const emsElectronics: SectorOverview = {
                 'PG Electroplast': [14.3, 7.2, 8.3, 10.0, 14.8, 11.2],
                 'Virtuoso Optoelectro': [14.5, 16.0, 11.5, 11.6, 17.1, 14.2],
                 'IKIO Technologies': [2.7, 5.6, 19.2, 19.8, 13.8, 13.2],
+                'Maxvolt Energy Indus': [9.2, 0.1, 1.5, 3.3, 5.5, 4.5],
+            },
+            cellNotes: {
+                'Maxvolt Energy Indus': 'Low so far because pack assembly needs little plant; about ₹850cr of plants announced since May 2026 will change that.',
             },
         },
         {
@@ -286,10 +308,12 @@ export const emsElectronics: SectorOverview = {
                 'PG Electroplast': [2.5, 3.7, 3.5, 4.3, 3.4],
                 'Virtuoso Optoelectro': [4.0, 3.8, 4.1, 3.4, 2.0],
                 'IKIO Technologies': [5.5, 5.5, 4.1, 2.4, 3.0],
+                'Maxvolt Energy Indus': [6.0, 14.0, 48.0, 26.8, 15.6],
             },
             cellNotes: {
                 'Kaynes Technology': 'FY25–FY26: chip-packaging and circuit-board plants not yet earning.',
                 'IKIO Technologies': 'FY25: IPO-funded plants; management expects pre-IPO asset turns only in 3–3.5 years.',
+                'Maxvolt Energy Indus': 'FY22–FY24: fixed assets of about ₹1cr, so the ratio mostly reflects rounding. FY26 excludes ₹13cr of work in progress on the new plant.',
             },
         },
         {
@@ -314,10 +338,12 @@ export const emsElectronics: SectorOverview = {
                 'PG Electroplast': [null],
                 'Virtuoso Optoelectro': [null],
                 'IKIO Technologies': [null],
+                'Maxvolt Energy Indus': [null],
             },
             cellNotes: {
                 'Aimtron': 'Order book (~₹600cr) includes the US business; sales are standalone, so the figure is overstated.',
                 'Kaynes Technology': 'Includes smart-meter orders that may be slowed until state utilities pay.',
+                'Maxvolt Energy Indus': 'Says orders exceed its capacity by more than 150% but gives no rupee figure.',
             },
         },
     ],
@@ -355,6 +381,8 @@ export const emsElectronics: SectorOverview = {
                 grades: { qual: { grade: 'C', note: 'Standard appliance approvals' }, design: { grade: 'C', note: 'Recently started designing ACs' }, scale: { grade: 'C', note: '₹835cr' }, cust: { grade: 'D', note: 'One customer was about half of FY26 revenue (ICRA)' }, price: { grade: 'C', note: 'Passes costs on with a lag' } } },
             { company: 'IKIO Technologies', trend: 'stable', trendNote: 'Less reliance on one home-lighting customer; new wearables and car-lighting lines.',
                 grades: { qual: { grade: 'C', note: 'Lighting and electronics approvals' }, design: { grade: 'B', note: 'Designs its products; 3,000+ SKUs' }, scale: { grade: 'C', note: '₹595cr' }, cust: { grade: 'B', note: 'Home-lighting work down from ~60% to ~27% of sales' }, price: { grade: 'C', note: 'Spot buying in shortages hurts margin' } } },
+            { company: 'Maxvolt Energy Indus', trend: 'stable', trendNote: 'Dealer network and capacity growing fast, but pack assembly is crowded and the H2 FY26 margin fell to 10.3%.',
+                grades: { qual: { grade: 'C', note: 'AIS 156 safety and ICAT L5 approvals: entry tickets' }, design: { grade: 'C', note: 'Own battery electronics and pack designs; buys cells' }, scale: { grade: 'D', note: '₹297cr; 14,000 packs a month' }, cust: { grade: 'C', note: '875+ dealers and 31+ vehicle makers' }, price: { grade: 'D', note: 'Cell and rupee costs cut H2 gross margin 1.6 points' } } },
         ],
     },
 
@@ -362,16 +390,17 @@ export const emsElectronics: SectorOverview = {
         {
             heading: '1. Recommendation, up front',
             body: [
-                "**None of these twelve is one I would own at today's price; Syrma SGS comes closest.** Syrma grew revenue 68% in Q1 FY27 to ₹1,589cr, exports rose 61%, sales of its own designs (ODM) more than doubled to ₹270cr, and its largest customer fell from 26% of revenue in FY25 to 13% in FY26, so it leans on no single buyer. FY26 operating profit of ₹545cr beat its own ₹400cr target by more than a third. But Q1 went the wrong way on two promises made in May: the operating margin of 10.2% fell below the 10.5–11% band, and working-capital days rose from 63 to 71 as it borrowed ₹340cr to stockpile parts, cutting net cash from ₹467cr to ₹122cr in a single quarter. Its ₹400cr circuit-board plant sells only from April 2027 and will earn under 10% in its first year. The price needs about {need:Syrma SGS Tech.|31–32}% a year against my ~28%, which is {label:Syrma SGS Tech.|full} rather than fair, so I move it from own to **follow**.",
-                "**Follow Avalon and IKIO too; wait on the other high-reliability makers.** **Avalon** is the cleanest execution story here: revenue +50% in Q1, FY27 guidance raised to 26–30%, a target of about ₹3,200cr of revenue by FY29, a clean audit and net debt of only ₹24cr. About half its costs below gross margin are fixed, so its operating margin rose from 9% to 12% in a year and profit grows faster than sales; I raise my estimate from 27% to about 30%, but the price needs about {need:Avalon Tech|36}%. **IKIO** is the only price here that fits my estimate (~18%), though on a weaker business than the one that listed in 2023: its margin has halved and management trimmed its FY27 guide in August. **Centum** moves from follow to **wait**: Q1 revenue grew only 11%, the growth guide slipped from 25–30% to about 25%, the margin guide from 13–15% to ‘above about 13%’, and its chairman sold 4.53% of the company in 2025. **Vinyas, Cyient DLM and Aimtron** grow fast but have not turned profit into cash, and Vinyas and Aimtron carry large dealings with related parties.",
-                "**Kaynes: wait, and read its accounts with care.** Its core EMS business grew about 48% in Q1 at a 16% operating margin and the order book is ₹8,904cr. But group operating cash was −₹600cr in FY26 and about −₹259cr in Q1, state utilities owe it ₹1,311cr for smart meters (a figure that rose when management had promised it would fall), and it has guaranteed ₹2,390cr of its subsidiaries' borrowing to build chip-packaging and circuit-board plants that have slipped to Q3. In December 2025 a broker found related-party items missing from its FY25 accounts; eight overseas subsidiaries went unaudited in FY26, and Walker Chandiok takes over as auditor this year. **Pass on PG Electroplast; avoid Amber, Virtuoso and Sahasra.** **Amber**'s FY26 consolidated accounts carry its first **qualified audit opinion**, because they include unaudited figures for a joint venture whose ₹81.9cr share of loss was booked, and its net debt more than doubled to ₹1,225cr in one quarter. **Virtuoso** owes 5.5 times its operating profit and keeps issuing shares; **Sahasra**'s own annual report admits its stock records did not tally at year-end, and it is merging in three promoter-owned companies.",
-                "**Two things to hold onto before reading the rest.** First, **growth is everywhere; free cash is almost nowhere.** Eleven of the twelve had negative free cash over five years, and the 2026 component shortage (bare circuit boards about three times dearer at Kaynes, some chips on lead times of over a year) pushed stock up again in Q1 at Syrma, Kaynes, Cyient DLM and IKIO. Second, **who they build for decides the margin, and owning the design decides the rest.** Aircraft, defence and industrial customers approve a supplier for years; appliance brands pay a fixed fee per unit and re-tender each season. Owning the design, as Centum does in defence and Syrma in medical devices, lifts the margin but ties up even more cash.",
+                "**None of these thirteen is one I would own at today's price; Syrma SGS comes closest.** Syrma grew revenue 68% in Q1 FY27 to ₹1,589cr, exports rose 61%, sales of its own designs (ODM) more than doubled to ₹270cr, and its largest customer fell from 26% of revenue in FY25 to 13% in FY26, so it leans on no single buyer. FY26 operating profit of ₹545cr beat its own ₹400cr target by more than a third. But Q1 went the wrong way on two promises made in May: the operating margin of 10.2% fell below the 10.5–11% band, and working-capital days rose from 63 to 71 as it borrowed ₹340cr to stockpile parts, cutting net cash from ₹467cr to ₹122cr in a single quarter. Its ₹400cr circuit-board plant sells only from April 2027 and will earn under 10% in its first year. The price needs about {need:Syrma SGS Tech.|31–32}% a year against my ~28%, which is {label:Syrma SGS Tech.|full} rather than fair, so I move it from own to **follow**.",
+                "**Follow Avalon and IKIO too; wait on the other high-reliability makers.** **Avalon** is the cleanest execution story here: revenue +50% in Q1, FY27 guidance raised to 26–30%, a target of about ₹3,200cr of revenue by FY29, a clean audit and net debt of only ₹24cr. About half its costs below gross margin are fixed, so its operating margin rose from 9% to 12% in a year and profit grows faster than sales; I raise my estimate from 27% to about 30%, but the price needs about {need:Avalon Tech|36}%. **IKIO** is the one company I would buy whose price fits my estimate (~18%), though on a weaker business than the one that listed in 2023: its margin has halved and management trimmed its FY27 guide in August. **Centum** moves from follow to **wait**: Q1 revenue grew only 11%, the growth guide slipped from 25–30% to about 25%, the margin guide from 13–15% to ‘above about 13%’, and its chairman sold 4.53% of the company in 2025. **Vinyas, Cyient DLM and Aimtron** grow fast but have not turned profit into cash, and Vinyas and Aimtron carry large dealings with related parties.",
+                "**Kaynes: wait, and read its accounts with care.** Its core EMS business grew about 48% in Q1 at a 16% operating margin and the order book is ₹8,904cr. But group operating cash was −₹600cr in FY26 and about −₹259cr in Q1, state utilities owe it ₹1,311cr for smart meters (a figure that rose when management had promised it would fall), and it has guaranteed ₹2,390cr of its subsidiaries' borrowing to build chip-packaging and circuit-board plants that have slipped to Q3. In December 2025 a broker found related-party items missing from its FY25 accounts; eight overseas subsidiaries went unaudited in FY26, and Walker Chandiok takes over as auditor this year. **Pass on PG Electroplast; avoid Amber, Virtuoso, Maxvolt and Sahasra.** **Amber**'s FY26 consolidated accounts carry its first **qualified audit opinion**, because they include unaudited figures for a joint venture whose ₹81.9cr share of loss was booked, and its net debt more than doubled to ₹1,225cr in one quarter. **Virtuoso** owes 5.5 times its operating profit and keeps issuing shares; **Sahasra**'s own annual report admits its stock records did not tally at year-end, and it is merging in three promoter-owned companies.",
+                "**Maxvolt: avoid, even though its price fits.** It assembles lithium battery packs for e-scooters, e-rickshaws and home storage, and FY26 revenue rose 176% to ₹297cr with a 27% return on capital; the price needs only about {need:Maxvolt Energy Indus|13}% a year against my ~20%. But it has never produced operating cash (−₹84cr over five years), its margin fell from 14.2% to 10.3% between the two halves of FY26, stock tripled to ₹62cr, and borrowings rose from ₹10cr to ₹85cr. In four months it has announced a ₹75cr pack plant, a ₹282cr recycling plan and, on 23 September, a ₹700cr battery campus, about eight times its ₹108cr net worth, to be paid for partly by new shares. Its FY26 annual report shows ₹72cr of purchases (30% of its materials) from Volts AMP, a firm described as a relative of a promoter, and leaves draft wording in the management discussion. **Cheap growth is not enough when the cash, the funding and the disclosure are all in doubt.**",
+                "**Two things to hold onto before reading the rest.** First, **growth is everywhere; free cash is almost nowhere.** Twelve of the thirteen had negative free cash over five years, and the 2026 component shortage (bare circuit boards about three times dearer at Kaynes, some chips on lead times of over a year) pushed stock up again in Q1 at Syrma, Kaynes, Cyient DLM and IKIO. Second, **who they build for decides the margin, and owning the design decides the rest.** Aircraft, defence and industrial customers approve a supplier for years; appliance brands pay a fixed fee per unit and re-tender each season. Owning the design, as Centum does in defence and Syrma in medical devices, lifts the margin but ties up even more cash.",
             ],
         },
         {
             heading: '2. Charts: margins, growth, returns, cash cycle and cash conversion',
             body: [
-                "The six views that matter most, with four more behind **More measures**. Companies are grouped by business. All figures are filed (Screener). Most are consolidated; Centum is standalone because its French business has been exited, and the SME-listed companies and Virtuoso use standalone annual figures to get comparable years. Aimtron, Vinyas and Sahasra report half-yearly. Hover over a starred name for its caveat. **Start with cash conversion and free cash flow**: this sector grows fast, but most of it does not yet pay for itself. The cash conversion cycle shows how many days cash is tied up in parts and bills; net debt ÷ operating profit shows who is borrowing to grow; capex ÷ sales and sales per rupee of fixed assets show who is building expensive plants; order book ÷ yearly sales shows how much work is booked.",
+                "The six views that matter most, with four more behind **More measures**. Companies are grouped by business. All figures are filed (Screener). Most are consolidated; Centum is standalone because its French business has been exited, and the SME-listed companies and Virtuoso use standalone annual figures to get comparable years. Aimtron, Vinyas, Sahasra and Maxvolt report half-yearly. Hover over a starred name for its caveat. **Start with cash conversion and free cash flow**: this sector grows fast, but most of it does not yet pay for itself. The cash conversion cycle shows how many days cash is tied up in parts and bills; net debt ÷ operating profit shows who is borrowing to grow; capex ÷ sales and sales per rupee of fixed assets show who is building expensive plants; order book ÷ yearly sales shows how much work is booked.",
             ],
             embed: 'metrics',
         },
@@ -383,11 +412,11 @@ export const emsElectronics: SectorOverview = {
             points: [
                 {
                     label: 'Where the profit sits',
-                    text: "At the volume end, phone and TV assembly for brands that choose the parts earns about 3.5–4% (ICRA on Dixon, January 2026), and Amber expects only 1.5–2% on the phones it will make for Oppo. Appliance contract making earns 6–10%: Virtuoso says 6–8% on air conditioners and 10–12% on parts. High-mix industrial and defence work priced at cost plus a margin earns 9–12%; design-led work such as Aimtron's or IKIO's earns 13–20%; and Centum's own-design defence and space systems earn 18–20% or more. **The rule: the more of the design and the approvals a supplier owns, the higher its margin, and the heavier its working capital.** Dixon keeps net working capital at 0–3% of sales because customers stand behind its suppliers; Centum's own-design business ties up 225–350 days. **My view: the wide margins in this list are paid for in cash, so compare them only alongside the cash conversion tab.**",
+                    text: "At the volume end, phone and TV assembly for brands that choose the parts earns about 3.5–4% (ICRA on Dixon, January 2026), and Amber expects only 1.5–2% on the phones it will make for Oppo. Appliance contract making earns 6–10%: Virtuoso says 6–8% on air conditioners and 10–12% on parts. High-mix industrial and defence work priced at cost plus a margin earns 9–12%; design-led work such as Aimtron's or IKIO's earns 13–20%; and Centum's own-design defence and space systems earn 18–20% or more. **The rule: the more of the design and the approvals a supplier owns, the higher its margin, and the heavier its working capital.** Dixon keeps net working capital at 0–3% of sales because customers stand behind its suppliers; Centum's own-design business ties up 225–350 days. Battery packs sit apart: **Maxvolt** buys imported cells and adds its own battery-management electronics, earning gross margins of 20–23% on packs sold to dealers and 15–18% to vehicle makers, and 12% at the operating level in FY26; it holds 4–5 months of cells, so its cash is tied up in stock rather than in unpaid bills. **My view: the wide margins in this list are paid for in cash, so compare them only alongside the cash conversion tab.**",
                 },
                 {
                     label: 'Where the demand is coming from',
-                    text: "**Global customers adding a second source outside China**: India overtook China as the largest exporter of smartphones to the US in the September 2025 quarter (IBEF), and the exporters here grew fast in Q1 (Syrma's exports +61%, Avalon's US customers 59% of sales, Cyient DLM 94% exported). **Defence and space**: figures from Deloitte and FICCI-EY used by Centum put India's defence production at about ₹1.54 lakh crore in FY25 and about ₹3 lakh crore by FY29, some 18% a year; Centum's order book is ₹1,797cr and Vinyas's about ₹1,400cr. **Air conditioners**: ICRA says room-AC volumes peaked at 12.5–13 million units in FY25, fell in FY26 on a weak summer and should grow 10–12% a year from here. **AI data centres** pull demand for power electronics and memory (Aimtron's US UPS contract, Avalon's HVDC work, Sahasra's memory exports), but they also cause the shortages below. **My view: exports and defence are the durable drivers; air conditioners are the cyclical one.**",
+                    text: "**Global customers adding a second source outside China**: India overtook China as the largest exporter of smartphones to the US in the September 2025 quarter (IBEF), and the exporters here grew fast in Q1 (Syrma's exports +61%, Avalon's US customers 59% of sales, Cyient DLM 94% exported). **Defence and space**: figures from Deloitte and FICCI-EY used by Centum put India's defence production at about ₹1.54 lakh crore in FY25 and about ₹3 lakh crore by FY29, some 18% a year; Centum's order book is ₹1,797cr and Vinyas's about ₹1,400cr. **Air conditioners**: ICRA says room-AC volumes peaked at 12.5–13 million units in FY25, fell in FY26 on a weak summer and should grow 10–12% a year from here. **Lithium batteries** are replacing lead-acid: Maxvolt cites industry reports putting India's lithium-ion battery market at about US$2.3bn in 2022 and US$5.8bn by 2028 (17% a year), and says a rule moving e-rickshaws to lithium now starts in April 2028, a year later than planned. **AI data centres** pull demand for power electronics and memory (Aimtron's US UPS contract, Avalon's HVDC work, Sahasra's memory exports), but they also cause the shortages below. **My view: exports and defence are the durable drivers; air conditioners are the cyclical one.**",
                 },
                 {
                     label: 'Policy: the subsidy is moving from assembly to components',
@@ -395,11 +424,11 @@ export const emsElectronics: SectorOverview = {
                 },
                 {
                     label: 'The cycle: a cost up-cycle in components',
-                    text: "The West Asia war in 2026 lengthened shipping, stretched lead times for circuit-board laminate and memory, and pushed some semiconductor lead times from 4–6 weeks to over a year at double the price (Centum, IKIO and Virtuoso calls). Kaynes says its component prices rose 30–35% and bare boards about threefold. Contracts mostly pass costs through, but one to three months late, and **passing on a cost lowers the percentage margin even when rupee profit holds**: Syrma's example is a chip rising from ₹60 to ₹100 and resold at cost, which keeps the rupee profit but spreads it over a bigger sale. The larger effect is on cash, because everyone is buying ahead; Syrma says it will ‘not treat inventory as a working capital’ for a quarter or two. **My view: expect reported margins to dip and stock to stay high until at least end-2026, and expect the companies with the least balance-sheet room (Virtuoso, Vinyas, Aimtron, Sahasra) to feel it most.**",
+                    text: "The West Asia war in 2026 lengthened shipping, stretched lead times for circuit-board laminate and memory, and pushed some semiconductor lead times from 4–6 weeks to over a year at double the price (Centum, IKIO and Virtuoso calls). Kaynes says its component prices rose 30–35% and bare boards about threefold. Contracts mostly pass costs through, but one to three months late, and **passing on a cost lowers the percentage margin even when rupee profit holds**: Syrma's example is a chip rising from ₹60 to ₹100 and resold at cost, which keeps the rupee profit but spreads it over a bigger sale. The larger effect is on cash, because everyone is buying ahead; Syrma says it will ‘not treat inventory as a working capital’ for a quarter or two. **My view: expect reported margins to dip and stock to stay high until at least end-2026, and expect the companies with the least balance-sheet room (Virtuoso, Vinyas, Aimtron, Sahasra, Maxvolt) to feel it most.** Maxvolt shows the same squeeze in battery cells: it blamed a dearer dollar and a cell ‘supply chain crunch’ for its H2 FY26 profit dip, and moved from three to 4–5 months of imported stock.",
                 },
                 {
                     label: 'What these companies actually depend on',
-                    text: "The label says electronics, but each share rests on something different. **Avalon** depends on US customers (59% of sales), with clean-energy storage tied to US incentives at 29% of Q1 revenue. **Cyient DLM** depends on Honeywell, Thales and a few others: customers above 10% of sales were 56% of FY26 revenue. **Centum** depends on two customers for 44% of standalone revenue and on Indian defence programmes; **Vinyas** on defence (85–90% of its order book) and an Israeli partner; **Aimtron** on Indian industrial customers and a new US subsidiary. **Syrma** depends on many customers and on exports; **Kaynes** on state utilities paying and new plants filling; **Sahasra** on memory prices and a promoter merger. **Amber, PG Electroplast and Virtuoso** depend on the summer and a handful of AC brands, and **IKIO** on Signify (about a quarter of revenue) and its new lines. **Buy each for what it actually depends on, not for the sector label.**",
+                    text: "The label says electronics, but each share rests on something different. **Avalon** depends on US customers (59% of sales), with clean-energy storage tied to US incentives at 29% of Q1 revenue. **Cyient DLM** depends on Honeywell, Thales and a few others: customers above 10% of sales were 56% of FY26 revenue. **Centum** depends on two customers for 44% of standalone revenue and on Indian defence programmes; **Vinyas** on defence (85–90% of its order book) and an Israeli partner; **Aimtron** on Indian industrial customers and a new US subsidiary. **Syrma** depends on many customers and on exports; **Kaynes** on state utilities paying and new plants filling; **Sahasra** on memory prices and a promoter merger. **Amber, PG Electroplast and Virtuoso** depend on the summer and a handful of AC brands, and **IKIO** on Signify (about a quarter of revenue) and its new lines. **Maxvolt** depends on imported Chinese cells, its 875 dealers and a supplier owned by a promoter's relative that provided 30% of its FY26 materials. **Buy each for what it actually depends on, not for the sector label.**",
                 },
             ],
             tables: [
@@ -413,6 +442,7 @@ export const emsElectronics: SectorOverview = {
                         ['Design-led products and lighting', 'Aimtron, IKIO', '13–20%', '9–24%', '**−10% to 23%**'],
                         ['Own-design defence and space systems', 'Centum (28% of its sales)', '18–20% or more', '11–14% (whole company)', '**45%**'],
                         ['Memory-chip packaging', 'Sahasra; Kaynes from Q3 FY27', 'Break-even now; 16–20% hoped for at scale', '10–18% (Sahasra, half-years)', '**−11%**'],
+                        ['Lithium battery packs, own brand', 'Maxvolt', 'Gross 15–18% to vehicle makers, 20–26% to dealers (company)', '10–14% (half-years)', '**−145%**'],
                     ],
                     note: 'Research margins from ICRA, CARE and CRISIL rationales and company calls; filed margins and cash conversion from Screener (section 2).',
                 },
@@ -429,6 +459,7 @@ export const emsElectronics: SectorOverview = {
                         ['Semicon 2.0', '₹1,27,500cr approved 15 Jul 2026', '~₹1 lakh crore committed, over 2–3 years; first fab 2028', 'PIB, Jul and Sep 2026'],
                         ['Assembly incentives (PLI)', 'Electronics PLI ended Mar 2026 (Syrma)', 'AC PLI ends after FY27', 'Syrma and Virtuoso calls'],
                         ['Compressor imports', 'Capped until March 2027', 'Review in March 2027; two new local makers FY27–FY28', 'Virtuoso and PG Electroplast calls'],
+                        ['Lithium-ion batteries', 'About US$2.3bn (2022); about 3 GWh of demand', 'About US$5.8bn by 2028 (~17% a year); 70 GWh of demand by 2030', 'Industry reports (IBEF, IEA and others) cited by Maxvolt, May 2026'],
                     ],
                     note: 'KPMG and IBEF measure different things (contract manufacturing versus the whole electronics design and manufacturing industry), so their figures are not additive.',
                 },
@@ -460,11 +491,11 @@ export const emsElectronics: SectorOverview = {
                 },
                 {
                     label: 'Pricing power: what the evidence shows',
-                    text: "**Avalon** has held its gross margin in a 33–35% band for five years and passed ‘substantially all’ of the US tariffs on to customers. **Amber** won bare-board price rises of about 15% and 18% in FY26, but it passes costs on a quarter late in air conditioners and two quarters late in boards, and its railway contracts are fixed-price. **PG Electroplast** is paid per unit (about ₹2,200–2,300 for each AC), so its rupee profit holds but its percentage margin falls when copper rises. **IKIO** prices at ‘bill of materials plus’ with a two-to-three-month lag, yet its operating margin halved from 22% in FY23 to 13% in FY26, the clearest sign of weak pricing power in this list. **Kaynes**'s smart meters are fixed-price tenders paid only after installation. **My view: pass-through clauses protect rupees, not percentages; only Avalon shows a stable margin through the cycle.**",
+                    text: "**Avalon** has held its gross margin in a 33–35% band for five years and passed ‘substantially all’ of the US tariffs on to customers. **Amber** won bare-board price rises of about 15% and 18% in FY26, but it passes costs on a quarter late in air conditioners and two quarters late in boards, and its railway contracts are fixed-price. **PG Electroplast** is paid per unit (about ₹2,200–2,300 for each AC), so its rupee profit holds but its percentage margin falls when copper rises. **IKIO** prices at ‘bill of materials plus’ with a two-to-three-month lag, yet its operating margin halved from 22% in FY23 to 13% in FY26, the clearest sign of weak pricing power in this list. **Kaynes**'s smart meters are fixed-price tenders paid only after installation. **My view: pass-through clauses protect rupees, not percentages; only Avalon shows a stable margin through the cycle.** **Maxvolt** is the weakest case: it sells packs at about ₹1.4–1.5cr per megawatt-hour to dealers and ₹1.15–1.2cr to vehicle makers, pack prices have fallen from ₹13–14 to about ₹9 per watt-hour since it started, and when cells and the dollar rose in H2 FY26 its gross margin fell from 19.5% to 17.9%. Management said price moves were acceptable ‘because the entire market is impacted’; its edge is a service network across 1,300 pin codes, not price.",
                 },
                 {
                     label: 'Competitors outside the list',
-                    text: "Dixon Technologies (the largest Indian EMS company; clients include Motorola, Xiaomi and Samsung), L&T (which has commissioned an EMS plant), Tata Electronics, Foxconn, Flex and Jabil; Epack Durable in air conditioners; Data Patterns and Bharat Electronics in defence electronics; and Malaysian EMS firms, which Centum names as its main rival in semiconductor equipment.",
+                    text: "Dixon Technologies (the largest Indian EMS company; clients include Motorola, Xiaomi and Samsung), L&T (which has commissioned an EMS plant), Tata Electronics, Foxconn, Flex and Jabil; Epack Durable in air conditioners; Exide, Amara Raja, Eastman and dozens of small assemblers in lithium battery packs; Data Patterns and Bharat Electronics in defence electronics; and Malaysian EMS firms, which Centum names as its main rival in semiconductor equipment.",
                 },
             ],
         },
@@ -481,7 +512,7 @@ export const emsElectronics: SectorOverview = {
                 },
                 {
                     label: 'Cyclical: set by mix and the chip cycle',
-                    text: "**Syrma**'s margin swings between 9% and 13% with the share of consumer work: 11.9% in Q4, 10.2% in Q1 when consumer products were 34% of sales. **IKIO**'s gross margin fell from 44.6% in Q4 to 41.2% in Q1 as it spot-bought scarce chips, and its FY27 guide is now 13–14% against 21–23% before its IPO. **Sahasra**'s memory products earn more when memory prices rise, and they are now falling. **Amber**'s gross margin rose to 19.2% in Q1 from 15.7% a year earlier, partly on compressors and copper bought before prices rose, a gain that fades once that stock is used. **My view: these margins are not broken, but they will not be steady; do not extrapolate a good quarter.**",
+                    text: "**Syrma**'s margin swings between 9% and 13% with the share of consumer work: 11.9% in Q4, 10.2% in Q1 when consumer products were 34% of sales. **IKIO**'s gross margin fell from 44.6% in Q4 to 41.2% in Q1 as it spot-bought scarce chips, and its FY27 guide is now 13–14% against 21–23% before its IPO. **Sahasra**'s memory products earn more when memory prices rise, and they are now falling. **Maxvolt**'s margin fell from 14.2% in H1 FY26 to 10.3% in H2 as cells, the dollar and a larger share of lower-margin sales to vehicle makers bit, below the 12% that CRISIL named as a downgrade trigger in February; management calls margins ‘sustainable’ but gave no figure. **Amber**'s gross margin rose to 19.2% in Q1 from 15.7% a year earlier, partly on compressors and copper bought before prices rose, a gain that fades once that stock is used. **My view: these margins are not broken, but they will not be steady; do not extrapolate a good quarter.**",
                 },
                 {
                     label: 'Not structural: fixed fees, and the one-offs',
@@ -493,7 +524,7 @@ export const emsElectronics: SectorOverview = {
                 },
                 {
                     label: 'Working capital: getting worse',
-                    text: "**Cyient DLM**'s working capital rose from 145 to 161 days in Q1 against a goal of 100–120 ‘in a couple of years’, and on Screener it held 314 days of stock in FY26. **Aimtron**'s working-capital days rose from 195 to 256 in FY26 with operating cash of −₹40cr, and **Vinyas**'s cash cycle is 232 days with operating cash of −₹32cr. **Centum**'s standalone stock is 254 days (₹457cr), which its auditor made the key audit matter, and CARE expects its needs to ‘remain elevated, and potentially increase’. A hidden risk: **Syrma** pays its suppliers in about 199 days and **PG Electroplast** in 147. **My view: if scarce-parts suppliers insist on faster payment, as Kaynes says board makers now do, that cash must come from new debt or equity.**",
+                    text: "**Cyient DLM**'s working capital rose from 145 to 161 days in Q1 against a goal of 100–120 ‘in a couple of years’, and on Screener it held 314 days of stock in FY26. **Aimtron**'s working-capital days rose from 195 to 256 in FY26 with operating cash of −₹40cr, and **Vinyas**'s cash cycle is 232 days with operating cash of −₹32cr. **Centum**'s standalone stock is 254 days (₹457cr), which its auditor made the key audit matter, and CARE expects its needs to ‘remain elevated, and potentially increase’. **Maxvolt**'s operating cash has been negative in every one of the last five years; in FY26 its stock tripled from ₹20cr to ₹62cr, advances to suppliers rose from ₹8cr to ₹27cr, and it paid suppliers in only 18 days, so growth was funded by ₹75cr of new borrowing. A hidden risk: **Syrma** pays its suppliers in about 199 days and **PG Electroplast** in 147. **My view: if scarce-parts suppliers insist on faster payment, as Kaynes says board makers now do, that cash must come from new debt or equity.**",
                 },
                 {
                     label: 'Working capital: improving',
@@ -521,6 +552,7 @@ export const emsElectronics: SectorOverview = {
                         ['PG Electroplast', 'Inventory still above ₹1,000cr (May promise: under ₹900cr by June), now held as strategic stock against import curbs; FY27 capex ~₹400cr, then 1.5–2 years of ‘sweating assets’', 'Debt ₹417cr, cash ₹491cr: net cash ₹74cr'],
                         ['Amber Enterprises', 'Capex ₹1,800–2,000cr in FY27; net debt guided to ₹700–800cr by March 2027; approval for IL JIN to raise up to ₹5,000cr', 'Net debt ₹1,225cr (₹511cr in March)'],
                         ['Virtuoso Optoelectro', 'Capex ₹80–100cr in the listed company; funding for the rest of the compressor plan undecided; ~₹85cr share issue approved 24 Sep', 'Borrowings ₹345cr (March) plus ₹150cr of convertible debentures at mid-teens rates; debt 5.5x operating profit (ICRA)'],
+                        ['Maxvolt Energy Indus', 'H2 FY26 call (May): 4–5 months of imported stock (was three); ~₹75cr for the Ghaziabad plant, ₹74–75cr for recycling phase one; equity ‘after H1’. On 23 Sep: a ₹700cr Aligarh campus, funded by accruals, debt and ‘planned capital raises’', 'Borrowings ₹85cr (₹10cr a year earlier), cash ₹26cr plus ₹22cr of deposits (March); ₹31.7cr of warrant money still due; borrowing limit to rise from ₹200cr to ₹500cr (AGM, 30 Sep)'],
                     ],
                 },
             ],
@@ -548,6 +580,10 @@ export const emsElectronics: SectorOverview = {
                     text: "ICRA expects room-AC volumes to grow 10–12% a year after FY26's dip, and brands keep outsourcing. **PG Electroplast** grew AC revenue 38% in Q1 (volume +20–22%), starts a 1.2 million-unit refrigerator plant in Q4 FY27 and a 2 million-unit compressor line in December–January. **Virtuoso** grew 85% in Q1 and aims to take compressor capacity from 2.8 million to 6 million units. **Amber** grew consumer durables only 8% on a high base, and is moving into phones for Oppo (about 8 million units in year one, but at a 1.5–2% margin) and a large AC plant at Jewar. **My view: real but seasonal growth, and fixed fees mean revenue grows faster than profit.**",
                 },
                 {
+                    label: 'Growth driver: lithium packs for e-rickshaws and storage',
+                    text: "**Maxvolt** is the one battery maker here. It raised capacity from about 6,500 to 14,000 packs a month in January 2026 and says a second phase, 35,000 packs a month (about 2.2–2.5 GWh) for ~₹75cr, starts production in December 2026 or January 2027, with 60% of it for three-wheelers and storage, where a lithium rule for e-rickshaws (April 2028) and storage requirements for rooftop solar should lift demand. Management says that plant could support ₹1,000–1,100cr of revenue, against ₹297cr in FY26. On 23 September it added a ₹700cr, 10 GWh campus at Aligarh, the first 5 GWh due in 24–30 months, with a claimed turnover potential of over ₹6,800cr. **My view: the demand is real, but pack assembly is easy to enter and these plans are several times the company's size; I count on revenue growth, not on that turnover figure.**",
+                },
+                {
                     label: 'Delivering or beating',
                     text: "**Avalon** doubled its FY24 revenue about a year early, beat its FY26 guide (46% growth against 18–20%) and raised FY27 to 26–30%. **Syrma** beat its FY26 operating-profit target (₹545cr against ₹400cr) and grew 68% in Q1. **Vinyas** delivered 30% growth in FY26 at a 12% margin against a 9–11% guide and raised its margin guide to 11–12%. **Aimtron** delivered ₹301cr of FY26 revenue against a raised ₹280cr guide. **Virtuoso** grew 85% in Q1 inside its 9–10% margin guide.",
                 },
@@ -561,11 +597,11 @@ export const emsElectronics: SectorOverview = {
                 },
                 {
                     label: 'Mixed',
-                    text: "**Amber** beat on Q1 margin and withdrew its warning of a 0.5–1 point squeeze, but cut its railway margin guide to 15–16% and ended June with net debt of ₹1,225cr, already above its ₹700–800cr year-end guide. **Syrma** beat on growth but missed on margin and working capital. How many years of work each company has booked is in the **Order book ÷ yearly sales** chart tab above.",
+                    text: "**Maxvolt** made ₹297cr of FY26 revenue against the ₹170–180cr it had targeted, but its H2 margin of 10.3% missed the 13–14% it spoke of in November, its recycling plant slipped from a March to an August start, and its FY27 growth guide fell from ‘50% to 70%’ on the May call to 40–50% in the annual report published in September. **Amber** beat on Q1 margin and withdrew its warning of a 0.5–1 point squeeze, but cut its railway margin guide to 15–16% and ended June with net debt of ₹1,225cr, already above its ₹700–800cr year-end guide. **Syrma** beat on growth but missed on margin and working capital. How many years of work each company has booked is in the **Order book ÷ yearly sales** chart tab above.",
                 },
                 {
                     label: 'My outlook',
-                    text: "The sector should grow revenue 20–30% a year for several years (KPMG, IBEF), but growth needs working capital and plants, and most of these companies are raising money to pay for it: Aimtron ₹205cr, Virtuoso about ₹85cr on top of convertible debt, Vinyas ₹150cr of warrants, Amber up to ₹5,000cr at IL JIN, Syrma a standing ₹1,000cr approval. **I expect the high-reliability makers to keep their margins and the appliance makers to grow revenue faster than value; the best returns will go to firms that own designs or scarce parts and can fund their working capital without heavy dilution.**",
+                    text: "The sector should grow revenue 20–30% a year for several years (KPMG, IBEF), but growth needs working capital and plants, and most of these companies are raising money to pay for it: Aimtron ₹205cr, Virtuoso about ₹85cr on top of convertible debt, Vinyas ₹150cr of warrants, Amber up to ₹5,000cr at IL JIN, Syrma a standing ₹1,000cr approval, and Maxvolt ‘planned capital raises’ for a ₹700cr campus. **I expect the high-reliability makers to keep their margins and the appliance makers to grow revenue faster than value; the best returns will go to firms that own designs or scarce parts and can fund their working capital without heavy dilution.**",
                 },
             ],
             tables: [
@@ -586,6 +622,7 @@ export const emsElectronics: SectorOverview = {
                         ['Amber Enterprises', 'Electronics and boards; railways; phones', '12% / **22%** / 30%'],
                         ['Virtuoso Optoelectro', 'ACs and compressors, net of dilution', '10% / **25%** / 35%'],
                         ['Sahasra Electronic', 'Memory packaging; merger', '5% / **20%** / 35%'],
+                        ['Maxvolt Energy Indus', 'Pack capacity 14,000 → 35,000 a month; e-rickshaws and storage; net of new shares and interest', '5% / **20%** / 35%'],
                     ],
                     note: 'My own judgement, not guidance. Earnings, not revenue: several companies will grow revenue faster than profit as they pass on component costs, add depreciation on new plants or issue shares. I raised Avalon from 27% to 30% on its FY29 target and operating leverage. The growth each price needs is in the live valuation table in section 8.',
                 },
@@ -606,6 +643,7 @@ export const emsElectronics: SectorOverview = {
                         ['PG Electroplast', 'No revenue guidance; 8% margin an ‘aspiration’; no new inventory target, as it now holds strategic stock against import curbs', '~₹400cr in FY27, then 1.5–2 years without big capex', '**Missed**: revenue +35%, but inventory stayed above ₹1,000cr and margin ~7.3%'],
                         ['Amber Enterprises', 'Electronics +40%, margin to ‘move upward’ from Q1’s 10.8% (May: 9.5–10%); railway margin 15–16% (was 16–17%); net debt ₹700–800cr by March', '₹1,800–2,000cr in FY27; ~₹1,400–1,500cr in FY28', '**Mixed**: margin 8.7% beat and the squeeze warning dropped; net debt already ₹1,225cr'],
                         ['Virtuoso Optoelectro', 'Revenue +35–40% a year; margin 9–10%; net margin 2.5–3%', '₹80–100cr listed company; ₹200–220cr group (ICRA)', '**Mixed**: revenue +85% inside the margin guide; compressor use just over 50% against ~80% expected'],
+                        ['Maxvolt Energy Indus', 'FY27 revenue +40–50% (annual report, Sep; May call: 50–70%); margins ‘sustainable’; 35,000 packs a month from Dec 2026–Jan 2027', '~₹75cr Ghaziabad plant; ₹74–75cr recycling phase one of ₹282cr; ₹700cr Aligarh campus (Sep 2026)', '**Walked back**: FY26 ₹297cr beat ₹170–180cr, but H2 margin 10.3% against 13–14%, recycling start slipped and the FY27 guide was cut; half-yearly, so no Q1 check'],
                     ],
                 },
             ],
@@ -613,7 +651,7 @@ export const emsElectronics: SectorOverview = {
         {
             heading: '7. Risk factors',
             body: [
-                "The risks fall into six groups. For each, what management addressed and what it left unanswered. The annual reports matter more here than in most sectors: several of these twelve have audit, record-keeping or related-party findings that weigh as much as the quarterly numbers.",
+                "The risks fall into six groups. For each, what management addressed and what it left unanswered. The annual reports matter more here than in most sectors: several of these thirteen have audit, record-keeping or related-party findings that weigh as much as the quarterly numbers.",
             ],
             points: [
                 {
@@ -622,15 +660,15 @@ export const emsElectronics: SectorOverview = {
                 },
                 {
                     label: 'Audit and accounting findings',
-                    text: "**Amber**: its auditor (S.R. Batliboi, part of EY) qualified the FY26 consolidated accounts for the first time, because they include unaudited figures for one subsidiary and for the joint venture Shivaliks Mercantile, whose ₹81.9cr share of loss was booked; Amber wrote off ₹112cr and sold its 49% for about ₹1.1 lakh on 30 March 2026, and its main accounting software lacked a database-level audit trail. **Kaynes**: in December 2025 Kotak found FY25 related-party purchases and balances missing from its standalone accounts (the company said they were ‘inadvertently not disclosed’), CRISIL cited ‘accounting and reporting lapses’, eight overseas subsidiaries were not audited in FY26, and Walker Chandiok replaces the Mysuru auditor from the September 2026 AGM. **Sahasra**'s annual report says no quantity reconciliation of raw materials and finished goods was prepared, and physical stock did not tally with records at 31 March after an SAP failure. **Aimtron**'s auditor lists basic control gaps: no policy for slow-moving stock, incomplete asset tagging, advances carried without confirmations. **Avalon** and **Cyient DLM** had clean opinions with audit trails working all year.",
+                    text: "**Amber**: its auditor (S.R. Batliboi, part of EY) qualified the FY26 consolidated accounts for the first time, because they include unaudited figures for one subsidiary and for the joint venture Shivaliks Mercantile, whose ₹81.9cr share of loss was booked; Amber wrote off ₹112cr and sold its 49% for about ₹1.1 lakh on 30 March 2026, and its main accounting software lacked a database-level audit trail. **Kaynes**: in December 2025 Kotak found FY25 related-party purchases and balances missing from its standalone accounts (the company said they were ‘inadvertently not disclosed’), CRISIL cited ‘accounting and reporting lapses’, eight overseas subsidiaries were not audited in FY26, and Walker Chandiok replaces the Mysuru auditor from the September 2026 AGM. **Sahasra**'s annual report says no quantity reconciliation of raw materials and finished goods was prepared, and physical stock did not tally with records at 31 March after an SAP failure. **Aimtron**'s auditor lists basic control gaps: no policy for slow-moving stock, incomplete asset tagging, advances carried without confirmations. **Maxvolt**'s auditor, a small Ghaziabad firm, gave a clean opinion, but the annual report is careless: its management discussion keeps draft wording (‘The final Annual Report should include management's specific assessment of liquidity’), its related-party note is garbled, the recycling plant's capacity is given as 5,200, 7,600 and 7,800 tonnes, and consolidated profit (₹28.1cr) exceeds standalone profit (₹24.4cr) on the same pre-tax profit because of a deferred-tax credit booked only in the consolidated accounts. **Avalon** and **Cyient DLM** had clean opinions with audit trails working all year.",
                 },
                 {
                     label: 'Related parties, promoters and dilution',
-                    text: "**Vinyas** asked shareholders to approve dealings of up to ₹400cr with its 26%-owned Israeli joint venture Nexus and ₹150cr with its 49%-owned US associate, together more than its FY26 revenue, priced at ‘arm's length’ without an outside valuation; its promoter owns only 29%. **Aimtron** sold about ₹44cr (roughly 27% of FY25 revenue) to promoter-owned US companies in FY25 and about ₹11cr in FY26, and received a transfer-pricing notice for FY24. **Virtuoso** paid an ₹8.61cr advance for capital goods to a close relative of a key manager in FY25, still outstanding at March 2026. **Sahasra** is merging three promoter-owned companies at swap ratios set by the promoters' valuer. **Centum**'s new plant will sit on land owned by a promoter-group company on terms not yet disclosed, and its chairman sold 4.53% (₹153cr) in August 2025; **Avalon**'s co-promoter sold 5.71% in June 2025 and left the board. Management at Vinyas said it has no plan to raise the promoter's stake.",
+                    text: "**Vinyas** asked shareholders to approve dealings of up to ₹400cr with its 26%-owned Israeli joint venture Nexus and ₹150cr with its 49%-owned US associate, together more than its FY26 revenue, priced at ‘arm's length’ without an outside valuation; its promoter owns only 29%. **Aimtron** sold about ₹44cr (roughly 27% of FY25 revenue) to promoter-owned US companies in FY25 and about ₹11cr in FY26, and received a transfer-pricing notice for FY24. **Virtuoso** paid an ₹8.61cr advance for capital goods to a close relative of a key manager in FY25, still outstanding at March 2026. **Sahasra** is merging three promoter-owned companies at swap ratios set by the promoters' valuer. **Centum**'s new plant will sit on land owned by a promoter-group company on terms not yet disclosed, and its chairman sold 4.53% (₹153cr) in August 2025; **Avalon**'s co-promoter sold 5.71% in June 2025 and left the board. Management at Vinyas said it has no plan to raise the promoter's stake. **Maxvolt** bought ₹72.4cr of goods in FY26 from Volts AMP, listed as a relative of a promoter or director: about 30% of its material cost and 24% of revenue, approved as ‘arm's length’. It also sold ₹5.9cr to another relative's firm (Ultra Energy), and issued warrants at ₹440 to its marketing head, a member of the promoter group; promoters own 39%.",
                 },
                 {
                     label: 'Leverage, guarantees and contingent liabilities',
-                    text: "**Kaynes** has guaranteed ₹2,390cr of its subsidiaries' borrowing (₹211cr a year earlier), mostly for chip and board plants whose own balance sheets show liabilities above assets, and its capital commitments jumped to ₹810cr. **Amber**'s net debt more than doubled to ₹1,225cr in Q1 while capex peaks, interest plus depreciation already take about ₹193cr a quarter, and more of its electronics profit belongs to outsiders, since IL JIN's private-equity investors own about 39% on a diluted basis. **Virtuoso**'s debt is 5.5 times operating profit with interest cover of 2.5 times (ICRA, rated BBB). **Aimtron**'s contingent liabilities rose to ₹20.9cr, about 45% of its FY26 profit. Elsewhere contingent liabilities are small (Syrma about ₹5cr, PG Electroplast about ₹17cr, Cyient DLM none disclosed).",
+                    text: "**Kaynes** has guaranteed ₹2,390cr of its subsidiaries' borrowing (₹211cr a year earlier), mostly for chip and board plants whose own balance sheets show liabilities above assets, and its capital commitments jumped to ₹810cr. **Amber**'s net debt more than doubled to ₹1,225cr in Q1 while capex peaks, interest plus depreciation already take about ₹193cr a quarter, and more of its electronics profit belongs to outsiders, since IL JIN's private-equity investors own about 39% on a diluted basis. **Virtuoso**'s debt is 5.5 times operating profit with interest cover of 2.5 times (ICRA, rated BBB). **Aimtron**'s contingent liabilities rose to ₹20.9cr, about 45% of its FY26 profit. **Maxvolt** has announced about ₹850cr of plants against ₹108cr of net worth and ₹36cr of operating profit, its debt was 0.79 times equity at March against the 0.3–0.5 times CRISIL expected (BBB-), and shareholders vote on 30 September to lift its borrowing limit from ₹200cr to ₹500cr. Elsewhere contingent liabilities are small (Syrma about ₹5cr, PG Electroplast about ₹17cr, Cyient DLM and Maxvolt none disclosed).",
                 },
                 {
                     label: 'Customer concentration',
@@ -638,7 +676,7 @@ export const emsElectronics: SectorOverview = {
                 },
                 {
                     label: 'Policy, tariffs and the weather',
-                    text: "Appliance incentives end after FY27 and must be renegotiated with brands, and the compressor import cap comes up for review in March 2027, just as PG Electroplast's and Virtuoso's new lines ramp; neither quantified what happens to margins if the cap is lifted. **PG Electroplast** showed how one bad season hurts: industry AC volumes fell about 15% in FY26, its profit fell 32%, and a March gas and truck shortage cost about ₹420cr of sales. **Avalon**'s clean-energy work (29% of Q1 revenue) depends on US storage incentives, which it says run past 2030. **Cyient DLM** and **Vinyas** are exposed to Israel and the Middle East, through customers and parts.",
+                    text: "Appliance incentives end after FY27 and must be renegotiated with brands, and the compressor import cap comes up for review in March 2027, just as PG Electroplast's and Virtuoso's new lines ramp; neither quantified what happens to margins if the cap is lifted. **PG Electroplast** showed how one bad season hurts: industry AC volumes fell about 15% in FY26, its profit fell 32%, and a March gas and truck shortage cost about ₹420cr of sales. **Avalon**'s clean-energy work (29% of Q1 revenue) depends on US storage incentives, which it says run past 2030. **Cyient DLM** and **Vinyas** are exposed to Israel and the Middle East, through customers and parts. **Maxvolt** imports its cells (it has named a Chinese supplier), so a weaker rupee or a cell shortage hits it directly, and its e-rickshaw growth rests on a lithium rule already pushed back a year to April 2028.",
                 },
             ],
         },
@@ -646,7 +684,7 @@ export const emsElectronics: SectorOverview = {
             heading: '8. Valuation (comparative)',
             body: [
                 "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it gives credit for cash and charges for debt. Where the two disagree, the balance sheet or heavy depreciation and interest is the reason.",
-                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **20% at 35x, 24% at 49x, 28% at 66–67x, 29% at 73x, 31% at 88–90x, 33% at 99–100x and 35–36% at 121–124x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E.",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **13% at 19–20x, 20% at 35x, 24% at 49x, 28% at 66–67x, 29% at 73x, 31% at 88–90x, 33% at 99–100x and 35–36% at 121–124x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E.",
             ],
             points: [
                 {
@@ -655,11 +693,11 @@ export const emsElectronics: SectorOverview = {
                 },
                 {
                     label: 'Which profit the price is measured against',
-                    text: "The live P/E uses reported trailing profit, which misleads in four cases. **Amber**'s reported profit is well below its own ‘adjusted’ profit (₹226cr against ₹338cr in FY26), but exceptional items recur, so I do not accept the adjusted figure either; my ~22% already assumes some recovery. **Centum**'s trailing profit mixes the one-time ₹94cr gain with losses from the exited French arm; its underlying standalone profit before one-offs is of a similar size, so the live figure is a fair guide. **Cyient DLM**'s includes the ₹19.6cr earn-out reversal, so on normalised profit it is dearer than it looks. **Sahasra**'s leans on other income, which will shrink as its IPO money is spent.",
+                    text: "The live P/E uses reported trailing profit, which misleads in five cases. **Amber**'s reported profit is well below its own ‘adjusted’ profit (₹226cr against ₹338cr in FY26), but exceptional items recur, so I do not accept the adjusted figure either; my ~22% already assumes some recovery. **Centum**'s trailing profit mixes the one-time ₹94cr gain with losses from the exited French arm; its underlying standalone profit before one-offs is of a similar size, so the live figure is a fair guide. **Cyient DLM**'s includes the ₹19.6cr earn-out reversal, so on normalised profit it is dearer than it looks. **Sahasra**'s leans on other income, which will shrink as its IPO money is spent. **Maxvolt**'s consolidated profit is ₹3.6cr higher than its standalone profit only because of a one-off tax credit, so I measure it on the standalone figure (₹24.4cr), which also includes an H2 profit that fell 11% from H1.",
                 },
                 {
                     label: 'Fits',
-                    text: "**IKIO** is the only company whose price asks for no more than I expect: about {need:IKIO Technologies|20}% a year against my ~18%. The fit is on a lower-quality business than at listing (margins halved, return on capital 9%, free cash negative three years), so it is a follow rather than an own; I would want asset turns rising and free cash turning positive first.",
+                    text: "**IKIO** and **Maxvolt** are the only companies whose prices ask for no more than I expect. IKIO needs about {need:IKIO Technologies|20}% a year against my ~18%. The fit is on a lower-quality business than at listing (margins halved, return on capital 9%, free cash negative three years), so it is a follow rather than an own; I would want asset turns rising and free cash turning positive first. **Maxvolt** needs only about {need:Maxvolt Energy Indus|13}% against my ~20%, but my estimate already allows for heavy new-share issues, and the price is low for reasons the P/E does not show: five years of negative operating cash, a related-party supplier for 30% of its materials, and a ₹700cr plan on a ₹108cr balance sheet. It is an avoid whatever the price.",
                 },
                 {
                     label: 'Full',
@@ -690,7 +728,7 @@ export const emsElectronics: SectorOverview = {
         {
             company: 'IKIO Technologies', rank: 3, stance: 'TURNAROUND', segment: DURABLES,
             what: "Noida designer and maker of LED lighting (home, retail, refrigeration and car lamps), hearables and wearables, and Honeywell alarm products, for brands in India and abroad.",
-            view: "**The only price that fits, on a business that has lost its old margins.** Revenue grew 41% in Q1 and the home-lighting work for one big customer is now 27% of sales. But the operating margin has halved since FY23, guidance was trimmed to 18–20% growth at 13–14%, the cash cycle is 253 days and free cash has been negative three years running. The price needs about {need:IKIO Technologies|20}% a year, close to my ~18%.",
+            view: "**A price that fits, on a business that has lost its old margins.** Revenue grew 41% in Q1 and the home-lighting work for one big customer is now 27% of sales. But the operating margin has halved since FY23, guidance was trimmed to 18–20% growth at 13–14%, the cash cycle is 253 days and free cash has been negative three years running. The price needs about {need:IKIO Technologies|20}% a year, close to my ~18%.",
             watch: 'Margin holding at 13–14% as chip costs bite; Block II filling and asset turns rising from about 2 times; Signify volumes after its Dixon venture.',
         },
         {
@@ -742,7 +780,13 @@ export const emsElectronics: SectorOverview = {
             watch: 'Compressor utilisation (just over 50%); the March 2027 import-cap review; recovery of the ₹8.61cr advance.',
         },
         {
-            company: 'Sahasra Electronic', rank: 12, stance: 'AVOID', segment: SCALE,
+            company: 'Maxvolt Energy Indus', rank: 12, stance: 'AVOID', segment: BATTERY,
+            what: "Ghaziabad assembler of lithium-ion battery packs (imported cells plus its own battery-management electronics) for e-scooters, e-rickshaws and home and commercial storage, sold mainly through 875+ dealers and 31+ vehicle makers; listed on the NSE SME platform and reporting half-yearly.",
+            view: "**Fast growth at a price that fits, ruled out by cash, funding and disclosure.** FY26 revenue rose 176% to ₹297cr with a 27% return on capital, and the price needs only about {need:Maxvolt Energy Indus|13}% a year against my ~20%. But operating cash has been negative for five years, the H2 margin fell to 10.3%, stock tripled to ₹62cr, and it has announced about ₹850cr of plants on ₹108cr of net worth. It bought ₹72cr (30% of its materials) from a firm described as a promoter's relative, and its annual report left draft wording in the management discussion.",
+            watch: 'H1 FY27 results (after 1 October): margin back above 12% and operating cash positive; how the ₹700cr Aligarh campus is funded and how many new shares it takes; purchases from Volts AMP falling or explained.',
+        },
+        {
+            company: 'Sahasra Electronic', rank: 13, stance: 'AVOID', segment: SCALE,
             what: "Small Noida and Bhiwadi maker of circuit boards, memory cards, drives and motherboards, with a memory-chip packaging (OSAT) unit; listed on the NSE SME platform and reporting half-yearly.",
             view: "**Too much still to prove, and its own records admit problems.** FY26 revenue grew 45% to ₹139cr and beat guidance, but chip packaging made ₹15.7cr against ₹50cr promised, ₹10cr of the ₹13cr pre-tax profit was other income, operating cash was negative, and the annual report says stock did not tally at year-end. The FY27 target leans on merging in three promoter-owned companies. The price needs close to {need:Sahasra Electronic|29}% a year against my ~20%; governance, not price, drives the call.",
             watch: 'Merger ratios and approvals; chip-packaging revenue near ₹20–25cr in H1; clean stock accounting.',
@@ -754,12 +798,13 @@ export const emsElectronics: SectorOverview = {
         body: [
             "**Scale EMS building components.** **Syrma: follow** (from own). The best balance of growth and quality here, but Q1 margin and working capital went the wrong way and the price needs about {need:Syrma SGS Tech.|31}% a year; I would buy on a fall of about 20%. **Kaynes: wait.** A strong core business, until metering cash comes in and a new auditor signs clean accounts. **Sahasra: avoid.** Stock records that did not tally, a promoter merger and a chip unit far below plan.",
             "**High-reliability EMS.** **Avalon: follow.** The cleanest execution; I raise my estimate to ~30%, but the price needs about {need:Avalon Tech|36}%. **Centum: wait** (from follow). Q1 slowed and guidance slipped; it needs defence revenue to jump in H2. **Vinyas: wait.** A defence order book at a full price, with ₹550cr of related-party limits. **Cyient DLM: wait.** Growth is back, cash is not. **Aimtron: wait.** Fast growth, negative cash, control gaps and past sales to promoter companies.",
-            "**Consumer durables and lighting.** **IKIO: follow.** The only price that fits, on a weaker business than at listing. **PG Electroplast: pass.** Share gains, but seasonal, fixed-fee and cash-hungry at a stretched price. **Amber: avoid.** A qualified audit, recurring one-offs, net debt doubling in a quarter and a price needing about {need:Amber Enterprises|35–36}% a year. **Virtuoso: avoid.** A 2.4% net margin funded by debt and new shares.",
+            "**Consumer durables and lighting.** **IKIO: follow.** The only price that fits among the names I would buy, on a weaker business than at listing. **PG Electroplast: pass.** Share gains, but seasonal, fixed-fee and cash-hungry at a stretched price. **Amber: avoid.** A qualified audit, recurring one-offs, net debt doubling in a quarter and a price needing about {need:Amber Enterprises|35–36}% a year. **Virtuoso: avoid.** A 2.4% net margin funded by debt and new shares.",
+            "**Lithium battery packs.** **Maxvolt: avoid.** Revenue nearly tripled and the price needs only about {need:Maxvolt Energy Indus|13}% a year, but operating cash has never been positive, the H2 margin fell to 10.3%, a promoter's relative supplied 30% of its materials, and a ₹700cr campus on a ₹108cr balance sheet means heavy borrowing and new shares.",
             "**What would change my view.** Component shortages easing would release cash across the sector and help Syrma, Cyient DLM and IKIO first. A fall of 20–30% in Syrma or Avalon would bring them within my estimates. Kaynes collecting its metering bills under a clean new audit would make it one of the more attractive names here. A lifted compressor cap or a cool summer would hit PG Electroplast and Virtuoso; a clean FY27 audit and falling net debt would be Amber's first step back.",
-            "**What to watch next quarter.** Syrma's working-capital days; Avalon's US break-even; Centum's defence revenue; Cyient DLM's stock; Kaynes's receivables and first OSAT revenue; the half-year results of Vinyas, Aimtron and Sahasra (October–November); Amber's net debt; PG Electroplast's compressor start; IKIO's margin.",
+            "**What to watch next quarter.** Syrma's working-capital days; Avalon's US break-even; Centum's defence revenue; Cyient DLM's stock; Kaynes's receivables and first OSAT revenue; the half-year results of Vinyas, Aimtron and Sahasra (October–November); Amber's net debt; PG Electroplast's compressor start; IKIO's margin; Maxvolt's H1 cash flow and how it funds Aligarh.",
         ],
         bottomLine:
-            "Growth is everywhere in Indian EMS; free cash is almost nowhere, and at today's prices none of the twelve is one to own. Syrma SGS Tech., Avalon Tech and IKIO Technologies are worth following for a better entry. Avoid Amber Enterprises, whose FY26 accounts carry a qualified audit opinion, and Virtuoso Optoelectro and Sahasra Electronic, where too little profit and too many related-party questions reach shareholders.",
+            "Growth is everywhere in Indian EMS; free cash is almost nowhere, and at today's prices none of the thirteen is one to own. Syrma SGS Tech., Avalon Tech and IKIO Technologies are worth following for a better entry. Avoid Amber Enterprises, whose FY26 accounts carry a qualified audit opinion, and Virtuoso Optoelectro, Sahasra Electronic and Maxvolt Energy Indus, where too little profit, cash or clear disclosure reaches shareholders.",
     },
 
     sources: [
@@ -798,5 +843,10 @@ export const emsElectronics: SectorOverview = {
         { label: 'Virtuoso Optoelectronics annual report FY26 — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2b1b0650-e6f0-447c-a260-fd403cdeda15.pdf' },
         { label: 'IKIO Technologies Q1 FY27 investor presentation', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2341cd44-64ff-4ab6-8f26-1b54891fec19.pdf' },
         { label: 'IKIO Technologies annual report FY26 — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/2cfbb62f-7f7e-43ae-a85b-a7ad1311b674.pdf' },
+        { label: 'Maxvolt Energy Industries H2 FY26 investor presentation — NSE', url: 'https://nsearchives.nseindia.com/corporate/MAXVOLT2019_12052026235615_MEIL_Investor_Presentation_FY2025-26.pdf' },
+        { label: 'Maxvolt Energy Industries H2 FY26 earnings call transcript — NSE', url: 'https://nsearchives.nseindia.com/corporate/MAXVOLT2019_19052026221804_MEIL_Earning_Call_Transcript_Cover_Letter_H2FY26.pdf' },
+        { label: 'Maxvolt Energy Industries annual report FY26 and AGM notice — NSE', url: 'https://archives.nseindia.com/annual_reports/SME_AR_32086_MAXVOLT_2025_2026_A_88590994_26092026135625.pdf' },
+        { label: 'Maxvolt Energy Industries rating rationale — CRISIL, Feb 2026', url: 'https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/MaxvoltEnergyIndustriesLimited_February 12_ 2026_RR_385709.html' },
+        { label: 'Maxvolt Energy Industries: 10 GWh Aligarh campus press release — NSE, 23 Sep 2026', url: 'https://nsearchives.nseindia.com/corporate/MAXVOLT2019_23092026232640_PRELEASE.pdf' },
     ],
 };

@@ -40,13 +40,17 @@ const intro: OverviewSection[] = [
                 text: "A bare silicon chip must be cut, mounted, wired and sealed in a package before it can be used. **OSAT** (outsourced semiconductor assembly and test) companies do this. India is only starting: Kaynes has a plant, and Sahasra packages memory chips.",
             },
             {
+                label: 'Lithium battery pack',
+                text: "A battery pack joins hundreds of bought-in lithium-ion **cells** with a **battery-management system (BMS)**, the small circuit board that balances the cells and cuts power if they overheat, inside a sealed case. Maxvolt makes packs; like almost every Indian pack maker, it imports the cells.",
+            },
+            {
                 label: 'High-reliability electronics',
                 text: "Electronics for aircraft, satellites, radar, trains and medical devices must work for decades without failure. Suppliers need special approvals (AS9100, Nadcap, ISO 13485, rail approvals) that take years to win, which is why customers rarely switch.",
             },
         ],
     },
     {
-        heading: 'Four ways of selling',
+        heading: 'Five ways of selling',
         body: [
             "Who the customer is decides the margin and how long cash is tied up.",
         ],
@@ -58,6 +62,7 @@ const intro: OverviewSection[] = [
                     ['**Indian defence, space and railways**', 'Centum, Vinyas, Avalon (Kavach), Amber (Sidwal)', 'Negotiated or tendered, often protected against input costs', 'Slow; milestone payments'],
                     ['**Consumer brands**', 'Amber, PG Electroplast, Virtuoso, IKIO, Syrma (consumer)', 'Fixed fee per unit, reset each season', 'Fast: brands pay quickly'],
                     ['**State utilities (smart meters)**', 'Kaynes', 'Fixed-price tenders; paid over years', 'Very slow: ₹1,311cr outstanding'],
+                    ['**Battery dealers and small vehicle makers**', 'Maxvolt', 'Its own brand: list prices to dealers, negotiated with vehicle makers', 'Bills are paid within months, but 4–5 months of imported cells sit in stock'],
                 ],
             },
         ],
@@ -415,7 +420,7 @@ const profiles: BusinessProfile[] = [
         ],
         difficulty: { level: 'Medium', text: "Designs its own products (3,000+ SKUs) and redesigns them around scarce chips; the products themselves are simple." },
         moat: "Design and fast redesign skills. Lighting and earphones are competitive, price-driven markets.",
-        inShort: ["**Designs and makes LED lighting, earphones and wearables** for brands in India and abroad, from Noida.", "**Good:** far less reliance on one big customer, and 41% growth in Q1. **Bad:** returns fell from 41% to 9% after its IPO-funded plants.", "**Verdict: follow.** The one sensibly priced name here; buy as margins recover."],
+        inShort: ["**Designs and makes LED lighting, earphones and wearables** for brands in India and abroad, from Noida.", "**Good:** far less reliance on one big customer, and 41% growth in Q1. **Bad:** returns fell from 41% to 9% after its IPO-funded plants.", "**Verdict: follow.** The one sensibly priced name here that I would buy; buy as margins recover."],
         salesDrivers: ["**Diversifying customers**: home-lighting work for one large customer fell from about 60% to 27% of sales.", "**New lines**: hearables, wearables and car lighting, and a Honeywell programme.", "**Exports**: about 19% of FY26 revenue, mainly the Middle East; US growth slowed by tariffs.", "**Filling new plants**: it expects asset turns to return to pre-IPO levels only in three to three and a half years."],
         inputs: "**LED chips, driver chips, metals, plastics and copper.** Materials were 60% of sales in FY26; staff are 15%.",
         costEffect: "**Hit by spot buying in the shortage.** It bought chips at spot prices to keep customers supplied and waited seven months for one chip. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 6 points. **What happened:** the circuit-board index was flat, but its margin fell from about 21% to 13% as chip and metal costs rose and minimum wages were revised.",
@@ -424,6 +429,38 @@ const profiles: BusinessProfile[] = [
         money: "Net debt about ₹12cr (Screener). ₹39cr of its IPO money was still unspent at March 2026, with the deadline extended to FY27. Signify was about a quarter of FY26 revenue. Promoters hold **73%**, unchanged.",
         watch: ["Margin back to 13–14%.", "Plant utilisation.", "Honeywell and car-lighting programmes."],
         charts: emsElectronicsCharts['IKIO Technologies'],
+    },
+    // ── Lithium battery packs ─────────────────────────────────────────────────
+    {
+        company: 'Maxvolt Energy Indus',
+        inShort: ["**Ghaziabad assembler of lithium-ion battery packs** for e-scooters, e-rickshaws and home and commercial storage, sold under its own brand through 875+ dealers; listed on the NSE SME platform.", "**Good:** revenue up 176% to ₹297cr in FY26 with a 27% return on capital. **Bad:** operating cash negative five years running, ₹72cr of purchases from a promoter's relative, and ₹850cr of plans on a ₹108cr balance sheet.", "**Verdict: avoid.** The price is low, but the cash, the funding and the disclosure are not good enough."],
+        tagline: "Ghaziabad maker of lithium-ion battery packs, chargers and inverters for electric two- and three-wheelers and energy storage, sold under its own brand; listed on the NSE SME platform and reporting half-yearly.",
+        revenue: '₹297cr (FY26, standalone)',
+        products: [
+            { name: 'E-scooter packs', text: "Battery packs for electric two-wheelers, sold to dealers as replacements and to smaller scooter makers; 73% of FY26 revenue." },
+            { name: 'E-rickshaw packs', text: "Larger packs for three-wheelers (L3 and, after an ICAT approval in 2026, L5); ₹22cr in FY26 from almost nothing a year earlier." },
+            { name: 'Energy storage', text: "Home inverter batteries and custom packs up to a few hundred kilowatt-hours for solar and commercial users; ₹21cr in FY26." },
+            { name: 'Chargers and others', text: "Battery chargers (₹20cr), refurbished 'second-life' batteries and small consumer batteries (₹16cr)." },
+            { name: 'Recycling (planned)', text: "A 75%-owned subsidiary, Maxvolt ReEarth, set up in January 2026 to crush old packs into 'black mass'; its Aligarh plant has slipped and the site is now also planned for a battery campus." },
+        ],
+        revenueText: "In FY26, **e-scooter packs were 73% of revenue**, e-rickshaw packs 7%, energy storage 7%, chargers 7% and other products 5% (company figures). About 35–40% of e-scooter sales went to vehicle makers and the rest to dealers (H1 FY26 call). All sales are in India. The company reports one business segment in its accounts.",
+        mixes: [
+            { caption: 'Revenue by product, FY26 (company)', parts: [{ label: 'E-scooter packs', share: 73 }, { label: 'E-rickshaw packs', share: 7 }, { label: 'Energy storage', share: 7 }, { label: 'Chargers', share: 7 }, { label: 'Other', share: 6 }] },
+        ],
+        customers: [
+            "**875+ dealers and distributors** in 16 states, served from 12 warehouses and service points covering about 1,300 pin codes; dealers can diagnose a pack through its smart BMS.",
+            "**31+ vehicle makers**, mostly small two- and three-wheeler brands, including white-label packs; it does not name them or disclose customer concentration. CRISIL says 75–80% of revenue comes from the automotive sector.",
+        ],
+        difficulty: { level: 'Low', text: "Pack assembly uses imported cells and standard machines; the skill is in the battery-management electronics, safety testing (AIS 156) and service. Many small rivals do the same." },
+        moat: "A growing dealer and service network and a three-year warranty keep dealers loyal. But packs are a commodity, cells are bought from the same Chinese suppliers as everyone else, and prices have fallen from ₹13–14 to about ₹9 per watt-hour.",
+        salesDrivers: ["**Capacity**: from about 6,500 packs a month in December 2025 to 14,000 from January 2026; a second phase to 35,000 a month (about 2.2–2.5 GWh) is due to start production in December 2026 or January 2027.", "**E-rickshaws and storage**: 60% of the new plant is for them; a rule moving e-rickshaws from lead-acid to lithium starts in April 2028, and new rooftop-solar systems of 10 kilowatts and above must add storage, management says.", "**The dealer network**: grew from 620 to 875 in a year; it adds vehicle makers only as capacity allows.", "**Guidance**: FY27 revenue growth of 40–50% in the annual report (September), down from ‘50% to 70%’ on the May call.", "**New projects**: a ₹700cr, 10 GWh campus at Aligarh (first half in 24–30 months) and a recycling plant, both far larger than the company today."],
+        inputs: "**Imported lithium-ion cells**, battery-management boards, casings, wiring and chargers' electronics. Materials were 81% of sales in FY26.",
+        costEffect: "**Partly passed on, with a lag.** It sells to dealers at list prices and to vehicle makers on negotiated terms; in H2 FY26 dearer cells and a weaker rupee cut its gross margin from 19.5% to 17.9%, and management said price swings are acceptable because the whole industry faces them. It now hedges some cell prices for 6–12 months. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 8 points (12% to 4%). **What happened:** India's price index for rechargeable (lithium-ion) batteries rose only about 6% over the chart period, yet its margin fell from about 21% to 10%: mostly because the early figures came from a tiny business, and in H2 FY26 because of the rupee, cell shortages and more low-margin sales to vehicle makers.",
+        competitors: [{ name: 'Exide, Amara Raja', note: 'Large battery makers building lithium cells and packs, with much bigger dealer networks.' }, { name: 'Eastman, Tata and other brands', note: 'Named by management as rivals in inverter and vehicle packs.' }, { name: 'Small local assemblers and imports', note: 'Many unbranded pack makers and Chinese imports compete on price.' }],
+        position: "**A small, fast-growing own-brand pack maker**; it aims for 5% of India's market by FY32 but gives no current share.",
+        money: "Net debt about ₹59cr at FY26 (Screener), about ₹37cr counting ₹22cr of deposits; borrowings rose from ₹10cr to ₹85cr in a year, mostly to pay for stock. Announced projects add up to about ₹850cr (₹75cr Ghaziabad plant, ₹282cr recycling over three phases, ₹700cr Aligarh campus) against ₹108cr of net worth, to be funded by debt and ‘planned capital raises’; shareholders vote on 30 September to lift the borrowing limit to ₹500cr. Warrants at ₹440 to its marketing head (promoter group) and one other investor will add about 9% to the share count. In FY26 it bought ₹72.4cr of goods from Volts AMP, listed as a relative of a promoter. CRISIL rates it BBB-. Promoters hold **39%**, unchanged since March 2025.",
+        watch: ["H1 FY27 margin back above 12% and positive operating cash.", "How the ₹700cr campus is funded, and the dilution.", "Purchases from Volts AMP."],
+        charts: emsElectronicsCharts['Maxvolt Energy Indus'],
     },
 ];
 

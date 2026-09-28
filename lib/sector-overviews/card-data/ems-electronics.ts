@@ -1779,10 +1779,138 @@ export const emsElectronicsCharts: Record<string, ProfileCharts> = {
             "inventory5y": -139,
             "payables5y": 3
         }
+    },
+    "Maxvolt Energy Indus": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 81
+                },
+                {
+                    "label": "Staff",
+                    "share": 3
+                },
+                {
+                    "label": "Other costs",
+                    "share": 3
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 13
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "marginVsInput": {
+            "input": "Rechargeable (lithium-ion) batteries price",
+            "periods": [
+                "H2 FY24",
+                "H1 FY25",
+                "H2 FY25",
+                "H1 FY26",
+                "H2 FY26"
+            ],
+            "margin": [
+                21.4,
+                12.5,
+                13.4,
+                13.8,
+                10.2
+            ],
+            "index": [
+                100,
+                100,
+                102,
+                106,
+                106
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                0.0,
+                1.0,
+                7.0,
+                14.0,
+                36.0
+            ],
+            "ocf": [
+                -2.0,
+                -0.0,
+                -8.0,
+                -45.0,
+                -29.0
+            ],
+            "fcf": [
+                -2.55,
+                -0.02,
+                -8.73,
+                -48.49,
+                -45.379999999999995
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "19.5x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "15.3x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹59cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "-145%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "12%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                25,
+                48
+            ],
+            "inventoryDays": [
+                169,
+                94
+            ],
+            "payableDays": [
+                46,
+                18
+            ],
+            "cycleDays": [
+                147,
+                124
+            ],
+            "absorbed5y": -140,
+            "receivables5y": -28,
+            "inventory5y": -62,
+            "payables5y": 3
+        }
     }
 };
 
-// Fixed valuation inputs as of the note date; market value and P/E are live on the page.
 export const emsElectronicsValuationInputs: Record<string, ValuationInput> = {
     "Avalon Tech": {
         "netDebt": 142,
@@ -1855,5 +1983,11 @@ export const emsElectronicsValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 88.0,
         "mcapAtWriting": 1613.0,
         "peAtWriting": 34.7
+    },
+    "Maxvolt Energy Indus": {
+        "netDebt": 59,
+        "ttmEbitda": 35.0,
+        "mcapAtWriting": 475.0,
+        "peAtWriting": 19.5
     }
 };
