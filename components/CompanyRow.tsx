@@ -43,8 +43,6 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     }, [expanded]);
     // Material exchange filings from the sector's digest, if one exists.
     const companyFilings = company.filingHeadlines || [];
-    // Shareholding warnings (promoter selling, pledges, institutions leaving).
-    const holdingWarnings = (company.holding?.notes || []).filter(n => n.tone === 'watch');
     const { isAdminMode } = useAdmin();
     const [isDeleting, setIsDeleting] = useState(false);
     const [showColorPicker, setShowColorPicker] = useState(false);
@@ -357,16 +355,6 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                 title={companyFilings.map(f => `${f.date}: ${f.headline}`).join('\n')}
                             >
                                 {companyFilings.length} {companyFilings.length === 1 ? 'filing' : 'filings'}
-                            </button>
-                        )}
-                        {holdingWarnings.length > 0 && (
-                            <button
-                                type="button"
-                                onClick={(e) => { e.stopPropagation(); setExpanded(true); }}
-                                className={`flex-shrink-0 cursor-pointer hover:opacity-80 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border ${TONE_STYLE.watch.chip}`}
-                                title={[`Shareholding, ${company.holding!.period}:`, ...holdingWarnings.map(n => n.text)].join('\n')}
-                            >
-                                ⚠ holding
                             </button>
                         )}
                         {company.isSme && (

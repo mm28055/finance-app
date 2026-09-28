@@ -58,7 +58,10 @@ export function HoldingCard({ holding }: { holding: NonNullable<EnrichedCompany[
                 </ResponsiveContainer>
             )}
             {holding.notes.length > 0 && (
-                <ul className="mt-3 flex flex-col gap-1">
+                <ul className={`mt-3 flex flex-col gap-1 ${holding.notes.some(n => n.tone === 'watch') ? 'rounded-md border border-[#DDCDF5] bg-[#F7F3FD] px-2.5 py-2' : ''}`}>
+                    {holding.notes.some(n => n.tone === 'watch') && (
+                        <li className="text-[10px] font-semibold uppercase tracking-wide text-[#6B3FA0]">⚠ Holding change</li>
+                    )}
                     {holding.notes.map((n, i) => (
                         <li key={i} className="flex items-center gap-2 text-xs text-gray-700">
                             <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${TONE_STYLE[n.tone].dot}`} aria-hidden="true" />
