@@ -888,6 +888,96 @@ export const industrialRailwayCharts: Record<string, ProfileCharts> = {
             "inventory5y": -66,
             "payables5y": 40
         }
+    },
+    "Cosmic CRF": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 85
+                },
+                {
+                    "label": "Staff",
+                    "share": 1
+                },
+                {
+                    "label": "Other costs",
+                    "share": 3
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 11
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "marginVsInput": {
+            "input": "Hot-rolled steel price",
+            "periods": [
+                "H1 FY25",
+                "H2 FY25",
+                "H1 FY26",
+                "H2 FY26"
+            ],
+            "margin": [
+                13.0,
+                9.5,
+                12.5,
+                10.0
+            ],
+            "index": [
+                100,
+                94,
+                96,
+                94
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                44.0,
+                78.0
+            ],
+            "ocf": [
+                -73.0,
+                24.0
+            ],
+            "fcf": [
+                -120.0,
+                -109.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "24.6x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "16.0x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹22cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "n/m",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "11%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     }
 };
 
@@ -928,5 +1018,11 @@ export const industrialRailwayValuationInputs: Record<string, ValuationInput> = 
         "ttmEbitda": 59.0,
         "mcapAtWriting": 2362.0,
         "peAtWriting": 56.1
+    },
+    "Cosmic CRF": {
+        "netDebt": 22,
+        "ttmEbitda": 79.0,
+        "mcapAtWriting": 1245.0,
+        "peAtWriting": 24.6
     }
 };

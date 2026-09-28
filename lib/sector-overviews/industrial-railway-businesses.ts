@@ -21,7 +21,7 @@ const intro: OverviewSection[] = [
         points: [
             {
                 label: 'Wagons and coaches',
-                text: "**Wagons** carry freight (coal, containers, cars, cement) and are welded steel boxes built to Indian Railways' designs. **Coaches** carry passengers; modern ones (Vande Bharat, metros) have aluminium or stainless bodies and far more electrical content.",
+                text: "**Wagons** carry freight (coal, containers, cars, cement) and are welded steel boxes built to Indian Railways' designs. **Coaches** carry passengers; modern ones (Vande Bharat, metros) have aluminium or stainless bodies and far more electrical content. Wagon builders buy many body parts ready-made: **cold-rolled sections**, doors and panels from suppliers such as Cosmic CRF.",
             },
             {
                 label: 'Traction and propulsion',
@@ -38,7 +38,7 @@ const intro: OverviewSection[] = [
         ],
     },
     {
-        heading: 'Three ways of selling',
+        heading: 'Four ways of selling',
         body: [
             "Almost everything here is sold to one buyer, Indian Railways, which decides how price and cash work.",
         ],
@@ -46,9 +46,10 @@ const intro: OverviewSection[] = [
             {
                 columns: ['Model', 'Who', 'How the price is set', 'How fast the cash comes'],
                 rows: [
-                    ['**Indian Railways tenders**', 'All six', 'Lowest bid, with quantities spread across approved suppliers', 'Annual cycle; heavy in the fourth quarter'],
+                    ['**Indian Railways tenders**', 'All seven (Cosmic CRF for refurbishment parts)', 'Lowest bid, with quantities spread across approved suppliers', 'Annual cycle; heavy in the fourth quarter'],
                     ['**Private and export wagon buyers**', 'Texmaco, Titagarh, Jupiter', 'Negotiated', 'Faster, but orders are lumpy'],
                     ['**Metro corporations and consortiums**', 'Titagarh, Hind Rectifiers', 'Tenders for complete trains or systems', 'Milestone payments'],
+                    ['**Wagon builders and infrastructure contractors**', 'Cosmic CRF', 'Per order, as a conversion margin over steel', 'About 15–20 days from wagon builders; slower from contractors'],
                 ],
             },
         ],
@@ -161,6 +162,34 @@ const profiles: BusinessProfile[] = [
         money: "Net debt of about **₹306cr** (Screener, March 2026), against a further ₹279cr of investments. Capex was ₹369cr in FY26, with about ₹600cr planned for the shipyard; free cash flow has been negative in four of the last five years. It has also undertaken to cover shortfalls on the wheel venture's loans, ₹504cr at March 2026 (₹170cr a year earlier), and has ₹187.5cr of tax and legal claims. **Firema and the auditor:** its Italian associate Firema's audited FY25 loss was €104.7m against €16.9m first used, so FY25 was restated (standalone profit ₹317cr → ₹90.6cr after ₹270cr of write-offs) and a further ₹64.8cr was booked in FY26; Firema's business was sold in March 2026 with nothing for shareholders. The auditor reported ‘material weaknesses’ in the internal controls behind those judgements, though the accounts themselves are unqualified. CRISIL rates it AA−. Promoters hold **40.46%**, down from 44.97% in September 2023; warrants issued to promoters at ₹947 would lift this to 41.44% when converted.",
         watch: ["Award of the 1 lakh wagon tender.", "Coach deliveries against the 200 target (30 in Q1 FY27), and the wheel plant (already late) starting output.", "Internal controls reported clean next year, and operating cash flow staying positive."],
         charts: industrialRailwayCharts['Titagarh Railsystems'],
+    },
+    {
+        company: 'Cosmic CRF',
+        inShort: ["**A Kolkata maker of the steel parts inside wagons and coaches**: cold-rolled sections, doors and body panels sold to wagon builders and Railway depots, plus sheet piles, poles and crash barriers for infrastructure, and bogie springs.", "**Good:** tonnage rose 90% in FY26, revenue 78% to ₹717cr, and net debt is only ₹22cr. **Bad:** a 10–11% margin on steel, free cash flow of −₹109cr, an auditor's flag on related-party advances, and new shares for a promoter-linked firm.", "**Verdict: wait.** The price roughly fits my estimate, but the Amzen wagon-plant purchase will reshape the company within a year."],
+        tagline: "Cold-rolled formed steel sections and fabricated wagon and coach parts, infrastructure steel products with in-house galvanizing, and railway springs; listed on the BSE SME platform.",
+        revenue: '₹717cr (FY26, consolidated)',
+        products: [
+            { name: 'Cold-rolled sections and wagon parts (Singur)', text: "Steel strip rolled cold into shaped sections, then cut and welded into flap doors, centre sills, side and end walls and other parts for freight wagons and coaches, including items that need Railways inspection before dispatch. It says it can supply about 75% of a wagon or coach body's parts and makes 3,000–3,500 different items. Capacity 55,000 tonnes a year; 42,690 tonnes made in FY26." },
+            { name: 'Infrastructure steel (N.S. Engineering)', text: "Sheet piles and cofferdam parts for ports, bridges and river work, crash barriers, street-light, octagonal and high-mast poles, all galvanized in its own bath. Bought out of insolvency in 2024 (74% owned; the rest being bought with new shares) and scaled from 12,500 to 65,000 tonnes; 56,380 tonnes made in FY26." },
+            { name: 'Springs and forgings (Cosmic Springs & Engineers)', text: "Helical and Casnub bogie springs, with ₹67cr of FY26 sales but only about ₹1.5cr of profit because, without a Railways approval, it could sell only to traders. A prototype approval for up to 60,000 springs came in June 2026, issued to the promoter company still transferring the unit. An 11,000-tonne forging unit is being built." },
+            { name: 'Amzen wagon plant (being bought)', text: "An idle 72.5-acre wagon factory in Punjab, built for 3,600 wagons a year (expandable to 7,200) plus 20,000 tonnes of bridge girders. A letter of intent for up to ₹284cr came in July 2026; the insolvency tribunal must still approve it. Management expects first production in March–May 2027." },
+        ],
+        revenueText: "The company reports a single segment and does not split revenue. Filed figures give a rough picture: the parent (mainly railway parts) sold **₹334cr** of the group's ₹717cr in FY26, springs **₹67cr** (from the call), leaving about **₹316cr** for N.S. Engineering's infrastructure products. By tonnage, N.S. Engineering made more than half of FY26 output. The order book was **₹760cr** in March 2026, split between railway and infrastructure.",
+        mixes: [
+            { caption: 'Revenue by company, FY26 (approximate, from filed and call figures)', parts: [{ label: 'Cosmic CRF, Singur (railway parts)', share: 47 }, { label: 'N.S. Engineering (infrastructure)', share: 44 }, { label: 'Springs', share: 9 }], note: 'Group sales less the parent’s own sales and the springs figure given on the call; sales between group companies are small.' },
+            { caption: 'Production by plant, FY26 (tonnes, company)', parts: [{ label: 'N.S. Engineering', share: 53 }, { label: 'Singur', share: 40 }, { label: 'Cosmic Springs & Engineers', share: 7 }] },
+        ],
+        customers: ["**Wagon and coach builders** such as Titagarh, Texmaco and Hindustan Engineering, which assemble its parts into wagons and pay in about 15–20 days.", "**Indian Railways zones and depots**, which buy refurbishment parts by tender (about ₹120–150cr of such orders were held in November 2025).", "**Infrastructure contractors and steel companies**, mostly in and around Kolkata, for sheet piles, poles and crash barriers; Infomerics notes that most revenue and orders come from West Bengal."],
+        difficulty: { level: 'Medium', text: "Rolling and welding steel to a drawing needs machines, space and Railways inspection, not rare know-how, and many small firms do it. Springs and forgings are harder, needing Railways approvals that take months of trials." },
+        moat: "Scale and low overheads let it undercut small rivals, and one supplier for most of a wagon body saves builders time. The weakness: steel is 85% of the price, buyers set the design, and its first safety-critical approval is only at prototype stage.",
+        salesDrivers: ["**Tonnes, not prices**: management guides 1,22,000–1,30,000 tonnes in FY27 (15–22% more) and 1,75,000 by FY28 without Amzen. Its selling price has fallen from about ₹1,04,000 to ₹65,000 a tonne since 2021–22 as steel softened, so revenue also moves with steel.", "**Wagon output across the industry**, which stalls when wheel sets run short or the Railways delays its big wagon order.", "**State infrastructure spending**, especially in West Bengal, which management expects to rise after the 2026 change of government; monsoons delay deliveries.", "**Springs and forgings**: sales to wagon builders under the new approval at a far better margin than trader sales, and the forging unit due in about nine months.", "**Amzen**: turning an idle plant into a wagon builder, which management says could lift the group to 3,50,000 tonnes by FY29."],
+        inputs: "**Hot-rolled and cold-rolled steel coil and plate**, in mild and stainless grades, plus zinc for galvanizing and spring steel. Materials were 85% of sales in FY26.",
+        costEffect: "**Partly passed on.** Railways contracts carry price-variation clauses, and it says it prices private work on a conversion margin over steel, holds large stocks and buys forward; Infomerics notes a lag before price changes reach customers. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 9 points (11% to 2%). **What happened:** India's hot-rolled steel price index fell 6% from H1 FY25 to H2 FY26, and the margin slipped from 13.0% to 10.0%. Steel did not cause that: springs sold to traders at almost no profit and Amzen payroll and legal costs did.",
+        competitors: [{ name: 'Small cold-rolled-section makers', note: 'Management says a typical rival has about 15,000 tonnes of capacity against its 55,000 at Singur.' }, { name: "Wagon builders' own shops (Titagarh, Texmaco, Jupiter)", note: 'Its customers can make many of these parts themselves.' }, { name: 'Approved spring makers such as Frontier Springs', note: 'Already hold full Railways approvals for bogie springs.' }, { name: 'Other pole, barrier and sheet-pile fabricators', note: 'Compete for infrastructure orders on price.' }],
+        position: "**A large supplier of cold-rolled wagon sections in eastern India**, which also claims leadership in sheet piles; no independent share figures exist.",
+        money: "Net debt of about **₹22cr** (Screener, March 2026): ₹133cr of borrowings, mostly working-capital lines, against ₹111cr of cash and deposits, most of it left from a ₹160cr share sale in March 2025. Capex was ₹133cr in FY26 and free cash flow −₹109cr; receivables doubled to ₹205cr. Infomerics rates it BBB+. Amzen costs up to ₹284cr (₹60cr already deposited), about ₹400cr with repairs, with a ~₹200cr loan planned; shareholders were asked to lift the borrowing limit to ₹1,000cr. **Related parties and governance:** the auditor made advances to a related party a key audit matter; the springs unit is being bought from Prilika Enterprises, a promoter company holding about 10%; the N.S. Engineering minority is being bought with 7,25,041 new shares at ₹1,330, mostly for promoter-affiliated AVB Endeavors, despite a November 2025 pledge of no dilution before March 2028; and a ₹10.3cr claim from Cosmic Ferro Alloys is in arbitration. Promoters hold **55.11%** (March 2026), down from 98.43% in June 2023 before the IPO and share sales; promoter-group warrant conversions in 2026 may lift it.",
+        watch: ["Tribunal approval of Amzen and how it is funded.", "H1 FY27 operating cash flow and receivables.", "Springs sold to wagon builders at a real margin, and the forging unit starting."],
+        charts: industrialRailwayCharts['Cosmic CRF'],
     },
     {
         company: 'Texmaco Rail',

@@ -28,10 +28,11 @@ export const industrialRailway: SectorOverview = {
             'Titagarh Railsystems': 18,
             'Texmaco Rail': 12,
             'Jupiter Wagons': 12,
+            'Cosmic CRF': 15,
         },
     },
     standfirst:
-        "Six suppliers to Indian Railways, sitting at very different heights in the same value chain. Bending steel into wagons is a business anyone with a shed and a licence can enter, and the buyer sets the price. Making the propulsion, the safety electronics and the wheels requires approvals that take three to ten years to earn, and those are the only places in this chain where a durable margin can exist. This year the wagon makers are between Railways orders, and the electronics makers are winning orders faster than they collect cash. The annual reports add an auditor's qualification at Texmaco, an internal-controls finding and a restated year at Titagarh, and related-party dealings at three of the six. The question for each company is which layer it is climbing towards, and whether its profit is turning into cash. Every chart uses filed results and five years of history.",
+        "Seven suppliers to Indian Railways, sitting at very different heights in the same value chain. Bending steel into wagons, or into the sections and doors that wagon builders assemble, is a business anyone with a shed and a licence can enter, and the buyer sets the price. Making the propulsion, the safety electronics and the wheels requires approvals that take three to ten years to earn, and those are the only places in this chain where a durable margin can exist. This year the wagon makers are between Railways orders, and the electronics makers are winning orders faster than they collect cash. The annual reports add an auditor's qualification at Texmaco, an internal-controls finding and a restated year at Titagarh, and related-party dealings at most of the seven, including an auditor's key audit matter on advances to a related party at Cosmic CRF. The question for each company is which layer it is climbing towards, and whether its profit is turning into cash. Every chart uses filed results and five years of history.",
     lastUpdated: '2026-09-23',
     asOfQuarter: 'Q1 FY27',
 
@@ -43,7 +44,7 @@ export const industrialRailway: SectorOverview = {
             periods: Q,
             scale: 'sequential',
             source: 'Filed quarterly results (Screener), operating profit ÷ sales. Hind Rectifiers and MV Electrosystems standalone; the rest consolidated.',
-            note: 'Concord (SME) reports half-yearly: H1 and H2 FY26 sit in the Q2 and Q4 columns. MV Electrosystems listed recently and is still loss-making as it starts production.',
+            note: 'Concord and Cosmic CRF (both SME) report half-yearly: H1 and H2 FY26 sit in the Q2 and Q4 columns. MV Electrosystems listed recently and is still loss-making as it starts production.',
             values: {
                 'Hind Rectifiers': [11, 11, 10, 10, 11],
                 'Concord Control': [null, 24, null, 30, null],
@@ -51,10 +52,12 @@ export const industrialRailway: SectorOverview = {
                 'Titagarh Railsystems': [9, 9, 11, 11, 12],
                 'Texmaco Rail': [8, 10, 9, 9, 8],
                 'Jupiter Wagons': [13, 13, 13, 10, 10],
+                'Cosmic CRF': [null, 12, null, 10, null],
             },
             cellNotes: {
                 'Hind Rectifiers': 'Standalone. The group margin was 3.0% in Q4 FY26 and 5.1% in Q1 FY27 because its French electronics unit, Elventive France (bought October 2025), loses money.',
                 'Jupiter Wagons': 'Q4 FY26–Q1 FY27: switching lines to new private wagon designs.',
+                'Cosmic CRF': 'Half-years. H2 FY26 fell to 10% as ₹67cr of springs sold to traders earned only about ₹1.5cr before the RDSO approval, and the group carried Amzen payroll and legal costs.',
             },
         },
         {
@@ -72,6 +75,7 @@ export const industrialRailway: SectorOverview = {
                 'Titagarh Railsystems': [-25, -24, -8, -13, 13],
                 'Texmaco Rail': [-16, -7, -21, -13, -17],
                 'Jupiter Wagons': [-48, -22, -14, -25, 46],
+                'Cosmic CRF': [null, 80, null, 78, null],
             },
         },
         {
@@ -90,6 +94,7 @@ export const industrialRailway: SectorOverview = {
                 'Titagarh Railsystems': [9, 18, 25, 14, 11],
                 'Texmaco Rail': [6, 6, 11, 14, 11],
                 'Jupiter Wagons': [12, 24, 31, 21, 9],
+                'Cosmic CRF': [null, null, null, null, 14],
             },
         },
         {
@@ -108,6 +113,7 @@ export const industrialRailway: SectorOverview = {
                 'Titagarh Railsystems': [81, 60, 75, 99, 113],
                 'Texmaco Rail': [131, 152, 98, 117, 133],
                 'Jupiter Wagons': [94, 106, 105, 119, 213],
+                'Cosmic CRF': [null, null, null, 112, 69],
             },
         },
         {
@@ -125,6 +131,10 @@ export const industrialRailway: SectorOverview = {
                 'Titagarh Railsystems': [33, 16, 19, -29, 97, 27],
                 'Texmaco Rail': [19, -71, 36, -10, 93, 24],
                 'Jupiter Wagons': [53, 31, -4, 18, 3, 13],
+                'Cosmic CRF': [null, null, null, -166, 31, -40],
+            },
+            cellNotes: {
+                'Cosmic CRF': 'Group accounts start in FY25. The company reports FY26 operating cash of ₹3.6cr (after −₹89cr in FY25); Screener shows ₹24cr. Receivables doubled to ₹205cr.',
             },
         },
         {
@@ -143,9 +153,11 @@ export const industrialRailway: SectorOverview = {
                 'Titagarh Railsystems': [-3.2, 0.1, -2.0, -8.6, -1.5, -3.3],
                 'Texmaco Rail': [0.6, -7.0, 0.4, -11.4, 4.5, -3.0],
                 'Jupiter Wagons': [2.0, 0.2, -4.0, -10.2, -18.0, -7.6],
+                'Cosmic CRF': [null, null, null, -29.9, -15.2, -20.5],
             },
             cellNotes: {
                 'Jupiter Wagons': 'FY25–FY26: wheel plant and battery-storage spending.',
+                'Cosmic CRF': 'Group accounts start in FY25, when it bought N.S. Engineering; the last column covers two years. FY26: new sheds, galvanizing and the forging unit.',
             },
         },
         {
@@ -165,6 +177,7 @@ export const industrialRailway: SectorOverview = {
                 'Titagarh Railsystems': [5.3, 1.0, -1.0, 0.5, 0.9],
                 'Texmaco Rail': [3.8, 5.7, 0.8, 1.6, 1.7],
                 'Jupiter Wagons': [0.6, 0.5, 0.3, -0.2, 1.6],
+                'Cosmic CRF': [null, null, null, -2.2, 0.3],
             },
         },
         {
@@ -183,6 +196,7 @@ export const industrialRailway: SectorOverview = {
                 'Titagarh Railsystems': [6.9, 1.3, 4.3, 6.1, 11.6, 6.0],
                 'Texmaco Rail': [0.9, 2.4, 2.3, 10.4, 3.8, 5.0],
                 'Jupiter Wagons': [3.1, 3.5, 3.4, 12.8, 18.3, 9.3],
+                'Cosmic CRF': [null, null, null, 11.7, 18.5, 16.1],
             },
         },
         {
@@ -201,6 +215,7 @@ export const industrialRailway: SectorOverview = {
                 'Titagarh Railsystems': [1.5, 3.8, 5.2, 3.9, 2.5],
                 'Texmaco Rail': [4.7, 5.2, 7.6, 5.1, 4.3],
                 'Jupiter Wagons': [2.8, 4.5, 4.4, 4.1, 2.6],
+                'Cosmic CRF': [null, null, null, 3.1, 3.0],
             },
         },
         {
@@ -210,7 +225,7 @@ export const industrialRailway: SectorOverview = {
             unit: 'x',
             periods: ['Latest'],
             scale: 'sequential',
-            source: 'Latest order book from the Q1 FY27 call or presentation ÷ FY26 sales (Screener).',
+            source: 'Latest order book from the Q1 FY27 call or presentation (half-yearly reporters: the H2 FY26 call) ÷ FY26 sales (Screener).',
             note: 'Blank where the company did not state a comparable order book on its latest call.',
             values: {
                 'Hind Rectifiers': [null],
@@ -219,10 +234,12 @@ export const industrialRailway: SectorOverview = {
                 'Titagarh Railsystems': [null],
                 'Texmaco Rail': [null],
                 'Jupiter Wagons': [null],
+                'Cosmic CRF': [1.1],
             },
             cellNotes: {
                 'MV Electrosystems': '₹1,075cr of propulsion orders against only ₹49cr of FY26 sales: production has barely started.',
                 'Concord Control': '₹697cr at March 2026, 3.3 times revenue; it includes Kavach orders held by its 46.5% associate ProGOTA, which will not show up as Concord revenue.',
+                'Cosmic CRF': '₹760cr at March 2026 (H2 FY26 call), railway and infrastructure together, against ₹717cr of FY26 sales.',
             },
         },
     ],
@@ -248,6 +265,8 @@ export const industrialRailway: SectorOverview = {
                 grades: { approval: { grade: 'C', note: 'Standard wagon approvals' }, design: { grade: 'C', note: 'Builds to customers’ designs' }, content: { grade: 'C', note: 'Steel fabrication' }, service: { grade: 'B', note: 'Maintenance 30–35% of the South African contract' }, price: { grade: 'C', note: 'Private buyers negotiate hard' } } },
             { company: 'Jupiter Wagons', trend: 'stable', trendNote: 'Building a wheel plant and a battery-storage business at heavy cost.',
                 grades: { approval: { grade: 'C', note: 'Standard wagon approvals; brakes via Stone India' }, design: { grade: 'C', note: 'Builds to customers’ designs' }, content: { grade: 'B', note: 'Adding brakes, wheels and axles' }, service: { grade: 'C', note: 'Little' }, price: { grade: 'C', note: 'Lowest-bid fabrication' } } },
+            { company: 'Cosmic CRF', trend: 'stable', trendNote: 'Springs prototype approval won in June (held by a promoter company); forging unit and the Amzen wagon plant still to come.',
+                grades: { approval: { grade: 'C', note: 'RDSO inspection for body parts; springs approval only at prototype stage' }, design: { grade: 'C', note: 'Makes sections to wagon builders’ drawings' }, content: { grade: 'B', note: 'Says it makes about 75% of a wagon body’s parts' }, service: { grade: 'C', note: 'Refurbishment spares tendered by Railway zones' }, price: { grade: 'D', note: 'Steel is 85% of sales; cut prices to win share' } } },
         ],
     },
 
@@ -256,15 +275,16 @@ export const industrialRailway: SectorOverview = {
             heading: '1. Recommendation, up front',
             body: [
                 "**The money in Indian railways is moving from steel to electronics, but nothing here is a buy today.** A freight wagon is about ₹41 lakh of fabricated steel on which the maker earns 5–12% at segment level; the electronics on one new electric locomotive are worth ₹5–5.5cr to a supplier that makes the full propulsion set, a MEMU trainset about ₹15cr and a Vande Metro trainset about ₹60cr, all behind approvals that take years. But the spending is shifting away from trains: the Railways' FY27 capital budget of ₹2,93,030cr is up only about 5%, rolling stock gets ₹52,109cr (+4%), and freight loading grew 1.5% in April–June against a plan of 5.7%. **So this is a year to follow the right companies, not to buy them.**",
-                "**Follow Concord Control and Hind Rectifiers.** **Concord** grew FY26 revenue 69% to ₹210cr at a 29.5% operating margin, has a ₹697cr order book, and its price needs about {need:Concord Control|25–26}% a year against my ~25%: the only price here that fits. But its operating cash was −₹55cr, receivables tripled to ₹121cr, sales to related parties rose sixteenfold to ₹10.2cr and ₹13.4cr is owed by companies linked to a director. **Until the profit arrives as cash, it is a small position at most.** **Hind Rectifiers** (now called Hirect) is the dominant maker of locomotive traction transformers and earns about 11% in its Indian business. But its order book fell from ₹1,000cr to ₹740cr in a year, Q1 standalone revenue grew 10% against a 30% promise, the loss-making French unit halved the group margin, and a promoter-group company with the same Elventive name holds warrants and trades with it. I have cut my estimate to ~18%; at about {pe:Hind Rectifiers|107} times earnings its price needs about {need:Hind Rectifiers|34}% a year, which is {label:Hind Rectifiers|stretched}.",
-                "**Wait on MV Electrosystems and Titagarh.** **MV** has an approved propulsion system and ₹989cr of orders for 564 sets, but it made no deliveries in July or August, lost ₹12.6cr in FY26, and its auditor warned about its long-term finances before the ₹290cr IPO rescued them. **Titagarh** is the best all-round franchise: passenger trains were 31% of Q1 revenue at a 14.7% segment margin and 78% of its ₹13,335cr order book. But it has cut wagon output to 600–650 a month while the Railways' big tender is awaited, it made 63 coaches in FY26 against 100–120 promised, and its auditor found material weaknesses in the internal controls around its failed Italian unit, Firema, after FY25 profit was restated. The price needs about {need:Titagarh Railsystems|26}% a year against my ~18%.",
+                "**Follow Concord Control and Hind Rectifiers.** **Concord** grew FY26 revenue 69% to ₹210cr at a 29.5% operating margin, has a ₹697cr order book, and its price needs about {need:Concord Control|25–26}% a year against my ~25%: one of the {count:fits|two} prices here that fit. But its operating cash was −₹55cr, receivables tripled to ₹121cr, sales to related parties rose sixteenfold to ₹10.2cr and ₹13.4cr is owed by companies linked to a director. **Until the profit arrives as cash, it is a small position at most.** **Hind Rectifiers** (now called Hirect) is the dominant maker of locomotive traction transformers and earns about 11% in its Indian business. But its order book fell from ₹1,000cr to ₹740cr in a year, Q1 standalone revenue grew 10% against a 30% promise, the loss-making French unit halved the group margin, and a promoter-group company with the same Elventive name holds warrants and trades with it. I have cut my estimate to ~18%; at about {pe:Hind Rectifiers|107} times earnings its price needs about {need:Hind Rectifiers|34}% a year, which is {label:Hind Rectifiers|stretched}.",
+                "**Wait on MV Electrosystems, Titagarh and Cosmic CRF.** **MV** has an approved propulsion system and ₹989cr of orders for 564 sets, but it made no deliveries in July or August, lost ₹12.6cr in FY26, and its auditor warned about its long-term finances before the ₹290cr IPO rescued them. **Titagarh** is the best all-round franchise: passenger trains were 31% of Q1 revenue at a 14.7% segment margin and 78% of its ₹13,335cr order book. But it has cut wagon output to 600–650 a month while the Railways' big tender is awaited, it made 63 coaches in FY26 against 100–120 promised, and its auditor found material weaknesses in the internal controls around its failed Italian unit, Firema, after FY25 profit was restated. The price needs about {need:Titagarh Railsystems|26}% a year against my ~18%.",
+                "**Cosmic CRF** is one layer below the wagon makers: it bends steel into the sections, doors and body parts they assemble, and through N.S. Engineering it now sells nearly as much sheet piling, poles and crash barriers to infrastructure contractors. FY26 revenue rose 78% to ₹717cr and profit 65% to ₹51cr as tonnage rose 90% to 1,06,370, and net debt is only ₹22cr. Its price needs about {need:Cosmic CRF|16}% a year against my ~15% (price check: {Label:Cosmic CRF|Fits}). But the margin is 10–11% on steel, free cash flow was −₹109cr, receivables doubled to ₹205cr, and the auditor made advances to a related party a key audit matter. The springs unit and its new Railways approval sit with a promoter company, and the minority of N.S. Engineering is being bought with about 7.9% new shares, mostly for a promoter-linked firm, months after a promise of no dilution before March 2028. **The next three years hang on Amzen, an idle Punjab wagon plant it has agreed to buy for up to ₹284cr, so I would wait for the tribunal's approval, the funding plan and the H1 FY27 cash flow.**",
                 "**Pass on Texmaco and Jupiter**, and hold onto two things. **Texmaco**'s auditor qualified its FY26 accounts because it set aside a ₹700cr ‘provision for contingencies’ straight out of reserves instead of through the profit and loss account, which means future losses charged against it will never show in reported profit. Its Q1 sales fell 17% and profit held up only because of a tax credit. **Jupiter** has a shrinking order book (₹6,304cr to ₹4,550cr in five quarters), doubled debt, a 213-day cash cycle and ₹1,506cr of capex still committed; its price needs about twice my growth estimate. The two things: **Indian Railways is one buyer who publishes the designs, awards by lowest price and keeps several suppliers alive**, so the only lasting edge is an approval that takes years; and **in this sector a profit is only real once it has been collected**.",
             ],
         },
         {
             heading: '2. Charts: margins, growth, returns, cash cycle and cash conversion',
             body: [
-                "The six views that matter most, with four more behind **More measures**. Companies are grouped by layer. All figures are filed (Screener): Hind Rectifiers and MV Electrosystems standalone, the rest consolidated. Concord reports half-yearly and MV listed recently. **Start with cash conversion**: railway customers pay in an annual cycle and several of these companies report profits they have not yet collected. Hover over a starred name for its caveat.",
+                "The six views that matter most, with four more behind **More measures**. Companies are grouped by layer. All figures are filed (Screener): Hind Rectifiers and MV Electrosystems standalone, the rest consolidated. Concord and Cosmic CRF report half-yearly, Cosmic's group accounts start in FY25, and MV listed recently. **Start with cash conversion**: railway customers pay in an annual cycle and several of these companies report profits they have not yet collected. Hover over a starred name for its caveat.",
             ],
             embed: 'metrics',
         },
@@ -276,7 +296,7 @@ export const industrialRailway: SectorOverview = {
             points: [
                 {
                     label: 'The five layers',
-                    text: "**Steel and castings** (bogies, couplers) protect a wagon maker against its suppliers but earn nothing extra. **Wagon and coach fabrication** is cutting and welding to a Railways drawing; the industry can build about 60,000 wagons a year against output of 35,000–40,000 (The Core), so segment margins sit at 5–12%. **Wheels, axles and brakes** are the bottleneck: SAIL's Durgapur plant makes about 40,000 cast wheels a year and forged wheels for Vande Bharat, LHB coaches and metros are mostly imported, which is why FY26 wagon output fell at every listed maker. **Traction and propulsion** is a club of Siemens, Alstom, ABB, Medha and BHEL, now joined by MV Electrosystems and Hind as Indian entrants; approval needs a prototype and a 50,000 km trial. **Safety and signalling** is led by Kavach, the automatic anti-collision system, where more than 15 firms are developing equipment and three are fully approved.",
+                    text: "**Steel and castings** (bogies, couplers) protect a wagon maker against its suppliers but earn nothing extra. **Wagon and coach fabrication** is cutting and welding to a Railways drawing; the industry can build about 60,000 wagons a year against output of 35,000–40,000 (The Core), so segment margins sit at 5–12%. Below the wagon makers sit component suppliers such as **Cosmic CRF**, which cold-rolls steel into the sections, doors and body panels they assemble and earns 10–13% on a product that is about 85% steel. **Wheels, axles and brakes** are the bottleneck: SAIL's Durgapur plant makes about 40,000 cast wheels a year and forged wheels for Vande Bharat, LHB coaches and metros are mostly imported, which is why FY26 wagon output fell at every listed maker. **Traction and propulsion** is a club of Siemens, Alstom, ABB, Medha and BHEL, now joined by MV Electrosystems and Hind as Indian entrants; approval needs a prototype and a 50,000 km trial. **Safety and signalling** is led by Kavach, the automatic anti-collision system, where more than 15 firms are developing equipment and three are fully approved.",
                 },
                 {
                     label: 'Where the demand is coming from',
@@ -288,7 +308,7 @@ export const industrialRailway: SectorOverview = {
                 },
                 {
                     label: 'What these companies actually depend on',
-                    text: "**Concord** depends on Kavach trials and approval for its associate ProGOTA, on locomotive electronics orders and, above all, on collecting its bills. **Hind Rectifiers** depends on electric-locomotive and trainset production, on converting delayed transformer and propulsion tenders, and on its French unit breaking even. **MV Electrosystems** depends on ramping from zero to 40 propulsion sets a month by January. **Titagarh** depends on its coach ramp, the wagon tender and the wheel plant; **Texmaco** on executing its South African order at a profit and collecting ₹765cr of unbilled infrastructure work; **Jupiter** on the tender and on finishing its Odisha wheel plant on budget. **Buy each for what it actually depends on, not for the sector label.**",
+                    text: "**Concord** depends on Kavach trials and approval for its associate ProGOTA, on locomotive electronics orders and, above all, on collecting its bills. **Hind Rectifiers** depends on electric-locomotive and trainset production, on converting delayed transformer and propulsion tenders, and on its French unit breaking even. **MV Electrosystems** depends on ramping from zero to 40 propulsion sets a month by January. **Titagarh** depends on its coach ramp, the wagon tender and the wheel plant; **Texmaco** on executing its South African order at a profit and collecting ₹765cr of unbilled infrastructure work; **Jupiter** on the tender and on finishing its Odisha wheel plant on budget. **Cosmic CRF** depends on wagon builders' output for its railway half and on state infrastructure contractors, mostly in West Bengal, for the other half; its management says it pivoted to infrastructure because it expected railway orders to slow, and it can switch about 80% of its capacity between the two. Beyond that, it depends on turning an idle insolvent wagon plant, Amzen, into production by mid-2027. **Buy each for what it actually depends on, not for the sector label.**",
                 },
             ],
             tables: [
@@ -297,7 +317,7 @@ export const industrialRailway: SectorOverview = {
                     columns: ['Layer', 'Who', 'Operating margin (last five quarters)', 'Return on capital (FY26)', 'Five-year cash conversion', 'Why'],
                     rows: [
                         ['Traction and safety electronics', 'Hind Rectifiers, Concord, MV Electrosystems', '−42% to 30%', '−15% to 31%', '**−46% to 89%**', 'High value per train and years of approvals, but long payment cycles and new plants to fill'],
-                        ['Wagons and coaches', 'Titagarh, Texmaco, Jupiter', '8–13%', '9–11%', '**13–27%**', 'Built to the buyer’s drawing with spare capacity; passenger coaches earn a few points more'],
+                        ['Wagons, coaches and their steel parts', 'Titagarh, Texmaco, Jupiter, Cosmic CRF', '8–13%', '9–14%', '**−40% to 27%**', 'Built to the buyer’s drawing with spare capacity; passenger coaches earn a few points more; Cosmic’s figure covers only its two years of group accounts'],
                     ],
                 },
                 {
@@ -340,7 +360,7 @@ export const industrialRailway: SectorOverview = {
                 },
                 {
                     label: 'Barely a moat: wagon fabrication',
-                    text: "**Titagarh** holds 32% of the Railways' wagon orders (CRISIL) with capacity for 12,000 a year; **Texmaco** is the largest by capacity at 15,400 a year and claims 40–45% of private demand; **Jupiter**'s wagon book is about 80% private. All three build to the customer's drawing with industry capacity well above demand, so FY26 output fell 20–40% the moment wheels ran short. Their escapes are private and export customers, attached maintenance, and making their own castings, brakes and wheels: Jupiter made 19,939 wheelsets in-house in FY26 and will make all its own freight brakes by end-2026. Private orders are mostly fixed-price, so steel moves hit them directly (CRISIL). **My view: backward integration lowers cost, but does not create pricing power.**",
+                    text: "**Titagarh** holds 32% of the Railways' wagon orders (CRISIL) with capacity for 12,000 a year; **Texmaco** is the largest by capacity at 15,400 a year and claims 40–45% of private demand; **Jupiter**'s wagon book is about 80% private. All three build to the customer's drawing with industry capacity well above demand, so FY26 output fell 20–40% the moment wheels ran short. Their escapes are private and export customers, attached maintenance, and making their own castings, brakes and wheels: Jupiter made 19,939 wheelsets in-house in FY26 and will make all its own freight brakes by end-2026. Private orders are mostly fixed-price, so steel moves hit them directly (CRISIL). **Cosmic CRF**, which supplies those yards, shows the same limits one layer down. Its edge is scale and cost: management says a typical cold-rolled-section rival has about 15,000 tonnes of capacity against its 55,000 at Singur, that its conversion cost fell from about ₹6,000 to ₹1,600 a tonne, and that it cut prices to take share. It also claims to have been the only section supplier for the trial run of a new Railways wagon design. But steel is 85% of its sales, and its first safety-critical approval, for bogie springs, came only in June and at prototype stage, capped at 60,000 springs. **My view: backward integration lowers cost, but does not create pricing power.**",
                 },
                 {
                     label: 'Competitors outside the list',
@@ -365,7 +385,7 @@ export const industrialRailway: SectorOverview = {
                 },
                 {
                     label: 'Not structural: wagon fabrication',
-                    text: "**Titagarh**'s freight segment held a 12.2% margin in Q1 even at 43% use of its plant. **Texmaco**'s freight-car margin fell to 5.5% in Q1 from 6.6% a year earlier and 8.6% in Q4 as output halved to 1,054 wagons, and its reported profit rose only because tax was a credit (profit before tax ₹42cr, after tax ₹50cr). **Jupiter** earned 9.7% against 13% a year earlier while switching lines to new private wagon designs, and its subsidiaries lost money at operating level. **My view: these are what a price-taking fabricator earns when volumes fall; the only improvements available are mix, maintenance and captive parts.**",
+                    text: "**Titagarh**'s freight segment held a 12.2% margin in Q1 even at 43% use of its plant. **Texmaco**'s freight-car margin fell to 5.5% in Q1 from 6.6% a year earlier and 8.6% in Q4 as output halved to 1,054 wagons, and its reported profit rose only because tax was a credit (profit before tax ₹42cr, after tax ₹50cr). **Jupiter** earned 9.7% against 13% a year earlier while switching lines to new private wagon designs, and its subsidiaries lost money at operating level. **Cosmic CRF** earned 12.4% in H1 FY26 and 9.9% in H2, against the 13–14% operating margin its managing director called sustainable in November. He blamed about ₹8–10cr of one-offs: ₹67cr of springs sold to traders for only ₹1.5cr of profit while the Railways approval was pending, the payroll of a team hired for Amzen, and Amzen legal costs the auditor would not let it capitalise. Even without them, a business that is 85% steel earns what the conversion spread allows. **My view: these are what a price-taking fabricator earns when volumes fall; the only improvements available are mix, maintenance and captive parts.**",
                 },
                 {
                     label: 'Working capital: the biggest drains',
@@ -377,7 +397,7 @@ export const industrialRailway: SectorOverview = {
                 },
                 {
                     label: 'Working capital: improving',
-                    text: "**Hind Rectifiers** turned 89% of five years' operating profit into cash, and FY26 operating cash of ₹86cr was its best yet. **Titagarh** turned 97% of FY26 operating profit into cash (₹322cr) after a negative FY25. **Texmaco**'s operating cash of ₹363cr and free cash of ₹196cr were its best in a decade, but part of that was customer advances, which rose from ₹52cr to ₹213cr, so it may not repeat.",
+                    text: "**Hind Rectifiers** turned 89% of five years' operating profit into cash, and FY26 operating cash of ₹86cr was its best yet. **Titagarh** turned 97% of FY26 operating profit into cash (₹322cr) after a negative FY25. **Texmaco**'s operating cash of ₹363cr and free cash of ₹196cr were its best in a decade, but part of that was customer advances, which rose from ₹52cr to ₹213cr, so it may not repeat. **Cosmic CRF** turned operating cash positive in FY26 (₹3.6cr by its own figure, ₹24cr on Screener) after −₹73cr in FY25, by pressing customers who had stretched its bills; its cash cycle fell from 112 to 69 days. But that was mostly longer credit from suppliers (payable days rose from 64 to 100): receivables still doubled to ₹205cr, and after ₹133cr of capex free cash flow was −₹109cr.",
                 },
                 {
                     label: 'Working capital: built into the business',
@@ -393,22 +413,27 @@ export const industrialRailway: SectorOverview = {
                         ['Hind Rectifiers', '₹100cr of new shares sold to Tata Small Cap Fund at ₹920.50; FY27 capex about ₹50cr', 'Borrowings ₹245cr (₹164cr); net debt ₹225cr; CRISIL BBB+'],
                         ['MV Electrosystems', '₹290cr IPO in August; about ₹200cr of working capital needed at full output; recent bills paid in ~15 days', 'Borrowings ~₹50cr before the IPO; net debt ₹55cr (March)'],
                         ['Titagarh Railsystems', 'FY26 ‘free cash flow’ ₹380cr (operating cash before capex); freight working capital to return to ~30 days', 'Net debt ₹306cr (Screener); a ₹504cr undertaking to cover shortfalls on the wheel venture’s loans; CRISIL AA−'],
+                        ['Cosmic CRF', 'Term loans only ₹36cr and working-capital lines ₹84cr; Amzen to cost about ₹400cr with a ~₹200cr loan; a further ~₹200cr raise floated for FY28 (H2 FY26 call, May), after promising in November no dilution before March 2028', 'Borrowings ₹133cr (₹78cr); cash and deposits ₹111cr; net debt ₹22cr; ₹60cr deposited for Amzen in August; shareholders asked in September to lift the borrowing limit from ₹200cr to ₹1,000cr; Infomerics BBB+'],
                         ['Texmaco Rail', 'Net debt ₹444cr and net debt to equity 0.18 (Q4 call); the ₹700cr provision not mentioned on the Q1 call', 'Screener net debt ₹663cr; CARE counts ₹1,515cr of total debt; CARE A'],
                         ['Jupiter Wagons', 'Stock to normalise from Q2; Italian partners’ ₹290cr cuts its own wheel-plant equity to ₹600cr; battery-project funding undecided', 'Borrowings ₹996cr (₹502cr); net debt ₹554cr; ₹1,506cr of capex committed; CRISIL AA−'],
                     ],
-                    note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. Concord reports half-yearly and last spoke in May; MV Electrosystems held its first call as a listed company in August.',
+                    note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. Concord and Cosmic CRF report half-yearly and last spoke in May; MV Electrosystems held its first call as a listed company in August.',
                 },
             ],
         },
         {
             heading: '6. Growth and capex (comparative)',
             body: [
-                "Where the next five years of growth come from, how each company has done against what it promised in May, and my own estimate of earnings growth. Capex matters here more than in most sectors: three of the six are building plants that will not earn until FY28.",
+                "Where the next five years of growth come from, how each company has done against what it promised in May, and my own estimate of earnings growth. Capex matters here more than in most sectors: four of the seven are building or buying plants that will not earn fully until FY28.",
             ],
             points: [
                 {
                     label: 'Growth driver: the delayed freight tender',
                     text: "The one-lakh-wagon tender (about ₹40,000cr, or 35,000–40,000 wagons a year for three to four years) was in consultation in May and had not been issued by any of the August calls. Titagarh's management says the need ‘can be deferred… by a few months or a couple of quarters, but not dropped’; Jupiter's had said in May it expected an order within two quarters and in August would say nothing. Freight loading is growing about 1.5–3% a year against a target that needs 15%, which is why the Railways is in no hurry. When it comes, **Titagarh, Texmaco and Jupiter** all have idle capacity: Titagarh ran at 43% in Q1 and Texmaco at about 27%. **My view: a timing question, not a demand question, but I would not pay today for a tender with no date.**",
+                },
+                {
+                    label: 'Growth driver: Cosmic CRF’s tonnes and the Amzen plant',
+                    text: "**Cosmic CRF** grows by adding tonnes, not by charging more: its average selling price has fallen from about ₹1,04,000 a tonne in 2021–22 to about ₹65,000 as steel softened. In May it guided 1,22,000–1,30,000 tonnes for FY27, 15–22% more than FY26, and revenue ‘at least 20%, 25%’ to ‘30%’ higher if government spending holds, then 1,75,000 tonnes by FY28 without Amzen. The springs unit (₹67cr of FY26 sales) should earn more once it sells to wagon builders under its new approval, and an 11,000-tonne forging unit is due in about nine months. Amzen is the big step: a 72.5-acre plant in Punjab built for 3,600 wagons a year, expandable to 7,200, plus 20,000 tonnes of bridge girders, bought out of insolvency for up to ₹284cr, with a letter of intent in July and the tribunal's approval pending. Management puts the whole project at about ₹400cr and talks of ₹3,500cr of revenue by FY29; in November the managing director called a similar figure ‘a very, very beautiful picture’ and asked not to be held to it. **My view: the organic 15–20% volume growth is believable; Amzen would turn a parts supplier into a wagon builder in the lowest-margin layer of this chain.**",
                 },
                 {
                     label: 'Growth driver: passenger trains and metros',
@@ -436,11 +461,11 @@ export const industrialRailway: SectorOverview = {
                 },
                 {
                     label: 'Mixed',
-                    text: "**Titagarh**'s coach target of 200 cars is ‘intact’, but 30 in Q1 plus the 45–50 a quarter management guides gives 180, the bottom of its ±10% band; its wheel venture and Falta shipyard each slipped between calls. **MV**'s ₹400cr FY27 target does not add up on its own delivery plan: 70 sets by December and 40 a month from January give about ₹350–360cr. **Jupiter**'s battery-storage goal moved from ₹1,000cr of revenue in three to four years to ₹1,000cr of orders by FY27: a different measure, not a raise.",
+                    text: "**Titagarh**'s coach target of 200 cars is ‘intact’, but 30 in Q1 plus the 45–50 a quarter management guides gives 180, the bottom of its ±10% band; its wheel venture and Falta shipyard each slipped between calls. **MV**'s ₹400cr FY27 target does not add up on its own delivery plan: 70 sets by December and 40 a month from January give about ₹350–360cr. **Jupiter**'s battery-storage goal moved from ₹1,000cr of revenue in three to four years to ₹1,000cr of orders by FY27: a different measure, not a raise. **Cosmic CRF** delivered the 1–1.1 lakh tonnes it promised in November (1,06,370), but not the 13–14% operating margin it called sustainable (9.9% in H2 FY26); the springs approval promised within 40–45 days took seven months, the forging start moved from April–May 2026 to early 2027, and the Amzen purchase it expected within FY26 got its letter of intent only in July.",
                 },
                 {
                     label: 'My outlook',
-                    text: "**I expect Concord to grow earnings at about 25% a year, Hind Rectifiers and Titagarh at about 18%, and Texmaco and Jupiter at about 12%; MV is too early to estimate.** I have cut Hind from ~22%: its order book has fallen three quarters running, Q1 missed the pace of its promise by a wide margin, and propulsion is further away than it said in May. Titagarh's and Jupiter's profits start from a depressed FY26, so a tender could lift them faster, but I will not pay for that until it is placed.",
+                    text: "**I expect Concord to grow earnings at about 25% a year, Hind Rectifiers and Titagarh at about 18%, Cosmic CRF at about 15%, and Texmaco and Jupiter at about 12%; MV is too early to estimate.** For Cosmic, 15–20% more tonnes a year and better springs margins are partly offset by about 8% more shares for the N.S. Engineering minority and the interest on an Amzen loan. I have cut Hind from ~22%: its order book has fallen three quarters running, Q1 missed the pace of its promise by a wide margin, and propulsion is further away than it said in May. Titagarh's and Jupiter's profits start from a depressed FY26, so a tender could lift them faster, but I will not pay for that until it is placed.",
                 },
             ],
             tables: [
@@ -452,6 +477,7 @@ export const industrialRailway: SectorOverview = {
                         ['Concord Control', 'Locomotive electronics; Kavach via ProGOTA; collecting its bills', '15% / **25%** / 35%'],
                         ['Hind Rectifiers', 'Transformer tenders; trainset content; Elventive France breaking even', '10% / **18%** / 26%'],
                         ['Titagarh Railsystems', 'Coach ramp; wagons when the tender lands; wheel venture', '10% / **18%** / 26%'],
+                        ['Cosmic CRF', 'Tonnes +15–22% in FY27; springs and forging margins; Amzen from FY28; new shares for the N.S. Engineering minority', '5% / **15%** / 25%'],
                         ['Texmaco Rail', 'South Africa in FY28; private wagons; infrastructure collections', '5% / **12%** / 20%'],
                         ['Jupiter Wagons', 'Wagons; brakes now; Odisha wheels from FY28', '5% / **12%** / 20%'],
                         ['MV Electrosystems', 'Propulsion ramp to 40 sets a month', 'Loss-making; no estimate'],
@@ -467,6 +493,7 @@ export const industrialRailway: SectorOverview = {
                         ['Hind Rectifiers', 'Standalone revenue +30% in FY27; French unit to break even in 3–5 quarters; US$1bn revenue by FY31', '~₹98cr in FY26; ~₹50cr in FY27', '**Missed**: Q1 standalone +10%; order book ₹845cr → ₹740cr; propulsion trial slipped'],
                         ['MV Electrosystems', '₹400cr revenue in FY27; 10 sets in September, 40 a month from January; profitable in 2–3 months', 'Little; second unit built; test rigs by December', '**Untested**: first call; no deliveries in July–August'],
                         ['Titagarh Railsystems', '~200 coaches in FY27 (±10%); wagons 600–650 a month; first Vande Bharat end-Q3/Q4', '~₹367cr in FY26; shipyard ~₹600–610cr; aluminium line by Q1 FY28', '**Slipping**: wagons cut from ‘higher than last year’ to 428 a month; 30 coaches; wheels and shipyard late'],
+                        ['Cosmic CRF', 'FY27 volume 1,22,000–1,30,000 tonnes; revenue at least 20–30% higher; 1,75,000 tonnes by FY28 without Amzen; Amzen production by March–May 2027', '₹133cr in FY26; forging unit ~₹40cr; Amzen up to ₹284cr (about ₹400cr with repairs)', '**Untested**: no results since May (half-yearly); FY26 volume met, margin below the 13–14% claimed; springs approval and Amzen letter of intent came after the call'],
                         ['Texmaco Rail', 'Growth ‘in 1 or 2 years’ (was FY27); revenue 2x by 2030 at a mid-teens margin', '₹1,500–2,000cr to 2030; ₹167cr in FY26', '**Missed**: Q1 sales −17%; freight-car margin 5.5%; wagon target dropped'],
                         ['Jupiter Wagons', '60–70% of the order book delivered in FY27, with output improving over the next three quarters (May: FY27 ‘much better’); ₹10,000cr revenue by 2030 at 15%+ margin (May)', 'Odisha wheels ₹2,600–3,000cr; ₹533cr in FY26', '**Missed**: Q1 revenue −14% on the quarter; tender line dropped; brakes on time'],
                     ],
@@ -481,27 +508,27 @@ export const industrialRailway: SectorOverview = {
             points: [
                 {
                     label: 'One buyer, and its timing',
-                    text: "The wagon tender's delay has shrunk **Titagarh, Texmaco and Jupiter** for a year, and none could say in August when it will come. Titagarh has only about 5,300 wagons left to build, all due this year; Jupiter's order book has fallen five quarters running. The customer can also take work in-house, as it did with the Mumbai suburban trains, or simply spend elsewhere: the FY27 budget raised rolling stock 4% and track work 20–30%. **My view: for the fabricators, the tender date matters more than anything management can do.**",
+                    text: "The wagon tender's delay has shrunk **Titagarh, Texmaco and Jupiter** for a year, and none could say in August when it will come. Titagarh has only about 5,300 wagons left to build, all due this year; Jupiter's order book has fallen five quarters running. **Cosmic CRF**'s railway half sells to the same wagon builders and stalls when they do, as it did in April–June 2025 when wheel sets ran short. The customer can also take work in-house, as it did with the Mumbai suburban trains, or simply spend elsewhere: the FY27 budget raised rolling stock 4% and track work 20–30%. **My view: for the fabricators, the tender date matters more than anything management can do.**",
                 },
                 {
                     label: 'Texmaco: a qualified audit and a ₹700cr reserve',
                     text: "**Texmaco**'s auditor qualified both its standalone and group FY26 accounts. The board created a ₹700cr ‘provision for contingencies’ by moving ₹494cr from general reserve and ₹206cr from retained earnings, without passing it through the profit and loss account; it now sits as a current liability. The board says it covers risks from geopolitics, supply chains, costs and currency that are not tied to any year or contract, and management called it ‘the maximum potential risk under the worst-case scenario’ in May. **Why it matters:** ₹700cr is about 3.6 times FY26 profit; losses charged against it will never appear in reported profit, and any write-back could flatter it. It also cut net worth, lifting CARE's measure of debt to equity from 0.56 to 0.65 times. Neither management nor analysts mentioned it on the Q1 call. **I would not trust Texmaco's reported earnings until each quarter shows whether the provision was used.**",
                 },
                 {
-                    label: 'Titagarh, MV and Concord: other audit findings',
-                    text: "**Titagarh**'s auditor found ‘material weaknesses’ in its internal controls for judging impairments, loan-loss allowances and collateral provisions for its Italian associate Firema and a joint venture, although the accounts themselves are unqualified. Firema's audited FY25 loss came in at €104.7m against €16.9m in the management figures first used, so Titagarh restated FY25: standalone profit fell from ₹317cr to ₹90.6cr after ₹270cr of write-offs, and a further ₹64.8cr was booked in FY26. Firema's business went to another buyer in March with nothing for shareholders; management says nothing more is due. **MV Electrosystems**' auditor added an emphasis of matter on unpaid interest to small suppliers and said persistent losses ‘warrant attention’ for its long-term finances, clearing it only because of new equity and bigger bank lines. **Concord**'s group audit fee is ₹4.18 lakh and SME accounts carry no key audit matters, so its accounts get less scrutiny than the others'.",
+                    label: 'Titagarh, MV, Concord and Cosmic: other audit findings',
+                    text: "**Titagarh**'s auditor found ‘material weaknesses’ in its internal controls for judging impairments, loan-loss allowances and collateral provisions for its Italian associate Firema and a joint venture, although the accounts themselves are unqualified. Firema's audited FY25 loss came in at €104.7m against €16.9m in the management figures first used, so Titagarh restated FY25: standalone profit fell from ₹317cr to ₹90.6cr after ₹270cr of write-offs, and a further ₹64.8cr was booked in FY26. Firema's business went to another buyer in March with nothing for shareholders; management says nothing more is due. **MV Electrosystems**' auditor added an emphasis of matter on unpaid interest to small suppliers and said persistent losses ‘warrant attention’ for its long-term finances, clearing it only because of new equity and bigger bank lines. **Concord**'s group audit fee is ₹4.18 lakh and SME accounts carry no key audit matters, so its accounts get less scrutiny than the others'. **Cosmic CRF**'s auditor, a Kolkata firm, signed clean accounts but made ‘significant amounts’ advanced to a related party for raw materials and capital assets its key audit matter, because of the size, the related party and the judgement needed on whether they can be recovered. Its report also notes that the stock figures Cosmic gave its banks each quarter did not match its books (by up to ₹6cr), that its software kept no edit trail for fixed assets, stock and cost records, and that N.S. Engineering's software kept none at all.",
                 },
                 {
                     label: 'Related parties',
-                    text: "**Concord** sold ₹10.2cr to associates and common-control firms in FY26 (₹0.6cr a year earlier), is owed ₹13.4cr by private companies where a director sits, borrowed about ₹6.3cr from its key managers, and keeps the price it paid for Fusion Electronics confidential; its joint managing director is also its finance chief. **Hind Rectifiers**' promoter-group company Elventive Tech Pvt Ltd, which shares a name with its French subsidiary, holds warrants and trades with it: in H2 FY26 Hind bought ₹11.9cr from it and sold it ₹6.8cr, and also bought ₹16.7cr from Force Motion Technology LLP, another firm its managers influence. **MV Electrosystems** sold ₹13.7cr in FY25, about 22% of revenue, to Quadrant Future Tek, a listed related party. **Jupiter** bought ₹45.3cr of equipment in FY25 from Log9 Material Scientific, a firm it or its managers significantly influence, and its Slovak promoter Tatravagonka is also a customer and partner. **My view: none is illegal, but Concord's rising related sales alongside rising receivables is the one to watch.**",
+                    text: "**Concord** sold ₹10.2cr to associates and common-control firms in FY26 (₹0.6cr a year earlier), is owed ₹13.4cr by private companies where a director sits, borrowed about ₹6.3cr from its key managers, and keeps the price it paid for Fusion Electronics confidential; its joint managing director is also its finance chief. **Hind Rectifiers**' promoter-group company Elventive Tech Pvt Ltd, which shares a name with its French subsidiary, holds warrants and trades with it: in H2 FY26 Hind bought ₹11.9cr from it and sold it ₹6.8cr, and also bought ₹16.7cr from Force Motion Technology LLP, another firm its managers influence. **MV Electrosystems** sold ₹13.7cr in FY25, about 22% of revenue, to Quadrant Future Tek, a listed related party. **Jupiter** bought ₹45.3cr of equipment in FY25 from Log9 Material Scientific, a firm it or its managers significantly influence, and its Slovak promoter Tatravagonka is also a customer and partner. **Cosmic CRF** is buying its springs unit from Prilika Enterprises, a promoter company that owns about 10% of it, under a February 2025 business-transfer agreement (₹9.75cr paid, ₹9.75cr advanced for a further unit and ₹9.75cr still to be executed); the Railways' June prototype approval for its springs was issued in Prilika's name. Prilika also rents it premises and does job work for it. The 26% of N.S. Engineering it does not own is being bought with 7,25,041 new Cosmic shares at ₹1,330, most of them for AVB Endeavors, a promoter-affiliated firm, on a valuation by a registered valuer. **My view: none is illegal, but Concord's rising related sales alongside rising receivables, and Cosmic's purchases from its promoters' companies, are the ones to watch.**",
                 },
                 {
                     label: 'Contingent liabilities and guarantees',
-                    text: "**Titagarh** has ₹187.5cr of tax and legal claims plus an undertaking to cover shortfalls on its wheel venture's loans that rose from ₹170cr to ₹504cr. **Texmaco** has ₹178.5cr of tax litigation (a key audit matter) and ₹765cr of unbilled infrastructure work, with claims in arbitration and a plan to demerge the loss-making rail-infrastructure division. **Jupiter** has ₹54.4cr of tax claims and ₹1,506cr of capex commitments, double a year earlier, and wants to redirect ₹43.6cr of 2023 share-sale money that sat unused for a foundry. **Concord** has given ₹20.9cr of guarantees; Hind's and MV's claims are small.",
+                    text: "**Titagarh** has ₹187.5cr of tax and legal claims plus an undertaking to cover shortfalls on its wheel venture's loans that rose from ₹170cr to ₹504cr. **Texmaco** has ₹178.5cr of tax litigation (a key audit matter) and ₹765cr of unbilled infrastructure work, with claims in arbitration and a plan to demerge the loss-making rail-infrastructure division. **Jupiter** has ₹54.4cr of tax claims and ₹1,506cr of capex commitments, double a year earlier, and wants to redirect ₹43.6cr of 2023 share-sale money that sat unused for a foundry. **Concord** has given ₹20.9cr of guarantees; Hind's and MV's claims are small. **Cosmic CRF** has ₹49cr of guarantees for N.S. Engineering's bank loans and a ₹10.3cr claim from Cosmic Ferro Alloys, which sold it the original Singur business in 2022, now before an arbitrator; ₹5.5cr of receivables inherited with N.S. Engineering are over three years old.",
                 },
                 {
                     label: 'Cash, funding and diversification',
-                    text: "**Concord** and **MV** have yet to show their profits as cash; MV needs about ₹200cr of working capital, now covered by its IPO. **Hind Rectifiers**' CRISIL rating would be at risk if its operating margin stayed below 8.5–9%; its group margin was 3.0% and 5.1% in the last two quarters, though the Indian business is at 10.6%. **Jupiter** is building wheels, brakes, containers, electric trucks and 15-year battery-storage projects at once, with the funding for the ₹400cr battery project still undecided. **Texmaco** is adding defence, AI services and real estate while earning a 7% return on equity, and **Hind** talks of US$1bn of revenue by FY31, ten times today, partly through acquisitions.",
+                    text: "**Concord** and **MV** have yet to show their profits as cash; MV needs about ₹200cr of working capital, now covered by its IPO. **Hind Rectifiers**' CRISIL rating would be at risk if its operating margin stayed below 8.5–9%; its group margin was 3.0% and 5.1% in the last two quarters, though the Indian business is at 10.6%. **Jupiter** is building wheels, brakes, containers, electric trucks and 15-year battery-storage projects at once, with the funding for the ₹400cr battery project still undecided. **Texmaco** is adding defence, AI services and real estate while earning a 7% return on equity, and **Hind** talks of US$1bn of revenue by FY31, ten times today, partly through acquisitions. **Cosmic CRF** has agreed to buy an insolvent wagon plant that has not produced for years, while also finishing a forging unit, talking of a later ‘liquid metal’ steel plant, and having paid ₹20cr to Sagacious Capital towards buying other units out of insolvency, which management calls a fallback if Amzen is delayed. Its shareholders were asked in September to lift its borrowing limit fivefold to ₹1,000cr.",
                 },
             ],
         },
@@ -509,16 +536,16 @@ export const industrialRailway: SectorOverview = {
             heading: '8. Valuation (comparative)',
             body: [
                 "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it gives credit for cash and charges for debt. Where the two disagree, the balance sheet is the reason.",
-                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **15% at 23x, 25% at 55–56x, 26% at 58x and 34% at 107x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E.",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **15% at 23x, 16% at 25x, 25% at 55–56x, 26% at 58x and 34% at 107x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E.",
             ],
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**Texmaco** and **Jupiter** carry the most net debt (₹663cr and ₹554cr), so they are dearer than their P/Es suggest, and Texmaco's ₹700cr reserve-funded provision is a liability the P/E ignores entirely. **Titagarh**'s ₹306cr of net debt is modest, but its ₹504cr undertaking for the wheel venture's loans sits outside it. **Concord**'s ₹37cr of net debt is small, but it appeared only this year as unpaid bills rose. **MV Electrosystems** is loss-making, so neither measure applies yet.",
+                    text: "**Texmaco** and **Jupiter** carry the most net debt (₹663cr and ₹554cr), so they are dearer than their P/Es suggest, and Texmaco's ₹700cr reserve-funded provision is a liability the P/E ignores entirely. **Titagarh**'s ₹306cr of net debt is modest, but its ₹504cr undertaking for the wheel venture's loans sits outside it. **Concord**'s ₹37cr of net debt is small, but it appeared only this year as unpaid bills rose. **MV Electrosystems** is loss-making, so neither measure applies yet. **Cosmic CRF**'s ₹22cr of net debt is small only because ₹100cr of its 2025 share-sale money sits in deposits; the Amzen purchase of up to ₹284cr, about ₹400cr with repairs, would add roughly ₹200cr of loans that neither measure yet shows.",
                 },
                 {
-                    label: 'Fits: the one price that asks for about what I expect',
-                    text: "**Concord** needs about {need:Concord Control|25–26}% a year against my ~25%. That is a fair price for a company that has grown 62% a year over three years at a 25–30% margin, **if** its profit turns into cash. It has not yet: operating cash has been negative two years running and its related-party sales and receivables are rising. That is why it is a follow, and a small one, despite the label.",
+                    label: 'Fits: two prices that ask for about what I expect',
+                    text: "**Concord** needs about {need:Concord Control|25–26}% a year against my ~25%. That is a fair price for a company that has grown 62% a year over three years at a 25–30% margin, **if** its profit turns into cash. It has not yet: operating cash has been negative two years running and its related-party sales and receivables are rising. That is why it is a follow, and a small one, despite the label. **Cosmic CRF** needs about {need:Cosmic CRF|16}% a year against my ~15%, one of the lower asks here. The volumes are real and net debt is small, but the label rests on reported profit from a 10–11% margin business that burned ₹109cr of free cash in FY26, is issuing new shares to buy out a promoter-linked minority, and is about to buy an idle wagon plant. **A fair price is not enough when the next big decision is still ahead: wait for the Amzen approval and funding.**",
                 },
                 {
                     label: 'Full: cheap on paper, discounted for a reason',
@@ -541,7 +568,7 @@ export const industrialRailway: SectorOverview = {
         {
             company: 'Concord Control', rank: 1, stance: 'SCALEUP', segment: ELEC,
             what: "Railway electronics: distributed power control for long freight trains, locomotive displays and diagnostics and, through its 46.5% associate ProGOTA, Kavach anti-collision; makes its own flexible circuit boards. Listed on the BSE SME platform, moving to the main board.",
-            view: "**The highest-margin layer, with a cash question.** FY26 revenue rose 69% to ₹210cr at a 29.5% operating margin, return on capital is 31% and the order book is ₹697cr, though part of it sits in the associate. But operating cash was −₹55cr, receivables tripled to ₹121cr, related-party sales rose sixteenfold and ₹13.4cr is owed by director-linked companies. The price needs about {need:Concord Control|25–26}% a year against my ~25%, the only fit in the group.",
+            view: "**The highest-margin layer, with a cash question.** FY26 revenue rose 69% to ₹210cr at a 29.5% operating margin, return on capital is 31% and the order book is ₹697cr, though part of it sits in the associate. But operating cash was −₹55cr, receivables tripled to ₹121cr, related-party sales rose sixteenfold and ₹13.4cr is owed by director-linked companies. The price needs about {need:Concord Control|25–26}% a year against my ~25%: with Cosmic CRF, one of the two prices here that fit.",
             watch: 'H1 FY27 operating cash turning positive; receivable days below 150; the Kavach field trial and safety approval.',
         },
         {
@@ -563,13 +590,19 @@ export const industrialRailway: SectorOverview = {
             watch: 'The wagon tender; 45–50 coaches a quarter; the first Vande Bharat train by Q4 FY27.',
         },
         {
-            company: 'Texmaco Rail', rank: 5, stance: 'CYCLICAL', segment: FAB,
+            company: 'Cosmic CRF', rank: 5, stance: 'SCALEUP', segment: FAB,
+            what: "Cold-rolled steel sections, doors and body parts for wagon and coach builders, plus sheet piles, poles, crash barriers and galvanizing for infrastructure through N.S. Engineering, and bogie springs; listed on the BSE SME platform and buying the idle Amzen wagon plant in Punjab.",
+            view: "**Real volume growth, thin margins and promoter dealings, with the big bet still ahead.** Tonnage rose 90% to 1,06,370 in FY26, revenue 78% to ₹717cr and profit 65% to ₹51cr, with net debt of only ₹22cr. But the margin is 10–11%, free cash flow was −₹109cr, receivables doubled to ₹205cr, the auditor flagged related-party advances, and new shares are going mostly to a promoter-linked firm for the N.S. Engineering minority. The price needs about {need:Cosmic CRF|16}% a year against my ~15% (price check: {Label:Cosmic CRF|Fits}), but Amzen could change the balance sheet within a year.",
+            watch: 'Tribunal approval and the funding plan for Amzen; H1 FY27 operating cash and receivables; springs sold to wagon builders under the new approval at a better margin.',
+        },
+        {
+            company: 'Texmaco Rail', rank: 6, stance: 'CYCLICAL', segment: FAB,
             what: "India's largest wagon maker by capacity (15,400 a year), with its own foundry, rail electrification and track work, and joint ventures in brakes, leasing and tank wagons; part of the Adventz group.",
             view: "**A transformed order book, with accounts the auditor would not sign clean.** 96% of its wagon book is private and export, lifting the order book to ₹9,923cr with a ₹4,100cr South African contract. But the auditor qualified FY26 because a ₹700cr provision was taken straight from reserves, Q1 sales fell 17%, freight-car margin fell to 5.5% and profit relied on a tax credit. The price needs about {need:Texmaco Rail|15}% a year against my ~12%, but reported profit is the number in doubt.",
             watch: 'Any use or write-back of the ₹700cr provision; wagons back above 2,000 a quarter; collection of ₹765cr of unbilled work.',
         },
         {
-            company: 'Jupiter Wagons', rank: 6, stance: 'CYCLICAL', segment: FAB,
+            company: 'Jupiter Wagons', rank: 7, stance: 'CYCLICAL', segment: FAB,
             what: "Wagons (mostly for private buyers), brakes (Stone India), wheels and axles, vehicle bodies and containers, and battery storage; a wheel plant with Lucchini is under construction in Odisha.",
             view: "**The right idea at an uncomfortable cost.** Owning brakes and wheels is the way out of fabrication, and Italy's Lucchini is putting ₹290cr into the wheel business. But the order book has shrunk five quarters to ₹4,550cr, debt doubled to ₹996cr, the cash cycle is 213 days and ₹1,506cr of capex is still committed, with wheels not earning until FY28. The price needs about {need:Jupiter Wagons|25}% a year against my ~12%.",
             watch: 'Q2 wagon output above 1,300; stock falling back from ₹1,079cr; how the battery project is funded.',
@@ -580,12 +613,12 @@ export const industrialRailway: SectorOverview = {
         heading: '9. Summary review',
         body: [
             "**Traction and safety electronics.** **Concord Control: follow, small.** The best margins and the only price that fits my estimate, but its profit has to arrive as cash and its related-party sales must stop rising before I would own it. **Hind Rectifiers: follow.** A real transformer franchise, but its order book is falling, its French unit drags the group, and its price needs about {need:Hind Rectifiers|34}% a year, far more than my reduced ~18%. **MV Electrosystems: wait.** Approved and funded, but it has to deliver.",
-            "**Wagons and coaches.** **Titagarh: wait.** The best franchise and the one to buy first on a fall or a tender award, once the coach ramp holds 45–50 a quarter. **Texmaco: pass.** A transformed order book, but its auditor qualified the accounts over a ₹700cr provision taken from reserves, so its reported profit cannot yet be trusted. **Jupiter: pass.** The right strategy, funded with debt and a shrinking order book at a price that needs twice my estimate.",
-            "**What would change my view.** For the better: the one-lakh-wagon tender being issued (Titagarh, Texmaco and Jupiter at once); Concord reporting positive operating cash for H1 FY27; Hind's order book back above ₹1,000cr; MV hitting 40 sets a month; the wheel plants starting on time. For the worse: the Railways moving more work in-house, Kavach prices falling in open tenders, Texmaco drawing on its provision, or a cash squeeze at a company funding a large order book with short-term debt.",
-            "**What to watch next quarter.** Concord's H1 cash flow and receivables; Hind's orders and Q2 standalone revenue; MV's September–December deliveries; Titagarh's coach count and the wagon tender; Texmaco's provision and wagon output; Jupiter's stock and battery-project funding.",
+            "**Wagons and coaches.** **Titagarh: wait.** The best franchise and the one to buy first on a fall or a tender award, once the coach ramp holds 45–50 a quarter. **Cosmic CRF: wait.** It makes the steel parts the wagon makers assemble and has doubled its tonnage, and its price roughly fits my ~15%, but its margin is thin, its free cash flow negative, its dealings with promoter companies are growing, and the Amzen wagon plant will reshape it within a year. **Texmaco: pass.** A transformed order book, but its auditor qualified the accounts over a ₹700cr provision taken from reserves, so its reported profit cannot yet be trusted. **Jupiter: pass.** The right strategy, funded with debt and a shrinking order book at a price that needs twice my estimate.",
+            "**What would change my view.** For the better: the one-lakh-wagon tender being issued (Titagarh, Texmaco and Jupiter at once); Concord reporting positive operating cash for H1 FY27; Hind's order book back above ₹1,000cr; MV hitting 40 sets a month; the wheel plants starting on time; Cosmic CRF funding Amzen without new shares and showing positive cash after capex. For the worse: the Railways moving more work in-house, Kavach prices falling in open tenders, Texmaco drawing on its provision, or a cash squeeze at a company funding a large order book with short-term debt.",
+            "**What to watch next quarter.** Concord's H1 cash flow and receivables; Hind's orders and Q2 standalone revenue; MV's September–December deliveries; Titagarh's coach count and the wagon tender; Texmaco's provision and wagon output; Jupiter's stock and battery-project funding; Cosmic CRF's H1 cash flow and the tribunal's decision on Amzen.",
         ],
         bottomLine:
-            "In railways the money is moving from steel to electronics, and the only durable advantage is an approval that takes years, but nothing here is a buy today. Follow Concord Control and Hind Rectifiers until their profits turn into cash and orders, wait for MV Electrosystems to deliver and for the wagon tender before buying Titagarh Railsystems, and pass on Texmaco Rail, whose auditor qualified its accounts, and Jupiter Wagons at today's prices.",
+            "In railways the money is moving from steel to electronics, and the only durable advantage is an approval that takes years, but nothing here is a buy today. Follow Concord Control and Hind Rectifiers until their profits turn into cash and orders, wait for MV Electrosystems to deliver, for the wagon tender before buying Titagarh Railsystems and for the Amzen deal to settle at Cosmic CRF, and pass on Texmaco Rail, whose auditor qualified its accounts, and Jupiter Wagons at today's prices.",
     },
 
     sources: [
@@ -618,5 +651,12 @@ export const industrialRailway: SectorOverview = {
         { label: 'MV Electrosystems Q1 FY27 earnings call transcript — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=0fb1f5a9-24b6-4954-b7e8-9b2e4ba6483e.pdf' },
         { label: 'Kavach: approved vendors and programme scope — Wikipedia', url: 'https://en.wikipedia.org/wiki/Kavach_(train_protection_system)' },
         { label: 'Titagarh Rail holds wagon output at 600-650 monthly — Railway Supply', url: 'https://www.railway.supply/titagarh-deliberately-caps-wagon-output-at-650/' },
+        { label: 'Cosmic CRF Annual Report FY26 (auditor’s key audit matter, related parties, contingent liabilities)', url: 'https://cosmiccrf.com/wp-content/uploads/2026/09/Final-Cosmic-CRF-Limited-2026-AR.pdf' },
+        { label: 'Cosmic CRF investor presentation, H2 FY26', url: 'https://cosmiccrf.com/wp-content/uploads/2026/05/PRESENTATION-MARCH-2026.pdf' },
+        { label: 'Cosmic CRF H2 FY26 earnings call transcript', url: 'https://cosmiccrf.com/wp-content/uploads/2026/06/Transcript.pdf' },
+        { label: 'Cosmic CRF rating rationale — Infomerics, Dec 2025', url: 'https://infomericstorage.blob.core.windows.net/uploads/pr_cosmic_crf_8dec25_dc83adc42e.pdf' },
+        { label: 'Cosmic CRF to acquire Amzen Transportation for ₹284 crore — Whalesbook', url: 'https://www.whalesbook.com/corporate-news/English/railway/Cosmic-CRF-to-Acquire-Amzen-Transportation-for-indian-rupee284-Crore/6a6b568e10bce1fd20352d18' },
+        { label: 'Cosmic CRF unit gets RDSO prototype approval for railway springs — ScanX', url: 'https://scanx.trade/stock-market-news/companies/cosmic-crf-unit-gets-rdso-approval-for-railway-springs/44980923' },
+        { label: 'Cosmic CRF to buy the N.S. Engineering minority with new shares — ScanX', url: 'https://scanx.trade/stock-market-news/companies/cosmic-crf-to-acquire-n-s-engineering-stake-migrate-to-main-board/46887756' },
     ],
 };
