@@ -190,7 +190,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sudeep Pharma',
-        inShort: ["**A maker of mineral-based ingredients**: calcium, iron and magnesium phosphates and similar salts used as tablet fillers and nutrients in medicines, infant formula, food and supplements, now building a large battery-materials plant.", "**Good:** a steady 35% margin, sales up 27% in Q1 FY27 and a potentially large battery business with eight customer approvals. **Bad:** only about 30% of profit turns into cash, working capital is very high, and the battery plan needs heavy spending before it earns.", "**Verdict: wait.** A good business, but the price needs about 29% a year against the ~18% I expect."],
+        inShort: ["**A maker of mineral-based ingredients**: calcium, iron and magnesium phosphates and similar salts used as tablet fillers and nutrients in medicines, infant formula, food and supplements, now building a large battery-materials plant.", "**Good:** a steady 35% margin, sales up 27% in Q1 FY27 and a potentially large battery business with eight customer approvals. **Bad:** only about 30% of profit turns into cash, working capital is very high, and the battery plan needs heavy spending before it earns.", "**Verdict: wait.** A good business, but the price needs about {need:Sudeep Pharma|29}% a year against the ~18% I expect."],
         tagline: "A Vadodara-based maker of mineral excipients and nutrition ingredients (phosphates, carbonates, bisglycinates), with an Irish blending subsidiary (NSS) and a new battery-grade iron phosphate venture, Sudeep Advanced Materials.",
         revenue: '₹642cr (FY26, consolidated)',
         products: [

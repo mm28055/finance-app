@@ -59,7 +59,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Alivus Life Sciences',
-        inShort: ["**Makes the active ingredient inside other companies' medicines** (the chemical that makes a pill work), mainly for heart, nervous-system and cancer drugs sold in the US, Europe and Japan. It was Glenmark's ingredient arm and is now controlled by Nirma.", "**Good:** named in 617 regulatory filings, clean US inspections, 31% margins and ₹880cr of cash. **Bad:** Glenmark still bought ₹742cr in FY26 (29% of sales), on longer credit terms, and its orders fell 53% in Q1.", "**Verdict: own.** The price asks for about 17% a year of earnings growth, which rising margins and idle cash make reachable."],
+        inShort: ["**Makes the active ingredient inside other companies' medicines** (the chemical that makes a pill work), mainly for heart, nervous-system and cancer drugs sold in the US, Europe and Japan. It was Glenmark's ingredient arm and is now controlled by Nirma.", "**Good:** named in 617 regulatory filings, clean US inspections, 31% margins and ₹880cr of cash. **Bad:** Glenmark still bought ₹742cr in FY26 (29% of sales), on longer credit terms, and its orders fell 53% in Q1.", "**Verdict: own.** The price asks for about {need:Alivus Life Sciences|17}% a year of earnings growth, which rising margins and idle cash make reachable."],
         tagline: "A debt-free maker of complex, low-volume active pharmaceutical ingredients (APIs) for regulated markets, with a small contract-manufacturing arm.",
         revenue: '₹2,552cr (FY26, standalone)',
         products: [
@@ -91,7 +91,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Concord Biotech',
-        inShort: ["**Grows active ingredients with microbes (fermentation)** rather than building them by chemistry: transplant drugs, cancer drugs, anti-infectives and antifungals. It also sells finished injections and tablets.", "**Good:** the low-cost producer in its main molecules, 1,250 cubic metres of fermenters already built, and no debt. **Bad:** FY26 sales fell 12%, and stock on hand reached 485 days of sales.", "**Verdict: follow.** A rare asset, but the price needs about 26% a year of growth straight after a year of decline."],
+        inShort: ["**Grows active ingredients with microbes (fermentation)** rather than building them by chemistry: transplant drugs, cancer drugs, anti-infectives and antifungals. It also sells finished injections and tablets.", "**Good:** the low-cost producer in its main molecules, 1,250 cubic metres of fermenters already built, and no debt. **Bad:** FY26 sales fell 12%, and stock on hand reached 485 days of sales.", "**Verdict: follow.** A rare asset, but the price needs about {need:Concord Biotech|26}% a year of growth straight after a year of decline."],
         tagline: "A leading maker of fermentation-based active pharmaceutical ingredients (APIs), moving into finished injectables, US sales and contract manufacturing.",
         revenue: '₹1,055cr (FY26, consolidated)',
         products: [
@@ -220,7 +220,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Acutaas Chemicals',
-        inShort: ["**Makes advanced intermediates**, the last chemical steps before a medicine's active ingredient, for drug innovators and generic makers, plus battery-electrolyte additives and semiconductor chemicals. It will not make the final ingredient: “we do not compete with our customers”.", "**Good:** revenue up 59% in Q1, margins of 34–42%, and a battery plant fully contracted for three years. **Bad:** contract growth leans on one anchor product, and free cash flow was negative in each of the last five years.", "**Verdict: follow.** The best growth in the group, but the price already assumes about 29% a year."],
+        inShort: ["**Makes advanced intermediates**, the last chemical steps before a medicine's active ingredient, for drug innovators and generic makers, plus battery-electrolyte additives and semiconductor chemicals. It will not make the final ingredient: “we do not compete with our customers”.", "**Good:** revenue up 59% in Q1, margins of 34–42%, and a battery plant fully contracted for three years. **Bad:** contract growth leans on one anchor product, and free cash flow was negative in each of the last five years.", "**Verdict: follow.** The best growth in the group, but the price already assumes about {need:Acutaas Chemicals|29}% a year."],
         tagline: "Formerly Ami Organics: a maker of advanced pharmaceutical intermediates and contract-made molecules, adding battery and semiconductor chemicals.",
         revenue: '₹1,339cr (FY26, consolidated)',
         products: [

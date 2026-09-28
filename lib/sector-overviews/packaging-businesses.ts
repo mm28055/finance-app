@@ -305,7 +305,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Ester Industries',
-        inShort: ["**Polyester packaging-film maker** (BOPET, the tough clear film in laminated packs) with a high-margin specialty polymers unit, a recycled-plastic line and a textile-recycling venture with Loop Industries.", "**Good:** film profits more than doubled in Q1 FY27, and specialty polymers earn 45% margins. **Bad:** loss-making over the last year, with ₹729cr of borrowings against a market value of about ₹900cr, and specialty-polymer sales down 32% on weak demand for one patented product.", "**Verdict: pass.** With this much debt, lenders rather than shareholders have the first claim on any recovery."],
+        inShort: ["**Polyester packaging-film maker** (BOPET, the tough clear film in laminated packs) with a high-margin specialty polymers unit, a recycled-plastic line and a textile-recycling venture with Loop Industries.", "**Good:** film profits more than doubled in Q1 FY27, and specialty polymers earn 45% margins. **Bad:** loss-making over the last year, with ₹729cr of borrowings against a market value of about {mcap:Ester Industries|₹900cr}, and specialty-polymer sales down 32% on weak demand for one patented product.", "**Verdict: pass.** With this much debt, lenders rather than shareholders have the first claim on any recovery."],
         tagline: "Polyester (BOPET) film maker with specialty polymers, recycled PET and a chemical-recycling joint venture.",
         revenue: '₹1,375cr (FY26, consolidated)',
         products: [
