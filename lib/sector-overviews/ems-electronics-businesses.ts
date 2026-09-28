@@ -361,7 +361,7 @@ const profiles: BusinessProfile[] = [
         costEffect: "**Fixed fee per unit.** It passes cost rises on through higher prices, so profit per unit holds but the percentage margin falls. It says this is not the season to ask for another increase. **Rule of thumb:** a 10% rise in material costs not passed on would wipe out more than its whole 7% margin. **What happened:** copper rose by about half and its margin fell from about 10% to 7%, while rupee profit per unit held.",
         competitors: [{ name: 'Amber, Epack Durable, Dixon', note: 'Other appliance contract makers.' }, { name: 'Brands making in-house', note: 'Large brands keep some production in their own plants.' }],
         position: "**One of India's two largest appliance contract makers**, with the broadest range under one roof.",
-        money: "Net debt about ₹208cr at FY26 (Screener); by June 2026, ₹491cr of cash against ₹417cr of debt, so net cash of only about ₹74cr. Inventory was still above ₹1,000cr in June against a target of under ₹900cr. Promoters hold **43%**, down from 49% in March 2025.",
+        money: "Net debt about ₹208cr at FY26 (Screener); by June 2026, ₹491cr of cash against ₹417cr of debt, so net cash of only about ₹74cr. Inventory was still above ₹1,000cr in June against the under-₹900cr it had promised in May; management now calls it strategic stock against import curbs. Promoters hold **43%**, down from 49% in March 2025.",
         watch: ["The compressor plant from December.", "The next summer season.", "Per-unit margins recovering."],
         charts: emsElectronicsCharts['PG Electroplast'],
     },

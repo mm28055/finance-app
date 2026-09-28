@@ -628,7 +628,7 @@ export const aerospaceDefence: SectorOverview = {
                 },
                 {
                     label: 'Cautious',
-                    text: "**Astra** narrowed FY27 to ₹1,350cr ±25 and gave ₹1,600cr ±50 for FY28, calls its margin the top, and cut its Rafael joint venture's FY27 sales from 'over ₹600cr' to ₹360cr. **MIDHANI** said growth will beat FY26's 12.5% but 40% 'is not practicable'. **Azad** calls its 25% a baseline built only on parts already qualified. **ideaForge** declined to project order inflows, and **Avantel**'s CMD will not guide margins.",
+                    text: "**Astra** narrowed FY27 to ₹1,350cr ±25 and gave ₹1,600cr ±50 for FY28, will say only that the FY27 margin should be 'similar to last year', and cut its Rafael joint venture's FY27 sales from 'over ₹600cr' to ₹360cr. **MIDHANI** said growth will beat FY26's 12.5% but 40% 'is not practicable'. **Azad** calls its 25% a baseline built only on parts already qualified. **ideaForge** declined to project order inflows, and **Avantel**'s CMD will not guide margins.",
                 },
                 {
                     label: 'Missed',
@@ -775,7 +775,7 @@ export const aerospaceDefence: SectorOverview = {
         {
             company: 'Astra Microwave Products', rank: 2, stance: 'SCALEUP', segment: ELEC,
             what: "RF and microwave electronics for radars, electronic warfare, missiles and satellites: active-array units for the Uttam radar as DRDO's development-cum-production partner, Su-30 upgrade subsystems, its own microwave chips, Doppler weather radars, and a communications joint venture with Rafael.",
-            view: "**A real defence franchise whose growth comes later.** The ₹2,205cr Uttam order ties revenue to Tejas production to FY32 and lifts the book to about ₹4,300cr, and FY26 operating cash of ₹387cr earned a CRISIL upgrade to A+. But guidance is ₹1,350cr in FY27 and ₹1,600cr in FY28 (16–18% a year), margins are at what management calls the top, and Q1 revenue fell 11%. The price needs about 30% a year against my ~25%, cut from 28%.",
+            view: "**A real defence franchise whose growth comes later.** The ₹2,205cr Uttam order ties revenue to Tejas production to FY32 and lifts the book to about ₹4,300cr, and FY26 operating cash of ₹387cr earned a CRISIL upgrade to A+. But guidance is ₹1,350cr in FY27 and ₹1,600cr in FY28 (16–18% a year), the FY27 margin is guided only 'similar to last year', and Q1 revenue fell 11%. The price needs about 30% a year against my ~25%, cut from 28%.",
             watch: 'FY27 revenue reaching ₹1,350cr after a weak Q1; QRSAM and Su-30 production orders; the space demerger from April 2027 and ~₹130cr of warrant money due by December.',
         },
         {
