@@ -447,7 +447,7 @@ export const softwarePlatforms: SectorOverview = {
                 },
                 {
                     label: 'Growth driver: adtech abroad and acquisitions',
-                    text: "**Affle** aims for $1bn of revenue ‘in the next few years’ and to be ten times its size within a decade, which needs acquisitions; it bought the assets of US video-ad network AdColony for $4.7m (₹44.4cr) and has about four larger targets shortlisted. **Mobavenue**'s international share rose from 11.5% of FY26 revenue to 20.7% in Q1 on a ₹10.02cr order won by its UK arm; it holds its ₹50cr raise for acquisitions. **My view: organic growth of about 20% is proven at Affle; the acquisitions are what could lift it, and also what could spoil the margin.**",
+                    text: "**Affle** aims for $1bn of revenue ‘in the next few years’ and to be ten times its size within a decade, which needs acquisitions; it bought the assets of US video-ad network AdColony for $4.7m (₹44.4cr) and says a larger deal has reached third-party due diligence, to complete by early 2027 (in May it had about four targets shortlisted). **Mobavenue**'s international share rose from 11.5% of FY26 revenue to 20.7% in Q1 on a ₹10.02cr order won by its UK arm; it holds its ₹50cr raise for acquisitions. **My view: organic growth of about 20% is proven at Affle; the acquisitions are what could lift it, and also what could spoil the margin.**",
                 },
                 {
                     label: 'Delivering or beating',

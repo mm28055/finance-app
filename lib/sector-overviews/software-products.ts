@@ -543,7 +543,7 @@ export const softwareProducts: SectorOverview = {
                     caption: 'Q1 FY27 cash and capital, as stated on the calls',
                     columns: ['Company', 'What management said', 'Balance sheet'],
                     rows: [
-                        ['Newgen Software', 'Receivables to be cut ‘aggressively’; debtor days 145 vs 164 in Q4; buyback idea passed to the board', 'Cash and liquid funds ₹1,115cr (March); borrowings ₹39cr, all leases'],
+                        ['Newgen Software', 'DSO ‘a challenge we recognize’, expected to keep falling (April promised an ‘aggressive’ cut); debtor days 145 vs 164 in Q4; buyback idea passed to the board', 'Cash and liquid funds ₹1,115cr (March); borrowings ₹39cr, all leases'],
                         ['Intellect Design Arena', 'Cash ₹1,269cr (+30%); collections ₹763cr (+30%); R&D budget ₹180–200cr; FY26 dividend ₹7', 'Borrowings ₹159cr, mostly leases; CRISIL A+, outlook Positive'],
                         ['RateGain Travel Tech', 'Net debt ₹615cr; US$47.5M of US$125M loan repaid; debt-free by end-FY28; free cash ₹135cr in Q1', 'Goodwill ₹1,581cr; ₹1,291cr parent guarantee'],
                         ['Capillary Technologies', '₹33.4cr fraud loss, ₹4.7cr frozen, insurance claim filed; SessionM earned ₹5–6cr of free cash in two months', 'Cash ~₹483cr (March), ₹323cr of IPO money unspent; borrowings ₹45cr'],
@@ -592,7 +592,7 @@ export const softwareProducts: SectorOverview = {
                 },
                 {
                     label: 'Cautious',
-                    text: "**Newgen** refused to give an FY27 number in April (‘projecting a number for next year may not be advisable’) and in July would only say it was ‘hopeful’ of double-digit growth. **Intellect**'s chairman is ‘designing for 20%’ but said ‘whether we achieve 15%, 14%, or 12%… time will tell’. **Amagi** trimmed its gross-margin expectation to 67–69% from about 69% because of price concessions, AI costs and double-running cloud systems during migrations. **Aurionpro** gave no guidance at all after admitting that its earlier promise of a stronger second half ‘was not true’. **Protean** and **Nucleus** give no numbers. My view: caution is appropriate for the bank-software sellers, and I take Newgen's and Intellect's hedged wording at face value.",
+                    text: "**Newgen** refused to give an FY27 number in April (‘projecting a number for next year may not be advisable’) and in July would only say it was ‘hopeful’ of double-digit growth. **Intellect** said in July it continues to live up to ‘the 20% promise, LTM basis’ within 2–3 points, and its chairman agreed that 15–20% growth still holds; in May he had hedged that ‘whether we achieve 15%, 14%, or 12%… time will tell’. **Amagi** trimmed its gross-margin expectation to 67–69% from about 69% because of price concessions, AI costs and double-running cloud systems during migrations. **Aurionpro** gave no guidance at all after admitting that its earlier promise of a stronger second half ‘was not true’. **Protean** and **Nucleus** give no numbers. My view: caution is appropriate for the bank-software sellers, and I take Newgen's hedged wording, and Intellect's May caveat, at face value.",
                 },
                 {
                     label: 'Missed',
