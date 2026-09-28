@@ -100,7 +100,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'TD Power Systems',
-        inShort: ["**Makes generators and motors** for global engine and turbine makers; most orders are exports, driven by US data centres.", "**Good:** revenue up 72% with steady margins, and contracts pass on metal costs. **Bad:** little of its profit has turned into cash, and it is raising equity.", "**Verdict: follow.** A great business whose price needs about 31% growth a year, a little more than the 28% I expect."],
+        inShort: ["**Makes generators and motors** for global engine and turbine makers; most orders are exports, driven by US data centres.", "**Good:** revenue up 72% with steady margins, and contracts pass on metal costs. **Bad:** little of its profit has turned into cash, and it is raising equity.", "**Verdict: follow.** A great business whose price needs about {need:TD Power Systems|31}% growth a year, a little more than the 28% I expect."],
         tagline: "Bangalore-based maker of generators and motors, sold mostly to global engine and turbine makers; one of the few independent suppliers in its size range.",
         revenue: '₹1,856cr (FY26, consolidated)',
         products: [
@@ -311,7 +311,7 @@ const profiles: BusinessProfile[] = [
     // ── Wind and structures ──────────────────────────────────────────────────
     {
         company: 'Inox Wind',
-        inShort: ["**Wind-turbine maker** from the Inox GFL group, with a 4.4 GW order book.", "**Good:** big order book and margins around 20%. **Bad:** it has used far more cash than it earned, relies on group orders, and keeps issuing shares.", "**Verdict: avoid.** The price needs about 21% growth a year; after repeated misses and dilution I expect about 14%."],
+        inShort: ["**Wind-turbine maker** from the Inox GFL group, with a 4.4 GW order book.", "**Good:** big order book and margins around 20%. **Bad:** it has used far more cash than it earned, relies on group orders, and keeps issuing shares.", "**Verdict: avoid.** The price needs about {need:Inox Wind|21}% growth a year; after repeated misses and dilution I expect about 14%."],
         tagline: "Wind-turbine maker from the Inox GFL group, with a 4.4 GW order book; group companies service the turbines and are major buyers.",
         revenue: '₹4,397cr (FY26, consolidated)',
         products: [
