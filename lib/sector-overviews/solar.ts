@@ -10,6 +10,7 @@ const FY = ['FY22', 'FY23', 'FY24', 'FY25', 'FY26'];
 const EPC = 'EPC and developers — building solar and battery plants';
 const CELLS = 'Cell makers — the scarce part of the chain';
 const MODULES = 'Module assemblers — the crowded part, now building cells';
+const POWER = 'Power sellers — owning plants and selling green power to companies';
 
 export const solarPvCellsEpc: SectorOverview = {
     sector: 'Solar PV Cells EPC',
@@ -24,6 +25,7 @@ export const solarPvCellsEpc: SectorOverview = {
         // My base-case earnings growth, % a year over three to five years (section 6).
         myGrowth: {
             'Waaree Renewables': 12,
+            'Clean Max Env. Energ': 30,
             'Oriana Power': 10,
             'Emmvee Photovoltaic Power Ltd': 12,
             'Alpex Solar': 10,
@@ -36,7 +38,7 @@ export const solarPvCellsEpc: SectorOverview = {
         },
     },
     standfirst:
-        "Ten solar companies across the chain. Two build solar and battery plants for others (Waaree Renewables, the Waaree group's EPC arm, and Oriana Power). Two make solar cells, the scarce part of the chain in India (Emmvee and Websol). Six assemble modules and are rushing to build cell plants (Vikram, Saatvik, Insolation, Solex, Alpex and Australian Premium Solar). India has about 233 GW of module factories running at 35–40% of capacity but only about 35 GW of cells, so profit has moved from assemblers to cell makers; yet cell capacity is forecast to reach about 100 GW by December 2027, new tender awards have collapsed, and US duties of about 249% have shut the export outlet. This note draws on both recent earnings calls, the FY26 annual report and the rating reports of every company, and on ICRA, CRISIL, CareEdge, IEEFA–JMK and Mercom; every chart uses filed results.",
+        "Eleven solar companies across the chain. One owns solar and wind plants and sells their power to companies on contracts of about 23 years (CleanMax, the listed Clean Max Enviro Energy Solutions). Two build solar and battery plants for others (Waaree Renewables, the Waaree group's EPC arm, and Oriana Power). Two make solar cells, the scarce part of the chain in India (Emmvee and Websol). Six assemble modules and are rushing to build cell plants (Vikram, Saatvik, Insolation, Solex, Alpex and Australian Premium Solar). India has about 233 GW of module factories running at 35–40% of capacity but only about 35 GW of cells, so profit has moved from assemblers to cell makers; yet cell capacity is forecast to reach about 100 GW by December 2027, new tender awards have collapsed, and US duties of about 249% have shut the export outlet. For CleanMax, which buys modules, the glut helps; its risks are debt, grid curtailment and state power rules. This note draws on both recent earnings calls, the FY26 annual report and the rating reports of every company, and on ICRA, CRISIL, CareEdge, IEEFA–JMK and Mercom; every chart uses filed results.",
     lastUpdated: '2026-09-23',
     asOfQuarter: 'Q1 FY27',
 
@@ -48,8 +50,9 @@ export const solarPvCellsEpc: SectorOverview = {
             periods: Q,
             scale: 'sequential',
             source: 'Filed quarterly results (Screener), all consolidated. Oriana and Australian Premium Solar report half-yearly, so their figures sit in the Q2 and Q4 columns. Operating profit ÷ sales.',
-            note: 'The split that matters: cell makers earn 34–47% (Emmvee, Websol) because Indian cells are scarce; EPC firms 19–23%; plain module assemblers have fallen to 7–15% as module capacity floods the market.',
+            note: 'The split that matters: cell makers earn 34–47% (Emmvee, Websol) because Indian cells are scarce; EPC firms 19–23%; plain module assemblers have fallen to 7–15% as module capacity floods the market. CleanMax, which sells power from plants it owns, earns about half its sales as operating profit, but most of that goes on interest and depreciation.',
             cellNotes: {
+                'Clean Max Env. Energ': 'A power seller, not a manufacturer. The dip from 62–66% to 48–51% is mix: its low-margin plant-building business (RE Services) jumped from ₹41cr to ₹300cr of Q1 revenue. Its power-sales business alone earned 84% in Q1 FY27, up from 76% (company). Screener excludes other income; the company’s own EBITDA includes it.',
                 'Emmvee Photovoltaic Power Ltd': 'Q4 FY26 is 33% from the filing (operating profit ₹571cr, profit after tax ₹392cr); the dashboard stores that quarter’s profit rows as zero.',
                 'Oriana Power': 'Half-yearly reporter: H1 FY26 23%, H2 FY26 21% (Screener). The dashboard’s stored Q4 row of zeros is really H2 FY26: sales ₹1,032cr, operating profit ₹218cr, profit ₹130cr.',
                 'Australian Prem': 'Half-yearly reporter: the Q4 column is H2 FY26. The dashboard’s stored trailing revenue (₹1,123cr) is wrong; FY26 sales were ₹708cr.',
@@ -58,6 +61,7 @@ export const solarPvCellsEpc: SectorOverview = {
             },
             values: {
                 'Waaree Renewables': [20, 20, 19, 19, 19],
+                'Clean Max Env. Energ': [66, 63, 62, 48, 51],
                 'Oriana Power': [null, 23, null, 21, null],
                 'Emmvee Photovoltaic Power Ltd': [34, 35, 36, 33, 35],
                 'Alpex Solar': [17, 15, 14, 13, 15],
@@ -77,8 +81,12 @@ export const solarPvCellsEpc: SectorOverview = {
             scale: 'diverging',
             source: 'Filed quarterly revenue, each quarter against the same quarter a year earlier. Blank where a newly listed company did not file the quarter a year earlier.',
             note: 'Growth has been extraordinary as India installs record solar capacity, but it is slowing: Saatvik’s revenue fell 44% in Q1 and Solex’s was flat.',
+            cellNotes: {
+                'Clean Max Env. Energ': 'Listed in March 2026; Screener’s quarterly history starts in December 2024, so the first two quarters are blank. Q1 FY27’s 107% includes a six-fold jump in plant-building revenue; power sales grew 47%.',
+            },
             values: {
                 'Waaree Renewables': [156, 48, 136, 131, 53],
+                'Clean Max Env. Energ': [null, null, 13, 25, 107],
                 'Oriana Power': [null, 117, null, 64, null],
                 'Emmvee Photovoltaic Power Ltd': [null, 181, 118, 62, 51],
                 'Alpex Solar': [394, 178, 245, 106, 32],
@@ -98,9 +106,10 @@ export const solarPvCellsEpc: SectorOverview = {
             periods: FY,
             scale: 'sequential',
             source: 'Filed annual ratios (Screener): return on capital employed.',
-            note: 'Returns of 30–80% are far above what manufacturing normally earns; they reflect a boom in demand and a shortage of Indian cells, not a permanent level. Waaree Renewables, an EPC firm, needs little capital.',
+            note: 'Returns of 30–80% are far above what manufacturing normally earns; they reflect a boom in demand and a shortage of Indian cells, not a permanent level. Waaree Renewables, an EPC firm, needs little capital. CleanMax’s 6–10% is typical of a power producer carrying plants under construction and young plants still in their first years.',
             values: {
                 'Waaree Renewables': [23, 84, 100, 82, 83],
+                'Clean Max Env. Energ': [10, 7, 8, 7, 6],
                 'Oriana Power': [38, 26, 38, 42, 40],
                 'Emmvee Photovoltaic Power Ltd': [9, 6, 7, 28, 45],
                 'Alpex Solar': [7, 14, 26, 51, 44],
@@ -123,6 +132,7 @@ export const solarPvCellsEpc: SectorOverview = {
             note: 'Emmvee’s cycle has risen from 94 to 159 days as its stock grew; Waaree Renewables collects from clients about as fast as it pays suppliers.',
             values: {
                 'Waaree Renewables': [-54, 9, 3, 26, 19],
+                'Clean Max Env. Energ': [52, 67, 66, 46, 53],
                 'Oriana Power': [72, 99, 75, 146, 89],
                 'Emmvee Photovoltaic Power Ltd': [94, 93, 108, 136, 159],
                 'Alpex Solar': [91, 97, 65, 53, 74],
@@ -144,6 +154,7 @@ export const solarPvCellsEpc: SectorOverview = {
             note: 'Operating cash is after tax, so 70–80% is healthy. Oriana, Vikram and Waaree Renewables convert well; Alpex, Saatvik, Australian Premium Solar and Insolation have turned little of their boom-year profit into cash.',
             values: {
                 'Waaree Renewables': [179, 77, 62, 97, 45, 65],
+                'Clean Max Env. Energ': [147, 247, 12, 156, 153, 134],
                 'Oriana Power': [75, 84, 2, 123, 85, 88],
                 'Emmvee Photovoltaic Power Ltd': [124, 105, 195, 87, 12, 46],
                 'Alpex Solar': [-20, -58, -14, 55, -36, -12],
@@ -156,6 +167,7 @@ export const solarPvCellsEpc: SectorOverview = {
             },
             cellNotes: {
                 'Emmvee Photovoltaic Power Ltd': 'FY26 operating cash was only 12% of operating profit as stock and receivables built up.',
+                'Clean Max Env. Energ': 'Above 100% in most years because clients pay within about 22–25 days and some customer money (advances, client equity in plant companies) flows through operations. FY24 (12%) was the exception.',
             },
         },
         {
@@ -166,9 +178,13 @@ export const solarPvCellsEpc: SectorOverview = {
             scale: 'diverging',
             legend: ['Burning cash', 'Generating cash'],
             source: 'Filed cash-flow statements (Screener): operating cash minus spending on fixed assets, as a share of sales. The last column uses all five years.',
-            note: 'Only Waaree Renewables, Vikram, Websol and Oriana have produced free cash over their filed years. The cell plants now being built will absorb far more.',
+            note: 'Only Waaree Renewables, Vikram, Websol and Oriana have produced free cash over their filed years. The cell plants now being built will absorb far more. CleanMax’s deeply negative figures are its business model: it spends two to three times its sales on new plants each year, mostly with project loans.',
+            cellNotes: {
+                'Clean Max Env. Energ': 'FY26 capex was ₹5,754cr against sales of ₹1,913cr (Screener). Each plant is funded 70–80% with project debt and repaid from 23-year power contracts, so negative free cash is expected while it grows.',
+            },
             values: {
                 'Waaree Renewables': [22.8, -5.1, 13.4, 12.6, 5.0, 8.0],
+                'Clean Max Env. Energ': [-53.7, -206.2, -128.1, -100.7, -210.3, -149.4],
                 'Oriana Power': [-0.8, -23.7, -29.2, 15.2, 10.1, 5.5],
                 'Emmvee Photovoltaic Power Ltd': [2.7, -62.5, -46.3, -15.5, -9.0, -17.1],
                 'Alpex Solar': [-1.2, -6.2, -4.1, 1.4, -20.2, -12.4],
@@ -188,10 +204,14 @@ export const solarPvCellsEpc: SectorOverview = {
             scale: 'diverging',
             invert: true,
             legend: ['More debt', 'Net cash'],
+            cellNotes: {
+                'Clean Max Env. Energ': 'Screener: borrowings ₹12,684cr less cash ₹2,288cr at March 2026. The company counts ₹9,684cr at March and ₹11,809cr at June; on plants running more than a year it is about 3.8 times their operating profit (my arithmetic), the rest funds plants not yet earning.',
+            },
             source: 'Filed balance sheets and profit and loss (Screener): borrowings (including leases) minus cash, ÷ operating profit. Treasury investments are counted as cash for Waaree Renewables, Emmvee, Vikram, Saatvik and Websol.',
-            note: 'Below zero means more cash than debt. Vikram, Waaree Renewables and Emmvee hold net cash; Saatvik carries the most debt, and Emmvee is about to borrow ₹3,300cr for its cell plant.',
+            note: 'Below zero means more cash than debt. Vikram, Waaree Renewables and Emmvee hold net cash; Saatvik carries the most debt, and Emmvee is about to borrow ₹3,300cr for its cell plant. CleanMax is in a different league: about 9 times, as a power producer funding plants with long project loans.',
             values: {
                 'Waaree Renewables': [0.0, 0.3, -0.4, -0.7, -0.4],
+                'Clean Max Env. Energ': [4.3, 9.2, 7.3, 7.7, 9.2],
                 'Oriana Power': [2.3, 3.6, 1.4, 0.9, 0.6],
                 'Emmvee Photovoltaic Power Ltd': [3.9, 8.3, 7.7, 2.1, 0.0],
                 'Alpex Solar': [4.0, 2.8, 0.2, 0.3, 1.2],
@@ -211,9 +231,10 @@ export const solarPvCellsEpc: SectorOverview = {
             periods: [...FY, '5 yrs'],
             scale: 'sequential',
             source: 'Filed cash-flow statements (Screener): spending on fixed assets as a share of sales. The last column uses all five years.',
-            note: 'Emmvee spent about 70% of its sales on plant in FY23 and FY24; the module makers now building cell lines (Alpex, Insolation, Saatvik) are raising spending sharply.',
+            note: 'Emmvee spent about 70% of its sales on plant in FY23 and FY24; the module makers now building cell lines (Alpex, Insolation, Saatvik) are raising spending sharply. CleanMax spends two to three times its sales, because it owns the plants it sells power from.',
             values: {
                 'Waaree Renewables': [3.7, 23.6, 1.3, 6.3, 3.7, 5.1],
+                'Clean Max Env. Energ': [115.5, 306.0, 134.2, 194.6, 300.8, 220.6],
                 'Oriana Power': [8.1, 35.6, 29.8, 14.2, 8.4, 13.5],
                 'Emmvee Photovoltaic Power Ltd': [20.5, 72.0, 70.9, 42.3, 12.9, 30.2],
                 'Alpex Solar': [0.6, 2.6, 2.9, 7.4, 14.9, 10.8],
@@ -233,9 +254,10 @@ export const solarPvCellsEpc: SectorOverview = {
             periods: FY,
             scale: 'sequential',
             source: 'Filed accounts (Screener): sales ÷ net fixed assets at year end.',
-            note: 'Module assembly needs little plant (sales 5–17 times fixed assets); cell lines need far more (Emmvee and Websol about 2 times).',
+            note: 'Module assembly needs little plant (sales 5–17 times fixed assets); cell lines need far more (Emmvee and Websol about 2 times). A power producer needs most of all: CleanMax makes ₹0.2 of sales per ₹1 of plant, but on 23-year contracts.',
             values: {
                 'Waaree Renewables': [2.2, 4.7, 5.6, 8.1, 12.2],
+                'Clean Max Env. Energ': [0.3, 0.3, 0.2, 0.2, 0.2],
                 'Oriana Power': [4.4, 4.7, 2.8, 3.7, 5.8],
                 'Emmvee Photovoltaic Power Ltd': [1.1, 1.9, 3.3, 1.1, 1.9],
                 'Alpex Solar': [9.8, 11.5, 13.3, 10.0, 13.2],
@@ -251,7 +273,7 @@ export const solarPvCellsEpc: SectorOverview = {
 
     moat: {
         sources: [
-            { key: 'chain', label: 'Position in the chain', description: 'Making cells (scarce) or building plants, rather than assembling modules (crowded).' },
+            { key: 'chain', label: 'Position in the chain', description: 'Making cells (scarce), building plants or owning them, rather than assembling modules (crowded).' },
             { key: 'orders', label: 'Order book', description: 'Contracted work that covers the next year or more.' },
             { key: 'cost', label: 'Cost and scale', description: 'Plant size, utilisation and technology that keep cost per watt low.' },
             { key: 'price', label: 'Pricing power', description: 'Whether margins held as module prices fell.' },
@@ -260,6 +282,8 @@ export const solarPvCellsEpc: SectorOverview = {
         rows: [
             { company: 'Waaree Renewables', trend: 'stable', trendNote: '₹5,300cr order book and a 37 GW pipeline; margin guided down to about 15% after buying a transmission firm.',
                 grades: { chain: { grade: 'A', note: 'EPC: gains from cheaper modules' }, orders: { grade: 'A', note: '₹5,300cr, 12–15 months of work' }, cost: { grade: 'B', note: 'Little capital needed' }, price: { grade: 'B', note: 'Margins 19–20%, guided to about 15%' }, cash: { grade: 'B', note: 'Net cash; 30–40% of orders from group companies' } } },
+            { company: 'Clean Max Env. Energ', trend: 'widening', trendNote: '3.5 GW running and 2.5 GW contracted at ₹4.00 a unit; power-sales margin up from 76% to 84% in a year; debt ₹11,809cr.',
+                grades: { chain: { grade: 'A', note: 'Owns plants and sells power; cheaper modules help' }, orders: { grade: 'A', note: '2.5 GW contracted; ~23-year contracts' }, cost: { grade: 'B', note: 'Debt at 8.45%; plants built under budget' }, price: { grade: 'A', note: 'Tariff on new contracts up from ₹3.85 to ₹4.00' }, cash: { grade: 'C', note: 'Net debt ₹11,809cr; founder shares pledged' } } },
             { company: 'Oriana Power', trend: 'widening', trendNote: 'About ₹6,800cr order book; battery storage now about 40% of FY27 revenue.',
                 grades: { chain: { grade: 'A', note: 'Builds and sells plants for companies' }, orders: { grade: 'A', note: 'About ₹6,800cr' }, cost: { grade: 'B', note: '835 MWp delivered' }, price: { grade: 'A', note: 'Margins 21–23%' }, cash: { grade: 'C', note: '88% cash conversion, but ₹1,385cr of project-company guarantees off the balance sheet' } } },
             { company: 'Emmvee Photovoltaic Power Ltd', trend: 'widening', trendNote: 'Cells running at 83%; cell capacity rising from 2.94 GW to 8.9 GW by the end of FY27.',
@@ -285,10 +309,11 @@ export const solarPvCellsEpc: SectorOverview = {
         {
             heading: '1. Recommendation, up front',
             body: [
-                "**Follow Emmvee first, then Waaree Renewables, Oriana and Alpex; after this year's reading there is no name here I would own outright.** **Emmvee** is the clearest winner of the cell shortage: a 35% margin in Q1, profit up 103%, and a new target of about ₹2,400cr of FY27 operating profit, 38% above FY26. But it turned only ₹200cr of FY26's ₹1,734cr of operating profit into cash, is borrowing ₹3,306cr for a 6 GW plant that starts just as rival cells arrive, and five customers made up about 86% of its order book at ICRA's last count; the price needs about {need:Emmvee Photovoltaic Power Ltd|12}% a year, in line with my estimate. **Waaree Renewables**, the Waaree group's EPC arm, needs little capital and earned 83% on it in FY26 (Screener); revenue doubled to ₹3,331cr on a record 2,727 MWp built, and Q1 FY27 revenue rose another 53% at an 18.8% margin. But its unbuilt solar work has shrunk from 3,263 MWp in March 2025 to 2,425 MWp; weeks after calling itself asset-light, it paid ₹1,225cr, about 75% of it borrowed, for 55% of a transmission builder earning about 10–11%, and now aims for only about a 15% margin; and its AGM approved up to about ₹2,050cr of sales (roughly 60% of FY26 revenue) to three group project companies with no revenue, one with negative net worth. At a market value of about {mcap:Waaree Renewables|₹8,683cr} and a P/E of about {pe:Waaree Renewables|17}, the shares need about {need:Waaree Renewables|11}% a year against my 12%, so they only just fit.",
+                "**Follow Emmvee first, then CleanMax, Waaree Renewables, Oriana and Alpex; after this year's reading there is no name here I would own outright.** **Emmvee** is the clearest winner of the cell shortage: a 35% margin in Q1, profit up 103%, and a new target of about ₹2,400cr of FY27 operating profit, 38% above FY26. But it turned only ₹200cr of FY26's ₹1,734cr of operating profit into cash, is borrowing ₹3,306cr for a 6 GW plant that starts just as rival cells arrive, and five customers made up about 86% of its order book at ICRA's last count; the price needs about {need:Emmvee Photovoltaic Power Ltd|12}% a year, in line with my estimate. **Waaree Renewables**, the Waaree group's EPC arm, needs little capital and earned 83% on it in FY26 (Screener); revenue doubled to ₹3,331cr on a record 2,727 MWp built, and Q1 FY27 revenue rose another 53% at an 18.8% margin. But its unbuilt solar work has shrunk from 3,263 MWp in March 2025 to 2,425 MWp; weeks after calling itself asset-light, it paid ₹1,225cr, about 75% of it borrowed, for 55% of a transmission builder earning about 10–11%, and now aims for only about a 15% margin; and its AGM approved up to about ₹2,050cr of sales (roughly 60% of FY26 revenue) to three group project companies with no revenue, one with negative net worth. At a market value of about {mcap:Waaree Renewables|₹8,683cr} and a P/E of about {pe:Waaree Renewables|17}, the shares need about {need:Waaree Renewables|11}% a year against my 12%, so they only just fit.",
+                "**CleanMax** (Clean Max Enviro Energy Solutions) is the one business here that does not live or die by the module cycle. It owns 3.5 GW of solar and wind plants and sells their power to about 600 companies, 42% of its contracted capacity to data centres and AI firms such as Amazon, Google and Meta, on contracts of about 23 years; cheaper modules help it. Q1 FY27 revenue doubled to ₹832cr, the power business's margin rose from 76% to 84%, and after adding 500 MW in the quarter management set a new floor of ₹3,000cr of FY28 reported EBITDA, 2.3 times FY26. The catches are debt of ₹11,809cr (company, June), a Rajasthan plant losing about 70% of its output to grid curtailment this year (about ₹170cr of EBITDA), and a founder group that had pledged about a tenth of the company's shares at March. At a market value of about {mcap:Clean Max Env. Energ|₹16,125cr} the price needs about {need:Clean Max Env. Energ|33}% a year of earnings growth against my ~30%, so it is {label:Clean Max Env. Energ|full}: **the best business in this note, at a price that already expects it to keep delivering.**",
                 "**Oriana** grew revenue 84% to ₹1,814cr and has a ₹6,800cr order book, but it missed almost every FY26 promise (revenue over ₹2,000cr, profit doubling, a plant sale to Actis by March), and about 60% of FY26 revenue (₹1,085cr) was plants sold to project companies it controls and has not yet sold on; it guarantees ₹1,385cr of their borrowings outside its reported contingent liabilities. Its price needs about {need:Oriana Power|8}% a year against my ~10%. **Alpex** opened its 2.2 GW cell plant on 16–17 September, about a month late after a fire, and guides 35–40% cell margins; but operating cash was −₹117cr in FY26, borrowings rose from ₹77cr to ₹535cr, and its secretarial audit was qualified because related-party deals skipped audit-committee approval. Its price needs about {need:Alpex Solar|6}% a year against my ~10%.",
                 "**Wait on Websol, Solex, Australian Premium and Vikram; pass on Insolation and Saatvik.** **Websol**'s cell lines are full and it has repaid its term loan, but its margin has fallen every quarter from 47% to 34%, its 4 GW expansion has changed state and still lacks land, and its promoters own only 29.7%, with some shares pledged to non-bank lenders. **Solex** cut its profit-margin guide to 5–6% after one quarter (its price now needs a little more growth than I expect), missed its own June deadline for cell-plant land and funding, and quotes ₹3,400cr of order “visibility” where CRISIL counts ₹1,332cr of firm orders. **Australian Premium** cut its growth guide from 75%-plus to 30–35% and dropped its cell plant within six months. **Vikram** withdrew FY27 guidance of ₹1,500–1,600cr of operating profit three months after giving it and earned ₹126cr in Q1. **Insolation** earned a 10% margin in Q1 against 14–15% guided and held no call to explain it, and **Saatvik** sold 334 MW in Q1 against a 3.5–4 GW year while guaranteeing ₹178.5cr of a promoter-group company's loans.",
-                "**Two things to hold onto before reading the rest.** First, **the glut is in modules, and the scarcity in cells is temporary**: IEEFA and JMK Research count about 233 GW of module capacity running at 35–40% of capacity, while ICRA counts about 35 GW of cells today and expects about 100 GW by December 2027, so today's 34–35% cell margins are a peak, not a floor. Second, **demand is running on old awards**: new solar tender awards fell from 40.6 GW in FY25 to 14.7 GW in FY26 and 4.7 GW in FY27 up to 10 August (ICRA), and 44.8 GW of awarded projects had no power-purchase agreement in April (MNRE). **The low P/Es sit on earnings that are likely to fall.** One more caveat runs through the note: several of the dashboard's stored figures for this sector are wrong (section 8 lists them), and the text and charts use the filings instead.",
+                "**Two things to hold onto before reading the rest.** First, **the glut is in modules, and the scarcity in cells is temporary**: IEEFA and JMK Research count about 233 GW of module capacity running at 35–40% of capacity, while ICRA counts about 35 GW of cells today and expects about 100 GW by December 2027, so today's 34–35% cell margins are a peak, not a floor. Second, **demand is running on old awards**: new solar tender awards fell from 40.6 GW in FY25 to 14.7 GW in FY26 and 4.7 GW in FY27 up to 10 August (ICRA), and 44.8 GW of awarded projects had no power-purchase agreement in April (MNRE). **The low P/Es of the manufacturers and builders sit on earnings that are likely to fall; CleanMax's high one sits on earnings that should rise but are still small.** One more caveat runs through the note: several of the dashboard's stored figures for this sector are wrong (section 8 lists them), and the text and charts use the filings instead.",
             ],
         },
         {
@@ -301,16 +326,16 @@ export const solarPvCellsEpc: SectorOverview = {
         {
             heading: '3. The sector',
             body: [
-                "India installed a record 27 GW of solar in the first half of 2026, about 50% more than a year earlier, taking the total to about 165 GW (Mercom). Part of that was pulled forward: developers hurried to finish before the Indian-cell rule (ALMM List-II, the approved list of cell makers, from 1 June 2026) and a cut in a transmission-charge waiver, and large-scale additions fell 37% from Q1 to Q2. Factories were built even faster. IEEFA and JMK Research count about 233 GW of module capacity, several times the 55–60 GW (DC) a year ICRA expects India to install, so the industry runs at 35–40% of capacity. Cells, the step before modules, total only about 35 GW (ICRA), and only about 2 GW of those are sold to outsiders; the rest go into their makers' own panels. **Every company here is either paid for scarcity (cells), squeezed by surplus (modules) or exposed to how many plants get built (EPC).**",
+                "India installed a record 27 GW of solar in the first half of 2026, about 50% more than a year earlier, taking the total to about 165 GW (Mercom). Part of that was pulled forward: developers hurried to finish before the Indian-cell rule (ALMM List-II, the approved list of cell makers, from 1 June 2026) and a cut in a transmission-charge waiver, and large-scale additions fell 37% from Q1 to Q2. Factories were built even faster. IEEFA and JMK Research count about 233 GW of module capacity, several times the 55–60 GW (DC) a year ICRA expects India to install, so the industry runs at 35–40% of capacity. Cells, the step before modules, total only about 35 GW (ICRA), and only about 2 GW of those are sold to outsiders; the rest go into their makers' own panels. **Every company here is either paid for scarcity (cells), squeezed by surplus (modules), exposed to how many plants get built (EPC) or paid for the power its own plants produce (CleanMax).**",
             ],
             points: [
                 {
                     label: 'Value chain',
-                    text: "Polysilicon and wafers (over 90% made in China, ICRA) → **cells** (Emmvee, Websol) → **modules** (the six assemblers) → **EPC and developers** (Waaree Renewables, Oriana) → utilities and companies buying solar power. ICRA's cost build-up shows where the profit sits: a module made with an imported cell cost about 16 US cents a watt in November 2025, of which the module maker kept 1.9 cents; one made with an Indian cell cost 19.5 cents, and the maker kept 3.5 cents. **Emmvee**'s own figures show the same inside one company: about ₹2–2.5 of operating profit per watt on a standard panel, ₹6–6.5 on a cell sold to another maker and ₹8.5–9 on a panel made with its own cells. Cells need about ₹400–500cr of capital per GW against ₹80–90cr for modules (ICRA), which is why the module layer overbuilt first. **The profit sits wherever capacity is shortest: today in cells, from June 2028 probably in wafers, and never for long in modules.**",
+                    text: "Polysilicon and wafers (over 90% made in China, ICRA) → **cells** (Emmvee, Websol) → **modules** (the six assemblers) → **EPC and developers** (Waaree Renewables, Oriana) → **plant owners** selling power to utilities and companies (CleanMax, which sells only to companies). ICRA's cost build-up shows where the profit sits: a module made with an imported cell cost about 16 US cents a watt in November 2025, of which the module maker kept 1.9 cents; one made with an Indian cell cost 19.5 cents, and the maker kept 3.5 cents. **Emmvee**'s own figures show the same inside one company: about ₹2–2.5 of operating profit per watt on a standard panel, ₹6–6.5 on a cell sold to another maker and ₹8.5–9 on a panel made with its own cells. Cells need about ₹400–500cr of capital per GW against ₹80–90cr for modules (ICRA), which is why the module layer overbuilt first. **The profit sits wherever capacity is shortest: today in cells, from June 2028 probably in wafers, and never for long in modules.** The plant owner at the end of the chain earns differently again: **CleanMax** keeps about 84% of its power revenue as operating profit, but only because it has paid up front for the plant, about ₹3.5cr per MW of solar and ₹7.8cr per MW of wind, mostly with borrowed money.",
                 },
                 {
                     label: 'Where the demand comes from',
-                    text: "Three streams, moving in different directions. Utility-scale plants won in past tenders are still being built (more than 150 GW under construction in June, ICRA), but new awards have dried up, and MNRE has proposed a relief package that lets developers of the 44.8 GW without a power buyer cancel without penalty. Rooftop solar under PM Surya Ghar grew 131% to 6.6 GW in the first half of 2026, with about 45 lakh homes done against a 1 crore target (Mercom); it must use Indian cells, which makes it the core market for **Websol**, **Alpex**, **Australian Premium** and the dealer sales of **Vikram** and **Insolation**. Companies buying solar directly (open access) added 2.7 GW in Q1 2026, up 170%, ahead of rule changes. Exports have gone: FY26 module exports were about 4.5 GW, 97% of it to the US (IEEFA–JMK), and the US Commerce Department has set final anti-dumping and anti-subsidy duties of about 249% on Indian cells and modules, subject to an injury vote on 14 October. **My read is that FY27 volumes are carried by old awards, and FY28–FY29 face an air pocket unless tendering restarts.**",
+                    text: "Three streams, moving in different directions. Utility-scale plants won in past tenders are still being built (more than 150 GW under construction in June, ICRA), but new awards have dried up, and MNRE has proposed a relief package that lets developers of the 44.8 GW without a power buyer cancel without penalty. Rooftop solar under PM Surya Ghar grew 131% to 6.6 GW in the first half of 2026, with about 45 lakh homes done against a 1 crore target (Mercom); it must use Indian cells, which makes it the core market for **Websol**, **Alpex**, **Australian Premium** and the dealer sales of **Vikram** and **Insolation**. Companies buying solar directly (open access) added 2.7 GW in Q1 2026, up 170%, ahead of rule changes. This is **CleanMax**'s market: management says only 7–8% of industrial power is bought green directly, that it has about 14% of this fragmented market, and that each gigawatt of data-centre load needs about 6 GW of wind and solar; its contracted capacity has tripled in two years to 6 GW. Exports have gone: FY26 module exports were about 4.5 GW, 97% of it to the US (IEEFA–JMK), and the US Commerce Department has set final anti-dumping and anti-subsidy duties of about 249% on Indian cells and modules, subject to an injury vote on 14 October. **My read is that FY27 volumes are carried by old awards, and FY28–FY29 face an air pocket unless tendering restarts.**",
                 },
                 {
                     label: 'Cycles and policy',
@@ -318,7 +343,7 @@ export const solarPvCellsEpc: SectorOverview = {
                 },
                 {
                     label: 'What these companies actually depend on',
-                    text: "**Waaree Renewables** and **Oriana** on new EPC orders and battery projects, and for Oriana on selling finished plants to investors; **Emmvee** and **Websol** on the Indian-cell premium lasting until their new lines pay back; **Alpex**, **Vikram**, **Saatvik**, **Insolation** and **Solex** on starting cell lines before 60–100 GW of rival cells arrive; **Australian Premium** on collecting from farm-pump schemes. CRISIL expects cell lines finished by end-FY27 to take one to two years longer to pay back than the four to five years early movers needed. **Buy each for what it actually depends on, not for the sector label.**",
+                    text: "**Waaree Renewables** and **Oriana** on new EPC orders and battery projects, and for Oriana on selling finished plants to investors; **Emmvee** and **Websol** on the Indian-cell premium lasting until their new lines pay back; **Alpex**, **Vikram**, **Saatvik**, **Insolation** and **Solex** on starting cell lines before 60–100 GW of rival cells arrive; **Australian Premium** on collecting from farm-pump schemes; **CleanMax** on state rules for companies buying power directly (open access and group captive), on grid lines being built in time, and on borrowing cheaply for 20 years. CRISIL expects cell lines finished by end-FY27 to take one to two years longer to pay back than the four to five years early movers needed. **Buy each for what it actually depends on, not for the sector label.**",
                 },
             ],
             tables: [
@@ -329,6 +354,7 @@ export const solarPvCellsEpc: SectorOverview = {
                         ['EPC and developers', 'Waaree Renewables, Oriana', '19–23%', '40–83%', '**65–88%**', 'A margin on building, fixed when the bid is won; Oriana also books profit on plants sold to its own project companies'],
                         ['Cell makers', 'Emmvee, Websol', '33–47%', '45–63%', '**46–62%**', 'The Indian-cell premium: ₹6–9 of operating profit a watt against ₹2–2.5 on a standard panel (Emmvee)'],
                         ['Module assemblers', 'Vikram, Saatvik, Insolation, Solex, Alpex, Australian Premium', '7–21%', '22–56%', '**−12% to 73%**', 'Assembly in an industry running at 35–40% of capacity; pumps and dealers help the small ones'],
+                        ['Power sellers', 'CleanMax', '48–66% (84% on power sales alone)', '6%', '**134%**', 'Tariffs of about ₹4 a unit fixed for about 23 years; most of the margin goes on interest and depreciation, and free cash is deeply negative while it builds'],
                     ],
                     note: 'Screener, consolidated. Oriana and Australian Premium report half-yearly. FY26 returns were lifted by a boom year for everyone.',
                 },
@@ -372,7 +398,7 @@ export const solarPvCellsEpc: SectorOverview = {
         {
             heading: '4. Moat (comparative)',
             body: [
-                "Five things protect profits here. The grid grades each company on each one; hover over a grade for the reason. How each company's advantage works is explained in Tab 2. The common thread is that **almost every advantage here is either temporary or granted by policy**: cells are scarce for another year or so, plant builders win on execution rather than price, and the small assemblers survive on niches.",
+                "Five things protect profits here. The grid grades each company on each one; hover over a grade for the reason. How each company's advantage works is explained in Tab 2. The common thread is that **almost every advantage here is either temporary or granted by policy**: cells are scarce for another year or so, plant builders win on execution rather than price, and the small assemblers survive on niches. CleanMax's long power contracts are the exception.",
             ],
             embed: 'moat',
             embedFirst: true,
@@ -384,6 +410,10 @@ export const solarPvCellsEpc: SectorOverview = {
                 {
                     label: 'Execution, not a barrier: building plants',
                     text: "**Waaree Renewables** has commissioned 5.89 GWp, including single parks of 1–2 GW, and cheaper modules help it. But CARE, the rating agency, calls it a “mid-sized player” in an “intensely competitive and fragmented” industry where developers often use their own EPC arms, orders are won project by project, and its FY26 order inflow (2.3 GW) was below FY25's (2.4 GW). Its closest thing to a locked-in customer is its own group: 30–40% of the order book comes from Waaree entities. **Oriana**'s edge is 4,780 acres of land with grid connections and a record of actually commissioning batteries, but it has refused storage tenders priced at ₹1.46–1.77 lakh per MWh a month against the ₹2.16 lakh it won earlier, and has won none for several months. **Execution record and relationships, not pricing power.**",
+                },
+                {
+                    label: 'Contracts and sticky customers: selling power',
+                    text: "**CleanMax** has the most durable advantage in this note, and it does not depend on the cell rule. Its power contracts run about 23 years with an average lock-in of about 18, 81% of its capacity is sold to AA- or AAA-rated firms or multinationals, and clients pay in about 22 days. Under the group-captive model (a legal route that lets a company buy power from a plant it part-owns) clients must own 26% of the plant company, so it has about 100 plant companies with client equity in them, and 79% of the capacity it signed in the latest period came from existing customers. The tariff on its 2.5 GW under construction rose from ₹3.85 to ₹4.00 a unit between the May and August calls, and management says customers still save about 22–25% on their power bills. CRISIL (September) and CARE (May) call it the largest renewable supplier to Indian companies, yet management puts its share at only about 14% of a fragmented market, and says Adani, Reliance and NTPC have announced plans to compete. **Real switching costs and long contracts; the weak spot is that state rules for direct power sales can change.**",
                 },
                 {
                     label: 'Wearing: assembling modules',
@@ -399,17 +429,21 @@ export const solarPvCellsEpc: SectorOverview = {
                 },
                 {
                     label: 'Competitors outside the list',
-                    text: "**Waaree Energies**, **Premier Energies**, **Adani**, **ReNew**, **Tata Power**, **Reliance**, **Avaada** and **First Solar India** in cells and modules, most already on the Indian-cell list; **Sterling and Wilson** and **KPI Green** in EPC; **KEC** and **Kalpataru** in the transmission work Waaree Renewables has entered; and Chinese makers, who hold more than 85% of world cell output (ICRA) and set the import price.",
+                    text: "**Waaree Energies**, **Premier Energies**, **Adani**, **ReNew**, **Tata Power**, **Reliance**, **Avaada** and **First Solar India** in cells and modules, most already on the Indian-cell list; **Sterling and Wilson** and **KPI Green** in EPC; **Adani**, **Reliance** and **NTPC**, which CleanMax says plan to sell green power to companies; **KEC** and **Kalpataru** in the transmission work Waaree Renewables has entered; and Chinese makers, who hold more than 85% of world cell output (ICRA) and set the import price.",
                 },
             ],
         },
         {
             heading: '5. Margins (comparative)',
             body: [
-                "Are the margins structural? Almost none of them: they reflect a shortage of Indian cells, a rush of installations and, for the plant builders, the mix of work. Below, three points on margins and four on working capital.",
+                "Are the margins structural? Only CleanMax's: the others reflect a shortage of Indian cells, a rush of installations and, for the plant builders, the mix of work. Below, four points on margins and four on working capital.",
                 "Whether the profit turns into cash is in section 2 (the **Cash conversion** and **Free cash flow** tabs) and on each company card in Tab 2.",
             ],
             points: [
+                {
+                    label: 'Structural: selling power on long contracts',
+                    text: "**CleanMax**'s power-sales business earned 83.7% in Q1 FY27, up from 76.4% a year earlier and 75% in FY23, while its gross margin stayed at about 92–93%; the whole gain is overheads (selling, staff and offices) falling from 18% to about 9% of income as capacity doubled. Management expects about 86% in three to four years and says it will stay a couple of points below large utility-scale producers because it sells in pieces of about 13 MW to hundreds of companies. Screener's company-wide margin fell to 48–51% in the last two quarters only because the plant-building business, at 11–20%, grew from ₹41cr to ₹300cr of quarterly revenue. What the margin does not show is the cost of the plants: in Q1, interest (₹255cr) and depreciation (₹115cr) took almost all of the ₹421cr operating profit, leaving ₹55cr of profit. **The margin is structural; the profit depends on interest rates and on plants maturing.**",
+                },
                 {
                     label: 'Cyclical: the Indian-cell premium',
                     text: "**Emmvee** has held 33–36% for five quarters (Screener), rising to 35% in Q1 as more than half of sales used Indian cells; management says spreads on new orders are stable and aims for a steady rupee profit per watt rather than a steady percentage. **Websol** has fallen every quarter, from 47% to 43%, 41%, 36% and 34%, mostly because lower-margin panels grew in the mix, with softer cell prices and dearer silver doing the rest. Its reported profit is weaker than the margin suggests: Q4's ₹124cr was taxed at 0% after an appeal let it use old losses, FY27 pays the full rate, and depreciation doubled to ₹22–24cr a quarter after it cut the life of its PERC lines to three years. Management expects about 34% for one to two years. Saatvik's management already quotes 18–20% for Indian-made cells, about half what Alpex guides; **I expect the truth by FY28 to be nearer Saatvik's figure.**",
@@ -432,7 +466,7 @@ export const solarPvCellsEpc: SectorOverview = {
                 },
                 {
                     label: 'Working capital: well run',
-                    text: "**Vikram** still produced ₹667cr of operating cash in FY26, **Websol** ₹255cr (about 84% of profit) even as its stock rose from 70 to 142 days, and **Solex** ₹201cr on ₹184cr of operating profit, helped by suppliers who wait 128 days. **Emmvee** and **Vikram** both prepaid or avoided long-term debt from listing money, though both are about to borrow heavily.",
+                    text: "**Vikram** still produced ₹667cr of operating cash in FY26, **Websol** ₹255cr (about 84% of profit) even as its stock rose from 70 to 142 days, and **Solex** ₹201cr on ₹184cr of operating profit, helped by suppliers who wait 128 days. **Emmvee** and **Vikram** both prepaid or avoided long-term debt from listing money, though both are about to borrow heavily. **CleanMax** collects from its power customers in about 22 days and turned 153% of FY26 operating profit into operating cash (₹1,731cr, Screener); it also used about ₹1,120cr of its IPO money to repay debt (CRISIL).",
                 },
                 {
                     label: 'Working capital: built into the business',
@@ -452,6 +486,7 @@ export const solarPvCellsEpc: SectorOverview = {
                         ['Alpex Solar', '₹890cr cell plant; cell debt about ₹341cr, peaking at ₹350–360cr; no new equity planned', 'Net debt ₹387cr; some bridge NCDs at 13–14%; about ₹98cr of warrant money still due'],
                         ['Websol Energy System Ltd', 'Prepaid the ₹110cr IREDA loan on 4 August; TOPCon upgrade ₹250–270cr from own cash or debt', 'About net-debt-free; CRISIL’s plan for the first 2 GW of Phase 3 has ₹1,241cr of debt'],
                         ['Waaree Renewables', '55% of APS for ₹1,225cr, about 75% debt-funded; interest ₹10cr in Q1 against ₹3cr in Q4', 'Screener net cash ₹244cr at March, before the deal; ₹180cr deposit held as security for a subsidiary'],
+                        ['Clean Max Env. Energ', 'Would not give Q1 capex; 500 MW commissioned; cost of project debt 8.45%; a first ₹2,500cr bond planned (CRISIL: ~₹1,100cr to refinance, ~₹1,400cr for plant equity); steady-state net debt ₹16,000cr against ₹3,000cr of FY28 EBITDA', 'Net debt ₹11,809cr at June (₹9,684cr at March), 38% of it on plants not yet built; ₹400cr bullet loan due June 2027 (CARE)'],
                         ['Oriana Power', 'Half-yearly; no Q1 result or call. June meet: growth funded by selling plants; ₹200cr of NCDs rated', 'Borrowings ₹509cr plus about ₹1,020cr of short-term liabilities; ₹1,385cr of SPV guarantees off the balance sheet'],
                         ['Australian Prem', 'Half-yearly; no Q1 result. May call: reinvest about half of profit; cell plant dropped', 'Net debt ₹11cr; the AGM seeks power to borrow up to ₹500cr'],
                     ],
@@ -470,6 +505,10 @@ export const solarPvCellsEpc: SectorOverview = {
                     text: "**Waaree Renewables** has ₹5,300cr of orders to build over 12–15 months (about ₹2,600cr of solar and batteries, about ₹2,700cr of transmission through APS) and chases 27 GW of projects in India, 10 GW abroad and ₹20,000cr of transmission work. **Oriana** has about ₹6,800cr of orders, about 3.7 times FY26 revenue, including a ₹1,200cr floating plant at Maithon Dam, and expects batteries to be about 40% of FY27 revenue; ICRA counts about 90 GWh of battery storage awarded nationally by June. Against this, new solar awards were only 4.7 GW in FY27 to August, Rajasthan, Waaree Renewables' main state, suffers some of the worst grid curtailment, and the waiver on transmission charges for open-access buyers was cut from 75% to 50% in July. **The order books are real; refilling them will be harder.**",
                 },
                 {
+                    label: 'Growth driver: green power for data centres and factories',
+                    text: "**CleanMax** grows by building plants it has already sold the power from. It had 2.5 GW contracted and under construction at June at about ₹4.00 a unit, guides at least 1.5 GW of new power-sales capacity in FY27 (4.6 GW running by April 2027), and added 403 MW in Q1 plus 127 MW built for clients; in the 12 months to June it commissioned 1,743 MW against 449 MW a year earlier. On the August call it set a floor of ₹3,000cr of FY28 reported EBITDA, 2.3 times FY26's ₹1,295cr, with net debt of about ₹16,000cr once those plants are running. Demand comes from data centres (42% of contracted capacity, up about ten times in two years) and from factories that save about 25% on power bills; management says it is limited by how fast it can build, not by customers. Battery storage is the next step: a first project in Rajasthan and agreements with three clients, priced at about ₹3–4 a unit for shifting daytime power to the evening. **The growth is contracted; the constraint is grid lines, land and cheap debt.**",
+                },
+                {
                     label: 'Growth driver: cells',
                     text: "**Emmvee** triples cells to 8.9 GW by March 2027 and targets about ₹2,400cr of FY27 operating profit. **Vikram**'s 9 GW should give first cells around December 2026–January 2027 and run at 40–50% in FY28; management talks of about ₹5 a watt of operating profit once integrated, against ₹1.25 now. **Saatvik** aims for 80% use of 2.4 GW by Q4 FY27, **Insolation** for first output in December 2026, **Alpex** for about ₹1,700cr of H2 FY27 revenue and about ₹4,000cr in FY28, and **Solex** for 2.2 GW by end-2027. Together with Emmvee that is about 26 GW of new cells from six companies in roughly 18 months, against about 35 GW in the whole country today. **Growth from cells is certain in volume and uncertain in price.**",
                 },
@@ -483,7 +522,7 @@ export const solarPvCellsEpc: SectorOverview = {
                 },
                 {
                     label: 'Delivering or beating',
-                    text: "**Emmvee** promised in April higher cell use, an on-time 6 GW plant and normalising stock; it delivered 83% cell use (from 79%), ordered all equipment and 60% of the hard cost, fixed its debt at about 7.95%, and then added the ₹2,400cr target, though finished-goods stock still rose ₹74cr. **Waaree Renewables** kept execution going (889 MWp and revenue up 53%) with a margin of 18.8%, well above the 15% floor. **Websol** met its promise of near-full use (92% on cells) and repaid the IREDA loan about a month later than it said.",
+                    text: "**Emmvee** promised in April higher cell use, an on-time 6 GW plant and normalising stock; it delivered 83% cell use (from 79%), ordered all equipment and 60% of the hard cost, fixed its debt at about 7.95%, and then added the ₹2,400cr target, though finished-goods stock still rose ₹74cr. **Waaree Renewables** kept execution going (889 MWp and revenue up 53%) with a margin of 18.8%, well above the 15% floor. **Websol** met its promise of near-full use (92% on cells) and repaid the IREDA loan about a month later than it said. **CleanMax** promised in May at least 1.5 GW for FY27 and a storage plan within three or four months; by August it had commissioned 403 MW of power-sales capacity, approved its first battery project, cut its cost of debt to 8.45% and added the ₹3,000cr FY28 floor. The one thing that got worse was curtailment at its Bikaner plant in Rajasthan, from about 30% in May to about 70%, now assumed for the whole year.",
                 },
                 {
                     label: 'Cautious',
@@ -499,7 +538,7 @@ export const solarPvCellsEpc: SectorOverview = {
                 },
                 {
                     label: 'My outlook',
-                    text: "**I expect Emmvee and Waaree Renewables to compound earnings at about 12%, Oriana and Alpex at about 10%, Australian Premium, Insolation and Saatvik at about 5%, and Solex at about 3%.** Emmvee's cells and Waaree Renewables' order book are real, but Emmvee's premium fades from FY28 and Waaree Renewables now works to a 15% margin with more of its orders from its own group. I have held Oriana to about 10% because much of its reported profit is plants sold to its own project companies and it missed most FY26 targets, and Solex to about 3% because its margin guide was cut and its cell plant has slipped. For **Websol** and **Vikram** I expect earnings to stall from here: Websol's cell prices and tax rate go the wrong way, and Vikram's cell margin arrives just as cell prices fall. The low cases in the table below are well under these because of the risks in section 7.",
+                    text: "**I expect CleanMax to grow earnings at about 30% a year, from a small base, Emmvee and Waaree Renewables to compound at about 12%, Oriana and Alpex at about 10%, Australian Premium, Insolation and Saatvik at about 5%, and Solex at about 3%.** Emmvee's cells and Waaree Renewables' order book are real, but Emmvee's premium fades from FY28 and Waaree Renewables now works to a 15% margin with more of its orders from its own group. I have held Oriana to about 10% because much of its reported profit is plants sold to its own project companies and it missed most FY26 targets, and Solex to about 3% because its margin guide was cut and its cell plant has slipped. For **Websol** and **Vikram** I expect earnings to stall from here: Websol's cell prices and tax rate go the wrong way, and Vikram's cell margin arrives just as cell prices fall. CleanMax is the opposite case: its operating profit is largely contracted, and profit after tax (₹157cr over the last year) should rise much faster than operating profit as young plants finish their first, most interest-heavy years; I hold it to about 30% because it will need more debt and probably more equity to keep adding 1.5 GW a year, and because curtailment and state rules can cut into it. The low cases in the table below are well under these because of the risks in section 7.",
                 },
             ],
             tables: [
@@ -509,6 +548,7 @@ export const solarPvCellsEpc: SectorOverview = {
                     columns: ['Company', 'What drives it', 'Earnings growth: low / base / high'],
                     rows: [
                         ['Emmvee Photovoltaic Power Ltd', 'Cells tripling; premium fading from FY28', '0% / **12%** / 20%'],
+                        ['Clean Max Env. Energ', '1.5 GW a year of contracted plants; ₹3,000cr FY28 EBITDA floor; young plants maturing; debt, curtailment and future share issues', '15% / **30%** / 45%'],
                         ['Waaree Renewables', 'EPC orders; batteries; transmission at lower margins; group-company orders', '5% / **12%** / 18%'],
                         ['Oriana Power', 'C&I plants; batteries; plant sales to investors; much profit not yet cash', '3% / **10%** / 16%'],
                         ['Alpex Solar', 'New cell line; pumps; debt and depreciation', '−5% / **10%** / 20%'],
@@ -527,6 +567,7 @@ export const solarPvCellsEpc: SectorOverview = {
                     columns: ['Company', 'Promised on the call', 'Capex', 'Track record'],
                     rows: [
                         ['Waaree Renewables', 'April: maintain or improve ~19% margin; stay asset-light; build the 2.8 GW book in FY27', '₹1,225cr for 55% of APS, ~75% debt; ~₹600–700cr for own plants', '**Mixed**: margin 18.8% and revenue +53%, but a debt-funded deal and the solar book down to 2,425 MWp'],
+                        ['Clean Max Env. Energ', 'May: at least 1.5 GW of power-sales capacity in FY27, all contracted; a storage plan within 3–4 months; curtailment at Bikaner about 30%, grid fix by September not relied on', 'About ₹7,000–7,500cr a year at 1.5 GW (my arithmetic from its ₹3.5cr per MW of solar and ₹7.8cr per MW of wind); 70–80% project debt', '**Delivered**: 403 MW in Q1, first battery project, ₹3,000cr FY28 floor added; but curtailment rose to about 70%'],
                         ['Oriana Power', 'November 2025: FY26 revenue over ₹2,000cr; profit doubled; Actis sale by March', 'Equity in project companies; ₹200cr of NCDs', '**Missed**: ₹1,814cr, profit +59%, Actis to H1 FY27; guide cut to 40–50% a year'],
                         ['Emmvee Photovoltaic Power Ltd', 'April: higher cell use; 6 GW plant on time; stock to normalise', '₹5,500cr for 6 GW; ₹5,000–5,500cr of wafers later', '**Delivered**: cell use 83%, plant on schedule, ₹2,400cr target added'],
                         ['Alpex Solar', 'May: cells within 90 days; FY27 revenue over ₹3,000cr; cell margin 35–36%', '₹890cr cell plant', '**Late**: opened mid-September after a fire; Q1 sales −25% on Q4; cell margin guide raised to 35–40%'],
@@ -552,23 +593,23 @@ export const solarPvCellsEpc: SectorOverview = {
                 },
                 {
                     label: 'A demand air pocket',
-                    text: "New tender awards fell by almost two-thirds in FY26 and were only 4.7 GW in FY27 to 10 August, 44.8 GW of awarded projects had no power buyer in April, and CRISIL counts 35–37 GW of renewable capacity exposed to grid curtailment in FY27, with 30–50% of output cut in solar hours at affected substations (ICRA). In the Rajasthan and Gujarat zones, the heart of the build-out, CRISIL put curtailment on temporary grid access at about 50%. This hits **Waaree Renewables** and **Oriana** first, through fewer new orders, and then every module maker. **FY27 is carried by old awards; FY28 depends on tendering restarting.**",
+                    text: "New tender awards fell by almost two-thirds in FY26 and were only 4.7 GW in FY27 to 10 August, 44.8 GW of awarded projects had no power buyer in April, and CRISIL counts 35–37 GW of renewable capacity exposed to grid curtailment in FY27, with 30–50% of output cut in solar hours at affected substations (ICRA). In the Rajasthan and Gujarat zones, the heart of the build-out, CRISIL put curtailment on temporary grid access at about 50%. This hits **Waaree Renewables** and **Oriana** first, through fewer new orders, and then every module maker. It already hits **CleanMax** directly: its 525 MW plant at Bikaner in Rajasthan, about 13% of its run-rate EBITDA, is losing about 70% of its output, which management puts at about ₹170cr of FY27 EBITDA, and its company contracts pay only for power delivered. New grid-deviation penalties (DSM rules) are in court and could add to the cost. **FY27 is carried by old awards; FY28 depends on tendering restarting.**",
                 },
                 {
                     label: 'Policy and trade',
-                    text: "The Indian-cell rule's date for net-metering and open-access projects has already moved to 31 December 2026, and companies disagree on what applies when. The anti-dumping duty on Chinese cells is recommended but not confirmed. The US has set duties of about 249% on Indian cells and modules; **Vikram** already dropped a 0.6 GW US order as unviable, and modules meant for export are being sold in India instead (ICRA). The PLI scheme had paid nothing by February 2026, which matters for **Alpex**, one of the named awardees. **A change in timing or scope moves orders and prices overnight.**",
+                    text: "The Indian-cell rule's date for net-metering and open-access projects has already moved to 31 December 2026, and companies disagree on what applies when. The anti-dumping duty on Chinese cells is recommended but not confirmed. The US has set duties of about 249% on Indian cells and modules; **Vikram** already dropped a 0.6 GW US order as unviable, and modules meant for export are being sold in India instead (ICRA). The PLI scheme had paid nothing by February 2026, which matters for **Alpex**, one of the named awardees. For **CleanMax** the policy risk is different: state rules on open access, banking of power and group-captive status. Maharashtra has already cut the hours in which banked solar power can be used from about 17 to about 8 (CARE), and Karnataka and Gujarat together earn about 63% of its run-rate EBITDA. **A change in timing or scope moves orders and prices overnight.**",
                 },
                 {
                     label: 'Debt for new plants at the top',
-                    text: "**Vikram** expects debt of about ₹6,500cr by March 2028 while its operating profit has halved, and India Ratings would downgrade it if net debt stayed above 3 times operating profit after the build. **Saatvik**'s net debt heads to ₹2,200–2,400cr, **Insolation**'s to about ₹1,500cr (its FY27 capex of ₹2,500cr exceeds its market value), and **Emmvee** is drawing ₹3,306cr. **Alpex** paid 13–14% for bridge NCDs, **Websol**'s Phase 3 plan carries ₹1,241cr of debt (CRISIL), and **Waaree Renewables** borrowed about ₹900cr (my arithmetic from the 75%) for APS. **Interest capitalised during building lands on the profit and loss account the day each plant starts.**",
+                    text: "**Vikram** expects debt of about ₹6,500cr by March 2028 while its operating profit has halved, and India Ratings would downgrade it if net debt stayed above 3 times operating profit after the build. **Saatvik**'s net debt heads to ₹2,200–2,400cr, **Insolation**'s to about ₹1,500cr (its FY27 capex of ₹2,500cr exceeds its market value), and **Emmvee** is drawing ₹3,306cr. **Alpex** paid 13–14% for bridge NCDs, **Websol**'s Phase 3 plan carries ₹1,241cr of debt (CRISIL), and **Waaree Renewables** borrowed about ₹900cr (my arithmetic from the 75%) for APS. **CleanMax** carries the most: net debt of ₹11,809cr at June against ₹9,684cr in March, mostly floating-rate, with a ₹400cr holding-company loan due in one payment in June 2027 and about ₹1,200cr of foreign-currency project debt to renew in September 2028 (CARE); CRISIL expects net debt of 5.5–5.7 times FY27 EBITDA and interest cover was only 1.7 times in FY26. **Interest capitalised during building lands on the profit and loss account the day each plant starts.**",
                 },
                 {
                     label: 'Related parties and guarantees',
-                    text: "**Waaree Renewables**' AGM approved up to ₹1,000cr of sales to Waaree Forever Energies (no revenue, a ₹44cr FY26 loss and negative net worth of ₹55cr; ₹246cr already sold in April–June), ₹500cr to Waaneep Solar One and ₹550cr to Lumina Greentech, and management referred a direct question on them to investor relations. **Oriana** booked ₹1,085cr of plant sales to promoter-group and temporarily controlled project companies and guarantees ₹1,640cr of group debt in all, about 2.1 times its net worth. **Vikram** bought ₹400.6cr of investments from its promoter holding company, with the note not explaining what, and had ₹221cr of advances outstanding from VSL Ventures. **Saatvik** guarantees ₹178.5cr of loans to promoter-group Saatvik Agro Processors. **Insolation** put about ₹33–35cr into two real-estate LLPs registered at its chairman's firm's address and lent ₹15.2cr to a promoter company; **Websol** lent ₹15cr to an unrelated steel firm and gave a ₹5.29cr comfort letter for its managing director's wife; **Australian Premium** bought ₹35.9cr from promoter-linked Abwatt Solar. **None of these is illegal; together they say minority shareholders need to watch where the cash goes.**",
+                    text: "**Waaree Renewables**' AGM approved up to ₹1,000cr of sales to Waaree Forever Energies (no revenue, a ₹44cr FY26 loss and negative net worth of ₹55cr; ₹246cr already sold in April–June), ₹500cr to Waaneep Solar One and ₹550cr to Lumina Greentech, and management referred a direct question on them to investor relations. **Oriana** booked ₹1,085cr of plant sales to promoter-group and temporarily controlled project companies and guarantees ₹1,640cr of group debt in all, about 2.1 times its net worth. **Vikram** bought ₹400.6cr of investments from its promoter holding company, with the note not explaining what, and had ₹221cr of advances outstanding from VSL Ventures. **Saatvik** guarantees ₹178.5cr of loans to promoter-group Saatvik Agro Processors. **Insolation** put about ₹33–35cr into two real-estate LLPs registered at its chairman's firm's address and lent ₹15.2cr to a promoter company; **Websol** lent ₹15cr to an unrelated steel firm and gave a ₹5.29cr comfort letter for its managing director's wife; **Australian Premium** bought ₹35.9cr from promoter-linked Abwatt Solar. At **CleanMax**, founder Kuldeep Jain and his KEMPINC LLP had pledged about 1.16 crore shares, roughly a tenth of the company and about half the founder group's holding (my arithmetic), to 360 ONE Prime for KEMPINC's borrowings at March (annual report); the July AGM sought approval for about 35 large transactions with its own plant companies; and Brookfield's 21% stake comes out of its lock-in in February 2027. **None of these is illegal; together they say minority shareholders need to watch where the cash goes.**",
                 },
                 {
                     label: 'Accounting, controls and people',
-                    text: "**Vikram**'s auditor drew attention to ₹148.5cr of safeguard duty carried as a receivable while the case is in court and ₹52.8cr withheld by customers in disputes, and made the completeness of related-party disclosures a key audit matter. **Saatvik**'s auditor found that its quarterly stock statements to banks did not match its books (December payables ₹327cr reported against ₹620cr), its finance chief resigned in April and the replacement is interim. **Alpex**'s secretarial audit was qualified on related-party approvals and its previous secretarial auditor resigned mid-year. **Websol** paid SEBI fines for breaches of board and disclosure rules, and its promoters still have shares pledged to non-bank lenders. **Insolation**'s FY26 annual report contains a pasted section about the textile industry, and its auditor reported no key audit matters in a year of ₹1,500cr capex. **Australian Premium** still reports under old Indian accounting standards, and **Oriana**'s auditor made the impairment of ₹375cr of loans and investments in group companies a key audit matter.",
+                    text: "**Vikram**'s auditor drew attention to ₹148.5cr of safeguard duty carried as a receivable while the case is in court and ₹52.8cr withheld by customers in disputes, and made the completeness of related-party disclosures a key audit matter. **Saatvik**'s auditor found that its quarterly stock statements to banks did not match its books (December payables ₹327cr reported against ₹620cr), its finance chief resigned in April and the replacement is interim. **Alpex**'s secretarial audit was qualified on related-party approvals and its previous secretarial auditor resigned mid-year. **Websol** paid SEBI fines for breaches of board and disclosure rules, and its promoters still have shares pledged to non-bank lenders. **Insolation**'s FY26 annual report contains a pasted section about the textile industry, and its auditor reported no key audit matters in a year of ₹1,500cr capex. **CleanMax**'s new auditor (B S R & Co.) gave a clean opinion, but found the audit trail in its accounts software switched off at database level for the holding company and 32 subsidiaries until 27 March 2026, and the holding company paid about ₹97cr of FY26 advance tax six to nine months late. **Australian Premium** still reports under old Indian accounting standards, and **Oriana**'s auditor made the impairment of ₹375cr of loans and investments in group companies a key audit matter.",
                 },
             ],
         },
@@ -576,12 +617,12 @@ export const solarPvCellsEpc: SectorOverview = {
             heading: '8. Valuation (comparative)',
             body: [
                 "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it gives credit for cash and charges for debt. Where the two disagree, the balance sheet is the reason.",
-                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **3–4% at 8x, 6% at 10–11x, 8% at 12x, 11% at 16x, 12% at 18x and 15% at 23x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **These low P/Es sit on peak earnings**: the check below uses my growth estimates, which are low or zero for most of these companies for that reason.",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **3–4% at 8x, 6% at 10–11x, 8% at 12x, 11% at 16x, 12% at 18x and 15% at 23x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **These low P/Es sit on peak earnings**: the check below uses my growth estimates, which are low or zero for most of these companies for that reason. **CleanMax** is the exception: a high P/E on a profit that is still small because its plants are young and heavily financed.",
             ],
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**Vikram** looks cheapest on EV/EBITDA because Screener counts ₹1,117cr of net cash, but India Ratings counts ₹2,020cr of debt including supplier acceptances and leases against ₹970cr of free cash, and the cash is about to go into plants. **Oriana**'s ₹223cr of net debt leaves out about ₹1,020cr of short-term liabilities, mostly discounted bills, and ₹1,385cr of guarantees on project-company debt, so the live figure flatters it. **Saatvik**, **Insolation**, **Alpex** and **Solex** carry debt that will grow, and **Emmvee** will move from net cash to about ₹3,300cr of borrowing this year.",
+                    text: "**Vikram** looks cheapest on EV/EBITDA because Screener counts ₹1,117cr of net cash, but India Ratings counts ₹2,020cr of debt including supplier acceptances and leases against ₹970cr of free cash, and the cash is about to go into plants. **Oriana**'s ₹223cr of net debt leaves out about ₹1,020cr of short-term liabilities, mostly discounted bills, and ₹1,385cr of guarantees on project-company debt, so the live figure flatters it. **Saatvik**, **Insolation**, **Alpex** and **Solex** carry debt that will grow, and **Emmvee** will move from net cash to about ₹3,300cr of borrowing this year. For **CleanMax** the two yardsticks tell very different stories: its P/E of about {pe:Clean Max Env. Energ|103} is inflated by interest and depreciation on young plants, while on EV/EBITDA, which charges it for about ₹10,400cr of net debt (Screener, March), it is priced like a utility with fast, contracted growth. Neither counts the plants under construction that its debt has already paid for.",
                 },
                 {
                     label: 'Fits: prices that ask for my growth or less',
@@ -589,7 +630,7 @@ export const solarPvCellsEpc: SectorOverview = {
                 },
                 {
                     label: 'Full',
-                    text: "**Websol** needs about {need:Websol Energy System Ltd|6}% a year and I expect none; its trailing profit includes a Q4 taxed at 0%, and at a normal tax rate the same price would need about 7% a year (my arithmetic). **Solex** needs about {need:Solex Energy|5–6}% a year against my 3%: the price is low, but so is my confidence in its second half and its cell plant.",
+                    text: "**Websol** needs about {need:Websol Energy System Ltd|6}% a year and I expect none; its trailing profit includes a Q4 taxed at 0%, and at a normal tax rate the same price would need about 7% a year (my arithmetic). **Solex** needs about {need:Solex Energy|5–6}% a year against my 3%: the price is low, but so is my confidence in its second half and its cell plant. **CleanMax** needs about {need:Clean Max Env. Energ|33}% a year for a decade against my ~30% for the next three to five years. That is not absurd for a company guiding EBITDA up 2.3 times in two years, but it leaves no room for curtailment, a rate rise or new shares; a price nearer its ₹1,053 IPO price with the FY28 floor on track would make it a candidate to own.",
                 },
                 {
                     label: 'Stretched',
@@ -597,7 +638,7 @@ export const solarPvCellsEpc: SectorOverview = {
                 },
                 {
                     label: 'Dashboard figures to treat with care',
-                    text: "Several stored records are wrong, and the text above uses the filings instead. **Emmvee**'s Q4 FY26 profit rows are stored as zero; actual operating profit was ₹571cr and profit after tax ₹392cr. **Oriana** and **Australian Premium** report half-yearly, so their stored “Q4” is really the second half; Oriana's is stored as zeros (actual sales ₹1,032cr, operating profit ₹218cr, profit ₹130cr) and its stored trailing revenue of ₹2,801cr should be ₹1,814cr, while Australian Premium's stored trailing revenue of ₹1,123cr should be ₹708cr. **Saatvik**'s stored margins include other income (Q1 8.3% against an operating 6.6%). **Insolation** has no stored June-quarter row (actual sales ₹741cr, operating profit ₹72cr, profit ₹38cr) and zeros for other quarters. **Alpex**'s order book is stored as zero (₹2,004cr at March), and **Solex**'s stored ₹3,400cr is visibility, not firm orders.",
+                    text: "Several stored records are wrong, and the text above uses the filings instead. **Emmvee**'s Q4 FY26 profit rows are stored as zero; actual operating profit was ₹571cr and profit after tax ₹392cr. **Oriana** and **Australian Premium** report half-yearly, so their stored “Q4” is really the second half; Oriana's is stored as zeros (actual sales ₹1,032cr, operating profit ₹218cr, profit ₹130cr) and its stored trailing revenue of ₹2,801cr should be ₹1,814cr, while Australian Premium's stored trailing revenue of ₹1,123cr should be ₹708cr. **Saatvik**'s stored margins include other income (Q1 8.3% against an operating 6.6%). **Insolation** has no stored June-quarter row (actual sales ₹741cr, operating profit ₹72cr, profit ₹38cr) and zeros for other quarters. **Alpex**'s order book is stored as zero (₹2,004cr at March), and **Solex**'s stored ₹3,400cr is visibility, not firm orders. **CleanMax**'s stored Q1 “yoy” of 107% is revenue growth, not profit growth (profit went from a ₹17cr loss to ₹55cr), its order book is stored as zero (it has 2.5 GW contracted and under construction), and both stored call analyses say it gave no guidance when it gave 1.5 GW for FY27 and a ₹3,000cr FY28 EBITDA floor.",
                 },
             ],
             embed: 'valuation',
@@ -612,55 +653,61 @@ export const solarPvCellsEpc: SectorOverview = {
             watch: 'Quarterly operating profit above ₹600cr; the 6 GW plant on time (modules December 2026, cells March 2027); inventory (₹1,711cr at March) and receivables falling.',
         },
         {
-            company: 'Waaree Renewables', rank: 2, stance: 'SCALEUP', segment: EPC,
+            company: 'Clean Max Env. Energ', rank: 2, stance: 'PRICED', segment: POWER,
+            what: "Clean Max Enviro Energy Solutions (CleanMax): India's largest seller of solar and wind power to companies, owning 3.5 GW of plants and selling their output on contracts of about 23 years to about 600 firms, 42% of contracted capacity to data centres and AI; it also builds plants for clients. Listed in March 2026.",
+            view: "**The best business in this note, priced for it.** Q1 FY27 revenue doubled to ₹832cr, the power business's margin rose to 84%, 500 MW was added in the quarter and management set a floor of ₹3,000cr of FY28 EBITDA, 2.3 times FY26; 2.5 GW is already contracted at about ₹4.00 a unit. Against that: net debt of ₹11,809cr, a Rajasthan plant losing about 70% of its output to curtailment (about ₹170cr this year), and a founder group that had pledged about a tenth of the company's shares. The price needs about {need:Clean Max Env. Energ|33}% a year against my ~30%, which is {label:Clean Max Env. Energ|full}.",
+            watch: 'At least 1.5 GW commissioned in FY27 (403 MW in Q1) and FY28 on track for ₹3,000cr of EBITDA; curtailment at Bikaner and state open-access rules; net debt against 5.5 times EBITDA, the founder pledge and Brookfield’s lock-in ending in February 2027.',
+        },
+        {
+            company: 'Waaree Renewables', rank: 3, stance: 'SCALEUP', segment: EPC,
             what: "Waaree Renewable Technologies, the Waaree group's EPC arm: designs and builds solar and battery plants for power producers and companies, and since June owns 55% of a transmission-line builder.",
             view: "**Asset-light and high-return, but less clean than it looked.** FY26 revenue doubled to ₹3,331cr at a 19% margin and Q1 grew 53%, but the solar book fell to 2,425 MWp, a mostly borrowed ₹1,225cr purchase cut the margin aim to about 15%, and the AGM approved about ₹2,050cr of sales to group companies with no revenue. The price needs about {need:Waaree Renewables|11}% a year against my ~12%.",
             watch: 'Third-party orders lifting the solar book above 2,425 MWp; receivables from group companies (standalone receivables ₹1,171.5cr at March); APS margin and debt.',
         },
         {
-            company: 'Oriana Power', rank: 3, stance: 'SCALEUP', segment: EPC,
+            company: 'Oriana Power', rank: 4, stance: 'SCALEUP', segment: EPC,
             what: "Builds solar and battery plants for companies and state tenders, often holding them in project companies and selling them to investors such as Actis; adding green ammonia; SME-listed and reports half-yearly.",
             view: "**Fast growth, but much of it sold to itself.** Revenue rose 84% to ₹1,814cr and the order book is about ₹6,800cr, but about 60% of revenue was plants sold to its own project companies, whose ₹1,385cr of borrowings it guarantees off the balance sheet, and it missed most FY26 targets. The price needs about {need:Oriana Power|8}% a year against my ~10%, which still leaves some room for a haircut.",
             watch: 'The 238 MWp Actis sale closing in H1 FY27 with cash coming back; batteries near 40% of FY27 revenue; half-year results on time and guarantees falling.',
         },
         {
-            company: 'Alpex Solar', rank: 4, stance: 'SCALEUP', segment: MODULES,
+            company: 'Alpex Solar', rank: 5, stance: 'SCALEUP', segment: MODULES,
             what: "A module maker and solar-pump installer in Uttar Pradesh that opened a 2.2 GW TOPCon cell plant in September 2026; SME-listed.",
             view: "**A cell bet at a low price, run loosely.** The cell plant opened on 16–17 September (the annual report says 1.4 GW first), with 35–40% cell margins, about ₹1,700cr of H2 FY27 revenue and ₹4,000cr in FY28 promised. FY26 operating cash was −₹117cr, borrowings rose to ₹535cr, and the secretarial auditor qualified its related-party approvals. The price needs about {need:Alpex Solar|6}% a year against my ~10%.",
             watch: 'Cell output, with the volume figures promised for Q2; operating cash turning positive; the cell line entering the approved list.',
         },
         {
-            company: 'Websol Energy System Ltd', rank: 5, stance: 'CYCLICAL', segment: CELLS,
+            company: 'Websol Energy System Ltd', rank: 6, stance: 'CYCLICAL', segment: CELLS,
             what: "A PERC solar cell (1.2 GW) and module maker at Falta, West Bengal, selling only into Indian-cell schemes; upgrading one line to TOPCon and planning 4 GW more.",
             view: "**A full, debt-free cell plant past its best margins.** The margin fell every quarter from 47% to 34%, Q4's profit was taxed at 0% and depreciation has doubled, and the 4 GW expansion moved state without land. Promoters own 29.7% with pledges to non-bank lenders, and the company lent ₹15cr to a steel firm and paid SEBI fines. The price needs about {need:Websol Energy System Ltd|6}% a year and I expect none.",
             watch: 'Land and equipment orders for the West Bengal project; cell prices against about 12.5 US cents a watt; the remaining promoter pledges released.',
         },
         {
-            company: 'Solex Energy', rank: 6, stance: 'CYCLICAL', segment: MODULES,
+            company: 'Solex Energy', rank: 7, stance: 'CYCLICAL', segment: MODULES,
             what: "A Gujarat module maker with 4 GW of lines selling mainly to large power producers, planning a 2.2 GW cell plant by the end of 2027.",
             view: "**Thin margins and a slipping cell plan.** Q1 sales were flat at ₹261cr with profit down 67%, the profit-margin guide was cut to 5–6%, and land and funding for the ₹1,050cr cell plant missed the June deadline (CRISIL dates it to April 2028). Its ₹3,400cr of order visibility includes unsigned agreements; CRISIL's firm book is ₹1,332cr. The price needs about {need:Solex Energy|5–6}% a year against my ~3%.",
             watch: 'H2 sales toward the ₹2,600cr FY27 guide (₹846cr firmly slated to December); funding and power approval for the cell plant; margin back above 11%.',
         },
         {
-            company: 'Australian Prem', rank: 7, stance: 'CYCLICAL', segment: MODULES,
+            company: 'Australian Prem', rank: 8, stance: 'CYCLICAL', segment: MODULES,
             what: "Australian Premium Solar (India): a Gujarat module maker (800 MW) that uses most of its panels in its own farm-pump and rooftop installations; SME-listed and reports half-yearly.",
             view: "**Cheap and nearly debt-free, but the story shrank.** FY26 sales rose 61% to ₹708cr at a 13% margin, but growth guidance was cut from 75%-plus to 30–35%, the cell plant was dropped and pump receivables quadrupled to about ₹160cr, so operating cash turned negative. It seeks power to borrow up to ₹500cr and bought ₹35.9cr from a promoter-linked firm. The price needs about {need:Australian Prem|4}% a year against my ~5%.",
             watch: 'H1 FY27 results: receivables and the new 400 MW line; what the ₹500cr borrowing power is for; margins against the 7–9% wholesale guide.',
         },
         {
-            company: 'Vikram Solar', rank: 8, stance: 'CYCLICAL', segment: MODULES,
+            company: 'Vikram Solar', rank: 9, stance: 'CYCLICAL', segment: MODULES,
             what: "One of India's larger module makers (15.5 GW), building 9 GW of cells, 9 GW of wafers and battery plants in Tamil Nadu.",
             view: "**Margins collapsed and guidance withdrawn.** Q1 operating profit fell to ₹126cr (8.1%) from ₹242cr a year earlier, profit per watt halved to ₹1.25, and FY27 guidance of ₹1,500–1,600cr was withdrawn after three months. Debt heads to about ₹6,500cr by March 2028, and the auditor flagged ₹201cr of disputed items and the completeness of related-party disclosures, including a ₹400.6cr purchase from the promoter holding company. The price needs about {need:Vikram Solar|11}% a year against my ~0%.",
             watch: 'The revised outlook at the H1 results; first cells around December 2026–January 2027; net debt against India Ratings’ 3 times operating-profit ceiling.',
         },
         {
-            company: 'Insolation Energy', rank: 9, stance: 'AVOID', segment: MODULES,
+            company: 'Insolation Energy', rank: 10, stance: 'AVOID', segment: MODULES,
             what: "A Jaipur module maker (5.5 GW), about 85% plain modules, building a 4.5 GW cell plant in Madhya Pradesh and its own KUSUM solar plants.",
             view: "**Borrowing to grow while margins slide.** Q1 sales doubled but the margin fell to 10% against 14–15% guided, with no call to explain it, and FY27 capex of ₹2,500cr exceeds its {mcap:Insolation Energy|₹2,025cr} market value as debt heads to about ₹1,500cr. It has put about ₹35cr into promoter-linked real-estate firms and lent ₹15.2cr to a promoter company. The price needs about {need:Insolation Energy|6}% a year against my ~5%, but the risk, not the price, is the problem.",
             watch: 'First cell output (December 2026 per the Q1 deck); the Q2 margin back toward 14%; any more cash going to related parties.',
         },
         {
-            company: 'Saatvik Green', rank: 10, stance: 'AVOID', segment: MODULES,
+            company: 'Saatvik Green', rank: 11, stance: 'AVOID', segment: MODULES,
             what: "An Ambala module maker (4.8 GW) building a 2.4 GW cell and 4 GW module plant in Odisha, and adding transformers and inverters.",
             view: "**Sales and margins down, debt and governance flags up.** Q1 sales were 334 MW and ₹511cr against a 3.5–4 GW, ₹6,000cr year, at a 6.6% operating margin, and net debt heads to ₹2,200–2,400cr. The annual report shows a ₹178.5cr guarantee for a promoter-group company and bank stock statements that did not match the books, and the finance chief is interim. The price needs about {need:Saatvik Green|15}% a year against my ~5%.",
             watch: 'Q2 and Q3 sales above 1 GW a quarter; the Odisha cell line passing inspection and reaching about 80% use; the promoter-group guarantee and a permanent finance chief.',
@@ -671,13 +718,14 @@ export const solarPvCellsEpc: SectorOverview = {
         heading: '9. Summary review',
         body: [
             "**Cell makers.** **Emmvee Photovoltaic Power Ltd: follow**, my first choice, while the cell premium lasts and its cash conversion improves. **Websol Energy System Ltd: wait** for the expansion land and a floor under the margin.",
+            "**Power sellers.** **Clean Max Env. Energ (CleanMax): follow**, my second choice and the best business here, until the price asks for less than my growth or the FY28 EBITDA floor of ₹3,000cr is clearly in hand.",
             "**EPC and developers.** **Waaree Renewables: follow** until third-party orders refill its solar book and group-company sales shrink. **Oriana Power: follow** until the Actis sale brings cash back and the off-balance-sheet guarantees shrink.",
             "**Module assemblers.** **Alpex Solar: follow** its new cell line. **Solex Energy**, **Australian Prem** and **Vikram Solar: wait**. **Insolation Energy** and **Saatvik Green: pass** on debt-funded expansion at the top of the cycle, with governance flags in both annual reports.",
-            "**What would change my view.** For the better: new cell lines ramping slowly enough to keep the premium into FY28; tendering restarting after the relief package; share prices falling far enough to price in the glut. For the worse: the Indian-cell rule diluted again; Chinese cell prices falling further with no anti-dumping duty; a guarantee called at Oriana or Saatvik; more sales to group companies at Waaree Renewables.",
-            "**What to watch next quarter.** The US injury vote on 14 October; half-year results from Oriana and Australian Premium; Vikram's revised outlook; first cells at Saatvik, Alpex and Insolation; whether Emmvee's quarterly operating profit reaches the roughly ₹617cr its target needs.",
+            "**What would change my view.** For the better: new cell lines ramping slowly enough to keep the premium into FY28; tendering restarting after the relief package; share prices falling far enough to price in the glut. For the worse: the Indian-cell rule diluted again; Chinese cell prices falling further with no anti-dumping duty; a guarantee called at Oriana or Saatvik; more sales to group companies at Waaree Renewables; curtailment spreading beyond CleanMax's Bikaner plant, or states tightening rules on companies buying power directly.",
+            "**What to watch next quarter.** The US injury vote on 14 October; half-year results from Oriana and Australian Premium; Vikram's revised outlook; first cells at Saatvik, Alpex and Insolation; whether Emmvee's quarterly operating profit reaches the roughly ₹617cr its target needs; CleanMax's commissioning pace, its first bond issue and the Bikaner curtailment.",
         ],
         bottomLine:
-            "Nothing here is a clear own today: follow the cell maker earning most (Emmvee Photovoltaic Power Ltd) and the plant builders and new cell line (Waaree Renewables, Oriana Power, Alpex Solar), wait on the rest (Websol Energy System Ltd, Solex Energy, Australian Prem, Vikram Solar), and pass on the debt-funded module makers (Insolation Energy, Saatvik Green).",
+            "Nothing here is a clear own today: follow the cell maker earning most (Emmvee Photovoltaic Power Ltd), the power seller with 23-year contracts (Clean Max Env. Energ), and the plant builders and new cell line (Waaree Renewables, Oriana Power, Alpex Solar), wait on the rest (Websol Energy System Ltd, Solex Energy, Australian Prem, Vikram Solar), and pass on the debt-funded module makers (Insolation Energy, Saatvik Green).",
     },
 
     sources: [
@@ -708,6 +756,11 @@ export const solarPvCellsEpc: SectorOverview = {
         { label: 'Alpex Solar annual report FY26 — NSE', url: 'https://archives.nseindia.com/annual_reports/SME_AR_31691_ALPEXSOLAR_2025_2026_A_9447626_07092026164001.pdf' },
         { label: 'Insolation Energy annual report FY26 — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=070aedd4-27b4-45e0-bb25-ffc8a0dc30f4.pdf' },
         { label: 'Solex Energy rating rationale — CRISIL, Aug 2026', url: 'https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/SolexEnergyLimited_August%2024_%202026_RR_402271.html' },
+        { label: 'Clean Max Enviro Energy Solutions Q1 FY27 investor presentation — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=12de4ba6-573e-4382-bbff-686ab3d63249.pdf' },
+        { label: 'Clean Max Enviro Energy Solutions annual report FY26 — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/0da3293c-ae05-4b6d-b21f-0b3793bfecbc.pdf' },
+        { label: 'Clean Max Enviro Energy Solutions rating rationale — CRISIL, Sep 2026', url: 'https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/CleanMaxEnviroEnergySolutionsLimited_September%2007_%202026_RR_405124.html' },
+        { label: 'Clean Max Enviro Energy Solutions rating rationale — CARE, May 2026', url: 'https://www.careratings.com/upload/CompanyFiles/PR/202605120525_Clean_Max_Enviro_Energy_Solutions_Limited.pdf' },
+        { label: 'Clean Max Enviro Energy Solutions IPO details — Chittorgarh', url: 'https://www.chittorgarh.com/ipo/clean-max-enviro-energy-solutions-ipo/2573/' },
         { label: 'Australian Premium Solar H2 FY26 earnings call transcript — NSE', url: 'https://nsearchives.nseindia.com/corporate/APS_01062026152408_TranscriptofEarnaningsCall27052026.pdf' },
     ],
 };

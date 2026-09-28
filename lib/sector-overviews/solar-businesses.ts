@@ -31,10 +31,14 @@ const intro: OverviewSection[] = [
                 label: 'EPC and power plants',
                 text: "Designing and building solar and battery plants for companies and utilities (Waaree Renewables, Oriana), and sometimes owning them and selling the power. EPC firms buy modules, so cheaper modules help them.",
             },
+            {
+                label: 'Selling green power',
+                text: "Owning solar and wind plants and selling their electricity to companies on contracts of 20 years or more (CleanMax). The plant is paid for up front, mostly with long loans, and the tariff then earns a steady margin for decades; cheaper modules make new plants cheaper.",
+            },
         ],
     },
     {
-        heading: 'Three ways of earning',
+        heading: 'Four ways of earning',
         body: [
             "Where a company sits in the chain decides whether the coming glut of modules hurts or helps it.",
         ],
@@ -45,6 +49,7 @@ const intro: OverviewSection[] = [
                     ['**Cell makers**', 'Emmvee, Websol', 'The premium for Indian cells, while they are scarce', 'Normal terms; plants need heavy capital'],
                     ['**Module assemblers**', 'Vikram, Saatvik, Insolation, Solex, Alpex, Australian Premium', 'Module prices against cell and glass costs; falling as capacity floods in', 'Slow when developers delay projects'],
                     ['**EPC and developers**', 'Waaree Renewables, Oriana', 'Margin on building plants; cheaper modules help', 'Milestone payments; Oriana also sells finished plants'],
+                    ['**Power sellers**', 'CleanMax', 'A tariff of about ₹4 a unit fixed for about 23 years, less interest on the plant loans', 'Customers pay monthly in about 22 days, but each plant costs years of revenue up front'],
                 ],
             },
         ],
@@ -52,6 +57,34 @@ const intro: OverviewSection[] = [
 ];
 
 const profiles: BusinessProfile[] = [
+    {
+        company: 'Clean Max Env. Energ',
+        inShort: ["**India's largest seller of solar and wind power to companies** (Clean Max Enviro Energy Solutions, CleanMax): it owns 3.5 GW of plants and sells their power on contracts of about 23 years to about 600 companies, 42% of its contracted capacity to data centres and AI firms.", "**Good:** 2.5 GW already contracted at about ₹4.00 a unit, an 84% margin on power sales, clients paying in about 22 days, and a new floor of ₹3,000cr of FY28 EBITDA, 2.3 times FY26. **Watch:** net debt of ₹11,809cr, a Rajasthan plant losing about 70% of its output to grid curtailment this year, and founder shares pledged against a family firm's borrowing.", "**Verdict: follow.** The best business in the note, but the price needs about {need:Clean Max Env. Energ|33}% a year of earnings growth against my 30%."],
+        tagline: "A renewable power producer for companies: it builds, owns and runs solar, wind and hybrid plants in 7 states (10 with those under construction) and rooftops in India and abroad, and also builds plants that clients own themselves.",
+        revenue: '₹1,913cr (FY26, consolidated)',
+        products: [
+            { name: 'Power sales from its own plants', text: "3,493 MW running at June 2026 (80% solar, 20% wind) and 2,510 MW contracted and under construction. Power is sold under long contracts (about 23 years on average, with an 18-year lock-in) at about ₹4.06 a unit today and ₹4.00 on the plants being built." },
+            { name: 'Plants built for clients (RE Services)', text: "Companies such as Sun Pharma and Honda Motorcycles that want to own their plant pay CleanMax to build it inside its solar and wind farms, then pay yearly fees for maintenance and use of its shared power lines. 682 MW running and 147 MW being built, usually within 12 months." },
+            { name: 'Contracts for global tech firms', text: "About 1.6–1.8 GW of contracted capacity is sold to firms such as Amazon, Google and Meta as a contract for difference: CleanMax sells the power on the exchange and the buyer tops it up to a fixed price, so its revenue per unit does not change with market prices." },
+            { name: 'Battery storage and carbon services', text: "Its first battery project is approved in Rajasthan and three clients have signed initial agreements; management expects about ₹3–4 a unit for storing daytime power for the evening. It also sells carbon credits and green certificates." },
+        ],
+        revenueText: "**Power sales were ₹1,399cr of FY26 revenue (73%) and building plants for clients ₹497cr (26%)**, with a little unallocated; in Q1 FY27 the building business jumped to ₹300cr of ₹832cr. Power sales earn about 84% EBITDA margins and building work 11–20%, so **about 90% of EBITDA comes from power sales**. By location, Karnataka earns about a third of run-rate EBITDA and Gujarat about 30%.",
+        mixes: [
+            { caption: 'Revenue by segment, FY26 (company)', parts: [{ label: 'Power sales', share: 73 }, { label: 'Building plants for clients', share: 26 }, { label: 'Unallocated', share: 1 }] },
+            { caption: 'Run-rate EBITDA by location, FY26 end (company)', parts: [{ label: 'Karnataka (state grid)', share: 33 }, { label: 'Gujarat (state grid)', share: 30 }, { label: 'Rajasthan (central grid)', share: 13 }, { label: 'Rooftops', share: 11 }, { label: 'Other states', share: 13 }] },
+        ],
+        customers: ["**Data centres and AI**: 42% of contracted capacity, about ten times more than two years ago. Global names include Amazon, Google, Meta and Cisco; Indian data-centre operators include STT, NTT, Equinix, Iron Mountain, Princeton Digital and L&T. Apple co-owns two groups of its plants.", "**Factories and offices**: 58%, from cement (UltraTech, Grasim) and chemicals to auto parts (Sansera) and food (Cargill). 81% of capacity is with AA-rated or better firms or multinationals, and 79% of recent new capacity came from existing customers.", "**About 600 customers and 1,300 contracts**, with an average contract of about 13 MW and no single customer above 10% of revenue (CRISIL)."],
+        difficulty: { level: 'High', text: "Building is not the hard part; the hard part is holding land, grid connections and approvals in many states at once, signing hundreds of small contracts, and borrowing ₹3.5–7.8cr per MW for 20 years at a low rate. It has built within budget for four years running." },
+        moat: "Long contracts, client equity in the plant companies and a record with hundreds of blue-chip buyers make customers stay and come back. The weakness is that the whole model depends on state rules for companies buying power directly, and larger groups (Adani, Reliance, NTPC) are entering.",
+        salesDrivers: ["**New plants**: at least 1.5 GW of power-sales capacity in FY27 (403 MW in Q1), taking it to at least 4.6 GW by April 2027; the ₹3,000cr FY28 EBITDA floor rests on this.", "**Data-centre demand**: management says each 1 GW of data-centre load needs about 6 GW of wind and solar, and that it wins about 35% of Indian clean-power deals by global tech firms (its estimate).", "**Company savings**: customers save about 22–25% on power bills, and only 7–8% of industrial power is bought green directly, so there is room to grow.", "**Grid and weather**: revenue is paid per unit delivered; its Bikaner plant is losing about 70% of output to curtailment this year, and wind and sunshine vary by year.", "**Tariffs on new contracts**: up from ₹3.85 to ₹4.00 a unit between May and August, as module costs pass into prices."],
+        inputs: "**Solar modules, wind turbines, land, grid connections and, above all, borrowed money**; the running costs of a plant are small. Materials (mostly for the plants it builds for clients) were 26% of sales in FY26.",
+        costEffect: "**Mostly insulated day to day.** A running plant's costs are maintenance, staff and grid charges; the power business keeps about 92–93% of revenue after direct costs. What matters is the cost of building new plants and of borrowing: management prices new contracts for a target return, so module cost changes pass into tariffs, and the delay in the Indian-cell rule saves it about ₹60 lakh per MW on plants finished by December 2026. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 3 points (59% to 56%), almost all in the building business. **What happened:** there is no wholesale price index for solar power plants; the power business's margin rose from 75% in FY23 to 84% in Q1 FY27 as overheads fell from 18% to 9% of income, and its cost of project debt fell from 9.5% to 8.45%.",
+        competitors: [{ name: 'Tata Power, Adani, Reliance, NTPC', note: 'Large groups that sell or plan to sell green power to companies; much bigger balance sheets.' }, { name: 'Many smaller C&I developers', note: 'The market is fragmented: management puts CleanMax at about 14%.' }, { name: 'Utility-scale producers', note: 'Earn slightly higher margins on huge single plants but sell to state utilities at lower tariffs.' }],
+        position: "**India's largest renewable power supplier to companies** (CRISIL, CARE), with about 14% of a fragmented market and, by its own estimate, about 35% of clean-power deals with global tech firms in India.",
+        money: "Screener shows **₹10,396cr of net debt** at March 2026; the company counts ₹9,684cr then and **₹11,809cr at June**, 38% of it for plants still being built. Plants are funded 70–80% with project loans (cost 8.45%), and a first ₹2,500cr bond is planned. The IPO in February 2026 raised about ₹1,196cr of new money at ₹1,053 a share. No dividend. Promoters (founder Kuldeep Jain's group and Brookfield) hold **49.4%**, almost unchanged since March; at March the founder group had pledged about 1.16 crore shares, and Brookfield's 21% leaves lock-in in February 2027.",
+        watch: ["Commissioning toward 1.5 GW in FY27 and the ₹3,000cr FY28 EBITDA floor.", "Curtailment at Bikaner and any change in state rules for direct power sales.", "Net debt against EBITDA, the founder pledge and Brookfield's sales after February 2027."],
+        charts: solarCharts['Clean Max Env. Energ'],
+    },
     {
         company: 'Waaree Renewables',
         inShort: ["**The solar-park construction arm of the Waaree group** (Waaree Renewable Technologies): it designs and builds large solar plants for power producers and companies, and has just bought control of a builder of power lines and substations.", "**Good:** returns on capital above 80%, ₹244cr of net cash (Screener) and a steady 19–20% operating margin for two years. **Watch:** the solar order book has shrunk to 2.4 GW, 30–40% of orders come from Waaree group companies, and a mostly debt-funded purchase of a lower-margin transmission business means management now aims for a margin of only about 15%.", "**Verdict: follow.** A high-return contractor whose price needs about {need:Waaree Renewables|11}% a year against my 12%; I want third-party orders refilling the book and fewer sales to group companies first."],

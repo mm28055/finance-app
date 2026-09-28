@@ -1029,6 +1029,86 @@ export const solarCharts: Record<string, ProfileCharts> = {
             "inventory5y": -53,
             "payables5y": 131
         }
+    },
+    "Clean Max Env. Energ": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Power and factory costs",
+                    "share": 26
+                },
+                {
+                    "label": "Staff",
+                    "share": 5
+                },
+                {
+                    "label": "Other costs",
+                    "share": 9
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 59
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                295.0,
+                375.0,
+                706.0,
+                901.0,
+                1132.0
+            ],
+            "ocf": [
+                434.0,
+                928.0,
+                86.0,
+                1404.0,
+                1731.0
+            ],
+            "fcf": [
+                -377.0,
+                -1918.0,
+                -1780.0,
+                -1507.0,
+                -4023.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "103.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "20.6x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹10,396cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "134%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "59%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     }
 };
 
@@ -1093,5 +1173,11 @@ export const solarValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 95.0,
         "mcapAtWriting": 475.0,
         "peAtWriting": 8.21
+    },
+    "Clean Max Env. Energ": {
+        "netDebt": 10396,
+        "ttmEbitda": 1287.0,
+        "mcapAtWriting": 16125.0,
+        "peAtWriting": 103.0
     }
 };
