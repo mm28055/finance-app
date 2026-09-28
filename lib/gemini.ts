@@ -86,3 +86,7 @@ export const geminiPro = new RotatingModel("gemini-3.1-pro-preview");
 
 // Usage: Fast Model (Overridden to use Pro as per user request to ONLY use this model)
 export const geminiFlash = new RotatingModel("gemini-3.1-pro-preview");
+
+// Usage: first-pass screening only (is a filing material or routine?). The owner approved
+// Flash for this one job on 28 Sep 2026; everything that writes analysis stays on Pro.
+export const geminiScreen = new RotatingModel("gemini-flash-latest");

@@ -29,7 +29,7 @@ import path from 'path';
 // @ts-ignore - pdf-parse ships no types
 import pdfParse from 'pdf-parse';
 import { prisma } from '../lib/prisma';
-import { geminiPro } from '../lib/gemini';
+import { geminiPro, geminiScreen } from '../lib/gemini';
 import { nseAnnouncements, nseInsiderFilings, nsePitDisclosure, parseNseDate, NSE_UA, type PitTrade } from '../lib/filings/nse';
 import { nseSymbolForIsin } from '../lib/corporate-actions/nse-lists';
 
@@ -370,11 +370,20 @@ Reply with JSON only:
  "headline": "one plain-English line, under 90 characters, with the key number",
  "summary": "two or three short sentences: what happened, with exact figures from the filing, and why it matters (for example, size versus yearly sales). For ANY share issue, warrant or preferential allotment, state the dilution (percent more shares and percent dilution to existing holders, using the share count above) and the issue price versus the current share price. Never invent numbers; if a figure is not in the text, leave it out."}`;
 
+// Two passes: the cheap, fast model screens every filing; only the few it finds material
+// go to Pro, which makes the final call and writes the headline and summary.
 async function judge(c: any, a: any, text: string) {
-    const res = await geminiPro.generateContent(PROMPT(c, a, text));
-    const raw = res.response.text();
-    const json = raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1);
-    return JSON.parse(json);
+    const ask = async (model: typeof geminiPro) => {
+        const raw = (await model.generateContent(PROMPT(c, a, text))).response.text();
+        return JSON.parse(raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1));
+    };
+    try {
+        const first = await ask(geminiScreen);
+        if (!first?.material) return first;
+    } catch {
+        // Screening failed: fall through to Pro rather than drop the filing.
+    }
+    return ask(geminiPro);
 }
 
 async function main() {
