@@ -325,7 +325,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'The Anup Enginee',
-        inShort: ["**Makes heat exchangers, pressure vessels, columns and reactors** for refineries and petrochemical, fertiliser, power and nuclear plants; half of sales are exports, mainly to the Middle East.", "**Good:** fully certified, a record ₹985cr order book and a new plant already built. **Bad:** fixed-price contracts leave it exposed to steel costs; the Q1 FY27 margin was 7% and FY27 guidance is only about 15%.", "**Verdict: follow.** A strong fabricator in a reset year, with new orders taken close to historic margins; the price needs about 21% a year against my ~18%, which is Full."],
+        inShort: ["**Makes heat exchangers, pressure vessels, columns and reactors** for refineries and petrochemical, fertiliser, power and nuclear plants; half of sales are exports, mainly to the Middle East.", "**Good:** fully certified, a record ₹985cr order book and a new plant already built. **Bad:** fixed-price contracts leave it exposed to steel costs; the Q1 FY27 margin was 7% and FY27 guidance is only about 15%.", "**Verdict: follow.** A strong fabricator in a reset year, with new orders taken close to historic margins; the price needs about {need:The Anup Enginee|21}% a year against my ~18%, which is {Label:The Anup Enginee|Full}."],
         tagline: "A certified maker of custom heat exchangers and pressure equipment for oil and gas, petrochemical, fertiliser, power and nuclear plants.",
         revenue: '₹822cr (FY26, consolidated)',
         products: [
@@ -350,7 +350,7 @@ const profiles: BusinessProfile[] = [
             { name: 'Lower-tier Indian fabricators', note: 'Win standard exchangers and vessels on price, which is why Anup is moving into niche products.' },
         ],
         position: "**One of India's leading heat-exchanger and pressure-vessel makers**, with ASME U, U2 and S stamps, nuclear work and approvals from process licensors.",
-        money: "Net debt was ₹97cr at March 2026 (Screener) after a working-capital squeeze; the company says it was back to about ₹1cr of net cash by August (₹45cr of cash against ₹44cr of long-term debt). Capex should be ₹40–50cr a year (CARE). Operating cash was −₹7cr in FY25 and ₹2cr in FY26, and ₹197cr of March receivables was not yet billed. CARE rates it AA- but says a margin below 18% for long could lead to a downgrade, against FY27 guidance of about 15%. At a market value of about ₹3,322cr and a P/E of about 38.7, the price needs about 21% a year against my ~18%, which is **Full**. Promoters hold **41%**, down from 43% in September 2023.",
+        money: "Net debt was ₹97cr at March 2026 (Screener) after a working-capital squeeze; the company says it was back to about ₹1cr of net cash by August (₹45cr of cash against ₹44cr of long-term debt). Capex should be ₹40–50cr a year (CARE). Operating cash was −₹7cr in FY25 and ₹2cr in FY26, and ₹197cr of March receivables was not yet billed. CARE rates it AA- but says a margin below 18% for long could lead to a downgrade, against FY27 guidance of about 15%. At a market value of about {mcap:The Anup Enginee|₹3,322cr} and a P/E of about {pe:The Anup Enginee|38.7}, the price needs about {need:The Anup Enginee|21}% a year against my ~18%, which is **{Label:The Anup Enginee|Full}**. Promoters hold **41%**, down from 43% in September 2023.",
         watch: ["Whether second-half margins lift the year to the guided 15%.", "Execution of the ₹985cr order book and the technical-services target."],
         charts: industrialManufacturingCharts['The Anup Enginee'],
     },
@@ -575,7 +575,7 @@ const profiles: BusinessProfile[] = [
             { name: 'Global chiller makers', note: 'In data centres it faces 30-40 established players, about 70% of them present in India.' },
         ],
         position: "**Market leader in Indian naval cooling, with about 64% share** and a retrofit win rate close to 100%; eight projects are under way.",
-        money: "Net cash of about ₹21cr on Screener (₹58cr cash against ₹37cr debt), helped by a ₹95cr IPO on the SME platform in FY26 that also paid off costly loans. No major capex is planned for two years. CARE upgraded it to BBB-/Stable in September 2026. Cash is tied up for about 370 days (down from 570), with receivables around 250 days. Promoters hold **44.6%**. At a market value of about ₹1,446cr and a P/E of about 67, the price needs about 28% a year against my ~20%, which is **Stretched**.",
+        money: "Net cash of about ₹21cr on Screener (₹58cr cash against ₹37cr debt), helped by a ₹95cr IPO on the SME platform in FY26 that also paid off costly loans. No major capex is planned for two years. CARE upgraded it to BBB-/Stable in September 2026. Cash is tied up for about 370 days (down from 570), with receivables around 250 days. Promoters hold **44.6%**. At a market value of about {mcap:Shree Refrigrations|₹1,446cr} and a P/E of about {pe:Shree Refrigrations|67}, the price needs about {need:Shree Refrigrations|28}% a year against my ~20%, which is **{Label:Shree Refrigrations|Stretched}**.",
         watch: ["Working capital falling further below 370 days.", "A steadier first half in FY27.", "Spares and service rising back toward 15% of sales."],
         charts: industrialManufacturingCharts['Shree Refrigrations'],
     },
