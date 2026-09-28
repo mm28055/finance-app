@@ -5264,6 +5264,12 @@ export const consumerDurablesValuationInputs: Record<string, ValuationInput> = {
         "mcapAtWriting": 3170.0,
         "peAtWriting": 15.3
     },
+    "Borosil": {
+        "netDebt": 62,
+        "ttmEbitda": 166.0,
+        "mcapAtWriting": 3167.0,
+        "peAtWriting": 43.4
+    },
     "Carysil": {
         "netDebt": 224,
         "ttmEbitda": 187.0,
@@ -5299,6 +5305,13 @@ export const consumerDurablesValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 125.0,
         "mcapAtWriting": 1994.0,
         "peAtWriting": 297.0
+    },
+    "Epack Durable": {
+        "netDebt": 711,
+        "ttmEbitda": 105.0,
+        "mcapAtWriting": 1736.0,
+        "peAtWriting": null,
+        "lossMaking": true
     },
     "Hindware Home Innov.": {
         "netDebt": 784,
