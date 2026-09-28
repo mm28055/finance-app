@@ -988,6 +988,270 @@ export const platformCharts: Record<string, ProfileCharts> = {
             "inventory5y": 0,
             "payables5y": 30
         }
+    },
+    "One Mobikwik Systems": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Power and factory costs",
+                    "share": 68
+                },
+                {
+                    "label": "Staff",
+                    "share": 15
+                },
+                {
+                    "label": "Other costs",
+                    "share": 21
+                },
+                {
+                    "label": "Operating loss",
+                    "share": 4
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                -132.0,
+                -78.0,
+                22.0,
+                -102.0,
+                -40.0
+            ],
+            "ocf": [
+                -321.0,
+                27.0,
+                -22.0,
+                -68.0,
+                -78.0
+            ],
+            "fcf": [
+                -324.0,
+                26.0,
+                -28.0,
+                -77.0,
+                -90.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "Loss-making"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "105.0x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹626cr net cash",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "n/m",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "-4%"
+            }
+        ],
+        "statsAsOf": "28 Sep 2026"
+    },
+    "Infibeam Avenues": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Power and factory costs",
+                    "share": 93
+                },
+                {
+                    "label": "Staff",
+                    "share": 2
+                },
+                {
+                    "label": "Other costs",
+                    "share": 1
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 4
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                145.0,
+                175.0,
+                252.0,
+                316.0,
+                351.0
+            ],
+            "ocf": [
+                122.0,
+                113.0,
+                728.0,
+                72.0,
+                537.0
+            ],
+            "fcf": [
+                80.0,
+                50.0,
+                436.0,
+                -304.0,
+                196.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "18.2x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "10.9x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹1,312cr net cash",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "127%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "4%"
+            }
+        ],
+        "statsAsOf": "28 Sep 2026"
+    },
+    "Aurum Proptech": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Delivery, subcontract and running costs",
+                    "share": 13
+                },
+                {
+                    "label": "Staff",
+                    "share": 26
+                },
+                {
+                    "label": "Other costs",
+                    "share": 39
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 22
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                -19.0,
+                -16.0,
+                3.0,
+                40.0,
+                84.0
+            ],
+            "ocf": [
+                -24.0,
+                -50.0,
+                20.0,
+                28.0,
+                63.0
+            ],
+            "fcf": [
+                -33.0,
+                -70.0,
+                -84.0,
+                11.0,
+                47.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "1707.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "15.7x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹65cr",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "40%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "22%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                180,
+                50
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                180,
+                50
+            ],
+            "absorbed5y": -100,
+            "receivables5y": -36,
+            "inventory5y": null,
+            "payables5y": 15
+        }
     }
 };
 
@@ -1040,5 +1304,24 @@ export const platformValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 65.0,
         "mcapAtWriting": 1126.0,
         "peAtWriting": 25.1
+    },
+    "One Mobikwik Systems": {
+        "netDebt": -626,
+        "ttmEbitda": 9.0,
+        "mcapAtWriting": 1571.0,
+        "peAtWriting": null,
+        "lossMaking": true
+    },
+    "Infibeam Avenues": {
+        "netDebt": -1312,
+        "ttmEbitda": 376.0,
+        "mcapAtWriting": 5404.0,
+        "peAtWriting": 18.2
+    },
+    "Aurum Proptech": {
+        "netDebt": 65,
+        "ttmEbitda": 106.0,
+        "mcapAtWriting": 1604.0,
+        "peAtWriting": 1707.0
     }
 };

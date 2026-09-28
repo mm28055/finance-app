@@ -19,7 +19,7 @@ const intro: OverviewSection[] = [
     {
         heading: 'The businesses, in plain words',
         body: [
-            "Sixteen companies that own the software they sell, in four groups by who buys it.",
+            "Fifteen companies that own the software they sell, in four groups by who buys it.",
         ],
         points: [
             {
@@ -36,7 +36,7 @@ const intro: OverviewSection[] = [
             },
             {
                 label: 'Small-cap platforms',
-                text: "Aurum PropTech (property technology, now buying Housing.com) and IZMO (car-dealer websites and images, plus a small chip-packaging unit) are smaller businesses still proving their model, where funding, execution and, in IZMO's case, audit quality matter as much as the product.",
+                text: "IZMO (car-dealer websites and images, plus a small chip-packaging unit) is a smaller business still proving its model, where funding, execution and audit quality matter as much as the product.",
             },
         ],
     },
@@ -380,30 +380,6 @@ const profiles: BusinessProfile[] = [
         money: "Net cash was about **₹296cr** on Screener's count, most of it the unspent ₹300cr raised from Tata Mutual Fund in September 2025 (₹277.86cr still unspent at March 2026). Operating cash flow was −₹45cr in FY26. NSE and BSE each fined the company ₹50,000 for issuing shares without prior approval, and the rating agency flagged a ₹3.18cr 'technical deviation' in how some of the raised money was used. Promoters hold **60.48%**, down from 67.55% three years ago.",
         watch: ["Two consecutive quarters of ₹75cr+ revenue with positive operating cash flow.", "Debtor days falling from 195.", "How the ₹300cr raise is actually deployed."],
         charts: softwareCharts['Network People Services'],
-    },
-    {
-        company: 'Aurum Proptech',
-        inShort: ["**Co-living rentals, developer CRM software (Sell.do), lead generation (Analytica) and PropTiger brokerage**, now buying Housing.com from REA Group in a share swap that will roughly double revenue.", "**Good:** distribution businesses earn 22–25% margins and bank debt is gone. **Bad:** continuing operations made only ₹2.3cr before tax in Q1 — the headline profit was a building sale — and Housing.com loses about ₹200cr a year, funded with about 37% share dilution.", "**Verdict: pass.** There is no meaningful P/E to test; this is a diluted turnaround bet on Housing.com reaching breakeven, not a valuation case."],
-        tagline: "A Mumbai-based property-technology group: co-living and family rentals, developer CRM software (Sell.do), lead generation and PropTiger brokerage, and now buying Housing.com from REA Group for shares.",
-        revenue: '₹381cr (FY26, consolidated)',
-        products: [
-            { name: 'Rental (HelloWorld, NestAway)', text: "Co-living and student housing (HelloWorld, 16,463 beds) and family rental management (NestAway, 9,278 signed units); the weakest segment, still loss-making for FY26." },
-            { name: 'Distribution (Analytica, Sell.do, PropTiger)', text: "Lead generation for developers (Analytica), a developer CRM SaaS product (Sell.do, 11,814 active licences, 7% gross churn) and PropTiger brokerage, added from Q2 FY26; together the profitable core, growing fast." },
-            { name: 'Housing.com (being acquired)', text: "India's roughly third-largest property portal by traffic (~24% share, 58 million monthly visits), bought from REA Group for about ₹458cr of new shares; it earned ₹343cr of FY25 revenue against ₹531cr of costs." },
-        ],
-        revenueText: "Q1 FY27 segment revenue: Rental ₹54.4cr (near-breakeven), Distribution ₹55.9cr (segment profit ₹8.0cr) and Capital (a small SM-REIT platform being built) ₹1.6cr. For FY26, Distribution profit was ₹32.3cr, up 118% as PropTiger was added, while Rental lost ₹18.5cr for the year. Once Housing.com closes, it will add roughly ₹340–380cr of revenue and about ₹200cr of annual losses to the group.",
-        mixes: [{ caption: 'Segment revenue, Q1 FY27 (continuing operations)', parts: [{ label: 'Distribution', share: 49 }, { label: 'Rental', share: 49 }, { label: 'Capital', share: 2 }], note: 'Housing.com is not yet consolidated.' }],
-        customers: ["**Tenants and students**, renting through HelloWorld and NestAway in 21 cities; occupancy was 81% in Q1 FY27, though beds and signed units both fell year-on-year as the company trimmed unprofitable locations.", "**Property developers**, over 1,000 of them using Sell.do's CRM software, plus buyers of leads from Analytica (134,221 leads sold in Q1, +77%).", "**Home buyers**, through PropTiger's brokerage (662 transactions, ₹784cr of homes sold in Q1) and, once the deal closes, Housing.com's 12 million monthly app users."],
-        difficulty: { level: 'Medium', text: "None of Aurum's individual businesses is hard to replicate on its own; the harder task is integrating discovery (Housing.com), lead generation, CRM and brokerage into one funnel, which very few Indian real-estate technology groups have attempted." },
-        moat: "Sell.do shows genuine SaaS stickiness, with 41% licence growth and only 7% gross churn, and owning discovery, leads, CRM and transactions together is an unusual combination in Indian real estate. The weakness is that cross-sell between the pieces is still 'single digit' per cent of revenue, and Housing.com's own brand — despite an estimated ₹2,200cr invested by past owners — competes against an entrenched leader, 99acres, in a category management itself says has 'historically not been profitable' in India.",
-        salesDrivers: ["**Housing.com integration**: management's internal target is breakeven in three to four quarters, stated publicly as four to six.", "**Distribution cross-sell**: only about 22% of distribution clients use more than one Aurum product today.", "**Sell.do growth**: active licences up 41% year-on-year with 7% gross churn.", "**PropTiger scale**: 662 transactions and ₹784cr of homes sold in Q1, with 11 active exclusive mandates.", "**A reversed M&A stance**: management said in April it was 'not actively evaluating to buy anything', then agreed the Housing.com deal about 11 weeks later."],
-        inputs: "**Staff and building leases.** There are no materials: delivery/running costs (co-living building leases) were 13% of FY26 sales, staff 26% and other costs 39%.",
-        costEffect: "**Mostly insulated from materials; driven by co-living lease costs and, from FY27, Housing.com's losses.** Under lease accounting, co-living buildings sit in depreciation and interest rather than rent, so Screener's operating margin (around 22–26%) is measured before that lease cost; the company's own 'adjusted EBITDA' after lease rent was only about 10% of revenue in Q1 FY27. **What happened:** continuing-operations profitability turned positive only from FY26 (a ₹15.0cr pre-tax loss, better than −₹43.4cr in FY25), and Q1 FY27's headline ₹45cr net profit was almost entirely a ₹52.4cr gain on selling two office buildings — continuing operations alone made just ₹2.31cr before tax.",
-        competitors: [{ name: '99acres (Info Edge)', note: 'The entrenched leader in Indian online property listings that Housing.com will continue to trail.' }, { name: 'Other developer CRM and lead-generation vendors', note: 'Compete with Sell.do and Analytica for developer marketing budgets.' }],
-        position: "**A small but broadening property-technology group**, about to become a larger one through the Housing.com purchase, with Sell.do holding a meaningful share of developer CRM software.",
-        money: "Bank debt (a lease-rental-discounting loan of ₹56cr) was fully prepaid in May–June 2026 using proceeds from the building sale. The promoter is subscribing to ₹118cr of warrants, partly earmarked as a 'war chest' for Housing.com. The REA Group share swap and promoter warrants will lift the fully diluted share count from 7.64cr to 10.49cr, about 37% dilution, cutting the promoter's stake from 48.1% to about 39.9%. No dividend.",
-        watch: ["Housing.com's losses falling each quarter after the deal closes.", "Continuing-operations pre-tax margin staying above 5%.", "No further share issues beyond the announced deal."],
-        charts: softwareCharts['Aurum Proptech'],
     },
     {
         company: 'TAC Security (Tac Infosec)',

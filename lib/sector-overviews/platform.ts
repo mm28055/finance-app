@@ -9,7 +9,7 @@ const FY = ['FY22', 'FY23', 'FY24', 'FY25', 'FY26'];
 // Segment labels. The metric grid, the moat table and the company cards are grouped by these.
 const LISTINGS = 'Listings and subscriptions — paid for being found';
 const B2B = 'Platforms for businesses — trucks, travel agents, payments and parts';
-const CONSUMER = 'Delivery and home services — still loss-making';
+const CONSUMER = 'Consumer apps — delivery, home services and a payments wallet; still loss-making';
 
 export const platformCos: SectorOverview = {
     sector: 'Platform Cos',
@@ -31,10 +31,13 @@ export const platformCos: SectorOverview = {
             'Swiggy': null,
             'Urban Company': null,
             'Pine Labs': null,
+            'One Mobikwik Systems': null,
+            'Infibeam Avenues': 8,
+            'Aurum Proptech': null,
         },
     },
     standfirst:
-        "Eight internet platforms that earn a fee for connecting buyers and sellers. CarTrade runs car websites, OLX India classifieds and Shriram Automall auctions; Matrimony.com runs matchmaking sites. BlackBuck serves truck owners, TBO Tek serves travel agents, Pine Labs runs payment terminals and checkout for shops, and Macfos (SME-listed) sells electronics and drone parts online. Swiggy delivers food and groceries and Urban Company books home services; both still lose money. This edition was rebuilt from both earnings calls, the FY26 annual reports, rating reports from ICRA, CARE and CRISIL, and industry data from Redseer, Bernstein, NPCI, ICRA and the road ministry. The headline: the listing and business platforms are profitable and hold net cash, but the annual reports turned up a foreign-exchange rule case at TBO, a ₹214cr GST demand at Pine Labs, a lost brand name and a qualified governance certificate at Matrimony.com, and a customs notice of undisclosed size at Macfos, none of which came up on the calls. Several dashboard figures are the companies' own adjusted numbers rather than filed ones; this note says which it quotes. Every chart uses filed results and five years of history.",
+        "Eleven internet platforms that earn a fee for connecting buyers and sellers. CarTrade runs car websites, OLX India classifieds and Shriram Automall auctions; Matrimony.com runs matchmaking sites; Aurum PropTech runs co-living rentals, property software and brokerage and is buying the Housing.com portal. BlackBuck serves truck owners, TBO Tek serves travel agents, Pine Labs runs payment terminals and checkout for shops, AvenuesAI (formerly Infibeam Avenues) runs the CCAvenue payment gateway and Rediff, and Macfos (SME-listed) sells electronics and drone parts online. Swiggy delivers food and groceries, Urban Company books home services and MobiKwik runs a wallet, a UPI app and small loans; all three still lose money over the last year. This edition was rebuilt from both earnings calls, the FY26 annual reports, rating reports from ICRA, CARE and CRISIL, and industry data from Redseer, Bernstein, NPCI, ICRA and the road ministry. The headline: the listing and business platforms are profitable and hold net cash, but the annual reports turned up a foreign-exchange rule case at TBO, a ₹214cr GST demand at Pine Labs, a lost brand name and a qualified governance certificate at Matrimony.com, and a customs notice of undisclosed size at Macfos, a ₹40cr merchant fraud at MobiKwik and a ₹400cr guarantee given by an AvenuesAI subsidiary for its parent's bank loan, none of which came up on the calls. Aurum PropTech moved here from the Software note; its call is unchanged. Several dashboard figures are the companies' own adjusted numbers rather than filed ones; this note says which it quotes. Every chart uses filed results and five years of history.",
     lastUpdated: '2026-09-23',
     asOfQuarter: 'Q1 FY27',
 
@@ -47,7 +50,7 @@ export const platformCos: SectorOverview = {
             scale: 'diverging',
             legend: ['Losing money', 'Making money'],
             source: 'Filed quarterly results (Screener): all consolidated except Macfos (standalone). Operating profit ÷ revenue.',
-            note: 'CarTrade and BlackBuck earn 24–37%; Swiggy and Urban Company still lose money at the operating level, though Swiggy’s loss has narrowed every quarter.',
+            note: 'CarTrade and BlackBuck earn 24–37%; Swiggy and Urban Company still lose money at the operating level, though Swiggy’s loss has narrowed every quarter; MobiKwik has just crossed into profit. AvenuesAI’s 4% is measured on gross revenue and Aurum’s is before lease rent, so both look different on the companies’ own measures.',
             values: {
                 'Cartrade Tech': [25, 33, 37, 35, 31],
                 'BlackBuck': [28, 25, 26, 24, 25],
@@ -57,9 +60,14 @@ export const platformCos: SectorOverview = {
                 'Swiggy': [-19, -14, -13, -11, -10],
                 'Urban Company': [-4, -21, -11, -28, -18],
                 'Pine Labs': [7, 12, 18, 15, 13],
+                'One Mobikwik Systems': [-15, -6, 2, 3, 3],
+                'Infibeam Avenues': [6, 5, 4, 4, 4],
+                'Aurum Proptech': [17, 26, 24, 23, 26],
             },
             cellNotes: {
                 'Urban Company': 'Includes heavy spending on InstaHelp, its new on-demand house-help service.',
+                'Infibeam Avenues': 'On gross revenue, most of which is passed on to banks and card networks. On net revenue (the company’s measure) the Q1 FY27 margin was 68%, up from 47%.',
+                'Aurum Proptech': 'Before rent: co-living leases are booked as depreciation and interest. Company-adjusted EBITDA was about 10% in Q1 FY27.',
             },
         },
         {
@@ -69,7 +77,7 @@ export const platformCos: SectorOverview = {
             periods: Q,
             scale: 'diverging',
             source: 'Filed quarterly revenue, each quarter against the same quarter a year earlier.',
-            note: 'Most of these companies are growing 15–55% a year. Matrimony.com is the slow grower.',
+            note: 'Most of these companies are growing 15–55% a year. Matrimony.com and MobiKwik are the slow growers, and AvenuesAI’s 100%-plus is gross revenue: what it keeps fell.',
             values: {
                 'Cartrade Tech': [22, 25, 19, 19, 16],
                 'BlackBuck': [57, 53, 51, 52, 42],
@@ -79,8 +87,13 @@ export const platformCos: SectorOverview = {
                 'Swiggy': [54, 54, 54, 45, 37],
                 'Urban Company': [null, 37, 33, 43, 44],
                 'Pine Labs': [null, 18, 24, 17, 20],
+                'One Mobikwik Systems': [-21, -7, 7, 8, 4],
+                'Infibeam Avenues': [72, 93, 123, 114, 109],
+                'Aurum Proptech': [0, 28, 72, 82, 72],
             },
             cellNotes: {
+                'Infibeam Avenues': 'Gross revenue. Net revenue, what the company keeps after paying banks and card networks, fell 3% in Q1 FY27.',
+                'Aurum Proptech': 'Includes PropTiger, bought in FY26, from Q2 FY26.',
                 'TBO Tek': 'Reported growth since Q3 FY26 includes an acquired business; the company reports organic growth separately.',
                 'Urban Company': 'Q1 FY26 comparison not filed.',
                 'Pine Labs': 'Q1 FY26 comparison not filed.',
@@ -95,7 +108,7 @@ export const platformCos: SectorOverview = {
             scale: 'diverging',
             legend: ['Losing money', 'Making money'],
             source: 'Filed annual ratios (Screener): return on capital employed.',
-            note: 'Macfos and Matrimony.com have made good returns for years; CarTrade, BlackBuck and Pine Labs are climbing from losses; the large cash piles from their listings hold returns down.',
+            note: 'Macfos and Matrimony.com have made good returns for years; CarTrade, BlackBuck and Pine Labs are climbing from losses; the large cash piles from their listings hold returns down. AvenuesAI has never earned above 9%, weighed down by ₹2,500cr of goodwill and intangibles from past deals.',
             values: {
                 'Cartrade Tech': [-6, 3, 4, 8, 12],
                 'BlackBuck': [-29, -36, -32, 11, 13],
@@ -105,6 +118,9 @@ export const platformCos: SectorOverview = {
                 'Swiggy': [-48, -37, -24, -29, -24],
                 'Urban Company': [-51, -20, -6, 2, -8],
                 'Pine Labs': [-3, -7, -8, 0, 4],
+                'One Mobikwik Systems': [-57, -17, 9, -15, -2],
+                'Infibeam Avenues': [3, 6, 6, 9, 8],
+                'Aurum Proptech': [-11, -16, -12, -4, 1],
             },
         },
         {
@@ -125,9 +141,13 @@ export const platformCos: SectorOverview = {
                 'Swiggy': [-79, -46, -35, -48, -16],
                 'Urban Company': [-269, -234, -153, -94, -93],
                 'Pine Labs': [null, null, null, null, null],
+                'One Mobikwik Systems': [20, 51, 34, 17, 24],
+                'Infibeam Avenues': [null, null, null, null, null],
+                'Aurum Proptech': [180, 53, 40, 42, 50],
             },
             cellNotes: {
                 'TBO Tek': 'Not meaningful: it books only its commission as revenue, while money owed by travel agents is the full booking value.',
+                'Infibeam Avenues': 'Not meaningful: merchants’ money in transit swamps its own revenue (Screener shows 5–23 days).',
                 'Pine Labs': 'Not meaningful: money passing through to merchants swamps its own revenue.',
                 'BlackBuck': 'FY22–FY23 not meaningful: money owed to it was large against a small revenue base.',
             },
@@ -149,10 +169,15 @@ export const platformCos: SectorOverview = {
                 'Swiggy': [null, null, null, null, null, null],
                 'Urban Company': [null, null, null, null, null, null],
                 'Pine Labs': [-71, null, null, 23, 110, -2],
+                'One Mobikwik Systems': [null, null, -100, null, null, null],
+                'Infibeam Avenues': [84, 65, 289, 23, 153, 127],
+                'Aurum Proptech': [null, null, 667, 70, 75, 40],
             },
             cellNotes: {
                 'Swiggy': 'Operating loss every year.',
                 'Urban Company': 'Operating loss every year.',
+                'One Mobikwik Systems': 'Operating loss in every year but FY24, when a ₹22cr profit came with negative operating cash.',
+                'Infibeam Avenues': 'Swings with merchants’ money in transit at the year end; the five-year figure is the better guide.',
                 'Pine Labs': 'FY26 includes about ₹202cr of early-settlement (bill-discounting) inflows received in Q4, so the 110% flatters the underlying figure.',
             },
         },
@@ -164,7 +189,7 @@ export const platformCos: SectorOverview = {
             scale: 'diverging',
             legend: ['Burning cash', 'Generating cash'],
             source: 'Filed cash-flow statements (Screener): operating cash minus spending on fixed assets, as a share of revenue. The last column uses all five years.',
-            note: 'CarTrade has produced 20–30% of revenue as free cash for two years; Swiggy burnt about 17% of revenue in FY26.',
+            note: 'CarTrade has produced 20–30% of revenue as free cash for two years; Swiggy burnt about 17% of revenue in FY26 and MobiKwik 8%.',
             values: {
                 'Cartrade Tech': [18.2, 11.3, 2.7, 25.9, 29.5, 19.6],
                 'BlackBuck': [-84.0, -82.4, 7.1, 3.3, 8.7, -9.2],
@@ -174,6 +199,13 @@ export const platformCos: SectorOverview = {
                 'Swiggy': [-73.5, -51.2, -14.8, -19.2, -16.6, -26.5],
                 'Urban Company': [-74.4, -39.7, -11.5, 3.8, -9.0, -16.7],
                 'Pine Labs': [-44.0, -32.5, -28.0, -4.4, 5.8, -14.7],
+                'One Mobikwik Systems': [-61.5, 4.8, -3.2, -6.6, -8.0, -11.7],
+                'Infibeam Avenues': [6.2, 2.5, 13.8, -7.6, 2.4, 2.5],
+                'Aurum Proptech': [-206.2, -55.1, -39.3, 4.3, 12.3, -13.0],
+            },
+            cellNotes: {
+                'Infibeam Avenues': 'Measured on gross revenue. Against net revenue, FY26 free cash of ₹196cr was about a third.',
+                'Aurum Proptech': 'Losses and fit-outs in FY22–FY24; positive since FY25.',
             },
         },
         {
@@ -185,7 +217,7 @@ export const platformCos: SectorOverview = {
             invert: true,
             legend: ['More debt', 'Net cash'],
             source: 'Filed balance sheets and profit and loss (Screener): borrowings (including leases) minus cash and treasury investments, ÷ operating profit. Blank where operating profit was negative.',
-            note: 'Below zero means more cash than debt. All but Macfos hold net cash from their listings; Swiggy (₹7,526cr) and Urban Company (₹1,658cr) hold large net cash but make operating losses, so the ratio is blank.',
+            note: 'Below zero means more cash than debt. All but Macfos and Aurum hold net cash; Aurum’s borrowings are mostly leases on rented co-living buildings. Swiggy (₹7,526cr), Urban Company (₹1,658cr) and MobiKwik (₹626cr) hold net cash but have made operating losses, so the ratio is blank.',
             values: {
                 'Cartrade Tech': [null, -27.3, -6.2, -3.7, -3.1],
                 'BlackBuck': [null, null, null, -7.8, -3.8],
@@ -195,8 +227,13 @@ export const platformCos: SectorOverview = {
                 'Swiggy': [null, null, null, null, null],
                 'Urban Company': [null, null, null, null, null],
                 'Pine Labs': [-32.0, null, null, -23.0, -21.8],
+                'One Mobikwik Systems': [null, null, -7.7, null, null],
+                'Infibeam Avenues': [-4.2, -4.1, -4.6, -2.0, -3.7],
+                'Aurum Proptech': [null, null, 91.7, 3.4, 0.8],
             },
             cellNotes: {
+                'One Mobikwik Systems': 'Net cash of ₹626cr (Screener, March 2026; the company counts ₹437cr in June), but an operating loss in most years.',
+                'Aurum Proptech': 'Mostly lease liabilities; ₹56cr of bank debt was prepaid in May–June 2026.',
                 'Pine Labs': 'Overstated: the cash counted includes about ₹5,570cr of merchants’ and card-holders’ money held in escrow. The company’s own net cash was ₹2,449cr at March 2026, about 7 times FY26 operating profit.',
             },
         },
@@ -208,7 +245,7 @@ export const platformCos: SectorOverview = {
             periods: [...FY, '5 yrs'],
             scale: 'sequential',
             source: 'Filed cash-flow statements (Screener): spending on fixed assets as a share of revenue. The last column uses all five years.',
-            note: 'Platforms need little plant. Pine Labs buys payment terminals and BlackBuck telematics devices, so they spend more.',
+            note: 'Platforms need little plant. Pine Labs buys payment terminals and BlackBuck telematics devices, so they spend more; Aurum’s early years were co-living fit-outs.',
             values: {
                 'Cartrade Tech': [1.9, 1.9, 0.6, 0.8, 3.5, 1.9],
                 'BlackBuck': [18.5, 14.8, 8.1, 10.3, 17.2, 13.6],
@@ -218,6 +255,9 @@ export const platformCos: SectorOverview = {
                 'Swiggy': [5.1, 2.0, 3.1, 4.9, 4.0, 3.9],
                 'Urban Company': [2.5, 2.4, 1.1, 1.0, 2.6, 1.9],
                 'Pine Labs': [35.5, 23.0, 15.0, 6.6, 8.8, 14.6],
+                'One Mobikwik Systems': [0.6, 0.2, 0.7, 0.8, 1.1, 0.7],
+                'Infibeam Avenues': [3.2, 3.2, 9.3, 9.4, 4.2, 6.0],
+                'Aurum Proptech': [56.2, 15.7, 48.6, 6.7, 4.2, 16.8],
             },
         },
     ],
@@ -247,6 +287,12 @@ export const platformCos: SectorOverview = {
                 grades: { network: { grade: 'A', note: 'Leading home-services app' }, brand: { grade: 'A', note: 'Trusted for trained professionals' }, switch: { grade: 'B', note: 'Customers rebook the same service' }, econ: { grade: 'C', note: 'Core profitable; group losing' }, cash: { grade: 'C', note: '₹2,019cr cash; burning on InstaHelp' } } },
             { company: 'Pine Labs', trend: 'stable', trendNote: 'Growth about 20%, at the low end of guidance; operating profit short of its own aim.',
                 grades: { network: { grade: 'B', note: 'Links shops, banks and brands for EMI offers' }, brand: { grade: 'B', note: 'Well known with large retailers' }, switch: { grade: 'B', note: 'Software built into merchants and banks' }, econ: { grade: 'C', note: 'Profit still small' }, cash: { grade: 'C', note: 'Five-year cash conversion negative' } } },
+            { company: 'One Mobikwik Systems', trend: 'stable', trendNote: 'Three profitable quarters, but Q1 profit leaned on about ₹14–16cr of loan write-backs; revenue flat for two years.',
+                grades: { network: { grade: 'B', note: 'About 19% of wallet spend; 5 million merchants' }, brand: { grade: 'B', note: 'Known wallet; only 13th among UPI apps' }, switch: { grade: 'C', note: 'Users switch payment apps freely' }, econ: { grade: 'C', note: 'Keeps 13 paise per ₹100 of payments' }, cash: { grade: 'C', note: '₹437cr net cash; ₹40cr merchant fraud' } } },
+            { company: 'Infibeam Avenues', trend: 'narrowing', trendNote: 'Volume up 74% but net revenue down 3% as the take rate halved to 5.3 bps; profit up on cost cuts.',
+                grades: { network: { grade: 'B', note: '10 million-plus merchants; 8–10% share' }, brand: { grade: 'B', note: 'CCAvenue, India’s first retail gateway' }, switch: { grade: 'B', note: 'Built into hotel, school and bill workflows' }, econ: { grade: 'C', note: 'Take rate halved in a year' }, cash: { grade: 'C', note: 'Cash-generative; ₹700cr rights issue, big goodwill' } } },
+            { company: 'Aurum Proptech', trend: 'narrowing', trendNote: 'Continuing pre-tax profit ₹2.3cr in Q1; Housing.com brings about ₹200cr of yearly losses.',
+                grades: { network: { grade: 'C', note: 'Housing.com ~24% share, behind 99acres' }, brand: { grade: 'B', note: 'Housing.com, PropTiger, Sell.do' }, switch: { grade: 'B', note: 'Sell.do CRM churn only 7%' }, econ: { grade: 'C', note: 'Core pre-tax margin about 2%' }, cash: { grade: 'D', note: 'Related-party loans; ~37% dilution' } } },
         ],
     },
 
@@ -256,39 +302,40 @@ export const platformCos: SectorOverview = {
             body: [
                 "**Own CarTrade.** **CarTrade** (CarWale, BikeWale, OLX India and Shriram Automall) lifted its filed operating margin from 16% in FY24 to 33% in FY26, and in Q1 FY27 OLX revenue rose 29% and its operating profit 76%. About 95% of its visitors arrive without paid advertising, it holds ₹1,321cr of cash and no bank debt, and FY26 operating cash matched operating profit. Against that, Q1 revenue slipped 1% on the quarter, treasury income is about 30% of pre-tax profit, the cash has no payout policy, and the chairman's son and daughter hold senior roles. The price needs about {need:Cartrade Tech|27}% a year against my ~25%, which is a fair price for the best business here.",
                 "**Follow BlackBuck, Matrimony.com and Macfos.** **BlackBuck**, the app 8.83 lakh truck operators use each month for tolls, fuel, tracking, loads and loans, grew revenue 42% and toll payments 16% (the national network grew in low single digits) at a 93% contribution margin. But pre-tax profit fell 8% as device depreciation more than doubled, profit after tax rose only on tax credits, a ₹22.4cr GST demand was upheld and Accel sold 1.48% in September. I have cut my estimate to ~24%, against about {need:BlackBuck|27}% the price needs, so I move it from own to follow. **Matrimony.com**'s Q1 profit rose 127.5%, as promised; it is paid up front, holds ₹342cr of cash and bought back shares in February. But the jump is mostly last year's one-year plans reaching revenue while marketing stayed flat: billing grew 7.8%, paid subscriptions have fallen three years running, a court forced it to drop the Jodii brand, and its second finance chief in 18 months left in August. The price needs about {need:Matrimony.com|16}% a year against my ~10%. **Macfos** (Robu.in) grew about 67% like for like in FY26 at a 34% return on capital, but Q1 growth slowed to 38% with a lower margin, operating cash has been negative two years running, and a customs notice of undisclosed size is pending. The price needs about {need:Macfos|22–23}% a year against my ~20%.",
-                "**Wait on TBO Tek, Swiggy, Urban Company and Pine Labs.** **TBO** finally showed operating leverage: organic adjusted operating profit rose 25% on 16% organic gross-profit growth, and cash rose ₹392cr. But reported growth of 81% leans on an acquisition and a weaker rupee, the Middle East is flat, and its auditor flags a foreign-exchange rule (FEMA) case in which the company itself found ₹71.2cr of breaches, with a penalty of up to three times that. The price needs about {need:TBO Tek|28}% a year against my ~20%. **Swiggy**'s food delivery earns 3.1% of order value, but Instamart lost 9.8%, Blinkit is three times its size and growing twice as fast, and within 90 days management reversed two May promises and lost the Instamart chief who made them. **Urban Company**'s core earns 6.9% of bookings and is speeding up, but InstaHelp lost ₹132cr in the quarter. **Pine Labs** grew revenue 20%, but adjusted operating profit only 4%; its price needs about {need:Pine Labs|40}% a year.",
-                "**Three things to hold onto before reading the rest.** First, **a platform is only as good as its profit per order**: CarTrade, Matrimony.com and BlackBuck's payments earn money on each extra user, while Swiggy's Instamart and Urban Company's InstaHelp still pay to win users. Second, **check which profit is quoted**: every company here publishes an ‘adjusted’ figure that adds back share-based pay or other costs, sometimes far above the filed one. Pine Labs' FY26 adjusted EBITDA was ₹559cr against ₹358cr of filed operating profit, and CarTrade's Q1 ‘adjusted EBITDA’ includes ₹26cr of treasury income. This note uses filed figures unless it says otherwise. Third, **read the annual reports**: TBO's FEMA case, Pine Labs' GST demand, Swiggy's audit remarks, Matrimony.com's qualified governance certificate and Macfos's customs notice barely featured on the calls.",
+                "**Wait on TBO Tek, Swiggy, Urban Company, Pine Labs and MobiKwik.** **TBO** finally showed operating leverage: organic adjusted operating profit rose 25% on 16% organic gross-profit growth, and cash rose ₹392cr. But reported growth of 81% leans on an acquisition and a weaker rupee, the Middle East is flat, and its auditor flags a foreign-exchange rule (FEMA) case in which the company itself found ₹71.2cr of breaches, with a penalty of up to three times that. The price needs about {need:TBO Tek|28}% a year against my ~20%. **Swiggy**'s food delivery earns 3.1% of order value, but Instamart lost 9.8%, Blinkit is three times its size and growing twice as fast, and within 90 days management reversed two May promises and lost the Instamart chief who made them. **Urban Company**'s core earns 6.9% of bookings and is speeding up, but InstaHelp lost ₹132cr in the quarter. **Pine Labs** grew revenue 20%, but adjusted operating profit only 4%; its price needs about {need:Pine Labs|40}% a year. **MobiKwik**, India's largest wallet, has made a profit for three quarters and its payments gross profit rose 31% on flat revenue. But Q1's ₹7.6cr profit rested on about ₹14–16cr of write-backs on old loans, revenue has not grown for two years, and its own lending licence is 'some time away'. A value of about {mcap:One Mobikwik Systems|₹1,571cr} asks a lot of a ₹40cr FY27 profit target.",
+                "**Pass on AvenuesAI and Aurum PropTech.** **AvenuesAI** (formerly Infibeam Avenues, owner of the CCAvenue gateway and Rediff) is profitable and holds net cash, and its Q1 profit rose 45%. But payment volume rose 74% while the revenue it keeps fell 3%, because the fee it keeps per payment halved to 5.3 paise per ₹100; the profit growth came from cost cuts, and management guides FY27 earnings per share at −7% to +1%. It also issued about 25% more shares through a ₹700cr rights issue, a third of it for unnamed acquisitions. The price needs about {need:Infibeam Avenues|12}% a year against my ~8%, which is {label:Infibeam Avenues|full} on the arithmetic, but I would not buy a business whose own guidance is flat. **Aurum PropTech** moved here from the Software note. Its continuing businesses made ₹2.3cr before tax in Q1, the ₹45cr headline profit was a building sale, and it is buying Housing.com, which lost about ₹200cr a year, with about 37% more shares. Next to CarTrade, the profitable leader in classifieds, Housing.com is a loss-making challenger in a category its new owner says has 'historically not been profitable'. **The new peers do not change the call: pass.**",
+                "**Three things to hold onto before reading the rest.** First, **a platform is only as good as its profit per order**: CarTrade, Matrimony.com and BlackBuck's payments earn money on each extra user, while Swiggy's Instamart and Urban Company's InstaHelp still pay to win users. Second, **check which profit is quoted**: every company here publishes an ‘adjusted’ figure that adds back share-based pay or other costs, sometimes far above the filed one. Pine Labs' FY26 adjusted EBITDA was ₹559cr against ₹358cr of filed operating profit, and CarTrade's Q1 ‘adjusted EBITDA’ includes ₹26cr of treasury income. This note uses filed figures unless it says otherwise. Third, **read the annual reports**: TBO's FEMA case, Pine Labs' GST demand, Swiggy's audit remarks, Matrimony.com's qualified governance certificate, Macfos's customs notice, MobiKwik's ₹40cr merchant fraud and AvenuesAI's ₹400cr guarantee barely featured on the calls.",
             ],
         },
         {
             heading: '2. Charts: margins, growth, cash cycle and cash conversion',
             body: [
                 "The six views that matter most, with two more behind **More measures**. Every figure comes from filed results (all consolidated except Macfos). Several ratios break down for platforms, such as working capital at TBO and Pine Labs, where money passing through swamps revenue; those cells are blank with a note. Hover over a starred name for its caveat.",
-                "**Why these figures differ from the rest of the dashboard.** Its stored quarterly records mix bases. Urban Company's rows use adjusted EBITDA (Q1 FY27 −₹65cr against a filed operating loss of ₹97cr) and show zero profit for three loss-making quarters. Pine Labs' Q1 row is its adjusted ₹126cr, its Q4 row the filed figure. CarTrade's Q1 row shows a 43.5% margin on ₹230cr because it uses total income and an EBITDA that includes treasury income; filed revenue was ₹201cr at 31%. BlackBuck's Q1 row is adjusted (₹55cr; filed ₹50cr). Five companies have zero rows for Q3 or Q4 FY26, and Macfos's ‘Q2 FY26’ row is really the first half. The charts use Screener's filed figures.",
+                "**Why these figures differ from the rest of the dashboard.** Its stored quarterly records mix bases. Urban Company's rows use adjusted EBITDA (Q1 FY27 −₹65cr against a filed operating loss of ₹97cr) and show zero profit for three loss-making quarters. Pine Labs' Q1 row is its adjusted ₹126cr, its Q4 row the filed figure. CarTrade's Q1 row shows a 43.5% margin on ₹230cr because it uses total income and an EBITDA that includes treasury income; filed revenue was ₹201cr at 31%. BlackBuck's Q1 row is adjusted (₹55cr; filed ₹50cr). Five companies have zero rows for Q3 or Q4 FY26, and Macfos's ‘Q2 FY26’ row is really the first half. MobiKwik's dashboard P/E of 532 means nothing, because it lost ₹13cr over the last four quarters. AvenuesAI's rows show gross revenue at a 4% margin; the revenue it keeps was ₹147.5cr in Q1 at a 68% margin. Aurum's Q1 profit of ₹45cr is almost all a gain on selling two office buildings. The charts use Screener's filed figures.",
             ],
             embed: 'metrics',
         },
         {
             heading: '3. The sector',
             body: [
-                "Platforms earn a fee or a margin for connecting buyers and sellers; once built, each extra user costs little, so margins rise fast with scale, mainly for the leader. The eight here sit in six markets in very different places. **Online retail** reached about $80bn in FY26, up 21%, and quick commerce (groceries in minutes) grew about 120% to $13–14bn (Redseer). **Food delivery** is 11% of a roughly $90bn food-services market and Redseer expects it to grow 20–22% a year. **UPI** handled 24.51bn payments worth ₹29.82 lakh crore in August 2026, and from 15 October large merchant payments carry a fee for the first time since 2020. **Used cars** passed 6 million sales in FY26, up 8–10% (Crisil), and **highway tolls** rose 14.4% to ₹70,278cr (road ministry). **Travel** is in a shock from the West Asia war; Thomas Cook India's Q1 revenue fell 12%. **My view: the quick-commerce land grab is peaking and its leader is pulling away; the steady profit is in food delivery, classifieds, matchmaking and trucker payments; and two new rules, the UPI fee and the gig-worker levy, will shift revenue and costs within a year.**",
+                "Platforms earn a fee or a margin for connecting buyers and sellers; once built, each extra user costs little, so margins rise fast with scale, mainly for the leader. The eleven here sit in eight markets in very different places. **Online retail** reached about $80bn in FY26, up 21%, and quick commerce (groceries in minutes) grew about 120% to $13–14bn (Redseer). **Food delivery** is 11% of a roughly $90bn food-services market and Redseer expects it to grow 20–22% a year. **UPI** handled 24.51bn payments worth ₹29.82 lakh crore in August 2026, and from 15 October large merchant payments carry a fee for the first time since 2020; meanwhile gateways keep ever less per payment. **Online property** is small and loss-making: Housing.com, which Aurum is buying, earned ₹343cr in FY25 against ₹531cr of costs. **Used cars** passed 6 million sales in FY26, up 8–10% (Crisil), and **highway tolls** rose 14.4% to ₹70,278cr (road ministry). **Travel** is in a shock from the West Asia war; Thomas Cook India's Q1 revenue fell 12%. **My view: the quick-commerce land grab is peaking and its leader is pulling away; the steady profit is in food delivery, classifieds, matchmaking and trucker payments; and two new rules, the UPI fee and the gig-worker levy, will shift revenue and costs within a year.**",
             ],
             points: [
                 {
                     label: 'Value chain',
-                    text: "Buyers (households, travel agents, truck owners, shops) ↔ **the platform** ↔ sellers (restaurants, brands, hotels, car dealers, service professionals, banks). **Profit sits with platforms that neither hold stock nor employ riders.** In the latest quarter CarTrade earned 31% of revenue (filed), BlackBuck 33% of net revenue and Matrimony.com's matchmaking 26.9% (both company measures), while Zomato's food delivery earned 5.6% of order value and Swiggy's 3.1%. Quick commerce, which holds stock in dark stores and pays riders, is only just profitable for the leader: Blinkit earned 0.6% of order value in Q1 FY27, Instamart lost 9.8%, and Zepto lost ₹5,095cr in FY26 on ₹22,624cr of revenue. **My view: the further a platform moves into stock and delivery, the more it looks like a retailer, with a retailer's margins.**",
+                    text: "Buyers (households, travel agents, truck owners, shops) ↔ **the platform** ↔ sellers (restaurants, brands, hotels, car dealers, service professionals, banks). **Profit sits with platforms that neither hold stock nor employ riders.** In the latest quarter CarTrade earned 31% of revenue (filed), BlackBuck 33% of net revenue and Matrimony.com's matchmaking 26.9% (both company measures), while Zomato's food delivery earned 5.6% of order value and Swiggy's 3.1%. Quick commerce, which holds stock in dark stores and pays riders, is only just profitable for the leader: Blinkit earned 0.6% of order value in Q1 FY27, Instamart lost 9.8%, and Zepto lost ₹5,095cr in FY26 on ₹22,624cr of revenue. Payments sit at the thin end: AvenuesAI kept 5.3 paise of every ₹100 of fee-earning payments in Q1 FY27, against 10.4 paise a year earlier, and MobiKwik kept 13 paise per ₹100 after gateway costs. **My view: the further a platform moves into stock and delivery, the more it looks like a retailer, with a retailer's margins.**",
                 },
                 {
                     label: 'Where the demand comes from',
-                    text: "**Formalisation and convenience.** Redseer counts 320–340 million Indians buying online each year, and expects quick and value commerce to pass 40% of online retail by FY30, from about 30% now. E-way bills (permits that track goods moved by truck) reached 139 million in August 2026, up 7.7%, which feeds BlackBuck. The GST cut of September 2025 lifted commercial-vehicle wholesales 23.4% in April–August 2026 (ICRA), good for CarTrade's advertisers and auctions. Only 20–25% of used-car buyers get an organised loan (CarTrade), so vehicle loans are open ground. Online matrimony, a ₹1,200–1,400cr market, should grow 10–12% a year to 2030 (Redseer), against 4–5% for offline matchmakers. **My view: demand is real in every one of these markets; the question is how much each company can charge for.**",
+                    text: "**Formalisation and convenience.** Redseer counts 320–340 million Indians buying online each year, and expects quick and value commerce to pass 40% of online retail by FY30, from about 30% now. E-way bills (permits that track goods moved by truck) reached 139 million in August 2026, up 7.7%, which feeds BlackBuck. The GST cut of September 2025 lifted commercial-vehicle wholesales 23.4% in April–August 2026 (ICRA), good for CarTrade's advertisers and auctions. Only 20–25% of used-car buyers get an organised loan (CarTrade), so vehicle loans are open ground. Online matrimony, a ₹1,200–1,400cr market, should grow 10–12% a year to 2030 (Redseer), against 4–5% for offline matchmakers. Housing.com draws about 58 million visits a month, yet Aurum's chairman says Indian property-listing portals 'have historically not been profitable'. **My view: demand is real in every one of these markets; the question is how much each company can charge for.**",
                 },
                 {
                     label: 'Cycles and policy',
-                    text: "**Three rule changes matter.** First, from 15 October 2026 merchants pay 0.4% on UPI payments above ₹2,000 (capped at ₹300); merchants taking up to ₹1 lakh a month, about 96% of merchant transactions, are exempt. Industry estimates put the pool at ₹5,000–30,000cr a year, split among banks, apps and acquirers in shares NPCI has not fixed. **Pine Labs**, whose UPI payments average over ₹1,400, is the obvious gainer. Second, the social-security code makes delivery platforms pay 1–2% of turnover, capped at 5% of gig-worker pay; the rules came on 8 May 2026 but the rate and start date did not. JM Financial's worst case is ₹2–3 an order (about ₹26cr for Swiggy on FY26 volumes), probably passed on in fees; Karnataka's own 1% fee is already being paid into court. Third, FSSAI took penal action against Instamart, BigBasket and Zepto over misbranded food on 23 September. Two **cycles** are turning: ICRA expects commercial-vehicle sales to fall year on year in H2 FY27, and West Asia keeps TBO's best market flat. **My view: the UPI fee is the biggest positive policy change for this group in years, but nobody can size Pine Labs' share until NPCI fixes the split.**",
+                    text: "**Three rule changes matter.** First, from 15 October 2026 merchants pay 0.4% on UPI payments above ₹2,000 (capped at ₹300); merchants taking up to ₹1 lakh a month, about 96% of merchant transactions, are exempt. Industry estimates put the pool at ₹5,000–30,000cr a year, split among banks, apps and acquirers in shares NPCI has not fixed. **Pine Labs**, whose UPI payments average over ₹1,400, is the obvious gainer; **AvenuesAI**, with 22% of its transactions on UPI, could gain too, while **MobiKwik**'s wallet-on-UPI payments still earn nothing because NPCI has not switched on a fee the RBI allowed two and a half years ago. Card-linked payments for rent and education are being paused across apps under new guardrails, which cut MobiKwik's payments revenue. Second, the social-security code makes delivery platforms pay 1–2% of turnover, capped at 5% of gig-worker pay; the rules came on 8 May 2026 but the rate and start date did not. JM Financial's worst case is ₹2–3 an order (about ₹26cr for Swiggy on FY26 volumes), probably passed on in fees; Karnataka's own 1% fee is already being paid into court. Third, FSSAI took penal action against Instamart, BigBasket and Zepto over misbranded food on 23 September. Two **cycles** are turning: ICRA expects commercial-vehicle sales to fall year on year in H2 FY27, and West Asia keeps TBO's best market flat. **My view: the UPI fee is the biggest positive policy change for this group in years, but nobody can size Pine Labs' share until NPCI fixes the split.**",
                 },
                 {
                     label: 'What these companies actually depend on',
-                    text: "**CarTrade** on OLX buyers accepting paid plans and on earning a fee per car sold (the Spinny deal); **BlackBuck** on toll growth outrunning a slowing truck cycle and on Superloads and lending paying off; **Matrimony.com** on billing growth returning to double digits through the Jodii rebrand; **Macfos** on India's electronics and drone makers and on turning stock into cash; **TBO** on Middle East travel recovering and Classic Vacations being integrated by end-2026; **Swiggy** on Instamart closing a ₹30-an-order gap to break-even against a much larger Blinkit; **Urban Company** on InstaHelp's losses shrinking while its core keeps growing; **Pine Labs** on its share of the new UPI fee and on margins recovering after Q1's upfront spending. **Buy each for what it actually depends on, not for the sector label.**",
+                    text: "**CarTrade** on OLX buyers accepting paid plans and on earning a fee per car sold (the Spinny deal); **BlackBuck** on toll growth outrunning a slowing truck cycle and on Superloads and lending paying off; **Matrimony.com** on billing growth returning to double digits through the Jodii rebrand; **Macfos** on India's electronics and drone makers and on turning stock into cash; **TBO** on Middle East travel recovering and Classic Vacations being integrated by end-2026; **Swiggy** on Instamart closing a ₹30-an-order gap to break-even against a much larger Blinkit; **Urban Company** on InstaHelp's losses shrinking while its core keeps growing; **Pine Labs** on its share of the new UPI fee and on margins recovering after Q1's upfront spending; **MobiKwik** on loan disbursals returning to ₹1,000cr a quarter and on regulators letting wallets charge on UPI; **AvenuesAI** on the UPI fee and new lending and AI income offsetting a halving take rate; **Aurum** on Housing.com's losses shrinking within the four to six quarters promised. **Buy each for what it actually depends on, not for the sector label.**",
                 },
             ],
             tables: [
@@ -296,9 +343,9 @@ export const platformCos: SectorOverview = {
                     caption: 'Profit pools, from filed figures',
                     columns: ['Position', 'Who', 'Operating margin (last five quarters)', 'Return on capital (FY26)', 'Five-year free cash ÷ revenue', 'Why'],
                     rows: [
-                        ['Listings and subscriptions', 'CarTrade, Matrimony.com', '10–37%', '12–17%', '**12–20%**', 'Free or paid-once traffic; no stock; customers pay up front'],
-                        ['Platforms for businesses', 'BlackBuck, Macfos, TBO Tek, Pine Labs', '7–28%', '4–34%', '**−15% to 10%**', 'Devices (BlackBuck, Pine Labs), stock (Macfos) and agent credit (TBO) tie up cash'],
-                        ['Delivery and home services', 'Swiggy, Urban Company', '−28% to −4%', '−24% to −8%', '**−27% to −17%**', 'Core services profitable; new bets (Instamart, InstaHelp) burn cash'],
+                        ['Listings and subscriptions', 'CarTrade, Matrimony.com, Aurum', '10–37%', '1–17%', '**−13% to 20%**', 'Free or paid-once traffic; no stock; customers pay up front. Aurum’s losses and co-living fit-outs pull the range down'],
+                        ['Platforms for businesses', 'BlackBuck, Macfos, TBO Tek, Pine Labs, AvenuesAI', '4–28%', '4–34%', '**−15% to 10%**', 'Devices (BlackBuck, Pine Labs), stock (Macfos) and agent credit (TBO) tie up cash; AvenuesAI’s margin is on gross revenue'],
+                        ['Consumer apps', 'Swiggy, Urban Company, MobiKwik', '−28% to 3%', '−24% to −2%', '**−27% to −12%**', 'Core services profitable; new bets (Instamart, InstaHelp, merchant payments) burn cash'],
                     ],
                 },
                 {
@@ -313,6 +360,8 @@ export const platformCos: SectorOverview = {
                         ['Highway tolls and freight', 'FASTag tolls ₹70,278cr in FY26 (+14.4%); e-way bills +7.7% (Aug 2026)', 'CV wholesales **+4–6% in FY27**, falling year on year in H2', 'Road ministry; ICRA, Sep 2026'],
                         ['Outbound travel', '9.77m departures in Jan–Mar 2026, above arrivals', 'No reliable forecast; the West Asia war is diverting trips', 'DGCA via TravTalk; HVS'],
                         ['Online matrimony', '₹1,200–1,400cr (2025); offline ₹4,500–5,000cr', '**10–12% a year**, to ₹2,300–2,500cr by 2030', 'Redseer'],
+                        ['Online property portals', 'Housing.com ~24% share, 58m visits a month; FY25 revenue ₹343cr against ₹531cr of costs', 'Leader 99acres entrenched; no forecaster found', 'Aurum Q1 FY27 call and presentation'],
+                        ['Online payment acquiring', 'AvenuesAI volume ₹1.48 lakh cr in Q1 FY27 (+74%); fee kept 5.3 bps, from 10.4', 'UPI fee pool up to **~₹22,000cr by FY28** (Bernstein); ₹16,000–17,000cr a year (Citi)', 'AvenuesAI Q1 FY27; The Tribune, Sep 2026'],
                         ['Gig-worker levy', '1–2% of turnover, capped at 5% of gig pay; rules notified 8 May 2026', 'Rate and start date not set; worst case ₹2–3 an order', 'Ministry of Labour; JM Financial'],
                     ],
                     note: 'Dollar figures are the forecasters’ own. Each forecaster measures differently, so compare each only with itself.',
@@ -340,6 +389,14 @@ export const platformCos: SectorOverview = {
                     text: "**Pine Labs**' CEO says replacing it at a bank or large retailer is ‘a 9-month effort’. It claims more than 60% of enterprise merchants, won all three oil companies' fuel pumps (about 1.3 lakh terminals by end-FY27) and wins 85–90% of new Indian gift-card programmes. But the fee it keeps per rupee keeps falling with mix, and one client taking bill payments in-house cut its digital-infrastructure payment value growth to 4% in Q1. **TBO** serves about 50,000 agents, and each year's new agents roughly double their business the next year. Its Europe hotel bookings rose 37% and Asia-Pacific 56% in Q1 while those markets barely grew, which is share gain; but it cut Middle East margins to hold volume, and organic hotel gross profit slipped from 5.5% to 5.2% of bookings. **My view: both have real switching costs; neither has much power over price.**",
                 },
                 {
+                    label: 'Scale without pricing power: wallets and gateways',
+                    text: "**MobiKwik** holds about 19% of India's wallet spending and 40 million fully verified wallets, and its UPI payments grew 130% in a year against 24% for the industry. But it ranks only 13th among UPI apps, and the fee it collects keeps falling: payments revenue fell from 54 to 35 paise per ₹100 of payments in a year, and it held its margin after costs at 13 paise only because it paid banks less. **AvenuesAI** has more than 10 million merchants and claims 8–10% of online payment acquiring. It builds payments into hotel-booking, school-fee and bill-payment software, which makes it harder to replace. Yet the fee it keeps per payment halved in a year, and management says winning a bigger share of merchants' volume 'comes at a cost'. **My view: both have scale; neither has pricing power, which is why the UPI fee matters so much to them.**",
+                },
+                {
+                    label: 'A moat still being assembled: property technology',
+                    text: "**Aurum PropTech** has one proven sticky product: Sell.do, sales software used by more than 1,000 property developers, whose licences grew 41% in a year with gross churn of only 7%. Its lead-generation arm sold 1,34,221 leads in Q1 (+77%) and PropTiger brokered ₹784cr of homes. Housing.com adds about 24% of property-portal traffic and 58 million monthly visits, but past owners put about ₹2,200cr into it and it still spends more than it earns, against an entrenched leader, 99acres. Only about 22% of Aurum's distribution clients use more than one of its products. **My view: the pieces could form a moat if they are joined up; today the only proven part is Sell.do.**",
+                },
+                {
                     label: 'Strong brands, weak lock-in: consumer apps',
                     text: "**Swiggy**'s one-month retention rose to 61% from 55%, and Instamart earns ₹108 per order against ₹83 five quarters ago from brand margins, ads and restored fees. But scale is moving the other way: Blinkit's order value grew 86% to ₹17,132cr in Q1 against Instamart's 38.9% to ₹5,817cr (3% on the quarter), Bernstein says Zepto overtook Instamart on users, orders and stores, and Instamart's 1,089 orders per store a day sit below Redseer's 1,200–1,400 break-even band. **Urban Company** is stronger: 83% of FY26 bookings came from returning customers, and core growth sped up from 10% to 29% within a year while marketing stayed flat at about ₹25cr a quarter. But in InstaHelp, where rivals also subsidise, its average order fell from ₹150 to ₹138. **My view: Urban Company's core has a moat; Instamart is a distant number two in a scale game.**",
                 },
@@ -349,7 +406,7 @@ export const platformCos: SectorOverview = {
                 },
                 {
                     label: 'Competitors outside the list',
-                    text: "**Eternal (Zomato and Blinkit)**, **Zepto**, **Flipkart Minutes** and **Amazon Now** (each with 1,000-plus or planned 1,000-plus dark stores) and **JioMart** against Swiggy; **CarDekho**, **Cars24** and **Spinny** (now also a partner) in cars; **Shaadi.com** and **Jeevansathi** in matchmaking; **PhonePe** and **Google Pay** (about 80% of UPI volume), **Paytm** and **Razorpay** in payments; **Hotelbeds** and **WebBeds** against TBO; **Delhivery** against BlackBuck; **Snabbit** and **Pronto** in house help; **Digi-Key** and local electronics markets against Macfos.",
+                    text: "**Eternal (Zomato and Blinkit)**, **Zepto**, **Flipkart Minutes** and **Amazon Now** (each with 1,000-plus or planned 1,000-plus dark stores) and **JioMart** against Swiggy; **CarDekho**, **Cars24** and **Spinny** (now also a partner) in cars; **Shaadi.com** and **Jeevansathi** in matchmaking; **PhonePe** and **Google Pay** (about 80% of UPI volume), **Paytm** and **Razorpay** in payments; **Hotelbeds** and **WebBeds** against TBO; **Delhivery** against BlackBuck; **Snabbit** and **Pronto** in house help; **Digi-Key** and local electronics markets against Macfos; **PhonePe**, **Google Pay**, **Paytm** and **Amazon Pay** against MobiKwik; **Razorpay**, **PayU** and **Cashfree** against AvenuesAI; **99acres**, **MagicBricks** and **NoBroker** against Aurum's Housing.com.",
                 },
             ],
         },
@@ -366,11 +423,11 @@ export const platformCos: SectorOverview = {
                 },
                 {
                     label: 'Rising, with caveats: business platforms',
-                    text: "**BlackBuck** earns 24–28% on filed figures, but its adjusted margin on net revenue fell to 33% from 36% and depreciation rose from ₹9cr to ₹23cr, so pre-tax profit fell 8%. **TBO** turned 27.5% of organic gross profit into adjusted operating profit, up from 23.5% in Q4, but Classic Vacations earns only about 2.5% of bookings over a year, and depreciation doubled to ₹33cr and interest reached ₹15cr. **Pine Labs** earned 13% filed and 17.1% adjusted in Q1; contribution was 72.3%, below its own 73–75% band, after front-loaded cloud, network and sales spending, and its tax rate was 46% because new overseas units lose money. Management says the FY27 adjusted margin will not fall below FY26's 21%. **My view: operating leverage is real at TBO and BlackBuck, but depreciation, interest and tax are eating the gains below the operating line.**",
+                    text: "**BlackBuck** earns 24–28% on filed figures, but its adjusted margin on net revenue fell to 33% from 36% and depreciation rose from ₹9cr to ₹23cr, so pre-tax profit fell 8%. **TBO** turned 27.5% of organic gross profit into adjusted operating profit, up from 23.5% in Q4, but Classic Vacations earns only about 2.5% of bookings over a year, and depreciation doubled to ₹33cr and interest reached ₹15cr. **Pine Labs** earned 13% filed and 17.1% adjusted in Q1; contribution was 72.3%, below its own 73–75% band, after front-loaded cloud, network and sales spending, and its tax rate was 46% because new overseas units lose money. Management says the FY27 adjusted margin will not fall below FY26's 21%. **AvenuesAI**'s operating profit rose 41% in Q1 while the revenue it keeps fell 3%: its margin on that net revenue jumped from 47% to 68% because costs fell, and management calls about 15% a floor, 'not a target', as it spends on AI. Other income was about a quarter of its FY26 pre-tax profit. **My view: operating leverage is real at TBO and BlackBuck, but depreciation, interest and tax are eating the gains below the operating line; AvenuesAI's jump is cost-cutting, not leverage.**",
                 },
                 {
                     label: 'Not yet structural: delivery and home services',
-                    text: "**Swiggy**'s food delivery earns 3.1% of order value against a 5% target. Instamart's contribution (profit per order before fixed costs) was −0.2% and its adjusted EBITDA −9.8% of order value; management says it breaks even at about ₹60,000cr of annualised order value (about two and a half times today's) and needs about ₹30 more per order: ₹10 from brand margins and mix, ₹10 from ads, ₹5 from denser stores and ₹5 from operating leverage. Nomura expects Instamart to lose ₹3,100cr in FY27 and ₹2,300cr in FY28. Nearly half of Swiggy's reported revenue (₹3,195cr of ₹6,812cr in Q1) is low-margin wholesale supply to Instamart sellers. **Urban Company**'s core margin of 6.9% is its seasonal high (3.3% in Q4) against a 9–10% target, and InstaHelp, losing ₹346 an order, needs an average order of about ₹300 against ₹138 today. **My view: food delivery and Urban Company's core are real businesses; Instamart and InstaHelp are still investments.**",
+                    text: "**Swiggy**'s food delivery earns 3.1% of order value against a 5% target. Instamart's contribution (profit per order before fixed costs) was −0.2% and its adjusted EBITDA −9.8% of order value; management says it breaks even at about ₹60,000cr of annualised order value (about two and a half times today's) and needs about ₹30 more per order: ₹10 from brand margins and mix, ₹10 from ads, ₹5 from denser stores and ₹5 from operating leverage. Nomura expects Instamart to lose ₹3,100cr in FY27 and ₹2,300cr in FY28. Nearly half of Swiggy's reported revenue (₹3,195cr of ₹6,812cr in Q1) is low-margin wholesale supply to Instamart sellers. **Urban Company**'s core margin of 6.9% is its seasonal high (3.3% in Q4) against a 9–10% target, and InstaHelp, losing ₹346 an order, needs an average order of about ₹300 against ₹138 today. **MobiKwik**'s operating margin was 3% in Q1 on Screener's figures (5.5% on its own measure, which includes interest income). Its lending kept 5.9% of disbursals, but 1.87 points of that were one-off recoveries on old loans, and management's long-run range is 4.5–5.5%. **Aurum**'s operating margin of 22–26% is before co-living lease rent; after rent its own adjusted margin was about 10% in Q1, and its continuing businesses earned 2.1% before tax. **My view: food delivery and Urban Company's core are real businesses; Instamart, InstaHelp, MobiKwik's thin profit and Aurum's core are not yet proven.**",
                 },
                 {
                     label: 'Working capital: the biggest drains',
@@ -378,15 +435,15 @@ export const platformCos: SectorOverview = {
                 },
                 {
                     label: 'Working capital: flattered or lumpy',
-                    text: "**Pine Labs**' FY26 operating cash of ₹395cr (71% of adjusted EBITDA) included about ₹202cr of early-settlement inflows in Q4, a form of bill discounting; debtor days rose to 140, working capital was 16% of revenue in Q1 against an aim of 15% or less, and its auditor found that debtor figures sent to banks (₹1,900cr for September 2025) differed from its books (₹1,770cr). **TBO**'s FY26 operating cash was −₹21cr, because it stopped discounting Brazilian receivables, supplier incentives built up and war-hit Eid collections slipped; cash then rose ₹392cr in Q1 and management promises cash conversion above 100% by FY27-end.",
+                    text: "**Pine Labs**' FY26 operating cash of ₹395cr (71% of adjusted EBITDA) included about ₹202cr of early-settlement inflows in Q4, a form of bill discounting; debtor days rose to 140, working capital was 16% of revenue in Q1 against an aim of 15% or less, and its auditor found that debtor figures sent to banks (₹1,900cr for September 2025) differed from its books (₹1,770cr). **TBO**'s FY26 operating cash was −₹21cr, because it stopped discounting Brazilian receivables, supplier incentives built up and war-hit Eid collections slipped; cash then rose ₹392cr in Q1 and management promises cash conversion above 100% by FY27-end. **MobiKwik**'s operating cash was negative in four of the last five years (−₹78cr in FY26); it uses ₹320cr of short-term bank lines to pay merchants over weekends and holidays, and the first-loss deposits it leaves with lenders grow as the loan book grows.",
                 },
                 {
                     label: 'Working capital: well run',
-                    text: "**Matrimony.com** is paid up front (working-capital days −47) and turned 147% of FY26 operating profit into operating cash. **CarTrade** converted 100% in FY26 with almost no capex. **BlackBuck** runs negative working capital (−22 days), collecting about half its tracking-device revenue a year in advance, and converted 101% in FY26. **Urban Company** is paid before it pays partners, so its cash cycle is −93 days.",
+                    text: "**Matrimony.com** is paid up front (working-capital days −47) and turned 147% of FY26 operating profit into operating cash. **CarTrade** converted 100% in FY26 with almost no capex. **BlackBuck** runs negative working capital (−22 days), collecting about half its tracking-device revenue a year in advance, and converted 101% in FY26. **Urban Company** is paid before it pays partners, so its cash cycle is −93 days. **Aurum**'s working capital is negative (−55 days in FY26), because tenants pay deposits and rent in advance.",
                 },
                 {
                     label: 'Working capital: built into the business',
-                    text: "TBO's bookings (₹11,154cr in Q1) are twelve times its revenue, and Pine Labs holds about ₹5,570cr of merchants' and card-holders' money in escrow, so ordinary working-capital ratios mean little for either; delivery apps and Urban Company collect before paying restaurants and partners, so their cycles are naturally negative. **Judge each against its own history, not against the others.**",
+                    text: "TBO's bookings (₹11,154cr in Q1) are twelve times its revenue, and Pine Labs holds about ₹5,570cr of merchants' and card-holders' money in escrow, so ordinary working-capital ratios mean little for either; AvenuesAI books its revenue gross and holds merchants' money in transit, so its debtor days (5) and yearly cash conversion swing with the year-end date; delivery apps and Urban Company collect before paying restaurants and partners, so their cycles are naturally negative. **Judge each against its own history, not against the others.**",
                 },
             ],
             tables: [
@@ -402,6 +459,9 @@ export const platformCos: SectorOverview = {
                         ['Swiggy', 'Cash ₹14,367cr (₹15,053cr in March); cash break-even targeted within two quarters', 'No debt instrument; ₹2,551cr Screener borrowings are mostly leases'],
                         ['Urban Company', 'Cash and treasury investments ₹2,019cr, flat on March; free cash −₹44cr', 'Leases ₹136cr only'],
                         ['Pine Labs', 'Working capital 16% of revenue against ≤15% aim; net cash ₹2,449cr at March (June investor day)', 'Plus ~₹5,570cr of client money in escrow, not the company’s'],
+                        ['One Mobikwik Systems', 'Net cash ₹437cr; long-term debt repaid; ₹320cr of short-term lines used for settlements', 'Borrowings ₹276cr (March); ₹182cr of IPO money unspent; FY26 operating cash −₹78cr'],
+                        ['Infibeam Avenues', 'No cash figure given; ₹700cr rights issue completed in FY26', 'Borrowings ₹430cr (March); a subsidiary guarantees ₹400cr of the parent’s bank debt; FY26 operating cash ₹537cr'],
+                        ['Aurum Proptech', '₹56cr of bank debt prepaid; promoter warrants of ₹118cr as a ‘war chest’ for Housing.com', 'Borrowings ₹225cr, mostly leases (March)'],
                     ],
                     note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s.',
                 },
@@ -410,16 +470,16 @@ export const platformCos: SectorOverview = {
         {
             heading: '6. Growth and capex (comparative)',
             body: [
-                "Where the next five years of growth come from, how each company has done against what it promised in May, and my own estimate of earnings growth. None of these businesses needs much capex; the spending that matters is on devices (BlackBuck, Pine Labs), dark stores (Swiggy), stock (Macfos) and acquisitions (TBO).",
+                "Where the next five years of growth come from, how each company has done against what it promised in May, and my own estimate of earnings growth. None of these businesses needs much capex; the spending that matters is on devices (BlackBuck, Pine Labs), dark stores (Swiggy), stock (Macfos) and acquisitions (TBO, Aurum).",
             ],
             points: [
                 {
-                    label: 'Growth driver: used cars and classifieds',
-                    text: "**CarTrade** wants to earn on transactions, not just listings. OLX's paid ‘Elite Buyer’ plan passed 1 lakh buyers in a month and heavy business buyers are being moved to paid plans; the Spinny deal (29 July 2026), large dealer groups and 550 abSure outlets aim to earn a fee per car sold without holding stock, and IDFC First Bank lends to its used-car buyers for a 2–3% fee. The used-car market grows only about 10% a year to 2030 (Indian Blue Book), so the rest must come from charging for more of it. The goal of about ₹1,000cr of profit in four to five years is four times FY26, or 33–42% a year (my calculation). **My view: credible, but Elite Buyer and Spinny revenue are undisclosed, so I cannot yet check it.**",
+                    label: 'Growth driver: used cars, classifieds and property',
+                    text: "**CarTrade** wants to earn on transactions, not just listings. OLX's paid ‘Elite Buyer’ plan passed 1 lakh buyers in a month and heavy business buyers are being moved to paid plans; the Spinny deal (29 July 2026), large dealer groups and 550 abSure outlets aim to earn a fee per car sold without holding stock, and IDFC First Bank lends to its used-car buyers for a 2–3% fee. The used-car market grows only about 10% a year to 2030 (Indian Blue Book), so the rest must come from charging for more of it. The goal of about ₹1,000cr of profit in four to five years is four times FY26, or 33–42% a year (my calculation). **My view: credible, but Elite Buyer and Spinny revenue are undisclosed, so I cannot yet check it.** **Aurum** is betting on Housing.com: management's internal target is breakeven in three to four quarters, stated publicly as four to six, and it says the deal gets it to ₹1,000cr of annual revenue 'a lot faster'. **My view on Aurum: revenue will roughly double on paper; the test is whether the losses shrink.**",
                 },
                 {
                     label: 'Growth driver: payments rails for trucks and shops',
-                    text: "**BlackBuck**'s ‘growth’ businesses (Superloads load-matching and vehicle finance) brought in ₹59cr in Q1, up 153%, against ₹145cr from payments and tracking, up 21%. Superloads runs in 14 cities; a hub matures at about 5,000 loads a month and the first is ‘more than halfway’. Vehicle finance manages about ₹600cr of loans, mostly on partners' books, and should be profitable by end-FY27. **Pine Labs** keeps its FY27 revenue guide of 21–23.5%, helped by 500 new salespeople and the fuel-pump contract; the UPI fee from October is upside outside the guide. **My view: both have visible growth; BlackBuck's depends on businesses it will not break out for three or four quarters.**",
+                    text: "**BlackBuck**'s ‘growth’ businesses (Superloads load-matching and vehicle finance) brought in ₹59cr in Q1, up 153%, against ₹145cr from payments and tracking, up 21%. Superloads runs in 14 cities; a hub matures at about 5,000 loads a month and the first is ‘more than halfway’. Vehicle finance manages about ₹600cr of loans, mostly on partners' books, and should be profitable by end-FY27. **Pine Labs** keeps its FY27 revenue guide of 21–23.5%, helped by 500 new salespeople and the fuel-pump contract; the UPI fee from October is upside outside the guide. **MobiKwik** expects loan disbursals back at ₹1,000cr a quarter from ₹737cr in Q1, merchant revenue up about 25% a quarter from a small base and consumer payments revenue up 5–6% a quarter. **AvenuesAI** guides gross revenue up 35–60% in FY27 and counts on merchant loans through minority stakes in two lenders (Ratnaafin Capital and Online PSB Loans), its new UAE licence and, later, AI products it says are '9–18 months away'. **My view: BlackBuck and Pine Labs have visible growth, though BlackBuck's depends on businesses it will not break out for three or four quarters; MobiKwik's and AvenuesAI's depend on regulators and new products.**",
                 },
                 {
                     label: 'Growth driver: new consumer services',
@@ -435,7 +495,7 @@ export const platformCos: SectorOverview = {
                 },
                 {
                     label: 'Cautious',
-                    text: "**BlackBuck** gives no numbers. It warned in May that the West Asia conflict and suspended fuel loyalty schemes would hurt, and they did: payments and tracking revenue rose only 1% on the quarter and toll value fell 1%. Its growth businesses beat the May tone (+44% on the quarter), but fuel has only partly recovered. **Macfos** held no Q1 call, so there is no updated guidance at all.",
+                    text: "**BlackBuck** gives no numbers. It warned in May that the West Asia conflict and suspended fuel loyalty schemes would hurt, and they did: payments and tracking revenue rose only 1% on the quarter and toll value fell 1%. Its growth businesses beat the May tone (+44% on the quarter), but fuel has only partly recovered. **Macfos** held no Q1 call, so there is no updated guidance at all. **AvenuesAI** said in May there would be no FY27 'hockey stick' and, in August, guided earnings per share at −7% to +1%; Q1 profit rose 45%, but only because costs fell.",
                 },
                 {
                     label: 'Missed',
@@ -443,11 +503,11 @@ export const platformCos: SectorOverview = {
                 },
                 {
                     label: 'Mixed',
-                    text: "**Swiggy** promised Instamart contribution break-even ‘latest by Q1 FY27’ for the full quarter; it got there in May but printed −0.2% for the quarter, a narrow miss. It also reversed two May promises within 90 days: ‘no contribution margin dilution’ became a 0 to −1% range, and ‘no necessity to add stores’ became about 75 new stores. Capex, meant to ‘meaningfully come down’, was ₹195cr against ₹188cr in Q4, and food grew 17.4% against an 18–20% guide.",
+                    text: "**Swiggy** promised Instamart contribution break-even ‘latest by Q1 FY27’ for the full quarter; it got there in May but printed −0.2% for the quarter, a narrow miss. It also reversed two May promises within 90 days: ‘no contribution margin dilution’ became a 0 to −1% range, and ‘no necessity to add stores’ became about 75 new stores. Capex, meant to ‘meaningfully come down’, was ₹195cr against ₹188cr in Q4, and food grew 17.4% against an 18–20% guide. **MobiKwik** hit its profit and payment-margin targets and beat on lending margin, but disbursals fell 12% on the quarter and its own lending company, due to start within 6–9 months of May, is now 'some time away'. **Aurum** met its promises to be free of bank debt and to make rentals profitable, but said in April it was 'not actively evaluating to buy anything' and agreed to buy Housing.com eleven weeks later.",
                 },
                 {
                     label: 'My outlook',
-                    text: "**I expect CarTrade to compound earnings at about 25%, BlackBuck at about 24%, TBO and Macfos at about 20% and Matrimony.com at about 10%.** These are lower than a quarter ago for BlackBuck (from 30%: pre-tax profit fell 8% and its tax credits will run out), Macfos (from 25%: growth slowed to 38% while cash stays negative) and Matrimony.com (from 12%: paid subscriptions falling, billing up only 7.8% and a forced rebrand). TBO's 25% organic operating-profit growth supports my 20%. Swiggy, Urban Company and Pine Labs make too little filed profit to estimate from.",
+                    text: "**I expect CarTrade to compound earnings at about 25%, BlackBuck at about 24%, TBO and Macfos at about 20%, Matrimony.com at about 10% and AvenuesAI at about 8%.** These are lower than a quarter ago for BlackBuck (from 30%: pre-tax profit fell 8% and its tax credits will run out), Macfos (from 25%: growth slowed to 38% while cash stays negative) and Matrimony.com (from 12%: paid subscriptions falling, billing up only 7.8% and a forced rebrand). TBO's 25% organic operating-profit growth supports my 20%. AvenuesAI's 8% assumes a flat FY27, as guided, then low-teens growth once the UPI fee arrives. Swiggy, Urban Company, Pine Labs, MobiKwik and Aurum make too little filed profit to estimate from.",
                 },
             ],
             tables: [
@@ -461,9 +521,12 @@ export const platformCos: SectorOverview = {
                         ['TBO Tek', 'Organic hotel growth; Classic Vacations; Middle East recovery', '12% / **20%** / 26%'],
                         ['Macfos', 'Parts demand; own products; stock turning to cash', '12% / **20%** / 26%'],
                         ['Matrimony.com', 'Billing growth; marketing held flat; Jodii rebrand', '4% / **10%** / 14%'],
+                        ['Infibeam Avenues', 'Payment volume; UPI fee; credit and AI income against a falling take rate', '0% / **8%** / 14%'],
                         ['Swiggy', 'Instamart scale; food margin to 5%', 'Loss-making; too early to estimate'],
                         ['Urban Company', 'InstaHelp losses; core margin to 9–10%', 'Loss-making; too early to estimate'],
                         ['Pine Labs', 'UPI fee; software; margin recovery', 'Profit too small to estimate from'],
+                        ['One Mobikwik Systems', 'Loan disbursals; merchant payments; a fee on wallet-to-UPI payments', 'Profit too small to estimate from'],
+                        ['Aurum Proptech', 'Core profit near zero; Housing.com losses of ~₹200cr a year to absorb', 'Not estimated'],
                     ],
                     note: 'My own judgement, not guidance. The growth each price needs is in the live valuation table in section 8.',
                 },
@@ -480,6 +543,9 @@ export const platformCos: SectorOverview = {
                         ['Swiggy', 'Cash break-even within two quarters; Instamart margin 0 to −1%; ~75 new stores', '₹195cr in Q1 (was to fall)', '**Reversed**: ‘no dilution, no new stores’ dropped; Instamart −0.2% against break-even'],
                         ['Urban Company', 'Adjusted break-even by Q3 FY28; ₹1,000cr adjusted EBITDA by FY31; core 9–10%', 'Small (₹14cr in Q1)', '**On track**: core margin 6.9%; InstaHelp loss up to ₹132cr, as warned'],
                         ['Pine Labs', 'Revenue +21–23.5% (kept); FY27 adjusted margin no lower than 21%', '₹180–190cr a year, mostly terminals', '**Missed**: +20%; adjusted EBITDA ₹126cr against ~₹140cr hoped'],
+                        ['One Mobikwik Systems', 'FY27 profit ₹40cr and EBITDA ₹75cr; disbursals ₹1,000cr a quarter; merchant breakeven in FY28', 'Small: devices from ₹25cr of IPO money left', '**Mixed**: profit and payment margin on target; disbursals −12% on the quarter; lending licence delayed'],
+                        ['Infibeam Avenues', 'FY27 gross revenue ₹11,000–13,000cr; EPS ₹8.75–9.50 against ₹9.42; ~15% margin floor', 'Modest; no large data centres; stakes in two lenders', '**Mixed**: profit +45% beat the cautious May tone, but EPS guided flat and net revenue −3%'],
+                        ['Aurum Proptech', 'Housing.com breakeven in 4–6 quarters; ₹1,000cr run-rate ‘a lot faster’', 'Tech; promoter warrants ₹118cr', '**Reversed**: bought Housing.com after ruling out M&A'],
                     ],
                 },
             ],
@@ -496,23 +562,23 @@ export const platformCos: SectorOverview = {
                 },
                 {
                     label: 'Legal and tax cases found in the annual reports',
-                    text: "**TBO**'s auditor highlights a FEMA case: the Enforcement Directorate alleges ₹49.4cr of foreign agents' payments were accepted in rupees from third parties, the company itself found ₹71.2cr of breaches, the RBI twice refused to approve them after the fact (April and September 2025), and the maximum penalty is three times the amount. The ruling is pending, and CARE lists an adverse outcome as a downgrade trigger. **Pine Labs** faces a ₹214cr GST demand over gift-card input credits, stayed by the Karnataka High Court, and estimates ₹138cr of possible interest across its tax cases. **Swiggy** has a ₹327cr GST notice (stayed) and a competition-commission investigation. **Urban Company**'s GST contingent liabilities doubled to ₹116cr, **BlackBuck** lost a ₹22.4cr GST appeal in August, and **Macfos** has a customs notice it does not quantify.",
+                    text: "**TBO**'s auditor highlights a FEMA case: the Enforcement Directorate alleges ₹49.4cr of foreign agents' payments were accepted in rupees from third parties, the company itself found ₹71.2cr of breaches, the RBI twice refused to approve them after the fact (April and September 2025), and the maximum penalty is three times the amount. The ruling is pending, and CARE lists an adverse outcome as a downgrade trigger. **Pine Labs** faces a ₹214cr GST demand over gift-card input credits, stayed by the Karnataka High Court, and estimates ₹138cr of possible interest across its tax cases. **Swiggy** has a ₹327cr GST notice (stayed) and a competition-commission investigation. **Urban Company**'s GST contingent liabilities doubled to ₹116cr, **BlackBuck** lost a ₹22.4cr GST appeal in August, and **Macfos** has a customs notice it does not quantify. **MobiKwik** lost ₹40.4cr in September 2025 to merchants and users who exploited a bug in its app; it recovered ₹27.6cr, wrote off ₹11.8cr, and also faces a ₹15.7cr service-tax demand including penalty. At **AvenuesAI**, a subsidiary has guaranteed ₹400cr of the parent's bank debt, and ₹1,612cr of goodwill from past deals sits on the books; the auditor tests it every year and has found no impairment.",
                 },
                 {
                     label: 'Governance and people',
-                    text: "**Matrimony.com** lost its CFO in August; the previous one left in February 2025 and the post stayed empty beyond SEBI's three-month limit, earning a qualified corporate-governance certificate. The managing director's shares are pledged, and a court forced it to drop the Jodii brand. **Swiggy**'s Instamart CEO resigned after the Q4 call; its auditor found no database-level audit trail for some revenue records and flagged a fraud report at subsidiary Swiggy Networks without details. **BlackBuck** lost its people, product and company-secretary heads within six months, and in FY25 booked a ₹390cr charge when share-conversion terms changed in favour of promoter directors. **CarTrade** has no promoter group, but its chairman is paid 175 times the median employee, his son is chief strategy officer and OLX chairman, and his daughter joined the board in 2025. **Pine Labs**' auditor found debtor figures given to banks that differed from its books.",
+                    text: "**Matrimony.com** lost its CFO in August; the previous one left in February 2025 and the post stayed empty beyond SEBI's three-month limit, earning a qualified corporate-governance certificate. The managing director's shares are pledged, and a court forced it to drop the Jodii brand. **Swiggy**'s Instamart CEO resigned after the Q4 call; its auditor found no database-level audit trail for some revenue records and flagged a fraud report at subsidiary Swiggy Networks without details. **BlackBuck** lost its people, product and company-secretary heads within six months, and in FY25 booked a ₹390cr charge when share-conversion terms changed in favour of promoter directors. **CarTrade** has no promoter group, but its chairman is paid 175 times the median employee, his son is chief strategy officer and OLX chairman, and his daughter joined the board in 2025. **Pine Labs**' auditor found debtor figures given to banks that differed from its books. **AvenuesAI** raised ₹700cr in a rights issue in FY26 and set ₹244cr of it aside for 'acquisitions of unidentified businesses'; on the May call a shareholder said its US associate XDuce, bought into for $10m, had made investments unrelated to the stated purpose, and management replied that it does not sit on XDuce's board. Within a year it also renamed itself, merged its AI subsidiary back and consolidated its shares. **Aurum** borrowed ₹16cr from its promoter company in FY26 (since repaid) and has ₹18.9cr invested in, and ₹7.2cr lent to, a related party. **MobiKwik**'s auditor could not check the edit logs of seven accounting software packages.",
                 },
                 {
                     label: 'Profits lifted by tax, treasury income and add-backs',
-                    text: "**BlackBuck**'s profit after tax rose 25% in Q1 while pre-tax profit fell 8%, because a deferred-tax asset of about ₹255cr from past losses shelters its tax; that ends once the losses are used. **CarTrade** earns about 30% of pre-tax profit from treasury income. **Matrimony.com**'s Q1 doubling is largely deferred revenue catching up. **Urban Company** still carries ₹151.5cr of deferred-tax assets after reversing ₹60cr in FY26, and more reversals follow if InstaHelp keeps it loss-making. **Pine Labs**' adjusted EBITDA runs about 55% above filed operating profit. **Use filed profit after tax as the common yardstick.**",
+                    text: "**BlackBuck**'s profit after tax rose 25% in Q1 while pre-tax profit fell 8%, because a deferred-tax asset of about ₹255cr from past losses shelters its tax; that ends once the losses are used. **CarTrade** earns about 30% of pre-tax profit from treasury income. **Matrimony.com**'s Q1 doubling is largely deferred revenue catching up. **Urban Company** still carries ₹151.5cr of deferred-tax assets after reversing ₹60cr in FY26, and more reversals follow if InstaHelp keeps it loss-making. **Pine Labs**' adjusted EBITDA runs about 55% above filed operating profit. **MobiKwik**'s Q1 profit of ₹7.6cr sat on about ₹14–16cr of recoveries on old loans, and it pays no tax because of ₹900–1,000cr of past losses. **Aurum**'s ₹45cr Q1 profit was a ₹52.4cr gain on selling two buildings, and other income was about a quarter of **AvenuesAI**'s FY26 pre-tax profit. **Use filed profit after tax as the common yardstick.**",
                 },
                 {
-                    label: 'Early investors selling',
-                    text: "Accel sold 1.48% of **BlackBuck** on 12 September, where promoters hold only 25%, and 1.3% of **Urban Company** in an August block deal alongside Vy Capital and Bessemer (SBI Mutual Fund bought 2.04%). A pre-IPO holder cut its **TBO** stake from 5.54% to 3.50% in July. Venture funds selling after a lock-up is normal, but it caps prices while it lasts, and Urban Company's promoters own only 19%.",
+                    label: 'Early investors selling, and new shares',
+                    text: "Accel sold 1.48% of **BlackBuck** on 12 September, where promoters hold only 25%, and 1.3% of **Urban Company** in an August block deal alongside Vy Capital and Bessemer (SBI Mutual Fund bought 2.04%). A pre-IPO holder cut its **TBO** stake from 5.54% to 3.50% in July. Venture funds selling after a lock-up is normal, but it caps prices while it lasts, and Urban Company's promoters own only 19%. New shares do the same: **Aurum** is issuing about 37% more to REA Group and its promoter for Housing.com, and **AvenuesAI** issued about 25% more in its rights issue.",
                 },
                 {
                     label: 'Cycles and policy',
-                    text: "ICRA expects commercial-vehicle sales to fall year on year in H2 FY27, which would slow **BlackBuck**'s customers and **CarTrade**'s auctions. The West Asia war left **TBO**'s Middle East hotels flat and its India hotels down 2%. The gig-worker levy's rate is still unset, and Karnataka's 1% fee is already being paid into court (**Swiggy**, **Urban Company**). NHAI has cut FASTag issuer fees before and could again (**BlackBuck**). The UPI fee's split among banks, apps and acquirers is undecided (**Pine Labs**).",
+                    text: "ICRA expects commercial-vehicle sales to fall year on year in H2 FY27, which would slow **BlackBuck**'s customers and **CarTrade**'s auctions. The West Asia war left **TBO**'s Middle East hotels flat and its India hotels down 2%. The gig-worker levy's rate is still unset, and Karnataka's 1% fee is already being paid into court (**Swiggy**, **Urban Company**). NHAI has cut FASTag issuer fees before and could again (**BlackBuck**). The UPI fee's split among banks, apps and acquirers is undecided (**Pine Labs**, **AvenuesAI**, **MobiKwik**). RBI and NPCI rules also decide **MobiKwik**'s paused card-linked payments and its first-loss lending model. Slower IT hiring in Pune and Bengaluru hurts **Aurum**'s co-living beds, and a housing slowdown would hurt its brokerage and lead sales.",
                 },
             ],
         },
@@ -520,12 +586,12 @@ export const platformCos: SectorOverview = {
             heading: '8. Valuation (comparative)',
             body: [
                 "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it gives credit for cash and charges for debt. Where the two disagree, the balance sheet is the reason.",
-                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **16% at 25x, 22–23% at 44x, 27% at 61–65x, 28% at 69x and 40% at 168x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E.",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **12% at 18x, 16% at 25x, 22–23% at 44x, 27% at 61–65x, 28% at 69x and 40% at 168x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E.",
             ],
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "Most of these companies hold large cash, so their businesses are cheaper than their P/Es suggest: CarTrade's ₹1,321cr is about 9% of its market value, Urban Company's ₹2,019cr about 8% and Swiggy's ₹14,367cr about 19%. **Pine Labs is the exception to trust least**: the net cash in the live table includes about ₹5,570cr of merchants' and card-holders' money held in escrow. The company's own net cash was ₹2,449cr at March 2026, so its real EV/EBITDA is higher than the table shows.",
+                    text: "Most of these companies hold large cash, so their businesses are cheaper than their P/Es suggest: CarTrade's ₹1,321cr is about 9% of its market value, Urban Company's ₹2,019cr about 8% and Swiggy's ₹14,367cr about 19%. **Pine Labs is the exception to trust least**: the net cash in the live table includes about ₹5,570cr of merchants' and card-holders' money held in escrow. The company's own net cash was ₹2,449cr at March 2026, so its real EV/EBITDA is higher than the table shows. **AvenuesAI**'s ₹1,312cr of net cash on Screener's count also includes money in transit to merchants, so treat its EV/EBITDA as flattering too; **Aurum**'s debt is mostly leases on co-living buildings.",
                 },
                 {
                     label: 'Fits: a price that asks for about what I expect',
@@ -533,7 +599,7 @@ export const platformCos: SectorOverview = {
                 },
                 {
                     label: 'Full',
-                    text: "**BlackBuck** needs about {need:BlackBuck|27}% a year against my ~24%, and **Macfos** about {need:Macfos|22–23}% against my ~20%: good businesses priced a little ahead of what the Q1 evidence supports. I would add to BlackBuck after a quarter of rising pre-tax profit, and to Macfos when operating cash turns positive. **Matrimony.com** needs about {need:Matrimony.com|16}% against my ~10%, at the edge of Stretched: the price already counts the FY27 profit rebound, and the 30% dividend and buybacks support it but do not close the gap.",
+                    text: "**BlackBuck** needs about {need:BlackBuck|27}% a year against my ~24%, and **Macfos** about {need:Macfos|22–23}% against my ~20%: good businesses priced a little ahead of what the Q1 evidence supports. I would add to BlackBuck after a quarter of rising pre-tax profit, and to Macfos when operating cash turns positive. **Matrimony.com** needs about {need:Matrimony.com|16}% against my ~10%, at the edge of Stretched: the price already counts the FY27 profit rebound, and the 30% dividend and buybacks support it but do not close the gap. **AvenuesAI** needs about {need:Infibeam Avenues|12}% a year against my ~8%: {label:Infibeam Avenues|full} on the arithmetic, and it looks cheap. But management's own guidance is for flat earnings per share this year and the revenue it keeps is shrinking, so I pass rather than follow.",
                 },
                 {
                     label: 'Stretched',
@@ -541,7 +607,7 @@ export const platformCos: SectorOverview = {
                 },
                 {
                     label: 'Not measurable on earnings',
-                    text: "**Swiggy** and **Urban Company** lose money, so they have no P/E. Swiggy's value of about {mcap:Swiggy|₹76,800cr} against ₹14,367cr of cash asks Instamart to grow its order value about two and a half times, toward the ₹60,000cr run-rate at which it breaks even; Urban Company's asks the core to compound at 25% or more while InstaHelp's losses shrink on schedule. **Pine Labs**' profit is so small that its price needs about {need:Pine Labs|40}% a year; the UPI fee is the one thing that could close that gap quickly.",
+                    text: "**Swiggy** and **Urban Company** lose money, so they have no P/E. Swiggy's value of about {mcap:Swiggy|₹76,800cr} against ₹14,367cr of cash asks Instamart to grow its order value about two and a half times, toward the ₹60,000cr run-rate at which it breaks even; Urban Company's asks the core to compound at 25% or more while InstaHelp's losses shrink on schedule. **Pine Labs**' profit is so small that its price needs about {need:Pine Labs|40}% a year; the UPI fee is the one thing that could close that gap quickly. **MobiKwik** lost money over the last four quarters, so it has no P/E either; its value of about {mcap:One Mobikwik Systems|₹1,571cr}, less ₹437cr of net cash, asks the ₹40cr FY27 profit target to be met without write-backs and then to grow fast. **Aurum**'s trailing profit is mostly the building gain, so its P/E means nothing and I set no growth estimate. The Housing.com deal values that business at about ₹458cr of new shares, about 1.5 times its revenue, for a portal that spent ₹531cr to earn ₹343cr in FY25. **My view on Aurum: a turnaround bet with heavy dilution, not a valuation case.**",
                 },
             ],
             embed: 'valuation',
@@ -597,19 +663,37 @@ export const platformCos: SectorOverview = {
             view: "**Big network, thin profit.** Revenue rose 20% and it leads in enterprise and fuel-pump payments, with the new UPI fee as upside. But adjusted EBITDA rose only 4%, missing the CEO's hope, FY26 cash flow leaned on bill discounting, a ₹214cr GST demand is stayed in court, and its own net cash is ₹2,449cr, not the larger figure that includes client money. Its profit is too small to value it on.",
             watch: 'Contribution margin back to 73–74% in H2; revenue inside the 21–23.5% guide; its share of the UPI fee.',
         },
+        {
+            company: 'One Mobikwik Systems', rank: 9, stance: 'TURNAROUND', segment: CONSUMER,
+            what: "India's largest mobile wallet by spending, plus a UPI app, bill payments and small personal loans made by partner lenders through its app; now adding card machines, soundboxes and an online payment gateway (Zaakpay) for merchants.",
+            view: "**Profitable at last, but only just.** It has made a profit for three quarters, direct costs fell 21% and payments gross profit rose 31% on flat revenue. But revenue has not grown for two years, Q1's ₹7.6cr profit rested on about ₹14–16cr of write-backs on old loans, disbursals fell 12% on the quarter, and a ₹40cr merchant fraud in 2025 exposed weak controls. Its value of about {mcap:One Mobikwik Systems|₹1,571cr} asks a lot of a ₹40cr FY27 profit target, so I wait.",
+            watch: 'Profit without loan write-backs; disbursals back at ₹1,000cr a quarter; the lending licence and any fee on wallet-to-UPI payments.',
+        },
+        {
+            company: 'Infibeam Avenues', rank: 10, stance: 'SCALEUP', segment: B2B,
+            what: "AvenuesAI (renamed from Infibeam Avenues): the CCAvenue online payment gateway and bill-payment platform for more than 10 million merchants in India and the Gulf, plus 82.66% of Rediff (email, business software and the RediffPay UPI app).",
+            view: "**Cheap-looking, standing still.** It is profitable, generates cash and holds net cash, and Q1 profit rose 45%. But payment volume rose 74% while the revenue it keeps fell 3%, the fee per payment halved, the profit rise came from cost cuts, and management guides FY27 earnings per share at −7% to +1% after a ₹700cr rights issue. The price needs about {need:Infibeam Avenues|12}% a year against my ~8%, so I pass.",
+            watch: 'Net revenue growing again; its share of the UPI fee from 15 October; how the rights-issue money set aside for unnamed acquisitions is spent.',
+        },
+        {
+            company: 'Aurum Proptech', rank: 11, stance: 'TURNAROUND', segment: LISTINGS,
+            what: "A Mumbai-based property-technology group: co-living and family rentals, developer CRM software (Sell.do), lead generation and PropTiger brokerage, and now buying Housing.com from REA Group for shares.",
+            view: "**A turnaround bet paid for with dilution.** Distribution businesses earn 22–25% and bank debt is gone. But continuing operations made ₹2.3cr before tax in Q1, the headline profit came from selling buildings, Housing.com lost about ₹200cr a year, the share count rises about 37%, and management ruled out acquisitions 11 weeks before agreeing this one. Next to CarTrade's profitable classifieds the call stays pass; there is no meaningful P/E to test.",
+            watch: 'Housing.com losses falling each quarter after closing; continuing pre-tax margin above 5%; no further share issues.',
+        },
     ],
 
     closing: {
         heading: '9. Summary review',
         body: [
-            "**Listings and subscriptions.** **Cartrade Tech: own**, the best combination of free traffic, rising margins and cash, though the cash needs a use. **Matrimony.com: follow** for its cash and buybacks, until billing growth returns to double digits and the Jodii rebrand and CFO vacancy settle.",
-            "**Platforms for businesses.** **BlackBuck: follow**, a strong payments habit, but pre-tax profit must grow again before the price fits. **Macfos: follow** until cash follows growth. **TBO Tek: wait** for the FEMA ruling and a price that fits its organic growth. **Pine Labs: wait** for profit, with the UPI fee as the upside surprise.",
-            "**Delivery and home services.** **Swiggy: wait** for cash break-even and proof that Instamart can hold share. **Urban Company: wait** for InstaHelp's losses to shrink.",
-            "**What would change my view.** For the better: NPCI giving acquirers a solid share of the UPI fee (Pine Labs); Swiggy reaching cash break-even on time; BlackBuck disclosing profitable Superloads hubs; CarTrade announcing a payout. For the worse: a new funding wave for quick-commerce rivals; a large FEMA penalty at TBO; Delhivery pricing aggressively against BlackBuck; the truck slowdown arriving harder than ICRA expects.",
-            "**What to watch next quarter.** CarTrade's margin and OLX paid plans; BlackBuck's pre-tax profit; Matrimony.com's billing; Macfos's operating cash; TBO's FEMA case; Swiggy's cash flow and Instamart growth; Urban Company's InstaHelp loss; Pine Labs' contribution margin.",
+            "**Listings and subscriptions.** **Cartrade Tech: own**, the best combination of free traffic, rising margins and cash, though the cash needs a use. **Matrimony.com: follow** for its cash and buybacks, until billing growth returns to double digits and the Jodii rebrand and CFO vacancy settle. **Aurum Proptech: pass**; Housing.com makes it a diluted turnaround, and it is no CarTrade.",
+            "**Platforms for businesses.** **BlackBuck: follow**, a strong payments habit, but pre-tax profit must grow again before the price fits. **Macfos: follow** until cash follows growth. **TBO Tek: wait** for the FEMA ruling and a price that fits its organic growth. **Pine Labs: wait** for profit, with the UPI fee as the upside surprise. **Infibeam Avenues (AvenuesAI): pass** while the revenue it keeps shrinks and earnings per share are guided flat.",
+            "**Consumer apps.** **Swiggy: wait** for cash break-even and proof that Instamart can hold share. **Urban Company: wait** for InstaHelp's losses to shrink. **One Mobikwik Systems: wait** for profit that does not depend on loan write-backs.",
+            "**What would change my view.** For the better: NPCI giving acquirers a solid share of the UPI fee (Pine Labs); Swiggy reaching cash break-even on time; BlackBuck disclosing profitable Superloads hubs; CarTrade announcing a payout; AvenuesAI's net revenue growing again. For the worse: a new funding wave for quick-commerce rivals; a large FEMA penalty at TBO; Delhivery pricing aggressively against BlackBuck; the truck slowdown arriving harder than ICRA expects; Housing.com's losses not shrinking at Aurum; another regulatory pause at MobiKwik.",
+            "**What to watch next quarter.** CarTrade's margin and OLX paid plans; BlackBuck's pre-tax profit; Matrimony.com's billing; Macfos's operating cash; TBO's FEMA case; Swiggy's cash flow and Instamart growth; Urban Company's InstaHelp loss; Pine Labs' contribution margin; MobiKwik's disbursals and write-backs; AvenuesAI's net revenue; Aurum's Housing.com closing and losses.",
         ],
         bottomLine:
-            "Own the profitable leader with free traffic and rising margins (Cartrade Tech), follow the good businesses priced a little ahead of the evidence (BlackBuck, Matrimony.com, Macfos), and wait on the rest until profits, cash and legal cases resolve (TBO Tek, Swiggy, Urban Company, Pine Labs).",
+            "Own the profitable leader with free traffic and rising margins (Cartrade Tech), follow the good businesses priced a little ahead of the evidence (BlackBuck, Matrimony.com, Macfos), wait on the rest until profits, cash and legal cases resolve (TBO Tek, Swiggy, Urban Company, Pine Labs, One Mobikwik Systems), and pass on the payment gateway whose earnings are guided flat (Infibeam Avenues, now AvenuesAI) and the diluted property turnaround (Aurum Proptech).",
     },
 
     sources: [
@@ -645,6 +729,16 @@ export const platformCos: SectorOverview = {
         { label: 'Matrimony.com Q1 FY27 presentation — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a161d2e9-00c4-4388-9770-040cb9d4dd78.pdf' },
         { label: 'Matrimony.com Jodii trademark case: SLP withdrawn, Sep 2026 — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=fa60e031-6b4a-4c5f-9241-eae55d0e6dbc.pdf' },
         { label: 'Matrimony.com Annual Report FY26 (governance certificate) — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/3bd7a67c-6f53-480e-96d8-17214d0bec9b.pdf' },
+        { label: 'MobiKwik Q1 FY27 investor presentation — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=555a50b8-f297-43db-83db-27bed8854b9b.pdf' },
+        { label: 'MobiKwik Annual Report FY26 (merchant fraud, audit trail) — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/99bf3713-30bd-4bd4-8af8-afd54867edf5.pdf' },
+        { label: 'AvenuesAI Q1 FY27 investor presentation — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ffb89b86-9735-4107-a7fd-58b94dc673df.pdf' },
+        { label: 'AvenuesAI Q1 FY27 earnings call transcript — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=9c6ec63e-11f0-4cb8-9e75-da789b6a4a3c.pdf' },
+        { label: 'AvenuesAI Annual Report FY26 (rights issue, guarantee, goodwill) — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=72205995-2d4c-44ca-ae95-1bf2f78a45de.pdf' },
+        { label: 'AvenuesAI’s RediffPay and the UPI fee — Medianama, Aug 2026', url: 'https://www.medianama.com/2026/08/223-avenuesai-rediffpay-mdr-rules/' },
+        { label: 'Rediff.com’s IPO plans and the new UPI fee regime — The Tribune, Sep 2026', url: 'https://www.tribuneindia.com/news/fintech/rediff-coms-ipo-plans-may-get-a-fresh-upi-tailwind-as-new-mdr-regime-kicks-in' },
+        { label: 'Aurum PropTech Q1 FY27 investor presentation', url: 'https://strapi.aurumproptech.in/uploads/APT_Investor_Presentation_Q1_FY_27_vf_497b6daea6.pdf' },
+        { label: 'Aurum PropTech Annual Report FY26 (related parties) — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/234d3abe-49ef-40d4-8eb8-7971c2ccb58b.pdf' },
+        { label: 'Aurum PropTech: Housing.com share swap and promoter warrants — BSE, Sep 2026', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ff01fd12-bafd-4f51-bd20-281e9100f126.pdf' },
         { label: 'Company earnings calls and presentations, Q4 FY26 and Q1 FY27', url: 'https://www.bseindia.com/' },
     ],
 };

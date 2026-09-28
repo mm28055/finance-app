@@ -23,7 +23,6 @@ export const softwareProducts: SectorOverview = {
         writtenOn: '27 Sep 2026',
         inputs: softwareValuationInputs,
         // My base-case earnings growth, % a year over three to five years (section 6).
-        // Aurum has almost no core profit, so no estimate is set and the price check is left blank.
         myGrowth: {
             'Newgen Software': 12,
             'Intellect Design Arena': 14,
@@ -38,13 +37,12 @@ export const softwareProducts: SectorOverview = {
             'Amagi Media Labs': 28,
             'CE Info Systems': 12,
             'Network People Services': 20,
-            'Aurum Proptech': null,
             'TAC Security (Tac Infosec)': 22,
             'IZMO': 12,
         },
     },
     standfirst:
-        "Sixteen companies that own the software they sell and charge for it by licence, subscription or transaction, rather than billing for people's hours. This is one of five groups on the Software page; the others cover IT services and data analytics, engineering R&D services, business-process and healthcare operations, and messaging, adtech and AI infrastructure. Six sell to banks and payment networks: **Newgen**, **Intellect Design Arena**, **Nucleus**, **Aurionpro**, **Network People Services (NPST)** and **Zaggle**. Five are subscription platforms for particular industries: **Amagi** (TV and streaming), **RateGain** (travel), **Capillary** (loyalty programmes), **Unicommerce** (e-commerce warehouses) and **CE Info Systems** (MapmyIndia maps). Three run government rails or digital trust: **Protean** (PAN cards and pensions), **eMudhra** (digital certificates) and **TAC Security** (vulnerability scanning). Two are small platforms with big plans: **Aurum PropTech** (property technology, now buying Housing.com) and **IZMO** (car-dealer software and chip packaging). This edition was built from both earnings calls for every company, the FY26 annual reports, the latest investor presentations, rating rationales from CRISIL, ICRA and CARE, and sector work from NASSCOM, Gartner, ISG and Kotak Institutional Equities. The headline: these are the better businesses in Indian software, with high gross margins and little debt, but the numbers need translating, because many headline profits add back real costs, count interest on cash, or put development spending on the balance sheet. The annual reports turned up a lot: an auditor who could not vouch for about 81% of IZMO's revenue, company loans to TAC's chief executive that broke company law, ₹33.4cr wired to fraudsters from a Capillary subsidiary seven weeks after it was bought, eMudhra's chairman holding shares in the company that is suing eMudhra, and receivables at Newgen above its rating agency's downgrade trigger. Every chart uses filed results.",
+        "Fifteen companies that own the software they sell and charge for it by licence, subscription or transaction, rather than billing for people's hours. This is one of five groups on the Software page; the others cover IT services and data analytics, engineering R&D services, business-process and healthcare operations, and messaging, adtech and AI infrastructure. Six sell to banks and payment networks: **Newgen**, **Intellect Design Arena**, **Nucleus**, **Aurionpro**, **Network People Services (NPST)** and **Zaggle**. Five are subscription platforms for particular industries: **Amagi** (TV and streaming), **RateGain** (travel), **Capillary** (loyalty programmes), **Unicommerce** (e-commerce warehouses) and **CE Info Systems** (MapmyIndia maps). Three run government rails or digital trust: **Protean** (PAN cards and pensions), **eMudhra** (digital certificates) and **TAC Security** (vulnerability scanning). One is a small platform with big plans: **IZMO** (car-dealer software and chip packaging). This edition was built from both earnings calls for every company, the FY26 annual reports, the latest investor presentations, rating rationales from CRISIL, ICRA and CARE, and sector work from NASSCOM, Gartner, ISG and Kotak Institutional Equities. The headline: these are the better businesses in Indian software, with high gross margins and little debt, but the numbers need translating, because many headline profits add back real costs, count interest on cash, or put development spending on the balance sheet. The annual reports turned up a lot: an auditor who could not vouch for about 81% of IZMO's revenue, company loans to TAC's chief executive that broke company law, ₹33.4cr wired to fraudsters from a Capillary subsidiary seven weeks after it was bought, eMudhra's chairman holding shares in the company that is suing eMudhra, and receivables at Newgen above its rating agency's downgrade trigger. Every chart uses filed results.",
     lastUpdated: '2026-09-27',
     asOfQuarter: 'Q1 FY27',
 
@@ -70,7 +68,6 @@ export const softwareProducts: SectorOverview = {
                 'Protean eGov': [8, 12, 14, 12, 5],
                 'Zaggle Prepaid': [9, 10, 10, 9, 7],
                 'Nucleus Software': [16, 11, 15, 16, 4],
-                'Aurum Proptech': [17, 26, 24, 23, 26],
                 'IZMO': [18, 23, 24, 14, 25],
                 'TAC Security (Tac Infosec)': [47, null, null, 45, 48],
                 'Unicomm. eSolutions': [19, 18, 19, 13, 11],
@@ -85,7 +82,6 @@ export const softwareProducts: SectorOverview = {
                 "Network People Services": "Company EBITDA includes other income: 30.6% in Q1 FY27 against 25% filed.",
                 "Capillary Technologies": "Company-adjusted EBITDA (before stock-option cost) was 17.2% in Q1 FY27.",
                 "Unicomm. eSolutions": "Company-adjusted EBITDA was 15.8% in Q1 FY27; the Uniware core earned 35.3% while spending on Shipway pulled the group down.",
-                "Aurum Proptech": "Before rent: co-living leases are booked as depreciation and interest. Company-adjusted EBITDA was about 10% in Q1 FY27.",
                 "Zaggle Prepaid": "From Q1 FY27 more development cost is expensed rather than capitalised, which lowers the margin.",
                 "IZMO": "Q4 FY26 includes a one-off pass-through project that nearly doubled revenue at a thin margin.",
                 "TAC Security (Tac Infosec)": "Filed half-yearly until FY26, so the Sep-25 and Dec-25 quarters are blank.",
@@ -98,7 +94,7 @@ export const softwareProducts: SectorOverview = {
             periods: Q,
             scale: 'diverging',
             source: 'Filed quarterly revenue, each quarter against the same quarter a year earlier. Consolidated unless noted as standalone.',
-            note: "Acquisitions drive several headline figures: RateGain (Sojern, from November 2025), Capillary (Kognitiv and SessionM), eMudhra (Cryptas, from July 2025), Zaggle (GreenEdge) and Aurum (PropTiger). The rupee, about 11% weaker than a year ago, adds several points for exporters. Amagi, Capillary and TAC listed recently, so early comparisons are missing.",
+            note: "Acquisitions drive several headline figures: RateGain (Sojern, from November 2025), Capillary (Kognitiv and SessionM), eMudhra (Cryptas, from July 2025) and Zaggle (GreenEdge). The rupee, about 11% weaker than a year ago, adds several points for exporters. Amagi, Capillary and TAC listed recently, so early comparisons are missing.",
             values: {
                 'Amagi Media Labs': [null, null, 22, 28, 32],
                 'RateGain Travel Tech': [5, 6, 94, 174, 188],
@@ -112,7 +108,6 @@ export const softwareProducts: SectorOverview = {
                 'Protean eGov': [7, 14, 13, 38, 19],
                 'Zaggle Prepaid': [32, 43, 56, 50, 27],
                 'Nucleus Software': [12, 6, 7, -2, -4],
-                'Aurum Proptech': [0, 28, 72, 82, 72],
                 'IZMO': [19, 2, 0, 82, 14],
                 'TAC Security (Tac Infosec)': [null, null, null, null, 103],
                 'Unicomm. eSolutions': [64, 75, 72, 14, 14],
@@ -136,7 +131,7 @@ export const softwareProducts: SectorOverview = {
             scale: 'diverging',
             legend: ['Losing money', 'Making money'],
             source: 'Filed annual ratios (Screener): return on capital employed. Consolidated unless noted as standalone.',
-            note: "Software needs little capital, so a return below 15% here usually means one of three things: goodwill from acquisitions (RateGain, Capillary, Unicommerce), idle cash from share issues or years of profits (Amagi, Capillary, Nucleus, Protean, Zaggle, NPST), or a history of losses (Amagi, Aurum).",
+            note: "Software needs little capital, so a return below 15% here usually means one of three things: goodwill from acquisitions (RateGain, Capillary, Unicommerce), idle cash from share issues or years of profits (Amagi, Capillary, Nucleus, Protean, Zaggle, NPST), or a history of losses (Amagi).",
             values: {
                 'Amagi Media Labs': [-568, -68, -40, -9, 8],
                 'RateGain Travel Tech': [3, 10, 17, 17, 14],
@@ -150,7 +145,6 @@ export const softwareProducts: SectorOverview = {
                 'Protean eGov': [19, 17, 14, 12, 13],
                 'Zaggle Prepaid': [null, null, 17, 13, 14],
                 'Nucleus Software': [6, 27, 32, 23, 17],
-                'Aurum Proptech': [-11, -16, -12, -4, 1],
                 'IZMO': [7, 8, 10, 8, 13],
                 'TAC Security (Tac Infosec)': [null, null, null, 44, 38],
                 'Unicomm. eSolutions': [null, null, null, 31, 21],
@@ -187,7 +181,6 @@ export const softwareProducts: SectorOverview = {
                 'Protean eGov': [106, 103, 78, 63, 75],
                 'Zaggle Prepaid': [null, 68, 82, 60, 69],
                 'Nucleus Software': [61, 100, 73, 60, 50],
-                'Aurum Proptech': [180, 53, 40, 42, 50],
                 'IZMO': [101, 69, 110, 161, 165],
                 'TAC Security (Tac Infosec)': [null, null, 356, 119, 145],
                 'Unicomm. eSolutions': [null, null, 47, 37, 20],
@@ -224,7 +217,6 @@ export const softwareProducts: SectorOverview = {
                 'Protean eGov': [9, -7, 65, 241, 67, 63],
                 'Zaggle Prepaid': [null, -33, -117, 18, -28, -31],
                 'Nucleus Software': [157, 32, 101, 90, 93, 84],
-                'Aurum Proptech': [null, null, 667, 70, 75, 40],
                 'IZMO': [67, 100, 76, 10, 38, 54],
                 'TAC Security (Tac Infosec)': [null, null, -29, 127, 39, 55],
                 'Unicomm. eSolutions': [null, null, 43, 104, 131, 105],
@@ -259,7 +251,6 @@ export const softwareProducts: SectorOverview = {
                 'Protean eGov': [0.7, -2.2, 2.9, 17.2, 1.1, 4.1],
                 'Zaggle Prepaid': [null, -5.8, -16.6, -3.6, -8.3, -8.1],
                 'Nucleus Software': [6.8, 7.3, 23.4, 16.3, 10.2, 13.6],
-                'Aurum Proptech': [-206.2, -55.1, -39.3, 4.3, 12.3, -13.0],
                 'IZMO': [-6.6, 0.0, 0.9, -13.1, -2.9, -4.5],
                 'TAC Security (Tac Infosec)': [null, null, -18.1, 61.1, 10.2, 22.2],
                 'Unicomm. eSolutions': [null, null, 5.7, 15.9, 22.0, 16.3],
@@ -270,7 +261,6 @@ export const softwareProducts: SectorOverview = {
                 "Aurionpro Solutions": "FY26 was −₹114cr as capitalised development and receivables rose.",
                 "Network People Services": "FY26 was −₹93cr: products capitalised and receivables tripled.",
                 "eMudhra": "FY26 capital spending on products and data centres exceeded operating cash.",
-                "Aurum Proptech": "Losses and fit-outs in FY22–FY24; positive since FY25.",
             },
         },
         {
@@ -282,7 +272,7 @@ export const softwareProducts: SectorOverview = {
             invert: true,
             legend: ['More debt', 'Net cash'],
             source: 'Filed balance sheets and P&L (Screener): borrowings minus cash and treasury investments, ÷ operating profit. Consolidated unless noted as standalone.',
-            note: "Almost every company here holds more cash than debt (bars to the right). The exceptions are RateGain, which borrowed US$125M to buy Sojern and had repaid 38% by June 2026, and Aurum, whose borrowings are mostly lease liabilities on rented co-living buildings. Several net-cash balances are large next to operating profit, and the interest they earn is a big part of reported profit.",
+            note: "Almost every company here holds more cash than debt (bars to the right). The exception is RateGain, which borrowed US$125M to buy Sojern and had repaid 38% by June 2026. Several net-cash balances are large next to operating profit, and the interest they earn is a big part of reported profit.",
             values: {
                 'Amagi Media Labs': [null, null, null, null, -27.8],
                 'RateGain Travel Tech': [-12.2, -3.7, -2.9, -2.8, 2.2],
@@ -296,7 +286,6 @@ export const softwareProducts: SectorOverview = {
                 'Protean eGov': [-4.7, -5.6, -7.6, -9.1, -6.4],
                 'Zaggle Prepaid': [null, 2.4, -3.1, -5.8, -2.8],
                 'Nucleus Software': [-14.4, -3.6, -3.3, -4.5, -6.0],
-                'Aurum Proptech': [null, null, 91.7, 3.4, 0.8],
                 'IZMO': [-0.1, -0.0, -0.2, -0.3, 0.1],
                 'TAC Security (Tac Infosec)': [null, null, 0.2, -2.1, -1.0],
                 'Unicomm. eSolutions': [null, null, 0.1, 0.0, -0.8],
@@ -304,7 +293,6 @@ export const softwareProducts: SectorOverview = {
             cellNotes: {
                 "RateGain Travel Tech": "Company net debt was ₹615cr at 30 June 2026, down from ₹722cr in March.",
                 "Amagi Media Labs": "₹1,416cr of net cash, mostly from the January 2026 IPO, against a small FY26 operating profit.",
-                "Aurum Proptech": "Mostly lease liabilities; ₹56cr of bank debt was prepaid in May–June 2026.",
                 "Nucleus Software": "Cash and investments of ₹978cr at June 2026, about 55% of market value.",
                 "eMudhra": "The cash cushion is thin next to the Cryptas earn-out and put-option liability.",
                 "Protean eGov": "Screener counts ₹87cr of borrowings, probably lease liabilities; the company says it has no debt.",
@@ -318,7 +306,7 @@ export const softwareProducts: SectorOverview = {
             periods: [...FY, '5 yrs'],
             scale: 'sequential',
             source: 'Filed cash-flow statements (Screener): spending on fixed assets as a share of revenue. Consolidated unless noted as standalone.',
-            note: "For software, most capital spending is development cost put on the balance sheet. The high figures: eMudhra (products and data centres in four regions), NPST (payment products), IZMO (software and image content), Aurionpro (AI-native product versions) and Intellect (about ₹160cr of R&D a year). Aurum’s early years were co-living fit-outs; CE Info’s include vehicle trackers rented to customers.",
+            note: "For software, most capital spending is development cost put on the balance sheet. The high figures: eMudhra (products and data centres in four regions), NPST (payment products), IZMO (software and image content), Aurionpro (AI-native product versions) and Intellect (about ₹160cr of R&D a year). CE Info’s include vehicle trackers rented to customers.",
             values: {
                 'Amagi Media Labs': [1.2, 3.1, 0.9, 0.3, 1.5, 1.3],
                 'RateGain Travel Tech': [1.1, 0.7, 0.4, 0.6, 0.2, 0.5],
@@ -332,7 +320,6 @@ export const softwareProducts: SectorOverview = {
                 'Protean eGov': [0.9, 1.1, 3.6, 5.7, 6.7, 3.9],
                 'Zaggle Prepaid': [null, 2.9, 5.9, 5.1, 5.6, 5.2],
                 'Nucleus Software': [4.8, 0.6, 3.5, 1.8, 3.2, 2.7],
-                'Aurum Proptech': [56.2, 15.7, 48.6, 6.7, 4.2, 16.8],
                 'IZMO': [18.7, 19.4, 15.7, 14.8, 9.9, 14.8],
                 'TAC Security (Tac Infosec)': [null, null, 1.4, 2.3, 10.9, 7.1],
                 'Unicomm. eSolutions': [null, null, 0.1, 4.9, 1.0, 2.0],
@@ -381,8 +368,6 @@ export const softwareProducts: SectorOverview = {
                 grades: { recurring: { grade: 'C', note: 'No ARR or churn disclosed' }, switching: { grade: 'B', note: 'Built into carmakers’ dashboards and apps' }, scale: { grade: 'A', note: '30 years of Indian map data' }, cash: { grade: 'C', note: 'Operating cash 0.7x profit; debtors 136 days' }, governance: { grade: 'B', note: 'First government write-off; family-run' } } },
             { company: 'Network People Services', trend: 'narrowing', trendNote: 'Growth guide trimmed to 60–70%, margin target cut to ~30%, receivables tripled.',
                 grades: { recurring: { grade: 'C', note: 'Mostly licence and project work now' }, switching: { grade: 'B', note: 'UPI switches inside banks' }, scale: { grade: 'C', note: 'Merchant pricing collapsed to ~3 paise' }, cash: { grade: 'D', note: 'Operating cash −₹45cr in FY26' }, governance: { grade: 'C', note: 'Exchange fines; fund-use deviation flagged' } } },
-            { company: 'Aurum Proptech', trend: 'narrowing', trendNote: 'Continuing pre-tax profit ₹2.3cr in Q1; Housing.com brings about ₹200cr of yearly losses.',
-                grades: { recurring: { grade: 'B', note: 'Rentals and Sell.do CRM licences' }, switching: { grade: 'C', note: 'Sell.do churn 7%; brokerage not sticky' }, scale: { grade: 'C', note: 'Housing.com ~24% share, loss-making' }, cash: { grade: 'C', note: 'Positive only since FY25' }, governance: { grade: 'D', note: 'Related-party loans; ~37% dilution' } } },
             { company: 'TAC Security (Tac Infosec)', trend: 'stable', trendNote: 'Revenue +103% in Q1 at a 48% margin, but operating cash less than half of profit.',
                 grades: { recurring: { grade: 'C', note: 'Billed as assessments fall due' }, switching: { grade: 'D', note: 'Average ticket about ₹1 lakh a quarter' }, scale: { grade: 'C', note: '10,000+ clients (company claim)' }, cash: { grade: 'D', note: 'Debtor days 145' }, governance: { grade: 'D', note: 'Loans to CEO broke company law' } } },
             { company: 'IZMO', trend: 'stable', trendNote: 'Q1 revenue +15.7%; chip packaging ₹9.2cr a quarter against a ₹45–50cr year target; raise not done.',
@@ -394,25 +379,25 @@ export const softwareProducts: SectorOverview = {
         {
             heading: '1. Recommendation, up front',
             body: [
-                "**Own Newgen Software. Follow Intellect Design Arena, RateGain and Capillary. Wait on Aurionpro, Unicommerce, Protean, Zaggle, Nucleus and eMudhra. Pass on Amagi, CE Info Systems, NPST and Aurum. Avoid TAC Security and IZMO.** **Newgen** is the one company in this group I would buy today. It sells document, workflow and loan-origination software to banks, insurers and governments in about 79 countries, and 71% of its Q1 FY27 revenue was annuity (subscriptions, SaaS, annual maintenance and support), up from 56% of the year's revenue in FY25. SaaS revenue grew 40% in Q1 and the US 27%. Its filed return on capital has been 24–28% in each of the last five years, free cash flow has averaged about 15% of revenue, and ₹1,076cr of net cash is about a sixth of its market value. The price needs about {need:Newgen Software|13}% a year of earnings growth and I expect about 12%, close enough to count as a fit. The risks are real: debtor days of 145 in Q1 are above CRISIL's 140-day downgrade trigger, the chief executive resigned in June, and CRISIL itself projects FY27 revenue of only ₹1,600–1,700cr. That is why I would start small and add on proof that receivables fall.",
+                "**Own Newgen Software. Follow Intellect Design Arena, RateGain and Capillary. Wait on Aurionpro, Unicommerce, Protean, Zaggle, Nucleus and eMudhra. Pass on Amagi, CE Info Systems and NPST. Avoid TAC Security and IZMO.** **Newgen** is the one company in this group I would buy today. It sells document, workflow and loan-origination software to banks, insurers and governments in about 79 countries, and 71% of its Q1 FY27 revenue was annuity (subscriptions, SaaS, annual maintenance and support), up from 56% of the year's revenue in FY25. SaaS revenue grew 40% in Q1 and the US 27%. Its filed return on capital has been 24–28% in each of the last five years, free cash flow has averaged about 15% of revenue, and ₹1,076cr of net cash is about a sixth of its market value. The price needs about {need:Newgen Software|13}% a year of earnings growth and I expect about 12%, close enough to count as a fit. The risks are real: debtor days of 145 in Q1 are above CRISIL's 140-day downgrade trigger, the chief executive resigned in June, and CRISIL itself projects FY27 revenue of only ₹1,600–1,700cr. That is why I would start small and add on proof that receivables fall.",
                 "**Follow Intellect, RateGain and Capillary: good businesses, with one thing each still to prove.** **Intellect** sells core, transaction and wealth banking software to 500+ institutions; licence-linked revenue grew 34% in FY26, platform revenue more than doubled, CRISIL moved its outlook to Positive, and it holds about ₹967cr of net cash. But its profit was ₹350cr in FY22 and ₹343cr in FY26, because a bigger cost base has swallowed the growth. The price needs about {need:Intellect Design Arena|15}% a year against my 14%; I would buy after two quarters of company-reported total income above ₹900cr with the margin back at 24%. **RateGain** has folded in Sojern, its US$250M travel-marketing purchase, faster than planned: organic growth was 17.5% in Q1 (company), it raised its company-adjusted margin guidance by a point, and it has repaid 38% of the acquisition loan. But the adjusted figures leave out ₹80–90cr a year of payouts to the Sojern team, and goodwill is about three-quarters of net worth; the price needs about {need:RateGain Travel Tech|20}% a year against my 17%. **Capillary**, a loyalty-software leader, now has ₹1,026.6cr of annual recurring revenue and a company-adjusted margin of 17.2%, up from 10.5%. But it filed a Q1 loss of ₹9.6cr after an employee at a subsidiary bought seven weeks earlier wired ₹33.4cr to fraudsters; the price needs about {need:Capillary Technologies|32}% a year against my 28%.",
                 "**Wait on six.** **Aurionpro** is cheap enough (it needs about {need:Aurionpro Solutions|12}% a year against my 10%) and its order book reached ₹1,950cr+, but revenue has been flat for five quarters, the margin has slipped from 20% to 17% and free cash was −₹114cr in FY26. **Unicommerce** has a strong core (Uniware growing 12.8% at a 35% company margin) and no debt, but it is spending on a weak courier business and the price needs about {need:Unicomm. eSolutions|23}% a year. **Protean** owns India's PAN and pension rails, but its Q1 filed margin was 4.9% and profit fell 75% as new Aadhaar centres started. **Zaggle** is resetting its accounts and its cash flow after four years of negative free cash. **Nucleus** doubled its order book to ₹1,244cr but its Q1 margin fell to 3.6%. **eMudhra** is growing and its margin is rising, but free cash is negative and a ₹128cr-plus claim from 3i Infotech, now with police involved, hangs over it.",
-                "**Pass on four, avoid two.** **Amagi** (TV and streaming software) and **CE Info Systems** (MapmyIndia) are good businesses at prices that need about {need:Amagi Media Labs|36}% and {need:CE Info Systems|20}% a year of earnings growth; Amagi may grow near that, CE Info has barely grown for two years. **NPST** cut its growth and margin targets within one quarter while its receivables tripled and operating cash turned negative, and its price still needs about {need:Network People Services|31}% a year. **Aurum** has almost no core profit and is buying Housing.com, which lost about ₹200cr a year, by issuing shares. **Avoid TAC Security**: revenue doubled in Q1, but its secretarial auditor found company loans to the chief executive and a director in breach of the Companies Act, and operating cash was less than half of profit. **Avoid IZMO**: its auditor's opinion is given ‘subject to’ the fact that no auditor audits the foreign subsidiaries that earn about 81% of group revenue, and it has never turned its reported profit into meaningful free cash.",
-                "**Three things to hold onto before reading the rest.** First, **judge these companies on renewals and cash, not headlines**: only Amagi, Capillary, RateGain and Unicommerce publish retention figures, and only Capillary publishes annual recurring revenue; Newgen, Intellect, Nucleus and CE Info disclose neither. Second, **translate the profit**: ‘adjusted EBITDA’ adds back stock-option or earn-out costs at Amagi, Capillary, RateGain and Unicommerce; ‘total income’ and ‘EBITDA’ include interest on cash at Intellect, NPST and Protean; and Intellect, Zaggle, IZMO and NPST put large amounts of development cost on the balance sheet. Third, **the annual reports mattered more than the calls**: the IZMO audit, TAC's director loans, Capillary's fraud, eMudhra's dispute and Aurum's related-party loans all came from filings, not from management's prepared remarks.",
+                "**Pass on three, avoid two.** **Amagi** (TV and streaming software) and **CE Info Systems** (MapmyIndia) are good businesses at prices that need about {need:Amagi Media Labs|36}% and {need:CE Info Systems|20}% a year of earnings growth; Amagi may grow near that, CE Info has barely grown for two years. **NPST** cut its growth and margin targets within one quarter while its receivables tripled and operating cash turned negative, and its price still needs about {need:Network People Services|31}% a year. **Avoid TAC Security**: revenue doubled in Q1, but its secretarial auditor found company loans to the chief executive and a director in breach of the Companies Act, and operating cash was less than half of profit. **Avoid IZMO**: its auditor's opinion is given ‘subject to’ the fact that no auditor audits the foreign subsidiaries that earn about 81% of group revenue, and it has never turned its reported profit into meaningful free cash.",
+                "**Three things to hold onto before reading the rest.** First, **judge these companies on renewals and cash, not headlines**: only Amagi, Capillary, RateGain and Unicommerce publish retention figures, and only Capillary publishes annual recurring revenue; Newgen, Intellect, Nucleus and CE Info disclose neither. Second, **translate the profit**: ‘adjusted EBITDA’ adds back stock-option or earn-out costs at Amagi, Capillary, RateGain and Unicommerce; ‘total income’ and ‘EBITDA’ include interest on cash at Intellect, NPST and Protean; and Intellect, Zaggle, IZMO and NPST put large amounts of development cost on the balance sheet. Third, **the annual reports mattered more than the calls**: the IZMO audit, TAC's director loans, Capillary's fraud and eMudhra's dispute all came from filings, not from management's prepared remarks.",
             ],
         },
         {
             heading: '2. Charts: margins, growth, returns and cash conversion',
             body: [
                 "The six views that matter most, with two more behind **More measures**. Every figure comes from filed consolidated results on Screener, so margins here are after stock-option costs and before any company ‘adjustment’, and operating profit excludes interest income. That makes several companies look weaker than their own presentations: Amagi's filed Q1 margin is 7% against 11.5% adjusted, Unicommerce's 11% against 15.8%, and NPST's 25% against a company figure of 30.6% that includes other income. Where a company's own figure differs materially, the cell note says so.",
-                "**Where the numbers disagree.** Screener's cash-conversion figure for Capillary over five years (606%) is arithmetic on a tiny profit base, not a sign of unusual quality. CE Info's cash cycle shows as negative in FY26 although its debtor days rose to 136, because its payable days are large enough to offset it. Protean's ₹87cr of ‘borrowings’ are probably lease liabilities; the company says it has no debt. Aurum's price-to-earnings figure is meaningless, because its trailing profit is a building sale on top of almost nothing, so it gets no price check in section 8.",
+                "**Where the numbers disagree.** Screener's cash-conversion figure for Capillary over five years (606%) is arithmetic on a tiny profit base, not a sign of unusual quality. CE Info's cash cycle shows as negative in FY26 although its debtor days rose to 136, because its payable days are large enough to offset it. Protean's ₹87cr of ‘borrowings’ are probably lease liabilities; the company says it has no debt.",
             ],
             embed: 'metrics',
         },
         {
             heading: '3. The sector',
             body: [
-                "India's technology industry earned about US$315bn in FY26, up 6.1%, according to NASSCOM, but software products were only about US$23bn of that, roughly 7%; the rest is IT services, engineering services, back-office work and hardware. NASSCOM expects technology spending to grow only 5–7% in FY27. The products companies sit on the faster side of world demand: Gartner expects global software spending to rise 15.5% in 2026 against 5.3% for IT services, and ISG forecasts subscription-type contracts to grow about 30% in 2026 against 2.1% for managed services. The catch is that the sixteen companies here sell very different things to very different buyers, so the sector numbers are a backdrop rather than a forecast for any of them.",
+                "India's technology industry earned about US$315bn in FY26, up 6.1%, according to NASSCOM, but software products were only about US$23bn of that, roughly 7%; the rest is IT services, engineering services, back-office work and hardware. NASSCOM expects technology spending to grow only 5–7% in FY27. The products companies sit on the faster side of world demand: Gartner expects global software spending to rise 15.5% in 2026 against 5.3% for IT services, and ISG forecasts subscription-type contracts to grow about 30% in 2026 against 2.1% for managed services. The catch is that the fifteen companies here sell very different things to very different buyers, so the sector numbers are a backdrop rather than a forecast for any of them.",
                 "The four segments in this note face different cycles. **Banking and fintech software** depends on bank technology budgets and on how fast signed orders become live projects; demand is good but conversion is slow, and the Middle East war delayed it further. **Vertical SaaS and data platforms** depend on their customers' own markets: US television advertising for Amagi, hotel and destination marketing for RateGain, retail loyalty budgets for Capillary, Indian e-commerce order volumes for Unicommerce, and carmakers' output for CE Info. **Govtech, identity and cybersecurity** depend on regulators and ministries, which create demand by rule and can remove it the same way. **Small-cap platforms** depend mostly on funding and execution. Across all four, the rupee's fall has lifted rupee revenue for exporters this year, and it will not do so again unless it keeps falling. My view: the best-placed segment for the next two years is vertical SaaS, where growth is fastest and cash conversion strongest, but its prices already reflect that.",
             ],
             points: [
@@ -441,7 +426,7 @@ export const softwareProducts: SectorOverview = {
                         ['Banking and fintech software', 'Newgen, Intellect, Aurionpro, Zaggle, Nucleus, NPST', '4–34%', '14–25%', '**−31% to 84%**', 'Licence timing swings quarters; Newgen and Nucleus convert well, Zaggle and NPST do not; Nucleus fell to 4% on costs raised ahead of revenue'],
                         ['Vertical SaaS and data platforms', 'Amagi, RateGain, Capillary, Unicommerce, CE Info', '−1% to 44%', '3–21%', '**58–105%**', 'Subscriptions paid upfront; margins still rising at Amagi and Capillary; goodwill and IPO cash hold down returns'],
                         ['Govtech, identity and cybersecurity', 'Protean, eMudhra, TAC', '5–48%', '13–38%', '**55–67%**', 'Regulated franchises; Protean’s filed margin fell to 5% as new centres opened; TAC’s 48% comes with slow collections'],
-                        ['Small-cap platforms', 'Aurum, IZMO', '14–26%', '1–13%', '**40–54%**', 'Margins before lease rent (Aurum) and after capitalised development (IZMO) overstate cash earnings'],
+                        ['Small-cap platforms', 'IZMO', '14–25%', '13%', '**54%**', 'Margins after capitalised development overstate cash earnings'],
                     ],
                     note: 'Filed consolidated figures from Screener. Capillary’s five-year cash conversion (606%) is left out of its range because its five-year operating profit was only ₹31cr. Amagi has no five-year figure.',
                 },
@@ -462,7 +447,6 @@ export const softwareProducts: SectorOverview = {
                         ['UPI payment software', 'NPST claims 7–8% of UPI volume; merchant pricing ~3 paise a transaction', 'UPI merchant fee not yet notified', 'NPST investor meet, Jun 2026'],
                         ['Digital certificates', 'Public TLS certificate life to fall to 47 days by March 2029', 'Post-quantum deadlines 2029–30 in India', 'CA/Browser Forum, via eMudhra presentation'],
                         ['Employee tax wallets', 'Meal allowance ₹50 → ₹200; gifts ₹5,000 → ₹15,000', 'Higher loads per user', 'Zaggle Q1 presentation'],
-                        ['Online property portals', 'Housing.com ~24% share; FY25 revenue ₹343cr against ₹531cr of costs', 'Leader 99acres entrenched', 'Aurum Q1 call'],
                     ],
                     note: 'Kotak’s deflation estimate is for IT services; product companies are exposed mainly through implementation and support revenue. NASSCOM and Kotak figures were read in press coverage of the reports.',
                 },
@@ -486,7 +470,7 @@ export const softwareProducts: SectorOverview = {
                 },
                 {
                     label: 'Proven: retention you can measure',
-                    text: "Only a few companies publish the numbers that prove stickiness. **Amagi**'s net revenue retention was 122%, 127% and 126% over FY24–FY26, meaning existing customers spent about a quarter more each year, and management says about 26 of its 31 points of growth came from them. **Capillary**'s blended retention was 113%, with churn of about 5% a year and 99.997% uptime. **RateGain** reports gross retention of about 95% in its older data and distribution lines, **Unicommerce** net retention of ‘100% plus’, and Aurum's Sell.do CRM 7% gross churn. **Zaggle**'s rating agency puts its churn below 1.5%. By contrast, Newgen, Intellect, Nucleus and CE Info disclose no retention or recurring-revenue figure at all; Newgen said it may disclose remaining contract value ‘in future course’. My view: I give a higher grade where the retention is published and a lower one where I have to take it on trust.",
+                    text: "Only a few companies publish the numbers that prove stickiness. **Amagi**'s net revenue retention was 122%, 127% and 126% over FY24–FY26, meaning existing customers spent about a quarter more each year, and management says about 26 of its 31 points of growth came from them. **Capillary**'s blended retention was 113%, with churn of about 5% a year and 99.997% uptime. **RateGain** reports gross retention of about 95% in its older data and distribution lines, **Unicommerce** net retention of ‘100% plus’. **Zaggle**'s rating agency puts its churn below 1.5%. By contrast, Newgen, Intellect, Nucleus and CE Info disclose no retention or recurring-revenue figure at all; Newgen said it may disclose remaining contract value ‘in future course’. My view: I give a higher grade where the retention is published and a lower one where I have to take it on trust.",
                 },
                 {
                     label: 'Pricing power: mixed, and falling in places',
@@ -498,7 +482,7 @@ export const softwareProducts: SectorOverview = {
                 },
                 {
                     label: 'Who else competes',
-                    text: "Global vendors set the ceiling on price in banking: **Temenos**, **Oracle** (Flexcube) and **FIS** against Intellect, and **Pega** and **Appian** against Newgen. eMudhra faces **DigiCert**, **Entrust**, **Sify** and **Capricorn**; NPST faces **Mindgate**, **Olive** and **Sarvatra**, and large private banks build their own. Capillary's real rivals for loyalty budgets are agencies such as **Epsilon** and **Merkle**. Unicommerce's Shipway competes with a larger courier aggregator that listed in August 2026, and Aurum's Housing.com trails **99acres**. Messaging and AI-cloud companies such as Tanla, Route Mobile and E2E Networks sit in another Software group on this page. Finally, some large banks now try to build software themselves with AI tools; Intellect's chairman expects ‘few banks will succeed’. My view: competition from global vendors caps margins in banking software near 20–25%, while niche leaders with local data can earn more.",
+                    text: "Global vendors set the ceiling on price in banking: **Temenos**, **Oracle** (Flexcube) and **FIS** against Intellect, and **Pega** and **Appian** against Newgen. eMudhra faces **DigiCert**, **Entrust**, **Sify** and **Capricorn**; NPST faces **Mindgate**, **Olive** and **Sarvatra**, and large private banks build their own. Capillary's real rivals for loyalty budgets are agencies such as **Epsilon** and **Merkle**. Unicommerce's Shipway competes with a larger courier aggregator that listed in August 2026. Messaging and AI-cloud companies such as Tanla, Route Mobile and E2E Networks sit in another Software group on this page. Finally, some large banks now try to build software themselves with AI tools; Intellect's chairman expects ‘few banks will succeed’. My view: competition from global vendors caps margins in banking software near 20–25%, while niche leaders with local data can earn more.",
                 },
             ],
         },
@@ -515,7 +499,7 @@ export const softwareProducts: SectorOverview = {
                 },
                 {
                     label: 'Mix-driven: hardware, projects and acquired books',
-                    text: "Margins fall whenever something other than software enters the mix. **CE Info**'s tracker business earned only 13.1% in Q1, and tracker hardware rose to 16.5% of revenue from 5.8% a year earlier. **Aurionpro**'s data-centre design work earns 4–5 points below its average. **Capillary**'s acquired customer books earn gross margins of about 30% until they are moved onto its own platform, after which they reach 65–75%. **Unicommerce**'s Shipway pays courier freight and earns a gross margin of about 20%. **Zaggle** books its channel-reward business gross: on a net basis its Q1 revenue was ₹190cr rather than ₹423cr, and its company-adjusted margin was 18.3% of net revenue. **Aurum**'s rentals barely break even while its lead-generation and brokerage businesses earn 22–25%. My view: mix shifts explain most of this group's margin moves, and several (CE Info, Aurionpro) are shifting the wrong way.",
+                    text: "Margins fall whenever something other than software enters the mix. **CE Info**'s tracker business earned only 13.1% in Q1, and tracker hardware rose to 16.5% of revenue from 5.8% a year earlier. **Aurionpro**'s data-centre design work earns 4–5 points below its average. **Capillary**'s acquired customer books earn gross margins of about 30% until they are moved onto its own platform, after which they reach 65–75%. **Unicommerce**'s Shipway pays courier freight and earns a gross margin of about 20%. **Zaggle** books its channel-reward business gross: on a net basis its Q1 revenue was ₹190cr rather than ₹423cr, and its company-adjusted margin was 18.3% of net revenue. My view: mix shifts explain most of this group's margin moves, and several (CE Info, Aurionpro) are shifting the wrong way.",
                 },
                 {
                     label: 'Not structural: interest, adjustments and capitalised costs',
@@ -531,11 +515,11 @@ export const softwareProducts: SectorOverview = {
                 },
                 {
                     label: 'Working capital: improving or naturally light',
-                    text: "Subscription businesses can run on customers' money. **Unicommerce**'s debtor days fell from 47 to 37 to 20 over FY24–FY26 and operating cash was about 2.3 times profit. **Capillary**'s customers pay upfront, so FY26 operating cash of ₹150cr exceeded its ₹107cr of company-adjusted EBITDA. **RateGain** turned 78.8% of company-adjusted EBITDA into free cash in Q1. **Aurum**'s tenants pay deposits and advance rent, so its working capital is negative. **Protean** bills its Aadhaar centres monthly and says the government is paying on time, and **eMudhra** pays its token partners late, which flatters its cycle. My view: these are genuine strengths, but eMudhra's comes from stretching suppliers rather than from customers paying early.",
+                    text: "Subscription businesses can run on customers' money. **Unicommerce**'s debtor days fell from 47 to 37 to 20 over FY24–FY26 and operating cash was about 2.3 times profit. **Capillary**'s customers pay upfront, so FY26 operating cash of ₹150cr exceeded its ₹107cr of company-adjusted EBITDA. **RateGain** turned 78.8% of company-adjusted EBITDA into free cash in Q1. **Protean** bills its Aadhaar centres monthly and says the government is paying on time, and **eMudhra** pays its token partners late, which flatters its cycle. My view: these are genuine strengths, but eMudhra's comes from stretching suppliers rather than from customers paying early.",
                 },
                 {
                     label: 'Commitments that sit off the balance sheet',
-                    text: "Some of the biggest obligations are in the notes, not the headline numbers. **Amagi** committed to buy ₹2,170cr of cloud services as of March 2026, up from ₹21.8cr a year earlier and about 1.4 times FY26 revenue; the calls did not discuss it. **eMudhra** owes an earn-out on Cryptas and holds a put on the remaining 49% in 2028–30 at ten times EBITDA with a floor of one times revenue, which could force a large payment if Cryptas stays barely profitable. **RateGain**'s parent has guaranteed ₹1,291cr of its subsidiary's acquisition loan. **Aurum** will consolidate Housing.com's roughly ₹200cr of annual losses after closing. **Zaggle** had ₹67.9cr of capital commitments for the Dice purchase. My view: Amagi's cloud commitment is the one to watch, because it turns a variable cost into a fixed one just as its gross margin is slipping.",
+                    text: "Some of the biggest obligations are in the notes, not the headline numbers. **Amagi** committed to buy ₹2,170cr of cloud services as of March 2026, up from ₹21.8cr a year earlier and about 1.4 times FY26 revenue; the calls did not discuss it. **eMudhra** owes an earn-out on Cryptas and holds a put on the remaining 49% in 2028–30 at ten times EBITDA with a floor of one times revenue, which could force a large payment if Cryptas stays barely profitable. **RateGain**'s parent has guaranteed ₹1,291cr of its subsidiary's acquisition loan. **Zaggle** had ₹67.9cr of capital commitments for the Dice purchase. My view: Amagi's cloud commitment is the one to watch, because it turns a variable cost into a fixed one just as its gross margin is slipping.",
                 },
             ],
             tables: [
@@ -556,7 +540,6 @@ export const softwareProducts: SectorOverview = {
                         ['Amagi Media Labs', 'Cash ₹1,616cr; Q1 operating outflow ₹65cr (₹41cr before one-offs); 10 acquisition targets being studied', 'No bank debt; ₹2,170cr cloud commitment'],
                         ['CE Info Systems', 'Cash and investments ₹745cr; ‘careful’ on government receivables', 'Borrowings ₹7cr; bank guarantees ₹35.5cr'],
                         ['Network People Services', '₹300cr raise mostly in deposits; three acquisition targets short-listed', '₹277.86cr unspent at March; receivables ₹103.7cr'],
-                        ['Aurum Proptech', '₹56cr of bank debt prepaid; promoter warrants of ₹118cr as a ‘war chest’ for Housing.com', 'Borrowings ₹225cr, mostly leases (March)'],
                         ['TAC Security (Tac Infosec)', 'No fund-raise ‘until we reach a fair enterprise value’; Safehouse bought for ₹1cr cash plus shares', 'Cash ~₹22.9cr (March); ₹5cr lent to Goenka Business & Finance'],
                         ['IZMO', '₹150cr raise (₹125cr capex) promised within ‘30–45 days’ in June; not done by the 25 Sep AGM', 'Borrowings ₹17cr (Screener); intangibles 56% of assets'],
                     ],
@@ -572,7 +555,7 @@ export const softwareProducts: SectorOverview = {
             points: [
                 {
                     label: 'Growth driver: buying customers',
-                    text: "Several companies grow by buying smaller rivals and moving their customers onto their own platform. **Capillary**'s chief executive calls M&A ‘a customer acquisition cost substitution story’: it paid about 0.07 times annual recurring revenue for SessionM, keeps about 70% of acquired revenue after migration, and expects migrations of Kognitiv and SessionM to add ₹100–130cr of EBITDA over time. **RateGain** paid US$250M for Sojern, about 1.5 times its 2024 gross revenue, and it has raised its cost-savings target to US$15M a year. **eMudhra** bought 51% of Cryptas, **Zaggle** made five deals in two years, and **Aurum** is buying Housing.com with shares. The risk is shown by Capillary's fraud in a subsidiary seven weeks after purchase and by Cryptas, which ‘was not profitable at all’. My view: acquisition-led growth has worked at RateGain and Capillary because both bought rivals cheaply in niches they already led; I would not pay for it elsewhere until it shows up in filed profit.",
+                    text: "Several companies grow by buying smaller rivals and moving their customers onto their own platform. **Capillary**'s chief executive calls M&A ‘a customer acquisition cost substitution story’: it paid about 0.07 times annual recurring revenue for SessionM, keeps about 70% of acquired revenue after migration, and expects migrations of Kognitiv and SessionM to add ₹100–130cr of EBITDA over time. **RateGain** paid US$250M for Sojern, about 1.5 times its 2024 gross revenue, and it has raised its cost-savings target to US$15M a year. **eMudhra** bought 51% of Cryptas and **Zaggle** made five deals in two years. The risk is shown by Capillary's fraud in a subsidiary seven weeks after purchase and by Cryptas, which ‘was not profitable at all’. My view: acquisition-led growth has worked at RateGain and Capillary because both bought rivals cheaply in niches they already led; I would not pay for it elsewhere until it shows up in filed profit.",
                 },
                 {
                     label: 'Growth driver: banks modernising, and new rules',
@@ -600,11 +583,11 @@ export const softwareProducts: SectorOverview = {
                 },
                 {
                     label: 'Mixed',
-                    text: "**Newgen** grew revenue 11%, ahead of its cautious tone, and SaaS 40%, but implementation revenue fell about 23% on delayed project starts and India was flat. **eMudhra** grew profit 27.9%, on track for its target, and its margin rose to 26.2%, but organic growth was about 15% against 18% guided, trust services fell 3% against +20% planned, and its profit-growth wording narrowed from 25–30% to 25%. **Intellect** held quarterly total income above ₹800cr as promised, but it slipped from ₹884cr in Q4 to ₹872cr and the margin eased. **Zaggle** kept its 40% consolidated growth target although Q1 grew 28% and the standalone business 18%. **Aurum** stayed profitable before tax, by ₹2.3cr, and then reversed its ‘not actively evaluating to buy anything’ line within 11 weeks by agreeing to buy Housing.com.",
+                    text: "**Newgen** grew revenue 11%, ahead of its cautious tone, and SaaS 40%, but implementation revenue fell about 23% on delayed project starts and India was flat. **eMudhra** grew profit 27.9%, on track for its target, and its margin rose to 26.2%, but organic growth was about 15% against 18% guided, trust services fell 3% against +20% planned, and its profit-growth wording narrowed from 25–30% to 25%. **Intellect** held quarterly total income above ₹800cr as promised, but it slipped from ₹884cr in Q4 to ₹872cr and the margin eased. **Zaggle** kept its 40% consolidated growth target although Q1 grew 28% and the standalone business 18%.",
                 },
                 {
                     label: 'My outlook',
-                    text: "**I expect earnings growth of about 28% a year at Capillary and Amagi, 22% at TAC, 20% at NPST, 18% at Unicommerce and eMudhra, 17% at RateGain, 14% at Intellect, 13% at Protean, 12% at Newgen, CE Info and IZMO, 10% at Aurionpro and Zaggle, and 6% at Nucleus; I set no estimate for Aurum.** These are rates for filed earnings over three to five years. For Amagi and Capillary the high numbers come from margins rising off a low base, not from faster sales. For Protean, Nucleus and Zaggle they start from a depressed year. For Newgen and Intellect I assume revenue growth of 10–14% with modest margin gains. In every case, interest on cash is part of the base, so a fall in rates or a large acquisition would change the figure.",
+                    text: "**I expect earnings growth of about 28% a year at Capillary and Amagi, 22% at TAC, 20% at NPST, 18% at Unicommerce and eMudhra, 17% at RateGain, 14% at Intellect, 13% at Protean, 12% at Newgen, CE Info and IZMO, 10% at Aurionpro and Zaggle, and 6% at Nucleus.** These are rates for filed earnings over three to five years. For Amagi and Capillary the high numbers come from margins rising off a low base, not from faster sales. For Protean, Nucleus and Zaggle they start from a depressed year. For Newgen and Intellect I assume revenue growth of 10–14% with modest margin gains. In every case, interest on cash is part of the base, so a fall in rates or a large acquisition would change the figure.",
                 },
             ],
             tables: [
@@ -628,7 +611,6 @@ export const softwareProducts: SectorOverview = {
                         ['Aurionpro Solutions', 'Data-centre and transit orders convert; margin back towards 20%', '2% / **10%** / 16%'],
                         ['Zaggle Prepaid', 'Revenue 25%; margin reset by expensing; cashback down slowly', '0% / **10%** / 20%'],
                         ['Nucleus Software', 'Order book converts slowly; margin partly recovers', '−8% / **6%** / 15%'],
-                        ['Aurum Proptech', 'Core profit near zero; Housing.com losses of ~₹200cr a year to absorb', 'Not estimated'],
                     ],
                     note: 'My own judgement, not guidance, applied to filed earnings. The growth each price needs is in the live valuation table in section 8.',
                 },
@@ -650,7 +632,6 @@ export const softwareProducts: SectorOverview = {
                         ['Amagi Media Labs', '~30% growth aspiration; gross margin 67–69% (was ~69%)', 'Tiny; ₹2,170cr cloud commitment', '**Delivered**: +32%; gross margin trimmed'],
                         ['CE Info Systems', '‘35% plus’ margin; 25% growth and ₹1,000cr target not repeated', 'Trackers, government work, IP ~₹120cr', '**Missed**: +14.9%; first write-off'],
                         ['Network People Services', '60–70% growth (was ~70%); EBITDA ~30% (was ~37%)', 'Products capitalised; M&A pending', '**Walked back**: Q1 ₹56cr, targets cut'],
-                        ['Aurum Proptech', 'Housing.com breakeven in 4–6 quarters; ₹1,000cr run-rate ‘a lot faster’', 'Tech; promoter warrants ₹118cr', '**Reversed**: bought Housing.com after ruling out M&A'],
                         ['TAC Security (Tac Infosec)', '~₹100cr total income in FY27 (new); margin above 40%', 'Development; Safehouse ₹1cr cash', '**Beat**: ₹20cr vs ₹18cr internal target'],
                         ['IZMO', 'Group growth 20–25%; chip packaging ₹45–50cr; EBITDA 20–25%', '₹125cr plant, funding not raised', '**Missed**: +15.7%; raise not done'],
                     ],
@@ -673,7 +654,7 @@ export const softwareProducts: SectorOverview = {
                 },
                 {
                     label: 'Adjusted numbers and capitalised costs',
-                    text: "The gap between headline and filed profit is wide. **RateGain**'s Q1 adjusted profit was ₹116.8cr against ₹94.9cr filed; the difference is earn-outs and stock-appreciation rights for the Sojern team, about US$29M over three years, plus ₹33.8cr a quarter of acquisition amortisation below that. **Capillary**'s FY26 profit included ₹25cr of indemnity income and its Q1 ‘normalised’ figure excludes the fraud loss; its auditor could not confirm a database-level audit trail at a third-party accounting-software provider. **Zaggle** has reversed course on capitalising development cost ‘in close consultation with our advisors’, which confirms that earlier margins were flattered. **IZMO** adds about ₹23cr of development a year to intangibles against about ₹14.5cr of amortisation, an implied life of about 28 years. Auditors made capitalisation a key audit matter at Intellect, Capillary, Aurum and TAC. My view: in this group I value on filed profit and check it against free cash.",
+                    text: "The gap between headline and filed profit is wide. **RateGain**'s Q1 adjusted profit was ₹116.8cr against ₹94.9cr filed; the difference is earn-outs and stock-appreciation rights for the Sojern team, about US$29M over three years, plus ₹33.8cr a quarter of acquisition amortisation below that. **Capillary**'s FY26 profit included ₹25cr of indemnity income and its Q1 ‘normalised’ figure excludes the fraud loss; its auditor could not confirm a database-level audit trail at a third-party accounting-software provider. **Zaggle** has reversed course on capitalising development cost ‘in close consultation with our advisors’, which confirms that earlier margins were flattered. **IZMO** adds about ₹23cr of development a year to intangibles against about ₹14.5cr of amortisation, an implied life of about 28 years. Auditors made capitalisation a key audit matter at Intellect, Capillary and TAC. My view: in this group I value on filed profit and check it against free cash.",
                 },
                 {
                     label: 'Leadership changes',
@@ -685,7 +666,7 @@ export const softwareProducts: SectorOverview = {
                 },
                 {
                     label: 'Funding, dilution and commitments',
-                    text: "**Aurum** will issue 1,97,93,309 shares to REA Group for Housing.com and warrants to its promoter, lifting the share count from 7.64cr to 10.49cr fully diluted, about 37%, while taking on a business that lost about ₹200cr a year. **IZMO** needs ₹150cr for its packaging plant and has not raised it. **Zaggle** trades at ₹179 against a QIP price of ₹523 and a warrant price of ₹567, so the 75% unpaid on its warrants is unlikely to arrive. **Capillary**'s venture investors are among its largest shareholders and may sell. **NPST** has ₹277.86cr of unspent raise money and three acquisition targets. On top of these sit Amagi's ₹2,170cr cloud commitment and eMudhra's Cryptas put. My view: the companies with idle cash and new acquisition plans (Protean, NPST, Amagi) need watching as closely as those that need money.",
+                    text: "**IZMO** needs ₹150cr for its packaging plant and has not raised it. **Zaggle** trades at ₹179 against a QIP price of ₹523 and a warrant price of ₹567, so the 75% unpaid on its warrants is unlikely to arrive. **Capillary**'s venture investors are among its largest shareholders and may sell. **NPST** has ₹277.86cr of unspent raise money and three acquisition targets. On top of these sit Amagi's ₹2,170cr cloud commitment and eMudhra's Cryptas put. My view: the companies with idle cash and new acquisition plans (Protean, NPST, Amagi) need watching as closely as those that need money.",
                 },
             ],
         },
@@ -711,10 +692,6 @@ export const softwareProducts: SectorOverview = {
                 {
                     label: 'Stretched: good businesses priced ahead of them',
                     text: "**Amagi** needs about {need:Amagi Media Labs|36}% a year against my ~28%. It is one of the best-run businesses in the group, but the price assumes both 25–30% dollar growth and margins rising towards 20%, with a slipping gross margin and one customer at 17% of revenue. **CE Info** needs about {need:CE Info Systems|20}% against my ~12%; the shares have fallen about 56% from their high, yet the map business has not grown for two years and the ₹1,000cr target has gone quiet. **NPST** needs about {need:Network People Services|31}% against my ~20%, on a business whose operating cash was negative in FY26 and whose targets were cut within a quarter. These three are passes on price, not on business quality; Amagi in particular is worth following for a better entry.",
-                },
-                {
-                    label: 'No price check: Aurum',
-                    text: "**Aurum**'s trailing profit is mostly a ₹52.4cr gain on selling two office buildings, and its continuing operations made ₹2.3cr before tax in Q1, so its P/E means nothing and I set no growth estimate. The market is pricing it on revenue. The Housing.com deal values that business at about ₹458cr of new shares, about 1.5 times its revenue, for a portal that spent ₹531cr to earn ₹343cr in FY25. For the price to work, Housing.com has to reach breakeven within the four to six quarters management promises, and the combined group has to earn a real margin on roughly ₹750cr of revenue. My view: that is a turnaround bet with heavy dilution, not a valuation case.",
                 },
                 {
                     label: 'Why big falls are not the same as bargains',
@@ -805,19 +782,13 @@ export const softwareProducts: SectorOverview = {
             watch: 'Two quarters of ₹75cr+ revenue with positive operating cash; debtor days falling from 195; how the ₹300cr is used.',
         },
         {
-            company: 'Aurum Proptech', rank: 14, stance: 'TURNAROUND', segment: SMALL,
-            what: "A Mumbai-based property-technology group: co-living and family rentals, developer CRM software (Sell.do), lead generation and PropTiger brokerage, and now buying Housing.com from REA Group for shares.",
-            view: "**A turnaround bet paid for with dilution.** Distribution businesses earn 22–25% and bank debt is gone. But continuing operations made ₹2.3cr before tax in Q1, the headline profit came from selling buildings, Housing.com lost about ₹200cr a year, the share count rises about 37%, and management ruled out acquisitions 11 weeks before agreeing this one. There is no meaningful P/E to test.",
-            watch: 'Housing.com losses falling each quarter after closing; continuing pre-tax margin above 5%; no further share issues.',
-        },
-        {
-            company: 'TAC Security (Tac Infosec)', rank: 15, stance: 'AVOID', segment: GOV,
+            company: 'TAC Security (Tac Infosec)', rank: 14, stance: 'AVOID', segment: GOV,
             what: "A Mohali-based cybersecurity company listed on the NSE SME board, selling vulnerability-scanning (ESOF) and compliance-automation (Socify.ai) software at low prices to thousands of small clients, over 70% of them in North America and Europe.",
             view: "**Fast growth that the governance record does not let me trust.** Revenue doubled in Q1 at a 48% margin and the company guides ₹100cr of FY27 income. But the secretarial audit found loans to the chief executive and a director in breach of the Companies Act and related-party lapses, a relative of the chief executive received ESOP shares worth ₹7.1cr above cost, and operating cash was under half of profit with debtor days at 145. The price fits my estimate; the record does not.",
             watch: 'A clean FY27 secretarial audit; debtor days below 90; a move to the main board with a larger auditor.',
         },
         {
-            company: 'IZMO', rank: 16, stance: 'AVOID', segment: SMALL,
+            company: 'IZMO', rank: 15, stance: 'AVOID', segment: SMALL,
             what: "A Bengaluru-based family-run company selling websites, CRM and car images to dealers and rental firms in the US and Europe, plus a small chip-packaging unit (izmo Microsystems) for Indian defence.",
             view: "**Accounts I cannot rely on.** The auditor's opinion is given ‘subject to’ the fact that the foreign subsidiaries earning about 81% of revenue are audited by nobody, there is an emphasis of matter on regulatory inquiries, and free cash has been ₹2cr or less every year while intangibles grew to 56% of assets. The chip unit missed its FY26 target and the ₹150cr raise has slipped for ten months.",
             watch: 'The foreign subsidiaries audited by a recognised firm; the regulatory inquiries disclosed and closed; the ₹150cr raise completed on fair terms.',
@@ -829,12 +800,12 @@ export const softwareProducts: SectorOverview = {
         body: [
             "**Banking and fintech software.** **Newgen Software: own**; the cleanest cash record and the most recurring revenue in the group at a price that needs only about {need:Newgen Software|13}% a year, started small until receivables fall. **Intellect Design Arena: follow**; winning deals, but profit must grow again. **Aurionpro Solutions: wait** until the order book turns into revenue and cash. **Zaggle Prepaid: wait** for a positive operating-cash figure and a permanent CFO. **Nucleus Software: wait** for revenue to follow the order book. **Network People Services (NPST): pass**; targets cut, cash negative, price demanding.",
             "**Vertical SaaS and data platforms.** **RateGain Travel Tech: follow**; the Sojern deal is working, judge it on filed profit. **Capillary Technologies: follow**; the loyalty leader, once controls and migrations are proven. **Unicomm. eSolutions (Unicommerce): wait** for Shipway to stop diluting a strong core. **Amagi Media Labs: pass** on price, and follow for a better entry. **CE Info Systems (MapmyIndia): pass** until growth returns.",
-            "**Govtech, identity and cybersecurity.** **Protean eGov: wait** for margins to recover under its new chief executive. **eMudhra: wait** for the 3i Infotech dispute to be resolved. **TAC Security (Tac Infosec): avoid** on governance, whatever the growth. **Small-cap platforms.** **Aurum Proptech: pass**; Housing.com makes it a diluted turnaround. **IZMO: avoid** until its foreign subsidiaries are audited.",
+            "**Govtech, identity and cybersecurity.** **Protean eGov: wait** for margins to recover under its new chief executive. **eMudhra: wait** for the 3i Infotech dispute to be resolved. **TAC Security (Tac Infosec): avoid** on governance, whatever the growth. **Small-cap platforms.** **IZMO: avoid** until its foreign subsidiaries are audited.",
             "**What would change my view.** For the better: Newgen's and Intellect's receivables falling while growth holds; RateGain beating its revenue guide on filed margins; Capillary's migrations lifting margins without another control lapse; Zaggle and Aurionpro reporting positive operating cash; eMudhra settling with 3i Infotech; Amagi's or CE Info's price falling far enough to fit my estimates. For the worse: CRISIL acting on Newgen's receivables; another acquisition-related loss at Capillary or eMudhra; a stronger rupee taking several points off the exporters; banks cutting implementation spending as AI tools mature.",
-            "**What to watch next quarter.** Newgen's debtor days and implementation revenue; Intellect's ₹900cr milestone; RateGain's organic growth without the FIFA boost; Capillary's forensic review; Aurionpro's data-centre revenue; Unicommerce's Shipway breakeven; Protean's margin; Zaggle's operating cash; Nucleus's revenue; eMudhra's trust sales; Amagi's gross margin; CE Info's growth; NPST's revenue run-rate; Aurum's Housing.com closing; TAC's Q2 of ₹24cr; IZMO's raise and audit.",
+            "**What to watch next quarter.** Newgen's debtor days and implementation revenue; Intellect's ₹900cr milestone; RateGain's organic growth without the FIFA boost; Capillary's forensic review; Aurionpro's data-centre revenue; Unicommerce's Shipway breakeven; Protean's margin; Zaggle's operating cash; Nucleus's revenue; eMudhra's trust sales; Amagi's gross margin; CE Info's growth; NPST's revenue run-rate; TAC's Q2 of ₹24cr; IZMO's raise and audit.",
         ],
         bottomLine:
-            "Own Newgen Software, the one company here with a proven cash record at a price that fits. Follow Intellect, RateGain and Capillary; wait on Aurionpro, Unicommerce, Protean, Zaggle, Nucleus and eMudhra; pass on Amagi, CE Info, NPST and Aurum; avoid TAC Security and IZMO on governance.",
+            "Own Newgen Software, the one company here with a proven cash record at a price that fits. Follow Intellect, RateGain and Capillary; wait on Aurionpro, Unicommerce, Protean, Zaggle, Nucleus and eMudhra; pass on Amagi, CE Info and NPST; avoid TAC Security and IZMO on governance.",
     },
 
     sources: [
@@ -866,7 +837,6 @@ export const softwareProducts: SectorOverview = {
         { label: 'CE Info Systems Q1 FY27 investor presentation — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=7b7babe8-41c0-4502-858a-efe032b1026a.pdf' },
         { label: 'CE Info Systems Annual Report FY26 — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/e4998004-2317-41d0-bdc8-1df862945970.pdf' },
         { label: 'Network People Services Annual Report FY26 (exchange fines, fund use) — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=940dac81-7864-4f11-89ac-3f5c6425f445.pdf' },
-        { label: 'Aurum PropTech: Housing.com share swap and promoter warrants — BSE, Sep 2026', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ff01fd12-bafd-4f51-bd20-281e9100f126.pdf' },
         { label: 'TAC Infosec Annual Report FY26 (secretarial audit)', url: 'https://tacsecurity.com/wp-content/uploads/2026/09/TAC-InfoSec-Limited-10th-Annual-Report-25-26.pdf' },
         { label: 'IZMO Annual Report FY26 (consolidated auditor’s report) — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ca09a1eb-e2db-4f2a-a4a9-8f8d64cfba0f.pdf' },
         { label: 'Company earnings calls and presentations, Q4 FY26 and Q1 FY27', url: 'https://www.bseindia.com/' },
