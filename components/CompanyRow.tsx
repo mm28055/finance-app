@@ -17,6 +17,7 @@ const ROW_QUARTERS = 2;
 
 import { COLOR_THEMES, ColorThemeKey, CONVICTION_CONFIG, ConvictionLevel } from './SectorList';
 import { TONE_STYLE, CompanyFilings } from './SectorFilings';
+import { CompanyTags } from './CompanyTags';
 
 const CONVICTION_CYCLE: (ConvictionLevel | null)[] = [null, 'HIGH', 'MEDIUM', 'LOW'];
 
@@ -635,6 +636,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
             {
                 expanded && (
                     <div className="bg-[#F8FAFC] p-4 border-t border-gray-100 flex flex-col gap-4 animate-in slide-in-from-top-1 duration-150">
+                        <CompanyTags companyId={company.id} />
                         {detailLoading && !detail ? (
                             // Skeleton while the first fetch is in flight.
                             <>

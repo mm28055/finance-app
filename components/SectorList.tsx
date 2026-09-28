@@ -7,6 +7,7 @@ import { SectorSection } from './SectorSection';
 import { Search } from 'lucide-react';
 import { meetsGuidanceThreshold, GUIDANCE_GROWTH_THRESHOLD } from '@/lib/guidance';
 import { isPortfolioSector } from '@/lib/portfolio';
+import { useTags } from '@/context/TagsContext';
 
 export const COLOR_THEMES = {
     blue: { name: 'Blue', bg: 'bg-[#D4E5F7]', text: 'text-[#4A7AAF]', dot: 'bg-[#4A7AAF]' },
@@ -112,6 +113,11 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
     // Keeps only the companies whose score moved 20+ points, up or down, from
     // the previous quarter's concall.
     const [bigMoveOnly, setBigMoveOnly] = useState(false);
+    // The owner's own tags: keeps only the companies carrying the chosen tag.
+    const { allTags, companiesWith } = useTags();
+    const [tagFilter, setTagFilter] = useState('');
+    // A tag that no longer exists (its last company was untagged) stops filtering.
+    const activeTag = allTags.some(t => t.tag === tagFilter) ? tagFilter : '';
     // Only one company row is open at a time. Keyed by sector too, because
     // ZPortfolio repeats companies that are also listed in their own sector.
     const [openRowKey, setOpenRowKey] = useState<string | null>(null);
@@ -165,7 +171,16 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             })).filter(sector => sector.companies.length > 0);
         }
 
-        // 6. Sort
+        // 6. Owner's tag
+        if (activeTag) {
+            const ids = companiesWith(activeTag);
+            result = result.map(sector => ({
+                ...sector,
+                companies: sector.companies.filter(co => ids.has(co.id))
+            })).filter(sector => sector.companies.length > 0);
+        }
+
+        // 7. Sort
         return result.map(sector => {
             const sortedCompanies = [...sector.companies].sort((a, b) => {
                 if (sortBy === 'gemini') {
@@ -182,7 +197,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             });
             return { ...sector, companies: sortedCompanies };
         });
-    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, scoreBand, bigMoveOnly]);
+    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, scoreBand, bigMoveOnly, activeTag, companiesWith]);
 
     // Count total companies. ZPortfolio repeats companies listed elsewhere, so
     // it is left out of both counts.
@@ -279,6 +294,19 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                             ? 'bg-purple-500 text-white border-purple-500'
                             : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
                     >± 20 Score Move</button>
+                    {allTags.length > 0 && (
+                        <select
+                            value={activeTag}
+                            onChange={e => setTagFilter(e.target.value)}
+                            title="Only companies carrying one of your tags"
+                            className={`px-1.5 py-0.5 text-[10px] font-medium rounded border transition-all cursor-pointer focus:outline-none ${activeTag
+                                ? 'bg-[#4A7AAF] text-white border-[#4A7AAF]'
+                                : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
+                        >
+                            <option value="">🏷 My tags</option>
+                            {allTags.map(t => <option key={t.tag} value={t.tag}>{t.tag} ({t.count})</option>)}
+                        </select>
+                    )}
                 </div>
             </div>
 
@@ -295,7 +323,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                     name={s.sector}
                     count={s.companies.length}
                     companies={s.companies}
-                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null || bigMoveOnly}
+                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null || bigMoveOnly || !!activeTag}
                 >
                     {s.companies.map(co => {
                         const rowKey = `${s.sector}:${co.ticker}`;

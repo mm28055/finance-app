@@ -4,6 +4,7 @@ import { SessionProvider } from "next-auth/react";
 import { SectorChatProvider } from "@/context/SectorChatContext";
 import { AdminProvider } from "@/context/AdminContext";
 import { NotesProvider } from "@/context/NotesContext";
+import { TagsProvider } from "@/context/TagsContext";
 
 export function Providers({ children }: { children: React.ReactNode }) {
     return (
@@ -11,7 +12,9 @@ export function Providers({ children }: { children: React.ReactNode }) {
             <AdminProvider>
                 <SectorChatProvider>
                     <NotesProvider>
-                        {children}
+                        <TagsProvider>
+                            {children}
+                        </TagsProvider>
                     </NotesProvider>
                 </SectorChatProvider>
             </AdminProvider>
