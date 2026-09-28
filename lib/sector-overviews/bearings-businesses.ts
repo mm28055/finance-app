@@ -171,7 +171,7 @@ const profiles: BusinessProfile[] = [
         company: 'SKF India',
         inShort: ["**The automotive half of SKF India** after the October 2025 split: bearings and wheel-end units for two-wheelers, cars and trucks, plus replacement sales through dealers.", "**Good:** a strong brand, Q1 sales up 27%, guidance raised to about 20% growth for FY27 and ₹306cr of net cash. **Bad:** a crowded replacement market full of fakes, plants 93% loaded until early 2027, the top ten customers buying about 70%, and a Q1 margin helped by stock revaluation.", "**Verdict: wait.** A better business than the demerger quarter suggested, but the price still needs more growth than I expect."],
         tagline: "SKF's listed automotive bearing business in India since the industrial business was demerged on 1 October 2025, to be branded SKF Vertevo; it supplies two-wheeler, car and truck makers and the vehicle replacement market.",
-        revenue: '₹3,763cr (FY26, consolidated)',
+        revenue: '₹2,130cr (FY26, automotive business alone; ₹3,763cr consolidated, including six months of the industrial business)',
         products: [
             { name: 'Two-wheeler bearings', text: "Engine, gearbox and wheel bearings for motorcycles and scooters; two-wheelers are 54% of its sales to vehicle makers." },
             { name: 'Car and truck bearings and wheel-end units', text: "Wheel hubs and drivetrain bearings. A new wheel-end order from a large carmaker localising its bearings starts in late 2028." },
