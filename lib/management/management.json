@@ -4981,8 +4981,17 @@
    "company": "Aimtron",
    "sector": "EMS & Electronics",
    "style": "Promoter-run",
-   "styleNote": "Promoter Mukesh Vasani (59.8%) is the non-executive Chairman; he also runs the promoter-owned US companies that buy from Aimtron. His son Nirmal Vasani is a non-executive director. Nirmal's mother-in-law Sharmilaben Bambhaniya, also a promoter, is a whole-time director overseeing finance and administration. A hired whole-time director leads sales. The promoter family owns about 69%.",
+   "styleNote": "Promoter Mukesh Vasani, who owns 59.8%, is Chairman and, since 1 August 2026, also Managing Director (he was non-executive before). US companies under the same management trade with Aimtron. His son Nirmal Vasani is a non-executive director, and Nirmal's mother-in-law Sharmilaben Bambhaniya, also a promoter, is a whole-time director overseeing finance and administration. A hired whole-time director leads sales. The promoter family owns about 69%.",
    "people": [
+    {
+     "name": "Mukesh Jeram Vasani",
+     "role": "Chairman & Managing Director",
+     "since": "On the board since October 2013; Managing Director from 1 August 2026 to July 2031",
+     "family": true,
+     "relation": "Promoter; father of director Nirmal Vasani",
+     "stake": "59.79% (FY26 annual report); family together about 69%",
+     "bio": "Holds a bachelor's degree in civil engineering from Sardar Patel University, Gujarat (1987), and has over three decades in production, marketing and manufacturing of engineering and electronic products. US companies under the same management, such as Aimtron Corporation and American Pinball, both buy from and sell to Aimtron. He joined the board in 2013 and was non-executive Chairman until shareholders approved him as Managing Director for five years at the August 2026 AGM. His FY26 chairman's letter highlighted the purchase of International Control Services in Illinois (now Aimtron International Controls) and the new Vadodara plant."
+    },
     {
      "name": "Sharmilaben Lakhanbhai Bambhaniya",
      "role": "Whole-time Director",
@@ -5007,10 +5016,11 @@
      "bio": "Holds a Master of Commerce in accounting and financial management from the Maharaja Sayajirao University of Baroda (2010). She joined Aimtron in 2021 as a senior accounts executive and was made CFO in October 2023, before the IPO. She handles the company's overall finances. The prospectus gives no earlier employers."
     }
    ],
-   "changes": "Sneh Shah became a whole-time director on 23 April 2025. Dr Ashwani Kumar Srivastava, a whole-time director at the 2024 IPO, no longer appears on the board in the FY26 annual report. No executive changes found after the annual report.",
+   "changes": "Mukesh Vasani moved from non-executive Chairman to Chairman & Managing Director from 1 August 2026 (approved at the 17 August 2026 AGM, which also approved a new ESOP). Sneh Shah became a whole-time director on 23 April 2025. Dr Ashwani Kumar Srivastava, a whole-time director at the 2024 IPO, no longer appears on the board in the FY26 annual report.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/SME_AR_29986_AIMTRON_2025_2026_A_15217082_24072026172456.pdf (FY26 annual report: board and KMP profiles, promoter holdings, related parties)",
-    "https://nsearchives.nseindia.com/emerge/corporates/content/AimtronElectronicsLimited_PROSP.pdf (2024 prospectus: director bios, family relationships, CFO profile)"
+    "https://nsearchives.nseindia.com/emerge/corporates/content/AimtronElectronicsLimited_PROSP.pdf (2024 prospectus: director bios, family relationships, CFO profile)",
+    "https://nsearchives.nseindia.com/corporate/AIMTRON_18082026154416_Intimation_Reg_30_Updates_18-08-2026.pdf (MD appointment, August 2026)"
    ],
    "updatedOn": "2026-09-29"
   },
@@ -5395,6 +5405,62 @@
     "https://ikiotech.com/leadership-governance?team=1 (leadership bios)",
     "https://nsearchives.nseindia.com/corporate/IKIO_02092026190358_FinalSMP.pdf (senior management change, 2 Sep 2026)",
     "https://nsearchives.nseindia.com/corporate/IKIO_06072026190508_REVISEDNripendraChangeinmgt.pdf (AVP Finance appointment, July 2026)"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Maxvolt Energy Indus",
+   "sector": "EMS & Electronics",
+   "style": "Promoter-run",
+   "styleNote": "Run by its founders. Promoters Bhuvneshwar Pal Singh (MD & CFO) and Vishal Gupta (Chairman & Whole-time Director) are on the board. The third promoter, Sachin Gupta, is COO, and his brother Mukesh Gupta is Chief Marketing Officer and a co-founder. Co-founder Satendra Shukla is CEO. The promoters are not related to each other, but family links matter: Vishal Gupta's father owns Volts AMP, the supplier from which Maxvolt bought ₹72cr in FY26. Promoters own about 39%.",
+   "people": [
+    {
+     "name": "Bhuvneshwar Pal Singh",
+     "role": "Managing Director & Chief Financial Officer",
+     "since": "With the company since 2020",
+     "family": true,
+     "relation": "Promoter (not related to the other directors)",
+     "stake": "14.85% (FY26 annual report)",
+     "bio": "Holds a B.Com from Chhatrapati Shahu Ji Maharaj University, Kanpur (2008). He joined Maxvolt in 2020 and runs finance, accounts, day-to-day operations, administration and strategic planning. The company credits him with about five years of finance experience and says he received a 'Best CFO' award from MSME/CII. He holds both the MD and CFO posts, and the board has proposed a pay rise for him at the September 2026 AGM."
+    },
+    {
+     "name": "Vishal Gupta",
+     "role": "Chairman & Whole-time Director",
+     "since": "With the company since incorporation (2019) as Chief Technical Officer; director since February 2021",
+     "family": true,
+     "relation": "Promoter; son of Pradeep Gupta, whose firm Volts AMP is a major supplier",
+     "stake": "14.63% (FY26 annual report)",
+     "bio": "Holds a B.Tech in mechanical engineering from Manav Bharti University, Solan (2016) and completed an advanced programme in electric-vehicle technology at IIT Delhi (2023). He has been with Maxvolt since it was set up, first as Chief Technical Officer, and runs the factory, production, logistics, quality and lithium-battery R&D. He was named Best Innovator in Battery Business at the Battery Business Awards 2026. He retires by rotation and seeks re-appointment and a pay rise at the September 2026 AGM."
+    },
+    {
+     "name": "Satendra Shukla",
+     "role": "Chief Executive Officer (co-founder)",
+     "since": "Co-founder (initial subscriber in 2019); CEO and KMP in FY26",
+     "family": false,
+     "bio": "One of the two original subscribers when the company was formed, and signs as CEO & Co-Founder. As CEO he leads overall strategy, growth and business expansion; he was paid ₹23.7 lakh in FY26. The annual report and prospectus give no education or earlier career details."
+    },
+    {
+     "name": "Sachin Gupta",
+     "role": "Chief Operating Officer",
+     "since": "COO as of the FY26 annual report",
+     "family": true,
+     "relation": "Promoter; brother of CMO Mukesh Gupta; husband of promoter-group shareholder Preeti Gupta",
+     "stake": "9.63% (FY26 annual report)",
+     "bio": "Holds an MBA from Sikkim Manipal University (2008). The IPO prospectus said he had worked in the finance department of Mohan Clothing Company since 2012. As COO he handles corporate strategy, new business opportunities and market expansion."
+    },
+    {
+     "name": "Mukesh Gupta",
+     "role": "Chief Marketing Officer (co-founder)",
+     "since": "Co-founder and original subscriber; director until November 2022; now CMO",
+     "family": true,
+     "relation": "Brother of promoter Sachin Gupta; promoter group",
+     "bio": "One of the two original subscribers when the company was formed, and a director until November 2022. He now leads marketing, brand development and market positioning. His own proprietorship, Ultra Energy, is a related party. In February 2026 he was allotted 5.62 lakh warrants at ₹440, which will add to the promoter group's stake when converted."
+    }
+   ],
+   "changes": "No executive departures found. The Company Secretary changed during FY26 (Rajni, then Amisha Swain). The board proposed pay rises for Vishal Gupta and Bhuvneshwar Pal Singh in September 2026, for approval at the AGM on 30 September 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/SME_AR_32086_MAXVOLT_2025_2026_A_88590994_26092026135625.pdf (FY26 annual report and AGM notice: board, KMP and senior management, director profiles, promoter holdings, related parties)",
+    "https://nsearchives.nseindia.com/emerge/corporates/content/MaxvoltEnergyIndustriesLimited_PROSP.pdf (2025 prospectus: director and promoter bios, family relationships, related-party owners)"
    ],
    "updatedOn": "2026-09-29"
   },
@@ -5841,6 +5907,50 @@
    "updatedOn": "2026-09-29"
   },
   {
+   "company": "Kilburn Engg.",
+   "sector": "Industrial Manufacturing",
+   "style": "Promoter-owned, professionally run",
+   "styleNote": "The promoter group, led by the Khaitan family (Williamson Magor group companies) and the promoter company Firstview Trading (29.6%), owned about 46% at March 2026. No promoter works in management: Amritanshu Khaitan has been non-executive Chairman since April 2026, and Aditya Khaitan left the board in March 2026. The company is run by a hired Managing Director, Ranjit Lala, with a whole-time director for operations and long-serving executives.",
+   "people": [
+    {
+     "name": "Ranjit Pamo Lala",
+     "role": "Managing Director",
+     "since": "MD; re-appointed for two years from 15 May 2025 to May 2027",
+     "family": false,
+     "bio": "Ranjit Lala holds a B.E. in machine tool engineering and a master's in marketing management, and has attended management programmes at leading institutes. He has about 37 years in engineering companies. Before Kilburn he was Managing Director of Aerzen Machines India for about seven years, where he ran the business and set up a new factory. At Kilburn he is responsible for overall management and is not related to any director."
+    },
+    {
+     "name": "Anil Somshekar Karnad",
+     "role": "Whole-time Director (Operations)",
+     "since": "Re-appointed for two years from 1 Apr 2025 to Mar 2027",
+     "family": false,
+     "bio": "Anil Karnad holds a B.E. in mechanical engineering from Mumbai University. He has worked across oil and gas, fertilisers, power and chemicals, and at Kilburn runs day-to-day operations: production, quality, engineering, procurement, subcontracting, and site erection and commissioning."
+    },
+    {
+     "name": "Sachin Vijayakar",
+     "role": "Chief Financial Officer",
+     "since": "CFO since 2019; with the company since 1985",
+     "family": false,
+     "bio": "Sachin Vijayakar is a commerce graduate who has worked at Kilburn since 1985, according to a company investor presentation. He is the company's Chief Financial Officer and signs its accounts."
+    },
+    {
+     "name": "Maqsood R. Kazi",
+     "role": "President – Marketing",
+     "since": "With the company since 1986",
+     "family": false,
+     "bio": "M. R. Kazi holds a diploma in mechanical engineering and has worked at Kilburn since 1986, according to a company investor presentation. He was Vice President – Marketing and is now President – Marketing, and is part of the senior management team."
+    }
+   ],
+   "changes": "Nitin Varadkar (Purchase Head) and Dinesh Nikam (Project Head) were added to senior management on 14 Aug 2026. Company Secretary Arvind Bajoria resigned in Sep 2025 and Abhijit Mehta replaced him in Nov 2025. Amritanshu Khaitan became Chairman in April 2026 after Aditya Khaitan resigned in March 2026.",
+   "sources": [
+    "https://www.kilburnengg.com/wp-content/themes/kilburn/pdf/financial-results-of-the-company/25-26/kilburn-AR-2025-26.pdf",
+    "https://www.kilburnengg.com/contact-us/key-corporate-executive/",
+    "https://www.kilburnengg.com/wp-content/themes/kilburn/pdf/investors/kel-q3-investor-presentation.pdf",
+    "https://www.bseindia.com/xml-data/corpfiling/AttachLive/dbd64ba3-923a-41c6-99fd-44f5ff0368ed.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
    "company": "Tega Industries",
    "sector": "Industrial Manufacturing",
    "style": "Promoter-run",
@@ -5899,6 +6009,78 @@
     "https://nsearchives.nseindia.com/corporate/TEGA_27082026163206_Intimation_of_SMP_sd.pdf",
     "https://nsearchives.nseindia.com/corporate/TEGA_ROID_83258_KMP_Doc.zip",
     "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1696596_20072026013003_WEB.xml"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Shree Refrigrations",
+   "sector": "Industrial Manufacturing",
+   "style": "Promoter-run",
+   "styleNote": "Founder Ravalnath Shende is Chairman & Managing Director; his wife Rajashri and their daughters Devashree Nampurkar and Rucha Shende are whole-time directors. A retired naval commodore, Sunil Kaushik, is the one non-family whole-time director. The founding couple own about 44.6%.",
+   "people": [
+    {
+     "name": "Ravalnath Gopinath Shende",
+     "role": "Chairman & Managing Director",
+     "since": "2006 (founder; director since incorporation)",
+     "family": true,
+     "relation": "Founder; husband of Rajashri Shende; father of Devashree Nampurkar and Rucha Shende",
+     "stake": "35.00% (FY26 annual report); promoters together about 44.6%",
+     "bio": "Ravalnath Shende holds a bachelor's degree in production engineering from VJTI, University of Bombay (1983). He founded the company and has been a director since it was incorporated in 2006. His experience covers sales, manufacturing, operations, planning, finance and compressor manufacturing. He has received the GS Parkhe award for innovation in entrepreneurship and the Brig SB Ghorpade award for MSMEs in defence manufacturing."
+    },
+    {
+     "name": "Rajashri Ravalnath Shende",
+     "role": "Whole-time Director",
+     "since": "Director since 2006; whole-time director since 2021, re-appointed Feb 2026",
+     "family": true,
+     "relation": "Co-founder; wife of the Chairman & MD; mother of Devashree Nampurkar and Rucha Shende",
+     "stake": "9.56% (FY26 annual report)",
+     "bio": "Rajashri Shende holds a diploma in electronics and telecommunication engineering (1986). She is a founding member of the company, has been a director for about 20 years and became a whole-time director in 2021. The board re-appointed her as a whole-time director in February 2026, subject to shareholder approval."
+    },
+    {
+     "name": "Devashree Vishwesh Nampurkar",
+     "role": "Whole-time Director",
+     "since": "Joined 2016; board since May 2024",
+     "family": true,
+     "relation": "Promoter; daughter of the Chairman & MD and Rajashri Shende; sister of Rucha Shende",
+     "stake": "nil (FY26 annual report)",
+     "bio": "Devashree Nampurkar holds a B.E. in mechanical engineering from Shivaji University, Kolhapur (2010) and an MSc in business and management from the University of Strathclyde (2012). She joined the company in 2016 as Manager – Sales & Marketing and has about 13 years in sales, marketing and business strategy. She joined the board in May 2024."
+    },
+    {
+     "name": "Rucha Ravalnath Shende",
+     "role": "Whole-time Director (Additional Director)",
+     "since": "23 Feb 2026",
+     "family": true,
+     "relation": "Daughter of the Chairman & MD and Rajashri Shende; sister of Devashree Nampurkar",
+     "stake": "nil (FY26 annual report)",
+     "bio": "Rucha Shende is a mechanical engineer with a background in HVAC, plumbing and fire-protection design, working in the field since 2019 on institutional, healthcare, laboratory and public-sector projects using Revit and AutoCAD. She was appointed to the board as a whole-time director in February 2026, and her appointment was put to shareholders at the August 2026 AGM."
+    },
+    {
+     "name": "Commodore Sunil Kaushik, NM, VSM (Retd.)",
+     "role": "Whole-time Director",
+     "since": "Nov 2024",
+     "family": false,
+     "stake": "nil (FY26 annual report)",
+     "bio": "Sunil Kaushik holds a B.Tech in mechanical engineering from Jawaharlal Nehru University, an M.Phil, an M.Sc in defence and strategic studies, and a post-graduate diploma in industrial engineering. He served more than 35 years in the Indian Navy, where he led warship-building projects and worked on project planning and contract management. He joined the board as a whole-time director in November 2024."
+    },
+    {
+     "name": "Abhijeet Govind Saoji",
+     "role": "Chief Executive Officer",
+     "since": "Nov 2023",
+     "family": false,
+     "bio": "Abhijeet Saoji holds a B.Tech in agricultural engineering and had about 15 years in manufacturing when he was made CEO in November 2023. The 2025 IPO prospectus lists no previous employer for him. The company gives no further background."
+    },
+    {
+     "name": "Manoj Mahavir Kothale",
+     "role": "Chief Financial Officer",
+     "since": "Nov 2023",
+     "family": false,
+     "bio": "Manoj Kothale is a chartered accountant. He was appointed CFO in November 2023, and at the time of the 2025 IPO had a little over four years of experience in finance, banking and tax; his previous employer is listed as LV Dairys, Patas."
+    }
+   ],
+   "changes": "Rajashri Shende and Rucha Shende were appointed whole-time directors on 23 Feb 2026. Company Secretary Ashwini Godbole was replaced by Tanmay Pethkar during FY26. No executive changes found since the annual report.",
+   "sources": [
+    "https://www.shreeref.com/img/invester/SRL_AGM_Notice&%20Annual%20Report%20_FY2025-26_sd%20(1).pdf",
+    "https://www.shreeref.com/img/invester/IPO/Prospectus_SRL.pdf"
    ],
    "updatedOn": "2026-09-29"
   },
@@ -6447,6 +6629,766 @@
     "https://unitedheat.net/wp-content/uploads/2026/09/BM-3-UHTL-2026-27-Change-in-Mgt-CFO-Appt-25082026.pdf",
     "https://nsearchives.nseindia.com/corporate/team_sandeshc_08052026114606_49.pdf",
     "https://nsearchives.nseindia.com/emerge/corporates/content/UnitedHeatTransferLimited_DRHP.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Ador Welding",
+   "sector": "Industrial Products",
+   "style": "Promoter-run",
+   "styleNote": "Run by the Ador Group's promoter family. Ninotchka Malkani Nagpal is Executive Chairman and Aditya Malkani is Managing Director; both are named promoters. The family holding company J.B. Advani & Co. owns 45.2%, and the promoter group together owns 53.8% (March 2026). The annual report says no two directors are 'relatives' under the Companies Act. Another promoter, Dr Deep Lalvani, chairs the holding company and sits on the board as a non-executive director.",
+   "people": [
+    {
+     "name": "Ninotchka Malkani Nagpal",
+     "role": "Executive Chairman (Whole-time Director)",
+     "since": "2019 (Executive Chairman)",
+     "family": true,
+     "relation": "Promoter-group member of the Ador Group family",
+     "stake": "1.65% (FY26 annual report); promoter group together 53.8%",
+     "bio": "Holds an MBA in finance from Imperial College London and a B.Sc. in business and economics from Lehigh University, USA. She began her career at Alliance Capital Asset Management in New York. She has worked across Ador Welding and other Ador Group companies for over 27 years, mainly in finance, strategy and governance. She was chairman of Ador Fontech and of J.B. Advani & Co., the group's parent, and now guides the combined business after Ador Fontech merged into Ador Welding. She became Executive Chairman on 19 November 2019."
+    },
+    {
+     "name": "Aditya T. Malkani",
+     "role": "Managing Director",
+     "since": "2020",
+     "family": true,
+     "relation": "Promoter-group member of the Ador Group family",
+     "stake": "1.79% (FY26 annual report); promoter group together 53.8%",
+     "bio": "Holds an MBA in finance from the Indian School of Business, Hyderabad, and a BA in economics from Oberlin College, Ohio. He joined the Ador Group in 2002 and worked in international business, corporate marketing, strategy and new business projects before becoming Managing Director in September 2020. The board re-appointed him for another three years from 14 September 2026, subject to shareholder approval at the July 2026 AGM. He also sits on the board of Batliboi Ltd."
+    },
+    {
+     "name": "Krishnamurthy Suryanarayan",
+     "role": "Chief Financial Officer & Head – Strategy",
+     "since": "2026 (CFO); KMP since May 2025",
+     "family": false,
+     "bio": "A commerce graduate and chartered accountant with over 25 years in finance. He started in 1996 as an audit manager at RPG Life Sciences, then worked at Godrej Consumer Products, where he was CFO of its Africa operations. He joined CEAT in July 2020 to head business partnering, and was later CFO of Astec LifeSciences. At Ador he was Head – Corporate Strategy (a key managerial person from May 2025) and became CFO on 15 August 2026."
+    },
+    {
+     "name": "Lajpat Yadav",
+     "role": "Chief Operating Officer – India Welding Business",
+     "since": "2025 (KMP from May 2025)",
+     "family": false,
+     "bio": "A mechanical engineer with an MBA from the Birla Institute of Management & Technology, Delhi, and 33 years in the welding industry. He was appointed COO after the Ador Fontech merger and runs the India welding business, the maintenance and repair division, and the welding, cutting and automation division."
+    },
+    {
+     "name": "Mustafa Faizullabhoy",
+     "role": "Head – International Operations",
+     "since": "2025 (KMP from May 2025)",
+     "family": false,
+     "bio": "Named by the company as a key managerial person from 7 May 2025, heading international operations; exports were about 13% of FY26 sales. The annual report gives no further background."
+    }
+   ],
+   "changes": "CFO Surya Kant Sethia resigned on 30 July 2026 after 11 years and left on 14 August 2026; Krishnamurthy Suryanarayan became CFO & Head – Strategy from 15 August 2026. Smaller senior changes: Vinit Mangrulkar joined as VP – Sales (July 2026); Pradnya Iyer became Head – HR and V.M. Bhide was redesignated Chief Compliance Officer & Company Secretary (August 2026).",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_29490_ADOR_2025_2026_A_21318528_30062026134159.pdf",
+    "https://nsearchives.nseindia.com/corporate/ADORWELD_23072026173152_OutcomeofAGM23072026.pdf",
+    "https://www.cxomovements.com/industrial/ador-welding-appoints-krishnamurthy-suryanarayan-as-cfo-head-strategy/",
+    "https://businessupturn.com/business/corporates/ador-welding-cfo-surya-kant-sethia-resigns-krishnamurthy-suryanarayan-appointed-successor/",
+    "https://nsearchives.nseindia.com/corporate/ADORWELD_13082026163333_Reg30v1.pdf",
+    "https://nsearchives.nseindia.com/corporate/ADORWELD_09072026184125_Changeinmanagement_vinitsd.pdf",
+    "https://adorwelding.com/media-event/ador-welding-welcomes-lajpat-yadav-as-coo-a-strategic-leap-forward/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Diffusion Engineers",
+   "sector": "Industrial Products",
+   "style": "Promoter-run",
+   "styleNote": "A Garg family business, set up in 1982 by former Larsen & Toubro professionals including N.K. Garg. His son Prashant Garg is Chairman & Managing Director and the only executive director. Prashant's mother Chitra Garg and brother Dr Nitin Garg (a practising neurosurgeon) are non-executive directors. Prashant's wife Neelu Garg works in the company as General Manager – Procurement. Promoters own about 70%. There has been no CEO since Ramesh Kumar N left in February 2026.",
+   "people": [
+    {
+     "name": "Prashant Garg",
+     "role": "Chairman & Managing Director",
+     "since": "2003 (joined); MD since March 2020",
+     "family": true,
+     "relation": "Promoter; son of director Chitra Garg, brother of director Dr Nitin Garg, husband of GM – Procurement Neelu Garg",
+     "stake": "27.96% (FY26 annual report); with his mother (16.38%) and brother (19.78%) 64.1%, promoter group about 70%",
+     "bio": "Holds an engineering degree from Nagpur University and an MBA from Saïd Business School, University of Oxford. He joined the company in November 2003 and has about 22 years in the welding and wear-protection industry. He became Managing Director in March 2020 and led the company to its stock-market listing in October 2024. He runs day-to-day operations, new product development and the addition of new technology and product lines, and sits on the boards of the overseas subsidiaries."
+    },
+    {
+     "name": "Abhishek Mehta",
+     "role": "Chief Financial Officer",
+     "since": "2023 (CFO); joined 2020",
+     "family": false,
+     "stake": "About 0.01% (IPO prospectus, 2024)",
+     "bio": "A chartered accountant who also holds a law degree from Nagpur University. Before joining he spent over ten years in the insurance and banking sector. He joined in July 2020 as General Manager – Finance and Accounts and became CFO on 29 June 2023."
+    },
+    {
+     "name": "Manoj Kumar Srivastava",
+     "role": "Senior Vice President – Sales & Marketing",
+     "since": "2016",
+     "family": false,
+     "bio": "Holds a diploma in mechanical engineering from the Institute of Engineering and Rural Technology, Allahabad. He has over three decades in sales and marketing at several engineering companies, and joined Diffusion in October 2016."
+    },
+    {
+     "name": "Shreekant Premkhede",
+     "role": "Senior Vice President – Operations",
+     "since": "1998 (joined as trainee)",
+     "family": false,
+     "bio": "Holds an engineering degree from Nagpur University. He joined as a trainee sales engineer in July 1998 and has spent his whole career of more than two decades at the company, becoming Vice President – Marketing in 2022 and later Senior Vice President – Operations."
+    },
+    {
+     "name": "Ajay Urkude",
+     "role": "Senior Vice President – Sales & Marketing (PAN India)",
+     "since": "2003",
+     "family": false,
+     "bio": "Holds a B.Tech in mechanical engineering from J.R.N. Rajasthan Vidyapeeth University. He has worked at the company since 2003 and has more than two decades in the engineering sector."
+    }
+   ],
+   "changes": "CEO Ramesh Kumar N (joined February 2025 from CG Power) resigned with effect from 6 February 2026; no new CEO has been named, so the Chairman & MD runs the business directly.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30343_DIFFNKG_2025_2026_A_5639204_14082026102631.pdf",
+    "https://nsearchives.nseindia.com/corporate/FP_INE184O01015_01OCT2024.pdf",
+    "https://nsearchives.nseindia.com/corporate/DIFFUSION_06022026185246_Outcome06022026.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "HBL Engineering",
+   "sector": "Industrial Products",
+   "style": "Promoter-run",
+   "styleNote": "Founder Dr A.J. Prasad, now 80, is Chairman & Managing Director. His daughter Kavita Prasad Aluru and her husband M.S.S. Srinath are executive directors. The founder's granddaughter Deeksha Mikkilineni is a non-executive director. Promoters own 59.1%, of which 51.3% sits in the Aluru Family Private Trust with Kavita as trustee. The founder took ₹56cr of profit commission in FY26 on top of ₹1.2cr of pay. The CFO and electronics head are hired professionals.",
+   "people": [
+    {
+     "name": "Dr Aluru Jagadish Prasad",
+     "role": "Chairman & Managing Director",
+     "since": "1977 (founder); director since 1986",
+     "family": true,
+     "relation": "Founder; father of Kavita Prasad Aluru, father-in-law of M.S.S. Srinath, grandfather of director Deeksha Mikkilineni",
+     "stake": "0.97% in his own name (FY26 annual report); promoter group 59.1%, mostly through the Aluru Family Private Trust (51.3%)",
+     "bio": "Holds a B.Tech from IIT Kharagpur, an MS in management from MIT and a doctorate in international business from Columbia University. Before starting the business he was at the Administrative Staff College of India. He founded HBL in 1977 to make aircraft batteries for the defence forces, and built it into a maker of specialised batteries, electronics and the Kavach train-safety system. He has been on the board since 1986 and was re-appointed Chairman & MD at the 2025 AGM. His FY26 pay was ₹1.17cr plus ₹56cr of commission linked to profit."
+    },
+    {
+     "name": "Kavita Prasad Aluru",
+     "role": "Executive Director",
+     "since": "2026 (executive again); on the board since 2000",
+     "family": true,
+     "relation": "Daughter of the founder; wife of M.S.S. Srinath",
+     "stake": "3.53% (FY26 annual report); she is also trustee of the Aluru Family Private Trust, which holds 51.3%",
+     "bio": "A commerce graduate who joined the board in 2000 and was an executive director until August 2023. She has focused on exports, international marketing, finance and banking, internal control and governance. The board made her an executive director again for five years from 1 July 2026, citing the larger scale of the business and succession planning; shareholders approved this at the 26 September 2026 AGM. She will oversee exports, finance, banking and governance."
+    },
+    {
+     "name": "M.S.S. Srinath",
+     "role": "Executive (Whole-time) Director",
+     "since": "2024",
+     "family": true,
+     "relation": "Son-in-law of the founder; husband of Kavita Prasad Aluru",
+     "stake": "0.71% (FY26 annual report)",
+     "bio": "Holds a BA (Hons) in economics. He became an executive director in May 2024 and works mainly on marketing and administration. His FY26 pay was about ₹0.9cr."
+    },
+    {
+     "name": "Sairam Edara",
+     "role": "Chief Financial Officer",
+     "since": "2023",
+     "family": false,
+     "bio": "A US CPA (Arizona State Board of Accountancy) who is also a member of the Institute of Chartered Accountants of India and the Institute of Company Secretaries of India, and a law graduate from Osmania University. Before joining in March 2023 he was Group CFO of the Archean group. His FY26 pay was ₹1.15cr."
+    },
+    {
+     "name": "M.V.V. Vidyasagar",
+     "role": "President – Electronics Group",
+     "since": "2011",
+     "family": false,
+     "bio": "An electrical and electronics engineer (BE) who joined in April 2011 from Axiom Consulting, where he was Director (Operations). He heads the electronics group; his FY26 pay was ₹1.41cr."
+    }
+   ],
+   "changes": "Kavita Prasad Aluru moved from non-executive to executive director from 1 July 2026 (approved by shareholders on 26 September 2026). No change in senior management in FY26.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31215_HBLENGINE_2025_2026_A_3248804_03092026143904.pdf",
+    "https://nsearchives.nseindia.com/corporate/HBLPOWER_01072026164846_outcomeoftheboardmeeting01072026.pdf",
+    "https://nsearchives.nseindia.com/corporate/HBLPOWER_26092026205140_OutcomeofAGM2026.pdf",
+    "https://www.forbes.com/profile/aluru-jagadish-prasad/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Inox India",
+   "sector": "Industrial Products",
+   "style": "Promoter-owned, professionally run",
+   "styleNote": "Part of the INOX Group of Pavan Kumar Jain, who is the non-executive Chairman. His son Siddharth Jain and daughter-in-law Ishita Jain are non-executive directors; Siddharth was paid ₹3.9cr of commission in FY26 and oversees group strategy. Promoters own about 75%: Siddharth 37.3%, Pavan 16.4% and Ishita 4.2% in their own names. Day-to-day, the company is run by long-serving professionals: Executive Director Parag Kulkarni, CEO Deepak Acharya and CFO Pavan Logar, all with the company since 1992–93.",
+   "people": [
+    {
+     "name": "Parag Kulkarni",
+     "role": "Executive Director",
+     "since": "1992 (joined)",
+     "family": false,
+     "stake": "0.24% (2,21,000 shares, FY26 annual report)",
+     "bio": "Holds a mechanical engineering degree from the College of Engineering, Goa, and a master's in management studies from Jamnalal Bajaj Institute of Management Studies, Mumbai. He joined on 16 July 1992 and has about 30 years in cryogenic engineering and high-vacuum technology. He is the only executive on the board and oversees strategic growth, engineering development, business expansion and new-energy strategy."
+    },
+    {
+     "name": "Deepak Acharya",
+     "role": "Chief Executive Officer",
+     "since": "1992 (joined)",
+     "family": false,
+     "bio": "Holds a mechanical engineering degree from Nagpur University (NIT Nagpur) and an M.E. in mechanical engineering from the University of Roorkee (now IIT Roorkee). He is a certified welding inspector, a fellow of the Indian Institute of Welding, and has diplomas in marketing, finance and international welding. Before joining in 1992 he was a welding application specialist at Advani Oerlikon. He has 35+ years in operations, strategy, product development and technology transfer. His FY26 pay was ₹1.86cr."
+    },
+    {
+     "name": "Pavan Logar",
+     "role": "Chief Financial Officer",
+     "since": "1993 (joined)",
+     "family": false,
+     "bio": "A commerce graduate from Rajasthan University who is both a chartered accountant and a company secretary. He was deputy manager for accounts and taxation at Mangalam Cement before joining in 1993 as a manager. He was Company Secretary from December 1993 to July 2022 and is now CFO, with 35+ years in accounts and taxation."
+    },
+    {
+     "name": "Tushar Zope",
+     "role": "Chief Technology Officer",
+     "since": "2024",
+     "family": false,
+     "bio": "Holds a bachelor's degree in petrochemical engineering from Maharashtra Institute of Technology and has over 33 years in process-plant engineering and project management across refineries, petrochemicals, hydrogen and air separation. He joined in 2024 from Worley Services India, where he was an associate director."
+    },
+    {
+     "name": "Savir Julka",
+     "role": "Global Head – Sales & Marketing (Industrial Gases)",
+     "since": "1997",
+     "family": false,
+     "bio": "Holds a mechanical engineering degree from the Maharaja Sayajirao University of Baroda, a PG diploma in marketing and sales management, and has attended an IIM Ahmedabad management programme. He was an area manager at Mekaster Group before joining in December 1997, and has 30+ years in technical sales and marketing."
+    },
+    {
+     "name": "Vijay Kalaria",
+     "role": "Global Head – Sales & Marketing (LNG)",
+     "since": "1999",
+     "family": false,
+     "bio": "Holds a mechanical engineering degree from Sardar Patel University and PG diplomas in marketing and computer management. He was an assistant manager (marketing) at Jord Engineers India before joining in January 1999, and has 35+ years in marketing and sales."
+    },
+    {
+     "name": "Sudhir Sethi",
+     "role": "Chief People Officer & Head – Legal",
+     "since": "2007",
+     "family": false,
+     "bio": "Holds a B.Sc. in physics and a master's in social welfare from the Maharaja Sayajirao University of Baroda. He was senior works manager at Gujarat Reclaim and Rubber Products before joining in September 2007, and has 35+ years in human resources."
+    }
+   ],
+   "changes": "No changes to directors or key managerial personnel announced since the FY26 annual report.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_29318_INOXINDIA_2025_2026_A_10918171_01062026150809.pdf",
+    "https://inoxcva.com/our-team.php"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Carborundum Univer.",
+   "sector": "Industrial Products",
+   "style": "Promoter-owned, professionally run",
+   "styleNote": "Part of the Murugappa Group, whose family and group firms own 38.9%. M.M. Murugappan, a Murugappa family member, is the non-executive Chairman; his son Muthu Murugappan (CEO of E.I.D. Parry) is a non-executive director. The business is run by Managing Director Sridharan Rangarajan, a career group finance executive, who is the only executive director. Business heads run abrasives, ceramics, electrominerals and refractories.",
+   "people": [
+    {
+     "name": "Sridharan Rangarajan",
+     "role": "Managing Director",
+     "since": "2023 (MD); joined 2011",
+     "family": false,
+     "stake": "About 0.15% (2,88,364 shares, FY26 annual report); also holds stock options",
+     "bio": "A chartered accountant and cost accountant with a commerce degree from Madurai University, and 40 years in finance across manufacturing, banking, contracting and distribution. Before joining he was CFO of Timken's Indian operations. He joined CUMI as CFO in June 2011, became President and Group CFO of the Murugappa Group in January 2018, and returned as CUMI's Director – Finance and Strategy in April 2021. He became Managing Director on 3 August 2023, succeeding N. Ananthaseshan. He sits on the boards of several Murugappa Group companies and was earlier a director of Timken India."
+    },
+    {
+     "name": "Sriram Seshadri",
+     "role": "Chief Financial Officer",
+     "since": "2026",
+     "family": false,
+     "bio": "A cost and management accountant (CIMA UK, CGMA USA and ICMAI) with over 30 years in automotive and industrial manufacturing. He was CFO of Woco India and of Delphi TVS Technologies, Director – Finance at Tenneco India, and most recently Vice President – Business Controller at Endurance Technologies. He became CFO on 7 September 2026, filling a post left empty for almost a year."
+    },
+    {
+     "name": "Srikanth C",
+     "role": "Business Head – Abrasives",
+     "since": "2024",
+     "family": false,
+     "bio": "Holds an MBA in marketing and has about 40 years of experience. He joined in May 2024 from Wendt (India), a maker of super-abrasives, to run CUMI's abrasives business."
+    },
+    {
+     "name": "M.V. Sivakumaran",
+     "role": "Business Head – Electrominerals",
+     "since": "1996 (joined the group)",
+     "family": false,
+     "bio": "Holds M.Sc., M.Tech and MBA degrees and has 29 years of experience. He joined the Murugappa Group in July 1996 and now heads the electrominerals business, which includes the Russian subsidiary VAW."
+    },
+    {
+     "name": "Prathap Kumar",
+     "role": "Business Head – Industrial Ceramics",
+     "since": "2001 (joined the group)",
+     "family": false,
+     "bio": "A mechanical engineer with 24 years of experience, who has been with the Murugappa Group since July 2001. He heads industrial ceramics, the growth business the company is investing in most heavily."
+    },
+    {
+     "name": "Raghavendra Pai",
+     "role": "Business Head – Super Refractories and Prodorite",
+     "since": "2005",
+     "family": false,
+     "bio": "Holds an M.Tech in chemical engineering and has 29 years of experience. He joined in June 2005 from Schunk Carbon Technology and heads the refractories business."
+    },
+    {
+     "name": "Shyam C. Raman",
+     "role": "Chief Human Resources Officer",
+     "since": "2024",
+     "family": false,
+     "bio": "Holds a PGDM from IIM Kolkata and has 41 years of experience. He joined in July 2024 from Cholamandalam MS General Insurance, a Murugappa Group company."
+    }
+   ],
+   "changes": "CFO Sushil Bendale resigned in September 2025; the post stayed vacant until Sriram Seshadri joined on 7 September 2026. Head of IT Ajit Kolhe left in June 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_29837_CARBORUNIV_2025_2026_A_17464766_16072026211252.pdf",
+    "https://nsearchives.nseindia.com/corporate/CARBORUNIV_07092026090940_intimation_sd.pdf",
+    "https://nsearchives.nseindia.com/corporate/CARBORUNIV_26062026181127_Intimation-sd.pdf",
+    "https://www.business-standard.com/companies/news/board-of-cumi-appoints-sridharan-rangarajan-as-new-md-from-august-3-123062300810_1.html"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "KRN Heat Exchan",
+   "sector": "Industrial Products",
+   "style": "Promoter-run",
+   "styleNote": "A first-generation business set up in 2017 by Santosh Kumar Yadav, a farmer's son from Rajasthan and a former Lloyd Electric employee. He is Chairman & MD; his wife Anju Devi is a whole-time director; his brother Manohar Lal is a non-executive director. The couple owned 70.8% at March 2026 (Anju 38.1%, Santosh 32.7%); after the post-year-end share placement promoters own about 66%. The finance team is hired: a new CFO, Pawan Nawal, joined in May 2026.",
+   "people": [
+    {
+     "name": "Santosh Kumar Yadav",
+     "role": "Chairman & Managing Director",
+     "since": "2017 (founder)",
+     "family": true,
+     "relation": "Founder; husband of Anju Devi, brother of director Manohar Lal",
+     "stake": "32.66% (FY26 annual report, before the 2026 share placement); with his wife 70.8%",
+     "bio": "Holds a diploma in business management from the Institute of Management Technology (distance learning), Ghaziabad, and a diploma in mechanical engineering from the Rajasthan Board of Technical Education. He worked at Lloyd Electric & Engineering before starting KRN, and has over 20 years in making heat exchangers and refrigeration units. He has been on the board since the company was set up in 2017 and took it public in 2024. The board re-appointed him for five years from 9 May 2026 and raised his salary to ₹1.26cr a year from April 2026."
+    },
+    {
+     "name": "Anju Devi",
+     "role": "Whole-time Director",
+     "since": "2017 (director since incorporation)",
+     "family": true,
+     "relation": "Co-promoter; wife of the Chairman & MD, sister-in-law of Manohar Lal",
+     "stake": "38.13% (FY26 annual report, before the 2026 share placement); with her husband 70.8%",
+     "bio": "Has secondary-school education and was a resident consultant at Lloyd Electric from 2012 to 2014. She has managed human resources since the company began and has been a director since incorporation. She was re-appointed whole-time director for five years from 9 May 2026; her FY26 pay was ₹60 lakh."
+    },
+    {
+     "name": "Pawan Nawal",
+     "role": "Chief Financial Officer",
+     "since": "2026",
+     "family": false,
+     "bio": "A chartered accountant with an MBA in finance and over 20 years in business finance. He was CFO of Pashupati Laminators and Jaipur Rugs, and head of finance at SB Constantia (SB Packaging), TAFE Motors and Tractors (Eicher Engines) and Rockman Industries. Earlier he worked at Grasim Industries, Videocon D2H and Huawei. He became CFO on 15 May 2026."
+    },
+    {
+     "name": "Vivek Chauhan",
+     "role": "Senior General Manager – Operations (purchase, sales and marketing)",
+     "since": "Not disclosed",
+     "family": false,
+     "bio": "Named by the company as senior management, covering purchase, sales and marketing (listed on the company's website as Senior GM – Operations). No further background is disclosed."
+    },
+    {
+     "name": "Basti Ram Yadav",
+     "role": "Senior General Manager – Process Engineering & Maintenance",
+     "since": "Not disclosed",
+     "family": false,
+     "bio": "Named by the company as senior management, in charge of process engineering and maintenance at the Neemrana plant. No further background, or any family link, is disclosed."
+    },
+    {
+     "name": "Sonu Gupta",
+     "role": "General Manager – Finance",
+     "since": "2026 (in this role)",
+     "family": false,
+     "bio": "Was CFO through FY26 and was redesignated General Manager – Finance on 15 May 2026, when Pawan Nawal took over as CFO. He remains part of senior management."
+    }
+   ],
+   "changes": "CFO Sonu Gupta stepped down as CFO on 14 May 2026 (now GM – Finance); Pawan Nawal became CFO on 15 May 2026. Jitendra Kumar Sharma became Company Secretary on 28 April 2026. The MD and whole-time director were re-appointed for five years from 9 May 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31171_KRN_2025_2026_A_14030025_02092026205126.pdf",
+    "https://nsearchives.nseindia.com/corporate/KRNHEAT_14052026195018_outcomefinalsigned.pdf",
+    "https://nsearchives.nseindia.com/corporate/KRNHEAT_13032026193802_outcomeofbmsigned.pdf",
+    "https://krnheatexchanger.com/about/our-leaders/",
+    "https://www.businesstoday.in/markets/stocks/story/krn-ipo-a-farmers-son-from-rajasthan-is-set-to-launch-rs-340-crore-ipo-this-week-key-things-to-know-447029-2024-09-23"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Omnitech Engineering",
+   "sector": "Industrial Products",
+   "style": "Promoter-run",
+   "styleNote": "Founder Udaykumar Parekh, one of four partners who started the business as a Rajkot partnership in 2006, is Chairman & MD and owned 73.3% at March 2026. His brother-in-law Paras Parekh (husband of his sister) is Whole-time Director & CFO, and his sister Dharmi Parekh is a non-executive director. A hired COO and Chief Revenue Officer, both joined in 2024–25, complete the senior team.",
+   "people": [
+    {
+     "name": "Udaykumar Arunkumar Parekh",
+     "role": "Chairman & Managing Director",
+     "since": "2006 (founding partner)",
+     "family": true,
+     "relation": "Founder; brother of director Dharmi Parekh, brother-in-law of Whole-time Director & CFO Paras Parekh",
+     "stake": "73.30% (FY26 annual report)",
+     "bio": "Holds a mechanical engineering degree from V.V.P. Engineering College, Rajkot (Saurashtra University) and a diploma in mechanical engineering from the Gujarat Technical Examinations Board. He was a sales executive at Jyoti CNC Automation before co-founding the business as a partnership firm in 2006; it became a company in 2021 and listed in 2026. He runs day-to-day operations, has about 19 years in precision machining, and is also CEO and President of the US subsidiary, Omnitech Group Inc."
+    },
+    {
+     "name": "Paras Mukundrai Parekh",
+     "role": "Whole-time Director & Chief Financial Officer",
+     "since": "2014 (joined); on the board since 2024",
+     "family": true,
+     "relation": "Brother-in-law of the Chairman & MD (married to his sister) and of director Dharmi Parekh",
+     "stake": "Negligible (1 share before the IPO, per the prospectus)",
+     "bio": "Holds a B.Com from J.C. Education Trust Commerce College, Junagadh (Saurashtra University) and an MBA from the Sinhgad Institute of Business Administration and Research, Pune. He was an assistant manager at Kotak Mahindra Bank in Ahmedabad and a deputy manager at HDFC Bank in Rajkot. He joined in 2014 as Vice President – Finance and Accounts and became Whole-time Director & CFO on 2 September 2024. He is also Vice President, Treasurer and Secretary of the US subsidiary, and has about 18 years in banking and precision engineering."
+    },
+    {
+     "name": "Haresh T. Akhja",
+     "role": "Chief Operating Officer",
+     "since": "2025",
+     "family": false,
+     "bio": "Holds a bachelor's degree in production engineering from Bhavnagar University and a diploma in fabrication technology. Before joining on 1 April 2025 he was Associate Vice President at Praj Industries, and earlier worked at Ahmed Mansoor Al-Aali, Ramsis Engineering, Thermax (deputy manager – production) and Larsen & Toubro. He oversees supply chain and procurement."
+    },
+    {
+     "name": "Bhavin Prahalad Acharya",
+     "role": "Chief Revenue Officer",
+     "since": "2024",
+     "family": false,
+     "bio": "Holds a postgraduate diploma in computer applications from the Tata Unisys education centre in Mumbai. He was VP – Marketing at Goodluck Engineering (a unit of Goodluck India) and earlier worked at Ambica Steels. He joined on 2 September 2024 and runs sales, marketing and brand development."
+    }
+   ],
+   "changes": "Listed in 2026. No change in key managerial personnel or senior management in FY26, and none announced since.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31159_OMNI_2025_2026_A_6301799_02092026200238.pdf",
+    "https://s3.ap-south-1.amazonaws.com/cms.equirus.tech/Omnitech_Engineering_Limited_Red_Herring_Prospectus_1fcf868f96.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Borosil Renewables",
+   "sector": "Industrial Products",
+   "style": "Promoter-run",
+   "styleNote": "A Kheruka family company. Pradeep Kumar Kheruka, with the company since it began, is Executive Chairman and was paid ₹12.4cr in FY26. His son Shreevar Kheruka is non-executive Vice Chairman and runs the sister company Borosil Ltd. A hired CEO, Melwyn Moses (since December 2024), runs operations, and Sunil Roongta is Whole-time Director & CFO. Promoters own 56.0%.",
+   "people": [
+    {
+     "name": "Pradeep Kumar Kheruka",
+     "role": "Executive Chairman",
+     "since": "Since inception",
+     "family": true,
+     "relation": "Promoter; father of Vice Chairman Shreevar Kheruka",
+     "stake": "1.67% (FY26 annual report); promoter group together 56.0%",
+     "bio": "Has been with the company since it was set up and has over five decades in the glass industry. He knows both soda-lime flat glass and borosilicate glass manufacturing, and has set up plants and sold glass in India and abroad. He won the EY Entrepreneur of the Year award in the manufacturing category in 2022. His FY26 pay was ₹12.4cr, up 46% on FY25."
+    },
+    {
+     "name": "David Melwyn Moses",
+     "role": "Chief Executive Officer",
+     "since": "2024",
+     "family": false,
+     "bio": "A mechanical engineer from A.K. College of Engineering who has completed Harvard Business School's senior executive leadership programme. He has nearly 30 years in manufacturing, supply chain and operations, and has run up to 31 plants and more than 6,000 people. He joined on 2 December 2024 from UPL, where he was global HSE head and global formulations head; earlier he worked at Merisant, Zeneca/Syngenta, PepsiCo India and REIL Products. His FY26 pay was ₹2.75cr."
+    },
+    {
+     "name": "Sunil Roongta",
+     "role": "Whole-time Director & Chief Financial Officer",
+     "since": "2024 (whole-time director); over a decade in the Borosil Group",
+     "family": false,
+     "stake": "About 0.01% (11,600 shares, FY26 annual report)",
+     "bio": "A chartered accountant, cost accountant and company secretary with over ten years in senior roles in the Borosil Group, including running finance and commercial work at the manufacturing plant. He is CFO and joined the board as whole-time director on 27 May 2024. In May 2026 the board re-appointed him as whole-time director from 27 May 2027 to 22 July 2029, subject to shareholder approval."
+    },
+    {
+     "name": "Ajay Singh",
+     "role": "Vice President & Plant Head (Bharuch)",
+     "since": "2026",
+     "family": false,
+     "bio": "A mechanical engineer with an MBA in operations and marketing, and over 26 years in plant leadership in float glass, glass processing and continuous-process manufacturing. He held senior roles at Guardian Industries and was most recently Plant Director at Gerresheimer in India. He joined on 21 January 2026 to run the Bharuch plant, after the previous plant head left in June 2025."
+    },
+    {
+     "name": "Jeetendra Sehgal",
+     "role": "President – Business Research & Development",
+     "since": "Not disclosed",
+     "family": false,
+     "bio": "Named by the company as senior management, heading business research and development. The annual report gives no further background."
+    }
+   ],
+   "changes": "Ashok Jain stepped down as whole-time director on 31 July 2025 and stays as a non-executive director. Company Secretary Ravi Vaishnav left in November 2025 (replaced by Kishor Talreja). Plant head Anoj Singh left in June 2025; the company is taking legal action to recover a loan from him. HR head Dilip Acharya ceased to be senior management in July 2026 but stays an employee.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30072_BORORENEW_2025_2026_A_14536348_30072026152935.pdf",
+    "https://nsearchives.nseindia.com/corporate/BORORENEW11_12052026154228_OUTCOME__1_.pdf",
+    "https://nsearchives.nseindia.com/corporate/BORORENEW11_21012026112523_SEIntimationUPLOAD.pdf",
+    "https://nsearchives.nseindia.com/corporate/BORORENEW1_20012026180734_SEIntimation_SMP.pdf",
+    "https://nsearchives.nseindia.com/corporate/BORORENEW12_14072026105644_SEIntimation_SMP.pdf",
+    "https://www.peoplematters.in/news/appointments/borosil-renewables-appoints-melwyn-moses-as-ceo-43595"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Tempsens Instruments",
+   "sector": "Industrial Products",
+   "style": "Promoter-run",
+   "styleNote": "A Rathi–Talesara family business from Udaipur, set up in 1990. Chairman Virendra Prakash Rathi and his son Vinay Rathi (MD) run it. Vinay's son Aryan and two cousins, Hemant Rathi and Akhil Maheshwari, run divisions or sales. Co-promoter Pratap Singh Talesara and his nephew Ankit Talesara are non-executive directors. Promoters own about 65.7% after the August 2026 IPO. The CFO, Priyanka Menaria, is a long-time employee rather than a family member.",
+   "people": [
+    {
+     "name": "Vinay Rathi",
+     "role": "Managing Director",
+     "since": "2003 (joined); director since 2019",
+     "family": true,
+     "relation": "Promoter; son of Chairman Virendra Prakash Rathi, father of Aryan Rathi, cousin of Hemant Rathi and Akhil Maheshwari",
+     "stake": "28.86% after the IPO (prospectus, August 2026); promoters together about 65.7%",
+     "bio": "Holds an engineering degree in electrical and electronics from Mangalore University and a postgraduate diploma in management from T.A. Pai Management Institute, Manipal. He has over 29 years in engineering and has been with the company since 2003; he became a director in September 2019. As MD he runs marketing, sales, market research and product development. He won the 'Best Young Entrepreneur' award at the D&B–Axis Bank SME awards in 2012. He also sits on the boards of group firms including Pyrosens Technologies, Accurate Optoelectronics, Tempsens Measurement and Control, and Victura Tempsens Technologies."
+    },
+    {
+     "name": "Virendra Prakash Rathi",
+     "role": "Chairman & Executive Director",
+     "since": "1990 (director since incorporation)",
+     "family": true,
+     "relation": "Promoter; father of MD Vinay Rathi, grandfather of Aryan Rathi, uncle of Hemant Rathi and Akhil Maheshwari",
+     "stake": "14.91% after the IPO (prospectus, August 2026); a Rathi family trust holds another 9.1%",
+     "bio": "Holds an electrical engineering degree from Bhopal University and has over 36 years in engineering. He has been a director since the company was set up in 1990 and is responsible for its technology, factories and global tie-ups. He received a national award for small-enterprise entrepreneurship from the MSME ministry in 2010, a distinguished-alumnus award from MANIT Bhopal in 2024, and a lifetime achievement award from the Udaipur Chamber of Commerce in 2026. He is also a director of Pyrotech Electronics and Pyrotech Control (India)."
+    },
+    {
+     "name": "Priyanka Menaria",
+     "role": "Chief Financial Officer",
+     "since": "2025 (CFO); joined 2016",
+     "family": false,
+     "bio": "A chartered accountant (FCA) with a commerce degree from Mohan Lal Sukhadia University, Udaipur, and over 12 years in finance. She joined the company in July 2016 and became CFO on 7 April 2025, ahead of the IPO."
+    },
+    {
+     "name": "Hemant Rathi",
+     "role": "General Manager – Sensor Division",
+     "since": "2002 (joined); GM since 2007",
+     "family": true,
+     "relation": "Nephew of Chairman Virendra Prakash Rathi (son of his brother); cousin of MD Vinay Rathi",
+     "bio": "Holds a diploma in electronics engineering and has over 24 years in the electrical industry. He joined in May 2002 and has headed the sensor division since January 2007. He is in charge of sales for all divisions except heaters and of new product development."
+    },
+    {
+     "name": "Akhil Maheshwari",
+     "role": "General Manager – Heater Division",
+     "since": "2006 (joined); GM since 2008",
+     "family": true,
+     "relation": "Nephew of Chairman Virendra Prakash Rathi (son of his sister); cousin of MD Vinay Rathi",
+     "bio": "Holds a B.Tech in electronics and communication engineering from Dr A.P.J. Abdul Kalam Technical University and has over 20 years in the electrical industry. He joined in June 2006 and has run the heater division since March 2008, covering custom heating solutions from design to delivery."
+    },
+    {
+     "name": "Narendra Khamesra",
+     "role": "General Manager – Cable Division",
+     "since": "2009",
+     "family": false,
+     "bio": "Holds a B.Com (Hons) from Mohanlal Sukhadia University and is a Graduate Gemmologist (Gemological Institute of America). He has over 17 years in the electrical industry and has led marketing and production of the cable business since May 2009."
+    },
+    {
+     "name": "Aryan Rathi",
+     "role": "Lead – Global Sales",
+     "since": "2024 (joined); in role since April 2025",
+     "family": true,
+     "relation": "Son of MD Vinay Rathi; grandson of Chairman Virendra Prakash Rathi",
+     "bio": "Holds a B.Sc. from Texas A&M University and has about two years of work experience. He joined in May 2024 and runs sales and business development outside India. His FY26 pay was about ₹1.1cr, about three times that of any other senior manager named in the prospectus."
+    }
+   ],
+   "changes": "Listed on the stock exchanges in August 2026; no management changes announced since.",
+   "sources": [
+    "https://tempsens.com/wp-content/uploads/2026/08/Tempsens-Instruments-India-Limited-Prospectus.pdf",
+    "https://www.bseindia.com/corporates/download/363130/IPO%20Open/RedHerringProspectus_20260818164505.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Patil Automation",
+   "sector": "Industrial Products",
+   "style": "Promoter-run",
+   "styleNote": "Founded in 2015 by Manoj Patil, a former automation engineer. He is Chairman & MD; his wife Aarti Patil is an executive director (HR and admin) and his brother Prafulla Patil is executive director & CFO. A third brother, Vijay Patil, is Director (Operations) and heads design. Promoters own about 69%. Manoj and Aarti were paid ₹1.8cr and ₹1.7cr in FY26 and also receive ₹2.3cr each in factory rent from the company. Firms linked to relatives supplied about ₹4.5cr of services in FY26.",
+   "people": [
+    {
+     "name": "Manoj Pandurang Patil",
+     "role": "Chairman & Managing Director",
+     "since": "2015 (founder)",
+     "family": true,
+     "relation": "Founder; husband of Aarti Patil, brother of Prafulla and Vijay Patil",
+     "stake": "55.67% (FY26 annual report); with his wife and brother 68.7%",
+     "bio": "Holds a diploma in mechanical engineering (Maharashtra Board of Technical Examinations, 1998). He was a projects engineer at Finearc Systems, Pune (1998–2005) and then assistant manager – projects at Precision Automation and Robotics India (PARI) from 2005. He started Fine Automation Robotics India in 2013 and has led Patil Automation since 2015, with over 25 years in the automation industry. He took the company public on the NSE SME platform in June 2025. His FY26 salary was ₹1.8cr, and he also earns rent on the factory."
+    },
+    {
+     "name": "Aarti Manoj Patil",
+     "role": "Executive Director (HR & Administration)",
+     "since": "2015",
+     "family": true,
+     "relation": "Co-promoter; wife of the Chairman & MD, sister-in-law of Prafulla Patil",
+     "stake": "12.93% (FY26 annual report)",
+     "bio": "Holds a B.Sc. from Amravati University (1999). She has been on the board since 2015 and runs HR and administration; she held no job before joining the company. Her FY26 salary was ₹1.68cr, and she also earns rent on the factory."
+    },
+    {
+     "name": "Prafulla Pandurang Patil",
+     "role": "Executive Director & Chief Financial Officer",
+     "since": "2015 (joined); ED & CFO since 2024",
+     "family": true,
+     "relation": "Co-promoter; brother of the Chairman & MD and of Vijay Patil",
+     "stake": "0.14% (FY26 annual report)",
+     "bio": "Holds a diploma in mechanical engineering (Maharashtra Board of Technical Examinations, 1994). He spent about 16 years running die-shop operations at Bharat Forge, Hindustan Motors and Neepaz V Forge (1995–2011). He has overseen accounts and finance at the company since 2015 and became Executive Director & CFO in August 2024. His FY26 pay was ₹36 lakh."
+    },
+    {
+     "name": "Vijay Pandurang Patil",
+     "role": "Director (Operations), head of design",
+     "since": "2016",
+     "family": true,
+     "relation": "Brother of the Chairman & MD and of Prafulla Patil",
+     "stake": "About 0.14% (30,000 shares, IPO prospectus)",
+     "bio": "Holds a diploma in production technology (2000) and has about 17 years in automation. He started at Precision Automation and Robotics India in 2007, was head of technical at Fine Automation (2011–16), and joined in 2016 as head of mechanical design. He now heads the design team; his FY26 pay was ₹34 lakh."
+    },
+    {
+     "name": "Sanjaya Kumar Patra",
+     "role": "Chief Management Officer (business development and IT)",
+     "since": "2024",
+     "family": false,
+     "bio": "Holds an engineering degree from NIT Bhopal (Barkatullah University, 1994) and a master's in marketing management from Pondicherry University. He began as a service engineer at Mahindra & Mahindra (1995–98) and held management roles at Hyundai Motor India, Maruti Udyog, Bajaj Allianz, Renault Nissan Technology, Volkswagen, FCA India and Go Digit General Insurance. He joined in October 2024 to run business development and IT."
+    },
+    {
+     "name": "Sandeep Chaudhari",
+     "role": "Chief Operating Officer",
+     "since": "2016",
+     "family": false,
+     "bio": "Holds a diploma in mechanical engineering (2004) and has about 19 years in production and project execution. He worked at MIRC Electronics (Onida), ARM Welders (senior manager – projects, 2006–14), Fine Automation Robotics and Shard Motor Industries before joining in 2016. He runs plant operations."
+    }
+   ],
+   "changes": "Company Secretary Niharika Singhal resigned on 7 May 2026; Vishakha Pathak replaced her. No other management changes announced since the June 2025 listing.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/SME_AR_30995_PATILAUTOM_2025_2026_A_7303941_01092026163426.pdf",
+    "https://www.chittorgarh.net/reports/ipo_notes/patilautomationrhp.pdf",
+    "https://nsearchives.nseindia.com/corporate/PAL_07052026192657_CS_Revised.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Subros",
+   "sector": "Industrial Products",
+   "style": "Promoter-run",
+   "styleNote": "A joint venture of the Suri family (36.8%), Denso (20%) and Suzuki (12%). Shradha Suri Marwah, daughter of the late Lalit Suri (founder of Bharat Hotels / The LaLiT), is Chairperson & MD. Her mother Dr Jyotsna Suri, who runs The LaLiT hotels, is a non-executive director. Denso and Suzuki appoint nominee directors. A long-serving professional, Parmod Duggal, is Executive Director & CEO.",
+   "people": [
+    {
+     "name": "Shradha Suri Marwah",
+     "role": "Chairperson & Managing Director",
+     "since": "2001 (joined); MD since 2008; Chairperson since 2021",
+     "family": true,
+     "relation": "Promoter; daughter of the late Lalit Suri and of director Dr Jyotsna Suri",
+     "stake": "8.56% in her own name (FY26 annual report); Suri family and its companies together 36.8%",
+     "bio": "Holds an economics degree from Hindu College, Delhi University, a master's in management from the University of Leeds, and a master's in economics and information systems from the London School of Economics. She joined Subros in 2001, became Managing Director in 2008 and Chairperson & MD in 2021. She was President of the auto-parts industry body ACMA for 2023–25, sits on CII's national council and the Maruti Suzuki supplier association's executive committee, and represents the family on the board of Rohan Motors, a large Maruti dealer. She is also an independent director of Sona BLW Precision Forgings."
+    },
+    {
+     "name": "Parmod Kumar Duggal",
+     "role": "Executive Director & Chief Executive Officer",
+     "since": "2021 (ED & CEO); about 21 years at Subros",
+     "family": false,
+     "bio": "A chartered accountant, company secretary and cost accountant with over 30 years of experience. In about two decades at Subros he has worked in costing, marketing, IT, HR, plant operations and joint-venture management, and led new business and diversification. He became Executive Director and CEO on 31 March 2021. His FY26 pay was about ₹1.9cr."
+    },
+    {
+     "name": "Hemant Kumar Agarwal",
+     "role": "Chief Financial Officer & SVP (Finance)",
+     "since": "2021",
+     "family": false,
+     "bio": "Became CFO in March 2021, taking over from Manoj Sethi. The company does not publish further background on him. His FY26 pay was about ₹1.2cr."
+    },
+    {
+     "name": "Amit Kumar Parashar",
+     "role": "EVP & Chief Operating Officer (Operations)",
+     "since": "Not disclosed",
+     "family": false,
+     "bio": "Named by the company as senior management, running operations. The annual report gives no further background."
+    },
+    {
+     "name": "Srinivasulu Dampur",
+     "role": "EVP – Technical Centre",
+     "since": "Not disclosed",
+     "family": false,
+     "bio": "Named by the company as senior management, heading the technical centre. The annual report gives no further background."
+    }
+   ],
+   "changes": "No change in executive management since the FY26 annual report. Denso replaced its nominee director Tomoaki Yoshimori with Akihiro Deguchi on 7 August 2026. Shareholders are asked to let Dr Jyotsna Suri stay on as a non-executive director past age 75.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30597_SUBROS_2025_2026_A_6341098_25082026164838.pdf",
+    "https://www.subros.com/who-we-are/shardha-suri-marwah",
+    "https://www.subros.com/who-we-are/parmod-kumar-duggal",
+    "https://nsearchives.nseindia.com/corporate/SUBROS_07082026192341_Changeindirector07082026.pdf",
+    "https://in.investing.com/news/briefsubros-names-hemant-agarwal-as-cfo-2666264",
+    "https://www.businesstoday.in/magazine/current/story/family-first-245248-2009-04-30"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Vilas Transcore",
+   "sector": "Industrial Products",
+   "style": "Promoter-run",
+   "styleNote": "A one-man founder business. Nilesh Patel turned his sole proprietorship, M/s Vilas Transcore, into the company and owns 73.05% himself. His daughter Natasha Patel is a paid non-executive director. The only other executive director is Vipulkumar Patel (not related), who handles accounts and finance. The CFO post changed hands twice in FY26, and the Company Secretary post has been vacant since July 2026. Nilesh also owns 98.7% of Atlas Transformers India, a related party the company deals with.",
+   "people": [
+    {
+     "name": "Nilesh Jitubhai Patel",
+     "role": "Managing Director",
+     "since": "2006 (founder; director since incorporation)",
+     "family": true,
+     "relation": "Founder; father of director Natasha Patel",
+     "stake": "73.05% (FY26 annual report)",
+     "bio": "Holds a diploma in electrical engineering and has about 30 years in the electrical sector. He founded Vilas Transcore as a proprietorship and has been a director since the company was incorporated in November 2006, running the whole business. Under him it grew from transformer laminations into core-coil assemblies, toroidal, nanocrystalline and amorphous cores, radiators and copper conductors. He was paid ₹4.2cr in FY26 (₹35 lakh a month) and was re-appointed for five years from 1 March 2026, with room for his salary to rise to ₹50 lakh a month. He is a director of nine other companies and owns 98.7% of Atlas Transformers India."
+    },
+    {
+     "name": "Vipulkumar Rameshbhai Patel",
+     "role": "Whole-time Director & Chief Financial Officer",
+     "since": "2008 (joined); whole-time director since 2023",
+     "family": false,
+     "stake": "About 0.02% (6,000 shares, FY26 annual report)",
+     "bio": "Holds an M.Com and a B.Ed. He worked at Pooja Services before joining in April 2008, and has looked after accounts, finance and tax since. He became a whole-time director in March 2023 and was re-appointed for five years from March 2026. He gave up the CFO role in May 2025 but took it back in November 2025 when his successor left. His pay is about ₹1.1 lakh a month."
+    },
+    {
+     "name": "Kalpesh Shah",
+     "role": "Vice President",
+     "since": "2006",
+     "family": false,
+     "bio": "Holds an MBA and has 20 years of experience. He joined in December 2006 from Gilbert & Maxwell and is among the company's best-paid employees."
+    },
+    {
+     "name": "Pinky Shah",
+     "role": "Marketing Head",
+     "since": "2007",
+     "family": false,
+     "bio": "Holds MCA and MBA degrees and has 20 years of experience. She joined in April 2007 from Gilbert & Maxwell and heads marketing."
+    },
+    {
+     "name": "Mahesh Shinde",
+     "role": "Plant Head",
+     "since": "2025",
+     "family": false,
+     "bio": "A science graduate with 33 years of experience. He joined in February 2025 from Vidhya Wire and runs the plant."
+    }
+   ],
+   "changes": "CFO churn in FY26: Vipulkumar Patel stepped down as CFO in May 2025, Jagat Mazmudar held the post from May to November 2025, and Vipulkumar Patel took it back on 13 November 2025. Company Secretary Gandhali Paluskar resigned on 10 July 2026 and no replacement has been named yet.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/SME_AR_31397_VILAS_2025_2026_A_9168561_04092026171014.pdf",
+    "https://nsearchives.nseindia.com/corporate/VILAS_10072026184030_NSE_CSRESIGNATION_VILAS_100726_Signed.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Airfloa Rail Techno.",
+   "sector": "Industrial Products",
+   "style": "Promoter-run",
+   "styleNote": "A Chennai family business run by two brothers, set up in 1998 as Air Flow Equipments (India). Venkatesan Dakshinamoorthy is Chairman & MD and his younger brother Manikandan Dakshna Moorthy is Joint MD; they own 27.1% each (54.2% together). Venkatesan's son Sathishkumar is a whole-time director and Manikandan's wife Nandhini is a non-executive director. Both joined the board in July 2024, ahead of the September 2025 SME listing. Company disclosures on the promoters' backgrounds are thin.",
+   "people": [
+    {
+     "name": "Venkatesan Dakshinamoorthy",
+     "role": "Chairman & Managing Director",
+     "since": "1998 (with the company since incorporation)",
+     "family": true,
+     "relation": "Promoter; brother of Joint MD Manikandan Dakshna Moorthy, father of Whole-time Director Sathishkumar Venkatesan, brother-in-law of director Nandhini Manikandan",
+     "stake": "27.10% (FY26 annual report); promoters together 54.2%",
+     "bio": "Aged about 61 and a graduate, he has been with the company since it was incorporated in December 1998 and has more than two decades of technical and operations experience. He sets strategy and oversees execution across the business. His FY26 pay was ₹75 lakh. The company's filings give no details of his degree or any earlier employer."
+    },
+    {
+     "name": "Manikandan Dakshna Moorthy",
+     "role": "Joint Managing Director",
+     "since": "2005",
+     "family": true,
+     "relation": "Promoter; brother of the Chairman & MD, husband of director Nandhini Manikandan, uncle of Sathishkumar Venkatesan",
+     "stake": "27.10% (FY26 annual report); promoters together 54.2%",
+     "bio": "Holds an engineering degree from the University of Madras and has about 20 years with the company, which he joined in August 2005. The company says he leads the management team and drives growth; he also chairs the CSR committee. His FY26 pay was ₹75 lakh."
+    },
+    {
+     "name": "Sathishkumar Venkatesan",
+     "role": "Whole-time Director",
+     "since": "2024",
+     "family": true,
+     "relation": "Son of the Chairman & MD; nephew of the Joint MD and of Nandhini Manikandan",
+     "stake": "Nil (FY26 annual report)",
+     "bio": "Aged about 35, he holds an engineering degree from Sathyabama University and an MSc from Coventry University. He joined the company and its board on 24 July 2024, is named a promoter, and supports day-to-day operational decisions. His FY26 pay was ₹24 lakh."
+    },
+    {
+     "name": "P.S. (Papa Sanjeevi) Karunakaran",
+     "role": "Chief Financial Officer",
+     "since": "2024",
+     "family": false,
+     "bio": "Aged about 60, he holds a master's degree in commerce and has over 13 years in accounts. He became CFO on 1 July 2024, before the IPO."
+    },
+    {
+     "name": "Mohan Gandhi",
+     "role": "Head – Plant Operations",
+     "since": "2026",
+     "family": false,
+     "bio": "An engineering graduate, aged about 56, who joined on 1 January 2026 from Sieges Spintech Equipments to run plant operations. He is the best-paid employee outside the board (₹48 lakh a year)."
+    }
+   ],
+   "changes": "No executive changes announced since the FY26 annual report. Company Secretary Thygarajan Sivakumar (named in the 2025 prospectus) has since been replaced by Haraprasad Rout. Several new department heads joined in late 2025 and early 2026 (plant operations, HR, design).",
+   "sources": [
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f7f6353c-1893-4931-941b-d19efe9b4a73.pdf",
+    "https://gyrcapitaladvisors.com/wp-content/uploads/2025/09/Airfloa_Rail_Technology_RHP.pdf"
    ],
    "updatedOn": "2026-09-29"
   },
@@ -9067,7 +10009,7 @@
      "family": true,
      "relation": "Promoter",
      "stake": "7.7% (June 2026 shareholding pattern); promoter group together about 45.8%",
-     "bio": "A chemical engineer from Nirma University with an MBA from Hofstra University, New York. He has more than 18 years in pharma and earlier ran operations at a specialty pharma distribution company. As MD since October 2021 he leads product portfolio, strategy, business development and sits on the board of the US subsidiary Havix (Aavis Pharmaceuticals). He is also non-executive Chairman of Remus Pharmaceuticals, a listed promoter-group company, and convenor of the pharma panel of CII's Gujarat council. In 2025 shareholders were asked to raise his pay to ₹7.5 crore a year."
+     "bio": "A chemical engineer from Nirma University with an MBA from Hofstra University, New York. He has more than 18 years in pharma and earlier ran operations at a specialty pharma distribution company. As MD since October 2021 he leads the product portfolio, strategy and business development, and sits on the board of the US subsidiary Havix (Aavis Pharmaceuticals). He is also non-executive Chairman of Remus Pharmaceuticals, a listed promoter-group company, and convenor of the pharma panel of CII's Gujarat council. In 2025 shareholders were asked to raise his pay to ₹7.5 crore a year."
     },
     {
      "name": "Deval Rajnikant Shah",
@@ -9092,6 +10034,124 @@
     "https://senorespharma.com/board-of-directors/",
     "https://senorespharma.com/executive-leadership/",
     "https://www.screener.in/company/SENORES/consolidated/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Aether Industries",
+   "sector": "Pharma CDMO",
+   "style": "Promoter-run",
+   "styleNote": "A Desai family company founded in 2013: founder Ashwin Desai is MD, his wife Purnima and sons Rohan and Dr. Aman are whole-time directors. The non-executive Chairman, Kamalvijay Tulsian, is Rohan's father-in-law, and non-executive director Ishita Manjrekar is Aman's wife. Promoters own about 74.9% (June 2026), including four Desai family trusts holding about 50.6%.",
+   "people": [
+    {
+     "name": "Ashwin Jayantilal Desai",
+     "role": "Founding Promoter & Managing Director",
+     "since": "2013 (founder)",
+     "family": true,
+     "relation": "Founder; husband of Purnima Desai; father of Rohan and Dr. Aman Desai",
+     "stake": "5.1% directly (June 2026 shareholding pattern); also a trustee of four family trusts (about 50.6%); family together about 74.9%",
+     "bio": "A chemical engineer from the Institute of Chemical Technology (ICT), Mumbai (1974), which gave him its Distinguished Alumnus award in 2010. He was a founding member of Anupam Rasayan India and its Chairman & MD until 2013, when he left to set up Aether. As MD he sets the company's overall direction and leads techno-commercial work, R&D and its continuous-flow chemistry capability."
+    },
+    {
+     "name": "Purnima Ashwin Desai",
+     "role": "Whole-time Director",
+     "since": "2013 (promoter)",
+     "family": true,
+     "relation": "Wife of MD Ashwin Desai; mother of Rohan and Dr. Aman Desai",
+     "stake": "17.4% directly (June 2026 shareholding pattern); also a trustee of the family trusts",
+     "bio": "Holds a bachelor's degree from the University of Delhi (1975) and has decades of experience in specialty chemicals. She was a director of Anupam Rasayan India until 2013. At Aether she oversees accounting and finance."
+    },
+    {
+     "name": "Rohan Ashwin Desai",
+     "role": "Whole-time Director",
+     "since": "2013 (promoter)",
+     "family": true,
+     "relation": "Son of Ashwin and Purnima Desai; brother of Dr. Aman Desai; son-in-law of Chairman Kamalvijay Tulsian",
+     "stake": "1.7% (June 2026 shareholding pattern)",
+     "bio": "A commerce graduate from SPB (VNSG University), Surat, with long experience in specialty chemicals. He was a director of Anupam Rasayan India until 2013. At Aether he runs the commercial side: sales, finance, strategic procurement, HR and systems."
+    },
+    {
+     "name": "Dr. Aman Ashwinbhai Desai",
+     "role": "Whole-time Director",
+     "family": true,
+     "relation": "Son of Ashwin and Purnima Desai; brother of Rohan Desai; husband of director Ishita Manjrekar",
+     "stake": "0.1% (June 2026 shareholding pattern)",
+     "bio": "Holds a bachelor's in chemical technology from ICT Mumbai (2005) and a PhD in organic chemistry (chiral chemistry) from Michigan State University (2010). He was a project leader in process development at Dow Chemical in Michigan before joining the family business. He leads R&D, the pilot plant, production, new projects and technical business development, the core of Aether's contract research and manufacturing work. He has co-authored 25 international papers and four US patents and won ICT's Young Achiever Award in 2018."
+    },
+    {
+     "name": "Dr. James (Jim) W. Ringer",
+     "role": "Chief Technology Officer",
+     "since": "Mar 2024",
+     "family": false,
+     "bio": "Holds a BS in chemistry from Purdue and a PhD in organic chemistry from the University of Wisconsin. He spent 30 years in R&D at Dow Chemical (1988–2018), including as director of process chemistry, and later worked with Corteva AgriScience. He is co-inventor on 22 US patents and became Aether's CTO on 1 March 2024."
+    },
+    {
+     "name": "Faiz A. Nagariya",
+     "role": "Chief Financial Officer",
+     "family": false,
+     "bio": "The company's Chief Financial Officer and a key managerial person, who co-signs the CEO/CFO certificate in the annual report. His education and earlier career are not given in the sources reviewed."
+    }
+   ],
+   "changes": "No executive or senior-management changes during FY26 or since the annual report.",
+   "sources": [
+    "https://aether.co.in/wp-content/uploads/2026/08/Annual%20Report%20FY%202025-26.pdf",
+    "https://aether.co.in/board-of-directors/",
+    "https://aether.co.in/core-management-team/",
+    "https://www.screener.in/company/AETHER/consolidated/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Cohance Lifesciences",
+   "sector": "Pharma CDMO",
+   "style": "Promoter-owned, professionally run",
+   "styleNote": "Controlled by private-equity firm Advent International, which owns 57.5% through two holding companies (Behryanda 33.3%, Jusmirial 24.2%) and has pledged 94.6% of it; Advent partners sit on the board as non-executive directors. There is no founding family in management. The company is run by hired professionals under Umang Vohra, ex-Cipla CEO, who became Chairman in May 2026 and Group CEO later that month. The top team has turned over almost completely in the past 15 months.",
+   "people": [
+    {
+     "name": "Umang Vohra",
+     "role": "Chairman & Group Chief Executive Officer",
+     "since": "Chairman from 1 May 2026; Group CEO from 20 May 2026",
+     "family": false,
+     "bio": "An engineering graduate from M.S. Ramaiah Institute of Technology with an MBA from T.A. Pai Management Institute. He has over 30 years in pharma and healthcare, with leadership roles at PepsiCo India, Dr. Reddy's Laboratories and Cipla. As Managing Director and Global CEO of Cipla he led growth in respiratory, speciality, digital health and manufacturing. He joined Cohance as Chairman on 1 May 2026, became Group CEO on 20 May 2026, and shareholders approved his appointment in June 2026. He took over during a sharp downturn: Q1 FY27 revenue fell 23% and the $1bn FY30 target is now called an aspiration."
+    },
+    {
+     "name": "Yann D'Herve",
+     "role": "Chief Executive Officer – CDMO",
+     "family": false,
+     "bio": "Holds a master's in chemistry from CPE Lyon and an MBA from Université de Picardie Jules Verne. He has over 30 years in pharma, healthcare, speciality chemicals and CDMO. Before Cohance he was Senior Vice President and General Manager of Evonik's healthcare business line, running 2,600 people across nine plants with full profit responsibility, and earlier held sales, services and speciality-ingredients roles at Evonik. He runs the pharma CDMO business, which is the company's core."
+    },
+    {
+     "name": "Gunjan Singh",
+     "role": "CEO – API & Formulations business",
+     "family": false,
+     "bio": "An alumnus of IIT Delhi and SP Jain Institute of Management and Research, Mumbai. He began as a strategy consultant at Accenture and later held leadership roles at Dr. Reddy's Laboratories, Wanbury, Jubilant Pharmova and Piramal Pharma. With over two decades across active ingredients, formulations and CDMO services, he runs Cohance's API+ business."
+    },
+    {
+     "name": "Amrit Singh",
+     "role": "Business Head – Speciality Chemicals",
+     "family": false,
+     "bio": "A chemical engineer with an executive MBA and more than two decades at Navin Fluorine, SRF, UPL and Unilever. His previous job was CEO of Navin Fluorine's speciality chemicals business unit, where he grew the business through capacity additions and customer partnerships. He now leads Cohance's speciality chemicals platform."
+    },
+    {
+     "name": "Ravinatha Shetty",
+     "role": "Platform Chief Operating Officer",
+     "family": false,
+     "bio": "A chemical engineer with a strategic-management qualification from IIM Kozhikode and nearly 35 years at Lupin, Watson Pharma, Zydus Cadila, Cipla, Dr. Reddy's and Aurobindo Pharma. He oversees supply chain, safety and environment, operational excellence and corporate affairs across the company's sites."
+    },
+    {
+     "name": "Sunilkumar Singh",
+     "role": "Chief Quality & Compliance Officer",
+     "family": false,
+     "bio": "Has over 35 years in quality across active ingredients, formulations and CDMO plants. He was global head of quality for Dr. Reddy's PSAI business and global head of internal audit and compliance there, and earlier held roles at Mylan, Zydus, Glenmark and Cipla. His job matters now: the company has a US FDA warning letter at Nacharam and FDA observations at three more sites since July."
+    }
+   ],
+   "changes": "CFO and whole-time director Himanshu Agarwal resigned in June 2026 and left on 13 Sep 2026; no successor named yet. Executive Chairman Vivek Sharma left on 30 Apr 2026 and Umang Vohra replaced him (Chairman 1 May, Group CEO 20 May 2026). Earlier in FY26, CEO Dr. Sudhir Kumar Singh resigned (Jul 2025) and MD Dr. V. Prasada Raju resigned (Oct 2025). A new Company Secretary, Sisir K. Mishra, joined in Apr 2026.",
+   "sources": [
+    "https://www.cohance.com/wp-content/uploads/2026/08/Cohance_Integrated-Annual-Report_2026.pdf",
+    "https://www.cohance.com/about-us/leadership/",
+    "https://www.cohance.com/wp-content/uploads/2026/08/Cohance_Q1FY27_Concall-transcript.pdf",
+    "https://www.cohance.com/wp-content/uploads/2026/08/Cohance_Notice-of-AGM-2026.pdf",
+    "https://www.screener.in/company/COHANCE/consolidated/"
    ],
    "updatedOn": "2026-09-29"
   }
