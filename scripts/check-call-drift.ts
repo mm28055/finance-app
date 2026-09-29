@@ -103,13 +103,16 @@ async function main() {
     let added = 0;
     for (const d of drifts) {
         // One open entry per company and drift state; a later change of state is a new entry.
-        const exists = list.some(e => e.company === d.company && e.subject === `Call drift: ${d.call} → ${d.check}` && !e.handled);
+        // Once raised (open or handled), the same company and state is not raised again; a change
+        // of state (a different call or price check) is a new subject and is raised.
+        const exists = list.some(e => e.company === d.company && e.subject === `Call drift: ${d.call} → ${d.check}`);
         if (exists) continue;
         list.push({ company: d.company, sector: d.sector, subject: `Call drift: ${d.call} → ${d.check}`, why: `${d.why}. Revisit the call.`, addedOn: today });
         added++;
     }
     for (const c of coverage) {
-        if (list.some(e => e.company === c.company && e.subject === c.subject && !e.handled)) continue;
+        // Same rule: a handled "New results call: Q2 FY27" is not raised again; Q3 FY27 is a new subject.
+        if (list.some(e => e.company === c.company && e.subject === c.subject)) continue;
         list.push({ company: c.company, sector: c.sector, subject: c.subject, why: c.why, addedOn: today });
         added++;
     }
