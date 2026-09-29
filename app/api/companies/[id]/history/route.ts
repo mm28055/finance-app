@@ -36,18 +36,29 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
         const page = await (await cached(30 * 86400)(url)).text();
         const screenerId = page.match(/data-company-id="(\d+)"/)?.[1];
         if (!screenerId) return NextResponse.json({ error: 'Screener page not readable' }, { status: 502 });
-        const consolidated = /\/consolidated\/?$/.test(url);
+        let consolidated = /\/consolidated\/?$/.test(url);
 
         const m = METRICS[metric];
-        const chartUrl = `https://www.screener.in/api/company/${screenerId}/chart/?q=${encodeURIComponent(m.q)}&days=3650${consolidated ? '&consolidated=true' : ''}`;
-        const res = await cached(12 * 3600)(chartUrl);
-        if (!res.ok) return NextResponse.json({ error: 'Screener chart unavailable' }, { status: 502 });
-        const data = await res.json();
-        const find = (name: string | null) => (data.datasets || []).find((d: any) => d.metric === name);
-
-        const points = (find(m.series)?.values || [])
-            .map((v: any[]) => ({ date: String(v[0]), value: v[1] === null || v[1] === undefined ? null : Number(v[1]) }))
-            .filter((p: { value: number | null }) => p.value !== null && Number.isFinite(p.value));
+        const load = async (cons: boolean) => {
+            const chartUrl = `https://www.screener.in/api/company/${screenerId}/chart/?q=${encodeURIComponent(m.q)}&days=3650${cons ? '&consolidated=true' : ''}`;
+            const res = await cached(12 * 3600)(chartUrl);
+            if (!res.ok) return null;
+            const data = await res.json();
+            const find = (name: string | null) => (data.datasets || []).find((d: any) => d.metric === name);
+            const points = (find(m.series)?.values || [])
+                .map((v: any[]) => ({ date: String(v[0]), value: v[1] === null || v[1] === undefined ? null : Number(v[1]) }))
+                .filter((p: { value: number | null }) => p.value !== null && Number.isFinite(p.value));
+            return { find, points };
+        };
+        let got = await load(consolidated);
+        // A company that only recently began filing group accounts (Bajaj Healthcare) has no
+        // multiples on the consolidated basis; its standalone history is the whole record.
+        if (consolidated && (!got || got.points.length === 0)) {
+            const standalone = await load(false);
+            if (standalone && standalone.points.length) { got = standalone; consolidated = false; }
+        }
+        if (!got) return NextResponse.json({ error: 'Screener chart unavailable' }, { status: 502 });
+        const { find, points } = got;
         const medianRaw = m.median ? find(m.median)?.values?.[0]?.[1] : null;
 
         return NextResponse.json({

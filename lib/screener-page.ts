@@ -22,7 +22,16 @@ export async function screenerPageUrl(companyId: string, view?: ScreenerView): P
     const base = found.replace(/consolidated\/?$/, '');
     const defaultView: ScreenerView = /\/consolidated\/?$/.test(found) ? 'consolidated' : 'standalone';
     const v = view || defaultView;
-    return { url: v === 'consolidated' ? `${base.replace(/\/?$/, '/')}consolidated/` : base, view: v };
+    const consolidatedUrl = `${base.replace(/\/?$/, '/')}consolidated/`;
+    // A company that only recently began filing group accounts (Bajaj Healthcare) has an empty
+    // consolidated page; unless consolidated was asked for, show its standalone figures instead.
+    if (!view && v === 'consolidated') {
+        const html = await fetchScreenerPage(consolidatedUrl, 86400);
+        const pl = html ? screenerTable(html, 'profit-loss') : null;
+        const filled = pl?.rows.some(r => r.values.filter(x => x !== null).length >= 2);
+        if (html && !filled) return { url: base, view: 'standalone' };
+    }
+    return { url: v === 'consolidated' ? consolidatedUrl : base, view: v };
 }
 
 export async function fetchScreenerPage(url: string, seconds: number): Promise<string | null> {
