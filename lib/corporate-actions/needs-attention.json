@@ -244,5 +244,19 @@
     "subject": "Promoter sale: Sep 2026",
     "why": "Promoter Jupiter Capital sold about 10.9% of AXISCADES on 28–29 Sep 2026, taking its stake to about 44.8% (found while researching management). Check the filing for price and buyer, add a dated sentence to the company section and weigh it in the call.",
     "addedOn": "2026-09-29"
+  },
+  {
+    "company": "TAC Security (Tac Infosec)",
+    "sector": "Software",
+    "subject": "Governance: loans to CEO",
+    "why": "The FY26 annual report audit found loans given to the CEO and his father in breach of company law (since repaid), found while researching management. Confirm from the annual report, mention it in the company section and its risks if the note does not already, and weigh it in the call.",
+    "addedOn": "2026-09-30"
+  },
+  {
+    "company": "Zaggle Prepaid",
+    "sector": "Software",
+    "subject": "Note out of date: CFO",
+    "why": "The note says the CFO post is vacant, but Venkatesh Ramachandran became Group CFO on 18 May 2026 (NSE filing). Correct the note.",
+    "addedOn": "2026-09-30"
   }
 ]
