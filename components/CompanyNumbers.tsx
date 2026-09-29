@@ -51,18 +51,27 @@ const growthLine = (g: Financials['growth']) => {
     );
 };
 
+const ALWAYS_OPEN = new Set(['Expenses', 'Borrowings', 'Other Assets']);
+
 function DataTable({ table, companyId, section, view }: { table: Table; companyId: string; section: string; view: string }) {
     const negative = (v: string | null) => !!v && /^-/.test(v.trim());
     // Rows with a "+" open Screener's breakdown underneath (fetched once, then kept).
     const [open, setOpen] = React.useState<Record<string, Record<string, Record<string, string>> | 'loading' | 'error'>>({});
-    const toggle = (r: Row) => {
-        if (open[r.src]) { setOpen(o => { const n = { ...o }; delete n[r.src]; return n; }); return; }
+    const load = React.useCallback((r: Row) => {
         setOpen(o => ({ ...o, [r.src]: 'loading' }));
         fetch(`/api/companies/${companyId}/schedule?section=${section}&parent=${encodeURIComponent(r.src)}&view=${view}`)
             .then(res => (res.ok ? res.json() : Promise.reject()))
             .then(d => setOpen(o => ({ ...o, [r.src]: d })))
             .catch(() => setOpen(o => ({ ...o, [r.src]: 'error' })));
+    }, [companyId, section, view]);
+    const toggle = (r: Row) => {
+        if (open[r.src]) { setOpen(o => { const n = { ...o }; delete n[r.src]; return n; }); return; }
+        load(r);
     };
+    // Expenses, borrowings and other assets open by themselves; the rest on a click.
+    React.useEffect(() => {
+        for (const r of table.rows) if (r.expandable && ALWAYS_OPEN.has(r.src)) load(r);
+    }, [table, load]);
     const cellClass = (v: string | null, i: number) =>
         `py-1 px-1.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''} ${table.columns[i] === 'TTM' || table.columns[i] === 'YoY' ? 'bg-gray-50' : ''}`;
     return (
