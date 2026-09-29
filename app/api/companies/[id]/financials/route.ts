@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { screenerPageUrl, fetchScreenerPage, screenerTable, screenerGrowth, type ScreenerView } from '@/lib/screener-page';
 
 // GET /api/companies/[id]/financials?view=consolidated|standalone
-// The last five years of P&L, balance sheet, cash flow and working-capital ratios,
+// The last four quarters and the last five years of P&L, balance sheet, cash flow and working-capital ratios,
 // plus Screener's growth summary, read from the company's Screener page when its
 // card is opened. The page is cached for a day; nothing is stored.
 
@@ -56,6 +56,38 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
                 })
                 .filter((r): r is { label: string; values: (string | null)[] } => !!r && r.values.some(v => v !== null));
             if (rows.length) tables[section] = { columns: keep.map(k => k.c.replace(/^Mar /, 'FY').replace(/^FY20(\d\d)$/, 'FY$1')), rows };
+        }
+        // Last four quarters, plus the latest quarter's growth on the same quarter a year earlier.
+        const q = screenerTable(html, 'quarters');
+        if (q && q.columns.length >= 1) {
+            const n = q.columns.length;
+            const last4 = [...Array(Math.min(4, n)).keys()].map(k => n - Math.min(4, n) + k);
+            const yearAgo = n >= 5 ? n - 5 : -1;
+            const num = (v: string | null | undefined) => (v === null || v === undefined || v === '' ? null : Number(v.replace(/,/g, '').replace('%', '')));
+            const growthRows = new Set(['Sales', 'Revenue', 'Operating Profit', 'Financing Profit', 'Net Profit', 'EPS in Rs']);
+            const rows = ROWS['profit-loss']
+                .filter(([src]) => src !== 'Dividend Payout %')
+                .map(([src, label]) => {
+                    const r = q.rows.find(x => x.label === src);
+                    if (!r) return null;
+                    const values: (string | null)[] = last4.map(i => r.values[i] ?? null);
+                    let yoy: string | null = null;
+                    if (growthRows.has(src) && yearAgo >= 0) {
+                        const now = num(r.values[n - 1]), then = num(r.values[yearAgo]);
+                        if (now !== null && then !== null && then > 0) yoy = `${now >= then ? '+' : ''}${Math.round(((now - then) / then) * 100)}%`;
+                    }
+                    return { label, values: [...values, yoy] };
+                })
+                .filter((r): r is { label: string; values: (string | null)[] } => !!r && r.values.some(v => v !== null));
+            // "Jun 2026" → "Q1 FY27" (Indian financial year, April–March), as the rest of the site labels quarters.
+            const fq = (c: string) => {
+                const m = c.match(/^(Mar|Jun|Sep|Dec) (\d{4})$/);
+                if (!m) return c;
+                const y = Number(m[2]);
+                const [qn, fy] = m[1] === 'Jun' ? [1, y + 1] : m[1] === 'Sep' ? [2, y + 1] : m[1] === 'Dec' ? [3, y + 1] : [4, y];
+                return `Q${qn} FY${String(fy % 100).padStart(2, '0')}`;
+            };
+            if (rows.length) tables['quarters'] = { columns: [...last4.map(i => fq(q.columns[i])), 'YoY'], rows };
         }
         const empty = !tables['profit-loss']?.rows.some(r => r.values.some(v => v !== null && v !== '0'));
         return NextResponse.json({

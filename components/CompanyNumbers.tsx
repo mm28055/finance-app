@@ -6,12 +6,13 @@ import { ValuationHistory } from './ValuationHistory';
 // P&L, balance sheet, cash flow and working-capital ratios — all read from the
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
-type Tab = 'history' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios';
+type Tab = 'history' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios';
 type Table = { columns: string[]; rows: { label: string; values: (string | null)[] }[] };
 type Financials = { view: 'consolidated' | 'standalone'; empty: boolean; tables: Record<string, Table>; growth: Record<string, Record<string, string>> };
 
 const TABS: { key: Tab; label: string }[] = [
     { key: 'history', label: 'Price & valuation' },
+    { key: 'quarters', label: 'Quarterly' },
     { key: 'profit-loss', label: 'P&L' },
     { key: 'balance-sheet', label: 'Balance sheet' },
     { key: 'cash-flow', label: 'Cash flow' },
@@ -20,6 +21,7 @@ const TABS: { key: Tab; label: string }[] = [
 // Rows drawn in bold: the ones a reader looks for first.
 const KEY_ROWS = new Set(['Sales', 'Revenue', 'Operating profit', 'Financing profit', 'Net profit', 'Total', 'Free cash', 'ROCE', 'Operating cash']);
 const NOTES: Partial<Record<Tab, string>> = {
+    quarters: '₹ crore. YoY = the latest quarter against the same quarter a year earlier.',
     'profit-loss': '₹ crore, years to March. TTM = the last four quarters.',
     'balance-sheet': '₹ crore at 31 March.',
     'cash-flow': '₹ crore, years to March. Free cash = operating cash less capital spending.',
@@ -63,7 +65,7 @@ function DataTable({ table }: { table: Table }) {
                             <tr key={r.label} className={`border-t border-gray-50 ${key ? 'font-semibold text-gray-800' : 'text-gray-600'}`}>
                                 <td className="py-1 pr-2 whitespace-nowrap sticky left-0 bg-white">{r.label}</td>
                                 {r.values.map((v, i) => (
-                                    <td key={i} className={`py-1 px-1.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''} ${table.columns[i] === 'TTM' ? 'bg-gray-50' : ''}`}>{v ?? '–'}</td>
+                                    <td key={i} className={`py-1 px-1.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''} ${table.columns[i] === 'TTM' || table.columns[i] === 'YoY' ? 'bg-gray-50' : ''}`}>{v ?? '–'}</td>
                                 ))}
                             </tr>
                         );
