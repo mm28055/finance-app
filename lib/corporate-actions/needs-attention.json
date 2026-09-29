@@ -265,5 +265,12 @@
     "subject": "Founder stepped down as Chairman",
     "why": "Founder Arun Kelkar ceased to be Chairman on 28 Sep 2026 (found while researching management). Check the NSE filing for who takes over and why, add a dated sentence to the company section, and weigh it in the call.",
     "addedOn": "2026-09-30"
+  },
+  {
+    "company": "India Pesticides",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "Promoter family left the board",
+    "why": "The promoter family stepped off the board in June 2026 (found while researching management). Check the filings for why and who runs it now, mention it in the company section if the note does not, and weigh it in the call.",
+    "addedOn": "2026-09-30"
   }
 ]
