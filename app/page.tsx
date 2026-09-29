@@ -1,13 +1,16 @@
 import { SectorList, SectorData } from "@/components/SectorList";
 import { getDashboardDataLight, getTranscriptStats } from "@/lib/data-service";
 import { TranscriptStats } from "@/components/TranscriptStats";
+import { SessionTodos } from "@/components/SessionTodos";
+import { sessionTodos } from "@/lib/session-todos";
 
 export const dynamic = 'force-dynamic';
 
 export default async function Home() {
-  const [sectorList, stats] = await Promise.all([
+  const [sectorList, stats, todos] = await Promise.all([
     getDashboardDataLight(),
-    getTranscriptStats()
+    getTranscriptStats(),
+    sessionTodos()
   ]);
 
   return (
@@ -19,6 +22,7 @@ export default async function Home() {
           <p className="text-gray-400 text-xs">Real-Time Earning Intelligence</p>
         </div>
         <div className="flex items-center gap-4">
+          <SessionTodos todos={todos} />
           <a href="/scorecard" className="text-[11px] text-gray-500 hover:text-[#4A7AAF]">Scorecard</a>
           <TranscriptStats stats={stats} />
 

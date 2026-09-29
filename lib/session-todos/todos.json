@@ -1,0 +1,7 @@
+{
+ "items": [
+  { "id": "heg-graphite-listing", "text": "HEG Graphite lists in late October: add it to its sector note once it trades.", "addedOn": "2026-09-29", "notBefore": "2026-10-20" },
+  { "id": "tijori-retirement", "text": "Compare the exchange transcript pull with Tijori for the Q2 season, then decide whether to retire Tijori.", "addedOn": "2026-09-29", "notBefore": "2026-10-15" },
+  { "id": "skf-india-live-table", "text": "SKF India has filed Q2 results: put it into the Bearings live table.", "addedOn": "2026-09-29", "notBefore": "2026-11-01" }
+ ]
+}
