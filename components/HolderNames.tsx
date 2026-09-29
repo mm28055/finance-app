@@ -31,6 +31,10 @@ export function HolderNames({ companyId }: { companyId: string }) {
     const any = Object.values(data.groups).some(g => g.length);
     if (!latest || !any) return <p className="text-[11px] text-gray-400 py-4 text-center">No shareholder above 1% is named.</p>;
 
+    const cols = data.periods.slice(-8);
+    const short = (p: string) => p.replace(/\s+\d{2}(\d{2})$/, " '$1");
+    const cell = (v: number | undefined) => (v === undefined ? '–' : pct(v));
+
     return (
         <div className="flex flex-col gap-3">
             {Object.entries(GROUP_LABEL).map(([key, label]) => {
@@ -41,41 +45,47 @@ export function HolderNames({ companyId }: { companyId: string }) {
                 return (
                     <div key={key}>
                         <p className="text-[10px] font-semibold text-gray-500 mb-1">{label}</p>
-                        <table className="w-full text-[11px] tabular-nums">
-                            <tbody>
-                                {current.map(h => {
-                                    const was = prev ? h.values[prev] : undefined;
-                                    const change = was === undefined ? null : h.values[latest] - was;
-                                    return (
-                                        <tr key={h.name} className="border-t border-gray-50">
-                                            <td className="py-1 pr-2 text-gray-700">
-                                                {h.name}
-                                                {prev && was === undefined && <span className="ml-1.5 px-1 rounded bg-emerald-50 text-emerald-600 text-[9px] font-semibold">NEW</span>}
-                                            </td>
-                                            <td className="py-1 px-1.5 text-right font-semibold text-gray-800 whitespace-nowrap">{pct(h.values[latest])}</td>
-                                            <td className={`py-1 pl-1.5 text-right whitespace-nowrap w-16 ${change === null || Math.abs(change) < 0.01 ? 'text-gray-300' : change > 0 ? 'text-emerald-600' : 'text-rose-400'}`}>
-                                                {change === null || Math.abs(change) < 0.01 ? '–' : `${change > 0 ? '+' : ''}${Number(change.toFixed(2))}`}
-                                            </td>
-                                        </tr>
-                                    );
-                                })}
-                                {exited.map(h => (
-                                    <tr key={h.name} className="border-t border-gray-50 text-gray-400">
-                                        <td className="py-1 pr-2">
-                                            {h.name}
-                                            <span className="ml-1.5 px-1 rounded bg-rose-50 text-rose-400 text-[9px] font-semibold">EXITED</span>
-                                        </td>
-                                        <td className="py-1 px-1.5 text-right whitespace-nowrap">below 1%</td>
-                                        <td className="py-1 pl-1.5 text-right whitespace-nowrap w-16">was {pct(h.values[prev!])}</td>
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-[11px] tabular-nums">
+                                <thead>
+                                    <tr className="text-[10px] text-gray-400">
+                                        <th className="text-left font-medium py-0.5 pr-2 sticky left-0 bg-white" />
+                                        {cols.map(c => <th key={c} className={`text-right font-medium py-0.5 px-1.5 whitespace-nowrap ${c === latest ? 'text-gray-600' : ''}`}>{short(c)}</th>)}
+                                        <th className="text-right font-medium py-0.5 pl-1.5 whitespace-nowrap">Change</th>
                                     </tr>
-                                ))}
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    {[...current, ...exited].map(h => {
+                                        const now = h.values[latest];
+                                        const was = prev ? h.values[prev] : undefined;
+                                        const out = now === undefined;
+                                        const change = now !== undefined && was !== undefined ? now - was : null;
+                                        return (
+                                            <tr key={h.name} className={`border-t border-gray-50 ${out ? 'text-gray-400' : ''}`}>
+                                                <td className="py-1 pr-2 text-gray-700 sticky left-0 bg-white min-w-[10rem]">
+                                                    {h.name}
+                                                    {prev && !out && was === undefined && <span className="ml-1.5 px-1 rounded bg-emerald-50 text-emerald-600 text-[9px] font-semibold">NEW</span>}
+                                                    {out && <span className="ml-1.5 px-1 rounded bg-rose-50 text-rose-400 text-[9px] font-semibold">EXITED</span>}
+                                                </td>
+                                                {cols.map(c => (
+                                                    <td key={c} className={`py-1 px-1.5 text-right whitespace-nowrap ${c === latest ? 'font-semibold text-gray-800' : 'text-gray-500'}`}>
+                                                        {c === latest && out ? 'below 1%' : cell(h.values[c])}
+                                                    </td>
+                                                ))}
+                                                <td className={`py-1 pl-1.5 text-right whitespace-nowrap ${change === null || Math.abs(change) < 0.01 ? 'text-gray-300' : change > 0 ? 'text-emerald-600' : 'text-rose-400'}`}>
+                                                    {change === null || Math.abs(change) < 0.01 ? '–' : `${change > 0 ? '+' : ''}${Number(change.toFixed(2))}`}
+                                                </td>
+                                            </tr>
+                                        );
+                                    })}
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 );
             })}
             <p className="text-[10px] text-gray-400">
-                As of {latest}{prev ? `; change on ${prev}` : ''}. Only holders above 1% are named in the filing; "exited" means below 1%, not necessarily sold out.
+                Change is {latest} against {prev ?? 'the quarter before'}. Only holders above 1% are named in the filing; "–" means below 1% that quarter, and "exited" means below 1% now, not necessarily sold out.
             </p>
         </div>
     );
