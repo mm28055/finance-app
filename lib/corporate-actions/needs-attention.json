@@ -258,5 +258,12 @@
     "subject": "Note out of date: CFO",
     "why": "The note says the CFO post is vacant, but Venkatesh Ramachandran became Group CFO on 18 May 2026 (NSE filing). Correct the note.",
     "addedOn": "2026-09-30"
+  },
+  {
+    "company": "Hexagon Nutrition",
+    "sector": "Pharma Others",
+    "subject": "Founder stepped down as Chairman",
+    "why": "Founder Arun Kelkar ceased to be Chairman on 28 Sep 2026 (found while researching management). Check the NSE filing for who takes over and why, add a dated sentence to the company section, and weigh it in the call.",
+    "addedOn": "2026-09-30"
   }
 ]
