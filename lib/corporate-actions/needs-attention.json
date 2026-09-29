@@ -237,5 +237,12 @@
     "subject": "Check utilisation figure",
     "why": "The Agro note gives about 45% (table) and about 43% (business section) capacity use in Q1, but the Q1 FY27 call says SSP 79% and DAP/NPK 66%. The 43% may be Krishana's figure copied across. Check against the call and correct the note (and lib/projects/capacity.json).",
     "addedOn": "2026-09-29"
+  },
+  {
+    "company": "AXISCADES Technologies",
+    "sector": "Aerospace defence",
+    "subject": "Promoter sale: Sep 2026",
+    "why": "Promoter Jupiter Capital sold about 10.9% of AXISCADES on 28–29 Sep 2026, taking its stake to about 44.8% (found while researching management). Check the filing for price and buyer, add a dated sentence to the company section and weigh it in the call.",
+    "addedOn": "2026-09-29"
   }
 ]

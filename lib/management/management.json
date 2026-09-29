@@ -509,6 +509,68 @@
    "updatedOn": "2026-09-29"
   },
   {
+   "company": "Zen Technologies",
+   "sector": "Aerospace defence",
+   "style": "Promoter-run",
+   "styleNote": "Founder Ashok Atluri is Chairman and Managing Director. His brother Kishore Dutt Atluri is President and Joint MD, and his wife Shilpa Choudari is a whole-time director. The Atluri family and associates own about 48.5%. A hired CFO (since January 2026) and a former DRDO director-general as CTO (since May 2026) complete the top team.",
+   "people": [
+    {
+     "name": "Ashok Atluri",
+     "role": "Chairman & Managing Director",
+     "since": "Founder (1993); director since November 1994",
+     "family": true,
+     "relation": "Founder; brother of Joint MD Kishore Dutt Atluri; husband of Whole-time Director Shilpa Choudari",
+     "stake": "21.65% (1,95,46,103 shares, March 2026, FY26 annual report); promoter group together about 48.5%",
+     "bio": "Ashok Atluri holds a postgraduate diploma in applied computer science. He founded Zen in 1993 and designed simulators on the Windows-Intel platform that set industry standards for simplicity. The Hyderabad Management Association named him Small Scale Entrepreneur of the Year in 1998. Under him Zen became a leading maker of military training simulators and, more recently, anti-drone systems. He was re-appointed CMD for three years from May 2026 and was paid ₹8.03cr in FY26."
+    },
+    {
+     "name": "Kishore Dutt Atluri",
+     "role": "Founder, President & Joint Managing Director",
+     "family": true,
+     "relation": "Co-founder; brother of the Chairman & MD",
+     "stake": "16.33% (1,47,40,970 shares, March 2026, FY26 annual report)",
+     "bio": "Kishore Dutt Atluri holds a postgraduate degree in computer applications from the University of Hyderabad. He holds over 21 patents and has led development of the company's virtual and live simulators for infantry, armoured and mechanised forces and air defence, used by the armed forces, police and civilian customers. He runs technology direction and product development. He was re-appointed President and Joint MD for three years from May 2026."
+    },
+    {
+     "name": "Shilpa Choudari",
+     "role": "Whole-time Director",
+     "since": "Board since November 2020",
+     "family": true,
+     "relation": "Wife of the Chairman & MD",
+     "bio": "Shilpa Choudari holds a B.Tech from Jawaharlal Nehru Technological University and a master's in finance and foreign trade from the Badruka Institute of Foreign Trade. She worked at Zen as a research associate and later as AGM, sales and marketing, before joining the board in November 2020. She was paid ₹0.60cr in FY26, and shareholders are asked to re-appoint her for three years from November 2026."
+    },
+    {
+     "name": "Hari Haran Chalat",
+     "role": "Chief Financial Officer",
+     "since": "January 2026 (with Zen since January 2025)",
+     "family": false,
+     "relation": "Not related to any director",
+     "bio": "Hari Haran Chalat is a chartered accountant with over 20 years of experience across listed companies, private equity, Big 4 firms and technology companies. He started at PwC and KPMG, held senior finance roles at Amazon India, Black Knight India and a global private-equity fund, and worked as an independent CFO adviser from 2019 to 2024. He joined Zen in January 2025 as senior general manager running finance and led the Vector Technics, TISA Aerospace and Anawave deals. He became CFO on 31 January 2026."
+    },
+    {
+     "name": "Dr. Y. Sreenivas Rao (Sreenivas Rao Yellamanchali)",
+     "role": "Chief Technology Officer",
+     "since": "May 2026",
+     "family": false,
+     "bio": "Dr. Sreenivas Rao holds a mechanical engineering degree with distinction from JNTU Hyderabad and a PhD from Osmania University. He began at BHEL on gas turbines, joined DRDO in 2000 and worked on India's missile defence programme, including interceptor missiles, communication systems and warheads. He retired in September 2024 as DRDO's Director General (Naval Systems & Materials). Zen appointed him CTO from 6 May 2026."
+    },
+    {
+     "name": "Sourav Dhar",
+     "role": "Company Secretary & Compliance Officer",
+     "family": false,
+     "bio": "Sourav Dhar is the Company Secretary and Compliance Officer and one of the company's three key managerial personnel. The annual report gives no further details of his background."
+    }
+   ],
+   "changes": "Whole-time Director Ravi Kumar Midathala retired in June 2025 and stopped being a promoter. CFO Afzal Malkani left on 30 November 2025; Hari Haran Chalat became CFO on 31 January 2026. Dr. Sreenivas Rao joined as CTO in May 2026. Independent director Sirisha Chintapalli's term ended on 8 August 2026.",
+   "sources": [
+    "https://www.zentechnologies.com/assets/uploads/files/zen-technologies-limited-33rd-Annual-Report-2025-26.pdf",
+    "https://nsearchives.nseindia.com/corporate/ZENTEC_02022026183942_SEIntimation_Change_in_Management.pdf",
+    "https://nsearchives.nseindia.com/corporate/ZENTEC_01052026201646_BM_OC_01052026v1.pdf",
+    "https://nsearchives.nseindia.com/corporate/ZENTEC_08082026102928_Change_in_Director_Signed.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
    "company": "Aequs",
    "sector": "Aerospace defence",
    "style": "Promoter-run",
@@ -955,6 +1017,121 @@
     "https://www.whalesbook.com/corporate-news/Hinglish/other/Axiscades-Technologies-Jupiter-Capital-Divests-1086percent-Stake-via-Open-Market/6abb7235f2017017ae74e464",
     "https://en.wikipedia.org/wiki/Rajeev_Chandrasekhar",
     "https://www.manufacturingtodayindia.com/axiscades-welcomes-dr-sampath-ravinarayanan-as-non-executive-director"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Rossell Techsys",
+   "sector": "Aerospace defence",
+   "style": "Promoter-run",
+   "styleNote": "Part of H.M. Gupta's Rossell group (demerged from the tea company Rossell India, listed Dec 2024). Harsh Mohan Gupta is Executive Chairman and also MD of Rossell India; Rishab Mohan Gupta, a promoter who is related to him (the annual report confirms a family relationship without saying what), is Managing Director. A hired CEO, Senthil Balasubramanian, has run day-to-day operations since August 2025. The Gupta family owns 74.8%, including Harsh 39.5%, Rishab 17.7% and Vinita Gupta (Harsh's wife) 9.7%. The group link matters: some sales still pass through Rossell India and its tea estates secure part of the loans.",
+   "people": [
+    {
+     "name": "Harsh Mohan Gupta",
+     "role": "Executive Chairman",
+     "since": "Group founder",
+     "family": true,
+     "relation": "Promoter; husband of Vinita Gupta; related to the MD Rishab Mohan Gupta",
+     "stake": "39.49% (FY26 annual report); family together 74.8%",
+     "bio": "A promoter with nearly five decades in international trade, business development and industry, he has led group businesses in tea, aerospace, hospitality, food and beverages, and manufacturing. He is also Managing Director of Rossell India, the listed tea company from which Rossell Techsys was demerged. He has served on FICCI's Executive Committee and is Honorary Consul of the Republic of Chad in India."
+    },
+    {
+     "name": "Rishab Mohan Gupta",
+     "role": "Managing Director",
+     "since": "Founding member",
+     "family": true,
+     "relation": "Promoter; related to the Executive Chairman (annual report)",
+     "stake": "17.67% (FY26 annual report)",
+     "bio": "A founding member of Rossell Techsys and an alumnus of Suffolk University, Massachusetts. He leads the company's strategy and management team and has built its partnerships with global aircraft makers and Tier-1 suppliers; the company notes his interest in aviation as a non-certified pilot. He was earlier a whole-time director of Rossell India. His FY26 pay was ₹4.3cr, 34 times the median employee."
+    },
+    {
+     "name": "Senthil Balasubramanian",
+     "role": "Chief Executive Officer",
+     "since": "Aug 2025",
+     "family": false,
+     "bio": "Holds an MBA and an MS and has over 25 years of experience. He previously worked at Blue Star, Collins Aerospace, Ultra Maritime and Rexnord Industries. He joined as CEO in August 2025 and was the company's highest-paid employee in FY26 at ₹2.5cr."
+    },
+    {
+     "name": "Zeena Philip",
+     "role": "Chief Operating Officer",
+     "since": "2021 (COO since May 2025)",
+     "family": false,
+     "bio": "An engineering graduate (B.E.) with over 25 years of experience, previously at GE Healthcare. She joined Rossell Techsys in September 2021 and was designated COO and senior management in May 2025."
+    },
+    {
+     "name": "Jayanth V",
+     "role": "Chief Financial Officer",
+     "since": "2023",
+     "family": false,
+     "bio": "A chartered accountant with 19 years of experience. He worked at Caterpillar India, Pristine Organics and Nandus Foods before joining in April 2023. He is CFO and a key managerial person."
+    },
+    {
+     "name": "Nagasundaram N.",
+     "role": "Senior Vice President – Manufacturing Operations & Engineering",
+     "since": "2020",
+     "family": false,
+     "bio": "Holds a master's in engineering and has over 25 years of experience, including at Boeing and Collins Aerospace. He joined in August 2020 and leads manufacturing operations and engineering."
+    },
+    {
+     "name": "Krishnappayya Desai",
+     "role": "Company Secretary & Compliance Officer",
+     "since": "May 2025",
+     "family": false,
+     "bio": "Company secretary and compliance officer since 27 May 2025. The annual report gives no further background."
+    }
+   ],
+   "changes": "No executive changes since the FY26 annual report. Senthil Balasubramanian became CEO in Aug 2025; independent directors Arvind Ghei and Shobhana Joshi re-appointed Jul 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30972_ROSSTECH_2025_2026_A_10811843_01092026142458.pdf",
+    "https://nsearchives.nseindia.com/annual_reports/AR_30017_ROSSELLIND_2025_2026_A_8420694_27072026170259.pdf",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1697857_21072026122442_WEB.xml",
+    "https://rosselltechsys.com/wp-content/uploads/2025/09/Rossell-Techsys-Limited-Annual-Report-2024-25-1.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Aartech Solonics",
+   "sector": "Aerospace defence",
+   "style": "Promoter-run",
+   "styleNote": "A small Bhopal family company. Founder Anil Anant Raje (81), who has led it since 1982, is now a non-executive director holding 22.1%. His son Amit Raje is Chairman & MD and his daughter Arati Nath is CEO & Director. The promoter group owns 52.75% (Jun 2026), including Chhaya Anil Raje 13.2%. Only the CFO and company secretary are hired, and executive pay is modest (about ₹35 lakh each for Amit and Arati in FY26).",
+   "people": [
+    {
+     "name": "Amit Anil Raje",
+     "role": "Chairman & Managing Director",
+     "since": "2007",
+     "family": true,
+     "relation": "Son of founder Anil Anant Raje; brother of CEO Arati Nath",
+     "stake": "14.84% (FY26 AGM notice); promoter group together 52.75%",
+     "bio": "Holds a B.Tech in electrical engineering from IIT Bombay (1995) and an MS in electrical engineering (power systems and power electronics) from the University of Minnesota. He has over three decades of experience in electrical engineering, power electronics, industrial automation and business management. He joined the board in April 2007 and, as Chairman & MD, sets strategy, technology development and capital allocation for the company's power, automation, railway-signalling and defence businesses. He is also a director of the group companies Faradigm Ultracapacitors and AIC-Aartech Solonics, and of the Energy Swaraj Foundation. His current term runs to May 2030."
+    },
+    {
+     "name": "Arati Nath",
+     "role": "Chief Executive Officer & Director",
+     "since": "May 2020",
+     "family": true,
+     "relation": "Daughter of founder Anil Anant Raje; sister of the Chairman & MD",
+     "stake": "1.30% (FY26 AGM notice)",
+     "bio": "Holds a B.Com and a postgraduate diploma in business analytics and finance from Welingkar Institute of Management, Mumbai. She has worked in the company's executive management for several years and joined the board as CEO & Director in May 2020. She runs day-to-day operations, project execution and administration under the Chairman & MD, and is also a director of Faradigm Ultracapacitors, AIC-Aartech Solonics and Enerqual Technology."
+    },
+    {
+     "name": "Pradeep Vasant Narkhede",
+     "role": "Chief Financial Officer",
+     "since": "May 2020",
+     "family": false,
+     "bio": "CFO and key managerial person since 12 May 2020; FY26 pay was ₹16.7 lakh. The annual report gives no further background."
+    },
+    {
+     "name": "K.R. Tanuj Reddy",
+     "role": "Company Secretary & Compliance Officer",
+     "since": "Jun 2018",
+     "family": false,
+     "bio": "Company secretary and compliance officer since 8 June 2018; FY26 pay was ₹12.4 lakh. The annual report gives no further background."
+    }
+   ],
+   "changes": "No management changes found in 2026. The AGM sought a pay revision for Amit Raje (cap ₹50 lakh) and Arati Nath's re-appointment.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31493_AARTECH_2025_2026_A_4564536_05092026135148.pdf",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1689555_09072026114851_WEB.xml"
    ],
    "updatedOn": "2026-09-29"
   },
@@ -4176,6 +4353,66 @@
    "updatedOn": "2026-09-29"
   },
   {
+   "company": "Exicom Tele-Sys.",
+   "sector": "Electrical Equipment",
+   "style": "Promoter-run",
+   "styleNote": "The Nahata family controls it. Anant Nahata, son of HFCL founder Mahendra Nahata, is MD & CEO. The promoter stake of about 66% is held through NextWave Communications (54.7%), Satellite Finance and HFCL; Anant holds no shares personally. The non-executive chairman, Himanshu Baid, is MD of Poly Medicure. Hired CEOs run the EV-charger and critical-power businesses.",
+   "people": [
+    {
+     "name": "Anant Nahata",
+     "role": "Managing Director & Chief Executive Officer",
+     "since": "Board since June 2008; employed since July 2017",
+     "family": true,
+     "relation": "Promoter; son of Mahendra Nahata, founder and MD of HFCL (a promoter shareholder)",
+     "stake": "nil personally (FY26 annual report); promoter group about 66%, mainly through NextWave Communications",
+     "bio": "Anant Nahata has a bachelor's degree in economics from the University of Pennsylvania. He worked in investment banking at Credit Suisse in New York and later founded the online fashion retailer Koovs. In the late 2000s he promoted Infotel Broadband, which won all-India spectrum and was sold to Reliance. He has been on Exicom's board since 2008 and full-time since 2017. Under him the company expanded from telecom power systems into EV chargers, listed in March 2024 and bought the Australian fast-charger maker Tritium. He is 42 and was paid ₹2.1cr in FY26."
+    },
+    {
+     "name": "Vivekanand Kumar",
+     "role": "Whole-time Director",
+     "since": "With Exicom since 2021; re-appointed at the 2025 AGM",
+     "family": false,
+     "bio": "Vivekanand Kumar is an engineer with a postgraduate business degree and more than 20 years in manufacturing, operations and supply chain. Before Exicom he held leadership roles at Autoliv India, Gates India, GKN Driveline India, Caparo Engineering India and Roop Automotives. The company credits him with strengthening its manufacturing and operations."
+    },
+    {
+     "name": "Shiraz Khanna",
+     "role": "Chief Financial Officer",
+     "since": "2021",
+     "family": false,
+     "bio": "Shiraz Khanna is a chartered accountant with more than 30 years of experience. He has been CFO since 2021 and also oversees accounts, treasury, tax, compliance and legal. Before Exicom he held senior finance roles at PwC India, Aircel, Bharti Airtel and American Express."
+    },
+    {
+     "name": "Anshuman Divyanshu",
+     "role": "Chief Executive Officer, EVSE (EV chargers)",
+     "since": "Listed as senior management in the FY26 annual report",
+     "family": false,
+     "bio": "Anshuman Divyanshu has nearly 20 years in energy, mobility and infrastructure. He held leadership roles at BPCL, Reliance Industries and Reliance BP Mobility, where he helped build Jio-bp's EV charging network into one of India's largest charge-point operators. He runs Exicom's EV-charger division."
+    },
+    {
+     "name": "Sanjeev Kumar Narula",
+     "role": "Chief Executive Officer, Critical Power",
+     "since": "September 2022",
+     "family": false,
+     "stake": "0.01% (19,847 shares, FY26 annual report)",
+     "bio": "Sanjeev Narula has a B.Tech and runs the critical power business, which grew out of Exicom's original telecom power business. Before Exicom he held leadership roles at Mahindra & Mahindra, Honda Siel Power Products and TAFE, and grew businesses in India, the SAARC region, Africa and the Middle East. He joined in September 2022."
+    },
+    {
+     "name": "Puran Mal Singh",
+     "role": "Chief Technology Officer",
+     "since": "With Exicom since 2011",
+     "family": false,
+     "bio": "Puran Mal Singh has led Exicom's research and development since joining in 2011, with a focus on power electronics and product development. He previously worked at Delta Power Solutions."
+    }
+   ],
+   "changes": "No KMP or senior management changes in FY26. Vice President (Manufacturing) Aman Sharma resigned with effect from 30 June 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30688_EXICOM_2025_2026_A_13887195_26082026213326.pdf",
+    "https://india.entrepreneur.com/entrepreneurs/the-technocrat-anant-nahata-managing-director-exicom/463385",
+    "https://www.businesstoday.in/latest/corporate/story/telecom-industry-scion-anant-nahata-transforms-koovs-133653-2014-02-25"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
    "company": "Avalon Tech",
    "sector": "EMS & Electronics",
    "style": "Promoter-run",
@@ -4552,6 +4789,68 @@
    "updatedOn": "2026-09-29"
   },
   {
+   "company": "Amber Enterprises",
+   "sector": "EMS & Electronics",
+   "style": "Promoter-run",
+   "styleNote": "Run by two promoter brothers: Jasbir Singh is Executive Chairman & CEO and Daljit Singh is MD. A professional whole-time director heads the consumer-durables (AC) division, and hired or founder-managers run the electronics (IL JIN) and railway (Sidwal) subsidiaries. The brothers together own about 37%.",
+   "people": [
+    {
+     "name": "Jasbir Singh",
+     "role": "Executive Chairman, CEO & Whole-time Director",
+     "since": "On the board since October 2004; Chairman & CEO from 2017; current term May 2023 to May 2028",
+     "family": true,
+     "relation": "Promoter; brother of MD Daljit Singh",
+     "stake": "20.06% (FY26 annual report); with his brother 37.3%",
+     "bio": "Holds a bachelor's degree in industrial production and an MBA, with over 25 years in consumer durables and electronics manufacturing. He has led Amber's growth from an AC contract maker into electronics, railway subsystems and components, and was Chairman & CEO from 2017 before being re-designated Executive Chairman & CEO in May 2023. CEAMA named him 'Man of Appliances' in 2018. He co-chairs FICCI's electronics and white-goods committee and the India Cellular & Electronics Association, and is President of the All India Organisation of Employers."
+    },
+    {
+     "name": "Daljit Singh",
+     "role": "Managing Director",
+     "since": "On the board since January 2008; MD, current term August 2022 to August 2027",
+     "family": true,
+     "relation": "Promoter; brother of the Executive Chairman Jasbir Singh",
+     "stake": "17.26% (FY26 annual report)",
+     "bio": "Holds a bachelor's degree in electronic engineering and a master's in information technology. As co-promoter he focuses on customer acquisition, production expansion, new products and technology, and ESG. He has been on the board since 2008 and was re-appointed MD for five years from August 2022."
+    },
+    {
+     "name": "Sachin Gupta",
+     "role": "Whole-time Director; CEO, Consumer Durables Division",
+     "since": "Whole-time Director since August 2024",
+     "family": false,
+     "bio": "An engineer with a PGDM in business administration, a Six Sigma Black Belt and Toyota Production System certification. He has more than two decades in consumer durables and earlier worked at LG and Godrej. He runs the room-AC and components division, which the company calls one of India's most backward-integrated AC makers. His pay was raised to about ₹2.75 crore a year from June 2025."
+    },
+    {
+     "name": "Sudhir Goyal",
+     "role": "Chief Financial Officer",
+     "since": "With Amber since October 2012",
+     "family": false,
+     "bio": "A chartered accountant with over two decades in finance, treasury, M&A, fund raising, tax planning and risk management. He has been with Amber since October 2012 and led its IPO and QIP and several acquisitions. He also sits on subsidiary boards on the company's behalf, such as Stelltek."
+    },
+    {
+     "name": "Sanjay Kumar Arora",
+     "role": "Whole-time Director, IL JIN Electronics (electronics subsidiary)",
+     "since": "Named as senior leader on the company's leadership page",
+     "family": false,
+     "bio": "An electrical engineer specialising in electronics and television technology, with four decades at Onida, LG and Amber. At LG he won the 'Productivity Man of the Year' award across LG Electronics subsidiaries. He set up the blueprint for Amber's electronics (EMS) business and led its move into new segments and circuit boards through the Ascent Circuits acquisition."
+    },
+    {
+     "name": "Udaiveer Singh",
+     "role": "Managing Director, Sidwal Industries (railway subsidiary)",
+     "since": "With Sidwal for more than three decades",
+     "family": false,
+     "bio": "Holds a diploma in mechanical engineering and has over 32 years in manufacturing, almost all with Sidwal. He took Sidwal beyond rail air-conditioning into pantries, doors and gangways and into metro, bus AC and defence. His pay ceiling was raised to ₹4 crore a year from September 2025."
+    }
+   ],
+   "changes": "No KMP changes in FY26. After the year: Manjunath Punyamurthy stepped down as MD of Ascent Circuits (June 2026) after IL JIN bought his stake; an independent director of IL JIN resigned in August 2026; Arvind Uppal was re-classed from independent to non-executive non-independent director from May 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30632_AMBER_2025_2026_A_19660457_25082026232047.pdf (FY26 annual report: KMP, board, relationships, promoter holdings, remuneration)",
+    "https://www.ambergroupindia.com/about/our-leadership/ (leadership bios)",
+    "https://nsearchives.nseindia.com/corporate/AMBER_ROID_90151_KMP_Doc.zip (Ascent MD resignation, June 2026)",
+    "https://nsearchives.nseindia.com/corporate/AMBER_ROID_96431_KMP_Doc.zip (IL JIN director resignation, August 2026)"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
    "company": "Pitti Engineering",
    "sector": "Industrial Manufacturing",
    "style": "Promoter-run",
@@ -4822,6 +5121,63 @@
     "https://nsearchives.nseindia.com/corporate/ANUP_10042023113742_IntimationchangesinKMPRegulation30ofListingRegulation.pdf",
     "https://nsearchives.nseindia.com/corporate/ANUP_13052025121851_SMP.pdf",
     "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1697724_21072026104733_WEB.xml"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "DEE Development",
+   "sector": "Industrial Manufacturing",
+   "style": "Promoter-run",
+   "styleNote": "Founder Krishan Lalit Bansal is Chairman & Managing Director. His daughter-in-law Shikha Bansal and his daughter Shruti Aggarwal are whole-time directors; his wife Ashima Bansal stepped down from the board in April 2025. The Bansal family owns about 70%, with Krishan Lalit Bansal alone holding about 51%.",
+   "people": [
+    {
+     "name": "Krishan Lalit Bansal",
+     "role": "Chairman & Managing Director",
+     "since": "1988 (founder); CMD term renewed from Apr 2022 for five years",
+     "family": true,
+     "relation": "Founder; husband of promoter Ashima Bansal; father of Shruti Aggarwal; father-in-law of Shikha Bansal",
+     "stake": "50.82% (June 2026 shareholding pattern); promoter group together about 70.2%",
+     "bio": "Krishan Lalit Bansal holds a bachelor's degree in mechanical engineering from Punjab Engineering College, Chandigarh. He started a partnership, Development Engineers, in 1986 and has run DEE since it was incorporated in 1988, building it into a maker of prefabricated process piping, with a side business in biomass power. His other ventures include DEE Group Trust and DDE Piping Components, a promoter company. The Faridabad Industrial Association named him Business Leader of the Year in 2011 and gave him a Lifetime Achievement Award in 2016. He sold shares in the company's 2024 IPO."
+    },
+    {
+     "name": "Shikha Bansal",
+     "role": "Whole-time Director",
+     "since": "Dec 2020; re-appointed from 1 Nov 2025 to Oct 2030",
+     "family": true,
+     "relation": "Daughter-in-law of the Chairman & MD; sister-in-law of Shruti Aggarwal",
+     "stake": "2.13% (14.7 lakh shares, FY26 annual report)",
+     "bio": "Shikha Bansal holds a B.Com from the University of Delhi and an M.Com from Himachal Pradesh University. She joined the company in December 2020 as a whole-time director. She is also Managing Director of the Thailand subsidiary, DEE Piping Systems (Thailand), and oversees group strategy, operations, international business, HR and marketing across India and Southeast Asia, including budgeting and management reporting."
+    },
+    {
+     "name": "Shruti Aggarwal",
+     "role": "Whole-time Director",
+     "since": "Board since Apr 2025; with the company since 2011",
+     "family": true,
+     "relation": "Daughter of the Chairman & MD Krishan Lalit Bansal",
+     "stake": "About 0.00% (1,410 shares, FY26 annual report)",
+     "bio": "Shruti Aggarwal holds a B.Com from the University of Delhi, is a Chartered Financial Analyst (ICFAI) and has a PGDM in finance from Shri Ram Institute of Management, plus an executive certificate in business finance from IIM Raipur. She joined DEE in 2011 as a senior manager in operations, became Vice-President (Operations) in 2023 and joined the board in April 2025, when her mother Ashima Bansal stepped down. She runs the Indian operations, with a focus on project execution, planning, budgeting and forecasting."
+    },
+    {
+     "name": "Pankaj Agarwal",
+     "role": "Chief Operating Officer",
+     "since": "COO since Jul 2023; with the company since 1994",
+     "family": false,
+     "bio": "Pankaj Agarwal joined DEE in July 1994 as marketing manager and has worked there for more than 30 years. He was made Chief Operating Officer, customer relations, in July 2023 and is part of the core management team. The 2024 prospectus lists his qualification as the senior school certificate (science) from Jamia Millia Islamia, New Delhi."
+    },
+    {
+     "name": "Brham Prakash Yadav",
+     "role": "Chief Financial Officer",
+     "since": "7 Jan 2026",
+     "family": false,
+     "bio": "Brham Prakash Yadav is a chartered accountant and cost accountant with more than 30 years in finance, mostly at multi-plant auto-component makers. He was CFO and a board member of the listed Munjal Auto Industries from May 2020, and before that AVP-Finance at Hema Engineering Industries (2014–2020), where he ran finance for six plants. Earlier he held finance roles at Omax Autos, SIAC SKH Cabs, Krishna Maruti and Lifelong. He has worked on IPOs, private equity and bank fund-raising."
+    }
+   ],
+   "changes": "CFO Sameer Agarwal resigned on 5 Jan 2026 for personal reasons; Brham Prakash Yadav took over on 7 Jan 2026. Ashima Bansal resigned as a whole-time director on 14 Apr 2025. The subsidiaries' CEOs, Krisanakorn Triwattanathongchai (Thailand) and Balwan Singh Jangra (Malwa Power), are also listed as senior management; the company gives no profiles for them.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30740_DEEDEV_2025_2026_A_10657976_27082026190141.pdf",
+    "https://nsearchives.nseindia.com/corporate/FP_INE841L01016_24JUN2024.pdf",
+    "https://nsearchives.nseindia.com/corporate/DDEL_06012026201745_BSENSESIGNED.pdf",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1690135_10072026105056_WEB.xml"
    ],
    "updatedOn": "2026-09-29"
   },
@@ -7643,6 +7999,104 @@
     "https://www.indianchemicalnews.com/people/jubilant-ingrevia-appoints-vijay-srivastava-as-chief-of-operations-23791",
     "https://www.jubilantpharmova.com/about-us/management/board-of-directors/hari-s-bhartia",
     "https://www.screener.in/company/JUBLINGREA/consolidated/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Onesource Specialty",
+   "sector": "Pharma CDMO",
+   "style": "Promoter-owned, professionally run",
+   "styleNote": "Part of Arun Kumar (Pillai)'s Strides group, but run by hired managers. Arun Kumar, founder of Strides, is non-executive Chairman; CEO & MD Neeraj Sharma leads the business. The promoter group owns about 30.5% (June 2026), mostly through Tenshi Pharmaceuticals (18.4%) and Karuna Business Solutions (7.1%).",
+   "people": [
+    {
+     "name": "Neeraj Sharma",
+     "role": "CEO & Managing Director",
+     "family": false,
+     "bio": "An engineer in instrumentation and control from the University of Delhi with a postgraduate diploma in business management from IMT Ghaziabad. He has about 28–30 years in pharma across India, Southeast Asia, Latin America and Europe, including about 25 years at Ranbaxy and Sun Pharma, with a record in running P&Ls, entering new markets, turnarounds and acquisitions. He was CEO of Steriscience, the group's sterile-injectables business backed by TPG, before it was folded into OneSource. He now leads the combined CDMO covering biologics, drug-device combinations (such as GLP-1 cartridges) and soft gelatin capsules."
+    },
+    {
+     "name": "Anurag Bhagania",
+     "role": "Chief Financial Officer",
+     "family": false,
+     "bio": "A chartered accountant with an MBA in marketing and more than 25 years of experience, the last decade as CFO of listed companies. He worked at SKF, Honeywell and General Electric and was CFO of Kirloskar Oil Engines before joining OneSource."
+    },
+    {
+     "name": "Biju Mathew",
+     "role": "Chief Operating Officer",
+     "family": false,
+     "bio": "A pharmacist from Bangalore University with more than 28 years in quality systems and regulatory compliance. He was head of quality and a board member at Stelis Biopharma (the company's earlier name), and before that worked at Wockhardt Bio Pharma, Strides/Agila and Mylan. He has handled inspections by the US FDA, UK MHRA, Brazil's ANVISA and Australia's TGA, and has commissioned new plants."
+    },
+    {
+     "name": "Bernhard Thurnbauer",
+     "role": "Chief Quality Officer",
+     "family": false,
+     "bio": "Has more than 30 years in quality assurance, compliance and technical operations. He was global head of audit at Moderna and earlier worked at Roche, Acino and B. Braun. His expertise is sterile injectables, biologics and contract manufacturing under US FDA and European rules."
+    },
+    {
+     "name": "Jeffrey Wong",
+     "role": "Chief Business Officer",
+     "family": false,
+     "bio": "Has more than 30 years in biopharma. He contributed to the Human Genome Project and held roles at Syngene, Fujifilm Diosynth, Thermo Fisher and Sartorius, covering bioprocessing, mammalian and microbial platforms and cell and gene therapy. At OneSource he leads partnerships and deal-making with global customers."
+    }
+   ],
+   "changes": "Senior VP (technical development) Prateek Gupta resigned effective 15 May 2026. Ravi Kumar, Global Head – Injectables and head of corporate strategy, resigned effective 24 Jul 2026; Preeti Kalra (HR head) was named senior management at the same time.",
+   "sources": [
+    "https://www.onesourcecdmo.com/about-us/",
+    "https://www.onesourcecdmo.com/wp-content/uploads/2025/06/Brief-Profile-of-Director.pdf",
+    "https://www.pharmafocus.com/collections/pharmafocus-november-2024/stelis-strides-and-steriscience-merge-to-form-new-cdmo-b194",
+    "https://scanx.trade/stock-market-news/companies/onesource-specialty-pharma-senior-management-personnel-resigns-effective-may-13-2026/40210123",
+    "https://scanx.trade/stock-market-news/companies/onesource-specialty-pharma-accepts-ravi-kumar-resignation-appoints-preeti-kalra-as-smp/46521068",
+    "https://www.screener.in/company/ONESOURCE/consolidated/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Aarti Pharmalabs",
+   "sector": "Pharma CDMO",
+   "style": "Promoter-run",
+   "styleNote": "Part of the Gogri family's Aarti group (Aarti Industries, Aarti Drugs). From 1 Oct 2026 the Chairman, Rashesh C. Gogri, becomes Managing Director and his sister Hetal Gogri Gala moves from MD to Whole-time Director (staying Vice Chairperson); Narendra Salvi continues as the second MD. Their uncle Rajendra V. Gogri retired from the board at the Sep 2026 AGM. Chandrakant V. Gogri is Chairman Emeritus. The large promoter group owns about 42.9% (June 2026). About 45–48% of institutional votes went against the two role changes at the AGM.",
+   "people": [
+    {
+     "name": "Rashesh C. Gogri",
+     "role": "Chairman; Managing Director from 1 Oct 2026",
+     "since": "On the board since Aug 2021; MD from Oct 2026",
+     "family": true,
+     "relation": "Promoter; brother of Vice Chairperson Hetal Gogri Gala; nephew of former director Rajendra V. Gogri",
+     "stake": "4.2% (FY26 annual report, AGM notice); promoter group together about 42.9%",
+     "bio": "A production engineer from Mumbai University, aged 52, with about 29 years in the chemical industry, where he helped grow several of the Aarti group's chemical and pharma businesses. He has been on the board since August 2021 and was non-executive Chairman before he takes over as Managing Director on 1 October 2026. He was Vice-Chairman & MD of Aarti Industries until 30 September 2026 and stays there as non-executive Vice-Chairman. He is also Managing Director of Aarti Drugs, so his time is split across group companies."
+    },
+    {
+     "name": "Hetal Gogri Gala",
+     "role": "Vice Chairperson & Whole-time Director (MD until 30 Sep 2026)",
+     "since": "On the board since Aug 2021; MD from Oct 2022",
+     "family": true,
+     "relation": "Promoter; sister of Chairman Rashesh C. Gogri",
+     "stake": "3.1% (FY26 annual report, AGM notice)",
+     "bio": "An electronics engineering graduate who also completed the Management Education Programme at IIM Ahmedabad and holds a degree in supply chain management. She has about 23 years in the chemical industry, with a focus on purchasing, supply chain, HR and administration. She was Managing Director from October 2022 and stepped down to Whole-time Director from 1 October 2026 to make way for her brother, while remaining Vice Chairperson. She is also a director of Aarti Industries."
+    },
+    {
+     "name": "Narendra J. Salvi",
+     "role": "Managing Director",
+     "since": "On the board since Aug 2021",
+     "family": false,
+     "stake": "0.02% (FY26 annual report)",
+     "bio": "Has more than three decades of experience in pharmaceuticals and specialty chemicals. As Managing Director he oversees operations, projects, regulatory compliance and sustainability. He has been on the board since the company was set up in 2021, and shareholders raised his salary ceiling in 2025 and granted him stock options under the company's 2023 option plan."
+    },
+    {
+     "name": "Piyush Lakhani",
+     "role": "Chief Financial Officer",
+     "family": false,
+     "bio": "The company's Chief Financial Officer and a key managerial person, who signs the financial statements. His education and earlier career are not given in the sources reviewed."
+    }
+   ],
+   "changes": "From 1 Oct 2026 Rashesh C. Gogri moves from non-executive Chairman to Managing Director and Hetal Gogri Gala from MD to Whole-time Director; approved at the 22 Sep 2026 AGM with heavy institutional opposition. Rajendra V. Gogri retired from the board at that AGM and was not replaced.",
+   "sources": [
+    "https://www.aartipharmalabs.com/investors/annual-report-fy-2025-26.pdf",
+    "https://www.aartipharmalabs.com/investors/annual-report-fy24-25.pdf",
+    "https://www.aartipharmalabs.com/board-of-directors",
+    "https://businessupturn.com/business/aarti-pharmalabs-announces-directorate-changes-post-agm/",
+    "https://www.whalesbook.com/corporate-news/English/healthcarebiotech/Aarti-Pharmalabs-AGM-Shareholders-Approve-Rs-2-Dividend-and-Leadership-Changes/6ab3cc48f2017017ae718dc1",
+    "https://www.screener.in/company/AARTIPHARM/consolidated/"
    ],
    "updatedOn": "2026-09-29"
   },
