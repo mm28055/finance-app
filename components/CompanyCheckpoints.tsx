@@ -8,7 +8,12 @@ import { STATUS_STYLE } from './checkpoint-status';
 export function CompanyCheckpoints({ checkpoints }: { checkpoints: Checkpoint[] }) {
     const list = [...checkpoints]
         .filter(c => c.status !== 'dropped')
-        .sort((a, b) => (a.status === 'pending' ? 1 : 0) - (b.status === 'pending' ? 1 : 0) || dueRank(b.due) - dueRank(a.due));
+        // Settled ones first (latest on top), then pending ones soonest first.
+        .sort((a, b) => {
+            const pa = a.status === 'pending', pb = b.status === 'pending';
+            if (pa !== pb) return pa ? 1 : -1;
+            return pa ? dueRank(a.due) - dueRank(b.due) : dueRank(b.due) - dueRank(a.due);
+        });
     if (!list.length) return null;
 
     return (

@@ -38,7 +38,7 @@ export default function Scorecard() {
     const live = CHECKPOINTS.filter(c => c.status !== 'dropped');
     const overall = hitRate(live);
     const quarters = [...new Set(live.map(c => c.due.replace(/^H1 /, 'Q2 ').replace(/^H2 /, 'Q4 ')))]
-        .sort((a, b) => dueRank(b) - dueRank(a));
+        .sort((a, b) => dueRank(a) - dueRank(b)); // soonest first: the season in progress on top
     const order = { missed: 0, partly: 1, met: 2, pending: 3, dropped: 4 } as const;
 
     return (
