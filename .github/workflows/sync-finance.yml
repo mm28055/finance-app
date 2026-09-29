@@ -62,16 +62,25 @@ jobs:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           DIRECT_URL: ${{ secrets.DIRECT_URL }}
 
+      # Numeric checkpoints from the notes whose quarter's results are now filed.
+      - name: Settle checkpoints
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        run: npx tsx scripts/check-checkpoints.ts
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+
       - name: Commit the corporate-actions record
         if: ${{ !cancelled() }}
         run: |
-          if [ -z "$(git status --porcelain lib/corporate-actions/*.json lib/screener-overrides.json)" ]; then
+          if [ -z "$(git status --porcelain lib/corporate-actions/*.json lib/screener-overrides.json lib/checkpoints/checkpoints.json)" ]; then
             echo "No corporate-action changes."
             exit 0
           fi
           git config user.name "corporate-actions-bot"
           git config user.email "corporate-actions-bot@users.noreply.github.com"
-          git add lib/corporate-actions/*.json lib/screener-overrides.json
+          git add lib/corporate-actions/*.json lib/screener-overrides.json lib/checkpoints/checkpoints.json
           git commit -m "Record corporate actions applied by the daily sync"
           git pull --rebase
           git push
