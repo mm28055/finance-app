@@ -7756,7 +7756,6 @@
      "role": "Executive Director & Group CEO",
      "since": "Joined 2011; CEO from 1 January 2026; Executive Director & Group CEO from 1 June 2026",
      "family": false,
-     "stake": "Not disclosed individually (was not a director at 31 March 2026)",
      "bio": "Holds a bachelor's degree in economics, a master's in marketing and sales and an advanced systems diploma in computers. He has over 28 years of experience; before Quess he worked in textiles, auto components and services, in sales, product and business development roles. He joined Quess in 2011 as General Manager – Sales (Staffing) and led the staffing business as it grew from 13,000 to about 4.8 lakh associates, later becoming President – India and Global Operations. He led three overseas acquisitions in the Middle East, Singapore and Sri Lanka, which now give about 20% of group EBITDA. He was President of the Indian Staffing Federation for three terms (2020–2026) and sits on the board of the World Employment Confederation for Southern APAC."
     },
     {
@@ -34657,6 +34656,340 @@
     "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1698424_21072026050919_WEB.xml",
     "https://www.ajax-engg.com/investor-relations",
     "https://b2bpurchase.com/ajax-engineering-appoints-shubhabrata-saha-as-md-ceo/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Ather Energy",
+   "sector": "Vehicles",
+   "style": "Promoter-run",
+   "styleNote": "Founder-run: co-founders Tarun Mehta (CEO) and Swapnil Jain (CTO), IIT Madras graduates who started Ather there in 2013, are the two executive directors. They own only about 5% each. Hero MotoCorp, the largest shareholder at 29.2%, is also classed as a promoter; promoters together hold 39.6%. The board is chaired by an independent director, Neelam Dhawan, and the directors are not related. A preferential issue approved in August 2026 includes warrants for Hero MotoCorp and the two founders.",
+   "people": [
+    {
+     "name": "Tarun Sanjay Mehta",
+     "role": "Co-founder, Executive Director & CEO",
+     "since": "2013 (founder)",
+     "family": true,
+     "relation": "Co-founder and promoter; not related to other directors",
+     "stake": "4.89% (shareholding pattern, July 2026), plus about 0.28% through two family trusts",
+     "bio": "Holds a dual bachelor's and master's degree in engineering design from IIT Madras, where Ather was started in 2013. He has led the company, covering product, business and growth, and raises its capital. He has over ten years in electric vehicles. He was named in Forbes India's '30 under 30' (2018) and Fortune India's '40 under 40' (2019, 2021, 2023), and received the AIMA 'Young Entrepreneur' award."
+    },
+    {
+     "name": "Swapnil Babanlal Jain",
+     "role": "Co-founder, Executive Director & Chief Technical Officer",
+     "since": "2013 (founder)",
+     "family": true,
+     "relation": "Co-founder and promoter; not related to other directors",
+     "stake": "4.89% (shareholding pattern, July 2026), plus about 0.34% through two family trusts",
+     "bio": "Holds a dual bachelor's and master's degree in engineering design from IIT Madras. He co-founded Ather in 2013 and runs its long-term technology roadmap and engineering team, covering hardware, software, electronics and mechanical design. He has over ten years in electric vehicles and shares the AIMA and Forbes/Fortune recognitions with his co-founder."
+    },
+    {
+     "name": "Sohil Dilipkumar Parekh",
+     "role": "Chief Financial Officer",
+     "since": "September 2022",
+     "family": false,
+     "bio": "A chartered accountant with bachelor's degrees in commerce and law from Gujarat University. Before Ather he worked at Claris Limited and had earlier roles in waste-to-energy, pharmaceuticals, market research, BPO and IT services. He oversees financial strategy, reporting, fund-raising and tax, and took the company through its April 2025 IPO and the 2026 QIP. He is an ultra-endurance athlete who has represented India in full-distance Ironman triathlons."
+    },
+    {
+     "name": "Ravneet Singh Phokela",
+     "role": "Chief Business Officer",
+     "since": "September 2015",
+     "family": false,
+     "bio": "A commerce graduate from Delhi University with a postgraduate diploma in business management from IMT Ghaziabad. Before Ather he worked at Nokia UK, Flipkart, Lowe Lintas, PAYBACK (Loyalty Solutions & Research) and Whirlpool of India. He runs marketing, sales, after-sales and service, the Ather Grid charging network, analytics and customer service, and is leading the push into overseas markets."
+    },
+    {
+     "name": "Sanjeev Kumar Singh",
+     "role": "Chief Operating Officer",
+     "since": "July 2022",
+     "family": false,
+     "bio": "A mechanical engineer from IIT Kharagpur. Before Ather he worked at Genpact, Bosch, ACME Tele Power and Tata Motors. He runs manufacturing across Ather's factories, including the Hosur plant and the new AURIC plant in Maharashtra, plus programme management and planning."
+    },
+    {
+     "name": "Harendra Saksena",
+     "role": "Chief Procurement Officer",
+     "since": "July 2022",
+     "family": false,
+     "bio": "A mechanical engineer from Jamia Millia Islamia with a master's in engineering management from the University of Technology, Sydney, and a supply-chain certificate from Stanford Graduate School of Business. Before Ather he worked at Johnson Electric, Siemens VDO Automotive, Motherson Auto and Daewoo Motors India. He runs sourcing and supplier management."
+    },
+    {
+     "name": "Milind Suresh Kothekar",
+     "role": "Head – Product Management & Chief of Staff to the CEO",
+     "since": "October 2015",
+     "family": false,
+     "bio": "Holds bachelor's and master's degrees in electrical engineering from IIT Bombay and previously worked at Eaton Technologies. He leads product management across the scooters, charging, the AtherStack software, accessories and ownership experience, and is chief of staff to the CEO."
+    }
+   ],
+   "changes": "Chief Human Resource Officer Sunitha Lal resigned in June 2025; Surabhi Loshali became CHRO on 5 Jan 2026. Anjani Kumar joined as Chief Digital & Information Officer on 29 May 2025. Hero MotoCorp nominee Niranjan Kumar Gupta left the board in May 2025; Vivek Anand joined as a non-executive director in Nov 2025. No KMP changes since the annual report.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30025_ATHERENERG_2025_2026_A_10006998_27072026203133.pdf",
+    "https://www.axiscapital.co.in/contents/Ather%20Energy%20Limited-RHP-1745322268.pdf",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1703091_28072026045841_WEB.xml",
+    "https://nsearchives.nseindia.com/corporate/ATHERENERGY_05012026172208_TofileAppointmentofCHRO5Jan.pdf",
+    "https://nsearchives.nseindia.com/corporate/ATHERENERGY_29052025203859_TouploadAppointmentofSMP.pdf",
+    "https://www.atherenergy.com/about",
+    "https://www.business-standard.com/companies/news/ather-energy-plans-aggressive-push-into-overseas-markets-cbo-phokela-126092500964_1.html"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "VST Tillers Tractors",
+   "sector": "Vehicles",
+   "style": "Promoter-run",
+   "styleNote": "Part of the Bengaluru-based VST Group, controlled by the extended VST promoter family, which holds 55.6%. Promoter family member V.T. Ravindra is Managing Director. The non-executive Chairman is Arun V. Surendra, Group MD of the VST Group, and another family member, V.V. Pravindra, is a non-executive director. Day-to-day operations are run by a hired CEO, Antony Cherukara (since 2020), and a hired CFO. Former Chairman V.K. Surendra, who led the company from 1996 to 2024, died in January 2026.",
+   "people": [
+    {
+     "name": "V.T. Ravindra",
+     "role": "Managing Director",
+     "since": "February 2021; re-appointed for three years from April 2024",
+     "family": true,
+     "relation": "Promoter family; the company says he is related to Chairman Arun V. Surendra, director V.V. Pravindra and the late V.K. Surendra",
+     "stake": "0.34% (shareholding pattern, June 2026); promoter group together 55.55%",
+     "bio": "Holds a postgraduate diploma in management. He has over 30 years in the VST Group's businesses, setting up and running two-wheeler and car dealerships, spare-parts distribution and plantation management, and helped build the group's car dealerships across Karnataka and Tamil Nadu. He became MD in February 2021, succeeding V.P. Mahendra, and the company reached its highest-ever turnover under him. He also sits on the boards of VST group companies, including VST Zetor and the Mitsubishi Heavy Industries–VST Diesel Engines joint venture."
+    },
+    {
+     "name": "Antony Cherukara",
+     "role": "Chief Executive Officer",
+     "since": "2020",
+     "family": false,
+     "bio": "A hired professional who joined as CEO in 2020 and runs the business day to day. He previously worked at Mahindra & Mahindra and then at Kirloskar Oil Engines, which he joined in 2012 and where he worked on corporate strategy and the revamp of its agri-business. At VST he speaks for the company on strategy, such as its plan (announced in 2022) for an electric tractor for the US market."
+    },
+    {
+     "name": "Nitin Agrawal",
+     "role": "Chief Financial Officer",
+     "since": "12 May 2023",
+     "family": false,
+     "bio": "A chartered accountant with nearly 20 years of experience in business finance, financial planning and analysis, costing, working capital, tax, compliance and finance automation. He replaced Pankaj Khemka as CFO in May 2023."
+    }
+   ],
+   "changes": "No KMP changes in FY26 or since, per the FY26 annual report and filings. Independent director Siva Kameswari Vissa retired on 28 Jul 2026 and Shuba Kumar joined on 27 Jul 2026. Former Chairman V.K. Surendra died in January 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31054_VSTTILLERS_2025_2026_A_10626776_01092026221742.pdf",
+    "https://www.vsttractors.com/in/wp-content/uploads/2025/08/Directors-Profile.pdf",
+    "https://nsearchives.nseindia.com/corporate/VSTTILLERS_08122023143329_Outcome.pdf",
+    "https://nsearchives.nseindia.com/corporate/VSTTILLERS_12052023171820_Final_122.pdf",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1696889_20072026042247_WEB.xml",
+    "https://www.vsttractors.com/mediacoverage/vst-tillers-tractors-will-launch-an-e-tractor-in-the-us-market-in-fy23-antony-cherukara-ceo/",
+    "https://www.bloomberg.com/profile/person/21032059"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Indo Farm",
+   "sector": "Vehicles",
+   "style": "Promoter-run",
+   "styleNote": "A founder-family company. Co-founder Ranbir Singh Khadwalia is Chairman & MD; his son Anshul is a whole-time director and his other son Shubham heads international business and cranes sales. The other founding promoter, Sunita Saini, holds 22.2% but has no executive role. Promoters own 70.6% in all, including 9.1% through Futuristic Mining and Construction Solutions LLP, which the two founders own. Half the board is independent. The CFO is a young chartered accountant hired in 2023.",
+   "people": [
+    {
+     "name": "Ranbir Singh Khadwalia",
+     "role": "Chairman & Managing Director",
+     "since": "1994 (co-founder)",
+     "family": true,
+     "relation": "Founding promoter; father of Anshul and Shubham Khadwalia",
+     "stake": "35.02% (shareholding pattern, June 2026); promoter group together 70.63%",
+     "bio": "Holds a diploma in mechanical engineering from the Haryana State Board of Technical Education. Before starting Indo Farm he worked in production at Eicher Farm Machinery. He has been with the company since it was set up in 1994 and has over three decades in farm equipment manufacturing. He oversees the whole business, including new plants and business development. He is 65."
+    },
+    {
+     "name": "Anshul Khadwalia",
+     "role": "Whole-time Director",
+     "since": "Board since May 2014; whole-time director since August 2023",
+     "family": true,
+     "relation": "Son of the Chairman & MD Ranbir Singh Khadwalia; brother of Shubham Khadwalia",
+     "stake": "2.08% (shareholding pattern, June 2026)",
+     "bio": "Holds a BSc in business and management from Aston University, UK. He ran sales and marketing for the company's farming division and now looks after sales and marketing strategy for tractors and spare parts, brand building and market expansion. He was named in Hindustan Times' 'Top 30 Under 30' and is a TEDx speaker."
+    },
+    {
+     "name": "Shubham Khadwalia",
+     "role": "Executive Vice President – International Business (earlier Sales & Marketing, Construction Equipment)",
+     "since": "Senior management",
+     "family": true,
+     "relation": "Son of the Chairman & MD Ranbir Singh Khadwalia; brother of Anshul Khadwalia",
+     "stake": "1.26% (shareholding pattern, June 2026)",
+     "bio": "Holds a BSc (Hons) in operations management from Lancaster University and an MSc in strategic marketing management from Aston University, UK. He has run sales and marketing for the cranes and construction-equipment division and international business, and is now listed as EVP – International Business. He received a 'Young Achiever' award from Dainik Bhaskar."
+    },
+    {
+     "name": "Amit Kumar",
+     "role": "Whole-time Director",
+     "since": "12 November 2025 (three-year term)",
+     "family": false,
+     "bio": "Holds an MBA and a bachelor's degree in engineering from Maharshi Dayanand University, Rohtak. He has over 14 years in manufacturing, operations, procurement and plant management, including vendor development, supply chain and ISO/IATF quality systems. He replaced Charan Singh Saini, who ran plant operations, as whole-time director."
+    },
+    {
+     "name": "Varun Sharma",
+     "role": "Chief Financial Officer",
+     "since": "11 September 2023",
+     "family": false,
+     "bio": "A chartered accountant and commerce graduate from Punjab University. Before Indo Farm he had short stints at Infosys, Reckitt Benckiser and Bunge India in finance and accounts. He was 28 when the January 2025 IPO prospectus was filed."
+    }
+   ],
+   "changes": "Whole-time Director Charan Singh Saini resigned on 28 Oct 2025; Amit Kumar joined as whole-time director on 12 Nov 2025. No KMP changes filed since the annual report.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30802_INDOFARM_2025_2026_A_10307764_28082026195957.pdf",
+    "https://www.indofarm.in/wp-content/uploads/2025/01/Prospectus_Indo_Farm_Equipment_Limited.pdf",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1689145_08072026124903_WEB.xml",
+    "https://nsearchives.nseindia.com/corporate/IFEL_28082026194339_Intimation_of_Notice_of_AGM.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "TIL",
+   "sector": "Vehicles",
+   "style": "Promoter-run",
+   "styleNote": "Controlled by the Gainwell group since January 2024: TIL Global Private Limited holds 61.3%. Gainwell's promoter and chairman, Sunil Kumar Chaturvedi, a former IAS officer, is TIL's Chairman & MD. Two Gainwell executives sit on the board as executive directors (Alok Kumar Tripathi, Director & President, and Ayan Banerjee, Gainwell's Group CFO, as Director–Finance). There are no family ties among the directors. The previous promoters were reclassified as public shareholders in June 2024.",
+   "people": [
+    {
+     "name": "Sunil Kumar Chaturvedi",
+     "role": "Chairman & Managing Director",
+     "since": "24 January 2024",
+     "family": true,
+     "relation": "Promoter of the Gainwell group, which controls TIL through TIL Global Private Limited",
+     "stake": "No shares in his own name (FY26 annual report); controls TIL through Gainwell's TIL Global Private Limited, which holds 61.3% (Sep 2026)",
+     "bio": "A fellow chartered accountant who spent about two decades in the IAS. In government he was a Director in the Finance Ministry's Department of Economic Affairs, private secretary to the Railways Minister, a Director in the Ministry of Heavy Industries, Project Director of the NATRiP automotive testing project, and a special secretary in West Bengal. After retiring voluntarily in 2008 he was Executive Director and COO of Bharat Forge's capital goods business until 2013. He joined Gainwell (then Tractors India Private Limited, a Caterpillar dealer) in January 2014, led its management buyout in 2016 and has chaired it since. He took over TIL in January 2024, putting in ₹120cr, and also sits on the board of Vesuvius India."
+    },
+    {
+     "name": "Alok Kumar Tripathi",
+     "role": "Director & President (website: Executive Director & CEO)",
+     "since": "Board since 24 January 2024",
+     "family": false,
+     "stake": "nil (FY26 annual report)",
+     "bio": "An engineering graduate from BMS College of Engineering, Bengaluru, with a PGDBM from IMT Ghaziabad. He began at BEML and HMEED, then joined Tractors India (now Gainwell) in 1995, where he held roles in branch operations, parts marketing, spare parts and construction-machine sales, ending as Gainwell's National Product Support Head. At TIL he runs operations, product support and customer engagement. He retired by rotation and sought re-election at the July 2026 AGM."
+    },
+    {
+     "name": "Ayan Banerjee",
+     "role": "Whole-time Director – Finance",
+     "since": "Under Gainwell ownership",
+     "family": false,
+     "stake": "nil (FY26 annual report)",
+     "bio": "A chartered accountant trained at Lovelock & Lewes, with about three decades in heavy engineering, refractories, electronics and media, including start-ups. He is Group CFO of the Gainwell group and oversees finance at TIL as an executive director."
+    },
+    {
+     "name": "Kanhaiya Gupta",
+     "role": "Chief Financial Officer",
+     "since": "Under Gainwell ownership",
+     "family": false,
+     "bio": "A commerce (Hons) graduate who is a fellow chartered accountant, company secretary and cost accountant, with over 23 years in finance. He was CFO of Rashmi Metaliks, deputy CFO (finance controller) at ACC (Lafarge-Holcim group), and earlier worked at IFB Industries and ITC."
+    },
+    {
+     "name": "Pinaki Niyogy",
+     "role": "Chief Growth and Technology Officer",
+     "since": "Joined TIL in September 1992",
+     "family": false,
+     "bio": "A TIL veteran who joined as a management trainee in 1992 and has over 31 years with the company in product development, engineering operations and technology. He leads TIL's product portfolio and engineering work under the new owners."
+    }
+   ],
+   "changes": "No KMP changes during FY26 or since, per the FY26 annual report and filings. Vijay Singh Chauhan joined as an independent director on 22 Dec 2025 and Anurag Srivastava as a non-executive director in Nov 2025. TIL bought 60% of Tulip Compression in February 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_29554_TIL_2025_2026_A_5947184_03072026144528.pdf",
+    "https://www.tilindia.in/about-us/board-of-directors",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1727567_24092026050445_WEB.xml",
+    "https://infomericstorage.blob.core.windows.net/uploads/Pr_TIL_Ltd_16_Mar26_f2466230ee.pdf",
+    "https://www.marketscreener.com/quote/stock/TIL-LIMITED-9059705/news/TIL-Limited-Appoints-Sunil-Kumar-Chaturvedi-as-the-Chairman-45815010/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Ola Electric",
+   "sector": "Vehicles",
+   "style": "Promoter-run",
+   "styleNote": "Founder-led: Bhavish Aggarwal founded Ola Electric in 2017 and is Chairman & MD; he is the only executive director. He holds 26.5% directly, and promoters hold 33.0% in all, including Ani Technologies (Ola Cabs, 3.5%) and the Indus Trust (3.0%). SoftBank's SVF II holds 12.3%. No directors are related to each other. The team around him has churned: the CFO changed in January 2026, one of the two COOs left in September 2026, and the company secretary has changed twice in 15 months.",
+   "people": [
+    {
+     "name": "Bhavish Aggarwal",
+     "role": "Founder, Chairman & Managing Director",
+     "since": "2017 (founder)",
+     "family": true,
+     "relation": "Founder and promoter; not related to other directors",
+     "stake": "26.52% directly (shareholding pattern, June 2026); promoter group together 32.97%",
+     "bio": "An IIT Bombay computer science and engineering graduate who worked briefly at Microsoft Research India. He co-founded ANI Technologies (Ola Cabs) in 2010 and set up Ola Electric in 2017, leading it through the Futurefactory scooter plant, the cell 'gigafactory' and the August 2024 IPO. He also founded the AI company Krutrim. He runs the business hands-on, often announces plans on social media (which the company then files with the exchanges), and draws no remuneration from Ola Electric's subsidiaries."
+    },
+    {
+     "name": "Deepak Rastogi",
+     "role": "Chief Financial Officer",
+     "since": "20 January 2026",
+     "family": false,
+     "bio": "A chartered accountant and MBA with over 30 years in finance. He has been President, Group CFO or head of finance at Puravankara, Deepak Fertilisers & Petrochemicals, Tata AutoComp Systems, Timken, Alcatel, DuPont, Castrol and Raymond, and has sat on the boards of listed companies. The company says he has worked on about $1 billion of equity deals, including IPOs and cross-border M&A. He replaced Harish Abichandani, who resigned for personal reasons."
+    },
+    {
+     "name": "Shaun William Calvert",
+     "role": "Chief Operations Officer",
+     "since": "February 2023",
+     "family": false,
+     "bio": "A manufacturing executive who was Deputy CEO at VinFast in Vietnam before joining Ola Electric. Earlier he spent many years at General Motors, including as director of operational excellence, director of vehicle assembly operations and in its Australian supply chain. He is one of Ola Electric's senior management personnel in charge of operations."
+    }
+   ],
+   "changes": "CFO Harish Abichandani resigned 19 Jan 2026; Deepak Rastogi took over 20 Jan 2026. COO Hyun Shik Park resigned 5 Sep 2026. Senior Director (New Business) Vishal Chaturvedi left 31 Dec 2025. Company Secretary Pritam Das Mohapatra left in Jun 2025; successor Abhishek Jain left 28 Aug 2026; Deepa Bansal appointed 28 Sep 2026. Independent director Ananth Sankaranarayanan left in Dec 2025. The board approved a rights issue on 28 Sep 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31975_OLAELEC_2025_2026_A_20107852_08092026222027.pdf",
+    "https://nsearchives.nseindia.com/corporate/OLAELECTRIC_19012026210129_Outcome_Board_Meeting_OEM.pdf",
+    "https://nsearchives.nseindia.com/corporate/OLAELECTRIC_05092026203415_Outcome_of_Board_Meeting_N.pdf",
+    "https://nsearchives.nseindia.com/corporate/OLAELECTRIC_28092026195126_SEIntimationAppointmentofCompanySecretaryandComplianceOfficer.pdf",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1698979_21072026110945_WEB.xml",
+    "https://en.wikipedia.org/wiki/Bhavish_Aggarwal",
+    "https://inc42.com/features/bhavish-aggarwals-inner-circle-the-key-people-driving-ola-electric/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Zelio E-Mobility",
+   "sector": "Vehicles",
+   "style": "Promoter-run",
+   "styleNote": "A family company run by the Aryas of Hisar, Haryana. Niraj Arya is Chairman & Whole-time Director, his son Kunal is MD, his brother Deepak is a whole-time director and his daughter Sayuri is a non-executive director. Niraj, Deepak and Kunal hold about 24.3% each; promoters own 72.8%, and some promoter shares are pledged. In April 2026 the company hired an outside CEO, Divyanshu Agarwal. The September 2026 preferential issue gives the three promoters ₹85cr of warrants at ₹853 a share.",
+   "people": [
+    {
+     "name": "Kunal Arya",
+     "role": "Managing Director",
+     "since": "Board since incorporation (July 2021)",
+     "family": true,
+     "relation": "Son of the Chairman Niraj Arya; nephew of Deepak Arya; brother of director Sayuri Arya",
+     "stake": "24.25% (shareholding pattern, 31 Mar 2026); promoter group together 72.77%",
+     "bio": "A promoter who completed his senior secondary schooling (CBSE) in 2013 and had about five years in electric vehicles and batteries in the IPO draft prospectus. As MD he sets business strategy and runs business planning, purchasing, production, inventory, dispatch and sales and marketing. He speaks for the company on its expansion plans. He was 28 in the IPO draft prospectus."
+    },
+    {
+     "name": "Niraj Arya",
+     "role": "Chairman & Whole-time Director",
+     "since": "Board since incorporation (July 2021)",
+     "family": true,
+     "relation": "Father of MD Kunal Arya and director Sayuri Arya; brother of Deepak Arya",
+     "stake": "24.25% (shareholding pattern, 31 Mar 2026)",
+     "bio": "A promoter who completed his senior secondary schooling (Haryana Board) in 1989 and has about 18 years in the electric vehicle and battery business. He handles general administration, accounts and finance, legal and compliance. He was 52 in the IPO draft prospectus."
+    },
+    {
+     "name": "Deepak Arya",
+     "role": "Whole-time Director",
+     "since": "Board since incorporation (July 2021)",
+     "family": true,
+     "relation": "Brother of the Chairman Niraj Arya; uncle of Kunal and Sayuri Arya",
+     "stake": "24.25% (shareholding pattern, 31 Mar 2026)",
+     "bio": "A promoter with a BA from Dayanand College, Hisar (Kurukshetra University) and about 12 years in electric vehicles and batteries. He is responsible for human resources and customer relationship management. He was 46 in the IPO draft prospectus."
+    },
+    {
+     "name": "Divyanshu Agarwal",
+     "role": "Chief Executive Officer (senior management)",
+     "since": "15 April 2026",
+     "family": false,
+     "bio": "A chartered accountant with a B.Com (Hons) from St. Xavier's College, Kolkata, who trained at Price Waterhouse (PwC) in Kolkata. He joined Navi Limited in November 2021, worked with its founder and chairman on cross-functional projects and on Navi's IPO papers and private-equity fund-raising, and from October 2024 headed Navi's UPI business. He is the first outside CEO at Zelio and is not related to the promoters."
+    },
+    {
+     "name": "Shubham Garg",
+     "role": "Chief Financial Officer",
+     "since": "1 March 2025",
+     "family": false,
+     "bio": "A chartered accountant (ICAI member since 2023) with about four years in finance, accounts, tax and compliance in the IPO draft prospectus. He oversees accounting, banking, tax and corporate finance."
+    },
+    {
+     "name": "Sanjay Kumar",
+     "role": "Vice President – Operations",
+     "since": "16 April 2024",
+     "family": false,
+     "bio": "Holds a diploma in mechanical engineering from the Haryana State Board of Technical Education and has over 15 years in production, process improvement and quality in the automotive industry. Before Zelio he worked at Jindal Mobilitric, E-Sprinto Green Energy, Okaya EV, Okinawa Autotech, Mahindra & Mahindra and Suzuki Motorcycle India. He runs plant operations, including production, quality, inventory and dispatch."
+    }
+   ],
+   "changes": "Divyanshu Agarwal was appointed CEO on 15 Apr 2026. No other executive changes were found on the company's investor page; an FY26 annual report was not found online, so the KMP list is based on the October 2025 IPO documents and later filings.",
+   "sources": [
+    "https://www.sharekhan.com/MediaGalary/IPODocuments/PD001AA.pdf",
+    "https://files.zelioebikes.com/uploads/1779431331_Change-in-Managment.pdf",
+    "https://files.zelioebikes.com/uploads/1779431509_Shareholding-Pattern-31-March-2026.pdf",
+    "https://zelioebikes.com/investor-new/",
+    "https://evreporter.com/zelio-e-mobility-board-approves-%E2%82%B9168-crore-preferential-issue-for-expansion/"
    ],
    "updatedOn": "2026-09-29"
   }
