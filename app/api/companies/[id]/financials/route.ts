@@ -2,11 +2,11 @@ import { NextRequest, NextResponse } from 'next/server';
 import { screenerPageUrl, fetchScreenerPage, screenerTable, screenerGrowth, type ScreenerView } from '@/lib/screener-page';
 
 // GET /api/companies/[id]/financials?view=consolidated|standalone
-// The last six years of P&L, balance sheet, cash flow and working-capital ratios,
+// The last five years of P&L, balance sheet, cash flow and working-capital ratios,
 // plus Screener's growth summary, read from the company's Screener page when its
 // card is opened. The page is cached for a day; nothing is stored.
 
-const YEARS = 6;
+const YEARS = 5;
 
 // Rows shown, in order, with plain-English labels. Anything else on Screener is left out.
 const ROWS: Record<string, [string, string][]> = {
@@ -45,7 +45,7 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
         for (const [section, wanted] of Object.entries(ROWS)) {
             const t = screenerTable(html, section);
             if (!t) continue;
-            // Last six years; the P&L also keeps its trailing-twelve-months column.
+            // Last five years; the P&L also keeps its trailing-twelve-months column.
             const ttm = t.columns[t.columns.length - 1] === 'TTM';
             const yearCols = t.columns.map((c, i) => ({ c, i })).filter(x => x.c !== 'TTM').slice(-YEARS);
             const keep = ttm ? [...yearCols, { c: 'TTM', i: t.columns.length - 1 }] : yearCols;

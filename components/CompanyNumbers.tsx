@@ -2,7 +2,7 @@
 import React from 'react';
 import { ValuationHistory } from './ValuationHistory';
 
-// One card on the opened company row: price & valuation history, and six years of
+// One card on the opened company row: price & valuation history, and five years of
 // P&L, balance sheet, cash flow and working-capital ratios — all read from the
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
@@ -26,24 +26,22 @@ const NOTES: Partial<Record<Tab, string>> = {
     ratios: 'Days of sales (debtors), of materials (inventory, payables). A shorter cash conversion cycle is better.',
 };
 
-const growthStrip = (g: Financials['growth']) => {
+// Screener's growth summary as one quiet line under the P&L table.
+const growthLine = (g: Financials['growth']) => {
     const pick = (title: string, key: string) => {
         const v = g[title]?.[key];
         return v && v !== '%' ? v : null;
     };
-    const items = [
-        ['Sales growth', pick('Compounded Sales Growth', '5 Years'), pick('Compounded Sales Growth', '3 Years')],
-        ['Profit growth', pick('Compounded Profit Growth', '5 Years'), pick('Compounded Profit Growth', '3 Years')],
-        ['Share price', pick('Stock Price CAGR', '5 Years'), pick('Stock Price CAGR', '3 Years')],
-    ] as const;
+    const parts = [
+        ['Sales', pick('Compounded Sales Growth', '5 Years'), pick('Compounded Sales Growth', '3 Years')],
+        ['profit', pick('Compounded Profit Growth', '5 Years'), pick('Compounded Profit Growth', '3 Years')],
+    ].filter(([, a, b]) => a || b).map(([l, a, b]) => `${l} ${a ?? '–'} / ${b ?? '–'}`);
     const roe = pick('Return on Equity', 'Last Year');
+    if (!parts.length && !roe) return null;
     return (
-        <div className="flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-gray-500 mb-2">
-            {items.filter(([, a, b]) => a || b).map(([label, five, three]) => (
-                <span key={label}>{label} <b className="text-gray-800">{five ?? '–'}</b> a year over 5 yrs{three ? <> · <b className="text-gray-800">{three}</b> over 3</> : null}</span>
-            ))}
-            {roe && <span>Return on equity <b className="text-gray-800">{roe}</b> last year</span>}
-        </div>
+        <p className="text-[10px] text-gray-400 mt-1.5">
+            Yearly growth, 5 yrs / 3 yrs: {parts.join(' · ')}{roe ? ` · return on equity ${roe} last year` : ''}
+        </p>
     );
 };
 
@@ -124,8 +122,8 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
                     {fin && fin.empty && <div className="h-16 flex items-center justify-center text-[11px] text-gray-400">No {fin.view} figures for this company — try the other view.</div>}
                     {fin && !fin.empty && (
                         <>
-                            {growthStrip(fin.growth)}
                             {table ? <DataTable table={table} /> : <div className="text-[11px] text-gray-400 py-4 text-center">Not reported for this company.</div>}
+                            {tab === 'profit-loss' && growthLine(fin.growth)}
                             <p className="text-[9px] text-gray-400 mt-1.5">{NOTES[tab]} Filed figures from Screener ({fin.view}).</p>
                         </>
                     )}
