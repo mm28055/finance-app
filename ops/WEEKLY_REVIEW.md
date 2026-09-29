@@ -67,6 +67,17 @@ concrete watch item or guidance, add it as a checkpoint: `id` = "<company-slug>-
 `ebitdaMargin` = operating profit ÷ sales, `patYoY`, `revenue`, `ebitda`, `pat`, `orderBook` in ₹ crore). At most 4
 pending per company. Never delete checkpoints (the daily job removes them three years after their quarter ends).
 
+**Projects and capex** (`lib/projects/projects.json`, shown on the company card under "What we were watching"). Each
+company's material plants, expansions and other capital projects: `id`, `company`, `sector`, `name`, `what`, `cost`,
+`expectedStart`, `adds`, `status` (planned / building / started / ramping / on hold / dropped), `source`,
+`updatedOn`. Their milestones are checkpoints with `project` set to the project's `id`. Whenever a call, results or a
+filing speaks about a project: move its `status` on (e.g. building → started when production begins; started →
+ramping), update `source`/`updatedOn`, judge its due milestones like other checkpoints, and add any new material
+project the company announces (with 1–3 dated milestones as management states them). A delay, cost overrun or cut is
+never overwritten: append to the project's `revisions` `{ "on", "text" }` (and to the milestone's), keep the
+original `expectedStart`, and add the new date as a new milestone. Filings that announce a plant starting
+(commercial production, commissioning) are the usual trigger.
+
 **Needs a session** (`lib/session-todos/todos.json`, shown as a chip on the dashboard header). Add an item when
 something needs the owner to open a session with Claude and you cannot do it within this run's rules: a company to
 add that needs a new note section you had no room for, a data source failing for more than a week, anything left over
@@ -96,7 +107,7 @@ Then mark the entry done: add `"handled": "<YYYY-MM-DD>: <one line: what you fou
   rate-limited: one request every 5 seconds at most.
 - Plain English, short sentences, ₹/cr/lakh, bold company names and conclusions, balanced `**`.
 - Never write notes for the "Misc" sector or the portfolio. Never merge sectors. Do not rewrite whole notes: the
-  quarterly refresh does that. Edit only `lib/sector-overviews/**`, `lib/checkpoints/checkpoints.json`, `lib/session-todos/todos.json` and `lib/corporate-actions/needs-attention.json`
+  quarterly refresh does that. Edit only `lib/sector-overviews/**`, `lib/checkpoints/checkpoints.json`, `lib/projects/projects.json`, `lib/session-todos/todos.json` and `lib/corporate-actions/needs-attention.json`
   (and `lib/screener-overrides.json` if a company's Screener page cannot otherwise be found).
 
 ## 3. Check, then publish
