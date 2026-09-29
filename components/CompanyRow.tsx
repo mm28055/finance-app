@@ -344,9 +344,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                             className={`text-sm font-medium truncate ${guidanceHigh ? 'text-[#6B9FCC]'
                                 : guidanceMid !== null ? 'text-gray-400'
                                     : 'text-gray-800'}`}
-                            title={guidanceTitle}
+                            title={company.displayName ? `${company.displayName} (formerly ${company.name}) · ${guidanceTitle}` : guidanceTitle}
                         >
-                            {company.name}
+                            {company.displayName || company.name}
                         </span>
                         {companyFilings.length > 0 && (
                             <button

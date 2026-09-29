@@ -13,6 +13,9 @@ export interface CallInfo {
     /** The note (or group tab) the call is in. */
     noteTitle: string;
     valuation?: ValuationBlock;
+    /** The quarter the note's research covers (e.g. "Q1 FY27") and the date it was last written. */
+    asOfQuarter: string;
+    lastUpdated: string;
 }
 
 /** Company name (lower case) → the note's call and where it lives, across every note and group tab. */
@@ -23,6 +26,7 @@ export function companyCallInfo(overviews: SectorOverview[]): Map<string, CallIn
             const m = (p.inShort || []).join(' ').match(/Verdict:\s*(own|follow|wait|pass|avoid)\b/i);
             if (m) out.set(p.company.trim().toLowerCase(), {
                 call: m[1].toLowerCase() as Call, key: p.company, sector, noteTitle: note.title, valuation: note.valuation,
+                asOfQuarter: note.asOfQuarter, lastUpdated: note.lastUpdated,
             });
         }
     };

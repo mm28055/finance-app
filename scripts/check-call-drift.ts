@@ -66,6 +66,31 @@ async function main() {
             coverage.push({ company: co.name, sector: co.sector, subject: `Not in the ${co.sector} note`, why: `Add a company section to the ${co.sector} note (or write the note if the sector has none).` });
         }
     }
+    // New calls since the note: a results call for a later quarter than the note covers, or an
+    // AGM / special call held after the note was written. The weekly review updates just that
+    // company with what is new.
+    const qRank = (q: string) => { const m = q.match(/^Q([1-4]) FY(\d{2})$/); return m ? Number(m[2]) * 10 + Number(m[1]) : -1; };
+    const transcripts = await prisma.transcript.findMany({
+        where: { company: { isVisible: true } },
+        select: { sourceEventDate: true, createdAt: true, quarter: { select: { name: true, q: true } }, company: { select: { name: true, sector: true } } },
+    });
+    for (const t of transcripts) {
+        const ci = info.get(t.company.name.trim().toLowerCase());
+        if (!ci) continue;
+        if (t.quarter.q !== 'GEN') {
+            if (qRank(t.quarter.name) > qRank(ci.asOfQuarter)) {
+                coverage.push({ company: t.company.name.trim(), sector: t.company.sector, subject: `New results call: ${t.quarter.name}`,
+                    why: `The ${t.quarter.name} results call is in (the note covers ${ci.asOfQuarter}). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.` });
+            }
+        } else {
+            const held = t.sourceEventDate || t.createdAt;
+            if (held.toISOString().slice(0, 10) > ci.lastUpdated) {
+                coverage.push({ company: t.company.name.trim(), sector: t.company.sector, subject: `New ${t.quarter.name}`,
+                    why: `${t.quarter.name} (held after the note was written). Add any new guidance, targets or plans to this company's section.` });
+            }
+        }
+    }
+
     console.log(`${coverage.length} companies need a note change for their sector:`);
     for (const c of coverage) console.log(`  ${c.company} | ${c.subject}`);
 

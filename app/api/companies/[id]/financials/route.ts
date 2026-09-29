@@ -11,7 +11,7 @@ const YEARS = 5;
 // Rows shown, in order, with plain-English labels. Anything else on Screener is left out.
 const ROWS: Record<string, [string, string][]> = {
     'profit-loss': [
-        ['Sales', 'Sales'], ['Revenue', 'Revenue'], ['Operating Profit', 'Operating profit'], ['Financing Profit', 'Financing profit'],
+        ['Sales', 'Sales'], ['Revenue', 'Revenue'], ['Expenses', 'Expenses'], ['Operating Profit', 'Operating profit'], ['Financing Profit', 'Financing profit'],
         ['OPM %', 'Operating margin'], ['Financing Margin %', 'Financing margin'], ['Other Income', 'Other income'],
         ['Interest', 'Interest'], ['Depreciation', 'Depreciation'], ['Profit before tax', 'Profit before tax'], ['Tax %', 'Tax rate'],
         ['Net Profit', 'Net profit'], ['EPS in Rs', 'EPS (₹)'], ['Dividend Payout %', 'Dividend payout'],

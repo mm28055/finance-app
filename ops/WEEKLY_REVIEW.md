@@ -10,11 +10,28 @@ and P/E for every company are in `lib/corporate-actions/companies.json` (refresh
 sub-agents. Today's date: run `date`.
 
 ## 1. What to do
-Read `lib/corporate-actions/needs-attention.json`. Work on entries WITHOUT a `handled` field, oldest first, at most 10
-per run (the rest wait for next week). If there are none, stop: change nothing, commit nothing.
+Two inputs: the open follow-ups in `lib/corporate-actions/needs-attention.json` (entries WITHOUT a `handled` field),
+and the week's material filings in `lib/filings/filings.json` (dated after the last entry in `ops/weekly-log.md`).
+If both are empty, stop: change nothing, commit nothing.
+
+Order of work (at most 25 follow-ups per run; the rest wait for next week — say how many are left in the log):
+1. Renames and sector moves (quick).
+2. New results calls — companies the notes rate own or follow first, then wait, then pass/avoid.
+3. Call drift, shareholding, demergers, new AGMs / special calls.
+4. The filings pass (below).
 
 For each entry, by its `subject`/`why`:
 
+- **Renamed: <new name>**: in the company's sector note (both tabs), refer to it as "<new name> (formerly <old
+  name>)" the first time and by the new name after that. Keep the stored name as the key everywhere it is used as a
+  key (verdict `company`, profile `company`, valuation inputs, chart keys, live placeholders) — only prose changes.
+- **New results call: <quarter>**: an incremental update of that one company, not a rewrite. Read the new call's
+  transcript (NSE/BSE filing, or the company's Screener "Concalls" list), its results filing and presentation; take
+  figures from Screener. Update only what is new: guidance and whether the last guidance was met, margins, order book,
+  capex, debt, management changes, surprises. The latest call wins; older statements only as dated history. Update
+  the verdict view/watch, the Tab 2 card's facts, the section-6 growth and guidance rows for that company, its
+  `myGrowth` if the evidence clearly moves it, and its call if warranted (consistently everywhere). Bump nothing else.
+- **New AGM / special call**: add any new guidance, targets or plans to the company's section (dated).
 - **Call drift** ("Call drift: own → Stretched", "wait → Fits", "follow → Fits" …): a focused review, not a rewrite.
   Read the company's verdict, its Tab 2 card (`<note>-businesses.ts`, the `Verdict:` line) and what the note was
   waiting for. Check the company's NSE filings of the last 6 weeks (see `lib/filings/filings.json` first) and any news
@@ -30,6 +47,12 @@ For each entry, by its `subject`/`why`:
   with `tools/notes/fetch.py`, `card.py`, `chartdata.py`, Tab 1 and Tab 2). Paths in that brief that start with `S/`
   mean a temporary folder of your own; the tools live in `tools/notes/`. For a move, cut the company's section from
   the old note and add it to the new one, re-ranked against its new peers.
+
+**Filings pass.** For each filing of the week that changes the investment case of a company covered by a note — a
+large order against sales, a fund-raise or dilution, a CEO/CFO/MD exit, a rating change, an acquisition or disposal,
+promoter selling or pledging, a regulatory or legal outcome — add one dated sentence to that company's section (and
+its watch items if relevant); change the call only if clearly warranted. Ignore routine items. No needs-attention
+entry is needed for these; list them in the log.
 
 Then mark the entry done: add `"handled": "<YYYY-MM-DD>: <one line: what you found and did>"`. Never delete entries.
 

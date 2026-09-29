@@ -108,6 +108,8 @@ export interface EnrichedCompany {
     geminiScoreDelta?: number;
     /** Listed on NSE Emerge / BSE SME. Set by `scripts/mark-sme.ts`. */
     isSme?: boolean;
+    /** Current name after a rename (the stored `name` stays, as the notes' key). */
+    displayName?: string;
     /** Held in the portfolio, so also listed under ZPortfolio. */
     inPortfolio?: boolean;
     colorTag?: string;
@@ -179,6 +181,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                 ...sector,
                 companies: sector.companies.filter(co =>
                     co.name.toLowerCase().includes(query) ||
+                    (co.displayName || '').toLowerCase().includes(query) ||
                     co.ticker.toLowerCase().includes(query)
                 )
             })).filter(sector => sector.companies.length > 0);

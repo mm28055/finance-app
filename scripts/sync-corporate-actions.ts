@@ -391,6 +391,12 @@ async function main() {
                         await write(c, 'aliases', c.aliases, [...current, alias].join(', '), `NSE name change → ${listing.name}`);
                         c.aliases = [...current, alias].join(', ');
                     }
+                    // The sector note still calls it by the old name: the weekly review updates
+                    // the wording (the stored name, which the notes are keyed by, stays).
+                    addAttention({
+                        company: c.name.trim(), sector: c.sector, exDate: null, subject: `Renamed: ${alias}`,
+                        why: `Renamed to ${alias} — in its sector note, call it "${alias} (formerly ${c.name.trim()})"; keep the stored name as the key`,
+                    });
                 } else if (t !== listing.symbol && !looselyRelated(names, listing.name)) {
                     addAttention({
                         company: c.name.trim(), sector: c.sector, exDate: null, subject: null,
