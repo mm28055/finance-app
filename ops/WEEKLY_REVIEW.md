@@ -78,6 +78,12 @@ never overwritten: append to the project's `revisions` `{ "on", "text" }` (and t
 original `expectedStart`, and add the new date as a new milestone. Filings that announce a plant starting
 (commercial production, commissioning) are the usual trigger.
 
+**Capacity** (`lib/projects/capacity.json`: `today`, `utilisation`, `fullUse`, `capexStatus`, `source` per company).
+When a new call gives a new utilisation figure or a plant starts, update that company's entry (and `capacityAdd` on
+the project). **Management** (`lib/management/management.json`): when a filing or call announces a new or departing
+MD, CEO, CFO or whole-time director, update `people` (add a sourced bio for a newcomer; never invent), set `changes`
+("CFO X resigned 12 Oct 2026; Y appointed"), `updatedOn`, and add the source link.
+
 **Needs a session** (`lib/session-todos/todos.json`, shown as a chip on the dashboard header). Add an item when
 something needs the owner to open a session with Claude and you cannot do it within this run's rules: a company to
 add that needs a new note section you had no room for, a data source failing for more than a week, anything left over
@@ -107,7 +113,7 @@ Then mark the entry done: add `"handled": "<YYYY-MM-DD>: <one line: what you fou
   rate-limited: one request every 5 seconds at most.
 - Plain English, short sentences, ₹/cr/lakh, bold company names and conclusions, balanced `**`.
 - Never write notes for the "Misc" sector or the portfolio. Never merge sectors. Do not rewrite whole notes: the
-  quarterly refresh does that. Edit only `lib/sector-overviews/**`, `lib/checkpoints/checkpoints.json`, `lib/projects/projects.json`, `lib/session-todos/todos.json` and `lib/corporate-actions/needs-attention.json`
+  quarterly refresh does that. Edit only `lib/sector-overviews/**`, `lib/checkpoints/checkpoints.json`, `lib/projects/projects.json`, `lib/projects/capacity.json`, `lib/management/management.json`, `lib/session-todos/todos.json` and `lib/corporate-actions/needs-attention.json`
   (and `lib/screener-overrides.json` if a company's Screener page cannot otherwise be found).
 
 ## 3. Check, then publish
