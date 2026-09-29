@@ -67,7 +67,10 @@ type Row = { label: string; src: string; expandable: boolean; values: (string | 
         if (q && q.columns.length >= 1) {
             const n = q.columns.length;
             const last4 = [...Array(Math.min(4, n)).keys()].map(k => n - Math.min(4, n) + k);
-            const yearAgo = n >= 5 ? n - 5 : -1;
+            // Half-yearly reporters (SMEs) have only Mar/Sep columns: a year back is two columns, not four.
+            const halfYearly = q.columns.slice(-3).every(c => /^(Mar|Sep) /.test(c));
+            const back = halfYearly ? 2 : 4;
+            const yearAgo = n > back ? n - 1 - back : -1;
             const num = (v: string | null | undefined) => (v === null || v === undefined || v === '' ? null : Number(v.replace(/,/g, '').replace('%', '')));
             const growthRows = new Set(['Sales', 'Revenue', 'Operating Profit', 'Financing Profit', 'Net Profit', 'EPS in Rs']);
             const rows = ROWS['profit-loss']
@@ -90,7 +93,8 @@ type Row = { label: string; src: string; expandable: boolean; values: (string | 
                 if (!m) return c;
                 const y = Number(m[2]);
                 const [qn, fy] = m[1] === 'Jun' ? [1, y + 1] : m[1] === 'Sep' ? [2, y + 1] : m[1] === 'Dec' ? [3, y + 1] : [4, y];
-                return `Q${qn} FY${String(fy % 100).padStart(2, '0')}`;
+                const fyLabel = `FY${String(fy % 100).padStart(2, '0')}`;
+                return halfYearly ? `${qn === 2 ? 'H1' : 'H2'} ${fyLabel}` : `Q${qn} ${fyLabel}`;
             };
             if (rows.length) tables['quarters'] = { columns: [...last4.map(i => fq(q.columns[i])), 'YoY'], raw: [...last4.map(i => q.columns[i]), null], rows };
         }

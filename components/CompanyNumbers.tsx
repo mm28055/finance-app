@@ -7,7 +7,7 @@ import { ValuationHistory } from './ValuationHistory';
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
 // Bump when the shape of /financials changes, so browsers never reuse an older copy.
-const DATA_VERSION = 3;
+const DATA_VERSION = 4;
 
 type Tab = 'history' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios';
 type Row = { label: string; src: string; expandable: boolean; values: (string | null)[] };
@@ -25,7 +25,7 @@ const TABS: { key: Tab; label: string }[] = [
 // Rows drawn in bold: the ones a reader looks for first.
 const KEY_ROWS = new Set(['Sales', 'Revenue', 'Operating profit', 'Financing profit', 'Net profit', 'Total', 'Free cash', 'ROCE', 'Operating cash']);
 const NOTES: Partial<Record<Tab, string>> = {
-    quarters: '₹ crore. YoY = the latest quarter against the same quarter a year earlier.',
+    quarters: '₹ crore. YoY = the latest period against the same period a year earlier (half-years for companies that report every six months).',
     'profit-loss': '₹ crore, years to March. TTM = the last four quarters.',
     'balance-sheet': '₹ crore at 31 March.',
     'cash-flow': '₹ crore, years to March. Free cash = operating cash less capital spending.',
