@@ -5697,6 +5697,61 @@
    "updatedOn": "2026-09-29"
   },
   {
+   "company": "Bajaj Healthcare",
+   "sector": "Pharma API",
+   "style": "Promoter-run",
+   "styleNote": "Two founding families run it. Sajankumar Bajaj is Chairman & MD and his daughter Namrata Bajaj is a whole-time director; Anil Jain is MD and his son Pakshal Jain is a whole-time director. Promoters own 58.3%, about 51% of it with the Bajaj family.",
+   "people": [
+    {
+     "name": "Sajankumar Bajaj",
+     "role": "Chairman & Managing Director",
+     "since": "Over 30 years with the company",
+     "family": true,
+     "relation": "Promoter; father of Namrata Bajaj",
+     "stake": "36.62% (FY26 annual report); promoters together 58.29%",
+     "bio": "A commerce graduate with over three decades at Bajaj Healthcare. He took it from a single plant to a drug maker with several integrated API and formulation sites, and looks after finance, marketing and procurement. He was re-appointed for three years from April 2026."
+    },
+    {
+     "name": "Anil Jain",
+     "role": "Managing Director",
+     "since": "Over 30 years with the company",
+     "family": true,
+     "relation": "Promoter; father of Pakshal Jain",
+     "stake": "5.75% (FY26 annual report)",
+     "bio": "Holds a diploma in pharmacy and has over three decades at the company, overseeing overall operations. He now leads business development, market expansion and customer relationships. He was re-appointed for three years from April 2026."
+    },
+    {
+     "name": "Namrata Bajaj",
+     "role": "Whole-time Director",
+     "since": "Over 10 years with the company",
+     "family": true,
+     "relation": "Daughter of Chairman & MD Sajankumar Bajaj",
+     "stake": "4.85% (FY26 annual report)",
+     "bio": "Holds a bachelor's in business administration from the Indian Institute of Planning and Management, Mumbai. She has over 10 years in sales and marketing at the company and runs sales and marketing for the formulation division. She was re-appointed for three years from April 2026."
+    },
+    {
+     "name": "Pakshal Jain",
+     "role": "Whole-time Director",
+     "family": true,
+     "relation": "Son of MD Anil Jain",
+     "bio": "Holds a bachelor's in marketing and entrepreneurship from the Indian School of Management & Entrepreneurship, Mumbai. He has been with the company for over six years and oversees marketing and production for the API and formulation businesses, including contract manufacturing. He was re-appointed for three years from June 2026."
+    },
+    {
+     "name": "Rohan Parekh",
+     "role": "Chief Financial Officer",
+     "since": "Apr 2025",
+     "family": false,
+     "bio": "A Chartered Accountant with over 13 years in corporate strategy, planning and analysis, audit and treasury. He worked at Ashv Finance, Home First Finance Company and Walker Chandiok & Co before becoming CFO in April 2025."
+    }
+   ],
+   "changes": "CFO Dayashankar Patel resigned on 15 Apr 2025; Rohan Parekh took over the next day. Whole-time director Dhananjay Hatle resigned on 5 Jun 2025. Independent directors Sandeep Shah (became non-executive director) and Yaqoob Ali resigned in 2025; Hemant Karnik and Ram Banarse completed their terms in Jan 2026. Promoters and others converted warrants into 20.8 lakh shares at ₹338 in March 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30821_BAJAJHCARE_2025_2026_A_5160681_29082026155518.pdf",
+    "https://in.marketscreener.com/quote/stock/BAJAJ-HEALTHCARE-LIMITED-64309736/news/Bajaj-Healthcare-Limited-Appoints-Rohan-Parekh-as-Chief-Financial-Officer-Effective-April-16-2025-49611917/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
    "company": "Eris Lifesciences",
    "sector": "Pharma",
    "style": "Promoter-run",
