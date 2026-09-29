@@ -22,6 +22,11 @@ Order of work (at most 25 follow-ups per run; the rest wait for next week — sa
 
 For each entry, by its `subject`/`why`:
 
+- **Checkpoint met / partly / missed: <id>** (settled automatically from filed results): the expectation, its
+  actual figure and what the note said follows (`ifMet` / `ifMissed`) are in the entry. Weigh it in the company's call
+  and view (a missed key checkpoint can justify a downgrade; a met one an upgrade, if the price check allows), add one
+  dated sentence to the company's section, and write one line on the checkpoint's `outcome` in
+  `lib/checkpoints/checkpoints.json` (e.g. "Stays follow", "Moved to own").
 - **Renamed: <new name>**: in the company's sector note (both tabs), refer to it as "<new name> (formerly <old
   name>)" the first time and by the new name after that. Keep the stored name as the key everywhere it is used as a
   key (verdict `company`, profile `company`, valuation inputs, chart keys, live placeholders) — only prose changes.
@@ -48,6 +53,17 @@ For each entry, by its `subject`/`why`:
   mean a temporary folder of your own; the tools live in `tools/notes/`. For a move, cut the company's section from
   the old note and add it to the new one, re-ranked against its new peers.
 
+**Checkpoints** (`lib/checkpoints/checkpoints.json`, shown on the company card and the /scorecard page). Whenever
+you update a company (a new results call, drift, a filing): (a) judge its pending checkpoints that the new results or
+news settle and that have no `metric` (or a metric the daily job cannot compute): set `status` (met / partly /
+missed), `actual` (a short phrase or figure), `resolvedOn`, `resolvedBy: "review"` and `outcome`; (b) if the latest
+call changes an expectation, set the old one to `dropped` with an `outcome` saying why; (c) when you write a new
+concrete watch item or guidance, add it as a checkpoint: `id` = "<company-slug>-<due, e.g. q3fy27>-<n>", `company`
+(the note's key), `sector`, `text`, `due` ("Q3 FY27", "H2 FY27", "Q4 FY27" for the full year), `createdOn`, `status:
+"pending"`, and `metric`/`op`/`target` only for figures computed from Screener's quarterly results (`revenueYoY`,
+`ebitdaMargin` = operating profit ÷ sales, `patYoY`, `revenue`, `ebitda`, `pat`, `orderBook` in ₹ crore). At most 4
+pending per company. Never delete checkpoints.
+
 **Filings pass.** For each filing of the week that changes the investment case of a company covered by a note — a
 large order against sales, a fund-raise or dilution, a CEO/CFO/MD exit, a rating change, an acquisition or disposal,
 promoter selling or pledging, a regulatory or legal outcome — add one dated sentence to that company's section (and
@@ -69,7 +85,7 @@ Then mark the entry done: add `"handled": "<YYYY-MM-DD>: <one line: what you fou
   rate-limited: one request every 5 seconds at most.
 - Plain English, short sentences, ₹/cr/lakh, bold company names and conclusions, balanced `**`.
 - Never write notes for the "Misc" sector or the portfolio. Never merge sectors. Do not rewrite whole notes: the
-  quarterly refresh does that. Edit only `lib/sector-overviews/**` and `lib/corporate-actions/needs-attention.json`
+  quarterly refresh does that. Edit only `lib/sector-overviews/**`, `lib/checkpoints/checkpoints.json` and `lib/corporate-actions/needs-attention.json`
   (and `lib/screener-overrides.json` if a company's Screener page cannot otherwise be found).
 
 ## 3. Check, then publish
