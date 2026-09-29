@@ -64,6 +64,14 @@ concrete watch item or guidance, add it as a checkpoint: `id` = "<company-slug>-
 `ebitdaMargin` = operating profit ÷ sales, `patYoY`, `revenue`, `ebitda`, `pat`, `orderBook` in ₹ crore). At most 4
 pending per company. Never delete checkpoints.
 
+**Needs a session** (`lib/session-todos/todos.json`, shown as a chip on the dashboard header). Add an item when
+something needs the owner to open a session with Claude and you cannot do it within this run's rules: a company to
+add that needs a new note section you had no room for, a data source failing for more than a week, anything left over
+after the 25-entry limit two weeks running, a question only the owner can answer. Each item: `id` (short slug),
+`text` (one plain sentence, what to do), `addedOn`, and `notBefore` if it only applies from a date. Remove items that
+are done or no longer apply. Sectors due their season refresh appear there by themselves (90% of the new quarter's
+calls in); do not add those.
+
 **Filings pass.** For each filing of the week that changes the investment case of a company covered by a note — a
 large order against sales, a fund-raise or dilution, a CEO/CFO/MD exit, a rating change, an acquisition or disposal,
 promoter selling or pledging, a regulatory or legal outcome — add one dated sentence to that company's section (and
@@ -85,7 +93,7 @@ Then mark the entry done: add `"handled": "<YYYY-MM-DD>: <one line: what you fou
   rate-limited: one request every 5 seconds at most.
 - Plain English, short sentences, ₹/cr/lakh, bold company names and conclusions, balanced `**`.
 - Never write notes for the "Misc" sector or the portfolio. Never merge sectors. Do not rewrite whole notes: the
-  quarterly refresh does that. Edit only `lib/sector-overviews/**`, `lib/checkpoints/checkpoints.json` and `lib/corporate-actions/needs-attention.json`
+  quarterly refresh does that. Edit only `lib/sector-overviews/**`, `lib/checkpoints/checkpoints.json`, `lib/session-todos/todos.json` and `lib/corporate-actions/needs-attention.json`
   (and `lib/screener-overrides.json` if a company's Screener page cannot otherwise be found).
 
 ## 3. Check, then publish
