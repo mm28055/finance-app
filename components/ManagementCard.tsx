@@ -27,6 +27,8 @@ function liveStake(name: string, promoters: { name: string; values: Record<strin
 // professionally run, family links and each person's own stake (live from the latest shareholding
 // filing where the person is a named promoter, else as disclosed in the annual report).
 export function ManagementCard({ management, companyId }: { management: Management; companyId: string }) {
+    const [open, setOpen] = React.useState(false);
+    const shown = open ? management.people : management.people.slice(0, 1);
     const [holders, setHolders] = React.useState<{ latest?: string; promoters: { name: string; values: Record<string, number> }[] }>({ promoters: [] });
     React.useEffect(() => {
         fetch(`/api/companies/${companyId}/holders`)
@@ -43,7 +45,7 @@ export function ManagementCard({ management, companyId }: { management: Manageme
             </div>
             <p className="text-xs text-gray-600 mb-3">{management.styleNote}</p>
             <ul className="flex flex-col gap-3">
-                {management.people.map(p => {
+                {shown.map(p => {
                     const live = liveStake(p.name, holders.promoters, holders.latest);
                     return (
                         <li key={p.name} className="text-xs">
@@ -64,13 +66,18 @@ export function ManagementCard({ management, companyId }: { management: Manageme
                     );
                 })}
             </ul>
-            {management.changes && <p className="text-[11px] text-[#6B3FA0] mt-3">Recent change: {management.changes}</p>}
-            <p className="text-[10px] text-gray-400 mt-3">
+            {management.people.length > 1 && (
+                <button onClick={() => setOpen(o => !o)} className="mt-3 text-[11px] font-medium text-[#4A7AAF] hover:underline">
+                    {open ? 'Show less' : `Show all ${management.people.length} people`}
+                </button>
+            )}
+            {open && management.changes && <p className="text-[11px] text-[#6B3FA0] mt-3">Recent change: {management.changes}</p>}
+            {open && <p className="text-[10px] text-gray-400 mt-3">
                 From the annual report, company website and exchange filings (updated {management.updatedOn}).
                 {management.sources.length > 0 && <> Sources: {management.sources.slice(0, 3).map((s, i) => (
                     <React.Fragment key={s}>{i > 0 && ', '}<a href={s} target="_blank" rel="noopener noreferrer" className="underline hover:text-[#4A7AAF]">{(() => { try { return new URL(s).hostname.replace(/^www\./, ''); } catch { return 'link'; } })()}</a></React.Fragment>
                 ))}</>}
-            </p>
+            </p>}
         </div>
     );
 }
