@@ -23,7 +23,7 @@ function Row({ c }: { c: Checkpoint }) {
             <div className="flex-1 min-w-0">
                 <p className="text-gray-700"><span className="font-semibold text-gray-800">{c.company}</span> · {c.text}</p>
                 <p className="text-[10px] text-gray-400 mt-0.5">
-                    {c.sector}
+                    {c.project ? 'Project milestone · ' : ''}{c.sector}
                     {c.actual ? ` · actual ${c.actual}` : ''}
                     {target ? ` · expected ${target}` : ''}
                     {c.resolvedBy ? ` · judged ${c.resolvedBy === 'auto' ? 'from filed results' : 'in review'}` : ''}

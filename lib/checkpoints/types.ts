@@ -24,6 +24,8 @@ export interface Checkpoint {
     /** Management changed the expectation later (newest last). Nothing is ever dropped: the original target
      *  stays and is still judged; a new target becomes a new checkpoint. */
     revisions?: { on: string; text: string }[];
+    /** Set when this is a milestone of a capital project (lib/projects), e.g. "plant starts by Q3 FY27". */
+    project?: string;
 }
 
 /** Quarter order: "Q2 FY27" → 272; half-years map onto their closing quarter (H1 → Q2, H2 → Q4). */
