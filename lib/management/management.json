@@ -4131,6 +4131,119 @@
    "updatedOn": "2026-09-29"
   },
   {
+   "company": "Carysil",
+   "sector": "Consumer Durables",
+   "style": "Promoter-run",
+   "styleNote": "Founded in Bhavnagar by the late Ashwinbhai Parekh; his son Chirag Parekh has been MD since 2008 and Chairman since 2013 and owns about 30% himself. Chirag's daughter Rhea Parekh runs international marketing and is being promoted to Senior Vice President from 1 October 2026. The only other executive director is a hired Group CFO. Promoters own 41.3%.",
+   "people": [
+    {
+     "name": "Chirag Parekh",
+     "role": "Chairman & Managing Director",
+     "since": "Joined 1993; director since 2002; MD since November 2008; Chairman since November 2013",
+     "family": true,
+     "relation": "Promoter; son of the late founder Ashwinbhai Parekh; father of Rhea Parekh",
+     "stake": "30.35% (FY26 annual report); promoter group together 41.3%",
+     "bio": "Holds a BBA from European University, Switzerland. He joined the company in 1993, became a director in 2002 and MD in 2008, and has more than three decades in quartz and stainless-steel kitchen sinks. He turned a niche Bhavnagar sink maker into a global kitchen and bath brand that supplies large retailers such as IKEA and owns subsidiaries in the UK and Germany. Under him the company was named in Forbes Asia's 'Best Under a Billion' list in 2020. He drew about ₹8.7 crore in FY26 including commission, and he is now driving the 'Carysil 2.0' growth plan. He is 56."
+    },
+    {
+     "name": "Anand Sharma",
+     "role": "Executive Director & Group Chief Financial Officer",
+     "since": "Joined November 2015; on the board since February 2024",
+     "family": false,
+     "relation": "Not related to any director",
+     "stake": "0.09% (17,000 shares, FY26 annual report)",
+     "bio": "A fellow chartered accountant who is also a qualified company secretary and cost accountant, with over 30 years in finance, tax, audit, risk, cross-border acquisitions and investor relations. He came from Batliboi Limited and joined Carysil in November 2015. He heads finance, accounts and operations for the company and its group companies, and joined the board as Executive Director in 2024. He is a director of the subsidiaries Carysilnox, Carysil Online and Sternhagen Bath. He is 53."
+    },
+    {
+     "name": "Rhea Parekh",
+     "role": "Vice President – International Marketing (Senior Vice President from 1 October 2026)",
+     "since": "Senior management; promotion approved August 2026",
+     "family": true,
+     "relation": "Daughter of Chairman & MD Chirag Parekh",
+     "bio": "Holds a Bachelor of Fine Arts from Parsons School of Design, New York. She leads international marketing and led the FY26 brand push: actor Mira Kapoor as brand ambassador, the Carissa direct-to-consumer brand, four new experience centres and a large Valentine's Day campaign. The board has approved her promotion to Senior Vice President from 1 October 2026; because she is the MD's daughter, her pay is a related-party item put to the 2026 AGM."
+    },
+    {
+     "name": "Sumit Kumar",
+     "role": "Chief Technology Officer",
+     "since": "September 2026",
+     "family": false,
+     "relation": "Not related",
+     "bio": "A technology and business-transformation leader with over 12 years across consumer goods, retail and pharmaceuticals. He joined from Rubicon Research, where he was Head of Business Transformation, and earlier held leadership roles at Haldiram's and Marico, working on SAP consolidation, CRM, direct-to-consumer strategy and data platforms. He is senior management personnel from 3 September 2026."
+    }
+   ],
+   "changes": "Sumit Kumar joined as CTO on 3 September 2026. Rhea Parekh's promotion to Senior Vice President takes effect on 1 October 2026. Independent director Sonal Ambani's term ended on 31 March 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31251_CARYSIL_2025_2026_U_12281780_03092026171453.pdf",
+    "https://nsearchives.nseindia.com/corporate/ACRYSIL_10082026152903_Outcome100826.pdf",
+    "https://nsearchives.nseindia.com/corporate/ACRYSIL_03092026113928_Intimation03092026.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "TTK Prestige",
+   "sector": "Consumer Durables",
+   "style": "Promoter-owned, professionally run",
+   "styleNote": "The TTK family controls it (promoters own 70.5%, mostly through the TT Krishnamachari & Co. partnership), but since January 2024 a hired MD & CEO runs it. The family sits on the board as non-executive: Chairman T.T. Raghunathan (also a whole-time director of group company TTK Healthcare) and Vice Chairman Dr Mukund T.T. Chairman Emeritus T.T. Jagannathan retired from the board in August 2025 and died in October 2025.",
+   "people": [
+    {
+     "name": "Venkatesh Vijayaraghavan",
+     "role": "Managing Director & Chief Executive Officer",
+     "since": "January 2024",
+     "family": false,
+     "relation": "Not related to any director",
+     "stake": "nil (FY26 annual report)",
+     "bio": "A chemical engineer from Anna University (1994) with a marketing diploma from the Times School of Marketing, Delhi. He began at Indian Organic Chemicals and Reliance Industries' Patalganga and Hazira plants, then spent more than 19 years in telecom at Escorts and Bharti Airtel, where he rose to CMO operations for India and South Asia, COO Maharashtra and CEO for Andhra Pradesh and Telangana. In 2018 he joined CavinKare, the Chennai consumer-goods company, as CEO and board member. He joined TTK Prestige as CEO in January 2024 and was paid about ₹5.7 crore in FY26. He is 53."
+    },
+    {
+     "name": "R. Saranyan",
+     "role": "Whole-time Director & Chief Financial Officer",
+     "since": "Joined TTK Group 2008; with the company since April 2019",
+     "family": false,
+     "relation": "Not related to any director",
+     "stake": "nil (FY26 annual report)",
+     "bio": "A mathematics graduate and chartered accountant with over 30 years in manufacturing: about 10 years in autos, 7 in engineering and 11 in pharma and medical devices. He worked with the Sanmar Group and Ford India before joining the TTK Group in 2008, and was President of the protective devices division at TTK Healthcare before moving to TTK Prestige in 2019. He runs finance, tax, legal and secretarial work, and is a director of Packwell Packaging Products. He is 60."
+    },
+    {
+     "name": "Anil Gurnani",
+     "role": "Chief Operating Officer",
+     "family": false,
+     "relation": "Not related",
+     "bio": "A sales and marketing leader with over 21 years of P&L experience across consumer goods, appliances, paints and autos. He holds an MBA in marketing and finance from MDI Gurgaon, an M.Sc. in finance from EDHEC Business School, France, and a gold-medal B.E. in production engineering from VJTI, Mumbai."
+    },
+    {
+     "name": "Srikanth B P",
+     "role": "Chief Supply Chain & Operations Officer",
+     "family": false,
+     "relation": "Not related",
+     "bio": "A mechanical engineer from BMS College of Engineering, Bengaluru, with over 28 years in industry, 20 of them in the automotive sector and 8 outside it. He runs the plants and supply chain."
+    },
+    {
+     "name": "Bibhas Sarkar",
+     "role": "Head – Strategy & PMO",
+     "family": false,
+     "relation": "Not related",
+     "bio": "Holds a PGDM from IIM Lucknow and a B.Tech from Motilal Nehru NIT, Allahabad. He joined from Godrej Consumer Products, where he was General Manager for strategy and planning from April 2022, and earlier worked at D'Decor Home Fabrics, on McKinsey's programme office at Emami, and at BMGI consulting. He runs strategy and the project office and reports to the MD."
+    },
+    {
+     "name": "Chanchal Saxena",
+     "role": "Chief Information & Digital Officer",
+     "since": "June 2026",
+     "family": false,
+     "relation": "Not related",
+     "bio": "A computer science engineer with management qualifications from IMT Ghaziabad and a digital transformation course at IIM Indore, with over 20 years in technology. He held leadership roles at Kohler and Panasonic India before joining on 2 June 2026 to lead digital and technology work."
+    }
+   ],
+   "changes": "Chanchal Saxena joined as Chief Information & Digital Officer on 2 June 2026. Non-executive director R. Srinivasan retired from the board on 4 August 2026 and he was re-appointed as a non-executive director on 10 September 2026. Chairman Emeritus T.T. Jagannathan retired from the board in August 2025 and died on 9 October 2025.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_29719_TTKPRESTIG_2025_2026_A_10633973_10072026175609.pdf",
+    "https://ttkprestige.com/corporate/our-business/leadership/",
+    "https://ttkprestige.com/corporate/investor-centre/board-of-directors/",
+    "https://nsearchives.nseindia.com/corporate/TTKPRESTIG1_02062026184002_CIDO_Joining_announcement_June2_2026_Signed.pdf",
+    "https://nsearchives.nseindia.com/corporate/TTKPRESTIG1_11092026131100_CL_Appointment_RS_Signed.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
    "company": "Elecon Engg.Co",
    "sector": "Electrical Equipment",
    "style": "Promoter-run",
@@ -4798,6 +4911,74 @@
     "https://www.bseindia.com/xml-data/corpfiling/AttachHis/8e22c204-cc1d-4785-a26b-e79e6e9d8fb8.pdf",
     "https://kpgreenengineering.com/our-team-detail/13",
     "https://kpgreenengineering.com/our-team"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Atlanta Electricals",
+   "sector": "Electrical Transformers",
+   "style": "Promoter-run",
+   "styleNote": "A Patel family business from Anand, Gujarat. Brothers Niral Patel (Chairman & MD) and Amish Patel run it with their first cousin Tanmay Patel as whole-time directors. The long-time director Krupeshbhai Patel died in August 2025. A hired CEO, Akshaykumar Mathur, runs day-to-day operations. Promoters and the family trust own about 87%.",
+   "people": [
+    {
+     "name": "Niral K. Patel",
+     "role": "Chairman & Managing Director",
+     "since": "Director since July 2002",
+     "family": true,
+     "relation": "Promoter; brother of Amish Patel and first cousin of Tanmay Patel",
+     "stake": "8.29% (63,75,000 shares, FY26 annual report); promoter group together about 87%",
+     "bio": "Niral Patel, 44, has a computer engineering degree from the University of Pune, a diploma in electrical engineering from the Maharashtra State Board of Technical Education and an MBA from Hult International Business School. He has more than 22 years in transformer making. At Atlanta he handles customer and supplier relationships, strategy and budgets. He is also linked to several family companies, including Amod Stampings, Auro Stampings, Venus Laminations and the Neptune realty firms. Amod Stampings is a large parts supplier to Atlanta, so related-party purchases are worth watching."
+    },
+    {
+     "name": "Tanmay S. Patel",
+     "role": "Whole-time Director",
+     "since": "With the company since 2002; director since July 2002",
+     "family": true,
+     "relation": "Promoter; first cousin of Niral and Amish Patel",
+     "stake": "7.01% (53,91,400 shares, FY26 annual report)",
+     "bio": "Tanmay Patel, 48, has a diploma in electrical engineering from the Maharashtra State Board of Technical Education. He has more than 22 years in the transformer, electrical and manufacturing industries, all of it at Atlanta, which he joined in 2002. He is responsible for buying raw materials and components and for supply-chain logistics."
+    },
+    {
+     "name": "Amish K. Patel",
+     "role": "Whole-time Director",
+     "since": "January 2022",
+     "family": true,
+     "relation": "Promoter; brother of Niral Patel and first cousin of Tanmay Patel",
+     "stake": "8.29% (63,75,000 shares, FY26 annual report)",
+     "bio": "Amish Patel, 42, has a bachelor's degree in business administration from Sardar Patel University. He has about 17 years of experience in real estate, investment and acquisitions, and is also associated with the family's Neptune Realty. He joined Atlanta's board in 2022. His job is to find suitable land for new plants and to work with project managers and contractors on building them."
+    },
+    {
+     "name": "Akshaykumar B. Mathur",
+     "role": "Chief Executive Officer",
+     "since": "August 2015",
+     "family": false,
+     "bio": "Akshaykumar Mathur has a B.Tech in electronics and communication from Kakatiya University and an MBA from the University of Jodhpur. He has about 44 years of work experience, 32 of them in the transformer industry, and previously worked at Voltamp Transformers. He joined Atlanta in August 2015 and signs the CEO certificate on the accounts. He is the senior hired manager in a family-led company."
+    },
+    {
+     "name": "Mehul S. Mehta",
+     "role": "Chief Financial Officer",
+     "since": "Joined March 2005",
+     "family": false,
+     "bio": "Mehul Mehta has a commerce degree and a postgraduate diploma in business administration from Sardar Patel University, plus a diploma in business management, an advanced diploma in management and an MBA from ICFAI University, Dehradun. He previously worked at ABG Cement. He joined Atlanta in March 2005 and has about 19 years of experience in finance."
+    },
+    {
+     "name": "Anand Sharma",
+     "role": "Chief Operating Officer",
+     "since": "March 2022",
+     "family": false,
+     "bio": "Anand Sharma has an engineering diploma from Dayalbagh Educational Institute and a postgraduate diploma in business administration (operations) from the Symbiosis Centre for Distance Learning. Before joining Atlanta in March 2022 he worked at Crompton Greaves, EMCO, Caparo Fasteners, NLMK India Service Center, Hotline Glass and BTA Cellcom. He is listed as senior management."
+    },
+    {
+     "name": "Minesh Bhatt",
+     "role": "Vice President – Design",
+     "since": "April 2004",
+     "family": false,
+     "bio": "Minesh Bhatt has a diploma in electrical engineering from Government Polytechnic, Chhotaudaipur. He previously worked at Voltamp Transformers and joined Atlanta in April 2004. He has 23 years of engineering experience and heads transformer design, which matters as the company moves up to 400 kV and 765 kV units."
+    }
+   ],
+   "changes": "Whole-time director Krupeshbhai Patel died on 7 August 2025; his shares are being transferred. No executive changes filed since the annual report (27 August 2026).",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30732_ATLANTAELE_2025_2026_A_9072888_27082026181925.pdf"
    ],
    "updatedOn": "2026-09-29"
   },
@@ -10152,6 +10333,132 @@
     "https://www.cohance.com/wp-content/uploads/2026/08/Cohance_Q1FY27_Concall-transcript.pdf",
     "https://www.cohance.com/wp-content/uploads/2026/08/Cohance_Notice-of-AGM-2026.pdf",
     "https://www.screener.in/company/COHANCE/consolidated/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Dishman Carbogen (Carbogen Amcis)",
+   "sector": "Pharma CDMO",
+   "style": "Promoter-run",
+   "styleNote": "A Vyas family company. Founder Janmejay R. Vyas died in May 2025; his son Arpit Vyas is Global Managing Director and his widow Deohooti Vyas is a whole-time director. Aditi Vyas and Mansi Vyas, both in the promoter group, are in senior management. The Swiss arm Carbogen Amcis is run by a hired CEO, Stephan Fritschi. Promoters own 59.3% (June 2026), all through Adimans Technologies LLP, in which Deohooti has an 80% profit share and Arpit 20%. The promoter plans to lend the company up to CHF 200m, backed largely by personal assets, to repay costly Indian debt.",
+   "people": [
+    {
+     "name": "Arpit J. Vyas",
+     "role": "Global Managing Director",
+     "since": "On the board since 2012; MD since 2017 (of predecessor DPCL from 2014)",
+     "family": true,
+     "relation": "Son of late founder Janmejay R. Vyas and Whole-time Director Deohooti J. Vyas",
+     "stake": "Under 0.01% directly (1,000 shares, FY26 annual report); 20% profit share in Adimans Technologies LLP, which owns 59.3%",
+     "bio": "A chemical engineer from Aston University, Birmingham, aged 40. He joined the board of the predecessor company Dishman Pharmaceuticals and Chemicals as a whole-time director in June 2009, became its MD in June 2014 and also CFO in July 2015. After the 2017 merger he became MD & CFO of Dishman Carbogen Amcis, then Global Managing Director, giving up the CFO role in November 2018. He is in charge of strategy, marketing and sales, finance, legal and IT across the group's plants in India, Switzerland, France and elsewhere. He took no salary from the Indian company in FY26 but was paid as a director of a foreign subsidiary."
+    },
+    {
+     "name": "Deohooti J. Vyas",
+     "role": "Whole-time Director",
+     "since": "Re-appointed for five years from Sep 2026",
+     "family": true,
+     "relation": "Widow of founder Janmejay R. Vyas; mother of Global MD Arpit J. Vyas",
+     "stake": "80% profit share in Adimans Technologies LLP, which owns 59.3% (FY26 annual report; June 2026 shareholding pattern)",
+     "bio": "A promoter and whole-time director of the company, and a partner with an 80% profit share in Adimans Technologies LLP, the holding LLP through which the family owns the company. The board re-appointed her as a whole-time director for five years from 3 September 2026, approved by shareholders in September 2025. Her education and earlier career are not given in the sources reviewed."
+    },
+    {
+     "name": "Harshil R. Dalal",
+     "role": "Global Chief Financial Officer (also Deputy CEO, Carbogen Amcis)",
+     "family": false,
+     "bio": "The group's Global CFO and a key managerial person; at Carbogen Amcis he is also Deputy CEO and sits on its board. He drew his FY26 pay from a foreign subsidiary rather than the Indian company. His education and earlier career are not given in the sources reviewed."
+    },
+    {
+     "name": "Dr. Stephan Fritschi",
+     "role": "CEO, Carbogen Amcis",
+     "family": false,
+     "bio": "Heads Carbogen Amcis, the group's Swiss-based contract development and manufacturing arm, and sits on its board. His education and earlier career are not given in the sources reviewed."
+    },
+    {
+     "name": "Paolo Armanino",
+     "role": "Chief Operating Officer (India)",
+     "family": false,
+     "bio": "Named as Chief Operating Officer for India and senior management in the FY26 annual report, responsible for the Indian plants. His education and earlier career are not given in the sources reviewed."
+    }
+   ],
+   "changes": "Founder and Chairman Janmejay R. Vyas died on 27 May 2025. No executive departures found since the annual report.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31512_DCAL_2025_2026_A_13557897_05092026152429.pdf",
+    "https://imdcal.com/about-us/leadership-team",
+    "https://imdcal.com/about-us/company-history",
+    "https://www.carbogen-amcis.com/about-us",
+    "https://www.screener.in/company/DCAL/consolidated/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Newgen Software",
+   "sector": "Software",
+   "style": "Promoter-run",
+   "styleNote": "Founded in 1992 by Diwakar Nigam and T.S. Varadarajan, who are still Chairman & MD and Whole-time Director. Nigam's wife Priyadarshini is also a whole-time director, and their daughter Shubhi Nigam joined the board as a non-executive director in Nov 2025. Day-to-day operations are run by long-serving hired managers: Tarun Nandwani (at Newgen since 1993) became CEO on 1 Aug 2026. Promoters own about 53.5%.",
+   "people": [
+    {
+     "name": "Diwakar Nigam",
+     "role": "Chairman & Managing Director",
+     "since": "1992 (co-founder); on the board since 1993",
+     "family": true,
+     "relation": "Co-founder; husband of Whole-time Director Priyadarshini Nigam; father of non-executive director Shubhi Nigam",
+     "stake": "22.03% (31 Mar 2026, FY26 annual report); with his wife 31.26%; promoters together about 53.5%",
+     "bio": "Holds a B.Sc. from the University of Allahabad, an M.Sc. in mathematics from IIT Delhi and an M.Tech. in computer science from IIT Madras. Before Newgen he founded Softek and was with it for 12 years. He co-founded Newgen in 1992 and has been on its board since 1993, with over 40 years in the IT industry. He is a founding member of NASSCOM, the IT industry body, and sat on its anti-piracy task group. He is 71."
+    },
+    {
+     "name": "T.S. Varadarajan",
+     "role": "Vice Chairman & Whole-time Director",
+     "since": "1992 (co-founder); on the board since incorporation",
+     "family": false,
+     "relation": "Co-founder and promoter; not related to the Nigam family",
+     "stake": "22.26% (31 Mar 2026, FY26 annual report)",
+     "bio": "Holds a B.Sc. from Bangalore University, an engineering degree (electrical technology) from the Indian Institute of Science, Bengaluru, and an M.Tech. in computer science from IIT Madras. Before Newgen he promoted Softek Private Limited and was with it for about 12 years. He co-founded Newgen in 1992 and has been a director since incorporation, with over 40 years in software design and development. He is 73."
+    },
+    {
+     "name": "Priyadarshini Nigam",
+     "role": "Whole-time Director",
+     "since": "Board since Sep 1997",
+     "family": true,
+     "relation": "Wife of Chairman & MD Diwakar Nigam; mother of non-executive director Shubhi Nigam",
+     "stake": "9.23% (31 Mar 2026, FY26 annual report)",
+     "bio": "Holds a bachelor's and a master's degree in economics. Before joining the board she was a journalist for over 10 years, writing for South-North News Service and Depthnews Press Foundation Asia. She has been a whole-time director since 1997 and chairs the board's CSR committee. She is 69."
+    },
+    {
+     "name": "Tarun Nandwani",
+     "role": "Chief Executive Officer",
+     "since": "Joined July 1993; COO from Sep 2021; CEO from 1 Aug 2026 (18-month term to 31 Jan 2028)",
+     "family": false,
+     "bio": "An engineering graduate of Delhi University (Netaji Subhas Institute of Technology), he joined Newgen straight after college in 1993 and has spent his whole 33-year career there. He rose through vice-president and senior vice-president (business management) roles to Chief Operating Officer in 2021, running customer relationships, contracts, new business solutions and application development. He was the company's highest-paid employee in FY26 (₹12.2cr). He was promoted to CEO after Virender Jeet resigned, on a fixed 18-month term. He is 54."
+    },
+    {
+     "name": "Arun Kumar Gupta",
+     "role": "Chief Financial Officer",
+     "since": "Oct 2010",
+     "family": false,
+     "bio": "A B.Sc. from the University of Calcutta who is also a qualified chartered accountant, company secretary and cost accountant. He has over 30 years in finance, with earlier stints at Maersk, Thermax and Satyam, and joined Newgen from Interra Infotech in 2010. He oversees financial planning, treasury, global tax, investor relations and financial reporting. He is 56."
+    },
+    {
+     "name": "Pramod Kumar",
+     "role": "Chief Growth Officer",
+     "since": "New role from Aug 2026; at Newgen about 27 years",
+     "family": false,
+     "bio": "A Newgen veteran of about 27 years who has held leadership roles across product management, R&D, strategy, marketing, business development and regional operations. In Aug 2026 he was named to the newly created post of Chief Growth Officer, leading worldwide growth strategy, partnerships, go-to-market and customer acquisition."
+    },
+    {
+     "name": "Dr. S.J. Raj (Surender Jeet Raj)",
+     "role": "EVP – Global Business Strategy and HR",
+     "since": "Aug 1993",
+     "family": false,
+     "bio": "Holds an M.A. in social work from Jamia Millia Islamia and a Ph.D. from Chandigarh University. Before Newgen he worked with Eicher Goodearth, SRF Nippondenso, PCS Data Products and Semiconductor Complex Limited. He joined in 1993 and runs HR strategy and global operations; he is listed among the company's key management personnel. He is 68."
+    }
+   ],
+   "changes": "CEO Virender Jeet (at Newgen since 1992, CEO since 2021) resigned on 9 Jun 2026, effective 31 Aug 2026; COO Tarun Nandwani became CEO from 1 Aug 2026 and Pramod Kumar was named Chief Growth Officer. Shubhi Nigam joined the board as a non-executive director in Nov 2025.",
+   "sources": [
+    "https://landing.newgensoft.com/hubfs/Newgen%20Annual%20Report%202025-26%20v2.pdf",
+    "https://newgensoft.com/company/leadership/",
+    "https://nsearchives.nseindia.com/corporate/NEWGEN2_09062026175955_Resignation_Newgen.pdf",
+    "https://www.medianews4u.com/newgen-elevates-tarun-nandwani-as-ceo-names-pramod-kumar-as-chief-growth-officer/",
+    "https://www.exchange4media.com/people-movement-news/newgen-software-promotes-tarun-nandwani-to-ceo-for-18-month-tenure-156001.html",
+    "https://www.fintechfutures.com/job-cuts-new-hires/tarun-nandwani-named-newgen-software-ceo"
    ],
    "updatedOn": "2026-09-29"
   }
