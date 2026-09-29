@@ -7,7 +7,8 @@ import { ValuationHistory } from './ValuationHistory';
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
 type Tab = 'history' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios';
-type Table = { columns: string[]; rows: { label: string; values: (string | null)[] }[] };
+type Row = { label: string; src: string; expandable: boolean; values: (string | null)[] };
+type Table = { columns: string[]; raw: (string | null)[]; rows: Row[] };
 type Financials = { view: 'consolidated' | 'standalone'; empty: boolean; tables: Record<string, Table>; growth: Record<string, Record<string, string>> };
 
 const TABS: { key: Tab; label: string }[] = [
@@ -47,8 +48,20 @@ const growthLine = (g: Financials['growth']) => {
     );
 };
 
-function DataTable({ table }: { table: Table }) {
+function DataTable({ table, companyId, section, view }: { table: Table; companyId: string; section: string; view: string }) {
     const negative = (v: string | null) => !!v && /^-/.test(v.trim());
+    // Rows with a "+" open Screener's breakdown underneath (fetched once, then kept).
+    const [open, setOpen] = React.useState<Record<string, Record<string, Record<string, string>> | 'loading' | 'error'>>({});
+    const toggle = (r: Row) => {
+        if (open[r.src]) { setOpen(o => { const n = { ...o }; delete n[r.src]; return n; }); return; }
+        setOpen(o => ({ ...o, [r.src]: 'loading' }));
+        fetch(`/api/companies/${companyId}/schedule?section=${section}&parent=${encodeURIComponent(r.src)}&view=${view}`)
+            .then(res => (res.ok ? res.json() : Promise.reject()))
+            .then(d => setOpen(o => ({ ...o, [r.src]: d })))
+            .catch(() => setOpen(o => ({ ...o, [r.src]: 'error' })));
+    };
+    const cellClass = (v: string | null, i: number) =>
+        `py-1 px-1.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''} ${table.columns[i] === 'TTM' || table.columns[i] === 'YoY' ? 'bg-gray-50' : ''}`;
     return (
         <div className="overflow-x-auto">
             <table className="w-full text-[11px] tabular-nums">
@@ -61,13 +74,37 @@ function DataTable({ table }: { table: Table }) {
                 <tbody>
                     {table.rows.map(r => {
                         const key = KEY_ROWS.has(r.label);
+                        const sub = open[r.src];
                         return (
-                            <tr key={r.label} className={`border-t border-gray-50 ${key ? 'font-semibold text-gray-800' : 'text-gray-600'}`}>
-                                <td className="py-1 pr-2 whitespace-nowrap sticky left-0 bg-white">{r.label}</td>
-                                {r.values.map((v, i) => (
-                                    <td key={i} className={`py-1 px-1.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''} ${table.columns[i] === 'TTM' || table.columns[i] === 'YoY' ? 'bg-gray-50' : ''}`}>{v ?? '–'}</td>
+                            <React.Fragment key={r.label}>
+                                <tr className={`border-t border-gray-50 ${key ? 'font-semibold text-gray-800' : 'text-gray-600'}`}>
+                                    <td className="py-1 pr-2 whitespace-nowrap sticky left-0 bg-white">
+                                        {r.label}
+                                        {r.expandable && (
+                                            <button onClick={() => toggle(r)} title={sub ? 'Hide breakdown' : 'Show breakdown'}
+                                                className="ml-1 inline-flex items-center justify-center w-3.5 h-3.5 rounded text-[10px] leading-none text-[#4A7AAF] hover:bg-[#D4E5F7]">
+                                                {sub ? '−' : '+'}
+                                            </button>
+                                        )}
+                                    </td>
+                                    {r.values.map((v, i) => <td key={i} className={cellClass(v, i)}>{v ?? '–'}</td>)}
+                                </tr>
+                                {sub === 'loading' && (
+                                    <tr><td colSpan={table.columns.length + 1} className="py-1 pl-4 text-[10px] text-gray-400">Loading…</td></tr>
+                                )}
+                                {sub === 'error' && (
+                                    <tr><td colSpan={table.columns.length + 1} className="py-1 pl-4 text-[10px] text-gray-400">Breakdown unavailable.</td></tr>
+                                )}
+                                {sub && sub !== 'loading' && sub !== 'error' && Object.entries(sub).map(([item, byCol]) => (
+                                    <tr key={r.label + item} className="text-[10px] text-gray-500 bg-[#F8FAFC]">
+                                        <td className="py-0.5 pr-2 pl-4 whitespace-nowrap sticky left-0 bg-[#F8FAFC]">{item}</td>
+                                        {table.raw.map((c, i) => {
+                                            const v = c ? (byCol[c] ?? null) : null;
+                                            return <td key={i} className={`py-0.5 px-1.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''}`}>{v === null || v === '' ? '–' : v}</td>;
+                                        })}
+                                    </tr>
                                 ))}
-                            </tr>
+                            </React.Fragment>
                         );
                     })}
                 </tbody>
@@ -124,7 +161,7 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
                     {fin && fin.empty && <div className="h-16 flex items-center justify-center text-[11px] text-gray-400">No {fin.view} figures for this company — try the other view.</div>}
                     {fin && !fin.empty && (
                         <>
-                            {table ? <DataTable table={table} /> : <div className="text-[11px] text-gray-400 py-4 text-center">Not reported for this company.</div>}
+                            {table ? <DataTable key={`${tab}-${fin.view}`} table={table} companyId={companyId} section={tab} view={fin.view} /> : <div className="text-[11px] text-gray-400 py-4 text-center">Not reported for this company.</div>}
                             {tab === 'profit-loss' && growthLine(fin.growth)}
                             <p className="text-[9px] text-gray-400 mt-1.5">{NOTES[tab]} Filed figures from Screener ({fin.view}).</p>
                         </>

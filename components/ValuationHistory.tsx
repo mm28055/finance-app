@@ -29,7 +29,7 @@ const monthYear = (d: string) => new Date(d).toLocaleDateString('en-IN', { month
 
 export function ValuationHistory({ companyId, embedded = false }: { companyId: string; embedded?: boolean }) {
     const [metric, setMetric] = React.useState<Metric>('price');
-    const [years, setYears] = React.useState(10);
+    const [years, setYears] = React.useState(3);
     const [cache, setCache] = React.useState<Record<string, Point[] | 'error' | undefined>>({});
 
     React.useEffect(() => {
@@ -71,20 +71,21 @@ export function ValuationHistory({ companyId, embedded = false }: { companyId: s
 
     return (
         <div className={embedded ? '' : 'bg-white border border-gray-200 rounded-lg p-3'}>
+            {!embedded && <div className="text-[10px] font-semibold text-gray-600 uppercase tracking-wide mb-2">Price & valuation history</div>}
+            {/* Measures on the left, period on the right, on one line. */}
             <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                <div className="text-[10px] font-semibold text-gray-600 uppercase tracking-wide">{embedded ? '' : 'Price & valuation history'}</div>
+                <div className="flex flex-wrap gap-1">
+                    {TABS.map(t => (
+                        <button key={t.key} onClick={() => setMetric(t.key)} title={t.what}
+                            className={`px-2 py-0.5 text-[10px] font-medium rounded border ${metric === t.key ? 'bg-[#4A7AAF] text-white border-[#4A7AAF]' : 'bg-white text-gray-500 border-gray-200 hover:text-gray-700'}`}>{t.label}</button>
+                    ))}
+                </div>
                 <div className="flex gap-0.5 bg-gray-100 p-0.5 rounded-md text-[10px] font-medium">
                     {RANGES.map(r => (
                         <button key={r.label} onClick={() => setYears(r.years)}
                             className={`px-2 py-0.5 rounded ${years === r.years ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-400 hover:text-gray-600'}`}>{r.label}</button>
                     ))}
                 </div>
-            </div>
-            <div className="flex flex-wrap gap-1 mb-2">
-                {TABS.map(t => (
-                    <button key={t.key} onClick={() => setMetric(t.key)} title={t.what}
-                        className={`px-2 py-0.5 text-[10px] font-medium rounded border ${metric === t.key ? 'bg-[#4A7AAF] text-white border-[#4A7AAF]' : 'bg-white text-gray-500 border-gray-200 hover:text-gray-700'}`}>{t.label}</button>
-                ))}
             </div>
 
             {all === undefined && <div className="h-44 bg-gray-50 rounded animate-pulse" />}
@@ -97,7 +98,7 @@ export function ValuationHistory({ companyId, embedded = false }: { companyId: s
                             <LineChart data={points} margin={{ top: 4, right: 8, left: 0, bottom: 0 }}>
                                 <XAxis dataKey="date" tickFormatter={monthYear} tick={{ fontSize: 9, fill: '#9CA3AF' }} minTickGap={40} axisLine={false} tickLine={false} />
                                 <YAxis tick={{ fontSize: 9, fill: '#9CA3AF' }} width={44} axisLine={false} tickLine={false}
-                                    tickFormatter={(v: number) => (metric === 'price' ? (v >= 1000 ? `${Math.round(v / 1000)}k` : String(Math.round(v))) : `${v}x`)}
+                                    tickFormatter={(v: number) => (metric === 'price' ? (v >= 1000 ? `${Number((v / 1000).toFixed(1))}k` : String(Math.round(v))) : `${v}x`)}
                                     domain={['auto', 'auto']} />
                                 <Tooltip formatter={(v) => [fmt(Number(v), metric), tab.label]} labelFormatter={(d) => new Date(String(d)).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}
                                     contentStyle={{ fontSize: 11, borderRadius: 8, border: '1px solid #E5E7EB' }} />

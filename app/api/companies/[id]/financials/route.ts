@@ -41,7 +41,8 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
         const html = await fetchScreenerPage(page.url, 86400);
         if (!html) return NextResponse.json({ error: 'Screener page unavailable' }, { status: 502 });
 
-        const tables: Record<string, { columns: string[]; rows: { label: string; values: (string | null)[] }[] }> = {};
+type Row = { label: string; src: string; expandable: boolean; values: (string | null)[] };
+        const tables: Record<string, { columns: string[]; raw: (string | null)[]; rows: Row[] }> = {};
         for (const [section, wanted] of Object.entries(ROWS)) {
             const t = screenerTable(html, section);
             if (!t) continue;
@@ -52,10 +53,14 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
             const rows = wanted
                 .map(([src, label]) => {
                     const r = t.rows.find(x => x.label === src);
-                    return r ? { label, values: keep.map(k => r.values[k.i] ?? null) } : null;
+                    return r ? { label, src, expandable: r.expandable, values: keep.map(k => r.values[k.i] ?? null) } : null;
                 })
-                .filter((r): r is { label: string; values: (string | null)[] } => !!r && r.values.some(v => v !== null));
-            if (rows.length) tables[section] = { columns: keep.map(k => k.c.replace(/^Mar /, 'FY').replace(/^FY20(\d\d)$/, 'FY$1')), rows };
+                .filter((r): r is Row => !!r && r.values.some(v => v !== null));
+            if (rows.length) tables[section] = {
+                columns: keep.map(k => k.c.replace(/^Mar /, 'FY').replace(/^FY20(\d\d)$/, 'FY$1')),
+                raw: keep.map(k => (k.c === 'TTM' ? null : k.c)),
+                rows,
+            };
         }
         // Last four quarters, plus the latest quarter's growth on the same quarter a year earlier.
         const q = screenerTable(html, 'quarters');
@@ -76,9 +81,9 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
                         const now = num(r.values[n - 1]), then = num(r.values[yearAgo]);
                         if (now !== null && then !== null && then > 0) yoy = `${now >= then ? '+' : ''}${Math.round(((now - then) / then) * 100)}%`;
                     }
-                    return { label, values: [...values, yoy] };
+                    return { label, src, expandable: r.expandable, values: [...values, yoy] };
                 })
-                .filter((r): r is { label: string; values: (string | null)[] } => !!r && r.values.some(v => v !== null));
+                .filter((r): r is Row => !!r && r.values.some(v => v !== null));
             // "Jun 2026" → "Q1 FY27" (Indian financial year, April–March), as the rest of the site labels quarters.
             const fq = (c: string) => {
                 const m = c.match(/^(Mar|Jun|Sep|Dec) (\d{4})$/);
@@ -87,7 +92,7 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
                 const [qn, fy] = m[1] === 'Jun' ? [1, y + 1] : m[1] === 'Sep' ? [2, y + 1] : m[1] === 'Dec' ? [3, y + 1] : [4, y];
                 return `Q${qn} FY${String(fy % 100).padStart(2, '0')}`;
             };
-            if (rows.length) tables['quarters'] = { columns: [...last4.map(i => fq(q.columns[i])), 'YoY'], rows };
+            if (rows.length) tables['quarters'] = { columns: [...last4.map(i => fq(q.columns[i])), 'YoY'], raw: [...last4.map(i => q.columns[i]), null], rows };
         }
         const empty = !tables['profit-loss']?.rows.some(r => r.values.some(v => v !== null && v !== '0'));
         return NextResponse.json({

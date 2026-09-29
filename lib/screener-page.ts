@@ -32,7 +32,7 @@ export async function fetchScreenerPage(url: string, seconds: number): Promise<s
 
 const clean = (t: string) => t.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&#x27;|&#39;/g, "'").replace(/\s+/g, ' ').trim();
 
-export interface ScreenerTable { columns: string[]; rows: { label: string; values: (string | null)[] }[] }
+export interface ScreenerTable { columns: string[]; rows: { label: string; values: (string | null)[]; expandable: boolean }[] }
 
 /** A section's main data table (e.g. 'profit-loss', 'balance-sheet', 'cash-flow', 'ratios'). */
 export function screenerTable(html: string, sectionId: string): ScreenerTable | null {
@@ -43,7 +43,10 @@ export function screenerTable(html: string, sectionId: string): ScreenerTable | 
     const rows = [...table.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)]
         .map(m => [...m[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map(c => clean(c[1])))
         .filter(cells => cells.length > 1)
-        .map(cells => ({ label: cells[0].replace(/\s*\+$/, ''), values: cells.slice(1).map(v => (v === '' ? null : v)) }));
+        .map(cells => ({ label: cells[0].replace(/\s*\+$/, ''), values: cells.slice(1).map(v => (v === '' ? null : v)), expandable: false }));
+    // Rows with a "+" on Screener open a breakdown ("schedule") on click.
+    const expandable = new Set([...(section || '').matchAll(/showSchedule\('([^']+)'/g)].map(m => m[1]));
+    rows.forEach(r => { r.expandable = expandable.has(r.label); });
     return { columns, rows };
 }
 
@@ -60,3 +63,6 @@ export function screenerGrowth(html: string): Record<string, Record<string, stri
     }
     return out;
 }
+
+/** Screener's internal company id, from its page. */
+export const screenerCompanyId = (html: string) => html.match(/data-company-id="(\d+)"/)?.[1] ?? null;
