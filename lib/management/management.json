@@ -8136,6 +8136,59 @@
    "updatedOn": "2026-09-29"
   },
   {
+   "company": "Awfis Space Solutions",
+   "sector": "Commercial Services",
+   "style": "Promoter-run",
+   "styleNote": "Founder Amit Ramani is Chairman & MD and the only promoter left, owning about 17% (Peak XV was reclassified from promoter to public in 2025). He appointed a CEO, Sumit Lakhani, in May 2025 to run day-to-day operations, but remains the executive chairman. No director is related to another.",
+   "people": [
+    {
+     "name": "Amit Ramani",
+     "role": "Founder, Chairman & Managing Director",
+     "since": "Founder (2015)",
+     "family": true,
+     "relation": "Founder and sole promoter",
+     "stake": "17.0% (1,21,63,084 shares at 31 March 2026, FY26 annual report); no stock options",
+     "bio": "An architect by training, with a master's in architecture from Kansas State University and a master's in real estate and workplace strategy from Cornell University. He founded Awfis in 2015 and built it into India's largest flexible-workspace network by centres, with a design-and-build arm (Transform), and took it public in 2024. He was named Entrepreneur of the Year – Real Estate at the ET Entrepreneur Summit and one of The Economic Times' Most Promising Business Leaders of Asia 2019–20. His holding rose slightly in FY26 (from 1.21 to 1.22 crore shares)."
+    },
+    {
+     "name": "Sumit Lakhani",
+     "role": "Chief Executive Officer",
+     "since": "26 May 2025",
+     "family": false,
+     "bio": "Holds an MBA from S. P. Jain Centre of Management. Before Awfis he worked in investment banking at Yes Bank, at Tesco, and at ST Asset Management in Singapore. As CEO he runs the P&L, business operations and customer initiatives. He has been named CXO of the Year and appeared in Realty+'s '40 Under 40'."
+    },
+    {
+     "name": "Sumit Rochlani",
+     "role": "Chief Financial Officer",
+     "since": "3 February 2026",
+     "family": false,
+     "bio": "A chartered accountant (ICAI, 2009) with an IFRS diploma from ACCA and about 15 years in finance. He previously worked at Boeing India, Stryker India and PwC, across audit, controllership, planning and analysis, corporate finance and indirect tax. He replaced Ravi Dugar, who resigned as CFO in January 2026."
+    },
+    {
+     "name": "Manu Dhir",
+     "role": "Chief Operating Officer",
+     "since": "Joined 2015",
+     "family": false,
+     "bio": "Has over 25 years of experience and joined Awfis in its founding year, 2015, leading expansion and operations. He previously held leadership roles at The Oberoi Group and worked in hospitality, entertainment and healthcare. He focuses on technology-led customer experience and operating efficiency across the centres."
+    },
+    {
+     "name": "Deepayan Sen",
+     "role": "Head of Real Estate & Leasing",
+     "since": "Joined 2015",
+     "family": false,
+     "bio": "With Awfis since 2015, he handles supply strategy — signing new buildings and landlord partnerships — and growth forecasting. He has over 16 years in real estate, with earlier roles at Staples Future Office Products, METRO Cash & Carry India, Pantaloon Retail and Radhakrishna Consumer Services."
+    }
+   ],
+   "changes": "CFO Ravi Dugar resigned (left 2 February 2026); Sumit Rochlani took over on 3 February 2026. Non-executive director Arjun Shanker Bhartia resigned on 9 April 2026; Abhishek Poddar joined as an independent director in July 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30715_AWFIS_2025_2026_A_12301607_27082026160154.pdf",
+    "https://www.awfis.com/about-us",
+    "https://nsearchives.nseindia.com/corporate/AWFIS2014_05012026162958_Outcome_Regulation_30_Signed.pdf",
+    "https://nsearchives.nseindia.com/corporate/AWFIS2014_09042026172029_Awfis_Disclosure_9th_April_2026_Signed.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
    "company": "Ahluwalia Contr.",
    "sector": "Construction",
    "style": "Promoter-run",
@@ -8716,6 +8769,120 @@
    "updatedOn": "2026-09-29"
   },
   {
+   "company": "M & B Engineer.",
+   "sector": "Construction",
+   "style": "Promoter-run",
+   "styleNote": "Part of the Ahmedabad-based M&B Group and run by three related promoter households. Chirag Patel and Malav Patel are joint MDs; Malav's father Girishbhai Patel and Chirag's wife Birva Patel are whole-time directors; Aditya Patel is a whole-time director and his father Vipinbhai Patel is a non-executive director. The board chair is an independent director. Hired professionals run the two divisions (Pankaj Naresh at Phenix, Mayur Patel at Proflex) and finance. Promoters own 70.61%.",
+   "people": [
+    {
+     "name": "Chirag Hasmukhbhai Patel",
+     "role": "Joint Managing Director",
+     "since": "Joined May 1993",
+     "family": true,
+     "relation": "Promoter; husband of Whole-time Director Birva Patel",
+     "stake": "24.74% (June 2026 shareholding pattern); promoter group together 70.61%",
+     "bio": "A civil engineering graduate (B.E.) with more than 30 years in civil projects. He joined the company in May 1993 and is one of its two joint MDs and its highest-paid director. Together with Malav Patel he led the company to its August 2025 listing and to FY26 revenue of ₹1,260cr, with exports up sharply. He also sits on the board's committees."
+    },
+    {
+     "name": "Malav Girishbhai Patel",
+     "role": "Joint Managing Director",
+     "since": "Joined February 2001",
+     "family": true,
+     "relation": "Promoter; son of Whole-time Director Girishbhai Patel",
+     "stake": "1.77% (June 2026 shareholding pattern)",
+     "bio": "A BBA graduate with more than 25 years in civil projects. He joined the company in February 2001 and is joint MD alongside Chirag Patel. The two jointly present the company's results and strategy, including its push into export markets such as North America."
+    },
+    {
+     "name": "Girishbhai Manibhai Patel",
+     "role": "Whole-time Director",
+     "since": "With the company since December 1984; re-appointed to March 2029",
+     "family": true,
+     "relation": "Promoter; father of Joint MD Malav Patel",
+     "stake": "27.16% (June 2026 shareholding pattern); the largest single shareholder",
+     "bio": "A hydraulic engineer trained in the USA, aged 78, with more than 50 years of technical experience in civil projects. He has been with the company since December 1984 and is its largest individual shareholder. He was re-appointed as a whole-time director for three years from April 2026."
+    },
+    {
+     "name": "Birva Chirag Patel",
+     "role": "Whole-time Director",
+     "since": "Whole-time director since April 2025",
+     "family": true,
+     "relation": "Promoter; wife of Joint MD Chirag Patel",
+     "stake": "7.03% (June 2026 shareholding pattern)",
+     "bio": "A commerce graduate and company secretary with over 16 years in compliance. She was the company's Company Secretary until March 2024 and became a whole-time director in April 2025. The board cites her expertise in company law and SEBI rules. She is proposed for re-appointment for 2027–2030."
+    },
+    {
+     "name": "Aditya Vipinbhai Patel",
+     "role": "Whole-time Director",
+     "since": "Joined April 2011",
+     "family": true,
+     "relation": "Promoter; son of non-executive Director Vipinbhai Patel",
+     "stake": "3.53% (June 2026 shareholding pattern)",
+     "bio": "An electronics and communications engineer (B.E.) with over 14 years in strategic planning and international operations. He joined the company in April 2011. The board cites his work in business development and overseas operations and has proposed re-appointing him for 2027–2030."
+    },
+    {
+     "name": "Pankaj Naresh",
+     "role": "Chief Executive Officer – Phenix Division",
+     "since": "November 2019",
+     "family": false,
+     "bio": "He holds a BE in electrical engineering, a master's in industrial engineering and management, and an MBA. He has more than 30 years in sales, marketing and operations. He came from Reliance Industries and joined in November 2019 to run the Phenix division (pre-engineered buildings), which brings in about 80% of orders."
+    },
+    {
+     "name": "Keyur Bachubhai Shah",
+     "role": "Chief Financial Officer",
+     "since": "Joined January 2007",
+     "family": false,
+     "bio": "A commerce graduate, chartered accountant and US CPA with over 30 years in finance and accounts. Before M&B he worked at Shree Ambica Decoprints. He joined in January 2007 and is the company's CFO and a key managerial person."
+    }
+   ],
+   "changes": "No change in directors or key managers since the annual report. Mayur Satishbhai Patel (with the company since 2003, diploma in plastics engineering) is CEO of the Proflex self-supported roofing division.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30593_MBEL_2025_2026_A_16850153_25082026161813.pdf",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1695855_18072026102652_WEB.xml"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "EPack Prefab Techno.",
+   "sector": "Construction",
+   "style": "Promoter-run",
+   "styleNote": "Run by two promoter families, the Singhanias and the Bothras (the same group behind EPACK Durable). Sanjay Singhania is MD & CEO and Nikhil Bothra is a whole-time director. Chairman Bajrang Bothra and Ajay DD Singhania (Sanjay's brother) are non-executive directors; Nikhil's father Laxmi Pat Bothra is a promoter but not on the board. The MD says he is moving the company to a more professionally managed structure. Promoters own 64.95%.",
+   "people": [
+    {
+     "name": "Sanjay Singhania",
+     "role": "Managing Director & CEO",
+     "since": "With the company since it began in February 1999",
+     "family": true,
+     "relation": "Promoter; brother of non-executive Director Ajay DD Singhania",
+     "stake": "6.32% (June 2026 shareholding pattern); promoter group together 64.95%",
+     "bio": "He holds a B.Com from Gauhati University and an MBA from Swinburne University of Technology, Australia, and is on Harvard Business School's Owner/President Management programme (2026–2028). He has been with EPack Prefab since its start in February 1999 and grew it from one plant to a multi-plant listed company. He leads strategy, capital allocation and stakeholder relations and is overseeing the shift to a professionally managed structure. He is Vice President of PHDCCI and a non-executive director of EPACK Durable."
+    },
+    {
+     "name": "Nikhil Bothra",
+     "role": "Executive Whole-time Director",
+     "since": "Joined 2012",
+     "family": true,
+     "relation": "Promoter; son of promoter Laxmi Pat Bothra (brother of Chairman Bajrang Bothra)",
+     "stake": "3.25% (June 2026 shareholding pattern)",
+     "bio": "He has been with EPack Prefab since 2012 and has more than 14 years across the business. As executive director he drives business growth, market development, customer relationships and expansion, and he heads marketing. His formal education is not given in the annual report."
+    },
+    {
+     "name": "Rahul Agarwal",
+     "role": "Chief Financial Officer",
+     "since": "2024",
+     "family": false,
+     "bio": "A chartered accountant with more than 19 years in finance and strategy. He was earlier CFO of Asian Footwears, Joint Vice President – Business Strategy at JPFL Films and Jindal Poly Films, Associate Vice President – Business Planning at Burger King, Senior Manager – Finance at Ambuja Cements, and Senior Associate at PwC. He joined in 2024, worked on the GEF Capital fund-raise and the 2025 IPO, and now runs financial controls, treasury, use of IPO money and investor communication."
+    }
+   ],
+   "changes": "Preeti Chauhan became Company Secretary in April 2026. Senior managers Anoop Kabra (February 2026), P. V. Subbarao (May 2026) and Sunil Kumar Singh, VP – Sales & Business Development (July 2026), resigned.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31143_EPACKPEB_2025_2026_A_10022305_02092026185741.pdf",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1696687_20072026024959_WEB.xml",
+    "https://nsearchives.nseindia.com/corporate/EPACKPREFAB_14072026211705_Intimation_SMP_Resignation.pdf",
+    "https://nsearchives.nseindia.com/corporate/EPACKPREFAB_30052026193212_Intimation_SMP_30052026.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
    "company": "KEC International",
    "sector": "Construction - Power",
    "style": "Promoter-owned, professionally run",
@@ -8896,6 +9063,58 @@
    "changes": "No change in key managerial personnel in FY26 or since the annual report (August 2026). Independent directors Krishna Murari Poddar and Arun Duggal resigned in Nov and Dec 2025; K. K. Rai retired Sep 2025; ex-PowerGrid director Shailesh Kumar Mishra joined as an independent director in Feb 2026.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_31018_TECHNOE_2025_2026_A_6626981_01092026181431.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Transrail Lighting",
+   "sector": "Construction - Power",
+   "style": "Promoter-run",
+   "styleNote": "The founder Digambar C. Bagde, who started Transrail in 1984, is Executive Chairman; the company's holding company Ajanma Holdings owns 69.91% and promoters together 71.12%. Sanjay Kumar Verma, a named promoter, is non-executive Vice Chairman. Day-to-day it is run by a hired MD & CEO, Randeep Narang, an ex-KEC executive. No director or KMP is related to another.",
+   "people": [
+    {
+     "name": "Digambar C. Bagde",
+     "role": "Executive Chairman",
+     "since": "Founder (1984); reappointed Executive Chairman 1 October 2023",
+     "family": false,
+     "relation": "Founder-promoter",
+     "stake": "0.67% (8,98,540 shares, FY26 annual report); promoters together 71.12%, mainly via Ajanma Holdings (69.91%)",
+     "bio": "A civil engineering graduate from the Maharaja Sayajirao University of Baroda with five decades in power transmission and distribution. After about a decade at another T&D company he started Transrail in 1984 and has led it since, building it into a maker of towers, conductors and poles and an EPC contractor for transmission lines in India and abroad. He leads the board and management on growth strategy."
+    },
+    {
+     "name": "Randeep Narang",
+     "role": "Managing Director & CEO",
+     "since": "MD & CEO since at least 2023; current term as MD from 15 December 2025",
+     "family": false,
+     "stake": "nil (FY26 annual report)",
+     "bio": "A Delhi University commerce graduate with a postgraduate diploma in marketing from the Institute of Marketing Management, New Delhi, and over 36 years of experience. He was Chief Operating Officer (West) at Bharti Airtel and MD & CEO of CEAT Kelani Holdings in Sri Lanka. Before Transrail his last job was President - International (T&D, Solar) and Cables at KEC International. He is the highest-paid director (58.7 times the median employee's pay in FY26); shareholders approved a pay rise for him in September 2023."
+    },
+    {
+     "name": "Suryanarayana Dhulipala",
+     "role": "Whole-time Director",
+     "since": "With the company since its incorporation; whole-time director since 5 August 2025",
+     "family": false,
+     "stake": "0.13% (1,76,456 shares, FY26 annual report)",
+     "bio": "Holds a diploma in mechanical engineering and has long experience in power transmission and distribution. Before Transrail he worked at Karuna Cables. He has been with the company since its incorporation and was Chief Operating Officer, Domestic Business, before joining the board, and has been key to growing the domestic business. He retires by rotation and is up for reappointment at the 2026 AGM."
+    },
+    {
+     "name": "Deepak Khandelwal",
+     "role": "Chief Financial Officer",
+     "since": "Appointed CFO in FY26",
+     "family": false,
+     "bio": "A key managerial person who became CFO during FY26 (the annual report calls it a fresh appointment). He co-signs the accounts and the CEO/CFO certificate. The annual report gives no details of his education or earlier career."
+    },
+    {
+     "name": "Rajesh Neelakantan",
+     "role": "Chief Strategy Officer & Group CFO",
+     "since": "Named senior management in the FY26 annual report",
+     "family": false,
+     "bio": "Listed by the company as senior management with the title Chief Strategy Officer & Group CFO, above the company CFO. The annual report gives no biography."
+    }
+   ],
+   "changes": "Deputy MD Raman Rajagopalan (appointed 5 Aug 2025) left the post on 31 Jul 2026. Independent director Vinod Dasari left the board on 9 Aug 2026. Company Secretary changed in May 2025 (Monica Gandhi replaced Gandhali Upadhye); CHRO Sonal Raj joined Aug 2025. Ex-POWERGRID CMD I. S. Jha became a non-executive (non-independent) director from 2 Feb 2026 because he also advises the company.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31070_TRANSRAILL_2025_2026_A_16650235_02092026123658.pdf"
    ],
    "updatedOn": "2026-09-29"
   },
@@ -14264,6 +14483,7 @@
     "https://nsearchives.nseindia.com/annual_reports/AR_31819_LTFOODS_2025_2026_A_23957481_07092026230355.pdf",
     "https://ltfoods.com/leadership",
     "https://ltfoodsglobal.com/story/historyfamily/",
+    "https://yourstory.com/smbstory/lt-foods-daawat-basmati-rice-large-enterprise-export",
     "https://nsearchives.nseindia.com/corporate/532783_16042026124052_intimation.pdf",
     "https://nsearchives.nseindia.com/corporate/532783_26032026163756_IntimationF.pdf",
     "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1697099_20072026052519_WEB.xml"
@@ -14699,6 +14919,44 @@
     "https://nsearchives.nseindia.com/corporate/GANESH_NSE_16032026222532_Appointment_of_Director.pdf",
     "https://nsearchives.nseindia.com/corporate/GANESH_NSE_16032026221948_Resignation_of_Director.pdf",
     "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1690564_10072026052722_WEB.xml"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Venkys India",
+   "sector": "Food Products",
+   "style": "Promoter-run",
+   "styleNote": "Part of the Pune-based VH (Venkateshwara Hatcheries) group, founded in 1971 by the late Dr. B.V. Rao. Three siblings lead it: B. Balaji Rao is Managing Director and the only executive director, his sister Anuradha J. Desai is non-executive Chairperson and his brother B. Venkatesh Rao is non-executive Vice-Chairman. Anuradha Desai's husband Jitendra Desai and daughter Uttara Desai are also non-executive directors. Day-to-day finance and operations rest with long-serving staff; the CFO has been with the company since 1981. Promoters own 56.1% (June 2026), mainly through Venkateshwara Hatcheries Pvt Ltd (51.61%), with no pledge.",
+   "people": [
+    {
+     "name": "B. Balaji Rao",
+     "role": "Managing Director",
+     "since": "Not disclosed in the annual report",
+     "family": true,
+     "relation": "Promoter family; brother of Chairperson Anuradha J. Desai and Vice-Chairman B. Venkatesh Rao",
+     "stake": "0.03% (4,492 shares, March 2026, FY26 annual report); promoter group together 56.1%, mainly Venkateshwara Hatcheries Pvt Ltd (51.61%)",
+     "bio": "He joined the family business young. The group says he leads its production of SPF (specific-pathogen-free) eggs, processed chicken and nutrition products. He is the company's only executive director. The listed company paid him only about ₹46 lakh in FY26; he also draws pay from the parent Venkateshwara Hatcheries. His education and earlier career are not disclosed."
+    },
+    {
+     "name": "J. K. Handa",
+     "role": "Chief Financial Officer",
+     "since": "13 May 1981 (joined the company)",
+     "family": false,
+     "bio": "He holds an M.Com and, aged 67, has 45 years of experience, all of it at Venky's, which he joined in 1981. As CFO he certifies the accounts with the MD and sits on the board's risk management committee. He was paid about ₹86 lakh in FY26."
+    },
+    {
+     "name": "N. K. Toshniwal",
+     "role": "General Manager – Material & Purchase",
+     "since": "10 November 1989",
+     "family": false,
+     "bio": "A commerce graduate, aged 69, with 36 years of experience, he joined from M.P. Glychem Industries in 1989. He heads material purchasing. He was the company's highest-paid employee in FY26 at ₹2.5cr, far more than the MD's pay from the listed company."
+    }
+   ],
+   "changes": "No change in directors or KMP since the FY26 annual report. Brig. Govindarajan Srinivasan (Retd.) joined as an independent director.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31735_VENKEYS_2025_2026_A_13314196_07092026180933.pdf",
+    "https://venkys.com/about-us/",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1706710_01082026093502_WEB.xml"
    ],
    "updatedOn": "2026-09-29"
   },
@@ -15645,6 +15903,49 @@
    "updatedOn": "2026-09-29"
   },
   {
+   "company": "TVS Electronics",
+   "sector": "Hardware",
+   "style": "Promoter-run",
+   "styleNote": "Part of the Gopal Srinivasan branch of the TVS family. Gopal Srinivasan, a third-generation TVS family member, is non-executive Chairman and, since the December 2025 merger of his holding company TVS Investments into the company, owns 59.71% directly. His wife Srilalitha Gopal is Managing Director. The company also pays a family-nominated firm a brand fee of up to 1% of net sales for use of the TVS name. The CFO and business heads are hired professionals.",
+   "people": [
+    {
+     "name": "Srilalitha Gopal",
+     "role": "Managing Director",
+     "since": "Director since 10 November 2011; MD since 11 May 2018",
+     "family": true,
+     "relation": "Promoter group; wife of Chairman and promoter Gopal Srinivasan",
+     "stake": "60 shares, about 0.00% (FY26 annual report); her husband owns 59.71%, promoter group 59.77%",
+     "bio": "A computer-science engineering graduate from IISc Bengaluru, aged 58. She joined the board in November 2011 and became MD in May 2018, leading efforts to lift profitability and grow new businesses. She has also been MD of Harita Techserv, a group design-engineering and staffing firm, since 2008 and holds both roles. She is a director of TVS Wealth and TVS-Alpha Finance and of several family charitable foundations. She was paid ₹1.21cr in FY26 and is up for re-appointment at the 2026 AGM."
+    },
+    {
+     "name": "A. Kulandai Vadivelu",
+     "role": "Chief Financial Officer",
+     "since": "KMP as of the FY26 annual report",
+     "family": false,
+     "bio": "The company's CFO and one of its three key managerial personnel with the MD and company secretary; he co-signs the CEO/CFO certificate on the accounts. His pay was 18 times the median employee in FY26, up 4%. The annual report does not give his education or earlier career."
+    },
+    {
+     "name": "C. Balaji",
+     "role": "Chief Business Officer – Products & Solutions",
+     "since": "Senior management as of FY26",
+     "family": false,
+     "bio": "Heads the products and solutions business, which sells the company's printers, keyboards, point-of-sale and other IT products. The annual report names him as senior management but does not give his education or earlier career."
+    },
+    {
+     "name": "Ramachandran Prebagar",
+     "role": "Chief Revenue Officer – FSS and IMS",
+     "since": "Senior management as of FY26",
+     "family": false,
+     "bio": "Heads revenue for the FSS and IMS service businesses, in which the company provides after-sales and IT services for brands and enterprises. The annual report does not give his education or earlier career."
+    }
+   ],
+   "changes": "EMS business head Sathya Doraisamy resigned on 30 September 2025, and CHRO Nageshwar Rao on 24 April 2026. Independent directors M. Lakshminarayan and M. F. Farooqui retired in May 2025; Kamal Pant joined. TVS Investments merged into the company on 19 December 2025, so Gopal Srinivasan now holds his 59.71% directly; shareholders approved matching changes to the articles in April 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_29872_TVSELECT_2025_2026_A_23418735_17072026194342.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
    "company": "Indegene",
    "sector": "Healthcare",
    "style": "Professional",
@@ -16060,6 +16361,58 @@
    "updatedOn": "2026-09-29"
   },
   {
+   "company": "Nephrocare Health",
+   "sector": "Healthcare",
+   "style": "Promoter-run",
+   "styleNote": "Founder Vikram Vuppala is Chairman and Managing Director. For its IPO the company named him and its private-equity backers (Edoras 28.3%, Bessemer 8.7%, Investcorp funds 5.8%, Healthcare Parent 5.8%) as promoters; together they hold about 58%. Mr Vuppala himself owns 9.8%. The funds have nominee directors on the board. A hired Group CEO, Rohit Singh, runs operations. No directors are related to each other.",
+   "people": [
+    {
+     "name": "Vikram Vuppala",
+     "role": "Founder, Chairman & Managing Director",
+     "since": "With the company since Dec 2009 (founded 2010); Chairman since Jul 2025",
+     "family": false,
+     "relation": "Founder and promoter",
+     "stake": "9.8% (98,24,227 shares, 31 Mar 2026); promoter group together about 58%",
+     "bio": "Holds a B.Tech from IIT Kharagpur and an MBA from Chicago Booth. Before NephroPlus he worked at McKinsey & Company, ZS Associates and Abbott Laboratories, and he has over 21 years in consulting and healthcare. He founded NephroPlus in Hyderabad in 2010 with co-founder Kamal Shah; it runs dialysis clinics in India and overseas markets such as the Philippines, Uzbekistan and Nepal. He leads its global expansion, partnerships and governance. In July 2025 he was re-appointed MD for five years and also made Chairman."
+    },
+    {
+     "name": "Kamal D Shah",
+     "role": "Co-Founder (management team)",
+     "since": "Co-founded the company in 2010",
+     "family": false,
+     "bio": "Co-founded NephroPlus with Vikram Vuppala. He has been on dialysis himself for more than 28 years, and the company says his experience as a patient shapes its focus on patient dignity and care. He is not on the board or in the list of key managerial personnel."
+    },
+    {
+     "name": "Rohit Singh",
+     "role": "Group Chief Executive Officer",
+     "since": "Group CEO since May 2025 (earlier COO)",
+     "family": false,
+     "bio": "Was Chief Operating Officer of the company before the board made him Group CEO and a key managerial person in May 2025. The annual report does not give his earlier background."
+    },
+    {
+     "name": "Prashant Goenka",
+     "role": "Group Chief Financial Officer & Chief Risk Officer",
+     "since": "Joined May 2024; also CRO since Apr 2026",
+     "family": false,
+     "bio": "Holds a bachelor's degree in electrical and electronics engineering and a master's in economics from BITS Pilani, and an MBA from Chicago Booth. He is a certified Six Sigma Master Black Belt and spent over 20 years in financial services in the US, the Philippines and India, at banks including HSBC, Bank of America and JP Morgan Chase. He joined NephroPlus in May 2024 and runs finance, strategy, administration, secretarial and technology; he was also made Chief Risk Officer in April 2026."
+    },
+    {
+     "name": "Sukaran Singh Saluja",
+     "role": "Chief Executive Officer – India and Nepal",
+     "since": "Senior management (serving through FY26)",
+     "family": false,
+     "bio": "Named as senior management, heading the India and Nepal business. The annual report does not give his earlier background."
+    }
+   ],
+   "changes": "Rohit Singh became Group CEO in May 2025. Company Secretary Gulshan Goyal was replaced by Kishore Kathri in Jul 2025. CFO Prashant Goenka also became Chief Risk Officer in Apr 2026. No KMP changes announced since the annual report.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_29830_NEPHROPLUS_2025_2026_A_11141433_16072026181803.pdf",
+    "https://nsearchives.nseindia.com/corporate/NEPHROCARE1_03042026120459_Disclosure_under_Reg_30_Appt_of_CRO_Prashant_Goenka_signed.pdf",
+    "https://www.nephroplus.com/team"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
    "company": "Syngene International",
    "sector": "Healthcare",
    "style": "Promoter-owned, professionally run",
@@ -16124,6 +16477,76 @@
     "https://nsearchives.nseindia.com/corporate/SYNGENE2_03072026171724_SEIntimationPBResignation.pdf",
     "https://nsearchives.nseindia.com/corporate/SYNGENE2_29072026200047_SEIntimationKush.pdf",
     "https://nsearchives.nseindia.com/corporate/SYNGENE2_21092026224924_SEDisclosure_Sept212026.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Molbio Diagnostics",
+   "sector": "Healthcare",
+   "style": "Promoter-run",
+   "styleNote": "Founder-run. Promoter Sriram Natarajan is CEO and an executive director; his wife Sangeetha Sriram is executive director for operations; co-promoter Dr Chandrasekhar Nair, is executive director and Chief Technology Officer. Their son Shiva Sriram is President, Business Development. Before the 2026 IPO the promoters held about 46.7% (the Srirams through Exxora Trading LLP 41.2%, Dr Nair 5.4%).",
+   "people": [
+    {
+     "name": "Sriram Natarajan",
+     "role": "Executive Director & Chief Executive Officer",
+     "since": "Promoter",
+     "family": true,
+     "relation": "Promoter; husband of Sangeetha Sriram; father of Shiva Sriram",
+     "stake": "nil directly; with his wife controls Exxora Trading LLP, which held 41.2% before the IPO (RHP)",
+     "bio": "Holds a B.Sc in botany and an M.Phil in botany from Delhi University and an M.Sc in plant physiology from Tamil Nadu Agricultural University. He has 35 years in developing, making and selling diagnostic devices and kits in India and abroad, and earlier co-founded Tulip Diagnostics, where he was a director. As CEO he runs business management and strategy. He shared the Economic Times Healthcare Award 2021 for COVID-19 research with Dr Nair and was named Businessperson of the Year 2025 (medium company) by BioSpectrum. Aged 67."
+    },
+    {
+     "name": "Dr Chandrasekhar Bhaskaran Nair",
+     "role": "Executive Director & Chief Technology Officer",
+     "since": "Promoter",
+     "family": false,
+     "relation": "Co-promoter (not related to the Srirams)",
+     "stake": "5.4% (61,09,850 shares, held jointly with Anita Angela Chandrasekhar; pre-IPO, RHP)",
+     "bio": "Holds bachelor's and master's degrees in engineering (chemistry) from BITS Pilani and a PhD from the School of Bio Sciences and Technology at VIT University. He has 34 years in translational research and earlier headed engineering and computer sciences at the Vittal Mallya Scientific Research Foundation. He leads Molbio's research and development. He won the Infosys Prize 2021 in engineering and computer science. Aged 58."
+    },
+    {
+     "name": "Sangeetha Sriram",
+     "role": "Executive Director (Director – Operations)",
+     "since": "Promoter",
+     "family": true,
+     "relation": "Promoter; wife of Sriram Natarajan; mother of Shiva Sriram",
+     "stake": "nil directly; designated partner of promoter Exxora Trading LLP",
+     "bio": "Holds a B.Sc from Sri Venkateswara University and an M.Sc in botany from Delhi University. She oversees operations and administration and has five years of experience in the diagnostics sector. Aged 66."
+    },
+    {
+     "name": "Shiva Sriram",
+     "role": "President – Business Development (senior management)",
+     "since": "Apr 2018",
+     "family": true,
+     "relation": "Son of Sriram Natarajan and Sangeetha Sriram",
+     "bio": "Holds a B.Sc in biochemistry from Delhi University and a master's in biochemical engineering from University College London. He joined Molbio in April 2018 and leads business development; he is also a director of Prognosys Healthcare and of OptraScan. He was paid ₹40.1 million in FY26, the highest of the senior managers listed."
+    },
+    {
+     "name": "Manan Bimal Khokhani",
+     "role": "President – Finance & Accounts and Chief Financial Officer",
+     "since": "Dec 2025",
+     "family": false,
+     "bio": "A B.Com graduate (H.L. College of Commerce, Gujarat University) and a chartered accountant with 15 years in finance and accounts. He worked at Larsen & Toubro, Thermo Fisher Scientific India and Worley Services India before joining Molbio in December 2025."
+    },
+    {
+     "name": "Indraneil Borkakoty",
+     "role": "President – Corporate Strategy, M&A and Investor Relations",
+     "since": "May 2024",
+     "family": false,
+     "bio": "A Delhi University arts graduate with a PGDM from International Management Institute, New Delhi. He is a career investment banker: executive director at Kotak Mahindra Capital, and managing director at Nomura, IDFC Securities and Jefferies India. He joined Molbio in May 2024 to lead strategy, acquisitions and investor relations."
+    },
+    {
+     "name": "Dr Kuldeep Singh Sachdeva",
+     "role": "President – Partnerships and Advocacy",
+     "since": "Jan 2024",
+     "family": false,
+     "bio": "A doctor (MBBS, Delhi University) with an MBA in healthcare administration and diplomas in hospital management and disaster preparedness. He joined the central health service in 1988 and retired from the Health Ministry in 2021, having been Deputy Director General at the National AIDS Control Organisation; he was then regional director of The Union's South-East Asia office (TB and lung disease). At Molbio he handles strategy and government partnerships."
+    }
+   ],
+   "changes": "CFO Manan Khokhani joined in Dec 2025, ahead of the IPO. No KMP changes announced on NSE since listing.",
+   "sources": [
+    "https://www.molbiodiagnostics.com/wp-content/uploads/2026/08/Molbio-Diagnostics-Limited-Red-Herring-Prospectus.pdf",
+    "https://nsearchives.nseindia.com/corporate/MOLBIO_25092026132851_Intimation_Cost_auditor_Signed.pdf"
    ],
    "updatedOn": "2026-09-29"
   },
@@ -17190,6 +17613,54 @@
     "https://nsearchives.nseindia.com/annual_reports/AR_29458_MHRIL_2025_2026_A_18541921_26062026163542.pdf",
     "https://nsearchives.nseindia.com/corporate/MHRIL_05052026090900_SE_Intimation_-_CFO.pdf",
     "https://www.clubmahindra.com/investors/leadership-team"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Samhi Hotels",
+   "sector": "Hotels and Travels",
+   "style": "Professional",
+   "styleNote": "There is no promoter: the June 2026 shareholding pattern shows only foreign investors (44.6%), domestic institutions (17.4%) and the public (38.0%). Ashish Jakhanwala, on the board since December 2010, is Chairman, MD & CEO and leads a management team that has mostly been together since 2011–2012. Hotelivate founder Manav Thadani, also on the board since 2010, is a non-executive director holding 0.44%. No directors or managers are related to each other.",
+   "people": [
+    {
+     "name": "Ashish Jakhanwala",
+     "role": "Chairman, Managing Director & CEO",
+     "since": "Board since 28 December 2010",
+     "family": false,
+     "stake": "Not found in the documents reviewed (the FY26 annual report file on NSE could not be opened)",
+     "bio": "Holds a B.Com from the University of Delhi, a hotel-management diploma from the National Council for Hotel Management and Catering Technology, and a PGDM from the International Management Institute, New Delhi. He worked as a consultant at Pannell Kerr Forster and then as Director – Development at InterGlobe Hotels; Accor gave him its Gold Bernache award in 2009. He has led SAMHI since 2010, building a portfolio of branded business hotels bought or built and run by Marriott, Hyatt and IHG. He co-chaired FICCI's tourism committee in 2018."
+    },
+    {
+     "name": "Rajat Mehra",
+     "role": "Chief Financial Officer",
+     "since": "Joined SAMHI in 2012",
+     "family": false,
+     "stake": "Not disclosed",
+     "bio": "A chartered accountant with a B.Com from Sri Guru Tegh Bahadur Khalsa College, University of Delhi, and a management diploma from IGNOU. Before SAMHI he was Executive Vice President – Finance at Religare Corporate Services. He has run SAMHI's finances since 2012, including the IPO and the ongoing push to cut net debt from about 3.2x to 2.5x EBITDA by FY28."
+    },
+    {
+     "name": "Gyana Das",
+     "role": "Executive Vice President – Corporate Strategy & Head of Investments",
+     "since": "Joined SAMHI in 2011",
+     "family": false,
+     "stake": "Not disclosed",
+     "bio": "Holds a bachelor's degree in architecture from VNIT Nagpur and a master's in city planning from IIT Kharagpur. He worked at InterGlobe Hotels before joining SAMHI in 2011. He leads corporate strategy and hotel acquisitions and investments."
+    },
+    {
+     "name": "Sanjay Jain",
+     "role": "Senior Director – Corporate Affairs, Company Secretary & Compliance Officer",
+     "since": "Joined SAMHI in 2011",
+     "family": false,
+     "stake": "Not disclosed",
+     "bio": "A company secretary and cost accountant with a B.Com (Hons) from the University of Delhi. He worked at Consortium Finance, and the company's investor presentation also lists Beekman Helix India and DLF among his past employers. He handles corporate affairs, secretarial work and compliance."
+    }
+   ],
+   "changes": "No KMP or senior-management changes announced on NSE between April and 29 Sep 2026. The September 2026 AGM notice sought approval to raise up to ₹750cr of equity.",
+   "sources": [
+    "https://nsearchives.nseindia.com/corporate/Samhi_07082026203635_AGMNotice_eVotingInstructions2026.pdf",
+    "https://nsearchives.nseindia.com/corporate/Samhi_03082026205539_Disclosure_InvestorPresentation_Q1FY27.pdf",
+    "https://www.samhi.co.in/leadership",
+    "https://www.screener.in/company/SAMHI/consolidated/"
    ],
    "updatedOn": "2026-09-29"
   },
@@ -20152,6 +20623,39 @@
    "updatedOn": "2026-09-29"
   },
   {
+   "company": "Basilic Fly Studio",
+   "sector": "Media and Entertainment",
+   "style": "Promoter-run",
+   "styleNote": "Founded in 2013 by Balakrishnan, who is Chairman & MD (Chairman since 1 April 2026). His wife Sundaram Yogalakshmi is a whole-time director and his mother Rajarathinam Thiripurasundari is a non-executive director. The couple own 55.3%. Day-to-day studio operations are run with a hired COO, Zameer Hussain (also Global EVP), and CFO Gaurav Mehra (since October 2024).",
+   "people": [
+    {
+     "name": "Balakrishnan",
+     "role": "Chairman & Managing Director",
+     "since": "2013 (founder); MD re-appointed 1 January 2026 to 31 December 2031; Chairman from 1 April 2026",
+     "family": true,
+     "relation": "Founder; husband of Whole-time Director Sundaram Yogalakshmi; son of director Rajarathinam Thiripurasundari",
+     "stake": "41.9% (1,05,88,250 shares, FY26 annual report); family together 55.3%",
+     "bio": "Holds a master's degree in electronic media from Anna University. He founded Basilic Fly in 2013 to offer high-quality but affordable visual effects from India, and built it into a VFX studio serving Netflix, Disney, Amazon, HBO, Warner Bros., Sony and Apple TV+, with facilities in Chennai and Pune and senior staff hired in London, Los Angeles and Paris. He sets strategy, manages teams and expansion, and is the company's public face. He was re-appointed MD for five years from January 2026 and became Chairman in April 2026."
+    },
+    {
+     "name": "Sundaram Yogalakshmi",
+     "role": "Whole-time Director & President – Business Strategy",
+     "since": "Re-appointed whole-time director 1 January 2026 to 31 December 2031",
+     "family": true,
+     "relation": "Wife of Chairman & MD Balakrishnan",
+     "stake": "13.4% (33,83,900 shares, FY26 annual report)",
+     "bio": "Holds a bachelor's degree in electronics and communication engineering from Anna University. She works on business strategy: assessing performance, recommending improvements and streamlining operations. The annual report also calls her Director & Chief Business Strategy Officer."
+    }
+   ],
+   "changes": "Balakrishnan became Chairman on 1 April 2026. Whole-time director Duraiswami Prabhakar left on completion of his term on 31 December 2025. Ikkurthi Chandramohan became Company Secretary in October 2025, replacing Swati Sharma. Independent director Ravichandran Chitra joined in January 2026. Other senior managers named: Zameer Hussain (COO & Global EVP), Gaurav Mehra (CFO) and Abishek Nair (Global Creative Head).",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/SME_AR_31365_BASILIC_2025_2026_A_39699171_04092026150437.pdf",
+    "https://nsearchives.nseindia.com/annual_reports/SME_AR_28385_BASILIC_2024_2025_A_3535695_04092025110908.pdf",
+    "https://nsearchives.nseindia.com/corporate/BASILIC_13032026171905_Basilic_Reg30_Intimation.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
    "company": "Saregama India",
    "sector": "Media and Entertainment",
    "style": "Promoter-owned, professionally run",
@@ -20430,7 +20934,7 @@
    "company": "Ardee Industries",
    "sector": "Mining & Metals Recycle",
    "style": "Promoter-run",
-   "styleNote": "A family company listed in August 2026. Sandeep Aggarwal is Chairman and MD, his son Nikunj Aggarwal is a whole-time director and Nikunj's wife Esha Gupta is also a whole-time director. The three promoters own 67.36% after the IPO (91.16% before). The CFO and senior managers are hired professionals.",
+   "styleNote": "A family company listed in August 2026. Sandeep Aggarwal is Chairman and MD, his son Nikunj Aggarwal is a whole-time director and Nikunj's wife Esha Gupta is also a whole-time director. The three promoters own 67.36% after the IPO (91.16% before); the whole promoter group held 67.62% at listing. The CFO and senior managers are hired professionals.",
    "people": [
     {
      "name": "Sandeep Aggarwal",
@@ -20522,6 +21026,139 @@
     "https://nsearchives.nseindia.com/corporate/ASHAPURMIN_05022026203151_Outcome05022026.pdf",
     "https://nsearchives.nseindia.com/annual_reports/AR_27868_ASHAPURMIN_2024_2025_A_4558448_29082025150341.pdf",
     "https://www.ashapura.com/board-of-directors.php"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Caliber Mining & Log",
+   "sector": "Mining & Metals Recycle",
+   "style": "Promoter-run",
+   "styleNote": "Run by the Nagpur-based Chadda family, which grew out of the family's trucking firms (Shree Chadda Roadlines, KSR Freight Carriers). Mohit Chadda is Chairman and MD; his cousin Rahul Chadda, and the brothers Manish and Anuj Chadda (Anuj's wife Priya is a whole-time director) fill the other executive roles. The five named promoters own 72.34% after the July 2026 IPO (86.64% before); the whole promoter group held 74.18% at listing. The CFO is a hired chartered accountant.",
+   "people": [
+    {
+     "name": "Mohit Satishkumar Chadda",
+     "role": "Chairman & Managing Director",
+     "since": "Director since July 2014; MD since September 2024 (term to September 2029)",
+     "family": true,
+     "relation": "Promoter; cousin of Rahul Chadda",
+     "stake": "28.20% after the IPO (33.48% before), per the July 2026 prospectus; promoters together 72.34%",
+     "bio": "He enrolled for a Bachelor of Law at Nagpur University. He has been with the company since 2014 and a partner in the family logistics firms Shree Chadda Roadlines and KSR Freight Carriers since February 2008, and is also linked to Caliber Infraproject LLP, Chadda Infraprojects LLP and Caliber Resorts. He has about 17 years of experience in logistics and 5 in mining. He became MD in September 2024 and Chairman the same month, and is paid ₹20 lakh a month."
+    },
+    {
+     "name": "Rahul Roshanlal Chadda",
+     "role": "Whole-time Director",
+     "since": "Director since July 2014; Whole-time Director since September 2024",
+     "family": true,
+     "relation": "Promoter; cousin of Mohit and Manish Chadda",
+     "stake": "14.93% after the IPO (97,60,378 shares, per the FY26 AGM notice); promoters together 72.34%",
+     "bio": "Holds a BBA from Nagpur University (the prospectus says he enrolled for it). He has been with the company since July 2014 and a partner in Shree Chadda Roadlines since 2008 and KSR Freight Carriers since 2009. He has about 17 years in logistics and 5 in mining, and works on operations, logistics and strategy. He chairs the CSR committee and is also a partner in Chadda Infraprojects LLP, which the company proposes to deal with (up to ₹500cr in FY27). He is up for re-appointment at the September 2026 AGM."
+    },
+    {
+     "name": "Manish Krishanlal Chadda",
+     "role": "Whole-time Director",
+     "since": "Director since March 2017; Whole-time Director since September 2024",
+     "family": true,
+     "relation": "Promoter; brother of Anuj Chadda; brother-in-law of Priya Chadda; cousin of Rahul Chadda",
+     "stake": "9.32% after the IPO (11.41% before), per the July 2026 prospectus; promoters together 72.34%",
+     "bio": "He enrolled for a Bachelor of Commerce at Nagpur University. He has been a partner in Sutlej Transport Company since 2001 and in the family's Shree Chadda Roadlines and KSR Freight Carriers since 2017, giving him about 25 years in logistics and 5 in mining. He joined the company in 2017 and became a whole-time director in September 2024, paid ₹20 lakh a month."
+    },
+    {
+     "name": "Priya Anuj Chadda",
+     "role": "Whole-time Director",
+     "since": "November 2024 (re-appointed to August 2030)",
+     "family": true,
+     "relation": "Promoter; wife of Anuj Chadda",
+     "stake": "0.18% after the IPO (July 2026 prospectus); promoters together 72.34%",
+     "bio": "Holds a BA from Punjab University. She has been a director of K.S.R Motors, an automobile business, since 2018 and has about seven years of experience in the automotive industry. She joined the board as a whole-time director in November 2024; her pay was cut from ₹20 lakh to ₹10 lakh a month from August 2025."
+    },
+    {
+     "name": "Anuj Krishanlal Chadda",
+     "role": "Head – Maintenance & Procurement (senior management)",
+     "since": "With the company since 2014; in this role since November 2024",
+     "family": true,
+     "relation": "Promoter; brother of Manish Chadda; husband of Priya Chadda",
+     "stake": "19.71% after the IPO (23.56% before), per the July 2026 prospectus; promoters together 72.34%",
+     "bio": "A mechanical engineering graduate from Nagpur University. He has been a partner in the family's Shree Chadda Roadlines and KSR Freight Carriers since 2008 and with the company since 2014. He heads maintenance and procurement for the mining fleet, and was paid ₹79.42 lakh in FY26. He is also a partner in Chadda Infraprojects LLP, a related party."
+    },
+    {
+     "name": "Nikhil Kamalkishor Karwa",
+     "role": "Chief Financial Officer",
+     "since": "7 October 2024",
+     "family": false,
+     "stake": "nil (not among shareholding directors/KMP in the prospectus)",
+     "bio": "A chartered accountant and commerce graduate from Nagpur University with about 21 years in finance and accounts. He earlier worked at S.R. Batliboi & Co. and KPMG, and was a partner at Karwa Bhatia & Co., a chartered accountancy firm. He joined as CFO in October 2024 ahead of the IPO and was paid ₹30 lakh in FY26."
+    }
+   ],
+   "changes": "Listed on 24 July 2026. No management changes filed since listing. Company Secretary is Riddhi Varma (since August 2024).",
+   "sources": [
+    "https://nsearchives.nseindia.com/corporate/FP_INE11XY01018_22JUL2026.pdf",
+    "https://nsearchives.nseindia.com/annual_reports/AR_31664_CMLL_2025_2026_A_6628086_07092026121019.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "CMR Green Tech",
+   "sector": "Mining & Metals Recycle",
+   "style": "Promoter-run",
+   "styleNote": "A founder-run family business listed in June 2026. Founder Mohan Agarwal is Chairman and MD and his sons Akshay and Raghav Agarwal are whole-time directors, each running a business unit. Promoters own 84% (June 2026 shareholding): Mohan Agarwal 40.58%, Pratibha Agarwal 20.25%, Akshay and Raghav 10% each, plus family HUFs. The nominee director of former investor Global Scrap Processors left the board in August 2026.",
+   "people": [
+    {
+     "name": "Mohan Agarwal",
+     "role": "Chairman & Managing Director",
+     "since": "Founder; MD since 12 August 2021",
+     "family": true,
+     "relation": "Founder; father of Akshay and Raghav Agarwal",
+     "stake": "40.58% (NSE shareholding pattern, June 2026); promoters together 84%",
+     "bio": "A commerce graduate from Delhi University with more than 40 years in aluminium alloy recycling. He founded the company and has been with the CMR group since it started, becoming MD in its current form in August 2021. He sets strategy and the long-term plan, aiming for global leadership in aluminium recycling and green manufacturing. He is also a director of the Material Recycling Association of India. He is up for re-appointment as MD at the 2026 AGM."
+    },
+    {
+     "name": "Akshay Agarwal",
+     "role": "Whole-time Director; Business Head – UBC (Sambalpur)",
+     "since": "12 August 2021 (re-appointed for five years from August 2026)",
+     "family": true,
+     "relation": "Son of the Chairman Mohan Agarwal; brother of Raghav Agarwal",
+     "stake": "10.00% (June 2026 shareholding), plus the Akshay Agarwal Family Private Trust; promoters together 84%",
+     "bio": "Holds a bachelor's degree in mechanical engineering (Honours) from BITS Pilani (Goa campus) and has over 11 years in aluminium alloy recycling. He heads the used-beverage-can (UBC) recycling business at Sambalpur, Odisha, responsible for its performance and profitability. He also leads customer strategy and the push into domestic and export markets."
+    },
+    {
+     "name": "Raghav Agarwal",
+     "role": "Whole-time Director; Business Head – Tirupati (billets)",
+     "since": "12 August 2021 (re-appointed for five years from August 2026)",
+     "family": true,
+     "relation": "Son of the Chairman Mohan Agarwal; brother of Akshay Agarwal",
+     "stake": "10.00% (June 2026 shareholding), plus the Raghav Agarwal Family Private Trust; promoters together 84%",
+     "bio": "A chartered accountant (associate member of ICAI) with over nine years in aluminium alloy recycling. He heads the Tirupati plant and its green (low-carbon) aluminium billet business, and also prepares strategic and operating plans and budgets for the billets, IT and commodity sales businesses."
+    },
+    {
+     "name": "Yugal Kishor Garg",
+     "role": "Chief Financial Officer",
+     "since": "27 August 2025",
+     "family": false,
+     "stake": "not disclosed",
+     "bio": "A fellow chartered accountant with more than 22 years in accounting and finance. He earlier worked at Himalayan Crest Power, Spentex Industries, Jagat Agro Commodities, Shree Laxmi Flavours (Gopal Group) and Synergy Advanced Metals. He became CFO in August 2025, replacing Virender Kumar Shimar, who held the post for only three months."
+    },
+    {
+     "name": "Shreechandra Singh Rana",
+     "role": "Chief Operating Officer",
+     "since": "Executive role since June 2011",
+     "family": false,
+     "stake": "not disclosed",
+     "bio": "Holds a diploma in electrical engineering from Uttar Pradesh Technical University and has more than 40 years in engineering. Before CMR he worked at Shriram Bearings, Shriram Honda Power Equipment, Omax Autos, Flex Industries, Escorts, Eicher Farm Machinery and AEY Key Tan and Vessels. He has been in an executive role at CMR since 2011 and is responsible for profitability, quality and project timelines."
+    },
+    {
+     "name": "Deepak Kumar",
+     "role": "Chief Procurement Officer",
+     "since": "With the company since 2006",
+     "family": false,
+     "stake": "not disclosed",
+     "bio": "A commerce graduate from Maharishi Dayanand University, Rohtak, with more than 19 years in procurement, all at CMR since 2006. He runs the buying of secondary aluminium scrap for all plants and decides trading terms with suppliers."
+    }
+   ],
+   "changes": "CFO Virender Kumar Shimar joined in May 2025 and resigned in August 2025; Yugal Kishor Garg replaced him. Nominee director Peter Francis Amour (Global Scrap Processors) left on 10 August 2026 and Ankur Singh joined as an additional director. Independent director Satpal Arora resigned in May 2025.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_32078_CMRGREEN_2025_2026_U_5876213_24092026115756.pdf",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1693875_16072026122903_WEB.xml",
+    "https://nsearchives.nseindia.com/corporate/CMRGREEN_ROID_95723_KMP_Doc.zip"
    ],
    "updatedOn": "2026-09-29"
   },
@@ -21473,6 +22110,99 @@
     "https://nsearchives.nseindia.com/corporate/PYRAMIDTECHNO_22062026142206_Outcome.pdf",
     "https://nsearchives.nseindia.com/corporate/PYRAMIDTECHNO_25032026165103_Intimation_with_Resignation_letter.pdf",
     "https://nsearchives.nseindia.com/corporate/PYRAMIDTECHNO_11112025170130_Intimation_merged.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Kanpur Plastipack",
+   "sector": "Packaging",
+   "style": "Promoter-run",
+   "styleNote": "An Agarwal family company from Kanpur. Manoj Agarwal is Chairman and MD, his son Shashank is Deputy MD, and his wife Usha Agarwal is a non-executive director. A long-serving professional, Sunil Mehta, is executive director for manufacturing. Promoters own about 68% through family members, family trusts and family companies, and have been adding shares through warrant conversions. In FY26 the company bought 76% of Valex Ventures, a UK distributor, from the chairman himself, paid for in new shares.",
+   "people": [
+    {
+     "name": "Manoj Agarwal",
+     "role": "Chairman & Managing Director",
+     "since": "Leading the company for over 45 years; re-appointed for three years from 1 September 2026",
+     "family": true,
+     "relation": "Promoter; husband of Usha Agarwal; father of Shashank Agarwal",
+     "stake": "11.66% (28,53,484 shares incl. warrant conversions, FY26 annual report); promoter group about 68%",
+     "bio": "Holds a master's degree in management studies from BITS Pilani and has run the company for more than 45 years, with a background in operations, administration and export marketing. He is a former chairman of the Plastics Export Promotion Council and still sits on its committee of administration, and a former president of the TiE UP chapter. He sold his controlling stake in UK distributor Valex Ventures to the company in FY26 for new shares. He was paid ₹1.93 crore in FY26."
+    },
+    {
+     "name": "Shashank Agarwal",
+     "role": "Deputy Managing Director",
+     "since": "Running operations for over 15 years",
+     "family": true,
+     "relation": "Promoter; son of Manoj and Usha Agarwal",
+     "stake": "9.03% (22,11,346 shares incl. warrant conversions, FY26 annual report)",
+     "bio": "Holds a B.Eng. (Hons) in manufacturing engineering and operations management from the University of Nottingham, UK. He has helped run the company for more than 15 years and led backward integration, new product lines and sustainability work. He chairs the board's CSR committee. His pay terms were changed at the 2026 AGM, and he was paid about ₹1 crore in FY26."
+    },
+    {
+     "name": "Sunil Mehta",
+     "role": "Executive Director (manufacturing)",
+     "since": "Joined 2002 as Vice President",
+     "family": false,
+     "stake": "nil (FY26 annual report)",
+     "bio": "Holds a B.Tech in textile technology from TIT Bhiwani and has more than 35 years of experience in the woven sacks industry. He joined Kanpur Plastipack in 2002 as vice president and has overseen the expansion of manufacturing across several locations. He is the only non-family executive on the board; shareholders last re-appointed him as executive director in September 2024."
+    },
+    {
+     "name": "Shobhit Agarwal",
+     "role": "Chief Financial Officer",
+     "since": "10 June 2024",
+     "family": false,
+     "bio": "Became CFO and a key managerial person on 10 June 2024. The annual report does not give his qualifications or earlier career, or say whether he is related to the promoter family."
+    }
+   ],
+   "changes": "Manoj Agarwal re-appointed as Chairman & MD for three years from 1 September 2026, and Shashank Agarwal's pay terms revised, at the 2026 AGM. Independent director Akshay Kumar Gupta retired on 31 March 2026; Basant Seth joined as independent director on 10 November 2025. Company secretary is Ankur Srivastava.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_29809_KANPRPLA_2025_2026_U_8648499_15072026170651.pdf (Annual Report FY26 incl. AGM notice)",
+    "https://nsearchives.nseindia.com/corporate/KANPRPLA_10112025201935_Outcome_BM_Change_in_Directors.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Ester Industries",
+   "sector": "Packaging",
+   "style": "Promoter-owned, professionally run",
+   "styleNote": "Co-founder Arvind Singhania stepped back from Chairman & CEO to non-executive chairman on 26 March 2026, and a hired CEO, Vaibhav Jha, now runs the business. The family stays close to the top: his son Ayush Vardhan Singhania is a whole-time director. Promoters own 62.71%, almost all through group companies, chiefly Wilemina Finance Corporation (50.54%) and MOVI Limited (7.90%); Arvind Singhania no longer holds shares in his own name. Company loans carry his personal guarantee, and he has waived his dividend.",
+   "people": [
+    {
+     "name": "Vaibhav Jha",
+     "role": "Chief Executive Officer",
+     "since": "Deputy CEO first; CEO since 27 March 2026",
+     "family": false,
+     "bio": "Holds an MBA from IIT Bombay and a B.E. from Nagpur University, and has over 21 years of experience across functions, industries and countries, including running multicultural joint ventures. Before Ester he worked at Infosys Technologies, GEP Worldwide and Reliance Industries. He joined Ester as Deputy CEO and was promoted to CEO when the founder stepped back in March 2026. He now leads the business through a period of heavy debt and the ELITe recycling joint venture build-out."
+    },
+    {
+     "name": "Ayush Vardhan Singhania",
+     "role": "Whole-time Director",
+     "since": "On the board since 1 June 2021; current term from 1 June 2024",
+     "family": true,
+     "relation": "Son of Chairman and co-founder Arvind Singhania",
+     "stake": "0.96% (9,34,318 shares, FY26 annual report); promoter group together 62.71%",
+     "bio": "A graduate of Bentley University with an MBA from IE Business School, Madrid. He was earlier Head of Business Development and Marketing at Ester and has worked in business development, marketing, strategic planning and expansion. He has been a whole-time director since June 2021 and is 39. He raised his direct stake during FY26 and was up for re-appointment by rotation at the 2026 AGM."
+    },
+    {
+     "name": "Pradeep Kumar Rustagi",
+     "role": "Whole-time Director (Executive Director – Corporate Affairs)",
+     "since": "Re-appointed for April 2026 to March 2029",
+     "family": false,
+     "stake": "400 shares (FY26 annual report), a negligible stake",
+     "bio": "Has more than 38 years of experience in leadership roles covering financial planning, accounts, budgeting and MIS, dealing with banks and financial institutions, and statutory compliance. As Executive Director – Corporate Affairs he is part of the company's central leadership team with the chairman, CEO and CFO, and certifies the company's CSR spending. He is not related to any director."
+    },
+    {
+     "name": "Sourabh Agarwal",
+     "role": "Chief Financial Officer",
+     "since": "Not disclosed; CFO through FY26",
+     "family": false,
+     "bio": "The company's CFO and a key managerial person, and a member of its central leadership team. He handles a stretched balance sheet: gross debt of about ₹722 crore, euro loans that caused currency losses in FY26, and funding for the ELITe joint venture. The annual report does not give his qualifications or earlier career."
+    }
+   ],
+   "changes": "Arvind Singhania moved from Managing Director (Chairman & CEO) to non-executive Chairman on 26 March 2026 (approved by postal ballot on 23 May 2026), shortly after being re-appointed as MD from 1 April 2026. Deputy CEO Vaibhav Jha became CEO on 27 March 2026. Pradeep Kumar Rustagi re-appointed as whole-time director from 1 April 2026. Non-executive director Archana Singhania resigned in April 2025 and independent director Alok Dhir in August 2025. Company secretary is Poornima Gupta.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31095_ESTER_2025_2026_A_8313029_02092026153305.pdf (Annual Report FY26 incl. AGM notice)",
+    "https://nsearchives.nseindia.com/corporate/ESTER_26032026125208_OutcomeofBoardMeeting.pdf",
+    "https://nsearchives.nseindia.com/corporate/ESTER_06022026140714_UFRDEC2025.pdf"
    ],
    "updatedOn": "2026-09-29"
   },
@@ -25582,6 +26312,165 @@
    "updatedOn": "2026-09-29"
   },
   {
+   "company": "Pine Labs",
+   "sector": "Platform Cos",
+   "style": "Professional",
+   "styleNote": "There is no promoter group. The largest owners are investors: Peak XV (16.7%), MacRitchie Investments (5.8%), PayPal (4.9%) and Mastercard (4.3%); Lokvir Kapoor, an early shareholder, holds 1.6% but has no executive role. The company is run by hired professionals led by Amrish Rau, CEO since 2020 and Chairman & MD since 2025. The annual report says no directors are related. The finance chair has turned over: a CFO hired in June 2025 left after under three months.",
+   "people": [
+    {
+     "name": "B. Amrish Rau",
+     "role": "Chairman, Managing Director & CEO",
+     "since": "CEO since 2020; Chairman & MD since 2025",
+     "family": false,
+     "stake": "2.29% (June 2026 shareholding pattern; 5,19,58,927 shares and convertibles per the FY26 annual report)",
+     "bio": "Has over two decades in payments. He held senior roles at First Data and NCR Corporation, building payment and technology partnerships with banks, including a joint venture with ICICI Bank. In 2013 he co-founded CitrusPay, which PayU bought in 2016. He became Pine Labs CEO in 2020 and has pushed it from an Indian card-terminal maker into a regional platform in Southeast Asia and the Middle East, adding online checkout, credit at the till and issuing software. He is paid in US dollars, and shareholders were asked to approve stock-option grants to him of 1% or more of the share capital in a year."
+    },
+    {
+     "name": "Kush Mehra",
+     "role": "Executive Director, President & Chief Business Officer – Digital Infrastructure and Transaction Platform",
+     "since": "Board since 29 Sep 2018; whole-time director since 9 May 2025",
+     "family": false,
+     "stake": "41,75,559 shares, about 0.2% (FY26 AGM notice)",
+     "bio": "Holds a postgraduate diploma in management from FORE School of Management. He has about 21 years in payments, with senior roles at Visa, American Express and Citibank in card issuing, merchant acquiring and EMI products. At Pine Labs he runs the merchant business, bank and card-network partnerships and expansion in India and Southeast Asia, and has grown the EMI and buy-now-pay-later offers at the till. He retires by rotation and is up for re-appointment at the FY26 AGM."
+    },
+    {
+     "name": "Sameer Vasudev Kamath",
+     "role": "Group Chief Financial Officer",
+     "since": "2 Sep 2025",
+     "family": false,
+     "bio": "Became CFO in September 2025, two months before the November 2025 IPO, after his predecessor Marc Mathenz left at the end of August 2025 after less than three months. The annual report does not give his earlier background."
+    },
+    {
+     "name": "Jayaram Karthik",
+     "role": "Chief Operations Officer",
+     "since": "September 2026",
+     "family": false,
+     "bio": "Has over 25 years in operations, risk, analytics and technology, with leadership roles at American Express, Citibank, Amazon, Tata and Razorpay. He joined in September 2026 to run operations and merchant experience across India and international markets."
+    }
+   ],
+   "changes": "Anand Raisinghani, President & Chief Business Officer of Setu, left on 17 Jul 2026, and Navin Chandani, President & Chief Business Officer – Issuing, resigned on 6 Apr 2026. Other named leaders: Sumit Chopra (COO, Digital Infrastructure), Sanjeev Kumar (CTO), Swarnendu Mukherjee (Chief Growth Officer, Issuing & Prepaid), Dheeraj Chowdhry (CBO, South East Asia) and Vijayalakshmi Swaminathan (Chief People Officer).",
+   "sources": [
+    "https://www.bseindia.com/xml-data/corpfiling/AttachHis/24faa495-7fc8-4a82-a88f-beb9514fd016.pdf",
+    "https://nsearchives.nseindia.com/corporate/PINELABS_02092026143856_IntimationJayaramKarthikChiefOperationsOfficer.pdf",
+    "https://nsearchives.nseindia.com/corporate/PINELABS_17072026212946_Resgn_intimation.pdf",
+    "https://nsearchives.nseindia.com/corporate/PINELABS_06042026191848_SMP_Navin_Resign_sign.pdf",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1698121_21072026030805_WEB.xml"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "One Mobikwik Systems",
+   "sector": "Platform Cos",
+   "style": "Promoter-run",
+   "styleNote": "A husband-and-wife founder company. Co-founders Bipin Preet Singh (MD & CEO) and his wife Upasana Taku (Whole-time Director & CFO) are the only executive directors and the promoters; with two family trusts they own 25.1% (June 2026). Upasana was also Chairperson until December 2025, when independent director Navdeep Singh Suri took the chair. Bajaj Finance owns 10.1%. Below the founders, the named senior managers are a CTO, a new Chief Risk Officer and a new head of the lending subsidiary.",
+   "people": [
+    {
+     "name": "Bipin Preet Singh",
+     "role": "Co-Founder, Managing Director & CEO",
+     "since": "2009 (co-founder)",
+     "family": true,
+     "relation": "Co-founder and promoter; husband of Upasana Taku",
+     "stake": "14.52% (June 2026 shareholding pattern); promoter group with family trusts 25.08%",
+     "bio": "Holds a B.Tech from IIT Delhi and worked at Intel and NVIDIA before co-founding MobiKwik with his wife in 2009. He leads strategy, product, business expansion and technology. He built MobiKwik from a mobile-wallet app into a payments, bill-pay and small-loan platform and took it public in December 2024. In FY26 he set targets of 30–35% GMV growth in FY27 and a ten-fold rise in revenue by FY28."
+    },
+    {
+     "name": "Upasana Rupkrishan Taku",
+     "role": "Co-Founder, Whole-time Director & Chief Financial Officer",
+     "since": "Co-founder (2009); Chairperson until 17 Dec 2025",
+     "family": true,
+     "relation": "Co-founder and promoter; wife of Bipin Preet Singh",
+     "stake": "10.11% (June 2026 shareholding pattern)",
+     "bio": "Holds a master's in management science and engineering (MS&E) from Stanford University and worked at HSBC and PayPal before co-founding MobiKwik. She runs finance, governance and business operations. She was Chairperson of the board until December 2025, when an independent director took over; she stays on as CFO, so the chief executive and chief financial officer are a married couple."
+    },
+    {
+     "name": "Anis Pathan",
+     "role": "Chief Risk Officer",
+     "since": "19 Mar 2026",
+     "family": false,
+     "bio": "Has over 14 years in risk management across banking, microfinance, insurance and financial services in India and the Middle East. He was most recently head of enterprise risk at Oman Arab Bank, and earlier Chief Risk Officer at Chaitanya India Fin Credit and at NSDL Payments Bank, where he also ran cybersecurity. He leads group enterprise risk, fraud prevention and financial-crime controls."
+    },
+    {
+     "name": "Manish Pathania",
+     "role": "Chief Business Officer, MobiKwik Distribution Services (lending subsidiary)",
+     "since": "August 2026",
+     "family": false,
+     "bio": "Has close to two decades in digital lending, business development and channel management. He headed the digital lending business at Bajaj Markets and earlier worked at GE Money and HDB Financial Services. He joined in August 2026 to run the lending business after it was moved into a wholly owned subsidiary, with a target of ₹1,000cr+ of quarterly disbursals."
+    },
+    {
+     "name": "Saurabh Dwivedi",
+     "role": "Chief Technology Officer",
+     "since": "18 Dec 2024",
+     "family": false,
+     "bio": "Named in senior management as CTO since December 2024. The annual report does not give his background."
+    }
+   ],
+   "changes": "Independent director Raghu Ram Hiremagalur Venkatesh resigned on 18 Sep 2026. The lending business moved to the subsidiary MDSPL in August 2026 under a new head. Navdeep Singh Suri replaced Upasana Taku as Chairperson on 17 Dec 2025.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30478_MOBIKWIK_2025_2026_A_6384958_21082026135218.pdf",
+    "https://nsearchives.nseindia.com/corporate/MOBIKWIK_18082026172926_Press_Release_18082026.pdf",
+    "https://nsearchives.nseindia.com/corporate/MOBIKWIK_19032026122844_Press_Release.pdf",
+    "https://nsearchives.nseindia.com/corporate/MOBIKWIK_18092026225226_Intimation_for_resignation_of_ID.pdf",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1695898_18072026113046_WEB.xml"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Kirloskar Pneumatic",
+   "sector": "Pumps Comp & Eng",
+   "style": "Promoter-run",
+   "styleNote": "A Kirloskar Group company controlled by the Rahul and Atul Kirloskar families. Rahul C. Kirloskar is Executive Chairman and his son Aman (31) became MD on 1 April 2026, replacing long-serving professional MD K. Srinivasan. Rahul's brother Atul Kirloskar is a non-executive director. Promoters own 38.81%. Business divisions are run by long-tenured professionals.",
+   "people": [
+    {
+     "name": "Aman Rahul Kirloskar",
+     "role": "Managing Director",
+     "since": "Joined 2019; MD since 1 April 2026 (term to March 2031)",
+     "family": true,
+     "relation": "Son of Executive Chairman Rahul Kirloskar; nephew of director Atul Kirloskar",
+     "stake": "200 shares (0.00%) directly; with his parents and sister (directly and through an entity they control) 14.72% as of February 2026; promoter group 38.81%",
+     "bio": "Aged 31, he graduated in business administration (global supply chain management) from Bryant University, USA, in 2017 and worked at Toyota Motors North America in international logistics. He started with the Kirloskar group as a supply chain manager at Kirloskar Chillers in 2018 and joined KPCL in 2019 as a senior manager. As General Manager (Operations) he scaled up screw and centrifugal air compressor production, and as Vice President of the refrigeration business (ACR) from April 2024 he delivered its highest-ever sales and launched new compressor and motor projects. He also leads group ESG initiatives and chairs the Indian Chamber of Commerce, Western Region. Investors should note that he took over the top job at 31 from a long-serving professional MD."
+    },
+    {
+     "name": "Rahul C. Kirloskar",
+     "role": "Executive Chairman (Whole-time Director)",
+     "since": "Board since 1993; MD from December 1993; Chairman since 1998; Executive Chairman since 2012; re-appointment proposed to January 2032",
+     "family": true,
+     "relation": "Promoter; father of MD Aman Kirloskar; brother of director Atul Kirloskar",
+     "stake": "11.54% (74,96,150 shares, including as karta of his HUF, June 2026); family and promoter group together 38.81%",
+     "bio": "Aged 62, with over 40 years in engineering businesses. He began at Kirloskar Cummins, worked three years in a small family unit, and joined KPCL in 1989 as Senior Manager – Operations in the air compressor division. He became MD in December 1993 and Chairman in 1998; under him KPCL became India's leader in industrial refrigeration compressors and a major supplier to oil and gas. He has chaired CII's Pune and Maharashtra councils. The board has proposed re-appointing him as Executive Chairman for five years from January 2027."
+    },
+    {
+     "name": "Deepak Lokras",
+     "role": "President & SBU Head – Air Compressors, Transmission and Nashik Manufacturing",
+     "since": "With KPCL since 1986",
+     "family": false,
+     "bio": "A mechanical engineer and certified CII Business Excellence assessor. He joined KPCL in 1986 as a graduate engineer trainee and worked in refrigeration systems, project management, marketing and sales. In 2003 he helped found the Process Gas Systems (PGS) division, building it into the oil-and-gas, CNG, EPC and wet-leasing business. He now heads the air compressor and transmission divisions and has led R&D since 2022."
+    },
+    {
+     "name": "Ramesh Birajdar",
+     "role": "Vice President & Chief Financial Officer",
+     "since": "CFO (date of joining not disclosed)",
+     "family": false,
+     "bio": "Holds an M.Com and is a chartered accountant and company secretary, with an ACCA diploma in international financial reporting. He has about 27 years of experience at Kirloskar Oil Engines, the Kalyani group, the Tata group, Schaeffler India and Lear Corporation. Just before KPCL he was CFO of the listed Transformers and Rectifiers India, Ahmedabad. His strengths include accounting standards, tax, transfer pricing, debt restructuring and ERP."
+    },
+    {
+     "name": "Samit Gujarathi",
+     "role": "Head – Process Gas Systems Division",
+     "since": "With KPCL since 1992",
+     "family": false,
+     "bio": "Holds an electrical engineering diploma and a professional qualification in marketing management. He joined KPCL in 1992 as a trainee engineer and has worked in project execution, engineering and sales. After leading sales for the Process Gas Systems unit, he now runs the whole division: gas systems, CNG, EPC and wet leasing."
+    }
+   ],
+   "changes": "K. Srinivasan completed his term as MD on 31 March 2026; Aman Kirloskar took over on 1 April 2026. No other KMP change since the annual report. The board has proposed re-appointing Rahul Kirloskar as Executive Chairman from January 2027. Company Secretary & Head Legal Jitendra Shah continues.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_29487_KIRLPNU_2025_2026_A_12785761_29062026233738.pdf",
+    "https://nsearchives.nseindia.com/corporate/revatideshpande_20022026155428_KPCL_PB.pdf",
+    "https://nsearchives.nseindia.com/corporate/revatideshpande_01042026133934_PRESS_RELEASE.pdf",
+    "https://www.kirloskarpneumatic.com/about-us/leadership",
+    "https://nsearchives.nseindia.com/corporate/truneshgujar_22072026133600_SEDisclosureReappointment.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
    "company": "Elgi Equipments",
    "sector": "Pumps Comp & Eng",
    "style": "Promoter-run",
@@ -27554,6 +28443,50 @@
     "https://www.firstcry.com/investor-relations/senior-management",
     "https://inc42.com/buzz/firstcry-drhp-deep-dive-shareholding-pattern-people-helm/",
     "https://www.forbesindia.com/article/leadership/forbes-india-entrepreneur-of-the-year-supam-maheshwari-and-the-firstcry-empire/95465/1"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Shoppers Stop",
+   "sector": "Retail",
+   "style": "Promoter-owned, professionally run",
+   "styleNote": "The K Raheja Corp group (the Raheja family) owns 66.06%. The brothers Neel and Ravi Raheja sit on the board as non-executive promoter directors, and the chairman since July 2025 is Nirvik Singh, a non-executive director. The business is run by a hired MD & CEO, Kavindra Mishra, and a hired executive team; senior staff carry the title 'Customer Care Associate'.",
+   "people": [
+    {
+     "name": "Kavindra Mishra",
+     "role": "Managing Director & Chief Executive Officer",
+     "since": "Joined early 2023; MD & CEO since 29 April 2024 (three-year term)",
+     "family": false,
+     "stake": "0.007% (7,260 shares, FY26 annual report)",
+     "bio": "Holds a postgraduate diploma from IIM Bangalore and has more than 27 years in retail and brands. He started at Aditya Birla's Allen Solly and ran its Middle East business, then held senior roles at Tommy Hilfiger and United Colors of Benetton. He was MD of Pepe Jeans India for six years, co-founded the start-up Zovi.com and was MD & CEO of House of Anita Dongre. He joined Shoppers Stop in 2023 to run external brands and the home business, and became MD & CEO in 2024. He is also on the boards of the beauty subsidiary Global SS Beauty Brands and the Retailers Association of India."
+    },
+    {
+     "name": "Pankaj Chaturvedi",
+     "role": "Chief Financial Officer",
+     "since": "1 April 2026",
+     "family": false,
+     "bio": "A chartered accountant with a master's in commerce and about 25 years across telecom, aviation and media. He was CFO of Saregama India and of Go Airlines (India), and held key finance roles at Vodafone, Reliance Jio and Hitachi. He has set a target of making Shoppers Stop debt-free by the end of FY27."
+    },
+    {
+     "name": "Biju Kassim",
+     "role": "CEO, Beauty Business; MD & CEO of Global SS Beauty Brands",
+     "since": "MD & CEO of the beauty subsidiary from 1 April 2026",
+     "family": false,
+     "bio": "Heads the beauty business, the company's fastest-growing part, which includes the distribution of international beauty brands through the subsidiary Global SS Beauty Brands (sales ₹426cr in FY26, up 81%). He became MD & CEO of that material subsidiary in April 2026. The annual report does not give his education or earlier employers."
+    },
+    {
+     "name": "Arvind Rajagopalan",
+     "role": "Chief Retail Officer",
+     "since": "Before FY26 (no change during the year)",
+     "family": false,
+     "bio": "Runs the store network, including the personal-shopper service the company is expanding. He is listed as senior management in the FY26 annual report, which does not give his education or earlier employers."
+    }
+   ],
+   "changes": "CFO Karunakaran Mohanasundaram resigned with effect from 17 February 2026; Pankaj Chaturvedi took over on 1 April 2026. Chairman B. S. Nagesh retired in July 2025 and Nirvik Singh became non-executive chairman. Jiten Mahendra joined as Chief Marketing Officer and Nabamita Banerjee as Chief HR Officer during FY26. Arun Sirdeshmukh joins as an independent director from 20 October 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_29443_SHOPERSTOP_2025_2026_A_13156619_25062026131817.pdf",
+    "https://nsearchives.nseindia.com/corporate/SHOPERSTOP_10022026175940_SEOutcomeCFO.pdf",
+    "https://nsearchives.nseindia.com/corporate/SHOPERSTOP_05052026165956_SEOutcome05052026.pdf"
    ],
    "updatedOn": "2026-09-29"
   },
@@ -30883,6 +31816,126 @@
     "https://nsearchives.nseindia.com/corporate/BLS_07082026195810_Final_Outcome_07082026_signed.pdf",
     "https://nsearchives.nseindia.com/corporate/BLS_19052026231028_BLSI_Outcome19052026.pdf",
     "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1698333_21072026043633_WEB.xml"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Le Travenues Techno",
+   "sector": "Travel Services",
+   "style": "Professional",
+   "styleNote": "ixigo has no promoter group; it is run by its two co-founders, both IIT Kanpur graduates: Aloke Bajpai (Chairman, MD & Group CEO) and Rajnish Kumar (Group Co-CEO), who own about 4.3% and 4.6%. The largest holders are financial investors: MIH Investments (16.2%), Gamnat (8.3%) and Peak XV (6.0%). No directors are related to each other.",
+   "people": [
+    {
+     "name": "Aloke Bajpai",
+     "role": "Chairman, Managing Director & Group CEO",
+     "since": "Co-founder; on the board since June 2006",
+     "family": false,
+     "relation": "Co-founder; not related to other directors",
+     "stake": "4.32% (June 2026 shareholding pattern)",
+     "bio": "Holds a B.Tech in electrical engineering from IIT Kanpur and an MBA from INSEAD. He worked at Amadeus in France as a software development engineer and later a systems and network engineer. He co-founded ixigo in 2006 and runs the company overall. He is a charter member of TiE and on the governing council of IAMAI, and received IIT Kanpur's Distinguished Alumnus Award in 2022."
+    },
+    {
+     "name": "Rajnish Kumar",
+     "role": "Director & Group Co-CEO",
+     "since": "Co-founder; on the board since April 2010",
+     "family": false,
+     "relation": "Co-founder; not related to other directors",
+     "stake": "4.61% (June 2026 shareholding pattern)",
+     "bio": "Holds a B.Tech in computer science from IIT Kanpur and worked as a software development engineer at Amadeus in France. He co-founded ixigo and leads product, technology, marketing, research and AI work, and he built the ixigo-trains app. The board lists him as a non-executive director even though he is Group Co-CEO. He received IIT Kanpur's Distinguished Alumnus Award in 2023."
+    },
+    {
+     "name": "Saurabh Devendra Singh",
+     "role": "Group Chief Financial Officer",
+     "since": "Joined October 2023; CFO since December 2023",
+     "family": false,
+     "bio": "Holds a B.Tech in chemical engineering from IIT Delhi and a PGDM from IIM Ahmedabad. Before ixigo he was Chief Business Officer, India, for the research services division of Sanford C. Bernstein. He handles finance, investor relations and strategic planning."
+    },
+    {
+     "name": "Dinesh Kumar Kotha",
+     "role": "CEO, ixigo Trains and ConfirmTkt",
+     "since": "Co-founded ConfirmTkt (service counted from June 2015); CEO of the trains business since January 2024",
+     "family": false,
+     "stake": "1.70% (June 2026 shareholding pattern)",
+     "bio": "Holds a B.Tech (Hons) in electronics and communication from NIT Jamshedpur and worked at o9 Solutions before starting ConfirmTkt, which ixigo bought and later merged into itself. He runs the trains business, including business development and hiring."
+    },
+    {
+     "name": "Sripad Vaidya",
+     "role": "COO, ixigo Trains and ConfirmTkt",
+     "since": "Co-founded ConfirmTkt (service counted from June 2015); COO since January 2024",
+     "family": false,
+     "stake": "1.64% (June 2026 shareholding pattern)",
+     "bio": "Holds a B.Tech in computer science from SASTRA University, Thanjavur. He co-founded ConfirmTkt with Dinesh Kumar Kotha and now runs day-to-day operations, support and finance for the trains business, and new revenue lines."
+    },
+    {
+     "name": "Lenin Koduru",
+     "role": "CEO, AbhiBus (ixigo bus business)",
+     "since": "August 2021",
+     "family": false,
+     "bio": "Holds an engineering degree in electronics and instrumentation from Bharathiar University. He worked at Impulse Systems, Unisoft (India), Inatech InfoSolutions and Buzznet in Malaysia before joining ixigo in August 2021. He leads technology and growth for the bus business, which grew bookings 39% in the latest quarter."
+    },
+    {
+     "name": "Nitin Gurha",
+     "role": "Senior Vice President – Business (flights and hotels)",
+     "since": "First joined April 2008; rejoined November 2020",
+     "family": false,
+     "bio": "Holds a BSc from the University of Delhi and a PGDBM from the Northern Institute for Integrated Learning in Management. He worked at Amadeus India, Kale Consultants and Yatra Online (as vice president). He was at ixigo from 2008 to 2015 and rejoined in 2020 to run the flights and hotels businesses and partnerships."
+    }
+   ],
+   "changes": "No changes in directors, KMP or senior management in FY26 or since the annual report. Key managers were paid ₹42cr in FY26, mostly in shares.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31755_IXIGO_2025_2026_A_12895424_07092026184811.pdf",
+    "https://nsearchives.nseindia.com/content/ipo/RHP_IXIGO.zip",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1695664_17072026070239_WEB.xml"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Yatra Online",
+   "sector": "Travel Services",
+   "style": "Promoter-owned, professionally run",
+   "styleNote": "The promoter is Yatra's own Nasdaq-listed parent, Yatra Online Inc., which holds 62.65% through THCL Travel Holding Cyprus and Asia Consolidated DMC and is being merged with the Indian company. Co-founder Dhruv Shringi is Executive Chairperson and whole-time director, and a hired CEO, Siddhartha Gupta (ex-Mercer India), has run the business since November 2025. There is no family control, and no directors are related to each other.",
+   "people": [
+    {
+     "name": "Dhruv Shringi",
+     "role": "Co-founder, Executive Chairperson & Whole-time Director",
+     "since": "Co-founder",
+     "family": false,
+     "relation": "Co-founder; not related to other directors",
+     "bio": "A chartered accountant with an MBA from INSEAD. Before founding Yatra he worked at Ford Motor Company, Arthur Andersen and ebookers. He co-founded Yatra; since a hired CEO joined in November 2025 he has been Executive Chairperson and the company's only executive director."
+    },
+    {
+     "name": "Siddhartha Gupta",
+     "role": "Chief Executive Officer",
+     "since": "November 2025",
+     "family": false,
+     "bio": "Holds a postgraduate diploma in business management from Xavier Institute of Management. He was previously President of Mercer India and CEO of Mercer Mettl. He joined Yatra as CEO on 25 November 2025."
+    },
+    {
+     "name": "Manish Amin",
+     "role": "Co-founder, Chief Information and Technology Officer",
+     "since": "Co-founder",
+     "family": false,
+     "bio": "Holds a General Certificate in Business Studies from the UK's Business Technician Education Council. Before Yatra he worked at ebookers and Flightbookers. He co-founded Yatra and leads its technology."
+    },
+    {
+     "name": "Sabina Chopra",
+     "role": "Co-founder, COO – Corporate Travel & Head Industry Relations",
+     "since": "Co-founder",
+     "family": false,
+     "bio": "Has over 32 years in travel and hospitality. Before joining Yatra she headed the India operations of ebookers. She runs the corporate travel business and its relationships with airlines and hotels."
+    },
+    {
+     "name": "Anuj Kumar Sethi",
+     "role": "Chief Financial Officer",
+     "since": "April 2025 (interim at first); with Yatra over a decade",
+     "family": false,
+     "bio": "A cost accountant with more than 25 years in the travel industry. He spent over a decade in senior finance and accounts roles at Yatra before becoming CFO in April 2025, when Group CFO Rohan Mittal left."
+    }
+   ],
+   "changes": "Group CFO Rohan Mittal resigned in April 2025; Anuj Kumar Sethi took over. Siddhartha Gupta joined as CEO in November 2025. Company Secretary Darpan Batra left in September 2025; Jyoti Chawla replaced him in December 2025. Roshan Mendis joined the board as a non-executive director in September 2025. No executive changes since the FY26 annual report.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30523_YATRA_2025_2026_A_8381336_24082026113054.pdf",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1695600_17072026062339_WEB.xml"
    ],
    "updatedOn": "2026-09-29"
   },

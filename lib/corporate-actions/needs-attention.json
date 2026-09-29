@@ -272,5 +272,12 @@
     "subject": "Promoter family left the board",
     "why": "The promoter family stepped off the board in June 2026 (found while researching management). Check the filings for why and who runs it now, mention it in the company section if the note does not, and weigh it in the call.",
     "addedOn": "2026-09-30"
+  },
+  {
+    "company": "KRBL",
+    "sector": "Food Products",
+    "subject": "Governance: auditor qualification",
+    "why": "The FY26 annual report says the auditor qualified the accounts over an Enforcement Directorate money-laundering case against a joint MD (found while researching management). Confirm from the report, add it to the company section and risks if missing, and weigh it in the call.",
+    "addedOn": "2026-09-30"
   }
 ]
