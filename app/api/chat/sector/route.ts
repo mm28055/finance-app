@@ -4,6 +4,9 @@ import { geminiPro } from '@/lib/gemini';
 import { sectorCompanyWhere } from '@/lib/portfolio';
 import { ALL_SECTORS, researchContext, sectorsInQuestion } from '@/lib/chat-context';
 
+// Answers over a whole sector (or every sector) take 30–60s on Gemini Pro.
+export const maxDuration = 300;
+
 export async function POST(req: NextRequest) {
     try {
         const { sector, message } = await req.json();
