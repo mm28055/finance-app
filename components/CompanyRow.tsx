@@ -670,6 +670,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                     {/* items-start so the cards keep their natural height instead
                                         of stretching to the analysis panel's height. */}
                                     <div className="flex-1 flex flex-col gap-4 items-stretch self-start w-full">
+                                        <CompanyNumbers companyId={company.id} />
                                         <FinancialMatrix
                                             financials={selectedData?.financials || effective.financials}
                                             quarterName={selectedData?.quarter || effective.summary?.quarter}
@@ -681,7 +682,6 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                         {((effective.checkpoints?.length ?? 0) > 0 || (effective.projects?.length ?? 0) > 0 || !!effective.capacity) && (
                                             <CompanyCheckpoints checkpoints={effective.checkpoints || []} projects={effective.projects || []} capacity={effective.capacity} />
                                         )}
-                                        <CompanyNumbers companyId={company.id} />
                                         {effective.holding?.rows && effective.holding.rows.length > 0 && (
                                             <HoldingCard holding={effective.holding} companyId={company.id} />
                                         )}
