@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { geminiPro } from '@/lib/gemini';
 import { sectorCompanyWhere } from '@/lib/portfolio';
-import { ALL_SECTORS, researchContext, sectorsInQuestion } from '@/lib/chat-context';
+import { ALL_SECTORS, researchContext, sectorsInQuestion, partsForQuestion } from '@/lib/chat-context';
 
 // Answers over a whole sector (or every sector) take 30–60s on Gemini Pro.
 export const maxDuration = 300;
@@ -15,13 +15,25 @@ export async function POST(req: NextRequest) {
             return NextResponse.json({ error: "Sector and Message required" }, { status: 400 });
         }
 
-        // Across all sectors: the dashboard's own research (notes, calls, capacity, projects,
-        // expectations, management, holders), for the sectors the question names or the whole book.
-        if (sector === ALL_SECTORS) {
-            const all = (await prisma.company.findMany({ where: { isVisible: true, status: 'ACTIVE' }, select: { sector: true }, distinct: ['sector'] })).map(c => c.sector);
-            const named = sectorsInQuestion(message, all);
-            const research = await researchContext(named.length ? { sectors: named } : {}, !named.length || named.length > 3);
-            const prompt = `You are the owner's research assistant for his Indian listed-company dashboard. Answer from the dashboard's own research below — it is checked and current (notes as of Q1 FY27; prices, shareholding and expectations updated daily). ${named.length ? `The question is about: ${named.join(', ')}.` : 'This covers every sector (shortened fields).'}
+        // Questions about the dashboard's own research (capacity, projects, capex, management, holders,
+        // expectations, calls, valuation) are answered from that research alone: it is compact and
+        // checked, and transcript passages would crowd it out. "All sectors" always works this way.
+        const RESEARCH_Q = /capacit|capex|project|plant|expan|utili[sz]|debottleneck|greenfield|brownfield|management|promoter|founder|family|\bceo\b|\bcfo\b|\bmd\b|executive|stake|holder|pledge|\bfii\b|\bdii\b|expectation|checkpoint|watch|\bcall\b|\bowns?\b|ownership|\bfollow\b|\bavoid\b|price check|valuation|p\/e|\broce\b/i;
+        if (sector === ALL_SECTORS || RESEARCH_Q.test(message)) {
+            let scope: { sectors?: string[]; ids?: string[] } = {};
+            let about = 'This covers every sector (shortened fields).';
+            let compact = true;
+            if (sector === ALL_SECTORS) {
+                const all = (await prisma.company.findMany({ where: { isVisible: true, status: 'ACTIVE' }, select: { sector: true }, distinct: ['sector'] })).map(c => c.sector);
+                const named = sectorsInQuestion(message, all);
+                if (named.length) { scope = { sectors: named }; about = `The question is about: ${named.join(', ')}.`; compact = named.length > 3; }
+            } else {
+                scope = { ids: (await prisma.company.findMany({ where: sectorCompanyWhere(sector), select: { id: true } })).map(c => c.id) };
+                about = `The question is about the ${sector} sector; every company in it is below.`;
+                compact = false;
+            }
+            const research = await researchContext(scope, compact, partsForQuestion(message));
+            const prompt = `You are the owner's research assistant for his Indian listed-company dashboard. Answer from the dashboard's own research below — it is checked and current (notes as of Q1 FY27; prices, shareholding and expectations updated daily). ${about}
 
 Each company block has: its call (own / follow / wait / pass / avoid) and live price check (Fits / Full / Stretched), market value, P/E, last-12-month sales, ROCE and latest shareholding; the note's view and watch item; capacity today, utilisation and capex; projects (status, start, capacity added, sales added); expectations and whether they were met; management style and executives with their stakes.
 
@@ -30,9 +42,10 @@ ${research.text}
 QUESTION: "${message}"
 
 INSTRUCTIONS:
-1. Use only the data above. Compare across companies where the question asks; compute ratios (e.g. capacity added vs 12-month sales) and say when a figure is your own arithmetic.
-2. Be concise: a short answer first, then a table or bullets. Bold company names and key numbers. Plain English, ₹ and crore.
-3. If the data does not cover something, say so plainly (the call transcripts themselves are in each sector's own chat).`;
+1. Go through EVERY company block above before answering; do not stop at the first few matches. Use only this data.
+2. For capacity questions, compare what a project or plan ADDS (capacity, or the sales it can make at full use) with the company's 12-month sales; capex spend alone is a weaker signal — show it separately if useful. Also count capacity already built but unused ("at full use" sales above the 12-month sales), and where a project gives units plus a price or a first-order value, estimate its sales at full use. Say when a figure is your own arithmetic.
+3. Be concise: a short answer first, then a table or bullets ranked by the measure asked. Bold company names and key numbers. Plain English, ₹ and crore.
+4. If the data does not cover something, say so plainly.`;
             const result = await geminiPro.generateContent(prompt);
             return NextResponse.json({ content: result.response.text() });
         }
@@ -127,7 +140,7 @@ ${content}
 
         try {
             const { searchSectorTranscriptsBalanced } = await import('@/lib/rag');
-            const ragResults = await searchSectorTranscriptsBalanced(sector, message, 125, requestedQuarter); // Pass quarter for strict filtering
+            const ragResults = await searchSectorTranscriptsBalanced(sector, message, 300, requestedQuarter); // Pass quarter for strict filtering
             totalChunksFound = ragResults.length;
 
             if (ragResults.length > 0) {

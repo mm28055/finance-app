@@ -36,7 +36,22 @@ export function sectorsInQuestion(message: string, sectors: string[]): string[] 
  * The research block for a set of companies. `compact` drops the longer fields so the whole
  * book (~650 companies) stays a reasonable prompt.
  */
-export async function researchContext(where: { sectors?: string[]; ids?: string[] }, compact: boolean): Promise<{ text: string; count: number }> {
+export type Part = 'view' | 'capacity' | 'projects' | 'expectations' | 'management';
+const ALL_PARTS: Part[] = ['view', 'capacity', 'projects', 'expectations', 'management'];
+
+/** Which parts of the research a question needs; none matched means all of them. */
+export function partsForQuestion(message: string): Part[] {
+    const q = message.toLowerCase();
+    const parts = new Set<Part>();
+    if (/capacit|capex|project|plant|expan|utili[sz]|debottleneck|greenfield|brownfield|factory|\bline\b/.test(q)) { parts.add('capacity'); parts.add('projects'); }
+    if (/management|promoter|founder|family|\bceo\b|\bcfo\b|\bmd\b|executive|stake|\bowns?\b|ownership|holder|pledge|\bfii\b|\bdii\b/.test(q)) parts.add('management');
+    if (/expectation|checkpoint|watch|guidance|target/.test(q)) { parts.add('expectations'); parts.add('view'); }
+    if (/\bcall\b|\bown\b|\bfollow\b|\bavoid\b|price check|valuation|p\/e|\broce\b|thesis|\bview\b/.test(q)) parts.add('view');
+    return parts.size ? [...parts] : ALL_PARTS;
+}
+
+export async function researchContext(where: { sectors?: string[]; ids?: string[] }, compact: boolean, parts: Part[] = ALL_PARTS): Promise<{ text: string; count: number }> {
+    const want = new Set(parts);
     const companies = await prisma.company.findMany({
         where: { isVisible: true, status: 'ACTIVE', ...(where.sectors ? { sector: { in: where.sectors } } : {}), ...(where.ids ? { id: { in: where.ids } } : {}) },
         select: { id: true, name: true, sector: true, marketCap: true, peRatio: true, ttmSales: true, roce: true },
@@ -64,11 +79,11 @@ export async function researchContext(where: { sectors?: string[]; ids?: string[
             `${mcap ? ` | mcap ₹${Math.round(mcap).toLocaleString('en-IN')}cr` : ''}${pe ? ` | P/E ${pe}` : ''}` +
             `${sales ? ` | sales 12m ₹${Math.round(sales).toLocaleString('en-IN')}cr` : ''}${roce ? ` | ROCE ${roce}%` : ''}` +
             `${h ? ` | holders ${h.period}: promoter ${h.promoter ?? '–'}%, FII ${h.fii ?? '–'}%, DII ${h.dii ?? '–'}%` : ''}`);
-        if (v) lines.push(`View: ${cut(v.view, compact ? 170 : 700)}`, `Watch: ${cut(v.watch, compact ? 100 : 400)}`);
+        if (v && want.has('view')) lines.push(`View: ${cut(v.view, compact ? 170 : 700)}`, `Watch: ${cut(v.watch, compact ? 100 : 400)}`);
         const cap = capacityFor(c.name);
-        if (cap) lines.push(`Capacity: ${[cap.today && `today ${cut(cap.today, compact ? 90 : 300)}`, cap.utilisation && `running at ${cut(cap.utilisation, compact ? 70 : 120)}`,
+        if (cap && want.has('capacity')) lines.push(`Capacity: ${[cap.today && `today ${cut(cap.today, compact ? 90 : 300)}`, cap.utilisation && `running at ${cut(cap.utilisation, compact ? 70 : 120)}`,
             !compact && cap.fullUse && `full use ${cut(cap.fullUse, 160)}`, !compact && cap.capexStatus && `capex ${cut(cap.capexStatus, 260)}`].filter(Boolean).join('; ')}`);
-        for (const p of PROJECTS.filter(p => lc(p.company) === key).slice(0, compact ? 2 : 5)) {
+        for (const p of want.has('projects') ? PROJECTS.filter(p => lc(p.company) === key).slice(0, compact ? 2 : 5) : []) {
             lines.push(compact
                 ? `Project: ${p.name} [${PROJECT_STATUS_LABEL[p.status]}${p.expectedStart ? `, ${p.expectedStart}` : ''}]${p.capacityAdd ? ` adds ${cut(p.capacityAdd, 80)}` : p.adds ? ` sales ${cut(p.adds, 80)}` : ''}`
                 : `Project: ${p.name} [${PROJECT_STATUS_LABEL[p.status]}${p.expectedStart ? `, start ${p.expectedStart}` : ''}]` +
@@ -77,9 +92,9 @@ export async function researchContext(where: { sectors?: string[]; ids?: string[
         }
         const cps = CHECKPOINTS.filter(x => lc(x.company) === key && !x.project);
         const shown = compact ? cps.filter(x => x.status !== 'pending') : cps;
-        for (const x of shown) lines.push(`Expectation: ${cut(x.text, 140)} [${x.status}, ${x.due}${x.actual ? `, actual ${x.actual}` : ''}]`);
+        for (const x of want.has('expectations') ? shown : []) lines.push(`Expectation: ${cut(x.text, 140)} [${x.status}, ${x.due}${x.actual ? `, actual ${x.actual}` : ''}]`);
         const m = managementFor(c.name);
-        if (m) {
+        if (m && want.has('management')) {
             lines.push(compact ? `Management: ${m.style}` : `Management: ${m.style}. ${cut(m.styleNote, 400)}`);
             const people = m.people.slice(0, compact ? 1 : 5).map(p => `${p.name} (${p.role}${p.family ? ', promoter family' : ''}${p.stake ? `, owns ${cut(p.stake, 50)}` : ''})`);
             lines.push(`Executives: ${people.join('; ')}${!compact && m.changes ? `. Recent change: ${cut(m.changes, 160)}` : ''}`);
