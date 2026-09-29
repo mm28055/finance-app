@@ -203,9 +203,15 @@ export function SectorChat() {
                         <Bot className="w-10 h-10 mx-auto mb-3 text-gray-300" />
                         <p className="text-sm text-gray-500">Ask about <strong className="text-[#6B9FCC]">{activeSector}</strong></p>
                         <div className="mt-3 space-y-1 text-[11px] text-gray-400">
-                            <p>"Compare revenue growth across top players"</p>
-                            <p>"Who has the strongest margin guidance?"</p>
-                            <p>"What are the key risks mentioned?"</p>
+                            {activeSector === 'All sectors' ? (<>
+                                <p>"Which Auto companies are adding more capacity than their sales?"</p>
+                                <p>"Own-rated companies with a plant starting in the next two quarters"</p>
+                                <p>"Promoter-run pharma companies with pledged shares"</p>
+                            </>) : (<>
+                                <p>"Compare revenue growth across top players"</p>
+                                <p>"Who has the strongest margin guidance?"</p>
+                                <p>"Which projects start next quarter, and against how much capacity?"</p>
+                            </>)}
                         </div>
                     </div>
                 )}

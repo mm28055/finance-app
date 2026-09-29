@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { geminiPro } from '@/lib/gemini';
 import { sectorCompanyWhere } from '@/lib/portfolio';
+import { ALL_SECTORS, researchContext, sectorsInQuestion } from '@/lib/chat-context';
 
 export async function POST(req: NextRequest) {
     try {
@@ -9,6 +10,28 @@ export async function POST(req: NextRequest) {
 
         if (!sector || !message) {
             return NextResponse.json({ error: "Sector and Message required" }, { status: 400 });
+        }
+
+        // Across all sectors: the dashboard's own research (notes, calls, capacity, projects,
+        // expectations, management, holders), for the sectors the question names or the whole book.
+        if (sector === ALL_SECTORS) {
+            const all = (await prisma.company.findMany({ where: { isVisible: true, status: 'ACTIVE' }, select: { sector: true }, distinct: ['sector'] })).map(c => c.sector);
+            const named = sectorsInQuestion(message, all);
+            const research = await researchContext(named.length ? { sectors: named } : {}, !named.length || named.length > 3);
+            const prompt = `You are the owner's research assistant for his Indian listed-company dashboard. Answer from the dashboard's own research below — it is checked and current (notes as of Q1 FY27; prices, shareholding and expectations updated daily). ${named.length ? `The question is about: ${named.join(', ')}.` : 'This covers every sector (shortened fields).'}
+
+Each company block has: its call (own / follow / wait / pass / avoid) and live price check (Fits / Full / Stretched), market value, P/E, last-12-month sales, ROCE and latest shareholding; the note's view and watch item; capacity today, utilisation and capex; projects (status, start, capacity added, sales added); expectations and whether they were met; management style and executives with their stakes.
+
+${research.text}
+
+QUESTION: "${message}"
+
+INSTRUCTIONS:
+1. Use only the data above. Compare across companies where the question asks; compute ratios (e.g. capacity added vs 12-month sales) and say when a figure is your own arithmetic.
+2. Be concise: a short answer first, then a table or bullets. Bold company names and key numbers. Plain English, ₹ and crore.
+3. If the data does not cover something, say so plainly (the call transcripts themselves are in each sector's own chat).`;
+            const result = await geminiPro.generateContent(prompt);
+            return NextResponse.json({ content: result.response.text() });
         }
 
         // Fetch companies in this sector with their analyses
@@ -86,6 +109,14 @@ ${content}
 `;
         }).join('\n');
 
+        // The dashboard's own research for this sector (calls, capacity, projects, expectations, management).
+        let research = '';
+        try {
+            research = (await researchContext({ ids: companies.map(c => c.id) }, false)).text;
+        } catch (e) {
+            console.error('Research context failed:', e);
+        }
+
         // --- RAG INTEGRATION START ---
         let ragContext = "";
         let chunkCoverage: Record<string, number> = {};
@@ -124,7 +155,10 @@ Your audience is a **medium-to-long-term investor** (1-3 year holding period). A
 - **Investment Thesis Validation**: Is this quarter supportive or breaking of the investment thesis?
 - **Key Risk/Reward Changes**: Has the risk/reward shifted?
 
-You have access to the following concall analysis summaries AND specific raw transcript excerpts:
+You have access to the dashboard's own research for each company (its call and live price check, the note's view, capacity, projects, expectations, management and shareholding), the concall analysis summaries AND specific raw transcript excerpts:
+
+=== DASHBOARD RESEARCH ===
+${research}
 
 ${context}
 ${ragContext}
