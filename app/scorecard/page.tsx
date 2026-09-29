@@ -1,5 +1,5 @@
 import { CHECKPOINTS, dueRank, formatTarget, type Checkpoint } from "@/lib/checkpoints";
-import { STATUS_STYLE } from "@/components/CompanyCheckpoints";
+import { STATUS_STYLE } from "@/components/checkpoint-status";
 
 export const metadata = { title: "Scorecard · Manish Dashboard" };
 

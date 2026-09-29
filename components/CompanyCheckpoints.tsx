@@ -1,15 +1,7 @@
 "use client";
 import React from 'react';
-import { CheckCircle2, XCircle, CircleDot, Clock, MinusCircle } from 'lucide-react';
-import { type Checkpoint, type CheckpointStatus, dueRank, formatTarget } from '@/lib/checkpoints/types';
-
-export const STATUS_STYLE: Record<CheckpointStatus, { label: string; icon: React.ElementType; cls: string }> = {
-    met: { label: 'Met', icon: CheckCircle2, cls: 'text-emerald-600' },
-    partly: { label: 'Partly', icon: CircleDot, cls: 'text-amber-500' },
-    missed: { label: 'Missed', icon: XCircle, cls: 'text-rose-500' },
-    pending: { label: 'Pending', icon: Clock, cls: 'text-gray-400' },
-    dropped: { label: 'Dropped', icon: MinusCircle, cls: 'text-gray-300' },
-};
+import { type Checkpoint, dueRank, formatTarget } from '@/lib/checkpoints/types';
+import { STATUS_STYLE } from './checkpoint-status';
 
 // "What we were watching": the note's expectations for this company, each settled
 // when its quarter's results arrive (numbers by the daily job, the rest by the weekly review).
