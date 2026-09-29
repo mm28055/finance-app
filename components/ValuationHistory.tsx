@@ -27,7 +27,7 @@ const fmt = (v: number, metric: Metric) =>
     metric === 'price' ? `₹${v >= 1000 ? Math.round(v).toLocaleString('en-IN') : v.toFixed(v >= 100 ? 0 : 1)}` : `${v.toFixed(1)}x`;
 const monthYear = (d: string) => new Date(d).toLocaleDateString('en-IN', { month: 'short', year: '2-digit' });
 
-export function ValuationHistory({ companyId }: { companyId: string }) {
+export function ValuationHistory({ companyId, embedded = false }: { companyId: string; embedded?: boolean }) {
     const [metric, setMetric] = React.useState<Metric>('price');
     const [years, setYears] = React.useState(10);
     const [cache, setCache] = React.useState<Record<string, Point[] | 'error' | undefined>>({});
@@ -70,9 +70,9 @@ export function ValuationHistory({ companyId }: { companyId: string }) {
     }
 
     return (
-        <div className="bg-white border border-gray-200 rounded-lg p-3">
+        <div className={embedded ? '' : 'bg-white border border-gray-200 rounded-lg p-3'}>
             <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                <div className="text-[10px] font-semibold text-gray-600 uppercase tracking-wide">Price & valuation history</div>
+                <div className="text-[10px] font-semibold text-gray-600 uppercase tracking-wide">{embedded ? '' : 'Price & valuation history'}</div>
                 <div className="flex gap-0.5 bg-gray-100 p-0.5 rounded-md text-[10px] font-medium">
                     {RANGES.map(r => (
                         <button key={r.label} onClick={() => setYears(r.years)}

@@ -19,7 +19,7 @@ import { COLOR_THEMES, ColorThemeKey, CONVICTION_CONFIG, ConvictionLevel } from 
 import { TONE_STYLE, CompanyFilings } from './SectorFilings';
 import { CompanyTags } from './CompanyTags';
 import { HoldingCard } from './HoldingCard';
-import { ValuationHistory } from './ValuationHistory';
+import { CompanyNumbers } from './CompanyNumbers';
 
 const CONVICTION_CYCLE: (ConvictionLevel | null)[] = [null, 'HIGH', 'MEDIUM', 'LOW'];
 
@@ -676,7 +676,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                             const trend = effective.trend && effective.trend.length >= 2 ? effective.trend : effective.history;
                                             return trend && trend.length >= 2 ? <FinancialTrendChart history={trend} /> : null;
                                         })()}
-                                        <ValuationHistory companyId={company.id} />
+                                        <CompanyNumbers companyId={company.id} />
                                         {effective.holding?.rows && effective.holding.rows.length > 0 && (
                                             <HoldingCard holding={effective.holding} />
                                         )}
