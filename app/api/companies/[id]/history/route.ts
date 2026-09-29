@@ -55,7 +55,7 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
             consolidated,
             points,
             median: medianRaw === null || medianRaw === undefined ? null : Number(medianRaw),
-        }, { headers: { 'Cache-Control': 'private, max-age=3600' } });
+        }, { headers: { 'Cache-Control': 'private, max-age=600' } });
     } catch {
         return NextResponse.json({ error: 'Price history unavailable' }, { status: 502 });
     }

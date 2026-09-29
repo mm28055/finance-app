@@ -100,7 +100,7 @@ type Row = { label: string; src: string; expandable: boolean; values: (string | 
             empty,
             tables,
             growth: screenerGrowth(html),
-        }, { headers: { 'Cache-Control': 'private, max-age=3600' } });
+        }, { headers: { 'Cache-Control': 'private, max-age=600' } });
     } catch {
         return NextResponse.json({ error: 'Financials unavailable' }, { status: 502 });
     }

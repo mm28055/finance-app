@@ -6,6 +6,9 @@ import { ValuationHistory } from './ValuationHistory';
 // P&L, balance sheet, cash flow and working-capital ratios — all read from the
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
+// Bump when the shape of /financials changes, so browsers never reuse an older copy.
+const DATA_VERSION = 3;
+
 type Tab = 'history' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios';
 type Row = { label: string; src: string; expandable: boolean; values: (string | null)[] };
 type Table = { columns: string[]; raw: (string | null)[]; rows: Row[] };
@@ -123,7 +126,7 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
     React.useEffect(() => {
         if (tab === 'history' || data[key] !== undefined) return;
         let alive = true;
-        fetch(`/api/companies/${companyId}/financials${view ? `?view=${view}` : ''}`)
+        fetch(`/api/companies/${companyId}/financials?v=${DATA_VERSION}${view ? `&view=${view}` : ''}`)
             .then(r => (r.ok ? r.json() : Promise.reject()))
             .then((d: Financials) => { if (alive) { setData(m => ({ ...m, [key]: d, [d.view]: d })); if (!view) setView(d.view); } })
             .catch(() => { if (alive) setData(m => ({ ...m, [key]: 'error' })); });

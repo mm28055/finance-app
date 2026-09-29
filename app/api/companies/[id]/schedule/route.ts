@@ -23,7 +23,7 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
         const url = `https://www.screener.in/api/company/${sid}/schedules/?parent=${encodeURIComponent(parent)}&section=${section}${page.view === 'consolidated' ? '&consolidated=' : ''}`;
         const res = await cachedFetch(86400)(url);
         if (!res.ok) return NextResponse.json({ error: 'Breakdown unavailable' }, { status: 502 });
-        return NextResponse.json(await res.json(), { headers: { 'Cache-Control': 'private, max-age=3600' } });
+        return NextResponse.json(await res.json(), { headers: { 'Cache-Control': 'private, max-age=600' } });
     } catch {
         return NextResponse.json({ error: 'Breakdown unavailable' }, { status: 502 });
     }
