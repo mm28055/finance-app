@@ -1,22 +1,22 @@
 {
- "updated": "2026-09-28",
+ "updated": "2026-09-29",
  "companies": [
   {
    "name": "Aartech Solonics",
    "sector": "Aerospace defence",
    "ticker": "AARTECH",
    "isin": "INE01C001026",
-   "price": 51.2,
-   "marketCap": 160,
-   "peRatio": 30
+   "price": 50.01,
+   "marketCap": 158.88,
+   "peRatio": 29.69
   },
   {
    "name": "Aequs",
    "sector": "Aerospace defence",
    "ticker": "AEQUS",
    "isin": "INE947N01017",
-   "price": 260,
-   "marketCap": 17433,
+   "price": 271.63,
+   "marketCap": 18217.29,
    "peRatio": null
   },
   {
@@ -24,386 +24,386 @@
    "sector": "Aerospace defence",
    "ticker": "Apollo Micro Systems",
    "isin": "INE713T01028",
-   "price": 408,
-   "marketCap": 15176,
-   "peRatio": 125
+   "price": 402.6,
+   "marketCap": 14385.12,
+   "peRatio": 118.48
   },
   {
    "name": "Astra Microwave Products",
    "sector": "Aerospace defence",
    "ticker": "ASTRAMICRO",
    "isin": "INE386C01029",
-   "price": 1590,
-   "marketCap": 15083,
-   "peRatio": 79.8
+   "price": 1652.6,
+   "marketCap": 15690.61,
+   "peRatio": 83.02
   },
   {
    "name": "Avantel",
    "sector": "Aerospace defence",
    "ticker": "AVANTEL",
    "isin": "INE005B01027",
-   "price": 151,
-   "marketCap": 4023,
-   "peRatio": 234
+   "price": 149.22,
+   "marketCap": 3964.94,
+   "peRatio": 230.63
   },
   {
    "name": "AXISCADES Technologies",
    "sector": "Aerospace defence",
    "ticker": "AXISCADES",
    "isin": "INE555B01013",
-   "price": 1880,
-   "marketCap": 7989,
-   "peRatio": 244
+   "price": 2067.4,
+   "marketCap": 8792.86,
+   "peRatio": 268.55
   },
   {
    "name": "Azad Engineering",
    "sector": "Aerospace defence",
    "ticker": "Azad Engineering",
    "isin": "INE02IJ01035",
-   "price": 2723,
-   "marketCap": 17576,
-   "peRatio": 126
+   "price": 2914.2,
+   "marketCap": 18820.41,
+   "peRatio": 134.92
   },
   {
    "name": "Data Patterns (India)",
    "sector": "Aerospace defence",
    "ticker": "DATAPATTNS",
    "isin": "INE0IX101010",
-   "price": 4301,
-   "marketCap": 24080,
-   "peRatio": 89.1
+   "price": 4221.6,
+   "marketCap": 23634.19,
+   "peRatio": 87.45
   },
   {
    "name": "Digilogic Systems",
    "sector": "Aerospace defence",
    "ticker": "DIGILOGIC",
    "isin": "INE1OOT01028",
-   "price": 179,
-   "marketCap": 519,
-   "peRatio": 52.5
+   "price": 188,
+   "marketCap": 545,
+   "peRatio": 55.2
   },
   {
    "name": "ideaForge Technology",
    "sector": "Aerospace defence",
    "ticker": "IDEAFORGE",
    "isin": "INE349Y01013",
-   "price": 716,
-   "marketCap": 3557,
-   "peRatio": 905
+   "price": 719.7,
+   "marketCap": 3575.87,
+   "peRatio": 909.8
   },
   {
    "name": "Krishna Defence & Allied Industries",
    "sector": "Aerospace defence",
    "ticker": "KRISHNADEF",
    "isin": "INE0J5601015",
-   "price": 996,
-   "marketCap": 1488,
-   "peRatio": 34.4
+   "price": 1013,
+   "marketCap": 1512.75,
+   "peRatio": 34.97
   },
   {
    "name": "Mishra Dhatu Nigam (MIDHANI)",
    "sector": "Aerospace defence",
    "ticker": "MIDHANI",
    "isin": "INE099Z01011",
-   "price": 416,
-   "marketCap": 7798,
-   "peRatio": 57.8
+   "price": 419.1,
+   "marketCap": 7851.42,
+   "peRatio": 58.13
   },
   {
    "name": "MTAR Technologies",
    "sector": "Aerospace defence",
    "ticker": "MTAR Technologies",
    "isin": "INE864I01014",
-   "price": 7072,
-   "marketCap": 21754,
-   "peRatio": 160
+   "price": 7426,
+   "marketCap": 22842.07,
+   "peRatio": 167.31
   },
   {
    "name": "Raymond",
    "sector": "Aerospace defence",
    "ticker": "Raymond",
    "isin": "INE301A01014",
-   "price": 1180,
-   "marketCap": 7841,
-   "peRatio": 46.6
+   "price": 1185.75,
+   "marketCap": 7893.98,
+   "peRatio": 46.98
   },
   {
    "name": "Rossell Techsys",
    "sector": "Aerospace defence",
    "ticker": "Rossell Techsys",
    "isin": "INE0OJW01016",
-   "price": 1399,
-   "marketCap": 5284,
-   "peRatio": 200
+   "price": 1481.7,
+   "marketCap": 5585.49,
+   "peRatio": 211.41
   },
   {
    "name": "Sansera Engineering",
    "sector": "Aerospace defence",
    "ticker": "Sansera Engineering",
    "isin": "INE953O01021",
-   "price": 4457,
-   "marketCap": 27802,
-   "peRatio": 74.6
+   "price": 4362.2,
+   "marketCap": 27190.49,
+   "peRatio": 72.96
   },
   {
    "name": "Unimech Aerospace",
    "sector": "Aerospace defence",
    "ticker": "Unimech Aerospace",
    "isin": "INE0U3I01011",
-   "price": 1616,
-   "marketCap": 8214,
-   "peRatio": 114
+   "price": 1675,
+   "marketCap": 8518.53,
+   "peRatio": 118.23
   },
   {
    "name": "Zen Technologies",
    "sector": "Aerospace defence",
    "ticker": "Zen Technologies",
    "isin": "INE251B01027",
-   "price": 1643,
-   "marketCap": 14845,
-   "peRatio": 81.7
+   "price": 1619.8,
+   "marketCap": 14625.23,
+   "peRatio": 80.49
   },
   {
    "name": "Chambal Fert & Chem",
    "sector": "Agrochemical & Fertilizers",
    "ticker": "Chambal Fert & Chem",
    "isin": "INE085A01013",
-   "price": 418,
-   "marketCap": 16769,
-   "peRatio": 8.7
+   "price": 413.55,
+   "marketCap": 16568.98,
+   "peRatio": 8.6
   },
   {
    "name": "Dhanuka Agritech",
    "sector": "Agrochemical & Fertilizers",
    "ticker": "Dhanuka Agritech",
    "isin": "INE435G01025",
-   "price": 954,
-   "marketCap": 4245,
-   "peRatio": 14.6
+   "price": 930.55,
+   "marketCap": 4194.76,
+   "peRatio": 14.43
   },
   {
    "name": "Dharmaj Crop Guard",
    "sector": "Agrochemical & Fertilizers",
    "ticker": "Dharmaj Crop Guard",
    "isin": "INE00OQ01016",
-   "price": 291,
-   "marketCap": 982,
-   "peRatio": 16.3
+   "price": 278.75,
+   "marketCap": 942.1,
+   "peRatio": 15.64
   },
   {
    "name": "GSFC",
    "sector": "Agrochemical & Fertilizers",
    "ticker": "GSFC",
    "isin": "INE026A01025",
-   "price": 153,
-   "marketCap": 6100,
-   "peRatio": 8.81
+   "price": 151.65,
+   "marketCap": 6042.91,
+   "peRatio": 8.73
   },
   {
    "name": "India Pesticides",
    "sector": "Agrochemical & Fertilizers",
    "ticker": "India Pesticides",
    "isin": "INE0D6701023",
-   "price": 132,
-   "marketCap": 1516,
-   "peRatio": 14.1
+   "price": 133.12,
+   "marketCap": 1533.06,
+   "peRatio": 14.26
   },
   {
    "name": "Insecticides (India)",
    "sector": "Agrochemical & Fertilizers",
    "ticker": "INSECTICID",
    "isin": "INE070I01018",
-   "price": 598,
-   "marketCap": 1724,
-   "peRatio": 13.8
+   "price": 588.9,
+   "marketCap": 1713.57,
+   "peRatio": 13.72
   },
   {
    "name": "Krishana Phoschem",
    "sector": "Agrochemical & Fertilizers",
    "ticker": "KRISHANA",
    "isin": "INE506W01020",
-   "price": 185,
-   "marketCap": 5706,
-   "peRatio": 29
+   "price": 185.19,
+   "marketCap": 5724.93,
+   "peRatio": 29.1
   },
   {
    "name": "Madhya Bharat Agro Products",
    "sector": "Agrochemical & Fertilizers",
    "ticker": "MBAPL",
    "isin": "INE900L01028",
-   "price": 167,
-   "marketCap": 7319,
-   "peRatio": 47.2
+   "price": 166.84,
+   "marketCap": 7309.84,
+   "peRatio": 47.14
   },
   {
    "name": "Meghmani Organics",
    "sector": "Agrochemical & Fertilizers",
    "ticker": "Meghmani Organics",
    "isin": "INE0CT101020",
-   "price": 57,
-   "marketCap": 1448,
-   "peRatio": 22.5
+   "price": 57.27,
+   "marketCap": 1456.46,
+   "peRatio": 22.63
   },
   {
    "name": "Paradeep Phosphates",
    "sector": "Agrochemical & Fertilizers",
    "ticker": "Paradeep Phosphates",
    "isin": "INE088F01024",
-   "price": 156,
-   "marketCap": 16174,
-   "peRatio": 14.9
+   "price": 154.08,
+   "marketCap": 15996.13,
+   "peRatio": 14.7
   },
   {
    "name": "Punjab Chem. & Corp",
    "sector": "Agrochemical & Fertilizers",
    "ticker": "Punjab Chem. & Corp",
    "isin": "INE277B01014",
-   "price": 1055,
-   "marketCap": 1298,
-   "peRatio": 19.4
+   "price": 1035.8,
+   "marketCap": 1270.12,
+   "peRatio": 19.01
   },
   {
    "name": "Rallis India",
    "sector": "Agrochemical & Fertilizers",
    "ticker": "Rallis India",
    "isin": "INE613A01020",
-   "price": 199,
-   "marketCap": 3879,
-   "peRatio": 24.6
+   "price": 199.96,
+   "marketCap": 3888.6,
+   "peRatio": 24.66
   },
   {
    "name": "Sharda Cropchem",
    "sector": "Agrochemical & Fertilizers",
    "ticker": "Sharda Cropchem",
    "isin": "INE221J01015",
-   "price": 729,
-   "marketCap": 6574,
-   "peRatio": 10.5
+   "price": 721.45,
+   "marketCap": 6508.96,
+   "peRatio": 10.4
   },
   {
    "name": "Sumitomo Chemical India",
    "sector": "Agrochemical & Fertilizers",
    "ticker": "SUMICHEM",
    "isin": "INE258G01013",
-   "price": 434,
-   "marketCap": 21660,
-   "peRatio": 37.9
+   "price": 431.15,
+   "marketCap": 21520.67,
+   "peRatio": 37.65
   },
   {
    "name": "Alicon Castalloy",
    "sector": "Auto Related",
    "ticker": "Alicon Castalloy",
    "isin": "INE062D01024",
-   "price": 717,
-   "marketCap": 1177,
-   "peRatio": 31.7
+   "price": 724.85,
+   "marketCap": 1189.61,
+   "peRatio": 32.04
   },
   {
    "name": "Amara Raja Energy",
    "sector": "Auto Related",
    "ticker": "Amara Raja Energy",
    "isin": "INE885A01032",
-   "price": 775,
-   "marketCap": 14177,
-   "peRatio": 19.4
+   "price": 766.3,
+   "marketCap": 14025.23,
+   "peRatio": 19.19
   },
   {
    "name": "ASK Automotive",
    "sector": "Auto Related",
    "ticker": "ASK Automotive",
    "isin": "INE491J01022",
-   "price": 650,
-   "marketCap": 12822,
-   "peRatio": 40.5
+   "price": 619.85,
+   "marketCap": 12219.88,
+   "peRatio": 38.6
   },
   {
    "name": "Auto.Axle",
    "sector": "Auto Related",
    "ticker": "Auto.Axle",
    "isin": "INE449A01011",
-   "price": 1680,
-   "marketCap": 2539,
-   "peRatio": 13.9
+   "price": 1699.6,
+   "marketCap": 2568.43,
+   "peRatio": 14.07
   },
   {
    "name": "Belrise Industries",
    "sector": "Auto Related",
    "ticker": "BELRISE",
    "isin": "INE894V01022",
-   "price": 249,
-   "marketCap": 24028,
-   "peRatio": 47.1
+   "price": 240.52,
+   "marketCap": 23261.94,
+   "peRatio": 45.62
   },
   {
    "name": "Carraro India",
    "sector": "Auto Related",
    "ticker": "Carraro India",
    "isin": "INE0V7W01012",
-   "price": 524,
-   "marketCap": 2971,
-   "peRatio": 21.3
+   "price": 520.8,
+   "marketCap": 2960.83,
+   "peRatio": 21.23
   },
   {
    "name": "CIE Automotive",
    "sector": "Auto Related",
    "ticker": "CIEINDIA",
    "isin": "INE536H01010",
-   "price": 383,
-   "marketCap": 14576,
-   "peRatio": 16.3
+   "price": 376.45,
+   "marketCap": 14281.1,
+   "peRatio": 15.92
   },
   {
    "name": "Craftsman Automation",
    "sector": "Auto Related",
    "ticker": "Craftsman Automation",
    "isin": "INE00LO01017",
-   "price": 10534,
-   "marketCap": 27540,
-   "peRatio": 58.8
+   "price": 10505,
+   "marketCap": 27475.23,
+   "peRatio": 58.66
   },
   {
    "name": "Dhoot Transmission",
    "sector": "Auto Related",
    "ticker": "DHOOTTRANS",
    "isin": "INE01NH01023",
-   "price": 1504,
-   "marketCap": 30785,
-   "peRatio": 68.7
+   "price": 1504.6,
+   "marketCap": 30776.3,
+   "peRatio": 68.68
   },
   {
    "name": "Divgi Torqtransfer",
    "sector": "Auto Related",
    "ticker": "Divgi Torqtransfer",
    "isin": "INE753U01022",
-   "price": 1190,
-   "marketCap": 3641,
-   "peRatio": 57.6
+   "price": 1212.9,
+   "marketCap": 3709.4,
+   "peRatio": 58.68
   },
   {
    "name": "Exide Industries",
    "sector": "Auto Related",
    "ticker": "EXIDEIND",
    "isin": "INE302A01020",
-   "price": 412,
-   "marketCap": 35011,
-   "peRatio": 37.3
+   "price": 407,
+   "marketCap": 34595,
+   "peRatio": 36.83
   },
   {
    "name": "Fiem Industries",
    "sector": "Auto Related",
    "ticker": "FIEMIND",
    "isin": "INE737H01014",
-   "price": 1926,
-   "marketCap": 5081,
-   "peRatio": 19.3
+   "price": 1921.1,
+   "marketCap": 5056.27,
+   "peRatio": 19.2
   },
   {
    "name": "Frontier Springs",
    "sector": "Auto Related",
    "ticker": "Frontier Springs",
    "isin": "INE572D01014",
-   "price": 1447,
-   "marketCap": 1707,
+   "price": 1394.1,
+   "marketCap": 1647.2,
    "peRatio": null
   },
   {
@@ -411,62 +411,62 @@
    "sector": "Auto Related",
    "ticker": "Gabriel India",
    "isin": "INE524A01029",
-   "price": 1349,
-   "marketCap": 23916,
-   "peRatio": 66.4
+   "price": 1303.9,
+   "marketCap": 23109.02,
+   "peRatio": 64.18
   },
   {
    "name": "JTEKT India",
    "sector": "Auto Related",
    "ticker": "JTEKT India",
    "isin": "INE643A01035",
-   "price": 116,
-   "marketCap": 3237,
-   "peRatio": 41.2
+   "price": 115.84,
+   "marketCap": 3213.37,
+   "peRatio": 40.92
   },
   {
    "name": "Kross",
    "sector": "Auto Related",
    "ticker": "Kross",
    "isin": "INE0O6601022",
-   "price": 266,
-   "marketCap": 1719,
-   "peRatio": 29.7
+   "price": 261.83,
+   "marketCap": 1689.05,
+   "peRatio": 29.18
   },
   {
    "name": "Lumax Auto Tech",
    "sector": "Auto Related",
    "ticker": "Lumax Auto Tech",
    "isin": "INE872H01027",
-   "price": 2032,
-   "marketCap": 13840,
-   "peRatio": 41.7
+   "price": 2011.7,
+   "marketCap": 13711.29,
+   "peRatio": 41.31
   },
   {
    "name": "Lumax Industries",
    "sector": "Auto Related",
    "ticker": "Lumax Industries",
    "isin": "INE162B01018",
-   "price": 5676,
-   "marketCap": 5311,
-   "peRatio": 26.4
+   "price": 5691.5,
+   "marketCap": 5320.26,
+   "peRatio": 26.44
   },
   {
    "name": "Menon Bearings",
    "sector": "Auto Related",
    "ticker": "Menon Bearings",
    "isin": "INE071D01033",
-   "price": 291,
-   "marketCap": 1645,
-   "peRatio": 37.4
+   "price": 291.1,
+   "marketCap": 1631.32,
+   "peRatio": 37.09
   },
   {
    "name": "Minda Corp",
    "sector": "Auto Related",
    "ticker": "MINDACORP",
    "isin": "INE842C01021",
-   "price": 673,
-   "marketCap": 16088,
+   "price": 672.75,
+   "marketCap": 16084.07,
    "peRatio": 39.9
   },
   {
@@ -474,278 +474,278 @@
    "sector": "Auto Related",
    "ticker": "Motherson Sumi Wirin",
    "isin": "INE0FS801015",
-   "price": 34.6,
-   "marketCap": 22919,
-   "peRatio": 36.5
+   "price": 34.36,
+   "marketCap": 22786.39,
+   "peRatio": 36.29
   },
   {
    "name": "NDR Auto Components",
    "sector": "Auto Related",
    "ticker": "NDR Auto Components",
    "isin": "INE07OG01012",
-   "price": 722,
-   "marketCap": 1717,
-   "peRatio": 26.2
+   "price": 739.9,
+   "marketCap": 1759.87,
+   "peRatio": 26.85
   },
   {
    "name": "OBSC Perfection",
    "sector": "Auto Related",
    "ticker": "OBSCP",
    "isin": "INE0YHV01011",
-   "price": 914,
-   "marketCap": 2363,
-   "peRatio": 75.1
+   "price": 917.25,
+   "marketCap": 2370.69,
+   "peRatio": 75.34
   },
   {
    "name": "Poojaa Precision Engg",
    "sector": "Auto Related",
    "ticker": "PPEL",
    "isin": "INE288301026",
-   "price": 800,
-   "marketCap": 1596,
-   "peRatio": 51.7
+   "price": 806,
+   "marketCap": 1607,
+   "peRatio": 52.1
   },
   {
    "name": "Precision Camshafts",
    "sector": "Auto Related",
    "ticker": "Precision Camshafts",
    "isin": "INE484I01029",
-   "price": 117,
-   "marketCap": 1108,
-   "peRatio": 35.2
+   "price": 117.16,
+   "marketCap": 1112.85,
+   "peRatio": 35.36
   },
   {
    "name": "Pricol",
    "sector": "Auto Related",
    "ticker": "Pricol",
    "isin": "INE726V01018",
-   "price": 753,
-   "marketCap": 9183,
-   "peRatio": 34.3
+   "price": 749.35,
+   "marketCap": 9133.19,
+   "peRatio": 34.06
   },
   {
    "name": "RACL Geartech",
    "sector": "Auto Related",
    "ticker": "RACL Geartech",
    "isin": "INE704B01017",
-   "price": 1613,
-   "marketCap": 1911,
-   "peRatio": 38.4
+   "price": 1588.6,
+   "marketCap": 1872.65,
+   "peRatio": 37.63
   },
   {
    "name": "Rajratan Global",
    "sector": "Auto Related",
    "ticker": "RAJRATAN",
    "isin": "INE451D01029",
-   "price": 461,
-   "marketCap": 2342,
-   "peRatio": 29.4
+   "price": 466.15,
+   "marketCap": 2366.69,
+   "peRatio": 29.71
   },
   {
    "name": "Ramkrishna Forgings",
    "sector": "Auto Related",
    "ticker": "Ramkrishna Forgings",
    "isin": "INE399G01023",
-   "price": 703,
-   "marketCap": 13079,
-   "peRatio": 114
+   "price": 714.65,
+   "marketCap": 12994.84,
+   "peRatio": 113.27
   },
   {
    "name": "Rane (Madras)",
    "sector": "Auto Related",
    "ticker": "RML",
    "isin": "INE050H01012",
-   "price": 1326,
-   "marketCap": 3652,
-   "peRatio": 30.2
+   "price": 1380.9,
+   "marketCap": 3816.41,
+   "peRatio": 31.56
   },
   {
    "name": "Remsons Industries",
    "sector": "Auto Related",
    "ticker": "REMSONSIND",
    "isin": "INE474C01023",
-   "price": 120,
-   "marketCap": 417,
-   "peRatio": 23.4
+   "price": 111.56,
+   "marketCap": 389.11,
+   "peRatio": 21.85
   },
   {
    "name": "Rico Auto Industries",
    "sector": "Auto Related",
    "ticker": "RICOAUTO",
    "isin": "INE209B01025",
-   "price": 127,
-   "marketCap": 1724,
-   "peRatio": 48.1
+   "price": 126.22,
+   "marketCap": 1707.57,
+   "peRatio": 47.64
   },
   {
    "name": "Rolex Rings",
    "sector": "Auto Related",
    "ticker": "Rolex Rings",
    "isin": "INE645S01024",
-   "price": 196,
-   "marketCap": 5142,
-   "peRatio": 26.6
+   "price": 190.58,
+   "marketCap": 5190.12,
+   "peRatio": 26.85
   },
   {
    "name": "Sandhar Technologies",
    "sector": "Auto Related",
    "ticker": "SANDHAR",
    "isin": "INE278H01035",
-   "price": 577,
-   "marketCap": 3465,
-   "peRatio": 16.6
+   "price": 582.7,
+   "marketCap": 3507.31,
+   "peRatio": 16.72
   },
   {
    "name": "Sedemac Mechatronics",
    "sector": "Auto Related",
    "ticker": "SEDEMAC",
    "isin": "INE00XB01019",
-   "price": 3477,
-   "marketCap": 15358,
-   "peRatio": 131
+   "price": 3485.6,
+   "marketCap": 15392.93,
+   "peRatio": 131.3
   },
   {
    "name": "Sharda Motor",
    "sector": "Auto Related",
    "ticker": "SHARDAMOTR",
    "isin": "INE597I01028",
-   "price": 945,
-   "marketCap": 5426,
-   "peRatio": 16.2
+   "price": 971.25,
+   "marketCap": 5575.72,
+   "peRatio": 16.65
   },
   {
    "name": "Shriram Pistons",
    "sector": "Auto Related",
    "ticker": "SHRIPISTON",
    "isin": "INE526E01018",
-   "price": 4645,
-   "marketCap": 21671,
-   "peRatio": 37.2
+   "price": 4749.2,
+   "marketCap": 22029.77,
+   "peRatio": 37.79
   },
   {
    "name": "SJS Enterprises",
    "sector": "Auto Related",
    "ticker": "SJS Enterprises",
    "isin": "INE284S01014",
-   "price": 2262,
-   "marketCap": 7268,
-   "peRatio": 38.1
+   "price": 2309.8,
+   "marketCap": 7392.55,
+   "peRatio": 38.76
   },
   {
    "name": "Sona BLW Precision",
    "sector": "Auto Related",
    "ticker": "Sona BLW Precision",
    "isin": "INE073K01018",
-   "price": 808,
-   "marketCap": 50393,
-   "peRatio": 69.3
+   "price": 815.65,
+   "marketCap": 50735.74,
+   "peRatio": 69.77
   },
   {
    "name": "Steel Strips Wheels",
    "sector": "Auto Related",
    "ticker": "Steel Strips Wheels",
    "isin": "INE802C01033",
-   "price": 389,
-   "marketCap": 6105,
-   "peRatio": 28.7
+   "price": 400.65,
+   "marketCap": 6297.43,
+   "peRatio": 29.61
   },
   {
    "name": "Sterling Tools",
    "sector": "Auto Related",
    "ticker": "Sterling Tools",
    "isin": "INE334A01023",
-   "price": 224,
-   "marketCap": 817,
-   "peRatio": 42.4
+   "price": 221.24,
+   "marketCap": 804.08,
+   "peRatio": 41.72
   },
   {
    "name": "Studds Accessories",
    "sector": "Auto Related",
    "ticker": "STUDDS",
    "isin": "INE00Q601028",
-   "price": 398,
-   "marketCap": 1565,
-   "peRatio": 21
+   "price": 395.65,
+   "marketCap": 1557.02,
+   "peRatio": 20.9
   },
   {
    "name": "Sundram Fasteners",
    "sector": "Auto Related",
    "ticker": "Sundram Fasteners",
    "isin": "INE387A01021",
-   "price": 1167,
-   "marketCap": 24514,
-   "peRatio": 39.5
+   "price": 1143.2,
+   "marketCap": 24021.88,
+   "peRatio": 38.71
   },
   {
    "name": "Suprajit Engineering",
    "sector": "Auto Related",
    "ticker": "Suprajit Engineering",
    "isin": "INE399C01030",
-   "price": 484,
-   "marketCap": 6632,
-   "peRatio": 35.3
+   "price": 492.1,
+   "marketCap": 6750.19,
+   "peRatio": 35.93
   },
   {
    "name": "Talbros Auto Compont",
    "sector": "Auto Related",
    "ticker": "Talbros Auto Compont",
    "isin": "INE187D01029",
-   "price": 438,
-   "marketCap": 2702,
-   "peRatio": 24.1
+   "price": 433.2,
+   "marketCap": 2674.06,
+   "peRatio": 23.85
   },
   {
    "name": "Tenneco Clean Air",
    "sector": "Auto Related",
    "ticker": "Tenneco Clean Air",
    "isin": "INE19RI01016",
-   "price": 502,
-   "marketCap": 20289,
-   "peRatio": 32.7
+   "price": 508.6,
+   "marketCap": 20527.32,
+   "peRatio": 33.09
   },
   {
    "name": "Uniparts India",
    "sector": "Auto Related",
    "ticker": "Uniparts India",
    "isin": "INE244O01017",
-   "price": 837,
-   "marketCap": 3780,
-   "peRatio": 20.7
+   "price": 843.55,
+   "marketCap": 3808.05,
+   "peRatio": 20.85
   },
   {
    "name": "Varroc Engineering",
    "sector": "Auto Related",
    "ticker": "Varroc Engineering",
    "isin": "INE665L01035",
-   "price": 848,
-   "marketCap": 12980,
-   "peRatio": 45.5
+   "price": 837.4,
+   "marketCap": 12794.33,
+   "peRatio": 44.86
   },
   {
    "name": "Wheels India",
    "sector": "Auto Related",
    "ticker": "Wheels India",
    "isin": "INE715A01015",
-   "price": 2324,
-   "marketCap": 5901,
-   "peRatio": 36.1
+   "price": 2204,
+   "marketCap": 5385.04,
+   "peRatio": 32.92
   },
   {
    "name": "ZF Comm Vehic Contr",
    "sector": "Auto Related",
    "ticker": "ZF Comm Vehic Contr",
    "isin": "INE342J01019",
-   "price": 2333,
-   "marketCap": 26520,
-   "peRatio": 52.5
+   "price": 2297.8,
+   "marketCap": 26150.23,
+   "peRatio": 51.8
   },
   {
    "name": "Harsha Engineers Int",
    "sector": "Bearings",
    "ticker": "Harsha Engineers Int",
    "isin": "INE0JUS01029",
-   "price": 466,
-   "marketCap": 4238,
+   "price": 465.05,
+   "marketCap": 4234.01,
    "peRatio": 27.4
   },
   {
@@ -753,170 +753,170 @@
    "sector": "Bearings",
    "ticker": "NRBBEARING",
    "isin": "INE349A01021",
-   "price": 542,
-   "marketCap": 5249,
-   "peRatio": 35.1
+   "price": 541.05,
+   "marketCap": 5244,
+   "peRatio": 35.07
   },
   {
    "name": "SKF India",
    "sector": "Bearings",
    "ticker": "SKF India",
    "isin": "INE640A01023",
-   "price": 1512,
-   "marketCap": 7481,
-   "peRatio": 32.2
+   "price": 1514,
+   "marketCap": 7484.91,
+   "peRatio": 32.22
   },
   {
    "name": "SKF India (Industrial)",
    "sector": "Bearings",
    "ticker": "SKFINDUSTRIAL",
    "isin": "INE2J8701016",
-   "price": 2890,
-   "marketCap": 14288,
-   "peRatio": 37.2
+   "price": 2789,
+   "marketCap": 13788.25,
+   "peRatio": 35.9
   },
   {
    "name": "Timken India",
    "sector": "Bearings",
    "ticker": "Timken India",
    "isin": "INE325A01013",
-   "price": 3180,
-   "marketCap": 23929,
-   "peRatio": 56.2
+   "price": 3086.2,
+   "marketCap": 23214.01,
+   "peRatio": 54.52
   },
   {
    "name": "Advait Energy",
    "sector": "Cables",
    "ticker": "Advait Energy",
    "isin": "INE0ALI01010",
-   "price": 1867,
-   "marketCap": 2045,
-   "peRatio": 35.4
+   "price": 1903.6,
+   "marketCap": 2083.11,
+   "peRatio": 36.06
   },
   {
    "name": "Dynamic Cables",
    "sector": "Cables",
    "ticker": "Dynamic Cables",
    "isin": "INE600Y01019",
-   "price": 445,
-   "marketCap": 2156,
-   "peRatio": 23.7
+   "price": 433.9,
+   "marketCap": 2102.62,
+   "peRatio": 23.11
   },
   {
    "name": "Finolex Cables",
    "sector": "Cables",
    "ticker": "Finolex Cables",
    "isin": "INE235A01022",
-   "price": 1408,
-   "marketCap": 21543,
-   "peRatio": 26.9
+   "price": 1435.5,
+   "marketCap": 21954.44,
+   "peRatio": 27.41
   },
   {
    "name": "JD Cables",
    "sector": "Cables",
    "ticker": "JD Cables",
    "isin": "INE14VP01014",
-   "price": 183,
-   "marketCap": 414,
-   "peRatio": 13
+   "price": 187,
+   "marketCap": 422,
+   "peRatio": 13.3
   },
   {
    "name": "KSH International",
    "sector": "Cables",
    "ticker": "KSHINTL",
    "isin": "INE987S01020",
-   "price": 988,
-   "marketCap": 6692,
-   "peRatio": 51.1
+   "price": 1028.4,
+   "marketCap": 6968,
+   "peRatio": 53.21
   },
   {
    "name": "Laser Power & Infra",
    "sector": "Cables",
    "ticker": "LASERPOWER",
    "isin": "INE17IR01028",
-   "price": 262,
-   "marketCap": 3685,
-   "peRatio": 33.5
+   "price": 270.45,
+   "marketCap": 3796.26,
+   "peRatio": 34.51
   },
   {
    "name": "Paramount Communications",
    "sector": "Cables",
    "ticker": "PARACOMM",
    "isin": "INE074B01023",
-   "price": 56.4,
-   "marketCap": 1841,
-   "peRatio": 30.2
+   "price": 57.85,
+   "marketCap": 1893.08,
+   "peRatio": 31.02
   },
   {
    "name": "RR Kabel Ltd.",
    "sector": "Cables",
    "ticker": "RR Kabel Ltd.",
    "isin": "INE777K01022",
-   "price": 2460,
-   "marketCap": 27836,
-   "peRatio": 45.5
+   "price": 2523.2,
+   "marketCap": 28538.78,
+   "peRatio": 46.65
   },
   {
    "name": "Aarti Industries",
    "sector": "Chemicals",
    "ticker": "AARTIIND",
    "isin": "INE769A01020",
-   "price": 477,
-   "marketCap": 17294,
-   "peRatio": 33.1
+   "price": 469.9,
+   "marketCap": 17038.32,
+   "peRatio": 32.61
   },
   {
    "name": "Alkyl Amines",
    "sector": "Chemicals",
    "ticker": "ALKYLAMINE",
    "isin": "INE150B01039",
-   "price": 1800,
-   "marketCap": 9203,
-   "peRatio": 48.5
+   "price": 1781.3,
+   "marketCap": 9110.29,
+   "peRatio": 48.04
   },
   {
    "name": "Anupam Rasayan",
    "sector": "Chemicals",
    "ticker": "ANURAS",
    "isin": "INE930P01018",
-   "price": 1187,
-   "marketCap": 13525,
-   "peRatio": 77.4
+   "price": 1177.8,
+   "marketCap": 13409.05,
+   "peRatio": 76.73
   },
   {
    "name": "Archean Chemical Industries",
    "sector": "Chemicals",
    "ticker": "ARCHEAN",
    "isin": "INE128X01021",
-   "price": 483,
-   "marketCap": 5967,
-   "peRatio": 61.6
+   "price": 490.6,
+   "marketCap": 6056.87,
+   "peRatio": 62.52
   },
   {
    "name": "Balaji Amines",
    "sector": "Chemicals",
    "ticker": "Balaji Amines",
    "isin": "INE050E01027",
-   "price": 2154,
-   "marketCap": 6977,
-   "peRatio": 34.2
+   "price": 2142.1,
+   "marketCap": 6940.62,
+   "peRatio": 34.02
   },
   {
    "name": "BASF India",
    "sector": "Chemicals",
    "ticker": "BASF",
    "isin": "INE373A01013",
-   "price": 3496,
-   "marketCap": 15132,
-   "peRatio": 24.5
+   "price": 3435.6,
+   "marketCap": 14871.21,
+   "peRatio": 24.08
   },
   {
    "name": "Camlin Fine",
    "sector": "Chemicals",
    "ticker": "CAMLINFINE",
    "isin": "INE052I01032",
-   "price": 95.4,
-   "marketCap": 1832,
+   "price": 93.17,
+   "marketCap": 1789.76,
    "peRatio": null
   },
   {
@@ -924,17 +924,17 @@
    "sector": "Chemicals",
    "ticker": "Chembond Chemicals",
    "isin": "INE0TGX01019",
-   "price": 242,
-   "marketCap": 636,
-   "peRatio": 16.6
+   "price": 230.3,
+   "marketCap": 619.43,
+   "peRatio": 16.17
   },
   {
    "name": "Chemplast Sanmar",
    "sector": "Chemicals",
    "ticker": "Chemplast Sanmar",
    "isin": "INE488A01050",
-   "price": 196,
-   "marketCap": 3086,
+   "price": 192.35,
+   "marketCap": 3041.24,
    "peRatio": null
   },
   {
@@ -942,17 +942,17 @@
    "sector": "Chemicals",
    "ticker": "Clean Science",
    "isin": "INE227W01023",
-   "price": 782,
-   "marketCap": 8306,
-   "peRatio": 35.7
+   "price": 775.75,
+   "marketCap": 8244.87,
+   "peRatio": 35.39
   },
   {
    "name": "DCW",
    "sector": "Chemicals",
    "ticker": "DCW",
    "isin": "INE500A01029",
-   "price": 46.8,
-   "marketCap": 1382,
+   "price": 45.98,
+   "marketCap": 1357.12,
    "peRatio": null
   },
   {
@@ -960,288 +960,288 @@
    "sector": "Chemicals",
    "ticker": "DDEVPLSTIK",
    "isin": "INE0HR601026",
-   "price": 252,
-   "marketCap": 2608,
-   "peRatio": 12.2
+   "price": 248.75,
+   "marketCap": 2573.98,
+   "peRatio": 12.04
   },
   {
    "name": "Deepak Fert & Petro",
    "sector": "Chemicals",
    "ticker": "Deepak Fert & Petro",
    "isin": "INE501A01019",
-   "price": 1350,
-   "marketCap": 17017,
-   "peRatio": 17.3
+   "price": 1308.9,
+   "marketCap": 16523.27,
+   "peRatio": 16.77
   },
   {
    "name": "Deepak Nitrite",
    "sector": "Chemicals",
    "ticker": "Deepak Nitrite",
    "isin": "INE288B01029",
-   "price": 1551,
-   "marketCap": 21146,
-   "peRatio": 26.7
+   "price": 1529,
+   "marketCap": 20854.5,
+   "peRatio": 26.33
   },
   {
    "name": "Ellen. Indl. Gas",
    "sector": "Chemicals",
    "ticker": "ELLEN",
    "isin": "INE236E01022",
-   "price": 359,
-   "marketCap": 5057,
-   "peRatio": 41.9
+   "price": 369.35,
+   "marketCap": 5205.46,
+   "peRatio": 43.13
   },
   {
    "name": "Epigral",
    "sector": "Chemicals",
    "ticker": "Epigral",
    "isin": "INE071N01016",
-   "price": 1038,
-   "marketCap": 4480,
-   "peRatio": 16.5
+   "price": 1018.1,
+   "marketCap": 4392.22,
+   "peRatio": 16.17
   },
   {
    "name": "Excel Industries",
    "sector": "Chemicals",
    "ticker": "EXCELINDUS",
    "isin": "INE369A01029",
-   "price": 943,
-   "marketCap": 1185,
-   "peRatio": 16.6
+   "price": 924.8,
+   "marketCap": 1162.54,
+   "peRatio": 16.28
   },
   {
    "name": "Fairchem Organics",
    "sector": "Chemicals",
    "ticker": "Fairchem Organics",
    "isin": "INE0DNW01011",
-   "price": 679,
-   "marketCap": 855,
-   "peRatio": 56.6
+   "price": 674.7,
+   "marketCap": 849.85,
+   "peRatio": 56.26
   },
   {
    "name": "Fineotex Chemical",
    "sector": "Chemicals",
    "ticker": "Fineotex Chemical",
    "isin": "INE045J01034",
-   "price": 57.4,
-   "marketCap": 6679,
-   "peRatio": 54.6
+   "price": 57.94,
+   "marketCap": 6747.12,
+   "peRatio": 55.15
   },
   {
    "name": "Galaxy Surfactants",
    "sector": "Chemicals",
    "ticker": "Galaxy Surfactants",
    "isin": "INE600K01018",
-   "price": 2191,
-   "marketCap": 7759,
-   "peRatio": 21.4
+   "price": 2301.2,
+   "marketCap": 8158.85,
+   "peRatio": 22.5
   },
   {
    "name": "GHCL",
    "sector": "Chemicals",
    "ticker": "GHCL",
    "isin": "INE539A01019",
-   "price": 411,
-   "marketCap": 3782,
-   "peRatio": 8.29
+   "price": 404.55,
+   "marketCap": 3727.15,
+   "peRatio": 8.17
   },
   {
    "name": "GNFC",
    "sector": "Chemicals",
    "ticker": "GNFC",
    "isin": "INE113A01013",
-   "price": 621,
-   "marketCap": 9125,
-   "peRatio": 8.8
+   "price": 611.5,
+   "marketCap": 8985.42,
+   "peRatio": 8.67
   },
   {
    "name": "Gujarat Fluorochemic",
    "sector": "Chemicals",
    "ticker": "Gujarat Fluorochemic",
    "isin": "INE09N301011",
-   "price": 4444,
-   "marketCap": 48842,
-   "peRatio": 79.1
+   "price": 4406.2,
+   "marketCap": 48402.11,
+   "peRatio": 78.38
   },
   {
    "name": "Himadri Speciality",
    "sector": "Chemicals",
    "ticker": "Himadri Speciality",
    "isin": "INE019C01026",
-   "price": 670,
-   "marketCap": 33799,
-   "peRatio": 42.3
+   "price": 667.6,
+   "marketCap": 33683.2,
+   "peRatio": 42.1
   },
   {
    "name": "IG Petrochem.",
    "sector": "Chemicals",
    "ticker": "IGPL",
    "isin": "INE204A01010",
-   "price": 582,
-   "marketCap": 1789,
-   "peRatio": 21.9
+   "price": 584.3,
+   "marketCap": 1799.34,
+   "peRatio": 22.02
   },
   {
    "name": "JG Chemicals",
    "sector": "Chemicals",
    "ticker": "JGCHEM",
    "isin": "INE0MB501011",
-   "price": 621,
-   "marketCap": 2430,
-   "peRatio": 32.3
+   "price": 658.65,
+   "marketCap": 2580.99,
+   "peRatio": 34.31
   },
   {
    "name": "Kiri Industries",
    "sector": "Chemicals",
    "ticker": "Kiri Industries",
    "isin": "INE415I01015",
-   "price": 542,
-   "marketCap": 3531,
-   "peRatio": 4.39
+   "price": 543.45,
+   "marketCap": 3541.55,
+   "peRatio": 4.4
   },
   {
    "name": "Laxmi Organic",
    "sector": "Chemicals",
    "ticker": "LXCHEM",
    "isin": "INE576O01020",
-   "price": 177,
-   "marketCap": 4929,
-   "peRatio": 39.2
+   "price": 176.49,
+   "marketCap": 4892.51,
+   "peRatio": 38.91
   },
   {
    "name": "Navin Fluorine Intl",
    "sector": "Chemicals",
    "ticker": "Navin Fluorine Intl",
    "isin": "INE048G01026",
-   "price": 8432,
-   "marketCap": 43281,
-   "peRatio": 54.4
+   "price": 8234.5,
+   "marketCap": 42222.74,
+   "peRatio": 53.07
   },
   {
    "name": "Neogen Chemicals",
    "sector": "Chemicals",
    "ticker": "Neogen Chemicals",
    "isin": "INE136S01016",
-   "price": 2396,
-   "marketCap": 7191,
-   "peRatio": 202
+   "price": 2435.3,
+   "marketCap": 6668.26,
+   "peRatio": 187.32
   },
   {
    "name": "Nocil",
    "sector": "Chemicals",
    "ticker": "NOCIL",
    "isin": "INE163A01018",
-   "price": 175,
-   "marketCap": 2924,
-   "peRatio": 42
+   "price": 169.31,
+   "marketCap": 2827.9,
+   "peRatio": 40.67
   },
   {
    "name": "Oriental Aromatics",
    "sector": "Chemicals",
    "ticker": "Oriental Aromatics",
    "isin": "INE959C01023",
-   "price": 553,
-   "marketCap": 1873,
-   "peRatio": 352
+   "price": 541.85,
+   "marketCap": 1823.52,
+   "peRatio": 342.7
   },
   {
    "name": "PCBL Chemical",
    "sector": "Chemicals",
    "ticker": "PCBL Chemical",
    "isin": "INE602A01031",
-   "price": 333,
-   "marketCap": 13087,
-   "peRatio": 49.4
+   "price": 330.45,
+   "marketCap": 13001.97,
+   "peRatio": 49.08
   },
   {
    "name": "Premier Explosives",
    "sector": "Chemicals",
    "ticker": "Premier Explosives",
    "isin": "INE863B01029",
-   "price": 677,
-   "marketCap": 3640,
-   "peRatio": 106
+   "price": 675.3,
+   "marketCap": 3630.49,
+   "peRatio": 105.73
   },
   {
    "name": "Privi Speciality Che",
    "sector": "Chemicals",
    "ticker": "Privi Speciality Che",
    "isin": "INE959A01019",
-   "price": 3605,
-   "marketCap": 14079,
-   "peRatio": 40.2
+   "price": 3605.5,
+   "marketCap": 14084.06,
+   "peRatio": 40.21
   },
   {
    "name": "Refex Industries",
    "sector": "Chemicals",
    "ticker": "Refex Industries",
    "isin": "INE056I01025",
-   "price": 276,
-   "marketCap": 3785,
-   "peRatio": 13.3
+   "price": 272.05,
+   "marketCap": 3733.06,
+   "peRatio": 13.12
   },
   {
    "name": "Rossari Biotech",
    "sector": "Chemicals",
    "ticker": "Rossari Biotech",
    "isin": "INE02A801020",
-   "price": 440,
-   "marketCap": 2434,
-   "peRatio": 16.2
+   "price": 427.7,
+   "marketCap": 2369.1,
+   "peRatio": 15.77
   },
   {
    "name": "SH Kelkar & Co",
    "sector": "Chemicals",
    "ticker": "SHK",
    "isin": "INE500L01026",
-   "price": 138,
-   "marketCap": 1910,
-   "peRatio": 40.4
+   "price": 140.33,
+   "marketCap": 1942.46,
+   "peRatio": 41.09
   },
   {
    "name": "Sh. Pushkar Chem.",
    "sector": "Chemicals",
    "ticker": "SHREEPUSHK",
    "isin": "INE712K01011",
-   "price": 497,
-   "marketCap": 1604,
-   "peRatio": 22.3
+   "price": 481.9,
+   "marketCap": 1558.35,
+   "peRatio": 21.67
   },
   {
    "name": "Stallion India Fluor",
    "sector": "Chemicals",
    "ticker": "Stallion India Fluor",
    "isin": "INE0RYC01010",
-   "price": 222,
-   "marketCap": 2581,
-   "peRatio": 49.6
+   "price": 219.58,
+   "marketCap": 2549.01,
+   "peRatio": 48.98
   },
   {
    "name": "Styrenix Performance",
    "sector": "Chemicals",
    "ticker": "Styrenix Performance",
    "isin": "INE189B01011",
-   "price": 2036,
-   "marketCap": 3590,
-   "peRatio": 13.1
+   "price": 2000.8,
+   "marketCap": 3518.53,
+   "peRatio": 12.84
   },
   {
    "name": "Sudarshan Chemicals",
    "sector": "Chemicals",
    "ticker": "SUDARSCHEM",
    "isin": "INE659A01023",
-   "price": 1200,
-   "marketCap": 9526,
-   "peRatio": 93.8
+   "price": 1197.3,
+   "marketCap": 9414.08,
+   "peRatio": 92.7
   },
   {
    "name": "Supreme Petrochem",
    "sector": "Chemicals",
    "ticker": "Supreme Petrochem",
    "isin": "INE663A01033",
-   "price": 865,
-   "marketCap": 16275,
-   "peRatio": 33.1
+   "price": 831.85,
+   "marketCap": 15642.22,
+   "peRatio": 31.82
   },
   {
    "name": "Tanfac Industries",
@@ -1257,8 +1257,8 @@
    "sector": "Chemicals",
    "ticker": "Tata Chemicals",
    "isin": "INE092A01019",
-   "price": 641,
-   "marketCap": 16333,
+   "price": 613.85,
+   "marketCap": 15638.21,
    "peRatio": null
   },
   {
@@ -1266,62 +1266,62 @@
    "sector": "Chemicals",
    "ticker": "TATVA",
    "isin": "INE0GK401011",
-   "price": 1760,
-   "marketCap": 4122,
-   "peRatio": 78.7
+   "price": 1806.4,
+   "marketCap": 4225.54,
+   "peRatio": 80.67
   },
   {
    "name": "Vishnu Chemicals",
    "sector": "Chemicals",
    "ticker": "Vishnu Chemicals",
    "isin": "INE270I01022",
-   "price": 692,
-   "marketCap": 4648,
-   "peRatio": 31
+   "price": 673.9,
+   "marketCap": 4536.38,
+   "peRatio": 30.26
   },
   {
    "name": "Yasho Industries",
    "sector": "Chemicals",
    "ticker": "Yasho Industries",
    "isin": "INE616Z01012",
-   "price": 4118,
-   "marketCap": 4967,
-   "peRatio": 86.1
+   "price": 4061.3,
+   "marketCap": 4896.75,
+   "peRatio": 84.89
   },
   {
    "name": "Awfis Space Solutions",
    "sector": "Commercial Services",
    "ticker": "AWFIS",
    "isin": "INE108V01019",
-   "price": 250,
-   "marketCap": 1785,
-   "peRatio": 21
+   "price": 247.1,
+   "marketCap": 1768.33,
+   "peRatio": 20.8
   },
   {
    "name": "CMS Info Systems",
    "sector": "Commercial Services",
    "ticker": "CMS Info Systems",
    "isin": "INE925R01014",
-   "price": 228,
-   "marketCap": 3644,
-   "peRatio": 12.1
+   "price": 229.17,
+   "marketCap": 3773,
+   "peRatio": 12.52
   },
   {
    "name": "EFC (I)",
    "sector": "Commercial Services",
    "ticker": "EFC (I)",
    "isin": "INE886D01026",
-   "price": 175,
-   "marketCap": 2599,
-   "peRatio": 10.1
+   "price": 174.28,
+   "marketCap": 2578.41,
+   "peRatio": 10.02
   },
   {
    "name": "Indiqube Spaces",
    "sector": "Commercial Services",
    "ticker": "Indiqube Spaces",
    "isin": "INE06ST01018",
-   "price": 196,
-   "marketCap": 4160,
+   "price": 196.14,
+   "marketCap": 4158.12,
    "peRatio": null
   },
   {
@@ -1329,134 +1329,134 @@
    "sector": "Commercial Services",
    "ticker": "KRYSTAL",
    "isin": "INE0QN801017",
-   "price": 622,
-   "marketCap": 861,
-   "peRatio": 13.2
+   "price": 619.75,
+   "marketCap": 865.91,
+   "peRatio": 13.31
   },
   {
    "name": "MSTC",
    "sector": "Commercial Services",
    "ticker": "MSTC",
    "isin": "INE255X01014",
-   "price": 710,
-   "marketCap": 4988,
-   "peRatio": 21.3
+   "price": 713.05,
+   "marketCap": 5019.87,
+   "peRatio": 21.47
   },
   {
    "name": "Nirlon",
    "sector": "Commercial Services",
    "ticker": "Nirlon",
    "isin": "INE910A01012",
-   "price": 608,
-   "marketCap": 5475,
-   "peRatio": 15.3
+   "price": 605.85,
+   "marketCap": 5459.8,
+   "peRatio": 15.26
   },
   {
    "name": "Quess Corp",
    "sector": "Commercial Services",
    "ticker": "Quess Corp",
    "isin": "INE615P01015",
-   "price": 341,
-   "marketCap": 5090,
-   "peRatio": 19.7
+   "price": 342.1,
+   "marketCap": 5109.6,
+   "peRatio": 19.78
   },
   {
    "name": "Redington",
    "sector": "Commercial Services",
    "ticker": "Redington",
    "isin": "INE891D01026",
-   "price": 405,
-   "marketCap": 31650,
-   "peRatio": 17.6
+   "price": 405.45,
+   "marketCap": 31697.04,
+   "peRatio": 17.63
   },
   {
    "name": "Sanghvi Movers",
    "sector": "Commercial Services",
    "ticker": "Sanghvi Movers",
    "isin": "INE989A01032",
-   "price": 444,
-   "marketCap": 3841,
-   "peRatio": 18.7
+   "price": 454,
+   "marketCap": 3930.55,
+   "peRatio": 19.2
   },
   {
    "name": "Smartworks Coworking",
    "sector": "Commercial Services",
    "ticker": "Smartworks Coworking",
    "isin": "INE0NAZ01010",
-   "price": 512,
-   "marketCap": 5842,
-   "peRatio": 210
+   "price": 514.25,
+   "marketCap": 5875.93,
+   "peRatio": 211.18
   },
   {
    "name": "TeamLease Services",
    "sector": "Commercial Services",
    "ticker": "TeamLease Services",
    "isin": "INE985S01024",
-   "price": 1140,
-   "marketCap": 1742,
-   "peRatio": 11.4
+   "price": 1148.6,
+   "marketCap": 1755.22,
+   "peRatio": 11.48
   },
   {
    "name": "Updater Services",
    "sector": "Commercial Services",
    "ticker": "Updater Services",
    "isin": "INE851I01011",
-   "price": 208,
-   "marketCap": 1390,
-   "peRatio": 15.2
+   "price": 207.79,
+   "marketCap": 1391.22,
+   "peRatio": 15.21
   },
   {
    "name": "WeWork India",
    "sector": "Commercial Services",
    "ticker": "WEWORK",
    "isin": "INE085001019",
-   "price": 651,
-   "marketCap": 9031,
-   "peRatio": 102
+   "price": 667.15,
+   "marketCap": 9246.05,
+   "peRatio": 104.12
   },
   {
    "name": "Afcons Infra",
    "sector": "Construction",
    "ticker": "Afcons Infra",
    "isin": "INE101I01011",
-   "price": 252,
-   "marketCap": 9259,
-   "peRatio": 45.2
+   "price": 245.1,
+   "marketCap": 9014.4,
+   "peRatio": 44
   },
   {
    "name": "Ahluwalia Contr.",
    "sector": "Construction",
    "ticker": "AHLUCONT",
    "isin": "INE758C01029",
-   "price": 572,
-   "marketCap": 3830,
-   "peRatio": 17
+   "price": 551.55,
+   "marketCap": 3694.7,
+   "peRatio": 16.4
   },
   {
    "name": "Ashoka Buildcon",
    "sector": "Construction",
    "ticker": "Ashoka Buildcon",
    "isin": "INE442H01029",
-   "price": 110,
-   "marketCap": 3093,
-   "peRatio": 4.57
+   "price": 108.53,
+   "marketCap": 3046.69,
+   "peRatio": 4.5
   },
   {
    "name": "Capacite Infraproj.",
    "sector": "Construction",
    "ticker": "Capacite Infraproj.",
    "isin": "INE264T01014",
-   "price": 184,
-   "marketCap": 1559,
-   "peRatio": 8.41
+   "price": 182.61,
+   "marketCap": 1544.95,
+   "peRatio": 8.34
   },
   {
    "name": "Ceigall India",
    "sector": "Construction",
    "ticker": "Ceigall India",
    "isin": "INE0AG901020",
-   "price": 379,
-   "marketCap": 6577,
+   "price": 377.55,
+   "marketCap": 6577.1,
    "peRatio": 20.4
   },
   {
@@ -1464,323 +1464,323 @@
    "sector": "Construction",
    "ticker": "Cemindia Projects",
    "isin": "INE686A01026",
-   "price": 1224,
-   "marketCap": 21029,
-   "peRatio": 35
+   "price": 1223.3,
+   "marketCap": 21014.78,
+   "peRatio": 34.98
   },
   {
    "name": "Dilip Buildcon",
    "sector": "Construction",
    "ticker": "Dilip Buildcon",
    "isin": "INE917M01012",
-   "price": 407,
-   "marketCap": 6611,
-   "peRatio": 11.8
+   "price": 410.9,
+   "marketCap": 6674.86,
+   "peRatio": 12
   },
   {
    "name": "Engineers India",
    "sector": "Construction",
    "ticker": "Engineers India",
    "isin": "INE510A01028",
-   "price": 314,
-   "marketCap": 17640,
-   "peRatio": 22.5
+   "price": 310.2,
+   "marketCap": 17434.55,
+   "peRatio": 22.23
   },
   {
    "name": "EPack Prefab Techno.",
    "sector": "Construction",
    "ticker": "EPack Prefab Techno.",
    "isin": "INE0MLS01022",
-   "price": 242,
-   "marketCap": 2432,
-   "peRatio": 25.7
+   "price": 243.32,
+   "marketCap": 2448.5,
+   "peRatio": 25.88
   },
   {
    "name": "GK Energy",
    "sector": "Construction",
    "ticker": "GK Energy",
    "isin": "INE1AG301022",
-   "price": 122,
-   "marketCap": 2473,
-   "peRatio": 10.9
+   "price": 119.4,
+   "marketCap": 2421.64,
+   "peRatio": 10.67
   },
   {
    "name": "GPT Infraprojects",
    "sector": "Construction",
    "ticker": "GPT Infraprojects",
    "isin": "INE390G01014",
-   "price": 116,
-   "marketCap": 1458,
-   "peRatio": 14.8
+   "price": 115.72,
+   "marketCap": 1462.29,
+   "peRatio": 14.84
   },
   {
    "name": "GR Infraprojects",
    "sector": "Construction",
    "ticker": "GRINFRA",
    "isin": "INE201P01022",
-   "price": 799,
-   "marketCap": 7702,
-   "peRatio": 8.2
+   "price": 816.25,
+   "marketCap": 7898.08,
+   "peRatio": 8.41
   },
   {
    "name": "H.G. Infra Engg.",
    "sector": "Construction",
    "ticker": "H.G. Infra Engg.",
    "isin": "INE926X01010",
-   "price": 445,
-   "marketCap": 2894,
-   "peRatio": 11.1
+   "price": 438.25,
+   "marketCap": 2856.12,
+   "peRatio": 10.95
   },
   {
    "name": "Interarch Building",
    "sector": "Construction",
    "ticker": "Interarch Building",
    "isin": "INE00M901018",
-   "price": 1708,
-   "marketCap": 2873,
-   "peRatio": 21
+   "price": 1690.2,
+   "marketCap": 2834.78,
+   "peRatio": 20.72
   },
   {
    "name": "IRB Infra.Devl.",
    "sector": "Construction",
    "ticker": "IRB",
    "isin": "INE821I01022",
-   "price": 17.1,
-   "marketCap": 20678,
-   "peRatio": 21
+   "price": 16.98,
+   "marketCap": 20508.44,
+   "peRatio": 20.82
   },
   {
    "name": "Ircon Intl.",
    "sector": "Construction",
    "ticker": "IRCON",
    "isin": "INE962Y01021",
-   "price": 103,
-   "marketCap": 9702,
-   "peRatio": 18.5
+   "price": 102.47,
+   "marketCap": 9637.46,
+   "peRatio": 18.38
   },
   {
    "name": "J Kumar Infra",
    "sector": "Construction",
    "ticker": "JKIL",
    "isin": "INE576I01022",
-   "price": 461,
-   "marketCap": 3484,
-   "peRatio": 8.96
+   "price": 451.4,
+   "marketCap": 3415.54,
+   "peRatio": 8.79
   },
   {
    "name": "KNR Constructions",
    "sector": "Construction",
    "ticker": "KNR Constructions",
    "isin": "INE634I01029",
-   "price": 117,
-   "marketCap": 3302,
-   "peRatio": 9.66
+   "price": 119.33,
+   "marketCap": 3355.97,
+   "peRatio": 9.82
   },
   {
    "name": "M & B Engineer.",
    "sector": "Construction",
    "ticker": "MBEL",
    "isin": "INE08N601015",
-   "price": 252,
-   "marketCap": 1437,
-   "peRatio": 14.7
+   "price": 251.5,
+   "marketCap": 1437.28,
+   "peRatio": 14.71
   },
   {
    "name": "Man Infra",
    "sector": "Construction",
    "ticker": "MANINFRA",
    "isin": "INE949H01023",
-   "price": 127,
-   "marketCap": 5156,
-   "peRatio": 23.8
+   "price": 127.9,
+   "marketCap": 5162.89,
+   "peRatio": 23.83
   },
   {
    "name": "NBCC",
    "sector": "Construction",
    "ticker": "NBCC",
    "isin": "INE095N01031",
-   "price": 80.2,
-   "marketCap": 21738,
-   "peRatio": 31.8
+   "price": 78.01,
+   "marketCap": 21062.7,
+   "peRatio": 30.81
   },
   {
    "name": "NCC",
    "sector": "Construction",
    "ticker": "NCC",
    "isin": "INE868B01028",
-   "price": 130,
-   "marketCap": 8178,
-   "peRatio": 11.3
+   "price": 128.27,
+   "marketCap": 8053.39,
+   "peRatio": 11.12
   },
   {
    "name": "Patel Engineering",
    "sector": "Construction",
    "ticker": "Patel Engineering",
    "isin": "INE244B01030",
-   "price": 26.9,
-   "marketCap": 2662,
-   "peRatio": 6.78
+   "price": 26.45,
+   "marketCap": 2624.22,
+   "peRatio": 6.69
   },
   {
    "name": "Pennar Industries",
    "sector": "Construction",
    "ticker": "Pennar Industries",
    "isin": "INE932A01024",
-   "price": 182,
-   "marketCap": 2471,
-   "peRatio": 17.4
+   "price": 180.28,
+   "marketCap": 2432.81,
+   "peRatio": 17.12
   },
   {
    "name": "PNC Infratech",
    "sector": "Construction",
    "ticker": "PNC Infratech",
    "isin": "INE195J01029",
-   "price": 131,
-   "marketCap": 3371,
-   "peRatio": 5.56
+   "price": 129.8,
+   "marketCap": 3329.88,
+   "peRatio": 5.49
   },
   {
    "name": "Power Mech Proj.",
    "sector": "Construction",
    "ticker": "POWERMECH",
    "isin": "INE211R01019",
-   "price": 2364,
-   "marketCap": 7472,
-   "peRatio": 19.1
+   "price": 2397.2,
+   "marketCap": 7579.06,
+   "peRatio": 19.38
   },
   {
    "name": "PSP Projects",
    "sector": "Construction",
    "ticker": "PSP Projects",
    "isin": "INE488V01015",
-   "price": 779,
-   "marketCap": 3067,
-   "peRatio": 41.8
+   "price": 782.65,
+   "marketCap": 3102.56,
+   "peRatio": 42.28
   },
   {
    "name": "Rites",
    "sector": "Construction",
    "ticker": "Rites",
    "isin": "INE320J01015",
-   "price": 196,
-   "marketCap": 9418,
-   "peRatio": 22.6
+   "price": 192.31,
+   "marketCap": 9242.49,
+   "peRatio": 22.18
   },
   {
    "name": "Solarworld Energy So",
    "sector": "Construction",
    "ticker": "Solarworld Energy So",
    "isin": "INE0TY101024",
-   "price": 131,
-   "marketCap": 1136,
-   "peRatio": 9.7
+   "price": 128.98,
+   "marketCap": 1117.9,
+   "peRatio": 9.54
   },
   {
    "name": "SPML Infra",
    "sector": "Construction",
    "ticker": "SPML Infra",
    "isin": "INE937A01023",
-   "price": 161,
-   "marketCap": 1373,
-   "peRatio": 16.1
+   "price": 162.07,
+   "marketCap": 1360.03,
+   "peRatio": 15.94
   },
   {
    "name": "Sterling and Wilson",
    "sector": "Construction",
    "ticker": "Sterling and Wilson",
    "isin": "INE00M201021",
-   "price": 171,
-   "marketCap": 3983,
-   "peRatio": 12.8
+   "price": 171.08,
+   "marketCap": 3995.26,
+   "peRatio": 12.84
   },
   {
    "name": "Welspun Enterp",
    "sector": "Construction",
    "ticker": "WELENT",
    "isin": "INE625G01013",
-   "price": 750,
-   "marketCap": 10378,
-   "peRatio": 29.3
+   "price": 744.3,
+   "marketCap": 10302.14,
+   "peRatio": 29.09
   },
   {
    "name": "Kalpataru Proj.",
    "sector": "Construction - Power",
    "ticker": "KPIL",
    "isin": "INE220B01022",
-   "price": 1376,
-   "marketCap": 23494,
-   "peRatio": 21.1
+   "price": 1365.1,
+   "marketCap": 23312.16,
+   "peRatio": 20.94
   },
   {
    "name": "KEC International",
    "sector": "Construction - Power",
    "ticker": "KEC International",
    "isin": "INE389H01022",
-   "price": 391,
-   "marketCap": 10396,
-   "peRatio": 17.3
+   "price": 378.35,
+   "marketCap": 10071.68,
+   "peRatio": 16.76
   },
   {
    "name": "Skipper",
    "sector": "Construction - Power",
    "ticker": "Skipper",
    "isin": "INE439E01022",
-   "price": 536,
-   "marketCap": 6048,
-   "peRatio": 26
+   "price": 541.55,
+   "marketCap": 6114.32,
+   "peRatio": 26.29
   },
   {
    "name": "Techno Electric &Eng",
    "sector": "Construction - Power",
    "ticker": "Techno Electric &Eng",
    "isin": "INE285K01026",
-   "price": 982,
-   "marketCap": 11432,
-   "peRatio": 26.5
+   "price": 1010.15,
+   "marketCap": 11748,
+   "peRatio": 27.23
   },
   {
    "name": "Transrail Lighting",
    "sector": "Construction - Power",
    "ticker": "Transrail Lighting",
    "isin": "INE454P01035",
-   "price": 450,
-   "marketCap": 6039,
-   "peRatio": 14.5
+   "price": 451.65,
+   "marketCap": 6063.67,
+   "peRatio": 14.55
   },
   {
    "name": "Akzo Nobel",
    "sector": "Consumer Durables",
    "ticker": "JSWDULUX",
    "isin": "INE133A01011",
-   "price": 3170,
-   "marketCap": 14434,
-   "peRatio": 37.6
+   "price": 3034.4,
+   "marketCap": 13818.75,
+   "peRatio": 35.99
   },
   {
    "name": "All Time Plastic",
    "sector": "Consumer Durables",
    "ticker": "ALLTIME",
    "isin": "INE0GV601021",
-   "price": 198,
-   "marketCap": 1294,
-   "peRatio": 34.5
+   "price": 193.18,
+   "marketCap": 1265.48,
+   "peRatio": 33.69
   },
   {
    "name": "Bajaj Consumer Care",
    "sector": "Consumer Durables",
    "ticker": "BAJAJCON",
    "isin": "INE933K01021",
-   "price": 480,
-   "marketCap": 6276,
-   "peRatio": 28.1
+   "price": 493,
+   "marketCap": 6439.48,
+   "peRatio": 28.83
   },
   {
    "name": "Bajaj Electricals",
    "sector": "Consumer Durables",
    "ticker": "Bajaj Electricals",
    "isin": "INE193E01025",
-   "price": 315,
-   "marketCap": 3631,
+   "price": 309.85,
+   "marketCap": 3575.44,
    "peRatio": null
   },
   {
@@ -1788,89 +1788,89 @@
    "sector": "Consumer Durables",
    "ticker": "BATAINDIA",
    "isin": "INE176A01028",
-   "price": 625,
-   "marketCap": 8042,
-   "peRatio": 46.3
+   "price": 620.35,
+   "marketCap": 7973.21,
+   "peRatio": 45.91
   },
   {
    "name": "Blue Star",
    "sector": "Consumer Durables",
    "ticker": "Blue Star",
    "isin": "INE472A01039",
-   "price": 1575,
-   "marketCap": 32289,
-   "peRatio": 61
+   "price": 1529.5,
+   "marketCap": 31448.78,
+   "peRatio": 59.42
   },
   {
    "name": "Borosil",
    "sector": "Consumer Durables",
    "ticker": "Borosil",
    "isin": "INE02PY01013",
-   "price": 281,
-   "marketCap": 3361,
-   "peRatio": 46
+   "price": 276.21,
+   "marketCap": 3303.13,
+   "peRatio": 45.21
   },
   {
    "name": "Campus Activewear",
    "sector": "Consumer Durables",
    "ticker": "Campus Activewear",
    "isin": "INE278Y01022",
-   "price": 211,
-   "marketCap": 6454,
-   "peRatio": 47.5
+   "price": 209.76,
+   "marketCap": 6411.39,
+   "peRatio": 47.18
   },
   {
    "name": "Carysil",
    "sector": "Consumer Durables",
    "ticker": "Carysil",
    "isin": "INE482D01024",
-   "price": 1038,
-   "marketCap": 2953,
-   "peRatio": 27.4
+   "price": 1056.5,
+   "marketCap": 3004.96,
+   "peRatio": 27.88
   },
   {
    "name": "Cello World",
    "sector": "Consumer Durables",
    "ticker": "Cello World",
    "isin": "INE0LMW01024",
-   "price": 333,
-   "marketCap": 7500,
-   "peRatio": 23.6
+   "price": 333.35,
+   "marketCap": 7363.2,
+   "peRatio": 23.17
   },
   {
    "name": "Century Plyboards(I)",
    "sector": "Consumer Durables",
    "ticker": "Century Plyboards(I)",
    "isin": "INE348B01021",
-   "price": 679,
-   "marketCap": 15081,
-   "peRatio": 50.8
+   "price": 665,
+   "marketCap": 14774.5,
+   "peRatio": 49.77
   },
   {
    "name": "Cera Sanitaryware",
    "sector": "Consumer Durables",
    "ticker": "Cera Sanitaryware",
    "isin": "INE739E01017",
-   "price": 5196,
-   "marketCap": 6713,
-   "peRatio": 27.2
+   "price": 5124.5,
+   "marketCap": 6609.34,
+   "peRatio": 26.78
   },
   {
    "name": "Crompt.Greaves Cons.",
    "sector": "Consumer Durables",
    "ticker": "Crompt.Greaves Cons.",
    "isin": "INE299U01018",
-   "price": 219,
-   "marketCap": 14082,
-   "peRatio": 31.1
+   "price": 211.37,
+   "marketCap": 13610.43,
+   "peRatio": 30.06
   },
   {
    "name": "Epack Durable",
    "sector": "Consumer Durables",
    "ticker": "EPACK",
    "isin": "INE0G5901015",
-   "price": 178,
-   "marketCap": 1716,
+   "price": 177.93,
+   "marketCap": 1712.19,
    "peRatio": null
   },
   {
@@ -1878,53 +1878,53 @@
    "sector": "Consumer Durables",
    "ticker": "Eureka Forbes",
    "isin": "INE0KCE01017",
-   "price": 361,
-   "marketCap": 6996,
-   "peRatio": 34.4
+   "price": 362.95,
+   "marketCap": 7020.15,
+   "peRatio": 34.52
   },
   {
    "name": "Eveready Industries India",
    "sector": "Consumer Durables",
    "ticker": "EVEREADY",
    "isin": "INE128A01029",
-   "price": 322,
-   "marketCap": 2336,
-   "peRatio": 14.7
+   "price": 318.9,
+   "marketCap": 2318,
+   "peRatio": 14.59
   },
   {
    "name": "Greenlam Industries",
    "sector": "Consumer Durables",
    "ticker": "Greenlam Industries",
    "isin": "INE544R01021",
-   "price": 218,
-   "marketCap": 5558,
-   "peRatio": 60.3
+   "price": 214.3,
+   "marketCap": 5467.82,
+   "peRatio": 59.29
   },
   {
    "name": "Greenpanel Inds.",
    "sector": "Consumer Durables",
    "ticker": "Greenpanel Inds.",
    "isin": "INE08ZM01014",
-   "price": 159,
-   "marketCap": 1957,
-   "peRatio": 13.7
+   "price": 159.05,
+   "marketCap": 1950.39,
+   "peRatio": 13.62
   },
   {
    "name": "Greenply Industries",
    "sector": "Consumer Durables",
    "ticker": "Greenply Industries",
    "isin": "INE461C01038",
-   "price": 280,
-   "marketCap": 3486,
-   "peRatio": 31.2
+   "price": 280.25,
+   "marketCap": 3500.38,
+   "peRatio": 31.3
   },
   {
    "name": "Hindware Home Innov.",
    "sector": "Consumer Durables",
    "ticker": "Hindware Home Innov.",
    "isin": "INE05AN01011",
-   "price": 170,
-   "marketCap": 1422,
+   "price": 170.2,
+   "marketCap": 1423.66,
    "peRatio": null
   },
   {
@@ -1932,260 +1932,260 @@
    "sector": "Consumer Durables",
    "ticker": "HONASA",
    "isin": "INE0J5401028",
-   "price": 466,
-   "marketCap": 15193,
-   "peRatio": 60.2
+   "price": 441.65,
+   "marketCap": 14398.86,
+   "peRatio": 57.06
   },
   {
    "name": "IFB Industries",
    "sector": "Consumer Durables",
    "ticker": "IFBIND",
    "isin": "INE559A01017",
-   "price": 1214,
-   "marketCap": 4922,
-   "peRatio": 28.9
+   "price": 1201,
+   "marketCap": 4866.31,
+   "peRatio": 28.58
   },
   {
    "name": "Indigo Paints",
    "sector": "Consumer Durables",
    "ticker": "Indigo Paints",
    "isin": "INE09VQ01012",
-   "price": 1110,
-   "marketCap": 5302,
-   "peRatio": 32.1
+   "price": 1078.9,
+   "marketCap": 5143.73,
+   "peRatio": 31.14
   },
   {
    "name": "Jyothy Labs",
    "sector": "Consumer Durables",
    "ticker": "Jyothy Labs",
    "isin": "INE668F01031",
-   "price": 190,
-   "marketCap": 6965,
-   "peRatio": 19
+   "price": 184.26,
+   "marketCap": 6766.29,
+   "peRatio": 18.46
   },
   {
    "name": "Kajaria Ceramics",
    "sector": "Consumer Durables",
    "ticker": "Kajaria Ceramics",
    "isin": "INE217B01036",
-   "price": 1190,
-   "marketCap": 18703,
-   "peRatio": 32.4
+   "price": 1190.5,
+   "marketCap": 18961.37,
+   "peRatio": 32.85
   },
   {
    "name": "Kansai Nerolac",
    "sector": "Consumer Durables",
    "ticker": "KANSAINER",
    "isin": "INE531A01024",
-   "price": 177,
-   "marketCap": 14350,
-   "peRatio": 22.2
+   "price": 181.33,
+   "marketCap": 14664.42,
+   "peRatio": 22.71
   },
   {
    "name": "Mayur Uniquoters",
    "sector": "Consumer Durables",
    "ticker": "Mayur Uniquoters",
    "isin": "INE040D01038",
-   "price": 717,
-   "marketCap": 3119,
-   "peRatio": 15.1
+   "price": 727.25,
+   "marketCap": 3160.09,
+   "peRatio": 15.29
   },
   {
    "name": "Metro Brands",
    "sector": "Consumer Durables",
    "ticker": "Metro Brands",
    "isin": "INE317I01021",
-   "price": 875,
-   "marketCap": 23847,
-   "peRatio": 58.7
+   "price": 872.15,
+   "marketCap": 23771.45,
+   "peRatio": 58.52
   },
   {
    "name": "Orient Bell",
    "sector": "Consumer Durables",
    "ticker": "Orient Bell",
    "isin": "INE607D01018",
-   "price": 396,
-   "marketCap": 581,
-   "peRatio": 26.3
+   "price": 402.6,
+   "marketCap": 592.24,
+   "peRatio": 26.81
   },
   {
    "name": "Orient Electric",
    "sector": "Consumer Durables",
    "ticker": "Orient Electric",
    "isin": "INE142Z01019",
-   "price": 159,
-   "marketCap": 3399,
-   "peRatio": 28.5
+   "price": 156.62,
+   "marketCap": 3341.74,
+   "peRatio": 28.02
   },
   {
    "name": "Relaxo Footwears",
    "sector": "Consumer Durables",
    "ticker": "Relaxo Footwears",
    "isin": "INE131B01039",
-   "price": 292,
-   "marketCap": 7259,
-   "peRatio": 39.2
+   "price": 291.5,
+   "marketCap": 7256.56,
+   "peRatio": 39.19
   },
   {
    "name": "Rushil Decor",
    "sector": "Consumer Durables",
    "ticker": "Rushil Decor",
    "isin": "INE573K01025",
-   "price": 16,
-   "marketCap": 468,
-   "peRatio": 20.5
+   "price": 16.13,
+   "marketCap": 473.28,
+   "peRatio": 20.73
   },
   {
    "name": "Sheela Foam",
    "sector": "Consumer Durables",
    "ticker": "Sheela Foam",
    "isin": "INE916U01025",
-   "price": 629,
-   "marketCap": 6869,
-   "peRatio": 33.8
+   "price": 631.5,
+   "marketCap": 6896.19,
+   "peRatio": 33.94
   },
   {
    "name": "Sirca Paints",
    "sector": "Consumer Durables",
    "ticker": "SIRCA",
    "isin": "INE792Z01011",
-   "price": 407,
-   "marketCap": 2312,
-   "peRatio": 34.5
+   "price": 408.05,
+   "marketCap": 2317.43,
+   "peRatio": 34.58
   },
   {
    "name": "Somany Ceramics",
    "sector": "Consumer Durables",
    "ticker": "Somany Ceramics",
    "isin": "INE355A01028",
-   "price": 620,
-   "marketCap": 2543,
-   "peRatio": 23.2
+   "price": 613.85,
+   "marketCap": 2517.57,
+   "peRatio": 22.97
   },
   {
    "name": "Stove Kraft",
    "sector": "Consumer Durables",
    "ticker": "Stove Kraft",
    "isin": "INE00IN01015",
-   "price": 797,
-   "marketCap": 2635,
-   "peRatio": 32.4
+   "price": 813.65,
+   "marketCap": 2693.78,
+   "peRatio": 33.12
   },
   {
    "name": "Stylam Industrie",
    "sector": "Consumer Durables",
    "ticker": "STYLAMIND",
    "isin": "INE239C01020",
-   "price": 3281,
-   "marketCap": 5559,
-   "peRatio": 32.7
+   "price": 3336.4,
+   "marketCap": 5654.55,
+   "peRatio": 33.26
   },
   {
    "name": "Symphony",
    "sector": "Consumer Durables",
    "ticker": "Symphony",
    "isin": "INE225D01027",
-   "price": 586,
-   "marketCap": 4023,
-   "peRatio": 1034
+   "price": 580.4,
+   "marketCap": 3985.69,
+   "peRatio": 1024.41
   },
   {
    "name": "TTK Prestige",
    "sector": "Consumer Durables",
    "ticker": "TTK Prestige",
    "isin": "INE690A01028",
-   "price": 514,
-   "marketCap": 7035,
-   "peRatio": 34
+   "price": 533.75,
+   "marketCap": 7309.76,
+   "peRatio": 35.33
   },
   {
    "name": "V-Guard Industri",
    "sector": "Consumer Durables",
    "ticker": "VGUARD",
    "isin": "INE951I01027",
-   "price": 307,
-   "marketCap": 13422,
-   "peRatio": 35.3
+   "price": 307.05,
+   "marketCap": 13414.74,
+   "peRatio": 35.28
   },
   {
    "name": "Voltas",
    "sector": "Consumer Durables",
    "ticker": "Voltas",
    "isin": "INE226A01021",
-   "price": 1136,
-   "marketCap": 37612,
-   "peRatio": 80.6
+   "price": 1090,
+   "marketCap": 36066.44,
+   "peRatio": 77.28
   },
   {
    "name": "Wakefit Innovations",
    "sector": "Consumer Durables",
    "ticker": "WAKEFIT",
    "isin": "INE0E7301029",
-   "price": 139,
-   "marketCap": 4625,
-   "peRatio": 23.5
+   "price": 144.06,
+   "marketCap": 4773.16,
+   "peRatio": 24.25
   },
   {
    "name": "Whirlpool India",
    "sector": "Consumer Durables",
    "ticker": "WHIRLPOOL",
    "isin": "INE716A01013",
-   "price": 917,
-   "marketCap": 11647,
-   "peRatio": 42.7
+   "price": 888.2,
+   "marketCap": 11268.76,
+   "peRatio": 41.32
   },
   {
    "name": "HEG",
    "sector": "Elect and Refrac",
    "ticker": "HEGAM",
    "isin": "INE545A01024",
-   "price": 240,
-   "marketCap": 4636,
-   "peRatio": 13.1
+   "price": 238.25,
+   "marketCap": 4597.69,
+   "peRatio": 13
   },
   {
    "name": "IFGL Refractories",
    "sector": "Elect and Refrac",
    "ticker": "IFGL Refractories",
    "isin": "INE133Y01011",
-   "price": 193,
-   "marketCap": 1415,
-   "peRatio": 33
+   "price": 189.61,
+   "marketCap": 1366.68,
+   "peRatio": 31.87
   },
   {
    "name": "RHI Magnesita",
    "sector": "Elect and Refrac",
    "ticker": "RHI Magnesita",
    "isin": "INE743M01012",
-   "price": 387,
-   "marketCap": 7993,
-   "peRatio": 42.7
+   "price": 393.2,
+   "marketCap": 8119.64,
+   "peRatio": 43.38
   },
   {
    "name": "Apar Inds.",
    "sector": "Electrical Equipment",
    "ticker": "APARINDS",
    "isin": "INE372A01015",
-   "price": 17263,
-   "marketCap": 72319,
-   "peRatio": 60
+   "price": 17803,
+   "marketCap": 71522.19,
+   "peRatio": 59.34
   },
   {
    "name": "Elecon Engg.Co",
    "sector": "Electrical Equipment",
    "ticker": "ELECON",
    "isin": "INE205B01031",
-   "price": 481,
-   "marketCap": 10800,
-   "peRatio": 35.7
+   "price": 480.4,
+   "marketCap": 10780.17,
+   "peRatio": 35.63
   },
   {
    "name": "Exicom Tele-Sys.",
    "sector": "Electrical Equipment",
    "ticker": "EXICOM",
    "isin": "INE777F01014",
-   "price": 156,
-   "marketCap": 2169,
+   "price": 152.97,
+   "marketCap": 2127.5,
    "peRatio": null
   },
   {
@@ -2193,341 +2193,341 @@
    "sector": "Electrical Equipment",
    "ticker": "GVPIL",
    "isin": "INE878A01011",
-   "price": 651,
-   "marketCap": 4379,
-   "peRatio": 11.8
+   "price": 683.95,
+   "marketCap": 4598.02,
+   "peRatio": 12.39
   },
   {
    "name": "Genus Power",
    "sector": "Electrical Equipment",
    "ticker": "GENUSPOWER",
    "isin": "INE955D01029",
-   "price": 294,
-   "marketCap": 8955,
-   "peRatio": 13.7
+   "price": 293.65,
+   "marketCap": 8934.08,
+   "peRatio": 13.67
   },
   {
    "name": "Inox Wind",
    "sector": "Electrical Equipment",
    "ticker": "Inox Wind",
    "isin": "INE066P01011",
-   "price": 72,
-   "marketCap": 12402,
-   "peRatio": 36
+   "price": 71.5,
+   "marketCap": 12356.9,
+   "peRatio": 35.87
   },
   {
    "name": "KP Green Engg.",
    "sector": "Electrical Equipment",
    "ticker": "kp-green-engg.",
    "isin": "INE0QVH01025",
-   "price": 298,
-   "marketCap": 1492,
-   "peRatio": 11
+   "price": 302,
+   "marketCap": 1510,
+   "peRatio": 11.1
   },
   {
    "name": "RIR Power Electr",
    "sector": "Electrical Equipment",
    "ticker": "rir-power-electr",
    "isin": "INE302D01024",
-   "price": 186,
-   "marketCap": 1483,
-   "peRatio": 230
+   "price": 188.08,
+   "marketCap": 1496.6,
+   "peRatio": 232.11
   },
   {
    "name": "RMC Switchgears",
    "sector": "Electrical Equipment",
    "ticker": "RMC",
    "isin": "INE655V01019",
-   "price": 209,
-   "marketCap": 219,
-   "peRatio": 10.8
+   "price": 210.37,
+   "marketCap": 222.51,
+   "peRatio": 10.93
   },
   {
    "name": "Salzer Electronics",
    "sector": "Electrical Equipment",
    "ticker": "Salzer Electronics",
    "isin": "INE457F01013",
-   "price": 536,
-   "marketCap": 944,
-   "peRatio": 21.6
+   "price": 535.65,
+   "marketCap": 947.18,
+   "peRatio": 21.73
   },
   {
    "name": "Servotech Renew",
    "sector": "Electrical Equipment",
    "ticker": "SERVOTECH",
    "isin": "INE782X01033",
-   "price": 72.3,
-   "marketCap": 1634,
-   "peRatio": 43.6
+   "price": 71.34,
+   "marketCap": 1611.18,
+   "peRatio": 42.99
   },
   {
    "name": "TD Power Systems",
    "sector": "Electrical Equipment",
    "ticker": "TD Power Systems",
    "isin": "INE419M01035",
-   "price": 722,
-   "marketCap": 22639,
-   "peRatio": 82.3
+   "price": 777.35,
+   "marketCap": 24288.83,
+   "peRatio": 88.3
   },
   {
    "name": "Triveni Turbine",
    "sector": "Electrical Equipment",
    "ticker": "Triveni Turbine",
    "isin": "INE152M01016",
-   "price": 552,
-   "marketCap": 17532,
-   "peRatio": 50.5
+   "price": 543.55,
+   "marketCap": 17279.18,
+   "peRatio": 49.77
   },
   {
    "name": "Atlanta Electricals",
    "sector": "Electrical Transformers",
    "ticker": "Atlanta Electricals",
    "isin": "INE0Z4F01028",
-   "price": 1613,
-   "marketCap": 12404,
-   "peRatio": 56.8
+   "price": 1634.2,
+   "marketCap": 12566.45,
+   "peRatio": 57.55
   },
   {
    "name": "Quality Power El",
    "sector": "Electrical Transformers",
    "ticker": "QPOWER",
    "isin": "INE0SII01026",
-   "price": 1593,
-   "marketCap": 12325,
-   "peRatio": 92.5
+   "price": 1614.3,
+   "marketCap": 12501.8,
+   "peRatio": 93.73
   },
   {
    "name": "Rishabh Instruments",
    "sector": "Electrical Transformers",
    "ticker": "Rishabh Instruments",
    "isin": "INE0N2P01017",
-   "price": 714,
-   "marketCap": 2755,
-   "peRatio": 34.1
+   "price": 723.85,
+   "marketCap": 2795.76,
+   "peRatio": 34.6
   },
   {
    "name": "Schneider Ele. Infra",
    "sector": "Electrical Transformers",
    "ticker": "Schneider Ele. Infra",
    "isin": "INE839M01018",
-   "price": 1195,
-   "marketCap": 28571,
-   "peRatio": 147
+   "price": 1192.7,
+   "marketCap": 28517.94,
+   "peRatio": 146.72
   },
   {
    "name": "Shilchar Tech.",
    "sector": "Electrical Transformers",
    "ticker": "shilchar-tech.",
    "isin": "INE024F01011",
-   "price": 4044,
-   "marketCap": 4626,
-   "peRatio": 33.7
+   "price": 4032.7,
+   "marketCap": 4613.49,
+   "peRatio": 33.61
   },
   {
    "name": "Supreme Power",
    "sector": "Electrical Transformers",
    "ticker": "SUPREMEPWR",
    "isin": "INE0QHG01026",
-   "price": 205,
-   "marketCap": 512,
-   "peRatio": 24.5
+   "price": 208,
+   "marketCap": 519.82,
+   "peRatio": 24.88
   },
   {
    "name": "Transformers & Rect",
    "sector": "Electrical Transformers",
    "ticker": "Transformers & Rect",
    "isin": "INE763I01026",
-   "price": 270,
-   "marketCap": 8103,
-   "peRatio": 31.3
+   "price": 272.85,
+   "marketCap": 8190.02,
+   "peRatio": 31.64
   },
   {
    "name": "Voltamp Transformers",
    "sector": "Electrical Transformers",
    "ticker": "VOLTAMP",
    "isin": "INE540H01012",
-   "price": 10697,
-   "marketCap": 10822,
-   "peRatio": 34.1
+   "price": 10624,
+   "marketCap": 10748.43,
+   "peRatio": 33.86
   },
   {
    "name": "Yash Highvoltage",
    "sector": "Electrical Transformers",
    "ticker": "Yash Highvoltage",
    "isin": "INE00GK01023",
-   "price": 1059,
-   "marketCap": 3164,
-   "peRatio": 81.3
+   "price": 1102,
+   "marketCap": 3293,
+   "peRatio": 84.6
   },
   {
    "name": "Aimtron",
    "sector": "EMS & Electronics",
    "ticker": "AIMTRON",
    "isin": "INE0RUV01018",
-   "price": 1802,
-   "marketCap": 3833,
-   "peRatio": 83.4
+   "price": 1873.4,
+   "marketCap": 3860.92,
+   "peRatio": 84.01
   },
   {
    "name": "Amber Enterprises",
    "sector": "EMS & Electronics",
    "ticker": "Amber Enterprises",
    "isin": "INE371P01015",
-   "price": 6990,
-   "marketCap": 24647,
-   "peRatio": 119
+   "price": 6606.5,
+   "marketCap": 23299.65,
+   "peRatio": 112.49
   },
   {
    "name": "Avalon Tech",
    "sector": "EMS & Electronics",
    "ticker": "AVALON",
    "isin": "INE0LCL01028",
-   "price": 2310,
-   "marketCap": 15458,
-   "peRatio": 116
+   "price": 2302,
+   "marketCap": 15374.53,
+   "peRatio": 115.37
   },
   {
    "name": "Centum Electronics",
    "sector": "EMS & Electronics",
    "ticker": "CENTUM",
    "isin": "INE320B01020",
-   "price": 4571,
-   "marketCap": 6752,
-   "peRatio": 77.2
+   "price": 4920.7,
+   "marketCap": 7262.47,
+   "peRatio": 83.03
   },
   {
    "name": "Cyient DLM",
    "sector": "EMS & Electronics",
    "ticker": "Cyient DLM",
    "isin": "INE055S01018",
-   "price": 918,
-   "marketCap": 7287,
-   "peRatio": 88.8
+   "price": 921.15,
+   "marketCap": 7310.65,
+   "peRatio": 89.09
   },
   {
    "name": "IKIO Technologies",
    "sector": "EMS & Electronics",
    "ticker": "IKIO Technologies",
    "isin": "INE0LOJ01019",
-   "price": 200,
-   "marketCap": 1542,
-   "peRatio": 33.2
+   "price": 197.3,
+   "marketCap": 1524.75,
+   "peRatio": 32.82
   },
   {
    "name": "Kaynes Technology",
    "sector": "EMS & Electronics",
    "ticker": "KAYNES",
    "isin": "INE918Z01012",
-   "price": 3658,
-   "marketCap": 24624,
-   "peRatio": 70.9
+   "price": 3511.5,
+   "marketCap": 23539.22,
+   "peRatio": 67.77
   },
   {
    "name": "Maxvolt Energy Indus",
    "sector": "EMS & Electronics",
    "ticker": "MAXVOLT",
    "isin": "INE10A501018",
-   "price": 447,
-   "marketCap": 488,
-   "peRatio": 17.4
+   "price": 447.25,
+   "marketCap": 487.68,
+   "peRatio": 17.38
   },
   {
    "name": "PG Electroplast",
    "sector": "EMS & Electronics",
    "ticker": "PG Electroplast",
    "isin": "INE457L01029",
-   "price": 507,
-   "marketCap": 14553,
-   "peRatio": 70.7
+   "price": 493.15,
+   "marketCap": 14071.67,
+   "peRatio": 68.36
   },
   {
    "name": "Sahasra Electronic",
    "sector": "EMS & Electronics",
    "ticker": "SAHASRA",
    "isin": "INE0RBQ01018",
-   "price": 450,
-   "marketCap": 1125,
-   "peRatio": 79.3
+   "price": 432.75,
+   "marketCap": 1081.56,
+   "peRatio": 76.24
   },
   {
    "name": "Syrma SGS Tech.",
    "sector": "EMS & Electronics",
    "ticker": "SYRMA",
    "isin": "INE0DYJ01015",
-   "price": 1746,
-   "marketCap": 33671,
-   "peRatio": 90.7
+   "price": 1692.6,
+   "marketCap": 32638.49,
+   "peRatio": 87.92
   },
   {
    "name": "Vinyas Innovativ",
    "sector": "EMS & Electronics",
    "ticker": "VINYAS",
    "isin": "INE0OLS01010",
-   "price": 1493,
-   "marketCap": 1879,
-   "peRatio": 61.6
+   "price": 1490.9,
+   "marketCap": 1876.26,
+   "peRatio": 61.51
   },
   {
    "name": "Virtuoso Optoelectro",
    "sector": "EMS & Electronics",
    "ticker": "Virtuoso Optoelectro",
    "isin": "INE0I0T01010",
-   "price": 498,
-   "marketCap": 1704,
-   "peRatio": 96.5
+   "price": 497.95,
+   "marketCap": 1585.13,
+   "peRatio": 89.77
   },
   {
    "name": "HDFC Bank",
    "sector": "Finance",
    "ticker": "HDFCBANK",
    "isin": "INE040A01034",
-   "price": 719,
-   "marketCap": 1108237,
-   "peRatio": 14
+   "price": 722.7,
+   "marketCap": 1113016.5,
+   "peRatio": 14.08
   },
   {
    "name": "ICICI Bank",
    "sector": "Finance",
    "ticker": "ICICIBANK",
    "isin": "INE090A01021",
-   "price": 1302,
-   "marketCap": 934884,
-   "peRatio": 16.7
+   "price": 1292.2,
+   "marketCap": 926960.3,
+   "peRatio": 16.55
   },
   {
    "name": "Manba Finance",
    "sector": "Finance",
    "ticker": "MANBA",
    "isin": "INE939X01013",
-   "price": 138,
-   "marketCap": 693,
-   "peRatio": 14.2
+   "price": 136.52,
+   "marketCap": 685.87,
+   "peRatio": 14.05
   },
   {
    "name": "Northern ARC Capital",
    "sector": "Finance",
    "ticker": "NORTHARC",
    "isin": "INE850M01015",
-   "price": 291,
-   "marketCap": 4709,
-   "peRatio": 10.7
+   "price": 290.75,
+   "marketCap": 4698.88,
+   "peRatio": 10.68
   },
   {
    "name": "OnEMI Technology",
    "sector": "Finance",
    "ticker": "KISSHT",
    "isin": "INE12F801023",
-   "price": 345,
-   "marketCap": 6116,
-   "peRatio": 19.3
+   "price": 358.65,
+   "marketCap": 6042.64,
+   "peRatio": 19.07
   },
   {
    "name": "State Bank of India",
    "sector": "Finance",
    "ticker": "SBIN",
    "isin": "INE062A01020",
-   "price": 962,
-   "marketCap": 888452,
+   "price": 964.7,
+   "marketCap": 890477.68,
    "peRatio": 10.6
   },
   {
@@ -2535,413 +2535,413 @@
    "sector": "Food Products",
    "ticker": "ADF Foods",
    "isin": "INE982B01027",
-   "price": 267,
-   "marketCap": 2939,
-   "peRatio": 30.4
+   "price": 268.3,
+   "marketCap": 2947.64,
+   "peRatio": 30.49
   },
   {
    "name": "Apex Frozen Foods",
    "sector": "Food Products",
    "ticker": "Apex Frozen Foods",
    "isin": "INE346W01013",
-   "price": 343,
-   "marketCap": 1071,
-   "peRatio": 21.6
+   "price": 343.1,
+   "marketCap": 1072.19,
+   "peRatio": 21.62
   },
   {
    "name": "Avanti Feeds",
    "sector": "Food Products",
    "ticker": "Avanti Feeds",
    "isin": "INE871C01038",
-   "price": 742,
-   "marketCap": 10098,
-   "peRatio": 18.8
+   "price": 747.5,
+   "marketCap": 10184.36,
+   "peRatio": 18.96
   },
   {
    "name": "Bikaji Foods",
    "sector": "Food Products",
    "ticker": "BIKAJI",
    "isin": "INE00E101023",
-   "price": 558,
-   "marketCap": 14006,
-   "peRatio": 53.6
+   "price": 531.15,
+   "marketCap": 13317.86,
+   "peRatio": 50.96
   },
   {
    "name": "CCL Products",
    "sector": "Food Products",
    "ticker": "CCL",
    "isin": "INE421D01022",
-   "price": 1032,
-   "marketCap": 13754,
-   "peRatio": 31.8
+   "price": 1006.2,
+   "marketCap": 13435.58,
+   "peRatio": 31.07
   },
   {
    "name": "Freshara Agro",
    "sector": "Food Products",
    "ticker": "FRESHARA",
    "isin": "INE0SFW01015",
-   "price": 420,
-   "marketCap": 986,
-   "peRatio": 26.6
+   "price": 414.75,
+   "marketCap": 974.63,
+   "peRatio": 26.29
   },
   {
    "name": "Ganesh Consumer Prod",
    "sector": "Food Products",
    "ticker": "Ganesh Consumer Prod",
    "isin": "INE652V01016",
-   "price": 159,
-   "marketCap": 643,
-   "peRatio": 14.2
+   "price": 153.08,
+   "marketCap": 618.64,
+   "peRatio": 13.66
   },
   {
    "name": "Godrej Agrovet",
    "sector": "Food Products",
    "ticker": "Godrej Agrovet",
    "isin": "INE850D01014",
-   "price": 642,
-   "marketCap": 12357,
-   "peRatio": 26.3
+   "price": 631.7,
+   "marketCap": 12151.38,
+   "peRatio": 25.92
   },
   {
    "name": "Gopal Snacks",
    "sector": "Food Products",
    "ticker": "Gopal Snacks",
    "isin": "INE0L9R01028",
-   "price": 254,
-   "marketCap": 3168,
-   "peRatio": 57.6
+   "price": 253,
+   "marketCap": 3154.07,
+   "peRatio": 57.34
   },
   {
    "name": "Hindustan Foods",
    "sector": "Food Products",
    "ticker": "Hindustan Foods",
    "isin": "INE254N01026",
-   "price": 602,
-   "marketCap": 7305,
-   "peRatio": 45.2
+   "price": 596.85,
+   "marketCap": 7131.27,
+   "peRatio": 44.13
   },
   {
    "name": "Kaveri Seed Company",
    "sector": "Food Products",
    "ticker": "KSCL",
    "isin": "INE455I01029",
-   "price": 770,
-   "marketCap": 3951,
-   "peRatio": 15.8
+   "price": 742.1,
+   "marketCap": 3817.29,
+   "peRatio": 15.27
   },
   {
    "name": "KRBL",
    "sector": "Food Products",
    "ticker": "KRBL",
    "isin": "INE001B01026",
-   "price": 383,
-   "marketCap": 8749,
-   "peRatio": 11.5
+   "price": 386.2,
+   "marketCap": 8839.73,
+   "peRatio": 11.62
   },
   {
    "name": "LT Foods",
    "sector": "Food Products",
    "ticker": "LT Foods",
    "isin": "INE818H01020",
-   "price": 408,
-   "marketCap": 14189,
-   "peRatio": 22.2
+   "price": 402.8,
+   "marketCap": 13987.35,
+   "peRatio": 21.88
   },
   {
    "name": "Manorama Industries",
    "sector": "Food Products",
    "ticker": "Manorama Industries",
    "isin": "INE00VM01036",
-   "price": 1865,
-   "marketCap": 11770,
-   "peRatio": 45.6
+   "price": 1863.5,
+   "marketCap": 11762.86,
+   "peRatio": 45.57
   },
   {
    "name": "Mrs Bectors Food",
    "sector": "Food Products",
    "ticker": "BECTORFOOD",
    "isin": "INE495P01020",
-   "price": 212,
-   "marketCap": 6502,
-   "peRatio": 43.7
+   "price": 208.7,
+   "marketCap": 6406.89,
+   "peRatio": 43.06
   },
   {
    "name": "Venkys India",
    "sector": "Food Products",
    "ticker": "Venkys India",
    "isin": "INE398A01010",
-   "price": 1663,
-   "marketCap": 2343,
-   "peRatio": 13.5
+   "price": 1633,
+   "marketCap": 2300.46,
+   "peRatio": 13.25
   },
   {
    "name": "Vintage Coffee",
    "sector": "Food Products",
    "ticker": "VINCOFE",
    "isin": "INE498Q01014",
-   "price": 180,
-   "marketCap": 2632,
-   "peRatio": 33.4
+   "price": 182.56,
+   "marketCap": 2659.69,
+   "peRatio": 33.75
   },
   {
    "name": "Zydus Wellness",
    "sector": "Food Products",
    "ticker": "Zydus Wellness",
    "isin": "INE768C01028",
-   "price": 524,
-   "marketCap": 16733,
-   "peRatio": 75.5
+   "price": 506.1,
+   "marketCap": 16102.11,
+   "peRatio": 72.65
   },
   {
    "name": "AIA Engineering",
    "sector": "Forging",
    "ticker": "AIA Engineering",
    "isin": "INE212H01026",
-   "price": 3841,
-   "marketCap": 35838,
-   "peRatio": 28.2
+   "price": 3835.7,
+   "marketCap": 35794.89,
+   "peRatio": 28.17
   },
   {
    "name": "Happy Forgings",
    "sector": "Forging",
    "ticker": "Happy Forgings",
    "isin": "INE330T01021",
-   "price": 1997,
-   "marketCap": 18829,
-   "peRatio": 57.5
+   "price": 2074.8,
+   "marketCap": 19575.83,
+   "peRatio": 59.77
   },
   {
    "name": "MM Forgings",
    "sector": "Forging",
    "ticker": "MMFL",
    "isin": "INE227C01017",
-   "price": 604,
-   "marketCap": 2920,
-   "peRatio": 26
+   "price": 612.5,
+   "marketCap": 2957.25,
+   "peRatio": 26.33
   },
   {
    "name": "Neetu Yoshi",
    "sector": "Forging",
    "ticker": "Neetu Yoshi",
    "isin": "INE0UZO01024",
-   "price": 246,
-   "marketCap": 954,
-   "peRatio": 38.1
+   "price": 248,
+   "marketCap": 963,
+   "peRatio": 38.5
   },
   {
    "name": "Nelcast",
    "sector": "Forging",
    "ticker": "Nelcast",
    "isin": "INE189I01024",
-   "price": 117,
-   "marketCap": 1014,
-   "peRatio": 24.7
+   "price": 118.93,
+   "marketCap": 1034.71,
+   "peRatio": 25.2
   },
   {
    "name": "Steelcast",
    "sector": "Forging",
    "ticker": "Steelcast",
    "isin": "INE124E01038",
-   "price": 369,
-   "marketCap": 3736,
-   "peRatio": 41.2
+   "price": 371.8,
+   "marketCap": 3762.62,
+   "peRatio": 41.5
   },
   {
    "name": "Synergy Green",
    "sector": "Forging",
    "ticker": "SGIL",
    "isin": "INE00QT01015",
-   "price": 651,
-   "marketCap": 1017,
-   "peRatio": 204
+   "price": 657.35,
+   "marketCap": 1021.72,
+   "peRatio": 204.95
   },
   {
    "name": "Control Print",
    "sector": "Hardware",
    "ticker": "Control Print",
    "isin": "INE663B01015",
-   "price": 599,
-   "marketCap": 960,
-   "peRatio": 24.7
+   "price": 608.5,
+   "marketCap": 973.25,
+   "peRatio": 25.04
   },
   {
    "name": "GNG Electronics",
    "sector": "Hardware",
    "ticker": "GNG Electronics",
    "isin": "INE18JU01028",
-   "price": 672,
-   "marketCap": 7664,
-   "peRatio": 53.8
+   "price": 674.8,
+   "marketCap": 7693.5,
+   "peRatio": 54
   },
   {
    "name": "Rashi Peripheral",
    "sector": "Hardware",
    "ticker": "Rashi Peripheral",
    "isin": "INE0J1F01024",
-   "price": 884,
-   "marketCap": 5876,
-   "peRatio": 18.4
+   "price": 925.35,
+   "marketCap": 6098.03,
+   "peRatio": 19.09
   },
   {
    "name": "TVS Electronics",
    "sector": "Hardware",
    "ticker": "TVS Electronics",
    "isin": "INE236G01019",
-   "price": 379,
-   "marketCap": 704,
-   "peRatio": 71.5
+   "price": 374.3,
+   "marketCap": 698.08,
+   "peRatio": 70.9
   },
   {
    "name": "Anondita Medicare",
    "sector": "Health Products",
    "ticker": "ANONDITA",
    "isin": "INE0VTV01012",
-   "price": 1103,
-   "marketCap": 2101,
-   "peRatio": 62.8
+   "price": 1094.75,
+   "marketCap": 2084.93,
+   "peRatio": 62.32
   },
   {
    "name": "Laxmi Denta",
    "sector": "Health Products",
    "ticker": "Laxmi Denta",
    "isin": "INE0WO601020",
-   "price": 193,
-   "marketCap": 1057,
-   "peRatio": 30.4
+   "price": 192.49,
+   "marketCap": 1057.97,
+   "peRatio": 30.43
   },
   {
    "name": "OSEL Devices",
    "sector": "Health Products",
    "ticker": "OSELDEVICE",
    "isin": "INE0RMF01018",
-   "price": 385,
-   "marketCap": 685,
-   "peRatio": 23.4
+   "price": 388.25,
+   "marketCap": 690.88,
+   "peRatio": 23.6
   },
   {
    "name": "Poly Medicure",
    "sector": "Health Products",
    "ticker": "Poly Medicure",
    "isin": "INE205C01021",
-   "price": 1637,
-   "marketCap": 16591,
-   "peRatio": 51.8
+   "price": 1644.7,
+   "marketCap": 16670.6,
+   "peRatio": 52.05
   },
   {
    "name": "Prevest Denpro",
    "sector": "Health Products",
    "ticker": "Prevest Denpro",
    "isin": "INE0GAO01018",
-   "price": 383,
-   "marketCap": 460,
-   "peRatio": 20.4
+   "price": 385,
+   "marketCap": 462,
+   "peRatio": 20.5
   },
   {
    "name": "Tarsons Products",
    "sector": "Health Products",
    "ticker": "Tarsons Products",
    "isin": "INE144Z01023",
-   "price": 338,
-   "marketCap": 1801,
-   "peRatio": 152
+   "price": 330.35,
+   "marketCap": 1757.67,
+   "peRatio": 148.31
   },
   {
    "name": "Vasa Denticity",
    "sector": "Health Products",
    "ticker": "DENTALKART",
    "isin": "INE0N5801013",
-   "price": 424,
-   "marketCap": 736,
-   "peRatio": 63.4
+   "price": 434.85,
+   "marketCap": 754.18,
+   "peRatio": 65.02
   },
   {
    "name": "3B Blackbio Diagnostics",
    "sector": "Healthcare",
    "ticker": "3b-blackbio-diagnostics",
    "isin": "INE994E01018",
-   "price": 1585,
-   "marketCap": 1353,
-   "peRatio": 24.4
+   "price": 1622.7,
+   "marketCap": 1392.71,
+   "peRatio": 25.12
   },
   {
    "name": "Dr Lal PathLabs",
    "sector": "Healthcare",
    "ticker": "LALPATHLAB",
    "isin": "INE600L01024",
-   "price": 1942,
-   "marketCap": 32605,
-   "peRatio": 58
+   "price": 1950.4,
+   "marketCap": 32696.07,
+   "peRatio": 58.16
   },
   {
    "name": "GPT Healthcare (Agilus)",
    "sector": "Healthcare",
    "ticker": "GPTHEALTH",
    "isin": "INE486R01017",
-   "price": 156,
-   "marketCap": 1285,
-   "peRatio": 30.8
+   "price": 153.8,
+   "marketCap": 1262,
+   "peRatio": 30.25
   },
   {
    "name": "Hemant Surgical Inds",
    "sector": "Healthcare",
    "ticker": "HSIL",
    "isin": "INE0GYI01028",
-   "price": 587,
-   "marketCap": 853,
-   "peRatio": 50.4
+   "price": 598,
+   "marketCap": 869,
+   "peRatio": 51.3
   },
   {
    "name": "Indegene",
    "sector": "Healthcare",
    "ticker": "Indegene",
    "isin": "INE065X01017",
-   "price": 613,
-   "marketCap": 14761,
-   "peRatio": 35.5
+   "price": 605.15,
+   "marketCap": 14581.35,
+   "peRatio": 35.07
   },
   {
    "name": "Krsnaa Diagnostics",
    "sector": "Healthcare",
    "ticker": "Krsnaa Diagnostics",
    "isin": "INE08LI01020",
-   "price": 534,
-   "marketCap": 1732,
-   "peRatio": 17.8
+   "price": 553.6,
+   "marketCap": 1795.8,
+   "peRatio": 18.45
   },
   {
    "name": "Metropolis Health.",
    "sector": "Healthcare",
    "ticker": "Metropolis Health.",
    "isin": "INE112L01020",
-   "price": 572,
-   "marketCap": 11890,
-   "peRatio": 57.1
+   "price": 562.3,
+   "marketCap": 11658.04,
+   "peRatio": 55.98
   },
   {
    "name": "Molbio Diagnostics",
    "sector": "Healthcare",
    "ticker": "MOLBIO",
    "isin": "INE869T01028",
-   "price": 1238,
-   "marketCap": 14259,
-   "peRatio": 57.1
+   "price": 1255.6,
+   "marketCap": 14469.53,
+   "peRatio": 57.95
   },
   {
    "name": "Nephrocare Health",
    "sector": "Healthcare",
    "ticker": "NEPHROPLUS",
    "isin": "INE428V01029",
-   "price": 674,
-   "marketCap": 6778,
-   "peRatio": 79.6
+   "price": 663.4,
+   "marketCap": 6656.6,
+   "peRatio": 78.25
   },
   {
    "name": "Sastasundar Ventures",
    "sector": "Healthcare",
    "ticker": "Sastasundar Ventures",
    "isin": "INE019J01013",
-   "price": 285,
-   "marketCap": 907,
+   "price": 285.05,
+   "marketCap": 906.76,
    "peRatio": null
   },
   {
@@ -2949,269 +2949,269 @@
    "sector": "Healthcare",
    "ticker": "Suraksha Diagnostic",
    "isin": "INE877V01027",
-   "price": 347,
-   "marketCap": 1808,
-   "peRatio": 50.5
+   "price": 355.05,
+   "marketCap": 1849.13,
+   "peRatio": 51.64
   },
   {
    "name": "Syngene International",
    "sector": "Healthcare",
    "ticker": "SYNGENE",
    "isin": "INE398R01022",
-   "price": 376,
-   "marketCap": 15198,
-   "peRatio": 51.3
+   "price": 367.2,
+   "marketCap": 14822.73,
+   "peRatio": 50.03
   },
   {
    "name": "Thyrocare Technologies",
    "sector": "Healthcare",
    "ticker": "THYROCARE",
    "isin": "INE594H01019",
-   "price": 548,
-   "marketCap": 8740,
-   "peRatio": 48.4
+   "price": 547.1,
+   "marketCap": 8707.93,
+   "peRatio": 48.22
   },
   {
    "name": "Vijaya Diagnostic Centre",
    "sector": "Healthcare",
    "ticker": "VIJAYA",
    "isin": "INE043W01024",
-   "price": 1501,
-   "marketCap": 15445,
-   "peRatio": 82.4
+   "price": 1475,
+   "marketCap": 15177.27,
+   "peRatio": 80.97
   },
   {
    "name": "Vimta Labs",
    "sector": "Healthcare",
    "ticker": "Vimta Labs",
    "isin": "INE579C01029",
-   "price": 585,
-   "marketCap": 2614,
-   "peRatio": 43
+   "price": 591.4,
+   "marketCap": 2641.75,
+   "peRatio": 43.4
   },
   {
    "name": "Artemis Medicare",
    "sector": "Hospitals",
    "ticker": "Artemis Medicare",
    "isin": "INE025R01021",
-   "price": 366,
-   "marketCap": 5788,
-   "peRatio": 49.9
+   "price": 366.6,
+   "marketCap": 5803.51,
+   "peRatio": 50.07
   },
   {
    "name": "Dr Agarwal's Health Care",
    "sector": "Hospitals",
    "ticker": "AGARWALEYE",
    "isin": "INE943P01029",
-   "price": 504,
-   "marketCap": 15972,
-   "peRatio": 108
+   "price": 495.25,
+   "marketCap": 15698.58,
+   "peRatio": 106.17
   },
   {
    "name": "Global Health (Medanta)",
    "sector": "Hospitals",
    "ticker": "MEDANTA",
    "isin": "INE474Q01031",
-   "price": 1433,
-   "marketCap": 38543,
-   "peRatio": 67.3
+   "price": 1415.1,
+   "marketCap": 38047.48,
+   "peRatio": 66.43
   },
   {
    "name": "Jupiter Life Line Hospitals",
    "sector": "Hospitals",
    "ticker": "JLHL",
    "isin": "INE682M01020",
-   "price": 264,
-   "marketCap": 8669,
-   "peRatio": 45.4
+   "price": 262.05,
+   "marketCap": 8590.79,
+   "peRatio": 44.99
   },
   {
    "name": "Krishna Inst.Medi",
    "sector": "Hospitals",
    "ticker": "Krishna Inst.Medi",
    "isin": "INE967H01025",
-   "price": 766,
-   "marketCap": 32196,
-   "peRatio": 154
+   "price": 769.9,
+   "marketCap": 32336.3,
+   "peRatio": 154.67
   },
   {
    "name": "Narayana Hrudayalaya",
    "sector": "Hospitals",
    "ticker": "NH",
    "isin": "INE410P01011",
-   "price": 1820,
-   "marketCap": 37195,
-   "peRatio": 43.2
+   "price": 1789.9,
+   "marketCap": 36578.54,
+   "peRatio": 42.48
   },
   {
    "name": "Rainbow Children's Medicare",
    "sector": "Hospitals",
    "ticker": "RAINBOW",
    "isin": "INE961O01016",
-   "price": 1373,
-   "marketCap": 13949,
-   "peRatio": 48.7
+   "price": 1367.8,
+   "marketCap": 13891.26,
+   "peRatio": 48.5
   },
   {
    "name": "Shalby",
    "sector": "Hospitals",
    "ticker": "Shalby",
    "isin": "INE597J01018",
-   "price": 143,
-   "marketCap": 1538,
-   "peRatio": 39.1
+   "price": 142.01,
+   "marketCap": 1533.85,
+   "peRatio": 38.99
   },
   {
    "name": "Yatharth Hospital",
    "sector": "Hospitals",
    "ticker": "Yatharth Hospital",
    "isin": "INE0JO301016",
-   "price": 1100,
-   "marketCap": 10610,
-   "peRatio": 58.6
+   "price": 1108,
+   "marketCap": 10676.06,
+   "peRatio": 58.96
   },
   {
    "name": "Brigade Hotel Ven.",
    "sector": "Hotels and Travels",
    "ticker": "Brigade Hotel Ven.",
    "isin": "INE03NU01014",
-   "price": 55.5,
-   "marketCap": 2116,
-   "peRatio": 31
+   "price": 56.14,
+   "marketCap": 2132.44,
+   "peRatio": 31.25
   },
   {
    "name": "Chalet Hotels",
    "sector": "Hotels and Travels",
    "ticker": "Chalet Hotels",
    "isin": "INE427F01016",
-   "price": 869,
-   "marketCap": 19041,
-   "peRatio": 35.6
+   "price": 840.75,
+   "marketCap": 18411.93,
+   "peRatio": 34.43
   },
   {
    "name": "EIH",
    "sector": "Hotels and Travels",
    "ticker": "EIH",
    "isin": "INE230A01023",
-   "price": 295,
-   "marketCap": 18442,
-   "peRatio": 25.4
+   "price": 301.85,
+   "marketCap": 18876.62,
+   "peRatio": 26
   },
   {
    "name": "Juniper Hotels",
    "sector": "Hotels and Travels",
    "ticker": "Juniper Hotels",
    "isin": "INE696F01016",
-   "price": 215,
-   "marketCap": 4777,
-   "peRatio": 25.8
+   "price": 213.95,
+   "marketCap": 4760.44,
+   "peRatio": 25.71
   },
   {
    "name": "Leela Palaces Hotels",
    "sector": "Hotels and Travels",
    "ticker": "Leela Palaces Hotels",
    "isin": "INE0AQ201015",
-   "price": 548,
-   "marketCap": 18261,
-   "peRatio": 40.7
+   "price": 533.6,
+   "marketCap": 17819.99,
+   "peRatio": 39.72
   },
   {
    "name": "Lemon Tree Hotels",
    "sector": "Hotels and Travels",
    "ticker": "Lemon Tree Hotels",
    "isin": "INE970X01018",
-   "price": 104,
-   "marketCap": 8229,
-   "peRatio": 32.2
+   "price": 104.17,
+   "marketCap": 8252.83,
+   "peRatio": 32.29
   },
   {
    "name": "Mahindra Holi.&Resor",
    "sector": "Hotels and Travels",
    "ticker": "Mahindra Holi.&Resor",
    "isin": "INE998I01010",
-   "price": 196,
-   "marketCap": 3955,
-   "peRatio": 84.5
+   "price": 194.49,
+   "marketCap": 3929.79,
+   "peRatio": 83.96
   },
   {
    "name": "Royal Orchid Hotels",
    "sector": "Hotels and Travels",
    "ticker": "Royal Orchid Hotels",
    "isin": "INE283H01019",
-   "price": 299,
-   "marketCap": 825,
-   "peRatio": 31
+   "price": 306.35,
+   "marketCap": 840.17,
+   "peRatio": 31.57
   },
   {
    "name": "Samhi Hotels",
    "sector": "Hotels and Travels",
    "ticker": "Samhi Hotels",
    "isin": "INE08U801020",
-   "price": 150,
-   "marketCap": 3338,
-   "peRatio": 7.94
+   "price": 149.34,
+   "marketCap": 3317.36,
+   "peRatio": 7.89
   },
   {
    "name": "Ventive Hospitality",
    "sector": "Hotels and Travels",
    "ticker": "Ventive Hospitality",
    "isin": "INE781S01027",
-   "price": 559,
-   "marketCap": 12977,
-   "peRatio": 26.8
+   "price": 559.85,
+   "marketCap": 13074.83,
+   "peRatio": 27.01
   },
   {
    "name": "Viceroy Hotels",
    "sector": "Hotels and Travels",
    "ticker": "Viceroy Hotels",
    "isin": "INE048C01025",
-   "price": 128,
-   "marketCap": 987,
-   "peRatio": 43.3
+   "price": 130.38,
+   "marketCap": 1636.32,
+   "peRatio": 71.81
   },
   {
    "name": "Concord Control",
    "sector": "Industrial - Railway",
    "ticker": "concord-control",
    "isin": "INE0N0J01014",
-   "price": 2236,
-   "marketCap": 2322,
-   "peRatio": 55.1
+   "price": 2268,
+   "marketCap": 2355,
+   "peRatio": 55.9
   },
   {
    "name": "Cosmic CRF",
    "sector": "Industrial - Railway",
    "ticker": "COSMICCRF",
    "isin": "INE0ORA01015",
-   "price": 1306,
-   "marketCap": 1241,
-   "peRatio": 24.6
+   "price": 1283,
+   "marketCap": 1219,
+   "peRatio": 24.1
   },
   {
    "name": "Hind Rectifiers",
    "sector": "Industrial - Railway",
    "ticker": "HIRECT",
    "isin": "INE835D01023",
-   "price": 1184,
-   "marketCap": 4198,
-   "peRatio": 107
+   "price": 1171.4,
+   "marketCap": 4026.36,
+   "peRatio": 103.02
   },
   {
    "name": "Jupiter Wagons",
    "sector": "Industrial - Railway",
    "ticker": "Jupiter Wagons",
    "isin": "INE209L01016",
-   "price": 222,
-   "marketCap": 9501,
-   "peRatio": 53.4
+   "price": 219.82,
+   "marketCap": 9394.46,
+   "peRatio": 52.8
   },
   {
    "name": "MV Electrosystems",
    "sector": "Industrial - Railway",
    "ticker": "MVELECTRO",
    "isin": "INE0OWZ01020",
-   "price": 802,
-   "marketCap": 2187,
+   "price": 838.05,
+   "marketCap": 2286.43,
    "peRatio": null
   },
   {
@@ -3219,44 +3219,44 @@
    "sector": "Industrial - Railway",
    "ticker": "TEXRAIL",
    "isin": "INE621L01012",
-   "price": 123,
-   "marketCap": 5013,
-   "peRatio": 23.1
+   "price": 125.67,
+   "marketCap": 5113.07,
+   "peRatio": 23.6
   },
   {
    "name": "Titagarh Railsystems",
    "sector": "Industrial - Railway",
    "ticker": "Titagarh Railsystems",
    "isin": "INE615H01020",
-   "price": 819,
-   "marketCap": 11032,
-   "peRatio": 56.8
+   "price": 819.35,
+   "marketCap": 11034.5,
+   "peRatio": 56.81
   },
   {
    "name": "Jyoti CNC Auto.",
    "sector": "Industrial Machinery",
    "ticker": "JYOTICNC",
    "isin": "INE980O01024",
-   "price": 1046,
-   "marketCap": 23777,
-   "peRatio": 73.9
+   "price": 1059.3,
+   "marketCap": 24090.93,
+   "peRatio": 74.87
   },
   {
    "name": "LMW",
    "sector": "Industrial Machinery",
    "ticker": "LMW",
    "isin": "INE269B01029",
-   "price": 16966,
-   "marketCap": 18122,
-   "peRatio": 99.2
+   "price": 16957,
+   "marketCap": 18115.16,
+   "peRatio": 99.17
   },
   {
    "name": "Macpower CNC",
    "sector": "Industrial Machinery",
    "ticker": "MACPOWER",
    "isin": "INE155Z01011",
-   "price": 2195,
-   "marketCap": 2196,
+   "price": 2128.1,
+   "marketCap": 2128.99,
    "peRatio": null
   },
   {
@@ -3264,198 +3264,18 @@
    "sector": "Industrial Machinery",
    "ticker": "Mamata Machinery",
    "isin": "INE0TO701015",
-   "price": 401,
-   "marketCap": 988,
-   "peRatio": 90
+   "price": 399.5,
+   "marketCap": 983.08,
+   "peRatio": 89.55
   },
   {
    "name": "Aditya Infotech",
    "sector": "Industrials",
    "ticker": "Aditya Infotech",
    "isin": "INE819V01029",
-   "price": 3723,
-   "marketCap": 43971,
-   "peRatio": 92.1
-  },
-  {
-   "name": "DEE Development",
-   "sector": "Industrials",
-   "ticker": "DEEDEV",
-   "isin": "INE841L01016",
-   "price": 656,
-   "marketCap": 4935,
-   "peRatio": 60.2
-  },
-  {
-   "name": "Everest Kanto Cylind",
-   "sector": "Industrials",
-   "ticker": "Everest Kanto Cylind",
-   "isin": "INE184H01027",
-   "price": 107,
-   "marketCap": 1200,
-   "peRatio": 9.03
-  },
-  {
-   "name": "Gala Precision Engi.",
-   "sector": "Industrials",
-   "ticker": "Gala Precision Engi.",
-   "isin": "INE0RE001014",
-   "price": 1140,
-   "marketCap": 1464,
-   "peRatio": 38.5
-  },
-  {
-   "name": "GMM Pfaudler",
-   "sector": "Industrials",
-   "ticker": "GMM Pfaudler",
-   "isin": "INE541A01023",
-   "price": 1480,
-   "marketCap": 6659,
-   "peRatio": 52.9
-  },
-  {
-   "name": "HLE Glascoat",
-   "sector": "Industrials",
-   "ticker": "HLE Glascoat",
-   "isin": "INE461D01028",
-   "price": 419,
-   "marketCap": 2911,
-   "peRatio": 73.9
-  },
-  {
-   "name": "HPL Electric",
-   "sector": "Industrials",
-   "ticker": "HPL Electric",
-   "isin": "INE495S01016",
-   "price": 271,
-   "marketCap": 1741,
-   "peRatio": 18.3
-  },
-  {
-   "name": "ICE Make Refrig.",
-   "sector": "Industrials",
-   "ticker": "ICEMAKE",
-   "isin": "INE520Y01019",
-   "price": 649,
-   "marketCap": 1024,
-   "peRatio": 85.5
-  },
-  {
-   "name": "Isgec Heavy Engg.",
-   "sector": "Industrials",
-   "ticker": "ISGEC",
-   "isin": "INE858B01029",
-   "price": 886,
-   "marketCap": 6507,
-   "peRatio": 24.9
-  },
-  {
-   "name": "Jash Engineering",
-   "sector": "Industrials",
-   "ticker": "Jash Engineering",
-   "isin": "INE039O01029",
-   "price": 589,
-   "marketCap": 3732,
-   "peRatio": 43.3
-  },
-  {
-   "name": "JNK",
-   "sector": "Industrials",
-   "ticker": "JNKINDIA",
-   "isin": "INE0OAF01028",
-   "price": 420,
-   "marketCap": 2347,
-   "peRatio": 31.2
-  },
-  {
-   "name": "John Cockerill",
-   "sector": "Industrials",
-   "ticker": "FLATPROD",
-   "isin": "INE515A01019",
-   "price": 7824,
-   "marketCap": 3860,
-   "peRatio": null
-  },
-  {
-   "name": "Kilburn Engg.",
-   "sector": "Industrials",
-   "ticker": "Kilburn Engg.",
-   "isin": "INE338F01015",
-   "price": 514,
-   "marketCap": 2876,
-   "peRatio": 32.7
-  },
-  {
-   "name": "Pitti Engineering",
-   "sector": "Industrials",
-   "ticker": "Pitti Engineering",
-   "isin": "INE450D01021",
-   "price": 1137,
-   "marketCap": 4286,
-   "peRatio": 34.4
-  },
-  {
-   "name": "Praj Industries",
-   "sector": "Industrials",
-   "ticker": "Praj Industries",
-   "isin": "INE074A01025",
-   "price": 312,
-   "marketCap": 5729,
-   "peRatio": 113
-  },
-  {
-   "name": "Shree Refrigrations",
-   "sector": "Industrials",
-   "ticker": "SHREEREF",
-   "isin": "INE0FMZ01045",
-   "price": 409,
-   "marketCap": 1466,
-   "peRatio": 68.1
-  },
-  {
-   "name": "Standard Glass",
-   "sector": "Industrials",
-   "ticker": "SETL",
-   "isin": "INE0M4D01010",
-   "price": 423,
-   "marketCap": 8433,
-   "peRatio": 98.6
-  },
-  {
-   "name": "Tega Industries",
-   "sector": "Industrials",
-   "ticker": "Tega Industries",
-   "isin": "INE011K01018",
-   "price": 2012,
-   "marketCap": 15121,
-   "peRatio": null
-  },
-  {
-   "name": "The Anup Enginee",
-   "sector": "Industrials",
-   "ticker": "ANUP",
-   "isin": "INE294Z01018",
-   "price": 1632,
-   "marketCap": 3263,
-   "peRatio": 38
-  },
-  {
-   "name": "United Heat Transfer",
-   "sector": "Industrials",
-   "ticker": "UHTL",
-   "isin": "INE0SMR01011",
-   "price": 204,
-   "marketCap": 387,
-   "peRatio": 77.2
-  },
-  {
-   "name": "WPIL",
-   "sector": "Industrials",
-   "ticker": "WPIL",
-   "isin": "INE765D01022",
-   "price": 422,
-   "marketCap": 4125,
-   "peRatio": 24.3
+   "price": 3817.6,
+   "marketCap": 44990.6,
+   "peRatio": 94.24
   },
   {
    "name": "Ador Welding",
@@ -3463,439 +3283,619 @@
    "ticker": "Ador Welding",
    "isin": "INE045A01017",
    "price": 1612,
-   "marketCap": 2815,
-   "peRatio": 24.3
+   "marketCap": 2805.33,
+   "peRatio": 24.21
   },
   {
    "name": "Airfloa Rail Techno.",
    "sector": "Industrials",
    "ticker": "AIRFLOA",
    "isin": "INE0XBS01012",
-   "price": 535,
-   "marketCap": 1282,
-   "peRatio": 32.8
+   "price": 526,
+   "marketCap": 1260,
+   "peRatio": 32.2
   },
   {
    "name": "Borosil Renewables",
    "sector": "Industrials",
    "ticker": "Borosil Renewables",
    "isin": "INE666D01022",
-   "price": 452,
-   "marketCap": 6656,
-   "peRatio": 17.9
+   "price": 452.5,
+   "marketCap": 6347.81,
+   "peRatio": 17.07
   },
   {
    "name": "Carborundum Univer.",
    "sector": "Industrials",
    "ticker": "Carborundum Univer.",
    "isin": "INE120A01034",
-   "price": 1248,
-   "marketCap": 23776,
-   "peRatio": 94.8
+   "price": 1200.5,
+   "marketCap": 22868.74,
+   "peRatio": 91.19
+  },
+  {
+   "name": "DEE Development",
+   "sector": "Industrials",
+   "ticker": "DEEDEV",
+   "isin": "INE841L01016",
+   "price": 653.5,
+   "marketCap": 4916.9,
+   "peRatio": 59.98
   },
   {
    "name": "Diffusion Engineers",
    "sector": "Industrials",
    "ticker": "Diffusion Engineers",
    "isin": "INE184O01015",
-   "price": 444,
-   "marketCap": 1662,
-   "peRatio": 30.1
+   "price": 448.15,
+   "marketCap": 1677.26,
+   "peRatio": 30.38
+  },
+  {
+   "name": "Everest Kanto Cylind",
+   "sector": "Industrials",
+   "ticker": "Everest Kanto Cylind",
+   "isin": "INE184H01027",
+   "price": 107.74,
+   "marketCap": 1208.93,
+   "peRatio": 9.09
+  },
+  {
+   "name": "Gala Precision Engi.",
+   "sector": "Industrials",
+   "ticker": "Gala Precision Engi.",
+   "isin": "INE0RE001014",
+   "price": 1157.7,
+   "marketCap": 1481.57,
+   "peRatio": 38.96
+  },
+  {
+   "name": "GMM Pfaudler",
+   "sector": "Industrials",
+   "ticker": "GMM Pfaudler",
+   "isin": "INE541A01023",
+   "price": 1477.1,
+   "marketCap": 6640.63,
+   "peRatio": 52.68
   },
   {
    "name": "HBL Engineering",
    "sector": "Industrials",
    "ticker": "HBLENGINE",
    "isin": "INE292B01021",
-   "price": 786,
-   "marketCap": 21771,
-   "peRatio": 27.2
+   "price": 808.3,
+   "marketCap": 22405.67,
+   "peRatio": 28
+  },
+  {
+   "name": "HLE Glascoat",
+   "sector": "Industrials",
+   "ticker": "HLE Glascoat",
+   "isin": "INE461D01028",
+   "price": 434.65,
+   "marketCap": 3018.85,
+   "peRatio": 76.64
+  },
+  {
+   "name": "HPL Electric",
+   "sector": "Industrials",
+   "ticker": "HPL Electric",
+   "isin": "INE495S01016",
+   "price": 270.15,
+   "marketCap": 1737.08,
+   "peRatio": 18.27
+  },
+  {
+   "name": "ICE Make Refrig.",
+   "sector": "Industrials",
+   "ticker": "ICEMAKE",
+   "isin": "INE520Y01019",
+   "price": 634,
+   "marketCap": 1000.44,
+   "peRatio": 83.54
   },
   {
    "name": "Inox India",
    "sector": "Industrials",
    "ticker": "Inox India",
    "isin": "INE616N01034",
-   "price": 2051,
-   "marketCap": 18628,
-   "peRatio": 72.4
+   "price": 2070.4,
+   "marketCap": 18791.68,
+   "peRatio": 73.04
+  },
+  {
+   "name": "Isgec Heavy Engg.",
+   "sector": "Industrials",
+   "ticker": "ISGEC",
+   "isin": "INE858B01029",
+   "price": 880.1,
+   "marketCap": 6471.33,
+   "peRatio": 24.76
+  },
+  {
+   "name": "Jash Engineering",
+   "sector": "Industrials",
+   "ticker": "Jash Engineering",
+   "isin": "INE039O01029",
+   "price": 598.4,
+   "marketCap": 3781.51,
+   "peRatio": 43.93
+  },
+  {
+   "name": "JNK",
+   "sector": "Industrials",
+   "ticker": "JNKINDIA",
+   "isin": "INE0OAF01028",
+   "price": 451.75,
+   "marketCap": 2527.72,
+   "peRatio": 33.6
+  },
+  {
+   "name": "John Cockerill",
+   "sector": "Industrials",
+   "ticker": "FLATPROD",
+   "isin": "INE515A01019",
+   "price": 7883,
+   "marketCap": 3892.48,
+   "peRatio": null
+  },
+  {
+   "name": "Kilburn Engg.",
+   "sector": "Industrials",
+   "ticker": "Kilburn Engg.",
+   "isin": "INE338F01015",
+   "price": 525.55,
+   "marketCap": 2749.3,
+   "peRatio": 31.26
   },
   {
    "name": "KRN Heat Exchan",
    "sector": "Industrials",
    "ticker": "KRN",
    "isin": "INE0Q3J01015",
-   "price": 1387,
-   "marketCap": 9076,
-   "peRatio": 93.6
+   "price": 1443.1,
+   "marketCap": 9446.31,
+   "peRatio": 97.42
   },
   {
    "name": "Omnitech Engineering",
    "sector": "Industrials",
    "ticker": "OMNI",
    "isin": "INE0UH301010",
-   "price": 526,
-   "marketCap": 6501,
-   "peRatio": 62.5
+   "price": 560.4,
+   "marketCap": 6930.24,
+   "peRatio": 66.63
   },
   {
    "name": "Patil Automation",
    "sector": "Industrials",
    "ticker": "PATILAUTOM",
    "isin": "INE17GV01016",
-   "price": 337,
-   "marketCap": 735,
-   "peRatio": 41.3
+   "price": 343.25,
+   "marketCap": 749,
+   "peRatio": 42.09
+  },
+  {
+   "name": "Pitti Engineering",
+   "sector": "Industrials",
+   "ticker": "Pitti Engineering",
+   "isin": "INE450D01021",
+   "price": 1131.4,
+   "marketCap": 4260.13,
+   "peRatio": 34.2
+  },
+  {
+   "name": "Praj Industries",
+   "sector": "Industrials",
+   "ticker": "Praj Industries",
+   "isin": "INE074A01025",
+   "price": 307.75,
+   "marketCap": 5656.85,
+   "peRatio": 111.58
+  },
+  {
+   "name": "Shree Refrigrations",
+   "sector": "Industrials",
+   "ticker": "SHREEREF",
+   "isin": "INE0FMZ01045",
+   "price": 401,
+   "marketCap": 1434,
+   "peRatio": 66.6
+  },
+  {
+   "name": "Standard Glass",
+   "sector": "Industrials",
+   "ticker": "SETL",
+   "isin": "INE0M4D01010",
+   "price": 428.95,
+   "marketCap": 8557.19,
+   "peRatio": 100.05
   },
   {
    "name": "Subros",
    "sector": "Industrials",
    "ticker": "Subros",
    "isin": "INE287B01021",
-   "price": 700,
-   "marketCap": 4556,
-   "peRatio": 26.5
+   "price": 702.2,
+   "marketCap": 4580.85,
+   "peRatio": 26.64
+  },
+  {
+   "name": "Tega Industries",
+   "sector": "Industrials",
+   "ticker": "Tega Industries",
+   "isin": "INE011K01018",
+   "price": 2060.6,
+   "marketCap": 15480.81,
+   "peRatio": null
   },
   {
    "name": "Tempsens Instruments",
    "sector": "Industrials",
    "ticker": "TEMPSENS",
    "isin": "INE1KZI01025",
-   "price": 530,
-   "marketCap": 4449,
-   "peRatio": 64.8
+   "price": 529.3,
+   "marketCap": 4437.26,
+   "peRatio": 64.63
+  },
+  {
+   "name": "The Anup Enginee",
+   "sector": "Industrials",
+   "ticker": "ANUP",
+   "isin": "INE294Z01018",
+   "price": 1591.2,
+   "marketCap": 3187.41,
+   "peRatio": 37.12
+  },
+  {
+   "name": "United Heat Transfer",
+   "sector": "Industrials",
+   "ticker": "UHTL",
+   "isin": "INE0SMR01011",
+   "price": 199.55,
+   "marketCap": 379.22,
+   "peRatio": 75.64
   },
   {
    "name": "Vilas Transcore",
    "sector": "Industrials",
    "ticker": "VILAS",
    "isin": "INE0AZY01017",
-   "price": 385,
-   "marketCap": 943,
-   "peRatio": 24.4
+   "price": 365.55,
+   "marketCap": 894.87,
+   "peRatio": 23.15
+  },
+  {
+   "name": "WPIL",
+   "sector": "Industrials",
+   "ticker": "WPIL",
+   "isin": "INE765D01022",
+   "price": 431.5,
+   "marketCap": 4214.5,
+   "peRatio": 24.83
   },
   {
    "name": "Aeroflex Industries",
    "sector": "Iron and Steel",
    "ticker": "AEROFLEX",
    "isin": "INE024001021",
-   "price": 513,
-   "marketCap": 6804,
-   "peRatio": 101
+   "price": 539.6,
+   "marketCap": 7140.57,
+   "peRatio": 106
   },
   {
    "name": "Man Industries (I)",
    "sector": "Iron and Steel",
    "ticker": "MANINDS",
    "isin": "INE993A01026",
-   "price": 953,
-   "marketCap": 7143,
-   "peRatio": 35
+   "price": 959.6,
+   "marketCap": 7197.92,
+   "peRatio": 35.27
   },
   {
    "name": "Manaksia Coated Metals",
    "sector": "Iron and Steel",
    "ticker": "MANAKCOAT",
    "isin": "INE830Q01018",
-   "price": 126,
-   "marketCap": 1341,
-   "peRatio": 32.9
+   "price": 127.29,
+   "marketCap": 1347.16,
+   "peRatio": 33.05
   },
   {
    "name": "Sambhv Steel Tubes",
    "sector": "Iron and Steel",
    "ticker": "SAMBHV",
    "isin": "INE12NJ01018",
-   "price": 154,
-   "marketCap": 4544,
-   "peRatio": 27.1
+   "price": 162.24,
+   "marketCap": 4780.75,
+   "peRatio": 28.51
   },
   {
    "name": "Scoda Tubes",
    "sector": "Iron and Steel",
    "ticker": "SCODATUBES",
    "isin": "INE090501011",
-   "price": 133,
-   "marketCap": 795,
-   "peRatio": 21.5
+   "price": 130.14,
+   "marketCap": 779.65,
+   "peRatio": 21.09
   },
   {
    "name": "Shyam Metalics",
    "sector": "Iron and Steel",
    "ticker": "SHYAMMETL",
    "isin": "INE810G01011",
-   "price": 1069,
-   "marketCap": 29838,
-   "peRatio": 26.6
+   "price": 1074,
+   "marketCap": 29978.76,
+   "peRatio": 26.72
   },
   {
    "name": "Venus Pipes & Tubes",
    "sector": "Iron and Steel",
    "ticker": "VENUSPIPES",
    "isin": "INE0JA001018",
-   "price": 2154,
-   "marketCap": 4461,
-   "peRatio": 42.9
+   "price": 2195.8,
+   "marketCap": 4548.84,
+   "peRatio": 43.75
   },
   {
    "name": "Aegis Logistics",
    "sector": "Logistics",
    "ticker": "AEGISLOG",
    "isin": "INE208C01025",
-   "price": 1308,
-   "marketCap": 45857,
-   "peRatio": 36.6
+   "price": 1299.8,
+   "marketCap": 45622.98,
+   "peRatio": 36.42
   },
   {
    "name": "Delhivery",
    "sector": "Logistics",
    "ticker": "DELHIVERY",
    "isin": "INE148O01028",
-   "price": 408,
-   "marketCap": 30487,
-   "peRatio": 256
+   "price": 417.4,
+   "marketCap": 31256.92,
+   "peRatio": 262.17
   },
   {
    "name": "Shadowfax Tech.",
    "sector": "Logistics",
    "ticker": "Shadowfax Tech.",
    "isin": "INE12UN01015",
-   "price": 274,
-   "marketCap": 16064,
-   "peRatio": 95
+   "price": 280.85,
+   "marketCap": 16429.17,
+   "peRatio": 97.16
   },
   {
    "name": "TVS Supply Chain Sol",
    "sector": "Logistics",
    "ticker": "TVSSCS",
    "isin": "INE395N01027",
-   "price": 128,
-   "marketCap": 5666,
-   "peRatio": 79.9
+   "price": 131.3,
+   "marketCap": 5792.69,
+   "peRatio": 81.72
   },
   {
    "name": "Basilic Fly Studio",
    "sector": "Media and Entertainment",
    "ticker": "BASILIC",
    "isin": "INE0OCC01013",
-   "price": 167,
-   "marketCap": 423,
-   "peRatio": 8.78
+   "price": 175.05,
+   "marketCap": 442.26,
+   "peRatio": 9.18
   },
   {
    "name": "Saregama India",
    "sector": "Media and Entertainment",
    "ticker": "Saregama India",
    "isin": "INE979A01025",
-   "price": 490,
-   "marketCap": 9439,
-   "peRatio": 41.4
+   "price": 493.45,
+   "marketCap": 9514.18,
+   "peRatio": 41.73
   },
   {
    "name": "Tips Music",
    "sector": "Media and Entertainment",
    "ticker": "Tips Music",
    "isin": "INE716B01029",
-   "price": 666,
-   "marketCap": 8510,
-   "peRatio": 39.6
+   "price": 647.2,
+   "marketCap": 8311.77,
+   "peRatio": 38.67
   },
   {
    "name": "20 Microns",
    "sector": "Mining & Metals Recycle",
    "ticker": "20 Microns",
    "isin": "INE144J01027",
-   "price": 213,
-   "marketCap": 754,
-   "peRatio": 11.1
+   "price": 212.8,
+   "marketCap": 750.9,
+   "peRatio": 11.05
   },
   {
    "name": "Ardee Industries",
    "sector": "Mining & Metals Recycle",
    "ticker": "ARDEE",
    "isin": "INE0XNF01022",
-   "price": 51.3,
-   "marketCap": 1616,
-   "peRatio": 18.7
+   "price": 51.17,
+   "marketCap": 1612.88,
+   "peRatio": 18.66
   },
   {
    "name": "Ashapura Minechem",
    "sector": "Mining & Metals Recycle",
    "ticker": "Ashapura Minechem",
    "isin": "INE348A01023",
-   "price": 503,
-   "marketCap": 4809,
-   "peRatio": 11.7
+   "price": 518.8,
+   "marketCap": 4955.89,
+   "peRatio": 12.06
   },
   {
    "name": "Caliber Mining & Log",
    "sector": "Mining & Metals Recycle",
    "ticker": "Caliber Mining & Log",
    "isin": "INE11XY01018",
-   "price": 525,
-   "marketCap": 3431,
-   "peRatio": 22
+   "price": 542.9,
+   "marketCap": 3549.25,
+   "peRatio": 22.76
   },
   {
    "name": "CMR Green Tech",
    "sector": "Mining & Metals Recycle",
    "ticker": "CMRGREEN",
    "isin": "INE00WV01027",
-   "price": 222,
-   "marketCap": 4856,
-   "peRatio": 20.4
+   "price": 227.91,
+   "marketCap": 4992.49,
+   "peRatio": 20.98
   },
   {
    "name": "Godavari Power",
    "sector": "Mining & Metals Recycle",
    "ticker": "GPIL",
    "isin": "INE177H01039",
-   "price": 225,
-   "marketCap": 15177,
-   "peRatio": 18.5
+   "price": 221.35,
+   "marketCap": 14899.01,
+   "peRatio": 18.16
   },
   {
    "name": "Gravita India",
    "sector": "Mining & Metals Recycle",
    "ticker": "Gravita India",
    "isin": "INE024L01027",
-   "price": 1475,
-   "marketCap": 10896,
-   "peRatio": 27.8
+   "price": 1446.9,
+   "marketCap": 10679.34,
+   "peRatio": 27.24
   },
   {
    "name": "Pondy Oxides & Chem.",
    "sector": "Mining & Metals Recycle",
    "ticker": "Pondy Oxides & Chem.",
    "isin": "INE063E01061",
-   "price": 453,
-   "marketCap": 3447,
-   "peRatio": 24.1
+   "price": 461.6,
+   "marketCap": 3521,
+   "peRatio": 24.62
   },
   {
    "name": "Aegis Vopak Terminals",
    "sector": "Oil",
    "ticker": "AEGISVOPAK",
    "isin": "INE0INX01018",
-   "price": 299,
-   "marketCap": 33079,
-   "peRatio": 122
+   "price": 294.25,
+   "marketCap": 32602.65,
+   "peRatio": 120.24
   },
   {
    "name": "Asian Energy Services",
    "sector": "Oil",
    "ticker": "ASIANENE",
    "isin": "INE276G01015",
-   "price": 474,
-   "marketCap": 2311,
-   "peRatio": 35.8
+   "price": 478.25,
+   "marketCap": 2325.71,
+   "peRatio": 36.03
   },
   {
    "name": "Chennai Petroleum Corporation",
    "sector": "Oil",
    "ticker": "CHENNPETRO",
    "isin": "INE178A01016",
-   "price": 1408,
-   "marketCap": 20976,
-   "peRatio": 5.03
+   "price": 1436.9,
+   "marketCap": 21397.08,
+   "peRatio": 5.13
   },
   {
    "name": "Deep Industries",
    "sector": "Oil",
    "ticker": "Deep Industries",
    "isin": "INE0FHS01024",
-   "price": 768,
-   "marketCap": 4916,
-   "peRatio": 11.8
+   "price": 782.5,
+   "marketCap": 5008,
+   "peRatio": 12.02
   },
   {
    "name": "Gandhar Oil Refinery (India)",
    "sector": "Oil",
    "ticker": "GANDHAR",
    "isin": "INE717W01049",
-   "price": 262,
-   "marketCap": 2563,
-   "peRatio": 8.5
+   "price": 273.55,
+   "marketCap": 2677.49,
+   "peRatio": 8.88
   },
   {
    "name": "Ganesh Benzoplast",
    "sector": "Oil",
    "ticker": "Ganesh Benzoplast",
    "isin": "INE388A01029",
-   "price": 137,
-   "marketCap": 980,
-   "peRatio": 15
+   "price": 137.83,
+   "marketCap": 992.23,
+   "peRatio": 15.19
   },
   {
    "name": "Gulf Oil Lubricant",
    "sector": "Oil",
    "ticker": "Gulf Oil Lubricant",
    "isin": "INE635Q01029",
-   "price": 1110,
-   "marketCap": 5500,
-   "peRatio": 14.1
+   "price": 1105.8,
+   "marketCap": 5475.56,
+   "peRatio": 14.04
   },
   {
    "name": "Jindal Drilling and Industries",
    "sector": "Oil",
    "ticker": "JINDRILL",
    "isin": "INE742C01031",
-   "price": 624,
-   "marketCap": 1805,
-   "peRatio": 9.27
+   "price": 599.95,
+   "marketCap": 1738.72,
+   "peRatio": 8.93
   },
   {
    "name": "South West Pinnacle",
    "sector": "Oil",
    "ticker": "South West Pinnacle",
    "isin": "INE980Y01015",
-   "price": 190,
-   "marketCap": 620,
-   "peRatio": 15.5
+   "price": 183.41,
+   "marketCap": 547.11,
+   "peRatio": 13.68
   },
   {
    "name": "TruAlt Bioenergy",
    "sector": "Oil",
    "ticker": "TruAlt Bioenergy",
    "isin": "INE0MWH01014",
-   "price": 458,
-   "marketCap": 3927,
-   "peRatio": 25.1
+   "price": 458.4,
+   "marketCap": 3930.9,
+   "peRatio": 25.14
   },
   {
    "name": "AGI Greenpac",
    "sector": "Packaging",
    "ticker": "AGI Greenpac",
    "isin": "INE415A01038",
-   "price": 805,
-   "marketCap": 5203,
-   "peRatio": 14.2
+   "price": 792.9,
+   "marketCap": 5129.86,
+   "peRatio": 14
   },
   {
    "name": "Cosmo First",
    "sector": "Packaging",
    "ticker": "Cosmo First",
    "isin": "INE757A01017",
-   "price": 843,
-   "marketCap": 2208,
-   "peRatio": 12.9
+   "price": 834.8,
+   "marketCap": 2191.33,
+   "peRatio": 12.8
   },
   {
    "name": "EPL",
    "sector": "Packaging",
    "ticker": "EPL",
    "isin": "INE255A01020",
-   "price": 235,
-   "marketCap": 7513,
-   "peRatio": 18.3
+   "price": 233.05,
+   "marketCap": 7465.45,
+   "peRatio": 18.19
   },
   {
    "name": "Ester Industries",
    "sector": "Packaging",
    "ticker": "ESTER",
    "isin": "INE778B01029",
-   "price": 85.2,
-   "marketCap": 888,
+   "price": 84.55,
+   "marketCap": 881.81,
    "peRatio": null
   },
   {
@@ -3903,152 +3903,152 @@
    "sector": "Packaging",
    "ticker": "Huhtamaki India",
    "isin": "INE275B01026",
-   "price": 234,
-   "marketCap": 1775,
-   "peRatio": 21
+   "price": 235.7,
+   "marketCap": 1780.05,
+   "peRatio": 21.06
   },
   {
    "name": "Kanpur Plastipack",
    "sector": "Packaging",
    "ticker": "Kanpur Plastipack",
    "isin": "INE694E01014",
-   "price": 251,
-   "marketCap": 617,
-   "peRatio": 13.6
+   "price": 245.2,
+   "marketCap": 600.22,
+   "peRatio": 13.23
   },
   {
    "name": "Knack Packaging",
    "sector": "Packaging",
    "ticker": "KNACK",
    "isin": "INE17QZ01016",
-   "price": 177,
-   "marketCap": 2173,
-   "peRatio": 21
+   "price": 176.58,
+   "marketCap": 2160.72,
+   "peRatio": 20.88
   },
   {
    "name": "Mold-Tek Pack.",
    "sector": "Packaging",
    "ticker": "MOLDTKPAC",
    "isin": "INE893J01029",
-   "price": 649,
-   "marketCap": 2155,
-   "peRatio": 33.9
+   "price": 642.95,
+   "marketCap": 2129.49,
+   "peRatio": 33.49
   },
   {
    "name": "Pyramid Technoplast",
    "sector": "Packaging",
    "ticker": "Pyramid Technoplast",
    "isin": "INE0MIS01010",
-   "price": 160,
-   "marketCap": 588,
-   "peRatio": 18.8
+   "price": 156.54,
+   "marketCap": 575.83,
+   "peRatio": 18.41
   },
   {
    "name": "TCPL Packaging",
    "sector": "Packaging",
    "ticker": "TCPL Packaging",
    "isin": "INE822C01015",
-   "price": 3988,
-   "marketCap": 3628,
-   "peRatio": 29.2
+   "price": 4117.4,
+   "marketCap": 3746.83,
+   "peRatio": 30.09
   },
   {
    "name": "Ajanta Pharma",
    "sector": "Pharma",
    "ticker": "Ajanta Pharma",
    "isin": "INE031B01049",
-   "price": 3525,
-   "marketCap": 44039,
-   "peRatio": 38.8
+   "price": 3557.5,
+   "marketCap": 44445.85,
+   "peRatio": 39.16
   },
   {
    "name": "Alembic Pharma",
    "sector": "Pharma",
    "ticker": "Alembic Pharma",
    "isin": "INE901L01018",
-   "price": 854,
-   "marketCap": 16796,
-   "peRatio": 22.5
+   "price": 861.5,
+   "marketCap": 16933.91,
+   "peRatio": 22.69
   },
   {
    "name": "Beta Drugs",
    "sector": "Pharma",
    "ticker": "BETA",
    "isin": "INE351Y01019",
-   "price": 2040,
-   "marketCap": 2262,
-   "peRatio": 49.6
+   "price": 2064.9,
+   "marketCap": 2289.12,
+   "peRatio": 50.2
   },
   {
    "name": "Caplin Point Labs",
    "sector": "Pharma",
    "ticker": "CAPLIPOINT",
    "isin": "INE475E01026",
-   "price": 2854,
-   "marketCap": 21688,
-   "peRatio": 32.6
+   "price": 2744,
+   "marketCap": 20857.61,
+   "peRatio": 31.35
   },
   {
    "name": "Corona Remedies",
    "sector": "Pharma",
    "ticker": "CORONA",
    "isin": "INE02ZQ01018",
-   "price": 2053,
-   "marketCap": 12572,
-   "peRatio": 59.2
+   "price": 2078.4,
+   "marketCap": 12711.51,
+   "peRatio": 59.85
   },
   {
    "name": "Emcure Pharma",
    "sector": "Pharma",
    "ticker": "Emcure Pharma",
    "isin": "INE168P01015",
-   "price": 1928,
-   "marketCap": 36675,
-   "peRatio": 35.6
+   "price": 1959.1,
+   "marketCap": 37156.2,
+   "peRatio": 36.07
   },
   {
    "name": "Eris Lifesciences",
    "sector": "Pharma",
    "ticker": "Eris Lifesciences",
    "isin": "INE406M01024",
-   "price": 1236,
-   "marketCap": 17128,
-   "peRatio": 26.1
+   "price": 1219.3,
+   "marketCap": 16895.51,
+   "peRatio": 25.76
   },
   {
    "name": "Fredun Pharma",
    "sector": "Pharma",
    "ticker": "Fredun Pharma",
    "isin": "INE194R01017",
-   "price": 1387,
-   "marketCap": 2287,
-   "peRatio": 52.2
+   "price": 1392.4,
+   "marketCap": 2302.76,
+   "peRatio": 52.56
   },
   {
    "name": "Granules India",
    "sector": "Pharma",
    "ticker": "Granules India",
    "isin": "INE101D01020",
-   "price": 851,
-   "marketCap": 23153,
-   "peRatio": 35.6
+   "price": 866.75,
+   "marketCap": 21477.8,
+   "peRatio": 33.02
   },
   {
    "name": "Gufic Biosciences",
    "sector": "Pharma",
    "ticker": "Gufic Biosciences",
    "isin": "INE742B01025",
-   "price": 420,
-   "marketCap": 4224,
-   "peRatio": 57.5
+   "price": 436.5,
+   "marketCap": 4377.33,
+   "peRatio": 59.63
   },
   {
    "name": "Indoco Remedies",
    "sector": "Pharma",
    "ticker": "Indoco Remedies",
    "isin": "INE873D01024",
-   "price": 249,
-   "marketCap": 2304,
+   "price": 269.15,
+   "marketCap": 2484.35,
    "peRatio": null
   },
   {
@@ -4056,332 +4056,341 @@
    "sector": "Pharma",
    "ticker": "Ipca Laboratories",
    "isin": "INE571A01038",
-   "price": 1919,
-   "marketCap": 48726,
-   "peRatio": 35.5
+   "price": 1938.1,
+   "marketCap": 49170.41,
+   "peRatio": 35.83
   },
   {
    "name": "Jagsonpal Pharma",
    "sector": "Pharma",
    "ticker": "Jagsonpal Pharma",
    "isin": "INE048B01035",
-   "price": 243,
-   "marketCap": 1604,
-   "peRatio": 34.1
+   "price": 234.71,
+   "marketCap": 1545.22,
+   "peRatio": 32.85
   },
   {
    "name": "Marksans Pharma",
    "sector": "Pharma",
    "ticker": "Marksans Pharma",
    "isin": "INE750C01026",
-   "price": 332,
-   "marketCap": 15027,
-   "peRatio": 29.1
+   "price": 342.75,
+   "marketCap": 15536.46,
+   "peRatio": 30.08
   },
   {
    "name": "Natco Pharma",
    "sector": "Pharma",
    "ticker": "Natco Pharma",
    "isin": "INE987B01026",
-   "price": 829,
-   "marketCap": 14827,
-   "peRatio": 13
+   "price": 843.1,
+   "marketCap": 15100.75,
+   "peRatio": 13.24
   },
   {
    "name": "Orchid Pharma",
    "sector": "Pharma",
    "ticker": "Orchid Pharma",
    "isin": "INE191A01027",
-   "price": 1023,
-   "marketCap": 6129,
-   "peRatio": 339
+   "price": 1014.9,
+   "marketCap": 5147.48,
+   "peRatio": 284.72
   },
   {
    "name": "RPG Life Sciences",
    "sector": "Pharma",
    "ticker": "RPG Life Sciences",
    "isin": "INE105J01010",
-   "price": 2955,
-   "marketCap": 4911,
-   "peRatio": 42
+   "price": 3089.2,
+   "marketCap": 5109.23,
+   "peRatio": 43.7
   },
   {
    "name": "Rubicon Research",
    "sector": "Pharma",
    "ticker": "Rubicon Research",
    "isin": "INE506V01022",
-   "price": 1593,
-   "marketCap": 26353,
-   "peRatio": 91.4
+   "price": 1609,
+   "marketCap": 26610.08,
+   "peRatio": 92.29
   },
   {
    "name": "Sai Parenterals",
    "sector": "Pharma",
    "ticker": "SAIPARENT",
    "isin": "INE0H9F01037",
-   "price": 510,
-   "marketCap": 2253,
-   "peRatio": 109
+   "price": 502.5,
+   "marketCap": 2220.01,
+   "peRatio": 107.41
   },
   {
    "name": "Sakar Healthcare",
    "sector": "Pharma",
    "ticker": "SAKAR",
    "isin": "INE732S01012",
-   "price": 1090,
-   "marketCap": 2424,
-   "peRatio": 67.2
+   "price": 1121.85,
+   "marketCap": 2496.11,
+   "peRatio": 69.2
   },
   {
    "name": "Sanofi India",
    "sector": "Pharma",
    "ticker": "Sanofi India",
    "isin": "INE058A01010",
-   "price": 3104,
-   "marketCap": 7148,
-   "peRatio": 16.2
+   "price": 3072.1,
+   "marketCap": 7075.24,
+   "peRatio": 16
   },
   {
    "name": "Strides Pharma",
    "sector": "Pharma",
    "ticker": "STAR",
    "isin": "INE939A01011",
-   "price": 1151,
-   "marketCap": 10619,
-   "peRatio": 18.3
+   "price": 1172.6,
+   "marketCap": 10808.17,
+   "peRatio": 18.63
   },
   {
    "name": "Wockhardt",
    "sector": "Pharma",
    "ticker": "WOCKPHARMA",
    "isin": "INE049B01025",
-   "price": 2188,
-   "marketCap": 35534,
-   "peRatio": 89.1
+   "price": 2194.2,
+   "marketCap": 35654.03,
+   "peRatio": 89.4
   },
   {
    "name": "Zydus Lifesciences",
    "sector": "Pharma",
    "ticker": "ZYDUSLIFE",
    "isin": "INE010B01027",
-   "price": 1215,
-   "marketCap": 121388,
-   "peRatio": 24.9
+   "price": 1200.5,
+   "marketCap": 120798.39,
+   "peRatio": 24.78
   },
   {
    "name": "Aarti Drugs",
    "sector": "Pharma API",
    "ticker": "Aarti Drugs",
    "isin": "INE767A01016",
-   "price": 430,
-   "marketCap": 3900,
-   "peRatio": 20.2
+   "price": 428.6,
+   "marketCap": 3911.83,
+   "peRatio": 20.27
   },
   {
    "name": "Acutaas Chemicals",
    "sector": "Pharma API",
    "ticker": "Acutaas Chemicals",
    "isin": "INE00FF01025",
-   "price": 3214,
-   "marketCap": 26321,
-   "peRatio": 68.2
+   "price": 3304.1,
+   "marketCap": 27051.04,
+   "peRatio": 70.09
   },
   {
    "name": "Alivus Life Sciences",
    "sector": "Pharma API",
    "ticker": "Alivus Life Sciences",
    "isin": "INE03Q201024",
-   "price": 1346,
-   "marketCap": 16524,
-   "peRatio": 47
+   "price": 1356.8,
+   "marketCap": 16653.29,
+   "peRatio": 47.36
+  },
+  {
+   "name": "Bajaj Healthcare",
+   "sector": "Pharma API",
+   "ticker": "Bajaj Healthcare",
+   "isin": "INE411U01027",
+   "price": 335,
+   "marketCap": 1127.7,
+   "peRatio": 62.65
   },
   {
    "name": "Blue Jet Healthcare",
    "sector": "Pharma API",
    "ticker": "Blue Jet Healthcare",
    "isin": "INE0KBH01020",
-   "price": 557,
-   "marketCap": 10551,
-   "peRatio": 74.9
+   "price": 549.6,
+   "marketCap": 10402.59,
+   "peRatio": 73.85
   },
   {
    "name": "Concord Biotech",
    "sector": "Pharma API",
    "ticker": "Concord Biotech",
    "isin": "INE338H01029",
-   "price": 1393,
-   "marketCap": 14564,
-   "peRatio": 52.4
+   "price": 1410.7,
+   "marketCap": 14758.21,
+   "peRatio": 53.1
   },
   {
    "name": "IOL Chem & Pharma",
    "sector": "Pharma API",
    "ticker": "IOL Chem & Pharma",
    "isin": "INE485C01029",
-   "price": 196,
-   "marketCap": 5760,
-   "peRatio": 32.6
+   "price": 201.48,
+   "marketCap": 5913.99,
+   "peRatio": 33.47
   },
   {
    "name": "NGL Fine-Chem",
    "sector": "Pharma API",
    "ticker": "NGLFINE",
    "isin": "INE887E01022",
-   "price": 2730,
-   "marketCap": 1682,
-   "peRatio": 29.4
+   "price": 2870.9,
+   "marketCap": 1773.65,
+   "peRatio": 31
   },
   {
    "name": "Shilpa Medicare",
    "sector": "Pharma API",
    "ticker": "Shilpa Medicare",
    "isin": "INE790G01031",
-   "price": 1025,
-   "marketCap": 20072,
-   "peRatio": 70.6
+   "price": 1055.75,
+   "marketCap": 20648.55,
+   "peRatio": 72.63
   },
   {
    "name": "Shree Ganesh Remed.",
    "sector": "Pharma API",
    "ticker": "Shree Ganesh Remed.",
    "isin": "INE414Y01015",
-   "price": 680,
-   "marketCap": 875,
-   "peRatio": 56.7
+   "price": 665.75,
+   "marketCap": 854.48,
+   "peRatio": 55.37
   },
   {
    "name": "SMS Pharmaceuticals",
    "sector": "Pharma API",
    "ticker": "SMS Pharmaceuticals",
    "isin": "INE812G01025",
-   "price": 462,
-   "marketCap": 4329,
-   "peRatio": 42.3
+   "price": 479.4,
+   "marketCap": 4489.68,
+   "peRatio": 43.87
   },
   {
    "name": "Solara Active Pharma",
    "sector": "Pharma API",
    "ticker": "Solara Active Pharma",
    "isin": "INE624Z01016",
-   "price": 736,
-   "marketCap": 3583,
-   "peRatio": 839
+   "price": 749.85,
+   "marketCap": 3577.67,
+   "peRatio": 837.58
   },
   {
    "name": "Supriya Lifescience",
    "sector": "Pharma API",
    "ticker": "Supriya Lifescience",
    "isin": "INE07RO01027",
-   "price": 996,
-   "marketCap": 8015,
-   "peRatio": 40.3
+   "price": 985.05,
+   "marketCap": 7927.96,
+   "peRatio": 39.86
   },
   {
    "name": "Aarti Pharmalabs",
    "sector": "Pharma CDMO",
    "ticker": "Aarti Pharmalabs",
    "isin": "INE0LRU01027",
-   "price": 914,
-   "marketCap": 8293,
-   "peRatio": 38.5
+   "price": 972.8,
+   "marketCap": 8819.19,
+   "peRatio": 40.94
   },
   {
    "name": "Aether Industries",
    "sector": "Pharma CDMO",
    "ticker": "Aether Industries",
    "isin": "INE0BWX01014",
-   "price": 1739,
-   "marketCap": 23070,
-   "peRatio": 96.2
+   "price": 1749.9,
+   "marketCap": 23223.37,
+   "peRatio": 96.84
   },
   {
    "name": "Akums Drugs",
    "sector": "Pharma CDMO",
    "ticker": "AKUMS",
    "isin": "INE09XN01023",
-   "price": 800,
-   "marketCap": 12598,
-   "peRatio": 41.3
+   "price": 819.55,
+   "marketCap": 12899.22,
+   "peRatio": 42.29
   },
   {
    "name": "Anthem Biosciences",
    "sector": "Pharma CDMO",
    "ticker": "ANTHEM",
    "isin": "INE0CZ201020",
-   "price": 851,
-   "marketCap": 47905,
-   "peRatio": 80.7
+   "price": 869.75,
+   "marketCap": 48983.89,
+   "peRatio": 82.52
   },
   {
    "name": "Cohance Lifesciences",
    "sector": "Pharma CDMO",
    "ticker": "Cohance Lifesciences",
    "isin": "INE03QK01018",
-   "price": 453,
-   "marketCap": 17351,
-   "peRatio": 161
+   "price": 457.9,
+   "marketCap": 17517.75,
+   "peRatio": 162.54
   },
   {
    "name": "Dishman Carbogen (Carbogen Amcis)",
    "sector": "Pharma CDMO",
    "ticker": "DCAL",
    "isin": "INE385W01011",
-   "price": 164,
-   "marketCap": 2585,
-   "peRatio": 142
+   "price": 161.39,
+   "marketCap": 2530.32,
+   "peRatio": 139
   },
   {
    "name": "Gland Pharma",
    "sector": "Pharma CDMO",
    "ticker": "Gland Pharma",
    "isin": "INE068V01023",
-   "price": 2896,
-   "marketCap": 47817,
-   "peRatio": 41.7
+   "price": 2989.7,
+   "marketCap": 49318,
+   "peRatio": 43.08
   },
   {
    "name": "Innova Captab",
    "sector": "Pharma CDMO",
    "ticker": "Innova Captab",
    "isin": "INE0DUT01020",
-   "price": 1271,
-   "marketCap": 7269,
-   "peRatio": 47.2
+   "price": 1271.2,
+   "marketCap": 7274.43,
+   "peRatio": 47.24
   },
   {
    "name": "Jubilant Ingrevia",
    "sector": "Pharma CDMO",
    "ticker": "Jubilant Ingrevia",
    "isin": "INE0BY001018",
-   "price": 655,
-   "marketCap": 10431,
-   "peRatio": 32.8
+   "price": 639.1,
+   "marketCap": 10179.66,
+   "peRatio": 32.01
   },
   {
    "name": "Jubilant Pharmova",
    "sector": "Pharma CDMO",
    "ticker": "JUBLPHARMA",
    "isin": "INE700A01033",
-   "price": 1060,
-   "marketCap": 16858,
-   "peRatio": 43.4
+   "price": 1048.2,
+   "marketCap": 16695.85,
+   "peRatio": 42.98
   },
   {
    "name": "Neuland Laboratories",
    "sector": "Pharma CDMO",
    "ticker": "Neuland Laboratories",
    "isin": "INE794A01010",
-   "price": 21440,
-   "marketCap": 27490,
-   "peRatio": 55.2
+   "price": 21375,
+   "marketCap": 27423.89,
+   "peRatio": 55.06
   },
   {
    "name": "Onesource Specialty",
    "sector": "Pharma CDMO",
    "ticker": "Onesource Specialty",
    "isin": "INE013P01021",
-   "price": 1566,
-   "marketCap": 17973,
+   "price": 1583.3,
+   "marketCap": 18151.87,
    "peRatio": null
   },
   {
@@ -4389,8 +4398,8 @@
    "sector": "Pharma CDMO",
    "ticker": "Piramal Pharma",
    "isin": "INE0DK501011",
-   "price": 207,
-   "marketCap": 27519,
+   "price": 209.07,
+   "marketCap": 27834.5,
    "peRatio": null
   },
   {
@@ -4398,116 +4407,116 @@
    "sector": "Pharma CDMO",
    "ticker": "Sai Life Sciences",
    "isin": "INE570L01029",
-   "price": 1583,
-   "marketCap": 33564,
-   "peRatio": 91.3
+   "price": 1559.9,
+   "marketCap": 33087.9,
+   "peRatio": 90.01
   },
   {
    "name": "Senores Pharmaceutic",
    "sector": "Pharma CDMO",
    "ticker": "Senores Pharmaceutic",
    "isin": "INE0RB801010",
-   "price": 1352,
-   "marketCap": 6222,
-   "peRatio": 49.2
+   "price": 1403.7,
+   "marketCap": 6464.54,
+   "peRatio": 51.12
   },
   {
    "name": "Windlas Biotech",
    "sector": "Pharma CDMO",
    "ticker": "Windlas Biotech",
    "isin": "INE0H5O01029",
-   "price": 1103,
-   "marketCap": 2281,
-   "peRatio": 34.3
+   "price": 1096.25,
+   "marketCap": 2262.25,
+   "peRatio": 34.01
   },
   {
    "name": "Accent Microcell",
    "sector": "Pharma Others",
    "ticker": "ACCENTMIC",
    "isin": "INE0Q5D01013",
-   "price": 682,
-   "marketCap": 1636,
-   "peRatio": 37.3
+   "price": 674,
+   "marketCap": 1616.86,
+   "peRatio": 36.86
   },
   {
    "name": "Advanced Enzyme",
    "sector": "Pharma Others",
    "ticker": "Advanced Enzyme",
    "isin": "INE837H01020",
-   "price": 283,
-   "marketCap": 3167,
-   "peRatio": 20.1
+   "price": 282.15,
+   "marketCap": 3159.41,
+   "peRatio": 20.05
   },
   {
    "name": "Hester Biosciences",
    "sector": "Pharma Others",
    "ticker": "Hester Biosciences",
    "isin": "INE782E01017",
-   "price": 2147,
-   "marketCap": 1826,
-   "peRatio": 34.4
+   "price": 2165,
+   "marketCap": 1841.74,
+   "peRatio": 34.69
   },
   {
    "name": "Hexagon Nutrition",
    "sector": "Pharma Others",
    "ticker": "HEXAGON",
    "isin": "INE0JUI01012",
-   "price": 64.4,
-   "marketCap": 794,
-   "peRatio": 21.4
+   "price": 65.34,
+   "marketCap": 803.15,
+   "peRatio": 21.65
   },
   {
    "name": "Jeena Sikho Lifecare",
    "sector": "Pharma Others",
    "ticker": "JSLL",
    "isin": "INE0J5801029",
-   "price": 502,
-   "marketCap": 6239,
-   "peRatio": 26.4
+   "price": 509.45,
+   "marketCap": 6332.5,
+   "peRatio": 26.8
   },
   {
    "name": "Q-Line Biotech",
    "sector": "Pharma Others",
    "ticker": "QLINE",
    "isin": "INE1G2W01011",
-   "price": 667,
-   "marketCap": 1555,
-   "peRatio": 27.5
+   "price": 672.75,
+   "marketCap": 1569.4,
+   "peRatio": 27.76
   },
   {
    "name": "Sequent Scientific",
    "sector": "Pharma Others",
    "ticker": "VIYASH",
    "isin": "INE807F01027",
-   "price": 241,
-   "marketCap": 10639,
-   "peRatio": 48
+   "price": 238.05,
+   "marketCap": 10399.82,
+   "peRatio": 46.92
   },
   {
    "name": "Sigachi Industries",
    "sector": "Pharma Others",
    "ticker": "Sigachi Industries",
    "isin": "INE0D0K01022",
-   "price": 28.8,
-   "marketCap": 1100,
-   "peRatio": 48.9
+   "price": 28.76,
+   "marketCap": 1098.97,
+   "peRatio": 48.85
   },
   {
    "name": "Sudeep Pharma",
    "sector": "Pharma Others",
    "ticker": "SUDEEP",
    "isin": "INE0QPI01025",
-   "price": 1139,
-   "marketCap": 12822,
-   "peRatio": 70.2
+   "price": 1195.2,
+   "marketCap": 13499.62,
+   "peRatio": 73.97
   },
   {
    "name": "Zota Health Care",
    "sector": "Pharma Others",
    "ticker": "ZOTA",
    "isin": "INE358U01012",
-   "price": 1322,
-   "marketCap": 4579,
+   "price": 1300.2,
+   "marketCap": 4502.93,
    "peRatio": null
   },
   {
@@ -4515,8 +4524,8 @@
    "sector": "Plastics",
    "ticker": "Apollo Pipes",
    "isin": "INE126J01016",
-   "price": 521,
-   "marketCap": 2298,
+   "price": 513.7,
+   "marketCap": 2262.76,
    "peRatio": null
   },
   {
@@ -4524,125 +4533,125 @@
    "sector": "Plastics",
    "ticker": "Finolex Inds",
    "isin": "INE183A01024",
-   "price": 152,
-   "marketCap": 9414,
-   "peRatio": 15.3
+   "price": 151.15,
+   "marketCap": 9378.51,
+   "peRatio": 15.24
   },
   {
    "name": "Garware Hi-Tech",
    "sector": "Plastics",
    "ticker": "Garware Hi-Tech",
    "isin": "INE291A01017",
-   "price": 6654,
-   "marketCap": 15517,
-   "peRatio": 40
+   "price": 7016.5,
+   "marketCap": 16301.01,
+   "peRatio": 42.02
   },
   {
    "name": "Prince Pipes",
    "sector": "Plastics",
    "ticker": "PRINCEPIPE",
    "isin": "INE689W01016",
-   "price": 259,
-   "marketCap": 2861,
-   "peRatio": 27.5
+   "price": 255.85,
+   "marketCap": 2828.71,
+   "peRatio": 27.19
   },
   {
    "name": "Shaily Engg. Plastic",
    "sector": "Plastics",
    "ticker": "Shaily Engg. Plastic",
    "isin": "INE151G01028",
-   "price": 3034,
-   "marketCap": 13890,
-   "peRatio": 78.6
+   "price": 3040.8,
+   "marketCap": 13986.24,
+   "peRatio": 79.14
   },
   {
    "name": "Time Technoplast",
    "sector": "Plastics",
    "ticker": "Time Technoplast",
    "isin": "INE508G01029",
-   "price": 183,
-   "marketCap": 9054,
-   "peRatio": 18.5
+   "price": 183.92,
+   "marketCap": 9078.94,
+   "peRatio": 18.55
   },
   {
    "name": "Aurum Proptech",
    "sector": "Platform Cos",
    "ticker": "Aurum Proptech",
    "isin": "INE898S01029",
-   "price": 219,
-   "marketCap": 1576,
-   "peRatio": 1677
+   "price": 220.31,
+   "marketCap": 1682.12,
+   "peRatio": 1789.93
   },
   {
    "name": "BlackBuck",
    "sector": "Platform Cos",
    "ticker": "BlackBuck",
    "isin": "INE0UIZ01018",
-   "price": 601,
-   "marketCap": 10955,
-   "peRatio": 63.8
+   "price": 622.4,
+   "marketCap": 11332.51,
+   "peRatio": 66
   },
   {
    "name": "Cartrade Tech",
    "sector": "Platform Cos",
    "ticker": "CARTRADE",
    "isin": "INE290S01011",
-   "price": 2880,
-   "marketCap": 14008,
-   "peRatio": 58.8
+   "price": 2907.5,
+   "marketCap": 13962.7,
+   "peRatio": 58.61
   },
   {
    "name": "Infibeam Avenues",
    "sector": "Platform Cos",
    "ticker": "Infibeam Avenues",
    "isin": "INE483S01020",
-   "price": 15.4,
-   "marketCap": 5369,
-   "peRatio": 18.1
+   "price": 15.36,
+   "marketCap": 5357.92,
+   "peRatio": 18.06
   },
   {
    "name": "Macfos",
    "sector": "Platform Cos",
    "ticker": "Macfos",
    "isin": "INE0OLH01013",
-   "price": 1081,
-   "marketCap": 1120,
-   "peRatio": 42.2
+   "price": 1046,
+   "marketCap": 1084,
+   "peRatio": 40.8
   },
   {
    "name": "Matrimony.com",
    "sector": "Platform Cos",
    "ticker": "MATRIMONY",
    "isin": "INE866R01028",
-   "price": 521,
-   "marketCap": 1081,
-   "peRatio": 24.1
+   "price": 519.25,
+   "marketCap": 1073.47,
+   "peRatio": 23.93
   },
   {
    "name": "One Mobikwik Systems",
    "sector": "Platform Cos",
    "ticker": "One Mobikwik Systems",
    "isin": "INE0HLU01028",
-   "price": 199,
-   "marketCap": 1567,
-   "peRatio": 533
+   "price": 194.93,
+   "marketCap": 1534.69,
+   "peRatio": 522.01
   },
   {
    "name": "Pine Labs",
    "sector": "Platform Cos",
    "ticker": "PINELABS",
    "isin": "INE15B701018",
-   "price": 173,
-   "marketCap": 19970,
-   "peRatio": 154
+   "price": 171.55,
+   "marketCap": 19698.68,
+   "peRatio": 151.91
   },
   {
    "name": "Swiggy",
    "sector": "Platform Cos",
    "ticker": "SWIGGY",
    "isin": "INE00H001014",
-   "price": 256,
-   "marketCap": 70892,
+   "price": 253.7,
+   "marketCap": 70029.15,
    "peRatio": null
   },
   {
@@ -4650,17 +4659,17 @@
    "sector": "Platform Cos",
    "ticker": "TBO Tek",
    "isin": "INE673O01025",
-   "price": 1655,
-   "marketCap": 17967,
-   "peRatio": 66.8
+   "price": 1684.7,
+   "marketCap": 18293.78,
+   "peRatio": 68.02
   },
   {
    "name": "Urban Company",
    "sector": "Platform Cos",
    "ticker": "Urban Company",
    "isin": "INE0CAZ01013",
-   "price": 161,
-   "marketCap": 24860,
+   "price": 163.71,
+   "marketCap": 25247.04,
    "peRatio": null
   },
   {
@@ -4668,224 +4677,224 @@
    "sector": "Pumps Comp & Eng",
    "ticker": "Elgi Equipments",
    "isin": "INE285A01027",
-   "price": 599,
-   "marketCap": 18980,
-   "peRatio": 40.9
+   "price": 594.85,
+   "marketCap": 18851.33,
+   "peRatio": 40.63
   },
   {
    "name": "Greaves Cotton",
    "sector": "Pumps Comp & Eng",
    "ticker": "Greaves Cotton",
    "isin": "INE224A01026",
-   "price": 230,
-   "marketCap": 5368,
-   "peRatio": 53.9
+   "price": 234.99,
+   "marketCap": 5474.13,
+   "peRatio": 54.96
   },
   {
    "name": "Kirloskar Brothers",
    "sector": "Pumps Comp & Eng",
    "ticker": "Kirloskar Brothers",
    "isin": "INE732A01036",
-   "price": 1732,
-   "marketCap": 13755,
-   "peRatio": 34
+   "price": 1848.3,
+   "marketCap": 14677.15,
+   "peRatio": 36.28
   },
   {
    "name": "Kirloskar Oil",
    "sector": "Pumps Comp & Eng",
    "ticker": "KIRLOSENG",
    "isin": "INE146L01010",
-   "price": 2141,
-   "marketCap": 31169,
-   "peRatio": 54.7
+   "price": 2402,
+   "marketCap": 34920.26,
+   "peRatio": 61.28
   },
   {
    "name": "Kirloskar Pneumatic",
    "sector": "Pumps Comp & Eng",
    "ticker": "Kirloskar Pneumatic",
    "isin": "INE811A01038",
-   "price": 679,
-   "marketCap": 8813,
-   "peRatio": 32.3
+   "price": 684.4,
+   "marketCap": 8891.48,
+   "peRatio": 32.58
   },
   {
    "name": "KSB",
    "sector": "Pumps Comp & Eng",
    "ticker": "KSB",
    "isin": "INE999A01023",
-   "price": 801,
-   "marketCap": 13964,
-   "peRatio": 53.3
+   "price": 824.8,
+   "marketCap": 14354.75,
+   "peRatio": 54.81
   },
   {
    "name": "Oswal Pumps",
    "sector": "Pumps Comp & Eng",
    "ticker": "Oswal Pumps",
    "isin": "INE0BYP01024",
-   "price": 269,
-   "marketCap": 3059,
-   "peRatio": 9.09
+   "price": 266.25,
+   "marketCap": 3035.38,
+   "peRatio": 9.02
   },
   {
    "name": "Powerica",
    "sector": "Pumps Comp & Eng",
    "ticker": "POWERICA",
    "isin": "INE921L01032",
-   "price": 563,
-   "marketCap": 7138,
-   "peRatio": 25.4
+   "price": 599.75,
+   "marketCap": 7589.95,
+   "peRatio": 27.01
   },
   {
    "name": "Shakti Pumps",
    "sector": "Pumps Comp & Eng",
    "ticker": "SHAKTIPUMP",
    "isin": "INE908D01010",
-   "price": 465,
-   "marketCap": 5740,
-   "peRatio": 27
+   "price": 458,
+   "marketCap": 5651.63,
+   "peRatio": 26.58
   },
   {
    "name": "Ajmera Realty",
    "sector": "Realty",
    "ticker": "AJMERA",
    "isin": "INE298G01035",
-   "price": 120,
-   "marketCap": 2353,
-   "peRatio": 15.2
+   "price": 120.16,
+   "marketCap": 2364.7,
+   "peRatio": 15.28
   },
   {
    "name": "Arihant Superstruct.",
    "sector": "Realty",
    "ticker": "Arihant Superstruct.",
    "isin": "INE643K01018",
-   "price": 236,
-   "marketCap": 1018,
-   "peRatio": 25.5
+   "price": 230.25,
+   "marketCap": 995.83,
+   "peRatio": 24.94
   },
   {
    "name": "Arkade",
    "sector": "Realty",
    "ticker": "ARKADE",
    "isin": "INE0QRL01017",
-   "price": 123,
-   "marketCap": 2285,
-   "peRatio": 12.9
+   "price": 121.92,
+   "marketCap": 2263.61,
+   "peRatio": 12.78
   },
   {
    "name": "Arvind SmartSpaces",
    "sector": "Realty",
    "ticker": "ARVSMART",
    "isin": "INE034S01021",
-   "price": 616,
-   "marketCap": 2825,
-   "peRatio": 15.3
+   "price": 609.7,
+   "marketCap": 2796.51,
+   "peRatio": 15.15
   },
   {
    "name": "Ashiana Housing",
    "sector": "Realty",
    "ticker": "Ashiana Housing",
    "isin": "INE365D01021",
-   "price": 389,
-   "marketCap": 3898,
-   "peRatio": 33
+   "price": 390.55,
+   "marketCap": 3926,
+   "peRatio": 33.2
   },
   {
    "name": "Brigade Enterprises",
    "sector": "Realty",
    "ticker": "Brigade Enterprises",
    "isin": "INE791I01019",
-   "price": 584,
-   "marketCap": 19026,
-   "peRatio": 27.9
+   "price": 563.05,
+   "marketCap": 18364.57,
+   "peRatio": 27
   },
   {
    "name": "Eldeco Housing & Ind",
    "sector": "Realty",
    "ticker": "Eldeco Housing & Ind",
    "isin": "INE668G01021",
-   "price": 757,
-   "marketCap": 749,
-   "peRatio": 20.7
+   "price": 751.75,
+   "marketCap": 739.2,
+   "peRatio": 20.43
   },
   {
    "name": "Ganesh Housing",
    "sector": "Realty",
    "ticker": "Ganesh Housing",
    "isin": "INE460C01014",
-   "price": 719,
-   "marketCap": 5983,
-   "peRatio": 22.6
+   "price": 706.65,
+   "marketCap": 5892.55,
+   "peRatio": 22.26
   },
   {
    "name": "Keystone Realtors",
    "sector": "Realty",
    "ticker": "Keystone Realtors",
    "isin": "INE263M01029",
-   "price": 360,
-   "marketCap": 4566,
-   "peRatio": 38.9
+   "price": 362.95,
+   "marketCap": 4581.9,
+   "peRatio": 39.04
   },
   {
    "name": "Mahindra Life. Dev",
    "sector": "Realty",
    "ticker": "Mahindra Life. Dev",
    "isin": "INE813A01018",
-   "price": 363,
-   "marketCap": 7742,
-   "peRatio": 24.9
+   "price": 361,
+   "marketCap": 7701.67,
+   "peRatio": 24.77
   },
   {
    "name": "Marathon NextgenReal",
    "sector": "Realty",
    "ticker": "Marathon NextgenReal",
    "isin": "INE182D01020",
-   "price": 393,
-   "marketCap": 2647,
-   "peRatio": 13.6
+   "price": 384.9,
+   "marketCap": 2595.02,
+   "peRatio": 13.37
   },
   {
    "name": "Max Estates",
    "sector": "Realty",
    "ticker": "Max Estates",
    "isin": "INE03EI01018",
-   "price": 572,
-   "marketCap": 9331,
-   "peRatio": 1590
+   "price": 569.25,
+   "marketCap": 9306.53,
+   "peRatio": 1585.83
   },
   {
    "name": "Puravankara",
    "sector": "Realty",
    "ticker": "Puravankara",
    "isin": "INE323I01011",
-   "price": 210,
-   "marketCap": 4983,
-   "peRatio": 31.1
+   "price": 204.84,
+   "marketCap": 4857.77,
+   "peRatio": 30.35
   },
   {
    "name": "Raymond Realty",
    "sector": "Realty",
    "ticker": "Raymond Realty",
    "isin": "INE1SY401010",
-   "price": 673,
-   "marketCap": 4475,
-   "peRatio": 14.8
+   "price": 672.55,
+   "marketCap": 4477.42,
+   "peRatio": 14.81
   },
   {
    "name": "Shriram Properties",
    "sector": "Realty",
    "ticker": "Shriram Properties",
    "isin": "INE217L01019",
-   "price": 70.1,
-   "marketCap": 1197,
-   "peRatio": 13.1
+   "price": 69.86,
+   "marketCap": 1192.19,
+   "peRatio": 13.05
   },
   {
    "name": "Signatureglobal Ind.",
    "sector": "Realty",
    "ticker": "Signatureglobal Ind.",
    "isin": "INE903U01023",
-   "price": 780,
-   "marketCap": 10983,
+   "price": 754.45,
+   "marketCap": 10600.83,
    "peRatio": null
   },
   {
@@ -4893,44 +4902,44 @@
    "sector": "Realty",
    "ticker": "Sobha",
    "isin": "INE671H01015",
-   "price": 1219,
-   "marketCap": 13029,
-   "peRatio": 56.5
+   "price": 1216.5,
+   "marketCap": 13008.38,
+   "peRatio": 56.43
   },
   {
    "name": "Sri Lotus",
    "sector": "Realty",
    "ticker": "LOTUSDEV",
    "isin": "INE0V9Q01010",
-   "price": 208,
-   "marketCap": 10186,
-   "peRatio": 39.6
+   "price": 214.15,
+   "marketCap": 10466.02,
+   "peRatio": 40.69
   },
   {
    "name": "Sunteck Realty",
    "sector": "Realty",
    "ticker": "Sunteck Realty",
    "isin": "INE805D01034",
-   "price": 277,
-   "marketCap": 4067,
-   "peRatio": 19.1
+   "price": 280.3,
+   "marketCap": 4115.98,
+   "peRatio": 19.33
   },
   {
    "name": "Suraj Estate",
    "sector": "Realty",
    "ticker": "SURAJEST",
    "isin": "INE843S01025",
-   "price": 217,
-   "marketCap": 1039,
-   "peRatio": 11.3
+   "price": 209.06,
+   "marketCap": 998.75,
+   "peRatio": 10.86
   },
   {
    "name": "Aditya Birla Fashion & Retail",
    "sector": "Retail",
    "ticker": "ABFRL",
    "isin": "INE647O01011",
-   "price": 47.6,
-   "marketCap": 5804,
+   "price": 46.24,
+   "marketCap": 5643.64,
    "peRatio": null
   },
   {
@@ -4938,35 +4947,35 @@
    "sector": "Retail",
    "ticker": "Aditya Birla Lifesty",
    "isin": "INE14LE01019",
-   "price": 77.2,
-   "marketCap": 9418,
-   "peRatio": 44.1
+   "price": 76.98,
+   "marketCap": 9395.58,
+   "peRatio": 43.99
   },
   {
    "name": "Aditya Vision",
    "sector": "Retail",
    "ticker": "Aditya Vision",
    "isin": "INE679V01027",
-   "price": 607,
-   "marketCap": 7834,
-   "peRatio": 55.9
+   "price": 585.8,
+   "marketCap": 7564.91,
+   "peRatio": 53.98
   },
   {
    "name": "Arvind Fashions",
    "sector": "Retail",
    "ticker": "Arvind Fashions",
    "isin": "INE955V01021",
-   "price": 414,
-   "marketCap": 5531,
-   "peRatio": 42.2
+   "price": 410.15,
+   "marketCap": 5480.84,
+   "peRatio": 41.81
   },
   {
    "name": "Brainbees Solutions",
    "sector": "Retail",
    "ticker": "Brainbees Solutions",
    "isin": "INE02RE01045",
-   "price": 185,
-   "marketCap": 9646,
+   "price": 184.37,
+   "marketCap": 9625.35,
    "peRatio": null
   },
   {
@@ -4974,89 +4983,89 @@
    "sector": "Retail",
    "ticker": "Crizac",
    "isin": "INE0S4R01014",
-   "price": 177,
-   "marketCap": 3103,
-   "peRatio": 14.1
+   "price": 169.08,
+   "marketCap": 2958.6,
+   "peRatio": 13.44
   },
   {
    "name": "Electronics Mart Ind",
    "sector": "Retail",
    "ticker": "Electronics Mart Ind",
    "isin": "INE02YR01019",
-   "price": 193,
-   "marketCap": 7417,
-   "peRatio": 37.8
+   "price": 191.71,
+   "marketCap": 7376.02,
+   "peRatio": 37.59
   },
   {
    "name": "Entero",
    "sector": "Retail",
    "ticker": "ENTERO",
    "isin": "INE010601016",
-   "price": 1790,
-   "marketCap": 7789,
-   "peRatio": 60.4
+   "price": 1764.9,
+   "marketCap": 7680.52,
+   "peRatio": 59.56
   },
   {
    "name": "Go Fashion (India) (GoColors)",
    "sector": "Retail",
    "ticker": "GOCOLORS",
    "isin": "INE0BJS01011",
-   "price": 305,
-   "marketCap": 1606,
-   "peRatio": 90.7
+   "price": 304.3,
+   "marketCap": 1643.49,
+   "peRatio": 92.82
   },
   {
    "name": "Indiamart Intermesh",
    "sector": "Retail",
    "ticker": "Indiamart Intermesh",
    "isin": "INE933S01016",
-   "price": 1637,
-   "marketCap": 9843,
-   "peRatio": 20
+   "price": 1612.9,
+   "marketCap": 9700.49,
+   "peRatio": 19.71
   },
   {
    "name": "Landmark Cars",
    "sector": "Retail",
    "ticker": "Landmark Cars",
    "isin": "INE559R01029",
-   "price": 476,
-   "marketCap": 1974,
-   "peRatio": 42
+   "price": 487,
+   "marketCap": 2019.34,
+   "peRatio": 42.87
   },
   {
    "name": "Medplus",
    "sector": "Retail",
    "ticker": "MEDPLUS",
    "isin": "INE804L01022",
-   "price": 653,
-   "marketCap": 7847,
-   "peRatio": 37.3
+   "price": 654,
+   "marketCap": 7856.96,
+   "peRatio": 37.35
   },
   {
    "name": "Sai Silks (Kalamandir)",
    "sector": "Retail",
    "ticker": "KALAMANDIR",
    "isin": "INE438K01021",
-   "price": 78.1,
-   "marketCap": 1198,
-   "peRatio": 22
+   "price": 76.19,
+   "marketCap": 1168.5,
+   "peRatio": 21.46
   },
   {
    "name": "SG Mart",
    "sector": "Retail",
    "ticker": "SG Mart",
    "isin": "INE385F01024",
-   "price": 730,
-   "marketCap": 9165,
-   "peRatio": 73.7
+   "price": 755.95,
+   "marketCap": 9527.63,
+   "peRatio": 76.62
   },
   {
    "name": "Shoppers Stop",
    "sector": "Retail",
    "ticker": "Shoppers Stop",
    "isin": "INE498B01024",
-   "price": 422,
-   "marketCap": 4644,
+   "price": 418.95,
+   "marketCap": 4613.68,
    "peRatio": null
   },
   {
@@ -5064,530 +5073,530 @@
    "sector": "Retail",
    "ticker": "V-Mart Retail",
    "isin": "INE665J01013",
-   "price": 760,
-   "marketCap": 6048,
-   "peRatio": 43.6
+   "price": 760.05,
+   "marketCap": 6046.05,
+   "peRatio": 43.59
   },
   {
    "name": "V2 Retail",
    "sector": "Retail",
    "ticker": "V2 Retail",
    "isin": "INE945H01021",
-   "price": 211,
-   "marketCap": 7710,
-   "peRatio": 48.6
+   "price": 209.43,
+   "marketCap": 7636.6,
+   "peRatio": 48.14
   },
   {
    "name": "Vedant Fashions (Manyavar)",
    "sector": "Retail",
    "ticker": "MANYAVAR",
    "isin": "INE825V01034",
-   "price": 541,
-   "marketCap": 13141,
-   "peRatio": 32.6
+   "price": 531.7,
+   "marketCap": 12919.1,
+   "peRatio": 32.11
   },
   {
    "name": "Apcotex Inds",
    "sector": "Rubber",
    "ticker": "Apcotex Inds",
    "isin": "INE116A01032",
-   "price": 586,
-   "marketCap": 3039,
-   "peRatio": 18.9
+   "price": 595.45,
+   "marketCap": 3087.11,
+   "peRatio": 19.19
   },
   {
    "name": "GRP",
    "sector": "Rubber",
    "ticker": "GRP",
    "isin": "INE137I01015",
-   "price": 1950,
-   "marketCap": 1040,
-   "peRatio": 152
+   "price": 1899.4,
+   "marketCap": 1013.01,
+   "peRatio": 148.05
   },
   {
    "name": "Tinna Rubber",
    "sector": "Rubber",
    "ticker": "TINNARUBR",
    "isin": "INE015C01016",
-   "price": 947,
-   "marketCap": 1701,
-   "peRatio": 27.6
+   "price": 955.2,
+   "marketCap": 1720.87,
+   "peRatio": 27.88
   },
   {
    "name": "Affle 3i",
    "sector": "Software",
    "ticker": "Affle 3i",
    "isin": "INE00WC01027",
-   "price": 1548,
-   "marketCap": 21832,
-   "peRatio": 45.7
+   "price": 1501,
+   "marketCap": 21133.54,
+   "peRatio": 44.25
   },
   {
    "name": "Amagi Media Labs",
    "sector": "Software",
    "ticker": "AMAGI",
    "isin": "INE121R01077",
-   "price": 560,
-   "marketCap": 12340,
-   "peRatio": 121
+   "price": 563.85,
+   "marketCap": 12198.27,
+   "peRatio": 119.61
   },
   {
    "name": "Aurionpro Solutions",
    "sector": "Software",
    "ticker": "Aurionpro Solutions",
    "isin": "INE132H01018",
-   "price": 642,
-   "marketCap": 3548,
-   "peRatio": 16.9
+   "price": 634.2,
+   "marketCap": 3504.69,
+   "peRatio": 16.69
   },
   {
    "name": "Birlasoft",
    "sector": "Software",
    "ticker": "Birlasoft",
    "isin": "INE836A01035",
-   "price": 271,
-   "marketCap": 7586,
-   "peRatio": 12.7
+   "price": 269.05,
+   "marketCap": 7520.12,
+   "peRatio": 12.59
   },
   {
    "name": "Black Box",
    "sector": "Software",
    "ticker": "Black Box",
    "isin": "INE676A01027",
-   "price": 783,
-   "marketCap": 13874,
-   "peRatio": 48.6
+   "price": 812.8,
+   "marketCap": 14435.26,
+   "peRatio": 50.56
   },
   {
    "name": "Capillary Technologies",
    "sector": "Software",
    "ticker": "CAPILLARY",
    "isin": "INE0ILV01024",
-   "price": 576,
-   "marketCap": 4559,
-   "peRatio": 89
+   "price": 568.05,
+   "marketCap": 4514.41,
+   "peRatio": 88.17
   },
   {
    "name": "CE Info Systems",
    "sector": "Software",
    "ticker": "MAPMYINDIA",
    "isin": "INE0BV301023",
-   "price": 866,
-   "marketCap": 4749,
-   "peRatio": 34.4
+   "price": 845.2,
+   "marketCap": 4628.4,
+   "peRatio": 33.53
   },
   {
    "name": "Ceinsys Tech",
    "sector": "Software",
    "ticker": "Ceinsys Tech",
    "isin": "INE016Q01014",
-   "price": 685,
-   "marketCap": 1432,
-   "peRatio": 10.7
+   "price": 681.85,
+   "marketCap": 1427.63,
+   "peRatio": 10.67
   },
   {
    "name": "Cyient",
    "sector": "Software",
    "ticker": "Cyient",
    "isin": "INE136B01020",
-   "price": 1082,
-   "marketCap": 12028,
-   "peRatio": 29.5
+   "price": 1055.3,
+   "marketCap": 11054.58,
+   "peRatio": 27.12
   },
   {
    "name": "Datamatic Global Ser",
    "sector": "Software",
    "ticker": "Datamatic Global Ser",
    "isin": "INE365B01017",
-   "price": 784,
-   "marketCap": 4632,
-   "peRatio": 18.2
+   "price": 821.4,
+   "marketCap": 4855,
+   "peRatio": 19.07
   },
   {
    "name": "Digitide Solutions",
    "sector": "Software",
    "ticker": "Digitide Solutions",
    "isin": "INE0U4701011",
-   "price": 76.6,
-   "marketCap": 1142,
-   "peRatio": 1011
+   "price": 75.12,
+   "marketCap": 1120.12,
+   "peRatio": 991.63
   },
   {
    "name": "E2E Networks",
    "sector": "Software",
    "ticker": "E2E",
    "isin": "INE255Z01027",
-   "price": 626,
-   "marketCap": 12922,
-   "peRatio": 415
+   "price": 651.8,
+   "marketCap": 13398.72,
+   "peRatio": 430.31
   },
   {
    "name": "eMudhra",
    "sector": "Software",
    "ticker": "eMudhra",
    "isin": "INE01QM01018",
-   "price": 649,
-   "marketCap": 5343,
-   "peRatio": 46.4
+   "price": 627.15,
+   "marketCap": 5193.54,
+   "peRatio": 45.1
   },
   {
    "name": "Expleo Solutions",
    "sector": "Software",
    "ticker": "Expleo Solutions",
    "isin": "INE201K01015",
-   "price": 870,
-   "marketCap": 1350,
-   "peRatio": 9.19
+   "price": 858.3,
+   "marketCap": 1332.06,
+   "peRatio": 9.07
   },
   {
    "name": "Fractal Analytics",
    "sector": "Software",
    "ticker": "FRACTAL",
    "isin": "INE212S01015",
-   "price": 742,
-   "marketCap": 12881,
-   "peRatio": 38.8
+   "price": 753.15,
+   "marketCap": 12951.55,
+   "peRatio": 39.03
   },
   {
    "name": "Happiest Minds",
    "sector": "Software",
    "ticker": "HAPPSTMNDS",
    "isin": "INE419U01012",
-   "price": 307,
-   "marketCap": 4676,
-   "peRatio": 19.9
+   "price": 308.7,
+   "marketCap": 4700.72,
+   "peRatio": 20
   },
   {
    "name": "InfoBeans Technologies",
    "sector": "Software",
    "ticker": "INFOBEAN",
    "isin": "INE344S01016",
-   "price": 144,
-   "marketCap": 1400,
-   "peRatio": 16.5
+   "price": 143.78,
+   "marketCap": 1394.08,
+   "peRatio": 16.45
   },
   {
    "name": "Intellect Design Arena",
    "sector": "Software",
    "ticker": "INTELLECT",
    "isin": "INE306R01017",
-   "price": 632,
-   "marketCap": 8874,
-   "peRatio": 24
+   "price": 613.25,
+   "marketCap": 8586.16,
+   "peRatio": 23.22
   },
   {
    "name": "Inventurus Knowledge Solutions",
    "sector": "Software",
    "ticker": "IKS",
    "isin": "INE115Q01022",
-   "price": 1768,
-   "marketCap": 30331,
-   "peRatio": 39.7
+   "price": 1779.4,
+   "marketCap": 30529.73,
+   "peRatio": 39.97
   },
   {
    "name": "IZMO",
    "sector": "Software",
    "ticker": "IZMO",
    "isin": "INE848A01014",
-   "price": 874,
-   "marketCap": 1305,
-   "peRatio": 24.3
+   "price": 888.2,
+   "marketCap": 1328.98,
+   "peRatio": 24.75
   },
   {
    "name": "KPIT Technologies",
    "sector": "Software",
    "ticker": "KPITTECH",
    "isin": "INE04I401011",
-   "price": 509,
-   "marketCap": 13938,
-   "peRatio": 22.3
+   "price": 519.7,
+   "marketCap": 14247.25,
+   "peRatio": 22.8
   },
   {
    "name": "Latent View Analytic",
    "sector": "Software",
    "ticker": "Latent View Analytic",
    "isin": "INE0I7C01011",
-   "price": 242,
-   "marketCap": 5000,
-   "peRatio": 25.6
+   "price": 235.5,
+   "marketCap": 4873.08,
+   "peRatio": 24.95
   },
   {
    "name": "Mastek",
    "sector": "Software",
    "ticker": "Mastek",
    "isin": "INE759A01021",
-   "price": 1556,
-   "marketCap": 4827,
-   "peRatio": 11
+   "price": 1523.4,
+   "marketCap": 4722.66,
+   "peRatio": 10.79
   },
   {
    "name": "Mobavenue Ai Tech",
    "sector": "Software",
    "ticker": "MOBAVENUE",
    "isin": "INE622Q01027",
-   "price": 302,
-   "marketCap": 2331,
-   "peRatio": 66.6
+   "price": 303,
+   "marketCap": 2339,
+   "peRatio": 66.8
   },
   {
    "name": "Netweb Technologies",
    "sector": "Software",
    "ticker": "Netweb Technologies",
    "isin": "INE0NT901020",
-   "price": 4519,
-   "marketCap": 26867,
-   "peRatio": 103
+   "price": 4613,
+   "marketCap": 26266.74,
+   "peRatio": 100.7
   },
   {
    "name": "Network People Services",
    "sector": "Software",
    "ticker": "NPST",
    "isin": "INE0FFK01017",
-   "price": 1635,
-   "marketCap": 3411,
-   "peRatio": 76.4
+   "price": 1653,
+   "marketCap": 3446.61,
+   "peRatio": 77.2
   },
   {
    "name": "Newgen Software",
    "sector": "Software",
    "ticker": "NEWGEN",
    "isin": "INE619B01017",
-   "price": 474,
-   "marketCap": 6750,
-   "peRatio": 19.7
+   "price": 473,
+   "marketCap": 6740.72,
+   "peRatio": 19.67
   },
   {
    "name": "Nucleus Software",
    "sector": "Software",
    "ticker": "NUCLEUS",
    "isin": "INE096B01018",
-   "price": 662,
-   "marketCap": 1740,
-   "peRatio": 15.2
+   "price": 652.55,
+   "marketCap": 1717.86,
+   "peRatio": 15
   },
   {
    "name": "Onward Technologies",
    "sector": "Software",
    "ticker": "ONWARDTEC",
    "isin": "INE229A01017",
-   "price": 285,
-   "marketCap": 626,
-   "peRatio": 13.9
+   "price": 287.4,
+   "marketCap": 638.37,
+   "peRatio": 14.18
   },
   {
    "name": "Protean eGov",
    "sector": "Software",
    "ticker": "PROTEAN",
    "isin": "INE004A01022",
-   "price": 692,
-   "marketCap": 2823,
-   "peRatio": 32.8
+   "price": 666.65,
+   "marketCap": 2707.71,
+   "peRatio": 31.46
   },
   {
    "name": "R Systems International",
    "sector": "Software",
    "ticker": "RSYSTEMS",
    "isin": "INE411H01032",
-   "price": 275,
-   "marketCap": 3260,
-   "peRatio": 15.5
+   "price": 298.69,
+   "marketCap": 3539.07,
+   "peRatio": 16.82
   },
   {
    "name": "Railtel Corporation of India",
    "sector": "Software",
    "ticker": "RAILTEL",
    "isin": "INE0DD101019",
-   "price": 256,
-   "marketCap": 8216,
-   "peRatio": 43.8
+   "price": 259.25,
+   "marketCap": 8320.33,
+   "peRatio": 44.36
   },
   {
    "name": "RateGain Travel Tech",
    "sector": "Software",
    "ticker": "RATEGAIN",
    "isin": "INE0CLI01024",
-   "price": 829,
-   "marketCap": 9831,
-   "peRatio": 37.6
+   "price": 830,
+   "marketCap": 9829.32,
+   "peRatio": 37.59
   },
   {
    "name": "Route Mobile",
    "sector": "Software",
    "ticker": "Route Mobile",
    "isin": "INE450U01017",
-   "price": 453,
-   "marketCap": 2860,
-   "peRatio": 8.08
+   "price": 447.2,
+   "marketCap": 2817.5,
+   "peRatio": 7.96
   },
   {
    "name": "Sagility",
    "sector": "Software",
    "ticker": "Sagility",
    "isin": "INE0W2G01015",
-   "price": 43.4,
-   "marketCap": 20313,
-   "peRatio": 19.8
+   "price": 42.54,
+   "marketCap": 19914.37,
+   "peRatio": 19.41
   },
   {
    "name": "Saksoft",
    "sector": "Software",
    "ticker": "Saksoft",
    "isin": "INE667G01023",
-   "price": 142,
-   "marketCap": 1879,
-   "peRatio": 14
+   "price": 139.78,
+   "marketCap": 1852.8,
+   "peRatio": 13.81
   },
   {
    "name": "Sonata Software",
    "sector": "Software",
    "ticker": "Sonata Software",
    "isin": "INE269A01021",
-   "price": 274,
-   "marketCap": 7685,
-   "peRatio": 15.2
+   "price": 260.85,
+   "marketCap": 7314.88,
+   "peRatio": 14.47
   },
   {
    "name": "TAC Security (Tac Infosec)",
    "sector": "Software",
    "ticker": "TAC",
    "isin": "INE0SOY01013",
-   "price": 428,
-   "marketCap": 899,
-   "peRatio": 32.7
+   "price": 419.7,
+   "marketCap": 882.47,
+   "peRatio": 32.08
   },
   {
    "name": "Tanla Platforms",
    "sector": "Software",
    "ticker": "Tanla Platforms",
    "isin": "INE483C01032",
-   "price": 497,
-   "marketCap": 6593,
-   "peRatio": 12.4
+   "price": 490.65,
+   "marketCap": 6506.87,
+   "peRatio": 12.23
   },
   {
    "name": "Tata Technologies",
    "sector": "Software",
    "ticker": "Tata Technologies",
    "isin": "INE142M01025",
-   "price": 707,
-   "marketCap": 28712,
-   "peRatio": 44.1
+   "price": 686.75,
+   "marketCap": 27885.61,
+   "peRatio": 42.83
   },
   {
    "name": "Unicomm. eSolutions",
    "sector": "Software",
    "ticker": "UNIECOM",
    "isin": "INE00U401027",
-   "price": 82.2,
-   "marketCap": 923,
-   "peRatio": 43.4
+   "price": 82.45,
+   "marketCap": 926.57,
+   "peRatio": 43.56
   },
   {
    "name": "Xtranet Technologies",
    "sector": "Software",
    "ticker": "XTRANET",
    "isin": "INE0NG701011",
-   "price": 286,
-   "marketCap": 1495,
-   "peRatio": 34.9
+   "price": 271.48,
+   "marketCap": 1419.45,
+   "peRatio": 33.13
   },
   {
    "name": "Zaggle Prepaid",
    "sector": "Software",
    "ticker": "ZAGGLE",
    "isin": "INE07K301024",
-   "price": 176,
-   "marketCap": 2360,
-   "peRatio": 18.2
+   "price": 173.84,
+   "marketCap": 2337.43,
+   "peRatio": 18.02
   },
   {
    "name": "Zensar Technologies",
    "sector": "Software",
    "ticker": "Zensar Technologies",
    "isin": "INE520A01027",
-   "price": 437,
-   "marketCap": 9932,
-   "peRatio": 12.5
+   "price": 429,
+   "marketCap": 9759.56,
+   "peRatio": 12.28
   },
   {
    "name": "Alpex Solar",
    "sector": "Solar PV Cells EPC",
    "ticker": "ALPEXSOLAR",
    "isin": "INE0R4701017",
-   "price": 872,
-   "marketCap": 2227,
-   "peRatio": 11.1
+   "price": 865.3,
+   "marketCap": 2210.24,
+   "peRatio": 11.01
   },
   {
    "name": "Australian Prem",
    "sector": "Solar PV Cells EPC",
    "ticker": "APS",
    "isin": "INE0P0001010",
-   "price": 231,
-   "marketCap": 466,
-   "peRatio": 8.05
+   "price": 229.6,
+   "marketCap": 462.87,
+   "peRatio": 7.99
   },
   {
    "name": "Clean Max Env. Energ",
    "sector": "Solar PV Cells EPC",
    "ticker": "CLEANMAX",
    "isin": "INE647U01026",
-   "price": 1373,
-   "marketCap": 16151,
-   "peRatio": 103
+   "price": 1382.4,
+   "marketCap": 16191.52,
+   "peRatio": 103.02
   },
   {
    "name": "Emmvee Photovoltaic Power Ltd",
    "sector": "Solar PV Cells EPC",
    "ticker": "EMMVEE",
    "isin": "INE1C6T01020",
-   "price": 316,
-   "marketCap": 21833,
-   "peRatio": 17.1
+   "price": 314.55,
+   "marketCap": 21777.71,
+   "peRatio": 17.06
   },
   {
    "name": "Insolation Energy",
    "sector": "Solar PV Cells EPC",
    "ticker": "insolation-energy",
    "isin": "INE0LGX01024",
-   "price": 89.1,
-   "marketCap": 1961,
-   "peRatio": 10.1
+   "price": 87.63,
+   "marketCap": 1931.32,
+   "peRatio": 9.95
   },
   {
    "name": "Oriana Power",
    "sector": "Solar PV Cells EPC",
    "ticker": "ORIANA",
    "isin": "INE0OUT01027",
-   "price": 310,
-   "marketCap": 3148,
-   "peRatio": 12.5
+   "price": 317.2,
+   "marketCap": 3222.62,
+   "peRatio": 12.8
   },
   {
    "name": "Saatvik Green",
    "sector": "Solar PV Cells EPC",
    "ticker": "SAATVIKGL",
    "isin": "INE13B501022",
-   "price": 422,
-   "marketCap": 5381,
-   "peRatio": 21.6
+   "price": 414.5,
+   "marketCap": 5268.5,
+   "peRatio": 21.15
   },
   {
    "name": "Solex Energy",
    "sector": "Solar PV Cells EPC",
    "ticker": "SOLEX",
    "isin": "INE880Y01017",
-   "price": 695,
-   "marketCap": 750,
-   "peRatio": 9.41
+   "price": 688.55,
+   "marketCap": 743.81,
+   "peRatio": 9.34
   },
   {
    "name": "Vikram Solar",
    "sector": "Solar PV Cells EPC",
    "ticker": "Vikram Solar",
    "isin": "INE078V01014",
-   "price": 160,
-   "marketCap": 5799,
+   "price": 160.05,
+   "marketCap": 5799.48,
    "peRatio": 16.1
   },
   {
@@ -5595,152 +5604,152 @@
    "sector": "Solar PV Cells EPC",
    "ticker": "Waaree Renewables",
    "isin": "INE299N01021",
-   "price": 826,
-   "marketCap": 8623,
-   "peRatio": 17
+   "price": 821.4,
+   "marketCap": 8570.96,
+   "peRatio": 16.89
   },
   {
    "name": "Websol Energy System Ltd",
    "sector": "Solar PV Cells EPC",
    "ticker": "WEBELSOLAR",
    "isin": "INE855C01023",
-   "price": 71.8,
-   "marketCap": 3112,
-   "peRatio": 9.91
+   "price": 70.62,
+   "marketCap": 3066.06,
+   "peRatio": 9.76
   },
   {
    "name": "BLS International",
    "sector": "Travel Services",
    "ticker": "BLS",
    "isin": "INE153T01027",
-   "price": 221,
-   "marketCap": 9109,
-   "peRatio": 12.9
+   "price": 219.55,
+   "marketCap": 9039.77,
+   "peRatio": 12.8
   },
   {
    "name": "Le Travenues Techno",
    "sector": "Travel Services",
    "ticker": "Le Travenues Techno",
    "isin": "INE0HV901016",
-   "price": 155,
-   "marketCap": 6832,
-   "peRatio": 78
+   "price": 160.24,
+   "marketCap": 7029.23,
+   "peRatio": 80.25
   },
   {
    "name": "Thomas Cook India",
    "sector": "Travel Services",
    "ticker": "THOMASCOOK",
    "isin": "INE332A01027",
-   "price": 102,
-   "marketCap": 4807,
-   "peRatio": 21.4
+   "price": 103.92,
+   "marketCap": 4888.19,
+   "peRatio": 21.76
   },
   {
    "name": "Yatra Online",
    "sector": "Travel Services",
    "ticker": "Yatra Online",
    "isin": "INE0JR601024",
-   "price": 102,
-   "marketCap": 1592,
-   "peRatio": 46.3
+   "price": 101.37,
+   "marketCap": 1590.66,
+   "peRatio": 46.26
   },
   {
    "name": "Apollo Tyres",
    "sector": "Tyres",
    "ticker": "Apollo Tyres",
    "isin": "INE438A01022",
-   "price": 390,
-   "marketCap": 24744,
-   "peRatio": 11.6
+   "price": 406.75,
+   "marketCap": 25832.73,
+   "peRatio": 12.11
   },
   {
    "name": "CEAT",
    "sector": "Tyres",
    "ticker": "CEAT",
    "isin": "INE482A01020",
-   "price": 3275,
-   "marketCap": 13230,
-   "peRatio": 20.8
+   "price": 3240,
+   "marketCap": 13105.83,
+   "peRatio": 20.61
   },
   {
    "name": "JK Tyre & Indust",
    "sector": "Tyres",
    "ticker": "JKTYRE",
    "isin": "INE573A01042",
-   "price": 338,
-   "marketCap": 9738,
-   "peRatio": 13.5
+   "price": 334.8,
+   "marketCap": 9651.93,
+   "peRatio": 13.38
   },
   {
    "name": "Antony Waste Hand",
    "sector": "Utilities",
    "ticker": "Antony Waste Hand",
    "isin": "INE01BK01022",
-   "price": 368,
-   "marketCap": 1043,
-   "peRatio": 17.8
+   "price": 364.35,
+   "marketCap": 1034.1,
+   "peRatio": 17.69
   },
   {
    "name": "EMS Limited",
    "sector": "Utilities",
    "ticker": "EMSLIMITED",
    "isin": "INE0OV601013",
-   "price": 343,
-   "marketCap": 1905,
-   "peRatio": 28
+   "price": 337.5,
+   "marketCap": 1874.16,
+   "peRatio": 27.55
   },
   {
    "name": "Enviro Infra Engine.",
    "sector": "Utilities",
    "ticker": "Enviro Infra Engine.",
    "isin": "INE0LLY01014",
-   "price": 193,
-   "marketCap": 3388,
-   "peRatio": 18.4
+   "price": 191.48,
+   "marketCap": 3361.05,
+   "peRatio": 18.26
   },
   {
    "name": "ION Exchage",
    "sector": "Utilities",
    "ticker": "IONEXCHANG",
    "isin": "INE570A01022",
-   "price": 423,
-   "marketCap": 6214,
-   "peRatio": 56.5
+   "price": 410.2,
+   "marketCap": 6016.26,
+   "peRatio": 54.71
   },
   {
    "name": "Va Tech Wabag",
    "sector": "Utilities",
    "ticker": "WABAG",
    "isin": "INE956G01038",
-   "price": 1977,
-   "marketCap": 12350,
-   "peRatio": 31
+   "price": 2093.8,
+   "marketCap": 13047.65,
+   "peRatio": 32.72
   },
   {
    "name": "Action Const.Eq.",
    "sector": "Vehicles",
    "ticker": "ACE",
    "isin": "INE731H01025",
-   "price": 1213,
-   "marketCap": 14432,
-   "peRatio": 33
+   "price": 1205.8,
+   "marketCap": 14359.05,
+   "peRatio": 32.9
   },
   {
    "name": "Ajax Engineering",
    "sector": "Vehicles",
    "ticker": "Ajax Engineering",
    "isin": "INE274Y01021",
-   "price": 595,
-   "marketCap": 6813,
-   "peRatio": 29.6
+   "price": 591.65,
+   "marketCap": 6768.88,
+   "peRatio": 29.41
   },
   {
    "name": "Ather Energy",
    "sector": "Vehicles",
    "ticker": "Ather Energy",
    "isin": "INE0LEZ01016",
-   "price": 1455,
-   "marketCap": 57704,
+   "price": 1407,
+   "marketCap": 53905.12,
    "peRatio": null
   },
   {
@@ -5748,17 +5757,17 @@
    "sector": "Vehicles",
    "ticker": "INDOFARM",
    "isin": "INE622H01018",
-   "price": 134,
-   "marketCap": 645,
-   "peRatio": 25.9
+   "price": 133.17,
+   "marketCap": 639.9,
+   "peRatio": 25.7
   },
   {
    "name": "Ola Electric",
    "sector": "Vehicles",
    "ticker": "OLAELEC",
    "isin": "INE0LXG01040",
-   "price": 37.9,
-   "marketCap": 17514,
+   "price": 37.42,
+   "marketCap": 17319.5,
    "peRatio": null
   },
   {
@@ -5766,17 +5775,17 @@
    "sector": "Vehicles",
    "ticker": "Olectra Greentech",
    "isin": "INE260D01016",
-   "price": 1174,
-   "marketCap": 9629,
-   "peRatio": 54.3
+   "price": 1136.9,
+   "marketCap": 9331.76,
+   "peRatio": 52.62
   },
   {
    "name": "TIL",
    "sector": "Vehicles",
    "ticker": "TIL",
    "isin": "INE806C01018",
-   "price": 252,
-   "marketCap": 2089,
+   "price": 249.03,
+   "marketCap": 1994.52,
    "peRatio": null
   },
   {
@@ -5784,18 +5793,18 @@
    "sector": "Vehicles",
    "ticker": "VST Tillers Tractors",
    "isin": "INE764D01017",
-   "price": 4307,
-   "marketCap": 3733,
-   "peRatio": 34.3
+   "price": 4427.4,
+   "marketCap": 3830.92,
+   "peRatio": 35.19
   },
   {
    "name": "Zelio E-Mobility",
    "sector": "Vehicles",
    "ticker": "Zelio E-Mobility",
    "isin": "INE1B3501014",
-   "price": 1078,
-   "marketCap": 2280,
-   "peRatio": 81.8
+   "price": 1056,
+   "marketCap": 2234,
+   "peRatio": 80.1
   }
  ]
 }

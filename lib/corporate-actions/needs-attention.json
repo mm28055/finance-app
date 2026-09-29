@@ -279,5 +279,12 @@
     "subject": "Governance: auditor qualification",
     "why": "The FY26 annual report says the auditor qualified the accounts over an Enforcement Directorate money-laundering case against a joint MD (found while researching management). Confirm from the report, add it to the company section and risks if missing, and weigh it in the call.",
     "addedOn": "2026-09-29"
+  },
+  {
+    "company": "Bajaj Healthcare",
+    "sector": "Pharma API",
+    "subject": "Not in the Pharma API note",
+    "why": "Add a company section to the Pharma API note (or write the note if the sector has none).",
+    "addedOn": "2026-09-29"
   }
 ]
