@@ -29,17 +29,20 @@ function Row({ c }: { c: Checkpoint }) {
                     {c.resolvedBy ? ` · judged ${c.resolvedBy === 'auto' ? 'from filed results' : 'in review'}` : ''}
                     {c.outcome ? ` · ${c.outcome}` : ''}
                 </p>
+                {c.revisions?.map(r => (
+                    <p key={r.on + r.text} className="text-[10px] text-violet-500 mt-0.5">Management changed this ({r.on}): {r.text}</p>
+                ))}
             </div>
         </li>
     );
 }
 
 export default function Scorecard() {
-    const live = CHECKPOINTS.filter(c => c.status !== 'dropped');
+    const live = CHECKPOINTS;
     const overall = hitRate(live);
     const quarters = [...new Set(live.map(c => c.due.replace(/^H1 /, 'Q2 ').replace(/^H2 /, 'Q4 ')))]
         .sort((a, b) => dueRank(a) - dueRank(b)); // soonest first: the season in progress on top
-    const order = { missed: 0, partly: 1, met: 2, pending: 3, dropped: 4 } as const;
+    const order = { missed: 0, partly: 1, met: 2, pending: 3 } as const;
 
     return (
         <main className="min-h-screen bg-[#FAFBFC] p-6">

@@ -2,7 +2,7 @@
 export type CheckpointMetric =
     | 'revenueYoY' | 'ebitdaMargin' | 'patYoY' | 'revenue' | 'ebitda' | 'pat' | 'orderBook'
     | 'fyRevenueGrowth' | 'fyEbitdaMargin';
-export type CheckpointStatus = 'pending' | 'met' | 'partly' | 'missed' | 'dropped';
+export type CheckpointStatus = 'pending' | 'met' | 'partly' | 'missed';
 
 export interface Checkpoint {
     id: string;
@@ -21,6 +21,9 @@ export interface Checkpoint {
     resolvedOn?: string;
     resolvedBy?: 'auto' | 'review';
     outcome?: string;         // one line: what followed (e.g. "Moved to own")
+    /** Management changed the expectation later (newest last). Nothing is ever dropped: the original target
+     *  stays and is still judged; a new target becomes a new checkpoint. */
+    revisions?: { on: string; text: string }[];
 }
 
 /** Quarter order: "Q2 FY27" → 272; half-years map onto their closing quarter (H1 → Q2, H2 → Q4). */
@@ -32,7 +35,7 @@ export function dueRank(due: string): number {
 }
 
 /** met / partly / missed for a numeric check. "Partly": within a point (percent measures) or 10% (amounts). */
-export function judge(actual: number, op: NonNullable<Checkpoint['op']>, target: Checkpoint['target'], percent: boolean): Exclude<CheckpointStatus, 'pending' | 'dropped'> {
+export function judge(actual: number, op: NonNullable<Checkpoint['op']>, target: Checkpoint['target'], percent: boolean): Exclude<CheckpointStatus, 'pending'> {
     const slack = (t: number) => (percent ? 1 : Math.abs(t) * 0.1);
     if (op === 'between' && Array.isArray(target)) {
         const [lo, hi] = target;

@@ -7,7 +7,6 @@ import { STATUS_STYLE } from './checkpoint-status';
 // when its quarter's results arrive (numbers by the daily job, the rest by the weekly review).
 export function CompanyCheckpoints({ checkpoints }: { checkpoints: Checkpoint[] }) {
     const list = [...checkpoints]
-        .filter(c => c.status !== 'dropped')
         // Settled ones first (latest on top), then pending ones soonest first.
         .sort((a, b) => {
             const pa = a.status === 'pending', pb = b.status === 'pending';
@@ -40,6 +39,9 @@ export function CompanyCheckpoints({ checkpoints }: { checkpoints: Checkpoint[] 
                                     {c.status === 'pending' && c.ifMet ? ` · if met: ${c.ifMet}` : ''}
                                     {c.outcome ? ` · ${c.outcome}` : ''}
                                 </p>
+                                {c.revisions?.map(r => (
+                                    <p key={r.on + r.text} className="text-[10px] text-violet-500 mt-0.5">Management changed this ({r.on}): {r.text}</p>
+                                ))}
                             </div>
                         </li>
                     );
