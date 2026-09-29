@@ -34,6 +34,18 @@ export function dueRank(due: string): number {
     return Number(m[3]) * 10 + q;
 }
 
+/** Last day of the quarter a checkpoint is due: "Q1 FY27" → 2026-06-30, "Q4 FY27" / "H2 FY27" → 2027-03-31. */
+export function dueEnd(due: string): string | null {
+    const m = due.match(/^([QH])([1-4]) FY(\d{2})$/);
+    if (!m) return null;
+    const q = m[1] === 'H' ? (m[2] === '1' ? 2 : 4) : Number(m[2]);
+    const fy = 2000 + Number(m[3]);
+    return ['', `${fy - 1}-06-30`, `${fy - 1}-09-30`, `${fy - 1}-12-31`, `${fy}-03-31`][q];
+}
+
+/** How long checkpoints are kept after their quarter ends. */
+export const KEEP_YEARS = 3;
+
 /** met / partly / missed for a numeric check. "Partly": within a point (percent measures) or 10% (amounts). */
 export function judge(actual: number, op: NonNullable<Checkpoint['op']>, target: Checkpoint['target'], percent: boolean): Exclude<CheckpointStatus, 'pending'> {
     const slack = (t: number) => (percent ? 1 : Math.abs(t) * 0.1);

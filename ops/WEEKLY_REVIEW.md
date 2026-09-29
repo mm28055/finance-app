@@ -65,7 +65,7 @@ concrete watch item or guidance, add it as a checkpoint: `id` = "<company-slug>-
 (the note's key), `sector`, `text`, `due` ("Q3 FY27", "H2 FY27", "Q4 FY27" for the full year), `createdOn`, `status:
 "pending"`, and `metric`/`op`/`target` only for figures computed from Screener's quarterly results (`revenueYoY`,
 `ebitdaMargin` = operating profit ÷ sales, `patYoY`, `revenue`, `ebitda`, `pat`, `orderBook` in ₹ crore). At most 4
-pending per company. Never delete checkpoints.
+pending per company. Never delete checkpoints (the daily job removes them three years after their quarter ends).
 
 **Needs a session** (`lib/session-todos/todos.json`, shown as a chip on the dashboard header). Add an item when
 something needs the owner to open a session with Claude and you cannot do it within this run's rules: a company to

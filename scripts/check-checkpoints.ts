@@ -3,7 +3,7 @@
  * whose quarter's results are now filed — margin, sales or profit growth, amounts, order book —
  * from the Financials table (filed figures refilled from Screener). Each settled checkpoint
  * is recorded with its actual figure and also added to needs-attention.json, so the weekly
- * review weighs it in the call. Checkpoints without a metric (events, company-defined
+ * review weighs it in the call. Checkpoints are kept three years after their quarter ends. Checkpoints without a metric (events, company-defined
  * figures) and full-year ones are left for the weekly review to judge.
  *
  *   npx tsx scripts/check-checkpoints.ts            (writes)
@@ -13,7 +13,7 @@ import 'dotenv/config';
 import fs from 'fs';
 import path from 'path';
 import { prisma } from '../lib/prisma';
-import { type Checkpoint, judge, PERCENT_METRICS, formatTarget } from '../lib/checkpoints';
+import { type Checkpoint, judge, PERCENT_METRICS, formatTarget, dueEnd, KEEP_YEARS } from '../lib/checkpoints';
 
 const FILE = path.join(process.cwd(), 'lib', 'checkpoints', 'checkpoints.json');
 const ATTENTION = path.join(process.cwd(), 'lib', 'corporate-actions', 'needs-attention.json');
@@ -27,8 +27,22 @@ async function main() {
     const dryRun = process.argv.includes('--dry-run');
     const store = JSON.parse(fs.readFileSync(FILE, 'utf8')) as { updated: string; checkpoints: Checkpoint[] };
     const today = new Date().toISOString().slice(0, 10);
+    const save = () => { store.updated = today; fs.writeFileSync(FILE, JSON.stringify(store, null, 1) + '\n'); };
+
+    // Kept three years: checkpoints whose quarter ended before then are removed.
+    const cutoff = `${Number(today.slice(0, 4)) - KEEP_YEARS}${today.slice(4)}`;
+    const before = store.checkpoints.length;
+    store.checkpoints = store.checkpoints.filter(c => (dueEnd(c.due) ?? today) >= cutoff);
+    const pruned = before - store.checkpoints.length;
+    if (pruned) console.log(`${pruned} checkpoints older than ${KEEP_YEARS} years removed.`);
+
     const open = store.checkpoints.filter(c => c.status === 'pending' && c.metric && AUTO.has(c.metric));
-    if (!open.length) { console.log('No numeric checkpoints pending.'); await prisma.$disconnect(); return; }
+    if (!open.length) {
+        console.log('No numeric checkpoints pending.');
+        if (pruned && !dryRun) save();
+        await prisma.$disconnect();
+        return;
+    }
 
     const companies = await prisma.company.findMany({
         where: { name: { in: [...new Set(open.map(c => c.company))] } },
@@ -67,10 +81,9 @@ async function main() {
 
     for (const c of settled) console.log(`  ${c.company} | ${c.due} | ${c.text} → ${c.status} (${c.actual}, expected ${formatTarget(c)})`);
     console.log(`${settled.length} checkpoints settled from filed results.`);
-    if (dryRun || !settled.length) { await prisma.$disconnect(); return; }
+    if (dryRun || (!settled.length && !pruned)) { await prisma.$disconnect(); return; }
 
-    store.updated = today;
-    fs.writeFileSync(FILE, JSON.stringify(store, null, 1) + '\n');
+    save();
     const attention = fs.existsSync(ATTENTION) ? JSON.parse(fs.readFileSync(ATTENTION, 'utf8')) : [];
     for (const c of settled) {
         const subject = `Checkpoint ${c.status}: ${c.id}`;
