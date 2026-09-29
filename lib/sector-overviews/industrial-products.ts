@@ -13,7 +13,7 @@ const QUAL = 'Qualified inside someone else’s product';
 const PROJ = 'Bought once, as a project';
 
 export const industrialProducts: SectorOverview = {
-    sector: 'Industrial Products',
+    sector: 'Industrials',
     title: 'Industrial Products',
     format: 'ranked',
     businesses: industrialProductsBusinesses,

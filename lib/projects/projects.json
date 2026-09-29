@@ -8010,7 +8010,7 @@
   {
    "id": "pitti-engineering-hyderabad-foundry",
    "company": "Pitti Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Hyderabad casting and machining plant",
    "what": "Greenfield foundry and machining plant: casting capacity up 11,400 tonnes to 36,000 tonnes, machine hours from 7.2 lakh to 10.8 lakh",
    "cost": "₹290cr (₹60cr spent by June; about 30% land and buildings, 70% machines)",
@@ -8024,7 +8024,7 @@
   {
    "id": "pitti-engineering-150cr-expansion",
    "company": "Pitti Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "₹150cr lamination, casting and machining expansion",
    "what": "Sheet-metal capacity raised to 108,000 tonnes, with more casting and machining; started a quarter early, staff already hired",
    "cost": "₹150cr",
@@ -8038,7 +8038,7 @@
   {
    "id": "gala-precision-engi-chennai-2",
    "company": "Gala Precision Engi.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Chennai fastener plant, phase 2",
    "what": "Second phase of the high-tensile bolt plant at Chennai (phase 1 is 4,600 tonnes), plus a new hot-dip galvanising line already running",
    "expectedStart": "Q3 FY27",
@@ -8051,7 +8051,7 @@
   {
    "id": "gala-precision-engi-wada",
    "company": "Gala Precision Engi.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Wada plant expansion",
    "what": "10.15 acres next to the Wada plant for a 50,000 sq ft shed, mainly fasteners and partly disc springs",
    "cost": "₹40–45cr, mostly in FY28",
@@ -8063,7 +8063,7 @@
   {
    "id": "jash-engineering-houston",
    "company": "Jash Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Rodney Hunt plant in Houston",
    "what": "New US plant for Rodney Hunt on land already bought, to make gates locally as US buyers demand American-made goods",
    "cost": "about US$12m (first ordered at US$4.2m; quotes rose to US$7–8.5m); US$3m already deposited, rest cash and US bank debt",
@@ -8077,7 +8077,7 @@
   {
    "id": "jash-engineering-saudi",
    "company": "Jash Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Saudi Arabia plant",
    "what": "Local plant in Saudi Arabia to win local-content water projects; company set up and all permits in hand",
    "cost": "about US$4m",
@@ -8090,7 +8090,7 @@
   {
    "id": "jash-engineering-foundry-gates",
    "company": "Jash Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Foundry and gate-valve expansion in India",
    "what": "Bigger foundry and gate and valve lines in India, commissioned in Q1 FY27",
    "expectedStart": "Q1 FY27",
@@ -8103,7 +8103,7 @@
   {
    "id": "the-anup-enginee-kheda-2",
    "company": "The Anup Enginee",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Kheda plant, phase 2",
    "what": "Second phase at Kheda, taking it to about 8,000 tonnes a year of vessels, columns and reactors; a third phase is planned",
    "expectedStart": "Q4 FY26",
@@ -8116,7 +8116,7 @@
   {
    "id": "dee-development-anjar",
    "company": "DEE Development",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Anjar pipe-fabrication plant",
    "what": "Large piping and fabrication plant at Anjar, fully operational since FY26 and about half used",
    "adds": "the main source of revenue growth toward ₹2,500cr by FY29",
@@ -8127,7 +8127,7 @@
   {
    "id": "dee-development-seamless",
    "company": "DEE Development",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Seamless pipe plant",
    "what": "Own mill for thick-walled P91/P92 alloy pipe, half for own use and half for sale, replacing imports",
    "adds": "margin through backward integration; shorter lead times",
@@ -8138,7 +8138,7 @@
   {
    "id": "dee-development-pellet",
    "company": "DEE Development",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Biomass pellet plant at Muktsar",
    "what": "72,000 tonnes a year of pellets from paddy straw for power plants, next to its Malwa power plant",
    "expectedStart": "Q1 FY27",
@@ -8151,7 +8151,7 @@
   {
    "id": "isgec-heavy-engg-mfg-502cr",
    "company": "Isgec Heavy Engg.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "₹502cr manufacturing expansion",
    "what": "Presses at a new Bhartauli (Haryana) plant, skids and modules at Dahej SEZ, bigger casting and machining at both foundries (incl. ₹25cr at Muzaffarnagar), tubing and piping at Rattangarh and presses at Bawal",
    "cost": "₹502cr from own cash (₹47cr spent in Q1)",
@@ -8165,7 +8165,7 @@
   {
    "id": "isgec-heavy-engg-philippines",
    "company": "Isgec Heavy Engg.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Philippine ethanol plant",
    "what": "Sugar-to-ethanol plant in the Philippines, in commercial production since December 2025, now on molasses between cane seasons",
    "adds": "turning a ₹295cr FY26 loss toward break-even; for sale if a buyer appears",
@@ -8176,7 +8176,7 @@
   {
    "id": "aditya-infotech-capacity-2x",
    "company": "Aditya Infotech",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Doubling camera capacity: Kadapa and Greater Noida",
    "what": "Greenfield expansion at Kadapa (land nearly bought) and a second cluster in Greater Noida (land submitted for allotment; a 3 lakh sq ft Sector 68 facility proposed)",
    "cost": "₹200–300cr of capex in FY27",
@@ -8189,7 +8189,7 @@
   {
    "id": "aditya-infotech-housings",
    "company": "Aditya Infotech",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Housing and enclosure plant",
    "what": "In-house plant for camera housings and enclosures, 30 million a year",
    "expectedStart": "Q3 FY27",
@@ -8202,7 +8202,7 @@
   {
    "id": "aditya-infotech-coralin-cables",
    "company": "Aditya Infotech",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Cable joint venture plant in Rajasthan",
    "what": "Coralin Cable Technology, a venture with Orient Cables, building a 1 lakh sq ft plant for LAN and CCTV coaxial cables",
    "expectedStart": "Q4 FY27",
@@ -8214,7 +8214,7 @@
   {
    "id": "kilburn-engg-saravali-pune",
    "company": "Kilburn Engg.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Saravali and ME Energy Pune expansions",
    "what": "Bigger Kilburn factory at Saravali and phase 2 of ME Energy's Pune plant; a Monga Strayfield sheet-metal expansion is to follow",
    "cost": "about ₹40cr of capex this year, part-funded by ₹97cr of warrant money",
@@ -8228,7 +8228,7 @@
   {
    "id": "tega-industries-chile",
    "company": "Tega Industries",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Chile mill-liner plant",
    "what": "New liner plant in Chile to serve South American copper mines locally",
    "cost": "US$25–30m, part of about US$40m of Tega capex in FY27",
@@ -8241,7 +8241,7 @@
   {
    "id": "shree-refrigrations-karad-plant",
    "company": "Shree Refrigrations",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "New Karad (Amberwadi) plant",
    "what": "6-acre plant with a 50,000 sq ft shop floor (expandable to 1 lakh), with its own laser cutting, bending and painting; opened 28 June 2026",
    "cost": "about ₹25cr, with a 40–50% capex subsidy",
@@ -8255,7 +8255,7 @@
   {
    "id": "standard-glass-gscale",
    "company": "Standard Glass",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "GScale data-centre equipment factory",
    "what": "4 lakh sq ft factory for data-centre power and cooling skids; factories 3 and 4 to follow",
    "cost": "₹190cr for 51% of a ₹487–500cr GScale programme",
@@ -8269,7 +8269,7 @@
   {
    "id": "standard-glass-36-acre",
    "company": "Standard Glass",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "36-acre greenfield campus",
    "what": "New integrated plant to enter oil and gas, nuclear, food and heavy precision engineering",
    "cost": "₹130cr (₹65cr in FY27, ₹65cr in FY28)",
@@ -8283,7 +8283,7 @@
   {
    "id": "hle-glascoat-omeras-india",
    "company": "HLE Glascoat",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Omeras tank plant in India",
    "what": "Indian plant for Omeras glass-fused steel tanks (biogas, wastewater, water storage)",
    "cost": "about ₹35cr",
@@ -8295,7 +8295,7 @@
   {
    "id": "everest-kanto-cylind-mundra",
    "company": "Everest Kanto Cylind",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Mundra cylinder plant",
    "what": "Greenfield CNG and industrial-gas cylinder plant at Mundra; first line running, two more to be added, plus ₹30cr more approved",
    "status": "ramping",
@@ -8305,7 +8305,7 @@
   {
    "id": "everest-kanto-cylind-egypt",
    "company": "Everest Kanto Cylind",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Egypt cylinder plant",
    "what": "New plant in Egypt for local and regional demand",
    "status": "ramping",
@@ -8315,7 +8315,7 @@
   {
    "id": "everest-kanto-cylind-us-type4",
    "company": "Everest Kanto Cylind",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "US plant upgrade at CP Industries",
    "what": "Larger-diameter and Type 4 cylinder capability in the US, backed by a customer contract",
    "cost": "US$5.5m",
@@ -8328,7 +8328,7 @@
   {
    "id": "ice-make-refrig-galileo-jv",
    "company": "ICE Make Refrig.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Galileo joint-venture fridge plant",
    "what": "60:40 venture with Japan's Galileo to make commercial upright and table refrigerators now mostly imported from China",
    "cost": "₹35–40cr from ICE Make for 40%",
@@ -8340,7 +8340,7 @@
   {
    "id": "ice-make-refrig-capacity-58cr",
    "company": "ICE Make Refrig.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Capacity expansion from Galileo money",
    "what": "Expansion and modernisation of its own plants, where traditional lines run at 85–90%",
    "cost": "₹58cr of the ₹190cr share issue",
@@ -8351,7 +8351,7 @@
   {
    "id": "john-cockerill-taloja-coating",
    "company": "John Cockerill",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Taloja roll-coating (JVD) facility",
    "what": "Own coating facility at Taloja bringing its Jet Vapor Deposition coating to India",
    "expectedStart": "Q1 FY27",
@@ -8363,7 +8363,7 @@
   {
    "id": "united-heat-transfer-tidegaon",
    "company": "United Heat Transfer",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "name": "Tidegaon workshop extension",
    "what": "Bigger shop floor and automated machines on its 13-acre Tidegaon site (25–30% used), to cut cycle times",
    "cost": "₹23cr from the ₹31.3cr share issue",
@@ -8374,7 +8374,7 @@
   {
    "id": "borosil-renewables-600tpd",
    "company": "Borosil Renewables",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "600 tonnes-a-day solar glass expansion",
    "what": "Two new furnaces at the existing site adding 600 tonnes a day of solar glass to today's 1,000",
    "cost": "₹1,100cr (up ₹150cr in September 2026), fully funded from own money",
@@ -8388,7 +8388,7 @@
   {
    "id": "inox-india-kandla",
    "company": "Inox India",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Kandla port plant",
    "what": "About 7 acres on a 30-year lease 2.5 km from Kandla port, to build tanks too big to move by road (8–9 m wide, up to 60 m long, 500 tonnes) for LNG storage and space",
    "expectedStart": "Q4 FY27",
@@ -8401,7 +8401,7 @@
   {
    "id": "inox-india-savli-new",
    "company": "Inox India",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "New Savli facility",
    "what": "A further new plant at Savli which, with Kandla, is meant to make the large equipment in its biggest export orders",
    "status": "building",
@@ -8411,7 +8411,7 @@
   {
    "id": "krn-heat-exchan-hvac-plant",
    "company": "KRN Heat Exchan",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "New HVAC coil plant (subsidiary)",
    "what": "New plant six times the size of the Neemrana plant, for fin-and-tube coils, bus and rail air-conditioning and data-centre cooling",
    "adds": "revenue above ₹1,000cr in FY27 and about ₹2,000cr in FY28",
@@ -8423,7 +8423,7 @@
   {
    "id": "krn-heat-exchan-bangalore",
    "company": "KRN Heat Exchan",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Bangalore plant",
    "what": "South India plant for the same coils plus sheet-metal and header backward integration, asked for by customers to save freight; also new Rajasthan land for bus and rail work",
    "cost": "about ₹100cr for Bangalore and Rajasthan together",
@@ -8437,7 +8437,7 @@
   {
    "id": "subros-kharkhoda",
    "company": "Subros",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Kharkhoda plant for Maruti",
    "what": "Greenfield air-conditioning plant next to Maruti's new Sonipat/Kharkhoda factory, 4.75 lakh units in phase 1 (9.5 lakh with phase 2)",
    "cost": "₹150cr, on approved long-term loans",
@@ -8451,7 +8451,7 @@
   {
    "id": "subros-e-compressor",
    "company": "Subros",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Electric compressor plant in Gujarat",
    "what": "Greenfield compressor plant in Gujarat for Maruti's electric and hybrid cars (3 variants), plus more ICE compressor capacity; starts as CKD assembly, 70% local later",
    "cost": "about ₹175cr",
@@ -8464,7 +8464,7 @@
   {
    "id": "omnitech-engineering-chhapara",
    "company": "Omnitech Engineering",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Two new Chhapara plants",
    "what": "Two new machining plants at Chhapara, Rajkot, plus about ₹25cr of machines in the existing Chhapara plant",
    "cost": "₹250cr (₹100cr buildings, ₹150cr machines)",
@@ -8478,7 +8478,7 @@
   {
    "id": "tempsens-instruments-unit6-mv-heaters",
    "company": "Tempsens Instruments",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Unit 6 medium-voltage heater plant",
    "what": "50,000 sq ft plant within Unit 6 for medium-voltage electric heaters (green hydrogen, carbon capture, replacing fuel-fired heaters)",
    "expectedStart": "Q1 FY28",
@@ -8491,7 +8491,7 @@
   {
    "id": "tempsens-instruments-victura-jv",
    "company": "Tempsens Instruments",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Vehicle heating-cable joint venture plant",
    "what": "Joint venture with Victura Technologies buying an 80,000 sq ft site with a shed already built",
    "expectedStart": "Q4 FY27",
@@ -8504,7 +8504,7 @@
   {
    "id": "tempsens-instruments-unit8-cables",
    "company": "Tempsens Instruments",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Unit 8 specialised cable plant",
    "what": "Greenfield cable plant on land bought in Q1",
    "cost": "₹25cr for the land from own cash; plant cost not disclosed",
@@ -8518,7 +8518,7 @@
   {
    "id": "tempsens-instruments-unit1-oem-sensors",
    "company": "Tempsens Instruments",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Unit 1 OEM sensor plant",
    "what": "50,000 sq ft brownfield plant within Unit 1 for OEM contact sensors",
    "expectedStart": "Q3 FY28",
@@ -8531,7 +8531,7 @@
   {
    "id": "carborundum-univer-power-ceramics",
    "company": "Carborundum Univer.",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Power-electronics ceramics expansion",
    "what": "More metallised cylinders, tubes, rings and brazed assemblies (in three phases over 18–24 months), and a new metallised-substrate facility with an anchor customer",
    "cost": "the largest part of about ₹400cr of FY27 capex (₹53cr spent in Q1)",
@@ -8543,7 +8543,7 @@
   {
    "id": "carborundum-univer-semicon-ceramics",
    "company": "Carborundum Univer.",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Semiconductor equipment ceramics facility",
    "what": "Dedicated plant for advanced ceramic parts for chip-making equipment, from high-purity powder to precision machining; first module commissioned in H1 FY26",
    "cost": "₹66cr for the first module",
@@ -8555,7 +8555,7 @@
   {
    "id": "carborundum-univer-thin-wheels",
    "company": "Carborundum Univer.",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Thin-wheel line at Hosur",
    "what": "Thin cutting-wheel capacity at Hosur using assets bought from Germany's DRONCO, 46 million wheels a year",
    "cost": "₹83cr",
@@ -8568,7 +8568,7 @@
   {
    "id": "carborundum-univer-wfa-furnace",
    "company": "Carborundum Univer.",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "White fused alumina furnace upgrade",
    "what": "Furnace upgraded from 2 MVA to 4.5 MVA, with a 110 kV substation for future power needs",
    "cost": "about ₹53cr",
@@ -8581,7 +8581,7 @@
   {
    "id": "diffusion-engineers-nagpur-expansion",
    "company": "Diffusion Engineers",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Nagpur wear-plate and heavy-engineering plant",
    "what": "New Nagpur facility doubling heavy engineering from 9,000 to 18,000 tonnes, more wear-plate capacity, a new 10-tonne-a-day electrode plant and in-house strip slitting",
    "cost": "about ₹100cr from IPO money (₹67cr still unspent in August)",
@@ -8595,7 +8595,7 @@
   {
    "id": "ador-welding-new-lines",
    "company": "Ador Welding",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "New welding-consumable lines",
    "what": "Two or three new consumable lines, as some lines run at 95%+ against 70% on average",
    "cost": "about ₹80cr over two years from own cash (₹30–35cr in FY27)",
@@ -8606,7 +8606,7 @@
   {
    "id": "vilas-transcore-copper",
    "company": "Vilas Transcore",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Copper conductor plant",
    "what": "Phase 1 plant for paper-insulated copper and aluminium conductors for transformers, 1,500–1,800 tonnes a year; bigger phase planned on new land nearby",
    "cost": "₹25–30cr for phase 1",
@@ -8620,7 +8620,7 @@
   {
    "id": "vilas-transcore-unit3",
    "company": "Vilas Transcore",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Unit 3 CRGO lamination plant",
    "what": "Unit 3 tripled lamination capacity from 12,000 to 36,000 tonnes a year, with radiators and nanocrystalline cores added",
    "adds": "room for about 64%+ volume growth; Q1 volume 6,550 tonnes",
@@ -8632,7 +8632,7 @@
   {
    "id": "airfloa-rail-techno-14-acre",
    "company": "Airfloa Rail Techno.",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "14-acre plant",
    "what": "A second, bigger plant on 14 acres to separate metro and main-line coach work: 50,000 sq ft first, then 1 lakh sq ft",
    "cost": "₹30–35cr (₹20–30cr to start)",
@@ -8645,7 +8645,7 @@
   {
    "id": "airfloa-rail-techno-kin",
    "company": "Airfloa Rail Techno.",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "name": "Purchase of KIN Railway Equipment business",
    "what": "Buying the business of KIN Railway Equipment, with a ₹180cr order book, funded by debt and cash",
    "cost": "₹48cr",

@@ -13,7 +13,7 @@ const FAB = 'Certified fabricators — build to the customer’s design';
 const BRAND = 'Branded and regulation-protected products';
 
 export const industrialManufacturing: SectorOverview = {
-    sector: 'Industrial Manufacturing',
+    sector: 'Industrials',
     title: 'Industrial Manufacturing',
     format: 'ranked',
     businesses: industrialManufacturingBusinesses,

@@ -12603,7 +12603,7 @@
   {
    "id": "pitti-engineering-q4fy27-1",
    "company": "Pitti Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Operating margin moves from 16.8% towards 17.5–18% in H2 FY27",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -12615,7 +12615,7 @@
   {
    "id": "pitti-engineering-q4fy27-2",
    "company": "Pitti Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 operating profit about ₹370cr (guidance; ₹316cr in FY26)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -12624,7 +12624,7 @@
   {
    "id": "pitti-engineering-q2fy27-1",
    "company": "Pitti Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Net debt stays below ₹491cr while the ₹290cr plant is built",
    "due": "Q2 FY27",
    "ifMissed": "Debt is the thing to watch; worse if a debt-funded plant comes before the last two earn",
@@ -12634,7 +12634,7 @@
   {
    "id": "pitti-engineering-q4fy27-3",
    "company": "Pitti Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 volumes: laminations 82,000t and castings 17,000t (raised targets)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -12643,7 +12643,7 @@
   {
    "id": "gala-precision-engi-q4fy27-1",
    "company": "Gala Precision Engi.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Operating margin into the guided 17–19% by FY27 end (Q1 16.3%)",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -12655,7 +12655,7 @@
   {
    "id": "gala-precision-engi-q4fy27-2",
    "company": "Gala Precision Engi.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 revenue growth of 20–25% (guidance)",
    "metric": "fyRevenueGrowth",
    "op": ">=",
@@ -12667,7 +12667,7 @@
   {
    "id": "gala-precision-engi-q4fy27-3",
    "company": "Gala Precision Engi.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 operating cash improves under the KPMG working-capital plan",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -12676,7 +12676,7 @@
   {
    "id": "gala-precision-engi-q2fy27-1",
    "company": "Gala Precision Engi.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "No material demand from the August income-tax search",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -12685,7 +12685,7 @@
   {
    "id": "jash-engineering-q3fy27-1",
    "company": "Jash Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Rodney Hunt back in profit by Q2–Q3 FY27",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
@@ -12694,7 +12694,7 @@
   {
    "id": "jash-engineering-q4fy27-1",
    "company": "Jash Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 revenue of ₹875cr (guidance, needs the Q4 dispatch season)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -12703,7 +12703,7 @@
   {
    "id": "jash-engineering-q4fy27-2",
    "company": "Jash Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 profit of ₹100–105cr (guidance)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -12712,7 +12712,7 @@
   {
    "id": "gmm-pfaudler-q3fy27-1",
    "company": "GMM Pfaudler",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Operating margin back above 12–13% in Q2–Q3 FY27 (Q1 10.1%)",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -12725,7 +12725,7 @@
   {
    "id": "the-anup-enginee-q2fy27-1",
    "company": "The Anup Enginee",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Q2 FY27 revenue above ₹200cr",
    "metric": "revenue",
    "op": ">=",
@@ -12737,7 +12737,7 @@
   {
    "id": "the-anup-enginee-q2fy27-2",
    "company": "The Anup Enginee",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Q2 FY27 operating margin back above 15%",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -12749,7 +12749,7 @@
   {
    "id": "the-anup-enginee-q2fy27-3",
    "company": "The Anup Enginee",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Order intake of ₹200–250cr a quarter (guidance)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -12758,7 +12758,7 @@
   {
    "id": "the-anup-enginee-q4fy27-1",
    "company": "The Anup Enginee",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 revenue growth of 5–10% (guidance)",
    "metric": "fyRevenueGrowth",
    "op": ">=",
@@ -12770,7 +12770,7 @@
   {
    "id": "dee-development-q3fy27-1",
    "company": "DEE Development",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "A clean audit opinion by Q3 FY27, as promised",
    "due": "Q3 FY27",
    "ifMet": "Changes the view for the better",
@@ -12781,7 +12781,7 @@
   {
    "id": "dee-development-q4fy27-1",
    "company": "DEE Development",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 operating margin above 19% (guidance; Q1 16.9%)",
    "metric": "fyEbitdaMargin",
    "op": ">=",
@@ -12793,7 +12793,7 @@
   {
    "id": "dee-development-q4fy27-2",
    "company": "DEE Development",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Net debt at ₹400–425cr by March 2027",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -12802,7 +12802,7 @@
   {
    "id": "dee-development-q4fy27-3",
    "company": "DEE Development",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 revenue of at least ₹1,500cr (guidance)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -12811,7 +12811,7 @@
   {
    "id": "isgec-heavy-engg-q2fy27-1",
    "company": "Isgec Heavy Engg.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Philippine plant at 90% use with positive operating profit, or sold",
    "due": "Q2 FY27",
    "ifMet": "Changes the view for the better",
@@ -12821,7 +12821,7 @@
   {
    "id": "isgec-heavy-engg-q2fy27-2",
    "company": "Isgec Heavy Engg.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Standalone guidance (10–12%) raised at the half-year",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -12830,7 +12830,7 @@
   {
    "id": "isgec-heavy-engg-q2fy27-3",
    "company": "Isgec Heavy Engg.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Project margins moving to 5–6% as old contracts finish",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -12839,7 +12839,7 @@
   {
    "id": "aditya-infotech-q2fy27-1",
    "company": "Aditya Infotech",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "H1 FY27 operating cash turns clearly positive",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -12848,7 +12848,7 @@
   {
    "id": "aditya-infotech-q2fy27-2",
    "company": "Aditya Infotech",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Operating margin holds in the guided 14–15% range",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -12860,7 +12860,7 @@
   {
    "id": "aditya-infotech-q4fy27-1",
    "company": "Aditya Infotech",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 revenue of ₹6,000–6,500cr (guidance)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -12869,7 +12869,7 @@
   {
    "id": "aditya-infotech-q2fy27-3",
    "company": "Aditya Infotech",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "No change to the CCTV testing rule that bars Chinese chips",
    "due": "Q2 FY27",
    "ifMissed": "Changes the view for the worse",
@@ -12879,7 +12879,7 @@
   {
    "id": "kilburn-engg-q2fy27-1",
    "company": "Kilburn Engg.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Q2 FY27 order intake above ₹200cr",
    "due": "Q2 FY27",
    "ifMet": "Orders arriving would change the view for the better",
@@ -12889,7 +12889,7 @@
   {
    "id": "kilburn-engg-q4fy27-1",
    "company": "Kilburn Engg.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 revenue about ₹700cr (cut guidance)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -12898,7 +12898,7 @@
   {
    "id": "kilburn-engg-q4fy27-2",
    "company": "Kilburn Engg.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 operating margin about 20% (cut guidance)",
    "metric": "fyEbitdaMargin",
    "op": ">=",
@@ -12910,7 +12910,7 @@
   {
    "id": "kilburn-engg-q2fy27-2",
    "company": "Kilburn Engg.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Debtor days back under 100",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -12919,7 +12919,7 @@
   {
    "id": "tega-industries-q2fy27-1",
    "company": "Tega Industries",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Group operating margin about 15% in the first full Molycop quarter (guidance)",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -12931,7 +12931,7 @@
   {
    "id": "tega-industries-q4fy27-1",
    "company": "Tega Industries",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Consumables grow 15% in FY27 without spill-over help (missed FY24–FY26)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -12940,7 +12940,7 @@
   {
    "id": "tega-industries-q4fy27-2",
    "company": "Tega Industries",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Chile liner plant starts on time in March 2027",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -12949,7 +12949,7 @@
   {
    "id": "shree-refrigrations-h1fy27-1",
    "company": "Shree Refrigrations",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "H1 FY27 revenue growth near the guided 40% (a steadier first half)",
    "metric": "revenueYoY",
    "op": ">=",
@@ -12961,7 +12961,7 @@
   {
    "id": "shree-refrigrations-h1fy27-2",
    "company": "Shree Refrigrations",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "H1 FY27 operating margin within the guided 20–24%",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -12973,7 +12973,7 @@
   {
    "id": "shree-refrigrations-h2fy27-1",
    "company": "Shree Refrigrations",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Working capital down to 325–330 days in FY27 (guidance; about 377 now)",
    "due": "H2 FY27",
    "createdOn": "2026-09-29",
@@ -12982,7 +12982,7 @@
   {
    "id": "shree-refrigrations-h1fy27-3",
    "company": "Shree Refrigrations",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Spares and service rising back toward 15% of sales (7% now)",
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
@@ -12991,7 +12991,7 @@
   {
    "id": "jnk-q3fy27-1",
    "company": "JNK",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "A Dangote or fertiliser reformer award in Q2–Q3 FY27",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
@@ -13000,7 +13000,7 @@
   {
    "id": "jnk-q2fy27-1",
    "company": "JNK",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Formal renewal of the cooperation agreement with parent JNK Global",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -13009,7 +13009,7 @@
   {
    "id": "jnk-q4fy27-1",
    "company": "JNK",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 revenue growth of 20–25% (trimmed guidance)",
    "metric": "fyRevenueGrowth",
    "op": ">=",
@@ -13021,7 +13021,7 @@
   {
    "id": "jnk-q4fy27-2",
    "company": "JNK",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 operating margin inside 12–14% (trimmed guidance)",
    "metric": "fyEbitdaMargin",
    "op": ">=",
@@ -13033,7 +13033,7 @@
   {
    "id": "wpil-q3fy27-1",
    "company": "WPIL",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "State water-scheme collections (₹300–350cr) arrive in Q2–Q3 FY27",
    "due": "Q3 FY27",
    "ifMet": "Changes the view for the better",
@@ -13043,7 +13043,7 @@
   {
    "id": "wpil-q2fy27-1",
    "company": "WPIL",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Operating margin within the guided 15–20% band",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -13055,7 +13055,7 @@
   {
    "id": "praj-industries-q2fy27-1",
    "company": "Praj Industries",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "A dated E25–E30 blending mandate",
    "due": "Q2 FY27",
    "ifMet": "The blending decision it is waiting for",
@@ -13065,7 +13065,7 @@
   {
    "id": "praj-industries-q4fy27-1",
    "company": "Praj Industries",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Mangalore yard breaks even in FY27, as promised",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13074,7 +13074,7 @@
   {
    "id": "praj-industries-q2fy27-2",
    "company": "Praj Industries",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Operating margin back above 7–8% (about 4% now)",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -13086,7 +13086,7 @@
   {
    "id": "hpl-electric-q3fy27-1",
    "company": "HPL Electric",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Operating margin back to 15% by Q3 FY27 (12% in Q1)",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -13098,7 +13098,7 @@
   {
    "id": "hpl-electric-q2fy27-1",
    "company": "HPL Electric",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "New meter orders at higher prices and the order book growing again",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -13107,7 +13107,7 @@
   {
    "id": "hpl-electric-q2fy27-2",
    "company": "HPL Electric",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Debt starting to fall",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -13116,7 +13116,7 @@
   {
    "id": "everest-kanto-cylind-q2fy27-1",
    "company": "Everest Kanto Cylind",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Group revenue growing again as Mundra and Egypt ramp up (Q1 fell 10%)",
    "metric": "revenueYoY",
    "op": ">=",
@@ -13128,7 +13128,7 @@
   {
    "id": "everest-kanto-cylind-q2fy27-2",
    "company": "Everest Kanto Cylind",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Tribunal ruling on the ₹351cr GST demand",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -13137,7 +13137,7 @@
   {
    "id": "hle-glascoat-q3fy27-1",
    "company": "HLE Glascoat",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Two quarters of double-digit operating margins (Q1 FY27 7%)",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -13149,7 +13149,7 @@
   {
    "id": "hle-glascoat-q2fy27-1",
    "company": "HLE Glascoat",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Omeras at ₹45–50cr of quarterly revenue and breaking even",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -13158,7 +13158,7 @@
   {
    "id": "hle-glascoat-q4fy27-1",
    "company": "HLE Glascoat",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "₹35cr Omeras tank plant in India by Q4 FY27",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13167,7 +13167,7 @@
   {
    "id": "standard-glass-q2fy27-1",
    "company": "Standard Glass",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Working capital below 200 days by September 2026, as promised",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -13176,7 +13176,7 @@
   {
    "id": "standard-glass-q3fy27-1",
    "company": "Standard Glass",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "GScale factory opens in November with named data-centre orders",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
@@ -13185,7 +13185,7 @@
   {
    "id": "standard-glass-q4fy27-1",
    "company": "Standard Glass",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 revenue of ₹1,450cr including ₹250cr from GScale (guidance)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13194,7 +13194,7 @@
   {
    "id": "john-cockerill-q3fy27-1",
    "company": "John Cockerill",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Group operating profit turns positive in H2 CY26 (Jul–Dec 2026)",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
@@ -13203,7 +13203,7 @@
   {
    "id": "john-cockerill-q2fy27-1",
    "company": "John Cockerill",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "A first commercial JVD order",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -13212,7 +13212,7 @@
   {
    "id": "ice-make-refrig-q4fy27-1",
    "company": "ICE Make Refrig.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 operating margin of 6–6.5% after the price rises (third cut guidance)",
    "metric": "fyEbitdaMargin",
    "op": ">=",
@@ -13224,7 +13224,7 @@
   {
    "id": "ice-make-refrig-q4fy27-2",
    "company": "ICE Make Refrig.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 revenue of ₹830–850cr (guidance)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13233,7 +13233,7 @@
   {
    "id": "ice-make-refrig-q2fy27-1",
    "company": "ICE Make Refrig.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Operating cash turning positive",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -13242,7 +13242,7 @@
   {
    "id": "ice-make-refrig-q4fy27-3",
    "company": "ICE Make Refrig.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Borrowings (₹158cr) fall in H2 FY27 with the Galileo money",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13251,7 +13251,7 @@
   {
    "id": "united-heat-transfer-h1fy27-1",
    "company": "United Heat Transfer",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "H1 FY27 revenue growth of 30–35% as guided",
    "metric": "revenueYoY",
    "op": ">=",
@@ -13263,7 +13263,7 @@
   {
    "id": "united-heat-transfer-h1fy27-2",
    "company": "United Heat Transfer",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Repeat Vertiv orders beyond the trial order",
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
@@ -13272,7 +13272,7 @@
   {
    "id": "united-heat-transfer-h1fy27-3",
    "company": "United Heat Transfer",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "The rating agency (Crisil) receiving information again",
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
@@ -13281,7 +13281,7 @@
   {
    "id": "ador-welding-q2fy27-1",
    "company": "Ador Welding",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Operating margin back above 12% (Q1 FY27 11.6%)",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -13294,7 +13294,7 @@
   {
    "id": "ador-welding-q4fy27-1",
    "company": "Ador Welding",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "FY27 growth of at least 6–8% (guidance), with volume growth above 8%",
    "metric": "fyRevenueGrowth",
    "op": ">=",
@@ -13306,7 +13306,7 @@
   {
    "id": "ador-welding-q2fy27-2",
    "company": "Ador Welding",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Gross margin recovering from Q1's 36.5%",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -13315,7 +13315,7 @@
   {
    "id": "diffusion-engineers-q2fy27-1",
    "company": "Diffusion Engineers",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Debtor days falling from 115 toward 90",
    "due": "Q2 FY27",
    "ifMissed": "The own case rests on receivables coming down",
@@ -13325,7 +13325,7 @@
   {
    "id": "diffusion-engineers-q4fy27-1",
    "company": "Diffusion Engineers",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Operating profit growing faster than revenue by H2 FY27",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13334,7 +13334,7 @@
   {
    "id": "diffusion-engineers-q4fy27-2",
    "company": "Diffusion Engineers",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "About 20% revenue growth in FY27 (guidance)",
    "metric": "fyRevenueGrowth",
    "op": ">=",
@@ -13346,7 +13346,7 @@
   {
    "id": "diffusion-engineers-q4fy27-3",
    "company": "Diffusion Engineers",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "The ₹67cr of unspent IPO money spent on plant, not new ventures",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13355,7 +13355,7 @@
   {
    "id": "hbl-engineering-q2fy27-1",
    "company": "HBL Engineering",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Quarterly profit back above ₹200cr as the ₹1,714cr locomotive order ships",
    "metric": "pat",
    "op": ">=",
@@ -13368,7 +13368,7 @@
   {
    "id": "inox-india-q2fy27-1",
    "company": "Inox India",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "H1 FY27 revenue growth back near 15–20% (Q1 was 8%)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -13377,7 +13377,7 @@
   {
    "id": "inox-india-q4fy27-1",
    "company": "Inox India",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "FY27 revenue growth of 18–20% (reaffirmed guidance)",
    "metric": "fyRevenueGrowth",
    "op": ">=",
@@ -13390,7 +13390,7 @@
   {
    "id": "inox-india-q4fy27-2",
    "company": "Inox India",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Kandla port plant starts on time (Dec 2026–Jan 2027)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13399,7 +13399,7 @@
   {
    "id": "inox-india-q4fy27-3",
    "company": "Inox India",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Operating cash above ₹200cr in FY27",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13408,7 +13408,7 @@
   {
    "id": "carborundum-univer-q3fy27-1",
    "company": "Carborundum Univer.",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Foskor and Awuko exits closed by Q2–Q3 FY27",
    "due": "Q3 FY27",
    "ifMet": "Changes the view for the better",
@@ -13418,7 +13418,7 @@
   {
    "id": "carborundum-univer-q2fy27-1",
    "company": "Carborundum Univer.",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Abrasives margin above 9% without one-offs (guide 9.5–10%)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -13427,7 +13427,7 @@
   {
    "id": "carborundum-univer-q4fy27-1",
    "company": "Carborundum Univer.",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "The ₹400cr of FY27 capex actually spent (₹53cr in Q1)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13436,7 +13436,7 @@
   {
    "id": "carborundum-univer-q4fy27-2",
    "company": "Carborundum Univer.",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Ceramics growth of 23–25% in FY27 (guidance)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13445,7 +13445,7 @@
   {
    "id": "krn-heat-exchan-q4fy27-1",
    "company": "KRN Heat Exchan",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Positive operating cash in FY27",
    "due": "Q4 FY27",
    "ifMet": "Turning cash-positive would change the view for the better",
@@ -13455,7 +13455,7 @@
   {
    "id": "krn-heat-exchan-q4fy27-2",
    "company": "KRN Heat Exchan",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "FY27 revenue above ₹1,000cr (guidance)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13464,7 +13464,7 @@
   {
    "id": "krn-heat-exchan-q2fy27-1",
    "company": "KRN Heat Exchan",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Operating margin \"20-plus\" (guidance)",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -13476,7 +13476,7 @@
   {
    "id": "krn-heat-exchan-q2fy27-2",
    "company": "KRN Heat Exchan",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Vertiv samples turning into volume orders; unbooked incentives appearing in profit",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -13485,7 +13485,7 @@
   {
    "id": "omnitech-engineering-q2fy27-1",
    "company": "Omnitech Engineering",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Operating margin holding at 30% (guidance \"30% and above\")",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -13497,7 +13497,7 @@
   {
    "id": "omnitech-engineering-q4fy27-1",
    "company": "Omnitech Engineering",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "FY27 revenue growth of 35–40% (guidance)",
    "metric": "fyRevenueGrowth",
    "op": ">=",
@@ -13509,7 +13509,7 @@
   {
    "id": "omnitech-engineering-q4fy27-2",
    "company": "Omnitech Engineering",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Positive operating cash in FY27",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13518,7 +13518,7 @@
   {
    "id": "omnitech-engineering-q4fy27-3",
    "company": "Omnitech Engineering",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Firm call-offs under the energy master agreements (₹50cr+ this year)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13527,7 +13527,7 @@
   {
    "id": "borosil-renewables-q2fy27-1",
    "company": "Borosil Renewables",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Quarterly revenue of ₹400–410cr (guidance)",
    "metric": "revenue",
    "op": ">=",
@@ -13539,7 +13539,7 @@
   {
    "id": "borosil-renewables-q2fy27-2",
    "company": "Borosil Renewables",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Operating margin of 30–33% (guidance)",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -13551,7 +13551,7 @@
   {
    "id": "borosil-renewables-q4fy27-1",
    "company": "Borosil Renewables",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "First new furnace firing by end-March 2027",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13560,7 +13560,7 @@
   {
    "id": "borosil-renewables-q2fy27-3",
    "company": "Borosil Renewables",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "No dilution of the anti-dumping or countervailing duties on imported solar glass",
    "due": "Q2 FY27",
    "ifMissed": "Changes the view for the worse",
@@ -13570,7 +13570,7 @@
   {
    "id": "tempsens-instruments-q4fy27-1",
    "company": "Tempsens Instruments",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Margin recovery in H2 FY27, as promised (slipped to 20%)",
    "due": "Q4 FY27",
    "ifMet": "Changes the view for the better",
@@ -13580,7 +13580,7 @@
   {
    "id": "tempsens-instruments-q4fy27-2",
    "company": "Tempsens Instruments",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "FY27 revenue growth of about 25% (guidance)",
    "metric": "fyRevenueGrowth",
    "op": ">=",
@@ -13592,7 +13592,7 @@
   {
    "id": "tempsens-instruments-q2fy27-1",
    "company": "Tempsens Instruments",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Inventory days falling from 170",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -13601,7 +13601,7 @@
   {
    "id": "patil-automation-h1fy27-1",
    "company": "Patil Automation",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Order book rebuilt above ₹200cr in H1 FY27 (₹118cr in May)",
    "due": "H1 FY27",
    "ifMissed": "Stays wait until the order book matches the target",
@@ -13611,7 +13611,7 @@
   {
    "id": "patil-automation-h1fy27-2",
    "company": "Patil Automation",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Positive operating cash",
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
@@ -13620,7 +13620,7 @@
   {
    "id": "patil-automation-h2fy27-1",
    "company": "Patil Automation",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "FY27 revenue of ₹260–270cr at 10–11% PAT margin (guidance)",
    "due": "H2 FY27",
    "createdOn": "2026-09-29",
@@ -13629,7 +13629,7 @@
   {
    "id": "subros-q2fy27-1",
    "company": "Subros",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Customers compensate the wage rises: operating margin back above 9.5%",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -13641,7 +13641,7 @@
   {
    "id": "subros-q3fy27-1",
    "company": "Subros",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Kharkhoda plant starting production in Q3 FY27",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
@@ -13650,7 +13650,7 @@
   {
    "id": "subros-q4fy27-1",
    "company": "Subros",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Operating cash back above ₹200cr in FY27",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -13659,7 +13659,7 @@
   {
    "id": "vilas-transcore-h1fy27-1",
    "company": "Vilas Transcore",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Positive operating cash in H1 FY27",
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
@@ -13668,7 +13668,7 @@
   {
    "id": "vilas-transcore-h1fy27-2",
    "company": "Vilas Transcore",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "PAT margin holding at 7% or more (guidance)",
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
@@ -13677,7 +13677,7 @@
   {
    "id": "vilas-transcore-h2fy27-1",
    "company": "Vilas Transcore",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "FY27 revenue of about ₹680cr (cut guidance)",
    "due": "H2 FY27",
    "createdOn": "2026-09-29",
@@ -13686,7 +13686,7 @@
   {
    "id": "airfloa-rail-techno-h1fy27-1",
    "company": "Airfloa Rail Techno.",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Positive operating cash, with the ₹214cr of receivables collected toward the promised 60–70 days",
    "due": "H1 FY27",
    "ifMissed": "Stays avoid until profit becomes cash",
@@ -13696,7 +13696,7 @@
   {
    "id": "airfloa-rail-techno-h2fy27-1",
    "company": "Airfloa Rail Techno.",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "FY27 revenue of about ₹500cr at 12–13% PAT margin (cut guidance)",
    "due": "H2 FY27",
    "createdOn": "2026-09-29",
@@ -27655,7 +27655,7 @@
   {
    "id": "pitti-engineering-hyderabad-foundry-m1",
    "company": "Pitti Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Hyderabad plant commissioned",
    "due": "Q1 FY30",
    "createdOn": "2026-09-29",
@@ -27665,7 +27665,7 @@
   {
    "id": "pitti-engineering-150cr-expansion-m1",
    "company": "Pitti Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Direct exports rise quarter on quarter as the new capacity fills",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27675,7 +27675,7 @@
   {
    "id": "pitti-engineering-150cr-expansion-m2",
    "company": "Pitti Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 volumes: 82,000 tonnes of laminations and about ₹370cr of operating profit",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27685,7 +27685,7 @@
   {
    "id": "gala-precision-engi-chennai-2-m1",
    "company": "Gala Precision Engi.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Chennai phase 2 producing (was due June–July 2026)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27695,7 +27695,7 @@
   {
    "id": "gala-precision-engi-chennai-2-m2",
    "company": "Gala Precision Engi.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Chennai sales reach ₹9–10cr a month",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27705,7 +27705,7 @@
   {
    "id": "gala-precision-engi-wada-m1",
    "company": "Gala Precision Engi.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Wada land deal completed (only an MoU in Q1), so capex can start next year",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27715,7 +27715,7 @@
   {
    "id": "jash-engineering-houston-m1",
    "company": "Jash Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Houston plant ready",
    "due": "Q3 FY28",
    "createdOn": "2026-09-29",
@@ -27725,7 +27725,7 @@
   {
    "id": "jash-engineering-houston-m2",
    "company": "Jash Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Houston plant operational",
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
@@ -27735,7 +27735,7 @@
   {
    "id": "jash-engineering-saudi-m1",
    "company": "Jash Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Saudi land allotted",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
@@ -27745,7 +27745,7 @@
   {
    "id": "jash-engineering-saudi-m2",
    "company": "Jash Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Saudi plant ready",
    "due": "Q3 FY28",
    "createdOn": "2026-09-29",
@@ -27755,7 +27755,7 @@
   {
    "id": "jash-engineering-saudi-m3",
    "company": "Jash Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Saudi plant operational",
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
@@ -27765,7 +27765,7 @@
   {
    "id": "jash-engineering-foundry-gates-m1",
    "company": "Jash Engineering",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 revenue of ₹875cr and profit of ₹100–105cr",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27775,7 +27775,7 @@
   {
    "id": "the-anup-enginee-kheda-2-m1",
    "company": "The Anup Enginee",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "FY27 revenue up 5–10% at about a 15% margin, with most deliveries in H2",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27785,7 +27785,7 @@
   {
    "id": "dee-development-anjar-m1",
    "company": "DEE Development",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Anjar at 60–65% use",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27795,7 +27795,7 @@
   {
    "id": "dee-development-anjar-m2",
    "company": "DEE Development",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Anjar close to full use",
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
@@ -27805,7 +27805,7 @@
   {
    "id": "dee-development-seamless-m1",
    "company": "DEE Development",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Seamless plant at 60–70% use",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27815,7 +27815,7 @@
   {
    "id": "dee-development-pellet-m1",
    "company": "DEE Development",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "New fuel lets both the pellet and power plants run fully",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
@@ -27825,7 +27825,7 @@
   {
    "id": "dee-development-pellet-m2",
    "company": "DEE Development",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Non-core revenue of about ₹80cr for FY27",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27835,7 +27835,7 @@
   {
    "id": "isgec-heavy-engg-mfg-502cr-m1",
    "company": "Isgec Heavy Engg.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Small production starts from the first phase",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -27845,7 +27845,7 @@
   {
    "id": "isgec-heavy-engg-mfg-502cr-m2",
    "company": "Isgec Heavy Engg.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Main phase complete (end 2027 or early 2028)",
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
@@ -27855,7 +27855,7 @@
   {
    "id": "isgec-heavy-engg-philippines-m1",
    "company": "Isgec Heavy Engg.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Plant at about 90% use",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
@@ -27865,7 +27865,7 @@
   {
    "id": "aditya-infotech-capacity-2x-m1",
    "company": "Aditya Infotech",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Noida Sector 68 facility operational",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27875,7 +27875,7 @@
   {
    "id": "aditya-infotech-capacity-2x-m2",
    "company": "Aditya Infotech",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Capacity about double today's 2.5 million units a month",
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
@@ -27885,7 +27885,7 @@
   {
    "id": "aditya-infotech-housings-m1",
    "company": "Aditya Infotech",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Housing plant phase 1 operational",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
@@ -27895,7 +27895,7 @@
   {
    "id": "aditya-infotech-housings-m2",
    "company": "Aditya Infotech",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Housing plant phase 2 operational",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27905,7 +27905,7 @@
   {
    "id": "aditya-infotech-coralin-cables-m1",
    "company": "Aditya Infotech",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Cable plant starts commercial production",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27915,7 +27915,7 @@
   {
    "id": "kilburn-engg-saravali-pune-m1",
    "company": "Kilburn Engg.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Saravali and Pune expansions complete",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
@@ -27925,7 +27925,7 @@
   {
    "id": "tega-industries-chile-m1",
    "company": "Tega Industries",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Chile plant soft commissioning",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27935,7 +27935,7 @@
   {
    "id": "tega-industries-chile-m2",
    "company": "Tega Industries",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Chile plant commercial production",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27945,7 +27945,7 @@
   {
    "id": "shree-refrigrations-karad-plant-m1",
    "company": "Shree Refrigrations",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "First-half results showing growth on the 40% a year path",
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
@@ -27955,7 +27955,7 @@
   {
    "id": "standard-glass-gscale-m1",
    "company": "Standard Glass",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "GScale factory starts operations",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
@@ -27965,7 +27965,7 @@
   {
    "id": "standard-glass-gscale-m2",
    "company": "Standard Glass",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "About ₹250cr of GScale revenue in FY27",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27975,7 +27975,7 @@
   {
    "id": "standard-glass-36-acre-m1",
    "company": "Standard Glass",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "First phase (50%) operational",
    "due": "Q1 FY28",
    "createdOn": "2026-09-29",
@@ -27985,7 +27985,7 @@
   {
    "id": "standard-glass-36-acre-m2",
    "company": "Standard Glass",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Whole campus complete",
    "due": "Q1 FY29",
    "createdOn": "2026-09-29",
@@ -27995,7 +27995,7 @@
   {
    "id": "hle-glascoat-omeras-india-m1",
    "company": "HLE Glascoat",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Omeras India plant running",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -28005,7 +28005,7 @@
   {
    "id": "everest-kanto-cylind-us-type4-m1",
    "company": "Everest Kanto Cylind",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "US expansion complete and adding sales",
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
@@ -28015,7 +28015,7 @@
   {
    "id": "ice-make-refrig-galileo-jv-m1",
    "company": "ICE Make Refrig.",
-   "sector": "Industrial Manufacturing",
+   "sector": "Industrials",
    "text": "Joint-venture plant starts production",
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
@@ -28025,7 +28025,7 @@
   {
    "id": "borosil-renewables-600tpd-m1",
    "company": "Borosil Renewables",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "First new furnace fired and commissioned",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -28035,7 +28035,7 @@
   {
    "id": "borosil-renewables-600tpd-m2",
    "company": "Borosil Renewables",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Revenue from the new furnaces starts showing",
    "due": "Q1 FY28",
    "createdOn": "2026-09-29",
@@ -28045,7 +28045,7 @@
   {
    "id": "inox-india-kandla-m1",
    "company": "Inox India",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Kandla plant commissioned",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -28055,7 +28055,7 @@
   {
    "id": "krn-heat-exchan-hvac-plant-m1",
    "company": "KRN Heat Exchan",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "New plant at about 50% use; revenue above ₹1,000cr",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -28065,7 +28065,7 @@
   {
    "id": "krn-heat-exchan-hvac-plant-m2",
    "company": "KRN Heat Exchan",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "New plant at about 80% use; revenue about ₹2,000cr",
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
@@ -28075,7 +28075,7 @@
   {
    "id": "krn-heat-exchan-bangalore-m1",
    "company": "KRN Heat Exchan",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Bangalore plant starts production",
    "due": "Q2 FY28",
    "createdOn": "2026-09-29",
@@ -28085,7 +28085,7 @@
   {
    "id": "subros-kharkhoda-m1",
    "company": "Subros",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Kharkhoda starts production",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
@@ -28095,7 +28095,7 @@
   {
    "id": "subros-e-compressor-m1",
    "company": "Subros",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Plant equipped and ready",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -28105,7 +28105,7 @@
   {
    "id": "subros-e-compressor-m2",
    "company": "Subros",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "First electric-compressor supplies to Maruti",
    "due": "Q3 FY28",
    "createdOn": "2026-09-29",
@@ -28115,7 +28115,7 @@
   {
    "id": "subros-e-compressor-m3",
    "company": "Subros",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Second variant starts",
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
@@ -28125,7 +28125,7 @@
   {
    "id": "omnitech-engineering-chhapara-m1",
    "company": "Omnitech Engineering",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Both new Chhapara plants operational",
    "due": "Q3 FY28",
    "createdOn": "2026-09-29",
@@ -28135,7 +28135,7 @@
   {
    "id": "tempsens-instruments-unit6-mv-heaters-m1",
    "company": "Tempsens Instruments",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Unit 6 heater plant completed",
    "due": "Q1 FY28",
    "createdOn": "2026-09-29",
@@ -28145,7 +28145,7 @@
   {
    "id": "tempsens-instruments-victura-jv-m1",
    "company": "Tempsens Instruments",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Joint-venture plant starts production",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -28155,7 +28155,7 @@
   {
    "id": "tempsens-instruments-unit8-cables-m1",
    "company": "Tempsens Instruments",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Unit 8 cable plant completed",
    "due": "Q2 FY28",
    "createdOn": "2026-09-29",
@@ -28165,7 +28165,7 @@
   {
    "id": "tempsens-instruments-unit1-oem-sensors-m1",
    "company": "Tempsens Instruments",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Unit 1 sensor plant commissioned",
    "due": "Q3 FY28",
    "createdOn": "2026-09-29",
@@ -28175,7 +28175,7 @@
   {
    "id": "carborundum-univer-power-ceramics-m1",
    "company": "Carborundum Univer.",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Power-electronics substrates in production",
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
@@ -28185,7 +28185,7 @@
   {
    "id": "carborundum-univer-semicon-ceramics-m1",
    "company": "Carborundum Univer.",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "Serial supplies to the key customer under way",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -28195,7 +28195,7 @@
   {
    "id": "diffusion-engineers-nagpur-expansion-m1",
    "company": "Diffusion Engineers",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "FY27 revenue up 20% or more as the new plant ramps",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -28205,7 +28205,7 @@
   {
    "id": "ador-welding-new-lines-m1",
    "company": "Ador Welding",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "New consumable lines added this year and next",
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
@@ -28215,7 +28215,7 @@
   {
    "id": "vilas-transcore-copper-m1",
    "company": "Vilas Transcore",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "About ₹80cr of copper-conductor sales",
    "due": "H2 FY27",
    "createdOn": "2026-09-29",
@@ -28225,7 +28225,7 @@
   {
    "id": "vilas-transcore-unit3-m1",
    "company": "Vilas Transcore",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "FY27 revenue of about ₹680cr (cut from ₹750–800cr)",
    "due": "H2 FY27",
    "createdOn": "2026-09-29",
@@ -28235,7 +28235,7 @@
   {
    "id": "airfloa-rail-techno-14-acre-m1",
    "company": "Airfloa Rail Techno.",
-   "sector": "Industrial Products",
+   "sector": "Industrials",
    "text": "New 14-acre plant in place",
    "due": "H2 FY27",
    "createdOn": "2026-09-29",

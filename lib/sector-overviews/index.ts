@@ -38,10 +38,9 @@ import { packaging } from './packaging';
 import { bearings } from './bearings';
 import { cables } from './cables';
 import { aerospaceDefence } from './aerospace-defence';
-import { industrialManufacturing } from './industrial-manufacturing';
 import { industrialRailway } from './industrial-railway';
 import { industrialMachinery } from './industrial-machinery';
-import { industrialProducts } from './industrial-products';
+import { industrials } from './industrials';
 import { electAndRefrac } from './elect-and-refrac';
 import { electricalTransformers } from './electrical-transformers';
 import { electricalEquipment } from './electrical-equipment';
@@ -56,7 +55,7 @@ export * from './calls';
  * Every written overview, keyed by the sector name it belongs to.
  * Add a new file alongside `pharma-cdmo.ts` and register it here.
  */
-const OVERVIEWS: SectorOverview[] = [pharmaCdmo, autoRelated, consumerDurables, chemicals, software, construction, realty, foodProducts, retail, healthcare, commercialServices, agrochemicalFertilizers, hotelsAndTravels, pharmaOthers, solarPvCellsEpc, vehicles, oil, hospitals, miningMetalsRecycle, platformCos, forging, finance, healthProducts, plastics, utilities, ironSteel, constructionPower, hardware, travelServices, logistics, rubber, tyres, pharma, pharmaApi, pumpsCompEng, packaging, bearings, cables, aerospaceDefence, industrialManufacturing, industrialProducts, industrialRailway, industrialMachinery, electAndRefrac, electricalTransformers, electricalEquipment, emsElectronics, media];
+const OVERVIEWS: SectorOverview[] = [pharmaCdmo, autoRelated, consumerDurables, chemicals, software, construction, realty, foodProducts, retail, healthcare, commercialServices, agrochemicalFertilizers, hotelsAndTravels, pharmaOthers, solarPvCellsEpc, vehicles, oil, hospitals, miningMetalsRecycle, platformCos, forging, finance, healthProducts, plastics, utilities, ironSteel, constructionPower, hardware, travelServices, logistics, rubber, tyres, pharma, pharmaApi, pumpsCompEng, packaging, bearings, cables, aerospaceDefence, industrials, industrialRailway, industrialMachinery, electAndRefrac, electricalTransformers, electricalEquipment, emsElectronics, media];
 
 const BY_SECTOR = new Map(OVERVIEWS.map(o => [o.sector.toLowerCase(), o]));
 
