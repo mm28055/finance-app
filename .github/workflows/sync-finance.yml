@@ -6,13 +6,9 @@ on:
     # files (bhavcopy ~4:30pm, market-cap file ~5pm). Earlier, the sync would
     # fall back to the previous day's prices.
     - cron: '30 12 * * 1-5'
-    # Backup at 10:15pm IST: GitHub's timer runs late (often 3–5 hours) and sometimes skips a
-    # run altogether (29 Sep 2026). A second run the same day is harmless: prices and flags
-    # are simply refreshed, and Screener pages read in the last 12 hours are skipped.
-    - cron: '45 16 * * 1-5'
   workflow_dispatch:          # Allow manual trigger from GitHub UI
 
-# Never two at once: a late scheduled run and the backup wait for each other.
+# Never two at once: a late scheduled run and a manual one wait for each other.
 concurrency:
   group: daily-finance-sync
   cancel-in-progress: false

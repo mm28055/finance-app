@@ -250,34 +250,34 @@
     "sector": "Software",
     "subject": "Governance: loans to CEO",
     "why": "The FY26 annual report audit found loans given to the CEO and his father in breach of company law (since repaid), found while researching management. Confirm from the annual report, mention it in the company section and its risks if the note does not already, and weigh it in the call.",
-    "addedOn": "2026-09-30"
+    "addedOn": "2026-09-29"
   },
   {
     "company": "Zaggle Prepaid",
     "sector": "Software",
     "subject": "Note out of date: CFO",
     "why": "The note says the CFO post is vacant, but Venkatesh Ramachandran became Group CFO on 18 May 2026 (NSE filing). Correct the note.",
-    "addedOn": "2026-09-30"
+    "addedOn": "2026-09-29"
   },
   {
     "company": "Hexagon Nutrition",
     "sector": "Pharma Others",
     "subject": "Founder stepped down as Chairman",
     "why": "Founder Arun Kelkar ceased to be Chairman on 28 Sep 2026 (found while researching management). Check the NSE filing for who takes over and why, add a dated sentence to the company section, and weigh it in the call.",
-    "addedOn": "2026-09-30"
+    "addedOn": "2026-09-29"
   },
   {
     "company": "India Pesticides",
     "sector": "Agrochemical & Fertilizers",
     "subject": "Promoter family left the board",
     "why": "The promoter family stepped off the board in June 2026 (found while researching management). Check the filings for why and who runs it now, mention it in the company section if the note does not, and weigh it in the call.",
-    "addedOn": "2026-09-30"
+    "addedOn": "2026-09-29"
   },
   {
     "company": "KRBL",
     "sector": "Food Products",
     "subject": "Governance: auditor qualification",
     "why": "The FY26 annual report says the auditor qualified the accounts over an Enforcement Directorate money-laundering case against a joint MD (found while researching management). Confirm from the report, add it to the company section and risks if missing, and weigh it in the call.",
-    "addedOn": "2026-09-30"
+    "addedOn": "2026-09-29"
   }
 ]

@@ -2,7 +2,7 @@ import { SectorOverview } from './types';
 import { industrialsHeavyBusinesses } from './industrials-heavy-businesses';
 import { industrialsHeavyValuationInputs } from './card-data/industrials-heavy';
 
-// Industrials · Heavy engineering and infrastructure equipment. Built on 30 Sep 2026 from the Industrial
+// Industrials · Heavy engineering and infrastructure equipment. Built on 29 Sep 2026 from the Industrial
 // Manufacturing note (Q1 FY27, written Sep 2026), when the former process-plant group was split in two: each
 // company's verdict, profile, charts, valuation inputs and table rows are carried over unchanged; the group
 // analysis and the ranking are new.
@@ -40,7 +40,7 @@ export const industrialsHeavy: SectorOverview = {
     },
     standfirst:
         "Nine companies that build heavy equipment to order for steel, power, refinery, water, defence and cold-chain projects: process piping for power plants and gas turbines (DEE), boilers, presses and process equipment (Isgec), fired heaters for refineries (JNK), steel processing lines (John Cockerill), heat exchangers (United Heat Transfer), water-control gates (Jash), engineered pumps and water projects (WPIL), naval air-conditioning (Shree Refrigerations) and cold rooms (ICE Make). **Their revenue follows project awards and execution, so a quarter tells you which orders were shipped, not how the business is doing.** This is one of the groups on the Industrials page. Power is the strongest source of demand, refinery awards are slipping because of the West Asia war, Indian water-scheme money has not been paid, the navy's fleet keeps growing, and fixed-price contracts absorbed this year's steel and freight spike. **None of the nine is a clear buy at today's prices; Jash Engineering, DEE Development and Isgec are worth following.**",
-    lastUpdated: '2026-09-30',
+    lastUpdated: '2026-09-29',
     asOfQuarter: 'Q1 FY27',
 
     metrics: [

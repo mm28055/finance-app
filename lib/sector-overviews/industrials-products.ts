@@ -3,7 +3,7 @@ import { industrialsProductsBusinesses } from './industrials-products-businesses
 import { industrialsProductsValuationInputs } from './card-data/industrials-products';
 
 // Industrials · Consumables and industrial products. One of the group tabs on the Industrials page
-// (the former Industrial Manufacturing and Industrial Products sectors, merged on 30 Sep 2026).
+// (the former Industrial Manufacturing and Industrial Products sectors, merged on 29 Sep 2026).
 // Company verdicts, profiles, chart data and valuation inputs moved unchanged from those two notes;
 // the group analysis below is written for these eight companies.
 
@@ -40,7 +40,7 @@ export const industrialsProducts: SectorOverview = {
     },
     standfirst:
         "Eight companies that sell something customers buy again and again: welding consumables (**Ador Welding**), hard-facing wear protection and the heavy equipment that uses it (**Diffusion Engineers**), abrasives and engineered ceramics (**Carborundum Universal**), mill liners and grinding balls for copper and gold mines (**Tega Industries**), Kavach train-safety systems and batteries (**HBL Engineering**), solar glass (**Borosil Renewables**), CP PLUS CCTV cameras (**Aditya Infotech**) and smart meters and electrical goods (**HPL Electric**). This is one of three groups on the Industrials page, which brings together the former Industrial Manufacturing and Industrial Products sectors. What these eight share is repeat demand; what separates them is who sets the price. The research behind it is the last two earnings calls (HBL holds none), the Q1 FY27 presentations, the FY26 annual reports and rating reports, all carried over from those two notes. This year's oil, copper and wage spike was the test: Ador raised its prices, Tega's contracts and Aditya Infotech's price rises passed costs on, while Carborundum's abrasives and HPL's meters paid much of the rise themselves. **Two of the eight, HBL and Borosil, earn margins set by one programme or one import duty, so this note judges each company on what its profit actually rests on, not on the latest quarter.**",
-    lastUpdated: '2026-09-30',
+    lastUpdated: '2026-09-29',
     asOfQuarter: 'Q1 FY27',
 
     metrics: [

@@ -3,10 +3,9 @@ name: Daily Filings Digest
 on:
   schedule:
     - cron: '30 14 * * 1-6'  # 8:00pm IST, Monday to Saturday (after the day's filings)
-    - cron: '10 18 * * 1-6'  # backup, 11:40pm IST: GitHub's timer runs late and sometimes skips
   workflow_dispatch:          # Allow manual trigger from GitHub UI
 
-# Never two at once: a late scheduled run and the backup wait for each other.
+# Never two at once: a late scheduled run and a manual one wait for each other.
 concurrency:
   group: daily-filings-digest
   cancel-in-progress: false

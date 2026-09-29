@@ -2,7 +2,7 @@ import { SectorOverview } from './types';
 import { industrialsProcessBusinesses } from './industrials-process-businesses';
 import { industrialsProcessValuationInputs } from './card-data/industrials-process';
 
-// Industrials · Chemical and pharma process equipment. Built on 30 Sep 2026 from the Industrial Manufacturing and
+// Industrials · Chemical and pharma process equipment. Built on 29 Sep 2026 from the Industrial Manufacturing and
 // Industrial Products notes (Q1 FY27, written Sep 2026), when the former process-plant group was split in two:
 // each company's verdict, profile, charts, valuation inputs and table rows are carried over unchanged; the group
 // analysis and the ranking are new.
@@ -38,7 +38,7 @@ export const industrialsProcess: SectorOverview = {
     },
     standfirst:
         "Seven companies that design and build process equipment and whole plants for chemical, pharma, fertiliser, fuel and gas producers: glass-lined reactors, filters and dryers (GMM Pfaudler, HLE Glascoat, Standard Glass), industrial dryers and nuclear process equipment (Kilburn), heat exchangers and pressure vessels built to a licensor's code (Anup), ethanol and biogas plants (Praj) and cryogenic tanks (Inox India). **Their demand is their customers' capital spending, and in FY27 that is split: pharma is building, specialty chemicals are cutting, domestic ethanol plants have stopped, and industrial gas, LNG and space are growing.** This is one of the groups on the Industrials page. Q1 FY27 was weak for most of the seven, fixed-price contracts absorbed the steel and freight spike after the West Asia war, and Anup, Kilburn and Standard Glass all need a heavy second half. **None of the seven is a clear buy at today's prices; Inox India, GMM Pfaudler and Anup are worth following.**",
-    lastUpdated: '2026-09-30',
+    lastUpdated: '2026-09-29',
     asOfQuarter: 'Q1 FY27',
 
     metrics: [
