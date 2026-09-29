@@ -14,7 +14,8 @@ Two inputs: the open follow-ups in `lib/corporate-actions/needs-attention.json` 
 and the week's material filings in `lib/filings/filings.json` (dated after the last entry in `ops/weekly-log.md`).
 If both are empty, stop: change nothing, commit nothing.
 
-Order of work (at most 25 follow-ups per run; the rest wait for next week — say how many are left in the log):
+Order of work (at most 40 follow-ups per run; the rest wait for the next run — say how many are left in the log. After every
+10 handled, run the section-3 checks, commit and push, so a run that stops early loses nothing):
 1. Renames and sector moves (quick).
 2. New results calls — companies the notes rate own or follow first, then wait, then pass/avoid.
 3. Call drift, shareholding, demergers, new AGMs / special calls.
@@ -67,7 +68,7 @@ pending per company. Never delete checkpoints.
 **Needs a session** (`lib/session-todos/todos.json`, shown as a chip on the dashboard header). Add an item when
 something needs the owner to open a session with Claude and you cannot do it within this run's rules: a company to
 add that needs a new note section you had no room for, a data source failing for more than a week, anything left over
-after the 25-entry limit two weeks running, a question only the owner can answer. Each item: `id` (short slug),
+after the 40-entry limit for a week of runs, a question only the owner can answer. Each item: `id` (short slug),
 `text` (one plain sentence, what to do), `addedOn`, and `notBefore` if it only applies from a date. Remove items that
 are done or no longer apply. Sectors due their season refresh appear there by themselves (90% of the new quarter's
 calls in); do not add those.
