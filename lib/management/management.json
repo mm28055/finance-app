@@ -1,1 +1,1157 @@
-{ "updated": "2026-09-29", "companies": [] }
+{
+ "updated": "2026-09-29",
+ "companies": [
+  {
+   "company": "Aequs",
+   "sector": "Aerospace defence",
+   "style": "Promoter-run",
+   "styleNote": "Founder Aravind Melligeri is Executive Chairman and CEO; a long-serving hired MD, Rajeev Kaul, runs day-to-day operations. No other family members are in management. The promoter group owns about 59%, mostly through Aequs Manufacturing Investments and the Melligeri Private Family Foundation; the Foundation is putting in ₹650cr through warrants (EGM on 22 Oct 2026), taking the group to about 61%. A Melligeri promoter foundation has pledged shares to raise a ₹200cr loan.",
+   "people": [
+    {
+     "name": "Aravind Melligeri",
+     "role": "Executive Chairman & CEO",
+     "since": "2000 (founder)",
+     "family": true,
+     "relation": "Founder and promoter",
+     "stake": "0.17% directly (RHP); promoter group together about 59%",
+     "bio": "Holds a bachelor's in mechanical engineering from NIT Karnataka (then under Mangalore University) and a master's in mechanical engineering from Penn State. Before Aequs he worked at StatDesign Inc. and Penn State's mechanical engineering department, and in 1997 he co-founded QuEST Global, the engineering services firm, where he is still a board member. He started Aequs in 2000 as QuEST Global Manufacturing and built India's first notified precision-engineering SEZ at Belagavi, which won Airbus's Global Innovation Award in 2016. He took Aequs into consumer products in 2016 (toys, then a consumer-goods cluster in 2021). Penn State named him an Outstanding Engineering Alumnus in 2023."
+    },
+    {
+     "name": "Rajeev Kaul",
+     "role": "Managing Director",
+     "since": "2007 (MD later; earlier CFO)",
+     "family": false,
+     "bio": "A chartered accountant with a bachelor's in mathematics from the University of Delhi. He worked at A.F. Ferguson & Co. and QuEST Global Engineering Services before joining Aequs in April 2007. He ran the company's finances as CFO before becoming Managing Director. He now oversees both the aerospace and the consumer-goods businesses and has over 22 years in finance and aerospace."
+    },
+    {
+     "name": "Reenah Joseph",
+     "role": "Chief Financial Officer",
+     "since": "31 Aug 2026",
+     "family": false,
+     "bio": "Has an MBA in finance from ICFAI Business School and executive programmes at Harvard, IIM Calcutta and ISB. She has nearly two decades in corporate finance, M&A and strategic planning. Before Aequs she was Deputy Group CFO at PDS Ltd, and earlier Chief of Corporate Finance and Investor Relations at Future Group, after starting at Credit Suisse. She joined as CFO on 31 August 2026, two months after the previous CFO left."
+    },
+    {
+     "name": "Ravi Guttal",
+     "role": "CTO & Senior Vice President, Engineering and Quality",
+     "since": "2022",
+     "family": false,
+     "bio": "Holds a bachelor's in civil engineering from Mangalore University and master's degrees and a PhD from Rensselaer Polytechnic Institute. He came from KLE Technological University and joined Aequs in February 2022. He leads process optimisation and R&D, and moved to the consumer subsidiary (ACPPL) in August 2023."
+    },
+    {
+     "name": "Mohamed Bouzidi",
+     "role": "President – Aerospace, Aequs Aerospace France",
+     "since": "2020",
+     "family": false,
+     "bio": "Trained in materials processing at the National Higher School of Mines, Paris. He worked at Aubert & Duval and Snecma Moteurs (now part of Safran) before joining Aequs in April 2020. He leads the aerospace operations of the French subsidiary. His FY25 pay of ₹1.9cr was the highest among the hired managers in the RHP."
+    },
+    {
+     "name": "Kapil Mahajan",
+     "role": "Senior Vice President & Chief Human Resources Officer",
+     "since": "2025",
+     "family": false,
+     "bio": "An XLRI Jamshedpur alumnus and certified coach with about 26 years in HR. He spent over seven years at Tata Advanced Systems and earlier worked at Reliance Communications, Aditya Birla Retail and Pfizer. He joined Aequs in June 2025 to lead people strategy."
+    },
+    {
+     "name": "Ravi Hugar",
+     "role": "Corporate Head – Legal & Company Secretary",
+     "since": "2007",
+     "family": false,
+     "bio": "A commerce graduate from Karnatak University and an associate member of the Institute of Company Secretaries of India. He has been with Aequs since July 2007 and has over 19 years in governance and compliance. He worked on the company's acquisitions, joint ventures and its IPO."
+    }
+   ],
+   "changes": "CFO Dinesh Iyer resigned (letter 24 Mar 2026, effective 30 Jun 2026, personal reasons); Reenah Joseph became CFO on 31 Aug 2026. Board approved a ₹650cr warrant issue to the Melligeri Private Family Foundation in Sep 2026.",
+   "sources": [
+    "https://www.aequs.com/about-us/leadership-team/",
+    "https://www.aequs.com/wp-content/uploads/2025/10/Aravind-Melligeri_Short-Profile_Sept-2025.pdf",
+    "https://www.questglobal.com/our-leaders/aravind-melligeri/",
+    "https://inc42.com/buzz/aequs-drhp-shareholding-structure-leadership-breakdown/",
+    "https://www.marketscreener.com/news/aequs-says-dinesh-iyer-resigns-as-chief-financial-officer-ce7e5eddd08ef224",
+    "https://scanx.trade/stock-market-news/companies/aequs-designates-md-cfo-materiality-disclosures-under-sebi-rules/51893354",
+    "https://www.sahi.com/news/aequs-board-approves-650-crore-promoter-warrant-funding-for-capacity-expansion",
+    "https://www.whalesbook.com/corporate-news/English/other/Aequs-Promoter-Melligeri-Foundation-Pledges-1499percent-Stake-for-Rs-200-Crore-Loan/6ab20ee0f2017017ae6f81b4"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "DDev Plastiks",
+   "sector": "Chemicals",
+   "style": "Promoter-run",
+   "styleNote": "The Suranna/Surana family runs it: the founder Narrindra Suranna is Chairman & MD and his son Ddev Surana is Whole-time Director & CEO. The compounding business was demerged from the family's Kkalpana Industries in 2022. Promoters own 75%, almost all through Bbigplas Poly Pvt Ltd (74.99%); the family members hold only a few hundred shares directly.",
+   "people": [
+    {
+     "name": "Narrindra Suranna",
+     "role": "Chairman & Managing Director",
+     "since": "With the business since inception (founder)",
+     "family": true,
+     "relation": "Founder; father of Ddev Surana",
+     "stake": "550 shares, about 0% (FY26 annual report); promoter group together 75%, mainly via Bbigplas Poly Pvt Ltd",
+     "bio": "Narrindra Suranna is a commerce graduate with a law degree (LLB) from Calcutta University. He has spent his career in the plastics industry and led the group's move into polymer compounding, which grew into one of India's larger compound makers. The business sat inside the listed Kkalpana Industries (India) Ltd until it was demerged into DDev Plastiks in 2022. He is also an executive director of Kkalpana Industries, so he runs two listed group companies."
+    },
+    {
+     "name": "Ddev Surana",
+     "role": "Whole-time Director & CEO",
+     "since": "Whole-time Director; CEO since the 2022 listing",
+     "family": true,
+     "relation": "Son of the Chairman & MD Narrindra Suranna",
+     "stake": "500 shares, about 0% (FY26 annual report)",
+     "bio": "Ddev Surana holds a B.Com (Hons), an MSc in Management for Business Excellence from the UK and an MBA from the USA. He is one of the promoters and is described by the company as the key driving force of the business, with skills in project management, HR, administration and IT. He signs the annual report's CEO letter and leads the new product and battery-storage plans. He is also a non-executive director of Kkalpana Industries (India) Ltd."
+    },
+    {
+     "name": "Rajesh Kothari",
+     "role": "Whole-time Director",
+     "since": "Board since Dec 2020; Whole-time Director since Mar 2022",
+     "family": false,
+     "stake": "Nil (FY26 annual report)",
+     "bio": "Rajesh Kothari is a commerce graduate (B.Com) from Rajasthan University, Ajmer. He began his career in 1985 at Kanoria Chemicals & Industries and joined the group in 1997; he was earlier a whole-time director of Kalpana Industries. He has over three decades in marketing, after-sales service and market research for wire and cable compounds and handles key domestic and export customers. He runs the company's plants in western India. He retires by rotation at the 2026 AGM and is proposed for re-appointment."
+    },
+    {
+     "name": "Arihant Bothra",
+     "role": "Chief Financial Officer",
+     "since": "CFO (in place through FY26; no change during the year)",
+     "family": false,
+     "bio": "Arihant Bothra, born in 1989, graduated from Calcutta University in 2010 and is an associate member of the Institute of Chartered Accountants of India. He has over a decade of experience in finance, accounting, insurance, information systems and project financing. The company says he is pursuing a CFO programme with IIM Calcutta."
+    }
+   ],
+   "changes": "No executive changes since the annual report. Independent director Ramya Hariharan resigned in Jul 2026 for professional reasons; Rajni Mishra joined as independent director in Aug 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30882_DDEVPLSTIK_2025_2026_A_4329425_31082026161425.pdf",
+    "https://www.ddevgroup.in/our-company",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1697642_20072026103629_WEB.xml",
+    "https://nsearchives.nseindia.com/corporate/DDEVPLASTIKS_27072026231208_Regulation_30-Intimation.pdf"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Himadri Speciality",
+   "sector": "Chemicals",
+   "style": "Promoter-run",
+   "styleNote": "A Choudhary family company: Anurag Choudhary is Chairman, MD & CEO, his father Shyam Sundar Choudhary (a founder) and brother Amit Choudhary are whole-time directors. Promoters own 52.5%; the family members hold about 15% in their own names and the rest mainly through Modern Hi-Rise Pvt Ltd (36.8%).",
+   "people": [
+    {
+     "name": "Anurag Choudhary",
+     "role": "Chairman, Managing Director & CEO",
+     "since": "Joined 1992; CEO since 2006; MD & CEO since Aug 2019",
+     "family": true,
+     "relation": "Son of Shyam Sundar Choudhary; brother of Amit Choudhary",
+     "stake": "8.59% (4.33 crore shares, FY26 annual report); promoter group together 52.5%",
+     "bio": "Anurag Choudhary, born 1972, holds a B.Com (Hons). He joined the family business in 1992 at about eighteen, became CEO in 2006 and MD & CEO in August 2019; his current term runs to August 2029. He led the change from a coal tar pitch maker into an integrated carbon chemicals group, adding carbon black, battery materials (anode and LFP cathode) and the Birla Tyres acquisition. Business Today named him India's Best CEO 2026 in chemicals. He is also a director of several group and battery-materials subsidiaries."
+    },
+    {
+     "name": "Shyam Sundar Choudhary",
+     "role": "Whole-time Director",
+     "since": "On the board since 1987 (founder)",
+     "family": true,
+     "relation": "Founder; father of Anurag and Amit Choudhary",
+     "stake": "1.64% (82.5 lakh shares, FY26 annual report)",
+     "bio": "Shyam Sundar Choudhary, aged about 78, is a commerce graduate and one of the founders who set up the company in 1987. He has been on the board ever since and has decades of industrial and commercial experience. The company credits him with commissioning plants ahead of schedule. His present term as whole-time director runs to March 2028."
+    },
+    {
+     "name": "Amit Choudhary",
+     "role": "Whole-time Director",
+     "since": "With the business since 1994; board since Jun 2021",
+     "family": true,
+     "relation": "Son of Shyam Sundar Choudhary; brother of Anurag Choudhary",
+     "stake": "3.52% (1.78 crore shares, FY26 annual report)",
+     "bio": "Amit Choudhary, aged about 50, is a commerce graduate from St. Xavier's College, Kolkata, with management education at IESE Business School, Spain. He has worked in the business since 1994 and oversees project expansions, plant operations and human resources. The company credits him with the Mahistikry specialty carbon black complex, the LFP cathode plant and the turnaround of Birla Tyres. He chairs the international advisory committee of the Asia Pacific Carbon Black Conference."
+    },
+    {
+     "name": "Kamlesh Kumar Agarwal",
+     "role": "Chief Financial Officer",
+     "since": "Mar 2014",
+     "family": false,
+     "bio": "Kamlesh Kumar Agarwal has been CFO since March 2014 and presents the results on the company's earnings calls. His education and earlier employers are not stated in the annual report or on the company website."
+    }
+   ],
+   "changes": "No executive changes since the FY26 annual report; independent directors Girish Vanvari and Gopal Malpani were re-appointed for second terms in 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_29261_HSCL_2025_2026_A_14131879_15052026180133.pdf",
+    "https://www.himadri.com/bod.php",
+    "https://www.himadri.com/anurag-choudhary.php",
+    "https://www.himadri.com/amit-choudhary.php",
+    "https://www.bloomberg.com/profile/person/18774793",
+    "https://www.businesstoday.in/magazine/deep-dive/story/how-anurag-choudhary-is-charting-a-new-direction-at-himadri-speciality-chemical-523136-2026-03-30",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1690977_11072026032909_WEB.xml"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Sh. Pushkar Chem.",
+   "sector": "Chemicals",
+   "style": "Promoter-run",
+   "styleNote": "Run by the Makharia brothers: Punit Makharia is Chairman & MD and Gautam Makharia is Joint MD. Punit's son Raghav joined the board as a non-executive director in Aug 2026 and runs the Madhya Bharat Phosphate subsidiary. Promoters own 69.4%; the brothers' mother Bhanu Makharia holds 55.3% on her own.",
+   "people": [
+    {
+     "name": "Punit Gopikishan Makharia",
+     "role": "Chairman & Managing Director",
+     "since": "Director since incorporation in 1993 (promoter)",
+     "family": true,
+     "relation": "Promoter; brother of Gautam Makharia; father of Raghav Makharia",
+     "stake": "5.00% (16.2 lakh shares, FY26 annual report); family together 69.4%",
+     "bio": "Punit Makharia, aged 55, holds a B.Com from Mumbai University. He is a promoter and has been a director since the company was set up in March 1993. He has more than two decades in dyes, dye intermediates and fertilisers and sets the group's strategy and customer relationships. He was re-appointed Chairman & MD from April 2026 and is also a director of group companies Madhya Bharat Phosphate, Kleur Speciality Chemicals and Krishvanta Fertchem."
+    },
+    {
+     "name": "Gautam Gopikishan Makharia",
+     "role": "Joint Managing Director",
+     "since": "Director since incorporation in 1993 (promoter)",
+     "family": true,
+     "relation": "Promoter; brother of Punit Makharia; uncle of Raghav Makharia",
+     "stake": "5.00% (Jun 2026 shareholding pattern); he was also allotted 7.36 lakh warrants in Dec 2025",
+     "bio": "Gautam Makharia, aged 52, holds a bachelor's in electronics and telecommunications from Mumbai University and an MBA from Manchester Business School, UK. Before the family business he worked at General Electric (USA), Procter & Gamble (UK), Barclays Bank and the Bhabha Atomic Research Centre. He runs production and quality control at the Lote Parshuram plants in Ratnagiri. He was re-appointed Joint MD from April 2026."
+    },
+    {
+     "name": "Deepak Beriwala",
+     "role": "Chief Financial Officer",
+     "since": "Jun 2019",
+     "family": false,
+     "bio": "Deepak Beriwala, aged 38, holds a B.Com from the University of Rajasthan and is a qualified Chartered Accountant and Company Secretary. Before joining as CFO in June 2019 he worked in finance at a Mumbai shipping company, handling accounts, audit and strategy work."
+    },
+    {
+     "name": "Dr. N. N. Mahapatra",
+     "role": "Business Head – Dyes",
+     "since": "Aug 2018",
+     "family": false,
+     "bio": "Dr. Mahapatra, aged 67, studied textile chemistry at UDCT (now ICT) Mumbai, holds an MSc and a doctorate in applied chemistry from Utkal University and an MBA from IMM Kolkata. He has 39 years in textiles in India and abroad with the Birla groups, Reliance Industries, Raymond (Kenya) and the Churchgate Group (Nigeria). He joined in August 2018 to run the dyes business."
+    }
+   ],
+   "changes": "Non-executive director Ramakant Nayak resigned in Aug 2026 due to age; Raghav Makharia (son of the Chairman) joined the board as a non-executive director from 13 Aug 2026. No executive changes.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31439_SHREEPUSHK_2025_2026_A_14231010_04092026195752.pdf",
+    "https://nsearchives.nseindia.com/corporate/SHREEPUSHK_12082026203109_SPCFLChangeinDirectors12082026.pdf",
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1694275_16072026043727_WEB.xml",
+    "https://boardstewardship.com/punit-g-makharia-reappointed-as-cmd-of-shree-pushkar-chemicals-fertilisers-gautam-g-makharia-as-joint-md/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Vishnu Chemicals",
+   "sector": "Chemicals",
+   "style": "Promoter-run",
+   "styleNote": "A founder-family company. Founder Ch. Krishna Murthy is Chairman & MD and his son Ch. Siddartha is Joint MD; his wife Ch. Manjula sits on the board as a non-executive promoter director. The three together own 69.2%. Day-to-day finance is run by a hired CFO.",
+   "people": [
+    {
+     "name": "Ch. Krishna Murthy",
+     "role": "Chairman & Managing Director",
+     "since": "1993 (founder)",
+     "family": true,
+     "relation": "Founder; father of Ch. Siddartha; husband of director Ch. Manjula",
+     "stake": "48.66% (FY26 annual report); family together 69.21%",
+     "bio": "A first-generation entrepreneur who founded the company and has run it for over three decades. He holds a postgraduate degree in management. He took Vishnu from a single-product business to a diversified speciality chemicals maker (chromium, barium and strontium chemicals). CARE Ratings credits him with over 30 years in making, marketing and exporting chromium chemicals."
+    },
+    {
+     "name": "Ch. Siddartha",
+     "role": "Joint Managing Director",
+     "since": "Joint MD; re-appointed May 2026 to May 2031",
+     "family": true,
+     "relation": "Son of the Chairman & MD Ch. Krishna Murthy and of director Ch. Manjula",
+     "stake": "8.37% (FY26 annual report)",
+     "bio": "Holds a master's degree in biotechnology from Northumbria University (UK) and an MBA from Saginaw Valley State University (USA). He has been with the company for over a decade and leads strategy, international marketing and sourcing. He led the expansion and product diversification, and is also Managing Director of subsidiary Vishnu Barium. Some of the company's loans are backed by his personal guarantee."
+    },
+    {
+     "name": "Mahesh Bhatter",
+     "role": "Chief Financial Officer",
+     "since": "CFO since Feb 2023 (joined 2018)",
+     "family": false,
+     "bio": "A chartered accountant and company secretary, with a B.Com (Hons) from the University of Calcutta. He is also a certified treasury manager (ICFAI) and a certified corporate finance professional (Dun & Bradstreet). He joined Vishnu in September 2018 and was made CFO in February 2023. His background is in accounts, corporate finance, forex, treasury, project finance and working capital."
+    }
+   ],
+   "changes": "No executive changes since the FY26 annual report. Ch. Siddartha was re-appointed Joint MD for five years from May 2026 by postal ballot.",
+   "sources": [
+    "https://www.bseindia.com/xml-data/corpfiling/AttachHis/3de81759-310e-48b2-af93-e0f066c5a3fe.pdf (FY26 annual report)",
+    "https://vishnuchemicals.com/company/management/",
+    "https://www.indianchemicalnews.com/chemical/care-upgrades-vishnu-chemicals-rating-to-a-stable-19724",
+    "https://www.indianchemicalnews.com/people/vishnu-chemicals-appoints-mahesh-bhatter-as-chief-financial-officer-16373",
+    "https://www.screener.in/company/VISHNU/ (promoter holdings, Jun 2026)"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Clean Science",
+   "sector": "Chemicals",
+   "style": "Promoter-run",
+   "styleNote": "Run by the founding Boob and Sikchi families. Co-founder Siddhartha Sikchi became MD in April 2026; founder Ashok Boob moved to Executive Vice Chairman, and his brother Krishnakumar Boob is a whole-time director. The chairman, Pradeep Rathi, is a non-executive outsider. Promoters own 51.3% after selling about 24% in August 2025.",
+   "people": [
+    {
+     "name": "Siddhartha Sikchi",
+     "role": "Managing Director",
+     "since": "MD since Apr 2026 (co-founder, with the company since 2006)",
+     "family": true,
+     "relation": "Co-founder; nephew of Ashok Boob (per Forbes India)",
+     "stake": "5.41% (FY26 annual report)",
+     "bio": "Holds a B.Tech from UDCT/ICT Mumbai and an M.Sc in organic chemistry from the University of Manitoba, Canada. He joined in December 2006 on returning from Canada and has overseen research and development, the base of the company's in-house catalytic processes. As whole-time director he ran R&D, business development, raw materials and IT before becoming MD in April 2026. He won ICT's Distinguished Alumnus Award (2014) and the ET 40 Under Forty award (2023). He now leads the earnings calls."
+    },
+    {
+     "name": "Ashok Boob",
+     "role": "Executive Vice Chairman & Whole-time Director",
+     "since": "2003 (founder); MD until Mar 2026",
+     "family": true,
+     "relation": "Founder; brother of Krishnakumar Boob; father of promoter Parth Maheshwari",
+     "stake": "3.45% (FY26 annual report); Boob family holdings (wife, HUF, son) add about 16%",
+     "bio": "A chemical engineer from UDCT/ICT Mumbai, aged 73. For about 30 years he was a promoter director at Mangalam Drugs and Organics, which he left in 2006 after differences with its owners. He then started Clean Science from a small lab in Vapi at the age of 54 and ran it as MD until March 2026, looking after operations. He won the Lala Shriram National Award (2023) for leadership in the chemical industry."
+    },
+    {
+     "name": "Krishnakumar Boob",
+     "role": "Whole-time Director",
+     "since": "On the board since Nov 2003",
+     "family": true,
+     "relation": "Brother of Ashok Boob",
+     "stake": "0.20% (FY26 annual report)",
+     "bio": "Holds a bachelor's degree in pharmacy from the University of Bombay (UDCT) and has more than 27 years in the chemical industry. Like his brother, he previously worked at Mangalam Drugs and Organics. At Clean Science he handles project procurement, general administration, regulatory approvals, compliance and CSR projects. He was re-appointed on retiring by rotation at the 2026 AGM."
+    },
+    {
+     "name": "Krishnakumar S. Saboo",
+     "role": "Whole-time Director; Group President (Operations)",
+     "since": "Board from Aug 2026 (with the company 11+ years)",
+     "family": false,
+     "stake": "9,752 ESOP shares (nil %)",
+     "bio": "Holds a B.Sc. Tech from ICT (University of Bombay) and a chemistry degree from South Gujarat University. He has over 37 years in production planning, process improvement, piloting, project management and plant operations. He has been with Clean Science for more than 11 years, set up its new projects and runs engineering, procurement, production, maintenance and safety. The board co-opted him as a whole-time director from 1 August 2026 for five years."
+    },
+    {
+     "name": "Sanjay Parnerkar",
+     "role": "Chief Financial Officer",
+     "since": "Feb 2023",
+     "family": false,
+     "bio": "Joined as CFO in February 2023. Before that he was CFO and Senior Vice President (Finance) at Graphite India from 2015 to 2022. He started his career at Stovec Industries in accounts and administration. His experience covers budgeting, fund raising and dealing with banks."
+    },
+    {
+     "name": "Pratik Bora",
+     "role": "President – Commercial",
+     "since": "Senior management (earlier VP Finance)",
+     "family": false,
+     "bio": "Listed by the company as senior management and one of five executives authorised for stock-exchange disclosures. He earlier served as Vice President (Finance) at Clean Science. He joins the MD and CFO on the earnings calls."
+    }
+   ],
+   "changes": "Siddhartha Sikchi became MD and Ashok Boob became Executive Vice Chairman on 1 Apr 2026. K. S. Saboo joined the board as whole-time director on 1 Aug 2026. Senior manager Kothanda Rama Pichaandi resigned in March 2026.",
+   "sources": [
+    "https://cleanscience.co.in/wp-content/uploads/2026/08/CSTL-AR-2025-26_final.pdf (FY26 annual report)",
+    "https://cleanscience.co.in/board-of-directors/",
+    "https://boardstewardship.com/clean-science-technology-redesignates-ashok-ramnarayan-b-to-executive-vice-chairman-siddhartha-ashok-s-to-md/",
+    "https://www.forbesindia.com/article/india-rich-list-2021/cleaner-chemistry-ashok-boob-and-turning-entrepreneur-at-54/71493/1",
+    "https://www.bseindia.com/xml-data/corpfiling/AttachLive/22a353c4-9c5d-412f-8c5c-8efb0e3d839f.pdf (Q1 FY27 call transcript)",
+    "https://in.marketscreener.com/quote/stock/CLEAN-SCIENCE-AND-TECHNOL-124884992/news/Clean-Science-and-Technology-Names-New-CFO-42877007/",
+    "https://www.screener.in/company/CLEAN/ (promoter holdings, Jun 2026)"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Alkyl Amines",
+   "sector": "Chemicals",
+   "style": "Promoter-run",
+   "styleNote": "Founder Yogesh Kothari has run the company since 1979 and his son Suneet Kothari is an executive director. From 1 Oct 2026 Yogesh becomes Executive Chairman, and Suneet and long-time professional Kirat Patel become Joint MDs. The Kothari family owns 72.0%.",
+   "people": [
+    {
+     "name": "Yogesh M. Kothari",
+     "role": "Chairman & Managing Director (Executive Chairman from 1 Oct 2026)",
+     "since": "1979 (founder)",
+     "family": true,
+     "relation": "Founder; father of Suneet Kothari",
+     "stake": "57.64% (Aug 2026 postal ballot notice); family and their entities together 72.04%",
+     "bio": "A chemical engineer from UDCT/ICT Mumbai, with a master's in management science and a master's in chemical engineering from the University of Massachusetts, Lowell. He founded Alkyl Amines in 1979 as a first-generation entrepreneur and has over 42 years in the chemical industry. He is a former President of the Indian Chemical Council, which gave him a Lifetime Achievement Award in 2020. He also sits on the boards of the IMC Chamber of Commerce and ICT's incubator. His term runs to March 2030."
+    },
+    {
+     "name": "Suneet Y. Kothari",
+     "role": "Executive Director (Joint MD from 1 Oct 2026)",
+     "since": "2001",
+     "family": true,
+     "relation": "Son of the Chairman & MD Yogesh Kothari",
+     "stake": "0.75% (Aug 2026 postal ballot notice)",
+     "bio": "A chemical engineer and chemistry/biochemistry graduate from Cornell University, with an MBA from INSEAD. He was a management consultant at Diamond Technology Partners before joining the company in 2001. He has led business development, new products, marketing, the commercial side and operations. His term runs to December 2029."
+    },
+    {
+     "name": "Kirat M. Patel",
+     "role": "Executive Director (Joint MD from 1 Oct 2026)",
+     "since": "With the company since inception; Executive Director since 1996",
+     "family": false,
+     "relation": "Not related to any director",
+     "stake": "0.26% (Aug 2026 postal ballot notice)",
+     "bio": "Holds a B.Tech in mechanical engineering from IIT Bombay and an MMS (Finance) from Jamnalal Bajaj Institute, Mumbai. He was a management consultant at A.F. Ferguson & Co. before joining Alkyl Amines at its start. He has over 40 years in operations, commercial work, finance and accounts, and was the company's CFO in the past. He is the board's nodal contact for the auditors. His term runs to December 2029."
+    },
+    {
+     "name": "Rakesh Goyal",
+     "role": "Whole-time Director – Operations",
+     "since": "Joined Apr 2018 as COO; whole-time director since Jun 2022",
+     "family": false,
+     "bio": "Holds a B.Tech (Chemical) from IIT Kanpur and a diploma in business management from ICFAI. He has about 32 years in manufacturing, technology transfer, process development and quality. He worked at NOCIL, Hindustan Unilever (manufacturing manager), Dow Chemical (about 10 years), Jesons Industries and National Peroxide (VP Operations) before joining as COO. The company discloses that National Peroxide filed criminal and civil cases against him and other officers alleging financial irregularities; both are pending in court. He is proposed as Executive Director (Operations) from April 2027 to March 2032."
+    },
+    {
+     "name": "Kanchan Shinde",
+     "role": "Chief Financial Officer",
+     "since": "CFO since 2022 (joined 2021)",
+     "family": false,
+     "bio": "A chartered accountant with an MBA in finance and over 23 years of post-qualification experience, according to her public profile. She previously worked at Johnson Matthey before joining Alkyl Amines in 2021. She won the Financial Express CFO Award in 2023 in the mid-sized manufacturing category."
+    }
+   ],
+   "changes": "Board approved on 4 Aug 2026: Yogesh Kothari to become Executive Chairman and Kirat Patel and Suneet Kothari Joint MDs from 1 Oct 2026 (postal ballot closed 19 Sep 2026); Rakesh Goyal to become Executive Director (Operations) from Apr 2027.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_29370_ALKYLAMINE_2025_2026_A_2570597_09062026182246.pdf (FY26 annual report)",
+    "https://beta.bseindia.com/xml-data/corpfiling/AttachHis/7836c2b9-7a3a-4b90-b86b-2056e39962fa.pdf (Aug 2026 postal ballot notice)",
+    "https://alkylamines.com/about-us/leadership/",
+    "https://www.linkedin.com/in/kanchan-shinde-1706/",
+    "https://www.screener.in/company/ALKYLAMINE/ (promoter holdings, Jun 2026)",
+    "https://in.investing.com/news/briefalkyl-amines-chemicals-approves-appointment-of-kirat-patel-as-cfo-2589884"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Marksans Pharma",
+   "sector": "Pharma",
+   "style": "Promoter-run",
+   "styleNote": "Founder Mark Saldanha is Chairman, Managing Director and CEO; his wife Sandra Saldanha is a whole-time director. Promoters own 43.9%, almost all of it held by Mark Saldanha. PE investor OrbiMed holds 8.6% and has a board seat.",
+   "people": [
+    {
+     "name": "Mark Saldanha",
+     "role": "Chairman, Managing Director & CEO",
+     "since": "2003 (founder; company spun out of Glenmark)",
+     "family": true,
+     "relation": "Founder and promoter; husband of Sandra Saldanha",
+     "stake": "43.80% (FY26 annual report); family together 43.87%",
+     "bio": "Mark Saldanha is a science graduate and the founder promoter of Marksans. Before Marksans he was a whole-time director of Glenmark Pharmaceuticals, the company founded by his father Gracias Saldanha; Marksans began in 2001 as a Glenmark subsidiary and was spun off as a separate company in 2003. He has worked across R&D, marketing, production and finance, and built the business through acquisitions: Bell, Sons & Co. and Relonchem in the UK, Time-Cap Labs in the US and Nova in Australia. In FY26 he also drew about ₹1.3cr from the US subsidiary Time-Cap, on top of his pay from the listed company."
+    },
+    {
+     "name": "Sandra Saldanha",
+     "role": "Whole-time Director",
+     "since": "Whole-time director; re-appointed at the August 2026 AGM",
+     "family": true,
+     "relation": "Wife of Mark Saldanha",
+     "stake": "0.07% (FY26 annual report)",
+     "bio": "Sandra Saldanha holds a master's degree in arts (Sociology). Her areas at Marksans are human resources, business development, projects and supply chain. She is a director of the main overseas subsidiaries, including Marksans Pharma (UK), Relonchem, Bell, Sons & Co. and Time-Cap Laboratories in the US. Shareholders re-appointed her as a whole-time director at the 27 August 2026 AGM."
+    },
+    {
+     "name": "Varddhman V. Jain",
+     "role": "Whole-time Director",
+     "since": "Board member (DIN 08338573)",
+     "family": false,
+     "stake": "nil (FY26 annual report)",
+     "bio": "Varddhman Jain has an M.Pharm and about 27 years in the pharmaceutical industry. He has worked across manufacturing, quality, research and development, compliance and regulatory affairs for both active ingredients and finished medicines. He has handled inspections by the US FDA, the UK MHRA, Japan's PMDA and the WHO. He chairs the company's CSR committee."
+    },
+    {
+     "name": "Jitendra Sharma",
+     "role": "Group Chief Financial Officer",
+     "since": "2002",
+     "family": false,
+     "bio": "Jitendra Sharma has been Marksans's chief financial officer since September 2002, almost from the start of the company. He is also a director of several overseas subsidiaries, including Marksans Pharma UK (since 2008), Bell, Sons & Co. (since 2017), Relonchem, Nova Pharmaceuticals Australasia and Marksans Pharma Inc. There was no change in the company's key managerial personnel during FY26."
+    }
+   ],
+   "changes": "No change in key managerial personnel in FY26. Other senior leaders named in the FY26 annual report: David Mohammed (MD, Australia), Sathish Kumar (MD, UK) and Anjani Kumar (COO, US).",
+   "sources": [
+    "https://www.marksanspharma.com/pdf/marksans-annual-report-2025-26.pdf",
+    "https://www.marksanspharma.com/board-of-directors.html",
+    "https://en.wikipedia.org/wiki/Gracias_Saldanha",
+    "https://www.bloomberg.com/profile/person/16491956"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Zydus Lifesciences",
+   "sector": "Pharma",
+   "style": "Promoter-run",
+   "styleNote": "The Patel family controls Zydus through the Zydus Family Trust (about 75%). Chairman Pankaj Patel is non-executive; his son Dr Sharvil Patel is Managing Director and runs the company, with a deep bench of hired professionals below him.",
+   "people": [
+    {
+     "name": "Dr. Sharvil P. Patel",
+     "role": "Managing Director",
+     "since": "Managing Director since 2017",
+     "family": true,
+     "relation": "Son of the Chairman, Pankaj R. Patel",
+     "stake": "14,775 shares in his own name (FY26 annual report); family, mainly through the Zydus Family Trust, about 75%",
+     "bio": "Dr Sharvil Patel has a bachelor's degree in chemical and pharmaceutical sciences and a doctorate focused on breast cancer research. He has nearly 30 years of leadership experience in the group and has driven its shift to specialty medicines, new molecules and overseas expansion. He is President of the Indian Pharmaceutical Alliance, the lobby group of large Indian drug makers, and Honorary Consul of Belgium. He is also an independent director of Gujarat Mineral Development Corporation. BioSpectrum named him Businessperson of the Year 2025."
+    },
+    {
+     "name": "Ganesh N. Nayak",
+     "role": "Director (Director in employment)",
+     "since": "With the group since 1977",
+     "family": false,
+     "stake": "0.02% (246,278 shares, FY26 annual report)",
+     "bio": "Ganesh Nayak holds a B.Sc. and an MBA from Newport University, and attended the General Management Programme at Harvard Business School. He has been with the Zydus group since 1977, over 48 years in pharma. He has led the group's joint ventures and global alliances and worked on its sales, marketing and M&A. He stopped being a key managerial person in July 2025 but was re-appointed a director in employment for five years to July 2030. He is an independent director of Zydus Wellness."
+    },
+    {
+     "name": "Tushar D. Shroff",
+     "role": "Chief Financial Officer",
+     "since": "September 2025 (joined April 2025)",
+     "family": false,
+     "bio": "Tushar Shroff is a Chartered Accountant and Cost Accountant with over 29 years of experience, 20 of them in pharma. He worked at ABB, Piramal Healthcare and Intas Pharmaceuticals, and at Zydus itself from December 2010 to January 2019. Just before rejoining he was CFO of Sterlite Technologies. He rejoined as President-Finance in April 2025 and became CFO on 1 September 2025, when Nitin Parekh retired."
+    },
+    {
+     "name": "Swati Dalal",
+     "role": "Managing Director, Zydus Healthcare (India formulations)",
+     "since": "June 2025",
+     "family": false,
+     "bio": "Swati Dalal has a pharmacy degree from PKM Kundnani College of Pharmacy and a management degree from JBIMS, Mumbai. She has over 30 years in pharma, starting at Wockhardt Nutrition and moving through Boots, Knoll, Solvay and Abbott. At Abbott she ran Abbott Nutrition and Abbott Primary Care, then was Managing Director of Abbott India until June 2025. She now runs Zydus Healthcare, the subsidiary that holds the Indian branded-medicines business."
+    }
+   ],
+   "changes": "CFO Nitin Parekh retired on 31 August 2025 and now heads special projects; Tushar Shroff took over as CFO. Harish Sadana moved from MD of Zydus Healthcare to President-Corporate Matters. Samir Desai (Biologics) died in August 2025. Mayank Satpal left senior management in March 2026 in a reorganisation. At Zydus Wellness, the head of sales and the CMO resigned in July and September 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_29701_ZYDUSLIFE_2025_2026_A_16334302_10072026135338.pdf",
+    "https://medicaldialogues.in/news/industry/pharma/zydus-lifesciences-ropes-in-tushar-shroff-as-president-finance-147559",
+    "https://www.exchange4media.com/people-movement-news/zydus-healthcare-ltd-appoints-swati-dalal-as-managing-director-and-additional-director-144467.html",
+    "https://www.investywise.com/zydus-lifesciences-senior-management-transition/",
+    "https://simplywall.st/stocks/in/pharmaceuticals-biotech/nse-zyduslife/zydus-lifesciences-shares/management"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Caplin Point Labs",
+   "sector": "Pharma",
+   "style": "Promoter-owned, professionally run",
+   "styleNote": "Founder C. C. Paarthipan is non-executive Chairman. His sons Ashok and Vivek Partheeban became non-executive Vice-Chairmen in November 2025; Vivek had been COO until then. Day-to-day running is by a hired MD, Dr Sridhar Ganesan. The promoter group owns about 70.6%.",
+   "people": [
+    {
+     "name": "Dr. Sridhar Ganesan",
+     "role": "Managing Director",
+     "since": "On the board since 2014; re-appointed MD to August 2028",
+     "family": false,
+     "stake": "0.13% (98,750 shares, FY26 annual report)",
+     "bio": "Dr Sridhar Ganesan, 71, holds an MS in Pharmaceuticals and a doctorate in homeopathic medicine, and has more than 42 years in the pharma industry. He has worked in profit-centre management, global marketing, new plant projects, production, product development, quality assurance and factory management. Before Caplin he held several international roles, with a focus on South Asia, the Middle East and Africa. India's pharma export council (Pharmexcil) has named him an 'Honorary Expert'. He joined the board in February 2014 and was re-appointed MD for two years from 25 August 2026."
+    },
+    {
+     "name": "D. Muralidharan",
+     "role": "Whole-time Director & Chief Financial Officer",
+     "since": "CFO since February 2016; whole-time director since August 2026",
+     "family": false,
+     "stake": "0.03% (20,000 shares, FY26 annual report)",
+     "bio": "D. Muralidharan, 70, is a commerce graduate, a qualified company secretary (ACS) and a cost and management accountant (CMA). He has over four decades in finance; his job before Caplin was at Merck Specialities. He has been CFO since 19 February 2016 and sits on the risk management committee. The board made him a whole-time director from 12 August 2026 for two years; shareholders voted on this at the September 2026 AGM."
+    }
+   ],
+   "changes": "Vivek Partheeban gave up the COO role on 5 November 2025 when he and his brother Ashok became non-executive Vice-Chairmen. CFO D. Muralidharan joined the board as whole-time director on 12 August 2026. Three senior managers left in April–July 2025: the chief transformation & digital officer, the SVP of formulation R&D and the VP of corporate affairs.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31201_CAPLIPOINT_2025_2026_A_18753031_03092026123603.pdf",
+    "https://www.caplinpoint.net/index.php/management-team/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Emcure Pharma",
+   "sector": "Pharma",
+   "style": "Promoter-run",
+   "styleNote": "Founder Satish Mehta is MD & CEO and becomes Chairman from the 21 September 2026 AGM. His daughter Namita Thapar and son Samit Mehta are whole-time directors, and Namita's husband Vikas Thapar heads corporate development. Co-promoter Sunil Mehta (not related, per the annual report) is also a whole-time director.",
+   "people": [
+    {
+     "name": "Satish Mehta",
+     "role": "Managing Director & CEO; Chairman from the September 2026 AGM",
+     "since": "1981 (founder)",
+     "family": true,
+     "relation": "Founder; father of Namita Thapar and Samit Mehta",
+     "stake": "39.77% (FY26 annual report); with Samit and Namita 49.6%",
+     "bio": "Satish Mehta founded Emcure in 1981 and has run it ever since. He holds a postgraduate degree in chemistry from Pune University and a PGDM from IIM Ahmedabad. Under him Emcure grew into a company selling in more than 80 countries, with its own plants, research and biotech arm (Gennova). He has also served on government and policy advisory committees. The board made him Chairman from 21 September 2026, when Berjis Desai stepped down; he keeps the MD & CEO roles."
+    },
+    {
+     "name": "Namita Thapar",
+     "role": "Whole-time Director",
+     "since": "Whole-time director (re-appointed June 2024)",
+     "family": true,
+     "relation": "Daughter of Satish Mehta; wife of Vikas Thapar",
+     "stake": "2.67% (FY26 annual report)",
+     "bio": "Namita Thapar is a Chartered Accountant with an MBA from Duke University's Fuqua School of Business. Before Emcure she worked at Guidant Corporation in the US. At Emcure she was CFO, then head of the India business, and now leads the consumer business. She is widely known as an investor on the TV show Shark Tank India and runs a women's-health awareness platform. She was on the Economic Times '40 Under Forty' list."
+    },
+    {
+     "name": "Samit Mehta",
+     "role": "Whole-time Director & Chief Operating Officer",
+     "since": "Whole-time director; COO from 2026",
+     "family": true,
+     "relation": "Son of Satish Mehta",
+     "stake": "7.14% (FY26 annual report)",
+     "bio": "Samit Mehta holds an MBA from The Wharton School and graduate and postgraduate commerce degrees from Pune University. Before Emcure he was a strategy consultant at Ernst & Young. He oversees operations and drove Emcure's expansion into regulated markets such as the US, Europe and Canada, as well as new R&D platforms. He was named COO after March 2026. He is also a key managerial person at the vaccine and biologics subsidiary Gennova and draws pay from it."
+    },
+    {
+     "name": "Sunil Mehta",
+     "role": "Whole-time Director",
+     "since": "With Emcure since 1983",
+     "family": true,
+     "relation": "Co-promoter; not related to Satish Mehta per the annual report; brother of Sanjay Mehta (President, Emerging Markets)",
+     "stake": "1.50% in his own name (FY26 annual report); a further 7.65% held with his wife as trustees of Unity Trust",
+     "bio": "Sunil Mehta has been with Emcure since 1983. He holds a commerce degree from Pune University and a postgraduate business qualification from IMDR, Pune. He built Emcure's plants and runs manufacturing operations, automation, environment and safety. He also leads the company's CSR and sustainability work. His brother Sanjay Mehta, with Emcure since 1989, runs the emerging-markets business."
+    },
+    {
+     "name": "Dr. Mukund Gurjar",
+     "role": "Whole-time Director & Chief Scientific Officer",
+     "since": "2001",
+     "family": false,
+     "stake": "0.16% (2,95,716 shares, FY26 AGM notice)",
+     "bio": "Dr Mukund Gurjar, 73, holds two PhDs in chemistry and has over 250 publications and 180 patents. Before joining Emcure in July 2001 he was Deputy Director and Head of the Chemistry Division at CSIR-National Chemical Laboratory, Pune. He built Emcure's complex-chemistry portfolio, including chiral drugs and cancer, heart and HIV medicines. His term runs one year at a time; the 2026 AGM was asked to re-appoint him from 28 August 2026."
+    },
+    {
+     "name": "Tajuddin Shaikh",
+     "role": "Chief Financial Officer",
+     "since": "With Emcure for nearly two decades",
+     "family": false,
+     "bio": "Tajuddin Shaikh is a Chartered Accountant and Cost Accountant, with executive education from IIM Ahmedabad. He has been at Emcure for nearly two decades and led several strategic projects before becoming CFO."
+    },
+    {
+     "name": "Vikas Thapar",
+     "role": "President – Corporate Development, Strategy & Finance",
+     "since": "Senior management",
+     "family": true,
+     "relation": "Husband of Namita Thapar; son-in-law of Satish Mehta",
+     "bio": "Vikas Thapar has more than 20 years in business development, strategy and finance. He has led Emcure's international expansion, acquisitions and fundraising, especially in Europe and Canada. Before Emcure he worked at eBay/PayPal and Agilent Technologies in the US. He holds a bachelor's degree in management science from the University of California, San Diego and an MBA from USC Marshall."
+    }
+   ],
+   "changes": "Chairman Berjis Desai did not seek re-appointment and left at the 21 September 2026 AGM, where Satish Mehta became Chairman. R.S. Vasan (ex-Sun Pharma) joined as President – India Business in July 2025 after Anil Kothiyal resigned in June 2025. The company secretary changed: Chetan Sharma left in November 2025 and Amruta Yangalwar joined in February 2026.",
+   "sources": [
+    "https://www.emcure.com/wp-content/uploads/2026/08/Annual-Report-FY-2025-26.pdf",
+    "https://www.bseindia.com/xml-data/corpfiling/AttachHis/0cc76dbe-0609-4d8c-b2ea-ef15affd0b7e.pdf",
+    "https://medicaldialogues.in/news/industry/pharma/emcure-pharma-names-satish-mehta-chairman-appoints-raghu-kumar-as-independent-director-176833",
+    "https://en.wikipedia.org/wiki/Namita_Thapar"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Alivus Life Sciences",
+   "sector": "Pharma API",
+   "style": "Promoter-owned, professionally run",
+   "styleNote": "Nirma Ltd bought control from Glenmark Pharmaceuticals and owns 74.9%. Hiren Patel, Managing Director of Nirma, is the non-executive chairman. A hired team runs the business: Dr Yasir Rawjee (MD & CEO), Vinod Naik (Executive Director, operations) and Tushar Mistry (CFO). No family member works in management.",
+   "people": [
+    {
+     "name": "Dr Yasir Rawjee",
+     "role": "Managing Director & CEO",
+     "since": "2019",
+     "family": false,
+     "bio": "Studied at St. Xavier's College and the University Department of Chemical Technology (both University of Bombay), and holds a PhD from Texas A&M University. He has over 30 years in the industry. Before this he headed global API operations at Mylan Laboratories, was Senior Vice President at Matrix Laboratories, and worked at GlaxoSmithKline in the US. He has led the API business as MD & CEO since August 2019, through its 2021 listing as Glenmark Life Sciences and its sale to Nirma."
+    },
+    {
+     "name": "Vinod Naik",
+     "role": "Executive Director & Head, Technical Operations",
+     "since": "2020",
+     "family": false,
+     "bio": "Holds bachelor's and master's degrees from Karnatak University and an MBA in finance from the National Institute of Management. He previously ran manufacturing operations at Sun Pharmaceutical, Cipla and Micro Labs. He joined in March 2020 and oversees the plants, production and supply chain. He sits on the board as a whole-time director."
+    },
+    {
+     "name": "Tushar Mistry",
+     "role": "Chief Financial Officer & Senior Vice President",
+     "since": "2022",
+     "family": false,
+     "bio": "A Chartered Accountant and cost accountant (ICWA) with over 24 years in API and formulation businesses, covering planning, M&A and fund-raising. He was CFO of Sequent Scientific before joining in June 2022, and earlier worked at Wockhardt. He leads accounts, finance, investor relations and secretarial work."
+    },
+    {
+     "name": "Dr Palle V R Acharyulu",
+     "role": "Executive Vice President, Research & Development",
+     "since": "2020",
+     "family": false,
+     "bio": "Holds a master's and a PhD in chemistry from the University of Hyderabad and did a senior management programme at IIM Calcutta. He was a Director at Dr Reddy's and held senior roles at Biocon and Sun Pharmaceutical. He has led R&D, project management and patents since July 2020."
+    },
+    {
+     "name": "Navin Kumar Agrawal",
+     "role": "Senior Vice President, Quality",
+     "family": false,
+     "bio": "Has about 30 years in pharma quality and compliance and holds an M.Sc. in inorganic chemistry from Barkatullah University. He was Associate Vice President at Sun Pharmaceutical and earlier worked at Aurobindo Pharma and Orchid Chemicals & Pharmaceuticals. He leads global quality and compliance for the API plants."
+    },
+    {
+     "name": "Mathew George",
+     "role": "Senior Vice President, Regulatory Affairs",
+     "since": "2019",
+     "family": false,
+     "bio": "Holds a chemistry degree from Loyola College, Chennai, and a postgraduate degree in inorganic chemistry from IIT Bombay. He began his career at Shasun Chemicals in 1995 and later worked at Cadila, Marksans, Ranbaxy and Mylan. He has handled drug master file filings and regulatory dossiers since October 2019."
+    }
+   ],
+   "changes": "No executive changes in FY26 or since. The FY26 annual report names the same MD & CEO, Executive Director and CFO; Rudalf Corriea is Company Secretary.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_30294_ALIVUS_2025_2026_A_18098721_11082026175751.pdf",
+    "https://www.alivus.com/about-us/our-leadership-team/",
+    "https://www.alivus.com/about-us/our-board-of-directors/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Concord Biotech",
+   "sector": "Pharma API",
+   "style": "Promoter-run",
+   "styleNote": "Founder Sudhir Vaid is Chairman & MD and his son Ankur Vaid is Joint MD & CEO. The Vaid family (Sudhir, his wife Manju, Ankur, Ankur's wife Megha, daughter Sonal Kumra) and the family firm Sudman Consultants own 44.1%. The RARE trusts (the late Rakesh Jhunjhunwala's family) have a nominee, Rajiv Agarwal, on the board as a non-executive director.",
+   "people": [
+    {
+     "name": "Sudhir Vaid",
+     "role": "Chairman & Managing Director",
+     "since": "2000 (founder)",
+     "family": true,
+     "relation": "Founder; father of Joint MD Ankur Vaid",
+     "stake": "28.84% (FY26 annual report); family and family firm together 44.1%",
+     "bio": "Graduated in microbiology from Punjab University in 1974 and has about 50 years in biopharmaceuticals. He was Director of Biotechnology at Ranbaxy Laboratories before founding Concord in 2000, which he built into a large maker of fermentation-based APIs such as immunosuppressants. He is a member of the Gujarat Biotechnology Research Centre and chairs the advisory council of Gujarat Biotechnology University."
+    },
+    {
+     "name": "Ankur Vaid",
+     "role": "Joint Managing Director & CEO",
+     "since": "2009 (board)",
+     "family": true,
+     "relation": "Son of the Chairman Sudhir Vaid; husband of Megha Vaid; brother of Sonal Kumra",
+     "stake": "0.56% (FY26 annual report)",
+     "bio": "Holds a B.Tech in chemical engineering from Rashtrasant Tukadoji Maharaj Nagpur University and an MBA from Rochester Institute of Technology. He has about 19 years in pharma and has been on the board since December 2009. He oversees business development, R&D, manufacturing and strategy, and leads the push into formulations and new fermentation products. His pay in FY26 was about ₹3.9cr."
+    },
+    {
+     "name": "Raviraj Karia",
+     "role": "Chief Financial Officer",
+     "since": "Dec 2025",
+     "family": false,
+     "bio": "A Chartered Accountant with over 23 years in pharma, healthcare, clinical research, logistics and private equity. His past employers include Intas Pharmaceuticals, Claris Lifesciences, Lambda Therapeutics, Shalby Hospitals, Sakar Healthcare, Gati and GVFL. He took over as CFO in December 2025."
+    }
+   ],
+   "changes": "CFO Lalit Sethi retired early for personal reasons (effective 5 Jan 2026); Raviraj Karia became CFO from 18 Dec 2025. Company Secretary Hina Patel resigned in Jan 2026; Paritosh Trivedi replaced her from 11 Feb 2026. Ekta Sanghi Gupta joined as an independent director in June 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_29617_CONCORDBIO_2025_2026_A_23221058_07072026162000.pdf",
+    "https://concordbiotech.com/board-of-directors/",
+    "https://informistmedia.com/EquityWire/41075/concord-biotech-appoints-raviraj-karia-as-cfo-in-place-of-lalit-sethi"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Supriya Lifescience",
+   "sector": "Pharma API",
+   "style": "Promoter-run",
+   "styleNote": "Founder Dr Satish Wagh is Executive Chairman. His daughters run the company day to day: Dr Saloni Wagh is MD and Shivani Wagh is Joint MD; their mother Smita Wagh is a whole-time director. The family owns 68.3%, almost all in Satish Wagh's name. There has been no separate CEO since Rajeev Kumar Jain retired in June 2024.",
+   "people": [
+    {
+     "name": "Dr Satish Wagh",
+     "role": "Executive Chairman & Whole-time Director",
+     "since": "1987 (founder)",
+     "family": true,
+     "relation": "Founder; father of Saloni and Shivani Wagh",
+     "stake": "67.64% (FY26 annual report); family together 68.3%",
+     "bio": "Holds a science degree from the University of Mumbai and an honorary doctorate in entrepreneurship from National American University. He has over 35 years in pharma. He started Supriya as a partnership firm in 1987 and built it into a maker of about 40 niche APIs such as anaesthetics, vitamins and antihistamines, listing it in 2021. He handed the MD role to his daughter Saloni in August 2024 and stayed on as Executive Chairman. He also chairs the common effluent treatment plant at MIDC Lote, where the main plant sits."
+    },
+    {
+     "name": "Dr Saloni Wagh",
+     "role": "Managing Director",
+     "since": "Aug 2024 (MD); director since 2019",
+     "family": true,
+     "relation": "Daughter of Satish and Smita Wagh; sister of Shivani Wagh",
+     "stake": "0.13% (FY26 annual report)",
+     "bio": "Holds a science degree from Sathaye College and a master's from the Institute of Science (both University of Mumbai), and a PhD in chemistry from Pacific University, Udaipur. She joined the company in 2014, became a whole-time director in July 2019 and Managing Director in August 2024. She looks after exports, marketing and business development and the overall running of the company."
+    },
+    {
+     "name": "Shivani Wagh",
+     "role": "Joint Managing Director",
+     "since": "Aug 2024 (Joint MD); director since 2019",
+     "family": true,
+     "relation": "Daughter of Satish and Smita Wagh; sister of Saloni Wagh",
+     "stake": "0.13% (FY26 annual report)",
+     "bio": "Holds a master's in management studies from M.L. Dahanukar College (University of Mumbai) and a master's in international business management from Manchester Business School. She joined in 2014, became a whole-time director in July 2019 and Joint MD in August 2024. She handles exports, mainly to Europe, plus marketing and business development."
+    },
+    {
+     "name": "Smita Wagh",
+     "role": "Whole-time Director",
+     "since": "2008 (director since incorporation)",
+     "family": true,
+     "relation": "Mother of Saloni and Shivani Wagh",
+     "stake": "0.40% (FY26 annual report)",
+     "bio": "Holds bachelor's degrees in arts and education from the University of Mumbai. She has been a director since the company was incorporated in 2008 and serves as a whole-time director."
+    },
+    {
+     "name": "Balasaheb Sawant",
+     "role": "Whole-time Director",
+     "family": false,
+     "stake": "nil (FY26 annual report)",
+     "bio": "Holds an M.Sc. from Shivaji University, Kolhapur. He has over 29 years in API production planning, materials management and process operations, and sits on the board as a whole-time director responsible for plant operations."
+    },
+    {
+     "name": "Krishna Raghunathan",
+     "role": "Chief Financial Officer",
+     "since": "Jan 2023",
+     "family": false,
+     "bio": "A Chartered Accountant with a B.Sc. in zoology from Madras University and over 23 years in finance. He spent about five years as Vice President of Finance, Treasury and Investor Relations at a listed drug maker, and has worked at Granules India, Dr Reddy's Laboratories and Aptar Group. He became CFO in January 2023."
+    },
+    {
+     "name": "Dr Shekhar Bhirud",
+     "role": "President, Business Development, Strategy and R&D",
+     "family": false,
+     "bio": "Named by the company as senior management, heading business development, strategy and R&D. The annual report gives no further career details."
+    }
+   ],
+   "changes": "No change in executives in FY26. Two independent directors (Dileep Kumar Jain and Dinesh Modi) left on 24 Mar 2026 at the end of their five-year terms. CEO Rajeev Kumar Jain retired in June 2024 and was not replaced.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31035_SUPRIYA_2025_2026_A_13601073_01092026195017.pdf",
+    "https://www.supriyalifescience.com/board-of-directors.php",
+    "https://www.indianpharmapost.com/people/supriya-lifescience-appoints-krishna-raghunathan-as-cfo-13643",
+    "https://in.marketscreener.com/quote/stock/SUPRIYA-LIFESCIENCE-LIMIT-131203421/news/Supriya-Lifescience-Limited-Announces-Retirement-of-Rajeev-Kumar-Jain-as-Chief-Executive-Officer-47021146/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Eris Lifesciences",
+   "sector": "Pharma",
+   "style": "Promoter-run",
+   "styleNote": "Founder Amit Bakshi is Chairman and MD and owns 42%. Two fellow founders, Inderjeet Singh Negi and Kaushal Shah, are executive directors. The annual report says none of the directors are related to each other. Promoters together own 54%.",
+   "people": [
+    {
+     "name": "Amit Bakshi",
+     "role": "Chairman & Managing Director",
+     "since": "2007 (founder)",
+     "family": true,
+     "relation": "Founder and main promoter",
+     "stake": "42.12% (FY26 annual report); promoter group together 54.1%",
+     "bio": "Amit Bakshi founded Eris in 2007 in Ahmedabad and has been on the board since then. Before that he spent more than a decade in pharma sales and marketing, most recently at Intas Pharmaceuticals, which he left along with three colleagues to start Eris. He set up Eris as a branded chronic-therapy company selling cardiac and diabetes medicines to Indian doctors, and has since grown it through acquisitions, including the Biocon branded formulations, Swiss Parenterals and insulin businesses. EY named him Entrepreneur of the Year in 2013. He was re-appointed MD for five years from April 2026 to March 2031. His son, Parv Bakshi, works in the company in a non-board role."
+    },
+    {
+     "name": "Inderjeet Singh Negi",
+     "role": "Executive (Whole-time) Director",
+     "since": "2007 (co-founder)",
+     "family": true,
+     "relation": "Co-founder and promoter; not related to the other directors",
+     "stake": "4.29% (FY26 annual report)",
+     "bio": "Inderjeet Singh Negi has been on the Eris board since the company started and runs supply chain and sales administration. He previously worked at several drug companies, including Sun Pharma and Intas Pharma, and has more than 22 years of experience. He is a science graduate from HNB Garhwal University. His son Sarthak Negi works in the company in a non-board role."
+    },
+    {
+     "name": "Kaushal Kamlesh Shah",
+     "role": "Executive (Whole-time) Director",
+     "since": "2007 (co-founder)",
+     "family": true,
+     "relation": "Co-founder and promoter; not related to the other directors",
+     "stake": "3.23% (FY26 annual report)",
+     "bio": "Kaushal Shah has been with Eris since it was founded and is responsible for manufacturing, strategic sourcing and distribution. He has about 27 years of experience in the pharmaceutical industry. He holds a commerce degree from Gujarat University and a postgraduate diploma in management from the Som-Lalit Institute of Management Studies. He retires by rotation and is up for re-appointment at the September 2026 AGM."
+    },
+    {
+     "name": "Sachin Shah",
+     "role": "Chief Financial Officer",
+     "since": "2012",
+     "family": false,
+     "bio": "Sachin Shah has been Eris's Chief Financial Officer since December 2012, before the company's 2017 listing. He is named as senior management and a key managerial person in the FY26 annual report and presents the numbers on the quarterly calls. He also sits on the board's risk management committee."
+    },
+    {
+     "name": "Milind Talegaonkar",
+     "role": "Company Secretary & Compliance Officer",
+     "family": false,
+     "bio": "Milind Talegaonkar is Eris's Company Secretary and Compliance Officer and is listed as senior management in the FY26 annual report. He handles the company's filings with the stock exchanges and board matters."
+    }
+   ],
+   "changes": "Executive Director and COO Krishnakumar Vaidyanathan (ex-EY corporate finance partner, IIM Calcutta MBA) resigned in September 2026, effective 30 Sep 2026, to pursue opportunities outside the company; no successor named yet. Independent director Rajeev Dalal retired in Dec 2025 and Vineet Varma joined in Mar 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31142_ERIS_2025_2026_A_18207532_02092026185621.pdf",
+    "https://www.investywise.com/eris-lifesciences-resigns-executive-director-coo",
+    "https://www.businesstoday.in/magazine/cover-story/story/india-best-emrging-companies-2013-eris-lifesciences-130313-2013-09-28",
+    "https://trendlyne.com/equity/ceo-salary-history/D-TL154999/sachin-shah/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Natco Pharma",
+   "sector": "Pharma",
+   "style": "Promoter-run",
+   "styleNote": "Founder V.C. Nannapaneni is Chairman and MD, and his son Rajeev is Vice Chairman and CEO. Two long-serving employees are executive directors. The founder owns 15.7% directly; the promoter group, including family investment companies, owns 49.4%.",
+   "people": [
+    {
+     "name": "V.C. Nannapaneni",
+     "role": "Chairman & Managing Director",
+     "since": "1981 (founder)",
+     "family": true,
+     "relation": "Founder; father of Rajeev Nannapaneni",
+     "stake": "15.66% (FY26 annual report); promoter group together 49.4%",
+     "bio": "Venkaiah Chowdary Nannapaneni founded Natco in Hyderabad in 1981. He has a postgraduate pharmacy degree from Andhra University and a master's in pharmaceutical administration from Brooklyn College of Pharmacy in New York. He spent about 13 years in the US working in the R&D departments of drug companies before returning to India to start Natco. He built it into a company known for first-to-market generics, especially in cancer. He is also managing trustee of the NATCO Trust, the group's charity. Like the other executive directors, he is now re-appointed one year at a time (latest term from April 2026)."
+    },
+    {
+     "name": "Rajeev Nannapaneni",
+     "role": "Vice Chairman & Chief Executive Officer",
+     "since": "CEO since April 2024; long-time director",
+     "family": true,
+     "relation": "Son of the Chairman",
+     "stake": "0.60% (FY26 annual report)",
+     "bio": "Rajeev Nannapaneni is the founder's son and runs the company day to day as Vice Chairman and CEO. He has an undergraduate degree from Tufts University in the US. He worked at Merrill Lynch and at Natco Systems LLC before joining Natco, where he headed new business and new product development for India and international markets."
+    },
+    {
+     "name": "P.S.R.K. Prasad",
+     "role": "Executive Director & Executive Vice President (Corporate Engineering Services)",
+     "since": "Long-serving; director re-appointed from April 2026",
+     "family": false,
+     "bio": "P.S.R.K. Prasad runs Natco's corporate engineering: building and maintaining its plants. He has a mechanical engineering degree from Andhra University (1981). Before Natco he worked at the Ahmedabad Textile Industries Research Association, Coromandel Fertilizers, Stiles India and Saudi Ceramic Co. in Riyadh."
+    },
+    {
+     "name": "Dr. D. Linga Rao",
+     "role": "Executive Director & President (Technical Affairs)",
+     "since": "Long-serving; director re-appointed from April 2026",
+     "family": false,
+     "bio": "Dr. Linga Rao heads technical affairs, covering R&D, quality control, quality assurance and regulatory work. He has an M.Sc. in applied chemistry and a PhD in chemistry from JNTU Hyderabad. Before Natco he worked at the government-owned Indian Drugs & Pharmaceuticals Ltd (IDPL) and at Novochem Laboratories. He has spent more than two decades at Natco."
+    },
+    {
+     "name": "Amit Parekh",
+     "role": "Chief Financial Officer",
+     "since": "February 2026",
+     "family": false,
+     "bio": "Amit Parekh joined Natco in late 2025 as Executive Vice President, Finance and Accounts, and became CFO on 13 February 2026 as part of planned succession. He was earlier at Dr. Reddy's Laboratories, where he was head of finance for its API and pharmaceutical services (PSAI) business and led digital change in the finance function. He has more than 23 years of finance experience across healthcare, pharma, mining and engineering, telecom and chemicals, including M&A and drug in-licensing and out-licensing deals."
+    }
+   ],
+   "changes": "CFO S.V.V.N. Appa Rao retired on 12 Feb 2026; Amit Parekh took over on 13 Feb 2026. Kalakuntla Srinivas Rao joined as EVP, Pharma Division, in Feb 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_31441_NATCOPHARM_2025_2026_A_20000089_04092026200058.pdf",
+    "https://boardstewardship.com/amit-parekh-appointed-as-cfo-of-natco-pharma-kalakuntla-s-rao-appointed-as-evp-of-pharma-division/",
+    "https://medicaldialogues.in/news/industry/pharma/natco-pharma-appoints-amit-parekh-as-new-executive-vice-president-finance-and-accounts-159831",
+    "https://www.bloomberg.com/profile/person/15763191",
+    "https://www.bizzbuzz.news/eco-buzz/how-vc-nannapaneni-built-rs15103-cr-pharma-giant-with-just-33-lakh-1119060",
+    "https://biography.omicsonline.org/india/natco-pharma/dr-linga-rao-161129"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Strides Pharma",
+   "sector": "Pharma",
+   "style": "Promoter-owned, professionally run",
+   "styleNote": "Founder Arun Kumar stepped back to non-executive Chairman in April 2025, and his son Aditya moved from executive director to a non-executive seat on 1 June 2026. The company is run by a hired MD and Group CEO, Badree Komandur. Arun Kumar and relatives own about 14.7%; the promoter group owns 27.9%.",
+   "people": [
+    {
+     "name": "Badree Komandur",
+     "role": "Managing Director & Group CEO",
+     "since": "June 2024 (at Strides since 2010)",
+     "family": false,
+     "relation": "Professional; not related to the promoters",
+     "bio": "Badree Komandur has run Strides as MD and Group CEO since June 2024, for a three-year term. He has a commerce degree from the University of Madras and is a chartered accountant, company secretary and cost accountant, with a CHRO programme from Wharton (2023). He spent over 15 years in IT and engineering companies before joining Strides in February 2010, where he led finance, tax, treasury, M&A and investor relations and was Executive Director (Finance) from 2016."
+    },
+    {
+     "name": "Ramaraju P.V.S. (Venkata Seetharama Raju Pakalapati)",
+     "role": "Executive Director (formerly Chief Operating Officer)",
+     "since": "Executive Director since June 2026; COO since March 2024; at Strides since 2007",
+     "family": false,
+     "relation": "Not related to any director",
+     "stake": "0.048% (AGM notice, 2026)",
+     "bio": "Ramaraju, known as Ram, joined the board as Executive Director on 1 June 2026 after two years as Chief Operating Officer. He has a master's in pharmaceutical chemistry from BITS Pilani. He worked at Dr. Reddy's Laboratories, USV and Unichem Laboratories before joining the Strides group in 2007, where he held quality, manufacturing and operations roles at Strides and Stelis Biopharma (now OneSource). He runs global operations: manufacturing, supply chain and procurement."
+    },
+    {
+     "name": "Vikesh Kumar",
+     "role": "Group Chief Financial Officer",
+     "since": "At Strides since 2009",
+     "family": false,
+     "bio": "Vikesh Kumar is Group CFO and a key managerial person. He has a postgraduate diploma in management from the S.P. Jain Institute of Management & Research in Mumbai and completed Wharton's Global C-Suite programme. He joined Strides in 2009 and built its global business finance function. He won CII's Leading CFO award for 'Excellence in Turnaround' in 2024."
+    },
+    {
+     "name": "Peter Hardwick",
+     "role": "CEO, North America",
+     "since": "FY26",
+     "family": false,
+     "bio": "Peter Hardwick runs Strides' largest market, the US, and was hired during FY26. He has a science degree from Saint Mary's University in Halifax, Canada. He spent many years at the Canadian generics maker Apotex, including as President and CEO of its US generics arm and as Chief Commercial Officer of its global generics division until August 2023. He has more than 30 years of senior experience in sales, marketing and portfolio management."
+    },
+    {
+     "name": "Amol Mehta",
+     "role": "CEO, Other Regulated Markets",
+     "since": "2022 (rejoined)",
+     "family": false,
+     "bio": "Amol Mehta runs the non-US regulated markets (UK, Nordics, South Africa, Australia and others), Strides' fastest-growing region. He is a chemical engineer from MS University and has an MBA from the Symbiosis Institute of International Business, with executive courses at IIM Ahmedabad and the LSE. He worked at Reliance (Dorf Ketal), Nicholas Piramal and Emcure and returned to Strides in 2022."
+    },
+    {
+     "name": "Manjula Ramamurthy",
+     "role": "Company Secretary & Compliance Officer",
+     "family": false,
+     "bio": "Manjula Ramamurthy is Company Secretary and Compliance Officer and a key managerial person, as listed in the FY26 annual report."
+    }
+   ],
+   "changes": "Aditya Arun Kumar (founder's son) stepped down as Executive Director, Business Development on 31 May 2026 and became a non-executive director from 1 June 2026, in line with the promoters' stated aim to professionalise management. COO Ramaraju P.V.S. became Executive Director on 1 June 2026. Group CHRO Surabhi Loshali left in January 2026.",
+   "sources": [
+    "https://nsearchives.nseindia.com/annual_reports/AR_29928_STAR_2025_2026_A_9784074_21072026151943.pdf",
+    "https://www.strides.com/about-us/leadership-team"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Gland Pharma",
+   "sector": "Pharma CDMO",
+   "style": "Promoter-owned, professionally run",
+   "styleNote": "China's Fosun Pharma controls the company through Fosun Pharma Industrial Pte, which owns 51.8% (June 2026). Fosun sits on the board only through non-executive directors; the business is run by hired managers, led by Executive Chairman Srinivas Sadu. The founding Raju/Penmetsa family no longer runs it.",
+   "people": [
+    {
+     "name": "Srinivas Sadu",
+     "role": "Executive Chairman",
+     "since": "Executive Chairman since Jan 2025; joined 2000",
+     "family": false,
+     "bio": "Holds a master's in industrial pharmacy from Long Island University (New York), an MBA from the University of Maryland, and a postgraduate certificate in finance and management from the London School of Business and Finance. Before Gland he was a product manager and business lead at Natco Pharma and a product manager in consumer health at SmithKline Beecham. He joined Gland in 2000, became Chief Operating Officer in 2011 and Managing Director & CEO in 2019, and moved up to Executive Chairman in January 2025. He has worked on business development, manufacturing, supply chain and strategy for over two decades, and is the long-serving face of the company to investors."
+    },
+    {
+     "name": "Deepak Sapra",
+     "role": "Chief Executive Officer (joins 16 Nov 2026)",
+     "since": "Appointed Aug 2026; joins 16 Nov 2026",
+     "family": false,
+     "bio": "A mechanical engineer from the Indian Railways Institute of Mechanical and Electrical Engineering, Jamalpur, with a management degree from IIM Bangalore; he was a Chevening Scholar at the University of Bradford and a Fulbright Fellow at Carnegie Mellon. He has about 27 years of executive experience, over 23 of them in pharma. Most recently he was CEO of API and Services at Dr. Reddy's Laboratories, running a business-to-business unit spanning generics, contract manufacturing (CDMO) and active ingredients, and sat on the board of Aurigene Pharma Services. He fills the CEO seat left empty since the previous CEO left at the end of April 2026."
+    },
+    {
+     "name": "Ravi Shekhar Mitra",
+     "role": "Chief Financial Officer",
+     "since": "2019",
+     "family": false,
+     "bio": "A qualified chartered accountant and company secretary who also completed the General Management Program at the Wharton School. He has more than 20 years of experience in financial management, planning, strategy and investor relations in pharma and related industries. He joined Gland as CFO in 2019, a year before its 2020 stock-market listing, and has stayed in the role since."
+    }
+   ],
+   "changes": "CEO Shyamakant Giri resigned in Feb 2026 and left on 30 Apr 2026; Deepak Sapra (ex-Dr. Reddy's) was named CEO in Aug 2026 and joins on 16 Nov 2026. COO Satnam Singh Loomba retired on 31 Mar 2026.",
+   "sources": [
+    "https://glandpharma.com/about",
+    "https://www.pharmabiz.com/NewsDetails.aspx?aid=187997&sid=2",
+    "https://www.investywise.com/gland-pharma-limited-ceo-resignation-announcement/",
+    "https://glandpharma.com/images/SuperannuationofSatnamSingh.pdf",
+    "https://www.screener.in/company/GLAND/consolidated/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Windlas Biotech",
+   "sector": "Pharma CDMO",
+   "style": "Promoter-run",
+   "styleNote": "A family business: founder Ashok Kumar Windlass is a whole-time director and his sons Hitesh (MD) and Manoj (Joint MD) run the company, alongside a hired CEO & CFO, Komal Gupta. Hitesh's wife Prachi Jain Windlass is a non-executive director. The board chairman, Vivek Dhariwal, is independent. Promoters own 63.3% (June 2026), mostly through the AKW WBL Family Private Trust (40.6%).",
+   "people": [
+    {
+     "name": "Hitesh Windlass",
+     "role": "Managing Director",
+     "since": "Re-appointed MD to Apr 2030",
+     "family": true,
+     "relation": "Son of founder Ashok Kumar Windlass; brother of Joint MD Manoj Kumar Windlass; husband of director Prachi Jain Windlass",
+     "stake": "Under 0.01% directly (June 2026 shareholding pattern); family and family trust together 63.3%",
+     "bio": "Worked as a process engineer at Intel Corporation in the US before joining the family business. He has about 18 years of management experience at Windlas. He set up the domestic trade-generics, over-the-counter brands and export businesses, and drives technical operations, quality, manufacturing and financial strategy. The board re-appointed him MD from 30 April 2025 for five years."
+    },
+    {
+     "name": "Manoj Kumar Windlass",
+     "role": "Joint Managing Director",
+     "since": "Re-appointed Joint MD to Apr 2030",
+     "family": true,
+     "relation": "Son of founder Ashok Kumar Windlass; brother of MD Hitesh Windlass",
+     "stake": "Under 0.01% directly (June 2026 shareholding pattern); family and family trust together 63.3%",
+     "bio": "Has over 20 years of experience in product development, operations, procurement and portfolio management. He set up the contract development and manufacturing (CDMO) services and products division, which is the company's main business. The board re-appointed him Joint MD from 30 April 2025 for five years."
+    },
+    {
+     "name": "Ashok Kumar Windlass",
+     "role": "Whole-time Director",
+     "since": "Founder; re-appointed from May 2026",
+     "family": true,
+     "relation": "Founder; father of Hitesh and Manoj Kumar Windlass",
+     "stake": "21.3% (June 2026 shareholding pattern); family and family trust together 63.3%",
+     "bio": "The founder and promoter of the company. He oversees administration, legal matters and engineering. He is a former chairman of the Confederation of Indian Industry's Uttarakhand State Council and received the Uttarakhand Ratan award in 2018. He is also a director of group companies Windlas Exports and Ashok Vimla Trusteeship Services, the trustee of the family trust that holds the largest block of shares. Shareholders approved his re-appointment as whole-time director from 3 May 2026."
+    },
+    {
+     "name": "Komal Gupta",
+     "role": "Chief Executive Officer & Chief Financial Officer",
+     "since": "CEO since Feb 2023; earlier CFO",
+     "family": false,
+     "bio": "A chartered accountant, company secretary and cost accountant with nearly 20 years in strategy, finance, operations and supply chain. Before Windlas she worked at the Anand Automotive group (Perfect Circle India, Anand Automotive Systems) and at DSM Sinochem Pharmaceuticals India. She joined Windlas as CFO and was promoted to CEO in February 2023 after more than seven years with the company, keeping the CFO job as well. She was named CII Young CFO of the Year in 2023 and is on the CFO100 Roll of Honour for 2025."
+    },
+    {
+     "name": "Pawan Kumar Sharma",
+     "role": "Executive Director",
+     "family": false,
+     "bio": "Has more than 25 years of experience in the pharma industry. As executive director he manages the company's legal, commercial and administrative work. He holds no directorship or full-time role in any other company."
+    }
+   ],
+   "changes": "No executive changes since the annual report. Komal Gupta has held both the CEO and CFO jobs since Feb 2023; the company said then it would hire a separate CFO, but has not named one.",
+   "sources": [
+    "https://windlas.com/management-team-information/",
+    "https://www.indianpharmapost.com/people/windlas-biotech-appoints-komal-gupta-as-ceo-13699",
+    "https://www.indiainfoline.com/company/windlas-biotech-ltd/reports/directors-report",
+    "https://www.tipranks.com/news/company-announcements/windlas-biotech-shareholders-approve-re-appointment-and-new-independent-directors-via-postal-ballot",
+    "https://www.screener.in/company/WINDLAS/consolidated/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Neuland Laboratories",
+   "sector": "Pharma CDMO",
+   "style": "Promoter-run",
+   "styleNote": "Founder Dr. D. R. Rao is Executive Chairman and his two sons run the company: Saharsh is CEO & MD (since spring 2026) and Sucheth is Executive Vice Chairman. The CFO and other function heads are hired professionals. Promoters own about 32.6% (June 2026), mostly through the Davuluri Ownership Trust (26.0%), whose trustees are the father and both sons.",
+   "people": [
+    {
+     "name": "Dr. Davuluri Rama Mohan Rao",
+     "role": "Executive Chairman",
+     "since": "1984 (founder)",
+     "family": true,
+     "relation": "Founder; father of Sucheth and Saharsh Davuluri",
+     "stake": "1.6% directly (June 2026 shareholding pattern); also a trustee of the Davuluri Ownership Trust (26.0%); family together about 32.6%",
+     "bio": "Holds a master's in science from Andhra University, a postgraduate diploma in technology from IIT Kharagpur and a PhD in organic chemistry from the University of Notre Dame (US). He held senior research, production and quality roles at Glaxo India and was later director of R&D and quality at another drug company. He founded Neuland in 1984. He is a member of the Royal Society of Chemistry."
+    },
+    {
+     "name": "Davuluri Saharsh Rao",
+     "role": "Chief Executive Officer & Managing Director",
+     "since": "CEO & MD since spring 2026; joined 2007",
+     "family": true,
+     "relation": "Son of the Executive Chairman; younger brother of Executive Vice Chairman Sucheth",
+     "stake": "1.5% directly (June 2026 shareholding pattern); also a trustee of the Davuluri Ownership Trust (26.0%)",
+     "bio": "An electrical engineering graduate with a master's in management information systems from the Weatherhead School of Management (Cleveland) and an MBA from the University of North Carolina. He worked in sales roles at Sify before joining Neuland in 2007. He started the custom manufacturing (contract work for innovators) business, which is now the company's largest, and oversaw marketing, IT, business development and R&D. He took over as CEO & MD in 2026, saying the aim is to be one of the world's top five ingredient-focused CDMOs within a decade."
+    },
+    {
+     "name": "Davuluri Sucheth Rao",
+     "role": "Executive Vice Chairman",
+     "since": "Joined 2002; CEO 2009 to Mar 2026",
+     "family": true,
+     "relation": "Son of the Executive Chairman; elder brother of CEO & MD Saharsh",
+     "stake": "2.0% directly (June 2026 shareholding pattern); also a trustee of the Davuluri Ownership Trust (26.0%)",
+     "bio": "A mechanical engineer with an MBA in corporate finance and operations from the University of Notre Dame's Mendoza College of Business, and a Six Sigma Black Belt. He joined in 2002 and was chief executive from 2009 until March 2026, when he handed the role to his brother and became Executive Vice Chairman. He is on the board of the US industry body DCAT (third vice president for 2026) and is an executive member of YPO's Hyderabad chapter."
+    },
+    {
+     "name": "Abhijit Majumdar",
+     "role": "Chief Financial Officer",
+     "since": "Nov 2022",
+     "family": false,
+     "bio": "A chartered accountant and cost accountant with more than 30 years in finance. He worked at Asian Paints PPG, Berger Paints and Tata Steel, and his last job before Neuland was EVP, financial planning and controlling, at Deepak Fertilizers and Petrochemicals. His areas are accounting, working capital, tax and mergers. The board appointed him CFO in November 2022."
+    },
+    {
+     "name": "Dr. Sharadsrikar Venkatesan Kotturi",
+     "role": "Chief Scientific Officer",
+     "family": false,
+     "bio": "Has BSc (Tech) and MSc (Tech) degrees from UDCT Bombay and a PhD from Oklahoma State University (2002), followed by medicinal chemistry research at the Research Triangle Institute in North Carolina. He has about 20 years in drug research. Before Neuland he was Senior Vice President, Operations at Piramal Pharma and held roles at GVK Bio and Tata's Advinus. He has authored more than 35 patents."
+    },
+    {
+     "name": "Parag Dilip Deshmukh",
+     "role": "Head – Manufacturing",
+     "since": "Mar 2025",
+     "family": false,
+     "bio": "A chemical engineer from Mumbai University with an MBA in human resources from IMT Ghaziabad. He has more than 24 years in active-ingredient manufacturing at Lupin, Aurobindo and Cipla, where he ran two plants. He joined Neuland in March 2025 to run its plants, focusing on efficiency and regulatory compliance."
+    }
+   ],
+   "changes": "Saharsh Davuluri took over as CEO & MD from his brother Sucheth in spring 2026 (announced early April); Sucheth became Executive Vice Chairman. No other executive departures found since the annual report.",
+   "sources": [
+    "https://www.neulandlabs.com/en/about-us/leadership",
+    "https://www.neulandlabs.com/en/key-managerial-personnel",
+    "https://www.indianpharmapost.com/news/saharsh-davuluri-takes-over-as-ceo-md-of-neuland-19512",
+    "https://www.business-standard.com/article/news-cm/neuland-labs-appoints-abhijit-majumdar-as-cfo-122112400427_1.html",
+    "https://en.wikipedia.org/wiki/Neuland_Laboratories",
+    "https://www.screener.in/company/NEULANDLAB/consolidated/"
+   ],
+   "updatedOn": "2026-09-29"
+  },
+  {
+   "company": "Anthem Biosciences",
+   "sector": "Pharma CDMO",
+   "style": "Promoter-run",
+   "styleNote": "Founder-run: the three co-founders from 2006 hold the top jobs. Ajay Bhardwaj is Chairman, MD & CEO; Dr. Ganesh Sambasivam (science) and K. C. Ravindra (operations) are whole-time directors. Ajay's son Ishaan is President. The four promoters and their families own about 71.4% (June 2026), down from 74.7% in March after promoter Aruna Ganesh sold 3.05%. True North has a nominee director.",
+   "people": [
+    {
+     "name": "Ajay Bhardwaj",
+     "role": "Founder, Chairman, Managing Director & CEO",
+     "since": "2006 (co-founder)",
+     "family": true,
+     "relation": "Co-founder; father of President Ishaan Bhardwaj",
+     "stake": "42.4% (June 2026 shareholding pattern); with son Ishaan 52.5%",
+     "bio": "Holds a bachelor's in chemical engineering from IIT Delhi and a master's in chemical engineering from Louisiana State University. He started as a projects engineer at Max India and later was president of marketing and technical services at Biocon. He co-founded Anthem in 2006 with two Biocon/Syngene colleagues and has run it since, building a research-to-manufacturing contract business with unusually high margins. He has over 40 years in life sciences, contract research and drug manufacturing, was an EY Entrepreneur of the Year 2025 finalist, and is a founder and trustee of Plaksha University."
+    },
+    {
+     "name": "Ishaan Bhardwaj",
+     "role": "President",
+     "since": "2014–2016, rejoined Feb 2019",
+     "family": true,
+     "relation": "Son of the Chairman, MD & CEO Ajay Bhardwaj",
+     "stake": "10.1% (June 2026 shareholding pattern)",
+     "bio": "Holds a bachelor's in engineering from Visvesvaraya Technological University (Belgaum) and a master's from George Washington University. He first worked at Anthem from January 2014 to December 2016, spent time at group company Anthem Cellutions, and rejoined in February 2019. He oversees purchasing, regulatory affairs, biological R&D, manufacturing and operations. He is a named promoter; he was Vice President at the 2025 listing and is now President."
+    },
+    {
+     "name": "Dr. Ganesh Sambasivam",
+     "role": "Whole-time Director & Chief Scientific Officer",
+     "since": "2006 (co-founder)",
+     "family": false,
+     "relation": "Co-founder and promoter (not related to the Bhardwajs)",
+     "stake": "8.1% (June 2026 shareholding pattern)",
+     "bio": "Has a BSc in chemistry from the University of Madras and an MSc in organic chemistry and a PhD in chemistry from the University of Pune. He spent more than a decade as Chief Scientific Officer of Syngene International before co-founding Anthem. He has over 30 years in process research and development and leads Anthem's science."
+    },
+    {
+     "name": "K. C. Ravindra (K Ravindra Chandrappa)",
+     "role": "Whole-time Director & Chief Operating Officer",
+     "since": "2006 (co-founder)",
+     "family": false,
+     "relation": "Co-founder and promoter (not related to the Bhardwajs)",
+     "stake": "7.8% directly, plus about 2% through two family trusts he is trustee of (June 2026 shareholding pattern)",
+     "bio": "A chemical engineer from Bangalore University. Before co-founding Anthem he worked at Cipla, Hikal and Biocon. He leads end-to-end operations: R&D, manufacturing, quality and regulatory compliance. He has more than 25 years in the pharma and biopharma industry, with a focus on running large plants to global quality standards."
+    },
+    {
+     "name": "Mohammed Gawir Baig",
+     "role": "Chief Financial Officer",
+     "since": "Nov 2021",
+     "family": false,
+     "bio": "A mechanical engineer from IIT Kharagpur with a postgraduate diploma in management from IIM Bangalore. He was a director at the investment bank O3 Capital, and earlier worked at Kea Healthcare and as a relationship manager at Standard Chartered Bank. He joined Anthem in November 2021 and led it through its July 2025 listing. Besides finance he handles planning, investor relations, ESG, HR, legal and compliance."
+    }
+   ],
+   "changes": "No executive changes found since the annual report. Promoter Aruna Ganesh sold her 3.05% in June 2026.",
+   "sources": [
+    "https://anthembio.com/leadership/",
+    "https://anthembio.com/board-of-directors/",
+    "https://indiaipo.jpmorgan.com/content/dam/jpmorgan/documents/india-private-limited/anthem-biosciences-rhp.pdf",
+    "https://www.ey.com/en_in/entrepreneur-of-the-year/finalists-2025/ajay-bhardwaj",
+    "https://plaksha.edu.in/team-details/ajay-bhardwaj",
+    "https://www.screener.in/company/ANTHEM/consolidated/"
+   ],
+   "updatedOn": "2026-09-29"
+  }
+ ]
+}

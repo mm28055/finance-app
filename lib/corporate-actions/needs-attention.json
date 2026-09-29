@@ -230,5 +230,12 @@
     "subject": "Shareholding Jul 2026",
     "why": "Promoter holding fell 6.7 pts (79.8% in Jun 2026 → 73.2% in Jul 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-09-28"
+  },
+  {
+    "company": "Madhya Bharat Agro Products",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "Check utilisation figure",
+    "why": "The Agro note gives about 45% (table) and about 43% (business section) capacity use in Q1, but the Q1 FY27 call says SSP 79% and DAP/NPK 66%. The 43% may be Krishana's figure copied across. Check against the call and correct the note (and lib/projects/capacity.json).",
+    "addedOn": "2026-09-29"
   }
 ]
