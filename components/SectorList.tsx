@@ -70,6 +70,7 @@ export interface EnrichedCompany {
     // the chip and its hover; full summaries only on the detail fetch.
     filingHeadlines?: import('@/lib/filings/types').FilingHeadline[];
     filings?: import('@/lib/filings/types').MaterialFiling[];
+    checkpoints?: import('@/lib/checkpoints').Checkpoint[];
     // Shareholding (lib/shareholding.ts). The light load carries only the latest
     // promoter / pledge figures and the warnings; `rows` (oldest first, up to 12)
     // and the positive notes come with the detail fetch.

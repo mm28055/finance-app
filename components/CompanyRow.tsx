@@ -20,6 +20,7 @@ import { TONE_STYLE, CompanyFilings } from './SectorFilings';
 import { CompanyTags } from './CompanyTags';
 import { HoldingCard } from './HoldingCard';
 import { CompanyNumbers } from './CompanyNumbers';
+import { CompanyCheckpoints } from './CompanyCheckpoints';
 
 const CONVICTION_CYCLE: (ConvictionLevel | null)[] = [null, 'HIGH', 'MEDIUM', 'LOW'];
 
@@ -676,6 +677,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                             const trend = effective.trend && effective.trend.length >= 2 ? effective.trend : effective.history;
                                             return trend && trend.length >= 2 ? <FinancialTrendChart history={trend} /> : null;
                                         })()}
+                                        {effective.checkpoints && effective.checkpoints.length > 0 && (
+                                            <CompanyCheckpoints checkpoints={effective.checkpoints} />
+                                        )}
                                         <CompanyNumbers companyId={company.id} />
                                         {effective.holding?.rows && effective.holding.rows.length > 0 && (
                                             <HoldingCard holding={effective.holding} />

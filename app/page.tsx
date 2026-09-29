@@ -19,6 +19,7 @@ export default async function Home() {
           <p className="text-gray-400 text-xs">Real-Time Earning Intelligence</p>
         </div>
         <div className="flex items-center gap-4">
+          <a href="/scorecard" className="text-[11px] text-gray-500 hover:text-[#4A7AAF]">Scorecard</a>
           <TranscriptStats stats={stats} />
 
           <div className="bg-white border border-gray-200 px-2.5 py-1 rounded-lg text-[10px] flex items-center gap-1.5 text-gray-500">
