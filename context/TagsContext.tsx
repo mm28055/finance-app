@@ -22,8 +22,8 @@ export function TagsProvider({ children }: { children: ReactNode }) {
     const { isAdminMode } = useAdmin();
     const [byCompany, setByCompany] = useState<Record<string, string[]>>({});
 
+    // Tags are public: loaded for every visitor; only a signed-in owner can change them.
     useEffect(() => {
-        if (!isAdminMode) { setByCompany({}); return; }
         fetch('/api/tags')
             .then(r => (r.ok ? r.json() : { tags: {} }))
             .then(d => setByCompany(d.tags || {}))

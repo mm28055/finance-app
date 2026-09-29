@@ -4,16 +4,14 @@ import { prisma } from '@/lib/prisma';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 
-// The owner's own company tags. Private: every method needs a session, and a
-// visitor simply gets no tags. Raw SQL keeps this route independent of the
+// The owner's own company tags. Anyone can read them (they show on the site and
+// in the filter); adding or removing one needs a session. Raw SQL keeps this route independent of the
 // generated client, so it works even before `prisma generate` has re-run.
 
 const clean = (t: unknown) => String(t ?? '').trim().replace(/\s+/g, ' ').slice(0, 40);
 
 // GET: every tag, as { tags: { [companyId]: string[] } }
 export async function GET() {
-    const session = await getServerSession(authOptions);
-    if (!session) return NextResponse.json({ tags: {} });
     const rows = await prisma.$queryRaw<{ companyId: string; tag: string }[]>`
         SELECT "companyId", "tag" FROM "CompanyTag" ORDER BY "tag"`;
     const tags: Record<string, string[]> = {};

@@ -4,16 +4,15 @@ import { Tag, X, Plus } from 'lucide-react';
 import { useAdmin } from '@/context/AdminContext';
 import { useTags } from '@/context/TagsContext';
 
-// The owner's tags for one company, shown only inside the opened row (and only
-// when signed in) so the collapsed list stays uncluttered.
+// The owner's tags for one company, shown inside the opened row so the collapsed
+// list stays uncluttered. Everyone sees them; only a signed-in owner can edit.
 export const CompanyTags = ({ companyId }: { companyId: string }) => {
     const { isAdminMode } = useAdmin();
     const { tagsFor, allTags, addTag, removeTag } = useTags();
     const [adding, setAdding] = useState(false);
     const [draft, setDraft] = useState('');
-    if (!isAdminMode) return null;
-
     const tags = tagsFor(companyId);
+    if (!isAdminMode && tags.length === 0) return null;
     const suggestions = allTags.map(t => t.tag).filter(t => !tags.includes(t));
     const listId = `tag-suggestions-${companyId}`;
     const commit = () => {
@@ -30,14 +29,16 @@ export const CompanyTags = ({ companyId }: { companyId: string }) => {
             {tags.map(t => (
                 <span key={t} className="inline-flex items-center gap-1 pl-2 pr-1 py-0.5 rounded-full bg-white border border-gray-200 text-gray-600">
                     {t}
-                    <button
-                        onClick={() => removeTag(companyId, t)}
-                        title={`Remove "${t}"`}
-                        className="text-gray-300 hover:text-rose-500"
-                    ><X className="w-3 h-3" /></button>
+                    {isAdminMode && (
+                        <button
+                            onClick={() => removeTag(companyId, t)}
+                            title={`Remove "${t}"`}
+                            className="text-gray-300 hover:text-rose-500"
+                        ><X className="w-3 h-3" /></button>
+                    )}
                 </span>
             ))}
-            {adding ? (
+            {!isAdminMode ? null : adding ? (
                 <>
                     <input
                         autoFocus
