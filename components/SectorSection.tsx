@@ -39,7 +39,6 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
     }, []);
     const recent = companies.flatMap(c => (c.filingHeadlines || []).filter(h => h.date >= monthAgo));
     const filingCount = recent.length;
-    const watchCount = recent.filter(h => h.tone === 'watch').length;
 
     const togglePanel = (next: 'snapshot' | 'overview' | 'filings') => (e: React.MouseEvent) => {
         e.stopPropagation();
@@ -111,7 +110,7 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
                         >
                             <Bell className="w-3 h-3" />
                             <span className="text-[9px] font-semibold uppercase tracking-wide">Filings</span>
-                            <span className={`text-[9px] font-semibold px-1 rounded-full ${watchCount ? 'bg-[#F3EEFC] text-[#6B3FA0]' : 'bg-[#EAF2FA] text-[#35577A]'}`}>
+                            <span className={`text-[9px] font-semibold px-1 rounded-full bg-gray-100 text-gray-400`}>
                                 {filingCount}
                             </span>
                         </div>
