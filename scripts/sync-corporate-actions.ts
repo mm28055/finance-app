@@ -21,7 +21,8 @@
  *      sector notes and card data are keyed by it.
  * 2. Splits and bonuses with an ex-date in the look-back window -> `targetPrice`
  *    is divided by the adjustment factor. Prices and market caps need nothing:
- *    Screener's are already adjusted.
+ *    scripts/sync-finance.js takes the share count from NSE every day, and
+ *    cuts the stored book value per share itself when that count jumps.
  * 3. Demergers (and other schemes of arrangement) -> listed in
  *    lib/corporate-actions/needs-attention.json for the sector note to be
  *    rewritten, together with any new NSE listing that looks like the spun-off

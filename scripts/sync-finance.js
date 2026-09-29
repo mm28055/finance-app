@@ -483,11 +483,242 @@ function extractScreenerRange(html) {
     };
 }
 
-// ================= HYBRID SYNC =================
-// Optional CLI filter: `--company <isin|ticker|name>` (repeatable) forces a
-// sync for the matching companies regardless of lastFinanceSync freshness.
-// Without it, behaviour is unchanged: sweep every visible company that is
-// null/stale (>12h).
+// ================= NSE END-OF-DAY FILES =================
+// NSE publishes, for every trading day, files anyone can download with a
+// browser User-Agent (no login, no cookie needed for nsearchives):
+//   - the CM bhavcopy (UDiFF): ISIN, symbol, series and closing price of every
+//     main-board and SME share, out at about 4:30pm IST;
+//   - the PR zip's mcap file: each share's issued share count ("Issue Size"),
+//     so market cap = close x shares with no Screener involved;
+//   - the 52-week high/low file (adjusted for splits, bonuses and rights).
+// One download each replaces ~650 Screener pages a day. Screener is still read
+// for what NSE does not publish (book value, ROCE, dividend yield, sales,
+// shareholding), once a week per company, and daily for the few companies NSE
+// has no price for (BSE-only listings).
+const zlib = require('zlib');
+const NSE_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
+
+async function nseDownload(url) {
+    try {
+        const res = await fetch(url, { headers: { 'User-Agent': NSE_UA }, signal: AbortSignal.timeout(60000) });
+        if (!res.ok) return null;
+        return Buffer.from(await res.arrayBuffer());
+    } catch (e) {
+        return null;
+    }
+}
+
+// Minimal zip reader (the files are plain deflate zips): name -> contents.
+function unzip(buf) {
+    const out = {};
+    const eocd = buf.lastIndexOf(Buffer.from([0x50, 0x4b, 0x05, 0x06]));
+    if (eocd < 0) return out;
+    const count = buf.readUInt16LE(eocd + 10);
+    let off = buf.readUInt32LE(eocd + 16);
+    for (let i = 0; i < count && buf.readUInt32LE(off) === 0x02014b50; i++) {
+        const method = buf.readUInt16LE(off + 10);
+        const size = buf.readUInt32LE(off + 20);
+        const nameLen = buf.readUInt16LE(off + 28), extraLen = buf.readUInt16LE(off + 30), commentLen = buf.readUInt16LE(off + 32);
+        const local = buf.readUInt32LE(off + 42);
+        const name = buf.toString('utf8', off + 46, off + 46 + nameLen);
+        const start = local + 30 + buf.readUInt16LE(local + 26) + buf.readUInt16LE(local + 28);
+        const data = buf.subarray(start, start + size);
+        out[name] = method === 0 ? data : zlib.inflateRawSync(data);
+        off += 46 + nameLen + extraLen + commentLen;
+    }
+    return out;
+}
+
+// One CSV line, honouring double quotes; cells trimmed.
+function csvCells(line) {
+    const out = [];
+    let cur = '', quoted = false;
+    for (let i = 0; i < line.length; i++) {
+        const ch = line[i];
+        if (ch === '"') { if (quoted && line[i + 1] === '"') { cur += '"'; i++; } else quoted = !quoted; }
+        else if (ch === ',' && !quoted) { out.push(cur.trim()); cur = ''; }
+        else cur += ch;
+    }
+    out.push(cur.trim());
+    return out;
+}
+
+const num = (s) => {
+    const v = parseFloat(String(s ?? '').replace(/,/g, ''));
+    return Number.isFinite(v) ? v : null;
+};
+
+// Main-board and SME share series, best first. BL (block-deal window) and
+// debt/ETF series are ignored.
+const SERIES_RANK = ['EQ', 'BE', 'BZ', 'SM', 'ST', 'SZ'];
+
+// Today's date in India, as y/m/d numbers.
+function istParts(d = new Date()) {
+    const t = new Date(d.getTime() + 330 * 60000);
+    return { y: t.getUTCFullYear(), m: t.getUTCMonth() + 1, d: t.getUTCDate(), weekday: t.getUTCDay() };
+}
+const pad2 = (n) => String(n).padStart(2, '0');
+
+/**
+ * The latest trading day's NSE files (today's, if already out, else the most
+ * recent within a week). Returns null if no bhavcopy can be downloaded.
+ *   { date: 'YYYY-MM-DD', byIsin: Map<isin, row>, bySymbol: Map<symbol, row> }
+ *   row = { isin, symbol, series, name, close, shares, high52, low52 }
+ */
+async function loadNseDay() {
+    const now = istParts();
+    const base = Date.UTC(now.y, now.m - 1, now.d);
+    for (let back = 0; back < 8; back++) {
+        const day = new Date(base - back * 86400000);
+        const y = day.getUTCFullYear(), m = pad2(day.getUTCMonth() + 1), d = pad2(day.getUTCDate());
+        if (day.getUTCDay() === 0 || day.getUTCDay() === 6) continue;
+        const bhavZip = await nseDownload(`https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_${y}${m}${d}_F_0000.csv.zip`);
+        if (!bhavZip) continue;
+        const bhavFile = Object.entries(unzip(bhavZip)).find(([n]) => /\.csv$/i.test(n));
+        if (!bhavFile) continue;
+
+        // Bhavcopy: one row per security and series.
+        const [head, ...lines] = bhavFile[1].toString('utf8').split(/\r?\n/).filter(l => l.trim());
+        const h = csvCells(head);
+        const col = (n) => h.indexOf(n);
+        const iIsin = col('ISIN'), iSym = col('TckrSymb'), iSer = col('SctySrs'), iName = col('FinInstrmNm'), iClose = col('ClsPric'), iType = col('FinInstrmTp');
+        if ([iIsin, iSym, iSer, iClose].some(i => i < 0)) throw new Error(`NSE bhavcopy header changed: ${head}`);
+        const byIsin = new Map(), bySymbol = new Map();
+        const better = (a, b) => (SERIES_RANK.indexOf(a.series) + 1 || 99) < (SERIES_RANK.indexOf(b.series) + 1 || 99);
+        for (const line of lines) {
+            const c = csvCells(line);
+            if (iType >= 0 && c[iType] !== 'STK') continue;
+            if (!SERIES_RANK.includes(c[iSer])) continue;
+            const close = num(c[iClose]);
+            if (!close || close <= 0) continue;
+            const row = { isin: c[iIsin], symbol: (c[iSym] || '').toUpperCase(), series: c[iSer], name: c[iName] || '', close, shares: null, high52: null, low52: null };
+            const prev = byIsin.get(row.isin);
+            if (!prev || better(row, prev)) byIsin.set(row.isin, row);
+        }
+        for (const row of byIsin.values()) bySymbol.set(row.symbol, row);
+
+        // Issued shares, from the PR zip's mcap file (same day). Unquoted and
+        // the security name can hold a comma, so the numbers are read from the end.
+        let withShares = 0;
+        const prZip = await nseDownload(`https://nsearchives.nseindia.com/archives/equities/bhavcopy/pr/PR${d}${m}${String(y).slice(2)}.zip`);
+        const mcapFile = prZip && Object.entries(unzip(prZip)).find(([n]) => /^mcap\d+\.csv$/i.test(n));
+        if (mcapFile) {
+            for (const line of mcapFile[1].toString('utf8').split(/\r?\n/).slice(1)) {
+                const c = line.split(',').map(s => s.trim());
+                if (c.length < 10) continue;
+                const row = bySymbol.get((c[1] || '').toUpperCase());
+                const shares = num(c[c.length - 3]);
+                if (row && shares && shares > 0 && (c[2] === row.series || row.shares === null)) {
+                    if (row.shares === null) withShares++;
+                    row.shares = shares;
+                }
+            }
+        }
+
+        // 52-week high/low (adjusted for corporate actions).
+        let with52 = 0;
+        const hl = await nseDownload(`https://nsearchives.nseindia.com/content/CM_52_wk_High_low_${d}${m}${y}.csv`);
+        if (hl) {
+            for (const line of hl.toString('utf8').split(/\r?\n/)) {
+                const c = csvCells(line);
+                if (c.length < 6) continue;
+                const row = bySymbol.get((c[0] || '').toUpperCase());
+                const hi = num(c[2]), lo = num(c[4]);
+                if (!row || !hi || !lo || (row.high52 !== null && c[1] !== row.series)) continue;
+                if (row.high52 === null) with52++;
+                row.high52 = Math.max(hi, row.close);
+                row.low52 = Math.min(lo, row.close);
+            }
+        }
+
+        const date = `${y}-${m}-${d}`;
+        console.log(`📥 NSE files for ${date}: ${byIsin.size} shares priced, ${withShares} with share counts, ${with52} with 52-week range${mcapFile ? '' : ' (mcap file missing)'}${hl ? '' : ' (52-week file missing)'}\n`);
+        return { date, byIsin, bySymbol };
+    }
+    return null;
+}
+
+// Our company's row in NSE's files: by ISIN; else by its current NSE symbol
+// (from NSE's equity list, by ISIN); else by our ticker, when NSE's name for
+// that symbol is recognisably ours.
+async function nseRowFor(company, nse) {
+    if (company.isin && nse.byIsin.has(company.isin)) return nse.byIsin.get(company.isin);
+    const symbol = await nseSymbolForIsin(company.isin);
+    if (symbol && nse.bySymbol.has(symbol)) return nse.bySymbol.get(symbol);
+    const row = nse.bySymbol.get((company.ticker || '').trim().toUpperCase());
+    if (row && namesOf(company).some(n => nameSimilarity(normaliseName(n), normaliseName(row.name)) >= MIN_NAME_MATCH || tokensFit(n, row.name) || tokensFit(row.name, n))) return row;
+    return null;
+}
+
+// ================= TRAILING EARNINGS =================
+// Net profit (₹ cr) over the last twelve months from our Financials table, for
+// P/E. Quarters are indexed year*4+q (FY27 Q1 = Apr-Jun 2026). A quarter's
+// results are due within 45 days (60 for Q4), so the latest quarter we need is
+// the last one that ended 60+ days ago; an older set is stale, not TTM.
+const QN = { Q1: 1, Q2: 2, Q3: 3, Q4: 4 };
+function expectedLatestQuarter(today = new Date()) {
+    // FY year Y, quarter q ends: Q1 Jun 30 (Y-1), Q2 Sep 30 (Y-1), Q3 Dec 31 (Y-1), Q4 Mar 31 (Y).
+    const endOf = (idx) => {
+        const year = Math.floor((idx - 1) / 4), q = ((idx - 1) % 4) + 1;
+        return q === 4 ? Date.UTC(year, 3, 0) : Date.UTC(year - 1, 3 + 3 * q, 0);
+    };
+    const fy = today.getUTCMonth() >= 3 ? today.getUTCFullYear() + 1 : today.getUTCFullYear();
+    for (let idx = fy * 4 + 4; idx > fy * 4 - 8; idx--) {
+        if (endOf(idx) + 60 * 86400000 <= today.getTime()) return idx;
+    }
+    return null;
+}
+
+/**
+ * companyId -> { earnings, basis } where basis is 'quarters' (last four
+ * quarters) or 'halves' (a half-yearly SME's last two halves, filed as Q2 and
+ * Q4). Missing from the map when our table cannot give a full, current year.
+ */
+async function loadTrailingEarnings(companies) {
+    const out = new Map();
+    const expected = expectedLatestQuarter();
+    if (!expected) return out;
+    const rows = await prisma.financials.findMany({
+        where: { companyId: { in: companies.map(c => c.id) }, quarter: { q: { in: Object.keys(QN) } } },
+        select: { companyId: true, pat: true, quarter: { select: { year: true, q: true } } },
+    });
+    const byCompany = new Map();
+    for (const r of rows) {
+        // A 0 is how a quarter we have no figure for is sometimes filed.
+        const pat = r.pat === null ? null : Number(r.pat);
+        if (pat === null || pat === 0) continue;
+        if (!byCompany.has(r.companyId)) byCompany.set(r.companyId, new Map());
+        byCompany.get(r.companyId).set(r.quarter.year * 4 + QN[r.quarter.q], pat);
+    }
+    for (const c of companies) {
+        const pats = byCompany.get(c.id);
+        if (!pats || !pats.size) continue;
+        const latest = Math.max(...pats.keys());
+        if (latest >= expected && [0, 1, 2, 3].every(k => pats.has(latest - k))) {
+            out.set(c.id, { earnings: [0, 1, 2, 3].reduce((s, k) => s + pats.get(latest - k), 0), basis: 'quarters' });
+            continue;
+        }
+        if (c.isSme) {
+            // Half-yearly SME: H1 is filed as Q2, H2 as Q4.
+            const halves = [...pats.keys()].filter(i => i % 4 === 2 || i % 4 === 0).sort((a, b) => b - a);
+            const h = halves[0];
+            if (h !== undefined && h >= expected - 1 && pats.has(h - 2)) {
+                out.set(c.id, { earnings: pats.get(h) + pats.get(h - 2), basis: 'halves' });
+            }
+        }
+    }
+    return out;
+}
+
+// ================= DAILY SYNC =================
+// Optional CLI filter: `--company <isin|ticker|name>` (repeatable) limits the
+// run to the matching companies and forces a full Screener read for them.
+// Without it: every visible company is priced from NSE's files; Screener is
+// read for a fifth of the book each weekday (see screenerDue), and daily for
+// companies NSE has no price for, skipping any read in the last 12 hours.
+//
+// `--dry-run` downloads NSE's files and prints what would be written, plus a
+// comparison with the stored figures; no database writes, no Screener requests.
 //
 // `--shareholding-only` reads just the shareholding table, for every visible
 // company (or the --company matches), whatever their freshness, and writes
@@ -530,12 +761,186 @@ async function syncShareholdingOnly(filters) {
 ✅ Shareholding: ${filled} filled, ${empty} without a table, ${failed} without a page`);
 }
 
+const DRY = process.argv.includes('--dry-run');
+// Prices from NSE only: no Screener request at all (companies NSE has no price
+// for are left as they are). For testing, or if Screener is blocking us.
+const NO_SCREENER = process.argv.includes('--no-screener') || DRY;
+
+// Each company's weekday (1 = Monday ... 5 = Friday) for its Screener read:
+// a stable hash of its id, so the book is spread evenly over the week.
+function screenerWeekday(id) {
+    let h = 0;
+    for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+    return 1 + (h % 5);
+}
+
+const HOUR = 3600000, DAY_MS = 86400000;
+const round2 = (v) => Math.round(v * 100) / 100;
+const dec = (v) => (v === null || v === undefined ? null : Number(v));
+
+// Book value, ROCE, dividend yield, sales and shareholding only change with
+// results, so each company's Screener page is read once a week, on its own
+// weekday. A company that missed its day (holiday, failure, new) catches up.
+function screenerDue(company, weekday, now) {
+    const last = company.lastSalesSync; // stamped on every Screener read
+    if (last && now - last < 12 * HOUR) return false;
+    if (!last || now - last > 9 * DAY_MS) return 'catch-up';
+    return screenerWeekday(company.id) === weekday ? 'weekly' : false;
+}
+
+// The old daily write, all from one Screener page. Used for companies NSE has
+// no price for, and for everyone if NSE's files cannot be downloaded.
+async function writeFromScreener(company, data) {
+    if (data.shareholding && data.shareholding.length) {
+        try { await saveShareholding(company.id, data.shareholding); }
+        catch (e) { console.warn(`   ⚠️ Shareholding not saved for ${company.ticker}: ${e.message}`); }
+    }
+    await prisma.company.update({
+        where: { id: company.id },
+        data: {
+            marketCap: data.marketCap || undefined,
+            currentPrice: data.currentPrice || undefined,
+            bookValue: data.bookValue || undefined,
+            // Written even when null: an empty Screener P/E means a loss.
+            peRatio: data.peRatio ?? null,
+            pbRatio: data.pbRatio ?? null,
+            dividendYield: data.dividendYield ?? null,
+            roce: data.roce || undefined,
+            fiftyTwoWeekHigh: data.fiftyTwoWeekHigh || undefined,
+            fiftyTwoWeekLow: data.fiftyTwoWeekLow || undefined,
+            ttmSales: data.ttmSales || undefined,
+            lastSalesSync: new Date(),
+            lastFinanceSync: new Date(),
+        },
+    });
+}
+
+/**
+ * Today's figures for a company NSE priced. `scr` is its Screener page when
+ * read today (weekly), else null. Returns the fields to write plus notes for
+ * the comparison.
+ *
+ *   market cap = NSE close x NSE issued shares
+ *   P/E        = market cap / trailing net profit: our last four quarters (or a
+ *                half-yearly SME's last two halves); where our table has no
+ *                complete current year, Screener's own figure (its market cap
+ *                / its P/E, read weekly) carried forward. A loss -> null.
+ *   P/B        = price / book value per share (Screener, weekly)
+ *   div. yield = Screener's, carried at a constant rupee dividend
+ */
+function deriveFigures(company, row, scr, fin) {
+    const price = row.close;
+    const oldPrice = dec(company.currentPrice), oldMcap = dec(company.marketCap), oldPe = dec(company.peRatio), oldDy = dec(company.dividendYield);
+    const notes = [];
+
+    let shares = row.shares;
+    if (!shares && oldMcap && oldPrice) { shares = (oldMcap * 1e7) / oldPrice; notes.push('no NSE share count: yesterday\'s implied count'); }
+    const marketCap = shares ? round2((price * shares) / 1e7) : null;
+
+    // Book value per share: Screener's when read today; otherwise the stored
+    // one, cut by the split/bonus ratio when NSE's share count has jumped and
+    // the price has fallen by the same factor (a split, not a data difference).
+    let bookValue = scr && scr.bookValue ? scr.bookValue : dec(company.bookValue);
+    if (!(scr && scr.bookValue) && bookValue && row.shares && oldMcap && oldPrice) {
+        const ratio = row.shares / ((oldMcap * 1e7) / oldPrice);
+        const priceFit = (price * ratio) / oldPrice;
+        if ((ratio > 1.25 || ratio < 0.8) && priceFit > 0.8 && priceFit < 1.25) {
+            bookValue = round2(bookValue / ratio);
+            notes.push(`share count x${round2(ratio)} (split/bonus): book value adjusted`);
+        }
+    }
+
+    // Trailing net profit (₹ cr): Screener's (its market cap / its P/E, an
+    // empty P/E meaning a loss), taken on its weekly read and carried between
+    // reads; our own quarters only for a company Screener has never been read
+    // for. Our quarters come from the concall notes and differ from Screener's
+    // consolidated net profit for about a third of the book (minority
+    // interest, exceptional items, standalone figures) — see the comparison.
+    let earnings = null, peBasis;
+    if (scr && scr.marketCap) {
+        earnings = scr.peRatio ? scr.marketCap / scr.peRatio : null; peBasis = 'screener';
+    } else if (company.lastSalesSync || !fin) {
+        earnings = oldPe && oldMcap ? oldMcap / oldPe : null; peBasis = 'screener-carried';
+    } else {
+        earnings = fin.earnings; peBasis = fin.basis;
+    }
+    const peRatio = marketCap && earnings && earnings > 0 ? round2(marketCap / earnings) : null;
+
+    let dividendYield;
+    if (scr) dividendYield = scr.dividendYield && scr.marketCap && marketCap ? round2((scr.dividendYield * scr.marketCap) / marketCap) : (scr.dividendYield ?? null);
+    else dividendYield = oldDy && oldMcap && marketCap ? round2((oldDy * oldMcap) / marketCap) : oldDy;
+
+    return {
+        data: {
+            currentPrice: price,
+            marketCap: marketCap ?? undefined,
+            peRatio: marketCap ? peRatio : undefined,
+            pbRatio: bookValue && bookValue > 0 ? round2(price / bookValue) : null,
+            bookValue: bookValue || undefined,
+            dividendYield,
+            fiftyTwoWeekHigh: row.high52 || undefined,
+            fiftyTwoWeekLow: row.low52 || undefined,
+        },
+        peBasis,
+        earnings,
+        notes,
+    };
+}
+
+// ================= COMPARISON =================
+// New figures against the stored ones (Screener's, as of the previous run).
+function band(a, b) {
+    if (a === null && b === null) return 'same';
+    if (a === null || b === null) return 'loss-mismatch';
+    const d = Math.abs(a / b - 1);
+    return d <= 0.05 ? 'within5' : d <= 0.2 ? '5to20' : 'over20';
+}
+
+function printComparison(rows) {
+    const count = (key) => {
+        const c = { same: 0, within5: 0, '5to20': 0, over20: 0, 'loss-mismatch': 0 };
+        for (const r of rows) c[r[key]]++;
+        return `within 5%: ${c.within5 + c.same}  |  5-20%: ${c['5to20']}  |  over 20%: ${c.over20}  |  loss on one side only: ${c['loss-mismatch']}`;
+    };
+    console.log(`\n=== Comparison with stored (Screener) figures, ${rows.length} companies priced by NSE ===`);
+    console.log(`Market cap:          ${count('mcapBand')}`);
+    console.log(`P/E (as written):    ${count('peBand')}`);
+    const fin = rows.filter(r => r.peFinBand);
+    const c = { same: 0, within5: 0, '5to20': 0, over20: 0, 'loss-mismatch': 0 };
+    for (const r of fin) c[r.peFinBand]++;
+    console.log(`P/E from our quarters only (${fin.length} with a full current year): within 5%: ${c.within5 + c.same}  |  5-20%: ${c['5to20']}  |  over 20%: ${c.over20}  |  loss on one side only: ${c['loss-mismatch']}`);
+    const basis = {};
+    for (const r of rows) basis[r.peBasis] = (basis[r.peBasis] || 0) + 1;
+    console.log(`P/E basis: ${Object.entries(basis).map(([k, v]) => `${k} ${v}`).join(', ')}`);
+
+    const off = rows.filter(r => !['within5', 'same'].includes(r.mcapBand) || r.peBand === 'over20' || r.peBand === 'loss-mismatch');
+    if (off.length) {
+        console.log(`\nAs written, market cap over 5% or P/E over 20% off the stored figure:`);
+        for (const r of off) console.log(`  ${r.name.padEnd(28)} mcap ${r.oldMcap} -> ${r.mcap}  P/E ${r.oldPe} -> ${r.pe} [${r.peBasis}]${['within5', 'same'].includes(r.mcapBand) ? '' : '  share count: NSE issued shares differ from Screener\'s'}`);
+    }
+    const finOff = rows.filter(r => r.peFinBand === 'over20' || r.peFinBand === 'loss-mismatch');
+    if (finOff.length) {
+        const why = {};
+        for (const r of finOff) { const k = r.finReason.split(':')[0]; why[k] = (why[k] || 0) + 1; }
+        console.log(`\nP/E from our quarters, over 20% off Screener's (so not used): ${Object.entries(why).map(([k, v]) => `${k} ${v}`).join(', ')}`);
+        for (const r of finOff) console.log(`  ${r.name.padEnd(28)} Screener P/E ${r.oldPe}, ours ${r.peFin}  ${r.finReason}`);
+    }
+}
+
+// Why our quarters' P/E differs from Screener's.
+function finReasonFor(r, fin) {
+    if (r.oldPe === null) return 'loss per Screener: its P/E is empty, our four quarters sum to a profit';
+    if (fin.earnings <= 0) return 'loss per our quarters: they sum to a loss, Screener has a profit';
+    if (fin.basis === 'halves') return 'half-yearly SME: two halves differ from Screener\'s';
+    const theirs = r.oldMcap / r.oldPe;
+    return fin.earnings > theirs
+        ? `our profit higher: ₹${round2(fin.earnings)} cr vs Screener's ₹${round2(theirs)} cr (minority share / one-off gain / standalone in our notes)`
+        : `our profit lower: ₹${round2(fin.earnings)} cr vs Screener's ₹${round2(theirs)} cr (one-off loss / standalone in our notes)`;
+}
+
 async function syncFinance() {
     const filters = parseFilters();
     if (SHAREHOLDING_ONLY) return syncShareholdingOnly(filters);
-
-    const yesterday = new Date();
-    yesterday.setHours(yesterday.getHours() - 12); // Sync if not updated in last 12 hours
 
     const where = filters.length > 0
         ? {
@@ -545,122 +950,108 @@ async function syncFinance() {
                 { name: { contains: f, mode: 'insensitive' } },
             ]),
         }
-        : {
-            isVisible: true,
-            OR: [
-                { lastFinanceSync: null },
-                { lastFinanceSync: { lt: yesterday } },
-            ],
-        };
+        : { isVisible: true };
+    const companies = await prisma.company.findMany({ where, orderBy: { name: 'asc' } });
+    if (filters.length > 0) console.log(`🎯 Targeted finance sync for filters: ${filters.join(', ')}`);
+    console.log(`🚀 Finance sync for ${companies.length} companies${DRY ? ' (DRY RUN: nothing written, no Screener requests)' : NO_SCREENER ? ' (NSE only, no Screener requests)' : ''}...\n`);
 
-    const companies = await prisma.company.findMany({ where });
+    const nse = await loadNseDay();
+    if (!nse) console.warn('⚠️ NSE files unavailable — every company falls back to its Screener page, as before.\n');
+    const trailing = await loadTrailingEarnings(companies);
 
-    if (filters.length > 0) {
-        console.log(`🎯 Targeted finance sync for filters: ${filters.join(', ')}`);
-    }
-
-    console.log(`🚀 Starting hybrid finance sync for ${companies.length} companies...\n`);
-
-    // Sales only move when results are declared, so the quarterly table is
-    // re-read weekly rather than on every sweep. Market cap refreshes daily and
-    // P/S is divided at read time, so the ratio still tracks the price.
-    const salesCutoff = new Date();
-    salesCutoff.setDate(salesCutoff.getDate() - 7);
-
-    // Companies Google answers for need a second, Screener-only round trip for
-    // sales. Capped per run so the nightly job can't walk past its 90-minute
-    // timeout; whatever is left over is picked up by the next sweep.
-    let salesBudget = 200;
-
-    let googleSuccess = 0, screenerSuccess = 0, failed = 0, salesUpdated = 0, shareholdingSaved = 0;
+    const now = new Date();
+    const weekday = istParts(now).weekday;
+    let catchUpBudget = 150;
+    const stats = { nse: 0, screenerWeekly: 0, screenerDaily: 0, screenerFailed: 0, skippedFresh: 0, untouched: 0, shareholding: 0 };
+    const comparison = [];
+    const noNse = [];
 
     for (const company of companies) {
-        process.stdout.write(`${company.ticker.padEnd(20)}`);
+        const row = nse ? await nseRowFor(company, nse) : null;
 
-        const salesStale = !company.ttmSales
-            || !company.lastSalesSync
-            || company.lastSalesSync < salesCutoff;
-
-        // Screener only. Google Finance's quote page no longer carries a
-        // machine-readable price, and its P/E used a different profit basis
-        // (it kept P/Es on loss-makers such as Exicom), so it is not used.
-        const data = await fetchScreener(company);
-        if (data && data.currentPrice) {
-            screenerSuccess++;
-            console.log(`📊 Screener: ₹${data.currentPrice}`);
-            await new Promise(r => setTimeout(r, 2000)); // Be polite
-        } else {
-            failed++;
-            console.log(`❌ Not found`);
-            await new Promise(r => setTimeout(r, 2000));
+        // ── No NSE price (BSE-only listing, not traded, or NSE down): the full
+        // Screener read, daily, as before.
+        if (!row) {
+            noNse.push(company);
+            if (NO_SCREENER) { stats.untouched++; continue; }
+            if (!filters.length && company.lastFinanceSync && now - company.lastFinanceSync < 12 * HOUR) { stats.skippedFresh++; continue; }
+            process.stdout.write(`${company.ticker.padEnd(20)}`);
+            const data = await fetchScreener(company);
+            if (!data || !data.currentPrice) { stats.screenerFailed++; console.log('❌ Not found on Screener'); continue; }
+            await writeFromScreener(company, data);
+            stats.screenerDaily++;
+            if (data.shareholding && data.shareholding.length) stats.shareholding++;
+            console.log(`📊 Screener (no NSE price): ₹${data.currentPrice}`);
             continue;
         }
 
-        // Google carries no revenue history, so a stale sales figure means one
-        // extra Screener hit — skipped when Screener already answered above,
-        // since that page has been parsed already.
-        let ttmSales = data.ttmSales ?? null;
-        let salesChecked = data.source === 'screener';
-        if (!ttmSales && salesStale && !salesChecked && salesBudget > 0) {
-            salesBudget--;
-            const html = await fetchScreenerHtml(company);
-            if (html) {
-                ttmSales = parseTtmSales(html);
-                salesChecked = true;
-            }
-            await new Promise(r => setTimeout(r, 2000)); // Be polite
-        }
-        if (ttmSales) salesUpdated++;
-
-        // Shareholding pattern, from the same page. Never fails the price write.
-        if (data.shareholding && data.shareholding.length) {
-            try {
-                await saveShareholding(company.id, data.shareholding);
-                shareholdingSaved++;
-            } catch (e) {
-                console.warn(`   ⚠️ Shareholding not saved for ${company.ticker}: ${e.message}`);
-            }
+        // ── NSE price; Screener page on the company's weekly day.
+        let scr = null;
+        let due = filters.length ? 'forced' : screenerDue(company, weekday, now);
+        if (due === 'catch-up' && catchUpBudget-- <= 0) due = false;
+        if (due && !NO_SCREENER) {
+            scr = await fetchScreener(company);
+            if (scr) stats.screenerWeekly++; else stats.screenerFailed++;
         }
 
-        // Update database
+        const fin = trailing.get(company.id) || null;
+        const out = deriveFigures(company, row, scr, fin);
+        const d = out.data;
+
+        const r = {
+            name: company.name.trim(),
+            oldMcap: dec(company.marketCap), mcap: d.marketCap ?? null,
+            oldPe: dec(company.peRatio), pe: d.peRatio === undefined ? dec(company.peRatio) : d.peRatio,
+            peBasis: out.peBasis, earnings: out.earnings,
+        };
+        r.mcapBand = band(r.mcap, r.oldMcap);
+        r.peBand = band(r.pe, r.oldPe);
+        if (fin && d.marketCap) {
+            r.peFin = fin.earnings > 0 ? round2(d.marketCap / fin.earnings) : null;
+            r.peFinBand = band(r.peFin, r.oldPe);
+            r.finReason = finReasonFor(r, fin);
+        }
+        comparison.push(r);
+        for (const n of out.notes) console.log(`   ${company.ticker}: ${n}`);
+
+        if (DRY) { stats.nse++; continue; }
+
+        if (scr && scr.shareholding && scr.shareholding.length) {
+            try { await saveShareholding(company.id, scr.shareholding); stats.shareholding++; }
+            catch (e) { console.warn(`   ⚠️ Shareholding not saved for ${company.ticker}: ${e.message}`); }
+        }
         await prisma.company.update({
             where: { id: company.id },
             data: {
-                marketCap: data.marketCap || undefined,
-                currentPrice: data.currentPrice || undefined,
-                bookValue: data.bookValue || undefined,
-                // Written even when null: an empty Screener P/E means a loss,
-                // and keeping the old figure is how loss-makers kept showing
-                // stale P/Es for months.
-                peRatio: data.peRatio ?? null,
-                pbRatio: data.pbRatio ?? null,
-                dividendYield: data.dividendYield ?? null,
-                roce: data.roce || undefined,
-                // Google doesn't expose the 52w band, so leave the stored
-                // value untouched when it's the source that answered.
-                fiftyTwoWeekHigh: data.fiftyTwoWeekHigh || undefined,
-                fiftyTwoWeekLow: data.fiftyTwoWeekLow || undefined,
-                ttmSales: ttmSales || undefined,
-                // Stamped on every look, not just a hit: a company whose
-                // quarterly table has fewer than four filled columns would
-                // otherwise be re-fetched on every sweep forever.
-                lastSalesSync: salesChecked ? new Date() : undefined,
-                lastFinanceSync: new Date()
-            }
+                ...d,
+                ...(scr ? {
+                    roce: scr.roce || undefined,
+                    ttmSales: scr.ttmSales || undefined,
+                    lastSalesSync: new Date(),
+                } : {}),
+                lastFinanceSync: new Date(),
+            },
         });
-
-        // Small delay for Google
-        await new Promise(r => setTimeout(r, 200));
+        stats.nse++;
     }
 
-    console.log(`\n✅ Sync Complete!`);
-    console.log(`   Google Finance: ${googleSuccess}`);
-    console.log(`   Screener.in:    ${screenerSuccess}`);
-    console.log(`   Not Found:      ${failed}`);
-    console.log(`   TTM sales:      ${salesUpdated}`);
-    console.log(`   Shareholding:   ${shareholdingSaved}`);
+    printComparison(comparison);
+    if (noNse.length) console.log(`\nNo NSE price (${noNse.length}): ${noNse.map(c => `${c.name.trim()} (${c.ticker})`).join(', ')}`);
+
+    console.log(`\n✅ Finance sync ${DRY ? 'dry run ' : ''}complete${nse ? ` — NSE prices of ${nse.date}` : ''}`);
+    console.log(`   Priced from NSE:            ${stats.nse}`);
+    console.log(`   Screener weekly reads:      ${stats.screenerWeekly}`);
+    console.log(`   Screener daily (no NSE):    ${stats.screenerDaily}`);
+    console.log(`   Screener failures:          ${stats.screenerFailed}`);
+    console.log(`   Skipped (read <12h ago):    ${stats.skippedFresh}`);
+    console.log(`   Left untouched (no NSE, Screener off): ${stats.untouched}`);
+    console.log(`   Shareholding saved:         ${stats.shareholding}`);
+    if (DRY || NO_SCREENER) {
+        const dueToday = companies.filter(c => !noNse.includes(c) && screenerDue(c, weekday, now)).length;
+        console.log(`   (A normal run today would read Screener for ${dueToday} weekly + ${noNse.length} without an NSE price.)`);
+    }
 }
 
 syncFinance()
-    .catch(e => console.error(e))
+    .catch(e => { console.error(e); process.exitCode = 1; })
     .finally(() => prisma.$disconnect());

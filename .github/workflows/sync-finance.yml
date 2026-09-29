@@ -2,7 +2,10 @@ name: Daily Finance Sync
 
 on:
   schedule:
-    - cron: '30 10 * * 1-5'  # 4:00pm IST (10:30 UTC), weekdays only
+    # 6:00pm IST (12:30 UTC), weekdays: after NSE publishes the day's closing-price
+    # files (bhavcopy ~4:30pm, market-cap file ~5pm). Earlier, the sync would
+    # fall back to the previous day's prices.
+    - cron: '30 12 * * 1-5'
   workflow_dispatch:          # Allow manual trigger from GitHub UI
 
 # The job commits lib/corporate-actions/*.json (and lib/screener-overrides.json
@@ -40,6 +43,9 @@ jobs:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           DIRECT_URL: ${{ secrets.DIRECT_URL }}
 
+      # Price, market cap, P/E, P/B and 52-week range from NSE's end-of-day
+      # files; each company's Screener page once a week (book value, ROCE,
+      # sales, shareholding), and daily only for the few BSE-only companies.
       - name: Run finance sync
         run: node scripts/sync-finance.js
         env:
