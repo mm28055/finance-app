@@ -316,7 +316,7 @@ async function fetchScreener(company) {
             pbRatio = Math.round((currentPrice / bookValue) * 100) / 100;
         }
 
-        return { marketCap, currentPrice, bookValue, peRatio, pbRatio, dividendYield, roce, fiftyTwoWeekHigh, fiftyTwoWeekLow, ttmSales: parseTtmSales(html), shareholding: safeShareholding(html), source: 'screener' };
+        return { marketCap, currentPrice, bookValue, peRatio, pbRatio, dividendYield, roce, fiftyTwoWeekHigh, fiftyTwoWeekLow, ttmSales: parseTtmSales(html), shareholding: safeShareholding(html), screenerId: html.match(/data-company-id="(\d+)"/)?.[1] || null, source: 'screener' };
     } catch (e) {
         console.error(`Screener error for ${company.ticker}:`, e.message);
         return null;
@@ -447,6 +447,51 @@ function safeShareholding(html) {
 }
 
 const SHAREHOLDING_KEEP = 12;
+
+// ================= BIG HOLDER CHANGES =================
+// When a company's shareholding for a new quarter first appears, read the named holders
+// (everyone above 1%, from Screener) and flag for the weekly review any institution or
+// public holder of note that came in at 2%+, fell below 1% from 2%+, or moved 2+ points.
+// Promoters are left to the promoter-holding flags. One Screener request per group.
+const ATTENTION_FILE = require('path').join(process.cwd(), 'lib', 'corporate-actions', 'needs-attention.json');
+const HOLDER_GROUPS = { foreign_institutions: 'FII', domestic_institutions: 'DII', public: 'public holder' };
+const BIG_HOLDER = 2;
+
+async function holderChanges(screenerId, period) {
+    const lines = [];
+    for (const [group, label] of Object.entries(HOLDER_GROUPS)) {
+        let data = {};
+        try {
+            const res = await screenerGet(`https://www.screener.in/api/3/${screenerId}/investors/${group}/quarterly/`);
+            if (res.ok) data = await res.json();
+        } catch { continue; }
+        for (const [name, byPeriod] of Object.entries(data)) {
+            const periods = Object.keys(byPeriod).filter(k => k !== 'setAttributes');
+            const i = periods.indexOf(period);
+            const prevKey = i > 0 ? periods[i - 1] : null;
+            const val = k => { const n = k ? Number(String(byPeriod[k] ?? '').replace(/,/g, '')) : NaN; return Number.isFinite(n) && n > 0 ? n : null; };
+            const now = val(period), before = val(prevKey);
+            const who = `${name.trim()} (${label})`;
+            if (now !== null && before === null && prevKey && now >= BIG_HOLDER) lines.push(`${who} came in at ${now}%`);
+            else if (now === null && before !== null && before >= BIG_HOLDER && i >= 0) lines.push(`${who} fell below 1% (held ${before}%)`);
+            else if (now !== null && before !== null && Math.abs(now - before) >= BIG_HOLDER) lines.push(`${who} ${now > before ? 'raised' : 'cut'} its stake from ${before}% to ${now}%`);
+        }
+    }
+    return lines;
+}
+
+function flagHolderChanges(company, period, lines) {
+    const fs = require('fs');
+    const list = fs.existsSync(ATTENTION_FILE) ? JSON.parse(fs.readFileSync(ATTENTION_FILE, 'utf8')) : [];
+    const subject = `Big holder change: ${period}`;
+    if (list.some(e => e.company === company.name.trim() && e.subject === subject)) return;
+    list.push({
+        company: company.name.trim(), sector: company.sector, subject,
+        why: `${lines.join('; ')}. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.`,
+        addedOn: new Date().toISOString().slice(0, 10),
+    });
+    fs.writeFileSync(ATTENTION_FILE, JSON.stringify(list, null, 2) + '\n');
+}
 const { randomUUID } = require('crypto');
 
 // Raw SQL so this does not depend on a regenerated Prisma client. `pledged` is
@@ -1017,8 +1062,18 @@ async function syncFinance() {
         if (DRY) { stats.nse++; continue; }
 
         if (scr && scr.shareholding && scr.shareholding.length) {
+            // A quarter we have not stored before (and not the company's first load): check the named holders.
+            const latest = scr.shareholding[scr.shareholding.length - 1].period;
+            const known = await prisma.$queryRaw`SELECT "period" FROM "ShareholdingQuarter" WHERE "companyId" = ${company.id}`;
+            const isNewQuarter = known.length > 0 && !known.some(k => k.period === latest);
             try { await saveShareholding(company.id, scr.shareholding); stats.shareholding++; }
             catch (e) { console.warn(`   ⚠️ Shareholding not saved for ${company.ticker}: ${e.message}`); }
+            if (isNewQuarter && scr.screenerId) {
+                try {
+                    const lines = await holderChanges(scr.screenerId, latest);
+                    if (lines.length) { flagHolderChanges(company, latest, lines); stats.holderFlags = (stats.holderFlags || 0) + 1; console.log(`   ${company.ticker}: big holder change — ${lines.join('; ')}`); }
+                } catch (e) { console.warn(`   ⚠️ Holder names not read for ${company.ticker}: ${e.message}`); }
+            }
         }
         await prisma.company.update({
             where: { id: company.id },
@@ -1046,6 +1101,7 @@ async function syncFinance() {
     console.log(`   Skipped (read <12h ago):    ${stats.skippedFresh}`);
     console.log(`   Left untouched (no NSE, Screener off): ${stats.untouched}`);
     console.log(`   Shareholding saved:         ${stats.shareholding}`);
+    console.log(`   Big holder changes flagged: ${stats.holderFlags || 0}`);
     if (DRY || NO_SCREENER) {
         const dueToday = companies.filter(c => !noNse.includes(c) && screenerDue(c, weekday, now)).length;
         console.log(`   (A normal run today would read Screener for ${dueToday} weekly + ${noNse.length} without an NSE price.)`);
