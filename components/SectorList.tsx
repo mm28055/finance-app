@@ -72,6 +72,8 @@ export interface EnrichedCompany {
     filings?: import('@/lib/filings/types').MaterialFiling[];
     checkpoints?: import('@/lib/checkpoints').Checkpoint[];
     projects?: import('@/lib/projects/types').Project[];
+    capacity?: import('@/lib/projects/types').Capacity;
+    management?: import('@/lib/management/types').Management;
     // Shareholding (lib/shareholding.ts). The light load carries only the latest
     // promoter / pledge figures and the warnings; `rows` (oldest first, up to 12)
     // and the positive notes come with the detail fetch.

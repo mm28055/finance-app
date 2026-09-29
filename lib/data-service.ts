@@ -1,7 +1,8 @@
 import { prisma } from '@/lib/prisma';
 import { getCompanyFilings, getCompanyFilingHeadlines } from './filings/server';
 import { checkpointsFor } from './checkpoints';
-import { projectsFor } from './projects';
+import { projectsFor, capacityFor } from './projects';
+import { managementFor } from './management';
 import { SectorData, EnrichedCompany } from '@/components/SectorList';
 import type { CompanyFinancials, MetricData } from '@/components/FinancialMatrix';
 import { AnalysisResult } from './ai-analyst';
@@ -528,6 +529,8 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
         filings: getCompanyFilings(co.name),
         checkpoints: checkpointsFor(co.name),
         projects: projectsFor(co.name),
+        capacity: capacityFor(co.name),
+        management: managementFor(co.name),
         filingHeadlines: getCompanyFilingHeadlines(co.name),
         price: 0,
         priceChange: 0,

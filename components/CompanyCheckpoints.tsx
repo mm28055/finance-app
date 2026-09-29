@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { type Checkpoint, dueRank, formatTarget } from '@/lib/checkpoints/types';
-import { type Project, PROJECT_STATUS_LABEL } from '@/lib/projects/types';
+import { type Project, type Capacity, PROJECT_STATUS_LABEL } from '@/lib/projects/types';
 import { STATUS_STYLE } from './checkpoint-status';
 
 // Settled ones first (latest on top), then pending ones soonest first.
@@ -48,10 +48,10 @@ function CheckpointItem({ c }: { c: Checkpoint }) {
 // "What we were watching": the note's expectations for this company, each settled when its
 // quarter's results arrive (numbers by the daily job, the rest by the weekly review), and the
 // plants and expansions it has under way, with their milestones.
-export function CompanyCheckpoints({ checkpoints, projects }: { checkpoints: Checkpoint[]; projects: Project[] }) {
+export function CompanyCheckpoints({ checkpoints, projects, capacity }: { checkpoints: Checkpoint[]; projects: Project[]; capacity?: Capacity }) {
     const general = checkpoints.filter(c => !c.project).sort(byStatusThenDue);
     const milestones = (id: string) => checkpoints.filter(c => c.project === id).sort(byStatusThenDue);
-    if (!general.length && !projects.length) return null;
+    if (!general.length && !projects.length && !capacity) return null;
 
     return (
         <div id="company-checkpoints" className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
@@ -64,9 +64,26 @@ export function CompanyCheckpoints({ checkpoints, projects }: { checkpoints: Che
                     {general.map(c => <CheckpointItem key={c.id} c={c} />)}
                 </ul>
             )}
-            {projects.length > 0 && (
+            {(projects.length > 0 || capacity) && (
                 <div className={general.length ? 'mt-4 pt-3 border-t border-gray-100' : ''}>
-                    <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-2">Projects and capex</p>
+                    <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-2">Capacity and projects</p>
+                    {capacity && (
+                        <dl className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-xs mb-3 rounded-lg bg-[#F8FAFC] px-3 py-2">
+                            {([
+                                ['Today', capacity.today],
+                                ['Running at', capacity.utilisation],
+                                ['At full use', capacity.fullUse],
+                                ['Capex', capacity.capexStatus],
+                            ] as const).filter(([, v]) => v).map(([k, v]) => (
+                                <React.Fragment key={k}>
+                                    <dt className="text-[10px] text-gray-400 pt-px whitespace-nowrap">{k}</dt>
+                                    <dd className="text-gray-700">{v}</dd>
+                                </React.Fragment>
+                            ))}
+                            <dd className="col-span-2 text-[10px] text-gray-400">{capacity.source}</dd>
+                        </dl>
+                    )}
+                    {projects.length === 0 && !capacity?.capexStatus && <p className="text-xs text-gray-500">No major project under way.</p>}
                     <ul className="flex flex-col gap-3">
                         {projects.map(p => {
                             const ms = milestones(p.id);
@@ -78,7 +95,7 @@ export function CompanyCheckpoints({ checkpoints, projects }: { checkpoints: Che
                                     </div>
                                     <p className="text-gray-600 mt-0.5">{p.what}</p>
                                     <p className="text-[10px] text-gray-400 mt-0.5">
-                                        {[p.cost && `Cost ${p.cost}`, p.expectedStart && `start ${p.expectedStart}`, p.adds && `adds ${p.adds}`, p.source]
+                                        {[p.capacityAdd && `Capacity ${p.capacityAdd}`, p.cost && `cost ${p.cost}`, p.expectedStart && `start ${p.expectedStart}`, p.adds && `sales ${p.adds}`, p.source]
                                             .filter(Boolean).join(' · ')}
                                     </p>
                                     {p.revisions?.map(r => (
