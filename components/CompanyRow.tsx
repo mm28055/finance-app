@@ -682,7 +682,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                         )}
                                         <CompanyNumbers companyId={company.id} />
                                         {effective.holding?.rows && effective.holding.rows.length > 0 && (
-                                            <HoldingCard holding={effective.holding} />
+                                            <HoldingCard holding={effective.holding} companyId={company.id} />
                                         )}
                                         {effective.filings && effective.filings.length > 0 && (
                                             <CompanyFilings filings={effective.filings} />

@@ -3,6 +3,7 @@ import React from 'react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import type { EnrichedCompany } from './SectorList';
 import { TONE_STYLE } from './SectorFilings';
+import { HolderNames } from './HolderNames';
 
 // "Sep 2026" -> "Sep 26"
 const shortPeriod = (p: string) => p.replace(/\s+\d{2}(\d{2})$/, ' $1');
@@ -11,7 +12,8 @@ const fmt = (v: number | null | undefined, digits = 1) => (v == null ? '—' : `
 // Who owns the company: promoter, FII, DII and public over the last 12 periods,
 // the latest figures, the pledge, the number of shareholders and any changes
 // worth a look. Shown in the opened row next to the other cards.
-export function HoldingCard({ holding }: { holding: NonNullable<EnrichedCompany['holding']> }) {
+export function HoldingCard({ holding, companyId }: { holding: NonNullable<EnrichedCompany['holding']>; companyId: string }) {
+    const [tab, setTab] = React.useState<'overview' | 'names'>('overview');
     const rows = holding.rows || [];
     const latest = rows[rows.length - 1];
     if (!latest) return null;
@@ -29,9 +31,18 @@ export function HoldingCard({ holding }: { holding: NonNullable<EnrichedCompany[
     return (
         <div id="company-holding" className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
             <div className="flex items-baseline justify-between mb-2">
-                <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider">Who owns it</p>
+                <div className="flex items-baseline gap-3">
+                    <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider">Who owns it</p>
+                    {(['overview', 'names'] as const).map(t => (
+                        <button key={t} onClick={() => setTab(t)}
+                            className={`text-[11px] ${tab === t ? 'text-gray-800 font-semibold' : 'text-gray-400 hover:text-[#4A7AAF]'}`}>
+                            {t === 'overview' ? 'Overview' : 'Names'}
+                        </button>
+                    ))}
+                </div>
                 <span className="text-[10px] text-gray-400">as of {latest.period}</span>
             </div>
+            {tab === 'names' ? <HolderNames companyId={companyId} /> : <>
             <div className="flex flex-wrap gap-x-4 gap-y-1 mb-3">
                 {stats.map(([label, value]) => (
                     <div key={label} className="flex items-baseline gap-1">
@@ -70,6 +81,7 @@ export function HoldingCard({ holding }: { holding: NonNullable<EnrichedCompany[
                     ))}
                 </ul>
             )}
+            </>}
         </div>
     );
 }
