@@ -725,7 +725,7 @@ export const healthcare: SectorOverview = {
             company: 'Thyrocare Technologies', rank: 6, stance: 'PRICED', segment: DIAG,
             what: "A low-cost pathology factory that tests samples sent by about 11,730 franchisees and health-tech partners; 60.9% owned by Docon, part of PharmEasy's parent API Holdings.",
             view: "**Excellent operations, a stretched owner.** Revenue grew 24% in Q1 at a 32% margin, return on capital is about 35% and it has no bank debt. But Docon has pledged all its shares against about ₹1,050cr of parent debt, sold 10% of Thyrocare in October 2025, takes dividends above 100% of profit, and PharmEasy is also a customer; the radiology sale takes ₹59.5cr in unlisted shares. The price needs about {need:Thyrocare Technologies|24}% a year against my ~17%.",
-            watch: 'The pledge falling as API Holdings repays debt; franchisee additions sticking; the terms and any book loss on the Nueclear sale.',
+            watch: 'The pledge falling as API Holdings repays debt; franchisee additions sticking; the terms and any book loss on the Nueclear sale. It is asking shareholders to approve selling its whole stake in Nueclear Healthcare, a material subsidiary, after first buying land and a building from it (postal ballot, 28 Sep 2026, noted 30 Sep 2026).',
         },
         {
             company: 'Vijaya Diagnostic Centre', rank: 7, stance: 'PRICED', segment: DIAG,
@@ -767,7 +767,7 @@ export const healthcare: SectorOverview = {
             company: 'Krsnaa Diagnostics', rank: 13, stance: 'TURNAROUND', segment: DIAG,
             what: "Runs radiology and pathology centres in government hospitals under long state contracts, at prices 70–95% below private labs, plus a young retail arm; about 85% of revenue comes from these contracts.",
             view: "**Cheap for reasons.** Like-for-like growth is 12–13% at a 25–29% margin. But it has missed its growth guidance for years, Q1 profit fell 19% as interest and depreciation rose, debt is 3.0 times operating profit against ICRA's 2.3 trigger, receivables over a year old jumped to ₹38.3cr, and its auditor drew attention to ₹62.7cr of tax demands after a search. The price needs about {need:Krsnaa Diagnostics|12}% a year against my ~10%. By 28 September the price had fallen about 4% and the price check reads {label:Krsnaa Diagnostics|fits}; the call stays wait until it collects its dues and meets a guide, and on 8 September its first appeals against the tax demands were dismissed or only partly allowed (it is appealing again).",
-            watch: 'Rajasthan revenue roughly doubling in Q2; debtor days below 120; a permanent CFO.',
+            watch: 'Rajasthan revenue roughly doubling in Q2; debtor days below 120; a permanent CFO. On 28 Sep 2026 the board approved selling diagnostic equipment for up to ₹120cr (about 15% of a year’s sales) to move to a lighter-asset model (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Hemant Surgical Inds', rank: 14, stance: 'CYCLICAL', segment: KITS,
