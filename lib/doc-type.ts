@@ -230,6 +230,14 @@ export function detectStatedQuarter(rawText: string | null | undefined, callDate
     };
     for (const m of head.matchAll(/\b(?:Q|QTR|Quarter)\s*[-']?\s*([1-4])\s*(?:of\s+)?(?:FY|F\.Y\.|fiscal(?:\s+year)?)\s*'?\s*(\d{2,4})(?:\s*[-–/]\s*(\d{2,4}))?\b/gi))
         found.push({ at: m.index!, name: fyName(+m[1], fyFrom(m[2], m[3])) });
+    // A fourth-quarter call is usually announced together with the full year —
+    // "Q4 & Full Year FY26 Results" — which pushes the FY away from the quarter
+    // and hid the statement from the pattern above. Turtlemint's Q4 FY26 call
+    // was held in July (they had only just listed), so with nothing stated the
+    // date decided, a July call read as Q1 FY27, and the real Q1 call arriving
+    // in August found the quarter already taken.
+    for (const m of head.matchAll(/\b(?:Q|QTR|Quarter)\s*[-']?\s*([1-4])\s*(?:&|and)\s*(?:the\s+)?(?:(?:full[\s-]?year|year|annual)\s*)?(?:results?\s+)?(?:FY|F\.Y\.|fiscal(?:\s+year)?|financial\s+year)\s*'?\s*(\d{2,4})(?:\s*[-–/]\s*(\d{2,4}))?\b/gi))
+        found.push({ at: m.index!, name: fyName(+m[1], fyFrom(m[2], m[3])) });
     for (const m of head.matchAll(/\b(first|second|third|fourth|1st|2nd|3rd|4th)\s+quarter\s+(?:of\s+)?(?:the\s+)?(?:FY|F\.Y\.|fiscal(?:\s+year)?|financial\s+year)\s*'?\s*(\d{2,4})(?:\s*[-–/]\s*(\d{2,4}))?\b/gi))
         found.push({ at: m.index!, name: fyName(ordinal[m[1].toLowerCase()], fyFrom(m[2], m[3])) });
     for (const m of head.matchAll(new RegExp(String.raw`\bquarter\s+(?:and\s+(?:the\s+)?(?:year|half[\s-]?year|nine\s+months|period)\s+)?(?:ended|ending)\s+(?:on\s+)?(?:(\d{1,2})(?:st|nd|rd|th)?\s+${MONTH_RE},?\s+(\d{4})|${MONTH_RE}\s+(?:(\d{1,2})(?:st|nd|rd|th)?,?\s+)?(\d{4}))`, 'gi'))) {
