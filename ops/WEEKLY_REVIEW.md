@@ -84,8 +84,11 @@ the project). **Management** (`lib/management/management.json`): when a filing o
 MD, CEO, CFO or whole-time director, update `people` (add a sourced bio for a newcomer; never invent), set `changes`
 ("CFO X resigned 12 Oct 2026; Y appointed"), `updatedOn`, and add the source link.
 
-**Needs a session** (`lib/session-todos/todos.json`, shown as a chip on the dashboard header). Add an item when
-something needs the owner to open a session with Claude and you cannot do it within this run's rules: a company to
+**Needs a session** (`lib/session-todos/todos.json`, shown as a chip on the dashboard header) is for the owner's
+attention only. Never park there work you can do yourself later (a section to rewrite after a deal closes, after results,
+after a listing): keep such work as an open needs-attention entry whose `why` says what you are waiting for, check it
+each run, and do it in the run where the condition is met. Add a Needs-a-session item only when something needs the
+owner or a full session and you cannot do it within this run's rules: a company to
 add that needs a new note section you had no room for, a data source failing for more than a week, anything left over
 after the 40-entry limit for a week of runs, a question only the owner can answer. Each item: `id` (short slug),
 `text` (one plain sentence, what to do), `addedOn`, and `notBefore` if it only applies from a date. Remove items that

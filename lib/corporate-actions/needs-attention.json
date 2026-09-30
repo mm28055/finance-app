@@ -308,5 +308,12 @@
     "why": "Add a company section to the Pharma API note (or write the note if the sector has none).",
     "addedOn": "2026-09-29",
     "handled": "2026-09-30: added to the Pharma API note at the same depth as its peers (card data from Screener standalone, Tab 1 charts, moat row, sections 1 and 3–8, tables, closing, sources; Tab 2 card; 4 checkpoints, 3 projects, capacity). Call: wait, rank 11 of 13, my growth ~12%; the live check reads Stretched on reported profit (P/E ~63 after a ₹33.2cr income reversal), far less on core profit. Key facts: first earnings call July 2026; ₹6cr loan to the chairman repaid in FY26; 256-day cash cycle; peptide and cancer-drug plants each a year late."
+  },
+  {
+    "company": "Ganesh Benzoplast",
+    "sector": "Oil",
+    "subject": "Waiting: storage and rail-logistics sale to close",
+    "why": "Ganesh Benzoplast is selling its storage and rail-logistics businesses for ₹1,154cr (more than its market value). Each run, check NSE filings for completion of the sale. Until it closes, leave this entry open. Once it closes, rewrite its section in the Oil note (both tabs) for the chemicals-and-EPC company that remains, decide its call, update its projects, capacity and expectations, and then mark this handled.",
+    "addedOn": "2026-09-30"
   }
 ]
