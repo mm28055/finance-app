@@ -20419,7 +20419,8 @@
    "actual": "Venkatesh Ramachandran joined as Group CFO on 18 May 2026 (NSE filing)",
    "resolvedOn": "2026-09-30",
    "resolvedBy": "review",
-   "outcome": "Stays wait; the CFO question is closed, cash flow remains the test"
+   "outcome": "Stays wait; the CFO question is closed, cash flow remains the test",
+   "correction": true
   },
   {
    "id": "zaggle-prepaid-q3fy27-1",

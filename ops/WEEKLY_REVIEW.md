@@ -57,7 +57,7 @@ For each entry, by its `subject`/`why`:
 **Checkpoints** (`lib/checkpoints/checkpoints.json`, shown on the company card and the /scorecard page). Whenever
 you update a company (a new results call, drift, a filing): (a) judge its pending checkpoints that the new results or
 news settle and that have no `metric` (or a metric the daily job cannot compute): set `status` (met / partly /
-missed), `actual` (a short phrase or figure), `resolvedOn`, `resolvedBy: "review"` and `outcome`; (b) if the latest
+missed), `actual` (a short phrase or figure), `resolvedOn`, `resolvedBy: "review"` and `outcome`; if the event had already happened before the checkpoint's `createdOn` (the note was out of date), also set `correction: true` so it is left out of the hit rate; (b) if the latest
 call changes an expectation (guidance raised, cut or delayed), never drop or rewrite the old checkpoint: append to
 its `revisions` `{ "on": "<YYYY-MM-DD>", "text": "<what management now says, e.g. cut FY27 revenue guide to ₹1,250cr in
 the Q2 FY27 call>" }`, keep judging it on its original target, and add the new target as a new checkpoint; (c) when you write a new

@@ -68,6 +68,7 @@ function CheckpointItem({ c, compact }: { c: Checkpoint; compact?: boolean }) {
                 )}
                 {c.status === 'pending' && c.ifMet && <p className="text-[11px] text-gray-400 mt-1">If met: {c.ifMet}</p>}
                 {c.outcome && <p className="text-[11px] text-gray-500 mt-1">{c.outcome}</p>}
+                {c.correction && <p className="text-[10px] text-gray-400 mt-0.5">Already true when we started watching; not counted in the scorecard.</p>}
                 <Revisions list={c.revisions} />
             </div>
         </li>

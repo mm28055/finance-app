@@ -5,7 +5,9 @@ export const metadata = { title: "Scorecard · Manish Dashboard" };
 
 // Results-season scorecard: every expectation the notes set, grouped by the quarter
 // that settles it, with how many came true. Hit rate counts "partly" as half.
-function hitRate(list: Checkpoint[]) {
+function hitRate(all: Checkpoint[]) {
+    // Corrections (already settled before we started watching) are not predictions.
+    const list = all.filter(c => !c.correction);
     const met = list.filter(c => c.status === 'met').length;
     const partly = list.filter(c => c.status === 'partly').length;
     const missed = list.filter(c => c.status === 'missed').length;

@@ -26,6 +26,9 @@ export interface Checkpoint {
     revisions?: { on: string; text: string }[];
     /** Set when this is a milestone of a capital project (lib/projects), e.g. "plant starts by Q3 FY27". */
     project?: string;
+    /** True when it was already true (or false) before we started watching, e.g. a note that was out of
+     *  date. Shown, but left out of the scorecard's hit rate so it counts only genuine calls. */
+    correction?: boolean;
 }
 
 /** Quarter order: "Q2 FY27" → 272; half-years map onto their closing quarter (H1 → Q2, H2 → Q4). */
