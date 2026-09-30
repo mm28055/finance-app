@@ -22,6 +22,7 @@ import { HoldingCard } from './HoldingCard';
 import { CompanyNumbers } from './CompanyNumbers';
 import { CompanyCheckpoints } from './CompanyCheckpoints';
 import { ManagementCard } from './ManagementCard';
+import { prefetchDetail, takeDetail } from '@/lib/card-prefetch';
 import { CompanyBusinessCard } from './SectorBusinesses';
 import { businessFor } from '@/lib/sector-overviews';
 
@@ -93,11 +94,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
         let cancelled = false;
         setDetailLoading(true);
         setDetailError(null);
-        fetch(`/api/companies/${company.id}/detail`)
-            .then(async (res) => {
-                if (!res.ok) throw new Error(`HTTP ${res.status}`);
-                return res.json();
-            })
+        takeDetail(company.id)
             .then((data: EnrichedCompany) => {
                 if (cancelled) return;
                 setDetail(data);
@@ -296,6 +293,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
             <div
                 ref={rowHeaderRef}
                 onClick={() => setExpanded(!expanded)}
+                onPointerEnter={() => { if (!expanded && !detail) prefetchDetail(company.id); }}
                 className={`scroll-mt-28 flex items-center px-3 2xl:px-4 py-2.5 bg-white ${!isAdminMode ? 'hover:bg-[#F8FAFC] cursor-pointer' : ''} transition-colors group overflow-x-auto md:overflow-visible`}
             >
                 {/* Company Info - Single Line */}

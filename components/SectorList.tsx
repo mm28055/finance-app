@@ -1,5 +1,6 @@
 "use client";
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { warmCardRoutes } from '@/lib/card-prefetch';
 import { CompanyRow } from './CompanyRow';
 import type { CompanyFinancials } from './FinancialMatrix';
 import { AnalysisResult } from '@/lib/ai-analyst';
@@ -138,6 +139,12 @@ export interface SectorData {
 }
 
 export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
+    // Keep the card servers awake while the page is open, so cards open without a wake-up delay.
+    useEffect(() => {
+        warmCardRoutes();
+        const t = setInterval(() => { if (document.visibilityState === 'visible') warmCardRoutes(); }, 4 * 60 * 1000);
+        return () => clearInterval(t);
+    }, []);
     const [searchQuery, setSearchQuery] = useState('');
 
 

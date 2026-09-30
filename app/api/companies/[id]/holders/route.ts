@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { prisma } from '@/lib/prisma';
 import { screenerPageUrl, fetchScreenerPage, screenerCompanyId, cachedFetch } from '@/lib/screener-page';
 
 // GET /api/companies/[id]/holders
@@ -9,7 +10,9 @@ import { screenerPageUrl, fetchScreenerPage, screenerCompanyId, cachedFetch } fr
 
 const GROUPS = ['promoters', 'foreign_institutions', 'domestic_institutions', 'public'] as const;
 
-export async function GET(_req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+export async function GET(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+    // ?warm=1: the home page wakes this function (and its database connection) so the first card opens fast.
+    if (req.nextUrl.searchParams.has('warm')) { await prisma.$queryRaw`SELECT 1`; return new NextResponse(null, { status: 204 }); }
     const { id } = await params;
     try {
         const page = await screenerPageUrl(id);

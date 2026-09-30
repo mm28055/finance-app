@@ -22,6 +22,8 @@ const cached = (seconds: number) => (url: string, init?: RequestInit) =>
     fetch(url, { ...init, headers: { ...UA, ...(init?.headers || {}) }, next: { revalidate: seconds } } as RequestInit);
 
 export async function GET(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+    // ?warm=1: the home page wakes this function (and its database connection) so the first card opens fast.
+    if (req.nextUrl.searchParams.has('warm')) { await prisma.$queryRaw`SELECT 1`; return new NextResponse(null, { status: 204 }); }
     const { id } = await params;
     const metric = (req.nextUrl.searchParams.get('metric') || 'price') as Metric;
     if (!METRICS[metric]) return NextResponse.json({ error: 'Unknown metric' }, { status: 400 });
