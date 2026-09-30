@@ -742,7 +742,7 @@ export const softwareServices: SectorOverview = {
             company: 'Fractal Analytics', rank: 7, stance: 'PRICED', segment: DATA,
             what: "A pure-play enterprise AI and analytics firm listed in FY26, serving very large consumer-goods, healthcare, bank and tech clients mostly in the US; it owns 31.5% of medical-imaging AI firm Qure.ai.",
             view: "**The best franchise here, priced for it.** Net revenue retention is 117%, no client left in Q1, 42% of revenue is priced on output, and it has ₹1,639cr of cash. But constant-currency growth slowed to 9% against a 13% history, TMT fell 22%, the CFO left, profit leans on tax credits and absorbs about ₹23cr a quarter of Qure.ai losses. The price needs about {need:Fractal Analytics|21}% a year against my ~18%.",
-            watch: 'TMT growing again in Q2; Cogentiq revenue disclosed and rising; a new CFO named.',
+            watch: 'TMT growing again in Q2; Cogentiq revenue disclosed and rising; a new CFO named. On 23 Sep 2026 Chief Commercial Officer Matthew Gennone, who also ran Cogentiq, resigned to become a chief executive elsewhere (effective 2 October); Srikanth Velamakanni runs Cogentiq in the meantime (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Happiest Minds', rank: 8, stance: 'SCALEUP', segment: SERV,
@@ -766,13 +766,13 @@ export const softwareServices: SectorOverview = {
             company: 'Saksoft', rank: 11, stance: 'HARVEST', segment: SERV,
             what: "A Chennai IT services firm doing application, testing, Salesforce and ServiceNow work for mid-size clients in tech, banking and logistics; 52% of revenue from the Americas.",
             view: "**High returns, no growth.** Margins hold at about 18%, return on capital has been 24–28% for a decade and cash runs above 100% of EBITDA. But revenue has been flat at about ₹249cr for four quarters, organic constant-currency growth has been near zero for a year, headcount is falling, and management may cut its FY27 target after Q2. The price needs about {need:Saksoft|9}% a year against my ~7%.",
-            watch: 'Q2–Q3 revenue growth from the ₹249cr run-rate; the $28M pipeline converting; top-five client spending.',
+            watch: 'Q2–Q3 revenue growth from the ₹249cr run-rate; the $28M pipeline converting; top-five client spending. On 28 Sep 2026 CARE upgraded its long-term rating to A+ (Stable), and it named Gurmeet Chahal, formerly of Genpact and Digitide, CEO of its US subsidiary from 12 October (NSE filings, noted 30 Sep 2026).',
         },
         {
             company: 'Expleo Solutions', rank: 12, stance: 'HARVEST', segment: SERV,
             what: "The Indian arm (71.05%) of France's Expleo group: software testing and digital engineering for banks and insurers (82% of revenue), plus aerospace and a shrinking automotive practice.",
             view: "**Cheap for reasons tied to its parent.** It needs only about {need:Expleo Solutions|5}% a year against my ~4%, holds ₹352.8cr of net cash and recommended a ₹110 dividend. But constant-currency revenue fell 0.4% in FY26, clients keep all AI savings, 35% of revenue comes from the parent group, subsidiaries lent ₹97.5cr to the parent and a new ₹24.1cr fee went to it. The annual report puts attrition at 25%, not the 15% said on the call.",
-            watch: 'Loans to the parent repaid; constant-currency growth above 8%; an acquisition finally announced.',
+            watch: 'Loans to the parent repaid; constant-currency growth above 8%; an acquisition finally announced. On 29 Sep 2026 it sought shareholder approval for its subsidiaries to lend up to ₹280cr a year (about 25% of sales) to other Expleo group companies, a large related-party limit (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Xtranet Technologies', rank: 13, stance: 'SCALEUP', segment: DOM,
