@@ -250,49 +250,56 @@
     "sector": "Agrochemical & Fertilizers",
     "subject": "Check utilisation figure",
     "why": "The Agro note gives about 45% (table) and about 43% (business section) capacity use in Q1, but the Q1 FY27 call says SSP 79% and DAP/NPK 66%. The 43% may be Krishana's figure copied across. Check against the call and correct the note (and lib/projects/capacity.json).",
-    "addedOn": "2026-09-29"
+    "addedOn": "2026-09-29",
+    "handled": "2026-09-30: the note was right: the Q1 FY27 presentation (production snapshot) and call give SSP about 45% and NPK/DAP about 43%; 79% was the Q1 FY26 column. Corrected lib/projects/capacity.json and projects.json instead. Also added the Dhule phosphoric acid start (28 Sep) and the cut share issue (₹300.5cr) to watch items."
   },
   {
     "company": "AXISCADES Technologies",
     "sector": "Aerospace defence",
     "subject": "Promoter sale: Sep 2026",
     "why": "Promoter Jupiter Capital sold about 10.9% of AXISCADES on 28–29 Sep 2026, taking its stake to about 44.8% (found while researching management). Check the filing for price and buyer, add a dated sentence to the company section and weigh it in the call.",
-    "addedOn": "2026-09-29"
+    "addedOn": "2026-09-29",
+    "handled": "2026-09-30: Jupiter Capital sold 10.86% on 28–29 Sep at about ₹1,825 (₹843cr); buyers included Abakkus and Kotak MF. Dated sentence added with the Cloud Wave purchase (₹234cr) funded by ₹200cr of 12.5% debentures. Stays avoid."
   },
   {
     "company": "TAC Security (Tac Infosec)",
     "sector": "Software",
     "subject": "Governance: loans to CEO",
     "why": "The FY26 annual report audit found loans given to the CEO and his father in breach of company law (since repaid), found while researching management. Confirm from the annual report, mention it in the company section and its risks if the note does not already, and weigh it in the call.",
-    "addedOn": "2026-09-29"
+    "addedOn": "2026-09-29",
+    "handled": "2026-09-30: already in the note (section 1, governance point, moat grid and verdict), and the call is already avoid; no change needed."
   },
   {
     "company": "Zaggle Prepaid",
     "sector": "Software",
     "subject": "Note out of date: CFO",
     "why": "The note says the CFO post is vacant, but Venkatesh Ramachandran became Group CFO on 18 May 2026 (NSE filing). Correct the note.",
-    "addedOn": "2026-09-29"
+    "addedOn": "2026-09-29",
+    "handled": "2026-09-30: corrected in the governance point, verdict view, watch items and closing line (Venkatesh Ramachandran Group CFO from 18 May 2026); checkpoint zaggle-prepaid-q2fy27-2 settled as met. Stays wait."
   },
   {
     "company": "Hexagon Nutrition",
     "sector": "Pharma Others",
     "subject": "Founder stepped down as Chairman",
     "why": "Founder Arun Kelkar ceased to be Chairman on 28 Sep 2026 (found while researching management). Check the NSE filing for who takes over and why, add a dated sentence to the company section, and weigh it in the call.",
-    "addedOn": "2026-09-29"
+    "addedOn": "2026-09-29",
+    "handled": "2026-09-30: NSE filing (28 Sep): term ended; re-appointment not among the AGM approvals, promoters abstained on some resolutions and the company is taking legal advice; no new chairman named. Dated sentence added to watch items. Call unchanged: sons still run the business."
   },
   {
     "company": "India Pesticides",
     "sector": "Agrochemical & Fertilizers",
     "subject": "Promoter family left the board",
     "why": "The promoter family stepped off the board in June 2026 (found while researching management). Check the filings for why and who runs it now, mention it in the company section if the note does not, and weigh it in the call.",
-    "addedOn": "2026-09-29"
+    "addedOn": "2026-09-29",
+    "handled": "2026-09-30: the founder and his two sons resigned from the board on 6 Jun 2026 (company: move to a professionally managed board); CEO and CFO unchanged, family still owns ~63.7%. Dated sentence added. Call unchanged."
   },
   {
     "company": "KRBL",
     "sector": "Food Products",
     "subject": "Governance: auditor qualification",
     "why": "The FY26 annual report says the auditor qualified the accounts over an Enforcement Directorate money-laundering case against a joint MD (found while researching management). Confirm from the report, add it to the company section and risks if missing, and weigh it in the call.",
-    "addedOn": "2026-09-29"
+    "addedOn": "2026-09-29",
+    "handled": "2026-09-30: already in the note (headline, section 1, governance point, Tab 2 and verdict); no change needed."
   },
   {
     "company": "Bajaj Healthcare",
