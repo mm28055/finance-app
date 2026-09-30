@@ -656,7 +656,7 @@ export const solarPvCellsEpc: SectorOverview = {
             company: 'Clean Max Env. Energ', rank: 2, stance: 'PRICED', segment: POWER,
             what: "Clean Max Enviro Energy Solutions (CleanMax): India's largest seller of solar and wind power to companies, owning 3.5 GW of plants and selling their output on contracts of about 23 years to about 600 firms, 42% of contracted capacity to data centres and AI; it also builds plants for clients. Listed in March 2026.",
             view: "**The best business in this note, priced for it.** Q1 FY27 revenue doubled to ₹832cr, the power business's margin rose to 84%, 500 MW was added in the quarter and management set a floor of ₹3,000cr of FY28 EBITDA, 2.3 times FY26; 2.5 GW is already contracted at about ₹4.00 a unit. Against that: net debt of ₹11,809cr, a Rajasthan plant losing about 70% of its output to curtailment (about ₹170cr this year), and a founder group that had pledged about a tenth of the company's shares. The price needs about {need:Clean Max Env. Energ|33}% a year against my ~30%, which is {label:Clean Max Env. Energ|full}.",
-            watch: 'At least 1.5 GW commissioned in FY27 (403 MW in Q1) and FY28 on track for ₹3,000cr of EBITDA; curtailment at Bikaner and state open-access rules; net debt against 5.5 times EBITDA, the founder pledge and Brookfield’s lock-in ending in February 2027.',
+            watch: 'At least 1.5 GW commissioned in FY27 (403 MW in Q1) and FY28 on track for ₹3,000cr of EBITDA; curtailment at Bikaner and state open-access rules; net debt against 5.5 times EBITDA, the founder pledge and Brookfield’s lock-in ending in February 2027. On 28 Sep 2026 it raised ₹2,500cr of secured green bonds at 8.25–8.76% for two to ten years, more than a year’s sales (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Waaree Renewables', rank: 3, stance: 'SCALEUP', segment: EPC,
@@ -668,7 +668,7 @@ export const solarPvCellsEpc: SectorOverview = {
             company: 'Oriana Power', rank: 4, stance: 'SCALEUP', segment: EPC,
             what: "Builds solar and battery plants for companies and state tenders, often holding them in project companies and selling them to investors such as Actis; adding green ammonia; SME-listed and reports half-yearly.",
             view: "**Fast growth, but much of it sold to itself.** Revenue rose 84% to ₹1,814cr and the order book is about ₹6,800cr, but about 60% of revenue was plants sold to its own project companies, whose ₹1,385cr of borrowings it guarantees off the balance sheet, and it missed most FY26 targets. The price needs about {need:Oriana Power|8}% a year against my ~10%, which still leaves some room for a haircut.",
-            watch: 'The 238 MWp Actis sale closing in H1 FY27 with cash coming back; batteries near 40% of FY27 revenue; half-year results on time and guarantees falling.',
+            watch: 'The 238 MWp Actis sale closing in H1 FY27 with cash coming back; batteries near 40% of FY27 revenue; half-year results on time and guarantees falling. On 29 Sep 2026 the three promoters released pledges on 11.31% of the company; none of their shares is now pledged (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Alpex Solar', rank: 5, stance: 'SCALEUP', segment: MODULES,
