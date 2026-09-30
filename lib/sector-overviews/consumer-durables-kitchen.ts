@@ -586,7 +586,7 @@ export const consumerDurablesKitchen: SectorOverview = {
             company: 'Borosil', rank: 5, stance: 'SCALEUP', segment: HOUSE,
             what: "Borosil Ltd: India's only maker of borosilicate kitchen glassware (25% of FY26 sales), Larah opalware (34%), and Hydra steel bottles, appliances and cookware (39%); not to be confused with Borosil Renewables, a separate solar-glass company.",
             view: "**A strong brand with a poor capital record.** Sales have grown, but profit has barely moved (₹66cr in FY24, ₹75cr in FY26), return on capital sits near 11%, free cash has been negative four years and stock is 282 days. This year brings its own bottle plant, solar savings of about ₹28cr and a likely anti-dumping duty, yet Q1's margin was 14.2% and net debt doubled to ₹99cr. The price needs about {need:Borosil|23}% a year against my ~15%.",
-            watch: 'The Finance Ministry notifying the anti-dumping duty; Q2–Q3 margins of 17–18%; stock days and net debt falling.',
+            watch: 'The Finance Ministry notifying the anti-dumping duty; Q2–Q3 margins of 17–18%; stock days and net debt falling. On 25 Sep 2026 India’s trade-remedies authority (DGTR) recommended a five-year anti-dumping duty on borosilicate glassware from China, on Borosil’s own complaint as the only Indian maker; the finance ministry must still impose it (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Stove Kraft', rank: 6, stance: 'SCALEUP', segment: COOK,
