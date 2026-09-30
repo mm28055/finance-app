@@ -521,7 +521,7 @@ export const travelServices: SectorOverview = {
             company: 'BLS International', rank: 1, stance: 'COMPOUNDER', segment: GOVT,
             what: "Runs visa, passport and consular centres for 46 governments in more than 100 countries, plus banking-agent, loan-distribution and Aadhaar centres in India through its listed subsidiary BLS E-Services.",
             view: "**The best business and the cheapest price, with slower growth than it claims.** Visa margins about 40%, ₹903cr of operating cash in FY26, 25% revenue growth in Q1 and ₹1,617cr of net cash (company figure). But visa volumes were flat, the growth target was cut to 15–20%, profit grew 12%, and goodwill is half of equity after ₹1,100cr-plus of acquisitions. The price needs about {need:BLS International|9}% a year against my ~13%.",
-            watch: 'Visa applications growing again from new mandates; Aadhaar revenue at full run-rate by Q1 FY28; a buyback or the next acquisition price.',
+            watch: 'Visa applications growing again from new mandates; Aadhaar revenue at full run-rate by Q1 FY28; a buyback or the next acquisition price. On 28–29 Sep 2026 its subsidiary Atyati sold its group-lending unit (₹100.6cr of turnover) for ₹59 lakh to TVAM Technologies, where an Atyati director is also a director, and Atyati’s auditor S.R. Batliboi resigned citing a conflict of interest (NSE filings, noted 30 Sep 2026).',
         },
         {
             company: 'Thomas Cook India', rank: 2, stance: 'TURNAROUND', segment: FULL,
