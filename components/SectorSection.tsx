@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronDown, ChevronRight, MessageSquare, LayoutGrid, StickyNote, BookOpen, Bell } from 'lucide-react';
 import { useSectorChat } from '@/context/SectorChatContext';
 import { useNotes } from '@/context/NotesContext';
+import { useAdmin } from '@/context/AdminContext';
 import { SectorSnapshot } from '@/components/SectorSnapshot';
 import { SectorOverview } from '@/components/SectorOverview';
 import { getSectorOverview } from '@/lib/sector-overviews';
@@ -29,6 +30,7 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
     const [panel, setPanel] = useState<'none' | 'snapshot' | 'overview' | 'filings'>('none');
     const { openChat } = useSectorChat();
     const { openSectorNotes } = useNotes();
+    const { isAdminMode } = useAdmin();
 
     // Only sectors with a written note in lib/sector-overviews get the tab.
     const overview = getSectorOverview(name);
@@ -115,14 +117,14 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
                             </span>
                         </div>
                     )}
-                    {/* Chat Button */}
-                    <div
+                    {/* Chat Button (signed-in only) */}
+                    {isAdminMode && <div
                         onClick={handleChatClick}
                         className="p-1 text-gray-400 hover:text-[#6B9FCC] hover:bg-[#D4E5F7] rounded transition-all cursor-pointer"
                         title={`Chat with ${name}`}
                     >
                         <MessageSquare className="w-3 h-3" />
-                    </div>
+                    </div>}
                     {/* Notes Button */}
                     <div
                         onClick={handleNotesClick}

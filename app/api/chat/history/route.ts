@@ -1,8 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
 import { prisma } from '@/lib/prisma';
 
 // GET: Fetch chat history for a sector
 export async function GET(req: NextRequest) {
+    const session = await getServerSession(authOptions);
+    if (!session) return NextResponse.json({ error: 'Sign in to use the chat' }, { status: 401 });
     try {
         const { searchParams } = new URL(req.url);
         const sector = searchParams.get('sector');
@@ -34,6 +38,8 @@ export async function GET(req: NextRequest) {
 
 // POST: Save a new message
 export async function POST(req: NextRequest) {
+    const session = await getServerSession(authOptions);
+    if (!session) return NextResponse.json({ error: 'Sign in to use the chat' }, { status: 401 });
     try {
         const { sector, role, content, timestamp } = await req.json();
 
@@ -62,6 +68,8 @@ export async function POST(req: NextRequest) {
 
 // DELETE: Clear history for a sector
 export async function DELETE(req: NextRequest) {
+    const session = await getServerSession(authOptions);
+    if (!session) return NextResponse.json({ error: 'Sign in to use the chat' }, { status: 401 });
     try {
         const { searchParams } = new URL(req.url);
         const sector = searchParams.get('sector');

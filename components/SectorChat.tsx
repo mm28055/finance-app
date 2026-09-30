@@ -2,6 +2,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { X, Send, Bot, Sparkles, Trash2, Minus } from 'lucide-react';
 import { useSectorChat } from '@/context/SectorChatContext';
+import { useAdmin } from '@/context/AdminContext';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
@@ -44,6 +45,7 @@ function clearChatHistory(sector: string): void {
 
 export function SectorChat() {
     const { isOpen, activeSector, closeChat } = useSectorChat();
+    const { isAdminMode } = useAdmin();
     const [isMinimized, setIsMinimized] = useState(false);
     const [messages, setMessages] = useState<Message[]>([]);
     const [input, setInput] = useState("");
@@ -153,7 +155,7 @@ export function SectorChat() {
         }
     };
 
-    if (!isOpen) return null;
+    if (!isOpen || !isAdminMode) return null;
 
     return (
         <div className={`fixed inset-0 z-50 md:inset-auto md:bottom-6 md:right-6 md:w-[600px] bg-white md:rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex flex-col animate-in slide-in-from-bottom-5 duration-300 overflow-hidden ${isMinimized ? 'md:h-auto' : 'md:h-[800px]'}`}>
