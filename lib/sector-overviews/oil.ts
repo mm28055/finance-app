@@ -649,7 +649,7 @@ export const oil: SectorOverview = {
             company: 'Ganesh Benzoplast', rank: 5, stance: 'TURNAROUND', segment: TERMINALS,
             what: "Rents out liquid storage tanks at JNPT (Mumbai), Kochi and Goa ports, and runs a speciality chemicals business and a small port-construction arm.",
             view: "**Scarce tanks, a rent shock, a slow fix.** JNPT is about 100% full, but its lease rent on the older plots rose from ₹2cr to ₹24.25cr a year, underlying FY26 profit fell about 22%, and Q1 profit fell 3% on a 23% margin. The expansion has slipped to December, no dividend was paid, and the auditor still flags a ₹45cr fraud case. The price needs about {need:Ganesh Benzoplast|9–10}% a year against my ~10%.",
-            watch: 'The first ~50,000 kL at JNPT commissioned and filled by Q4 FY27; storage margin back above 35%; the October Supreme Court hearing on the old STC claim.',
+            watch: 'The first ~50,000 kL at JNPT commissioned and filled by Q4 FY27; storage margin back above 35%; the October Supreme Court hearing on the old STC claim. On 29 Sep 2026 it agreed to sell its liquid-storage and rail-logistics businesses to KKR-backed Cisternina Logistics for ₹1,154cr, more than its whole market value, and won a ₹280cr EPC contract from the buyer; the money is earmarked for its chemicals and EPC businesses and possible buybacks, so what remains is a smaller, different company (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Asian Energy Services', rank: 6, stance: 'SCALEUP', segment: SERVICES,
