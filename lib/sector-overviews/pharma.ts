@@ -965,7 +965,7 @@ export const pharma: SectorOverview = {
             company: 'Beta Drugs', rank: 20, stance: 'SCALEUP', segment: SPECIAL,
             what: "Cancer medicines under its own brands, for other companies and for export tenders, plus active ingredients, a skin range and a newly bought fertility (IVF) business, Nivian.",
             view: "**A good core caught in a promise-and-slip cycle.** Its own cancer brands grow about 20% at 35–36% margins, but FY26 guidance was missed, Q1 exports fell 47%, the EU audit has slipped three times, and CRISIL said on 25 September that it is awaiting information from the company. The price needs about {need:Beta Drugs|25}% a year against my ~15%; moved from wait to pass.",
-            watch: 'CRISIL completing its review; H1 exports reaching about ₹55cr; the EU audit actually taking place.',
+            watch: 'CRISIL completing its review; H1 exports reaching about ₹55cr; the EU audit actually taking place. Promoter holding fell from 64.6% to 59.1% in the June quarter because of the preferential issue approved on 4 February 2026 (9.49 lakh new shares, mostly to institutions); the promoters sold nothing (noted 30 Sep 2026).',
         },
         {
             company: 'Sai Parenterals', rank: 21, stance: 'SCALEUP', segment: EXPORT,
