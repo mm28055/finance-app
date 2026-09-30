@@ -929,7 +929,7 @@ export const pharma: SectorOverview = {
             company: 'Natco Pharma', rank: 14, stance: 'CYCLICAL', segment: EXPORT,
             what: "Challenges drug patents in the US and sells the generic during the exclusivity it wins, with Indian cancer brands, a fast-growing Brazil business and 49% of South Africa's Adcock Ingram.",
             view: "**In the trough it promised, and raising money for undisclosed deals.** Q1 sales fell 45% and operating profit 67% as Revlimid ended; 41% of Q1 profit came from Adcock, which it does not control. Profit guidance of about ₹750cr is kept, the revenue range was trimmed, and a ₹1,279cr rights issue at ₹750 will fund “a couple” of acquisitions. The price needs about {need:Natco Pharma|9}% a year against my ~5%.",
-            watch: 'What the rights money buys and at what return; carfilzomib and olaparib timing; Q2–Q4 sales against the ₹3,300–3,400cr range.',
+            watch: 'What the rights money buys and at what return; carfilzomib and olaparib timing; Q2–Q4 sales against the ₹3,300–3,400cr range. On 28 Sep 2026 it filed the offer for a ₹1,279cr rights issue at ₹750 a share (2 for every 21 held), about 11% below the market; holders who do not take it up are diluted by about 9% (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Strides Pharma', rank: 15, stance: 'TURNAROUND', segment: EXPORT,
