@@ -25,6 +25,8 @@ const words = (s: string) => new Set(s.toLowerCase().replace(/revenue/g, 'sales'
 /** The sales line often repeats the capacity line in other words; show it only when it says something new. */
 const adds = (a?: string, b?: string) => {
     if (!b) return false;
+    // A sales line without money or a sales measure just restates the capacity in other words.
+    if (!/₹|\$|revenue|sales|turnover/i.test(b)) return false;
     if (!a) return true;
     const x = words(a), y = words(b);
     const shared = [...y].filter(w => x.has(w)).length;
@@ -155,7 +157,7 @@ export function CompanyCheckpoints({ checkpoints, projects, capacity }: { checkp
                                     {ms.length > 0 && (
                                         <div className="mt-2.5 pt-2 border-t border-dashed border-gray-100">
                                             <p className="text-[10px] font-semibold text-gray-500 mb-1.5">Milestones</p>
-                                            <ul className="flex flex-col gap-2">{ms.map(c => <CheckpointItem key={c.id} c={{ ...c, text: `${c.text} (by ${c.due})` }} compact />)}</ul>
+                                            <ul className="flex flex-col gap-2">{ms.map(c => <CheckpointItem key={c.id} c={{ ...c, text: /\b(19|20)\d\d\b|FY\d\d|\b[QH][1-4]\b/.test(c.text) ? c.text : `${c.text} (by ${c.due})` }} compact />)}</ul>
                                         </div>
                                     )}
                                     <p className="text-[10px] text-gray-400 mt-2">Source: {p.source}</p>
