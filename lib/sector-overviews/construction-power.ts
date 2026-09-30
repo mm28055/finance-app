@@ -556,7 +556,7 @@ export const constructionPower: SectorOverview = {
             company: 'Skipper', rank: 3, stance: 'SCALEUP', segment: MAKER,
             what: "India's largest maker of transmission towers and poles, with a domestic transmission-construction arm and a plastic-pipes business; Power Grid bought about 57% of its FY26 output.",
             view: "**Scale and a stronger balance sheet, tied to one buyer.** Return on capital rose to 24%, the Q1 margin reached 10.7%, profit rose 26%, and ₹433.5cr of new equity is repaying loans. But Q1 revenue grew 4.5%, exports halved, free cash has been negative for two years and the 75,000-tonne expansion has slipped twice. The price needs about {need:Skipper|17}% a year against my ~16%.",
-            watch: 'The expansion running in the second half; export orders towards ₹1,100cr; margin moving towards 12% and less reliance on Power Grid.',
+            watch: 'The expansion running in the second half; export orders towards ₹1,100cr; margin moving towards 12% and less reliance on Power Grid. Promoter holding fell from 66.5% to 61.5% in July 2026 only because the ₹433.5cr preferential issue (92.23 lakh new shares at ₹470, allotted 31 July to institutions including Smallcap World Fund) enlarged the share count; the promoters sold nothing (noted 30 Sep 2026).',
         },
         {
             company: 'KEC International', rank: 4, stance: 'TURNAROUND', segment: EPC,
