@@ -33,11 +33,19 @@ const adds = (a?: string, b?: string) => {
     return shared / Math.max(1, Math.min(x.size, y.size)) < 0.6;
 };
 
+// Figures in a line: "₹25", "1.5", "33%" (commas dropped so 1,080 reads as 1080).
+const figures = (s: string) => s.replace(/(\d),(\d)/g, '$1$2').match(/₹?\d+(\.\d+)?%?/g) || [];
+const MULTIPLE = /doubl|tripl|\w+fold|times/i;
+
 /** "Adds" often restates the description; keep it only when it brings a new figure (e.g. "+43%"). */
 const addsNew = (what: string, add?: string) => {
     if (!add) return false;
     const x = words(what), y = words(add);
     const shared = [...y].filter(w => x.has(w)).length / Math.max(1, Math.min(x.size, y.size));
+    // Every figure already in the description, largely the same words, and no new "doubles"/"tenfold": a repeat.
+    const figs = figures(add), known = new Set(figures(what));
+    const newMultiple = add.match(MULTIPLE) && !what.match(MULTIPLE);
+    if (figs.length && figs.every(f => known.has(f)) && shared >= 0.6 && !newMultiple) return false;
     if (shared < 0.7) return true;
     const pcts = add.match(/[+−-]?\d+(\.\d+)?%/g) || [];
     return pcts.some(p => !what.includes(p.replace(/^[+−-]/, '')));
