@@ -672,13 +672,13 @@ export const pharmaApi: SectorOverview = {
             company: 'Acutaas Chemicals', rank: 2, stance: 'PRICED', segment: ANCHOR,
             what: "Makes advanced intermediates (the last chemical steps before an active ingredient) for innovators and generic makers, led by a 10-year contract on darolutamide, plus battery-electrolyte additives and semiconductor chemicals in India and Korea.",
             view: "**Best growth and best new engines, priced for most of it.** Revenue +59% in Q1, a margin that rose from 18% to 36% in two years, ₹314cr of net cash, a sold-out battery plant and a Korean plant opened early. But contract growth rests on one molecule, free cash has been negative every year since FY21, and inventory days are rising. The price needs about {need:Acutaas Chemicals|29}% a year against my ~25%.",
-            watch: 'Revenue on track for +25% as H2 carries 60% of the year; the four validated contract products ramping in FY28; a fourth battery contract signed with capex.',
+            watch: 'Revenue on track for +25% as H2 carries 60% of the year; the four validated contract products ramping in FY28; a fourth battery contract signed with capex. At the 26 Sep 2026 AGM shareholders voted down stock options for employees of subsidiaries (72.6% in favour against the 75% needed); every other resolution passed (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Aarti Drugs', rank: 3, stance: 'CYCLICAL', segment: VOLUME,
             what: "High-volume APIs (antibiotics, antiprotozoals, metformin, anti-inflammatories, antifungals), specialty chemicals and a formulations arm, now making its own methylamines for metformin.",
             view: "**The cheapest here and the most complete integration among the volume makers.** Its methylamine plant reached 65% use and gross margin rose to 39.3%, but Q1 growth was price (+16–17%), not volume (+3.5%), FY26 profit carried a 7.6% tax rate and about ₹159cr of tax is in dispute. The price needs about {need:Aarti Drugs|13–14}% a year against my ~12%.",
-            watch: 'Volume growth back above 10% as prices ease; methylamines supplying 80–90% of its needs by December; the tax appeals and the salicylic-acid plant.',
+            watch: 'Volume growth back above 10% as prices ease; methylamines supplying 80–90% of its needs by December; the tax appeals and the salicylic-acid plant. On 26 Sep 2026 MD Prakash Patil stepped down a year before his term ends; CFO Adhish Patil becomes MD from 1 October, and whole-time director Uday Patil retired, replaced by Nilesh Patil, a family succession (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'IOL Chem & Pharma', rank: 4, stance: 'CYCLICAL', segment: VOLUME,
@@ -708,7 +708,7 @@ export const pharmaApi: SectorOverview = {
             company: 'Supriya Lifescience', rank: 8, stance: 'TURNAROUND', segment: NICHE,
             what: "Niche active ingredients (anaesthetics about half of sales, antihistamines, vitamins, anti-anxiety and ADHD medicines), mostly made from its own starting materials and 81% exported.",
             view: "**A strong franchise with weak operating controls.** A water shortage and a power-rule change cut the Q1 margin to 25%, and a narcotics case put its sales head in custody. It still guides ₹1,000cr at 32–35%, which needs its best-ever quarter every quarter. The price needs about {need:Supriya Lifescience|21}% a year against my ~18%.",
-            watch: 'Margin back above 33% in Q2 and Q3; a clean EU audit at Ambernath in November; no escalation of the customs case.',
+            watch: 'Margin back above 33% in Q2 and Q3; a clean EU audit at Ambernath in November; no escalation of the customs case. On 23 Sep 2026 the Bombay High Court let the seized 200 kg of ketamine hydrochloride be released against a ₹72 lakh deposit, but the narcotics-law proceedings continue (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'NGL Fine-Chem', rank: 9, stance: 'CYCLICAL', segment: NICHE,
