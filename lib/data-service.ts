@@ -623,6 +623,18 @@ function leaderboardFigures(rows: any[], idx: number) {
     const rev = n(f.revenue), ebitda = n(f.ebitda), pat = n(f.pat);
     const m = margin(ebitda, rev);
     const mPrev = lastYear ? margin(n(lastYear.ebitda), n(lastYear.revenue)) : null;
+    // Profit growth is meaningless across a loss, or when one year carries a big one-off (profit
+    // well above operating profit, e.g. Raymond's ₹5,339cr demerger gain): say what happened instead.
+    const patPrev = lastYear ? n(lastYear.pat) : null, ebitdaPrev = lastYear ? n(lastYear.ebitda) : null;
+    const lumpy = (p: number | null, e: number | null) => p !== null && e !== null && e > 0 && p > 3 * e;
+    const steady = (p: number | null, e: number | null) => p !== null && e !== null && e > 0 && p <= e;
+    let patNote: 'to loss' | 'to profit' | 'loss wider' | 'loss smaller' | 'one-off' | null = null;
+    if (pat !== null && patPrev !== null) {
+        if (patPrev > 0 && pat < 0) patNote = 'to loss';
+        else if (patPrev <= 0 && pat > 0) patNote = 'to profit';
+        else if (patPrev < 0 && pat < 0) patNote = pat < patPrev ? 'loss wider' : 'loss smaller';
+        else if ((lumpy(patPrev, ebitdaPrev) && steady(pat, ebitda)) || (lumpy(pat, ebitda) && steady(patPrev, ebitdaPrev))) patNote = 'one-off';
+    }
     const four = rows.slice(idx, idx + 4);
     const ttmOk = four.length === 4 && four.every(x => x.revenue !== null && x.revenue !== undefined);
     const sum = (k: string) => (ttmOk ? four.reduce((a, x) => a + Number(x[k] ?? 0), 0) : null);
@@ -634,7 +646,8 @@ function leaderboardFigures(rows: any[], idx: number) {
         margin: m,
         marginChange: m !== null && mPrev !== null ? Math.round((m - mPrev) * 10) / 10 : null,
         pat,
-        patYoY: lastYear ? growth(pat, n(lastYear.pat)) : null,
+        patYoY: lastYear && !patNote ? growth(pat, patPrev) : null,
+        patNote,
         ttmRevenue: sum('revenue'),
         ttmEbitda: sum('ebitda'),
         ttmPat: sum('pat'),

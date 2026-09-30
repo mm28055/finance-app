@@ -25,8 +25,10 @@ type Row = {
     marginChange: number | null;
     pat: number | null;
     patYoY: number | null;
+    patNote: PatNote;
     patMargin: number | null;
 };
+type PatNote = 'to loss' | 'to profit' | 'loss wider' | 'loss smaller' | 'one-off' | null;
 type Col = { key: keyof Row; label: string; hint: string; kind: 'money' | 'growth' | 'pct' | 'pts' };
 
 const QUARTER_COLS: Col[] = [
@@ -35,7 +37,7 @@ const QUARTER_COLS: Col[] = [
     { key: 'margin', label: 'EBITDA margin', hint: 'Operating profit as a share of sales', kind: 'pct' },
     { key: 'marginChange', label: 'Margin change', hint: 'Percentage points against the same quarter last year', kind: 'pts' },
     { key: 'pat', label: 'Net profit', hint: 'Profit after tax for the quarter, ₹ crore', kind: 'money' },
-    { key: 'patYoY', label: 'Profit growth', hint: 'Against the same quarter last year (blank when last year was a loss)', kind: 'growth' },
+    { key: 'patYoY', label: 'Profit growth', hint: 'Against the same quarter last year. Shows "to loss", "to profit" or "loss wider/smaller" when a year was a loss, and "one-off" when either year\'s profit was mostly a one-time gain', kind: 'growth' },
 ];
 const TTM_COLS: Col[] = [
     { key: 'revenue', label: 'Sales', hint: 'Last four quarters, ₹ crore', kind: 'money' },
@@ -90,6 +92,25 @@ function Cell({ v, kind, max }: { v: number | null; kind: Col['kind']; max?: num
     );
 }
 
+const NOTE_STYLE: Record<NonNullable<PatNote>, { up: boolean | null; hint: string }> = {
+    'to profit': { up: true, hint: 'A loss a year ago, a profit now' },
+    'loss smaller': { up: true, hint: 'Still a loss, but smaller than a year ago' },
+    'to loss': { up: false, hint: 'A profit a year ago, a loss now' },
+    'loss wider': { up: false, hint: 'A loss both years, bigger now' },
+    'one-off': { up: null, hint: "One year's profit was mostly a one-time gain (well above operating profit), so growth would mislead" },
+};
+
+function PatNoteCell({ note }: { note: NonNullable<PatNote> }) {
+    const s = NOTE_STYLE[note];
+    return (
+        <span title={s.hint} className={`inline-flex items-center gap-0.5 ${s.up === null ? 'text-gray-400' : s.up ? UP : DOWN}`}>
+            {s.up === true && <ArrowUp className="w-3 h-3" />}
+            {s.up === false && <ArrowDown className="w-3 h-3" />}
+            {note}
+        </span>
+    );
+}
+
 export function SectorSnapshot({ sectorName, companies }: SectorSnapshotProps) {
     const [mode, setMode] = React.useState<Mode>('QUARTER');
     const [sort, setSort] = React.useState<{ key: keyof Row; desc: boolean }>({ key: 'revenue', desc: true });
@@ -116,6 +137,7 @@ export function SectorSnapshot({ sectorName, companies }: SectorSnapshotProps) {
             marginChange: ttm ? null : b.marginChange,
             pat,
             patYoY: ttm ? null : b.patYoY,
+            patNote: ttm ? null : (b.patNote ?? null),
             patMargin: revenue && pat !== null ? (pat / revenue) * 100 : null,
         };
     }).filter(r => r.revenue !== null);
@@ -139,8 +161,8 @@ export function SectorSnapshot({ sectorName, companies }: SectorSnapshotProps) {
     const salesThen = paired.reduce((a, r) => a + r.revenue! / (1 + r.revenueYoY! / 100), 0);
     const sectorGrowth = salesThen > 0 ? ((salesNow - salesThen) / salesThen) * 100 : null;
     const medMargin = median(rows.map(r => r.margin).filter((m): m is number => m !== null));
-    const profitUp = current.filter(r => (r.patYoY ?? 0) > 0).length;
-    const profitDown = current.filter(r => r.patYoY !== null && r.patYoY < 0).length;
+    const profitUp = current.filter(r => (r.patYoY ?? 0) > 0 || r.patNote === 'to profit' || r.patNote === 'loss smaller').length;
+    const profitDown = current.filter(r => (r.patYoY !== null && r.patYoY < 0) || r.patNote === 'to loss' || r.patNote === 'loss wider').length;
 
     const header = (c: Col) => {
         const active = sort.key === c.key;
@@ -207,7 +229,9 @@ export function SectorSnapshot({ sectorName, companies }: SectorSnapshotProps) {
                                 </td>
                                 {cols.map(c => (
                                     <td key={c.key} className="px-3 py-1.5 text-right whitespace-nowrap">
-                                        <Cell v={r[c.key] as number | null} kind={c.kind} max={c.key === 'revenue' ? maxRevenue : undefined} />
+                                        {c.key === 'patYoY' && r.patNote
+                                            ? <PatNoteCell note={r.patNote} />
+                                            : <Cell v={r[c.key] as number | null} kind={c.kind} max={c.key === 'revenue' ? maxRevenue : undefined} />}
                                     </td>
                                 ))}
                             </tr>

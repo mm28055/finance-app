@@ -43,6 +43,8 @@ export interface EnrichedCompany {
         revenue: number | null; revenueYoY: number | null;
         ebitda: number | null; margin: number | null; marginChange: number | null;
         pat: number | null; patYoY: number | null;
+        /** Set instead of patYoY when growth would mislead: a swing across zero or a one-off year. */
+        patNote?: 'to loss' | 'to profit' | 'loss wider' | 'loss smaller' | 'one-off' | null;
         ttmRevenue: number | null; ttmEbitda: number | null; ttmPat: number | null;
     };
     analysis?: AnalysisResult;
