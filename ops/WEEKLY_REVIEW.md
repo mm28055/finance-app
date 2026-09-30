@@ -97,8 +97,13 @@ calls in); do not add those.
 
 **Filings pass.** For each filing of the week that changes the investment case of a company covered by a note — a
 large order against sales, a fund-raise or dilution, a CEO/CFO/MD exit, a rating change, an acquisition or disposal,
-promoter selling or pledging, a regulatory or legal outcome — add one dated sentence to that company's section (and
-its watch items if relevant); change the call only if clearly warranted. Ignore routine items. No needs-attention
+promoter selling or pledging, a regulatory or legal outcome — first search the note and its `-businesses.ts` card for
+the company and correct whatever the filing has made wrong or out of date (an order total, "plans to list" once listed,
+"expected by Q3" once it has happened, a watch item it settles, a pending checkpoint it settles). Then, only if it
+matters to the investment case, mention it once in the company's view/verdict and once in the card where it naturally
+belongs. Watch items are a forward-looking list: rewrite them (drop what is settled, add what is still to watch);
+never tack a news sentence onto the end of one, and never paste the same news into every section. Change the call
+only if clearly warranted. Ignore routine items (small promoter trades, routine appointments). No needs-attention
 entry is needed for these; list them in the log.
 
 Then mark the entry done: add `"handled": "<YYYY-MM-DD>: <one line: what you found and did>"`. Never delete entries.
