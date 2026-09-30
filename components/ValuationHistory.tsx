@@ -29,7 +29,7 @@ const monthYear = (d: string) => new Date(d).toLocaleDateString('en-IN', { month
 
 export function ValuationHistory({ companyId, embedded = false }: { companyId: string; embedded?: boolean }) {
     const [metric, setMetric] = React.useState<Metric>('price');
-    const [years, setYears] = React.useState(3);
+    const [years, setYears] = React.useState(1);
     const [cache, setCache] = React.useState<Record<string, Point[] | 'error' | undefined>>({});
 
     React.useEffect(() => {
