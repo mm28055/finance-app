@@ -688,13 +688,13 @@ export const chemicalsIngredients: SectorOverview = {
             company: 'Ellen. Indl. Gas', rank: 5, stance: 'PRICED', segment: SERV,
             what: "Ellenbarrie Industrial Gases: an eastern and southern Indian maker of oxygen, nitrogen and argon, supplied through on-site plants on 15–20-year contracts, tankers and cylinders; listed July 2025.",
             view: "**A sound gas business whose profit leans on its IPO cash.** It earns 31–38% margins, legacy plants are full, and the East India plant started in September. But about two-fifths of pre-tax profit is treasury income from funds, debentures and shares, which ₹450cr of capex will use up, and new merchant plants take 6–7 years to pay back. The price needs about {need:Ellen. Indl. Gas|22}% a year against my ~13%.",
-            watch: 'The East India and Uluberia-2 plants filling; an onsite win above 600 tonnes a day; no more investment write-downs.',
+            watch: 'The East India and Uluberia-2 plants filling; an onsite win above 600 tonnes a day; no more investment write-downs. On 28 Sep 2026 it won a ₹481cr contract from BHEL to build a 1,200 tonnes-a-day air-separation unit over eight quarters, more than its last year’s sales, for commissioning in FY29 (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'SH Kelkar & Co', rank: 6, stance: 'TURNAROUND', segment: FRAG,
             what: "Keva, India's largest home-grown fragrance and flavour house, compounding fragrances for soaps and personal care and flavours for food, with plants and creative centres in India, Europe, the UK and the US.",
             view: "**A real franchise weighed down by debt and overseas costs.** Q1 margin recovered to 13% and 95% of clients accepted price rises, and flavours earn about 24%. But net debt rose to ₹852cr, return on capital is 6%, Q1 profit included a ₹30cr insurance gain, and the chairman died in September. The price needs about {need:SH Kelkar & Co|22}% a year against my ~14%.",
-            watch: 'Net debt falling about ₹25cr a quarter from Q3; margin above 13% without one-offs; any change in ownership after the chairman’s death.',
+            watch: 'Net debt falling about ₹25cr a quarter from Q3; margin above 13% without one-offs; any change in ownership after the chairman’s death. On 28 Sep 2026 CRISIL reaffirmed its AA- rating but moved the outlook to Negative (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Fineotex Chemical', rank: 7, stance: 'SCALEUP', segment: FORM,
