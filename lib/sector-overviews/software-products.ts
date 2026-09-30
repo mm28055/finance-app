@@ -719,7 +719,7 @@ export const softwareProducts: SectorOverview = {
             company: 'RateGain Travel Tech', rank: 3, stance: 'SCALEUP', segment: SAAS,
             what: "A Noida-based travel-technology company selling price data, hotel distribution and, since buying US-based Sojern in November 2025, performance marketing to hotels, airlines and destinations; MarTech is now over 81% of revenue.",
             view: "**A well-executed acquisition, reported generously.** Organic growth was 17.5% in Q1, margin guidance rose a point, discounting has eased and 38% of the US$125M loan is repaid. But filed Q1 profit was ₹94.9cr against ₹116.8cr adjusted, amortisation runs at ₹33.8cr a quarter and goodwill is ₹1,581cr. The price needs about {need:RateGain Travel Tech|20}% a year against my ~17%.",
-            watch: 'Organic growth above 15% once the FIFA boost drops out in Q2; revenue beating ₹3,100cr with filed margins above 21%; net debt below ₹400cr by March.',
+            watch: 'Organic growth above 15% once the FIFA boost drops out in Q2; revenue beating ₹3,100cr with filed margins above 21%; net debt below ₹400cr by March. On 28 Sep 2026 it appointed Chetan Garg, formerly CFO of Optum India, as CFO (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Capillary Technologies', rank: 4, stance: 'SCALEUP', segment: SAAS,
