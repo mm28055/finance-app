@@ -45,8 +45,8 @@ For each entry, by its `subject`/`why`:
   `Verdict:` line, section 1 paragraph, closing line), adding one dated sentence why. A "follow" whose price now fits
   with the thesis intact is a candidate for "own"; an "own" now stretched may drop to "follow".
 - **Shareholding** (promoter holding fell 5+ points, or pledges jumped 20+ points): find out why from NSE filings
-  (promoter sale, share issue/dilution, merger, pledge for a loan …). Add one dated sentence to the company's risks
-  or watch items; change the call only if it clearly warrants it, and say why.
+  (promoter sale, share issue/dilution, merger, pledge for a loan …). Work it into the company's risks or watch items
+  only if it matters (rewrite the item; never tack a sentence onto the end); change the call only if it clearly warrants it, and say why.
 - **Demerger** / new listing: update the company's section to describe the business as it now is; add a newly
   listed company only if the entry asks for it (it will already be on the dashboard in that sector).
 - **Moved sector** / **Not in the <sector> note**: follow `tools/notes/docs/ADD_COMPANY_BRIEF.md` (research, card data
