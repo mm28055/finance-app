@@ -640,7 +640,7 @@ export const chemicalsAdditives: SectorOverview = {
             company: 'Kiri Industries', rank: 8, stance: 'AVOID', segment: COLOUR,
             what: "A reactive-dye and dye-intermediate maker in Gujarat with a 40% Chinese-partnered dye joint venture, now building a ₹13,300cr copper smelter and fertiliser complex with the proceeds of its DyStar stake.",
             view: "**Cash worth more than the company, committed to a project I cannot underwrite.** Net cash of ₹4,354cr exceeds its market value and dye prices have doubled. But the dye business lost money at the operating level from FY23 to FY26, related parties took 35% of sales, the auditor flagged the tax treatment of the award and write-offs, the copper project has no financial closure, and FY28 copper guidance was withdrawn a quarter after it was given. Its reported profit rests on treasury income while the dye business loses money; I expect earnings to fall about 15% a year.",
-            watch: 'Financial closure and a binding concentrate contract; any tax demand on the DyStar award; the tube plant starting by June 2027.',
+            watch: 'Financial closure and a binding concentrate contract; any tax demand on the DyStar award; the tube plant starting by June 2027. It plans a preferential issue of warrants at ₹422.93, about a quarter below the market price, adding more than 5% to the enlarged share capital (AGM notice corrigendum, 23 Sep 2026, noted 30 Sep 2026).',
         },
     ],
 
