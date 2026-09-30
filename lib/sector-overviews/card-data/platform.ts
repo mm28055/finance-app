@@ -1252,6 +1252,214 @@ export const platformCharts: Record<string, ProfileCharts> = {
             "inventory5y": null,
             "payables5y": 15
         }
+    },
+    "Shiprocket": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 1
+                },
+                {
+                    "label": "Power and factory costs",
+                    "share": 75
+                },
+                {
+                    "label": "Staff",
+                    "share": 19
+                },
+                {
+                    "label": "Other costs",
+                    "share": 9
+                },
+                {
+                    "label": "Operating loss",
+                    "share": 4
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                -79.0,
+                -283.0,
+                -293.0,
+                -60.0,
+                -67.0
+            ],
+            "ocf": [
+                -43.0,
+                -138.0,
+                -216.0,
+                2.0,
+                53.0
+            ],
+            "fcf": [
+                -55.0,
+                -169.0,
+                -241.0,
+                -5.0,
+                35.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "Loss-making"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "n/m",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹141cr",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "n/m",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "-3%"
+            }
+        ],
+        "statsAsOf": "30 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                28,
+                43
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                -40,
+                43
+            ],
+            "absorbed5y": -146,
+            "receivables5y": -252,
+            "inventory5y": -1,
+            "payables5y": 142
+        }
+    },
+    "Turtlemint Fintech": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Staff",
+                    "share": 22
+                },
+                {
+                    "label": "Other costs",
+                    "share": 90
+                },
+                {
+                    "label": "Operating loss",
+                    "share": 12
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                -171.0,
+                -314.0,
+                -211.0,
+                -188.0,
+                -130.0
+            ],
+            "ocf": [
+                -186.0,
+                -286.0,
+                -242.0,
+                -216.0,
+                -182.0
+            ],
+            "fcf": [
+                -192.0,
+                -298.0,
+                -243.0,
+                -218.0,
+                -185.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "Loss-making"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "n/m",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹107cr net cash",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "n/m",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "-12%"
+            }
+        ],
+        "statsAsOf": "30 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                95,
+                53
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                95,
+                53
+            ],
+            "absorbed5y": -166,
+            "receivables5y": -109,
+            "inventory5y": null,
+            "payables5y": -18
+        }
     }
 };
 
@@ -1323,5 +1531,19 @@ export const platformValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 106.0,
         "mcapAtWriting": 1604.0,
         "peAtWriting": 1707.0
+    },
+    "Shiprocket": {
+        "netDebt": 141,
+        "ttmEbitda": -60.0,
+        "mcapAtWriting": 8727.0,
+        "peAtWriting": null,
+        "lossMaking": true
+    },
+    "Turtlemint Fintech": {
+        "netDebt": -107,
+        "ttmEbitda": -117.0,
+        "mcapAtWriting": 2256.0,
+        "peAtWriting": null,
+        "lossMaking": true
     }
 };
