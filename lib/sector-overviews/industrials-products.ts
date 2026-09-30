@@ -579,7 +579,7 @@ export const industrialsProducts: SectorOverview = {
             company: 'Aditya Infotech', rank: 5, stance: 'PRICED', segment: BRAND,
             what: "CP PLUS brand CCTV cameras, recorders and security products, made mainly at its own Kadapa plant and sold through 800-plus distributors.",
             view: "**A rare consumer-style brand, priced ahead of its cash.** Revenue +89% in Q1, 43% of the Indian market and price rises of 10–20% that stuck, with ₹6,000–6,500cr guided for FY27. But the share came from a rule that shut out Chinese chips, operating cash was ₹13cr on ₹566cr of FY26 operating profit, and a ₹1,500cr share placement followed the IPO. The price needs about {need:Aditya Infotech|32}% a year against my ~25%.",
-            watch: 'H1 operating cash turning clearly positive; share holding as 40-plus certified rivals scale; any change to the CCTV testing rule.',
+            watch: 'H1 operating cash turning clearly positive; share holding as 40-plus certified rivals scale; any change to the CCTV testing rule. On 25 Sep 2026 it raised ₹1,500cr through a QIP at ₹3,467 a share, about 3.5% dilution (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Borosil Renewables', rank: 6, stance: 'CYCLICAL', segment: SCARCE,
@@ -591,7 +591,7 @@ export const industrialsProducts: SectorOverview = {
             company: 'Tega Industries', rank: 7, stance: 'CYCLICAL', segment: CONSUME,
             what: "Mill liners and wear parts for mining, now combined with Molycop, the world's leading maker of steel grinding balls, through an 84%-owned holding company.",
             view: "**The finest wear-parts model here, now a leveraged mining bet.** The original business earns about 22% and its consumables grew 36% in Q1; Molycop indexes about 85% of contracts to steel. But group debt is about ₹11,200cr, Crisil expects 4.0–4.5 times operating profit at the peak, Q1 was a ₹108cr loss, and consumables missed their 15% target three years running. It is loss-making over the last year, so I give no estimate and it is not in the live table.",
-            watch: 'Two full quarters of Molycop results; net debt falling toward 3.0–3.5 times by FY28; consumables growing 15% without spill-over help.',
+            watch: 'Two full quarters of Molycop results; net debt falling toward 3.0–3.5 times by FY28; consumables growing 15% without spill-over help. On 23 Sep 2026 a Canadian tribunal upheld duties on dumped Chinese grinding media, which helps its Moly-Cop Canada unit; shareholders also approved a preferential issue whose size is not yet disclosed (NSE filings, noted 30 Sep 2026).',
         },
         {
             company: 'HPL Electric', rank: 8, stance: 'CYCLICAL', segment: BRAND,
