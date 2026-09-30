@@ -645,7 +645,7 @@ export const hotelsAndTravels: SectorOverview = {
             company: 'Leela Palaces Hotels', rank: 6, stance: 'PRICED', segment: LUXURY,
             what: "Owns and runs Leela palace hotels in Delhi, Bengaluru, Chennai, Udaipur and Jaipur plus a Coorg resort, and manages others; Brookfield owns 75.9% after the 2025 IPO.",
             view: "**Best delivery this year, {label:Leela Palaces Hotels|full} price.** Revenue +28%, company operating profit +41%, RevPAR +17% and fees +86%, beating every Q4 promise, and interest fell by more than half after the IPO. But return on capital is 9%, contingent liabilities are ₹554cr and the Dubai stake lost ₹15.6cr in Q1. The price needs about {need:Leela Palaces Hotels|21–22}% a year against my ~18%.",
-            watch: 'FY27 operating-profit growth in the mid-to-high teens, as guided; Srinagar and Bandhavgarh on time in late 2027; the Dubai handover and residence sales.',
+            watch: 'FY27 operating-profit growth in the mid-to-high teens, as guided; Srinagar and Bandhavgarh on time in late 2027; the Dubai handover and residence sales. On 24 June 2026 Brookfield’s holding companies pledged 73.7% of their shares (55.9% of the company) to Catalyst Trusteeship as security for a loan facility of up to US$500m from a group of global banks; a pledge by a promoter this large is a risk if the loan is ever called (noted 30 Sep 2026).',
         },
         {
             company: 'Ventive Hospitality', rank: 7, stance: 'CYCLICAL', segment: LUXURY,
@@ -657,7 +657,7 @@ export const hotelsAndTravels: SectorOverview = {
             company: 'Viceroy Hotels', rank: 8, stance: 'TURNAROUND', segment: BRANDED,
             what: "Owns three Marriott-run properties in Hyderabad after emerging from insolvency in 2023, and plans a new Courtyard in Madhapur.",
             view: "**Recovering, but thin profit and related-party questions.** Occupancy up from 54% to 76%, sales +77%, and the ₹105.8cr rights issue should roughly halve net debt. But room rates fell 12%, Q1 profit was ₹1.45cr, the ₹206cr apartments hotel came from a director's family, and the previous auditor resigned with no reason given. The price needs about {need:Viceroy Hotels|22}% a year against my ~20%.",
-            watch: 'The convention centre back by December 2026; an FY27 margin above 30%; no further related-party purchases.',
+            watch: 'The convention centre back by December 2026; an FY27 margin above 30%; no further related-party purchases. Promoter holding fell from 84.1% to 74% in September 2026 because the ₹105.8cr rights issue (92.03 lakh shares at ₹115, allotted 15 September) was offered only to public shareholders, to meet the 25% minimum public holding; the promoters sold nothing (noted 30 Sep 2026).',
         },
         {
             company: 'Brigade Hotel Ven.', rank: 9, stance: 'SCALEUP', segment: BRANDED,
