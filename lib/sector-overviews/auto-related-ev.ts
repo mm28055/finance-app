@@ -687,7 +687,7 @@ export const autoRelatedEv: SectorOverview = {
             company: 'Sedemac Mechatronics', rank: 8, stance: 'PRICED', segment: DRIVE,
             what: "Designs and makes engine and motor control units for two- and three-wheelers and gensets, led by patented sensorless starter-generator controllers; listed in March 2026.",
             view: "**The best technology here, with one customer and a very full price.** Revenue grew 43% in Q1 and it supplied over 80% of India’s FY26 starter-generator growth, with little debt. But one customer is 77% of revenue, ₹40.9cr of development is capitalised, a GST search is open and pre-IPO investors are selling. The price needs about {need:Sedemac Mechatronics|36}% a year against my ~26%.",
-            watch: 'A starter-generator win at a second large maker; the GST search closing without a demand; further investor selling.',
+            watch: 'A starter-generator win at a second large maker; the GST search closing without a demand; further investor selling. On 28 Sep 2026 pre-IPO investor Xponentia sold 6.4% in the market (about ₹986cr), cutting its stake to 9.3% (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Dhoot Transmission', rank: 9, stance: 'SCALEUP', segment: WIRE,
