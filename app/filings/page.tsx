@@ -1,15 +1,20 @@
 import { getAllFilings } from "@/lib/filings/server";
 import { allSectorOverviews, companyCallInfo } from "@/lib/sector-overviews";
 import { FilingsFeed } from "@/components/FilingsFeed";
+import { prisma } from "@/lib/prisma";
+
+// Read on each visit, so the portfolio filter follows changes to the portfolio.
+export const dynamic = "force-dynamic";
 
 export const metadata = { title: "Filings · Manish Dashboard" };
 
 // All companies' material filings in one list, newest first, defaulting to the ones that can
 // move the share price (marked nightly by the filings job).
-export default function FilingsPage() {
+export default async function FilingsPage() {
     const { to, filings } = getAllFilings();
     const calls = companyCallInfo(allSectorOverviews());
-    const rows = filings.map(f => ({ ...f, call: calls.get(f.company.trim().toLowerCase())?.call }));
+    const portfolio = new Set((await prisma.company.findMany({ where: { inPortfolio: true }, select: { name: true } })).map(c => c.name));
+    const rows = filings.map(f => ({ ...f, call: calls.get(f.company.trim().toLowerCase())?.call, inPortfolio: portfolio.has(f.company) }));
     return (
         <main className="min-h-screen bg-[#FAFBFC] p-6">
             <header className="flex justify-between items-center mb-6 pb-4 border-b border-gray-200">

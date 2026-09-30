@@ -4,7 +4,7 @@ import { ExternalLink, Search } from 'lucide-react';
 import type { MaterialFiling } from '@/lib/filings/types';
 import { TONE_STYLE } from './SectorFilings';
 
-type Row = MaterialFiling & { call?: string };
+type Row = MaterialFiling & { call?: string; inPortfolio?: boolean };
 
 const CALL_TONE: Record<string, string> = {
     own: 'bg-emerald-50 text-emerald-700', follow: 'bg-[#EAF2FB] text-[#4A7AAF]', wait: 'bg-gray-100 text-gray-600',
@@ -28,7 +28,7 @@ export function FilingsFeed({ filings }: { filings: Row[] }) {
         (all || f.impact === 'high') &&
         (tone === 'any' || f.tone === tone) &&
         (call === 'any' || f.call === call) &&
-        (sector === 'any' || f.sector === sector) &&
+        (sector === 'any' || (sector === 'portfolio' ? f.inPortfolio : f.sector === sector)) &&
         (!q || f.company.toLowerCase().includes(q.toLowerCase())));
     const byDay = new Map<string, Row[]>();
     for (const f of shown) byDay.set(f.date, [...(byDay.get(f.date) || []), f]);
@@ -52,6 +52,7 @@ export function FilingsFeed({ filings }: { filings: Row[] }) {
                 </select>
                 <select className={select} value={sector} onChange={e => setSector(e.target.value)}>
                     <option value="any">All sectors</option>
+                    <option value="portfolio">My portfolio</option>
                     {sectors.map(s => <option key={s} value={s}>{s}</option>)}
                 </select>
                 <label className="flex items-center gap-1.5 px-2 py-1 rounded-lg border border-gray-200 bg-white text-[11px] text-gray-500">
