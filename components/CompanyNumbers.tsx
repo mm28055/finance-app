@@ -7,7 +7,7 @@ import { ValuationHistory } from './ValuationHistory';
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
 // Bump when the shape of /financials changes, so browsers never reuse an older copy.
-const DATA_VERSION = 4;
+const DATA_VERSION = 5;
 
 type Tab = 'history' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios';
 type Row = { label: string; src: string; expandable: boolean; values: (string | null)[] };

@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { screenerPageUrl, fetchScreenerPage, screenerTable, screenerGrowth, type ScreenerView } from '@/lib/screener-page';
 
 // GET /api/companies/[id]/financials?view=consolidated|standalone
-// The last four quarters and the last five years of P&L, balance sheet, cash flow and working-capital ratios,
+// The last five quarters and the last five years of P&L, balance sheet, cash flow and working-capital ratios,
 // plus Screener's growth summary, read from the company's Screener page when its
 // card is opened. The page is cached for a day; nothing is stored.
 
@@ -62,13 +62,14 @@ type Row = { label: string; src: string; expandable: boolean; values: (string | 
                 rows,
             };
         }
-        // Last four quarters, plus the latest quarter's growth on the same quarter a year earlier.
+        // Last five quarters, so the latest sits beside the same quarter a year earlier, plus that growth.
         const q = screenerTable(html, 'quarters');
         if (q && q.columns.length >= 1) {
             const n = q.columns.length;
-            const last4 = [...Array(Math.min(4, n)).keys()].map(k => n - Math.min(4, n) + k);
             // Half-yearly reporters (SMEs) have only Mar/Sep columns: a year back is two columns, not four.
             const halfYearly = q.columns.slice(-3).every(c => /^(Mar|Sep) /.test(c));
+            const show = Math.min(halfYearly ? 3 : 5, n);
+            const qCols = [...Array(show).keys()].map(k => n - show + k);
             const back = halfYearly ? 2 : 4;
             const yearAgo = n > back ? n - 1 - back : -1;
             const num = (v: string | null | undefined) => (v === null || v === undefined || v === '' ? null : Number(v.replace(/,/g, '').replace('%', '')));
@@ -78,7 +79,7 @@ type Row = { label: string; src: string; expandable: boolean; values: (string | 
                 .map(([src, label]) => {
                     const r = q.rows.find(x => x.label === src);
                     if (!r) return null;
-                    const values: (string | null)[] = last4.map(i => r.values[i] ?? null);
+                    const values: (string | null)[] = qCols.map(i => r.values[i] ?? null);
                     let yoy: string | null = null;
                     if (growthRows.has(src) && yearAgo >= 0) {
                         const now = num(r.values[n - 1]), then = num(r.values[yearAgo]);
@@ -96,7 +97,7 @@ type Row = { label: string; src: string; expandable: boolean; values: (string | 
                 const fyLabel = `FY${String(fy % 100).padStart(2, '0')}`;
                 return halfYearly ? `${qn === 2 ? 'H1' : 'H2'} ${fyLabel}` : `Q${qn} ${fyLabel}`;
             };
-            if (rows.length) tables['quarters'] = { columns: [...last4.map(i => fq(q.columns[i])), 'YoY'], raw: [...last4.map(i => q.columns[i]), null], rows };
+            if (rows.length) tables['quarters'] = { columns: [...qCols.map(i => fq(q.columns[i])), 'YoY'], raw: [...qCols.map(i => q.columns[i]), null], rows };
         }
         const empty = !tables['profit-loss']?.rows.some(r => r.values.some(v => v !== null && v !== '0'));
         return NextResponse.json({
