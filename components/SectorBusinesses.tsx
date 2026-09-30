@@ -109,6 +109,174 @@ function Label({ children }: { children: React.ReactNode }) {
     return <div className="text-[10px] font-semibold uppercase tracking-wide text-[#4A7AAF] mb-1">{children}</div>;
 }
 
+// ── The card's short version: description, good/bad/watch and the verdict ────
+
+const CALL_STYLE: Record<string, { chip: string; box: string }> = {
+    own: { chip: 'bg-emerald-600 text-white', box: 'bg-emerald-50 border-emerald-200' },
+    follow: { chip: 'bg-[#4A7AAF] text-white', box: 'bg-[#F3F7FC] border-[#DCE8F6]' },
+    wait: { chip: 'bg-amber-500 text-white', box: 'bg-amber-50 border-amber-200' },
+    pass: { chip: 'bg-gray-400 text-white', box: 'bg-gray-50 border-gray-200' },
+    avoid: { chip: 'bg-rose-500 text-white', box: 'bg-rose-50 border-rose-200' },
+};
+
+const SIDE_STYLE: Record<string, { head: string }> = {
+    Good: { head: 'text-emerald-700' },
+    Bad: { head: 'text-rose-600' },
+    Watch: { head: 'text-amber-700' },
+};
+
+interface ShortVersion {
+    description?: string;
+    sides: { label: string; points: string[] }[];
+    call?: string;
+    reason?: string;
+}
+
+// Words that start a clause rather than a new item, so a comma before them is not a list break.
+const CLAUSE_WORDS = /^(though|although|but|which|while|whose|who|where|when|so|as|because|since|including|mainly|mostly|largely|partly|chiefly|up|down|from|against|after|before|with|without|then|or|nor|yet|even|until|than|if|both|each|about|roughly|nearly|almost|only|just|now|still|led|helped|driven|funded|paid|priced|held|backed|at|in|on|to|by|for|of|taking|making|leaving|putting|meaning|pushing|cutting|lifting|adding|raising|bringing|helping|giving|keeping|turning|using|beating|missing|thanks|well|far)\b/i;
+
+// A Good/Bad/Watch run is written as one sentence; split it on semicolons and on list commas
+// (not inside brackets, not inside numbers like ₹1,352cr, not before a clause word).
+function splitPoints(text: string): string[] {
+    const out: string[] = [];
+    let depth = 0, start = 0;
+    for (let i = 0; i < text.length; i++) {
+        const c = text[i];
+        if (c === '(') depth++;
+        else if (c === ')') depth = Math.max(0, depth - 1);
+        else if (depth === 0 && (c === ';' || c === ',') && text[i + 1] === ' ') {
+            const rest = text.slice(i + 2);
+            if (c === ',' && CLAUSE_WORDS.test(rest)) continue;
+            out.push(text.slice(start, i));
+            start = i + 2;
+        }
+    }
+    out.push(text.slice(start));
+    // Very short fragments read better joined back to the point before them.
+    return out.reduce<string[]>((acc, s) => {
+        if (acc.length && s.trim().split(/\s+/).length < 4) acc[acc.length - 1] += `, ${s}`;
+        else acc.push(s);
+        return acc;
+    }, []);
+}
+
+// Splits inShort's three bullets (a description; Good plus Bad or Watch; the Verdict) into parts.
+function parseInShort(items: string[]): ShortVersion | null {
+    const verdictAt = items.findIndex(x => /\*\*Verdict:/i.test(x));
+    const sidesAt = items.findIndex(x => /\*\*(Good|Bad|Watch):\*\*/.test(x));
+    if (verdictAt < 0 || sidesAt < 0) return null;
+
+    const v = items[verdictAt].match(/^\s*\*\*Verdict:\s*(own|follow|wait|pass|avoid)\b([^*]*)\*\*\s*([\s\S]*)$/i);
+    if (!v) return null;
+    let reason = `${v[2].replace(/^[\s.,;:]+/, '')} ${v[3].replace(/^[\s.,;:]+/, '')}`.trim();
+    reason = reason.charAt(0).toUpperCase() + reason.slice(1);
+
+    const sides: ShortVersion['sides'] = [];
+    const parts = items[sidesAt].split(/\*\*(Good|Bad|Watch):\*\*/);
+    for (let i = 1; i < parts.length; i += 2) {
+        const points = splitPoints(parts[i + 1])
+            .map(s => s.trim().replace(/^and\s+/, '').replace(/[.;,]\s*$/, ''))
+            .filter(Boolean)
+            .map(s => s.charAt(0).toUpperCase() + s.slice(1));
+        if (points.length) sides.push({ label: parts[i], points });
+    }
+    const description = items.find((_, i) => i !== verdictAt && i !== sidesAt);
+    return { description, sides, call: v[1].toLowerCase(), reason };
+}
+
+function ShortVersionBlock({ sv }: { sv: ShortVersion }) {
+    const style = CALL_STYLE[sv.call ?? ''] ?? CALL_STYLE.pass;
+    return (
+        <div className="mt-2.5 space-y-2">
+            <div className={`rounded-md border px-3 py-2 flex flex-wrap sm:flex-nowrap items-start gap-2.5 ${style.box}`}>
+                <span className={`text-[11px] font-bold uppercase tracking-wide rounded px-2 py-0.5 flex-shrink-0 ${style.chip}`}>{sv.call}</span>
+                <p className="text-[12.5px] text-gray-700 leading-relaxed"><RichText text={sv.reason ?? ''} /></p>
+            </div>
+            {sv.sides.length > 0 && (
+                <div className="space-y-2">
+                    {sv.sides.map(side => {
+                        const s = SIDE_STYLE[side.label] ?? SIDE_STYLE.Watch;
+                        return (
+                            <div key={side.label} className="rounded-md border border-gray-200 bg-white px-3 py-2">
+                                <div className={`text-[10px] font-semibold uppercase tracking-wide mb-1 ${s.head}`}>{side.label}</div>
+                                <ul className="space-y-1">
+                                    {side.points.map((pt, i) => (
+                                        <li key={i} className="flex gap-2 text-[12px] text-gray-600 leading-relaxed">
+                                            <span className="mt-[7px] w-1.5 h-1.5 rounded-full bg-gray-800 flex-shrink-0" />
+                                            <span><RichText text={pt} /></span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        );
+                    })}
+                </div>
+            )}
+        </div>
+    );
+}
+
+// Key numbers in two rows: what the price says, and what the business does.
+const PRICE_STATS = ['P/E', 'EV/EBITDA', 'P/B'];
+
+function StatTile({ label, value, note, extra }: { label: string; value: React.ReactNode; note?: string; extra?: React.ReactNode }) {
+    return (
+        <div title={note} className="border border-gray-200 rounded-md px-2.5 py-1.5 bg-white min-w-0">
+            <div className="text-[9.5px] text-gray-400 uppercase tracking-wide leading-tight">{label}</div>
+            <div className="text-[13.5px] font-semibold text-gray-800 tabular-nums leading-snug flex flex-wrap items-center gap-1.5">{value}{extra}</div>
+        </div>
+    );
+}
+
+function Row({ title, children }: { title: string; children: React.ReactNode }) {
+    return (
+        <div>
+            <div className="text-[10px] font-semibold uppercase tracking-wide text-gray-400 mb-1">{title}</div>
+            <div className="grid grid-cols-3 gap-1.5">{children}</div>
+        </div>
+    );
+}
+
+function KeyNumbers({ p, lv }: { p: BusinessProfile; lv?: LiveValuation | null }) {
+    const stats = p.charts?.stats ?? [];
+    const live = (s: { label: string; value: string; note?: string }) => {
+        if (!lv) return s;
+        if (s.label === 'P/E') return { ...s, label: 'P/E (live)', value: lv.pe === null ? 'Loss-making' : `${lv.pe.toFixed(1)}x` };
+        if (s.label === 'P/B') return { ...s, label: 'Price ÷ book (live)', value: lv.pb === null ? 'n/m' : `${lv.pb.toFixed(1)}x` };
+        if (s.label === 'EV/EBITDA') return { ...s, label: 'EV/EBITDA (live)', value: lv.evEbitda === null ? 'n/m' : `${lv.evEbitda.toFixed(1)}x` };
+        return s;
+    };
+    const price = stats.filter(s => PRICE_STATS.includes(s.label)).map(live);
+    const business = stats.filter(s => !PRICE_STATS.includes(s.label));
+    const needs = lv && lv.needed !== null;
+    if (!price.length && !business.length && !needs) return null;
+    return (
+        <div className="mt-2.5 space-y-1.5" aria-label="Key numbers">
+            {(price.length > 0 || needs) && (
+                <Row title="Price">
+                    {price.map(s => <StatTile key={s.label} label={s.label} value={s.value} note={s.note} />)}
+                    {needs && (
+                        <StatTile
+                            label="Price needs / I expect"
+                            note="Earnings growth a year the live price needs, against my own estimate"
+                            value={`${Math.round(lv!.needed!)}% / ${lv!.mine === null ? '—' : `${Math.round(lv!.mine)}%`}`}
+                            extra={<PriceCheckBadge check={lv!.check} />}
+                        />
+                    )}
+                </Row>
+            )}
+            {business.length > 0 && (
+                <Row title="Business">
+                    {business.map(s => <StatTile key={s.label} label={s.label} value={s.value} note={s.note} />)}
+                </Row>
+            )}
+            {p.charts?.statsAsOf && (
+                <div className="text-[9.5px] text-gray-400">Price figures are live; business figures as of {p.charts.statsAsOf}.</div>
+            )}
+        </div>
+    );
+}
+
 function Bullets({ items }: { items: string[] }) {
     return (
         <ul className="space-y-1">
@@ -284,6 +452,7 @@ function ProfileCard({ p, verdict, lv, writtenOn }: { p: BusinessProfile; verdic
         if (s.label === 'EV/EBITDA') return { ...s, label: 'EV/EBITDA (live)', value: lv.evEbitda === null ? 'n/m' : `${lv.evEbitda.toFixed(1)}x` };
         return s;
     });
+    const sv = p.inShort ? parseInShort(p.inShort) : null;
     const moved = lv?.moved ?? null;
     const hasCharts = !!(p.charts && (p.charts.costSplit || p.charts.marginVsInput || p.charts.profitVsCash));
     return (
@@ -292,26 +461,22 @@ function ProfileCard({ p, verdict, lv, writtenOn }: { p: BusinessProfile; verdic
             className="border border-gray-200 rounded-lg bg-white px-4 py-3 scroll-mt-4 min-w-0"
             style={verdict ? { borderLeftWidth: 3, borderLeftColor: STANCE_CONFIG[verdict.stance].hex } : undefined}
         >
-            <div className="flex flex-wrap items-start justify-between gap-2">
-                <div className="min-w-0">
-                    <h4 className="text-[14px] font-semibold text-gray-800 leading-tight">{p.company}</h4>
-                    <p className="text-[12px] text-gray-500 mt-0.5 leading-relaxed">{p.tagline}</p>
-                </div>
-                <div className="text-right flex-shrink-0">
-                    {verdict && <StancePill stance={verdict.stance} />}
-                    <div className="text-[10.5px] text-gray-400 mt-1">Revenue <span className="text-gray-700 font-medium">{p.revenue}</span></div>
-                </div>
+            <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
+                <h4 className="text-[15px] font-semibold text-gray-800 leading-tight min-w-0">{p.company}</h4>
+                {verdict && <StancePill stance={verdict.stance} />}
             </div>
+            <div className="text-[10.5px] text-gray-400 mt-0.5">Revenue <span className="text-gray-700 font-medium">{p.revenue}</span></div>
+            <p className="text-[12px] text-gray-500 mt-1.5 leading-relaxed"><RichText text={sv?.description ?? p.tagline} /></p>
 
             {/* Layer 1: the short version */}
-            {p.inShort && (
+            {sv ? <ShortVersionBlock sv={sv} /> : p.inShort && (
                 <div className="mt-2.5 rounded-md bg-[#F3F7FC] border border-[#DCE8F6] px-3 py-2">
                     <div className="text-[10px] font-semibold uppercase tracking-wide text-[#4A7AAF] mb-1">In short</div>
                     <Bullets items={p.inShort} />
                 </div>
             )}
 
-            {stats && stats.length > 0 && (
+            {sv ? <KeyNumbers p={p} lv={lv} /> : stats && stats.length > 0 && (
                 <div className="mt-2 flex flex-wrap gap-1.5" aria-label="Key numbers">
                     {stats.map(s => (
                         <div key={s.label} title={s.note} className="border border-gray-200 rounded-md px-2 py-1 bg-white min-w-[92px]">
