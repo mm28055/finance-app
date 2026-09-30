@@ -752,7 +752,7 @@ export const pharmaCdmo: SectorOverview = {
             company: 'Innova Captab', rank: 7, stance: 'SCALEUP', segment: CONVERT,
             what: "Contract maker of formulations for Indian brand owners (70% of revenue) plus its own branded generics, with a new Jammu plant for antibiotics.",
             view: "**Fast growth with a new plant filling.** Revenue +34%, volume about 22%, and Jammu turned EBITDA-positive as promised, with a peak of ₹1,400cr in view. But management caps the long-run margin at 17–18%, part of profit is Jammu tax incentives (₹55cr still to collect), and returns fell from 31% to 15% while Jammu was built. The price needs about {need:Innova Captab|23}% a year against my ~18%.",
-            watch: 'Jammu reaching ₹150cr a quarter; incentives collected in cash; export approvals for Jammu by end-FY27.',
+            watch: 'Jammu reaching ₹150cr a quarter; incentives collected in cash; export approvals for Jammu by end-FY27. On 29 Sep 2026 CARE upgraded its bank-loan rating to A+ (Stable) from A (Positive) (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Jubilant Ingrevia', rank: 8, stance: 'CYCLICAL', segment: CHEM,
@@ -770,7 +770,7 @@ export const pharmaCdmo: SectorOverview = {
             company: 'Aarti Pharmalabs', rank: 10, stance: 'CYCLICAL', segment: CHEM,
             what: "Mostly a maker of caffeine and related xanthines (57% of Q1 standalone revenue), plus generic APIs and a contract business for innovators (7% of Q1).",
             view: "**A caffeine company with a contract option.** Q1 grew 39% on caffeine prices management expects to fall back about halfway. FY26 profit fell 36%, borrowings rose to ₹754cr, return on capital fell to 11%, and its auditor highlighted a missed forward contract that cost ₹29.7cr. The contract business did ₹37cr in Q1 against a 40–50% growth guide. The price needs about {need:Aarti Pharmalabs|20}% a year against my ~12%.",
-            watch: 'Contract revenue of ₹350cr-plus in the last three quarters; caffeine prices; borrowings as Atali Block 2 is built.',
+            watch: 'Contract revenue of ₹350cr-plus in the last three quarters; caffeine prices; borrowings as Atali Block 2 is built. On 23 Sep 2026 Rashesh Gogri was named MD from 1 October (Hetal Gogri Gala becomes a whole-time director) and Rajendra Gogri left the board; the same week some promoter-group members sold 2.8% of the company for ₹209cr at about ₹819 (NSE filings, noted 30 Sep 2026).',
         },
         {
             company: 'Piramal Pharma', rank: 11, stance: 'TURNAROUND', segment: INNOV,
@@ -794,7 +794,7 @@ export const pharmaCdmo: SectorOverview = {
             company: 'Aether Industries', rank: 14, stance: 'SCALEUP', segment: CHEM,
             what: "Specialty chemicals made under contract and exclusive supply (Baker Hughes, Milliken, Saudi Aramco), building a large new site at Panoli and entering semiconductor materials.",
             view: "**Real growth, poor cash, rich price.** Contract revenue doubled in FY26 and grew about 75% in Q1, the margin held at 31.5%, and Crisil rated it AA-. But the cash cycle is 341 days, free cash flow has been negative for five years, borrowings are ₹521cr, and one customer is 19% of revenue. The price needs about {need:Aether Industries|32}% a year against my ~20%.",
-            watch: 'Operating cash above 60% of operating profit; revenue from the first Panoli blocks; exports back toward half of sales.',
+            watch: 'Operating cash above 60% of operating profit; revenue from the first Panoli blocks; exports back toward half of sales. On 24 Sep 2026 Crisil rated its ₹636cr of bank lines AA- (Stable) and A1+, a step up from ICRA’s A+ (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Cohance Lifesciences', rank: 15, stance: 'AVOID', segment: INNOV,
