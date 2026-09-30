@@ -50,6 +50,7 @@ import pdfParse from 'pdf-parse';
 import { prisma } from '../lib/prisma';
 import { processTranscript, resolveScreenerUrl } from '../lib/sync-service';
 import { pruneCompany } from '../lib/retention';
+import { updateCompanyProfile } from '../lib/profile-service';
 import { classifyTranscript, isRelatedEntityCall, isAgmDocument, detectCallDate, detectStatedQuarter, looksLikeCallTranscript, quarterEndDate } from '../lib/doc-type';
 import { getFinancialQuarter, generalQuarterName, fiscalYearOf, getAcceptanceCutoff, quarterScore, GENERAL_Q } from '../lib/quarters';
 import { generalSlotDate } from '../lib/doc-label';
@@ -489,7 +490,22 @@ async function main() {
                 },
                 onAnalysisEvict: async a => { console.log(`   ${d.co.name.trim()}: rolled off ${a.quarterName} analysis`); },
             });
-            log(d, typeLabel, slot, `stored and analysed${why ? ` (${why})` : ''}`, extra);
+            // A new results call also refreshes the PROFILE tab, but only when it is newer than the
+            // quarter the profile was written from (a late, older call never rolls it back).
+            // Special calls and AGMs leave it alone. A failure here never undoes the analysis.
+            let profileNote = '';
+            if (!kind) {
+                try {
+                    const co = await prisma.company.findUnique({ where: { id: d.co.id }, select: { profileQuarter: true } });
+                    if (!co?.profileQuarter || quarterScore(slot) > quarterScore(co.profileQuarter)) {
+                        const p = await updateCompanyProfile(d.co.id, slot);
+                        profileNote = p.updated ? ', profile refreshed' : `, profile not refreshed (${p.reason})`;
+                    }
+                } catch (e: any) {
+                    profileNote = `, profile refresh failed (${e.message})`;
+                }
+            }
+            log(d, typeLabel, slot, `stored and analysed${why ? ` (${why})` : ''}${profileNote}`, extra);
         } catch (e: any) {
             log(d, typeLabel, slot, `failed (${e.message})`, extra);
         }
