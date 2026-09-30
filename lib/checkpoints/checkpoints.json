@@ -6272,7 +6272,11 @@
    "text": "A first large Middle East oil and gas order, expected by Q3",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "UAE gas pipeline EPC order worth over ₹4,000cr (Major), 28 Sep 2026 (NSE filing)",
+   "resolvedOn": "2026-09-30",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; the Gulf question is closed, the margin and water collections remain the test"
   },
   {
    "id": "kalpataru-proj-q4fy27-1",
