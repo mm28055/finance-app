@@ -31455,6 +31455,49 @@
    "createdOn": "2026-09-29",
    "status": "pending",
    "project": "indo-farm-tower-cranes"
+  },
+  {
+   "id": "bajaj-healthcare-q4fy27-1",
+   "company": "Bajaj Healthcare",
+   "sector": "Pharma API",
+   "text": "Peptide plant (about 250 kg a year) commissioned by Q4 FY27, as promised on the July 2026 call",
+   "due": "Q4 FY27",
+   "ifMissed": "Stays wait; a third slip would argue for pass",
+   "project": "bajaj-healthcare-peptide-plant",
+   "createdOn": "2026-09-30",
+   "status": "pending"
+  },
+  {
+   "id": "bajaj-healthcare-q2fy27-1",
+   "company": "Bajaj Healthcare",
+   "sector": "Pharma API",
+   "text": "Operating margin inside the 18–20% guide (17.5% filed in Q1)",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 18,
+   "due": "Q2 FY27",
+   "createdOn": "2026-09-30",
+   "status": "pending"
+  },
+  {
+   "id": "bajaj-healthcare-q4fy27-2",
+   "company": "Bajaj Healthcare",
+   "sector": "Pharma API",
+   "text": "Receivable days down to 110–120 (131 in June 2026, 145 in March)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-09-30",
+   "status": "pending"
+  },
+  {
+   "id": "bajaj-healthcare-q4fy27-3",
+   "company": "Bajaj Healthcare",
+   "sector": "Pharma API",
+   "text": "FY27 revenue growth of 10–15% as guided, with profit growing alike",
+   "due": "Q4 FY27",
+   "ifMet": "Case to move up within wait",
+   "ifMissed": "Stays wait",
+   "createdOn": "2026-09-30",
+   "status": "pending"
   }
  ]
 }

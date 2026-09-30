@@ -34,12 +34,13 @@ export const pharmaApi: SectorOverview = {
             'IOL Chem & Pharma': 16,
             'Aarti Drugs': 12,
             'SMS Pharmaceuticals': 12,
+            'Bajaj Healthcare': 12,
             'Solara Active Pharma': null,
         },
     },
     standfirst:
-        "Twelve companies that make the active ingredient inside somebody else's medicine, or the chemical step just before it. The customer is a drug maker whose approval names its supplier, so the question for each company is how hard it is to replace, and whether its profit turns into cash. Niche makers are written into those approvals and earn 25–40% margins. Custom-intermediate makers earn as much from one or two molecules and swing with them. Volume makers compete on cost against China and this year are earning war prices that are already easing. This version draws on the last two calls, the latest presentation, the FY26 annual report and, where one exists, the rating report for every company; every chart uses filed results and five years of history.",
-    lastUpdated: '2026-09-28',
+        "Thirteen companies that make the active ingredient inside somebody else's medicine, or the chemical step just before it. The customer is a drug maker whose approval names its supplier, so the question for each company is how hard it is to replace, and whether its profit turns into cash. Niche makers are written into those approvals and earn 25–40% margins. Custom-intermediate makers earn as much from one or two molecules and swing with them. Volume makers compete on cost against China and this year are earning war prices that are already easing. This version draws on the last two calls, the latest presentation, the FY26 annual report and, where one exists, the rating report for every company; every chart uses filed results and five years of history.",
+    lastUpdated: '2026-09-30',
     asOfQuarter: 'Q1 FY27',
 
     metrics: [
@@ -49,7 +50,7 @@ export const pharmaApi: SectorOverview = {
             unit: '%',
             periods: Q,
             scale: 'sequential',
-            source: 'Filed quarterly results (consolidated where filed; standalone for Alivus, Blue Jet and Supriya, which file only standalone), operating profit ÷ sales.',
+            source: 'Filed quarterly results (consolidated where filed; standalone for Alivus, Blue Jet, Supriya and Bajaj Healthcare, which file only standalone), operating profit ÷ sales.',
             note: 'Operating margin excludes other income, so it can sit a few points below the EBITDA some managements quote. Alivus states 36.6% for Q1 FY27 including currency gains; the filed figure is 33%. Blue Jet states 33.5%; filed 33%.',
             values: {
                 'Alivus Life Sciences': [29, 30, 34, 31, 33],
@@ -63,12 +64,14 @@ export const pharmaApi: SectorOverview = {
                 'IOL Chem & Pharma': [11, 10, 10, 15, 14],
                 'Aarti Drugs': [13, 13, 9, 13, 14],
                 'SMS Pharmaceuticals': [20, 20, 21, 17, 20],
+                'Bajaj Healthcare': [17, 18, 19, 15, 18],
                 'Solara Active Pharma': [18, 11, 11, 15, 16],
             },
             cellNotes: {
                 'Supriya Lifescience': 'Q1 FY27: a regional water shortage stopped production for 15–20 days (₹30–35cr of sales deferred) and a retrospective solar-power charge cost about ₹8cr.',
                 'Solara Active Pharma': 'Blends a base business earning about 23% (₹72cr EBITDA on ₹307cr in Q1) with an ibuprofen unit losing money (−12% margin).',
                 'Shree Ganesh Remed.': 'Q1 FY27 revenue ₹14.4cr against ₹24.7cr a year earlier.',
+                'Bajaj Healthcare': "Standalone figures. Q4 FY26 margin was 15%; the ₹33.2cr reversal of know-how income booked in FY25 sits in other income, below this line.",
             },
         },
         {
@@ -91,12 +94,14 @@ export const pharmaApi: SectorOverview = {
                 'IOL Chem & Pharma': [10, 8, 11, 17, 37],
                 'Aarti Drugs': [7, 9, 8, 6, 19],
                 'SMS Pharmaceuticals': [20, 23, 21, -4, 6],
+                'Bajaj Healthcare': [13, 11, 31, -1, 11],
                 'Solara Active Pharma': [-12, -10, 16, 42, 20],
             },
             cellNotes: {
                 'Aarti Drugs': 'Q1 FY27: volume +3.5%, price +16–17% (company).',
                 'Alivus Life Sciences': 'Q1 FY27: Glenmark business −52.6%, all other customers +26.5% (about +20% in constant currency).',
                 'Concord Biotech': 'Q1 FY27: exports +46%, formulations −23%; currency added about 10% (company).',
+                'Bajaj Healthcare': 'Q3 FY26 (+31%) compares with a weak Q3 FY25; Q4 FY26 was flat on the year.',
             },
         },
         {
@@ -120,6 +125,7 @@ export const pharmaApi: SectorOverview = {
                 'IOL Chem & Pharma': [null, 14, 12, 9, 11],
                 'Aarti Drugs': [21, 15, 15, 13, 12],
                 'SMS Pharmaceuticals': [13, 4, 12, 13, 13],
+                'Bajaj Healthcare': [20, 14, 8, 11, 11],
                 'Solara Active Pharma': [0, 2, -9, 6, 5],
             },
             cellNotes: {
@@ -150,6 +156,7 @@ export const pharmaApi: SectorOverview = {
                 'IOL Chem & Pharma': [79, 86, 69, 73, 68],
                 'Aarti Drugs': [123, 123, 115, 129, 121],
                 'SMS Pharmaceuticals': [270, 230, 192, 237, 260],
+                'Bajaj Healthcare': [148, 228, 217, 248, 256],
                 'Solara Active Pharma': [308, 252, 120, 134, 140],
             },
             cellNotes: {
@@ -178,6 +185,7 @@ export const pharmaApi: SectorOverview = {
                 'IOL Chem & Pharma': [36, 54, 126, 89, 79, 76],
                 'Aarti Drugs': [21, 43, 112, 84, 81, 68],
                 'SMS Pharmaceuticals': [39, 40, 43, 59, 35, 43],
+                'Bajaj Healthcare': [1, -20, 121, 27, 55, 31],
                 'Solara Active Pharma': [null, 116, null, 103, 82, null],
             },
             cellNotes: {
@@ -186,6 +194,7 @@ export const pharmaApi: SectorOverview = {
                 'Solara Active Pharma': 'FY22 operating cash was −₹242cr and FY24 operating profit was negative, so those years and the five-year total are left blank.',
                 'Shree Ganesh Remed.': 'Consolidated cash flows are filed only from FY24.',
                 'SMS Pharmaceuticals': 'Borrowings rose from ₹254cr (FY23) to ₹365cr (FY26) while profit grew.',
+                'Bajaj Healthcare': 'The cash cycle stretched from 148 to 256 days over five years as government receivables and stock grew.',
             },
         },
         {
@@ -209,6 +218,7 @@ export const pharmaApi: SectorOverview = {
                 'IOL Chem & Pharma': [-2.7, -4.1, 0.8, -1.7, 1.8, -1.2],
                 'Aarti Drugs': [-3.3, -1.2, 5.3, 2.8, 3.2, 1.3],
                 'SMS Pharmaceuticals': [3.5, -1.5, -0.3, -5.2, -8.1, -3.1],
+                'Bajaj Healthcare': [-11.5, -17.9, 13.0, 1.9, 2.4, -3.6],
                 'Solara Active Pharma': [-35.6, 3.1, 5.3, 13.5, 7.3, -1.0],
             },
         },
@@ -221,7 +231,7 @@ export const pharmaApi: SectorOverview = {
             invert: true,
             legend: ['More debt', 'Net cash'],
             source: 'Filed balance sheets and profit and loss (Screener): borrowings (including leases) minus cash, ÷ operating profit. Treasury investments are counted as cash for Alivus, Concord, Supriya, Acutaas, Blue Jet and IOL.',
-            note: 'Below zero means more cash than debt. Six of the twelve hold net cash; Solara, SMS and Aarti Drugs carry the most debt relative to profit.',
+            note: 'Below zero means more cash than debt. Six of the thirteen hold net cash; Solara, Bajaj Healthcare, SMS and Aarti Drugs carry the most debt relative to profit.',
             values: {
                 'Alivus Life Sciences': [-0.8, -0.5, -0.4, -0.7, -0.9],
                 'Concord Biotech': [-0.4, -0.4, -0.7, -0.7, -1.4],
@@ -234,6 +244,7 @@ export const pharmaApi: SectorOverview = {
                 'IOL Chem & Pharma': [-0.4, 0.2, -0.6, -0.6, -0.3],
                 'Aarti Drugs': [1.6, 1.9, 1.7, 2.1, 1.8],
                 'SMS Pharmaceuticals': [1.9, 4.5, 2.1, 1.9, 1.9],
+                'Bajaj Healthcare': [2.1, 3.5, 4.3, 2.6, 2.0],
                 'Solara Active Pharma': [12.2, 7.5, null, 3.8, 3.4],
             },
             cellNotes: {
@@ -261,6 +272,7 @@ export const pharmaApi: SectorOverview = {
                 'IOL Chem & Pharma': [7.0, 9.6, 12.8, 10.3, 7.5, 9.4],
                 'Aarti Drugs': [6.1, 6.1, 8.9, 7.4, 6.7, 7.0],
                 'SMS Pharmaceuticals': [5.2, 5.7, 7.3, 15.7, 14.8, 10.6],
+                'Bajaj Healthcare': [11.7, 14.5, 6.4, 2.1, 7.1, 8.7],
                 'Solara Active Pharma': [16.5, 7.7, 3.2, 3.1, 3.9, 6.8],
             },
         },
@@ -285,6 +297,7 @@ export const pharmaApi: SectorOverview = {
                 'IOL Chem & Pharma': [3.9, 2.9, 2.3, 1.8, 2.0],
                 'Aarti Drugs': [3.6, 4.0, 3.1, 2.8, 2.4],
                 'SMS Pharmaceuticals': [1.2, 1.3, 1.6, 1.5, 1.7],
+                'Bajaj Healthcare': [2.5, 1.8, 1.9, 2.3, 2.5],
                 'Solara Active Pharma': [0.9, 1.1, 1.0, 1.1, 1.1],
             },
         },
@@ -321,6 +334,8 @@ export const pharmaApi: SectorOverview = {
                 grades: { reg: { grade: 'C', note: 'US approval new; 9 EU certificates' }, tech: { grade: 'D', note: 'Metformin, antibiotics' }, cost: { grade: 'A', note: 'Own methylamines (60–70% still bought in Q1)' }, breadth: { grade: 'B', note: 'Five therapy groups' }, pass: { grade: 'B', note: 'Prices +16–17% in Q1' } } },
             { company: 'SMS Pharmaceuticals', trend: 'stable', trendNote: 'Integration lifted margins to 20%, but solvent costs cut gross margin and one customer is 28% of sales.',
                 grades: { reg: { grade: 'C', note: '12 filings in FY26' }, tech: { grade: 'C', note: 'Ibuprofen, antiretrovirals' }, cost: { grade: 'B', note: '₹150cr-plus of integration' }, breadth: { grade: 'D', note: 'One customer 28%' }, pass: { grade: 'C', note: 'Gross margin −2 points on solvents' } } },
+            { company: 'Bajaj Healthcare', trend: 'stable', trendNote: 'First earnings call in July 2026; new EU certificates and a first Indian approval for cenobamate tablets, but the core is still vitamin C and other volume APIs.',
+                grades: { reg: { grade: 'C', note: 'US FDA-approved Savli unit; six EU certificates in 6–8 months' }, tech: { grade: 'C', note: 'Mostly volume APIs; peptide plant not yet built' }, cost: { grade: 'C', note: 'Vitamin C starting material bought in; own route not before 2029' }, breadth: { grade: 'B', note: 'Top ten customers ~35% of FY26 sales' }, pass: { grade: 'C', note: 'Prices stable in Q1; growth was volume' } } },
             { company: 'Solara Active Pharma', trend: 'widening', trendNote: 'Base business crossed ₹300cr a quarter; ibuprofen losses continue and a decision is due.',
                 grades: { reg: { grade: 'B', note: 'Clean inspections at Mangalore and Ambernath' }, tech: { grade: 'B', note: 'Base molecules at 54–55% gross margin; ~60% of world polymer APIs' }, cost: { grade: 'D', note: 'Ibuprofen uncompetitive on a 20-year-old process' }, breadth: { grade: 'B', note: 'Top 15–20 of ~70 products are 75% of sales' }, pass: { grade: 'B', note: '₹30cr passed through in Q1' } } },
         ],
@@ -332,8 +347,8 @@ export const pharmaApi: SectorOverview = {
             body: [
                 "**Alivus Life Sciences is still the one to own.** It is written into more customer approvals than anyone here (617 master files and certificates at June 2026), its last US inspections were clean (minor voluntary fixes at Ankleshwar, none at Dahej), and its filed operating margin has held at 29–34% for five quarters while ₹880cr of cash and short-term investments built up. In Q1 FY27 sales to customers other than Glenmark rose 26.5%, about 20% in constant currency and almost all of it volume, which is what a filing moat looks like. For the first time management gave revenue guidance, 10–12% for FY27, but it leans on the second half: after Q1's ₹640cr it needs about ₹720–740cr a quarter, more than any quarter so far. The price needs about {need:Alivus Life Sciences|17}% a year of earnings growth against my ~15%, which keeps it just inside {Label:Alivus Life Sciences|Fits}; Glenmark's orders (down 52.6% in Q1) and the Solapur plant, now due by Diwali, are what I will watch.",
                 "**Follow Acutaas Chemicals, Aarti Drugs, IOL Chem & Pharma and Concord Biotech, each for a different reason.** **Acutaas** has the best growth and the best new engines: revenue +59% in Q1, a battery-additive plant sold out for three years, and a Korean chip-chemical plant opened on 28 August after 11 months of building. But its contract growth rests on one molecule, an intermediate for Bayer's prostate-cancer drug darolutamide, and the price needs about {need:Acutaas Chemicals|29}% a year against my ~25%, so I would buy it after a weak quarter. **Aarti Drugs** is the cheapest here and {label:Aarti Drugs|fits} on reported profit, but Q1 growth was price (+16–17%), not volume (+3.5%), and FY26 profit carried a 7.6% tax rate. **IOL** beat its May guidance, gave a first view of FY28 and announced ₹495cr of new projects; I raise my estimate from 14% to about 16%, but the price still needs about {need:IOL Chem & Pharma|19}%. **Concord** has the only physical moat on the page, fermentation at scale, but it won share in Q1 partly by cutting prices, its cash cycle reached 493 days and ₹68cr of its receivables were overdue by more than six months, so I move it below the two volume makers.",
-                "**Wait on Shilpa Medicare, Solara, Supriya, NGL and Blue Jet; each has a specific event to clear.** I move **Shilpa** from follow to wait and trim my estimate from 20% to about 18%. Its formulation plant at Jadcherla (not Raichur, as the last version of this note said) has been under a US import alert since 2021 and received eight data-integrity observations in November 2025; FY26 and Q1 profits were lifted by a sale gain, an associate's profit booked on unaudited accounts and a tax reversal; and ₹450cr of development spending sits on the balance sheet, about ₹200cr of it more than three years old. **Solara** must settle its ibuprofen unit, **Supriya** must clear a customs narcotics case and a November EU audit, **NGL** must fill a late, over-budget plant, and **Blue Jet** must show that two customers (71% of product sales) keep ordering. **Pass on SMS Pharmaceuticals**: growth guidance missed two years running and debt heading to about ₹500cr. **Avoid Shree Ganesh Remedies**: Q1 revenue −42%, a European distributor lost, and growth guidance withdrawn three months after it was given.",
-                "**Three things to hold onto before reading the rest.** First, **sort by business model before comparing anything**: a niche maker's 30% margin and a metformin maker's 13% are both normal. Second, **check the cash**: seven of these twelve had negative free cash flow over the last five years, because multi-step chemistry ties up stock for months and most of them are building plants. Third, **check what is inside the profit**: this year's reported earnings include war prices (Aarti, IOL, NGL), tax refunds and reversals (Aarti, Shilpa), associates' profits (SMS, Shilpa) and currency gains (Alivus, Blue Jet, Concord).",
+                "**Wait on Shilpa Medicare, Solara, Supriya, NGL, Blue Jet and Bajaj Healthcare; each has a specific event to clear.** I move **Shilpa** from follow to wait and trim my estimate from 20% to about 18%. Its formulation plant at Jadcherla (not Raichur, as the last version of this note said) has been under a US import alert since 2021 and received eight data-integrity observations in November 2025; FY26 and Q1 profits were lifted by a sale gain, an associate's profit booked on unaudited accounts and a tax reversal; and ₹450cr of development spending sits on the balance sheet, about ₹200cr of it more than three years old. **Solara** must settle its ibuprofen unit, **Supriya** must clear a customs narcotics case and a November EU audit, **NGL** must fill a late, over-budget plant, and **Blue Jet** must show that two customers (71% of product sales) keep ordering. **Bajaj Healthcare**, added to this note on 30 September, held its first earnings call in July: it guides 10–15% growth at an 18–20% margin and India Ratings upgraded it to A in August, but FY26 profit halved when it reversed ₹33.2cr of income booked the year before, its cash cycle is 256 days and its peptide plant has slipped a year; it must show a year of clean profit and cash. **Pass on SMS Pharmaceuticals**: growth guidance missed two years running and debt heading to about ₹500cr. **Avoid Shree Ganesh Remedies**: Q1 revenue −42%, a European distributor lost, and growth guidance withdrawn three months after it was given.",
+                "**Three things to hold onto before reading the rest.** First, **sort by business model before comparing anything**: a niche maker's 30% margin and a metformin maker's 13% are both normal. Second, **check the cash**: eight of these thirteen had negative free cash flow over the last five years, because multi-step chemistry ties up stock for months and most of them are building plants. Third, **check what is inside the profit**: this year's reported earnings include war prices (Aarti, IOL, NGL), tax refunds and reversals (Aarti, Shilpa), associates' profits (SMS, Shilpa) and currency gains (Alivus, Blue Jet, Concord).",
             ],
         },
         {
@@ -364,7 +379,7 @@ export const pharmaApi: SectorOverview = {
                 },
                 {
                     label: 'What these companies actually depend on',
-                    text: "**Alivus** depends on patent expiries, on Glenmark (29% of FY26 revenue) and on Solapur passing inspection; **Concord** on its fermentation cost lead and on turning 485 days of stock back into cash; **Supriya** on one site at Lote running smoothly, its EU audit and a court case; **Shilpa** on a US re-inspection at Jadcherla and FY28 launches through partners; **NGL** on a US customer filing and Chinese veterinary prices; **Acutaas** on one anchor molecule and its battery plant; **Blue Jet** on two customers and the bempedoic-acid chain; **Shree Ganesh** on undisclosed contracts arriving; **IOL, Aarti Drugs and SMS** on API prices after the war and on filling new capacity; **Solara** on what it does with ibuprofen. **Buy each for what it actually depends on, not for the sector label.**",
+                    text: "**Alivus** depends on patent expiries, on Glenmark (29% of FY26 revenue) and on Solapur passing inspection; **Concord** on its fermentation cost lead and on turning 485 days of stock back into cash; **Supriya** on one site at Lote running smoothly, its EU audit and a court case; **Shilpa** on a US re-inspection at Jadcherla and FY28 launches through partners; **NGL** on a US customer filing and Chinese veterinary prices; **Acutaas** on one anchor molecule and its battery plant; **Blue Jet** on two customers and the bempedoic-acid chain; **Shree Ganesh** on undisclosed contracts arriving; **IOL, Aarti Drugs and SMS** on API prices after the war and on filling new capacity; **Solara** on what it does with ibuprofen. **Buy each for what it actually depends on, not for the sector label.** **Bajaj Healthcare** depends on collecting from government buyers, getting its peptide plant running and selling its last two Tarapur units.",
                 },
             ],
             tables: [
@@ -375,7 +390,7 @@ export const pharmaApi: SectorOverview = {
                         ['Niche APIs sold on filings', 'Alivus, Concord, Supriya, Shilpa', '25–37%', '11–25%', '**54–69%**', 'Named in customers’ approvals; hard chemistry; long campaigns tie up stock'],
                         ['Veterinary APIs', 'NGL', '11–17%', '19%', '**53%**', 'Unregulated markets with about 60 competitors'],
                         ['Custom intermediates', 'Acutaas, Blue Jet, Shree Ganesh', '23–42%', '14–32%', '**55–66%**', 'Few qualified suppliers, but revenue follows a few molecules'],
-                        ['Volume APIs', 'IOL, Aarti Drugs, SMS', '9–21%', '11–13%', '**43–76%**', 'Cost and integration are the only levers; prices set by China'],
+                        ['Volume APIs', 'IOL, Aarti Drugs, SMS, Bajaj Healthcare', '9–21%', '11–13%', '**31–76%**', 'Cost and integration are the only levers; prices set by China'],
                         ['Turnaround', 'Solara', '11–18%', '5%', '**Not measurable**', 'A 24% base business carrying a loss-making ibuprofen plant'],
                     ],
                     note: 'Shree Ganesh files cash flows only from FY24 (69–79% a year since). Solara’s five-year figure is blank because of a negative year.',
@@ -420,7 +435,7 @@ export const pharmaApi: SectorOverview = {
                 },
                 {
                     label: 'Wearing away: cost positions China can match',
-                    text: "**IOL** makes its own isobutyl benzene, acetyl chloride and monochloroacetic acid, so ibuprofen input costs are “controlled by us to the maximum extent”, and CARE expects that edge to last; but metformin still depends on Chinese DCDA (a key input), as it does for “most companies”. **Aarti Drugs** claims world leadership in nimesulide, ketoconazole, metronidazole benzoate, tinidazole and fluoroquinolones, now makes its own methylamines for metformin and keeps its “absolute gross profit per kilogram” steady through price swings; but Chinese makers cut salicylic-acid prices “to drive the competition out” as soon as it built a plant. **SMS** says it “wouldn't have been able to survive” the 2026 input spike without its own intermediates, and its antiviral share gains come from cost; but its anti-diabetic line lost price as soon as patents expired. **My view: integration lowers cost rather than raising price, so these margins follow the cycle.**",
+                    text: "**IOL** makes its own isobutyl benzene, acetyl chloride and monochloroacetic acid, so ibuprofen input costs are “controlled by us to the maximum extent”, and CARE expects that edge to last; but metformin still depends on Chinese DCDA (a key input), as it does for “most companies”. **Aarti Drugs** claims world leadership in nimesulide, ketoconazole, metronidazole benzoate, tinidazole and fluoroquinolones, now makes its own methylamines for metformin and keeps its “absolute gross profit per kilogram” steady through price swings; but Chinese makers cut salicylic-acid prices “to drive the competition out” as soon as it built a plant. **SMS** says it “wouldn't have been able to survive” the 2026 input spike without its own intermediates, and its antiviral share gains come from cost; but its anti-diabetic line lost price as soon as patents expired. **My view: integration lowers cost rather than raising price, so these margins follow the cycle.** **Bajaj Healthcare** is a leading Indian maker of vitamin C and its salts (8–10% of sales) but does not make the starting material; a fermentation route developed with the Institute of Chemical Technology is not due before 2029, and integrating 8–10 other products (20–25% of sales) should add only 1–2 points of margin, by management's estimate.",
                 },
                 {
                     label: 'Barely a moat: crowded markets',
@@ -445,7 +460,7 @@ export const pharmaApi: SectorOverview = {
                 },
                 {
                     label: 'Not structural: windfalls and one-offs',
-                    text: "**Aarti Drugs**' Q1 prices were up 16–17% on a war spike, and its FY26 profit carried a 7.6% tax rate after refunds. **NGL**'s Q1 margin of 16.7% included stock gains and a ₹2.5cr currency gain, and management expects margins “to moderate over the coming quarters”. **Shilpa**'s Q1 profit was lifted by a negative tax rate (a deferred-tax reversal), and its Q4 by a ₹30cr gain on selling part of an associate and ₹18cr of another associate's profit. **SMS** took about 14% of FY26 profit and about 36% of Q4 profit from its associate VKT Pharma, which is also its customer. **Blue Jet**'s ₹69cr of FY26 other income, including ₹36cr of currency gains, compares with ₹248cr of profit. **Treat all of these as windfalls, not run-rate.**",
+                    text: "**Aarti Drugs**' Q1 prices were up 16–17% on a war spike, and its FY26 profit carried a 7.6% tax rate after refunds. **NGL**'s Q1 margin of 16.7% included stock gains and a ₹2.5cr currency gain, and management expects margins “to moderate over the coming quarters”. **Shilpa**'s Q1 profit was lifted by a negative tax rate (a deferred-tax reversal), and its Q4 by a ₹30cr gain on selling part of an associate and ₹18cr of another associate's profit. **SMS** took about 14% of FY26 profit and about 36% of Q4 profit from its associate VKT Pharma, which is also its customer. **Blue Jet**'s ₹69cr of FY26 other income, including ₹36cr of currency gains, compares with ₹248cr of profit. **Treat all of these as windfalls, not run-rate.** **Bajaj Healthcare** booked ₹33.2cr of technology know-how income from a customer in FY25 and reversed it in Q4 FY26 when the customer, whose plant is in the Middle East, missed its timeline; the CFO says no cash had changed hands.",
                 },
                 {
                     label: 'Hit by one-offs, or recovering',
@@ -453,7 +468,7 @@ export const pharmaApi: SectorOverview = {
                 },
                 {
                     label: 'Working capital: the biggest drains',
-                    text: "**Concord** ended FY26 with 485 days of inventory and a 493-day cash cycle; of ₹465cr of receivables, about ₹68cr were overdue by more than six months and ₹40cr by more than a year, and ICRA puts working capital at 63% of revenue. **Shilpa** carries a 301-day cycle with 291 days of stock, uses about 91.5% of its bank lines and has had negative free cash flow for twelve years. **SMS** turned only 49% of FY26 operating profit into cash, free cash has been negative for three years (−₹71cr in FY26), and CARE sees its operating cycle rising to about 195 days in FY27.",
+                    text: "**Concord** ended FY26 with 485 days of inventory and a 493-day cash cycle; of ₹465cr of receivables, about ₹68cr were overdue by more than six months and ₹40cr by more than a year, and ICRA puts working capital at 63% of revenue. **Shilpa** carries a 301-day cycle with 291 days of stock, uses about 91.5% of its bank lines and has had negative free cash flow for twelve years. **SMS** turned only 49% of FY26 operating profit into cash, free cash has been negative for three years (−₹71cr in FY26), and CARE sees its operating cycle rising to about 195 days in FY27. **Bajaj Healthcare**'s cycle has stretched from 148 to 256 days in five years, from government and opium-processing receivables and from stock the CFO says it chose to build when the war began; it turned only 31% of five years' operating profit into cash. The CFO targets 110–120 receivable days, against 131 in June and 145 in March.",
                 },
                 {
                     label: 'Working capital: getting worse',
@@ -484,6 +499,7 @@ export const pharmaApi: SectorOverview = {
                         ['NGL Fine-Chem', 'No Q1 call; plant cost ₹210cr, ₹182.75cr spent by March', 'Borrowings ₹123cr (March) against ₹39cr of investments'],
                         ['Blue Jet Healthcare', '₹800cr raised from institutions in July; capex about ₹400cr in FY27', '₹400cr of liquid assets in March, plus the new money'],
                         ['SMS Pharmaceuticals', 'No Q1 call; ₹121cr of the ₹281cr project spent by June (₹35cr loan, ₹86cr own cash)', 'Borrowings ₹365cr (March); CARE projects ₹503cr by March 2027'],
+                        ['Bajaj Healthcare', 'First call; receivables 131 days in June (145 in March), aiming for 110–120; stock built against the war; capex ₹40–50cr a year', 'Net debt ₹211cr (March); cash ₹37cr; India Ratings upgraded to A in August'],
                         ['Shree Ganesh Remed.', 'No Q1 call; Block 7 (about ₹34cr) due in Q2 FY27', 'Borrowings ₹31cr against ₹13cr of investments'],
                     ],
                     note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. SMS, NGL and Shree Ganesh held no Q1 FY27 call; their figures come from presentations, annual reports and rating reports.',
@@ -510,7 +526,7 @@ export const pharmaApi: SectorOverview = {
                 },
                 {
                     label: 'Growth driver: capacity already built, and big new sites',
-                    text: "**Concord** says existing plants can support about ₹3,000cr of revenue against ₹1,055cr in FY26, and its injectables plant runs at 5%, so its growth needs utilisation, not money. **Blue Jet** is doing the opposite: about ₹1,000cr for Vizag over three years, more than its whole current gross block, funded by an ₹800cr share placement, with revenue only from end-FY29 or FY30. **Supriya**'s ₹200cr Patalganga site earns from about FY29, and **NGL**'s ₹210cr plant targets ₹350–400cr of revenue in 3–4 years. **My view: built capacity is the cheapest growth in the sector; Vizag is the biggest bet on money not yet earning.**",
+                    text: "**Concord** says existing plants can support about ₹3,000cr of revenue against ₹1,055cr in FY26, and its injectables plant runs at 5%, so its growth needs utilisation, not money. **Blue Jet** is doing the opposite: about ₹1,000cr for Vizag over three years, more than its whole current gross block, funded by an ₹800cr share placement, with revenue only from end-FY29 or FY30. **Supriya**'s ₹200cr Patalganga site earns from about FY29, and **NGL**'s ₹210cr plant targets ₹350–400cr of revenue in 3–4 years. **My view: built capacity is the cheapest growth in the sector; Vizag is the biggest bet on money not yet earning.** **Bajaj Healthcare** is building a 250 kg-a-year peptide plant (semaglutide first) for commissioning in Q4 FY27, with revenue from FY28 and ₹200–300cr a year at full use on management's estimate, and a cancer-drug API plant for Q4 FY28; its December 2025 presentation put them at March 2026 and 2027.",
                 },
                 {
                     label: 'Delivering or beating',
@@ -518,7 +534,7 @@ export const pharmaApi: SectorOverview = {
                 },
                 {
                     label: 'Cautious',
-                    text: "**Alivus** kept its 30–32% margin guide after a better quarter, citing “this war situation”. **Aarti Drugs** says prices will fall when raw materials do. **NGL** told investors its margins will moderate. **Concord** pushed its 40% margin target to FY28, and **Shilpa** gives no revenue guidance and now expects margins to stay “in a similar range” of about 30%, preferring to “be conservative and overdeliver” (in May it called 35% “an ambitious target”).",
+                    text: "**Alivus** kept its 30–32% margin guide after a better quarter, citing “this war situation”. **Aarti Drugs** says prices will fall when raw materials do. **NGL** told investors its margins will moderate. **Concord** pushed its 40% margin target to FY28, and **Shilpa** gives no revenue guidance and now expects margins to stay “in a similar range” of about 30%, preferring to “be conservative and overdeliver” (in May it called 35% “an ambitious target”). **Bajaj Healthcare**, on its first call, guided only 10–15% growth for FY27 and FY28 and would not size its European contract products before the end of FY28.",
                 },
                 {
                     label: 'Missed',
@@ -530,7 +546,7 @@ export const pharmaApi: SectorOverview = {
                 },
                 {
                     label: 'My outlook',
-                    text: "Plain APIs should grow about 7–9% a year, with patent expiries, contract work and new approvals on top for the companies that have them, and the war premium fading from FY28. **I expect Acutaas to compound earnings at about 25%, Concord, Supriya and Shilpa at about 18% (Shilpa down from 20% because its reported base is flattered by one-offs), IOL at about 16% (up from 14% on beaten guidance and its new projects), Alivus and NGL at about 15%, Aarti Drugs and SMS at about 12%, Blue Jet at about 10% and Shree Ganesh at about 8%.** The shared risks are the same everywhere: new ibuprofen capacity in FY28–FY29, Chinese pricing once the war premium fades, and regulators' timetables.",
+                    text: "Plain APIs should grow about 7–9% a year, with patent expiries, contract work and new approvals on top for the companies that have them, and the war premium fading from FY28. **I expect Acutaas to compound earnings at about 25%, Concord, Supriya and Shilpa at about 18% (Shilpa down from 20% because its reported base is flattered by one-offs), IOL at about 16% (up from 14% on beaten guidance and its new projects), Alivus and NGL at about 15%, Aarti Drugs, SMS and Bajaj Healthcare at about 12%, Blue Jet at about 10% and Shree Ganesh at about 8%.** The shared risks are the same everywhere: new ibuprofen capacity in FY28–FY29, Chinese pricing once the war premium fades, and regulators' timetables.",
                 },
             ],
             tables: [
@@ -548,6 +564,7 @@ export const pharmaApi: SectorOverview = {
                         ['NGL Fine-Chem', 'New plant; European and US registrations', '5% / **15%** / 22%'],
                         ['Aarti Drugs', 'Metformin capacity; own methylamines; prices easing', '5% / **12%** / 18%'],
                         ['SMS Pharmaceuticals', 'Ibuprofen to 800 tonnes a month from mid-2027; debt', '4% / **12%** / 18%'],
+                        ['Bajaj Healthcare', 'Peptides from FY28; new formulations; a low FY26 base after the reversal', '5% / **12%** / 18%'],
                         ['Blue Jet Healthcare', 'Two customers; Mahad; Vizag from FY30', '0% / **10%** / 18%'],
                         ['Shree Ganesh Remed.', 'Undisclosed contracts, if they arrive', '0% / **8%** / 18%'],
                         ['Solara Active Pharma', 'Base business +10%; ibuprofen decision', 'Profit too small to estimate from'],
@@ -570,6 +587,7 @@ export const pharmaApi: SectorOverview = {
                         ['NGL Fine-Chem', 'Margin 15–18%; ₹150cr a quarter to stabilise', 'Phase II ₹210cr (from ₹160cr)', '**Slipping**: debt above its cap; plant a quarter late; Q1 ₹139cr'],
                         ['Blue Jet Healthcare', 'Contrast media double-digit growth; bempedoic line to pass its FY25 peak', '~₹400cr in FY27; Vizag ~₹1,000cr over three years', '**Delivering**: bempedoic line back; Mahad ahead; contrast media dipped on shipping timing'],
                         ['SMS Pharmaceuticals', 'Revenue +15%; margin towards 22%', '₹281cr (₹121cr spent); start July 2027 per CARE', '**Missed**: Q1 +6% at 20%; FY26 +13% against 20%'],
+                        ['Bajaj Healthcare', 'Revenue +10–15% in FY27 and FY28 with profit alike; margin 18–20%; ₹900–1,000cr of revenue in two to three years (first call, July 2026)', '₹40–50cr a year; peptide plant and R&D centre ~₹50cr', '**Slipping**: no earlier call to compare; peptide plant was due March 2026, now Q4 FY27; cancer-drug plant from 2027 to Q4 FY28'],
                         ['Shree Ganesh Remed.', 'FY27 “non-linear growth” withdrawn in August', 'Block 7 ~₹34cr in Q2 FY27', '**Walked back**: Q1 revenue −42%; EU distributor lost'],
                     ],
                 },
@@ -595,11 +613,11 @@ export const pharmaApi: SectorOverview = {
                 },
                 {
                     label: 'Tax disputes, write-downs and audit remarks',
-                    text: "**Blue Jet** faces a ₹193cr income-tax demand over depreciation on goodwill (₹128.7cr already provided; ₹64.6cr of interest carried as contingent). **Solara** faces a ₹161.9cr demand, about 13% of its net worth, carries ₹364.9cr of goodwill that its auditor flags, and admits that recovering the ~₹700cr in ibuprofen is “far-fetched”. **Aarti Drugs** has about ₹159cr of disputed tax, about 10% of net worth, which its auditor made a key audit matter. **SMS** has an unprovided ₹45.6cr demand it calls “high-pitched”. **Shilpa**'s FY26 profit included ₹18.2cr from an associate whose accounts were unaudited, and about ₹200cr of its ₹450cr capitalised development spending is more than three years old. By contrast, **Alivus**, **Concord** and **IOL** carry contingent liabilities under ₹6cr each with clean audits.",
+                    text: "**Blue Jet** faces a ₹193cr income-tax demand over depreciation on goodwill (₹128.7cr already provided; ₹64.6cr of interest carried as contingent). **Solara** faces a ₹161.9cr demand, about 13% of its net worth, carries ₹364.9cr of goodwill that its auditor flags, and admits that recovering the ~₹700cr in ibuprofen is “far-fetched”. **Aarti Drugs** has about ₹159cr of disputed tax, about 10% of net worth, which its auditor made a key audit matter. **SMS** has an unprovided ₹45.6cr demand it calls “high-pitched”. **Shilpa**'s FY26 profit included ₹18.2cr from an associate whose accounts were unaudited, and about ₹200cr of its ₹450cr capitalised development spending is more than three years old. By contrast, **Alivus**, **Concord** and **IOL** carry contingent liabilities under ₹6cr each with clean audits. **Bajaj Healthcare** reversed ₹33.2cr of know-how income booked in FY25, and two of the four Tarapur units it put up for sale in June 2023 are still unsold (₹5.1cr of losses in FY26); its auditor lists them as a key audit matter.",
                 },
                 {
                     label: 'Related parties and promoter pay',
-                    text: "**IOL** bought ₹131.9cr of goods in FY26 from three promoter-linked firms, 31% more than a year earlier, and two of them, NCVI Enterprises and Mayadevi Polycot, are the buyers who lifted the promoter stake from 48% to 62% on the market; managerial pay was ₹21.75cr, about 16% of profit. **SMS** sold ₹54.7cr to its associate VKT Pharma, whose profit then flowed back as ₹14cr of its own. **Solara** sold ₹329cr to promoter-group company Strides, about a quarter of revenue. **NGL**'s two executive directors' profit commissions rose 2.6 times. **Supriya** paid ₹5.1cr of CSR to the promoter's foundation, and its key managers' pay appears to be about ₹27cr, a figure the report's layout makes hard to confirm.",
+                    text: "**IOL** bought ₹131.9cr of goods in FY26 from three promoter-linked firms, 31% more than a year earlier, and two of them, NCVI Enterprises and Mayadevi Polycot, are the buyers who lifted the promoter stake from 48% to 62% on the market; managerial pay was ₹21.75cr, about 16% of profit. **SMS** sold ₹54.7cr to its associate VKT Pharma, whose profit then flowed back as ₹14cr of its own. **Solara** sold ₹329cr to promoter-group company Strides, about a quarter of revenue. **NGL**'s two executive directors' profit commissions rose 2.6 times. **Supriya** paid ₹5.1cr of CSR to the promoter's foundation, and its key managers' pay appears to be about ₹27cr, a figure the report's layout makes hard to confirm. **Bajaj Healthcare** lent its chairman ₹6cr during FY26 as an ‘employee loan’, repaid within the year, and paid its two founders ₹7.7cr, about 36% of FY26 profit.",
                 },
                 {
                     label: 'Capital ahead of revenue, and management changes',
@@ -628,11 +646,11 @@ export const pharmaApi: SectorOverview = {
                 },
                 {
                     label: 'Stretched',
-                    text: "**Concord** needs about {need:Concord Biotech|26}% a year against my ~18%, **Shilpa** about {need:Shilpa Medicare|29}% against ~18%, **SMS** about {need:SMS Pharmaceuticals|22}% against ~12%, **Blue Jet** about {need:Blue Jet Healthcare|23}% against ~10%, and **Shree Ganesh** about {need:Shree Ganesh Remed.|27}% against ~8%. Concord and Shilpa are good businesses at the wrong price; Blue Jet's price assumes its two customers and Vizag both work; SMS and Shree Ganesh are not delivering growth at all.",
+                    text: "**Concord** needs about {need:Concord Biotech|26}% a year against my ~18%, **Shilpa** about {need:Shilpa Medicare|29}% against ~18%, **SMS** about {need:SMS Pharmaceuticals|22}% against ~12%, **Blue Jet** about {need:Blue Jet Healthcare|23}% against ~10%, **Shree Ganesh** about {need:Shree Ganesh Remed.|27}% against ~8%, and **Bajaj Healthcare** about {need:Bajaj Healthcare|27}% against ~12% on reported profit. Concord and Shilpa are good businesses at the wrong price; Blue Jet's price assumes its two customers and Vizag both work; SMS and Shree Ganesh are not delivering growth at all.",
                 },
                 {
                     label: 'Earnings quality: which P/Es flatter',
-                    text: "The live P/E uses reported profit, and several include one-offs. **Aarti Drugs**' reflects a 7.6% tax rate; **Shilpa**'s a sale gain, an associate's unaudited profit and a tax reversal; **SMS**'s its associate's profit (about 14% of FY26); **Blue Jet**'s ₹69cr of other income; **NGL**'s Q1 stock gains; and **Alivus**'s about ₹31cr of FY26 currency gains. **On core profit, each of these is a little more expensive than the table shows.**",
+                    text: "The live P/E uses reported profit, and several include one-offs. **Aarti Drugs**' reflects a 7.6% tax rate; **Shilpa**'s a sale gain, an associate's unaudited profit and a tax reversal; **SMS**'s its associate's profit (about 14% of FY26); **Blue Jet**'s ₹69cr of other income; **NGL**'s Q1 stock gains; and **Alivus**'s about ₹31cr of FY26 currency gains. **On core profit, each of these is a little more expensive than the table shows.** **Bajaj Healthcare** is the exception: its reported profit is cut by the ₹33.2cr reversal and the losses at units it is selling, so on core profit it is much cheaper than the table shows, which is why it is a wait and not a pass.",
                 },
                 {
                     label: 'Not measurable on earnings',
@@ -705,13 +723,19 @@ export const pharmaApi: SectorOverview = {
             watch: 'Growth on the year returning in Q2 and Q3; Mahad running by end-2026; a named new long-term contract. Promoter holding fell from 79.8% to 73.2% in July 2026 because of the ₹800cr QIP at ₹506 a share (issue 6–9 July); the promoters sold nothing this time (noted 30 Sep 2026).',
         },
         {
-            company: 'SMS Pharmaceuticals', rank: 11, stance: 'CYCLICAL', segment: VOLUME,
+            company: 'Bajaj Healthcare', rank: 11, stance: 'SCALEUP', segment: VOLUME,
+            what: "A Thane-based maker of volume active ingredients (vitamin C and its salts, chlorhexidine, anti-epileptics), a nutraceutical ingredient for a US patent holder and formulations for government and contract customers; it also processes opium for the government, and is building peptide and cancer-drug plants.",
+            view: "**A cleaner balance sheet, but the record needs time.** Revenue grew 12.6% in FY26 and 11.3% in Q1 at a 17.5% filed margin, net debt is down to 2.0 times operating profit from 4.3 in FY24 after ₹70cr of warrant money, and India Ratings upgraded it to A in August. But FY26 profit halved when it reversed ₹33.2cr of know-how income booked in FY25, the cash cycle is 256 days, five-year cash conversion is 31%, and both new plants have slipped about a year. The price needs about {need:Bajaj Healthcare|27}% a year on reported profit against my ~12%.",
+            watch: 'The peptide plant commissioned in Q4 FY27 as now promised; receivables down to 110–120 days and cash conversion above 60%; a buyer for the last two Tarapur units.',
+        },
+        {
+            company: 'SMS Pharmaceuticals', rank: 12, stance: 'CYCLICAL', segment: VOLUME,
             what: "Mid-sized maker of ibuprofen, antiretroviral and other active ingredients, partly integrated into its own intermediates, with about 35% of formulator VKT Pharma.",
             view: "**Missed guidance two years running, with debt rising.** Integration lifted the margin from 10% to 20%, but Q1 grew 6% against 15%, operating cash was 49% of operating profit, debt heads to about ₹503cr, and part of profit comes from an associate that is also a customer. The price needs about {need:SMS Pharmaceuticals|22}% a year against my ~12%.",
             watch: 'Growth back towards 15% in Q2–Q3; the ibuprofen block starting in July 2027; the ₹45.6cr tax appeal.',
         },
         {
-            company: 'Shree Ganesh Remed.', rank: 12, stance: 'AVOID', segment: ANCHOR,
+            company: 'Shree Ganesh Remed.', rank: 13, stance: 'AVOID', segment: ANCHOR,
             what: "Very small Ankleshwar maker of multi-step pharma and specialty-chemical intermediates, trying to become a contract manufacturer for overseas agrochemical, pharma and electronics customers.",
             view: "**Revenue has sat at ₹90–126cr for four years and just fell 42%.** A European distribution agreement ended for non-performance, growth guidance was withdrawn three months after it was given, and the contract work that is meant to replace the plateaued base is undisclosed. The price needs about {need:Shree Ganesh Remed.|27}% a year against my ~8%.",
             watch: 'Two quarters back above ₹30cr of revenue; a named commercial contract supply; Block 7 running.',
@@ -723,12 +747,12 @@ export const pharmaApi: SectorOverview = {
         body: [
             "**Niche makers.** **Alivus Life Sciences: own.** The deepest filing moat, clean inspections and net cash at a price right on the line of what I expect. **Concord Biotech: follow.** The rarest asset on the page, but its stock, its overdue bills and its price cuts need explaining before the price does. **Shilpa Medicare: wait**, for a clean US re-inspection and profit without one-offs. **Supriya Lifescience: wait.** A fine franchise that must show it can run its plant and its paperwork. **NGL Fine-Chem: wait.** Still inside a price war, with a late and costlier plant.",
             "**Custom intermediates.** **Acutaas Chemicals: follow**, and buy on a weak quarter; the best growth here, but one molecule carries it. **Blue Jet Healthcare: wait.** Two customers must keep ordering before the Vizag bet matters. **Shree Ganesh Remedies: avoid.** It has stopped growing and withdrawn its guidance.",
-            "**Volume makers.** **Aarti Drugs: follow.** The cheapest and properly integrated, but earning war prices on a low tax rate. **IOL Chem & Pharma: follow.** Beating its guidance and the best cash converter, but adding ibuprofen into a slow market. **Solara Active Pharma: wait** for the ibuprofen decision. **SMS Pharmaceuticals: pass.** Missed guidance, weak cash and rising debt.",
+            "**Volume makers.** **Aarti Drugs: follow.** The cheapest and properly integrated, but earning war prices on a low tax rate. **IOL Chem & Pharma: follow.** Beating its guidance and the best cash converter, but adding ibuprofen into a slow market. **Solara Active Pharma: wait** for the ibuprofen decision. **Bajaj Healthcare: wait.** Growing and less indebted, but it needs a year of clean profit and cash and its peptide plant on time. **SMS Pharmaceuticals: pass.** Missed guidance, weak cash and rising debt.",
             "**What would change my view.** For the better: Concord's inventory falling while sales grow; a clean Jadcherla re-inspection at Shilpa; Solara ending the ibuprofen losses without a large write-down; Acutaas disclosing its contract revenue. For the worse: Glenmark orders collapsing in H2 (Alivus); API prices falling faster than volume recovers (Aarti, IOL, SMS, NGL); an escalation of Supriya's customs case.",
-            "**What to watch next quarter.** Alivus: Glenmark and Solapur. Acutaas: the second half and battery contracts. Aarti Drugs and IOL: volume and margin as prices ease. Concord: inventory and receivables. Shilpa: the US re-inspection. Solara: the ibuprofen decision. Supriya: margin and the EU audit. NGL: the new plant and margin. Blue Jet: growth on the year. SMS and Shree Ganesh: whether Q1 was a blip or a trend.",
+            "**What to watch next quarter.** Alivus: Glenmark and Solapur. Acutaas: the second half and battery contracts. Aarti Drugs and IOL: volume and margin as prices ease. Concord: inventory and receivables. Shilpa: the US re-inspection. Solara: the ibuprofen decision. Supriya: margin and the EU audit. NGL: the new plant and margin. Blue Jet: growth on the year. Bajaj Healthcare: receivables and the peptide plant. SMS and Shree Ganesh: whether Q1 was a blip or a trend.",
         ],
         bottomLine:
-            "Sort by business model, then check the cash and what is inside the profit. Own Alivus Life Sciences; follow Acutaas Chemicals, Aarti Drugs, IOL Chem & Pharma and Concord Biotech for a better price; wait on Shilpa Medicare, Solara, Supriya, NGL and Blue Jet until each clears its event; and do not pay niche prices for companies whose growth has stalled.",
+            "Sort by business model, then check the cash and what is inside the profit. Own Alivus Life Sciences; follow Acutaas Chemicals, Aarti Drugs, IOL Chem & Pharma and Concord Biotech for a better price; wait on Shilpa Medicare, Solara, Supriya, NGL, Blue Jet and Bajaj Healthcare until each clears its event; and do not pay niche prices for companies whose growth has stalled.",
     },
 
     sources: [
@@ -760,6 +784,10 @@ export const pharmaApi: SectorOverview = {
         { label: 'SMS Pharmaceuticals rating rationale — CARE, Sep 2026', url: 'https://www.careratings.com/upload/CompanyFiles/PR/202609140945_SMS_Pharmaceuticals_Limited.pdf' },
         { label: 'Solara Active Pharma Sciences annual report FY26 — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/b5ffab22-4ebf-40a7-9133-ce57c66bbeab.pdf' },
         { label: 'NGL Fine-Chem annual report FY26 — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/368e9711-5880-4e16-a548-c5770000914d.pdf' },
+        { label: 'Bajaj Healthcare Q1 FY27 earnings call (its first), 21 Jul 2026 — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=bc82d87f-d30e-4e76-9648-69802ea6eb80.pdf' },
+        { label: 'Bajaj Healthcare annual report FY26 — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/9c4de34c-2dac-4fe8-a175-2c498c4f74d8.pdf' },
+        { label: 'Bajaj Healthcare investor presentation, Dec 2025 — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ff06e2a7-516a-4bc9-acd3-35f6e4025f3d.pdf' },
+        { label: 'Bajaj Healthcare rating rationale — India Ratings, Aug 2026', url: 'https://www.indiaratings.co.in/pressrelease/84766' },
         { label: 'Shree Ganesh Remedies Q4 FY26 earnings call — company', url: 'https://www.ganeshremedies.com/investor/Earnings-call-Q4-FY2026-transcript.pdf' },
     ],
 };

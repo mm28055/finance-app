@@ -13315,6 +13315,57 @@
    "source": "Note (Q1 FY27): first lot of 10 planned for Q2 FY27, subject to imported parts (May call promised 60–80 in six months)",
    "updatedOn": "2026-09-29",
    "capacityAdd": "About 240–250 tower cranes a year (new product; can be raised without more capex)"
+  },
+  {
+   "id": "bajaj-healthcare-peptide-plant",
+   "company": "Bajaj Healthcare",
+   "sector": "Pharma API",
+   "name": "Peptide API plant",
+   "what": "A dedicated peptide plant of about 250 kg a year, semaglutide first, for India to begin with and designed for global markets",
+   "cost": "About ₹50cr with the new R&D centre (India Ratings), partly funded by the FY26 warrant money",
+   "expectedStart": "Q4 FY26",
+   "adds": "₹200–300cr of revenue a year at full use at an 18–20% operating margin (management); revenue from FY28",
+   "status": "building",
+   "source": "Q1 FY27 call (21 Jul 2026); December 2025 investor presentation; India Ratings, Aug 2026",
+   "updatedOn": "2026-09-30",
+   "revisions": [
+    {
+     "on": "2026-09-30",
+     "text": "The December 2025 presentation said commercialisation by March 2026; on the July 2026 call management said commissioning in Q4 FY27, with revenue from FY28"
+    }
+   ]
+  },
+  {
+   "id": "bajaj-healthcare-oncology-api",
+   "company": "Bajaj Healthcare",
+   "sector": "Pharma API",
+   "name": "Cancer-drug API plant",
+   "what": "A dedicated plant for oncology active ingredients, supplying its own Bajaj Oncocare brands and others",
+   "cost": "Not disclosed",
+   "expectedStart": "2027",
+   "adds": "Not quantified",
+   "status": "building",
+   "source": "Q1 FY27 call (21 Jul 2026); December 2025 investor presentation; India Ratings, Aug 2026",
+   "updatedOn": "2026-09-30",
+   "revisions": [
+    {
+     "on": "2026-09-30",
+     "text": "The December 2025 presentation said ready by 2027; on the July 2026 call management said Q4 FY28"
+    }
+   ]
+  },
+  {
+   "id": "bajaj-healthcare-genrx-nashik",
+   "company": "Bajaj Healthcare",
+   "sector": "Pharma API",
+   "name": "GenRx formulation plant, Nashik",
+   "what": "A solid-dosage formulation plant bought from GenRx Pharmaceuticals (in liquidation), awaiting NCLT relief before it can be run",
+   "cost": "₹10.85cr invested by March 2026 (annual report)",
+   "expectedStart": "H2 FY27",
+   "adds": "Formulation and cancer-drug capacity",
+   "status": "on hold",
+   "source": "FY26 annual report; Q1 FY27 call (commercial production expected in the second half of 2027 after approvals)",
+   "updatedOn": "2026-09-30"
   }
  ]
 }

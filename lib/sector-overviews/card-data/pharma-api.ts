@@ -1872,6 +1872,140 @@ export const pharmaApiCharts: Record<string, ProfileCharts> = {
             "inventory5y": -212,
             "payables5y": 63
         }
+    },
+    "Bajaj Healthcare": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 52
+                },
+                {
+                    "label": "Power and factory costs",
+                    "share": 15
+                },
+                {
+                    "label": "Staff",
+                    "share": 10
+                },
+                {
+                    "label": "Other costs",
+                    "share": 6
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 17
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "marginVsInput": {
+            "input": "Acetic acid (a common chemical input) price",
+            "periods": [
+                "Q1 FY24",
+                "Q2 FY24",
+                "Q3 FY24",
+                "Q4 FY24",
+                "Q1 FY25",
+                "Q2 FY25",
+                "Q3 FY25",
+                "Q4 FY25",
+                "Q1 FY26",
+                "Q2 FY26",
+                "Q3 FY26",
+                "Q4 FY26",
+                "Q1 FY27"
+            ],
+            "margin": [
+                16.9,
+                18.8,
+                18.3,
+                11.9,
+                18.2,
+                18.8,
+                17.9,
+                7.8,
+                16.8,
+                18.2,
+                19.3,
+                15.0,
+                17.5
+            ],
+            "index": [
+                100,
+                101,
+                104,
+                104,
+                98,
+                94,
+                91,
+                93,
+                92,
+                88,
+                87,
+                94,
+                107
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                119.0,
+                112.0,
+                76.0,
+                83.0,
+                105.0
+            ],
+            "ocf": [
+                1.0,
+                -22.0,
+                92.0,
+                22.0,
+                58.0
+            ],
+            "fcf": [
+                -78.3,
+                -115.6,
+                61.71,
+                10.46,
+                14.649999999999999
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "62.7x",
+                "note": "On reported profit over the last four quarters, which includes a ₹33cr reversal of income booked in FY25 and losses at the Tarapur units being sold; Screener's own measure shows about 20x."
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "12.3x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹211cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "31%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "17%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026"
     }
 };
 
@@ -1948,5 +2082,11 @@ export const pharmaApiValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 173.0,
         "mcapAtWriting": 4358.0,
         "peAtWriting": 42.6
+    },
+    "Bajaj Healthcare": {
+        "netDebt": 211,
+        "ttmEbitda": 109.0,
+        "mcapAtWriting": 1128.0,
+        "peAtWriting": 62.7
     }
 };

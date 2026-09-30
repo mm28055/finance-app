@@ -29,7 +29,7 @@ const intro: OverviewSection[] = [
             },
             {
                 label: 'High-volume active ingredients',
-                text: "Old, widely used medicines made by the thousand tons: ibuprofen and paracetamol (IOL, SMS, Solara), metformin and antibiotics (Aarti Drugs). Price is set by China, so cost decides the margin.",
+                text: "Old, widely used medicines made by the thousand tons: ibuprofen and paracetamol (IOL, SMS, Solara), metformin and antibiotics (Aarti Drugs), vitamin C and its salts (Bajaj Healthcare). Price is set by China, so cost decides the margin.",
             },
             {
                 label: 'Veterinary active ingredients',
@@ -48,7 +48,7 @@ const intro: OverviewSection[] = [
                 rows: [
                     ['**Named in the customer’s filing**', 'Alivus, Concord, Supriya, Shilpa', 'Negotiated per product; changing supplier forces a refiling', 'Slow: long campaigns and deep stock'],
                     ['**Contract intermediates**', 'Acutaas, Blue Jet, Shree Ganesh', 'Multi-year contracts, often with price reviews', 'Lumpy; follows the customer’s orders'],
-                    ['**Volume sales to formulators**', 'IOL, Aarti Drugs, SMS, Solara', 'Market price, set by Chinese supply', 'Faster'],
+                    ['**Volume sales to formulators**', 'IOL, Aarti Drugs, SMS, Solara, Bajaj Healthcare', 'Market price, set by Chinese supply', 'Faster'],
                     ['**Unregulated export markets**', 'NGL, parts of the volume makers', 'Spot prices and fixed-price orders', 'Normal credit terms'],
                 ],
             },
@@ -407,6 +407,38 @@ const profiles: BusinessProfile[] = [
         money: "Net debt of **₹319cr** (Screener, March 2026): ₹365cr of borrowings against ₹46cr of cash. Borrowings rose from ₹254cr in FY23 while profit grew, and CARE expects about ₹503cr by March 2027, which is why it cut its outlook to stable in September. A ₹281cr expansion is under way, funded by a ₹180cr Exim Bank loan and own cash; ₹121cr was spent by June 2026. About ₹14cr of FY26's ₹102cr profit came from the VKT associate. An income-tax demand of ₹45.6cr (about 6% of net worth) is under appeal and not provided for. Promoters hold **68%**, up from 64%, after converting warrants issued at ₹127.",
         watch: ["The new ibuprofen block starting commercial output in July 2027.", "Operating cash above 60% of operating profit.", "Whether Q1's 6% growth was a blip."],
         charts: pharmaApiCharts['SMS Pharmaceuticals'],
+    },
+    {
+        company: 'Bajaj Healthcare',
+        inShort: ["**A Thane-based maker of volume active ingredients, nutraceutical ingredients and formulations**, led by vitamin C and its salts, which also processes opium for the Government of India and is building a peptide plant.", "**Good:** revenue +12.6% in FY26 and +11.3% in Q1 at a 17–18% margin, net debt down to about 2 times operating profit, and a rating upgrade to A in August. **Bad:** it reversed ₹33.2cr of income booked the year before, its cash cycle is 256 days, and both new plants have slipped about a year.", "**Verdict: wait.** It needs a year of clean profit and cash, and the peptide plant on time."],
+        tagline: "A mid-sized Indian maker of bulk active ingredients, intermediates, nutraceutical ingredients and tablets and capsules, selling mostly in India.",
+        revenue: '₹611cr (FY26, standalone; it has no subsidiaries)',
+        products: [
+            { name: 'Domestic active ingredients', text: "Its largest business (₹92.3cr, 56% of Q1 FY27 sales, up 27% on the year): vitamin C and its salts, where it is a leading Indian maker (8–10% of sales), plus chlorhexidine, anti-epileptics and other older molecules sold to Indian drug makers." },
+            { name: 'Export ingredients and contract supply', text: "₹50.1cr in Q1. The largest export product is magnesium L-threonate, a nutraceutical ingredient it makes under exclusive licence and sells to the US patent holder (about 10% of FY26 revenue, about 350 tonnes). It has six new European certificates for contract products that it expects to sell from the end of FY28." },
+            { name: 'Formulations', text: "₹23.3cr in Q1: tablets and capsules for government buyers (Railways, Defence, ESIC, Jan Aushadhi), contract manufacturing for Indian companies, and Bajaj Oncocare, its own cancer brands (15-plus brands in 23 states). It was first in India to win an expert-committee recommendation for cenobamate tablets, worth ₹10–12cr in FY27 on management's estimate, once the drug regulator's licences arrive." },
+            { name: 'Opium processing', text: "It processes opium gum and poppy straw for the Government of India at a plant near Vadodara (250 tonnes and 2,500 tonnes a year); about 2% of FY26 revenue. It does not sell the products." },
+            { name: 'Peptides and cancer-drug ingredients (being built)', text: "A 250 kg-a-year peptide plant, with semaglutide first, due for commissioning in Q4 FY27 and revenue from FY28 (₹200–300cr a year at full use, management says); a cancer-drug API plant due in Q4 FY28." },
+        ],
+        revenueText: "**Active ingredients were 81% of FY26 revenue and formulations 17%** (India Ratings); by market, **India was 69% and exports 31%**. In Q1 FY27 domestic ingredients were 56%, exports 30% and formulations 14%. The top ten products were 57% of FY26 revenue and the top ten customers about 35%. Management expects exports to reach 30–35%.",
+        mixes: [
+            { caption: 'Revenue by business, Q1 FY27 (company)', parts: [{ label: 'Domestic active ingredients', share: 56 }, { label: 'Export ingredients', share: 30 }, { label: 'Formulations', share: 14 }] },
+        ],
+        customers: ["**Indian drug makers** buying volume ingredients such as vitamin C and chlorhexidine, many on long-term supply contracts (India Ratings).", "**Government buyers** of tablets and capsules, and the **Government of India** for opium processing; these pay slowly, which is why receivables were 140 days in FY26.", "**A US patent holder** buying magnesium L-threonate, and **European generic makers** for contract ingredients now being qualified."],
+        difficulty: { level: 'Medium', text: "Its core molecules are widely made in India and China. The harder parts are regulated-market approvals (a US FDA-approved plant at Savli, European certificates) and the planned peptide plant, which it has not yet run." },
+        moat: "Long relationships and long-term supply contracts with Indian drug makers, plus the government's opium-processing contract. But most of its molecules are commodities priced against China, and it buys the starting material for vitamin C.",
+        salesDrivers: ["**Volume in its Indian ingredients**: Q1 growth was volume, with prices stable, management said.", "**New formulations**: cenobamate in FY27 and suvorexant from Q4 FY28, supplied to eight Indian marketing partners.", "**Peptides from FY28**: semaglutide first, sold in India to begin with; about $120–150 a gram today, management said.", "**European contract products** from the end of FY28, after customers qualify its six new certificates.", "**Management's targets**: 10–15% revenue growth in FY27 and FY28, and ₹900–1,000cr of revenue in two to three years."],
+        inputs: "**Chemical starting materials and solvents**, much of them imported, including the starting material for vitamin C; a fermentation route developed with the Institute of Chemical Technology is not expected before 2029. Materials were 52% of sales in FY26.",
+        costEffect: "**Partly passed on.** Most of its products are priced against Chinese supply; it built extra stock when the West Asia war began to keep plants running. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points (17% to 12%). **What happened:** India's acetic-acid price index, used here as a stand-in for chemical inputs, rose about 7% from Q1 FY24 to Q1 FY27 while the filed margin moved from 16.9% to 17.5%; the dips (Q4 FY24 and Q4 FY25) came from the business, not input prices.",
+        competitors: [
+            { name: 'Chinese vitamin C and API makers', note: 'Set the world price of vitamin C and most of its older molecules.' },
+            { name: 'Aarti Drugs, IOL Chem & Pharma', note: 'Larger, more integrated Indian volume makers with better cash conversion.' },
+            { name: 'Indian peptide entrants', note: 'Several Indian companies are building semaglutide capacity for the same patent expiry.' },
+        ],
+        position: "**A small, broad Indian volume-API maker** with a niche in vitamin C salts and government opium processing, trying to move into peptides and cancer drugs.",
+        money: "Net debt of **₹211cr** (Screener, March 2026): ₹249cr of borrowings against ₹37cr of cash, down from 4.3 times operating profit in FY24 to 2.0 times. Warrants issued at ₹338 were converted in FY26: ₹70cr in all, ₹52.7cr of it received during the year, with the two founders taking ₹23cr. Capex is ₹40–50cr a year; two of four Tarapur units put up for sale in 2023 are still unsold. It lent its chairman ₹6cr in FY26, repaid within the year. Promoters hold **58.6%** (June 2026), down from 67.7% in March 2024 after share and warrant issues to outside investors.",
+        watch: ["The peptide plant commissioned in Q4 FY27.", "Receivables down to 110–120 days and operating cash above 60% of operating profit.", "No more reversals of income booked earlier."],
+        charts: pharmaApiCharts['Bajaj Healthcare'],
     },
     {
         company: 'Solara Active Pharma',
