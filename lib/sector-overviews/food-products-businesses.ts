@@ -452,7 +452,7 @@ const profiles: BusinessProfile[] = [
             { name: 'Cotton seed', text: "Bt cotton hybrids, 90% of sales in FY15 and about 20–25% now; ₹213cr in Q1 FY27. Prices are capped by the government, and its margin here has fallen from about 35% to about 15%." },
             { name: 'Bajra, vegetables and others', text: "Pearl millet (new hybrids are 65% of volume), sunflower, jowar and vegetable seeds, plus exports to South-East Asia (₹5.79cr in Q1, target ₹100cr in three years)." },
         ],
-        revenueText: "On the company's measure, **Q1 FY27 revenue was ₹815cr: hybrid rice 30%, cotton 26%, selection rice 20%, maize 17%**, and vegetables and others 7%. Filed Q1 revenue was ₹742cr; the company does not explain the gap. **Q1 brings 55–65% of annual revenue and all of the profit**; the other quarters are usually loss-making.",
+        revenueText: "On the company's (standalone) measure, **Q1 FY27 revenue was ₹815cr: hybrid rice 30%, cotton 26%, selection rice 20%, maize 17%**, and vegetables and others 7%. Filed consolidated Q1 revenue was ₹742cr; the company does not explain why the group figure is lower. **Q1 brings 55–65% of annual revenue and all of the profit**; the other quarters are usually loss-making.",
         mixes: [
             { caption: 'Revenue by crop, Q1 FY27 (company presentation, company measure)', parts: [{ label: 'Hybrid rice', share: 30 }, { label: 'Cotton', share: 26 }, { label: 'Selection rice', share: 20 }, { label: 'Maize', share: 17 }, { label: 'Other crops', share: 5 }, { label: 'Vegetables', share: 2 }] },
         ],

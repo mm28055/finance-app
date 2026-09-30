@@ -50,7 +50,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Carysil',
-        inShort: ["**India's leading maker of composite quartz kitchen sinks**, most of them exported to IKEA, Lowe's, Home Depot and Howdens, plus steel sinks, kitchen hoods, taps and stone worktops in the UK and US.", "**Good:** a record 20% margin, steel-sink lines sold out and ‘the highest ever export order booking’, with cheap new quartz and steel lines due by March 2027. **Bad:** 319 days of stock keep free cash near zero, and net debt is ₹224cr.", "**Verdict: follow.** The best-run business in the group and the price roughly matches the growth I expect, but its weak cash flow keeps me from owning it."],
+        inShort: ["**India's leading maker of composite quartz kitchen sinks**, most of them exported to IKEA, Lowe's, Home Depot and Howdens, plus steel sinks, kitchen hoods, taps and stone worktops in the UK and US.", "**Good:** a record 20% margin, steel-sink lines sold out and ‘the highest ever export order booking’, with cheap new quartz and steel lines due by March 2027. **Bad:** 319 days of stock keep free cash near zero, and net debt is ₹224cr on Screener (₹211cr by the company's count).", "**Verdict: follow.** The best-run business in the group and the price roughly matches the growth I expect, but its weak cash flow keeps me from owning it."],
         tagline: "A Gujarat maker of quartz-composite and steel kitchen sinks for Western retailers' ranges, with kitchen appliances, taps and bath fittings in India and stone-worktop businesses in the UK and US.",
         revenue: '₹924cr (FY26, consolidated)',
         products: [

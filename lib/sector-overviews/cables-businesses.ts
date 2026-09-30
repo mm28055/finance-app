@@ -97,7 +97,7 @@ const profiles: BusinessProfile[] = [
             { name: 'Building wire', text: "House and building wire sold through dealers to electricians and contractors: about 60% of the electrical segment. Volume grew only in low single digits in Q1 FY27 as shops cut stock." },
             { name: 'Auto, farm, solar and flexible cables', text: "Auto and battery cables (about 14% of electrical sales), farm and submersible-pump cables (about 10%), industrial flexibles and solar cables. These grew volume at high double-digit rates." },
             { name: 'Power cables', text: "Low and high-voltage cables are only 7–8% of the electrical segment. Extra-high-voltage cables are made by a joint venture with Sumitomo (Q1 FY27 revenue ₹87cr, profit ₹7cr), not counted in revenue." },
-            { name: 'Optical fibre and telecom cables', text: "Draws its own fibre, now expanding from 4 to 8 million fibre-km by September, and has started making preform, the glass rod fibre is drawn from. Its own preform covers only about half the new capacity." },
+            { name: 'Optical fibre and telecom cables', text: "Draws its own fibre, expanding from 4 to 8 million fibre-km, due by September (due by 30 September; no filing seen, so the Q2 results will show), and has started making preform, the glass rod fibre is drawn from. Its own preform covers only about half the new capacity." },
             { name: 'Copper rod and consumer goods', text: "A copper rod plant (shut all of Q1 FY27 for lack of commercial gas) and fans, switches, lights and water heaters, which missed the summer fan season for the same reason." },
         ],
         revenueText: "**Electrical cables were 88% of Q1 FY27 revenue** (₹1,767cr) and communication cables 9% (₹176cr). Within electrical, about 60% is building wire. Exports were ₹50cr in the quarter, as much as all of FY26. **Revenue grew 44%, but building-wire volume grew only in low single digits**; the rest was price and the faster-growing auto, farm and solar lines.",
@@ -145,7 +145,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Dynamic Cables',
-        inShort: ["**Jaipur-based maker of medium and high-voltage power cables** for private project contractors, solar developers, utilities and, newly, US buyers.", "**Good:** about 80% of contracts pass metal costs straight through, returns are high and debt is small. **Watch:** volume grew only 5–6% last quarter and the order book is flat until the new plant starts.", "**Verdict: own, on weakness.** A disciplined business worth owning on weakness; the next two quarters look slow."],
+        inShort: ["**Jaipur-based maker of medium and high-voltage power cables** for private project contractors, solar developers, utilities and, newly, US buyers.", "**Good:** about 80% of contracts pass metal costs straight through, returns are high and debt is small. **Watch:** volume grew only 5–6% last quarter and the order book is flat until the new plant starts.", "**Verdict: own.** A disciplined business worth owning at a price that asks for less than I expect; the next two quarters look slow, so any dip is a chance to add."],
         tagline: "A mid-sized business-to-business maker of power cables and conductors, run by the Mangal family since 1986.",
         revenue: '₹1,198cr (FY26, standalone)',
         products: [

@@ -393,7 +393,7 @@ export const agrochemicalFertilizers: SectorOverview = {
                         ['Paradeep Phosphates', '~₹7,000 in Q1 (cheap stock); **~₹5,000 guided for FY27**; ~₹5,300 in FY26', '₹4,600cr at June (₹3,800cr at March)', '3.7m t, ~100% used in FY26; Q1 volume 9.85 lakh t (+4%)'],
                         ['Chambal Fert & Chem', 'Not given; Q1 standalone margin 17%; a new plant would earn ~₹12,000 a tonne', '₹2,460cr of ₹3,300cr of receivables at June', 'Three urea plants, 34 lakh t sold in FY26; Gadepan-3 terms end December 2026'],
                         ['Krishana Phoschem', 'NPK ~₹5,500–6,000 (FY26); SSP ~₹1,500–1,600', '~₹400cr at March, plus ₹300–325cr of trade receivables', '6.15 lakh t; new NPK-DAP line at 43% in Q1'],
-                        ['Madhya Bharat Agro Products', 'Targets ~₹6,000 on NPK and ~₹1,800 on SSP (cut from ~₹2,500)', 'Not disclosed; two to four months of subsidy outstanding', '9 lakh t, to 15.6 lakh t by FY28; ~45% used in Q1'],
+                        ['Madhya Bharat Agro Products', 'Targets ~₹6,000 on NPK and ~₹1,800 on SSP (cut from ~₹2,500)', 'Not disclosed; two to four months of subsidy outstanding', '9 lakh t, to 15.6 lakh t by FY28; Q1 use ~79% SSP, ~66% DAP/NPK'],
                         ['GSFC', 'Fertiliser segment margin 4.1% (8.5% a year earlier)', '₹1,453cr at March; ~₹500cr in August', '22.3 lakh t sold in FY26; more than 22 lakh t guided for FY27'],
                     ],
                 },
@@ -472,7 +472,7 @@ export const agrochemicalFertilizers: SectorOverview = {
                     rows: [
                         ['Sharda Cropchem', '₹767cr of cash, no debt; ₹263–273cr of registration spending in Q1, ₹480–550cr for FY27', 'Net cash ₹581cr at March (Screener)'],
                         ['Chambal Fert & Chem', 'Net borrowing ~₹200cr at June; receivables ₹3,300cr (subsidy ₹2,460cr); ~25% payout; fourth plant ₹9,500–10,000cr', 'Borrowings ₹1,068cr at March; FY26 operating cash ₹138cr; 23% of promoter shares pledged'],
-                        ['Paradeep Phosphates', 'Gross debt ~₹6,500cr after ₹700cr repaid; subsidy owed ₹4,600cr; FY27 capex ~₹600cr', 'CRISIL: net debt 2.85 times operating profit, downgrade trigger above 3 times'],
+                        ['Paradeep Phosphates', 'Gross debt ~₹6,500cr at June after ₹700cr repaid (Screener net debt ₹6,514cr at March); subsidy owed ₹4,600cr; FY27 capex ~₹600cr', 'CRISIL: net debt 2.85 times operating profit, downgrade trigger above 3 times'],
                         ['GSFC', '“No cash surplus”: ₹500cr short-term borrowing at June; ~₹500cr of subsidy outstanding in August', 'Net cash and investments ₹4,783cr (Screener); ₹1,332cr of “other” claims'],
                         ['Madhya Bharat Agro Products', 'Dhule ₹675cr (₹460cr spent by April); phase 2 “could be through pure equity”', 'Borrowings ₹856cr (₹318cr a year earlier); ₹300.5cr preferential issue (₹317.5cr planned); ₹1,000cr share authority'],
                         ['Krishana Phoschem', 'More than ₹700cr collected in Q1; working-capital limits 70% used in June', 'Borrowings ₹733cr (₹376cr); CRISIL rating on watch'],
@@ -480,7 +480,7 @@ export const agrochemicalFertilizers: SectorOverview = {
                         ['Rallis India', 'Cash ₹541cr at March, ₹309cr at June; working capital up 15–20 days', 'Net cash ₹489cr (Screener)'],
                         ['Dhanuka Agritech', '₹70cr buyback at ₹1,400; Nagpur plant up to ₹200cr', 'Net cash ₹360cr; GST claims ₹135cr'],
                         ['Insecticides (India)', '₹70cr of the ₹200cr Sotanala plant spent; no working-capital target', 'Borrowings ₹157cr at March; ~₹800cr of stock entering kharif'],
-                        ['India Pesticides', 'Cash ₹59cr at June; ~₹100cr a year of capex; inventory ~200 days', 'Borrowings ₹110cr (₹26cr two years earlier)'],
+                        ['India Pesticides', 'Cash ₹59cr at June; ~₹100cr a year of capex; inventory ~200 days', 'Borrowings ₹110cr at March (₹26cr two years earlier), mostly short-term against deposits; ~₹27cr term loan in a new subsidiary'],
                         ['Punjab Chem. & Corp', 'FY27 capex ₹105–130cr; working capital back to FY26 levels by March', 'Net debt ₹139cr; ₹45cr IGST refund dispute'],
                         ['Meghmani Organics', 'Debt ₹732cr (₹722cr at March) despite ₹32cr repaid; ₹130cr to repay in FY27', 'CRISIL A/Negative; ₹306cr of guarantees for subsidiaries'],
                         ['Dharmaj Crop Guard', 'No Q1 call. At March: long-term debt ₹51cr, working-capital debt ₹81cr (₹51cr); stock ₹207cr', 'Net debt ₹126cr'],
@@ -620,7 +620,7 @@ export const agrochemicalFertilizers: SectorOverview = {
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**GSFC**'s net cash and investments of ₹4,783cr are more than three-quarters of its market value, so it looks far cheaper on EV/EBITDA than on P/E; the catch is that it earns about 7% on that capital. **Paradeep**'s ₹6,514cr of net debt makes it much dearer than its P/E suggests, and CRISIL expects leverage to rise in FY27. **Madhya Bharat**, **Meghmani** and **Krishana** carry 2–3.5 times operating profit in net debt. **Chambal**'s March net cash counts treasury investments; by June management put net borrowing at about ₹200cr. **Sumitomo**'s ₹2,549cr of cash is about 11% of its market value.",
+                    text: "**GSFC**'s net cash and investments of ₹4,783cr are more than three-quarters of its market value, so it looks far cheaper on EV/EBITDA than on P/E; the catch is that it earns about 7% on that capital. **Paradeep**'s ₹6,514cr of net debt (Screener, March) makes it much dearer than its P/E suggests, and CRISIL expects leverage to rise in FY27. **Krishana**, **Madhya Bharat** and **Meghmani** carry about 2.3, 3.7 and 3.9 times FY26 operating profit in net debt. **Chambal**'s March net cash counts treasury investments; by June management put net borrowing at about ₹200cr. **Sumitomo**'s ₹2,549cr of cash is about 11% of its market value.",
                 },
                 {
                     label: 'Reasonable',

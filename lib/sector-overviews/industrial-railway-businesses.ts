@@ -112,7 +112,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'MV Electrosystems',
-        inShort: ["**A newly listed maker of electric-locomotive propulsion systems**, one of only a few Indian designers, plus coach switchgear and cable-protection products.", "**Good:** an approved, Indian-designed propulsion system and about ₹1,100cr of orders, against FY26 sales of ₹49cr. **Bad:** it is losing money, made no deliveries in July or August, and its auditor warned about its long-term finances before the IPO rescued them.", "**Verdict: wait.** Wait for monthly delivery numbers to prove the factory can ramp up."],
+        inShort: ["**A newly listed maker of electric-locomotive propulsion systems**, one of only a few Indian designers, plus coach switchgear and cable-protection products.", "**Good:** an approved, Indian-designed propulsion system and about ₹1,100cr of orders in all (₹989cr of it for 564 propulsion sets), against FY26 sales of ₹49cr. **Bad:** it is losing money, made no deliveries in July or August, and its auditor warned about its long-term finances before the IPO rescued them.", "**Verdict: wait.** Wait for monthly delivery numbers to prove the factory can ramp up."],
         tagline: "IGBT propulsion systems for 6,000 HP electric locomotives, plus coach switchgear, cable harnesses and cable protection.",
         revenue: '₹49cr (FY26, standalone)',
         products: [
@@ -222,7 +222,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Jupiter Wagons',
-        inShort: ["**A wagon maker moving into brakes, wheels, containers and battery storage**, mainly selling wagons to private freight operators.", "**Good:** the Stone India brake unit started production in July 2026, and an Italian partner is putting ₹290cr into the wheel business. **Bad:** the margin fell from 13% to 10%, the order book has shrunk five quarters running to ₹4,550cr, debt doubled to ₹996cr, and heavy spending pushed free cash flow to minus ₹526cr in FY26.", "**Verdict: pass.** Big spending on new businesses while the wagon business is shrinking."],
+        inShort: ["**A wagon maker moving into brakes, wheels, containers and battery storage**, mainly selling wagons to private freight operators.", "**Good:** the Stone India brake unit started production in July 2026, and an Italian partner is putting ₹290cr into the wheel business. **Bad:** the margin fell from 13% to 10%, the order book has shrunk five quarters running to ₹4,550cr, debt doubled to ₹996cr, and heavy spending pushed free cash flow to minus ₹526cr in FY26 (Screener: ₹9cr of operating cash less ₹535cr of capex).", "**Verdict: pass.** Big spending on new businesses while the wagon business is shrinking."],
         tagline: "Freight wagons, brakes, wheels and axles, commercial-vehicle bodies and containers, and battery energy storage.",
         revenue: '₹2,916cr (FY26, consolidated)',
         products: [

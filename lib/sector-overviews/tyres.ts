@@ -327,7 +327,7 @@ export const tyres: SectorOverview = {
                 },
                 {
                     label: 'Cyclical: the rubber shock',
-                    text: "Q1 FY27 margins fell to 12% at Apollo, 8.5% at CEAT and 6.5% at JK as raw-material costs rose 16–20% in a quarter, and Q2 carries another 8–10% on stock already bought. Each management expects recovery in the second half as price rises and vehicle makers' formula prices catch up and, they hope, rubber cools after the monsoon. JK guides 11–13% in H2 and about 10–11% for the year; CRISIL expects 10–11% for Apollo and CARE 10–11% for JK. Apollo's CFO put the upside plainly: ‘we've always recorded our best margins when the raw material cycle starts coming down’. **My view: FY27 is a trough year, not a reset; the risk is that new capacity in FY28–FY30 stops prices being held when rubber falls.**",
+                    text: "Q1 FY27 margins (filed figures) fell to 12% at Apollo, 8.5% at CEAT (8.6% by its own count) and 6.5% at JK as raw-material costs rose 16–20% in a quarter, and Q2 carries another 8–10% on stock already bought. Each management expects recovery in the second half as price rises and vehicle makers' formula prices catch up and, they hope, rubber cools after the monsoon. JK guides 11–13% in H2 and about 10–11% for the year; CRISIL expects 10–11% for Apollo and CARE 10–11% for JK. Apollo's CFO put the upside plainly: ‘we've always recorded our best margins when the raw material cycle starts coming down’. **My view: FY27 is a trough year, not a reset; the risk is that new capacity in FY28–FY30 stops prices being held when rubber falls.**",
                 },
                 {
                     label: 'Not structural: one-offs and a windfall',

@@ -81,7 +81,7 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**A category leader in Indian traction and industrial motor laminations**, and one of the few suppliers offering laminations, castings, machining and assembly under one roof.",
         money: "Net debt was ₹664cr at March 2026 (Screener); the company put it at about ₹491cr at the end of June 2026. It is spending ₹290cr on the Hyderabad casting plant (₹60cr spent so far) and is considering about ₹400cr more for a Bangalore facility in FY28–FY29, not yet approved by the board. About ₹70cr of state incentives is still to be received. Promoters hold **54%**, down from 59% in September 2023.",
-        watch: ["Margin moving from about 16.5% towards the 18% management expects as new capacity fills.", "Net debt and returns on capital while the Hyderabad and possible Bangalore plants are built.", "Whether direct exports pick up in the second half, as promised."],
+        watch: ["Margin moving from 16.8% in Q1 FY27 (company's adjusted figure) towards the 18%-plus management expects as new capacity fills (about 17% in FY28; it gives no quarterly path).", "Net debt and returns on capital while the Hyderabad and possible Bangalore plants are built.", "Whether direct exports pick up in the second half, as promised."],
         charts: industrialsComponentsCharts['Pitti Engineering'],
     },
     {

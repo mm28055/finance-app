@@ -204,7 +204,7 @@ export const autoRelatedBatteries: SectorOverview = {
         rows: [
             { company: 'Studds Accessories', trend: 'stable', trendNote: 'A 9% price rise held volumes and exports grew 32% in FY26, but the Q1 plastics shock and a permanent wage rise showed the margin is less protected than it looked; the new plant starts in October.',
                 grades: { brand: { grade: 'A', note: 'About 25% of Indian helmets; SMK premium' }, oem: { grade: 'B', note: 'Hero, Honda, Suzuki, RE, Yamaha; 13.7% of sales' }, pricing: { grade: 'B', note: '9% rise stuck; gross margin still −6 pts' }, next: { grade: 'B', note: 'New plant from own cash; exports 20% of sales' }, cash: { grade: 'B', note: 'Debt-free; stock days up to 107' } } },
-            { company: 'Amara Raja Energy', trend: 'narrowing', trendNote: 'Volumes are strong, but the margin has slid from 14% to under 10%, its Chinese cell-technology partner is blocked, and the 16 GWh cell target has been softened.',
+            { company: 'Amara Raja Energy', trend: 'narrowing', trendNote: 'Volumes are strong, but the margin has slid from 14% for FY24 to under 10% in Q1 FY27, its Chinese cell-technology partner is blocked, and the 16 GWh cell target has been softened.',
                 grades: { brand: { grade: 'A', note: 'Amaron; 100,000+ outlets' }, oem: { grade: 'B', note: 'Car makers +24%, bikes +35% in Q1' }, pricing: { grade: 'C', note: 'Margin 14% → 9.6%; B2B lags' }, next: { grade: 'C', note: 'No tech partner; cells from H1 FY28' }, cash: { grade: 'C', note: 'Free cash negative; ₹890cr related-party buys' } } },
             { company: 'Exide Industries', trend: 'stable', trendNote: 'Lead-acid margin up to 12.4% through a sulphur and plastics spike, and the first lithium-cell plant was commissioned on 23 September; but no cell customer contracts are disclosed.',
                 grades: { brand: { grade: 'A', note: 'Market leader; 120,000+ touchpoints' }, oem: { grade: 'A', note: 'Leader in OEM and replacement' }, pricing: { grade: 'A', note: 'Margin rose while costs spiked' }, next: { grade: 'B', note: '6 GWh plant running; licensed from SVOLT' }, cash: { grade: 'B', note: 'AAA; ₹3,000cr guarantee for cell unit' } } },
@@ -474,7 +474,7 @@ export const autoRelatedBatteries: SectorOverview = {
             points: [
                 {
                     label: 'Fits: Studds, priced for a margin recovery',
-                    text: "**Studds** needs about {need:Studds Accessories|14}% a year against my ~15%. The price is near its 52-week low and 32% below its high, and it assumes the margin returns to the high teens, which is what management promises by Q4 FY27. The new plant is mostly paid for from cash, so there is no dilution or debt risk. **Buy if Q2's margin reaches the promised 14–15% and stock days start to fall; a margin below 13% would mean the recovery is slower than guided.**",
+                    text: "**Studds** needs about {need:Studds Accessories|14}% a year against my ~15%. The price assumes the margin returns to the high teens, which is what management promises by Q4 FY27. The new plant is mostly paid for from cash, so there is no dilution or debt risk. **Buy if Q2's margin reaches the promised 14–15% and stock days start to fall; a margin below 13% would mean the recovery is slower than guided.**",
                 },
                 {
                     label: 'Close: Amara Raja, priced for doubt',
@@ -482,7 +482,7 @@ export const autoRelatedBatteries: SectorOverview = {
                 },
                 {
                     label: 'Stretched: Exide, paying for lithium in advance',
-                    text: "**Exide** needs about {need:Exide Industries|21}% a year against my ~13%. Roughly a seventh of its market value is the HDFC Life stake, and the rest pays for a lead-acid business growing about 11% plus a lithium business that has not yet sold a meaningful volume of its own cells. The lead-acid business alone would look much cheaper, but shareholders also own the lithium losses and the ₹3,000cr guarantee. **Wait for cell orders and a quarter of cell revenue with narrowing losses, or a lower price.**",
+                    text: "**Exide** needs about {need:Exide Industries|21}% a year against my ~13%. The HDFC Life stake, worth about ₹5,100cr, is a slice of its {mcap:Exide Industries|₹34,595cr} market value, and the rest pays for a lead-acid business growing about 11% plus a lithium business that has not yet sold a meaningful volume of its own cells. The lead-acid business alone would look much cheaper, but shareholders also own the lithium losses and the ₹3,000cr guarantee. **Wait for cell orders and a quarter of cell revenue with narrowing losses, or a lower price.**",
                 },
                 {
                     label: 'Why the two battery makers are priced so differently',

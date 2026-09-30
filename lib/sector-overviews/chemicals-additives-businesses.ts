@@ -80,7 +80,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Dow and Borealis', note: 'Global resin majors that export XLPE compounds to India; strongest in the highest voltages, where DDev is replacing imports.' }, { name: 'KLJ Polymers', note: 'Indian rival in low-voltage compounds, where competition is on price.' }, { name: 'Shakun Polymers (Orbia)', note: 'The other Indian HFFR maker, now owned by Mexico’s Orbia.' }, { name: 'Cable makers’ own compounding', note: 'Big cable makers could make their own; management argues its scale and range make that uneconomic.' }],
         position: "**India's largest cable-compound maker, with about a third of a 2.5 lakh-tonne market**, about half of Sioplas XLPE and the only Indian supplier for 66–132 kV cables.",
         money: "Screener shows **₹7cr of net cash**; the company calls itself net-debt-free, though CRISIL counts about ₹223cr of working-capital borrowing and Q1 interest rose to ₹11cr as the cash cycle stretched to 85 days. FY27 capex of ₹150–175cr (CRISIL expects ₹350–400cr over two to three years) is funded from its own cash; battery storage needs ₹150–200cr including working capital. No equity raised. CRISIL rates it A+/Stable. Promoters hold **75%**, the legal maximum and unchanged.",
-        watch: ["Second-half volume near 60,000 tonnes a quarter.", "Cash cycle back towards 55–60 days from 85.", "Battery storage kept small until it earns more than 6–8%."],
+        watch: ["Second-half volume near 60,000 tonnes a quarter.", "Cash cycle back towards 55–60 days from 85.", "Battery storage kept small until it earns more than the 6–8% guided for its first, supply-only phase (management hopes for 11–15% later)."],
         charts: chemicalsCharts['DDev Plastiks'],
     },
     {

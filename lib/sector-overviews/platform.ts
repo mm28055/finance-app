@@ -537,7 +537,7 @@ export const platformCos: SectorOverview = {
                     rows: [
                         ['Cartrade Tech', 'Margin above 31% in Q2–Q4; ‘40-40’ goal; ~₹1,000cr profit in 4–5 years', 'Little (₹27cr in FY26)', '**Delivered**: OLX +29% against a promised step-up; all segments’ margins up; payout still years away'],
                         ['BlackBuck', 'No numbers; vehicle finance profitable by end-FY27; Superloads figures in 3–4 quarters', 'Tracking devices, ₹60–80cr a year (ICRA)', '**Mixed**: warned slowdown bit (core +1% on quarter); growth arms +44%; pre-tax profit −8%'],
-                        ['Matrimony.com', 'Q2: double-digit billing and revenue growth; profit similar to or above Q1', 'Little', '**Delivered**: profit +127.5% as promised; billing +7.8%, low end'],
+                        ['Matrimony.com', 'Q2: double-digit matchmaking billing and revenue growth; profit similar to or slightly above Q1 (triple-digit growth year on year)', 'Little', '**Delivered**: profit +127.5% as promised; billing +7.8%, low end'],
                         ['Macfos', 'No Q1 call; ~50% growth for 2–3 years (Oct 2025); ~8% profit margin', 'Small; bigger warehouse under study', '**Missed**: Q1 +38%; profit margin 7.1%'],
                         ['TBO Tek', '‘Early to mid-20s’ growth; cash conversion above 100% by FY27-end; integration by end-2026', 'Capitalised technology; Classic Vacations ($110m)', '**Beat**: adjusted EBITDA ₹150cr against ₹111cr in Q4; cash +₹392cr'],
                         ['Swiggy', 'Cash break-even within two quarters; Instamart margin 0 to −1%; ~75 new stores', '₹195cr in Q1 (was to fall)', '**Reversed**: ‘no dilution, no new stores’ dropped; Instamart −0.2% against break-even'],
@@ -591,7 +591,7 @@ export const platformCos: SectorOverview = {
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "Most of these companies hold large cash, so their businesses are cheaper than their P/Es suggest: CarTrade's ₹1,321cr is about 9% of its market value, Urban Company's ₹2,019cr about 8% and Swiggy's ₹14,367cr about 19%. **Pine Labs is the exception to trust least**: the net cash in the live table includes about ₹5,570cr of merchants' and card-holders' money held in escrow. The company's own net cash was ₹2,449cr at March 2026, so its real EV/EBITDA is higher than the table shows. **AvenuesAI**'s ₹1,312cr of net cash on Screener's count also includes money in transit to merchants, so treat its EV/EBITDA as flattering too; **Aurum**'s debt is mostly leases on co-living buildings.",
+                    text: "Most of these companies hold large cash, so their businesses are cheaper than their P/Es suggest: CarTrade has ₹1,321cr against a {mcap:Cartrade Tech|₹14,000cr} market value, Urban Company ₹2,019cr against {mcap:Urban Company|₹25,200cr} and Swiggy ₹14,367cr against {mcap:Swiggy|₹76,800cr}. **Pine Labs is the exception to trust least**: the net cash in the live table includes about ₹5,570cr of merchants' and card-holders' money held in escrow. The company's own net cash was ₹2,449cr at March 2026, so its real EV/EBITDA is higher than the table shows. **AvenuesAI**'s ₹1,312cr of net cash on Screener's count also includes money in transit to merchants, so treat its EV/EBITDA as flattering too; **Aurum**'s debt is mostly leases on co-living buildings.",
                 },
                 {
                     label: 'Fits: a price that asks for about what I expect',

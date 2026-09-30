@@ -128,7 +128,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'GK Energy',
-        inShort: ["**A leading installer of solar water pumps for farmers**, working under the national PM-KUSUM scheme and state schemes, mainly in Maharashtra, and now adding rooftop solar and battery storage.", "**Good:** a filed margin of 16–19%, about 41% return on capital and ₹237cr of net cash after its IPO. **Bad:** a plan to double revenue rests on a ₹541cr order book and a new scheme (PM-KUSUM 2.0) with no firm date, price per pump is falling, its margin fell from 20.4% in FY26 to 17.05% in Q1, and the order book shrank from ₹710cr to ₹541cr.", "**Verdict: wait.** Cheap if the new scheme arrives; I would wait until it does."],
+        inShort: ["**A leading installer of solar water pumps for farmers**, working under the national PM-KUSUM scheme and state schemes, mainly in Maharashtra, and now adding rooftop solar and battery storage.", "**Good:** a filed margin of 16–19%, about 41% return on capital and ₹237cr of net cash after its IPO (Screener; ₹240.6cr on its own count). **Bad:** a plan to double revenue rests on a ₹541cr order book and a new scheme (PM-KUSUM 2.0) with no firm date, price per pump is falling, its margin fell from 20.4% in FY26 to 17.05% in Q1, and the order book shrank from ₹710cr to ₹541cr.", "**Verdict: wait.** Cheap if the new scheme arrives; I would wait until it does."],
         tagline: "Pune-based contractor that supplies and installs solar-powered farm water pumps under government subsidy schemes, with a small rooftop-solar business and a first battery-storage project.",
         revenue: '₹1,715cr (FY26, consolidated)',
         products: [
@@ -232,7 +232,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Sterling and Wilson', note: "The largest listed solar contractor, bidding for the same state-owned and battery tenders at far larger scale." }, { name: 'Road builders entering solar (H.G. Infra, Ceigall, Dilip Buildcon, GR Infraprojects)', note: "Bidding for government solar and battery jobs to fill their order books." }],
         position: "**A mid-sized solar contractor for state-owned clients**, with 1,405 MW (AC) of solar and 1,184 MWh of batteries under construction, small next to Sterling and Wilson; it claims to be among the top three solar contractors by profitability.",
         money: "Net cash of **₹317cr** (Screener) after a September 2025 IPO at ₹351 a share that raised ₹521.7cr net (including a pre-IPO round); even so, borrowings rose from ₹115cr to ₹255cr in FY26 and operating cash was −₹50cr. It spent about ₹750cr over FY25–FY26 on the module line, battery line and junction-box venture. CRISIL rates it A-/Stable; net worth is ₹844.8cr. Promoters hold **65.77%**.",
-        watch: ["The AGM vote on moving IPO money into the cell venture.", "Q2 revenue above ₹400cr.", "Operating cash turning positive in H1 FY27."],
+        watch: ["The result of the 30 September 2026 AGM vote on moving IPO money into the cell venture (due within two working days).", "Q2 revenue above ₹400cr.", "Operating cash turning positive in H1 FY27."],
         charts: constructionCharts['Solarworld Energy So'],
     },
 ];

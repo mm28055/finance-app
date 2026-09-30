@@ -54,7 +54,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Kajaria Ceramics',
-        inShort: ["**India's largest tile maker**, with 82.7 million sq m of capacity in five states, plus Kerovit bathware and tile adhesives, sold through about 1,800 dealers.", "**Good:** cost cuts lifted the margin from 14% to 18% in FY26, its kilns burn cheaper fuel than Morbi's, and it held about ₹793cr of net cash in June 2026 even after a ₹297cr buyback. **Bad:** Q1 FY27's 20% growth was mostly price after the Morbi gas shock, and a ₹20cr fraud hit its bathware subsidiary.", "**Verdict: follow.** The best-run business in the group, but the price needs more growth than I expect."],
+        inShort: ["**India's largest tile maker**, with 82.7 million sq m of capacity in five states, plus Kerovit bathware and tile adhesives, sold through about 1,800 dealers.", "**Good:** cost cuts lifted the margin (company EBITDA) from 12.8% to 17.8% in FY26, its kilns burn cheaper fuel than Morbi's, and it held about ₹793cr of net cash in June 2026 even after a ₹297cr buyback. **Bad:** Q1 FY27's 20% growth was mostly price after the Morbi gas shock, and a ₹20cr fraud hit its bathware subsidiary.", "**Verdict: follow.** The best-run business in the group, but the price needs more growth than I expect."],
         tagline: "India's biggest ceramic and vitrified tile maker, with its own plants in Rajasthan, Gujarat, Uttar Pradesh, Andhra Pradesh and Telangana, a bathware brand (Kerovit) and a tile-adhesive business.",
         revenue: '₹4,830cr (FY26, consolidated)',
         products: [

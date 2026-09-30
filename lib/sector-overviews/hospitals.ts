@@ -248,7 +248,7 @@ export const hospitals: SectorOverview = {
             { key: 'cash', label: 'Cash and balance sheet', description: 'Whether profit turns into cash, and how much debt is carried.' },
         ],
         rows: [
-            { company: 'Yatharth Hospital', trend: 'widening', trendNote: 'Revenue up 52% in Q1 against a guide of more than 37%; Gurugram opens in early 2027.',
+            { company: 'Yatharth Hospital', trend: 'widening', trendNote: 'Revenue up 52% in Q1 against a guide of more than 37%; Gurugram opens in Q1 FY28 (April–June 2027).',
                 grades: { clin: { grade: 'B', note: 'Super-speciality care outside central Delhi' }, loc: { grade: 'A', note: 'Growing NCR and UP suburbs' }, price: { grade: 'C', note: 'ARPOB ₹34,758, lowest here; guided up 9–10%' }, build: { grade: 'A', note: 'Buys half-built hospitals and fills them fast' }, cash: { grade: 'C', note: 'Five-year cash conversion 50%' } } },
             { company: "Rainbow Children's Medicare", trend: 'widening', trendNote: 'Revenue up 33% in Q1; 2,500 new beds planned to double revenue in four years.',
                 grades: { clin: { grade: 'A', note: 'Leading children’s specialists and neonatal care' }, loc: { grade: 'B', note: 'Strong in the south; new in Mumbai and NCR' }, price: { grade: 'B', note: 'ARPOB up 6%' }, build: { grade: 'B', note: 'Occupancy about 41% as new beds open' }, cash: { grade: 'A', note: '₹613cr cash; free cash while expanding' } } },

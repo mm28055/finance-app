@@ -244,7 +244,7 @@ export const media: SectorOverview = {
                     rows: [
                         ['Music catalogue, licensed', 'Tips', '376', '**217**', '50–79%', '85% of revenue from songs over three years old'],
                         ['Music catalogue plus new music, artists, video and events', 'Saregama', '985', '**206**', '27–42%', 'Music segment result ₹364cr; artists ₹13cr; video ₹2cr; events −₹7cr'],
-                        ['VFX services', 'Basilic', '408', '51', '14–24%', 'India service work ~43% margin; overseas studios thin'],
+                        ['VFX services', 'Basilic', '408', '51', '14–24%', 'India (standalone) work 42–43% margin; overseas studios thin'],
                     ],
                     note: 'Revenue and profit: Screener (Tips standalone; others consolidated). Segment results: Saregama FY26 annual report; Basilic India margin: company call.',
                 },
@@ -467,7 +467,7 @@ export const media: SectorOverview = {
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "Little for the labels: **Tips** holds cash worth only a small slice of its market value (₹345cr by its own count) and **Saregama**'s free cash is small once the Bhansali stake is left out. But the two labels account for content differently: Tips expenses it, so its operating profit is after content, while part of Saregama's content cost sits in amortisation, below operating profit. **Saregama** therefore looks cheaper on EV/EBITDA than on P/E. **Basilic** carries ₹32cr of net debt, so its EV/EBITDA is a little higher than its low P/E suggests.",
+                    text: "Little for the labels: **Tips** holds ₹345cr of cash by its own count against a market value of {mcap:Tips Music|₹8,312cr} and **Saregama**'s free cash is small once the Bhansali stake is left out. But the two labels account for content differently: Tips expenses it, so its operating profit is after content, while part of Saregama's content cost sits in amortisation, below operating profit. **Saregama** therefore looks cheaper on EV/EBITDA than on P/E. **Basilic** carries ₹32cr of net debt, so its EV/EBITDA is a little higher than its low P/E suggests.",
                 },
                 {
                     label: 'Fits',

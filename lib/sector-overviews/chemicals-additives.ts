@@ -564,13 +564,13 @@ export const chemicalsAdditives: SectorOverview = {
         {
             heading: '8. Valuation (comparative)',
             body: [
-                "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it charges for debt and credits cash. In this group the gap between them is widest at PCBL, whose debt is about a third of its market value, and at Kiri, whose net cash exceeds its market value while its operating profit is negative.",
+                "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it charges for debt and credits cash. In this group the gap between them is widest at PCBL, which carries ₹4,237cr of net debt, and at Kiri, whose net cash is larger than its market value while its operating profit is negative.",
                 "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **3% at 8x, 8% at 12x, 12% at 18x, 16% at 26x, 24% at 50x and 33% at 100x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **{Count:fits|Three} of the {count:live|eight} fit my estimates, {count:full|two} are full and {count:stretched|three} are stretched. Several prices assume Q1 FY27 was the new normal; I do not.**",
             ],
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**PCBL**'s ₹4,237cr of net debt adds about a third to its {mcap:PCBL Chemical|₹13,362cr} market value, but because its trailing profit is squeezed by ₹423cr of interest and ₹373cr of depreciation, it looks cheaper on EV/EBITDA than on P/E; that is the trough-earnings effect, and it holds only if the debt comes down. **Kiri**'s EV/EBITDA cannot be calculated: net cash of ₹4,354cr exceeds its {mcap:Kiri Industries|₹3,633cr} market value and operating profit is negative, so the market is valuing the dye business and the copper project at less than nothing. **Nocil**'s ₹442cr of net cash is about 14% of its value; **Himadri**'s counted cash is about 3%, and much of the investments behind it are debentures tied to Birla Tyres. **My view: Kiri's discount to its cash is the market's verdict on how that cash will be used; I agree with it.**",
+                    text: "**PCBL**'s ₹4,237cr of net debt sits on top of its {mcap:PCBL Chemical|₹13,362cr} market value, but because its trailing profit is squeezed by ₹423cr of interest and ₹373cr of depreciation, it looks cheaper on EV/EBITDA than on P/E; that is the trough-earnings effect, and it holds only if the debt comes down. **Kiri**'s EV/EBITDA cannot be calculated: net cash of ₹4,354cr exceeds its {mcap:Kiri Industries|₹3,633cr} market value and operating profit is negative, so the market is valuing the dye business and the copper project at less than nothing. **Nocil** has ₹442cr of net cash against a {mcap:Nocil|₹2,800cr} market value; **Himadri**'s counted cash is small against its size, and much of the investments behind it are debentures tied to Birla Tyres. **My view: Kiri's discount to its cash is the market's verdict on how that cash will be used; I agree with it.**",
                 },
                 {
                     label: 'Fits: the price asks for no more than I expect',
@@ -598,7 +598,7 @@ export const chemicalsAdditives: SectorOverview = {
             company: 'DDev Plastiks', rank: 1, stance: 'COMPOUNDER', segment: RUBBER,
             what: "India's leading maker of polymer compounds for wire and cable insulation (XLPE, halogen-free flame-retardant and PVC), with about a third of the market, six plants and exports to 55+ countries; it is starting a battery-storage assembly business.",
             view: "**A high-return leader at a price that asks for little.** It earned 31% on capital in FY26 on sales of about ten times its fixed assets, prices at a fixed spread per kilo, and its new Bhiwadi plant should add about ₹500cr of sales for about ₹80cr. But Q1 volume rose only 1% against a 15% target, the ₹19.6 a kilo Q1 profit included a temporary export premium, only 47% of operating profit has become cash over five years, and the battery-storage venture slipped with a lower margin guide. The price needs about {need:DDev Plastiks|8}% a year against my ~11%.",
-            watch: 'Second-half volume near 60,000t a quarter; cash cycle back towards 60 days; battery storage kept small until it earns 10%.',
+            watch: 'Second-half volume near 60,000t a quarter; cash cycle back towards 60 days; battery storage kept small until it earns more than its guided 6–8%.',
         },
         {
             company: 'Himadri Speciality', rank: 2, stance: 'PRICED', segment: CARBON,

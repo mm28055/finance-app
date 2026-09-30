@@ -242,7 +242,7 @@ export const softwareBpm: SectorOverview = {
                 },
                 {
                     label: 'Where the demand comes from',
-                    text: "**US healthcare is growing steadily; India is not.** Sagility grew about 15% organically against an industry an analyst put at 7–8%, and IKS's core grew 12–13% in constant currency, its own yardstick for gaining share. The drivers are rising US healthcare costs, staff shortages at hospitals and insurers, and the complexity of billing rules. Datamatics sells to publishers, banks and retailers in the US (54% of revenue) and Europe, where work is shorter and more project-based. Digitide depends on Indian banks and insurers (BFSI, 51% of revenue), which are cutting costs, and on a small but growing US healthcare business of about $25m. **My view: the healthcare pair have demand that outlasts a slow economy; Datamatics and Digitide depend on clients' discretionary budgets.**",
+                    text: "**US healthcare is growing steadily; India is not.** Sagility grew about 15% organically against an industry an analyst put at 7–8%, and IKS's core grew 12–13% in constant currency over the last two quarters (13% in Q4, 12% in Q1), its own yardstick for gaining share. The drivers are rising US healthcare costs, staff shortages at hospitals and insurers, and the complexity of billing rules. Datamatics sells to publishers, banks and retailers in the US (54% of revenue) and Europe, where work is shorter and more project-based. Digitide depends on Indian banks and insurers (BFSI, 51% of revenue), which are cutting costs, and on a small but growing US healthcare business of about $25m. **My view: the healthcare pair have demand that outlasts a slow economy; Datamatics and Digitide depend on clients' discretionary budgets.**",
                 },
                 {
                     label: 'Cycles and policy',
@@ -338,7 +338,7 @@ export const softwareBpm: SectorOverview = {
                 },
                 {
                     label: 'Working capital: the biggest drain',
-                    text: "**Digitide**'s days of sales outstanding rose from 75 to 82 in Q1 as clients argued over wage-code billing, and Screener's debtor days rose from 62 to 78 in FY26. Its office leases take ₹175–180cr of cash a year, below the EBITDA line, so about 11% EBITDA leaves only about 3% at the operating-profit-after-depreciation level. It still produced ₹157cr of free cash in FY26 (company figure), with operating cash at 77% of EBITDA.",
+                    text: "**Digitide**'s days of sales outstanding rose from 75 to 82 in Q1 as clients argued over wage-code billing, and Screener's debtor days rose from 62 to 78 in FY26. Its office leases take ₹175–180cr of cash a year, below the EBITDA line, so about 11% EBITDA leaves only about 3% at the operating-profit-after-depreciation level. It still produced ₹157cr of free cash in FY26 (company figure), with operating cash at 77% of EBITDA on its own count (76% of operating profit on Screener's figures).",
                 },
                 {
                     label: 'Working capital: getting worse',
@@ -346,7 +346,7 @@ export const softwareBpm: SectorOverview = {
                 },
                 {
                     label: 'Working capital: well run',
-                    text: "**Datamatics** turned ₹324cr of operating cash in FY26, about 1.7 times its filed profit, with billed debtor days falling to 60. **Sagility** turned 82% of operating profit into cash over five years, and ₹241.6cr of free cash in Q1 alone after capex. **IKS** cut its net debt from ₹563cr to ₹252cr in FY26 from its own cash flow before borrowing for TruBridge, and its debtor days fell from 73 to 65.",
+                    text: "**Datamatics** turned ₹324cr of operating cash in FY26, about 1.7 times its filed profit, with billed debtor days falling to 60. **Sagility** turned 82% of operating profit into cash over five years, and ₹241.6cr of free cash in Q1 alone after capex. **IKS** cut its debt from ₹563cr to ₹252cr in FY26 on its own count (Screener, netting off cash and investments, shows about ₹13cr of net cash at March) from its own cash flow before borrowing for TruBridge, and its debtor days fell from 73 to 65.",
                 },
                 {
                     label: 'Working capital: built into the business',
@@ -473,7 +473,7 @@ export const softwareBpm: SectorOverview = {
             heading: '8. Valuation (comparative)',
             body: [
                 "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it gives credit for cash and charges for debt. Here the two disagree for particular reasons: Sagility's profit is cut by acquisition amortisation that EBITDA ignores, IKS's debt is about to jump after the balance-sheet date, and Digitide's EBITDA is largely consumed by rent.",
-                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **12.5% at 18.8x, 13.4% at 20.4x and 21.6% at 40.8x.** Digitide has no meaningful P/E because its profit is about nil. The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **Sagility fits my estimate today; IKS and Datamatics are a few points short.**",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **{need:Sagility|13}% for Sagility at {pe:Sagility|18.8}x, {need:Datamatic Global Ser|12–13}% for Datamatics at {pe:Datamatic Global Ser|20.4}x and {need:Inventurus Knowledge Solutions|22}% for IKS at {pe:Inventurus Knowledge Solutions|40.8}x.** Digitide has no meaningful P/E because its profit is about nil. The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **Against my estimates, Sagility is {label:Sagility|fits}, Datamatics {label:Datamatic Global Ser|full} and IKS {label:Inventurus Knowledge Solutions|full} at today's prices.**",
             ],
             points: [
                 {
@@ -486,7 +486,7 @@ export const softwareBpm: SectorOverview = {
                 },
                 {
                     label: 'Full: steady, but growth is modest',
-                    text: "**Datamatics** needs about {need:Datamatic Global Ser|12–13}% a year against my ~10%. About ₹500cr of net cash after the TNQ payment is roughly a tenth of its market value, which EV/EBITDA credits. The shortfall is growth: about 8% organic growth cannot close the gap without an acquisition or a visible AI product business. **Follow it for a price that needs only high-single-digit growth.**",
+                    text: "**Datamatics** needs about {need:Datamatic Global Ser|12–13}% a year against my ~10%. About ₹500cr of net cash after the TNQ payment, against a market value of {mcap:Datamatic Global Ser|₹4,855cr}, is credited by EV/EBITDA. The shortfall is growth: about 8% organic growth cannot close the gap without an acquisition or a visible AI product business. **Follow it for a price that needs only high-single-digit growth.**",
                 },
                 {
                     label: 'No price to judge: Digitide',
@@ -511,7 +511,7 @@ export const softwareBpm: SectorOverview = {
         {
             company: 'Inventurus Knowledge Solutions', rank: 2, stance: 'PRICED', segment: BPM_HC,
             what: "IKS Health: billing, coding, clinical documentation and prior approvals for about 600 US hospital and doctor groups, paid mostly a share of collections; bought TruBridge, a rural-hospital records and billing company of similar size, in July 2026.",
-            view: "**The best business here, priced for its biggest bet.** FY26 profit rose 48% to ₹722cr, and the core grows 12% in constant currency at about 35% with staff growing a third as fast. But TruBridge was bought mostly with debt, its revenue base was cut from $340m to $300m within a month, and the combined margin drops to 26–27% before any recovery. The price needs about {need:Inventurus Knowledge Solutions|22}% a year against my ~17%.",
+            view: "**The best business here, priced for its biggest bet.** FY26 profit rose 48% to ₹722cr, and the core grows 12% in constant currency at about 35% with staff growing less than half as fast (4.8%). But TruBridge was bought mostly with debt, its revenue base was cut from $340m to $300m within a month, and the combined margin drops to 26–27% before any recovery. The price needs about {need:Inventurus Knowledge Solutions|22}% a year against my ~17%.",
             watch: 'TruBridge’s margin rising from 22–23%; core constant-currency growth staying at 12% or more; net debt falling towards 2x EBITDA by FY28.',
         },
         {

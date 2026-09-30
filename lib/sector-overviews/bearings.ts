@@ -459,7 +459,7 @@ export const bearings: SectorOverview = {
                 },
                 {
                     label: 'Governance and accounting findings',
-                    text: "**NRB**'s promoters pledged 77.7% of their shares to fund a family settlement, cut that to 14.99% by June by selling 6.47% of the company, and the MD sold more in September; promoter holding fell from 51.2% to 44.7%, and BSE queried a volume spike on 21 September. Its auditor made inventory the key audit matter: an ₹81cr obsolescence allowance, with work in progress valued in spreadsheets. **Harsha**'s auditor found the edit log not enabled at database level in its accounting software, and its head of the brass business resigned in August. **SKF India** shareholders complained that disclosure had ‘dropped substantially’ since the demerger. All five audit opinions are unqualified.",
+                    text: "**NRB**'s promoters pledged 77.7% of their shares to fund a family settlement, cut that to 14.99% by June by selling 6.47% of the company, and the MD sold more in September; promoter holding fell from 51.2% in March to 44.7% in June and about 41.2% by 25 September, and BSE queried a volume spike on 21 September. Its auditor made inventory the key audit matter: an ₹81cr obsolescence allowance, with work in progress valued in spreadsheets. **Harsha**'s auditor found the edit log not enabled at database level in its accounting software, and its head of the brass business resigned in August. **SKF India** shareholders complained that disclosure had ‘dropped substantially’ since the demerger. All five audit opinions are unqualified.",
                 },
                 {
                     label: 'Contingent claims and legal cases',

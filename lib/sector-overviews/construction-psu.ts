@@ -164,7 +164,7 @@ export const constructionPsu: SectorOverview = {
             invert: true,
             legend: ['More debt', 'Net cash'],
             source: 'Filed balance sheets and P&L (Screener): borrowings minus cash and treasury investments, ÷ operating profit. Consolidated unless noted as standalone.',
-            note: "Below zero means more cash than debt. All four look cash-rich, but much of the cash is clients' money held for their projects. NBCC's net cash of about ₹6,535cr on Screener compares with only about ₹220cr unencumbered at September 2025 (CRISIL). Ircon says 'our own cash is about ₹950 crores' of about ₹4,200cr reported, against ₹5,726cr of borrowings in its road companies.",
+            note: "Below zero means more cash than debt. All four look cash-rich, but much of the cash is clients' money held for their projects. NBCC's net cash of about ₹6,535cr on Screener compares with only about ₹220cr unencumbered at September 2025 (CRISIL's December 2025 report, the latest; no newer figure published). Ircon says 'our own cash is about ₹950 crores' of about ₹4,200cr reported, against ₹5,726cr of borrowings in its road companies.",
             values: {
                 'NBCC': [-27.4, -14.3, -10.1, -9.4, -10.6],
                 'Engineers India': [-7.1, -7.3, -8.6, -5.3, -4.2],

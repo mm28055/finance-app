@@ -187,7 +187,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Supreme Industries, Astral', note: 'Market leaders with stronger brands and broader ranges.' }, { name: 'Finolex Industries', note: 'Makes its own resin; stronger in farm pipes.' }, { name: 'Apollo Pipes and small regional makers', note: 'Smaller players losing ground in volatile resin markets.' }],
         position: "**Among India's top six pipe makers**, with about 5% of the PVC-pipe market (Screener's description) and more than 7,200 products.",
         money: "Screener shows **net cash of ₹132cr** (March 2026); the company said net cash was about zero on 30 June 2026, with gross debt of about ₹120cr, as stock rose to 100 days (target 65–75). The big capex cycle is done; ₹40–42cr went on the Bhuj plant purchase in Q1. Debtor days are 40, with a target of 30. CRISIL keeps a Negative outlook on its A+ rating because margins have been weak; it would downgrade if margins fell below 8%. Promoters hold **61.0%**, unchanged over three years.",
-        watch: ["Volume growth against the 12–15% target.", "Stock days back to 65–75 by September.", "Bathware reaching break-even."],
+        watch: ["Volume growth against the 12–15% target.", "Stock days back to 65–75 by September, as promised; the Q2 results will show.", "Bathware reaching break-even."],
         charts: plasticsCharts['Prince Pipes'],
     },
     {

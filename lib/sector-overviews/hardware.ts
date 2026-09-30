@@ -154,7 +154,7 @@ export const hardware: SectorOverview = {
                 'TVS Electronics': [-0.1, 0.1, 3.6, 3.4, 2.5],
             },
             cellNotes: {
-                'GNG Electronics': 'FY26 uses Screener’s net debt of about ₹315cr. Management put March 2026 net debt at about ₹300cr on the Q4 call and about ₹399cr on the Q1 call; it was ₹406cr in June 2026.',
+                'GNG Electronics': 'FY26 uses Screener’s net debt of about ₹315cr. Management put March 2026 net debt at about ₹300cr on both the Q4 and Q1 calls (Screener counts leases, which may explain the gap); it was ₹406cr in June 2026 (company).',
             },
         },
         {
@@ -400,7 +400,7 @@ export const hardware: SectorOverview = {
                 },
                 {
                     label: 'Mixed',
-                    text: "**GNG** promised on the Q4 call about 25% revenue growth and quarterly margins ‘slightly above’ Q4's 9.8%; Q1 brought 32% and 12.8% (company basis), and it raised FY27 guidance to 30% growth with profit margin up 0.75–1 point. But net debt of ‘about ₹300cr’ came in at ₹406cr, and the two calls gave different March figures (₹300cr and ₹399cr). **TVS Electronics** promised ‘double-digit growth’ and delivered 9.6%; its margin gains, called structural in May, reversed in the next quarter.",
+                    text: "**GNG** promised on the Q4 call about 25% revenue growth and quarterly margins ‘slightly above’ Q4's 9.8%; Q1 brought 32% and 12.8% (company basis), and it raised FY27 guidance to 30% growth with profit margin up 0.75–1 point. But net debt of ‘about ₹300cr’ was ₹406cr by June (company; about ₹300cr at March on its own measure, ₹315cr on Screener). **TVS Electronics** promised ‘double-digit growth’ and delivered 9.6%; its margin gains, called structural in May, reversed in the next quarter.",
                 },
                 {
                     label: 'My outlook',

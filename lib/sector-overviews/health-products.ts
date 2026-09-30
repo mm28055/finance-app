@@ -409,7 +409,7 @@ export const healthProducts: SectorOverview = {
                 },
                 {
                     label: 'Working capital: improving',
-                    text: "**Tarsons**'s cycle has fallen from 672 to 423 days on the chart, and operating cash of ₹118cr in FY26 matched its operating profit, as it has for three years. That is the one strong point in its numbers. Its free cash has still been negative for five years, because the plants cost more than the cash coming in. With the building mostly done, management expects net debt to fall ₹40–50cr this year.",
+                    text: "**Tarsons**'s cycle has fallen from 672 to 423 days on the chart, and operating cash of ₹118cr in FY26 matched its operating profit, as it has for three years. That is the one strong point in its numbers. Its free cash has still been negative for five years, because the plants cost more than the cash coming in. With the building mostly done, management expects net debt to fall about ₹40cr this year (its aim is ₹40–50cr).",
                 },
                 {
                     label: 'Working capital: built into the business',
@@ -422,7 +422,7 @@ export const healthProducts: SectorOverview = {
                     columns: ['Company', 'What management said', 'Balance sheet'],
                     rows: [
                         ['Poly Medicure', 'Working capital 140 days, no improvement expected in FY27; capex ₹200–225cr', 'Cash ₹855cr against a ~₹250cr working-capital line and ~€9mn of Citieffe loans; ₹484cr of share-sale money unspent (Mar 2026)'],
-                        ['Tarsons Products', 'Net debt to fall ₹40–50cr in FY27; ~₹70cr of loans due; ₹160cr of work in progress to finish', 'Gross debt ~₹380cr, net ₹330–340cr; ₹108.6cr guarantee for a subsidiary’s loan'],
+                        ['Tarsons Products', 'Net debt to fall about ₹40cr in FY27 (aim ₹40–50cr); ~₹70cr of loans due; ₹160cr of work in progress to finish', 'August (management): gross debt ~₹380cr, net ₹330–340cr (March, Screener: net ₹269cr); ₹108.6cr guarantee for a subsidiary’s loan'],
                         ['Laxmi Dental', 'Machinery and Palghar land this year, cost not given', 'Cash and investments ~₹99cr, debt-free; ₹54.7cr of IPO money unused, extension sought'],
                         ['DentalKart', 'Inventory up ₹12.7cr in the quarter; 120–150 inventory days near term', 'Net cash ₹47cr (Mar 2026); bank lines closed in July'],
                         ['OSEL Devices (H2 FY26 call)', '₹30cr borrowed against mutual funds as “interest arbitrage”', 'Borrowings ₹94cr; operating cash −₹23cr in FY26'],
@@ -502,7 +502,7 @@ export const healthProducts: SectorOverview = {
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
                         ['Poly Medicure', 'Group ₹2,300–2,400cr (kept); India ₹1,900–2,000cr (widened up); margin 23–25%; kidney care cut to 15–18%', '₹200–225cr; Palwal Mar 2027, Noida Q1 FY28', '**Mixed**: margin above guide; kidney care −3.8%; needs ~₹592cr a quarter'],
-                        ['Tarsons Products', 'Revenue +15%-plus; net debt −₹40–50cr', 'Programme ~₹893cr (budget ₹800cr); ₹99.8cr still contracted', '**Missed**: loss after “no accounting losses”; plants late again'],
+                        ['Tarsons Products', 'Revenue +15%-plus; net debt down about ₹40cr (aim ₹40–50cr)', 'Programme ~₹893cr (budget ₹800cr); ₹99.8cr still contracted', '**Missed**: loss after “no accounting losses”; plants late again'],
                         ['Laxmi Dental', 'Revenue +15–20%; margin 18–20% (reinstated)', '₹18.4cr in FY26; Palghar cost not given', '**Delivered**: margin 19.2%; revenue +13.9%, just under'],
                         ['DentalKart', 'No revenue guide; gross margin 27–30% (cut from 30–33%); stock-outs below 5% by Dec', 'Little', '**Walked back**: margin target cut; recovery from 0.4% to 6.1% started'],
                         ['OSEL Devices', '₹500cr-plus “possible”; exports ₹50cr (half-yearly calls)', 'SFL ~₹30cr; export plant not costed', '**Mixed**: +57% in FY26; H2 flat; cash statement corrected'],
@@ -577,11 +577,11 @@ export const healthProducts: SectorOverview = {
                 },
                 {
                     label: 'Not measurable on earnings',
-                    text: "**Tarsons**'s profit is ₹11cr over the last year and was a loss in Q1, so its P/E means little. On EV/EBITDA it looks cheaper, but depreciation and interest will absorb most of its operating profit this year and its plants are late again. I would pass until net debt falls the ₹40–50cr management has promised and the new lines win orders.",
+                    text: "**Tarsons**'s profit is ₹11cr over the last year and was a loss in Q1, so its P/E means little. On EV/EBITDA it looks cheaper, but depreciation and interest will absorb most of its operating profit this year and its plants are late again. I would pass until net debt falls the ₹40cr or so management expects (aim ₹40–50cr) and the new lines win orders.",
                 },
                 {
                     label: 'What would move the labels',
-                    text: "For **Poly Medicure**, an anti-dumping duty on dialysers and acquired units reaching mid-teens margins would support faster growth. For **Laxmi Dental**, operating cash back above ₹30cr a year and adjusted operating profit growing with sales would lift my estimate toward what the price needs. For **Tarsons**, cell-culture orders in the second half and net debt below ₹300cr would make its earnings worth estimating. For **Anondita**, a first half with positive operating cash, the old firm's assets and loans transferred, and female-condom sales booked would lift my estimate; a lower price would do the rest.",
+                    text: "For **Poly Medicure**, an anti-dumping duty on dialysers and acquired units reaching mid-teens margins would support faster growth. For **Laxmi Dental**, operating cash back above ₹30cr a year and adjusted operating profit growing with sales would lift my estimate toward what the price needs. For **Tarsons**, cell-culture orders in the second half and net debt below ₹300cr on management's measure (₹330–340cr in August) would make its earnings worth estimating. For **Anondita**, a first half with positive operating cash, the old firm's assets and loans transferred, and female-condom sales booked would lift my estimate; a lower price would do the rest.",
                 },
             ],
             embed: 'valuation',
@@ -611,7 +611,7 @@ export const healthProducts: SectorOverview = {
             company: 'Tarsons Products', rank: 4, stance: 'TURNAROUND', segment: DEVICES,
             what: "Makes plastic labware (pipette tips, tubes, cryo vials, bottles) for research, pharma and diagnostic labs, and owns Nerbe Plus, a German distributor.",
             view: "**A good brand behind a plant build that keeps slipping: pass.** Operating cash matched operating profit in FY26 and Q1 standalone sales grew 21%, but the ₹893cr programme is 12% over budget and late for the third time, and Q1 brought a first loss a quarter after management promised none. It could not raise export prices against a 25–70% rise in plastic costs, so the new capacity faces the same problem. Its profit is too small to value on.",
-            watch: 'Cell-culture lines running by Q2–Q3 FY27 and first orders; gross margin back toward 70%; net debt falling ₹40–50cr.',
+            watch: 'Cell-culture lines running by Q2–Q3 FY27 and first orders; gross margin back toward 70%; net debt falling about ₹40cr (aim ₹40–50cr).',
         },
         {
             company: 'Vasa Denticity', rank: 5, stance: 'TURNAROUND', segment: DENTAL,
@@ -638,7 +638,7 @@ export const healthProducts: SectorOverview = {
         body: [
             "**Dental products.** **Prevest Denpro: own**, in a small size: the most profitable maker here, debt-free, with spare capacity and a price that asks for less than it delivers. **Laxmi Dental: follow** for a better price or until operating cash recovers. **Vasa Denticity (DentalKart): pass** until margins, cash and the management team stabilise.",
             "**Medical devices and lab plastics.** **Poly Medicure: follow** for a better price and proof that its new spending earns a return. **Tarsons: pass**: the plants are late again, it broke its no-loss promise within a quarter, and it cannot price up abroad. **OSEL Devices: pass** until cash follows growth and related-party dealings shrink. **Anondita Medicare: pass**: the fastest grower and the richest margin here, but the price already assumes its most ambitious plan, its profit is stuck in government receivables, and its assets and dealings are still mixed up with the promoter's family firms.",
-            "**What would change my view.** For the better: an anti-dumping duty on dialysers (Poly Medicure); Tarsons's cell-culture orders arriving and net debt below ₹300cr; Laxmi Dental's operating cash above ₹30cr; DentalKart two quarters of rising gross margin with positive cash; Anondita a cash-positive half-year and a clean break from the promoter's old firm. For the worse: a broad 20% trade-margin cap; Prevest missing again or its founder unable to return; Poly Medicure's returns falling further.",
+            "**What would change my view.** For the better: an anti-dumping duty on dialysers (Poly Medicure); Tarsons's cell-culture orders arriving and net debt below ₹300cr on management's measure; Laxmi Dental's operating cash above ₹30cr; DentalKart two quarters of rising gross margin with positive cash; Anondita a cash-positive half-year and a clean break from the promoter's old firm. For the worse: a broad 20% trade-margin cap; Prevest missing again or its founder unable to return; Poly Medicure's returns falling further.",
             "**What to watch next quarter.** Poly Medicure's revenue run-rate and Middle East shipments; Tarsons's plant start-up and loss or profit; Laxmi Dental's scanner placements and margin; DentalKart's gross margin; Prevest's, OSEL's and Anondita's half-year results, including OSEL's and Anondita's operating cash and whether Anondita's South African orders were shipped.",
         ],
         bottomLine:

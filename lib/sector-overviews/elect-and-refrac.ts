@@ -270,7 +270,7 @@ export const electAndRefrac: SectorOverview = {
                         ['Graphite India', 'Electrodes', '₹842cr', '~29%', 'Net cash ₹3,939cr; 97% of capacity used'],
                         ['HEG (pre-split)', 'Electrodes', '₹681cr', '22% core (27% with other income)', 'Above 90% used'],
                         ['GrafTech (US)', 'Electrodes', '30,800 t at ~$3,900 a tonne', 'About break-even', '74% used'],
-                        ['RHI Magnesita', 'Refractories', '₹1,014cr', '14.5% (adjusted)', 'Net cash ~₹140cr'],
+                        ['RHI Magnesita', 'Refractories', '₹1,014cr', '14.5% (adjusted)', 'Net cash ~₹140cr (company, June)'],
                         ['IFGL Refractories', 'Refractories', '₹512cr', '7% (India alone 10.5%)', 'Europe loss-making'],
                     ],
                     note: 'Company presentations and Screener. Graphite India and GrafTech are not on the dashboard; they are shown for comparison.',
@@ -486,7 +486,7 @@ export const electAndRefrac: SectorOverview = {
                 },
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**RHI Magnesita** holds about ₹140cr of net cash, so its enterprise value is close to its market value; its P/E in the table is on profit before the Q4 write-down (adjusted FY26 profit ₹180cr), because on reported profit it made a loss. **IFGL** carries about ₹74–87cr of net debt, small against its size; it looks cheaper on EV/EBITDA than on P/E because depreciation and European losses sit between operating profit and earnings, and depreciation is now falling.",
+                    text: "**RHI Magnesita** holds about ₹140cr of net cash by its own June figure (Screener shows about ₹57cr of net debt at March, counting treasury investments), so its enterprise value is close to its market value; its P/E in the table is on profit before the Q4 write-down (adjusted FY26 profit ₹180cr), because on reported profit it made a loss. **IFGL** carries about ₹74–87cr of net debt, small against its size; it looks cheaper on EV/EBITDA than on P/E because depreciation and European losses sit between operating profit and earnings, and depreciation is now falling.",
                 },
                 {
                     label: 'Fits',
@@ -513,7 +513,7 @@ export const electAndRefrac: SectorOverview = {
         {
             company: 'RHI Magnesita', rank: 1, stance: 'PRICED', segment: REFRAC,
             what: "India's largest refractory maker (about 30% share, 512,000 tonnes of capacity, 8 plants and 2 mines), 56% owned by Austria's RHI Magnesita group. Steel is about 87% of sales; cement, glass, non-ferrous and petrochemicals the rest.",
-            view: "**The best refractory business, priced for more than it has delivered.** Q1's adjusted margin rose to 14.5%, it holds about ₹140cr of net cash and turned 92% of FY26 operating profit into cash, and its 4PRO service contracts are widening its moat. But volume fell 6%, the margin gain was mostly a surcharge, the capex guide was cut, and a ₹556cr write-down on the Dalmia business leaves return on capital at 6%; a new CEO and a new auditor start this year. The price needs about {need:RHI Magnesita|22}% a year against my ~14%.",
+            view: "**The best refractory business, priced for more than it has delivered.** Q1's adjusted margin rose to 14.5%, it holds about ₹140cr of net cash (company, June) and turned 92% of FY26 operating profit into cash, and its 4PRO service contracts are widening its moat. But volume fell 6%, the margin gain was mostly a surcharge, the capex guide was cut, and a ₹556cr write-down on the Dalmia business leaves return on capital at 6%; a new CEO and a new auditor start this year. The price needs about {need:RHI Magnesita|22}% a year against my ~14%.",
             watch: 'Q2–Q3 volume back to +7–8% with margins at 13% or more; the coke-oven order signed and in production, and quartzite savings in H2; the first BSR-audited results and the new CEO’s plan.',
         },
         {

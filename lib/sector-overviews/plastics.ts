@@ -363,7 +363,7 @@ export const plastics: SectorOverview = {
                 },
                 {
                     label: 'Working capital: getting worse',
-                    text: "**Shaily**'s cash cycle lengthened from 81 days in FY24 to 135 in FY26 as healthcare stock built up (inventory from 82 to 129 days), though it still turned 81% of FY26 operating profit into cash. **Garware** parked goods in the US to ride out the tariffs: inventory days rose from 116 to 149, with about US$16mn in transit or in US warehouses at March, and its cash cycle went from 68 to 89 days. **Apollo Pipes** moved from ₹40cr of net cash in March to ₹59cr of net debt in June, with net working capital at 44 days against 35 in FY25 and a 35-day target for March 2027.",
+                    text: "**Shaily**'s cash cycle lengthened from 81 days in FY24 to 135 in FY26 as healthcare stock built up (inventory from 82 to 129 days), though it still turned 81% of FY26 operating profit into cash. **Garware** parked goods in the US to ride out the tariffs: inventory days rose from 116 to 149, with about US$16mn in transit or in US warehouses at March, and its cash cycle went from 68 to 89 days. **Apollo Pipes** moved from ₹40cr of net cash in March to ₹59cr of net debt in June (company figures; Screener shows ₹10cr of standalone net debt at March), with net working capital at 44 days against 35 in FY25 and a 35-day target for March 2027.",
                 },
                 {
                     label: 'Working capital: improving',
@@ -565,7 +565,7 @@ export const plastics: SectorOverview = {
         {
             company: 'Apollo Pipes', rank: 6, stance: 'AVOID', segment: PIPES,
             what: "Makes PVC, CPVC and HDPE pipes, fittings, water tanks and window profiles, mainly in North India, owns 61.94% of Kisan Mouldings, and now plans to enter tiles.",
-            view: "**Promises ahead of delivery.** It promised more than ₹400cr of Q1 revenue in May and reported ₹295cr at a 1% margin, then approved ₹300cr for tiles and up to ₹189cr of new warrants. Group backing lifted its CRISIL rating to AA- and a promoter-group company has bought shares, but net cash has turned to ₹59cr of net debt. Avoid: no growth estimate until it earns again.",
+            view: "**Promises ahead of delivery.** It promised more than ₹400cr of Q1 revenue in May and reported ₹295cr at a 1% margin, then approved ₹300cr for tiles and up to ₹189cr of new warrants. Group backing lifted its CRISIL rating to AA- and a promoter-group company has bought shares, but net cash has turned to ₹59cr of net debt at June (company). Avoid: no growth estimate until it earns again.",
             watch: 'Double-digit revenue growth in Q2, as promised; margin back toward 7–8%; Kisan and the tiles plan.',
         },
     ],

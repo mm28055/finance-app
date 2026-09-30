@@ -328,7 +328,7 @@ export const rubber: SectorOverview = {
                 },
                 {
                     label: 'Not structural: credits and one-offs',
-                    text: "**Tinna** earned about ₹29cr of credits in both FY25 and FY26, roughly 40% of FY26's ₹72cr pre-tax profit. It books them on accrual once it is reasonably certain of selling them, and ₹19.1cr of unsold credits sat on the balance sheet in March 2026. In Q1 it sold about 1 lakh past credits for ₹21–25cr, which was cash for profit already booked, while ₹6.75cr of new credits inside Industrial revenue lifted the Q1 margin from about 18% to 22%. An analyst argued that FY26 pre-tax profit fell without credits and management replied \"Your numbers are correct\". **GRP** earned ₹43.4cr of credits in FY25 (₹21.4cr of it for earlier years) and ₹20.2cr in FY26, more than its whole FY26 pre-tax profit of about ₹8cr; its ₹4.9cr in Q1 exceeded the quarter's ₹4.2cr net profit. **Strip credits out when comparing years.**",
+                    text: "**Tinna** earned about ₹29cr of credits in both FY25 and FY26, roughly 40% of FY26's ₹72cr pre-tax profit. It books them on accrual once it is reasonably certain of selling them, and ₹19.1cr of unsold credits sat on the balance sheet in March 2026. In Q1 it sold about 1 lakh past credits at about ₹2,500 each, about ₹25cr by management's count, which was cash for profit already booked, while ₹6.75cr of new credits inside Industrial revenue lifted the Q1 margin from about 18% to 22%. An analyst argued that FY26 pre-tax profit fell without credits and management replied \"Your numbers are correct\". **GRP** earned ₹43.4cr of credits in FY25 (₹21.4cr of it for earlier years) and ₹20.2cr in FY26, more than its whole FY26 pre-tax profit of about ₹8cr; its ₹4.9cr in Q1 exceeded the quarter's ₹4.2cr net profit. **Strip credits out when comparing years.**",
                 },
                 {
                     label: 'Working capital: the biggest drains',
@@ -353,7 +353,7 @@ export const rubber: SectorOverview = {
                     columns: ['Company', 'What management said', 'Balance sheet'],
                     rows: [
                         ['Apcotex Inds', 'Net cash about ₹40cr in June, down from about ₹70cr in March as dearer raw materials tied up stock; 15–20% of the ₹220cr capex spent, self-funded so far, with borrowing to start in the next couple of quarters (ICRA expects about ₹150cr of term debt)', 'Net cash ₹67cr at March; ICRA AA- (Stable), reaffirmed Aug 2026'],
-                        ['Tinna Rubber', '₹27cr of capex in Q1 out of about ₹100cr for FY27–FY28 (about ₹60cr to be completed in FY27), mostly from own cash with up to ₹20cr of debt; about 1 lakh past credits sold for ₹21–25cr of cash', 'Net debt ₹125cr at March; CARE BBB- (Stable)'],
+                        ['Tinna Rubber', '₹27cr of capex in Q1 out of about ₹100cr for FY27–FY28 (about ₹60cr to be completed in FY27), mostly from own cash with up to ₹20cr of debt; about 1 lakh past credits sold for about ₹25cr of cash', 'Net debt ₹125cr at March; CARE BBB- (Stable)'],
                         ['GRP', 'FY27 capex ₹90–100cr; ₹91cr invested in pyrolysis by June; reducing debt is “not entirely in our hands”; no word on the lapsed share sale', 'Net debt ₹207cr at March; debt 1.15 times equity; CRISIL BBB+, cut in Dec 2025'],
                     ],
                     note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. None of the three announced a buyback.',
@@ -468,7 +468,7 @@ export const rubber: SectorOverview = {
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**Apcotex** holds about ₹67cr of net cash, so on EV/EBITDA it looks a little cheaper than its P/E suggests. **Tinna**'s net debt of ₹125cr is about 7% of its market value, so the two yardsticks roughly agree. **GRP**'s net debt of ₹207cr is about a fifth of its market value and over four times its operating profit of the last year, so it is dearer than even its P/E shows. The live table carries the multiples.",
+                    text: "**Apcotex** holds about ₹67cr of net cash, so on EV/EBITDA it looks a little cheaper than its P/E suggests. **Tinna**'s net debt of ₹125cr is small against a market value of {mcap:Tinna Rubber|₹1,721cr}, so the two yardsticks roughly agree. **GRP**'s net debt of ₹207cr compares with a market value of {mcap:GRP|₹1,013cr} and is over four times its operating profit of the last year, so it is dearer than even its P/E shows. The live table carries the multiples.",
                 },
                 {
                     label: 'Fits: Apcotex',

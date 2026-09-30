@@ -471,7 +471,7 @@ export const electricalTransformers: SectorOverview = {
                         ['Transformers & Rect', 'Standalone debt ₹424cr, stock ₹561cr, receivables ₹1,058cr; about ₹500cr of equipment on finance lease; ₹145cr of QIP money unused', 'Net debt ₹316cr; consolidated debt ₹590cr; IND A+'],
                         ['Yash Highvoltage', '₹151cr preferential issue allotted on 6 August (about ₹91cr received now); ₹28–30cr of working-capital debt to be repaid', 'Net debt ₹18cr (March)'],
                         ['Quality Power El', 'Group debt about ₹23cr; capex from own cash; raise ‘less than ₹500cr’ in August, then a ₹700cr QIP approved on 23 September', 'Net cash ₹208cr (March)'],
-                        ['Rishabh Instruments', 'Net cash ₹160.6cr at June; acquisitions of ₹50–200cr under study', 'Gross debt ₹81cr; CRISIL BBB+'],
+                        ['Rishabh Instruments', 'Net cash ₹161cr at June (company; Screener’s March figure ₹121cr); acquisitions of ₹50–200cr under study', 'Gross debt ₹81cr; CRISIL BBB+'],
                         ['Schneider Ele. Infra', 'About ₹500cr of capex over three years from own cash; no dividend for FY26', 'Net debt ₹275cr; all borrowing from group companies'],
                     ],
                     note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. Voltamp holds no calls, so its row is from the CARE rating note (Aug 2026); Yash’s is from its H2 FY26 call and annual report.',
@@ -667,7 +667,7 @@ export const electricalTransformers: SectorOverview = {
         {
             company: 'Rishabh Instruments', rank: 8, stance: 'TURNAROUND', segment: PARTS,
             what: "Electrical measuring instruments, current transformers, meters and solar inverters (India, Poland, US, China), plus an aluminium die-casting business in Poland that is losing money again.",
-            view: "**A good business inside a weak one.** Instrumentation grew 34% in Q1 at a 24.8% adjusted margin and the group holds ₹160cr of net cash. But die-casting (31% of FY26 revenue) slipped back to a loss after breaking even, group profit has been flat at about ₹20cr a quarter for five quarters, and the cash cycle is 184 days. The price needs about {need:Rishabh Instruments|20}% a year against my ~16%.",
+            view: "**A good business inside a weak one.** Instrumentation grew 34% in Q1 at a 24.8% adjusted margin and the group held about ₹161cr of net cash at June (company figure; ₹121cr at March on Screener). But die-casting (31% of FY26 revenue) slipped back to a loss after breaking even, group profit has been flat at about ₹20cr a quarter for five quarters, and the cash cycle is 184 days. The price needs about {need:Rishabh Instruments|20}% a year against my ~16%.",
             watch: 'Die-casting at breakeven by the end of FY27, or an exit; instrument growth once the German grid orders end; any change of control.',
         },
         {

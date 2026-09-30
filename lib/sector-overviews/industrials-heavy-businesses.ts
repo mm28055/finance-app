@@ -86,7 +86,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'DEE Development',
-        inShort: ["**Makes high-pressure piping systems**: ready-to-install pipe spools, bends and fittings for power stations, refineries and gas-turbine plants, from plants in India and Thailand.", "**Good:** hard-won approvals with GE, Siemens and Nooter/Eriksen, a ₹2,428cr order book, and margins up from 9% to 17% as the new plant fills. **Bad:** ₹687cr of net debt, working capital of 263 days, ₹447cr of free cash burned over two years, an auditor's qualified opinion for a second year, and heavy reliance on thermal power.", "**Verdict: follow.** The business is improving, but I want to see debt and working capital come down and the audit qualification cleared first."],
+        inShort: ["**Makes high-pressure piping systems**: ready-to-install pipe spools, bends and fittings for power stations, refineries and gas-turbine plants, from plants in India and Thailand.", "**Good:** hard-won approvals with GE, Siemens and Nooter/Eriksen, a ₹2,428cr order book, and margins up from 9% to 17% as the new plant fills. **Bad:** ₹687cr of net debt at March on Screener (₹718cr at June on the company's count), working capital of 263 days, ₹447cr of free cash burned over two years, an auditor's qualified opinion for a second year, and heavy reliance on thermal power.", "**Verdict: follow.** The business is improving, but I want to see debt and working capital come down and the audit qualification cleared first."],
         tagline: "India's largest process-piping maker by installed capacity, supplying power, oil and gas, and process plants at home and abroad.",
         revenue: '₹1,142cr (FY26, consolidated)',
         products: [

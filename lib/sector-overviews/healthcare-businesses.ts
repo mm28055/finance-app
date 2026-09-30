@@ -87,7 +87,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Dr Lal PathLabs',
-        inShort: ["**India's largest listed pathology chain**, with 312 labs and 7,727 patient centres, mostly in North India; about three-quarters of its revenue comes from patients who walk in or book a home visit.", "**Good:** Q1 FY27 revenue grew 19%, its fastest in four years, at a record 31% margin, with no list-price rise for three years and about ₹1,700cr of net cash. **Watch:** 2–3 points of that growth come from a one-off government rate revision, and management will reinvest any margin above 27–28%.", "**Verdict: follow.** The best business in the sector, but the price assumes more growth than I expect."],
+        inShort: ["**India's largest listed pathology chain**, with 312 labs and 7,727 patient centres, mostly in North India; about three-quarters of its revenue comes from patients who walk in or book a home visit.", "**Good:** Q1 FY27 revenue grew 19%, its fastest in four years, at a record 31% margin, with no list-price rise for three years and about ₹1,700cr of net cash by its own June count (₹1,134cr on Screener at March). **Watch:** 2–3 points of that growth come from a one-off government rate revision, and management will reinvest any margin above 27–28%.", "**Verdict: follow.** The best business in the sector, but the price assumes more growth than I expect."],
         tagline: "India's largest listed pathology chain, testing about 30 million patients a year through its own labs, collection centres and home visits, strongest in Delhi and North India.",
         revenue: '₹2,763cr (FY26, consolidated)',
         products: [
@@ -253,7 +253,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Suraksha Diagnostic',
-        inShort: ["**An integrated diagnostic and polyclinic chain in eastern India**: blood tests, scans and doctor consultations in 72 centres, with 95.5% of revenue from West Bengal; now entering Jharkhand, Tripura and Bihar.", "**Good:** Q1 FY27 revenue rose 21% and the margin reached 36%, as centres under two years old turned profitable and mature ones earn 40.9%. **Bad:** test growth halved to 10–11%, the margin is 28% on the old accounting basis, and borrowings rose about 46% in FY26 with directors' personal guarantees.", "**Verdict: wait.** Young centres will lift profit for a while, but wait for growth outside West Bengal."],
+        inShort: ["**An integrated diagnostic and polyclinic chain in eastern India**: blood tests, scans and doctor consultations in 72 centres, with 95.5% of revenue from West Bengal; now entering Jharkhand, Tripura and Bihar.", "**Good:** Q1 FY27 revenue rose 21% and the margin reached 36% by the company's count (34% on Screener), as centres under two years old turned profitable and mature ones earn 40.9%. **Bad:** test growth halved to 10–11%, the margin is 28% on the old accounting basis, and borrowings rose about 46% in FY26 with directors' personal guarantees.", "**Verdict: wait.** Young centres will lift profit for a while, but wait for growth outside West Bengal."],
         tagline: "An eastern Indian chain of diagnostic centres that offer blood tests, radiology scans and doctor consultations under one roof, mostly to patients who walk in.",
         revenue: '₹310cr (FY26, consolidated)',
         products: [
@@ -424,7 +424,7 @@ const profiles: BusinessProfile[] = [
         revenue: '₹231cr (FY26, standalone)',
         products: [
             { name: 'JMS medical disposables', text: "Medical tape, infusion and transfusion sets and catheters from JMS of Japan, whose exclusive Indian partner it has been for 30-plus years; it now processes JMS tape at a new plant in Chhatrapati Sambhajinagar." },
-            { name: 'Radiology equipment', text: "Handheld X-ray units and flat-panel detectors, mainly for the government's TB-elimination programme under a ₹264.3cr Central Medical Services Society order due to be completed by 30 September 2026; also ultrasound." },
+            { name: 'Radiology equipment', text: "Handheld X-ray units and flat-panel detectors, mainly for the government's TB-elimination programme under a ₹264.3cr Central Medical Services Society order due to be completed by 30 September 2026 (no completion filing seen by that date); also ultrasound." },
             { name: 'Dialysis and respiratory products', text: "Dialysis machines and consumables (including refurbished machines), its own AERO nebulisers and oxygen concentrators." },
             { name: 'Cancer testing (Lifesenz)', text: "66.66% of Lifesenz Cancer Research Labs, bought in June 2026 for ₹19.98cr, a move into precision cancer testing unrelated to the core business." },
         ],
@@ -441,7 +441,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Other medical-device importers and distributors', note: 'A fragmented field with intense competition, ICRA says.' }, { name: 'Multinational equipment makers', note: 'Sell X-ray and ultrasound equipment directly or through larger distributors.' }, { name: 'Indian disposables makers', note: 'Compete with JMS products on price.' }],
         position: "**A small niche distributor**: JMS of Japan's exclusive Indian partner and a winner of about ₹350cr of central-government X-ray tenders.",
         money: "Screener shows **₹6cr of net debt**; borrowings rose to ₹50cr at March 2026 (mostly working-capital lines). It raised about ₹93cr of equity and warrants in September 2025 (₹61.5cr received in FY26) and used it to prepay term loans. Receivables tripled to ₹67.2cr and operating cash was −₹32cr in FY26; bank guarantees for tenders rose to about ₹25.9cr. ICRA rates it BBB. No dividend. Promoters hold **52.8%**, down from 73.6% in September 2023 because of the new shares issued, not sales.",
-        watch: ["The government agency paying in full.", "A new large order for H2 FY27.", "Receivables back below 80 days."],
+        watch: ["The ₹264cr X-ray order, due by 30 September 2026, shipped and paid in full; no completion filing seen by 30 September.", "A new large order for H2 FY27.", "Receivables back below 80 days."],
         charts: healthcareCharts['Hemant Surgical Inds'],
     },
     {

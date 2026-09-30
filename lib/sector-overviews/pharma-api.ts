@@ -489,11 +489,11 @@ export const pharmaApi: SectorOverview = {
                     columns: ['Company', 'What management said', 'Balance sheet'],
                     rows: [
                         ['Alivus Life Sciences', 'Free cash ₹90cr after ₹85cr capex; ~₹540cr capex in FY27 from own cash; more stock to secure supply', 'Cash and short-term investments ₹880cr (June); ₹57cr of borrowings'],
-                        ['Acutaas Chemicals', 'Capex ₹56cr (₹15cr Korea, ₹41cr India); working capital 99 days (91 in Q4)', 'Net cash ₹314cr (June), up from ₹198cr in March'],
+                        ['Acutaas Chemicals', 'Capex ₹56cr (₹15cr Korea, ₹41cr India); working capital 99 days (91 in Q4)', 'Net cash ₹314cr (June, company), up from ₹198cr in March (company; ₹189cr on Screener)'],
                         ['Aarti Drugs', 'No Q1 cash figure; ₹300–400cr of brownfield capex over 2–3 years', 'Borrowings ₹577cr (March); rated AA- by CRISIL and ICRA'],
                         ['IOL Chem & Pharma', '₹495cr of new projects, ~30% spent by September; ₹200–250cr a year of routine capex, all from own cash', 'Borrowings ₹135cr, all working capital, against ~₹231cr of cash and liquid investments (CARE)'],
                         ['Concord Biotech', 'Capex ₹9.5cr; no cash-flow figure given', 'Cash and investments ₹442cr, no debt'],
-                        ['Shilpa Medicare', 'Capex ₹114cr in Q1 (₹361cr in FY26); no significant biologics capex for three years', 'Net debt ₹613cr (March), 1.3x operating profit; upgraded to AA-'],
+                        ['Shilpa Medicare', 'Capex ₹114cr in Q1 (₹361cr in FY26); no significant biologics capex for three years', 'Net debt ₹615cr (March, Screener), 1.3x operating profit; upgraded to AA-'],
                         ['Solara Active Pharma', '₹35cr of operating cash and ₹100cr of rights money repaid debt; capex ₹55–60cr in FY27', 'Net debt ₹479cr (June); ₹440cr targeted by March 2027; rated BBB'],
                         ['Supriya Lifescience', 'Inventory ₹230–240cr, to be sold over 3–4 quarters; capex ₹16.6cr', 'Cash about ₹150cr; borrowings ₹5cr (leases)'],
                         ['NGL Fine-Chem', 'No Q1 call; plant cost ₹210cr, ₹182.75cr spent by March', 'Borrowings ₹123cr (March) against ₹39cr of investments'],
@@ -530,7 +530,7 @@ export const pharmaApi: SectorOverview = {
                 },
                 {
                     label: 'Delivering or beating',
-                    text: "**IOL** grew 37% in Q1 at a 14.6% margin against a May promise of about 15% growth and 14–14.5%, then said it “may cross” the new 15–20% guide but would not raise it. **Acutaas** started battery supply as promised, opened its Korean plant early and grew 59%, well ahead of its 25% guide. **Alivus** beat its 30–32% margin guide. **Solara** cut net debt to ₹479cr against a ₹503cr target. **Blue Jet** saw its bempedoic line recover from ₹2.4cr to ₹121cr and its Mahad plant run ahead of schedule.",
+                    text: "**IOL** grew 37% in Q1 at a 14.6% margin against a May promise of about 15% growth and 14–14.5%, then said it “may cross” the new 15–20% guide but would not raise it. **Acutaas** started battery supply as promised, opened its Korean plant early and grew 59%, well ahead of its 25% guide. **Alivus** beat its 30–32% margin guide. **Solara** cut net debt to ₹479cr at June, below the “sub-₹503cr” it had promised for the end of May. **Blue Jet** saw its bempedoic line recover from ₹2.4cr to ₹121cr and its Mahad plant run ahead of schedule.",
                 },
                 {
                     label: 'Cautious',
@@ -671,7 +671,7 @@ export const pharmaApi: SectorOverview = {
         {
             company: 'Acutaas Chemicals', rank: 2, stance: 'PRICED', segment: ANCHOR,
             what: "Makes advanced intermediates (the last chemical steps before an active ingredient) for innovators and generic makers, led by a 10-year contract on darolutamide, plus battery-electrolyte additives and semiconductor chemicals in India and Korea.",
-            view: "**Best growth and best new engines, priced for most of it.** Revenue +59% in Q1, a margin that rose from 18% to 36% in two years, ₹314cr of net cash, a sold-out battery plant and a Korean plant opened early. But contract growth rests on one molecule, free cash has been negative every year since FY21, and inventory days are rising. The price needs about {need:Acutaas Chemicals|29}% a year against my ~25%.",
+            view: "**Best growth and best new engines, priced for most of it.** Revenue +59% in Q1, a margin that rose from 18% to 36% in two years, ₹314cr of net cash at June (company; ₹189cr at March on Screener), a sold-out battery plant and a Korean plant opened early. But contract growth rests on one molecule, free cash has been negative every year since FY21, and inventory days are rising. The price needs about {need:Acutaas Chemicals|29}% a year against my ~25%.",
             watch: 'Revenue on track for +25% as H2 carries 60% of the year; the four validated contract products ramping in FY28; a fourth battery contract signed with capex.',
         },
         {

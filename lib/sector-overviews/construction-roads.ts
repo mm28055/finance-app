@@ -571,7 +571,7 @@ export const constructionRoads: SectorOverview = {
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**Dilip Buildcon** (net debt ₹7,713cr) and **H.G.** (₹4,775cr) have more net debt than market value, so they look far less cheap on EV/EBITDA than on P/E. **IRB**'s ₹18,116cr of net debt makes the whole business worth almost twice its market value. **GR** (₹3,660cr), **PNC** (₹2,932cr) and **KNR** (₹2,067cr) carry mostly project debt that annuities repay, while their building arms have little or none. **Welspun** is the only company here with essentially no net debt. **My view: for the road builders, check the standalone balance sheet first; the consolidated debt is real, but it comes with annuity income attached.**",
+                    text: "**Dilip Buildcon** (Screener net debt ₹7,713cr; ₹7,801cr on the company's consolidated count) and **H.G.** (₹4,775cr on Screener) have more net debt than market value, so they look far less cheap on EV/EBITDA than on P/E. **IRB**'s ₹18,116cr of net debt makes the whole business worth almost twice its market value. **GR** (₹3,660cr), **PNC** (₹2,932cr) and **KNR** (₹2,067cr) carry mostly project debt that annuities repay, while their building arms have little or none. **Welspun** is the only company here with essentially no net debt. **My view: for the road builders, check the standalone balance sheet first; the consolidated debt is real, but it comes with annuity income attached.**",
                 },
                 {
                     label: 'Fits: the price asks for no more than I expect',

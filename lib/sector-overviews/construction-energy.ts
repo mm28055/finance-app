@@ -413,7 +413,7 @@ export const constructionEnergy: SectorOverview = {
                         ['GK Energy', 'IPO money funds working capital; Q1 interest ₹5cr against ₹10–11cr; spending on the battery project not yet disclosed', 'Net cash ₹240.6cr (company, FY26); borrowings ₹203cr; CARE BBB+/Stable'],
                         ['Pennar Industries', 'Debt to equity to stay at or below 0.7 (‘anything higher than 0.7 is something that we will not accept’); working capital 82 → 75 days (May call); ₹20cr of ₹50.4cr promoter warrant money received', 'Borrowings ₹1,162cr (from ₹812cr); cash about ₹206cr; Screener net debt ₹892cr; CARE A/Stable'],
                         ['Sterling and Wilson', 'Gross debt down about ₹130cr in Q1 on term-loan repayments; net debt ‘largely stable’; more than ₹3,200cr of new bank lines; ₹120–130cr of indemnity money expected in FY27', 'Borrowings ₹1,191cr (FY26); Screener net debt ₹657cr; Infomerics BBB+/Negative, liquidity ‘stretched’'],
-                        ['Solarworld Energy So', 'No Q1 call; board proposes moving IPO money into a 50:50 cell joint venture (shareholder vote at the AGM)', 'Borrowings ₹255cr (FY26, from ₹115cr); Screener net cash ₹317cr; net worth ₹844.8cr; CRISIL A-/Stable'],
+                        ['Solarworld Energy So', 'No Q1 call; board proposes moving IPO money into a 50:50 cell joint venture (shareholder vote at the 30 September 2026 AGM; result not yet filed)', 'Borrowings ₹255cr (FY26, from ₹115cr); Screener net cash ₹317cr; net worth ₹844.8cr; CRISIL A-/Stable'],
                     ],
                     note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. Solarworld’s row uses its Q1 presentation and stock-exchange filings.',
                 },
@@ -514,7 +514,7 @@ export const constructionEnergy: SectorOverview = {
                 },
                 {
                     label: 'IPO promises and shareholders',
-                    text: "Five of the seven listed between August 2024 and October 2025, and three trade well below their IPO prices: **Solarworld** about 62% below, **M&B** about 33% below and **GK Energy** about 19% below. **Solarworld**'s board voted on 7 September to move IPO money from its own 1.2 GW cell plant at Pandhurana into a 50:50 joint venture with Rays Power Infra for a 2.4 GW plant; shareholders must approve it at the AGM, and the venture's full terms were not disclosed. **M&B**'s IPO was mostly promoters selling (₹375cr of ₹650cr), and GK's promoters sold ₹64.26cr. **My view: the Solarworld change is a governance red flag; money raised for one plan is going into another company's venture within a year.**",
+                    text: "Five of the seven listed between August 2024 and October 2025, and three trade well below their IPO prices: **Solarworld** about 62% below, **M&B** about 33% below and **GK Energy** about 19% below. **Solarworld**'s board voted on 7 September to move IPO money from its own 1.2 GW cell plant at Pandhurana into a 50:50 joint venture with Rays Power Infra for a 2.4 GW plant; shareholders vote on it at the AGM on 30 September 2026 (result not yet filed), and the venture's full terms were not disclosed. **M&B**'s IPO was mostly promoters selling (₹375cr of ₹650cr), and GK's promoters sold ₹64.26cr. **My view: the Solarworld change is a governance red flag; money raised for one plan is going into another company's venture within a year.**",
                 },
                 {
                     label: 'Scheme, client and timing concentration',
@@ -535,7 +535,7 @@ export const constructionEnergy: SectorOverview = {
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**GK Energy** (₹237cr net cash), **Solarworld** (₹317cr), **M&B** (₹195cr), **EPack** (₹171cr) and **Interarch** (₹63cr) all hold net cash, so they look slightly cheaper on EV/EBITDA than on P/E. **Pennar** (₹892cr of net debt) and **Sterling and Wilson** (₹657cr, before any cost from legacy claims) look dearer. **My view: for the cash-rich IPO companies, remember the cash is spoken for: it is paying for plants and working capital.**",
+                    text: "**GK Energy** (₹237cr net cash on Screener; ₹240.6cr on its own FY26 count), **Solarworld** (₹317cr), **M&B** (₹195cr), **EPack** (₹171cr) and **Interarch** (₹63cr) all hold net cash, so they look slightly cheaper on EV/EBITDA than on P/E. **Pennar** (₹892cr of net debt) and **Sterling and Wilson** (₹657cr, before any cost from legacy claims) look dearer. **My view: for the cash-rich IPO companies, remember the cash is spoken for: it is paying for plants and working capital.**",
                 },
                 {
                     label: 'Fits: the price asks for no more than I expect',
@@ -599,7 +599,7 @@ export const constructionEnergy: SectorOverview = {
             company: 'Solarworld Energy So', rank: 7, stance: 'TURNAROUND', segment: SOLAR,
             what: "A Delhi-area contractor building solar and battery plants for state power companies, which has added a solar-module line, a battery-pack line and a junction-box venture with its IPO money; listed in September 2025.",
             view: "**A rough first year, and a change of plan.** It has a ₹2,727.5cr order book, net cash of ₹317cr and a CRISIL A- rating. But it missed its post-IPO revenue and margin promises, Q1 revenue fell to ₹168cr from ₹592cr in Q4, it held no Q1 call, operating cash was −₹50cr in FY26, an SJVN dispute recovered about ₹40cr of ₹219.3cr claimed, and its board wants to move IPO money into a 50:50 cell venture with another company. The price needs about {need:Solarworld Energy So|6}% a year against my ~3%.",
-            watch: 'The AGM vote on the change of IPO use; Q2 revenue above ₹400cr; operating cash turning positive in H1 FY27.',
+            watch: 'The result of the 30 September 2026 AGM vote on the change of IPO use (due within two working days); Q2 revenue above ₹400cr; operating cash turning positive in H1 FY27.',
         },
     ],
 
@@ -609,7 +609,7 @@ export const constructionEnergy: SectorOverview = {
             "**Steel-building makers.** **M&B Engineering (M & B Engineer.): follow**, and the first to buy on a clean Q2; net cash, a clean audit and the widest margin of safety, with a margin to watch. **EPack Prefab: follow**; the best momentum and cash in the group, but the price already asks for about what I expect. **Interarch: follow**; a reliable grower, held back by a 10% margin ceiling and an open tax assessment. **Pennar Industries: wait** until segment figures show the steel-building mix is really lifting profit and management hits a target it set.",
             "**Solar, battery-storage and farm-pump contractors.** **GK Energy: wait** for PM-KUSUM 2.0 to be announced and the order book to rebuild. **Sterling and Wilson: pass** while legacy claims, a Negative rating outlook and a slipping Reliance order hang over a thin-margin business. **Solarworld: pass** after a missed first year and a plan to move IPO money into another company's venture.",
             "**What would change my view.** For the better: steel prices steadying so the makers recover their margins; M&B and EPack showing positive cash with their new plants running; PM-KUSUM 2.0 announced with funding; Sterling and Wilson winning the Reliance order on fair terms and settling legacy claims; Solarworld shareholders rejecting the change of IPO use or getting full terms. For the worse: another steel spike on fixed-price books; private factory and data-centre spending slowing while four makers add capacity; H2 guidance cuts at the solar contractors in the Q2 results; a large tax demand at Interarch; a further non-indemnified loss at Sterling and Wilson.",
-            "**What to watch next quarter.** M&B's margin and orders; EPack's margin recovery and new plants; Interarch's tax assessment and run-rate; Pennar's segment figures; GK's scheme news and order book; Sterling and Wilson's revenue and Reliance order; Solarworld's AGM vote and revenue.",
+            "**What to watch next quarter.** M&B's margin and orders; EPack's margin recovery and new plants; Interarch's tax assessment and run-rate; Pennar's segment figures; GK's scheme news and order book; Sterling and Wilson's revenue and Reliance order; Solarworld's 30 September AGM vote result and revenue.",
         ],
         bottomLine:
             "No name here is an own today. Follow the three steel-building makers, M&B Engineering, EPack Prefab and Interarch, with M&B first to buy on a clean Q2; wait on GK Energy for its scheme and on Pennar for proof it can hit its own targets; pass on Sterling and Wilson and Solarworld.",

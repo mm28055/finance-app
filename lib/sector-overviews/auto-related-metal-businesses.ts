@@ -88,7 +88,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Talbros Auto Compont',
-        inShort: ["**India's largest engine-gasket and heat-shield maker** (about half the market), a forging exporter, and a 50% partner in two fast-growing joint ventures making chassis parts and anti-vibration rubber.", "**Good:** gaskets grew 21% in Q1 FY27, it is single source to five vehicle makers and to Cummins, and capex is paid from its own cash. **Watch:** forgings have been flat for three years, working-capital days rose from 45 to 71 over FY24–FY26, and its joint-venture partner Marelli is in court proceedings.", "**Verdict: own.** A strong franchise at a fair price, best held small until the Marelli question is settled."],
+        inShort: ["**India's largest engine-gasket and heat-shield maker** (about half the market), a forging exporter, and a 50% partner in two fast-growing joint ventures making chassis parts and anti-vibration rubber.", "**Good:** gaskets grew 21% in Q1 FY27, it is single source to five vehicle makers and to Cummins, and capex is paid from its own cash. **Watch:** forgings have been flat for three years, working-capital days rose from 45 to 71 over FY24–FY26 (Screener's measure; its cash cycle went from 63 to 75), and its joint-venture partner Marelli is in court proceedings.", "**Verdict: own.** A strong franchise at a fair price, best held small until the Marelli question is settled."],
         tagline: "Maker of engine gaskets, heat shields and forgings, with 50:50 joint ventures in chassis parts (with Marelli) and anti-vibration rubber (with Marugo of Japan).",
         revenue: '₹870cr (FY26, consolidated)',
         products: [
@@ -114,7 +114,7 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**About 50% of India's engine-gasket market, three times its nearest rival**, and single source to five vehicle makers and to Cummins on one engine.",
         money: "Net cash of **₹277cr** on Screener, but that counts about ₹247cr of joint-venture stakes as investments; on cash alone (₹36cr against ₹84cr of borrowings in March) it has small net debt. Capex of ₹103cr is paid from its own cash; the dividend payout is only 4%. It sold ₹75.4cr of goods to QH Talbros, a promoter-family company, in FY26 and seeks approval for up to ₹125cr in FY27. Rated CARE A+. Promoters hold **58.4%**, unchanged over three years.",
-        watch: ["The outcome of Marelli's stake sale in the chassis joint venture.", "Forging growth once the October order starts.", "Sales to QH Talbros staying within the approved ₹125cr.", "Working-capital days coming back down from 71."],
+        watch: ["The outcome of Marelli's stake sale in the chassis joint venture (promised by 30 September; no filing seen by then).", "Forging growth once the October order starts.", "Sales to QH Talbros staying within the approved ₹125cr.", "Working-capital days (Screener's measure) coming back down from 71."],
         charts: autoRelatedCharts['Talbros Auto Compont'],
     },
     {
@@ -207,7 +207,7 @@ const profiles: BusinessProfile[] = [
             { name: 'Grey-market and duplicate parts', note: 'Compete on price in the replacement market; the GST cut narrowed the gap.' },
         ],
         position: "**About 50% of India's two-wheeler braking market** (company) and a leading supplier of two-wheeler aluminium castings, with 70–80% of electric two-wheeler makers as customers.",
-        money: "Net debt of **₹621cr** on Screener (March 2026); borrowings rose from ₹346cr in March 2024 to ₹679cr, and rose again in Q1, though the company withheld the figure until Q2. Free cash was negative in FY26 (−₹183cr), and capex of about ₹700cr in FY27 will be paid from profits and term loans, with debt kept below half of equity. It has guaranteed ₹934cr of its subsidiary's loans (already counted in group debt). Rated CRISIL AA; dividend payout 12%. Promoters hold **75.0%**, down from 85% in December 2023, sold to meet public-shareholding rules.",
+        money: "Net debt of **₹621cr** on Screener (March 2026); borrowings rose from ₹346cr in March 2024 to ₹679cr, and rose again in Q1, though the company withheld the figure until Q2. Free cash was negative in FY26 (−₹175cr on Screener), and capex of about ₹700cr in FY27 will be paid from profits and term loans, with debt kept below half of equity. It has guaranteed ₹934cr of its subsidiary's loans (already counted in group debt). Rated CRISIL AA; dividend payout 12%. Promoters hold **75.0%**, down from 85% in December 2023, sold to meet public-shareholding rules.",
         watch: ["Debt staying below half of equity at Q2.", "The new southern plant running before March 2027.", "The margin climbing back towards 13.5%."],
         charts: autoRelatedCharts['ASK Automotive'],
     },
