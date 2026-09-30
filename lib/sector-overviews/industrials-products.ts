@@ -494,7 +494,7 @@ export const industrialsProducts: SectorOverview = {
                 },
                 {
                     label: 'Debt, acquisitions and dilution',
-                    text: "**Tega** paid about ₹13,325cr of enterprise value for Molycop; Crisil cut it two notches to A+ and expects net debt to peak at 4.0–4.5 times operating profit in FY27, about ₹5,000cr of goodwill sits on the books, and a further ₹95cr of shares went to an Apollo fund in September. **Borosil** issued ₹889cr of shares and warrants, cutting the promoter stake from about 62% to 56%. **Aditya Infotech** placed about ₹1,500cr of new shares in September, after its IPO. **HPL** has ₹755cr of borrowings, and interest and depreciation eat over half of its operating profit. **Growth funded by shareholders or lenders has to earn more than growth funded by customers.**",
+                    text: "**Tega** paid about ₹13,325cr of enterprise value for Molycop; Crisil cut it two notches to A+ and expects net debt to peak at 4.0–4.5 times operating profit in FY27, about ₹5,000cr of goodwill sits on the books, and in September shareholders approved ₹95cr of new shares for an Apollo fund (a 0.6% dilution). **Borosil** issued ₹889cr of shares and warrants, cutting the promoter stake from about 62% to 56%. **Aditya Infotech** placed about ₹1,500cr of new shares in September, after its IPO. **HPL** has ₹755cr of borrowings, and interest and depreciation eat over half of its operating profit. **Growth funded by shareholders or lenders has to earn more than growth funded by customers.**",
                 },
                 {
                     label: 'Auditor remarks and accounting choices',
@@ -591,7 +591,7 @@ export const industrialsProducts: SectorOverview = {
             company: 'Tega Industries', rank: 7, stance: 'CYCLICAL', segment: CONSUME,
             what: "Mill liners and wear parts for mining, now combined with Molycop, the world's leading maker of steel grinding balls, through an 84%-owned holding company.",
             view: "**The finest wear-parts model here, now a leveraged mining bet.** The original business earns about 22% and its consumables grew 36% in Q1; Molycop indexes about 85% of contracts to steel. But group debt is about ₹11,200cr, Crisil expects 4.0–4.5 times operating profit at the peak, Q1 was a ₹108cr loss, and consumables missed their 15% target three years running. It is loss-making over the last year, so I give no estimate and it is not in the live table.",
-            watch: 'Two full quarters of Molycop results; net debt falling toward 3.0–3.5 times by FY28; consumables growing 15% without spill-over help. On 23 Sep 2026 a Canadian tribunal upheld duties on dumped Chinese grinding media, which helps its Moly-Cop Canada unit; shareholders also approved a preferential issue whose size is not yet disclosed (NSE filings, noted 30 Sep 2026).',
+            watch: 'Two full quarters of Molycop results; net debt falling toward 3.0–3.5 times by FY28; consumables growing 15% without spill-over help.',
         },
         {
             company: 'HPL Electric', rank: 8, stance: 'CYCLICAL', segment: BRAND,

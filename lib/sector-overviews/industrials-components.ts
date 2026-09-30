@@ -598,7 +598,7 @@ export const industrialsComponents: SectorOverview = {
             company: 'KRN Heat Exchan', rank: 3, stance: 'PRICED', segment: QUAL,
             what: "Fin-and-tube heat-exchanger coils for commercial air-conditioning, refrigeration and data-centre cooling, plus bus air-conditioning and railway products, sold in India and North America.",
             view: "**The best contract terms here, selling into a shortage, paid for by shareholders.** Prices reset quarterly to metal and the rupee, Q1 revenue rose 119% and management targets ₹2,000cr in FY28. But FY26 free cash was −₹312cr, inventory days more than doubled, standalone margin fell to 13.6%, and equity was raised twice in 19 months. The price needs about {need:KRN Heat Exchan|32}% a year against my ~25%.",
-            watch: 'Positive operating cash in FY27; Vertiv volume orders; the unbooked incentives appearing in profit. Promoter holding fell from 70.8% to 65.7% in the June quarter: the ₹350cr QIP at ₹1,060 (allotted 1 June 2026) took it to 67.2%, and a week later, on 9 June, the promoters sold about 1.5% more in the market; watch for further selling (noted 30 Sep 2026).',
+            watch: 'Positive operating cash in FY27; Vertiv volume orders; the unbooked incentives appearing in profit; any further promoter selling after the 1.5% sold on 9 June.',
         },
         {
             company: 'Omnitech Engineering', rank: 4, stance: 'SCALEUP', segment: QUAL,

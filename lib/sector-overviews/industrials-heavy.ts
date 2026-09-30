@@ -495,7 +495,7 @@ export const industrialsHeavy: SectorOverview = {
                 },
                 {
                     label: 'Debt and dilution',
-                    text: "**DEE** has about ₹718cr of net debt at June and a plan to bring it to ₹400–425cr by March. New shares keep coming: **DEE** ₹300cr, **ICE Make** ₹190cr (about 15% dilution, two months after “no comment”), and **United Heat Transfer** ₹31cr at about half the market price.",
+                    text: "**DEE** has about ₹718cr of net debt at June and a plan to bring it to ₹400–425cr by March. New shares keep coming: **DEE** ₹300cr, **ICE Make** ₹190cr (about 13% dilution, two months after “no comment”), and **United Heat Transfer** ₹31cr at about half the market price.",
                 },
                 {
                     label: 'Contingent liabilities and disputes',
@@ -550,7 +550,7 @@ export const industrialsHeavy: SectorOverview = {
             company: 'DEE Development', rank: 2, stance: 'SCALEUP', segment: CODE,
             what: "High-pressure process piping, bends and fittings for power plants, gas turbines and refineries, from plants in India and Thailand, plus a new seamless-pipe plant and a biomass power arm.",
             view: "**Approvals, capacity built and a record book, with an audit problem attached.** Revenue +31.6% in Q1, a ₹2,428cr book and ₹2,500cr of revenue targeted for FY29; the ₹300cr share issue should take net debt to about ₹400–425cr by March. But free cash was −₹447cr over two years, the auditor qualified its opinion again over the Malwa power plant, and GE's order is delayed. The price needs about {need:DEE Development|27}% a year against my ~22%.",
-            watch: 'A clean audit opinion by Q3 as promised; margin moving toward 19%; net debt at ₹400–425cr by March 2027. Promoter holding fell from 70.2% to 65.1% in July 2026 because of the ₹300cr preferential issue (59.76 lakh shares at ₹502, allotted 8 July, mostly to outside investors); the promoters sold nothing (noted 30 Sep 2026).',
+            watch: 'A clean audit opinion by Q3 as promised; margin moving toward 19%; net debt at ₹400–425cr by March 2027.',
         },
         {
             company: 'Isgec Heavy Engg.', rank: 3, stance: 'CYCLICAL', segment: CODE,
@@ -568,7 +568,7 @@ export const industrialsHeavy: SectorOverview = {
             company: 'JNK', rank: 5, stance: 'CYCLICAL', segment: CODE,
             what: "Fired heaters, reformers and cracking furnaces for refineries, petrochemical and fertiliser plants, plus flares and a new process-technology venture; a subsidiary of JNK Global of Korea.",
             view: "**FY27 is visible; FY28 is not.** BPCL Bina and two cracker orders should carry revenue up 20–25%. But the book fell from ₹1,961cr to ₹1,801cr, an ADNOC-linked order was cancelled because the licensor had not approved JNK, guidance was trimmed, operating cash has been negative for three years, and a third of votes went against its Chemdist related-party deals. The price needs about {need:JNK|18}% a year against my ~15%.",
-            watch: 'A Dangote or fertiliser reformer award in Q2–Q3; formal renewal of the parent agreement; margin inside 12–14%. On 24 Sep 2026 CRISIL moved its outlook to Stable from Negative (rating A-), and on 29 September it won two flare-package orders worth up to ₹100cr (NSE filings, noted 30 Sep 2026).',
+            watch: 'A Dangote or fertiliser reformer award in Q2–Q3; formal renewal of the parent agreement; margin inside 12–14%; the order book at the half-year, after up to ₹100cr of flare orders in September.',
         },
         {
             company: 'WPIL', rank: 6, stance: 'CYCLICAL', segment: INFRA,
@@ -585,8 +585,8 @@ export const industrialsHeavy: SectorOverview = {
         {
             company: 'ICE Make Refrig.', rank: 8, stance: 'AVOID', segment: INFRA,
             what: "Cold rooms, commercial freezers, insulated panels, transport refrigeration and ammonia plants for India's cold chain.",
-            view: "**Buying share, not earning it.** Revenue grew 60% in Q1, but the margin was 1.7% with a loss, margin guidance was cut for the third time, depreciation was changed in the same quarter, and ₹190cr of new shares diluted holders by about 15% two months after management would not comment on a raise. The price needs about {need:ICE Make Refrig.|32}% a year against my ~10%.",
-            watch: 'H2 margin after the third price rise; operating cash turning positive; debt falling with the Galilei money. Promoter holding fell from 74.2% to 64.5% by September 2026 because of the ₹190cr preferential issue (23.68 lakh shares at ₹802.51, allotted 10 September; Japan’s Galilei Holdings now owns about 12.4%); the promoters sold nothing (noted 30 Sep 2026).',
+            view: "**Buying share, not earning it.** Revenue grew 60% in Q1, but the margin was 1.7% with a loss, margin guidance was cut for the third time, depreciation was changed in the same quarter, and ₹190cr of new shares diluted holders by about 13% two months after management would not comment on a raise. The price needs about {need:ICE Make Refrig.|32}% a year against my ~10%.",
+            watch: 'H2 margin after the third price rise; operating cash turning positive; debt falling as ₹40cr of the Galilei money repays loans.',
         },
         {
             company: 'United Heat Transfer', rank: 9, stance: 'AVOID', segment: CODE,

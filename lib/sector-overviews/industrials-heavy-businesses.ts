@@ -110,7 +110,7 @@ const profiles: BusinessProfile[] = [
             { name: 'Imported seamless pipe mills', note: 'DEE used to import thick-walled P91/P92 pipe; its new plant replaces part of that supply.' },
         ],
         position: "**India's largest process-piping company by installed capacity**, and an approved supplier to global gas-turbine makers.",
-        money: "Net debt was ₹687cr at March 2026 (Screener); the company put it at ₹718cr at June 2026. A ₹300cr preferential share issue in July 2026, with promoter participation, has already repaid about ₹225cr of borrowings, and management expects net debt of no more than ₹400–425cr by March 2027, with no new debt planned. The big capex cycle is finished. Working capital is 263 days, targeted at 180–200. The auditor qualified its opinion for a second year because it could not assess ₹47.6cr of assets at the Malwa biomass power plant, whose power contract expired, and drew attention to a retrospective tariff cut by Punjab's utility on the Abohar plant, which is in court with no provision made. Promoters hold **65%**, down from 70% in June 2024.",
+        money: "Net debt was ₹687cr at March 2026 (Screener); the company put it at ₹718cr at June 2026. A ₹300cr preferential share issue in July 2026 (59.76 lakh shares at ₹502, about a quarter below the market price at allotment, an 8% dilution, mostly to outside investors) has already repaid about ₹225cr of borrowings, and management expects net debt of no more than ₹400–425cr by March 2027, with no new debt planned. The big capex cycle is finished. Working capital is 263 days, targeted at 180–200. The auditor qualified its opinion for a second year because it could not assess ₹47.6cr of assets at the Malwa biomass power plant, whose power contract expired, and drew attention to a retrospective tariff cut by Punjab's utility on the Abohar plant, which is in court with no provision made. Promoters hold **65%**, down from 70% in June 2024.",
         watch: ["Working capital falling from 263 days towards 180–200.", "A clean audit opinion, promised by Q3 FY27.", "GE's delayed heat-recovery orders and BHEL's slow tenders.", "Margin reaching the 19% guided for FY27."],
         charts: industrialsHeavyCharts['DEE Development'],
     },
@@ -183,7 +183,7 @@ const profiles: BusinessProfile[] = [
         revenue: '₹819cr (FY26, consolidated)',
         products: [
             { name: 'Fired heaters, reformers and cracking furnaces', text: "The core business: designing, supplying, installing and commissioning the high-temperature furnaces at the heart of a refinery or petrochemical plant." },
-            { name: 'Flares and incinerators', text: "Equipment to burn off waste gas safely. It books these orders directly in India and abroad, without the parent." },
+            { name: 'Flares and incinerators', text: "Equipment to burn off waste gas safely. It books these orders directly in India and abroad, without the parent; on 29 September 2026 it won two domestic flare orders worth up to ₹100cr (about 11% of a year's sales), to be completed in 16 months." },
             { name: 'Non-heating projects', text: "Process plants and special fabricated equipment for offshore, steel, metals, minerals and material handling, which it wants to make 40% of revenue in 4–5 years." },
             { name: 'Green hydrogen (JNK-ChemDist JV)', text: "A joint venture making hydrogen as a by-product of turning ethanol into ethyl acetate, executing a ₹50cr project in Pune; it made 8.8% of Q1 FY27 revenue and a ₹3.6cr loss." },
         ],
@@ -257,7 +257,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'ICE Make Refrig.',
-        inShort: ["**Ahmedabad maker of cold rooms, commercial freezers, insulated panels and transport refrigeration** for India's cold chain.", "**Good:** revenue grew 60% last quarter and new products (chest freezers, panels) are selling. **Bad:** it did not pass on cost rises, the margin fell to 1.7% with a loss, margin guidance was cut within 90 days, it changed its depreciation method in the same quarter, and ₹190cr of new shares diluted holders by about 15%.", "**Verdict: avoid.** Growth is being bought with margin, borrowed money and new shares."],
+        inShort: ["**Ahmedabad maker of cold rooms, commercial freezers, insulated panels and transport refrigeration** for India's cold chain.", "**Good:** revenue grew 60% last quarter and new products (chest freezers, panels) are selling. **Bad:** it did not pass on cost rises, the margin fell to 1.7% with a loss, margin guidance was cut within 90 days, it changed its depreciation method in the same quarter, and ₹190cr of new shares diluted holders by about 13%.", "**Verdict: avoid.** Growth is being bought with margin, borrowed money and new shares."],
         tagline: "Cold-chain equipment maker: modular cold rooms, chest freezers, insulated panels, reefer-truck units and ammonia refrigeration plants.",
         revenue: '₹668cr (FY26, consolidated)',
         products: [
@@ -282,8 +282,8 @@ const profiles: BusinessProfile[] = [
             { name: 'Chinese imports and unorganised makers', note: 'Supply most commercial uprights today, the segment the Galilei venture targets.' },
         ],
         position: "**A mid-sized challenger in Indian cold-chain equipment**, strongest in modular cold rooms in western India and a new entrant in chest freezers and continuous panels.",
-        money: "Net debt of about ₹151cr on Screener, up from net cash in FY23, as capex (₹82cr in FY25, ₹40cr in FY26) and working capital were funded with loans; operating cash flow was minus ₹11cr in FY26. Galilei is investing ₹180cr through new shares (plus ₹10cr from others): ₹58cr for capacity, ₹40cr to repay debt and ₹39cr for general purposes, while ICE Make puts ₹35-40cr into the joint venture for 40%. In Q1 FY27 it switched depreciation from the reducing-balance to the straight-line method, which halved the quarterly charge (₹4.5cr to ₹2.1cr) and flattered profit. Promoters hold **64.5%**, down from 74.5% in December 2023.",
-        watch: ["Margins recovering after the second-half price rises.", "Operating cash flow turning positive.", "Galilei money arriving and debt coming down."],
+        money: "Net debt of about ₹151cr on Screener, up from net cash in FY23, as capex (₹82cr in FY25, ₹40cr in FY26) and working capital were funded with loans; operating cash flow was minus ₹11cr in FY26. On 10 September 2026 it allotted 23.68 lakh new shares at ₹802.51, about 12% above the market price, a 13% dilution: ₹180cr from Galilei, which now owns about 12.4%, and ₹10cr from others. The money goes ₹58cr to capacity, ₹40cr to repay debt and ₹39cr for general purposes, while ICE Make puts ₹35-40cr into the joint venture for 40%. In Q1 FY27 it switched depreciation from the reducing-balance to the straight-line method, which halved the quarterly charge (₹4.5cr to ₹2.1cr) and flattered profit. Promoters hold **64.5%**, down from 74.5% in December 2023.",
+        watch: ["Margins recovering after the second-half price rises.", "Operating cash flow turning positive.", "Debt coming down as ₹40cr of the Galilei money repays loans."],
         charts: industrialsHeavyCharts['ICE Make Refrig.'],
     },
     {
