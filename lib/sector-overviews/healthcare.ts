@@ -773,7 +773,7 @@ export const healthcare: SectorOverview = {
             company: 'Hemant Surgical Inds', rank: 14, stance: 'CYCLICAL', segment: KITS,
             what: "Imports, assembles and distributes medical disposables and equipment, including JMS (Japan) products and handheld X-ray units for the TB programme; an SME listing with no calls and half-yearly results.",
             view: "**One big order, weak controls.** A ₹264cr central-government X-ray order doubled FY26 sales to ₹231cr, but its margin stayed at about 10% and operating cash was −₹32cr as receivables tripled. The auditor flagged a ₹30.5cr gap between the stock statement given to banks and the books, and ₹5.05cr lent to Lifesenz, which it then bought 66.66% of. The price needs about 25% a year against my ~10%.",
-            watch: 'The government agency paying in full; a new large order for H2 FY27; receivables back below 80 days.',
+            watch: 'The government agency paying in full; a new large order for H2 FY27; receivables back below 80 days. Promoter holding fell from 58.9% to 52.8% in May 2026 because 14.99 lakh warrants issued at ₹197 in September 2025 were converted into shares on 15 May (FY26 annual report); the promoters sold nothing, and 6 lakh more warrants can convert by February 2027 (noted 30 Sep 2026).',
         },
         {
             company: 'Sastasundar Ventures', rank: 15, stance: 'AVOID', segment: CARE,
