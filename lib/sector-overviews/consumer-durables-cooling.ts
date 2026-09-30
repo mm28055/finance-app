@@ -687,7 +687,7 @@ export const consumerDurablesCooling: SectorOverview = {
             company: 'Eureka Forbes', rank: 3, stance: 'SCALEUP', segment: WATER,
             what: "Owner of Aquaguard, India’s leading water-purifier brand, and Forbes vacuum and robotic cleaners, with a large after-sales service business (about 23% of revenue); controlled by Advent International since 2022.",
             view: "**A strong brand growing faster, with a stalling annuity and a large pledge.** Revenue grew 15.3% in Q1 with share gains, it is net cash and CRISIL upgraded it to AA. But services grew only about 4% in FY26 and AMC renewals slowed after price rises, margin guidance softened, 74% of assets are acquisition goodwill and brands, and Advent’s holding company has pledged 51% of the equity. The price needs about {need:Eureka Forbes|20}% a year against my ~16%.",
-            watch: 'Service revenue growth back to high single digits; full-year adjusted margin at or above 12.2%; any further pledge top-up or block sale by the promoter.',
+            watch: 'Service revenue growth back to high single digits; full-year adjusted margin at or above 12.2%; any further pledge top-up or block sale by the promoter. Its promoter Lunolux pledged a further 5.9% of the company to its lenders’ security agent under an existing loan (disclosed 24 Sep 2026), and on 28 September Uttar Pradesh GST officials issued a ₹273.4cr show-cause notice for FY23 (about 10% of a year’s sales), which the company calls without merit and will contest (NSE filings, noted 30 Sep 2026).',
         },
         {
             company: 'IFB Industries', rank: 4, stance: 'SCALEUP', segment: COOL,
@@ -729,7 +729,7 @@ export const consumerDurablesCooling: SectorOverview = {
             company: 'Whirlpool India', rank: 10, stance: 'TURNAROUND', segment: COOL,
             what: "Refrigerators, washing machines and contract-made ACs, plus Elica chimneys and hobs; 39.76% owned by Whirlpool Corporation, which wants to sell control.",
             view: "**A price-taker with a cash pile and an owner heading for the exit.** Revenue grew 12% in Q1 and share rose, but margin fell to 5.1% against 11–12% before FY21, management flagged a difficult Q2, and it cannot lead price rises. It holds about ₹2,550cr of cash and the parent is exploring a control sale, which lifted the stock 20%. The price needs about {need:Whirlpool India|22}% a year against my ~13%.",
-            watch: 'Who buys control and at what open-offer price; margin back above 6%; the outcome of the ₹139cr e-waste provision challenge.',
+            watch: 'Who buys control and at what open-offer price; margin back above 6%; the outcome of the ₹139cr e-waste provision challenge. On 24 Sep 2026 the company confirmed that its parent, Whirlpool Mauritius, intends to sell its stake in a control transaction and is talking to several possible buyers; the company is not a party to the talks (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Bajaj Electricals', rank: 11, stance: 'TURNAROUND', segment: FANS,
