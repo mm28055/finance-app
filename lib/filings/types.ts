@@ -18,6 +18,9 @@ export interface MaterialFiling {
     summary: string;
     /** The official filing on NSE or BSE. */
     url: string;
+    /** Whether it can move the share price (lib/filings/impact.ts), and why in a few words. */
+    impact?: 'high' | 'normal';
+    impactWhy?: string;
 }
 
 /** What the homepage carries per company: enough for the chip and its hover. */

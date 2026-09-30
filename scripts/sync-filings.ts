@@ -30,6 +30,7 @@ import path from 'path';
 import pdfParse from 'pdf-parse';
 import { prisma } from '../lib/prisma';
 import { geminiPro, geminiScreen } from '../lib/gemini';
+import { classifyImpact } from '../lib/filings/impact';
 import { nseAnnouncements, nseInsiderFilings, nsePitDisclosure, parseNseDate, NSE_UA, type PitTrade } from '../lib/filings/nse';
 import { nseSymbolForIsin } from '../lib/corporate-actions/nse-lists';
 
@@ -73,6 +74,8 @@ interface Filing {
     headline: string;
     summary: string;
     url: string;
+    impact?: 'high' | 'normal';
+    impactWhy?: string;
 }
 interface Store {
     updated: string;
@@ -491,6 +494,17 @@ async function main() {
     store.from = store.filings.length ? store.filings[store.filings.length - 1].date : iso(from);
     store.companiesBySector = companiesBySector;
     store.updated = new Date().toISOString();
+
+    // Which filings can move the share price (for the cross-company Filings page). Only new ones
+    // need it; the rest were marked on earlier runs.
+    if (!dryRun) {
+        const byName = new Map(companies.map(c => [c.name, c]));
+        const n = await classifyImpact(store.filings, name => {
+            const c = byName.get(name);
+            return { sales: c?.ttmSales ? Number(c.ttmSales) : null, mcap: c?.marketCap ? Number(c.marketCap) : null };
+        });
+        if (n) console.log(`Price-moving check: ${n} filings marked (${store.filings.filter(f => f.impact === 'high').length} price-moving in the digest).`);
+    }
 
     if (dryRun) {
         console.log(`DRY RUN — would add ${added} filings (${addedFrom.pit.length} promoter trades/pledges from PIT, ${addedFrom.sast.length} takeover-code, ${addedFrom.other.length} other); store would hold ${store.filings.length}. Nothing written.`);

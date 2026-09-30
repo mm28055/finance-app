@@ -33,3 +33,8 @@ export function getSectorFilings(sector: string): SectorFilingsResponse {
     const companiesInSector = Object.entries(BY_SECTOR_COUNT).find(([s]) => s.toLowerCase() === key)?.[1] ?? 0;
     return { sector, from, to: TO, companiesInSector, filings };
 }
+
+/** Every filing in the digest (about three months), newest first, for the cross-company Filings page. */
+export function getAllFilings(): { to: string; filings: MaterialFiling[] } {
+    return { to: TO, filings: [...ALL].sort(byDateDesc) };
+}

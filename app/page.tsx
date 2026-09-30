@@ -23,6 +23,7 @@ export default async function Home() {
         </div>
         <div className="flex items-center gap-4">
           <SessionTodos todos={todos} />
+          <a href="/filings" className="text-[11px] text-gray-500 hover:text-[#4A7AAF]">Filings</a>
           <a href="/scorecard" className="text-[11px] text-gray-500 hover:text-[#4A7AAF]">Scorecard</a>
           <TranscriptStats stats={stats} />
 
