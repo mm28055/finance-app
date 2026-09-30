@@ -51,7 +51,8 @@ async function jobHealth(): Promise<SessionTodo[]> {
     // something by then if flags were waiting from before it.
     const dueReview = lastDue([0, 3], 9, 12);
     if (dueReview && dueReview >= Date.parse('2026-09-30T03:30:00Z')) {
-        const entries = attention as { addedOn?: string; handled?: string }[];
+        // Entries that deliberately wait for an event ("Waiting: …") stay open by design.
+        const entries = (attention as { addedOn?: string; handled?: string; subject?: string }[]).filter(e => !/^Waiting:/.test(e.subject || ''));
         const reviewDay = new Date(dueReview + IST).toISOString().slice(0, 10);
         const waiting = entries.some(e => !e.handled && (e.addedOn || '') < reviewDay);
         const lastHandled = entries.map(e => (e.handled || '').slice(0, 10)).filter(Boolean).sort().pop() || '';
