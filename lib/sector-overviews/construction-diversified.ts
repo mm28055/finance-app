@@ -636,7 +636,7 @@ export const constructionDiversified: SectorOverview = {
             company: 'Afcons Infra', rank: 7, stance: 'TURNAROUND', segment: DIV_URBAN,
             what: "The Shapoorji Pallonji group's marine, tunnel, bridge and metro contractor, working in India and ten other countries; order book a record ₹43,290cr after the Croatian railway and Vadhvan breakwater wins.",
             view: "**Great projects, poor cash.** It ranks eighth in the world in marine work and won ₹13,219cr of orders in Q1. But Q1 revenue fell 21%, Q4 FY26 was its first loss since 2010, operating cash has been negative two years, CRISIL's outlook is Negative, the auditor flagged uncertain claims, and every promoter share is pledged. The price needs about {need:Afcons Infra|23}% a year against my ~20%.",
-            watch: 'Net working capital falling towards 120 days; the high-speed rail force-majeure settlement; CRISIL keeping its AA− rating.',
+            watch: 'Net working capital falling towards 120 days; the high-speed rail force-majeure settlement; CRISIL keeping its AA− rating. The pledge reached 100% of promoter shares in the June quarter when Goswami Infratech pledged its 25.03% to Axis Trustee on 15 May 2026 for Shapoorji-group debentures; that pledge was released on 21 July when those debentures were repaid, but the same shares were pledged again that day for debentures linked to Egyizen Investment, so the group is still borrowing against all of its Afcons shares (noted 30 Sep 2026).',
         },
         {
             company: 'SPML Infra', rank: 8, stance: 'TURNAROUND', segment: DIV_STATE,
