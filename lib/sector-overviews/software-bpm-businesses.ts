@@ -50,7 +50,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Sagility',
-        inShort: ["**A US-healthcare-only outsourcer** processing claims, enrolment, member service and clinical reviews for American health insurers, from India and the Philippines.", "**Good:** it grew about 15% organically, twice its industry, while holding a 24–25% margin. **Watch:** its top three clients are 60% of revenue, and its private-equity owner EQT has been selling down its stake.", "**Verdict: own.** Taking share at a fair price; add on any fall caused by EQT's share sales."],
+        inShort: ["**A US-healthcare-only outsourcer** processing claims, enrolment, member service and clinical reviews for American health insurers, from India and the Philippines.", "**Good:** it grew about 15% organically, twice its industry, while holding a 24–25% margin. **Watch:** its top three clients are 60% of revenue, its private-equity owner EQT has been selling down its stake, and new wage rules costing about 1.2 points of margin a year are offset only by the weak rupee.", "**Verdict: own.** Taking share at a fair price; add on any fall caused by EQT's share sales."],
         tagline: "A US-healthcare-only outsourcer, carved out of Hinduja Global Solutions, processing insurance claims, enrolment, member service and clinical reviews for American health insurers.",
         revenue: '₹7,193cr (FY26, consolidated)',
         products: [
@@ -71,12 +71,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'R1 RCM, Optum (UnitedHealth), Firstsource', note: "US and Indian rivals in health-insurance and provider outsourcing, though none is named on Sagility's calls." }, { name: "Insurers' own in-house teams and AI note-taking or claims tools", note: "The longer-term threat to hour- and transaction-based pricing." }],
         position: "**One of the largest India-based outsourcers focused only on US healthcare payers**, serving seven of the ten biggest US insurers.",
         money: "Net debt was ₹207cr on Screener (mostly a promoter loan due to be repaid within FY27; the company's own figure is ₹111cr). ₹6,039cr of goodwill sits against ₹9,660cr of equity. Promoters (EQT, through Sagility B.V.) hold **50.95%**, down sharply from 82.39% at the end of 2024 as EQT has sold down its stake.",
-        watch: ["Q2 adjusted margin at 24% or better with the full wage hit included.", "Any change at a top-three client.", "The size and timing of EQT's next share sale."],
+        watch: ["Q2 adjusted margin at 24% or better with the full wage hit included, and what a stronger rupee would do to it.", "Any change at a top-three client.", "The size and timing of EQT's next share sale.", "The ₹92.6cr of new tax demands, not provided for."],
         charts: softwareCharts['Sagility'],
     },
     {
         company: 'Inventurus Knowledge Solutions',
-        inShort: ["**Takes over billing, coding, clinical paperwork and approvals for about 600 US hospital and doctor groups**, paid mostly as a share of what it collects for them.", "**Good:** the core business grew 12% in Q1 while staff grew only 5%, at about a 35% margin. **Watch:** it just bought TruBridge, a rural-hospital software firm nearly its own size, mostly with debt, and cut its revenue base by $40m within a month.", "**Verdict: follow.** The best business here, priced for its biggest bet; buy when TruBridge's margin starts to rise."],
+        inShort: ["**Takes over billing, coding, clinical paperwork and approvals for about 600 US hospital and doctor groups**, paid mostly as a share of what it collects for them.", "**Good:** the core business grew 12% in Q1 while staff grew only 5%, at about a 35% margin. **Watch:** it just bought TruBridge, a rural-hospital software firm nearly its own size, mostly with debt, and cut its revenue base by $40m within a month. On filed figures it turns only about 56% of operating profit into cash.", "**Verdict: follow.** The best business here, priced for its biggest bet; buy when TruBridge's margin starts to rise."],
         tagline: "IKS Health takes over billing, coding, clinical documentation and prior approvals for US hospital and doctor groups, paid mostly as a share of what it collects for them, and has just bought a rural-hospital records and billing company of similar size.",
         revenue: '₹3,194cr (FY26, consolidated)',
         products: [
@@ -98,12 +98,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'About 30 AI point-solution start-ups, including Abridge', note: "Each try to automate one piece of billing, coding or documentation; IKS holds a stake in Abridge itself." }, { name: 'Epic and other electronic-health-record vendors', note: "Building native AI tools that could reduce the need for an outside vendor." }],
         position: "**Ranked first in AI-driven revenue-cycle management by Black Book**, and near the top of KLAS's ambulatory rankings, among the largest India-based US-provider outsourcers.",
         money: "Net debt fell from ₹563cr to ₹252cr in FY26 from its own cash flow, before rising again for the debt-funded TruBridge purchase (about three times EBITDA at closing). No dividend is paid; cash goes to deleveraging. Promoters hold **63.72%**, unchanged over the past two years.",
-        watch: ["TruBridge's margin rising from 22–23%.", "Core constant-currency growth staying at 12% or more.", "Net debt falling toward 2x EBITDA by FY28."],
+        watch: ["TruBridge's margin rising from 22–23%.", "Core constant-currency growth staying at 12% or more.", "Net debt falling toward 2x EBITDA by FY28.", "Operating cash keeping pace with profit."],
         charts: softwareCharts['Inventurus Knowledge Solutions'],
     },
     {
         company: 'Datamatic Global Ser',
-        inShort: ["**A family-run mix of publishing services, finance and document processing, IT projects and call centres**, serving nine of the ten largest global publishers.", "**Good:** the margin reached a record 18.7% in FY26 and about 20% in Q1, with about ₹500cr of net cash. **Watch:** organic growth is guided at only about 8%, and two of its three divisions shrank in FY26.", "**Verdict: follow.** A steadier, richer business that grows slowly; follow it for a better price or proof its AI products earn real revenue."],
+        inShort: ["**A family-run mix of publishing services, finance and document processing, IT projects and call centres**, serving nine of the ten largest global publishers.", "**Good:** the margin reached a record 18.7% in FY26 and about 20% in Q1, with about ₹500cr of net cash. **Watch:** organic growth is guided at only about 8%, two of its three divisions shrank in FY26, and a promised order-book figure has still not been given.", "**Verdict: follow.** A steadier, richer business that grows slowly; follow it for a better price or proof its AI products earn real revenue."],
         tagline: "A Kanodia-family-run mix of publishing-services technology, finance and document processing, IT projects and call centres, serving mostly US and European clients.",
         revenue: '₹1,987cr (FY26, consolidated)',
         products: [
@@ -129,7 +129,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Digitide Solutions',
-        inShort: ["**India's largest domestic outsourcer**, running call centres, loan collections, back offices and payroll for Indian banks and insurers, plus insurance software.", "**Bad:** the margin has slid from about 15% before its 2025 demerger to 9.9%, profit is close to nil, and the CEO who set the FY27 plan resigned twelve days after presenting it.", "**Verdict: pass.** Shrinking margins and a new team; pass until the promised margin recovery shows up."],
+        inShort: ["**India's largest domestic outsourcer**, running call centres, loan collections, back offices and payroll for Indian banks and insurers, plus insurance software.", "**Bad:** the margin has slid from about 15% before its 2025 demerger to 9.9%, profit is close to nil, and the CEO who set the FY27 plan resigned twelve days after presenting it. Since then bookings fell from ₹620cr to ₹205cr, revenue guidance was withdrawn, and the revenue chief and CFO have moved on.", "**Verdict: pass.** Shrinking margins and a new team; pass until the promised margin recovery shows up."],
         tagline: "India's largest domestic outsourcer of call centres, loan collections, back-office work and payroll, plus insurance software, demerged from Quess Corp in 2025.",
         revenue: '₹3,080cr (FY26, consolidated)',
         products: [
@@ -150,7 +150,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: "Other Indian BPM and collections firms", note: "Compete for the same bank and insurer outsourcing contracts; none named by management." }, { name: "Clients' own in-house call centres and collections teams", note: "The main threat as banks and insurers look to cut costs." }],
         position: "**India's largest domestic (India-to-India) BPM operator**, but scale here has not translated into a strong margin.",
         money: "Net cash was ₹182cr at March 2026 on the company's own count, but Screener shows net debt of about ₹272cr once lease liabilities are counted. No dividend is paid. Promoters (the Ajit Isaac group) hold **57.33%**, little changed over the past year.",
-        watch: ["The promised 2-point margin gain showing up in Q2–Q3.", "Quarterly bookings back above ₹500cr.", "Wage-code costs being passed through to clients."],
+        watch: ["The promised 2-point margin gain showing up in Q2–Q3.", "Quarterly bookings back above ₹500cr.", "Wage-code costs being passed through to clients.", "A settled management team, and the business outside Alldigi making money."],
         charts: softwareCharts['Digitide Solutions'],
     },
 ];

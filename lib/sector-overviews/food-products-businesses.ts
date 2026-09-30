@@ -118,7 +118,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Godrej Agrovet',
-        inShort: ["**A Godrej group agri-business**: India's largest organised animal-feed maker and largest domestic crude-palm-oil producer, plus crop protection (with 67% of Astec LifeSciences), Godrej Jersey dairy and Yummiez frozen foods.", "**Good:** working capital cut from 84 days to 10, return on capital near 19%, and it pays out about half its profit. **Bad:** Q1 FY27 profit before tax fell 8% as the driest June in about a century hit crop protection and milk costs squeezed dairy, and ‘mid-teens’ profit growth became ‘double-digit’ within three months.", "**Verdict: follow.** A better-run portfolio having a bad-weather year; the price needs more growth than I expect."],
+        inShort: ["**A Godrej group agri-business**: India's largest organised animal-feed maker and largest domestic crude-palm-oil producer, plus crop protection (with 67% of Astec LifeSciences), Godrej Jersey dairy and Yummiez frozen foods.", "**Good:** working capital cut from 84 days to 10 (partly through supplier financing), return on capital near 19%, and it pays out about half its profit. **Bad:** Q1 FY27 profit before tax fell 8% as the driest June in about a century hit crop protection and milk costs squeezed dairy, and ‘mid-teens’ profit growth became ‘double-digit’ within three months.", "**Verdict: follow.** A better-run portfolio having a bad-weather year; the price needs more growth than I expect."],
         tagline: "A diversified farm business selling cattle and fish feed, crude palm oil, crop chemicals, milk and frozen foods, mostly to Indian farmers and households.",
         revenue: '₹10,233cr (FY26, consolidated)',
         products: [
@@ -199,7 +199,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Manorama Industries',
-        inShort: ["**Makes cocoa-butter substitutes and specialty fats** from sal, mango and shea kernels collected in Indian forests and West Africa, for chocolate and cosmetics makers such as Ferrero, Mondelez, Hershey and L'Oréal; 60% of Q1 FY27 revenue was exports.", "**Good:** revenue grew 39.5% in Q1 FY27 at a 26% margin, and a ₹500cr share sale funds a plan to roughly double processing by FY29. **Bad:** it bought ₹191.8cr of raw material in FY26 from a Ghana company owned by its vice-chairperson, and disclosed a ₹20.64cr customs payment late.", "**Verdict: wait.** Excellent economics, but governance must improve and the price already assumes fast growth."],
+        inShort: ["**Makes cocoa-butter substitutes and specialty fats** from sal, mango and shea kernels collected in Indian forests and West Africa, for chocolate and cosmetics makers such as Ferrero, Mondelez, Hershey and L'Oréal; 60% of Q1 FY27 revenue was exports.", "**Good:** revenue grew 39.5% in Q1 FY27 at a 26% margin, and a ₹500cr share sale funds a plan to roughly double processing by FY29. **Bad:** it bought ₹191.8cr of raw material in FY26 from a Ghana company owned by its vice-chairperson, disclosed a ₹20.64cr customs payment late, and has turned only 35% of its profit into cash over two years.", "**Verdict: wait.** Excellent economics, but governance must improve and the price already assumes fast growth."],
         tagline: "A Raipur maker of cocoa-butter equivalents and exotic butters from tree seeds, sold to global chocolate, confectionery and cosmetics companies.",
         revenue: '₹1,367cr (FY26, consolidated)',
         products: [
@@ -336,7 +336,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Vintage Coffee',
-        inShort: ["**A Hyderabad maker of spray-dried instant coffee** for about 20 brand owners, mainly in West Africa, Russia and South-East Asia, on cost-plus terms; building a ₹550cr freeze-dried coffee plant.", "**Good:** revenue grew 58% in Q1 FY27 at a 19.6% margin, capacity doubled to 11,000 t and is full, and it keeps about 98% of customers. **Bad:** free cash has been negative in four of five years, the new plant needs a ₹300cr foreign-currency loan, and promoters own only 34.65% with part pledged.", "**Verdict: wait.** Fast growth, funded by others; wait for a year of positive cash and the plant on time."],
+        inShort: ["**A Hyderabad maker of spray-dried instant coffee** for about 20 brand owners, mainly in West Africa, Russia and South-East Asia, on cost-plus terms; building a ₹550cr freeze-dried coffee plant.", "**Good:** revenue grew 58% in Q1 FY27 at a 19.6% margin, capacity doubled to 11,000 t and is full, and it keeps about 98% of customers. **Bad:** free cash has been negative in four of five years, the new plant needs a ₹300cr foreign-currency loan, promoters own only 34.65% with part pledged, and its top five or six customers are about half of revenue.", "**Verdict: wait.** Fast growth, funded by others; wait for a year of positive cash and the plant on time."],
         tagline: "A contract maker of instant coffee and chicory for brand owners abroad, earning a fixed profit per kilo and expanding into freeze-dried coffee.",
         revenue: '₹553cr (FY26, consolidated)',
         products: [
@@ -364,7 +364,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Hindustan Foods',
-        inShort: ["**India's largest FMCG contract manufacturer**: 42 plants in 12 states making detergents, foods, drinks, ice cream, medicines and footwear for large brand owners, mostly in dedicated plants on long take-or-pay contracts.", "**Good:** Q1 FY27 profit rose 33% to a record, newly signed projects more than doubled to ₹340cr, and it guides ₹200–220cr of profit in FY27. **Bad:** free cash has been negative every year for five years, debt has tripled since FY22, and footwear lost about ₹6cr in Q1.", "**Verdict: wait.** Profit is growing, but the balance sheet is paying for it; wait for cash to match profit."],
+        inShort: ["**India's largest FMCG contract manufacturer**: 42 plants in 12 states making detergents, foods, drinks, ice cream, medicines and footwear for large brand owners, mostly in dedicated plants on long take-or-pay contracts.", "**Good:** Q1 FY27 profit rose 33% to a record, newly signed projects more than doubled to ₹340cr, and it guides ₹200–220cr of profit in FY27. **Bad:** free cash has been negative every year for five years, debt has tripled since FY22, footwear lost about ₹6cr in Q1, and it leans on ‘adjusted’ returns that analysts could not reconcile.", "**Verdict: wait.** Profit is growing, but the balance sheet is paying for it; wait for cash to match profit."],
         tagline: "A contract manufacturer that builds and runs factories for India's big consumer-goods brands, earning a negotiated return on the capital it invests.",
         revenue: '₹4,251cr (FY26, consolidated)',
         products: [

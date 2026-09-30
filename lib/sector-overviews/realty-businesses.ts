@@ -66,7 +66,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Arvind SmartSpaces',
-        inShort: ["**The Lalbhai group's developer**: plotted land, villas and flats in Ahmedabad and Bengaluru, now adding Mumbai redevelopment; 9.8 mn sq ft delivered, with revenue booked on completion.", "**Good:** FY26 bookings rose 22% to a record ₹1,550cr as guided, Q1 FY27 bookings rose 147% without a launch, and India Ratings upgraded it to AA-. **Watch:** debt is rising on purpose towards ₹800–850cr of net debt, and its Mumbai projects have no delivery record yet.", "**Verdict: own.** The best mix of growth, discipline and price in the sector."],
+        inShort: ["**The Lalbhai group's developer**: plotted land, villas and flats in Ahmedabad and Bengaluru, now adding Mumbai redevelopment; 9.8 mn sq ft delivered, with revenue booked on completion.", "**Good:** FY26 bookings rose 22% to a record ₹1,550cr as guided, Q1 FY27 bookings rose 147% without a launch, and India Ratings upgraded it to AA-. **Watch:** debt is rising on purpose towards ₹800–850cr of net debt, its Mumbai projects have no delivery record yet, and Q1's 49% margin came from one unusually profitable handover (the guide for new sales is 22–25%).", "**Verdict: own.** The best mix of growth, discipline and price in the sector."],
         tagline: "A three-city developer of plotted land, villas and apartments for middle- and high-income buyers, backed by the Lalbhai (Arvind) group and HDFC Capital.",
         revenue: '₹564cr (FY26, consolidated)',
         products: [
@@ -88,7 +88,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Goyal & Co, Shivalik and other Ahmedabad developers', note: 'Local rivals in Gujarat housing and plots.' }, { name: 'Prestige, Brigade and Sobha', note: 'Larger Bengaluru developers competing for the same buyers.' }, { name: 'Godrej Properties and Mahindra Lifespace', note: 'Compete for Mumbai redevelopment and plotted projects.' }],
         position: "**A leader in plotted developments in Ahmedabad** and a growing mid-sized player in Bengaluru, with 57.9 mn sq ft under construction on India Ratings' figures.",
         money: "Screener shows **₹409cr of net debt** at March 2026; the company put net debt at ₹167cr (0.26 times equity; 0.29 times at June), while India Ratings, counting HDFC platform debentures, puts it at ₹330cr and expects ₹800–850cr in the medium term, with debt peaking at about ₹1,050cr. Gross debt doubled to ₹577cr in FY26. Its own operating cash was ₹417cr in FY26 (guided ₹400–500cr in FY27), with land shown separately; Screener shows −₹170cr. It collected ₹1,100cr against ₹1,550cr of bookings. It uses joint developments, joint ventures and a ₹600cr HDFC Capital platform (₹350cr used). Rated AA- by India Ratings. Promoters hold **53.8%**, up from 50.5% in September 2023.",
-        watch: ["FY27 bookings reaching ₹2,100–2,200cr.", "The first Mumbai launch (Pen-Khopoli or Goregaon).", "Net debt staying within India Ratings' ₹800–850cr band."],
+        watch: ["FY27 bookings reaching ₹2,100–2,200cr.", "The first Mumbai launch (Pen-Khopoli or Goregaon).", "Net debt staying within India Ratings' ₹800–850cr band.", "Margins on new sales holding at the guided 22–25%."],
         charts: realtyCharts['Arvind SmartSpaces'],
     },
     {
@@ -201,7 +201,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Brigade Enterprises',
-        inShort: ["**A Bengaluru-led developer that also owns offices, Orion malls and nine hotels**; homes and other property for sale were 60% of Q1 FY27 revenue, rent 28% and hotels 12%.", "**Good:** rent-earning offices carry 86% of its debt, and the residential margin recovered from 12% to 21% as promised. **Bad:** pre-sales have fallen year on year for five quarters and the FY27 launch plan was cut by about a fifth.", "**Verdict: follow.** A sound business in a slow patch; buy when launches start arriving on time."],
+        inShort: ["**A Bengaluru-led developer that also owns offices, Orion malls and nine hotels**; homes and other property for sale were 60% of Q1 FY27 revenue, rent 28% and hotels 12%.", "**Good:** rent-earning offices carry 86% of its debt, and the residential margin recovered from 12% to 21% as promised. **Bad:** pre-sales have fallen year on year for five quarters, the FY27 launch plan was cut by about a fifth, and the space Amazon vacated at WTC Bengaluru will take 3–4 quarters to re-let.", "**Verdict: follow.** A sound business in a slow patch; buy when launches start arriving on time and pre-sales grow again."],
         tagline: "A Bengaluru developer of homes and offices, with about 9.4 mn sq ft of rented offices and malls and nine hotels, selling homes in Bengaluru, Chennai and Hyderabad.",
         revenue: '₹5,697cr (FY26, consolidated)',
         products: [
@@ -229,7 +229,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sobha',
-        inShort: ["**A Bengaluru-led developer that builds almost everything itself**, from concrete and glazing to interiors, now selling heavily in Gurugram and Greater Noida too.", "**Good:** record Q1 FY27 pre-sales of ₹3,656cr (up 76%), net cash and ₹20,553cr of sold homes still to book. **Bad:** the operating margin has been 3–8% for five quarters and the promised recovery keeps moving out; an Enforcement Directorate attachment of ₹201.6cr of land is under appeal.", "**Verdict: follow.** Sales and balance sheet are strong; buy once the margin actually recovers."],
+        inShort: ["**A Bengaluru-led developer that builds almost everything itself**, from concrete and glazing to interiors, now selling heavily in Gurugram and Greater Noida too.", "**Good:** record Q1 FY27 pre-sales of ₹3,656cr (up 76%), net cash and ₹20,553cr of sold homes still to book. **Bad:** the operating margin has been 3–8% for five quarters and the promised recovery keeps moving out; an Enforcement Directorate attachment of ₹201.6cr of land, tied to a land advance to promoter-linked Technobuild, is under appeal.", "**Verdict: follow.** Sales and balance sheet are strong; buy once the margin actually recovers."],
         tagline: "A backward-integrated home builder with its own plants and 10,300 technicians, selling premium and luxury homes in Bengaluru, NCR and Kerala, plus a construction business for outside clients.",
         revenue: '₹5,190cr (FY26, consolidated)',
         products: [
@@ -257,7 +257,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Raymond Realty',
-        inShort: ["**The Raymond group's developer**: a 100-acre Thane township on the group's old factory land plus eight joint developments in Bandra, BKC, Wadala, Sion, Mahim, Kandivali and Parel; listed in July 2025.", "**Good:** Q1 FY27 bookings rose 129%, joint developments now bring 64% of them, and CARE rates it A+. **Bad:** operating cash was −₹910cr in FY26, it expects two more cash-negative years, and interest cut Q1 profit to ₹13cr.", "**Verdict: wait.** Growing fast on borrowed time; the cash burn has to end first."],
+        inShort: ["**The Raymond group's developer**: a 100-acre Thane township on the group's old factory land plus eight joint developments in Bandra, BKC, Wadala, Sion, Mahim, Kandivali and Parel; listed in July 2025.", "**Good:** Q1 FY27 bookings rose 129%, joint developments now bring 64% of them, and CARE rates it A+. **Bad:** operating cash was −₹910cr in FY26, it expects two more cash-negative years, interest cut Q1 profit to ₹13cr, and Thane, its cash engine, sells less each year.", "**Verdict: wait.** Growing fast on borrowed time; the cash burn has to end first."],
         tagline: "A Mumbai-region developer moving from one paid-for Thane township to capital-light joint developments in prime Mumbai.",
         revenue: '₹2,991cr (FY26, consolidated)',
         products: [
@@ -278,12 +278,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Lodha, Adani, Oberoi, Kalpataru, Piramal', note: 'Large developers crowding the Thane market.' }, { name: 'Keystone (Rustomjee) and Mahindra Lifespace', note: 'Listed rivals for Mumbai society and joint-development deals.' }, { name: 'Godrej Properties', note: 'Aggressive bidder for Mumbai joint developments.' }],
         position: "**One of the larger sellers in Thane** through its township, now building a ₹52,000cr pipeline across prime Mumbai through joint developments.",
         money: "Screener shows **₹659cr of net debt** at March 2026; the company puts it at ₹824cr at June, 0.7 times equity against an internal cap of 1 times, at 9.6%. Filed operating cash was −₹910cr in FY26 as it paid approval premiums and landowner deposits for joint developments; Thane releases about ₹450–500cr a year, and management says the company will stay cash-negative for two more years. Interest of ₹100–120cr is guided for FY27, including interest on approval-premium instalments. Project-level fund money is an option; new equity is the ‘last resort’. Rated A+ by CARE; an income-tax survey in September 2025 is being monitored. Promoters hold **50.9%**, up from 48.9% in June 2025; no pledges.",
-        watch: ["The two Mahim launches between November and March.", "Operating margin reaching 17%.", "Net debt staying below one times equity."],
+        watch: ["The two Mahim launches between November and March.", "Operating margin reaching 17%.", "Net debt staying below one times equity.", "Thane bookings holding at ₹1,300–1,500cr a year."],
         charts: realtyCharts['Raymond Realty'],
     },
     {
         company: 'Puravankara',
-        inShort: ["**A 50-year-old Bengaluru developer** selling under three brands (Puravankara premium, Provident mid-market, Purva Land plots) in Bengaluru, Chennai, Kochi, Pune and Mumbai, and now Greater Noida.", "**Good:** record FY26 pre-sales of ₹7,407cr (+55%) and Q1 FY27 up 28%, with prices up 18–21%. **Bad:** net debt is 1.57 times equity at 11.12%, so interest roughly equals operating profit, and it keeps buying land while promising to cut debt.", "**Verdict: wait.** Sales are strong; wait until debt actually falls."],
+        inShort: ["**A 50-year-old Bengaluru developer** selling under three brands (Puravankara premium, Provident mid-market, Purva Land plots) in Bengaluru, Chennai, Kochi, Pune and Mumbai, and now Greater Noida.", "**Good:** record FY26 pre-sales of ₹7,407cr (+55%) and Q1 FY27 up 28%, with prices up 18–21%. **Bad:** net debt is 1.57 times equity at 11.12%, so interest roughly equals operating profit, and it keeps buying land while promising to cut debt; it has missed RERA deadlines on 2.1 mn sq ft, and its auditor flags legal cases including a Benami Act notice.", "**Verdict: wait.** Sales are strong; wait until debt actually falls."],
         tagline: "A multi-city home builder with its own construction arm and a growing Mumbai redevelopment book, carrying some of the highest-cost debt among listed developers.",
         revenue: '₹3,740cr (FY26, consolidated)',
         products: [
@@ -310,7 +310,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sri Lotus',
-        inShort: ["**A Mumbai luxury developer that rebuilds old housing societies** in Juhu, Versova, Bandra and Prabhadevi, selling at about ₹86,000 per sq ft; listed in August 2025.", "**Good:** FY26 pre-sales rose 137% to ₹1,157cr, the operating margin is about 36%, and it holds net cash. **Bad:** it books profit as it builds and collected only ₹376cr against ₹769cr of FY26 revenue; four of six planned launches have slipped and the promoter must sell more shares.", "**Verdict: wait.** High margins, but collections and launches need to catch up first."],
+        inShort: ["**A Mumbai luxury developer that rebuilds old housing societies** in Juhu, Versova, Bandra and Prabhadevi, selling at about ₹86,000 per sq ft; listed in August 2025.", "**Good:** FY26 pre-sales rose 137% to ₹1,157cr, the operating margin is about 36%, and it holds net cash. **Bad:** it books profit as it builds and collected only ₹376cr against ₹769cr of FY26 revenue; four of six planned launches have slipped, three projects are 3–4 quarters late, and the promoter must sell more shares.", "**Verdict: wait.** High margins, but collections and launches need to catch up first."],
         tagline: "An asset-light Mumbai developer of sea-facing luxury homes and offices, built mostly by redeveloping old society buildings rather than buying land.",
         revenue: '₹769cr (FY26, consolidated)',
         products: [
@@ -333,7 +333,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Max Estates',
-        inShort: ["**The Max Group's developer in Noida, Gurugram and Delhi**: fully let Grade-A offices that bring in all of today's revenue, plus premium homes that will be booked from FY28; New York Life owns about 20.4%.", "**Good:** about ₹13,500cr of sold homes still to book, fully let offices and a first rating of ICRA A+. **Bad:** it missed FY26 pre-sales guidance and then dropped guidance, has delivered only about 2 mn sq ft of homes, and is buying 84.7 acres of Delhi land from its promoter group for new shares.", "**Verdict: wait.** Real value, but wait for handovers and cleaner related-party dealings."],
+        inShort: ["**The Max Group's developer in Noida, Gurugram and Delhi**: fully let Grade-A offices that bring in all of today's revenue, plus premium homes that will be booked from FY28; New York Life owns about 20.4%.", "**Good:** about ₹13,500cr of sold homes still to book, fully let offices and a first rating of ICRA A+. **Bad:** it missed FY26 pre-sales guidance and then dropped guidance, has delivered only about 2 mn sq ft of homes, pays sister company Antara about 9–9.5% of senior-living sales, and is buying 84.7 acres of Delhi land from its promoter group for new shares.", "**Verdict: wait.** Real value, but wait for handovers and cleaner related-party dealings."],
         tagline: "A Delhi NCR developer of rented offices and premium ‘LiveWell’ housing communities, some with senior-living homes run by its sister company Antara.",
         revenue: '₹199cr (FY26, consolidated)',
         products: [
@@ -384,7 +384,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Shriram Properties',
-        inShort: ["**A mid-market developer in Bengaluru, Chennai, Kolkata and Pune**, mostly through joint developments; its promoters own only 27.89%.", "**Good:** record Q1 FY27 sales of ₹484cr, net debt of 0.29 times equity, a positive CRISIL outlook and Kolkata land that could release ₹1,200–1,400cr of cash. **Bad:** it missed FY26 sales guidance, none of its nine remaining FY27 launches had approval at June, and contested tax claims are about half its net worth.", "**Verdict: wait.** Cheap for reasons; wait for the approvals and the tax cases."],
+        inShort: ["**A mid-market developer in Bengaluru, Chennai, Kolkata and Pune**, mostly through joint developments; its promoters own only 27.89%.", "**Good:** record Q1 FY27 sales of ₹484cr, net debt of 0.29 times equity, a positive CRISIL outlook and Kolkata land that could release ₹1,200–1,400cr of cash. **Bad:** it missed FY26 sales guidance, none of its nine remaining FY27 launches had approval at June, contested tax claims are about half its net worth, and its auditor flags an Enforcement Directorate search.", "**Verdict: wait.** Cheap for reasons; wait for the approvals and the tax cases."],
         tagline: "An asset-light South India developer of mid-market and affordable homes, plots and villas, part of the Shriram group.",
         revenue: '₹1,267cr (FY26, consolidated)',
         products: [
@@ -437,7 +437,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Signatureglobal Ind.',
-        inShort: ["**A Gurugram developer that grew on affordable housing** and is moving to mid-income and luxury towers, branded residences and a commercial joint venture with RMZ.", "**Good:** selling prices rose from ₹11,762 to ₹17,093 per sq ft in two years, and it has 93 licensed acres on the Southern Peripheral Road. **Bad:** pre-sales fell 19% in FY26 and 25% in Q1 FY27, collections came in a third below guidance, and FY26 profit was almost all a one-off ₹1,267cr gain.", "**Verdict: wait.** The move upmarket is working on price, but sales, cash and core profit are shrinking."],
+        inShort: ["**A Gurugram developer that grew on affordable housing** and is moving to mid-income and luxury towers, branded residences and a commercial joint venture with RMZ.", "**Good:** selling prices rose from ₹11,762 to ₹17,093 per sq ft in two years, and it has 93 licensed acres on the Southern Peripheral Road. **Bad:** pre-sales fell 19% in FY26 and 25% in Q1 FY27, collections came in a third below guidance, net debt nearly doubled to ₹390cr in a quarter, and FY26 profit was almost all a one-off ₹1,267cr gain.", "**Verdict: wait.** The move upmarket is working on price, but sales, cash and core profit are shrinking."],
         tagline: "A Gurugram and Sohna home builder that outsources construction, moving from government-policy affordable housing to premium high-rise towers.",
         revenue: '₹2,596cr (FY26, consolidated)',
         products: [
@@ -464,7 +464,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Arkade',
-        inShort: ["**A Mumbai developer of mid-premium homes through society redevelopment**, now also building on two large bought sites at Thane and Filmistan in Goregaon; listed in September 2024.", "**Good:** net debt is only ₹5cr and it sells about 95% of its stock before completion. **Bad:** it wrote off ₹182cr on Filmistan tenancy rights, cut its FY27 growth and margin guides within a quarter, and moved the Filmistan launch to FY28.", "**Verdict: wait.** A small company stretching; wait for Thane to launch and guidance to hold."],
+        inShort: ["**A Mumbai developer of mid-premium homes through society redevelopment**, now also building on two large bought sites at Thane and Filmistan in Goregaon; listed in September 2024.", "**Good:** net debt is only ₹5cr and it sells about 95% of its stock before completion. **Bad:** it wrote off ₹182cr on Filmistan tenancy rights (its auditor added an emphasis of matter), cut its FY27 growth and margin guides within a quarter, and moved the Filmistan launch to FY28.", "**Verdict: wait.** A small company stretching; wait for Thane to launch and guidance to hold."],
         tagline: "A Mumbai suburban developer that grew on low-capital society redevelopments and used its IPO money to buy two big greenfield sites.",
         revenue: '₹816cr (FY26, consolidated)',
         products: [
@@ -513,7 +513,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Arihant Superstruct.',
-        inShort: ["**A Navi Mumbai developer of affordable, mid-income and villa projects** in Panvel, Kharghar, Shilphata and Chowk, plus Jodhpur, now adding hotels with ITC and Radisson.", "**Good:** early, cheap land in Navi Mumbai's growth corridor and 1,721 homes delivered in FY26. **Bad:** net debt is about 1.8 times equity, including about ₹400cr of promoter loans at 13–13.5%, FY26 interest exceeded pre-tax profit, and it cut FY27 growth guidance within a quarter while starting a ₹500cr hotel programme.", "**Verdict: pass.** Too much debt for the returns."],
+        inShort: ["**A Navi Mumbai developer of affordable, mid-income and villa projects** in Panvel, Kharghar, Shilphata and Chowk, plus Jodhpur, now adding hotels with ITC and Radisson.", "**Good:** early, cheap land in Navi Mumbai's growth corridor and 1,721 homes delivered in FY26. **Bad:** net debt is about 1.8 times equity, including about ₹400cr of promoter loans at 13–13.5%, FY26 interest exceeded pre-tax profit, and it cut FY27 growth guidance within a quarter while starting a ₹500cr hotel programme; it also changed auditors in September.", "**Verdict: pass.** Too much debt for the returns."],
         tagline: "A Navi Mumbai home builder moving from affordable flats to premium villas and hotels, funded heavily by debt, including promoter loans.",
         revenue: '₹551cr (FY26, consolidated)',
         products: [
@@ -539,7 +539,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Ganesh Housing',
-        inShort: ["**An Ahmedabad land owner** with about 510 acres, fully paid, that earns mostly by selling land, plus one office campus (Million Minds) and one housing project.", "**Good:** cheap, paid-for land and FY27 guidance of ₹1,000–1,200cr of revenue. **Bad:** ₹385cr is lent to related parties with the auditor flagging recovery risk, it sold a plot it had promised to develop to an unnamed buyer at an undisclosed price, and launch and leasing dates keep slipping.", "**Verdict: avoid.** Valuable land, but promoter dealings come before shareholders."],
+        inShort: ["**An Ahmedabad land owner** with about 510 acres, fully paid, that earns mostly by selling land, plus one office campus (Million Minds) and one housing project.", "**Good:** cheap, paid-for land and FY27 guidance of ₹1,000–1,200cr of revenue. **Bad:** ₹385cr is lent to related parties and ₹519cr advanced for land ‘on behalf of the Group’, with the auditor flagging recovery risk, it sold a plot it had promised to develop to an unnamed buyer at an undisclosed price, and launch and leasing dates keep slipping.", "**Verdict: avoid.** Valuable land, but promoter dealings come before shareholders."],
         tagline: "An Ahmedabad developer whose profits come mainly from selling land bought decades ago, now building its first large office campus.",
         revenue: '₹511cr (FY26, consolidated)',
         products: [

@@ -85,7 +85,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sharda Motor',
-        inShort: ["**India's largest maker of car and light-truck exhaust systems**, with about 30% value share, plus a growing business in suspension control arms and links.", "**Good:** a 34% return on capital, about ₹1,000cr of cash and investments, negative working capital and a third of profit paid as dividends. **Bad:** gross profit grew only 8% in FY26 and Q1 FY27, the margin has fallen three years running, it does not supply Maruti, and 87% of revenue is exhausts that pure EVs do not need.", "**Verdict: follow.** Cheap and cash-rich; I want gross profit growing faster as new orders start."],
+        inShort: ["**India's largest maker of car and light-truck exhaust systems**, with about 30% value share, plus a growing business in suspension control arms and links.", "**Good:** a 34% return on capital, about ₹1,000cr of cash and investments, negative working capital and a third of profit paid as dividends. **Bad:** gross profit grew only 8% in FY26 and Q1 FY27, the margin has fallen three years running, it does not supply Maruti, 87% of revenue is exhausts that pure EVs do not need, and 44% comes from trucks just as ICRA expects truck volumes to fall in H2 FY27.", "**Verdict: follow.** Cheap and cash-rich; I want gross profit growing faster as new orders start."],
         tagline: "Exhaust systems for car and truck makers, plus control arms and links, from nine fully integrated Indian plants.",
         revenue: '₹3,397cr (FY26, consolidated)',
         products: [
@@ -112,7 +112,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'NDR Auto Components',
-        inShort: ["**Seat frames and seat trims for about a third of Maruti Suzuki's cars**, sold mostly through Bharat Seats, an associate controlled by the same family, and to Toyota Boshoku.", "**Good:** sales up from ₹114cr in FY21 to ₹823cr in FY26, the margin up from 9% to 11%, no bank debt, and ₹150cr of new plants expected to turn over about four times their cost. **Bad:** 59% of revenue goes to Bharat Seats, the auditor flags an income-tax search, FY26 free cash was −₹36cr, and a third of the FY30 goal needs an acquisition not yet found.", "**Verdict: follow.** The price fits my growth estimate, but it rests on Maruti and a family customer."],
+        inShort: ["**Seat frames and seat trims for about a third of Maruti Suzuki's cars**, sold mostly through Bharat Seats, an associate controlled by the same family, and to Toyota Boshoku.", "**Good:** sales up from ₹114cr in FY21 to ₹823cr in FY26, the margin up from 9% to 11%, no bank debt, and ₹150cr of new plants expected to turn over about four times their cost. **Bad:** 59% of revenue goes to Bharat Seats, the auditor flags an income-tax search, FY26 free cash was −₹36cr and the first cash-flow statement had to be refiled, and a third of the FY30 goal needs an acquisition not yet found.", "**Verdict: follow.** The price fits my growth estimate, but it rests on Maruti and a family customer."],
         tagline: "A Maruti-focused maker of metal seat frames and seat trims, expanding into seat fabric, latches, sunshades and ambient lighting.",
         revenue: '₹823cr (FY26, consolidated)',
         products: [
@@ -139,7 +139,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'SJS Enterprises',
-        inShort: ["**The ‘look and feel’ parts of vehicles and appliances**: badges, dials, decals, chrome-plated plastics and in-mould decorated parts for Mahindra, Tata, TVS, Bajaj, Maruti and Whirlpool.", "**Good:** 28–30% margins, ₹329cr of net cash, profit turned into cash, and 27 straight quarters of growing faster than the industry. **Bad:** growth slowed to about 1.5 times the industry, trailing profit includes a ₹24.2cr land gain, displays start only in FY28, and a regulator is inquiring into an auditor's fraud report at its subsidiary Walter Pack India.", "**Verdict: follow.** A high-margin niche, priced a little ahead of my growth estimate."],
+        inShort: ["**The ‘look and feel’ parts of vehicles and appliances**: badges, dials, decals, chrome-plated plastics and in-mould decorated parts for Mahindra, Tata, TVS, Bajaj, Maruti and Whirlpool.", "**Good:** 28–30% margins, ₹329cr of net cash, profit turned into cash, and 27 straight quarters of growing faster than the industry. **Bad:** growth slowed to about 1.5 times the industry, trailing profit includes a ₹24.2cr land gain, displays start only in FY28, a regulator is inquiring into an auditor's fraud report at its subsidiary Walter Pack India, and the founders, who own only 20.15%, sold about a point in the June quarter without explanation.", "**Verdict: follow.** A high-margin niche, priced a little ahead of my growth estimate."],
         tagline: "India's leading maker of decorative badges, dials, chrome parts and decorated plastics for vehicle and appliance makers, moving into car displays.",
         revenue: '₹955cr (FY26, consolidated)',
         products: [
@@ -162,12 +162,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Unorganised and regional decal and badge makers', note: 'Many small suppliers of stickers, badges and chrome parts; SJS wins on range, quality and single-source positions.' }, { name: 'Walter Pack Spain and global decoration specialists', note: 'SJS may not compete for BMW and Mercedes in Europe until January 2027 under a non-compete from the Walter Pack purchase.' }, { name: 'Pricol (displays)', note: 'Has a BOE display licence for two-wheelers only; SJS holds the four-wheeler exclusivity.' }],
         position: "**India's largest maker of vehicle decoratives and aesthetics**, with single-supplier positions on many Mahindra, Tata and TVS product lines (ICRA) and the highest margin in the group.",
         money: "**₹233cr of net cash** on Screener at March; the company reports ₹328.8cr at June (cash ₹338.1cr, debt ₹9.3cr). FY26 operating cash was ₹224cr and capex is funded internally; it pays only about 7% of profit as dividends, keeping cash for ‘bite-size’ acquisitions. ICRA rates it AA- with a Positive outlook. Tax disputes rose to ₹25.6cr from ₹1.8cr. Promoters hold only **20.15%**, down from 21.81% in September 2023 (about a point sold in the June quarter), with 0.91% of the company pledged.",
-        watch: ["Disclosure and outcome of the Walter Pack India inquiry.", "Exports rising toward 14–15% of revenue.", "A first display order from a car maker."],
+        watch: ["Disclosure and outcome of the Walter Pack India inquiry.", "No further unexplained selling by the founders.", "Exports rising toward 14–15% of revenue.", "A first display order from a car maker."],
         charts: autoRelatedCharts['SJS Enterprises'],
     },
     {
         company: 'Lumax Auto Tech',
-        inShort: ["**A multi-product parts maker for Indian car and two-wheeler makers**: plastic interiors (IAC), gear shifters, two-wheeler frames, sensors and telematics through Japanese and Israeli partners, and CNG fuel systems (Greenfuel).", "**Good:** revenue up 34% in FY26 and 33% in Q1 FY27, the margin at 15.1% (company), an order book of ₹1,601cr and a 21% return on capital. **Bad:** much of the growth was bought, IAC sells over 90% to Mahindra, FY26 profit had a one-off low tax rate, and a quarter of the 20% growth goal needs acquisitions.", "**Verdict: follow.** Delivering on growth and margin, but the price already assumes more of the same."],
+        inShort: ["**A multi-product parts maker for Indian car and two-wheeler makers**: plastic interiors (IAC), gear shifters, two-wheeler frames, sensors and telematics through Japanese and Israeli partners, and CNG fuel systems (Greenfuel).", "**Good:** revenue up 34% in FY26 and 33% in Q1 FY27, the margin at 15.1% (company), an order book of ₹1,601cr and a 21% return on capital. **Bad:** much of the growth was bought, IAC sells over 90% to Mahindra, FY26 profit had a one-off low tax rate, gross debt is about ₹1,000cr, and a quarter of the 20% growth goal needs acquisitions.", "**Verdict: follow.** Delivering on growth and margin, but the price already assumes more of the same."],
         tagline: "A Lumax-group supplier of interiors, gear shifters, frames, electronics and CNG kits, built largely through acquisitions and joint ventures.",
         revenue: '₹4,870cr (FY26, consolidated)',
         products: [
@@ -196,7 +196,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Suprajit Engineering',
-        inShort: ["**The world's largest maker of two-wheeler control cables**, with cable plants in India, Mexico, the US, Hungary, Morocco and China, plus Phoenix lamps and a small sensors and digital-cluster business.", "**Good:** the SCS cable business bought in 2025 turned round, taking global cables from a 5.8% to a 12.6% margin in a year, and the group margin reached 12.0%. **Bad:** Indian profit was flat on 21% more revenue, operating cash covered only 43% of FY26 operating profit, and a ₹137.4cr GST demand is unprovided.", "**Verdict: wait.** The turnaround worked; I want the cash and the tax case to follow."],
+        inShort: ["**The world's largest maker of two-wheeler control cables**, with cable plants in India, Mexico, the US, Hungary, Morocco and China, plus Phoenix lamps and a small sensors and digital-cluster business.", "**Good:** the SCS cable business bought in 2025 turned round, taking global cables from a 5.8% to a 12.6% margin in a year, and the group margin reached 12.0%. **Bad:** Indian profit was flat on 21% more revenue, operating cash covered only 43% of FY26 operating profit while borrowings rose ₹176cr, and a ₹137.4cr GST demand is unprovided.", "**Verdict: wait.** The turnaround worked; I want the cash and the tax case to follow."],
         tagline: "A global maker of throttle, brake, clutch and seat cables for two-wheelers, cars and off-road vehicles, moving into brake systems, sensors and digital clusters.",
         revenue: '₹3,825cr (FY26, consolidated)',
         products: [
@@ -224,7 +224,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sandhar Technologies',
-        inShort: ["**Locks, mirrors, aluminium die-castings, sheet-metal parts and excavator cabins**, mostly for two-wheeler makers; the sole supplier of locks and mirrors to Hero, TVS and Honda Cars.", "**Good:** revenue up 27% in Q1 FY27 and Indian two-wheeler sales growing almost three times the industry in FY26. **Bad:** the margin fell to 8.49%, leverage has been above India Ratings' trigger for five years, guarantees rose to ₹624cr, free cash has been negative two years running, and every new-plant turnaround has slipped.", "**Verdict: wait.** Cheap for real reasons; I want the new plants profitable and free cash positive first."],
+        inShort: ["**Locks, mirrors, aluminium die-castings, sheet-metal parts and excavator cabins**, mostly for two-wheeler makers; the sole supplier of locks and mirrors to Hero, TVS and Honda Cars.", "**Good:** revenue up 27% in Q1 FY27 and Indian two-wheeler sales growing almost three times the industry in FY26. **Bad:** trailing profit includes a ₹34cr land gain, the margin fell to 8.49%, leverage has been above India Ratings' trigger for five years, guarantees rose to ₹624cr, free cash has been negative two years running, and every new-plant turnaround has slipped.", "**Verdict: wait.** Cheap for real reasons; I want the new plants profitable and free cash positive first."],
         tagline: "A two-wheeler-heavy maker of locks, mirrors, die-castings, sheet-metal parts and cabins, with 34 Indian plants, four abroad and six joint-venture plants.",
         revenue: '₹4,852cr (FY26, consolidated)',
         products: [
@@ -278,7 +278,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Remsons Industries',
-        inShort: ["**India's largest control-cable maker**, with gear shifters, pedal boxes and two-wheeler brake parts, plus small acquired lighting, sensor and rail businesses and plants in India and the UK.", "**Good:** it beat Chinese suppliers to a ₹300cr+ Stellantis contract, and FY26 operating cash was its best in years. **Bad:** the Q1 FY27 margin fell to 8.7%, profit fell 21%, its Pardi plant was flooded from July to mid-September, the promoter stake fell 2.7 points without explanation, and it has held no call since February.", "**Verdict: wait.** Real export wins; I want delivery and margins to follow."],
+        inShort: ["**India's largest control-cable maker**, with gear shifters, pedal boxes and two-wheeler brake parts, plus small acquired lighting, sensor and rail businesses and plants in India and the UK.", "**Good:** it beat Chinese suppliers to a ₹300cr+ Stellantis contract, and FY26 operating cash was its best in years. **Bad:** the Q1 FY27 margin fell to 8.7%, profit fell 21%, Q1 revenue runs at about ₹480cr a year against ₹520–570cr guided, its Pardi plant was flooded from July to mid-September, the promoter stake fell 2.7 points without explanation, and it has held no call since February.", "**Verdict: wait.** Real export wins; I want delivery and margins to follow."],
         tagline: "A small, family-run maker of control cables and pedal boxes for Indian and global vehicle makers, diversifying through small acquisitions.",
         revenue: '₹469cr (FY26, consolidated)',
         products: [
@@ -300,12 +300,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Suprajit Engineering', note: 'The world’s largest two-wheeler cable maker, about eight times Remsons’ size and with plants on four continents.' }, { name: 'Chinese cable exporters', note: 'Hold ‘a very big share’ of cable supply to the US and Mexico; Remsons’ Stellantis win displaced them.' }],
         position: "**Among India's largest and oldest control-cable makers**, with a small but growing export business in cables and pedal boxes.",
         money: "**₹74cr of net debt** on Screener (borrowings ₹98cr at March; the company gives net debt to equity of 0.57x). Working-capital lines were about 89% used, and ICRA rates it BBB+. FY26 operating cash was ₹60cr and free cash ₹28cr. It raised ₹63cr of equity in FY24; FY27 capex is modest. Promoters hold **62.83%**, down from 75.0% in September 2023, including a fall from 65.53% in the June quarter that I could not trace to a disclosure.",
-        watch: ["Stellantis revenue appearing in H2 FY27.", "Margin back above 11%.", "The flood's cost and any insurance recovery in Q2."],
+        watch: ["Stellantis revenue appearing in H2 FY27.", "Margin back above 11%.", "The flood's cost and any insurance recovery in Q2.", "An explanation of the promoter stake cut."],
         charts: autoRelatedCharts['Remsons Industries'],
     },
     {
         company: 'Gabriel India',
-        inShort: ["**The Anand group's flagship**: shock absorbers and struts for two-wheelers, cars, trucks and railways, plus sunroofs, fluids and minority stakes in Dana, Henkel, HL Mando and HL Klemove ventures.", "**Good:** about a third of India's two- and three-wheeler shock absorbers, a first order from Hero MotoCorp, and light working capital. **Bad:** the Q1 FY27 margin fell to 8.7%, growth now comes mainly from stakes bought from the promoter for new shares, and debt rises to ₹1,000–1,200cr.", "**Verdict: pass.** A good core turned into a group holding company, at a price that assumes the plans all work."],
+        inShort: ["**The Anand group's flagship**: shock absorbers and struts for two-wheelers, cars, trucks and railways, plus sunroofs, fluids and minority stakes in Dana, Henkel, HL Mando and HL Klemove ventures.", "**Good:** about a third of India's two- and three-wheeler shock absorbers, a first order from Hero MotoCorp, and light working capital. **Bad:** the Q1 FY27 margin fell to 8.7%, car share fell in Q1, growth now comes mainly from stakes bought from the promoter for new shares, and debt rises to ₹1,000–1,200cr.", "**Verdict: pass.** A good core turned into a group holding company, at a price that assumes the plans all work."],
         tagline: "India's main shock-absorber maker, now becoming the holding company for the Anand group's vehicle-parts ventures.",
         revenue: '₹4,667cr (FY26, consolidated)',
         products: [
@@ -332,7 +332,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Belrise Industries',
-        inShort: ["**Two-wheeler chassis, exhausts, fuel tanks and body parts** for Bajaj, Honda and Hero, growing into car, truck, aerospace and solar-tracker parts, with a steel-trading arm in the UAE.", "**Good:** manufacturing revenue grew 20% in Q1 FY27, debt fell after listing, and new orders from a Japanese two-wheeler maker and a US solar-tracker maker start in Q4 FY27. **Bad:** the margin slipped to 11.5%, it trades with about 50 promoter-linked companies and guarantees loans for two, and it sold shares at ₹220 seven months after a promoter company sold at ₹153.7.", "**Verdict: pass.** Growing, but the governance questions come before the price."],
+        inShort: ["**Two-wheeler chassis, exhausts, fuel tanks and body parts** for Bajaj, Honda and Hero, growing into car, truck, aerospace and solar-tracker parts, with a steel-trading arm in the UAE.", "**Good:** manufacturing revenue grew 20% in Q1 FY27, debt fell after listing, and new orders from a Japanese two-wheeler maker and a US solar-tracker maker start in Q4 FY27. **Bad:** the margin slipped to 11.5%, car and truck sales grew 18% against the 40–45% it needed, it trades with about 50 promoter-linked companies and guarantees loans for two, and it sold shares at ₹220 seven months after a promoter company sold at ₹153.7.", "**Verdict: pass.** Growing, but the governance questions come before the price."],
         tagline: "A sheet-metal and polymer parts maker for two-wheeler makers, listed in May 2025, expanding into cars, trucks, aerospace and renewables.",
         revenue: '₹9,509cr (FY26, consolidated)',
         products: [
@@ -361,7 +361,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'JTEKT India',
-        inShort: ["**The Indian arm of Japan's JTEKT**: electric and manual steering systems and driveshaft joints, 60% sold to Maruti Suzuki, which is also a shareholder.", "**Good:** near-total steering share on most Maruti and Toyota models, Q1 FY27 sales up 27% on new Maruti models and Brazil exports, and an AA rating backed by the parent. **Bad:** the margin fell to 5.3%, profit fell 43%, free cash was −₹343cr in FY26 after heavy capex, and the royalty to the parent equalled 62% of the previous year's profit.", "**Verdict: pass.** Volume without profit, and the parent takes a growing slice."],
+        inShort: ["**The Indian arm of Japan's JTEKT**: electric and manual steering systems and driveshaft joints, 60% sold to Maruti Suzuki, which is also a shareholder.", "**Good:** near-total steering share on most Maruti and Toyota models, Q1 FY27 sales up 27% on new Maruti models and Brazil exports, and an AA rating backed by the parent. **Bad:** the margin fell to 5.3%, profit fell 43%, free cash was −₹343cr in FY26 after heavy capex as bank debt more than doubled to ₹337cr, and the royalty to the parent equalled 62% of the previous year's profit.", "**Verdict: pass.** Volume without profit, and the parent takes a growing slice."],
         tagline: "Maruti's and Toyota's main steering supplier in India, making electric and manual steering and driveshaft joints under its Japanese parent's technology.",
         revenue: '₹2,666cr (FY26, standalone)',
         products: [

@@ -54,7 +54,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'KPIT Technologies',
-        inShort: ["**India's largest pure-play automotive software engineering company**, writing, testing and integrating the software inside cars, trucks and off-highway machines for global carmakers, mostly in Europe.", "**Good:** near-100% cash conversion and about ₹900cr of net cash even in a bad quarter. **Watch:** European clients cut work hard in FY27 and the margin fell from 20.6% to 17.2% in one quarter.", "**Verdict: own.** A specialist in a bad year, priced for the recovery it has the cash and contracts to deliver."],
+        inShort: ["**India's largest pure-play automotive software engineering company**, writing, testing and integrating the software inside cars, trucks and off-highway machines for global carmakers, mostly in Europe.", "**Good:** near-100% cash conversion and about ₹900cr of net cash even in a bad quarter. **Watch:** European clients cut work hard in FY27, the margin fell from 20.6% to 17.2% in one quarter and the FY27 margin guide was dropped; Q2 is guided flat, the top 25 clients are 87% of revenue, and goodwill is 39% of assets.", "**Verdict: own.** A specialist in a bad year, priced for the recovery it has the cash and contracts to deliver."],
         tagline: "A pure-play automotive software engineer for car, truck and off-highway makers, selling some of its own in-car products alongside engineer-hour and fixed-price work.",
         revenue: '₹6,455cr (FY26, consolidated)',
         products: [
@@ -77,12 +77,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'HCLTech, Tech Mahindra, LTTS, Capgemini, Akkodis', note: "General IT and engineering firms that also bid for automotive software work, though none is a pure-play like KPIT." }, { name: "Carmakers' own in-house software teams, such as Volkswagen's", note: "The biggest long-term competitor, as OEMs try to build software capability themselves." }],
         position: "**India's largest pure-play automotive software engineering company**, with a leading position in software-defined-vehicle work for European carmakers.",
         money: "Net cash was about ₹900cr on the company's own count and about ₹675cr on Screener's (which treats lease payments as debt). Capex is small; the real spending has been about $400m of acquisitions (Technica, Caresoft, Cymotive and others) that pushed goodwill to ₹2,798cr. Promoters hold **38.59%**, down from 39.47% three years ago.",
-        watch: ["Q2 revenue holding no worse than Q1.", "The two troubled European clients stabilising in Q3.", "Products and solutions growing above 30% a year."],
+        watch: ["Q2 revenue holding no worse than Q1.", "The two troubled European clients stabilising in Q3, and no further programme cancellations.", "Products and solutions growing above 30% a year."],
         charts: softwareCharts['KPIT Technologies'],
     },
     {
         company: 'Onward Technologies',
-        inShort: ["**A small engineering-design firm** for 73 industrial, machinery and vehicle makers in the US and Europe, mostly billed by the hour.", "**Good:** revenue grew 12% and the margin has risen from 9% to 12–13% in a year, with net cash and a dividend. **Watch:** 84% of work is billed by the hour, the type of work AI shrinks first, and Q1 profit fell.", "**Verdict: follow.** Steady progress at a modest price; buy when the new power-equipment centre lifts the margin."],
+        inShort: ["**A small engineering-design firm** for 73 industrial, machinery and vehicle makers in the US and Europe, mostly billed by the hour.", "**Good:** revenue grew 12% and the margin has risen from 9% to 12–13% in a year, with net cash and a dividend. **Watch:** 84% of work is billed by the hour, the type of work AI shrinks first; Q1 profit fell 12% and EBITDA grew 7% against a promise of double-digit growth; promoters have sold down from 45% to 40%.", "**Verdict: follow.** Steady progress at a modest price; buy when the new power-equipment centre lifts the margin."],
         tagline: "A small engineering-design firm for US and European makers of industrial machinery, heavy equipment and vehicle parts, billed mostly by the hour.",
         revenue: '₹544cr (FY26, consolidated)',
         products: [
@@ -103,12 +103,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: "Larger Indian and global engineering-services firms", note: "Compete for the same hour-billed design work, though none is named by management." }, { name: "Clients' own in-house design teams", note: "The main long-term threat, as AI tools make in-house design cheaper." }],
         position: "**A small, specialised design-engineering supplier**, not a scale player, competing on relationships and speed rather than size.",
         money: "Net cash was about ₹127cr at March 2026 (company figure; about ₹71cr on Screener). It pays a dividend (about 2.8% yield) and bought back ₹18cr of shares in Q1 FY27 at ₹328 a share. Promoters hold **39.97%**, down from 44.96% three years ago.",
-        watch: ["EBITDA margin back above 13% as the new power-equipment centre bills.", "Offshore work share recovering from 68%.", "Any loss among the top five clients."],
+        watch: ["EBITDA margin back above 13% as the new power-equipment centre bills.", "Offshore work share recovering from 68%.", "Any loss among the top five clients.", "EBITDA growing at double digits, as first promised."],
         charts: softwareCharts['Onward Technologies'],
     },
     {
         company: 'Tata Technologies',
-        inShort: ["**An engineering firm that designs whole vehicles, aircraft parts and industrial machines** and resells design software, anchored by Tata Motors and Jaguar Land Rover.", "**Good:** revenue from carmakers other than its anchor clients grew 56% in Q1 and it signed a $100m Tenneco deal. **Watch:** the margin is stuck at 16%, below the 18% it earned before FY26, and the company no longer restates that target.", "**Verdict: wait.** A real recovery, but the margin has not followed, and the price already needs about {need:Tata Technologies|22}% a year of growth."],
+        inShort: ["**An engineering firm that designs whole vehicles, aircraft parts and industrial machines** and resells design software, anchored by Tata Motors and Jaguar Land Rover.", "**Good:** revenue from carmakers other than its anchor clients grew 56% in Q1 and it signed a $100m Tenneco deal. **Watch:** the margin is stuck at 16%, below the 18% it earned before FY26, and the company no longer restates that target. JLR is about a quarter of revenue, and ES-Tec was bought with a ₹569cr loan.", "**Verdict: wait.** A real recovery, but the margin has not followed, and the price already needs about {need:Tata Technologies|22}% a year of growth."],
         tagline: "An engineering firm that designs complete vehicles, aircraft parts and industrial machines, and resells product-lifecycle-management software, anchored by Tata Motors and Jaguar Land Rover.",
         revenue: '₹5,506cr (FY26, consolidated)',
         products: [
@@ -130,12 +130,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'HCLTech, Tech Mahindra, LTTS, Capgemini, Akkodis', note: "General engineering-services firms competing for the same design and PLM-resale work." }, { name: "Carmakers' own in-house design centres", note: "A long-term threat as global manufacturers build their own Indian engineering teams." }],
         position: "**A leading Indian vehicle-design house**, one of the few able to design and deliver a complete vehicle programme rather than just pieces of one.",
         money: "Net cash was ₹880cr at June 2026 (company figure; ₹600cr on Screener), down from ₹1,188cr after the dividend. It borrowed ₹569cr for the ES-Tec acquisition, repayable from May 2027. The dividend payout was 87% of FY26 profit, though the yield is only about 1.2%. Promoters (the Tata group) hold **55.17%**, little changed in three years.",
-        watch: ["Quarterly margin reaching 17% or better.", "The Tenneco and Japanese programmes ramping up in H2.", "JLR's spending recovering after the cyber-attack."],
+        watch: ["Quarterly margin reaching 17% or better.", "The Tenneco and Japanese programmes ramping up in H2.", "JLR's spending recovering after the cyber-attack.", "ES-Tec's Volkswagen work holding up as the ₹569cr loan falls due from May 2027."],
         charts: softwareCharts['Tata Technologies'],
     },
     {
         company: 'Cyient',
-        inShort: ["**An engineering firm for aircraft, rail, telecom and utility networks**, which also owns 52% of the listed electronics maker Cyient DLM and a growing, loss-making chip business.", "**Good:** it is buying growth (Kinetic Technologies and TAO Digital, about $300m together) and its aerospace and rail work is growing. **Watch:** core engineering revenue has been flat or down for five quarters and profit has fallen from ₹703cr to ₹463cr in two years.", "**Verdict: wait.** Buying growth while the core stands still; wait for two quarters of core growth before paying for the turnaround."],
+        inShort: ["**An engineering firm for aircraft, rail, telecom and utility networks**, which also owns 52% of the listed electronics maker Cyient DLM and a growing, loss-making chip business.", "**Good:** it is buying growth (Kinetic Technologies and TAO Digital, about $300m together) and its aerospace and rail work is growing. **Watch:** core engineering revenue has been flat or down for five quarters and profit has fallen from ₹703cr to ₹463cr in two years. It lost energy work to a larger rival, its growth aim was cut, and the deals are mostly debt-funded.", "**Verdict: wait.** Buying growth while the core stands still; wait for two quarters of core growth before paying for the turnaround."],
         tagline: "An engineering-services firm for aircraft, rail, telecom and utility networks and mines, expanding into fabless chips and owning a majority stake in the listed electronics maker Cyient DLM.",
         revenue: '₹7,268cr (FY26, consolidated)',
         products: [
@@ -156,12 +156,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'HCLTech, Tech Mahindra, LTTS, Capgemini, Akkodis', note: "General engineering firms bidding for the same aerospace, rail and network work." }, { name: "An unnamed, larger rival in energy-sector engineering", note: "Took energy work from Cyient in FY26, evidence its moat is thinner in that vertical." }],
         position: "**A mid-sized, diversified engineering-services firm**, broader than most peers because of its stakes in electronics manufacturing (Cyient DLM) and chips.",
         money: "Net cash was ₹1,644cr at June 2026 (core business; ₹1,532cr on Screener), but this is falling fast after a ₹720cr share buyback and the mostly debt-funded $130m upfront payment for TAO Digital, and the group is expected to move to modest net debt in the next quarter. CRISIL rates it AA/Stable. Promoters hold **24.7%**, up from 23.2% three years ago after not tendering shares in the buyback.",
-        watch: ["Two quarters of positive core engineering growth in constant currency.", "The energy and mining unit stabilising.", "TAO Digital integrating without an earnout dispute."],
+        watch: ["Two quarters of positive core engineering growth in constant currency.", "The energy and mining unit stabilising.", "TAO Digital integrating without an earnout dispute.", "Net debt after the buyback and TAO, and the chip unit's losses."],
         charts: softwareCharts['Cyient'],
     },
     {
         company: 'Ceinsys Tech',
-        inShort: ["**A Nagpur-based mapping, water-network and smart-meter company** working mostly for Indian state governments, with small car-design and US arms.", "**Good:** FY26 revenue grew 58% and the margin reached 24%. **Watch:** operating cash was only ₹3cr against ₹149cr of profit, and two customers gave 48% of FY26 revenue.", "**Verdict: pass.** Record profits on paper, almost no cash behind them; wait until the profit turns into cash."],
+        inShort: ["**A Nagpur-based mapping, water-network and smart-meter company** working mostly for Indian state governments, with small car-design and US arms.", "**Good:** FY26 revenue grew 58% and the margin reached 24%. **Watch:** operating cash was only ₹3cr against ₹149cr of profit, and two customers gave 48% of FY26 revenue. Revenue has been flat for five quarters, promises on billing and orders slipped, and six senior people left in a year.", "**Verdict: pass.** Record profits on paper, almost no cash behind them; pass until the profit turns into cash and management settles."],
         tagline: "A geospatial-mapping and smart-water-metering company for Indian state governments, with smaller car-design and US geospatial arms.",
         revenue: '₹661cr (FY26, consolidated)',
         products: [
@@ -183,7 +183,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: "Other GIS and geospatial-engineering tenderers", note: "Compete on price for the same state-government contracts; none named by management." }, { name: 'Esri, Bentley, Autodesk', note: "The software platforms Ceinsys builds much of its delivery on, rather than direct competitors." }],
         position: "**A specialist in Indian government geospatial and water-network work**, with more scale in this niche than most listed peers.",
         money: "Net cash was ₹248cr at March 2026, mostly money raised from promoters and a US fund for acquisitions that has not yet been spent. Unbilled revenue has risen to ₹319cr, 48% of FY26 income, and CARE rates the company BBB+/Stable. Promoters hold **50.88%**, down from 58.61% three years ago as new shares were issued.",
-        watch: ["Operating cash flow above ₹80cr in FY27.", "Unbilled revenue falling sharply after the Maharashtra water-scheme release.", "The two pending large state orders being won."],
+        watch: ["Operating cash flow above ₹80cr in FY27.", "Unbilled revenue falling sharply after the Maharashtra water-scheme release.", "The two pending large state orders being won.", "No further senior exits, and how the unused share money is spent."],
         charts: softwareCharts['Ceinsys Tech'],
     },
 ];

@@ -53,7 +53,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'M & B Engineer.',
-        inShort: ["**A maker of pre-engineered steel buildings and heavy structures (Phenix) and self-supported steel roofing built on site (Proflex)**, with plants in Gujarat and Tamil Nadu and a growing US export business.", "**Good:** ₹195cr of net cash, a CRISIL A rating, a clean audit, 22–26% returns on capital and FY26 exports up 156%. **Bad:** its margin slid from 13.6% to 11.4% (company figures) on steel and freight, management withheld margin guidance, and FY26 operating cash was −₹31cr.", "**Verdict: follow.** The one I would buy first on a clean Q2, with margin, orders and cash as the tests."],
+        inShort: ["**A maker of pre-engineered steel buildings and heavy structures (Phenix) and self-supported steel roofing built on site (Proflex)**, with plants in Gujarat and Tamil Nadu and a growing US export business.", "**Good:** ₹195cr of net cash, a CRISIL A rating, a clean audit, 22–26% returns on capital and FY26 exports up 156%. **Bad:** its margin slid from 13.6% to 11.4% (company figures) on steel and freight, management withheld margin guidance, FY26 operating cash was −₹31cr, and the order book dipped to ₹1,053cr as Q1 orders lagged.", "**Verdict: follow.** The one I would buy first on a clean Q2, with margin, orders and cash as the tests."],
         tagline: "Ahmedabad-based maker of pre-engineered steel buildings, heavy steel structures and self-supported steel roofing, selling in India and to North America.",
         revenue: '₹1,260cr (FY26, consolidated)',
         products: [
@@ -128,7 +128,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'GK Energy',
-        inShort: ["**A leading installer of solar water pumps for farmers**, working under the national PM-KUSUM scheme and state schemes, mainly in Maharashtra, and now adding rooftop solar and battery storage.", "**Good:** a filed margin of 16–19%, about 41% return on capital and ₹237cr of net cash after its IPO. **Bad:** a plan to double revenue rests on a ₹541cr order book and a new scheme (PM-KUSUM 2.0) with no firm date, and price per pump is falling.", "**Verdict: wait.** Cheap if the new scheme arrives; I would wait until it does."],
+        inShort: ["**A leading installer of solar water pumps for farmers**, working under the national PM-KUSUM scheme and state schemes, mainly in Maharashtra, and now adding rooftop solar and battery storage.", "**Good:** a filed margin of 16–19%, about 41% return on capital and ₹237cr of net cash after its IPO. **Bad:** a plan to double revenue rests on a ₹541cr order book and a new scheme (PM-KUSUM 2.0) with no firm date, price per pump is falling, its margin fell from 20.4% in FY26 to 17.05% in Q1, and the order book shrank from ₹710cr to ₹541cr.", "**Verdict: wait.** Cheap if the new scheme arrives; I would wait until it does."],
         tagline: "Pune-based contractor that supplies and installs solar-powered farm water pumps under government subsidy schemes, with a small rooftop-solar business and a first battery-storage project.",
         revenue: '₹1,715cr (FY26, consolidated)',
         products: [

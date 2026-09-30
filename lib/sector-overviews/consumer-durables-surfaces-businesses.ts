@@ -165,7 +165,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Century Plyboards(I)',
-        inShort: ["**India's leading plywood brand** (Club Prime, Architect), also making MDF, particle board and laminates, with a Kolkata container-freight and port business.", "**Good:** plywood earned a 16.9% margin in Q1 FY27 with volume up 29%, and it aims to lift its market share from about 10% to 15%. **Bad:** MDF earned only 7.0% after a price rise was rolled back, debt is ₹1,644cr, and profit is still below FY23's.", "**Verdict: wait.** The best plywood franchise, but the price assumes an MDF recovery that has not yet come."],
+        inShort: ["**India's leading plywood brand** (Club Prime, Architect), also making MDF, particle board and laminates, with a Kolkata container-freight and port business.", "**Good:** plywood earned a 16.9% margin in Q1 FY27 with volume up 29%, and it aims to lift its market share from about 10% to 15%. **Bad:** MDF earned only 7.0% after a price rise was rolled back, debt is ₹1,644cr (about ₹600cr in foreign currency), and profit is still below FY23's.", "**Verdict: wait.** The best plywood franchise, but the price assumes an MDF recovery that has not yet come."],
         tagline: "A wood-panel company: branded plywood and veneers, MDF, particle board and laminates for furniture and interiors, plus a small logistics arm in Kolkata.",
         revenue: '₹5,397cr (FY26, consolidated)',
         products: [
@@ -219,7 +219,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Orient Bell',
-        inShort: ["**A small, debt-free tile maker** with three plants outside Morbi and two Morbi associates (42.4 million sq m in all), selling through 381 boutiques and 3,000+ dealers.", "**Good:** Q1 FY27 volume rose 23%, its plants ran at 73% against 60% a year ago, and it holds ₹47.7cr of net cash. **Bad:** revenue was flat for four years before this, and the price rises behind Q1 may not last: management has made no cuts yet but says it will follow the market if gas falls.", "**Verdict: wait.** A real recovery, partly lifted by the Morbi shock, and the price needs more growth than I expect."],
+        inShort: ["**A small, debt-free tile maker** with three plants outside Morbi and two Morbi associates (42.4 million sq m in all), selling through 381 boutiques and 3,000+ dealers.", "**Good:** Q1 FY27 volume rose 23%, its plants ran at 73% against 60% a year ago, and it holds ₹47.7cr of net cash. **Bad:** revenue was flat for four years before this, return on capital was only 6% in FY26, key managers were paid about ₹8.4cr against a ₹12cr profit, and the price rises behind Q1 may not last: management has made no cuts yet but says it will follow the market if gas falls.", "**Verdict: wait.** A real recovery, partly lifted by the Morbi shock, and the price needs more growth than I expect."],
         tagline: "A branded ceramic and vitrified tile maker with plants in Uttar Pradesh, Karnataka and Gujarat, plus two associate plants at Morbi.",
         revenue: '₹691cr (FY26, consolidated)',
         products: [
@@ -246,7 +246,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Greenlam Industries',
-        inShort: ["**India's largest laminate maker and exporter**, selling in 120+ countries, now also making plywood, veneers, floors, doors and chipboard in Andhra Pradesh.", "**Good:** the ₹875cr chipboard plant turned profitable a year early, free cash flow turned positive (₹204cr in FY26) and CARE raised its outlook to Stable. **Bad:** trailing profit is only ₹93cr on ₹3,169cr of revenue, net debt is ₹934cr, and ₹63cr of new tax disputes in its subsidiaries are unexplained.", "**Verdict: wait.** Past the worst, but the price assumes a full recovery."],
+        inShort: ["**India's largest laminate maker and exporter**, selling in 120+ countries, now also making plywood, veneers, floors, doors and chipboard in Andhra Pradesh.", "**Good:** the ₹875cr chipboard plant turned profitable a year early, free cash flow turned positive (₹204cr in FY26) and CARE raised its outlook to Stable. **Bad:** trailing profit is only ₹93cr on ₹3,169cr of revenue, net debt is ₹934cr, laminate volume fell 6% in Q1, and ₹63cr of new tax disputes in its subsidiaries are unexplained after an income-tax search.", "**Verdict: wait.** Past the worst, but the price assumes a full recovery."],
         tagline: "A laminate company with a big export arm, that has spent heavily to add plywood, veneers, engineered floors, doors and chipboard (particle board).",
         revenue: '₹3,046cr (FY26, consolidated)',
         products: [
@@ -300,7 +300,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Greenpanel Inds.',
-        inShort: ["**India's largest MDF maker**, with 8.9 lakh cubic metres of capacity in Uttarakhand and Andhra Pradesh, plus a small plywood arm.", "**Good:** the margin recovered from a loss in Q1 FY26 to 8–10%, and net debt is down to ₹141cr. **Bad:** its plants run at 51%, a 15% price rise was rolled back within three months, it lost the top domestic volume spot to Century, and exports are nil.", "**Verdict: pass.** Big plants, half used, in a price war."],
+        inShort: ["**India's largest MDF maker**, with 8.9 lakh cubic metres of capacity in Uttarakhand and Andhra Pradesh, plus a small plywood arm.", "**Good:** the margin recovered from a loss in Q1 FY26 to 8–10%, and net debt is down to ₹141cr. **Bad:** its plants run at 51%, a 15% price rise was rolled back within three months, it lost the top domestic volume spot to Century, exports are nil, unhedged euro loans cost ₹49cr in FY26, and the family group faces an income-tax search.", "**Verdict: pass.** Big plants, half used, in a price war."],
         tagline: "A wood-panel maker that is almost all MDF (91% of sales), sold through dealers across India and, until the West Asia war, exported to the Middle East.",
         revenue: '₹1,539cr (FY26, standalone)',
         products: [

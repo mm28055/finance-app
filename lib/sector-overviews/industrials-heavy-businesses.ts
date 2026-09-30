@@ -55,7 +55,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Jash Engineering',
-        inShort: ["**Makes water-control gates, screens and valves** for sewage, water-supply, flood-defence and desalination projects, with plants in India and subsidiaries in the US (Rodney Hunt), UK and Austria.", "**Good:** about two-thirds of the Indian gate market, a ₹932cr order book and almost no net debt. **Watch:** US tariffs and Gulf shipping problems, and an acquired unit (Jash Process) that lost ₹150–200cr of bids.", "**Verdict: follow.** A niche leader using a protected home market to build abroad, run by candid management; the price asks a little more than I expect, and Q1's profit was essentially a US tariff refund."],
+        inShort: ["**Makes water-control gates, screens and valves** for sewage, water-supply, flood-defence and desalination projects, with plants in India and subsidiaries in the US (Rodney Hunt), UK and Austria.", "**Good:** about two-thirds of the Indian gate market, a ₹932cr order book and almost no net debt. **Watch:** US tariffs (FY26 revenue was flat and the US arm, Rodney Hunt, lost money), Gulf shipping problems, and an acquired unit (Jash Process) that lost ₹150–200cr of bids.", "**Verdict: follow.** A niche leader using a protected home market to build abroad, run by candid management; the price asks a little more than I expect, and Q1's profit was essentially a US tariff refund."],
         tagline: "A global niche maker of water-control gates, screens and related equipment for municipal and industrial water systems.",
         revenue: '₹736cr (FY26, consolidated)',
         products: [
@@ -81,12 +81,12 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**About two-thirds of India's roughly ₹150cr water-control gate market**, and among the top five water-control gate makers worldwide.",
         money: "Net debt was just ₹9cr at March 2026 (Screener), with ₹13cr of investments besides. The Houston ($12m) and Saudi ($4m) plants will be paid for from $3m already deposited in the US, internal cash and $3–4m of US bank debt. About ₹7.5cr more of US tariff refunds is expected this year. Promoters hold **43%**, down from 51% in September 2023.",
-        watch: ["The US bill threatening 100% tariffs on countries that buy Russian oil.", "Houston and Saudi plants running by March 2028.", "The Jash Process turnaround after ₹150–200cr of lost orders."],
+        watch: ["The US bill threatening 100% tariffs on countries that buy Russian oil, and Rodney Hunt back in profit by Q2–Q3.", "Houston and Saudi plants running by March 2028.", "The Jash Process turnaround after ₹150–200cr of lost orders."],
         charts: industrialsHeavyCharts['Jash Engineering'],
     },
     {
         company: 'DEE Development',
-        inShort: ["**Makes high-pressure piping systems**: ready-to-install pipe spools, bends and fittings for power stations, refineries and gas-turbine plants, from plants in India and Thailand.", "**Good:** hard-won approvals with GE, Siemens and Nooter/Eriksen, a ₹2,428cr order book, and margins up from 9% to 17% as the new plant fills. **Bad:** ₹687cr of net debt, working capital of 263 days and heavy reliance on thermal power.", "**Verdict: follow.** The business is improving, but I want to see debt and working capital come down first."],
+        inShort: ["**Makes high-pressure piping systems**: ready-to-install pipe spools, bends and fittings for power stations, refineries and gas-turbine plants, from plants in India and Thailand.", "**Good:** hard-won approvals with GE, Siemens and Nooter/Eriksen, a ₹2,428cr order book, and margins up from 9% to 17% as the new plant fills. **Bad:** ₹687cr of net debt, working capital of 263 days, ₹447cr of free cash burned over two years, an auditor's qualified opinion for a second year, and heavy reliance on thermal power.", "**Verdict: follow.** The business is improving, but I want to see debt and working capital come down and the audit qualification cleared first."],
         tagline: "India's largest process-piping maker by installed capacity, supplying power, oil and gas, and process plants at home and abroad.",
         revenue: '₹1,142cr (FY26, consolidated)',
         products: [
@@ -145,7 +145,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Shree Refrigrations',
-        inShort: ["**Naval air-conditioning and refrigeration specialist**: the only Indian firm cleared by all three of the Navy's equipment directorates, with about 64% of the market for warship and submarine cooling.", "**Good:** a near-monopoly in a fleet growing from about 150 to 230 ships, and a ₹270cr order book (1.8 times sales). **Bad:** cash is tied up for about 370 days, and sales swing wildly between half-years.", "**Verdict: wait.** A fine niche, but I want working capital to keep falling and a steadier first half before paying up."],
+        inShort: ["**Naval air-conditioning and refrigeration specialist**: the only Indian firm cleared by all three of the Navy's equipment directorates, with about 64% of the market for warship and submarine cooling.", "**Good:** a near-monopoly in a fleet growing from about 150 to 230 ships, and a ₹270cr order book (1.8 times sales). **Bad:** cash is tied up for about 370 days, three shipyards give about 69% of revenue, its naval contracts carry no escalation clause, and sales swing wildly between half-years.", "**Verdict: wait.** A fine niche, but I want working capital to keep falling and a steadier first half before paying up."],
         tagline: "Designs and builds air-conditioning plants, ventilation, NBC air filtration and control panels for Indian Navy warships and submarines, and is trying the same chillers in data centres.",
         revenue: '₹154cr (FY26, standalone)',
         products: [
@@ -178,7 +178,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'JNK',
-        inShort: ["**India's specialist in fired heaters, reformers and cracking furnaces**, the equipment that heats crude and gas inside refineries and petrochemical plants, with a Korean parent.", "**Good:** an order book of ₹1,801cr, about twice a year's sales, net cash and a real qualification barrier. **Bad:** export orders run through the parent, whose agreement has lapsed, and a large export win was cancelled because the licensor did not approve it in time; guidance has drifted lower.", "**Verdict: wait.** Wait for the parent agreement to be renewed and for the Dangote and export orders to arrive."],
+        inShort: ["**India's specialist in fired heaters, reformers and cracking furnaces**, the equipment that heats crude and gas inside refineries and petrochemical plants, with a Korean parent.", "**Good:** an order book of ₹1,801cr, about twice a year's sales, net cash and a real qualification barrier. **Bad:** export orders run through the parent, whose agreement has lapsed, and a large export win was cancelled because the licensor did not approve it in time; guidance has drifted lower, operating cash has been negative for three years, and a third of votes went against its related-party deals with the Chemdist venture.", "**Verdict: wait.** Wait for the parent agreement to be renewed and for the Dangote and export orders to arrive."],
         tagline: "Process fired heaters, reformers, cracking furnaces, flares and incinerators for refineries, petrochemicals and fertiliser plants, now diversifying into other process equipment and green hydrogen.",
         revenue: '₹819cr (FY26, consolidated)',
         products: [
@@ -197,12 +197,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Heurtey Petrochem (Axens group)', note: 'Global fired-heater specialist and a direct rival for Indian and export heater orders.' }, { name: 'L&T and other large EPC firms', note: 'Stronger in big process plants; JNK targets mid-sized non-heating jobs they often skip.' }],
         position: "**One of the leading Indian suppliers of fired heaters, reformers and cracking furnaces**, with about ₹1,600cr of its March order book linked to its Korean parent.",
         money: "Screener shows **₹108cr of net cash** at March 2026. Cash rose from ₹29cr to ₹186cr in FY25, the year it listed. The business is asset-light, but operating cash flow has been negative in three of the last five years and unpaid bills were 154 days of sales in FY26; letting the parent post bank guarantees on export and joint jobs saves working capital. At the Chemdist hydrogen venture, 32% of shareholder votes went against its related-party deals, its own auditor was adverse on four points (including cash losses), and JNK guaranteed ₹25cr of its bank lines. Promoters hold **67.8%**, almost unchanged since listing.",
-        watch: ["Formal renewal of the cooperation agreement with JNK Global.", "Dangote phase 2 and other export heater orders.", "Margin staying within the 12–14% guidance."],
+        watch: ["Formal renewal of the cooperation agreement with JNK Global.", "Dangote phase 2 and other export heater orders.", "Margin staying within the 12–14% guidance.", "Operating cash turning positive, and the size of the Chemdist related-party deals."],
         charts: industrialsHeavyCharts['JNK'],
     },
     {
         company: 'WPIL',
-        inShort: ["**Kolkata pump maker turned global water company**: engineered pumps for irrigation, power, nuclear, naval and oil and gas use, plus water-supply projects, with about 77% of revenue now from subsidiaries abroad.", "**Good:** the international business nearly doubled and the order book is ₹5,270cr. **Bad:** ₹300-350cr is stuck in Indian state treasuries under the rural water scheme, operating cash flow has been negative for three years, and minority partners take a big share of profit.", "**Verdict: wait.** Cheap for a reason; I want the Indian money collected first."],
+        inShort: ["**Kolkata pump maker turned global water company**: engineered pumps for irrigation, power, nuclear, naval and oil and gas use, plus water-supply projects, with about 77% of revenue now from subsidiaries abroad.", "**Good:** the international business nearly doubled and the order book is ₹5,270cr. **Bad:** ₹300-350cr is stuck in Indian state treasuries under the rural water scheme, operating cash flow has been negative for three years, only ₹10.6cr is provided against about ₹289cr of bills overdue more than a year, and minority partners take a big share of profit.", "**Verdict: wait.** Cheap for a reason; I want the Indian money collected first."],
         tagline: "Engineered pumps and turnkey water projects in India, Europe, Africa and Asia, run through a web of part-owned subsidiaries.",
         revenue: '₹1,855cr (FY26, consolidated)',
         products: [
@@ -234,7 +234,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'John Cockerill',
-        inShort: ["**The Indian arm of Belgium's John Cockerill**, which builds steel processing lines (galvanising, cold rolling, electrical steel) and is being made the group's global metals hub.", "**Good:** a record group order book of about ₹4,600cr and a strong steel-plant spending cycle. **Bad:** the group made an operating loss in the latest quarter, the top five customers give about 80% of revenue, group equity is negative, and the most valuable new technology stays with the Belgian parent.", "**Verdict: avoid.** Minority shareholders bear the costs while the parent keeps the best technology."],
+        inShort: ["**The Indian arm of Belgium's John Cockerill**, which builds steel processing lines (galvanising, cold rolling, electrical steel) and is being made the group's global metals hub.", "**Good:** a record group order book of about ₹4,600cr and a strong steel-plant spending cycle. **Bad:** the group made an operating loss in the latest quarter, the top five customers give about 80% of revenue, group equity is negative, service-tax demands of ₹236cr exceed its standalone net worth, and the most valuable new technology stays with the Belgian parent.", "**Verdict: avoid.** Minority shareholders bear the costs while the parent keeps the best technology."],
         tagline: "Design, manufacture and installation of cold-rolling mills, galvanising, pickling and electrical-steel lines for steelmakers, plus spares, revamps and coating services.",
         revenue: '₹358cr (year to Dec 2025, standalone)',
         products: [
@@ -252,12 +252,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'SMS group, Danieli, Primetals Technologies', note: 'The global steel-plant equipment majors, all with downstream processing lines; they are the rivals on every large order.' }],
         position: "**One of a handful of global suppliers of steel processing lines**, and the John Cockerill group's hub for metals.",
         money: "Screener shows **₹221cr of net cash** at December 2025 (standalone), though unpaid bills were 226 days of sales. The parent cut its stake from 75% to about 70% by selling shares; convertible preference shares to be issued to it would lift it back above 72%. A customer (not named in the annual report) has served an arbitration notice over a cold-rolling mill it says under-performs. Service-tax demands of ₹236cr are under appeal, against a standalone net worth of ₹209cr, and the group's consolidated equity was negative (−₹96cr) at June 2026 because the price paid to the parent is deducted from equity. It pays the parent a brand fee of 0.6% of sales plus royalties. CARE rates it BBB, on watch. Promoters hold **70.44%**, down from 75% in September 2023.",
-        watch: ["Whether Volteron rights ever reach the listed company.", "The first commercial JVD order.", "Margin recovering as new projects move past their early, cost-heavy stage."],
+        watch: ["Whether Volteron rights ever reach the listed company.", "The first commercial JVD order.", "Margin recovering as new projects move past their early, cost-heavy stage.", "The CESTAT appeal on ₹236cr of service-tax demands."],
         charts: industrialsHeavyCharts['John Cockerill'],
     },
     {
         company: 'ICE Make Refrig.',
-        inShort: ["**Ahmedabad maker of cold rooms, commercial freezers, insulated panels and transport refrigeration** for India's cold chain.", "**Good:** revenue grew 60% last quarter and new products (chest freezers, panels) are selling. **Bad:** it did not pass on cost rises, the margin fell to 1.7% with a loss, margin guidance was cut within 90 days, and it changed its depreciation method in the same quarter.", "**Verdict: avoid.** Growth is being bought with margin and borrowed money."],
+        inShort: ["**Ahmedabad maker of cold rooms, commercial freezers, insulated panels and transport refrigeration** for India's cold chain.", "**Good:** revenue grew 60% last quarter and new products (chest freezers, panels) are selling. **Bad:** it did not pass on cost rises, the margin fell to 1.7% with a loss, margin guidance was cut within 90 days, it changed its depreciation method in the same quarter, and ₹190cr of new shares diluted holders by about 15%.", "**Verdict: avoid.** Growth is being bought with margin, borrowed money and new shares."],
         tagline: "Cold-chain equipment maker: modular cold rooms, chest freezers, insulated panels, reefer-truck units and ammonia refrigeration plants.",
         revenue: '₹668cr (FY26, consolidated)',
         products: [

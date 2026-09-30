@@ -52,7 +52,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'GR Infraprojects',
-        inShort: ["**An Udaipur-based highway builder and HAM developer** with its own large equipment fleet, now adding power lines, oil and gas pipelines, tunnels, BharatNet fibre and warehousing.", "**Good:** its building arm borrows only ₹239cr, CARE rates it AA+, and Q1 FY27 revenue rose 40% as delayed projects started. **Bad:** the standalone margin slipped to 11.0%, ₹3,346cr of project equity is still to invest, and there is a list of loose ends: a CBI case under an auditor's emphasis, a tax search, a ₹321.6cr GST notice and NTPC's ₹90.87cr guarantee claim.", "**Verdict: follow.** Strong and cheap, and the first road name I would buy on a clean Q2."],
+        inShort: ["**An Udaipur-based highway builder and HAM developer** with its own large equipment fleet, now adding power lines, oil and gas pipelines, tunnels, BharatNet fibre and warehousing.", "**Good:** its building arm borrows only ₹239cr, CARE rates it AA+, and Q1 FY27 revenue rose 40% as delayed projects started. **Bad:** it won almost no orders in Q1 against a ₹20,000cr guide for the year, the standalone margin slipped to 11.0%, ₹3,346cr of project equity is still to invest, and there is a list of loose ends: a CBI case under an auditor's emphasis, a tax search, a ₹321.6cr GST notice and NTPC's ₹90.87cr guarantee claim.", "**Verdict: follow.** Strong and cheap, and the first road name I would buy on a clean Q2, but only if orders arrive and no new legal surprise appears."],
         tagline: "Highway builder (EPC) and developer of HAM and toll roads with its own equipment fleet and tower plant, diversifying into power lines, pipelines, tunnels, telecom fibre and warehousing.",
         revenue: '₹8,399cr (FY26, consolidated)',
         products: [
@@ -79,7 +79,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'IRB Infra.Devl.',
-        inShort: ["**India's largest private toll-road company**: it owns two toll roads outright and sponsors, builds for and runs two infrastructure trusts that own many more, collecting about 10% of India's toll revenue.", "**Good:** tolls rose 26% and profit 51% in Q1, refinancing cut interest, and it delivered the promised road transfer to its public trust on time. **Bad:** return on equity is about 4%, revenue includes non-cash fair-value gains, net debt is ₹18,116cr, and its flagship Mumbai–Pune concession ends in April 2030.", "**Verdict: follow.** The toll business is working, but the price already asks for about what I expect."],
+        inShort: ["**India's largest private toll-road company**: it owns two toll roads outright and sponsors, builds for and runs two infrastructure trusts that own many more, collecting about 10% of India's toll revenue.", "**Good:** tolls rose 26% and profit 51% in Q1, refinancing cut interest, and it delivered the promised road transfer to its public trust on time. **Bad:** return on equity is about 4%, revenue includes non-cash fair-value gains and a ₹4,132cr fair-valued receivable from its own trust (a key audit matter), net debt is ₹18,116cr, and its flagship Mumbai–Pune concession ends in April 2030.", "**Verdict: follow.** The toll business is working, but the price already asks for about what I expect."],
         tagline: "India's largest private toll-road owner and operator, which builds, runs and recycles highway concessions through two trusts it sponsors.",
         revenue: '₹7,648cr (FY26, consolidated)',
         products: [
@@ -105,7 +105,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Ceigall India',
-        inShort: ["**A Ludhiana-based builder of elevated corridors, flyovers, tunnels and expressways**, listed in August 2024, now also building solar, battery-storage and power-line projects; the Sehgal family owns 82%.", "**Good:** the one road builder still growing with rising margins: Q1 revenue +16%, standalone margin 13.4%, an ₹18,568cr order book and its first HAM sale closed above plan. **Bad:** its auditor qualified its opinion on internal controls after a ₹8.985cr vendor fraud, operating cash has been negative five years, and about ₹1,600cr must go into projects in FY27–FY28.", "**Verdict: follow.** A growing business; it must now show cash and cleaner controls."],
+        inShort: ["**A Ludhiana-based builder of elevated corridors, flyovers, tunnels and expressways**, listed in August 2024, now also building solar, battery-storage and power-line projects; the Sehgal family owns 82%.", "**Good:** the one road builder still growing with rising margins: Q1 revenue +16%, standalone margin 13.4%, an ₹18,568cr order book and its first HAM sale closed above plan. **Bad:** its auditor qualified its opinion on internal controls after a ₹8.985cr vendor fraud, NHAI terminated one of its HAM concessions, operating cash has been negative five years, and about ₹1,600cr must go into projects in FY27–FY28.", "**Verdict: follow.** A growing business; it must now show cash and cleaner controls."],
         tagline: "Road builder specialising in elevated corridors, flyovers, bridges, tunnels and expressways, also developing HAM roads and solar, battery-storage and power-line projects.",
         revenue: '₹4,022cr (FY26, consolidated)',
         products: [

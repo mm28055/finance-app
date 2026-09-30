@@ -56,7 +56,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'J Kumar Infra',
-        inShort: ["**A Mumbai-based urban contractor** that builds elevated roads, flyovers, metro stations and a twin road tunnel, mainly for Mumbai's agencies, NHAI and Delhi Metro.", "**Good:** a 14–15% margin in every quarter, net cash, ₹1,128cr of operating cash in FY26 and a record ₹22,246cr order book after about ₹5,500cr of wins this year. **Bad:** FY26 revenue was flat against a 15% promise, sites have waited for approvals, and the ₹7,500cr revenue target has moved to FY28.", "**Verdict: own.** The cheapest well-run specialist in the group; judge it on second-half revenue above about ₹1,800cr a quarter."],
+        inShort: ["**A Mumbai-based urban contractor** that builds elevated roads, flyovers, metro stations and a twin road tunnel, mainly for Mumbai's agencies, NHAI and Delhi Metro.", "**Good:** a 14–15% margin in every quarter, net cash, ₹1,128cr of operating cash in FY26 and a record ₹22,246cr order book after about ₹5,500cr of wins this year. **Bad:** FY26 revenue was flat against a 15% promise, sites have waited for approvals, the ₹7,500cr revenue target has moved to FY28, and its bank-guarantee lines are 65% used.", "**Verdict: own.** The cheapest well-run specialist in the group; judge it on second-half revenue above about ₹1,800cr a quarter."],
         tagline: "Specialist urban infrastructure contractor: elevated corridors, flyovers, metros and road tunnels, mostly in Mumbai.",
         revenue: '₹5,694cr (FY26, standalone)',
         products: [
@@ -78,7 +78,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'L&T, Afcons', note: 'Bid for the largest Mumbai tunnels, sea links and metro packages.' }, { name: 'Cemindia Projects, Tata Projects', note: 'Metro and urban tunnel rivals.' }, { name: 'NCC', note: 'Competes on buildings and some urban roads, at a lower margin.' }],
         position: "**A leading specialist in Mumbai's elevated roads, metros and road tunnels**, with one of the highest and steadiest margins among listed contractors.",
         money: "Net cash of **₹72cr** (Screener, March); the company gives net cash of ₹45cr at June after the last tunnel-machine instalment, and expects gross debt below ₹800cr by March 2027. Bank guarantees and surety bonds rose 48% to ₹4,364cr; guarantee lines are 65% used. **Retention money** (held back from each bill until the job is finished) was ₹464cr at March, and all ₹470cr of client advances carry 8.5–10% interest. Capex about ₹150cr a year. A ₹180cr sale of Vizag land is expected. Promoters hold **46.64%**, unchanged over three years, with no pledge.",
-        watch: ["Second-half revenue above about ₹1,800cr a quarter.", "The Goregaon–Mulund tunnel machines boring.", "A Mumbai sea-link or metro win."],
+        watch: ["Second-half revenue above about ₹1,800cr a quarter.", "The Goregaon–Mulund tunnel machines boring.", "A Mumbai sea-link or metro win.", "Bank-guarantee lines growing, so they do not cap new wins."],
         charts: constructionCharts["J Kumar Infra"],
     },
     {
@@ -111,7 +111,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'NCC',
-        inShort: ["**One of India's largest general contractors**, based in Hyderabad, building offices, hospitals, roads, water schemes, irrigation, power lines and smart-meter networks, and running a coal mine, mostly for state governments.", "**Good:** a ₹81,214cr order book (about four years of revenue), a 9% margin in every quarter and Q1 revenue up 12%, its best June quarter ever. **Bad:** FY26 operating cash was −₹459cr as Uttar Pradesh stopped paying for water schemes, unbilled work is ₹7,414cr (38% of revenue) and consolidated debt has more than doubled.", "**Verdict: follow.** Steady margins, stretched cash; buy when the cash turns, not before."],
+        inShort: ["**One of India's largest general contractors**, based in Hyderabad, building offices, hospitals, roads, water schemes, irrigation, power lines and smart-meter networks, and running a coal mine, mostly for state governments.", "**Good:** a ₹81,214cr order book (about four years of revenue), a 9% margin in every quarter and Q1 revenue up 12%, its best June quarter ever. **Bad:** FY26 operating cash was −₹459cr as Uttar Pradesh stopped paying for water schemes, unbilled work is ₹7,414cr (38% of revenue), consolidated debt has more than doubled, and the auditor made receivables a key audit matter.", "**Verdict: follow.** Steady margins, stretched cash; buy when the cash turns, not before."],
         tagline: "Diversified contractor with seven divisions, working mainly for state governments and their companies across buildings, roads, water, power and mining.",
         revenue: '₹20,823cr (FY26, consolidated)',
         products: [
@@ -166,7 +166,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Cemindia Projects',
-        inShort: ["**The former ITD Cementation, a heavy-civil contractor for ports, metro tunnels, airports, foundations and now data centres**, 67.46% owned by the Adani group since May 2025.", "**Good:** revenue up 2.6 times since FY22 to ₹10,061cr, return on capital 33%, a record ₹31,307cr order book and ratings raised to AA− in September. **Watch:** the Adani group is about 53% of the order book, 70% of the book is at an early stage, Q1 revenue rose only 6% against a 25% guide, and a raise of up to ₹5,000cr was approved three months after ‘no plan’.", "**Verdict: follow.** A good business priced for more than it has yet shown; buy after the raise is priced and the Vadhvan and metro jobs start."],
+        inShort: ["**The former ITD Cementation, a heavy-civil contractor for ports, metro tunnels, airports, foundations and now data centres**, 67.46% owned by the Adani group since May 2025.", "**Good:** revenue up 2.6 times since FY22 to ₹10,061cr, return on capital 33%, a record ₹31,307cr order book and ratings raised to AA− in September. **Watch:** the Adani group is about 53% of the order book, 70% of the book is at an early stage, Q1 revenue rose only 6% against a 25% guide, FY26 profit included about ₹150cr of old claims, and a raise of up to ₹5,000cr was approved three months after ‘no plan’.", "**Verdict: follow.** A good business priced for more than it has yet shown; buy after the raise is priced and the Vadhvan and metro jobs start."],
         tagline: "Marine, metro-tunnel, foundation, building and data-centre contractor with a 90-year history, now controlled by the Adani group, which is also its largest client.",
         revenue: '₹10,061cr (FY26, consolidated)',
         products: [
@@ -194,7 +194,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Patel Engineering',
-        inShort: ["**A Mumbai-based builder of Himalayan hydropower projects**: dams, tunnels and powerhouses, plus irrigation tunnels and some roads, mostly for central government power companies.", "**Good:** 87 dams and about 15,000 MW of hydro built, a ₹400cr rights issue that cut debt, an upgrade to an A rating in June, and a 12–15% margin. **Bad:** promoters own only 31.49% and have pledged 86.6% of it, the auditor doubts four subsidiaries can keep going, write-downs have recurred, and it lost the biggest hydro package on price.", "**Verdict: wait.** Cheap because of its owners, not its work; wait for the pledge to fall."],
+        inShort: ["**A Mumbai-based builder of Himalayan hydropower projects**: dams, tunnels and powerhouses, plus irrigation tunnels and some roads, mostly for central government power companies.", "**Good:** 87 dams and about 15,000 MW of hydro built, a ₹400cr rights issue that cut debt, an upgrade to an A rating in June, and a 12–15% margin. **Bad:** promoters own only 31.49% and have pledged 86.6% of it, the auditor doubts four subsidiaries can keep going, write-downs have recurred, gross debt has crept back up to about ₹1,293cr, and it lost the biggest hydro package on price.", "**Verdict: wait.** Cheap because of its owners, not its work; wait for the pledge to fall."],
         tagline: "Hydropower, dam and tunnel specialist with a 350-project record, working mainly in Arunachal Pradesh, Jammu and Kashmir and Bhutan.",
         revenue: '₹5,103cr (FY26, consolidated)',
         products: [
@@ -222,7 +222,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Afcons Infra',
-        inShort: ["**The Shapoorji Pallonji group's heavy-engineering contractor**, building ports, tunnels, bridges, metros and dams in India and ten other countries; it built the Chenab rail bridge and the Atal Tunnel.", "**Good:** a record ₹43,290cr order book after ₹13,219cr of Q1 wins, including its largest ever contract (a railway in Croatia) and the Vadhvan breakwater. **Bad:** Q1 revenue fell 21%, Q4 FY26 was its first quarterly loss since 2010, operating cash has been negative two years, CRISIL's outlook is Negative, and all promoter shares are pledged.", "**Verdict: wait.** Great projects, poor cash; wait for the working capital to come down."],
+        inShort: ["**The Shapoorji Pallonji group's heavy-engineering contractor**, building ports, tunnels, bridges, metros and dams in India and ten other countries; it built the Chenab rail bridge and the Atal Tunnel.", "**Good:** a record ₹43,290cr order book after ₹13,219cr of Q1 wins, including its largest ever contract (a railway in Croatia) and the Vadhvan breakwater. **Bad:** Q1 revenue fell 21%, Q4 FY26 was its first quarterly loss since 2010, operating cash has been negative two years, the auditor flagged uncertain claims, CRISIL's outlook is Negative, and all promoter shares are pledged.", "**Verdict: wait.** Great projects, poor cash; wait for the working capital to come down."],
         tagline: "Marine, tunnel, bridge, metro and hydro contractor of the Shapoorji Pallonji group, with about a quarter of its work overseas.",
         revenue: '₹11,948cr (FY26, consolidated)',
         products: [

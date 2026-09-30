@@ -82,7 +82,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Jyothy Labs',
-        inShort: ["**A home and personal care company** behind Ujala fabric whitener, Henko and Mr White detergents, Exo dishwash, Maxo mosquito repellents and Margo soap, sold through about 4 million shops.", "**Good:** debt-free with about ₹850cr of cash, a 29% return on capital and strong cash generation. **Bad:** the Q1 FY27 operating margin halved to 8% as crude-linked chemicals and plastics soared, and it lost Pril and Fa, about 7–8% of sales, when Henkel's licences ended on 31 May.", "**Verdict: follow.** Margins have recovered after past crude spikes, but the price already asks for more growth than I expect."],
+        inShort: ["**A home and personal care company** behind Ujala fabric whitener, Henko and Mr White detergents, Exo dishwash, Maxo mosquito repellents and Margo soap, sold through about 4 million shops.", "**Good:** debt-free with about ₹850cr of cash, a 29% return on capital and strong cash generation. **Bad:** the Q1 FY27 operating margin halved to 8% as crude-linked chemicals and plastics soared, and it lost Pril and Fa, about 7–8% of sales, when Henkel's licences ended on 31 May, after telling investors on 4 May it would invest behind Pril.", "**Verdict: follow.** Margins have recovered after past crude spikes, but the price already asks for more growth than I expect."],
         tagline: "An Indian household-goods company, strongest in fabric whiteners, detergents and dishwash bars, with smaller personal-care and mosquito-repellent businesses.",
         revenue: '₹2,944cr (FY26, standalone)',
         products: [

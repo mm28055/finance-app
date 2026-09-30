@@ -59,7 +59,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Emcure Pharma',
-        inShort: ["**An Indian branded medicine maker that is also the chosen Indian partner of global drug companies**, with a larger export business in Europe, Canada and HIV medicines for poorer countries.", "**Good:** returns of 19–24% for five years, revenue up 13–23% a quarter, and partners such as Novo Nordisk, Sanofi, Roche and MSD. **Bad:** partnered products and export tenders pull gross margin down, and net debt is rising to about ₹1,450cr before it falls.", "**Verdict: follow.** The partner moat is the hardest to copy, but currency and low-margin tenders flatter growth, and the price needs more than the roughly 16% a year I expect."],
+        inShort: ["**An Indian branded medicine maker that is also the chosen Indian partner of global drug companies**, with a larger export business in Europe, Canada and HIV medicines for poorer countries.", "**Good:** returns of 19–24% for five years, revenue up 13–23% a quarter, and partners such as Novo Nordisk, Sanofi, Roche and MSD. **Bad:** partnered products and export tenders pull gross margin down, India grew only 6–7% in Q1 without in-licensed brands, and net debt is rising to about ₹1,450cr before it falls.", "**Verdict: follow.** The partner moat is the hardest to copy, but currency and low-margin tenders flatter growth, and the price needs more than the roughly 16% a year I expect."],
         tagline: "Indian branded medicines in women's health, heart, brain and anaemia, plus the Indian sales partner for several global innovators, and a fast-growing export business.",
         revenue: '₹9,204cr (FY26, consolidated)',
         products: [
@@ -168,7 +168,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Eris Lifesciences',
-        inShort: ["**An Indian chronic-disease medicine company** in diabetes, heart and skin that bought its way into insulin (Biocon's Indian business) and now sells generic semaglutide.", "**Good:** operating margins of 34–36% for years and fast-rising insulin share. **Bad:** acquisitions cut its return on capital from 60% to 14%, net debt is about ₹2,300cr, and gross margin is falling until its own insulin plant takes over.", "**Verdict: wait.** The Bhopal plant needs to lift margins first."],
+        inShort: ["**An Indian chronic-disease medicine company** in diabetes, heart and skin that bought its way into insulin (Biocon's Indian business) and now sells generic semaglutide.", "**Good:** operating margins of 34–36% for years and fast-rising insulin share. **Bad:** acquisitions cut its return on capital from 60% to 14%, net debt is about ₹2,300cr with ₹1,250cr of bonds due by June 2027, its Swiss plants failed an EU inspection, its COO resigned in September, trailing profit includes a ₹150cr tax credit, and gross margin is falling until its own insulin plant takes over.", "**Verdict: wait.** The Bhopal plant needs to lift margins first."],
         tagline: "Indian branded formulator in diabetes, insulin and heart medicines, with a small injectables export business.",
         revenue: '₹3,129cr (FY26, consolidated)',
         products: [
@@ -220,7 +220,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Indoco Remedies',
-        inShort: ["**A mid-sized Indian branded medicine maker** with leading dental brands and big acute brands such as Cyclopam, plus contract manufacturing for European generic companies and a small US business.", "**Good:** a strong dental and gut-medicine franchise in India and more than ₹250cr of European orders in hand. **Bad:** return on capital has been about zero for two years, debt is about ₹930cr, and its main US plant in Goa is still waiting for a US FDA re-inspection.", "**Verdict: pass.** Profit is negative, so it cannot be valued on earnings, and the case rests on one US inspection."],
+        inShort: ["**A mid-sized Indian branded medicine maker** with leading dental brands and big acute brands such as Cyclopam, plus contract manufacturing for European generic companies and a small US business.", "**Good:** a strong dental and gut-medicine franchise in India and more than ₹250cr of European orders in hand. **Bad:** return on capital has been about zero for two years, debt is about ₹930cr, its main US plant in Goa is still waiting for a US FDA re-inspection, and its auditor flagged a going-concern doubt at its US subsidiary.", "**Verdict: pass.** Profit is negative, so it cannot be valued on earnings, and the case rests on one US inspection."],
         tagline: "Indian branded formulator known for dental and gut medicines, with European contract manufacturing and a US business held back by an uncleared plant.",
         revenue: '₹1,845cr (FY26, consolidated)',
         products: [
@@ -249,7 +249,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Zydus Lifesciences',
-        inShort: ["**India's fourth-largest drug company**, selling chronic-disease brands to Indian doctors, generics and a growing specialty business in the US, and consumer brands such as Glucon-D and Sugar Free.", "**Good:** India has beaten the market for three years, return on capital has been 21–24% for three years, and it hit its 24% margin guide almost exactly. **Watch:** only 25% of FY26 operating profit turned into cash, and four acquisitions are being digested at once.", "**Verdict: follow.** A widening franchise, but FY27 profit is falling (Q1 net profit down about 35%) and the price needs about {need:Zydus Lifesciences|15}% a year against the roughly 12% I expect."],
+        inShort: ["**India's fourth-largest drug company**, selling chronic-disease brands to Indian doctors, generics and a growing specialty business in the US, and consumer brands such as Glucon-D and Sugar Free.", "**Good:** India has beaten the market for three years, return on capital has been 21–24% for three years, and it hit its 24% margin guide almost exactly. **Watch:** only 25% of FY26 operating profit turned into cash, Q1 operating profit fell 8%, a US warning letter hit its Baddi plant in June, and four acquisitions are being digested at once.", "**Verdict: follow.** A widening franchise, but FY27 profit is falling (Q1 net profit down about 35%) and the price needs about {need:Zydus Lifesciences|15}% a year against the roughly 12% I expect."],
         tagline: "Diversified Indian drug maker moving from US generics toward branded and specialty medicines, with its own new molecules and a consumer-wellness arm.",
         revenue: '₹27,148cr (FY26, consolidated)',
         products: [
@@ -277,7 +277,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Ajanta Pharma',
-        inShort: ["**A specialist branded-medicine maker** in heart, eye, skin and pain medicines, selling to specialist doctors in India, Asia and Africa, with a US generics business that is having a boom.", "**Good:** return on capital of 35%, net cash and a ₹400cr interim dividend. **Watch:** US sales grew 57% but are guided to slow sharply, Asian shipments are disrupted, and FY26 turned only 35% of operating profit into cash.", "**Verdict: wait.** An excellent business priced as if its best year were normal."],
+        inShort: ["**A specialist branded-medicine maker** in heart, eye, skin and pain medicines, selling to specialist doctors in India, Asia and Africa, with a US generics business that is having a boom.", "**Good:** return on capital of 35%, net cash and a ₹400cr interim dividend. **Watch:** US sales grew 57% but are guided to slow sharply, Asian shipments are disrupted, FY26 turned only 35% of operating profit into cash, its auditor flagged an open income-tax search, and about 22.5% of promoter shares are pledged.", "**Verdict: wait.** An excellent business priced as if its best year were normal."],
         tagline: "Branded specialty medicines for India, Asia and Africa, plus a US generics arm.",
         revenue: '₹5,453cr (FY26, consolidated)',
         products: [
@@ -306,7 +306,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Ipca Laboratories',
-        inShort: ["**An integrated Indian drug maker** that makes its own active ingredients and turns them into pain, heart and diabetes brands for Indian doctors, with exports and a US arm through Unichem.", "**Good:** margin up from 18% to 24% in a year and revenue guidance raised to 14–16% growth. **Watch:** this is historically a 13–14% return-on-capital business having its best year (17%), and freight costs have tripled on some routes.", "**Verdict: wait.** Improving and well run, but the price assumes its best year is the new normal."],
+        inShort: ["**An integrated Indian drug maker** that makes its own active ingredients and turns them into pain, heart and diabetes brands for Indian doctors, with exports and a US arm through Unichem.", "**Good:** margin up from 18% to 24% in a year and revenue guidance raised to 14–16% growth. **Watch:** this is historically a 13–14% return-on-capital business having its best year (17%), freight costs have tripled on some routes, and it wrote off ₹118.9cr of associate Krebs with ₹54cr of loans still unpaid.", "**Verdict: wait.** Improving and well run, but the price assumes its best year is the new normal."],
         tagline: "Vertically integrated Indian drug maker: its own active ingredients, Indian branded medicines, exports and the US generics arm Unichem.",
         revenue: '₹9,599cr (FY26, consolidated)',
         products: [
@@ -334,7 +334,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Alembic Pharma',
-        inShort: ["**An Indian drug maker with a large US generics business** and a smaller India branded book, which has built new cancer-drug and injectable plants and launched its first US branded product.", "**Good:** the heavy plant-building phase is over and cash conversion recovered to 70% in FY26. **Bad:** return on capital has been stuck at about 13% for three years, the cash cycle has stretched to 381 days and India grew only 4% in Q4 FY26.", "**Verdict: wait.** It looks cheap for reasons that have lasted three years; wait for the new plants to fill."],
+        inShort: ["**An Indian drug maker with a large US generics business** and a smaller India branded book, which has built new cancer-drug and injectable plants and launched its first US branded product.", "**Good:** the heavy plant-building phase is over and cash conversion recovered to 70% in FY26. **Bad:** return on capital has been stuck at about 13% for three years, the cash cycle has stretched to 381 days (its auditor made inventory a key audit matter), India grew only 4% in Q4 FY26, and Q1's US growth leans on a bosutinib exclusivity that ends around November.", "**Verdict: wait.** It looks cheap for reasons that have lasted three years; wait for the new plants to fill."],
         tagline: "Indian generics maker selling mainly to US buyers, with India branded medicines, other overseas markets and new cancer-drug and injectable plants.",
         revenue: '₹7,345cr (FY26, consolidated)',
         products: [
@@ -362,7 +362,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Marksans Pharma',
-        inShort: ["**Makes over-the-counter medicines** such as painkillers, cough and cold remedies and soft gels in India, and sells them through its own companies in the US, UK, Europe and Australia, mostly as retailers' own-label brands.", "**Good:** 35.6% growth in Q1 FY27, a record 25% margin, 87% of Q1 operating profit turned into cash, and over ₹1,000cr of net cash. **Watch:** the margin was helped by cheap stock and is guided back to 21–22% for the year, and idle cash holds returns down.", "**Verdict: own.** A repeatable model delivering above its guidance, at a price that asks for about the growth I expect."],
+        inShort: ["**Makes over-the-counter medicines** such as painkillers, cough and cold remedies and soft gels in India, and sells them through its own companies in the US, UK, Europe and Australia, mostly as retailers' own-label brands.", "**Good:** 35.6% growth in Q1 FY27, a record 25% margin, 87% of Q1 operating profit turned into cash, and over ₹1,000cr of net cash. **Watch:** the margin was helped by cheap stock and is guided back to 21–22% for the year, two customers buy 23% of what it sells, other auditors cover about 95% of its revenue, and idle cash holds returns down.", "**Verdict: own.** A repeatable model delivering above its guidance, at a price that asks for about the growth I expect."],
         tagline: "Indian maker of over-the-counter and generic medicines that owns the distribution companies selling them to Western retailers.",
         revenue: '₹2,951cr (FY26, consolidated)',
         products: [
@@ -389,7 +389,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Caplin Point Labs',
-        inShort: ["**Sells low-cost generic medicines across Central and South America through its own distribution network**, and is building a sterile-injectables business for US hospitals.", "**Good:** operating margins of 32–35% in every quarter for three years, ₹1,259cr of net cash and no bank loans. **Watch:** return on capital has fallen every year from 68% to 24% as cash piles up and money goes into US plants, and management gives no formal company guidance.", "**Verdict: follow.** The steadiest margins in the sector, but falling returns and rising receivables; I would rather buy it cheaper."],
+        inShort: ["**Sells low-cost generic medicines across Central and South America through its own distribution network**, and is building a sterile-injectables business for US hospitals.", "**Good:** operating margins of 32–35% in every quarter for three years, ₹1,259cr of net cash and no bank loans. **Watch:** return on capital has fallen every year from 68% to 24% as cash piles up and money goes into US plants, management gives no formal company guidance, and other auditors, mostly overseas, audit subsidiaries carrying over 90% of its revenue.", "**Verdict: follow.** The steadiest margins in the sector, but falling returns and rising receivables; I would rather buy it cheaper."],
         tagline: "A Latin American generic-medicine distributor and maker, with a fast-growing US sterile-injectables arm (Caplin Steriles).",
         revenue: '₹2,187cr (FY26, consolidated)',
         products: [
@@ -413,7 +413,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Granules India',
-        inShort: ["**Makes high-volume medicines such as paracetamol and metformin all the way from chemical to finished tablet**, and is now the fourth-largest US supplier of controlled drugs such as ADHD medicines.", "**Good:** returns of 15–19% for a decade, 22% growth and a margin that rose from 20% to 23%; strong Q1 cash cut net debt to about ₹101cr. **Bad:** an FDA Warning Letter at its main Gagillapur plant is holding back nine approved US launches.", "**Verdict: wait.** The business is sound, but the upside waits on one FDA re-inspection that nobody can schedule."],
+        inShort: ["**Makes high-volume medicines such as paracetamol and metformin all the way from chemical to finished tablet**, and is now the fourth-largest US supplier of controlled drugs such as ADHD medicines.", "**Good:** returns of 15–19% for a decade, 22% growth and a margin that rose from 20% to 23%; strong Q1 cash cut net debt to about ₹101cr. **Bad:** an FDA Warning Letter at its main Gagillapur plant is holding back nine approved US launches, the peptide arm lost ₹12.4cr in Q1, and promoter warrants added about 10% to the share count.", "**Verdict: wait.** The business is sound, but the upside waits on one FDA re-inspection that nobody can schedule."],
         tagline: "A vertically integrated maker of high-volume generic drugs, from starting chemicals to tablets, selling mainly in the US and Europe.",
         revenue: '₹5,366cr (FY26, consolidated)',
         products: [
@@ -442,7 +442,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Rubicon Research',
-        inShort: ["**Develops hard-to-copy US generic medicines**, such as slow-release tablets and nasal sprays, and sells them almost entirely in the US.", "**Good:** 88% of its approvals are launched, revenue grew 52% in Q1 FY27 and margin guidance was raised to 23%. **Watch:** it has turned only 31% of five years' profit into cash, and it leans on outside contract makers until its own plants open in 2027.", "**Verdict: follow.** The best research engine on the list, but the price already assumes many years of very fast growth."],
+        inShort: ["**Develops hard-to-copy US generic medicines**, such as slow-release tablets and nasal sprays, and sells them almost entirely in the US.", "**Good:** 88% of its approvals are launched, revenue grew 52% in Q1 FY27 and margin guidance was raised to 23%. **Watch:** it is 99% American with five customers buying about 72% of its output, it has turned only 31% of five years' profit into cash, its private-equity promoter sold 8.4% in August, and it leans on outside contract makers until its own plants open in 2027.", "**Verdict: follow.** The best research engine on the list, but the price already assumes many years of very fast growth."],
         tagline: "A research-led maker of specialty and complex generic medicines for the US, now adding plants in India and New Jersey and a small Indian brand business.",
         revenue: '₹1,754cr (FY26, consolidated)',
         products: [
@@ -469,7 +469,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Natco Pharma',
-        inShort: ["**Makes its money by challenging drug patents in the US** and selling the first generic while competition is limited, plus cancer brands in India, fast-growing businesses in Brazil and Canada, and 49% of South Africa's Adcock Ingram.", "**Good:** ₹3,964cr of net cash and a Brazil business up 180%. **Bad:** the Revlimid window has closed, Q1 FY27 revenue fell 45%, and it is raising ₹1,279cr in a rights issue for acquisitions it will not name.", "**Verdict: wait.** Profits come in windows; wait for the next one and for how the new money is spent."],
+        inShort: ["**Makes its money by challenging drug patents in the US** and selling the first generic while competition is limited, plus cancer brands in India, fast-growing businesses in Brazil and Canada, and 49% of South Africa's Adcock Ingram.", "**Good:** ₹3,964cr of net cash at March (about ₹1,400cr after the July Adcock payment) and a Brazil business up 180%. **Bad:** the Revlimid window has closed, Q1 FY27 revenue fell 45%, and it is raising ₹1,279cr in a rights issue for acquisitions it will not name.", "**Verdict: wait.** Profits come in windows; wait for the next one and for how the new money is spent."],
         tagline: "A patent-challenge specialist in cancer and complex generics, diversifying into Brazil, Canada, India and South Africa.",
         revenue: '₹4,078cr (FY26, consolidated)',
         products: [
@@ -497,7 +497,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Strides Pharma',
-        inShort: ["**Makes niche generic medicines (soft gels, liquids, slow-release tablets, controlled drugs)** for the US, Europe, Australia and Africa, including from its own US plant.", "**Good:** return on capital recovered to about 18% after a decade that included losses, the margin has held near 18–20%, and sales outside the US grew 17% in Q1. **Bad:** US sales are flat at about $68m a quarter, the US drug agency refused a larger controlled-drug quota, and net debt is still about ₹1,500cr.", "**Verdict: wait.** Wait for the DEA quota decision and for debt to come down."],
+        inShort: ["**Makes niche generic medicines (soft gels, liquids, slow-release tablets, controlled drugs)** for the US, Europe, Australia and Africa, including from its own US plant.", "**Good:** return on capital recovered to about 18% after a decade that included losses, the margin has held near 18–20%, and sales outside the US grew 17% in Q1. **Bad:** US sales are flat at about $68m a quarter, the US drug agency refused a larger controlled-drug quota, net debt is still about ₹1,500cr, and promoters have pledged 27.3% of their 27.9% holding.", "**Verdict: wait.** Wait for the DEA quota decision and for debt to come down."],
         tagline: "A maker of niche generic formats for regulated markets, with a US plant, an African brands business and institutional supply for aid-funded programmes.",
         revenue: '₹4,859cr (FY26, consolidated)',
         products: [
@@ -524,7 +524,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sai Parenterals',
-        inShort: ["**A small Indian injectables and tablet maker that bought Noumed**, the Australian company behind the own-label medicines that big pharmacy chains sell under their store names.", "**Good:** a 7.5-year exclusive AUD 202m (about ₹1,300cr) supply contract with EBOS and its own Australian plant due in 2027. **Bad:** return on capital is 5%, the margin is below its 17% guide, and ₹102cr of IPO money is being moved into stakes in two private companies.", "**Verdict: pass.** The Australian moat is real, but the returns, the margin and the use of IPO money all need to improve first."],
+        inShort: ["**A small Indian injectables and tablet maker that bought Noumed**, the Australian company behind the own-label medicines that big pharmacy chains sell under their store names.", "**Good:** a 7.5-year exclusive AUD 202m (about ₹1,300cr) supply contract with EBOS and its own Australian plant due in 2027. **Bad:** return on capital is 5%, the margin is below its 17% guide, free cash flow was −₹184cr in FY26, and ₹102cr of IPO money is being moved into stakes in two private companies.", "**Verdict: pass.** The Australian moat is real, but the returns, the margin and the use of IPO money all need to improve first."],
         tagline: "An Indian formulations maker that, through Noumed, supplies own-label medicines to Australian and New Zealand pharmacy chains.",
         revenue: '₹381cr (FY26, consolidated)',
         products: [
@@ -548,7 +548,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Wockhardt',
-        inShort: ["**An Indian drug maker that has invented a new antibiotic, Zaynich**, for hospital infections that resist existing drugs; it is now approved in the US and India. Underneath sits a UK and Irish generics business and a fast-growing insulin copy (biosimilar) business in emerging markets.", "**Good:** real science, margins up from about 5% to 19% in three years, and biosimilars growing 27%. **Bad:** the investment case rests on one drug in a market where hospitals ration new antibiotics, and Screener shows ₹1,983cr of net debt.", "**Verdict: wait.** The price already assumes Zaynich succeeds; I want to see first-year US prescriptions."],
+        inShort: ["**An Indian drug maker that has invented a new antibiotic, Zaynich**, for hospital infections that resist existing drugs; it is now approved in the US and India. Underneath sits a UK and Irish generics business and a fast-growing insulin copy (biosimilar) business in emerging markets.", "**Good:** real science, margins up from about 5% to 19% in three years, and biosimilars growing 27%. **Bad:** the investment case rests on one drug in a market where hospitals ration new antibiotics, Screener shows ₹1,983cr of net debt, ₹1,707cr of research is capitalised on the balance sheet, about 23% of promoter shares are pledged, and up to ₹3,000cr of new equity is approved.", "**Verdict: wait.** The price already assumes Zaynich succeeds; I want to see first-year US prescriptions."],
         tagline: "A research-led drug maker with a new US-approved antibiotic (Zaynich), a diabetes biosimilar business and established generics in the UK, Ireland and India.",
         revenue: '₹3,373cr (FY26, consolidated)',
         products: [
@@ -611,7 +611,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Gufic Biosciences',
-        inShort: ["**Makes freeze-dried (lyophilised) injections**, plus botulinum toxin, fertility drugs and contract manufacturing for more than 20 Indian companies, including semaglutide for Hetero.", "**Good:** hard-to-make products and a new Indore plant filling up (18% to about 35% used), with the margin back to 18%. **Bad:** European approval for Indore has been pending since a December 2025 audit, and profit is slow to turn into cash.", "**Verdict: wait.** Real barriers, but the price is well ahead of delivery; wait for the EU approval."],
+        inShort: ["**Makes freeze-dried (lyophilised) injections**, plus botulinum toxin, fertility drugs and contract manufacturing for more than 20 Indian companies, including semaglutide for Hetero.", "**Good:** hard-to-make products and a new Indore plant filling up (18% to about 35% used), with the margin back to 18%. **Bad:** European approval for Indore has been pending since a December 2025 audit, profit is slow to turn into cash (₹45cr of operating cash in FY26), and debt is about ₹400cr.", "**Verdict: wait.** Real barriers, but the price is well ahead of delivery; wait for the EU approval."],
         tagline: "A specialist maker of freeze-dried and complex injectables, with its own hospital, fertility and aesthetics brands and a growing contract-manufacturing business.",
         revenue: '₹940cr (FY26, standalone)',
         products: [
@@ -670,7 +670,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Fredun Pharma',
-        inShort: ["**A contract tablet maker that has built consumer brands on top**: pet care (food, treats, diagnostics and an online store), low-cost generic medicines for small-town pharmacies, and skincare, nutrition and mobility aids.", "**Good:** fast growth (Q1 FY27 sales up 90%) with margins edging up to about 14%. **Bad:** 2,100 products from 43 outsourced sites, cash flow below zero over five years, and a headline clinic business dropped without explanation.", "**Verdict: pass.** Too spread out, and profit is not turning into cash."],
+        inShort: ["**A contract tablet maker that has built consumer brands on top**: pet care (food, treats, diagnostics and an online store), low-cost generic medicines for small-town pharmacies, and skincare, nutrition and mobility aids.", "**Good:** fast growth (Q1 FY27 sales up 90%) with margins edging up to about 14%. **Bad:** 2,100 products from 43 outsourced sites, cash flow below zero over five years, a headline clinic business dropped without explanation, and it sells to promoter-group companies while its MD is also its CFO.", "**Verdict: pass.** Too spread out, and profit is not turning into cash."],
         tagline: "A Mumbai-based contract manufacturer and exporter of generic medicines that is building pet-care, pharmacy-generics and other consumer health brands.",
         revenue: '₹635cr (FY26, standalone)',
         products: [
@@ -698,7 +698,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Orchid Pharma',
-        inShort: ["**Makes cephalosporin antibiotic ingredients** (a big family of antibiotics) for other drug makers, including sterile ones at one of only three plants in the world approved by the US FDA for them. It also owns a new antibiotic combination, Exblifep, and merged with its promoter's Dhanuka Laboratories.", "**Good:** a scarce plant approval and a ₹750cr project to make its own 7-ACA, the key intermediate for these antibiotics. **Bad:** the margin collapsed to 4% in FY26 as prices fell, and management has stopped giving guidance.", "**Verdict: avoid.** Profit is too small to value it on; everything rests on a plant that is not yet running."],
+        inShort: ["**Makes cephalosporin antibiotic ingredients** (a big family of antibiotics) for other drug makers, including sterile ones at one of only three plants in the world approved by the US FDA for them. It also owns a new antibiotic combination, Exblifep, and merged with its promoter's Dhanuka Laboratories.", "**Good:** a scarce plant approval and a ₹750cr project to make its own 7-ACA, the key intermediate for these antibiotics. **Bad:** the margin collapsed to 4% in FY26 as prices fell, management has stopped giving guidance, the 7-ACA plant is about two years late, CARE cut its rating to BBB+, it buys ₹245cr of goods from a related party, and its consolidated accounts are qualified every year.", "**Verdict: avoid.** Profit is too small to value it on; everything rests on a plant that is not yet running."],
         tagline: "A cephalosporin antibiotic ingredient maker building its own raw-material plant and selling a new patented antibiotic combination through partners.",
         revenue: '₹1,233cr (FY26, consolidated, restated after the Dhanuka merger)',
         products: [

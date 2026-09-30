@@ -62,7 +62,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Poly Medicure',
-        inShort: ["**India's leading maker of IV cannulas and drip sets**, selling to almost every large private hospital in India and to 125 countries, and now adding heart, bone and kidney-care products.", "**Good:** ₹489cr of net cash, proven ability to raise prices to hospitals, and new heart and orthopaedic businesses growing fast. **Watch:** the margin has slipped from 27% to 24%, Chinese dialysers are undercutting it and Middle East orders are stuck at ports.", "**Verdict: follow.** A high-quality business, but the price asks for about {need:Poly Medicure|25}% a year against my 15%, as returns have halved to 12% and treasury income falls."],
+        inShort: ["**India's leading maker of IV cannulas and drip sets**, selling to almost every large private hospital in India and to 125 countries, and now adding heart, bone and kidney-care products.", "**Good:** ₹489cr of net cash, proven ability to raise prices to hospitals, and new heart and orthopaedic businesses growing fast. **Watch:** the margin has slipped from 27% to 24%, Q1 profit fell 8% on 30% more revenue as treasury income shrank, free cash has been negative for four years, ₹87cr of job work goes to a promoter-group firm, and Chinese dialysers are undercutting it.", "**Verdict: follow.** A high-quality business, but the price asks for about {need:Poly Medicure|25}% a year against my 15%, as returns have halved to 12% and treasury income falls."],
         tagline: "A leading Indian maker of plastic disposable medical devices (IV cannulas, drip sets, blood and dialysis products), with a growing heart, bone and kidney-care range and two recently bought European companies.",
         revenue: '₹1,875cr (FY26, consolidated)',
         products: [
@@ -119,7 +119,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'OSEL Devices',
-        inShort: ["**A small maker of hearing aids, LED display screens and Philips-branded mobile phones**, SME-listed and reporting only half-yearly.", "**Good:** FY26 sales grew 57% to ₹293cr with an 18% margin, and it is the largest supplier of hearing aids to the Indian government. **Bad:** operating cash flow has been negative for two years, it had to correct an earlier cash-flow statement, and it borrows against IPO money parked in mutual funds.", "**Verdict: pass.** Three unrelated businesses and weak financial reporting; I would wait for clean, cash-generating results."],
+        inShort: ["**A small maker of hearing aids, LED display screens and Philips-branded mobile phones**, SME-listed and reporting only half-yearly.", "**Good:** FY26 sales grew 57% to ₹293cr with an 18% margin, and it is the largest supplier of hearing aids to the Indian government. **Bad:** operating cash flow has been negative for two years, it had to correct an earlier cash-flow statement, it buys ₹44cr a year from a promoter-group firm, and it borrows against IPO money parked in mutual funds.", "**Verdict: pass.** Three unrelated businesses and weak financial reporting; I would wait for clean, cash-generating results."],
         tagline: "An SME-listed electronics company making hearing aids for government schemes and clinics, LED display systems for banks, malls and defence, and Philips-branded phones under licence.",
         revenue: '₹293cr (FY26, standalone)',
         products: [
@@ -175,7 +175,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Prevest Denpro',
-        inShort: ["**A small, highly profitable maker of dental materials** (fillings, cements, root-canal products and 3D-printing resins) selling in 92 countries.", "**Good:** a 36% margin, ₹82cr of net cash, no debt and spare factory capacity. **Watch:** growth slowed to 14% in FY26 (under 3% in Q4), and the founder-MD had a medical emergency in June 2026.", "**Verdict: own.** A reasonable price for a debt-free, very profitable business still growing in the teens."],
+        inShort: ["**A small, highly profitable maker of dental materials** (fillings, cements, root-canal products and 3D-printing resins) selling in 92 countries.", "**Good:** a 36% margin, ₹82cr of net cash, no debt and spare factory capacity. **Watch:** growth slowed to 14% in FY26 (under 3% in Q4) against its own promise of more than 20%, inventory days rose from 168 to 239 in two years, and the founder-MD had a medical emergency in June 2026.", "**Verdict: own.** A reasonable price for a debt-free, very profitable business still growing in the teens."],
         tagline: "An SME-listed maker of dental consumables and digital-dentistry materials, exporting to 92 countries and making products for large global dental companies under their names.",
         revenue: '₹72cr (FY26, standalone)',
         products: [
@@ -200,7 +200,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Laxmi Denta',
-        inShort: ["**Laxmi Dental makes custom crowns and bridges for dentists in India and abroad, plus clear aligners** (invisible teeth-straightening trays), aligner sheets and children's dental products.", "**Good:** debt-free, a record 19% margin in Q1 FY27, and exports up 37%. **Watch:** price competition in aligners, thin-margin scanner sales, and dependence on US trade policy.", "**Verdict: follow.** Growing well, but the price asks for about {need:Laxmi Denta|18}% a year against my 15%, and operating cash was negative in FY26."],
+        inShort: ["**Laxmi Dental makes custom crowns and bridges for dentists in India and abroad, plus clear aligners** (invisible teeth-straightening trays), aligner sheets and children's dental products.", "**Good:** debt-free, a record 19% margin in Q1 FY27, and exports up 37%. **Watch:** adjusted operating profit grew only 8% in Q1, ₹54.7cr of IPO money is still idle, and it faces price competition in aligners, thin-margin scanner sales and US trade policy.", "**Verdict: follow.** Growing well, but the price asks for about {need:Laxmi Denta|18}% a year against my 15%, and operating cash was negative in FY26."],
         tagline: "An integrated dental products company: India's largest exporting dental lab, a clear-aligner brand, aligner materials and children's dental products, sold through dentists.",
         revenue: '₹278cr (FY26, consolidated)',
         products: [
@@ -228,7 +228,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Vasa Denticity',
-        inShort: ["**Runs DentalKart, an online store selling 23,000 dental products to dentists across India**, about half of them under its own brands.", "**Good:** ₹48cr of net cash and no debt; stock shortages of its own brands are being fixed and the margin recovered to 6% in Q1 FY27. **Bad:** a thin-margin trading business whose margin fell to almost zero in late FY26, operating cash flow has been negative for three years, and a shareholder raised disclosure concerns on the call.", "**Verdict: pass.** Too little profit and too much stock tied up for the price."],
+        inShort: ["**Runs DentalKart, an online store selling 23,000 dental products to dentists across India**, about half of them under its own brands.", "**Good:** ₹48cr of net cash and no debt; stock shortages of its own brands are being fixed and the margin recovered to 6% in Q1 FY27. **Bad:** a thin-margin trading business whose margin fell to almost zero in late FY26, operating cash flow has been negative for three years, a shareholder raised disclosure concerns on the call, and its CFO, company secretary and an independent director left within five months.", "**Verdict: pass.** Too little profit and too much stock tied up for the price."],
         tagline: "An SME-listed B2B marketplace (an online store selling to businesses, here dental clinics) for dental consumables, instruments and equipment, with its own private-label brands. It trades as DentalKart.",
         revenue: '₹277cr (FY26, standalone)',
         products: [

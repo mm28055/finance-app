@@ -91,7 +91,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Concord Biotech',
-        inShort: ["**Grows active ingredients with microbes (fermentation)** rather than building them by chemistry: transplant drugs, cancer drugs, anti-infectives and antifungals. It also sells finished injections and tablets.", "**Good:** the low-cost producer in its main molecules, 1,250 cubic metres of fermenters already built, and no debt. **Bad:** FY26 sales fell 12%, and stock on hand reached 485 days of sales.", "**Verdict: follow.** A rare asset, but the price needs about {need:Concord Biotech|26}% a year of growth straight after a year of decline."],
+        inShort: ["**Grows active ingredients with microbes (fermentation)** rather than building them by chemistry: transplant drugs, cancer drugs, anti-infectives and antifungals. It also sells finished injections and tablets.", "**Good:** the low-cost producer in its main molecules, 1,250 cubic metres of fermenters already built, and no debt. **Bad:** FY26 sales fell 12%, stock on hand reached 485 days of sales, ₹68cr of receivables were more than six months overdue, and Q1's share gains were partly bought with price cuts.", "**Verdict: follow.** A rare asset, but the price needs about {need:Concord Biotech|26}% a year of growth straight after a year of decline."],
         tagline: "A leading maker of fermentation-based active pharmaceutical ingredients (APIs), moving into finished injectables, US sales and contract manufacturing.",
         revenue: '₹1,055cr (FY26, consolidated)',
         products: [
@@ -189,7 +189,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'NGL Fine-Chem',
-        inShort: ["**Makes active ingredients for animal medicines**, mostly dewormers and anti-parasite drugs for farm animals, sold largely in unregulated markets in India, Asia and Latin America.", "**Good:** revenue up 36% in FY26 and the margin back to 16–17% after a price war. **Bad:** about 60 Indian and Chinese rivals, borrowings up to ₹123cr for a new plant, and free cash flow negative in four of five years.", "**Verdict: wait.** The recovery is real, but the MD does not expect 20%-plus margins for two to three years."],
+        inShort: ["**Makes active ingredients for animal medicines**, mostly dewormers and anti-parasite drugs for farm animals, sold largely in unregulated markets in India, Asia and Latin America.", "**Good:** revenue up 36% in FY26 and the margin back to 16–17% after a price war. **Bad:** about 60 Indian and Chinese rivals, a new plant that cost 31% more than planned and came a quarter late, borrowings of ₹123cr against a promised ₹95cr cap, and free cash flow negative in four of five years.", "**Verdict: wait.** The recovery is real, but the MD does not expect 20%-plus margins for two to three years."],
         tagline: "A veterinary API maker trying to move from price-driven unregulated markets into regulated US and European supply.",
         revenue: '₹501cr (FY26, consolidated)',
         products: [
@@ -315,7 +315,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Aarti Drugs',
-        inShort: ["**A high-volume maker of common active ingredients** (APIs, the part of a medicine that does the work): antibiotics, metformin for diabetes, anti-infectives and painkillers, plus specialty chemicals and a small formulations arm.", "**Good:** now makes its own methylamines, the key metformin raw material, and has its first US FDA-approved API plant. **Bad:** Q1 FY27 growth was mostly price (+16–17%), not volume (+3.5%), and management expects prices to ease; net debt is ₹568cr.", "**Verdict: follow.** The cheapest stock in the group, but part of today's profit is war pricing."],
+        inShort: ["**A high-volume maker of common active ingredients** (APIs, the part of a medicine that does the work): antibiotics, metformin for diabetes, anti-infectives and painkillers, plus specialty chemicals and a small formulations arm.", "**Good:** now makes its own methylamines, the key metformin raw material, and has its first US FDA-approved API plant. **Bad:** Q1 FY27 growth was mostly price (+16–17%), not volume (+3.5%), and management expects prices to ease; net debt is ₹568cr, and about ₹159cr of tax is in dispute (a key audit matter).", "**Verdict: follow.** The cheapest stock in the group, but part of today's profit is war pricing."],
         tagline: "A large Indian maker of bulk APIs and specialty chemicals, backward-integrated into its own raw materials, with a formulations subsidiary.",
         revenue: '₹2,565cr (FY26, consolidated)',
         products: [
@@ -343,12 +343,12 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**The world's largest maker of nimesulide, ketoconazole, metronidazole benzoate, tinidazole and the fluoroquinolone group**, and one of the leading metformin producers (company presentation).",
         money: "Net debt of **₹568cr** (Screener, March 2026): ₹577cr of borrowings against ₹9cr of cash. Borrowings have stayed at ₹540–615cr for five years as it spent ₹150–225cr a year on plants; ₹600cr of greenfield work is now done and brownfield additions come next. Promoters hold **54%**, down from 59% in September 2023. Rated AA- by CRISIL and ICRA. About ₹159cr of tax is in dispute (₹92.4cr income tax, ₹58.3cr excise, customs and GST, plus ₹8.4cr in the subsidiary), about 10% of net worth; the auditor made it a key audit matter. FY26 profit carried a 7.6% tax rate after refunds. Its chairman, MD and CEO, Prakash Patil, stepped down during the year.",
-        watch: ["Volume growth returning to 10% or more as prices ease.", "Sayakha supplying 80–90% of its methylamines by December.", "Salicylic-acid losses and the anti-dumping duty."],
+        watch: ["Volume growth returning to 10% or more as prices ease.", "Sayakha supplying 80–90% of its methylamines by December.", "Salicylic-acid losses and the anti-dumping duty.", "The ₹159cr of disputed tax."],
         charts: pharmaApiCharts['Aarti Drugs'],
     },
     {
         company: 'IOL Chem & Pharma',
-        inShort: ["**The world's largest ibuprofen maker**, integrated back into its own acetic-acid chemicals, now adding paracetamol, clopidogrel, metformin and other painkiller and chronic-disease ingredients, with a second business selling ethyl acetate and acetic anhydride.", "**Good:** products other than ibuprofen grew 67% to 43% of pharma sales, it converts the most profit to cash in the group and spends only its own money. **Watch:** returns have sat at 9–14% for four years and Q1's 14.6% margin is above its usual 10–12%.", "**Verdict: follow.** Well run and candid, but earning above its average, and the price needs years of growth."],
+        inShort: ["**The world's largest ibuprofen maker**, integrated back into its own acetic-acid chemicals, now adding paracetamol, clopidogrel, metformin and other painkiller and chronic-disease ingredients, with a second business selling ethyl acetate and acetic anhydride.", "**Good:** products other than ibuprofen grew 67% to 43% of pharma sales, it converts the most profit to cash in the group and spends only its own money. **Watch:** returns have sat at 9–14% for four years, Q1's 14.6% margin is above its usual 10–12%, it is adding 50% more ibuprofen into a slow market, and purchases from promoter-linked firms rose 31% to ₹131.9cr.", "**Verdict: follow.** Well run and candid, but earning above its average, and the price needs years of growth."],
         tagline: "A large integrated maker of bulk APIs, led by ibuprofen, with a chemicals business built on acetic acid.",
         revenue: '₹2,319cr (FY26, consolidated)',
         products: [
@@ -374,7 +374,7 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**The world's largest ibuprofen producer, with about 35% of the global market** (Screener's company note), and a growing position in paracetamol in India.",
         money: "Net cash of **₹84cr** (Screener, March 2026): ₹135cr of borrowings against ₹198cr of cash and ₹21cr of investments. It spends ₹200–250cr a year on routine capex, 60% on growth and 40% on efficiency, and about 30% of the new ₹495cr was spent by September, all from its own cash; with the greenfield site, the small net cash is likely to turn into modest net debt. Rated A+ by CARE. Promoters hold **62%**, up from 48% in 2024, through open-market buying by promoter firms NCVI Enterprises and Mayadevi Polycot; in FY26 IOL bought ₹131.9cr of goods from these and a third promoter-linked firm, 31% more than a year earlier, and managerial pay was ₹21.75cr, about 16% of profit.",
-        watch: ["Paracetamol use rising from 55% towards 70%.", "Margin holding at 14% as input prices ease.", "The tablet plant shipping in Q3–Q4 FY27, and ibuprofen prices as the new capacity nears."],
+        watch: ["Paracetamol use rising from 55% towards 70%.", "Margin holding at 14% as input prices ease.", "The tablet plant shipping in Q3–Q4 FY27, and ibuprofen prices as the new capacity nears.", "Purchases from promoter-linked firms, ₹131.9cr in FY26."],
         charts: pharmaApiCharts['IOL Chem & Pharma'],
     },
     {
@@ -442,7 +442,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Solara Active Pharma',
-        inShort: ["**Two businesses in one:** about 70 niche active ingredients (APIs, the part of a medicine that does the work) earning about 25% margins, and a large ibuprofen operation that loses money.", "**Good:** the base business passed ₹300cr a quarter, grew 18–19% excluding cost pass-through and has clean US inspections; net debt fell 22% in Q1. **Bad:** about ₹700cr of capital sits in ibuprofen, which loses ₹10–15cr a quarter, and a write-down is likely.", "**Verdict: wait.** Reported profit is too small to value it on; the ibuprofen decision due with Q2 results will show what the base business is worth."],
+        inShort: ["**Two businesses in one:** about 70 niche active ingredients (APIs, the part of a medicine that does the work) earning about 25% margins, and a large ibuprofen operation that loses money.", "**Good:** the base business passed ₹300cr a quarter, grew 18–19% excluding cost pass-through and has clean US inspections; net debt fell 22% in Q1. **Bad:** about ₹700cr of capital sits in ibuprofen, which loses ₹10–15cr a quarter, and a write-down is likely; ₹365cr of goodwill and a ₹162cr tax demand also hang over equity, and a quarter of revenue goes to promoter-group Strides.", "**Verdict: wait.** Reported profit is too small to value it on; the ibuprofen decision due with Q2 results will show what the base business is worth."],
         tagline: "A pure-play API maker with a profitable niche portfolio and a loss-making ibuprofen business under strategic review.",
         revenue: '₹1,369cr (FY26, consolidated)',
         products: [

@@ -60,7 +60,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'EPL',
-        inShort: ["**The world's largest maker of laminated tubes** for toothpaste, creams and ointments, with 21 plants in 11 countries.", "**Good:** customers rarely switch, more than half of revenue has automatic cost pass-through, and beauty tubes are growing above 20%. **Watch:** the Indovida merger makes Indorama, a resin maker, the controlling shareholder, and net debt rose with capex and stock.", "**Verdict: own.** A global category leader whose customers cannot casually replace it."],
+        inShort: ["**The world's largest maker of laminated tubes** for toothpaste, creams and ointments, with 21 plants in 11 countries.", "**Good:** customers rarely switch, more than half of revenue has automatic cost pass-through, and beauty tubes are growing above 20%. **Watch:** the Indovida merger makes Indorama, a resin maker, the controlling shareholder and adds about 59% more shares; net debt rose with capex and stock, now 177 days; Europe earned only 4.8% at the EBIT level; and a higher tax rate cut Q1 profit 1.4%.", "**Verdict: own.** A global category leader whose customers cannot casually replace it."],
         tagline: "World's largest laminated-tube maker, supplying oral-care, beauty and pharma brands from plants on four continents.",
         revenue: '₹4,763cr (FY26, consolidated)',
         products: [
@@ -83,12 +83,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Albéa', note: 'French tube maker and the only rival of comparable global scale; together they dominate the world market.' }, { name: 'Amcor, Hoffmann Neopac, Alltub', note: 'Smaller global tube makers; the top five hold roughly 43% of the world market.' }, { name: 'Regional tube makers', note: 'Local firms in each country that compete on price for local brands.' }],
         position: "**World's largest laminated-tube maker**, with an estimated 15–25% of the global market depending on the source, and more than 9 billion tubes supplied a year.",
         money: "Screener shows borrowings of ₹962cr against ₹204cr of cash at March 2026, so net debt of about ₹758cr. The company's own figure is ₹581cr at June 2026, 0.58 times a year's EBITDA, up because of capex and extra stock held during the Middle East crisis. Capex was ₹482cr in FY26. The merger with Indorama's Indovida is a share swap, not a cash deal, due to complete in Q4 FY27; afterwards Indorama will own about 51.8%, Blackstone 16.6% and the public 31.6%, so the share count rises by roughly 59%. Promoter Blackstone holds **26.4%**, down from 51.5% in September 2023, mainly because it sold 24.9% to Indorama at ₹240 a share in May 2025. No final dividend was paid for FY26, because neither merging company may pay one until the deal completes. CARE rates EPL AA+ on watch for the merger.",
-        watch: ["Integrating Indovida, a business nearly two-thirds EPL's size.", "Related-party terms with Indorama, the world's largest PET resin maker.", "Margin getting back towards 20% once resin prices settle."],
+        watch: ["Integrating Indovida, a business nearly two-thirds EPL's size.", "Related-party terms with Indorama, the world's largest PET resin maker.", "Margin getting back towards 20% once resin prices settle, and Europe back towards a mid-teens margin."],
         charts: packagingCharts['EPL'],
     },
     {
         company: 'TCPL Packaging',
-        inShort: ["**One of India's largest folding-carton makers**, printing cartons for FMCG, food, tobacco and pharma brands, with a growing flexible-packaging arm.", "**Good:** a local, service-driven moat, margins near 16–18% and a full flexible-packaging plant that is expanding. **Watch:** about ₹614cr of net debt and a new battery-separator venture being built without a technology partner.", "**Verdict: follow.** A steady local winner, but the price already asks for more growth than I expect."],
+        inShort: ["**One of India's largest folding-carton makers**, printing cartons for FMCG, food, tobacco and pharma brands, with a growing flexible-packaging arm.", "**Good:** a local, service-driven moat, margins near 16–18% and a full flexible-packaging plant that is expanding. **Watch:** FY26 profit fell 32% on interest, a euro-loan loss, a labour-code charge and a 31% tax rate; about ₹614cr of net debt; and a new battery-separator venture being built without a technology partner.", "**Verdict: follow.** A steady local winner, but the price already asks for more growth than I expect."],
         tagline: "One of India's largest folding-carton makers, with flexible packaging, exports and a planned lithium-ion battery separator film plant.",
         revenue: '₹1,810cr (FY26, consolidated)',
         products: [
@@ -112,7 +112,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Mold-Tek Pack.',
-        inShort: ["**India's leading maker of printed plastic pails and containers** for paints, lubricants, food and pharma, with its own moulds, robots and in-mould labels.", "**Good:** a record ₹46.7 of profit per kilo and pharma volumes up 39%. **Watch:** dependence on Asian Paints, lubricant volumes down 17%, and net debt rising with negative free cash flow.", "**Verdict: follow.** A good business, but the price already assumes the pharma shift works."],
+        inShort: ["**India's leading maker of printed plastic pails and containers** for paints, lubricants, food and pharma, with its own moulds, robots and in-mould labels.", "**Good:** a record ₹46.7 of profit per kilo and pharma volumes up 39%. **Watch:** volume grew only 6% against a 10–13% guide, dependence on Asian Paints, lubricant volumes down 17%, return on capital down from 22% to about 13%, and net debt rising with negative free cash flow.", "**Verdict: follow.** A good business, but the price already assumes the pharma shift works."],
         tagline: "Rigid plastic packaging maker — in-mould-labelled pails for paints and lubricants, food and FMCG containers, and pharma packs.",
         revenue: '₹887cr (FY26, standalone)',
         products: [
@@ -193,7 +193,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Knack Packaging',
-        inShort: ["**India's largest maker of printed, laminated woven polypropylene bags**, including brick-shaped pinch-bottom bags for rice, pet food and fertiliser, sold in 74 countries.", "**Good:** returns above 30%, 56% of sales exported and customers who stay (94% continuity). **Watch:** listed only in 2026 with little public history, and a big plant expansion that will lower returns for a while.", "**Verdict: follow.** It needs another year of listed disclosure before I would size it."],
+        inShort: ["**India's largest maker of printed, laminated woven polypropylene bags**, including brick-shaped pinch-bottom bags for rice, pet food and fertiliser, sold in 74 countries.", "**Good:** returns above 30%, 56% of sales exported and customers who stay (94% continuity). **Watch:** listed only in 2026 with little public history; the new plant sits on promoter-owned land and related-party dealings were 20% of FY25 revenue; Cargill alone was 19% of FY25 sales; and a big plant expansion will lower returns for a while.", "**Verdict: follow.** It needs another year of listed disclosure before I would size it."],
         tagline: "Maker of printed, laminated woven polypropylene bags — premium sacks for rice, pet food, fertiliser and consumer brands — mostly for export.",
         revenue: '₹810cr (FY26, standalone)',
         products: [
@@ -215,7 +215,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Unorganised woven-sack makers', note: 'Hundreds of small makers of plain sacks, mostly competing on price.' }, { name: 'Commercial Syn Bags, Emmbi Industries', note: 'Listed Indian woven-polypropylene makers, with less focus on printed consumer bags.' }, { name: 'Kanpur Plastipack', note: 'Makes woven bulk bags for European industry, a neighbouring rather than direct market.' }],
         position: "**Largest maker of printed laminated woven bags and pinch-bottom bags in India** by FY25 revenue, with about 10% of the Indian market for these bags (Technopak).",
         money: "Screener does not yet have Knack's FY26 balance sheet, so its net debt figure stops at FY25: about ₹178cr (borrowings ₹188cr, cash ₹10cr). The company reports debt of 0.59 times equity at June 2026, down from 0.74 a year earlier; the ₹380cr raised at its July 2026 listing arrived after that date, and about ₹320cr of it goes into the new plant at Kadi, Gujarat, through FY27 and FY28. Its offices, plants and the new plant's land are leased from the promoters, and related-party dealings were 20.4% of FY25 revenue (prospectus). CARE rates it A-/Stable. Promoters hold **70.6%**.",
-        watch: ["Returns once the new plant starts.", "First full-year balance sheet and cash flow as a listed company.", "Competitors entering printed and pinch-bottom bags."],
+        watch: ["Returns once the new plant starts.", "First full-year balance sheet and cash flow as a listed company.", "Competitors entering printed and pinch-bottom bags.", "Related-party dealings with the promoters, 20.4% of FY25 revenue, shrinking rather than growing."],
         charts: packagingCharts['Knack Packaging'],
     },
     {
@@ -243,12 +243,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Turkish and Vietnamese bulk-bag makers', note: 'Compete for European buyers; closer suppliers gain when freight is expensive.' }, { name: 'Other Indian bulk-bag exporters', note: 'Many mid-sized makers with the same labour-cost advantage.' }],
         position: "**A mid-sized Indian bulk-bag exporter**, one of many, differentiated by certifications and a growing technical-textiles line.",
         money: "Screener shows borrowings of ₹112cr against ₹11cr of cash, **net debt of about ₹101cr**. Net debt rose to ₹132cr by June 2026. CRISIL puts planned capex at ₹108cr, mainly the non-woven lines (delayed to Q3 FY27) and bulk-bag Unit 3, with a new ₹40cr term loan. Equity has come in through warrants converted in 2025–26, and in November 2025 it bought 76% of Valex Ventures, a UK bulk-bag distributor, **from its chairman** for ₹8.02cr paid in new shares, above book value; the auditor flagged that Valex has missed its projections, but nothing has been written off. Term loans carry the personal guarantees of the chairman and deputy managing director. CRISIL rates it BBB+/Stable. Promoters hold **68.2%**, up from 66.7% in December 2023.",
-        watch: ["Container freight rates to Europe.", "Bulk-bag volume getting back towards 5,000 tonnes a quarter.", "Start-up of the non-woven plant."],
+        watch: ["Container freight rates to Europe.", "Bulk-bag volume getting back towards 5,000 tonnes a quarter.", "Start-up of the non-woven plant.", "Valex's results against its projections, and any write-down."],
         charts: packagingCharts['Kanpur Plastipack'],
     },
     {
         company: 'AGI Greenpac',
-        inShort: ["**India's second-largest container-glass maker**: beer, liquor, food and pharma bottles, plus specialty glass for perfume and cosmetics, with an aluminium can plant on the way.", "**Good:** margins of 22–25%, cost formulas covering about 60% of customers, and debt nearly paid off. **Watch:** much of that margin was earned while its biggest rival, Hindusthan National Glass, was bankrupt, and that rival now has a new owner.", "**Verdict: wait.** I want to see what glass prices do once the revived rival competes again."],
+        inShort: ["**India's second-largest container-glass maker**: beer, liquor, food and pharma bottles, plus specialty glass for perfume and cosmetics, with an aluminium can plant on the way.", "**Good:** margins of 22–25%, cost formulas covering about 60% of customers, and little debt today. **Watch:** much of that margin was earned while its biggest rival, Hindusthan National Glass, was bankrupt, and that rival now has a new owner; it missed its FY26 growth and margin guidance and has held no earnings call since January; about ₹2,000cr of spending will take debt to about 2 times operating profit; and two customers are 27% of revenue.", "**Verdict: wait.** I want to see what glass prices do once the revived rival competes again."],
         tagline: "Container-glass maker for the drinks, food and pharma industries, adding specialty glass, caps, PET bottles and aluminium cans.",
         revenue: '₹2,665cr (FY26, consolidated)',
         products: [
@@ -271,12 +271,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Hindusthan National Glass (now owned by INSCO)', note: 'The biggest Indian glass maker, about 4,300 tonnes a day across 13 furnaces; out of insolvency since September 2025 and being modernised.' }, { name: 'PGP Glass, Haldyn Heinz', note: 'Other organised container-glass makers; PGP is strong in perfume and cosmetics glass.' }, { name: 'Ball, CANPACK', note: 'Global can makers already in India, whom the new can plant will sell against.' }],
         position: "**Number two in Indian container glass** by capacity, behind a recovering Hindusthan National Glass, and the largest maker focused only on packaging.",
         money: "Screener shows borrowings of ₹241cr against ₹84cr of cash, **net debt of about ₹157cr** (about ₹57cr if its ₹100cr of investments are counted); all foreign-currency loans were repaid early by December 2025. Heavy spending is coming: about ₹1,900–2,000cr to March 2028, roughly ₹700cr for the Gwalior furnace and ₹1,000cr for the can plant, with debt expected to peak at ₹1,000–1,400cr, about 2 times yearly operating profit. Shareholders approved a share sale of up to ₹1,500cr in November 2025, unused so far. Two customers were 27% of FY26 revenue and the top ten about 64%. It rents property to, and trades with, promoter company Hindware, and key managers' pay rose 57% to ₹27.4cr. AGI held no public earnings call for the March or June 2026 quarters. CARE rates it AA-/Stable. Promoters hold **60%**, unchanged over three years.",
-        watch: ["Glass prices once Hindusthan National Glass is back at full strength.", "Gwalior furnace start-up in March 2027 and how fast it fills.", "Can plant cost, timing and first customers."],
+        watch: ["Glass prices once Hindusthan National Glass is back at full strength.", "Gwalior furnace start-up in March 2027 and how fast it fills.", "Can plant cost, timing and first customers.", "A public earnings call with updated guidance."],
         charts: packagingCharts['AGI Greenpac'],
     },
     {
         company: 'Cosmo First',
-        inShort: ["**One of India's largest makers of plastic packaging film** (BOPP, the clear film on snack packs and labels), moving into specialty films, chemicals, rigid packs and pet care.", "**Good:** specialty grades are 61% of film volume and earn a steady ₹63 a kilo; the big ₹1,200cr building phase is over and guidance was raised. **Bad:** heavy debt (₹1,166cr net on the company's measure), 7–8 new BOPP lines coming in India, and very high promoter pay.", "**Verdict: follow.** The price asks little; I want to see debt actually fall."],
+        inShort: ["**One of India's largest makers of plastic packaging film** (BOPP, the clear film on snack packs and labels), moving into specialty films, chemicals, rigid packs and pet care.", "**Good:** specialty grades are 61% of film volume and earn a steady ₹63 a kilo; the big ₹1,200cr building phase is over and guidance was raised. **Bad:** heavy debt (₹1,166cr net on the company's measure, flat in Q1 when it had signalled a fall), 7–8 new BOPP lines coming in India, very high promoter pay, and an auditor who singled out its state-incentive income.", "**Verdict: follow.** The price asks little; I want to see debt actually fall."],
         tagline: "Plastic packaging-film maker (BOPP, CPP, BOPET) with growing specialty chemicals, rigid packaging and consumer businesses.",
         revenue: '₹3,639cr (FY26, consolidated)',
         products: [

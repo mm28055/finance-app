@@ -57,7 +57,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'CIE Automotive',
-        inShort: ["**The Indian arm of Spain's CIE group**, forging, casting, stamping and machining parts for Indian and European vehicle makers, with Mahindra & Mahindra its largest customer.", "**Good:** net cash of ₹1,416cr in June, free cash averaging 7.8% of revenue for five years, and Europe's margin repaired from 12.5% to 15.9%. **Watch:** India grew about 3.5 points slower than its market in April–June, and ₹701cr went into working capital in the half year.", "**Verdict: own.** One of the few companies in this group that turns profit into real cash, at a price that asks for little growth."],
+        inShort: ["**The Indian arm of Spain's CIE group**, forging, casting, stamping and machining parts for Indian and European vehicle makers, with Mahindra & Mahindra its largest customer.", "**Good:** net cash of ₹1,416cr in June, free cash averaging 7.8% of revenue for five years, and Europe's margin repaired from 12.5% to 15.9%. **Watch:** India grew about 3.5 points slower than its market in April–June, European sales fell 6% in euros, and ₹701cr went into working capital in the half year.", "**Verdict: own.** One of the few companies in this group that turns profit into real cash, at a price that asks for little growth."],
         tagline: "A multi-process auto-parts maker (forgings, castings, stampings, gears and composites), about two-thirds in India and one-third in Europe and Mexico, controlled by Spain's CIE Automotive.",
         revenue: '₹9,406cr (CY2025, consolidated)',
         products: [
@@ -88,7 +88,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Talbros Auto Compont',
-        inShort: ["**India's largest engine-gasket and heat-shield maker** (about half the market), a forging exporter, and a 50% partner in two fast-growing joint ventures making chassis parts and anti-vibration rubber.", "**Good:** gaskets grew 21% in Q1 FY27, it is single source to five vehicle makers and to Cummins, and capex is paid from its own cash. **Watch:** forgings have been flat for three years, and its joint-venture partner Marelli is in court proceedings.", "**Verdict: own.** A strong franchise at a fair price, best held small until the Marelli question is settled."],
+        inShort: ["**India's largest engine-gasket and heat-shield maker** (about half the market), a forging exporter, and a 50% partner in two fast-growing joint ventures making chassis parts and anti-vibration rubber.", "**Good:** gaskets grew 21% in Q1 FY27, it is single source to five vehicle makers and to Cummins, and capex is paid from its own cash. **Watch:** forgings have been flat for three years, working-capital days rose from 45 to 71 over FY24–FY26, and its joint-venture partner Marelli is in court proceedings.", "**Verdict: own.** A strong franchise at a fair price, best held small until the Marelli question is settled."],
         tagline: "Maker of engine gaskets, heat shields and forgings, with 50:50 joint ventures in chassis parts (with Marelli) and anti-vibration rubber (with Marugo of Japan).",
         revenue: '₹870cr (FY26, consolidated)',
         products: [
@@ -114,12 +114,12 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**About 50% of India's engine-gasket market, three times its nearest rival**, and single source to five vehicle makers and to Cummins on one engine.",
         money: "Net cash of **₹277cr** on Screener, but that counts about ₹247cr of joint-venture stakes as investments; on cash alone (₹36cr against ₹84cr of borrowings in March) it has small net debt. Capex of ₹103cr is paid from its own cash; the dividend payout is only 4%. It sold ₹75.4cr of goods to QH Talbros, a promoter-family company, in FY26 and seeks approval for up to ₹125cr in FY27. Rated CARE A+. Promoters hold **58.4%**, unchanged over three years.",
-        watch: ["The outcome of Marelli's stake sale in the chassis joint venture.", "Forging growth once the October order starts.", "Sales to QH Talbros staying within the approved ₹125cr."],
+        watch: ["The outcome of Marelli's stake sale in the chassis joint venture.", "Forging growth once the October order starts.", "Sales to QH Talbros staying within the approved ₹125cr.", "Working-capital days coming back down from 71."],
         charts: autoRelatedCharts['Talbros Auto Compont'],
     },
     {
         company: 'Rolex Rings',
-        inShort: ["**A Rajkot forger and machiner of bearing rings and transmission parts** for global bearing makers and car and truck suppliers, with about 46% of sales exported.", "**Good:** debt-free, 20–23% operating margins, and a ₹180cr buyback done. **Watch:** revenue has been flat near ₹1,150cr for three years, Q1 FY27 grew only 4%, and the CMD pledged 2.7% of the company.", "**Verdict: follow.** It is priced about right, but I want one quarter of real growth before buying."],
+        inShort: ["**A Rajkot forger and machiner of bearing rings and transmission parts** for global bearing makers and car and truck suppliers, with about 46% of sales exported.", "**Good:** debt-free, 20–23% operating margins, and a ₹180cr buyback done. **Watch:** revenue has been flat near ₹1,150cr for three years, Q1 FY27 grew only 4%, the top ten customers take 84% of sales, and the CMD pledged 2.7% of the company.", "**Verdict: follow.** It is priced about right, but I want one quarter of real growth, and the pledge released, before buying."],
         tagline: "India's leading maker of hot-forged and machined bearing rings, also making gear blanks, hubs and shafts for car and truck transmissions.",
         revenue: '₹1,144cr (FY26, standalone)',
         products: [
@@ -149,7 +149,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Shriram Pistons',
-        inShort: ["**India's leading maker of pistons, piston rings, pins and engine valves**, renamed SPR Auto Technologies in April 2026, now also making moulded parts, EV motors and (since January 2026) car interiors bought from Antolin.", "**Good:** licensed technology from Kolbenschmidt, Riken and Honda Foundry, a standalone margin that rose from 15.9% to 23.3% over FY22–FY26, and an AA+ rating. **Watch:** the Antolin purchase doubled revenue at half the margin, the legacy business's Q1 FY27 profit fell 14%, and exports have been flat for four years.", "**Verdict: follow.** The best engine-parts franchise here, but growth is now being bought, and the price needs about {need:Shriram Pistons|21}% a year against my ~15%."],
+        inShort: ["**India's leading maker of pistons, piston rings, pins and engine valves**, renamed SPR Auto Technologies in April 2026, now also making moulded parts, EV motors and (since January 2026) car interiors bought from Antolin.", "**Good:** licensed technology from Kolbenschmidt, Riken and Honda Foundry, a standalone margin that rose from 15.9% to 23.3% over FY22–FY26, and an AA+ rating. **Watch:** the Antolin purchase doubled revenue at half the margin, the legacy business's Q1 FY27 profit fell 14%, exports have been flat for four years, and ₹1,000cr of new shares were sold in August with no stated use.", "**Verdict: follow.** The best engine-parts franchise here, but growth is now being bought, and the price needs about {need:Shriram Pistons|21}% a year against my ~15%."],
         tagline: "India's leading piston, ring, pin and valve maker (now SPR Auto Technologies), adding moulded plastics, EV motors and car interiors to cut its reliance on petrol and diesel engines.",
         revenue: '₹4,459cr (FY26, consolidated)',
         products: [
@@ -181,7 +181,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'ASK Automotive',
-        inShort: ["**India's largest maker of two-wheeler brake shoes and pads** (about half the market), and a large maker of aluminium die-cast engine parts and now alloy wheels, mostly for Honda, Hero and other two-wheeler makers.", "**Good:** it keeps growing faster than two-wheeler output (+25% net in Q1 FY27 against +23%), earns about 25% on capital, and passes aluminium on with no lag. **Watch:** capex jumped from ₹400cr to about ₹700cr for a plant decided in two weeks, and debt nearly doubled in two years.", "**Verdict: follow.** A genuine franchise, but the price asks for more growth than I expect while it spends faster than it earns."],
+        inShort: ["**India's largest maker of two-wheeler brake shoes and pads** (about half the market), and a large maker of aluminium die-cast engine parts and now alloy wheels, mostly for Honda, Hero and other two-wheeler makers.", "**Good:** it keeps growing faster than two-wheeler output (+25% net in Q1 FY27 against +23%), earns about 25% on capital, and passes aluminium on with no lag. **Watch:** capex jumped from ₹400cr to about ₹700cr for a plant decided in two weeks, debt nearly doubled in two years and the Q1 figure is withheld until Q2, and the top three customers take 60–65% of revenue.", "**Verdict: follow.** A genuine franchise, but the price asks for more growth than I expect while it spends faster than it earns."],
         tagline: "Two-wheeler brake and aluminium die-casting specialist with about half of India's two-wheeler braking market and 18 plants.",
         revenue: '₹4,176cr (FY26, consolidated)',
         products: [
@@ -213,7 +213,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Rajratan Global',
-        inShort: ["**A tyre bead-wire maker** (the steel hoop that holds a tyre on its rim) with 42–43% of the Indian market and the only plant in Thailand, now adding steel cord for conveyor belts.", "**Good:** volumes grew 18% in FY26 and 16% in Q1 FY27, the margin recovered to 13.1% as promised, and both CRISIL and ICRA turned more positive. **Watch:** the margin was about 20% in FY22, free cash has been negative for three years and debt has risen.", "**Verdict: follow.** The volume engine works; I want the turn to free cash before paying this price."],
+        inShort: ["**A tyre bead-wire maker** (the steel hoop that holds a tyre on its rim) with 42–43% of the Indian market and the only plant in Thailand, now adding steel cord for conveyor belts.", "**Good:** volumes grew 18% in FY26 and 16% in Q1 FY27, the margin recovered to 13.1% as promised, and both CRISIL and ICRA turned more positive. **Watch:** the margin was about 20% in FY22, free cash has been negative for three years, debt has risen to ₹324cr (about 2.3 times operating profit), and a ₹40–50cr production-linked subsidy is at risk after missed targets.", "**Verdict: follow.** The volume engine works; I want the turn to free cash and falling debt before paying this price."],
         tagline: "India's largest tyre bead-wire maker, with plants in Pithampur, Chennai and Thailand, supplying Indian and Japanese tyre makers.",
         revenue: '₹1,156cr (FY26, consolidated)',
         products: [
@@ -237,12 +237,12 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**42–43% of India's tyre bead-wire market and the only maker in Thailand** (ICRA).",
         money: "Net debt of **₹286cr** on Screener (borrowings ₹324cr against ₹22.5cr of cash in March 2026), about 2.3 times operating profit. Free cash has been negative for three years while Chennai and steel cord were built; about ₹50cr of term loans fall due in FY27, but working-capital debt will rise with US exports. Dividend payout about 14%. CRISIL moved its outlook to Stable in July 2026 and ICRA rates it A+. Promoters hold **65.2%**, unchanged.",
-        watch: ["Positive free cash in FY27 as capex tapers.", "Margin holding at 13.5–14%.", "The steel-cord line selling from Q3 FY27."],
+        watch: ["Positive free cash in FY27 as capex tapers.", "Margin holding at 13.5–14%.", "The steel-cord line selling from Q3 FY27.", "Whether the production-linked subsidy survives the missed targets."],
         charts: autoRelatedCharts['Rajratan Global'],
     },
     {
         company: 'Menon Bearings',
-        inShort: ["**A Kolhapur maker of engine bearings and bushes** for tractors, trucks and transmissions, with aluminium die-casting and brake-lining subsidiaries; about a third of sales are exported.", "**Good:** a record Q1 FY27 (sales +37%, margin 22%), a steep copper rise passed on, and US and Canadian orders in the pipeline. **Watch:** only 36% of FY26 operating profit became cash, and the promoter family sold 1.8% of the company while promoting the story.", "**Verdict: wait.** Real pricing power, but I want cash to follow profit and the selling to stop."],
+        inShort: ["**A Kolhapur maker of engine bearings and bushes** for tractors, trucks and transmissions, with aluminium die-casting and brake-lining subsidiaries; about a third of sales are exported.", "**Good:** a record Q1 FY27 (sales +37%, margin 22%), a steep copper rise passed on, and US and Canadian orders in the pipeline. **Watch:** only 36% of FY26 operating profit became cash, the promoter family sold 1.8% of the company while promoting the story, and ₹19.5cr a year of sales go to a firm in which the chairman is a partner.", "**Verdict: wait.** Real pricing power, but I want cash to follow profit and the selling to stop."],
         tagline: "Niche maker of bi-metal engine bearings, bushes and thrust washers for heavy-duty engines, plus aluminium castings (Menon Alkop) and brake linings (Menon Brakes).",
         revenue: '₹299cr (FY26, consolidated)',
         products: [
@@ -303,7 +303,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sundram Fasteners',
-        inShort: ["**A TVS-group maker of high-tensile fasteners, pumps, powder-metal and forged parts** for Indian and US vehicle makers, with growing wind, aerospace and railway fastener businesses.", "**Good:** margins of 15–17% for eight years, very little debt, ₹465cr of free cash in FY26, and Q1 FY27 revenue up 20%. **Watch:** sales grew only 4% a year over three years against a 12–13% aim, and working capital ties up 173 days.", "**Verdict: wait.** Steady quality, but the price asks for far more growth than it has shown."],
+        inShort: ["**A TVS-group maker of high-tensile fasteners, pumps, powder-metal and forged parts** for Indian and US vehicle makers, with growing wind, aerospace and railway fastener businesses.", "**Good:** margins of 15–17% for eight years, very little debt, ₹465cr of free cash in FY26, and Q1 FY27 revenue up 20%. **Watch:** sales grew only 4% a year over three years against a 12–13% aim, working capital ties up 173 days, and ₹114.6cr of sales go to its promoter holding company.", "**Verdict: wait.** Steady quality, but the price asks for far more growth than it has shown."],
         tagline: "India's largest fastener maker, also making engine pumps, sintered and cold-extruded parts and forgings, with about 30% exported, mostly to North America.",
         revenue: '₹6,289cr (FY26, consolidated)',
         products: [
@@ -334,7 +334,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Craftsman Automation',
-        inShort: ["**A Coimbatore maker of machined engine blocks and heads, aluminium die-castings and alloy wheels**, plus industrial storage systems, grown fast through acquisitions (DR Axion, Sunbeam) and new plants.", "**Good:** Q1 FY27 sales rose 36% at a 16% margin, and orders from five of six global makers of large generator engines open a data-centre market. **Watch:** free cash has been negative for three years, it raised ₹3,200cr of equity in two years, and the founder sold 2% days after the latest raise.", "**Verdict: wait.** Fast growth, but bought with debt and other people's money; I want free cash and a turned-round Sunbeam first."],
+        inShort: ["**A Coimbatore maker of machined engine blocks and heads, aluminium die-castings and alloy wheels**, plus industrial storage systems, grown fast through acquisitions (DR Axion, Sunbeam) and new plants.", "**Good:** Q1 FY27 sales rose 36% at a 16% margin, and orders from five of six global makers of large generator engines open a data-centre market. **Watch:** free cash has been negative for three years, it raised ₹3,200cr of equity in two years, the founder sold 2% days after the latest raise, and debt was ₹3,623cr in March (CRISIL still expects ₹3,000–3,100cr a year later).", "**Verdict: wait.** Fast growth, but bought with debt and other people's money; I want free cash and a turned-round Sunbeam first."],
         tagline: "Engineering group with three arms: aluminium die-castings and alloy wheels, machined engine and transmission parts, and industrial storage and engineering, with 28 plants in India and one in Germany.",
         revenue: '₹8,069cr (FY26, consolidated)',
         products: [
@@ -365,7 +365,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Alicon Castalloy',
-        inShort: ["**India's largest aluminium-casting foundry**, making cylinder heads, manifolds and EV and hybrid housings for Hero, Bajaj, Maruti, Mahindra and Daimler, with a small plant in Slovakia.", "**Good:** an order book of ₹8,094cr, single-source status with India's largest hybrid maker, and a ₹125cr leased plant that should add about ₹500cr of revenue. **Watch:** the margin fell from 13% to 9.5%, return on capital is 11%, and it bought ₹36cr of plant from a promoter company.", "**Verdict: wait.** The orders are there; the margin is not, and I want two quarters of recovery first."],
+        inShort: ["**India's largest aluminium-casting foundry**, making cylinder heads, manifolds and EV and hybrid housings for Hero, Bajaj, Maruti, Mahindra and Daimler, with a small plant in Slovakia.", "**Good:** an order book of ₹8,094cr, single-source status with India's largest hybrid maker, and a ₹125cr leased plant that should add about ₹500cr of revenue. **Watch:** the margin fell from 13% to 9.5% and the promised recovery was cut, CRISIL cut its outlook, return on capital is 11%, it bought ₹36cr of plant from a promoter company, and key management was paid ₹22.2cr against ₹34.4cr of profit.", "**Verdict: wait.** The orders are there; the margin is not, and I want two quarters of recovery first."],
         tagline: "India's largest aluminium foundry, casting and machining engine, structural and EV parts in Pune, Haryana and Slovakia for 92 customers.",
         revenue: '₹1,776cr (FY26, consolidated)',
         products: [
@@ -396,7 +396,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sterling Tools',
-        inShort: ["**India's second-largest automotive fastener maker**, plus loss-making subsidiaries making EV motor controllers, chargers and high-voltage contactors under Chinese technology licences.", "**Good:** fasteners grew 24% in Q1 FY27 at a 15.4% margin with plants 90–95% full, and steel is passed on. **Watch:** the EV arm lost ₹280cr of revenue when its anchor customer made the part itself, loses about ₹10cr a quarter, and booked a ₹21cr bad debt.", "**Verdict: wait.** A good fastener business carrying an EV arm that has to stop losing money first."],
+        inShort: ["**India's second-largest automotive fastener maker**, plus loss-making subsidiaries making EV motor controllers, chargers and high-voltage contactors under Chinese technology licences.", "**Good:** fasteners grew 24% in Q1 FY27 at a 15.4% margin with plants 90–95% full, and steel is passed on. **Watch:** the EV arm lost ₹280cr of revenue when its anchor customer made the part itself, loses about ₹10cr a quarter, and booked a ₹21cr bad debt; management pay of ₹18.3cr compares with ₹29.3cr of profit.", "**Verdict: wait.** A good fastener business carrying an EV arm that has to stop losing money first."],
         tagline: "High-tensile fastener maker for Indian vehicle makers, with EV electronics subsidiaries (Sterling E-Mobility and Sterling Tech-Mobility) built on Chinese partners' technology.",
         revenue: '₹828cr (FY26, consolidated)',
         products: [
@@ -428,7 +428,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'OBSC Perfection',
-        inShort: ["**A build-to-print maker of precision shafts, rods and forged, cast and stamped parts** for Tenneco, ZF, Mahle and Tata AutoComp, listed on the NSE SME platform.", "**Good:** sales rose 54% in FY26 and 85% in Q1 FY27, and the ₹1,200cr order book is about 5.5 times FY26 sales, over half of it export. **Watch:** operating cash was negative in FY26, it issued shares twice in a year, and ₹31cr of steel comes from promoter companies.", "**Verdict: wait.** Spectacular growth, but paid for with outside money; I want positive operating cash first."],
+        inShort: ["**A build-to-print maker of precision shafts, rods and forged, cast and stamped parts** for Tenneco, ZF, Mahle and Tata AutoComp, listed on the NSE SME platform.", "**Good:** sales rose 54% in FY26 and 85% in Q1 FY27, and the ₹1,200cr order book is about 5.5 times FY26 sales, over half of it export. **Watch:** operating cash was negative in FY26, it issued shares twice in a year (the second at ₹601 against a market price near ₹930), and ₹31cr of steel comes from promoter companies.", "**Verdict: wait.** Spectacular growth, but paid for with outside money; I want positive operating cash first."],
         tagline: "Young multi-process precision-parts maker (machining, investment casting, forging and stamping) making parts to customers' drawings for global Tier-1 suppliers, from plants in Pune, Chennai and Faridabad.",
         revenue: '₹220cr (FY26, standalone)',
         products: [
@@ -489,7 +489,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Poojaa Precision Engg',
-        inShort: ["**A Pune aluminium die-caster and machinist** (cylinder heads, EGR housings, manifolds), about half for trucks, listed on the BSE SME platform in August 2026.", "**Good:** revenue rose 3.4 times in five years at 18% margins and a 33% return on capital, and the new Unit III multiplies capacity. **Bad:** no earnings calls or quarterly results, customers are not named (one is a third of sales), inventory days doubled, and the annual report contains a drafting note and two profit figures.", "**Verdict: pass.** The numbers look good, but there is too little evidence behind them."],
+        inShort: ["**A Pune aluminium die-caster and machinist** (cylinder heads, EGR housings, manifolds), about half for trucks, listed on the BSE SME platform in August 2026.", "**Good:** revenue rose 3.4 times in five years at 18% margins and a 33% return on capital, and the new Unit III multiplies capacity. **Bad:** no earnings calls or quarterly results, customers are not named (one is a third of sales), inventory days doubled, the annual report contains a drafting note and two profit figures, and its auditor says stock statements given to SBI did not agree with the books.", "**Verdict: pass.** The numbers look good, but there is too little evidence behind them."],
         tagline: "Small Pune aluminium caster and machinist (formerly Pooja Castings, founded 1992) making engine and transmission parts for truck, car and EV makers.",
         revenue: '₹293cr (FY26, standalone)',
         products: [
@@ -547,7 +547,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Ramkrishna Forgings',
-        inShort: ["**A Jamshedpur forger and caster of axle beams, crankshafts and ring-rolled parts** for Indian and US truck makers, with a Mexican machining plant and a rail-wheel joint venture with Titagarh.", "**Good:** the margin recovered from 13% to 18%, and operating cash was a record ₹840cr in FY26. **Bad:** return on capital is 6%, two years of accounts were restated for a ₹220cr inventory overstatement, it backs ₹525cr of joint-venture loans off its balance sheet, and CRISIL's outlook is Negative.", "**Verdict: pass.** A real operating recovery, but the record and the debt weigh more."],
+        inShort: ["**A Jamshedpur forger and caster of axle beams, crankshafts and ring-rolled parts** for Indian and US truck makers, with a Mexican machining plant and a rail-wheel joint venture with Titagarh.", "**Good:** the margin recovered from 13% to 18%, and operating cash was a record ₹840cr in FY26. **Bad:** return on capital is 6%, two years of accounts were restated for a ₹220cr inventory overstatement, it backs ₹525cr of joint-venture loans off its balance sheet on top of ₹2,045cr of net debt, CRISIL's outlook is Negative, and rail wheels and press use are behind its May promises.", "**Verdict: pass.** A real operating recovery, but the record and the debt weigh more."],
         tagline: "Forgings and castings group ('press to paint') making truck, car and railway parts, with exports to North America and Europe and a rail-wheel joint venture.",
         revenue: '₹4,238cr (FY26, consolidated)',
         products: [

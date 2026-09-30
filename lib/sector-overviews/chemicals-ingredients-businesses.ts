@@ -110,7 +110,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Rossari Biotech',
-        inShort: ["**A formulator of surfactants, textile chemicals and animal-nutrition products**, with 4,250+ products sold to thousands of Indian and export customers.", "**Good:** revenue up 28% in Q1 FY27 with 10% more volume, exports growing 19% a year, and no customer above 2% of sales. **Bad:** margin down from 14% to 11.6%, borrowings doubled to ₹436cr, free cash negative three years running, and a consumer arm that loses money.", "**Verdict: follow.** The price fits the ~11% growth I expect, but only if margins stop falling."],
+        inShort: ["**A formulator of surfactants, textile chemicals and animal-nutrition products**, with 4,250+ products sold to thousands of Indian and export customers.", "**Good:** revenue up 28% in Q1 FY27 with 10% more volume, exports growing 19% a year, and no customer above 2% of sales. **Bad:** margin down from 14% to 11.6%, missing its own guide twice, borrowings doubled to ₹436cr, free cash negative three years running, and a consumer arm that loses money.", "**Verdict: follow.** The price fits the ~11% growth I expect, but only if margins stop falling."],
         tagline: "A Mumbai-based specialty-chemicals formulator and ethoxylate maker, which also owns Unitop and Tristar and a small consumer-products arm.",
         revenue: '₹2,396cr (FY26, consolidated)',
         products: [
@@ -165,7 +165,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Ellen. Indl. Gas',
-        inShort: ["**Ellenbarrie Industrial Gases makes oxygen, nitrogen and argon** in eastern and southern India, supplied through plants at customers' sites, tankers and cylinders; listed in July 2025.", "**Good:** 15–20-year take-or-pay contracts, 31–38% margins, full legacy plants and ₹285cr of net cash. **Bad:** about two-fifths of pre-tax profit is treasury income that capex will use up, and new merchant plants take 6–7 years to pay back.", "**Verdict: wait.** A sound gas business, but the price asks for far more growth than I expect."],
+        inShort: ["**Ellenbarrie Industrial Gases makes oxygen, nitrogen and argon** in eastern and southern India, supplied through plants at customers' sites, tankers and cylinders; listed in July 2025.", "**Good:** 15–20-year take-or-pay contracts, 31–38% margins, full legacy plants and ₹285cr of net cash. **Bad:** about two-fifths of pre-tax profit is treasury income that capex will use up, with write-downs on those investments in Q4 and Q1, its East India plant, promised in May for ‘next month’, started only on 25 September, and new merchant plants take 6–7 years to pay back.", "**Verdict: wait.** A sound gas business, but the price asks for far more growth than I expect."],
         tagline: "A Kolkata-based industrial-gas company leading in West Bengal, Andhra Pradesh and Telangana, which designs and builds its own air-separation plants.",
         revenue: '₹342cr (FY26, standalone)',
         products: [
@@ -193,7 +193,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'SH Kelkar & Co',
-        inShort: ["**Keva, India's largest home-grown fragrance and flavour house**, compounding the smells in soaps, detergents and personal care and the flavours in food, with plants and creative centres in India, Europe, the UK and the US.", "**Good:** 95% of clients accepted price rises in Q1 FY27, the margin recovered to 13%, and flavours earn about 24%. **Bad:** net debt rose to ₹852cr, return on capital is 6%, Q1 profit included a ₹30cr insurance gain, and the chairman died in September.", "**Verdict: wait.** A real franchise, but debt must fall before the price makes sense."],
+        inShort: ["**Keva, India's largest home-grown fragrance and flavour house**, compounding the smells in soaps, detergents and personal care and the flavours in food, with plants and creative centres in India, Europe, the UK and the US.", "**Good:** 95% of clients accepted price rises in Q1 FY27, the margin recovered to 13%, and flavours earn about 24%. **Bad:** net debt rose to ₹852cr, return on capital is 6%, Q1 profit included a ₹30cr insurance gain, about 50 lakh promoter shares are pledged, and the chairman died in September.", "**Verdict: wait.** A real franchise, but debt must fall before the price makes sense."],
         tagline: "A Mumbai fragrance and flavour company, the largest of Indian origin, selling under the SHK, Cobra, Keva and CFF names.",
         revenue: '₹2,368cr (FY26, consolidated)',
         products: [
@@ -220,7 +220,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Fineotex Chemical',
-        inShort: ["**A textile and cleaning-chemicals maker that has become mainly a US oilfield-chemicals business** after buying 53.33% of CrudeChem, a Texas group, in December 2025; oil and gas is now about 65% of revenue.", "**Good:** CrudeChem went from about $65M to a ~$100M run-rate in six months, Texas capacity doubled for about $7M, and it holds over ₹300cr of cash. **Bad:** group margin fell from the mid-20s to about 16%, textiles are flat, FY26 operating cash was −₹24cr, and up to ₹400cr of loans to the subsidiary were sought.", "**Verdict: wait.** Fast growth, but the price needs more than the ~18% a year I expect, and cash and governance are unproven."],
+        inShort: ["**A textile and cleaning-chemicals maker that has become mainly a US oilfield-chemicals business** after buying 53.33% of CrudeChem, a Texas group, in December 2025; oil and gas is now about 65% of revenue.", "**Good:** CrudeChem went from about $65M to a ~$100M run-rate in six months, Texas capacity doubled for about $7M, and it holds over ₹300cr of cash. **Bad:** group margin fell from the mid-20s to about 16%, textiles are flat, FY26 operating cash was −₹24cr, its auditor did not audit 12 subsidiaries that hold most of the US business, and up to ₹400cr of loans to the subsidiary were sought.", "**Verdict: wait.** Fast growth, but the price needs more than the ~18% a year I expect, and cash and governance are unproven."],
         tagline: "A Mumbai specialty-chemicals formulator for textiles and hygiene that now owns a majority of CrudeChem Technologies, a Texas oilfield-chemicals group.",
         revenue: '₹772cr (FY26, consolidated)',
         products: [

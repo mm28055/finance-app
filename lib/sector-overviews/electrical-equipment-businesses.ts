@@ -100,7 +100,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'TD Power Systems',
-        inShort: ["**Makes generators and motors** for global engine and turbine makers; most orders are exports, driven by US data centres.", "**Good:** revenue up 72% with steady margins, and contracts pass on metal costs. **Bad:** little of its profit has turned into cash, and it is raising equity.", "**Verdict: follow.** A great business whose price needs about {need:TD Power Systems|31}% growth a year, a little more than the 28% I expect."],
+        inShort: ["**Makes generators and motors** for global engine and turbine makers; most orders are exports, driven by US data centres.", "**Good:** revenue up 72% with steady margins, and contracts pass on metal costs. **Bad:** ten customers are 84% of revenue, little of its profit has turned into cash, and it is raising equity.", "**Verdict: follow.** A great business whose price needs about {need:TD Power Systems|31}% growth a year, a little more than the 28% I expect."],
         tagline: "Bangalore-based maker of generators and motors, sold mostly to global engine and turbine makers; one of the few independent suppliers in its size range.",
         revenue: '₹1,856cr (FY26, consolidated)',
         products: [
@@ -191,7 +191,7 @@ const profiles: BusinessProfile[] = [
     // ── Grid products ────────────────────────────────────────────────────────
     {
         company: 'Apar Inds.',
-        inShort: ["**One of the world's largest makers of power-line conductors**, plus transformer oils and specialty cables.", "**Good:** global scale and new US utility and data-centre approvals; metal costs are passed through. **Bad:** thin margins (8%), weak cash conversion, and Q1 was flattered by a one-off oil gain.", "**Verdict: wait.** An excellent franchise, but the price needs well above the 18% a year I expect."],
+        inShort: ["**One of the world's largest makers of power-line conductors**, plus transformer oils and specialty cables.", "**Good:** global scale and new US utility and data-centre approvals; metal costs are passed through. **Bad:** thin margins (8%), weak cash conversion, and Q1 was flattered by a one-off oil gain while conductor volume fell 6.7%.", "**Verdict: wait.** An excellent franchise, but the price needs well above the 18% a year I expect."],
         tagline: "One of the world's largest makers of power-line conductors, also a major maker of transformer oils and specialty cables.",
         revenue: '₹22,902cr (FY26, consolidated)',
         products: [
@@ -280,7 +280,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'RMC Switchgears',
-        inShort: ["**Small Jaipur maker of meter boxes and feeder pillars**, which also builds solar and power projects for state utilities.", "**Bad:** revenue fell 56% in Q1, unpaid bills are rising, and most contracts are fixed-price government tenders.", "**Verdict: avoid.** It looks cheap, but for good reasons."],
+        inShort: ["**Small Jaipur maker of meter boxes and feeder pillars**, which also builds solar and power projects for state utilities.", "**Bad:** revenue fell 56% in Q1, unpaid bills are rising, most contracts are fixed-price government tenders, CARE rates it ‘D’, and a promoter traded in breach of insider-trading rules.", "**Verdict: avoid.** It looks cheap, but for good reasons."],
         tagline: "Jaipur-based maker of meter enclosures and feeder pillars, which also builds distribution and solar projects for state utilities.",
         revenue: '₹402cr (FY26, consolidated)',
         products: [
@@ -311,7 +311,7 @@ const profiles: BusinessProfile[] = [
     // ── Wind and structures ──────────────────────────────────────────────────
     {
         company: 'Inox Wind',
-        inShort: ["**Wind-turbine maker** from the Inox GFL group, with a 4.4 GW order book.", "**Good:** big order book and margins around 20%. **Bad:** it has used far more cash than it earned, relies on group orders, and keeps issuing shares.", "**Verdict: avoid.** The price needs about {need:Inox Wind|21}% growth a year; after repeated misses and dilution I expect about 14%."],
+        inShort: ["**Wind-turbine maker** from the Inox GFL group, with a 4.4 GW order book.", "**Good:** big order book and margins around 20%. **Bad:** it has used far more cash than it earned, missed guidance three quarters running, relies on group orders, keeps issuing shares, and its auditor flags ₹55.8cr of invoked guarantees on group wind projects.", "**Verdict: avoid.** The price needs about {need:Inox Wind|21}% growth a year; after repeated misses and dilution I expect about 14%."],
         tagline: "Wind-turbine maker from the Inox GFL group, with a 4.4 GW order book; group companies service the turbines and are major buyers.",
         revenue: '₹4,397cr (FY26, consolidated)',
         products: [
@@ -373,7 +373,7 @@ const profiles: BusinessProfile[] = [
     // ── Power electronics and EV charging ────────────────────────────────────
     {
         company: 'Exicom Tele-Sys.',
-        inShort: ["**Makes power systems for telecom towers and EV chargers**, and owns Tritium, a loss-making fast-charger maker.", "**Good:** leading share of home EV chargers. **Bad:** the group is loss-making and burning cash.", "**Verdict: pass** until the group breaks even."],
+        inShort: ["**Makes power systems for telecom towers and EV chargers**, and owns Tritium, a loss-making fast-charger maker.", "**Good:** leading share of home EV chargers. **Bad:** the group fell back to a loss in Q1 after Q4's break-even, is burning cash, is rated BBB with a negative outlook, and part of the promoter's stake is pledged.", "**Verdict: pass** until the group breaks even."],
         tagline: "Maker of power systems and batteries for telecom sites and of EV chargers, which bought Tritium, a DC fast-charger maker, out of administration.",
         revenue: '₹1,152cr (FY26, consolidated)',
         products: [
@@ -403,7 +403,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Servotech Renew',
-        inShort: ["**Makes EV chargers, solar inverters and battery packs**, and runs a small charging network.", "**Bad:** commodity products, little disclosure, negative cash flow, and money going into a sports business.", "**Verdict: avoid.** The price is high for what it is."],
+        inShort: ["**Makes EV chargers, solar inverters and battery packs**, and runs a small charging network.", "**Bad:** commodity products, little disclosure, negative cash flow, borrowings nearly tripled after a no-new-debt promise was reversed, and money going into a sports business.", "**Verdict: avoid.** The price is high for what it is."],
         tagline: "Delhi-based maker of EV chargers, solar inverters and battery packs, which also runs an EV charging network and a sports subsidiary.",
         revenue: '₹672cr (FY26, consolidated)',
         products: [
@@ -428,7 +428,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'RIR Power Electr',
-        inShort: ["**Tiny maker of high-power silicon chips** (thyristors), building a ₹618cr silicon-carbide chip plant.", "**Bad:** the new plant costs almost seven times current sales and has no proven customers yet.", "**Verdict: avoid.** The price rests on a plant not yet running."],
+        inShort: ["**Tiny maker of high-power silicon chips** (thyristors), building a ₹618cr silicon-carbide chip plant.", "**Bad:** the new plant costs almost seven times current sales, has slipped repeatedly and has no proven customers yet; its know-how was bought from a company in which a director is interested.", "**Verdict: avoid.** The price rests on a plant not yet running."],
         tagline: "A small maker of high-power silicon semiconductors (thyristors, diodes) in Gujarat, building a silicon-carbide chip plant in Odisha.",
         revenue: '₹91cr (FY26, consolidated)',
         products: [
@@ -449,7 +449,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{"name": "Infineon, Hitachi Energy, Dynex, Littelfuse (IXYS)", "note": "Global makers of high-power thyristors."}, {"name": "Wolfspeed, Infineon, onsemi, STMicroelectronics", "note": "Dominant silicon-carbide wafer and chip makers."}, {"name": "SiCSem", "note": "Another silicon-carbide plant being built in Odisha."}],
         position: "A niche Indian maker of high-power silicon devices, tiny next to global rivals.",
         money: "The silicon-carbide plant will cost **₹618cr** (₹225cr in phase 1) against sales of about ₹90cr. Odisha pays half as a capital subsidy (₹47.84cr received in FY26); a ₹70cr bank loan has been applied for but not sanctioned, and phase 2 funding is open. It bought ₹41.95cr of silicon-carbide know-how from Sicamore Semiconductor, a US company in which a director or relative is interested, and sold its silicon-carbide subsidiary for ₹2.16cr to the chairman's original US company; its auditor added an emphasis of matter on that sale. Promoter holding fell from **71% to 59%**.",
-        watch: ["Silicon-carbide wafers qualified by customers, and first revenue.", "The bank loan and phase 2 funding.", "Core thyristor sales growing again."],
+        watch: ["Silicon-carbide wafers qualified by customers, and first revenue.", "The bank loan and phase 2 funding.", "Clear disclosure of what RIR owns in the technology.", "Core thyristor sales growing again."],
         charts: electricalEquipmentCharts["RIR Power Electr"],
     },
 ];

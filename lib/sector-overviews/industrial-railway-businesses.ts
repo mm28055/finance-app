@@ -59,7 +59,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Hind Rectifiers',
-        inShort: ["**India's leading maker of traction transformers**, the heavy part that turns overhead-wire power into power a locomotive can use. It is now adding converters, motors, control systems and complete propulsion.", "**Good:** each new train type carries more of its equipment, and a new copper-wire plant makes a key part in-house. **Bad:** the French unit it bought is losing money, the order book fell from ₹1,000cr to ₹740cr in a year, and borrowings have risen every year.", "**Verdict: follow.** A real franchise, but I want to see the French unit break even and orders grow first."],
+        inShort: ["**India's leading maker of traction transformers**, the heavy part that turns overhead-wire power into power a locomotive can use. It is now adding converters, motors, control systems and complete propulsion.", "**Good:** each new train type carries more of its equipment, and a new copper-wire plant makes a key part in-house. **Bad:** the French unit it bought is losing money, the order book fell from ₹1,000cr to ₹740cr in a year, Q1 Indian sales grew 10% against a 30% promise, borrowings have risen every year, and a promoter-group firm named Elventive Tech trades with it.", "**Verdict: follow.** A real franchise, but I want to see the French unit break even and orders grow first."],
         tagline: "Railway traction transformers, converters, motors and control electronics, plus power supplies for heavy industry; renamed Hirect Limited.",
         revenue: '₹949cr (FY26, standalone)',
         products: [
@@ -82,12 +82,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'BHEL', note: 'State-owned giant making transformers, motors and propulsion for Railways.' }, { name: 'Siemens, Alstom, ABB', note: 'Global propulsion makers with approved platforms and far larger engineering teams.' }, { name: 'Medha', note: 'Established Indian propulsion supplier; management says only one other Indian firm matches its full in-house propulsion ability.' }, { name: 'MV Electrosystems', note: 'Newly approved Indian propulsion maker competing for the same tenders.' }],
         position: "**The dominant supplier of locomotive traction transformers in India**, now climbing into converters, motors, control systems and complete propulsion.",
         money: "Net debt of about **₹225cr** (Screener, March 2026), up from ₹75cr in FY22 as working capital and capex grew; FY26 capex was ₹70cr. It raised ₹100cr in 2026 by selling new shares to Tata Small Cap Fund at ₹920.50 each. CRISIL rates it BBB+ and names an operating margin below 8.5–9% as a downgrade trigger; the group margin has been below that for two quarters. **Related parties:** a promoter-group company, Elventive Tech Pvt Ltd (same name as the French unit), holds ₹27cr of warrants at ₹1,368 and trades with the company: in H2 FY26 Hind bought ₹11.9cr from it and sold it ₹6.8cr, and bought ₹16.7cr from Force Motion Technology LLP, another related firm. The auditor's opinion is clean and contingent liabilities are small. Promoters hold **42.58%**, down from 44.08% in December 2023.",
-        watch: ["Elventive France reaching breakeven within the 3–5 quarters management expects.", "The order book (₹845cr in March, ₹740cr in July) turning back up, a Q2 standalone quarter above ₹300cr, and progress on the propulsion trial."],
+        watch: ["Elventive France reaching breakeven within the 3–5 quarters management expects.", "The order book (₹845cr in March, ₹740cr in July) turning back up, a Q2 standalone quarter above ₹300cr, and progress on the propulsion trial.", "Purchases from and sales to promoter-group firm Elventive Tech and Force Motion Technology."],
         charts: industrialRailwayCharts['Hind Rectifiers'],
     },
     {
         company: 'Concord Control',
-        inShort: ["**A small railway-electronics company** making wireless control systems for long freight trains, Kavach anti-collision equipment (through an associate), axle counters and locomotive propulsion, plus flexible circuit boards.", "**Good:** fast growth, a 29% margin and an order book of about ₹697cr, 3.3 times FY26 revenue. **Bad:** operating cash flow was minus ₹55cr in FY26 as unpaid bills and stock piled up.", "**Verdict: follow.** It is in the right part of the chain, but the profits must turn into cash first."],
+        inShort: ["**A small railway-electronics company** making wireless control systems for long freight trains, Kavach anti-collision equipment (through an associate), axle counters and locomotive propulsion, plus flexible circuit boards.", "**Good:** fast growth, a 29% margin and an order book of about ₹697cr, 3.3 times FY26 revenue. **Bad:** operating cash flow was minus ₹55cr in FY26 as unpaid bills and stock piled up, and sales to related parties rose sixteenfold while ₹13.4cr is owed by director-linked companies.", "**Verdict: follow.** It is in the right part of the chain, but the profits must turn into cash first."],
         tagline: "Railway control, safety and propulsion electronics for Indian Railways, with a flexible circuit-board maker; listed on the BSE SME platform.",
         revenue: '₹210cr (FY26, consolidated)',
         products: [
@@ -112,7 +112,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'MV Electrosystems',
-        inShort: ["**A newly listed maker of electric-locomotive propulsion systems**, one of only a few Indian designers, plus coach switchgear and cable-protection products.", "**Good:** an approved, Indian-designed propulsion system and about ₹1,100cr of orders, against FY26 sales of ₹49cr. **Bad:** it is losing money and has not yet shown it can make propulsion sets in volume.", "**Verdict: wait.** Wait for monthly delivery numbers to prove the factory can ramp up."],
+        inShort: ["**A newly listed maker of electric-locomotive propulsion systems**, one of only a few Indian designers, plus coach switchgear and cable-protection products.", "**Good:** an approved, Indian-designed propulsion system and about ₹1,100cr of orders, against FY26 sales of ₹49cr. **Bad:** it is losing money, made no deliveries in July or August, and its auditor warned about its long-term finances before the IPO rescued them.", "**Verdict: wait.** Wait for monthly delivery numbers to prove the factory can ramp up."],
         tagline: "IGBT propulsion systems for 6,000 HP electric locomotives, plus coach switchgear, cable harnesses and cable protection.",
         revenue: '₹49cr (FY26, standalone)',
         products: [
@@ -136,7 +136,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Titagarh Railsystems',
-        inShort: ["**India's only maker of both freight wagons and passenger coaches**, including metro trains and Vande Bharat sleeper coaches, with propulsion, a shipyard and a wheel joint venture.", "**Good:** a ₹13,335cr order book, mostly passenger coaches, and a rising share of higher-value work. **Bad:** it is making fewer wagons while a big Railways tender is awaited, and cash generation has been weak.", "**Verdict: wait.** I would buy when the wagon tender is awarded and the coach ramp-up shows in cash."],
+        inShort: ["**India's only maker of both freight wagons and passenger coaches**, including metro trains and Vande Bharat sleeper coaches, with propulsion, a shipyard and a wheel joint venture.", "**Good:** a ₹13,335cr order book, mostly passenger coaches, and a rising share of higher-value work. **Bad:** it is making fewer wagons while a big Railways tender is awaited, the coach ramp keeps slipping, cash generation has been weak, and its auditor found internal-control weaknesses after FY25 profit was restated over its Italian unit.", "**Verdict: wait.** I would buy when the wagon tender is awarded and the coach ramp-up shows in cash."],
         tagline: "Freight wagons, metro and passenger coaches, propulsion and castings, with a shipyard and a forged-wheel joint venture.",
         revenue: '₹3,186cr (FY26, consolidated)',
         products: [
@@ -193,7 +193,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Texmaco Rail',
-        inShort: ["**One of India's biggest wagon makers**, with its own steel foundries, a rail-infrastructure arm and an electrical-projects business.", "**Good:** 96% of its wagon orders now come from private and export buyers, and the order book is ₹9,923cr. **Bad:** thin margins, and its auditor qualified the FY26 accounts because a ₹700cr provision was taken straight from reserves instead of through profit.", "**Verdict: pass.** Wagon-making margins are capped, and reported profit cannot be trusted until the provision's use is clear."],
+        inShort: ["**One of India's biggest wagon makers**, with its own steel foundries, a rail-infrastructure arm and an electrical-projects business.", "**Good:** 96% of its wagon orders now come from private and export buyers, and the order book is ₹9,923cr. **Bad:** thin margins, Q1 sales down 17% with profit held up by a tax credit, and its auditor qualified the FY26 accounts because a ₹700cr provision was taken straight from reserves instead of through profit.", "**Verdict: pass.** Wagon-making margins are capped, and reported profit cannot be trusted until the provision's use is clear."],
         tagline: "Freight wagons and railway castings, plus rail-infrastructure and electrical transmission projects; part of the Adventz group.",
         revenue: '₹4,377cr (FY26, consolidated)',
         products: [
@@ -222,7 +222,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Jupiter Wagons',
-        inShort: ["**A wagon maker moving into brakes, wheels, containers and battery storage**, mainly selling wagons to private freight operators.", "**Good:** the Stone India brake unit started production in July 2026, and an Italian partner is putting ₹290cr into the wheel business. **Bad:** the margin fell from 13% to 10%, and heavy spending pushed free cash flow to minus ₹526cr in FY26.", "**Verdict: pass.** Big spending on new businesses while the wagon business is shrinking."],
+        inShort: ["**A wagon maker moving into brakes, wheels, containers and battery storage**, mainly selling wagons to private freight operators.", "**Good:** the Stone India brake unit started production in July 2026, and an Italian partner is putting ₹290cr into the wheel business. **Bad:** the margin fell from 13% to 10%, the order book has shrunk five quarters running to ₹4,550cr, debt doubled to ₹996cr, and heavy spending pushed free cash flow to minus ₹526cr in FY26.", "**Verdict: pass.** Big spending on new businesses while the wagon business is shrinking."],
         tagline: "Freight wagons, brakes, wheels and axles, commercial-vehicle bodies and containers, and battery energy storage.",
         revenue: '₹2,916cr (FY26, consolidated)',
         products: [
@@ -245,7 +245,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Texmaco Rail', note: 'The largest wagon maker, also chasing private and export orders.' }, { name: 'Titagarh Railsystems', note: 'Wagon rival with a competing wheel plant (with Ramkrishna Forgings) due at the same time.' }, { name: 'Imported wheels from China and Europe', note: 'Current suppliers that the new wheel plant must displace.' }],
         position: "**One of India's main wagon makers**, and the largest maker of 25-tonne-axle-load wagons.",
         money: "Net debt of about **₹554cr** (Screener, March 2026), up from net cash a year earlier. Capex was ₹508cr in FY25 and ₹535cr in FY26. The Odisha wheel plant costs about ₹2,600cr in total on the Q1 call (about ₹3,000cr in the annual report), of which Jupiter now puts in ₹600cr of equity (down from ₹900cr after the Italian investment); the ₹400cr battery project is extra. Borrowings doubled to ₹996cr in FY26, capex committed but not yet spent rose from ₹705cr to ₹1,506cr, and operating cash was only ₹9cr on ₹354cr of operating profit. Stone India lost ₹29.7cr before tax in FY26 before starting production. **Related parties and governance:** it bought ₹45.3cr of equipment in FY25 from Log9 Material Scientific, a firm it or its managers significantly influence; its Slovak promoter Tatravagonka is also a wheel customer and partner; and the board wants to switch ₹43.6cr of 2023 share-sale money, unused for two years, from a foundry to general purposes. The auditor's opinion is clean; CRISIL rates it AA−. Promoters hold **68.31%**, down from 72.37% in September 2023.",
-        watch: ["Wagon volumes and margin recovering from 9.7%.", "The wheel plant staying on time and budget, and finding buyers alongside Titagarh's.", "How the ₹400cr battery-storage project is funded."],
+        watch: ["Wagon volumes and margin recovering from 9.7%, and the order book growing again from ₹4,550cr.", "The wheel plant staying on time and budget, and finding buyers alongside Titagarh's.", "How the ₹400cr battery-storage project is funded."],
         charts: industrialRailwayCharts['Jupiter Wagons'],
     },
 ];

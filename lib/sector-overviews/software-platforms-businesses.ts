@@ -56,7 +56,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Tanla Platforms',
-        inShort: ["**India's largest business-messaging company by its own estimate**, sending bank OTPs, delivery alerts and marketing messages by SMS, WhatsApp and RCS for more than 3,200 customers, including 8 of the top 10 banks.", "**Good:** revenue up 18% in Q1, 74% of operating profit turned into cash over five years and ₹1,036cr of net cash (Screener). **Bad:** telecom companies and Meta set the price of each message, so the operating margin has slid from 22% in FY22 to 16%, and management keeps missing its own targets.", "**Verdict: follow.** The price asks for less growth than I expect, but I want to see the ValueFirst deal done and the platforms growing again first."],
+        inShort: ["**India's largest business-messaging company by its own estimate**, sending bank OTPs, delivery alerts and marketing messages by SMS, WhatsApp and RCS for more than 3,200 customers, including 8 of the top 10 banks.", "**Good:** revenue up 18% in Q1, 74% of operating profit turned into cash over five years and ₹1,036cr of net cash (Screener). **Bad:** telecom companies and Meta set the price of each message, so the operating margin has slid from 22% in FY22 to 16%, and management keeps missing its own targets, including a deal date it ‘committed’ to. Its secretarial auditor recorded insider-trading breaches by staff.", "**Verdict: follow.** The price asks for less growth than I expect, but I want to see the ValueFirst deal done and the platforms growing again first."],
         tagline: "India's largest business-messaging (CPaaS) company, with a small, high-margin software arm that sells anti-spam and anti-phishing tools to telecom companies and banks.",
         revenue: '₹4,418cr (FY26, consolidated)',
         products: [
@@ -84,7 +84,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Affle 3i',
-        inShort: ["**A mobile-advertising platform paid only when an ad produces a result** (an install, sign-up or purchase), serving e-commerce, fintech, gaming and healthcare apps; about 72% of revenue comes from India and emerging markets.", "**Good:** about 20% growth for 14 straight quarters at a 22–23% margin, and ₹1,393cr of net cash. **Watch:** ₹165cr of development cost was capitalised in FY26, a ₹135.8cr stake in insolvent Bobble AI is not written down, and gross margin has slipped about two points.", "**Verdict: follow.** The best business in the group, but the price asks for a little more growth than I expect."],
+        inShort: ["**A mobile-advertising platform paid only when an ad produces a result** (an install, sign-up or purchase), serving e-commerce, fintech, gaming and healthcare apps; about 72% of revenue comes from India and emerging markets.", "**Good:** about 20% growth for 14 straight quarters at a 22–23% margin, and ₹1,393cr of net cash. **Watch:** ₹165cr of development cost was capitalised in FY26, a ₹135.8cr stake in insolvent Bobble AI is not written down, gross margin has slipped about two points, and ₹1,100cr of warrants to the promoter will dilute other shareholders.", "**Verdict: follow.** The best business in the group, but the price asks for a little more growth than I expect."],
         tagline: "An advertising-technology platform that sells 'converted users' to app advertisers on a pay-per-result basis, in India, emerging markets and developed markets.",
         revenue: '₹2,709cr (FY26, consolidated)',
         products: [
@@ -107,12 +107,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Google and Meta', note: 'The walled gardens that take most mobile ad budgets and control most user data.' }, { name: 'AppLovin, Unity, InMobi, The Trade Desk', note: 'Much larger global ad-tech platforms; The Trade Desk sells ads by views rather than by results.' }, { name: 'Mobavenue AI Tech', note: 'A much smaller Indian rival on the same pay-per-result model.' }],
         position: "**The largest Indian-listed ad-tech platform**, ranked among the top return-on-spend partners in the Singular ROI Index 2026, with 14 straight quarters of sequential growth.",
         money: "Net cash of **₹1,393cr** (Screener), with borrowings of only ₹15cr in March, before ₹275.1cr received from promoter warrants in Q1. The promoter company is buying warrants worth about ₹1,100cr in all to fund acquisitions. Capitalised development runs at ₹165–174cr a year. No dividend or buyback. Promoters hold **54.91%**, down from 59.89% in Sep 2023.",
-        watch: ["Operating cash back to 80–85% of profit by Q3, from about 41% in Q1.", "Gross margin turning up in H2 FY27.", "The size and margin of the acquisition, and whether Bobble AI is written down."],
+        watch: ["Operating cash back to 80–85% of profit by Q3, from about 41% in Q1.", "Gross margin turning up in H2 FY27.", "The size and margin of the acquisition, and whether Bobble AI is written down.", "How much the promoter warrants dilute other shareholders."],
         charts: softwareCharts['Affle 3i'],
     },
     {
         company: 'Route Mobile',
-        inShort: ["**A business-messaging company with 280+ direct telecom connections and 3,100+ clients** in India, Europe, Latin America and Asia, 75% owned by Belgium's Proximus group.", "**Good:** ₹1,364cr of net cash (Screener), close to half its market value, and FY26 operating cash above operating profit. **Bad:** FY26 revenue fell 3.7%, the price per message is falling, and ₹135.9cr of supplier prepayments were written off in FY26.", "**Verdict: wait.** Cheap for the cash it holds, but I want gross margin back above 22% and no more write-offs."],
+        inShort: ["**A business-messaging company with 280+ direct telecom connections and 3,100+ clients** in India, Europe, Latin America and Asia, 75% owned by Belgium's Proximus group.", "**Good:** ₹1,364cr of net cash (Screener), close to half its market value, and FY26 operating cash above operating profit. **Bad:** FY26 revenue fell 3.7%, the price per message is falling, ₹135.9cr of supplier prepayments were written off in FY26, and the Q1 margin of 9.5% missed the ~12% guide.", "**Verdict: wait.** Cheap for the cash it holds, but I want gross margin back above 22% and no more write-offs."],
         tagline: "A global business-messaging (CPaaS) company that sends OTPs, alerts and marketing messages for companies and blocks unpaid 'grey-route' SMS for mobile operators.",
         revenue: '₹4,408cr (FY26, consolidated)',
         products: [
@@ -140,7 +140,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Black Box',
-        inShort: ["**A digital-infrastructure contractor** that cables, fits out and maintains data centres, networks and workplace technology in 35 countries for about 300 large clients; 69% of revenue is North American.", "**Good:** backlog nearly doubled in 15 months to $949m, a fourth big US cloud company was won, and the company EBITDA margin has doubled since FY23. **Bad:** only 11% of operating profit turned into cash over five years, ₹354cr of receivables were sold to banks, and 'exceptional' charges come every year.", "**Verdict: wait.** The price needs more growth than I expect, and I want cash to follow profit first."],
+        inShort: ["**A digital-infrastructure contractor** that cables, fits out and maintains data centres, networks and workplace technology in 35 countries for about 300 large clients; 69% of revenue is North American.", "**Good:** backlog nearly doubled in 15 months to $949m, a fourth big US cloud company was won, and the company EBITDA margin has doubled since FY23. **Bad:** only 11% of operating profit turned into cash over five years, ₹354cr of receivables were sold to banks, 'exceptional' charges come every year, the auditor flagged missed foreign-exchange-law deadlines, and the 10% margin goal was cut to 9.3–9.4%.", "**Verdict: wait.** The price needs more growth than I expect, and I want cash to follow profit first."],
         tagline: "An Essar-group systems integrator that builds and maintains data-centre, network and workplace-technology infrastructure for large companies, mostly in the US.",
         revenue: '₹6,322cr (FY26, consolidated)',
         products: [
@@ -163,12 +163,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Large IT integrators (NTT Data, CDW, Presidio)', note: 'Compete for enterprise network and workplace contracts; several are much larger.' }, { name: 'Specialist data-centre contractors', note: "Local electrical and cabling firms bid for cloud-company fit-outs; management admits 'you can't be the only one playing'." }],
         position: "**By its own account, the only India-origin firm running gigawatt-scale data-centre programmes**, with about 300 strategic accounts and 4,000 staff.",
         money: "Net debt of **₹613cr** including leases (Screener). On the company's March figures, borrowings were ₹827cr and cash ₹540cr, about ₹287cr of net debt before ₹326cr of leases, and it had also sold ₹354cr of receivables to banks. Capex is small (about ₹72cr in FY26), but it says acquisitions could take debt up to equal its equity. It raised ₹386cr through warrants to the promoter and other investors in FY25–FY26. CRISIL rates it BBB+ with a Positive outlook. Promoters (Essar) hold **69.95%**, down from 71.14% in Sep 2023.",
-        watch: ["H2 revenue growth of 30–40% as the new US client starts in November.", "Operating cash above 60% of EBITDA.", "A full year without exceptional charges."],
+        watch: ["H2 revenue growth of 30–40% as the new US client starts in November.", "Operating cash above 60% of EBITDA.", "A full year without exceptional charges.", "Debt as acquisitions are funded, and the foreign-exchange-law lapses settled."],
         charts: softwareCharts['Black Box'],
     },
     {
         company: 'Netweb Technologies',
-        inShort: ["**A Faridabad maker of GPU servers, supercomputers and private-cloud systems** under the Tyrone brand, selling to government research bodies, IndiaAI projects, Indian IT companies and GPU clouds.", "**Good:** revenue up 172% in Q1, and orders plus lowest-bidder positions of ₹3,355cr exceed FY26 revenue. **Bad:** it earns a 13–15% margin on bought-in chips, five customers give 65–70% of revenue, and it moved into about ₹200cr of net debt in June.", "**Verdict: wait.** The growth is real, but the price needs more than I expect from a hardware maker with lumpy orders."],
+        inShort: ["**A Faridabad maker of GPU servers, supercomputers and private-cloud systems** under the Tyrone brand, selling to government research bodies, IndiaAI projects, Indian IT companies and GPU clouds.", "**Good:** revenue up 172% in Q1, and orders plus lowest-bidder positions of ₹3,355cr exceed FY26 revenue. **Bad:** it earns a 13–15% margin on bought-in chips, five customers give 65–70% of revenue, it moved into about ₹200cr of net debt in June, promoters sold about 4% in February, and a raise of up to ₹1,200cr is approved.", "**Verdict: wait.** The growth is real, but the price needs more than I expect from a hardware maker with lumpy orders."],
         tagline: "India's leading home-grown maker of high-performance computers: AI (GPU) servers, supercomputers and private-cloud systems, designed and built in Faridabad.",
         revenue: '₹2,184cr (FY26, standalone)',
         products: [
@@ -196,7 +196,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Mobavenue Ai Tech',
-        inShort: ["**A small Indian mobile-advertising platform paid per result** (install, purchase or lead) for 155+ brands in quick commerce, fintech and retail, listed through a former shell company.", "**Good:** revenue up 57% in Q1 at a steady 21% margin, and the price per result up 11%. **Bad:** the listed company bought the business from its own promoters for ₹59.68cr, still owed them ₹45.7cr in March, and lends to promoter-linked firms that are also its customers and suppliers.", "**Verdict: pass.** Strong numbers, but I will not pay a full price for a structure where money flows to and from the promoters."],
+        inShort: ["**A small Indian mobile-advertising platform paid per result** (install, purchase or lead) for 155+ brands in quick commerce, fintech and retail, listed through a former shell company.", "**Good:** revenue up 57% in Q1 at a steady 21% margin, and the price per result up 11%. **Bad:** the listed company bought the business from its own promoters for ₹59.68cr, still owed them ₹45.7cr in March, and lends to promoter-linked firms that are also its customers and suppliers. Its auditor flagged capitalised salaries, slow receivables and a Russian subsidiary.", "**Verdict: pass.** Strong numbers, but I will not pay a full price for a structure where money flows to and from the promoters."],
         tagline: "A programmatic advertising platform that bids for mobile, connected-TV and app-store ad slots and charges brands per install, purchase or lead delivered.",
         revenue: '₹218cr (FY26, consolidated)',
         products: [
@@ -224,7 +224,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'E2E Networks',
-        inShort: ["**An Indian GPU cloud that rents Nvidia chips by the hour** to AI start-ups, companies, researchers and IndiaAI allottees; L&T owns 18.45% and is also a partner and customer.", "**Good:** its monthly revenue run-rate nearly doubled to ₹71.8cr in Q1 and the operating margin reached 75%. **Bad:** depreciation takes about half of that, borrowing jumped from about ₹103cr to about ₹450cr in a quarter, and GPU rents fall when supply catches up.", "**Verdict: follow.** Outstanding execution; on Q1's profit for a full year the price is within my estimate, but debt and GPU rents need watching."],
+        inShort: ["**An Indian GPU cloud that rents Nvidia chips by the hour** to AI start-ups, companies, researchers and IndiaAI allottees; L&T owns 18.45% and is also a partner and customer.", "**Good:** its monthly revenue run-rate nearly doubled to ₹71.8cr in Q1 and the operating margin reached 75%. **Bad:** depreciation takes about half of that, borrowing jumped from about ₹103cr to about ₹450cr in a quarter, GPU rents fall when supply catches up, and management gives no guidance on revenue, capex or peak debt.", "**Verdict: follow.** Outstanding execution; on Q1's profit for a full year the price is within my estimate, but debt and GPU rents need watching."],
         tagline: "An Indian 'neocloud' that owns Nvidia GPUs in rented data-centre space and rents out computing power by the hour or on prepaid contracts, with its own TIR software platform.",
         revenue: '₹246cr (FY26, standalone)',
         products: [
@@ -246,7 +246,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Yotta, Jio, Tata, CtrlS, NxtGen', note: 'Other Indian operators empanelled to supply IndiaAI GPUs; Yotta is also a Netweb customer.' }, { name: 'AWS, Microsoft Azure, Google Cloud', note: 'Global clouds with hundreds of thousands of GPUs and full software stacks.' }],
         position: "**One of India's few listed GPU clouds**, with about 5,100 GPUs and early B200 supply, but small against the global clouds.",
         money: "Screener gives no net-debt figure. Borrowings were about ₹103cr in March (plus ₹56cr of leases) and about **₹450cr** by the Q1 call, and management expects more with the next GPU lot but gives no peak-debt figure. It raised ₹405.7cr and ₹1,079.3cr through preferential issues in 2024 (the second mainly from L&T) and ₹107cr through a QIP in February 2026. ICRA rates it A-/Stable. Promoters hold **39.45%**, down from 59.71% in Sep 2023 as new shares were issued.",
-        watch: ["GPU rental prices after Nvidia's next chip generation.", "Utilisation once the second B200 lot arrives.", "Debt against run-rate revenue."],
+        watch: ["GPU rental prices after Nvidia's next chip generation.", "Utilisation once the second B200 lot arrives.", "Debt against run-rate revenue, and any disclosure of how much revenue is under contract."],
         charts: softwareCharts['E2E Networks'],
     },
 ];

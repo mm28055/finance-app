@@ -54,7 +54,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Steelcast',
-        inShort: ["**A Gujarat steel foundry making tough, complex castings for the makers of mining, earthmoving and construction machines**, sold directly to equipment makers in India, the US, Germany and 14 other countries.", "**Good:** 26–29% margins, returns on capital of 32–42% over the last four years, no debt and ₹96cr of net cash; FY27 volume growth guidance was raised to 25–30%. **Watch:** natural gas is 50–55% dearer than in February, and a ₹120cr new plant needs Western demand to hold up.", "**Verdict: own.** The price roughly matches the growth I expect."],
+        inShort: ["**A Gujarat steel foundry making tough, complex castings for the makers of mining, earthmoving and construction machines**, sold directly to equipment makers in India, the US, Germany and 14 other countries.", "**Good:** 26–29% margins, returns on capital of 32–42% over the last four years, no debt and ₹96cr of net cash; FY27 volume growth guidance was raised to 25–30%. **Watch:** Q1 tonnes grew only 11.6% against the raised guide, three customer groups take 75–88% of sales, the chairman's 1.48% pledge was disclosed inconsistently, and gas is 50–55% dearer than in February.", "**Verdict: own.** The price roughly matches the growth I expect."],
         tagline: "A Gujarat maker of steel and alloy-steel castings (metal parts poured into moulds) for mining, earthmoving and construction equipment makers, with roughly half its sales exported.",
         revenue: '₹423cr (FY26, standalone)',
         products: [
@@ -77,12 +77,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Other Indian steel foundries', note: 'Compete for the same Indian and export OEM work; none were named on the call.' }, { name: 'Overseas foundries', note: 'Steelcast competes with foundries abroad for US and European orders; management gave no price comparison on this call.' }],
         position: "**A specialist tier-one steel foundry** with 29,000 tonnes of capacity, selling to heavy-equipment makers in 16 countries. Small next to global foundry groups, but with margins in the high 20s.",
         money: "Screener shows **₹96cr of net cash** and no borrowings. Management says the company is debt-free, had about ₹120cr of reserves at March 2026, and will pay for the ₹120cr new foundry over two years from its own cash flow, ruling out a rights issue. A shareholder's bonus-issue suggestion will go to the board. Promoters hold **45%**, unchanged over three years. The FY26 annual report shows 1.48% of the company's shares (part of the chairman's holding) as pledged at March 2026, while his April 2026 filing reported no encumbrance; the company has not explained the difference.",
-        watch: ["FY27 volume growth reaching 25–30% and the margin moving toward 28.5–29%.", "Gas prices, and the switch to solar and wind power by December 2026.", "Progress on the 8,500-tonne foundry due by March 2028."],
+        watch: ["FY27 volume growth reaching 25–30% and the margin moving toward 28.5–29%.", "Gas prices, and the switch to solar and wind power by December 2026.", "Progress on the 8,500-tonne foundry due by March 2028.", "An explanation of the chairman's 1.48% pledge."],
         charts: forgingCharts['Steelcast'],
     },
     {
         company: 'AIA Engineering',
-        inShort: ["**A leading global maker of high-chrome grinding media** (the hard alloy balls that crush ore inside the mills of copper, gold and iron-ore mines and cement plants) and of mill liners.", "**Good:** 26–29% margins, ₹4,516cr of net cash and a first large mine order in Chile. **Bad:** volumes are stuck at 60,000–65,000 tonnes a quarter while mine trials drag on, and FY27 capex has jumped to ₹350–400cr, including more than ₹170cr for a corporate house.", "**Verdict: wait.** The price needs more growth than I expect."],
+        inShort: ["**A leading global maker of high-chrome grinding media** (the hard alloy balls that crush ore inside the mills of copper, gold and iron-ore mines and cement plants) and of mill liners.", "**Good:** 26–29% margins, ₹4,516cr of net cash and a first large mine order in Chile. **Bad:** volumes are stuck at 60,000–65,000 tonnes a quarter while mine trials drag on, and FY27 capex has jumped to ₹350–400cr, including more than ₹170cr for a corporate house, and about 30% of pre-tax profit is other income.", "**Verdict: wait.** The price needs more growth than I expect."],
         tagline: "A specialist in high-chrome alloy wear parts (grinding media and mill liners) for mining and cement mills, selling worldwide and pitching a full 'grinding solution' to convert mines from cheaper forged steel balls.",
         revenue: '₹4,420cr (FY26, consolidated)',
         products: [
@@ -106,7 +106,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Happy Forgings',
-        inShort: ["**A Ludhiana maker of heavy forged and machined parts such as crankshafts** for trucks, tractors, construction machines, cars and industrial equipment, in India and abroad.", "**Good:** 30–31% margins, a record quarter with 27% revenue growth, high-teen volume growth guided for FY27 and almost no net debt. **Watch:** ₹350–400cr of capex a year, a new heavy-parts line that only contributes meaningfully from FY29, and exports slowed by freight costs and transit delays.", "**Verdict: wait.** A very good business, but the price needs much more growth than I expect."],
+        inShort: ["**A Ludhiana maker of heavy forged and machined parts such as crankshafts** for trucks, tractors, construction machines, cars and industrial equipment, in India and abroad.", "**Good:** 30–31% margins, a record quarter with 27% revenue growth, high-teen volume growth guided for FY27 and almost no net debt. **Watch:** ₹350–400cr of capex a year, a new heavy-parts line that only contributes meaningfully from FY29, exports slowed by freight costs and transit delays, and its CFO breached the insider-trading code in March.", "**Verdict: wait.** A very good business, but the price needs much more growth than I expect."],
         tagline: "A Punjab forging company (shaping hot steel under huge presses) that machines about 90% of what it forges, supplying crankshafts and other heavy parts for trucks, tractors, cars and industrial machines, and now adding a line for parts of up to 3 tonnes.",
         revenue: '₹1,546cr (FY26, consolidated)',
         products: [
@@ -135,7 +135,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Neetu Yoshi',
-        inShort: ["**An SME-listed maker of railway safety castings**: bogie parts, couplers, yoke supports and track parts for wagon, coach and track makers and Indian Railways.", "**Good:** about a 31% operating margin, a 25% profit margin, no debt, and a new bogie plant that management expects to double revenue to ₹210–220cr in FY27. **Bad:** operating cash flow was only ₹4cr in FY26 against ₹31cr of operating profit, the plant started only on 13 September 2026, five months after the date first given, it has issued ₹27.48cr of warrants, and it depends on Railways spending.", "**Verdict: follow.** Fast-growing and very profitable, and the price asks for a little less than the ~22% a year I expect, but I want to see the late new plant's sales turn into cash first."],
+        inShort: ["**An SME-listed maker of railway safety castings**: bogie parts, couplers, yoke supports and track parts for wagon, coach and track makers and Indian Railways.", "**Good:** about a 31% operating margin, a 25% profit margin, no debt, and a new bogie plant that management says will double revenue to ₹210–220cr in FY27 (I expect nearer ₹150–175cr). **Bad:** FY26 sales missed its ₹110cr promise, the auditor flagged late statutory dues, operating cash flow was only ₹4cr in FY26 against ₹31cr of operating profit, the plant started only on 13 September 2026, five months after the date first given, it has issued ₹27.48cr of warrants, and it depends on Railways spending.", "**Verdict: follow.** Fast-growing and very profitable, and the price asks for a little less than the ~22% a year I expect, but I want to see the late new plant's sales turn into cash first."],
         tagline: "An SME-listed foundry and fabrication company making approved 'Class A' safety parts for Indian Railways' wagons, coaches, locomotives and track. It reports results only half-yearly.",
         revenue: '₹98cr (FY26, standalone)',
         products: [
@@ -163,7 +163,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'MM Forgings',
-        inShort: ["**A Tamil Nadu maker of forged and machined steel parts, mostly for trucks**, with about 36% of sales exported to the US, Europe and South America.", "**Good:** strong US truck demand, volumes set to rise from 78,000 tonnes to over 90,000 in FY27, and two-thirds of sales now machined parts. **Bad:** margins stuck at 17–19%, return on capital down to 9%, net debt about 3.5 times operating profit and working capital at about 30% of sales.", "**Verdict: follow.** Demand is strong, but the price needs more than the ~12% a year I expect, and I want returns and debt to improve before buying."],
+        inShort: ["**A Tamil Nadu maker of forged and machined steel parts, mostly for trucks**, with about 36% of sales exported to the US, Europe and South America.", "**Good:** strong US truck demand in Q1 (though the pre-buy ended in August), volumes set to rise from 78,000 tonnes to over 90,000 in FY27, and two-thirds of sales now machined parts. **Bad:** margins stuck at 17–19%, return on capital down to 9%, net debt about 3.5 times operating profit, working capital at about 30% of sales, two loss-making subsidiaries, and a Q1 profit that included a ₹56cr one-off land gain.", "**Verdict: follow.** Demand is strong, but the price needs more than the ~12% a year I expect, and I want returns and debt to improve before buying."],
         tagline: "A Tamil Nadu forging company that shapes and machines steel parts, mostly for commercial vehicles in India and abroad, with an EV-parts subsidiary (Abhinava Rizel) just starting production.",
         revenue: '₹1,590cr (FY26, consolidated)',
         products: [
@@ -191,7 +191,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Nelcast',
-        inShort: ["**An Indian iron foundry with three plants making castings for trucks and tractors**, with about a third of sales exported.", "**Good:** strong Indian truck and tractor demand, three new large-casting programmes worth over ₹200cr a year at full volume by Q4 FY27, and term debt falling. **Bad:** margins have swung between 5% and 10% by quarter, the new Pedapariya plant ran at only 21% in Q1 FY27 and production fell year on year.", "**Verdict: wait.** I want to see the new programmes ramp up and profit per kilogram recover toward ₹15 first."],
+        inShort: ["**An Indian iron foundry with three plants making castings for trucks and tractors**, with about a third of sales exported.", "**Good:** spare capacity, three new large-casting programmes worth over ₹200cr a year at full volume by Q4 FY27 (a call figure that cannot be checked), and term debt falling. **Bad:** margins have swung between 5% and 10% by quarter, the new Pedapariya plant ran at only 21% in Q1 FY27, profit after tax fell 59%, its call transcripts are not published, and trucks and tractors face a weak second half.", "**Verdict: wait.** I want to see the new programmes ramp up and profit per kilogram recover toward ₹15 first."],
         tagline: "A large Indian foundry making iron castings (parts poured from molten metal) such as axle housings for trucks and front-axle parts for four-wheel-drive tractors, with about a third of sales exported.",
         revenue: '₹1,328cr (FY26, standalone)',
         products: [

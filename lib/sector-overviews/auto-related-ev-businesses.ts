@@ -84,7 +84,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Fiem Industries',
-        inShort: ["**A top-two maker of two-wheeler lamps**, mirrors and plastic parts, selling mostly to TVS and Honda from nine plants.", "**Good:** the margin has held at 13–15% for 11 quarters, return on capital is 29% and it holds about ₹280cr of cash with no rated debt. **Bad:** TVS and Honda are about 59% of sales, the four-wheeler target was cut ten weeks after it was given, and LED lamps have been stuck at 61–64% of lighting for seven quarters.", "**Verdict: own.** The price asks only for the steady two-wheeler growth it already delivers."],
+        inShort: ["**A top-two maker of two-wheeler lamps**, mirrors and plastic parts, selling mostly to TVS and Honda from nine plants.", "**Good:** the margin has held at 13–15% for 11 quarters, return on capital is 29% and it holds about ₹280cr of cash with no rated debt. **Bad:** TVS and Honda are about 59% of sales, the four-wheeler target was cut ten weeks after it was given, LED lamps have been stuck at 61–64% of lighting for seven quarters, and over five years it turned only about 53% of operating profit into operating cash, the lowest in the group.", "**Verdict: own.** The price asks only for the steady two-wheeler growth it already delivers; I want cash conversion to recover in FY27."],
         tagline: "A two-wheeler lamp and mirror maker, supplying LED and conventional lamps, mirrors and plastic parts to Indian bike and scooter makers.",
         revenue: '₹2,816cr (FY26, consolidated)',
         products: [
@@ -107,12 +107,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Uno Minda', note: 'The largest Indian lighting and switch group; broader in cars and in electronics.' }, { name: 'Lumax Industries', note: 'The leading car-lamp maker and third in two-wheeler lamps (ICRA), on Stanley Electric technology; margin about 10% against Fiem’s 14%.' }, { name: 'Varroc Engineering', note: 'Makes two-wheeler lamps in India, mainly for Bajaj.' }],
         position: "**A top-two two-wheeler lamp maker in India** and the main lamp supplier to TVS and Honda; ICRA names it the key two-wheeler lighting rival to Lumax. It earns a higher margin (about 14%) than the larger car-lamp makers.",
         money: "Screener shows **₹214cr of net cash**; the company put its cash at ₹276cr in March (about ₹280cr now), and its ₹66cr of borrowings are mostly leases. It has no rated debt. FY27 capex of about ₹100cr comes from its own cash, and it paid a ₹40 dividend (about 41% of profit) for FY26. FY26 operating cash fell to ₹161cr from ₹233cr because it stopped discounting TVS's and another customer's bills, not because the business weakened. Promoters hold **54.5%**, down from 66.6% in September 2023, including a 4.45% open-market sale in September 2025.",
-        watch: ["Margin back at 14% after the wage rise.", "LED share of lighting moving above 64%.", "Further promoter selling, or more share lost at Honda."],
+        watch: ["Margin back at 14% after the wage rise.", "LED share of lighting moving above 64%.", "Operating cash recovering towards 70% of operating profit now that bill discounting has stopped.", "Further promoter selling, or more share lost at Honda."],
         charts: autoRelatedCharts['Fiem Industries'],
     },
     {
         company: 'Lumax Industries',
-        inShort: ["**India's leading car-lamp maker** and a large two-wheeler lamp supplier, 37.5% owned by Stanley Electric of Japan.", "**Good:** the order book rose to ₹2,500cr, about 90% LED, and Q1 FY27 revenue grew 33%. **Bad:** the Q1 margin was 9.2% against a 10.5–11% guide, FY27 capex has doubled, and the royalty to Stanley was about a third of FY26 profit.", "**Verdict: follow.** The price fits my growth estimate if the margin gets back above 10%; I want to see that first."],
+        inShort: ["**India's leading car-lamp maker** and a large two-wheeler lamp supplier, 37.5% owned by Stanley Electric of Japan.", "**Good:** the order book rose to ₹2,500cr, about 90% LED, and Q1 FY27 revenue grew 33%. **Bad:** the Q1 margin was 9.2% against a 10.5–11% guide, FY27 capex has doubled after FY26's ran well over plan, free cash was negative in three of the last five years, and the royalty to Stanley was about a third of FY26 profit.", "**Verdict: follow.** The price fits my growth estimate if the margin gets back above 10% with debt flat; I want to see that first."],
         tagline: "A car and two-wheeler lamp maker working on Stanley Electric technology, which also sells the model-specific moulds for each new launch.",
         revenue: '₹4,184cr (FY26, consolidated)',
         products: [
@@ -140,7 +140,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Pricol',
-        inShort: ["**India's largest two-wheeler instrument-cluster maker**, also making pumps, brakes and switches and, since 2025, plastic parts bought from the TVS group.", "**Good:** two-wheeler sales grew 28% against the industry's 23%, and it delivered the ₹4,000cr of revenue it promised in 2022. **Bad:** the margin fell to 11.4% and management caps it at 12.5–13%; it is building five plants while splitting off the cluster business, and its auditor resigned in 2025.", "**Verdict: follow.** I want to see the Q2 margin recovery management promises from price indexation."],
+        inShort: ["**India's largest two-wheeler instrument-cluster maker**, also making pumps, brakes and switches and, since 2025, plastic parts bought from the TVS group.", "**Good:** two-wheeler sales grew 28% against the industry's 23%, and it delivered the ₹4,000cr of revenue it promised in 2022. **Bad:** the margin fell to 11.4% and management caps it at 12.5–13%; it is building five plants while splitting off the cluster business, free cash turned negative in FY26, and its auditor resigned in 2025.", "**Verdict: follow.** I want to see the Q2 margin recovery management promises from price indexation, and I would not own it until the auditor's exit is explained."],
         tagline: "Instrument clusters, telematics, pumps and moulded plastics for two-wheeler, truck and tractor makers.",
         revenue: '₹4,041cr (FY26, consolidated)',
         products: [
@@ -166,7 +166,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Minda Corp',
-        inShort: ["**The Spark Minda group's flagship**, making wiring harnesses, locks and keys, instrument clusters and die-cast parts, with 49% of EV-electronics maker Flash Electronics.", "**Good:** ₹12,500cr of lifetime orders won in five quarters and about 24% organic growth in Q1 FY27. **Bad:** the company's own net debt is about ₹1,165–1,370cr, interest doubled in FY26, Q1 profit included a ₹106cr one-off gain, and ₹500cr of new bonds are coming.", "**Verdict: wait.** Good orders, but more debt than the dashboard shows and a price that needs more growth than I expect."],
+        inShort: ["**The Spark Minda group's flagship**, making wiring harnesses, locks and keys, instrument clusters and die-cast parts, with 49% of EV-electronics maker Flash Electronics.", "**Good:** ₹12,500cr of lifetime orders won in five quarters and about 24% organic growth in Q1 FY27. **Bad:** the company's own net debt is about ₹1,165–1,370cr, interest doubled in FY26, Q1 profit included a ₹106cr one-off gain, ₹500cr of new bonds are coming, and 27% of sales go to truck makers just as truck volumes are expected to fall.", "**Verdict: wait.** Good orders, but more debt than the dashboard shows and a price that needs more growth than I expect."],
         tagline: "A multi-product parts maker for two-wheeler, truck and car makers: harnesses, clusters, vehicle locks and die-castings, plus EV electronics through Flash.",
         revenue: '₹6,185cr (FY26, consolidated)',
         products: [
@@ -190,12 +190,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Motherson Sumi Wiring and Dhoot Transmission', note: 'India’s largest harness makers, for cars and for two-wheelers respectively.' }, { name: 'Pricol', note: 'The two-wheeler cluster leader, with 30–35% of the market by volume.' }, { name: 'Uno Minda', note: 'A separate Minda-family group with a broad range of switches, locks and lamps.' }],
         position: "**A leading Indian supplier of two-wheeler harnesses, locks and keys and clusters**, growing faster than its customers; CRISIL upgraded it to AA (Stable) in April 2026.",
         money: "**One figure on this page is wrong in Minda's favour.** Screener shows ₹229cr of net cash because it counts the 49% Flash Electronics stake, bought with debt in January 2025, as if it were cash. The company's own accounts show net debt of about ₹1,165cr (annual report commentary), or ₹1,369cr including leases, and the valuation figures on this page use the company's ₹1,165cr. Interest nearly doubled to ₹123cr in FY26, the auditor flagged ₹312cr of short-term money used for long-term purposes, and in September the board approved up to ₹500cr of bonds. Capex of about ₹400cr a year is funded from cash flow (₹676cr of operating cash in FY26) and debt. It pays about 9% of profit as dividend. Promoters hold **64.8%**, unchanged, with no pledge disclosed.",
-        watch: ["Net debt falling, not rising, after the bond issue.", "Margin reaching 12% in the second half.", "Flash's margin recovering to 16–17%."],
+        watch: ["Net debt falling, not rising, after the bond issue.", "Margin reaching 12% in the second half.", "Flash's margin recovering to 16–17%.", "The cost of the 31 May fire at the Noida plant (about 4–5% of group production)."],
         charts: autoRelatedCharts['Minda Corp'],
     },
     {
         company: 'Varroc Engineering',
-        inShort: ["**A two-wheeler parts maker** of body panels, lamps, engine parts, electronics and electric-drive parts, mostly for Bajaj, with loss-making units in Romania and Italy.", "**Good:** revenue up 30% in Q1 FY27, electric models now 16% of revenue, and ₹3,609cr a year of won business still to start. **Bad:** the margin fell to 8.5%, Bajaj is 44% of revenue, the FY26 audit opinion is qualified and a US$66M arbitration claim has no provision.", "**Verdict: wait.** Profits and the audit need to catch up with the growth before the price makes sense."],
+        inShort: ["**A two-wheeler parts maker** of body panels, lamps, engine parts, electronics and electric-drive parts, mostly for Bajaj, with loss-making units in Romania and Italy.", "**Good:** revenue up 30% in Q1 FY27, electric models now 16% of revenue, and ₹3,609cr a year of won business still to start. **Bad:** the margin fell to 8.5%, Bajaj is 44% of revenue, the Romanian and Italian units still lose money, the FY26 audit opinion is qualified (and the Q1 FY27 review again), and a US$66M arbitration claim has no provision.", "**Verdict: wait.** Profits and the audit need to catch up with the growth before the price makes sense."],
         tagline: "Plastic body parts, lamps, engine parts, EV motors and controllers and electronics, mainly for Indian two- and three-wheeler makers.",
         revenue: '₹8,890cr (FY26, consolidated)',
         products: [
@@ -224,7 +224,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Motherson Sumi Wirin',
-        inShort: ["**India's largest wiring-harness maker** (Motherson Sumi Wiring India), jointly controlled by the Motherson group and Japan's Sumitomo Wiring Systems.", "**Good:** revenue up 37% in Q1 FY27 against 17% for the car industry, a 39% return on capital and a 62% payout. **Bad:** operating profit has been flat for three years, the Q1 margin was 7.6%, and about 70% of materials come from its promoter groups.", "**Verdict: wait.** Excellent returns, but profit per rupee of sales keeps shrinking and the price needs more growth than I expect."],
+        inShort: ["**India's largest wiring-harness maker** (Motherson Sumi Wiring India), jointly controlled by the Motherson group and Japan's Sumitomo Wiring Systems.", "**Good:** revenue up 37% in Q1 FY27 against 17% for the car industry, a 39% return on capital and a 62% payout. **Bad:** operating profit has been flat for three years, the Q1 margin was 7.6%, the new plants' profit has been pushed out again, and about 70% of materials come from its promoter groups.", "**Verdict: wait.** Excellent returns, but profit per rupee of sales keeps shrinking and the price needs more growth than I expect."],
         tagline: "Wiring harnesses, the copper nervous system of a vehicle, for almost every Indian car, two-wheeler, truck and tractor maker.",
         revenue: '₹11,478cr (FY26, standalone; it has no subsidiaries)',
         products: [
@@ -250,7 +250,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sona BLW Precision',
-        inShort: ["**Makes differential gears, EV traction and suspension motors, radars and railway equipment** for global and Indian vehicle makers, with a ₹24,000cr order book.", "**Good:** electric revenue more than doubled in Q1 FY27, the order book is 5.4 times FY26 revenue, and Denso will pay it royalties. **Bad:** the margin has slid from 28% in FY24 to 23%, 49% of its two- and three-wheeler motor business is being sold to Denso, and a family dispute surrounds the trusts behind its promoter.", "**Verdict: wait.** Real technology and orders, but the price leaves no room for the falling margin or the profit shared with Denso."],
+        inShort: ["**Makes differential gears, EV traction and suspension motors, radars and railway equipment** for global and Indian vehicle makers, with a ₹24,000cr order book.", "**Good:** electric revenue more than doubled in Q1 FY27, the order book is 5.4 times FY26 revenue, and Denso will pay it royalties. **Bad:** the margin has slid from 28% in FY24 to 23%, 49% of its two- and three-wheeler motor business is being sold to Denso, the cash cycle stretched to 121 days with the railway business, and a family dispute surrounds the trusts behind its promoter.", "**Verdict: wait.** Real technology and orders, but the price leaves no room for the falling margin or the profit shared with Denso."],
         tagline: "A precision-forged gear and electric-motor maker for global car and EV makers, now also making radars and railway equipment.",
         revenue: '₹4,449cr (FY26, consolidated)',
         products: [
@@ -279,7 +279,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sedemac Mechatronics',
-        inShort: ["**Designs and makes the electronic brains of two- and three-wheeler engines and motors**, led by patented sensorless starter-generator controllers; listed in March 2026.", "**Good:** revenue up 43% in Q1 FY27, a margin of about 20% and little debt; it supplied over 80% of India's FY26 growth in starter-generators. **Bad:** one customer is 77% of revenue, ₹40.9cr of development cost was capitalised, a GST search is open and pre-IPO investors are selling.", "**Verdict: wait.** The best technology here, but a one-customer business at a price that needs more growth than I expect."],
+        inShort: ["**Designs and makes the electronic brains of two- and three-wheeler engines and motors**, led by patented sensorless starter-generator controllers; listed in March 2026.", "**Good:** revenue up 43% in Q1 FY27, a margin of about 20% and little debt; it supplied over 80% of India's FY26 growth in starter-generators. **Bad:** one customer is 77% of revenue, ₹40.9cr of development cost was capitalised, free cash has been negative over five years, a GST search is open and pre-IPO investors are selling.", "**Verdict: wait.** The best technology here, but a one-customer business at a price that needs more growth than I expect."],
         tagline: "Electronic control units for two- and three-wheeler engines, electric motors and generator sets, designed in-house in Pune.",
         revenue: '₹1,058cr (FY26, standalone; it has no subsidiaries)',
         products: [
@@ -307,7 +307,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Dhoot Transmission',
-        inShort: ["**India's largest two- and three-wheeler wiring-harness maker**, also making EV battery packs, controllers, sensors and chargers; controlled by Bain Capital and founder Rahul Dhoot, listed in August 2026.", "**Good:** Q1 FY27 revenue up 50%, EV revenue up 79%, and the IPO turned debt into about ₹1,000cr of net cash. **Bad:** the margin has slipped every year to 15%, Bajaj and TVS are half of revenue, it pays Bain's advisers ₹12cr a year plus about ₹48cr on listing, and the shares above the promoter are pledged.", "**Verdict: pass.** A strong franchise, but the price runs well ahead of its falling margin and governance record."],
+        inShort: ["**India's largest two- and three-wheeler wiring-harness maker**, also making EV battery packs, controllers, sensors and chargers; controlled by Bain Capital and founder Rahul Dhoot, listed in August 2026.", "**Good:** Q1 FY27 revenue up 50%, EV revenue up 79%, and the IPO turned debt into about ₹1,000cr of net cash. **Bad:** the margin has slipped every year to 15%, Bajaj and TVS are half of revenue, it has produced almost no free cash in five years, it pays Bain's advisers ₹12cr a year plus about ₹48cr on listing, and the shares above the promoter are pledged.", "**Verdict: pass.** A strong franchise, but the price runs well ahead of its falling margin and governance record."],
         tagline: "Wiring harnesses and EV electricals (battery packs, controllers, chargers, switches and sensors) for two- and three-wheeler makers.",
         revenue: '₹4,525cr (FY26, consolidated)',
         products: [
@@ -335,7 +335,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Divgi Torqtransfer',
-        inShort: ["**Designs and makes transfer cases**, the gearboxes that drive all four wheels of 4x4 SUVs and pickups, plus EV transmissions and precision parts exported to global suppliers.", "**Good:** debt-free with ₹293cr of net cash, a 62–64% gross margin on its own designs, and Q1 FY27 revenue nearly doubled. **Bad:** the jump rests on a one-off Indonesian pickup order, EV revenue fell 20% as a new transmission slipped, and automatic transmissions moved a year later.", "**Verdict: pass.** FY27 is an exceptional year, and the price already assumes the slipping EV and automatic programmes arrive."],
+        inShort: ["**Designs and makes transfer cases**, the gearboxes that drive all four wheels of 4x4 SUVs and pickups, plus EV transmissions and precision parts exported to global suppliers.", "**Good:** debt-free with ₹293cr of net cash, a 62–64% gross margin on its own designs, and Q1 FY27 revenue nearly doubled. **Bad:** the jump rests on a one-off Indonesian pickup order, EV revenue fell 20% as a new transmission slipped, the EV plant runs at only 25–30%, and automatic transmissions moved a year later.", "**Verdict: pass.** FY27 is an exceptional year, and the price already assumes the slipping EV and automatic programmes arrive."],
         tagline: "A drivetrain engineering company: 4x4 transfer cases, EV gearboxes, manual-gearbox parts and export components, on its own designs.",
         revenue: '₹353cr (FY26, standalone)',
         products: [

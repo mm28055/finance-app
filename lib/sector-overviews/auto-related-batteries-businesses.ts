@@ -52,7 +52,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Studds Accessories',
-        inShort: ["**India's largest two-wheeler helmet maker**, with about a quarter of the market, a mass brand (Studds), a premium brand (SMK) and exports to more than 70 countries.", "**Good:** debt-free, a 23% return on capital, and a new plant adding a third to capacity from October, paid for from its own cash. **Bad:** a plastics price spike cut the Q1 FY27 margin from 20% to 11.5%, weeks after management promised similar margins, and stock days have risen to 107.", "**Verdict: follow.** The price fits my growth estimate if the margin recovers as promised; I want to see Q2 first."],
+        inShort: ["**India's largest two-wheeler helmet maker**, with about a quarter of the market, a mass brand (Studds), a premium brand (SMK) and exports to more than 70 countries.", "**Good:** debt-free, a 23% return on capital, and a new plant adding a third to capacity from October, paid for from its own cash. **Bad:** a plastics price spike cut the Q1 FY27 margin from 20% to 11.5%, weeks after management promised similar margins, and stock days have risen to 107, with the auditor flagging inventory valuation.", "**Verdict: follow.** The price fits my growth estimate if the margin recovers as promised; I want to see Q2 first, and stock days starting to fall."],
         tagline: "India's biggest helmet maker, selling Studds and SMK helmets through dealers, to bike makers and abroad.",
         revenue: '₹634cr (FY26, consolidated)',
         products: [
@@ -84,7 +84,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Amara Raja Energy',
-        inShort: ["**India's second-largest lead-acid battery maker (Amaron)**, selling batteries for cars, bikes, inverters, telecom towers and industry, and building a lithium pack, storage and cell business.", "**Good:** Q1 FY27 revenue rose 24% on strong demand from vehicle makers, replacement buyers and homes. **Bad:** the margin has slid from 14% to 9.6%, free cash turned negative in FY26, the lithium arm loses money without a technology partner, and promoter-group firms sold it about ₹890cr of goods and services in FY26.", "**Verdict: follow.** The price asks little, but I want to see the margin back above 11% first."],
+        inShort: ["**India's second-largest lead-acid battery maker (Amaron)**, selling batteries for cars, bikes, inverters, telecom towers and industry, and building a lithium pack, storage and cell business.", "**Good:** Q1 FY27 revenue rose 24% on strong demand from vehicle makers, replacement buyers and homes. **Bad:** the margin has slid from 14% to 9.6%, free cash turned negative in FY26, the lithium arm loses money without a technology partner, borrowings rose to ₹406cr from ₹157cr, and promoter-group firms sold it about ₹890cr of goods and services in FY26, with some land still in one's name.", "**Verdict: follow.** The price asks for about what I expect, with no cushion; I want to see the margin back above 11% and the storage plant winning orders first."],
         tagline: "Amaron batteries for vehicles, homes and industry, plus a young lithium pack, storage and cell business.",
         revenue: '₹13,814cr (FY26, consolidated)',
         products: [
@@ -109,12 +109,12 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**India's second-largest lead-acid battery maker**, one half of a duopoly with Exide (CRISIL), and above 60% of telecom batteries counting lead and lithium together.",
         money: "Net cash of about **₹317cr** (Screener), with borrowings of ₹406cr at March, up from ₹157cr two years earlier; CRISIL rates it AA+/Stable. Free cash flow was **−₹220cr** in FY26, the first negative year since FY22, as spending rose. FY27 capex is ₹1,700cr (₹450cr spent in Q1), and management expects ‘at least ₹700–800cr’ a year of cash after dividends to fund new energy before it needs outside money. It has also committed ₹495.5cr to SIPCOT for leased land. No equity raised. Promoters hold **32.86%**, up from 28.06% in September 2023.",
-        watch: ["Margin back above 11% by Q3 FY27 as price rises catch up.", "The 5 GWh storage plant starting by end-2026 with orders.", "New-energy losses below about ₹200cr a year; related-party buying."],
+        watch: ["Margin back above 11% by Q3 FY27 as price rises catch up.", "The 5 GWh storage plant starting by end-2026 with orders.", "New-energy losses below about ₹200cr a year; related-party buying and the land titles."],
         charts: autoRelatedCharts['Amara Raja Energy'],
     },
     {
         company: 'Exide Industries',
-        inShort: ["**India's largest lead-acid battery maker**, for vehicles, inverters, solar, railways, telecom and industry, with its own lead recycling and a new 6 GWh lithium-cell plant in Bengaluru.", "**Good:** the best-run lead-acid business here, growing 17.6% in Q1 FY27 with a rising 12.4% standalone margin, and rated AAA. **Watch:** about ₹4,900cr is in a cell subsidiary that lost ₹248cr in FY26 and has no disclosed customer orders, so group return on equity is only about 6%.", "**Verdict: wait.** The price already pays for lithium cells that have not yet sold."],
+        inShort: ["**India's largest lead-acid battery maker**, for vehicles, inverters, solar, railways, telecom and industry, with its own lead recycling and a new 6 GWh lithium-cell plant in Bengaluru.", "**Good:** the best-run lead-acid business here, growing 17.6% in Q1 FY27 with a rising 12.4% standalone margin, and rated AAA. **Watch:** about ₹4,900cr is in a cell subsidiary that lost ₹248cr in FY26, has no disclosed customer orders and carries a ₹3,000cr Exide guarantee on its loans, so group return on equity is only about 6%.", "**Verdict: wait.** The price already pays for lithium cells that have not yet sold."],
         tagline: "India's leading battery maker for vehicles, homes and industry, now starting lithium-ion cell production.",
         revenue: '₹17,995cr (FY26, consolidated)',
         products: [

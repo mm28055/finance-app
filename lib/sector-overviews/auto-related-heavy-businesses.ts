@@ -82,12 +82,12 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**A dominant world share in linkages for tractors under 70 horsepower**, a single-digit share above 70 horsepower, and sole or main supplier of the parts it makes for the top three construction-machine makers (company).",
         money: "Net cash of **₹97cr** on Screener's figures; the company puts net cash at ₹160cr in March and ₹190cr in June, and ICRA rates it AA−/Stable. FY26 operating cash was ₹174cr and free cash about ₹144cr. It paid out 108% of FY26 profit, including a ₹101cr special dividend after a planned acquisition was dropped. Capex stays at 2.5–3.5% of revenue, funded from cash. No equity raised since listing. Promoters hold **65.9%**, unchanged over three years.",
-        watch: ["Q2 FY27 revenue in line with Q1, as guided.", "Large-tractor orders turning in CY2027.", "Whether the net cash goes to a sensible acquisition or back to shareholders."],
+        watch: ["Q2 FY27 revenue in line with Q1, as guided.", "The margin as it drifts back towards the 20% the company calls normal, and the largest customer's share of revenue.", "Large-tractor orders turning in CY2027.", "Whether the net cash goes to a sensible acquisition or back to shareholders."],
         charts: autoRelatedCharts['Uniparts India'],
     },
     {
         company: 'Auto.Axle',
-        inShort: ["**India's largest independent maker of rear drive axles for heavy trucks and buses**, jointly owned by Cummins's Meritor and Bharat Forge, with Ashok Leyland as its main customer.", "**Good:** about ₹385cr of net cash, a 22% return on capital, and a margin that held at 11.6% through a 22% fall in quarterly sales. **Bad:** FY26 sales were still below FY23, Ashok Leyland gives 50–60% of revenue, and co-promoter Bharat Forge now owns a rival axle maker.", "**Verdict: follow.** Cheap and cash-rich, but I want to see the margin hold through the second-half truck slowdown."],
+        inShort: ["**India's largest independent maker of rear drive axles for heavy trucks and buses**, jointly owned by Cummins's Meritor and Bharat Forge, with Ashok Leyland as its main customer.", "**Good:** about ₹385cr of net cash, a 22% return on capital, and a margin that held at 11.6% through a 22% fall in quarterly sales. **Bad:** FY26 sales were still below FY23, Ashok Leyland gives 50–60% of revenue, co-promoter Bharat Forge now owns a rival axle maker, and ₹97.5cr a year of fees to a joint venture of its owners is more than half its net profit.", "**Verdict: follow.** Cheap and cash-rich, but I want to see the margin hold through the second-half truck slowdown."],
         tagline: "India's largest independent maker of heavy-truck rear axles and a leading truck brake maker, run as a joint venture of Meritor (Cummins) and Bharat Forge.",
         revenue: '₹2,178cr (FY26, standalone)',
         products: [
@@ -114,7 +114,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Carraro India',
-        inShort: ["**Axles and transmissions for tractors and construction machines**, from two plants near Pune; the Indian arm of Italy's Carraro group, which owns 68.77% and buys about a third of its output.", "**Good:** 60–65% of non-captive construction-machine transmissions, share gains in four-wheel-drive tractors and a 29% return on capital. **Bad:** the core margin fell to about 8% in Q1 FY27, fees to the parent group reached about 44% of FY26 profit, and ₹210cr of income tax is in dispute.", "**Verdict: follow.** A real 4WD growth story; I want a clean margin back above 10% first."],
+        inShort: ["**Axles and transmissions for tractors and construction machines**, from two plants near Pune; the Indian arm of Italy's Carraro group, which owns 68.77% and buys about a third of its output.", "**Good:** 60–65% of non-captive construction-machine transmissions, share gains in four-wheel-drive tractors and a 29% return on capital. **Bad:** the core margin fell to about 8% in Q1 FY27 and growth guidance was cut to ‘up to 10%’, fees to the parent group reached about 44% of FY26 profit, and ₹210cr of income tax is in dispute.", "**Verdict: follow.** A real 4WD growth story; I want a clean margin back above 10% first, with the tax dispute and parent fees contained."],
         tagline: "Maker of drivelines (axles and transmissions) and gears for Indian tractors and backhoe loaders, and for its Italian parent's export customers.",
         revenue: '₹2,255cr (FY26, consolidated)',
         products: [
@@ -145,7 +145,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'ZF Comm Vehic Contr',
-        inShort: ["**India's dominant maker of truck and bus air brakes** (formerly WABCO India), with about 80% of the market, plus stability control, compressors, gearbox-automation parts, and engineering services for its German parent ZF.", "**Good:** about ₹2,175cr of net cash, and nominations at most truck makers for the stability control that becomes compulsory on trucks over 6 tonnes from October 2027. **Bad:** the Q1 FY27 margin fell to 13% on aluminium, about a quarter of pre-tax profit is interest on cash, and ZF has cut its stake from 75% to 60%.", "**Verdict: wait.** The best business in the group, but the price needs far more growth than I expect."],
+        inShort: ["**India's dominant maker of truck and bus air brakes** (formerly WABCO India), with about 80% of the market, plus stability control, compressors, gearbox-automation parts, and engineering services for its German parent ZF.", "**Good:** about ₹2,175cr of net cash, and nominations at most truck makers for the stability control that becomes compulsory on trucks over 6 tonnes from October 2027. **Bad:** the Q1 FY27 margin fell to 13% on aluminium, about a quarter of pre-tax profit is interest on cash, and ZF has cut its stake from 75% to 60%.", "**Verdict: wait.** The best business in the group, but the price needs far more growth than I expect; it would need to fall by about half to fit."],
         tagline: "India's leading maker of air-braking and vehicle-control systems for trucks, buses, tractors and construction machines, and an export and engineering centre for the ZF group.",
         revenue: '₹4,119cr (FY26, consolidated)',
         products: [
@@ -237,7 +237,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Kross',
-        inShort: ["**A Jamshedpur maker of forged and machined truck and tractor parts and complete trailer axles and suspensions**, now adding tipping jacks, an axle-beam extrusion line and a seamless-tube plant; listed in September 2024.", "**Good:** revenue rose 32% in Q1 FY27 on trailer-axle volume up 34%, and tractors and exports are growing. **Bad:** FY26 free cash was −₹72cr, its cash cycle has doubled to 153 days, the 12.2% margin missed its 14–15% hope, and its auditor found statements to banks that did not match its books.", "**Verdict: wait.** Fast growth that consumes cash; I want margins, cash flow and clean bank reconciliations first."],
+        inShort: ["**A Jamshedpur maker of forged and machined truck and tractor parts and complete trailer axles and suspensions**, now adding tipping jacks, an axle-beam extrusion line and a seamless-tube plant; listed in September 2024.", "**Good:** revenue rose 32% in Q1 FY27 on trailer-axle volume up 34%, and tractors and exports are growing. **Bad:** FY26 free cash was −₹72cr, its cash cycle has doubled to 153 days, the 12.2% margin missed its 14–15% hope, its auditor found statements to banks that did not match its books, and a planned preferential issue would dilute holders by about 4.4%.", "**Verdict: wait.** Fast growth that consumes cash; I want margins, cash flow and clean bank reconciliations first."],
         tagline: "An integrated forger, caster and machinist of truck and tractor driveline parts that also sells complete trailer axles and suspensions.",
         revenue: '₹673cr (FY26, standalone)',
         products: [
@@ -263,12 +263,12 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**One of the top three Indian trailer-axle makers** (India Ratings); management calls itself ‘a #2 player’.",
         money: "Net debt of **₹23cr** on Screener's figures; borrowings were ₹53.7cr in March plus ₹34.9cr of bills discounted with recourse, and cash fell to ₹25.4cr as the ₹250cr raised at the September 2024 listing was spent. India Ratings rates it A/Stable and expects free cash to stay negative in FY27. FY26 capex was ₹100cr and free cash −₹72cr; the seamless-tube plant is funded partly by a ~₹100cr term loan drawn as machines arrive, with ₹20–25cr of other capex in FY27. No dividend. Its auditor noted that quarterly statements to banks did not agree with the books, a gap seen for eight quarters. Promoters hold **68.57%**, up slightly from 67.7% at listing.",
-        watch: ["Margin back to 13–14% after truck-maker settlements.", "Receivable and stock days falling.", "Seamless-tube commissioning in Q4 FY27."],
+        watch: ["Margin back to 13–14% after truck-maker settlements.", "Receivable and stock days falling.", "Quarterly statements to banks agreeing with the books.", "Seamless-tube commissioning in Q4 FY27."],
         charts: autoRelatedCharts['Kross'],
     },
     {
         company: 'Frontier Springs',
-        inShort: ["**A Kanpur maker of coil springs, air springs and forgings for Indian Railways'** wagons, coaches and locomotives, including Vande Bharat trains, with about 40% of the railways' coil-spring demand by its own figure.", "**Good:** revenue rose 2.4 times in two years, the margin went from 16% to 27% and return on capital to 51%, with little debt. **Bad:** revenue has been flat at ₹75–83cr a quarter for five quarters, Q1 FY27 profit fell 18%, several promises slipped, and it has a history of not co-operating with CRISIL.", "**Verdict: pass.** A high-return railway supplier whose growth has stalled, priced as if it will resume."],
+        inShort: ["**A Kanpur maker of coil springs, air springs and forgings for Indian Railways'** wagons, coaches and locomotives, including Vande Bharat trains, with about 40% of the railways' coil-spring demand by its own figure.", "**Good:** revenue rose 2.4 times in two years, the margin went from 16% to 27% and return on capital to 51%, with little debt. **Bad:** revenue has been flat at ₹75–83cr a quarter for five quarters, Q1 FY27 profit fell 18%, the margin is guided down to 23–24%, several promises slipped, and it has a history of not co-operating with CRISIL.", "**Verdict: pass.** A high-return railway supplier whose growth has stalled, priced as if it will resume."],
         tagline: "A railway spring maker: coil springs, air springs and forged parts for Indian Railways, sold by tender.",
         revenue: '₹322cr (FY26, standalone)',
         products: [

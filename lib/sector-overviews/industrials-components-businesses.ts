@@ -55,7 +55,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Pitti Engineering',
-        inShort: ["**Makes the magnetic core of electric motors and generators**: electrical-steel laminations, finished stator and rotor assemblies, castings and machined parts for Wabtec, Siemens, Cummins, ABB and Nidec.", "**Good:** designed into customers' motors, steel costs passed on, and assembly volumes up 37% in a year. **Bad:** ₹664cr of net debt and heavy spending on land and buildings have pulled returns on capital down from 19% to about 15%.", "**Verdict: own.** A qualified supplier to growing motor and generator markets, with a clear path to about ₹2,500cr of sales in FY28."],
+        inShort: ["**Makes the magnetic core of electric motors and generators**: electrical-steel laminations, finished stator and rotor assemblies, castings and machined parts for Wabtec, Siemens, Cummins, ABB and Nidec.", "**Good:** designed into customers' motors, steel costs passed on, and assembly volumes up 37% in a year. **Bad:** ₹664cr of net debt and heavy spending on land and buildings have pulled returns on capital down from 19% to about 15%, and net leverage sits above the level Ind-Ra says could trigger a downgrade while a mostly debt-funded ₹290cr plant is built.", "**Verdict: own.** A qualified supplier to growing motor and generator markets, with a clear path to about ₹2,500cr of sales in FY28."],
         tagline: "India's leading maker of motor and generator laminations, moving up to complete stator and rotor assemblies with its own castings and machining.",
         revenue: '₹1,913cr (FY26, consolidated)',
         products: [
@@ -86,7 +86,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Gala Precision Engi.',
-        inShort: ["**Makes disc springs, coil springs and high-strength fasteners** for wind turbines and industrial machinery, sold directly to Vestas, Siemens, ABB, Schaeffler and John Deere.", "**Good:** hard-won vendor approvals, a firm order book up 30–40% and ₹12cr of net cash. **Watch:** working capital of about 180 days by its own count (294 on Screener's), an income-tax search in August, and the Chennai plant's second phase and the Wada expansion, both running late.", "**Verdict: own.** A small, well-placed supplier taking share from European makers and guiding to 20–25% growth a year."],
+        inShort: ["**Makes disc springs, coil springs and high-strength fasteners** for wind turbines and industrial machinery, sold directly to Vestas, Siemens, ABB, Schaeffler and John Deere.", "**Good:** hard-won vendor approvals, a firm order book up 30–40% and ₹12cr of net cash. **Watch:** working capital of about 180 days by its own count (294 on Screener's), negative free cash in FY25 and FY26, an income-tax search in August, a Nord-Lock patent suit, and the Chennai plant's second phase and the Wada expansion, both running late.", "**Verdict: own.** A small, well-placed supplier taking share from European makers and guiding to 20–25% growth a year."],
         tagline: "An Indian maker of safety-critical springs and fasteners, taking share from European suppliers in wind energy and industrial machinery.",
         revenue: '₹314cr (FY26, consolidated)',
         products: [
@@ -112,12 +112,12 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**A small but growing supplier on global makers' approved-vendor lists**, taking share from long-established European producers; it recently displaced a German supplier of seat-belt retractor springs.",
         money: "Net cash of ₹12cr at March 2026 (Screener). The next expansion, on 10.15 acres next to the Wada plant, will cost about ₹40–45cr, mostly in FY28; the land deal is only at the MoU stage. Working capital is about 180 days by the company's count and 294 on Screener's, and KPMG has been hired to reduce it; operating cash was only ₹10cr in FY26. The income-tax department searched its office and the promoter's home on 18 August 2026; the company said on 24 August that the proceedings had ended with no material impact on operations, and any demand is not yet known. Nord-Lock has sued it over its Gallock washers (₹2cr claimed so far). Promoters hold **54%**, down slightly from 55% in September 2024.",
-        watch: ["The KPMG working-capital plan, whether cash flow improves, and any demand from the income-tax search.", "Chennai Phase 2 and the Wada land deal, both behind schedule.", "Margin getting into the guided 17–19% range."],
+        watch: ["The KPMG working-capital plan, whether cash flow improves, and any demand from the income-tax search.", "Chennai Phase 2 and the Wada land deal, both behind schedule.", "Margin getting into the guided 17–19% range.", "The Nord-Lock patent suit over its Gallock washers."],
         charts: industrialsComponentsCharts['Gala Precision Engi.'],
     },
     {
         company: 'KRN Heat Exchan',
-        inShort: ["**KRN Heat Exchanger and Refrigeration makes fin-and-tube coils** for commercial air-conditioning, data centres and refrigeration, and has added bus air-conditioning and railway products.", "**Good:** revenue doubled in Q1 FY27, data-centre sales tripled and copper and aluminium costs pass straight to customers. **Watch:** ₹700cr of equity raised in about 18 months to fund growth and stock, no published order book, and Screener has only three years of figures.", "**Verdict: follow.** The data-centre growth is real, but the price assumes it all goes right."],
+        inShort: ["**KRN Heat Exchanger and Refrigeration makes fin-and-tube coils** for commercial air-conditioning, data centres and refrigeration, and has added bus air-conditioning and railway products.", "**Good:** revenue doubled in Q1 FY27, data-centre sales tripled and copper and aluminium costs pass straight to customers. **Watch:** free cash of −₹312cr in FY26, ₹700cr of equity raised in about 18 months to fund growth and stock, an auditor's flag on how it books revenue, no published order book, and Screener has only three years of figures.", "**Verdict: follow.** The data-centre growth is real, but the price assumes it all goes right."],
         tagline: "A Rajasthan maker of heat exchangers for commercial and industrial cooling, selling only to equipment makers in India and abroad.",
         revenue: '₹600cr (FY26, consolidated)',
         products: [
@@ -136,12 +136,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Modine, Direct Coil, Can Coil', note: 'North American coil makers; bigger, but short of capacity for data-centre demand.' }, { name: "Equipment makers' own coil lines", note: 'Large AC makers can make coils in-house; KRN sells to those that outsource.' }],
         position: "**India's largest independent maker of commercial heat exchangers**, by management's own account.",
         money: "Net debt of **₹141cr** (Screener, March 2026), before a ₹350cr share placement (QIP) closed after the year-end; that followed a ₹350cr IPO in 2024. Cash from operations was minus ₹114cr in FY26 as stock piled up. A Bangalore plant and new Rajasthan land for bus and rail work are planned. The standalone auditor flagged revenue recognition (fast growth, a new trading activity and sales to its own subsidiary), it carries ₹29.4cr of export obligations under duty-free import schemes, and the incentives assumed in its margin target are not yet booked. Promoters hold **66%**, down from 71% in September 2024 because of the new shares.",
-        watch: ["Vertiv samples turning into volume orders.", "Stock and receivables falling back so cash flow turns positive.", "Micro-channel launch within a year."],
+        watch: ["Vertiv samples turning into volume orders.", "Stock and receivables falling back so cash flow turns positive.", "Micro-channel launch within a year.", "The auditor's revenue-recognition flag (trading sales and sales to its own subsidiary), and any further promoter selling."],
         charts: industrialsComponentsCharts["KRN Heat Exchan"],
     },
     {
         company: 'Omnitech Engineering',
-        inShort: ["**A Rajkot precision machining company** that makes components and sub-assemblies to five-micron tolerances, mainly for US oilfield-services firms.", "**Good:** a margin around 30%, rare for machining, and an order book above ₹3,000cr. **Watch:** energy is half of revenue, customers own the designs, cash flow has been negative, and Screener has only four years of figures.", "**Verdict: follow.** A strong order book, but it depends on oilfield customers and the price assumes smooth execution."],
+        inShort: ["**A Rajkot precision machining company** that makes components and sub-assemblies to five-micron tolerances, mainly for US oilfield-services firms.", "**Good:** a margin around 30%, rare for machining, and an order book above ₹3,000cr. **Watch:** the margin slid from 38% to 30% in three quarters and Q1 profit leaned on a depreciation change, energy is half of revenue, customers own the designs, cash flow has been negative, and Screener has only four years of figures.", "**Verdict: follow.** A strong order book, but it depends on oilfield customers and the price assumes smooth execution."],
         tagline: "An export-focused contract manufacturer of high-precision machined parts and assemblies for energy, automation and industrial equipment makers.",
         revenue: '₹511cr (FY26, consolidated)',
         products: [
@@ -164,7 +164,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Chinese and other low-cost machine shops', note: 'The suppliers customers are moving away from; still cheaper on simpler parts.' }, { name: 'Azad Engineering and other Indian precision makers', note: 'Compete for energy and aerospace machining work from global customers.' }, { name: "Customers' own machining", note: 'Large OEMs can bring work back in-house.' }],
         position: "**A niche, export-led precision machinist** whose margins are high for its industry because it takes on difficult, low-volume, high-mix work.",
         money: "Net debt of about **₹270cr** (Screener, March 2026); the company reports ₹390cr of debt and ₹134cr of cash in June 2026. It listed in 2026 and used ₹50cr of IPO money to repay debt. Cash from operations was negative in FY25 and roughly zero in FY26 as working capital grew, though days fell from 294 to 233 in Q1 FY27. It switched to straight-line depreciation this year, which cut the Q1 charge from ₹13.5cr to ₹6.3cr. Its borrowings carry personal guarantees of directors and a relative, and the auditor could not confirm the edit log of its stock-records software. Promoters hold **74%**.",
-        watch: ["New Chhapara plants starting in FY28.", "Working capital falling further and cash flow turning positive.", "Aerospace approvals and less reliance on energy."],
+        watch: ["New Chhapara plants starting in FY28.", "Working capital falling further and cash flow turning positive.", "Aerospace approvals and less reliance on energy.", "Margin holding at 30% without help from the depreciation change."],
         charts: industrialsComponentsCharts["Omnitech Engineering"],
     },
     {
@@ -195,7 +195,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Patil Automation',
-        inShort: ["**Builds complete robotic production lines** in Pune for car body welding, electric-vehicle and engine assembly, ammunition making and battery packs.", "**Good:** fast growth, a net margin of about 10% and a new plant that roughly doubles capacity. **Bad:** each order is a one-off project, the order book covers less than half of this year's target, and cash is tied up in unfinished work.", "**Verdict: wait.** Guidance needs orders it has not yet won."],
+        inShort: ["**Builds complete robotic production lines** in Pune for car body welding, electric-vehicle and engine assembly, ammunition making and battery packs.", "**Good:** fast growth, a net margin of about 10% and a new plant that roughly doubles capacity. **Bad:** each order is a one-off project, the order book covers less than half of this year's target, cash is tied up in unfinished work, rent to its MD and a director is about 29% of standalone profit, and it is changing how its IPO money is used.", "**Verdict: wait.** Guidance needs orders it has not yet won."],
         tagline: "A Pune maker of turnkey robotic and automated production lines, mostly for car and electric-vehicle makers, with growing defence and battery work.",
         revenue: '₹150cr (FY26, standalone)',
         products: [
@@ -219,12 +219,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Wipro PARI', note: 'The largest Indian rival in assembly lines, much bigger than Patil.' }, { name: 'Comau, Jendamark, Faith Automation', note: 'Specialists in parts of the market: Jendamark in assembly lines, Faith in spot welding; Comau is Italian.' }, { name: 'Chinese line builders', note: 'Patil says it is 20-25% cheaper using Indian parts.' }],
         position: "**One of 10-15 line builders in its niche**, most of them smaller; it claims to be unusual in covering cars, electric vehicles, defence, batteries and heavy welding under one roof.",
         money: "Net debt of **₹6cr** (Screener): ₹19cr of borrowings against ₹13cr of cash; management says it has no long-term debt. About ₹18.5cr of IPO money was still unspent in May 2026, and ₹57cr of work in progress (a third of a year's sales) sits on the balance sheet. Operating cash flow was -₹4cr in FY26. In September it proposed changing the use of the unspent IPO money. Related-party costs are large: ₹4.64cr of factory rent to the MD and a director (about 29% of standalone profit), ₹3.5cr of their salaries and about ₹4.5cr of services from relatives' firms. Promoters hold **69.3%**, unchanged since listing.",
-        watch: ["New orders large enough to reach the ₹260-270cr target.", "Work in progress and operating cash flow.", "The decision on a new plant for FY28."],
+        watch: ["New orders large enough to reach the ₹260-270cr target.", "Work in progress and operating cash flow.", "The decision on a new plant for FY28, and the details of the change in use of IPO money."],
         charts: industrialsComponentsCharts['Patil Automation'],
     },
     {
         company: 'Subros',
-        inShort: ["**India's biggest maker of car and truck air-conditioners**, including its own compressors, built on Denso technology and sold mostly to Maruti Suzuki.", "**Good:** 41% of the car and truck AC market, and a new government rule that makes truck makers fit air-conditioning. **Bad:** 82% of sales go to related parties, chiefly Maruti, margins are about 8-9%, and cost increases reach prices only with a delay.", "**Verdict: pass.** A solid supplier, but its biggest customer sets its margin."],
+        inShort: ["**India's biggest maker of car and truck air-conditioners**, including its own compressors, built on Denso technology and sold mostly to Maruti Suzuki.", "**Good:** 41% of the car and truck AC market, and a new government rule that makes truck makers fit air-conditioning. **Bad:** 82% of sales go to related parties, chiefly Maruti, margins are about 8-9%, cost increases reach prices only with a delay, and in Q1 FY27 operating profit fell while revenue rose, so it withdrew its revenue guidance.", "**Verdict: pass.** A solid supplier, but its biggest customer sets its margin."],
         tagline: "Car, truck, bus and railway air-conditioning systems and compressors, part-owned by Denso and Suzuki, with Maruti Suzuki as the main customer.",
         revenue: '₹3,756cr (FY26, consolidated)',
         products: [
@@ -253,7 +253,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Vilas Transcore',
-        inShort: ["**Makes the magnetic core that sits inside an electricity transformer**, from imported special steel, and is adding radiators and copper windings to sell more to the same transformer makers.", "**Good:** tripled capacity into a transformer shortage, and has net cash. **Bad:** it is a price-taker on imported steel, earns thin margins and has turned little of its profit into cash for two years.", "**Verdict: pass.** A capable supplier, but its customers and trade rules decide its margin."],
+        inShort: ["**Makes the magnetic core that sits inside an electricity transformer**, from imported special steel, and is adding radiators and copper windings to sell more to the same transformer makers.", "**Good:** tripled capacity into a transformer shortage, and has net cash. **Bad:** it is a price-taker on imported steel, earns thin margins, cut its FY27 revenue guide within four months, buys ₹35cr a year from its MD's own company and has turned little of its profit into cash for two years.", "**Verdict: pass.** A capable supplier, but its customers and trade rules decide its margin."],
         tagline: "A Vadodara maker of transformer cores from grain-oriented electrical steel, adding radiators, nanocrystalline cores, copper conductors and bushings.",
         revenue: '₹461cr (FY26, standalone)',
         products: [
@@ -278,7 +278,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Everest Kanto Cylind',
-        inShort: ["**India's leading maker of high-pressure seamless gas cylinders**, for CNG vehicles, city-gas stations and industrial gases, with plants in India, the US, Dubai and now Egypt.", "**Good:** CNG demand is strong and the Indian business earned a 16% margin in FY26. **Bad:** margin fell from 16.2% to 11.1% in one quarter after being called sustainable, guidance was dropped, Q1 FY27 revenue fell 10%, and FY26 profit was lifted by about ₹30cr of deferred-tax credit and a ₹12.6cr US refund.", "**Verdict: pass.** A steel cylinder is close to a commodity, and a ₹351cr GST demand hangs over a company worth about ₹1,240cr."],
+        inShort: ["**India's leading maker of high-pressure seamless gas cylinders**, for CNG vehicles, city-gas stations and industrial gases, with plants in India, the US, Dubai and now Egypt.", "**Good:** CNG demand is strong and the Indian business earned a 16% margin in FY26. **Bad:** margin fell from 16.2% to 11.1% in one quarter after being called sustainable, guidance was dropped, Q1 FY27 revenue fell 10%, FY26 profit was lifted by about ₹30cr of deferred-tax credit and a ₹12.6cr US refund, and borrowings rose to ₹267cr from ₹41cr two years ago.", "**Verdict: pass.** A steel cylinder is close to a commodity, and a ₹351cr GST demand hangs over a company worth about ₹1,240cr."],
         tagline: "Seamless steel and composite high-pressure cylinders and cascades for compressed natural gas, industrial gases and specialist uses.",
         revenue: '₹1,471cr (FY26, consolidated)',
         products: [

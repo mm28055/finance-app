@@ -56,7 +56,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Zensar Technologies',
-        inShort: ["**The RPG group's mid-size IT services firm**, building and running software, cloud and data systems for banks, manufacturers and tech companies, two-thirds of it in the US.", "**Good:** ₹2,774cr of net cash, an AA+ rating, attrition below 10% and a $210M bank deal that reaches full speed from Q3. **Bad:** organic dollar growth has been 1–3% a year for three years, and tech-client revenue fell 28%.", "**Verdict: own.** A cash-rich income holding whose price asks for no more growth than I expect."],
+        inShort: ["**The RPG group's mid-size IT services firm**, building and running software, cloud and data systems for banks, manufacturers and tech companies, two-thirds of it in the US.", "**Good:** ₹2,774cr of net cash, an AA+ rating, attrition below 10% and a $210M bank deal that reaches full speed from Q3. **Bad:** organic dollar growth has been 1–3% a year for three years, tech-client revenue fell 28%, Q1 bookings fell to a multi-quarter low of $149.2M, and Q1's margin was held up by a one-off bonus reversal.", "**Verdict: own.** A cash-rich income holding whose price asks for no more growth than I expect."],
         tagline: "A mid-size IT services company of the RPG group, now half a banking specialist, with a large onsite presence in the US, Europe and South Africa.",
         revenue: '₹5,687cr (FY26, consolidated)',
         products: [
@@ -84,7 +84,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'InfoBeans Technologies',
-        inShort: ["**An Indore-based software engineering firm** of about 1,800 people serving 50 large enterprises in the US and Germany, with Salesforce and ServiceNow practices and a push into AI-assisted development.", "**Good:** revenue up 37% in Q1 (about 20% in dollars), return on capital back to 29%, no debt and 94% of clients returning. **Watch:** promoters are selling, its slides count receivables as cash, and margins are being stepped down to fund AI and US sales.", "**Verdict: own.** The one company here growing fast in dollars; keep the position small."],
+        inShort: ["**An Indore-based software engineering firm** of about 1,800 people serving 50 large enterprises in the US and Germany, with Salesforce and ServiceNow practices and a push into AI-assisted development.", "**Good:** revenue up 37% in Q1 (about 20% in dollars), return on capital back to 29%, no debt and 94% of clients returning. **Watch:** promoters are selling, its slides count receivables as cash, margins are being stepped down to fund AI and US sales, and it is unhedged, so a rupee recovery would hit it hardest.", "**Verdict: own.** The one company here growing fast in dollars; keep the position small."],
         tagline: "A mid-size custom software engineering company from Indore serving large US and German enterprises.",
         revenue: '₹514cr (FY26, consolidated)',
         products: [
@@ -110,7 +110,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Mastek',
-        inShort: ["**A Mumbai-based IT services firm** whose core is three decades of UK government and NHS work, plus Oracle Cloud and Salesforce practices in North America and the Middle East.", "**Good:** the UK business earns a steady 19.7% segment margin, the 12-month order backlog is up 13% in dollars, and it holds ₹501cr of net cash. **Bad:** dollar revenue fell 2.4% in Q1, North America earns about 6% on ₹1,333cr of goodwill, and the Middle East is hurt by the war.", "**Verdict: follow.** A strong UK franchise that needs North America to turn."],
+        inShort: ["**A Mumbai-based IT services firm** whose core is three decades of UK government and NHS work, plus Oracle Cloud and Salesforce practices in North America and the Middle East.", "**Good:** the UK business earns a steady 19.7% segment margin, the 12-month order backlog is up 13% in dollars, and it holds ₹501cr of net cash. **Bad:** dollar revenue fell 2.4% in Q1, North America earns about 6% on ₹1,333cr of goodwill, the Middle East is hurt by the war, and renewals come at discounts of about 15%.", "**Verdict: follow.** A strong UK franchise that needs North America to turn."],
         tagline: "An IT services company living mainly on UK public-sector work, with Oracle Cloud (the former Evosys) and Salesforce (MST Solutions) practices abroad.",
         revenue: '₹3,699cr (FY26, consolidated)',
         products: [
@@ -138,7 +138,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Birlasoft',
-        inShort: ["**The CK Birla group's IT services firm**, installing and running SAP, Oracle and JD Edwards business software plus digital, data and AI work for manufacturers, insurers and energy firms, 83% in the Americas.", "**Good:** its first positive constant-currency quarter after six, a margin of 16.1% against 12.4% a year ago, and ₹2,496cr of net cash. **Bad:** dollar revenue is still 3.6% below last year, net-new wins fell about 25%, and the top five clients are 43% of revenue.", "**Verdict: follow.** It has stopped shrinking but has not yet shown it can grow."],
+        inShort: ["**The CK Birla group's IT services firm**, installing and running SAP, Oracle and JD Edwards business software plus digital, data and AI work for manufacturers, insurers and energy firms, 83% in the Americas.", "**Good:** its first positive constant-currency quarter after six, a margin of 16.1% against 12.4% a year ago, and ₹2,496cr of net cash. **Bad:** dollar revenue is still 3.6% below last year, net-new wins fell about 25%, the top five clients are 43% of revenue, senior managers keep leaving, and FY26 operating cash fell as unbilled work rose 65%.", "**Verdict: follow.** It has stopped shrinking but has not yet shown it can grow."],
         tagline: "A mid-size IT services company of the CK Birla group, strongest in business-software (ERP) work for US manufacturers, insurers and energy companies.",
         revenue: '₹5,310cr (FY26, consolidated)',
         products: [
@@ -165,7 +165,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'R Systems International',
-        inShort: ["**A Blackstone-owned product-engineering firm** that builds and modernises software for US tech and mid-market companies, with data, AI and cloud services; it reports on a calendar year.", "**Good:** a 20.1% adjusted margin, a top client of only 6% and an AA- rating. **Bad:** organic revenue was flat in January–March, bookings stalled at $82.9M, and its own bridge credits about two-thirds of the margin gain to the rupee.", "**Verdict: follow.** Good margins, but the rupee and an acquisition did the lifting."],
+        inShort: ["**A Blackstone-owned product-engineering firm** that builds and modernises software for US tech and mid-market companies, with data, AI and cloud services; it reports on a calendar year.", "**Good:** a 20.1% adjusted margin, a top client of only 6% and an AA- rating. **Bad:** organic revenue was flat in January–March, bookings stalled at $82.9M, its own bridge credits about two-thirds of the margin gain to the rupee, the Novigo purchase was restated lower, and attrition quoted on a call (11%) was well below the annual report's 20.5%.", "**Verdict: follow.** Good margins, but the rupee and an acquisition did the lifting."],
         tagline: "A mid-size digital product-engineering company, 51.85% owned by Blackstone, serving US software and mid-market firms from India.",
         revenue: '₹1,958cr (CY25, consolidated; it keeps a calendar year)',
         products: [
@@ -192,7 +192,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Railtel Corporation of India',
-        inShort: ["**The Railways' own telecom and IT company**, leasing bandwidth and selling broadband on fibre laid along railway tracks, running data centres, and building IT, surveillance and signalling projects for railways and state governments.", "**Good:** revenue up 23% in FY26, a record ₹11,747cr order book, no debt and ₹590cr of net cash. **Bad:** two-thirds of revenue is project work earning about 4%, receivables are growing faster than sales, and Q1 profit was flat.", "**Verdict: follow.** The price roughly matches the growth I expect, with little to spare."],
+        inShort: ["**The Railways' own telecom and IT company**, leasing bandwidth and selling broadband on fibre laid along railway tracks, running data centres, and building IT, surveillance and signalling projects for railways and state governments.", "**Good:** revenue up 23% in FY26, a record ₹11,747cr order book, no debt and ₹590cr of net cash. **Bad:** two-thirds of revenue is project work earning about 4%, receivables are growing faster than sales (₹238cr over three years old), Q1 profit was flat, and its board has one independent director against the legal minimum, for which both exchanges fined it twice this year.", "**Verdict: follow.** The price roughly matches the growth I expect, with little to spare."],
         tagline: "A Navratna railway company with a national fibre network and data centres, plus a large government IT and signalling projects business.",
         revenue: '₹4,277cr (FY26, standalone)',
         products: [
@@ -220,7 +220,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Fractal Analytics',
-        inShort: ["**A pure-play enterprise AI and analytics firm**, building data, AI and decision systems for very large consumer-goods, healthcare, bank and tech companies, two-thirds of it in the Americas.", "**Good:** clients keep spending more (117% net revenue retention, no client lost in Q1), 42% of revenue is priced on output, and it holds ₹1,985cr of net cash. **Bad:** constant-currency growth slowed to 9%, tech clients fell 22%, and the CFO left five months after the IPO.", "**Verdict: follow.** The best franchise in the group, but the price already assumes growth returns quickly."],
+        inShort: ["**A pure-play enterprise AI and analytics firm**, building data, AI and decision systems for very large consumer-goods, healthcare, bank and tech companies, two-thirds of it in the Americas.", "**Good:** clients keep spending more (117% net revenue retention, no client lost in Q1), 42% of revenue is priced on output, and it holds ₹1,985cr of net cash. **Bad:** constant-currency growth slowed to 9%, tech clients fell 22%, the CFO left five months after the IPO and the chief commercial officer in September, and its profit absorbs about ₹23cr a quarter of Qure.ai losses.", "**Verdict: follow.** The best franchise in the group, but the price already assumes growth returns quickly."],
         tagline: "India's largest listed AI and analytics specialist, selling data and AI programmes to the world's biggest companies, with a small products arm and a 31.5% stake in Qure.ai.",
         revenue: '₹3,300cr (FY26, consolidated)',
         products: [
@@ -276,7 +276,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Latent View Analytic',
-        inShort: ["**A Chennai-based data and analytics firm**, building data platforms, AI tools and marketing, fraud and supply-chain analytics for big US tech, payments and consumer-goods companies.", "**Good:** a fast-growing Databricks practice, AI projects earning higher margins, and ₹1,218cr of net cash. **Bad:** dollar revenue fell 3.5% in Q1, the top five clients are 57% of revenue, and its auditor flags a ₹220cr claim over the Decision Point purchase.", "**Verdict: wait.** Growth has stalled and the story is being reset under a new chief executive."],
+        inShort: ["**A Chennai-based data and analytics firm**, building data platforms, AI tools and marketing, fraud and supply-chain analytics for big US tech, payments and consumer-goods companies.", "**Good:** a fast-growing Databricks practice, AI projects earning higher margins, and ₹1,218cr of net cash. **Bad:** dollar revenue fell 3.5% in Q1, the top five clients are 57% of revenue, its auditor flags a ₹220cr claim over the Decision Point purchase, and about 28% of pre-tax profit is treasury income.", "**Verdict: wait.** Growth has stalled and the story is being reset under a new chief executive."],
         tagline: "A pure-play data analytics and AI services company serving US Fortune-500 clients, with a consumer-goods pricing-analytics unit, Decision Point.",
         revenue: '₹1,060cr (FY26, consolidated)',
         products: [
@@ -303,7 +303,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sonata Software',
-        inShort: ["**Two businesses in one**: an international IT services arm built on Microsoft's software, and an Indian business that resells Microsoft and cloud licences on a thin margin.", "**Good:** a 30-year Microsoft partnership, high returns on capital and a steadier Indian resale arm. **Bad:** international dollar revenue has been flat for two years, its margin fell from 20.2% to 15.4% in a quarter, and the CEO left in May.", "**Verdict: wait.** The part that earns the value has to grow again first."],
+        inShort: ["**Two businesses in one**: an international IT services arm built on Microsoft's software, and an Indian business that resells Microsoft and cloud licences on a thin margin.", "**Good:** a 30-year Microsoft partnership, high returns on capital and a steadier Indian resale arm. **Bad:** international dollar revenue has been flat for two years, its margin fell from 20.2% to 15.4% in a quarter, its largest client has shrunk for about six quarters, the CEO left in May, and it disputes about ₹365cr of income-tax demands.", "**Verdict: wait.** The part that earns the value has to grow again first."],
         tagline: "A Microsoft-focused IT services exporter attached to India's large reseller of Microsoft and cloud software licences.",
         revenue: '₹10,701cr (FY26, consolidated)',
         products: [
@@ -330,7 +330,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Saksoft',
-        inShort: ["**A Chennai IT services firm** doing application, testing, Salesforce and ServiceNow work for mid-size clients in tech, banking and logistics, half of it in the Americas.", "**Good:** margins steady at about 18%, a 24–28% return on capital for a decade, and cash above 100% of operating profit. **Bad:** revenue has been flat at about ₹249cr for four quarters, headcount is falling, and management may cut its FY27 target after Q2.", "**Verdict: wait.** Revenue has to move off its flat line first."],
+        inShort: ["**A Chennai IT services firm** doing application, testing, Salesforce and ServiceNow work for mid-size clients in tech, banking and logistics, half of it in the Americas.", "**Good:** margins steady at about 18%, a 24–28% return on capital for a decade, and cash above 100% of operating profit. **Bad:** revenue has been flat at about ₹249cr for four quarters, headcount is falling, two of its top five clients are deferring spend, and management may cut its FY27 target after Q2.", "**Verdict: wait.** Revenue has to move off its flat line first."],
         tagline: "A small, high-return IT services company serving clients with $100M–$3bn of revenue, grown recently through bolt-on acquisitions.",
         revenue: '₹1,007cr (FY26, consolidated)',
         products: [
@@ -357,7 +357,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Expleo Solutions',
-        inShort: ["**The Indian arm (71.05%) of France's Expleo group**, testing software for banks and insurers (82% of revenue), plus aerospace engineering and a shrinking automotive practice.", "**Good:** ₹368cr of net cash, a niche in payment-network testing and a ₹110-a-share dividend recommended. **Bad:** constant-currency revenue fell 0.4% in FY26, clients keep all the AI savings, and 35% of revenue comes from the parent, which also borrows ₹97.5cr from its subsidiaries.", "**Verdict: pass.** Cheap, but for reasons tied to its parent."],
+        inShort: ["**The Indian arm (71.05%) of France's Expleo group**, testing software for banks and insurers (82% of revenue), plus aerospace engineering and a shrinking automotive practice.", "**Good:** ₹368cr of net cash, a niche in payment-network testing and a ₹110-a-share dividend recommended. **Bad:** constant-currency revenue fell 0.4% in FY26, clients keep all the AI savings, and 35% of revenue comes from the parent, which also borrows ₹97.5cr from its subsidiaries and now seeks a limit of up to ₹280cr a year for such loans.", "**Verdict: pass.** Cheap, but for reasons tied to its parent."],
         tagline: "A software-testing and engineering company controlled by France's Expleo group, working mainly for banks and insurers in Europe.",
         revenue: '₹1,108cr (FY26, consolidated)',
         products: [
@@ -379,12 +379,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Qualitest, Cigniti and testing arms of Indian IT majors', note: 'Compete for bank testing contracts, often with larger scale.' }, { name: 'Saksoft and other mid-size IT firms', note: 'Offer testing as part of broader application work.' }],
         position: "**A mid-size Indian software-testing specialist** for banks and insurers, and the listed Indian arm of the Expleo group.",
         money: "Screener shows **₹368cr of net cash**; the company reported ₹352.8cr in June, with ₹8cr of lease borrowings. Its subsidiaries have lent ₹97.5cr to the French parent at about 9.5–10%. A ₹110-a-share dividend (about ₹171cr) was recommended in July. Capex is tiny. Promoters (the Expleo group) hold **71.05%**, unchanged over three years.",
-        watch: ["Loans to the parent repaid.", "Constant-currency growth above 8%.", "An acquisition finally announced."],
+        watch: ["Loans to the parent repaid, and the ₹280cr lending limit not used.", "Constant-currency growth above 8%.", "An acquisition finally announced."],
         charts: softwareCharts['Expleo Solutions'],
     },
     {
         company: 'Xtranet Technologies',
-        inShort: ["**A Bhopal system integrator** that builds and runs data centres and network centres for Indian government bodies, installs ERP software and runs XtraTrust, a licensed digital-signature authority. It listed in July 2026.", "**Good:** margins rose from 6% to 17% as services grew, a ₹373cr order book and ₹1,200cr bid pipeline, and IPO money that repairs a stretched balance sheet. **Bad:** Q1 grew 10.5% against a 35–40% target, ₹33.6cr of receivables are over three years old, and it skipped eight years of consolidated filings.", "**Verdict: pass.** Priced for its targets before its governance has been tested as a listed company."],
+        inShort: ["**A Bhopal system integrator** that builds and runs data centres and network centres for Indian government bodies, installs ERP software and runs XtraTrust, a licensed digital-signature authority. It listed in July 2026.", "**Good:** margins rose from 6% to 17% as services grew, a ₹373cr order book and ₹1,200cr bid pipeline, and IPO money that repairs a stretched balance sheet. **Bad:** Q1 grew 10.5% against a 35–40% target, ₹33.6cr of receivables are over three years old, 42% of the order book comes through one other contractor, and it skipped eight years of consolidated filings.", "**Verdict: pass.** Priced for its targets before its governance has been tested as a listed company."],
         tagline: "An Indian government IT system integrator that also resells hardware and runs a licensed digital-signature business.",
         revenue: '₹365cr (FY26, consolidated)',
         products: [

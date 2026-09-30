@@ -85,7 +85,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Himadri Speciality',
-        inShort: ["**A coal-tar distiller that turns steel-plant waste into pitch for aluminium smelters and carbon black for tyres and plastics**, now adding battery materials and running the revived Birla Tyres.", "**Good:** owning its feedstock lifted the margin from 6% to 21% in four years and holds ₹1,025cr of net cash. **Bad:** only 54% of profit became cash over five years, other income and forex swings blur earnings, and about ₹935cr is lent to the company that owns Birla Tyres.", "**Verdict: follow.** The best business here, but the price needs more growth than I expect."],
+        inShort: ["**A coal-tar distiller that turns steel-plant waste into pitch for aluminium smelters and carbon black for tyres and plastics**, now adding battery materials and running the revived Birla Tyres.", "**Good:** owning its feedstock lifted the margin from 6% to 21% in four years and holds ₹1,025cr of net cash. **Bad:** only 54% of profit became cash over five years, other income and forex swings blur earnings, borrowings more than doubled to ₹770cr in FY26 with free cash negative, and about ₹935cr is lent to the company that owns Birla Tyres.", "**Verdict: follow.** The best business here, but the price needs more growth than I expect."],
         tagline: "India's largest coal-tar distiller: pitch for aluminium and graphite electrodes, carbon black for tyres and specialty uses, and new battery-material lines.",
         revenue: '₹4,661cr (FY26, consolidated)',
         products: [
@@ -170,7 +170,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'JG Chemicals',
-        inShort: ["**India's largest zinc oxide maker**, recycling zinc scrap into the white powder that helps cure rubber in tyres, with about 31% of the Indian market.", "**Good:** debt-free with ₹168cr of net cash, and it supplies every Indian tyre major and nine of the world's top ten. **Bad:** the margin has stayed at 7–11% for five years, about half its sales go to a few large customers, and its new Dahej plant is late.", "**Verdict: wait.** The price needs more growth than I expect until Dahej starts and margins hold."],
+        inShort: ["**India's largest zinc oxide maker**, recycling zinc scrap into the white powder that helps cure rubber in tyres, with about 31% of the Indian market.", "**Good:** debt-free with ₹168cr of net cash, and it supplies every Indian tyre major and nine of the world's top ten. **Bad:** the margin has stayed at 7–11% for five years, about half its sales go to a few large customers, and its new Dahej plant is late, with FY28 use cut to 50–60%.", "**Verdict: wait.** The price needs more growth than I expect until Dahej starts and margins hold."],
         tagline: "A zinc recycler: it turns zinc dross, ash and scrap into 90+ grades of zinc oxide for tyres, pharma, ceramics and fertiliser.",
         revenue: '₹973cr (FY26, consolidated)',
         products: [
@@ -218,12 +218,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Chinese rubber-chemical makers', note: 'Make about 80% of world supply with export subsidies; they set the price.' }, { name: 'Imports via Thailand and Korea', note: 'Enter India duty-free under trade agreements, around any anti-dumping duty.' }, { name: 'Flexsys and other global makers', note: 'Western rubber-additive makers that supply the same global tyre majors.' }],
         position: "**India's largest rubber-chemicals maker, with about 40% of the domestic market** and the only complete product range; it gained 1–1.5 points of share in Q4 FY26.",
         money: "Screener shows **₹442cr of net cash**: borrowings of ₹8cr against ₹415cr of investments. FY26 operating cash of ₹252cr, helped by cutting stock from 129 to 75 days, paid for most of the ₹250cr TDQ plant; the ₹130cr specialty plant will use its own cash and a term loan. It pays out about 45% of profit. CARE rates it AA/Stable. Promoters hold **33.8%**, unchanged; one promoter company had 3.47% of the equity pledged in April 2026.",
-        watch: ["The Pilflex 13 duty decision.", "TDQ plant sales starting in Q4 FY27.", "Whether Chinese exporters absorb the sulphenamide duty."],
+        watch: ["The Pilflex 13 duty decision.", "TDQ plant sales starting in Q4 FY27.", "Whether Chinese exporters absorb the sulphenamide duty.", "California's scrutiny of the antioxidant 6PPD (sold as Pilflex 13), and progress on alternatives."],
         charts: chemicalsCharts['Nocil'],
     },
     {
         company: 'PCBL Chemical',
-        inShort: ["**India's largest carbon black maker and exporter**: it partly burns heavy oil into the fine soot that strengthens tyres, and also owns Aquapharm, a water-treatment chemicals business.", "**Good:** scale (900,000 tonnes), plants near ports and tyre hubs, and the best five-year cash conversion in the group (88%). **Bad:** debt is about five times operating profit with CARE's outlook Negative, Q1 FY27 was flattered by about ₹70cr of stock gains, and volume was flat.", "**Verdict: wait.** The price assumes a full recovery in carbon black profits while debt stays high."],
+        inShort: ["**India's largest carbon black maker and exporter**: it partly burns heavy oil into the fine soot that strengthens tyres, and also owns Aquapharm, a water-treatment chemicals business.", "**Good:** scale (900,000 tonnes), plants near ports and tyre hubs, and the best five-year cash conversion in the group (88%). **Bad:** debt is about five times operating profit with CARE's outlook Negative, Q1 FY27 was flattered by about ₹70cr of stock gains, volume was flat, and dividends were 119% of FY26 profit despite the debt.", "**Verdict: wait.** The price assumes a full recovery in carbon black profits while debt stays high."],
         tagline: "A carbon black maker (RP-Sanjiv Goenka group) with five Indian plants, a water-treatment and detergent chemicals arm (Aquapharm), a co-generation power business and a battery-anode venture.",
         revenue: '₹8,189cr (FY26, consolidated)',
         products: [
@@ -276,7 +276,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Chinese dye and intermediate makers', note: 'Dominate world supply; their output decisions set Kiri’s prices.' }, { name: 'Shree Pushkar and other Indian makers', note: 'Shree Pushkar makes K-acid, H-acid and vinyl sulphone from its own sulphur chain.' }, { name: 'Adani and Hindalco (copper)', note: 'Much larger, experienced Indian copper smelters that Kiri would compete with.' }],
         position: "**A large, integrated H-acid and reactive-dye maker** (it claims to be among the world's biggest in H-acid), but a newcomer with no track record in copper.",
         money: "Screener shows **₹4,354cr of net cash**, parked in unnamed funds, equity, hybrid instruments and inter-corporate loans; borrowings are only ₹42cr. That will reverse: the ₹13,300cr complex is to be funded by about ₹4,000cr of equity and project loans, with total debt of ₹8,000–9,000cr expected by FY28, and loans are ‘more than 50%’ committed but not closed. No dividend is planned for FY27, and it has no current credit rating. Promoters hold **41.7%, up from 26.7%** in Sep 2023 through warrant conversions.",
-        watch: ["Financial closure and a binding concentrate contract.", "Any tax demand on the DyStar award.", "The tube plant starting by June 2027."],
+        watch: ["Financial closure and a binding concentrate contract.", "Any tax demand on the DyStar award.", "The tube plant starting by June 2027.", "The planned warrant issue at ₹422.93, about a quarter below the market price, which adds more than 5% to the share count."],
         charts: chemicalsCharts['Kiri Industries'],
     },
 ];

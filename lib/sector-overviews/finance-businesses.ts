@@ -117,7 +117,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'State Bank of India',
-        inShort: ["**India's largest bank, owned mainly by the government**, with deposits above ₹60 lakh crore and loans above ₹50 lakh crore to households, farmers, small firms and big companies.", "**Good:** the biggest and cheapest deposit base in the country, bad loans (unpaid for 90+ days) at a two-decade low of 1.47% gross, and return on equity of about 16%. **Watch:** its profits follow the credit cycle (return on equity was 8% in FY21), and its margin of about 3% is the thinnest of the three big banks.", "**Verdict: own.** The price is cheap for a bank earning about 16% on its equity, even allowing for the cycle."],
+        inShort: ["**India's largest bank, owned mainly by the government**, with deposits above ₹60 lakh crore and loans above ₹50 lakh crore to households, farmers, small firms and big companies.", "**Good:** the biggest and cheapest deposit base in the country, bad loans (unpaid for 90+ days) at a two-decade low of 1.47% gross, and return on equity of about 16%. **Watch:** its profits follow the credit cycle (return on equity was 8% in FY21), its margin of about 3% is the thinnest of the three big banks, and deposits grew only 9.7% in Q1 against loans of 18.6%.", "**Verdict: own.** The price is cheap for a bank earning about 16% on its equity, even allowing for the cycle."],
         tagline: "India's largest bank, majority-owned by the government: deposits, home, personal, gold, farm, small-business and corporate loans, with insurance, fund-management and other subsidiaries.",
         revenue: '₹556,241cr total income (FY26, standalone)',
         products: [
@@ -145,7 +145,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Northern ARC Capital',
-        inShort: ["**A non-bank lender (NBFC)** that started by lending to and raising money for other NBFCs, and now mostly lends directly to consumers, small businesses and rural borrowers.", "**Good:** direct loans are now 64% of its ₹16,855cr book, bad loans (unpaid for 90+ days) are low at 1% gross, and its margin has widened from 5.5% to about 9.3% in five years. **Watch:** return on equity is only about 11% because it holds a lot of capital, and much of the growth is unsecured consumer loans found by fintech partners.", "**Verdict: follow.** I want to see return on assets reach its 3% target before owning it."],
+        inShort: ["**A non-bank lender (NBFC)** that started by lending to and raising money for other NBFCs, and now mostly lends directly to consumers, small businesses and rural borrowers.", "**Good:** direct loans are now 64% of its ₹16,855cr book, bad loans (unpaid for 90+ days) are low at 1% gross, and its margin has widened from 5.5% to about 9.3% in five years. **Watch:** return on equity is only about 11% because it holds a lot of capital, much of the growth is unsecured consumer loans found by fintech partners, it wrote off ₹694cr in FY26 (far more than its 1% bad-loan figure suggests), and FY26 profit was helped by a provision reversal its auditor flagged.", "**Verdict: follow.** I want to see return on assets reach its 3% target before owning it."],
         tagline: "A non-bank lender shifting from wholesale loans to other NBFCs toward direct consumer, small-business and microfinance loans, with a fund-management and bond-placement arm.",
         revenue: '₹2,701cr total income (FY26, consolidated)',
         products: [
@@ -173,7 +173,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'OnEMI Technology',
-        inShort: ["**Kissht, a digital lender**: personal loans approved and paid in 5–10 minutes through a phone app, plus a small loans-against-property business. More than half its loans sit on partner lenders' books, with OnEMI earning a fee and covering first losses.", "**Good:** fast growth (AUM up 61% to ₹8,001cr), return on equity of about 21% and falling loan losses. **Watch:** almost all loans are unsecured, losses still cost 6.8% of AUM a year, and bad loans (unpaid for 90+ days) of 2.25% count only its own book.", "**Verdict: follow.** It listed only in May 2026 and is unproven through a bad credit cycle at this size; I want to see how its recent loans behave."],
+        inShort: ["**Kissht, a digital lender**: personal loans approved and paid in 5–10 minutes through a phone app, plus a small loans-against-property business. More than half its loans sit on partner lenders' books, with OnEMI earning a fee and covering first losses.", "**Good:** fast growth (AUM up 61% to ₹8,001cr), return on equity of about 21% and falling loan losses. **Watch:** almost all loans are unsecured, losses still cost 6.8% of AUM a year, bad loans (unpaid for 90+ days) of 2.25% count only its own book and sit at its ceiling, and it approved an ₹832cr share sale four months after listing.", "**Verdict: follow.** It listed only in May 2026 and is unproven through a bad credit cycle at this size; I want to see how its recent loans behave."],
         tagline: "A digital consumer lender (brand Kissht) making small unsecured personal loans through its app, partly on its own books and partly for partner lenders, with a growing loans-against-property business.",
         revenue: '₹2,209cr total income (FY26, consolidated)',
         products: [

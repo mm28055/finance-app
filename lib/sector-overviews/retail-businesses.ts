@@ -89,7 +89,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Indiamart Intermesh',
-        inShort: ["**India's largest online marketplace for business buyers and suppliers**: about 2.18 lakh mostly small suppliers pay yearly subscriptions to be found by 41m buyers, who use it free.", "**Good:** customers pay in advance, a 30% margin, no debt and ₹3,553cr of cash and treasury. **Bad:** paying suppliers have not grown for a year, buyer enquiries fell 11% in Q1, and AI answers on Google threaten its free traffic.", "**Verdict: follow.** A cash machine whose engine has stalled; the price needs slightly more growth than I expect."],
+        inShort: ["**India's largest online marketplace for business buyers and suppliers**: about 2.18 lakh mostly small suppliers pay yearly subscriptions to be found by 41m buyers, who use it free.", "**Good:** customers pay in advance, a 30% margin, no debt and ₹3,553cr of cash and treasury. **Bad:** paying suppliers have not grown for a year (1,852 lost in Q1, when a recovery was expected), buyer enquiries fell 11% in Q1, and AI answers on Google threaten its free traffic.", "**Verdict: follow.** A cash machine whose engine has stalled; the price needs slightly more growth than I expect."],
         tagline: "India's largest business-to-business listings marketplace, earning subscription fees from small suppliers, with Busy accounting software on the side.",
         revenue: '₹1,569cr (FY26, consolidated)',
         products: [
@@ -116,7 +116,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Aditya Birla Lifesty',
-        inShort: ["**India's biggest branded menswear company**, owning Louis Philippe, Van Heusen, Allen Solly and Peter England, with Reebok, Van Heusen Innerwear and American Eagle as younger businesses; it was demerged from ABFRL in 2025.", "**Good:** revenue up 10% or more for three quarters, same-store growth of 7–8% and a slowly rising margin. **Bad:** leases, depreciation and interest leave net profit near 2% of revenue, inventory days are 252, and it may owe ABFRL ₹272cr for an old GST demand.", "**Verdict: follow.** A healthy brand business that keeps little of its profit; the price needs slightly more growth than I expect."],
+        inShort: ["**India's biggest branded menswear company**, owning Louis Philippe, Van Heusen, Allen Solly and Peter England, with Reebok, Van Heusen Innerwear and American Eagle as younger businesses; it was demerged from ABFRL in 2025.", "**Good:** revenue up 10% or more for three quarters, same-store growth of 7–8% and a slowly rising margin. **Bad:** leases, depreciation and interest leave net profit near 2% of revenue, net debt before leases fell only ₹55cr in FY26, inventory days are 252, and it may owe ABFRL ₹272cr for an old GST demand.", "**Verdict: follow.** A healthy brand business that keeps little of its profit; the price needs slightly more growth than I expect."],
         tagline: "India's largest branded menswear business, with four national brands sold through 3,362 stores, department stores, multi-brand shops and online.",
         revenue: '₹8,396cr (FY26, consolidated)',
         products: [
@@ -171,7 +171,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Aditya Vision',
-        inShort: ["**The leading electronics and appliance chain in Bihar**, with 210 stores in Bihar, Jharkhand, Uttar Pradesh and Chhattisgarh selling ACs, fridges, TVs and phones of the big brands.", "**Good:** revenue has grown about 31% a year since FY22, same-store sales rose 18% in each of the last two quarters, and it has never closed a store. **Bad:** stock ties up cash (inventory days up from 108 to 136), results depend on the summer, and promoters sold down from 53% to 47%.", "**Verdict: follow.** A fine local franchise; the price needs slightly more growth than I expect."],
+        inShort: ["**The leading electronics and appliance chain in Bihar**, with 210 stores in Bihar, Jharkhand, Uttar Pradesh and Chhattisgarh selling ACs, fridges, TVs and phones of the big brands.", "**Good:** revenue has grown about 31% a year since FY22, same-store sales rose 18% in each of the last two quarters, and it has never closed a store. **Bad:** stock ties up cash (inventory days up from 108 to 136, operating cash negative in FY24 and FY25), results depend on the summer, and promoters sold down from 53% to 47%.", "**Verdict: follow.** A fine local franchise; the price needs slightly more growth than I expect."],
         tagline: "A regional chain of consumer-electronics and appliance stores in the Hindi heartland, led by Bihar.",
         revenue: '₹2,672cr (FY26, standalone)',
         products: [
@@ -197,7 +197,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Arvind Fashions',
-        inShort: ["**A house of licensed and owned clothing brands**: U.S. Polo Assn., Tommy Hilfiger and Calvin Klein (the last two through a 50:50 venture with PVH), Arrow and Flying Machine, sold through 1,030 brand stores, 9,000+ multi-brand shops and online.", "**Good:** same-store growth up to 11.6%, gross margin 56.7% with less discounting, and CARE turned its outlook positive. **Bad:** inventory days rose from 163 to 211 in two years, profit to Arvind's shareholders was only ₹10cr in Q1, and its biggest brands are licensed, not owned.", "**Verdict: follow.** Improving brands, swelling stock; the price needs slightly more growth than I expect."],
+        inShort: ["**A house of licensed and owned clothing brands**: U.S. Polo Assn., Tommy Hilfiger and Calvin Klein (the last two through a 50:50 venture with PVH), Arrow and Flying Machine, sold through 1,030 brand stores, 9,000+ multi-brand shops and online.", "**Good:** same-store growth up to 11.6%, gross margin 56.7% with less discounting, and CARE turned its outlook positive. **Bad:** inventory days rose from 163 to 211 in two years, profit to Arvind's shareholders was only ₹10cr in Q1, and its biggest brands are licensed, not owned; no extension of the Tommy Hilfiger licence beyond December 2026 has been disclosed.", "**Verdict: follow.** Improving brands, swelling stock; the price needs slightly more growth than I expect."],
         tagline: "A branded-apparel company selling mostly licensed international brands through its own and franchised stores, multi-brand shops, department stores and online.",
         revenue: '₹5,266cr (FY26, consolidated)',
         products: [
@@ -224,7 +224,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Entero',
-        inShort: ["**One of India's three largest medicine wholesalers**, buying from about 3,000 drug and device makers and delivering to chemists and hospitals from 138 warehouses in 19 states.", "**Good:** it met every FY26 promise, grew 17.8% organically in Q1 against a market of about 14%, and reached its 5% margin target. **Bad:** growth was built on 51 acquisitions, ₹749cr of goodwill brings its return on all capital to about 10%, and it owes ₹343cr to buy out partners.", "**Verdict: follow.** Delivering, but the price needs slightly more growth than I expect."],
+        inShort: ["**One of India's three largest medicine wholesalers**, buying from about 3,000 drug and device makers and delivering to chemists and hospitals from 138 warehouses in 19 states.", "**Good:** it met every FY26 promise, grew 17.8% organically in Q1 against a market of about 14%, and reached its 5% margin target. **Bad:** growth was built on 51 acquisitions, ₹749cr of goodwill brings its return on all capital to about 10%, it owes ₹343cr to buy out partners (₹309cr within a year), and subsidiary audits flag stock statements that do not match the books.", "**Verdict: follow.** Delivering, but the price needs slightly more growth than I expect."],
         tagline: "A national wholesaler of medicines and medical devices to chemists and hospitals, built largely by buying regional distributors.",
         revenue: '₹6,591cr (FY26, consolidated)',
         products: [
@@ -276,7 +276,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Crizac',
-        inShort: ["**A student-recruitment platform, not a shop**: British universities pay it a commission for each overseas student it enrols, and it passes most of that to 17,400+ local agents in 85+ countries.", "**Good:** a 27% margin, ₹570cr of net cash, a promise to pay out at least 40% of profit, and its share of UK study visas rose from 3.5% to 6%. **Bad:** about 99% of revenue comes from UK universities, revenue fell 4% in Q1, FY27 is now guided flat, and Britain is tightening student visas.", "**Verdict: wait.** Highly profitable, in a shrinking market."],
+        inShort: ["**A student-recruitment platform, not a shop**: British universities pay it a commission for each overseas student it enrols, and it passes most of that to 17,400+ local agents in 85+ countries.", "**Good:** a 27% margin, ₹570cr of net cash, a promise to pay out at least 40% of profit, and its share of UK study visas rose from 3.5% to 6%. **Bad:** about 99% of revenue comes from UK universities, revenue fell 4% in Q1, FY27 is now guided flat, Britain is tightening student visas, and a ₹55cr fee paid in FY26 is unexplained.", "**Verdict: wait.** Highly profitable, in a shrinking market."],
         tagline: "A business-to-business platform linking overseas students' local agents with British and other universities, paid by commission.",
         revenue: '₹1,042cr (FY26, consolidated)',
         products: [
@@ -358,7 +358,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Vedant Fashions (Manyavar)',
-        inShort: ["**India's biggest wedding and celebration-wear brand**, selling Manyavar menswear, Mohey bridal wear and three smaller labels through about 500 stores that franchisees run.", "**Good:** a 44% operating margin, full-price selling, no bank debt and about ₹1,200cr of investments. **Bad:** revenue has been flat for three years, profit has fallen for two, and since September 2025 its dearer clothes carry 18% GST.", "**Verdict: wait.** A superb model that has stopped growing; the price needs far more growth than I expect."],
+        inShort: ["**India's biggest wedding and celebration-wear brand**, selling Manyavar menswear, Mohey bridal wear and three smaller labels through about 500 stores that franchisees run.", "**Good:** a 44% operating margin, full-price selling, no bank debt and about ₹1,200cr of investments. **Bad:** revenue has been flat for three years, profit has fallen for two, since September 2025 its dearer clothes carry 18% GST, and ₹64.9cr of sales went to franchises run by promoter relatives.", "**Verdict: wait.** A superb model that has stopped growing; the price needs far more growth than I expect."],
         tagline: "India's leading branded celebration-wear company, selling wedding and festive clothes through franchisee-run Manyavar and Mohey stores.",
         revenue: '₹1,435cr (FY26, standalone)',
         products: [
@@ -385,7 +385,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Brainbees Solutions',
-        inShort: ["**India's largest seller of baby and children's products** (FirstCry), through its app and 1,188 stores, with its own BabyHug and other labels, a Gulf business, the GlobalBees brand group and preschools.", "**Good:** India revenue growth rose from 7.5% to 17.7% in five quarters, and FY26 free cash was positive for the first time. **Bad:** a diaper price war with quick-commerce apps cut India operating profit 22% in Q1, and it still reports losses of about ₹45cr a quarter.", "**Verdict: wait.** Growth is back but profit is not; there are no earnings to value yet."],
+        inShort: ["**India's largest seller of baby and children's products** (FirstCry), through its app and 1,188 stores, with its own BabyHug and other labels, a Gulf business, the GlobalBees brand group and preschools.", "**Good:** India revenue growth rose from 7.5% to 17.7% in five quarters, and FY26 free cash was positive for the first time. **Bad:** a diaper price war with quick-commerce apps cut India operating profit 22% in Q1 against a promised double-digit rise, and it still reports losses of about ₹45cr a quarter.", "**Verdict: wait.** Growth is back but profit is not; there are no earnings to value yet."],
         tagline: "India's largest mother, baby and kids retailer, selling mostly online through FirstCry with a network of company and franchise stores.",
         revenue: '₹8,548cr (FY26, consolidated)',
         products: [
@@ -413,7 +413,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Shoppers Stop',
-        inShort: ["**India's main premium department-store chain**, run by the K Raheja group: 115 department stores, beauty shops, INTUNE value-fashion stores and a fast-growing business distributing prestige beauty brands.", "**Good:** like-for-like growth of 6% is the best in a decade, 85% of sales come from loyalty members, and beauty distribution grew 81% in FY26. **Bad:** it still loses money on filed accounts (−₹14cr in Q1), equity is only ₹291cr, and INTUNE has not proved it can make money.", "**Verdict: wait.** A better business, still loss-making."],
+        inShort: ["**India's main premium department-store chain**, run by the K Raheja group: 115 department stores, beauty shops, INTUNE value-fashion stores and a fast-growing business distributing prestige beauty brands.", "**Good:** like-for-like growth of 6% is the best in a decade, 85% of sales come from loyalty members, and beauty distribution grew 81% in FY26. **Bad:** it still loses money on filed accounts (−₹14cr in Q1), equity is only ₹291cr against about ₹165cr of contingent liabilities, and INTUNE has not proved it can make money.", "**Verdict: wait.** A better business, still loss-making."],
         tagline: "A premium department-store chain with beauty stores, a value-fashion format and an exclusive distributor of international beauty brands.",
         revenue: '₹5,043cr (FY26, consolidated)',
         products: [
@@ -467,7 +467,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Landmark Cars',
-        inShort: ["**A multi-brand car dealer**: 141 showrooms and workshops in 12 states selling and servicing Mercedes-Benz, Honda, Volkswagen, MG, BYD, Mahindra, Kia and other brands.", "**Good:** Q1 revenue up 22%, profit roughly doubled, costs falling as a share of sales, and about 95% of operating profit turned into cash. **Bad:** net profit is about 1% of revenue, return on capital is about 9%, net debt is ₹581cr, and carmakers set its margins.", "**Verdict: wait.** Recovering from a low base, on thin margins; the price needs more growth than I expect."],
+        inShort: ["**A multi-brand car dealer**: 141 showrooms and workshops in 12 states selling and servicing Mercedes-Benz, Honda, Volkswagen, MG, BYD, Mahindra, Kia and other brands.", "**Good:** Q1 revenue up 22%, profit roughly doubled, costs falling as a share of sales, and about 95% of operating profit turned into cash. **Bad:** net profit is about 1% of revenue, return on capital is about 9%, net debt is ₹581cr, carmakers set its margins, and some insurance and advertising business goes through promoter-linked firms.", "**Verdict: wait.** Recovering from a low base, on thin margins; the price needs more growth than I expect."],
         tagline: "A multi-brand car dealership group, from Mercedes-Benz to BYD, whose workshops earn most of its profit.",
         revenue: '₹4,896cr (FY26, consolidated)',
         products: [

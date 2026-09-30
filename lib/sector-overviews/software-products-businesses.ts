@@ -61,7 +61,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Newgen Software',
-        inShort: ["**Document, workflow and loan-origination software for banks, insurers and governments** in about 79 countries, sold as licences in India and the Middle East and as subscriptions in the US, UK and Australia.", "**Good:** annuity revenue was 71% of Q1 revenue and SaaS grew 40%, with a five-year record of 24–28% return on capital and ₹1,076cr of net cash. **Bad:** debtor days of 145 are above the rating agency's downgrade trigger, and the chief executive resigned in June.", "**Verdict: own.** The price needs about {need:Newgen Software|13}% a year of earnings growth and I expect about 12%, close enough to count as a fit."],
+        inShort: ["**Document, workflow and loan-origination software for banks, insurers and governments** in about 79 countries, sold as licences in India and the Middle East and as subscriptions in the US, UK and Australia.", "**Good:** annuity revenue was 71% of Q1 revenue and SaaS grew 40%, with a five-year record of 24–28% return on capital and ₹1,076cr of net cash. **Bad:** debtor days of 145 are above the rating agency's downgrade trigger, the chief executive resigned in June, implementation revenue fell about 23% in Q1, and interest on cash was about 44% of Q1 pre-tax profit.", "**Verdict: own.** The price needs about {need:Newgen Software|13}% a year of earnings growth and I expect about 12%, close enough to count as a fit."],
         tagline: "India's leading document, workflow and loan-origination software company, selling to banks, insurers and governments in about 79 countries.",
         revenue: '₹1,574cr (FY26, consolidated)',
         products: [
@@ -89,7 +89,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Intellect Design Arena',
-        inShort: ["**Composable core, transaction and wealth-banking software (eMACH.ai)** plus the Purple Fabric AI platform, sold to 500+ banks and insurers in about 60 countries.", "**Good:** licence-linked revenue grew 34% and platform revenue more than doubled in FY26, the sales pipeline is ₹13,012cr and the credit-rating outlook moved to Positive. **Bad:** profit was ₹343cr in FY26, barely above the ₹350cr it earned in FY22, because a much bigger cost base has swallowed the growth.", "**Verdict: follow.** The price needs about {need:Intellect Design Arena|15}% a year of earnings growth against my ~14%; I would buy on proof that profit is growing again."],
+        inShort: ["**Composable core, transaction and wealth-banking software (eMACH.ai)** plus the Purple Fabric AI platform, sold to 500+ banks and insurers in about 60 countries.", "**Good:** licence-linked revenue grew 34% and platform revenue more than doubled in FY26, the sales pipeline is ₹13,012cr and the credit-rating outlook moved to Positive. **Bad:** profit was ₹343cr in FY26, barely above the ₹350cr it earned in FY22, because a much bigger cost base has swallowed the growth; ₹160cr of R&D was put on the balance sheet in FY26, and customers take about 124 days to pay.", "**Verdict: follow.** The price needs about {need:Intellect Design Arena|15}% a year of earnings growth against my ~14%; I would buy on proof that profit is growing again."],
         tagline: "A Chennai-based banking and insurance software company selling composable core, transaction and wealth-banking platforms, plus an enterprise AI platform, to 500+ institutions in about 60 countries.",
         revenue: '₹3,038cr (FY26, consolidated)',
         products: [
@@ -114,7 +114,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'RateGain Travel Tech',
-        inShort: ["**Hotel price data, distribution connectivity and travel marketing software**, sold to hotels, airlines, car-rental firms and destinations; MarTech, built around its US$250M purchase of Sojern, is now over 81% of revenue.", "**Good:** organic growth was 17.5% in Q1, margin guidance was raised, and 38% of the Sojern acquisition loan is already repaid. **Bad:** the 'adjusted' profit it reports leaves out ₹80–90cr a year of payouts to the Sojern team, and goodwill is about three-quarters of net worth.", "**Verdict: follow.** The price needs about {need:RateGain Travel Tech|20}% a year of earnings growth against my ~17%; a clean beat on filed, not adjusted, profit would make it a buy."],
+        inShort: ["**Hotel price data, distribution connectivity and travel marketing software**, sold to hotels, airlines, car-rental firms and destinations; MarTech, built around its US$250M purchase of Sojern, is now over 81% of revenue.", "**Good:** organic growth was 17.5% in Q1, margin guidance was raised, and 38% of the Sojern acquisition loan is already repaid. **Bad:** the 'adjusted' profit it reports leaves out ₹80–90cr a year of payouts to the Sojern team, goodwill is about three-quarters of net worth, net debt is ₹615cr, and debtor days rose from 72 to 94.", "**Verdict: follow.** The price needs about {need:RateGain Travel Tech|20}% a year of earnings growth against my ~17%; a clean beat on filed, not adjusted, profit would make it a buy."],
         tagline: "A Noida-based travel-technology company selling hotel price data, distribution connectivity and, since buying US-based Sojern, performance marketing to hotels, airlines and destinations.",
         revenue: '₹1,824cr (FY26, consolidated)',
         products: [
@@ -137,7 +137,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Capillary Technologies',
-        inShort: ["**Loyalty-programme software** — the points, tiers and rewards ledger behind consumer brands' loyalty schemes — for 465 brands including 25 Fortune 500 companies, listed on the NSE in November 2025.", "**Good:** annual recurring revenue reached ₹1,027cr, blended retention is 113%, customers pay upfront and the company-adjusted margin rose from 10.5% to 17.2%. **Bad:** an executive at a subsidiary bought seven weeks earlier wired ₹33.4cr to fraudsters in Q1, and Capillary filed a loss that quarter.", "**Verdict: follow.** The price needs about {need:Capillary Technologies|32}% a year of earnings growth against my ~28%; I would buy once the migrations are proven and controls are fixed."],
+        inShort: ["**Loyalty-programme software** — the points, tiers and rewards ledger behind consumer brands' loyalty schemes — for 465 brands including 25 Fortune 500 companies, listed on the NSE in November 2025.", "**Good:** annual recurring revenue reached ₹1,027cr, blended retention is 113%, customers pay upfront and the company-adjusted margin rose from 10.5% to 17.2%. **Bad:** an executive at a subsidiary bought seven weeks earlier wired ₹33.4cr to fraudsters in Q1, and Capillary filed a loss that quarter; its top five clients are about a third of revenue.", "**Verdict: follow.** The price needs about {need:Capillary Technologies|32}% a year of earnings growth against my ~28%; I would buy once the migrations are proven and controls are fixed."],
         tagline: "A Bengaluru-founded loyalty-programme software company running points, tiers and rewards ledgers for 465 consumer brands in 53 countries.",
         revenue: '₹735cr (FY26, consolidated)',
         products: [
@@ -187,7 +187,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Unicomm. eSolutions',
-        inShort: ["**Order and warehouse management software (Uniware) for online sellers**, plus a courier-aggregation business (Shipway) and marketing tools (ConvertWay); part of the AceVector (Snapdeal) group.", "**Good:** Uniware grew 12.8% at a 35.3% company-adjusted margin, debtor days are just 20 and there is no debt. **Watch:** Shipway is low-margin and not sticky, and the group's filed margin fell to 11% as it is funded ahead of revenue.", "**Verdict: wait.** The price needs about {need:Unicomm. eSolutions|23}% a year against my ~18%; I want to see Shipway stop diluting a strong core before paying up."],
+        inShort: ["**Order and warehouse management software (Uniware) for online sellers**, plus a courier-aggregation business (Shipway) and marketing tools (ConvertWay); part of the AceVector (Snapdeal) group.", "**Good:** Uniware grew 12.8% at a 35.3% company-adjusted margin, debtor days are just 20 and there is no debt. **Watch:** Shipway is low-margin and not sticky, the group's filed margin fell to 11% as it is funded ahead of revenue, the promise of higher FY27 profit was dropped, and related-party subcontracting to AceVector rose 303%.", "**Verdict: wait.** The price needs about {need:Unicomm. eSolutions|23}% a year against my ~18%; I want to see Shipway stop diluting a strong core before paying up."],
         tagline: "Unicommerce, a Gurugram-based e-commerce operations company running order and warehouse software, a courier aggregator and marketing tools for online sellers; part of the AceVector (Snapdeal) group.",
         revenue: '₹204cr (FY26, consolidated)',
         products: [
@@ -205,7 +205,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'In-house order-management systems', note: 'Some large sellers build their own; Uniware competes on integration breadth and reliability.' }, { name: 'A larger, listed courier-aggregation rival', note: 'Better funded than Shipway in a market with low switching costs.' }],
         position: "**India's leading e-commerce order and warehouse management platform**, handling an estimated 25–30% of the country's dropship order volumes.",
         money: "Cash and investments were **₹92.6cr** at June 2026, with borrowings of only ₹9cr of leases — effectively debt-free. Debtor days fell from 47 to 20 over three years and cash flow converts at about 2.3 times profit. No dividend. Goodwill from Shipway is ₹117cr, 43% of total assets. The AceVector (Snapdeal) promoter group holds **36.0%**; related-party subcontracting to AceVector rose 303% to ₹11.6cr in FY26.",
-        watch: ["Shipway reaching adjusted-EBITDA breakeven in Q3 FY27.", "Uniware growth reaching 15%+ by Q4.", "Group adjusted margin back above 20% in H2."],
+        watch: ["Shipway reaching adjusted-EBITDA breakeven in Q3 FY27.", "Uniware growth reaching 15%+ by Q4.", "Group adjusted margin back above 20% in H2.", "Related-party dealings with the AceVector group."],
         charts: softwareCharts['Unicomm. eSolutions'],
     },
     {
@@ -235,7 +235,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Zaggle Prepaid',
-        inShort: ["**Employee-benefit and expense cards, accounts-payable software (Zoyer) and channel-partner rewards (Propel)** for 4,065 Indian companies and 4 million users, issued through 19 partner banks.", "**Good:** users rose 19%, churn is under 1.5% and net cash is about ₹500cr. **Bad:** free cash flow has been negative every year since FY23, program-fee growth slowed to 10%, and the margin fell to 8.2% as development costs are now expensed rather than capitalised.", "**Verdict: wait.** The price needs about {need:Zaggle Prepaid|12}% a year against my ~10%; I want to see a positive operating-cash-flow figure and a permanent chief financial officer first."],
+        inShort: ["**Employee-benefit and expense cards, accounts-payable software (Zoyer) and channel-partner rewards (Propel)** for 4,065 Indian companies and 4 million users, issued through 19 partner banks.", "**Good:** users rose 19%, churn is under 1.5% and net cash is about ₹500cr. **Bad:** free cash flow has been negative every year since FY23, program-fee growth slowed to 10%, and the margin fell to 8.2% as development costs are now expensed rather than capitalised.", "**Verdict: wait.** The price needs about {need:Zaggle Prepaid|12}% a year against my ~10%; I want to see a positive operating-cash-flow figure first, which management puts 16–18 months away."],
         tagline: "A Hyderabad-based spend-management company selling employee-benefit and expense cards, accounts-payable software and channel-partner rewards to Indian companies, issued through 19 partner banks.",
         revenue: '₹1,908cr (FY26, consolidated)',
         products: [
@@ -255,12 +255,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Sodexo, other benefits-card issuers', note: 'Compete for the employee-benefits wallet business.' }, { name: 'ERP-native or point AP-automation vendors', note: 'Compete with Zoyer for accounts-payable software budgets.' }],
         position: "**Describes itself as India's largest prepaid-card issuer**, with 4,065 corporates and over 50 million cards issued since inception; independent verification of the ranking was not found.",
         money: "Cash and other bank balances were about **₹546cr** at March 2026 (₹500cr net of borrowings), against ₹594.8cr raised in a December 2024 share sale at ₹523.20, most of which is unspent. The stock trades well below that issue price and below the ₹567 warrant price, so the unpaid 75% of the warrants is unlikely to be called. Free cash flow was negative every year FY23–FY26. No dividend. Promoters hold **44.3%**, broadly stable; the chief financial officer post has been filled on an interim basis since April 2026.",
-        watch: ["A positive operating-cash-flow figure, promised in 16–18 months from Q1 FY27.", "A permanent CFO appointment.", "Program-fee growth back above 20% as the Dice contracts transfer."],
+        watch: ["A positive operating-cash-flow figure, promised in 16–18 months from Q1 FY27.", "The new Group CFO's first full reporting cycle, and whether capitalisation stays tight.", "Program-fee growth back above 20% as the Dice contracts transfer."],
         charts: softwareCharts['Zaggle Prepaid'],
     },
     {
         company: 'Nucleus Software',
-        inShort: ["**FinnOne Neo lending software and FinnAxia transaction-banking software**, sold to over 200 banks and finance companies in 50 countries, mostly as a licence plus five-year maintenance.", "**Good:** the order book doubled to ₹1,244cr and cash of ₹978cr is about 55% of market value. **Bad:** Q1 revenue fell 3.4% and the margin collapsed to 3.6% as sales and R&D costs were raised ahead of revenue.", "**Verdict: wait.** The price needs about {need:Nucleus Software|10–11}% a year against my ~6%; I want to see revenue follow the order book before buying."],
+        inShort: ["**FinnOne Neo lending software and FinnAxia transaction-banking software**, sold to over 200 banks and finance companies in 50 countries, mostly as a licence plus five-year maintenance.", "**Good:** the order book doubled to ₹1,244cr and cash of ₹978cr is about 55% of market value. **Bad:** Q1 revenue fell 3.4% and the margin collapsed to 3.6% as sales and R&D costs were raised ahead of revenue; profit leaned on treasury income and a one-off gain, and it lost Bajaj Finance as a client.", "**Verdict: wait.** The price needs about {need:Nucleus Software|10–11}% a year against my ~6%; I want to see revenue follow the order book before buying."],
         tagline: "A Noida-based maker of FinnOne Neo lending software and FinnAxia transaction-banking software for over 200 banks and finance companies in 50 countries.",
         revenue: '₹876cr (FY26, consolidated)',
         products: [
@@ -283,7 +283,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'eMudhra',
-        inShort: ["**India's largest licensed certifying authority**, plus identity, certificate-lifecycle-management and e-signature software (emCA, SecurePass, CertiNext, emSigner) sold in India, the US, Europe and the Middle East.", "**Good:** profit rose 28% and the margin reached 26.2% in Q1, with shorter certificate lives and post-quantum rules as real tailwinds. **Bad:** organic growth was about 15% against 18% guided, free cash flow is negative, and a ₹128cr-plus claim from 3i Infotech now involves the police.", "**Verdict: wait.** The price needs about {need:eMudhra|23}% a year against my ~18%; I want the 3i Infotech dispute resolved or provided for first."],
+        inShort: ["**India's largest licensed certifying authority**, plus identity, certificate-lifecycle-management and e-signature software (emCA, SecurePass, CertiNext, emSigner) sold in India, the US, Europe and the Middle East.", "**Good:** profit rose 28% and the margin reached 26.2% in Q1, with shorter certificate lives and post-quantum rules as real tailwinds. **Bad:** organic growth was about 15% against 18% guided, free cash flow is negative, a ₹128cr-plus claim from 3i Infotech now involves the police while its chairman holds shares in the claimant, and it may have to buy the rest of Cryptas at ten times EBITDA.", "**Verdict: wait.** The price needs about {need:eMudhra|23}% a year against my ~18%; I want the 3i Infotech dispute resolved or provided for first."],
         tagline: "A Bengaluru-based digital-trust company: India's largest licensed certifying authority, plus identity, certificate-management and e-signature software sold in India, the US, Europe and the Middle East.",
         revenue: '₹702cr (FY26, consolidated)',
         products: [
@@ -308,7 +308,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Amagi Media Labs',
-        inShort: ["**Cloud software that runs TV and streaming channels 'glass to glass'**, from production through ad insertion, for over 400 content owners and 451 distribution platforms; about 73% of revenue comes from the Americas.", "**Good:** revenue has grown about 30% a year for three years, net revenue retention is 125–127% and the company-adjusted margin rose to 11.5%. **Watch:** the filed operating margin is only about 7%, gross margin is slipping, and a ₹2,170cr cloud-services commitment now sits off the balance sheet.", "**Verdict: pass.** The price needs about {need:Amagi Media Labs|36}% a year of earnings growth against my ~28%; I would follow it for a better entry."],
+        inShort: ["**Cloud software that runs TV and streaming channels 'glass to glass'**, from production through ad insertion, for over 400 content owners and 451 distribution platforms; about 73% of revenue comes from the Americas.", "**Good:** revenue has grown about 30% a year for three years, net revenue retention is 125–127% and the company-adjusted margin rose to 11.5%. **Watch:** the filed operating margin is only about 7%, gross margin is slipping, a ₹2,170cr cloud-services commitment now sits off the balance sheet, and one customer supplies 17.3% of revenue after a price cut.", "**Verdict: pass.** The price needs about {need:Amagi Media Labs|36}% a year of earnings growth against my ~28%; I would follow it for a better entry."],
         tagline: "A Bengaluru-founded cloud software company that runs TV and streaming channels and ad insertion for over 400 content owners and 451 distribution platforms; listed in January 2026.",
         revenue: '₹1,506cr (FY26, consolidated)',
         products: [
@@ -335,7 +335,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'CE Info Systems',
-        inShort: ["**Indian digital maps, navigation and location software**, embedded in carmakers' dashboards and apps, plus a fast-growing vehicle-tracker and fleet-software business; PhonePe owns 13.7%.", "**Good:** the core map business earns about 50% operating margins and cash is ₹745cr. **Bad:** FY26 revenue rose only 2% and profit fell 9%, recent growth is coming from low-margin trackers and slow-paying government work, and debtor days reached 136.", "**Verdict: pass.** The price needs about {need:CE Info Systems|20}% a year against my ~12%; I would wait for growth to return before paying up."],
+        inShort: ["**Indian digital maps, navigation and location software**, embedded in carmakers' dashboards and apps, plus a fast-growing vehicle-tracker and fleet-software business; PhonePe owns 13.7%.", "**Good:** the core map business earns about 50% operating margins and cash is ₹745cr. **Bad:** FY26 revenue rose only 2% and profit fell 9%, recent growth is coming from low-margin trackers and slow-paying government work, debtor days reached 136, and it booked its first government write-off.", "**Verdict: pass.** The price needs about {need:CE Info Systems|20}% a year against my ~12%; I would wait for growth to return before paying up."],
         tagline: "MapmyIndia: Indian digital maps, navigation and location software for carmakers, apps and government, plus vehicle trackers and fleet software; PhonePe owns 13.7%.",
         revenue: '₹474cr (FY26, consolidated)',
         products: [
@@ -359,7 +359,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Network People Services',
-        inShort: ["**UPI switches, mobile-banking 'Super App' software and an AI fraud-detection engine** sold to Indian banks, plus a merchant-payments business rebuilding after a price collapse; Tata Mutual Fund put ₹300cr into the company in 2025.", "**Good:** it targets 60–70% revenue growth for three years and has ₹300cr of new capital to spend. **Bad:** Q1 revenue was ₹56cr against the roughly ₹85–90cr a quarter its own target needs, the margin target was cut from about 37% to 30%, and receivables tripled while operating cash flow turned negative.", "**Verdict: pass.** The price needs about {need:Network People Services|31}% a year against my ~20%; the growth story is unproven and the guidance keeps moving."],
+        inShort: ["**UPI switches, mobile-banking 'Super App' software and an AI fraud-detection engine** sold to Indian banks, plus a merchant-payments business rebuilding after a price collapse; Tata Mutual Fund put ₹300cr into the company in 2025.", "**Good:** it targets 60–70% revenue growth for three years and has ₹300cr of new capital to spend. **Bad:** Q1 revenue was ₹56cr against the roughly ₹85–90cr a quarter its own target needs, the margin target was cut from about 37% to 30%, and receivables tripled while operating cash flow turned negative; both exchanges fined it for issuing shares without prior approval.", "**Verdict: pass.** The price needs about {need:Network People Services|31}% a year against my ~20%; the growth story is unproven and the guidance keeps moving."],
         tagline: "NPST, a Mumbai-based supplier of UPI switches, mobile-banking apps and fraud-detection software to Indian banks, now expanding in the Middle East; Tata Mutual Fund put in ₹300cr in 2025.",
         revenue: '₹195cr (FY26, consolidated)',
         products: [
@@ -407,7 +407,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'IZMO',
-        inShort: ["**Dealer websites, CRM and a large automotive-image library (izmocars, izmostudio, FrogData)** sold mostly in the US and Europe, plus a small advanced semiconductor-packaging unit (izmo Microsystems) supplying Indian defence.", "**Bad:** the auditor's opinion is given 'subject to' the fact that foreign subsidiaries earning about 81% of group revenue are audited by nobody, and free cash flow has been ₹2cr or less every year despite reported profits.", "**Verdict: avoid.** The chip-packaging story is real but small, and I would not trust the accounts until the foreign subsidiaries are properly audited."],
+        inShort: ["**Dealer websites, CRM and a large automotive-image library (izmocars, izmostudio, FrogData)** sold mostly in the US and Europe, plus a small advanced semiconductor-packaging unit (izmo Microsystems) supplying Indian defence.", "**Bad:** the auditor's opinion is given 'subject to' the fact that foreign subsidiaries earning about 81% of group revenue are audited by nobody, there is an emphasis of matter on regulatory inquiries, free cash flow has been ₹2cr or less every year despite reported profits, and the ₹150cr raise promised in June has not happened.", "**Verdict: avoid.** The chip-packaging story is real but small, and I would not trust the accounts until the foreign subsidiaries are properly audited."],
         tagline: "A Bengaluru-based family-run company selling websites, CRM and car images to dealers and rental firms in the US and Europe, plus a small chip-packaging unit (izmo Microsystems) for Indian defence.",
         revenue: '₹285cr (FY26, consolidated)',
         products: [

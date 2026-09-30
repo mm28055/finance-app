@@ -63,7 +63,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Raymond',
-        inShort: ["**Now an engineering group, not a textile company**: after demerging its lifestyle and property businesses, Raymond makes precision auto components (about 80% of revenue) and aircraft-engine parts through JK Maini Global Aerospace.", "**Good:** the aerospace arm grew 40% in Q1 FY27, makes more than 350 parts for the LEAP engine and has a ₹5,960cr ten-year order book. **Watch:** four-fifths is still a cyclical auto parts business, and its five-year Screener figures include businesses since demerged, so its history charts are not comparable.", "**Verdict: follow.** Worth tracking as the aerospace arm grows, but the new plant only produces from late 2027."],
+        inShort: ["**Now an engineering group, not a textile company**: after demerging its lifestyle and property businesses, Raymond makes precision auto components (about 80% of revenue) and aircraft-engine parts through JK Maini Global Aerospace.", "**Good:** the aerospace arm grew 40% in Q1 FY27, makes more than 350 parts for the LEAP engine and has a ₹5,960cr ten-year order book. **Watch:** four-fifths is still a cyclical auto parts business, FY26 operating cash was only ₹42cr, the promoter took warrants about 60% below the share price, and its five-year Screener figures include businesses since demerged, so its history charts are not comparable.", "**Verdict: follow.** Worth tracking as the aerospace arm grows, but the new plant only produces from late 2027, and cash and the warrants need to be explained first."],
         tagline: "Precision auto components and aircraft-engine parts, the engineering business left after Raymond's demergers.",
         revenue: '₹2,212cr (FY26, consolidated)',
         products: [
@@ -84,12 +84,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Sansera Engineering, Aequs, Azad Engineering', note: 'Indian precision makers also winning aerospace outsourcing; management says approved sources are few and demand is ahead of supply.' }, { name: 'Bharat Forge and other Indian auto component makers', note: 'Many auto suppliers are now adding aerospace and defence work.' }, { name: 'Suppliers in Mexico and Eastern Europe', note: 'Low-cost rivals for export auto work.' }],
         position: "**One of the earliest Indian makers of aircraft-engine parts**, with 22 years on engine programmes, inside a mid-sized auto component business.",
         money: "Net debt of about ₹873cr at March 2026 (Screener, borrowings less cash, not counting its ₹1,695cr of investments); the company says it had net cash of ₹129cr in June 2026. The company's 'net cash' figure nets the parent's treasury investments against about ₹1,055cr of borrowings in the engineering subsidiaries, and FY26 operating cash was only ₹42cr. A ₹1,000cr five-year capex plan (₹510cr aerospace, ₹430cr auto) is under way. In July 2026 the promoter was allotted 66.57 lakh warrants at ₹497 (₹331cr, 25% paid up front) for unnamed acquisitions, about 60% below the current share price; on conversion its stake rises from 48.9% to about 53.5%. About 1.69% of the shares remain pledged. The FY26 audit carries an emphasis of matter on the realty-demerger accounting, and contingent liabilities are about ₹95cr, mostly from divested businesses. Promoters hold **48.9%** today.",
-        watch: ["The Gudipalli aerospace plant starting on time in late 2027.", "Aerospace margin moving from 21% towards the 25% target.", "What the promoter warrant money is spent on."],
+        watch: ["The Gudipalli aerospace plant starting on time in late 2027.", "Aerospace margin moving from 21% towards the 25% target.", "What the promoter warrant money is spent on.", "Operating cash catching up with operating profit (only ₹42cr in FY26)."],
         charts: aerospaceDefenceCharts['Raymond'],
     },
     {
         company: 'Sansera Engineering',
-        inShort: ["**A Bengaluru maker of precision forged and machined engine parts**, mainly connecting rods, crankshafts and rocker arms for cars and motorcycles, with a fast-growing aerospace, defence and semiconductor-equipment arm.", "**Good:** strong execution, margins up to about 19%, and a ₹5,750cr five-year aerospace and semiconductor order book. **Watch:** about four-fifths is still auto, cost increases have not yet been passed on, and US tariffs hit exports.", "**Verdict: follow.** A good business, but the price needs more growth than I expect from a company still mostly in auto parts."],
+        inShort: ["**A Bengaluru maker of precision forged and machined engine parts**, mainly connecting rods, crankshafts and rocker arms for cars and motorcycles, with a fast-growing aerospace, defence and semiconductor-equipment arm.", "**Good:** strong execution, margins up to about 19%, and a ₹5,750cr five-year aerospace and semiconductor order book. **Watch:** about four-fifths is still auto, cost increases have not yet been passed on, US tariffs hit exports, free cash was negative in FY25 and FY26, and the auditor found a ₹9.12cr payment fraud at a subsidiary.", "**Verdict: follow.** A good business, but the price needs more growth than I expect from a company still mostly in auto parts."],
         tagline: "Precision forged and machined engine components for vehicles, and parts for aircraft, defence and chip-making equipment.",
         revenue: '₹3,498cr (FY26, consolidated)',
         products: [
@@ -110,12 +110,12 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Bharat Forge', note: 'Much larger Indian forger with its own aerospace and defence business.' }, { name: 'Ramkrishna Forgings', note: 'Indian forger focused on commercial vehicles and exports.' }, { name: 'Raymond (JK Maini), Aequs, Azad Engineering', note: 'Indian rivals for aerospace outsourcing work.' }],
         position: "**One of the world's top ten connecting-rod suppliers** for light and commercial vehicles, and one of the fastest-growing Indian suppliers of aerospace and chip-equipment parts.",
         money: "Net debt of about ₹194cr at March 2026 (Screener). Capex for new aerospace hangars, a defence plant and auto capacity is funded from cash flow; management says no new share sale is needed now. Q1 FY27 included a ₹16.9cr settlement of a US lawsuit over gear-shifter forks, against only ₹2cr provided earlier, and the auditor reported a ₹9.12cr payment fraud over five years at subsidiary Fitwel. Free cash flow was negative in FY25 and FY26. Promoters hold **29.2%**, down from 35.2% in September 2023.",
-        watch: ["Recovery of cost increases from vehicle customers.", "Ramp-up of the semiconductor-equipment order and new aerospace hangar.", "US tariffs on auto exports."],
+        watch: ["Recovery of cost increases from vehicle customers.", "Ramp-up of the semiconductor-equipment order and new aerospace hangar.", "US tariffs on auto exports.", "Free cash flow turning positive, and inventory days coming back from 169."],
         charts: aerospaceDefenceCharts['Sansera Engineering'],
     },
     {
         company: 'Aequs',
-        inShort: ["**A maker of aircraft parts and assemblies for Airbus, Boeing and Safran**, built from raw metal to finished assembly inside one campus at Belagavi, plus a newer consumer-products factory business (electronics casings, toys, cookware).", "**Good:** the aerospace arm is a real franchise, with a $1bn order book, 23% segment margins and a first-ever contract to build complete Airbus A320 wheels in India. **Bad:** the consumer arm lost ₹36cr in Q1 FY27 at 22% factory use, so the group as a whole still loses money and burns cash.", "**Verdict: wait.** The investable moment is the consumer arm reaching breakeven, targeted for Q4 FY27; until then the losses hide the aerospace business."],
+        inShort: ["**A maker of aircraft parts and assemblies for Airbus, Boeing and Safran**, built from raw metal to finished assembly inside one campus at Belagavi, plus a newer consumer-products factory business (electronics casings, toys, cookware).", "**Good:** the aerospace arm is a real franchise, with a $1bn order book, 23% segment margins and a first-ever contract to build complete Airbus A320 wheels in India. **Bad:** the consumer arm lost ₹36cr in Q1 FY27 at 22% factory use, so the group as a whole still loses money and burns cash, and months after saying no raise was planned this year the board approved ₹650cr of promoter warrants below the market price.", "**Verdict: wait.** The investable moment is the consumer arm reaching breakeven, targeted for Q4 FY27; until then the losses hide the aerospace business."],
         tagline: "Aircraft structures, engine and landing-gear parts made from forging to assembly in one Indian campus, alongside a loss-making consumer contract-manufacturing arm.",
         revenue: '₹1,230cr (FY26, consolidated)',
         products: [
@@ -142,7 +142,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Unimech Aerospace',
-        inShort: ["**A Bengaluru maker of the tools used to build and repair jet engines**, plus precision parts for aerospace, nuclear and semiconductor customers, and now metal bellows after buying Hobel Bellows.", "**Good:** 65% gross margins, 36% operating margin in Q1 FY27 and a first multi-year parts contract with FACC of Austria. **Bad:** tooling orders are one-off and lumpy (a US tariff shock cut one quarter's revenue to ₹34cr), and a ₹750cr share sale is authorised.", "**Verdict: wait.** I want to see tooling orders hold up and the new parts and bellows businesses turn into steady repeat revenue before buying."],
+        inShort: ["**A Bengaluru maker of the tools used to build and repair jet engines**, plus precision parts for aerospace, nuclear and semiconductor customers, and now metal bellows after buying Hobel Bellows.", "**Good:** 65% gross margins, 36% operating margin in Q1 FY27 and a first multi-year parts contract with FACC of Austria. **Bad:** tooling orders are one-off and lumpy (a US tariff shock cut one quarter's revenue to ₹34cr), the top customer was 44.5% of FY26 revenue, treasury income worth 57% of FY26 pre-tax profit has gone into Hobel, and a ₹750cr share sale is authorised.", "**Verdict: wait.** I want to see tooling orders hold up and the new parts and bellows businesses turn into steady repeat revenue before buying."],
         tagline: "Aero-engine and airframe tooling for engine makers and repair shops, with a growing precision parts and metal bellows business.",
         revenue: '₹240cr (FY26, consolidated)',
         products: [
@@ -197,7 +197,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'MTAR Technologies',
-        inShort: ["**A precision engineer whose biggest product by far is fuel-cell 'hot boxes' for America's Bloom Energy**, with smaller nuclear, space and defence businesses.", "**Good:** revenue up 130% in Q1 FY27, a ₹5,143cr order book and working capital cut sharply. **Watch:** about 70% of revenue rests on one American customer, on short-cycle orders.", "**Verdict: follow.** A real, funded boom, but too much of it depends on Bloom staying ahead and staying loyal."],
+        inShort: ["**A precision engineer whose biggest product by far is fuel-cell 'hot boxes' for America's Bloom Energy**, with smaller nuclear, space and defence businesses.", "**Good:** revenue up 130% in Q1 FY27, a ₹5,143cr order book and working capital cut sharply. **Watch:** about 70% of revenue rests on one American customer, on short-cycle orders; gross margin fell from 54.2% to 45.5% in a year, and promoters keep selling.", "**Verdict: follow.** A real, funded boom, but too much of it depends on Bloom staying ahead and staying loyal."],
         tagline: "Precision engineer making fuel-cell hot boxes for Bloom Energy, plus nuclear reactor assemblies, rocket-engine parts, actuators and ball screws.",
         revenue: '₹876cr (FY26, consolidated)',
         products: [
@@ -224,12 +224,12 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**One of the top three precision-engineering suppliers** to India's civil nuclear, space and defence programmes, and **Bloom Energy's main hot-box supplier**.",
         money: "Screener shows **net debt of ₹356cr** at March 2026 (borrowings less cash; it leaves out about ₹215cr of investments). The company says that against debt of ₹424cr at June 2026 it held ₹379cr of investments by end-July, so net debt is only ₹20–30cr. About ₹500cr of capex is planned, funded from profits and debt. Promoters hold **29.4%**, down from 39.1% in September 2023; promoter-group members kept selling small amounts in September 2026 and pledged a few shares.",
-        watch: ["Bloom's order flow, and whether it adds another hot-box supplier.", "Phase 2 and Phase 3 capacity starting on time.", "Working capital staying near the 100-day target."],
+        watch: ["Bloom's order flow, and whether it adds another hot-box supplier.", "Phase 2 and Phase 3 capacity starting on time.", "Working capital staying near the 100-day target.", "Gross margin steadying, and further promoter selling or pledges."],
         charts: aerospaceDefenceCharts['MTAR Technologies'],
     },
     {
         company: 'Azad Engineering',
-        inShort: ["**A Hyderabad maker of turbine blades and vanes** for gas, steam and nuclear power turbines (about 81% of revenue) and for aircraft engines, working in plants dedicated to single customers such as GE, Siemens Energy, Mitsubishi and Baker Hughes.", "**Good:** the hardest qualification in this group, 37% margins, an order book of about ₹6,500cr and India's first home-made expendable turbojet engine delivered to DRDO. **Watch:** heavy spending ahead of revenue and receivables of about 200 days mean cash flow lags profit.", "**Verdict: follow.** An excellent business; I would buy once cash flow catches up with profit or the price falls."],
+        inShort: ["**A Hyderabad maker of turbine blades and vanes** for gas, steam and nuclear power turbines (about 81% of revenue) and for aircraft engines, working in plants dedicated to single customers such as GE, Siemens Energy, Mitsubishi and Baker Hughes.", "**Good:** the hardest qualification in this group, 37% margins, an order book of about ₹6,500cr and India's first home-made expendable turbojet engine delivered to DRDO. **Watch:** heavy spending ahead of revenue and receivables of about 200 days mean cash flow lags profit: operating cash was −₹119cr in FY26 and debt rose from ₹263cr to ₹474cr.", "**Verdict: follow.** An excellent business; I would buy once cash flow catches up with profit or the price falls."],
         tagline: "Precision blades, vanes and other turbine parts for power-generation and aircraft engines, made in plants dedicated to each customer.",
         revenue: '₹603cr (FY26, consolidated)',
         products: [
@@ -255,7 +255,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Astra Microwave Products',
-        inShort: ["**A maker of radio-frequency and microwave systems**: radar front-ends, electronic warfare, missile parts, satellite parts and weather radars for DRDO, HAL, BEL and ISRO.", "**Good:** a ₹2,205cr HAL order for Tejas Mk1A radar subsystems lifts the order book to about ₹4,300cr, close to four years of revenue. **Watch:** quarters are lumpy, working capital is heavy and the space arm is being split off.", "**Verdict: follow.** Its radar work is tied to aircraft production until FY32, but guidance implies 16–18% a year until FY29 and the price asks for more."],
+        inShort: ["**A maker of radio-frequency and microwave systems**: radar front-ends, electronic warfare, missile parts, satellite parts and weather radars for DRDO, HAL, BEL and ISRO.", "**Good:** a ₹2,205cr HAL order for Tejas Mk1A radar subsystems lifts the order book to about ₹4,300cr, close to four years of revenue. **Watch:** quarters are lumpy (Q1 FY27 revenue fell 11%), working capital is heavy, the Rafael joint venture's FY27 sales guide was cut to ₹360cr, and the space arm is being split off.", "**Verdict: follow.** Its radar work is tied to aircraft production until FY32, but guidance implies 16–18% a year until FY29 and the price asks for more."],
         tagline: "Designer and maker of RF and microwave subsystems and systems for radars, electronic warfare, missiles, satellites and weather radars.",
         revenue: '₹1,163cr (FY26, consolidated)',
         products: [
@@ -319,7 +319,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Zen Technologies',
-        inShort: ["**India's largest maker of military training simulators and anti-drone systems**, selling mainly to the Indian Army.", "**Good:** gross margins near 73%, about 26% of the order book in maintenance contracts, and ₹342cr of net cash. **Bad:** Q1 FY27 revenue fell 10.5%, while guidance of ₹4,000cr over FY27–FY28 needs about three times FY26's ₹688cr each year.", "**Verdict: wait.** Let orders catch up with the guidance first."],
+        inShort: ["**India's largest maker of military training simulators and anti-drone systems**, selling mainly to the Indian Army.", "**Good:** gross margins near 73%, about 26% of the order book in maintenance contracts, and ₹342cr of net cash. **Bad:** revenue fell 29% in FY26 and another 10.5% in Q1 FY27, Q1 orders were only ₹44.6cr, and working capital rose to 257 days, while guidance of ₹4,000cr over FY27–FY28 needs about three times FY26's ₹688cr each year.", "**Verdict: wait.** Let orders catch up with the guidance first; even then the price needs about {need:Zen Technologies|30}% a year of growth against my ~15%."],
         tagline: "Designer and maker of combat training simulators and anti-drone systems, with drone propulsion and unmanned ground vehicles as newer lines.",
         revenue: '₹688cr (FY26, consolidated)',
         products: [
@@ -350,7 +350,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'ideaForge Technology',
-        inShort: ["**India's leading maker of small military drones**, used by the Army, paramilitary and police for surveillance, with its own autopilot, radio links and navigation that keep working when GPS is jammed.", "**Good:** it owns its key technology and recently raised ₹500cr, so it has cash. **Bad:** sales swing wildly with government orders, staff costs were more than half of FY26 sales, and its ₹256.8cr order book runs out by December 2026.", "**Verdict: wait.** Earnings are close to zero, so the usual price-to-earnings yardstick tells you nothing; buy when the Army's big drone orders actually arrive."],
+        inShort: ["**India's leading maker of small military drones**, used by the Army, paramilitary and police for surveillance, with its own autopilot, radio links and navigation that keep working when GPS is jammed.", "**Good:** it owns its key technology and recently raised ₹500cr, so it has cash. **Bad:** sales swing wildly with government orders, staff costs were more than half of FY26 sales, it capitalised ₹81.6cr of FY26 development spending against ₹6cr of operating profit, and its ₹256.8cr order book runs out by December 2026.", "**Verdict: wait.** Earnings are close to zero, so the usual price-to-earnings yardstick tells you nothing; buy when the Army's big drone orders actually arrive."],
         tagline: "Mumbai-based maker of small surveillance drones for the Indian armed forces, police and surveyors.",
         revenue: '₹226cr (FY26, consolidated)',
         products: [
@@ -373,7 +373,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Adani and Tata defence units', note: 'Large groups now bidding for the same Army drone tenders, with far deeper pockets.' }, { name: 'Indian drone start-ups', note: 'Many smaller makers compete where specifications are loose and price decides.' }, { name: 'DJI and Skydio', note: 'The leading Chinese and US drone makers; relevant to its US plans rather than Indian military tenders.' }],
         position: "**India's leader in small military drones**, and by its own account third in the world in dual-use (civil and defence) drones. It is still small: yearly revenue has swung between ₹161cr and ₹314cr over the last three years.",
         money: "Screener shows **net cash of about ₹60cr** at March 2026 (borrowings ₹84cr against cash and investments of ₹144cr). Since then it has raised **₹500cr through a share placement** (QIP) for product development and working capital, and has a letter of intent for up to ₹151cr of low-cost government loans for Yeti. Operating cash flow was negative in FY25 and FY26. It capitalised ₹81.6cr of development spending in FY26, against ₹6cr of operating profit, which its auditor made a key audit matter. Promoters hold **25.3%**, down from 29.3% in December 2023.",
-        watch: ["Army fast-track drone orders actually being placed.", "New orders before the book runs out around December 2026.", "US certification and the US joint venture."],
+        watch: ["Army fast-track drone orders actually being placed.", "New orders before the book runs out around December 2026.", "How much development spending is capitalised, and operating cash after it.", "US certification and the US joint venture."],
         charts: aerospaceDefenceCharts['ideaForge Technology'],
     },
     {
@@ -434,7 +434,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'AXISCADES Technologies',
-        inShort: ["**Selling its engineering-services business to rebuild as a defence and aerospace manufacturer**: missile and radar electronics, anti-drone systems, semiconductor test equipment in the US, and aircraft parts.", "**Good:** the defence unit more than doubled to ₹125cr in Q1 FY27, and the sale is priced at up to $237m, though only about ₹910cr arrives in the next few months. **Bad:** the businesses that earned the profits are being sold, what remains does not yet cover its interest and depreciation, and the FY27 plan relies on acquisitions not yet signed.", "**Verdict: avoid.** The price assumes a plan that has not happened yet, and the sale money keeps slipping."],
+        inShort: ["**Selling its engineering-services business to rebuild as a defence and aerospace manufacturer**: missile and radar electronics, anti-drone systems, semiconductor test equipment in the US, and aircraft parts.", "**Good:** the defence unit more than doubled to ₹125cr in Q1 FY27, and the sale is priced at up to $237m, though only about ₹910cr arrives in the next few months. **Bad:** the businesses that earned the profits are being sold, what remains does not yet cover its interest and depreciation, the FY27 plan relies on acquisitions not yet signed, and in late September the promoter sold 10.86% of the company while it borrowed at 12.5%.", "**Verdict: avoid.** The price assumes a plan that has not happened yet, and the sale money keeps slipping."],
         tagline: "Former engineering-services firm turning into a maker of defence electronics, semiconductor test equipment and aircraft parts after selling its services arm to Akkodis.",
         revenue: '₹531cr (FY26, consolidated)',
         products: [
@@ -513,7 +513,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Krishna Defence & Allied Industries',
-        inShort: ["**A Gujarat company making naval steel products India used to import from Russia**: bulb bars for warship hulls, special welding wire, submarine ballast and tank armour profiles.", "**Good:** about 31% return on capital, margin up from 16% to 21% in FY26, and cash in hand. **Watch:** the order book fell to ₹103cr in March and ₹117cr in June as shipyards ordered in smaller batches, Q1 FY27 revenue fell 15%, and one shipyard is 35–40% of revenue.", "**Verdict: own.** Qualified import-substitute products, with room to roughly double sales on existing capacity."],
+        inShort: ["**A Gujarat company making naval steel products India used to import from Russia**: bulb bars for warship hulls, special welding wire, submarine ballast and tank armour profiles.", "**Good:** about 31% return on capital, margin up from 16% to 21% in FY26, and cash in hand. **Watch:** the order book fell to ₹103cr in March and ₹117cr in June as shipyards ordered in smaller batches, H2 FY26 orders were about ₹30cr against ₹100–150cr promised, Q1 FY27 revenue fell 15%, and one shipyard is 35–40% of revenue.", "**Verdict: own.** Qualified import-substitute products, with room to roughly double sales on existing capacity; keep the position small, and it drops to follow if the order book is still below ₹150cr by December."],
         tagline: "Maker of naval bulb bars, special welding consumables, submarine ballast and tank armour profiles, with a small legacy dairy-equipment business.",
         revenue: '₹245cr (FY26, consolidated)',
         products: [
@@ -540,12 +540,12 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**A naval-approved source for warship bulb bars**, supplying most Indian shipyards, and an early Indian supplier of submarine ballast and T-90 armour profiles.",
         money: "Screener shows **net cash of ₹29cr** at March 2026 (cash less borrowings), but this leaves out about ₹77cr of long-term fixed deposits; the company puts its cash at over ₹100cr. Stakes in Conceptia (20%), Waveoptix (40%, whose bank loans it guarantees for ₹5cr), Tarabadkar (47%) and the Vabo joint venture (51%) are funded from its own cash. FY26 operating cash of ₹86cr was helped by a year-end dip in inventory (₹16.3cr against a normal ~₹40cr). During FY26 it bought two flats from its MD, and its finance chief changed in April 2026. Promoters hold **59.9%**, down from 73.4% in March 2023.",
-        watch: ["Conversion of the ₹289cr tender pipeline, with the order book above ₹150cr by December.", "Orders from the next-generation corvette programme.", "How much revenue depends on the largest shipyard."],
+        watch: ["Conversion of the ₹289cr tender pipeline, with the order book above ₹150cr by December.", "Orders from the next-generation corvette programme.", "How much revenue depends on the largest shipyard.", "Operating cash once inventory rebuilds from the ₹16.3cr March low, and any further dealings with the MD after the FY26 flat purchases."],
         charts: aerospaceDefenceCharts['Krishna Defence & Allied Industries'],
     },
     {
         company: 'Mishra Dhatu Nigam (MIDHANI)',
-        inShort: ["**India's state-owned maker of superalloys, titanium alloys and special steels** for fighter and rocket engines, missiles, warships and armour.", "**Good:** India's only titanium-alloy maker, a ₹2,329cr order book and about ₹8,000cr of imports in grades it can make. **Bad:** no more nomination orders, fixed-price contracts, and margins down from 26–31% (FY19–FY23) to about 20%.", "**Verdict: pass.** It now bids for every order at a fixed price, and its costs are not protected."],
+        inShort: ["**India's state-owned maker of superalloys, titanium alloys and special steels** for fighter and rocket engines, missiles, warships and armour.", "**Good:** India's only titanium-alloy maker, a ₹2,329cr order book and about ₹8,000cr of imports in grades it can make. **Bad:** no more nomination orders, fixed-price contracts, margins down from 26–31% (FY19–FY23) to about 20% (15% in Q1 FY27, with guidance cut to 20–21%), inventory above a year's revenue, and four months without independent directors.", "**Verdict: pass.** It now bids for every order at a fixed price, and its costs are not protected."],
         tagline: "Government-owned maker of superalloys, titanium alloys, special steels and armour products for defence, space and energy.",
         revenue: '₹1,209cr (FY26, consolidated)',
         products: [

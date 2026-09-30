@@ -54,7 +54,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Tips Music',
-        inShort: ["**A music label that owns 38,000-plus songs**, strongest in 1990s Hindi film music, and licenses them to YouTube, streaming apps, broadcasters, brands and venues.", "**Good:** a 73% margin, 118% return on capital and ₹345cr of cash, with nearly all profit paid out. **Watch:** content spending is rising, the CEO left in April and more music comes from the promoters' own film company.", "**Verdict: wait.** A superb business, but the price needs more growth than I expect."],
+        inShort: ["**A music label that owns 38,000-plus songs**, strongest in 1990s Hindi film music, and licenses them to YouTube, streaming apps, broadcasters, brands and venues.", "**Good:** a 73% margin, 118% return on capital and ₹345cr of cash, with nearly all profit paid out. **Watch:** content spending is rising and Q1 FY27 profit fell 4%, the CEO left in April, the YouTube Shorts renewal is still unsigned, and more music comes from the promoters' own film company.", "**Verdict: wait.** A superb business, but the price needs more growth than I expect."],
         tagline: "A catalogue-led music label (founded 1988, Taurani family) earning royalties and licence fees on 38,000-plus songs in 25-plus languages.",
         revenue: '₹376cr (FY26, standalone)',
         products: [
@@ -82,7 +82,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Saregama India',
-        inShort: ["**India's oldest music label and second-largest by revenue**, owning 1.8 lakh songs, and now also managing artists, staging live events and making short videos (RPSG group).", "**Good:** music revenue up 39% in Q1 FY27, first in new music across several languages, and exclusive rights to Bhansali films' music. **Bad:** ₹1,000cr of music buying has kept profit flat for three years, and free cash flow was negative in FY26.", "**Verdict: wait.** A strong label, but the price needs faster profit growth than I expect."],
+        inShort: ["**India's oldest music label and second-largest by revenue**, owning 1.8 lakh songs, and now also managing artists, staging live events and making short videos (RPSG group).", "**Good:** music revenue up 39% in Q1 FY27, first in new music across several languages, and exclusive rights to Bhansali films' music. **Bad:** ₹1,000cr of music buying has kept profit flat for three years, free cash flow was negative in FY26, and the auditors made the ₹325cr Bhansali stake a key audit matter.", "**Verdict: wait.** A strong label, but the price needs faster profit growth than I expect."],
         tagline: "A music label with India's largest archive of old film songs, a fast-growing new-music business, and artist, events and video arms around it.",
         revenue: '₹985cr (FY26, consolidated)',
         products: [
@@ -111,7 +111,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Basilic Fly Studio',
-        inShort: ["**A visual-effects (VFX) studio** creating digital sets, creatures, crowds and clean-ups for Netflix, Amazon and Hollywood, mostly from Chennai and Pune, with 70% of UK studio One of Us.", "**Good:** a record order book and bid pipeline, and India studios earning a 42% margin. **Bad:** group margin down to 14% in Q1 FY27, profits that do not turn into cash, and an unaudited Canadian subsidiary.", "**Verdict: pass.** The price is low, but the cash and accounting questions come first."],
+        inShort: ["**A visual-effects (VFX) studio** creating digital sets, creatures, crowds and clean-ups for Netflix, Amazon and Hollywood, mostly from Chennai and Pune, with 70% of UK studio One of Us.", "**Good:** a record order book and bid pipeline, and India studios earning a 42% margin. **Bad:** group margin down to 14% in Q1 FY27 and profit down 44%, profits that do not turn into cash, ₹59cr of staff time capitalised, and an unaudited Canadian subsidiary.", "**Verdict: pass.** The price is low, but the cash and accounting questions come first."],
         tagline: "A VFX services company with studios in India, London, Paris and Vancouver, listed on NSE's SME board since 2023.",
         revenue: '₹408cr (FY26, consolidated)',
         products: [

@@ -112,7 +112,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Eureka Forbes',
-        inShort: ["**Owner of Aquaguard, India's leading water-purifier brand**, plus Forbes vacuum and robotic cleaners and air purifiers, with a large after-sales service business; controlled by Advent International since 2022.", "**Good:** revenue grew 15.3% in Q1 FY27 with share gains, the margin has roughly doubled in three years and it holds net cash. **Bad:** service revenue grew only about 4% in FY26, and Advent's holding company has pledged 51% of the company's shares.", "**Verdict: wait.** A strong brand, but the price asks a little more growth than I expect."],
+        inShort: ["**Owner of Aquaguard, India's leading water-purifier brand**, plus Forbes vacuum and robotic cleaners and air purifiers, with a large after-sales service business; controlled by Advent International since 2022.", "**Good:** revenue grew 15.3% in Q1 FY27 with share gains, the margin has roughly doubled in three years and it holds net cash. **Bad:** service revenue grew only about 4% in FY26, Advent's holding company has pledged 51% of the company's shares (topped up in September), and a ₹273.4cr GST show-cause notice for FY23 arrived on 28 September.", "**Verdict: wait.** A strong brand, but the price asks a little more growth than I expect."],
         tagline: "India's best-known water-purifier and vacuum-cleaner brand, earning about a quarter of its revenue from servicing the machines it has sold.",
         revenue: '₹2,709cr (FY26, consolidated)',
         products: [
@@ -134,7 +134,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Kent RO', note: 'The main branded purifier rival, strong in North India.' }, { name: 'Pureit (A.O. Smith), Livpure, Havells', note: 'Other purifier brands competing at every price point.' }, { name: 'Local plumbers and Urban Company', note: 'Undercut its service contracts and filters on price.' }, { name: 'Global robot-vacuum brands', note: 'Sold mainly online, competing with Forbes robots.' }],
         position: "**India's leading water-purifier brand** and a market leader in vacuum cleaners, with the largest home-service network in the category.",
         money: "Screener shows **₹447cr of net cash**; the company put it at ₹425cr in June 2026. Capex is small (₹84cr in FY26; no FY27 figure given), and part of the cash is kept for acquisitions. No dividend has been paid since listing. CRISIL upgraded it to AA/Stable in September 2026. About 74% of its assets are goodwill and brands from Advent's 2022 purchase. Advent's Lunolux holds **62.55%**, down from 72.56% in September 2023, and has **pledged shares equal to 51% of the company**, topped up in July and September 2026.",
-        watch: ["Service revenue growing again at high single digits.", "Full-year margin at or above FY26 (12.2% on the company's adjusted basis).", "Any further pledge top-up or block sale by Advent."],
+        watch: ["Service revenue growing again at high single digits.", "Full-year margin at or above FY26 (12.2% on the company's adjusted basis).", "Any further pledge top-up or block sale by Advent.", "The outcome of the ₹273.4cr Uttar Pradesh GST notice, which the company will contest."],
         charts: consumerDurablesCharts['Eureka Forbes'],
     },
     {
@@ -167,7 +167,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Orient Electric',
-        inShort: ["**A CK Birla group maker of fans, coolers, water heaters and small appliances**, plus LED lighting, switchgear and new house wires, from plants in Faridabad, Kolkata, Noida and Hyderabad.", "**Good:** revenue grew 23.5% in Q1 FY27, fan share is rising, lighting has beaten the market for 10–12 quarters, and it holds net cash. **Bad:** gross margin fell for a third quarter to 29.8%, and its double-digit margin goal keeps slipping.", "**Verdict: wait.** Good growth, but the price asks more margin than it has shown."],
+        inShort: ["**A CK Birla group maker of fans, coolers, water heaters and small appliances**, plus LED lighting, switchgear and new house wires, from plants in Faridabad, Kolkata, Noida and Hyderabad.", "**Good:** revenue grew 23.5% in Q1 FY27, fan share is rising, lighting has beaten the market for 10–12 quarters, and it holds net cash. **Bad:** gross margin fell for a third quarter to 29.8%, its double-digit margin goal keeps slipping, and it faces GST anti-evasion demands of ₹29.25cr plus an equal penalty.", "**Verdict: wait.** Good growth, but the price asks more margin than it has shown."],
         tagline: "A mid-sized fan and lighting brand with design awards and export reach, still trying to lift its margin to double digits.",
         revenue: '₹3,326cr (FY26, standalone)',
         products: [
