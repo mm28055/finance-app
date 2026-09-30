@@ -16,7 +16,7 @@ export default async function Home() {
   return (
     <main className="min-h-screen bg-[#FAFBFC] p-6">
       {/* Header */}
-      <header className="flex justify-between items-center mb-6 pb-4 border-b border-gray-200">
+      <header className="max-w-6xl flex justify-between items-center mb-6 pb-4 border-b border-gray-200">
         <div>
           <h1 className="text-lg font-semibold text-gray-800 tracking-tight">Manish Dashboard</h1>
           <p className="text-gray-400 text-xs">Real-Time Earning Intelligence</p>
