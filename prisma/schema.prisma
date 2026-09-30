@@ -1,6 +1,7 @@
 generator client {
-  provider   = "prisma-client-js"
-  engineType = "binary"
+  provider = "prisma-client-js"
+  // Engine: the fast in-process one by default (Vercel, GitHub Actions). This laptop sets
+  // PRISMA_CLIENT_ENGINE_TYPE="binary" in .env because its chip cannot load that one.
 }
 
 datasource db {
