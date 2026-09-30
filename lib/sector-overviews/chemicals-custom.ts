@@ -724,7 +724,7 @@ export const chemicalsCustom: SectorOverview = {
             company: 'Clean Science', rank: 2, stance: 'PRICED', segment: NICHE,
             what: "Makes MEHQ, BHA, guaiacol and other performance, pharma and food-antioxidant chemicals by its own catalytic routes, and now HALS plastic light-stabilisers and hydroquinone in a subsidiary; about two-thirds is exported.",
             view: "**The best business here, but the older products are shrinking.** Standalone margin is still 42.7%, it has ~₹480cr of net cash and a five-year Kemin contract. But standalone sales fell 12% in FY26 and 6% in Q1, ~₹850cr in HALS turns only about 0.3x so far, Q1 profit growth came from other income, and promoters sold 24% in 2025. The price needs about {need:Clean Science|20}% a year against my ~13%.",
-            watch: 'HALS revenue reaching ₹250–300cr in FY27; operating profit clearly above ₹100cr a quarter; standalone volumes growing again.',
+            watch: 'HALS revenue reaching ₹250–300cr in FY27; operating profit clearly above ₹100cr a quarter; standalone volumes growing again. On 23 Sep 2026 Maharashtra GST officials began search-and-seizure proceedings at its offices and plants and those of its subsidiary Clean Fino Chem; the company says there is no material impact so far (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Alkyl Amines', rank: 3, stance: 'CYCLICAL', segment: AMINE,
@@ -766,7 +766,7 @@ export const chemicalsCustom: SectorOverview = {
             company: 'Anupam Rasayan', rank: 9, stance: 'SCALEUP', segment: CSM,
             what: "A custom-synthesis maker of multi-step agro, pharma and performance-material molecules for global innovators, which has added Tanfac (fluorides), Jayhawk (US) and Bliss GVS (formulations).",
             view: "**A good standalone business wrapped in a leveraged acquisition spree.** Standalone margin is 34% and the letter-of-intent book is ₹17,496cr. But organic growth was single-digit in Q1, return on capital is 7%, asset turns 0.6x, and a ₹1,136cr guarantee for a 15%-owned Luxembourg company funds Jayhawk, with Bliss using the same structure. The price needs about {need:Anupam Rasayan|30}% a year against my ~20%.",
-            watch: 'Two quarters of 20%+ organic growth; how the Batam and Bliss investors are bought out; the Jayhawk depreciation review.',
+            watch: 'Two quarters of 20%+ organic growth; how the Batam and Bliss investors are bought out; the Jayhawk depreciation review. In September 2026 it took control of Bliss GVS Pharma (50.07% with its partners after the open offer and a further ₹162.7cr market purchase), funded partly by up to ₹300cr of subsidiary debentures that it guaranteed and secured with pledged subsidiary shares (NSE filings, noted 30 Sep 2026).',
         },
         {
             company: 'Laxmi Organic', rank: 10, stance: 'CYCLICAL', segment: AMINE,
@@ -778,7 +778,7 @@ export const chemicalsCustom: SectorOverview = {
             company: 'Neogen Chemicals', rank: 11, stance: 'SCALEUP', segment: NICHE,
             what: "Makes bromine and lithium-based intermediates for pharma and agro, and through a subsidiary is building India’s largest battery electrolyte and lithium-salt plants.",
             view: "**The base business is improving; the price is a battery bet.** Q1 was a record (19.3% margin, guidance raised) and a ₹600cr share sale eased the balance sheet. But battery revenue was ₹36cr in FY26 against ₹2,400–2,900cr hoped for in FY29, Chinese salt is 20–25% cheaper, the auditor flags the fire-insurance claim and it guarantees ₹1,223cr of subsidiary debt. The price needs about {need:Neogen Chemicals|43}% a year against my ~35%.",
-            watch: 'US salt shipments at formula prices from early 2027; ₹300cr of FY27 battery revenue; the insurer’s settlement against the ₹348.8cr claim.',
+            watch: 'US salt shipments at formula prices from early 2027; ₹300cr of FY27 battery revenue; the insurer’s settlement against the ₹348.8cr claim. On 26 Sep 2026 CRISIL moved its outlook back to Stable from Negative (rating A-) after the ₹600cr QIP (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Camlin Fine', rank: 12, stance: 'AVOID', segment: NICHE,
