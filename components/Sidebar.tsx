@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { cn } from "@/lib/utils";
-import { Activity, ShieldAlert } from 'lucide-react';
+import { ShieldAlert } from 'lucide-react';
 import { useAdmin } from '@/context/AdminContext';
 import { GeneralNotesList } from './GeneralNotesList';
 
@@ -27,15 +27,8 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
                 "w-[260px] 2xl:w-72 bg-white border-r border-gray-200 flex flex-col h-screen fixed left-0 top-0 overflow-hidden shadow-sm transition-transform duration-300 z-50",
                 isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
             )}>
-                {/* Brand */}
-                <div className="p-5 border-b border-gray-100 flex items-center justify-between">
-                    <div>
-                        <div className="flex items-center gap-2 text-[#6B9FCC] mb-0.5">
-                            <Activity className="w-4 h-4" />
-                            <span className="font-semibold text-sm tracking-tight text-gray-800">Analyzer</span>
-                        </div>
-                        <p className="text-gray-400 text-[10px]">v1.0 • Strategic Intelligence</p>
-                    </div>
+                {/* Close button, phones only (the brand block was removed) */}
+                <div className="px-5 pt-4 flex items-center justify-end md:hidden">
                     {/* Mobile Close Button */}
                     <button
                         onClick={onClose}
