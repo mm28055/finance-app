@@ -22317,7 +22317,12 @@
    "due": "Q4 FY27",
    "ifMissed": "Stays avoid",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Board approved a rights issue of up to ₹1,000cr on 28 Sep 2026 (NSE filing)",
+   "resolvedOn": "2026-09-30",
+   "resolvedBy": "review",
+   "outcome": "Stays avoid",
+   "correction": true
   },
   {
    "id": "azad-engineering-dedicated-plants-ramp-m1",

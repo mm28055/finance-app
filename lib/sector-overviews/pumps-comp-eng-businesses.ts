@@ -331,7 +331,7 @@ const profiles: BusinessProfile[] = [
             { name: 'Solar pump systems', text: "Turnkey systems (pump, motor, panels, structure, controller, installation) under PM-KUSUM and state schemes such as Maharashtra's Magel Tyala. It has supplied 1.19 lakh such systems directly." },
             { name: 'Grid pumps and motors', text: "Submersible and monoblock pumps for farms, homes and industry, sold through 1,400+ distributors." },
             { name: 'Solar modules', text: "Panels from its own 570 MW plant, used in its systems and sold to other scheme suppliers." },
-            { name: 'Rooftop and utility solar', text: "Rooftop systems under PM Surya Ghar, and solar projects for businesses and utilities (72 MW of orders)." },
+            { name: 'Rooftop and utility solar', text: "Rooftop systems under PM Surya Ghar, and solar projects for businesses and utilities: 72 MW of orders at the Q1 call, plus a ₹297.5cr order won on 23 September to put 46.7 MW on 9,937 Telangana government schools within 180 days." },
         ],
         revenueText: "In FY26 about **80% of product revenue came from government schemes**: Maharashtra's Magel Tyala and other state schemes 49%, direct PM-KUSUM supply 27%, and sales to other scheme suppliers 4%. Only 20% came from outside the schemes. It supplied 1.81 lakh pumps in FY26, just under half of them solar.",
         mixes: [

@@ -630,7 +630,7 @@ export const vehicles: SectorOverview = {
             company: 'Ola Electric', rank: 9, stance: 'AVOID', segment: EV,
             what: "Makes electric scooters, Roadster motorcycles, its own battery cells and battery storage, and is moving from company stores to franchised dealers.",
             view: "**A shrinking business with warning signs in its accounts.** Revenue has been 43–57% below the year before for five quarters, Q1 missed its own guide (₹455cr against ₹500–550cr) and it ran at about 13,000 scooters a month against a 20,000–25,000 break-even. Its FY26 accounts carry a going-concern flag and covenant breaches, and ICRA has cut it twice.",
-            watch: 'Monthly registrations after the dealer switch; cash burn against ₹300–500cr; any further covenant breach or equity raise. On 28 Sep 2026 the board approved a rights issue of partly paid shares of up to ₹1,000cr, about 6% of its market value; price and ratio are not yet set (NSE filing, noted 30 Sep 2026).',
+            watch: 'Monthly registrations after the dealer switch; cash burn against ₹300–500cr; any further covenant breach; the price and ratio of the ₹1,000cr rights issue of partly paid shares (about 5–6% of its market value), which will set how far existing holders are diluted.',
         },
     ],
 

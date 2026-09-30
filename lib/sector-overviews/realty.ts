@@ -878,7 +878,7 @@ export const realty: SectorOverview = {
             company: 'Max Estates', rank: 11, stance: 'SCALEUP', segment: NORTH,
             what: "The Max Group's developer in Noida, Gurugram and Delhi: fully let Grade-A offices plus residential projects, with New York Life owning about 20.4%.",
             view: "**Real value, awkward governance.** About ₹13,500cr of sold homes will be booked from FY28 at a company-estimated ₹4,500–5,500cr of pre-tax profit, its offices are fully let, and ICRA rates it A+. But it missed its FY26 pre-sales guide and then dropped guidance, has delivered only about 2 mn sq ft of homes, and is buying 84.7 acres of Delhi land from promoter-group companies for ₹420.2cr of new shares. It has no meaningful P/E until handovers begin.",
-            watch: "Estate 128 handed over in FY28; FY27 collections of ₹2,500–2,700cr; no further related-party asset deals. On 23–24 Sep 2026 it signed a revenue-sharing development MoU for 9.76 acres in Ghaziabad (₹2,500–3,000cr of potential sales), and shareholders approved a related-party land purchase paid for in new shares (NSE filings, noted 30 Sep 2026).",
+            watch: "Estate 128 handed over in FY28; FY27 collections of ₹2,500–2,700cr; the Najafgarh share swap completing, with no further related-party asset deals; the Ghaziabad MoU becoming a signed joint development (₹2,500–3,000cr of potential sales).",
         },
         {
             company: 'Ajmera Realty', rank: 12, stance: 'CYCLICAL', segment: MUMMID,
