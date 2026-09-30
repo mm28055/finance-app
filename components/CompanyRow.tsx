@@ -22,6 +22,8 @@ import { HoldingCard } from './HoldingCard';
 import { CompanyNumbers } from './CompanyNumbers';
 import { CompanyCheckpoints } from './CompanyCheckpoints';
 import { ManagementCard } from './ManagementCard';
+import { CompanyBusinessCard } from './SectorBusinesses';
+import { businessFor } from '@/lib/sector-overviews';
 
 const CONVICTION_CYCLE: (ConvictionLevel | null)[] = [null, 'HIGH', 'MEDIUM', 'LOW'];
 
@@ -142,6 +144,8 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
 
     // Prefer fetched detail (richer) over the light homepage object.
     const effective = detail || company;
+    // The "what it does" card from the sector note, when one is written for this company.
+    const business = useMemo(() => businessFor(company.name), [company.name]);
 
     // Get selected quarter data. Capped at ROW_QUARTERS — older quarters are
     // still analysed and retained, they just don't get a tab in the row.
@@ -701,6 +705,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                             notesStatus={notesStatus}
                                             activeQuarterIndex={selectedQuarterIdx}
                                             onQuarterChange={(idx: number) => setSelectedQuarterIdx(idx)}
+                                            business={business ? <CompanyBusinessCard found={business} company={effective} /> : undefined}
                                         />
                                     </div>
                                 </div>

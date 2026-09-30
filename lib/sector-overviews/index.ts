@@ -1,4 +1,4 @@
-import { SectorOverview } from './types';
+import { SectorOverview, BusinessProfile, CompanyVerdict, ValuationBlock } from './types';
 import { pharmaCdmo } from './pharma-cdmo';
 import { software } from './software';
 import { chemicals } from './chemicals';
@@ -66,6 +66,19 @@ export function getSectorOverview(sector: string): SectorOverview | undefined {
 /** Every written note, for features that look across all sectors (e.g. the call filter). */
 export function allSectorOverviews(): SectorOverview[] {
     return OVERVIEWS;
+}
+
+/** A company's "what the company does" card, wherever it is written (bucket notes included). */
+export function businessFor(company: string): { profile: BusinessProfile; verdict?: CompanyVerdict; valuation?: ValuationBlock } | undefined {
+    const key = company.trim().toLowerCase();
+    const search = (o: SectorOverview): ReturnType<typeof businessFor> => {
+        const profile = o.businesses?.profiles.find(p => p.company.trim().toLowerCase() === key);
+        if (profile) return { profile, verdict: o.verdicts.find(v => v.company.trim().toLowerCase() === key), valuation: o.valuation };
+        for (const b of o.buckets || []) { const hit = search(b.note); if (hit) return hit; }
+        return undefined;
+    };
+    for (const o of OVERVIEWS) { const hit = search(o); if (hit) return hit; }
+    return undefined;
 }
 
 export function hasSectorOverview(sector: string): boolean {

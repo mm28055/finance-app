@@ -456,6 +456,21 @@ function ProfileCard({ p, verdict, lv, writtenOn }: { p: BusinessProfile; verdic
     );
 }
 
+/** One company's card from its sector note, for the Business tab on the company card. */
+export function CompanyBusinessCard({ found, company }: {
+    found: { profile: BusinessProfile; verdict?: CompanyVerdict; valuation?: ValuationBlock };
+    company?: EnrichedCompany;
+}) {
+    return (
+        <ProfileCard
+            p={found.profile}
+            verdict={found.verdict}
+            lv={liveValuation(found.profile.company, found.valuation, company)}
+            writtenOn={found.valuation?.writtenOn}
+        />
+    );
+}
+
 export function BusinessProfiles({ profiles, verdicts, valuation, byName }: {
     profiles: BusinessProfile[];
     verdicts: CompanyVerdict[];

@@ -16,7 +16,8 @@ export function AnalysisPanel({
     onNotesChange,
     notesStatus = 'idle',
     activeQuarterIndex = 0,
-    onQuarterChange
+    onQuarterChange,
+    business
 }: {
     analysis?: AnalysisResult,
     quarterName?: string,
@@ -26,7 +27,9 @@ export function AnalysisPanel({
     onNotesChange?: (value: string) => void,
     notesStatus?: 'idle' | 'saving' | 'saved' | 'error',
     activeQuarterIndex?: number,
-    onQuarterChange?: (idx: number) => void
+    onQuarterChange?: (idx: number) => void,
+    /** The company's "what it does" card from its sector note; adds a BUSINESS tab when given. */
+    business?: React.ReactNode
 }) {
     const safeHistory = history && history.length > 0
         ? history
@@ -38,7 +41,7 @@ export function AnalysisPanel({
     const [activeData, setActiveData] = useState<AnalysisResult | undefined>(
         safeHistory[activeQuarterIndex]?.analysis || analysis
     );
-    const [viewMode, setViewMode] = useState<"ANALYSIS" | "PROFILE" | "DELTA" | "NOTES">("ANALYSIS");
+    const [viewMode, setViewMode] = useState<"ANALYSIS" | "PROFILE" | "DELTA" | "NOTES" | "BUSINESS">("ANALYSIS");
 
     // Drives the brighter NOTES tab, so the tab itself says whether
     // anything has been written for this company.
@@ -50,7 +53,7 @@ export function AnalysisPanel({
             const match = safeHistory[activeQuarterIndex];
             setActiveQuarter(match.quarter);
             setActiveData(match.analysis);
-            if (viewMode === "PROFILE" || viewMode === "DELTA" || viewMode === "NOTES") {
+            if (viewMode === "PROFILE" || viewMode === "DELTA" || viewMode === "NOTES" || viewMode === "BUSINESS") {
                 // If we were on Profile or Delta, and a quarter is clicked, switch back to Analysis
                 // Actually, stay in current mode but update the underlying data
             } else {
@@ -85,6 +88,10 @@ export function AnalysisPanel({
     };
 
     const renderContent = () => {
+        if (viewMode === "BUSINESS" && business) {
+            return <div className="p-3 bg-[#FAFBFC] min-h-full">{business}</div>;
+        }
+
         if (viewMode === "NOTES") {
             return (
                 <div className="p-4 h-full flex flex-col bg-white">
@@ -376,6 +383,19 @@ export function AnalysisPanel({
                 >
                     PROFILE
                 </button>
+
+                {business && (
+                    <button
+                        onClick={() => { setViewMode("BUSINESS"); setActiveQuarter("BUSINESS"); }}
+                        className={`px-3 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap ${viewMode === "BUSINESS"
+                            ? 'text-[#4A7AAF] border-[#6B9FCC] bg-white'
+                            : 'text-gray-400 border-transparent hover:text-gray-600'
+                            }`}
+                        title="What the company does, from its sector note"
+                    >
+                        BUSINESS
+                    </button>
+                )}
 
                 <button
                     onClick={handleNotesClick}
