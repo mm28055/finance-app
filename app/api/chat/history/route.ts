@@ -5,8 +5,6 @@ import { prisma } from '@/lib/prisma';
 
 // GET: Fetch chat history for a sector
 export async function GET(req: NextRequest) {
-    const session = await getServerSession(authOptions);
-    if (!session) return NextResponse.json({ error: 'Sign in to use the chat' }, { status: 401 });
     try {
         const { searchParams } = new URL(req.url);
         const sector = searchParams.get('sector');

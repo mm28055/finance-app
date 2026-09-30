@@ -89,7 +89,7 @@ export function SectorChat() {
     }, [activeSector]);
 
     const handleSend = async () => {
-        if (!input.trim() || !activeSector) return;
+        if (!isAdminMode || !input.trim() || !activeSector) return;
 
         const timestamp = Date.now();
         const userMsg: Message = {
@@ -155,7 +155,7 @@ export function SectorChat() {
         }
     };
 
-    if (!isOpen || !isAdminMode) return null;
+    if (!isOpen) return null;
 
     return (
         <div className={`fixed inset-0 z-50 md:inset-auto md:bottom-6 md:right-6 md:w-[600px] bg-white md:rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex flex-col animate-in slide-in-from-bottom-5 duration-300 overflow-hidden ${isMinimized ? 'md:h-auto' : 'md:h-[800px]'}`}>
@@ -175,7 +175,7 @@ export function SectorChat() {
                     </div>
                 </div>
                 <div className="flex items-center gap-1">
-                    {messages.length > 0 && !isMinimized && (
+                    {messages.length > 0 && !isMinimized && isAdminMode && (
                         <button
                             onClick={handleClearHistory}
                             className="text-gray-400 hover:text-red-500 transition-colors p-1"
@@ -269,7 +269,8 @@ export function SectorChat() {
                 <div className="relative">
                     <input
                         type="text"
-                        placeholder={`Ask about ${activeSector}...`}
+                        placeholder={isAdminMode ? `Ask about ${activeSector}...` : 'Sign in to chat'}
+                        disabled={!isAdminMode}
                         className="w-full bg-gray-50 border border-gray-200 text-gray-800 rounded-xl pl-4 pr-12 py-3 text-sm focus:outline-none focus:border-[#A5C4E2] focus:ring-2 focus:ring-[#D4E5F7] focus:bg-white placeholder:text-gray-400 transition-all"
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
@@ -277,7 +278,7 @@ export function SectorChat() {
                     />
                     <button
                         onClick={handleSend}
-                        disabled={!input.trim()}
+                        disabled={!isAdminMode || !input.trim()}
                         className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-[#6B9FCC] text-white rounded-lg hover:bg-[#4A7AAF] disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
                     >
                         <Send className="w-4 h-4" />
