@@ -52,7 +52,12 @@ For each entry, by its `subject`/`why`:
 - **Moved sector** / **Not in the <sector> note**: follow `tools/notes/docs/ADD_COMPANY_BRIEF.md` (research, card data
   with `tools/notes/fetch.py`, `card.py`, `chartdata.py`, Tab 1 and Tab 2). Paths in that brief that start with `S/`
   mean a temporary folder of your own; the tools live in `tools/notes/`. For a move, cut the company's section from
-  the old note and add it to the new one, re-ranked against its new peers.
+  the old note and add it to the new one, re-ranked against its new peers. A company **new to the dashboard** (not
+  a move) also gets, from the same research, everything the other company cards carry: a `management.json` entry
+  (style, the executives with role, since, family relation, stake and a sourced bio, sources), a `capacity.json`
+  entry (capacity today, utilisation, capex status, source), its material projects in `projects.json` with 1–3 dated
+  milestones each, and 2–4 checkpoints in `checkpoints.json` from the latest call's guidance (metric and target
+  where the daily job can settle them). Never invent; leave a field out when no source gives it.
 
 **Checkpoints** (`lib/checkpoints/checkpoints.json`, shown on the company card and the /scorecard page). Whenever
 you update a company (a new results call, drift, a filing): (a) judge its pending checkpoints that the new results or
