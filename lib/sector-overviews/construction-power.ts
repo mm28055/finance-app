@@ -415,7 +415,7 @@ export const constructionPower: SectorOverview = {
                 },
                 {
                     label: 'Growth driver: grids and pipelines abroad',
-                    text: "**KEC** has about ₹10,000cr of Middle East orders and lowest bids, and its American tower arm, SAE, booked ₹1,650cr of orders in Q1, about four times a year earlier. **Kalpataru** is bidding for Gulf oil and gas jobs of $100–500m each but has won none yet. **Transrail**'s overseas revenue fell to about ₹600cr in Q1 from about ₹1,000cr; **Skipper**'s exports halved to ₹162cr as Gulf freight costs made buyers delay deliveries. **My view: the Gulf is the biggest upside and the biggest source of delay.**",
+                    text: "**KEC** has about ₹10,000cr of Middle East orders and lowest bids, and its American tower arm, SAE, booked ₹1,650cr of orders in Q1, about four times a year earlier. **Kalpataru** was bidding for Gulf oil and gas jobs of $100–500m each and on 28 September 2026 won its first large one, a UAE gas pipeline worth more than ₹4,000cr. **Transrail**'s overseas revenue fell to about ₹600cr in Q1 from about ₹1,000cr; **Skipper**'s exports halved to ₹162cr as Gulf freight costs made buyers delay deliveries. **My view: the Gulf is the biggest upside and the biggest source of delay.**",
                 },
                 {
                     label: 'Growth driver: new capacity',
@@ -550,13 +550,13 @@ export const constructionPower: SectorOverview = {
             company: 'Kalpataru Proj.', rank: 2, stance: 'SCALEUP', segment: EPC,
             what: "A large EPC contractor for power transmission, buildings and factories, water, oil and gas pipelines and metros in India and abroad, with its own tower plants and a Swedish line builder, LMG.",
             view: "**The broadest order book and a repaired balance sheet, but a flat margin.** A record ₹66,607cr book, net debt down from ₹2,765cr to ₹917cr in a year on its own count, an AA+ rating and every FY26 promise met. But the operating margin has sat near 9% for four years, about ₹1,500cr of water money is still owed, and promoters have pledged 24.55% of their shares. The price needs about {need:Kalpataru Proj.|14}% a year against my ~15%.",
-            watch: 'Orders towards ₹30,000cr, including a first Gulf oil and gas award; water collections; use of up to ~₹700cr from the LMG listing, and the pledge falling.',
+            watch: 'Orders towards ₹30,000cr, including a first Gulf oil and gas award; water collections; use of up to ~₹700cr from the LMG listing, and the pledge falling. On 28 Sep 2026 it won a UAE gas-pipeline EPC contract worth more than ₹4,000cr (about 15% of a year’s sales), its first large Gulf oil-and-gas win, after ₹2,025cr of other orders on 24 September; on 29 September the Delhi High Court upheld the setting-aside of the termination-payment award its 49.57% venture Kurukshetra Expressway had won against NHAI, which the venture will challenge (NSE filings, noted 30 Sep 2026).',
         },
         {
             company: 'Skipper', rank: 3, stance: 'SCALEUP', segment: MAKER,
             what: "India's largest maker of transmission towers and poles, with a domestic transmission-construction arm and a plastic-pipes business; Power Grid bought about 57% of its FY26 output.",
             view: "**Scale and a stronger balance sheet, tied to one buyer.** Return on capital rose to 24%, the Q1 margin reached 10.7%, profit rose 26%, and ₹433.5cr of new equity is repaying loans. But Q1 revenue grew 4.5%, exports halved, free cash has been negative for two years and the 75,000-tonne expansion has slipped twice. The price needs about {need:Skipper|17}% a year against my ~16%.",
-            watch: 'The expansion running in the second half; export orders towards ₹1,100cr; margin moving towards 12% and less reliance on Power Grid. Promoter holding fell from 66.5% to 61.5% in July 2026 only because the ₹433.5cr preferential issue (92.23 lakh new shares at ₹470, allotted 31 July to institutions including Smallcap World Fund) enlarged the share count; the promoters sold nothing (noted 30 Sep 2026).',
+            watch: 'The expansion running in the second half; export orders towards ₹1,100cr; margin moving towards 12% and less reliance on Power Grid. Promoter holding fell from 66.5% to 61.5% in July 2026 only because the ₹433.5cr preferential issue (92.23 lakh new shares at ₹470, allotted 31 July to institutions including Smallcap World Fund) enlarged the share count; the promoters sold nothing (noted 30 Sep 2026). On 23 Sep 2026 it won ₹797cr of domestic and export orders, including Australia (about 14% of a year’s sales) (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'KEC International', rank: 4, stance: 'TURNAROUND', segment: EPC,
