@@ -878,7 +878,7 @@ export const autoRelatedMetal: SectorOverview = {
             company: 'Ramkrishna Forgings', rank: 17, stance: 'TURNAROUND', segment: FORGE,
             what: "A Jamshedpur forger and caster of axle beams, crankshafts and ring-rolled parts for Indian and US truck makers, with a Mexican machining plant and a rail-wheel joint venture with Titagarh.",
             view: "**A real operating recovery, but the record weighs more.** The margin rose from 13% to 18% and FY26 operating cash was a record ₹840cr. But return on capital is 6%, two years of accounts were restated for a ₹220cr inventory overstatement, it backs ₹525cr of JV loans outside its balance sheet, CRISIL's outlook is Negative, and the ₹8,000cr target is a year late. The price needs about {need:Ramkrishna Forgings|35}% a year against my ~22%.",
-            watch: 'Rail-wheel bulk supply by December; net debt towards ₹1,500cr by March 2027; CRISIL’s outlook.',
+            watch: 'Rail-wheel bulk supply by December; net debt towards ₹1,500cr by March 2027; CRISIL’s outlook. On 25 Sep 2026 promoter and director Chaitanya Jalan bought 34 lakh shares (1.8%, ₹200cr) at about ₹588 through a preferential allotment, raising his own holding to 3.5% (NSE filing, noted 30 Sep 2026).',
         },
     ],
 
