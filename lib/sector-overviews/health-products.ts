@@ -611,7 +611,7 @@ export const healthProducts: SectorOverview = {
             company: 'Tarsons Products', rank: 4, stance: 'TURNAROUND', segment: DEVICES,
             what: "Makes plastic labware (pipette tips, tubes, cryo vials, bottles) for research, pharma and diagnostic labs, and owns Nerbe Plus, a German distributor.",
             view: "**A good brand behind a plant build that keeps slipping: pass.** Operating cash matched operating profit in FY26 and Q1 standalone sales grew 21%, but the ₹893cr programme is 12% over budget and late for the third time, and Q1 brought a first loss a quarter after management promised none. It could not raise export prices against a 25–70% rise in plastic costs, so the new capacity faces the same problem. Its profit is too small to value on.",
-            watch: 'Cell-culture lines running by Q2–Q3 FY27 and first orders; gross margin back toward 70%; net debt falling ₹40–50cr.',
+            watch: 'Cell-culture lines running by Q2–Q3 FY27 and first orders; gross margin back toward 70%; net debt falling ₹40–50cr. At the 24 Sep 2026 AGM shareholders were asked to ratify a waiver of excess pay already given to directors (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Vasa Denticity', rank: 5, stance: 'TURNAROUND', segment: DENTAL,
