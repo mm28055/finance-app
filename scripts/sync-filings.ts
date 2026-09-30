@@ -35,7 +35,7 @@ import { nseAnnouncements, nseInsiderFilings, nsePitDisclosure, parseNseDate, NS
 import { nseSymbolForIsin } from '../lib/corporate-actions/nse-lists';
 
 const DATA_FILE = path.join(process.cwd(), 'lib', 'filings', 'filings.json');
-const FILINGS_KEEP_DAYS = 366; // a year for the Filings page (company cards still show the last three months)
+const FILINGS_KEEP_DAYS = 366; // a year for the Filings page (company cards show the last six months)
 const UA = NSE_UA;
 const DAY = 86400000;
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));

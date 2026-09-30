@@ -34,6 +34,6 @@ export interface SectorFilingsResponse {
     filings: MaterialFiling[];
 }
 
-/** Windows agreed with the owner: chip, hover and company card show three months; the sector panel one month. */
-export const COMPANY_FILING_DAYS = 92;
+/** Windows agreed with the owner: chip, hover and company card show six months; the sector panel one month. */
+export const COMPANY_FILING_DAYS = 183;
 export const SECTOR_FILING_DAYS = 31;

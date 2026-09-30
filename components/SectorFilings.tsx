@@ -94,7 +94,7 @@ export function CompanyFilings({ filings }: { filings: MaterialFiling[] }) {
     const sorted = [...filings].sort((a, b) => b.date.localeCompare(a.date));
     return (
         <div id="company-filings" className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
-            <h4 className="text-xs font-semibold text-gray-800 uppercase tracking-wide mb-1">Material filings, last 3 months</h4>
+            <h4 className="text-xs font-semibold text-gray-800 uppercase tracking-wide mb-1">Material filings, last 6 months</h4>
             {sorted.length === 0 ? (
                 <p className="text-xs text-gray-500">No material filings in the period checked.</p>
             ) : (
