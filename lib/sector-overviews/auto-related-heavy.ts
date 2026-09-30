@@ -639,13 +639,13 @@ export const autoRelatedHeavy: SectorOverview = {
             company: 'Wheels India', rank: 6, stance: 'TURNAROUND', segment: TRUCK,
             what: "A TSF-group maker of steel wheels for trucks, tractors and cars, construction-machine wheels, aluminium wheels, bus air suspension, hydraulic cylinders and wind-turbine machining; about a quarter of revenue is exported.",
             view: "**A real turnaround that has stalled at 8%.** Its margin rose from 5% to 8% in two years, return on capital reached 18.7% and operating cash has exceeded operating profit. But the Q1 margin stayed at 7.8% while capex guidance rose to ₹400–450cr, ₹469cr of bill discounting sits outside reported debt, and September's raise let promoters buy at ₹1,461 a share against ₹2,088 for institutions. The price needs about {need:Wheels India|20}% a year against my ~15%.",
-            watch: 'EBITDA margin above 9% by H2 FY27; aluminium wheels at 60,000 a month; no further rise in capex guidance. On 26 Sep 2026 it raised ₹250cr through a QIP at ₹2,088 a share, about 4.5% dilution (NSE filing, noted 30 Sep 2026).',
+            watch: 'EBITDA margin above 9% by H2 FY27; aluminium wheels at 60,000 a month; no further rise in capex guidance.',
         },
         {
             company: 'Kross', rank: 7, stance: 'SCALEUP', segment: TRUCK,
             what: "A Jamshedpur maker of forged and machined truck and tractor parts and complete trailer axles and suspensions, now adding tipping jacks, an axle-beam extrusion line and a seamless-tube plant; listed in September 2024.",
             view: "**Fast growth that consumes cash.** Revenue rose 32% in Q1 on trailer-axle volume up 34%, and tractors and exports are growing. But FY26 free cash was −₹72cr, its cash cycle has doubled to 153 days, the 12.2% margin missed its 14–15% hope, and its auditor found statements to banks that did not match its books. The price needs about {need:Kross|18}% a year against my ~15%.",
-            watch: 'Margin back to 13–14% after truck-maker settlements; receivable and stock days falling; statements to banks agreeing with the books; seamless-tube commissioning in Q4 FY27. Its preferential issue of 15 lakh shares and 15 lakh warrants to promoters and others would dilute holders by about 4.4% once converted (postal-ballot corrigendum, 23 Sep 2026, noted 30 Sep 2026).',
+            watch: 'Margin back to 13–14% after truck-maker settlements; receivable and stock days falling; statements to banks agreeing with the books; seamless-tube commissioning in Q4 FY27; the result of the postal vote, closed on 30 September, on 15 lakh shares and 15 lakh warrants for promoters and others (about 4.4% dilution).',
         },
         {
             company: 'Frontier Springs', rank: 8, stance: 'PRICED', segment: RAIL,

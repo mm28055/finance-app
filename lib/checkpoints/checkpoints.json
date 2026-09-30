@@ -465,7 +465,12 @@
    "text": "Sale of the Imeds health subsidiary, with receivables and inventory falling",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "No sale: the board decided on 18 Sep 2026 to merge Imeds into Avantel instead",
+   "resolvedOn": "2026-09-30",
+   "resolvedBy": "review",
+   "outcome": "Stays as rated; receivables and inventory remain the test",
+   "correction": true
   },
   {
    "id": "mishra-dhatu-nigam-midhani-q3fy27-1",
@@ -529,7 +534,12 @@
    "text": "AGM vote on the proposed family pay (about ₹3.1cr fixed plus up to 8% of profit)",
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Family pay approved at the 23 Sep 2026 AGM",
+   "resolvedOn": "2026-09-30",
+   "resolvedBy": "review",
+   "outcome": "Stays as rated; the pay question is settled",
+   "correction": true
   },
   {
    "id": "apollo-micro-systems-q4fy27-1",
@@ -597,7 +607,12 @@
    "text": "Aerospace acquisition signed and closed, with its price disclosed",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Bought 90% of Cloud Wave for ₹234cr on 11 Sep 2026",
+   "resolvedOn": "2026-09-30",
+   "resolvedBy": "review",
+   "outcome": "Stays as rated; the deal is done, integration is the test",
+   "correction": true
   },
   {
    "id": "rossell-techsys-q2fy27-1",
@@ -2902,7 +2917,12 @@
    "ifMet": "Case for moving from follow to own",
    "ifMissed": "Stays follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Promoter group sold about 0.8% more in September 2026; holding about 44%",
+   "resolvedOn": "2026-09-30",
+   "resolvedBy": "review",
+   "outcome": "Stays follow",
+   "correction": true
   },
   {
    "id": "nrb-bearing-q4fy27-1",
@@ -22421,8 +22441,13 @@
    "text": "Aerospace acquisition signed and closed",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "axiscades-technologies-aero-acquisition"
+   "status": "met",
+   "project": "axiscades-technologies-aero-acquisition",
+   "actual": "Bought 90% of Cloud Wave for ₹234cr on 11 Sep 2026",
+   "resolvedOn": "2026-09-30",
+   "resolvedBy": "review",
+   "outcome": "Deal closed",
+   "correction": true
   },
   {
    "id": "sansera-engineering-ads-hangar-m1",

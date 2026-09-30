@@ -588,7 +588,7 @@ export const autoRelatedEv: SectorOverview = {
                 },
                 {
                     label: 'Promoters, owners and management',
-                    text: "At **Sona**, the mother of the late chairman Sunjay Kapur alleges fraud over the family trusts that control Aureus Investment, the 28% promoter; the case is in the Delhi High Court. The company says it is not an operating matter, but the chief executive’s pay also rose from ₹3.4cr to ₹15.0cr in FY26. At **Dhoot**, the Bain entity above the promoter has pledged all its shares in the promoter to lenders, so enforcement could change who controls the Bain part of the 82.78% promoter holding. **Fiem**’s promoters sold 4.45% in September 2025 and its chief executive left in mid-2026. **Sedemac**’s promoters own only 26.2%, and pre-IPO investor A91 sold about 5.4% on 25 September 2026; more such sales are likely. **My view: the Dhoot pledge and the Sona family dispute are the two that could change control or distract the board; neither has touched operations yet.**",
+                    text: "At **Sona**, the mother of the late chairman Sunjay Kapur alleges fraud over the family trusts that control Aureus Investment, the 28% promoter; the case is in the Delhi High Court. The company says it is not an operating matter, but the chief executive’s pay also rose from ₹3.4cr to ₹15.0cr in FY26. At **Dhoot**, the Bain entity above the promoter has pledged all its shares in the promoter to lenders, so enforcement could change who controls the Bain part of the 82.78% promoter holding. **Fiem**’s promoters sold 4.45% in September 2025 and its chief executive left in mid-2026. **Sedemac**’s promoters own only 26.2%, and pre-IPO investors A91 and Xponentia sold about 5.4% and 6.4% in late September 2026; Xponentia still holds 9.3%, so more such sales are likely. **My view: the Dhoot pledge and the Sona family dispute are the two that could change control or distract the board; neither has touched operations yet.**",
                 },
                 {
                     label: 'Customer and product concentration',
@@ -686,8 +686,8 @@ export const autoRelatedEv: SectorOverview = {
         {
             company: 'Sedemac Mechatronics', rank: 8, stance: 'PRICED', segment: DRIVE,
             what: "Designs and makes engine and motor control units for two- and three-wheelers and gensets, led by patented sensorless starter-generator controllers; listed in March 2026.",
-            view: "**The best technology here, with one customer and a very full price.** Revenue grew 43% in Q1 and it supplied over 80% of India’s FY26 starter-generator growth, with little debt. But one customer is 77% of revenue, ₹40.9cr of development is capitalised, a GST search is open and pre-IPO investors are selling. The price needs about {need:Sedemac Mechatronics|36}% a year against my ~26%.",
-            watch: 'A starter-generator win at a second large maker; the GST search closing without a demand; further investor selling. On 28 Sep 2026 pre-IPO investor Xponentia sold 6.4% in the market (about ₹986cr), cutting its stake to 9.3% (NSE filing, noted 30 Sep 2026).',
+            view: "**The best technology here, with one customer and a very full price.** Revenue grew 43% in Q1 and it supplied over 80% of India’s FY26 starter-generator growth, with little debt. But one customer is 77% of revenue, ₹40.9cr of development is capitalised, GST officials searched it in September and pre-IPO investors are selling. The price needs about {need:Sedemac Mechatronics|36}% a year against my ~26%.",
+            watch: 'A starter-generator win at a second large maker; no tax demand from the GST search that ended on 11 September; further pre-IPO investor selling (Xponentia still holds 9.3%).',
         },
         {
             company: 'Dhoot Transmission', rank: 9, stance: 'SCALEUP', segment: WIRE,
