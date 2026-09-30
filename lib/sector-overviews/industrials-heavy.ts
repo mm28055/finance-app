@@ -568,7 +568,7 @@ export const industrialsHeavy: SectorOverview = {
             company: 'JNK', rank: 5, stance: 'CYCLICAL', segment: CODE,
             what: "Fired heaters, reformers and cracking furnaces for refineries, petrochemical and fertiliser plants, plus flares and a new process-technology venture; a subsidiary of JNK Global of Korea.",
             view: "**FY27 is visible; FY28 is not.** BPCL Bina and two cracker orders should carry revenue up 20–25%. But the book fell from ₹1,961cr to ₹1,801cr, an ADNOC-linked order was cancelled because the licensor had not approved JNK, guidance was trimmed, operating cash has been negative for three years, and a third of votes went against its Chemdist related-party deals. The price needs about {need:JNK|18}% a year against my ~15%.",
-            watch: 'A Dangote or fertiliser reformer award in Q2–Q3; formal renewal of the parent agreement; margin inside 12–14%.',
+            watch: 'A Dangote or fertiliser reformer award in Q2–Q3; formal renewal of the parent agreement; margin inside 12–14%. On 24 Sep 2026 CRISIL moved its outlook to Stable from Negative (rating A-), and on 29 September it won two flare-package orders worth up to ₹100cr (NSE filings, noted 30 Sep 2026).',
         },
         {
             company: 'WPIL', rank: 6, stance: 'CYCLICAL', segment: INFRA,
