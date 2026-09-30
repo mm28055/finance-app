@@ -367,13 +367,6 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                             ? 'bg-purple-500 text-white border-purple-500'
                             : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
                     >± 20 Score Move</button>
-                    <button
-                        onClick={() => setHoldingOnly(v => !v)}
-                        title="Only companies where promoters sold 1+ point in a quarter (2+ in a year), 10%+ of promoter shares are pledged (or pledges rose 5+ points), or FIIs / DIIs cut 2+ points"
-                        className={`px-2 py-0.5 text-[10px] font-medium rounded border transition-all ${holdingOnly
-                            ? 'bg-purple-500 text-white border-purple-500'
-                            : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
-                    >⚠ Holding changes</button>
                     <select
                         value={callFilter}
                         onChange={e => setCallFilter(e.target.value as Call | '')}
