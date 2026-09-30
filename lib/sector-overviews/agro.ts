@@ -696,7 +696,7 @@ export const agrochemicalFertilizers: SectorOverview = {
             company: 'India Pesticides', rank: 8, stance: 'CYCLICAL', segment: MAKERS,
             what: "Makes off-patent herbicide and fungicide technicals, led by the rice herbicide pretilachlor, for agrochemical companies in India and abroad, plus a smaller branded formulations business.",
             view: "**One season wiped out the guidance.** Q1 sales fell 9%, its own margin fell from 18.4% to 15.4%, growth guidance went from 15–20% to low single digits and inventory rose to about 200 days. An EU approval and a China-substitute fungicide could add ₹130–160cr of sales over time. The price needs about {need:India Pesticides|9–10}% a year against my ~8%.",
-            watch: 'Inventory back to about 170 days in Q3; margin above CARE’s 14.5% line; first European sales of the fungicide from November 2026.',
+            watch: 'Inventory back to about 170 days in Q3; margin above CARE’s 14.5% line; first European sales of the fungicide from November 2026. On 6 June 2026 founder Anand Swarup Agarwal and his sons Vishal and Vishwas left the board, which the company called a move to a professionally managed board; the family still owns about 63.7%, and the long-serving CEO Dheeraj Kumar Jain and CFO Satya Prakash Gupta run the business, so nothing changes day to day, but the owners no longer answer to shareholders as directors (noted 30 Sep 2026).',
         },
         {
             company: 'Sumitomo Chemical India', rank: 9, stance: 'PRICED', segment: BRANDS,
@@ -720,7 +720,7 @@ export const agrochemicalFertilizers: SectorOverview = {
             company: 'Madhya Bharat Agro Products', rank: 12, stance: 'SCALEUP', segment: FERT,
             what: "Makes SSP, DAP and NPK with its own sulphuric acid at Sagar (Madhya Pradesh) and a new complex at Dhule (Maharashtra); part of the Ostwal group with Krishana.",
             view: "**Big plans, flattered profit, no cash.** Capacity rises from 9 to 15.6 lakh tonnes by FY28, but Q1 sales were flat against 50–60% guided, FY26 profit was taxed at 13.7% (about ₹113cr at a normal rate against ₹150cr reported), operating cash was −₹127cr and borrowings nearly tripled; ₹1,066cr of dealings were with Krishana. The price needs about {need:Madhya Bharat Agro Products|23}% a year against my ~15%.",
-            watch: 'Dhule NPK starting by October 2026 and its utilisation by Q4; the ₹317.5cr share issue and any further issue; group loans with Krishana.',
+            watch: 'Dhule NPK starting by October 2026 and its utilisation by Q4; the ₹317.5cr share issue and any further issue; group loans with Krishana. The share issue raised ₹300.5cr, not ₹317.5cr, because some investors did not take up their shares, and the planned Dhule capex from it was cut (10 Sep 2026); on 28 September commercial production started at the 300 tonnes-a-day phosphoric acid plant at Dhule, the first part of the new DAP/NPK complex (noted 30 Sep 2026).',
         },
         {
             company: 'Meghmani Organics', rank: 14, stance: 'TURNAROUND', segment: MAKERS,

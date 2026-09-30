@@ -378,8 +378,8 @@
    "expectedStart": "Q3 FY27",
    "adds": "Part of the move from 9 to 15.6 lakh tonnes of fertiliser capacity by FY28",
    "status": "building",
-   "source": "Q1 FY27 call: on plan for commissioning by October 2026; cost from the sector note",
-   "updatedOn": "2026-09-29",
+   "source": "NSE filing 28 Sep 2026: commercial production started at the 300 tonnes-a-day phosphoric acid plant at Dhule; the DAP/NPK plant is still due by October 2026 (Q1 FY27 call); cost from the sector note",
+   "updatedOn": "2026-09-30",
    "capacityAdd": "+3.3 lakh t DAP/NPK (doubles DAP/NPK; about +37% on 9 lakh t of fertiliser) and +99,000 t of phosphoric acid"
   },
   {
@@ -402,8 +402,8 @@
    "name": "Dhule SSP and Sagar DAP/NPK ramp-up",
    "what": "3.3 lakh tonnes of SSP with 1.98 lakh tonnes of sulphuric acid at Dhule (commissioned FY26) and 90,000 tonnes of DAP/NPK with 1.65 lakh tonnes of sulphuric acid at Sagar (commissioned March 2026)",
    "status": "ramping",
-   "source": "Q1 FY27 call: NPK/DAP utilisation about 66% and SSP 79% in Q1 on raw-material shortages, expected to improve",
-   "updatedOn": "2026-09-29",
+   "source": "Q1 FY27 presentation and call: SSP utilisation about 45% and NPK/DAP about 43% in Q1 on raw-material shortages (corrected 30 Sep 2026; 79% was Q1 FY26), expected to improve; existing plants targeted at about 90%",
+   "updatedOn": "2026-09-30",
    "capacityAdd": "Already in today's base: 3.3 lakh t SSP and 90,000 t DAP/NPK (almost half of the 9 lakh t), plus 3.63 lakh t of sulphuric acid"
   },
   {
