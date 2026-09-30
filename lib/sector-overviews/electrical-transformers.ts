@@ -662,7 +662,7 @@ export const electricalTransformers: SectorOverview = {
             company: 'Quality Power El', rank: 7, stance: 'PRICED', segment: PARTS,
             what: "A group of specialist grid-equipment makers in India and Turkey: HVDC reactors and coils, instrument transformers (51%-owned Mehru), and grid-stability systems and storage converters (51%-owned Endoks), sold to global equipment makers and utilities.",
             view: "**Good technology, flattering numbers.** It sells to Hitachi, Siemens and GE, its order book rose 39% in a quarter to ₹1,945cr, and gross margin reached 47.2%. But its ‘EBITDA’ includes other income, partners took 34.6% of FY26 profit, operating cash was ₹80cr against ₹236cr of its own EBITDA, and it plans a ₹700cr QIP after agreeing to pay up to ₹272cr for a ₹17cr-revenue insulator maker. The price needs about {need:Quality Power El|31–32}% a year against my ~22%.",
-            watch: "Sangli's first revenue in Q3–Q4 FY27; the QIP price and dilution; operating cash catching up with profit.",
+            watch: "Sangli's first revenue in Q3–Q4 FY27; the QIP price and dilution; operating cash catching up with profit. An EGM will vote on buying Winwin Speciality Insulators for ₹272cr, ₹124cr in cash and the rest in new shares at ₹1,460 (about 1.3% dilution) (notice, 26 Sep 2026, noted 30 Sep 2026).",
         },
         {
             company: 'Rishabh Instruments', rank: 8, stance: 'TURNAROUND', segment: PARTS,
