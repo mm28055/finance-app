@@ -605,7 +605,7 @@ export const constructionRoads: SectorOverview = {
             company: 'IRB Infra.Devl.', rank: 2, stance: 'SCALEUP', segment: TOLL,
             what: "India's largest private toll-road company: it owns two roads outright and sponsors, builds for and runs two infrastructure trusts, with 17,355 lane-km and about 10% of India's toll revenue; Cintra and a GIC affiliate own 36.8%.",
             view: "**Doing what it promised, on thin returns.** Tolls rose 26% and profit 51% in Q1, refinancing cut interest, and the asset transfer to its public trust was signed on schedule. But return on equity is about 4%, revenue includes non-cash fair-value gains and a ₹4,132cr fair-valued receivable from its own trust, net debt is ₹18,116cr, and the flagship Mumbai–Pune concession ends in April 2030. The price needs about {need:IRB Infra.Devl.|14}% a year against my ~13%.",
-            watch: 'A new toll-road win at a 15–16% return; the April 2027 tariff reset; net debt falling towards the FY30 zero target.',
+            watch: 'A new toll-road win at a 15–16% return; the April 2027 tariff reset; net debt falling towards the FY30 zero target. On 29 Sep 2026 its public InvIT raised ₹2,351cr (IRB put in ₹351cr to keep its 16%) to buy two roads from IRB’s private trust for ₹2,744cr, and IRB signed ₹2,663cr of fixed-price project-management contracts with the InvIT for about 18 years (NSE filings, noted 30 Sep 2026).',
         },
         {
             company: 'Ceigall India', rank: 3, stance: 'SCALEUP', segment: BUILD,
