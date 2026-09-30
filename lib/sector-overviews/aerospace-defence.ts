@@ -800,7 +800,7 @@ export const aerospaceDefence: SectorOverview = {
             company: 'Raymond', rank: 6, stance: 'SCALEUP', segment: AERO,
             what: "Engineering holding company after its demergers: owns about two-thirds of JK Maini Precision Technology (flexplates, ring gears and files; about 78% of revenue) and JK Maini Global Aerospace (350+ LEAP engine parts).",
             view: "**A cheaper way into the engine supply chain, with holding-company leakage.** Aerospace grew 40% in Q1 against a 25% commitment and auto margins rose to 13.8%. But FY26 operating cash was only ₹42cr, the subsidiaries carry about ₹1,055cr of borrowings behind a 'net cash' figure that counts the parent's investments, a third of profit belongs to minorities, and the promoter took warrants at ₹497, about 60% below today's price. The price needs about {need:Raymond|22–23}% a year against my ~18%.",
-            watch: 'The Gudipalli aerospace plant producing from late 2027; operating cash catching up with operating profit; what the warrant money buys.',
+            watch: 'The Gudipalli aerospace plant producing from late 2027; operating cash catching up with operating profit; what the warrant money buys. On 23 Sep 2026 its JK Maini Global Aerospace unit won a tender to assemble wings and centre fuselages for an Indian fighter programme, its entry into aircraft structures; no value was given (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Azad Engineering', rank: 7, stance: 'PRICED', segment: ENERGY,
@@ -824,7 +824,7 @@ export const aerospaceDefence: SectorOverview = {
             company: 'Aequs', rank: 10, stance: 'TURNAROUND', segment: AERO,
             what: "Vertically integrated aircraft structures and parts (forging to assembly) for Airbus, Boeing and Safran at Belagavi (81% of Q1 revenue), plus a consumer contract-manufacturing arm making electronics casings, toys and cookware.",
             view: "**A real aerospace franchise behind a loss-making consumer arm.** Aerospace grew 40% at a 23% segment margin, with a $1.004bn order book and the first outsourced A320 wheel programme. But consumer lost ₹36cr of operating profit in Q1 at 22% utilisation, the group lost ₹53cr, it is rated BBB−, and months after saying no raise was planned this year it approved ₹650cr of promoter warrants below market. Loss-making, so no growth estimate.",
-            watch: 'Consumer utilisation reaching 40–50% and breakeven by Q4 FY27; consolidated operating cash turning positive; the 22 October vote on the warrants.',
+            watch: 'Consumer utilisation reaching 40–50% and breakeven by Q4 FY27; consolidated operating cash turning positive; the 22 October vote on the warrants. On 25 Sep 2026 the board approved ₹650cr of warrants for the promoter family trust at ₹231.55 (the regulatory floor, about 6% below the market), adding about 4% to the share count; shareholders vote at an EGM (NSE filings, noted 30 Sep 2026).',
         },
         {
             company: 'ideaForge Technology', rank: 11, stance: 'CYCLICAL', segment: ELEC,
@@ -836,7 +836,7 @@ export const aerospaceDefence: SectorOverview = {
             company: 'Avantel', rank: 12, stance: 'TURNAROUND', segment: ELEC,
             what: "Satellite-communication terminals and hubs, software-defined radios and wind-profiler radars for the Navy, Coast Guard, DRDO, NSIL and IMD, a railway train-information contract, and a loss-making medical-device subsidiary (Imeds).",
             view: "**Orders are back; margins and governance hold me back.** The order book went from ₹210cr to ₹720cr (annual report) or about ₹1,000cr (CMD, including unsigned orders), Q1 revenue rose 36%, and management guides ₹300cr for FY27. But FY26 profit fell from ₹56cr to ₹15cr, CARE expects margins to stay moderate, receivables include about ₹43cr overdue from NSIL, and the CMD, his wife (the CFO) and son run the company. The price needs about {need:Avantel|44}% a year against my ~20%, raised from 15% because FY26 is a low base.",
-            watch: 'Quarterly revenue above ₹80cr with the margin above 24%; the sale of Imeds; receivables and inventory falling.',
+            watch: 'Quarterly revenue above ₹80cr with the margin above 24%; the sale of Imeds; receivables and inventory falling. On 23 Sep 2026 it received a ₹177cr satellite-communication order from Zetwerk under the March rate contract, about 70% of a year’s sales, for delivery by March 2027 (NSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Mishra Dhatu Nigam (MIDHANI)', rank: 13, stance: 'PRICED', segment: MAT,
@@ -848,13 +848,13 @@ export const aerospaceDefence: SectorOverview = {
             company: 'Digilogic Systems', rank: 14, stance: 'SCALEUP', segment: ELEC,
             what: "Small Hyderabad maker of test, measurement and simulation systems (missile checkout, automatic test equipment and spectrum monitors) for DRDO, BEL and BDL, listed on the BSE SME board in January 2026.",
             view: "**A defensible slot and a poor first report card.** Once its checkout systems are written into a missile's production documents, orders come by nomination, at about 20% margins. But FY26 revenue grew 8.4% against the 20–25% promised at listing, the order book fell from ₹46cr to ₹31cr, and in August the board proposed family pay of about ₹3.1cr fixed plus up to 8% of profit, against ₹10cr of FY26 profit. The price needs about {need:Digilogic Systems|24}% a year against my ~15%, cut from 18%.",
-            watch: 'The ₹100cr-plus of orders promised by September, visible in the H1 FY27 results; import lead times; the AGM vote on family pay.',
+            watch: 'The ₹100cr-plus of orders promised by September, visible in the H1 FY27 results; import lead times; the AGM vote on family pay. At the 23 Sep 2026 AGM shareholders approved higher pay, including a profit-linked part, for the four family executive directors (BSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'Apollo Micro Systems', rank: 15, stance: 'AVOID', segment: ELEC,
             what: "Missile, torpedo and mine electronics (onboard computers, guidance, actuation and fuzes) as a DRDO development partner, plus IDL Explosives (mining explosives) and an agreed 41.33% stake in Premier Explosives.",
             view: "**Real positions, too many unknowns.** Standalone margins are about 30%, and 60+ development-partner positions could turn into QRSAM, Pinaka and mine orders from FY28. But Q1 organic growth was 17% against a 40–45% guide, operating cash was −₹130cr in FY26, the parent has lent ₹316cr to subsidiaries on thin paperwork, and a ₹3,322cr share issue funds about ₹2,500cr for Premier while about 39% of promoter shares stay pledged.",
-            watch: 'The underwater-mine order, expected in December–January; Premier consolidating from Q3; the promoter pledge actually falling.',
+            watch: 'The underwater-mine order, expected in December–January; Premier consolidating from Q3; the promoter pledge actually falling. On 23 Sep 2026 the competition regulator said the Premier Explosives deal needs no approval; funding it with 2.28 crore shares and 5.69 crore warrants would dilute holders by about 18% once converted (BSE filing, noted 30 Sep 2026).',
         },
         {
             company: 'AXISCADES Technologies', rank: 16, stance: 'AVOID', segment: ELEC,
