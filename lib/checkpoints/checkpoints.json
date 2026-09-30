@@ -14965,7 +14965,13 @@
    "text": "First ~50,000 kL of new JNPT tanks commissioned by December 2026",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-09-30",
+     "text": "On 29 Sep 2026 the company agreed to sell its liquid storage and rail logistics businesses (including JNPT) for ₹1,154cr; if the sale closes, this checkpoint no longer applies to the company"
+    }
+   ]
   },
   {
    "id": "ganesh-benzoplast-q4fy27-1",
@@ -14974,7 +14980,13 @@
    "text": "The new JNPT tanks filled and earning by Q4 FY27",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-09-30",
+     "text": "On 29 Sep 2026 the company agreed to sell its liquid storage and rail logistics businesses (including JNPT) for ₹1,154cr; if the sale closes, this checkpoint no longer applies to the company"
+    }
+   ]
   },
   {
    "id": "ganesh-benzoplast-q2fy27-1",
@@ -14983,7 +14995,13 @@
    "text": "Storage margin back above 35% as the lease cost is passed on",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-09-30",
+     "text": "On 29 Sep 2026 the company agreed to sell its liquid storage and rail logistics businesses (including JNPT) for ₹1,154cr; if the sale closes, this checkpoint no longer applies to the company"
+    }
+   ]
   },
   {
    "id": "asian-energy-services-q3fy27-1",
@@ -28959,7 +28977,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "ganesh-benzoplast-jnpt-tanks"
+   "project": "ganesh-benzoplast-jnpt-tanks",
+   "revisions": [
+    {
+     "on": "2026-09-30",
+     "text": "On 29 Sep 2026 the company agreed to sell its liquid storage and rail logistics businesses (including JNPT) for ₹1,154cr; if the sale closes, this checkpoint no longer applies to the company"
+    }
+   ]
   },
   {
    "id": "ganesh-benzoplast-jnpt-tanks-m2",
@@ -28969,7 +28993,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "ganesh-benzoplast-jnpt-tanks"
+   "project": "ganesh-benzoplast-jnpt-tanks",
+   "revisions": [
+    {
+     "on": "2026-09-30",
+     "text": "On 29 Sep 2026 the company agreed to sell its liquid storage and rail logistics businesses (including JNPT) for ₹1,154cr; if the sale closes, this checkpoint no longer applies to the company"
+    }
+   ]
   },
   {
    "id": "asian-energy-services-mewar-indrora-wells-m1",
