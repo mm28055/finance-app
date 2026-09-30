@@ -702,7 +702,7 @@ export const pharmaApi: SectorOverview = {
             company: 'Blue Jet Healthcare', rank: 10, stance: 'PRICED', segment: ANCHOR,
             what: "Intermediates for iodinated contrast media (the dyes used in scans), an intermediate for the cholesterol drug bempedoic acid, and sweeteners, mostly exported to Norway and France; a ₹1,000cr site is coming at Vizag.",
             view: "**Good chemistry, two customers, a big bet.** The bempedoic line recovered to ₹121cr in Q1 and Mahad is ahead of plan, but FY26 revenue fell 8%, two customers are 71% of product sales, a ₹193cr tax demand is in appeal, and Vizag earns nothing until FY30. The price needs about {need:Blue Jet Healthcare|23}% a year against my ~10%.",
-            watch: 'Growth on the year returning in Q2 and Q3; Mahad running by end-2026; a named new long-term contract.',
+            watch: 'Growth on the year returning in Q2 and Q3; Mahad running by end-2026; a named new long-term contract. Promoter holding fell from 79.8% to 73.2% in July 2026 because of the ₹800cr QIP at ₹506 a share (issue 6–9 July); the promoters sold nothing this time (noted 30 Sep 2026).',
         },
         {
             company: 'SMS Pharmaceuticals', rank: 11, stance: 'CYCLICAL', segment: VOLUME,
