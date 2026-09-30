@@ -689,7 +689,7 @@ export const pumpsCompEng: SectorOverview = {
             company: 'Oswal Pumps', rank: 9, stance: 'CYCLICAL', segment: SOLAR,
             what: "Solar pumps and motors for state schemes, plus solar modules, and now rooftop solar (PM Surya Ghar) and wires and cables. It listed in 2025.",
             view: "**Cheap on paper, weak in cash and governance.** Q1 revenue fell 8% and margin to 15.7%, customers take 229 days to pay, and net debt doubled to ₹266cr in a quarter. The margin guide was cut 6 points, the CFO left, ICRA moved its outlook to negative, and related-party purchases doubled to ₹132cr. The price needs about {need:Oswal Pumps|5}% a year, but I expect roughly none from today's profit.",
-            watch: 'Receivables below 200 days in Q3; Q2 revenue +10–15% as guided; related-party purchases in FY27.',
+            watch: 'Receivables below 200 days in Q3; Q2 revenue +10–15% as guided; related-party purchases in FY27. On 23 Sep 2026 ICRA kept its A+ rating but moved the outlook to Negative, citing a large build-up in receivables and weaker profitability; the same day it won a ₹297.5cr rooftop-solar order from Telangana’s state agency (about 14% of a year’s sales), more of the government work behind those receivables (NSE filings, noted 30 Sep 2026).',
         },
     ],
 
