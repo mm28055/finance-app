@@ -33,6 +33,16 @@ const adds = (a?: string, b?: string) => {
     return shared / Math.max(1, Math.min(x.size, y.size)) < 0.6;
 };
 
+/** "Adds" often restates the description; keep it only when it brings a new figure (e.g. "+43%"). */
+const addsNew = (what: string, add?: string) => {
+    if (!add) return false;
+    const x = words(what), y = words(add);
+    const shared = [...y].filter(w => x.has(w)).length / Math.max(1, Math.min(x.size, y.size));
+    if (shared < 0.7) return true;
+    const pcts = add.match(/[+−-]?\d+(\.\d+)?%/g) || [];
+    return pcts.some(p => !what.includes(p.replace(/^[+−-]/, '')));
+};
+
 function SectionTitle({ icon: Icon, children, right }: { icon: React.ElementType; children: React.ReactNode; right?: React.ReactNode }) {
     return (
         <div className="flex items-center justify-between mb-3">
@@ -150,7 +160,7 @@ export function CompanyCheckpoints({ checkpoints, projects, capacity }: { checkp
                                     <dl className="grid grid-cols-[5.5rem_1fr] gap-x-3 gap-y-1 mt-2">
                                         {p.expectedStart && <Row label="Starts">{p.expectedStart}</Row>}
                                         {p.cost && <Row label="Cost">{p.cost}</Row>}
-                                        {p.capacityAdd && <Row label="Adds">{p.capacityAdd}</Row>}
+                                        {addsNew(p.what, p.capacityAdd) && <Row label="Adds">{p.capacityAdd}</Row>}
                                         {adds(p.capacityAdd, p.adds) && <Row label="Sales">{p.adds}</Row>}
                                     </dl>
                                     <Revisions list={p.revisions} />
