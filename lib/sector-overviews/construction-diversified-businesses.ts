@@ -88,7 +88,7 @@ const profiles: BusinessProfile[] = [
         revenue: '₹6,062cr (FY26, consolidated)',
         products: [
             { name: 'Civil works', text: "Plant foundations and structures, roads, railways and water pipelines; the largest business at ₹796cr in Q1 FY27 (+28%). It is doing ₹850cr of civil and structural work for JSW." },
-            { name: 'Operations and maintenance (upkeep)', text: "Runs and maintains power plants for their owners, and now Mumbai's monorail. ₹431cr in Q1 (+8%), at about 18% margin. In September it won a ₹970cr contract to run Vedanta's 2×600 MW Sakti plant." },
+            { name: 'Operations and maintenance (upkeep)', text: "Runs and maintains power plants for their owners, and now Mumbai's monorail. ₹431cr in Q1 (+8%), at about 18% margin. In September it won a ₹970cr contract to run Vedanta's 2×600 MW Sakti plant and a ₹549cr five-year contract to run an Adani group plant at Tuticorin." },
             { name: 'Erection and plant EPC', text: "Erects, tests and commissions boilers, turbines and generators (₹217cr in Q1), and now builds whole plant sections (balance of plant), led by an 800 MW package for BHEL at Singareni (about ₹2,550cr)." },
             { name: 'Coal mining', text: "Develops and operates coal mines for their owners: the KBP mine for Central Coalfields has produced since November 2025, and Tasra for SAIL awaits a washing plant due around November–December. ₹84cr in Q1 (+223%)." },
         ],

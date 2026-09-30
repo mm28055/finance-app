@@ -606,7 +606,7 @@ export const constructionDiversified: SectorOverview = {
             company: 'Power Mech Proj.', rank: 2, stance: 'SCALEUP', segment: DIV_SERVICE,
             what: "India's largest independent erector and maintainer of power plants, moving into whole plant sections, coal-mine operation and civil work; executable order book ₹16,229cr, with BHEL, Adani and Vedanta its biggest clients.",
             view: "**The group's best growth, with cash lagging.** Revenue rose from ₹2,710cr (FY22) to ₹6,062cr (FY26), return on capital is 22%, Q1 grew 26%, and upkeep and mining contracts lift the margin over time. But FY26 revenue and order targets were missed, Q1's 10.8% margin was well under the 12.5% guide, and five-year cash conversion is only 38%. The price needs about {need:Power Mech Proj.|13}% a year against my ~16%.",
-            watch: 'The margin recovering towards 12% in the second half; the Tasra coal-washing plant commissioned by about December; payment of the held-up water-scheme bills. On 29 Sep 2026 it won a ₹549cr, five-year operation-and-maintenance contract at an Adani group power plant at Tuticorin (about 9% of a year’s sales) (NSE filing, noted 30 Sep 2026).',
+            watch: 'The margin recovering towards 12% in the second half; the Tasra coal-washing plant commissioned by about December; payment of the held-up water-scheme bills.',
         },
         {
             company: 'NCC', rank: 3, stance: 'CYCLICAL', segment: DIV_STATE,
@@ -636,7 +636,7 @@ export const constructionDiversified: SectorOverview = {
             company: 'Afcons Infra', rank: 7, stance: 'TURNAROUND', segment: DIV_URBAN,
             what: "The Shapoorji Pallonji group's marine, tunnel, bridge and metro contractor, working in India and ten other countries; order book a record ₹43,290cr after the Croatian railway and Vadhvan breakwater wins.",
             view: "**Great projects, poor cash.** It ranks eighth in the world in marine work and won ₹13,219cr of orders in Q1. But Q1 revenue fell 21%, Q4 FY26 was its first loss since 2010, operating cash has been negative two years, CRISIL's outlook is Negative, the auditor flagged uncertain claims, and every promoter share is pledged. The price needs about {need:Afcons Infra|23}% a year against my ~20%.",
-            watch: 'Net working capital falling towards 120 days; the high-speed rail force-majeure settlement; CRISIL keeping its AA− rating. The pledge reached 100% of promoter shares in the June quarter when Goswami Infratech pledged its 25.03% to Axis Trustee on 15 May 2026 for Shapoorji-group debentures; that pledge was released on 21 July when those debentures were repaid, but the same shares were pledged again that day for debentures linked to Egyizen Investment, so the group is still borrowing against all of its Afcons shares (noted 30 Sep 2026).',
+            watch: 'Net working capital falling towards 120 days; the high-speed rail force-majeure settlement; CRISIL keeping its AA− rating; any release of the promoters’ pledge, which still covers all of their shares.',
         },
         {
             company: 'SPML Infra', rank: 8, stance: 'TURNAROUND', segment: DIV_STATE,

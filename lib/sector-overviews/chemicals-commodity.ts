@@ -743,7 +743,7 @@ export const chemicalsCommodity: SectorOverview = {
             company: 'Tata Chemicals', rank: 9, stance: 'TURNAROUND', segment: SALT,
             what: "A global soda-ash producer (Wyoming, Kenya, Mithapur; about 4 million tonnes) plus salt, sodium bicarbonate, silica and 55% of Rallis India.",
             view: "**A healthy Indian business inside a loss-making global one.** India made about ₹954cr of operating profit in FY26 and bicarbonate is sold out. But world soda ash is oversupplied, US exports earn break-even, it wrote off ₹1,837cr of goodwill, and net debt of ₹5,692cr is about 3.4x operating profit, above CRISIL's trigger. It loses money after tax, so no growth estimate.",
-            watch: 'Chinese soda-ash stocks falling below about 1.2 Mt; net debt cut from cash flow, not asset sales; no write-down of US mining rights. On 26 Sep 2026 KPMG resigned as auditor of four UK subsidiaries, including British Salt, because the companies would no longer pay its fees; KNAV takes over and the group auditor is unchanged (NSE filing, noted 30 Sep 2026).',
+            watch: 'Chinese soda-ash stocks falling below about 1.2 Mt; net debt cut from cash flow, not asset sales; no write-down of US mining rights.',
         },
         {
             company: 'DCW', rank: 10, stance: 'CYCLICAL', segment: SALT,

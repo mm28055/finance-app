@@ -25736,6 +25736,21 @@
    "text": "Third double-walled line starts",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
+   "status": "missed",
+   "project": "borosil-hydra",
+   "actual": "Third line slipped to January 2027 (NSE filing, Sep 2026)",
+   "resolvedOn": "2026-09-30",
+   "resolvedBy": "review",
+   "outcome": "New date tracked as borosil-hydra-m2",
+   "correction": true
+  },
+  {
+   "id": "borosil-hydra-m2",
+   "company": "Borosil",
+   "sector": "Consumer Durables",
+   "text": "Third double-walled line starts by January 2027",
+   "due": "Q4 FY27",
+   "createdOn": "2026-09-30",
    "status": "pending",
    "project": "borosil-hydra"
   },
@@ -25746,8 +25761,13 @@
    "text": "Bharuch glassware plant commissioned",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "borosil-bharuch"
+   "status": "missed",
+   "project": "borosil-bharuch",
+   "actual": "Bharuch plant dropped by Borosil; it goes to Borosil Scientific (NSE filing, Sep 2026)",
+   "resolvedOn": "2026-09-30",
+   "resolvedBy": "review",
+   "outcome": "No longer a Borosil project",
+   "correction": true
   },
   {
    "id": "borosil-furnace-m1",
