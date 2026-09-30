@@ -800,7 +800,7 @@ export const pharmaCdmo: SectorOverview = {
             company: 'Cohance Lifesciences', rank: 15, stance: 'AVOID', segment: INNOV,
             what: "Formerly Suven Pharmaceuticals, controlled by Advent International: small-molecule contract manufacturing, conjugate payloads (NJ Bio, US), oligonucleotide building blocks, niche APIs and chemicals.",
             view: "**Now a governance problem as well as a business one.** Q1 revenue fell 23% at a 2.2% adjusted margin, and return on capital has fallen from 41% to 6%. On top of that, the promoter has pledged 94.6% of its stake, Crisil cut its rating to BB ‘issuer not cooperating’ before withdrawing it, the auditors reported a suspected fraud, the CFO left, and four sites carry FDA findings. The price needs about {need:Cohance Lifesciences|40}% a year against my ~10%.",
-            watch: 'Its plan due by December 2026; the second destocked molecule reordering; clean FDA outcomes and any change in the promoter pledge.',
+            watch: 'Its plan due by December 2026; the second destocked molecule reordering; clean FDA outcomes and any change in the promoter pledge. The pledge rose from nil to 94.6% of the promoter stake in the June quarter because Advent’s holding companies (Jusmiral and Berhyanda) pledged 54.4% of the company for a US$285m loan from five international banks, signed 11 June 2026 to refinance their earlier notes; the promoters sold nothing (noted 30 Sep 2026).',
         },
         {
             company: 'Dishman Carbogen (Carbogen Amcis)', rank: 16, stance: 'AVOID', segment: INNOV,
