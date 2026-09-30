@@ -1069,7 +1069,7 @@ export const platformCharts: Record<string, ProfileCharts> = {
         ],
         "statsAsOf": "28 Sep 2026"
     },
-    "Infibeam Avenues": {
+    "AvenuesAI": {
         "costSplit": {
             "year": "FY26",
             "parts": [
@@ -1312,7 +1312,7 @@ export const platformValuationInputs: Record<string, ValuationInput> = {
         "peAtWriting": null,
         "lossMaking": true
     },
-    "Infibeam Avenues": {
+    "AvenuesAI": {
         "netDebt": -1312,
         "ttmEbitda": 376.0,
         "mcapAtWriting": 5404.0,

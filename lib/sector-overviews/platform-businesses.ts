@@ -281,7 +281,7 @@ const profiles: BusinessProfile[] = [
         charts: platformCharts['One Mobikwik Systems'],
     },
     {
-        company: 'Infibeam Avenues',
+        company: 'AvenuesAI',
         inShort: ["**AvenuesAI (formerly Infibeam Avenues) runs CCAvenue, one of India's largest online payment gateways**, plus bill-payment and hotel-booking platforms, a Gulf payments arm and 82.66% of Rediff.", "**Good:** profitable for years, ₹1,312cr of net cash on Screener's count (partly merchants' money in transit) and Q1 FY27 profit up 45%. **Bad:** the fee it keeps per payment halved in a year, the revenue it keeps fell 3%, earnings per share are guided flat for FY27, it issued about 25% more shares with ₹244cr set aside for unnamed acquisitions, and a subsidiary guarantees ₹400cr of the parent's bank debt.", "**Verdict: pass.** Cheap-looking, but the business under the headline is not growing."],
         tagline: "AvenuesAI Ltd (renamed from Infibeam Avenues in 2026): the CCAvenue payment gateway and BillAvenue bill-payment platform for 10 million-plus merchants in India and the Gulf, enterprise e-commerce software, and a majority stake in Rediff.",
         revenue: '₹8,116cr (FY26, consolidated, gross)',
@@ -306,7 +306,7 @@ const profiles: BusinessProfile[] = [
         position: "**Management puts its share of India's digital payments at about 8%** ('8% to 10%' of online acquiring on the Q1 call), and says it is among the top three business-to-business online gateways in India and the top two non-bank private payment firms in the UAE.",
         money: "Screener shows **₹1,312cr of net cash**, which includes money in transit to merchants; borrowings rose to ₹430cr at March 2026 from ₹172cr, and a step-down subsidiary has guaranteed ₹400cr of the parent's bank debt. A ₹700cr rights issue in FY26 raised the share count about 25%; ₹244cr of it is earmarked for acquisitions of businesses not yet identified. Goodwill and other intangibles from past deals total about ₹2,500cr. Operating cash was ₹537cr in FY26 and 127% of operating profit over five years. It has paid no dividend since FY24. Promoters hold **27.3%**, down from 29.1% in September 2023.",
         watch: ["Net revenue growing again, not just gross revenue.", "Its share of the UPI fee from 15 October 2026.", "How the rights-issue money for unnamed acquisitions is spent, and the Rediff listing."],
-        charts: platformCharts['Infibeam Avenues'],
+        charts: platformCharts['AvenuesAI'],
     },
     {
         company: 'Aurum Proptech',
