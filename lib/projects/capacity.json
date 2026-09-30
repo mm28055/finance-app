@@ -4195,6 +4195,22 @@
    "source": "Sector note"
   },
   {
+   "company": "Shiprocket",
+   "sector": "Platform Cos",
+   "today": "Asset-light: no plants or fleet; it routes shipments over 42 couriers. Scale is measured in transactions: 21.6 crore in the year to June 2026 (about 6.1 crore a quarter), 2.24 lakh active sellers and ₹34,662cr of goods. Warehousing: 13 leased fulfilment centres in 10 cities (7.63 lakh sq ft, March 2026), plus 5 customer-owned centres it runs and 11 third-party warehouses",
+   "utilisation": "Not disclosed; the useful measure is adjusted EBITDA per transaction, ₹1.45 in Q1 FY27 against ₹0.22 a year earlier (CFO)",
+   "capexStatus": "Small: ₹18cr of fixed assets bought in FY26 and ₹1.86cr of contracted commitments. IPO money goes on technology (₹159.8cr) and marketing (₹205.8cr) over FY27–FY29, running costs rather than plant, so no capital project is listed",
+   "source": "Q1 FY27 presentation and call (Sep 2026), FY26 annual report, RHP (Aug 2026)"
+  },
+  {
+   "company": "Turtlemint Fintech",
+   "sector": "Platform Cos",
+   "today": "Asset-light: no plants; capacity is agents and software. 6,91,194 registered part-time agents, 90,791 active in the last 90 days (Q1 FY27), 83 branches, 2,300+ staff, 46 insurers integrated, over 8 lakh quotes a day",
+   "utilisation": "Active agents are 13% of registered (my arithmetic); revenue per active agent about ₹32,000 a quarter, up about 9% on a year earlier",
+   "capexStatus": "None capitalised and no capital commitments; IPO money goes on technology salaries (₹193cr), marketing, cloud and office leases over FY27–FY29 and on the broker's working capital, so no capital project is listed",
+   "source": "Q1 FY27 presentation and call (Aug 2026), Q4 FY26 call, FY26 annual report, RHP (Jun 2026)"
+  },
+  {
    "company": "Kirloskar Pneumatic",
    "sector": "Pumps Comp & Eng",
    "today": "Compressor and refrigeration plants at Hadapsar (Pune), Saswad and Nashik, with in-house forging, casting and fabrication; extra centrifugal-compressor capacity commissioned and available from Q1 FY27",

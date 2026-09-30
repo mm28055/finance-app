@@ -27867,6 +27867,154 @@
    "updatedOn": "2026-09-29"
   },
   {
+   "company": "Shiprocket",
+   "sector": "Platform Cos",
+   "style": "Professional",
+   "styleNote": "The filings say the company 'is professionally managed and does not have an identifiable promoter'. Co-founders Saahil Goel (MD & CEO) and Gautam Kapoor (COO) still run it day to day, but each owns only about 3.4% after the August 2026 IPO. The largest holders are financial investors: Bertelsmann (21.3%), Tribe Capital, Eternal and Temasek; Arjun Sethi of Tribe is a non-executive director. No director or senior manager is related to another.",
+   "people": [
+    {
+     "name": "Saahil Goel",
+     "role": "Managing Director & CEO",
+     "since": "2011 (co-founder; director since 30 Sep 2011)",
+     "family": false,
+     "relation": "Co-founder; no promoter group",
+     "stake": "About 3.37% after the IPO (2.45cr shares, AGM notice 2026); 4.84% before it; plus vested options over 22 lakh shares and unvested over 79.8 lakh (RHP)",
+     "bio": "Holds a bachelor's degree in business (minor in marketing) from Western International University, Arizona, and an MBA and MS from the Katz Graduate School of Business, Pittsburgh. He worked at Max New York Life from 2006 and SDLC Partners from 2010 before co-founding the company in 2011. He leads strategy and took Shiprocket public in August 2026. ET 40 under 40 (2023); fixed pay ₹1.94cr in FY26. His other directorships are only in group subsidiaries."
+    },
+    {
+     "name": "Gautam Kapoor",
+     "role": "Executive Director & Chief Operating Officer",
+     "since": "28 Sep 2011 (co-founder)",
+     "family": false,
+     "relation": "Co-founder; no promoter group",
+     "stake": "About 3.37% after the IPO (derived from 3.08cr shares less those sold in the offer); 4.84% before it; same option counts as Goel (RHP)",
+     "bio": "Holds a B.Com from Delhi University and a bachelor's degree in business (minor in marketing) from Western International University. He co-founded the company and runs day-to-day operations, process efficiency and execution."
+    },
+    {
+     "name": "Kumar Tanmay",
+     "role": "Chief Financial Officer",
+     "since": "20 Oct 2021",
+     "family": false,
+     "stake": "0.48% before the IPO (30.3 lakh shares), about 0.42% after (derived); vested options over 10.6 lakh shares (RHP)",
+     "bio": "A chartered accountant with a B.Com (Hons) from Delhi University, a diploma in business finance from ICFAI and executive programmes at ISB, IIM Ahmedabad and IIM Bangalore. Over 24 years at Spencer's Retail, Burger King India, Yum! Restaurants and PepsiCo before joining. He leads finance, legal and compliance, corporate development and fundraising; named ET Group CFO of the Year (medium companies) in 2026."
+    },
+    {
+     "name": "Akshay Ghulati",
+     "role": "CEO, International Shipping",
+     "since": "Joined Feb 2016 as COO; in this role since 1 Apr 2024",
+     "family": false,
+     "stake": "0.55% before the IPO; vested options over 77 lakh shares (RHP)",
+     "bio": "Holds a BS in economics from Wharton and an MBA from Harvard Business School. Earlier at Amazon UK, Smile Online Sales Services and The Parthenon Group in London. Runs the cross-border shipping business."
+    },
+    {
+     "name": "Atul Mehta",
+     "role": "CEO, Domestic Shipping",
+     "since": "Joined Jul 2021; in this role since 1 Apr 2024",
+     "family": false,
+     "stake": "0.65% before the IPO (RHP)",
+     "bio": "B.Tech in chemical engineering from IIT Kharagpur and PGDM from IIM Calcutta; earlier at i-Flex Solutions and Amazon Seller Services. Runs the Core domestic shipping business."
+    },
+    {
+     "name": "Praful Poddar",
+     "role": "Chief Product Officer",
+     "since": "Joined Mar 2021; CPO since 1 Apr 2023",
+     "family": false,
+     "stake": "0.18% before the IPO (RHP)",
+     "bio": "Engineering degree from NSIT, Delhi University, and a management degree from IIM Kozhikode; earlier at Jasper Infotech, OLX India and MakeMyTrip."
+    },
+    {
+     "name": "Sunil Kumar",
+     "role": "Chief Technology Officer",
+     "since": "9 Apr 2019",
+     "family": false,
+     "stake": "0.17% before the IPO (RHP)",
+     "bio": "B.Tech in computer science from IIT Kanpur; earlier at EazyDiner, Times Business Solutions, Reliance Entertainment Digital, Rediff.com and Oracle India."
+    }
+   ],
+   "changes": "Co-founder Vishesh Khurana (about 1% before the IPO; sold ₹20cr in the offer) stopped being an employee on 31 May 2026 and joined Tribe Capital, per press reports. Company secretary Deepa Kapoor resigned on 3 Jul 2026; Nikhil Kumar joined on 27 Jul 2026. Also senior management: Gaurav Mangla (CEO, Pickrr checkout and ads) and Saumya Khati (CHRO).",
+   "sources": [
+    "https://www.shiprocket.in/wp-content/uploads/2026/09/Annual-Report-FY-2025-26.pdf",
+    "https://www.shiprocket.in/wp-content/uploads/2026/09/Notice-of-AGM-30.09.2026.pdf",
+    "https://sr-website-01.shiprocket.in/sr-website/ShiprocketLimited-RHP-August5,202-QYSXbu.pdf",
+    "https://www.shiprocket.in/investor-relations/corporate-governance/",
+    "https://startuptalky.com/shiprocket-ipo-investor-returns-ofs-shareholders/"
+   ],
+   "updatedOn": "2026-09-30"
+  },
+  {
+   "company": "Turtlemint Fintech",
+   "sector": "Platform Cos",
+   "style": "Promoter-run",
+   "styleNote": "Two co-founders run it: Dhirendra Mahyavanshi is Chairperson, MD and CEO and Anand Prabhudesai is Executive Director and COO; they set strategy but own only 13.2% together (June 2026), after selling about 10% of their shares in the IPO. Venture funds own about 40% (Nexus 19.8%, Peak XV 16.5%), and four of six directors are independent. The broking-licence company was bought from Mahyavanshi in May 2024, a related-party deal.",
+   "people": [
+    {
+     "name": "Dhirendra Nalin Mahyavanshi",
+     "role": "Chairperson, Managing Director & CEO",
+     "since": "With the company since incorporation in 2015; board since 18 Feb 2025; MD for five years from 12 Jul 2025",
+     "family": true,
+     "relation": "Co-founder and promoter; not related to any other director or senior manager",
+     "stake": "6.76% (June 2026 shareholding pattern); 8.72% before the IPO, fully diluted; promoters together 13.21%",
+     "bio": "Engineering degree (production) from Dwarkadas J. Sanghvi College, University of Mumbai, and a post-graduate diploma in management from IIM Calcutta. Earlier vice president at ICICI Lombard General Insurance and vice president of sales at Quikr India; over 21 years in insurance and sales. Leads sales, distribution, strategy and expansion. He sold the broking company (Turtlemint Insurance Broking) to the listed company in May 2024. Pay ₹1.5cr a year."
+    },
+    {
+     "name": "Anand Rohidas Prabhudesai",
+     "role": "Executive Director & Chief Operating Officer",
+     "since": "Director since 7 Apr 2015 (co-founder); current term five years from 12 Jul 2025",
+     "family": true,
+     "relation": "Co-founder and promoter; not related to other directors",
+     "stake": "6.46% (June 2026 shareholding pattern); 8.33% before the IPO",
+     "bio": "B.Tech in electrical engineering from IIT Bombay and an MBA from the University of Chicago. Earlier vice president in the mobile division at Quikr India, senior manager at Nokia India and strategic relationship manager at Yahoo India; over 23 years in technology and insurance. Runs technology, product and marketing. Pay ₹1.5cr a year."
+    },
+    {
+     "name": "Badrinarayan Sanjeevi",
+     "role": "Chief Financial Officer and head of HR",
+     "since": "22 Feb 2021 (key managerial person from 12 Jul 2025)",
+     "family": false,
+     "stake": "0.08% before the IPO, fully diluted (RHP)",
+     "bio": "B.Com from the University of Madras, MBA from INSEAD, chartered accountant (all-India rank 28, May 1997) and cost accountant. Earlier CFO at Rakyan Beverages (Raw Pressery), group CFO at People Interactive, co-founder and CEO of Mauj Mobile, and roles at Arthur Andersen India and Deloitte in London; over 27 years in consulting and finance."
+    },
+    {
+     "name": "Prajakta Vijaykumar Deolasee",
+     "role": "Chief Technology Officer",
+     "since": "4 Feb 2019",
+     "family": false,
+     "stake": "0.13% before the IPO, fully diluted (RHP)",
+     "bio": "Mechanical engineering degree from Nagpur University. Earlier vice president of engineering at HyperTrack, CTO at Hippily, director of engineering at Gupshup and programme analyst at SDI Tech; over 17 years in engineering. Owns the technology roadmap, platform and cyber-security for the company and its broking subsidiary."
+    },
+    {
+     "name": "Sunny Bhatia",
+     "role": "Senior Vice President, Retail (sales and strategy)",
+     "since": "3 Sep 2019",
+     "family": false,
+     "stake": "0.06% before the IPO (RHP)",
+     "bio": "Post-graduate diploma in insurance and risk management from BIMTECH and a fellow of the Insurance Institute of India. Earlier at Cholamandalam MS General, Reliance General and SBI General; over 21 years in insurance."
+    },
+    {
+     "name": "Janaki Arvind Iyer",
+     "role": "Chief Risk Officer (company and broking subsidiary)",
+     "since": "1 Jun 2020 (broking subsidiary from 1 Feb 2020)",
+     "family": false,
+     "stake": "0.03% before the IPO (RHP)",
+     "bio": "B.Com from the University of Mumbai and a chartered accountant; earlier associate director at B S R & Co. LLP; over 17 years in accounting and risk control. Oversees risk, compliance and audit."
+    },
+    {
+     "name": "Prashant Saini",
+     "role": "Company Secretary & Compliance Officer; head of legal at the broking subsidiary",
+     "since": "27 Sep 2023 (key managerial person from 12 Jul 2025)",
+     "family": false,
+     "bio": "B.Com (Hons) and LLB from Delhi University, LLM from Kurukshetra University and an associate of the Institute of Company Secretaries of India; earlier at ICICI Bank, Canara HSBC OBC Life and IndiaFirst Life (head of legal and fraud control); over 17 years."
+    }
+   ],
+   "changes": "Investor-nominee director Ravi Shankar Ganapathy resigned on 22 Jul 2025. No executive exits found since the FY26 annual report. Shuvamay Chowdhury (VP retail) is also senior management.",
+   "sources": [
+    "https://cdn.turtlemint.com/wp-content/uploads/20260615160850/IFA2047-RHP_June-15-2026.pdf",
+    "https://cdn.turtlemint.com/wp-content/uploads/20260902044136/TFS-Annual-Report-FY-25-26.pdf",
+    "https://www.turtlemint.com/investor-relations/",
+    "https://cdn.turtlemint.com/wp-content/uploads/20260807094509/Shareholding-Pattern-30.06.2026.html"
+   ],
+   "updatedOn": "2026-09-30"
+  },
+  {
    "company": "Kirloskar Pneumatic",
    "sector": "Pumps Comp & Eng",
    "style": "Promoter-run",

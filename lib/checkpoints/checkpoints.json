@@ -18134,6 +18134,92 @@
    "status": "pending"
   },
   {
+   "id": "shiprocket-q2fy27-1",
+   "company": "Shiprocket",
+   "sector": "Platform Cos",
+   "text": "Adjusted EBITDA stays positive and per transaction stays above Q1's ₹1.45 (the CFO said it is improving every quarter)",
+   "due": "Q2 FY27",
+   "ifMissed": "The operating-leverage case weakens",
+   "createdOn": "2026-09-30",
+   "status": "pending"
+  },
+  {
+   "id": "shiprocket-q2fy27-2",
+   "company": "Shiprocket",
+   "sector": "Platform Cos",
+   "text": "Contribution margin holds around 19% (19.4% in Q1), as guided, and the newer businesses' rupee loss (₹43.8cr in Q1) stops growing",
+   "due": "Q2 FY27",
+   "ifMet": "The event the wait is for, if it continues",
+   "ifMissed": "Stays wait",
+   "createdOn": "2026-09-30",
+   "status": "pending"
+  },
+  {
+   "id": "shiprocket-q2fy27-3",
+   "company": "Shiprocket",
+   "sector": "Platform Cos",
+   "text": "Revenue of at least ₹600cr in Q2, above Q1's ₹592cr (my threshold, not guidance; management flags only Q3 as seasonally weak)",
+   "metric": "revenue",
+   "op": ">=",
+   "target": 600,
+   "due": "Q2 FY27",
+   "createdOn": "2026-09-30",
+   "status": "pending"
+  },
+  {
+   "id": "shiprocket-q4fy27-1",
+   "company": "Shiprocket",
+   "sector": "Platform Cos",
+   "text": "₹210cr of bank borrowing repaid from IPO money in FY27, as the prospectus schedules",
+   "due": "Q4 FY27",
+   "createdOn": "2026-09-30",
+   "status": "pending"
+  },
+  {
+   "id": "turtlemint-fintech-q2fy27-1",
+   "company": "Turtlemint Fintech",
+   "sector": "Platform Cos",
+   "text": "Revenue of at least ₹350cr in Q2, bigger than Q1 (₹294cr) and about 40% above a year earlier, as guided",
+   "metric": "revenue",
+   "op": ">=",
+   "target": 350,
+   "due": "Q2 FY27",
+   "createdOn": "2026-09-30",
+   "status": "pending"
+  },
+  {
+   "id": "turtlemint-fintech-q2fy27-2",
+   "company": "Turtlemint Fintech",
+   "sector": "Platform Cos",
+   "text": "Operating loss narrower than Q1's ₹33cr (adjusted EBITDA loss narrower than ₹26cr), with overheads no more than 22% of revenue",
+   "metric": "ebitda",
+   "op": ">=",
+   "target": -33,
+   "due": "Q2 FY27",
+   "createdOn": "2026-09-30",
+   "status": "pending"
+  },
+  {
+   "id": "turtlemint-fintech-q2fy27-3",
+   "company": "Turtlemint Fintech",
+   "sector": "Platform Cos",
+   "text": "Service EBITDA margin (after agent pay) at least 14% (13.3% in Q1) and renewals at least 22% of revenue, on the path to about 16%",
+   "due": "Q2 FY27",
+   "createdOn": "2026-09-30",
+   "status": "pending"
+  },
+  {
+   "id": "turtlemint-fintech-q4fy27-1",
+   "company": "Turtlemint Fintech",
+   "sector": "Platform Cos",
+   "text": "FY27 adjusted EBITDA at or above breakeven, with profit in the second half (management \"will try really hard\"; my estimate is a ₹20–30cr loss)",
+   "due": "Q4 FY27",
+   "ifMet": "View changes for the better, if the commission rules allow",
+   "ifMissed": "Stays pass",
+   "createdOn": "2026-09-30",
+   "status": "pending"
+  },
+  {
    "id": "kirloskar-pneumatic-q2fy27-1",
    "company": "Kirloskar Pneumatic",
    "sector": "Pumps Comp & Eng",
