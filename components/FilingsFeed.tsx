@@ -11,6 +11,18 @@ const CALL_TONE: Record<string, string> = {
     pass: 'bg-gray-100 text-gray-400', avoid: 'bg-rose-50 text-rose-500',
 };
 
+// Filing categories grouped into the kinds an investor scans for.
+const TYPES: { key: string; label: string; test: RegExp }[] = [
+    { key: 'promoter', label: 'Promoter trades and pledges', test: /promoter|pledge|insider|large holder|ownership/i },
+    { key: 'orders', label: 'Orders and contracts', test: /order|project win|contract|agreement/i },
+    { key: 'management', label: 'Management changes', test: /management|auditor/i },
+    { key: 'capital', label: 'Fund-raises, dilution, buybacks', test: /fund-raise|preferential|bonus|buyback|split|rights|debt/i },
+    { key: 'ratings', label: 'Credit ratings', test: /rating/i },
+    { key: 'deals', label: 'Acquisitions, disposals, mergers', test: /acqui|dispos|divest|merger|joint venture|subsidiary|restructur|slump/i },
+    { key: 'operations', label: 'Sales, production, plants', test: /operation|capex|business update|earnings|project launch|product/i },
+    { key: 'legal', label: 'Legal, tax, regulatory, governance', test: /legal|tax|regulat|governance|related-party/i },
+];
+
 const dayLabel = (iso: string) => new Date(iso + 'T00:00:00').toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short' });
 
 // Every company's filings on one page, newest first. By default only the ones that can move the
@@ -20,6 +32,7 @@ export function FilingsFeed({ filings }: { filings: Row[] }) {
     const [tone, setTone] = React.useState<'any' | 'good' | 'watch'>('any');
     const [call, setCall] = React.useState('any');
     const [sector, setSector] = React.useState('any');
+    const [type, setType] = React.useState('any');
     const [q, setQ] = React.useState('');
     const [open, setOpen] = React.useState<Record<string, boolean>>({});
 
@@ -28,6 +41,7 @@ export function FilingsFeed({ filings }: { filings: Row[] }) {
         (all || f.impact === 'high') &&
         (tone === 'any' || f.tone === tone) &&
         (call === 'any' || f.call === call) &&
+        (type === 'any' || !!TYPES.find(t => t.key === type)?.test.test(f.category)) &&
         (sector === 'any' || (sector === 'portfolio' ? f.inPortfolio : f.sector === sector)) &&
         (!q || f.company.toLowerCase().includes(q.toLowerCase())));
     const byDay = new Map<string, Row[]>();
@@ -46,6 +60,10 @@ export function FilingsFeed({ filings }: { filings: Row[] }) {
                 <button className={chip(tone === 'good')} onClick={() => setTone('good')}>Positive</button>
                 <button className={chip(tone === 'watch')} onClick={() => setTone('watch')}>Watch</button>
                 <span className="w-px h-5 bg-gray-200 mx-1" />
+                <select className={select} value={type} onChange={e => setType(e.target.value)}>
+                    <option value="any">All types</option>
+                    {TYPES.map(t => <option key={t.key} value={t.key}>{t.label}</option>)}
+                </select>
                 <select className={select} value={call} onChange={e => setCall(e.target.value)}>
                     <option value="any">Any call</option>
                     {['own', 'follow', 'wait', 'pass', 'avoid'].map(c => <option key={c} value={c}>{c[0].toUpperCase() + c.slice(1)}</option>)}
