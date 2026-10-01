@@ -39,7 +39,7 @@ const ROWS: Record<string, [string, string][]> = {
  * of profit, asset turnover, capex against sales and depreciation, dividend payout.
  * Lenders (no "Sales" row) get only the ratios that mean something for them.
  */
-async function debtAndCashRatios(html: string, consolidated: boolean): Promise<{ columns: string[]; raw: (string | null)[]; rows: { label: string; src: string; expandable: boolean; values: (string | null)[] }[] } | null> {
+async function debtAndCashRatios(html: string, consolidated: boolean): Promise<{ columns: string[]; raw: (string | null)[]; rows: { label: string; src: string; expandable: boolean; values: (string | null)[]; parts?: { label: string; values: (string | null)[] }[] }[] } | null> {
     const pl = screenerTable(html, 'profit-loss'), bs = screenerTable(html, 'balance-sheet'), cf = screenerTable(html, 'cash-flow');
     if (!pl || !bs) return null;
     const years = pl.columns.filter(c => c !== 'TTM' && bs.columns.includes(c)).slice(-YEARS);
@@ -64,11 +64,37 @@ async function debtAndCashRatios(html: string, consolidated: boolean): Promise<{
         }
     } catch { /* net debt is left out */ }
 
+    // Tax paid, from the operating cash-flow breakdown: Screener's cash conversion (CFO/OP) is measured
+    // on operating cash flow BEFORE tax, so the figure shown beside it must be before tax too.
+    let taxPaid: Record<string, string> | null = null;
+    try {
+        const sid = screenerCompanyId(html);
+        if (sid && cf) {
+            const res = await cachedFetch(86400)(`https://www.screener.in/api/company/${sid}/schedules/?parent=${encodeURIComponent('Cash from Operating Activity')}&section=cash-flow${consolidated ? '&consolidated=' : ''}`);
+            if (res.ok) taxPaid = (await res.json())['Direct taxes'] ?? null;
+        }
+    } catch { /* falls back to the figure implied by the ratio */ }
+
     const lender = !pl.rows.some(r => r.label === 'Sales');
     const x = (v: number) => `${v.toFixed(v >= 10 ? 0 : 1)}x`;
     const pct = (v: number) => `${Math.round(v)}%`;
     const per = (fn: (y: string) => string | null) => years.map(fn);
 
+    const crore = (v: number | null) => (v === null ? null : Math.round(v).toLocaleString('en-IN'));
+    // The two figures cash conversion is made from, shown above it on the card.
+    const conversionParts = lender ? undefined : [
+        {
+            label: 'Operating cash flow before tax (₹cr)',
+            values: per(y => {
+                const o = cell(cf, 'Cash from Operating Activity', y), t = num(taxPaid?.[y]);
+                if (o !== null && t !== null) return crore(o - t); // tax paid is a negative figure
+                // No breakdown: the figure the ratio implies.
+                const r = cell(cf, 'CFO/OP', y), op = cell(pl, 'Operating Profit', y);
+                return r === null || op === null ? null : crore((r / 100) * op);
+            }),
+        },
+        { label: 'Operating profit (₹cr)', values: per(y => crore(cell(pl, 'Operating Profit', y))) },
+    ];
     const rows: [string, (string | null)[]][] = [
         ['Debt to equity', per(y => {
             const debt = cell(bs, 'Borrowings', y), eq = (cell(bs, 'Equity Capital', y) ?? 0) + (cell(bs, 'Reserves', y) ?? 0);
@@ -112,7 +138,7 @@ async function debtAndCashRatios(html: string, consolidated: boolean): Promise<{
     return {
         columns: years.map(c => c.replace(/^Mar /, 'FY').replace(/^FY20(\d\d)$/, 'FY$1')),
         raw: years,
-        rows: kept.map(([label, values]) => ({ label, src: label, expandable: false, values })),
+        rows: kept.map(([label, values]) => ({ label, src: label, expandable: false, values, ...(label === 'Cash conversion' && conversionParts ? { parts: conversionParts } : {}) })),
     };
 }
 

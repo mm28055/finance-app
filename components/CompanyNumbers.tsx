@@ -8,10 +8,10 @@ import { useHoverOpen } from '@/lib/hover-open';
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
 // Bump when the shape of /financials changes, so browsers never reuse an older copy.
-const DATA_VERSION = 6;
+const DATA_VERSION = 8;
 
 type Tab = 'history' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios' | 'ratios-1';
-type Row = { label: string; src: string; expandable: boolean; values: (string | null)[] };
+type Row = { label: string; src: string; expandable: boolean; values: (string | null)[]; /** The figures a ratio is made from, shown above it (open by default, can be closed). */ parts?: { label: string; values: (string | null)[] }[] };
 type Table = { columns: string[]; raw: (string | null)[]; rows: Row[] };
 type Financials = { view: 'consolidated' | 'standalone'; empty: boolean; tables: Record<string, Table>; growth: Record<string, Record<string, string>> };
 
@@ -32,7 +32,7 @@ const NOTES: Partial<Record<Tab, string>> = {
     'balance-sheet': '₹ crore at 31 March.',
     'cash-flow': '₹ crore, years to March. Free cash = operating cash less capital spending.',
     ratios: 'Days of sales (debtors), of materials (inventory, payables). A shorter cash conversion cycle is better.',
-    'ratios-1': 'Years to March. Net debt = borrowings less cash and bank balances (investments not deducted). Interest cover = operating profit ÷ interest. Cash conversion = operating cash ÷ operating profit. Capex = operating cash less free cash. Rules of thumb, which vary by industry: debt to equity under 1, net debt under 2x EBITDA, interest cover above 3x, cash conversion above 70%. Banks and lenders show only the dividend payout: the other measures do not apply to them.',
+    'ratios-1': 'Years to March. Net debt = borrowings less cash and bank balances (investments not deducted). Interest cover = operating profit ÷ interest. Cash conversion = operating cash flow before tax ÷ operating profit (the Cash flow tab shows operating cash after tax). Capex = operating cash less free cash. Rules of thumb, which vary by industry: debt to equity under 1, net debt under 2x EBITDA, interest cover above 3x, cash conversion above 70%. Banks and lenders show only the dividend payout: the other measures do not apply to them.',
 };
 
 // Screener's growth summary as one quiet line under the P&L table.
@@ -75,6 +75,8 @@ function DataTable({ table, companyId, section, view }: { table: Table; companyI
     React.useEffect(() => {
         for (const r of table.rows) if (r.expandable && ALWAYS_OPEN.has(r.src)) load(r);
     }, [table, load]);
+    // A ratio's own figures (e.g. operating cash flow and operating profit above cash conversion): open until closed.
+    const [partsClosed, setPartsClosed] = React.useState<Record<string, boolean>>({});
     const cellClass = (v: string | null, i: number) =>
         `py-1 px-1.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''} ${table.columns[i] === 'TTM' || table.columns[i] === 'YoY' ? 'bg-gray-50' : ''}`;
     return (
@@ -92,9 +94,21 @@ function DataTable({ table, companyId, section, view }: { table: Table; companyI
                         const sub = open[r.src];
                         return (
                             <React.Fragment key={r.label}>
+                                {r.parts && !partsClosed[r.label] && r.parts.map(p => (
+                                    <tr key={r.label + p.label} className="text-[10px] text-gray-500 bg-[#F8FAFC]">
+                                        <td className="py-0.5 pr-2 pl-4 whitespace-nowrap sticky left-0 bg-[#F8FAFC]">{p.label}</td>
+                                        {p.values.map((v, i) => <td key={i} className={`py-0.5 px-1.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''}`}>{v ?? '–'}</td>)}
+                                    </tr>
+                                ))}
                                 <tr className={`border-t border-gray-50 ${key ? 'font-semibold text-gray-800' : 'text-gray-600'}`}>
                                     <td className="py-1 pr-2 whitespace-nowrap sticky left-0 bg-white">
                                         {r.label}
+                                        {r.parts && (
+                                            <button onClick={() => setPartsClosed(c => ({ ...c, [r.label]: !c[r.label] }))} title={partsClosed[r.label] ? 'Show the figures behind it' : 'Hide the figures behind it'}
+                                                className="ml-1 inline-flex items-center justify-center w-3.5 h-3.5 rounded text-[10px] leading-none text-[#4A7AAF] hover:bg-[#D4E5F7]">
+                                                {partsClosed[r.label] ? '+' : '−'}
+                                            </button>
+                                        )}
                                         {r.expandable && (
                                             <button onClick={() => toggle(r)} title={sub ? 'Hide breakdown' : 'Show breakdown'}
                                                 className="ml-1 inline-flex items-center justify-center w-3.5 h-3.5 rounded text-[10px] leading-none text-[#4A7AAF] hover:bg-[#D4E5F7]">
