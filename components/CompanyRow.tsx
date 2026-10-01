@@ -34,13 +34,12 @@ function shortQuarter(q: string): string {
     return q.replace('FY', '').replace(' ', ' ');
 }
 
-// "2026-09-08" -> "Sep 8th, 2026", for the hover on the filing and news chips.
+// "2026-09-08" -> "Sep 8, 26", for the hover on the filing and news chips.
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 function hoverDate(iso: string): string {
     const [y, m, d] = iso.split('-').map(Number);
     if (!y || !m || !d) return iso;
-    const suffix = d % 10 === 1 && d !== 11 ? 'st' : d % 10 === 2 && d !== 12 ? 'nd' : d % 10 === 3 && d !== 13 ? 'rd' : 'th';
-    return `${MONTHS[m - 1]} ${d}${suffix}, ${y}`;
+    return `${MONTHS[m - 1]} ${d}, ${String(y).slice(-2)}`;
 }
 
 export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: 'text-[#4A7AAF]' }, expanded = false, onExpandedChange }: {
