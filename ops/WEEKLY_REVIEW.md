@@ -11,7 +11,8 @@ sub-agents. Today's date: run `date`.
 
 ## 1. What to do
 Two inputs: the open follow-ups in `lib/corporate-actions/needs-attention.json` (entries WITHOUT a `handled` field),
-and the week's material filings in `lib/filings/filings.json` (dated after the last entry in `ops/weekly-log.md`).
+and the week's material filings in `lib/filings/filings.json` and market news in `lib/news/news.json` (dated after the last
+entry in `ops/weekly-log.md`).
 If both are empty, stop: change nothing, commit nothing.
 
 Order of work (at most 40 follow-ups per run; the rest wait for the next run — say how many are left in the log. After every
@@ -20,6 +21,7 @@ Order of work (at most 40 follow-ups per run; the rest wait for the next run —
 2. New results calls — companies the notes rate own or follow first, then wait, then pass/avoid.
 3. Call drift, shareholding, demergers, new AGMs / special calls.
 4. The filings pass (below).
+5. The news pass (below).
 
 For each entry, by its `subject`/`why`:
 
@@ -110,6 +112,17 @@ belongs. Watch items are a forward-looking list: rewrite them (drop what is sett
 never tack a news sentence onto the end of one, and never paste the same news into every section. Change the call
 only if clearly warranted. Ignore routine items (small promoter trades, routine appointments). No needs-attention
 entry is needed for these; list them in the log.
+
+**News pass.** `lib/news/news.json` (read only; the evening job writes it) holds, per company, sharp one-day price
+moves with the reason found and market or policy events that directly affect it (a regulator's rule, a duty, a ban, a
+scheme). For each entry with `"dot": true` dated after the last log entry, for a company a note covers: confirm a
+policy event against the official order, circular or notification before relying on it (news can be early or wrong; a
+draft is not a final rule), then treat it like a filing above: correct what it makes out of date, mention it once
+where it belongs if it matters to the investment case, add or settle a checkpoint if it creates a testable
+expectation (e.g. "final commission caps notified by Q4 FY27"), and change the call only if clearly warranted. An
+event that hits several companies of one sector also belongs once in that note's sector sections. A price move whose
+reason is a company filing is already covered by the filings pass. Ignore entries with `"dot": false` (no clear
+reason found). List what you did in the log.
 
 Then mark the entry done: add `"handled": "<YYYY-MM-DD>: <one line: what you found and did>"`. Never delete entries.
 

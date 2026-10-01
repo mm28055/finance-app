@@ -7,6 +7,7 @@ import { GENERAL_Q } from '../quarters';
 import { allSectorOverviews } from '../sector-overviews';
 import store from './todos.json';
 import filingsStore from '../filings/filings.json';
+import newsStore from '../news/news.json';
 import attention from '../corporate-actions/needs-attention.json';
 
 export interface SessionTodo { id: string; text: string; addedOn?: string; notBefore?: string }
@@ -46,6 +47,10 @@ async function jobHealth(): Promise<SessionTodo[]> {
     const dueFilings = lastDue([1, 2, 3, 4, 5, 6], 20, 10);
     const filed = Date.parse((filingsStore as { updated?: string }).updated || '') || 0;
     if (dueFilings && filed < dueFilings) out.push({ id: 'health-filings', text: `⚠ The 8pm filings job has not saved since ${filed ? fmt(filed) : 'ever'}: new filings and call transcripts are not coming in. Check "Daily Filings Digest" on GitHub Actions.` });
+
+    // Market news and "why it moved" run inside the filings job (first run 1 Oct 2026).
+    const newsRan = Date.parse((newsStore as { updated?: string }).updated || '') || 0;
+    if (dueFilings && dueFilings >= Date.parse('2026-10-01T14:30:00Z') && newsRan < dueFilings) out.push({ id: 'health-news', text: `⚠ The evening news check has not saved since ${newsRan ? fmt(newsRan) : 'ever'}: price moves and market or policy news are not coming in. Check the "Market news" step of "Daily Filings Digest" on GitHub Actions.` });
 
     // The review runs Sunday and Wednesday 9am IST (first run 30 Sep 2026). It should have handled
     // something by then if flags were waiting from before it.
