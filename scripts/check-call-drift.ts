@@ -20,6 +20,13 @@ const FILE = path.join(process.cwd(), 'lib', 'corporate-actions', 'needs-attenti
 async function main() {
     const dryRun = process.argv.includes('--dry-run');
     const info = companyCallInfo(allSectorOverviews());
+    // The chat's search passages carry a copy of each company's sector. A company moved by any route
+    // (the site, a script, the database) is brought back in step here, so the sector chat keeps
+    // finding its call transcripts.
+    if (!dryRun) {
+        const fixed = await prisma.$executeRaw`UPDATE "TranscriptChunk" t SET sector = c.sector FROM "Company" c WHERE c.id = t."companyId" AND t.sector <> c.sector`;
+        if (fixed) console.log(`${fixed} search passages moved to their company's current sector`);
+    }
     const companies = await prisma.company.findMany({
         where: { isVisible: true },
         select: { name: true, sector: true, marketCap: true, peRatio: true, currentPrice: true, ticker: true, isin: true },

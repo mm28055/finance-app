@@ -101,5 +101,11 @@ export async function PUT(req: NextRequest) {
         }
     });
 
+    // The chat's search passages carry a copy of the sector: keep it in step when a company moves,
+    // or the sector chat stops finding its call transcripts.
+    if (typeof body.sector === 'string' && body.sector) {
+        await prisma.transcriptChunk.updateMany({ where: { companyId: body.id, sector: { not: body.sector } }, data: { sector: body.sector } });
+    }
+
     return NextResponse.json({ success: true, company: updated });
 }
