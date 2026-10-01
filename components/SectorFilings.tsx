@@ -92,6 +92,10 @@ function SectorFilingsList({ data }: { data: SectorFilingsResponse }) {
 // The same filings, for one company, shown inside its expanded row.
 export function CompanyFilings({ filings }: { filings: MaterialFiling[] }) {
     const sorted = [...filings].sort((a, b) => b.date.localeCompare(a.date));
+    // The latest three by default; the rest open on request (as the management block does).
+    const [open, setOpen] = useState(false);
+    const TOP = 3;
+    const shown = open ? sorted : sorted.slice(0, TOP);
     return (
         <div id="company-filings" className="bg-white border border-gray-200 rounded-xl p-4 shadow-sm">
             <h4 className="text-xs font-semibold text-gray-800 uppercase tracking-wide mb-1">Material filings, last 6 months</h4>
@@ -99,7 +103,7 @@ export function CompanyFilings({ filings }: { filings: MaterialFiling[] }) {
                 <p className="text-xs text-gray-500">No material filings in the period checked.</p>
             ) : (
                 <ul className="divide-y divide-gray-100">
-                    {sorted.map((f, i) => (
+                    {shown.map((f, i) => (
                         <li key={i} className="py-2">
                             <div className="flex flex-wrap items-center gap-2">
                                 <span className="text-[11px] text-gray-400 tabular-nums">{formatDate(f.date)}</span>
@@ -121,6 +125,11 @@ export function CompanyFilings({ filings }: { filings: MaterialFiling[] }) {
                         </li>
                     ))}
                 </ul>
+            )}
+            {sorted.length > TOP && (
+                <button onClick={e => { e.stopPropagation(); setOpen(o => !o); }} className="mt-2 text-[11px] font-medium text-[#4A7AAF] hover:underline">
+                    {open ? 'Show less' : `Show all ${sorted.length} filings`}
+                </button>
             )}
         </div>
     );
