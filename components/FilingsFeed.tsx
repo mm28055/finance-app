@@ -13,7 +13,6 @@ const CALL_TONE: Record<string, string> = {
 
 // Filing categories grouped into the kinds an investor scans for.
 const TYPES: { key: string; label: string; test: RegExp }[] = [
-    { key: 'market', label: 'Market and policy, price moves', test: /^(market and policy|price move)$/i },
     { key: 'promoter', label: 'Promoter trades and pledges', test: /promoter|pledge|insider|large holder|ownership/i },
     { key: 'orders', label: 'Orders and contracts', test: /order|project win|contract|agreement/i },
     { key: 'management', label: 'Management changes', test: /management|auditor/i },
@@ -24,11 +23,19 @@ const TYPES: { key: string; label: string; test: RegExp }[] = [
     { key: 'legal', label: 'Legal, tax, regulatory, governance', test: /legal|tax|regulat|governance|related-party/i },
 ];
 
+// The Market and policy tab has two kinds of entry instead of filing categories.
+const NEWS_TYPES: typeof TYPES = [
+    { key: 'policy', label: 'Market and policy events', test: /^market and policy$/i },
+    { key: 'move', label: 'Price moves', test: /^price move$/i },
+];
+
 const dayLabel = (iso: string) => new Date(iso + 'T00:00:00').toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short' });
 
 // Every company's filings on one page, newest first. By default only the ones that can move the
 // share price; filters for sector, tone, the note's call and a company search.
-export function FilingsFeed({ filings }: { filings: Row[] }) {
+export function FilingsFeed({ filings, kind = 'filings' }: { filings: Row[]; /** 'news' = the Market and policy tab. */ kind?: 'filings' | 'news' }) {
+    const news = kind === 'news';
+    const types = news ? NEWS_TYPES : TYPES;
     const [all, setAll] = React.useState(false);
     const [tone, setTone] = React.useState<'any' | 'good' | 'watch'>('any');
     const [call, setCall] = React.useState('any');
@@ -42,7 +49,7 @@ export function FilingsFeed({ filings }: { filings: Row[] }) {
         (all || f.impact === 'high') &&
         (tone === 'any' || f.tone === tone) &&
         (call === 'any' || f.call === call) &&
-        (type === 'any' || !!TYPES.find(t => t.key === type)?.test.test(f.category)) &&
+        (type === 'any' || !!types.find(t => t.key === type)?.test.test(f.category)) &&
         (sector === 'any' || (sector === 'portfolio' ? f.inPortfolio : f.sector === sector)) &&
         (!q || f.company.toLowerCase().includes(q.toLowerCase())));
     const byDay = new Map<string, Row[]>();
@@ -54,16 +61,16 @@ export function FilingsFeed({ filings }: { filings: Row[] }) {
     return (
         <div className="flex flex-col gap-4">
             <div className="flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
-                <button className={chip(!all)} onClick={() => setAll(false)}>Price-moving</button>
-                <button className={chip(all)} onClick={() => setAll(true)}>All material</button>
+                <button className={chip(!all)} onClick={() => setAll(false)}>{news ? 'With a reason' : 'Price-moving'}</button>
+                <button className={chip(all)} onClick={() => setAll(true)}>{news ? 'All, incl. unexplained moves' : 'All material'}</button>
                 <span className="w-px h-5 bg-gray-200 mx-1" />
                 <button className={chip(tone === 'any')} onClick={() => setTone('any')}>Any</button>
                 <button className={chip(tone === 'good')} onClick={() => setTone('good')}>Positive</button>
                 <button className={chip(tone === 'watch')} onClick={() => setTone('watch')}>Watch</button>
                 <span className="w-px h-5 bg-gray-200 mx-1" />
                 <select className={select} value={type} onChange={e => setType(e.target.value)}>
-                    <option value="any">All types</option>
-                    {TYPES.map(t => <option key={t.key} value={t.key}>{t.label}</option>)}
+                    <option value="any">{news ? 'Events and moves' : 'All types'}</option>
+                    {types.map(t => <option key={t.key} value={t.key}>{t.label}</option>)}
                 </select>
                 <select className={select} value={call} onChange={e => setCall(e.target.value)}>
                     <option value="any">Any call</option>
@@ -116,7 +123,7 @@ export function FilingsFeed({ filings }: { filings: Row[] }) {
                     </div>
                 </section>
             ))}
-            {!shown.length && <p className="text-sm text-gray-400">No filings match.</p>}
+            {!shown.length && <p className="text-sm text-gray-400">{news ? 'Nothing matches.' : 'No filings match.'}</p>}
         </div>
     );
 }
