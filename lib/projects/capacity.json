@@ -2581,7 +2581,7 @@
   },
   {
    "company": "GPT Healthcare (Agilus)",
-   "sector": "Healthcare",
+   "sector": "Hospitals",
    "today": "Five ILS hospitals, 719 beds, in Kolkata, Howrah, Agartala and Raipur",
    "utilisation": "Occupancy 45.5% in Q1 FY27 (58.1% without new Raipur); Salt Lake and Dum Dum 62–65%, Dum Dum back near 70%",
    "capexStatus": "Jamshedpur 155-bed hospital due Q4 FY27 at about ₹70 lakh a bed, mostly funded by the developer plus about ₹25cr of debt; a seventh hospital under study to pass 1,000 beds",
@@ -2663,15 +2663,8 @@
    "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call and sector note"
   },
   {
-   "company": "Hemant Surgical Inds",
-   "sector": "Healthcare",
-   "today": "Mostly traded and assembled goods; a new plant in Chhatrapati Sambhajinagar processes JMS medical tape; no capacity figures published",
-   "capexStatus": "₹40–50cr planned over FY27–FY28 from accruals and cash",
-   "source": "Sector note (no call transcripts)"
-  },
-  {
    "company": "Sastasundar Ventures",
-   "sector": "Healthcare",
+   "sector": "Retail",
    "today": "Asset-light online distributor: about 2.5 lakh sq ft of warehouses (Kolkata region, Noida, Guwahati and others)",
    "utilisation": "Existing warehouses about 90% used (Q1 FY27)",
    "fullUse": "Existing space plus add-ons covers ₹2,500–3,000cr of revenue a year (about ₹1,760cr run-rate in Q1 FY27)",

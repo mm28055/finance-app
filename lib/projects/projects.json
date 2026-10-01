@@ -6923,7 +6923,7 @@
   {
    "id": "gpt-healthcare-agilus-jamshedpur",
    "company": "GPT Healthcare (Agilus)",
-   "sector": "Healthcare",
+   "sector": "Hospitals",
    "name": "Jamshedpur hospital (155 beds)",
    "what": "New 150–155-bed tertiary-care hospital in a developer-built leased building",
    "cost": "about ₹75cr (about ₹70 lakh a bed); about ₹25cr of new debt this year",
@@ -6937,7 +6937,7 @@
   {
    "id": "gpt-healthcare-agilus-raipur",
    "company": "GPT Healthcare (Agilus)",
-   "sector": "Healthcare",
+   "sector": "Hospitals",
    "name": "Raipur hospital ramp-up",
    "what": "Hospital opened in May 2025 on a leased, asset-light basis; still filling up",
    "adds": "occupancy growth; the network was 45.5% full with Raipur and 58.1% without it in Q1",
@@ -7091,7 +7091,7 @@
   {
    "id": "sastasundar-ventures-warehouses",
    "company": "Sastasundar Ventures",
-   "sector": "Healthcare",
+   "sector": "Retail",
    "name": "New warehouses (5.5 lakh sq ft)",
    "what": "Fulfilment centres at Udaipur, Lucknow, Patna, Guwahati and Baruipur (West Bengal), 5.52 lakh sq ft, taking total space above 8 lakh sq ft",
    "cost": "₹234cr, ₹134cr from bank loans",

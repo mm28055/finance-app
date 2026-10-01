@@ -17112,7 +17112,7 @@
   },
   {
    "company": "GPT Healthcare (Agilus)",
-   "sector": "Healthcare",
+   "sector": "Hospitals",
    "style": "Promoter-run",
    "styleNote": "A Tantia family business of the Kolkata-based GPT Group. The family owns control through the promoter company GPT Sons (65.6% as of FY25); individual family members hold only token shares. Surgeon Dr Om Tantia, a founding promoter, is Chairman and Managing Director; his son Anurag Tantia is an executive director; his wife Dr Aruna Tantia and fellow promoter Shree Gopal Tantia sit on the board as non-executive directors. Another son, Dr Mridul Tantia, works in the hospitals as Vice President, and his daughter-in-law Dr Niharika Tantia is a paid consultant.",
    "people": [
@@ -17630,48 +17630,8 @@
    "updatedOn": "2026-09-29"
   },
   {
-   "company": "Hemant Surgical Inds",
-   "sector": "Healthcare",
-   "style": "Promoter-run",
-   "styleNote": "A Shah family business founded in 1985. Promoter Hanskumar Shah is Chairman and MD; Kaushik Hanskumar Shah and Hemant Praful Shah (his nephew, and Kaushik's cousin) are whole-time directors. The three promoters own 56.5% after the FY26 share issue; other relatives hold small stakes. The annual report is inconsistent on who is CFO: most pages name Kaushik Shah, while the KMP list names Hemant Shah.",
-   "people": [
-    {
-     "name": "Hanskumar Shamji Shah",
-     "role": "Chairman & Managing Director",
-     "since": "Director since Feb 1994",
-     "family": true,
-     "relation": "Promoter; uncle of Hemant Praful Shah",
-     "stake": "27.1% (35,26,400 shares, 31 Mar 2026); promoters together 56.5%",
-     "bio": "Promoter and the longest-serving director, on the board since February 1994. As Chairman and MD he leads the company's shift from trading imported medical equipment towards making it in India, including the new plant at Shendra MIDC, Chhatrapati Sambhajinagar, for JMS MediTape and localised IV and blood sets with Japan's JMS, and planned tie-ups with Rayence (Korea) for X-ray panels and Zoncare (China) for ultrasound machines. The annual report does not give his education."
-    },
-    {
-     "name": "Kaushik Hanskumar Shah",
-     "role": "Whole-time Director & CFO",
-     "since": "Director since Dec 2022",
-     "family": true,
-     "relation": "Promoter; cousin of Hemant Praful Shah",
-     "stake": "16.1% (21,03,130 shares, 31 Mar 2026)",
-     "bio": "Promoter, on the board since December 2022 as a whole-time director, and co-signs the Chairman's message as Whole-time Director and CFO. The annual report does not give his education or earlier career."
-    },
-    {
-     "name": "Hemant Praful Shah",
-     "role": "Whole-time Director",
-     "since": "Director since Sep 2000",
-     "family": true,
-     "relation": "Promoter; nephew of Hanskumar Shah and cousin of Kaushik Shah",
-     "stake": "13.3% (17,34,070 shares, 31 Mar 2026)",
-     "bio": "Has about 25 years of experience in product development and manufacturing of healthcare and surgical products. His stated qualification is 8th pass. He has been a whole-time director since September 2000 and was re-appointed at the 2026 AGM, with pay proposed to rise from ₹60 lakh to ₹96 lakh a year. Aged 49."
-    }
-   ],
-   "changes": "Independent director Ketan Dave resigned and Manish Kankani joined in Aug 2025. No KMP changes reported for FY26.",
-   "sources": [
-    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=81b37aa7-8e7e-415b-9fee-ca76b9172833.pdf"
-   ],
-   "updatedOn": "2026-09-29"
-  },
-  {
    "company": "Sastasundar Ventures",
-   "sector": "Healthcare",
+   "sector": "Retail",
    "style": "Promoter-run",
    "styleNote": "Now renamed Health X Platform Ltd. Promoter Banwari Lal Mittal is Chairman and Managing Director and also runs the main operating subsidiary, Sastasundar Healthbuddy, as its Executive Chairman, MD and CEO. His wife Abha Mittal and co-promoter Ravi Kant Sharma sit on the board as non-executive directors. The promoter group owns 74.9%.",
    "people": [
