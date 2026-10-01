@@ -8,9 +8,9 @@ import { useHoverOpen } from '@/lib/hover-open';
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
 // Bump when the shape of /financials changes, so browsers never reuse an older copy.
-const DATA_VERSION = 5;
+const DATA_VERSION = 6;
 
-type Tab = 'history' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios';
+type Tab = 'history' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios' | 'ratios-1';
 type Row = { label: string; src: string; expandable: boolean; values: (string | null)[] };
 type Table = { columns: string[]; raw: (string | null)[]; rows: Row[] };
 type Financials = { view: 'consolidated' | 'standalone'; empty: boolean; tables: Record<string, Table>; growth: Record<string, Record<string, string>> };
@@ -22,6 +22,7 @@ const TABS: { key: Tab; label: string }[] = [
     { key: 'balance-sheet', label: 'Balance sheet' },
     { key: 'cash-flow', label: 'Cash flow' },
     { key: 'ratios', label: 'Ratios' },
+    { key: 'ratios-1', label: 'Ratio 1' },
 ];
 // Rows drawn in bold: the ones a reader looks for first.
 const KEY_ROWS = new Set(['Sales', 'Revenue', 'Operating profit', 'Financing profit', 'Net profit', 'Total', 'Free cash', 'ROCE', 'Operating cash']);
@@ -31,6 +32,7 @@ const NOTES: Partial<Record<Tab, string>> = {
     'balance-sheet': '₹ crore at 31 March.',
     'cash-flow': '₹ crore, years to March. Free cash = operating cash less capital spending.',
     ratios: 'Days of sales (debtors), of materials (inventory, payables). A shorter cash conversion cycle is better.',
+    'ratios-1': 'Years to March. Net debt = borrowings less cash and bank balances (investments not deducted). Interest cover = operating profit ÷ interest. Cash conversion = operating cash ÷ operating profit. Capex = operating cash less free cash. Rules of thumb, which vary by industry: debt to equity under 1, net debt under 2x EBITDA, interest cover above 3x, cash conversion above 70%. Banks and lenders show only the dividend payout: the other measures do not apply to them.',
 };
 
 // Screener's growth summary as one quiet line under the P&L table.
