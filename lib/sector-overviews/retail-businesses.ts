@@ -16,7 +16,7 @@ const intro: OverviewSection[] = [
     {
         heading: 'The businesses, in plain words',
         body: [
-            "Eighteen companies that sell to shoppers, or to the shops and to businesses, in five groups.",
+            "Nineteen companies that sell to shoppers, or to the shops and to businesses, in five groups.",
         ],
         points: [
             {
@@ -33,7 +33,7 @@ const intro: OverviewSection[] = [
             },
             {
                 label: 'Pharmacy and pharma distribution',
-                text: "MedPlus runs 5,476 pharmacies that sell medicines at a standard discount and push their own cheaper labels; Entero is a wholesaler that buys from about 3,000 drug and device makers and delivers to chemists and hospitals. **Medicine prices and trade margins are largely fixed along the chain**, so these companies earn from scale in buying, own-label goods and tight costs.",
+                text: "MedPlus runs 5,476 pharmacies that sell medicines at a standard discount and push their own cheaper labels; Entero is a wholesaler that buys from about 3,000 drug and device makers and delivers to chemists and hospitals; Sastasundar (now Health X Platform) distributes medicines online to small chemists and consumers, mostly in West Bengal, and still loses money doing it. **Medicine prices and trade margins are largely fixed along the chain**, so these companies earn from scale in buying, own-label goods and tight costs.",
             },
             {
                 label: 'Business marketplaces and distributors',
@@ -52,7 +52,7 @@ const intro: OverviewSection[] = [
                 rows: [
                     ['**A brand margin on its own or licensed labels**', 'Vedant, ABLBL, ABFRL, Arvind, Go Fashion', 'The gap between making cost and a full-price tag, after the store or franchisee takes its share', 'Slow: stock is bought months ahead, and franchisees, department stores and wholesalers pay on credit (Vedant waits about 166 days)'],
                     ['**A trading margin at the till**', 'V2, V-Mart, Sai Silks, Shoppers Stop, FirstCry, MedPlus, Aditya Vision, Electronics Mart', 'The gap between what it pays suppliers and the shelf price, less rent and staff', 'Shoppers pay at once, but stock must be bought and paid for first; sale-or-return (Shoppers Stop) or supplier credit eases it'],
-                    ['**A dealer or wholesale margin set by others**', 'Landmark, Entero, SG Mart', 'A few paise per rupee on prices set by carmakers, drug makers or the steel market, plus incentives', 'Car stock is funded by bank loans; chemists get about 67 days of credit; steel mills are often paid in advance'],
+                    ['**A dealer or wholesale margin set by others**', 'Landmark, Entero, SG Mart, Sastasundar', 'A few paise per rupee on prices set by carmakers, drug makers or the steel market, plus incentives', 'Car stock is funded by bank loans; chemists get about 67 days of credit from Entero but pay Sastasundar in cash; steel mills are often paid in advance'],
                     ['**A fee or commission for matching**', 'IndiaMART, Crizac', 'Subscriptions from suppliers, or a commission per enrolled student', 'IndiaMART is paid in advance; universities pay Crizac in 90–180 days'],
                 ],
             },
@@ -545,6 +545,33 @@ const profiles: BusinessProfile[] = [
         money: "Screener shows **₹4,468cr of net debt**, including leases; before leases it had ₹1,545cr of gross cash against ₹1,695cr of debt in March. Standalone cash is about ₹1,000cr now and should fall to about ₹500cr by March; it needs ₹500–550cr a year until free cash turns positive ‘by FY29 and '30’. It must buy Sabyasachi Mukherjee's 49% for up to ₹1,525cr if the label does not list. CRISIL rates it AA+. Promoters hold **46.6%**, down from 55.5% in September 2023; ₹4,239cr of equity was raised in January 2025.",
         watch: ["Losses narrowing in H2 FY27.", "TCNS breaking even by the end of FY27.", "No new equity raise."],
         charts: retailCharts['Aditya Birla Fashion & Retail'],
+    },
+    {
+        company: 'Sastasundar Ventures',
+        inShort: ["**Now called Health X Platform**: an online medicine distributor supplying about 75,000 small pharmacies (RetailerShakti) and consumers (SastaSundar), about 70% of it in West Bengal, alongside a treasury of about ₹500cr.", "**Good:** Q1 FY27 revenue rose 58% and the gross margin improved to 7.8%. **Bad:** it lost ₹14.9cr at the operating level in Q1, has never sustained an operating profit, its managing director says it will not be EBITDA-positive for two to three years, and its small profits come from treasury income on hard-to-value assets.", "**Verdict: avoid.** Growth without profit; avoid until the core business earns money on its own."],
+        tagline: "An online wholesaler and retailer of medicines, selling cash-and-carry to small pharmacies through an app and to consumers through franchise shops.",
+        revenue: '₹1,319cr (FY26, consolidated)',
+        products: [
+            { name: 'RetailerShakti (to pharmacies)', text: "An app through which about 75,000 small chemists (about 40,000 active in a month) order medicines for next-day delivery, paying cash. FY26 sales were ₹1,125cr, up from ₹950cr; management says it is close to break-even and should turn EBITDA-positive in Q3 FY27." },
+            { name: 'SastaSundar (to consumers)', text: "An online pharmacy whose orders are delivered through about 350 franchised ‘HealthBuddy’ shops that hold no stock: about ₹155cr of FY26 sales. It sold this business to Flipkart in 2021 and took it back when Flipkart left." },
+            { name: 'JITO own-label generics', text: "Its own generic medicines at up to 60% below big brands, with a gross margin above 50%, but only ₹0.79cr of sales in Q1 FY27." },
+            { name: 'Treasury and financial services', text: "About ₹500cr invested in deposits, unlisted NSE shares (₹90.4cr), private debt, funds and structured deals, plus a small portfolio-management arm that is being demerged into Microsec Resources." },
+        ],
+        revenueText: "On the company's FY26 figures, **RetailerShakti was about 88% of healthcare revenue** (₹1,125cr) and SastaSundar about 12% (₹155cr). About **70% of sales are in West Bengal**, and 67% of RetailerShakti's sales come from tier-2 and tier-3 towns. The company does not give a profit split between the two businesses, despite promising one. Monthly revenue passed ₹150cr in July 2026.",
+        mixes: [
+            { caption: 'Healthcare revenue by business, FY26 (company figures)', parts: [{ label: 'RetailerShakti (pharmacies)', share: 88 }, { label: 'SastaSundar (consumers)', share: 12 }] },
+        ],
+        customers: ["**Small independent pharmacies**, mostly in West Bengal and nearby states, who get about 2% of their purchases from it and must pay cash; 42.4% of order value comes from orders above ₹5,000.", "**Consumers** ordering online, served through franchise HealthBuddy shops, mostly in smaller towns.", "It buys over 95% of its medicines directly from drug makers, with returns under 1%."],
+        difficulty: { level: 'Low', text: "Medicine distribution is a thin-margin trade with 12.4 lakh licensed chemists and many wholesalers; the gross margin of 7.5–8% is the industry's because ‘we are buying from the same companies’. What it has built is technology, warehouses and direct buying, which rivals with deeper pockets also have." },
+        moat: "Direct buying, next-day delivery for 90% of orders and an app that pharmacies reorder from give it some stickiness. The weakness is a tiny share (3–4% of West Bengal, by its latest estimate), no pricing power, and cash-only terms that limit its reach among pharmacies that want credit.",
+        salesDrivers: ["**New states**: Odisha, Bihar, Jharkhand, Chhattisgarh, UP, Haryana, Rajasthan and the North-East (growing over 50% a year).", "**More pharmacies and bigger orders** on RetailerShakti, helped by an AI reordering tool due this quarter.", "**Higher-margin products**: own-label JITO generics and non-medicines (2% of sales now, 10% targeted).", "**Warehouses**: current space is about 90% used; ₹234cr of warehouse capex is planned, ₹134cr of it from bank loans.", "**Targets**: ₹6,000cr of revenue by FY30 at a 5% EBITDA margin, from ₹1,283cr in FY26, with losses in FY27–FY28."],
+        inputs: "**Medicines bought for resale.** In FY26 goods bought were 92% of sales, staff 6% and other costs 6% (including delivery riders and warehouse staff on its own payroll). Technology and brand spending of ₹50–60cr a year drives the losses.",
+        costEffect: "**Passed on, but the margin is thin.** Drug makers set prices and trade margins, so medicine price changes flow through to its selling prices; what matters is the gross margin it can negotiate (7.5–8%) and its own spending. **Rule of thumb:** a 10% rise in purchase costs not passed on would cut the margin by about 9 points (−4% to −13%). **What happened:** there is no input price index to chart. The operating margin was negative in every year except FY22, when it booked the Flipkart sale gain (Screener). The FY26 operating loss narrowed to ₹65cr from ₹79cr on the company's figures as gross margin rose from 6.5% to 7.5%, and Q1 FY27's loss was ₹14.9cr at a 7.8% gross margin.",
+        competitors: [{ name: 'PharmEasy and Tata 1mg', note: 'Larger online pharmacies and distributors with deeper funding.' }, { name: 'Apollo’s pharmacy distribution arm', note: 'Grew 20% in Q1 at a 6% margin.' }, { name: 'Entero and traditional wholesalers', note: 'Give pharmacies credit, which Sastasundar does not; Entero, far larger and profitable, is covered in this note.' }],
+        position: "**A small regional online medicine distributor**, with about 3–4% of West Bengal's market by its own latest estimate.",
+        money: "Screener shows **₹523cr of net cash**; the company cites a treasury of about ₹500cr (about ₹100cr of it going with the demerger), invested partly in unlisted shares, private debt and funds that are hard to value, and some dealings involve funds linked to its managers. Operating cash was −₹74cr in FY26 and working capital rose from 18 to 28 days of sales in Q1 FY27. No dividend. Promoters hold **74.1%**, broadly unchanged from 73.9% in September 2023.",
+        watch: ["RetailerShakti turning EBITDA-positive in Q3 FY27.", "Working capital back below 20 days.", "The demerger, and what stays in the treasury."],
+        charts: retailCharts['Sastasundar Ventures'],
     },
 ];
 

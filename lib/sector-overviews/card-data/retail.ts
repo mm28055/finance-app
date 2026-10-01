@@ -1913,6 +1913,110 @@ export const retailCharts: Record<string, ProfileCharts> = {
             "inventory5y": -448,
             "payables5y": 56
         }
+    },
+    "Sastasundar Ventures": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Reagents, consumables and goods bought",
+                    "share": 92
+                },
+                {
+                    "label": "Staff",
+                    "share": 6
+                },
+                {
+                    "label": "Other costs",
+                    "share": 6
+                },
+                {
+                    "label": "Operating loss",
+                    "share": 4
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                1114.0,
+                -107.0,
+                -24.0,
+                -19.0,
+                -52.0
+            ],
+            "ocf": [
+                -207.0,
+                -112.0,
+                36.0,
+                -17.0,
+                -74.0
+            ],
+            "fcf": [
+                -212.0,
+                -131.0,
+                22.0,
+                -27.0,
+                -89.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "Loss-making"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "n/m",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹523cr net cash",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "-41%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "-4%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                4,
+                2
+            ],
+            "inventoryDays": [
+                71,
+                44
+            ],
+            "payableDays": [
+                21,
+                26
+            ],
+            "cycleDays": [
+                55,
+                20
+            ],
+            "absorbed5y": -42,
+            "receivables5y": -14,
+            "inventory5y": -66,
+            "payables5y": 61
+        }
     }
 };
 
@@ -2026,5 +2130,11 @@ export const retailValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 255.0,
         "mcapAtWriting": 1227.0,
         "peAtWriting": 8.99
+    },
+    "Sastasundar Ventures": {
+        "netDebt": -523,
+        "ttmEbitda": -67.0,
+        "mcapAtWriting": 933.0,
+        "peAtWriting": null
     }
 };
