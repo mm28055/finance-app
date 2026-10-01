@@ -34,6 +34,15 @@ function shortQuarter(q: string): string {
     return q.replace('FY', '').replace(' ', ' ');
 }
 
+// "2026-09-08" -> "Sep 8th, 2026", for the hover on the filing and news chips.
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+function hoverDate(iso: string): string {
+    const [y, m, d] = iso.split('-').map(Number);
+    if (!y || !m || !d) return iso;
+    const suffix = d % 10 === 1 && d !== 11 ? 'st' : d % 10 === 2 && d !== 12 ? 'nd' : d % 10 === 3 && d !== 13 ? 'rd' : 'th';
+    return `${MONTHS[m - 1]} ${d}${suffix}, ${y}`;
+}
+
 export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: 'text-[#4A7AAF]' }, expanded = false, onExpandedChange }: {
     company: EnrichedCompany;
     colorTheme?: { bg: string; text: string };
@@ -361,7 +370,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                 type="button"
                                 onClick={(e) => { e.stopPropagation(); setExpanded(true); }}
                                 className={`flex-shrink-0 cursor-pointer hover:opacity-80 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border ${TONE_STYLE[companyFilings.some(f => f.tone === 'watch') ? 'watch' : companyFilings.some(f => f.tone === 'good') ? 'good' : 'info'].chip}`}
-                                title={companyFilings.map(f => `${f.date}: ${f.headline}`).join('\n')}
+                                title={companyFilings.map(f => `${hoverDate(f.date)}: ${f.headline}`).join('\n')}
                             >
                                 {companyFilings.length} {companyFilings.length === 1 ? 'filing' : 'filings'}
                             </button>
@@ -371,7 +380,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                 type="button"
                                 onClick={(e) => { e.stopPropagation(); setExpanded(true); }}
                                 className="flex-shrink-0 cursor-pointer hover:opacity-80 inline-flex items-center gap-1 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border bg-[#FDF6E7] text-[#946200] border-[#F0DDAE]"
-                                title={`${company.newsFlag.date}: ${company.newsFlag.headline}`}
+                                title={`${hoverDate(company.newsFlag.date)}: ${company.newsFlag.headline}`}
                             >
                                 <span className="w-1.5 h-1.5 rounded-full bg-[#E0A030]" /> news
                             </button>
