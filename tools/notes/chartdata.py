@@ -343,6 +343,7 @@ CONFIG = {
         'Jupiter Life Line Hospitals': ('JLHL', None, None, True),
         'Artemis Medicare': ('ARTEMISMED', None, None, True),
         'Shalby': ('SHALBY', None, None, True),
+        'GPT Healthcare (Agilus)': ('GPTHEALTH_s', None, None, False),
     },
     'oil': {
         'Aegis Vopak Terminals': ('AEGISVOPAK', None, None, False),
@@ -441,10 +442,7 @@ CONFIG = {
         'Indegene': ('INDGN', None, None, True),
         'Nephrocare Health': ('NEPHROPLUS', None, None, True),
         'Vimta Labs': ('VIMTALABS_s', None, None, False),
-        'GPT Healthcare (Agilus)': ('GPTHEALTH_s', None, None, False),
         '3B Blackbio Diagnostics': ('3BBLACKBIO', None, None, True),
-        'Sastasundar Ventures': ('533259', None, None, True),
-        'Hemant Surgical Inds': ('543916', None, None, False),
     },
     'healthcare-diagnostic': {
         'Dr Lal PathLabs': ('LALPATHLAB', None, None, True),
@@ -473,6 +471,7 @@ CONFIG = {
         'Landmark Cars': ('LANDMARK', None, None, False),
         'Go Fashion (India) (GoColors)': ('GOCOLORS_s', None, None, True),
         'Sai Silks (Kalamandir)': ('KALAMANDIR_s', None, None, False),
+        'Sastasundar Ventures': ('533259', None, None, True),
     },
     'food-products': {
         'Zydus Wellness': ('ZYDUSWELL', None, None, True),
