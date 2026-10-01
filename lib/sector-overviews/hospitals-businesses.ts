@@ -10,7 +10,7 @@ const intro: OverviewSection[] = [
     {
         heading: 'How to read this tab',
         body: [
-            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it offers, where the money comes from and its charts; patients and payers, costs, competitors and ownership are under **More detail**. Revenue totals are filed consolidated figures; beds, occupancy and splits are from each company's latest call. Hospitals have no main raw material, so there is no cost-versus-input chart.",
+            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it offers, where the money comes from and its charts; patients and payers, costs, competitors and ownership are under **More detail**. Revenue totals are filed consolidated figures (GPT Healthcare standalone, as it has no subsidiaries); beds, occupancy and splits are from each company's latest call. Hospitals have no main raw material, so there is no cost-versus-input chart.",
         ],
     },
     {
@@ -47,7 +47,7 @@ const intro: OverviewSection[] = [
                 columns: ['Kind', 'Who', 'What they do', 'What sets profit'],
                 rows: [
                     ['**Large chains across several states**', 'Narayana, Medanta, KIMS', 'Complex care (heart, cancer, transplants) in many cities', 'Filling new hospitals; keeping complex-care prices up'],
-                    ['**Regional chains**', 'Yatharth, Jupiter, Artemis, Shalby', 'A few large hospitals in one region (Delhi NCR and UP, western India, Gurugram, Gujarat)', 'Occupancy and ARPOB at each hospital; one new hospital moves the whole company'],
+                    ['**Regional chains**', 'Yatharth, Jupiter, Artemis, GPT Healthcare, Shalby', 'A few large hospitals in one region (Delhi NCR and UP, western India, Gurugram, Kolkata and eastern India, Gujarat)', 'Occupancy and ARPOB at each hospital; one new hospital moves the whole company'],
                     ['**Single-speciality chains**', 'Rainbow (children and mothers), Dr Agarwal’s (eyes)', 'Many smaller centres in one speciality', 'Opening centres fast at low cost; brand among parents or eye patients'],
                 ],
             },
@@ -166,6 +166,34 @@ const profiles: BusinessProfile[] = [
         money: "Screener shows **₹56cr of net debt**. Capex of about ₹800cr is planned over three years (Raipur ₹120cr, South Delhi ₹350–360cr, Tower IV ₹120cr, parking ₹70–80cr and replacements ₹100–120cr), plus a ₹250cr deposit for the South Delhi site, of which ₹130cr is paid. Management says its own cash flow (about ₹150cr a year) plus debt covers these projects. Shareholders approved a share sale (QIP) of up to ₹700cr, which management says is only for buying existing hospitals and is 6–8 months away if it happens. Promoters hold **58.4%**, down from 68.0% in September 2023; most of the fall came from IFC (the World Bank's private-sector arm) converting ₹330cr of convertible debentures into shares in FY26. The MD was paid ₹52.7cr in FY26, ₹44.4cr of it from share options, 1,158 times the median employee.",
         watch: ["Raipur's losses staying near ₹20cr and break-even within 15–18 months.", "Whether the ₹700cr share sale happens, and what it buys.", "International revenue returning to about 30% of the total."],
         charts: hospitalsCharts['Artemis Medicare'],
+    },
+    {
+        company: 'GPT Healthcare (Agilus)',
+        inShort: ["**Runs five ILS Hospitals (719 beds)** in Kolkata, Howrah, Agartala and Raipur. The dashboard's ‘(Agilus)’ label is wrong: Agilus is Fortis's unlisted lab business, and this company is a hospital operator.", "**Good:** the four mature hospitals earn a 23% margin, patients pay fast so working capital is negative, it pays out about half its profit, and it raised its FY27 margin guide to about 21%. **Bad:** the new Raipur hospital runs at 17.4% occupancy and loses about ₹3cr a quarter, Agartala and Howrah are well behind their targets, and family pay is about a fifth of profit.", "**Verdict: follow.** Solid old hospitals; I would buy on a weak quarter once Raipur nears break-even."],
+        tagline: "A family-run chain of mid-sized multi-specialty hospitals in eastern and central India, trading as ILS Hospitals.",
+        revenue: '₹473cr (FY26, standalone)',
+        products: [
+            { name: 'Kolkata hospitals', text: "Salt Lake (85 beds, known for gut and robotic surgery, 800-plus robotic cases), Dum Dum (155 beds, 700-plus kidney transplants) and Howrah (116 beds, robotic knee replacement). Salt Lake and Dum Dum run at 62–65% occupancy." },
+            { name: 'Agartala, Tripura', text: "A 205-bed hospital, the only private hospital in Tripura with both main accreditations and the only integrated cancer unit there; occupancy fell to 45.3% in Q1 FY27 as Bangladeshi patients dropped from about 10% of volumes to about 3%." },
+            { name: 'Raipur, Chhattisgarh', text: "A 158-bed hospital opened in May 2025 in a leased building; 17.4% occupancy in Q1 FY27, a loss of about ₹3cr a quarter, and break-even expected around January 2027." },
+            { name: 'Jamshedpur (under construction)', text: "A 150–155-bed hospital in a leased building costing about ₹75cr, due late in FY27 or early FY28." },
+        ],
+        revenueText: "Q1 FY27 revenue of ₹126.2cr came from **Dum Dum (32%)**, Agartala (28%), Salt Lake (17%), Howrah (15%) and Raipur (8%). **About 90% of revenue is from patients paying cash or through insurance** (roughly half each), about 5% from companies and about 5% from government schemes, which it deliberately avoids because they pay late and at low rates. Average revenue per occupied bed per day was ₹42,350 in Q1, up 8.8%, before the annual October tariff rise.",
+        mixes: [
+            { caption: 'Revenue by hospital, Q1 FY27 (company presentation)', parts: [{ label: 'Dum Dum', share: 32 }, { label: 'Agartala', share: 28 }, { label: 'Salt Lake', share: 17 }, { label: 'Howrah', share: 15 }, { label: 'Raipur', share: 8 }] },
+            { caption: 'Revenue by payer (company calls)', parts: [{ label: 'Cash and insurance', share: 90 }, { label: 'Companies', share: 5 }, { label: 'Government schemes', share: 5 }], note: 'Approximate shares given by management.' },
+        ],
+        customers: ["**Patients in Kolkata and Howrah** needing surgery, transplants and specialist care, paying cash or through health insurance.", "**Patients in Tripura and nearby Bangladesh**, for whom Agartala is the main private hospital; Bangladesh visa rules now affect volumes.", "**Patients in Raipur and, later, Jamshedpur**, where it is building a name against newer chains."],
+        difficulty: { level: 'High', text: "A hospital needs specialist doctors (115 full-time and 630 visiting), nurses, accreditations and years to build local trust; new hospitals take about 20–24 months to break even. Doctors leave at about 10% a year in Agartala and Raipur." },
+        moat: "Being the first corporate hospital in its patch (within about 5 km in Howrah) or the only accredited private one (Tripura) brings steady local patients, and leasing buildings keeps the cost at about ₹70 lakh a bed. The weakness is size: at 719 beds it lacks the referral network and bargaining power of the big chains, and CRISIL calls its scale ‘modest’.",
+        salesDrivers: ["**Occupancy**: 45.5% across the network in Q1 FY27 (58.1% without Raipur), against targets of 70–73% at the Kolkata hospitals and about 58% at Agartala.", "**Revenue per bed**: up 8.8% in Q1 from better case mix (50–60% of the gain) before any tariff rise; management guides 7–8% for FY27.", "**New hospitals**: Raipur filling up and Jamshedpur opening; a seventh hospital is needed to reach 1,000 beds ‘over the next 2 years’, but no site is chosen.", "**Guidance**: about 15% revenue growth in FY27 and a margin of about 21% including other income."],
+        inputs: "**Doctors, nurses, medicines and consumables.** In FY26 medicines, consumables and goods bought were 19% of sales, hospital and running costs 34% (including fees to visiting doctors), staff 18% and other costs 11%. The new hospitals' buildings are leased from developers.",
+        costEffect: "**Mostly insulated.** Medicines and consumables are billed to patients, and tariffs rise with inflation each October; the margin is driven by how full the beds are, since doctors, staff and buildings are largely fixed costs. **Rule of thumb:** a 10% rise in medicine and consumable costs not passed on would cut the margin by about 2 points (18% to 16%). **What happened:** there is no input price index to chart. The operating margin fell from 22% in FY24 to 20% in FY25 and 18% in FY26 (Screener), because Raipur lost ₹13.8cr at the operating level in its first year; the mature hospitals' margin actually rose from 22.1% to 23.1%. Q1 FY27 was 19%.",
+        competitors: [{ name: 'Large hospital chains in Kolkata', note: 'Bigger groups with wider referral networks and more specialties compete for the same patients.' }, { name: 'New chains in Raipur', note: 'Other groups are adding beds in Raipur while ILS fills its new hospital; Artemis opened a 300-bed hospital there in July 2026.' }, { name: 'Government hospitals in Tripura', note: 'The main alternative for patients in Agartala.' }],
+        position: "**A small regional hospital chain**: the first corporate hospital in its area of Howrah and the only private hospital in Tripura with both NABH and NABL accreditation.",
+        money: "Screener shows **₹87cr of net debt**, but ₹75cr of it is lease liabilities (mostly Raipur); bank debt was only ₹16.1cr at March 2026, so excluding leases it has about ₹31cr of net cash. About ₹25cr of new debt will fund Jamshedpur this year. It paid out 49% of FY26 profit as dividends. CRISIL rates it A-. Family members' pay was about ₹8.2cr in FY26, roughly a fifth of profit. Promoters hold **65.6%**, unchanged since listing in 2024.",
+        watch: ["Raipur break-even around January 2027.", "Agartala back above 55% occupancy.", "Jamshedpur opening on time."],
+        charts: hospitalsCharts['GPT Healthcare (Agilus)'],
     },
     {
         company: 'Narayana Hrudayalaya',

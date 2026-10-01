@@ -961,6 +961,114 @@ export const hospitalsCharts: Record<string, ProfileCharts> = {
             "inventory5y": -355,
             "payables5y": 3
         }
+    },
+    "GPT Healthcare (Agilus)": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Reagents, consumables and goods bought",
+                    "share": 19
+                },
+                {
+                    "label": "Lab, clinic and running costs",
+                    "share": 34
+                },
+                {
+                    "label": "Staff",
+                    "share": 18
+                },
+                {
+                    "label": "Other costs",
+                    "share": 11
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 18
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                74.0,
+                74.0,
+                88.0,
+                83.0,
+                85.0
+            ],
+            "ocf": [
+                66.0,
+                66.0,
+                69.0,
+                67.0,
+                81.0
+            ],
+            "fcf": [
+                58.7,
+                56.05,
+                49.629999999999995,
+                17.07,
+                39.18
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "28.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "15.5x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹87cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "86%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "18%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                15,
+                16
+            ],
+            "inventoryDays": [
+                30,
+                43
+            ],
+            "payableDays": [
+                121,
+                170
+            ],
+            "cycleDays": [
+                -76,
+                -112
+            ],
+            "absorbed5y": 3,
+            "receivables5y": -13,
+            "inventory5y": -5,
+            "payables5y": 18
+        }
     }
 };
 
@@ -1019,5 +1127,11 @@ export const hospitalsValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 143.0,
         "mcapAtWriting": 1568.0,
         "peAtWriting": 39.9
+    },
+    "GPT Healthcare (Agilus)": {
+        "netDebt": 87,
+        "ttmEbitda": 91.0,
+        "mcapAtWriting": 1325.0,
+        "peAtWriting": 28.0
     }
 };
