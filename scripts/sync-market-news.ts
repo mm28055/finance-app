@@ -288,14 +288,26 @@ async function bigMoves(store: Store, cos: Co[], policyToday: NewsItem[]): Promi
     let prevRows: Map<string, DayRow> | null = null;
     for (let back = 1; back < 7 && !prevRows; back++) prevRows = await nseDay(dayBefore(date, back));
 
+    // The market's own move that day: the middle share's change across everything NSE trades. On a
+    // broad sell-off or rally (1.5% or more) a share has to move 7% MORE than the market, or against
+    // it, to call for a reason of its own; "the market fell" is not a reason worth recording per share.
+    const allMoves = [...rows.values()].map(r => r.pct).sort((a, b) => a - b);
+    const market = allMoves.length ? allMoves[Math.floor(allMoves.length / 2)] : 0;
+    const broad = Math.abs(market) >= 1.5;
+    const ownMove = (pct: number) => !broad || Math.abs(pct - market) >= MOVE_PCT || Math.sign(pct) !== Math.sign(market);
+
+    const MAX_MOVERS = 30;
     const movers = cos.flatMap(co => {
         const r = co.isin ? rows!.get(co.isin) : undefined;
-        if (!r) return [];
+        if (!r || !ownMove(r.pct)) return [];
         const big = Math.abs(r.pct) >= MOVE_PCT;
         const pinned = r.atLimit !== 0 && (r.band ?? 0) >= 10;
         const pinnedTwice = r.atLimit !== 0 && (r.band ?? 99) <= 5 && prevRows?.get(r.isin)?.atLimit === r.atLimit;
         return big || pinned || pinnedTwice ? [{ co, r, why: big ? '' : pinnedTwice ? `at its ${r.band}% limit two days running` : `at its ${r.band}% limit` }] : [];
-    });
+    })
+        // Never more than a screenful: the moves furthest from the market's.
+        .sort((a, b) => Math.abs(b.r.pct - market) - Math.abs(a.r.pct - market)).slice(0, MAX_MOVERS);
+    console.log(`Market on ${date}: the typical share moved ${market > 0 ? '+' : ''}${market}%${broad ? ' (a broad move: only shares 7% beyond it are checked)' : ''}`);
     console.log(`Moves on ${date}: ${movers.length} of ${cos.length} companies`);
     if (!movers.length) return { date, items: [] };
 
@@ -332,7 +344,7 @@ async function bigMoves(store: Store, cos: Co[], policyToday: NewsItem[]): Promi
             return `COMPANY ${j}: ${m.co.name} (${m.co.sector}; ${businessFor(m.co.name)?.profile.tagline || 'no description'}). Moved ${m.r.pct > 0 ? '+' : ''}${m.r.pct}% on ${date}${m.why ? `, ${m.why}` : ''}.\n` +
                 (ev.length ? ev.map((e, k) => `  [${k}] ${e.text}`).join('\n') : '  (no evidence found)');
         }).join('\n\n');
-        const answers = await ask(geminiPro, `${MOVE_RULES}\n\n${body}`);
+        const answers = await ask(geminiPro, `${MOVE_RULES}\n\nThe market that day: the typical share moved ${market > 0 ? '+' : ''}${market}%. A general market fall or rise is never a cause.\n\n${body}`);
         for (const [j, m] of chunk.entries()) {
             const a = answers.find(x => Number(x.i) === j);
             const ev = a && a.evidence !== null && a.evidence !== undefined ? evidence[i + j][Number(a.evidence)] : undefined;
