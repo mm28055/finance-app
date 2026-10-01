@@ -1,5 +1,6 @@
 import { prisma } from '@/lib/prisma';
 import { getCompanyFilings, getCompanyFilingHeadlines } from './filings/server';
+import { getCompanyNews, getCompanyNewsFlag } from './news/server';
 import { checkpointsFor } from './checkpoints';
 import { projectsFor, capacityFor } from './projects';
 import { managementFor } from './management';
@@ -309,6 +310,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             // the bare {quarter, pdfUrl} needed to render the PDF icons.
             history: lightHistory.length > 0 ? lightHistory : undefined,
             filingHeadlines: (() => { const h = getCompanyFilingHeadlines(co.name); return h.length ? h : undefined; })(),
+            newsFlag: getCompanyNewsFlag(co.name),
             marketCap: co.marketCap ? Number(co.marketCap) : undefined,
             currentPrice: co.currentPrice ? Number(co.currentPrice) : undefined,
             bookValue: co.bookValue ? Number(co.bookValue) : undefined,
@@ -532,6 +534,8 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
         capacity: capacityFor(co.name),
         management: managementFor(co.name),
         filingHeadlines: getCompanyFilingHeadlines(co.name),
+        newsFlag: getCompanyNewsFlag(co.name),
+        news: getCompanyNews(co.name),
         price: 0,
         priceChange: 0,
         financials: createSafeFinancials(latestF, latestPrevF, co.financials),

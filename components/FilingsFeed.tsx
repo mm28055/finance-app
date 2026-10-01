@@ -4,7 +4,7 @@ import { ExternalLink, Search } from 'lucide-react';
 import type { MaterialFiling } from '@/lib/filings/types';
 import { TONE_STYLE } from './SectorFilings';
 
-type Row = MaterialFiling & { call?: string; inPortfolio?: boolean };
+type Row = MaterialFiling & { call?: string; inPortfolio?: boolean; /** Publisher, for news rows. */ source?: string };
 
 const CALL_TONE: Record<string, string> = {
     own: 'bg-emerald-50 text-emerald-700', follow: 'bg-[#EAF2FB] text-[#4A7AAF]', wait: 'bg-gray-100 text-gray-600',
@@ -13,6 +13,7 @@ const CALL_TONE: Record<string, string> = {
 
 // Filing categories grouped into the kinds an investor scans for.
 const TYPES: { key: string; label: string; test: RegExp }[] = [
+    { key: 'market', label: 'Market and policy, price moves', test: /^(market and policy|price move)$/i },
     { key: 'promoter', label: 'Promoter trades and pledges', test: /promoter|pledge|insider|large holder|ownership/i },
     { key: 'orders', label: 'Orders and contracts', test: /order|project win|contract|agreement/i },
     { key: 'management', label: 'Management changes', test: /management|auditor/i },
@@ -77,7 +78,7 @@ export function FilingsFeed({ filings }: { filings: Row[] }) {
                     <Search className="w-3.5 h-3.5" />
                     <input value={q} onChange={e => setQ(e.target.value)} placeholder="Company" className="w-28 outline-none bg-transparent text-gray-700" />
                 </label>
-                <span className="ml-auto text-[11px] text-gray-400">{shown.length} filings</span>
+                <span className="ml-auto text-[11px] text-gray-400">{shown.length} items</span>
             </div>
 
             {[...byDay.entries()].map(([day, list]) => (
@@ -102,9 +103,11 @@ export function FilingsFeed({ filings }: { filings: Row[] }) {
                                     {open[id] && (
                                         <div className="mt-1.5">
                                             <p className="text-xs text-gray-600 leading-relaxed">{f.summary}</p>
-                                            <a href={f.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 mt-1.5 text-[11px] text-[#4A7AAF] hover:underline">
-                                                Read the filing <ExternalLink className="w-3 h-3" />
-                                            </a>
+                                            {f.url && (
+                                                <a href={f.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 mt-1.5 text-[11px] text-[#4A7AAF] hover:underline">
+                                                    {f.source || 'Read the filing'} <ExternalLink className="w-3 h-3" />
+                                                </a>
+                                            )}
                                         </div>
                                     )}
                                 </div>

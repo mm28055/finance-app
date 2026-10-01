@@ -24,6 +24,7 @@ import { CompanyCheckpoints } from './CompanyCheckpoints';
 import { ManagementCard } from './ManagementCard';
 import { prefetchDetail, takeDetail } from '@/lib/card-prefetch';
 import { CompanyBusinessCard } from './SectorBusinesses';
+import { CompanyNews, useUnseenNews } from './CompanyNews';
 import { businessFor } from '@/lib/sector-overviews';
 
 const CONVICTION_CYCLE: (ConvictionLevel | null)[] = [null, 'HIGH', 'MEDIUM', 'LOW'];
@@ -49,6 +50,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     }, [expanded]);
     // Material exchange filings from the sector's digest, if one exists.
     const companyFilings = company.filingHeadlines || [];
+    // Something new in the last week (a sharp move with its reason, or a market or policy event) that
+    // this device has not opened yet: a marker on the row and a dot on the NEWS tab.
+    const [newsUnseen, markNewsSeen] = useUnseenNews(company.name, company.newsFlag);
     const { isAdminMode } = useAdmin();
     const [isDeleting, setIsDeleting] = useState(false);
     const [showColorPicker, setShowColorPicker] = useState(false);
@@ -360,6 +364,16 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                 title={companyFilings.map(f => `${f.date}: ${f.headline}`).join('\n')}
                             >
                                 {companyFilings.length} {companyFilings.length === 1 ? 'filing' : 'filings'}
+                            </button>
+                        )}
+                        {newsUnseen && company.newsFlag && (
+                            <button
+                                type="button"
+                                onClick={(e) => { e.stopPropagation(); setExpanded(true); }}
+                                className="flex-shrink-0 cursor-pointer hover:opacity-80 inline-flex items-center gap-1 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border bg-[#FDF6E7] text-[#946200] border-[#F0DDAE]"
+                                title={`${company.newsFlag.date}: ${company.newsFlag.headline}`}
+                            >
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#E0A030]" /> news
                             </button>
                         )}
                         {company.isSme && (
@@ -704,6 +718,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                             activeQuarterIndex={selectedQuarterIdx}
                                             onQuarterChange={(idx: number) => setSelectedQuarterIdx(idx)}
                                             business={business ? <CompanyBusinessCard found={business} company={effective} /> : undefined}
+                                            news={<CompanyNews news={effective.news || []} />}
+                                            newsUnseen={newsUnseen}
+                                            onNewsOpen={markNewsSeen}
                                         />
                                     </div>
                                 </div>

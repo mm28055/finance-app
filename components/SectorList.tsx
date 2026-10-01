@@ -73,6 +73,10 @@ export interface EnrichedCompany {
     // the chip and its hover; full summaries only on the detail fetch.
     filingHeadlines?: import('@/lib/filings/types').FilingHeadline[];
     filings?: import('@/lib/filings/types').MaterialFiling[];
+    // Market news and "why it moved" (lib/news): the flag marks a row with something new in the last
+    // week; the full list comes with the detail fetch, for the NEWS tab.
+    newsFlag?: import('@/lib/news/types').NewsFlag;
+    news?: import('@/lib/news/types').NewsItem[];
     checkpoints?: import('@/lib/checkpoints').Checkpoint[];
     projects?: import('@/lib/projects/types').Project[];
     capacity?: import('@/lib/projects/types').Capacity;

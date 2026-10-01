@@ -17,7 +17,10 @@ export function AnalysisPanel({
     notesStatus = 'idle',
     activeQuarterIndex = 0,
     onQuarterChange,
-    business
+    business,
+    news,
+    newsUnseen = false,
+    onNewsOpen
 }: {
     analysis?: AnalysisResult,
     quarterName?: string,
@@ -29,7 +32,12 @@ export function AnalysisPanel({
     activeQuarterIndex?: number,
     onQuarterChange?: (idx: number) => void,
     /** The company's "what it does" card from its sector note; adds a BUSINESS tab when given. */
-    business?: React.ReactNode
+    business?: React.ReactNode,
+    /** The NEWS tab: sharp price moves and market or policy events for this company. */
+    news?: React.ReactNode,
+    /** Shows the dot on the NEWS tab until it is opened. */
+    newsUnseen?: boolean,
+    onNewsOpen?: () => void
 }) {
     const safeHistory = history && history.length > 0
         ? history
@@ -41,7 +49,7 @@ export function AnalysisPanel({
     const [activeData, setActiveData] = useState<AnalysisResult | undefined>(
         safeHistory[activeQuarterIndex]?.analysis || analysis
     );
-    const [viewMode, setViewMode] = useState<"ANALYSIS" | "PROFILE" | "DELTA" | "NOTES" | "BUSINESS">("ANALYSIS");
+    const [viewMode, setViewMode] = useState<"ANALYSIS" | "PROFILE" | "DELTA" | "NOTES" | "BUSINESS" | "NEWS">("ANALYSIS");
 
     // Drives the brighter NOTES tab, so the tab itself says whether
     // anything has been written for this company.
@@ -53,7 +61,7 @@ export function AnalysisPanel({
             const match = safeHistory[activeQuarterIndex];
             setActiveQuarter(match.quarter);
             setActiveData(match.analysis);
-            if (viewMode === "PROFILE" || viewMode === "DELTA" || viewMode === "NOTES" || viewMode === "BUSINESS") {
+            if (viewMode === "PROFILE" || viewMode === "DELTA" || viewMode === "NOTES" || viewMode === "BUSINESS" || viewMode === "NEWS") {
                 // If we were on Profile or Delta, and a quarter is clicked, switch back to Analysis
                 // Actually, stay in current mode but update the underlying data
             } else {
@@ -88,6 +96,10 @@ export function AnalysisPanel({
     };
 
     const renderContent = () => {
+        if (viewMode === "NEWS" && news) {
+            return <div className="bg-white min-h-full">{news}</div>;
+        }
+
         if (viewMode === "BUSINESS" && business) {
             return <div className="p-3 bg-[#FAFBFC] min-h-full">{business}</div>;
         }
@@ -394,6 +406,22 @@ export function AnalysisPanel({
                         title="What the company does, from its sector note"
                     >
                         BUSINESS
+                    </button>
+                )}
+
+                {news && (
+                    <button
+                        onClick={() => { setViewMode("NEWS"); setActiveQuarter("NEWS"); onNewsOpen?.(); }}
+                        className={`px-3 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap flex items-center gap-1 ${viewMode === "NEWS"
+                            ? 'text-[#4A7AAF] border-[#6B9FCC] bg-white'
+                            : newsUnseen
+                                ? 'text-gray-700 border-transparent hover:text-[#4A7AAF]'
+                                : 'text-gray-400 border-transparent hover:text-gray-600'
+                            }`}
+                        title={newsUnseen ? 'Something new: a sharp price move or a market or policy event' : 'Price moves and market or policy events'}
+                    >
+                        NEWS
+                        {newsUnseen && <span className="w-1.5 h-1.5 rounded-full bg-[#E0A030]" />}
                     </button>
                 )}
 
