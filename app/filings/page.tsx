@@ -19,7 +19,7 @@ export default async function FilingsPage() {
     // Market and policy events and sharp price moves have their own tab, apart from the filings.
     const news = getAllNews().map(n => withCall({
         company: n.company, sector: n.sector, date: n.date, tone: n.tone, headline: n.headline, summary: n.summary,
-        category: n.kind === 'move' ? 'Price move' : 'Market and policy',
+        category: n.kind === 'move' ? 'Price move' : n.kind === 'holder' ? 'Large holder' : 'Market and policy',
         url: n.url || '', source: n.source, impact: (n.dot ? 'high' : 'normal') as 'high' | 'normal',
     }));
     const rows = filings.map(withCall);

@@ -23,10 +23,11 @@ const TYPES: { key: string; label: string; test: RegExp }[] = [
     { key: 'legal', label: 'Legal, tax, regulatory, governance', test: /legal|tax|regulat|governance|related-party/i },
 ];
 
-// The Market and policy tab has two kinds of entry instead of filing categories.
+// The Market and policy tab has its own kinds of entry instead of filing categories.
 const NEWS_TYPES: typeof TYPES = [
     { key: 'policy', label: 'Market and policy events', test: /^market and policy$/i },
     { key: 'move', label: 'Price moves', test: /^price move$/i },
+    { key: 'holder', label: 'Fund and large-holder stakes (from the press)', test: /^large holder$/i },
 ];
 
 const dayLabel = (iso: string) => new Date(iso + 'T00:00:00').toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short' });

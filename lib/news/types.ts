@@ -1,9 +1,11 @@
 // "Why it moved" and market/policy news per company, written each evening by
-// scripts/sync-market-news.ts. Two kinds of entry:
+// scripts/sync-market-news.ts. Three kinds of entry:
 //   move   - the share moved sharply that day (7% or more, or pinned at its price limit), with the
 //            reason found for it (its own filing, a bulk/block deal, news, a sector or policy event);
 //   policy - a regulator, government or market event that directly changes this company's sales or
-//            profit (a duty, a ban, a commission cap), whether or not the price has moved yet.
+//            profit (a duty, a ban, a commission cap), whether or not the price has moved yet;
+//   holder - a fund, institution or large investor changing its stake, as reported by the papers
+//            before the exchange disclosure is on record (the filings job records the disclosure).
 // Deliberately strict: an entry only shows the dot (`dot: true`) when a specific cause was found
 // (move) or the effect is direct and meaningful (policy). A move with no clear reason is recorded
 // quietly.
@@ -17,7 +19,7 @@ export interface NewsItem {
     sector: string;
     /** Trading day (move) or the day the event was reported (policy), ISO yyyy-mm-dd. */
     date: string;
-    kind: 'move' | 'policy';
+    kind: 'move' | 'policy' | 'holder';
     /** good = helps the company, watch = hurts it, info = neutral or unexplained. */
     tone: NewsTone;
     /** One line: what happened. */

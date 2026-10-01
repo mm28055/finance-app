@@ -47,7 +47,7 @@ export function CompanyNews({ news }: { news: NewsItem[] }) {
                         <div className="flex flex-wrap items-center gap-2">
                             <span className="text-[10px] text-gray-400">{day(n.date)}</span>
                             <span className={`px-1.5 rounded border text-[10px] font-semibold uppercase ${t.chip}`}>
-                                {n.kind === 'move' ? 'Price move' : 'Market and policy'}
+                                {n.kind === 'move' ? 'Price move' : n.kind === 'holder' ? 'Large holder' : 'Market and policy'}
                             </span>
                             {n.kind === 'policy' && <span className={`text-[10px] font-semibold ${n.tone === 'good' ? 'text-[#1F7A45]' : 'text-[#6B3FA0]'}`}>{n.tone === 'good' ? 'Helps' : 'Hurts'}</span>}
                         </div>

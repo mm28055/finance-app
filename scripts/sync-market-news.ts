@@ -77,11 +77,13 @@ Reply with JSON only: an array of the numbers of the headlines you picked (often
 
 async function policyNews(store: Store, cos: Co[], today: string): Promise<NewsItem[]> {
     const seen: string[] = fs.existsSync(SEEN) ? JSON.parse(fs.readFileSync(SEEN, 'utf8')) : [];
-    const known = new Set(seen);
+    // --rescan reads the day's headlines again even if already screened (for testing a rule change).
+    const known = new Set(flag('rescan') ? [] : seen);
     const fresh = (await dailyHeadlines()).filter(h => (!h.date || h.date >= dayBefore(today)) && !known.has(h.url));
     console.log(`News: ${fresh.length} new headlines to screen`);
     if (!flag('dry')) fs.writeFileSync(SEEN, JSON.stringify([...seen, ...fresh.map(h => h.url)].slice(-4000)) + '\n');
     if (!fresh.length) return [];
+    const holders = await holderNews(fresh, store, cos, today);
 
     // First pass (Flash): which headlines are outside events at all.
     const kept: Headline[] = [];
@@ -92,7 +94,7 @@ async function policyNews(store: Store, cos: Co[], today: string): Promise<NewsI
     }
     console.log(`News: ${kept.length} possible events after screening`);
     kept.forEach(h => console.log(`   · ${h.title} (${h.source})`));
-    if (!kept.length) return [];
+    if (!kept.length) return holders;
 
     // Second pass (Pro): which of our companies each event directly and meaningfully affects.
     const recent = store.items.filter(n => n.kind === 'policy' && n.date >= dayBefore(today, 14));
@@ -161,6 +163,71 @@ ${already.join('\n') || '(none)'}`;
     }
     console.log(`News: ${events.length} events kept, ${out.length} company entries`);
     out.forEach(n => console.log(`   ● ${n.company} (${n.tone === 'good' ? 'helps' : 'hurts'}): ${n.headline} — ${n.summary}`));
+    return [...holders, ...out];
+}
+
+// ---------------------------------------------------------------------------------------------
+// 1b. Fund and large-holder stake changes reported by the papers
+// ---------------------------------------------------------------------------------------------
+// The filings job records these from the exchange disclosure. A disclosure can arrive a day or
+// more after the papers report the trade, so the papers are read as a backstop: an entry is added
+// only when no such filing is on record for the company yet.
+const HOLDER_SCREEN = `You screen Indian business news headlines. Pick ONLY headlines reporting that a NAMED fund, institution, large
+investor or promoter has changed its stake in a NAMED listed Indian company: its holding crossed 5% or 10%, fell below 5%, or
+it bought or sold about 1% or more of the company (including a named party's block or bulk deal).
+EXCLUDE: money flowing into the market or a sector in general, fund-scheme news, index changes, IPO anchor allotments, broker
+views, "stocks to watch" lists, results, and plans or talks to sell that have not happened.
+Reply with JSON only: an array of the numbers of the headlines you picked (often empty).`;
+
+async function holderNews(fresh: Headline[], store: Store, cos: Co[], today: string): Promise<NewsItem[]> {
+    const kept: Headline[] = [];
+    for (let i = 0; i < fresh.length; i += 60) {
+        const chunk = fresh.slice(i, i + 60);
+        const picked = await ask(geminiScreen, `${HOLDER_SCREEN}\n\n${chunk.map((h, j) => `${j}. ${h.title}${h.summary ? ` — ${h.summary.slice(0, 200)}` : ''}`).join('\n')}`);
+        for (const j of picked) if (chunk[Number(j)]) kept.push(chunk[Number(j)]);
+    }
+    console.log(`Stakes: ${kept.length} possible stake-change stories`);
+    if (!kept.length) return [];
+
+    const answers = await ask(geminiPro, `Below are news headlines about a fund, institution, large investor or promoter changing its stake in a listed
+Indian company, and the list of companies an investor follows. For each headline about a company ON THE LIST, report it. Leave
+out headlines about other companies, and use the exact name from the list. Say only what the headline and its summary say; do
+not add figures. If two headlines are the same story, use one. Plain English for a non-technical reader, ₹ and crore.
+
+Reply with JSON only:
+[{"story": <number>, "company": "<exact name from the list>", "action": "bought" | "sold",
+  "headline": "<at most 20 words: who did what, e.g. SBI Mutual Fund's stake crosses 5% after buying shares worth ₹300 crore>",
+  "summary": "<1-2 sentences: the stake before and after, the value and the price if given, and who the party is>"}]
+
+HEADLINES
+${kept.map((h, j) => `${j}. ${h.title}${h.summary ? ` — ${h.summary}` : ''} (${h.source}, ${h.date || today})`).join('\n')}
+
+COMPANIES
+${cos.map(c => c.name).join('\n')}`);
+
+    const filings: MaterialFiling[] = JSON.parse(fs.readFileSync(FILINGS, 'utf8')).filings;
+    const byName = new Map(cos.map(c => [c.name.trim().toLowerCase(), c]));
+    const out: NewsItem[] = [];
+    for (const a of answers) {
+        const h = kept[Number(a.story)];
+        const co = byName.get(String(a.company || '').trim().toLowerCase());
+        if (!h || !co || !a.headline || !TRUSTED.test(h.source) || out.some(n => n.company === co.name)) continue;
+        const date = h.date || today;
+        // Already on record from the exchange disclosure, or reported here in the last few days.
+        const filed = filings.some(f => f.company === co.name && f.date >= dayBefore(date, 3) && /large holder|promoter trade|pledge/i.test(f.category));
+        const reported = store.items.some(n => n.company === co.name && n.kind === 'holder' && n.date >= dayBefore(date, 5));
+        if (filed || reported) continue;
+        out.push({
+            id: `${date}|${co.name}|holder`,
+            company: co.name, sector: co.sector, date, kind: 'holder',
+            tone: a.action === 'sold' ? 'watch' : 'good',
+            headline: String(a.headline).slice(0, 220),
+            summary: `${String(a.summary || '').slice(0, 400)} Reported by the press; the exchange disclosure was not yet on record.`.trim(),
+            reason: 'news', url: h.url, source: h.source, dot: true,
+        });
+    }
+    console.log(`Stakes: ${out.length} entries for our companies`);
+    out.forEach(n => console.log(`   ● ${n.company}: ${n.headline}`));
     return out;
 }
 

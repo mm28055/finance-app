@@ -171,6 +171,8 @@ const POLICY_SEARCHES = [
     'ban OR restriction OR "price control" OR "price cap" government industry',
     'GST rate OR cess OR "excise duty" OR subsidy OR "PLI scheme" OR "incentive scheme"',
     'cabinet approves OR ministry notifies OR "new policy" sector',
+    // Fund and large-holder stake changes (read as a backstop to the exchange disclosures).
+    'stake "mutual fund" OR "crosses 5%" OR "block deal" OR "bulk deal" OR "picks up" OR "offloads"',
 ];
 
 const decode = (s: string) => s

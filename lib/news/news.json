@@ -1,7 +1,21 @@
 {
-  "updated": "2026-10-01T05:26:41.519Z",
+  "updated": "2026-10-01T05:57:35.608Z",
   "movesDate": "2026-09-30",
   "items": [
+    {
+      "id": "2026-10-01|Swiggy|holder",
+      "company": "Swiggy",
+      "sector": "Platform Cos",
+      "date": "2026-10-01",
+      "kind": "holder",
+      "tone": "good",
+      "headline": "SBI Mutual Fund's stake in Swiggy crosses 5% after buying shares worth ₹300 crore",
+      "summary": "SBI Mutual Fund bought shares worth ₹300 crore. This purchase increased their stake in the company to over 5%. Reported by the press; the exchange disclosure was not yet on record.",
+      "reason": "news",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQdDI3cm91VGZKam9ZZ0NiM25zR1p0WG9zeGpHMkctbC1aNFk2T0t5eUk3djhtQXVjVDlaYXplbGtzTTdlMTEyWTVPSENJUXRNaWhlLXJDX1RNWEJ4WnRkRlViR2k5YTBGREdmcXJUUE1yNm9iU2VKVFZ2TkZkZkJWZzY3RWxCRjZ6WmJtZXd0ZUpWMm9pU1BkZTBvRHZ2QXBxV09GdUFPVHBqWEM4RzhrS0FGRHdsd1QyVi1CLWpFdjVDTGY2YWxOMDhTOEVSQ3ZJRkpGQTZrUWFET195NWFhYXVDOHU1WVVhT0NrVFBldXBsRWFac3gzQXJEUU1NYzYxOTF30gH8AUFVX3lxTFBkUFQzckpxR1hNV2NqZV96WkNCQmxrZDdXY2EyVUdBUC1YQXg2N0tkY1I3NWotYU1nQ3RRNmx4V04zM0wzOW14RURjRVIzV1MtOGh6T0k2cnVhT08zWVBwZ29UODE0dmxZemlLS3Zudk5ySkVpeFI4R0h6RWt0X19YU1d4T0hmMXU3MVJvRUFkUV8wY25yOW5YVGNLOTB1WERjV1pzc2JNbUxoZG5RZkUyQXhQeVk1TEFxWTFVWE1mcVVZdEpuandfOXRDLWg0blVUMEV3ZldlTzFOMk81M05VaEhIWjEwdVRNbEEtNXFlaksyazJuXy0tMTkyVA?oc=5",
+      "source": "The Economic Times",
+      "dot": true
+    },
     {
       "id": "2026-09-30|Alicon Castalloy|move",
       "company": "Alicon Castalloy",
@@ -14,6 +28,20 @@
       "summary": "No filing, bulk or block deal, or news that day explains the move.",
       "reason": "none",
       "dot": false
+    },
+    {
+      "id": "2026-09-30|Avalon Tech|holder",
+      "company": "Avalon Tech",
+      "sector": "EMS & Electronics",
+      "date": "2026-09-30",
+      "kind": "holder",
+      "tone": "good",
+      "headline": "Kotak Mahindra AMC buys a 3.59% stake in Avalon Tech",
+      "summary": "Kotak Mahindra AMC purchased a 3.59% stake in the company. Reported by the press; the exchange disclosure was not yet on record.",
+      "reason": "news",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNSDFRZnJMVTZlV3M1VmhGU2x4ZDNRQmZHbmQydHBGMzQ3LUNUOHhSTkU3U1ZYTC1QSTQzR2VuWnI1Z2UtaFM1ajJ2SmtEc1VsV0FiQUo1MjVVdGRXaTdHM0ljdjRBVXREczZOTzZoZHZ6TzVXT0tkQ0U4WUpWMGczTGJUM3pydk5nMGJLbE1fNlNOQ20wZGZKakR5bm0wZGVVVFpwZHpTcUhiRmxaTzVxOWdpYkplWjdCM0tOTGMyUHdzejlVbmJqZHVaemthQWNnTm5Td0xGQnVQN2cxRXB4YVZ6WmpnNTcxbmFONTNPM1g3bzZh0gH6AUFVX3lxTFBacG5JQUtUbmN5QW5ObzRfLXBKUVEtS3JTc1JJWUFrTG1xNnF2bUJWdWpJZ2VzNTUtYVhkQ2FrUHlEWUI1b3pMVmFWUGZTb0N2c3hLVVRNZGN0eXFhUUJjcEpHWXJReHptOVlmbTk0eWVvXzZHaHYxaFROcjF3N21iTDQxaHdQbGp2RGxmMGlDS3kxOGxrLXM5Yzh2YkhTTFRDMi10RVowNDJHamVHbF9zbi1kYlUydmV0VjJHaG4yMWlSVDdfNkpyOTVab2JKSndFTzhfR0RpM1Y0eEtKeEEybUFlVlRwV3hsbnlJVFdsZEJQNzdTVWg0alE?oc=5",
+      "source": "Moneycontrol.com",
+      "dot": true
     },
     {
       "id": "2026-09-30|AXISCADES Technologies|move",
@@ -194,6 +222,20 @@
       "reason": "policy",
       "url": "https://scanx.trade/stock-market-news/commodities/h-acid-prices-up-300-ytd-160-000-t-china-supply-deficit/52291341",
       "source": "ScanX",
+      "dot": true
+    },
+    {
+      "id": "2026-09-30|Shadowfax Tech.|holder",
+      "company": "Shadowfax Tech.",
+      "sector": "Logistics",
+      "date": "2026-09-30",
+      "kind": "holder",
+      "tone": "watch",
+      "headline": "TPG sells shares worth ₹114 crore in Shadowfax Tech.",
+      "summary": "TPG sold shares in the company worth a total of ₹114 crore. Reported by the press; the exchange disclosure was not yet on record.",
+      "reason": "news",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNSDFRZnJMVTZlV3M1VmhGU2x4ZDNRQmZHbmQydHBGMzQ3LUNUOHhSTkU3U1ZYTC1QSTQzR2VuWnI1Z2UtaFM1ajJ2SmtEc1VsV0FiQUo1MjVVdGRXaTdHM0ljdjRBVXREczZOTzZoZHZ6TzVXT0tkQ0U4WUpWMGczTGJUM3pydk5nMGJLbE1fNlNOQ20wZGZKakR5bm0wZGVVVFpwZHpTcUhiRmxaTzVxOWdpYkplWjdCM0tOTGMyUHdzejlVbmJqZHVaemthQWNnTm5Td0xGQnVQN2cxRXB4YVZ6WmpnNTcxbmFONTNPM1g3bzZh0gH6AUFVX3lxTFBacG5JQUtUbmN5QW5ObzRfLXBKUVEtS3JTc1JJWUFrTG1xNnF2bUJWdWpJZ2VzNTUtYVhkQ2FrUHlEWUI1b3pMVmFWUGZTb0N2c3hLVVRNZGN0eXFhUUJjcEpHWXJReHptOVlmbTk0eWVvXzZHaHYxaFROcjF3N21iTDQxaHdQbGp2RGxmMGlDS3kxOGxrLXM5Yzh2YkhTTFRDMi10RVowNDJHamVHbF9zbi1kYlUydmV0VjJHaG4yMWlSVDdfNkpyOTVab2JKSndFTzhfR0RpM1Y0eEtKeEEybUFlVlRwV3hsbnlJVFdsZEJQNzdTVWg0alE?oc=5",
+      "source": "Moneycontrol.com",
       "dot": true
     },
     {
