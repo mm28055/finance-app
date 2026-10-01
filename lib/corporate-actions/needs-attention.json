@@ -315,5 +315,26 @@
     "subject": "Waiting: storage and rail-logistics sale to close",
     "why": "Ganesh Benzoplast is selling its storage and rail-logistics businesses for ₹1,154cr (more than its market value). Each run, check NSE filings for completion of the sale. Until it closes, leave this entry open. Once it closes, rewrite its section in the Oil note (both tabs) for the chemicals-and-EPC company that remains, decide its call, update its projects, capacity and expectations, and then mark this handled.",
     "addedOn": "2026-09-30"
+  },
+  {
+    "company": "Vinyas Innovativ",
+    "sector": "EMS & Electronics",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-01"
+  },
+  {
+    "company": "Awfis Space Solutions",
+    "sector": "Commercial Services",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-01"
+  },
+  {
+    "company": "Scoda Tubes",
+    "sector": "Iron and Steel",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-01"
   }
 ]
