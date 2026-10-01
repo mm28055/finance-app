@@ -36,9 +36,11 @@ export const GEMINI_KEY_COUNT = ALL_KEYS.length;
 
 class RotatingModel {
     private modelName: string;
+    private tools?: any[];
 
-    constructor(modelName: string) {
+    constructor(modelName: string, tools?: any[]) {
         this.modelName = modelName;
+        this.tools = tools;
     }
 
     // Proxy specifically for generateContent which is the main method used
@@ -56,7 +58,7 @@ class RotatingModel {
             keyIdx = (keyIdx + 1) % ALL_KEYS.length;
 
             const client = new GoogleGenerativeAI(key);
-            const model = client.getGenerativeModel({ model: this.modelName });
+            const model = client.getGenerativeModel({ model: this.modelName, ...(this.tools ? { tools: this.tools } : {}) });
 
             try {
                 return await model.generateContent(prompt);
@@ -90,3 +92,8 @@ export const geminiFlash = new RotatingModel("gemini-3.1-pro-preview");
 // Usage: first-pass screening only (is a filing material or routine?). The owner approved
 // Flash for this one job on 28 Sep 2026; everything that writes analysis stays on Pro.
 export const geminiScreen = new RotatingModel("gemini-flash-latest");
+
+// Usage: Pro with Google Search switched on, for the one job that must look something up on the web
+// (why a share moved sharply, scripts/sync-market-news.ts). The answer carries the pages it used in
+// response.candidates[0].groundingMetadata.
+export const geminiSearch = new RotatingModel("gemini-3.1-pro-preview", [{ googleSearch: {} }]);
