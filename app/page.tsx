@@ -20,6 +20,7 @@ export default async function Home() {
         <div>
           <h1 className="text-lg font-semibold text-gray-800 tracking-tight">Manish Dashboard</h1>
           <p className="text-gray-400 text-xs">Real-Time Earning Intelligence</p>
+          <p className="text-gray-400 text-[11px] mt-0.5">I am hobbyist investor. This is for my personal use. Reach out at manishmaheswari@gmail.com</p>
         </div>
         <div className="flex items-center gap-4">
           <SessionTodos todos={todos} />
@@ -38,10 +39,6 @@ export default async function Home() {
       <div className="max-w-6xl">
         <SectorList sectors={sectorList} />
       </div>
-
-      <footer className="mt-12 text-center text-[11px] text-gray-400 pb-4">
-        <p>I am hobbyist investor. This is for my personal use. Reach out at manishmaheswari@gmail.com</p>
-      </footer>
     </main>
   );
 }
