@@ -6899,7 +6899,7 @@
   {
    "id": "dr-lal-pathlabs-fy27-labs",
    "company": "Dr Lal PathLabs",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "name": "New labs and radiology centres (FY27)",
    "what": "12–15 new labs and three to four radiology centres in FY27, part of capex raised to ₹140–150cr",
    "cost": "₹140–150cr total FY27 capex, including maintenance",
@@ -6912,7 +6912,7 @@
   {
    "id": "dr-lal-pathlabs-precision-lab",
    "company": "Dr Lal PathLabs",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "name": "Precision diagnostics lab",
    "what": "An asset bought to set up a lab for high-end complex (precision and genomic) testing",
    "cost": "inside the ₹140–150cr FY27 capex",
@@ -6948,7 +6948,7 @@
   {
    "id": "vijaya-diagnostic-centre-fy27-hubs",
    "company": "Vijaya Diagnostic Centre",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "name": "Nine hubs, 10–12 spokes and Panjagutta lab",
    "what": "Nine new hub centres (about ₹15–16cr each), 10–12 spokes and a reference lab at Panjagutta, Hyderabad, plus ₹8–10cr of land in Andhra Pradesh; 2 hubs and 6 spokes done by August",
    "cost": "₹190–195cr in FY27, from own cash",
@@ -6962,7 +6962,7 @@
   {
    "id": "vijaya-diagnostic-centre-bengaluru",
    "company": "Vijaya Diagnostic Centre",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "name": "Bengaluru JP Nagar flagship hub",
    "what": "Flagship hub with digital PET-CT, 3T wide-bore MRI and a central automated lab for the Bengaluru network",
    "cost": "about ₹30cr",
@@ -6975,7 +6975,7 @@
   {
    "id": "vijaya-diagnostic-centre-guwahati",
    "company": "Vijaya Diagnostic Centre",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "name": "Guwahati (Arya Wellness) purchase",
    "what": "Bought Arya Wellness in Guwahati, its first move into the North-East",
    "cost": "₹46.2cr (about 8–9 times operating profit)",
@@ -6986,7 +6986,7 @@
   {
    "id": "suraksha-diagnostic-100-centres",
    "company": "Suraksha Diagnostic",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "name": "Network to 100 centres",
    "what": "New hubs and spokes in West Bengal and new states (Jharkhand hub opened; Tripura hub next; Bihar)",
    "cost": "₹70–80cr in FY27",
@@ -7000,7 +7000,7 @@
   {
    "id": "krsnaa-diagnostics-rajasthan",
    "company": "Krsnaa Diagnostics",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "name": "Rajasthan pathology contract",
    "what": "India's largest diagnostics PPP: 31 main labs, 62 hub labs and 1,228 collection centres across Rajasthan, live from Q1 FY27",
    "cost": "about ₹300cr of the ₹500cr to be capitalised in FY27",
@@ -7014,7 +7014,7 @@
   {
    "id": "krsnaa-diagnostics-mri",
    "company": "Krsnaa Diagnostics",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "name": "17 new MRI centres",
    "what": "17 new MRI centres under state contracts; eight in Maharashtra went live in Q1 FY27",
    "cost": "part of the ₹500cr FY27 capitalisation",
@@ -7080,7 +7080,7 @@
   {
    "id": "thyrocare-technologies-specialty",
    "company": "Thyrocare Technologies",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "name": "Specialty diagnostics and genomics",
    "what": "Central specialty lab (allergy, prenatal genetic screening, genomics, tissue pathology) that went commercially live in Q1 FY27; capex already done",
    "adds": "specialty tests to reach 15–20% of revenue in three to five years",

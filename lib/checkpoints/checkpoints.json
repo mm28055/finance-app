@@ -11450,7 +11450,7 @@
   {
    "id": "dr-lal-pathlabs-q3fy27-1",
    "company": "Dr Lal PathLabs",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "Growth holding up as the CGHS rate boost fades in Q3–Q4 FY27",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
@@ -11459,7 +11459,7 @@
   {
    "id": "dr-lal-pathlabs-q3fy27-2",
    "company": "Dr Lal PathLabs",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "List-price rise taken after H1 FY27 (none for three years)",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
@@ -11468,7 +11468,7 @@
   {
    "id": "dr-lal-pathlabs-q4fy27-1",
    "company": "Dr Lal PathLabs",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "FY27 revenue growth of 13–15%, leaning mid-teens (guidance)",
    "metric": "fyRevenueGrowth",
    "op": ">=",
@@ -11480,7 +11480,7 @@
   {
    "id": "dr-lal-pathlabs-q4fy27-2",
    "company": "Dr Lal PathLabs",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "FY27 margin at 27–28% or better (guidance)",
    "metric": "fyEbitdaMargin",
    "op": ">=",
@@ -11492,7 +11492,7 @@
   {
    "id": "metropolis-health-q4fy27-1",
    "company": "Metropolis Health.",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "FY27 revenue growth of 14–15% without acquisitions or price rises (guidance held)",
    "metric": "fyRevenueGrowth",
    "op": ">=",
@@ -11504,7 +11504,7 @@
   {
    "id": "metropolis-health-q4fy27-2",
    "company": "Metropolis Health.",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "FY27 margin up 100–150 basis points (guidance)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -11513,7 +11513,7 @@
   {
    "id": "metropolis-health-q2fy27-1",
    "company": "Metropolis Health.",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "Core Diagnostics turning profitable (lost ₹3.1cr in FY26)",
    "due": "Q2 FY27",
    "ifMissed": "Stays follow",
@@ -11598,7 +11598,7 @@
   {
    "id": "thyrocare-technologies-q2fy27-1",
    "company": "Thyrocare Technologies",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "Docon's 100% pledge falling as API Holdings repays debt",
    "due": "Q2 FY27",
    "ifMet": "Would change my view for the better",
@@ -11609,7 +11609,7 @@
   {
    "id": "thyrocare-technologies-q4fy27-1",
    "company": "Thyrocare Technologies",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "FY27 revenue growth in the mid- to high teens (guidance)",
    "metric": "fyRevenueGrowth",
    "op": ">=",
@@ -11621,7 +11621,7 @@
   {
    "id": "vijaya-diagnostic-centre-q2fy27-1",
    "company": "Vijaya Diagnostic Centre",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "Operating margin above 40% as the nine new hubs open",
    "metric": "ebitdaMargin",
    "op": ">=",
@@ -11633,7 +11633,7 @@
   {
    "id": "vijaya-diagnostic-centre-q2fy27-2",
    "company": "Vijaya Diagnostic Centre",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "No further CFO or senior finance departures",
    "due": "Q2 FY27",
    "ifMissed": "Would change my view for the worse",
@@ -11643,7 +11643,7 @@
   {
    "id": "suraksha-diagnostic-q2fy27-1",
    "company": "Suraksha Diagnostic",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "Test-volume growth back towards 20% (halved to 10–11%)",
    "due": "Q2 FY27",
    "ifMissed": "Stays wait",
@@ -11653,7 +11653,7 @@
   {
    "id": "suraksha-diagnostic-q2fy27-2",
    "company": "Suraksha Diagnostic",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "Margin holding at 34% or more (raised guidance, company basis)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -11662,7 +11662,7 @@
   {
    "id": "suraksha-diagnostic-q4fy27-1",
    "company": "Suraksha Diagnostic",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "FY27 revenue growth of 15% (guidance)",
    "metric": "fyRevenueGrowth",
    "op": ">=",
@@ -11783,7 +11783,7 @@
   {
    "id": "krsnaa-diagnostics-q2fy27-1",
    "company": "Krsnaa Diagnostics",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "Rajasthan revenue roughly doubling in Q2",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -11792,7 +11792,7 @@
   {
    "id": "krsnaa-diagnostics-q2fy27-2",
    "company": "Krsnaa Diagnostics",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "Debtor days below 120",
    "due": "Q2 FY27",
    "ifMissed": "Stays wait",
@@ -11802,7 +11802,7 @@
   {
    "id": "krsnaa-diagnostics-q2fy27-3",
    "company": "Krsnaa Diagnostics",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "Profit margin back to double digits (7% in Q1 against about 13% promised)",
    "due": "Q2 FY27",
    "ifMissed": "Stays wait",
@@ -11812,7 +11812,7 @@
   {
    "id": "krsnaa-diagnostics-q2fy27-4",
    "company": "Krsnaa Diagnostics",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "A permanent CFO appointed",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -27258,7 +27258,7 @@
   {
    "id": "dr-lal-pathlabs-fy27-labs-m1",
    "company": "Dr Lal PathLabs",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "12–15 new labs opened during FY27",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27288,7 +27288,7 @@
   {
    "id": "vijaya-diagnostic-centre-fy27-hubs-m1",
    "company": "Vijaya Diagnostic Centre",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "All nine FY27 hubs commissioned",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
@@ -27298,7 +27298,7 @@
   {
    "id": "suraksha-diagnostic-100-centres-m1",
    "company": "Suraksha Diagnostic",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "100 centres open",
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
@@ -27308,7 +27308,7 @@
   {
    "id": "krsnaa-diagnostics-rajasthan-m1",
    "company": "Krsnaa Diagnostics",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "Rajasthan revenue roughly doubles from Q1's ₹26cr",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
@@ -27318,7 +27318,7 @@
   {
    "id": "krsnaa-diagnostics-mri-m1",
    "company": "Krsnaa Diagnostics",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "text": "Remaining MRI centres live",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",

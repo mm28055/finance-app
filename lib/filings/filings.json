@@ -9,7 +9,7 @@
   "Consumer Durables": 43,
   "Plastics": 6,
   "Cables": 8,
-  "Healthcare": 15,
+  "Healthcare": 9,
   "Pharma CDMO": 16,
   "Food Products": 18,
   "Elect and Refrac": 3,
@@ -49,7 +49,8 @@
   "Hospitals": 9,
   "Commercial Services": 14,
   "Media and Entertainment": 3,
-  "Hardware": 4
+  "Hardware": 4,
+  "Healthcare Diagnostic": 6
  },
  "filings": [
   {
@@ -798,7 +799,7 @@
   },
   {
    "company": "Krsnaa Diagnostics",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "date": "2026-09-28",
    "category": "Disposal",
    "tone": "info",
@@ -1002,7 +1003,7 @@
   },
   {
    "company": "Thyrocare Technologies",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "date": "2026-09-28",
    "category": "Disposal",
    "tone": "info",
@@ -1086,7 +1087,7 @@
   },
   {
    "company": "Dr Lal PathLabs",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "date": "2026-09-26",
    "category": "Acquisition",
    "tone": "info",
@@ -2418,7 +2419,7 @@
   },
   {
    "company": "Thyrocare Technologies",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "date": "2026-09-21",
    "category": "Disposal",
    "tone": "info",
@@ -3030,7 +3031,7 @@
   },
   {
    "company": "Krsnaa Diagnostics",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "date": "2026-09-16",
    "category": "Order win",
    "tone": "good",
@@ -3378,7 +3379,7 @@
   },
   {
    "company": "Vijaya Diagnostic Centre",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "date": "2026-09-11",
    "category": "Acquisition",
    "tone": "info",
@@ -3774,7 +3775,7 @@
   },
   {
    "company": "Krsnaa Diagnostics",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "date": "2026-09-09",
    "category": "Tax demand",
    "tone": "watch",

@@ -2565,7 +2565,7 @@
   },
   {
    "company": "Dr Lal PathLabs",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "today": "312 labs and 7,727 patient centres, mostly North India",
    "utilisation": "Not disclosed; management says lab capacity is not a constraint",
    "capexStatus": "FY27 capex about ₹140–150cr (raised from ₹100–120cr) from own cash: 12–15 new labs, one or two radiology centres, a precision lab and maintenance",
@@ -2573,7 +2573,7 @@
   },
   {
    "company": "Metropolis Health.",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "today": "209 labs and 5,003 patient centres in about 750 towns",
    "utilisation": "Not given as a %; lab productivity rose 14% in FY26 and it is feeding labs with more centres (centre-to-lab ratio 1:24, target 1:30)",
    "capexStatus": "Lab build-out done (lab capacity up over 50% in three years; lab additions halted); capex about ₹65cr a year on centres, specialty tests and technology",
@@ -2598,7 +2598,7 @@
   },
   {
    "company": "Thyrocare Technologies",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "today": "About 40 labs across India fed by about 11,730 franchisees and 2,000 phlebotomists",
    "utilisation": "Labs run at about 65% of capacity",
    "capexStatus": "About ₹40cr a year; seven new labs in FY26; specialty and genomics capex already done, little more expected next year",
@@ -2606,7 +2606,7 @@
   },
   {
    "company": "Vijaya Diagnostic Centre",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "today": "166 company-run pathology and radiology centres (hubs and spokes), 67% of revenue from Hyderabad",
    "utilisation": "Not given; hubs opened in FY26 broke even in two to four quarters",
    "capexStatus": "FY27 capex ₹190–195cr from own cash for nine hubs, 10–12 spokes and the Panjagutta reference lab, plus ₹46.2cr for Guwahati (Arya Wellness)",
@@ -2614,7 +2614,7 @@
   },
   {
    "company": "Suraksha Diagnostic",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "today": "72 diagnostic centres and polyclinics in eastern India (hubs and spokes), 95.5% of revenue from West Bengal",
    "utilisation": "Not given; newer centres still ramping up",
    "capexStatus": "₹70–80cr in FY27 toward 100 centres by FY28; genomics capex done, none major for two to three years",
@@ -2656,7 +2656,7 @@
   },
   {
    "company": "Krsnaa Diagnostics",
-   "sector": "Healthcare",
+   "sector": "Healthcare Diagnostic",
    "today": "In government hospitals: 190 CT/MRI centres, 147 processing labs and 4,762 collection centres",
    "utilisation": "New Rajasthan labs and MRI centres below mature use; radiology revenue flat after going from 148 to 180 centres",
    "capexStatus": "About ₹500cr to be capitalised in FY27 (Rajasthan pathology and 17 MRI centres), mostly vendor-financed and debt",
