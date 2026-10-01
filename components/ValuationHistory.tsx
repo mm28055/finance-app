@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import { useHoverOpen } from '@/lib/hover-open';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
 
 // Ten years of price and valuation history for one company, loaded from Screener
@@ -29,6 +30,8 @@ const monthYear = (d: string) => new Date(d).toLocaleDateString('en-IN', { month
 
 export function ValuationHistory({ companyId, embedded = false }: { companyId: string; embedded?: boolean }) {
     const [metric, setMetric] = React.useState<Metric>('price');
+    // The measure and the period also switch when the pointer rests on them.
+    const hover = useHoverOpen();
     const [years, setYears] = React.useState(1);
     const [cache, setCache] = React.useState<Record<string, Point[] | 'error' | undefined>>({});
 
@@ -76,13 +79,13 @@ export function ValuationHistory({ companyId, embedded = false }: { companyId: s
             <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                 <div className="flex flex-wrap gap-1">
                     {TABS.map(t => (
-                        <button key={t.key} onClick={() => setMetric(t.key)} title={t.what}
+                        <button key={t.key} onClick={() => setMetric(t.key)} {...hover(() => setMetric(t.key))} title={t.what}
                             className={`px-2 py-0.5 text-[10px] font-medium rounded border ${metric === t.key ? 'bg-[#4A7AAF] text-white border-[#4A7AAF]' : 'bg-white text-gray-500 border-gray-200 hover:text-gray-700'}`}>{t.label}</button>
                     ))}
                 </div>
                 <div className="flex gap-0.5 bg-gray-100 p-0.5 rounded-md text-[10px] font-medium">
                     {RANGES.map(r => (
-                        <button key={r.label} onClick={() => setYears(r.years)}
+                        <button key={r.label} onClick={() => setYears(r.years)} {...hover(() => setYears(r.years))}
                             className={`px-2 py-0.5 rounded ${years === r.years ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-400 hover:text-gray-600'}`}>{r.label}</button>
                     ))}
                 </div>

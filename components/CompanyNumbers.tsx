@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import { ValuationHistory } from './ValuationHistory';
+import { useHoverOpen } from '@/lib/hover-open';
 
 // One card on the opened company row: price & valuation history, and five years of
 // P&L, balance sheet, cash flow and working-capital ratios — all read from the
@@ -127,6 +128,8 @@ function DataTable({ table, companyId, section, view }: { table: Table; companyI
 
 export function CompanyNumbers({ companyId }: { companyId: string }) {
     const [tab, setTab] = React.useState<Tab>('history');
+    // Tabs also open when the pointer rests on them.
+    const hover = useHoverOpen();
     const [view, setView] = React.useState<'consolidated' | 'standalone' | null>(null);
     const [data, setData] = React.useState<Record<string, Financials | 'error'>>({});
     const key = view || 'default';
@@ -150,7 +153,7 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
             <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                 <div className="flex flex-wrap gap-1">
                     {TABS.map(t => (
-                        <button key={t.key} onClick={() => setTab(t.key)}
+                        <button key={t.key} onClick={() => setTab(t.key)} {...hover(() => setTab(t.key))}
                             className={`px-2 py-0.5 text-[10px] font-semibold rounded ${tab === t.key ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-800 hover:bg-gray-100'}`}>{t.label}</button>
                     ))}
                 </div>
