@@ -23,17 +23,17 @@ export const CompanyTags = ({ companyId }: { companyId: string }) => {
     };
 
     return (
-        <span className="inline-flex items-center gap-1 flex-shrink-0 text-[10px]" onClick={e => e.stopPropagation()}>
-            <span title="Tags" className="flex"><Tag className="w-3 h-3 text-gray-300" /></span>
+        <span className="inline-flex items-center gap-0.5 flex-shrink-0 text-[8px] leading-none" onClick={e => e.stopPropagation()}>
+            <span title="Tags" className="flex"><Tag className="w-2.5 h-2.5 text-gray-300" /></span>
             {tags.map(t => (
-                <span key={t} className="inline-flex items-center gap-0.5 px-1.5 py-px rounded bg-gray-100 text-gray-500 font-medium whitespace-nowrap">
+                <span key={t} className="inline-flex items-center gap-0.5 px-1 py-0.5 rounded bg-gray-100 text-gray-500 font-medium whitespace-nowrap">
                     {t}
                     {isAdminMode && (
                         <button
                             onClick={() => removeTag(companyId, t)}
                             title={`Remove "${t}"`}
                             className="text-gray-300 hover:text-rose-500"
-                        ><X className="w-3 h-3" /></button>
+                        ><X className="w-2 h-2" /></button>
                     )}
                 </span>
             ))}
@@ -61,7 +61,7 @@ export const CompanyTags = ({ companyId }: { companyId: string }) => {
                     onClick={() => setAdding(true)}
                     title="Add a tag"
                     className="inline-flex items-center px-0.5 py-px rounded border border-dashed border-gray-300 text-gray-400 hover:text-[#4A7AAF] hover:border-[#A5C4E2]"
-                ><Plus className="w-3 h-3" /></button>
+                ><Plus className="w-2.5 h-2.5" /></button>
             )}
         </span>
     );
