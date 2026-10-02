@@ -316,7 +316,7 @@ async function fetchScreener(company) {
             pbRatio = Math.round((currentPrice / bookValue) * 100) / 100;
         }
 
-        return { marketCap, currentPrice, bookValue, peRatio, pbRatio, dividendYield, roce, fiftyTwoWeekHigh, fiftyTwoWeekLow, ttmSales: parseTtmSales(html), shareholding: safeShareholding(html), screenerId: html.match(/data-company-id="(\d+)"/)?.[1] || null, source: 'screener' };
+        return { marketCap, currentPrice, bookValue, peRatio, pbRatio, dividendYield, roce, fiftyTwoWeekHigh, fiftyTwoWeekLow, ttmSales: parseTtmSales(html), shareholding: safeShareholding(html), screenerId: html.match(/data-company-id="(\d+)"/)?.[1] || null, quarters: parseQuarterTable(html), source: 'screener' };
     } catch (e) {
         console.error(`Screener error for ${company.ticker}:`, e.message);
         return null;
@@ -340,6 +340,86 @@ function parseQuarterCell(text) {
     if (!t || t === '-' || t.includes('%')) return null;
     const n = Number(t);
     return Number.isFinite(n) ? n : null;
+}
+
+// ================= STORED QUARTERS, KEPT IN STEP WITH SCREENER =================
+// A quarter's sales, operating profit and net profit are stored when its earnings call is
+// processed, often before Screener has the quarter, or has only the standalone results. Those
+// rows then stayed as first stored (in October 2026, 69 companies were out of step). Each time the
+// company's Screener page is read anyway (weekly), the stored quarters are checked against it and
+// corrected, so a row saved early mends itself within a week of Screener catching up.
+
+// Companies whose stored quarters are deliberately NOT Screener's: after a demerger the earlier
+// quarters were restated by hand for the business that remains, so year-on-year growth compares
+// like with like. Screener still shows the old combined figures for those quarters.
+const RESTATED_QUARTERS = new Set(['SKF India']);
+
+/** The quarterly results table on a Screener page: column labels and each row's numbers. */
+function parseQuarterTable(html) {
+    const start = html.indexOf('id="quarters"');
+    if (start === -1) return null;
+    const end = html.indexOf('</section>', start);
+    const section = html.substring(start, end === -1 ? start + 40000 : end);
+    const trs = section.match(/<tr[^>]*>[\s\S]*?<\/tr>/g) || [];
+    if (trs.length < 2) return null;
+    const cellsOf = (tr) => (tr.match(/<t[hd][^>]*>[\s\S]*?<\/t[hd]>/g) || []).map(stripTags);
+    const columns = cellsOf(trs[0]).slice(1);
+    const rows = new Map();
+    for (const tr of trs.slice(1)) {
+        const cells = cellsOf(tr);
+        if (cells.length < 2) continue;
+        rows.set(cells[0].replace(/\s*\+$/, '').trim(), cells.slice(1).map(parseQuarterCell));
+    }
+    // A consolidated page links to the standalone one. A standalone page that links to a
+    // consolidated one is the smaller set of accounts and must not overwrite group figures.
+    const lesser = html.includes('View Consolidated') && !html.includes('View Standalone');
+    return { columns, rows, lesser };
+}
+
+// "Q1 FY27" -> "Jun 2026": Screener labels a quarter by the month it ends.
+function screenerColumn(quarterName) {
+    const m = (quarterName || '').trim().match(/^Q([1-4])\s*FY(\d{2})$/i);
+    if (!m) return null;
+    const q = parseInt(m[1], 10), fy = 2000 + parseInt(m[2], 10);
+    return `${{ 1: 'Jun', 2: 'Sep', 3: 'Dec', 4: 'Mar' }[q]} ${q === 4 ? fy : fy - 1}`;
+}
+
+/** Corrects a company's stored quarters from its Screener page. Returns how many rows changed. */
+async function refreshStoredQuarters(company, table) {
+    if (!table || table.lesser || RESTATED_QUARTERS.has(company.name.trim())) return 0;
+    const n = (v) => (v === null || v === undefined ? null : Number(v));
+    const differs = (a, b) => b !== null && b !== undefined && (a === null || Math.abs(a - b) > Math.max(1.5, Math.abs(b) * 0.015));
+    const pct = (now, then) => (now === null || then === null || then <= 0 ? null : Math.round(((now - then) / then) * 1000) / 10);
+    const stored = await prisma.financials.findMany({
+        where: { companyId: company.id, quarter: { q: { not: 'GEN' } } },
+        include: { quarter: true },
+        orderBy: [{ quarter: { year: 'desc' } }, { quarter: { q: 'desc' } }],
+        take: 6,
+    });
+    let changed = 0;
+    for (const f of stored) {
+        const col = table.columns.findIndex(c => c.toLowerCase() === (screenerColumn(f.quarter.name) || '').toLowerCase());
+        if (col < 0) continue;
+        const cell = (...labels) => { for (const l of labels) { const v = (table.rows.get(l) || [])[col]; if (v !== undefined && v !== null) return v; } return null; };
+        const revenue = cell('Sales', 'Revenue');
+        if (revenue === null) continue;
+        // Lenders have no operating profit row; theirs stays blank.
+        const ebitda = cell('Operating Profit'), pat = cell('Net Profit');
+        if (!differs(n(f.revenue), revenue) && !differs(n(f.ebitda), ebitda) && !differs(n(f.pat), pat)) continue;
+        await prisma.financials.update({ where: { id: f.id }, data: { revenue, ...(ebitda === null ? {} : { ebitda }), ...(pat === null ? {} : { pat }) } });
+        console.log(`   ${company.name.trim()} ${f.quarter.name}: stored ${n(f.revenue)}/${n(f.ebitda)}/${n(f.pat)} -> Screener ${revenue}/${ebitda}/${pat}`);
+        changed++;
+    }
+    if (changed) {
+        // The growth figures stored beside each quarter follow the corrected numbers.
+        const all = await prisma.financials.findMany({ where: { companyId: company.id, quarter: { q: { not: 'GEN' } } }, include: { quarter: true } });
+        for (const f of all) {
+            const prev = all.find(x => x.quarter.q === f.quarter.q && x.quarter.year === f.quarter.year - 1);
+            if (!prev) continue;
+            await prisma.financials.update({ where: { id: f.id }, data: { revenueYoY: pct(n(f.revenue), n(prev.revenue)) ?? f.revenueYoY, ebitdaYoY: pct(n(f.ebitda), n(prev.ebitda)), patYoY: pct(n(f.pat), n(prev.pat)) } });
+        }
+    }
+    return changed;
 }
 
 function parseTtmSales(html) {
@@ -1007,7 +1087,7 @@ async function syncFinance() {
     const now = new Date();
     const weekday = istParts(now).weekday;
     let catchUpBudget = 150;
-    const stats = { nse: 0, screenerWeekly: 0, screenerDaily: 0, screenerFailed: 0, skippedFresh: 0, untouched: 0, shareholding: 0 };
+    const stats = { nse: 0, screenerWeekly: 0, screenerDaily: 0, screenerFailed: 0, skippedFresh: 0, untouched: 0, shareholding: 0, quartersFixed: 0 };
     const comparison = [];
     const noNse = [];
 
@@ -1024,6 +1104,7 @@ async function syncFinance() {
             const data = await fetchScreener(company);
             if (!data || !data.currentPrice) { stats.screenerFailed++; console.log('❌ Not found on Screener'); continue; }
             await writeFromScreener(company, data);
+            stats.quartersFixed += await refreshStoredQuarters(company, data.quarters);
             stats.screenerDaily++;
             if (data.shareholding && data.shareholding.length) stats.shareholding++;
             console.log(`📊 Screener (no NSE price): ₹${data.currentPrice}`);
@@ -1037,6 +1118,7 @@ async function syncFinance() {
         if (due && !NO_SCREENER) {
             scr = await fetchScreener(company);
             if (scr) stats.screenerWeekly++; else stats.screenerFailed++;
+            if (scr) stats.quartersFixed += await refreshStoredQuarters(company, scr.quarters);
         }
 
         const fin = trailing.get(company.id) || null;
@@ -1096,6 +1178,7 @@ async function syncFinance() {
     console.log(`\n✅ Finance sync ${DRY ? 'dry run ' : ''}complete${nse ? ` — NSE prices of ${nse.date}` : ''}`);
     console.log(`   Priced from NSE:            ${stats.nse}`);
     console.log(`   Screener weekly reads:      ${stats.screenerWeekly}`);
+    console.log(`   Stored quarters corrected:  ${stats.quartersFixed}`);
     console.log(`   Screener daily (no NSE):    ${stats.screenerDaily}`);
     console.log(`   Screener failures:          ${stats.screenerFailed}`);
     console.log(`   Skipped (read <12h ago):    ${stats.skippedFresh}`);
