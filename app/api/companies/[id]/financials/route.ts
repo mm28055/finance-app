@@ -200,6 +200,20 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
         if (!html) return NextResponse.json({ error: 'Screener page unavailable' }, { status: 502 });
 
 type Row = { label: string; src: string; expandable: boolean; values: (string | null)[] };
+        // Net profit as a share of sales (income, for a lender), worked out per column and placed under net profit.
+        // `skipLast` leaves the quarterly table's YoY column empty.
+        const withNetMargin = (rows: Row[], skipLast: boolean): Row[] => {
+            const np = rows.findIndex(r => r.src === 'Net Profit'), sales = rows.find(r => r.src === 'Sales' || r.src === 'Revenue');
+            if (np < 0 || !sales) return rows;
+            const n = (v: string | null) => (v === null || v === '' ? null : Number(v.replace(/,/g, '')));
+            const values = rows[np].values.map((v, i) => {
+                if (skipLast && i === rows[np].values.length - 1) return null;
+                const p = n(v), s = n(sales.values[i]);
+                return p === null || s === null || !isFinite(p) || !isFinite(s) || s <= 0 ? null : `${Math.round((p / s) * 100)}%`;
+            });
+            if (!values.some(v => v !== null)) return rows;
+            return [...rows.slice(0, np + 1), { label: 'Net profit margin', src: 'Net profit margin', expandable: false, values }, ...rows.slice(np + 1)];
+        };
         const tables: Record<string, { columns: string[]; raw: (string | null)[]; rows: Row[] }> = {};
         for (const [section, wanted] of Object.entries(ROWS)) {
             const t = screenerTable(html, section);
@@ -217,7 +231,7 @@ type Row = { label: string; src: string; expandable: boolean; values: (string | 
             if (rows.length) tables[section] = {
                 columns: keep.map(k => k.c.replace(/^Mar /, 'FY').replace(/^FY20(\d\d)$/, 'FY$1')),
                 raw: keep.map(k => (k.c === 'TTM' ? null : k.c)),
-                rows,
+                rows: section === 'profit-loss' ? withNetMargin(rows, false) : rows,
             };
         }
         // Last five quarters, so the latest sits beside the same quarter a year earlier, plus that growth.
@@ -255,7 +269,7 @@ type Row = { label: string; src: string; expandable: boolean; values: (string | 
                 const fyLabel = `FY${String(fy % 100).padStart(2, '0')}`;
                 return halfYearly ? `${qn === 2 ? 'H1' : 'H2'} ${fyLabel}` : `Q${qn} ${fyLabel}`;
             };
-            if (rows.length) tables['quarters'] = { columns: [...qCols.map(i => fq(q.columns[i])), 'YoY'], raw: [...qCols.map(i => q.columns[i]), null], rows };
+            if (rows.length) tables['quarters'] = { columns: [...qCols.map(i => fq(q.columns[i])), 'YoY'], raw: [...qCols.map(i => q.columns[i]), null], rows: withNetMargin(rows, true) };
         }
         // "Ratio 1": debt and cash measures worked out from the same filed tables, last five years.
         const ratio1 = await debtAndCashRatios(html, page.view === 'consolidated');

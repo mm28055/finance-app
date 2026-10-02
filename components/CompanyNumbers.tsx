@@ -8,7 +8,7 @@ import { useHoverOpen } from '@/lib/hover-open';
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
 // Bump when the shape of /financials changes, so browsers never reuse an older copy.
-const DATA_VERSION = 12;
+const DATA_VERSION = 13;
 
 type Tab = 'history' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios' | 'ratios-1';
 type Row = { label: string; src: string; expandable: boolean; values: (string | null)[]; /** The figures a ratio is made from, shown above it (open by default, can be closed). */ parts?: { label: string; values: (string | null)[] }[]; /** A section heading shown above this row. */ heading?: string };
@@ -28,6 +28,7 @@ const TABS: { key: Tab; label: string }[] = [
 const KEY_ROWS = new Set(['Sales', 'Revenue', 'Operating profit', 'Financing profit', 'Net profit', 'Total', 'Free cash', 'ROCE', 'Operating cash']);
 // What each row means, shown when the pointer rests on its label (no footnotes under the tables).
 const HINTS: Record<string, string> = {
+    'Net profit margin': 'Net profit ÷ sales (income, for a lender): how much of each ₹100 of sales is left as profit after all costs, interest and tax.',
     // Ratio tab
     'Debt to equity': 'Borrowings ÷ shareholders\' equity. Under 1 is comfortable for most businesses.',
     'Net debt to EBITDA': 'Borrowings less cash and bank balances (investments not deducted), ÷ operating profit: years of operating profit needed to repay debt. Under 2x is comfortable; above 3–4x is stretched.',
