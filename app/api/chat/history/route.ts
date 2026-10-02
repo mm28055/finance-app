@@ -13,11 +13,13 @@ export async function GET(req: NextRequest) {
             return NextResponse.json({ error: "Sector required" }, { status: 400 });
         }
 
-        const messages = await prisma.sectorChat.findMany({
-            where: { sector },
-            orderBy: { timestamp: 'asc' },
-            take: 50 // Limit to last 50 messages
-        });
+        // Only the last month's conversation is shown; older messages stay stored but hidden.
+        const monthAgo = BigInt(Date.now() - 30 * 24 * 60 * 60 * 1000);
+        const messages = (await prisma.sectorChat.findMany({
+            where: { sector, timestamp: { gte: monthAgo } },
+            orderBy: { timestamp: 'desc' },
+            take: 50 // the latest 50 messages
+        })).reverse();
 
         // Convert BigInt to number for JSON response
         const formatted = messages.map(m => ({
