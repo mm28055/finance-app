@@ -25,7 +25,9 @@ import { ManagementCard } from './ManagementCard';
 import { prefetchDetail, takeDetail } from '@/lib/card-prefetch';
 import { CompanyBusinessCard } from './SectorBusinesses';
 import { CompanyNews, useUnseenNews } from './CompanyNews';
+import { AnnualReportCard } from './AnnualReportCard';
 import { businessFor } from '@/lib/sector-overviews';
+import { displayCase } from '@/lib/display-name';
 
 const CONVICTION_CYCLE: (ConvictionLevel | null)[] = [null, 'HIGH', 'MEDIUM', 'LOW'];
 
@@ -366,7 +368,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                     : 'text-gray-800'}`}
                             title={company.displayName ? `${company.displayName} (formerly ${company.name}) · ${guidanceTitle}` : guidanceTitle}
                         >
-                            {company.displayName || company.name}
+                            {displayCase(company.displayName || company.name)}
                         </span>
                         {companyFilings.length > 0 && (
                             <button
@@ -741,6 +743,8 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                             activeQuarterIndex={selectedQuarterIdx}
                                             onQuarterChange={(idx: number) => setSelectedQuarterIdx(idx)}
                                             business={business ? <CompanyBusinessCard found={business} company={effective} /> : undefined}
+                                            annualReport={effective.annualReport ? <AnnualReportCard report={effective.annualReport} /> : undefined}
+                                            annualReportLabel={effective.annualReport ? `AR ${effective.annualReport.year === 'CY25' ? 'CY25' : '26'}` : undefined}
                                             news={<CompanyNews news={effective.news || []} />}
                                             newsUnseen={newsUnseen}
                                             onNewsOpen={markNewsSeen}
