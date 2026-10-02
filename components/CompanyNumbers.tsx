@@ -22,7 +22,7 @@ const TABS: { key: Tab; label: string }[] = [
     { key: 'balance-sheet', label: 'Balance sheet' },
     { key: 'cash-flow', label: 'Cash flow' },
     { key: 'ratios', label: 'WC' },
-    { key: 'ratios-1', label: 'Ratio 1' },
+    { key: 'ratios-1', label: 'Ratio' },
 ];
 // Rows drawn in bold: the ones a reader looks for first.
 const KEY_ROWS = new Set(['Sales', 'Revenue', 'Operating profit', 'Financing profit', 'Net profit', 'Total', 'Free cash', 'ROCE', 'Operating cash']);
