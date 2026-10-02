@@ -49,6 +49,7 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
     // Sync isOpen with defaultOpen so clearing a search re-collapses sectors
     useEffect(() => {
         setIsOpen(defaultOpen);
+        if (!defaultOpen) setPanel('none');
     }, [defaultOpen]);
 
     const handleChatClick = (e: React.MouseEvent) => {
@@ -65,7 +66,9 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
         <section className="mb-2">
             {/* Sector Header */}
             <button
-                onClick={() => setIsOpen(!isOpen)}
+                // Opening or closing a sector by its name always lands on the plain company list:
+                // an Overview, results table or Filings tab opened earlier does not stay selected.
+                onClick={() => { setPanel('none'); setIsOpen(!isOpen); }}
                 className="flex items-center gap-2 w-full text-left group focus:outline-none py-2 px-1"
             >
                 <div className={`p-0.5 rounded transition-colors ${isOpen ? 'text-[#6B9FCC]' : 'text-gray-400 group-hover:text-[#6B9FCC]'}`}>
