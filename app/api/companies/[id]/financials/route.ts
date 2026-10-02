@@ -39,7 +39,7 @@ const ROWS: Record<string, [string, string][]> = {
  * of profit, asset turnover, capex against sales and depreciation, dividend payout.
  * Lenders (no "Sales" row) get only the ratios that mean something for them.
  */
-async function debtAndCashRatios(html: string, consolidated: boolean): Promise<{ columns: string[]; raw: (string | null)[]; rows: { label: string; src: string; expandable: boolean; values: (string | null)[]; parts?: { label: string; values: (string | null)[] }[] }[] } | null> {
+async function debtAndCashRatios(html: string, consolidated: boolean): Promise<{ columns: string[]; raw: (string | null)[]; rows: { label: string; src: string; expandable: boolean; values: (string | null)[]; parts?: { label: string; values: (string | null)[] }[]; heading?: string }[] } | null> {
     const pl = screenerTable(html, 'profit-loss'), bs = screenerTable(html, 'balance-sheet'), cf = screenerTable(html, 'cash-flow');
     if (!pl || !bs) return null;
     const years = pl.columns.filter(c => c !== 'TTM' && bs.columns.includes(c)).slice(-YEARS);
@@ -169,7 +169,7 @@ async function debtAndCashRatios(html: string, consolidated: boolean): Promise<{
         }));
         multiples.forEach(([label, , , notForLenders], i) => {
             if (lender && notForLenders) return;
-            rows.push([`${label} at 31 March`, per(y => {
+            rows.push([label, per(y => {
                 const end = yearEnd(y);
                 if (!end) return null;
                 // The last reading in the six weeks up to the year-end.
@@ -184,7 +184,9 @@ async function debtAndCashRatios(html: string, consolidated: boolean): Promise<{
     return {
         columns: years.map(c => c.replace(/^Mar /, 'FY').replace(/^FY20(\d\d)$/, 'FY$1')),
         raw: years,
-        rows: kept.map(([label, values]) => ({ label, src: label, expandable: false, values, ...(label === 'Cash conversion' && conversionParts ? { parts: conversionParts } : {}) })),
+        rows: kept.map(([label, values]) => ({ label, src: label, expandable: false, values, ...(label === 'Cash conversion' && conversionParts ? { parts: conversionParts } : {}),
+            // "Valuation" heads the returns and year-end multiples at the bottom of the table.
+            ...(label === (kept.some(([l]) => l === 'ROCE') ? 'ROCE' : 'ROE') ? { heading: 'Valuation' } : {}) })),
     };
 }
 

@@ -8,10 +8,10 @@ import { useHoverOpen } from '@/lib/hover-open';
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
 // Bump when the shape of /financials changes, so browsers never reuse an older copy.
-const DATA_VERSION = 11;
+const DATA_VERSION = 12;
 
 type Tab = 'history' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios' | 'ratios-1';
-type Row = { label: string; src: string; expandable: boolean; values: (string | null)[]; /** The figures a ratio is made from, shown above it (open by default, can be closed). */ parts?: { label: string; values: (string | null)[] }[] };
+type Row = { label: string; src: string; expandable: boolean; values: (string | null)[]; /** The figures a ratio is made from, shown above it (open by default, can be closed). */ parts?: { label: string; values: (string | null)[] }[]; /** A section heading shown above this row. */ heading?: string };
 type Table = { columns: string[]; raw: (string | null)[]; rows: Row[] };
 type Financials = { view: 'consolidated' | 'standalone'; empty: boolean; tables: Record<string, Table>; growth: Record<string, Record<string, string>> };
 
@@ -32,7 +32,7 @@ const NOTES: Partial<Record<Tab, string>> = {
     'balance-sheet': '₹ crore at 31 March.',
     'cash-flow': '₹ crore, years to March. Free cash = operating cash less capital spending.',
     ratios: 'Days of sales (debtors), of materials (inventory, payables). A shorter cash conversion cycle is better.',
-    'ratios-1': 'Years to March. Net debt = borrowings less cash and bank balances (investments not deducted). Interest cover = operating profit ÷ interest. Cash conversion = operating cash flow before tax ÷ operating profit (the Cash flow tab shows operating cash after tax). Capex = operating cash less free cash. Rules of thumb, which vary by industry: debt to equity under 1, net debt under 2x EBITDA, interest cover above 3x, cash conversion above 70%. ROE = net profit ÷ year-end equity. P/E, EV/EBITDA, P/B and P/Sales are as they stood at 31 March of each year, on the last twelve months of figures. Banks and lenders show only the measures that apply to them.',
+    'ratios-1': 'Years to March. Net debt = borrowings less cash and bank balances (investments not deducted). Interest cover = operating profit ÷ interest. Cash conversion = operating cash flow before tax ÷ operating profit (the Cash flow tab shows operating cash after tax). Capex = operating cash less free cash. Rules of thumb, which vary by industry: debt to equity under 1, net debt under 2x EBITDA, interest cover above 3x, cash conversion above 70%. ROE = net profit ÷ year-end equity. Under Valuation, P/E, EV/EBITDA, P/B and P/Sales are as they stood at 31 March of each year, on the last twelve months of figures. Banks and lenders show only the measures that apply to them.',
 };
 
 // Screener's growth summary as one quiet line under the P&L table.
@@ -94,6 +94,9 @@ function DataTable({ table, companyId, section, view }: { table: Table; companyI
                         const sub = open[r.src];
                         return (
                             <React.Fragment key={r.label}>
+                                {r.heading && (
+                                    <tr><td colSpan={table.columns.length + 1} className="pt-3 pb-1 text-[10px] font-semibold uppercase tracking-wider text-gray-400 border-t border-gray-100">{r.heading}</td></tr>
+                                )}
                                 {r.parts && !partsClosed[r.label] && r.parts.map(p => (
                                     <tr key={r.label + p.label} className="text-[10px] text-gray-500 bg-[#F8FAFC]">
                                         <td className="py-0.5 pr-2 pl-4 whitespace-nowrap sticky left-0 bg-[#F8FAFC]">{p.label}</td>
