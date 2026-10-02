@@ -112,7 +112,7 @@ export function FinancialMatrix({ financials, quarterName }: { financials?: Comp
                                 return (
                                     <tr key={m.name} className="hover:bg-[#F8FAFC]">
                                         <td className="text-left px-4 py-2 font-medium text-gray-700 text-[11px]">{m.name}</td>
-                                        <td className="px-3 py-2 text-gray-800 font-mono text-[11px]">{fmtVal(m.val, false)}</td>
+                                        <td className="px-3 py-2 text-gray-800 font-mono text-[11px]">{m.val ? fmtVal(m.val, false) : '-'}</td>
                                         <td className="px-3 py-2 text-gray-300">-</td>
                                         <td className="px-3 py-2 text-gray-300">-</td>
                                         <td className="px-3 py-2 text-gray-300">-</td>
@@ -146,13 +146,13 @@ export function FinancialMatrix({ financials, quarterName }: { financials?: Comp
                             {financials.guidance.revenueTarget !== null && financials.guidance.revenueTarget !== undefined && (
                                 <div className="flex justify-between items-center text-[10px]">
                                     <span className="text-gray-500">Revenue Target</span>
-                                    <span className="font-mono font-semibold text-gray-700">₹{financials.guidance.revenueTarget.toLocaleString()}cr</span>
+                                    <span className="font-mono font-semibold text-gray-700" title={financials.guidance.revenueTarget ? undefined : 'No revenue target was given on the call'}>{financials.guidance.revenueTarget ? `₹${financials.guidance.revenueTarget.toLocaleString()}cr` : '–'}</span>
                                 </div>
                             )}
                             {financials.guidance.marginTarget !== null && financials.guidance.marginTarget !== undefined && (
                                 <div className="flex justify-between items-center text-[10px]">
                                     <span className="text-gray-500">Margin Target</span>
-                                    <span className="font-mono font-semibold text-gray-700">{financials.guidance.marginTarget}%</span>
+                                    <span className="font-mono font-semibold text-gray-700" title={financials.guidance.marginTarget ? undefined : 'No margin target was given on the call'}>{financials.guidance.marginTarget ? `${financials.guidance.marginTarget}%` : '–'}</span>
                                 </div>
                             )}
                             {/* Fallback for legacy fields if they exist */}
