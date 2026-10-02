@@ -26,13 +26,41 @@ const TABS: { key: Tab; label: string }[] = [
 ];
 // Rows drawn in bold: the ones a reader looks for first.
 const KEY_ROWS = new Set(['Sales', 'Revenue', 'Operating profit', 'Financing profit', 'Net profit', 'Total', 'Free cash', 'ROCE', 'Operating cash']);
-const NOTES: Partial<Record<Tab, string>> = {
-    quarters: '₹ crore. YoY = the latest period against the same period a year earlier (half-years for companies that report every six months).',
-    'profit-loss': '₹ crore, years to March. TTM = the last four quarters.',
-    'balance-sheet': '₹ crore at 31 March.',
-    'cash-flow': '₹ crore, years to March. Free cash = operating cash less capital spending.',
-    ratios: 'Days of sales (debtors), of materials (inventory, payables). A shorter cash conversion cycle is better.',
-    'ratios-1': 'Years to March. Net debt = borrowings less cash and bank balances (investments not deducted). Interest cover = operating profit ÷ interest. Cash conversion = operating cash flow before tax ÷ operating profit (the Cash flow tab shows operating cash after tax). Capex = operating cash less free cash. Rules of thumb, which vary by industry: debt to equity under 1, net debt under 2x EBITDA, interest cover above 3x, cash conversion above 70%. ROE = net profit ÷ year-end equity. Under Valuation, P/E, EV/EBITDA, P/B and P/Sales are as they stood at 31 March of each year, on the last twelve months of figures. Banks and lenders show only the measures that apply to them.',
+// What each row means, shown when the pointer rests on its label (no footnotes under the tables).
+const HINTS: Record<string, string> = {
+    // Ratio tab
+    'Debt to equity': 'Borrowings ÷ shareholders\' equity. Under 1 is comfortable for most businesses.',
+    'Net debt to EBITDA': 'Borrowings less cash and bank balances (investments not deducted), ÷ operating profit: years of operating profit needed to repay debt. Under 2x is comfortable; above 3–4x is stretched.',
+    'Interest cover': 'Operating profit ÷ interest. Above 3x is comfortable.',
+    'Operating cash flow before tax (₹cr)': 'Cash from operations before tax paid. The Cash flow tab shows it after tax.',
+    'Operating profit (₹cr)': 'Sales less operating expenses, before depreciation, interest and tax.',
+    'Cash conversion': 'Operating cash flow before tax ÷ operating profit. Staying above about 70% means profits turn into cash.',
+    'Free cash flow (₹cr)': 'Operating cash flow less capital spending.',
+    'Free cash ÷ net profit': 'How much of net profit is left as cash after capital spending.',
+    'Asset turnover': 'Sales ÷ total assets: sales earned per rupee of assets.',
+    'Capex ÷ sales': 'Capital spending (operating cash less free cash) as a share of sales.',
+    'Capex ÷ depreciation': 'Capital spending ÷ depreciation. Well above 1x means investing to grow, near 1x means maintaining.',
+    'Dividend payout': 'Share of net profit paid out as dividends.',
+    'ROCE': 'Return on capital employed: profit before interest and tax ÷ capital employed.',
+    'ROE': 'Net profit ÷ year-end shareholders\' equity.',
+    'P/E': 'Price ÷ earnings as it stood at 31 March of that year, on the last twelve months of profit.',
+    'EV/EBITDA': 'Company value including debt ÷ operating profit, as it stood at 31 March of that year.',
+    'P/B': 'Price ÷ book value, as it stood at 31 March of that year.',
+    'P/Sales': 'Market value ÷ sales, as it stood at 31 March of that year.',
+    // WC tab
+    'Debtor days': 'Days of sales owed by customers.',
+    'Inventory days': 'Days of materials and goods held in stock.',
+    'Payable days': 'Days of purchases owed to suppliers.',
+    'Cash conversion cycle': 'Debtor days + inventory days − payable days. Shorter is better.',
+    'Working capital days': 'Days of sales tied up in working capital.',
+    // Cash flow tab
+    'Free cash': 'Operating cash flow less capital spending.',
+    'Operating cash ÷ operating profit': 'Operating cash flow before tax ÷ operating profit.',
+};
+// The same for column headings.
+const COLUMN_HINTS: Record<string, string> = {
+    YoY: 'The latest period against the same period a year earlier (half-years for companies that report every six months).',
+    TTM: 'The last four quarters.',
 };
 
 // Screener's growth summary as one quiet line under the P&L table.
@@ -85,7 +113,7 @@ function DataTable({ table, companyId, section, view }: { table: Table; companyI
                 <thead>
                     <tr className="text-gray-400">
                         <th className="text-left font-medium py-1 pr-2 sticky left-0 bg-white" />
-                        {table.columns.map(c => <th key={c} className="text-right font-medium py-1 px-1.5 whitespace-nowrap">{c}</th>)}
+                        {table.columns.map(c => <th key={c} title={COLUMN_HINTS[c]} className={`text-right font-medium py-1 px-1.5 whitespace-nowrap ${COLUMN_HINTS[c] ? 'cursor-help' : ''}`}>{c}</th>)}
                     </tr>
                 </thead>
                 <tbody>
@@ -99,13 +127,13 @@ function DataTable({ table, companyId, section, view }: { table: Table; companyI
                                 )}
                                 {r.parts && !partsClosed[r.label] && r.parts.map(p => (
                                     <tr key={r.label + p.label} className="text-[10px] text-gray-500 bg-[#F8FAFC]">
-                                        <td className="py-0.5 pr-2 pl-4 whitespace-nowrap sticky left-0 bg-[#F8FAFC]">{p.label}</td>
+                                        <td title={HINTS[p.label]} className={`py-0.5 pr-2 pl-4 whitespace-nowrap sticky left-0 bg-[#F8FAFC] ${HINTS[p.label] ? 'cursor-help' : ''}`}>{p.label}</td>
                                         {p.values.map((v, i) => <td key={i} className={`py-0.5 px-1.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''}`}>{v ?? '–'}</td>)}
                                     </tr>
                                 ))}
                                 <tr className={`border-t border-gray-50 ${key ? 'font-semibold text-gray-800' : 'text-gray-600'}`}>
                                     <td className="py-1 pr-2 whitespace-nowrap sticky left-0 bg-white">
-                                        {r.label}
+                                        <span title={HINTS[r.label]} className={HINTS[r.label] ? 'cursor-help' : undefined}>{r.label}</span>
                                         {r.parts && (
                                             <button onClick={() => setPartsClosed(c => ({ ...c, [r.label]: !c[r.label] }))} title={partsClosed[r.label] ? 'Show the figures behind it' : 'Hide the figures behind it'}
                                                 className="ml-1 inline-flex items-center justify-center w-3.5 h-3.5 rounded text-[10px] leading-none text-[#4A7AAF] hover:bg-[#D4E5F7]">
@@ -197,7 +225,6 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
                         <>
                             {table ? <DataTable key={`${tab}-${fin.view}`} table={table} companyId={companyId} section={tab} view={fin.view} /> : <div className="text-[11px] text-gray-400 py-4 text-center">Not reported for this company.</div>}
                             {tab === 'profit-loss' && growthLine(fin.growth)}
-                            <p className="text-[9px] text-gray-400 mt-1.5">{NOTES[tab]} Filed figures from Screener ({fin.view}).</p>
                         </>
                     )}
                 </>

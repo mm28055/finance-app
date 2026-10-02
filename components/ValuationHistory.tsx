@@ -121,7 +121,6 @@ export function ValuationHistory({ companyId, embedded = false }: { companyId: s
                     </p>
                 </>
             )}
-            <p className="text-[9px] text-gray-400 mt-1">Weekly figures from Screener; valuation multiples use trailing earnings, book value and sales.</p>
         </div>
     );
 }
