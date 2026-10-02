@@ -384,8 +384,10 @@ export function AnalysisPanel({
                             ? 'text-[#6B9FCC] border-[#6B9FCC] bg-white'
                             : 'text-gray-400 border-transparent hover:text-gray-600'
                             }`}
+                        title={item.quarter}
                     >
-                        {item.quarter}
+                        {/* "Q1 FY27" reads "Q1 27" here to keep the row short. */}
+                        {item.quarter.replace(/\bFY(\d\d)\b/, '$1')}
                     </button>
                 ))}
 
