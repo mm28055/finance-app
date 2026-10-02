@@ -66,9 +66,14 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
         <section className="mb-2">
             {/* Sector Header */}
             <button
-                // Opening or closing a sector by its name always lands on the plain company list:
-                // an Overview, results table or Filings tab opened earlier does not stay selected.
-                onClick={() => { setPanel('none'); setIsOpen(!isOpen); }}
+                // One click on the sector name always lands on the plain company list. With an Overview,
+                // results table or Filings tab open, the click closes that tab and keeps the sector
+                // open; otherwise it opens or closes the sector.
+                onClick={() => {
+                    if (isOpen && panel !== 'none') { setPanel('none'); return; }
+                    setPanel('none');
+                    setIsOpen(!isOpen);
+                }}
                 className="flex items-center gap-2 w-full text-left group focus:outline-none py-2 px-1"
             >
                 <div className={`p-0.5 rounded transition-colors ${isOpen ? 'text-[#6B9FCC]' : 'text-gray-400 group-hover:text-[#6B9FCC]'}`}>
