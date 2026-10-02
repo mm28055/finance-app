@@ -39,6 +39,9 @@ function SectorFilingsList({ data }: { data: SectorFilingsResponse }) {
     const companies = new Set(filings.map(f => f.company)).size;
     const counts = { good: 0, watch: 0, info: 0 } as Record<FilingTone, number>;
     filings.forEach(f => { counts[f.tone]++; });
+    // Clicking a tone chip shows only that kind; clicking it again shows everything.
+    const [tone, setTone] = useState<FilingTone | null>(null);
+    const shown = tone ? filings.filter(f => f.tone === tone) : filings;
 
     return (
         <div className="ml-5 mb-3 bg-white border border-gray-200 rounded-xl shadow-sm p-4">
@@ -49,9 +52,16 @@ function SectorFilingsList({ data }: { data: SectorFilingsResponse }) {
                 </span>
                 <div className="flex gap-1.5 ml-auto">
                     {(['watch', 'good', 'info'] as FilingTone[]).filter(t => counts[t]).map(t => (
-                        <span key={t} className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${TONE_STYLE[t].chip}`}>
+                        <button
+                            key={t}
+                            type="button"
+                            onClick={() => setTone(cur => (cur === t ? null : t))}
+                            aria-pressed={tone === t}
+                            title={tone === t ? 'Show all filings' : `Show only ${TONE_STYLE[t].label.toLowerCase()} filings`}
+                            className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border cursor-pointer transition-all ${TONE_STYLE[t].chip} ${tone === t ? 'ring-2 ring-offset-1 ring-current' : tone ? 'opacity-40 hover:opacity-80' : 'hover:brightness-95'}`}
+                        >
                             {counts[t]} {TONE_STYLE[t].label.toLowerCase()}
-                        </span>
+                        </button>
                     ))}
                 </div>
             </div>
@@ -59,7 +69,7 @@ function SectorFilingsList({ data }: { data: SectorFilingsResponse }) {
                 Read from the official NSE and BSE filings. Routine items such as trading-window closures, newspaper notices, AGM paperwork and share allotments under employee schemes are left out.
             </p>
             <ul className="divide-y divide-gray-100">
-                {filings.map((f, i) => (
+                {shown.map((f, i) => (
                     <li key={i} className="py-2.5 grid grid-cols-[3.2rem_1fr] gap-3">
                         <span className="text-[11px] text-gray-400 tabular-nums pt-0.5">{formatDate(f.date)}</span>
                         <div className="min-w-0">
