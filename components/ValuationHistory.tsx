@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { useHoverOpen } from '@/lib/hover-open';
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceLine, ReferenceArea } from 'recharts';
 
 // Ten years of price and valuation history for one company, loaded from Screener
 // when the card is opened (see /api/companies/[id]/history). Each valuation tab
@@ -45,6 +45,12 @@ export function ValuationHistory({ companyId, embedded = false }: { companyId: s
         return () => { alive = false; };
     }, [companyId, metric, cache]);
 
+    // Drag across the chart to measure the change between two dates (as on Google Finance).
+    // A plain click, or changing the measure or period, clears it.
+    const [sel, setSel] = React.useState<{ from: string; to: string } | null>(null);
+    const dragging = React.useRef(false);
+    React.useEffect(() => { setSel(null); dragging.current = false; }, [metric, years]);
+
     const all = cache[metric];
     const tab = TABS.find(t => t.key === metric)!;
     const points = Array.isArray(all)
@@ -58,6 +64,15 @@ export function ValuationHistory({ companyId, embedded = false }: { companyId: s
     // Share of the period's readings at or below today's: 0.9 = dearer than 90% of the time.
     const rank = latest !== null && values.length ? values.filter(v => v <= latest).length / values.length : null;
     const spanYears = points.length ? (Date.now() - new Date(points[0].date).getTime()) / (365.25 * 86400000) : 0;
+
+    // The selected stretch, earlier date first, with the change across it.
+    let picked: { a: Point; b: Point; pct: number } | null = null;
+    if (sel && sel.from !== sel.to) {
+        const [d1, d2] = sel.from < sel.to ? [sel.from, sel.to] : [sel.to, sel.from];
+        const a = points.find(p => p.date === d1), b = points.find(p => p.date === d2);
+        if (a && b && a.value !== 0) picked = { a, b, pct: ((b.value - a.value) / Math.abs(a.value)) * 100 };
+    }
+    const shortDate = (d: string) => new Date(d).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: '2-digit' });
 
     let verdict = '';
     if (rank !== null && metric !== 'price') {
@@ -96,9 +111,13 @@ export function ValuationHistory({ companyId, embedded = false }: { companyId: s
             {Array.isArray(all) && points.length < 2 && <div className="h-20 flex items-center justify-center text-[11px] text-gray-400">Not enough history for this period.</div>}
             {Array.isArray(all) && points.length >= 2 && (
                 <>
-                    <div className="h-44">
+                    <div className="h-44 select-none cursor-crosshair [&_*]:outline-none" title="Drag across the chart to see the change between two dates">
                         <ResponsiveContainer width="100%" height="100%">
-                            <LineChart data={points} margin={{ top: 4, right: 8, left: 0, bottom: 0 }}>
+                            <LineChart data={points} margin={{ top: 4, right: 8, left: 0, bottom: 0 }}
+                                onMouseDown={(e: any) => { if (e?.activeLabel) { dragging.current = true; setSel({ from: String(e.activeLabel), to: String(e.activeLabel) }); } }}
+                                onMouseMove={(e: any) => { if (dragging.current && e?.activeLabel) setSel(s => (s ? { ...s, to: String(e.activeLabel) } : s)); }}
+                                onMouseUp={() => { dragging.current = false; setSel(s => (s && s.from === s.to ? null : s)); }}
+                                onMouseLeave={() => { dragging.current = false; }}>
                                 <XAxis dataKey="date" tickFormatter={monthYear} tick={{ fontSize: 9, fill: '#9CA3AF' }} minTickGap={40} axisLine={false} tickLine={false} />
                                 <YAxis tick={{ fontSize: 9, fill: '#9CA3AF' }} width={44} axisLine={false} tickLine={false}
                                     tickFormatter={(v: number) => (metric === 'price' ? (v >= 1000 ? `${Number((v / 1000).toFixed(1))}k` : String(Math.round(v))) : `${v}x`)}
@@ -109,10 +128,21 @@ export function ValuationHistory({ companyId, embedded = false }: { companyId: s
                                     <ReferenceLine y={med} stroke="#9CA3AF" strokeDasharray="4 4"
                                         label={{ value: `median ${med.toFixed(1)}x`, position: 'insideTopLeft', fontSize: 9, fill: '#6B7280' }} />
                                 )}
-                                <Line type="monotone" dataKey="value" stroke="#4A7AAF" strokeWidth={1.8} dot={false} />
+                                {sel && sel.from !== sel.to && (
+                                    <ReferenceArea x1={sel.from < sel.to ? sel.from : sel.to} x2={sel.from < sel.to ? sel.to : sel.from}
+                                        fill={picked && picked.pct < 0 ? '#F3EEFC' : '#E7F5EC'} fillOpacity={0.7} strokeOpacity={0} />
+                                )}
+                                <Line type="monotone" dataKey="value" stroke="#4A7AAF" strokeWidth={1.8} dot={false} isAnimationActive={false} />
                             </LineChart>
                         </ResponsiveContainer>
                     </div>
+                    {picked && (
+                        <p className="text-[11px] mt-1.5 leading-relaxed">
+                            <b className={picked.pct >= 0 ? 'text-[#1F7A45]' : 'text-[#6B3FA0]'}>{picked.pct >= 0 ? '+' : ''}{picked.pct.toFixed(1)}%</b>
+                            <span className="text-gray-600"> · {fmt(picked.a.value, metric)} → {fmt(picked.b.value, metric)} · {shortDate(picked.a.date)} to {shortDate(picked.b.date)}</span>
+                            <button onClick={() => setSel(null)} className="ml-2 text-[10px] text-gray-400 hover:text-gray-600 underline">clear</button>
+                        </p>
+                    )}
                     <p className="text-[11px] text-gray-600 mt-1.5 leading-relaxed">
                         {metric === 'price'
                             ? priceLine
