@@ -80,16 +80,19 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
                     {isOpen ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
                 </div>
 
-                <span className="text-xs font-semibold text-[#4A7AAF] uppercase tracking-wide bg-[#D4E5F7] px-2.5 py-1 rounded-full">
-                    {name}
+                {/* Fixed-width columns, so the count and the buttons line up down the list as they do in the company rows */}
+                <span className="w-60 shrink-0 flex">
+                    <span className="truncate text-xs font-semibold text-[#4A7AAF] uppercase tracking-wide bg-[#D4E5F7] px-2.5 py-1 rounded-full" title={name}>
+                        {name}
+                    </span>
                 </span>
 
-                <span className="text-[10px] text-gray-400 font-medium">
+                <span className="w-20 shrink-0 text-[10px] text-gray-400 font-medium tabular-nums">
                     {count} companies
                 </span>
 
                 {/* Actions */}
-                <div className="flex items-center gap-1 ml-1">
+                <div className="flex items-center gap-1">
                     {/* Snapshot Button */}
                     <div
                         onClick={togglePanel('snapshot')}
@@ -98,7 +101,8 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
                     >
                         <LayoutGrid className="w-3 h-3" />
                     </div>
-                    {/* Overview Button — only where a note has been written */}
+                    {/* Overview Button — only where a note has been written (its column stays, so the rest line up) */}
+                    <span className="w-20 shrink-0 flex">
                     {overview && (
                         <div
                             onClick={togglePanel('overview')}
@@ -109,7 +113,9 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
                             <span className="text-[9px] font-semibold uppercase tracking-wide">Overview</span>
                         </div>
                     )}
+                    </span>
                     {/* Filings Button — only where a filings digest exists */}
+                    <span className="w-[92px] shrink-0 flex">
                     {filingCount > 0 && (
                         <div
                             onClick={togglePanel('filings')}
@@ -123,6 +129,7 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
                             </span>
                         </div>
                     )}
+                    </span>
                     {/* Chat Button */}
                     <div
                         onClick={handleChatClick}
