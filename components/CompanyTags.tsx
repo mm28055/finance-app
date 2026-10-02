@@ -4,8 +4,9 @@ import { Tag, X, Plus } from 'lucide-react';
 import { useAdmin } from '@/context/AdminContext';
 import { useTags } from '@/context/TagsContext';
 
-// The owner's tags for one company, shown inside the opened row so the collapsed
-// list stays uncluttered. Everyone sees them; only a signed-in owner can edit.
+// The owner's tags for one company: small grey labels beside the name once the row is
+// opened, so they take no line of their own and the collapsed list stays uncluttered.
+// Everyone sees them; only a signed-in owner can edit.
 export const CompanyTags = ({ companyId }: { companyId: string }) => {
     const { isAdminMode } = useAdmin();
     const { tagsFor, allTags, addTag, removeTag } = useTags();
@@ -22,12 +23,10 @@ export const CompanyTags = ({ companyId }: { companyId: string }) => {
     };
 
     return (
-        <div className="flex flex-wrap items-center gap-1.5 text-[11px]">
-            <span className="flex items-center gap-1 text-gray-400 font-medium uppercase tracking-wider text-[9px] mr-0.5">
-                <Tag className="w-3 h-3" /> Tags
-            </span>
+        <span className="inline-flex items-center gap-1 flex-shrink-0 text-[10px]" onClick={e => e.stopPropagation()}>
+            <span title="Tags" className="flex"><Tag className="w-3 h-3 text-gray-300" /></span>
             {tags.map(t => (
-                <span key={t} className="inline-flex items-center gap-1 pl-2 pr-1 py-0.5 rounded-full bg-white border border-gray-200 text-gray-600">
+                <span key={t} className="inline-flex items-center gap-0.5 px-1.5 py-px rounded bg-gray-100 text-gray-500 font-medium whitespace-nowrap">
                     {t}
                     {isAdminMode && (
                         <button
@@ -51,7 +50,7 @@ export const CompanyTags = ({ companyId }: { companyId: string }) => {
                         }}
                         onBlur={commit}
                         placeholder="Tag name, Enter to add"
-                        className="px-2 py-0.5 w-40 rounded-full border border-[#A5C4E2] bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#D4E5F7]"
+                        className="px-1.5 py-px w-36 rounded border border-[#A5C4E2] bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#D4E5F7]"
                     />
                     <datalist id={listId}>
                         {suggestions.map(s => <option key={s} value={s} />)}
@@ -60,9 +59,10 @@ export const CompanyTags = ({ companyId }: { companyId: string }) => {
             ) : (
                 <button
                     onClick={() => setAdding(true)}
-                    className="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full border border-dashed border-gray-300 text-gray-400 hover:text-[#4A7AAF] hover:border-[#A5C4E2]"
-                ><Plus className="w-3 h-3" /> add</button>
+                    title="Add a tag"
+                    className="inline-flex items-center px-0.5 py-px rounded border border-dashed border-gray-300 text-gray-400 hover:text-[#4A7AAF] hover:border-[#A5C4E2]"
+                ><Plus className="w-3 h-3" /></button>
             )}
-        </div>
+        </span>
     );
 };
