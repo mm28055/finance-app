@@ -8,7 +8,7 @@ import { useHoverOpen } from '@/lib/hover-open';
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
 // Bump when the shape of /financials changes, so browsers never reuse an older copy.
-const DATA_VERSION = 10;
+const DATA_VERSION = 11;
 
 type Tab = 'history' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios' | 'ratios-1';
 type Row = { label: string; src: string; expandable: boolean; values: (string | null)[]; /** The figures a ratio is made from, shown above it (open by default, can be closed). */ parts?: { label: string; values: (string | null)[] }[] };
@@ -21,7 +21,7 @@ const TABS: { key: Tab; label: string }[] = [
     { key: 'profit-loss', label: 'P&L' },
     { key: 'balance-sheet', label: 'Balance sheet' },
     { key: 'cash-flow', label: 'Cash flow' },
-    { key: 'ratios', label: 'Ratios' },
+    { key: 'ratios', label: 'WC' },
     { key: 'ratios-1', label: 'Ratio 1' },
 ];
 // Rows drawn in bold: the ones a reader looks for first.

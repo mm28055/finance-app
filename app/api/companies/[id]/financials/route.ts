@@ -28,7 +28,7 @@ const ROWS: Record<string, [string, string][]> = {
     ],
     ratios: [
         ['Debtor Days', 'Debtor days'], ['Inventory Days', 'Inventory days'], ['Days Payable', 'Payable days'],
-        ['Cash Conversion Cycle', 'Cash conversion cycle'], ['Working Capital Days', 'Working capital days'], ['ROCE %', 'ROCE'], ['ROE %', 'ROE'],
+        ['Cash Conversion Cycle', 'Cash conversion cycle'], ['Working Capital Days', 'Working capital days'],
     ],
 };
 
