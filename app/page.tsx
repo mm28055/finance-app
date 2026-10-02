@@ -3,6 +3,7 @@ import { getDashboardDataLight, getTranscriptStats } from "@/lib/data-service";
 import { TranscriptStats } from "@/components/TranscriptStats";
 import { SessionTodos } from "@/components/SessionTodos";
 import { sessionTodos } from "@/lib/session-todos";
+import { ScrollText, Target } from "lucide-react";
 
 export const dynamic = 'force-dynamic';
 
@@ -24,14 +25,18 @@ export default async function Home() {
         </div>
         <div className="flex items-center gap-4">
           <SessionTodos todos={todos} />
-          <a href="/filings" className="text-[11px] text-gray-500 hover:text-[#4A7AAF]">Filings</a>
-          <a href="/scorecard" className="text-[11px] text-gray-500 hover:text-[#4A7AAF]">Scorecard</a>
+          {[
+            { href: '/filings', label: 'Filings', Icon: ScrollText },
+            { href: '/scorecard', label: 'Scorecard', Icon: Target },
+          ].map(({ href, label, Icon }) => (
+            <a key={href} href={href} className="flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg border border-gray-200 shadow-sm text-xs font-semibold text-gray-700 hover:border-[#6B9FCC] hover:text-[#4A7AAF] transition-colors">
+              <span className="w-6 h-6 rounded-md bg-[#F0F7FF] flex items-center justify-center text-[#6B9FCC]">
+                <Icon className="w-3.5 h-3.5" />
+              </span>
+              {label}
+            </a>
+          ))}
           <TranscriptStats stats={stats} />
-
-          <div className="bg-white border border-gray-200 px-2.5 py-1 rounded-lg text-[10px] flex items-center gap-1.5 text-gray-500">
-            <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse"></span>
-            Live
-          </div>
         </div>
       </header>
 
