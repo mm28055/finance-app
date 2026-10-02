@@ -3,7 +3,7 @@ import { getDashboardDataLight, getTranscriptStats } from "@/lib/data-service";
 import { TranscriptStats } from "@/components/TranscriptStats";
 import { SessionTodos } from "@/components/SessionTodos";
 import { sessionTodos } from "@/lib/session-todos";
-import { ScrollText, Target } from "lucide-react";
+import { ScrollText, Target, CalendarDays } from "lucide-react";
 
 export const dynamic = 'force-dynamic';
 
@@ -31,6 +31,7 @@ export default async function Home() {
               {[
                 { href: '/filings', label: 'Filings', Icon: ScrollText },
                 { href: '/scorecard', label: 'Scorecard', Icon: Target },
+                { href: '/calendar', label: 'Calendar', Icon: CalendarDays },
               ].map(({ href, label, Icon }) => (
                 <a key={href} href={href} className="flex-1 flex items-center gap-1.5 bg-white px-2 rounded-md border border-gray-200 shadow-sm text-[10px] leading-none font-semibold text-gray-600 hover:border-[#6B9FCC] hover:text-[#4A7AAF] transition-colors">
                   <Icon className="w-3 h-3 text-[#6B9FCC]" />

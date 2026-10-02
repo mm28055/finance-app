@@ -76,6 +76,8 @@ export interface EnrichedCompany {
     // Market news and "why it moved" (lib/news): the flag marks a row with something new in the last
     // week; the full list comes with the detail fetch, for the NEWS tab.
     newsFlag?: import('@/lib/news/types').NewsFlag;
+    // Upcoming result and earnings-call dates (lib/events), soonest first, for the marker on the row.
+    events?: import('@/lib/events/types').EventChip[];
     news?: import('@/lib/news/types').NewsItem[];
     checkpoints?: import('@/lib/checkpoints').Checkpoint[];
     projects?: import('@/lib/projects/types').Project[];

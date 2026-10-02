@@ -388,6 +388,16 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                 {newsUnseen && <span className="w-1.5 h-1.5 rounded-full bg-[#E0A030]" />} news
                             </button>
                         )}
+                        {company.events && company.events.length > 0 && (
+                            <a
+                                href="/calendar"
+                                onClick={(e) => e.stopPropagation()}
+                                className="flex-shrink-0 hover:opacity-80 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border bg-[#EAF2FA] text-[#35577A] border-[#C9DCEF] whitespace-nowrap"
+                                title={company.events.map(ev => `${ev.kind === 'results' ? 'Results' : 'Earnings call'}: ${hoverDate(ev.date)}${ev.time ? `, ${ev.time}` : ''}`).join('\n')}
+                            >
+                                {company.events[0].kind === 'results' ? 'Results' : 'Call'} {hoverDate(company.events[0].date)}
+                            </a>
+                        )}
                         {company.isSme && (
                             <span
                                 className="flex-shrink-0 text-[9px] font-semibold px-1.5 py-0.5 rounded-full bg-gray-100 text-gray-500 border border-gray-200"
