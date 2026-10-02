@@ -18,12 +18,18 @@ const dayLabel = (iso: string) => new Date(iso + 'T00:00:00').toLocaleDateString
 
 // Result dates and earnings-call dates for every company, day by day. Upcoming by default;
 // "Recent" shows the last few weeks.
-export function EventsCalendar({ events, today }: { events: Row[]; today: string }) {
+export function EventsCalendar({ events, today, initialQuery = '', onCompany }: {
+    events: Row[]; today: string;
+    /** Start filtered to one company (the panel opened from that company's marker). */
+    initialQuery?: string;
+    /** Makes company names clickable, e.g. to find the company on the dashboard. */
+    onCompany?: (company: string) => void;
+}) {
     const [when, setWhen] = React.useState<'upcoming' | 'recent'>('upcoming');
     const [kind, setKind] = React.useState<'any' | 'results' | 'call'>('any');
     const [who, setWho] = React.useState('any');
     const [sector, setSector] = React.useState('any');
-    const [q, setQ] = React.useState('');
+    const [q, setQ] = React.useState(initialQuery);
 
     const sectors = React.useMemo(() => [...new Set(events.map(e => e.sector))].sort(), [events]);
     const shown = events.filter(e =>
@@ -74,7 +80,9 @@ export function EventsCalendar({ events, today }: { events: Row[]; today: string
                     <div className="bg-white border border-gray-200 rounded-xl divide-y divide-gray-100">
                         {list.map(e => (
                             <div key={`${e.company}-${e.kind}`} className="px-3 py-2 flex flex-wrap items-center gap-2">
-                                <span className="text-[13px] font-semibold text-gray-800">{e.company}</span>
+                                {onCompany
+                                    ? <button onClick={() => onCompany(e.company)} title="Show this company on the dashboard" className="text-[13px] font-semibold text-gray-800 hover:text-[#4A7AAF] hover:underline">{e.company}</button>
+                                    : <span className="text-[13px] font-semibold text-gray-800">{e.company}</span>}
                                 {e.call && <span className={`px-1.5 rounded text-[10px] font-semibold ${CALL_TONE[e.call] || ''}`}>{e.call}</span>}
                                 <span className={`px-1.5 rounded border text-[10px] font-semibold uppercase ${KIND[e.kind].chip}`}>{KIND[e.kind].label}</span>
                                 {e.time && <span className="text-[12px] text-gray-700">{e.time}</span>}

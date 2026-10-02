@@ -154,6 +154,12 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
         return () => clearInterval(t);
     }, []);
     const [searchQuery, setSearchQuery] = useState('');
+    // A company picked elsewhere (the calendar panel) is found here through the search box.
+    useEffect(() => {
+        const onSearch = (e: Event) => { setSearchQuery(String((e as CustomEvent).detail || '')); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+        window.addEventListener('dashboard-search', onSearch);
+        return () => window.removeEventListener('dashboard-search', onSearch);
+    }, []);
 
 
     const [sortBy, setSortBy] = useState<'marketCap' | 'gemini'>('gemini');
