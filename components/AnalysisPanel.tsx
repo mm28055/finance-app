@@ -21,7 +21,8 @@ export function AnalysisPanel({
     business,
     news,
     newsUnseen = false,
-    onNewsOpen
+    onNewsOpen,
+    openNews = 0
 }: {
     analysis?: AnalysisResult,
     quarterName?: string,
@@ -38,7 +39,9 @@ export function AnalysisPanel({
     news?: React.ReactNode,
     /** Shows the dot on the NEWS tab until it is opened. */
     newsUnseen?: boolean,
-    onNewsOpen?: () => void
+    onNewsOpen?: () => void,
+    /** Goes up by one each time the row's "news" marker is clicked: show the NEWS tab. */
+    openNews?: number
 }) {
     const safeHistory = history && history.length > 0
         ? history
@@ -72,6 +75,12 @@ export function AnalysisPanel({
             }
         }
     }, [activeQuarterIndex, safeHistory]);
+
+    // The row's "news" marker was clicked: show the NEWS tab. Declared after the effect above so that,
+    // when both run as the card opens, this one decides the tab.
+    useEffect(() => {
+        if (openNews > 0) { setViewMode("NEWS"); setActiveQuarter("NEWS"); }
+    }, [openNews]);
 
     const handleTabClick = (q: string, idx: number) => {
         setViewMode("ANALYSIS");

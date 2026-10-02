@@ -43,8 +43,8 @@ export interface NewsFlag { id: string; date: string; headline: string; tone: Ne
 
 /** Entries stay a year, like the filings. */
 export const NEWS_KEEP_DAYS = 366;
-/** An entry counts as "new" (dot, row marker) for this many days, until opened on that device. */
-export const NEWS_NEW_DAYS = 7;
+/** The "news" marker stays on the company row this long. Its dot (and the NEWS tab's) shows until the news is opened on that device. */
+export const NEWS_NEW_DAYS = 31;
 
 /** A day's move that calls for a reason. */
 export const MOVE_PCT = 7;

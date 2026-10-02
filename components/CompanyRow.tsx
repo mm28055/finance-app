@@ -61,6 +61,10 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     // Something new in the last week (a sharp move with its reason, or a market or policy event) that
     // this device has not opened yet: a marker on the row and a dot on the NEWS tab.
     const [newsUnseen, markNewsSeen] = useUnseenNews(company.name, company.newsFlag);
+    // Clicking the "news" marker opens the card on its NEWS tab.
+    const [openNews, setOpenNews] = useState(0);
+    // Closing the card forgets that, so opening it again by the row starts on the usual tab.
+    useEffect(() => { if (!expanded) setOpenNews(0); }, [expanded]);
     const { isAdminMode } = useAdmin();
     const [isDeleting, setIsDeleting] = useState(false);
     const [showColorPicker, setShowColorPicker] = useState(false);
@@ -374,14 +378,14 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                 {companyFilings.length} {companyFilings.length === 1 ? 'filing' : 'filings'}
                             </button>
                         )}
-                        {newsUnseen && company.newsFlag && (
+                        {company.newsFlag && (
                             <button
                                 type="button"
-                                onClick={(e) => { e.stopPropagation(); setExpanded(true); }}
+                                onClick={(e) => { e.stopPropagation(); setExpanded(true); markNewsSeen(); setOpenNews(n => n + 1); }}
                                 className="flex-shrink-0 cursor-pointer hover:opacity-80 inline-flex items-center gap-1 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border bg-[#FDF6E7] text-[#946200] border-[#F0DDAE]"
                                 title={`${hoverDate(company.newsFlag.date)}: ${company.newsFlag.headline}`}
                             >
-                                <span className="w-1.5 h-1.5 rounded-full bg-[#E0A030]" /> news
+                                {newsUnseen && <span className="w-1.5 h-1.5 rounded-full bg-[#E0A030]" />} news
                             </button>
                         )}
                         {company.isSme && (
@@ -729,6 +733,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                             news={<CompanyNews news={effective.news || []} />}
                                             newsUnseen={newsUnseen}
                                             onNewsOpen={markNewsSeen}
+                                            openNews={openNews}
                                         />
                                     </div>
                                 </div>

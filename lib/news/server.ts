@@ -10,7 +10,7 @@ export function getCompanyNews(company: string): NewsItem[] {
     return ALL.filter(n => n.company === company).sort(byDateDesc);
 }
 
-/** The newest dot-worthy entry of the last week, for the marker on the company row. */
+/** The newest dot-worthy entry of the last month, for the marker on the company row. */
 export function getCompanyNewsFlag(company: string): NewsFlag | undefined {
     const d = new Date();
     d.setUTCDate(d.getUTCDate() - NEWS_NEW_DAYS);
