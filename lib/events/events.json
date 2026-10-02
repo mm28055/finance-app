@@ -1,0 +1,201 @@
+{
+ "updated": "2026-10-02T03:50:38.872Z",
+ "events": [
+  {
+   "company": "CEAT",
+   "sector": "Tyres",
+   "kind": "results",
+   "date": "2026-10-14",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2711_WebXMLFile_20260925_170637864.xml"
+  },
+  {
+   "company": "Tata Technologies",
+   "sector": "Software",
+   "kind": "results",
+   "date": "2026-10-14",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_21749_WebXMLFile_20260922_162704307.xml"
+  },
+  {
+   "company": "Tata Technologies",
+   "sector": "Software",
+   "kind": "call",
+   "date": "2026-10-14",
+   "time": "7:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/TTLNSE_28092026145326_InvestorcallintimationQ2FY27_S.pdf"
+  },
+  {
+   "company": "CEAT",
+   "sector": "Tyres",
+   "kind": "call",
+   "date": "2026-10-15",
+   "time": "4:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/CEATLTD_30092026174121_SE_Letter_InviteEarningconferencecall15102026signed.pdf"
+  },
+  {
+   "company": "Mahindra Holi.&Resor",
+   "sector": "Hotels and Travels",
+   "kind": "results",
+   "date": "2026-10-21",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2895_WebXMLFile_20260929_154000829.xml"
+  },
+  {
+   "company": "CIE Automotive",
+   "sector": "Auto Related",
+   "kind": "results",
+   "date": "2026-10-22",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2650_WebXMLFile_20260924_121917929.xml"
+  },
+  {
+   "company": "Mahindra Life. Dev",
+   "sector": "Realty",
+   "kind": "results",
+   "date": "2026-10-22",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1885_WebXMLFile_20260929_175834219.xml"
+  },
+  {
+   "company": "Sumitomo Chemical India",
+   "sector": "Agrochemical & Fertilizers",
+   "kind": "results",
+   "date": "2026-10-26",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_17682_WebXMLFile_20261001_170527768.xml"
+  },
+  {
+   "company": "WeWork India",
+   "sector": "Commercial Services",
+   "kind": "results",
+   "date": "2026-10-26",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_25353_WebXMLFile_20260928_181114529.xml"
+  },
+  {
+   "company": "Medplus",
+   "sector": "Retail",
+   "kind": "results",
+   "date": "2026-10-27",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_19887_WebXMLFile_20260928_153514362.xml"
+  },
+  {
+   "company": "Blue Star",
+   "sector": "Consumer Durables",
+   "kind": "results",
+   "date": "2026-10-29",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1898_WebXMLFile_20260928_132035731.xml"
+  },
+  {
+   "company": "Indegene",
+   "sector": "Healthcare",
+   "kind": "results",
+   "date": "2026-10-29",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_21426_WebXMLFile_20260930_205842548.xml"
+  },
+  {
+   "company": "Indegene",
+   "sector": "Healthcare",
+   "kind": "call",
+   "date": "2026-10-30",
+   "time": "8:00 am",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/INDEGENE_30092026205609_tofileearningcallIntimation30092026.pdf"
+  },
+  {
+   "company": "Smartworks Coworking",
+   "sector": "Commercial Services",
+   "kind": "results",
+   "date": "2026-10-30",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_24273_WebXMLFile_20261001_172542515.xml"
+  },
+  {
+   "company": "Latent View Analytic",
+   "sector": "Software",
+   "kind": "results",
+   "date": "2026-10-31",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_19894_WebXMLFile_20260928_194551419.xml"
+  },
+  {
+   "company": "Amara Raja Energy",
+   "sector": "Auto Related",
+   "kind": "results",
+   "date": "2026-11-02",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_421_WebXMLFile_20260925_154920169.xml"
+  },
+  {
+   "company": "Fractal Analytics",
+   "sector": "Software",
+   "kind": "results",
+   "date": "2026-11-03",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_26732_WebXMLFile_20260925_124154488.xml"
+  },
+  {
+   "company": "Rane (Madras)",
+   "sector": "Auto Related",
+   "kind": "results",
+   "date": "2026-11-03",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2317_WebXMLFile_20260929_184323213.xml"
+  },
+  {
+   "company": "BASF India",
+   "sector": "Chemicals",
+   "kind": "results",
+   "date": "2026-11-04",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_203_WebXMLFile_20260925_115834003.xml"
+  },
+  {
+   "company": "Dr Lal PathLabs",
+   "sector": "Healthcare Diagnostic",
+   "kind": "results",
+   "date": "2026-11-04",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_13310_WebXMLFile_20260925_181947401.xml"
+  },
+  {
+   "company": "Exide Industries",
+   "sector": "Auto Related",
+   "kind": "results",
+   "date": "2026-11-04",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_129_WebXMLFile_20260929_143057382.xml"
+  },
+  {
+   "company": "Fractal Analytics",
+   "sector": "Software",
+   "kind": "call",
+   "date": "2026-11-04",
+   "time": "8:00 am",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/FRACTAL_25092026145104_Earnings_call_250926.pdf"
+  },
+  {
+   "company": "Insecticides (India)",
+   "sector": "Agrochemical & Fertilizers",
+   "kind": "results",
+   "date": "2026-11-05",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2603_WebXMLFile_20260925_130423592.xml"
+  },
+  {
+   "company": "Sai Life Sciences",
+   "sector": "Pharma CDMO",
+   "kind": "results",
+   "date": "2026-11-05",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_24081_WebXMLFile_20261001_110806353.xml"
+  }
+ ]
+}

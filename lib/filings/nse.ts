@@ -206,3 +206,39 @@ export function parseNseDate(s: string): Date | null {
     const utc = Date.UTC(+m[3], mon, +m[1], +(m[4] || 12), +(m[5] || 0), +(m[6] || 0)) - 330 * 60000;
     return new Date(utc);
 }
+
+// -----------------------------------------------------------------------------
+// Board-meetings calendar: every listed company must tell the exchange in advance
+// when its board will meet, and why. The meetings called to approve results give
+// each company's result date (scripts/sync-events.ts).
+// -----------------------------------------------------------------------------
+
+/** One row of the board-meetings calendar. Only the fields we read are typed. */
+export interface NseBoardMeeting {
+    bm_symbol: string;
+    /** Meeting date, "13-Nov-2026". */
+    bm_date: string;
+    bm_purpose: string;
+    /** "... to consider and approve the Unaudited Financial results ... Quarterly ended September 2026." */
+    bm_desc: string;
+    sm_name: string;
+    sm_isin: string;
+    attachment?: string;
+    [key: string]: any;
+}
+
+/** Board meetings (main board and SME) dated between two DD-MM-YYYY dates, inclusive. */
+export async function nseBoardMeetings(from: string, to: string): Promise<NseBoardMeeting[]> {
+    const cookie = await nseCookie();
+    const out: NseBoardMeeting[] = [];
+    for (const index of ['equities', 'sme']) {
+        const res = await fetch(`https://www.nseindia.com/api/corporate-board-meetings?index=${index}&from_date=${from}&to_date=${to}`, {
+            headers: { 'User-Agent': NSE_UA, Cookie: cookie, Referer: 'https://www.nseindia.com/companies-listing/corporate-filings-board-meetings' },
+        });
+        if (!res.ok) throw new Error(`NSE ${index} board-meetings feed returned ${res.status}`);
+        const data = await res.json();
+        if (Array.isArray(data)) out.push(...data);
+        await sleep(1500);
+    }
+    return out;
+}
