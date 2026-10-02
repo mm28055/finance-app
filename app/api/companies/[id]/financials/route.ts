@@ -133,6 +133,52 @@ async function debtAndCashRatios(html: string, consolidated: boolean): Promise<{
         })],
         ['Dividend payout', per(y => { const v = cell(pl, 'Dividend Payout %', y); return v === null ? null : pct(v); })],
     ];
+
+    // Returns, from Screener's own ratios table.
+    const rt = screenerTable(html, 'ratios');
+    rows.push(
+        ['ROCE', per(y => { const v = cell(rt, 'ROCE %', y); return v === null ? null : pct(v); })],
+        // Screener tabulates ROE only for lenders; for the rest it is net profit on year-end shareholders' funds.
+        ['ROE', per(y => {
+            const v = cell(rt, 'ROE %', y);
+            if (v !== null) return pct(v);
+            const np = cell(pl, 'Net Profit', y), eq = (cell(bs, 'Equity Capital', y) ?? 0) + (cell(bs, 'Reserves', y) ?? 0);
+            return np === null || eq <= 0 ? null : pct((np / eq) * 100);
+        })],
+    );
+
+    // Valuation at each year-end: the multiple on the last trading day up to 31 March, from the
+    // same weekly history Screener draws its valuation charts from (cached for 12 hours).
+    const sid = screenerCompanyId(html);
+    const multiples: [string, string, string, boolean][] = [
+        ['P/E', 'Price to Earning-Median PE-EPS', 'Price to Earning', false],
+        ['EV/EBITDA', 'EV Multiple-Median EV Multiple-EBITDA', 'EV Multiple', true],
+        ['P/B', 'Price to book value-Median PBV-Book value', 'Price to book value', false],
+        ['P/Sales', 'Market Cap to Sales-Median Market Cap to Sales-Sales', 'Market Cap to Sales', true],
+    ];
+    const months: Record<string, string> = { Jan: '01', Feb: '02', Mar: '03', Apr: '04', May: '05', Jun: '06', Jul: '07', Aug: '08', Sep: '09', Oct: '10', Nov: '11', Dec: '12' };
+    const yearEnd = (y: string) => { const m = y.match(/^([A-Z][a-z]{2}) (\d{4})$/); return m ? `${m[2]}-${months[m[1]]}-31` : null; };
+    if (sid) {
+        const series = await Promise.all(multiples.map(async ([, q, name]) => {
+            try {
+                const res = await cachedFetch(12 * 3600)(`https://www.screener.in/api/company/${sid}/chart/?q=${encodeURIComponent(q)}&days=3650${consolidated ? '&consolidated=true' : ''}`);
+                if (!res.ok) return [] as [string, number][];
+                const values: any[][] = ((await res.json()).datasets || []).find((d: any) => d.metric === name)?.values || [];
+                return values.map(v => [String(v[0]), Number(v[1])] as [string, number]).filter(v => Number.isFinite(v[1]));
+            } catch { return [] as [string, number][]; }
+        }));
+        multiples.forEach(([label, , , notForLenders], i) => {
+            if (lender && notForLenders) return;
+            rows.push([`${label} at 31 March`, per(y => {
+                const end = yearEnd(y);
+                if (!end) return null;
+                // The last reading in the six weeks up to the year-end.
+                const from = `${end.slice(0, 5)}${String(Number(end.slice(5, 7)) - 1).padStart(2, '0')}-15`;
+                const hit = series[i].filter(([d]) => d <= end && d >= from).pop();
+                return hit ? `${hit[1].toFixed(1)}x` : null;
+            })]);
+        });
+    }
     const kept = rows.filter(([, v]) => v.some(c => c !== null));
     if (!kept.length) return null;
     return {

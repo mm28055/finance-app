@@ -8,7 +8,7 @@ import { useHoverOpen } from '@/lib/hover-open';
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
 // Bump when the shape of /financials changes, so browsers never reuse an older copy.
-const DATA_VERSION = 8;
+const DATA_VERSION = 10;
 
 type Tab = 'history' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios' | 'ratios-1';
 type Row = { label: string; src: string; expandable: boolean; values: (string | null)[]; /** The figures a ratio is made from, shown above it (open by default, can be closed). */ parts?: { label: string; values: (string | null)[] }[] };
@@ -32,7 +32,7 @@ const NOTES: Partial<Record<Tab, string>> = {
     'balance-sheet': '₹ crore at 31 March.',
     'cash-flow': '₹ crore, years to March. Free cash = operating cash less capital spending.',
     ratios: 'Days of sales (debtors), of materials (inventory, payables). A shorter cash conversion cycle is better.',
-    'ratios-1': 'Years to March. Net debt = borrowings less cash and bank balances (investments not deducted). Interest cover = operating profit ÷ interest. Cash conversion = operating cash flow before tax ÷ operating profit (the Cash flow tab shows operating cash after tax). Capex = operating cash less free cash. Rules of thumb, which vary by industry: debt to equity under 1, net debt under 2x EBITDA, interest cover above 3x, cash conversion above 70%. Banks and lenders show only the dividend payout: the other measures do not apply to them.',
+    'ratios-1': 'Years to March. Net debt = borrowings less cash and bank balances (investments not deducted). Interest cover = operating profit ÷ interest. Cash conversion = operating cash flow before tax ÷ operating profit (the Cash flow tab shows operating cash after tax). Capex = operating cash less free cash. Rules of thumb, which vary by industry: debt to equity under 1, net debt under 2x EBITDA, interest cover above 3x, cash conversion above 70%. ROE = net profit ÷ year-end equity. P/E, EV/EBITDA, P/B and P/Sales are as they stood at 31 March of each year, on the last twelve months of figures. Banks and lenders show only the measures that apply to them.',
 };
 
 // Screener's growth summary as one quiet line under the P&L table.
