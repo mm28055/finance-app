@@ -25,16 +25,16 @@ export default async function Home() {
         </div>
         <div className="flex items-center gap-4">
           <SessionTodos todos={todos} />
-          {/* Filings and Scorecard stacked, together as tall as one transcript card */}
+          {/* Page links as small square cards, as tall as the transcript cards beside them */}
           <div className="flex items-stretch gap-3">
-            <div className="flex flex-col gap-1">
+            <div className="flex items-stretch gap-2">
               {[
                 { href: '/filings', label: 'Filings', Icon: ScrollText },
                 { href: '/scorecard', label: 'Scorecard', Icon: Target },
                 { href: '/calendar', label: 'Calendar', Icon: CalendarDays },
               ].map(({ href, label, Icon }) => (
-                <a key={href} href={href} className="flex-1 flex items-center gap-1.5 bg-white px-2 rounded-md border border-gray-200 shadow-sm text-[10px] leading-none font-semibold text-gray-600 hover:border-[#6B9FCC] hover:text-[#4A7AAF] transition-colors">
-                  <Icon className="w-3 h-3 text-[#6B9FCC]" />
+                <a key={href} href={href} className="w-[60px] flex flex-col items-center justify-center gap-1 bg-white rounded-lg border border-gray-200 shadow-sm text-[10px] leading-none font-semibold text-gray-600 hover:border-[#6B9FCC] hover:text-[#4A7AAF] transition-colors">
+                  <Icon className="w-4 h-4 text-[#6B9FCC]" />
                   {label}
                 </a>
               ))}
