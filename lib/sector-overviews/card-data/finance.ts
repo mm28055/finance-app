@@ -358,6 +358,57 @@ export const financeCharts: Record<string, ProfileCharts> = {
             ],
             "note": "Filed profit and loss (Screener, standalone), FY26. Income = interest earned plus other income (fees, treasury). Costs include provisions for bad loans."
         }
+    },
+    "Paisalo Digital": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "29x"
+            },
+            {
+                "label": "P/B",
+                "value": "4.1x"
+            },
+            {
+                "label": "Return on equity",
+                "value": "14%",
+                "note": "FY26: net profit ÷ average net worth"
+            },
+            {
+                "label": "Gross bad loans",
+                "value": "0.7%",
+                "note": "Q1 FY27, company call"
+            },
+            {
+                "label": "Assets ÷ net worth",
+                "value": "3.5x",
+                "note": "Mar 2026"
+            }
+        ],
+        "statsAsOf": "2 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "base": "income",
+            "parts": [
+                {
+                    "label": "Interest paid to depositors and lenders",
+                    "share": 40
+                },
+                {
+                    "label": "Staff, branches, other costs and bad-loan provisions",
+                    "share": 25
+                },
+                {
+                    "label": "Tax",
+                    "share": 9
+                },
+                {
+                    "label": "Net profit",
+                    "share": 26
+                }
+            ],
+            "note": "Filed profit and loss (Screener, consolidated), FY26. Income = interest earned plus other income (fees, treasury). Costs include provisions for bad loans."
+        }
     }
 };
 
@@ -412,5 +463,12 @@ export const financeValuationInputs: Record<string, ValuationInput> = {
         "mcapAtWriting": 4164,
         "peAtWriting": 26.6,
         "bookValue": 1460
+    },
+    "Paisalo Digital": {
+        "netDebt": null,
+        "ttmEbitda": null,
+        "mcapAtWriting": 7304,
+        "peAtWriting": 29,
+        "bookValue": 1793
     }
 };
