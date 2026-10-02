@@ -201,11 +201,14 @@ export function AnalysisPanel({
 
 
         if (viewMode === "DELTA") {
+            // Only the latest quarter keeps a delta report, so show that one whichever quarter was
+            // last looked at (the pointer often crosses the older quarter tabs on its way here).
+            const delta = activeData?.delta_analysis || safeHistory.find(h => h.analysis?.delta_analysis)?.analysis?.delta_analysis;
             return (
                 <div className="text-xs text-gray-700 leading-relaxed">
-                    {activeData?.delta_analysis ? (
+                    {delta ? (
                         (() => {
-                            const content = activeData.delta_analysis.trim();
+                            const content = delta.trim();
                             const sections = content.split(/\n(?=##?\s)/g);
 
                             return sections.map((section, idx) => {
@@ -235,7 +238,7 @@ export function AnalysisPanel({
                         })()
                     ) : (
                         <div className="flex flex-col items-center justify-center py-12 text-gray-400 italic text-xs">
-                            <p>No Delta Report available for this quarter.</p>
+                            <p>No Delta Report available yet.</p>
                         </div>
                     )}
                 </div>
