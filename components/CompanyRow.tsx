@@ -434,8 +434,6 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                 <Briefcase className={`w-3 h-3 ${inPortfolio ? 'text-[#4A7AAF]' : 'text-gray-200 hover:text-gray-400'}`} />
                             </button>
                         )}
-                        {/* The owner's tags: beside the name, only while the row is open */}
-                        {expanded && <CompanyTags companyId={company.id} />}
                     </div>
                 </div>
 
@@ -684,7 +682,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
             {/* Expanded Content */}
             {
                 expanded && (
-                    <div className="bg-[#F8FAFC] p-4 border-t border-gray-100 flex flex-col gap-4 animate-in slide-in-from-top-1 duration-150">
+                    <div className="relative bg-[#F8FAFC] p-4 pt-5 border-t border-gray-100 flex flex-col gap-4 animate-in slide-in-from-top-1 duration-150">
+                        {/* The owner's tags sit in the top margin of the opened panel, right-aligned: no line of their own, and not in the row */}
+                        <div className="absolute top-0.5 right-4"><CompanyTags companyId={company.id} /></div>
                         {detailLoading && !detail ? (
                             // Skeleton while the first fetch is in flight.
                             <>
