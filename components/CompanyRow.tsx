@@ -414,7 +414,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                             className="flex-shrink-0"
                         >
                             {localConviction ? (
-                                <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded-full ${CONVICTION_CONFIG[localConviction].pill}`}>
+                                <span className={`text-[9px] font-semibold px-1.5 py-0.5 rounded-full ${CONVICTION_CONFIG[localConviction].pill}`}>
                                     {localConviction === 'HIGH' ? '▲' : localConviction === 'MEDIUM' ? '◆' : '▼'} {localConviction[0]}
                                 </span>
                             ) : (

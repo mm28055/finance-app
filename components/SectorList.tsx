@@ -131,9 +131,9 @@ export interface EnrichedCompany {
 }
 
 export const CONVICTION_CONFIG = {
-    HIGH:   { label: 'High',   pill: 'bg-emerald-100 text-emerald-700', dot: 'bg-emerald-500' },
-    MEDIUM: { label: 'Medium', pill: 'bg-amber-100 text-amber-700',     dot: 'bg-amber-500'   },
-    LOW:    { label: 'Low',    pill: 'bg-rose-100 text-rose-600',       dot: 'bg-rose-400'    },
+    HIGH:   { label: 'High',   pill: 'bg-emerald-50 text-emerald-600/70', dot: 'bg-emerald-500' },
+    MEDIUM: { label: 'Medium', pill: 'bg-amber-50 text-amber-600/70',   dot: 'bg-amber-500'   },
+    LOW:    { label: 'Low',    pill: 'bg-rose-50 text-rose-500/70',     dot: 'bg-rose-400'    },
 } as const;
 
 export type ConvictionLevel = keyof typeof CONVICTION_CONFIG;
