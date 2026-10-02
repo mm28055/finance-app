@@ -380,7 +380,7 @@ export function AnalysisPanel({
                         key={item.quarter}
                         onClick={() => handleTabClick(item.quarter, idx)}
                         {...hover(() => handleTabClick(item.quarter, idx))}
-                        className={`px-3 py-2 text-[10px] font-medium border-b-2 transition-colors whitespace-nowrap ${activeQuarter === item.quarter && viewMode === "ANALYSIS"
+                        className={`px-2 py-2 text-[10px] font-medium border-b-2 transition-colors whitespace-nowrap ${activeQuarter === item.quarter && viewMode === "ANALYSIS"
                             ? 'text-[#6B9FCC] border-[#6B9FCC] bg-white'
                             : 'text-gray-400 border-transparent hover:text-gray-600'
                             }`}
@@ -392,7 +392,7 @@ export function AnalysisPanel({
                 <button
                     onClick={handleDeltaClick}
                     {...hover(handleDeltaClick)}
-                    className={`px-3 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap ${viewMode === "DELTA"
+                    className={`px-2 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap ${viewMode === "DELTA"
                         ? 'text-emerald-500 border-emerald-500 bg-white'
                         : 'text-gray-400 border-transparent hover:text-gray-600'
                         }`}
@@ -403,7 +403,7 @@ export function AnalysisPanel({
                 <button
                     onClick={handleProfileClick}
                     {...hover(handleProfileClick)}
-                    className={`px-3 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap ${viewMode === "PROFILE"
+                    className={`px-2 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap ${viewMode === "PROFILE"
                         ? 'text-[#92702A] border-[#D4AF37] bg-white'
                         : 'text-gray-400 border-transparent hover:text-gray-600'
                         }`}
@@ -415,7 +415,7 @@ export function AnalysisPanel({
                     <button
                         onClick={() => { setViewMode("BUSINESS"); setActiveQuarter("BUSINESS"); }}
                         {...hover(() => { setViewMode("BUSINESS"); setActiveQuarter("BUSINESS"); })}
-                        className={`px-3 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap ${viewMode === "BUSINESS"
+                        className={`px-2 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap ${viewMode === "BUSINESS"
                             ? 'text-[#4A7AAF] border-[#6B9FCC] bg-white'
                             : 'text-gray-400 border-transparent hover:text-gray-600'
                             }`}
@@ -429,7 +429,7 @@ export function AnalysisPanel({
                     <button
                         onClick={() => { setViewMode("NEWS"); setActiveQuarter("NEWS"); onNewsOpen?.(); }}
                         {...hover(() => { setViewMode("NEWS"); setActiveQuarter("NEWS"); onNewsOpen?.(); })}
-                        className={`px-3 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap flex items-center gap-1 ${viewMode === "NEWS"
+                        className={`px-2 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap flex items-center gap-1 ${viewMode === "NEWS"
                             ? 'text-[#4A7AAF] border-[#6B9FCC] bg-white'
                             : newsUnseen
                                 ? 'text-gray-700 border-transparent hover:text-[#4A7AAF]'
@@ -445,7 +445,7 @@ export function AnalysisPanel({
                 <button
                     onClick={handleNotesClick}
                     {...hover(handleNotesClick)}
-                    className={`px-3 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap flex items-center gap-1 ${viewMode === "NOTES"
+                    className={`px-2 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap flex items-center gap-1 ${viewMode === "NOTES"
                         ? 'text-[#4A7AAF] border-[#6B9FCC] bg-white'
                         : hasNotes
                             ? 'text-gray-700 border-transparent hover:text-[#4A7AAF]'
