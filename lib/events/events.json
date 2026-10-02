@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02T03:50:38.872Z",
+ "updated": "2026-10-02T19:55:54.827Z",
  "events": [
   {
    "company": "CEAT",
@@ -12,19 +12,19 @@
   {
    "company": "Tata Technologies",
    "sector": "Software",
-   "kind": "results",
-   "date": "2026-10-14",
-   "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_21749_WebXMLFile_20260922_162704307.xml"
-  },
-  {
-   "company": "Tata Technologies",
-   "sector": "Software",
    "kind": "call",
    "date": "2026-10-14",
    "time": "7:00 pm",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/TTLNSE_28092026145326_InvestorcallintimationQ2FY27_S.pdf"
+  },
+  {
+   "company": "Tata Technologies",
+   "sector": "Software",
+   "kind": "results",
+   "date": "2026-10-14",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_21749_WebXMLFile_20260922_162704307.xml"
   },
   {
    "company": "CEAT",
