@@ -314,7 +314,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
             >
                 {/* Company Info - Single Line */}
                 {/* Company Info - Fixed Width for Alignment */}
-                <div className="flex items-center gap-3 w-56 2xl:w-[290px] flex-shrink-0 border-r border-gray-100 pr-3 mr-3 2xl:pr-4 2xl:mr-4">
+                <div className="flex items-center gap-3 flex-1 min-w-56 border-r border-gray-100 pr-3 mr-3 2xl:pr-4 2xl:mr-4">
                     <div className="relative">
                         <div
                             className={`w-7 h-7 rounded-md ${effectiveTheme.bg} ${effectiveTheme.text} flex items-center justify-center text-[10px] font-semibold flex-shrink-0 transition-colors cursor-context-menu`}
@@ -436,7 +436,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                 </div>
 
                 {/* Data Stack (Valuation + Quarters) - Single Line Row */}
-                <div className="flex items-center gap-3 2xl:gap-4 flex-1 min-w-0">
+                <div className="flex items-center gap-3 2xl:gap-4 flex-shrink-0">
                     {/* Valuation Strip — a fixed-width column per metric so every
                         row lines up vertically. Cells render empty rather than
                         collapsing, otherwise a company missing (say) P/B would pull
@@ -608,8 +608,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                     </div>
 
                     {/* Quarter Tabs */}
-                    {quarters.length > 0 && (
-                        <div className="flex items-center gap-1 pl-3 2xl:gap-1.5 2xl:pl-4 border-l border-gray-200">
+                    {/* Fixed width (room for two quarters) so the name column takes all the spare space and the figures line up on the right */}
+                    {(
+                        <div className="flex items-center gap-1 pl-3 2xl:gap-1.5 2xl:pl-4 border-l border-gray-200 w-[150px] 2xl:w-[164px] flex-shrink-0">
                             {quarters.map((q, idx) => (
                                 <div
                                     key={q.quarter}
