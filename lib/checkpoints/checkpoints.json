@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29",
+ "updated": "2026-10-02",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -587,7 +587,7 @@
    "sector": "Aerospace defence",
    "text": "Both phases of the Akkodis sale proceeds actually received on the new dates",
    "due": "Q2 FY27",
-   "ifMissed": "Stays avoid",
+   "ifMissed": "Stays pass",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -22506,6 +22506,70 @@
    "resolvedBy": "review",
    "outcome": "Deal closed",
    "correction": true
+  },
+  {
+   "id": "axiscades-technologies-q2fy27-4",
+   "company": "AXISCADES Technologies",
+   "sector": "Aerospace defence",
+   "text": "No new one-off provisions: reported and \"normalised\" operating profit within about ₹3cr of each other (the Q1 gap was ₹13.1cr, of which ₹9.62cr was a provision on an aged defence receivable)",
+   "due": "Q2 FY27",
+   "ifMet": "The Q1 adjustments were one-offs",
+   "ifMissed": "Adjustments are recurring: judge it on reported profit only",
+   "createdOn": "2026-10-02",
+   "status": "pending"
+  },
+  {
+   "id": "axiscades-technologies-q2fy27-5",
+   "company": "AXISCADES Technologies",
+   "sector": "Aerospace defence",
+   "text": "Figures on the call and in the presentation agree (in Q1 the CFO said XiDA margin 33%, defence operating profit ₹13cr and phase 2 proceeds about ₹525cr; the slides said 29.7%, ₹11.2cr and ₹718cr)",
+   "due": "Q2 FY27",
+   "ifMissed": "Disclosure quality stays a concern in a year of carve-outs",
+   "createdOn": "2026-10-02",
+   "status": "pending"
+  },
+  {
+   "id": "axiscades-technologies-q3fy27-1",
+   "company": "AXISCADES Technologies",
+   "sector": "Aerospace defence",
+   "text": "XiDA: growth of the original business shown separately from the business transferred in (which earned a 46.2% margin in Q1), and the two large new customers placing repeat orders",
+   "due": "Q3 FY27",
+   "ifMet": "XiDA is a repeatable business, not only an acquired one",
+   "ifMissed": "XiDA growth is bought, not earned",
+   "createdOn": "2026-10-02",
+   "status": "pending"
+  },
+  {
+   "id": "axiscades-technologies-q4fy27-1",
+   "company": "AXISCADES Technologies",
+   "sector": "Aerospace defence",
+   "text": "Aerospace manufacturing at a yearly run rate above ₹375cr of revenue and ₹84cr of operating profit, as management targets (₹6.1cr of revenue in Q1; includes Cloud Wave)",
+   "due": "Q4 FY27",
+   "ifMet": "The ₹74cr of aerospace profit sold has been replaced",
+   "ifMissed": "The sold profit has not been replaced; the plan depends on further deals",
+   "createdOn": "2026-10-02",
+   "status": "pending"
+  },
+  {
+   "id": "axiscades-technologies-q4fy27-2",
+   "company": "AXISCADES Technologies",
+   "sector": "Aerospace defence",
+   "text": "The kept business covers its interest and depreciation from reported operating profit, with no adjustments (Q1: ₹8.7cr against ₹8.9cr of interest and ₹8.8cr of depreciation)",
+   "due": "Q4 FY27",
+   "ifMet": "The rebuild pays for itself: grounds to move from pass to wait",
+   "ifMissed": "The basic test of the plan has failed",
+   "createdOn": "2026-10-02",
+   "status": "pending"
+  },
+  {
+   "id": "axiscades-technologies-q4fy27-3",
+   "company": "AXISCADES Technologies",
+   "sector": "Aerospace defence",
+   "text": "Defence orders turning into cash: the aged Ministry of Defence receivable recovered or not provided for again, and defence receivables not growing faster than defence revenue (₹4,557cr of forecast orders rests on this)",
+   "due": "Q4 FY27",
+   "ifMissed": "Order visibility is not becoming cash",
+   "createdOn": "2026-10-02",
+   "status": "pending"
   },
   {
    "id": "sansera-engineering-ads-hangar-m1",
