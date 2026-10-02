@@ -19,6 +19,8 @@ export function AnalysisPanel({
     activeQuarterIndex = 0,
     onQuarterChange,
     business,
+    annualReport,
+    annualReportLabel = 'AR',
     news,
     newsUnseen = false,
     onNewsOpen,
@@ -35,6 +37,9 @@ export function AnalysisPanel({
     onQuarterChange?: (idx: number) => void,
     /** The company's "what it does" card from its sector note; adds a BUSINESS tab when given. */
     business?: React.ReactNode,
+    /** What the latest annual report showed; adds an AR tab when given. */
+    annualReport?: React.ReactNode,
+    annualReportLabel?: string,
     /** The NEWS tab: sharp price moves and market or policy events for this company. */
     news?: React.ReactNode,
     /** Shows the dot on the NEWS tab until it is opened. */
@@ -55,7 +60,7 @@ export function AnalysisPanel({
     );
     // Tabs also open when the pointer rests on them.
     const hover = useHoverOpen();
-    const [viewMode, setViewMode] = useState<"ANALYSIS" | "PROFILE" | "DELTA" | "NOTES" | "BUSINESS" | "NEWS">("ANALYSIS");
+    const [viewMode, setViewMode] = useState<"ANALYSIS" | "PROFILE" | "DELTA" | "NOTES" | "BUSINESS" | "NEWS" | "AR">("ANALYSIS");
 
     // Drives the brighter NOTES tab, so the tab itself says whether
     // anything has been written for this company.
@@ -67,7 +72,7 @@ export function AnalysisPanel({
             const match = safeHistory[activeQuarterIndex];
             setActiveQuarter(match.quarter);
             setActiveData(match.analysis);
-            if (viewMode === "PROFILE" || viewMode === "DELTA" || viewMode === "NOTES" || viewMode === "BUSINESS" || viewMode === "NEWS") {
+            if (viewMode === "PROFILE" || viewMode === "DELTA" || viewMode === "NOTES" || viewMode === "BUSINESS" || viewMode === "NEWS" || viewMode === "AR") {
                 // If we were on Profile or Delta, and a quarter is clicked, switch back to Analysis
                 // Actually, stay in current mode but update the underlying data
             } else {
@@ -108,6 +113,10 @@ export function AnalysisPanel({
     };
 
     const renderContent = () => {
+        if (viewMode === "AR" && annualReport) {
+            return <div className="bg-white min-h-full">{annualReport}</div>;
+        }
+
         if (viewMode === "NEWS" && news) {
             return <div className="bg-white min-h-full">{news}</div>;
         }
@@ -427,6 +436,20 @@ export function AnalysisPanel({
                         title="What the company does, from its sector note"
                     >
                         BUSINESS
+                    </button>
+                )}
+
+                {annualReport && (
+                    <button
+                        onClick={() => { setViewMode("AR"); setActiveQuarter("AR"); }}
+                        {...hover(() => { setViewMode("AR"); setActiveQuarter("AR"); })}
+                        className={`px-2 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap ${viewMode === "AR"
+                            ? 'text-[#4A7AAF] border-[#6B9FCC] bg-white'
+                            : 'text-gray-400 border-transparent hover:text-gray-600'
+                            }`}
+                        title="What the latest annual report showed: auditor, related parties, contingent liabilities, outlook"
+                    >
+                        {annualReportLabel}
                     </button>
                 )}
 

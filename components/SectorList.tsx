@@ -79,6 +79,8 @@ export interface EnrichedCompany {
     // Upcoming result and earnings-call dates (lib/events), soonest first, for the marker on the row.
     events?: import('@/lib/events/types').EventChip[];
     news?: import('@/lib/news/types').NewsItem[];
+    // What the latest annual report showed (lib/annual-reports); with the detail fetch, for the AR tab.
+    annualReport?: import('@/lib/annual-reports/types').AnnualReport;
     checkpoints?: import('@/lib/checkpoints').Checkpoint[];
     projects?: import('@/lib/projects/types').Project[];
     capacity?: import('@/lib/projects/types').Capacity;
