@@ -14,7 +14,7 @@ export function TranscriptStats({ stats }: { stats: { name: string; count: numbe
                         <FileText className="w-3.5 h-3.5" />
                     </div>
                     <div className="flex flex-col leading-none">
-                        <span className="text-[10px] text-gray-400 font-semibold uppercase">{s.name}</span>
+                        <span className="text-[10px] text-gray-400 font-semibold uppercase whitespace-nowrap">{s.name}</span>
                         <span className="text-sm text-gray-800 font-bold">{s.count}</span>
                     </div>
                 </div>

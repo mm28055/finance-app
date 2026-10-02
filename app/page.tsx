@@ -25,18 +25,21 @@ export default async function Home() {
         </div>
         <div className="flex items-center gap-4">
           <SessionTodos todos={todos} />
-          {[
-            { href: '/filings', label: 'Filings', Icon: ScrollText },
-            { href: '/scorecard', label: 'Scorecard', Icon: Target },
-          ].map(({ href, label, Icon }) => (
-            <a key={href} href={href} className="flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg border border-gray-200 shadow-sm text-xs font-semibold text-gray-700 hover:border-[#6B9FCC] hover:text-[#4A7AAF] transition-colors">
-              <span className="w-6 h-6 rounded-md bg-[#F0F7FF] flex items-center justify-center text-[#6B9FCC]">
-                <Icon className="w-3.5 h-3.5" />
-              </span>
-              {label}
-            </a>
-          ))}
-          <TranscriptStats stats={stats} />
+          {/* Filings and Scorecard stacked, together as tall as one transcript card */}
+          <div className="flex items-stretch gap-3">
+            <div className="flex flex-col gap-1">
+              {[
+                { href: '/filings', label: 'Filings', Icon: ScrollText },
+                { href: '/scorecard', label: 'Scorecard', Icon: Target },
+              ].map(({ href, label, Icon }) => (
+                <a key={href} href={href} className="flex-1 flex items-center gap-1.5 bg-white px-2 rounded-md border border-gray-200 shadow-sm text-[10px] leading-none font-semibold text-gray-600 hover:border-[#6B9FCC] hover:text-[#4A7AAF] transition-colors">
+                  <Icon className="w-3 h-3 text-[#6B9FCC]" />
+                  {label}
+                </a>
+              ))}
+            </div>
+            <TranscriptStats stats={stats} />
+          </div>
         </div>
       </header>
 
