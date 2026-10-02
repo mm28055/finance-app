@@ -307,6 +307,57 @@ export const financeCharts: Record<string, ProfileCharts> = {
             ],
             "note": "Filed profit and loss (Screener, standalone), FY26. Income = interest earned plus other income (fees, treasury). Costs include provisions for bad loans."
         }
+    },
+    "SG Finserve": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "26.6x"
+            },
+            {
+                "label": "P/B",
+                "value": "2.8x"
+            },
+            {
+                "label": "Return on equity",
+                "value": "10%",
+                "note": "FY26: net profit ÷ average net worth; 14% annualised in Q1 FY27 (company)"
+            },
+            {
+                "label": "Gross bad loans",
+                "value": "0%",
+                "note": "Q1 FY27, company call"
+            },
+            {
+                "label": "Assets ÷ net worth",
+                "value": "2.9x",
+                "note": "Mar 2026"
+            }
+        ],
+        "statsAsOf": "2 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "base": "income",
+            "parts": [
+                {
+                    "label": "Interest paid to depositors and lenders",
+                    "share": 40
+                },
+                {
+                    "label": "Staff, branches, other costs and bad-loan provisions",
+                    "share": 9
+                },
+                {
+                    "label": "Tax",
+                    "share": 13
+                },
+                {
+                    "label": "Net profit",
+                    "share": 38
+                }
+            ],
+            "note": "Filed profit and loss (Screener, standalone), FY26. Income = interest earned plus other income (fees, treasury). Costs include provisions for bad loans."
+        }
     }
 };
 
@@ -354,5 +405,12 @@ export const financeValuationInputs: Record<string, ValuationInput> = {
         "mcapAtWriting": 683,
         "peAtWriting": 14,
         "bookValue": 410
+    },
+    "SG Finserve": {
+        "netDebt": null,
+        "ttmEbitda": null,
+        "mcapAtWriting": 4164,
+        "peAtWriting": 26.6,
+        "bookValue": 1460
     }
 };
