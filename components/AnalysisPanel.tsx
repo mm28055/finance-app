@@ -24,7 +24,8 @@ export function AnalysisPanel({
     news,
     newsUnseen = false,
     onNewsOpen,
-    openNews = 0
+    openNews = 0,
+    tabsEnd
 }: {
     analysis?: AnalysisResult,
     quarterName?: string,
@@ -46,7 +47,9 @@ export function AnalysisPanel({
     newsUnseen?: boolean,
     onNewsOpen?: () => void,
     /** Goes up by one each time the row's "news" marker is clicked: show the NEWS tab. */
-    openNews?: number
+    openNews?: number,
+    /** Shown at the right-hand end of the tab line (the owner's tags). */
+    tabsEnd?: React.ReactNode
 }) {
     const safeHistory = history && history.length > 0
         ? history
@@ -484,6 +487,7 @@ export function AnalysisPanel({
                     NOTES
                     {hasNotes && <span className="w-1.5 h-1.5 rounded-full bg-[#6B9FCC]" />}
                 </button>
+                {tabsEnd && <div className="ml-auto pl-4 pr-3 self-center flex-shrink-0">{tabsEnd}</div>}
             </div>
 
             {/* Content */}

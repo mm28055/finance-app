@@ -682,9 +682,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
             {/* Expanded Content */}
             {
                 expanded && (
-                    <div className="relative bg-[#F8FAFC] p-4 pt-5 border-t border-gray-100 flex flex-col gap-4 animate-in slide-in-from-top-1 duration-150">
-                        {/* The owner's tags sit in the top margin of the opened panel, right-aligned: no line of their own, and not in the row */}
-                        <div className="absolute top-0.5 right-4"><CompanyTags companyId={company.id} /></div>
+                    <div className="bg-[#F8FAFC] p-4 border-t border-gray-100 flex flex-col gap-4 animate-in slide-in-from-top-1 duration-150">
                         {detailLoading && !detail ? (
                             // Skeleton while the first fetch is in flight.
                             <>
@@ -747,6 +745,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                             annualReport={effective.annualReport ? <AnnualReportCard report={effective.annualReport} /> : undefined}
                                             annualReportLabel={effective.annualReport ? `AR ${effective.annualReport.year === 'CY25' ? 'CY25' : '26'}` : undefined}
                                             news={<CompanyNews news={effective.news || []} />}
+                                            tabsEnd={<CompanyTags companyId={company.id} />}
                                             newsUnseen={newsUnseen}
                                             onNewsOpen={markNewsSeen}
                                             openNews={openNews}
