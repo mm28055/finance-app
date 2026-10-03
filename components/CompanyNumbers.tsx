@@ -264,7 +264,7 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
                             {tab === 'ratios' && fin.wcSummary && fin.wcSummary.length > 0 && (
                                 <div className="mt-3 rounded-lg bg-[#F8FAFC] border border-gray-100 p-2.5">
                                     <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-1">What the cash says</p>
-                                    <ul className="flex flex-col gap-1">
+                                    <ul className="flex flex-col gap-1 list-disc pl-4 marker:text-gray-400">
                                         {fin.wcSummary.map((line, k) => <li key={k} className="text-[12px] text-gray-700 leading-snug">{line}</li>)}
                                     </ul>
                                 </div>
