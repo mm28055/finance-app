@@ -93,6 +93,13 @@ const ALWAYS_OPEN = new Set(['Expenses', 'Borrowings', 'Other Assets']);
 function DataTable({ table, companyId, section, view }: { table: Table; companyId: string; section: string; view: string }) {
     const negative = (v: string | null) => !!v && /^-/.test(v.trim());
     // Figures are shown to one decimal at most ("54.87%" → "54.9%", "30.57" → "30.6"); whole numbers stay as they are.
+    // On hover: the figure as Screener files it, to two decimals at most (Screener gives some
+    // companies' percentages only as whole numbers, so those show no decimals even here).
+    const exact = (v: string | null) => {
+        if (!v) return undefined;
+        const m = v.trim().match(/^(-?[\d,]+)\.(\d+)(%?)$/);
+        return m ? `${m[1]}.${m[2].slice(0, 2).padEnd(2, '0')}${m[3]}` : v;
+    };
     const oneDp = (v: string) => {
         const m = v.trim().match(/^(-?)([\d,]+)\.(\d{2,})(%?)$/);
         if (!m) return v;
@@ -143,7 +150,7 @@ function DataTable({ table, companyId, section, view }: { table: Table; companyI
                                 {r.parts && !partsClosed[r.label] && r.parts.map(p => (
                                     <tr key={r.label + p.label} className="text-[10px] text-gray-500 bg-[#F8FAFC]">
                                         <td title={HINTS[p.label]} className={`py-0.5 pr-2 pl-4 max-md:pl-2 max-md:pr-1 whitespace-nowrap max-md:whitespace-normal max-md:leading-tight sticky left-0 bg-[#F8FAFC] ${HINTS[p.label] ? 'cursor-help' : ''}`}>{p.label}</td>
-                                        {p.values.map((v, i) => <td key={i} className={`py-0.5 px-1.5 max-md:px-0.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''}`}>{v === null ? '–' : oneDp(v)}</td>)}
+                                        {p.values.map((v, i) => <td key={i} title={exact(v)} className={`py-0.5 px-1.5 max-md:px-0.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''}`}>{v === null ? '–' : oneDp(v)}</td>)}
                                     </tr>
                                 ))}
                                 <tr className={`border-t border-gray-50 ${key ? 'font-semibold text-gray-800' : 'text-gray-600'}`}>
@@ -162,7 +169,7 @@ function DataTable({ table, companyId, section, view }: { table: Table; companyI
                                             </button>
                                         )}
                                     </td>
-                                    {r.values.map((v, i) => <td key={i} className={cellClass(v, i)}>{v === null ? '–' : oneDp(v)}</td>)}
+                                    {r.values.map((v, i) => <td key={i} title={exact(v)} className={cellClass(v, i)}>{v === null ? '–' : oneDp(v)}</td>)}
                                 </tr>
                                 {sub === 'loading' && (
                                     <tr><td colSpan={table.columns.length + 1} className="py-1 pl-4 text-[10px] text-gray-400">Loading…</td></tr>
@@ -175,7 +182,7 @@ function DataTable({ table, companyId, section, view }: { table: Table; companyI
                                         <td className="py-0.5 pr-2 pl-4 max-md:pl-2 max-md:pr-1 whitespace-nowrap max-md:whitespace-normal max-md:leading-tight sticky left-0 bg-[#F8FAFC]">{item}</td>
                                         {table.raw.map((c, i) => {
                                             const v = c ? (byCol[c] ?? null) : null;
-                                            return <td key={i} className={`py-0.5 px-1.5 max-md:px-0.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''}`}>{v === null || v === '' ? '–' : oneDp(v)}</td>;
+                                            return <td key={i} title={exact(v)} className={`py-0.5 px-1.5 max-md:px-0.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''}`}>{v === null || v === '' ? '–' : oneDp(v)}</td>;
                                         })}
                                     </tr>
                                 ))}
