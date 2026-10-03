@@ -62,7 +62,7 @@ function Choice<T extends number>({ label, value, options, format, onChange }: {
 
 export function PriceAssumes({ companyId }: { companyId: string }) {
     const data = usePeers(companyId);
-    const [want, setWant] = React.useState(0.12);
+    const [want, setWant] = React.useState(0.15);
     const [exitPe, setExitPe] = React.useState(20);
     if (!data || data === 'error') return <Loading data={data} />;
     const c = data.self;
@@ -172,7 +172,7 @@ export function PeerTable({ companyId }: { companyId: string }) {
     if (!data || data === 'error') return <Loading data={data} />;
     const cos = [data.self, ...data.peers];
     if (cos.length < 2) return <div className="text-[11px] text-gray-400 py-4 text-center">No listed rivals in the dashboard for this company.</div>;
-    const assumes = (c: CompanyFigures) => (c.pe ? impliedGrowth(c.pe, 0.12, 20) * 100 : null);
+    const assumes = (c: CompanyFigures) => (c.pe ? impliedGrowth(c.pe, 0.15, 20) * 100 : null);
 
     const rows: { heading?: string; label: string; hint: string; get: (c: CompanyFigures) => number | null; fmt: (v: number | null) => string; better?: Better }[] = [
         { heading: 'Size and growth', label: 'Market cap (₹cr)', hint: 'Market value today', get: c => c.marketCap, fmt: v => (v === null ? '–' : Math.round(v).toLocaleString('en-IN')) },
@@ -188,7 +188,7 @@ export function PeerTable({ companyId }: { companyId: string }) {
         { label: 'EV/EBITDA', hint: 'Market value plus debt less cash, ÷ last 12 months’ operating profit (not shown for lenders)', get: c => c.evEbitda, fmt: times, better: 'low' },
         { label: 'P/B', hint: 'Price ÷ book value (shareholders’ money), as on the company’s row', get: c => c.pb, fmt: times, better: 'low' },
         { label: 'P/Sales', hint: 'Market value ÷ last 12 months’ sales, as on the company’s row', get: c => c.ps, fmt: times, better: 'low' },
-        { label: 'Price assumes', hint: 'Yearly profit growth needed for 10 years to earn 12% a year, if the P/E ends at 20 (the "Price assumes" tab lets you change both)', get: assumes, fmt: pct, better: 'low' },
+        { label: 'Price assumes', hint: 'Yearly profit growth needed for 10 years to earn 15% a year, if the P/E ends at 20 (the "Price assumes" tab lets you change both)', get: assumes, fmt: pct, better: 'low' },
         { heading: 'The notes', label: 'Growth estimate', hint: 'The sector note’s base case for yearly profit growth, 3–5 years', get: c => c.noteGrowth, fmt: pct, better: 'high' },
     ];
     const best = (r: typeof rows[number]) => {
