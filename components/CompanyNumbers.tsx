@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import { ValuationHistory } from './ValuationHistory';
+import { PriceAssumes, PeerTable } from './PeerTabs';
 import { useHoverOpen } from '@/lib/hover-open';
 
 // One card on the opened company row: price & valuation history, and five years of
@@ -10,20 +11,24 @@ import { useHoverOpen } from '@/lib/hover-open';
 // Bump when the shape of /financials changes, so browsers never reuse an older copy.
 const DATA_VERSION = 13;
 
-type Tab = 'history' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios' | 'ratios-1';
+type Tab = 'history' | 'assumes' | 'peers' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios' | 'ratios-1';
 type Row = { label: string; src: string; expandable: boolean; values: (string | null)[]; /** The figures a ratio is made from, shown above it (open by default, can be closed). */ parts?: { label: string; values: (string | null)[] }[]; /** A section heading shown above this row. */ heading?: string };
 type Table = { columns: string[]; raw: (string | null)[]; rows: Row[] };
 type Financials = { view: 'consolidated' | 'standalone'; empty: boolean; tables: Record<string, Table>; growth: Record<string, Record<string, string>> };
 
-const TABS: { key: Tab; label: string }[] = [
-    { key: 'history', label: 'Price & valuation' },
-    { key: 'quarters', label: 'Quarterly' },
+const TABS: { key: Tab; label: string; title?: string }[] = [
+    { key: 'history', label: 'Valuation', title: 'Price & valuation history' },
+    { key: 'assumes', label: 'Price assumes' },
+    { key: 'peers', label: 'Peers' },
+    { key: 'quarters', label: 'Qtrly', title: 'Quarterly results' },
     { key: 'profit-loss', label: 'P&L' },
-    { key: 'balance-sheet', label: 'Balance sheet' },
-    { key: 'cash-flow', label: 'Cash flow' },
+    { key: 'balance-sheet', label: 'BS', title: 'Balance sheet' },
+    { key: 'cash-flow', label: 'CF', title: 'Cash flow' },
     { key: 'ratios', label: 'WC' },
     { key: 'ratios-1', label: 'Ratio' },
 ];
+// Tabs that load their own figures rather than the /financials tables.
+const OWN_DATA = new Set<Tab>(['history', 'assumes', 'peers']);
 // Rows drawn in bold: the ones a reader looks for first.
 const KEY_ROWS = new Set(['Sales', 'Revenue', 'Operating profit', 'Financing profit', 'Net profit', 'Total', 'Free cash', 'ROCE', 'Operating cash']);
 // What each row means, shown when the pointer rests on its label (no footnotes under the tables).
@@ -184,7 +189,7 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
     const current = data[key];
 
     React.useEffect(() => {
-        if (tab === 'history' || data[key] !== undefined) return;
+        if (OWN_DATA.has(tab) || data[key] !== undefined) return;
         let alive = true;
         fetch(`/api/companies/${companyId}/financials?v=${DATA_VERSION}${view ? `&view=${view}` : ''}`)
             .then(r => (r.ok ? r.json() : Promise.reject()))
@@ -194,18 +199,18 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
     }, [companyId, tab, view, key, data]);
 
     const fin = current && current !== 'error' ? current : null;
-    const table = fin && tab !== 'history' ? fin.tables[tab] : null;
+    const table = fin && !OWN_DATA.has(tab) ? fin.tables[tab] : null;
 
     return (
         <div className="bg-white border border-gray-200 rounded-lg p-3 max-md:p-2">
             <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                <div className="flex flex-wrap gap-1">
+                <div className="flex flex-wrap gap-0.5">
                     {TABS.map(t => (
-                        <button key={t.key} onClick={() => setTab(t.key)} {...hover(() => setTab(t.key))}
-                            className={`px-2 py-0.5 text-[10px] font-semibold rounded ${tab === t.key ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-800 hover:bg-gray-100'}`}>{t.label}</button>
+                        <button key={t.key} title={t.title} onClick={() => setTab(t.key)} {...hover(() => setTab(t.key))}
+                            className={`px-1.5 py-0.5 text-[10px] font-semibold rounded whitespace-nowrap ${tab === t.key ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-800 hover:bg-gray-100'}`}>{t.label}</button>
                     ))}
                 </div>
-                {tab !== 'history' && fin && (
+                {!OWN_DATA.has(tab) && fin && (
                     <div className="flex gap-0.5 bg-gray-100 p-0.5 rounded-md text-[10px] font-medium">
                         {(['consolidated', 'standalone'] as const).map(v => (
                             <button key={v} onClick={() => setView(v)}
@@ -216,8 +221,10 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
             </div>
 
             {tab === 'history' && <ValuationHistory companyId={companyId} embedded />}
+            {tab === 'assumes' && <PriceAssumes companyId={companyId} />}
+            {tab === 'peers' && <PeerTable companyId={companyId} />}
 
-            {tab !== 'history' && (
+            {!OWN_DATA.has(tab) && (
                 <>
                     {current === undefined && <div className="h-40 bg-gray-50 rounded animate-pulse" />}
                     {current === 'error' && <div className="h-16 flex items-center justify-center text-[11px] text-gray-400">Financials unavailable right now.</div>}
