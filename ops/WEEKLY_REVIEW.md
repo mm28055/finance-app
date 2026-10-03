@@ -140,6 +140,12 @@ place (say so in `reviewed.text`). The calendar shows the review under the resul
 Then mark the entry done: add `"handled": "<YYYY-MM-DD>: <one line: what you found and did>"`. Never delete entries.
 
 ## 2. House rules (all mandatory)
+- Figures read from presentation slides (market shares, share of a customer's business, segment and product
+  splits): PDF text comes out in a different order from the slide, so labels and numbers get mismatched (Steel
+  Strips' card once said Kia 100% when the slide says MG 100%, Kia 30%). Pair each number with its label by its
+  position on the page, or confirm it in the call transcript, annual report or a rating report, before writing it.
+  When in doubt, leave the figure out and say it was not confirmed. Market shares and customer shares go in the
+  card's `shares` field (always visible), not only in prose.
 - Calls: own / follow / wait / pass / avoid. "own" only when the live price check is Fits. Rank own → follow → wait →
   pass → avoid. Stance must match: COMPOUNDER only for own, AVOID only for avoid.
 - Price check: growth needed = (P/E × 0.1726)^0.1 − 1 (P/E from companies.json); Fits if my growth − needed ≥ −2,
