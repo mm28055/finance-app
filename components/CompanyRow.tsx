@@ -683,7 +683,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
             {/* Expanded Content */}
             {
                 expanded && (
-                    <div className="bg-[#F8FAFC] p-4 border-t border-gray-100 flex flex-col gap-4 animate-in slide-in-from-top-1 duration-150">
+                    <div className="bg-[#F8FAFC] p-4 max-md:p-2 border-t border-gray-100 flex flex-col gap-4 animate-in slide-in-from-top-1 duration-150">
                         {detailLoading && !detail ? (
                             // Skeleton while the first fetch is in flight.
                             <>

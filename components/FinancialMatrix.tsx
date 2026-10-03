@@ -95,12 +95,12 @@ export function FinancialMatrix({ financials, quarterName }: { financials?: Comp
                 <table className="w-full text-right text-xs">
                     <thead>
                         <tr className="text-gray-400 border-b border-gray-100 sticky top-0 bg-white shadow-sm z-10">
-                            <th className="text-left px-4 py-2 font-medium text-[10px] bg-gray-50/50">Metric</th>
-                            <th className="px-3 py-2 font-medium text-[10px] bg-gray-50/50">Current Q</th>
-                            <th className="px-3 py-2 font-medium text-[10px] bg-gray-50/50">YTD</th>
-                            <th className="px-3 py-2 font-medium text-[10px] bg-gray-50/50">Δ QoQ</th>
-                            <th className="px-3 py-2 font-medium text-[10px] bg-gray-50/50">Δ YoY</th>
-                            <th className="px-3 py-2 font-medium text-[10px] bg-gray-50/50">Δ YTD</th>
+                            <th className="text-left px-4 max-md:px-2 py-2 font-medium text-[10px] bg-gray-50/50">Metric</th>
+                            <th className="px-3 max-md:px-1 py-2 font-medium text-[10px] bg-gray-50/50">Current Q</th>
+                            <th className="px-3 max-md:px-1 py-2 font-medium text-[10px] bg-gray-50/50">YTD</th>
+                            <th className="px-3 max-md:px-1 py-2 font-medium text-[10px] bg-gray-50/50">Δ QoQ</th>
+                            <th className="px-3 max-md:px-1 py-2 font-medium text-[10px] bg-gray-50/50">Δ YoY</th>
+                            <th className="px-3 max-md:px-1 py-2 font-medium text-[10px] bg-gray-50/50">Δ YTD</th>
                         </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-50">
@@ -111,12 +111,12 @@ export function FinancialMatrix({ financials, quarterName }: { financials?: Comp
                                 // We can put it in Current Q and leave others blank.
                                 return (
                                     <tr key={m.name} className="hover:bg-[#F8FAFC]">
-                                        <td className="text-left px-4 py-2 font-medium text-gray-700 text-[11px]">{m.name}</td>
-                                        <td className="px-3 py-2 text-gray-800 font-mono text-[11px]">{m.val ? fmtVal(m.val, false) : '-'}</td>
-                                        <td className="px-3 py-2 text-gray-300">-</td>
-                                        <td className="px-3 py-2 text-gray-300">-</td>
-                                        <td className="px-3 py-2 text-gray-300">-</td>
-                                        <td className="px-3 py-2 text-gray-300">-</td>
+                                        <td className="text-left px-4 max-md:px-2 py-2 font-medium text-gray-700 text-[11px] max-md:text-[10px]">{m.name}</td>
+                                        <td className="px-3 max-md:px-1 py-2 text-gray-800 font-mono text-[11px] max-md:text-[10px]">{m.val ? fmtVal(m.val, false) : '-'}</td>
+                                        <td className="px-3 max-md:px-1 py-2 text-gray-300">-</td>
+                                        <td className="px-3 max-md:px-1 py-2 text-gray-300">-</td>
+                                        <td className="px-3 max-md:px-1 py-2 text-gray-300">-</td>
+                                        <td className="px-3 max-md:px-1 py-2 text-gray-300">-</td>
                                     </tr>
                                 )
                             }
@@ -126,12 +126,12 @@ export function FinancialMatrix({ financials, quarterName }: { financials?: Comp
 
                             return (
                                 <tr key={m.name} className="hover:bg-[#F8FAFC]">
-                                    <td className="text-left px-4 py-2 font-medium text-gray-700 text-[11px]">{m.name}</td>
-                                    <td className="px-3 py-2 text-gray-800 font-mono text-[11px]">{fmtVal(d.currentQ, m.isPercent)}</td>
-                                    <td className="px-3 py-2 text-gray-500 font-mono text-[11px]">{fmtVal(d.ytd, m.isPercent)}</td>
-                                    <td className="px-3 py-2 text-[11px]"><Percentage val={d.deltaQoQ} /></td>
-                                    <td className="px-3 py-2 text-[11px]"><Percentage val={d.deltaYoY} /></td>
-                                    <td className="px-3 py-2 text-[11px]"><Percentage val={d.deltaYTD} /></td>
+                                    <td className="text-left px-4 max-md:px-2 py-2 font-medium text-gray-700 text-[11px] max-md:text-[10px]">{m.name}</td>
+                                    <td className="px-3 max-md:px-1 py-2 text-gray-800 font-mono text-[11px] max-md:text-[10px]">{fmtVal(d.currentQ, m.isPercent)}</td>
+                                    <td className="px-3 max-md:px-1 py-2 text-gray-500 font-mono text-[11px] max-md:text-[10px]">{fmtVal(d.ytd, m.isPercent)}</td>
+                                    <td className="px-3 max-md:px-1 py-2 text-[11px] max-md:text-[10px]"><Percentage val={d.deltaQoQ} /></td>
+                                    <td className="px-3 max-md:px-1 py-2 text-[11px] max-md:text-[10px]"><Percentage val={d.deltaYoY} /></td>
+                                    <td className="px-3 max-md:px-1 py-2 text-[11px] max-md:text-[10px]"><Percentage val={d.deltaYTD} /></td>
                                 </tr>
                             );
                         })}

@@ -107,14 +107,14 @@ function DataTable({ table, companyId, section, view }: { table: Table; companyI
     // A ratio's own figures (e.g. operating cash flow and operating profit above cash conversion): open until closed.
     const [partsClosed, setPartsClosed] = React.useState<Record<string, boolean>>({});
     const cellClass = (v: string | null, i: number) =>
-        `py-1 px-1.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''} ${table.columns[i] === 'TTM' || table.columns[i] === 'YoY' ? 'bg-gray-50' : ''}`;
+        `py-1 px-1.5 max-md:px-0.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''} ${table.columns[i] === 'TTM' || table.columns[i] === 'YoY' ? 'bg-gray-50' : ''}`;
     return (
         <div className="overflow-x-auto">
-            <table className="w-full text-[11px] tabular-nums">
+            <table className="w-full text-[11px] max-md:text-[10px] tabular-nums">
                 <thead>
                     <tr className="text-gray-400">
                         <th className="text-left font-medium py-1 pr-2 sticky left-0 bg-white" />
-                        {table.columns.map(c => <th key={c} title={COLUMN_HINTS[c]} className={`text-right font-medium py-1 px-1.5 whitespace-nowrap ${COLUMN_HINTS[c] ? 'cursor-help' : ''}`}>{c}</th>)}
+                        {table.columns.map(c => <th key={c} title={COLUMN_HINTS[c]} className={`text-right font-medium py-1 px-1.5 max-md:px-0.5 whitespace-nowrap max-md:whitespace-normal max-md:leading-tight ${COLUMN_HINTS[c] ? 'cursor-help' : ''}`}>{c}</th>)}
                     </tr>
                 </thead>
                 <tbody>
@@ -128,12 +128,12 @@ function DataTable({ table, companyId, section, view }: { table: Table; companyI
                                 )}
                                 {r.parts && !partsClosed[r.label] && r.parts.map(p => (
                                     <tr key={r.label + p.label} className="text-[10px] text-gray-500 bg-[#F8FAFC]">
-                                        <td title={HINTS[p.label]} className={`py-0.5 pr-2 pl-4 whitespace-nowrap sticky left-0 bg-[#F8FAFC] ${HINTS[p.label] ? 'cursor-help' : ''}`}>{p.label}</td>
-                                        {p.values.map((v, i) => <td key={i} className={`py-0.5 px-1.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''}`}>{v ?? '–'}</td>)}
+                                        <td title={HINTS[p.label]} className={`py-0.5 pr-2 pl-4 max-md:pl-2 max-md:pr-1 whitespace-nowrap max-md:whitespace-normal max-md:leading-tight sticky left-0 bg-[#F8FAFC] ${HINTS[p.label] ? 'cursor-help' : ''}`}>{p.label}</td>
+                                        {p.values.map((v, i) => <td key={i} className={`py-0.5 px-1.5 max-md:px-0.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''}`}>{v ?? '–'}</td>)}
                                     </tr>
                                 ))}
                                 <tr className={`border-t border-gray-50 ${key ? 'font-semibold text-gray-800' : 'text-gray-600'}`}>
-                                    <td className="py-1 pr-2 whitespace-nowrap sticky left-0 bg-white">
+                                    <td className="py-1 pr-2 max-md:pr-1 whitespace-nowrap max-md:whitespace-normal max-md:leading-tight sticky left-0 bg-white">
                                         <span title={HINTS[r.label]} className={HINTS[r.label] ? 'cursor-help' : undefined}>{r.label}</span>
                                         {r.parts && (
                                             <button onClick={() => setPartsClosed(c => ({ ...c, [r.label]: !c[r.label] }))} title={partsClosed[r.label] ? 'Show the figures behind it' : 'Hide the figures behind it'}
@@ -158,10 +158,10 @@ function DataTable({ table, companyId, section, view }: { table: Table; companyI
                                 )}
                                 {sub && sub !== 'loading' && sub !== 'error' && Object.entries(sub).map(([item, byCol]) => (
                                     <tr key={r.label + item} className="text-[10px] text-gray-500 bg-[#F8FAFC]">
-                                        <td className="py-0.5 pr-2 pl-4 whitespace-nowrap sticky left-0 bg-[#F8FAFC]">{item}</td>
+                                        <td className="py-0.5 pr-2 pl-4 max-md:pl-2 max-md:pr-1 whitespace-nowrap max-md:whitespace-normal max-md:leading-tight sticky left-0 bg-[#F8FAFC]">{item}</td>
                                         {table.raw.map((c, i) => {
                                             const v = c ? (byCol[c] ?? null) : null;
-                                            return <td key={i} className={`py-0.5 px-1.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''}`}>{v === null || v === '' ? '–' : v}</td>;
+                                            return <td key={i} className={`py-0.5 px-1.5 max-md:px-0.5 text-right whitespace-nowrap ${negative(v) ? 'text-rose-400' : ''}`}>{v === null || v === '' ? '–' : v}</td>;
                                         })}
                                     </tr>
                                 ))}
@@ -197,7 +197,7 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
     const table = fin && tab !== 'history' ? fin.tables[tab] : null;
 
     return (
-        <div className="bg-white border border-gray-200 rounded-lg p-3">
+        <div className="bg-white border border-gray-200 rounded-lg p-3 max-md:p-2">
             <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                 <div className="flex flex-wrap gap-1">
                     {TABS.map(t => (
