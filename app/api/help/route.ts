@@ -12,6 +12,7 @@ const GUIDE: { title: string; items: [string, string][] }[] = [
         items: [
             ['Prices (no AI)', 'NSE closing prices; market cap, P/E, P/B and P/S worked out from them.'],
             ['Financials (no AI)', 'Each company’s figures re-read from Screener once a week, on its own day.'],
+            ['What we were watching (no AI)', 'Number-based expectations (a margin, growth, order book) are marked met or missed once that quarter’s results are filed.'],
         ],
     },
     {
@@ -28,6 +29,7 @@ const GUIDE: { title: string; items: [string, string][] }[] = [
         title: 'Sunday and Wednesday, 9am',
         items: [
             ['Claude’s review', 'Goes through everything since the last review: calls, filings, news, results. Updates the notes, the calls (own, follow, wait, pass, avoid) and management; checks and corrects Gemini’s result views.'],
+            ['What we were watching', 'Claude settles the expectations that need judgement (a plant start, an order, a promise), weighs the settled ones in the call, and adds new ones from new calls.'],
         ],
     },
     {
