@@ -17,8 +17,8 @@ import { updateCompanyProfile } from '../lib/profile-service';
 import { pruneCompany, TRANSCRIPT_WINDOW, ANALYSIS_WINDOW, FINANCIALS_WINDOW } from '../lib/retention';
 import { supabaseAdmin as supabase, uploadTranscriptPdf, deleteStoredPdf } from '../lib/transcript-storage';
 import { generalQuarterName, fiscalYearOf, GENERAL_Q } from '../lib/quarters';
-import { classifyTranscript, isRelatedEntityCall } from '../lib/doc-type';
-import { notAResultsQuarter } from '../lib/reporting';
+import { classifyTranscript, isRelatedEntityCall, detectStatedQuarter } from '../lib/doc-type';
+import { notAResultsQuarter, screenerShowsCall } from '../lib/reporting';
 // @ts-ignore - pdf-parse ships no types
 import pdfParse from 'pdf-parse';
 
@@ -563,11 +563,16 @@ async function main() {
                             const related = isRelatedEntityCall(text, co.name);
                             // A half-yearly reporter has no Q1 or Q3 results (lib/reporting.ts).
                             const noSuchResults = await notAResultsQuarter(co.id, fyq);
-                            if (verdict.type === 'GENERAL' || related || noSuchResults) {
+                            // No results wording, no quarter named, and Screener shows no call that month:
+                            // not a results call (a deal call or special event; lib/reporting.ts).
+                            const unproven = /defaulted/.test(verdict.reason) && !detectStatedQuarter(text, eventDate)
+                                && (await screenerShowsCall(co.id, eventDate)) === false;
+                            if (verdict.type === 'GENERAL' || related || noSuchResults || unproven) {
                                 targetName = genName;
                                 const why = related
                                     ? "a related entity's call, not this company's"
                                     : noSuchResults ? `a half-yearly reporter has no ${fyq} results, so not its results call`
+                                    : unproven ? 'no results wording, no quarter named, and no call on Screener that month'
                                     : 'not an earnings call';
                                 console.log(`  📄 ${co.name.trim()}: ${fyq} document is ${why} — filing as "${genName}".`);
                                 await logToDB(jobId, 'INFO', `${why} — filed as ${genName}`, co.name, fyq);

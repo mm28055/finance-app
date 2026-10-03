@@ -29,3 +29,56 @@ export async function reportsHalfYearly(companyId: string): Promise<boolean> {
 export async function notAResultsQuarter(companyId: string, quarter: string): Promise<boolean> {
     return /^Q[13] /.test(quarter) && await reportsHalfYearly(companyId);
 }
+
+// -----------------------------------------------------------------------------
+// Screener's "Concalls" list as a second witness. A call goes into a results slot when its own
+// opening says it is a results call, OR Screener lists a call with a transcript or recording in
+// that month (or the next: Screener files a call under the month its transcript was filed). When
+// neither holds, it is filed as a special call — a deal call, a special event or an investor meet
+// whose copy opens mid-conversation (RPG's 3 Sep 2026 Actis call, NBCC's 1 Jun 2026 event).
+// Screener alone is not enough: it sometimes shows only a presentation for a genuine call.
+// -----------------------------------------------------------------------------
+
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+export interface ConcallEntry { month: string; transcript: boolean; rec: boolean; ppt: boolean }
+
+/** Screener's Concalls list from a company page: one entry per month, with which documents it links. */
+export function screenerConcalls(html: string): ConcallEntry[] | null {
+    const i = html.indexOf('>Concalls</h3>');
+    if (i < 0) return null;
+    const end = html.indexOf('</ul>', i);
+    const seg = html.slice(i, end > 0 ? end : i + 40000);
+    return [...seg.matchAll(/<li[^>]*>([\s\S]*?)<\/li>/g)].map(m => {
+        const li = m[1];
+        return {
+            month: li.match(/>\s*([A-Z][a-z]{2} \d{4})\s*</)?.[1] || '',
+            transcript: /<a[^>]*>\s*Transcript\s*<\/a>/.test(li),
+            rec: /<a[^>]*>\s*REC\s*<\/a>/.test(li),
+            ppt: /<a[^>]*>\s*PPT\s*<\/a>/.test(li),
+        };
+    }).filter(e => e.month);
+}
+
+const concallCache = new Map<string, ConcallEntry[] | null>();
+
+/**
+ * True when Screener lists a call with a transcript or recording in the month of `date` or the
+ * next; null when Screener could not be read (the caller then keeps its own reading).
+ */
+export async function screenerShowsCall(companyId: string, date: Date): Promise<boolean | null> {
+    if (!concallCache.has(companyId)) {
+        let list: ConcallEntry[] | null = null;
+        try {
+            const page = await screenerPageUrl(companyId);
+            const html = page ? await fetchScreenerPage(page.url.replace(/consolidated\/?$/, ''), 0) : null;
+            list = html ? screenerConcalls(html) : null;
+        } catch { /* unreadable */ }
+        concallCache.set(companyId, list);
+    }
+    const list = concallCache.get(companyId);
+    if (!list) return null;
+    const key = (plus: number) => { const x = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth() + plus, 1)); return `${MONTHS[x.getUTCMonth()]} ${x.getUTCFullYear()}`; };
+    const window = [key(0), key(1)];
+    return list.some(e => window.includes(e.month) && (e.transcript || e.rec));
+}

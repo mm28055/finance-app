@@ -54,7 +54,7 @@ import { updateCompanyProfile } from '../lib/profile-service';
 import { classifyTranscript, isRelatedEntityCall, isAgmDocument, detectCallDate, detectStatedQuarter, looksLikeCallTranscript, quarterEndDate } from '../lib/doc-type';
 import { getFinancialQuarter, generalQuarterName, fiscalYearOf, getAcceptanceCutoff, quarterScore, GENERAL_Q } from '../lib/quarters';
 import { generalSlotDate } from '../lib/doc-label';
-import { notAResultsQuarter } from '../lib/reporting';
+import { notAResultsQuarter, screenerShowsCall } from '../lib/reporting';
 import { nseAnnouncements, nseListedIsins, parseNseDate, NSE_UA } from '../lib/filings/nse';
 import { nseSymbolForIsin } from '../lib/corporate-actions/nse-lists';
 import { supabaseAdmin, transcriptCloudKey, uploadTranscriptPdf, deleteStoredPdf } from '../lib/transcript-storage';
@@ -406,7 +406,9 @@ async function main() {
             // no evidence of a results call ("Special Purpose Conference Call",
             // "Investor/Analyst Call"). A results call names its quarter; this
             // keeps other calls out of an empty quarter slot.
-            if (type === 'RESULTS' && /defaulted/.test(verdict.reason) && !detectStatedQuarter(text, callDate)) type = 'SPECIAL';
+            // ...unless Screener lists a call with a transcript or recording that month (lib/reporting.ts).
+            if (type === 'RESULTS' && /defaulted/.test(verdict.reason) && !detectStatedQuarter(text, callDate)
+                && (await screenerShowsCall(d.co.id, callDate)) !== true) type = 'SPECIAL';
         }
         const stated = type === 'RESULTS' ? detectStatedQuarter(text, callDate) : null;
         const fyq = stated || getFinancialQuarter(callDate.toISOString());
