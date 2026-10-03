@@ -2,6 +2,7 @@ import { SectorList, SectorData } from "@/components/SectorList";
 import { getDashboardDataLight, getTranscriptStats } from "@/lib/data-service";
 import { TranscriptStats } from "@/components/TranscriptStats";
 import { SessionTodos } from "@/components/SessionTodos";
+import { HelpButton } from "@/components/HelpButton";
 import { sessionTodos } from "@/lib/session-todos";
 import { ScrollText, Target, CalendarDays } from "lucide-react";
 
@@ -23,6 +24,7 @@ export default async function Home() {
           <p className="text-gray-400 text-xs">Real-Time Earning Intelligence</p>
         </div>
         <div className="flex items-center gap-4 max-md:flex-wrap max-md:gap-2">
+          <HelpButton />
           <SessionTodos todos={todos} />
           {/* Page links as small square cards, as tall as the transcript cards beside them */}
           <div className="flex items-stretch gap-3 max-md:flex-wrap max-md:gap-2">
