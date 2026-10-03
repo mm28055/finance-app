@@ -1,4 +1,4 @@
-# Weekly review (run by a scheduled Claude session every Sunday)
+# Weekly review (run by a scheduled Claude session every Sunday and Wednesday, 9am India time)
 
 You are keeping the sector notes of this investment dashboard (Next.js; notes in `lib/sector-overviews/`) current
 for the owner, a non-technical long-term investor in Indian listed companies. Daily GitHub jobs already update prices,
