@@ -9,8 +9,8 @@ import store from '../results/results.json';
 import type { ResultsStore } from '../results/types';
 import { generalDocLabel } from '../doc-label';
 
-/** The first few "Top Takeaways" of a call analysis, as plain one-liners. */
-function takeaways(summary: string | null, n = 2): string[] {
+/** The "Top Takeaways" of a call analysis (up to four; most analyses list three to five), as plain one-liners. */
+function takeaways(summary: string | null, n = 4): string[] {
     if (!summary) return [];
     // The points listed under "Top Takeaways", bold heading or not; failing that, any list points.
     const all = summary.split('\n').map(l => l.trim());
