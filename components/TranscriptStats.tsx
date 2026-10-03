@@ -7,7 +7,7 @@ export function TranscriptStats({ stats }: { stats: { name: string; count: numbe
     if (!stats || stats.length === 0) return null;
 
     return (
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 max-md:flex-wrap max-md:gap-2">
             {stats.map((s) => (
                 <div key={s.name} className="flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg border border-gray-200 shadow-sm">
                     <div className="w-6 h-6 rounded-md bg-[#F0F7FF] flex items-center justify-center text-[#6B9FCC]">

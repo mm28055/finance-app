@@ -15,17 +15,17 @@ export default async function Home() {
   ]);
 
   return (
-    <main className="min-h-screen bg-[#FAFBFC] p-6">
+    <main className="min-h-screen bg-[#FAFBFC] p-6 max-md:p-3">
       {/* Header */}
-      <header className="max-w-6xl flex justify-between items-center mb-6 pb-4 border-b border-gray-200">
+      <header className="max-w-6xl flex justify-between items-center mb-6 pb-4 border-b border-gray-200 max-md:flex-col max-md:items-start max-md:gap-3 max-md:mb-4">
         <div>
           <h1 className="text-lg font-semibold text-gray-800 tracking-tight">Manish Dashboard</h1>
           <p className="text-gray-400 text-xs">Real-Time Earning Intelligence</p>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 max-md:flex-wrap max-md:gap-2">
           <SessionTodos todos={todos} />
           {/* Page links as small square cards, as tall as the transcript cards beside them */}
-          <div className="flex items-stretch gap-3">
+          <div className="flex items-stretch gap-3 max-md:flex-wrap max-md:gap-2">
             <div className="flex items-stretch gap-2">
               {[
                 { href: '/filings', label: 'Filings', Icon: ScrollText },
