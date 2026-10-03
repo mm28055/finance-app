@@ -9,12 +9,12 @@ import { useHoverOpen } from '@/lib/hover-open';
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
 // Bump when the shape of /financials changes, so browsers never reuse an older copy.
-const DATA_VERSION = 15;
+const DATA_VERSION = 16;
 
 type Tab = 'history' | 'assumes' | 'peers' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios' | 'ratios-1';
 type Row = { label: string; src: string; expandable: boolean; values: (string | null)[]; /** The figures a ratio is made from, shown above it (open by default, can be closed). */ parts?: { label: string; values: (string | null)[] }[]; /** A section heading shown above this row. */ heading?: string };
 type Table = { columns: string[]; raw: (string | null)[]; rows: Row[] };
-type Financials = { view: 'consolidated' | 'standalone'; empty: boolean; tables: Record<string, Table>; growth: Record<string, Record<string, string>> };
+type Financials = { view: 'consolidated' | 'standalone'; empty: boolean; tables: Record<string, Table>; growth: Record<string, Record<string, string>>; /** WC tab: the figures read in plain English (fixed rules). */ wcSummary?: string[] };
 
 const TABS: { key: Tab; label: string; title?: string }[] = [
     { key: 'history', label: 'Valuation', title: 'Price & valuation history' },
@@ -261,6 +261,14 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
                         <>
                             {table ? <DataTable key={`${tab}-${fin.view}`} table={table} companyId={companyId} section={tab} view={fin.view} /> : <div className="text-[11px] text-gray-400 py-4 text-center">Not reported for this company.</div>}
                             {tab === 'profit-loss' && growthLine(fin.growth)}
+                            {tab === 'ratios' && fin.wcSummary && fin.wcSummary.length > 0 && (
+                                <div className="mt-3 rounded-lg bg-[#F8FAFC] border border-gray-100 p-2.5">
+                                    <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-1">What the cash says</p>
+                                    <ul className="flex flex-col gap-1">
+                                        {fin.wcSummary.map((line, k) => <li key={k} className="text-[12px] text-gray-700 leading-snug">{line}</li>)}
+                                    </ul>
+                                </div>
+                            )}
                         </>
                     )}
                 </>

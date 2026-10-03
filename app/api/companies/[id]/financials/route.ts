@@ -274,7 +274,57 @@ async function workingCapitalRows(html: string, consolidated: boolean, key: stri
             bridge('Cash left for shareholders', afterTax.map((v, i) => (v === null ? null : v + (interest[i] ?? 0) + (capex[i] ?? 0))));
         }
     }
-    return out.length ? out : null;
+    if (!out.length) return null;
+
+    // A plain-English reading of the same figures, by fixed rules (no AI), shown under the WC table.
+    const summary: string[] = [];
+    const years = raw.filter(Boolean) as string[];
+    const span = years.length ? `FY${years[0].slice(-2)}–FY${years[years.length - 1].slice(-2)}` : '';
+    const rs = (v: number) => `₹${Math.round(Math.abs(v)).toLocaleString('en-IN')}cr`;
+    const signed = (v: number) => `${v < 0 ? '−' : ''}${rs(v)}`;
+    if (haveBridge) {
+        const ops = total(fromOps), after = total(afterTax);
+        if (ops !== null && after !== null && ops > 0)
+            summary.push(`Over ${span} it made ${rs(ops)} of profit from operations and ${signed(after)} of operating cash after tax (${Math.round((after / ops) * 100)}%).`);
+        const interestRows = out.find(r => r.label === 'Interest paid'), leftRow = out.find(r => r.label === 'Cash left for shareholders');
+        const capexRow = out.find(r => r.label === 'Capex (net of assets sold)');
+        const num = (v: string | null | undefined) => n(v ?? null);
+        if (leftRow && after !== null) {
+            const yearly = leftRow.values.slice(0, raw.length).map(num).filter((v): v is number => v !== null);
+            const left = num(leftRow.values[raw.length]), interest = num(interestRows?.values[raw.length]), capex = num(capexRow?.values[raw.length]);
+            if (left !== null) {
+                const neg = yearly.filter(v => v < 0).length;
+                const after2 = `After ${interest !== null ? `${rs(interest)} of interest` : 'interest'} and ${capex !== null ? `${rs(capex)} of capex` : 'capex'}`;
+                summary.push(left < 0
+                    ? `${after2}, shareholders were ${rs(left)} short${neg === yearly.length ? ', every year' : `; short in ${neg} of ${yearly.length} years`}.`
+                    : `${after2}, ${rs(left)} was left for shareholders${neg ? `; short in ${neg} of ${yearly.length} years` : ', positive every year'}.`);
+                if (interest !== null && after > 0 && Math.abs(interest) > after) summary.push(`Interest alone took more than all its operating cash (${rs(interest)} against ${rs(after)}).`);
+                if (left < 0) {
+                    const shares = total(raw.map(y => sch(financing, 'Proceeds from shares', y)));
+                    const borrowed = total(raw.map(y => sch(financing, 'Proceeds from borrowings', y))), repaid = total(raw.map(y => sch(financing, 'Repayment of borrowings', y)));
+                    const net = borrowed !== null || repaid !== null ? (borrowed ?? 0) + (repaid ?? 0) : null;
+                    const parts = [shares && shares > 0 ? `${rs(shares)} from share sales` : null, net !== null && net > 0 ? `${rs(net)} of net borrowing` : null].filter(Boolean);
+                    if (parts.length) summary.push(`The gap was met by ${parts.join(' and ')}${net !== null && net < 0 ? ', while it repaid debt' : ''}.`);
+                }
+            }
+        }
+        const drains: [string, number | null][] = [
+            ['money owed by customers', total(raw.map(y => sch(opCash, 'Receivables', y)))],
+            ['stock', total(raw.map(y => sch(opCash, 'Inventory', y)))],
+            ['other items (unbilled work, advances, deposits and the like)', total(raw.map(y => sch(opCash, 'Other WC items', y)))],
+        ];
+        const worst = drains.filter((d): d is [string, number] => d[1] !== null && d[1] < 0).sort((x, y) => x[1] - y[1])[0];
+        if (worst) summary.push(`The most cash went into ${worst[0]}: ${rs(worst[1])}.`);
+    }
+    if (haveWc) {
+        const first = wc.findIndex(v => v !== null), lastI = wc.length - 1 - [...wc].reverse().findIndex(v => v !== null);
+        if (first >= 0 && lastI > first && wc[first]! > 0 && sales[first] && sales[lastI]) {
+            const wcG = ((wc[lastI]! - wc[first]!) / wc[first]!) * 100, sG = ((sales[lastI]! - sales[first]!) / sales[first]!) * 100;
+            const d0 = Math.round((wc[first]! / sales[first]!) * 365), d1 = Math.round((wc[lastI]! / sales[lastI]!) * 365);
+            summary.push(`Working capital grew ${Math.round(wcG)}% against sales growth of ${Math.round(sG)}% (${d1} days of sales now, from ${d0})${Math.abs(d1 - d0) <= 7 ? ', roughly in step' : d1 > d0 ? ', faster than the business' : ', slower than the business'}.`);
+        }
+    }
+    return { rows: out, summary };
 }
 
 export async function GET(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
@@ -362,11 +412,13 @@ type Row = { label: string; src: string; expandable: boolean; values: (string | 
         const ratio1 = await debtAndCashRatios(html, page.view === 'consolidated', page.key);
         if (ratio1) tables['ratios-1'] = ratio1;
         // WC tab: working capital against sales, and where the operating cash went (a "Total" column for the bridge).
+        let wcSummary: string[] = [];
         if (tables['ratios']) {
             const extra = await workingCapitalRows(html, page.view === 'consolidated', page.key, tables['ratios'].raw);
             if (extra) {
                 const t = tables['ratios'];
-                tables['ratios'] = { columns: [...t.columns, 'Total'], raw: [...t.raw, null], rows: [...t.rows.map(r => ({ ...r, values: [...r.values, null] })), ...extra] };
+                tables['ratios'] = { columns: [...t.columns, 'Total'], raw: [...t.raw, null], rows: [...t.rows.map(r => ({ ...r, values: [...r.values, null] })), ...extra.rows] };
+                wcSummary = extra.summary;
             }
         }
 
@@ -376,6 +428,7 @@ type Row = { label: string; src: string; expandable: boolean; values: (string | 
             empty,
             tables,
             growth: screenerGrowth(html),
+            wcSummary,
         }, { headers: { 'Cache-Control': 'private, max-age=600' } });
     } catch {
         return NextResponse.json({ error: 'Financials unavailable' }, { status: 502 });
