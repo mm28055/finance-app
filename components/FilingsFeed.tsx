@@ -98,9 +98,11 @@ export function FilingsFeed({ filings, kind = 'filings', initialCompany = '' }: 
                         {list.map((f, i) => {
                             const id = `${f.date}-${f.company}-${i}`;
                             const t = TONE_STYLE[f.tone];
+                            // Opened from a company's marker, every entry starts open with its full summary.
+                            const isOpen = open[id] ?? !!initialCompany;
                             return (
                                 <div key={id} className="px-3 py-2.5">
-                                    <button className="w-full text-left" onClick={() => setOpen(o => ({ ...o, [id]: !o[id] }))}>
+                                    <button className="w-full text-left" onClick={() => setOpen(o => ({ ...o, [id]: !isOpen }))}>
                                         <div className="flex flex-wrap items-center gap-2">
                                             <span className="text-[13px] font-semibold text-gray-800">{f.company}</span>
                                             {f.call && <span className={`px-1.5 rounded text-[10px] font-semibold ${CALL_TONE[f.call] || ''}`}>{f.call}</span>}
@@ -108,9 +110,9 @@ export function FilingsFeed({ filings, kind = 'filings', initialCompany = '' }: 
                                             <span className="text-[10px] text-gray-400">{f.sector}</span>
                                         </div>
                                         <p className="text-[13px] text-gray-700 mt-1 leading-snug">{f.headline}</p>
-                                        {f.impactWhy && !open[id] && <p className="text-[11px] text-gray-400 mt-0.5">{f.impactWhy}</p>}
+                                        {f.impactWhy && !isOpen && <p className="text-[11px] text-gray-400 mt-0.5">{f.impactWhy}</p>}
                                     </button>
-                                    {open[id] && (
+                                    {isOpen && (
                                         <div className="mt-1.5">
                                             <p className="text-xs text-gray-600 leading-relaxed">{f.summary}</p>
                                             {f.url && (
