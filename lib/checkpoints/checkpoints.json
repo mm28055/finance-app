@@ -4616,8 +4616,8 @@
    "sector": "Chemicals",
    "text": "Operating cash above 70% of profit in FY27",
    "due": "Q4 FY27",
-   "ifMet": "Own (once a full year's cash catches up with profit)",
-   "ifMissed": "Stay follow",
+   "ifMet": "Back to follow (a full year of cash covering most of profit)",
+   "ifMissed": "Stay wait",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -5110,7 +5110,7 @@
    "sector": "Commercial Services",
    "text": "FY27 operating cash back above ₹1,000cr (FY26: ₹231cr)",
    "due": "Q4 FY27",
-   "ifMet": "Profit turning into cash: view improves",
+   "ifMet": "Back to follow: profit turning into cash",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -5965,8 +5965,8 @@
    "sector": "Construction",
    "text": "Margin holding near 11% in Q2 FY27 (company figure; Q1 11.4%)",
    "due": "Q2 FY27",
-   "ifMet": "Buy, together with orders and cash",
-   "ifMissed": "Stays follow",
+   "ifMet": "Back to follow, together with orders and cash",
+   "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -5976,8 +5976,8 @@
    "sector": "Construction",
    "text": "Orders back near ₹100cr a month in Q2 FY27",
    "due": "Q2 FY27",
-   "ifMet": "Buy, together with margin and cash",
-   "ifMissed": "Stays follow",
+   "ifMet": "Back to follow, together with margin and cash",
+   "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -5987,8 +5987,8 @@
    "sector": "Construction",
    "text": "Operating cash turning positive in H1 FY27, with the Sanand expansion running from October",
    "due": "Q2 FY27",
-   "ifMet": "Buy, together with margin and orders",
-   "ifMissed": "Stays follow",
+   "ifMet": "Back to follow, together with margin and orders",
+   "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -6630,8 +6630,8 @@
    "sector": "Construction",
    "text": "A clean Q2 FY27: orders arriving and no new legal surprise",
    "due": "Q2 FY27",
-   "ifMet": "Buy (first road name to buy)",
-   "ifMissed": "Stays follow",
+   "ifMet": "Back to follow, if operating cash also turns positive",
+   "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -9505,7 +9505,7 @@
    "sector": "EMS & Electronics",
    "text": "Block II filling and asset turns rising from about 2 times, with free cash turning positive",
    "due": "Q4 FY27",
-   "ifMet": "Could move from follow toward own",
+   "ifMet": "Could move from follow toward own, if operating cash also passes half of profit",
    "ifMissed": "Stays follow",
    "createdOn": "2026-09-29",
    "status": "pending"
@@ -11002,8 +11002,8 @@
    "sector": "Hardware",
    "text": "Operating cash flow turning positive in the September half-year accounts (FY26: negative ₹215cr)",
    "due": "Q2 FY27",
-   "ifMet": "Would change my view for the better",
-   "ifMissed": "Stays follow",
+   "ifMet": "Would support a move back to follow, if operating cash also covers most of profit",
+   "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -12445,7 +12445,7 @@
    "op": ">=",
    "target": 17,
    "due": "Q3 FY27",
-   "ifMet": "Buy if it passes 18% and the 13-acre site stays on schedule",
+   "ifMet": "Buy only if it passes 18%, the site stays on schedule and operating cash covers most of profit",
    "ifMissed": "Stays follow",
    "createdOn": "2026-09-29",
    "status": "pending"
@@ -13314,7 +13314,7 @@
    "sector": "Industrials",
    "text": "Debtor days falling from 115 toward 90",
    "due": "Q2 FY27",
-   "ifMissed": "The own case rests on receivables coming down",
+   "ifMissed": "Stays follow; a return to own needs receivables down and operating cash covering most of profit",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -13705,7 +13705,7 @@
    "text": "H1 FY27 operating cash turns positive (FY26 was −₹55cr)",
    "due": "H1 FY27",
    "ifMet": "Changes the view for the better",
-   "ifMissed": "Stays a small position at most",
+   "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -14076,7 +14076,7 @@
    "sector": "Iron and Steel",
    "text": "Operating cash turning positive and discounted bills (₹115cr) falling",
    "due": "Q2 FY27",
-   "ifMet": "Changes the view for the better",
+   "ifMet": "Would bring it back from wait to follow",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -14635,7 +14635,7 @@
    "sector": "Mining & Metals Recycle",
    "text": "Copper cathode plant starts trial production in December 2026",
    "due": "Q3 FY27",
-   "ifMet": "Supports moving beyond follow once cash follows growth",
+   "ifMet": "Supports a return to follow once operating cash turns positive and covers most of profit",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -14654,7 +14654,7 @@
    "sector": "Mining & Metals Recycle",
    "text": "Positive operating cash flow for FY27 (negative in FY25 and FY26)",
    "due": "Q4 FY27",
-   "ifMet": "Supports moving beyond follow once the cathode plant runs",
+   "ifMet": "Would bring it back from wait to follow, with the cathode plant running",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -17878,7 +17878,7 @@
    "sector": "Platform Cos",
    "text": "Operating cash turning positive as stock days come down",
    "due": "Q2 FY27",
-   "ifMet": "The cash the follow is waiting for",
+   "ifMet": "The cash that would bring it back from wait to follow",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -18472,8 +18472,8 @@
    "sector": "Realty",
    "text": "Net debt stays within India Ratings' ₹800–850cr band",
    "due": "Q2 FY27",
-   "ifMet": "Stay own",
-   "ifMissed": "Own case weakens; debt is the named thing to watch",
+   "ifMet": "Follow holds; own also needs filed operating cash to turn positive",
+   "ifMissed": "Follow case weakens; debt is the thing to watch",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -21384,10 +21384,11 @@
    "id": "alpex-solar-q4fy27-2",
    "company": "Alpex Solar",
    "sector": "Solar PV Cells EPC",
-   "text": "Operating cash flow turns positive in FY27 after −₹117cr in FY26",
+   "text": "Operating cash flow turns positive in FY27 after −₹116cr in FY26",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "ifMet": "Back to follow (with the cell line running)"
   },
   {
    "id": "websol-energy-system-ltd-q2fy27-1",
@@ -22121,9 +22122,10 @@
    "sector": "Vehicles",
    "text": "Operating cash flow positive in the H1 FY27 results (November)",
    "due": "H1 FY27",
-   "ifMissed": "Stay follow until cash follows profit",
+   "ifMissed": "Stay wait until cash follows profit",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "ifMet": "Back to follow"
   },
   {
    "id": "zelio-e-mobility-h2fy27-1",
