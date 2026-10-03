@@ -191,7 +191,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Nelcast',
-        inShort: ["**An Indian iron foundry with three plants making castings for trucks and tractors**, with about a third of sales exported.", "**Good:** spare capacity, three new large-casting programmes worth over ₹200cr a year at full volume by Q4 FY27 (a call figure that cannot be checked), and term debt falling. **Bad:** margins have swung between 5% and 10% by quarter, the new Pedapariya plant ran at only 21% in Q1 FY27, profit after tax fell 59%, its call transcripts are not published, and trucks and tractors face a weak second half.", "**Verdict: wait.** I want to see the new programmes ramp up and profit per kilogram recover toward ₹15 first."],
+        inShort: ["**An Indian iron foundry with three plants making castings for trucks and tractors**, with about a third of sales exported.", "**Good:** spare capacity, three new large-casting programmes worth over ₹200cr a year at full volume by Q4 FY27, and term debt falling. **Bad:** margins have swung between 5% and 10% by quarter, the new Pedapariya plant ran at only 21% in Q1 FY27, profit after tax fell 59%, and trucks and tractors face a weak second half.", "**Verdict: wait.** I want to see the new programmes ramp up and profit per kilogram recover toward ₹15 first."],
         tagline: "A large Indian foundry making iron castings (parts poured from molten metal) such as axle housings for trucks and front-axle parts for four-wheel-drive tractors, with about a third of sales exported.",
         revenue: '₹1,328cr (FY26, standalone)',
         products: [
@@ -200,7 +200,7 @@ const profiles: BusinessProfile[] = [
             { name: 'Large castings', text: "Bigger, more complex castings from the Pedapariya plant, including parts for the largest US tractors. Three new programmes began shipping in July 2026 and should reach ₹200–250cr of yearly revenue by Q4 FY27." },
             { name: 'Export castings', text: "Parts for truck and tractor makers abroad (₹113cr in Q1 FY27), plus traditional parts won from European customers whose local foundry was going bankrupt." },
         ],
-        revenueText: "Q1 FY27 sales were ₹341cr (₹345cr with other income), of which **exports were ₹113cr, about a third**. It sold 22,442 tonnes at about **₹152 a kilogram**. The call does not split revenue between trucks, tractors and other segments. Management expects about **1 lakh tonnes** and a little over 10% revenue growth in FY27. Nelcast does not file its call transcripts with the exchanges, and those for May and July 2026 were not on its website, so figures from those calls here could not be checked against an official text.",
+        revenueText: "Q1 FY27 sales were ₹341cr (₹345cr with other income), of which **exports were ₹113cr, about a third**. It sold 22,442 tonnes at about **₹152 a kilogram**. The call does not split revenue between trucks, tractors and other segments. Management expects about **1 lakh tonnes** and a little over 10% revenue growth in FY27 (July 2026 call).",
         mixes: [
             { caption: 'Revenue by market, Q1 FY27 (derived from call)', parts: [{ label: 'India', share: 67 }, { label: 'Exports', share: 33 }] },
         ],
