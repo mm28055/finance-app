@@ -37,7 +37,8 @@ const dayLabel = (iso: string) => new Date(iso + 'T00:00:00').toLocaleDateString
 export function FilingsFeed({ filings, kind = 'filings', initialCompany = '' }: { filings: Row[]; /** 'news' = the Market and policy tab. */ kind?: 'filings' | 'news'; /** Start on one company, showing all its entries (as its row's marker counts them). */ initialCompany?: string }) {
     const news = kind === 'news';
     const types = news ? NEWS_TYPES : TYPES;
-    const [all, setAll] = React.useState(!!initialCompany);
+    // Company filings open on "All material"; the Market and policy tab on "With a reason" (unexplained moves are noise).
+    const [all, setAll] = React.useState(!news || !!initialCompany);
     const [tone, setTone] = React.useState<'any' | 'good' | 'watch'>('any');
     const [call, setCall] = React.useState('any');
     const [sector, setSector] = React.useState('any');
@@ -64,8 +65,17 @@ export function FilingsFeed({ filings, kind = 'filings', initialCompany = '' }: 
     return (
         <div className="flex flex-col gap-4">
             <div className="flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
-                <button className={chip(!all)} onClick={() => setAll(false)}>{news ? 'With a reason' : 'Price-moving'}</button>
-                <button className={chip(all)} onClick={() => setAll(true)}>{news ? 'All, incl. unexplained moves' : 'All material'}</button>
+                {news ? (
+                    <>
+                        <button className={chip(!all)} onClick={() => setAll(false)}>With a reason</button>
+                        <button className={chip(all)} onClick={() => setAll(true)}>All, incl. unexplained moves</button>
+                    </>
+                ) : (
+                    <>
+                        <button className={chip(all)} onClick={() => setAll(true)}>All material</button>
+                        <button className={chip(!all)} onClick={() => setAll(false)}>Price-moving</button>
+                    </>
+                )}
                 <span className="w-px h-5 bg-gray-200 mx-1" />
                 <button className={chip(tone === 'any')} onClick={() => setTone('any')}>Any</button>
                 <button className={chip(tone === 'good')} onClick={() => setTone('good')}>Positive</button>
