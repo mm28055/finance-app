@@ -1,0 +1,64 @@
+name: Weekly Database Backup
+
+# The database's written material (call write-ups, profiles, the owner's notes and marks, tags,
+# chats) copied weekly into this repository's `backups` branch by scripts/backup-db.ts. Each
+# week's copy is a commit, so any earlier week can be restored. Transcripts, PDFs and figures
+# Screener refills are left out. The branch is never deployed (vercel.json).
+on:
+  schedule:
+    # Sunday 3:00am IST (Saturday 21:30 UTC), when nothing else runs.
+    - cron: '30 21 * * 6'
+  workflow_dispatch:          # Allow a manual run from the GitHub UI
+
+concurrency:
+  group: database-backup
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  backup:
+    name: Back up the database
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Checkout the backups branch
+        uses: actions/checkout@v4
+        with:
+          ref: backups
+          path: backup-data
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Export the database
+        run: npx tsx scripts/backup-db.ts --out backup-data
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
+      - name: Commit the backup
+        working-directory: backup-data
+        run: |
+          git config user.name "backup-bot"
+          git config user.email "backup-bot@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing changed since the last backup."
+            exit 0
+          fi
+          git commit -m "Backup $(date -u +%Y-%m-%d)"
+          git push
