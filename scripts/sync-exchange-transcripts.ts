@@ -54,6 +54,7 @@ import { updateCompanyProfile } from '../lib/profile-service';
 import { classifyTranscript, isRelatedEntityCall, isAgmDocument, detectCallDate, detectStatedQuarter, looksLikeCallTranscript, quarterEndDate } from '../lib/doc-type';
 import { getFinancialQuarter, generalQuarterName, fiscalYearOf, getAcceptanceCutoff, quarterScore, GENERAL_Q } from '../lib/quarters';
 import { generalSlotDate } from '../lib/doc-label';
+import { notAResultsQuarter } from '../lib/reporting';
 import { nseAnnouncements, nseListedIsins, parseNseDate, NSE_UA } from '../lib/filings/nse';
 import { nseSymbolForIsin } from '../lib/corporate-actions/nse-lists';
 import { supabaseAdmin, transcriptCloudKey, uploadTranscriptPdf, deleteStoredPdf } from '../lib/transcript-storage';
@@ -409,6 +410,12 @@ async function main() {
         }
         const stated = type === 'RESULTS' ? detectStatedQuarter(text, callDate) : null;
         const fyq = stated || getFinancialQuarter(callDate.toISOString());
+        // A company that reports only half-yearly has no Q1 or Q3 results: such a call is a
+        // conference talk or business update, never the results call (lib/reporting.ts).
+        if (type === 'RESULTS' && await notAResultsQuarter(d.co.id, fyq)) {
+            type = 'SPECIAL';
+            why = `half-yearly reporter, no ${fyq} results`;
+        }
         const extra = { fyq: type === 'RESULTS' ? fyq : null, day: istDayKey(callDate) };
         if (type === 'RESULTS') resultsFound.add(`${d.co.id}|${fyq}`);
 

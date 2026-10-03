@@ -18,6 +18,7 @@ import { pruneCompany, TRANSCRIPT_WINDOW, ANALYSIS_WINDOW, FINANCIALS_WINDOW } f
 import { supabaseAdmin as supabase, uploadTranscriptPdf, deleteStoredPdf } from '../lib/transcript-storage';
 import { generalQuarterName, fiscalYearOf, GENERAL_Q } from '../lib/quarters';
 import { classifyTranscript, isRelatedEntityCall } from '../lib/doc-type';
+import { notAResultsQuarter } from '../lib/reporting';
 // @ts-ignore - pdf-parse ships no types
 import pdfParse from 'pdf-parse';
 
@@ -560,10 +561,13 @@ async function main() {
                             }
                             const verdict = classifyTranscript(text);
                             const related = isRelatedEntityCall(text, co.name);
-                            if (verdict.type === 'GENERAL' || related) {
+                            // A half-yearly reporter has no Q1 or Q3 results (lib/reporting.ts).
+                            const noSuchResults = await notAResultsQuarter(co.id, fyq);
+                            if (verdict.type === 'GENERAL' || related || noSuchResults) {
                                 targetName = genName;
                                 const why = related
                                     ? "a related entity's call, not this company's"
+                                    : noSuchResults ? `a half-yearly reporter has no ${fyq} results, so not its results call`
                                     : 'not an earnings call';
                                 console.log(`  📄 ${co.name.trim()}: ${fyq} document is ${why} — filing as "${genName}".`);
                                 await logToDB(jobId, 'INFO', `${why} — filed as ${genName}`, co.name, fyq);
