@@ -21,9 +21,12 @@ export async function GET(_req: NextRequest, { params }: { params: Promise<{ id:
         }
         const [self, ...peers] = all;
         if (!self) return NextResponse.json({ error: 'Company not found' }, { status: 404 });
+        // A complete answer is kept at the edge for six hours (and served stale for a day while it
+        // refreshes in the background), so the tab opens at once; one with unread companies is not kept.
+        const complete = all.every(c => c && !c.unread);
         return NextResponse.json(
             { self, peers: peers.filter(Boolean), fromNote: set.fromNote },
-            { headers: { 'Cache-Control': 'private, max-age=600' } },
+            { headers: { 'Cache-Control': complete ? 'public, max-age=600, s-maxage=21600, stale-while-revalidate=86400' : 'no-store' } },
         );
     } catch {
         return NextResponse.json({ error: 'Peers unavailable' }, { status: 502 });

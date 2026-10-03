@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { ValuationHistory } from './ValuationHistory';
-import { PriceAssumes, PeerTable } from './PeerTabs';
+import { PriceAssumes, PeerTable, prefetchPeers } from './PeerTabs';
 import { useHoverOpen } from '@/lib/hover-open';
 
 // One card on the opened company row: price & valuation history, and five years of
@@ -197,6 +197,9 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
             .catch(() => { if (alive) setData(m => ({ ...m, [key]: 'error' })); });
         return () => { alive = false; };
     }, [companyId, tab, view, key, data]);
+
+    // The Price assumes and Peers tabs read several Screener pages; start as soon as the card opens.
+    React.useEffect(() => { prefetchPeers(companyId).catch(() => {}); }, [companyId]);
 
     const fin = current && current !== 'error' ? current : null;
     const table = fin && !OWN_DATA.has(tab) ? fin.tables[tab] : null;

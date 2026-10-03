@@ -9,17 +9,23 @@ type PeerData = { self: CompanyFigures; peers: CompanyFigures[]; fromNote: boole
 
 // One request per company per page view, shared by both tabs.
 const cache = new Map<string, Promise<PeerData>>();
+/** Starts loading a company's peers (called when its card opens, so the tabs are ready when clicked). */
+export function prefetchPeers(companyId: string) {
+    if (!cache.has(companyId)) {
+        const p = fetch(`/api/companies/${companyId}/peers`).then(r => (r.ok ? r.json() : Promise.reject()))
+            .then((d: PeerData) => { if ([d.self, ...d.peers].some(c => c.unread)) cache.delete(companyId); return d; });
+        p.catch(() => cache.delete(companyId));
+        cache.set(companyId, p);
+    }
+    return cache.get(companyId)!;
+}
 function usePeers(companyId: string) {
     const [data, setData] = React.useState<PeerData | 'error' | null>(null);
     React.useEffect(() => {
         let alive = true;
-        if (!cache.has(companyId)) {
-            cache.set(companyId, fetch(`/api/companies/${companyId}/peers`).then(r => (r.ok ? r.json() : Promise.reject()))
-                .then((d: PeerData) => { if ([d.self, ...d.peers].some(c => c.unread)) cache.delete(companyId); return d; }));
-        }
-        cache.get(companyId)!
+        prefetchPeers(companyId)
             .then(d => { if (alive) setData(d); })
-            .catch(() => { cache.delete(companyId); if (alive) setData('error'); });
+            .catch(() => { if (alive) setData('error'); });
         return () => { alive = false; };
     }, [companyId]);
     return data;
