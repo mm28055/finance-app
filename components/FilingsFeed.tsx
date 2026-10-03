@@ -37,8 +37,8 @@ const dayLabel = (iso: string) => new Date(iso + 'T00:00:00').toLocaleDateString
 export function FilingsFeed({ filings, kind = 'filings', initialCompany = '' }: { filings: Row[]; /** 'news' = the Market and policy tab. */ kind?: 'filings' | 'news'; /** Start on one company, showing all its entries (as its row's marker counts them). */ initialCompany?: string }) {
     const news = kind === 'news';
     const types = news ? NEWS_TYPES : TYPES;
-    // Company filings open on "All material"; the Market and policy tab on "With a reason" (unexplained moves are noise).
-    const [all, setAll] = React.useState(!news || !!initialCompany);
+    // Both tabs open on everything ("All material" / "All"); the narrower choice sits second.
+    const [all, setAll] = React.useState(true);
     const [tone, setTone] = React.useState<'any' | 'good' | 'watch'>('any');
     const [call, setCall] = React.useState('any');
     const [sector, setSector] = React.useState('any');
@@ -67,8 +67,8 @@ export function FilingsFeed({ filings, kind = 'filings', initialCompany = '' }: 
             <div className="flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
                 {news ? (
                     <>
+                        <button className={chip(all)} onClick={() => setAll(true)} title="Including price moves with no clear reason found">All</button>
                         <button className={chip(!all)} onClick={() => setAll(false)}>With a reason</button>
-                        <button className={chip(all)} onClick={() => setAll(true)}>All, incl. unexplained moves</button>
                     </>
                 ) : (
                     <>
