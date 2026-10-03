@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { displayCase } from '@/lib/display-name';
+import { displayCase, shortName } from '@/lib/display-name';
 import type { CompanyFigures } from '@/lib/peers';
 
 // The company card's "Price assumes" and "Peers" tabs, both fed by /api/companies/[id]/peers.
@@ -197,12 +197,18 @@ export function PeerTable({ companyId }: { companyId: string }) {
     return (
         <div>
             <div className="overflow-x-auto">
-                <table className="w-full text-[11px] max-md:text-[10px] tabular-nums">
+                {/* Fixed layout: the label column has a set width and the companies share the rest equally,
+                    so a long name never widens its column (or the card). Phones scroll sideways. */}
+                <table className="w-full table-fixed max-md:min-w-[460px] text-[11px] max-md:text-[10px] tabular-nums">
+                    <colgroup>
+                        <col className="w-[112px] max-md:w-[92px]" />
+                        {cos.map(c => <col key={c.id} />)}
+                    </colgroup>
                     <thead>
                         <tr className="text-gray-500 align-bottom">
                             <th className="sticky left-0 bg-white" />
                             {cos.map(c => (
-                                <th key={c.id} className={`text-right font-semibold py-1 px-1.5 max-md:px-0.5 leading-tight min-w-[52px] ${c.self ? 'bg-[#F0F7FF] text-gray-800 rounded-t' : ''}`}>{displayCase(c.name)}</th>
+                                <th key={c.id} title={displayCase(c.name)} className={`text-right text-[10px] font-semibold py-1.5 px-1 max-md:px-0.5 leading-tight break-words overflow-hidden ${c.self ? 'bg-[#F0F7FF] text-gray-800 rounded-t' : ''}`}>{shortName(c.name)}</th>
                             ))}
                         </tr>
                     </thead>
@@ -215,11 +221,11 @@ export function PeerTable({ companyId }: { companyId: string }) {
                                         <tr><td colSpan={cos.length + 1} className="pt-3 pb-1 text-[10px] font-semibold uppercase tracking-wider text-gray-400">{r.heading}</td></tr>
                                     )}
                                     <tr className="border-t border-gray-50">
-                                        <td title={r.hint} className="py-1 pr-2 max-md:pr-1 text-gray-600 whitespace-nowrap max-md:whitespace-normal max-md:leading-tight sticky left-0 bg-white cursor-help">{r.label}</td>
+                                        <td title={r.hint} className="py-1 pr-1 text-gray-600 leading-tight sticky left-0 bg-white cursor-help">{r.label}</td>
                                         {cos.map(c => {
                                             const v = r.get(c);
                                             return (
-                                                <td key={c.id} className={`py-1 px-1.5 max-md:px-0.5 text-right whitespace-nowrap ${c.self ? 'bg-[#F0F7FF]' : ''} ${v !== null && v === top ? 'text-emerald-600 font-semibold' : v !== null && v < 0 ? 'text-rose-400' : 'text-gray-700'}`}>{r.fmt(v)}</td>
+                                                <td key={c.id} className={`py-1 px-1 max-md:px-0.5 text-right whitespace-nowrap ${c.self ? 'bg-[#F0F7FF]' : ''} ${v !== null && v === top ? 'text-emerald-600 font-semibold' : v !== null && v < 0 ? 'text-rose-400' : 'text-gray-700'}`}>{r.fmt(v)}</td>
                                             );
                                         })}
                                     </tr>
@@ -227,10 +233,10 @@ export function PeerTable({ companyId }: { companyId: string }) {
                             );
                         })}
                         <tr className="border-t border-gray-50">
-                            <td title="The sector note’s verdict" className="py-1 pr-2 text-gray-600 whitespace-nowrap sticky left-0 bg-white cursor-help">Call</td>
+                            <td title="The sector note’s verdict" className="py-1 pr-1 text-gray-600 whitespace-nowrap sticky left-0 bg-white cursor-help">Call</td>
                             {cos.map(c => (
-                                <td key={c.id} className={`py-1 px-1.5 max-md:px-0.5 text-right ${c.self ? 'bg-[#F0F7FF] rounded-b' : ''}`}>
-                                    {c.call ? <span className={`px-1.5 py-px rounded text-[9px] font-semibold uppercase tracking-wide ${CALL_STYLE[c.call]}`}>{c.call}</span> : <span className="text-gray-400">–</span>}
+                                <td key={c.id} className={`py-1 px-0.5 text-right ${c.self ? 'bg-[#F0F7FF] rounded-b' : ''}`}>
+                                    {c.call ? <span className={`px-1 py-px rounded text-[9px] font-semibold capitalize ${CALL_STYLE[c.call]}`}>{c.call}</span> : <span className="text-gray-400">–</span>}
                                 </td>
                             ))}
                         </tr>
