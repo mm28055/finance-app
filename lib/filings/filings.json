@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-02T19:52:39.393Z",
+ "updated": "2026-10-03T18:20:48.830Z",
  "from": "2026-09-01",
- "to": "2026-10-02",
+ "to": "2026-10-03",
  "companiesBySector": {
   "Plastics": 6,
   "Packaging": 10,
@@ -53,6 +53,42 @@
   "Media and Entertainment": 3
  },
  "filings": [
+  {
+   "company": "CMR Green Tech",
+   "sector": "Mining & Metals Recycle",
+   "date": "2026-10-03",
+   "category": "Management change",
+   "tone": "watch",
+   "headline": "CFO Yugal Kishor Garg resigns; Satish Kumar Kaushik to take over as new CFO",
+   "summary": "Mr Yugal Kishor Garg has resigned as Chief Financial Officer of the company due to personal commitments, effective October 23, 2026. To succeed him, the board will consider designating Mr Satish Kumar Kaushik, recently appointed as President Finance, as the new CFO at its November 2026 meeting.",
+   "url": "https://nsearchives.nseindia.com/corporate/CMRGREEN_03102026153846_Intimation_for_Resignation_of_CFO.pdf",
+   "impact": "high",
+   "impactWhy": "CFO resignation is a key management change triggering market reaction."
+  },
+  {
+   "company": "Sedemac Mechatronics",
+   "sector": "Auto Related",
+   "date": "2026-10-03",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Q2 ECU sales volume grew 37.5% YoY to 1.45 million units",
+   "summary": "The company reported its highest-ever quarterly sales of control-intensive ECUs, reaching 1.45 million units in Q2 FY27, a 37.5% increase year-on-year. Trailing twelve-month sales volumes also grew 44.2% to 4.59 million units. Additionally, it crossed the milestone of 1 million cumulative sales for its ISG+EFI ECUs.",
+   "url": "https://nsearchives.nseindia.com/corporate/SEDEMAC2007_03102026122259_20261003-IntimationofPressRelease.pdf",
+   "impact": "high",
+   "impactWhy": "Reported highest-ever quarterly sales volumes, up 37.5% YoY."
+  },
+  {
+   "company": "OnEMI Technology",
+   "sector": "Finance",
+   "date": "2026-10-03",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Strong Q2 update: AUM jumps 68% YoY to ₹9,317cr; disbursements rise 55%",
+   "summary": "OnEMI Technology reported a robust provisional business update for Q2FY27, with Assets Under Management (AUM) surging 68.4% year-on-year to ₹9,317 crore. Quarterly disbursements grew 55.6% year-on-year to ₹4,612 crore, while the registered user base expanded 32.6% to 79.5 million.",
+   "url": "https://nsearchives.nseindia.com/corporate/ONEMI_03102026110326_Press_ReleaseBusinessUpdate03102026.pdf",
+   "impact": "high",
+   "impactWhy": "Sharply higher quarterly business update with AUM surging 68% YoY."
+  },
   {
    "company": "Sobha",
    "sector": "Realty",
@@ -496,6 +532,42 @@
    "url": "https://nsearchives.nseindia.com/corporate/SGFINSERVE_01102026114238_Announcement_Loan_Book1.pdf",
    "impact": "normal",
    "impactWhy": "Provisional quarterly loan book update without earnings impact."
+  },
+  {
+   "company": "Eureka Forbes",
+   "sector": "Consumer Durables",
+   "date": "2026-10-01",
+   "category": "Tax",
+   "tone": "good",
+   "headline": "UP GST tax demand slashed from ₹273.4cr to ₹4.5cr",
+   "summary": "The Uttar Pradesh GST authorities have issued a rectification order for FY23, drastically reducing a previous show-cause notice. The total tax demand, including interest and penalties, has been slashed from ₹273.40 crore to just ₹4.50 crore. The company still maintains the revised notice lacks merit and intends to contest it.",
+   "url": "https://nsearchives.nseindia.com/corporate/SHILPAJAIN_01102026195027_Regulation_30_rectified_SCN_Final_signed.pdf",
+   "impact": "high",
+   "impactWhy": "Major tax demand of ₹273.4 crore slashed to ₹4.5 crore."
+  },
+  {
+   "company": "KSH International",
+   "sector": "Cables",
+   "date": "2026-10-01",
+   "category": "Governance",
+   "tone": "watch",
+   "headline": "Independent Director Ajay Shriram Patil resigns",
+   "summary": "KSH International announced the resignation of Independent Director Ajay Shriram Patil effective October 1, 2026, due to professional and personal commitments. The board concurrently appointed Amitabha Mukhopadhyay as a Non-Executive Independent Director for a three-year term.",
+   "url": "https://nsearchives.nseindia.com/corporate/INTERNATIONAL_01102026172753_KSHOutcomeofBM01102026.pdf",
+   "impact": "normal",
+   "impactWhy": "Resignation of an independent director is routine governance."
+  },
+  {
+   "company": "Studds Accessories",
+   "sector": "Auto Related",
+   "date": "2026-10-01",
+   "category": "Operations",
+   "tone": "watch",
+   "headline": "Commercial production at Manufacturing Facility-V delayed to October-end",
+   "summary": "Studds Accessories has delayed the start of commercial operations at its Manufacturing Facility-V in Faridabad, initially expected by the end of Q2 FY27. Operations are now expected to begin by the end of October 2026 due to operational and procedural matters. The company noted it received the Occupation Certificate for the plant on September 30, 2026.",
+   "url": "https://nsearchives.nseindia.com/corporate/Studds1983_01102026163010_Intimation30092026.pdf",
+   "impact": "normal",
+   "impactWhy": "Minor commercial production delay of just one month is not significant."
   },
   {
    "company": "GNG Electronics",
