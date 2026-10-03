@@ -11,9 +11,22 @@ import type { ResultsStore } from '../results/types';
 /** The first few "Top Takeaways" of a call analysis, as plain one-liners. */
 function takeaways(summary: string | null, n = 2): string[] {
     if (!summary) return [];
-    const lines = summary.split('\n').map(l => l.trim()).filter(l => /^[-*]\s+\*\*[^*]+\*\*/.test(l) && !/top takeaways/i.test(l));
+    // The points listed under "Top Takeaways", bold heading or not; failing that, any list points.
+    const all = summary.split('\n').map(l => l.trim());
+    const start = all.findIndex(l => /top takeaways/i.test(l));
+    // A list point: "- ...", "* ...", "• ..." or "1. ...".
+    const MARK = /^([-*•]|\d{1,2}[.)])\s+/;
+    const bullet = (l: string) => MARK.test(l) && !/top takeaways/i.test(l) && l.replace(MARK, '').replace(/\*\*/g, '').trim().length > 25;
+    let lines: string[] = [];
+    if (start >= 0) {
+        for (const l of all.slice(start + 1)) {
+            if (bullet(l)) lines.push(l);
+            else if (lines.length && (/^#/.test(l) || /^[-*•]\s+\*\*[^*]+\*\*:?\s*$/.test(l))) break;
+        }
+    }
+    if (!lines.length) lines = all.filter(bullet);
     return lines.slice(0, n).map(l => {
-        const t = l.replace(/^[-*]\s+/, '').replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
+        const t = l.replace(MARK, '').replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
         return t.length > 220 ? `${t.slice(0, 217).replace(/\s+\S*$/, '')}…` : t;
     });
 }
@@ -39,7 +52,7 @@ export async function filingsFeed() {
     });
     const analyses = ts.length ? await prisma.analysis.findMany({
         where: { OR: ts.map(t => ({ companyId: t.companyId, quarterId: t.quarterId })) },
-        select: { companyId: true, quarterId: true, summary: true, investibilityScore: true, guidanceGrowthMin: true, guidanceGrowthMax: true, guidanceFy: true, guidanceBasis: true },
+        select: { companyId: true, quarterId: true, summary: true, investorBrief: true, investibilityScore: true, guidanceGrowthMin: true, guidanceGrowthMax: true, guidanceFy: true, guidanceBasis: true },
     }) : [];
     const byKey = new Map(analyses.map(a => [`${a.companyId}|${a.quarterId}`, a]));
     const callsList = ts.flatMap(t => {
@@ -51,7 +64,7 @@ export async function filingsFeed() {
         return [withCall({
             company: t.company.name, sector: t.company.sector, quarter: t.quarter.name, general: t.quarter.q === 'GEN',
             date: (t.sourceEventDate || t.createdAt).toISOString().slice(0, 10),
-            score: a.investibilityScore ?? null, guidance: g, points: takeaways(a.summary),
+            score: a.investibilityScore ?? null, guidance: g, points: takeaways(a.summary && a.summary.trim().length > 20 ? a.summary : a.investorBrief),
         })];
     }).sort((x, y) => y.date.localeCompare(x.date) || x.company.localeCompare(y.company));
 
