@@ -2,8 +2,10 @@
 import React from 'react';
 import { ExternalLink, Search } from 'lucide-react';
 import type { CompanyEvent } from '@/lib/events/types';
+import type { QuarterResult } from '@/lib/results/types';
+import { ResultCard } from './ResultCard';
 
-type Row = CompanyEvent & { call?: string; inPortfolio?: boolean };
+type Row = CompanyEvent & { call?: string; inPortfolio?: boolean; /** The quarter's figures and view, once the results are out. */ result?: QuarterResult };
 
 const CALL_TONE: Record<string, string> = {
     own: 'bg-emerald-50 text-emerald-700', follow: 'bg-[#EAF2FB] text-[#4A7AAF]', wait: 'bg-gray-100 text-gray-600',
@@ -93,6 +95,7 @@ export function EventsCalendar({ events, today, initialQuery = '', onCompany }: 
                                         Notice <ExternalLink className="w-3 h-3" />
                                     </a>
                                 )}
+                                {e.result && <ResultCard result={e.result} />}
                             </div>
                         ))}
                     </div>

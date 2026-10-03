@@ -12,8 +12,8 @@ sub-agents. Today's date: run `date`.
 ## 1. What to do
 Two inputs: the open follow-ups in `lib/corporate-actions/needs-attention.json` (entries WITHOUT a `handled` field),
 and the week's material filings in `lib/filings/filings.json` and market news in `lib/news/news.json` (dated after the last
-entry in `ops/weekly-log.md`).
-If both are empty, stop: change nothing, commit nothing.
+entry in `ops/weekly-log.md`), and the quarter results in `lib/results/results.json` without a `reviewed` field.
+If all are empty, stop: change nothing, commit nothing.
 
 Order of work (at most 40 follow-ups per run; the rest wait for the next run — say how many are left in the log. After every
 10 handled, run the section-3 checks, commit and push, so a run that stops early loses nothing):
@@ -22,6 +22,7 @@ Order of work (at most 40 follow-ups per run; the rest wait for the next run —
 3. Call drift, shareholding, demergers, new AGMs / special calls.
 4. The filings pass (below).
 5. The news pass (below).
+6. The results pass (below).
 
 For each entry, by its `subject`/`why`:
 
@@ -127,6 +128,14 @@ a testable expectation (e.g. "final commission caps notified by Q4 FY27"), and r
 if clearly warranted. Such an event that hits several companies of one sector also belongs once in that note's
 sector sections. A price move whose reason is a company filing is already covered by the filings pass. Ignore
 entries with `"dot": false` (no clear reason found). List what you did in the log.
+
+**Results pass.** `lib/results/results.json` (the evening job writes it) holds each quarter's figures read the night
+the results came out, with an overnight view (`take`, written by Gemini) and, once the call is analysed, `call`. For
+each entry without `reviewed`: check the figures against Screener, read the take and the call note, and decide whether
+the overnight verdict is right. If the result changes the case, it is handled with the company's new results call
+(item 2 above) — do not update the note twice. Then add `"reviewed": {"on": "<YYYY-MM-DD>", "text": "<one line: your
+view, and if you disagree with the overnight verdict, why>"}`. Correct a wrong figure or a wrong `take.verdict` in
+place (say so in `reviewed.text`). The calendar shows the review under the result.
 
 Then mark the entry done: add `"handled": "<YYYY-MM-DD>: <one line: what you found and did>"`. Never delete entries.
 

@@ -113,3 +113,32 @@ jobs:
           GOOGLE_AI_KEYS: ${{ secrets.GOOGLE_AI_KEYS }}
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
+      # Results out in the last five days (dates from the calendar above): the quarter's figures from
+      # Screener's quarterly table, a short view on them, and what the call added once it has been
+      # analysed (the step above). Runs last so the call notes can be added the same night; never fails the job.
+      - name: Results figures and the overnight view
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        timeout-minutes: 60
+        run: npx tsx scripts/sync-results.ts
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+          GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
+          GOOGLE_AI_KEYS: ${{ secrets.GOOGLE_AI_KEYS }}
+
+      - name: Commit the results
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        run: |
+          if git diff --quiet lib/results; then
+            echo "No results changes."
+            exit 0
+          fi
+          git config user.name "filings-bot"
+          git config user.email "filings-bot@users.noreply.github.com"
+          git add lib/results/results.json
+          git commit -m "Update quarter results and the overnight view"
+          git pull --rebase
+          git push
