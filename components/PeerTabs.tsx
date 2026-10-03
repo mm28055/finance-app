@@ -32,10 +32,14 @@ function usePeers(companyId: string) {
 }
 
 const YEARS = 10;
-/** Yearly profit growth needed for `r` a year over ten years, if the P/E ends at `exitPe`. */
-const impliedGrowth = (pe: number, r: number, exitPe: number) => Math.pow((pe * Math.pow(1 + r, YEARS)) / exitPe, 1 / YEARS) - 1;
-/** Yearly return over ten years if profit grows at `g` and the P/E ends at `exitPe`. */
-const returnAt = (pe: number, g: number, exitPe: number) => (1 + g <= 0 ? null : Math.pow((Math.pow(1 + g, YEARS) * exitPe) / pe, 1 / YEARS) - 1);
+/** Yearly profit growth needed for `r` a year over `years`, if the P/E ends at `exitPe`. */
+const impliedGrowth = (pe: number, r: number, exitPe: number, years: number = YEARS) => Math.pow((pe * Math.pow(1 + r, years)) / exitPe, 1 / years) - 1;
+/** Yearly return over `years` if profit grows at `g` and the P/E ends at `exitPe`. */
+const returnAt = (pe: number, g: number, exitPe: number, years: number = YEARS) => (1 + g <= 0 ? null : Math.pow((Math.pow(1 + g, years) * exitPe) / pe, 1 / years) - 1);
+/** Holding periods offered (years); the owner holds 2–4 years. Shared with the sector valuation table. */
+const HOLDS = [2, 3, 4, 5, 10];
+/** P/E when you sell; 0 stands for "today's P/E". */
+const EXIT_PES = [15, 20, 25, 35, 50, 0];
 
 const pct = (v: number | null | undefined) => (v === null || v === undefined ? '–' : `${Math.round(v)}%`);
 const times = (v: number | null | undefined) => (v === null || v === undefined ? '–' : `${v >= 10 ? Math.round(v) : v.toFixed(1)}x`);
@@ -63,14 +67,25 @@ function Choice<T extends number>({ label, value, options, format, onChange }: {
 export function PriceAssumes({ companyId }: { companyId: string }) {
     const data = usePeers(companyId);
     const [want, setWant] = React.useState(0.15);
-    const [exitPe, setExitPe] = React.useState(20);
+    const [exitChoice, setExitPe] = React.useState(20);
+    // Holding period: 3 years unless the owner picked another here or in a sector's valuation table.
+    const [years, setYearsState] = React.useState(3);
+    React.useEffect(() => {
+        try { const y = Number(localStorage.getItem('holdYears')); if (HOLDS.includes(y)) setYearsState(y); } catch { /* storage unavailable */ }
+    }, []);
+    const setYears = (y: number) => { setYearsState(y); try { localStorage.setItem('holdYears', String(y)); } catch { /* storage unavailable */ } };
     if (!data || data === 'error') return <Loading data={data} />;
     const c = data.self;
+    // "Today" keeps the P/E where it is now.
+    const exitPe = exitChoice === 0 && c.pe ? c.pe : exitChoice || 20;
+    const exitText = exitChoice === 0 ? `today’s ${times(c.pe)}` : `${exitPe} times profit`;
+    const span = years === 1 ? 'a year' : `${years} years`;
 
     const controls = (
         <div className="flex flex-wrap gap-x-4 gap-y-1.5 mb-3">
+            <Choice label="Years you hold" value={years} options={HOLDS} format={v => `${v}`} onChange={setYears} />
             <Choice label="Return you want" value={want} options={[0.10, 0.12, 0.15]} format={v => `${Math.round(v * 100)}%`} onChange={setWant} />
-            <Choice label="P/E in 10 years" value={exitPe} options={[15, 20, 25]} format={v => `${v}`} onChange={setExitPe} />
+            <Choice label="P/E when you sell" value={exitChoice} options={EXIT_PES} format={v => (v === 0 ? 'today' : `${v}`)} onChange={setExitPe} />
         </div>
     );
 
@@ -88,7 +103,7 @@ export function PriceAssumes({ companyId }: { companyId: string }) {
         );
     }
 
-    const needed = impliedGrowth(c.pe, want, exitPe) * 100;
+    const needed = impliedGrowth(c.pe, want, exitPe, years) * 100;
     const compare: { label: string; hint: string; g: number | null; note?: boolean }[] = [
         { label: "Note's growth estimate", hint: "The sector note's base case for yearly profit growth over the next 3–5 years", g: c.noteGrowth, note: true },
         { label: 'Profit growth, last 3 yrs', hint: 'Compounded yearly growth in net profit over the last three years', g: c.profitGrowth3 },
@@ -115,10 +130,10 @@ export function PriceAssumes({ companyId }: { companyId: string }) {
             {controls}
             <div className="flex items-baseline gap-2 mb-1">
                 <span className="text-2xl font-bold text-gray-800 tabular-nums">{Math.round(needed)}%</span>
-                <span className="text-[11px] text-gray-500">profit growth a year, for 10 years</span>
+                <span className="text-[11px] text-gray-500">profit growth a year, for {span}</span>
             </div>
             <p className="text-[11px] text-gray-600 leading-relaxed mb-1">
-                That is what a buyer at {rupees(c.price)} needs to earn {Math.round(want * 100)}% a year, if the shares trade at {exitPe} times profit in ten years&apos; time.
+                That is what a buyer at {rupees(c.price)} needs to earn {Math.round(want * 100)}% a year, if the shares trade at {exitText} when sold in {span}&apos; time.
             </p>
             {reading && <p className="text-[11px] font-medium text-gray-800 mb-3">{reading}</p>}
 
@@ -126,7 +141,7 @@ export function PriceAssumes({ companyId }: { companyId: string }) {
                 <div className="grid grid-cols-[minmax(0,1fr)_44px_64px] gap-2 text-[9px] text-gray-400 font-medium uppercase tracking-wide">
                     <span />
                     <span className="text-right">Growth</span>
-                    <span className="text-right" title={`Yearly return over ten years at this growth, with the P/E ending at ${exitPe}`}>Your return</span>
+                    <span className="text-right" title={`Yearly return over ${span} at this growth, with the P/E at ${Math.round(exitPe)} when you sell`}>Your return</span>
                 </div>
                 <div className="grid grid-cols-[minmax(0,1fr)_44px_64px] gap-2 items-center">
                     <div className="min-w-0">
@@ -138,7 +153,7 @@ export function PriceAssumes({ companyId }: { companyId: string }) {
                 </div>
                 {compare.map(x => {
                     const g = x.g as number;
-                    const r = returnAt(c.pe!, g / 100, exitPe);
+                    const r = returnAt(c.pe!, g / 100, exitPe, years);
                     const enough = g >= needed;
                     return (
                         <div key={x.label} className="grid grid-cols-[minmax(0,1fr)_44px_64px] gap-2 items-center">
@@ -154,7 +169,7 @@ export function PriceAssumes({ companyId }: { companyId: string }) {
             </div>
 
             <p className="text-[10px] text-gray-400 mt-3 leading-relaxed">
-                Based on the P/E on the company&apos;s row, {times(c.pe)} (Screener&apos;s, on the last 12 months&apos; profit). Each growth rate is applied for all ten years; dividends are left out.
+                Based on the P/E on the company&apos;s row, {times(c.pe)} (Screener&apos;s, on the last 12 months&apos; profit). Each growth rate is applied for all {span}; dividends are left out. On a short hold the P/E when you sell matters most: a stock at {times(c.pe)} that ends at 20 loses most of its profit growth to the shrinking multiple, so try a higher P/E for a company still growing fast.
                 {c.stance === 'CYCLICAL' || c.stance === 'TURNAROUND' ? ' The note calls this business ' + (c.stance === 'CYCLICAL' ? 'cyclical' : 'a turnaround') + ', so the last 12 months may not be a fair base for profit.' : ''}
             </p>
         </div>
