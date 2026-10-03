@@ -172,7 +172,6 @@ export function PeerTable({ companyId }: { companyId: string }) {
     if (!data || data === 'error') return <Loading data={data} />;
     const cos = [data.self, ...data.peers];
     if (cos.length < 2) return <div className="text-[11px] text-gray-400 py-4 text-center">No listed rivals in the dashboard for this company.</div>;
-    const anyLender = cos.some(c => c.lender);
     const assumes = (c: CompanyFigures) => (c.pe ? impliedGrowth(c.pe, 0.12, 20) * 100 : null);
 
     const rows: { heading?: string; label: string; hint: string; get: (c: CompanyFigures) => number | null; fmt: (v: number | null) => string; better?: Better }[] = [
@@ -183,11 +182,12 @@ export function PeerTable({ companyId }: { companyId: string }) {
         { heading: 'Quality', label: 'Operating margin', hint: 'Operating profit ÷ sales, last 12 months (not shown for lenders)', get: c => c.margin, fmt: pct, better: 'high' },
         { label: 'ROCE', hint: 'Return on capital employed, latest year', get: c => c.roce, fmt: pct, better: 'high' },
         { label: 'Return on equity', hint: 'Net profit ÷ shareholders’ money, last year', get: c => c.roe, fmt: pct, better: 'high' },
-        { label: 'Free cash ÷ profit, 5 yrs', hint: 'Free cash flow ÷ net profit, summed over five years. Below zero: growth or slow collections are eating more cash than the business makes', get: c => (c.cashConversion === null ? null : c.cashConversion * 100), fmt: pct, better: 'high' },
+        { label: 'Free cash ÷ profit', hint: 'Free cash flow ÷ net profit, both summed over the last five years. Below zero: growth or slow collections are eating more cash than the business makes', get: c => (c.cashConversion === null ? null : c.cashConversion * 100), fmt: pct, better: 'high' },
         { label: 'Debt ÷ equity', hint: 'Borrowings ÷ shareholders’ money, latest balance sheet (not shown for lenders)', get: c => c.debtToEquity, fmt: v => (v === null ? '–' : v.toFixed(2)), better: 'low' },
         { heading: 'Price', label: 'P/E', hint: 'Price ÷ last 12 months’ earnings, as on the company’s row (Screener’s figure)', get: c => c.pe, fmt: times, better: 'low' },
         { label: 'EV/EBITDA', hint: 'Market value plus debt less cash, ÷ last 12 months’ operating profit (not shown for lenders)', get: c => c.evEbitda, fmt: times, better: 'low' },
-        ...(anyLender ? [{ label: 'Price ÷ book', hint: 'Market value ÷ shareholders’ money', get: (c: CompanyFigures) => c.pb, fmt: times, better: 'low' as Better }] : []),
+        { label: 'P/B', hint: 'Price ÷ book value (shareholders’ money), as on the company’s row', get: c => c.pb, fmt: times, better: 'low' },
+        { label: 'P/Sales', hint: 'Market value ÷ last 12 months’ sales, as on the company’s row', get: c => c.ps, fmt: times, better: 'low' },
         { label: 'Price assumes', hint: 'Yearly profit growth needed for 10 years to earn 12% a year, if the P/E ends at 20 (the "Price assumes" tab lets you change both)', get: assumes, fmt: pct, better: 'low' },
         { heading: 'The notes', label: 'Growth estimate', hint: 'The sector note’s base case for yearly profit growth, 3–5 years', get: c => c.noteGrowth, fmt: pct, better: 'high' },
     ];

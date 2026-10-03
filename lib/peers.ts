@@ -22,7 +22,9 @@ export interface CompanyFigures {
     /** The P/E on the company's dashboard row (Screener's, refreshed daily); null when the company lost money. */
     pe: number | null;
     evEbitda: number | null;
+    /** As on the company's row: price ÷ book and market cap ÷ last 12 months' sales. */
     pb: number | null;
+    ps: number | null;
     salesGrowth3: number | null;
     salesGrowth5: number | null;
     profitGrowth3: number | null;
@@ -115,13 +117,15 @@ export async function peerSet(companyId: string) {
 export async function companyFigures(companyId: string, isSelf: boolean): Promise<CompanyFigures | null> {
     const co = await prisma.company.findUnique({
         where: { id: companyId },
-        select: { id: true, name: true, marketCap: true, currentPrice: true, roce: true, peRatio: true },
+        select: { id: true, name: true, marketCap: true, currentPrice: true, roce: true, peRatio: true, pbRatio: true, ttmSales: true },
     });
     if (!co) return null;
     const base: CompanyFigures = {
         id: co.id, name: co.name, self: isSelf,
         marketCap: co.marketCap ? Number(co.marketCap) : null, price: co.currentPrice ? Number(co.currentPrice) : null,
-        eps: null, pe: null, evEbitda: null, pb: null,
+        eps: null, pe: null, evEbitda: null,
+        pb: co.pbRatio ? Number(co.pbRatio) : null,
+        ps: co.marketCap && co.ttmSales && Number(co.ttmSales) > 0 ? Number(co.marketCap) / Number(co.ttmSales) : null,
         salesGrowth3: null, salesGrowth5: null, profitGrowth3: null, profitGrowth5: null, profitGrowth10: null,
         margin: null, roce: co.roce ? Number(co.roce) : null, roe: null, cashConversion: null, debtToEquity: null,
         lender: false, noteGrowth: null, call: null, stance: null,
@@ -169,7 +173,7 @@ export async function companyFigures(companyId: string, isSelf: boolean): Promis
 
         const equity = (last(bs, 'Equity Capital') ?? 0) + (last(bs, 'Reserves') ?? 0);
         const debt = last(bs, 'Borrowings');
-        if (base.marketCap && equity > 0) base.pb = base.marketCap / equity;
+        if (base.pb === null && base.marketCap && equity > 0) base.pb = base.marketCap / equity;
         if (!base.lender && debt !== null && equity > 0) base.debtToEquity = debt / equity;
 
         // Five years of free cash against five years of profit, on the same years.
