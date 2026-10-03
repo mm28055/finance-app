@@ -147,3 +147,69 @@ export function CallsFeed({ calls, onCompany }: { calls: CallRow[]; onCompany?: 
         </div>
     );
 }
+
+export type CallChangeRow = {
+    date: string; company: string; sector: string; from: string | null; to: string | null;
+    price: number | null; priceNow: number | null; why?: string; inPortfolio?: boolean;
+};
+const RANK: Record<string, number> = { own: 0, follow: 1, wait: 2, pass: 3, avoid: 4 };
+const direction = (c: CallChangeRow) => (!c.from ? 'new' : !c.to ? 'dropped' : RANK[c.to] < RANK[c.from] ? 'up' : 'down');
+
+/** Every change in the notes' calls, newest first, with the move in the share price since. */
+export function CallChangesFeed({ changes, onCompany }: { changes: CallChangeRow[]; onCompany?: (c: string) => void }) {
+    const [dir, setDir] = React.useState<'any' | 'up' | 'down'>('any');
+    const [portfolio, setPortfolio] = React.useState(false);
+    const [sector, setSector] = React.useState('any');
+    const [q, setQ] = React.useState('');
+    const sectors = React.useMemo(() => [...new Set(changes.map(c => c.sector))].sort(), [changes]);
+    const shown = changes.filter(c => (dir === 'any' || direction(c) === dir) && (!portfolio || c.inPortfolio)
+        && (sector === 'any' || c.sector === sector) && (!q || c.company.toLowerCase().includes(q.toLowerCase())));
+    return (
+        <div className="flex flex-col gap-4">
+            <div className="flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
+                <button className={chip(dir === 'any')} onClick={() => setDir('any')}>All</button>
+                <button className={chip(dir === 'up')} onClick={() => setDir('up')}>Upgrades</button>
+                <button className={chip(dir === 'down')} onClick={() => setDir('down')}>Downgrades</button>
+                <span className="w-px h-5 bg-gray-200 mx-1" />
+                <button className={chip(portfolio)} onClick={() => setPortfolio(p => !p)}>My portfolio</button>
+                <select className={select} value={sector} onChange={e => setSector(e.target.value)}>
+                    <option value="any">All sectors</option>
+                    {sectors.map(s => <option key={s} value={s}>{s}</option>)}
+                </select>
+                <SearchBox q={q} setQ={setQ} />
+                <span className="ml-auto text-[11px] text-gray-400">{shown.length} changes</span>
+            </div>
+            {byDay(shown).map(([day, list]) => (
+                <section key={day}>
+                    <p className="text-[11px] font-semibold text-gray-500 mb-1.5">{dayLabel(day)}</p>
+                    <div className="bg-white border border-gray-200 rounded-xl divide-y divide-gray-100">
+                        {list.map(c => {
+                            const d = direction(c);
+                            const since = c.price && c.priceNow ? Math.round(((c.priceNow - c.price) / c.price) * 1000) / 10 : null;
+                            return (
+                                <div key={`${c.company}-${c.date}`} className="px-3 py-2.5">
+                                    <div className="flex flex-wrap items-center gap-2">
+                                        <Name r={{ company: c.company }} onCompany={onCompany} />
+                                        <span className="flex items-center gap-1 text-[11px]">
+                                            {c.from ? <span className={`px-1.5 rounded font-semibold ${CALL_TONE[c.from] || ''}`}>{c.from}</span> : <span className="text-gray-400">new</span>}
+                                            <span className={d === 'up' ? 'text-emerald-600' : d === 'down' ? 'text-rose-500' : 'text-gray-400'}>{d === 'up' ? '▲' : d === 'down' ? '▼' : '→'}</span>
+                                            {c.to ? <span className={`px-1.5 rounded font-semibold ${CALL_TONE[c.to] || ''}`}>{c.to}</span> : <span className="text-gray-400">no longer covered</span>}
+                                        </span>
+                                        <span className="text-[10px] text-gray-400">{c.sector}</span>
+                                        {c.price !== null && (
+                                            <span className="ml-auto text-[11px] text-gray-500 tabular-nums" title="Share price on the day of the change, and since">
+                                                ₹{c.price.toLocaleString('en-IN')}{since !== null && <span className={since > 0 ? 'text-emerald-600' : since < 0 ? 'text-rose-500' : ''}> · {since > 0 ? '+' : ''}{since}% since</span>}
+                                            </span>
+                                        )}
+                                    </div>
+                                    {c.why && <p className="text-[12px] text-gray-700 leading-snug mt-1">{c.why}</p>}
+                                </div>
+                            );
+                        })}
+                    </div>
+                </section>
+            ))}
+            {!shown.length && <p className="text-sm text-gray-400">{changes.length ? 'No changes match.' : 'No call changes yet. Every change to own, follow, wait, pass or avoid is recorded here from 3 Oct 2026.'}</p>}
+        </div>
+    );
+}

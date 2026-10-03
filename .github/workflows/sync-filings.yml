@@ -142,3 +142,24 @@ jobs:
           git commit -m "Update quarter results and the overnight view"
           git pull --rebase
           git push
+
+      # Changes in the notes' calls (own / follow / wait / pass / avoid) since last night, with the
+      # day's price: shown in the Filings panel's "Call changes" tab. Never fails the job.
+      - name: Record call changes
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        run: |
+          npx tsx scripts/track-call-changes.ts
+          if git diff --quiet lib/calls-log; then
+            echo "No call changes."
+            exit 0
+          fi
+          git config user.name "filings-bot"
+          git config user.email "filings-bot@users.noreply.github.com"
+          git add lib/calls-log/changes.json lib/calls-log/snapshot.json
+          git commit -m "Record call changes"
+          git pull --rebase
+          git push
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}

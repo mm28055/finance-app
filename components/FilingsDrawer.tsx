@@ -4,7 +4,7 @@ import { FilingsTabs } from './FilingsTabs';
 import { SlidePanel, usePanelForLink } from './SlidePanel';
 
 type Props = React.ComponentProps<typeof FilingsTabs>;
-type Data = { to: string; filings: Props['filings']; news: Props['news']; results: NonNullable<Props['results']>; calls: NonNullable<Props['calls']> };
+type Data = { to: string; filings: Props['filings']; news: Props['news']; results: NonNullable<Props['results']>; calls: NonNullable<Props['calls']>; callChanges: NonNullable<Props['callChanges']> };
 
 // The Filings list as a panel that slides in from the right, opened by any link to /filings (the
 // header button, and a company row's "filings" and "news" markers, which carry the company in
@@ -34,12 +34,12 @@ export function FilingsDrawer() {
 
     return (
         <SlidePanel open={open} onClose={close} title="Filings"
-            subtitle={`Filings, news, results and calls, across every company${data && data !== 'error' ? ` · up to ${data.to}` : ''}`}>
+            subtitle={`Filings, news, results, calls and call changes, across every company${data && data !== 'error' ? ` · up to ${data.to}` : ''}`}>
             {open && data === null && <div className="h-40 bg-gray-100 rounded-xl animate-pulse" />}
             {data === 'error' && <p className="text-sm text-gray-400">The filings could not be loaded. Close and try again.</p>}
             {/* Kept mounted once loaded, so the filters chosen are still there when it is opened again. */}
             {/* Opened from a company marker, it starts afresh on that company; from the header, it keeps its filters. */}
-            {data && data !== 'error' && <FilingsTabs key={company ? `${company}:${tab}` : 'all'} filings={data.filings} news={data.news} results={data.results} calls={data.calls} initialTab={tab} initialCompany={company} onCompany={showCompany} />}
+            {data && data !== 'error' && <FilingsTabs key={company ? `${company}:${tab}` : 'all'} filings={data.filings} news={data.news} results={data.results} calls={data.calls} callChanges={data.callChanges} initialTab={tab} initialCompany={company} onCompany={showCompany} />}
         </SlidePanel>
     );
 }

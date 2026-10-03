@@ -8,6 +8,8 @@ import { prisma } from '../prisma';
 import store from '../results/results.json';
 import type { ResultsStore } from '../results/types';
 import { generalDocLabel } from '../doc-label';
+import changesStore from '../calls-log/changes.json';
+import type { CallChangesStore } from '../calls-log/types';
 
 /** The "Top Takeaways" of a call analysis (up to four; most analyses list three to five), as plain one-liners. */
 function takeaways(summary: string | null, n = 4): string[] {
@@ -71,5 +73,12 @@ export async function filingsFeed() {
         })];
     }).sort((x, y) => y.date.localeCompare(x.date) || x.company.localeCompare(y.company));
 
-    return { to, filings: filings.map(withCall), news, results, calls: callsList };
+    // Changes in the notes' calls (lib/calls-log), with today's price for "since the change".
+    const changesRaw = (changesStore as unknown as CallChangesStore).changes;
+    const prices = changesRaw.length ? new Map((await prisma.company.findMany({
+        where: { name: { in: [...new Set(changesRaw.map(c => c.company))] } }, select: { name: true, currentPrice: true },
+    })).map(c => [c.name, c.currentPrice ? Number(c.currentPrice) : null])) : new Map<string, number | null>();
+    const callChanges = changesRaw.map(c => ({ ...c, priceNow: prices.get(c.company) ?? null, inPortfolio: portfolio.has(c.company) }));
+
+    return { to, filings: filings.map(withCall), news, results, calls: callsList, callChanges };
 }

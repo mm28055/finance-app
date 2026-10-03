@@ -1,0 +1,2597 @@
+{
+ "date": "2026-10-03",
+ "calls": {
+  "Anthem Biosciences": {
+   "call": "follow",
+   "sector": "Pharma CDMO"
+  },
+  "Sai Life Sciences": {
+   "call": "follow",
+   "sector": "Pharma CDMO"
+  },
+  "Neuland Laboratories": {
+   "call": "follow",
+   "sector": "Pharma CDMO"
+  },
+  "Piramal Pharma": {
+   "call": "wait",
+   "sector": "Pharma CDMO"
+  },
+  "Cohance Lifesciences": {
+   "call": "avoid",
+   "sector": "Pharma CDMO"
+  },
+  "Dishman Carbogen (Carbogen Amcis)": {
+   "call": "avoid",
+   "sector": "Pharma CDMO"
+  },
+  "Gland Pharma": {
+   "call": "own",
+   "sector": "Pharma CDMO"
+  },
+  "Onesource Specialty": {
+   "call": "wait",
+   "sector": "Pharma CDMO"
+  },
+  "Jubilant Pharmova": {
+   "call": "wait",
+   "sector": "Pharma CDMO"
+  },
+  "Akums Drugs": {
+   "call": "follow",
+   "sector": "Pharma CDMO"
+  },
+  "Innova Captab": {
+   "call": "follow",
+   "sector": "Pharma CDMO"
+  },
+  "Windlas Biotech": {
+   "call": "own",
+   "sector": "Pharma CDMO"
+  },
+  "Senores Pharmaceutic": {
+   "call": "wait",
+   "sector": "Pharma CDMO"
+  },
+  "Aether Industries": {
+   "call": "pass",
+   "sector": "Pharma CDMO"
+  },
+  "Jubilant Ingrevia": {
+   "call": "wait",
+   "sector": "Pharma CDMO"
+  },
+  "Aarti Pharmalabs": {
+   "call": "wait",
+   "sector": "Pharma CDMO"
+  },
+  "Fiem Industries": {
+   "call": "own",
+   "sector": "Auto Related"
+  },
+  "Lumax Industries": {
+   "call": "follow",
+   "sector": "Auto Related"
+  },
+  "Pricol": {
+   "call": "follow",
+   "sector": "Auto Related"
+  },
+  "Minda Corp": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Varroc Engineering": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Motherson Sumi Wirin": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Sona BLW Precision": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Sedemac Mechatronics": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Dhoot Transmission": {
+   "call": "pass",
+   "sector": "Auto Related"
+  },
+  "Divgi Torqtransfer": {
+   "call": "pass",
+   "sector": "Auto Related"
+  },
+  "Studds Accessories": {
+   "call": "follow",
+   "sector": "Auto Related"
+  },
+  "Amara Raja Energy": {
+   "call": "follow",
+   "sector": "Auto Related"
+  },
+  "Exide Industries": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "CIE Automotive": {
+   "call": "own",
+   "sector": "Auto Related"
+  },
+  "Talbros Auto Compont": {
+   "call": "own",
+   "sector": "Auto Related"
+  },
+  "Rolex Rings": {
+   "call": "follow",
+   "sector": "Auto Related"
+  },
+  "Shriram Pistons": {
+   "call": "follow",
+   "sector": "Auto Related"
+  },
+  "ASK Automotive": {
+   "call": "follow",
+   "sector": "Auto Related"
+  },
+  "Rajratan Global": {
+   "call": "follow",
+   "sector": "Auto Related"
+  },
+  "Menon Bearings": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "RACL Geartech": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Sundram Fasteners": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Craftsman Automation": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Alicon Castalloy": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Sterling Tools": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "OBSC Perfection": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Rico Auto Industries": {
+   "call": "pass",
+   "sector": "Auto Related"
+  },
+  "Poojaa Precision Engg": {
+   "call": "pass",
+   "sector": "Auto Related"
+  },
+  "Precision Camshafts": {
+   "call": "pass",
+   "sector": "Auto Related"
+  },
+  "Ramkrishna Forgings": {
+   "call": "pass",
+   "sector": "Auto Related"
+  },
+  "Uniparts India": {
+   "call": "own",
+   "sector": "Auto Related"
+  },
+  "Auto.Axle": {
+   "call": "follow",
+   "sector": "Auto Related"
+  },
+  "Carraro India": {
+   "call": "follow",
+   "sector": "Auto Related"
+  },
+  "ZF Comm Vehic Contr": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Steel Strips Wheels": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Wheels India": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Kross": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Frontier Springs": {
+   "call": "pass",
+   "sector": "Auto Related"
+  },
+  "Tenneco Clean Air": {
+   "call": "follow",
+   "sector": "Auto Related"
+  },
+  "Sharda Motor": {
+   "call": "follow",
+   "sector": "Auto Related"
+  },
+  "NDR Auto Components": {
+   "call": "follow",
+   "sector": "Auto Related"
+  },
+  "SJS Enterprises": {
+   "call": "follow",
+   "sector": "Auto Related"
+  },
+  "Lumax Auto Tech": {
+   "call": "follow",
+   "sector": "Auto Related"
+  },
+  "Suprajit Engineering": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Sandhar Technologies": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Rane (Madras)": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Remsons Industries": {
+   "call": "wait",
+   "sector": "Auto Related"
+  },
+  "Gabriel India": {
+   "call": "pass",
+   "sector": "Auto Related"
+  },
+  "Belrise Industries": {
+   "call": "pass",
+   "sector": "Auto Related"
+  },
+  "JTEKT India": {
+   "call": "pass",
+   "sector": "Auto Related"
+  },
+  "Crompt.Greaves Cons.": {
+   "call": "follow",
+   "sector": "Consumer Durables"
+  },
+  "V-Guard Industri": {
+   "call": "follow",
+   "sector": "Consumer Durables"
+  },
+  "Eureka Forbes": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "IFB Industries": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Orient Electric": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Eveready Industries India": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Symphony": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Voltas": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Blue Star": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Whirlpool India": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Bajaj Electricals": {
+   "call": "pass",
+   "sector": "Consumer Durables"
+  },
+  "Epack Durable": {
+   "call": "avoid",
+   "sector": "Consumer Durables"
+  },
+  "Carysil": {
+   "call": "follow",
+   "sector": "Consumer Durables"
+  },
+  "TTK Prestige": {
+   "call": "follow",
+   "sector": "Consumer Durables"
+  },
+  "Cello World": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "All Time Plastic": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Borosil": {
+   "call": "pass",
+   "sector": "Consumer Durables"
+  },
+  "Stove Kraft": {
+   "call": "pass",
+   "sector": "Consumer Durables"
+  },
+  "Indigo Paints": {
+   "call": "follow",
+   "sector": "Consumer Durables"
+  },
+  "Kansai Nerolac": {
+   "call": "follow",
+   "sector": "Consumer Durables"
+  },
+  "Akzo Nobel": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Sirca Paints": {
+   "call": "pass",
+   "sector": "Consumer Durables"
+  },
+  "Kajaria Ceramics": {
+   "call": "follow",
+   "sector": "Consumer Durables"
+  },
+  "Stylam Industrie": {
+   "call": "follow",
+   "sector": "Consumer Durables"
+  },
+  "Cera Sanitaryware": {
+   "call": "follow",
+   "sector": "Consumer Durables"
+  },
+  "Somany Ceramics": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Century Plyboards(I)": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Greenply Industries": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Orient Bell": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Greenlam Industries": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Rushil Decor": {
+   "call": "pass",
+   "sector": "Consumer Durables"
+  },
+  "Greenpanel Inds.": {
+   "call": "pass",
+   "sector": "Consumer Durables"
+  },
+  "Hindware Home Innov.": {
+   "call": "pass",
+   "sector": "Consumer Durables"
+  },
+  "Mayur Uniquoters": {
+   "call": "own",
+   "sector": "Consumer Durables"
+  },
+  "Jyothy Labs": {
+   "call": "follow",
+   "sector": "Consumer Durables"
+  },
+  "Bajaj Consumer Care": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Honasa Consumer (Mamaearth)": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Metro Brands": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Campus Activewear": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Wakefit Innovations": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Bata India": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Sheela Foam": {
+   "call": "pass",
+   "sector": "Consumer Durables"
+  },
+  "Relaxo Footwears": {
+   "call": "pass",
+   "sector": "Consumer Durables"
+  },
+  "Navin Fluorine Intl": {
+   "call": "follow",
+   "sector": "Chemicals"
+  },
+  "Gujarat Fluorochemic": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Tanfac Industries": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Stallion India Fluor": {
+   "call": "pass",
+   "sector": "Chemicals"
+  },
+  "Vishnu Chemicals": {
+   "call": "follow",
+   "sector": "Chemicals"
+  },
+  "Clean Science": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Alkyl Amines": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Excel Industries": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Tatva Chintan": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Yasho Industries": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Balaji Amines": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Aarti Industries": {
+   "call": "pass",
+   "sector": "Chemicals"
+  },
+  "Anupam Rasayan": {
+   "call": "pass",
+   "sector": "Chemicals"
+  },
+  "Laxmi Organic": {
+   "call": "pass",
+   "sector": "Chemicals"
+  },
+  "Neogen Chemicals": {
+   "call": "pass",
+   "sector": "Chemicals"
+  },
+  "Camlin Fine": {
+   "call": "avoid",
+   "sector": "Chemicals"
+  },
+  "Epigral": {
+   "call": "own",
+   "sector": "Chemicals"
+  },
+  "GHCL": {
+   "call": "own",
+   "sector": "Chemicals"
+  },
+  "Styrenix Performance": {
+   "call": "follow",
+   "sector": "Chemicals"
+  },
+  "GNFC": {
+   "call": "follow",
+   "sector": "Chemicals"
+  },
+  "Deepak Fert & Petro": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Deepak Nitrite": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "IG Petrochem.": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Supreme Petrochem": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Tata Chemicals": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "DCW": {
+   "call": "pass",
+   "sector": "Chemicals"
+  },
+  "Archean Chemical Industries": {
+   "call": "pass",
+   "sector": "Chemicals"
+  },
+  "Fairchem Organics": {
+   "call": "pass",
+   "sector": "Chemicals"
+  },
+  "Chemplast Sanmar": {
+   "call": "avoid",
+   "sector": "Chemicals"
+  },
+  "DDev Plastiks": {
+   "call": "own",
+   "sector": "Chemicals"
+  },
+  "Himadri Speciality": {
+   "call": "follow",
+   "sector": "Chemicals"
+  },
+  "Sh. Pushkar Chem.": {
+   "call": "follow",
+   "sector": "Chemicals"
+  },
+  "Sudarshan Chemicals": {
+   "call": "follow",
+   "sector": "Chemicals"
+  },
+  "JG Chemicals": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Nocil": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "PCBL Chemical": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Kiri Industries": {
+   "call": "avoid",
+   "sector": "Chemicals"
+  },
+  "Chembond Chemicals": {
+   "call": "follow",
+   "sector": "Chemicals"
+  },
+  "Galaxy Surfactants": {
+   "call": "follow",
+   "sector": "Chemicals"
+  },
+  "Rossari Biotech": {
+   "call": "follow",
+   "sector": "Chemicals"
+  },
+  "Privi Speciality Che": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Ellen. Indl. Gas": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "SH Kelkar & Co": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Fineotex Chemical": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "BASF India": {
+   "call": "pass",
+   "sector": "Chemicals"
+  },
+  "Premier Explosives": {
+   "call": "pass",
+   "sector": "Chemicals"
+  },
+  "Oriental Aromatics": {
+   "call": "pass",
+   "sector": "Chemicals"
+  },
+  "Refex Industries": {
+   "call": "avoid",
+   "sector": "Chemicals"
+  },
+  "Zensar Technologies": {
+   "call": "own",
+   "sector": "Software"
+  },
+  "InfoBeans Technologies": {
+   "call": "own",
+   "sector": "Software"
+  },
+  "Mastek": {
+   "call": "follow",
+   "sector": "Software"
+  },
+  "Birlasoft": {
+   "call": "follow",
+   "sector": "Software"
+  },
+  "R Systems International": {
+   "call": "follow",
+   "sector": "Software"
+  },
+  "Railtel Corporation of India": {
+   "call": "follow",
+   "sector": "Software"
+  },
+  "Fractal Analytics": {
+   "call": "follow",
+   "sector": "Software"
+  },
+  "Happiest Minds": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "Latent View Analytic": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "Sonata Software": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "Saksoft": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "Expleo Solutions": {
+   "call": "pass",
+   "sector": "Software"
+  },
+  "Xtranet Technologies": {
+   "call": "pass",
+   "sector": "Software"
+  },
+  "KPIT Technologies": {
+   "call": "own",
+   "sector": "Software"
+  },
+  "Onward Technologies": {
+   "call": "follow",
+   "sector": "Software"
+  },
+  "Tata Technologies": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "Cyient": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "Ceinsys Tech": {
+   "call": "pass",
+   "sector": "Software"
+  },
+  "Sagility": {
+   "call": "own",
+   "sector": "Software"
+  },
+  "Inventurus Knowledge Solutions": {
+   "call": "follow",
+   "sector": "Software"
+  },
+  "Datamatic Global Ser": {
+   "call": "follow",
+   "sector": "Software"
+  },
+  "Digitide Solutions": {
+   "call": "pass",
+   "sector": "Software"
+  },
+  "Newgen Software": {
+   "call": "own",
+   "sector": "Software"
+  },
+  "Intellect Design Arena": {
+   "call": "follow",
+   "sector": "Software"
+  },
+  "RateGain Travel Tech": {
+   "call": "follow",
+   "sector": "Software"
+  },
+  "Capillary Technologies": {
+   "call": "follow",
+   "sector": "Software"
+  },
+  "Aurionpro Solutions": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "Unicomm. eSolutions": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "Protean eGov": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "Zaggle Prepaid": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "Nucleus Software": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "eMudhra": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "Amagi Media Labs": {
+   "call": "pass",
+   "sector": "Software"
+  },
+  "CE Info Systems": {
+   "call": "pass",
+   "sector": "Software"
+  },
+  "Network People Services": {
+   "call": "pass",
+   "sector": "Software"
+  },
+  "TAC Security (Tac Infosec)": {
+   "call": "avoid",
+   "sector": "Software"
+  },
+  "IZMO": {
+   "call": "avoid",
+   "sector": "Software"
+  },
+  "Tanla Platforms": {
+   "call": "follow",
+   "sector": "Software"
+  },
+  "Affle 3i": {
+   "call": "follow",
+   "sector": "Software"
+  },
+  "Route Mobile": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "Black Box": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "Netweb Technologies": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "Mobavenue Ai Tech": {
+   "call": "pass",
+   "sector": "Software"
+  },
+  "E2E Networks": {
+   "call": "follow",
+   "sector": "Software"
+  },
+  "Engineers India": {
+   "call": "follow",
+   "sector": "Construction"
+  },
+  "NBCC": {
+   "call": "follow",
+   "sector": "Construction"
+  },
+  "Rites": {
+   "call": "wait",
+   "sector": "Construction"
+  },
+  "Ircon Intl.": {
+   "call": "pass",
+   "sector": "Construction"
+  },
+  "GR Infraprojects": {
+   "call": "follow",
+   "sector": "Construction"
+  },
+  "IRB Infra.Devl.": {
+   "call": "follow",
+   "sector": "Construction"
+  },
+  "Ceigall India": {
+   "call": "follow",
+   "sector": "Construction"
+  },
+  "Welspun Enterp": {
+   "call": "follow",
+   "sector": "Construction"
+  },
+  "KNR Constructions": {
+   "call": "wait",
+   "sector": "Construction"
+  },
+  "Dilip Buildcon": {
+   "call": "wait",
+   "sector": "Construction"
+  },
+  "PNC Infratech": {
+   "call": "wait",
+   "sector": "Construction"
+  },
+  "H.G. Infra Engg.": {
+   "call": "wait",
+   "sector": "Construction"
+  },
+  "Ashoka Buildcon": {
+   "call": "pass",
+   "sector": "Construction"
+  },
+  "J Kumar Infra": {
+   "call": "own",
+   "sector": "Construction"
+  },
+  "Power Mech Proj.": {
+   "call": "own",
+   "sector": "Construction"
+  },
+  "NCC": {
+   "call": "follow",
+   "sector": "Construction"
+  },
+  "GPT Infraprojects": {
+   "call": "follow",
+   "sector": "Construction"
+  },
+  "Cemindia Projects": {
+   "call": "follow",
+   "sector": "Construction"
+  },
+  "Patel Engineering": {
+   "call": "wait",
+   "sector": "Construction"
+  },
+  "Afcons Infra": {
+   "call": "wait",
+   "sector": "Construction"
+  },
+  "SPML Infra": {
+   "call": "pass",
+   "sector": "Construction"
+  },
+  "Ahluwalia Contr.": {
+   "call": "follow",
+   "sector": "Construction"
+  },
+  "Capacite Infraproj.": {
+   "call": "wait",
+   "sector": "Construction"
+  },
+  "Man Infra": {
+   "call": "wait",
+   "sector": "Construction"
+  },
+  "PSP Projects": {
+   "call": "pass",
+   "sector": "Construction"
+  },
+  "M & B Engineer.": {
+   "call": "follow",
+   "sector": "Construction"
+  },
+  "EPack Prefab Techno.": {
+   "call": "follow",
+   "sector": "Construction"
+  },
+  "Interarch Building": {
+   "call": "follow",
+   "sector": "Construction"
+  },
+  "GK Energy": {
+   "call": "wait",
+   "sector": "Construction"
+  },
+  "Pennar Industries": {
+   "call": "wait",
+   "sector": "Construction"
+  },
+  "Sterling and Wilson": {
+   "call": "pass",
+   "sector": "Construction"
+  },
+  "Solarworld Energy So": {
+   "call": "pass",
+   "sector": "Construction"
+  },
+  "Arvind SmartSpaces": {
+   "call": "own",
+   "sector": "Realty"
+  },
+  "Keystone Realtors": {
+   "call": "follow",
+   "sector": "Realty"
+  },
+  "Sunteck Realty": {
+   "call": "follow",
+   "sector": "Realty"
+  },
+  "Mahindra Life. Dev": {
+   "call": "follow",
+   "sector": "Realty"
+  },
+  "Ashiana Housing": {
+   "call": "follow",
+   "sector": "Realty"
+  },
+  "Brigade Enterprises": {
+   "call": "follow",
+   "sector": "Realty"
+  },
+  "Sobha": {
+   "call": "follow",
+   "sector": "Realty"
+  },
+  "Raymond Realty": {
+   "call": "wait",
+   "sector": "Realty"
+  },
+  "Puravankara": {
+   "call": "wait",
+   "sector": "Realty"
+  },
+  "Sri Lotus": {
+   "call": "wait",
+   "sector": "Realty"
+  },
+  "Max Estates": {
+   "call": "wait",
+   "sector": "Realty"
+  },
+  "Ajmera Realty": {
+   "call": "wait",
+   "sector": "Realty"
+  },
+  "Shriram Properties": {
+   "call": "wait",
+   "sector": "Realty"
+  },
+  "Eldeco Housing & Ind": {
+   "call": "wait",
+   "sector": "Realty"
+  },
+  "Signatureglobal Ind.": {
+   "call": "wait",
+   "sector": "Realty"
+  },
+  "Arkade": {
+   "call": "wait",
+   "sector": "Realty"
+  },
+  "Suraj Estate": {
+   "call": "pass",
+   "sector": "Realty"
+  },
+  "Arihant Superstruct.": {
+   "call": "pass",
+   "sector": "Realty"
+  },
+  "Ganesh Housing": {
+   "call": "avoid",
+   "sector": "Realty"
+  },
+  "Marathon NextgenReal": {
+   "call": "avoid",
+   "sector": "Realty"
+  },
+  "LT Foods": {
+   "call": "own",
+   "sector": "Food Products"
+  },
+  "CCL Products": {
+   "call": "own",
+   "sector": "Food Products"
+  },
+  "Godrej Agrovet": {
+   "call": "follow",
+   "sector": "Food Products"
+  },
+  "ADF Foods": {
+   "call": "follow",
+   "sector": "Food Products"
+  },
+  "KRBL": {
+   "call": "wait",
+   "sector": "Food Products"
+  },
+  "Manorama Industries": {
+   "call": "wait",
+   "sector": "Food Products"
+  },
+  "Avanti Feeds": {
+   "call": "wait",
+   "sector": "Food Products"
+  },
+  "Ganesh Consumer Prod": {
+   "call": "wait",
+   "sector": "Food Products"
+  },
+  "Venkys India": {
+   "call": "wait",
+   "sector": "Food Products"
+  },
+  "Bikaji Foods": {
+   "call": "wait",
+   "sector": "Food Products"
+  },
+  "Vintage Coffee": {
+   "call": "wait",
+   "sector": "Food Products"
+  },
+  "Hindustan Foods": {
+   "call": "wait",
+   "sector": "Food Products"
+  },
+  "Freshara Agro": {
+   "call": "wait",
+   "sector": "Food Products"
+  },
+  "Mrs Bectors Food": {
+   "call": "wait",
+   "sector": "Food Products"
+  },
+  "Kaveri Seed Company": {
+   "call": "wait",
+   "sector": "Food Products"
+  },
+  "Zydus Wellness": {
+   "call": "pass",
+   "sector": "Food Products"
+  },
+  "Apex Frozen Foods": {
+   "call": "pass",
+   "sector": "Food Products"
+  },
+  "Gopal Snacks": {
+   "call": "pass",
+   "sector": "Food Products"
+  },
+  "V2 Retail": {
+   "call": "own",
+   "sector": "Retail"
+  },
+  "Indiamart Intermesh": {
+   "call": "follow",
+   "sector": "Retail"
+  },
+  "Aditya Birla Lifesty": {
+   "call": "follow",
+   "sector": "Retail"
+  },
+  "V-Mart Retail": {
+   "call": "follow",
+   "sector": "Retail"
+  },
+  "Aditya Vision": {
+   "call": "follow",
+   "sector": "Retail"
+  },
+  "Arvind Fashions": {
+   "call": "follow",
+   "sector": "Retail"
+  },
+  "Entero": {
+   "call": "follow",
+   "sector": "Retail"
+  },
+  "Sai Silks (Kalamandir)": {
+   "call": "wait",
+   "sector": "Retail"
+  },
+  "Crizac": {
+   "call": "wait",
+   "sector": "Retail"
+  },
+  "Electronics Mart Ind": {
+   "call": "wait",
+   "sector": "Retail"
+  },
+  "Medplus": {
+   "call": "wait",
+   "sector": "Retail"
+  },
+  "Vedant Fashions (Manyavar)": {
+   "call": "wait",
+   "sector": "Retail"
+  },
+  "Brainbees Solutions": {
+   "call": "wait",
+   "sector": "Retail"
+  },
+  "Shoppers Stop": {
+   "call": "wait",
+   "sector": "Retail"
+  },
+  "SG Mart": {
+   "call": "wait",
+   "sector": "Retail"
+  },
+  "Landmark Cars": {
+   "call": "wait",
+   "sector": "Retail"
+  },
+  "Go Fashion (India) (GoColors)": {
+   "call": "pass",
+   "sector": "Retail"
+  },
+  "Aditya Birla Fashion & Retail": {
+   "call": "pass",
+   "sector": "Retail"
+  },
+  "Sastasundar Ventures": {
+   "call": "avoid",
+   "sector": "Retail"
+  },
+  "Indegene": {
+   "call": "follow",
+   "sector": "Healthcare"
+  },
+  "Vimta Labs": {
+   "call": "follow",
+   "sector": "Healthcare"
+  },
+  "3B Blackbio Diagnostics": {
+   "call": "wait",
+   "sector": "Healthcare"
+  },
+  "Nephrocare Health": {
+   "call": "wait",
+   "sector": "Healthcare"
+  },
+  "Syngene International": {
+   "call": "wait",
+   "sector": "Healthcare"
+  },
+  "Molbio Diagnostics": {
+   "call": "wait",
+   "sector": "Healthcare"
+  },
+  "Dr Lal PathLabs": {
+   "call": "follow",
+   "sector": "Healthcare Diagnostic"
+  },
+  "Metropolis Health.": {
+   "call": "follow",
+   "sector": "Healthcare Diagnostic"
+  },
+  "Thyrocare Technologies": {
+   "call": "wait",
+   "sector": "Healthcare Diagnostic"
+  },
+  "Vijaya Diagnostic Centre": {
+   "call": "wait",
+   "sector": "Healthcare Diagnostic"
+  },
+  "Suraksha Diagnostic": {
+   "call": "wait",
+   "sector": "Healthcare Diagnostic"
+  },
+  "Krsnaa Diagnostics": {
+   "call": "wait",
+   "sector": "Healthcare Diagnostic"
+  },
+  "Quess Corp": {
+   "call": "follow",
+   "sector": "Commercial Services"
+  },
+  "CMS Info Systems": {
+   "call": "own",
+   "sector": "Commercial Services"
+  },
+  "MSTC": {
+   "call": "follow",
+   "sector": "Commercial Services"
+  },
+  "Redington": {
+   "call": "follow",
+   "sector": "Commercial Services"
+  },
+  "TeamLease Services": {
+   "call": "follow",
+   "sector": "Commercial Services"
+  },
+  "Nirlon": {
+   "call": "follow",
+   "sector": "Commercial Services"
+  },
+  "Sanghvi Movers": {
+   "call": "follow",
+   "sector": "Commercial Services"
+  },
+  "EFC (I)": {
+   "call": "wait",
+   "sector": "Commercial Services"
+  },
+  "Awfis Space Solutions": {
+   "call": "follow",
+   "sector": "Commercial Services"
+  },
+  "Krystal Integrated Services": {
+   "call": "wait",
+   "sector": "Commercial Services"
+  },
+  "Updater Services": {
+   "call": "wait",
+   "sector": "Commercial Services"
+  },
+  "WeWork India": {
+   "call": "wait",
+   "sector": "Commercial Services"
+  },
+  "Indiqube Spaces": {
+   "call": "wait",
+   "sector": "Commercial Services"
+  },
+  "Smartworks Coworking": {
+   "call": "wait",
+   "sector": "Commercial Services"
+  },
+  "Sharda Cropchem": {
+   "call": "own",
+   "sector": "Agrochemical & Fertilizers"
+  },
+  "Chambal Fert & Chem": {
+   "call": "follow",
+   "sector": "Agrochemical & Fertilizers"
+  },
+  "GSFC": {
+   "call": "follow",
+   "sector": "Agrochemical & Fertilizers"
+  },
+  "Rallis India": {
+   "call": "follow",
+   "sector": "Agrochemical & Fertilizers"
+  },
+  "Dharmaj Crop Guard": {
+   "call": "follow",
+   "sector": "Agrochemical & Fertilizers"
+  },
+  "Krishana Phoschem": {
+   "call": "pass",
+   "sector": "Agrochemical & Fertilizers"
+  },
+  "Paradeep Phosphates": {
+   "call": "wait",
+   "sector": "Agrochemical & Fertilizers"
+  },
+  "Dhanuka Agritech": {
+   "call": "wait",
+   "sector": "Agrochemical & Fertilizers"
+  },
+  "India Pesticides": {
+   "call": "wait",
+   "sector": "Agrochemical & Fertilizers"
+  },
+  "Sumitomo Chemical India": {
+   "call": "wait",
+   "sector": "Agrochemical & Fertilizers"
+  },
+  "Insecticides (India)": {
+   "call": "wait",
+   "sector": "Agrochemical & Fertilizers"
+  },
+  "Punjab Chem. & Corp": {
+   "call": "wait",
+   "sector": "Agrochemical & Fertilizers"
+  },
+  "Madhya Bharat Agro Products": {
+   "call": "pass",
+   "sector": "Agrochemical & Fertilizers"
+  },
+  "Meghmani Organics": {
+   "call": "pass",
+   "sector": "Agrochemical & Fertilizers"
+  },
+  "Lemon Tree Hotels": {
+   "call": "own",
+   "sector": "Hotels and Travels"
+  },
+  "Samhi Hotels": {
+   "call": "own",
+   "sector": "Hotels and Travels"
+  },
+  "EIH": {
+   "call": "follow",
+   "sector": "Hotels and Travels"
+  },
+  "Juniper Hotels": {
+   "call": "wait",
+   "sector": "Hotels and Travels"
+  },
+  "Chalet Hotels": {
+   "call": "follow",
+   "sector": "Hotels and Travels"
+  },
+  "Ventive Hospitality": {
+   "call": "wait",
+   "sector": "Hotels and Travels"
+  },
+  "Leela Palaces Hotels": {
+   "call": "wait",
+   "sector": "Hotels and Travels"
+  },
+  "Viceroy Hotels": {
+   "call": "wait",
+   "sector": "Hotels and Travels"
+  },
+  "Royal Orchid Hotels": {
+   "call": "wait",
+   "sector": "Hotels and Travels"
+  },
+  "Brigade Hotel Ven.": {
+   "call": "wait",
+   "sector": "Hotels and Travels"
+  },
+  "Mahindra Holi.&Resor": {
+   "call": "wait",
+   "sector": "Hotels and Travels"
+  },
+  "Jeena Sikho Lifecare": {
+   "call": "own",
+   "sector": "Pharma Others"
+  },
+  "Advanced Enzyme": {
+   "call": "follow",
+   "sector": "Pharma Others"
+  },
+  "Hexagon Nutrition": {
+   "call": "follow",
+   "sector": "Pharma Others"
+  },
+  "Accent Microcell": {
+   "call": "follow",
+   "sector": "Pharma Others"
+  },
+  "Sequent Scientific": {
+   "call": "follow",
+   "sector": "Pharma Others"
+  },
+  "Sudeep Pharma": {
+   "call": "wait",
+   "sector": "Pharma Others"
+  },
+  "Q-Line Biotech": {
+   "call": "wait",
+   "sector": "Pharma Others"
+  },
+  "Hester Biosciences": {
+   "call": "wait",
+   "sector": "Pharma Others"
+  },
+  "Zota Health Care": {
+   "call": "pass",
+   "sector": "Pharma Others"
+  },
+  "Sigachi Industries": {
+   "call": "pass",
+   "sector": "Pharma Others"
+  },
+  "Clean Max Env. Energ": {
+   "call": "follow",
+   "sector": "Solar PV Cells EPC"
+  },
+  "Waaree Renewables": {
+   "call": "follow",
+   "sector": "Solar PV Cells EPC"
+  },
+  "Oriana Power": {
+   "call": "follow",
+   "sector": "Solar PV Cells EPC"
+  },
+  "Emmvee Photovoltaic Power Ltd": {
+   "call": "follow",
+   "sector": "Solar PV Cells EPC"
+  },
+  "Alpex Solar": {
+   "call": "follow",
+   "sector": "Solar PV Cells EPC"
+  },
+  "Websol Energy System Ltd": {
+   "call": "wait",
+   "sector": "Solar PV Cells EPC"
+  },
+  "Solex Energy": {
+   "call": "wait",
+   "sector": "Solar PV Cells EPC"
+  },
+  "Australian Prem": {
+   "call": "wait",
+   "sector": "Solar PV Cells EPC"
+  },
+  "Vikram Solar": {
+   "call": "pass",
+   "sector": "Solar PV Cells EPC"
+  },
+  "Insolation Energy": {
+   "call": "pass",
+   "sector": "Solar PV Cells EPC"
+  },
+  "Saatvik Green": {
+   "call": "pass",
+   "sector": "Solar PV Cells EPC"
+  },
+  "Action Const.Eq.": {
+   "call": "follow",
+   "sector": "Vehicles"
+  },
+  "Olectra Greentech": {
+   "call": "wait",
+   "sector": "Vehicles"
+  },
+  "Zelio E-Mobility": {
+   "call": "follow",
+   "sector": "Vehicles"
+  },
+  "Ajax Engineering": {
+   "call": "wait",
+   "sector": "Vehicles"
+  },
+  "Ather Energy": {
+   "call": "wait",
+   "sector": "Vehicles"
+  },
+  "VST Tillers Tractors": {
+   "call": "wait",
+   "sector": "Vehicles"
+  },
+  "Indo Farm": {
+   "call": "pass",
+   "sector": "Vehicles"
+  },
+  "TIL": {
+   "call": "pass",
+   "sector": "Vehicles"
+  },
+  "Ola Electric": {
+   "call": "avoid",
+   "sector": "Vehicles"
+  },
+  "Deep Industries": {
+   "call": "own",
+   "sector": "Oil"
+  },
+  "Gulf Oil Lubricant": {
+   "call": "own",
+   "sector": "Oil"
+  },
+  "Jindal Drilling and Industries": {
+   "call": "follow",
+   "sector": "Oil"
+  },
+  "South West Pinnacle": {
+   "call": "follow",
+   "sector": "Oil"
+  },
+  "Ganesh Benzoplast": {
+   "call": "wait",
+   "sector": "Oil"
+  },
+  "Asian Energy Services": {
+   "call": "follow",
+   "sector": "Oil"
+  },
+  "Gandhar Oil Refinery (India)": {
+   "call": "wait",
+   "sector": "Oil"
+  },
+  "Chennai Petroleum Corporation": {
+   "call": "wait",
+   "sector": "Oil"
+  },
+  "Aegis Vopak Terminals": {
+   "call": "wait",
+   "sector": "Oil"
+  },
+  "TruAlt Bioenergy": {
+   "call": "wait",
+   "sector": "Oil"
+  },
+  "Yatharth Hospital": {
+   "call": "follow",
+   "sector": "Hospitals"
+  },
+  "Rainbow Children's Medicare": {
+   "call": "follow",
+   "sector": "Hospitals"
+  },
+  "Jupiter Life Line Hospitals": {
+   "call": "wait",
+   "sector": "Hospitals"
+  },
+  "Artemis Medicare": {
+   "call": "follow",
+   "sector": "Hospitals"
+  },
+  "GPT Healthcare (Agilus)": {
+   "call": "follow",
+   "sector": "Hospitals"
+  },
+  "Narayana Hrudayalaya": {
+   "call": "wait",
+   "sector": "Hospitals"
+  },
+  "Global Health (Medanta)": {
+   "call": "wait",
+   "sector": "Hospitals"
+  },
+  "Dr Agarwal's Health Care": {
+   "call": "wait",
+   "sector": "Hospitals"
+  },
+  "Krishna Inst.Medi": {
+   "call": "wait",
+   "sector": "Hospitals"
+  },
+  "Shalby": {
+   "call": "pass",
+   "sector": "Hospitals"
+  },
+  "Gravita India": {
+   "call": "own",
+   "sector": "Mining & Metals Recycle"
+  },
+  "20 Microns": {
+   "call": "own",
+   "sector": "Mining & Metals Recycle"
+  },
+  "Godavari Power": {
+   "call": "follow",
+   "sector": "Mining & Metals Recycle"
+  },
+  "Pondy Oxides & Chem.": {
+   "call": "follow",
+   "sector": "Mining & Metals Recycle"
+  },
+  "Ardee Industries": {
+   "call": "follow",
+   "sector": "Mining & Metals Recycle"
+  },
+  "Ashapura Minechem": {
+   "call": "follow",
+   "sector": "Mining & Metals Recycle"
+  },
+  "Caliber Mining & Log": {
+   "call": "wait",
+   "sector": "Mining & Metals Recycle"
+  },
+  "CMR Green Tech": {
+   "call": "wait",
+   "sector": "Mining & Metals Recycle"
+  },
+  "Cartrade Tech": {
+   "call": "own",
+   "sector": "Platform Cos"
+  },
+  "BlackBuck": {
+   "call": "follow",
+   "sector": "Platform Cos"
+  },
+  "Matrimony.com": {
+   "call": "follow",
+   "sector": "Platform Cos"
+  },
+  "Macfos": {
+   "call": "follow",
+   "sector": "Platform Cos"
+  },
+  "TBO Tek": {
+   "call": "wait",
+   "sector": "Platform Cos"
+  },
+  "Swiggy": {
+   "call": "wait",
+   "sector": "Platform Cos"
+  },
+  "Urban Company": {
+   "call": "wait",
+   "sector": "Platform Cos"
+  },
+  "Shiprocket": {
+   "call": "wait",
+   "sector": "Platform Cos"
+  },
+  "Pine Labs": {
+   "call": "wait",
+   "sector": "Platform Cos"
+  },
+  "One Mobikwik Systems": {
+   "call": "wait",
+   "sector": "Platform Cos"
+  },
+  "AvenuesAI": {
+   "call": "pass",
+   "sector": "Platform Cos"
+  },
+  "Turtlemint Fintech": {
+   "call": "pass",
+   "sector": "Platform Cos"
+  },
+  "Aurum Proptech": {
+   "call": "pass",
+   "sector": "Platform Cos"
+  },
+  "Steelcast": {
+   "call": "own",
+   "sector": "Forging"
+  },
+  "AIA Engineering": {
+   "call": "wait",
+   "sector": "Forging"
+  },
+  "Happy Forgings": {
+   "call": "wait",
+   "sector": "Forging"
+  },
+  "Neetu Yoshi": {
+   "call": "follow",
+   "sector": "Forging"
+  },
+  "MM Forgings": {
+   "call": "follow",
+   "sector": "Forging"
+  },
+  "Nelcast": {
+   "call": "wait",
+   "sector": "Forging"
+  },
+  "Synergy Green": {
+   "call": "pass",
+   "sector": "Forging"
+  },
+  "ICICI Bank": {
+   "call": "own",
+   "sector": "Finance"
+  },
+  "HDFC Bank": {
+   "call": "own",
+   "sector": "Finance"
+  },
+  "State Bank of India": {
+   "call": "own",
+   "sector": "Finance"
+  },
+  "Northern ARC Capital": {
+   "call": "follow",
+   "sector": "Finance"
+  },
+  "OnEMI Technology": {
+   "call": "follow",
+   "sector": "Finance"
+  },
+  "SG Finserve": {
+   "call": "follow",
+   "sector": "Finance"
+  },
+  "Paisalo Digital": {
+   "call": "wait",
+   "sector": "Finance"
+  },
+  "Manba Finance": {
+   "call": "pass",
+   "sector": "Finance"
+  },
+  "Poly Medicure": {
+   "call": "follow",
+   "sector": "Health Products"
+  },
+  "Tarsons Products": {
+   "call": "pass",
+   "sector": "Health Products"
+  },
+  "OSEL Devices": {
+   "call": "pass",
+   "sector": "Health Products"
+  },
+  "Anondita Medicare": {
+   "call": "pass",
+   "sector": "Health Products"
+  },
+  "Prevest Denpro": {
+   "call": "own",
+   "sector": "Health Products"
+  },
+  "Laxmi Denta": {
+   "call": "follow",
+   "sector": "Health Products"
+  },
+  "Vasa Denticity": {
+   "call": "pass",
+   "sector": "Health Products"
+  },
+  "Time Technoplast": {
+   "call": "own",
+   "sector": "Plastics"
+  },
+  "Garware Hi-Tech": {
+   "call": "follow",
+   "sector": "Plastics"
+  },
+  "Shaily Engg. Plastic": {
+   "call": "follow",
+   "sector": "Plastics"
+  },
+  "Finolex Inds": {
+   "call": "wait",
+   "sector": "Plastics"
+  },
+  "Prince Pipes": {
+   "call": "wait",
+   "sector": "Plastics"
+  },
+  "Apollo Pipes": {
+   "call": "avoid",
+   "sector": "Plastics"
+  },
+  "Va Tech Wabag": {
+   "call": "follow",
+   "sector": "Utilities"
+  },
+  "ION Exchage": {
+   "call": "wait",
+   "sector": "Utilities"
+  },
+  "Enviro Infra Engine.": {
+   "call": "wait",
+   "sector": "Utilities"
+  },
+  "EMS Limited": {
+   "call": "avoid",
+   "sector": "Utilities"
+  },
+  "Antony Waste Hand": {
+   "call": "follow",
+   "sector": "Utilities"
+  },
+  "Shyam Metalics": {
+   "call": "follow",
+   "sector": "Iron and Steel"
+  },
+  "Sambhv Steel Tubes": {
+   "call": "follow",
+   "sector": "Iron and Steel"
+  },
+  "Man Industries (I)": {
+   "call": "follow",
+   "sector": "Iron and Steel"
+  },
+  "Manaksia Coated Metals": {
+   "call": "follow",
+   "sector": "Iron and Steel"
+  },
+  "Aeroflex Industries": {
+   "call": "wait",
+   "sector": "Iron and Steel"
+  },
+  "Venus Pipes & Tubes": {
+   "call": "wait",
+   "sector": "Iron and Steel"
+  },
+  "Scoda Tubes": {
+   "call": "wait",
+   "sector": "Iron and Steel"
+  },
+  "Kalpataru Proj.": {
+   "call": "follow",
+   "sector": "Construction - Power"
+  },
+  "KEC International": {
+   "call": "wait",
+   "sector": "Construction - Power"
+  },
+  "Techno Electric &Eng": {
+   "call": "wait",
+   "sector": "Construction - Power"
+  },
+  "Transrail Lighting": {
+   "call": "follow",
+   "sector": "Construction - Power"
+  },
+  "Skipper": {
+   "call": "follow",
+   "sector": "Construction - Power"
+  },
+  "GNG Electronics": {
+   "call": "follow",
+   "sector": "Hardware"
+  },
+  "Rashi Peripheral": {
+   "call": "follow",
+   "sector": "Hardware"
+  },
+  "Control Print": {
+   "call": "wait",
+   "sector": "Hardware"
+  },
+  "TVS Electronics": {
+   "call": "avoid",
+   "sector": "Hardware"
+  },
+  "BLS International": {
+   "call": "own",
+   "sector": "Travel Services"
+  },
+  "Le Travenues Techno": {
+   "call": "wait",
+   "sector": "Travel Services"
+  },
+  "Yatra Online": {
+   "call": "pass",
+   "sector": "Travel Services"
+  },
+  "Thomas Cook India": {
+   "call": "wait",
+   "sector": "Travel Services"
+  },
+  "Aegis Logistics": {
+   "call": "follow",
+   "sector": "Logistics"
+  },
+  "Delhivery": {
+   "call": "wait",
+   "sector": "Logistics"
+  },
+  "Shadowfax Tech.": {
+   "call": "follow",
+   "sector": "Logistics"
+  },
+  "TVS Supply Chain Sol": {
+   "call": "wait",
+   "sector": "Logistics"
+  },
+  "Apcotex Inds": {
+   "call": "own",
+   "sector": "Rubber"
+  },
+  "Tinna Rubber": {
+   "call": "follow",
+   "sector": "Rubber"
+  },
+  "GRP": {
+   "call": "pass",
+   "sector": "Rubber"
+  },
+  "Apollo Tyres": {
+   "call": "own",
+   "sector": "Tyres"
+  },
+  "JK Tyre & Indust": {
+   "call": "wait",
+   "sector": "Tyres"
+  },
+  "CEAT": {
+   "call": "follow",
+   "sector": "Tyres"
+  },
+  "Emcure Pharma": {
+   "call": "follow",
+   "sector": "Pharma"
+  },
+  "Corona Remedies": {
+   "call": "follow",
+   "sector": "Pharma"
+  },
+  "RPG Life Sciences": {
+   "call": "wait",
+   "sector": "Pharma"
+  },
+  "Jagsonpal Pharma": {
+   "call": "wait",
+   "sector": "Pharma"
+  },
+  "Eris Lifesciences": {
+   "call": "wait",
+   "sector": "Pharma"
+  },
+  "Sanofi India": {
+   "call": "pass",
+   "sector": "Pharma"
+  },
+  "Indoco Remedies": {
+   "call": "pass",
+   "sector": "Pharma"
+  },
+  "Zydus Lifesciences": {
+   "call": "follow",
+   "sector": "Pharma"
+  },
+  "Ajanta Pharma": {
+   "call": "wait",
+   "sector": "Pharma"
+  },
+  "Ipca Laboratories": {
+   "call": "wait",
+   "sector": "Pharma"
+  },
+  "Alembic Pharma": {
+   "call": "wait",
+   "sector": "Pharma"
+  },
+  "Marksans Pharma": {
+   "call": "own",
+   "sector": "Pharma"
+  },
+  "Caplin Point Labs": {
+   "call": "follow",
+   "sector": "Pharma"
+  },
+  "Granules India": {
+   "call": "wait",
+   "sector": "Pharma"
+  },
+  "Rubicon Research": {
+   "call": "follow",
+   "sector": "Pharma"
+  },
+  "Natco Pharma": {
+   "call": "wait",
+   "sector": "Pharma"
+  },
+  "Strides Pharma": {
+   "call": "wait",
+   "sector": "Pharma"
+  },
+  "Sai Parenterals": {
+   "call": "pass",
+   "sector": "Pharma"
+  },
+  "Wockhardt": {
+   "call": "wait",
+   "sector": "Pharma"
+  },
+  "Sakar Healthcare": {
+   "call": "wait",
+   "sector": "Pharma"
+  },
+  "Gufic Biosciences": {
+   "call": "wait",
+   "sector": "Pharma"
+  },
+  "Beta Drugs": {
+   "call": "pass",
+   "sector": "Pharma"
+  },
+  "Fredun Pharma": {
+   "call": "pass",
+   "sector": "Pharma"
+  },
+  "Orchid Pharma": {
+   "call": "avoid",
+   "sector": "Pharma"
+  },
+  "Alivus Life Sciences": {
+   "call": "own",
+   "sector": "Pharma API"
+  },
+  "Concord Biotech": {
+   "call": "follow",
+   "sector": "Pharma API"
+  },
+  "Supriya Lifescience": {
+   "call": "wait",
+   "sector": "Pharma API"
+  },
+  "Shilpa Medicare": {
+   "call": "wait",
+   "sector": "Pharma API"
+  },
+  "NGL Fine-Chem": {
+   "call": "wait",
+   "sector": "Pharma API"
+  },
+  "Acutaas Chemicals": {
+   "call": "follow",
+   "sector": "Pharma API"
+  },
+  "Blue Jet Healthcare": {
+   "call": "wait",
+   "sector": "Pharma API"
+  },
+  "Shree Ganesh Remed.": {
+   "call": "avoid",
+   "sector": "Pharma API"
+  },
+  "Aarti Drugs": {
+   "call": "follow",
+   "sector": "Pharma API"
+  },
+  "IOL Chem & Pharma": {
+   "call": "follow",
+   "sector": "Pharma API"
+  },
+  "SMS Pharmaceuticals": {
+   "call": "pass",
+   "sector": "Pharma API"
+  },
+  "Bajaj Healthcare": {
+   "call": "wait",
+   "sector": "Pharma API"
+  },
+  "Solara Active Pharma": {
+   "call": "wait",
+   "sector": "Pharma API"
+  },
+  "Kirloskar Pneumatic": {
+   "call": "follow",
+   "sector": "Pumps Comp & Eng"
+  },
+  "Elgi Equipments": {
+   "call": "follow",
+   "sector": "Pumps Comp & Eng"
+  },
+  "Kirloskar Brothers": {
+   "call": "follow",
+   "sector": "Pumps Comp & Eng"
+  },
+  "KSB": {
+   "call": "wait",
+   "sector": "Pumps Comp & Eng"
+  },
+  "Powerica": {
+   "call": "follow",
+   "sector": "Pumps Comp & Eng"
+  },
+  "Kirloskar Oil": {
+   "call": "wait",
+   "sector": "Pumps Comp & Eng"
+  },
+  "Greaves Cotton": {
+   "call": "pass",
+   "sector": "Pumps Comp & Eng"
+  },
+  "Shakti Pumps": {
+   "call": "pass",
+   "sector": "Pumps Comp & Eng"
+  },
+  "Oswal Pumps": {
+   "call": "pass",
+   "sector": "Pumps Comp & Eng"
+  },
+  "EPL": {
+   "call": "own",
+   "sector": "Packaging"
+  },
+  "TCPL Packaging": {
+   "call": "follow",
+   "sector": "Packaging"
+  },
+  "Mold-Tek Pack.": {
+   "call": "follow",
+   "sector": "Packaging"
+  },
+  "Huhtamaki India": {
+   "call": "wait",
+   "sector": "Packaging"
+  },
+  "Pyramid Technoplast": {
+   "call": "wait",
+   "sector": "Packaging"
+  },
+  "Knack Packaging": {
+   "call": "follow",
+   "sector": "Packaging"
+  },
+  "Kanpur Plastipack": {
+   "call": "wait",
+   "sector": "Packaging"
+  },
+  "AGI Greenpac": {
+   "call": "wait",
+   "sector": "Packaging"
+  },
+  "Cosmo First": {
+   "call": "follow",
+   "sector": "Packaging"
+  },
+  "Ester Industries": {
+   "call": "pass",
+   "sector": "Packaging"
+  },
+  "NRB Bearing": {
+   "call": "follow",
+   "sector": "Bearings"
+  },
+  "Harsha Engineers Int": {
+   "call": "own",
+   "sector": "Bearings"
+  },
+  "SKF India (Industrial)": {
+   "call": "wait",
+   "sector": "Bearings"
+  },
+  "Timken India": {
+   "call": "wait",
+   "sector": "Bearings"
+  },
+  "SKF India": {
+   "call": "wait",
+   "sector": "Bearings"
+  },
+  "RR Kabel Ltd.": {
+   "call": "follow",
+   "sector": "Cables"
+  },
+  "Finolex Cables": {
+   "call": "wait",
+   "sector": "Cables"
+  },
+  "KSH International": {
+   "call": "wait",
+   "sector": "Cables"
+  },
+  "Dynamic Cables": {
+   "call": "own",
+   "sector": "Cables"
+  },
+  "Laser Power & Infra": {
+   "call": "wait",
+   "sector": "Cables"
+  },
+  "Paramount Communications": {
+   "call": "pass",
+   "sector": "Cables"
+  },
+  "Advait Energy": {
+   "call": "avoid",
+   "sector": "Cables"
+  },
+  "JD Cables": {
+   "call": "avoid",
+   "sector": "Cables"
+  },
+  "Raymond": {
+   "call": "follow",
+   "sector": "Aerospace defence"
+  },
+  "Sansera Engineering": {
+   "call": "follow",
+   "sector": "Aerospace defence"
+  },
+  "Aequs": {
+   "call": "wait",
+   "sector": "Aerospace defence"
+  },
+  "Unimech Aerospace": {
+   "call": "wait",
+   "sector": "Aerospace defence"
+  },
+  "Rossell Techsys": {
+   "call": "avoid",
+   "sector": "Aerospace defence"
+  },
+  "MTAR Technologies": {
+   "call": "follow",
+   "sector": "Aerospace defence"
+  },
+  "Azad Engineering": {
+   "call": "follow",
+   "sector": "Aerospace defence"
+  },
+  "Astra Microwave Products": {
+   "call": "follow",
+   "sector": "Aerospace defence"
+  },
+  "Data Patterns (India)": {
+   "call": "follow",
+   "sector": "Aerospace defence"
+  },
+  "Zen Technologies": {
+   "call": "wait",
+   "sector": "Aerospace defence"
+  },
+  "ideaForge Technology": {
+   "call": "wait",
+   "sector": "Aerospace defence"
+  },
+  "Digilogic Systems": {
+   "call": "pass",
+   "sector": "Aerospace defence"
+  },
+  "Apollo Micro Systems": {
+   "call": "avoid",
+   "sector": "Aerospace defence"
+  },
+  "AXISCADES Technologies": {
+   "call": "pass",
+   "sector": "Aerospace defence"
+  },
+  "Avantel": {
+   "call": "pass",
+   "sector": "Aerospace defence"
+  },
+  "Aartech Solonics": {
+   "call": "avoid",
+   "sector": "Aerospace defence"
+  },
+  "Krishna Defence & Allied Industries": {
+   "call": "own",
+   "sector": "Aerospace defence"
+  },
+  "Mishra Dhatu Nigam (MIDHANI)": {
+   "call": "pass",
+   "sector": "Aerospace defence"
+  },
+  "Inox India": {
+   "call": "follow",
+   "sector": "Industrials"
+  },
+  "GMM Pfaudler": {
+   "call": "follow",
+   "sector": "Industrials"
+  },
+  "The Anup Enginee": {
+   "call": "follow",
+   "sector": "Industrials"
+  },
+  "Kilburn Engg.": {
+   "call": "wait",
+   "sector": "Industrials"
+  },
+  "Praj Industries": {
+   "call": "wait",
+   "sector": "Industrials"
+  },
+  "HLE Glascoat": {
+   "call": "pass",
+   "sector": "Industrials"
+  },
+  "Standard Glass": {
+   "call": "avoid",
+   "sector": "Industrials"
+  },
+  "Jash Engineering": {
+   "call": "follow",
+   "sector": "Industrials"
+  },
+  "DEE Development": {
+   "call": "follow",
+   "sector": "Industrials"
+  },
+  "Isgec Heavy Engg.": {
+   "call": "follow",
+   "sector": "Industrials"
+  },
+  "Shree Refrigrations": {
+   "call": "wait",
+   "sector": "Industrials"
+  },
+  "JNK": {
+   "call": "wait",
+   "sector": "Industrials"
+  },
+  "WPIL": {
+   "call": "wait",
+   "sector": "Industrials"
+  },
+  "John Cockerill": {
+   "call": "avoid",
+   "sector": "Industrials"
+  },
+  "ICE Make Refrig.": {
+   "call": "avoid",
+   "sector": "Industrials"
+  },
+  "United Heat Transfer": {
+   "call": "avoid",
+   "sector": "Industrials"
+  },
+  "Pitti Engineering": {
+   "call": "own",
+   "sector": "Industrials"
+  },
+  "Gala Precision Engi.": {
+   "call": "own",
+   "sector": "Industrials"
+  },
+  "KRN Heat Exchan": {
+   "call": "follow",
+   "sector": "Industrials"
+  },
+  "Omnitech Engineering": {
+   "call": "follow",
+   "sector": "Industrials"
+  },
+  "Tempsens Instruments": {
+   "call": "wait",
+   "sector": "Industrials"
+  },
+  "Patil Automation": {
+   "call": "wait",
+   "sector": "Industrials"
+  },
+  "Subros": {
+   "call": "pass",
+   "sector": "Industrials"
+  },
+  "Vilas Transcore": {
+   "call": "pass",
+   "sector": "Industrials"
+  },
+  "Everest Kanto Cylind": {
+   "call": "pass",
+   "sector": "Industrials"
+  },
+  "Airfloa Rail Techno.": {
+   "call": "avoid",
+   "sector": "Industrials"
+  },
+  "Ador Welding": {
+   "call": "own",
+   "sector": "Industrials"
+  },
+  "Diffusion Engineers": {
+   "call": "own",
+   "sector": "Industrials"
+  },
+  "Carborundum Univer.": {
+   "call": "follow",
+   "sector": "Industrials"
+  },
+  "Tega Industries": {
+   "call": "wait",
+   "sector": "Industrials"
+  },
+  "HBL Engineering": {
+   "call": "follow",
+   "sector": "Industrials"
+  },
+  "Borosil Renewables": {
+   "call": "follow",
+   "sector": "Industrials"
+  },
+  "Aditya Infotech": {
+   "call": "follow",
+   "sector": "Industrials"
+  },
+  "HPL Electric": {
+   "call": "pass",
+   "sector": "Industrials"
+  },
+  "Hind Rectifiers": {
+   "call": "follow",
+   "sector": "Industrial - Railway"
+  },
+  "Concord Control": {
+   "call": "follow",
+   "sector": "Industrial - Railway"
+  },
+  "MV Electrosystems": {
+   "call": "wait",
+   "sector": "Industrial - Railway"
+  },
+  "Titagarh Railsystems": {
+   "call": "wait",
+   "sector": "Industrial - Railway"
+  },
+  "Cosmic CRF": {
+   "call": "wait",
+   "sector": "Industrial - Railway"
+  },
+  "Texmaco Rail": {
+   "call": "pass",
+   "sector": "Industrial - Railway"
+  },
+  "Jupiter Wagons": {
+   "call": "pass",
+   "sector": "Industrial - Railway"
+  },
+  "LMW": {
+   "call": "wait",
+   "sector": "Industrial Machinery"
+  },
+  "Mamata Machinery": {
+   "call": "wait",
+   "sector": "Industrial Machinery"
+  },
+  "Jyoti CNC Auto.": {
+   "call": "wait",
+   "sector": "Industrial Machinery"
+  },
+  "Macpower CNC": {
+   "call": "follow",
+   "sector": "Industrial Machinery"
+  },
+  "HEG": {
+   "call": "wait",
+   "sector": "Elect and Refrac"
+  },
+  "RHI Magnesita": {
+   "call": "follow",
+   "sector": "Elect and Refrac"
+  },
+  "IFGL Refractories": {
+   "call": "pass",
+   "sector": "Elect and Refrac"
+  },
+  "Atlanta Electricals": {
+   "call": "own",
+   "sector": "Electrical Transformers"
+  },
+  "Shilchar Tech.": {
+   "call": "follow",
+   "sector": "Electrical Transformers"
+  },
+  "Voltamp Transformers": {
+   "call": "wait",
+   "sector": "Electrical Transformers"
+  },
+  "Supreme Power": {
+   "call": "follow",
+   "sector": "Electrical Transformers"
+  },
+  "Transformers & Rect": {
+   "call": "wait",
+   "sector": "Electrical Transformers"
+  },
+  "Yash Highvoltage": {
+   "call": "follow",
+   "sector": "Electrical Transformers"
+  },
+  "Quality Power El": {
+   "call": "wait",
+   "sector": "Electrical Transformers"
+  },
+  "Rishabh Instruments": {
+   "call": "pass",
+   "sector": "Electrical Transformers"
+  },
+  "Schneider Ele. Infra": {
+   "call": "avoid",
+   "sector": "Electrical Transformers"
+  },
+  "Elecon Engg.Co": {
+   "call": "follow",
+   "sector": "Electrical Equipment"
+  },
+  "TD Power Systems": {
+   "call": "follow",
+   "sector": "Electrical Equipment"
+  },
+  "Triveni Turbine": {
+   "call": "wait",
+   "sector": "Electrical Equipment"
+  },
+  "GE Power": {
+   "call": "pass",
+   "sector": "Electrical Equipment"
+  },
+  "Apar Inds.": {
+   "call": "wait",
+   "sector": "Electrical Equipment"
+  },
+  "Genus Power": {
+   "call": "wait",
+   "sector": "Electrical Equipment"
+  },
+  "Salzer Electronics": {
+   "call": "pass",
+   "sector": "Electrical Equipment"
+  },
+  "RMC Switchgears": {
+   "call": "avoid",
+   "sector": "Electrical Equipment"
+  },
+  "Inox Wind": {
+   "call": "avoid",
+   "sector": "Electrical Equipment"
+  },
+  "KP Green Engg.": {
+   "call": "pass",
+   "sector": "Electrical Equipment"
+  },
+  "Exicom Tele-Sys.": {
+   "call": "pass",
+   "sector": "Electrical Equipment"
+  },
+  "Servotech Renew": {
+   "call": "avoid",
+   "sector": "Electrical Equipment"
+  },
+  "RIR Power Electr": {
+   "call": "avoid",
+   "sector": "Electrical Equipment"
+  },
+  "Avalon Tech": {
+   "call": "follow",
+   "sector": "EMS & Electronics"
+  },
+  "Cyient DLM": {
+   "call": "wait",
+   "sector": "EMS & Electronics"
+  },
+  "Centum Electronics": {
+   "call": "wait",
+   "sector": "EMS & Electronics"
+  },
+  "Vinyas Innovativ": {
+   "call": "wait",
+   "sector": "EMS & Electronics"
+  },
+  "Aimtron": {
+   "call": "wait",
+   "sector": "EMS & Electronics"
+  },
+  "Syrma SGS Tech.": {
+   "call": "follow",
+   "sector": "EMS & Electronics"
+  },
+  "Kaynes Technology": {
+   "call": "wait",
+   "sector": "EMS & Electronics"
+  },
+  "Sahasra Electronic": {
+   "call": "avoid",
+   "sector": "EMS & Electronics"
+  },
+  "Amber Enterprises": {
+   "call": "avoid",
+   "sector": "EMS & Electronics"
+  },
+  "PG Electroplast": {
+   "call": "pass",
+   "sector": "EMS & Electronics"
+  },
+  "Virtuoso Optoelectro": {
+   "call": "avoid",
+   "sector": "EMS & Electronics"
+  },
+  "IKIO Technologies": {
+   "call": "follow",
+   "sector": "EMS & Electronics"
+  },
+  "Maxvolt Energy Indus": {
+   "call": "avoid",
+   "sector": "EMS & Electronics"
+  },
+  "Tips Music": {
+   "call": "wait",
+   "sector": "Media and Entertainment"
+  },
+  "Saregama India": {
+   "call": "wait",
+   "sector": "Media and Entertainment"
+  },
+  "Basilic Fly Studio": {
+   "call": "pass",
+   "sector": "Media and Entertainment"
+  }
+ }
+}
