@@ -76,3 +76,6 @@ scripts/.profile-backup-*.json
 tools/notes/cards/
 tools/notes/*.html
 tools/notes/__pycache__/
+
+# Database record backups made before manual fixes (kept locally, not published)
+backups/
