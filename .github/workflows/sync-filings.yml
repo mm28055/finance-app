@@ -143,6 +143,30 @@ jobs:
           git pull --rebase
           git push
 
+      # A three-way read (positive / neutral / concerning) on each new AGM and special call, and one
+      # line on what changed since the last results call; shown only in the Filings panel. Never fails the job.
+      - name: Read AGMs and special calls
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        timeout-minutes: 30
+        run: |
+          npx tsx scripts/sync-call-reads.ts
+          if git diff --quiet lib/calls-read; then
+            echo "No new reads."
+            exit 0
+          fi
+          git config user.name "filings-bot"
+          git config user.email "filings-bot@users.noreply.github.com"
+          git add lib/calls-read/reads.json
+          git commit -m "Read new AGMs and special calls"
+          git pull --rebase
+          git push
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+          GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
+          GOOGLE_AI_KEYS: ${{ secrets.GOOGLE_AI_KEYS }}
+
       # Changes in the notes' calls (own / follow / wait / pass / avoid) since last night, with the
       # day's price: shown in the Filings panel's "Call changes" tab. Never fails the job.
       - name: Record call changes

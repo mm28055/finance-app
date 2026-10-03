@@ -10,6 +10,8 @@ import type { ResultsStore } from '../results/types';
 import { generalDocLabel } from '../doc-label';
 import changesStore from '../calls-log/changes.json';
 import type { CallChangesStore } from '../calls-log/types';
+import readsStore from '../calls-read/reads.json';
+import type { CallReadsStore } from '../calls-read/types';
 
 /** The "Top Takeaways" of a call analysis (up to four; most analyses list three to five), as plain one-liners. */
 function takeaways(summary: string | null, n = 4): string[] {
@@ -69,7 +71,10 @@ export async function filingsFeed() {
             // "General 17 Sep 2026" reads as "Special call · 17 Sep 2026", as on the company card.
             quarter: t.quarter.q === 'GEN' ? generalDocLabel(t.quarter.name, a.summary) : t.quarter.name,
             date: (t.sourceEventDate || t.createdAt).toISOString().slice(0, 10),
-            score: a.investibilityScore ?? null, guidance: g, points: takeaways(a.summary && a.summary.trim().length > 20 ? a.summary : a.investorBrief),
+            // Results calls carry Gemini's score; AGMs and special calls a three-way read instead (lib/calls-read).
+            score: t.quarter.q === 'GEN' ? null : a.investibilityScore ?? null,
+            read: t.quarter.q === 'GEN' ? (readsStore as unknown as CallReadsStore).reads[`${t.company.name}|${t.quarter.name}`] ?? null : null,
+            guidance: g, points: takeaways(a.summary && a.summary.trim().length > 20 ? a.summary : a.investorBrief),
         })];
     }).sort((x, y) => y.date.localeCompare(x.date) || x.company.localeCompare(y.company));
 

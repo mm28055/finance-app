@@ -14,11 +14,16 @@ export type ResultRow = QuarterResult & Extra;
 export type CallRow = Extra & {
     company: string; sector: string; quarter: string; general: boolean; date: string;
     score: number | null; guidance: { min: number | null; max: number | null; fy?: string } | null; points: string[];
+    /** AGMs and special calls: the three-way read and what changed since the last results call. */
+    read?: { read: 'positive' | 'neutral' | 'concerning'; change: string } | null;
 };
 
 const CALL_TONE: Record<string, string> = {
     own: 'bg-emerald-50 text-emerald-700', follow: 'bg-[#EAF2FB] text-[#4A7AAF]', wait: 'bg-gray-100 text-gray-600',
     pass: 'bg-gray-100 text-gray-400', avoid: 'bg-rose-50 text-rose-500',
+};
+const READ_TONE: Record<string, string> = {
+    positive: 'bg-emerald-50 text-emerald-700 border-emerald-200', neutral: 'bg-gray-50 text-gray-500 border-gray-200', concerning: 'bg-rose-50 text-rose-600 border-rose-200',
 };
 const dayLabel = (iso: string) => new Date(iso + 'T00:00:00').toLocaleDateString('en-IN', { weekday: 'short', day: 'numeric', month: 'short' });
 const chip = (active: boolean) => `px-2.5 py-1 rounded-lg border text-[11px] ${active ? 'bg-gray-800 text-white border-gray-800' : 'bg-white text-gray-600 border-gray-200 hover:border-[#A5C4E2]'}`;
@@ -127,11 +132,15 @@ export function CallsFeed({ calls, onCompany }: { calls: CallRow[]; onCompany?: 
                                 <div className="flex flex-wrap items-center gap-2">
                                     <Name r={c} onCompany={onCompany} />
                                     <span className="text-[11px] text-gray-500">{c.quarter}</span>
+                                    {c.read && (
+                                        <span title="Gemini Pro's read of this call against the last results call" className={`px-1.5 rounded border text-[10px] font-semibold capitalize ${READ_TONE[c.read.read]}`}>{c.read.read}</span>
+                                    )}
                                     {c.score !== null && (
                                         <span title="Gemini Pro's score of the call (out of 100)" className={`px-1.5 rounded border text-[10px] font-semibold ${c.score >= 80 ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : c.score >= 50 ? 'bg-amber-50 text-amber-700 border-amber-200' : 'bg-rose-50 text-rose-600 border-rose-200'}`}>{c.score}/100</span>
                                     )}
                                     <span className="text-[10px] text-gray-400">{c.sector}</span>
                                 </div>
+                                {c.read?.change && <p className="text-[12px] font-medium text-gray-800 mt-1 leading-snug">{c.read.change}</p>}
                                 {guide(c.guidance) && <p className="text-[11px] font-medium text-[#4A7AAF] mt-1">{guide(c.guidance)}</p>}
                                 {c.points.length > 0 && (
                                     <ul className="mt-1 flex flex-col gap-0.5">
