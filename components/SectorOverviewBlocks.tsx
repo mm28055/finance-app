@@ -18,6 +18,9 @@ import {
     STANCE_CONFIG,
     ValuationBlock,
     liveValuation,
+    heldReturn,
+    fairPe,
+    HOLD_YEARS,
 } from '@/lib/sector-overviews';
 import { EnrichedCompany } from './SectorList';
 
@@ -221,12 +224,31 @@ export function LiveValuationTable({ verdicts, byName, block, labels }: {
     })).filter(r => r.lv);
     const flagged = rows.filter(r => r.lv!.moved !== null && Math.abs(r.lv!.moved) > MOVE_FLAG);
     const lender = !!block.lender;
+    // The owner's holding period: 2–5 years, 3 by default, remembered in this browser.
+    const [years, setYears] = React.useState<number>(3);
+    React.useEffect(() => {
+        try { const y = Number(localStorage.getItem('holdYears')); if ((HOLD_YEARS as readonly number[]).includes(y)) setYears(y); } catch { /* storage unavailable */ }
+    }, []);
+    const pickYears = (y: number) => { setYears(y); try { localStorage.setItem('holdYears', String(y)); } catch { /* storage unavailable */ } };
+    const held = `Return a year if held ${years} yrs`;
     const cols = lender
-        ? ['Company', 'Price check', 'P/E', 'Price ÷ book', 'Growth the price needs', 'My growth estimate', 'Price since note']
-        : ['Company', 'Price check', 'P/E', 'EV/EBITDA', 'Growth the price needs', 'My growth estimate', 'Net debt ÷ EBITDA', 'Price since note'];
+        ? ['Company', 'Price check', held, 'P/E', 'Fair P/E', 'Price ÷ book', 'Growth the price needs', 'My growth estimate', 'Price since note']
+        : ['Company', 'Price check', held, 'P/E', 'Fair P/E', 'EV/EBITDA', 'Growth the price needs', 'My growth estimate', 'Net debt ÷ EBITDA', 'Price since note'];
+    const heldTone = (r: number | null) => r === null ? 'text-gray-400' : r >= 12 ? 'text-[#1E7B45]' : r >= 0 ? 'text-[#9A5B00]' : 'text-[#B42323]';
     return (
         <div className="mt-3">
-            <div className="text-[10px] font-semibold text-gray-600 uppercase tracking-wide mb-1.5">What today’s price assumes (live)</div>
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+                <div className="text-[10px] font-semibold text-gray-600 uppercase tracking-wide">What today’s price assumes (live)</div>
+                <div className="flex items-center gap-1.5 text-[10px] text-gray-500">
+                    <span>Holding period</span>
+                    <div className="flex gap-0.5 bg-gray-100 p-0.5 rounded-md" role="group" aria-label="Holding period in years">
+                        {HOLD_YEARS.map(y => (
+                            <button key={y} type="button" onClick={() => pickYears(y)} aria-pressed={years === y}
+                                className={`px-2 py-0.5 rounded font-semibold ${years === y ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-400 hover:text-gray-600'}`}>{y} yrs</button>
+                        ))}
+                    </div>
+                </div>
+            </div>
             <div className="overflow-x-auto border border-gray-200 rounded-lg">
                 <table className="w-full text-[11.5px] border-collapse">
                     <thead>
@@ -246,7 +268,11 @@ export function LiveValuationTable({ verdicts, byName, block, labels }: {
                                 <tr key={v.company} className={`border-b border-gray-100 last:border-0 ${zebra}`}>
                                     <td className={`px-2.5 py-1.5 sticky left-0 ${zebra} font-semibold text-gray-800 whitespace-nowrap`}>{labels.get(v.company) ?? v.company}</td>
                                     <td className="px-2.5 py-1.5"><PriceCheckBadge check={lv!.check} /></td>
+                                    {(() => { const r = heldReturn(lv!.pe, lv!.mine, years); return (
+                                        <td className={`px-2.5 py-1.5 text-right tabular-nums font-semibold ${heldTone(r)}`}>{r === null ? '—' : `${r < 0 ? '−' : ''}${Math.abs(Math.round(r))}%`}</td>
+                                    ); })()}
                                     <td className="px-2.5 py-1.5 text-right tabular-nums text-gray-700">{lv!.pe === null ? 'loss' : x1(lv!.pe)}</td>
+                                    <td className="px-2.5 py-1.5 text-right tabular-nums text-gray-500">{lv!.mine === null || lv!.pe === null ? '—' : x1(fairPe(lv!.mine))}</td>
                                     <td className="px-2.5 py-1.5 text-right tabular-nums text-gray-700">{x1(lender ? lv!.pb : lv!.evEbitda)}</td>
                                     <td className="px-2.5 py-1.5 text-right tabular-nums text-gray-700">{pct0(lv!.needed)}</td>
                                     <td className="px-2.5 py-1.5 text-right tabular-nums font-semibold text-gray-800">{pct0(lv!.mine)}</td>
@@ -268,7 +294,7 @@ export function LiveValuationTable({ verdicts, byName, block, labels }: {
             <p className="text-[10px] text-gray-400 mt-1.5 leading-relaxed">
                 {lender
                     ? <>P/E and market value are live. Price ÷ book = live market value ÷ net worth (share capital plus reserves) at the latest year end, as of {block.writtenOn}; refreshed each year. Lenders are not shown on EV/EBITDA because borrowing is their raw material, not a choice of financing.</>
-                    : <>P/E and market value are live. EV/EBITDA = live market value plus net debt, ÷ operating profit over the last four quarters. Net debt and operating profit are from the latest filed results as of {block.writtenOn} and are refreshed each quarter.</>} Growth the price needs: earnings growth a year for the price to earn about 12% a year while the P/E drifts to 18x over ten years. Price check judges the price only (cash and governance are in the text): green when my estimate is within two points of what the price needs or above it, amber up to six points short, red beyond. Loss-making companies get no P/E or check.
+                    : <>P/E and market value are live. EV/EBITDA = live market value plus net debt, ÷ operating profit over the last four quarters. Net debt and operating profit are from the latest filed results as of {block.writtenOn} and are refreshed each quarter.</>} Growth the price needs: earnings growth a year for the price to earn about 12% a year while the P/E drifts to 18x over ten years. Fair P/E: the P/E at which the price would need exactly my growth estimate. Return a year if held: profit grows at my estimate for the years chosen, and when you sell the market pays a fair price for the growth still to come (fair P/E drifting toward 18x as the fast-growth years are used up). A stock at its fair P/E earns about 12% a year over any period; a gap between today’s P/E and fair P/E closes while you hold, so a short hold gains most from a cheap price and loses most from a dear one. Dividends are left out. Green at 12% a year or more, amber 0–12%, red below zero. Price check judges the price only (cash and governance are in the text): green when my estimate is within two points of what the price needs or above it, amber up to six points short, red beyond. Loss-making companies get no P/E or check.
             </p>
         </div>
     );
