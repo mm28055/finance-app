@@ -171,7 +171,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Aditya Vision',
-        inShort: ["**The leading electronics and appliance chain in Bihar**, with 210 stores in Bihar, Jharkhand, Uttar Pradesh and Chhattisgarh selling ACs, fridges, TVs and phones of the big brands.", "**Good:** revenue has grown about 31% a year since FY22, same-store sales rose 18% in each of the last two quarters, and it has never closed a store. **Bad:** stock ties up cash (inventory days up from 108 to 136, operating cash negative in FY24 and FY25), results depend on the summer, and promoters sold down from 53% to 47%.", "**Verdict: follow.** A fine local franchise; the price needs slightly more growth than I expect."],
+        inShort: ["**The leading electronics and appliance chain in Bihar**, with 210 stores in Bihar, Jharkhand, Uttar Pradesh and Chhattisgarh selling ACs, fridges, TVs and phones of the big brands.", "**Good:** revenue has grown about 31% a year since FY22, same-store sales rose 18% in each of the last two quarters, and it has never closed a store. **Bad:** stock ties up cash (inventory days up from 108 to 136, operating cash negative in FY24 and FY25), results depend on the summer, and promoters sold down from 53% to 47%.", "**Verdict: follow.** A fine local franchise, but stock has eaten the cash: operating cash was ₹78cr against ₹399cr of profit over FY22–FY26 (20%), though FY26 converted 64%; the price also needs slightly more growth than I expect."],
         tagline: "A regional chain of consumer-electronics and appliance stores in the Hindi heartland, led by Bihar.",
         revenue: '₹2,672cr (FY26, standalone)',
         products: [
@@ -224,7 +224,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Entero',
-        inShort: ["**One of India's three largest medicine wholesalers**, buying from about 3,000 drug and device makers and delivering to chemists and hospitals from 138 warehouses in 19 states.", "**Good:** it met every FY26 promise, grew 17.8% organically in Q1 against a market of about 14%, and reached its 5% margin target. **Bad:** growth was built on 51 acquisitions, ₹749cr of goodwill brings its return on all capital to about 10%, it owes ₹343cr to buy out partners (₹309cr within a year), and subsidiary audits flag stock statements that do not match the books.", "**Verdict: follow.** Delivering, but the price needs slightly more growth than I expect."],
+        inShort: ["**One of India's three largest medicine wholesalers**, buying from about 3,000 drug and device makers and delivering to chemists and hospitals from 138 warehouses in 19 states.", "**Good:** it met every FY26 promise, grew 17.8% organically in Q1 against a market of about 14%, and reached its 5% margin target. **Bad:** growth was built on 51 acquisitions, ₹749cr of goodwill brings its return on all capital to about 10%, it owes ₹343cr to buy out partners (₹309cr within a year), and subsidiary audits flag stock statements that do not match the books.", "**Verdict: follow.** Delivering, but operating cash was −₹98cr against ₹253cr of profit over FY22–FY26, and FY26 was the first positive year (₹96cr, 66% of profit); the price also needs slightly more growth than I expect."],
         tagline: "A national wholesaler of medicines and medical devices to chemists and hospitals, built largely by buying regional distributors.",
         revenue: '₹6,591cr (FY26, consolidated)',
         products: [
