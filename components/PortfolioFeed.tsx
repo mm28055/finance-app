@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Search } from 'lucide-react';
 import { companyHref } from '@/lib/company-link';
 import type { ResultRow, CallRow, CallChangeRow } from './ResultsCallsFeeds';
 
@@ -34,6 +34,7 @@ export function PortfolioFeed({ holdings, filings, news, results, calls, callCha
     holdings: Holding[]; filings: Loose[]; news: Loose[]; results: ResultRow[]; calls: CallRow[]; callChanges: CallChangeRow[];
 }) {
     const [days, setDays] = React.useState(30);
+    const [q, setQ] = React.useState('');
     const since = new Date(Date.now() - days * 86400000).toISOString().slice(0, 10);
     const items = (company: string): Item[] => [
         ...filings.filter(f => f.company === company).map(f => ({ date: f.date, kind: 'Filing', title: f.headline, detail: f.summary, url: f.url })),
@@ -49,16 +50,21 @@ export function PortfolioFeed({ holdings, filings, news, results, calls, callCha
         ...callChanges.filter(c => c.company === company).map(c => ({ date: c.date, kind: 'Call change', title: `${c.from ?? 'new'} → ${c.to ?? 'no longer covered'}`, detail: c.why })),
     ].filter(i => i.date >= since).sort((a, b) => b.date.localeCompare(a.date));
 
-    const rows = holdings.map(h => ({ h, list: items(h.company) }));
-    const active = rows.filter(r => r.list.length || r.h.upcoming.length).sort((a, b) => (b.list[0]?.date || '').localeCompare(a.list[0]?.date || ''));
-    const quiet = rows.filter(r => !r.list.length && !r.h.upcoming.length);
+    const rows = holdings.filter(h => !q || h.company.toLowerCase().includes(q.toLowerCase())).map(h => ({ h, list: items(h.company) }));
+    const active = rows.filter(r => r.list.length || r.h.upcoming.length || q).sort((a, b) => (b.list[0]?.date || '').localeCompare(a.list[0]?.date || ''));
+    const quiet = rows.filter(r => !r.list.length && !r.h.upcoming.length && !q);
 
     return (
         <div className="flex flex-col gap-4">
             <div className="flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
-                {[7, 30, 90].map(d => <button key={d} className={chip(days === d)} onClick={() => setDays(d)}>Last {d} days</button>)}
+                {[7, 30, 90, 180].map(d => <button key={d} className={chip(days === d)} onClick={() => setDays(d)}>Last {d} days</button>)}
+                <label className="flex items-center gap-1.5 px-2 py-1 rounded-lg border border-gray-200 bg-white text-[11px] text-gray-500">
+                    <Search className="w-3.5 h-3.5" />
+                    <input value={q} onChange={e => setQ(e.target.value)} placeholder="Company" className="w-28 outline-none bg-transparent text-gray-700" />
+                </label>
                 <span className="ml-auto text-[11px] text-gray-400">{holdings.length} holdings</span>
             </div>
+            {days > 90 && <p className="text-[11px] text-gray-400 -mt-2">Company filings and news are collected from 1 September 2026, so the longer views fill up as time passes.</p>}
             {active.map(({ h, list }) => (
                 <section key={h.company} className="bg-white border border-gray-200 rounded-xl p-3">
                     <div className="flex flex-wrap items-center gap-2">
@@ -67,11 +73,11 @@ export function PortfolioFeed({ holdings, filings, news, results, calls, callCha
                         {h.call && <span className={`px-1.5 rounded text-[10px] font-semibold ${CALL_TONE[h.call] || ''}`}>{h.call}</span>}
                         <span className="text-[10px] text-gray-400">{h.sector}</span>
                     </div>
-                    {h.upcoming.length > 0 && (
-                        <p className="text-[11px] text-[#35577A] mt-1">
-                            Coming up: {h.upcoming.map(u => `${u.kind === 'results' ? 'Results' : 'Earnings call'} ${shortDay(u.date)}${u.time ? `, ${u.time}` : ''}`).join(' · ')}
-                        </p>
-                    )}
+                    <p className={`text-[11px] mt-1 ${h.upcoming.length ? 'text-[#35577A]' : 'text-gray-400'}`}>
+                        Coming up: {h.upcoming.length
+                            ? h.upcoming.map(u => `${u.kind === 'results' ? 'Results' : 'Earnings call'} ${shortDay(u.date)}${u.time ? `, ${u.time}` : ''}`).join(' · ')
+                            : 'results date not yet announced'}
+                    </p>
                     {list.length > 0 && (
                         <ul className="mt-2 flex flex-col divide-y divide-gray-50">
                             {list.map((i, k) => (

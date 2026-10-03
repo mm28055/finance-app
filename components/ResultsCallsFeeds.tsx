@@ -109,7 +109,8 @@ export function CallsFeed({ calls, onCompany }: { calls: CallRow[]; onCompany?: 
     const [kind, setKind] = React.useState<'results' | 'other'>('results');
     const [q, setQ] = React.useState('');
     const who = useWho();
-    const shown = calls.filter(c => (kind === 'other' ? c.general : !c.general) && who.ok(c) && (!q || c.company.toLowerCase().includes(q.toLowerCase())));
+    const sixWeeks = new Date(Date.now() - 45 * 86400000).toISOString().slice(0, 10);
+    const shown = calls.filter(c => c.date >= sixWeeks && (kind === 'other' ? c.general : !c.general) && who.ok(c) && (!q || c.company.toLowerCase().includes(q.toLowerCase())));
     const guide = (g: CallRow['guidance']) => {
         if (!g) return null;
         const range = g.min !== null && g.max !== null && g.min !== g.max ? `${g.min}–${g.max}%` : `${g.min ?? g.max}%`;

@@ -51,10 +51,13 @@ export async function filingsFeed() {
     // Results read the night they came out (lib/results), newest first.
     const results = (store as unknown as ResultsStore).results.map(withCall);
 
-    // Earnings calls analysed in the last 45 days: score, guidance and the top two takeaways.
-    const since = new Date(Date.now() - 45 * 86400000);
+    // Earnings calls analysed in the last 45 days (185 for holdings, for the portfolio tab's longer views).
+    const since = new Date(Date.now() - 45 * 86400000), sinceHeld = new Date(Date.now() - 185 * 86400000);
     const ts = await prisma.transcript.findMany({
-        where: { OR: [{ sourceEventDate: { gte: since } }, { sourceEventDate: null, createdAt: { gte: since } }], company: { isVisible: true } },
+        where: { company: { isVisible: true }, OR: [
+            { sourceEventDate: { gte: since } }, { sourceEventDate: null, createdAt: { gte: since } },
+            { company: { inPortfolio: true }, OR: [{ sourceEventDate: { gte: sinceHeld } }, { sourceEventDate: null, createdAt: { gte: sinceHeld } }] },
+        ] },
         select: { companyId: true, quarterId: true, sourceEventDate: true, createdAt: true, fileUrl: true, filePath: true, company: { select: { name: true, sector: true } }, quarter: { select: { name: true, q: true } } },
     });
     const analyses = ts.length ? await prisma.analysis.findMany({

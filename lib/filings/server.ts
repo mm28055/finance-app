@@ -34,7 +34,7 @@ export function getSectorFilings(sector: string): SectorFilingsResponse {
     return { sector, from, to: TO, companiesInSector, filings };
 }
 
-/** Every filing in the digest (about three months), newest first, for the cross-company Filings page. */
+/** Every filing in the digest (kept a year; collected since 1 Sep 2026), newest first, for the cross-company Filings page. */
 export function getAllFilings(): { to: string; filings: MaterialFiling[] } {
     return { to: TO, filings: [...ALL].sort(byDateDesc) };
 }
