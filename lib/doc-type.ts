@@ -39,6 +39,13 @@ const GENERAL_PATTERNS: RegExp[] = [
     /\bbusiness\s+update\s+(call|meet)\b/i,
     /\bpress\s+(conference|meet)\b/i,
     /\bmedia\s+interaction\b/i,
+    // A broker's conference where many companies present ("Bharat Connect Conference", an
+    // "Investor Company Connect" event, an SME conclave), and calls held only to give an update
+    // or explain a deal ("Acquisition Update Conference Call", "company update conference call").
+    /\b[A-Z][a-z]+\s+Connect\s+(Conference|Event|Meet|Summit)\b/,
+    /\b(investor|company)\s+(company\s+)?connect\b/i,
+    /\b(conclave|summit)\b/i,
+    /\b(company|business|acquisition|merger|strategy|corporate)\s+update\s+(conference\s+)?(call|webinar|meet)\b/i,
 ];
 
 /**
