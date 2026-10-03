@@ -72,6 +72,8 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     const [showColorPicker, setShowColorPicker] = useState(false);
     const [customColorTag, setCustomColorTag] = useState<string | null>(company.colorTag || null);
     const [selectedQuarterIdx, setSelectedQuarterIdx] = useState(0); // 0 = latest
+    // Set once a quarter tab is clicked; until then the Financials box shows the newest filed quarter.
+    const [quarterPicked, setQuarterPicked] = useState(false);
     const [localNotes, setLocalNotes] = useState('');
     const [targetPrice, setTargetPrice] = useState<number | null>(company.targetPrice ?? null);
     const [showTargetInput, setShowTargetInput] = useState(false);
@@ -178,6 +180,14 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
         return Math.round(((high - price) / high) * 100);
     }, [company.currentPrice, company.fiftyTwoWeekHigh]);
     const selectedData = quarters[selectedQuarterIdx] || quarters[0];
+    // The Financials box follows the quarter tab, except before any tab is clicked: then it shows
+    // the newest filed quarter, which can be ahead of the newest call (results out, call not yet
+    // held or not found, as with SMEs that hold calls half-yearly).
+    const qRank = (q?: string) => { const m = q?.match(/^Q([1-4]) FY(\d{2})$/); return m ? Number(m[2]) * 10 + Number(m[1]) : -1; };
+    const newestFiled = effective.trend?.[0];
+    const figures = !quarterPicked && newestFiled && qRank(newestFiled.quarter) > qRank(selectedData?.quarter)
+        ? { financials: newestFiled.financials, quarter: newestFiled.quarter }
+        : { financials: selectedData?.financials || effective.financials, quarter: selectedData?.quarter || effective.summary?.quarter };
 
     // Target hit — a target is a buy price, so it triggers when the price has
     // fallen TO it or below, not when it has run past it.
@@ -630,6 +640,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                         onClick={(e) => {
                                             e.stopPropagation();
                                             setSelectedQuarterIdx(idx);
+                                            setQuarterPicked(true);
                                             setExpanded(true);
                                         }}
                                         className={`px-2 py-0.5 text-[9px] font-semibold rounded-l transition-all flex items-center gap-1 border-y border-l whitespace-nowrap flex-shrink-0 ${idx === selectedQuarterIdx
@@ -720,8 +731,8 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                     <div className="flex-1 min-w-0 flex flex-col gap-4 items-stretch self-start w-full">
                                         <CompanyNumbers companyId={company.id} />
                                         <FinancialMatrix
-                                            financials={selectedData?.financials || effective.financials}
-                                            quarterName={selectedData?.quarter || effective.summary?.quarter}
+                                            financials={figures.financials}
+                                            quarterName={figures.quarter}
                                         />
                                         {(() => {
                                             const trend = effective.trend && effective.trend.length >= 2 ? effective.trend : effective.history;
@@ -749,7 +760,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                             onNotesChange={handleNotesChange}
                                             notesStatus={notesStatus}
                                             activeQuarterIndex={selectedQuarterIdx}
-                                            onQuarterChange={(idx: number) => setSelectedQuarterIdx(idx)}
+                                            onQuarterChange={(idx: number) => { setSelectedQuarterIdx(idx); setQuarterPicked(true); }}
                                             business={business ? <CompanyBusinessCard found={business} company={effective} /> : undefined}
                                             annualReport={effective.annualReport ? <AnnualReportCard report={effective.annualReport} /> : undefined}
                                             annualReportLabel={effective.annualReport ? `AR ${effective.annualReport.year === 'CY25' ? 'CY25' : '26'}` : undefined}
