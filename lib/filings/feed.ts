@@ -38,7 +38,7 @@ function takeaways(summary: string | null, n = 4): string[] {
     });
 }
 
-/** `calls`: 'all' = every company's calls of six months; 'portfolio' = only holdings' (the panel loads the rest when the Calls tab opens). */
+/** `calls`: 'all' = every company's calls of the last two months; 'portfolio' = only holdings', six months (the panel loads the rest in the background). */
 export async function filingsFeed(opts: { calls?: 'all' | 'portfolio' } = {}) {
     const callScope = opts.calls ?? 'all';
     const { to, filings } = getAllFilings();
@@ -53,8 +53,9 @@ export async function filingsFeed(opts: { calls?: 'all' | 'portfolio' } = {}) {
     // Results read the night they came out (lib/results), newest first.
     const results = (store as unknown as ResultsStore).results.map(withCall);
 
-    // Earnings calls, AGMs and special calls of the last six months (the site keeps each company's last two transcripts).
-    const since = new Date(Date.now() - 185 * 86400000);
+    // Earnings calls, AGMs and special calls: the last two months for the Calls tab; six months for holdings
+    // (the My portfolio tab's longer views).
+    const since = new Date(Date.now() - (callScope === 'portfolio' ? 185 : 62) * 86400000);
     const ts = await prisma.transcript.findMany({
         where: { company: { isVisible: true, ...(callScope === 'portfolio' ? { inPortfolio: true } : {}) }, OR: [{ sourceEventDate: { gte: since } }, { sourceEventDate: null, createdAt: { gte: since } }] },
         select: { companyId: true, quarterId: true, sourceEventDate: true, createdAt: true, fileUrl: true, filePath: true, company: { select: { name: true, sector: true } }, quarter: { select: { name: true, q: true } } },

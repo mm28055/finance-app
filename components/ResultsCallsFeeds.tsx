@@ -6,7 +6,7 @@ import { ResultCard } from './ResultCard';
 import { companyHref } from '@/lib/company-link';
 
 // The Filings panel's Results and Calls tabs: every result read the night it came out (with the
-// overnight view), and every earnings call analysed in the last six months (score, guidance, the
+// overnight view), and every earnings call analysed in the last two months (score, guidance, the
 // top two takeaways). Company names find the company on the dashboard.
 
 type Extra = { call?: string; inPortfolio?: boolean };
@@ -161,7 +161,7 @@ export function CallsFeed({ calls, onCompany }: { calls: CallRow[]; onCompany?: 
                 </section>
             ))}
             {!shown.length && <p className="text-sm text-gray-400">No calls match.</p>}
-            <p className="text-[11px] text-gray-400">Calls held in the last six months, analysed by Gemini Pro the night they are filed. The full analysis is in the company&apos;s card.</p>
+            <p className="text-[11px] text-gray-400">Calls held in the last two months, analysed by Gemini Pro the night they are filed. The full analysis is in the company&apos;s card.</p>
         </div>
     );
 }

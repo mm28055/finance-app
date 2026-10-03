@@ -9,7 +9,7 @@ type Tab = 'portfolio' | 'filings' | 'news' | 'results' | 'calls' | 'changes';
 
 // The Filings page has five lists, kept apart: what companies filed themselves; what happened
 // around them (market and policy events, and sharp price moves with the reason found); results as
-// they come in, with the overnight view; the earnings calls analysed in the last six months; and
+// they come in, with the overnight view; the earnings calls analysed in the last two months; and
 // every change in the notes' own calls (own, follow, wait, pass, avoid).
 export function FilingsTabs({ filings, news, results = [], calls = [], callsComplete = false, callChanges = [], holdings = [], initialTab = 'portfolio', initialCompany = '', onCompany }: {
     filings: Rows; news: Rows; results?: ResultRow[]; calls?: CallRow[]; callChanges?: CallChangeRow[]; holdings?: Holding[]; initialTab?: Tab;
@@ -18,7 +18,7 @@ export function FilingsTabs({ filings, news, results = [], calls = [], callsComp
     /** Makes company names in Results and Calls find the company on the dashboard. */ onCompany?: (company: string) => void;
 }) {
     const [tab, setTab] = React.useState<Tab>(initialTab);
-    // The full Calls list is large: fetched in the background a moment after the panel opens (so the panel
+    // The full Calls list (two months) is fetched in the background a moment after the panel opens (so the panel
     // itself opens at once, and the list is usually ready by the time the Calls tab is clicked).
     const [allCalls, setAllCalls] = React.useState<CallRow[] | 'error' | null>(callsComplete ? calls : null);
     const started = React.useRef(false);
