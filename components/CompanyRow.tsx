@@ -63,7 +63,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     // Something new in the last week (a sharp move with its reason, or a market or policy event) that
     // this device has not opened yet: a marker on the row and a dot on the NEWS tab.
     const [newsUnseen, markNewsSeen] = useUnseenNews(company.name, company.newsFlag);
-    // Clicking the "news" marker opens the card on its NEWS tab.
+    // Opening the card on its NEWS tab (the "news" marker itself now opens the Filings panel).
     const [openNews, setOpenNews] = useState(0);
     // Closing the card forgets that, so opening it again by the row starts on the usual tab.
     useEffect(() => { if (!expanded) setOpenNews(0); }, [expanded]);
@@ -371,24 +371,30 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                             {displayCase(company.displayName || company.name)}
                         </span>
                         {companyFilings.length > 0 && (
-                            <button
-                                type="button"
-                                onClick={(e) => { e.stopPropagation(); setExpanded(true); }}
+                            // Opens the Filings panel on this company's filings (see FilingsDrawer).
+                            <a
+                                href="/filings"
+                                data-company={company.name}
+                                data-tab="filings"
+                                onClick={(e) => e.stopPropagation()}
                                 className={`flex-shrink-0 cursor-pointer hover:opacity-80 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border ${TONE_STYLE[companyFilings.some(f => f.tone === 'watch') ? 'watch' : companyFilings.some(f => f.tone === 'good') ? 'good' : 'info'].chip}`}
                                 title={companyFilings.map(f => `${hoverDate(f.date)}: ${f.headline}`).join('\n')}
                             >
                                 {companyFilings.length} {companyFilings.length === 1 ? 'filing' : 'filings'}
-                            </button>
+                            </a>
                         )}
                         {company.newsFlag && (
-                            <button
-                                type="button"
-                                onClick={(e) => { e.stopPropagation(); setExpanded(true); markNewsSeen(); setOpenNews(n => n + 1); }}
+                            // Opens the Filings panel on its Market and policy tab, on this company.
+                            <a
+                                href="/filings"
+                                data-company={company.name}
+                                data-tab="news"
+                                onClick={(e) => { e.stopPropagation(); markNewsSeen(); }}
                                 className="flex-shrink-0 cursor-pointer hover:opacity-80 inline-flex items-center gap-1 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border bg-[#FDF6E7] text-[#946200] border-[#F0DDAE]"
                                 title={`${hoverDate(company.newsFlag.date)}: ${company.newsFlag.headline}`}
                             >
                                 {newsUnseen && <span className="w-1.5 h-1.5 rounded-full bg-[#E0A030]" />} news
-                            </button>
+                            </a>
                         )}
                         {company.events && company.events.length > 0 && (
                             <a

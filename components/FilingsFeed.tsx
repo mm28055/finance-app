@@ -34,15 +34,17 @@ const dayLabel = (iso: string) => new Date(iso + 'T00:00:00').toLocaleDateString
 
 // Every company's filings on one page, newest first. By default only the ones that can move the
 // share price; filters for sector, tone, the note's call and a company search.
-export function FilingsFeed({ filings, kind = 'filings' }: { filings: Row[]; /** 'news' = the Market and policy tab. */ kind?: 'filings' | 'news' }) {
+export function FilingsFeed({ filings, kind = 'filings', initialCompany = '' }: { filings: Row[]; /** 'news' = the Market and policy tab. */ kind?: 'filings' | 'news'; /** Start on one company, showing all its entries (as its row's marker counts them). */ initialCompany?: string }) {
     const news = kind === 'news';
     const types = news ? NEWS_TYPES : TYPES;
-    const [all, setAll] = React.useState(false);
+    const [all, setAll] = React.useState(!!initialCompany);
     const [tone, setTone] = React.useState<'any' | 'good' | 'watch'>('any');
     const [call, setCall] = React.useState('any');
     const [sector, setSector] = React.useState('any');
     const [type, setType] = React.useState('any');
-    const [q, setQ] = React.useState('');
+    const [q, setQ] = React.useState(initialCompany);
+    // Opened from a row marker: that company exactly ("Raymond", not "Raymond Lifestyle") until the search is edited.
+    const [exact, setExact] = React.useState(initialCompany);
     const [open, setOpen] = React.useState<Record<string, boolean>>({});
 
     const sectors = React.useMemo(() => [...new Set(filings.map(f => f.sector))].sort(), [filings]);
@@ -52,7 +54,7 @@ export function FilingsFeed({ filings, kind = 'filings' }: { filings: Row[]; /**
         (call === 'any' || f.call === call) &&
         (type === 'any' || !!types.find(t => t.key === type)?.test.test(f.category)) &&
         (sector === 'any' || (sector === 'portfolio' ? f.inPortfolio : f.sector === sector)) &&
-        (!q || f.company.toLowerCase().includes(q.toLowerCase())));
+        (exact ? f.company === exact : !q || f.company.toLowerCase().includes(q.toLowerCase())));
     const byDay = new Map<string, Row[]>();
     for (const f of shown) byDay.set(f.date, [...(byDay.get(f.date) || []), f]);
 
@@ -84,7 +86,7 @@ export function FilingsFeed({ filings, kind = 'filings' }: { filings: Row[]; /**
                 </select>
                 <label className="flex items-center gap-1.5 px-2 py-1 rounded-lg border border-gray-200 bg-white text-[11px] text-gray-500">
                     <Search className="w-3.5 h-3.5" />
-                    <input value={q} onChange={e => setQ(e.target.value)} placeholder="Company" className="w-28 outline-none bg-transparent text-gray-700" />
+                    <input value={q} onChange={e => { setExact(''); setQ(e.target.value); }} placeholder="Company" className="w-28 outline-none bg-transparent text-gray-700" />
                 </label>
                 <span className="ml-auto text-[11px] text-gray-400">{shown.length} items</span>
             </div>
