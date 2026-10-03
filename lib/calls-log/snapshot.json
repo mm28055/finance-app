@@ -1,5 +1,5 @@
 {
- "date": "2026-10-03",
+ "date": "2026-10-04",
  "calls": {
   "Anthem Biosciences": {
    "call": "follow",
@@ -585,16 +585,16 @@
    "call": "avoid",
    "sector": "Chemicals"
   },
-  "Chembond Chemicals": {
-   "call": "follow",
-   "sector": "Chemicals"
-  },
   "Galaxy Surfactants": {
    "call": "follow",
    "sector": "Chemicals"
   },
   "Rossari Biotech": {
    "call": "follow",
+   "sector": "Chemicals"
+  },
+  "Chembond Chemicals": {
+   "call": "wait",
    "sector": "Chemicals"
   },
   "Privi Speciality Che": {
@@ -822,7 +822,7 @@
    "sector": "Construction"
   },
   "GR Infraprojects": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Construction"
   },
   "IRB Infra.Devl.": {
@@ -830,7 +830,7 @@
    "sector": "Construction"
   },
   "Ceigall India": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Construction"
   },
   "Welspun Enterp": {
@@ -906,7 +906,7 @@
    "sector": "Construction"
   },
   "M & B Engineer.": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Construction"
   },
   "EPack Prefab Techno.": {
@@ -914,7 +914,7 @@
    "sector": "Construction"
   },
   "Interarch Building": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Construction"
   },
   "GK Energy": {
@@ -934,7 +934,7 @@
    "sector": "Construction"
   },
   "Arvind SmartSpaces": {
-   "call": "own",
+   "call": "follow",
    "sector": "Realty"
   },
   "Keystone Realtors": {
@@ -1222,7 +1222,7 @@
    "sector": "Commercial Services"
   },
   "Redington": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Commercial Services"
   },
   "TeamLease Services": {
@@ -1422,7 +1422,7 @@
    "sector": "Solar PV Cells EPC"
   },
   "Alpex Solar": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Solar PV Cells EPC"
   },
   "Websol Energy System Ltd": {
@@ -1458,7 +1458,7 @@
    "sector": "Vehicles"
   },
   "Zelio E-Mobility": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Vehicles"
   },
   "Ajax Engineering": {
@@ -1578,7 +1578,7 @@
    "sector": "Mining & Metals Recycle"
   },
   "Pondy Oxides & Chem.": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Mining & Metals Recycle"
   },
   "Ardee Industries": {
@@ -1610,7 +1610,7 @@
    "sector": "Platform Cos"
   },
   "Macfos": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Platform Cos"
   },
   "TBO Tek": {
@@ -1794,7 +1794,7 @@
    "sector": "Iron and Steel"
   },
   "Manaksia Coated Metals": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Iron and Steel"
   },
   "Aeroflex Industries": {
@@ -1830,7 +1830,7 @@
    "sector": "Construction - Power"
   },
   "GNG Electronics": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Hardware"
   },
   "Rashi Peripheral": {
@@ -2202,7 +2202,7 @@
    "sector": "Aerospace defence"
   },
   "Azad Engineering": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Aerospace defence"
   },
   "Astra Microwave Products": {
@@ -2258,7 +2258,7 @@
    "sector": "Industrials"
   },
   "The Anup Enginee": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Industrials"
   },
   "Kilburn Engg.": {
@@ -2322,11 +2322,11 @@
    "sector": "Industrials"
   },
   "KRN Heat Exchan": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Industrials"
   },
   "Omnitech Engineering": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Industrials"
   },
   "Tempsens Instruments": {
@@ -2358,7 +2358,7 @@
    "sector": "Industrials"
   },
   "Diffusion Engineers": {
-   "call": "own",
+   "call": "follow",
    "sector": "Industrials"
   },
   "Carborundum Univer.": {
@@ -2378,7 +2378,7 @@
    "sector": "Industrials"
   },
   "Aditya Infotech": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Industrials"
   },
   "HPL Electric": {
@@ -2390,7 +2390,7 @@
    "sector": "Industrial - Railway"
   },
   "Concord Control": {
-   "call": "follow",
+   "call": "wait",
    "sector": "Industrial - Railway"
   },
   "MV Electrosystems": {

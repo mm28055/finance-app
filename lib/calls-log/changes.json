@@ -1,3 +1,184 @@
 {
- "changes": []
+ "changes": [
+  {
+   "date": "2026-10-04",
+   "company": "Chembond Chemicals",
+   "sector": "Chemicals",
+   "from": "follow",
+   "to": "wait",
+   "price": 215.81,
+   "why": "Operating cash was −₹46cr against ₹135cr of profit over FY22–FY26, and only ₹8cr against ₹35cr in FY26 (23%); the two years since the demerger turned ₹18cr of ₹66cr of profit into cash. The price fits the ~12% growth I expect, but it returns to follow only when a full year's operating cash covers most of its profit and receivables grow slower than sales."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "GR Infraprojects",
+   "sector": "Construction",
+   "from": "follow",
+   "to": "wait",
+   "price": 790.2,
+   "why": "Strong and cheap, but its profit is not arriving as cash: operating cash was −₹6,640cr against ₹5,527cr of profit over FY22–FY26, and −₹2,811cr against ₹903cr in FY26, as money went into HAM projects. It goes back to follow only once operating cash turns positive and converts most of its profit, with orders arriving and no new legal surprise."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Ceigall India",
+   "sector": "Construction",
+   "from": "follow",
+   "to": "wait",
+   "price": 380.1,
+   "why": "A growing business whose profit has not turned into cash: operating cash was −₹1,030cr against ₹1,193cr of profit over FY22–FY26, and still −₹91cr against ₹309cr in FY26. It goes back to follow once operating cash turns positive and converts most of its profit, with a clean internal-control report."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "M & B Engineer.",
+   "sector": "Construction",
+   "from": "follow",
+   "to": "wait",
+   "price": 251.75,
+   "why": "The cheapest of the steel-building makers but the weakest at turning profit into cash: ₹77cr of operating cash against ₹265cr of profit over FY22–FY26 (29%), and −₹31cr against ₹93cr in FY26. It goes back to follow once operating cash turns positive and converts most of its profit, with the margin near 11% and orders recovering."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Interarch Building",
+   "sector": "Construction",
+   "from": "follow",
+   "to": "wait",
+   "price": 1666.9,
+   "why": "A reliable grower, but less than half its profit has arrived as cash: ₹173cr of operating cash against ₹427cr of profit over FY22–FY26 (41%), and −₹19cr against ₹135cr in FY26. It goes back to follow once operating cash turns positive and converts most of its profit, with the tax question settled."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Arvind SmartSpaces",
+   "sector": "Realty",
+   "from": "own",
+   "to": "follow",
+   "price": 592.5,
+   "why": "Operating cash was −₹164cr against ₹326cr of profit over FY22–FY26 (−₹170cr in FY26), because land buying counts as operating spending; strong bookings and a fair price, but own it only once filed operating cash turns positive and net debt stays within India Ratings' band."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Redington",
+   "sector": "Commercial Services",
+   "from": "follow",
+   "to": "wait",
+   "price": 397.95,
+   "why": "Its profit does not arrive as cash: operating cash was −₹642cr against ₹7,098cr of profit over FY22–FY26, and only ₹231cr against ₹1,284cr in FY26 (18%), as stock and credit to resellers absorbed it. A well-run leader in a price-driven boom; back to follow once operating cash converts most of its profit (above ₹1,000cr a year) and the PC price boom settles."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Alpex Solar",
+   "sector": "Solar PV Cells EPC",
+   "from": "follow",
+   "to": "wait",
+   "price": 823.2,
+   "why": "Operating cash was −₹60cr against ₹316cr of profit over FY22–FY26, and −₹116cr against ₹202cr in FY26, as stock and borrowings ballooned. The cell plant could transform profits, but it returns to follow only once the cell line is running and operating cash turns positive."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Zelio E-Mobility",
+   "sector": "Vehicles",
+   "from": "follow",
+   "to": "wait",
+   "price": 1056,
+   "why": "Operating cash was −₹17cr against ₹54cr of profit over FY22–FY26, and −₹7cr against ₹28cr in FY26. Fast, profitable growth, but it returns to follow only when the half-year results show operating cash turning positive."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Pondy Oxides & Chem.",
+   "sector": "Mining & Metals Recycle",
+   "from": "follow",
+   "to": "wait",
+   "price": 437,
+   "why": "Its profit is not arriving as cash: operating cash was ₹18cr against ₹297cr of profit over FY23–FY26 (6%), and −₹44cr against ₹132cr of profit in FY26. It returns to follow when operating cash turns positive and covers most of its profit, with the cathode plant running."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Macfos",
+   "sector": "Platform Cos",
+   "from": "follow",
+   "to": "wait",
+   "price": 1050,
+   "why": "Its profit is not arriving as cash: operating cash was −₹22cr against ₹68cr of profit over FY22–FY26, and −₹8cr against ₹26cr of profit in FY26, as stock and debt grow. Growth is slowing too, and the price needs about {need:Macfos|22–23}% a year against my ~20%. It returns to follow when operating cash turns positive and covers most of its profit."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Manaksia Coated Metals",
+   "sector": "Iron and Steel",
+   "from": "follow",
+   "to": "wait",
+   "price": 126.59,
+   "why": "Its profit is not arriving as cash: operating cash was ₹33cr against ₹85cr of profit over FY22–FY26 (39%), and −₹14cr against ₹41cr of profit in FY26, with ₹115cr of bills discounted off the balance sheet. Earnings should step up as the new lines fill and the price asks for about what I expect; it returns to follow when operating cash turns positive and covers most of its profit."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "GNG Electronics",
+   "sector": "Hardware",
+   "from": "follow",
+   "to": "wait",
+   "price": 704.7,
+   "why": "Its profit has not arrived as cash: −₹248cr of operating cash against ₹306cr of profit over FY22–FY26, and −₹215cr against ₹132cr in FY26 as stock piled up. A real growth story, but it leans on a memory-chip shortage that will not last for ever; it returns to follow once operating cash turns positive and covers most of its profit, with net debt back toward the ~₹300cr promised. The price is {label:GNG Electronics|full}: it needs about {need:GNG Electronics|26}% a year against my ~22%."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Azad Engineering",
+   "sector": "Aerospace defence",
+   "from": "follow",
+   "to": "wait",
+   "price": 2860.9,
+   "why": "Its profit has not arrived as cash: −₹61cr of operating cash against ₹317cr of profit over FY22–FY26, and −₹119cr against ₹134cr in FY26 alone. An excellent business, but it returns to follow only once operating cash turns positive and covers most of its profit without more bill discounting."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "The Anup Enginee",
+   "sector": "Industrials",
+   "from": "follow",
+   "to": "wait",
+   "price": 1566.7,
+   "why": "Its profit is not arriving as cash: ₹152cr of operating cash against ₹395cr of profit over the five years Screener shows (FY21–FY26, FY24 not shown; 38%), and ₹2cr on ₹110cr in FY26. A strong fabricator in a reset year, with new orders taken close to historic margins; it returns to follow when operating cash converts most of its profit and the second half brings the margin back. The price needs about {need:The Anup Enginee|21}% a year against my ~18%, which is {Label:The Anup Enginee|Full}."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "KRN Heat Exchan",
+   "sector": "Industrials",
+   "from": "follow",
+   "to": "wait",
+   "price": 1414.7,
+   "why": "Its profit is not arriving as cash: operating cash was −₹76cr against ₹168cr of profit over FY24–FY26 (the three years on record), and −₹114cr in FY26 alone. The data-centre growth is real, but it returns to follow only when operating cash turns positive and converts most of its profit, with Vertiv ordering in volume."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Omnitech Engineering",
+   "sector": "Industrials",
+   "from": "follow",
+   "to": "wait",
+   "price": 608.65,
+   "why": "Its profit is not arriving as cash: operating cash was −₹11cr against ₹174cr of profit over FY23–FY26 (the four years on record), and −₹2cr in FY26. A strong order book, but it depends on oilfield customers; it returns to follow when operating cash turns positive and converts most of its profit at a 30% margin."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Diffusion Engineers",
+   "sector": "Industrials",
+   "from": "own",
+   "to": "follow",
+   "price": 464.4,
+   "why": "Its profit is not yet arriving as cash: ₹74cr of operating cash against ₹156cr of profit over FY22–FY26 (47%), and FY26 converted 46%. A small, integrated wear-protection specialist that has become the preferred workshop for foreign equipment designers; it returns to own when receivables come down and operating cash covers most of its profit."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Aditya Infotech",
+   "sector": "Industrials",
+   "from": "follow",
+   "to": "wait",
+   "price": 3799.6,
+   "why": "Its profit is not arriving as cash: operating cash was −₹40cr against ₹1,039cr of profit over FY22–FY26, and FY26 converted only 4% (₹13cr on ₹368cr). A strong brand, but the share price already assumes a lot of growth; it returns to follow when operating cash turns clearly positive and converts most of its profit, with the price rises still sticking."
+  },
+  {
+   "date": "2026-10-04",
+   "company": "Concord Control",
+   "sector": "Industrial - Railway",
+   "from": "follow",
+   "to": "wait",
+   "price": 2281,
+   "why": "Its profit is not arriving as cash: operating cash was −₹55cr against ₹87cr of profit over FY22–FY26, and −₹55cr on ₹43cr of profit in FY26. It is in the right part of the chain; it returns to follow when operating cash turns positive and converts most of its profit."
+  }
+ ]
 }
