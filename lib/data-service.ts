@@ -12,8 +12,7 @@ import { AnalysisResult } from './ai-analyst';
 import { PORTFOLIO_SECTOR } from './portfolio';
 import { ANALYSIS_WINDOW, TRANSCRIPT_WINDOW, FINANCIALS_WINDOW, GENERAL_ANALYSIS_WINDOW } from './retention';
 import { quarterScore, GENERAL_Q } from './quarters';
-import { generalDocLabel, generalDocSource, generalSlotDate } from './doc-label';
-import { quarterEndDate } from './doc-type';
+import { generalDocLabel, generalSlotDate } from './doc-label';
 import { holdingNotes, holdingWarnings, toHoldingRow, type HoldingRow } from './shareholding';
 
 type RawHolding = {
@@ -67,35 +66,6 @@ const guidanceOf = (a: GuidanceRow, quarter: string, source?: string) => ({
     quarter,
     source,
 });
-
-/**
- * Newer guidance from an AGM or special call. The row's guidance normally comes
- * from the newest quarter's results call; when management later puts a revenue
- * growth number on the record at an AGM or special call, that number is the
- * current one. Only a STATED figure overrides — a vague comment never does.
- * "Newer" means held after that quarter's call (its transcript's event date,
- * or its download date; failing both, 60 days after the quarter closed).
- */
-function newerStatedGuidance(
-    latestQuarter: string | undefined,
-    latestCall: Date | null,
-    generals: (GuidanceRow & { quarter: { name: string }; investorBrief: string | null })[]
-) {
-    let after: number;
-    if (!latestQuarter) after = 0;
-    else if (latestCall) after = latestCall.getTime();
-    else {
-        const end = quarterEndDate(latestQuarter);
-        after = end ? end.getTime() + 60 * 86400000 : Infinity;
-    }
-    const best = generals
-        .filter(g => g.guidanceBasis === 'STATED' && (g.guidanceGrowthMin !== null || g.guidanceGrowthMax !== null))
-        .map(g => ({ g, at: generalSlotDate(g.quarter.name)?.getTime() ?? 0 }))
-        .filter(x => x.at > after)
-        .sort((a, b) => b.at - a.at)[0];
-    if (!best) return undefined;
-    return guidanceOf(best.g, best.g.quarter.name, generalDocSource(best.g.quarter.name, best.g.investorBrief) || undefined);
-}
 
 /**
  * Price to sales, divided at read time so the daily market-cap refresh moves it
@@ -216,30 +186,6 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
         }
     });
 
-    // AGM / special-call analyses carrying a stated revenue-growth number — the
-    // candidates that can supersede a row's results-call guidance. Few rows, so
-    // the brief is read too (it labels older "General" slots AGM vs special call).
-    const generalGuidance = await prisma.analysis.findMany({
-        where: {
-            quarter: { q: GENERAL_Q },
-            guidanceBasis: 'STATED',
-            company: { isVisible: true },
-            OR: [{ guidanceGrowthMin: { not: null } }, { guidanceGrowthMax: { not: null } }],
-        },
-        select: {
-            companyId: true,
-            guidanceGrowthMin: true,
-            guidanceGrowthMax: true,
-            guidanceFy: true,
-            guidanceBasis: true,
-            guidanceQuote: true,
-            investorBrief: true,
-            quarter: { select: { name: true } }
-        }
-    });
-    const generalGuidanceBy = new Map<string, typeof generalGuidance>();
-    for (const g of generalGuidance) generalGuidanceBy.set(g.companyId, [...(generalGuidanceBy.get(g.companyId) || []), g]);
-
     // Shareholding: the last ~15 months for every company, in one query. The
     // row only needs the latest promoter / pledge figures and the warnings.
     const holdingBy = await holdingRowsBy(null, new Date(Date.now() - 460 * 86400000));
@@ -328,20 +274,10 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             targetPrice: co.targetPrice ? Number(co.targetPrice) : undefined,
             geminiScore: latestA?.investibilityScore ?? undefined,
             geminiScoreDelta,
-            // Guidance is read from the newest quarter only. When a fresh
-            // quarter lands with a weaker number the row follows it down on its
-            // own — there is no separate staleness rule to keep in sync. The one
-            // exception: a stated number from a later AGM or special call.
-            guidance: (() => {
-                const latestT = co.transcripts.find(t => t.quarter.name === latestA?.quarter.name);
-                const later = newerStatedGuidance(
-                    latestA?.quarter.name,
-                    latestT ? (latestT.sourceEventDate || latestT.createdAt) : null,
-                    generalGuidanceBy.get(co.id) || []
-                );
-                if (later) return later;
-                return latestA?.guidanceBasis ? guidanceOf(latestA, latestA.quarter.name) : undefined;
-            })(),
+            // Guidance (and the name's colour) comes from the newest results call only; AGMs and
+            // special calls never change it (Manish, 3 Oct 2026). When a fresh quarter lands with a
+            // weaker number the row follows it down on its own.
+            guidance: latestA?.guidanceBasis ? guidanceOf(latestA, latestA.quarter.name) : undefined,
             isSme: co.isSme,
             // A renamed company is shown by its current name (the last one recorded from NSE's
             // name changes); the stored name stays as the key the sector notes use.
