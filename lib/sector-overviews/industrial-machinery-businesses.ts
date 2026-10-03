@@ -138,7 +138,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Macpower CNC',
-        inShort: ["**A Rajkot maker of entry and mid-range CNC machines** averaging about ₹20 lakh each, sold mostly to small engineering workshops and car-parts firms.", "**Good:** debt-free, sales up 56% in Q1 FY27, margins up from 13% to 16%, and it builds nothing without an advance. **Watch:** its plant is nearly full, 259 days of stock left only ₹3cr of free cash in FY26, and it competes in the most crowded, price-driven part of the market.", "**Verdict: follow.** A well-run small company, but the price already assumes the new plant and higher margins arrive on time."],
+        inShort: ["**A Rajkot maker of entry and mid-range CNC machines** averaging about ₹20 lakh each, sold mostly to small engineering workshops and car-parts firms.", "**Good:** debt-free, sales up 56% in Q1 FY27, margins up from 13% to 16%, and it builds nothing without an advance. **Watch:** its plant is nearly full, 259 days of stock left only ₹3cr of free cash in FY26, and it competes in the most crowded, price-driven part of the market.", "**Verdict: follow.** A well-run small company, but only ₹36cr of operating cash came from ₹109cr of profit over FY22–FY26 (33%), though FY26 converted 41%; the price already assumes the new plant and higher margins arrive on time, and I would buy only once operating cash covers most of its profit."],
         tagline: "Entry and mid-range CNC turning and machining centres for small workshops, with a growing premium range and a push into defence.",
         revenue: '₹333cr (FY26, standalone)',
         products: [
