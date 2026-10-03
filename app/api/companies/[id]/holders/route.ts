@@ -1,11 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
-import { screenerPageUrl, fetchScreenerPage, screenerCompanyId, cachedFetch } from '@/lib/screener-page';
+import { screenerPageUrl, fetchScreenerPage, screenerCompanyId, cachedFetch, keyed, FILED } from '@/lib/screener-page';
 
 // GET /api/companies/[id]/holders
 // Who the named shareholders are: every holder above 1% in each group (promoters, foreign
 // institutions, domestic institutions, public), as filed in the quarterly shareholding
-// pattern and shown on Screener. Holdings change quarterly, so cached for a day; nothing stored.
+// pattern and shown on Screener. Holdings change quarterly, so cached for a week (refreshed after results); nothing stored.
 //   { periods: ["Mar 2025", …], groups: { promoters: [{ name, values: { "Jun 2026": 12.3, … } }], … } }
 
 const GROUPS = ['promoters', 'foreign_institutions', 'domestic_institutions', 'public'] as const;
@@ -17,14 +17,14 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
     try {
         const page = await screenerPageUrl(id);
         if (!page) return NextResponse.json({ error: 'No Screener page' }, { status: 404 });
-        const html = await fetchScreenerPage(page.url, 86400);
+        const html = await fetchScreenerPage(page.url, FILED, page.key);
         const sid = html ? screenerCompanyId(html) : null;
         if (!sid) return NextResponse.json({ error: 'Screener page unavailable' }, { status: 502 });
 
         const periods = new Set<string>();
         const groups: Record<string, { name: string; values: Record<string, number> }[]> = {};
         for (const g of GROUPS) {
-            const res = await cachedFetch(86400)(`https://www.screener.in/api/3/${sid}/investors/${g}/quarterly/`);
+            const res = await cachedFetch(FILED)(keyed(`https://www.screener.in/api/3/${sid}/investors/${g}/quarterly/`, page.key));
             const data = res.ok ? await res.json() : {};
             groups[g] = Object.entries(data as Record<string, Record<string, unknown>>).map(([name, byPeriod]) => {
                 const values: Record<string, number> = {};

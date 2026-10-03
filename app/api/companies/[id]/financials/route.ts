@@ -1,10 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { screenerPageUrl, fetchScreenerPage, screenerTable, screenerGrowth, screenerCompanyId, cachedFetch, type ScreenerView } from '@/lib/screener-page';
+import { screenerPageUrl, fetchScreenerPage, screenerTable, screenerGrowth, screenerCompanyId, cachedFetch, keyed, FILED, type ScreenerView } from '@/lib/screener-page';
 
 // GET /api/companies/[id]/financials?view=consolidated|standalone
 // The last five quarters and the last five years of P&L, balance sheet, cash flow and working-capital ratios,
 // plus Screener's growth summary, read from the company's Screener page when its
-// card is opened. The page is cached for a day; nothing is stored.
+// card is opened. The page is cached for a week (refreshed after results); nothing is stored.
 
 const YEARS = 5;
 
@@ -39,7 +39,7 @@ const ROWS: Record<string, [string, string][]> = {
  * of profit, asset turnover, capex against sales and depreciation, dividend payout.
  * Lenders (no "Sales" row) get only the ratios that mean something for them.
  */
-async function debtAndCashRatios(html: string, consolidated: boolean): Promise<{ columns: string[]; raw: (string | null)[]; rows: { label: string; src: string; expandable: boolean; values: (string | null)[]; parts?: { label: string; values: (string | null)[] }[]; heading?: string }[] } | null> {
+async function debtAndCashRatios(html: string, consolidated: boolean, key: string): Promise<{ columns: string[]; raw: (string | null)[]; rows: { label: string; src: string; expandable: boolean; values: (string | null)[]; parts?: { label: string; values: (string | null)[] }[]; heading?: string }[] } | null> {
     const pl = screenerTable(html, 'profit-loss'), bs = screenerTable(html, 'balance-sheet'), cf = screenerTable(html, 'cash-flow');
     if (!pl || !bs) return null;
     const years = pl.columns.filter(c => c !== 'TTM' && bs.columns.includes(c)).slice(-YEARS);
@@ -59,7 +59,7 @@ async function debtAndCashRatios(html: string, consolidated: boolean): Promise<{
     try {
         const sid = screenerCompanyId(html);
         if (sid) {
-            const res = await cachedFetch(86400)(`https://www.screener.in/api/company/${sid}/schedules/?parent=${encodeURIComponent('Other Assets')}&section=balance-sheet${consolidated ? '&consolidated=' : ''}`);
+            const res = await cachedFetch(FILED)(keyed(`https://www.screener.in/api/company/${sid}/schedules/?parent=${encodeURIComponent('Other Assets')}&section=balance-sheet${consolidated ? '&consolidated=' : ''}`, key));
             if (res.ok) cash = (await res.json())['Cash Equivalents'] ?? null;
         }
     } catch { /* net debt is left out */ }
@@ -70,7 +70,7 @@ async function debtAndCashRatios(html: string, consolidated: boolean): Promise<{
     try {
         const sid = screenerCompanyId(html);
         if (sid && cf) {
-            const res = await cachedFetch(86400)(`https://www.screener.in/api/company/${sid}/schedules/?parent=${encodeURIComponent('Cash from Operating Activity')}&section=cash-flow${consolidated ? '&consolidated=' : ''}`);
+            const res = await cachedFetch(FILED)(keyed(`https://www.screener.in/api/company/${sid}/schedules/?parent=${encodeURIComponent('Cash from Operating Activity')}&section=cash-flow${consolidated ? '&consolidated=' : ''}`, key));
             if (res.ok) taxPaid = (await res.json())['Direct taxes'] ?? null;
         }
     } catch { /* falls back to the figure implied by the ratio */ }
@@ -196,7 +196,7 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
     try {
         const page = await screenerPageUrl(id, asked === 'consolidated' || asked === 'standalone' ? asked : undefined);
         if (!page) return NextResponse.json({ error: 'No Screener page for this company' }, { status: 404 });
-        const html = await fetchScreenerPage(page.url, 86400);
+        const html = await fetchScreenerPage(page.url, FILED, page.key);
         if (!html) return NextResponse.json({ error: 'Screener page unavailable' }, { status: 502 });
 
 type Row = { label: string; src: string; expandable: boolean; values: (string | null)[] };
@@ -272,7 +272,7 @@ type Row = { label: string; src: string; expandable: boolean; values: (string | 
             if (rows.length) tables['quarters'] = { columns: [...qCols.map(i => fq(q.columns[i])), 'YoY'], raw: [...qCols.map(i => q.columns[i]), null], rows: withNetMargin(rows, true) };
         }
         // "Ratio 1": debt and cash measures worked out from the same filed tables, last five years.
-        const ratio1 = await debtAndCashRatios(html, page.view === 'consolidated');
+        const ratio1 = await debtAndCashRatios(html, page.view === 'consolidated', page.key);
         if (ratio1) tables['ratios-1'] = ratio1;
 
         const empty = !tables['profit-loss']?.rows.some(r => r.values.some(v => v !== null && v !== '0'));

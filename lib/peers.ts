@@ -2,12 +2,12 @@ import { prisma } from '@/lib/prisma';
 import { allSectorOverviews } from '@/lib/sector-overviews';
 import { companyCallInfo, type Call } from '@/lib/sector-overviews/calls';
 import type { SectorOverview } from '@/lib/sector-overviews/types';
-import { screenerPageUrl, fetchScreenerPage, screenerTable, screenerGrowth, screenerCompanyId, cachedFetch, type ScreenerTable } from '@/lib/screener-page';
+import { screenerPageUrl, fetchScreenerPage, screenerTable, screenerGrowth, screenerCompanyId, cachedFetch, keyed, FILED, type ScreenerTable } from '@/lib/screener-page';
 
 // A company's closest rivals and the figures that compare them, for the company card's
 // "Price assumes" and "Peers" tabs. Rivals come from the company's own group in its sector
 // note (same segment first, then nearest in size); figures come from each company's
-// Screener page, cached for a day like the rest of the card. Nothing is stored.
+// Screener page, cached for a week (refreshed after results) like the rest of the card. Nothing is stored.
 
 const PEERS = 5;
 
@@ -139,11 +139,11 @@ export async function companyFigures(companyId: string, isSelf: boolean): Promis
     try {
         // Screener turns away bursts of requests; one retry after a pause gets most of them.
         let page = await screenerPageUrl(companyId).catch(() => null);
-        let html = page ? await fetchScreenerPage(page.url, 86400).catch(() => null) : null;
+        let html = page ? await fetchScreenerPage(page.url, FILED, page.key).catch(() => null) : null;
         if (!html) {
             await new Promise(r => setTimeout(r, 1500));
             page = await screenerPageUrl(companyId).catch(() => null);
-            html = page ? await fetchScreenerPage(page.url, 86400).catch(() => null) : null;
+            html = page ? await fetchScreenerPage(page.url, FILED, page.key).catch(() => null) : null;
         }
         if (!html) { base.unread = true; return base; }
         const pl = screenerTable(html, 'profit-loss'), bs = screenerTable(html, 'balance-sheet'), cf = screenerTable(html, 'cash-flow');
@@ -190,7 +190,7 @@ export async function companyFigures(companyId: string, isSelf: boolean): Promis
             try {
                 const sid = screenerCompanyId(html);
                 if (sid) {
-                    const res = await cachedFetch(86400)(`https://www.screener.in/api/company/${sid}/schedules/?parent=${encodeURIComponent('Other Assets')}&section=balance-sheet${page!.view === 'consolidated' ? '&consolidated=' : ''}`);
+                    const res = await cachedFetch(FILED)(keyed(`https://www.screener.in/api/company/${sid}/schedules/?parent=${encodeURIComponent('Other Assets')}&section=balance-sheet${page!.view === 'consolidated' ? '&consolidated=' : ''}`, page!.key));
                     if (res.ok) {
                         const byYear: Record<string, string> = (await res.json())['Cash Equivalents'] ?? {};
                         const latest = Object.keys(byYear).pop();

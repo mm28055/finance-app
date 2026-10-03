@@ -1,9 +1,21 @@
 import { prisma } from '@/lib/prisma';
 import { resolveScreenerUrl } from '@/lib/sync-service';
+import { lastResultsBefore } from '@/lib/events/server';
 
 // A company's Screener page, fetched on demand for the company card and cached by
 // Next.js's data cache (nothing is stored in the database). Used by the price &
 // valuation history and the 6-year financials.
+//
+// Filed figures (results, balance sheet, cash flow, holders, breakdowns) change only when a
+// company reports, so each page is read at most once a WEEK, plus once more the day after the
+// company's results (the results date goes into the cache key). This keeps Screener reads low.
+// Price-based charts are still read daily.
+
+/** How long filed figures are kept before Screener is read again. */
+export const FILED = 7 * 86400;
+
+/** `url` with the company's refresh key added, so its cached copy is replaced after results. */
+export const keyed = (url: string, key: string) => (key ? `${url}${url.includes('?') ? '&' : '?'}r=${key}` : url);
 
 const UA = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36' };
 
@@ -14,11 +26,12 @@ export const cachedFetch = (seconds: number) => (url: string, init?: RequestInit
 export type ScreenerView = 'consolidated' | 'standalone';
 
 /** The company's Screener page URL for a view; the default view is the one the lookup finds (consolidated when it exists). */
-export async function screenerPageUrl(companyId: string, view?: ScreenerView): Promise<{ url: string; view: ScreenerView } | null> {
+export async function screenerPageUrl(companyId: string, view?: ScreenerView): Promise<{ url: string; view: ScreenerView; key: string } | null> {
     const co = await prisma.company.findUnique({ where: { id: companyId }, select: { isin: true, ticker: true, name: true, aliases: true } });
     if (!co) return null;
     const found = await resolveScreenerUrl(co.isin, co.ticker, co.name, cachedFetch(30 * 86400), co.aliases);
     if (!found) return null;
+    const key = (lastResultsBefore(co.name) || '').replace(/-/g, '');
     const base = found.replace(/consolidated\/?$/, '');
     const defaultView: ScreenerView = /\/consolidated\/?$/.test(found) ? 'consolidated' : 'standalone';
     const v = view || defaultView;
@@ -26,16 +39,16 @@ export async function screenerPageUrl(companyId: string, view?: ScreenerView): P
     // A company that only recently began filing group accounts (Bajaj Healthcare) has an empty
     // consolidated page; unless consolidated was asked for, show its standalone figures instead.
     if (!view && v === 'consolidated') {
-        const html = await fetchScreenerPage(consolidatedUrl, 86400);
+        const html = await fetchScreenerPage(consolidatedUrl, FILED, key);
         const pl = html ? screenerTable(html, 'profit-loss') : null;
         const filled = pl?.rows.some(r => r.values.filter(x => x !== null).length >= 2);
-        if (html && !filled) return { url: base, view: 'standalone' };
+        if (html && !filled) return { url: base, view: 'standalone', key };
     }
-    return { url: v === 'consolidated' ? consolidatedUrl : base, view: v };
+    return { url: v === 'consolidated' ? consolidatedUrl : base, view: v, key };
 }
 
-export async function fetchScreenerPage(url: string, seconds: number): Promise<string | null> {
-    const res = await cachedFetch(seconds)(url);
+export async function fetchScreenerPage(url: string, seconds: number, key = ''): Promise<string | null> {
+    const res = await cachedFetch(seconds)(keyed(url, key));
     return res.ok ? res.text() : null;
 }
 

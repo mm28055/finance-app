@@ -19,6 +19,14 @@ export function getCompanyEventChips(company: string): EventChip[] | undefined {
     return list.length ? list : undefined;
 }
 
+/** The company's most recent results date before today (results are filed in the evening, so Screener
+ *  has them by the next day), or null. Used to re-read its Screener page once after results. */
+export function lastResultsBefore(company: string): string | null {
+    const t = today();
+    const past = ALL.filter(e => e.kind === 'results' && e.company === company && e.date < t).map(e => e.date).sort();
+    return past.length ? past[past.length - 1] : null;
+}
+
 export function getAllEvents(): { updated: string; events: CompanyEvent[] } {
     return { updated: (store as { updated?: string }).updated || '', events: [...ALL].sort(byDate) };
 }
