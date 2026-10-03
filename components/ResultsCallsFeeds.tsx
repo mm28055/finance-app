@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { Search } from 'lucide-react';
+import { Search, ExternalLink } from 'lucide-react';
 import type { QuarterResult } from '@/lib/results/types';
 import { ResultCard } from './ResultCard';
 import { companyHref } from '@/lib/company-link';
@@ -16,6 +16,8 @@ export type CallRow = Extra & {
     score: number | null; guidance: { min: number | null; max: number | null; fy?: string } | null; points: string[];
     /** AGMs and special calls: the three-way read and what changed since the last results call. */
     read?: { read: 'positive' | 'neutral' | 'concerning'; change: string } | null;
+    /** The transcript: the exchange filing, or our stored copy. */
+    source?: { url: string; label: string } | null;
 };
 
 const CALL_TONE: Record<string, string> = {
@@ -139,6 +141,12 @@ export function CallsFeed({ calls, onCompany }: { calls: CallRow[]; onCompany?: 
                                         <span title="Gemini Pro's score of the call (out of 100)" className={`px-1.5 rounded border text-[10px] font-semibold ${c.score >= 80 ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : c.score >= 50 ? 'bg-amber-50 text-amber-700 border-amber-200' : 'bg-rose-50 text-rose-600 border-rose-200'}`}>{c.score}/100</span>
                                     )}
                                     <span className="text-[10px] text-gray-400">{c.sector}</span>
+                                    {c.source && (
+                                        <a href={c.source.url} target="_blank" rel="noopener noreferrer" className="ml-auto inline-flex items-center gap-1 text-[11px] text-[#4A7AAF] hover:underline"
+                                            title={c.source.label === 'Transcript PDF' ? 'Our stored copy of the transcript (no exchange link on record)' : 'The transcript as the company filed it'}>
+                                            {c.source.label} <ExternalLink className="w-3 h-3" />
+                                        </a>
+                                    )}
                                 </div>
                                 {c.read?.change && <p className="text-[12px] font-medium text-gray-800 mt-1 leading-snug">{c.read.change}</p>}
                                 {guide(c.guidance) && <p className="text-[11px] font-medium text-[#4A7AAF] mt-1">{guide(c.guidance)}</p>}

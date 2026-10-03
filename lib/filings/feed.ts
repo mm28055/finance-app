@@ -53,7 +53,7 @@ export async function filingsFeed() {
     const since = new Date(Date.now() - 45 * 86400000);
     const ts = await prisma.transcript.findMany({
         where: { OR: [{ sourceEventDate: { gte: since } }, { sourceEventDate: null, createdAt: { gte: since } }], company: { isVisible: true } },
-        select: { companyId: true, quarterId: true, sourceEventDate: true, createdAt: true, company: { select: { name: true, sector: true } }, quarter: { select: { name: true, q: true } } },
+        select: { companyId: true, quarterId: true, sourceEventDate: true, createdAt: true, fileUrl: true, filePath: true, company: { select: { name: true, sector: true } }, quarter: { select: { name: true, q: true } } },
     });
     const analyses = ts.length ? await prisma.analysis.findMany({
         where: { OR: ts.map(t => ({ companyId: t.companyId, quarterId: t.quarterId })) },
@@ -74,6 +74,10 @@ export async function filingsFeed() {
             // Results calls carry Gemini's score; AGMs and special calls a three-way read instead (lib/calls-read).
             score: t.quarter.q === 'GEN' ? null : a.investibilityScore ?? null,
             read: t.quarter.q === 'GEN' ? (readsStore as unknown as CallReadsStore).reads[`${t.company.name}|${t.quarter.name}`] ?? null : null,
+            // The transcript: the exchange filing when the call came from it, else our stored PDF copy.
+            source: t.filePath && /nseindia\.com|bseindia\.com/.test(t.filePath)
+                ? { url: t.filePath, label: /bseindia/.test(t.filePath) ? 'BSE filing' : 'NSE filing' }
+                : t.fileUrl && /^https?:/.test(t.fileUrl) ? { url: t.fileUrl, label: 'Transcript PDF' } : null,
             guidance: g, points: takeaways(a.summary && a.summary.trim().length > 20 ? a.summary : a.investorBrief),
         })];
     }).sort((x, y) => y.date.localeCompare(x.date) || x.company.localeCompare(y.company));
