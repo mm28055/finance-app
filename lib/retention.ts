@@ -53,6 +53,14 @@ export const GENERAL_Q = 'GEN';
 export const GENERAL_TRANSCRIPT_WINDOW = 2;
 export const GENERAL_ANALYSIS_WINDOW = 4;
 
+/** General slots (AGMs, special calls) older than this are dropped whatever the count (owner, 3 Oct 2026). */
+export const GENERAL_MAX_AGE_DAYS = 365;
+/** True for a General slot dated more than GENERAL_MAX_AGE_DAYS ago. */
+export const isStaleGeneral = (name: string, now = Date.now()) => {
+    const d = generalSlotDate(name);
+    return !!d && now - d.getTime() > GENERAL_MAX_AGE_DAYS * 86400000;
+};
+
 // General rows all share q = 'GEN' and their fiscal year, so the database order
 // among them is arbitrary; they are ranked by the date in their slot name, newest
 // first, before the General window is applied.
@@ -98,7 +106,7 @@ export async function pruneCompany(db: PrismaClient, companyId: string, hooks: P
 
     for (const old of [
         ...transcripts.slice(TRANSCRIPT_WINDOW),
-        ...generalTranscripts.slice(GENERAL_TRANSCRIPT_WINDOW)
+        ...generalTranscripts.filter((t, i) => i >= GENERAL_TRANSCRIPT_WINDOW || isStaleGeneral(t.quarter.name))
     ]) {
         await hooks.onTranscriptEvict?.({
             id: old.id,
@@ -121,7 +129,7 @@ export async function pruneCompany(db: PrismaClient, companyId: string, hooks: P
 
     for (const old of [
         ...analyses.slice(ANALYSIS_WINDOW),
-        ...generalAnalyses.slice(GENERAL_ANALYSIS_WINDOW)
+        ...generalAnalyses.filter((a, i) => i >= GENERAL_ANALYSIS_WINDOW || isStaleGeneral(a.quarter.name))
     ]) {
         await hooks.onAnalysisEvict?.({
             id: old.id,
@@ -162,6 +170,11 @@ export async function pruneCompany(db: PrismaClient, companyId: string, hooks: P
     });
 
     for (const old of financials.slice(FINANCIALS_WINDOW)) {
+        await db.financials.delete({ where: { id: old.id } });
+    }
+    // Rows left on General slots (calls once misfiled as results calls) go with their slot's age.
+    const generalFinancials = await db.financials.findMany({ where: { companyId, quarter: { q: GENERAL_Q } }, include: { quarter: true } });
+    for (const old of generalFinancials.filter(f => isStaleGeneral(f.quarter.name))) {
         await db.financials.delete({ where: { id: old.id } });
     }
 

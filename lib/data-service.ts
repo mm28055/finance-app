@@ -10,7 +10,7 @@ import { SectorData, EnrichedCompany } from '@/components/SectorList';
 import type { CompanyFinancials, MetricData } from '@/components/FinancialMatrix';
 import { AnalysisResult } from './ai-analyst';
 import { PORTFOLIO_SECTOR } from './portfolio';
-import { ANALYSIS_WINDOW, TRANSCRIPT_WINDOW, FINANCIALS_WINDOW, GENERAL_ANALYSIS_WINDOW } from './retention';
+import { ANALYSIS_WINDOW, TRANSCRIPT_WINDOW, FINANCIALS_WINDOW, GENERAL_ANALYSIS_WINDOW, isStaleGeneral } from './retention';
 import { quarterScore, GENERAL_Q } from './quarters';
 import { generalDocLabel, generalSlotDate } from './doc-label';
 import { holdingNotes, holdingWarnings, toHoldingRow, type HoldingRow } from './shareholding';
@@ -390,6 +390,8 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
         where: { companyId: id, quarter: { q: GENERAL_Q } },
         include: { quarter: true }
     }))
+        // AGMs and special calls older than a year are not shown (and are pruned on the next sync).
+        .filter(a => !isStaleGeneral(a.quarter.name))
         .sort((a, b) => (generalSlotDate(b.quarter.name)?.getTime() ?? 0) - (generalSlotDate(a.quarter.name)?.getTime() ?? 0))
         .slice(0, GENERAL_ANALYSIS_WINDOW);
     const allAnalyses = [...co.analyses, ...generalAnalyses];
@@ -432,7 +434,7 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
         };
     })
         // A General slot whose analysis has rolled off has no tab of its own.
-        .filter(h => !generalSlotDate(h.slot) || h.analysis || h.pdfUrl)
+        .filter(h => !generalSlotDate(h.slot) || ((h.analysis || h.pdfUrl) && !isStaleGeneral(h.slot)))
         // Quarters first, newest first; then AGMs / special calls, newest first.
         .sort((a, b) => {
             const ga = generalSlotDate(a.slot), gb = generalSlotDate(b.slot);
