@@ -523,6 +523,28 @@ function ProfileCard({ p, verdict, lv, writtenOn }: { p: BusinessProfile; verdic
                         </div>
                     )}
                 </section>
+                {p.shares?.map(block => (
+                    <section key={block.title}>
+                        <Label>{block.title}</Label>
+                        <div className="grid gap-x-6 gap-y-3 sm:grid-cols-2">
+                            {block.groups.map((g, gi) => (
+                                <div key={g.label ?? gi}>
+                                    {g.label && <div className="text-[10.5px] font-semibold text-gray-500 mb-1">{g.label}</div>}
+                                    <ul className="space-y-1">
+                                        {g.rows.map(r => (
+                                            <li key={r.name} className="grid grid-cols-[minmax(0,9rem)_1fr_2.5rem] items-center gap-2 text-[11.5px]">
+                                                <span className="text-gray-700 truncate" title={r.name}>{r.name}</span>
+                                                <span className="h-1.5 rounded-full bg-gray-100 overflow-hidden"><span className="block h-full rounded-full bg-[#6B9FCC]" style={{ width: `${Math.max(0, Math.min(100, r.share))}%` }} /></span>
+                                                <span className="text-right tabular-nums font-semibold text-gray-800">{r.share}%</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
+                        {block.source && <p className="text-[10px] text-gray-400 mt-1.5">{block.source}</p>}
+                    </section>
+                ))}
             </div>
 
             {hasCharts && (

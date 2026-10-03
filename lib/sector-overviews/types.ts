@@ -244,6 +244,12 @@ export interface BusinessProfile {
     revenueText: string;
     /** Up to two stacked bars, e.g. by business and by geography. */
     mixes?: { caption: string; parts: MixPart[]; note?: string }[];
+    /**
+     * Shares that do not add up to 100, shown as bars on the open card: its market share by segment,
+     * or how much of each big customer's business it holds. Each block has a title, an optional
+     * source line and groups of named bars (0–100).
+     */
+    shares?: { title: string; source?: string; groups: { label?: string; rows: { name: string; share: number }[] }[] }[];
     customers: string[];
     difficulty: { level: 'Very high' | 'High' | 'Medium' | 'Low'; text: string };
     moat: string;

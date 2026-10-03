@@ -188,6 +188,24 @@ const profiles: BusinessProfile[] = [
             { caption: 'Revenue by product, Q1 FY27 (company presentation)', parts: [{ label: 'Steel wheels', share: 63 }, { label: 'Alloy wheels', share: 35 }, { label: 'Knuckles', share: 2 }] },
             { caption: 'Revenue by vehicle, FY26 (Q4 FY26 call)', parts: [{ label: 'Cars and utility vehicles', share: 54 }, { label: 'Trucks', share: 28 }, { label: 'Tractors', share: 13 }, { label: 'Two- and three-wheelers', share: 2 }, { label: 'Off-road and knuckles', share: 2 }] },
         ],
+        shares: [
+            {
+                title: 'Market share in India (steel wheels)',
+                source: 'Company presentation, July 2026.',
+                groups: [{ rows: [{ name: 'Medium and heavy trucks', share: 53 }, { name: 'Tractors', share: 43 }, { name: 'Cars and utility vehicles', share: 39 }, { name: 'Two- and three-wheelers', share: 39 }, { name: 'Off-road vehicles', share: 35 }] }],
+            },
+            {
+                title: 'Its share of each big customer’s wheels',
+                source: 'Share of each vehicle maker’s purchases of that wheel. Company presentation, July 2026.',
+                groups: [
+                    { label: 'Steel wheels: cars', rows: [{ name: 'MG Motor', share: 100 }, { name: 'Honda', share: 96 }, { name: 'Mahindra', share: 56 }, { name: 'Maruti Suzuki', share: 36 }, { name: 'Kia', share: 30 }, { name: 'Hyundai', share: 25 }] },
+                    { label: 'Alloy wheels: cars', rows: [{ name: 'Hyundai', share: 74 }, { name: 'Mahindra', share: 64 }, { name: 'Tata Motors', share: 62 }, { name: 'Renault', share: 60 }, { name: 'Kia', share: 51 }, { name: 'Skoda', share: 47 }, { name: 'MG Motor', share: 25 }, { name: 'Nissan', share: 20 }] },
+                    { label: 'Steel wheels: trucks', rows: [{ name: 'Ashok Leyland', share: 64 }, { name: 'Tata Motors', share: 58 }] },
+                    { label: 'Steel wheels: tractors and off-road', rows: [{ name: 'JCB', share: 62 }, { name: 'Escorts', share: 60 }, { name: 'Mahindra', share: 56 }, { name: 'Sonalika', share: 48 }, { name: 'New Holland', share: 31 }] },
+                    { label: 'Steel wheels: two- and three-wheelers', rows: [{ name: 'Suzuki scooters', share: 96 }, { name: 'Mahindra three-wheelers', share: 81 }, { name: 'Honda two-wheelers', share: 39 }] },
+                ],
+            },
+        ],
         customers: ["**Car and utility-vehicle makers**, as a share of each maker's steel wheels: MG 100%, Honda 96%, Mahindra 56%, Maruti Suzuki 36%, Kia 30%, Hyundai 25%; and of their alloy wheels: Hyundai 74%, Mahindra 64%, Tata Motors 62%, Renault 60%, Kia 51%, Skoda 47% (company presentation, July 2026).", "**Truck, tractor and off-road makers** (41% of FY26 revenue with trucks and tractors together): Ashok Leyland 64% and Tata Motors 58% of their truck wheels; JCB 62%, Escorts 60%, Mahindra 56%, Sonalika 48% and New Holland 31% of their tractor and off-road wheels. **Two- and three-wheeler makers**: Suzuki scooters 96%, Mahindra three-wheelers 81% and Honda two-wheelers 39%, and it claims about 80% of electric-scooter wheels.", "**Export buyers**, mostly aftermarket wheel brands in the US and Europe, which the Bhuj alloy plant will mainly serve."],
         difficulty: { level: 'Medium', text: "Steel wheels are pressed and welded from steel strip at huge volume, so scale and cost decide who wins; alloy wheels need casting, machining and painting to car makers' safety and finish standards. Its managing director calls it ‘hands down’ the lowest-cost wheel maker outside China." },
         moat: "Scale, the lowest costs outside China, and a large share of business at almost every car maker make it hard to replace. The weakness is pricing: it spoke of ‘two decades of very poor pricing’ before this year's increases, and domestic alloy-wheel margins are being squeezed by a rival selling below cost.",
