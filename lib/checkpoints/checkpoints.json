@@ -12109,11 +12109,12 @@
    "id": "shalby-q2fy27-2",
    "company": "Shalby",
    "sector": "Hospitals",
-   "text": "Implant stock (651 days) and group cash improving",
+   "text": "Implant stock (651 days) stops growing or falls by September",
    "due": "Q2 FY27",
    "ifMissed": "Stays pass",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "ifMet": "Supports a fresh look at the pass call"
   },
   {
    "id": "shalby-q2fy27-3",
@@ -31707,6 +31708,39 @@
    "ifMissed": "Stays wait",
    "createdOn": "2026-09-30",
    "status": "pending"
+  },
+  {
+   "company": "Shalby",
+   "sector": "Hospitals",
+   "due": "Q2 FY27",
+   "createdOn": "2026-10-03",
+   "status": "pending",
+   "ifMet": "Supports a fresh look at the pass call",
+   "ifMissed": "Stays pass",
+   "id": "shalby-q2fy27-4",
+   "text": "Implant segment loss narrowing from FY26 (−₹35cr before tax for the year; −₹40cr in FY25)"
+  },
+  {
+   "company": "Shalby",
+   "sector": "Hospitals",
+   "due": "Q2 FY27",
+   "createdOn": "2026-10-03",
+   "status": "pending",
+   "ifMet": "Supports a fresh look at the pass call",
+   "ifMissed": "Stays pass",
+   "id": "shalby-q2fy27-5",
+   "text": "Consolidated operating cash clearly positive for the half year (FY25 −₹4cr, FY26 about zero)"
+  },
+  {
+   "company": "Shalby",
+   "sector": "Hospitals",
+   "due": "Q2 FY27",
+   "createdOn": "2026-10-03",
+   "status": "pending",
+   "ifMet": "Supports a fresh look at the pass call",
+   "ifMissed": "Stays pass",
+   "id": "shalby-q2fy27-6",
+   "text": "Borrowings flat or falling at September (interest already ₹41cr a year, up from ₹8cr in FY22)"
   }
  ]
 }
