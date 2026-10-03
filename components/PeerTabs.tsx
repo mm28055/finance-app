@@ -84,7 +84,7 @@ export function PriceAssumes({ companyId }: { companyId: string }) {
     const controls = (
         <div className="flex flex-wrap gap-x-4 gap-y-1.5 mb-3">
             <Choice label="Years you hold" value={years} options={HOLDS} format={v => `${v}`} onChange={setYears} />
-            <Choice label="Return you want" value={want} options={[0.10, 0.12, 0.15]} format={v => `${Math.round(v * 100)}%`} onChange={setWant} />
+            <Choice label="Return you want" value={want} options={[0.12, 0.15, 0.18, 0.20]} format={v => `${Math.round(v * 100)}%`} onChange={setWant} />
             <Choice label="P/E when you sell" value={exitChoice} options={EXIT_PES} format={v => (v === 0 ? 'today' : `${v}`)} onChange={setExitPe} />
         </div>
     );
