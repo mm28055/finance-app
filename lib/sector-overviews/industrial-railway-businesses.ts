@@ -87,7 +87,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Concord Control',
-        inShort: ["**A small railway-electronics company** making wireless control systems for long freight trains, Kavach anti-collision equipment (through an associate), axle counters and locomotive propulsion, plus flexible circuit boards.", "**Good:** fast growth, a 29% margin and an order book of about ₹697cr, 3.3 times FY26 revenue. **Bad:** operating cash flow was minus ₹55cr in FY26 as unpaid bills and stock piled up, and sales to related parties rose sixteenfold while ₹13.4cr is owed by director-linked companies.", "**Verdict: follow.** It is in the right part of the chain, but the profits must turn into cash first."],
+        inShort: ["**A small railway-electronics company** making wireless control systems for long freight trains, Kavach anti-collision equipment (through an associate), axle counters and locomotive propulsion, plus flexible circuit boards.", "**Good:** fast growth, a 29% margin and an order book of about ₹697cr, 3.3 times FY26 revenue. **Bad:** operating cash flow was minus ₹55cr in FY26 as unpaid bills and stock piled up, and sales to related parties rose sixteenfold while ₹13.4cr is owed by director-linked companies.", "**Verdict: wait.** Its profit is not arriving as cash: operating cash was −₹55cr against ₹87cr of profit over FY22–FY26, and −₹55cr on ₹43cr of profit in FY26. It is in the right part of the chain; it returns to follow when operating cash turns positive and converts most of its profit."],
         tagline: "Railway control, safety and propulsion electronics for Indian Railways, with a flexible circuit-board maker; listed on the BSE SME platform.",
         revenue: '₹210cr (FY26, consolidated)',
         products: [
