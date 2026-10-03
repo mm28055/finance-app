@@ -9,7 +9,7 @@ import { useHoverOpen } from '@/lib/hover-open';
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
 // Bump when the shape of /financials changes, so browsers never reuse an older copy.
-const DATA_VERSION = 13;
+const DATA_VERSION = 14;
 
 type Tab = 'history' | 'assumes' | 'peers' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios' | 'ratios-1';
 type Row = { label: string; src: string; expandable: boolean; values: (string | null)[]; /** The figures a ratio is made from, shown above it (open by default, can be closed). */ parts?: { label: string; values: (string | null)[] }[]; /** A section heading shown above this row. */ heading?: string };
@@ -33,6 +33,12 @@ const OWN_DATA = new Set<Tab>(['history', 'assumes', 'peers']);
 const KEY_ROWS = new Set(['Sales', 'Revenue', 'Operating profit', 'Financing profit', 'Net profit', 'Total', 'Free cash', 'ROCE', 'Operating cash']);
 // What each row means, shown when the pointer rests on its label (no footnotes under the tables).
 const HINTS: Record<string, string> = {
+    'Working capital (₹cr)': 'Receivables plus inventory less payables, at the year end. Unbilled work and deposits are left out (Screener mixes them in one line).',
+    'Working capital growth': 'Growth in receivables + inventory − payables against the year before; compare it with sales growth.',
+    'Working capital, days of sales': 'Working capital as days of the year\'s sales: rising means it is growing faster than the business.',
+    'Profit from operations': 'Operating profit as the filed cash-flow statement starts from it (before working-capital changes and tax).',
+    'Operating cash before tax': 'Profit from operations plus the working-capital changes above: the cash the business itself produced.',
+    'Operating cash after tax': 'Operating cash after tax paid, as filed.',
     'Net profit margin': 'Net profit ÷ sales (income, for a lender): how much of each ₹100 of sales is left as profit after all costs, interest and tax.',
     // Ratio tab
     'Debt to equity': 'Borrowings ÷ shareholders\' equity. Under 1 is comfortable for most businesses.',

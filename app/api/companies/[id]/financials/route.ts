@@ -190,6 +190,83 @@ async function debtAndCashRatios(html: string, consolidated: boolean, key: strin
     };
 }
 
+/**
+ * Two sections added under the WC tab's day counts, per financial year:
+ *  1. "Working capital against sales": sales, receivables, inventory and payables (₹cr, from the
+ *     balance-sheet breakdowns), receivables + stock − payables, its growth beside sales growth, and
+ *     its days of sales — did working capital grow in step with the business?
+ *  2. "Where the operating cash went": the filed cash-flow breakdown from profit from operations,
+ *     through receivables, inventory, payables and other items, to operating cash before and after
+ *     tax, with a total over the years shown.
+ * Screener's "other assets" line is left out on purpose: it mixes unbilled work with deposits.
+ * Lenders (no "Sales" row) get nothing. `raw` holds the table's year labels ("Mar 2026").
+ */
+async function workingCapitalRows(html: string, consolidated: boolean, key: string, raw: (string | null)[]) {
+    const pl = screenerTable(html, 'profit-loss');
+    const sid = screenerCompanyId(html);
+    if (!pl || !sid || !pl.rows.some(r => r.label === 'Sales')) return null;
+    const schedule = async (parent: string, section: string): Promise<Record<string, Record<string, string>>> => {
+        try {
+            const res = await cachedFetch(FILED)(keyed(`https://www.screener.in/api/company/${sid}/schedules/?parent=${encodeURIComponent(parent)}&section=${section}${consolidated ? '&consolidated=' : ''}`, key));
+            return res.ok ? await res.json() : {};
+        } catch { return {}; }
+    };
+    const [assets, liabilities, opCash] = await Promise.all([
+        schedule('Other Assets', 'balance-sheet'), schedule('Other Liabilities', 'balance-sheet'), schedule('Cash from Operating Activity', 'cash-flow'),
+    ]);
+    const n = (v: string | null | undefined) => { const t = v?.replace(/,/g, '').trim(); if (!t) return null; const x = Number(t); return Number.isFinite(x) ? x : null; };
+    const plCell = (label: string, y: string | null) => { const i = y ? pl.columns.indexOf(y) : -1; return i < 0 ? null : n(pl.rows.find(r => r.label === label)?.values[i]); };
+    const sch = (o: Record<string, Record<string, string>>, label: string, y: string | null) => (y ? n(o[label]?.[y]) : null);
+    const cr = (v: number | null) => (v === null ? null : Math.round(v).toLocaleString('en-IN'));
+    const pct = (v: number | null) => (v === null || !Number.isFinite(v) ? null : `${v > 0 ? '+' : ''}${Math.round(v)}%`);
+
+    const sales = raw.map(y => plCell('Sales', y));
+    const recv = raw.map(y => sch(assets, 'Trade receivables', y));
+    const inv = raw.map(y => sch(assets, 'Inventories', y));
+    const pay = raw.map(y => sch(liabilities, 'Trade Payables', y));
+    const wc = raw.map((_, i) => (recv[i] === null && inv[i] === null ? null : (recv[i] ?? 0) + (inv[i] ?? 0) - (pay[i] ?? 0)));
+    const growth = (a: (number | null)[]) => a.map((v, i) => (i === 0 || v === null || a[i - 1] === null || !(a[i - 1]! > 0) ? null : ((v - a[i - 1]!) / a[i - 1]!) * 100));
+    const haveWc = wc.some(v => v !== null);
+
+    const fromOps = raw.map(y => sch(opCash, 'Profit from operations', y));
+    const wcChanges = raw.map(y => sch(opCash, 'Working capital changes', y));
+    const taxes = raw.map(y => sch(opCash, 'Direct taxes', y));
+    const beforeTax = raw.map((_, i) => (fromOps[i] === null || wcChanges[i] === null ? null : fromOps[i]! + wcChanges[i]!));
+    // After tax as filed (the cash-flow table's own line), so it matches the rest of the card to the crore.
+    const cf = screenerTable(html, 'cash-flow');
+    const filed = (y: string | null) => { const i = y && cf ? cf.columns.indexOf(y) : -1; return i < 0 ? null : n(cf!.rows.find(r => r.label === 'Cash from Operating Activity')?.values[i]); };
+    const afterTax = raw.map((y, i) => filed(y) ?? (beforeTax[i] === null ? null : beforeTax[i]! + (taxes[i] ?? 0)));
+    const haveBridge = fromOps.some(v => v !== null);
+    const total = (a: (number | null)[]) => (a.some(v => v !== null) ? a.reduce<number>((s, v) => s + (v ?? 0), 0) : null);
+
+    type R = { label: string; src: string; expandable: boolean; values: (string | null)[]; heading?: string };
+    const out: R[] = [];
+    const add = (label: string, values: (string | null)[], heading?: string, totalValue?: string | null) =>
+        out.push({ label, src: label, expandable: false, values: [...values, totalValue ?? null], ...(heading ? { heading } : {}) });
+    if (haveWc) {
+        add('Sales (₹cr)', sales.map(cr), 'Working capital against sales');
+        add('Receivables (₹cr)', recv.map(cr));
+        add('Inventory (₹cr)', inv.map(cr));
+        add('Payables (₹cr)', pay.map(cr));
+        add('Working capital (₹cr)', wc.map(cr));
+        add('Sales growth', growth(sales).map(pct));
+        add('Working capital growth', growth(wc).map(pct));
+        add('Working capital, days of sales', wc.map((v, i) => (v === null || !sales[i] ? null : String(Math.round((v / sales[i]!) * 365)))));
+    }
+    if (haveBridge) {
+        const bridge = (label: string, a: (number | null)[], heading?: string) => add(label, a.map(cr), heading, cr(total(a)));
+        bridge('Profit from operations', fromOps, 'Where the operating cash went (₹cr)');
+        bridge('Receivables', raw.map(y => sch(opCash, 'Receivables', y)));
+        bridge('Inventory', raw.map(y => sch(opCash, 'Inventory', y)));
+        bridge('Payables', raw.map(y => sch(opCash, 'Payables', y)));
+        bridge('Other items', raw.map(y => sch(opCash, 'Other WC items', y)));
+        bridge('Operating cash before tax', beforeTax);
+        bridge('Tax paid', taxes);
+        bridge('Operating cash after tax', afterTax);
+    }
+    return out.length ? out : null;
+}
+
 export async function GET(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;
     const asked = req.nextUrl.searchParams.get('view') as ScreenerView | null;
@@ -199,7 +276,7 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
         const html = await fetchScreenerPage(page.url, FILED, page.key);
         if (!html) return NextResponse.json({ error: 'Screener page unavailable' }, { status: 502 });
 
-type Row = { label: string; src: string; expandable: boolean; values: (string | null)[] };
+type Row = { label: string; src: string; expandable: boolean; values: (string | null)[]; heading?: string };
         // Net profit as a share of sales (income, for a lender), worked out per column and placed under net profit.
         // `skipLast` leaves the quarterly table's YoY column empty.
         const withNetMargin = (rows: Row[], skipLast: boolean): Row[] => {
@@ -274,6 +351,14 @@ type Row = { label: string; src: string; expandable: boolean; values: (string | 
         // "Ratio 1": debt and cash measures worked out from the same filed tables, last five years.
         const ratio1 = await debtAndCashRatios(html, page.view === 'consolidated', page.key);
         if (ratio1) tables['ratios-1'] = ratio1;
+        // WC tab: working capital against sales, and where the operating cash went (a "Total" column for the bridge).
+        if (tables['ratios']) {
+            const extra = await workingCapitalRows(html, page.view === 'consolidated', page.key, tables['ratios'].raw);
+            if (extra) {
+                const t = tables['ratios'];
+                tables['ratios'] = { columns: [...t.columns, 'Total'], raw: [...t.raw, null], rows: [...t.rows.map(r => ({ ...r, values: [...r.values, null] })), ...extra] };
+            }
+        }
 
         const empty = !tables['profit-loss']?.rows.some(r => r.values.some(v => v !== null && v !== '0'));
         return NextResponse.json({
