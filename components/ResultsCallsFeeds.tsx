@@ -6,7 +6,7 @@ import { ResultCard } from './ResultCard';
 import { companyHref } from '@/lib/company-link';
 
 // The Filings panel's Results and Calls tabs: every result read the night it came out (with the
-// overnight view), and every earnings call analysed in the last six weeks (score, guidance, the
+// overnight view), and every earnings call analysed in the last six months (score, guidance, the
 // top two takeaways). Company names find the company on the dashboard.
 
 type Extra = { call?: string; inPortfolio?: boolean };
@@ -109,8 +109,7 @@ export function CallsFeed({ calls, onCompany }: { calls: CallRow[]; onCompany?: 
     const [kind, setKind] = React.useState<'results' | 'other'>('results');
     const [q, setQ] = React.useState('');
     const who = useWho();
-    const sixWeeks = new Date(Date.now() - 45 * 86400000).toISOString().slice(0, 10);
-    const shown = calls.filter(c => c.date >= sixWeeks && (kind === 'other' ? c.general : !c.general) && who.ok(c) && (!q || c.company.toLowerCase().includes(q.toLowerCase())));
+    const shown = calls.filter(c => (kind === 'other' ? c.general : !c.general) && who.ok(c) && (!q || c.company.toLowerCase().includes(q.toLowerCase())));
     const guide = (g: CallRow['guidance']) => {
         if (!g) return null;
         const range = g.min !== null && g.max !== null && g.min !== g.max ? `${g.min}–${g.max}%` : `${g.min ?? g.max}%`;
@@ -162,7 +161,7 @@ export function CallsFeed({ calls, onCompany }: { calls: CallRow[]; onCompany?: 
                 </section>
             ))}
             {!shown.length && <p className="text-sm text-gray-400">No calls match.</p>}
-            <p className="text-[11px] text-gray-400">Calls held in the last six weeks, analysed by Gemini Pro the night they are filed. The full analysis is in the company&apos;s card.</p>
+            <p className="text-[11px] text-gray-400">Calls held in the last six months, analysed by Gemini Pro the night they are filed. The full analysis is in the company&apos;s card.</p>
         </div>
     );
 }

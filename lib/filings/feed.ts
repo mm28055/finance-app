@@ -51,17 +51,15 @@ export async function filingsFeed() {
     // Results read the night they came out (lib/results), newest first.
     const results = (store as unknown as ResultsStore).results.map(withCall);
 
-    // Earnings calls analysed in the last 45 days (185 for holdings, for the portfolio tab's longer views).
-    const since = new Date(Date.now() - 45 * 86400000), sinceHeld = new Date(Date.now() - 185 * 86400000);
+    // Earnings calls, AGMs and special calls of the last six months (the site keeps each company's last two transcripts).
+    const since = new Date(Date.now() - 185 * 86400000);
     const ts = await prisma.transcript.findMany({
-        where: { company: { isVisible: true }, OR: [
-            { sourceEventDate: { gte: since } }, { sourceEventDate: null, createdAt: { gte: since } },
-            { company: { inPortfolio: true }, OR: [{ sourceEventDate: { gte: sinceHeld } }, { sourceEventDate: null, createdAt: { gte: sinceHeld } }] },
-        ] },
+        where: { company: { isVisible: true }, OR: [{ sourceEventDate: { gte: since } }, { sourceEventDate: null, createdAt: { gte: since } }] },
         select: { companyId: true, quarterId: true, sourceEventDate: true, createdAt: true, fileUrl: true, filePath: true, company: { select: { name: true, sector: true } }, quarter: { select: { name: true, q: true } } },
     });
     const analyses = ts.length ? await prisma.analysis.findMany({
-        where: { OR: ts.map(t => ({ companyId: t.companyId, quarterId: t.quarterId })) },
+        // Two IN lists instead of one OR per call (much faster); unmatched pairs are dropped by the key below.
+        where: { companyId: { in: [...new Set(ts.map(t => t.companyId))] }, quarterId: { in: [...new Set(ts.map(t => t.quarterId))] } },
         select: { companyId: true, quarterId: true, summary: true, investorBrief: true, investibilityScore: true, guidanceGrowthMin: true, guidanceGrowthMax: true, guidanceFy: true, guidanceBasis: true },
     }) : [];
     const byKey = new Map(analyses.map(a => [`${a.companyId}|${a.quarterId}`, a]));
