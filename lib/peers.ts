@@ -19,7 +19,7 @@ export interface CompanyFigures {
     price: number | null;
     /** Last twelve months' earnings per share (latest year when Screener shows no TTM). */
     eps: number | null;
-    /** Price ÷ that EPS; null when the company lost money. */
+    /** The P/E on the company's dashboard row (Screener's, refreshed daily); null when the company lost money. */
     pe: number | null;
     evEbitda: number | null;
     pb: number | null;
@@ -115,7 +115,7 @@ export async function peerSet(companyId: string) {
 export async function companyFigures(companyId: string, isSelf: boolean): Promise<CompanyFigures | null> {
     const co = await prisma.company.findUnique({
         where: { id: companyId },
-        select: { id: true, name: true, marketCap: true, currentPrice: true, roce: true },
+        select: { id: true, name: true, marketCap: true, currentPrice: true, roce: true, peRatio: true },
     });
     if (!co) return null;
     const base: CompanyFigures = {
@@ -158,7 +158,12 @@ export async function companyFigures(companyId: string, isSelf: boolean): Promis
         base.roe = g('Return on Equity', 'Last Year');
 
         base.eps = last(pl, 'EPS in Rs');
-        if (base.price && base.eps && base.eps > 0) base.pe = base.price / base.eps;
+        // The row's P/E, so card and row agree (Screener's own figure copes better with one-off
+        // items than price ÷ EPS); none for a company that lost money, whatever the row shows.
+        const rowPe = co.peRatio ? Number(co.peRatio) : null;
+        if (base.eps !== null && base.eps <= 0) base.pe = null;
+        else if (rowPe && rowPe > 0) base.pe = rowPe;
+        else if (base.price && base.eps && base.eps > 0) base.pe = base.price / base.eps;
         // A lender's financing margin is not comparable to an operating margin; left blank.
         if (!base.lender) base.margin = last(pl, 'OPM %');
 

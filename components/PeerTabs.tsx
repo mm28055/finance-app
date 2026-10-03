@@ -148,7 +148,7 @@ export function PriceAssumes({ companyId }: { companyId: string }) {
             </div>
 
             <p className="text-[10px] text-gray-400 mt-3 leading-relaxed">
-                Based on the last 12 months&apos; earnings per share of {rupees(c.eps)} (P/E {times(c.pe)}). Each growth rate is applied for all ten years; dividends are left out.
+                Based on the P/E on the company&apos;s row, {times(c.pe)} (Screener&apos;s, on the last 12 months&apos; profit). Each growth rate is applied for all ten years; dividends are left out.
                 {c.stance === 'CYCLICAL' || c.stance === 'TURNAROUND' ? ' The note calls this business ' + (c.stance === 'CYCLICAL' ? 'cyclical' : 'a turnaround') + ', so the last 12 months may not be a fair base for profit.' : ''}
             </p>
         </div>
@@ -179,7 +179,7 @@ export function PeerTable({ companyId }: { companyId: string }) {
         { label: 'Return on equity', hint: 'Net profit ÷ shareholders’ money, last year', get: c => c.roe, fmt: pct, better: 'high' },
         { label: 'Free cash ÷ profit, 5 yrs', hint: 'Free cash flow ÷ net profit, summed over five years. Below zero: growth or slow collections are eating more cash than the business makes', get: c => (c.cashConversion === null ? null : c.cashConversion * 100), fmt: pct, better: 'high' },
         { label: 'Debt ÷ equity', hint: 'Borrowings ÷ shareholders’ money, latest balance sheet (not shown for lenders)', get: c => c.debtToEquity, fmt: v => (v === null ? '–' : v.toFixed(2)), better: 'low' },
-        { heading: 'Price', label: 'P/E', hint: 'Price ÷ last 12 months’ earnings per share', get: c => c.pe, fmt: times, better: 'low' },
+        { heading: 'Price', label: 'P/E', hint: 'Price ÷ last 12 months’ earnings, as on the company’s row (Screener’s figure)', get: c => c.pe, fmt: times, better: 'low' },
         { label: 'EV/EBITDA', hint: 'Market value plus debt less cash, ÷ last 12 months’ operating profit (not shown for lenders)', get: c => c.evEbitda, fmt: times, better: 'low' },
         ...(anyLender ? [{ label: 'Price ÷ book', hint: 'Market value ÷ shareholders’ money', get: (c: CompanyFigures) => c.pb, fmt: times, better: 'low' as Better }] : []),
         { label: 'Price assumes', hint: 'Yearly profit growth needed for 10 years to earn 12% a year, if the P/E ends at 20 (the "Price assumes" tab lets you change both)', get: assumes, fmt: pct, better: 'low' },
