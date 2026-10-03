@@ -211,8 +211,9 @@ async function workingCapitalRows(html: string, consolidated: boolean, key: stri
             return res.ok ? await res.json() : {};
         } catch { return {}; }
     };
-    const [assets, liabilities, opCash] = await Promise.all([
+    const [assets, liabilities, opCash, investing, financing] = await Promise.all([
         schedule('Other Assets', 'balance-sheet'), schedule('Other Liabilities', 'balance-sheet'), schedule('Cash from Operating Activity', 'cash-flow'),
+        schedule('Cash from Investing Activity', 'cash-flow'), schedule('Cash from Financing Activity', 'cash-flow'),
     ]);
     const n = (v: string | null | undefined) => { const t = v?.replace(/,/g, '').trim(); if (!t) return null; const x = Number(t); return Number.isFinite(x) ? x : null; };
     const plCell = (label: string, y: string | null) => { const i = y ? pl.columns.indexOf(y) : -1; return i < 0 ? null : n(pl.rows.find(r => r.label === label)?.values[i]); };
@@ -263,6 +264,15 @@ async function workingCapitalRows(html: string, consolidated: boolean, key: stri
         bridge('Operating cash before tax', beforeTax);
         bridge('Tax paid', taxes);
         bridge('Operating cash after tax', afterTax);
+        // Then what lenders and plants take: interest is reported under financing (most companies add it back
+        // before operating cash), capex under investing. Interest paid inside operating cash is not taken twice.
+        const interest = raw.map(y => { const inOps = sch(opCash, 'Interest paid', y); return inOps ? null : sch(financing, 'Interest paid fin', y); });
+        const capex = raw.map(y => { const buy = sch(investing, 'Fixed assets purchased', y), sold = sch(investing, 'Fixed assets sold', y); return buy === null && sold === null ? null : (buy ?? 0) + (sold ?? 0); });
+        if (interest.some(v => v !== null) || capex.some(v => v !== null)) {
+            bridge('Interest paid', interest);
+            bridge('Capex (net of assets sold)', capex);
+            bridge('Cash left for shareholders', afterTax.map((v, i) => (v === null ? null : v + (interest[i] ?? 0) + (capex[i] ?? 0))));
+        }
     }
     return out.length ? out : null;
 }

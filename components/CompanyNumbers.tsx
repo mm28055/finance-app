@@ -9,7 +9,7 @@ import { useHoverOpen } from '@/lib/hover-open';
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
 // Bump when the shape of /financials changes, so browsers never reuse an older copy.
-const DATA_VERSION = 14;
+const DATA_VERSION = 15;
 
 type Tab = 'history' | 'assumes' | 'peers' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios' | 'ratios-1';
 type Row = { label: string; src: string; expandable: boolean; values: (string | null)[]; /** The figures a ratio is made from, shown above it (open by default, can be closed). */ parts?: { label: string; values: (string | null)[] }[]; /** A section heading shown above this row. */ heading?: string };
@@ -39,6 +39,9 @@ const HINTS: Record<string, string> = {
     'Profit from operations': 'Operating profit as the filed cash-flow statement starts from it (before working-capital changes and tax).',
     'Operating cash before tax': 'Profit from operations plus the working-capital changes above: the cash the business itself produced.',
     'Operating cash after tax': 'Operating cash after tax paid, as filed.',
+    'Interest paid': 'Interest actually paid, from the financing section of the cash flow (most companies add it back before operating cash).',
+    'Capex (net of assets sold)': 'Spending on plants and equipment, less assets sold, from the investing section.',
+    'Cash left for shareholders': 'Operating cash after tax, less interest paid and net capex: what the business produced for its owners.',
     'Net profit margin': 'Net profit ÷ sales (income, for a lender): how much of each ₹100 of sales is left as profit after all costs, interest and tax.',
     // Ratio tab
     'Debt to equity': 'Borrowings ÷ shareholders\' equity. Under 1 is comfortable for most businesses.',
