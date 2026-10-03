@@ -3,6 +3,7 @@ import React from 'react';
 import { Search } from 'lucide-react';
 import type { QuarterResult } from '@/lib/results/types';
 import { ResultCard } from './ResultCard';
+import { companyHref } from '@/lib/company-link';
 
 // The Filings panel's Results and Calls tabs: every result read the night it came out (with the
 // overnight view), and every earnings call analysed in the last six weeks (score, guidance, the
@@ -49,9 +50,9 @@ function SearchBox({ q, setQ }: { q: string; setQ: (v: string) => void }) {
 function Name({ r, onCompany }: { r: Extra & { company: string }; onCompany?: (c: string) => void }) {
     return (
         <>
-            {onCompany
-                ? <button onClick={() => onCompany(r.company)} title="Show this company on the dashboard" className="text-[13px] font-semibold text-gray-800 hover:text-[#4A7AAF] hover:underline">{r.company}</button>
-                : <span className="text-[13px] font-semibold text-gray-800">{r.company}</span>}
+            {/* Opens the company's row on the dashboard in a new tab. */}
+            <a href={companyHref(r.company)} target="_blank" rel="noopener" title="Open this company on the dashboard (new tab)"
+                className="text-[13px] font-semibold text-gray-800 hover:text-[#4A7AAF] hover:underline">{r.company}</a>
             {r.call && <span className={`px-1.5 rounded text-[10px] font-semibold ${CALL_TONE[r.call] || ''}`}>{r.call}</span>}
         </>
     );

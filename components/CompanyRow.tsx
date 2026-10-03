@@ -310,6 +310,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
             {/* Compact Row */}
             <div
                 ref={rowHeaderRef}
+                data-company-row={company.name}
                 onClick={() => setExpanded(!expanded)}
                 onPointerEnter={() => { if (!expanded && !detail) prefetchDetail(company.id); }}
                 className={`scroll-mt-28 flex items-center px-3 2xl:px-4 py-2.5 bg-white ${!isAdminMode ? 'hover:bg-[#F8FAFC] cursor-pointer' : ''} transition-colors group md:overflow-visible max-md:flex-wrap max-md:gap-y-1.5`}

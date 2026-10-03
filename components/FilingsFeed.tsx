@@ -3,6 +3,7 @@ import React from 'react';
 import { ExternalLink, Search } from 'lucide-react';
 import type { MaterialFiling } from '@/lib/filings/types';
 import { TONE_STYLE } from './SectorFilings';
+import { companyHref } from '@/lib/company-link';
 
 type Row = MaterialFiling & { call?: string; inPortfolio?: boolean; /** Publisher, for news rows. */ source?: string };
 
@@ -112,16 +113,19 @@ export function FilingsFeed({ filings, kind = 'filings', initialCompany = '' }: 
                             const isOpen = open[id] ?? !!initialCompany;
                             return (
                                 <div key={id} className="px-3 py-2.5">
-                                    <button className="w-full text-left" onClick={() => setOpen(o => ({ ...o, [id]: !isOpen }))}>
+                                    <div role="button" tabIndex={0} className="w-full text-left cursor-pointer" onClick={() => setOpen(o => ({ ...o, [id]: !isOpen }))}
+                                        onKeyDown={e => { if (e.key === 'Enter') setOpen(o => ({ ...o, [id]: !isOpen })); }}>
                                         <div className="flex flex-wrap items-center gap-2">
-                                            <span className="text-[13px] font-semibold text-gray-800">{f.company}</span>
+                                            {/* Opens the company's row on the dashboard in a new tab. */}
+                                            <a href={companyHref(f.company)} target="_blank" rel="noopener" onClick={e => e.stopPropagation()}
+                                                title="Open this company on the dashboard (new tab)" className="text-[13px] font-semibold text-gray-800 hover:text-[#4A7AAF] hover:underline">{f.company}</a>
                                             {f.call && <span className={`px-1.5 rounded text-[10px] font-semibold ${CALL_TONE[f.call] || ''}`}>{f.call}</span>}
                                             <span className={`px-1.5 rounded border text-[10px] font-semibold uppercase ${t.chip}`}>{f.category}</span>
                                             <span className="text-[10px] text-gray-400">{f.sector}</span>
                                         </div>
                                         <p className="text-[13px] text-gray-700 mt-1 leading-snug">{f.headline}</p>
                                         {f.impactWhy && !isOpen && <p className="text-[11px] text-gray-400 mt-0.5">{f.impactWhy}</p>}
-                                    </button>
+                                    </div>
                                     {isOpen && (
                                         <div className="mt-1.5">
                                             <p className="text-xs text-gray-600 leading-relaxed">{f.summary}</p>

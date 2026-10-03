@@ -154,6 +154,32 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
         return () => clearInterval(t);
     }, []);
     const [searchQuery, setSearchQuery] = useState('');
+    // Opened as /?company=<name> (a company name in the Filings panel, in a new tab): find the
+    // company and open its row — in its own sector, not the portfolio's copy.
+    useEffect(() => {
+        const name = new URLSearchParams(window.location.search).get('company');
+        if (!name) return;
+        setSearchQuery(name);
+        const own = sectors.find(s => !isPortfolioSector(s.sector) && s.companies.some(c => c.name === name))
+            || sectors.find(s => s.companies.some(c => c.name === name));
+        const co = own?.companies.find(c => c.name === name);
+        if (own && co) setOpenRowKey(`${own.sector}:${co.ticker}`);
+        // Once the row has opened, put its name at the top of the screen (the first match is the
+        // company's own sector; the portfolio copy comes last). The browser's scroll anchoring is
+        // off while the card's sections load (it would shift the page as they grow), and the scroll
+        // is repeated a few times; it stops once the reader scrolls.
+        const root = document.documentElement;
+        root.style.overflowAnchor = 'none';
+        setTimeout(() => { root.style.overflowAnchor = ''; }, 20000);
+        let touched = false;
+        const stop = () => { touched = true; };
+        window.addEventListener('wheel', stop, { once: true });
+        window.addEventListener('touchmove', stop, { once: true });
+        window.addEventListener('keydown', stop, { once: true });
+        const toTop = () => { if (!touched) document.querySelector(`[data-company-row="${CSS.escape(name)}"]`)?.scrollIntoView({ block: 'start' }); };
+        [900, 2000, 3500, 6000, 9000].forEach(ms => setTimeout(toTop, ms));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
     // A company picked elsewhere (the calendar panel) is found here through the search box.
     useEffect(() => {
         const onSearch = (e: Event) => { setSearchQuery(String((e as CustomEvent).detail || '')); window.scrollTo({ top: 0, behavior: 'smooth' }); };
