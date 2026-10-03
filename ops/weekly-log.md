@@ -38,3 +38,14 @@ Pushed to master; all checks passed (typecheck clean, "All notes pass."). This w
 - Other: Anupam Rasayan took control of Bliss GVS with guaranteed debt; Ramkrishna Forgings' promoter bought ₹200cr of shares; Xponentia sold 6.4% of Sedemac; Oriana Power's promoters released all pledges; Clean Max raised ₹2,500cr of green bonds; IRB sold roads to its InvIT; Krsnaa and Thyrocare are selling assets; Borosil won an anti-dumping recommendation.
 - Large orders: Skipper, Power Mech, Avantel, Raymond, Ellenbarrie and JNK.
 - NRB Bearing: its promoters kept selling in September.
+
+## 2026-10-03 — cash review (session with the owner)
+Every own/follow company checked on five years of operating cash against profit (scripts/audit-cash-conversion.ts):
+42 converted under half. Rule now in the house rules. 20 calls changed:
+- own → follow: Arvind SmartSpaces, Diffusion Engineers.
+- follow → wait: M&B Engineering, Interarch, GR Infraprojects, Ceigall, Chembond, Redington, Alpex Solar, Zelio,
+  Pondy Oxides, Macfos, Manaksia Coated Metals, GNG Electronics, Azad Engineering, Anup Engineering, KRN Heat
+  Exchanger, Omnitech, Aditya Infotech, Concord Control.
+- Kept, five-year cash now stated in the verdict: Engineers India, NBCC, Welspun, Keystone, Sunteck, Mahindra
+  Lifespace, Aditya Vision, Entero, GSFC, Asian Energy, Ardee, Neetu Yoshi, Rashi, Astra Microwave, Data Patterns,
+  Macpower, Avalon, Syrma, IKIO. Excluded: Raymond (demerger gains), OnEMI (lender), Alivus (no cash data on Screener).

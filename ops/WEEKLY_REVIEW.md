@@ -144,6 +144,12 @@ Then mark the entry done: add `"handled": "<YYYY-MM-DD>: <one line: what you fou
   pass → avoid. Stance must match: COMPOUNDER only for own, AVOID only for avoid.
 - Price check: growth needed = (P/E × 0.1726)^0.1 − 1 (P/E from companies.json); Fits if my growth − needed ≥ −2,
   Full if ≥ −6, else Stretched. Loss-makers get myGrowth null and no label.
+- Cash test (owner, 3 Oct 2026): judge cash on five years of operating cash against net profit (Screener, the years it
+  shows), not one year. "own" needs at least half of profit arriving as cash. A follow drops to wait when it turns under
+  25% over five years and still under 25% last year, or under 50% with last year near zero or negative — unless the
+  note states a specific reason the figure misleads. Property developers (land buying) and lenders are judged on their
+  own measures. Tell capex-driven negative free cash (building plants) from working-capital drain (stock, receivables).
+  Never rank a company first on price while its profit is not arriving as cash.
 - The latest earnings call wins over older statements; older ones only as dated history.
 - Price-dependent figures in prose use live placeholders (`{need:KEY|n}`, `{label:KEY|fits}`, `{pe:KEY|x}`,
   `{mcap:KEY|₹xcr}`, `{count:fits|three}`; KEY = the exact key in the note's valuation inputs) — see
