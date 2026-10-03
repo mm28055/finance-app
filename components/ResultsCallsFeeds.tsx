@@ -98,10 +98,10 @@ export function ResultsFeed({ results, onCompany }: { results: ResultRow[]; onCo
 }
 
 export function CallsFeed({ calls, onCompany }: { calls: CallRow[]; onCompany?: (c: string) => void }) {
-    const [kind, setKind] = React.useState<'results' | 'all'>('results');
+    const [kind, setKind] = React.useState<'results' | 'other'>('results');
     const [q, setQ] = React.useState('');
     const who = useWho();
-    const shown = calls.filter(c => (kind === 'all' || !c.general) && who.ok(c) && (!q || c.company.toLowerCase().includes(q.toLowerCase())));
+    const shown = calls.filter(c => (kind === 'other' ? c.general : !c.general) && who.ok(c) && (!q || c.company.toLowerCase().includes(q.toLowerCase())));
     const guide = (g: CallRow['guidance']) => {
         if (!g) return null;
         const range = g.min !== null && g.max !== null && g.min !== g.max ? `${g.min}–${g.max}%` : `${g.min ?? g.max}%`;
@@ -111,7 +111,7 @@ export function CallsFeed({ calls, onCompany }: { calls: CallRow[]; onCompany?: 
         <div className="flex flex-col gap-4">
             <div className="flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
                 <button className={chip(kind === 'results')} onClick={() => setKind('results')}>Results calls</button>
-                <button className={chip(kind === 'all')} onClick={() => setKind('all')}>Incl. AGMs and special calls</button>
+                <button className={chip(kind === 'other')} onClick={() => setKind('other')}>AGMs and special calls</button>
                 <span className="w-px h-5 bg-gray-200 mx-1" />
                 {who.control}
                 <SearchBox q={q} setQ={setQ} />

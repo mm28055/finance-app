@@ -7,6 +7,7 @@ import { allSectorOverviews, companyCallInfo } from '../sector-overviews';
 import { prisma } from '../prisma';
 import store from '../results/results.json';
 import type { ResultsStore } from '../results/types';
+import { generalDocLabel } from '../doc-label';
 
 /** The first few "Top Takeaways" of a call analysis, as plain one-liners. */
 function takeaways(summary: string | null, n = 2): string[] {
@@ -62,7 +63,9 @@ export async function filingsFeed() {
             ? { min: a.guidanceGrowthMin !== null ? Number(a.guidanceGrowthMin) : null, max: a.guidanceGrowthMax !== null ? Number(a.guidanceGrowthMax) : null, fy: a.guidanceFy || undefined }
             : null;
         return [withCall({
-            company: t.company.name, sector: t.company.sector, quarter: t.quarter.name, general: t.quarter.q === 'GEN',
+            company: t.company.name, sector: t.company.sector, general: t.quarter.q === 'GEN',
+            // "General 17 Sep 2026" reads as "Special call · 17 Sep 2026", as on the company card.
+            quarter: t.quarter.q === 'GEN' ? generalDocLabel(t.quarter.name, a.summary) : t.quarter.name,
             date: (t.sourceEventDate || t.createdAt).toISOString().slice(0, 10),
             score: a.investibilityScore ?? null, guidance: g, points: takeaways(a.summary && a.summary.trim().length > 20 ? a.summary : a.investorBrief),
         })];
