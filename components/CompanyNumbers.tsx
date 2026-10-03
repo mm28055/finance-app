@@ -9,12 +9,12 @@ import { useHoverOpen } from '@/lib/hover-open';
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
 // Bump when the shape of /financials changes, so browsers never reuse an older copy.
-const DATA_VERSION = 16;
+const DATA_VERSION = 17;
 
 type Tab = 'history' | 'assumes' | 'peers' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios' | 'ratios-1';
 type Row = { label: string; src: string; expandable: boolean; values: (string | null)[]; /** The figures a ratio is made from, shown above it (open by default, can be closed). */ parts?: { label: string; values: (string | null)[] }[]; /** A section heading shown above this row. */ heading?: string };
 type Table = { columns: string[]; raw: (string | null)[]; rows: Row[] };
-type Financials = { view: 'consolidated' | 'standalone'; empty: boolean; tables: Record<string, Table>; growth: Record<string, Record<string, string>>; /** WC tab: the figures read in plain English (fixed rules). */ wcSummary?: string[] };
+type Financials = { view: 'consolidated' | 'standalone'; empty: boolean; tables: Record<string, Table>; growth: Record<string, Record<string, string>>; /** WC tab: how a shortfall was funded, or where spare cash went (fixed rules). */ wcSummary?: string[]; wcSummaryTitle?: string };
 
 const TABS: { key: Tab; label: string; title?: string }[] = [
     { key: 'history', label: 'Valuation', title: 'Price & valuation history' },
@@ -263,9 +263,10 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
                             {tab === 'profit-loss' && growthLine(fin.growth)}
                             {tab === 'ratios' && fin.wcSummary && fin.wcSummary.length > 0 && (
                                 <div className="mt-3 rounded-lg bg-[#F8FAFC] border border-gray-100 p-2.5">
-                                    <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-1">What the cash says</p>
+                                    <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-1">{fin.wcSummaryTitle || 'What the cash says'}</p>
+                                    <p className="text-[12px] text-gray-800 font-medium leading-snug mb-1">{fin.wcSummary[0]}</p>
                                     <ul className="flex flex-col gap-1 list-disc pl-4 marker:text-gray-400">
-                                        {fin.wcSummary.map((line, k) => <li key={k} className="text-[12px] text-gray-700 leading-snug">{line}</li>)}
+                                        {fin.wcSummary.slice(1).map((line, k) => <li key={k} className="text-[12px] text-gray-700 leading-snug">{line}</li>)}
                                     </ul>
                                 </div>
                             )}
