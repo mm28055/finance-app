@@ -18,7 +18,7 @@ import { pruneCompany, TRANSCRIPT_WINDOW, ANALYSIS_WINDOW, FINANCIALS_WINDOW } f
 import { supabaseAdmin as supabase, uploadTranscriptPdf, deleteStoredPdf } from '../lib/transcript-storage';
 import { generalQuarterName, fiscalYearOf, GENERAL_Q } from '../lib/quarters';
 import { classifyTranscript, isRelatedEntityCall, detectStatedQuarter } from '../lib/doc-type';
-import { notAResultsQuarter, screenerShowsCall } from '../lib/reporting';
+import { notAResultsQuarter, screenerShowsCall, tooEarlyForResults } from '../lib/reporting';
 // @ts-ignore - pdf-parse ships no types
 import pdfParse from 'pdf-parse';
 
@@ -565,14 +565,18 @@ async function main() {
                             const noSuchResults = await notAResultsQuarter(co.id, fyq);
                             // No results wording, no quarter named, and Screener shows no call that month:
                             // not a results call (a deal call or special event; lib/reporting.ts).
-                            const unproven = /defaulted/.test(verdict.reason) && !detectStatedQuarter(text, eventDate)
+                            const stated = detectStatedQuarter(text, eventDate);
+                            const unproven = /defaulted/.test(verdict.reason) && !stated
                                 && (await screenerShowsCall(co.id, eventDate)) === false;
-                            if (verdict.type === 'GENERAL' || related || noSuchResults || unproven) {
+                            // Held within two weeks of the quarter's end: too early to discuss its results.
+                            const tooEarly = !stated && tooEarlyForResults(fyq, eventDate);
+                            if (verdict.type === 'GENERAL' || related || noSuchResults || unproven || tooEarly) {
                                 targetName = genName;
                                 const why = related
                                     ? "a related entity's call, not this company's"
                                     : noSuchResults ? `a half-yearly reporter has no ${fyq} results, so not its results call`
                                     : unproven ? 'no results wording, no quarter named, and no call on Screener that month'
+                                    : tooEarly ? `held too soon after the quarter ended to discuss ${fyq} results`
                                     : 'not an earnings call';
                                 console.log(`  📄 ${co.name.trim()}: ${fyq} document is ${why} — filing as "${genName}".`);
                                 await logToDB(jobId, 'INFO', `${why} — filed as ${genName}`, co.name, fyq);

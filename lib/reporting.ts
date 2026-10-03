@@ -1,5 +1,6 @@
 import { prisma } from '@/lib/prisma';
 import { screenerPageUrl, fetchScreenerPage, screenerTable } from '@/lib/screener-page';
+import { quarterEndDate } from '@/lib/doc-type';
 
 // Whether a company files results only every six months (most SME listings): such a company has no
 // Q1 or Q3 results, so a call dated in those quarters is never its results call — it is an investor
@@ -81,4 +82,17 @@ export async function screenerShowsCall(companyId: string, date: Date): Promise<
     const key = (plus: number) => { const x = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth() + plus, 1)); return `${MONTHS[x.getUTCMonth()]} ${x.getUTCFullYear()}`; };
     const window = [key(0), key(1)];
     return list.some(e => window.includes(e.month) && (e.transcript || e.rec));
+}
+
+// -----------------------------------------------------------------------------
+// Too early to be the results call. Results come out weeks after a quarter ends (the earliest
+// filers take about two weeks), so a call held within 14 days of the quarter's end cannot discuss
+// that quarter's results — Basilic Fly Studio's 2 Jul 2026 investor meeting was filed as its Q1 FY27
+// call. Applies only when the quarter was read from the call's date, not named in the transcript.
+// -----------------------------------------------------------------------------
+export const RESULTS_EARLIEST_DAYS = 14;
+
+export function tooEarlyForResults(quarter: string, callDate: Date): boolean {
+    const end = quarterEndDate(quarter);
+    return !!end && callDate.getTime() < end.getTime() + RESULTS_EARLIEST_DAYS * 86400000;
 }
