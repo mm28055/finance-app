@@ -1,0 +1,13 @@
+{
+ "takenAt": "2026-10-03T08:23:12.733Z",
+ "rows": {
+  "Company": 649,
+  "Quarter": 60,
+  "Analysis": 1837,
+  "Note": 20,
+  "CompanyTag": 25,
+  "SectorChat": 162,
+  "SystemConfig": 1
+ },
+ "noteImages": 2
+}

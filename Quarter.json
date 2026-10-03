@@ -1,0 +1,362 @@
+[
+ {
+  "id": "01e6a6c8-95c1-4b97-8d31-19aef35a5664",
+  "name": "General 11 Sep 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "02b3c45a-e7a5-4024-8a07-6c5a497e191a",
+  "name": "Special call 24 Apr 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "03bfbab2-8dd4-4dca-9994-8e0c69a2e51a",
+  "name": "Q3 FY26",
+  "year": 2026,
+  "q": "Q3"
+ },
+ {
+  "id": "0484b2ba-cfe5-4ea8-90e0-ce130e129c0d",
+  "name": "AGM 22 Sep 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "0624f469-2e30-4551-bafc-0a1933ab9957",
+  "name": "Special call 28 Apr 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "10a194d9-d305-43f2-9b56-3487555f59c6",
+  "name": "General 20 Jun 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "16173299-7696-40ef-bd8e-f73b2f845fcc",
+  "name": "Special call 30 Jul 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "161bbe87-6dbe-4dbc-be2d-20c8382740af",
+  "name": "AGM 24 Jun 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "17b75f28-e8f0-4fc0-88b2-0413b35cf2b7",
+  "name": "General 20 May 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "1a9470f2-6f5b-46c2-89fa-ae26cd389237",
+  "name": "General 29 Jun 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "1acb9380-133a-4399-9277-9a6765808bb0",
+  "name": "Q2 FY25",
+  "year": 2025,
+  "q": "Q2"
+ },
+ {
+  "id": "23d9ef2f-ea2e-4609-b49a-60ce489d9467",
+  "name": "AGM 14 Aug 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "2787f561-57fe-48cf-9e16-e2da61261c5a",
+  "name": "General 01 Jun 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "284393b1-0665-4e45-971e-3bffb54d89b6",
+  "name": "General 17 Jun 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "29525c98-21ae-447b-a97a-4944adc2689f",
+  "name": "Q1 FY27",
+  "year": 2027,
+  "q": "Q1"
+ },
+ {
+  "id": "30f136e7-5634-4c2e-a63d-3236fd8833d8",
+  "name": "Special call 25 Sep 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "38a06d79-712e-48c0-8e6c-f1644d2d3719",
+  "name": "General 15 Jun 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "393405fd-d10e-43ff-ae6b-ec4f16edbdcb",
+  "name": "Q1 FY26",
+  "year": 2026,
+  "q": "Q1"
+ },
+ {
+  "id": "43bc829d-b018-4563-b3f7-54242887a5d8",
+  "name": "General 07 Aug 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "4445e855-d60e-407a-a3ad-2a329866cc05",
+  "name": "General 24 Sep 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "4dc3905b-24e6-424f-93d4-baa9112766fd",
+  "name": "Special call 28 Jan 2026",
+  "year": 2026,
+  "q": "GEN"
+ },
+ {
+  "id": "57d000b4-f3c9-4fc9-82b1-3da0c07b8cd9",
+  "name": "Special call 01 Jun 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "58e413b5-b598-499c-b357-3a4f037e2dc0",
+  "name": "General 07 May 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "59ddc9c8-0f1f-41d7-be81-10ae4fbba101",
+  "name": "General 06 Jul 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "5cff1f6c-9f5f-449a-8eca-3cf34ea4a70c",
+  "name": "Special call 03 Sep 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "5f6374ca-5141-4353-b87f-6a7529b54eb2",
+  "name": "AGM 20 Aug 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "62b09686-d94a-4de0-b900-b516a0bbf033",
+  "name": "General 19 Jan 2026",
+  "year": 2026,
+  "q": "GEN"
+ },
+ {
+  "id": "6a22378d-fa5f-46ca-a618-8e54db6861bb",
+  "name": "General 21 Nov 2025",
+  "year": 2026,
+  "q": "GEN"
+ },
+ {
+  "id": "6a9b9c89-aa63-48d2-a641-3c92bd4de848",
+  "name": "Q1 FY25",
+  "year": 2025,
+  "q": "Q1"
+ },
+ {
+  "id": "788d9ce6-7210-4ab8-858b-e7eb6deb2534",
+  "name": "Q2 FY23",
+  "year": 2023,
+  "q": "Q2"
+ },
+ {
+  "id": "78f830ab-fc17-4de4-8447-d696e63d59c6",
+  "name": "General 30 Jun 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "7c723f53-e91b-4211-80f4-eb5f8d20156e",
+  "name": "Special call 27 Aug 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "8db09b13-ed25-4129-8bf5-6e84fbcbae62",
+  "name": "General 14 May 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "994feaa4-09e9-4fff-bc95-b2542a782c5e",
+  "name": "AGM 16 Sep 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "99fd7670-b27c-4c4a-8a17-e284e646bf06",
+  "name": "General 25 Sep 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "9f372397-f452-4d16-b68f-55a9e0068651",
+  "name": "Q2 FY26",
+  "year": 2026,
+  "q": "Q2"
+ },
+ {
+  "id": "a3e7251c-2e0a-4651-a14c-e97b278f5680",
+  "name": "Special call 14 Aug 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "a72d6fed-369a-424b-91f3-bf5a232f82f6",
+  "name": "Q4 FY24",
+  "year": 2024,
+  "q": "Q4"
+ },
+ {
+  "id": "a798e0f4-dd98-467b-94ce-96bf0ff92308",
+  "name": "General 17 Sep 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "ab0c8651-4961-467f-8185-561be1e70b2a",
+  "name": "General 26 May 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "bdd70f0f-d644-4b4d-8562-d2cd87cf098e",
+  "name": "Q3 FY25",
+  "year": 2025,
+  "q": "Q3"
+ },
+ {
+  "id": "c0d74659-8000-43bc-b9f3-13932583599e",
+  "name": "General 18 Jun 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "c2923b6e-03e3-4c04-9f22-f3e97623ffee",
+  "name": "Special call 22 Jan 2026",
+  "year": 2026,
+  "q": "GEN"
+ },
+ {
+  "id": "d0369b23-5b6d-4314-9867-d79fe19dbcd0",
+  "name": "General 16 Sep 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "d78554d2-cdf2-4030-920a-b939b4d58700",
+  "name": "General 29 May 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "d88e6efb-e050-401e-a5f1-69eace4882b7",
+  "name": "General 16 Jun 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "d9d81bc2-bd7f-4da7-9ef9-a3e5d783ce35",
+  "name": "General 21 Aug 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "dd02c45e-c3d3-49b8-a786-a1e0218ba379",
+  "name": "AGM 13 Aug 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "e03b7094-7703-430b-90af-f370cd3a8f86",
+  "name": "General 14 Aug 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "e052799c-26fb-41c5-9977-3d76533357a7",
+  "name": "Special call 01 Sep 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "e2299903-b14e-4038-9f89-9e43859f640a",
+  "name": "AGM 12 Aug 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "e97f0fad-a69f-45d9-bdad-0a3b99c7e885",
+  "name": "AGM 25 Aug 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "ed13130e-3e3e-4452-82e1-b3415aa70ec4",
+  "name": "AGM 28 Jul 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "f000b72a-8160-4802-9f7d-e93252b3ac39",
+  "name": "General 02 Jun 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "f06eb86c-e62e-476f-9b12-4fa1ddc8ce20",
+  "name": "Q4 FY26",
+  "year": 2026,
+  "q": "Q4"
+ },
+ {
+  "id": "f07c8369-a60c-4ec2-9c34-bb7b3ce311f4",
+  "name": "General 29 Jul 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "f42ea837-28f3-4e11-a5e8-367ca5864b28",
+  "name": "General 24 Jul 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "f4be0657-38e2-4a32-937a-050e515a602d",
+  "name": "General 10 Aug 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "f932c6ea-64f1-4dff-a415-f121b6e543d5",
+  "name": "General 08 May 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
+  "id": "faea5380-c4b4-4af6-b34e-bdd0100a41d4",
+  "name": "Q4 FY25",
+  "year": 2025,
+  "q": "Q4"
+ }
+]
