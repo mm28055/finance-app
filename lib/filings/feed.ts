@@ -5,6 +5,18 @@ import { getAllFilings } from './server';
 import { getAllNews } from '../news/server';
 import { allSectorOverviews, companyCallInfo } from '../sector-overviews';
 import { prisma } from '../prisma';
+import store from '../results/results.json';
+import type { ResultsStore } from '../results/types';
+
+/** The first few "Top Takeaways" of a call analysis, as plain one-liners. */
+function takeaways(summary: string | null, n = 2): string[] {
+    if (!summary) return [];
+    const lines = summary.split('\n').map(l => l.trim()).filter(l => /^[-*]\s+\*\*[^*]+\*\*/.test(l) && !/top takeaways/i.test(l));
+    return lines.slice(0, n).map(l => {
+        const t = l.replace(/^[-*]\s+/, '').replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
+        return t.length > 220 ? `${t.slice(0, 217).replace(/\s+\S*$/, '')}…` : t;
+    });
+}
 
 export async function filingsFeed() {
     const { to, filings } = getAllFilings();
@@ -16,5 +28,32 @@ export async function filingsFeed() {
         category: n.kind === 'move' ? 'Price move' : n.kind === 'holder' ? 'Large holder' : 'Market and policy',
         url: n.url || '', source: n.source, impact: (n.dot ? 'high' : 'normal') as 'high' | 'normal',
     }));
-    return { to, filings: filings.map(withCall), news };
+    // Results read the night they came out (lib/results), newest first.
+    const results = (store as unknown as ResultsStore).results.map(withCall);
+
+    // Earnings calls analysed in the last 45 days: score, guidance and the top two takeaways.
+    const since = new Date(Date.now() - 45 * 86400000);
+    const ts = await prisma.transcript.findMany({
+        where: { OR: [{ sourceEventDate: { gte: since } }, { sourceEventDate: null, createdAt: { gte: since } }], company: { isVisible: true } },
+        select: { companyId: true, quarterId: true, sourceEventDate: true, createdAt: true, company: { select: { name: true, sector: true } }, quarter: { select: { name: true, q: true } } },
+    });
+    const analyses = ts.length ? await prisma.analysis.findMany({
+        where: { OR: ts.map(t => ({ companyId: t.companyId, quarterId: t.quarterId })) },
+        select: { companyId: true, quarterId: true, summary: true, investibilityScore: true, guidanceGrowthMin: true, guidanceGrowthMax: true, guidanceFy: true, guidanceBasis: true },
+    }) : [];
+    const byKey = new Map(analyses.map(a => [`${a.companyId}|${a.quarterId}`, a]));
+    const callsList = ts.flatMap(t => {
+        const a = byKey.get(`${t.companyId}|${t.quarterId}`);
+        if (!a) return [];
+        const g = a.guidanceBasis && a.guidanceBasis !== 'NONE' && (a.guidanceGrowthMin !== null || a.guidanceGrowthMax !== null)
+            ? { min: a.guidanceGrowthMin !== null ? Number(a.guidanceGrowthMin) : null, max: a.guidanceGrowthMax !== null ? Number(a.guidanceGrowthMax) : null, fy: a.guidanceFy || undefined }
+            : null;
+        return [withCall({
+            company: t.company.name, sector: t.company.sector, quarter: t.quarter.name, general: t.quarter.q === 'GEN',
+            date: (t.sourceEventDate || t.createdAt).toISOString().slice(0, 10),
+            score: a.investibilityScore ?? null, guidance: g, points: takeaways(a.summary),
+        })];
+    }).sort((x, y) => y.date.localeCompare(x.date) || x.company.localeCompare(y.company));
+
+    return { to, filings: filings.map(withCall), news, results, calls: callsList };
 }

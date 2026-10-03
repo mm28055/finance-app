@@ -9,7 +9,7 @@ export const metadata = { title: "Filings · Manish Dashboard" };
 // All companies' material filings in one list, newest first, defaulting to the ones that can
 // move the share price (marked nightly by the filings job).
 export default async function FilingsPage() {
-    const { to, filings: rows, news } = await filingsFeed();
+    const { to, filings: rows, news, results, calls } = await filingsFeed();
     return (
         <main className="min-h-screen bg-[#FAFBFC] p-6">
             <header className="flex justify-between items-center mb-6 pb-4 border-b border-gray-200">
@@ -20,7 +20,7 @@ export default async function FilingsPage() {
                 <a href="/" className="text-xs text-gray-500 hover:text-[#4A7AAF]">← Dashboard</a>
             </header>
             <div className="max-w-4xl">
-                <FilingsTabs filings={rows} news={news} />
+                <FilingsTabs filings={rows} news={news} results={results} calls={calls} />
                 <p className="text-[11px] text-gray-400 mt-6">
                     From NSE and BSE announcements and insider-trading disclosures, read each evening. "Price-moving" means record sales,
                     promoter buying, selling or pledging, a fund moving 2% or more, orders worth about a tenth of yearly sales, plants starting,
