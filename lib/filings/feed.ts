@@ -12,6 +12,8 @@ import changesStore from '../calls-log/changes.json';
 import type { CallChangesStore } from '../calls-log/types';
 import readsStore from '../calls-read/reads.json';
 import type { CallReadsStore } from '../calls-read/types';
+import { getAllEvents } from '../events/server';
+import checkpointsStore from '../checkpoints/checkpoints.json';
 
 /** The "Top Takeaways" of a call analysis (up to four; most analyses list three to five), as plain one-liners. */
 function takeaways(summary: string | null, n = 4): string[] {
@@ -89,5 +91,27 @@ export async function filingsFeed() {
     })).map(c => [c.name, c.currentPrice ? Number(c.currentPrice) : null])) : new Map<string, number | null>();
     const callChanges = changesRaw.map(c => ({ ...c, priceNow: prices.get(c.company) ?? null, inPortfolio: portfolio.has(c.company) }));
 
-    return { to, filings: filings.map(withCall), news, results, calls: callsList, callChanges };
+    // The portfolio tab: per holding, its dates in the next 30 days and its expectations (the ones due
+    // next, and any marked met or missed in the last 90 days). The other lists carry inPortfolio already.
+    const today = new Date(Date.now() + 5.5 * 3600000).toISOString().slice(0, 10);
+    const in30 = new Date(Date.now() + (5.5 + 30 * 24) * 3600000).toISOString().slice(0, 10);
+    const ago90 = new Date(Date.now() - 90 * 86400000).toISOString().slice(0, 10);
+    const events = getAllEvents().events;
+    type Cp = { company: string; text: string; due: string; status: string; actual?: string; resolvedOn?: string };
+    const cps = (checkpointsStore as unknown as { checkpoints: Cp[] }).checkpoints;
+    const quarterKey = (q: string) => { const m = q.match(/^([QH])([1-4]) FY(\d{2})$/); return m ? Number(m[3]) * 10 + Number(m[2]) * (m[1] === 'H' ? 2 : 1) : 999; };
+    const holdings = (await prisma.company.findMany({ where: { inPortfolio: true }, select: { name: true, sector: true } }))
+        .map(c => {
+            const pending = cps.filter(x => x.company === c.name && x.status === 'pending');
+            const next = pending.length ? Math.min(...pending.map(x => quarterKey(x.due))) : null;
+            return {
+                company: c.name, sector: c.sector, call: calls.get(c.name.trim().toLowerCase())?.call,
+                upcoming: events.filter(e => e.company === c.name && e.date >= today && e.date <= in30).map(e => ({ kind: e.kind, date: e.date, time: e.time })),
+                watching: pending.filter(x => quarterKey(x.due) === next).slice(0, 6).map(x => ({ text: x.text, due: x.due })),
+                settled: cps.filter(x => x.company === c.name && x.status !== 'pending' && (x.resolvedOn || '') >= ago90)
+                    .map(x => ({ text: x.text, status: x.status, actual: x.actual, on: x.resolvedOn })),
+            };
+        });
+
+    return { to, filings: filings.map(withCall), news, results, calls: callsList, callChanges, holdings };
 }
