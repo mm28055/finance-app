@@ -38,7 +38,9 @@ function takeaways(summary: string | null, n = 4): string[] {
     });
 }
 
-export async function filingsFeed() {
+/** `calls`: 'all' = every company's calls of six months; 'portfolio' = only holdings' (the panel loads the rest when the Calls tab opens). */
+export async function filingsFeed(opts: { calls?: 'all' | 'portfolio' } = {}) {
+    const callScope = opts.calls ?? 'all';
     const { to, filings } = getAllFilings();
     const calls = companyCallInfo(allSectorOverviews());
     const portfolio = new Set((await prisma.company.findMany({ where: { inPortfolio: true }, select: { name: true } })).map(c => c.name));
@@ -54,7 +56,7 @@ export async function filingsFeed() {
     // Earnings calls, AGMs and special calls of the last six months (the site keeps each company's last two transcripts).
     const since = new Date(Date.now() - 185 * 86400000);
     const ts = await prisma.transcript.findMany({
-        where: { company: { isVisible: true }, OR: [{ sourceEventDate: { gte: since } }, { sourceEventDate: null, createdAt: { gte: since } }] },
+        where: { company: { isVisible: true, ...(callScope === 'portfolio' ? { inPortfolio: true } : {}) }, OR: [{ sourceEventDate: { gte: since } }, { sourceEventDate: null, createdAt: { gte: since } }] },
         select: { companyId: true, quarterId: true, sourceEventDate: true, createdAt: true, fileUrl: true, filePath: true, company: { select: { name: true, sector: true } }, quarter: { select: { name: true, q: true } } },
     });
     const analyses = ts.length ? await prisma.analysis.findMany({

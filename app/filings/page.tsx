@@ -20,7 +20,7 @@ export default async function FilingsPage() {
                 <a href="/" className="text-xs text-gray-500 hover:text-[#4A7AAF]">← Dashboard</a>
             </header>
             <div className="max-w-4xl">
-                <FilingsTabs filings={rows} news={news} results={results} calls={calls} callChanges={callChanges} holdings={holdings} />
+                <FilingsTabs filings={rows} news={news} results={results} calls={calls} callsComplete callChanges={callChanges} holdings={holdings} />
                 <p className="text-[11px] text-gray-400 mt-6">
                     From NSE and BSE announcements and insider-trading disclosures, read each evening. "Price-moving" means record sales,
                     promoter buying, selling or pledging, a fund moving 2% or more, orders worth about a tenth of yearly sales, plants starting,
