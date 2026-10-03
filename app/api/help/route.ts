@@ -8,39 +8,51 @@ import { authOptions } from '@/lib/auth';
 
 const GUIDE: { title: string; items: [string, string][] }[] = [
     {
+        title: 'Who does what',
+        items: [
+            ['Claude', 'Writes the sector notes and the calls (own, follow, wait, pass, avoid). Reviews the week twice: updates notes, management and expectations, and checks Gemini’s work.'],
+            ['Gemini Pro', 'Every evening: analyses each new earnings call (score, highlights, guidance), summarises important filings, finds why a share moved 7%+, reads call dates from notices, writes the first view on new results. Also answers the sector chat.'],
+            ['Gemini Flash', 'Only sorts the evening’s filings and news into routine or worth a look, before Gemini Pro reads them.'],
+            ['No AI', 'Prices (NSE), financial figures and shareholding (Screener).'],
+        ],
+    },
+    {
+        title: 'Weekdays, 6pm',
+        items: [
+            ['Prices', 'NSE closing prices; market cap, P/E, P/B and P/S worked out from them.'],
+        ],
+    },
+    {
+        title: 'Every evening (Mon–Sat), 8pm',
+        items: [
+            ['1. Filings', 'New NSE filings: Flash sorts, Pro summarises the important ones. They appear in Filings and on the row.'],
+            ['2. News', 'Business papers and big price moves: Pro finds the reason. Shown as "news".'],
+            ['3. Calendar', 'New results and call dates.'],
+            ['4. Calls', 'New call transcripts are fetched and analysed by Pro. The guidance sets the name colour.'],
+            ['5. Results', 'Numbers from Screener, then Pro’s first view (ahead, in line, behind) in the calendar.'],
+        ],
+    },
+    {
+        title: 'Sun and Wed, 9am (also Fri until 15 Nov)',
+        items: [
+            ['Claude’s review', 'Reads what came in since the last review: new calls, filings, news, results. Updates the notes and calls where needed, checks and corrects Gemini’s result views, and logs every change.'],
+        ],
+    },
+    {
         title: 'A company row',
         items: [
-            ['Name colour', 'Blue: the last results call guided 20%+ revenue growth. Grey: guided below 20%. Black: no number given.'],
-            ['Markers', '"filings" and "news" open the Filings panel on that company. "Results Oct 14" opens the calendar.'],
-            ['Figures', 'Price, % below the 52-week high, market cap, P/E, P/B, P/S, ROCE, and the AI score of the latest call.'],
-            ['Q1 27, Q4 26', 'The calls on record; the page icon opens the transcript.'],
+            ['Name colour', 'Blue: last results call guided 20%+ revenue growth. Grey: below 20%. Black: no number.'],
+            ['Markers', '"filings" and "news" open them in the Filings panel; "Results Oct 14" opens the calendar.'],
+            ['Figures', 'Price, % below the 52-week high, market cap, P/E, P/B, P/S, ROCE, and Gemini’s score of the latest call.'],
         ],
     },
     {
         title: 'The company card',
         items: [
-            ['Valuation', 'Price and P/E, P/B, EV/EBITDA history.'],
+            ['Valuation', 'Price and valuation history.'],
             ['Price assumes', 'The yearly profit growth today’s price needs to give your chosen return.'],
             ['Peers', 'The company against its closest rivals from the sector note.'],
-            ['Qtrly to Ratio', 'Results, P&L, balance sheet, cash flow and ratios from Screener.'],
-            ['The rest', 'Call analysis, business, management, holders, plants and projects, what we were watching, filings and news.'],
-        ],
-    },
-    {
-        title: 'Where the numbers come from',
-        items: [
-            ['Prices', 'NSE closing prices.'],
-            ['Financials', 'Screener: read at most once a week, and again the day after results.'],
-            ['Calls, filings, news', 'NSE filings and the business papers.'],
-            ['Notes and calls', 'Own, follow, wait, pass, avoid, and the sector notes, are Claude’s.'],
-        ],
-    },
-    {
-        title: 'What updates when (India time)',
-        items: [
-            ['Weekdays, 6pm', 'Prices, market caps and ratios.'],
-            ['Mon–Sat, 8pm', 'Filings, news, calendar, new calls (analysed) and results with the overnight view.'],
-            ['Sun and Wed, 9am', 'Claude’s review: notes, calls, management changes, results checked. Also Fridays until 15 Nov.'],
+            ['Qtrly to Ratio', 'Screener’s figures: read at most once a week, and again the day after results.'],
         ],
     },
 ];
