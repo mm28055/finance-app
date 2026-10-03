@@ -307,10 +307,14 @@ async function workingCapitalRows(html: string, consolidated: boolean, key: stri
         const netCash = total(raw.map(y => { const i = y && cfTable ? cfTable.columns.indexOf(y) : -1; return i < 0 ? null : n(cfTable!.rows.find(r => r.label === 'Net Cash Flow')?.values[i]); }));
         const bs = screenerTable(html, 'balance-sheet');
         const bsAt = (label: string, y: string | null) => { const i = y && bs ? bs.columns.indexOf(y) : -1; return i < 0 ? null : n(bs!.rows.find(r => r.label === label)?.values[i]); };
-        const debtStart = bsAt('Borrowings', years[0] ?? null), debtEnd = bsAt('Borrowings', years[years.length - 1] ?? null);
+        // Debt at the START of the span (the year end before the first year's flows) and at its end, so the
+        // balances cover the same years as the borrowing and repayment figures.
+        const priorYear = (y: string | undefined) => (y ? y.replace(/\d{4}$/, d => String(Number(d) - 1)) : null);
+        const debtStart = bsAt('Borrowings', priorYear(years[0])), debtEnd = bsAt('Borrowings', years[years.length - 1] ?? null);
+        const debtFrom = priorYear(years[0]);
 
         const debtLine = netDebt !== null && Math.abs(netDebt) >= 1
-            ? `${netDebt > 0 ? 'Net borrowing' : 'Net debt repaid'}: ${rs(netDebt)} (${rs(borrowed ?? 0)} borrowed, ${rs(repaid ?? 0)} repaid)${debtStart !== null && debtEnd !== null ? `; borrowings went from ${rs(debtStart)} to ${rs(debtEnd)}` : ''}.`
+            ? `${netDebt > 0 ? 'Net borrowing' : 'Net debt repaid'}: ${rs(netDebt)} (${rs(borrowed ?? 0)} borrowed, ${rs(repaid ?? 0)} repaid)${debtStart !== null && debtEnd !== null && debtFrom ? `; borrowings went from ${rs(debtStart)} (end ${fy(debtFrom)}) to ${rs(debtEnd)}` : ''}.`
             : null;
         const extras: string[] = [];
         if (interestIn && interestIn >= 1) extras.push(`${rs(interestIn)} of interest received`);
