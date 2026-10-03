@@ -401,8 +401,8 @@ export function AnalysisPanel({
                             }`}
                         title={item.quarter}
                     >
-                        {/* "Q1 FY27" reads "Q1 27" here to keep the row short. */}
-                        {item.quarter.replace(/\bFY(\d\d)\b/, '$1')}
+                        {/* "Q1 FY27" reads "Q1 27", and "Special call · 25 Sep 2026" reads "Special · 25 Sep" (full name on hover), to keep the row short. */}
+                        {item.quarter.replace(/\bFY(\d\d)\b/, '$1').replace(/^Special call · /, 'Special · ').replace(/^((?:Special|AGM) · \d{1,2} \w{3}) \d{4}$/, '$1')}
                     </button>
                 ))}
 

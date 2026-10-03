@@ -717,7 +717,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                 <div className="flex flex-col lg:flex-row gap-4">
                                     {/* items-start so the cards keep their natural height instead
                                         of stretching to the analysis panel's height. */}
-                                    <div className="flex-1 flex flex-col gap-4 items-stretch self-start w-full">
+                                    <div className="flex-1 min-w-0 flex flex-col gap-4 items-stretch self-start w-full">
                                         <CompanyNumbers companyId={company.id} />
                                         <FinancialMatrix
                                             financials={selectedData?.financials || effective.financials}
@@ -738,7 +738,8 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                             <CompanyFilings filings={effective.filings} />
                                         )}
                                     </div>
-                                    <div className="flex-1">
+                                    {/* min-w-0 on both halves: long tab names (e.g. "Special call · 25 Sep 2026") scroll inside the panel instead of widening it and squeezing the left half */}
+                                    <div className="flex-1 min-w-0">
                                         <AnalysisPanel
                                             analysis={selectedData?.analysis || effective.analysis}
                                             quarterName={selectedData?.quarter || effective.summary?.quarter}
