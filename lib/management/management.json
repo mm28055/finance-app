@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29",
+ "updated": "2026-10-04",
  "companies": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -14858,15 +14858,23 @@
    "company": "HDFC Bank",
    "sector": "Finance",
    "style": "Professional",
-   "styleNote": "HDFC Bank has had no promoter since its 2023 merger with parent HDFC Limited; it is widely held by institutions. It is run by career bankers, most of whom joined in the 1990s. The top job is changing: CEO Sashidhar Jagdishan leaves on 26 October 2026 and the board has sent two names to the RBI (press reports name Deputy MD Kaizad Bharucha and ICICI Prudential Life's Anup Bagchi). The part-time chairman is former Finance Secretary Rajiv Kumar (since July 2026); former HDFC Ltd heads Keki Mistry and Renu Karnad sit as non-executive directors. No director or senior manager owns 1% or more, and none are related.",
+   "styleNote": "HDFC Bank has had no promoter since its 2023 merger with parent HDFC Limited; it is widely held by institutions. It is run by career bankers, most of whom joined in the 1990s. The top job is changing: CEO Sashidhar Jagdishan leaves on 26 October 2026, and the RBI has approved Anup Bagchi, an ICICI Group banker since 1992, to succeed him from 27 October for three years. The part-time chairman is former Finance Secretary Rajiv Kumar (since July 2026); former HDFC Ltd heads Keki Mistry and Renu Karnad sit as non-executive directors. No director or senior manager owns 1% or more, and none are related.",
    "people": [
     {
      "name": "Sashidhar Jagdishan",
-     "role": "Managing Director & CEO (term ends 26 October 2026)",
+     "role": "Managing Director & CEO (term ends 26 October 2026; Anup Bagchi succeeds him)",
      "since": "Joined 1996; MD & CEO since 27 October 2020",
      "family": false,
      "stake": "3,567,800 shares, about 0.02% (31 March 2026, Form 20-F)",
      "bio": "A physics graduate and chartered accountant with a master's in the economics of money, banking and finance from the University of Sheffield. He joined HDFC Bank in 1996 as a manager in finance, became Business Head – Finance in 1999 and CFO in 2008. In 2019 he was named the bank's 'Strategic Change Agent' and also ran HR, legal, communications and administration. He succeeded Aditya Puri as MD & CEO in October 2020 and led the bank through the 2023 merger with HDFC Limited. He told the board he would not seek a third term, which ends on 26 October 2026. A Supreme Court appeal in the Lilavati Trust case against him is pending."
+    },
+    {
+     "name": "Anup Bagchi",
+     "role": "Managing Director & CEO from 27 October 2026 (additional director from 2 October 2026)",
+     "since": "Appointed 1 October 2026 (RBI approval the same day) for three years from 27 October 2026",
+     "family": false,
+     "stake": "not disclosed",
+     "bio": "Holds an engineering degree from IIT Kanpur and a management degree from IIM Bangalore. He joined the ICICI Group in 1992 and worked across treasury, retail, wholesale and investment banking. He was MD & CEO of ICICI Securities, then Executive Director of ICICI Bank from 2017 to 2023, overseeing retail, business and rural banking and later wholesale banking; the bank's retail mortgage book passed ₹2 lakh crore in that time. Since June 2023 he has been MD & CEO of ICICI Prudential Life Insurance, where annualised premium crossed ₹10,000cr for the first time in FY25. He is not related to any director or key manager of HDFC Bank."
     },
     {
      "name": "Kaizad Bharucha",
@@ -14913,15 +14921,16 @@
      "bio": "An engineering graduate from the National Institute of Technology, Karnataka, with a postgraduate diploma in management from IIM Bangalore. He has over 37 years in banking, with particular expertise in interest-rate and currency markets. He now heads the branch network, deposits, payments, treasury, marketing and digital channels, which makes him central to the bank's push to rebuild its share of cheap current and savings deposits."
     }
    ],
-   "changes": "CEO Sashidhar Jagdishan will not seek a third term (ends 26 October 2026); the board sent two names to the RBI on 12 September 2026. Executive Director Bhavesh Zaveri left on 18 April 2026 at the end of his term. CFO Srinivasan Vaidyanathan retires in November 2026; Puneet Sharma (ex-Axis Bank CFO) joined as CFO-designate on 1 September. Jigar Shah (ex-KKR India) becomes General Counsel on 1 October 2026. Chairman Atanu Chakraborty resigned in March 2026; Rajiv Kumar became part-time chairman on 15 July 2026. On 12 September the board also approved Jimmy Tata as an executive director and a fourth whole-time director post, both pending RBI approval.",
+   "changes": "CEO Sashidhar Jagdishan will not seek a third term (ends 26 October 2026); the board sent two names to the RBI on 12 September 2026, and on 1 October the RBI approved Anup Bagchi (MD & CEO of ICICI Prudential Life) as MD & CEO for three years from 27 October 2026. Executive Director Bhavesh Zaveri left on 18 April 2026 at the end of his term. CFO Srinivasan Vaidyanathan retires in November 2026; Puneet Sharma (ex-Axis Bank CFO) joined as CFO-designate on 1 September. Jigar Shah (ex-KKR India) becomes General Counsel on 1 October 2026. Chairman Atanu Chakraborty resigned in March 2026; Rajiv Kumar became part-time chairman on 15 July 2026. On 12 September the board also approved Jimmy Tata as an executive director and a fourth whole-time director post, both pending RBI approval.",
    "sources": [
     "https://www.sec.gov/Archives/edgar/data/1144967/000119312526322004/d88195d20f.htm",
     "https://www.business-standard.com/companies/news/hdfc-bank-md-ceo-shortlist-two-names-rbi-sashidhar-jagdishan-successor-126091200618_1.html",
     "https://www.investywise.com/hdfc-bank-board-approves-key-appointments-and-director-creation",
     "https://zeenews.india.com/economy/hdfc-bank-proposes-two-names-for-md-and-ceo-posts-re-appoints-executive-director-v-srinivasa-rangan-3071263.html",
-    "https://www.kotakneo.com/news/stocks/hdfc-bank-md-ceo-announcement-rbi-decision-anup-bagchi-kaizad-bharucha/"
+    "https://www.kotakneo.com/news/stocks/hdfc-bank-md-ceo-announcement-rbi-decision-anup-bagchi-kaizad-bharucha/",
+    "https://nsearchives.nseindia.com/corporate/HDFCBANK3_01102026182319_SE_Intimation-_Anup_Bagchi.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-04"
   },
   {
    "company": "State Bank of India",
@@ -22440,7 +22449,7 @@
     },
     {
      "name": "Yugal Kishor Garg",
-     "role": "Chief Financial Officer",
+     "role": "Chief Financial Officer (resigned; leaves 23 October 2026)",
      "since": "27 August 2025",
      "family": false,
      "stake": "not disclosed",
@@ -22463,13 +22472,14 @@
      "bio": "A commerce graduate from Maharishi Dayanand University, Rohtak, with more than 19 years in procurement, all at CMR since 2006. He runs the buying of secondary aluminium scrap for all plants and decides trading terms with suppliers."
     }
    ],
-   "changes": "CFO Virender Kumar Shimar joined in May 2025 and resigned in August 2025; Yugal Kishor Garg replaced him. Nominee director Peter Francis Amour (Global Scrap Processors) left on 10 August 2026 and Ankur Singh joined as an additional director. Independent director Satpal Arora resigned in May 2025.",
+   "changes": "CFO Yugal Kishor Garg resigned on 3 October 2026 for personal reasons, effective 23 October 2026; the board will consider naming Satish Kumar Kaushik, recently appointed President – Finance, as CFO at its November 2026 meeting. CFO Virender Kumar Shimar joined in May 2025 and resigned in August 2025; Yugal Kishor Garg replaced him. Nominee director Peter Francis Amour (Global Scrap Processors) left on 10 August 2026 and Ankur Singh joined as an additional director. Independent director Satpal Arora resigned in May 2025.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_32078_CMRGREEN_2025_2026_U_5876213_24092026115756.pdf",
     "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1693875_16072026122903_WEB.xml",
-    "https://nsearchives.nseindia.com/corporate/CMRGREEN_ROID_95723_KMP_Doc.zip"
+    "https://nsearchives.nseindia.com/corporate/CMRGREEN_ROID_95723_KMP_Doc.zip",
+    "https://nsearchives.nseindia.com/corporate/CMRGREEN_03102026153846_Intimation_for_Resignation_of_CFO.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-04"
   },
   {
    "company": "Deep Industries",

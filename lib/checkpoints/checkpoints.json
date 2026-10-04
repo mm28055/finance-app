@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02",
+ "updated": "2026-10-04",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -9948,7 +9948,11 @@
    "ifMet": "Supports the own; a smooth succession is part of the case",
    "ifMissed": "The thin price cushion does not allow for a messy succession",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "RBI approved Anup Bagchi on 1 Oct 2026; MD & CEO from 27 Oct 2026, the day after Jagdishan's term ends",
+   "resolvedOn": "2026-10-04",
+   "resolvedBy": "review",
+   "outcome": "Stays own; succession settled on time"
   },
   {
    "id": "hdfc-bank-q2fy27-2",

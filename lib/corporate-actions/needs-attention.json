@@ -321,20 +321,23 @@
     "sector": "EMS & Electronics",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-01"
+    "addedOn": "2026-10-01",
+    "handled": "2026-10-04: Price check now Fits (needs ~25.6% vs my ~24%); no Vinyas filings in six weeks. Kept wait: five-year operating cash negative and ₹550cr related-party limits open; dated sentence in view and Tab 2 verdict."
   },
   {
     "company": "Awfis Space Solutions",
     "sector": "Commercial Services",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-01"
+    "addedOn": "2026-10-01",
+    "handled": "2026-10-04: Price check now Fits (needs ~13% vs my ~12%) after the share fell; no filings in six weeks. Kept follow, not own: after rent and capex FY26's ₹616cr operating cash left about ₹16cr, cash margin flat, guide cut. Dated sentence in view and Tab 2 verdict."
   },
   {
     "company": "Scoda Tubes",
     "sector": "Iron and Steel",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-01"
+    "addedOn": "2026-10-01",
+    "handled": "2026-10-04: Price check now Fits (needs ~13% vs my ~12%); only filing was the routine 26 Sep AGM (₹31.7cr captive solar). Kept wait: operating cash −4% of profit over filed years, 211-day cash cycle. Replaced hard-coded price prose with live placeholders."
   }
 ]

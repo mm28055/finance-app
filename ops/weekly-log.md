@@ -49,3 +49,34 @@ Every own/follow company checked on five years of operating cash against profit 
 - Kept, five-year cash now stated in the verdict: Engineers India, NBCC, Welspun, Keystone, Sunteck, Mahindra
   Lifespace, Aditya Vision, Entero, GSFC, Asian Energy, Ardee, Neetu Yoshi, Rashi, Astra Microwave, Data Patterns,
   Macpower, Avalon, Syrma, IKIO. Excluded: Raymond (demerger gains), OnEMI (lender), Alivus (no cash data on Screener).
+
+## 4 October 2026
+
+Pushed to master; all checks passed (typecheck clean, "All notes pass."). Before my changes the notes check was failing: SG Finserve and Paisalo Digital were added to the Finance cards on 2 October without a Tab 1 verdict. I added both to Tab 1 using their card text and calls (**SG Finserve: follow**, **Paisalo Digital: wait**), with no growth estimate yet. They join the tables and charts at the next quarterly refresh.
+
+**Follow-ups handled: 3 of 6.** Three stay open because they wait on events that have not happened yet: HEG Graphite has not listed; SKF India's July–September results are not filed; Ganesh Benzoplast's storage and rail sale has not closed.
+
+**Calls changed:** none. Three companies' prices fell into "Fits", and I kept all three calls:
+- **Awfis Space Solutions** (Commercial Services) stays **follow**, not own. Its operating cash looks large only because rent sits under financing. In FY26, after paying rent and capex, about ₹16cr was left of ₹616cr. Its cash margin after rent is flat, and the revenue guide was cut.
+- **Vinyas Innovativ** (EMS) stays **wait**. Over five years its operating cash is negative, and the ₹550cr of related-party limits remain.
+- **Scoda Tubes** (Iron and Steel) stays **wait**. Over its filed years, operating cash came to −4% of profit, and its cash cycle is 211 days. I also replaced hard-coded price text with live figures.
+
+**Filings pass, 30 September – 3 October** (notes corrected where the filing made them wrong):
+- **HDFC Bank**: on 1 October the RBI approved **Anup Bagchi** (ICICI Group since 1992, MD & CEO of ICICI Prudential Life since 2023) as MD & CEO for three years from 27 October. This settles the note's main watch item. Checkpoint marked met; management data has his sourced bio. It stays own.
+- **Avalon Tech**: the former co-promoter's family sold another 6.0% (about ₹914cr) on 1 October. Promoters now hold about 38%, not 44%; the card is corrected. Kotak AMC bought 3.59%.
+- **Kajaria**: family members and trusts sold 2.5% (₹484cr) on 1 October, so promoters hold about 45.2%. **GNG Electronics**: a promoter sold 3.0% (₹231cr), so promoters hold about 71.8%.
+- **Shyam Metalics**: signed a non-binding MoU for a ₹50,000cr, 9-million-tonne steel plant at Chandrapur. That is about five times the projects already planned. It is now a watch item; the call is unchanged.
+- **ideaForge**: a ₹109.2cr GST demand (tax plus an equal penalty) over the 5% rate it charged on drones. It will appeal. Added to the card and view. Also: a 0.56% promoter pledge, and ₹23.6cr of civil orders.
+- **Eureka Forbes**: the ₹273.4cr GST notice added last week has been cut to ₹4.5cr. I corrected the note and dropped the watch item. **Clean Science**: its GST search ended with ₹2cr to pay; watch item dropped.
+- **CMR Green Tech**: CFO Yugal Kishor Garg resigned (he leaves 23 October), the second CFO exit since August 2025. A successor is due to be named in November. Note and management data updated.
+- **Hexagon Nutrition**: holders of over 38% have asked for an extraordinary meeting to bring Arun Kelkar back as Executive Chairman. Watch item rewritten.
+- **Sheela Foam**: Furlenco became a subsidiary on 1 October (control through voting rights, no new money). **Studds**: the Facility V start moved to the end of October; logged as a project revision.
+- Already in the notes, so nothing changed: RHI Magnesita's and Bata's new MDs, and Aarti Drugs' new MD.
+- Logged only: Skipper (a ₹227.5cr GST show-cause notice over filing mismatches, which it will contest); KNR (₹91.8cr of income-tax penalties); Yatra (₹71.7cr GST notice); Sudarshan (GST search); Aarti Pharmalabs (stamp-duty writ); ICICI Bank (₹229cr GST notice, and its life-insurance CEO leaving for HDFC Bank); Ceigall (shareholders rejected a loans-and-guarantees resolution); Sigachi (shareholders rejected the dividend); KSH (an independent director resigned); Triveni Turbine (its COO resigned).
+- Rating changes: upgrades at Tinna Rubber (CARE BBB) and Punjab Chemicals (CARE A-), and Corona Remedies' short-term rating (CARE A1+). Outlooks raised to Positive at Chalet (ICRA) and Servotech (Infomerics).
+- Orders and deals: Transrail ₹574cr, Smartworks ₹305cr of new leases, GETCO for Transformers & Rectifiers, TD Power ₹192cr (US), Knack ₹150cr a year, GPT ₹134cr, Ceigall's ₹215cr mining lease, Unimech's ₹39cr Saudi joint venture, Gland's $21m US joint venture, EFC's share swap for Ultrafresh, Mahindra Lifespace's and Shriram Properties' project additions, and Varroc closing its Italian unit.
+- Routine and ignored: small promoter trades (V-Guard, RIR, Genus, Deepak Nitrite, TruAlt) and Q2 business updates (Sedemac, OnEMI, Sobha, V2 Retail, V-Mart, Ashiana, Sambhv, Steel Strips, VST Tillers, SG Finserve, Sai Silks).
+
+**News pass, 30 September – 2 October:** 16 entries with a clear reason; none was very important, so no note changed. Turtlemint fell again on IRDAI's proposed commission caps, but those are still a draft (comments close 25 October) and the note already covers them. DGTR's recommended anti-dumping duty on Chinese HFC blends (GFL, Navin, Stallion) is only a recommendation until the finance ministry notifies it. The rest were price moves, block deals and fund buying (H-acid prices for Kiri and Shree Pushkar; Rites in Uruguay; Ircon, Molbio, Innova, AXISCADES, Nirlon, Swiggy, Shadowfax).
+
+**Results pass:** no unreviewed results.

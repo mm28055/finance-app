@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29",
+ "updated": "2026-10-04",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -646,9 +646,15 @@
    "expectedStart": "Q3 FY27",
    "adds": "about 16% more helmet capacity",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026): 'beginning October'; slipped from 'by Q2 FY27' promised in May",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+1.5 million helmets a year (about +16% on about 9.25–9.5 million)"
+   "source": "Q1 FY27 call (Aug 2026): 'beginning October'; slipped from 'by Q2 FY27' promised in May; NSE filing 1 Oct 2026: by end-October",
+   "updatedOn": "2026-10-04",
+   "capacityAdd": "+1.5 million helmets a year (about +16% on about 9.25–9.5 million)",
+   "revisions": [
+    {
+     "on": "2026-10-01",
+     "text": "Company filing: commercial production, expected by the end of Q2 FY27, now by the end of October 2026 for 'operational and procedural matters'; occupation certificate received on 30 September."
+    }
+   ]
   },
   {
    "id": "studds-accessories-facility-v-2",
