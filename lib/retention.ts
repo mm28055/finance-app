@@ -21,6 +21,14 @@ import { generalSlotDate } from './doc-label';
 /** Transcript row + Supabase PDF + RAG chunks. */
 export const TRANSCRIPT_WINDOW = 2;
 
+/**
+ * Chat search passages (TranscriptChunk) are kept for the newest results call only, plus any AGM or
+ * special call held after the call before it. The transcript text of the previous quarter stays
+ * (TRANSCRIPT_WINDOW), so its passages can be rebuilt; this keeps the database inside the free
+ * plan's 0.5 GB (owner, 4 Oct 2026: passages were 85% of the database).
+ */
+export const CHUNK_WINDOW = 1;
+
 /** Analysis row: summary, investor brief, highlights, guidance, capex, score. */
 export const ANALYSIS_WINDOW = 4;
 
@@ -75,6 +83,37 @@ const NEWEST_FIRST = [
     { quarter: { q: 'desc' as const } }
 ];
 
+type SlimTranscript = { quarterId: string; sourceEventDate: Date | null; quarter: { name: string; q: string } };
+
+/**
+ * Deletes chat search passages outside CHUNK_WINDOW: those of older results calls, and of AGMs or
+ * special calls held on or before the previous results call. The transcripts themselves stay.
+ * `results` is newest first; `generals` likewise.
+ */
+async function dropOldPassages(db: PrismaClient, companyId: string, results: SlimTranscript[], generals: SlimTranscript[]) {
+    const drop = new Set(results.slice(CHUNK_WINDOW).map(t => t.quarterId));
+    const previousCall = results[CHUNK_WINDOW]?.sourceEventDate;
+    if (previousCall) {
+        for (const g of generals) {
+            const d = generalSlotDate(g.quarter.name) ?? g.sourceEventDate;
+            if (d && d.getTime() <= previousCall.getTime()) drop.add(g.quarterId);
+        }
+    }
+    if (drop.size) await db.transcriptChunk.deleteMany({ where: { companyId, quarterId: { in: [...drop] } } });
+}
+
+/** Applies only the chat-passage rule to one company (for a one-off clean-up). */
+export async function pruneCompanyPassages(db: PrismaClient, companyId: string) {
+    const all = await db.transcript.findMany({
+        where: { companyId },
+        select: { quarterId: true, sourceEventDate: true, quarter: { select: { name: true, q: true, year: true } } },
+        orderBy: NEWEST_FIRST
+    });
+    await dropOldPassages(db, companyId,
+        all.filter(t => t.quarter.q !== GENERAL_Q),
+        newestGeneralFirst(all.filter(t => t.quarter.q === GENERAL_Q)));
+}
+
 export interface PruneHooks {
     /**
      * Called just before a transcript row is deleted, so the caller can remove
@@ -96,9 +135,10 @@ export interface PruneHooks {
  */
 export async function pruneCompany(db: PrismaClient, companyId: string, hooks: PruneHooks = {}) {
     // --- Transcripts + PDFs + RAG chunks: keep TRANSCRIPT_WINDOW ---
+    // Only the fields needed here: the full transcript text is large and would be read for nothing.
     const allTranscripts = await db.transcript.findMany({
         where: { companyId },
-        include: { quarter: true },
+        select: { id: true, quarterId: true, fileUrl: true, sourceEventDate: true, quarter: { select: { name: true, q: true, year: true } } },
         orderBy: NEWEST_FIRST
     });
     const transcripts = allTranscripts.filter(t => t.quarter.q !== GENERAL_Q);
@@ -117,6 +157,7 @@ export async function pruneCompany(db: PrismaClient, companyId: string, hooks: P
         await db.transcriptChunk.deleteMany({ where: { companyId, quarterId: old.quarterId } });
         await db.transcript.delete({ where: { id: old.id } });
     }
+    await dropOldPassages(db, companyId, transcripts, generalTranscripts);
 
     // --- Analyses: keep ANALYSIS_WINDOW ---
     const allAnalyses = await db.analysis.findMany({
