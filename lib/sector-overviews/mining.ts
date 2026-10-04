@@ -620,7 +620,7 @@ export const miningMetalsRecycle: SectorOverview = {
         {
             company: 'CMR Green Tech', rank: 8, stance: 'SCALEUP', segment: RECYCLE,
             what: "India's largest aluminium recycler, delivering liquid and solid aluminium alloys to car-part makers from 13 plants, plus billets and other scrap metals; listed in June 2026.",
-            view: "**A strong franchise that burns cash.** Volume rose 25% and profit per kg reached ₹12.4, up from ₹6.9 in FY24. But operating cash was −₹410cr in FY26, borrowings reached ₹1,426cr, it has guaranteed ₹594cr of subsidiaries' loans, and promoters' 84% must come down. The price needs about {need:CMR Green Tech|14}% a year against my ~15%; I want to see cash.",
+            view: "**A strong franchise that burns cash.** Volume rose 25% and profit per kg reached ₹12.4, up from ₹6.9 in FY24. But operating cash was −₹410cr in FY26, borrowings reached ₹1,426cr, it has guaranteed ₹594cr of subsidiaries' loans, its CFO resigned on 3 October, the second CFO exit since August 2025, and promoters' 84% must come down. The price needs about {need:CMR Green Tech|14}% a year against my ~15%; I want to see cash.",
             watch: 'Two quarters of positive operating cash; debt-to-equity back toward 0.5; profit per kg holding at the ₹12 now guided.',
         },
     ],
