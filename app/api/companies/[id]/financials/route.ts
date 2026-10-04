@@ -7,6 +7,17 @@ import { screenerPageUrl, fetchScreenerPage, screenerTable, screenerGrowth, scre
 // card is opened. The page is cached for a week (refreshed after results); nothing is stored.
 
 const YEARS = 5;
+/**
+ * The last five years, but only years within five of the newest. Screener's tables can skip years
+ * (J Kumar's consolidated pages jump from Mar 2017 to Mar 2023), and an old year left over from the
+ * gap would otherwise fill the fifth column.
+ */
+const yearOf = (label: string) => Number(label.match(/(\d{4})$/)?.[1] ?? NaN);
+function recentYears<T>(items: T[], label: (x: T) => string): T[] {
+    const last = items.slice(-YEARS);
+    const newest = last.length ? yearOf(label(last[last.length - 1])) : NaN;
+    return Number.isFinite(newest) ? last.filter(x => !(yearOf(label(x)) < newest - (YEARS - 1))) : last;
+}
 
 // Rows shown, in order, with plain-English labels. Anything else on Screener is left out.
 const ROWS: Record<string, [string, string][]> = {
@@ -42,7 +53,7 @@ const ROWS: Record<string, [string, string][]> = {
 async function debtAndCashRatios(html: string, consolidated: boolean, key: string): Promise<{ columns: string[]; raw: (string | null)[]; rows: { label: string; src: string; expandable: boolean; values: (string | null)[]; parts?: { label: string; values: (string | null)[] }[]; heading?: string }[] } | null> {
     const pl = screenerTable(html, 'profit-loss'), bs = screenerTable(html, 'balance-sheet'), cf = screenerTable(html, 'cash-flow');
     if (!pl || !bs) return null;
-    const years = pl.columns.filter(c => c !== 'TTM' && bs.columns.includes(c)).slice(-YEARS);
+    const years = recentYears(pl.columns.filter(c => c !== 'TTM' && bs.columns.includes(c)), c => c);
     if (!years.length) return null;
     const num = (v: string | null | undefined) => {
         if (v === null || v === undefined || v === '') return null;
@@ -377,7 +388,7 @@ type Row = { label: string; src: string; expandable: boolean; values: (string | 
             if (!t) continue;
             // Last five years; the P&L also keeps its trailing-twelve-months column.
             const ttm = t.columns[t.columns.length - 1] === 'TTM';
-            const yearCols = t.columns.map((c, i) => ({ c, i })).filter(x => x.c !== 'TTM').slice(-YEARS);
+            const yearCols = recentYears(t.columns.map((c, i) => ({ c, i })).filter(x => x.c !== 'TTM'), x => x.c);
             const keep = ttm ? [...yearCols, { c: 'TTM', i: t.columns.length - 1 }] : yearCols;
             const rows = wanted
                 .map(([src, label]) => {
