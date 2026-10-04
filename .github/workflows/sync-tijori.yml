@@ -2,10 +2,10 @@ name: Weekly Tijori Calls
 
 # Calls that never reach the exchange: talks at broker conferences, investor days and other
 # special calls, which Tijori records and transcribes itself (the nightly NSE job only sees what
-# companies file). scripts/smart-sync.ts checks every company's Tijori list for its latest two
-# quarters and stores, analyses and indexes anything the app does not yet hold; extras land in
-# General ("Special call") slots. A results call Tijori has before NSE also comes in here, and its
-# company's profile is refreshed (--with-profiles applies only to newly analysed results calls).
+# companies file). scripts/smart-sync.ts --special-only checks every company's Tijori list for its
+# latest two quarters and stores, analyses and indexes the special calls the app does not yet hold
+# ("Special call" slots). Results calls are left to the nightly NSE job, which stores the company's
+# own filed transcript; Tijori's are machine-made from the audio.
 on:
   schedule:
     # Sunday 6:00am IST (Sunday 00:30 UTC), clear of the nightly jobs and the 3am backup.
@@ -39,7 +39,7 @@ jobs:
         run: npm ci
 
       - name: Sync calls from Tijori
-        run: npx tsx scripts/smart-sync.ts --with-profiles --concurrency=4
+        run: npx tsx scripts/smart-sync.ts --special-only --concurrency=4
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           DIRECT_URL: ${{ secrets.DIRECT_URL }}

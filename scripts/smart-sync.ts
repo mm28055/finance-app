@@ -171,6 +171,10 @@ function parseArgs() {
     let companyFilter: string | null = null;
     let sweep = false;
     let withProfiles = false;
+    // --special-only: take only AGMs, conference talks and other special calls. Results calls are
+    // left to the nightly NSE job, which stores the company's own filed transcript; Tijori's are
+    // machine-made from the audio and, stored first, would block the official one (same-day match).
+    let specialOnly = false;
     let concurrency = DEFAULT_CONCURRENCY;
     for (let i = 0; i < args.length; i++) {
         if ((args[i] === '--company' || args[i] === '-c') && args[i + 1]) {
@@ -180,6 +184,8 @@ function parseArgs() {
             sweep = true;
         } else if (args[i] === '--with-profiles') {
             withProfiles = true;
+        } else if (args[i] === '--special-only') {
+            specialOnly = true;
         } else if (args[i].startsWith('--concurrency=')) {
             concurrency = parseInt(args[i].split('=')[1]) || DEFAULT_CONCURRENCY;
         } else if (args[i] === '--concurrency' && args[i + 1]) {
@@ -187,7 +193,7 @@ function parseArgs() {
             i++;
         }
     }
-    return { companyFilter, sweep, withProfiles, concurrency: Math.max(1, concurrency) };
+    return { companyFilter, sweep, withProfiles, specialOnly, concurrency: Math.max(1, concurrency) };
 }
 
 async function resolveSingleCompany(filter: string) {
@@ -215,7 +221,7 @@ async function resolveSingleCompany(filter: string) {
 }
 
 async function main() {
-    const { companyFilter, sweep, withProfiles, concurrency } = parseArgs();
+    const { companyFilter, sweep, withProfiles, specialOnly, concurrency } = parseArgs();
     const singleMode = !!companyFilter;
 
     console.log(singleMode
@@ -581,6 +587,14 @@ async function main() {
                                 console.log(`  📄 ${co.name.trim()}: ${fyq} document is ${why} — filing as "${genName}".`);
                                 await logToDB(jobId, 'INFO', `${why} — filed as ${genName}`, co.name, fyq);
                             }
+                        }
+
+                        // Special calls only: a results call is left for the nightly NSE job.
+                        if (specialOnly && targetName === fyq) {
+                            await deleteStoredPdf(result.finalPath, co.name, fyq);
+                            console.log(`  ⏭️ ${co.name.trim()}: ${fyq} results call left for the NSE job (--special-only).`);
+                            await logToDB(jobId, 'SKIPPED', 'Results call left for the NSE job (--special-only)', co.name, fyq);
+                            continue;
                         }
 
                         // Re-upload under the final slot when classification moved
