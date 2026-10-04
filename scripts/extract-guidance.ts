@@ -42,6 +42,9 @@ const ONLY = val('--only');
 // can only ever demote a row, and a wrong green is the error that costs the
 // reader trust, so this is the cohort worth paying to re-read.
 const RECHECK_GREEN = has('--recheck-green');
+// Re-read the rows read as no guidance whose brief names a rupee revenue target: before the
+// reader was given last year's revenue it could not turn "₹1,250 Cr this year" into growth.
+const RECHECK_NONE = has('--recheck-none');
 
 // Concurrency follows the key count like the rest of the pipeline, so one key
 // isn't hammered while the others idle. Capped: these are small prompts, but a
@@ -50,15 +53,15 @@ const CONCURRENCY = Math.max(1, Math.min(GEMINI_KEY_COUNT, 4));
 
 /** --dry: same read, no write, so a sample can be reviewed before committing. */
 async function previewOnly(analysisId: string) {
-    const { GUIDANCE_PROMPT, parseGuidanceJson } = await import('../lib/guidance-extract');
+    const { GUIDANCE_PROMPT, parseGuidanceJson, lastYearRevenue } = await import('../lib/guidance-extract');
     const { geminiFlash } = await import('../lib/gemini');
     const a = await prisma.analysis.findUnique({
         where: { id: analysisId },
-        select: { investorBrief: true, company: { select: { name: true } }, quarter: { select: { name: true } } }
+        select: { companyId: true, investorBrief: true, company: { select: { name: true } }, quarter: { select: { name: true } } }
     });
     if (!a?.investorBrief) return null;
     const res = await geminiFlash.generateContent(
-        GUIDANCE_PROMPT(a.company.name, a.quarter.name, a.investorBrief)
+        GUIDANCE_PROMPT(a.company.name, a.quarter.name, a.investorBrief, await lastYearRevenue(a.companyId))
     );
     return parseGuidanceJson((await res.response).text());
 }
@@ -119,7 +122,8 @@ async function main() {
         .filter(t => t.analysis?.investorBrief)
         // Already-extracted rows are skipped so the run is resumable after a
         // rate-limit stop; --force redoes them.
-        .filter(t => (FORCE || RECHECK_GREEN) || !t.analysis.guidanceBasis)
+        .filter(t => (FORCE || RECHECK_GREEN || RECHECK_NONE) || !t.analysis.guidanceBasis)
+        .filter(t => !RECHECK_NONE || (t.analysis.guidanceBasis === 'NONE' && /₹\s?[\d,]+(\.\d+)?\s?(Cr|crore)/i.test(t.analysis.investorBrief || '') && /target|guid|revenue of|turnover|top[- ]line/i.test(t.analysis.investorBrief || '')))
         .filter(t => !RECHECK_GREEN || meetsGuidanceThreshold({
             min: t.analysis.guidanceGrowthMin !== null ? Number(t.analysis.guidanceGrowthMin) : null,
             max: t.analysis.guidanceGrowthMax !== null ? Number(t.analysis.guidanceGrowthMax) : null,

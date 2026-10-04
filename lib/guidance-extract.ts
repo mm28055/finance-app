@@ -21,9 +21,14 @@ export interface ExtractedGuidance {
     quote: string | null;
 }
 
-const PROMPT = (company: string, quarter: string, brief: string) => `
+const PROMPT = (company: string, quarter: string, brief: string, lastYear?: string | null) => `
 You are reading an equity analyst's brief on ${company} for ${quarter}. Your only
 job is to report what management said about FORWARD REVENUE GROWTH.
+${lastYear ? `
+REVENUE BASE (filed figures, not in the brief): ${lastYear}. When management
+gives a revenue target in rupees for a coming year, this is "today's revenue" to
+derive the growth from (basis IMPLIED).
+` : ''}
 
 Return STRICT JSON, nothing else:
 {
@@ -108,6 +113,29 @@ function parseJson(text: string): ExtractedGuidance | null {
 export { PROMPT as GUIDANCE_PROMPT, parseJson as parseGuidanceJson };
 
 /**
+ * The company's last full year of revenue from its stored quarters ("FY26 revenue ₹977 Cr"), so a
+ * rupee target ("₹1,250 Cr this year") can be turned into growth. Briefs quote the target but often
+ * not the base: Shree Pushkar's Q1 FY27 guide read as no guidance for want of it.
+ */
+export async function lastYearRevenue(companyId: string): Promise<string | null> {
+    const rows = await prisma.financials.findMany({
+        where: { companyId, revenue: { not: null } },
+        select: { revenue: true, quarter: { select: { name: true } } },
+    });
+    const byFy = new Map<string, Map<string, number>>();
+    for (const r of rows) {
+        const m = r.quarter.name.match(/^(Q[1-4]) (FY\d{2})$/);
+        if (!m) continue;
+        if (!byFy.has(m[2])) byFy.set(m[2], new Map());
+        byFy.get(m[2])!.set(m[1], Number(r.revenue));
+    }
+    const full = [...byFy].filter(([, q]) => q.size === 4).sort(([a], [b]) => b.localeCompare(a))[0];
+    if (!full) return null;
+    const total = [...full[1].values()].reduce((a, b) => a + b, 0);
+    return `${full[0]} revenue ₹${Math.round(total).toLocaleString('en-IN')} Cr (sum of its four quarters)`;
+}
+
+/**
  * Reads guidance from one analysis row and saves it back onto that row.
  *
  * Returns null when there is nothing to read — no brief, or the model gave an
@@ -120,6 +148,7 @@ export async function extractGuidanceForAnalysis(analysisId: string): Promise<Ex
         where: { id: analysisId },
         select: {
             id: true,
+            companyId: true,
             investorBrief: true,
             company: { select: { name: true } },
             quarter: { select: { name: true } }
@@ -129,7 +158,7 @@ export async function extractGuidanceForAnalysis(analysisId: string): Promise<Ex
     if (!analysis?.investorBrief) return null;
 
     const res = await geminiFlash.generateContent(
-        PROMPT(analysis.company.name, analysis.quarter.name, analysis.investorBrief)
+        PROMPT(analysis.company.name, analysis.quarter.name, analysis.investorBrief, await lastYearRevenue(analysis.companyId))
     );
     const parsed = parseJson((await res.response).text());
     if (!parsed) return null;
