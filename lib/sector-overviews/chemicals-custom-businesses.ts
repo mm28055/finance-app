@@ -106,7 +106,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Chinese MEHQ, BHA and guaiacol makers', note: 'Set world prices and are diverting hydroquinone capacity into MEHQ.' }, { name: 'Vinati Organics and Gem Aromatics', note: 'New Indian entrants in anisole, MEHQ and BHA.' }, { name: 'BASF, Sabo, Rianlon and Suqian Unitechem', note: 'The established world HALS makers; BASF dominates NOR-HALS.' }],
         position: "**World No.1 or No.2 by capacity in MEHQ, BHA, guaiacol and anisole** (company claim), and **India's only fully integrated HALS maker**.",
         money: "**Net cash of ₹431cr** on Screener; CRISIL counts about ₹480cr of liquid investments and no debt, and reaffirmed AA-/Stable in September 2026. About **₹850cr has gone into the HALS subsidiary** so far (₹100cr in Q1 FY27). In May it put FY27 capex at up to ₹80–100cr plus up to ₹200cr for the subsidiary in H2 FY27; in August it said new capacity for Kemin and Geneus (₹25cr for Geneus) comes on top, with the total not yet worked out. All is from its own cash; operating cash was ₹275cr in FY26. It pays out about 28% of profit. Promoters hold **51.3%, down from 75.0%**, after the Boob family sold about 24% in a block deal in August 2025; no pledge.",
-        watch: ["HALS revenue of ₹250–300cr in FY27.", "Operating profit clearly above ₹100cr a quarter.", "Older products growing again, and no more promoter selling.", "The outcome of the state GST search of its offices and plants that began on 23 September 2026."],
+        watch: ["HALS revenue of ₹250–300cr in FY27.", "Operating profit clearly above ₹100cr a quarter.", "Older products growing again, and no more promoter selling."],
         charts: chemicalsCharts['Clean Science'],
     },
     {
