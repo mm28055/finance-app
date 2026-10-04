@@ -829,7 +829,7 @@ export const aerospaceDefence: SectorOverview = {
         {
             company: 'ideaForge Technology', rank: 11, stance: 'CYCLICAL', segment: ELEC,
             what: "India's largest maker of small military drones (quadcopters, vertical-take-off fixed-wing and the tactical ZOLT), with its own autopilot, jam-resistant links and GPS-free navigation, for the Army, paramilitary and police.",
-            view: "**Owned technology in a feast-and-famine market.** A ₹141cr Q4 at a 67.6% gross margin showed what a jam-resistant Army order earns, and a ₹500cr QIP secures the balance sheet. But Q1 revenue was ₹68.6cr with a loss, new orders were only about ₹11cr, the ₹256.8cr book runs out after December, and ₹81.6cr of FY26 development spending was capitalised against ₹6cr of operating profit. Near break-even, so no growth estimate.",
+            view: "**Owned technology in a feast-and-famine market.** A ₹141cr Q4 at a 67.6% gross margin showed what a jam-resistant Army order earns, and a ₹500cr QIP secures the balance sheet. But Q1 revenue was ₹68.6cr with a loss, new orders were only about ₹11cr, the ₹256.8cr book runs out after December, and ₹81.6cr of FY26 development spending was capitalised against ₹6cr of operating profit. A ₹109.2cr GST demand on its drone tax rate (2 October), which it is appealing, would take about a fifth of the QIP money if upheld. Near break-even, so no growth estimate.",
             watch: 'Fast-track and field-commander drone orders in H2 FY27; gross margin back in the 50–55% band; how much development spending is capitalised.',
         },
         {
