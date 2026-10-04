@@ -166,10 +166,19 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
 
     // Get selected quarter data. Capped at ROW_QUARTERS — older quarters are
     // still analysed and retained, they just don't get a tab in the row.
+    // Results calls only ("Q1 FY27"); AGMs and special calls keep their tabs inside the open card.
+    // Each tab keeps its place in the full history, which the card's own tabs index into.
     const quarters = useMemo(
-        () => (effective.history || []).slice(0, Math.min(ROW_QUARTERS, ANALYSIS_WINDOW)),
+        () => (effective.history || [])
+            .map((q, historyIdx) => ({ ...q, historyIdx }))
+            .filter(q => /^[QH][1-4] FY\d{2}$/.test(q.quarter))
+            .slice(0, Math.min(ROW_QUARTERS, ANALYSIS_WINDOW)),
         [effective.history]
     );
+    // Until a tab is picked, the card opens on the newest results call, not a later special call.
+    React.useEffect(() => {
+        if (!quarterPicked && quarters[0]) setSelectedQuarterIdx(quarters[0].historyIdx);
+    }, [quarters, quarterPicked]);
 
     // How far the price sits below its 52-week high. Computed live rather than
     // stored, so it stays right between finance syncs.
@@ -179,7 +188,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
         if (!price || !high || high <= 0) return null;
         return Math.round(((high - price) / high) * 100);
     }, [company.currentPrice, company.fiftyTwoWeekHigh]);
-    const selectedData = quarters[selectedQuarterIdx] || quarters[0];
+    const selectedData = effective.history?.[selectedQuarterIdx] || quarters[0];
     // The Financials box follows the quarter tab, except before any tab is clicked: then it shows
     // the newest filed quarter, which can be ahead of the newest call (results out, call not yet
     // held or not found, as with SMEs that hold calls half-yearly).
@@ -631,7 +640,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                     {/* Fixed width (room for two quarters) so the name column takes all the spare space and the figures line up on the right */}
                     {(
                         <div className="flex items-center gap-1 pl-3 2xl:gap-1.5 2xl:pl-4 border-l border-gray-200 w-[150px] 2xl:w-[164px] flex-shrink-0 max-md:border-l-0 max-md:pl-0 max-md:w-auto">
-                            {quarters.map((q, idx) => (
+                            {quarters.map(q => (
                                 <div
                                     key={q.quarter}
                                     className="flex items-center"
@@ -639,11 +648,11 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                     <button
                                         onClick={(e) => {
                                             e.stopPropagation();
-                                            setSelectedQuarterIdx(idx);
+                                            setSelectedQuarterIdx(q.historyIdx);
                                             setQuarterPicked(true);
                                             setExpanded(true);
                                         }}
-                                        className={`px-2 py-0.5 text-[9px] font-semibold rounded-l transition-all flex items-center gap-1 border-y border-l whitespace-nowrap flex-shrink-0 ${idx === selectedQuarterIdx
+                                        className={`px-2 py-0.5 text-[9px] font-semibold rounded-l transition-all flex items-center gap-1 border-y border-l whitespace-nowrap flex-shrink-0 ${q.historyIdx === selectedQuarterIdx
                                             ? 'bg-[#6B9FCC] text-white border-[#6B9FCC]'
                                             : 'bg-white text-gray-500 border-gray-200 hover:bg-[#F1F5F9] hover:text-[#6B9FCC]'
                                             }`}
@@ -664,7 +673,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                                     window.open(viewUrl, '_blank');
                                                 }
                                             }}
-                                            className={`px-1.5 py-0.5 text-[9px] rounded-r border transition-all ${idx === selectedQuarterIdx
+                                            className={`px-1.5 py-0.5 text-[9px] rounded-r border transition-all ${q.historyIdx === selectedQuarterIdx
                                                 ? 'bg-[#5A8EBC] text-white border-[#5A8EBC] hover:bg-[#4A7AAF]'
                                                 : 'bg-gray-50 text-gray-400 border-gray-200 border-l-0 hover:bg-[#E2E8F0] hover:text-[#4A7AAF]'
                                                 }`}
