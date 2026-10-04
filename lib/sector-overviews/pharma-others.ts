@@ -620,7 +620,7 @@ export const pharmaOthers: SectorOverview = {
             company: 'Hexagon Nutrition', rank: 2, stance: 'SCALEUP', segment: INGREDIENTS,
             what: "Makes vitamin and mineral premixes, therapeutic foods for malnourished children and clinical nutrition brands (PentaSure); 57% exported; listed in June 2026 through a sale by existing holders.",
             view: "**Fast growth, thin margins, weak FY26 cash.** Revenue up 43% in Q1 with guidance of 20–25% for the year, plants at 47% use and net cash. But the margin fell to 11.3%, near CARE's downgrade trigger, and FY26 operating cash was only ₹6cr. The price needs about {need:Hexagon Nutrition|14}% a year, about my ~15%.",
-            watch: 'Margin back to 14% as 10–15% price rises land; receivables and inventory; the ₹100cr order book turning into Q2 sales; who chairs the board now that founder Arun Kelkar has left it, and what the company decides after promoters abstained on some AGM votes.',
+            watch: 'Margin back to 14% as 10–15% price rises land; receivables and inventory; the ₹100cr order book turning into Q2 sales; the EGM requisitioned on 30 September by holders of over 38% to bring founder Arun Kelkar back as Executive Chairman after his term ended on 28 September, and what the board decides after promoters abstained on some AGM votes.',
         },
         {
             company: 'Advanced Enzyme', rank: 3, stance: 'HARVEST', segment: INGREDIENTS,
