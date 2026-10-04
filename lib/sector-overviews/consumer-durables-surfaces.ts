@@ -644,7 +644,7 @@ export const consumerDurablesSurfaces: SectorOverview = {
         {
             company: 'Kajaria Ceramics', rank: 1, stance: 'PRICED', segment: TILES,
             what: "India's largest tile maker (82.7 million sq m of capacity in Rajasthan, Gujarat, Uttar Pradesh, Andhra Pradesh and Telangana) with Kerovit bathware and tile adhesives, selling through about 1,800 dealers.",
-            view: "**The best-run business in the group, fully priced.** Cost cuts lifted FY26 margin from 12.8% to 17.8%, its fuel cost sits well below Morbi's, it holds about ₹793cr of net cash (company figure, June) after a ₹297cr buyback, and two large-format lines add 26% capacity by April 2027 at more than ₹2 of sales per rupee. But Q1's 20% growth was mostly price, and a ₹20cr fraud hit a subsidiary. The price needs about {need:Kajaria Ceramics|19}% a year against my ~14%.",
+            view: "**The best-run business in the group, fully priced.** Cost cuts lifted FY26 margin from 12.8% to 17.8%, its fuel cost sits well below Morbi's, it holds about ₹793cr of net cash (company figure, June) after a ₹297cr buyback, and two large-format lines add 26% capacity by April 2027 at more than ₹2 of sales per rupee. But Q1's 20% growth was mostly price, a ₹20cr fraud hit a subsidiary, and family members sold 2.5% (₹484cr) on 1 October near the top of the Morbi windfall. The price needs about {need:Kajaria Ceramics|19}% a year against my ~14%.",
             watch: 'Double-digit volume in Q2–Q3 as promised; margin near 18% once gas eases; the two new lines starting on time in March–April 2027.',
         },
         {
