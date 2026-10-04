@@ -690,7 +690,7 @@ export const commercialServices: SectorOverview = {
         {
             company: 'Awfis Space Solutions', rank: 7, stance: 'SCALEUP', segment: SPACE,
             what: "Runs India's largest coworking network by centres (242 in 18 cities), much of it under cost- and revenue-sharing deals with landlords, plus an office fit-out business.",
-            view: "**The most centres, thin after rent.** Revenue rose 27% in Q1 and it is net cash excluding leases. But its cash margin after rent was 10.1%, no better than a year earlier, as rent paid rose 53%; it cut its revenue guide to about 21% within a quarter; and the promoter owns only 17%. The price needs about {need:Awfis Space Solutions|15}% a year against my ~12%.",
+            view: "**The most centres, thin after rent.** Revenue rose 27% in Q1 and it is net cash excluding leases. But its cash margin after rent was 10.1%, no better than a year earlier, as rent paid rose 53%; it cut its revenue guide to about 21% within a quarter; and the promoter owns only 17%. The price needs about {need:Awfis Space Solutions|15}% a year against my ~12%. **4 Oct 2026:** the price check now reads {label:Awfis Space Solutions|fits} after the share fell, but it stays follow: once rent and capex are paid, FY26's ₹616cr of operating cash left only about ₹16cr, so own waits for a rising cash margin after rent and mature occupancy back above 84%.",
             watch: 'Cash EBITDA of ₹190–200cr with a Q4 lift; mature occupancy back above 84%; the landlord-partnership share.',
         },
         {
