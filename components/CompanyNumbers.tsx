@@ -16,9 +16,10 @@ type Row = { label: string; src: string; expandable: boolean; values: (string | 
 type Table = { columns: string[]; raw: (string | null)[]; rows: Row[] };
 type Financials = { view: 'consolidated' | 'standalone'; empty: boolean; tables: Record<string, Table>; growth: Record<string, Record<string, string>>; /** WC tab: how a shortfall was funded, or where spare cash went (fixed rules). */ wcSummary?: string[]; wcSummaryTitle?: string };
 
-const TABS: { key: Tab; label: string; title?: string }[] = [
+// `short`: the label on a phone, where every tab has to fit on one line.
+const TABS: { key: Tab; label: string; short?: string; title?: string }[] = [
     { key: 'history', label: 'Valuation', title: 'Price & valuation history' },
-    { key: 'assumes', label: 'Price assumes' },
+    { key: 'assumes', label: 'Price assumes', short: 'Assumes', title: 'What the price assumes' },
     { key: 'peers', label: 'Peers' },
     { key: 'quarters', label: 'Qtrly', title: 'Quarterly results' },
     { key: 'profit-loss', label: 'P&L' },
@@ -235,7 +236,9 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
                 <div className="flex flex-wrap gap-0.5">
                     {TABS.map(t => (
                         <button key={t.key} title={t.title} onClick={() => setTab(t.key)} {...hover(() => setTab(t.key))}
-                            className={`px-1.5 py-0.5 text-[10px] font-semibold rounded whitespace-nowrap ${tab === t.key ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-800 hover:bg-gray-100'}`}>{t.label}</button>
+                            className={`px-1.5 max-md:px-1 py-0.5 text-[10px] font-semibold rounded whitespace-nowrap ${tab === t.key ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-800 hover:bg-gray-100'}`}>
+                            {t.short ? <><span className="max-md:hidden">{t.label}</span><span className="md:hidden">{t.short}</span></> : t.label}
+                        </button>
                     ))}
                 </div>
                 {!OWN_DATA.has(tab) && fin && (
