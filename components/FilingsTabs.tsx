@@ -34,7 +34,7 @@ export function FilingsTabs({ filings, news, results = [], calls = [], callsComp
         return () => clearTimeout(t);
     }, [tab, allCalls]);
     const tabClass = (active: boolean) => `px-3 py-2 text-xs font-semibold border-b-2 whitespace-nowrap shrink-0 ${active ? 'text-[#4A7AAF] border-[#6B9FCC]' : 'text-gray-400 border-transparent hover:text-gray-600'}`;
-    const tabs: [Tab, string][] = [['portfolio', 'My portfolio'], ['filings', 'Company filings'], ['news', 'Market and policy'], ['results', 'Results'], ['calls', 'Calls'], ['changes', 'Call changes']];
+    const tabs: [Tab, string][] = [['portfolio', 'Portfolio'], ['filings', 'Filings'], ['news', 'Market & Policy'], ['results', 'Results'], ['calls', 'Calls'], ['changes', 'Call changes']];
     return (
         <div>
             <div className="flex gap-1 shadow-[inset_0_-1px_0_#e5e7eb] mb-4 overflow-x-auto overflow-y-hidden overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" role="tablist">
