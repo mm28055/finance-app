@@ -365,7 +365,6 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
 
                 {/* Row 2: Conviction Filter, and the other filters; on a phone one line that slides sideways */}
                 <div className="flex items-center gap-1.5 [&>*]:shrink-0 [&>*]:whitespace-nowrap max-md:overflow-x-auto max-md:overscroll-x-contain max-md:-mx-3 max-md:px-3 max-md:[scrollbar-width:none] max-md:[&::-webkit-scrollbar]:hidden">
-                    <span className="text-[9px] text-gray-400 font-medium uppercase tracking-wider mr-0.5 max-md:hidden">Conviction:</span>
                     {(['ALL', 'HIGH', 'MEDIUM', 'LOW'] as const).map(f => {
                         const active = convictionFilter === f;
                         let cls = '';
