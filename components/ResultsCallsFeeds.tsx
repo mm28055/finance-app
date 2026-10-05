@@ -160,9 +160,9 @@ export function CallsFeed({ calls, onCompany }: { calls: CallRow[]; onCompany?: 
                                 </div>
                                 {c.read?.change && <p className="text-[12px] font-medium text-gray-800 mt-1 leading-snug">{c.read.change}</p>}
                                 {guide(c.guidance) && <p className="text-[11px] font-medium text-[#4A7AAF] mt-1">{guide(c.guidance)}</p>}
-                                {/* Two takeaways on a phone, up to four on a wider screen; the card has the rest. */}
+                                {/* Up to four takeaways, as the analysis gives them; the card has the rest. */}
                                 {c.points.length > 0 && (
-                                    <ul className="mt-1.5 flex flex-col gap-1.5 list-disc pl-4 marker:text-gray-300 max-md:[&>li:nth-child(n+3)]:hidden">
+                                    <ul className="mt-1.5 flex flex-col gap-1.5 list-disc pl-4 marker:text-gray-300">
                                         {c.points.map((p, k) => <Takeaway key={k} text={p} />)}
                                     </ul>
                                 )}
