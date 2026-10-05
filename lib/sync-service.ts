@@ -5,6 +5,7 @@ import { GENERAL_Q } from './retention';
 import SCREENER_OVERRIDES from './screener-overrides.json';
 import { normaliseName, nameSimilarity, MIN_NAME_MATCH, tokensFit, namesOf, sameCompanyName } from './name-match';
 import { nseSymbolForIsin } from './corporate-actions/nse-lists';
+import { stripDeltaSections } from './brief-sections';
 const pdf = require('pdf-parse');
 
 // ── Screener.in quarterly fallback ──────────────────────────────────────────
@@ -510,7 +511,7 @@ export async function processTranscript(transcriptId: string) {
                 capexText: aiResult.capex?.details || "",
                 keyHighlights: JSON.stringify(aiResult.summary?.highlights || []),
                 deltaAnalysis: aiResult.delta_analysis,
-                investorBrief: aiResult.investor_brief,
+                investorBrief: stripDeltaSections(aiResult.investor_brief),
                 // AGMs and special calls are read, not scored: only results calls carry a score.
                 investibilityScore: transcript.quarter.q === GENERAL_Q ? null : aiResult.investibility_score
             },
@@ -525,7 +526,7 @@ export async function processTranscript(transcriptId: string) {
                 capexText: aiResult.capex?.details || "",
                 keyHighlights: JSON.stringify(aiResult.summary?.highlights || []),
                 deltaAnalysis: aiResult.delta_analysis,
-                investorBrief: aiResult.investor_brief,
+                investorBrief: stripDeltaSections(aiResult.investor_brief),
                 // AGMs and special calls are read, not scored: only results calls carry a score.
                 investibilityScore: transcript.quarter.q === GENERAL_Q ? null : aiResult.investibility_score
             }

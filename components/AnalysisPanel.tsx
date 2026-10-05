@@ -7,6 +7,7 @@ import remarkGfm from 'remark-gfm';
 
 import type { CompanyFinancials } from './FinancialMatrix';
 import { useHoverOpen } from '@/lib/hover-open';
+import { isDeltaHeading } from '@/lib/brief-sections';
 
 export function AnalysisPanel({
     analysis,
@@ -295,20 +296,13 @@ export function AnalysisPanel({
                             "EXECUTION"
                         ];
 
-                        // BLOCKLIST: Specifically prevent Delta content from leaking into Analysis Tab
-                        const ANALYSIS_BLOCKLIST = [
-                            "DELTA ANALYSIS",
-                            "NARRATIVE SHIFT",
-                            "RISK LANDSCAPE"
-                        ];
-
                         return sections.map((section, idx) => {
                             // Check header
                             const headerMatch = section.match(/^##\s+(.+)$/m);
                             if (headerMatch) {
                                 const headerText = headerMatch[1].toUpperCase();
-                                // Block deltas first
-                                if (ANALYSIS_BLOCKLIST.some(blocked => headerText.includes(blocked))) {
+                                // Block deltas first (their "Guidance Evolution" and "Execution vs. Promise" would pass the allowlist)
+                                if (isDeltaHeading(headerText)) {
                                     return null;
                                 }
                                 // If the header does NOT contain any of the allowed keywords, skip it.
