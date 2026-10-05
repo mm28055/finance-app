@@ -10,11 +10,12 @@ import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceL
 type Metric = 'price' | 'pe' | 'pb' | 'ps' | 'ev';
 type Point = { date: string; value: number };
 
-const TABS: { key: Metric; label: string; unit: string; what: string }[] = [
+// `short`: the label on a phone, where the measures and the periods share one line.
+const TABS: { key: Metric; label: string; short?: string; unit: string; what: string }[] = [
     { key: 'price', label: 'Price', unit: '₹', what: 'Share price' },
     { key: 'pe', label: 'P/E', unit: 'x', what: 'Price ÷ earnings' },
     { key: 'pb', label: 'P/B', unit: 'x', what: 'Price ÷ book value' },
-    { key: 'ps', label: 'P/Sales', unit: 'x', what: 'Market value ÷ sales' },
+    { key: 'ps', label: 'P/Sales', short: 'P/S', unit: 'x', what: 'Market value ÷ sales' },
     { key: 'ev', label: 'EV/EBITDA', unit: 'x', what: 'Enterprise value ÷ operating profit' },
 ];
 const RANGES = [{ label: '1Y', years: 1 }, { label: '3Y', years: 3 }, { label: '5Y', years: 5 }, { label: '10Y', years: 10 }];
@@ -91,17 +92,19 @@ export function ValuationHistory({ companyId, embedded = false }: { companyId: s
         <div className={embedded ? '' : 'bg-white border border-gray-200 rounded-lg p-3'}>
             {!embedded && <div className="text-[10px] font-semibold text-gray-600 uppercase tracking-wide mb-2">Price & valuation history</div>}
             {/* Measures on the left, period on the right, on one line. */}
-            <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                <div className="flex flex-wrap gap-1">
+            <div className="flex flex-wrap max-md:flex-nowrap items-center justify-between gap-2 max-md:gap-1 mb-2">
+                <div className="flex flex-wrap max-md:flex-nowrap gap-1 max-md:gap-0.5">
                     {TABS.map(t => (
                         <button key={t.key} onClick={() => setMetric(t.key)} {...hover(() => setMetric(t.key))} title={t.what}
-                            className={`px-2 py-0.5 text-[10px] font-medium rounded border ${metric === t.key ? 'bg-[#4A7AAF] text-white border-[#4A7AAF]' : 'bg-white text-gray-500 border-gray-200 hover:text-gray-700'}`}>{t.label}</button>
+                            className={`px-2 max-md:px-1 py-0.5 text-[10px] font-medium rounded border whitespace-nowrap ${metric === t.key ? 'bg-[#4A7AAF] text-white border-[#4A7AAF]' : 'bg-white text-gray-500 border-gray-200 hover:text-gray-700'}`}>
+                            {t.short ? <><span className="max-md:hidden">{t.label}</span><span className="md:hidden">{t.short}</span></> : t.label}
+                        </button>
                     ))}
                 </div>
-                <div className="flex gap-0.5 bg-gray-100 p-0.5 rounded-md text-[10px] font-medium">
+                <div className="flex gap-0.5 bg-gray-100 p-0.5 rounded-md text-[10px] font-medium shrink-0">
                     {RANGES.map(r => (
                         <button key={r.label} onClick={() => setYears(r.years)} {...hover(() => setYears(r.years))}
-                            className={`px-2 py-0.5 rounded ${years === r.years ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-400 hover:text-gray-600'}`}>{r.label}</button>
+                            className={`px-2 max-md:px-1 py-0.5 rounded ${years === r.years ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-400 hover:text-gray-600'}`}>{r.label}</button>
                     ))}
                 </div>
             </div>

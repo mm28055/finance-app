@@ -233,10 +233,10 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
     return (
         <div className="bg-white border border-gray-200 rounded-lg p-3 max-md:p-2">
             <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                <div className="flex flex-wrap gap-0.5">
+                <div className="flex flex-wrap gap-0.5 max-md:flex-nowrap max-md:overflow-x-auto max-md:overscroll-x-contain max-md:[scrollbar-width:none] max-md:[&::-webkit-scrollbar]:hidden max-md:max-w-full">
                     {TABS.map(t => (
                         <button key={t.key} title={t.title} onClick={() => setTab(t.key)} {...hover(() => setTab(t.key))}
-                            className={`px-1.5 max-md:px-1 py-0.5 text-[10px] font-semibold rounded whitespace-nowrap ${tab === t.key ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-800 hover:bg-gray-100'}`}>
+                            className={`px-1.5 max-md:px-1 py-0.5 text-[10px] font-semibold rounded whitespace-nowrap shrink-0 ${tab === t.key ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-800 hover:bg-gray-100'}`}>
                             {t.short ? <><span className="max-md:hidden">{t.label}</span><span className="md:hidden">{t.short}</span></> : t.label}
                         </button>
                     ))}
