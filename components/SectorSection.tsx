@@ -64,7 +64,8 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
 
     return (
         <section className="mb-2">
-            {/* Sector Header */}
+            {/* Sector Header: on a phone one line that slides sideways */}
+            <div className="max-md:overflow-x-auto max-md:overscroll-x-contain max-md:[scrollbar-width:none] max-md:[&::-webkit-scrollbar]:hidden">
             <button
                 // One click on the sector name always lands on the plain company list. With an Overview,
                 // results table or Filings tab open, the click closes that tab and keeps the sector
@@ -74,20 +75,20 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
                     setPanel('none');
                     setIsOpen(!isOpen);
                 }}
-                className="flex items-center gap-2 w-full text-left group focus:outline-none py-2 px-1 max-md:flex-wrap max-md:gap-y-1"
+                className="flex items-center gap-2 w-full text-left group focus:outline-none py-2 px-1 max-md:w-max max-md:pr-4"
             >
                 <div className={`p-0.5 rounded transition-colors ${isOpen ? 'text-[#6B9FCC]' : 'text-gray-400 group-hover:text-[#6B9FCC]'}`}>
                     {isOpen ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
                 </div>
 
                 {/* Fixed-width columns, so the count and the buttons line up down the list as they do in the company rows */}
-                <span className="w-60 shrink-0 flex max-md:w-auto max-md:shrink max-md:min-w-0 max-md:max-w-[calc(100%-2rem)]">
+                <span className="w-60 shrink-0 flex max-md:w-auto">
                     <span className="truncate text-xs font-semibold text-[#4A7AAF] uppercase tracking-wide bg-[#D4E5F7] px-2.5 py-1 rounded-full" title={name}>
                         {name}
                     </span>
                 </span>
 
-                <span className="w-20 shrink-0 max-md:w-auto max-md:ml-6 text-[10px] text-gray-400 font-medium tabular-nums">
+                <span className="w-20 shrink-0 max-md:w-auto max-md:whitespace-nowrap text-[10px] text-gray-400 font-medium tabular-nums">
                     {count} companies
                 </span>
 
@@ -150,6 +151,7 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
 
                 <div className="flex-1 max-md:hidden h-px bg-gray-200 ml-3 group-hover:bg-[#A5C4E2] transition-colors" />
             </button>
+            </div>
 
             {/* Snapshot Area */}
             {isOpen && panel === 'snapshot' && (

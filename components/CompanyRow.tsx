@@ -332,11 +332,11 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                 data-company-row={company.name}
                 onClick={() => setExpanded(!expanded)}
                 onPointerEnter={() => { if (!expanded && !detail) prefetchDetail(company.id); }}
-                className={`scroll-mt-28 flex items-center px-3 2xl:px-4 py-2.5 bg-white ${!isAdminMode ? 'hover:bg-[#F8FAFC] cursor-pointer' : ''} transition-colors group md:overflow-visible max-md:flex-wrap max-md:gap-y-1.5`}
+                className={`scroll-mt-28 flex items-center px-3 2xl:px-4 py-2.5 bg-white ${!isAdminMode ? 'hover:bg-[#F8FAFC] cursor-pointer' : ''} transition-colors group md:overflow-visible max-md:pl-0 max-md:overflow-x-auto max-md:overscroll-x-contain max-md:[scrollbar-width:none] max-md:[&::-webkit-scrollbar]:hidden`}
             >
                 {/* Company Info - Single Line */}
                 {/* Company Info - Fixed Width for Alignment */}
-                <div className="flex items-center gap-3 flex-1 min-w-56 border-r border-gray-100 pr-3 mr-3 2xl:pr-4 2xl:mr-4 max-md:basis-full max-md:min-w-0 max-md:border-r-0 max-md:pr-0 max-md:mr-0">
+                <div className="flex items-center gap-3 flex-1 min-w-56 border-r border-gray-100 pr-3 mr-3 2xl:pr-4 2xl:mr-4 max-md:flex-none max-md:w-auto max-md:max-w-[78vw] max-md:min-w-0 max-md:sticky max-md:left-0 max-md:z-10 max-md:pl-3 max-md:bg-inherit">
                     <div className="relative">
                         <div
                             className={`w-7 h-7 rounded-md ${effectiveTheme.bg} ${effectiveTheme.text} flex items-center justify-center text-[10px] font-semibold flex-shrink-0 transition-colors cursor-context-menu`}
@@ -465,12 +465,12 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                 </div>
 
                 {/* Data Stack (Valuation + Quarters) - Single Line Row */}
-                <div className="flex items-center gap-3 2xl:gap-4 flex-shrink-0 max-md:shrink max-md:grow max-md:basis-[calc(100%-1.5rem)] max-md:min-w-0 max-md:flex-wrap max-md:gap-y-1.5">
+                <div className="flex items-center gap-3 2xl:gap-4 flex-shrink-0">
                     {/* Valuation Strip — a fixed-width column per metric so every
                         row lines up vertically. Cells render empty rather than
                         collapsing, otherwise a company missing (say) P/B would pull
                         everything after it out of alignment. */}
-                    <div className="grid grid-cols-[42px_38px_60px_56px_56px_56px_58px_84px] gap-1.5 2xl:grid-cols-[44px_40px_64px_60px_60px_60px_62px_90px] 2xl:gap-2 items-center flex-shrink-0 max-md:basis-full max-md:grid-cols-4 max-md:gap-x-2 max-md:gap-y-1.5">
+                    <div className="grid grid-cols-[42px_38px_60px_56px_56px_56px_58px_84px] gap-1.5 2xl:grid-cols-[44px_40px_64px_60px_60px_60px_62px_90px] 2xl:gap-2 items-center flex-shrink-0">
                         {/* Price — click to set a target. Turns green once the
                             price reaches it; clearing the target turns it off. */}
                         <div className="relative flex justify-end">
@@ -639,7 +639,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                     {/* Quarter Tabs */}
                     {/* Fixed width (room for two quarters) so the name column takes all the spare space and the figures line up on the right */}
                     {(
-                        <div className="flex items-center gap-1 pl-3 2xl:gap-1.5 2xl:pl-4 border-l border-gray-200 w-[150px] 2xl:w-[164px] flex-shrink-0 max-md:border-l-0 max-md:pl-0 max-md:w-auto">
+                        <div className="flex items-center gap-1 pl-3 2xl:gap-1.5 2xl:pl-4 border-l border-gray-200 w-[150px] 2xl:w-[164px] flex-shrink-0">
                             {quarters.map(q => (
                                 <div
                                     key={q.quarter}

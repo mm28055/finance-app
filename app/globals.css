@@ -26,6 +26,12 @@
   --text-muted: #9CA3AF;
 }
 
+/* The phone/desktop cut-off ("md"), raised from 768px so a phone turned sideways (about 850–930px
+   wide) gets the phone layout rather than a squeezed desktop one. Laptops are far wider. */
+@theme {
+  --breakpoint-md: 60rem;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
