@@ -336,7 +336,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
             >
                 {/* Company Info - Single Line */}
                 {/* Company Info - Fixed Width for Alignment */}
-                <div className="flex items-center gap-3 flex-1 min-w-56 border-r border-gray-100 pr-3 mr-3 2xl:pr-4 2xl:mr-4 max-md:flex-none max-md:w-auto max-md:max-w-[78vw] max-md:min-w-0 max-md:pl-3">
+                <div className="flex items-center gap-3 flex-1 min-w-56 border-r border-gray-100 pr-3 mr-3 2xl:pr-4 2xl:mr-4 max-md:flex-none max-md:w-[300px] max-md:min-w-0 max-md:pl-3">
                     <div className="relative">
                         <div
                             className={`w-7 h-7 rounded-md ${effectiveTheme.bg} ${effectiveTheme.text} flex items-center justify-center text-[10px] font-semibold flex-shrink-0 transition-colors cursor-context-menu`}
