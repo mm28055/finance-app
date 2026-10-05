@@ -106,7 +106,7 @@ export function ResultsFeed({ results, onCompany }: { results: ResultRow[]; onCo
 }
 
 /** A call takeaway, its lead-in ("Robust Top-line Growth:") in bold so a list of them can be skimmed. */
-function Takeaway({ text }: { text: string }) {
+export function Takeaway({ text }: { text: string }) {
     const m = text.match(/^([^:]{3,60}):\s+(.*)$/);
     return (
         <li className="text-[12px] text-gray-600 leading-relaxed">

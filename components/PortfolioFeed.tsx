@@ -2,7 +2,7 @@
 import React from 'react';
 import { ExternalLink, Search } from 'lucide-react';
 import { companyHref } from '@/lib/company-link';
-import type { ResultRow, CallRow, CallChangeRow } from './ResultsCallsFeeds';
+import { Takeaway, type ResultRow, type CallRow, type CallChangeRow } from './ResultsCallsFeeds';
 
 // The Filings panel's "My portfolio" tab: everything about the companies held, one card per holding —
 // dates coming up, what happened (filings, news and price moves, results, calls, call changes) and
@@ -14,7 +14,7 @@ export type Holding = {
     watching: { text: string; due: string }[];
     settled: { text: string; status: string; actual?: string; on?: string }[];
 };
-type Item = { date: string; kind: string; title: string; detail?: string; url?: string };
+type Item = { date: string; kind: string; title: string; detail?: string; points?: string[]; url?: string };
 type Loose = { company: string; inPortfolio?: boolean; [k: string]: any };
 
 const CALL_TONE: Record<string, string> = {
@@ -45,7 +45,8 @@ export function PortfolioFeed({ holdings, filings, news, results, calls, callCha
         })),
         ...calls.filter(c => c.company === company).map(c => ({
             date: c.date, kind: 'Call', title: `${c.quarter}${c.score !== null ? ` · ${c.score}/100` : c.read ? ` · ${c.read.read}` : ''}`,
-            detail: c.read?.change || c.points.join(' · '), url: c.source?.url,
+            // A special call's read is one line; a results call's takeaways are listed, each led by its bold heading.
+            detail: c.read?.change, points: c.read?.change ? undefined : c.points, url: c.source?.url,
         })),
         ...callChanges.filter(c => c.company === company).map(c => ({ date: c.date, kind: 'Call change', title: `${c.from ?? 'new'} → ${c.to ?? 'no longer covered'}`, detail: c.why })),
     ].filter(i => i.date >= since).sort((a, b) => b.date.localeCompare(a.date));
@@ -90,6 +91,11 @@ export function PortfolioFeed({ holdings, filings, news, results, calls, callCha
                                             {i.url && <a href={i.url} target="_blank" rel="noopener noreferrer" className="text-[#4A7AAF]" title="Open the source"><ExternalLink className="w-3 h-3" /></a>}
                                         </div>
                                         {i.detail && <p className="text-[11px] text-gray-600 leading-snug mt-0.5 line-clamp-3">{i.detail}</p>}
+                                        {i.points && i.points.length > 0 && (
+                                            <ul className="mt-1 flex flex-col gap-1 list-disc pl-4 marker:text-gray-300">
+                                                {i.points.map((p, k) => <Takeaway key={k} text={p} />)}
+                                            </ul>
+                                        )}
                                     </div>
                                 </li>
                             ))}
