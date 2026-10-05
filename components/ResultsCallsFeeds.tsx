@@ -105,6 +105,16 @@ export function ResultsFeed({ results, onCompany }: { results: ResultRow[]; onCo
     );
 }
 
+/** A call takeaway, its lead-in ("Robust Top-line Growth:") in bold so a list of them can be skimmed. */
+function Takeaway({ text }: { text: string }) {
+    const m = text.match(/^([^:]{3,60}):\s+(.*)$/);
+    return (
+        <li className="text-[12px] text-gray-600 leading-relaxed">
+            {m ? <><span className="font-semibold text-gray-800">{m[1]}:</span> {m[2]}</> : text}
+        </li>
+    );
+}
+
 export function CallsFeed({ calls, onCompany }: { calls: CallRow[]; onCompany?: (c: string) => void }) {
     const [kind, setKind] = React.useState<'results' | 'other'>('results');
     const [q, setQ] = React.useState('');
@@ -140,19 +150,20 @@ export function CallsFeed({ calls, onCompany }: { calls: CallRow[]; onCompany?: 
                                     {c.score !== null && (
                                         <span title="Gemini Pro's score of the call (out of 100)" className={`px-1.5 rounded border text-[10px] font-semibold ${c.score >= 80 ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : c.score >= 50 ? 'bg-amber-50 text-amber-700 border-amber-200' : 'bg-rose-50 text-rose-600 border-rose-200'}`}>{c.score}/100</span>
                                     )}
-                                    <span className="text-[10px] text-gray-400">{c.sector}</span>
+                                    <span className="text-[10px] text-gray-400 max-md:hidden">{c.sector}</span>
                                     {c.source && (
                                         <a href={c.source.url} target="_blank" rel="noopener noreferrer" className="ml-auto inline-flex items-center gap-1 text-[11px] text-[#4A7AAF] hover:underline"
                                             title={c.source.label === 'Transcript PDF' ? 'Our stored copy of the transcript (no exchange link on record)' : 'The transcript as the company filed it'}>
-                                            {c.source.label} <ExternalLink className="w-3 h-3" />
+                                            <span className="max-md:hidden">{c.source.label}</span> <ExternalLink className="w-3 h-3 max-md:w-3.5 max-md:h-3.5" />
                                         </a>
                                     )}
                                 </div>
                                 {c.read?.change && <p className="text-[12px] font-medium text-gray-800 mt-1 leading-snug">{c.read.change}</p>}
                                 {guide(c.guidance) && <p className="text-[11px] font-medium text-[#4A7AAF] mt-1">{guide(c.guidance)}</p>}
+                                {/* Two takeaways on a phone, up to four on a wider screen; the card has the rest. */}
                                 {c.points.length > 0 && (
-                                    <ul className="mt-1 flex flex-col gap-0.5">
-                                        {c.points.map((p, k) => <li key={k} className="text-[12px] text-gray-700 leading-snug">• {p}</li>)}
+                                    <ul className="mt-1.5 flex flex-col gap-1.5 list-disc pl-4 marker:text-gray-300 max-md:[&>li:nth-child(n+3)]:hidden">
+                                        {c.points.map((p, k) => <Takeaway key={k} text={p} />)}
                                     </ul>
                                 )}
                             </div>
