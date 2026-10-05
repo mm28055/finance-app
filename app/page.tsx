@@ -20,7 +20,7 @@ export default async function Home() {
       {/* Header */}
       <header className="max-w-6xl flex justify-between items-center mb-6 pb-4 border-b border-gray-200 max-md:flex-col max-md:items-start max-md:gap-3 max-md:mb-4">
         {/* Clicking the title reloads the dashboard fresh (and drops any ?company= from a link). */}
-        <a href="/" title="Refresh the dashboard" className="block hover:opacity-80">
+        <a href="/" title="Refresh the dashboard" className="block hover:opacity-80 max-md:hidden">
           <h1 className="text-lg font-semibold text-gray-800 tracking-tight">Manish Dashboard</h1>
           <p className="text-gray-400 text-xs">Real-Time Earning Intelligence</p>
         </a>

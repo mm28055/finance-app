@@ -33,7 +33,9 @@ export default function RootLayout({
       <body className={`${inter.className} ${inter.variable} bg-[#FAFBFC] text-gray-800 min-h-screen antialiased`}>
         <Providers>
           {/* Mobile Header */}
-          <div className="md:hidden fixed top-0 left-0 right-0 h-14 bg-white border-b border-gray-200 z-40 flex items-center px-4 justify-end">
+          <div className="md:hidden fixed top-0 left-0 right-0 h-14 bg-white border-b border-gray-200 z-40 flex items-center px-4 justify-between">
+            {/* The dashboard title sits here on a phone, beside the menu; it opens the dashboard fresh. */}
+            <a href="/" className="text-lg font-semibold text-gray-800 tracking-tight">Manish Dashboard</a>
             <button
               onClick={() => setIsSidebarOpen(true)}
               className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
