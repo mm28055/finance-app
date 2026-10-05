@@ -33,13 +33,16 @@ export function FilingsTabs({ filings, news, results = [], calls = [], callsComp
         const t = setTimeout(load, 1200);
         return () => clearTimeout(t);
     }, [tab, allCalls]);
-    const tabClass = (active: boolean) => `px-3 py-2 text-xs font-semibold border-b-2 whitespace-nowrap shrink-0 ${active ? 'text-[#4A7AAF] border-[#6B9FCC]' : 'text-gray-400 border-transparent hover:text-gray-600'}`;
+    const tabClass = (active: boolean) => `px-3 max-md:px-[5px] py-2 text-xs max-md:text-[11px] font-semibold border-b-2 whitespace-nowrap shrink-0 ${active ? 'text-[#4A7AAF] border-[#6B9FCC]' : 'text-gray-400 border-transparent hover:text-gray-600'}`;
     const tabs: [Tab, string][] = [['portfolio', 'Portfolio'], ['filings', 'Filings'], ['news', 'Market & Policy'], ['results', 'Results'], ['calls', 'Calls'], ['changes', 'Call changes']];
     return (
         <div>
-            <div className="flex gap-1 shadow-[inset_0_-1px_0_#e5e7eb] mb-4 overflow-x-auto overflow-y-hidden overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" role="tablist">
+            <div className="flex gap-1 max-md:gap-0 shadow-[inset_0_-1px_0_#e5e7eb] mb-4 overflow-x-auto overflow-y-hidden overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" role="tablist">
                 {tabs.map(([k, label]) => (
-                    <button key={k} role="tab" aria-selected={tab === k} className={tabClass(tab === k)} onClick={() => setTab(k)}>{label}</button>
+                    <button key={k} role="tab" aria-selected={tab === k} className={tabClass(tab === k)} onClick={() => setTab(k)}>
+                        {/* "Changes" on a phone, so all six tabs fit across the screen. */}
+                        {k === 'changes' ? <><span className="max-md:hidden">{label}</span><span className="md:hidden">Changes</span></> : label}
+                    </button>
                 ))}
             </div>
             {/* All stay mounted so each keeps its own filters when you switch. */}
