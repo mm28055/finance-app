@@ -336,36 +336,36 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
         <div className="space-y-4">
             {/* Toolbar: Search + Sort + Conviction Filter */}
             <div className="sticky max-md:static top-0 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 z-30 py-2.5 -mx-2 px-3 border-b border-gray-100 shadow-sm mb-4 flex flex-col gap-2">
-                {/* Row 1: Search + Sort */}
-                <div className="flex gap-3 items-center max-md:flex-wrap max-md:gap-2">
-                    <div className="relative flex-1 max-md:basis-full">
+                {/* Row 1: Search + Sort (one line on a phone too) */}
+                <div className="flex gap-3 items-center max-md:gap-2">
+                    <div className="relative flex-1 min-w-0">
                         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                         <input
                             type="text"
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            placeholder={`Search ${totalCompanies} companies...`}
-                            className="w-full pl-10 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-700 placeholder:text-gray-400 focus:outline-none focus:border-[#A5C4E2] focus:ring-2 focus:ring-[#D4E5F7] transition-all"
+                            placeholder={`Search ${totalCompanies} companies`}
+                            className="w-full pl-10 max-md:pl-9 pr-4 max-md:pr-2 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-700 placeholder:text-gray-400 focus:outline-none focus:border-[#A5C4E2] focus:ring-2 focus:ring-[#D4E5F7] transition-all"
                         />
                     </div>
                     <div className="flex items-center flex-shrink-0 bg-gray-50 border border-gray-200 p-1 rounded-lg">
                         <button
                             onClick={() => setSortBy('marketCap')}
-                            className={`px-2.5 py-1.5 text-xs font-medium rounded-md transition-all ${sortBy === 'marketCap' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-400 hover:text-gray-600'}`}
+                            className={`px-2.5 max-md:px-2 py-1.5 text-xs font-medium rounded-md transition-all ${sortBy === 'marketCap' ? 'bg-white text-gray-800 shadow-sm' : 'text-gray-400 hover:text-gray-600'}`}
                         >MCap</button>
                         <button
                             onClick={() => setSortBy('gemini')}
-                            className={`px-2.5 py-1.5 text-xs font-medium rounded-md transition-all flex items-center gap-1.5 ${sortBy === 'gemini' ? 'bg-[#E0F2FE] text-[#0284C7] shadow-sm' : 'text-gray-400 hover:text-gray-600'}`}
+                            className={`px-2.5 max-md:px-2 py-1.5 text-xs font-medium rounded-md transition-all flex items-center gap-1.5 ${sortBy === 'gemini' ? 'bg-[#E0F2FE] text-[#0284C7] shadow-sm' : 'text-gray-400 hover:text-gray-600'}`}
                         >
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#0EA5E9] animate-pulse"></span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#0EA5E9] animate-pulse max-md:hidden"></span>
                             AI Rank
                         </button>
                     </div>
                 </div>
 
-                {/* Row 2: Conviction Filter */}
-                <div className="flex items-center gap-1.5 max-md:flex-wrap max-md:gap-y-1.5">
-                    <span className="text-[9px] text-gray-400 font-medium uppercase tracking-wider mr-0.5">Conviction:</span>
+                {/* Row 2: Conviction Filter, and the other filters; on a phone one line that slides sideways */}
+                <div className="flex items-center gap-1.5 [&>*]:shrink-0 [&>*]:whitespace-nowrap max-md:overflow-x-auto max-md:overscroll-x-contain max-md:-mx-3 max-md:px-3 max-md:[scrollbar-width:none] max-md:[&::-webkit-scrollbar]:hidden">
+                    <span className="text-[9px] text-gray-400 font-medium uppercase tracking-wider mr-0.5 max-md:hidden">Conviction:</span>
                     {(['ALL', 'HIGH', 'MEDIUM', 'LOW'] as const).map(f => {
                         const active = convictionFilter === f;
                         let cls = '';
