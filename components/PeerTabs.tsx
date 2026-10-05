@@ -66,7 +66,7 @@ function Choice<T extends number>({ label, value, options, format, onChange }: {
 
 export function PriceAssumes({ companyId }: { companyId: string }) {
     const data = usePeers(companyId);
-    const [want, setWant] = React.useState(0.15);
+    const [want, setWant] = React.useState(0.20);
     const [exitChoice, setExitPe] = React.useState(20);
     // Holding period: 3 years unless the owner picked another here or in a sector's valuation table.
     const [years, setYearsState] = React.useState(3);
@@ -84,7 +84,7 @@ export function PriceAssumes({ companyId }: { companyId: string }) {
     const controls = (
         <div className="flex flex-wrap gap-x-4 gap-y-1.5 mb-3">
             <Choice label="Years you hold" value={years} options={HOLDS} format={v => `${v}`} onChange={setYears} />
-            <Choice label="Return you want" value={want} options={[0.12, 0.15, 0.18, 0.20]} format={v => `${Math.round(v * 100)}%`} onChange={setWant} />
+            <Choice label="Return you want" value={want} options={[0.12, 0.15, 0.18, 0.20, 0.25]} format={v => `${Math.round(v * 100)}%`} onChange={setWant} />
             <Choice label="P/E when you sell" value={exitChoice} options={EXIT_PES} format={v => (v === 0 ? 'today' : `${v}`)} onChange={setExitPe} />
         </div>
     );
