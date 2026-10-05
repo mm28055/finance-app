@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03T18:23:05.782Z",
+ "updated": "2026-10-05T21:52:02.603Z",
  "events": [
   {
    "company": "CEAT",
@@ -36,12 +36,36 @@
    "url": "https://nsearchives.nseindia.com/corporate/CEATLTD_30092026174121_SE_Letter_InviteEarningconferencecall15102026signed.pdf"
   },
   {
+   "company": "Cyient DLM",
+   "sector": "EMS & Electronics",
+   "kind": "results",
+   "date": "2026-10-15",
+   "quarter": "Q2 FY28",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_21528_WebXMLFile_20261005_144251052.xml"
+  },
+  {
+   "company": "LMW",
+   "sector": "Industrial Machinery",
+   "kind": "results",
+   "date": "2026-10-21",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_135_WebXMLFile_20261005_114352265.xml"
+  },
+  {
    "company": "Mahindra Holi.&Resor",
    "sector": "Hotels and Travels",
    "kind": "results",
    "date": "2026-10-21",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2895_WebXMLFile_20260929_154000829.xml"
+  },
+  {
+   "company": "Mahindra Holi.&Resor",
+   "sector": "Hotels and Travels",
+   "kind": "call",
+   "date": "2026-10-21",
+   "time": "4:30 pm",
+   "url": "https://nsearchives.nseindia.com/corporate/MHRIL_05102026160812_SE_Intimation_-_Earnings_Call_-_Q2.pdf"
   },
   {
    "company": "CIE Automotive",
@@ -100,6 +124,14 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_21426_WebXMLFile_20260930_205842548.xml"
   },
   {
+   "company": "Nocil",
+   "sector": "Chemicals",
+   "kind": "results",
+   "date": "2026-10-29",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_246_WebXMLFile_20261005_125713429.xml"
+  },
+  {
    "company": "Indegene",
    "sector": "Healthcare",
    "kind": "call",
@@ -115,6 +147,14 @@
    "date": "2026-10-30",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_24273_WebXMLFile_20261001_172542515.xml"
+  },
+  {
+   "company": "Aurionpro Solutions",
+   "sector": "Software",
+   "kind": "results",
+   "date": "2026-10-31",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2329_WebXMLFile_20261005_195325929.xml"
   },
   {
    "company": "Latent View Analytic",
