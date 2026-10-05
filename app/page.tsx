@@ -27,15 +27,15 @@ export default async function Home() {
         <div className="flex items-center gap-4 max-md:flex-wrap max-md:gap-2">
           <HelpButton />
           <SessionTodos todos={todos} />
-          {/* Page links as small square cards, as tall as the transcript cards beside them */}
-          <div className="flex items-stretch gap-3 max-md:flex-wrap max-md:gap-2">
-            <div className="flex items-stretch gap-2">
+          {/* Page links as small square cards, as tall as the transcript cards beside them; one row on a phone too */}
+          <div className="flex items-stretch gap-3 max-md:gap-1.5">
+            <div className="flex items-stretch gap-2 max-md:gap-1.5">
               {[
                 { href: '/filings', label: 'Filings', Icon: ScrollText },
                 { href: '/scorecard', label: 'Scorecard', Icon: Target },
                 { href: '/calendar', label: 'Calendar', Icon: CalendarDays },
               ].map(({ href, label, Icon }) => (
-                <a key={href} href={href} className="w-[60px] flex flex-col items-center justify-center gap-1 bg-white rounded-lg border border-gray-200 shadow-sm text-[10px] leading-none font-semibold text-gray-600 hover:border-[#6B9FCC] hover:text-[#4A7AAF] transition-colors">
+                <a key={href} href={href} className="w-[60px] max-md:w-[54px] max-md:py-1.5 flex flex-col items-center justify-center gap-1 bg-white rounded-lg border border-gray-200 shadow-sm text-[10px] leading-none font-semibold text-gray-600 hover:border-[#6B9FCC] hover:text-[#4A7AAF] transition-colors">
                   <Icon className="w-4 h-4 text-[#6B9FCC]" />
                   {label}
                 </a>
