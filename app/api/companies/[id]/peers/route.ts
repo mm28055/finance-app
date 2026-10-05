@@ -25,7 +25,7 @@ export async function GET(_req: NextRequest, { params }: { params: Promise<{ id:
         // refreshes in the background), so the tab opens at once; one with unread companies is not kept.
         const complete = all.every(c => c && !c.unread);
         return NextResponse.json(
-            { self, peers: peers.filter(Boolean), fromNote: set.fromNote },
+            { self, peers: peers.filter(Boolean), fromNote: set.fromNote, segment: set.segment },
             { headers: { 'Cache-Control': complete ? 'public, max-age=600, s-maxage=21600, stale-while-revalidate=86400' : 'no-store' } },
         );
     } catch {

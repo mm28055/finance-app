@@ -73,7 +73,9 @@ function noteFor(name: string): { note: SectorOverview; segment?: string } | nul
     return null;
 }
 
-/** The company and up to five rivals: same segment of the same note first, then the nearest in market value. */
+/** The company and up to five rivals: its segment of the note when that has at least two (only true peers, so
+ *  Deep Industries is not set against a lubricant maker and an ethanol distiller); otherwise the note's group,
+ *  same segment first, then the nearest in market value. */
 export async function peerSet(companyId: string) {
     const self = await prisma.company.findUnique({ where: { id: companyId }, select: { id: true, name: true, sector: true, marketCap: true } });
     if (!self) return null;
@@ -107,10 +109,12 @@ export async function peerSet(companyId: string) {
     if (pool.size < PEERS) for (const c of sectorCos) {
         if (!pool.has(c.id) && !delisted.has(c.name.trim().toLowerCase())) pool.set(c.id, { ...c, marketCap: size(c.marketCap), rank: 2 });
     }
-    const peers = [...pool.values()]
+    const sameSegment = [...pool.values()].filter(p => p.rank === 0);
+    const segmentOnly = sameSegment.length >= 2;
+    const peers = (segmentOnly ? sameSegment : [...pool.values()])
         .sort((a, b) => a.rank - b.rank || distance(a.marketCap) - distance(b.marketCap))
         .slice(0, PEERS);
-    return { self, peers, fromNote: !!found };
+    return { self, peers, fromNote: !!found, segment: segmentOnly ? found?.segment ?? null : null };
 }
 
 /** One company's comparison figures, from its Screener page (default view, as on its card). */

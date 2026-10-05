@@ -5,7 +5,7 @@ import type { CompanyFigures } from '@/lib/peers';
 
 // The company card's "Price assumes" and "Peers" tabs, both fed by /api/companies/[id]/peers.
 
-type PeerData = { self: CompanyFigures; peers: CompanyFigures[]; fromNote: boolean };
+type PeerData = { self: CompanyFigures; peers: CompanyFigures[]; fromNote: boolean; segment?: string | null };
 
 // One request per company per page view, shared by both tabs.
 const cache = new Map<string, Promise<PeerData>>();
@@ -266,7 +266,7 @@ export function PeerTable({ companyId }: { companyId: string }) {
             </div>
             <p className="text-[10px] text-gray-400 mt-2 leading-relaxed">
                 {cos.some(c => c.unread) && <span className="text-amber-600">Screener could not be read for {cos.filter(c => c.unread).map(c => displayCase(c.name)).join(', ')} just now; reopen the card in a minute. </span>}
-                {data.fromNote ? 'Rivals from the same group in the sector note, the same segment first, then closest in size.' : 'Rivals from the same sector, closest in size.'} Green marks the best in each row. Figures from each company&apos;s filings via Screener.
+                {data.segment ? `Rivals in the same segment of the sector note (${data.segment.split(' — ')[0]}).` : data.fromNote ? 'Rivals from the same group in the sector note, the same segment first, then closest in size.' : 'Rivals from the same sector, closest in size.'} Green marks the best in each row. Figures from each company&apos;s filings via Screener.
             </p>
         </div>
     );
