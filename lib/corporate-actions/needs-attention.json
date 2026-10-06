@@ -339,5 +339,530 @@
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
     "addedOn": "2026-10-01",
     "handled": "2026-10-04: Price check now Fits (needs ~13% vs my ~12%); only filing was the routine 26 Sep AGM (₹31.7cr captive solar). Kept wait: operating cash −4% of profit over filed years, 211-day cash cycle. Replaced hard-coded price prose with live placeholders."
+  },
+  {
+    "company": "Aurum Proptech",
+    "sector": "Platform Cos",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Rea India Pte. Ltd. (public holder) raised its stake from 5.53% to 24.89%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Paisalo Digital",
+    "sector": "Finance",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Octaspace Realcon Private Limited (public holder) raised its stake from 2.33% to 4.95%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Pricol",
+    "sector": "Auto Related",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Ganesh Consumer Prod",
+    "sector": "Food Products",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Jupiter Wagons",
+    "sector": "Industrial - Railway",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Neetu Yoshi",
+    "sector": "Forging",
+    "subject": "New Special call 25 Sep 2026",
+    "why": "Special call 25 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Maxvolt Energy Indus",
+    "sector": "EMS & Electronics",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Paramount Communications",
+    "sector": "Cables",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Texmaco Rail",
+    "sector": "Industrial - Railway",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Madhya Bharat Agro Products",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Solex Energy",
+    "sector": "Solar PV Cells EPC",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Inox Wind",
+    "sector": "Electrical Equipment",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Paisalo Digital",
+    "sector": "Finance",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Neogen Chemicals",
+    "sector": "Chemicals",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Refex Industries",
+    "sector": "Chemicals",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Sterling Tools",
+    "sector": "Auto Related",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "CIE Automotive",
+    "sector": "Auto Related",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Jeena Sikho Lifecare",
+    "sector": "Pharma Others",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Granules India",
+    "sector": "Pharma",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "CMR Green Tech",
+    "sector": "Mining & Metals Recycle",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "RateGain Travel Tech",
+    "sector": "Software",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "PSP Projects",
+    "sector": "Construction",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Black Box",
+    "sector": "Software",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Digilogic Systems",
+    "sector": "Aerospace defence",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Dynamic Cables",
+    "sector": "Cables",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Gulf Oil Lubricant",
+    "sector": "Oil",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Sheela Foam",
+    "sector": "Consumer Durables",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Somany Ceramics",
+    "sector": "Consumer Durables",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Northern ARC Capital",
+    "sector": "Finance",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "GPT Infraprojects",
+    "sector": "Construction",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "SPML Infra",
+    "sector": "Construction",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Afcons Infra",
+    "sector": "Construction",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Patel Engineering",
+    "sector": "Construction",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "GK Energy",
+    "sector": "Construction",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Shriram Properties",
+    "sector": "Realty",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Eldeco Housing & Ind",
+    "sector": "Realty",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "M & B Engineer.",
+    "sector": "Construction",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Manaksia Coated Metals",
+    "sector": "Iron and Steel",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "RMC Switchgears",
+    "sector": "Electrical Equipment",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Sri Lotus",
+    "sector": "Realty",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Ircon Intl.",
+    "sector": "Construction",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Raymond Realty",
+    "sector": "Realty",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Dharmaj Crop Guard",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Thomas Cook India",
+    "sector": "Travel Services",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Tarsons Products",
+    "sector": "Health Products",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Orient Bell",
+    "sector": "Consumer Durables",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Symphony",
+    "sector": "Consumer Durables",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Mobavenue Ai Tech",
+    "sector": "Software",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "LT Foods",
+    "sector": "Food Products",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Sunteck Realty",
+    "sector": "Realty",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Marathon NextgenReal",
+    "sector": "Realty",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Rites",
+    "sector": "Construction",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Ather Energy",
+    "sector": "Vehicles",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Insecticides (India)",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Krishana Phoschem",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Deep Industries",
+    "sector": "Oil",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Updater Services",
+    "sector": "Commercial Services",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Fineotex Chemical",
+    "sector": "Chemicals",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Welspun Enterp",
+    "sector": "Construction",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "SG Finserve",
+    "sector": "Finance",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Meghmani Organics",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Cosmic CRF",
+    "sector": "Industrial - Railway",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Gandhar Oil Refinery (India)",
+    "sector": "Oil",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "BLS International",
+    "sector": "Travel Services",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Knack Packaging",
+    "sector": "Packaging",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Godavari Power",
+    "sector": "Mining & Metals Recycle",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Puravankara",
+    "sector": "Realty",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Oswal Pumps",
+    "sector": "Pumps Comp & Eng",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Genus Power",
+    "sector": "Electrical Equipment",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Steelcast",
+    "sector": "Forging",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Nelcast",
+    "sector": "Forging",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Greaves Cotton",
+    "sector": "Pumps Comp & Eng",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Onward Technologies",
+    "sector": "Software",
+    "subject": "New General 30 Sep 2026",
+    "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "RHI Magnesita",
+    "sector": "Elect and Refrac",
+    "subject": "New General 28 Sep 2026",
+    "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Arihant Superstruct.",
+    "sector": "Realty",
+    "subject": "New General 29 Sep 2026",
+    "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-06"
   }
 ]
