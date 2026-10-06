@@ -177,6 +177,30 @@ export function CallsFeed({ calls, onCompany }: { calls: CallRow[]; onCompany?: 
     );
 }
 
+/** A call change's reason as short points: one per sentence or clause, with the condition for
+ *  changing back ("It goes back to follow once…") set apart in bold. */
+const BACK = /^(it goes back|it returns|returns to|back to|goes back|own it only|it moves back)/i;
+export function reasonPoints(why: string): { text: string; back: boolean }[] {
+    // Semicolons inside brackets ("(FY24 not shown; 38%)") stay put.
+    const kept = why.replace(/\([^()]*\)/g, m => m.replace(/;/g, '\u0000'));
+    return kept
+        .split(/(?<=[.!?])\s+(?=[A-Z₹])/)
+        .flatMap(s => s.split(/;\s+|,\s+but\s+(?=(?:it goes back|it returns|returns to|back to|own it only))/i))
+        .map(t => t.replace(/\u0000/g, ';').trim().replace(/\.$/, ''))
+        .filter(Boolean)
+        .map(t => ({ text: t.charAt(0).toUpperCase() + t.slice(1), back: BACK.test(t) }));
+}
+
+export function ReasonList({ why }: { why: string }) {
+    return (
+        <ul className="mt-1 flex flex-col gap-1 list-disc pl-4 marker:text-gray-300">
+            {reasonPoints(why).map((p, k) => (
+                <li key={k} className={`text-[12px] leading-relaxed ${p.back ? 'font-semibold text-gray-800' : 'text-gray-600'}`}>{p.text}</li>
+            ))}
+        </ul>
+    );
+}
+
 export type CallChangeRow = {
     date: string; company: string; sector: string; from: string | null; to: string | null;
     price: number | null; priceNow: number | null; why?: string; inPortfolio?: boolean;
@@ -231,7 +255,7 @@ export function CallChangesFeed({ changes, onCompany }: { changes: CallChangeRow
                                             </span>
                                         )}
                                     </div>
-                                    {c.why && <p className="text-[12px] text-gray-700 leading-snug mt-1">{c.why}</p>}
+                                    {c.why && <ReasonList why={c.why} />}
                                 </div>
                             );
                         })}

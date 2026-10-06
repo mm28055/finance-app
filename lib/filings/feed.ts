@@ -93,7 +93,10 @@ export async function filingsFeed(opts: { calls?: 'all' | 'portfolio' } = {}) {
     const prices = changesRaw.length ? new Map((await prisma.company.findMany({
         where: { name: { in: [...new Set(changesRaw.map(c => c.company))] } }, select: { name: true, currentPrice: true },
     })).map(c => [c.name, c.currentPrice ? Number(c.currentPrice) : null])) : new Map<string, number | null>();
-    const callChanges = changesRaw.map(c => ({ ...c, priceNow: prices.get(c.company) ?? null, inPortfolio: portfolio.has(c.company) }));
+    // The reason is the note's verdict line as written that day; its live figures ("{need:GNG Electronics|26}")
+    // keep the value they had then, which is the one the change was made on.
+    const asWritten = (t?: string) => t?.replace(/\{\w+:[^|}]*\|([^}]*)\}/g, '$1');
+    const callChanges = changesRaw.map(c => ({ ...c, why: asWritten(c.why), priceNow: prices.get(c.company) ?? null, inPortfolio: portfolio.has(c.company) }));
 
     // The portfolio tab: per holding, its dates in the next 30 days and its expectations (the ones due
     // next, and any marked met or missed in the last 90 days). The other lists carry inPortfolio already.
