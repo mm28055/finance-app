@@ -1091,24 +1091,27 @@ async function syncFinance() {
     const comparison = [];
     const noNse = [];
 
-    for (const company of companies) {
+    // One company's update. A database hiccup (Supabase closing the connection, as on 5 Oct 2026,
+    // when one dropped connection stopped the whole run) is retried twice; anything else, or a third
+    // failure, skips that company and the run carries on with the rest.
+    const syncOne = async (company) => {
         const row = nse ? await nseRowFor(company, nse) : null;
 
         // ── No NSE price (BSE-only listing, not traded, or NSE down): the full
         // Screener read, daily, as before.
         if (!row) {
             noNse.push(company);
-            if (NO_SCREENER) { stats.untouched++; continue; }
-            if (!filters.length && company.lastFinanceSync && now - company.lastFinanceSync < 12 * HOUR) { stats.skippedFresh++; continue; }
+            if (NO_SCREENER) { stats.untouched++; return; }
+            if (!filters.length && company.lastFinanceSync && now - company.lastFinanceSync < 12 * HOUR) { stats.skippedFresh++; return; }
             process.stdout.write(`${company.ticker.padEnd(20)}`);
             const data = await fetchScreener(company);
-            if (!data || !data.currentPrice) { stats.screenerFailed++; console.log('❌ Not found on Screener'); continue; }
+            if (!data || !data.currentPrice) { stats.screenerFailed++; console.log('❌ Not found on Screener'); return; }
             await writeFromScreener(company, data);
             stats.quartersFixed += await refreshStoredQuarters(company, data.quarters);
             stats.screenerDaily++;
             if (data.shareholding && data.shareholding.length) stats.shareholding++;
             console.log(`📊 Screener (no NSE price): ₹${data.currentPrice}`);
-            continue;
+            return;
         }
 
         // ── NSE price; Screener page on the company's weekly day.
@@ -1141,7 +1144,7 @@ async function syncFinance() {
         comparison.push(r);
         for (const n of out.notes) console.log(`   ${company.ticker}: ${n}`);
 
-        if (DRY) { stats.nse++; continue; }
+        if (DRY) { stats.nse++; return; }
 
         if (scr && scr.shareholding && scr.shareholding.length) {
             // A quarter we have not stored before (and not the company's first load): check the named holders.
@@ -1170,6 +1173,18 @@ async function syncFinance() {
             },
         });
         stats.nse++;
+    };
+    const dropped = (e) => ['P1001', 'P1002', 'P1017'].includes(e?.code) || /closed the connection|Can't reach database|Connection terminated/i.test(e?.message || '');
+    const failed = [];
+    for (const company of companies) {
+        for (let attempt = 1; ; attempt++) {
+            try { await syncOne(company); break; }
+            catch (e) {
+                if (attempt < 3 && dropped(e)) { console.warn(`   ⚠️ ${company.ticker}: database connection dropped, retrying`); await new Promise(r => setTimeout(r, 5000 * attempt)); continue; }
+                failed.push(company.ticker); console.warn(`   ❌ ${company.ticker} not updated: ${(e?.message || String(e)).trim().split(/\r?\n/).pop()}`);
+                break;
+            }
+        }
     }
 
     printComparison(comparison);
@@ -1185,6 +1200,9 @@ async function syncFinance() {
     console.log(`   Left untouched (no NSE, Screener off): ${stats.untouched}`);
     console.log(`   Shareholding saved:         ${stats.shareholding}`);
     console.log(`   Big holder changes flagged: ${stats.holderFlags || 0}`);
+    console.log(`   Not updated (errors):       ${failed.length}${failed.length ? ` — ${failed.join(', ')}` : ''}`);
+    // A handful of misses is a bad page or two; many means something is wrong, so fail the run visibly.
+    if (failed.length > 25) process.exitCode = 1;
     if (DRY || NO_SCREENER) {
         const dueToday = companies.filter(c => !noNse.includes(c) && screenerDue(c, weekday, now)).length;
         console.log(`   (A normal run today would read Screener for ${dueToday} weekly + ${noNse.length} without an NSE price.)`);
