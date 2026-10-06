@@ -9,7 +9,7 @@ import { useHoverOpen } from '@/lib/hover-open';
 // company's Screener page when opened (see /api/companies/[id]/history and /financials).
 
 // Bump when the shape of /financials changes, so browsers never reuse an older copy.
-const DATA_VERSION = 18;
+const DATA_VERSION = 19;
 
 type Tab = 'history' | 'assumes' | 'peers' | 'quarters' | 'profit-loss' | 'balance-sheet' | 'cash-flow' | 'ratios' | 'ratios-1';
 type Row = { label: string; src: string; expandable: boolean; values: (string | null)[]; /** The figures a ratio is made from, shown above it (open by default, can be closed). */ parts?: { label: string; values: (string | null)[] }[]; /** A section heading shown above this row. */ heading?: string };
@@ -46,6 +46,8 @@ const HINTS: Record<string, string> = {
     'Net profit margin': 'Net profit ÷ sales (income, for a lender): how much of each ₹100 of sales is left as profit after all costs, interest and tax.',
     // Ratio tab
     'Debt to equity': 'Borrowings ÷ shareholders\' equity. Under 1 is comfortable for most businesses.',
+    'Cash and investments (₹cr)': 'Cash and bank balances plus the Investments line of the balance sheet, where most companies park spare money in mutual funds and deposits. Investments can also hold stakes in other companies, which are not spare cash.',
+    'Borrowings (₹cr)': 'Loans and other borrowings on the balance sheet (including lease liabilities where Screener counts them).',
     'Net debt to EBITDA': 'Borrowings less cash and bank balances (investments not deducted), ÷ operating profit: years of operating profit needed to repay debt. Under 2x is comfortable; above 3–4x is stretched.',
     'Interest cover': 'Operating profit ÷ interest. Above 3x is comfortable.',
     'Operating cash flow before tax (₹cr)': 'Cash from operations before tax paid. The Cash flow tab shows it after tax.',

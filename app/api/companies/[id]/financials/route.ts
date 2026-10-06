@@ -117,6 +117,14 @@ async function debtAndCashRatios(html: string, consolidated: boolean, key: strin
             if (debt - c <= 0) return 'Net cash';
             return op <= 0 ? 'Loss' : x((debt - c) / op);
         })],
+        // The company's spare money in one figure: Screener files cash under Other Assets and money parked in
+        // mutual funds and deposits under Investments (SJS: ₹27cr and ₹229cr at March 2026), so neither line
+        // alone shows it. Investments can include stakes in other companies, which the hint says.
+        ['Cash and investments (₹cr)', per(y => {
+            const c = num(cash?.[y]), inv = cell(bs, 'Investments', y);
+            return lender || (c === null && inv === null) ? null : crore((c ?? 0) + (inv ?? 0));
+        })],
+        ['Borrowings (₹cr)', per(y => (lender ? null : crore(cell(bs, 'Borrowings', y))))],
         ['Interest cover', per(y => {
             const op = cell(pl, 'Operating Profit', y), int = cell(pl, 'Interest', y);
             if (lender || op === null || int === null) return null;
