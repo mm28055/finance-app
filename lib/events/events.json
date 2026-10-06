@@ -1,6 +1,23 @@
 {
- "updated": "2026-10-05T21:52:02.603Z",
+ "updated": "2026-10-06T20:14:02.428Z",
  "events": [
+  {
+   "company": "Transformers & Rect",
+   "sector": "Electrical Transformers",
+   "kind": "results",
+   "date": "2026-10-13",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2699_WebXMLFile_20261006_125821117.xml"
+  },
+  {
+   "company": "Transformers & Rect",
+   "sector": "Electrical Transformers",
+   "kind": "call",
+   "date": "2026-10-13",
+   "time": "5:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/TRIL_06102026171606_IntimationofEarningCallQ22027.pdf"
+  },
   {
    "company": "CEAT",
    "sector": "Tyres",
@@ -44,6 +61,14 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_21528_WebXMLFile_20261005_144251052.xml"
   },
   {
+   "company": "Crompt.Greaves Cons.",
+   "sector": "Consumer Durables",
+   "kind": "results",
+   "date": "2026-10-16",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_13786_WebXMLFile_20261006_181021942.xml"
+  },
+  {
    "company": "LMW",
    "sector": "Industrial Machinery",
    "kind": "results",
@@ -54,18 +79,18 @@
   {
    "company": "Mahindra Holi.&Resor",
    "sector": "Hotels and Travels",
-   "kind": "results",
-   "date": "2026-10-21",
-   "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2895_WebXMLFile_20260929_154000829.xml"
-  },
-  {
-   "company": "Mahindra Holi.&Resor",
-   "sector": "Hotels and Travels",
    "kind": "call",
    "date": "2026-10-21",
    "time": "4:30 pm",
    "url": "https://nsearchives.nseindia.com/corporate/MHRIL_05102026160812_SE_Intimation_-_Earnings_Call_-_Q2.pdf"
+  },
+  {
+   "company": "Mahindra Holi.&Resor",
+   "sector": "Hotels and Travels",
+   "kind": "results",
+   "date": "2026-10-21",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2895_WebXMLFile_20260929_154000829.xml"
   },
   {
    "company": "CIE Automotive",
@@ -84,6 +109,14 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1885_WebXMLFile_20260929_175834219.xml"
   },
   {
+   "company": "Avantel",
+   "sector": "Aerospace defence",
+   "kind": "results",
+   "date": "2026-10-26",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_23772_WebXMLFile_20261006_132123841.xml"
+  },
+  {
    "company": "Sumitomo Chemical India",
    "sector": "Agrochemical & Fertilizers",
    "kind": "results",
@@ -100,12 +133,28 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_25353_WebXMLFile_20260928_181114529.xml"
   },
   {
+   "company": "Manba Finance",
+   "sector": "Finance",
+   "kind": "results",
+   "date": "2026-10-27",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_23407_WebXMLFile_20261006_100637619.xml"
+  },
+  {
    "company": "Medplus",
    "sector": "Retail",
    "kind": "results",
    "date": "2026-10-27",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_19887_WebXMLFile_20260928_153514362.xml"
+  },
+  {
+   "company": "Apar Inds.",
+   "sector": "Electrical Equipment",
+   "kind": "results",
+   "date": "2026-10-29",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2205_WebXMLFile_20261006_153407035.xml"
   },
   {
    "company": "Blue Star",
@@ -147,6 +196,15 @@
    "date": "2026-10-30",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_24273_WebXMLFile_20261001_172542515.xml"
+  },
+  {
+   "company": "Smartworks Coworking",
+   "sector": "Commercial Services",
+   "kind": "call",
+   "date": "2026-10-30",
+   "time": "2:30 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/SMARTWORKS_06102026202703_Announcement_Regulation_30_Investor_meet_Sept_2026.pdf"
   },
   {
    "company": "Aurionpro Solutions",
