@@ -398,7 +398,7 @@ export const forging: SectorOverview = {
                         ['Steelcast', 'Debt-free; ₹120cr foundry paid over two years from own cash; no rights issue', 'Net cash ₹96cr; CARE counts ₹98cr of liquid funds'],
                         ['MM Forgings', 'Term debt held at ₹750–800cr ‘plus 50’; capex about ₹150cr; land money to working capital, capex or debt; a share sale (QIP) ‘at an appropriate time’', 'Borrowings ₹1,235cr; net debt ₹1,010cr (March)'],
                         ['Synergy Green', 'Long-term debt to peak at ₹175–180cr; ₹25cr of land from own cash; equity raise for the next plant in 2028', 'Total debt ₹243cr, net debt ~₹234cr, net worth ₹101cr (June)'],
-                        ['Nelcast', 'Term loans falling; capex ₹30–35cr a year; may sell surplus Tamil Nadu land (call not verifiable)', 'Net debt ₹172cr; debt 0.4 times equity (March)'],
+                        ['Nelcast', 'Term loans falling; capex ₹30–35cr a year, plus a ₹75cr machining division at Gudur approved on 5 October 2026 (cash and borrowing, no date given); may sell surplus Tamil Nadu land (call not verifiable)', 'Net debt ₹172cr; debt 0.4 times equity (March)'],
                         ['Neetu Yoshi', 'Debt-free; ₹27.48cr of warrants for track working capital; receivables about ₹20cr in June (H2 FY26 call)', 'Net cash ₹9cr (March)'],
                     ],
                     note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. Neetu Yoshi reports half-yearly; MM Forgings held no Q4 FY26 call.',
