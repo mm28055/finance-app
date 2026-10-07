@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04",
+ "updated": "2026-10-07",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -6702,6 +6702,18 @@
    "capacityAdd": "Large-casting programmes worth ₹200–250cr a year at full volume (about +15–19% on FY26 sales); plant ran at 21% in Q1 FY27"
   },
   {
+   "id": "nelcast-machining",
+   "company": "Nelcast",
+   "sector": "Forging",
+   "name": "Machining division at Gudur",
+   "what": "In-house machining and assembly of its own castings at Gudur, Andhra Pradesh, so it can sell finished parts rather than raw castings",
+   "cost": "about ₹75cr, from internal cash and borrowing",
+   "adds": "Value-added machined and assembled parts; no capacity or revenue figure given",
+   "status": "planned",
+   "source": "NSE filing 5 Oct 2026 (board approval); no start date given",
+   "updatedOn": "2026-10-07"
+  },
+  {
    "id": "synergy-green-45kt-foundry",
    "company": "Synergy Green",
    "sector": "Forging",
@@ -9470,8 +9482,8 @@
    "expectedStart": "Q1 FY28",
    "adds": "5–6 GWh in FY28 and 12–14 GWh in FY29 at a 7–8% margin; ₹700–800cr of operating profit at 16 GWh",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026); was 'from March 2027' on the Q4 FY26 call",
-   "updatedOn": "2026-09-29",
+   "source": "Q1 FY27 call (Aug 2026); was 'from March 2027' on the Q4 FY26 call; environmental clearance for the factory building in Maharashtra received (NSE filing 6 Oct 2026)",
+   "updatedOn": "2026-10-07",
    "capacityAdd": "20 GWh a year of battery-storage assembly (new business)"
   },
   {

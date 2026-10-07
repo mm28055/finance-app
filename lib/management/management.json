@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04",
+ "updated": "2026-10-07",
  "companies": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -4297,7 +4297,7 @@
    "company": "Remsons Industries",
    "sector": "Auto Related",
    "style": "Promoter-run",
-   "styleNote": "Run by the Kejriwal family. Krishna Kejriwal has been Chairman and MD since 1976; his wife Chand Kejriwal and son Rahul Kejriwal are whole-time directors. A hired CEO runs operations: Amit Srivastava left on 4 September 2026 and Rahul Desai (ex-CEO of CIE India) took over from 3 August 2026. Promoters own 62.83% (June 2026 shareholding filing).",
+   "styleNote": "Run by the Kejriwal family. Krishna Kejriwal has been Chairman and MD since 1976; his wife Chand Kejriwal is a whole-time director; their son Rahul Kejriwal, also a whole-time director, died on 6 October 2026 after a brief illness. A hired CEO runs operations: Amit Srivastava left on 4 September 2026 and Rahul Desai (ex-CEO of CIE India) took over from 3 August 2026. Promoters own 62.83% (June 2026 shareholding filing).",
    "people": [
     {
      "name": "Krishna Kejriwal",
@@ -4310,7 +4310,7 @@
     },
     {
      "name": "Rahul Kejriwal",
-     "role": "Whole-time Director",
+     "role": "Whole-time Director (died 6 October 2026)",
      "since": "Whole-time director since 2016",
      "family": true,
      "relation": "Son of CMD Krishna Kejriwal and Whole-time Director Chand Kejriwal",
@@ -4341,15 +4341,16 @@
      "bio": "He is the company's CFO and a key managerial person, and signs its financial statements. The annual reports give no further background."
     }
    ],
-   "changes": "CEO Amit Srivastava resigned on 18 June 2026 and left on 4 September 2026; Rahul Desai became CEO on 3 August 2026.",
+   "changes": "Whole-time Director Rahul Kejriwal (promoter family) died on 6 October 2026 after a brief illness. CEO Amit Srivastava resigned on 18 June 2026 and left on 4 September 2026; Rahul Desai became CEO on 3 August 2026.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_32049_REMSONSIND_2025_2026_A_9325537_18092026114718.pdf",
     "https://nsearchives.nseindia.com/annual_reports/AR_27839_REMSONSIND_2024_2025_A_8241556_28082025193308.pdf",
     "https://nsearchives.nseindia.com/corporate/REMSONSIND_27072026130809_CEO27072026.pdf",
     "https://nsearchives.nseindia.com/corporate/REMSONSIND_19062026130910_CEO.pdf",
-    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1695027_17072026023346_WEB.xml"
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1695027_17072026023346_WEB.xml",
+    "https://nsearchives.nseindia.com/corporate/REMSONSIND_06102026154212_Intimation_of_demise_of_Mr_Rahul_Kejriwal.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-07"
   },
   {
    "company": "Gabriel India",
@@ -29010,7 +29011,7 @@
    "company": "Sri Lotus",
    "sector": "Realty",
    "style": "Promoter-run",
-   "styleNote": "Founded and run by film producer Anand Pandit, Chairman & MD, who personally owns 72.02% (March 2026). His daughter Ashka Pandit is Whole-time Director and his wife Roopa Pandit is a non-executive director; all three are named promoters. Ashka's husband Paarth Chheda, now President of Business Development, is proposed as an Executive Director from 1 October 2026. A hired CEO and CFO run finance and operations.",
+   "styleNote": "Founded and run by film producer Anand Pandit, Chairman & MD, who personally owns 72.02% (March 2026). His daughter Ashka Pandit is Whole-time Director and her husband Paarth Chheda an Executive Director from 1 October 2026; Anand's wife Roopa Pandit left the board the same day. A hired CEO and CFO run finance and operations.",
    "people": [
     {
      "name": "Anand Kamalnayan Pandit",
@@ -29032,12 +29033,12 @@
     },
     {
      "name": "Paarth Chheda",
-     "role": "President, Business Development (proposed Executive Director from 1 October 2026)",
+     "role": "Executive Director (from 1 October 2026); President, Business Development",
      "since": "With Lotus Developers for almost a decade",
      "family": true,
      "relation": "Son-in-law of Anand and Roopa Pandit; husband of Ashka Pandit",
      "stake": "nil (FY26 AGM notice)",
-     "bio": "Graduated as an architect from the Illinois Institute of Technology, Chicago. He has worked at Lotus Developers for almost ten years, bringing in new technology, design and value additions across its projects, and heads business development as senior management. He is a designated partner in Caproot Ventures LLP. The 2026 AGM is voting on his appointment as an Executive Director from 1 October 2026."
+     "bio": "Graduated as an architect from the Illinois Institute of Technology, Chicago. He has worked at Lotus Developers for almost ten years, bringing in new technology, design and value additions across its projects, and heads business development as senior management. He is a designated partner in Caproot Ventures LLP. Shareholders approved him as an Executive Director for five years from 1 October 2026 at the 29 September 2026 AGM."
     },
     {
      "name": "Sanjay Kumar Jain",
@@ -29054,13 +29055,14 @@
      "bio": "A chartered accountant with a B.Com from the University of Rajasthan and over 18 years in finance. He was named among CEO Insights magazine's top 10 finance heads of 2024. The company has not published his earlier employers."
     }
    ],
-   "changes": "No KMP changes announced since the annual report. Paarth Chheda (son-in-law of the promoter) is proposed as an Executive Director from 1 October 2026, which would add a fourth family member to the board.",
+   "changes": "Paarth Chheda (son-in-law of the promoter) became an Executive Director on 1 Oct 2026 after shareholders approved him at the 29 Sep AGM; Roopa Pandit (promoter, non-executive director) resigned on 1 Oct 2026 citing personal commitments. Three family members remain on the board.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_31676_LOTUSDEV_2025_2026_A_6858355_07092026141151.pdf",
     "https://www.business-standard.com/markets/ipo/bollywood-backed-realtor-sri-lotus-developers-files-drhp-for-rs-792-cr-ipo-124122600853_1.html",
-    "https://www.chittorgarh.com/article/sri-lotus-developer-promoter-anand-pandit/616/"
+    "https://www.chittorgarh.com/article/sri-lotus-developer-promoter-anand-pandit/616/",
+    "https://nsearchives.nseindia.com/corporate/SRILOTUS_01102026152748_IntimationReg30.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-07"
   },
   {
    "company": "Max Estates",
@@ -34171,7 +34173,7 @@
     },
     {
      "name": "Gaurav Kumar",
-     "role": "Chief Financial Officer (leaving; left the board on 6 August 2026)",
+     "role": "Chief Financial Officer until 6 October 2026 (left; no successor named)",
      "since": "Joined 2004; CFO since May 2015; Whole-time Director June 2024 to August 2026",
      "family": false,
      "stake": "Not disclosed in the FY26 annual report; granted 267,948 stock options in FY26",
@@ -34218,7 +34220,7 @@
      "bio": "Has more than two decades of HR leadership in FMCG, telecom, pharmaceuticals and consulting. Before Apollo she was Head of HR for the Southeast Asia cluster at Mondelez International, and earlier HR Director for Mondelez India, where she worked on a business turnaround. She runs Apollo's global people strategy."
     }
    ],
-   "changes": "CFO and Whole-time Director Gaurav Kumar resigned from the board on 6 August 2026 and will stay as CFO only until a successor is found. Rajeev Kumar Sinha joined the board as a Whole-time Director on 13 August 2026. Chief Quality & Safety Officer Yoichi Sato retired in June 2026. Independent director Berjis Desai resigned in April 2026.",
+   "changes": "CFO Gaurav Kumar, who left the board on 6 August 2026, resigned as CFO from the close of business on 6 October 2026 'to pursue new personal and professional challenges'; no successor has been named. Rajeev Kumar Sinha joined the board as a Whole-time Director on 13 August 2026. Chief Quality & Safety Officer Yoichi Sato retired in June 2026. Independent director Berjis Desai resigned in April 2026.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_29578_APOLLOTYRE_2025_2026_A_11077364_06072026125039.pdf",
     "https://nsearchives.nseindia.com/corporate/APOLLOTYRE1_06082026181034_OutcomeofBoardMeeting.pdf",
@@ -34229,9 +34231,10 @@
     "https://www.tyrepress.com/2015/05/apollo-tyres-promotes-gaurav-kumar-to-cfo/",
     "https://www.autocarpro.in/news-international/apollo-tyres-appoints-daniele-lorenzetti-chief-technology-officer-22066",
     "https://rubberworld.com/apollo-tyres-appoints-parmeshwaran-iyer-as-chief-supply-chain-officer/",
-    "https://www.tyrepress.com/2025/07/apollo-tyres-appoints-ramaswami-chro/"
+    "https://www.tyrepress.com/2025/07/apollo-tyres-appoints-ramaswami-chro/",
+    "https://nsearchives.nseindia.com/corporate/APOLLOTYRE1_06102026170644_intimationlettercfo.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-07"
   },
   {
    "company": "CEAT",

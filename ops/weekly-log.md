@@ -80,3 +80,41 @@ Pushed to master; all checks passed (typecheck clean, "All notes pass."). Before
 **News pass, 30 September – 2 October:** 16 entries with a clear reason; none was very important, so no note changed. Turtlemint fell again on IRDAI's proposed commission caps, but those are still a draft (comments close 25 October) and the note already covers them. DGTR's recommended anti-dumping duty on Chinese HFC blends (GFL, Navin, Stallion) is only a recommendation until the finance ministry notifies it. The rest were price moves, block deals and fund buying (H-acid prices for Kiri and Shree Pushkar; Rites in Uruguay; Ircon, Molbio, Innova, AXISCADES, Nirlon, Swiggy, Shadowfax).
 
 **Results pass:** no unreviewed results.
+
+## 7 October 2026
+
+Pushed to master; all checks passed (typecheck clean, "All notes pass.").
+
+**Follow-ups handled: 40 of 78 (the limit for one run). 38 stay open.** 35 are AGM follow-ups that will be done in the next runs. Three are waiting on events that have not happened yet: HEG Graphite has not listed; SKF India's July–September results are not filed; and Ganesh Benzoplast's ₹1,154cr sale to the KKR-backed buyer still needs shareholder approval.
+
+**Calls changed:** none.
+- **Pricol** (Auto Related) stays **follow**, even though its price now fits. The note said I would not own it until its 2025 auditor's exit is explained. No filing in six weeks explains it, and the Q2 margin is not out yet.
+
+**Holder changes:**
+- **Aurum PropTech**: Rea India's jump from 5.5% to 24.9% is the Housing.com deal closing. On 29 September Aurum issued 1.98cr new shares (₹458cr) to pay for it, taking its share count from 7.68cr to 9.66cr. The note and card now say the deal is done. It stays pass.
+- **Paisalo Digital**: no filing explains why Octaspace Realcon rose from 2.3% to 5.0%. The change that matters is that more foreign bonds turned into shares: 2.59cr new shares on 1 October, about 2.8% more. The card now says so.
+
+**AGM and investor-call follow-ups (36 handled).** Most of the AGM records the companies filed contain no guidance. Where there was something new, I added it:
+- **Solex Energy**: plans to spend about ₹4,000cr over FY27–FY30. That covers 2.2 GW of cells by FY28 (5.2 GW by early FY29), a first 5 GWh of battery storage by FY29, and units in Europe and the USA. The chairman also spoke of "₹4,500cr revenue potential by FY28". This is about four times the ₹1,050cr cell plant, which is still not funded. Added as a sales driver.
+- **Granules India**: at a webinar on 29 September it set out about ₹2,000cr of capex over three to four years. Its peptide arm targets about US$50m of yearly revenue in three years and over US$100m in five. It has filed two sole first-to-file US applications and plans four or five more.
+- **RateGain**: at the AGM the chairman named a goal of US$1bn of revenue, with no date. He expects net cash to return within 30 months of the Sojern deal. The new CFO, Chetan Garg, was already in the management data.
+- **Jupiter Wagons**: won a ₹100cr battery-storage project in Uttarakhand. It repeated its targets of ₹1,000cr of storage orders by FY27 and the storage arm turning EBITDA-positive in Q3 FY27.
+- **Ganesh Consumer**: sold its Hyderabad contract-milling unit for ₹32.5cr on 1 October (1.4% of revenue). The card no longer describes the job work as ongoing.
+- **GPT Infraprojects**: its South African unit won a five-year sleeper contract from Transnet worth about ₹385cr, roughly a year's sleeper revenue every year.
+- **Sri Lotus**: the promoter's son-in-law, Paarth Chheda, became an Executive Director on 1 October, and Roopa Pandit left the board. Management data updated.
+- Nothing new to add: Paramount, Texmaco, Neetu Yoshi, Maxvolt, Madhya Bharat (its Dhule acid plant was already recorded), Inox Wind, Neogen (its ₹600cr share sale was already in the note), Refex, Sterling Tools, CIE, Jeena Sikho, CMR Green, PSP, Black Box, Digilogic, Dynamic Cables, Gulf Oil, Sheela Foam, Northern Arc, SPML, Afcons, Somany, Patel Engineering, GK Energy (its battery award was already in the card), Shriram Properties, Eldeco, M&B, Manaksia Coated, RMC Switchgears.
+
+**Filings pass, 4–6 October** (notes corrected where the filing made them wrong):
+- **Apollo Tyres**: CFO Gaurav Kumar left on 6 October, and no successor has been named. Note, card and management data updated from "leaving" to "left". It stays own.
+- **Ola Electric**: founder Bhavish Aggarwal pledged 4.3% of the company to fund his part of the ₹1,000cr rights issue. The company says he has no other pledges. Added to the card. It stays avoid.
+- **Remsons**: whole-time director Rahul Kejriwal, the promoter's son, died on 6 October. Management data updated.
+- **H.G. Infra**: the ₹94cr tax notice the card mentioned was dropped in full. Card corrected.
+- **Nelcast**: the board approved a ₹75cr machining division at Gudur. Added to the projects and to the note's capex row; no start date was given.
+- **Juniper Hotels**: signed a binding agreement for the ₹248cr Novotel Imagicaa. The note already counted it; the card now says it is signed. **Godavari Power**: received environmental clearance for its 20 GWh battery factory; the project is updated.
+- Logged only: Max Estates (H1 pre-sales ₹3,200cr; it gives no pre-sales guide); Raymond Realty (Q2 pre-sales +98% to ₹902cr, with ₹4,100cr of launches planned for H2); Mahindra Lifespace (₹3,500cr Pune launch); Sunteck (Borivali land); Gabriel (a 50:50 seating joint venture with FORVIA, ₹50cr); KIMS (51% of a Kakinada hospital for ₹80cr); Dhanuka (₹55.5cr of old entry-tax demands, to be challenged); Virtuoso (a non-binding ₹1,050cr MoU with Maharashtra).
+- Orders logged: Capacite ₹369cr (Chennai Metro), Transrail ₹412cr, Aurionpro ₹150cr, Solex ₹194cr and ₹76cr, Laser Power's first HTLS order of ₹73cr.
+- Routine and ignored: Q2 business updates (HDFC Bank, Honasa, Metropolis, OnEMI, Sedemac), Zydus's US generic launch, Narayana's new managed hospital, and Sai Parenterals' ₹15cr purchase.
+
+**News pass, 3–6 October:** 11 entries had a clear reason. None was very important, so no note changed. The US opened an anti-dumping investigation into Chinese amines (Alkyl Amines +13%, Balaji Amines +17%). That is only the start of a case, not a duty. The rest: Genus repeating its FY27 guide, Honasa's and V2 Retail's Q2 updates, Raymond's property bookings, block deals in MobiKwik, Newquest selling Shadowfax shares, the Kamaths buying 6.7% of Viceroy Hotels, and OPEC+ holding output (Chennai Petroleum).
+
+**Results pass:** no unreviewed results.
