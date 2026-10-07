@@ -31736,6 +31736,856 @@
    "ifMissed": "Stays pass",
    "id": "shalby-q2fy27-6",
    "text": "Borrowings flat or falling at September (interest already ₹41cr a year, up from ₹8cr in FY22)"
+  },
+  {
+   "id": "amara-raja-energy-shift-1",
+   "company": "Amara Raja Energy",
+   "sector": "Auto Related",
+   "text": "Storage (BESS) plant starts production by March 2027, with first named customers or orders",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "amara-raja-energy-shift-2",
+   "company": "Amara Raja Energy",
+   "sector": "Auto Related",
+   "text": "New-energy revenue at least ₹1,100cr in FY27 (₹809cr in FY26)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "amara-raja-energy-shift-3",
+   "company": "Amara Raja Energy",
+   "sector": "Auto Related",
+   "text": "Giga-1 cell line in commercial production by September 2027",
+   "due": "Q2 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "amara-raja-energy-shift-4",
+   "company": "Amara Raja Energy",
+   "sector": "Auto Related",
+   "text": "Storage plant running at about a 5 GWh yearly rate within seven months of start",
+   "due": "Q3 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "amara-raja-energy-shift-5",
+   "company": "Amara Raja Energy",
+   "sector": "Auto Related",
+   "text": "New energy at least 12% of FY28 consolidated revenue",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "deepak-nitrite-shift-1",
+   "company": "Deepak Nitrite",
+   "sector": "Chemicals",
+   "text": "Advanced Intermediates revenue of at least ₹3,000cr for FY27, with the new intermediates in regular supply from January 2027",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "deepak-nitrite-shift-2",
+   "company": "Deepak Nitrite",
+   "sector": "Chemicals",
+   "text": "Phenolics EBIT margin at or above about 13% (its FY26 level) once war-time prices fade",
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "deepak-nitrite-shift-3",
+   "company": "Deepak Nitrite",
+   "sector": "Chemicals",
+   "text": "Polycarbonate cost still ₹11,500cr and start-up still H2 FY29 on every call; about ₹1,500cr spent in FY27",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "deepak-nitrite-shift-4",
+   "company": "Deepak Nitrite",
+   "sector": "Chemicals",
+   "text": "First named strategic tie-up for polycarbonate compounds, which management said would come 'soon'",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "deepak-nitrite-shift-5",
+   "company": "Deepak Nitrite",
+   "sector": "Chemicals",
+   "text": "Polycarbonate plant mechanically complete and Petronet's propylene start date confirmed",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "exide-industries-shift-1",
+   "company": "Exide Industries",
+   "sector": "Auto Related",
+   "text": "First cell revenue reported by Exide Energy Solutions",
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "exide-industries-shift-2",
+   "company": "Exide Industries",
+   "sector": "Auto Related",
+   "text": "A named two-wheeler maker approves Exide's cells for series supply",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "exide-industries-shift-3",
+   "company": "Exide Industries",
+   "sector": "Auto Related",
+   "text": "Fourth line (large LFP cells for storage and cars) commissioned by March 2027",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "exide-industries-shift-4",
+   "company": "Exide Industries",
+   "sector": "Auto Related",
+   "text": "Standalone lead-acid revenue growth of at least 9% in FY27",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "exide-industries-shift-5",
+   "company": "Exide Industries",
+   "sector": "Auto Related",
+   "text": "Lithium subsidiary revenue at least ₹1,000cr in FY28, with a smaller loss than in FY27",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "garware-hi-tech-shift-1",
+   "company": "Garware Hi-Tech",
+   "sector": "Plastics",
+   "text": "TPU film line commissioned and supplying the paint-protection line",
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "garware-hi-tech-shift-2",
+   "company": "Garware Hi-Tech",
+   "sector": "Plastics",
+   "text": "FY27 revenue at least ₹2,500cr, with paint-protection film back to about a quarter of sales (it was 20% in Q1)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "garware-hi-tech-shift-3",
+   "company": "Garware Hi-Tech",
+   "sector": "Plastics",
+   "text": "50 Garware Home Solutions studios open",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "garware-hi-tech-shift-4",
+   "company": "Garware Hi-Tech",
+   "sector": "Plastics",
+   "text": "New sun-control line in commercial production",
+   "due": "Q2 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "garware-hi-tech-shift-5",
+   "company": "Garware Hi-Tech",
+   "sector": "Plastics",
+   "text": "Home solutions plus new products (PDLC, TPU items) above ₹200cr in FY28",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "happy-forgings-shift-1",
+   "company": "Happy Forgings",
+   "sector": "Forging",
+   "text": "Heavy-parts line installed, with trials under way by March 2027",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "happy-forgings-shift-2",
+   "company": "Happy Forgings",
+   "sector": "Forging",
+   "text": "Industrial at least 17% of FY27 revenue (16% in Q1)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "happy-forgings-shift-3",
+   "company": "Happy Forgings",
+   "sector": "Forging",
+   "text": "Cars at least 8% of FY27 revenue",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "happy-forgings-shift-4",
+   "company": "Happy Forgings",
+   "sector": "Forging",
+   "text": "Order book of new business above ₹1,000cr of peak yearly revenue",
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "happy-forgings-shift-5",
+   "company": "Happy Forgings",
+   "sector": "Forging",
+   "text": "First sales of heavy data-centre engine parts",
+   "due": "Q3 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "happy-forgings-shift-6",
+   "company": "Happy Forgings",
+   "sector": "Forging",
+   "text": "Industrial at least 20% of revenue in a quarter",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "hbl-engineering-shift-1",
+   "company": "HBL Engineering",
+   "sector": "Industrials",
+   "text": "FY27 revenue above FY26's ₹3,303cr, as management expects (‘significantly better’)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "hbl-engineering-shift-2",
+   "company": "HBL Engineering",
+   "sector": "Industrials",
+   "text": "Industrial-battery segment revenue at least ₹1,500cr in FY27",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "hbl-engineering-shift-3",
+   "company": "HBL Engineering",
+   "sector": "Industrials",
+   "text": "Truck drive train certified by March 2027 and first pilot sales by September 2027",
+   "due": "Q2 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "hbl-engineering-shift-4",
+   "company": "HBL Engineering",
+   "sector": "Industrials",
+   "text": "Army approval for grenade fuzes and approval of 155 mm artillery fuzes announced",
+   "due": "Q3 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "hbl-engineering-shift-5",
+   "company": "HBL Engineering",
+   "sector": "Industrials",
+   "text": "Defence and aviation segment above ₹300cr in FY28, showing fuze sales",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "hbl-engineering-shift-6",
+   "company": "HBL Engineering",
+   "sector": "Industrials",
+   "text": "Electronics segment at or above ₹1,600cr in FY28, with new Kavach orders won during the year",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "jupiter-wagons-shift-1",
+   "company": "Jupiter Wagons",
+   "sector": "Industrial - Railway",
+   "text": "Odisha axle line commissioned and selling axles",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "jupiter-wagons-shift-2",
+   "company": "Jupiter Wagons",
+   "sector": "Industrial - Railway",
+   "text": "Railways wagon tender awarded, with Jupiter's share near its expected 7,000 wagons a year",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "jupiter-wagons-shift-3",
+   "company": "Jupiter Wagons",
+   "sector": "Industrial - Railway",
+   "text": "Battery-storage order book at ₹1,000cr by end-FY27",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "jupiter-wagons-shift-4",
+   "company": "Jupiter Wagons",
+   "sector": "Industrial - Railway",
+   "text": "Container revenue doubled in FY27 (about ₹175cr in the standalone product table)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "jupiter-wagons-shift-5",
+   "company": "Jupiter Wagons",
+   "sector": "Industrial - Railway",
+   "text": "Odisha wheel line commissioned and first export wheels shipped",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "jupiter-wagons-shift-6",
+   "company": "Jupiter Wagons",
+   "sector": "Industrial - Railway",
+   "text": "Non-wagon businesses at least 35% of consolidated FY28 revenue",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "kaynes-technology-shift-1",
+   "company": "Kaynes Technology",
+   "sector": "EMS & Electronics",
+   "text": "Both new plants billing customers in Q3 FY27 as promised",
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "kaynes-technology-shift-2",
+   "company": "Kaynes Technology",
+   "sector": "EMS & Electronics",
+   "text": "Chip packaging and bare boards together book at least ₹450cr of FY27 revenue",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "kaynes-technology-shift-3",
+   "company": "Kaynes Technology",
+   "sector": "EMS & Electronics",
+   "text": "Meter plan announced by February 2027 and meter receivables below ₹1,000cr",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "kaynes-technology-shift-4",
+   "company": "Kaynes Technology",
+   "sector": "EMS & Electronics",
+   "text": "Contract electronics (EMS) revenue up at least 25% in FY27",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "kaynes-technology-shift-5",
+   "company": "Kaynes Technology",
+   "sector": "EMS & Electronics",
+   "text": "The PCB customer named or a second large board customer signed",
+   "due": "Q2 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "kaynes-technology-shift-6",
+   "company": "Kaynes Technology",
+   "sector": "EMS & Electronics",
+   "text": "Chip packaging and bare boards at least 10% of FY28 revenue",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "kirloskar-oil-shift-1",
+   "company": "Kirloskar Oil",
+   "sector": "Pumps Comp & Eng",
+   "text": "Standalone operating margin back above 13% (its FY26 level)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "kirloskar-oil-shift-2",
+   "company": "Kirloskar Oil",
+   "sector": "Pumps Comp & Eng",
+   "text": "Nuclear genset billing started and HyperNext gensets delivered within FY27",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "kirloskar-oil-shift-3",
+   "company": "Kirloskar Oil",
+   "sector": "Pumps Comp & Eng",
+   "text": "International sales above FY26's ₹593cr (standalone) for FY27",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "kirloskar-oil-shift-4",
+   "company": "Kirloskar Oil",
+   "sector": "Pumps Comp & Eng",
+   "text": "First dated step towards separating Arka announced",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "kirloskar-oil-shift-5",
+   "company": "Kirloskar Oil",
+   "sector": "Pumps Comp & Eng",
+   "text": "₹700cr Kagal phase (+50,000 engines a year) running by April 2027",
+   "due": "Q1 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "kirloskar-oil-shift-6",
+   "company": "Kirloskar Oil",
+   "sector": "Pumps Comp & Eng",
+   "text": "FY28 consolidated revenue of about ₹11,000cr, the pace the ₹16,000cr FY30 aim needs",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "ramkrishna-forgings-shift-1",
+   "company": "Ramkrishna Forgings",
+   "sector": "Auto Related",
+   "text": "Railways at least 10% of standalone FY27 revenue (6% in Q1)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "ramkrishna-forgings-shift-2",
+   "company": "Ramkrishna Forgings",
+   "sector": "Auto Related",
+   "text": "Wheel venture in bulk supply, with about 40,000 wheels delivered to the Railways in FY27",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "ramkrishna-forgings-shift-3",
+   "company": "Ramkrishna Forgings",
+   "sector": "Auto Related",
+   "text": "Exports at least 35% of FY27 revenue",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "ramkrishna-forgings-shift-4",
+   "company": "Ramkrishna Forgings",
+   "sector": "Auto Related",
+   "text": "First aerospace order in titanium or Inconel announced",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "ramkrishna-forgings-shift-5",
+   "company": "Ramkrishna Forgings",
+   "sector": "Auto Related",
+   "text": "Railways plus industry, mining and energy above 28% of standalone FY28 revenue (26% in FY26)",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "ramkrishna-forgings-shift-6",
+   "company": "Ramkrishna Forgings",
+   "sector": "Auto Related",
+   "text": "Consolidated FY28 revenue of at least ₹6,500cr, needed to keep the ₹8,000cr FY29 target alive",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "raymond-shift-1",
+   "company": "Raymond",
+   "sector": "Aerospace defence",
+   "text": "Aerospace revenue of at least ₹490cr in FY27 (the 25% commitment)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "raymond-shift-2",
+   "company": "Raymond",
+   "sector": "Aerospace defence",
+   "text": "Aerospace at least 21% of the two engineering segments' FY27 revenue (19% in FY26)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "raymond-shift-3",
+   "company": "Raymond",
+   "sector": "Aerospace defence",
+   "text": "Five-year slice of the aerospace order book above ₹2,765cr",
+   "due": "Q2 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "raymond-shift-4",
+   "company": "Raymond",
+   "sector": "Aerospace defence",
+   "text": "First revenue from the Tejas structural-assembly order",
+   "due": "Q1 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "raymond-shift-5",
+   "company": "Raymond",
+   "sector": "Aerospace defence",
+   "text": "Gudipalli aerospace plant starts commercial production by December 2027",
+   "due": "Q3 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "raymond-shift-6",
+   "company": "Raymond",
+   "sector": "Aerospace defence",
+   "text": "Any acquisition funded by the warrant money: what it adds to aerospace and at what price",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "sansera-engineering-shift-1",
+   "company": "Sansera Engineering",
+   "sector": "Aerospace defence",
+   "text": "ADS revenue of at least ₹550cr in FY27 (guide ₹550–600cr)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "sansera-engineering-shift-2",
+   "company": "Sansera Engineering",
+   "sector": "Aerospace defence",
+   "text": "New hangar commissioned and surface-treatment plant NADCAP-approved",
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "sansera-engineering-shift-3",
+   "company": "Sansera Engineering",
+   "sector": "Aerospace defence",
+   "text": "ADS backlog above ₹5,750cr after the order conversions management expects in Q2 and Q3",
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "sansera-engineering-shift-4",
+   "company": "Sansera Engineering",
+   "sector": "Aerospace defence",
+   "text": "Non-auto at least 20% of FY27 sales (20.8% in Q1)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "sansera-engineering-shift-5",
+   "company": "Sansera Engineering",
+   "sector": "Aerospace defence",
+   "text": "FY28 ADS guidance of at least ₹800cr, promised around the end of FY27",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "sansera-engineering-shift-6",
+   "company": "Sansera Engineering",
+   "sector": "Aerospace defence",
+   "text": "ADS revenue of ₹250cr or more in a single quarter",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "shaily-engg-plastic-shift-1",
+   "company": "Shaily Engg. Plastic",
+   "sector": "Plastics",
+   "text": "Second 25-million pen line running, pen capacity about 75 million a year",
+   "due": "Q2 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "shaily-engg-plastic-shift-2",
+   "company": "Shaily Engg. Plastic",
+   "sector": "Plastics",
+   "text": "More than 36 million pens in FY27 and healthcare at least half of FY27 revenue",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "shaily-engg-plastic-shift-3",
+   "company": "Shaily Engg. Plastic",
+   "sector": "Plastics",
+   "text": "Semiconductor chip-tray supplies start",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "shaily-engg-plastic-shift-4",
+   "company": "Shaily Engg. Plastic",
+   "sector": "Plastics",
+   "text": "About 50 million pens delivered in FY28",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "shaily-engg-plastic-shift-5",
+   "company": "Shaily Engg. Plastic",
+   "sector": "Plastics",
+   "text": "Abu Dhabi plant in production",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "shaily-engg-plastic-shift-6",
+   "company": "Shaily Engg. Plastic",
+   "sector": "Plastics",
+   "text": "First contract with an original (innovator) drug maker announced",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "time-technoplast-shift-1",
+   "company": "Time Technoplast",
+   "sector": "Plastics",
+   "text": "Composite products up at least 25% in FY27 (to about ₹950cr)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "time-technoplast-shift-2",
+   "company": "Time Technoplast",
+   "sector": "Plastics",
+   "text": "Value-added products back to 29% or more of FY27 revenue",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "time-technoplast-shift-3",
+   "company": "Time Technoplast",
+   "sector": "Plastics",
+   "text": "Silvassa IBC phase 2 complete at 300,000 a year",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "time-technoplast-shift-4",
+   "company": "Time Technoplast",
+   "sector": "Plastics",
+   "text": "First sizeable fire-extinguisher orders from oil companies",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "time-technoplast-shift-5",
+   "company": "Time Technoplast",
+   "sector": "Plastics",
+   "text": "Oil companies restart the 14.2-kg composite LPG cylinder or place a large new tender",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "titagarh-railsystems-shift-1",
+   "company": "Titagarh Railsystems",
+   "sector": "Industrial - Railway",
+   "text": "At least 180 passenger coaches dispatched in FY27 (target ~200, ±10%)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "titagarh-railsystems-shift-2",
+   "company": "Titagarh Railsystems",
+   "sector": "Industrial - Railway",
+   "text": "First Vande Bharat sleeper train delivered to the Railways",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "titagarh-railsystems-shift-3",
+   "company": "Titagarh Railsystems",
+   "sector": "Industrial - Railway",
+   "text": "Passenger trains at least a third of FY27 revenue (31% in Q1)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "titagarh-railsystems-shift-4",
+   "company": "Titagarh Railsystems",
+   "sector": "Industrial - Railway",
+   "text": "Railways' large wagon tender awarded and wagon output back above 800 a month",
+   "due": "Q2 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "titagarh-railsystems-shift-5",
+   "company": "Titagarh Railsystems",
+   "sector": "Industrial - Railway",
+   "text": "New metro orders of at least ₹2,000cr booked to keep the line full in FY29",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
+  },
+  {
+   "id": "titagarh-railsystems-shift-6",
+   "company": "Titagarh Railsystems",
+   "sector": "Industrial - Railway",
+   "text": "Passenger revenue above ₹2,000cr in FY28",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-07",
+   "status": "pending",
+   "source": "business-shift"
   }
  ]
 }

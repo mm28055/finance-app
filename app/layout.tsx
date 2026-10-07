@@ -9,6 +9,7 @@ import { Sidebar } from "@/components/Sidebar";
 import { SectorChat } from "@/components/SectorChat";
 import { NotesPanel } from "@/components/NotesPanel";
 import { FilingsDrawer } from "@/components/FilingsDrawer";
+import { ShiftsDrawer } from "@/components/ShiftsDrawer";
 import { Toaster } from 'sonner';
 import { Menu } from 'lucide-react';
 
@@ -47,6 +48,7 @@ export default function RootLayout({
           <SectorChat />
           <NotesPanel />
           <FilingsDrawer />
+          <ShiftsDrawer />
           <div className="pt-14 md:pt-0 md:pl-[260px] 2xl:pl-72 transition-all duration-300">
             {children}
           </div>

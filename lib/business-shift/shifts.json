@@ -1,0 +1,3240 @@
+{
+ "updated": "2026-10-07",
+ "shifts": [
+  {
+   "company": "Amara Raja Energy",
+   "headline": "Lead-acid leader adding grid-storage systems and its own lithium cells",
+   "now": "Amara Raja makes Amaron lead-acid batteries for cars, bikes, home inverters, telecom towers, data centres and industry, sold to vehicle makers, through more than 100,000 shops and to buyers in over 70 countries. Lead-acid batteries were ₹13,005cr, or 94%, of FY26 consolidated revenue of ₹13,814cr. The new-energy arm, which assembles lithium-ion battery packs and chargers for telecom towers and two- and three-wheelers, was ₹809cr (6%) and lost ₹135cr. In Q1 FY27 new energy was ₹209cr of ₹4,215cr, still about 5%.",
+   "future": "By FY29 lead-acid will still be about four-fifths of sales, but new energy could be about a fifth, mostly from battery-storage systems (shipping-container-sized battery banks) for solar plants, the grid and businesses. The company is building a 10 GWh storage-system plant at Divitipally, for an initial ₹250–300cr, due to start in Q3–Q4 FY27; on the Q1 FY27 call (11 Aug 2026) the CFO said ‘within about 6-7 months we should be able to ramp it up’ to about 5 GWh, but added this was ‘based on the market demand’, not orders in hand. At his price of $100–120 per kWh, 5 GWh would be roughly ₹4,800–5,700cr of sales a year at about ₹95 to the dollar, at a thin 5–8% operating margin. Its first 2 GWh lithium-cell line (Giga-1) should start selling in H1 FY28, and FY27 capex is ₹1,700cr, of which ₹1,300cr goes to new energy. I assume the storage plant sells about half of that 5 GWh in FY29 and packs keep growing about 30% a year, which gives new energy about ₹4,000cr, or 19% of revenue against 6% in FY26: a real change, but just short of a ‘meaningful’ 15-point shift, and it rests on a plant with no disclosed orders.",
+   "segments": [
+    {
+     "name": "Lead-acid batteries",
+     "plain": "Amaron vehicle, home-inverter, telecom and industrial batteries and related parts"
+    },
+    {
+     "name": "New energy",
+     "plain": "lithium-ion battery packs, chargers, storage systems and, from FY28, its own cells"
+    }
+   ],
+   "mix": [
+    {
+     "year": "FY23",
+     "basis": "annual report segment note (FY24 report, FY23 restated), consolidated",
+     "total": 10392,
+     "parts": [
+      {
+       "segment": "Lead-acid batteries",
+       "revenue": 10143,
+       "pct": 98
+      },
+      {
+       "segment": "New energy",
+       "revenue": 249,
+       "pct": 2
+      }
+     ]
+    },
+    {
+     "year": "FY26",
+     "basis": "annual report segment note (Note 33), consolidated",
+     "total": 13814,
+     "parts": [
+      {
+       "segment": "Lead-acid batteries",
+       "revenue": 13005,
+       "pct": 94
+      },
+      {
+       "segment": "New energy",
+       "revenue": 809,
+       "pct": 6
+      }
+     ]
+    },
+    {
+     "year": "FY29E",
+     "basis": "my projection",
+     "total": 21300,
+     "parts": [
+      {
+       "segment": "Lead-acid batteries",
+       "revenue": 17300,
+       "pct": 81
+      },
+      {
+       "segment": "New energy",
+       "revenue": 4000,
+       "pct": 19
+      }
+     ]
+    }
+   ],
+   "assumptions": [
+    {
+     "segment": "Lead-acid batteries",
+     "growth": "~10% a year FY26–FY29 (₹13,005cr to about ₹17,300cr)",
+     "why": "The CFO sees 9–10% a year for the whole lead-acid business in the medium term, adding ‘I'm not saying this is a guidance’ and that it is mostly volume (Q1 FY27 call, 11 Aug 2026). FY23–FY26 delivered about 8.6% a year. Q1 FY27 grew 22% with price rises of about 3% in June and 2–3% in August, but the second half faces a higher base, vehicle-battery exports fell 20% on the Middle East and telecom lead-acid keeps moving to lithium, so I stay at about 10%."
+    },
+    {
+     "segment": "New energy",
+     "growth": "~70% a year FY26–FY29 (₹809cr to about ₹4,000cr)",
+     "why": "Packs and chargers grow about 30% a year to about ₹1,900cr (FY26 +61%, Q1 FY27 +72%; pack capacity 2.7 GWh, 1.5 GWh for vehicles and 1.2 GWh stationary, per the Q1 FY27 presentation), with Giga-1 cells mostly going into its own packs. On top, about ₹2,100cr from the storage plant: about 2.5 GWh in FY29 at about ₹850cr per GWh, which is management's $100–120 per kWh trimmed for falling container prices. I take half of the 5 GWh the CFO thinks possible because there are no disclosed orders, Chinese suppliers set the price, and new-energy plans have slipped before (Gotion licence blocked, the 16 GWh target now ‘can definitely change’, the recycling plant still in trial)."
+    }
+   ],
+   "managementAim": "No revenue target for new energy. The Q1 FY27 presentation (Aug 2026) still shows 16 GWh of cell capacity by FY30 under a ₹9,500cr ‘Giga Corridor’ plan, but on 11 Aug 2026 the CFO said ‘the milestone for a given capacity can definitely change’ while the aim of a 15–20% share of India's lithium-cell market ‘still remains intact’. On the Q4 FY26 call (26 May 2026) the new-energy director said the mix would lean to storage (about two-thirds vehicles, one-third storage, against 80:20 before), and the CFO targeted a 10–11% operating margin and a ‘low double-digit’ return on capital once cells reach 8–10 GWh. For the storage plant: about 5 GWh of use within 6–7 months of start (Q1 FY27 call).",
+   "drivers": [
+    {
+     "kind": "capex",
+     "text": "FY27 capex about ₹1,700cr, of which about ₹1,300cr for new energy; ₹450cr spent in Q1",
+     "source": "Q1 FY27 call, 11 Aug 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "10 GWh battery-storage (BESS) plant at Divitipally for grid and business users, LFP chemistry, initial outlay ₹250–300cr; construction started, operations from Q3 FY27 per the presentation (‘end of this calendar year’ per the Q4 call)",
+     "source": "Q1 FY27 presentation, Aug 2026; Q4 FY26 call, 26 May 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "Storage plant to reach about 5 GWh of use within 6–7 months of completion, at $100–120 per kWh and a 5–8% operating margin, ‘based on the market demand’ rather than orders",
+     "source": "Q1 FY27 call, 11 Aug 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "Giga-1, the first 2 GWh NMC cylindrical (21700) cell line: equipment due Q3 FY27, production from June 2027, commercial sales in H1 FY28",
+     "source": "Q4 FY26 call, 26 May 2026; Q1 FY27 call, 11 Aug 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "₹1,900cr put into the cell subsidiary (ARACT) so far; customer-qualification (pilot) cell plant inaugurated 15 July 2026",
+     "source": "Q1 FY27 presentation, Aug 2026"
+    },
+    {
+     "kind": "customers",
+     "text": "Over 60% share of telecom batteries counting lead and lithium; lithium telecom volumes and EV packs each up more than 50% in Q1 FY27; about 1 GWh of telecom packs supplied in FY26",
+     "source": "Q1 FY27 call, 11 Aug 2026; Q4 FY26 call, 26 May 2026"
+    }
+   ],
+   "risks": [
+    "The storage plant has no disclosed orders: the 5 GWh is a ‘possibility’ based on market demand, many Indian firms are entering storage-system assembly, and Chinese suppliers set prices.",
+    "Storage and packs earn only about 5–8% operating margin, so new energy can add sales without adding much profit, and management may slow it to protect returns.",
+    "China dependence: the Gotion technology licence was blocked by Chinese export rules, storage cells and cathode material are imported, and Chinese engineers are needed to commission Giga-1.",
+    "Indian-made cells cost about ‘China plus 15% to 20%’ (Q4 FY26 call, 26 May 2026), so Giga-1 may struggle to sell outside its own packs without government localisation rules.",
+    "The lead-acid margin fell to 9.6% in Q1 FY27; the ‘at least ₹700–800cr’ of yearly cash after dividends that funds new energy depends on it recovering."
+   ],
+   "shift": "meaningful",
+   "confidence": "low",
+   "confidenceWhy": "About half of the FY29 new-energy figure rests on a storage plant that is not yet running and has no disclosed orders; only the pack business has a sales record, so the new-energy share could land anywhere from about 10% to 25%.",
+   "watch": [
+    {
+     "text": "Storage (BESS) plant starts production by March 2027, with first named customers or orders",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "New-energy revenue at least ₹1,100cr in FY27 (₹809cr in FY26)",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Giga-1 cell line in commercial production by September 2027",
+     "due": "Q2 FY28"
+    },
+    {
+     "text": "Storage plant running at about a 5 GWh yearly rate within seven months of start",
+     "due": "Q3 FY28"
+    },
+    {
+     "text": "New energy at least 12% of FY28 consolidated revenue",
+     "due": "Q4 FY28"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Amara Raja Q1 FY27 earnings call transcript, 11 Aug 2026 (BSE)",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=8be318e5-09e3-453f-a6ba-c07ea10ca97d.pdf"
+    },
+    {
+     "label": "Amara Raja Q4 FY26 earnings call transcript, 26 May 2026 (BSE)",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=210c7ac8-954e-4c12-ab6a-709498c9815f.pdf"
+    },
+    {
+     "label": "Amara Raja Q1 FY27 investor presentation, Aug 2026 (BSE)",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=0f2b0b99-9038-4bfd-a1f1-5d9b9834c96b.pdf"
+    },
+    {
+     "label": "Amara Raja Integrated Annual Report FY26, segment note 33 (BSE)",
+     "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/e3e85cf0-eeae-4fc2-85b1-4dcd45d4d8e1.pdf"
+    },
+    {
+     "label": "Amara Raja Annual Report FY24, segment note 34 with restated FY23 (NSE)",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_24409_ARE&M_2023_2024_10072024185811.pdf"
+    },
+    {
+     "label": "Amara Raja rating rationale, CRISIL AA+/Stable, Mar 2026",
+     "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/AmaraRajaEnergyAndMobilityLimited_March%2030_%202026_RR_392344.html"
+    }
+   ],
+   "asOf": "2026-10-07"
+  },
+  {
+   "company": "Deepak Nitrite",
+   "headline": "Phenol maker's polycarbonate bet starts only at the end of FY29",
+   "now": "Deepak Nitrite makes basic and intermediate chemicals, mostly for Indian factories. Its Phenolics arm (₹5,401cr, 68% of FY26 segment revenue) turns benzene and propylene into phenol, acetone and IPA solvent, over half of India's supply, sold almost entirely at home to makers of resins, laminates, drugs, paints and agrochemicals. Advanced Intermediates (₹2,553cr, 32%) makes nitration chemicals such as sodium nitrite and building blocks for dyes, optical brighteners, agrochemicals and drugs, and exports about half of its output. Three years ago intermediates were 38% of revenue; Chinese price competition has since shrunk them in rupees.",
+   "future": "The big change is a ₹11,500cr chain at Dahej that will make 165,000 tonnes a year of polycarbonate, the tough clear plastic used in car lights, electronics and sheets, from its own propylene, phenol and bisphenol-A, using a plant moved from Trinseo's German site. But management now targets polycarbonate start-up in 'H2' of FY28-29 with bisphenol-A 'a couple of months after' (Q1 FY27 call, 6 Aug 2026), later than the 'June 2028' it gave in May (Q4 FY26 call, 18 May 2026), and the new phenol plant waits for Petronet's propylene supply. About ₹1,200cr had been spent by August, ₹1,500–1,600cr more is planned in FY27, ₹6,800cr of debt is tied up and debt peaks at ₹8,000–8,500cr. Nearer term, the ₹735cr MIBK/MIBC solvents plant started on 6 August 2026, a ₹300cr chlorination and specialty plant on 29 September, and six or seven new intermediates reach regular supply from January 2027. So on my projection polycarbonate is only about 3% of FY29 revenue and the company still looks like a phenol and intermediates maker; at full use, probably from about FY31, the plant could earn roughly ₹3,000cr a year on my arithmetic, a quarter of the company, so the real shift comes after FY29.",
+   "segments": [
+    {
+     "name": "Phenolics",
+     "plain": "Phenol, acetone, IPA and solvents made from them, sold mainly to Indian factories"
+    },
+    {
+     "name": "Advanced intermediates",
+     "plain": "Nitration-based chemicals for dyes, agrochemicals, drugs, rubber and fuel additives"
+    },
+    {
+     "name": "Polycarbonate chain",
+     "plain": "New Dahej chain: phenol to bisphenol-A to polycarbonate plastic and ready-mixed compounds"
+    }
+   ],
+   "mix": [
+    {
+     "year": "FY23",
+     "basis": "annual report segment note (consolidated, FY24 annual report comparatives; segment revenue before ₹32cr of sales between the two segments, reported revenue ₹7,972cr)",
+     "total": 8004,
+     "parts": [
+      {
+       "segment": "Phenolics",
+       "revenue": 4970,
+       "pct": 62
+      },
+      {
+       "segment": "Advanced intermediates",
+       "revenue": 3034,
+       "pct": 38
+      },
+      {
+       "segment": "Polycarbonate chain",
+       "revenue": 0,
+       "pct": 0
+      }
+     ]
+    },
+    {
+     "year": "FY26",
+     "basis": "annual report segment note (consolidated, FY26 annual report note 43; segment revenue before ₹67cr of sales between segments, reported revenue ₹7,887cr; the ₹29.5cr income of the compounds subsidiary sits inside these segments)",
+     "total": 7954,
+     "parts": [
+      {
+       "segment": "Phenolics",
+       "revenue": 5401,
+       "pct": 68
+      },
+      {
+       "segment": "Advanced intermediates",
+       "revenue": 2553,
+       "pct": 32
+      },
+      {
+       "segment": "Polycarbonate chain",
+       "revenue": 0,
+       "pct": 0
+      }
+     ]
+    },
+    {
+     "year": "FY29E",
+     "basis": "my projection",
+     "total": 10410,
+     "parts": [
+      {
+       "segment": "Phenolics",
+       "revenue": 6430,
+       "pct": 62
+      },
+      {
+       "segment": "Advanced intermediates",
+       "revenue": 3680,
+       "pct": 35
+      },
+      {
+       "segment": "Polycarbonate chain",
+       "revenue": 300,
+       "pct": 3
+      }
+     ]
+    }
+   ],
+   "assumptions": [
+    {
+     "segment": "Phenolics",
+     "growth": "~6% a year FY26–FY29 (₹5,401cr → ₹6,430cr)",
+     "why": "Phenolics grew only ~3% a year over FY23–FY26 because its price follows imports. Volume rises about 10% as the plant is pushed to a 4 lakh-tonne run-rate for about ₹70cr (Q1 FY27 call, 6 Aug 2026), and the MIBK/MIBC solvents plant (₹735cr, started 6 Aug 2026) adds downstream sales; the company has not said which segment will report MIBK/MIBC, so I place it here because it is made from the group's own acetone. I assume prices fall back to about FY26 levels after the Q1 FY27 war windfall (Q1 revenue ₹1,775cr, record 24% EBIT margin)."
+    },
+    {
+     "segment": "Advanced intermediates",
+     "growth": "~13% a year (₹2,553cr → ₹3,680cr)",
+     "why": "Q1 FY27 revenue of ₹804cr (+33%) is already a ₹3,200cr annual run-rate. New capacity: nitration and hydrogenation plants (from Q3 FY26), own nitric acid, a ₹300cr chlorination and specialty plant (29 Sep 2026), the multipurpose agrochemical-intermediates plant (Q2 FY27) and fluorination; six or seven new products in regular supply from January 2027 (Q1 FY27 call). I keep it to about 20% above the FY23 peak of ₹3,034cr because Chinese competition cut the segment by a sixth over FY23–FY26 and management says the 'red ocean' of price-cutting in its chemistries is only now easing."
+    },
+    {
+     "segment": "Polycarbonate chain",
+     "growth": "from nil to ~₹300cr in FY29",
+     "why": "Start-up targeted in H2 FY29 (Q1 FY27 call). I assume first resin around January 2029 and about 40% use for one quarter (roughly 16,000 tonnes at about ₹1.8 lakh a tonne) plus small compound sales (the compounds subsidiary had ₹29.5cr of income in FY26). If start-up slips six months, as most projects in this sector do, FY29 revenue is nil. Full use (165,000 tonnes) would be roughly ₹3,000cr a year, which I expect only from about FY31."
+    }
+   ],
+   "managementAim": "No revenue, price or return target for polycarbonate: management says only that it has 'a formidable IRR' (Q1 FY27 call, 6 Aug 2026) and could become 'one of Deepak Nitrite's most significant growth engines over the coming decade' (FY26 annual report). It targets polycarbonate commissioning in H2 FY29 with bisphenol-A a couple of months later, and says new intermediates will earn margins 'in line or better' than the segment average (Q1 FY27 call).",
+   "drivers": [
+    {
+     "kind": "capex",
+     "text": "₹11,500cr propylene-to-polycarbonate chain at Dahej (165,000 t a year of polycarbonate, with its own phenol and bisphenol-A), funded 60% by debt; all ₹6,800cr of project debt tied up; about ₹1,200cr spent, ₹1,500–1,600cr more in FY27; peak debt ₹8,000–8,500cr.",
+     "source": "Q1 FY27 call, 6 Aug 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "Polycarbonate start-up targeted for H2 FY29, bisphenol-A a couple of months later; the new phenol plant timed to Petronet LNG's propylene supply (15-year deal for 250,000 t a year). In May the target was 'June 2028'.",
+     "source": "Q1 FY27 call, 6 Aug 2026; Q4 FY26 call, 18 May 2026; FY26 annual report"
+    },
+    {
+     "kind": "capex",
+     "text": "Major equipment ordered (commitments about ₹2,900cr); Stade plant being dismantled with part of the equipment already at Dahej; dedicated hydrogen and carbon-monoxide plant contracted, due in 2028.",
+     "source": "Q1 FY27 presentation, 4 Aug 2026"
+    },
+    {
+     "kind": "customers",
+     "text": "Polycarbonate compounds already qualified with Mahindra, Panasonic, Goldmedal and Tata AutoComp; the technology and equipment supplier will also be an anchor customer for the resin.",
+     "source": "Q1 FY27 call, 6 Aug 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "MIBK/MIBC solvents plant started on 6 Aug 2026 (₹735cr) and a chlorination and specialty chemicals plant on 29 Sep 2026 (₹300cr), both in Deepak Chem Tech at Dahej.",
+     "source": "NSE filings, 6 Aug 2026 and 29 Sep 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "Six or seven new intermediates reach regular commercial supply from January 2027; about ₹70cr more takes the phenol plant to a 4 lakh-tonne run-rate.",
+     "source": "Q1 FY27 call, 6 Aug 2026"
+    }
+   ],
+   "risks": [
+    "The start-up has already moved from June 2028 to H2 FY29; another six-month slip pushes all polycarbonate revenue past FY29.",
+    "Debt rises from ₹1,638cr (March 2026) towards ₹8,000–8,500cr while free cash stays negative until about FY29; if phenol margins fall back from the Q1 FY27 war windfall, servicing it gets harder.",
+    "The new phenol plant depends on Petronet's propylene project; until it runs, the polycarbonate plant needs bought-in bisphenol-A or phenol.",
+    "Management gives no revenue, price or return figures for polycarbonate, so the payoff cannot yet be checked; polycarbonate is a traded plastic whose Indian price is set by imports.",
+    "Chinese competition cut Advanced Intermediates from ₹3,034cr in FY23 to ₹2,553cr in FY26 and could hold back the new products too."
+   ],
+   "shift": "modest",
+   "confidence": "medium",
+   "confidenceWhy": "Nearly all of the FY29 mix is today's two businesses growing on capacity already built, so the 'modest' verdict is firm; the small polycarbonate slice rests on a start-up date that has already slipped once and could be nil.",
+   "watch": [
+    {
+     "text": "Advanced Intermediates revenue of at least ₹3,000cr for FY27, with the new intermediates in regular supply from January 2027",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Phenolics EBIT margin at or above about 13% (its FY26 level) once war-time prices fade",
+     "due": "Q3 FY27"
+    },
+    {
+     "text": "Polycarbonate cost still ₹11,500cr and start-up still H2 FY29 on every call; about ₹1,500cr spent in FY27",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "First named strategic tie-up for polycarbonate compounds, which management said would come 'soon'",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Polycarbonate plant mechanically complete and Petronet's propylene start date confirmed",
+     "due": "Q4 FY28"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Deepak Nitrite Q1 FY27 call transcript, 6 Aug 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/DEEPAKNTR_11082026154707_NSETranscript.pdf"
+    },
+    {
+     "label": "Deepak Nitrite Q4 FY26 call transcript, 18 May 2026 (BSE)",
+     "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/589629dc-be30-42d5-8ed4-bb605071a9bc.pdf"
+    },
+    {
+     "label": "Deepak Nitrite Q1 FY27 results presentation, 4 Aug 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/DEEPAKNTR_04082026224537_DNL_-_Q1_FY27_Results_Presentation_Final.pdf"
+    },
+    {
+     "label": "Deepak Nitrite annual report FY26, segment note 43 and MD&A",
+     "url": "https://www.godeepak.com/wp-content/uploads/2026/07/DNL-AR-2025-26.pdf"
+    },
+    {
+     "label": "Deepak Nitrite annual report FY24 (FY23 segment figures)",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_24510_DEEPAKNTR_2023_2024_15072024204558.pdf"
+    },
+    {
+     "label": "NSE filing: MIBK/MIBC plant commissioned, 6 Aug 2026",
+     "url": "https://nsearchives.nseindia.com/corporate/DEEPAKNTR_06082026185641_NSE-MIBK-MIBC-signed.pdf"
+    },
+    {
+     "label": "NSE filing: chlorination and specialty plant commissioned, 29 Sep 2026",
+     "url": "https://nsearchives.nseindia.com/corporate/DEEPAKNTR_29092026184031_NSE-REGULATION_30_Disclosure-29-9-2026.pdf"
+    }
+   ],
+   "asOf": "2026-10-07"
+  },
+  {
+   "company": "Exide Industries",
+   "headline": "Lead-acid giant starts making lithium cells; still a tenth by FY29",
+   "now": "Exide is India's largest lead-acid battery maker, selling batteries for cars, bikes and trucks to more than 75 vehicle makers and to replacement buyers, plus home-inverter, solar, railway, telecom and industrial batteries, and it recycles its own lead. It reports a single segment; management says vehicles are about half of revenue (‘53:47’), home inverter batteries about ₹2,300cr and solar over ₹1,000cr. Of FY26 consolidated revenue of ₹17,995cr, the lithium subsidiary Exide Energy Solutions, which so far assembles packs from imported cells, was ₹158cr (about 1%) and lost ₹248cr; the other ₹17,838cr (99%) is lead-acid batteries and lead recycling.",
+   "future": "Exide's 6 GWh lithium-cell plant in Bengaluru was commissioned on 23 September 2026 after about ₹5,600cr of spending: half cylindrical cells for electric two-wheelers, half LFP (lithium iron phosphate) cells for three-wheelers, telecom and storage. On the Q1 FY27 call (3 Aug 2026) the CEO said cell revenue starts in FY27, use will be 25–30% in the first year and ‘Demand will not be an issue’ because imported cells are simply being replaced; two-wheeler cells are in approval at three makers covering about 80% of that market, and a fourth line for storage and car cells is due around the end of FY27. Land and utilities are ready for a second 6 GWh, to be added ‘when the demand picks up’, and the board has approved ₹1,400cr more for the subsidiary in FY27. Lead-acid should keep growing about 10% a year, helped by the replacement wave from the post-GST car boom. I assume the plant sells about 2.8 GWh in FY29, under half its capacity, worth about ₹2,500cr, so lithium rises from 1% to about 10% of revenue: a real new business, but Exide stays a lead-acid company.",
+   "segments": [
+    {
+     "name": "Lead-acid batteries",
+     "plain": "vehicle, inverter, solar, railway, telecom and industrial batteries, plus lead recycling and overseas units"
+    },
+    {
+     "name": "Lithium-ion",
+     "plain": "Exide Energy Solutions: battery packs today, its own lithium cells from FY27"
+    }
+   ],
+   "mix": [
+    {
+     "year": "FY23",
+     "basis": "annual report: consolidated revenue less the lithium-pack subsidiary's turnover (Form AOC-1, Exide Energy Pvt Ltd); the company reports one segment",
+     "total": 15078,
+     "parts": [
+      {
+       "segment": "Lead-acid batteries",
+       "revenue": 14966,
+       "pct": 99
+      },
+      {
+       "segment": "Lithium-ion",
+       "revenue": 112,
+       "pct": 1
+      }
+     ]
+    },
+    {
+     "year": "FY26",
+     "basis": "annual report: consolidated revenue less Exide Energy Solutions' turnover (Form AOC-1); the company reports one segment",
+     "total": 17995,
+     "parts": [
+      {
+       "segment": "Lead-acid batteries",
+       "revenue": 17838,
+       "pct": 99
+      },
+      {
+       "segment": "Lithium-ion",
+       "revenue": 158,
+       "pct": 1
+      }
+     ]
+    },
+    {
+     "year": "FY29E",
+     "basis": "my projection",
+     "total": 26200,
+     "parts": [
+      {
+       "segment": "Lead-acid batteries",
+       "revenue": 23700,
+       "pct": 90
+      },
+      {
+       "segment": "Lithium-ion",
+       "revenue": 2500,
+       "pct": 10
+      }
+     ]
+    }
+   ],
+   "assumptions": [
+    {
+     "segment": "Lead-acid batteries",
+     "growth": "~10% a year FY26–FY29 (₹17,838cr to about ₹23,700cr)",
+     "why": "Management guided ‘high-single to double-digit’ growth for FY27 and about 11% a year over five years, ‘(+/-1%)’ (Q4 FY26 call, 6 May 2026), and Q1 FY27 standalone growth was 17.6%. I use a little under 11% because FY23–FY26 consolidated lead-acid revenue grew only about 6% a year, the CEO warned the second half of FY27 faces a high base (3 Aug 2026), and telecom and e-rickshaw batteries (about 3% of revenue) keep moving to lithium. Core capex of about ₹500cr a year is removing bottlenecks in its five car-battery plants for the replacement wave expected 2.5–3 years after the post-GST car boom."
+    },
+    {
+     "segment": "Lithium-ion",
+     "growth": "₹158cr to about ₹2,500cr in FY29",
+     "why": "Phase 1 is 6 GWh at 25–30% use in its first year (CEO, Q1 FY27 call), which I take to about 45–50%, or 2.8 GWh, in FY29, at about ₹900cr of sales per GWh. That rate is my estimate, since management will not give one (‘let's not talk on crores. Let's talk on gigawatt hours’): it fits cells at roughly $70–90 per kWh with packs above that, and about one rupee of sales a year per rupee of the ₹5,600cr plant at full use. I stay well below the 85% use target because yields are still unproven, ICRA notes no take-or-pay contracts, two-wheeler approvals take months, and the plant already slipped from H2 FY26 to September 2026. No sales from a second phase before FY29."
+    }
+   ],
+   "managementAim": "No revenue target. The CEO's yardstick is capacity: ‘6 gigawatt is our capacity of Phase 1’, with provision for 12 GWh ‘when the demand picks up’, and ‘put a number around that gigawatt hour and that should be our revenue’ (Q1 FY27 call, 3 Aug 2026). Targets: 25–30% use in the first year, then 85% use at 90% yield before it will discuss margins (Q4 FY26 call, 6 May 2026); 50–60% of cell materials sourced in India within 2–3 years; and lead-acid growth of about 11% a year over five years.",
+   "drivers": [
+    {
+     "kind": "capex",
+     "text": "6 GWh phase 1 at Bengaluru (3 GWh NMC cylindrical, 3 GWh LFP prismatic), cost about ₹5,600cr (up from ₹5,200cr), with land and utilities for 12 GWh; commissioned 23 Sep 2026",
+     "source": "ICRA rationale, 11 Jun 2026; Q4 FY26 call, 6 May 2026; Exide announcement, Sep 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "₹4,902cr of equity put into the subsidiary by 31 July 2026; board approved ₹1,400cr for FY27; about ₹2,000cr of term loans undrawn; Exide guarantees ₹3,000cr of its loans",
+     "source": "Q1 FY27 call, 3 Aug 2026; ICRA, 11 Jun 2026; FY26 annual report"
+    },
+    {
+     "kind": "customers",
+     "text": "Two-wheeler cells in approval at three makers that together hold about 80% of India's electric two-wheeler market; LFP samples supplied for three-wheelers and telecom; talks with one or two large car makers",
+     "source": "Q1 FY27 call, 3 Aug 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "First-year use 25–30%, with the LFP line filling faster than the two-wheeler line; a fourth line for large storage and car cells to be commissioned around the end of FY27",
+     "source": "Q1 FY27 call, 3 Aug 2026"
+    },
+    {
+     "kind": "customers",
+     "text": "About 70–75% of the three-wheeler lithium market is e-rickshaws switching from lead-acid, sold through Exide's existing dealers",
+     "source": "Q1 FY27 call, 3 Aug 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "About ₹500cr a year of lead-acid capex, now mostly removing bottlenecks in car-battery lines",
+     "source": "Q1 FY27 call, 3 Aug 2026"
+    }
+   ],
+   "risks": [
+    "Yields: the CEO says the real yield will only show at three-shift running; a slow climb to the 90% target means losses for longer (the subsidiary lost ₹248cr in FY26, and depreciation on the new plant now starts).",
+    "China dependence: the technology is licensed from SVOLT, electrolyte and most materials come from China, and Chinese export controls on battery materials are due from November 2026, so Exide may need to hold more stock.",
+    "Price: imported cells pay only a 5% duty and Indian cells start at a cost disadvantage; the CEO says India needs two or three more local makers before the government protects local cells.",
+    "Customers: no take-or-pay contracts (ICRA); two-wheeler makers may keep importing or make their own cells, and the Hyundai-Kia co-investment line is delayed.",
+    "A second 6 GWh may cost more than planned because most machines are imported and the rupee has weakened."
+   ],
+   "shift": "modest",
+   "confidence": "medium",
+   "confidenceWhy": "The plant is built and commissioned and lead-acid, 90% of the projection, is steady, but the lithium figure rests on my use and price assumptions with no disclosed orders, so lithium could be anywhere from about 6% to 13% of FY29 revenue; either way the shift is modest.",
+   "watch": [
+    {
+     "text": "First cell revenue reported by Exide Energy Solutions",
+     "due": "Q3 FY27"
+    },
+    {
+     "text": "A named two-wheeler maker approves Exide's cells for series supply",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Fourth line (large LFP cells for storage and cars) commissioned by March 2027",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Standalone lead-acid revenue growth of at least 9% in FY27",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Lithium subsidiary revenue at least ₹1,000cr in FY28, with a smaller loss than in FY27",
+     "due": "Q4 FY28"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Exide Q1 FY27 earnings call transcript, 3 Aug 2026 (BSE)",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ffb4cad7-4aa9-42fc-b99e-1af3b9ff8732.pdf"
+    },
+    {
+     "label": "Exide Q4 FY26 earnings call transcript, 6 May 2026 (BSE)",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=00ba5f91-df41-44a8-8016-9554f802711e.pdf"
+    },
+    {
+     "label": "Exide Q1 FY27 investor presentation, Aug 2026 (BSE)",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=845cc706-14c6-4b48-993f-0f369a831928.pdf"
+    },
+    {
+     "label": "Exide Integrated Annual Report FY26: consolidated revenue, segment note 47, Form AOC-1 (BSE)",
+     "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/d0eaede7-8980-46b2-ab00-65004acffc3d.pdf"
+    },
+    {
+     "label": "Exide Annual Report FY23: Form AOC-1 subsidiary turnover (NSE)",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_22317_EXIDEIND_2022_2023_13072023151755.zip"
+    },
+    {
+     "label": "Exide rating rationale, ICRA AAA/Stable, 11 Jun 2026",
+     "url": "https://www.icra.in/Rating/GetRationalReportFilePdf?id=143548"
+    },
+    {
+     "label": "Exide commissions 6 GWh phase-I lithium-ion cell facility, Energetica India, Sep 2026",
+     "url": "https://www.energetica-india.net/news/exide-commissions-6-gwh-phase-i-lithium-ion-cell-manufacturing-facility"
+    }
+   ],
+   "asOf": "2026-10-07"
+  },
+  {
+   "company": "Garware Hi-Tech",
+   "headline": "Car and window films now three-quarters; further shift is modest",
+   "now": "Garware Hi-Tech Films makes specialty polyester films, from raw chips to finished film, at Chhatrapati Sambhajinagar, and sells about three-quarters abroad, 44% to the US alone. Sun-control window film for cars and buildings is its main line, about ₹1,060cr or 50% of FY26 revenue of ₹2,120cr; clear paint-protection film for car bodies brought about ₹509cr (24%), and industrial films such as shrink labels, electrical insulation and packaging film about ₹551cr (26%). Three years ago industrial films were half the business and paint-protection film only about 5%.",
+   "future": "By FY29 Garware should look much like today, only bigger: the big change in its mix happened between FY23 and FY26. Management guides “over ₹2,500cr” of revenue in FY27, 15–20% growth a year after that and about ₹3,500cr “in three to four years” (Q1 FY27 call, 7 Aug 2026). Most of that growth comes from sun-control film: the existing lines were 75–80% full in May 2026, and a ₹191–192cr line adding about 30% more capacity (1,200 lakh sq ft a year, ₹500–550cr of sales at peak) is due in H1 FY28 by the company's date and June 2028 by CARE's. The ₹118cr TPU film line due in Q3 FY27 mainly feeds Garware's own paint-protection film (about 75% of its output), so it should lift margins by an expected 1.5–2 points in FY28 rather than create a large new line. On my numbers sun-control film rises to about 55% of revenue, paint-protection film holds at about a quarter and industrial films slip to about 20%.",
+   "segments": [
+    {
+     "name": "Sun-control film",
+     "plain": "heat- and UV-blocking window film for cars and buildings, incl. safety and home films"
+    },
+    {
+     "name": "Paint-protection film",
+     "plain": "clear self-healing film that protects car paint, plus new TPU-based products"
+    },
+    {
+     "name": "Industrial films",
+     "plain": "shrink-label, insulation, release-liner, packaging and plain polyester films"
+    }
+   ],
+   "mix": [
+    {
+     "year": "FY23",
+     "basis": "estimate: consumer 49% / industrial 51% from the FY23 presentation (confirmed by CARE); paint-protection film from the Q4 FY23 call",
+     "total": 1438,
+     "parts": [
+      {
+       "segment": "Sun-control film",
+       "revenue": 633,
+       "pct": 44
+      },
+      {
+       "segment": "Paint-protection film",
+       "revenue": 72,
+       "pct": 5
+      },
+      {
+       "segment": "Industrial films",
+       "revenue": 733,
+       "pct": 51
+      }
+     ]
+    },
+    {
+     "year": "FY26",
+     "basis": "presentation + call: consumer 74% / industrial 26% (Q1 FY27 presentation, 'as on FY26'); sun-control 48–50% and paint-protection about 25% (Q4 FY26 and Q1 FY27 calls)",
+     "total": 2120,
+     "parts": [
+      {
+       "segment": "Sun-control film",
+       "revenue": 1060,
+       "pct": 50
+      },
+      {
+       "segment": "Paint-protection film",
+       "revenue": 509,
+       "pct": 24
+      },
+      {
+       "segment": "Industrial films",
+       "revenue": 551,
+       "pct": 26
+      }
+     ]
+    },
+    {
+     "year": "FY29E",
+     "basis": "my projection",
+     "total": 3075,
+     "parts": [
+      {
+       "segment": "Sun-control film",
+       "revenue": 1700,
+       "pct": 55
+      },
+      {
+       "segment": "Paint-protection film",
+       "revenue": 755,
+       "pct": 25
+      },
+      {
+       "segment": "Industrial films",
+       "revenue": 620,
+       "pct": 20
+      }
+     ]
+    }
+   ],
+   "assumptions": [
+    {
+     "segment": "Sun-control film",
+     "growth": "~17% a year FY26–FY29 (₹1,060cr to about ₹1,700cr)",
+     "why": "FY26 sun-control volume was 3,031 lakh sq ft (CARE) against 4,200 of capacity, and management said in May 2026 that the lines would be full by FY28, which is roughly 25–30% more volume. The new 1,200 lakh sq ft line (peak sales ₹500–550cr) might add about ₹200cr in FY29, as its start date is uncertain (H1 FY28 per the company, June 2028 per CARE) and some of it will be used for paint-protection film. Architectural and home film, about a quarter of sun-control sales and growing 25–30% a year by management's account, lift the mix. Guidance looks reachable for FY27, but I assume sun-control growth slows in FY28 while capacity is tight."
+    },
+    {
+     "segment": "Paint-protection film",
+     "growth": "~14% a year (₹509cr to about ₹755cr)",
+     "why": "Capacity doubled to 60 million sq ft when the second line started in Q2 FY26; the old line runs near 100% and the new one about 60% (Q1 FY27 call), so filling it adds roughly a quarter. The TPU line (360 lakh sq ft a year) sends only about a quarter of its output to outside sales of new products, so management's hope that TPU becomes “beyond ₹500cr” in three years needs more capex and is not in my numbers. Growth is held back by its largest US customer's talk of making film in-house and by cheap Chinese and Korean imports (an anti-dumping duty has only been recommended). It grew only about 6% a year from the roughly ₹450cr an analyst cited for FY24 on the Q4 FY24 call to FY26."
+    },
+    {
+     "segment": "Industrial films",
+     "growth": "~4% a year (₹551cr to about ₹620cr)",
+     "why": "No new industrial capacity is planned (42,000 tonnes a year); volumes of some industrial products fell in FY26 (CARE), and the company's capex and marketing go to consumer films. Prices mostly follow raw materials, so I assume low single-digit growth."
+    }
+   ],
+   "managementAim": "Revenue “over ₹2,500cr” in FY27 at a 25% ±2 EBITDA margin, 15–20% growth a year after that and about ₹3,500cr “in three to four years”, with ₹3,000cr possible in about two (Q1 FY27 call, 7 Aug 2026). TPU “scalable beyond ₹500cr” in three years with more capex, and 35% of new lines' output earmarked for architectural film (Q1 FY27 call). Home solutions plus new products (PDLC privacy film and others) above ₹200cr in FY28 (Q4 FY26 call, 7 May 2026).",
+   "drivers": [
+    {
+     "kind": "capex",
+     "text": "TPU film line: ₹118cr, 360 lakh sq ft a year, India's first; about 75% of output goes into its own paint-protection film and 25% to new products; commissioning in Q3 FY27, with 1.5–2 points of extra margin expected in FY28.",
+     "source": "Q1 FY27 call, 7 Aug 2026; FY26 annual report"
+    },
+    {
+     "kind": "capex",
+     "text": "New sun-control line: ₹191–192cr, about 1,200 lakh sq ft a year (about 30% more sun-control capacity), commercial production in H1 FY28 by the company's date, June 2028 by CARE's; peak sales ₹500–550cr.",
+     "source": "Q4 FY26 call, 7 May 2026; Q1 FY27 call, 7 Aug 2026; CARE rating rationale, Jul 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "Second paint-protection line commissioned in Q2 FY26, doubling capacity to 60 million sq ft; the new line was about 60% used in Q1 FY27.",
+     "source": "FY26 annual report; Q1 FY27 call, 7 Aug 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "Revenue over ₹2,500cr in FY27 (Q1 FY27 brought ₹633cr, up 28%), then 15–20% a year.",
+     "source": "Q1 FY27 call, 7 Aug 2026"
+    },
+    {
+     "kind": "customers",
+     "text": "Five car makers buy its paint-protection film in India; 250+ application studios in India and 14 abroad; Garware Home Solutions studios at 9, target 50 by March 2027.",
+     "source": "Q1 FY27 call, 7 Aug 2026"
+    }
+   ],
+   "risks": [
+    "The US is about 44% of revenue and one customer group about 31% of product sales (FY26 annual report); its largest US paint-protection customer has talked of making film in-house.",
+    "The new sun-control line may come a year later than the company says (CARE dates it June 2028), leaving sun-control capacity tight through FY28.",
+    "Architectural and home film need consumer education; management itself says this market must be created, so growth may come more slowly than hoped.",
+    "Shipping and trade disruption: a vessel stuck at Jebel Ali in the Middle East war delayed Q1 FY27 paint-protection sales, and US tariffs swung from 50% to 10% extra within a year.",
+    "Cheap paint-protection film from China and Korea; the anti-dumping duty is only recommended so far."
+   ],
+   "shift": "modest",
+   "confidence": "medium",
+   "confidenceWhy": "The FY29 mix rests mostly on lines already running or paid for from cash (TPU line, one new sun-control line), so its direction is firm, but its size depends on the new line starting on time and on US demand.",
+   "watch": [
+    {
+     "text": "TPU film line commissioned and supplying the paint-protection line",
+     "due": "Q3 FY27"
+    },
+    {
+     "text": "FY27 revenue at least ₹2,500cr, with paint-protection film back to about a quarter of sales (it was 20% in Q1)",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "50 Garware Home Solutions studios open",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "New sun-control line in commercial production",
+     "due": "Q2 FY28"
+    },
+    {
+     "text": "Home solutions plus new products (PDLC, TPU items) above ₹200cr in FY28",
+     "due": "Q4 FY28"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Garware Hi-Tech Films: Q1 FY27 earnings call transcript, 7 Aug 2026 (BSE)",
+     "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/f70cb6d0-f760-4e1d-9fed-1c323a633092.pdf"
+    },
+    {
+     "label": "Garware Hi-Tech Films: Q4 FY26 earnings call transcript, 7 May 2026 (company)",
+     "url": "https://www.garwarehitechfilms.com/public/storage/files/pdf_file/1778500096_Intimation%20of%20Transcript%20of%20Earnings%20Call.pdf"
+    },
+    {
+     "label": "Garware Hi-Tech Films: investor presentation Q1 FY27, Aug 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/GRWRHITECH_06082026130250_GHFL_BM_Investor_Presenation_Q1FY27.pdf"
+    },
+    {
+     "label": "Garware Hi-Tech Films: Annual Report FY26 (BSE)",
+     "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/a7d7cfd8-ea30-4854-bbf1-d7b82c56ef19.pdf"
+    },
+    {
+     "label": "Garware Hi-Tech Films: rating rationale, Jul 2026 — CARE Ratings",
+     "url": "https://www.careratings.com/upload/CompanyFiles/PR/202607150743_Garware_Hi-Tech_Films_Limited.pdf"
+    },
+    {
+     "label": "Garware Hi-Tech Films: investor presentation FY23, 1 Jun 2023 (company)",
+     "url": "https://www.garwarehitechfilms.com/public/storage/files/pdf_file/1713333342_GHFL-Investor-Presentation-Reg-30-dt-01.06.2023.pdf"
+    },
+    {
+     "label": "Garware Hi-Tech Films: Q4 FY23 earnings call transcript, 1 Jun 2023 (company)",
+     "url": "https://www.garwarehitechfilms.com/public/storage/files/pdf_file/1713333270_GHFLEarningscallTranscriptReg30dt02062023.pdf"
+    },
+    {
+     "label": "Garware Hi-Tech Films: investor presentation Q4 FY25, May 2025 (CPD/IPD mix FY23–FY25) (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/GRWRHITECH_14052025141016_GHFL_BM_Investor_Presenation.pdf"
+    },
+    {
+     "label": "Garware Hi-Tech Films: Q4 FY24 earnings call transcript, 30 May 2024 (BSE)",
+     "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/390c75f0-033a-441f-94ea-5829332f133a.pdf"
+    }
+   ],
+   "asOf": "2026-10-07"
+  },
+  {
+   "company": "Happy Forgings",
+   "headline": "Truck and tractor crankshaft maker moving into heavy industrial parts",
+   "now": "Happy Forgings, based in Ludhiana, forges and machines heavy crankshafts, axle beams and transmission parts; 89% of FY26 sales were fully machined parts. Of FY26 revenue of ₹1,546cr, trucks made up 37%, tractors 32%, industrial engines and machines (power generation, wind, rail, oil and gas, data centres) 14%, off-highway machines 11% and cars 6%. It sells to Indian and European truck and tractor makers and to global engine makers; about a quarter of revenue is exported directly or indirectly.",
+   "future": "By FY29 I expect industrial parts to be about 22% and cars about 10% of a roughly ₹2,375cr business, with trucks and tractors falling from 69% to 58% of revenue: a real but modest shift. The new work comes from an order book worth about ₹950cr of extra yearly revenue once ramped up over two to three years, roughly 40% industrial and 25–30% cars, with 60% for export (Q1 FY27 call, 5 Aug 2026). The key capex is a heavy line for parts of 250 kg to 3 tonnes, inside a ₹650cr programme, which finishes installation by March 2027, starts selling in FY28 after 6–9 months of customer testing, and should 'start contributing meaningfully from FY29'; about ₹250cr of the order book is heavy parts for data-centre generator engines. Management aims for industrials at 30–31% of revenue and trucks at 27% (Q4 FY26 call, 22 May 2026), but I stop short because the heavy line ramps only late in FY28 and its truck forecast for FY27 has already slipped.",
+   "segments": [
+    {
+     "name": "Trucks",
+     "plain": "Crankshafts, axle beams and other parts for commercial vehicles"
+    },
+    {
+     "name": "Tractors",
+     "plain": "Crankshafts and transmission parts for farm equipment"
+    },
+    {
+     "name": "Off-highway",
+     "plain": "Parts for construction and mining machines"
+    },
+    {
+     "name": "Industrial",
+     "plain": "Large crankshafts and parts for generator, power, wind, rail and oil-and-gas engines and machines"
+    },
+    {
+     "name": "Cars",
+     "plain": "Crankshafts and machined parts for passenger-car makers in India and abroad"
+    }
+   ],
+   "mix": [
+    {
+     "year": "FY23",
+     "basis": "IPO prospectus split as reported by Auto Components India (43.7% trucks, 36.8% tractors, 15.9% off-highway, 3.7% industrial, no cars) applied to FY23 revenue of ₹1,197cr; matches the 9M FY23 deck (43/37/16/4) and the Q4 FY24 call ('industrial 4% to 12%')",
+     "total": 1197,
+     "parts": [
+      {
+       "segment": "Trucks",
+       "revenue": 523,
+       "pct": 44
+      },
+      {
+       "segment": "Tractors",
+       "revenue": 440,
+       "pct": 37
+      },
+      {
+       "segment": "Off-highway",
+       "revenue": 190,
+       "pct": 16
+      },
+      {
+       "segment": "Industrial",
+       "revenue": 44,
+       "pct": 4
+      },
+      {
+       "segment": "Cars",
+       "revenue": 0,
+       "pct": 0
+      }
+     ]
+    },
+    {
+     "year": "FY26",
+     "basis": "annual report FY26 revenue mix by industry (same on the Q4 FY26 call and Q1 FY27 deck) applied to revenue of ₹1,546cr; the company reports a single operating segment",
+     "total": 1546,
+     "parts": [
+      {
+       "segment": "Trucks",
+       "revenue": 572,
+       "pct": 37
+      },
+      {
+       "segment": "Tractors",
+       "revenue": 495,
+       "pct": 32
+      },
+      {
+       "segment": "Off-highway",
+       "revenue": 170,
+       "pct": 11
+      },
+      {
+       "segment": "Industrial",
+       "revenue": 216,
+       "pct": 14
+      },
+      {
+       "segment": "Cars",
+       "revenue": 93,
+       "pct": 6
+      }
+     ]
+    },
+    {
+     "year": "FY29E",
+     "basis": "my projection",
+     "total": 2375,
+     "parts": [
+      {
+       "segment": "Trucks",
+       "revenue": 760,
+       "pct": 32
+      },
+      {
+       "segment": "Tractors",
+       "revenue": 610,
+       "pct": 26
+      },
+      {
+       "segment": "Off-highway",
+       "revenue": 240,
+       "pct": 10
+      },
+      {
+       "segment": "Industrial",
+       "revenue": 520,
+       "pct": 22
+      },
+      {
+       "segment": "Cars",
+       "revenue": 245,
+       "pct": 10
+      }
+     ]
+    }
+   ],
+   "assumptions": [
+    {
+     "segment": "Industrial",
+     "growth": "~34% a year FY26–FY29 (₹216cr → ₹520cr)",
+     "why": "Q1 FY27 grew 50%. The order book holds about ₹350–380cr of industrial revenue at peak (35–40% of ₹950cr), of which ₹250cr is heavy data-centre parts that start only in Q3 FY28. I assume about 80% of the other industrial orders and half of the heavy ones are running by FY29, plus ~10% a year on the existing base. Management's 30–31% share would need about ₹700cr, more than the current order book supports by FY29."
+    },
+    {
+     "segment": "Cars",
+     "growth": "~38% a year (₹93cr → ₹245cr)",
+     "why": "Grew 70% in Q1 FY27 to 8% of sales; 25–30% of the order book (about ₹240–285cr at peak) is car parts and its share with one large customer rose from 32% to 47% (Q4 FY26 call). I stay below management's 12–15% aim because the orders take two to three years to peak."
+    },
+    {
+     "segment": "Trucks",
+     "growth": "~10% a year",
+     "why": "In May management said truck revenue could grow 35–40% in FY27, but Q1 grew only single digits as exports fell 12% on shipping delays; ICRA expects Indian heavy-truck sales to grow only 1–3% in FY27. Share gains (32% towards a 42% target in heavy-truck crankshafts) and ₹240–285cr of truck orders keep growth near 10%."
+    },
+    {
+     "segment": "Tractors",
+     "growth": "~7% a year",
+     "why": "Q1 FY27 grew in the mid-20s after a record FY26, but ICRA expects tractor sales to grow 1–4% in FY27, US and European tractor demand is weak, and the order book has little tractor work; a share gain from 41% to 45% adds a little."
+    },
+    {
+     "segment": "Off-highway",
+     "growth": "~12% a year",
+     "why": "Grew over 40% in Q1 FY27 from a weak FY26, and parts over 1 tonne for North American mining and earth-moving machines are being developed; but the segment shrank about 4% a year over FY23–FY26."
+    }
+   ],
+   "managementAim": "Industrials to about 30–31% of revenue (from 14%), trucks to about 27% (from 37%) and cars to almost 10% (from 6%) over the next 2–3 years (Q4 FY26 call, 22 May 2026). On the Q1 FY27 call (5 Aug 2026): industrial will 'double from these levels in next three years to four years' and cars reach 12–15% of revenue, the two together 45–50%.",
+   "drivers": [
+    {
+     "kind": "capex",
+     "text": "Heavy-parts line for 250 kg to 3 tonne parts, part of a ~₹650cr heavy-forgings programme: installation complete by end FY27, commercial revenue from FY28 after 6–9 months of testing, meaningful from FY29; FY27 capex ₹450–500cr guided in May (₹350–400cr a year said in August), about ₹800cr over two years including a ₹170cr captive solar plant.",
+     "source": "Q4 FY26 call, 22 May 2026; Q1 FY27 call and presentation, 5 Aug 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "Order book of about ₹950cr of extra yearly revenue at peak over 2–3 years: about 40% industrial, 25–30% cars, 25–30% trucks, the rest off-highway and tractors; 60% export; priced at ₹345–350 a kg against ₹253 a kg today.",
+     "source": "Q1 FY27 call, 5 Aug 2026; Q4 FY26 call, 22 May 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "₹250cr of the order book is heavy parts (0.7–1.8 tonnes) for engines in data-centre generator sets, executing from Q3 FY28; a large European industrial order starts in FY29.",
+     "source": "Q4 FY26 call, 22 May 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "Forging capacity 152,000 t (59% used) rising to 161,000 t in FY27 and 187,000 t by FY28; machining 75,200 t (78% used) rising to 82,000 t and 87,000 t.",
+     "source": "Q1 FY27 call, 5 Aug 2026; Q4 FY26 call, 22 May 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "FY27 volume growth in the high teens with EBITDA margin above 30%; Q1 FY27 volume +23%, revenue +27%, industrial +50%, cars +70%.",
+     "source": "Q1 FY27 call, 5 Aug 2026"
+    },
+    {
+     "kind": "customers",
+     "text": "Share with one large car customer up from 32% to 47% with a line added; North American programmes ramping, with another programme from the same client from FY28.",
+     "source": "Q4 FY26 call, 22 May 2026"
+    }
+   ],
+   "risks": [
+    "Trucks and tractors are still about two-thirds of revenue and face a weaker second half of FY27 after strong FY26 sales (ICRA: +1–4%), which drags on the whole company.",
+    "The heavy line is new territory: 3-tonne parts need 6–9 months of customer testing, so a slip pushes most industrial growth beyond FY29.",
+    "Heavy industrial demand leans on data-centre generator engines, which depend on the AI spending cycle.",
+    "60% of new orders are exports, many sold delivered-duty-paid; West Asia shipping delays already cut Q1 truck exports 12%, and only about 75% of higher container costs are recovered.",
+    "₹800–900cr of capex keeps free cash near zero and return on capital down to about 16–17% until the new plants fill (CRISIL).",
+    "Management's forecasts can run ahead: truck growth of 35–40% was promised for FY27 and Q1 delivered single digits."
+   ],
+   "shift": "modest",
+   "confidence": "medium",
+   "confidenceWhy": "Most of the FY29 industrial and car growth rests on a named ₹950cr order book and capacity under construction, but the heavy line has not yet made a sellable part and the truck and tractor lines, still 58% of FY29 revenue, are extrapolated.",
+   "watch": [
+    {
+     "text": "Heavy-parts line installed, with trials under way by March 2027",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Industrial at least 17% of FY27 revenue (16% in Q1)",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Cars at least 8% of FY27 revenue",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Order book of new business above ₹1,000cr of peak yearly revenue",
+     "due": "Q3 FY27"
+    },
+    {
+     "text": "First sales of heavy data-centre engine parts",
+     "due": "Q3 FY28"
+    },
+    {
+     "text": "Industrial at least 20% of revenue in a quarter",
+     "due": "Q4 FY28"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Happy Forgings Q1 FY27 investor presentation, 4 Aug 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/9876964720_04082026155238_InvestorPresentation04082026.pdf"
+    },
+    {
+     "label": "Happy Forgings annual report FY26 (BSE)",
+     "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/9cdc96ee-0da3-4847-99db-bf467f0f18c8.pdf"
+    },
+    {
+     "label": "Happy Forgings Q3 FY24 investor presentation, Feb 2024 (9M FY23 sector mix) (BSE)",
+     "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/c9518f8b-0cdd-48c4-b5c1-16bb6bd4e4bd.pdf"
+    },
+    {
+     "label": "Happy Forgings Q4 FY24 call transcript, 27 May 2024 (BSE)",
+     "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/6edab810-3d38-442d-8bd8-0aa435b26da1.pdf"
+    },
+    {
+     "label": "Auto Components India: 'Happy Forgings takes the IPO route' (FY23 split from the prospectus)",
+     "url": "https://autocomponentsindia.com/happy-forgings-takes-the-ipo-route/"
+    },
+    {
+     "label": "CRISIL rating rationale, Aug 2026",
+     "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/HappyForgingsLimited_August%2007_%202026_RR_401153.html"
+    }
+   ],
+   "asOf": "2026-10-07"
+  },
+  {
+   "company": "HBL Engineering",
+   "headline": "Battery maker turned Kavach supplier; fuzes and e-drives come next",
+   "now": "HBL makes Kavach, the Indian Railways system that brakes trains automatically to stop collisions, plus train-management systems, and specialised batteries: nickel-cadmium, lead-acid and lithium batteries for railways, telecom, data centres, oil and gas and export, and batteries for aircraft, missiles and submarines. In FY26 the electronics segment, mostly Kavach, was ₹1,626cr (49%) of ₹3,311cr of consolidated segment revenue, industrial batteries ₹1,416cr (43%), defence and aviation batteries ₹212cr (6%) and other lines ₹57cr (2%). Three years earlier industrial batteries alone were three-quarters of sales; Kavach orders from a single buyer, the railways, changed that in FY26.",
+   "future": "The big shift has already happened; the next three years are about whether new lines take over as Kavach fades. HBL holds no earnings calls, but the chairman's FY26 annual report (Sep 2026) says Kavach, almost half of FY26 sales, should be about the same share in FY27, that ‘sales will continue to be good in FY 27 and FY 28’, and that ‘both sales and PBT could decline from FY 29 onwards’ as competition grows; in January 2026 HBL lost a 6,300-unit locomotive tender on price, though it won a ₹1,714cr locomotive order in May. The growth he points to is electronic fuzes for ammunition (grenade fuzes already sell to the Home Ministry; Army and 155 mm artillery approvals are expected in 2027), electric drive trains for 55-tonne trucks (approval by March 2027, pilot sales from July 2027, already nine months late) and for boats through a joint venture with Cochin Shipyard, and nickel-cadmium and data-centre batteries whose capacity is being expanded. Capex is small, ₹150cr in FY26 from its own cash. Management's ‘not a prediction’ scenario is more than ₹5,000cr of sales in FY30; I expect about ₹3,900cr in FY29, with electronics down to about 39%, defence (batteries plus fuzes) up from 6% to about 14%, and batteries back as the largest line at about 45%. That flip in the largest line comes from Kavach shrinking, not a new business, so I call the shift modest.",
+   "segments": [
+    {
+     "name": "Electronics (mostly Kavach)",
+     "plain": "Kavach anti-collision system, train-management systems and new electric drive trains for trucks and boats"
+    },
+    {
+     "name": "Industrial batteries",
+     "plain": "nickel-cadmium, lead-acid and lithium batteries for railways, telecom, data centres, oil and gas and export"
+    },
+    {
+     "name": "Defence",
+     "plain": "batteries for aircraft, missiles, torpedoes and submarines (filed as defence and aviation batteries); I add fuze sales here from FY28"
+    },
+    {
+     "name": "Other",
+     "plain": "railway signalling contracts and small lines (filed as unallocated)"
+    }
+   ],
+   "mix": [
+    {
+     "year": "FY23",
+     "basis": "annual report segment note (FY24 report, note 45.9), consolidated, before ₹8cr of inter-segment sales",
+     "total": 1376,
+     "parts": [
+      {
+       "segment": "Electronics (mostly Kavach)",
+       "revenue": 136,
+       "pct": 10
+      },
+      {
+       "segment": "Industrial batteries",
+       "revenue": 1019,
+       "pct": 74
+      },
+      {
+       "segment": "Defence",
+       "revenue": 183,
+       "pct": 13
+      },
+      {
+       "segment": "Other",
+       "revenue": 38,
+       "pct": 3
+      }
+     ]
+    },
+    {
+     "year": "FY26",
+     "basis": "annual report segment note (note 44.9), consolidated, before ₹8cr of inter-segment sales (net revenue ₹3,303cr)",
+     "total": 3311,
+     "parts": [
+      {
+       "segment": "Electronics (mostly Kavach)",
+       "revenue": 1626,
+       "pct": 49
+      },
+      {
+       "segment": "Industrial batteries",
+       "revenue": 1416,
+       "pct": 43
+      },
+      {
+       "segment": "Defence",
+       "revenue": 212,
+       "pct": 6
+      },
+      {
+       "segment": "Other",
+       "revenue": 57,
+       "pct": 2
+      }
+     ]
+    },
+    {
+     "year": "FY29E",
+     "basis": "my projection",
+     "total": 3935,
+     "parts": [
+      {
+       "segment": "Electronics (mostly Kavach)",
+       "revenue": 1550,
+       "pct": 39
+      },
+      {
+       "segment": "Industrial batteries",
+       "revenue": 1780,
+       "pct": 45
+      },
+      {
+       "segment": "Defence",
+       "revenue": 545,
+       "pct": 14
+      },
+      {
+       "segment": "Other",
+       "revenue": 60,
+       "pct": 2
+      }
+     ]
+    }
+   ],
+   "assumptions": [
+    {
+     "segment": "Electronics (mostly Kavach)",
+     "growth": "up in FY27–FY28, then down; about −2% a year FY26–FY29 overall (₹1,626cr to about ₹1,550cr)",
+     "why": "The chairman's FY26 report sees Kavach at about half of FY27 sales, good in FY27–FY28 and possibly declining from FY29. The January 2026 update put FY27 Kavach sales at ‘at least’ ₹1,900cr (₹1,000cr locomotive, ₹900cr stations) and ₹400cr of station work in FY28, before the ₹1,714cr locomotive order of May 2026, due within 12 months. I take Kavach down to about ₹1,200cr in FY29 as about five approved rivals bid lower, and add about ₹200cr of train-management systems (the chairman spoke of ₹100–300cr a year at the Sep 2025 AGM) and about ₹150cr of truck and boat drive trains in their second year of sales."
+    },
+    {
+     "segment": "Industrial batteries",
+     "growth": "~8% a year FY26–FY29 (₹1,416cr to about ₹1,780cr)",
+     "why": "Flat for three years (₹1,423cr in FY24, ₹1,416cr in FY26) as telecom lead-acid batteries moved to lithium, but Q1 FY27 was up 7% (₹362cr against ₹337cr). Nickel-cadmium grew by double digits in FY26 with a healthy order book and new capacity, data-centre battery sales doubled and that capacity is being doubled, and Vande Bharat and Siemens lithium-battery orders add; telecom is now a smaller drag (FY26 annual report)."
+    },
+    {
+     "segment": "Defence",
+     "growth": "₹212cr to about ₹545cr in FY29",
+     "why": "Defence batteries grow about 5% a year to about ₹245cr (₹183cr in FY23, ₹227cr in FY25, ₹212cr in FY26: lumpy), plus about ₹300cr of electronic fuzes in FY29, their second year after the Army and 155 mm approvals expected during 2027. That is well short of management's FY25 view that fuzes become the second-largest business by FY30, because approvals depend on test ranges and have no firm date. The company has not said which filed segment fuze sales go into; if they are booked in electronics, electronics is about ₹300cr higher and defence lower, which does not change the conclusion."
+    },
+    {
+     "segment": "Other",
+     "growth": "flat at about ₹60cr",
+     "why": "The unallocated line (railway signalling contracts and others) has ranged from ₹38cr to ₹98cr a year over FY23–FY26 with no stated plan."
+    }
+   ],
+   "managementAim": "No formal guidance and no calls. The chairman's FY26 annual report (Sep 2026) gives a ‘Likely Scenario for FY30 and Beyond (Not a Prediction)’ of more than ₹5,000cr of sales in FY30, raised from ₹4,500cr a year earlier, with Kavach, industrial nickel-cadmium batteries, electronic fuzes and truck drive trains the four biggest contributors over the next four years; the FY25 report expected fuzes to be the second-largest business by FY30. On 24 May 2026 the company said FY27 sales and profit would be ‘significantly better’ than FY26.",
+   "drivers": [
+    {
+     "kind": "orders",
+     "text": "₹1,714cr (excluding GST) on-board Kavach order from Chittaranjan Locomotive Works, to be completed within 12 months",
+     "source": "HBL filing to NSE/BSE, 28 May 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "FY27 Kavach sales expected at ‘at least’ ₹1,900cr (₹1,000cr locomotive units, ₹900cr stations) plus ₹400cr of station work in FY28; lost a 6,300-unit locomotive tender because rivals bid lower",
+     "source": "HBL update to stakeholders, 15 Jan 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "Order book ₹2,999cr at 31 Dec 2025, plus ₹1,375cr of new on-board Kavach orders won in the following quarter",
+     "source": "CARE rating rationale, 25 Feb 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "Kavach sales good in FY27 and FY28; ‘both sales and PBT could decline from FY 29 onwards’",
+     "source": "Chairman's message, FY26 annual report, Sep 2026"
+    },
+    {
+     "kind": "customers",
+     "text": "Grenade fuzes approved by the Home Ministry and selling; Army approval and 155 mm artillery fuze approval expected during 2027; licensed fuze plant set up in Telangana",
+     "source": "FY26 annual report, Sep 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "Truck drive-train approval expected by March 2027 and pilot sales from July 2027 (nine months late); Green Maritime Propulsion, a joint venture with Cochin Shipyard, incorporated 11 June 2026 and has ordered batteries for two electric tugs",
+     "source": "FY26 annual report, Sep 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "Nickel-cadmium capacity being expanded and data-centre (PLT) battery capacity doubled; about ₹200cr invested in a defence lithium-cell plant; FY26 capex ₹150cr from its own cash",
+     "source": "FY26 annual report, Sep 2026"
+    }
+   ],
+   "risks": [
+    "Kavach is one programme with one buyer and about five approved suppliers; HBL lost a 6,300-unit tender on price in January 2026, so FY29 sales and margins could fall faster than I assume.",
+    "Fuze approvals depend on Army test ranges and have no firm date; without them the defence line stays small and the FY30 scenario falls short.",
+    "Electric trucks are already nine months late, need fleet owners to switch from diesel, and face rivals using imported kits.",
+    "Sales are lumpy: Q1 FY27 revenue was about ₹638cr against an FY26 average of about ₹826cr a quarter, so one delayed order can move a whole year.",
+    "The founder-chairman drives all nine business units and holds no earnings calls; the succession plan is still being built."
+   ],
+   "shift": "modest",
+   "confidence": "low",
+   "confidenceWhy": "Batteries are steady, but Kavach orders in hand run only into FY28, fuzes are not yet approved by the Army and trucks are not yet certified, so the FY29 split between electronics and defence is mostly my extrapolation.",
+   "watch": [
+    {
+     "text": "FY27 revenue above FY26's ₹3,303cr, as management expects (‘significantly better’)",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Industrial-battery segment revenue at least ₹1,500cr in FY27",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Truck drive train certified by March 2027 and first pilot sales by September 2027",
+     "due": "Q2 FY28"
+    },
+    {
+     "text": "Army approval for grenade fuzes and approval of 155 mm artillery fuzes announced",
+     "due": "Q3 FY28"
+    },
+    {
+     "text": "Defence and aviation segment above ₹300cr in FY28, showing fuze sales",
+     "due": "Q4 FY28"
+    },
+    {
+     "text": "Electronics segment at or above ₹1,600cr in FY28, with new Kavach orders won during the year",
+     "due": "Q4 FY28"
+    }
+   ],
+   "sources": [
+    {
+     "label": "HBL Engineering Annual Report FY26: chairman's message, MD&A, segment note 44.9 (NSE, Sep 2026)",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_31215_HBLENGINE_2025_2026_A_3248804_03092026143904.pdf"
+    },
+    {
+     "label": "HBL Engineering Annual Report FY25: FY30 scenario and Kavach outlook (NSE)",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_28147_HBLENGINE_2024_2025_A_3612786_02092025161351.pdf"
+    },
+    {
+     "label": "HBL Power Systems Annual Report FY24: segment note 45.9 with FY23 figures (NSE)",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_25659_HBLPOWER_2023_2024_04092024133643.pdf"
+    },
+    {
+     "label": "HBL Q1 FY27 results with segment table, 8 Aug 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/HBLPOWER_08082026162121_outcomeandresults3006.pdf"
+    },
+    {
+     "label": "HBL information to shareholders on FY26 results, 24 May 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/HBLPOWER_24052026114714_Informationtoshareholders.pdf"
+    },
+    {
+     "label": "HBL ₹1,714cr Kavach order from CLW, 28 May 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/HBLPOWER_28052026183104_Kavachorder.pdf"
+    },
+    {
+     "label": "HBL update to stakeholders on Kavach tenders, 15 Jan 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/HBLPOWER_15012026161219_Updates_January_2026.pdf"
+    },
+    {
+     "label": "HBL rating rationale, CARE A+/Positive, 25 Feb 2026",
+     "url": "https://www.careratings.com/upload/CompanyFiles/PR/202602120202_HBL_Engineering_Limited.pdf"
+    },
+    {
+     "label": "HBL AGM transcript, Sep 2025 (company)",
+     "url": "https://hbl.in/reports/agm/hbl_engi_ltd_agm_transcript_2025.pdf"
+    }
+   ],
+   "asOf": "2026-10-07"
+  },
+  {
+   "company": "Jupiter Wagons",
+   "headline": "Wagon maker building a big wheel plant, plus batteries",
+   "now": "Jupiter Wagons builds railway freight wagons, about 80% of its current wagon orders for private owners such as JSW and the rest for Indian Railways, plus load bodies for trucks, containers and rail crossings. Through subsidiaries it also makes wheelsets and axles at Aurangabad, freight brakes (Stone India, from July 2026), battery-storage systems and small electric trucks. In FY26 (consolidated revenue ₹2,916cr, a weak year when wheelset shortages cut wagon output by over a third) wagons were about 69% of revenue, wheels and axles sold outside the group 12%, truck bodies and containers 14%, batteries and EVs 1% and other parts 3%. Three years earlier (FY23) it was almost a pure wagon and truck-body maker, with wagons 79%.",
+   "future": "Management targets about ₹9,000cr of revenue by FY28–FY29 (CFO, investor conference call, 30 Sep 2026) and, earlier, ₹10,000cr by 2030 at a 15%+ margin with wagons only half of sales (MD, Q4 FY26 call, 1 Jun 2026), against about ₹3,000cr expected again in FY27. The main engine is a ₹2,500–2,600cr forged wheel and axle plant in Odisha (100,000 wheelsets a year, half meant for export; Italy's Lucchini and SIMEST pay about ₹290cr for 25%), which management says will bring ₹2,500–3,000cr of revenue once both lines run (Q1 FY27 call, 18 Aug 2026); the axle line is due by March 2027 and the wheel line by March 2028, and 'we will not see much volume in FY28 apart from some axle sales' (30 Sep 2026), so FY29 is its first full year. Battery storage has a ₹500cr order book, but ₹400cr of it is a 15-year build-own-operate project, where Jupiter owns the batteries and is paid over the years rather than booking a one-off sale. Wagons wait on a Railways tender with no date; Jupiter expects about 7,000 wagons a year once it comes. I expect about ₹4,500cr in FY29, with wagons down to about 56% of sales and wheels up to about 20%: a meaningful shift, but about half of management's target.",
+   "segments": [
+    {
+     "name": "Wagons",
+     "plain": "Railway freight wagons for Indian Railways and private owners, with the couplers, draft gear and bogies made for them"
+    },
+    {
+     "name": "Wheels and axles",
+     "plain": "Wheelsets, wheels and axles for wagons, coaches, metros and Vande Bharat trains, sold outside the group (Aurangabad now, Odisha from 2027–28)"
+    },
+    {
+     "name": "Truck bodies and containers",
+     "plain": "Load bodies such as tippers and tankers built onto truck chassis, and shipping and special containers"
+    },
+    {
+     "name": "Batteries and EVs",
+     "plain": "Battery-storage systems for factories and power utilities, small batteries for forklifts, and small electric trucks (Jupiter Electric Mobility)"
+    },
+    {
+     "name": "Other",
+     "plain": "Rail crossings for track, freight brakes sold outside the group, and other parts"
+    }
+   ],
+   "mix": [
+    {
+     "year": "FY23",
+     "basis": "annual report (product revenue table in the FY24 annual report MD&A, FY23 column); consolidated revenue equalled standalone (₹2,068cr) because the wheel and battery units were not yet part of the group",
+     "total": 2068.2,
+     "parts": [
+      {
+       "segment": "Wagons",
+       "revenue": 1627.5,
+       "pct": 79
+      },
+      {
+       "segment": "Wheels and axles",
+       "revenue": 0,
+       "pct": 0
+      },
+      {
+       "segment": "Truck bodies and containers",
+       "revenue": 366.6,
+       "pct": 18
+      },
+      {
+       "segment": "Batteries and EVs",
+       "revenue": 0,
+       "pct": 0
+      },
+      {
+       "segment": "Other",
+       "revenue": 74.1,
+       "pct": 4
+      }
+     ]
+    },
+    {
+     "year": "FY26",
+     "basis": "estimate (consolidated), built from FY26 annual report figures: standalone product table in the MD&A, subsidiary turnover in Form AOC-1, less ₹183cr of sales inside the group from the related-party note; it reconciles to consolidated revenue of ₹2,915.7cr and broadly agrees with CRISIL's split (Apr 2026) of about 75% wagons, 10% wheelsets, 10% truck bodies, 5% other",
+     "total": 2915.7,
+     "parts": [
+      {
+       "segment": "Wagons",
+       "revenue": 2025.5,
+       "pct": 69
+      },
+      {
+       "segment": "Wheels and axles",
+       "revenue": 347.3,
+       "pct": 12
+      },
+      {
+       "segment": "Truck bodies and containers",
+       "revenue": 407.7,
+       "pct": 14
+      },
+      {
+       "segment": "Batteries and EVs",
+       "revenue": 36.3,
+       "pct": 1
+      },
+      {
+       "segment": "Other",
+       "revenue": 98.8,
+       "pct": 3
+      }
+     ]
+    },
+    {
+     "year": "FY29E",
+     "basis": "my projection",
+     "total": 4470,
+     "parts": [
+      {
+       "segment": "Wagons",
+       "revenue": 2500,
+       "pct": 56
+      },
+      {
+       "segment": "Wheels and axles",
+       "revenue": 900,
+       "pct": 20
+      },
+      {
+       "segment": "Truck bodies and containers",
+       "revenue": 620,
+       "pct": 14
+      },
+      {
+       "segment": "Batteries and EVs",
+       "revenue": 300,
+       "pct": 7
+      },
+      {
+       "segment": "Other",
+       "revenue": 150,
+       "pct": 3
+      }
+     ]
+    }
+   ],
+   "assumptions": [
+    {
+     "segment": "Wagons",
+     "growth": "~7% a year FY26–FY29 (₹2,026cr → ~₹2,500cr, about 6,700 wagons at ~₹37 lakh)",
+     "why": "FY27 is guided flat at about 5,500 wagons (30 Sep 2026) and the wagon book (~₹3,000–3,500cr, 80% private) is mostly for FY27. Management expects about 7,000 wagons a year once the Railways' one-lakh-wagon tender is awarded; I assume it lands in time to lift FY29 but not fully, because no date has been given and the total order book has fallen from ₹6,304cr (Mar 2025, CRISIL) to ₹4,550cr (Jun 2026). FY25, a full year, was 8,718 wagons for ₹3,356cr."
+    },
+    {
+     "segment": "Wheels and axles",
+     "growth": "~37% a year (₹347cr → ~₹900cr of sales outside the group)",
+     "why": "The FY26 figure is the wheel subsidiary's ₹522cr turnover less ₹174cr of wheelsets sold to Jupiter's own wagon plant (FY26 annual report, Form AOC-1 and related-party note); management calls the business 'close to 500 crores' gross. For FY29: Aurangabad about ₹400cr outside the group (wheelset order book ~₹700cr, including 9,000 LHB axles and a letter of intent for 5,376 Vande Bharat wheelsets) plus about ₹500cr from Odisha's first full year. That is about a fifth of the ₹2,500–3,000cr management expects at full use, because the wheel line starts only in March 2028, needs approvals and export certification, and wheels fitted to Jupiter's own wagons drop out of group revenue (CRISIL assumes about 80% of output is used inside the group; management says half goes to export)."
+    },
+    {
+     "segment": "Truck bodies and containers",
+     "growth": "~15% a year (₹408cr → ~₹620cr)",
+     "why": "Truck load bodies grew 8% in FY26 (10,909 units) with a ~₹500cr order book, and units rose 19% in Q1 FY27; container revenue is guided to double in FY27 (Q4 FY26 call, 1 Jun 2026). I give no credit for the large marine-container expansion, which waits on a production-linked subsidy whose terms are not yet out."
+    },
+    {
+     "segment": "Batteries and EVs",
+     "growth": "₹36cr → ~₹300cr (roughly doubling each year from a tiny base)",
+     "why": "Battery-storage order book about ₹500cr, of which ₹400cr is the West Bengal 15-year build-own-operate project that earns income over the years, not sales up front; plus 110MWh of supply deals for FY27. Management's goal moved from ₹1,000cr of revenue in 3–4 years (Q4 FY26 call, 1 Jun 2026) to ₹1,000cr of orders by end-FY27 and ₹5,000cr of orders over three years (Q1 FY27 call, 18 Aug 2026). The electric small-truck business has one model and eight dealers, and the unit lost ₹30cr before tax in FY26, so I take well under half of the goal."
+    },
+    {
+     "segment": "Other",
+     "growth": "~15% a year (₹99cr → ~₹150cr)",
+     "why": "Rail crossings and other parts. Stone India's new freight brakes go mainly into Jupiter's own wagons (all its needs by December 2026, Q1 FY27 call), which drops out of group revenue, so only outside brake sales add here."
+    }
+   ],
+   "managementAim": "About ₹8,000–9,000cr of revenue 'toward the end of FY28-FY29', including about ₹3,000cr from the Odisha wheel plant and a ₹1,000cr battery order book, with wagons kept at about 50% of revenue and non-wagon businesses the other 50% by FY30 at a 15–16% EBITDA margin (CFO, investor conference call, 30 Sep 2026; the transcript marks some of these figures as hard to hear). Earlier: ₹10,000cr of revenue by 2030 at a margin of at least 15% (MD, Q4 FY26 call, 1 Jun 2026). Odisha plant: ₹2,500–3,000cr of revenue at full use and at least a 15% margin (Q1 FY27 call, 18 Aug 2026).",
+   "drivers": [
+    {
+     "kind": "capex",
+     "text": "Odisha forged wheel and axle plant, 100,000 wheelsets a year, ₹2,500–2,600cr funded 35% equity and 65% debt, both tied up; axle line by March 2027, wheel line by March 2028; Jupiter's own equity cut to about ₹600cr by the new partners.",
+     "source": "Q1 FY27 call, 18 Aug 2026; Q4 FY26 call, 1 Jun 2026; conference call, 30 Sep 2026"
+    },
+    {
+     "kind": "acquisition",
+     "text": "Italy's Lucchini RS and the state-backed SIMEST invest about ₹290cr for 25% of the wheel subsidiary, bringing wheel designs, European certifications and global marketing rights; Jupiter first bought out the last 1.94% to own 100%.",
+     "source": "Q1 FY27 presentation, 14 Aug 2026"
+    },
+    {
+     "kind": "customers",
+     "text": "Long-term supply agreement for Tatravagonka's wheelset needs from the Odisha plant (about 20,000–30,000 wheels a year); Indian demand put at 3–4 lakh wheelsets a year, with all metro and Vande Bharat wheelsets now imported.",
+     "source": "Q4 FY26 call, 1 Jun 2026; Q1 FY27 call, 18 Aug 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "Order book ₹4,550cr at June 2026: wagons ~₹3,000cr (about 80% private), wheelsets ~₹700cr, truck bodies ~₹500cr, battery storage ~₹500cr; 60–70% to be delivered in FY27.",
+     "source": "Q1 FY27 call, 18 Aug 2026; Q1 FY27 presentation, 14 Aug 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "Won 100MW/400MWh of standalone battery storage in West Bengal, about ₹400cr, to build, own and operate for 15 years for the state power board; funding not yet decided.",
+     "source": "Q1 FY27 presentation, 14 Aug 2026; Q1 FY27 call, 18 Aug 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "Stone India's freight brakes approved by the Railways' standards body; commercial production from July 2026, covering all Jupiter's own brake needs by December 2026.",
+     "source": "Q1 FY27 call, 18 Aug 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "FY27 revenue about ₹3,000cr, at par with FY26, with about 5,500 wagons; recovery in wagon output expected from Q1 FY28 if the tender comes by December.",
+     "source": "Conference call, 30 Sep 2026"
+    }
+   ],
+   "risks": [
+    "The Railways' wagon tender has no date; Jupiter's order book has shrunk for five quarters, from ₹6,304cr (Mar 2025) to ₹4,550cr (Jun 2026), and wagons are still most of the business.",
+    "The Odisha plant could slip again: its interim start already moved two quarters, and wheels need Railways approval and European certification before they sell; the Titagarh–Ramkrishna plant (228,000 wheels a year) arrives at the same time.",
+    "If, as CRISIL assumes, about 80% of Odisha's output goes into Jupiter's own wagons, far less of it shows up as new group revenue.",
+    "Borrowing and cash strain: net debt about ₹554cr, a 213-day cash cycle and ₹1,506cr of capex commitments, with the ₹400cr battery project's funding still undecided.",
+    "Management is spread across seven or more businesses; the battery/EV and brake units lost about ₹59cr before tax in FY26, and goals have shifted (battery revenue target became an order target).",
+    "The marine-container expansion depends on a government subsidy scheme whose terms are not yet published."
+   ],
+   "shift": "meaningful",
+   "confidence": "low",
+   "confidenceWhy": "Only the wagon book and the Aurangabad wheel plant rest on firm orders and running capacity; the FY29 wheel and battery figures depend on an Odisha plant that has not yet produced and needs certification, and the wagon figure on a Railways tender with no date.",
+   "watch": [
+    {
+     "text": "Odisha axle line commissioned and selling axles",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Railways wagon tender awarded, with Jupiter's share near its expected 7,000 wagons a year",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Battery-storage order book at ₹1,000cr by end-FY27",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Container revenue doubled in FY27 (about ₹175cr in the standalone product table)",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Odisha wheel line commissioned and first export wheels shipped",
+     "due": "Q4 FY28"
+    },
+    {
+     "text": "Non-wagon businesses at least 35% of consolidated FY28 revenue",
+     "due": "Q4 FY28"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Jupiter Wagons Q1 FY27 investor presentation, 14 Aug 2026",
+     "url": "https://jupiterwagons.com/wp-content/uploads/2026/08/Investor-Presentation-on-the-results-for-the-Q1-FY-2026-27-Dated-14.08.2026.pdf"
+    },
+    {
+     "label": "Jupiter Wagons annual report FY26 (MD&A product table, Form AOC-1, related-party note, segment note 41)",
+     "url": "https://jupiterwagons.com/wp-content/uploads/2026/09/Annual-Report-FY-2025-26.pdf"
+    },
+    {
+     "label": "Jupiter Wagons annual report FY24 (FY23 product revenue table) (BSE)",
+     "url": "https://bseindia.com/xml-data/corpfiling/AttachHis/33ee33d2-b36b-4a48-b79c-6a904e4171f2.pdf"
+    },
+    {
+     "label": "Jupiter Wagons Q1 FY27 call transcript, 18 Aug 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/CEBBCO_21082026162908_SETRANSCRIPT30062026.pdf"
+    },
+    {
+     "label": "CRISIL rating rationale, 16 Apr 2026",
+     "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/JupiterWagonsLimited_April%2016_%202026_RR_391449.html"
+    }
+   ],
+   "asOf": "2026-10-07"
+  },
+  {
+   "company": "Kaynes Technology",
+   "headline": "Contract electronics maker adding chip packaging and bare circuit boards",
+   "now": "Kaynes is a contract electronics maker: it builds circuit boards, cables and complete electronic products to other companies' designs, mainly for industrial and EV makers (55% of FY26 revenue) and car makers (25%), plus IT, rail, medical and aerospace customers, from plants across India and in Canada and the US. Of FY26 revenue of ₹3,626cr, contract manufacturing was ₹2,655cr (73%, including about ₹300cr from the overseas units) and smart electricity meters, from Iskraemeco (now Gridcrest) bought in 2024, ₹971cr (27%); the meter business also installs and services meters for state utilities, which pay slowly. Three years ago Kaynes was a ₹1,126cr pure contract manufacturer.",
+   "future": "Kaynes is building two new businesses: a ₹3,307cr chip assembly and test plant (OSAT) at Sanand, where 50% central and 20% state grants cover the qualifying cost, and a ₹1,400cr plant for advanced bare circuit boards (PCBs) in Chennai (FY26 annual report). About ₹1,200cr had been spent by August 2026, ₹300cr more each is planned for FY27, and both should start billing in Q3 FY27, a quarter late, with ₹450–500cr of combined FY27 revenue (Q1 FY27 call, 8 Aug 2026), down from the ₹550–700cr implied in May (Q4 FY26 call, 14 May 2026). Management says the chip plant has over ₹2,500cr of revenue visibility over five years, one large global buyer has asked for the board plant's 'entire capacity', and its stated aim is for chip packaging alone to be 30% of group revenue within four to five years. Meanwhile it is shrinking smart meters on purpose until state utilities pay the ₹1,311cr they owe, and may sell the installation side. On my projection the two plants reach about a fifth of FY29 revenue, not the third management talks about, because they are late, the customer list is thin and Kaynes missed its FY26 revenue guidance by about 20%.",
+   "segments": [
+    {
+     "name": "Contract electronics (EMS)",
+     "plain": "Circuit-board assembly, cables and complete products built to customers' designs, in India and North America"
+    },
+    {
+     "name": "Smart meters",
+     "plain": "Making, installing and servicing smart electricity meters for state power utilities"
+    },
+    {
+     "name": "Chip packaging (OSAT)",
+     "plain": "Assembling and testing semiconductor chips at Sanand, mainly power chips"
+    },
+    {
+     "name": "Bare circuit boards (PCB)",
+     "plain": "Multilayer and high-density bare boards from the new Chennai plant"
+    }
+   ],
+   "mix": [
+    {
+     "year": "FY23",
+     "basis": "annual report (consolidated; single reported segment, Electronics Manufacturing Services; FY24 annual report comparatives). Meters, chip packaging and bare boards did not exist yet",
+     "total": 1126,
+     "parts": [
+      {
+       "segment": "Contract electronics (EMS)",
+       "revenue": 1126,
+       "pct": 100
+      },
+      {
+       "segment": "Smart meters",
+       "revenue": 0,
+       "pct": 0
+      },
+      {
+       "segment": "Chip packaging (OSAT)",
+       "revenue": 0,
+       "pct": 0
+      },
+      {
+       "segment": "Bare circuit boards (PCB)",
+       "revenue": 0,
+       "pct": 0
+      }
+     ]
+    },
+    {
+     "year": "FY26",
+     "basis": "call (company still reports one segment; metering revenue of ₹971cr and EMS of ₹2,655cr out of consolidated ₹3,626cr given on the Q4 FY26 call, 14 May 2026)",
+     "total": 3626,
+     "parts": [
+      {
+       "segment": "Contract electronics (EMS)",
+       "revenue": 2655,
+       "pct": 73
+      },
+      {
+       "segment": "Smart meters",
+       "revenue": 971,
+       "pct": 27
+      },
+      {
+       "segment": "Chip packaging (OSAT)",
+       "revenue": 0,
+       "pct": 0
+      },
+      {
+       "segment": "Bare circuit boards (PCB)",
+       "revenue": 0,
+       "pct": 0
+      }
+     ]
+    },
+    {
+     "year": "FY29E",
+     "basis": "my projection",
+     "total": 7300,
+     "parts": [
+      {
+       "segment": "Contract electronics (EMS)",
+       "revenue": 5350,
+       "pct": 73
+      },
+      {
+       "segment": "Smart meters",
+       "revenue": 600,
+       "pct": 8
+      },
+      {
+       "segment": "Chip packaging (OSAT)",
+       "revenue": 700,
+       "pct": 10
+      },
+      {
+       "segment": "Bare circuit boards (PCB)",
+       "revenue": 650,
+       "pct": 9
+      }
+     ]
+    }
+   ],
+   "assumptions": [
+    {
+     "segment": "Contract electronics (EMS)",
+     "growth": "~26% a year FY26–FY29: ~40% in FY27, then ~20% a year (₹2,655cr → ₹5,350cr)",
+     "why": "On company figures EMS revenue rose from ₹442cr to about ₹742cr in Q1 FY27, helped by the August Electronics purchase (standalone EMS +53%), and the order book is ₹8,904cr. Management commits to 'twice the market growth' (market 15–18%) but no number; I stay below that because FY26 revenue came in at ₹3,626cr against ₹4,500cr guided, and component shortages (chip lead times of 26–52 weeks) slow deliveries."
+    },
+    {
+     "segment": "Smart meters",
+     "growth": "about −15% a year (₹971cr → ₹600cr)",
+     "why": "Kaynes is deliberately slowing supply until utilities pay (Q1 FY27 meter sales ₹204cr, −12%), will take no more install-and-service orders and is weighing a sale or separation of the service side, with a plan promised by February 2027 (Q1 FY27 call). I assume a supply-only business of about ₹600cr; it could be nil if the unit is sold."
+    },
+    {
+     "segment": "Chip packaging (OSAT)",
+     "growth": "from nil to ~₹700cr in FY29 (~₹200cr FY27, ~₹400cr FY28)",
+     "why": "Billing starts in Q3 FY27 within the ₹450–500cr combined FY27 guide. The stated five-year revenue visibility of over ₹2,500cr averages about ₹500cr a year, so ₹700cr in year three is a normal ramp. Only about ₹1,000cr of the ₹3,307cr plant will be in place by the end of FY27 and packaging plants earn well under ₹1 of sales per ₹1 of plant early on. Management's aim of 30% of group revenue (over ₹2,000cr) is not assumed."
+    },
+    {
+     "segment": "Bare circuit boards (PCB)",
+     "growth": "from nil to ~₹650cr of outside sales in FY29",
+     "why": "About ₹800cr of the ₹1,400cr plant will be in place by the end of FY27 (₹500cr spent plus ₹300cr planned); May's FY27 indication was ₹300–400cr; one global customer has asked for the entire capacity and given a vendor code. Some boards will be used inside Kaynes, which helps margin but not revenue, so I count only part of output as sales."
+    }
+   ],
+   "managementAim": "Chip packaging alone to 'drive 30% of total Kaynes Group revenues within the next 4 to 5 years' (FY26 annual report). Chip packaging and bare boards together ₹450–500cr in FY27, from Q3 (Q1 FY27 call, 8 Aug 2026). Core EMS to grow at twice the market, and new products to be about 30% of revenue 'in the coming years' (Q4 FY26 call, 14 May 2026).",
+   "drivers": [
+    {
+     "kind": "capex",
+     "text": "₹3,307cr chip assembly and test plant at Sanand (6.3 million chips a day), Kaynes funding about 30% as equity, with 50% central and 20% state grants on qualifying spend; ₹170cr of grant received by July 2026.",
+     "source": "FY26 annual report; Q1 FY27 call, 8 Aug 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "₹1,400cr high-density bare-board plant in Chennai (up to 74 layers), the first project approved under the government's component scheme (ECMS); commercial production from Q3 FY27.",
+     "source": "FY26 annual report"
+    },
+    {
+     "kind": "capex",
+     "text": "About ₹1,200cr spent on the two plants (₹700cr chips, ₹500cr boards) plus ₹250cr of equipment in transit; FY27 plan ₹300cr each plus ₹250cr for EMS. CRISIL puts the three-year plan at about ₹4,700cr, about 55% grant-funded.",
+     "source": "Q1 FY27 call, 8 Aug 2026; CRISIL rating rationale, 12 Mar 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "Chips plus boards ₹450–500cr of FY27 revenue from Q3, down from PCB ₹300–400cr and OSAT ₹250–300cr in May.",
+     "source": "Q1 FY27 call, 8 Aug 2026; Q4 FY26 call, 14 May 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "Chip packaging revenue visibility of over ₹2,500cr over five years; group order book ₹8,904cr at June 2026.",
+     "source": "Q4 FY26 call, 14 May 2026; Q1 FY27 presentation, Aug 2026"
+    },
+    {
+     "kind": "customers",
+     "text": "One large global player has asked for the board plant's entire capacity and issued a vendor code; a Mitsui partnership opens Japan for chip packaging; talks with one of the largest global EV makers are 'very close'.",
+     "source": "Q1 FY27 call, 8 Aug 2026"
+    }
+   ],
+   "risks": [
+    "Track record: both plants slipped a quarter, the FY27 target was cut, and FY26 revenue missed guidance by about 20%; further slips push the ramp past FY29.",
+    "The board plant so far rests on one global customer and the chip plant's customers are unnamed; Kaynes has no history in either business.",
+    "Cash strain: operating cash was −₹600cr in FY26 and −₹259cr in Q1 FY27, ₹1,311cr is owed for meters, and Kaynes has guaranteed ₹2,390cr of its subsidiaries' borrowing; late grants would hurt.",
+    "Accounting credibility: related-party items were missing from the FY25 accounts, eight overseas subsidiaries were unaudited in FY26 and the auditor is being changed.",
+    "Some boards and chips may be used inside Kaynes rather than sold, which would lift margins but keep the new lines' share of revenue lower."
+   ],
+   "shift": "meaningful",
+   "confidence": "low",
+   "confidenceWhy": "Contract electronics, about three-quarters of FY29, is fairly predictable, but the new-line share rests on two plants that have not yet billed a customer, one outline PCB buyer and a team that missed its own FY26 targets; the meter line could also vanish in a sale.",
+   "watch": [
+    {
+     "text": "Both new plants billing customers in Q3 FY27 as promised",
+     "due": "Q3 FY27"
+    },
+    {
+     "text": "Chip packaging and bare boards together book at least ₹450cr of FY27 revenue",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Meter plan announced by February 2027 and meter receivables below ₹1,000cr",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Contract electronics (EMS) revenue up at least 25% in FY27",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "The PCB customer named or a second large board customer signed",
+     "due": "Q2 FY28"
+    },
+    {
+     "text": "Chip packaging and bare boards at least 10% of FY28 revenue",
+     "due": "Q4 FY28"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Kaynes Q1 FY27 call transcript, 8 Aug 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/KAYNESTECH_12082026164943_TranscriptoftheEarningAnnouncement.pdf"
+    },
+    {
+     "label": "Kaynes Q4 FY26 call transcript, 14 May 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/KAYNESTECH_19052026172024_Transcriptinvsetormeetsigned.pdf"
+    },
+    {
+     "label": "Kaynes Q1 FY27 investor presentation, Aug 2026 (BSE)",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=516028d8-7580-4f5b-aed8-4a611fec0430.pdf"
+    },
+    {
+     "label": "Kaynes annual report FY26, OSAT/PCB pages and segment note 31 (BSE)",
+     "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7b3ec474-8dc9-46bc-bf3b-64d55d3b6c30.pdf"
+    },
+    {
+     "label": "Kaynes annual report FY24 (FY23 revenue)",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_24996_KAYNES_2023_2024_1708202418229.pdf"
+    },
+    {
+     "label": "CRISIL rating rationale, 12 Mar 2026",
+     "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/KaynesTechnologyIndiaLimited_March 12_ 2026_RR_391160.html"
+    }
+   ],
+   "asOf": "2026-10-07"
+  },
+  {
+   "company": "Kirloskar Oil",
+   "headline": "Engine maker adding data-centre gensets and exports; the mix barely moves",
+   "now": "Kirloskar Oil makes diesel and gas engines and generator sets (from 1 kW to 10 MW) for shops, homes, offices, factories and data centres, and engines for tractors, construction machines, trains, ships and the navy; it also sells spares and service, makes pumps through KOEL Fluid Dynamics and owns a lender, Arka Fincap. Of FY26 consolidated revenue of ₹7,701cr, engines and gensets sold in India were about 53% (₹4,105cr), spares and service 13% (₹968cr), engine exports 8% (₹613cr), pumps 15% (₹1,138cr) and Arka's lending 11% (₹877cr). It sold over 50,000 gensets in FY26, up 41% against a market up 18%, and its share of large sets above 750 kVA is now 'approaching double digits'.",
+   "future": "Management aims for $2bn (about ₹16,000cr) of consolidated revenue by FY30 (FY26 annual report) and says growth is led by large engines, though from a small base, with growth 'right across' the range (Q1 FY27 call, 7 Aug 2026). It is spending ₹700cr to add 50,000 engines a year at Kagal from April 2027 (today's capacity is about 1.35 lakh engines), and ₹1,400cr over the next two years on a new building for 20,000 mostly large engines that it says could bring 'close to 5,000 crores, 6,000 crores' of revenue at full use (Q4 FY26 call, 14 May 2026), though only from about FY29. Big orders back this: 96 large OptiPrime gensets (192 MW) for data-centre builder HyperNext, billed this year with five to six years of maintenance, and ₹798cr of gensets for the Nuclear Power Corporation, billed from FY27 to 2029; a new defence subsidiary and a 6 MW navy engine add to the large-engine line. Abroad, it has teamed up with Germany's DEUTZ to sell a small engine in Europe and North America and set up a Dutch subsidiary, but exports fell 11% in Q1 FY27 as the Middle East war hit shipments. Because the company does not report large engines separately and its India engine sales are growing as fast, on my projection the mix barely moves by FY29; the one change that would reshape it, separating Arka, has no date ('it takes time', Q1 FY27 call).",
+   "segments": [
+    {
+     "name": "Engines and gensets in India",
+     "plain": "Generator sets from small to data-centre size, and engines for farm, construction, rail, marine and defence use, sold in India"
+    },
+    {
+     "name": "Spares and service",
+     "plain": "Spare parts, oil, maintenance contracts and re-powering of the installed base"
+    },
+    {
+     "name": "International",
+     "plain": "Engine and genset exports and overseas units in the Middle East, Africa and the US"
+    },
+    {
+     "name": "Pumps",
+     "plain": "KOEL Fluid Dynamics: water pumps for farms, homes and industry"
+    },
+    {
+     "name": "Arka lending",
+     "plain": "Arka Fincap, a non-bank lender with about ₹7,650cr of loans under management"
+    }
+   ],
+   "mix": [
+    {
+     "year": "FY23",
+     "basis": "annual report segment note (consolidated B2B ₹3,582cr, B2C ₹1,071cr, financial services ₹371cr, from the FY24 annual report), with B2B split by the company's standalone sales chart (power generation ₹1,655cr, industrial ₹852cr, aftermarket ₹630cr, international ₹393cr; labels paired by position on the page); farm-machinery sales of ₹107cr moved from pumps to engines to match today's grouping, and the ₹52cr of B2B revenue above standalone sales put in engines",
+     "total": 5024,
+     "parts": [
+      {
+       "segment": "Engines and gensets in India",
+       "revenue": 2666,
+       "pct": 53
+      },
+      {
+       "segment": "Spares and service",
+       "revenue": 630,
+       "pct": 13
+      },
+      {
+       "segment": "International",
+       "revenue": 393,
+       "pct": 8
+      },
+      {
+       "segment": "Pumps",
+       "revenue": 964,
+       "pct": 19
+      },
+      {
+       "segment": "Arka lending",
+       "revenue": 371,
+       "pct": 7
+      }
+     ]
+    },
+    {
+     "year": "FY26",
+     "basis": "presentation (Q4 FY26 consolidated segments: B2B ₹5,686cr, B2C ₹1,139cr, financial services ₹877cr; B2B exports ₹613cr from the quarterly domestic/export split; aftermarket ₹968cr from standalone sales; India engines and gensets is the rest of B2B, of which power generation ₹2,598cr and industrial ₹1,444cr). Standalone figures cross-checked with the Q4 FY26 call",
+     "total": 7701,
+     "parts": [
+      {
+       "segment": "Engines and gensets in India",
+       "revenue": 4105,
+       "pct": 53
+      },
+      {
+       "segment": "Spares and service",
+       "revenue": 968,
+       "pct": 13
+      },
+      {
+       "segment": "International",
+       "revenue": 613,
+       "pct": 8
+      },
+      {
+       "segment": "Pumps",
+       "revenue": 1138,
+       "pct": 15
+      },
+      {
+       "segment": "Arka lending",
+       "revenue": 877,
+       "pct": 11
+      }
+     ]
+    },
+    {
+     "year": "FY29E",
+     "basis": "my projection (assumes Arka is still consolidated)",
+     "total": 11360,
+     "parts": [
+      {
+       "segment": "Engines and gensets in India",
+       "revenue": 6400,
+       "pct": 56
+      },
+      {
+       "segment": "Spares and service",
+       "revenue": 1435,
+       "pct": 13
+      },
+      {
+       "segment": "International",
+       "revenue": 885,
+       "pct": 8
+      },
+      {
+       "segment": "Pumps",
+       "revenue": 1475,
+       "pct": 13
+      },
+      {
+       "segment": "Arka lending",
+       "revenue": 1165,
+       "pct": 10
+      }
+     ]
+    }
+   ],
+   "assumptions": [
+    {
+     "segment": "Engines and gensets in India",
+     "growth": "~16% a year FY26–FY29 (₹4,105cr → ₹6,400cr)",
+     "why": "Power generation grew 32% and industrial 22% in FY26, and 18% and 19% in Q1 FY27; large engines lead from a small base (Q1 FY27 call) and lumpy orders add to it (HyperNext data-centre sets this year, ₹798cr of nuclear gensets to 2029). Capacity is not the limit: ₹2,100cr of new plant roughly doubles gross block to about ₹4,000cr at 4–5 rupees of sales per rupee of plant. I trim from recent growth because Cummins dominates the largest data-centre sets, the overall genset market is expected to grow far more slowly in value, and Q1 FY27 showed costs rising faster than prices."
+    },
+    {
+     "segment": "Spares and service",
+     "growth": "~14% a year (₹968cr → ₹1,435cr)",
+     "why": "Twelve straight quarters of double-digit growth; +15% in FY26 and +20% in Q1 FY27; the installed base grows by 50,000+ gensets a year and more of it is under service contracts."
+    },
+    {
+     "segment": "International",
+     "growth": "~13% a year (₹613cr → ₹885cr)",
+     "why": "Standalone engine exports grew about 15% a year from ₹393cr (FY23) to ₹593cr (FY26), but fell 11% in Q1 FY27 as the Middle East war blocked shipments; management calls '3 to 6 months' a reasonable time to normalise (Q1 FY27 call). The DEUTZ small-engine deal (2 Sep 2026) and the Dutch subsidiary are early, and management said there was 'nothing meaningful or significant' to report yet from the Americas (Q4 FY26 call)."
+    },
+    {
+     "segment": "Pumps",
+     "growth": "~9% a year (₹1,138cr → ₹1,475cr)",
+     "why": "Pump revenue grew 12% in FY26 but only 3% in Q1 FY27 as exports slowed. The pump arm's own 'Vision 2030' target of ₹4,000cr would need about 37% a year, which I do not assume."
+    },
+    {
+     "segment": "Arka lending",
+     "growth": "~10% a year (₹877cr → ₹1,165cr)",
+     "why": "Loans under management grew 10% to ₹7,947cr in FY26 and revenue 12%, then 9% in Q1 FY27; the on-balance-sheet loan book shrank from ₹6,107cr to ₹5,732cr during the shift to small secured retail loans. Assumes Arka is still owned in FY29; if it is separated, the other four lines rise to 100% of a smaller total."
+    }
+   ],
+   "managementAim": "$2bn of consolidated revenue (about ₹16,000cr) by FY29-30 under its '2B2B' plan (FY26 annual report); 'close to 16,600 crore' by FY30 with margins improving from today (Q1 FY27 call, 7 Aug 2026). It is aiming for a 'double digit' data-centre share of power-generation revenue (Q4 FY26 call, 14 May 2026), and its pump arm targets ₹4,000cr of revenue by 2030 (FY26 annual report). The long-term plan is to separate Arka, step by step, with no date.",
+   "drivers": [
+    {
+     "kind": "capex",
+     "text": "₹700cr to add 50,000 engines a year at Kagal (on about 1.35 lakh today), online by April 2027; then ₹1,400cr over the next two years for a new building and lines for 20,000 mostly large engines, with revenue starting once it is capitalised; management sees peak revenue of about ₹5,000–6,000cr from the second phase at four times asset turns.",
+     "source": "Q4 FY26 call, 14 May 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "First hyperscale data-centre order: 96 OptiPrime 2,500 kVA gensets (192 MW) for HyperNext, genset revenue in FY27 plus five to six years of maintenance.",
+     "source": "Press release, 19 Jun 2026; Q1 FY27 call, 7 Aug 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "Ten 6.3 MW gensets for the Nuclear Power Corporation of India worth ₹798cr, billing from FY27 and completing by 2029; prototype 6 MW main engine for the Indian Navy; record marine order booking in Q4 FY26.",
+     "source": "FY26 annual report; Q4 FY26 call, 14 May 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "$2bn (about ₹16,000cr) consolidated revenue aim for FY29-30, 'close to INR16,600 crores' by FY30 on the call; growth led by large engines from a small base.",
+     "source": "FY26 annual report; Q1 FY27 call, 7 Aug 2026"
+    },
+    {
+     "kind": "customers",
+     "text": "Strategic co-operation with DEUTZ to sell KOEL's 1.6-litre engine through DEUTZ's network in Europe and North America; Kirloskar International B.V. set up in the Netherlands on 1 Oct 2026.",
+     "source": "Press release, 2 Sep 2026; NSE filing, 1 Oct 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "Defence business moved into a new subsidiary, Kirloskar Advanced Systems, to pursue systems work for the armed forces.",
+     "source": "Q4 FY26 call, 14 May 2026; Q1 FY27 call, 7 Aug 2026"
+    }
+   ],
+   "risks": [
+    "Cummins holds most of the large data-centre genset market; Kirloskar's share of sets above 750 kVA is still only 'approaching double digits', and analysts questioned the track record of its first hyperscale customer.",
+    "Margins are under pressure: the standalone operating margin fell to 11.2% in Q1 FY27 from 13.5% a year earlier as metal costs rose faster than prices, three months after management said there was 'absolutely no margin deterioration'.",
+    "Exports depend heavily on the Middle East, where the war cut Q1 FY27 shipments.",
+    "₹2,100cr of new engine capacity could run ahead of demand; the large-engine phase earns only from about FY29.",
+    "Arka borrows 3.7 times its equity and its quarterly profit fell to ₹6.9cr; separating it 'takes time' and it may need more capital meanwhile.",
+    "Batteries and grid improvements could cut how long gensets run, slowing spares and service growth over time."
+   ],
+   "shift": "modest",
+   "confidence": "medium",
+   "confidenceWhy": "The new capacity (₹2,100cr) and two large orders are firm, but large engines are not reported separately and the FY29 mix is an extrapolation of recent growth; the one change that would reshape it, separating Arka, has no date.",
+   "watch": [
+    {
+     "text": "Standalone operating margin back above 13% (its FY26 level)",
+     "due": "Q3 FY27"
+    },
+    {
+     "text": "Nuclear genset billing started and HyperNext gensets delivered within FY27",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "International sales above FY26's ₹593cr (standalone) for FY27",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "First dated step towards separating Arka announced",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "₹700cr Kagal phase (+50,000 engines a year) running by April 2027",
+     "due": "Q1 FY28"
+    },
+    {
+     "text": "FY28 consolidated revenue of about ₹11,000cr, the pace the ₹16,000cr FY30 aim needs",
+     "due": "Q4 FY28"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Kirloskar Oil Q1 FY27 call transcript, 7 Aug 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/KIRLOSENG_13082026222010_SE_Transcript_13Aug26.pdf"
+    },
+    {
+     "label": "Kirloskar Oil Q4 FY26 call transcript, 14 May 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/KIRLOSENG_20052026153718_SE_Transcript_20May26.pdf"
+    },
+    {
+     "label": "Kirloskar Oil Q1 FY27 investor presentation, 6 Aug 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/KIRLOSENG_06082026182231_SE_InvestorPresentation_6Aug26.pdf"
+    },
+    {
+     "label": "Kirloskar Oil Q4 FY26 investor presentation, 14 May 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/KIRLOSENG_14052026181945_SE_InvestorPresentation_14May2026.pdf"
+    },
+    {
+     "label": "Kirloskar Oil annual report FY26 (2B2B plan, orders)",
+     "url": "https://nsearchives.nseindia.com/corporate/KIRLOSENG_15072026104746_SEAnnualreport.pdf"
+    },
+    {
+     "label": "Kirloskar Oil annual report FY24, segment note 6.8 and segment sales chart (FY23 figures)",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_24462_KIRLOSENG_2023_2024_12072024212251.pdf"
+    },
+    {
+     "label": "Press release: HyperNext data-centre order, 19 Jun 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/KIRLOSENG_19062026183829_SE_PressRelease_19June26_-_Revised.pdf"
+    },
+    {
+     "label": "Press release: DEUTZ co-operation, 2 Sep 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/KIRLOSENG_02092026181814_SE_PressRelease_2Sep2026.pdf"
+    }
+   ],
+   "asOf": "2026-10-07"
+  },
+  {
+   "company": "Ramkrishna Forgings",
+   "headline": "Truck-parts forger edging into railways and industry, slowly",
+   "now": "Ramkrishna Forgings hammers hot steel into heavy parts such as front axle beams, crankshafts and ring-rolled parts, and now also makes castings, mostly for truck makers in India, the US and Europe. In FY26 (standalone revenue ₹3,755cr; consolidated ₹4,238cr) Indian vehicle makers took 47% of sales, exported vehicle parts 27%, railways 7.5% and mining, farm, industrial and energy customers 19%. Three years earlier exported vehicle parts were 36% and railways under 3%, so the past shift has been from US trucks towards Indian vehicles more than away from trucks. Its rail-wheel plant with Titagarh is a separate joint venture, so wheel sales will not show in its revenue, only its share of the profit.",
+   "future": "Management now targets ₹8,000cr of revenue by FY29, a year later than first promised, which means 22–25% growth a year ('we are on track for an 8,000-crore target for FY29', Q1 FY27 call, 24 Jul 2026). The growth is meant to come from filling plants already built (over ₹800cr spent in FY25–FY26; presses at 60% and castings at 79% use in Q1 FY27), with FY27 capex held to about ₹350cr and no big new spending before end-FY28. Railways (assembled bogie frames, metro parts) are to reach a double-digit share, exports to grow 20%+ in FY27, and non-auto to pass 30% of revenue by FY30 (FY26 annual report), while aerospace forgings in titanium and Inconel have 'zero exposure' today and are 'at least 2 years' from meaningful revenue (Q1 FY27 call). At the 75–80% use management expects before new capex, the existing plants support only about ₹5,400–5,700cr of consolidated sales at today's prices, so I expect about ₹5,200cr standalone (roughly ₹5,700cr consolidated) in FY29. Truck and other vehicle parts would still be about 70% of sales, so the shift is modest.",
+   "segments": [
+    {
+     "name": "Indian vehicles",
+     "plain": "Axle beams, crankshafts and other forged and cast parts for Indian truck makers, and lately car and two-wheeler makers"
+    },
+    {
+     "name": "Export vehicles",
+     "plain": "Forged parts for trucks (and some electric cars) in North America and Europe"
+    },
+    {
+     "name": "Railways",
+     "plain": "Assembled bogie frames, undercarriage and metro parts for Indian Railways and wagon makers (the wheel plant is a separate joint venture)"
+    },
+    {
+     "name": "Industry, mining and energy",
+     "plain": "Parts for mining, construction and farm machines, industrial, power and oil-and-gas equipment, and energy-storage makers, in India and abroad; aerospace would sit here"
+    }
+   ],
+   "mix": [
+    {
+     "year": "FY23",
+     "basis": "presentation (standalone revenue mix % on slide 11 of the Q1 FY27 deck, checked by position, applied to FY23 standalone revenue of ₹3,001cr from the FY24 annual report; the company reports a single operating segment)",
+     "total": 3001,
+     "parts": [
+      {
+       "segment": "Indian vehicles",
+       "revenue": 1257.4,
+       "pct": 42
+      },
+      {
+       "segment": "Export vehicles",
+       "revenue": 1077.4,
+       "pct": 36
+      },
+      {
+       "segment": "Railways",
+       "revenue": 81,
+       "pct": 3
+      },
+      {
+       "segment": "Industry, mining and energy",
+       "revenue": 585.2,
+       "pct": 20
+      }
+     ]
+    },
+    {
+     "year": "FY26",
+     "basis": "presentation (standalone revenue mix % on slide 11 of the Q1 FY27 deck, checked by position, applied to FY26 standalone revenue of ₹3,755cr; India ₹2,568cr and exports ₹1,187cr match the FY26 annual report; consolidated revenue was ₹4,238cr)",
+     "total": 3754.9,
+     "parts": [
+      {
+       "segment": "Indian vehicles",
+       "revenue": 1764.8,
+       "pct": 47
+      },
+      {
+       "segment": "Export vehicles",
+       "revenue": 1002.6,
+       "pct": 27
+      },
+      {
+       "segment": "Railways",
+       "revenue": 281.6,
+       "pct": 7
+      },
+      {
+       "segment": "Industry, mining and energy",
+       "revenue": 705.9,
+       "pct": 19
+      }
+     ]
+    },
+    {
+     "year": "FY29E",
+     "basis": "my projection (standalone)",
+     "total": 5170,
+     "parts": [
+      {
+       "segment": "Indian vehicles",
+       "revenue": 2290,
+       "pct": 44
+      },
+      {
+       "segment": "Export vehicles",
+       "revenue": 1350,
+       "pct": 26
+      },
+      {
+       "segment": "Railways",
+       "revenue": 510,
+       "pct": 10
+      },
+      {
+       "segment": "Industry, mining and energy",
+       "revenue": 1020,
+       "pct": 20
+      }
+     ]
+    }
+   ],
+   "assumptions": [
+    {
+     "segment": "Indian vehicles",
+     "growth": "~9% a year FY26–FY29 (₹1,765cr → ~₹2,290cr)",
+     "why": "Q1 FY27 ran about 21% above FY26's pace on the GST cut and new car and two-wheeler orders (₹278cr won in Q1 over four years), but ICRA expects truck volumes to fall year on year in H2 FY27. Cars (mainly electric) are targeted at 10% of revenue within two years (Q4 FY26 call, 4 May 2026); I fade growth after FY27."
+    },
+    {
+     "segment": "Export vehicles",
+     "growth": "~10% a year (₹1,003cr → ~₹1,350cr)",
+     "why": "Management expects 20%+ export growth and its best export year in FY27 (Q1 FY27 call, 24 Jul 2026), helped by the Mexico plant from Q3. I slow it afterwards because the US truck pre-buy before 2027 emission rules has ended and half of US-bound parts carry a 25% tariff. ₹1,350cr is only a little above FY24's ~₹1,300cr; North American sales fell from ₹1,056cr to ₹688cr in FY26."
+    },
+    {
+     "segment": "Railways",
+     "growth": "~22% a year (₹282cr → ~₹510cr)",
+     "why": "Grew from ₹81cr to ₹282cr over FY23–FY26 (about 50% a year) as bulk supplies of assembled bogie frames began, a market of 'over ₹2,000 crores per annum' (FY26 annual report). But railways slipped to 6% of sales in Q1 FY27 against a 'double-digit' aim for the year (Q4 FY26 call), so I use under half the recent pace. Wheel sales stay inside the joint venture and are excluded."
+    },
+    {
+     "segment": "Industry, mining and energy",
+     "growth": "~13% a year (₹706cr → ~₹1,020cr)",
+     "why": "₹258cr of North American energy-storage orders won in Q4 FY26, steady mining and earth-moving demand, and aluminium forgings now in bulk supply. Aerospace adds little before FY29: 'at least 8 to 10 quarters' for Inconel and only ₹10–20cr of start-up capex (Q1 FY27 call). This line grew only about 6% a year over FY23–FY26, so 13% already assumes the new orders deliver."
+    }
+   ],
+   "managementAim": "₹8,000cr of consolidated revenue by FY29, a 22–25% yearly rise, after the earlier FY28 date slipped (Q1 FY27 call, 24 Jul 2026). More than 30% of revenue from non-auto by FY30 (FY26 annual report). Cars, mainly electric, at 10% of revenue within two years and railways at a double-digit share in FY27 (Q4 FY26 call, 4 May 2026). Exports about 35% of FY27 revenue (Q1 FY27 call). Aerospace, semiconductor and robotics forgings: an order book to be built over the next two years, with no significant revenue expected before FY29.",
+   "drivers": [
+    {
+     "kind": "guidance",
+     "text": "₹8,000cr revenue target moved to FY29 with 22–25% growth a year; ROCE of 12–15% in FY27 and 20% in FY28; net debt to fall by at least ₹500cr in FY27 (₹1,900cr in June).",
+     "source": "Q1 FY27 call, 24 Jul 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "Capacity of 3,95,800 tonnes after adding 43,000 t of presses (Jan and Mar 2026), 18,000 t of presses in the casting subsidiary (Dec 2025) and 28,800 t of castings (Mar 2026); Q1 FY27 use 68% (presses 60%, castings 79%, ring rolling 127%).",
+     "source": "Q1 FY27 presentation, 24 Jul 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "FY27 capex about ₹350cr, including the last ₹20–30cr of wheel-venture equity; next major capex only around end-FY28 once aerospace orders and approvals are in place.",
+     "source": "Q1 FY27 call, 24 Jul 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "Q4 FY26 orders of ₹594cr over four years, 44% non-auto including ₹258cr for North American energy storage; Q1 FY27 orders of ₹278cr from car (82%) and two-wheeler (18%) makers plus ₹15cr of metro parts.",
+     "source": "Q4 FY26 call, 4 May 2026; Q1 FY27 presentation, 24 Jul 2026"
+    },
+    {
+     "kind": "customers",
+     "text": "Bulk dispatches of fully assembled bogie frames to Indian Railways began in FY26, opening 'a qualified addressable opportunity of over ₹2,000 crores per annum'.",
+     "source": "FY26 annual report, risk management section"
+    },
+    {
+     "kind": "orders",
+     "text": "Wheel joint venture (51% Ramkrishna, 49% Titagarh): 20-year Railways contract for 80,000 wheels a year from a ~228,000-wheel plant; 40,000 wheels promised in FY27, worth ₹400–450cr inside the venture; bulk supply expected from September–October 2026. Accounted for by the equity method, so only Ramkrishna's share of profit appears.",
+     "source": "Q4 FY26 call, 4 May 2026; Q1 FY27 call, 24 Jul 2026; FY26 annual report"
+    },
+    {
+     "kind": "guidance",
+     "text": "Exports to grow 20%+ and reach about 35% of FY27 revenue, the best export year yet; Mexico plant revenue significant from Q3 FY27.",
+     "source": "Q1 FY27 call, 24 Jul 2026"
+    }
+   ],
+   "risks": [
+    "US truck demand is expected to soften after the pre-buy ahead of 2027 emission rules, and half of US-bound parts carry a 25% tariff; North American sales already fell 35% in FY26.",
+    "ICRA expects Indian truck volumes to fall year on year in H2 FY27, and Indian vehicles are almost half of sales.",
+    "Railway growth depends on more bogie-frame orders; the share fell to 6% in Q1 FY27, and the wheel plant's sales sit outside Ramkrishna's revenue while it backs ₹525cr of the venture's ₹1,029cr of loans.",
+    "Aerospace needs years of customer approvals and has no orders yet, so it cannot move the mix by FY29.",
+    "A record of slipping promises (₹8,000cr target moved a year; casting, press and rail-wheel targets missed in Q1 FY27) and a ₹220cr inventory overstatement that forced restated accounts; CRISIL's outlook is Negative.",
+    "Gas, power and shipping costs are not fully passed on to customers, which could slow the margin and cash recovery that funds diversification."
+   ],
+   "shift": "modest",
+   "confidence": "medium",
+   "confidenceWhy": "The FY29 mix rests mostly on plants already built and running at 60–80% with existing customers, so the direction is fairly firm; the size of the railway and industrial gains depends on orders not yet won.",
+   "watch": [
+    {
+     "text": "Railways at least 10% of standalone FY27 revenue (6% in Q1)",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Wheel venture in bulk supply, with about 40,000 wheels delivered to the Railways in FY27",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Exports at least 35% of FY27 revenue",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "First aerospace order in titanium or Inconel announced",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Railways plus industry, mining and energy above 28% of standalone FY28 revenue (26% in FY26)",
+     "due": "Q4 FY28"
+    },
+    {
+     "text": "Consolidated FY28 revenue of at least ₹6,500cr, needed to keep the ₹8,000cr FY29 target alive",
+     "due": "Q4 FY28"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Ramkrishna Forgings Q1 FY27 investor presentation, 24 Jul 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/RKFORGE_24072026151515_InvPresentationJune2026Final.pdf"
+    },
+    {
+     "label": "Ramkrishna Forgings annual report FY26 (MD&A, revenue note, JV accounting) (BSE)",
+     "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/fb1d65c3-9f41-4dd2-bdcd-bb49fca4e064.pdf"
+    },
+    {
+     "label": "Ramkrishna Forgings annual report FY24 (FY23 standalone revenue) (NSE)",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_24860_RKFORGE_2023_2024_07082024221133.pdf"
+    },
+    {
+     "label": "Ramkrishna Forgings Q1 FY27 call transcript, 24 Jul 2026 (BSE)",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=71175acc-0e01-43dd-af0c-d3f89c6187ae.pdf"
+    },
+    {
+     "label": "CRISIL rating rationale, 19 Dec 2025",
+     "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/RamkrishnaForgingsLimited_December%2019_%202025_RR_385423.html"
+    }
+   ],
+   "asOf": "2026-10-07"
+  },
+  {
+   "company": "Raymond",
+   "headline": "Former textile group, now auto parts with a growing aerospace arm",
+   "now": "After demerging its textile and property businesses in 2024–25, Raymond Ltd is a holding company that owns about two-thirds of two engineering businesses. JK Maini Precision Technology (₹1,667cr, 81% of FY26 engineering revenue) makes ring gears, flexplates and drivetrain parts for car and truck makers, including hybrids, plus JK Files steel files and hand tools; over 60% is exported. JK Maini Global Aerospace (₹392cr, 19%) makes aero-engine parts for the world's big engine makers, including 350+ parts for the LEAP engine, plus landing-gear and structural parts. A further ₹153cr of job work and a small charter airline ('Others') is left out of the figures below.",
+   "future": "Three years ago the listed Raymond was mainly a textile, apparel and property company; it bought control of Maini Precision only in FY24, and on a pro-forma basis aerospace was about 11% of today's engineering businesses. By FY29 I expect aerospace to be about a quarter of a roughly ₹2,970cr engineering business. Management says 'we have committed 25% growth' in aerospace (Q1 FY27 call, 7 Aug 2026) and delivered 40% in Q1, and parts already under contract schedule about ₹555cr of aerospace revenue for 2029 within a ₹5,960cr ten-year order book. But the existing Bommasandra plant tops out at about ₹650cr, so growth beyond that needs the ₹510cr Gudipalli plant in Andhra Pradesh, due to start commercial production in late 2027 and to contribute mainly from FY29 after up to six months of customer approvals. The precision and auto arm, four times larger, is guided at 12–14% a year and gets its own ₹430cr plant at the same site, so the mix moves only about six points unless an acquisition, funded partly by ₹331cr of promoter warrants, changes it.",
+   "segments": [
+    {
+     "name": "Aerospace and defence",
+     "plain": "Aero-engine, landing-gear and structural parts made by JK Maini Global Aerospace"
+    },
+    {
+     "name": "Precision and auto parts, tools",
+     "plain": "Ring gears, flexplates and drivetrain parts for car and truck makers, plus JK Files steel files and hand tools"
+    }
+   ],
+   "mix": [
+    {
+     "year": "FY23",
+     "basis": "presentation (pro-forma: Raymond's Nov 2023 deck on buying Maini Precision gives combined FY23 sales of ~₹1,600cr, 11% aerospace and defence; pie labels checked by position and by arithmetic; Raymond did not own Maini in FY23)",
+     "total": 1600,
+     "parts": [
+      {
+       "segment": "Aerospace and defence",
+       "revenue": 175,
+       "pct": 11
+      },
+      {
+       "segment": "Precision and auto parts, tools",
+       "revenue": 1425,
+       "pct": 89
+      }
+     ]
+    },
+    {
+     "year": "FY26",
+     "basis": "annual report segment note (FY26, note 33): the two engineering segments only; 'Others' ₹153cr excluded; consolidated revenue ₹2,212cr",
+     "total": 2059,
+     "parts": [
+      {
+       "segment": "Aerospace and defence",
+       "revenue": 392,
+       "pct": 19
+      },
+      {
+       "segment": "Precision and auto parts, tools",
+       "revenue": 1667,
+       "pct": 81
+      }
+     ]
+    },
+    {
+     "year": "FY29E",
+     "basis": "my projection",
+     "total": 2970,
+     "parts": [
+      {
+       "segment": "Aerospace and defence",
+       "revenue": 750,
+       "pct": 25
+      },
+      {
+       "segment": "Precision and auto parts, tools",
+       "revenue": 2220,
+       "pct": 75
+      }
+     ]
+    }
+   ],
+   "assumptions": [
+    {
+     "segment": "Aerospace and defence",
+     "growth": "~24% a year FY26–FY29 (₹392cr → ₹750cr): FY27 ~₹510cr, FY28 ~₹630cr",
+     "why": "Management commits to 25% a year (Q4 FY26 and Q1 FY27 calls) and has beaten it (FY26 +26%, Q1 FY27 +40%), so FY27 is ~30%. But the existing plant peaks at about ₹650cr of revenue (28 Sep 2026 call), so FY28 is capped near that, and the Gudipalli plant starts only in late 2027 with up to six months of approvals, adding perhaps ₹100–150cr in FY29. Contracted parts already schedule ~₹555cr for 2029 (Q1 FY27 deck, slide 18), so most of the FY29 figure is booked. No acquisitions assumed."
+    },
+    {
+     "segment": "Precision and auto parts, tools",
+     "growth": "~10% a year (₹1,667cr → ₹2,220cr)",
+     "why": "Below the 12–14% management gives (28 Sep 2026 call): the segment grew 10% in FY26 and 11.5% in Q1 FY27; much of it is engine and hybrid drivetrain parts exported to Europe and the US, where tariffs and demand have been uneven; plants run at 85–90% and the ₹430cr Gudipalli auto plant only starts in late 2027."
+    }
+   ],
+   "managementAim": "Aerospace: a '25-25-25' vision of at least 25% yearly revenue growth, 25% margin and 25% return on capital; the existing plant to reach about ₹650cr and Gudipalli to add about ₹700cr at full use, so aerospace revenue of ₹1,400–1,500cr is 'possible in the near term', roughly five years at 25% (investor conference call, 28 Sep 2026). 'We have committed 25% growth' in aerospace (Q1 FY27 call, 7 Aug 2026). Precision and auto: 12–14% a year (28 Sep 2026 call).",
+   "drivers": [
+    {
+     "kind": "capex",
+     "text": "~₹1,000cr five-year plan at Gudipalli, Andhra Pradesh (near Bengaluru airport): ~₹510cr for a 45-acre aerospace plant with special processes, heat treatment and assembly, ~₹430cr for auto on ~32 acres; ground broken, commercial production targeted for late 2027, real aerospace revenue from FY29.",
+     "source": "Q1 FY27 presentation and call, 7 Aug 2026; Q4 FY26 call, 5 May 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "Aerospace order book of ₹5,960cr over ten years for parts already in production, scheduled at about ₹502–645cr a year from 2027 (the first five years ₹2,765cr, up 17% in a quarter); RFQ pipeline ₹1,632cr.",
+     "source": "Q1 FY27 presentation, slide 18; Q1 FY27 call, 7 Aug 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "Won structural-assembly work on the Tejas fighter programme, to be made in HAL's facility until Gudipalli is ready; early revenue expected within 6–9 months.",
+     "source": "Investor conference call, 28 Sep 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "Aerospace +25% a year committed; Q1 FY27 aerospace revenue +40% to ₹123cr at a 21.2% margin; existing plant now expected to exceed ₹600cr after an improvement drive.",
+     "source": "Q1 FY27 call, 7 Aug 2026"
+    },
+    {
+     "kind": "acquisition",
+     "text": "₹331cr of promoter warrants (plus a further preferential issue proposed in September) earmarked mainly for acquisitions that add structures, systems or engine sub-assembly skills in aerospace, auto or defence.",
+     "source": "Q1 FY27 call, 7 Aug 2026; investor conference call, 28 Sep 2026"
+    },
+    {
+     "kind": "customers",
+     "text": "Mass production of precision parts for a leading defence OEM; 135 part awards on a flagship aircraft localisation programme (100 in serial production); first build-to-spec (own-design) aerospace order; an ex-BEL executive hired to build defence.",
+     "source": "Q1 FY27 presentation, slide 28; Q1 FY27 call, 7 Aug 2026"
+    }
+   ],
+   "risks": [
+    "Gudipalli is the only route past the ~₹650cr ceiling of the existing aerospace plant; a delay beyond late 2027 or slow customer approvals would stall growth in FY28–FY29.",
+    "Aerospace metals are 100% imported; Gulf shipping problems cut Q4 FY26 aerospace growth to 11%.",
+    "The top three aerospace customers are 40–45% of the business and over 75% of output is engine parts, led by the LEAP engine.",
+    "The precision and auto arm is four times larger and still growing 10–14%, so aerospace must grow much faster just to move the mix a few points.",
+    "Acquisitions funded by promoter warrants priced about 60% below the market could change the mix quickly, but at an unknown price and quality.",
+    "Weak cash conversion (FY26 operating cash ₹42cr) and about ₹1,000cr of subsidiary borrowings could limit spending if growth stumbles."
+   ],
+   "shift": "modest",
+   "confidence": "medium",
+   "confidenceWhy": "About three-quarters of the FY29 aerospace figure is already scheduled from contracted parts and the rest depends on a plant under construction starting on time, but the precision and auto side, three-quarters of revenue, is extrapolated.",
+   "watch": [
+    {
+     "text": "Aerospace revenue of at least ₹490cr in FY27 (the 25% commitment)",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Aerospace at least 21% of the two engineering segments' FY27 revenue (19% in FY26)",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Five-year slice of the aerospace order book above ₹2,765cr",
+     "due": "Q2 FY27"
+    },
+    {
+     "text": "First revenue from the Tejas structural-assembly order",
+     "due": "Q1 FY28"
+    },
+    {
+     "text": "Gudipalli aerospace plant starts commercial production by December 2027",
+     "due": "Q3 FY28"
+    },
+    {
+     "text": "Any acquisition funded by the warrant money: what it adds to aerospace and at what price",
+     "due": "Q4 FY28"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Raymond Q1 FY27 results presentation, 7 Aug 2026 (BSE)",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=42e789a8-3301-4f5f-87b3-3f6b50ccf5cf.pdf"
+    },
+    {
+     "label": "Raymond annual report FY26, segment note 33 (BSE)",
+     "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/9acf1216-e428-42a8-8b82-1300b9e55a02.pdf"
+    },
+    {
+     "label": "Raymond Q1 FY27 call transcript, 7 Aug 2026 (BSE)",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=29381bb2-bf55-4b05-b839-405dd4ebb8b9.pdf"
+    },
+    {
+     "label": "Raymond: acquisition of Maini Precision Products, Nov 2023 (FY23 pro-forma mix)",
+     "url": "https://api.raymond.in/uploads/investor/1699255002136Acquisition%20of%20MPPL%20Buisness_Nov%2023.pdf"
+    }
+   ],
+   "asOf": "2026-10-07"
+  },
+  {
+   "company": "Sansera Engineering",
+   "headline": "Auto-parts forger adding aerospace and chip-equipment parts",
+   "now": "Sansera forges and machines precision metal parts. In FY26, 70% of its ₹3,498cr revenue came from engine parts such as connecting rods, crankshafts and rocker arms for motorcycles, scooters, cars and trucks, sold to Maruti, Bajaj, TVS and global vehicle makers. Another 13% came from parts that fit any vehicle or go into electric and hybrid ones. The rest, about a sixth, was non-auto work: aerospace, defence and chip-equipment parts (ADS, ₹336cr or 10%) and parts for off-road, farm and industrial machines (₹238cr or 7%).",
+   "future": "By FY29 I expect aerospace, defence and chip-equipment parts (ADS) to be about a fifth of a roughly ₹5,700cr business, double today's share, while auto parts still make up about three-quarters. Management guides ADS revenue of ₹550–600cr in FY27, up 75–80%, and holds an ADS backlog of about ₹5,750cr that it says 'is mandatorily executable … by FY 2031' (Q1 FY27 call, 13 Aug 2026), including a chip-equipment order worth about ₹1,250cr over five years whose revenue starts in 2027 and peaks in 2029. To deliver it, Sansera is commissioning an 80,000 sq ft hangar and an in-house surface-treatment plant in Bengaluru from Q3 FY27, moving defence into its own building and negotiating a 100,000 sq ft build-to-suit plant due about ten months later, with a plan for capacity worth about ₹3,500cr of ADS revenue by FY31; each ₹1 of ADS plant earns about ₹2–2.25 of sales. Auto is not standing still: engine parts grew 21% in Q1 FY27 and about three-quarters of Q1 capex went to auto lines such as new crankshaft and connecting-rod capacity at Pantnagar and Manesar, so the mix moves only about ten points.",
+   "segments": [
+    {
+     "name": "Engine parts (auto ICE)",
+     "plain": "Connecting rods, crankshafts, rocker arms and gear-shift forks for motorcycles, scooters, cars and trucks"
+    },
+    {
+     "name": "EV and engine-neutral parts",
+     "plain": "Suspension, steering, brake and drivetrain parts that fit any vehicle, plus parts for electric and hybrid vehicles"
+    },
+    {
+     "name": "Aerospace, defence and chip equipment (ADS)",
+     "plain": "Machined parts for aircraft and aero-engines, defence, and machines that make semiconductors"
+    },
+    {
+     "name": "Other non-auto",
+     "plain": "Parts for off-road vehicles, tractors and other industrial machines"
+    }
+   ],
+   "mix": [
+    {
+     "year": "FY23",
+     "basis": "presentation (restated sales-mix % in the Q1 FY27 deck, slide 29, applied to consolidated revenue of ₹2,346cr; ADS ~₹90cr+ confirmed on the Q4 FY23 call)",
+     "total": 2346,
+     "parts": [
+      {
+       "segment": "Engine parts (auto ICE)",
+       "revenue": 1823,
+       "pct": 78
+      },
+      {
+       "segment": "EV and engine-neutral parts",
+       "revenue": 244,
+       "pct": 10
+      },
+      {
+       "segment": "Aerospace, defence and chip equipment (ADS)",
+       "revenue": 98,
+       "pct": 4
+      },
+      {
+       "segment": "Other non-auto",
+       "revenue": 181,
+       "pct": 8
+      }
+     ]
+    },
+    {
+     "year": "FY26",
+     "basis": "presentation (sales-mix % applied to consolidated revenue of ₹3,498cr; matches FY26 annual report MD&A product sales of ₹2,304cr / ₹445cr / ₹538cr and the company's ADS revenue of ₹336cr including scrap and tooling)",
+     "total": 3498,
+     "parts": [
+      {
+       "segment": "Engine parts (auto ICE)",
+       "revenue": 2452,
+       "pct": 70
+      },
+      {
+       "segment": "EV and engine-neutral parts",
+       "revenue": 472,
+       "pct": 13
+      },
+      {
+       "segment": "Aerospace, defence and chip equipment (ADS)",
+       "revenue": 336,
+       "pct": 10
+      },
+      {
+       "segment": "Other non-auto",
+       "revenue": 238,
+       "pct": 7
+      }
+     ]
+    },
+    {
+     "year": "FY29E",
+     "basis": "my projection",
+     "total": 5700,
+     "parts": [
+      {
+       "segment": "Engine parts (auto ICE)",
+       "revenue": 3410,
+       "pct": 60
+      },
+      {
+       "segment": "EV and engine-neutral parts",
+       "revenue": 760,
+       "pct": 13
+      },
+      {
+       "segment": "Aerospace, defence and chip equipment (ADS)",
+       "revenue": 1150,
+       "pct": 20
+      },
+      {
+       "segment": "Other non-auto",
+       "revenue": 380,
+       "pct": 7
+      }
+     ]
+    }
+   ],
+   "assumptions": [
+    {
+     "segment": "Aerospace, defence and chip equipment (ADS)",
+     "growth": "~50% a year FY26–FY29 (₹336cr → ₹1,150cr): FY27 ~₹580cr, FY28 ~₹850cr",
+     "why": "FY27 at the ₹550–600cr guide (Q1 ran at ₹145cr, and the FY26 ADS guide was met exactly). FY29 is the middle year of a ~₹5,750cr backlog that must be delivered over FY27–FY31, so I use its average yearly delivery (~₹1,150cr) and give no credit for new orders, to allow for slippage in customer validations, aircraft build rates and the chip cycle. Capacity fits: the hangar lifts the campus to ₹1,400–1,500cr of revenue capacity (Q1 FY27 call), so FY29 needs it about 80% used. Management ruled out ₹1,500cr in FY28."
+    },
+    {
+     "segment": "Engine parts (auto ICE)",
+     "growth": "~12% a year (FY27 ~15%, then ~10%)",
+     "why": "Q1 FY27 grew 21% on strong domestic demand and the non-ADS business is guided at 'mid-teen' growth for FY27 (Q1 FY27 call); FY21–FY26 grew 14% a year; ₹1,200cr of new ICE orders (peak annual revenue, June 2026 deck) and the Pantnagar/Manesar crankshaft lines support growth. Management expects H2 to be weaker than H1 and Indian vehicle growth to slow from a high base, so I fade it to ~10%."
+    },
+    {
+     "segment": "EV and engine-neutral parts",
+     "growth": "~17% a year",
+     "why": "Grew ~25% a year FY23–FY26 but only 7% in FY26; Q1 FY27 +22%; ₹320cr of new orders at peak annual revenue (June 2026 deck) and the Nichidai joint venture starting in Q3 FY27 add volume."
+    },
+    {
+     "segment": "Other non-auto",
+     "growth": "~17% a year",
+     "why": "Off-road grew 50% in Q1 FY27 and deliveries to an energy-sector customer in North America start in Q3 FY27 (Q1 FY27 call); ₹330cr of non-ADS non-auto orders at peak annual revenue (June 2026 deck). FY23–FY26 grew only ~10% a year, so I count about half of those orders as extra revenue by FY29."
+    }
+   ],
+   "managementAim": "Long-term mix of 60% engine parts, 20% EV/engine-neutral and 20% non-auto, with non-auto that 'could go higher than 20%' (Q4 FY26 call, 21 May 2026). Revenue of ₹8,000–9,000cr 'by end of the decade, say FY 2031', driven mainly by ADS, with ADS capacity for about ₹3,500cr of revenue by FY31 and FY27 ADS revenue of ₹550–600cr (Q1 FY27 call, 13 Aug 2026). The FY26 annual report puts the goal at ₹8,000–10,000cr by the end of the decade with 40% from non-auto, xEV and engine-neutral parts. Analysts on the calls quoted an ADS aim of about ₹1,300cr by 2030; management did not dispute it.",
+   "drivers": [
+    {
+     "kind": "orders",
+     "text": "ADS backlog of ₹4,437cr at June 2026 rose to about ₹5,750cr after a chip-equipment order worth about ₹1,250cr over five years (taking that customer to about $75m a year); all executable by FY31, with the new order's revenue significant from calendar 2027 and peaking in 2029.",
+     "source": "Q1 FY27 call, 13 Aug 2026; Q1 FY27 presentation, slide 7"
+    },
+    {
+     "kind": "capex",
+     "text": "80,000 sq ft ADS hangar commissioning around Sept–Oct 2026, then customer validation of lines; in-house surface-treatment plant awaiting NADCAP approval; defence moved to a dedicated 45,000 sq ft building; a 100,000–110,000 sq ft build-to-suit plant about ten months after August 2026; about 10 acres near Bengaluru airport approved for later.",
+     "source": "Q1 FY27 call, 13 Aug 2026; Q4 FY26 call, 21 May 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "Capex of ₹510cr in FY26 and a similar ~₹500cr planned for FY27; about ₹250cr more ADS capex clears the backlog at 2–2.25x asset turns; in Q1 FY27 only 13% of capex went to non-auto and about three-quarters to auto lines.",
+     "source": "Q4 FY26 call, 21 May 2026; Q1 FY27 presentation, slide 8"
+    },
+    {
+     "kind": "guidance",
+     "text": "FY27 revenue growth of 'between high-teens to 20%', with ADS up 75–80% to ₹550–600cr and the rest of the business growing mid-teens.",
+     "source": "Q1 FY27 call, 13 Aug 2026"
+    },
+    {
+     "kind": "customers",
+     "text": "Approved for complex Boeing parts, onboarded a large aero-engine maker and is machining a full engine blisk (first samples due about September 2026); no exclusivity with its chip-equipment customer and in talks with a second large one.",
+     "source": "Q4 FY26 call, 21 May 2026; Q1 FY27 call, 13 Aug 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "Track record: FY26 ADS product-sales guide of ₹315cr was met exactly (155% growth), and Q1 FY27 ADS revenue more than tripled to ₹145cr.",
+     "source": "Q4 FY26 call, 21 May 2026; Q1 FY27 presentation, slide 7"
+    }
+   ],
+   "risks": [
+    "Chip-equipment revenue depends on one customer and on AI data-centre spending; a pause would hit the fastest-growing part of ADS.",
+    "Aerospace lines need customer approval part by part and machines take 7–9 months to arrive, so new space adds revenue slowly; delays would push the backlog towards FY30–FY31.",
+    "A production crisis at Boeing or Airbus would slow aircraft-part call-offs; management names this as the main aerospace risk.",
+    "Auto keeps growing fast and takes most of the capex, so even strong ADS growth moves the mix slowly.",
+    "Free cash flow was negative in FY25 and FY26 and inventory days rose from 126 to 169; ADS working capital could force more borrowing or slow spending.",
+    "US tariff uncertainty has already shelved a planned US plant and cost a ₹12.6cr provision in Q1 FY27."
+   ],
+   "shift": "meaningful",
+   "confidence": "medium",
+   "confidenceWhy": "The FY29 ADS figure equals the average yearly delivery of a signed backlog and fits capacity already being built, but its timing depends on customer validations and one chip-equipment customer, and the auto lines, about 80% of FY29 revenue, are extrapolated from recent growth.",
+   "watch": [
+    {
+     "text": "ADS revenue of at least ₹550cr in FY27 (guide ₹550–600cr)",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "New hangar commissioned and surface-treatment plant NADCAP-approved",
+     "due": "Q3 FY27"
+    },
+    {
+     "text": "ADS backlog above ₹5,750cr after the order conversions management expects in Q2 and Q3",
+     "due": "Q3 FY27"
+    },
+    {
+     "text": "Non-auto at least 20% of FY27 sales (20.8% in Q1)",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "FY28 ADS guidance of at least ₹800cr, promised around the end of FY27",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "ADS revenue of ₹250cr or more in a single quarter",
+     "due": "Q4 FY28"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Sansera Q1 FY27 investor presentation, 12 Aug 2026 (BSE)",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=cc9009a4-0863-4c4a-b2e6-2f97d9dc8c13.pdf"
+    },
+    {
+     "label": "Sansera annual report FY26, MD&A and segment note (BSE)",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=ad34d837-f408-46ae-ace7-f1c0d7435854.pdf"
+    },
+    {
+     "label": "Sansera Q1 FY27 call transcript, 13 Aug 2026 (BSE)",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=77f7cc20-4d72-40a6-abb9-646324dde54e.pdf"
+    },
+    {
+     "label": "Sansera Q4 FY26 call transcript, 21 May 2026 (BSE)",
+     "url": "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=bca74005-e7a1-4d23-8c08-a19fde934a0d.pdf"
+    },
+    {
+     "label": "Sansera Q4 FY23 call transcript, 30 May 2023 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/SANSERA_30052023133431_Transcript.pdf"
+    },
+    {
+     "label": "ICRA rating rationale, Jan 2026",
+     "url": "https://www.icra.in/Rating/GetRationalReportFilePdf?Id=140552"
+    }
+   ],
+   "asOf": "2026-10-07"
+  },
+  {
+   "company": "Shaily Engg. Plastic",
+   "headline": "From furniture parts to pen injectors for weight-loss drugs",
+   "now": "Shaily moulds precision plastic parts to order at Vadodara, with a design arm in the UK. Its biggest line is still consumer goods – mostly furniture and home-furnishing parts, plus toys and FMCG parts, sold to large global retailers and brands – at ₹511cr, 52% of FY26 revenue of ₹991cr. Healthcare, mainly pen injectors that drug makers fill with insulin and the weight-loss drug semaglutide, brought ₹393cr (40%), and industrial parts for appliances, cars and power tools ₹87cr (9%). In the June 2026 quarter healthcare overtook consumer for the first time, at 51% of revenue.",
+   "future": "By FY29 Shaily should be mainly a drug-device maker. Management expects to make “beyond 36 million” pens in FY27 (Q1 FY27 call, 10 Aug 2026) against 23.5 million in FY26, and about 50 million in FY28 (Q4 FY26 call, 20 May 2026). The capacity is being built: two new 25-million-pen lines (one running since March 2026, the other due by end-September 2026) take India pen capacity to about 75 million a year, and a ₹300–350cr plant in Abu Dhabi for about 75 million more pens and auto-injectors should be producing by the end of FY28, with 50–55% of it already committed (Q3 FY26 call, 13 Feb 2026; Q1 FY27 call). The consumer business is not expected to grow this year, while electronics parts and semiconductor chip trays start small from late FY27. On my numbers healthcare reaches about ₹950cr, close to 60% of revenue, while consumer stays near ₹500cr.",
+   "segments": [
+    {
+     "name": "Healthcare",
+     "plain": "pen injectors and auto-injectors for drug makers, plus device design work in the UK"
+    },
+    {
+     "name": "Consumer",
+     "plain": "furniture and home-furnishing parts, toys and FMCG parts, mostly exported"
+    },
+    {
+     "name": "Industrial",
+     "plain": "parts for appliances, cars and power tools; new electronics parts and chip trays"
+    }
+   ],
+   "mix": [
+    {
+     "year": "FY23",
+     "basis": "call (Q4 FY24 call, 27 May 2024: consolidated segment revenue for FY23)",
+     "total": 607,
+     "parts": [
+      {
+       "segment": "Healthcare",
+       "revenue": 58,
+       "pct": 10
+      },
+      {
+       "segment": "Consumer",
+       "revenue": 503,
+       "pct": 83
+      },
+      {
+       "segment": "Industrial",
+       "revenue": 46,
+       "pct": 8
+      }
+     ]
+    },
+    {
+     "year": "FY26",
+     "basis": "call (Q4 FY26 call, 20 May 2026: consolidated segment revenue; annual report gives healthcare ₹392.8cr)",
+     "total": 991,
+     "parts": [
+      {
+       "segment": "Healthcare",
+       "revenue": 393,
+       "pct": 40
+      },
+      {
+       "segment": "Consumer",
+       "revenue": 511,
+       "pct": 52
+      },
+      {
+       "segment": "Industrial",
+       "revenue": 87,
+       "pct": 9
+      }
+     ]
+    },
+    {
+     "year": "FY29E",
+     "basis": "my projection",
+     "total": 1630,
+     "parts": [
+      {
+       "segment": "Healthcare",
+       "revenue": 950,
+       "pct": 58
+      },
+      {
+       "segment": "Consumer",
+       "revenue": 500,
+       "pct": 31
+      },
+      {
+       "segment": "Industrial",
+       "revenue": 180,
+       "pct": 11
+      }
+     ]
+    }
+   ],
+   "assumptions": [
+    {
+     "segment": "Healthcare",
+     "growth": "~34% a year FY26–FY29 (₹393cr to about ₹950cr)",
+     "why": "Pens go from 23.5 million in FY26 to “beyond 36 million” in FY27 (Q1 FY27 call) and about 50 million in FY28 (Q4 FY26 call); FY29 adds the first Abu Dhabi output (due Q4 FY28) and Europe's semaglutide opening in 2028, so I assume about 60 million pens. I take revenue per pen slightly lower than FY26's roughly ₹165, because big contracts have seen 10–15% price erosion (Q3 FY26 call) and Chinese copies sell at US$1.50–1.70 against Shaily's “above the $2 mark”. I stay below the pace of volume guidance because Shaily has missed before: FY26 delivered 23.5 million pens against 25–26 million guided, and its new lines have ramped slowly. Capacity check: management points to 2–2.5 times asset turns, so the ₹300–350cr Abu Dhabi plant alone could support ₹600–850cr at full use, but only a small part of that by FY29."
+    },
+    {
+     "segment": "Consumer",
+     "growth": "roughly flat: about ₹500cr in FY29 (about −1% a year)",
+     "why": "The finance chief said on the Q1 FY27 call that this business would probably not grow this year and that “we are essentially looking at what we did in FY24” (₹481cr). Q1 FY27 consumer revenue fell 24% on weak European and US home-furnishing demand. I allow a slow recovery in FY28–FY29 back to about the FY26 level; management itself says the consumer business will not make much difference to Shaily's future."
+    },
+    {
+     "segment": "Industrial",
+     "growth": "~27% a year (₹87cr to about ₹180cr)",
+     "why": "Industrial grew 41% in FY26 and 25% in Q1 FY27. Five consumer-electronics parts for a new customer start supplying before March 2027 and semiconductor chip trays from Q4 FY27 (about ₹5cr of tooling in the existing plant); management projects about US$10m (roughly ₹90cr) of electronics sales in 24–30 months but says this “is not guidance”. I count these new lines inside Industrial, as the Q1 FY27 call did, and give them only part of that projection by FY29 because the ₹80–100cr South India plant has not yet been started."
+    }
+   ],
+   "managementAim": "The FY26 annual report says revenue should grow more than 25% a year over the medium term and healthcare should be more than 50% of revenue. For pens, management guided about 36 million in FY27, about 50 million in FY28 and 40–60 million within 24–30 months (Q4 FY26 call, 20 May 2026), and in August said it “should be able to go beyond 36 million” this year (Q1 FY27 call, 10 Aug 2026). The Abu Dhabi plant is to be in production by the end of FY28.",
+   "drivers": [
+    {
+     "kind": "capex",
+     "text": "Two new 25-million-pen lines for semaglutide: the first installed in March 2026 (about 45% efficiency in May, yields since improved), the second held at the supplier until it runs at 80%-plus and due by end-September 2026, taking pen capacity to about 75 million a year. FY26 capex was ₹185.6cr, mostly on the new pharma plant.",
+     "source": "Q4 FY26 call, 20 May 2026; Q1 FY27 call, 10 Aug 2026; FY26 annual report"
+    },
+    {
+     "kind": "capex",
+     "text": "Abu Dhabi plant: AED130–150m (about ₹300–350cr) for about 75 million pens and auto-injectors a year on high-speed 16-cavity lines, operational in Q4 FY28, funded from cash flow and debt.",
+     "source": "Q3 FY26 call, 13 Feb 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "50–55% of the Abu Dhabi capacity has commitments or indications; India expansion is “more or less fully backed by commercial contracts”, usually take-or-pay with 20–40% advances from some customers.",
+     "source": "Q1 FY27 call, 10 Aug 2026; Q3 FY26 call, 13 Feb 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "A ₹423cr pen-injector order from a large Indian drug maker, spread over four years; the FY27 order book is “frozen”, so volumes depend on how fast lines come up.",
+     "source": "Q4 FY26 call, 20 May 2026"
+    },
+    {
+     "kind": "customers",
+     "text": "About 70% of the first six semaglutide filers in Canada use a Shaily pen, as did the first US tentative approval; partners have launched in India, Canada and Brazil. A drug maker that wants to switch device faces a new 24–36-month programme costing 70–80% of the original ₹100–150cr.",
+     "source": "Q4 FY26 call, 20 May 2026; Q1 FY27 call, 10 Aug 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "Pens “beyond 36 million” in FY27 and about 50 million in FY28; new heads of business development in Europe and North America hired to win a first contract with an original drug maker within about six quarters.",
+     "source": "Q1 FY27 call, 10 Aug 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "Consumer electronics: a ₹80–100cr plant in South India (land secured, details due on the next call) and about ₹5cr for semiconductor chip trays in the existing plant.",
+     "source": "Q1 FY27 call, 10 Aug 2026"
+    }
+   ],
+   "risks": [
+    "Pen volumes follow partners' drug approvals and launches: Dr Reddy's, the partner analysts link to the ₹423cr order, paused semaglutide supply in July 2026 after an impurity was found, and Brazil approvals have been slow (Shaily does not name the customer).",
+    "New lines ramp slowly: FY26 delivered 23.5 million pens against 25–26 million guided, the first new line ran at about 45% efficiency in May 2026, and the second line slipped from July–August to September 2026.",
+    "Price pressure: Chinese copy pens sell at US$1.50–1.70 against Shaily's “above $2”, and large contracts have already seen 10–15% price erosion.",
+    "Abu Dhabi is only about half committed, equipment lead times are now 15–18 months, and the Middle East conflict has already used up part of the schedule buffer.",
+    "Semaglutide stays patented in the US until at least 2031 and Europe opens only in 2028, so FY29 volumes rest on a handful of markets and a few Indian generic makers.",
+    "Consumer is still about half of revenue and leans on one customer worth ₹452cr in FY26 (about 46% of revenue, annual report); a strong recovery there would slow the shift in mix, a further fall would speed it but cut profit."
+   ],
+   "shift": "transformational",
+   "confidence": "medium",
+   "confidenceWhy": "FY27–FY28 pen volumes rest on lines already installed and a frozen FY27 order book, but the FY29 figure also leans on the half-committed Abu Dhabi plant, on partners' approvals and on pen prices holding.",
+   "watch": [
+    {
+     "text": "Second 25-million pen line running, pen capacity about 75 million a year",
+     "due": "Q2 FY27"
+    },
+    {
+     "text": "More than 36 million pens in FY27 and healthcare at least half of FY27 revenue",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Semiconductor chip-tray supplies start",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "About 50 million pens delivered in FY28",
+     "due": "Q4 FY28"
+    },
+    {
+     "text": "Abu Dhabi plant in production",
+     "due": "Q4 FY28"
+    },
+    {
+     "text": "First contract with an original (innovator) drug maker announced",
+     "due": "Q4 FY28"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Shaily: Q1 FY27 earnings call, 10 Aug 2026 (company earnings-call page)",
+     "url": "https://www.shaily.com/investors/compliances-policies/earnings-call"
+    },
+    {
+     "label": "Shaily: Q4 FY26 earnings call, 20 May 2026 (company earnings-call page)",
+     "url": "https://www.shaily.com/investors/compliances-policies/earnings-call"
+    },
+    {
+     "label": "Shaily: Q3 FY26 earnings call transcript, 13 Feb 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/Shailyengineering_20022026145609_Q3FY26_transcipt_CL.pdf"
+    },
+    {
+     "label": "Shaily: Q4 FY24 earnings call transcript, 27 May 2024 (FY23 segment revenue) (BSE)",
+     "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/127feaad-10f0-4aad-8ed2-6a3ef680dc92.pdf"
+    },
+    {
+     "label": "Shaily: Annual Report FY26 (NSE)",
+     "url": "https://nsearchives.nseindia.com/annual_reports/AR_32008_SHAILY_2025_2026_U_7424335_09092026165004.pdf"
+    }
+   ],
+   "asOf": "2026-10-07"
+  },
+  {
+   "company": "Time Technoplast",
+   "headline": "Still mainly a drum maker; gas cylinders grow from a small base",
+   "now": "Time Technoplast makes plastic industrial packaging – drums, jerry cans and pails for chemical, paint and FMCG companies – in India and ten other countries, plus 1,000-litre caged bulk tanks (IBCs), lightweight composite gas cylinders, plastic pipes and a few other products. Of FY26 revenue of ₹6,114cr, drums, cans and pails were ₹3,744cr (61%), IBCs ₹808cr (13%), composite LPG, CNG and oxygen cylinders ₹762cr (12%), pipes, batteries, matting and auto parts ₹629cr (10%) and MOX tarpaulin film ₹171cr (3%). The company calls IBCs, cylinders and MOX film its value-added products: 29% of revenue in FY26, up from 23% in FY23.",
+   "future": "By FY29 Time should look much as it does now. Management guides 15% volume growth a year: 11–13% for packaging, 25–30% for composite products, 20–25% for PE pipes and 10–12% for MOX film and other products (Q1 FY27 call, 6 Aug 2026), and wants composites to grow “by over 25%” a year for three years (Q4 FY26 call, 29 May 2026). Capex is about ₹350cr in FY27 (₹47cr of Q1's ₹75cr went to IBCs and composites), then ₹200–250cr a year; the new Mora plant has more than doubled CNG cascade capacity to 1,080 a year, and Silvassa's IBC capacity doubles to 300,000 a year by March 2027. Even so, packaging is so large that on my numbers composite cylinders rise only from about 12% to about 16% of revenue, and value-added products from 29% to about a third.",
+   "segments": [
+    {
+     "name": "Drums, cans and pails",
+     "plain": "plastic drums, jerry cans and pails for chemical, paint and FMCG firms (established)"
+    },
+    {
+     "name": "IBCs",
+     "plain": "1,000-litre plastic tanks in steel cages for bulk liquids (value-added)"
+    },
+    {
+     "name": "Composite cylinders",
+     "plain": "light, rust-free LPG, CNG and oxygen cylinders and CNG cascades (value-added)"
+    },
+    {
+     "name": "MOX film",
+     "plain": "multi-layer cross-laminated tarpaulin film (value-added)"
+    },
+    {
+     "name": "Pipes, batteries and lifestyle",
+     "plain": "PE pipes, energy-storage batteries, turf, mats, bins and auto parts (established)"
+    }
+   ],
+   "mix": [
+    {
+     "year": "FY23",
+     "basis": "presentation (June 2023, consolidated): IBC, cylinder and MOX figures in ₹ from its product table; drums vs pipes/lifestyle split from the slide's rounded shares",
+     "total": 4293,
+     "parts": [
+      {
+       "segment": "Drums, cans and pails",
+       "revenue": 2848,
+       "pct": 66
+      },
+      {
+       "segment": "IBCs",
+       "revenue": 502,
+       "pct": 12
+      },
+      {
+       "segment": "Composite cylinders",
+       "revenue": 346,
+       "pct": 8
+      },
+      {
+       "segment": "MOX film",
+       "revenue": 125,
+       "pct": 3
+      },
+      {
+       "segment": "Pipes, batteries and lifestyle",
+       "revenue": 472,
+       "pct": 11
+      }
+     ]
+    },
+    {
+     "year": "FY26",
+     "basis": "presentation (June 2026 business-mix slide, consolidated; matches CRISIL's split and the annual report total)",
+     "total": 6114,
+     "parts": [
+      {
+       "segment": "Drums, cans and pails",
+       "revenue": 3744,
+       "pct": 61
+      },
+      {
+       "segment": "IBCs",
+       "revenue": 808,
+       "pct": 13
+      },
+      {
+       "segment": "Composite cylinders",
+       "revenue": 762,
+       "pct": 12
+      },
+      {
+       "segment": "MOX film",
+       "revenue": 171,
+       "pct": 3
+      },
+      {
+       "segment": "Pipes, batteries and lifestyle",
+       "revenue": 629,
+       "pct": 10
+      }
+     ]
+    },
+    {
+     "year": "FY29E",
+     "basis": "my projection (at FY26 resin prices)",
+     "total": 8781,
+     "parts": [
+      {
+       "segment": "Drums, cans and pails",
+       "revenue": 4983,
+       "pct": 57
+      },
+      {
+       "segment": "IBCs",
+       "revenue": 1229,
+       "pct": 14
+      },
+      {
+       "segment": "Composite cylinders",
+       "revenue": 1384,
+       "pct": 16
+      },
+      {
+       "segment": "MOX film",
+       "revenue": 228,
+       "pct": 3
+      },
+      {
+       "segment": "Pipes, batteries and lifestyle",
+       "revenue": 957,
+       "pct": 11
+      }
+     ]
+    }
+   ],
+   "assumptions": [
+    {
+     "segment": "Drums, cans and pails",
+     "growth": "~10% a year FY26–FY29 (₹3,744cr to about ₹4,980cr)",
+     "why": "Management guides 11–13% volume growth for packaging including IBCs; CRISIL expects only 8–10% revenue growth a year, and overall volume grew 11% in Q1 FY27 against the 15% target. I give drums a little less than the packaging guide because IBCs grow faster. About ₹400cr of confirmed packaging orders for calendar 2026 and new plants at Chiplun, Cuttack, Dammam and Georgia (US) support it; India plants run at about 80%. Resin price swings move revenue but are passed on monthly, so I use FY26 prices."
+    },
+    {
+     "segment": "IBCs",
+     "growth": "~15% a year (₹808cr to about ₹1,230cr)",
+     "why": "IBC sales grew about 17% a year from FY23 to FY26 (₹502cr to ₹808cr). Silvassa phase 2 doubles that plant to 300,000 IBCs a year by March 2027 and the Georgia plant adds an IBC line; I trim the past rate slightly as the base grows."
+    },
+    {
+     "segment": "Composite cylinders",
+     "growth": "~22% a year (₹762cr to about ₹1,380cr)",
+     "why": "The guide is 25–30% and the line grew about 30% a year from FY23 to FY26 (₹346cr to ₹762cr), but only 22.7% in FY26 itself (CRISIL). The order book is about ₹185cr, roughly three months of sales; the oil companies have paused the 14.2-kg composite LPG cylinder; and new products (hydrogen cylinders, fire extinguishers, air tanks) are only starting. Mora's 1,080-cascade plant gives enough capacity, so demand, not capacity, sets the pace."
+    },
+    {
+     "segment": "MOX film",
+     "growth": "~10% a year (₹171cr to about ₹230cr)",
+     "why": "Guide of 10–12% for MOX film and other products; MOX grew about 11% a year from FY23 to FY26 and no new capacity has been announced."
+    },
+    {
+     "segment": "Pipes, batteries and lifestyle",
+     "growth": "~15% a year (₹629cr to about ₹960cr)",
+     "why": "PE pipes are guided at 20–25% (order book about ₹265cr) and the battery arm projects 30%-plus a year, but pipes depend on government contractors, whose refusal of price rises held back Q1 FY27; turf, mats and auto parts are guided at 10–12%. For FY23 this line is ₹472cr, worked out from the June 2023 slide's rounded shares (7% infrastructure plus 4% technical and lifestyle of ₹4,293cr), and drums are the rest of the ₹3,321cr established-products figure."
+    }
+   ],
+   "managementAim": "Volume growth of 15% a year (packaging 11–13%, composite products 25–30%, PE pipes 20–25%, others 10–12%) (Q1 FY27 call, 6 Aug 2026); composites to grow “by over 25%” a year for the next three years and more than US$1bn of business within five years (Q4 FY26 call, 29 May 2026). In Q1 FY27 management said the value-added share of 25.4% “is going to continue”.",
+   "drivers": [
+    {
+     "kind": "capex",
+     "text": "Fully automated CNG cascade plant at Mora near Vapi: 1,080 cascades a year (480 moved from Daman plus 600 new), commissioned in FY26.",
+     "source": "Q4 FY26 call, 29 May 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "Silvassa automated IBC plant: phase 1 of 150,000 a year done, phase 2 to 300,000 a year by end-FY27; the Georgia (US) plant is adding a second IBC line and a drum line.",
+     "source": "Q4 FY26 call, 29 May 2026; Q1 FY27 call, 6 Aug 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "Capex about ₹350cr in FY27 (₹75cr in Q1, ₹47cr of it on IBCs and composites), then ₹200–250cr a year; FY26 capex was ₹370cr, ₹172cr of it on value-added products.",
+     "source": "Q1 FY27 call, 6 Aug 2026; Q4 FY26 call, 29 May 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "Composite order book about ₹185cr (₹195cr in May); HPCL ordered 1.4 lakh composite LPG cylinders and tied up with Swiggy Instamart for home delivery; about ₹400cr of confirmed packaging orders for calendar 2026.",
+     "source": "Q1 FY27 call, 6 Aug 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "Composite products 25–30% growth, packaging 11–13%, PE pipes 20–25%, others 10–12%; consolidated volume 15% a year.",
+     "source": "Q1 FY27 call, 6 Aug 2026"
+    },
+    {
+     "kind": "customers",
+     "text": "New composite products: approved Type III and IV hydrogen cylinders, larger 250- and 350-litre CNG and hydrogen cylinders with approvals expected, fire extinguishers aimed at refineries that need about 800,000 a year, and composite air tanks for bus and truck makers.",
+     "source": "Q1 FY27 call, 6 Aug 2026"
+    }
+   ],
+   "risks": [
+    "Composite growth rests on the state oil companies, which paused the 14.2-kg composite LPG cylinder launch during the LPG shortage; the company is now weighing its own gas-distribution venture instead.",
+    "Packaging is about three-quarters of revenue, so composites would have to grow far faster than guided to change the mix much.",
+    "Shares swing with resin prices: in Q1 FY27 the value-added share fell to 25.4% as higher polymer prices inflated packaging revenue.",
+    "Working capital is stretched (about 110 days, with imported carbon fibre stocked for six months) and composite contracts are fixed-price for a year.",
+    "Pipes depend on government contractors, who refused price rises in Q1 FY27."
+   ],
+   "shift": "modest",
+   "confidence": "medium",
+   "confidenceWhy": "Capacity for the value-added lines is built or funded, but the composite order book covers only about three months, so the FY29 mix is mostly an extrapolation of steady trends; because packaging is so large, even a big beat or miss in composites moves the mix by only a few points.",
+   "watch": [
+    {
+     "text": "Composite products up at least 25% in FY27 (to about ₹950cr)",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Value-added products back to 29% or more of FY27 revenue",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Silvassa IBC phase 2 complete at 300,000 a year",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "First sizeable fire-extinguisher orders from oil companies",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Oil companies restart the 14.2-kg composite LPG cylinder or place a large new tender",
+     "due": "Q4 FY28"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Time Technoplast: Q1 FY27 earnings call transcript, 6 Aug 2026 (company)",
+     "url": "https://www.timetechnoplast.com/wp-content/uploads/2026/08/q1-transcript-2026.pdf"
+    },
+    {
+     "label": "Time Technoplast: Q4 FY26 earnings call transcript, 29 May 2026 (GuruFocus)",
+     "url": "https://www.gurufocus.com/stock/BOM:532856/transcripts/8894802"
+    },
+    {
+     "label": "Time Technoplast: corporate presentation, June 2026 (FY26 business mix)",
+     "url": "https://www.timetechnoplast.com/wp-content/uploads/2026/06/corporate-presentation-june-2026.pdf"
+    },
+    {
+     "label": "Time Technoplast: investor presentation, June 2023 (FY23 business mix and product table)",
+     "url": "https://www.timetechnoplast.com/wp-content/uploads/2023/01/investor-presentation-june-2023.pdf"
+    },
+    {
+     "label": "Time Technoplast: Annual Report FY26 (segment note 32) (BSE)",
+     "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/5ddf202f-08ce-47ab-ae6f-f71021f04eaa.pdf"
+    },
+    {
+     "label": "Time Technoplast: rating rationale, 28 Jul 2026 — CRISIL",
+     "url": "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/TimeTechnoplastLimited_July%2028_%202026_RR_400645.html"
+    }
+   ],
+   "asOf": "2026-10-07"
+  },
+  {
+   "company": "Titagarh Railsystems",
+   "headline": "Wagon builder turning into a metro and Vande Bharat train maker",
+   "now": "Titagarh builds freight wagons and their steel castings for Indian Railways and private owners, and passenger trains: metro cars for Bengaluru, Gujarat, Mumbai and Pune, Vande Bharat sleeper trains (with BHEL), and the propulsion systems and traction motors that drive them. In FY26 (consolidated revenue ₹3,186cr) freight wagons and other heavy engineering, including a small shipyard, were 83% of revenue and passenger trains 17% (₹539cr). Three years earlier passenger work was already 19% thanks to Pune Metro deliveries, then fell to 7% in FY25 before recovering, so the big change is still ahead. Its 49% share of a rail-wheel plant with Ramkrishna Forgings is a joint venture: only its share of the profit will show, not the wheel sales.",
+   "future": "Passenger work is already 81% of the ₹12,865cr rail order book (491 metro cars and 1,280 Vande Bharat cars) and was 31% of revenue in Q1 FY27; management says passenger 'will overtake the freight business and become the dominant part of the business' (Q1 FY27 call, 14 Aug 2026). It plans capacity for 850+ coaches a year by 2028–29, which it says is worth ₹8,500–9,000cr a year if full, using 40 extra acres at Uttarpara with a 1.6km test track, an in-house aluminium coach line due by Q1 FY28 and FY26 capex of ₹368cr. Freight has been cut to 600–650 wagons a month while the Railways' tender for about one lakh wagons is awaited, so I expect it to grow only modestly once orders return. I expect passenger revenue of about ₹2,900cr in FY29, close to half of a ~₹6,100cr business, but below the company's own plan because the coach ramp keeps slipping (63 coaches in FY26 against 100–120 planned). The ~₹600cr Falta shipyard adds a little from FY28.",
+   "segments": [
+    {
+     "name": "Freight wagons and other",
+     "plain": "Freight wagons, bogies, couplers and steel castings, plus bridges, defence work and the small shipbuilding arm"
+    },
+    {
+     "name": "Passenger trains",
+     "plain": "Metro cars, Vande Bharat sleeper trains, suburban trains, and the propulsion systems and traction motors that power them"
+    }
+   ],
+   "mix": [
+    {
+     "year": "FY23",
+     "basis": "annual report segment note (FY23, note 39, consolidated; shipbuilding was inside freight that year; Italian unit Firema excluded as an associate/discontinued)",
+     "total": 2779.6,
+     "parts": [
+      {
+       "segment": "Freight wagons and other",
+       "revenue": 2250.9,
+       "pct": 81
+      },
+      {
+       "segment": "Passenger trains",
+       "revenue": 528.7,
+       "pct": 19
+      }
+     ]
+    },
+    {
+     "year": "FY26",
+     "basis": "annual report segment note (FY26, note 41, consolidated: freight ₹2,604.3cr + shipbuilding ₹42.2cr grouped together; passenger ₹539.3cr, matching the Q1 FY27 presentation)",
+     "total": 3185.8,
+     "parts": [
+      {
+       "segment": "Freight wagons and other",
+       "revenue": 2646.5,
+       "pct": 83
+      },
+      {
+       "segment": "Passenger trains",
+       "revenue": 539.3,
+       "pct": 17
+      }
+     ]
+    },
+    {
+     "year": "FY29E",
+     "basis": "my projection",
+     "total": 6100,
+     "parts": [
+      {
+       "segment": "Freight wagons and other",
+       "revenue": 3200,
+       "pct": 52
+      },
+      {
+       "segment": "Passenger trains",
+       "revenue": 2900,
+       "pct": 48
+      }
+     ]
+    }
+   ],
+   "assumptions": [
+    {
+     "segment": "Passenger trains",
+     "growth": "~75% a year FY26–FY29 (₹539cr → ~₹2,900cr): FY27 ~₹1,250cr, FY28 ~₹2,200cr",
+     "why": "Built car by car: about 230 metro cars at roughly ₹9cr each and 170 Vande Bharat sleeper cars at roughly ₹4cr each (Titagarh keeps about 51% of each car's value; BHEL the rest), plus about ₹150cr of propulsion and traction motors. Roughly ₹4,400cr of metro work (491 cars) and all 1,280 Vande Bharat cars are already on order. I use only about 60–65% of the strategic plan's car numbers (275–300 metro cars in FY28 rising towards 500–550; 192 Vande Bharat cars in FY28 and 288 in FY29; plan of 13 Nov 2025) because FY26 delivered 63 cars against 100–120 planned and FY27 is tracking about 180 (30 in Q1 plus 45–50 a quarter) against 200. FY29 also needs about ₹1,000–1,500cr of new metro orders from the ₹16,365cr pipeline the company lists, as the current metro book runs out during FY29."
+    },
+    {
+     "segment": "Freight wagons and other",
+     "growth": "~6–7% a year (₹2,646cr → ~₹3,200cr)",
+     "why": "About 7,800 wagons at ~₹37 lakh each (FY26: 7,019 wagons for ₹2,604cr; FY25: 9,431 for ₹3,492cr) plus ~₹250cr from the shipyard (₹470cr order book over 30 months; new Falta yard running from Q1–Q2 FY28). Output averages about 650 a month in FY29, a blend of the Railways' big tender arriving during FY28 (800–1,000 a month) and further delay (500–600 a month on private orders); management calls 600 a month a bad year and 1,000 a good one (Q4 FY26 call, 1 Jun 2026). The current wagon book is only ~5,300 wagons, all due in FY27. Ships are kept in this line in every year because FY23's segment note did not show them separately."
+    }
+   ],
+   "managementAim": "Freight below 40% of revenue in FY28, with metro output of 275–300 cars and 192 Vande Bharat cars that year (Strategic plan and outlook presentation, 13 Nov 2025). Passenger share to rise from 17% towards its 70–80% share of the order book 'maybe by FY30' (Q4 FY26 call, 1 Jun 2026). Capacity of 850+ coaches a year by 2028–29 or 2029–30, worth ₹8,500–9,000cr of revenue at full use, which management stresses is capacity, not a forecast (Q1 FY27 call, 14 Aug 2026). About 200 coaches in FY27, ±10% (Q1 FY27 call).",
+   "drivers": [
+    {
+     "kind": "orders",
+     "text": "Passenger order book ₹10,395cr, 81% of the ₹12,865cr standalone rail order book: 491 metro cars, 1,280 Vande Bharat sleeper cars, 74 propulsion sets and 72 traction motors. Freight book only ~₹2,470cr (~5,300 wagons).",
+     "source": "Q1 FY27 presentation, 14 Aug 2026"
+    },
+    {
+     "kind": "guidance",
+     "text": "Coach output to rise to 45–50 a quarter in FY27 (30 in Q1, up from 63 in all of FY26); target of ~200 for the year 'remains intact' within ±10%; first Vande Bharat sleeper train between end-Q3 and start-Q4 FY27; Gujarat and Bengaluru metro orders largely finished in FY27 and Mumbai prototypes in parallel.",
+     "source": "Q1 FY27 call, 14 Aug 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "Coach capacity to reach 850+ a year by 2028–29; ~40 acres bought at Uttarpara for an integrated plant with a 1.6km test track; FY26 capex ₹368cr; ABB tie-up to localise train control, converters and traction motors.",
+     "source": "Q1 FY27 call, 14 Aug 2026; Q4 FY26 presentation, Jun 2026"
+    },
+    {
+     "kind": "capex",
+     "text": "In-house aluminium coach line (machines bought, being installed) fully commissioned by Q1 FY28, ending imports of body sub-assemblies from Italy for the 12-train Pune Metro repeat order and preparing for bullet-train work.",
+     "source": "Q1 FY27 call, 14 Aug 2026"
+    },
+    {
+     "kind": "customers",
+     "text": "Pune Metro's first 34 trains passed their defect-liability period and the customer ordered 12 more; Mumbai Metro Lines 5 and 6 (240 cars) won in 2025; a 35-year maintenance contract for 80 Vande Bharat trains sits in a 50:50 venture with BHEL.",
+     "source": "Q4 FY26 call, 1 Jun 2026; Strategic plan presentation, 13 Nov 2025"
+    },
+    {
+     "kind": "capex",
+     "text": "Falta shipyard in the Titagarh Naval Systems subsidiary, about ₹600–610cr with a 25% government subsidy (₹169cr secured), to be fully running between Q1 and Q2 FY28.",
+     "source": "Q1 FY27 call, 14 Aug 2026; Q4 FY26 call, 1 Jun 2026"
+    },
+    {
+     "kind": "orders",
+     "text": "Wagon output deliberately cut to 600–650 a month (capacity 1,000) until the Railways issues its large wagon tender, which management says can be 'deferred by a few months or a couple of quarters, but it cannot be stopped'.",
+     "source": "Q1 FY27 call, 14 Aug 2026"
+    }
+   ],
+   "risks": [
+    "The coach ramp keeps slipping: 63 cars in FY26 against 100–120 planned, and FY27 is tracking about 180 against 200; another slip pushes the passenger share out by a year.",
+    "The Vande Bharat sleeper prototype is due only at the end of Q3 or start of Q4 FY27 after an earlier design change (16 to 24 cars); trial delays would hold back the largest order, on which Titagarh keeps only about half the value.",
+    "The Railways can take work in-house: the tender for 2,856 Mumbai suburban 'Vande Metro' cars was cancelled and given to its own factory.",
+    "After FY28 the metro line needs new orders against Alstom, BEML and others; without them FY29 passenger revenue falls short.",
+    "Freight depends on a tender with no date; the wagon book of ~5,300 wagons runs out in FY27, which could leave the plant at 600 wagons a month or less.",
+    "Cash and balance sheet strain: the cash cycle stretched to 113 days, Titagarh has a ₹504cr undertaking for the wheel venture's loans, and its auditor flagged control weaknesses after the Firema write-offs."
+   ],
+   "shift": "transformational",
+   "confidence": "medium",
+   "confidenceWhy": "Most of the FY29 passenger figure is already on order and capacity is being built, but the company has delivered well short of its own coach plans and the freight figure rests on a Railways tender with no date.",
+   "watch": [
+    {
+     "text": "At least 180 passenger coaches dispatched in FY27 (target ~200, ±10%)",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "First Vande Bharat sleeper train delivered to the Railways",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Passenger trains at least a third of FY27 revenue (31% in Q1)",
+     "due": "Q4 FY27"
+    },
+    {
+     "text": "Railways' large wagon tender awarded and wagon output back above 800 a month",
+     "due": "Q2 FY28"
+    },
+    {
+     "text": "New metro orders of at least ₹2,000cr booked to keep the line full in FY29",
+     "due": "Q4 FY28"
+    },
+    {
+     "text": "Passenger revenue above ₹2,000cr in FY28",
+     "due": "Q4 FY28"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Titagarh Q1 FY27 investor presentation, 14 Aug 2026 (NSE)",
+     "url": "https://nsearchives.nseindia.com/corporate/TWL_14082026153310_InvestorPresentationQ1FY2714082026.pdf"
+    },
+    {
+     "label": "Titagarh Q4 FY26 investor presentation, Jun 2026",
+     "url": "https://www.titagarh.in/storage/report/actual/investor-presentation-q4-%26-fy26.pdf"
+    },
+    {
+     "label": "Titagarh Strategic plan and outlook presentation, 13 Nov 2025",
+     "url": "https://www.titagarh.in/storage/report/actual/disclosure-to-sepresentation-on-strategic-plan-and-outlook.pdf"
+    },
+    {
+     "label": "Titagarh annual report FY26 (consolidated segment note 41, MD&A)",
+     "url": "https://www.titagarh.in/storage/report/actual/annual_report_2025-26.pdf"
+    },
+    {
+     "label": "Titagarh annual report FY23 (consolidated segment note 39)",
+     "url": "https://www.titagarh.in/storage/report/actual/1694086986_1YtJt_annual-report-22-23pdf.pdf"
+    },
+    {
+     "label": "Titagarh Q1 FY27 call transcript, 14 Aug 2026",
+     "url": "https://www.titagarh.in/storage/report/actual/earnings-on-call-transcript-q1-%26-fy27.pdf"
+    }
+   ],
+   "asOf": "2026-10-07"
+  }
+ ]
+}

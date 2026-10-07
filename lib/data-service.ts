@@ -3,6 +3,7 @@ import { getCompanyFilings, getCompanyFilingHeadlines } from './filings/server';
 import { getCompanyNews, getCompanyNewsFlag } from './news/server';
 import { getCompanyEventChips } from './events/server';
 import { annualReportFor } from './annual-reports/server';
+import { shiftFor, shiftChipFor } from './business-shift/server';
 import { checkpointsFor } from './checkpoints';
 import { projectsFor, capacityFor } from './projects';
 import { managementFor } from './management';
@@ -260,6 +261,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             filingHeadlines: (() => { const h = getCompanyFilingHeadlines(co.name); return h.length ? h : undefined; })(),
             newsFlag: getCompanyNewsFlag(co.name),
             events: getCompanyEventChips(co.name),
+            shiftChip: shiftChipFor(co.name),
             marketCap: co.marketCap ? Number(co.marketCap) : undefined,
             currentPrice: co.currentPrice ? Number(co.currentPrice) : undefined,
             bookValue: co.bookValue ? Number(co.bookValue) : undefined,
@@ -479,6 +481,8 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
         events: getCompanyEventChips(co.name),
         news: getCompanyNews(co.name),
         annualReport: annualReportFor(co.name),
+        shift: shiftFor(co.name),
+        shiftChip: shiftChipFor(co.name),
         price: 0,
         priceChange: 0,
         financials: createSafeFinancials(latestF, latestPrevF, co.financials),

@@ -26,6 +26,7 @@ import { prefetchDetail, takeDetail } from '@/lib/card-prefetch';
 import { CompanyBusinessCard } from './SectorBusinesses';
 import { CompanyNews, useUnseenNews } from './CompanyNews';
 import { AnnualReportCard } from './AnnualReportCard';
+import { BusinessShiftCard } from './BusinessShiftCard';
 import { businessFor } from '@/lib/sector-overviews';
 import { displayCase } from '@/lib/display-name';
 
@@ -66,7 +67,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     // Opening the card on its NEWS tab (the "news" marker itself now opens the Filings panel).
     const [openNews, setOpenNews] = useState(0);
     // Closing the card forgets that, so opening it again by the row starts on the usual tab.
-    useEffect(() => { if (!expanded) setOpenNews(0); }, [expanded]);
+    // Likewise the IN 3 YRS tab, opened by the row's shift marker.
+    const [openShift, setOpenShift] = useState(0);
+    useEffect(() => { if (!expanded) { setOpenNews(0); setOpenShift(0); } }, [expanded]);
     const { isAdminMode } = useAdmin();
     const [isDeleting, setIsDeleting] = useState(false);
     const [showColorPicker, setShowColorPicker] = useState(false);
@@ -415,6 +418,17 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                             >
                                 {newsUnseen && <span className="w-1.5 h-1.5 rounded-full bg-[#E0A030]" />} news
                             </a>
+                        )}
+                        {company.shiftChip && (
+                            // The business is changing shape (lib/business-shift): opens the card on its IN 3 YRS tab.
+                            <button
+                                onClick={(e) => { e.stopPropagation(); setExpanded(true); setOpenShift(n => n + 1); }}
+                                className="flex-shrink-0 hover:opacity-80 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border bg-[#F3EEFB] text-[#6B3FA0] border-[#DDCDF5] whitespace-nowrap"
+                                title={`${company.shiftChip.headline}
+${company.shiftChip.segment}: ${company.shiftChip.from}% of revenue now, about ${company.shiftChip.to}% by FY29 (my projection)`}
+                            >
+                                → {company.shiftChip.segment.split(/[ ,&(]/)[0]}
+                            </button>
                         )}
                         {company.events && company.events.length > 0 && (
                             <a
@@ -780,6 +794,8 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                             newsUnseen={newsUnseen}
                                             onNewsOpen={markNewsSeen}
                                             openNews={openNews}
+                                            shift={effective.shift ? <BusinessShiftCard shift={effective.shift} /> : undefined}
+                                            openShift={openShift}
                                         />
                                     </div>
                                 </div>

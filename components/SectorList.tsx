@@ -81,6 +81,10 @@ export interface EnrichedCompany {
     news?: import('@/lib/news/types').NewsItem[];
     // What the latest annual report showed (lib/annual-reports); with the detail fetch, for the AR tab.
     annualReport?: import('@/lib/annual-reports/types').AnnualReport;
+    /** What the business could look like in three years (lib/business-shift); on the card only. */
+    shift?: import('@/lib/business-shift/types').BusinessShift;
+    /** The line that is growing, for the row's marker. */
+    shiftChip?: import('@/lib/business-shift/types').ShiftChip;
     checkpoints?: import('@/lib/checkpoints').Checkpoint[];
     projects?: import('@/lib/projects/types').Project[];
     capacity?: import('@/lib/projects/types').Capacity;

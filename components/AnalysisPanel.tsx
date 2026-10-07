@@ -22,6 +22,8 @@ export function AnalysisPanel({
     business,
     annualReport,
     annualReportLabel = 'AR',
+    shift,
+    openShift = 0,
     news,
     newsUnseen = false,
     onNewsOpen,
@@ -42,6 +44,10 @@ export function AnalysisPanel({
     /** What the latest annual report showed; adds an AR tab when given. */
     annualReport?: React.ReactNode,
     annualReportLabel?: string,
+    /** What the business could look like in three years; adds an IN 3 YRS tab when given. */
+    shift?: React.ReactNode,
+    /** Goes up by one each time the row's shift marker is clicked: show the IN 3 YRS tab. */
+    openShift?: number,
     /** The NEWS tab: sharp price moves and market or policy events for this company. */
     news?: React.ReactNode,
     /** Shows the dot on the NEWS tab until it is opened. */
@@ -64,7 +70,7 @@ export function AnalysisPanel({
     );
     // Tabs also open when the pointer rests on them.
     const hover = useHoverOpen();
-    const [viewMode, setViewMode] = useState<"ANALYSIS" | "PROFILE" | "DELTA" | "NOTES" | "BUSINESS" | "NEWS" | "AR">("ANALYSIS");
+    const [viewMode, setViewMode] = useState<"ANALYSIS" | "PROFILE" | "DELTA" | "NOTES" | "BUSINESS" | "NEWS" | "AR" | "SHIFT">("ANALYSIS");
 
     // Drives the brighter NOTES tab, so the tab itself says whether
     // anything has been written for this company.
@@ -76,7 +82,7 @@ export function AnalysisPanel({
             const match = safeHistory[activeQuarterIndex];
             setActiveQuarter(match.quarter);
             setActiveData(match.analysis);
-            if (viewMode === "PROFILE" || viewMode === "DELTA" || viewMode === "NOTES" || viewMode === "BUSINESS" || viewMode === "NEWS" || viewMode === "AR") {
+            if (viewMode === "PROFILE" || viewMode === "DELTA" || viewMode === "NOTES" || viewMode === "BUSINESS" || viewMode === "NEWS" || viewMode === "AR" || viewMode === "SHIFT") {
                 // If we were on Profile or Delta, and a quarter is clicked, switch back to Analysis
                 // Actually, stay in current mode but update the underlying data
             } else {
@@ -90,6 +96,9 @@ export function AnalysisPanel({
     useEffect(() => {
         if (openNews > 0) { setViewMode("NEWS"); setActiveQuarter("NEWS"); }
     }, [openNews]);
+    useEffect(() => {
+        if (openShift > 0) { setViewMode("SHIFT"); setActiveQuarter("SHIFT"); }
+    }, [openShift]);
 
     const handleTabClick = (q: string, idx: number) => {
         setViewMode("ANALYSIS");
@@ -119,6 +128,10 @@ export function AnalysisPanel({
     const renderContent = () => {
         if (viewMode === "AR" && annualReport) {
             return <div className="bg-white min-h-full">{annualReport}</div>;
+        }
+
+        if (viewMode === "SHIFT" && shift) {
+            return <div className="bg-white min-h-full">{shift}</div>;
         }
 
         if (viewMode === "NEWS" && news) {
@@ -433,6 +446,20 @@ export function AnalysisPanel({
                         title="What the company does, from its sector note"
                     >
                         BUSINESS
+                    </button>
+                )}
+
+                {shift && (
+                    <button
+                        onClick={() => { setViewMode("SHIFT"); setActiveQuarter("SHIFT"); }}
+                        {...hover(() => { setViewMode("SHIFT"); setActiveQuarter("SHIFT"); })}
+                        className={`px-2 py-2 text-[10px] font-semibold border-b-2 transition-colors whitespace-nowrap ${viewMode === "SHIFT"
+                            ? 'text-[#6B3FA0] border-[#B79AD8] bg-white'
+                            : 'text-gray-400 border-transparent hover:text-gray-600'
+                            }`}
+                        title="What the business is now, and what it could be in three years"
+                    >
+                        IN 3 YRS
                     </button>
                 )}
 
