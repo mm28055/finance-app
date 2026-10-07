@@ -656,7 +656,7 @@ export const autoRelatedEv: SectorOverview = {
         {
             company: 'Pricol', rank: 3, stance: 'SCALEUP', segment: WIRE,
             what: "Makes instrument clusters and telematics, oil, water and fuel pumps, brakes and switches, and plastic parts (bought from the TVS group in 2025); plans to list the cluster business separately.",
-            view: "**Share gains, capped margins and a lot happening at once.** Two-wheeler sales grew 28% against the industry’s 23% and it delivered its ₹4,000cr revenue promise, but the margin fell to 11.4% and management says 12.5–13% is the ceiling. It is building five plants for ₹700cr while demerging, and its auditor resigned in 2025 for reasons not repeated in the annual report. The price needs about {need:Pricol|20}% a year against my ~17%.",
+            view: "**Share gains, capped margins and a lot happening at once.** Two-wheeler sales grew 28% against the industry’s 23% and it delivered its ₹4,000cr revenue promise, but the margin fell to 11.4% and management says 12.5–13% is the ceiling. It is building five plants for ₹700cr while demerging, and its auditor resigned in 2025 for reasons not repeated in the annual report. The price needs about {need:Pricol|20}% a year against my ~17%. On 7 Oct 2026 the price moved into the fits band, but I keep it at follow: no filing in the last six weeks explains the auditor's exit, and the Q2 margin that would show the promised recovery is not yet out.",
             watch: 'Q2 margin after indexation (above 12% would confirm); the demerger scheme and any partner; plastics margin back above 9%; an explanation for the 2025 auditor resignation.',
         },
         {
