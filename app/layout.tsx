@@ -8,7 +8,6 @@ import "./globals.css";
 import { Sidebar } from "@/components/Sidebar";
 import { SectorChat } from "@/components/SectorChat";
 import { NotesPanel } from "@/components/NotesPanel";
-import { CalendarDrawer } from "@/components/CalendarDrawer";
 import { FilingsDrawer } from "@/components/FilingsDrawer";
 import { Toaster } from 'sonner';
 import { Menu } from 'lucide-react';
@@ -47,7 +46,6 @@ export default function RootLayout({
           <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
           <SectorChat />
           <NotesPanel />
-          <CalendarDrawer />
           <FilingsDrawer />
           <div className="pt-14 md:pt-0 md:pl-[260px] 2xl:pl-72 transition-all duration-300">
             {children}

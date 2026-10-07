@@ -418,8 +418,10 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                         )}
                         {company.events && company.events.length > 0 && (
                             <a
-                                href="/calendar"
+                                // Opens the Filings panel on its Calendar tab, on this company.
+                                href="/filings"
                                 data-company={company.name}
+                                data-tab="calendar"
                                 onClick={(e) => e.stopPropagation()}
                                 className="flex-shrink-0 hover:opacity-80 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border bg-[#EAF2FA] text-[#35577A] border-[#C9DCEF] whitespace-nowrap"
                                 title={company.events.map(ev => `${ev.kind === 'results' ? 'Results' : 'Earnings call'}: ${hoverDate(ev.date)}${ev.time ? `, ${ev.time}` : ''}`).join('\n')}

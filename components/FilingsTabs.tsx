@@ -3,9 +3,11 @@ import React from 'react';
 import { FilingsFeed } from './FilingsFeed';
 import { ResultsFeed, CallsFeed, CallChangesFeed, type ResultRow, type CallRow, type CallChangeRow } from './ResultsCallsFeeds';
 import { PortfolioFeed, type Holding } from './PortfolioFeed';
+import { EventsCalendar } from './EventsCalendar';
 
 type Rows = React.ComponentProps<typeof FilingsFeed>['filings'];
-type Tab = 'portfolio' | 'filings' | 'news' | 'results' | 'calls' | 'changes';
+type Tab = 'portfolio' | 'filings' | 'calendar' | 'news' | 'results' | 'calls' | 'changes';
+type CalendarData = { updated: string; today: string; events: React.ComponentProps<typeof EventsCalendar>['events'] };
 
 // The Filings page has five lists, kept apart: what companies filed themselves; what happened
 // around them (market and policy events, and sharp price moves with the reason found); results as
@@ -33,8 +35,14 @@ export function FilingsTabs({ filings, news, results = [], calls = [], callsComp
         const t = setTimeout(load, 1200);
         return () => clearTimeout(t);
     }, [tab, allCalls]);
+    // The calendar (result dates and earnings calls ahead), loaded when its tab is first opened.
+    const [calendar, setCalendar] = React.useState<CalendarData | 'error' | null>(null);
+    React.useEffect(() => {
+        if (tab !== 'calendar' || calendar) return;
+        fetch('/api/calendar').then(r => (r.ok ? r.json() : Promise.reject())).then(setCalendar).catch(() => setCalendar('error'));
+    }, [tab, calendar]);
     const tabClass = (active: boolean) => `px-3 max-md:px-[5px] py-2 text-xs max-md:text-[11px] font-semibold border-b-2 whitespace-nowrap shrink-0 ${active ? 'text-[#4A7AAF] border-[#6B9FCC]' : 'text-gray-400 border-transparent hover:text-gray-600'}`;
-    const tabs: [Tab, string][] = [['portfolio', 'Portfolio'], ['filings', 'Filings'], ['news', 'Market & Policy'], ['results', 'Results'], ['calls', 'Calls'], ['changes', 'Call changes']];
+    const tabs: [Tab, string][] = [['portfolio', 'Portfolio'], ['filings', 'Filings'], ['calendar', 'Calendar'], ['news', 'Market & Policy'], ['results', 'Results'], ['calls', 'Calls'], ['changes', 'Call changes']];
     return (
         <div>
             <div className="sticky -top-4 z-20 -mt-4 pt-4 -mx-4 px-4 bg-[#FAFBFC] flex gap-1 max-md:gap-0 shadow-[inset_0_-1px_0_#e5e7eb] mb-4 overflow-x-auto overflow-y-hidden overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" role="tablist">
@@ -48,6 +56,16 @@ export function FilingsTabs({ filings, news, results = [], calls = [], callsComp
             {/* All stay mounted so each keeps its own filters when you switch. */}
             <div hidden={tab !== 'portfolio'}><PortfolioFeed holdings={holdings} filings={filings.filter(f => f.inPortfolio)} news={news.filter(f => f.inPortfolio)} results={results.filter(r => r.inPortfolio)} calls={calls.filter(c => c.inPortfolio)} callChanges={callChanges.filter(c => c.inPortfolio)} /></div>
             <div hidden={tab !== 'filings'}><FilingsFeed filings={filings} initialCompany={initialCompany} /></div>
+            <div hidden={tab !== 'calendar'}>
+                {calendar === null && <div className="h-40 bg-gray-100 rounded-xl animate-pulse" />}
+                {calendar === 'error' && <p className="text-sm text-gray-400">The calendar could not be loaded. Close and try again.</p>}
+                {calendar && calendar !== 'error' && <EventsCalendar events={calendar.events} today={calendar.today} initialQuery={initialTab === 'calendar' ? initialCompany : ''} onCompany={onCompany} />}
+                <p className="text-[11px] text-gray-400 mt-6">
+                    Result dates come from the board meetings companies notify to NSE, usually a week or two ahead; call dates from each
+                    company&apos;s own notice, often only a few days ahead. Companies listed only on BSE, and those that hold no call, are not
+                    shown. Refreshed each evening{calendar && calendar !== 'error' && calendar.updated ? ` (last ${calendar.updated.slice(0, 10)})` : ''}.
+                </p>
+            </div>
             <div hidden={tab !== 'news'}><FilingsFeed filings={news} kind="news" initialCompany={initialCompany} /></div>
             <div hidden={tab !== 'results'}><ResultsFeed results={results} onCompany={onCompany} /></div>
             <div hidden={tab !== 'calls'}>
