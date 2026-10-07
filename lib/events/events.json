@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-06T20:14:02.428Z",
+ "updated": "2026-10-07T04:54:02.862Z",
  "events": [
   {
-   "company": "Transformers & Rect",
-   "sector": "Electrical Transformers",
+   "company": "GSFC",
+   "sector": "Agrochemical & Fertilizers",
    "kind": "results",
-   "date": "2026-10-13",
+   "date": "2026-10-12",
    "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2699_WebXMLFile_20261006_125821117.xml"
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1233_WebXMLFile_20261003_161817042.xml"
   },
   {
    "company": "Transformers & Rect",
@@ -19,12 +19,28 @@
    "url": "https://nsearchives.nseindia.com/corporate/TRIL_06102026171606_IntimationofEarningCallQ22027.pdf"
   },
   {
+   "company": "Transformers & Rect",
+   "sector": "Electrical Transformers",
+   "kind": "results",
+   "date": "2026-10-13",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2699_WebXMLFile_20261006_125821117.xml"
+  },
+  {
    "company": "CEAT",
    "sector": "Tyres",
    "kind": "results",
    "date": "2026-10-14",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2711_WebXMLFile_20260925_170637864.xml"
+  },
+  {
+   "company": "Elecon Engg.Co",
+   "sector": "Electrical Equipment",
+   "kind": "results",
+   "date": "2026-10-14",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_133_WebXMLFile_20260930_173426319.xml"
   },
   {
    "company": "Tata Technologies",
@@ -57,7 +73,7 @@
    "sector": "EMS & Electronics",
    "kind": "results",
    "date": "2026-10-15",
-   "quarter": "Q2 FY28",
+   "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_21528_WebXMLFile_20261005_144251052.xml"
   },
   {
@@ -67,6 +83,22 @@
    "date": "2026-10-16",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_13786_WebXMLFile_20261006_181021942.xml"
+  },
+  {
+   "company": "HDFC Bank",
+   "sector": "Finance",
+   "kind": "results",
+   "date": "2026-10-17",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_797_WebXMLFile_20260922_105634856.xml"
+  },
+  {
+   "company": "ICICI Bank",
+   "sector": "Finance",
+   "kind": "results",
+   "date": "2026-10-17",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1606_WebXMLFile_20260922_185105608.xml"
   },
   {
    "company": "LMW",
@@ -107,6 +139,14 @@
    "date": "2026-10-22",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1885_WebXMLFile_20260929_175834219.xml"
+  },
+  {
+   "company": "Steel Strips Wheels",
+   "sector": "Auto Related",
+   "kind": "results",
+   "date": "2026-10-23",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2286_WebXMLFile_20261005_123835348.xml"
   },
   {
    "company": "Avantel",
@@ -190,12 +230,12 @@
    "url": "https://nsearchives.nseindia.com/corporate/INDEGENE_30092026205609_tofileearningcallIntimation30092026.pdf"
   },
   {
-   "company": "Smartworks Coworking",
-   "sector": "Commercial Services",
+   "company": "Navin Fluorine Intl",
+   "sector": "Chemicals",
    "kind": "results",
    "date": "2026-10-30",
    "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_24273_WebXMLFile_20261001_172542515.xml"
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2606_WebXMLFile_20260924_174919209.xml"
   },
   {
    "company": "Smartworks Coworking",
@@ -205,6 +245,14 @@
    "time": "2:30 pm",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/SMARTWORKS_06102026202703_Announcement_Regulation_30_Investor_meet_Sept_2026.pdf"
+  },
+  {
+   "company": "Smartworks Coworking",
+   "sector": "Commercial Services",
+   "kind": "results",
+   "date": "2026-10-30",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_24273_WebXMLFile_20261001_172542515.xml"
   },
   {
    "company": "Aurionpro Solutions",
@@ -280,6 +328,14 @@
    "url": "https://nsearchives.nseindia.com/corporate/FRACTAL_25092026145104_Earnings_call_250926.pdf"
   },
   {
+   "company": "Kansai Nerolac",
+   "sector": "Consumer Durables",
+   "kind": "results",
+   "date": "2026-11-04",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1149_WebXMLFile_20260924_164521250.xml"
+  },
+  {
    "company": "Insecticides (India)",
    "sector": "Agrochemical & Fertilizers",
    "kind": "results",
@@ -288,12 +344,28 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2603_WebXMLFile_20260925_130423592.xml"
   },
   {
+   "company": "Insecticides (India)",
+   "sector": "Agrochemical & Fertilizers",
+   "kind": "call",
+   "date": "2026-11-05",
+   "time": "5:00 pm",
+   "url": "https://nsearchives.nseindia.com/corporate/INSECTICID_07102026100139_EP_Intimation_Q2_results.pdf"
+  },
+  {
    "company": "Sai Life Sciences",
    "sector": "Pharma CDMO",
    "kind": "results",
    "date": "2026-11-05",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_24081_WebXMLFile_20261001_110806353.xml"
+  },
+  {
+   "company": "TTK Prestige",
+   "sector": "Consumer Durables",
+   "kind": "results",
+   "date": "2026-11-06",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1328_WebXMLFile_20260923_163919842.xml"
   }
  ]
 }

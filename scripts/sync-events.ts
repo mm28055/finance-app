@@ -44,6 +44,19 @@ function quarterOf(text: string): string | undefined {
     const [q, fy] = month === 'june' ? [1, y + 1] : month === 'september' ? [2, y + 1] : month === 'december' ? [3, y + 1] : [4, y];
     return `Q${q} FY${String(fy % 100).padStart(2, '0')}`;
 }
+// The quarter whose results a meeting on `date` (YYYY-MM-DD) can be for: the one the notice names if that
+// quarter has ended by then (Cyient DLM's notice said "September 2027" for an October 2026 meeting),
+// otherwise the last quarter that ended before the meeting.
+const QUARTER_END: Record<number, [number, number]> = { 1: [6, 30], 2: [9, 30], 3: [12, 31], 4: [3, 31] };
+function quarterFor(text: string, date: string): string {
+    const named = quarterOf(text);
+    const end = (q: string) => { const m = q.match(/^Q(\d) FY(\d{2})$/)!; const n = Number(m[1]), fy = 2000 + Number(m[2]); const [mo, d] = QUARTER_END[n]; return `${n === 4 ? fy : fy - 1}-${String(mo).padStart(2, '0')}-${d}`; };
+    if (named && end(named) < date) return named;
+    const [y, mo] = date.split('-').map(Number);
+    // Last quarter end strictly before the meeting month.
+    const q = mo <= 3 ? 3 : mo <= 6 ? 4 : mo <= 9 ? 1 : 2, fy = q === 3 ? y : q === 4 ? y : y + 1;
+    return `Q${q} FY${String(fy % 100).padStart(2, '0')}`;
+}
 
 // "4.00 p.m." / "7:00 PM" / "8:00 AM IST" -> "4:00 pm"; "Q2FY27" -> "Q2 FY27".
 const tidyTime = (t: string) => { const m = String(t).match(/(\d{1,2})[:.](\d{2})\s*([ap])\.?\s*m/i); return m ? `${Number(m[1])}:${m[2]} ${m[3].toLowerCase()}m` : String(t).slice(0, 20); };
@@ -64,26 +77,33 @@ async function main() {
     const store: { updated: string; events: CompanyEvent[] } = JSON.parse(fs.readFileSync(FILE, 'utf8'));
     const seen: string[] = fs.existsSync(SEEN) ? JSON.parse(fs.readFileSync(SEEN, 'utf8')) : [];
     const cos = await prisma.company.findMany({ where: { isVisible: true, status: 'ACTIVE', isin: { not: null } }, select: { name: true, sector: true, isin: true } });
+    const cos2 = await prisma.company.findMany({ where: { isVisible: true, status: 'ACTIVE' }, select: { name: true, sector: true, isin: true, ticker: true } });
     const byIsin = new Map(cos.map(c => [c.isin!, c]));
+    // NSE's board-meeting list still carries a company's old ISIN after a split (HDFC Bank INE040A01018 against
+    // our INE040A01034; ICICI, TCS likewise), which hid most big companies' result dates. So: the ISIN, else the
+    // NSE symbol, else the same issuer's equity ISIN (the first nine characters, which a split does not change).
+    const bySymbol = new Map(cos2.map(c => [c.ticker.toUpperCase(), c]));
+    const byIssuer = new Map(cos.map(c => [c.isin!.slice(0, 9), c]));
+    const ours = (isin?: string, symbol?: string) => (isin && byIsin.get(isin)) || (symbol && bySymbol.get(symbol.toUpperCase())) || (isin && byIssuer.get(isin.slice(0, 9))) || undefined;
     const today = iso(istDay());
 
     // ---- 1. Result dates: the calendar as it stands tonight replaces the future dates we held.
     const meetings = await nseBoardMeetings(ddmmyyyy(istDay(-3)), ddmmyyyy(istDay(75)));
     const results: CompanyEvent[] = [];
     for (const m of meetings) {
-        const co = byIsin.get(m.sm_isin);
+        const co = ours(m.sm_isin, m.bm_symbol);
         const date = fromNse(m.bm_date);
         const text = `${m.bm_purpose || ''} ${m.bm_desc || ''}`;
         if (!co || !date || !/financial results?|quarterly results?|audited results?/i.test(text)) continue;
         if (results.some(r => r.company === co.name && r.date === date)) continue;
-        results.push({ company: co.name, sector: co.sector, kind: 'results', date, ...(quarterOf(text) ? { quarter: quarterOf(text) } : {}), ...(m.attachment ? { url: m.attachment } : {}) });
+        results.push({ company: co.name, sector: co.sector, kind: 'results', date, quarter: quarterFor(text, date), ...(m.attachment ? { url: m.attachment } : {}) });
     }
     console.log(`Result dates: ${results.length} for our companies (of ${meetings.length} board meetings listed)`);
 
     // ---- 2. Call dates: new "schedule of meet" notices, read one batch at a time.
     const back = Number(arg('days') || 3);
     const notices = (await nseAnnouncements(ddmmyyyy(istDay(-back)), ddmmyyyy(istDay())))
-        .filter(a => byIsin.has(a.sm_isin) && /Analysts\/Institutional Investor Meet\/Con\. Call Updates/i.test(a.desc || '')
+        .filter(a => !!ours(a.sm_isin, a.symbol) && /Analysts\/Institutional Investor Meet\/Con\. Call Updates/i.test(a.desc || '')
             && /schedule|conference call|con\.? ?call|earnings/i.test(String(a.attchmntText || '')) && !/outcome|transcript|recording|presentation/i.test(String(a.attchmntText || ''))
             && a.attchmntFile && !seen.includes(a.attchmntFile));
     console.log(`Call notices: ${notices.length} new to read`);
@@ -108,7 +128,7 @@ ${chunk.map((a, j) => `NOTICE ${j} — ${a.sm_name}, filed ${a.an_dt}\n${texts[j
         } catch (e: any) { console.warn(`  batch ${i / 8 + 1} failed: ${e.message}`); continue; } // left unread; tried again tomorrow
         for (const f of found) {
             const a = chunk[Number(f.i)];
-            const co = a && byIsin.get(a.sm_isin);
+            const co = a && ours(a.sm_isin, a.symbol);
             if (!co || !/^\d{4}-\d{2}-\d{2}$/.test(String(f.date || ''))) continue;
             // A call is held within a few weeks of its notice; anything else is a misread date.
             if (f.date < iso(istDay(-back - 2)) || f.date > iso(istDay(60))) continue;
