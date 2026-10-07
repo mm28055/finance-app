@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T04:54:02.862Z",
+ "updated": "2026-10-07T20:36:01.591Z",
  "events": [
   {
    "company": "GSFC",
@@ -7,7 +7,7 @@
    "kind": "results",
    "date": "2026-10-12",
    "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1233_WebXMLFile_20261003_161817042.xml"
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1233_WebXMLFile_20261006_094003958.xml"
   },
   {
    "company": "Transformers & Rect",
@@ -27,6 +27,14 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2699_WebXMLFile_20261006_125821117.xml"
   },
   {
+   "company": "Bajaj Consumer Care",
+   "sector": "Consumer Durables",
+   "kind": "results",
+   "date": "2026-10-14",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_3438_WebXMLFile_20261007_162052243.xml"
+  },
+  {
    "company": "CEAT",
    "sector": "Tyres",
    "kind": "results",
@@ -41,6 +49,14 @@
    "date": "2026-10-14",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_133_WebXMLFile_20260930_173426319.xml"
+  },
+  {
+   "company": "Emmvee Photovoltaic Power Ltd",
+   "sector": "Solar PV Cells EPC",
+   "kind": "results",
+   "date": "2026-10-14",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_26472_WebXMLFile_20261007_211619390.xml"
   },
   {
    "company": "Tata Technologies",
@@ -75,6 +91,23 @@
    "date": "2026-10-15",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_21528_WebXMLFile_20261005_144251052.xml"
+  },
+  {
+   "company": "Emmvee Photovoltaic Power Ltd",
+   "sector": "Solar PV Cells EPC",
+   "kind": "call",
+   "date": "2026-10-15",
+   "time": "4:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/EMMVEE_07102026211332_Stock_Exchange_Prior_Intimation_Board_Meeting_Q2FY27.pdf"
+  },
+  {
+   "company": "Orient Electric",
+   "sector": "Consumer Durables",
+   "kind": "results",
+   "date": "2026-10-15",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_16134_WebXMLFile_20261007_130755913.xml"
   },
   {
    "company": "Crompt.Greaves Cons.",
@@ -133,12 +166,45 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2650_WebXMLFile_20260924_121917929.xml"
   },
   {
+   "company": "Cyient",
+   "sector": "Software",
+   "kind": "results",
+   "date": "2026-10-22",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/CYIENT_07102026175913_07102026BMIntimationSigned.pdf"
+  },
+  {
    "company": "Mahindra Life. Dev",
    "sector": "Realty",
    "kind": "results",
    "date": "2026-10-22",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1885_WebXMLFile_20260929_175834219.xml"
+  },
+  {
+   "company": "Swiggy",
+   "sector": "Platform Cos",
+   "kind": "results",
+   "date": "2026-10-22",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_23714_WebXMLFile_20261007_190606841.xml"
+  },
+  {
+   "company": "Swiggy",
+   "sector": "Platform Cos",
+   "kind": "call",
+   "date": "2026-10-22",
+   "time": "17:00 hours IST",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/SWIGGY_07102026185956_Earningscall_Q2FY27_Signed.pdf"
+  },
+  {
+   "company": "Mastek",
+   "sector": "Software",
+   "kind": "results",
+   "date": "2026-10-23",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_158_WebXMLFile_20261007_150349764.xml"
   },
   {
    "company": "Steel Strips Wheels",
@@ -187,6 +253,22 @@
    "date": "2026-10-27",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_19887_WebXMLFile_20260928_153514362.xml"
+  },
+  {
+   "company": "Bajaj Electricals",
+   "sector": "Consumer Durables",
+   "kind": "results",
+   "date": "2026-10-28",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2671_WebXMLFile_20261007_152938245.xml"
+  },
+  {
+   "company": "Zensar Technologies",
+   "sector": "Software",
+   "kind": "results",
+   "date": "2026-10-28",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_476_WebXMLFile_20261007_162017974.xml"
   },
   {
    "company": "Apar Inds.",
@@ -338,18 +420,18 @@
   {
    "company": "Insecticides (India)",
    "sector": "Agrochemical & Fertilizers",
-   "kind": "results",
-   "date": "2026-11-05",
-   "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2603_WebXMLFile_20260925_130423592.xml"
-  },
-  {
-   "company": "Insecticides (India)",
-   "sector": "Agrochemical & Fertilizers",
    "kind": "call",
    "date": "2026-11-05",
    "time": "5:00 pm",
    "url": "https://nsearchives.nseindia.com/corporate/INSECTICID_07102026100139_EP_Intimation_Q2_results.pdf"
+  },
+  {
+   "company": "Insecticides (India)",
+   "sector": "Agrochemical & Fertilizers",
+   "kind": "results",
+   "date": "2026-11-05",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2603_WebXMLFile_20260925_130423592.xml"
   },
   {
    "company": "Sai Life Sciences",
