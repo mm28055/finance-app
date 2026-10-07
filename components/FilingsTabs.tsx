@@ -37,7 +37,7 @@ export function FilingsTabs({ filings, news, results = [], calls = [], callsComp
     const tabs: [Tab, string][] = [['portfolio', 'Portfolio'], ['filings', 'Filings'], ['news', 'Market & Policy'], ['results', 'Results'], ['calls', 'Calls'], ['changes', 'Call changes']];
     return (
         <div>
-            <div className="flex gap-1 max-md:gap-0 shadow-[inset_0_-1px_0_#e5e7eb] mb-4 overflow-x-auto overflow-y-hidden overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" role="tablist">
+            <div className="sticky -top-4 z-20 -mt-4 pt-4 -mx-4 px-4 bg-[#FAFBFC] flex gap-1 max-md:gap-0 shadow-[inset_0_-1px_0_#e5e7eb] mb-4 overflow-x-auto overflow-y-hidden overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" role="tablist">
                 {tabs.map(([k, label]) => (
                     <button key={k} role="tab" aria-selected={tab === k} className={tabClass(tab === k)} onClick={() => setTab(k)}>
                         {/* "Changes" on a phone, so all six tabs fit across the screen. */}
