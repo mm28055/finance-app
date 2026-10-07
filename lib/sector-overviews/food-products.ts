@@ -802,7 +802,7 @@ export const foodProducts: SectorOverview = {
         },
         {
             company: 'Ganesh Consumer Prod', rank: 8, stance: 'HARVEST', segment: BRAND,
-            what: "A Kolkata packaged-staples brand (atta, sooji, maida, besan, sattu, spices) with about 93% of branded sales in West Bengal, plus job work for one large FMCG company; listed in September 2025.",
+            what: "A Kolkata packaged-staples brand (atta, sooji, maida, besan, sattu, spices) with about 93% of branded sales in West Bengal; listed in September 2025. It sold its Hyderabad contract-milling unit (1.4% of revenue) on 1 October 2026.",
             view: "**A well-run regional brand that stopped growing after its IPO.** Its Q1 margin reached a record 11.2% and it gained share, it has net cash and pays out about half its profit. But revenue fell 7% in Q1 and 2.5% growth in FY26 missed its hopes, only ₹2.46cr of ₹45cr of IPO money for the Darjeeling plant has been spent, and the plant has slipped to late FY28. The price needs about {need:Ganesh Consumer Prod|9}% a year against my ~7%.",
             watch: 'Volume back to +7–8% in H1; states outside West Bengal and spices gaining; the Darjeeling plant actually starting.',
         },
