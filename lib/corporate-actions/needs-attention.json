@@ -345,133 +345,152 @@
     "sector": "Platform Cos",
     "subject": "Big holder change: Sep 2026",
     "why": "Rea India Pte. Ltd. (public holder) raised its stake from 5.53% to 24.89%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: Rea India's rise to 24.89% is the Housing.com share swap closing: 1.98cr new shares (₹458cr at ₹231.42) allotted 29 Sep, share count 7.68cr → 9.66cr. Note and card now say the deal is done (was 'being bought'); watch item and dilution text updated. Call stays pass."
   },
   {
     "company": "Paisalo Digital",
     "sector": "Finance",
     "subject": "Big holder change: Sep 2026",
     "why": "Octaspace Realcon Private Limited (public holder) raised its stake from 2.33% to 4.95%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: Octaspace Realcon (public holder) rose 2.33% → 4.95%; no exchange disclosure explains it (below the 5% filing line), so not added to the note. The material change in the quarter is FCCB conversion: 2.59cr shares allotted 1 Oct (share count 91.41cr → 94.01cr) — card's money text updated from 'committee met' to the allotment. Promoters also bought ~5% in H1 (already in the card). Call stays wait."
   },
   {
     "company": "Pricol",
     "sector": "Auto Related",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: Price now fits (needs ~18% vs my ~17%). Kept follow: no filing in six weeks explains the 2025 auditor exit (the note's condition for own) and the Q2 margin is not out; CRISIL kept AA-/Watch Developing on 1 Oct. Dated sentence added to the view."
   },
   {
     "company": "Ganesh Consumer Prod",
     "sector": "Food Products",
     "subject": "New General 29 Sep 2026",
     "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: AGM proceedings (21 Sep) carry no guidance. New since the note: the Hyderabad contract-milling unit (₹12.5cr FY26 revenue, 1.4%) was sold on 1 Oct for ₹32.5cr; card and verdict text corrected (job work no longer described as ongoing). Call stays wait."
   },
   {
     "company": "Jupiter Wagons",
     "sector": "Industrial - Railway",
     "subject": "New General 30 Sep 2026",
     "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: AGM proceedings (29 Sep) carry no figures. The 5 Oct press release won a 41 MW/102.5 MWh Uttarakhand BESS project (~₹100cr) and restated ₹1,000cr storage orders by FY27, JEM EBITDA-positive Q3 FY27, profitable FY28 — added to the card's storage line. No checkpoint added (already six pending). Call unchanged."
   },
   {
     "company": "Neetu Yoshi",
     "sector": "Forging",
     "subject": "New Special call 25 Sep 2026",
     "why": "Special call 25 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: The 25 Sep 'special call' was the Arihant Bharat Connect investor conference; the filed outcome says no unpublished information was shared and no transcript is public. The one new item around it (RDSO friction-wedge approval, 19 Sep) is already in the note. Nothing to add."
   },
   {
     "company": "Maxvolt Energy Indus",
     "sector": "EMS & Electronics",
     "subject": "New General 30 Sep 2026",
     "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: AGM proceedings (30 Sep) carry no guidance; only formal business (incl. a ₹500cr borrowing limit) and a ₹20 lakh loan to its Reearth subsidiary. Nothing to add."
   },
   {
     "company": "Paramount Communications",
     "sector": "Cables",
     "subject": "New General 29 Sep 2026",
     "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: AGM held 26 Sep; only the scrutiniser's voting report was filed, no guidance or plans. Nothing to add."
   },
   {
     "company": "Texmaco Rail",
     "sector": "Industrial - Railway",
     "subject": "New General 30 Sep 2026",
     "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: AGM proceedings (18 Sep) carry no guidance. Other filings: a subsidiary is buying Indolem Technologies (30 Sep) and a ₹3.65cr railway order — both small. Nothing to add."
   },
   {
     "company": "Madhya Bharat Agro Products",
     "sector": "Agrochemical & Fertilizers",
     "subject": "New General 28 Sep 2026",
     "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: The 28 Sep item was an investor group meet (no unpublished information) on the day the Dhule phosphoric acid plant started; that start is already in the note and projects (updated 30 Sep). Nothing new to add."
   },
   {
     "company": "Solex Energy",
     "sector": "Solar PV Cells EPC",
     "subject": "New General 28 Sep 2026",
     "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: AGM transcript and press release (22 Sep): ~₹4,000cr capex FY27–FY30 (2.2 GW cells by FY28, 5.2 GW early FY29, first 5 GWh BESS by FY29, Europe/USA units) and '₹4,500cr revenue potential by FY28'. Added as a sales driver, flagged as four times the cell plant still unfunded. No checkpoint added (four pending). Call stays wait."
   },
   {
     "company": "Inox Wind",
     "sector": "Electrical Equipment",
     "subject": "New General 29 Sep 2026",
     "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: AGM proceedings (25 Sep) record only formal business; no guidance filed. Nothing to add."
   },
   {
     "company": "Paisalo Digital",
     "sector": "Finance",
     "subject": "New General 29 Sep 2026",
     "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: AGM held 21 Sep 2026; the filed proceedings carry no guidance or targets (only formal business). The 1 Oct H1 press release repeats the NCD/CP fund-raising and FCCB conversion already reflected. Nothing new to add."
   },
   {
     "company": "Neogen Chemicals",
     "sector": "Chemicals",
     "subject": "New General 28 Sep 2026",
     "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: No AGM guidance filed. The ₹600cr QIP and CRISIL A-/Stable are already in the note. New: Morita is putting ₹76.8cr into the Neogen Morita joint-venture subsidiary under the 2025 JV agreement (26 Sep) — routine, not added."
   },
   {
     "company": "Refex Industries",
     "sector": "Chemicals",
     "subject": "New General 30 Sep 2026",
     "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: No AGM guidance filed. Filings since: a ready-mix concrete business started under the ash unit (25 Sep) and a 10 lakh-tonne fly-ash lifting contract (19 Sep) — both small. Nothing added."
   },
   {
     "company": "Sterling Tools",
     "sector": "Auto Related",
     "subject": "New General 29 Sep 2026",
     "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: No AGM transcript or guidance filed (only an investor-call schedule and a promoter-family SAST form). Nothing to add."
   },
   {
     "company": "CIE Automotive",
     "sector": "Auto Related",
     "subject": "New General 30 Sep 2026",
     "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: No AGM guidance filed; investor meets of 21 and 30 Sep were filed as recordings only, and the merger of its aluminium-casting subsidiary is an internal step. Nothing to add."
   },
   {
     "company": "Jeena Sikho Lifecare",
     "sector": "Pharma Others",
     "subject": "New General 29 Sep 2026",
     "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: AGM proceedings (28 Sep) carry no guidance. Since: NABH accreditation for Raipur, new products, small open-market buys by promoter Bhavna Grover, BSE approval for up to 6.5 lakh ESOP shares — all small. Nothing added."
   },
   {
     "company": "Granules India",
     "sector": "Pharma",
     "subject": "New General 29 Sep 2026",
     "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-07: The 29 Sep investor webinar (transcript filed 6 Oct): Senn Tides peptide arm targets ~US$50m run-rate in 3 years and >US$100m in 5, profit in FY27; ~₹2,000cr organic capex over 3–4 years; two sole first-to-file applications filed, 4–5 more planned; net cash after the warrant money. Added to the card's sales drivers. Checkpoints full (four pending). Call stays wait."
   },
   {
     "company": "CMR Green Tech",
