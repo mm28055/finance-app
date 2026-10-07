@@ -904,5 +904,41 @@
     "subject": "New General 29 Sep 2026",
     "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
     "addedOn": "2026-10-06"
+  },
+  {
+    "company": "Aurum Proptech",
+    "sector": "Platform Cos",
+    "exDate": null,
+    "subject": "Shareholding Sep 2026",
+    "why": "Promoter holding fell 9.8 pts (47.9% in Jun 2026 → 38.1% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-10-07"
+  },
+  {
+    "company": "Ramkrishna Forgings",
+    "sector": "Auto Related",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Smallcap World Fund, Inc (FII) cut its stake from 5.96% to 1.22%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-07"
+  },
+  {
+    "company": "Sonata Software",
+    "sector": "Software",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-07"
+  },
+  {
+    "company": "Borosil Renewables",
+    "sector": "Industrials",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-07"
+  },
+  {
+    "company": "Remsons Industries",
+    "sector": "Auto Related",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-07"
   }
 ]
