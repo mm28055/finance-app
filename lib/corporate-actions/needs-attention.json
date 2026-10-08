@@ -940,5 +940,89 @@
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
     "addedOn": "2026-10-07"
+  },
+  {
+    "company": "Anondita Medicare",
+    "sector": "Health Products",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Sageone-Flagship Growth Oe Fund (DII) raised its stake from 2.92% to 5.37%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-08"
+  },
+  {
+    "company": "Corona Remedies",
+    "sector": "Pharma",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Sepia Investments Limited (public holder) cut its stake from 12.68% to 8.62%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-08"
+  },
+  {
+    "company": "TD Power Systems",
+    "sector": "Electrical Equipment",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Axis Focused Fund Account (DII) raised its stake from 2.13% to 4.15%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-08"
+  },
+  {
+    "company": "Solex Energy",
+    "sector": "Solar PV Cells EPC",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-08"
+  },
+  {
+    "company": "Texmaco Rail",
+    "sector": "Industrial - Railway",
+    "subject": "Call drift: pass → Fits",
+    "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-08"
+  },
+  {
+    "company": "The Anup Enginee",
+    "sector": "Industrials",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-08"
+  },
+  {
+    "company": "Tinna Rubber",
+    "sector": "Rubber",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-08"
+  },
+  {
+    "company": "Antony Waste Hand",
+    "sector": "Utilities",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-08"
+  },
+  {
+    "company": "Godavari Power",
+    "sector": "Mining & Metals Recycle",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-08"
+  },
+  {
+    "company": "GPT Healthcare (Agilus)",
+    "sector": "Hospitals",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-08"
+  },
+  {
+    "company": "Kross",
+    "sector": "Auto Related",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-08"
+  },
+  {
+    "company": "Man Industries (I)",
+    "sector": "Iron and Steel",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-08"
   }
 ]
