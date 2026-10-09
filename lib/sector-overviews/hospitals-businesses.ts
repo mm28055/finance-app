@@ -169,7 +169,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'GPT Healthcare (Agilus)',
-        inShort: ["**Runs five ILS Hospitals (719 beds)** in Kolkata, Howrah, Agartala and Raipur. The dashboard's ‘(Agilus)’ label is wrong: Agilus is Fortis's unlisted lab business, and this company is a hospital operator.", "**Good:** the four mature hospitals earn a 23% margin, patients pay fast so working capital is negative, it pays out about half its profit, and it raised its FY27 margin guide to about 21%. **Bad:** the new Raipur hospital runs at 17.4% occupancy and loses about ₹3cr a quarter, Agartala and Howrah are well behind their targets, and family pay is about a fifth of profit.", "**Verdict: follow.** Solid old hospitals; I would buy on a weak quarter once Raipur nears break-even."],
+        inShort: ["**Runs five ILS Hospitals (719 beds)** in Kolkata, Howrah, Agartala and Raipur. The dashboard's ‘(Agilus)’ label is wrong: Agilus is Fortis's unlisted lab business, and this company is a hospital operator.", "**Good:** the four mature hospitals earn a 23% margin, patients pay fast so working capital is negative, it pays out about half its profit, and it raised its FY27 margin guide to about 21%. **Bad:** the new Raipur hospital runs at 17.4% occupancy and loses about ₹3cr a quarter, Agartala and Howrah are well behind their targets, and family pay is about a fifth of profit.", "**Verdict: follow.** Solid old hospitals; I would buy on a weak quarter once Raipur nears break-even; the price only just fits (9 Oct 2026)."],
         tagline: "A family-run chain of mid-sized multi-specialty hospitals in eastern and central India, trading as ILS Hospitals.",
         revenue: '₹473cr (FY26, standalone)',
         products: [

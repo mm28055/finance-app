@@ -632,7 +632,7 @@ export const hospitals: SectorOverview = {
         {
             company: 'GPT Healthcare (Agilus)', rank: 4, stance: 'SCALEUP', segment: REGIONAL,
             what: "Runs five ILS Hospitals (719 beds) in Kolkata, Howrah, Agartala and Raipur. The dashboard's ‘(Agilus)’ label is wrong: Agilus is Fortis's unlisted lab business.",
-            view: "**Solid old hospitals, a slow new one.** The four mature hospitals earn a 23% margin, working capital is negative, it pays out about half its profit, and management raised its FY27 margin guide to about 21%. But Raipur ran at 17.4% occupancy and loses about ₹3cr a quarter, Agartala and Howrah are well behind their occupancy targets, and family pay is about a fifth of profit. The price needs about {need:GPT Healthcare (Agilus)|17}% a year against my ~15%.",
+            view: "**Solid old hospitals, a slow new one.** The four mature hospitals earn a 23% margin, working capital is negative, it pays out about half its profit, and management raised its FY27 margin guide to about 21%. But Raipur ran at 17.4% occupancy and loses about ₹3cr a quarter, Agartala and Howrah are well behind their occupancy targets, and family pay is about a fifth of profit. The price needs about {need:GPT Healthcare (Agilus)|17}% a year against my ~15%. On 9 Oct 2026 the price moved into the fits band, only just; I keep it at follow until Raipur nears break-even, and nothing has been filed in six weeks.",
             watch: 'Raipur break-even around January 2027; Agartala back above 55% occupancy; Jamshedpur opening on time.',
         },
         {
