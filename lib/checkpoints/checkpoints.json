@@ -10494,7 +10494,11 @@
    "text": "The promoter pledge released",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "All promoter pledges (1.31cr shares, ~8.9% of the company) released 6–8 Oct 2026, a week after Q2 ended",
+   "resolvedOn": "2026-10-09",
+   "resolvedBy": "review",
+   "outcome": "Stays wait; the pledge is gone, but free cash is still the test"
   },
   {
    "id": "hindustan-foods-q4fy27-1",
@@ -26496,8 +26500,12 @@
    "text": "New plant starts production (October 2026)",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "voltamp-transformers-new-plant"
+   "status": "met",
+   "project": "voltamp-transformers-new-plant",
+   "actual": "Commercial production began 7 Oct 2026",
+   "resolvedOn": "2026-10-09",
+   "resolvedBy": "review",
+   "outcome": "Stays wait; the plant started on its revised October date, three months after the original July"
   },
   {
    "id": "voltamp-transformers-karjan-m1",

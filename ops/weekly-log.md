@@ -118,3 +118,43 @@ Pushed to master; all checks passed (typecheck clean, "All notes pass.").
 **News pass, 3–6 October:** 11 entries had a clear reason. None was very important, so no note changed. The US opened an anti-dumping investigation into Chinese amines (Alkyl Amines +13%, Balaji Amines +17%). That is only the start of a case, not a duty. The rest: Genus repeating its FY27 guide, Honasa's and V2 Retail's Q2 updates, Raymond's property bookings, block deals in MobiKwik, Newquest selling Shadowfax shares, the Kamaths buying 6.7% of Viceroy Hotels, and OPEC+ holding output (Chennai Petroleum).
 
 **Results pass:** no unreviewed results.
+
+## 9 October 2026
+
+Pushed to master; all checks passed (typecheck clean, "All notes pass.").
+
+**Follow-ups handled: 40 of 55 (the limit for one run). 15 stay open.** 12 are AGM follow-ups (BLS International, Knack Packaging, Godavari Power, Puravankara, Oswal Pumps, Genus Power, Steelcast, Nelcast, Greaves Cotton, Onward Technologies, RHI Magnesita, Arihant Superstructures) for the next run. Three are still waiting: HEG Graphite has not listed; SKF India's July–September results are not filed; Ganesh Benzoplast's ₹1,154cr sale has not closed.
+
+**Calls changed:** none. Twelve companies' prices moved into the fits band. None is upgraded; each note now says why, with the date:
+- **Sonata Software** stays wait: Q2, the first test of the International margin getting back above 18%, is not out.
+- **Borosil Renewables** stays follow: near-peak margins that rest on import duties.
+- **Remsons** stays wait: the Q2 margin and the cost of the Pardi flood are not out.
+- **Solex Energy** stays wait: new orders help, but the cell plant is still not funded.
+- **Texmaco Rail** stays pass: nothing explains the ₹700cr provision the auditor qualified. Its US$135m (about ₹1,120cr) African locomotive award of 1 September is now in the note.
+- **Anup Engineering** stays wait: only 38% of five years' profit arrived as cash.
+- **Tinna Rubber** stays follow: free cash is negative and credits are about 40% of profit. CARE raised its rating to BBB on 1 October; the note is corrected.
+- **Antony Waste** stays follow until the margin recovers and the Pune plant restarts safely.
+- **Godavari Power** stays follow: the margin missed, a pellet plant is shut, and two-thirds of its lending went to related parties.
+- **GPT Healthcare** stays follow until Raipur nears break-even.
+- **Kross** stays wait: its growth still eats cash.
+- **Man Industries** stays follow while the SEBI appeal, the tax search and the pledge are open. Its order book is now about ₹4,100cr after ₹600cr of September orders.
+
+**Holder changes (5):** **Aurum PropTech**'s promoter stake fell from 47.9% to 38.1% only because of the 1.98cr new shares issued for Housing.com; no promoter sold. The rest are funds buying or selling, and none changes a case: Smallcap World Fund left **Ramkrishna Forgings** (5.96% to 1.22%); SageOne bought into **Anondita**; Sepia, a pre-IPO investor, sold down in **Corona Remedies** (12.68% to 8.62%); Axis bought into **TD Power**.
+
+**AGM follow-ups (23 handled).** Most companies filed no record of what was said, or a record with no figures. Where there was something new, I added it:
+- **Dharmaj Crop Guard**: the chairman named the aim of a ₹2,000cr company by 2030 (₹1,138cr in FY26), about 15% a year. Added as a sales driver.
+- **Raymond Realty**: on 8 October holders approved ₹409cr of warrants for the promoter group at ₹614, about 9% dilution. The board had approved it on 11 September, but the note had missed it, and management had called new equity a "last resort". Added to the card and view. It stays wait.
+- **Welspun Enterprises**: its tunnelling unit won a ₹66cr New Delhi sewer order, taking that unit's order book to ₹2,357cr. It also received two GST show-cause notices (₹71cr in UP, ₹15cr in Haryana). These are notices, not final demands; logged only.
+- **Meghmani Organics**: the tribunal approved merging its two subsidiaries (Kilburn and Meghmani Crop Nutrition) into it on 8 October.
+- Nothing new: Ircon, Thomas Cook, Tarsons, Orient Bell, Symphony, Mobavenue, LT Foods, Sunteck, Marathon Nextgen, RITES, Ather, Insecticides India, Krishana Phoschem, Deep Industries, Updater, Fineotex, SG Finserve, Cosmic CRF, Gandhar.
+
+**Filings pass, 7–8 October** (notes corrected where the filing made them wrong):
+- **Voltamp Transformers**: its new 6,000 MVA plant began commercial production on 7 October. That was three months after the original July date, but on the revised one. I updated the note, the card, the projects and capacity data, and settled the plant milestone as met. It stays wait.
+- **Vintage Coffee**: the promoters released all their pledged shares (1.31cr shares, about 8.9% of the company) on 6–8 October. This settles a watch item and a checkpoint. Note and card corrected; it stays wait.
+- **Dilip Buildcon**: the gas regulator authorised its own subsidiary to build a Paradip–Raipur LPG pipeline (₹1,800cr of construction) and run it for 25 years. Added to the card's order drivers. **Manba Finance**: CARE upgraded it to A- from BBB+; added to the card.
+- **Ola Electric**: filed the offer for its ₹1,000cr rights issue: 2 for 25 at ₹27, partly paid, about 25% below the market price. Added to the card. **Jubilant Pharmova**: CAD 94.5m to double RUBY-FILL capacity in Quebec. Added to the card and the projects. **SJS Enterprises**: its ₹45cr Bengaluru expansion starts in Q3 FY27; project updated. **Avalon**: leased 25 acres at Oragadam for its next plant; project updated.
+- Logged only: NCC's ₹1,286cr Telangana road order; EMS's ₹130cr Jodhpur sewerage order; Brigade's ₹40,000cr three-year investment plan; Keystone's record Q2 pre-sales (₹1,423cr) and a US$450m fund with Marubeni; Dilip's completion certificate for a ₹1,647cr road; Granules's possible first-to-file on extended-release ruxolitinib; GST searches at Pitti Engineering and Sudarshan Chemicals (both expect no material effect); Matrimony's Q2 billings (+10.7%); HDFC Bank's postal ballot for Anup Bagchi as CEO (already in the note).
+
+**News pass, 7–9 October:** 6 entries had a clear reason. None was very important, so no note changed. The GST Council recommended export status for contract research, testing and manufacturing done in India for foreign clients (Anthem, Sai Life, Syngene, Vimta). This helps them compete, but it is a recommendation that still has to be notified. The Council also clarified that toll rights carry no GST (IRB). Chennai Petroleum rose 14.7% on crude prices.
+
+**Results pass:** no unreviewed results.

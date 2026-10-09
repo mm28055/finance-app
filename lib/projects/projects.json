@@ -1743,9 +1743,10 @@
    "cost": "₹45cr",
    "adds": "about 20% more capacity",
    "status": "building",
-   "source": "Q4 FY26 call (May 2026)",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "About +20% capacity at SJS Bangalore"
+   "source": "Stock-exchange filing, 7 Oct 2026: ₹45cr from internal cash, commercial production expected in Q3 FY27",
+   "updatedOn": "2026-10-09",
+   "capacityAdd": "About +20% capacity at SJS Bangalore",
+   "expectedStart": "Q3 FY27"
   },
   {
    "id": "lumax-auto-tech-manesar",
@@ -5739,9 +5740,9 @@
    "cost": "about ₹215cr (was ₹200cr), own cash",
    "expectedStart": "Q3 FY27",
    "adds": "6,000 MVA and bigger units; existing plants have run above 100% for two years",
-   "status": "building",
-   "source": "Sector note (annual report, CARE); no calls held; slipped from July to October 2026",
-   "updatedOn": "2026-09-29",
+   "status": "started",
+   "source": "Stock-exchange filing, 7 Oct 2026: Unit III began commercial production on 7 October 2026 (slipped from July)",
+   "updatedOn": "2026-10-09",
    "capacityAdd": "+6,000 MVA a year (about +36% on the 16,514 MVA sold in FY26), units up to 220 kV"
   },
   {
@@ -5907,10 +5908,10 @@
    "company": "Avalon Tech",
    "sector": "EMS & Electronics",
    "name": "Large Chennai land parcel",
-   "what": "Buying a large plot in Chennai for the next decade of growth (semiconductor equipment and advanced electronics, domestic and export), to be built in modules",
+   "what": "A 25.08-acre plot at SIPCOT Oragadam Industrial Park, Tamil Nadu, on a 99-year lease signed 8 October 2026, for a new manufacturing unit built in modules (semiconductor equipment and advanced electronics, domestic and export)",
    "status": "planned",
-   "source": "Q1 FY27 call (Aug 2026); cost not disclosed",
-   "updatedOn": "2026-09-29"
+   "source": "Q1 FY27 call (Aug 2026); stock-exchange filing, 8 Oct 2026 (lease signed; cost not disclosed)",
+   "updatedOn": "2026-10-09"
   },
   {
    "id": "ikio-technologies-greenfield",
@@ -13384,6 +13385,18 @@
    "status": "on hold",
    "source": "FY26 annual report; Q1 FY27 call (commercial production expected in the second half of 2027 after approvals)",
    "updatedOn": "2026-09-30"
+  },
+  {
+   "id": "jubilant-pharmova-rubyfill-kirkland",
+   "company": "Jubilant Pharmova",
+   "sector": "Pharma CDMO",
+   "name": "RUBY-FILL capacity doubling, Kirkland (Quebec)",
+   "what": "Doubling production capacity of RUBY-FILL, its rubidium-82 generator for cardiac PET imaging, at the Kirkland, Quebec radiopharma plant",
+   "cost": "CAD 94.5m, with CAD 23.8m of Canadian government support",
+   "adds": "twice today's RUBY-FILL capacity",
+   "status": "planned",
+   "source": "Stock-exchange filing, 8 Oct 2026 (no start date given)",
+   "updatedOn": "2026-10-09"
   }
  ]
 }
