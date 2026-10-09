@@ -718,7 +718,7 @@ export const autoRelatedSystems: SectorOverview = {
         {
             company: 'Remsons Industries', rank: 9, stance: 'TURNAROUND', segment: BODY,
             what: "India's largest control-cable maker, with gear shifters, pedal boxes and two-wheeler brake parts, plus small acquired lighting, sensor and rail businesses; plants in India and the UK.",
-            view: "**Real export wins, weak delivery.** It beat Chinese suppliers to a ₹300cr+ Stellantis contract and FY26 operating cash was its best in years. But Q1 margin fell to 8.7%, profit fell 21%, the Pardi plant was flooded from July to mid-September, the promoter stake fell 2.7 points without disclosure, and no call has been held since February. The price needs about {need:Remsons Industries|15}% a year against my ~12%.",
+            view: "**Real export wins, weak delivery.** It beat Chinese suppliers to a ₹300cr+ Stellantis contract and FY26 operating cash was its best in years. But Q1 margin fell to 8.7%, profit fell 21%, the Pardi plant was flooded from July to mid-September, the promoter stake fell 2.7 points without disclosure, and no call has been held since February. The price needs about {need:Remsons Industries|15}% a year against my ~12%. On 9 Oct 2026 the price moved into the fits band, but I keep it at wait: the six weeks' filings are the plant's restart on 18 September and the death of whole-time director Rahul Kejriwal on 6 October, and the Q2 margin and flood cost are not out yet.",
             watch: 'Stellantis revenue appearing in H2 FY27; margin back above 11%; the flood’s cost and insurance recovery in Q2; an explanation of the promoter stake cut.',
         },
         {

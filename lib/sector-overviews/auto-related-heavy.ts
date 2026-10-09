@@ -644,7 +644,7 @@ export const autoRelatedHeavy: SectorOverview = {
         {
             company: 'Kross', rank: 7, stance: 'SCALEUP', segment: TRUCK,
             what: "A Jamshedpur maker of forged and machined truck and tractor parts and complete trailer axles and suspensions, now adding tipping jacks, an axle-beam extrusion line and a seamless-tube plant; listed in September 2024.",
-            view: "**Fast growth that consumes cash.** Revenue rose 32% in Q1 on trailer-axle volume up 34%, and tractors and exports are growing. But FY26 free cash was −₹72cr, its cash cycle has doubled to 153 days, the 12.2% margin missed its 14–15% hope, and its auditor found statements to banks that did not match its books. The price needs about {need:Kross|18}% a year against my ~15%.",
+            view: "**Fast growth that consumes cash.** Revenue rose 32% in Q1 on trailer-axle volume up 34%, and tractors and exports are growing. But FY26 free cash was −₹72cr, its cash cycle has doubled to 153 days, the 12.2% margin missed its 14–15% hope, and its auditor found statements to banks that did not match its books. The price needs about {need:Kross|18}% a year against my ~15%. On 9 Oct 2026 the price moved into the fits band; it stays wait, because the growth is still being paid for with working capital and borrowing, and the only filing in six weeks is the corrected notice for the preferential issue.",
             watch: 'Margin back to 13–14% after truck-maker settlements; receivable and stock days falling; statements to banks agreeing with the books; seamless-tube commissioning in Q4 FY27; the result of the postal vote, closed on 30 September, on 15 lakh shares and 15 lakh warrants for promoters and others (about 4.4% dilution).',
         },
         {
