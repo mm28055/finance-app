@@ -273,7 +273,7 @@ export const ironSteel: SectorOverview = {
             cellNotes: {
                 'Shyam Metalics': 'No order book: it sells steel, alloys and foil at market prices.',
                 'Sambhv Steel Tubes': 'No order book: pipes and coil are sold from stock through distributors and dealers.',
-                'Man Industries (I)': 'About ₹3,600cr across India and Saudi Arabia, of which India ₹2,200–2,300cr.',
+                'Man Industries (I)': 'About ₹4,100cr after ₹600cr of new orders on 10 September 2026; in August it was about ₹3,600cr across India and Saudi Arabia, of which India ₹2,200–2,300cr.',
                 'Venus Pipes & Tubes': 'More than ₹600cr, plus a ₹185cr letter of intent for data-centre piping not yet booked.',
                 'Manaksia Coated Metals': 'About ₹450cr on the call; ₹420cr in the Q1 FY27 presentation, 87% for export.',
                 'Aeroflex Industries': 'Not disclosed: skids run on a yearly plan with quarterly purchase orders.',
@@ -625,7 +625,7 @@ export const ironSteel: SectorOverview = {
         {
             company: 'Man Industries (I)', rank: 2, stance: 'SCALEUP', segment: CARBON,
             what: "Makes large-diameter welded steel pipes, and coats them, for oil, gas and water pipelines in India and the Gulf; since May 2026 it also owns National Pipe Company, an Aramco-approved plant in Saudi Arabia.",
-            view: "**A strong position at a full price: follow.** Filed margin up from 8% to 14%, a ₹3,600cr order book, 119% cash conversion in FY26 and a Saudi plant bought for about 1.5 times its 2025 operating profit. But FY27 revenue guidance slipped to the low end (about ₹5,000cr), debt peaks near ₹1,600cr, the Jammu plant may be six months late, and a stayed SEBI order and an income-tax search sit in the auditor's report. The price asks for a little more than my ~18% estimate.",
+            view: "**A strong position at a full price: follow.** Filed margin up from 8% to 14%, an order book of about ₹4,100cr after ₹600cr of new orders in September, 119% cash conversion in FY26 and a Saudi plant bought for about 1.5 times its 2025 operating profit. But FY27 revenue guidance slipped to the low end (about ₹5,000cr), debt peaks near ₹1,600cr, the Jammu plant may be six months late, and a stayed SEBI order and an income-tax search sit in the auditor's report. The price needs about {need:Man Industries (I)|19}% a year against my ~18%. On 9 Oct 2026 the price moved into the fits band; I keep it at follow, not own, while the SEBI appeal, the income-tax search and the promoter pledge are open.",
             watch: 'NPC revenue of ₹300–500cr a quarter from Q2; the Dammam and Jammu start dates against CRISIL’s September 2027; the SEBI appeal and the promoter pledge.',
         },
         {
