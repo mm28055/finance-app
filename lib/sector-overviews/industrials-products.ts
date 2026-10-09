@@ -578,7 +578,7 @@ export const industrialsProducts: SectorOverview = {
         {
             company: 'Borosil Renewables', rank: 5, stance: 'CYCLICAL', segment: SCARCE,
             what: "India's first and largest merchant maker of solar glass for panels, running 1,000 tonnes a day at full capacity and adding 600 more.",
-            view: "**Excellent economics inside a tariff wall.** Margin went from 4% to 31% on duties, debt is nearly gone and the plant sells all it makes. But management calls prices near peak, domestic capacity (mostly captive to panel makers) nearly triples by March 2027, the expansion is ₹150cr over budget and later, and old furnaces need a 90-day rebuild in FY28. The price needs about {need:Borosil Renewables|13}% a year against my ~10%, on profit that includes a ₹75cr tax write-back.",
+            view: "**Excellent economics inside a tariff wall.** Margin went from 4% to 31% on duties, debt is nearly gone and the plant sells all it makes. But management calls prices near peak, domestic capacity (mostly captive to panel makers) nearly triples by March 2027, the expansion is ₹150cr over budget and later, and old furnaces need a 90-day rebuild in FY28. The price needs about {need:Borosil Renewables|13}% a year against my ~10%, on profit that includes a ₹75cr tax write-back. On 9 Oct 2026 the price moved into the fits band; I keep it at follow, not own, because these are near-peak margins resting on import duties, and the only filing since was the 22 Sep delay of the new capacity, which the note already counts.",
             watch: 'The first new furnace firing by end-March 2027; realisations holding once the fuel surcharge goes; any change to the duties.',
         },
         {
