@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-08T20:29:09.140Z",
-  "movesDate": "2026-10-08",
+  "updated": "2026-10-09T20:06:30.441Z",
+  "movesDate": "2026-10-09",
   "items": [
     {
       "id": "2026-10-09|Anthem Biosciences|policy|export-status-for-cros",
@@ -17,6 +17,60 @@
       "dot": true
     },
     {
+      "id": "2026-10-09|Anthem Biosciences|holder",
+      "company": "Anthem Biosciences",
+      "sector": "Pharma CDMO",
+      "date": "2026-10-09",
+      "kind": "holder",
+      "tone": "watch",
+      "headline": "Portsmouth Technologies sells 30 lakh shares of Anthem Biosciences worth ₹250 crore",
+      "summary": "Portsmouth Technologies LLC sold 30 lakh shares at ₹833 each, totaling ₹249.90 crore. Following this block deal, the investor's estimated stake in the company will decrease significantly. Reported by the press; the exchange disclosure was not yet on record.",
+      "reason": "news",
+      "url": "https://economictimes.indiatimes.com/markets/stocks/news/anthem-biosciences-block-deal-portsmouth-technologies-sells-30-lakh-shares-worth-rs-250-crore/articleshow/134838383.cms",
+      "source": "Economic Times",
+      "dot": true
+    },
+    {
+      "id": "2026-10-09|Awfis Space Solutions|holder",
+      "company": "Awfis Space Solutions",
+      "sector": "Commercial Services",
+      "date": "2026-10-09",
+      "kind": "holder",
+      "tone": "watch",
+      "headline": "Peak XV Partners reduces its stake in Awfis Space Solutions by 2.68%",
+      "summary": "Peak XV Partners sold a 2.68% stake in Awfis Space Solutions. Reported by the press; the exchange disclosure was not yet on record.",
+      "reason": "news",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNUEo4WEZXU3g4ckdrcUJ5ZC05RzV1NHNOVlNSVHhYeVlHeDg1XzdQWXNiSzh5bTVVWER0M3hDNzR6bUxlMjlDbGJKU1hjNFdBX200T1ZoMUZKdWlTUlotck9IT0V5bnhjS3ZZZ1FBdk1hUm14Wmx4TFc3b3RmbVozVFQ1WHBqQ1pzZ1JxQ0N2dXEwaURGU29VREJFNHlleFV0R0h3ZXZOa1IwQ1BFcnI4a2hkNVh1SUNCaEFkWmlsczZLNnU2Q3BrazVkTlFKMFU2SnVZTnlIOXYwbERaT0FuZXFCS085dHpPd0pRdWp1QnZaek1aRzg5NTdVdnVRaHdzc3lwUlpDLWZCY0xNb2FnZFJR0gGSAkFVX3lxTE1QSjhYRldTeDhyR2txQnlkLTlHNXU0c05WU1JUeFh5WUd4ODVfN1BZc2JLOHltNVVYRHQzeEM3NHptTGUyOUNsYkpTWGM0V0FfbTRPVmgxRkp1aVNSWi1yT0hPRXlueGNLdllnUUF2TWFSbXhabHhMVzdvdGZtWjNUVDVYcGpDWnNnUnFDQ3Z1cTBpREZTb1VEQkU0eWV4VXRHSHdldk5rUjBDUEVycjhraGQ1WHVJQ0JoQWRaaWxzNks2dTZDcGtrNWROUUowVTZKdVlOeUg5djBsRFpPQW5lcUJLTzl0ek93SlF1anVCdlp6TVpHODk1N1V2dVFod3NzeXBSWkMtZkJjTE1vYWdkUlE?oc=5",
+      "source": "Moneycontrol.com",
+      "dot": true
+    },
+    {
+      "id": "2026-10-09|Ganesh Benzoplast|move",
+      "company": "Ganesh Benzoplast",
+      "sector": "Oil",
+      "date": "2026-10-09",
+      "kind": "move",
+      "pct": -5,
+      "tone": "info",
+      "headline": "Down 5% (at its 5% limit two days running): no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
+      "id": "2026-10-09|HLE Glascoat|move",
+      "company": "HLE Glascoat",
+      "sector": "Industrials",
+      "date": "2026-10-09",
+      "kind": "move",
+      "pct": -5,
+      "tone": "info",
+      "headline": "Down 5% (at its 5% limit two days running): no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
       "id": "2026-10-09|IRB Infra.Devl.|policy|no-gst-on-toll-rights",
       "company": "IRB Infra.Devl.",
       "sector": "Construction",
@@ -28,6 +82,34 @@
       "reason": "policy",
       "url": "https://economictimes.indiatimes.com/news/economy/policy/gst-reforms-no-tax-on-toll-collection-by-highway-concessionaires-road-maintenance-tax-liability-clarified/articleshow/134799839.cms",
       "source": "Economic Times",
+      "dot": true
+    },
+    {
+      "id": "2026-10-09|Mold-Tek Pack.|move",
+      "company": "Mold-Tek Pack.",
+      "sector": "Packaging",
+      "date": "2026-10-09",
+      "kind": "move",
+      "pct": -50,
+      "tone": "info",
+      "headline": "Down 50%: no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
+      "id": "2026-10-09|R Systems International|move",
+      "company": "R Systems International",
+      "sector": "Software",
+      "date": "2026-10-09",
+      "kind": "move",
+      "pct": 13,
+      "tone": "good",
+      "headline": "Up 13%: Shares rose amid a broader IT sector rally fueled by TCS's Q2 results, supported by a recent AA- (Stable) rating from ICRA.",
+      "summary": "As reported by Mint. Found by a news search, not from the company's own filings.",
+      "reason": "news",
+      "source": "Mint",
+      "url": "https://www.google.com/search?tbm=nws&q=R%20SYS%20INTERNATIONAL%20shares%202026-10-09",
       "dot": true
     },
     {
@@ -45,6 +127,32 @@
       "dot": true
     },
     {
+      "id": "2026-10-09|Standard Glass|move",
+      "company": "Standard Glass",
+      "sector": "Industrials",
+      "date": "2026-10-09",
+      "kind": "move",
+      "pct": -5,
+      "tone": "info",
+      "headline": "Down 5% (at its 5% limit two days running): no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
+      "id": "2026-10-09|Supreme Power|move",
+      "company": "Supreme Power",
+      "sector": "Electrical Transformers",
+      "date": "2026-10-09",
+      "kind": "move",
+      "pct": 8.5,
+      "tone": "info",
+      "headline": "Up 8.5%: no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
       "id": "2026-10-09|Syngene International|policy|export-status-for-cros",
       "company": "Syngene International",
       "sector": "Healthcare",
@@ -57,6 +165,45 @@
       "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPOTZvbk9NdVVVa19XUnlLMU5FSHhNbGJYdnVWQXhlQnVLWkhvZzdKSENvSk9oMlB4ZXdFbGozaW5qWGV1UmlXWWhFWHVvNW80Y2M1dUhvNUNZc0R3blZ4Z00yZEcxMndNVlNRbm1ybVkzdDdXeWoydkxXYU9VVVdPWVFidmQyR3ZEZm1CdThfYjI0WS0tTHVfeEhrUFhyWGJ6c0lpSzdmaGVZOU5aeVprYmNEUzdVbFFQTFM0bXdaTWlVSnVpRXJQSlRlN2pncDIwSmg0dVIzbDY0WkdrYVpCRFB6Mm4zUW9UY2d2QXRTd29VNUphdzRSMEF0XzdDSVBrbm81STJHS3pRSmZaQnfSAYcCQVVfeXFMUFhiTUlTcm4xQllIMWI1MVlRMFNteTk3cnZ2R29WQ3ZIbEllUlNGRWI1STFPeXFKcHkxLXBYWXlyRjBLTkZ5Q2g0QUFnVGhXTnQ1U2ZwVm42dzcwWU0xYzJlblN3Zkg0bTFCbTV1NEdybWFYOG55QnAxY3BEVkdSYkVxTXAyYkJNUEd4ZGFlWC1MRkVMYV9qTEVuZF9FbFJseHRfdjZFZXpESDBLZVRoYnpuZUt4blhQRFZRTjFuelNRLVFHOVY0MTBac0hoSVkzLXZrUVIwdE5Yc0M4eWtBSGk2czRrTElEbXU1NWkyQjBWeVF4eWlwT1gtbHZDaUpPRTVpbFRudDg?oc=5",
       "source": "The Economic Times",
       "dot": true
+    },
+    {
+      "id": "2026-10-09|TCPL Packaging|move",
+      "company": "TCPL Packaging",
+      "sector": "Packaging",
+      "date": "2026-10-09",
+      "kind": "move",
+      "pct": 7,
+      "tone": "info",
+      "headline": "Up 7%: no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
+      "id": "2026-10-09|United Heat Transfer|move",
+      "company": "United Heat Transfer",
+      "sector": "Industrials",
+      "date": "2026-10-09",
+      "kind": "move",
+      "pct": 2,
+      "tone": "info",
+      "headline": "Up 2% (at its 2% limit two days running): no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
+    },
+    {
+      "id": "2026-10-09|Viceroy Hotels|move",
+      "company": "Viceroy Hotels",
+      "sector": "Hotels and Travels",
+      "date": "2026-10-09",
+      "kind": "move",
+      "pct": 5,
+      "tone": "info",
+      "headline": "Up 5% (at its 5% limit two days running): no clear reason found",
+      "summary": "No filing, bulk or block deal, or news that day explains the move.",
+      "reason": "none",
+      "dot": false
     },
     {
       "id": "2026-10-09|Vimta Labs|policy|export-status-for-cros",
