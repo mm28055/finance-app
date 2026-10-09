@@ -506,7 +506,7 @@ export const electricalTransformers: SectorOverview = {
                 },
                 {
                     label: 'Cautious',
-                    text: "**Voltamp** gives no guidance and holds no calls; its annual report says margins will ‘normalise’, and its new plant slipped from July to October with its cost up from about ₹200cr to ₹215cr. **Schneider** never gives numbers; after hoping for a Q1 recovery it now says the ‘remaining 3 quarters of the year will be good’.",
+                    text: "**Voltamp** gives no guidance and holds no calls; its annual report says margins will ‘normalise’, and its new plant slipped from July to October with its cost up from about ₹200cr to ₹215cr, and began commercial production on 7 October 2026. **Schneider** never gives numbers; after hoping for a Q1 recovery it now says the ‘remaining 3 quarters of the year will be good’.",
                 },
                 {
                     label: 'Missed',
@@ -655,7 +655,7 @@ export const electricalTransformers: SectorOverview = {
         {
             company: 'Voltamp Transformers', rank: 6, stance: 'PRICED', segment: MAKERS,
             what: "Vadodara maker of oil-filled power and distribution transformers up to 160 MVA and dry-type units, sold to more than 1,000 industrial customers rather than utilities; it holds no earnings calls.",
-            view: "**The cleanest balance sheet, a shrinking margin.** It has no debt, about ₹1,068cr of net cash and investments, 46 debtor days and a CARE AA rating. But its orders are mostly fixed-price, its margin fell from 20% in FY24 to 15% in Q1 FY27 while its price per MVA stayed flat, the order book is only 0.7 times sales, and the new plant slipped to October. The price needs about {need:Voltamp Transformers|19–20}% a year against my ~12%.",
+            view: "**The cleanest balance sheet, a shrinking margin.** It has no debt, about ₹1,068cr of net cash and investments, 46 debtor days and a CARE AA rating. But its orders are mostly fixed-price, its margin fell from 20% in FY24 to 15% in Q1 FY27 while its price per MVA stayed flat, the order book is only 0.7 times sales, and the new plant slipped from July to October; it began commercial production on 7 October 2026. The price needs about {need:Voltamp Transformers|19–20}% a year against my ~12%.",
             watch: "The new 6,000 MVA plant's first half-year of revenue; the order book rising above ₹2,000cr; any further promoter selling after the 7.8% block sale.",
         },
         {
