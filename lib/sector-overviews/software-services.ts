@@ -759,7 +759,7 @@ export const softwareServices: SectorOverview = {
         {
             company: 'Sonata Software', rank: 10, stance: 'TURNAROUND', segment: SERV,
             what: "Two businesses in one: International IT services on Microsoft's stack (a quarter of revenue, two-thirds of profit) and Indian resale of Microsoft and cloud licences (three-quarters of revenue at about 3% gross contribution).",
-            view: "**The part that earns the value is stuck.** International dollar revenue has been flat to down for two years, its largest client is shrinking, EBITDA fell from 20.2% to 15.4% a quarter after management promised stability, and the CEO left in May. The Indian resale arm is steadier than feared but depends on Microsoft's billing policy. The price needs about {need:Sonata Software|10}% a year against my ~8%.",
+            view: "**The part that earns the value is stuck.** International dollar revenue has been flat to down for two years, its largest client is shrinking, EBITDA fell from 20.2% to 15.4% a quarter after management promised stability, and the CEO left in May. The Indian resale arm is steadier than feared but depends on Microsoft's billing policy. The price needs about {need:Sonata Software|10}% a year against my ~8%. On 9 Oct 2026 the price moved into the fits band, but I keep it at wait: there has been no filing in six weeks, and the Q2 results, the first test of International EBITDA getting back above 18%, are not out yet.",
             watch: 'International EBITDA back above 18% for two quarters; its top five clients growing again; no further Microsoft direct billing in India.',
         },
         {

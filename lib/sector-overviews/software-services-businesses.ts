@@ -303,7 +303,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sonata Software',
-        inShort: ["**Two businesses in one**: an international IT services arm built on Microsoft's software, and an Indian business that resells Microsoft and cloud licences on a thin margin.", "**Good:** a 30-year Microsoft partnership, high returns on capital and a steadier Indian resale arm. **Bad:** international dollar revenue has been flat for two years, its margin fell from 20.2% to 15.4% in a quarter, its largest client has shrunk for about six quarters, the CEO left in May, and it disputes about ₹365cr of income-tax demands.", "**Verdict: wait.** The part that earns the value has to grow again first."],
+        inShort: ["**Two businesses in one**: an international IT services arm built on Microsoft's software, and an Indian business that resells Microsoft and cloud licences on a thin margin.", "**Good:** a 30-year Microsoft partnership, high returns on capital and a steadier Indian resale arm. **Bad:** international dollar revenue has been flat for two years, its margin fell from 20.2% to 15.4% in a quarter, its largest client has shrunk for about six quarters, the CEO left in May, and it disputes about ₹365cr of income-tax demands.", "**Verdict: wait.** The part that earns the value has to grow again first. The price fits since 9 Oct 2026, but Q2 must first show the International margin recovering."],
         tagline: "A Microsoft-focused IT services exporter attached to India's large reseller of Microsoft and cloud software licences.",
         revenue: '₹10,701cr (FY26, consolidated)',
         products: [
