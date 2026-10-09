@@ -859,7 +859,7 @@ export const realty: SectorOverview = {
         {
             company: 'Raymond Realty', rank: 8, stance: 'SCALEUP', segment: MUMLUX,
             what: "The Raymond group's developer: a 100-acre Thane township on the group's old factory land plus eight joint developments in Bandra, BKC, Wadala, Sion, Mahim, Kandivali and Parel; listed in July 2025.",
-            view: "**Growing fast on borrowed time.** Q1 bookings rose 129%, joint developments now bring 64% of them, and CARE rates it A+. But operating cash was −₹910cr in FY26, net debt rose to ₹824cr (0.7 times equity) by June, interest cut Q1 profit to ₹13cr, and Thane, its cash engine, sells less each year in a market where it says few developers have pricing power. The price needs about {need:Raymond Realty|10–11}% a year against my ~12%, but the cash burn comes first.",
+            view: "**Growing fast on borrowed time.** Q1 bookings rose 129%, joint developments now bring 64% of them, and CARE rates it A+. But operating cash was −₹910cr in FY26, net debt rose to ₹824cr (0.7 times equity) by June, interest cut Q1 profit to ₹13cr, and Thane, its cash engine, sells less each year in a market where it says few developers have pricing power. The price needs about {need:Raymond Realty|10–11}% a year against my ~12%, but the cash burn comes first. The promoter is putting in up to ₹409cr through warrants (approved by holders on 8 Oct 2026, about 9% dilution), which eases the debt but confirms the cash need.",
             watch: "The two Mahim launches between November and March; operating margin reaching 17%; net debt staying below one times equity.",
         },
         {
