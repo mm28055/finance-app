@@ -911,118 +911,135 @@
     "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 9.8 pts (47.9% in Jun 2026 → 38.1% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
-    "addedOn": "2026-10-07"
+    "addedOn": "2026-10-07",
+    "handled": "2026-10-09: The fall from 47.9% to 38.1% is the Housing.com share swap: 1.98cr new shares to REA India on 29 Sep took the count from 7.68cr to 9.66cr (47.9% × 7.68/9.66 = 38.1%). No promoter sale or pledge. Already in the note and card; no change. Stays pass."
   },
   {
     "company": "Ramkrishna Forgings",
     "sector": "Auto Related",
     "subject": "Big holder change: Sep 2026",
     "why": "Smallcap World Fund, Inc (FII) cut its stake from 5.96% to 1.22%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-07"
+    "addedOn": "2026-10-07",
+    "handled": "2026-10-09: Smallcap World Fund cut 5.96% → 1.22%; no filing in the digest explains it, so it looks like a fund selling in the market. The quarter's real change, the promoter's ₹200cr warrant conversion at ₹588 on 25 Sep, is already in the card. Does not matter to the pass call; no change."
   },
   {
     "company": "Sonata Software",
     "sector": "Software",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-07"
+    "addedOn": "2026-10-07",
+    "handled": "2026-10-09: Price now fits (needs ~8.7% vs my ~8%). Kept wait: no filing in six weeks and Q2, the first test of International EBITDA back above 18%, is not out. Dated sentence in view and Tab 2 verdict."
   },
   {
     "company": "Borosil Renewables",
     "sector": "Industrials",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-07"
+    "addedOn": "2026-10-07",
+    "handled": "2026-10-09: Price now fits (needs ~10.9% vs my ~10%). Kept follow, not own: near-peak margins rest on import duties; only filing was the 22 Sep delay of the 600 TPD furnace to March 2027 (already in the note). Dated sentence in view and Tab 2 verdict."
   },
   {
     "company": "Remsons Industries",
     "sector": "Auto Related",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-07"
+    "addedOn": "2026-10-07",
+    "handled": "2026-10-09: Price now fits (needs ~12.8% vs my ~12%). Kept wait: filings were the Pardi plant restart (18 Sep) and the death of WTD Rahul Kejriwal (6 Oct); the Q2 margin and flood cost are not out. Dated sentence in view and Tab 2 verdict."
   },
   {
     "company": "Anondita Medicare",
     "sector": "Health Products",
     "subject": "Big holder change: Sep 2026",
     "why": "Sageone-Flagship Growth Oe Fund (DII) raised its stake from 2.92% to 5.37%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-08"
+    "addedOn": "2026-10-08",
+    "handled": "2026-10-09: SageOne Flagship Growth raised 2.92% → 5.37%, an ordinary fund purchase (no share issue filed). Does not change the case; no change."
   },
   {
     "company": "Corona Remedies",
     "sector": "Pharma",
     "subject": "Big holder change: Sep 2026",
     "why": "Sepia Investments Limited (public holder) cut its stake from 12.68% to 8.62%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-08"
+    "addedOn": "2026-10-08",
+    "handled": "2026-10-09: Sepia Investments (pre-IPO investor) cut 12.68% → 8.62%, selling after its IPO lock-in; no new shares were issued. A supply overhang, not a change in the business; no change. (CARE also lifted its short-term rating to A1+ on 30 Sep.)"
   },
   {
     "company": "TD Power Systems",
     "sector": "Electrical Equipment",
     "subject": "Big holder change: Sep 2026",
     "why": "Axis Focused Fund Account (DII) raised its stake from 2.13% to 4.15%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-08"
+    "addedOn": "2026-10-08",
+    "handled": "2026-10-09: Axis Focused Fund raised 2.13% → 4.15%, an ordinary fund purchase. Does not change the case; no change."
   },
   {
     "company": "Solex Energy",
     "sector": "Solar PV Cells EPC",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-08"
+    "addedOn": "2026-10-08",
+    "handled": "2026-10-09: Price now fits (needs ~4.3% vs my ~3%). Kept wait: ₹194cr of module orders (6 Oct) help H2, but the cell plant is still unfunded and the AGM's ₹4,000cr plan adds to what must be raised. Dated sentence in view and Tab 2 verdict."
   },
   {
     "company": "Texmaco Rail",
     "sector": "Industrial - Railway",
     "subject": "Call drift: pass → Fits",
     "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-08"
+    "addedOn": "2026-10-08",
+    "handled": "2026-10-09: Price now fits (needs ~13.2% vs my ~12%). Kept pass: nothing filed explains the ₹700cr provision behind the auditor's qualification. Added the 1 Sep US$135m (~₹1,120cr) African locomotive award to the view and sales drivers (new CFO Shibu Mathews was already in management data)."
   },
   {
     "company": "The Anup Enginee",
     "sector": "Industrials",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-08"
+    "addedOn": "2026-10-08",
+    "handled": "2026-10-09: Price now fits (needs ~19.7% vs my ~18%). Kept wait: the cash test (38% of five years' profit as cash, ₹2cr on ₹110cr in FY26) is what holds it back; no filings in six weeks. Dated sentence in view and Tab 2 verdict."
   },
   {
     "company": "Tinna Rubber",
     "sector": "Rubber",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-08"
+    "addedOn": "2026-10-08",
+    "handled": "2026-10-09: Price now fits (needs ~16.1% vs my ~15%). Kept follow: free cash still negative and EPR credits ~40% of profit. CARE upgraded it to BBB (from BBB-) on 1 Oct; four rating mentions in note and card corrected. Dated sentence in view and Tab 2 verdict."
   },
   {
     "company": "Antony Waste Hand",
     "sector": "Utilities",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-08"
+    "addedOn": "2026-10-08",
+    "handled": "2026-10-09: Price now fits (needs ~11% vs my ~10%). Kept follow until Q2 margin recovers and the Pune plant restarts safely; no filings in six weeks. Replaced hard-coded price prose with a live placeholder; dated sentence in view and Tab 2 verdict."
   },
   {
     "company": "Godavari Power",
     "sector": "Mining & Metals Recycle",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-08"
+    "addedOn": "2026-10-08",
+    "handled": "2026-10-09: Price now fits (needs ~11.3% vs my ~10%). Kept follow: Q1 margin miss, a pellet plant shut and 66% of FY26 lending to related parties; only filing was the battery factory's environmental clearance (already recorded). Card price prose made live; dated sentence in view and Tab 2 verdict."
   },
   {
     "company": "GPT Healthcare (Agilus)",
     "sector": "Hospitals",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-08"
+    "addedOn": "2026-10-08",
+    "handled": "2026-10-09: Price only just fits (needs ~16.9% vs my ~15%). Kept follow until Raipur nears break-even; no filings in six weeks. Dated sentence in view and Tab 2 verdict."
   },
   {
     "company": "Kross",
     "sector": "Auto Related",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-08"
+    "addedOn": "2026-10-08",
+    "handled": "2026-10-09: Price now fits (needs ~16.5% vs my ~15%). Kept wait: growth still consumes cash (FY26 free cash −₹72cr, 153-day cycle); only filing was the corrigendum to the preferential-issue notice. Dated sentence in view and Tab 2 verdict."
   },
   {
     "company": "Man Industries (I)",
     "sector": "Iron and Steel",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-08"
+    "addedOn": "2026-10-08",
+    "handled": "2026-10-09: Price now fits (needs ~18.4% vs my ~18%). Kept follow while the SEBI appeal, income-tax search and promoter pledge are open. Order book updated to ~₹4,100cr after ₹600cr of orders on 10 Sep (view, card, revenue text, order-book note); hard-coded price prose made live."
   }
 ]
