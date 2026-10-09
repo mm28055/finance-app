@@ -598,7 +598,7 @@ export const industrialRailway: SectorOverview = {
         {
             company: 'Texmaco Rail', rank: 6, stance: 'CYCLICAL', segment: FAB,
             what: "India's largest wagon maker by capacity (15,400 a year), with its own foundry, rail electrification and track work, and joint ventures in brakes, leasing and tank wagons; part of the Adventz group.",
-            view: "**A transformed order book, with accounts the auditor would not sign clean.** 96% of its wagon book is private and export, lifting the order book to ₹9,923cr with a ₹4,100cr South African contract. But the auditor qualified FY26 because a ₹700cr provision was taken straight from reserves, Q1 sales fell 17%, freight-car margin fell to 5.5% and profit relied on a tax credit. The price needs about {need:Texmaco Rail|15}% a year against my ~12%, but reported profit is the number in doubt.",
+            view: "**A transformed order book, with accounts the auditor would not sign clean.** 96% of its wagon book is private and export, lifting the order book to ₹9,923cr with a ₹4,100cr South African contract. But the auditor qualified FY26 because a ₹700cr provision was taken straight from reserves, Q1 sales fell 17%, freight-car margin fell to 5.5% and profit relied on a tax credit. The price needs about {need:Texmaco Rail|15}% a year against my ~12%, but reported profit is the number in doubt. On 9 Oct 2026 the price moved into the fits band; I keep it at pass. A US$135m (about ₹1,120cr) African diesel-locomotive award on 1 September adds to the book, but nothing filed since explains the ₹700cr provision.",
             watch: 'Any use or write-back of the ₹700cr provision; wagons back above 2,000 a quarter; collection of ₹765cr of unbilled work.',
         },
         {
