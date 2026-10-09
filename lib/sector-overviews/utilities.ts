@@ -548,7 +548,7 @@ export const utilities: SectorOverview = {
         {
             company: 'Antony Waste Hand', rank: 2, stance: 'TURNAROUND', segment: CIVIC,
             what: "Collects, transports and processes city waste under long municipal contracts in Mumbai, Pune, Noida and elsewhere, including the Kanjurmarg landfill and a waste-to-energy plant near Pune.",
-            view: "**The best cash record here, in its worst quarter.** It turned 77% of five years' operating profit into cash and holds contracts of 7–25 years, but Q1 profit was ₹0.7cr, nine people died in the July landslide at its Pune plant, and a ₹22–24cr write-down is due. Management's June promises on margin and labour costs were reversed within one quarter. The price asks for a little more than my ~10% estimate.",
+            view: "**The best cash record here, in its worst quarter.** It turned 77% of five years' operating profit into cash and holds contracts of 7–25 years, but Q1 profit was ₹0.7cr, nine people died in the July landslide at its Pune plant, and a ₹22–24cr write-down is due. Management's June promises on margin and labour costs were reversed within one quarter. The price needs about {need:Antony Waste Hand|11}% a year against my ~10%. On 9 Oct 2026 the price moved into the fits band; I keep it at follow until Q2 shows the margin recovering and the Pune plant has restarted safely, and nothing has been filed in six weeks.",
             watch: 'The Pune plant restarting safely in October; the margin back toward 20% as escalations are billed; the Supreme Court ruling on Kanjurmarg.',
         },
         {
