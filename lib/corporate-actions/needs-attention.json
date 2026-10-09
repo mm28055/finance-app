@@ -1064,5 +1064,26 @@
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
     "addedOn": "2026-10-08",
     "handled": "2026-10-09: Price now fits (needs ~18.4% vs my ~18%). Kept follow while the SEBI appeal, income-tax search and promoter pledge are open. Order book updated to ~₹4,100cr after ₹600cr of orders on 10 Sep (view, card, revenue text, order-book note); hard-coded price prose made live."
+  },
+  {
+    "company": "Dhanuka Agritech",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-09"
+  },
+  {
+    "company": "Supriya Lifescience",
+    "sector": "Pharma API",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-09"
+  },
+  {
+    "company": "Caplin Point Labs",
+    "sector": "Pharma",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-09"
   }
 ]
