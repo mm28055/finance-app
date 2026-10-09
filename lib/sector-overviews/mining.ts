@@ -590,7 +590,7 @@ export const miningMetalsRecycle: SectorOverview = {
         {
             company: 'Godavari Power', rank: 3, stance: 'CYCLICAL', segment: MINING,
             what: "Mines its own iron ore in Chhattisgarh and turns it into pellets, sponge iron, billets and wire, and is building a battery-storage factory and a cold-rolling mill in Maharashtra.",
-            view: "**Low-cost ore and net cash, but a year that started badly.** Its ore costs about ₹3,300 a tonne against about ₹5,500 in the market and it holds ₹837cr of net cash. But Q1's margin was 19% against 24–25% promised, a pellet plant is shut, the steel plant is shelved, CRISIL cut its outlook, and 66% of its FY26 loans went to related parties. The price needs about {need:Godavari Power|13}% a year against my ~10%, which is {Label:Godavari Power|Full}.",
+            view: "**Low-cost ore and net cash, but a year that started badly.** Its ore costs about ₹3,300 a tonne against about ₹5,500 in the market and it holds ₹837cr of net cash. But Q1's margin was 19% against 24–25% promised, a pellet plant is shut, the steel plant is shelved, CRISIL cut its outlook, and 66% of its FY26 loans went to related parties. The price needs about {need:Godavari Power|13}% a year against my ~10%, which is {Label:Godavari Power|Full}. On 9 Oct 2026 the price moved into the fits band; I keep it at follow, not own, until the mine ramps up and the margin recovers, and while two-thirds of its lending goes to related parties. The only filing in six weeks is the battery factory's environmental clearance.",
             watch: 'Tree-cutting approval and the mine ramp-up; Q4 FY27 margin back above 23%; first battery-storage orders.',
         },
         {
