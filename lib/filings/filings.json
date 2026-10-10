@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-09T19:54:59.394Z",
+ "updated": "2026-10-10T19:01:35.778Z",
  "from": "2026-09-01",
- "to": "2026-10-09",
+ "to": "2026-10-10",
  "companiesBySector": {
   "Cables": 8,
   "Forging": 7,
@@ -53,6 +53,66 @@
   "Industrial Machinery": 4
  },
  "filings": [
+  {
+   "company": "Signatureglobal Ind.",
+   "sector": "Realty",
+   "date": "2026-10-10",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Q2 pre-sales hit ₹1,830cr; adds 194 acres of land in Gurugram",
+   "summary": "Signature Global reported strong operational numbers for Q2 FY27, with pre-sales of ₹1,830 crore and collections jumping 51% quarter-on-quarter to ₹1,010 crore. As part of its growth strategy, the company also added 194.22 acres of land in Gurugram, which carries an estimated development potential of 6.77 million sq. ft.",
+   "url": "https://nsearchives.nseindia.com/corporate/SGLOBAL_10102026185842_PressRelease.pdf",
+   "impact": "normal",
+   "impactWhy": "Quarterly operational update without explicit record or YoY comparison."
+  },
+  {
+   "company": "Oswal Pumps",
+   "sector": "Pumps Comp & Eng",
+   "date": "2026-10-10",
+   "category": "Capex",
+   "tone": "good",
+   "headline": "To set up ₹456cr 1.2 GW solar cell manufacturing facility",
+   "summary": "The company's subsidiary plans to set up a 1.2 GW TOPCon solar cell manufacturing facility for captive consumption, with commercial production expected by April 2028. The ₹456 crore project (about 22.5% of yearly sales) will be funded via ₹296 crore in debt and ₹159.85 crore redirected from unutilized IPO proceeds.",
+   "url": "https://nsearchives.nseindia.com/corporate/OSWALPUMPS_10102026180647_SE_LetterPressReleaseOPL10102026.pdf",
+   "impact": "normal",
+   "impactWhy": "Announcement of planned capex, not commercial production or commissioning."
+  },
+  {
+   "company": "Oswal Pumps",
+   "sector": "Pumps Comp & Eng",
+   "date": "2026-10-10",
+   "category": "Strategy",
+   "tone": "info",
+   "headline": "To set up 1.2 GW solar cell plant by redirecting ₹160cr of IPO funds",
+   "summary": "Oswal Pumps' wholly-owned subsidiary will set up a greenfield 1.2 GW solar cell manufacturing plant in Karnal, Haryana. The board has approved redirecting ₹159.85 crore of unutilised IPO proceeds toward this project, replacing earlier plans for an aluminium frame facility and reducing the scale of its module and EVA encapsulant plants. The company stated this backward integration will secure cell supply and improve its competitive positioning for government solar programmes.",
+   "url": "https://nsearchives.nseindia.com/corporate/OSWALPUMPS_10102026175254_SE_LetterCellPlantVariationOPL10102026.pdf",
+   "impact": "normal",
+   "impactWhy": "Reallocation of IPO proceeds for planned capex project."
+  },
+  {
+   "company": "ADF Foods",
+   "sector": "Food Products",
+   "date": "2026-10-10",
+   "category": "Legal",
+   "tone": "good",
+   "headline": "US subsidiary to recover US$ 1.75m in litigation settlement",
+   "summary": "ADF Foods (USA) Ltd. has signed a forbearance agreement to settle litigation with Ascot Valley Foods Ltd. The subsidiary will receive US$ 1.75 million (about ₹14.5 crore) over 52 months, with an initial payment of US$ 450,000 already received. The agreement secures financial recovery while keeping a permanent injunction that protects the subsidiary's proprietary recipes and trade secrets fully effective.",
+   "url": "https://nsearchives.nseindia.com/corporate/ADFFOODS1_10102026163643_ADFAscotForeberanceAgreement.pdf",
+   "impact": "normal",
+   "impactWhy": "Settlement amount of ₹14.5 crore is small relative to company size."
+  },
+  {
+   "company": "Shilpa Medicare",
+   "sector": "Pharma API",
+   "date": "2026-10-10",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Europe GMP approval received for Unit 4 in Jadcherla",
+   "summary": "Shilpa Medicare's Unit 4 in Jadcherla, Telangana, has received GMP certification from AGES, Austria, following a successful inspection in July 2026. The facility manufactures sterile injections and non-sterile formulations for European and other global markets.",
+   "url": "https://nsearchives.nseindia.com/corporate/SHILPAMED_10102026131737_Intimationagisgmp.pdf",
+   "impact": "normal",
+   "impactWhy": "Routine regulatory GMP certification."
+  },
   {
    "company": "Cohance Lifesciences",
    "sector": "Pharma CDMO",
@@ -150,6 +210,66 @@
    "impactWhy": "Aggregate monthly order inflow rather than a single large order."
   },
   {
+   "company": "Aequs",
+   "sector": "Aerospace defence",
+   "date": "2026-10-09",
+   "category": "Pledge",
+   "tone": "good",
+   "headline": "Promoter freed 15.0% of shares from pledge",
+   "summary": "Promoter Melligeri Private Family Foundation (Mellwood Trustee Services Private Limited) freed 15.0% of the company (worth ₹2,317cr at an average price of ₹231, compared to today's ₹274) from being pledged, meaning they recovered shares previously given to lenders as security. Because this was just a pledge release, their total holding remained unchanged at 15.0% before and after the event.",
+   "url": "https://nsearchives.nseindia.com/corporate/ixbrl/IT_26252_20261009_182111728_WEB.html",
+   "impact": "high",
+   "impactWhy": "Promoter released 15.0% of company's shares from pledge."
+  },
+  {
+   "company": "Ashoka Buildcon",
+   "sector": "Construction",
+   "date": "2026-10-09",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Provisional COD received for Karnataka NHAI HAM project",
+   "summary": "The company's wholly-owned SPV has received the Provisional Certificate for Commercial Operation Date (COD) for a 45.05 km stretch of its NHAI Hybrid Annuity Mode project in Karnataka. With the COD declared as October 7, 2026, the company is now eligible to receive bi-annual annuity payments from NHAI for the next 15 years.",
+   "url": "https://nsearchives.nseindia.com/corporate/ASHOKA_09102026193347_508_ABL_BSE_NSE_PCOD_I_Bettadahalli.pdf",
+   "impact": "normal",
+   "impactWhy": "Routine project commercial operation date milestone."
+  },
+  {
+   "company": "Ajmera Realty",
+   "sector": "Realty",
+   "date": "2026-10-09",
+   "category": "Operations",
+   "tone": "info",
+   "headline": "Q2 pre-sales stood at ₹224 crore, down 69% YoY, with collections of ₹190 crore",
+   "summary": "Ajmera Realty announced its operational update for Q2FY27, reporting pre-sales of ₹224 crore (a 69% decline YoY but a 54% increase QoQ). Collections for the quarter stood at ₹190 crore, down 14% YoY, with 72,883 sq. ft. of carpet area sold.",
+   "url": "https://nsearchives.nseindia.com/corporate/AJMERA_09102026165157_Intimation-sd.pdf",
+   "impact": "high",
+   "impactWhy": "Quarterly pre-sales dropped sharply by 69% YoY."
+  },
+  {
+   "company": "Jash Engineering",
+   "sector": "Industrials",
+   "date": "2026-10-09",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Bagged orders worth ₹102cr in September; order book at ₹944cr",
+   "summary": "The company received consolidated orders worth ₹102cr in September 2026, comprising ₹43cr from the domestic market and ₹59cr from international markets. This single month's intake is roughly 13.5% of yearly sales. The total consolidated order book stands at a strong ₹944cr.",
+   "url": "https://nsearchives.nseindia.com/corporate/JASH_09102026144314_cajsh202oct2026.pdf",
+   "impact": "normal",
+   "impactWhy": "Aggregate monthly order intake, not a single order exceeding 10% threshold."
+  },
+  {
+   "company": "Oriana Power",
+   "sector": "Solar PV Cells EPC",
+   "date": "2026-10-09",
+   "category": "Governance",
+   "tone": "watch",
+   "headline": "Shareholder vote on material related-party deal with JV",
+   "summary": "Oriana Power is seeking shareholder approval via postal ballot for material related-party transactions with its joint venture, Oriana USolar Joint Venture Private Limited. The exact financial details and nature of the proposed transactions were not disclosed in the provided extract.",
+   "url": "https://nsearchives.nseindia.com/corporate/ORIANA_09102026154246_Oriana_Intimation_Notice_of_Postal_Ballot_09102026.pdf",
+   "impact": "normal",
+   "impactWhy": "Routine shareholder approval for related-party transaction."
+  },
+  {
    "company": "Vintage Coffee",
    "sector": "Food Products",
    "date": "2026-10-08",
@@ -244,6 +364,30 @@
    "url": "https://nsearchives.nseindia.com/corporate/RUSTOMJEE_08102026111902_KOD_Q2FY27.pdf",
    "impact": "high",
    "impactWhy": "Reported highest-ever quarterly pre-sales, surging 84% year-on-year."
+  },
+  {
+   "company": "Madhya Bharat Agro Products",
+   "sector": "Agrochemical & Fertilizers",
+   "date": "2026-10-08",
+   "category": "Credit rating",
+   "tone": "good",
+   "headline": "CRISIL reaffirms A+ rating, removes bank facilities from rating watch",
+   "summary": "CRISIL has reaffirmed the long-term rating at CRISIL A+ and the short-term rating at CRISIL A1 for the company's ₹2,006.6 crore bank facilities. The ratings were removed from 'Rating Watch with Developing Implications' and assigned a Stable outlook, resolving previous uncertainty.",
+   "url": "https://nsearchives.nseindia.com/corporate/MBAPL_08102026151854_Credit_Rating.pdf",
+   "impact": "normal",
+   "impactWhy": "Credit rating reaffirmed, not upgraded or downgraded."
+  },
+  {
+   "company": "OBSC Perfection",
+   "sector": "Auto Related",
+   "date": "2026-10-08",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Received first defense order worth ₹8.9cr from Elbit Systems entity",
+   "summary": "OBSC Perfection has received its first purchase order to manufacture and supply fuze components to Israel-based IMI Systems (an Elbit Systems entity). The export order is valued at ₹8.9 crore (about 3.5% of yearly sales) and is to be executed within six months, marking a new step in the defense sector.",
+   "url": "https://nsearchives.nseindia.com/corporate/OBSCPERFECTION_08102026134109_OBSCP_Disclosure_Receipt_of_Purchase_Order.pdf",
+   "impact": "high",
+   "impactWhy": "First order opening a major new market in the defense sector."
   },
   {
    "company": "Ola Electric",
