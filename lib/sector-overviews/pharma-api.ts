@@ -707,7 +707,7 @@ export const pharmaApi: SectorOverview = {
         {
             company: 'Supriya Lifescience', rank: 8, stance: 'TURNAROUND', segment: NICHE,
             what: "Niche active ingredients (anaesthetics about half of sales, antihistamines, vitamins, anti-anxiety and ADHD medicines), mostly made from its own starting materials and 81% exported.",
-            view: "**A strong franchise with weak operating controls.** A water shortage and a power-rule change cut the Q1 margin to 25%, and a narcotics case put its sales head in custody. It still guides ₹1,000cr at 32–35%, which needs its best-ever quarter every quarter. The price needs about {need:Supriya Lifescience|21}% a year against my ~18%.",
+            view: "**A strong franchise with weak operating controls.** A water shortage and a power-rule change cut the Q1 margin to 25%, and a narcotics case put its sales head in custody. It still guides ₹1,000cr at 32–35%, which needs its best-ever quarter every quarter. The price needs about {need:Supriya Lifescience|21}% a year against my ~18%. On 9 Oct 2026 the price moved into the fits band, but I keep it at wait: Q2 will show whether the margin is back above 30%, the EU audit is in November, and the customs case is still open (the High Court released the seized consignment on 22 September but let the prosecution continue, and the company went to the Supreme Court on 8 October).",
             watch: 'Margin back above 33% in Q2 and Q3; a clean EU audit at Ambernath in November; no escalation of the narcotics case, which continues even though the court released the seized consignment.',
         },
         {
