@@ -884,7 +884,7 @@ export const realty: SectorOverview = {
             company: 'Ajmera Realty', rank: 12, stance: 'CYCLICAL', segment: MUMMID,
             what: "A five-decade Mumbai developer centred on the Wadala township (Manhattan and Greenfinity), with projects in Bhandup, Vikhroli, Bandra, Versova and Bengaluru and land at Kanjurmarg.",
             view: "**A strong year followed by an empty quarter.** FY26 pre-sales rose 57% to ₹1,701cr, beating guidance, and debt/equity ended at 0.53 against 0.85 allowed. But Q1 pre-sales were ₹146cr, management did not repeat its ₹2,200cr target, 95% of FY27 launch value sits in H2 including a ₹3,600cr office phase, and its debt costs 11%. The price needs about {need:Ajmera Realty|10}% a year against my ~10%.",
-            watch: "The Q3 boutique-office launch; the Kanjurmarg freehold conversion by December; H1 pre-sales.",
+            watch: "The Q3 boutique-office launch; the Kanjurmarg freehold conversion by December; H2 pre-sales from the delayed launches (H1 was about ₹370cr).",
         },
         {
             company: 'Shriram Properties', rank: 13, stance: 'TURNAROUND', segment: REGION,
