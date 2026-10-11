@@ -849,84 +849,96 @@
     "sector": "Travel Services",
     "subject": "New General 28 Sep 2026",
     "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-11: No record of the AGM's discussion was filed and no new guidance emerged; the Atyati unit sale and auditor change around it are already in the note. No change."
   },
   {
     "company": "Knack Packaging",
     "sector": "Packaging",
     "subject": "New General 30 Sep 2026",
     "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-11: No AGM record with new targets. Since then: a ₹150cr-a-year, three-year US packaging contract (2 Oct, already logged) and its CIN now shows it as listed. No change."
   },
   {
     "company": "Godavari Power",
     "sector": "Mining & Metals Recycle",
     "subject": "New General 28 Sep 2026",
     "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-11: No AGM record with new targets. Since then: ₹50cr more into its battery subsidiary, a new battery-EPC subsidiary, environmental clearance (already in projects) and 2.72 lakh warrant shares converted. No change."
   },
   {
     "company": "Puravankara",
     "sector": "Realty",
     "subject": "New General 30 Sep 2026",
     "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-11: No AGM record with new targets. Since then it completed the sale of Purva Ruby Properties (1% of turnover, negative net worth) on 30 Sep and placed the last ₹25cr NCD tranche. No change."
   },
   {
     "company": "Oswal Pumps",
     "sector": "Pumps Comp & Eng",
     "subject": "New General 29 Sep 2026",
     "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-11: No AGM record with new targets (the AGM was held 25 Sep; only voting results filed). Its 10 Oct cell-plant plan is handled in this run's filings pass. No change from the AGM."
   },
   {
     "company": "Genus Power",
     "sector": "Electrical Equipment",
     "subject": "New General 29 Sep 2026",
     "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-11: No AGM record with new targets; only an investor-meeting schedule since. No change."
   },
   {
     "company": "Steelcast",
     "sector": "Forging",
     "subject": "New General 28 Sep 2026",
     "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-11: No AGM record with new targets. On 6 Oct it gained IRIS rail certification, which it says opens the European rail market; added one dated sentence to the card's products. Stays own."
   },
   {
     "company": "Nelcast",
     "sector": "Forging",
     "subject": "New General 29 Sep 2026",
     "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-11: No AGM record with new targets; its ₹75cr machining division (5 Oct) is already in the note and projects. No change."
   },
   {
     "company": "Greaves Cotton",
     "sector": "Pumps Comp & Eng",
     "subject": "New General 29 Sep 2026",
     "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-11: No AGM record with new targets; only Ampere product and dealer press releases since. No change."
   },
   {
     "company": "Onward Technologies",
     "sector": "Software",
     "subject": "New General 30 Sep 2026",
     "why": "General 30 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-11: No AGM record with new targets; an earnings-call date has been set. No change."
   },
   {
     "company": "RHI Magnesita",
     "sector": "Elect and Refrac",
     "subject": "New General 28 Sep 2026",
     "why": "General 28 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-11: AGM proceedings filed: shareholders confirmed Pankaj Malhan as MD and CEO (from 1 Jul 2026) and BSR & Co. as auditor; both already in the note. No new guidance. No change."
   },
   {
     "company": "Arihant Superstruct.",
     "sector": "Realty",
     "subject": "New General 29 Sep 2026",
     "why": "General 29 Sep 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-06"
+    "addedOn": "2026-10-06",
+    "handled": "2026-10-11: No AGM record and no filings with new targets since. No change."
   },
   {
     "company": "Aurum Proptech",
@@ -1070,20 +1082,23 @@
     "sector": "Agrochemical & Fertilizers",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-09"
+    "addedOn": "2026-10-09",
+    "handled": "2026-10-11: Price now fits (needs ~8.6% vs my ~8%). Kept wait: Q2, the main season, is not out, growth guidance was cut to low single digits, and ₹55.5cr of old entry-tax demands (6 Oct) add to ₹135cr of GST claims. Dated sentence added to the view and card; the valuation text no longer says it needs a few points more."
   },
   {
     "company": "Supriya Lifescience",
     "sector": "Pharma API",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-09"
+    "addedOn": "2026-10-09",
+    "handled": "2026-10-11: Price now fits (needs ~19.5% vs my ~18%). Kept wait for the Q2 margin, the November EU audit and the customs case: the High Court released the seized consignment on 22 Sep against ₹72 lakh but let the prosecution continue, and the company went to the Supreme Court on 8 Oct. Card and view updated."
   },
   {
     "company": "Caplin Point Labs",
     "sector": "Pharma",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-09"
+    "addedOn": "2026-10-09",
+    "handled": "2026-10-11: Moved follow → own: the price fits (needs ~17.1% vs my ~16%; still fits on profit without treasury income once net cash is counted), five-year operating cash is about 80% of profit, and no filing since the Q1 call weakens the case (AGM routine; the exchange's volume queries answered 'market driven'). Stance COMPOUNDER, rank 2 above Zydus; section 1, valuation bands, card and closing lines updated."
   }
 ]

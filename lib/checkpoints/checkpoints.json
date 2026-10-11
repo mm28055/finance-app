@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04",
+ "updated": "2026-10-11",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -18852,7 +18852,11 @@
    "due": "Q2 FY27",
    "ifMissed": "Stays wait for collections to recover",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Q2 FY27 collections ₹1,010cr, up 51% on Q1's ₹670cr but just short of ₹1,100cr (company update, 10 Oct 2026)",
+   "resolvedOn": "2026-10-11",
+   "resolvedBy": "review",
+   "outcome": "No change to the call; collections are recovering but H2 has to carry the year"
   },
   {
    "id": "signatureglobal-ind-q4fy27-1",
@@ -30506,8 +30510,12 @@
    "text": "1 GW first phase in commercial production",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "oswal-pumps-modules"
+   "status": "missed",
+   "project": "oswal-pumps-modules",
+   "actual": "Not in production at the end of Q2: on 10 Oct 2026 the company said the 1 GW line was 'now being set up'",
+   "resolvedOn": "2026-10-11",
+   "resolvedBy": "review",
+   "outcome": "Stays pass; the module ramp keeps slipping"
   },
   {
    "id": "oswal-pumps-modules-m2",
@@ -30517,7 +30525,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "oswal-pumps-modules"
+   "project": "oswal-pumps-modules",
+   "revisions": [
+    {
+     "on": "2026-10-10",
+     "text": "Board proposed dropping this (the last 500 MW of modules and the aluminium-frame unit) to fund a 1.2 GW cell plant instead; needs shareholders' approval"
+    }
+   ]
   },
   {
    "id": "oswal-pumps-modules-m3",
@@ -30527,7 +30541,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "oswal-pumps-modules"
+   "project": "oswal-pumps-modules",
+   "revisions": [
+    {
+     "on": "2026-10-10",
+     "text": "Board proposed dropping this (the last 500 MW of modules and the aluminium-frame unit) to fund a 1.2 GW cell plant instead; needs shareholders' approval"
+    }
+   ]
   },
   {
    "id": "oswal-pumps-pump-plant-m1",
@@ -32594,6 +32614,26 @@
    "createdOn": "2026-10-07",
    "status": "pending",
    "source": "business-shift"
+  },
+  {
+   "id": "oswal-pumps-cell-plant-m1",
+   "company": "Oswal Pumps",
+   "sector": "Pumps Comp & Eng",
+   "text": "Shareholders approve moving ₹159.85cr of IPO money to the cell plant (postal ballot)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-11",
+   "status": "pending",
+   "project": "oswal-pumps-cell-plant"
+  },
+  {
+   "id": "oswal-pumps-cell-plant-m2",
+   "company": "Oswal Pumps",
+   "sector": "Pumps Comp & Eng",
+   "text": "1.2 GW cell plant in commercial production by April 2028",
+   "due": "Q1 FY29",
+   "createdOn": "2026-10-11",
+   "status": "pending",
+   "project": "oswal-pumps-cell-plant"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07",
+ "updated": "2026-10-11",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -11876,10 +11876,16 @@
    "cost": "₹272.8cr of IPO money (FY27 capex about ₹250cr overall)",
    "expectedStart": "Q2 FY27",
    "adds": "with pumps, capacity for ₹6,000cr-plus of revenue",
-   "status": "started",
-   "source": "Q1 FY27 call (Aug 2026): 1 GW commercial production in the first or second week of September, a quarter later than May's Q1 target",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+1.5 GW of modules (0.6 to 2.1 GW, 3.5 times)"
+   "status": "building",
+   "source": "Company filing, 10 Oct 2026 (variation of IPO objects); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-10-11",
+   "capacityAdd": "+1.5 GW of modules (0.6 to 2.1 GW, 3.5 times)",
+   "revisions": [
+    {
+     "on": "2026-10-10",
+     "text": "Board proposed (subject to a shareholders' postal ballot) dropping the aluminium-frame unit, the last 500 MW of module capacity and 300 MW of EVA-film capacity, and moving ₹159.85cr of the IPO money to a 1.2 GW cell plant; module capacity would stop at about 1.6 GW (570 MW plus 1 GW). The company said on 10 October that the 1 GW line was still 'being set up'."
+    }
+   ]
   },
   {
    "id": "oswal-pumps-pump-plant",
@@ -13397,6 +13403,20 @@
    "status": "planned",
    "source": "Stock-exchange filing, 8 Oct 2026 (no start date given)",
    "updatedOn": "2026-10-09"
+  },
+  {
+   "id": "oswal-pumps-cell-plant",
+   "company": "Oswal Pumps",
+   "sector": "Pumps Comp & Eng",
+   "name": "1.2 GW TOPCon solar-cell plant, Karnal",
+   "what": "Greenfield cell plant in its subsidiary Oswal Solar, all output for its own module lines (about 75% of its cell needs), so its modules qualify for domestic-content schemes",
+   "cost": "₹456cr: ₹296cr of debt and ₹159.85cr of IPO money moved from frame, module and EVA lines (needs shareholders' approval)",
+   "expectedStart": "April 2028",
+   "adds": "1.2 GW of TOPCon cells a year for captive use",
+   "status": "planned",
+   "source": "Company filings and press release, 10 Oct 2026",
+   "updatedOn": "2026-10-11",
+   "capacityAdd": "+1.2 GW of cells (none today)"
   }
  ]
 }

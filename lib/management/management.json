@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07",
+ "updated": "2026-10-11",
  "companies": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -26277,17 +26277,25 @@
      "role": "Chief Quality & Compliance Officer",
      "family": false,
      "bio": "Has over 35 years in quality across active ingredients, formulations and CDMO plants. He was global head of quality for Dr. Reddy's PSAI business and global head of internal audit and compliance there, and earlier held roles at Mylan, Zydus, Glenmark and Cipla. His job matters now: the company has a US FDA warning letter at Nacharam and FDA observations at three more sites since July."
+    },
+    {
+     "name": "Abhimanyu Ojha",
+     "role": "Chief Financial Officer",
+     "since": "12 Oct 2026",
+     "family": false,
+     "bio": "Has over two decades leading finance functions at multinational healthcare and pharma companies. Before Cohance he was Global CFO and President Finance at Intas Pharmaceuticals, covering operations, manufacturing, R&D accounting, treasury, audit, tax, corporate finance and planning; earlier he held senior finance roles at Viatris (formerly Mylan), Sun Pharmaceuticals and Ranbaxy Laboratories (company filing, 9 Oct 2026)."
     }
    ],
-   "changes": "CFO and whole-time director Himanshu Agarwal resigned in June 2026 and left on 13 Sep 2026; no successor named yet. Executive Chairman Vivek Sharma left on 30 Apr 2026 and Umang Vohra replaced him (Chairman 1 May, Group CEO 20 May 2026). Earlier in FY26, CEO Dr. Sudhir Kumar Singh resigned (Jul 2025) and MD Dr. V. Prasada Raju resigned (Oct 2025). A new Company Secretary, Sisir K. Mishra, joined in Apr 2026.",
+   "changes": "CFO and whole-time director Himanshu Agarwal resigned in June 2026 and left on 13 Sep 2026; the board appointed Abhimanyu Ojha (ex-Global CFO, Intas) as CFO from 12 Oct 2026. Executive Chairman Vivek Sharma left on 30 Apr 2026 and Umang Vohra replaced him (Chairman 1 May, Group CEO 20 May 2026). Earlier in FY26, CEO Dr. Sudhir Kumar Singh resigned (Jul 2025) and MD Dr. V. Prasada Raju resigned (Oct 2025). A new Company Secretary, Sisir K. Mishra, joined in Apr 2026.",
    "sources": [
     "https://www.cohance.com/wp-content/uploads/2026/08/Cohance_Integrated-Annual-Report_2026.pdf",
     "https://www.cohance.com/about-us/leadership/",
     "https://www.cohance.com/wp-content/uploads/2026/08/Cohance_Q1FY27_Concall-transcript.pdf",
     "https://www.cohance.com/wp-content/uploads/2026/08/Cohance_Notice-of-AGM-2026.pdf",
-    "https://www.screener.in/company/COHANCE/consolidated/"
+    "https://www.screener.in/company/COHANCE/consolidated/",
+    "https://nsearchives.nseindia.com/corporate/SUVENPHARMROHIT_09102026201959_Cohance_Outcome_BM_09102026.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-11"
   },
   {
    "company": "Dishman Carbogen (Carbogen Amcis)",

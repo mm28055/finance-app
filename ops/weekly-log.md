@@ -158,3 +158,31 @@ Pushed to master; all checks passed (typecheck clean, "All notes pass.").
 **News pass, 7–9 October:** 6 entries had a clear reason. None was very important, so no note changed. The GST Council recommended export status for contract research, testing and manufacturing done in India for foreign clients (Anthem, Sai Life, Syngene, Vimta). This helps them compete, but it is a recommendation that still has to be notified. The Council also clarified that toll rights carry no GST (IRB). Chennai Petroleum rose 14.7% on crude prices.
 
 **Results pass:** no unreviewed results.
+
+## 11 October 2026
+
+Pushed to master; all checks passed (typecheck clean, "All notes pass.").
+
+**Follow-ups handled: 15 of 18. 3 stay open, all still waiting:** HEG Graphite has not listed (no NSE filings under a new symbol); SKF India has not filed July–September results; Ganesh Benzoplast has filed nothing on completing its ₹1,154cr sale.
+
+**Calls changed (1):**
+- **Caplin Point Labs: follow → own.** The note said to buy it when the price allowed, and it now does: the price needs about 17% a year against my ~16% (fits), and it still fits once its treasury income and its ₹1,259cr of net cash are both taken out. About 80% of five years' profit arrived as operating cash. Nothing filed since the Q1 call weakens the case. The fit is thin, so the note says to buy steadily, and to watch debtor days in Q2.
+
+**Prices that moved into the fits band, call kept (2):**
+- **Dhanuka Agritech** stays wait: Q2, the main crop season, is not out, growth guidance was cut to low single digits, and ₹55.5cr of old entry-tax demands arrived on 6 October on top of ₹135cr of GST claims.
+- **Supriya Lifescience** stays wait: the Q2 margin, the November EU audit and the customs case are all still open. The High Court released the seized ketamine against a ₹72 lakh deposit on 22 September but let the prosecution go on; the company took it to the Supreme Court on 8 October. The note now says so.
+
+**AGM follow-ups (12 handled).** None of these companies filed a record of the AGM with new guidance. RHI Magnesita's AGM confirmed its new MD and auditor (already in the note). One small addition: **Steelcast** gained IRIS rail certification on 6 October, which it says opens the European rail market; one dated sentence added to its card. Nothing new: BLS International, Knack Packaging, Godavari Power, Puravankara, Oswal Pumps, Genus Power, Nelcast, Greaves Cotton, Onward Technologies, Arihant Superstructures.
+
+**Filings pass, 9–10 October** (notes corrected where the filing made them wrong):
+- **Oswal Pumps** (stays pass): on 10 October the board proposed a ₹456cr, 1.2 GW solar-cell plant for April 2028, funded by ₹296cr of new debt and ₹160cr of IPO money taken from the planned frame unit and the last 500 MW of module capacity. Shareholders must approve the change. The same filing shows the 1 GW module line due by the end of Q2 was still "being set up", so I marked that milestone missed. Note, card, projects and checkpoints updated.
+- **Cohance Lifesciences** (stays avoid): Abhimanyu Ojha, formerly Global CFO of Intas, becomes CFO on 12 October, filling the gap left in September. Card, note and management data updated.
+- **Signatureglobal**: Q2 pre-sales ₹1,830cr and collections ₹1,010cr. H1 is ₹3,800cr against a ₹10,000cr FY27 guide, so H2 must sell about ₹6,200cr. The 194 acres of land were already in the note. The collections checkpoint (above ₹1,100cr) is marked partly met.
+- **Ajmera Realty**: Q2 pre-sales ₹224cr, down 69%, so H1 was about ₹370cr against the ₹2,200cr guided in May. This settles the "H1 pre-sales" watch item, which now looks to H2.
+- **HBL Engineering**: CARE upgraded it to AA- from A+; added to the card. **ideaForge**: signed the ₹151cr Technology Development Board loan for Yeti (the note had it as a letter of intent). **RMC Switchgears**: the board approved a rights issue of up to ₹30cr, about 15% of its market value; added to the card. **Shilpa Medicare**: Unit 4 at Jadcherla passed an EU inspection, which keeps Europe open but does not settle the US re-inspection; added to the card.
+- Order books updated: **DEE Development** ₹2,531cr (from ₹2,428cr), **Jash Engineering** ₹944cr (from ₹932cr).
+- Logged only: Rubicon's Satara FDA inspection (one procedural observation); Aequs (₹15.75cr into its drone joint venture; its promoter foundation released a 15% pledge the note never listed); Ashoka Buildcon's provisional COD on a Karnataka road; SH Kelkar's Q2 revenue +15% with ₹911cr of net debt; ADF Foods' US$1.75m settlement; Oriana Power's postal ballot on dealings with its joint venture (no amounts in the notice).
+
+**News pass:** no entries dated after 9 October.
+
+**Results pass:** no unreviewed results.
