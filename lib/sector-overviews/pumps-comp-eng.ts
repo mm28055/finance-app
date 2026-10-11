@@ -509,7 +509,7 @@ export const pumpsCompEng: SectorOverview = {
                 },
                 {
                     label: 'Growth driver: solar schemes and rooftops',
-                    text: "PM-KUSUM 2.0 would restart the solar-pump market, but it still has no cabinet approval, and industry expectations have slipped from June to August to ‘soon’. Meanwhile **Oswal** hopes for ₹800–1,000cr of revenue from about 2 lakh PM Surya Ghar rooftop systems this year against an order book of 72 MW, and **Shakti** booked ₹8cr of rooftop sales in Q1. Both are building domestic-content capacity: Shakti ₹1,500–1,700cr for a 0.5 GW module line and a 2.2 GW cell-and-module plant by September 2027; Oswal ₹272.8cr of IPO money for modules going from 0.6 GW to 2.1 GW. **My view: even with KUSUM 2.0, prices stay near today's levels, and the new plants risk arriving into overcapacity.**",
+                    text: "PM-KUSUM 2.0 would restart the solar-pump market, but it still has no cabinet approval, and industry expectations have slipped from June to August to ‘soon’. Meanwhile **Oswal** hopes for ₹800–1,000cr of revenue from about 2 lakh PM Surya Ghar rooftop systems this year against an order book of 72 MW, and **Shakti** booked ₹8cr of rooftop sales in Q1. Both are building domestic-content capacity: Shakti ₹1,500–1,700cr for a 0.5 GW module line and a 2.2 GW cell-and-module plant by September 2027; Oswal ₹272.8cr of IPO money for modules going from 0.6 GW to 2.1 GW, cut on 10 October 2026 to about 1.6 GW so that ₹160cr can go to a ₹456cr, 1.2 GW cell plant due by April 2028. **My view: even with KUSUM 2.0, prices stay near today's levels, and the new plants risk arriving into overcapacity.**",
                 },
                 {
                     label: 'Growth driver: capacity for the next cycle',
@@ -688,7 +688,7 @@ export const pumpsCompEng: SectorOverview = {
         {
             company: 'Oswal Pumps', rank: 9, stance: 'CYCLICAL', segment: SOLAR,
             what: "Solar pumps and motors for state schemes, plus solar modules, and now rooftop solar (PM Surya Ghar) and wires and cables. It listed in 2025.",
-            view: "**Cheap on paper, weak in cash and governance.** Q1 revenue fell 8% and margin to 15.7%, customers take 229 days to pay, and net debt doubled to ₹266cr in a quarter. The margin guide was cut 6 points, the CFO left, ICRA moved its outlook to negative, and related-party purchases doubled to ₹132cr. The price needs about {need:Oswal Pumps|5}% a year, but I expect roughly none from today's profit.",
+            view: "**Cheap on paper, weak in cash and governance.** Q1 revenue fell 8% and margin to 15.7%, customers take 229 days to pay, and net debt doubled to ₹266cr in a quarter. The margin guide was cut 6 points, the CFO left, ICRA moved its outlook to negative, and related-party purchases doubled to ₹132cr. The price needs about {need:Oswal Pumps|5}% a year, but I expect roughly none from today's profit. On 10 Oct 2026 it proposed a ₹456cr cell plant for April 2028, two-thirds of it on new debt, on top of a balance sheet that has already turned to net debt; it stays pass.",
             watch: 'Receivables below 200 days in Q3, or a rating downgrade after ICRA’s negative outlook; Q2 revenue +10–15% as guided; the ₹297.5cr Telangana schools rooftop order (about 14% of a year’s sales) built within its 180 days and paid on time; related-party purchases in FY27.',
         },
     ],
