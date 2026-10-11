@@ -55,7 +55,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'Jash Engineering',
-        inShort: ["**Makes water-control gates, screens and valves** for sewage, water-supply, flood-defence and desalination projects, with plants in India and subsidiaries in the US (Rodney Hunt), UK and Austria.", "**Good:** about two-thirds of the Indian gate market, a ₹932cr order book and almost no net debt. **Watch:** US tariffs (FY26 revenue was flat and the US arm, Rodney Hunt, lost money), Gulf shipping problems, and an acquired unit (Jash Process) that lost ₹150–200cr of bids.", "**Verdict: follow.** A niche leader using a protected home market to build abroad, run by candid management; the price asks a little more than I expect, and Q1's profit was essentially a US tariff refund."],
+        inShort: ["**Makes water-control gates, screens and valves** for sewage, water-supply, flood-defence and desalination projects, with plants in India and subsidiaries in the US (Rodney Hunt), UK and Austria.", "**Good:** about two-thirds of the Indian gate market, a ₹944cr order book at September 2026 and almost no net debt. **Watch:** US tariffs (FY26 revenue was flat and the US arm, Rodney Hunt, lost money), Gulf shipping problems, and an acquired unit (Jash Process) that lost ₹150–200cr of bids.", "**Verdict: follow.** A niche leader using a protected home market to build abroad, run by candid management; the price asks a little more than I expect, and Q1's profit was essentially a US tariff refund."],
         tagline: "A global niche maker of water-control gates, screens and related equipment for municipal and industrial water systems.",
         revenue: '₹736cr (FY26, consolidated)',
         products: [
@@ -86,7 +86,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'DEE Development',
-        inShort: ["**Makes high-pressure piping systems**: ready-to-install pipe spools, bends and fittings for power stations, refineries and gas-turbine plants, from plants in India and Thailand.", "**Good:** hard-won approvals with GE, Siemens and Nooter/Eriksen, a ₹2,428cr order book, and margins up from 9% to 17% as the new plant fills. **Bad:** ₹687cr of net debt at March on Screener (₹718cr at June on the company's count), working capital of 263 days, ₹447cr of free cash burned over two years, an auditor's qualified opinion for a second year, and heavy reliance on thermal power.", "**Verdict: follow.** The business is improving, but I want to see debt and working capital come down and the audit qualification cleared first."],
+        inShort: ["**Makes high-pressure piping systems**: ready-to-install pipe spools, bends and fittings for power stations, refineries and gas-turbine plants, from plants in India and Thailand.", "**Good:** hard-won approvals with GE, Siemens and Nooter/Eriksen, a ₹2,531cr order book at 30 September 2026, and margins up from 9% to 17% as the new plant fills. **Bad:** ₹687cr of net debt at March on Screener (₹718cr at June on the company's count), working capital of 263 days, ₹447cr of free cash burned over two years, an auditor's qualified opinion for a second year, and heavy reliance on thermal power.", "**Verdict: follow.** The business is improving, but I want to see debt and working capital come down and the audit qualification cleared first."],
         tagline: "India's largest process-piping maker by installed capacity, supplying power, oil and gas, and process plants at home and abroad.",
         revenue: '₹1,142cr (FY26, consolidated)',
         products: [
@@ -95,7 +95,7 @@ const profiles: BusinessProfile[] = [
             { name: 'Seamless pipes', text: "A new plant making thick-walled P91/P92 alloy pipes for 660–800 MW coal boilers, planned as half for its own use and half for sale." },
             { name: 'Heavy fabrication and non-core power', text: "Wind towers and industrial structures, plus a biomass power plant in Punjab with a new 72,000-tonne pellet plant, targeting about ₹80cr of FY27 revenue." },
         ],
-        revenueText: "The company does not give a revenue split by industry each quarter. **Piping and fabrication are the large majority**; non-core biomass power is targeted at about ₹80cr in FY27. Exports have historically been **more than half** of the business and should be about 50% this year. In the ₹2,428cr order book, **Indian HRSG work is about ₹400cr and Thailand about ₹200cr**; the rest is oil and gas or coal-boiler work.",
+        revenueText: "The company does not give a revenue split by industry each quarter. **Piping and fabrication are the large majority**; non-core biomass power is targeted at about ₹80cr in FY27. Exports have historically been **more than half** of the business and should be about 50% this year. In the ₹2,428cr order book at June, **Indian HRSG work is about ₹400cr and Thailand about ₹200cr**; the rest is oil and gas or coal-boiler work.",
         mixes: [
             { caption: 'Order book by type, June 2026 (management, approximate)', parts: [{ label: 'Oil and gas, and coal boilers', share: 76 }, { label: 'HRSG piping, India', share: 16 }, { label: 'Thailand', share: 8 }] },
         ],

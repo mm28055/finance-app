@@ -543,13 +543,13 @@ export const industrialsHeavy: SectorOverview = {
         {
             company: 'Jash Engineering', rank: 1, stance: 'SCALEUP', segment: INFRA,
             what: "Water-control gates, screens, valves and screw pumps for municipal water, sewage and flood defence, with Rodney Hunt in the US, units in the UK and Austria, and Jash Process in India.",
-            view: "**A niche leader using a protected home market to build abroad, slightly dear.** About two-thirds of India's gate market and a ₹932cr book, 69% export, with guidance of ₹875cr and ₹100–105cr of profit kept. But FY26 revenue was flat on US tariffs, Q1 profit was a tariff refund, Rodney Hunt lost money and Jash Process lost ₹150–200cr of orders. The price needs about {need:Jash Engineering|22}% a year against my ~20%.",
+            view: "**A niche leader using a protected home market to build abroad, slightly dear.** About two-thirds of India's gate market and a ₹944cr book at September (69% export at August), with guidance of ₹875cr and ₹100–105cr of profit kept. But FY26 revenue was flat on US tariffs, Q1 profit was a tariff refund, Rodney Hunt lost money and Jash Process lost ₹150–200cr of orders. The price needs about {need:Jash Engineering|22}% a year against my ~20%.",
             watch: 'Rodney Hunt back in profit by Q2–Q3; the Q4 dispatch season delivering ₹875cr; any US tariff change.',
         },
         {
             company: 'DEE Development', rank: 2, stance: 'SCALEUP', segment: CODE,
             what: "High-pressure process piping, bends and fittings for power plants, gas turbines and refineries, from plants in India and Thailand, plus a new seamless-pipe plant and a biomass power arm.",
-            view: "**Approvals, capacity built and a record book, with an audit problem attached.** Revenue +31.6% in Q1, a ₹2,428cr book and ₹2,500cr of revenue targeted for FY29; the ₹300cr share issue should take net debt to about ₹400–425cr by March. But free cash was −₹447cr over two years, the auditor qualified its opinion again over the Malwa power plant, and GE's order is delayed. The price needs about {need:DEE Development|27}% a year against my ~22%.",
+            view: "**Approvals, capacity built and a record book, with an audit problem attached.** Revenue +31.6% in Q1, a ₹2,531cr book at September (₹225cr of orders that month) and ₹2,500cr of revenue targeted for FY29; the ₹300cr share issue should take net debt to about ₹400–425cr by March. But free cash was −₹447cr over two years, the auditor qualified its opinion again over the Malwa power plant, and GE's order is delayed. The price needs about {need:DEE Development|27}% a year against my ~22%.",
             watch: 'A clean audit opinion by Q3 as promised; margin moving toward 19%; net debt at ₹400–425cr by March 2027.',
         },
         {
