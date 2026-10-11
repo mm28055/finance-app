@@ -628,7 +628,7 @@ export const agrochemicalFertilizers: SectorOverview = {
                 },
                 {
                     label: 'Full',
-                    text: "**Dhanuka** (needs about {need:Dhanuka Agritech|11}% a year against my ~8%) and **Punjab Chemicals** (about {need:Punjab Chem. & Corp|13}% against ~10%) each need a few points more than they are delivering. **Paradeep** needs about {need:Paradeep Phosphates|10}% against my ~7%, with profit per tonne guided lower this year. **Krishana** needs about {need:Krishana Phoschem|18}% against my ~12%, and I would not pay even a fair price given its group dealings. **Meghmani** needs about {need:Meghmani Organics|15–16}% against ~10%, on a profit that has just recovered from losses.",
+                    text: "**Dhanuka** (needs about {need:Dhanuka Agritech|11}% a year against my ~8%) and **Punjab Chemicals** (about {need:Punjab Chem. & Corp|13}% against ~10%) need about as much as or more than they are delivering; Dhanuka's fall in price has brought its ask close to my estimate, but its growth has yet to return. **Paradeep** needs about {need:Paradeep Phosphates|10}% against my ~7%, with profit per tonne guided lower this year. **Krishana** needs about {need:Krishana Phoschem|18}% against my ~12%, and I would not pay even a fair price given its group dealings. **Meghmani** needs about {need:Meghmani Organics|15–16}% against ~10%, on a profit that has just recovered from losses.",
                 },
                 {
                     label: 'Stretched',
@@ -689,7 +689,7 @@ export const agrochemicalFertilizers: SectorOverview = {
         {
             company: 'Dhanuka Agritech', rank: 7, stance: 'PRICED', segment: BRANDS,
             what: "Sells branded crop protection to Indian farmers through 6,500 distributors and 80,000 retailers, about half of it from ten Japanese, US and European partners' molecules, and runs a loss-making technicals plant at Dahej.",
-            view: "**Good brands, stalled growth.** Returns of 24–30% and net cash, but revenue has been flat for two years, Q1 sales fell 12.6%, and guidance was cut to low single-digit growth with a margin about two points lower. Dahej guidance has been cut three times, and GST claims of ₹135cr appeared. The price needs about {need:Dhanuka Agritech|11}% a year against my ~8%.",
+            view: "**Good brands, stalled growth.** Returns of 24–30% and net cash, but revenue has been flat for two years, Q1 sales fell 12.6%, and guidance was cut to low single-digit growth with a margin about two points lower. Dahej guidance has been cut three times, and GST claims of ₹135cr appeared. The price needs about {need:Dhanuka Agritech|11}% a year against my ~8%. On 9 Oct 2026 the price moved into the fits band, but I keep it at wait: Q2 is the main season and is not out, growth was cut to low single digits, and old entry-tax demands of ₹55.5cr (FY09–FY15) arrived on 6 October on top of ₹135cr of GST claims.",
             watch: 'Rabi sales and the margin against the ~18% guide; Dahej losses narrowing; the GST classification case.',
         },
         {
