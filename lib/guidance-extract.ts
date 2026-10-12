@@ -162,19 +162,28 @@ export async function extractGuidanceForAnalysis(analysisId: string): Promise<Ex
     );
     const parsed = parseJson((await res.response).text());
     if (!parsed) return null;
+    await saveGuidance(analysis.id, parsed);
+    return parsed;
+}
 
+async function saveGuidance(analysisId: string, g: ExtractedGuidance) {
     await prisma.analysis.update({
-        where: { id: analysis.id },
+        where: { id: analysisId },
         data: {
-            guidanceGrowthMin: parsed.growth_min,
-            guidanceGrowthMax: parsed.growth_max,
-            guidanceFy: parsed.fy,
-            guidanceBasis: parsed.basis,
-            guidanceQuote: parsed.quote
+            guidanceGrowthMin: g.growth_min,
+            guidanceGrowthMax: g.growth_max,
+            guidanceFy: g.fy,
+            guidanceBasis: g.basis,
+            guidanceQuote: g.quote
         }
     });
+}
 
-    return parsed;
+/** Saves guidance read elsewhere (Claude, via scripts/claude-analysis.ts) onto a quarter's analysis. */
+export async function saveGuidanceForQuarter(companyId: string, quarterId: string, g: ExtractedGuidance | null) {
+    if (!g) return;
+    const a = await prisma.analysis.findUnique({ where: { companyId_quarterId: { companyId, quarterId } }, select: { id: true } });
+    if (a) await saveGuidance(a.id, g);
 }
 
 /** Same, addressed by the company + quarter the sync pipeline already holds. */

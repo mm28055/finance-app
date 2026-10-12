@@ -37,7 +37,8 @@ export interface AnalysisResult {
     investibility_score?: number;
 }
 
-export async function analyzeTranscript(transcriptText: string, previousQuarterData?: any, previousTranscriptText?: string): Promise<AnalysisResult> {
+/** The full analysis prompt for a transcript, exactly as the model is given it. */
+export async function buildAnalysisPrompt(transcriptText: string, previousQuarterData?: any, previousTranscriptText?: string): Promise<string> {
     const isDelta = !!previousTranscriptText;
 
     // LOAD PROMPT FROM CONFIG (DB FIRST, FALLBACK TO DEFAULTS)
@@ -213,7 +214,11 @@ Return a JSON object with two keys:
   "investor_brief": "...the full markdown from Output 2..."
 }
 `;
+    return prompt;
+}
 
+export async function analyzeTranscript(transcriptText: string, previousQuarterData?: any, previousTranscriptText?: string): Promise<AnalysisResult> {
+    const prompt = await buildAnalysisPrompt(transcriptText, previousQuarterData, previousTranscriptText);
     try {
         if (!process.env.GOOGLE_AI_KEY) {
             throw new Error("GOOGLE_AI_KEY is missing from environment variables.");
@@ -221,66 +226,7 @@ Return a JSON object with two keys:
 
         const result = await geminiPro.generateContent(prompt);
         const response = await result.response;
-        const text = response.text();
-
-        // Clean markdown if present
-        let jsonStr = text.replace(/```json/g, '').replace(/```/g, '').trim();
-
-        // Extract JSON block if there's extra text around it
-        const jsonMatch = jsonStr.match(/\{[\s\S]*\}/);
-        if (jsonMatch) {
-            jsonStr = jsonMatch[0];
-        }
-
-        const parsed = JSON.parse(jsonStr);
-
-        // Handle new format with investor_brief
-        const structuredData = parsed.structured_data || parsed;
-        const investorBrief = parsed.investor_brief || null;
-
-        const safeFinancials = structuredData.financials || {};
-        const safeGuidance = structuredData.forward_guidance_fy || {};
-
-        // Helper to safely parse numbers or null
-        const parseNum = (v: any): number | null => {
-            if (v === null || v === undefined || v === '-') return null;
-            if (typeof v === 'number') return v;
-            const sub = v.toString().replace(/[^0-9.-]/g, '');
-            if (!sub) return null;
-            const parsed = parseFloat(sub);
-            return isNaN(parsed) ? null : parsed;
-        };
-
-        const parseMetric = (obj: any): FinancialMetric => {
-            if (!obj) return { current_q: null, ytd: null, delta_qoq: null, delta_yoy: null, delta_ytd: null };
-            return {
-                current_q: parseNum(obj.current_q),
-                ytd: parseNum(obj.ytd),
-                delta_qoq: parseNum(obj.delta_qoq),
-                delta_yoy: parseNum(obj.delta_yoy),
-                delta_ytd: parseNum(obj.delta_ytd)
-            };
-        };
-
-        return {
-            financials: {
-                revenue: parseMetric(safeFinancials.revenue),
-                ebitda: parseMetric(safeFinancials.ebitda),
-                ebitda_margin: parseMetric(safeFinancials.ebitda_margin),
-                pat: parseMetric(safeFinancials.pat),
-                order_book: parseNum(safeFinancials.order_book)
-            },
-            forward_guidance_fy: {
-                revenue_target: parseNum(safeGuidance.revenue_target),
-                margin_target: parseNum(safeGuidance.margin_target)
-            },
-            investor_brief: investorBrief,
-            delta_analysis: structuredData.delta_analysis || null,
-            investibility_score: parseNum(structuredData.investibility_score) || undefined,
-            // Legacy / Defaults for safety
-            management_tone: 5
-        };
-
+        return parseAnalysisText(response.text());
     } catch (error: any) {
         console.error("AI Analysis Detail Error:", {
             message: error.message,
@@ -289,4 +235,68 @@ Return a JSON object with two keys:
         });
         throw new Error(`AI Analysis Failed (Structure): ${error.message}`);
     }
+}
+
+/**
+ * The model's answer ({ structured_data, investor_brief }) as an AnalysisResult. Shared by the
+ * Gemini path above and scripts/claude-analysis.ts, which saves answers written by Claude.
+ */
+export function parseAnalysisText(text: string): AnalysisResult {
+    // Clean markdown if present
+    let jsonStr = text.replace(/```json/g, '').replace(/```/g, '').trim();
+
+    // Extract JSON block if there's extra text around it
+    const jsonMatch = jsonStr.match(/\{[\s\S]*\}/);
+    if (jsonMatch) {
+        jsonStr = jsonMatch[0];
+    }
+
+    const parsed = JSON.parse(jsonStr);
+
+    // Handle new format with investor_brief
+    const structuredData = parsed.structured_data || parsed;
+    const investorBrief = parsed.investor_brief || null;
+
+    const safeFinancials = structuredData.financials || {};
+    const safeGuidance = structuredData.forward_guidance_fy || {};
+
+    // Helper to safely parse numbers or null
+    const parseNum = (v: any): number | null => {
+        if (v === null || v === undefined || v === '-') return null;
+        if (typeof v === 'number') return v;
+        const sub = v.toString().replace(/[^0-9.-]/g, '');
+        if (!sub) return null;
+        const parsed = parseFloat(sub);
+        return isNaN(parsed) ? null : parsed;
+    };
+
+    const parseMetric = (obj: any): FinancialMetric => {
+        if (!obj) return { current_q: null, ytd: null, delta_qoq: null, delta_yoy: null, delta_ytd: null };
+        return {
+            current_q: parseNum(obj.current_q),
+            ytd: parseNum(obj.ytd),
+            delta_qoq: parseNum(obj.delta_qoq),
+            delta_yoy: parseNum(obj.delta_yoy),
+            delta_ytd: parseNum(obj.delta_ytd)
+        };
+    };
+
+    return {
+        financials: {
+            revenue: parseMetric(safeFinancials.revenue),
+            ebitda: parseMetric(safeFinancials.ebitda),
+            ebitda_margin: parseMetric(safeFinancials.ebitda_margin),
+            pat: parseMetric(safeFinancials.pat),
+            order_book: parseNum(safeFinancials.order_book)
+        },
+        forward_guidance_fy: {
+            revenue_target: parseNum(safeGuidance.revenue_target),
+            margin_target: parseNum(safeGuidance.margin_target)
+        },
+        investor_brief: investorBrief,
+        delta_analysis: structuredData.delta_analysis || null,
+        investibility_score: parseNum(structuredData.investibility_score) || undefined,
+        // Legacy / Defaults for safety
+        management_tone: 5
+    };
 }

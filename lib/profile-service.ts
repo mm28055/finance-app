@@ -232,15 +232,33 @@ export async function updateCompanyProfile(
     quarterName: string,
     opts: { force?: boolean } = {}
 ): Promise<ProfileUpdateResult> {
+    const built = await buildProfilePrompt(companyId, quarterName, opts);
+    if ('reason' in built) return { updated: false, reason: built.reason };
+
+    const result = await geminiPro.generateContent(built.prompt);
+    const markdown = (result.response.text() || '').trim();
+    const chars = await saveProfile(companyId, quarterName, markdown);
+    return { updated: true, mode: built.mode, chars };
+}
+
+/**
+ * The prompt a profile refresh would send (revise or create), or why there is nothing to do.
+ * Shared with scripts/claude-analysis.ts, which has Claude write the profile instead of Gemini.
+ */
+export async function buildProfilePrompt(
+    companyId: string,
+    quarterName: string,
+    opts: { force?: boolean } = {}
+): Promise<{ prompt: string; mode: ProfileMode } | { reason: string }> {
     const company = await prisma.company.findUnique({
         where: { id: companyId },
         select: { id: true, name: true, ticker: true, businessProfile: true, profileQuarter: true }
     });
 
-    if (!company) return { updated: false, reason: 'company not found' };
+    if (!company) return { reason: 'company not found' };
 
     if (!opts.force && company.profileQuarter === quarterName) {
-        return { updated: false, reason: `already current for ${quarterName}` };
+        return { reason: `already current for ${quarterName}` };
     }
 
     // Newest-first, by quarter — NOT by createdAt, which reorders whenever an
@@ -257,7 +275,7 @@ export async function updateCompanyProfile(
 
     const target = transcripts.find(t => t.quarter.name === quarterName);
     if (!target?.rawText) {
-        return { updated: false, reason: `no transcript text for ${quarterName}` };
+        return { reason: `no transcript text for ${quarterName}` };
     }
 
     const existing = (company.businessProfile || '').trim();
@@ -300,9 +318,12 @@ export async function updateCompanyProfile(
         });
     }
 
-    const result = await geminiPro.generateContent(prompt);
-    const markdown = (result.response.text() || '').trim();
+    return { prompt, mode };
+}
 
+/** Stores a written profile, stamped with its quarter. Returns its length. */
+export async function saveProfile(companyId: string, quarterName: string, markdown: string): Promise<number> {
+    markdown = markdown.trim();
     // A truncated or empty response must never replace a good profile.
     if (markdown.length < 500) {
         throw new Error(`profile response too short (${markdown.length} chars) — keeping existing profile`);
@@ -317,5 +338,5 @@ export async function updateCompanyProfile(
         }
     });
 
-    return { updated: true, mode, chars: markdown.length };
+    return markdown.length;
 }

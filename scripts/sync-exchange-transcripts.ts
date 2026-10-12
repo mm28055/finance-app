@@ -8,6 +8,8 @@
  *   npx tsx scripts/sync-exchange-transcripts.ts --limit=2              (store at most 2 documents)
  *   --no-prune   skip the rolling-window cleanup after storing (for test runs
  *                that must not touch existing rows; the next normal run prunes)
+ *   --store-only store the transcripts but leave analysis and profile for
+ *                scripts/claude-analysis.ts (calls read by Claude, not Gemini)
  *
  * Sources:
  *   nse       NSE's corporate-announcements feed: our companies' filings whose
@@ -337,6 +339,7 @@ async function main() {
     const measure = process.argv.includes('--measure');
     const dryRun = measure || process.argv.includes('--dry-run');
     const noPrune = process.argv.includes('--no-prune');
+    const storeOnly = process.argv.includes('--store-only');
     const verbose = process.argv.includes('--verbose'); // adds the source file to each line
     const source = (arg('source') || 'both').toLowerCase();
     const limit = arg('limit') ? parseInt(arg('limit')!, 10) : Infinity;
@@ -443,7 +446,7 @@ async function main() {
         if (earlier) { log(d, TYPE_LABEL[type], earlier.slot, 'skipped (same as an earlier filing in this run)', extra); return; }
         if (same) {
             // A row this feed stored earlier whose analysis did not finish is retried.
-            if (!same.hasAnalysis && same.filePath === d.url && !dryRun) {
+            if (!same.hasAnalysis && same.filePath === d.url && !dryRun && !storeOnly) {
                 const r = await processTranscript(same.id);
                 log(d, TYPE_LABEL[type], same.quarter.name, r?.success ? 'analysis retried' : `analysis retry failed (${(r as any)?.error})`, extra);
             } else {
@@ -495,6 +498,7 @@ async function main() {
                 },
             });
             stored++;
+            if (storeOnly) { log(d, typeLabel, slot, 'stored (analysis left for scripts/claude-analysis.ts)', extra); return; }
             const r = await processTranscript(id);
             if (!r?.success) { log(d, typeLabel, slot, `stored, analysis failed (${(r as any)?.error})`, extra); return; }
             if (!noPrune) await pruneCompany(prisma, d.co.id, {

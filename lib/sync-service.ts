@@ -1,5 +1,6 @@
 import { prisma } from './prisma';
-import { analyzeTranscript } from './ai-analyst';
+import { analyzeTranscript, buildAnalysisPrompt, type AnalysisResult } from './ai-analyst';
+import type { ExtractedGuidance } from './guidance-extract';
 import fs from 'fs';
 import { GENERAL_Q } from './retention';
 import SCREENER_OVERRIDES from './screener-overrides.json';
@@ -271,7 +272,16 @@ export async function fetchScreenerQuarterly(isin: string | null, ticker: string
 
 // ────────────────────────────────────────────────────────────────────────────
 
-export async function processTranscript(transcriptId: string) {
+export interface ProcessOptions {
+    /** Only build the analysis prompt (with the previous quarter's context) and return it; save nothing. */
+    promptOnly?: boolean;
+    /** An answer already written elsewhere (Claude, via scripts/claude-analysis.ts): saved instead of calling Gemini. */
+    aiResult?: AnalysisResult;
+    /** Guidance already read from that answer; saved instead of the Gemini Flash read. */
+    guidance?: ExtractedGuidance | null;
+}
+
+export async function processTranscript(transcriptId: string, opts: ProcessOptions = {}) {
     console.log(`[SyncService] Starting processing for transcript: ${transcriptId}`);
 
     const transcript = await prisma.transcript.findUnique({
@@ -394,8 +404,11 @@ export async function processTranscript(transcriptId: string) {
     }
 
     // 3. Run AI Analysis
-    console.log(`  -> Running Gemini analysis for ${transcript.company.name}...`);
-    const aiResult = await analyzeTranscript(textToAnalyze, prevData, prevTranscriptText);
+    if (opts.promptOnly) {
+        return { success: true, status: 'PROMPT', prompt: await buildAnalysisPrompt(textToAnalyze, prevData, prevTranscriptText) };
+    }
+    if (!opts.aiResult) console.log(`  -> Running Gemini analysis for ${transcript.company.name}...`);
+    const aiResult = opts.aiResult ?? await analyzeTranscript(textToAnalyze, prevData, prevTranscriptText);
 
     // 4. Save Results
     const parseNum = (val: any): number => {
@@ -544,8 +557,9 @@ export async function processTranscript(transcriptId: string) {
     // been saved, and a guidance read that fails must not fail the sync. The
     // company simply shows no guidance until the next run picks it up.
     try {
-        const { extractGuidanceForQuarter } = await import('./guidance-extract');
-        await extractGuidanceForQuarter(transcript.companyId, transcript.quarterId);
+        const { extractGuidanceForQuarter, saveGuidanceForQuarter } = await import('./guidance-extract');
+        if (opts.guidance !== undefined) await saveGuidanceForQuarter(transcript.companyId, transcript.quarterId, opts.guidance);
+        else await extractGuidanceForQuarter(transcript.companyId, transcript.quarterId);
     } catch (e: any) {
         console.error(`[SyncService] Guidance extraction failed: ${e.message}`);
     }
