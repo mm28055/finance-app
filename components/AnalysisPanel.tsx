@@ -193,6 +193,7 @@ export function AnalysisPanel({
                                         p: ({ node, ...props }) => <p className="mb-4 text-gray-800 leading-relaxed" {...props} />,
                                         // Lists: Gold bullets
                                         ul: ({ node, ...props }) => <ul className="list-disc pl-5 mb-4 space-y-2 marker:text-[#C9A84C]" {...props} />,
+                                        ol: ({ node, ...props }) => <ol className="list-decimal pl-5 mb-4 space-y-2 marker:text-[#C9A84C]" {...props} />,
                                         li: ({ node, ...props }) => <li className="text-gray-800 pl-1" {...props} />,
                                         // Strong: Deep brown/black
                                         strong: ({ node, ...props }) => <strong className="font-bold text-gray-900" {...props} />,
@@ -249,6 +250,7 @@ export function AnalysisPanel({
                                                 ),
                                                 p: ({ node, ...props }) => <p className="mb-3 text-gray-700 leading-normal" {...props} />,
                                                 ul: ({ node, ...props }) => <ul className="list-disc pl-5 mb-3 space-y-1.5 marker:text-[#64748b]" {...props} />,
+                                                ol: ({ node, ...props }) => <ol className="list-decimal pl-5 mb-3 space-y-1.5 marker:text-[#64748b]" {...props} />,
                                                 li: ({ node, ...props }) => <li className="text-gray-700" {...props} />,
                                                 strong: ({ node, ...props }) => <strong className="font-semibold text-gray-900" {...props} />,
                                                 blockquote: ({ node, ...props }) => (
@@ -335,6 +337,7 @@ export function AnalysisPanel({
                                             ),
                                             p: ({ node, ...props }) => <p className="mb-3 text-gray-700 leading-normal" {...props} />,
                                             ul: ({ node, ...props }) => <ul className="list-disc pl-5 mb-3 space-y-1.5 marker:text-[#64748b]" {...props} />,
+                                            ol: ({ node, ...props }) => <ol className="list-decimal pl-5 mb-3 space-y-1.5 marker:text-[#64748b]" {...props} />,
                                             li: ({ node, ...props }) => <li className="text-gray-700" {...props} />,
                                             strong: ({ node, ...props }) => <strong className="font-semibold text-gray-900" {...props} />,
                                             blockquote: ({ node, ...props }) => (
