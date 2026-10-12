@@ -1,6 +1,105 @@
 {
  "changes": [
   {
+   "date": "2026-10-13",
+   "company": "Caplin Point Labs",
+   "sector": "Pharma",
+   "from": "follow",
+   "to": "own",
+   "price": 2419.8,
+   "why": "The steadiest margins in the sector, and since 9 Oct 2026 a price that fits (about {need:Caplin Point Labs|17}% needed against my ~16%), with about 80% of five years' profit arriving as cash; returns are falling and receivables rising, so watch debtor days in Q2."
+  },
+  {
+   "date": "2026-10-13",
+   "company": "Technocraft Industries",
+   "sector": "Iron and Steel",
+   "from": null,
+   "to": "follow",
+   "price": 2668.1,
+   "why": "The price fits and drum closures earn about 40% on sales with a third of the world market, but Q1 profit was lifted by the weak rupee and investment gains, textiles earn nothing and the cash cycle is 306 days."
+  },
+  {
+   "date": "2026-10-13",
+   "company": "Goodluck India",
+   "sector": "Iron and Steel",
+   "from": null,
+   "to": "wait",
+   "price": 566.35,
+   "why": "Defence shells lifted profit 68% and the price fits, but free cash has been negative four years, ₹219cr of bills are discounted and the swap ratio for folding in the defence subsidiary is not yet known."
+  },
+  {
+   "date": "2026-10-13",
+   "company": "Shivalik Bimetal",
+   "sector": "Iron and Steel",
+   "from": null,
+   "to": "wait",
+   "price": 1100.7,
+   "why": "A genuine niche with a 23-24% margin and net cash, but the core grew only 13% in Q1, the CFO is leaving, one customer is 17.5% of sales and the price needs about {need:Shivalik Bimetal|26}% a year."
+  },
+  {
+   "date": "2026-10-13",
+   "company": "Usha Martin",
+   "sector": "Iron and Steel",
+   "from": null,
+   "to": "follow",
+   "price": 483.15,
+   "why": "India's dominant wire-rope maker with a 20% margin, net cash and an upgrade, but volumes have been flat for a year and the ED and CBI cases sit in the auditor's report."
+  },
+  {
+   "date": "2026-10-13",
+   "company": "Vardhman Special Steels",
+   "sector": "Iron and Steel",
+   "from": null,
+   "to": "follow",
+   "price": 377.95,
+   "why": "Well run with Aichi Steel behind it and net cash, but volume is capped at 7-8% a year until an environmental approval arrives and a large equity raise is coming."
+  },
+  {
+   "date": "2026-10-13",
+   "company": "Bharat Wire Ropes",
+   "sector": "Iron and Steel",
+   "from": null,
+   "to": "wait",
+   "price": 162.82,
+   "why": "Debt is down and the price looks low, but sales have been flat for three years, a third of operating profit is state subsidy, half the promoter stake is pledged and ₹383cr of lender preference shares can convert into equity."
+  },
+  {
+   "date": "2026-10-13",
+   "company": "Maharashtra Seamless",
+   "sector": "Iron and Steel",
+   "from": null,
+   "to": "follow",
+   "price": 606.75,
+   "why": "Cheap, with net cash about half its market value and 55% of Indian seamless pipe, but treasury income is 41% of pre-tax profit, the anti-dumping duty is up for renewal and a demerger leaves the cash split unclear."
+  },
+  {
+   "date": "2026-10-13",
+   "company": "Ratnamani Metals",
+   "sector": "Iron and Steel",
+   "from": null,
+   "to": "wait",
+   "price": 2547.1,
+   "why": "A top-quality stainless tube maker with net cash and a record spool order, but the standalone business fell 30% in Q1, the Saudi plant slipped a year and the price needs far more growth than I expect."
+  },
+  {
+   "date": "2026-10-13",
+   "company": "Welspun Specialty",
+   "sector": "Iron and Steel",
+   "from": null,
+   "to": "pass",
+   "price": 49.1,
+   "why": "Rare extrusion approvals, but a 5% margin, Q1 volume down about 23% and ₹23cr of yearly profit against a price that needs about {need:Welspun Specialty|35}% a year."
+  },
+  {
+   "date": "2026-10-13",
+   "company": "Ratnaveer Precision",
+   "sector": "Iron and Steel",
+   "from": null,
+   "to": "avoid",
+   "price": 331.65,
+   "why": "Capitalised in-house dies and tools equal to about half of FY26 operating profit, negative free cash every year, equity raised every year and a ₹650cr bet on circuit-board laminate it has never made."
+  },
+  {
    "date": "2026-10-04",
    "company": "Chembond Chemicals",
    "sector": "Chemicals",

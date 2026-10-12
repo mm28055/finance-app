@@ -1,5 +1,5 @@
 {
- "date": "2026-10-11",
+ "date": "2026-10-13",
  "calls": {
   "Anthem Biosciences": {
    "call": "follow",
@@ -1789,7 +1789,35 @@
    "call": "follow",
    "sector": "Iron and Steel"
   },
+  "Technocraft Industries": {
+   "call": "follow",
+   "sector": "Iron and Steel"
+  },
+  "Goodluck India": {
+   "call": "wait",
+   "sector": "Iron and Steel"
+  },
+  "Shivalik Bimetal": {
+   "call": "wait",
+   "sector": "Iron and Steel"
+  },
+  "Usha Martin": {
+   "call": "follow",
+   "sector": "Iron and Steel"
+  },
+  "Vardhman Special Steels": {
+   "call": "follow",
+   "sector": "Iron and Steel"
+  },
+  "Bharat Wire Ropes": {
+   "call": "wait",
+   "sector": "Iron and Steel"
+  },
   "Man Industries (I)": {
+   "call": "follow",
+   "sector": "Iron and Steel"
+  },
+  "Maharashtra Seamless": {
    "call": "follow",
    "sector": "Iron and Steel"
   },
@@ -1797,7 +1825,11 @@
    "call": "wait",
    "sector": "Iron and Steel"
   },
-  "Aeroflex Industries": {
+  "Ratnamani Metals": {
+   "call": "wait",
+   "sector": "Iron and Steel"
+  },
+  "Scoda Tubes": {
    "call": "wait",
    "sector": "Iron and Steel"
   },
@@ -1805,8 +1837,16 @@
    "call": "wait",
    "sector": "Iron and Steel"
   },
-  "Scoda Tubes": {
+  "Aeroflex Industries": {
    "call": "wait",
+   "sector": "Iron and Steel"
+  },
+  "Welspun Specialty": {
+   "call": "pass",
+   "sector": "Iron and Steel"
+  },
+  "Ratnaveer Precision": {
+   "call": "avoid",
    "sector": "Iron and Steel"
   },
   "Kalpataru Proj.": {
@@ -1950,7 +1990,7 @@
    "sector": "Pharma"
   },
   "Caplin Point Labs": {
-   "call": "follow",
+   "call": "own",
    "sector": "Pharma"
   },
   "Granules India": {
