@@ -124,7 +124,7 @@ Rate the company based on your expert judgment of the quarter.
 
 ---
 **OUTPUT 2: INVESTOR BRIEF (Rich Markdown)**
-Write a COMPREHENSIVE INVESTOR BRIEF (MAX 600 words) using the following EXACT structure. Use tight, professional language. 
+Write a COMPREHENSIVE INVESTOR BRIEF (MAX 1,200 words) using the following EXACT structure. Use tight, professional language. 
 
 Use bullet points extensively for metrics, targets, and key findings to ensure high scannability (as requested by the user). Lead with the most important data in each section. Do NOT use icons in section headers.
 

@@ -15,6 +15,9 @@
  *       Saves every answer found exactly as a Gemini answer would be saved (Screener figures,
  *       YoY, guidance, chat index), then the profiles.
  *
+ * --redo (on both steps) rewrites calls that already have an analysis: export includes them and
+ * import replaces their analysis. Profiles are left alone on a redo.
+ *
  * Store the transcripts first without analysis:
  *   npx tsx scripts/sync-exchange-transcripts.ts --only="..." --store-only --no-prune
  */
@@ -30,6 +33,7 @@ import { GENERAL_Q, quarterScore } from '../lib/quarters';
 
 const arg = (k: string) => process.argv.find(a => a.startsWith(`--${k}=`))?.split('=').slice(1).join('=');
 const dir = arg('dir');
+const redo = process.argv.includes('--redo');
 if (!dir) throw new Error('--dir=<folder> is required');
 
 interface Item { kind: 'analysis' | 'profile'; id: string; company: string; quarter: string; prompt: string; answer: string }
@@ -65,15 +69,15 @@ async function exportPrompts() {
         });
         ts.sort((a, b) => quarterScore(a.quarter.name) - quarterScore(b.quarter.name));
         const lastYear = await lastYearRevenue(co.id);
-        for (const t of ts.filter(t => !t.hasAnalysis)) {
-            const r: any = await processTranscript(t.id, { promptOnly: true });
+        for (const t of ts.filter(t => redo || !t.hasAnalysis)) {
+            const r: any = await processTranscript(t.id, { promptOnly: true, ignoreExisting: redo });
             if (!r?.prompt) { console.log(`${name} ${t.quarter.name}: no prompt (${r?.error || r?.status})`); continue; }
             const prompt = `${t.id}.prompt.md`;
             fs.writeFileSync(path.join(dir!, prompt), r.prompt + GUIDANCE_ADDENDUM(co.name.trim(), t.quarter.name, lastYear));
             items.push({ kind: 'analysis', id: t.id, company: co.name, quarter: t.quarter.name, prompt, answer: `${t.id}.answer.json` });
         }
         const newest = ts[ts.length - 1];
-        if (newest) {
+        if (newest && !redo) {
             const p = await buildProfilePrompt(co.id, newest.quarter.name);
             if ('reason' in p) console.log(`${name}: no profile prompt (${p.reason})`);
             else {
@@ -99,7 +103,7 @@ async function importAnswers() {
             if (!aiResult.investor_brief) throw new Error('answer has no investor_brief');
             const raw = JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
             const guidance = raw.guidance ? parseGuidanceJson(JSON.stringify(raw.guidance)) : null;
-            const r: any = await processTranscript(i.id, { aiResult, guidance });
+            const r: any = await processTranscript(i.id, { aiResult, guidance, ignoreExisting: redo });
             console.log(`${i.company} | ${i.quarter} | ${r?.status === 'SKIPPED_EXISTING' ? 'already analysed' : r?.success ? 'saved' : `failed (${r?.error})`}`);
         } catch (e: any) {
             console.log(`${i.company} | ${i.quarter} | failed (${e.message})`);

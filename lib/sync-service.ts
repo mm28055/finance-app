@@ -279,6 +279,8 @@ export interface ProcessOptions {
     aiResult?: AnalysisResult;
     /** Guidance already read from that answer; saved instead of the Gemini Flash read. */
     guidance?: ExtractedGuidance | null;
+    /** Analyse even when an analysis exists (a deliberate rewrite); it is replaced. */
+    ignoreExisting?: boolean;
 }
 
 export async function processTranscript(transcriptId: string, opts: ProcessOptions = {}) {
@@ -294,7 +296,7 @@ export async function processTranscript(transcriptId: string, opts: ProcessOptio
     }
 
     // OPTIMIZATION: If analysis exists, don't re-burn tokens.
-    if (transcript.hasAnalysis) {
+    if (transcript.hasAnalysis && !opts.ignoreExisting) {
         console.log(`  -> [Skipped] Analysis already exists for ${transcript.company.name}.`);
         return { success: true, status: 'SKIPPED_EXISTING' };
     }
