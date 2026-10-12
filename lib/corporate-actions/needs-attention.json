@@ -1100,5 +1100,63 @@
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
     "addedOn": "2026-10-09",
     "handled": "2026-10-11: Moved follow → own: the price fits (needs ~17.1% vs my ~16%; still fits on profit without treasury income once net cash is counted), five-year operating cash is about 80% of profit, and no filing since the Q1 call weakens the case (AGM routine; the exchange's volume queries answered 'market driven'). Stance COMPOUNDER, rank 2 above Zydus; section 1, valuation bands, card and closing lines updated."
+  },
+  {
+    "company": "Thyrocare Technologies",
+    "sector": "Healthcare Diagnostic",
+    "exDate": null,
+    "subject": "Shareholding Sep 2026",
+    "why": "Promoter holding fell 9.9 pts (60.9% in Jun 2026 → 51% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-10-12"
+  },
+  {
+    "company": "Ratnaveer Precision",
+    "sector": "Iron and Steel",
+    "exDate": null,
+    "subject": "Shareholding Sep 2026",
+    "why": "Promoter holding fell 6.8 pts (45.5% in Jun 2026 → 38.7% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-10-12"
+  },
+  {
+    "company": "Dr Agarwal's Health Care",
+    "sector": "Hospitals",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Hyperion Investments Pte. Ltd. (FII) cut its stake from 23.09% to 15.47%; Claymore Investments (Mauritius) Pte. Ltd (FII) cut its stake from 10.19% to 5.17%; Invesco India Flexi Cap Fund (DII) raised its stake from 3.02% to 5.52%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-12"
+  },
+  {
+    "company": "Nephrocare Health",
+    "sector": "Healthcare",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Polar Capital Funds Plc - Healthcare Opportunities (FII) raised its stake from 5.76% to 8.28%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-12"
+  },
+  {
+    "company": "Updater Services",
+    "sector": "Commercial Services",
+    "subject": "Big holder change: Sep 2026",
+    "why": "SIS Limited (public holder) raised its stake from 4.88% to 10%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-12"
+  },
+  {
+    "company": "Man Infra",
+    "sector": "Construction",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-12"
+  },
+  {
+    "company": "Entero",
+    "sector": "Retail",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-12"
+  },
+  {
+    "company": "Q-Line Biotech",
+    "sector": "Pharma Others",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-12"
   }
 ]
