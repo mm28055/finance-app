@@ -1,4 +1,83 @@
 {
- "updated": "2026-10-12T22:47:12.283Z",
- "results": []
+ "updated": "2026-10-13T21:09:17.263Z",
+ "results": [
+  {
+   "company": "Transformers & Rect",
+   "sector": "Electrical Transformers",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-13",
+   "readOn": "2026-10-14",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 739,
+     "yearAgo": 460,
+     "prev": 572,
+     "yoy": 60.7,
+     "qoq": 29.2
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 129,
+     "yearAgo": 52,
+     "prev": 93,
+     "yoy": 148.1,
+     "qoq": 38.7
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 17,
+     "yearAgo": 11,
+     "prev": 16,
+     "yoy": 6,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 81,
+     "yearAgo": 37,
+     "prev": 64,
+     "yoy": 118.9,
+     "qoq": 26.6
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "text": "Revenue surged 60.7% from a year ago to ₹739cr, while operating profit jumped 148.1% to ₹129cr. The operating margin expanded by 6 percentage points to 17%. This strong execution puts the company well ahead of its 25% full-year revenue growth guidance, even though quarterly revenue fell just short of the ₹750cr watch-list target.",
+    "checks": [
+     {
+      "text": "Positive operating cash in H1 FY27",
+      "status": "unclear",
+      "why": "cash flow figures not provided"
+     },
+     {
+      "text": "Quarterly revenue above ₹750cr",
+      "status": "missed",
+      "why": "Q2 revenue was ₹739cr"
+     },
+     {
+      "text": "Copper-conductor plant starting in Q2",
+      "status": "unclear",
+      "why": "needs the earnings call"
+     },
+     {
+      "text": "Conductor plant commissioned",
+      "status": "unclear",
+      "why": "needs the earnings call"
+     }
+    ],
+    "on": "2026-10-14"
+   }
+  }
+ ]
 }
