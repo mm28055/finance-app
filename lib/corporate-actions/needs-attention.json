@@ -1158,5 +1158,49 @@
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
     "addedOn": "2026-10-12"
+  },
+  {
+    "company": "Xtranet Technologies",
+    "sector": "Software",
+    "exDate": null,
+    "subject": "Shareholding Sep 2026",
+    "why": "Promoter holding fell 21 pts (83.6% in Jul 2026 → 62.6% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-10-13"
+  },
+  {
+    "company": "Nephrocare Health",
+    "sector": "Healthcare",
+    "exDate": null,
+    "subject": "Shareholding Sep 2026",
+    "why": "Promoter holding fell 5.5 pts (63.9% in Jun 2026 → 58.3% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-10-13"
+  },
+  {
+    "company": "Shyam Metalics",
+    "sector": "Iron and Steel",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Authum Investment And Infrastructure Limited (DII) cut its stake from 4.55% to 2.39%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-13"
+  },
+  {
+    "company": "Virtuoso Optoelectro",
+    "sector": "EMS & Electronics",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Malabar India Fund Ltd (FII) raised its stake from 7.91% to 13.59%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-13"
+  },
+  {
+    "company": "Crizac",
+    "sector": "Retail",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-13"
+  },
+  {
+    "company": "Laser Power & Infra",
+    "sector": "Cables",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-13"
   }
 ]
