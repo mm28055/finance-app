@@ -24371,8 +24371,12 @@
    "text": "Commercial production of bromine and vacuum salt",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "ghcl-bromine-vacsalt"
+   "status": "partly",
+   "project": "ghcl-bromine-vacsalt",
+   "actual": "Bromine commercial production began 12 Oct 2026, about two weeks after Q2 ended; vacuum salt not yet filed",
+   "resolvedOn": "2026-10-14",
+   "resolvedBy": "review",
+   "outcome": "Stays own; slight slip, revenue still expected from Q4 FY27"
   },
   {
    "id": "ghcl-bromine-vacsalt-m2",
@@ -32651,6 +32655,16 @@
    "createdOn": "2026-10-11",
    "status": "pending",
    "project": "oswal-pumps-cell-plant"
+  },
+  {
+   "id": "sjs-enterprises-walter-pack-pune-m1",
+   "company": "SJS Enterprises",
+   "sector": "Auto Related",
+   "text": "Walter Pack's new Pune plant in commercial operation and the three old plants moved into it",
+   "due": "Q1 FY28",
+   "createdOn": "2026-10-14",
+   "status": "pending",
+   "project": "sjs-enterprises-walter-pack-pune"
   }
  ]
 }

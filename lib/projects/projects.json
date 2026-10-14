@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11",
+ "updated": "2026-10-14",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -522,10 +522,11 @@
    "company": "GSFC",
    "sector": "Agrochemical & Fertilizers",
    "name": "Phosphoric and sulphuric acid project (Sikka)",
-   "what": "New phosphoric and sulphuric acid plants to strengthen integration; tender received",
+   "what": "New 600 t-a-day phosphoric acid and 1,800 t-a-day sulphuric acid plants with offsites and utilities at Sikka, for backward integration (board approved 13 Oct 2026)",
    "status": "planned",
-   "source": "Q1 FY27 call (Aug 2026); cost and dates not given",
-   "updatedOn": "2026-09-29"
+   "source": "NSE filing 13 Oct 2026 (board approval); cost to be disclosed at commissioning",
+   "updatedOn": "2026-10-14",
+   "capacityAdd": "600 t a day phosphoric acid and 1,800 t a day sulphuric acid"
   },
   {
    "id": "gsfc-dahej",
@@ -1725,14 +1726,20 @@
    "id": "sjs-enterprises-displays",
    "company": "SJS Enterprises",
    "sector": "Auto Related",
-   "name": "Display and cover-glass plant, Hosur",
-   "what": "Car display assembly and cover glass under an exclusive four-wheeler BOE Varitronix licence; building ready, equipment ordered; no orders yet",
+   "name": "Display and cover-glass plant, Koregaon Bhima (Pune)",
+   "what": "Car display assembly and cover glass under an exclusive four-wheeler BOE Varitronix licence, in a 60,000 sq ft build-to-suit leased building run by subsidiary SJS Display Electronics; no orders yet",
    "cost": "about ₹65cr",
    "expectedStart": "Q2 FY28",
    "adds": "target 10% of a ₹5,000–7,000cr car-display market by 2030",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026): sales from Q2 of next year",
-   "updatedOn": "2026-09-29"
+   "source": "NSE filing 11 Oct 2026: sub-lease signed at Koregaon Bhima, Pune; ~₹65cr plant and machinery plus ~₹16cr lease; operations by September 2027; internal accruals/debt",
+   "updatedOn": "2026-10-14",
+   "revisions": [
+    {
+     "on": "2026-10-14",
+     "text": "Filing places the plant at Koregaon Bhima, Pune (the Q1 call had said Hosur); cost now ~₹81cr including ₹16cr of leased building; start September 2027, unchanged at Q2 FY28"
+    }
+   ]
   },
   {
    "id": "sjs-enterprises-bangalore",
@@ -2615,10 +2622,16 @@
    "cost": "₹330cr",
    "expectedStart": "Q2 FY27",
    "adds": "₹150–170cr of revenue at 40–45% margins at full use in FY28",
-   "status": "building",
-   "source": "Q1 FY27 call (3 Aug 2026): commercial output in Q2 FY27 (was due Q1), full use by about Q4 FY27",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "2,800 t bromine and 1.7 lakh t vacuum salt (new); ₹150–170cr of revenue at full use in FY28"
+   "status": "started",
+   "source": "NSE filing 12 Oct 2026: commercial production of liquid bromine (2,800 t a year) began at Rajula; vacuum salt not yet announced",
+   "updatedOn": "2026-10-14",
+   "capacityAdd": "2,800 t bromine and 1.7 lakh t vacuum salt (new); ₹150–170cr of revenue at full use in FY28",
+   "revisions": [
+    {
+     "on": "2026-10-14",
+     "text": "Bromine commercial production began on 12 Oct 2026, just after the Q2 FY27 date; vacuum-salt start not yet filed"
+    }
+   ]
   },
   {
    "id": "ghcl-kutch-greenfield",
@@ -13417,6 +13430,20 @@
    "source": "Company filings and press release, 10 Oct 2026",
    "updatedOn": "2026-10-11",
    "capacityAdd": "+1.2 GW of cells (none today)"
+  },
+  {
+   "id": "sjs-enterprises-walter-pack-pune",
+   "company": "SJS Enterprises",
+   "sector": "Auto Related",
+   "name": "Walter Pack consolidation plant, Koregaon Bhima (Pune)",
+   "what": "A new 1,27,359 sq ft leased facility that replaces Walter Pack's three Ranjangaon plants (64,273 sq ft, 75% used), roughly doubling its floor space",
+   "cost": "₹49cr (₹15cr relocation and basic infrastructure, ₹34cr leased building)",
+   "expectedStart": "Q1 FY28",
+   "adds": "About 63,000 sq ft of extra floor space for in-mould decoration",
+   "status": "planned",
+   "source": "NSE filing 11 Oct 2026: sub-lease signed; commercial operations by May 2027; internal accruals/debt",
+   "updatedOn": "2026-10-14",
+   "capacityAdd": "Floor space from 64,273 to 1,27,359 sq ft"
   }
  ]
 }
