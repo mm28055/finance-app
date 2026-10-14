@@ -313,7 +313,7 @@
     "company": "Ganesh Benzoplast",
     "sector": "Oil",
     "subject": "Waiting: storage and rail-logistics sale to close",
-    "why": "Ganesh Benzoplast is selling its storage and rail-logistics businesses for ₹1,154cr (more than its market value). Each run, check NSE filings for completion of the sale. Until it closes, leave this entry open. Once it closes, rewrite its section in the Oil note (both tabs) for the chemicals-and-EPC company that remains, decide its call, update its projects, capacity and expectations, and then mark this handled.",
+    "why": "Ganesh Benzoplast is selling its storage and rail-logistics businesses for ₹1,154cr (more than its market value). Each run, check NSE filings for completion of the sale. Until it closes, leave this entry open. Once it closes, rewrite its section in the Oil note (both tabs) for the chemicals-and-EPC company that remains, decide its call, update its projects, capacity and expectations, and then mark this handled. Timing from the 7 Oct 2026 investor call (transcript filed 13 Oct): about ₹500cr expected before January 2027, ₹300cr before March 2027 and ₹354cr over the following 12–18 months; ₹190–200cr of the first tranche goes to tax and bank lines and about ₹200cr to a buyback and special dividend.",
     "addedOn": "2026-09-30"
   },
   {
@@ -1173,7 +1173,8 @@
     "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 21 pts (83.6% in Jul 2026 → 62.6% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
-    "addedOn": "2026-10-13"
+    "addedOn": "2026-10-13",
+    "handled": "2026-10-14: The 83.6% → 62.6% fall is the July 2026 IPO (Screener had shown the pre-IPO figure); the September pattern is the first after listing and shows no pledge. Card money line updated. Stays pass."
   },
   {
     "company": "Nephrocare Health",
@@ -1189,14 +1190,16 @@
     "sector": "Iron and Steel",
     "subject": "Big holder change: Sep 2026",
     "why": "Authum Investment And Infrastructure Limited (DII) cut its stake from 4.55% to 2.39%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-13"
+    "addedOn": "2026-10-13",
+    "handled": "2026-10-14: Authum Investment trimmed from 4.55% to 2.39% during Jul–Sep 2026; a fund sale with no filing that bears on the business. Nothing changed in the note."
   },
   {
     "company": "Virtuoso Optoelectro",
     "sector": "EMS & Electronics",
     "subject": "Big holder change: Sep 2026",
     "why": "Malabar India Fund Ltd (FII) raised its stake from 7.91% to 13.59%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-13"
+    "addedOn": "2026-10-13",
+    "handled": "2026-10-14: Malabar India Fund rose from 7.91% to 13.59% through warrant conversion and a preferential allotment in July 2026 (filing summaries; not open-market buying). An existing backer adding through issues the note already counts; nothing changed in the note."
   },
   {
     "company": "Crizac",
@@ -1211,6 +1214,21 @@
     "sector": "Cables",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-13"
+    "addedOn": "2026-10-13",
+    "handled": "2026-10-14: Price fits (needs ~19% vs my ~18%); the note already said so on 28 Sep and waits for operating cash to turn positive and faster customer payments, which Q2 results will test. Since then: first commercial HTLS order (₹72.8cr, POWERGRID, 5 Oct) and a ₹44cr CESC 220 kV order; the card and the HTLS watch items updated. Stays wait."
+  },
+  {
+    "company": "Pine Labs",
+    "sector": "Platform Cos",
+    "subject": "Waiting: official confirmation of UPI merchant fee (MDR)",
+    "why": "Press reports (15 Sep 2026) say NPCI's UPI steering committee set a 0.4% merchant fee on person-to-merchant UPI payments above ₹2,000 from 15 October 2026 (₹300 cap; ₹5 flat for railways, telecom, insurance and fuel; small merchants under ₹1 lakh a month exempt; reported split issuer bank ~40%, acquirer 30%, app 20%, app's bank 10%). The Finance Ministry said in August that no framework was final, and the NPCI circular could not be read on 14 Oct (site returned 403). Each run, look for the NPCI circular or a government notification. Once confirmed, it is very important for the payment companies in the Platform note (Pine Labs, AvenuesAI, One Mobikwik Systems): add it once to the sector sections and to each company's section, add a checkpoint where it creates a testable expectation, reconsider their calls, then mark this handled.",
+    "addedOn": "2026-10-14"
+  },
+  {
+    "company": "Beta Drugs",
+    "sector": "Pharma",
+    "subject": "Waiting: final NPPA notification of the 30% trade-margin cap on cancer medicines",
+    "why": "On 8 Oct 2026 the NPPA approved in principle a 30% cap on trade margins (of MRP) for non-scheduled anti-cancer medicines, expected to cut their retail prices by 20–70%; a DGHS expert committee is to finalise the list of medicines before NPPA notifies it. A draft is not a rule. Each run, check NPPA/PIB for the final notification and list. Once notified, check which of Beta Drugs' (and other covered pharma companies') brands are on the list, correct the notes, reconsider the call, then mark this handled.",
+    "addedOn": "2026-10-14"
   }
 ]

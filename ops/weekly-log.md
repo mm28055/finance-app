@@ -186,3 +186,39 @@ Pushed to master; all checks passed (typecheck clean, "All notes pass.").
 **News pass:** no entries dated after 9 October.
 
 **Results pass:** no unreviewed results.
+
+## 14 October 2026
+
+Pushed to master; all checks passed (typecheck clean, "All notes pass.").
+
+**Follow-ups handled: 14 of 17. 3 stay open, all still waiting:** HEG Graphite has not listed; SKF India has not filed July–September results; Ganesh Benzoplast's ₹1,154cr sale has not closed (its 7 October call expects about ₹500cr before January 2027 and ₹300cr before March; the entry now says so). **2 new waiting entries** (see the news pass): the UPI merchant fee and the cancer-drug margin cap, both still to be confirmed officially.
+
+**Calls changed: none.** Four prices moved into the fits band, and each call was kept:
+- **Man Infra** stays wait. On 28 September it handed the development rights of Marine Lines, its slipping flagship launch (over ₹6,000cr of sale value), to Godrej Properties. It gets back more than ₹300cr and keeps a revenue share, but the filing gives no percentage. It has also bought back 87 lakh shares. Q2 pre-sales must show what the pipeline earns without Marine Lines. The Marine Lines and pre-sales checkpoints now carry this as a revision.
+- **Entero** stays follow. Its price fits, but an own needs at least half of five years' profit to arrive as cash, and its five-year operating cash is −₹98cr against ₹253cr of profit.
+- **Crizac** stays wait. A cheap price on a business guiding flat revenue only pays if H2 recovers.
+- **Q-Line Biotech** and **Laser Power** stay wait, as the note already said on 28 September; both wait for their half-year cash and related-party figures. Q-Line's card now has its 2 September Boule licence revision (fees cut 25%). Laser's card now has its first commercial HTLS order (₹72.8cr from POWERGRID, 5 October) and a ₹44cr CESC order.
+
+**Shareholding and holder changes:**
+- **Thyrocare** (stays wait). The note was out of date. Docon sold 9.9% for about ₹986cr on 13 August. Its parent then repaid its debentures, and all of Docon's 51% stake was freed from pledge on 17 August. I corrected the verdict, card, grades, watch items and management data, and marked the pledge checkpoint met (a correction, so it does not count in the hit rate). It still waits on price: about 22% a year needed against my 17%. The owner also still takes dividends above 100% of profit.
+- **Ratnaveer** (stays avoid): the promoters took up none of their rights in the September ₹330cr issue, so 45.5% became 38.7%. Added to the note.
+- **Nephrocare**: the promoter group, which is mostly private-equity funds, sold about 5.5% in a late-September placing after the IPO lock-in ended. Polar Capital bought 2.5% of it. The card said 63.9%; it now says 58.3%.
+- **Dr Agarwal's**: TPG and Temasek sold 12.6% in a ₹2,008cr block on 12 August and still hold about 20.6%. One sentence added to the card.
+- **Updater Services**: rival SIS now holds 10% (7.33% in the note); updated in four places.
+- **Xtranet**: the 83.6% → 62.6% fall is just the July IPO. Card updated. Logged only: **Shyam Metalics** (Authum trimmed to 2.39%) and **Virtuoso** (Malabar rose to 13.59% through its July warrant and preferential shares).
+
+**Filings pass, 11–13 October** (notes corrected where the filing made them wrong):
+- **Aegis Logistics** (stays follow): on 13 October it signed to buy 89.8% of Dubai's Tristar for US$809mn. Tristar is a liquid-logistics group in 30+ countries with 2025 revenue of about US$1.4bn, EBITDA of US$257mn and profit of US$82mn, so the price is about 11 times profit. Completion is expected in Q4 FY27. This makes Aegis a larger, lower-margin international group. I added it to section 1, the verdict, the card and the closing. The watch items now ask how the deal is paid for (the ₹6,000cr raise goes to a vote on 21 October).
+- **PNC Infratech** (stays wait): on 12 October the Delhi High Court stayed NHAI's three-year bidding ban while the case is heard. The case is not decided. Note and card updated.
+- **Zydus** (stays follow): the FDA left 5 observations at Moraiya, its main US plant (5–13 October), and accepted the filing for its Keytruda biosimilar (decision by Q3 2027). Both added to the watch items.
+- **GHCL** (stays own): its bromine plant began commercial production on 12 October, about two weeks after the Q2 date. The milestone is marked partly met; project, capacity and card updated. **GSFC**: the board approved the Sikka phosphoric (600 t a day) and sulphuric (1,800 t a day) acid plants; cost to come at commissioning. Project and capacity updated.
+- **SJS Enterprises**: the display and cover-glass plant is at Koregaon Bhima near Pune, not Hosur, and costs about ₹81cr (₹65cr of machinery plus lease), from September 2027. Card and project corrected. A new ₹49cr Walter Pack plant there will replace three Ranjangaon plants by May 2027; added as a project with a milestone.
+- **Aarti Industries** (stays pass): a 10-year-plus, ₹1,500cr supply contract that needs a dedicated plant of undisclosed cost. Added to the card. **Shyam Metalics**: a group-linked company won the Phutamura coal block (170 million tonnes, mining from July 2027). The filing does not say how much the listed company owns; added to the card.
+- **TD Power**: raised the full ₹600cr QIP at ₹775 on 12 October; card and note updated. **Kalpataru**: ₹2,225cr of new orders take FY27 inflow above ₹19,000cr; card updated. **United Heat Transfer** (stays avoid): allotted the ₹31.3cr issue at less than half the market price; card updated.
+- Logged only: Aurum's ₹118cr promoter warrants allotted (already in the note); Krsnaa's promoter warrants allotted (already in the note); the NCLT dismissed a ₹65cr insolvency plea against Brainbees's GlobalBees; Ircon ₹862cr railway order; Azad ₹52.7cr BHEL order; OBSC ₹77.5cr five-year Tenneco order; Aequs long-term Safran agreements for its Hosur campus; Goodluck sole qualified bidder for Munitions India shells (the merger was already in the note); Puravankara ₹2,500cr Bengaluru joint development; Raymond's extra brownfield plant in Andhra Pradesh; Bajaj Healthcare sold an idle Dahej unit for ₹14.67cr; Natco promoter pledge of 0.47%; Windlas's independent chairman resigned; Maxvolt's internal auditor joined as deputy CFO; Timken's new India president; Oswal Pumps' postal ballot (already in the note).
+
+**News pass, 10–13 October:** 22 entries had a clear reason. None is confirmed as very important, so no note changed.
+- Two could be very important once confirmed, so each is now an open "Waiting" follow-up. First, a reported **0.4% UPI merchant fee** on payments above ₹2,000 from 15 October. It would matter to Pine Labs, AvenuesAI and MobiKwik, but I could not read NPCI's circular (the site refused access) and the government said in August nothing was final. Second, the NPPA's **in-principle 30% trade-margin cap on cancer medicines** (Beta Drugs and others); it is a draft until the medicine list is notified.
+- The rest were ordinary: gas supply cuts to fertiliser and tile makers (a temporary allocation), a GST rule on e-commerce warehouses, fund buying and selling, and price moves on filings covered above.
+
+**Results pass:** Transformers & Rectifiers Q2 FY27 reviewed. The figures match Screener and I agree it is ahead: H1 revenue is up about 33% against a 25% guide and the margin is 17%. But the year-ago quarter was unusually weak and Q2 fell just short of the ₹750cr watched for. The note waits for the call.
