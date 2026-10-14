@@ -375,7 +375,7 @@ export const cables: SectorOverview = {
                 },
                 {
                     label: 'Barely a moat: tenders and borrowed technology',
-                    text: "**Laser**, **JD Cables** and **Paramount** sell mostly by tender, and their raters say so: ICRA finds Paramount has ‘limited pricing power in an intensely competitive market’, and Infomerics describes JD's field as fragmented with a ‘significant price war’; JD's MD says he cannot raise prices without losing contractors. Advanced high-temperature conductors (HTLS) are the differentiator everyone cites, but Laser and Dynamic both hold tie-ups with the same US licensor, Apar and Sterlite use a rival technology, and tenders are open to all. Laser has bid for about ₹1,250cr of ₹3,500cr of tenders and won one order of undisclosed value. **Treat it as marketing until the purchase orders show in revenue.**",
+                    text: "**Laser**, **JD Cables** and **Paramount** sell mostly by tender, and their raters say so: ICRA finds Paramount has ‘limited pricing power in an intensely competitive market’, and Infomerics describes JD's field as fragmented with a ‘significant price war’; JD's MD says he cannot raise prices without losing contractors. Advanced high-temperature conductors (HTLS) are the differentiator everyone cites, but Laser and Dynamic both hold tie-ups with the same US licensor, Apar and Sterlite use a rival technology, and tenders are open to all. Laser has bid for about ₹1,250cr of ₹3,500cr of tenders; on 5 October 2026 it disclosed its first commercial HTLS order, ₹72.8cr from POWERGRID to re-conductor about 164 circuit-km of 132 kV lines within 12 months. **Treat it as marketing until the purchase orders show in revenue.**",
                 },
                 {
                     label: 'Competitors outside the list',
@@ -607,7 +607,7 @@ export const cables: SectorOverview = {
             company: 'Laser Power & Infra', rank: 5, stance: 'SCALEUP', segment: TENDER,
             what: "Kolkata-based maker of power cables and aluminium conductors (73% of FY26 revenue), with a projects arm building distribution networks for state utilities; listed July 2026.",
             view: "**Two real improvements, both finite, and early warning signs.** High-tension cables rose to about 29% of revenue and ₹490cr of IPO money repaid debt, saving about ₹40cr a year of interest. But FY26 revenue fell about 10%, plants ran at 62%, customers take 216 days to pay, operating cash was −₹119cr, and its company secretary resigned two months after listing. The price needs about {need:Laser Power & Infra|20}% a year against my ~18%. By 28 September the price had fallen about 7% and the price check reads {label:Laser Power & Infra|fits}; the call stays wait until operating cash turns positive and customers pay faster.",
-            watch: 'Operating cash turning positive as projects bill; revenue growth back in the mid-teens; the value of its first HTLS orders.',
+            watch: 'Operating cash turning positive as projects bill; revenue growth back in the mid-teens; the ₹72.8cr POWERGRID HTLS order delivered on time and followed by others.',
         },
         {
             company: 'Paramount Communications', rank: 6, stance: 'TURNAROUND', segment: TENDER,
