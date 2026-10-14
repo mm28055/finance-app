@@ -444,7 +444,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                             ? 'bg-[#4A7AAF] text-white border-[#4A7AAF]'
                             : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
                     >
-                        <option value="">📝 Note's call</option>
+                        <option value="">Note's call</option>
                         {CALLS.map(c => (
                             <option key={c} value={c}>{c.charAt(0).toUpperCase() + c.slice(1)} ({callCounts[c] || 0})</option>
                         ))}
@@ -458,19 +458,19 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                                 ? 'bg-[#4A7AAF] text-white border-[#4A7AAF]'
                                 : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
                         >
-                            <option value="">🏷 My tags</option>
+                            <option value="">My tags</option>
                             {allTags.map(t => <option key={t.tag} value={t.tag}>{t.tag} ({t.count})</option>)}
                         </select>
                     )}
                     <select
                         value={themeKey}
-                        onChange={e => setThemeKey(e.target.value)}
+                        onChange={e => { setThemeKey(e.target.value); setSearchQuery(''); }}
                         title="Only companies whose own calls show orders, revenue, approvals or committed capex in a theme"
                         className={`px-1.5 py-0.5 text-[10px] font-medium rounded border transition-all cursor-pointer focus:outline-none ${activeTheme
                             ? 'bg-[#6B3FA0] text-white border-[#6B3FA0]'
                             : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
                     >
-                        <option value="">🧭 Themes</option>
+                        <option value="">Themes</option>
                         {THEMES.themes.map(t => <option key={t.key} value={t.key}>{t.label} ({t.companies.length})</option>)}
                     </select>
                 </div>
@@ -492,7 +492,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
 
             {searchQuery && (
                 <div className="text-[10px] text-gray-400 -mt-2 ml-1 mb-2">
-                    Found {countCompanies(filteredSectors)} matches
+                    Found {countCompanies(filteredSectors)} matches{countCompanies(filteredSectors) === 0 && activeTheme ? ` — no ${activeTheme.label.toLowerCase()} company matches "${searchQuery}"; clear the search box to see them all` : ''}
                 </div>
             )}
 
