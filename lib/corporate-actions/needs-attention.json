@@ -1107,7 +1107,8 @@
     "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 9.9 pts (60.9% in Jun 2026 → 51% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
-    "addedOn": "2026-10-12"
+    "addedOn": "2026-10-12",
+    "handled": "2026-10-14: Docon sold 9.9% (1.58cr shares, about ₹986cr) in block deals on 13 Aug 2026; API Holdings then repaid its debentures and all of Docon's 51% was freed from pledge on 17 Aug (NSE filing). The note still said 100% pledged: corrected in the verdict, card, grades and watch items; pledge checkpoint settled as met (correction). Stays wait: price full, payout above 100% of profit."
   },
   {
     "company": "Ratnaveer Precision",
@@ -1115,49 +1116,56 @@
     "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 6.8 pts (45.5% in Jun 2026 → 38.7% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
-    "addedOn": "2026-10-12"
+    "addedOn": "2026-10-12",
+    "handled": "2026-10-14: Promoter share count unchanged while the 10 Sep 2026 rights issue added 17.5% more shares (7 for 40 at ₹264, ₹330cr): the promoters took up none of their rights, so 45.5% became 38.7%. The note already had 38.7%; added the reason to the governance paragraph. Stays avoid."
   },
   {
     "company": "Dr Agarwal's Health Care",
     "sector": "Hospitals",
     "subject": "Big holder change: Sep 2026",
     "why": "Hyperion Investments Pte. Ltd. (FII) cut its stake from 23.09% to 15.47%; Claymore Investments (Mauritius) Pte. Ltd (FII) cut its stake from 10.19% to 5.17%; Invesco India Flexi Cap Fund (DII) raised its stake from 3.02% to 5.52%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-12"
+    "addedOn": "2026-10-12",
+    "handled": "2026-10-14: TPG (Hyperion) and Temasek (Claymore) sold 12.6% in block deals of about ₹2,008cr at about ₹501 on 12 Aug 2026; Invesco, ICICI Pru, Polar and other funds bought. Not a change to the case; one sentence added to the card on the remaining ~20.6% private-equity stake. Call unchanged."
   },
   {
     "company": "Nephrocare Health",
     "sector": "Healthcare",
     "subject": "Big holder change: Sep 2026",
     "why": "Polar Capital Funds Plc - Healthcare Opportunities (FII) raised its stake from 5.76% to 8.28%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-12"
+    "addedOn": "2026-10-12",
+    "handled": "2026-10-14: Polar Capital healthcare funds bought 2.5% in the 24 Sep 2026 off-market placing (SAST filing), taking them to 8.3%: they were buyers in the promoter-group sale. Covered in the card with the shareholding entry; nothing else changed."
   },
   {
     "company": "Updater Services",
     "sector": "Commercial Services",
     "subject": "Big holder change: Sep 2026",
     "why": "SIS Limited (public holder) raised its stake from 4.88% to 10%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-12"
+    "addedOn": "2026-10-12",
+    "handled": "2026-10-14: SIS kept buying on the market (it calls it a treasury investment): 7.33% at 31 Jul, 10% at 30 Sep 2026. Updated the four places the notes gave 7.33%. No deal announced; call unchanged."
   },
   {
     "company": "Man Infra",
     "sector": "Construction",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-12"
+    "addedOn": "2026-10-12",
+    "handled": "2026-10-14: Price now fits (needs ~14% vs my ~13%). Since the note: Marine Lines development rights went to Godrej Properties on 28 Sep 2026 (recoups ₹300cr+, revenue share on ₹6,000cr+ sale value, share not disclosed); buyback 87.25 lakh shares by 12 Oct. Stays wait until Q2 pre-sales and Godrej terms show; notes, card, valuation heading and closing updated; Marine Lines and pre-sales checkpoints given revisions."
   },
   {
     "company": "Entero",
     "sector": "Retail",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-12"
+    "addedOn": "2026-10-12",
+    "handled": "2026-10-14: Price now fits (needs ~25% vs my ~24%), but the cash test blocks own: five-year operating cash −₹98cr against ₹253cr of profit (FY26 66%). No new filings since the note. Stays follow; verdict, card and summary sentence updated to say the price fits and why it is not own."
   },
   {
     "company": "Q-Line Biotech",
     "sector": "Pharma Others",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-12"
+    "addedOn": "2026-10-12",
+    "handled": "2026-10-14: Price fits (needs ~16% vs my ~15%); the note already said so on 28 Sep and waits for the November half-year results and a smaller related-party share of sales, which nothing since settles. Added the 2 Sep Boule licence revision (royalty and licence fees cut 25% from 1 Jul) to the card. Stays wait."
   },
   {
     "company": "Xtranet Technologies",
@@ -1173,7 +1181,8 @@
     "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 5.5 pts (63.9% in Jun 2026 → 58.3% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
-    "addedOn": "2026-10-13"
+    "addedOn": "2026-10-13",
+    "handled": "2026-10-14: Promoter group (private-equity funds, e.g. Investcorp, Healthcare Parent) sold about 5.5% in an off-market placing in late Sep 2026 after the IPO lock-in; promoters now 58.3%. Card money line corrected (it said 63.9%, unchanged). Not a change to the case; call unchanged."
   },
   {
     "company": "Shyam Metalics",
@@ -1194,7 +1203,8 @@
     "sector": "Retail",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-13"
+    "addedOn": "2026-10-13",
+    "handled": "2026-10-14: Price now fits (needs ~8% vs my ~7%), but the note waits for H2 revenue to recover after FY27 was guided flat; no filing or news since the Q1 call settles it (Q2 results after 1 Oct trading-window closure). Stays wait; verdict, card and closing say the price fits."
   },
   {
     "company": "Laser Power & Infra",
