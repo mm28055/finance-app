@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11",
+ "updated": "2026-10-14",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -5550,7 +5550,13 @@
    "due": "Q4 FY27",
    "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-14",
+     "text": "Marine Lines went to Godrej Properties on 28 Sep 2026 for a revenue share, so its sales no longer count as Man Infra's own pre-sales; the ₹2,500cr target has not been restated"
+    }
+   ]
   },
   {
    "id": "man-infra-q4fy27-2",
@@ -5559,7 +5565,13 @@
    "text": "Marine Lines project launched by March 2027",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-14",
+     "text": "Development rights transferred to Godrej Properties on 28 Sep 2026; Godrej now builds and sells Marine Lines and Man Infra gets a revenue share, so the launch is Godrej's"
+    }
+   ]
   },
   {
    "id": "man-infra-q4fy27-3",
@@ -11612,7 +11624,12 @@
    "ifMet": "Would change my view for the better",
    "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "All of Docon's shares freed from pledge on 17 Aug 2026 after API Holdings fully repaid its debentures (helped by a 9.9% stake sale for about ₹986cr on 13 Aug)",
+   "resolvedOn": "2026-10-14",
+   "resolvedBy": "review",
+   "outcome": "Stays wait: the pledge is gone, but the price is still full and the payout above 100% of profit",
+   "correction": true
   },
   {
    "id": "thyrocare-technologies-q4fy27-1",
