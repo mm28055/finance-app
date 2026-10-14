@@ -857,7 +857,7 @@ export const pharma: SectorOverview = {
             company: 'Zydus Lifesciences', rank: 3, stance: 'PRICED', segment: HYBRID,
             what: "India's fourth-largest drug company: chronic-disease brands for Indian doctors, US generics and a growing US specialty business, plus consumer wellness and medical devices, and its own new molecules.",
             view: "**A widening franchise priced for FY28–FY30, not FY27.** India grew 20% and branded products are over 55% of revenue, but Q1 operating profit fell 8% and net profit about 35% as Revlimid and currency gains ended and acquisition costs arrived. FY26 cash conversion collapsed to 25%, and a June US warning letter at Baddi went unmentioned on the call. The price needs about {need:Zydus Lifesciences|15}% a year against my ~12%, cut from 15%.",
-            watch: 'Saroglitazar’s US approval under priority review for an April 2027 launch; margin holding about 24% through the launch spending; operating cash recovering and the Baddi letter closed.',
+            watch: 'Saroglitazar’s US approval under priority review for an April 2027 launch; margin holding about 24% through the launch spending; operating cash recovering, the Baddi letter closed, and the 5 FDA observations at Moraiya (October 2026) not escalating.',
         },
         {
             company: 'Caplin Point Labs', rank: 2, stance: 'COMPOUNDER', segment: EXPORT,
