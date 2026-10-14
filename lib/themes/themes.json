@@ -203,8 +203,8 @@
   },
   {
    "key": "bess",
-   "label": "Battery storage (BESS)",
-   "scope": "Battery energy storage: building, supplying or making grid and industrial battery storage.",
+   "label": "BESS",
+   "scope": "Battery energy storage systems: building, supplying or making grid and industrial battery storage.",
    "companies": [
     {
      "company": "Solarworld Energy So",

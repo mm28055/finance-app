@@ -467,7 +467,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                         onChange={e => { setThemeKey(e.target.value); setSearchQuery(''); }}
                         title="Only companies whose own calls show orders, revenue, approvals or committed capex in a theme"
                         className={`px-1.5 py-0.5 text-[10px] font-medium rounded border transition-all cursor-pointer focus:outline-none ${activeTheme
-                            ? 'bg-[#6B3FA0] text-white border-[#6B3FA0]'
+                            ? 'bg-[#4A7AAF] text-white border-[#4A7AAF]'
                             : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
                     >
                         <option value="">Themes</option>
@@ -477,14 +477,14 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             </div>
 
             {activeTheme && (
-                <div className="-mt-2 mb-2 rounded-lg border border-[#DDCDF5] bg-[#F7F3FD] px-3 py-2.5 text-[11.5px] text-gray-700 leading-relaxed">
+                <div className="-mt-2 mb-2 rounded-lg border border-[#C9DCEF] bg-[#F3F8FD] px-3 py-2.5 text-[11.5px] text-gray-700 leading-relaxed">
                     <p>
-                        <span className="font-semibold text-[#6B3FA0]">{activeTheme.label}:</span> {activeTheme.companies.length} companies,{' '}
+                        <span className="font-semibold text-[#35577A]">{activeTheme.label}:</span> {activeTheme.companies.length} companies,{' '}
                         {activeTheme.companies.filter(c => c.level === 'now').length} with orders or revenue now and{' '}
                         {activeTheme.companies.filter(c => c.level === 'building').length} building. {activeTheme.scope}
                     </p>
                     <details className="mt-1">
-                        <summary className="cursor-pointer select-none text-[11px] text-[#6B3FA0]">How these were chosen</summary>
+                        <summary className="cursor-pointer select-none text-[11px] text-[#4A7AAF]">How these were chosen</summary>
                         <p className="mt-1 text-[11px] text-gray-600">{THEMES.method}</p>
                     </details>
                 </div>
