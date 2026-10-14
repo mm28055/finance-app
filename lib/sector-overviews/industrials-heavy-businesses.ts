@@ -311,7 +311,7 @@ const profiles: BusinessProfile[] = [
             { name: 'Larger fabricators such as Anup and Isgec', note: 'Take the large refinery and power exchangers.' },
         ],
         position: "**A small, certified supplier of heat exchangers and coolers**, well below the scale of listed rivals.",
-        money: "Borrowings were ₹18.9cr at March 2026, down after the October 2024 IPO. Working capital is heavy: a 284-day cash cycle on Screener's count. Operating cash was ₹8cr in FY26. Shareholders approved in September 2026 a ₹31.3cr issue of new shares to 17 outside investors at ₹105.50, about half the market price, adding about 15.6% to the share count (₹23cr for capex). Crisil rates its bank lines B/Stable, “issuer not cooperating”. Sales to a promoter-group firm were ₹6.8cr in FY25. The share price is up about 2.7 times in a year; on Screener it trades at about 76 times reported profit.",
+        money: "Borrowings were ₹18.9cr at March 2026, down after the October 2024 IPO. Working capital is heavy: a 284-day cash cycle on Screener's count. Operating cash was ₹8cr in FY26. Shareholders approved in September 2026, and the board allotted on 12 October, a ₹31.3cr issue of 29.68 lakh new shares to 17 outside investors at ₹105.50, less than half the market price, adding about 15.6% to the share count (₹23cr for capex). Crisil rates its bank lines B/Stable, “issuer not cooperating”. Sales to a promoter-group firm were ₹6.8cr in FY25. The share price is up about 2.7 times in a year; on Screener it trades at about 76 times reported profit.",
         watch: ["H1 FY27 results in November: growth of 30–35% as guided.", "Repeat Vertiv orders.", "The rating agency receiving information again."],
     },
 ];
