@@ -9,6 +9,11 @@ import { Search } from 'lucide-react';
 import { meetsGuidanceThreshold, GUIDANCE_GROWTH_THRESHOLD } from '@/lib/guidance';
 import { isPortfolioSector } from '@/lib/portfolio';
 import { useTags } from '@/context/TagsContext';
+import themesStore from '@/lib/themes/themes.json';
+import type { ThemesStore, ThemeCompany } from '@/lib/themes/types';
+
+// Investment themes (lib/themes): companies whose own calls show something concrete behind the theme.
+const THEMES = (themesStore as unknown as ThemesStore);
 import { allSectorOverviews, companyCallInfo, livePriceCheck, CALLS, type Call } from '@/lib/sector-overviews';
 
 export const COLOR_THEMES = {
@@ -210,6 +215,10 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
     const [tagFilter, setTagFilter] = useState('');
     // A tag that no longer exists (its last company was untagged) stops filtering.
     const activeTag = allTags.some(t => t.tag === tagFilter) ? tagFilter : '';
+    // A theme (defence, battery storage, data centres, semiconductors, nuclear): keeps its companies and shows why each is there.
+    const [themeKey, setThemeKey] = useState('');
+    const activeTheme = THEMES.themes.find(t => t.key === themeKey);
+    const themeBy = useMemo(() => new Map<string, ThemeCompany>((activeTheme?.companies || []).map(c => [c.company, c])), [activeTheme]);
     // The call each sector note gives a company (own / follow / wait / pass / avoid).
     const callInfo = useMemo(() => companyCallInfo(allSectorOverviews()), []);
     const calls = useMemo(() => new Map([...callInfo].map(([k, v]) => [k, v.call])), [callInfo]);
@@ -294,6 +303,14 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             })).filter(sector => sector.companies.length > 0);
         }
 
+        // 6b. A theme
+        if (activeTheme) {
+            result = result.map(sector => ({
+                ...sector,
+                companies: sector.companies.filter(co => themeBy.has(co.name))
+            })).filter(sector => sector.companies.length > 0);
+        }
+
         // 7. The note's call
         if (callFilter) {
             result = result.map(sector => ({
@@ -319,7 +336,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
             });
             return { ...sector, companies: sortedCompanies };
         });
-    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, scoreBand, bigMoveOnly, holdingOnly, activeTag, companiesWith, callFilter, calls]);
+    }, [sectors, searchQuery, sortBy, convictionFilter, guidanceOnly, scoreBand, bigMoveOnly, holdingOnly, activeTag, companiesWith, callFilter, calls, activeTheme, themeBy]);
 
     // Every company once (ZPortfolio repeats them), so a sector note can still find a
     // company that has been moved to another sector.
@@ -445,8 +462,33 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                             {allTags.map(t => <option key={t.tag} value={t.tag}>{t.tag} ({t.count})</option>)}
                         </select>
                     )}
+                    <select
+                        value={themeKey}
+                        onChange={e => setThemeKey(e.target.value)}
+                        title="Only companies whose own calls show orders, revenue, approvals or committed capex in a theme"
+                        className={`px-1.5 py-0.5 text-[10px] font-medium rounded border transition-all cursor-pointer focus:outline-none ${activeTheme
+                            ? 'bg-[#6B3FA0] text-white border-[#6B3FA0]'
+                            : 'bg-white text-gray-400 border-gray-200 hover:border-gray-300 hover:text-gray-600'}`}
+                    >
+                        <option value="">🧭 Themes</option>
+                        {THEMES.themes.map(t => <option key={t.key} value={t.key}>{t.label} ({t.companies.length})</option>)}
+                    </select>
                 </div>
             </div>
+
+            {activeTheme && (
+                <div className="-mt-2 mb-2 rounded-lg border border-[#DDCDF5] bg-[#F7F3FD] px-3 py-2.5 text-[11.5px] text-gray-700 leading-relaxed">
+                    <p>
+                        <span className="font-semibold text-[#6B3FA0]">{activeTheme.label}:</span> {activeTheme.companies.length} companies,{' '}
+                        {activeTheme.companies.filter(c => c.level === 'now').length} with orders or revenue now and{' '}
+                        {activeTheme.companies.filter(c => c.level === 'building').length} building. {activeTheme.scope}
+                    </p>
+                    <details className="mt-1">
+                        <summary className="cursor-pointer select-none text-[11px] text-[#6B3FA0]">How these were chosen</summary>
+                        <p className="mt-1 text-[11px] text-gray-600">{THEMES.method}</p>
+                    </details>
+                </div>
+            )}
 
             {searchQuery && (
                 <div className="text-[10px] text-gray-400 -mt-2 ml-1 mb-2">
@@ -462,7 +504,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                     count={s.companies.length}
                     companies={s.companies}
                     allCompanies={allCompanies}
-                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null || bigMoveOnly || holdingOnly || !!activeTag || !!callFilter}
+                    defaultOpen={searchQuery.length > 0 || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null || bigMoveOnly || holdingOnly || !!activeTag || !!callFilter || !!activeTheme}
                 >
                     {s.companies.map(co => {
                         const rowKey = `${s.sector}:${co.ticker}`;
@@ -470,8 +512,18 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                         // today's live price check, so drift is visible at a glance.
                         const ci = callFilter ? callInfo.get(co.name.trim().toLowerCase()) : undefined;
                         const check = ci ? livePriceCheck(ci, { marketCap: co.marketCap, peRatio: co.peRatio }) : 'n/a';
+                        // With a theme on, each row says why the company is in it.
+                        const th = activeTheme ? themeBy.get(co.name) : undefined;
                         return (
                             <React.Fragment key={co.ticker}>
+                                {th && (
+                                    <div className="flex items-start gap-1.5 px-3 pt-1.5 -mb-1 text-[10.5px] bg-white">
+                                        <span className={`shrink-0 px-1.5 py-px rounded border font-semibold ${th.level === 'now' ? 'bg-emerald-50 text-emerald-700 border-emerald-200' : 'bg-amber-50 text-amber-700 border-amber-200'}`}>
+                                            {th.level === 'now' ? 'Orders or revenue now' : 'Building'}
+                                        </span>
+                                        <span className="text-gray-600 leading-snug">{th.why} <span className="text-gray-400">({th.source})</span></span>
+                                    </div>
+                                )}
                                 {ci && (
                                     <div className="flex items-center gap-1.5 px-3 pt-1.5 -mb-1 text-[10px] bg-white">
                                         <span className="px-1.5 py-px rounded bg-[#D4E5F7] text-[#4A7AAF] font-semibold uppercase tracking-wide">{ci.call}</span>

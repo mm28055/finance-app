@@ -1,0 +1,845 @@
+{
+ "updated": "2026-10-14",
+ "method": "A company is listed under a theme only when its own management said something concrete about it in its last two results calls: revenue, orders in hand, approvals, or capex it has committed. Passing mentions, analysts' questions and 'we are exploring' do not count. 'Orders or revenue now' means it already sells or holds orders; 'Building' means money committed or approvals won, but no meaningful revenue yet. Each line says what the company said and where. Read from the calls on 13–14 October 2026 and reviewed each results season as new calls come in. A list of who is exposed to the theme, not a recommendation.",
+ "themes": [
+  {
+   "key": "defence",
+   "label": "Defence",
+   "scope": "Companies outside the Aerospace & defence sector with defence revenue, orders or committed defence capex.",
+   "companies": [
+    {
+     "company": "Premier Explosives",
+     "level": "now",
+     "why": "94% of its ₹1,393cr order book is defence.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Goodluck India",
+     "level": "now",
+     "why": "Its defence subsidiary won a ₹255cr order for 155 mm artillery shells, to be made over 10 months.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Syrma SGS Tech.",
+     "level": "now",
+     "why": "Defence and maritime brought about ₹140cr in the quarter, after it bought Elcom.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Amber Enterprises",
+     "level": "now",
+     "why": "Railway and defence division revenue of ₹144cr in Q1, up 18%.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Jyoti CNC Auto.",
+     "level": "now",
+     "why": "Aerospace and defence were 37% of Q1 revenue and 38% of the order book (machine tools).",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Cyient DLM",
+     "level": "now",
+     "why": "Defence was 9% of revenue in Q1, growing 35%.",
+     "source": "Q1 FY27 call, Jul 2026"
+    },
+    {
+     "company": "Elgi Equipments",
+     "level": "now",
+     "why": "Its joint venture supplies high-pressure compressors for navy ships, including INS Vikrant.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Elecon Engg.Co",
+     "level": "now",
+     "why": "Executing a naval gearbox project; defence orders take two to three years to deliver.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Action Const.Eq.",
+     "level": "now",
+     "why": "Defence was about 4–5% of Q1 revenue; started making rough-terrain forklifts.",
+     "source": "Q1 FY27 call, Jul 2026"
+    },
+    {
+     "company": "Greaves Cotton",
+     "level": "now",
+     "why": "Supplied engines for large defence trucks in the quarter.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "TIL",
+     "level": "now",
+     "why": "Counts the Army, Bharat Dynamics, BEL and BEML among customers; defence orders in its book.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Shree Refrigrations",
+     "level": "now",
+     "why": "Makes navy-standard air-conditioning plants for ships.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Centum Electronics",
+     "level": "now",
+     "why": "Domestic defence and space customers drive much of its business.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "NRB Bearing",
+     "level": "now",
+     "why": "About ₹50cr of defence orders across the group; supplies French and US defence equipment through Meritor.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Rico Auto Industries",
+     "level": "now",
+     "why": "Aiming for about ₹50cr of defence revenue this year, though it calls defence 'a little slow'.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "OBSC Perfection",
+     "level": "now",
+     "why": "Defence orders growing; defence buyers are auditing its plants and it is quoting to more defence PSUs.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Macpower CNC",
+     "level": "now",
+     "why": "Defence order book of about ₹20cr.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Patil Automation",
+     "level": "now",
+     "why": "A ₹12cr defence order in a subsidiary, to be delivered this year.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "IZMO",
+     "level": "now",
+     "why": "Its chip-packaging unit has moved to repeat defence supply contracts.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Vinyas Innovativ",
+     "level": "now",
+     "why": "Defence is among its main customer groups, with a multi-year order book.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Avalon Tech",
+     "level": "now",
+     "why": "Medical and defence together are close to 10% of revenue.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Steelcast",
+     "level": "now",
+     "why": "Repeat overseas defence orders, though defence is only about 1% of revenue.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Diffusion Engineers",
+     "level": "now",
+     "why": "Supplies welding consumables to defence, about 1.5–2% of revenue; moving to assemblies.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Belrise Industries",
+     "level": "building",
+     "why": "Aims for aerospace and defence to be at least 10% of revenue in the medium term.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Texmaco Rail",
+     "level": "building",
+     "why": "Board approved ₹200cr of capex for a defence business.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Carborundum Univer.",
+     "level": "building",
+     "why": "₹49cr plant for armour ceramics; meaningful from FY28.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Technocraft Industries",
+     "level": "building",
+     "why": "Coolers for missile seekers and drones, qualified with DRDO; orders starting.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Navin Fluorine Intl",
+     "level": "building",
+     "why": "Won a DRDO order; details are confidential.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "TVS Supply Chain Sol",
+     "level": "building",
+     "why": "Defence and aerospace joint venture with Italy's ALA; business starts in the second half.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Airfloa Rail Techno.",
+     "level": "building",
+     "why": "Expects about a ₹60cr defence order within a ₹1,200cr bid pipeline.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Omnitech Engineering",
+     "level": "building",
+     "why": "Development orders and certification under way with aerospace and defence makers.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Frontier Springs",
+     "level": "building",
+     "why": "Defence product approval received; first supplies expected.",
+     "source": "Q4 FY26 call, May 2026"
+    }
+   ]
+  },
+  {
+   "key": "bess",
+   "label": "Battery storage (BESS)",
+   "scope": "Battery energy storage: building, supplying or making grid and industrial battery storage.",
+   "companies": [
+    {
+     "company": "Solarworld Energy So",
+     "level": "now",
+     "why": "About ₹1,100cr of its ₹2,800cr order book is battery storage, including NTPC projects; aims for storage to be 60% of revenue.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "H.G. Infra Engg.",
+     "level": "now",
+     "why": "₹461cr of battery storage in its order book; signed 1,470 MWh of projects with GUVNL and NVVN.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Sterling and Wilson",
+     "level": "now",
+     "why": "Won a 1,000 MW solar plant with 600 MWh of battery storage, about US$560mn.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Enviro Infra Engine.",
+     "level": "now",
+     "why": "₹3,027cr of its order book is renewable energy and battery storage.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Jupiter Wagons",
+     "level": "now",
+     "why": "Battery-storage order book of about 500 MW, over ₹500cr, through JEM Energy.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Oriana Power",
+     "level": "now",
+     "why": "About 1.5 GWh of battery-storage business; targets 20 GWh by 2030.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Waaree Renewables",
+     "level": "now",
+     "why": "1,500 MWh of battery storage in its EPC order book.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "SPML Infra",
+     "level": "now",
+     "why": "Battery storage is among the orders lifting its order intake this year.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Quality Power El",
+     "level": "now",
+     "why": "Won a large battery-storage order.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Advait Energy",
+     "level": "now",
+     "why": "Battery-storage orders, and building 2.5 GWh of storage-system assembly.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "GR Infraprojects",
+     "level": "now",
+     "why": "Work has started on its battery-storage project.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "PNC Infratech",
+     "level": "now",
+     "why": "Solar-plus-storage projects won under tariff bidding; about ₹400cr of equity needed.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Ceigall India",
+     "level": "now",
+     "why": "Won solar and battery-storage projects during the year.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Maxvolt Energy Indus",
+     "level": "now",
+     "why": "Energy-storage revenue of ₹21.4cr, 7% of revenue, up 537%.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Avalon Tech",
+     "level": "now",
+     "why": "Clean energy is 20% of revenue, growing 45% on energy-storage systems.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Servotech Renew",
+     "level": "now",
+     "why": "New lines for battery-storage systems and lithium packs among its main growth products.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Tatva Chintan",
+     "level": "now",
+     "why": "Electrolyte chemicals for customers' stationary energy-storage batteries; ramp-up from late 2026.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Amara Raja Energy",
+     "level": "building",
+     "why": "Battery-storage plant being commissioned; seeking customer commitments.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Vikram Solar",
+     "level": "building",
+     "why": "Setting up a 7.5 GWh battery-storage assembly plant in Chennai.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "DDev Plastiks",
+     "level": "building",
+     "why": "First 1 GWh battery-storage phase, ₹200cr of capex.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Godavari Power",
+     "level": "building",
+     "why": "Battery-storage projects under way, commissioning from FY28.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Clean Max Env. Energ",
+     "level": "building",
+     "why": "Signing customers before building battery storage alongside its renewable plants.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Greaves Cotton",
+     "level": "building",
+     "why": "Commissioned a pilot battery-storage facility.",
+     "source": "Q1 FY27 call, Aug 2026"
+    }
+   ]
+  },
+  {
+   "key": "datacentre",
+   "label": "Data centres",
+   "scope": "Building, equipping, powering, cooling or serving data centres.",
+   "companies": [
+    {
+     "company": "Blue Star",
+     "level": "now",
+     "why": "Expects about ₹3,000cr of data-centre orders this year; data centres to be about 20% of revenue later.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Black Box",
+     "level": "now",
+     "why": "Won a new US cloud customer with a ₹1,240cr order; data centres were about 17% of FY26 revenue.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Powerica",
+     "level": "now",
+     "why": "About ₹900cr of data-centre generator orders in hand.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Redington",
+     "level": "now",
+     "why": "About ₹700cr of large India data-centre deals in Q1.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Netweb Technologies",
+     "level": "now",
+     "why": "AI systems were 43% of FY26 revenue.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Railtel Corporation of India",
+     "level": "now",
+     "why": "Expects about ₹300cr of data-centre revenue this year and about ₹500cr later; runs its own and leased data centres.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Techno Electric &Eng",
+     "level": "now",
+     "why": "Runs its own data centres; signed an agreement with a global cloud company for a 2 MW facility.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Kirloskar Brothers",
+     "level": "now",
+     "why": "Data centres are about 23% of its US business, under a multi-year contract with a data-centre operator.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "KRN Heat Exchan",
+     "level": "now",
+     "why": "Data centres were about 15–16% of revenue; aims to double it.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Clean Max Env. Energ",
+     "level": "now",
+     "why": "Claims about 35% of hyperscalers' clean-power buying in India.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Happy Forgings",
+     "level": "now",
+     "why": "₹250cr of its ₹950cr order book is heavy forgings for data-centre generators.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Kirloskar Oil",
+     "level": "now",
+     "why": "Won a data-centre power order for its modular OptiPrime platform.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "TD Power Systems",
+     "level": "now",
+     "why": "Generators going to several data centres and customers.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Rashi Peripheral",
+     "level": "now",
+     "why": "Delivered a ₹2,000cr, 4,000-GPU AI data centre at Yotta.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Aurionpro Solutions",
+     "level": "now",
+     "why": "Executing one of its largest data-centre projects.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Xtranet Technologies",
+     "level": "now",
+     "why": "₹1,200cr order book across data-centre infrastructure and other IT work.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Kalpataru Proj.",
+     "level": "now",
+     "why": "Has built data centres and is qualified for more.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "KEC International",
+     "level": "now",
+     "why": "First transmission-line order to supply power to a data centre.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "KSB",
+     "level": "now",
+     "why": "Data-centre firefighting-pump orders.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Pitti Engineering",
+     "level": "now",
+     "why": "Data centres are about 5% of revenue.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "EPack Prefab Techno.",
+     "level": "now",
+     "why": "Order for wall panels on Adani's upcoming data centre.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Aeroflex Industries",
+     "level": "now",
+     "why": "Orders for hose assemblies used in European data centres.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Quality Power El",
+     "level": "now",
+     "why": "Supplied Microsoft's data centre in Finland.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Schneider Ele. Infra",
+     "level": "now",
+     "why": "Won an order from a data-centre customer.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Talbros Auto Compont",
+     "level": "now",
+     "why": "Gaskets for Cummins data-centre generator engines; hopes for ₹30–40cr by FY28.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Alicon Castalloy",
+     "level": "now",
+     "why": "Supplies a compressor part used in data-centre cooling.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Patil Automation",
+     "level": "now",
+     "why": "Data-centre orders among its new non-auto business.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Apar Inds.",
+     "level": "building",
+     "why": "Cables approved in the US for Meta, Microsoft and Google data centres.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Venus Pipes & Tubes",
+     "level": "building",
+     "why": "₹70cr of capex for pipe spools, backed by a data-centre customer's letter of intent.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Standard Glass",
+     "level": "building",
+     "why": "Setting up GScale to make equipment for AI data centres.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Praj Industries",
+     "level": "building",
+     "why": "Global supply deal to make modular units for hyperscale data centres.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Interarch Building",
+     "level": "building",
+     "why": "Expanding heavy-structure capacity for data centres and high-rise buildings.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "MM Forgings",
+     "level": "building",
+     "why": "Moving into business that serves hyperscalers, after a power-backup customer won a large order.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Shree Refrigrations",
+     "level": "building",
+     "why": "Data-centre cooling tie-up; a first installation in FY27, real revenue from FY28.",
+     "source": "Q4 FY26 call, May 2026"
+    }
+   ]
+  },
+  {
+   "key": "semiconductor",
+   "label": "Semiconductors",
+   "scope": "Chip design and packaging, equipment parts, plants, and the chemicals, gases and water chip-making needs.",
+   "companies": [
+    {
+     "company": "Cyient",
+     "level": "now",
+     "why": "Chip-design business of about US$7.5mn a quarter, growing more than 5% a quarter.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Rashi Peripheral",
+     "level": "now",
+     "why": "Semiconductor joint venture with Japan's Restar; this year's chip revenue already over 70% of last year's.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Carborundum Univer.",
+     "level": "now",
+     "why": "Started supplying ceramic parts for chip-making equipment.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Centum Electronics",
+     "level": "now",
+     "why": "Ramping up with a chip-equipment customer.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Cyient DLM",
+     "level": "now",
+     "why": "Industrial and chip-equipment customers are just under 40% of the business.",
+     "source": "Q1 FY27 call, Jul 2026"
+    },
+    {
+     "company": "Avalon Tech",
+     "level": "now",
+     "why": "Revenue started for chip-making equipment.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Sahasra Electronic",
+     "level": "now",
+     "why": "Semiconductor subsidiary exporting and qualifying customers; still in an investment phase.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "IZMO",
+     "level": "now",
+     "why": "Chip-packaging unit (izmomicro) supplying defence and photonics customers.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Inox India",
+     "level": "now",
+     "why": "First orders for gas storage and transport at the Dholera chip plants.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Praj Industries",
+     "level": "now",
+     "why": "First ultra-pure-water order from a chip company.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Interarch Building",
+     "level": "now",
+     "why": "Built steel structures for Tata Electronics' chip plant.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Anupam Rasayan",
+     "level": "now",
+     "why": "Chip-making chemicals 'growing very fast', partly through its Jayhawk acquisition.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Everest Kanto Cylind",
+     "level": "now",
+     "why": "Entered semiconductors with a good order book for gas cylinders.",
+     "source": "Q3 FY26 call, Feb 2026"
+    },
+    {
+     "company": "Jubilant Ingrevia",
+     "level": "now",
+     "why": "Some semiconductor revenue already, though very small.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Kaynes Technology",
+     "level": "building",
+     "why": "Spent ₹473cr on a chip-packaging (OSAT) plant and ₹324cr on circuit boards in FY26.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "RIR Power Electr",
+     "level": "building",
+     "why": "₹618cr silicon-carbide chip plant in Odisha (half paid by the state); epi-wafer sales from Q3 FY27, fabrication by end-2027.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Gujarat Fluorochemic",
+     "level": "building",
+     "why": "₹222cr for electronic-grade chemicals for chip-making.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Archean Chemical Industries",
+     "level": "building",
+     "why": "US$249mn semiconductor project; design work has started.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Tatva Chintan",
+     "level": "building",
+     "why": "Quality approval for a chip-making starting material, sold through a multinational.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Tanfac Industries",
+     "level": "building",
+     "why": "Plans about ₹150cr for electronic-grade hydrofluoric acid; still at the research stage.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Aether Industries",
+     "level": "building",
+     "why": "Building a chip-materials programme; does not disclose orders.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Acutaas Chemicals",
+     "level": "building",
+     "why": "Semiconductor chemicals plant under construction.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Stallion India Fluor",
+     "level": "building",
+     "why": "High-purity gas plant for chip-making being built.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Standard Glass",
+     "level": "building",
+     "why": "Glass-lined reactors for semiconductor-grade chemicals.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Shaily Engg. Plastic",
+     "level": "building",
+     "why": "Chip trays from Q4 FY27, about ₹5cr of capex.",
+     "source": "Q1 FY27 call, Aug 2026"
+    }
+   ]
+  },
+  {
+   "key": "nuclear",
+   "label": "Nuclear",
+   "scope": "Orders, approvals or capacity for nuclear power plants (NPCIL, BARC, Heavy Water Board, small modular reactors).",
+   "companies": [
+    {
+     "company": "Kilburn Engg.",
+     "level": "now",
+     "why": "Two orders for the Heavy Water Board and NPCIL, now going through approvals and commissioning.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "MTAR Technologies",
+     "level": "now",
+     "why": "Nuclear orders including Kaiga 5 and 6; expects refurbishment orders of over ₹200cr.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Kirloskar Brothers",
+     "level": "now",
+     "why": "About ₹70cr of primary-circuit and ₹40cr of secondary-circuit nuclear pump orders in Q1.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Unimech Aerospace",
+     "level": "now",
+     "why": "Nuclear orders of about ₹87cr, to be delivered in the second half.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Power Mech Proj.",
+     "level": "now",
+     "why": "₹563cr civil-work contract for the Kaiga nuclear plant.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Engineers India",
+     "level": "now",
+     "why": "Won a small-modular-reactor project from NPCIL last year.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "KSB",
+     "level": "now",
+     "why": "A dedicated nuclear organisation at its Shirwal plant; nuclear pump orders in hand.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Welspun Specialty",
+     "level": "now",
+     "why": "Developed steam-generator tubes for NPCIL and has orders.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "TD Power Systems",
+     "level": "now",
+     "why": "Orders from NPCIL for induction motors.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "The Anup Enginee",
+     "level": "now",
+     "why": "Its first nuclear order is being made on the shop floor.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Mishra Dhatu Nigam (MIDHANI)",
+     "level": "now",
+     "why": "Leading supplier of special metals for India's nuclear plants.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "United Heat Transfer",
+     "level": "now",
+     "why": "Supplying pressure vessels to NPCIL.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "GMM Pfaudler",
+     "level": "now",
+     "why": "Won large orders for nuclear projects.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Kirloskar Oil",
+     "level": "now",
+     "why": "Won an NPCIL order; no revenue from it yet.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Azad Engineering",
+     "level": "now",
+     "why": "One of the only qualified makers in India of nuclear turbine airfoils.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Scoda Tubes",
+     "level": "now",
+     "why": "Several BARC projects in its order book.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Ratnamani Metals",
+     "level": "building",
+     "why": "Plant for nuclear-grade pipes expected to be booked by new nuclear plants.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "DEE Development",
+     "level": "building",
+     "why": "Considering more capacity for its nuclear piping business; approvals take time.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Ador Welding",
+     "level": "building",
+     "why": "Added welding consumables with nuclear approvals.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Inox India",
+     "level": "building",
+     "why": "Supplies the ITER fusion project; developing products for nuclear plants.",
+     "source": "Q1 FY27 call, Aug 2026"
+    }
+   ]
+  }
+ ]
+}
