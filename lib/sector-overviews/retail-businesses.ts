@@ -224,7 +224,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Entero',
-        inShort: ["**One of India's three largest medicine wholesalers**, buying from about 3,000 drug and device makers and delivering to chemists and hospitals from 138 warehouses in 19 states.", "**Good:** it met every FY26 promise, grew 17.8% organically in Q1 against a market of about 14%, and reached its 5% margin target. **Bad:** growth was built on 51 acquisitions, ₹749cr of goodwill brings its return on all capital to about 10%, it owes ₹343cr to buy out partners (₹309cr within a year), and subsidiary audits flag stock statements that do not match the books.", "**Verdict: follow.** Delivering, but operating cash was −₹98cr against ₹253cr of profit over FY22–FY26, and FY26 was the first positive year (₹96cr, 66% of profit); the price also needs slightly more growth than I expect."],
+        inShort: ["**One of India's three largest medicine wholesalers**, buying from about 3,000 drug and device makers and delivering to chemists and hospitals from 138 warehouses in 19 states.", "**Good:** it met every FY26 promise, grew 17.8% organically in Q1 against a market of about 14%, and reached its 5% margin target. **Bad:** growth was built on 51 acquisitions, ₹749cr of goodwill brings its return on all capital to about 10%, it owes ₹343cr to buy out partners (₹309cr within a year), and subsidiary audits flag stock statements that do not match the books.", "**Verdict: follow.** Delivering, but operating cash was −₹98cr against ₹253cr of profit over FY22–FY26, and FY26 was the first positive year (₹96cr, 66% of profit). The price now fits, but an own needs at least half of five years' profit to arrive as cash."],
         tagline: "A national wholesaler of medicines and medical devices to chemists and hospitals, built largely by buying regional distributors.",
         revenue: '₹6,591cr (FY26, consolidated)',
         products: [
@@ -276,7 +276,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Crizac',
-        inShort: ["**A student-recruitment platform, not a shop**: British universities pay it a commission for each overseas student it enrols, and it passes most of that to 17,400+ local agents in 85+ countries.", "**Good:** a 27% margin, ₹570cr of net cash, a promise to pay out at least 40% of profit, and its share of UK study visas rose from 3.5% to 6%. **Bad:** about 99% of revenue comes from UK universities, revenue fell 4% in Q1, FY27 is now guided flat, Britain is tightening student visas, and a ₹55cr fee paid in FY26 is unexplained.", "**Verdict: wait.** Highly profitable, in a shrinking market."],
+        inShort: ["**A student-recruitment platform, not a shop**: British universities pay it a commission for each overseas student it enrols, and it passes most of that to 17,400+ local agents in 85+ countries.", "**Good:** a 27% margin, ₹570cr of net cash, a promise to pay out at least 40% of profit, and its share of UK study visas rose from 3.5% to 6%. **Bad:** about 99% of revenue comes from UK universities, revenue fell 4% in Q1, FY27 is now guided flat, Britain is tightening student visas, and a ₹55cr fee paid in FY26 is unexplained.", "**Verdict: wait.** Highly profitable, in a shrinking market; the price now fits, but wait for H2 to show revenue recovering."],
         tagline: "A business-to-business platform linking overseas students' local agents with British and other universities, paid by commission.",
         revenue: '₹1,042cr (FY26, consolidated)',
         products: [
