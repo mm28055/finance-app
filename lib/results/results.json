@@ -1,6 +1,445 @@
 {
- "updated": "2026-10-13T21:09:17.263Z",
+ "updated": "2026-10-14T19:59:12.393Z",
  "results": [
+  {
+   "company": "Accent Microcell",
+   "sector": "Pharma Others",
+   "quarter": "H1 FY27",
+   "resultsDate": "2026-10-14",
+   "readOn": "2026-10-15",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": null
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 175,
+     "yearAgo": 139,
+     "prev": 210,
+     "yoy": 25.9,
+     "qoq": null
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 41,
+     "yearAgo": 24,
+     "prev": 33,
+     "yoy": 70.8,
+     "qoq": null
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 24,
+     "yearAgo": 17,
+     "prev": 16,
+     "yoy": 7,
+     "qoq": null
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 31,
+     "yearAgo": 18,
+     "prev": 26,
+     "yoy": 72.2,
+     "qoq": null
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "text": "Accent Microcell delivered a strong half-year, with revenue rising 25.9% to ₹175 crore and operating profit jumping 70.8% to ₹41 crore compared to a year ago. The operating margin expanded by seven percentage points to 24%, suggesting the company has successfully reduced its reliance on low-margin trading. This profit growth easily beats our 18% base-case expectation.",
+    "checks": [],
+    "on": "2026-10-15"
+   }
+  },
+  {
+   "company": "Bajaj Consumer Care",
+   "sector": "Consumer Durables",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-14",
+   "readOn": "2026-10-15",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 333,
+     "yearAgo": 265,
+     "prev": 342,
+     "yoy": 25.7,
+     "qoq": -2.6
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 82,
+     "yearAgo": 48,
+     "prev": 83,
+     "yoy": 70.8,
+     "qoq": -1.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 25,
+     "yearAgo": 18,
+     "prev": 24,
+     "yoy": 7,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 70,
+     "yearAgo": 42,
+     "prev": 71,
+     "yoy": 66.7,
+     "qoq": -1.4
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "text": "Revenue grew 25.7% from last year to ₹333 crore, and operating profit jumped 70.8% to ₹82 crore. The operating margin expanded to 25%, comfortably beating expectations that it would just hold above 21% during this costlier quarter. This strong performance shows the turnaround is continuing well ahead of our base-case growth expectations.",
+    "checks": [
+     {
+      "text": "Operating margin holding above 21%",
+      "status": "met",
+      "why": "Margin expanded to 25%"
+     }
+    ],
+    "on": "2026-10-15"
+   }
+  },
+  {
+   "company": "CEAT",
+   "sector": "Tyres",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-14",
+   "readOn": "2026-10-15",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 4762,
+     "yearAgo": 3773,
+     "prev": 4318,
+     "yoy": 26.2,
+     "qoq": 10.3
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 457,
+     "yearAgo": 503,
+     "prev": 365,
+     "yoy": -9.1,
+     "qoq": 25.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 10,
+     "yearAgo": 13,
+     "prev": 8,
+     "yoy": -3,
+     "qoq": 2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 112,
+     "yearAgo": 186,
+     "prev": 4,
+     "yoy": -39.8,
+     "qoq": 2700
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "text": "Revenue grew a strong 26.2% from last year to ₹4,762 crore, but operating profit fell 9.1% to ₹457 crore. The operating margin dropped three points year-on-year to 10%, missing our target of getting back above 12%, though it did improve from 8% in the previous quarter. This shows a partial recovery from last quarter's shocks, but profitability is still lagging expectations.",
+    "checks": [
+     {
+      "text": "Camso customers 90% moved from Michelin by September",
+      "status": "unclear",
+      "why": "Needs the earnings call"
+     },
+     {
+      "text": "CARE's leverage measure stays below 2.5 times",
+      "status": "unclear",
+      "why": "Debt figures not in the headline results"
+     },
+     {
+      "text": "About 90% of Camso customers moved from Michelin",
+      "status": "unclear",
+      "why": "Needs the earnings call"
+     }
+    ],
+    "on": "2026-10-15"
+   }
+  },
+  {
+   "company": "Elecon Engg.Co",
+   "sector": "Electrical Equipment",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-14",
+   "readOn": "2026-10-15",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 639,
+     "yearAgo": 578,
+     "prev": 521,
+     "yoy": 10.6,
+     "qoq": 22.6
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 148,
+     "yearAgo": 126,
+     "prev": 109,
+     "yoy": 17.5,
+     "qoq": 35.8
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 23,
+     "yearAgo": 22,
+     "prev": 21,
+     "yoy": 1,
+     "qoq": 2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 96,
+     "yearAgo": 88,
+     "prev": 70,
+     "yoy": 9.1,
+     "qoq": 37.1
+    }
+   ],
+   "take": {
+    "verdict": "in line",
+    "text": "Revenue grew 10.6% from a year ago to ₹639 crore, perfectly matching the company's guidance for low double-digit growth. Operating profit rose 17.5% to ₹148 crore as the operating margin improved by a percentage point to 23%. This is a solid quarter that delivers exactly the 17% profit growth expected in our base case.",
+    "checks": [
+     {
+      "text": "Q2 converts the ₹1,518cr order book without goods slipping",
+      "status": "unclear",
+      "why": "Revenue jumped 23% quarter-on-quarter suggesting good conversion, but exact slippage needs the call"
+     }
+    ],
+    "on": "2026-10-15"
+   }
+  },
+  {
+   "company": "Emmvee Photovoltaic Power Ltd",
+   "sector": "Solar PV Cells EPC",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-14",
+   "readOn": "2026-10-15",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1576,
+     "yearAgo": 1131,
+     "prev": 1556,
+     "yoy": 39.3,
+     "qoq": 1.3
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 557,
+     "yearAgo": 399,
+     "prev": 548,
+     "yoy": 39.6,
+     "qoq": 1.6
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 35,
+     "yearAgo": 35,
+     "prev": 35,
+     "yoy": 0,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 382,
+     "yearAgo": 238,
+     "prev": 380,
+     "yoy": 60.5,
+     "qoq": 0.5
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "text": "Revenue grew 39.3% from a year ago to ₹1,576 crore, and operating profit rose 39.6% to ₹557 crore. The operating margin held steady at 35%. However, the operating profit fell short of the ₹600 crore expected to keep the company on track for its full-year target.",
+    "checks": [
+     {
+      "text": "Quarterly operating profit above ₹600cr",
+      "status": "missed",
+      "why": "Operating profit was ₹557cr"
+     }
+    ],
+    "on": "2026-10-15"
+   }
+  },
+  {
+   "company": "Leela Palaces Hotels",
+   "sector": "Hotels and Travels",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-14",
+   "readOn": "2026-10-15",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 412,
+     "yearAgo": 311,
+     "prev": 352,
+     "yoy": 32.5,
+     "qoq": 17
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 176,
+     "yearAgo": 136,
+     "prev": 128,
+     "yoy": 29.4,
+     "qoq": 37.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 43,
+     "yearAgo": 44,
+     "prev": 36,
+     "yoy": -1,
+     "qoq": 7
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 95,
+     "yearAgo": 75,
+     "prev": 49,
+     "yoy": 26.7,
+     "qoq": 93.9
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "text": "Revenue grew 32.5% from a year ago to ₹412 crore, and operating profit rose 29.4% to ₹176 crore. The operating margin held relatively steady at 43%, down just one percentage point from last year. This strong performance comes in well ahead of the company's double-digit revenue guidance and our expectation for mid-to-high teens profit growth.",
+    "checks": [],
+    "on": "2026-10-15"
+   }
+  },
+  {
+   "company": "Tata Technologies",
+   "sector": "Software",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-14",
+   "readOn": "2026-10-15",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1699,
+     "yearAgo": 1323,
+     "prev": 1665,
+     "yoy": 28.4,
+     "qoq": 2
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 273,
+     "yearAgo": 208,
+     "prev": 267,
+     "yoy": 31.3,
+     "qoq": 2.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 16,
+     "yearAgo": 16,
+     "prev": 16,
+     "yoy": 0,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 171,
+     "yearAgo": 166,
+     "prev": 181,
+     "yoy": 3,
+     "qoq": -5.5
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "text": "Revenue grew a strong 28.4% from a year ago to ₹1,699 crore, and operating profit rose 31.3% to ₹273 crore. However, the operating margin remained stuck at 16%, missing the expectation for an improvement to 17% or better. This lack of margin expansion meant net profit grew by just 3% to ₹171 crore, delivering the anticipated revenue recovery but falling short on profitability.",
+    "checks": [
+     {
+      "text": "Operating margin reaching 17% or better",
+      "status": "missed",
+      "why": "The margin remained flat at 16%"
+     }
+    ],
+    "on": "2026-10-15"
+   }
+  },
   {
    "company": "Transformers & Rect",
    "sector": "Electrical Transformers",
