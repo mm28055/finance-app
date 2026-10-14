@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11",
+ "updated": "2026-10-14",
  "companies": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -17227,7 +17227,7 @@
    "company": "Thyrocare Technologies",
    "sector": "Healthcare Diagnostic",
    "style": "Promoter-owned, professionally run",
-   "styleNote": "Thyrocare is controlled by Docon Technologies, part of PharmEasy's parent API Holdings, which owned 60.9% at 31 Mar 2026 after selling about 10% in October 2025. The company is run by hired managers: Chairman, MD and CEO Rahul Guha is also MD and CEO of API Holdings. The parent's nominees sit on the board as non-executive directors. No directors are related to each other.",
+   "styleNote": "Thyrocare is controlled by Docon Technologies, part of PharmEasy's parent API Holdings, which owns 51% after selling about 10% in October 2025 and another 9.9% on 13 August 2026; since 17 August 2026 none of its shares are pledged. The company is run by hired managers: Chairman, MD and CEO Rahul Guha is also MD and CEO of API Holdings. The parent's nominees sit on the board as non-executive directors. No directors are related to each other.",
    "people": [
     {
      "name": "Rahul Franklin Guha",
@@ -17262,9 +17262,10 @@
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_29346_THYROCARE_2025_2026_A_17664323_04062026215131.pdf",
     "https://nsearchives.nseindia.com/corporate/THYROCARE_07052026195952_Outcomewithoutresults.pdf",
-    "https://nsearchives.nseindia.com/corporate/THYROCARE_07052026200323_Outcomewithoutresults.pdf"
+    "https://nsearchives.nseindia.com/corporate/THYROCARE_07052026200323_Outcomewithoutresults.pdf",
+    "https://nsearchives.nseindia.com/corporate/THYROCARE_17082026142334_SE_intimation_on_Release_of_Pledge.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-14"
   },
   {
    "company": "Vijaya Diagnostic Centre",
