@@ -1,6 +1,410 @@
 {
- "updated": "2026-10-14T19:59:12.393Z",
+ "updated": "2026-10-15T19:24:39.034Z",
  "results": [
+  {
+   "company": "Cyient DLM",
+   "sector": "EMS & Electronics",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-15",
+   "readOn": "2026-10-16",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 393,
+     "yearAgo": 311,
+     "prev": 374,
+     "yoy": 26.4,
+     "qoq": 5.1
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 34,
+     "yearAgo": 31,
+     "prev": 39,
+     "yoy": 9.7,
+     "qoq": -12.8
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 9,
+     "yearAgo": 10,
+     "prev": 10,
+     "yoy": -1,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 34,
+     "yearAgo": 32,
+     "prev": 16,
+     "yoy": null,
+     "qoq": 112.5
+    }
+   ],
+   "oneOff": "Other income of ₹23cr is 59% of profit before tax this quarter, so profit may not reflect the business. The year-ago quarter's profit included other income of ₹23cr (64% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "mixed",
+    "text": "Revenue grew a solid 26.4% against last year to ₹393 crore, but operating profit lagged with just 9.7% growth to ₹34 crore. The operating margin slipped to 9%, missing the expected 11–13% target. Additionally, net profit was heavily flattered by ₹23 crore in other income, meaning the bottom line does not accurately reflect the core business's profitability.",
+    "checks": [
+     {
+      "text": "Margin reaching 11–13%",
+      "status": "missed",
+      "why": "Operating margin fell to 9%"
+     },
+     {
+      "text": "Revenue growth in every quarter",
+      "status": "met",
+      "why": "Revenue grew 5.1% from the previous quarter"
+     },
+     {
+      "text": "Working capital falling toward 120 days",
+      "status": "unclear",
+      "why": "Not disclosed in these headline figures"
+     },
+     {
+      "text": "First AI-hardware and robotics orders",
+      "status": "unclear",
+      "why": "Awaits management commentary on the call"
+     }
+    ],
+    "on": "2026-10-16"
+   }
+  },
+  {
+   "company": "Metro Brands",
+   "sector": "Consumer Durables",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-15",
+   "readOn": "2026-10-16",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 730,
+     "yearAgo": 651,
+     "prev": 720,
+     "yoy": 12.1,
+     "qoq": 1.4
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 197,
+     "yearAgo": 171,
+     "prev": 215,
+     "yoy": 15.2,
+     "qoq": -8.4
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 27,
+     "yearAgo": 26,
+     "prev": 30,
+     "yoy": 1,
+     "qoq": -3
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 77,
+     "yearAgo": 69,
+     "prev": 95,
+     "yoy": 11.6,
+     "qoq": -18.9
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "text": "Revenue grew 12.1% against last year to ₹730 crore, falling short of the company's ~15% full-year guidance. Operating profit rose 15.2% to ₹197 crore as the operating margin ticked up to 27% from 26% a year ago. However, net profit of ₹77 crore yielded a margin of just 10.5%, missing the expected 13–15% range.",
+    "checks": [
+     {
+      "text": "Profit margin inside 13–15%",
+      "status": "missed",
+      "why": "Net profit margin was 10.5%"
+     }
+    ],
+    "on": "2026-10-16"
+   }
+  },
+  {
+   "company": "Orient Electric",
+   "sector": "Consumer Durables",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-15",
+   "readOn": "2026-10-16",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 879,
+     "yearAgo": 703,
+     "prev": 950,
+     "yoy": 25,
+     "qoq": -7.5
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 57,
+     "yearAgo": 38,
+     "prev": 67,
+     "yoy": 50,
+     "qoq": -14.9
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 6,
+     "yearAgo": 5,
+     "prev": 7,
+     "yoy": 1,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 27,
+     "yearAgo": 12,
+     "prev": 31,
+     "yoy": 125,
+     "qoq": -12.9
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "text": "Revenue grew 25% from a year ago to ₹879 crore, easily beating the 14–15% growth target, while operating profit jumped 50% to ₹57 crore. However, the operating margin only reached 6% (up one point from last year), missing the 8% expectation for a non-summer quarter. This shows excellent sales momentum but confirms earlier concerns that profitability goals remain elusive.",
+    "checks": [
+     {
+      "text": "Gross margin back above 31%",
+      "status": "unclear",
+      "why": "Gross margin is not provided in these figures"
+     },
+     {
+      "text": "Operating margin above 8% outside the summer",
+      "status": "missed",
+      "why": "Operating margin came in at 6%"
+     }
+    ],
+    "on": "2026-10-16"
+   }
+  },
+  {
+   "company": "Sri Lotus",
+   "sector": "Realty",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-15",
+   "readOn": "2026-10-16",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 269,
+     "yearAgo": 176,
+     "prev": 132,
+     "yoy": 52.8,
+     "qoq": 103.8
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 107,
+     "yearAgo": 50,
+     "prev": 48,
+     "yoy": 114,
+     "qoq": 122.9
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 40,
+     "yearAgo": 29,
+     "prev": 36,
+     "yoy": 11,
+     "qoq": 4
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 89,
+     "yearAgo": 46,
+     "prev": 46,
+     "yoy": 93.5,
+     "qoq": 93.5
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "text": "Revenue grew 52.8% year-on-year to ₹269 crore, while operating profit surged 114% to ₹107 crore. The operating margin expanded by 11 percentage points from a year ago to reach a strong 40%. Although revenue growth is tracking just shy of the 55–60% full-year guidance, the exceptional margin expansion puts profitability well ahead of our 18% long-term growth expectation.",
+    "checks": [],
+    "on": "2026-10-16"
+   }
+  },
+  {
+   "company": "Sterling and Wilson",
+   "sector": "Construction",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-15",
+   "readOn": "2026-10-16",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1528,
+     "yearAgo": 1749,
+     "prev": 1590,
+     "yoy": -12.6,
+     "qoq": -3.9
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 56,
+     "yearAgo": 4,
+     "prev": 79,
+     "yoy": 1300,
+     "qoq": -29.1
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 3.7,
+     "yearAgo": 0.2,
+     "prev": 5,
+     "yoy": 3.5,
+     "qoq": -1.3
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 17,
+     "yearAgo": -478,
+     "prev": 53,
+     "yoy": null,
+     "qoq": -67.9
+    }
+   ],
+   "oneOff": "Other income of ₹14cr is 82% of profit before tax this quarter, so profit may not reflect the business.",
+   "take": {
+    "verdict": "behind",
+    "text": "Revenue fell 12.6% from last year to ₹1,528cr, missing the ₹1,600cr expected and trailing the company's 10–15% full-year growth guidance. Operating profit jumped to ₹56cr from just ₹4cr a year ago, lifting the operating margin to 3.7%. However, the ₹17cr net profit is heavily flattered by ₹14cr of other income, which makes up 82% of profit before tax.",
+    "checks": [
+     {
+      "text": "Q2 revenue near ₹1,600cr",
+      "status": "missed",
+      "why": "Revenue came in lower at ₹1,528cr"
+     },
+     {
+      "text": "Reliance order signed on fair terms",
+      "status": "unclear",
+      "why": "Not detailed in headline financial figures"
+     },
+     {
+      "text": "No further legacy charges and indemnity cash arriving",
+      "status": "unclear",
+      "why": "Requires the earnings call or full report"
+     }
+    ],
+    "on": "2026-10-16"
+   }
+  },
+  {
+   "company": "Tips Music",
+   "sector": "Media and Entertainment",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-15",
+   "readOn": "2026-10-16",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 120,
+     "yearAgo": 89,
+     "prev": 107,
+     "yoy": 34.8,
+     "qoq": 12.1
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 85,
+     "yearAgo": 68,
+     "prev": 54,
+     "yoy": 25,
+     "qoq": 57.4
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 71,
+     "yearAgo": 76,
+     "prev": 50,
+     "yoy": -5,
+     "qoq": 21
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 66,
+     "yearAgo": 53,
+     "prev": 44,
+     "yoy": 24.5,
+     "qoq": 50
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "text": "Revenue grew 34.8% from a year ago to ₹120 crore, while operating profit rose 25% to ₹85 crore. The operating margin held strong at 71%, comfortably above the 65–70% range we were watching for. This performance comes in well ahead of the company's 20% revenue growth guidance and our 17% profit growth expectation.",
+    "checks": [
+     {
+      "text": "YouTube Shorts renewal signed",
+      "status": "unclear",
+      "why": "not in the headline figures"
+     }
+    ],
+    "on": "2026-10-16"
+   }
+  },
   {
    "company": "Accent Microcell",
    "sector": "Pharma Others",
