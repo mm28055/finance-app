@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T19:48:30.774Z",
+ "updated": "2026-10-15T19:13:33.270Z",
  "events": [
   {
    "company": "GSFC",
@@ -568,12 +568,45 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2895_WebXMLFile_20260929_154000829.xml"
   },
   {
+   "company": "Marathon NextgenReal",
+   "sector": "Realty",
+   "kind": "results",
+   "date": "2026-10-21",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_14258_WebXMLFile_20261015_191832900.xml"
+  },
+  {
+   "company": "Rajratan Global",
+   "sector": "Auto Related",
+   "kind": "results",
+   "date": "2026-10-21",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_17984_WebXMLFile_20261015_103758480.xml"
+  },
+  {
+   "company": "Waaree Renewables",
+   "sector": "Solar PV Cells EPC",
+   "kind": "call",
+   "date": "2026-10-21",
+   "time": "4:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/WAAREERTL_15102026190704_Intimation-s.pdf"
+  },
+  {
+   "company": "Beta Drugs",
+   "sector": "Pharma",
+   "kind": "results",
+   "date": "2026-10-22",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_15527_WebXMLFile_20261015_165433424.xml"
+  },
+  {
    "company": "Chennai Petroleum Corporation",
    "sector": "Oil",
    "kind": "results",
    "date": "2026-10-22",
    "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1923_WebXMLFile_20261009_224409696.xml"
+   "url": "https://nsearchives.nseindia.com/corporate/CHENNPETRO_09102026223723_BM_Intimation.pdf"
   },
   {
    "company": "CIE Automotive",
@@ -625,6 +658,14 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1885_WebXMLFile_20260929_175834219.xml"
   },
   {
+   "company": "Mahindra Life. Dev",
+   "sector": "Realty",
+   "kind": "call",
+   "date": "2026-10-22",
+   "time": "4:30 pm",
+   "url": "https://nsearchives.nseindia.com/corporate/MAHLIFE1_15102026195541_EarningsCallIntimation_sgd.pdf"
+  },
+  {
    "company": "Paisalo Digital",
    "sector": "Finance",
    "kind": "results",
@@ -651,19 +692,19 @@
   {
    "company": "Sagility",
    "sector": "Software",
-   "kind": "results",
-   "date": "2026-10-22",
-   "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_24028_WebXMLFile_20261014_154200870.xml"
-  },
-  {
-   "company": "Sagility",
-   "sector": "Software",
    "kind": "call",
    "date": "2026-10-22",
    "time": "7:30 pm",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/SAGILITY_14102026154003_InvestorCallIntimationQ2FY27signed.pdf"
+  },
+  {
+   "company": "Sagility",
+   "sector": "Software",
+   "kind": "results",
+   "date": "2026-10-22",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_24028_WebXMLFile_20261014_154200870.xml"
   },
   {
    "company": "Supreme Power",
@@ -747,6 +788,14 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2286_WebXMLFile_20261005_123835348.xml"
   },
   {
+   "company": "Supreme Petrochem",
+   "sector": "Chemicals",
+   "kind": "results",
+   "date": "2026-10-23",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_20747_WebXMLFile_20261015_190450174.xml"
+  },
+  {
    "company": "TruAlt Bioenergy",
    "sector": "Oil",
    "kind": "results",
@@ -779,12 +828,29 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2505_WebXMLFile_20261013_192808109.xml"
   },
   {
+   "company": "Apollo Micro Systems",
+   "sector": "Aerospace defence",
+   "kind": "call",
+   "date": "2026-10-26",
+   "time": "11:11 am",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/APOLLO_15102026214753_AMSintimationonearningscall.pdf"
+  },
+  {
    "company": "Avantel",
    "sector": "Aerospace defence",
    "kind": "results",
    "date": "2026-10-26",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_23772_WebXMLFile_20261006_132123841.xml"
+  },
+  {
+   "company": "Brigade Hotel Ven.",
+   "sector": "Hotels and Travels",
+   "kind": "results",
+   "date": "2026-10-26",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_24796_WebXMLFile_20261015_190313683.xml"
   },
   {
    "company": "Jupiter Life Line Hospitals",
@@ -802,6 +868,14 @@
    "date": "2026-10-26",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_162_WebXMLFile_20261013_190951489.xml"
+  },
+  {
+   "company": "Paramount Communications",
+   "sector": "Cables",
+   "kind": "results",
+   "date": "2026-10-26",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2492_WebXMLFile_20261015_180321799.xml"
   },
   {
    "company": "Sona BLW Precision",
@@ -829,12 +903,29 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_17682_WebXMLFile_20261001_170527768.xml"
   },
   {
+   "company": "Sunteck Realty",
+   "sector": "Realty",
+   "kind": "results",
+   "date": "2026-10-26",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2951_WebXMLFile_20261015_213030331.xml"
+  },
+  {
    "company": "WeWork India",
    "sector": "Commercial Services",
    "kind": "results",
    "date": "2026-10-26",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_25353_WebXMLFile_20260928_181114529.xml"
+  },
+  {
+   "company": "Brigade Hotel Ven.",
+   "sector": "Hotels and Travels",
+   "kind": "call",
+   "date": "2026-10-27",
+   "time": "2:30 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/BRIGADE2_15102026190042_NoticeofBMTWCC30092026.pdf"
   },
   {
    "company": "Huhtamaki India",
@@ -855,18 +946,18 @@
   {
    "company": "Jubilant Ingrevia",
    "sector": "Pharma CDMO",
-   "kind": "results",
-   "date": "2026-10-27",
-   "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_19288_WebXMLFile_20261014_164234242.xml"
-  },
-  {
-   "company": "Jubilant Ingrevia",
-   "sector": "Pharma CDMO",
    "kind": "call",
    "date": "2026-10-27",
    "time": "5:00 pm",
    "url": "https://nsearchives.nseindia.com/corporate/JUBLINGREA_14102026164036_Intimation_Investors_Meet_September_2026.pdf"
+  },
+  {
+   "company": "Jubilant Ingrevia",
+   "sector": "Pharma CDMO",
+   "kind": "results",
+   "date": "2026-10-27",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_19288_WebXMLFile_20261014_164234242.xml"
   },
   {
    "company": "Kanpur Plastipack",
@@ -891,6 +982,15 @@
    "date": "2026-10-27",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_19887_WebXMLFile_20260928_153514362.xml"
+  },
+  {
+   "company": "Sunteck Realty",
+   "sector": "Realty",
+   "kind": "call",
+   "date": "2026-10-27",
+   "time": "4:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/SUNTECK_15102026213747_SRL.pdf"
   },
   {
    "company": "Syngene International",
@@ -934,6 +1034,22 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_19266_WebXMLFile_20261014_092412181.xml"
   },
   {
+   "company": "InfoBeans Technologies",
+   "sector": "Software",
+   "kind": "results",
+   "date": "2026-10-28",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_14975_WebXMLFile_20261015_184856474.xml"
+  },
+  {
+   "company": "KPIT Technologies",
+   "sector": "Software",
+   "kind": "results",
+   "date": "2026-10-28",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_17417_WebXMLFile_20261015_165522802.xml"
+  },
+  {
    "company": "Manba Finance",
    "sector": "Finance",
    "kind": "call",
@@ -967,12 +1083,36 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1898_WebXMLFile_20260928_132035731.xml"
   },
   {
+   "company": "Brigade Enterprises",
+   "sector": "Realty",
+   "kind": "results",
+   "date": "2026-10-29",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2700_WebXMLFile_20261015_184751221.xml"
+  },
+  {
    "company": "Craftsman Automation",
    "sector": "Auto Related",
    "kind": "call",
    "date": "2026-10-29",
    "time": "4:00 pm",
    "url": "https://nsearchives.nseindia.com/corporate/CRAFTSMAN_14102026100911_Earningscall.pdf"
+  },
+  {
+   "company": "Deepak Nitrite",
+   "sector": "Chemicals",
+   "kind": "results",
+   "date": "2026-10-29",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_3567_WebXMLFile_20261015_142544252.xml"
+  },
+  {
+   "company": "Greenply Industries",
+   "sector": "Consumer Durables",
+   "kind": "results",
+   "date": "2026-10-29",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1274_WebXMLFile_20261015_115044176.xml"
   },
   {
    "company": "Indegene",
@@ -1016,6 +1156,32 @@
    "url": "https://nsearchives.nseindia.com/corporate/ZENSARTECH_14102026162534_SEIntimationEarningCall.pdf"
   },
   {
+   "company": "Ajanta Pharma",
+   "sector": "Pharma",
+   "kind": "results",
+   "date": "2026-10-30",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1894_WebXMLFile_20261015_103440161.xml"
+  },
+  {
+   "company": "Ajanta Pharma",
+   "sector": "Pharma",
+   "kind": "call",
+   "date": "2026-10-30",
+   "time": "16:00 hrs IST",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/AJANTPHARM_15102026162121_Investorcallintimation15102026.pdf"
+  },
+  {
+   "company": "Brigade Enterprises",
+   "sector": "Realty",
+   "kind": "call",
+   "date": "2026-10-30",
+   "time": "2:30 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/BRIGADE_15102026185516_NoticeofBMTWCCFinal.pdf"
+  },
+  {
    "company": "Indegene",
    "sector": "Healthcare",
    "kind": "call",
@@ -1031,6 +1197,15 @@
    "date": "2026-10-30",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_20422_WebXMLFile_20261014_114957151.xml"
+  },
+  {
+   "company": "Motherson Sumi Wirin",
+   "sector": "Auto Related",
+   "kind": "call",
+   "date": "2026-10-30",
+   "time": "1800 Hours (IST)",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/MSWIL_15102026130613_DisclosureCall.pdf"
   },
   {
    "company": "Navin Fluorine Intl",
@@ -1140,12 +1315,12 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1233_WebXMLFile_20261013_164938453.xml"
   },
   {
-   "company": "PSP Projects",
-   "sector": "Construction",
+   "company": "Nelcast",
+   "sector": "Forging",
    "kind": "results",
    "date": "2026-11-02",
    "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_15121_WebXMLFile_20261012_113941511.xml"
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2619_WebXMLFile_20261015_125830038.xml"
   },
   {
    "company": "PSP Projects",
@@ -1155,6 +1330,22 @@
    "time": "4:00 pm",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/PSPPROJECT_14102026122148_20261014_Con_Call_Intimation_37.pdf"
+  },
+  {
+   "company": "PSP Projects",
+   "sector": "Construction",
+   "kind": "results",
+   "date": "2026-11-02",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_15121_WebXMLFile_20261012_113941511.xml"
+  },
+  {
+   "company": "SH Kelkar & Co",
+   "sector": "Chemicals",
+   "kind": "results",
+   "date": "2026-11-02",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_13234_WebXMLFile_20261015_110400328.xml"
   },
   {
    "company": "Alkyl Amines",
@@ -1167,19 +1358,19 @@
   {
    "company": "Emcure Pharma",
    "sector": "Pharma",
-   "kind": "results",
-   "date": "2026-11-03",
-   "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_19900_WebXMLFile_20261014_164418472.xml"
-  },
-  {
-   "company": "Emcure Pharma",
-   "sector": "Pharma",
    "kind": "call",
    "date": "2026-11-03",
    "time": "4:00 pm",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/EMCURE_14102026165144_IntimationEarningsCallQ2FY27.pdf"
+  },
+  {
+   "company": "Emcure Pharma",
+   "sector": "Pharma",
+   "kind": "results",
+   "date": "2026-11-03",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_19900_WebXMLFile_20261014_164418472.xml"
   },
   {
    "company": "Fractal Analytics",
@@ -1214,6 +1405,22 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_5022_WebXMLFile_20261010_122908029.xml"
   },
   {
+   "company": "Servotech Renew",
+   "sector": "Electrical Equipment",
+   "kind": "results",
+   "date": "2026-11-03",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_15429_WebXMLFile_20261015_112447936.xml"
+  },
+  {
+   "company": "Zydus Wellness",
+   "sector": "Food Products",
+   "kind": "results",
+   "date": "2026-11-03",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2952_WebXMLFile_20261015_182731939.xml"
+  },
+  {
    "company": "BASF India",
    "sector": "Chemicals",
    "kind": "results",
@@ -1222,12 +1429,28 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_203_WebXMLFile_20260925_115834003.xml"
   },
   {
+   "company": "Century Plyboards(I)",
+   "sector": "Consumer Durables",
+   "kind": "results",
+   "date": "2026-11-04",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2378_WebXMLFile_20261015_165054549.xml"
+  },
+  {
    "company": "Dr Lal PathLabs",
    "sector": "Healthcare Diagnostic",
    "kind": "results",
    "date": "2026-11-04",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_13310_WebXMLFile_20260925_181947401.xml"
+  },
+  {
+   "company": "Ellen. Indl. Gas",
+   "sector": "Chemicals",
+   "kind": "results",
+   "date": "2026-11-04",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_24517_WebXMLFile_20261015_161651470.xml"
   },
   {
    "company": "eMudhra",
@@ -1255,6 +1478,14 @@
    "url": "https://nsearchives.nseindia.com/corporate/FRACTAL_25092026145104_Earnings_call_250926.pdf"
   },
   {
+   "company": "Isgec Heavy Engg.",
+   "sector": "Industrials",
+   "kind": "results",
+   "date": "2026-11-04",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_19046_WebXMLFile_20261015_142156911.xml"
+  },
+  {
    "company": "JTEKT India",
    "sector": "Auto Related",
    "kind": "results",
@@ -1265,19 +1496,19 @@
   {
    "company": "Jyothy Labs",
    "sector": "Consumer Durables",
-   "kind": "results",
-   "date": "2026-11-04",
-   "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2693_WebXMLFile_20261013_120617349.xml"
-  },
-  {
-   "company": "Jyothy Labs",
-   "sector": "Consumer Durables",
    "kind": "call",
    "date": "2026-11-04",
    "time": "16:00 hours IST",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/JYOTHYLAB_14102026103226_SE_Intimation_ConCall.pdf"
+  },
+  {
+   "company": "Jyothy Labs",
+   "sector": "Consumer Durables",
+   "kind": "results",
+   "date": "2026-11-04",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2693_WebXMLFile_20261013_120617349.xml"
   },
   {
    "company": "Kansai Nerolac",
@@ -1290,19 +1521,19 @@
   {
    "company": "Keystone Realtors",
    "sector": "Realty",
-   "kind": "results",
-   "date": "2026-11-04",
-   "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_20807_WebXMLFile_20261014_145311009.xml"
-  },
-  {
-   "company": "Keystone Realtors",
-   "sector": "Realty",
    "kind": "call",
    "date": "2026-11-04",
    "time": "4:00 pm",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/RUSTOMJEE_14102026152152_Earning_Call_Intimation_-_Q2FY26.pdf"
+  },
+  {
+   "company": "Keystone Realtors",
+   "sector": "Realty",
+   "kind": "results",
+   "date": "2026-11-04",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_20807_WebXMLFile_20261014_145311009.xml"
   },
   {
    "company": "KSH International",
@@ -1319,6 +1550,14 @@
    "date": "2026-11-04",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_16350_WebXMLFile_20261009_123405783.xml"
+  },
+  {
+   "company": "Saregama India",
+   "sector": "Media and Entertainment",
+   "kind": "results",
+   "date": "2026-11-04",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1623_WebXMLFile_20261015_180759088.xml"
   },
   {
    "company": "Insecticides (India)",
@@ -1347,19 +1586,19 @@
   {
    "company": "TeamLease Services",
    "sector": "Commercial Services",
-   "kind": "results",
-   "date": "2026-11-05",
-   "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_13446_WebXMLFile_20261014_182736659.xml"
-  },
-  {
-   "company": "TeamLease Services",
-   "sector": "Commercial Services",
    "kind": "call",
    "date": "2026-11-05",
    "time": "5:00 pm",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/TEAMLEASE_14102026181747_TeamLeaseIntimationofConcallonQ2FY27.pdf"
+  },
+  {
+   "company": "TeamLease Services",
+   "sector": "Commercial Services",
+   "kind": "results",
+   "date": "2026-11-05",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_13446_WebXMLFile_20261014_182736659.xml"
   },
   {
    "company": "TTK Prestige",
@@ -1368,6 +1607,14 @@
    "date": "2026-11-06",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_1328_WebXMLFile_20260923_163919842.xml"
+  },
+  {
+   "company": "TTK Prestige",
+   "sector": "Consumer Durables",
+   "kind": "call",
+   "date": "2026-11-06",
+   "time": "4:00 pm",
+   "url": "https://nsearchives.nseindia.com/corporate/TTKPRESTIG1_15102026170945_SE_Intimation_EarningCall_11062026_signed.pdf"
   },
   {
    "company": "Suprajit Engineering",
