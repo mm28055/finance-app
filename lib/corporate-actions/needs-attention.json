@@ -1237,5 +1237,33 @@
     "subject": "New Special call 07 Oct 2026",
     "why": "Special call 07 Oct 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
     "addedOn": "2026-10-14"
+  },
+  {
+    "company": "Bajaj Consumer Care",
+    "sector": "Consumer Durables",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Hdfc Small Cap Fund (DII) cut its stake from 6.85% to 3.89%; 360 One Focused Equity Fund (DII) raised its stake from 1.56% to 3.87%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-15"
+  },
+  {
+    "company": "Jash Engineering",
+    "sector": "Industrials",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-15"
+  },
+  {
+    "company": "Greenpanel Inds.",
+    "sector": "Consumer Durables",
+    "subject": "Call drift: pass → Fits",
+    "why": "Call is pass; the price check has moved from stretched to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-15"
+  },
+  {
+    "company": "Rubicon Research",
+    "sector": "Pharma",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-15"
   }
 ]
