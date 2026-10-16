@@ -1,5 +1,5 @@
 {
- "date": "2026-10-16",
+ "date": "2026-10-17",
  "calls": {
   "Anthem Biosciences": {
    "call": "follow",
@@ -906,7 +906,7 @@
    "sector": "Construction"
   },
   "M & B Engineer.": {
-   "call": "wait",
+   "call": "follow",
    "sector": "Construction"
   },
   "EPack Prefab Techno.": {
@@ -1486,7 +1486,7 @@
    "sector": "Vehicles"
   },
   "Deep Industries": {
-   "call": "own",
+   "call": "follow",
    "sector": "Oil"
   },
   "Gulf Oil Lubricant": {

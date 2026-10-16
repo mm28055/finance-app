@@ -1,6 +1,24 @@
 {
  "changes": [
   {
+   "date": "2026-10-17",
+   "company": "M & B Engineer.",
+   "sector": "Construction",
+   "from": "wait",
+   "to": "follow",
+   "price": 290.32,
+   "why": "The cheapest of the steel-building makers, and its cash is better than the filed figures showed: its FY26 statement counted ₹120.81cr of IPO deposits as operating spending, and corrected, operating cash was about +₹90cr against ₹93cr of profit, and ₹198cr against ₹265cr over FY22–FY26 (75%). Moved up from wait on 16 October 2026; own needs H1 FY27 cash confirming it, the margin near 11% and orders recovering."
+  },
+  {
+   "date": "2026-10-17",
+   "company": "Deep Industries",
+   "sector": "Oil",
+   "from": "own",
+   "to": "follow",
+   "price": 753.35,
+   "why": "Fast, contract-backed growth at a reasonable price, but the rest of the promoter loan did not come back by the end of Q2 FY27, the condition I set for owning it; management now says the balance should be nil by March (moved from own, 16 October 2026)."
+  },
+  {
    "date": "2026-10-13",
    "company": "Caplin Point Labs",
    "sector": "Pharma",
