@@ -2,7 +2,7 @@
  "items": [
   {
    "id": "heg-graphite-listing",
-   "text": "HEG Graphite lists in late October: add it to its sector note once it trades, with its ₹650cr electrode expansion to 115,000 tonnes (due early 2028) as a project.",
+   "text": "HEG Graphite (renamed HEG Limited on 12 October 2026) lists in late October: add it to its sector note once it trades, with its ₹650cr electrode expansion to 115,000 tonnes (due early 2028) as a project.",
    "addedOn": "2026-09-29",
    "notBefore": "2026-10-20"
   },
@@ -17,6 +17,11 @@
    "text": "SKF India has filed Q2 results: put it into the Bearings live table.",
    "addedOn": "2026-09-29",
    "notBefore": "2026-11-01"
+  },
+  {
+   "id": "greenpanel-pe-data",
+   "text": "The dashboard's P/E for Greenpanel is about 12 while Screener shows about 260 (₹7cr trailing profit), so its live price check wrongly says fits; fix the profit figure the daily price sync uses.",
+   "addedOn": "2026-10-16"
   }
  ]
 }
