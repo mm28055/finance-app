@@ -14233,7 +14233,13 @@
    "text": "Skid capacity reaching 15,000 a year by October–November 2026",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-16",
+     "text": "Board said on 14 Oct 2026 that 12,000 a year is reached and the last 3,000 follows by December 2026"
+    }
+   ]
   },
   {
    "id": "aeroflex-industries-q2fy27-1",
@@ -28770,7 +28776,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "aeroflex-industries-skids-15000"
+   "project": "aeroflex-industries-skids-15000",
+   "revisions": [
+    {
+     "on": "2026-10-16",
+     "text": "12,000 reached by 14 Oct 2026; 15,000 now due by December 2026"
+    }
+   ]
   },
   {
    "id": "aeroflex-industries-hoses-m1",
@@ -28779,8 +28791,12 @@
    "text": "Hose expansion and annealing furnace complete",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "aeroflex-industries-hoses"
+   "status": "met",
+   "project": "aeroflex-industries-hoses",
+   "actual": "20-million-metre hose capacity completed by 14 Oct 2026, ahead of Q4 FY27",
+   "resolvedOn": "2026-10-16",
+   "resolvedBy": "review",
+   "outcome": "Stays as is"
   },
   {
    "id": "venus-pipes-and-tubes-spools-m1",
@@ -31177,8 +31193,12 @@
    "text": "New 400 MW line running",
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "australian-prem-line2"
+   "status": "partly",
+   "project": "australian-prem-line2",
+   "actual": "Commercial production began 14 Oct 2026, about two weeks after H1 FY27 ended",
+   "resolvedOn": "2026-10-16",
+   "resolvedBy": "review",
+   "outcome": "Stays as is"
   },
   {
    "id": "vikram-solar-cells-m1",
@@ -32665,6 +32685,26 @@
    "createdOn": "2026-10-14",
    "status": "pending",
    "project": "sjs-enterprises-walter-pack-pune"
+  },
+  {
+   "id": "aeroflex-industries-expansion-2028-m1",
+   "company": "Aeroflex Industries",
+   "sector": "Iron and Steel",
+   "text": "Hoses at 30 million metres and skids at 30,000 a year, with the new assemblies plant running",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-16",
+   "status": "pending",
+   "project": "aeroflex-industries-expansion-2028"
+  },
+  {
+   "id": "tinna-rubber-andhra-complex-m1",
+   "company": "Tinna Rubber",
+   "sector": "Rubber",
+   "text": "All 40 acres in Andhra Pradesh registered and construction of the recycling complex started",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-16",
+   "status": "pending",
+   "project": "tinna-rubber-andhra-complex"
   }
  ]
 }

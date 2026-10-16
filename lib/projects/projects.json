@@ -9097,10 +9097,16 @@
    "cost": "₹48cr",
    "expectedStart": "Q3 FY27",
    "adds": "about 7x the original skid capacity; peak use 75–80%",
-   "status": "building",
-   "source": "Q1 FY27 call (Jul 2026): 15,000 by the start of Q3, a quarter later than first said",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "Skids from 2,000 to 15,000 a year (7.5x); 9,000 reached, +67% more to come"
+   "status": "started",
+   "source": "Board outcome 14 Oct 2026: 12,000 a year reached (69% used in Q1 FY27), the last 3,000 by December 2026; Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-10-16",
+   "capacityAdd": "Skids from 2,000 to 15,000 a year (7.5x); 12,000 reached by 14 Oct 2026, the last 3,000 by December",
+   "revisions": [
+    {
+     "on": "2026-10-16",
+     "text": "Board said on 14 Oct 2026 that 12,000 is done and the last 3,000 follows by December 2026, later than the start of Q3 FY27 guided in July"
+    }
+   ]
   },
   {
    "id": "aeroflex-industries-hoses",
@@ -9110,9 +9116,9 @@
    "what": "Hose capacity from 16.5 to 20 million metres a year, with robotic welding lines and a new annealing furnace",
    "cost": "₹54cr (spread over FY25–FY27)",
    "adds": "₹650–675cr of hose-business revenue at peak use (65–66% used now)",
-   "status": "building",
-   "source": "Q1 FY27 call (Jul 2026); annealing furnace due by end of this year (May call)",
-   "updatedOn": "2026-09-29",
+   "status": "started",
+   "source": "Board outcome 14 Oct 2026: hose capacity of 20 million metres a year completed (70% used in Q1 FY27); Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-10-16",
    "capacityAdd": "Hoses from 16.5 to 20 million metres a year (+21%); ₹650–675cr hose revenue at peak"
   },
   {
@@ -9177,8 +9183,8 @@
    "expectedStart": "Q3 FY27",
    "adds": "roughly quadruples liquid storage at India's highest-revenue major port",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026): first phase (~100,000 cubic metres) now Q3 FY27, a quarter later than H1 FY27 said in June",
-   "updatedOn": "2026-09-29",
+   "source": "Filing 15 Oct 2026: the 35,000-tonne-a-year LPG bottling plant at JNPA is commissioned (to be transferred to Aegis Vopak); Q1 FY27 call (Aug 2026): first liquid phase (~100,000 cubic metres) Q3 FY27",
+   "updatedOn": "2026-10-16",
    "capacityAdd": "+318,100 cubic metres of liquid tanks (JNPA about 4x; about +16% on the group's ~2 million), +77,236 t of LPG storage (about +30%) and a 35,000 t-a-year bottling plant"
   },
   {
@@ -12552,8 +12558,8 @@
    "cost": "About ₹5,000–5,500cr, mainly from own cash",
    "expectedStart": "Q4 FY29",
    "status": "planned",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-09-29",
+   "source": "Board approved the phased plan on 14 Oct 2026 (with Q2 FY27 results), mostly from internal cash; Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-10-16",
    "capacityAdd": "9 GW of ingots and wafers (5 GW in FY29, 4 GW in FY30); new step, none today"
   },
   {
@@ -12731,10 +12737,16 @@
    "name": "Second 400 MW TOPCon module line",
    "what": "Another 400 MW TOPCon module line at Prantij, taking module capacity from 800 MW to 1.2 GW; building already done",
    "expectedStart": "H1 FY27",
-   "status": "building",
-   "source": "H2 FY26 call (May 2026): due August 2026; not yet confirmed",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+400 MW of modules (800 MW to 1.2 GW, +50%)"
+   "status": "started",
+   "source": "Regulation 30 filing, 14 Oct 2026: full commercial production began on the new 400 MW TOPCon line at Tajpur, Gujarat, taking module capacity from 800 MW to 1.2 GW",
+   "updatedOn": "2026-10-16",
+   "capacityAdd": "+400 MW of modules (800 MW to 1.2 GW, +50%)",
+   "revisions": [
+    {
+     "on": "2026-10-16",
+     "text": "Commercial production began 14 Oct 2026 (Q3 FY27), about two months after the August 2026 date given in May"
+    }
+   ]
   },
   {
    "id": "australian-prem-battery",
@@ -13444,6 +13456,31 @@
    "source": "NSE filing 11 Oct 2026: sub-lease signed; commercial operations by May 2027; internal accruals/debt",
    "updatedOn": "2026-10-14",
    "capacityAdd": "Floor space from 64,273 to 1,27,359 sq ft"
+  },
+  {
+   "id": "aeroflex-industries-expansion-2028",
+   "company": "Aeroflex Industries",
+   "sector": "Iron and Steel",
+   "name": "Hoses to 30 million metres, assemblies plant and skids to 30,000",
+   "what": "Hose and braiding capacity from 20 to 30 million metres a year plus a new hose-assemblies plant (to turn 70–75% of hose into assemblies), and liquid-cooling skids from 15,000 to 30,000 a year in an additional facility; brownfield at Taloja plus the new assemblies plant",
+   "cost": "₹202cr (₹124cr hoses and assemblies, ₹78cr skids), from internal cash, new equity and bridge loans",
+   "expectedStart": "Q4 FY28",
+   "adds": "₹500–550cr of extra revenue at peak use (management)",
+   "status": "planned",
+   "source": "Board outcome and press release, 14 Oct 2026",
+   "updatedOn": "2026-10-16",
+   "capacityAdd": "Hoses +10 million metres (+50%); skids +15,000 a year (2x)"
+  },
+  {
+   "id": "tinna-rubber-andhra-complex",
+   "company": "Tinna Rubber",
+   "sector": "Rubber",
+   "name": "Andhra Pradesh integrated recycling complex",
+   "what": "A tyre-recycling, plastic-recycling, pyrolysis and recovered-carbon-black complex on a 40-acre site in Andhra Pradesh; 19 acres registered, due diligence on the other 21 advanced",
+   "cost": "Up to ₹250cr over three years",
+   "status": "planned",
+   "source": "Regulation 30 filing, 15 Oct 2026 (board approval 20 Jul 2026)",
+   "updatedOn": "2026-10-16"
   }
  ]
 }
