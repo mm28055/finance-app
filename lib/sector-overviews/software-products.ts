@@ -724,8 +724,8 @@ export const softwareProducts: SectorOverview = {
         {
             company: 'Capillary Technologies', rank: 4, stance: 'SCALEUP', segment: SAAS,
             what: "A Bengaluru-founded loyalty-programme software company serving 465 brands in 53 countries, about 60% of revenue in the US, growing organically and by buying and migrating rivals' customers (Kognitiv, SessionM).",
-            view: "**A category leader whose controls lag its acquisitions.** ARR reached ₹1,026.6cr, blended retention is 113%, customers pay upfront and the company-adjusted margin rose from 10.5% to 17.2%. But Q1 was a filed loss of ₹9.6cr after a ₹33.4cr payment fraud, organic growth is about 17% including currency, and the top five clients are about a third of revenue. The price needs about {need:Capillary Technologies|32}% a year against my ~28%.",
-            watch: 'Kognitiv migrations lifting gross margin; organic retention back to 115%; the KPMG forensic review and insurance claim closing without new findings.',
+            view: "**A category leader whose controls lag its acquisitions.** ARR reached ₹1,026.6cr, blended retention is 113%, customers pay upfront and the company-adjusted margin rose from 10.5% to 17.2%. But Q1 was a filed loss of ₹9.6cr after a ₹33.4cr payment fraud, organic growth is about 17% including currency, and the top five clients are about a third of revenue. The promoter, a private-equity-backed holding company, sold 4.14% in an August 2026 block at ₹520.86 (after 0.74% in June), taking it from 51.45% to 47.23% (added 16 Oct 2026). The price needs about {need:Capillary Technologies|32}% a year against my ~28%.",
+            watch: 'Kognitiv migrations lifting gross margin; organic retention back to 115%; the KPMG forensic review and insurance claim closing without new findings; further promoter block sales.',
         },
         {
             company: 'Aurionpro Solutions', rank: 5, stance: 'SCALEUP', segment: BANK,
