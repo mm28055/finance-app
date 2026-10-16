@@ -5977,10 +5977,16 @@
    "sector": "Construction",
    "text": "Margin holding near 11% in Q2 FY27 (company figure; Q1 11.4%)",
    "due": "Q2 FY27",
-   "ifMet": "Back to follow, together with orders and cash",
-   "ifMissed": "Stays wait",
+   "ifMet": "Supports own, together with orders and cash",
+   "ifMissed": "Stays follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-16",
+     "text": "Moved from wait to follow early: FY26 cash was misfiled (₹120.81cr of IPO deposits counted as operating spending), so these now decide own, not follow"
+    }
+   ]
   },
   {
    "id": "m-and-b-engineer-q2fy27-2",
@@ -5988,10 +5994,16 @@
    "sector": "Construction",
    "text": "Orders back near ₹100cr a month in Q2 FY27",
    "due": "Q2 FY27",
-   "ifMet": "Back to follow, together with margin and cash",
-   "ifMissed": "Stays wait",
+   "ifMet": "Supports own, together with margin and cash",
+   "ifMissed": "Stays follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-16",
+     "text": "Moved from wait to follow early: FY26 cash was misfiled (₹120.81cr of IPO deposits counted as operating spending), so these now decide own, not follow"
+    }
+   ]
   },
   {
    "id": "m-and-b-engineer-q2fy27-3",
@@ -5999,10 +6011,16 @@
    "sector": "Construction",
    "text": "Operating cash turning positive in H1 FY27, with the Sanand expansion running from October",
    "due": "Q2 FY27",
-   "ifMet": "Back to follow, together with margin and orders",
-   "ifMissed": "Stays wait",
+   "ifMet": "Supports own, together with margin and orders",
+   "ifMissed": "Stays follow; back to wait if cash turns negative again",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-16",
+     "text": "Moved from wait to follow early: FY26 cash was misfiled (₹120.81cr of IPO deposits counted as operating spending), so these now decide own, not follow"
+    }
+   ]
   },
   {
    "id": "m-and-b-engineer-q4fy27-1",
@@ -14856,6 +14874,21 @@
    "due": "Q2 FY27",
    "ifMissed": "Governance concern grows; fresh related-party lending would change the view for the worse",
    "createdOn": "2026-09-29",
+   "status": "missed",
+   "actual": "Not repaid by 30 Sep: on the 30 Sep 2026 call management said the balance \"should be nil by March\"",
+   "resolvedOn": "2026-10-16",
+   "resolvedBy": "review",
+   "outcome": "Moved from own to follow"
+  },
+  {
+   "id": "deep-industries-q4fy27-3",
+   "company": "Deep Industries",
+   "sector": "Oil",
+   "text": "Prabha Energy (promoter company) loan balance nil by March 2027, as promised on the 30 Sep 2026 call",
+   "due": "Q4 FY27",
+   "ifMet": "Back to own, if nothing else has worsened",
+   "ifMissed": "A second missed promise on related-party money: the view turns against owning it",
+   "createdOn": "2026-10-16",
    "status": "pending"
   },
   {
