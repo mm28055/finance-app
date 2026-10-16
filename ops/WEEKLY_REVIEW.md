@@ -23,6 +23,7 @@ Order of work (at most 40 follow-ups per run; the rest wait for the next run —
 4. The filings pass (below).
 5. The news pass (below).
 6. The results pass (below).
+7. The Top 12 pass (below).
 
 For each entry, by its `subject`/`why`:
 
@@ -136,6 +137,17 @@ the overnight verdict is right. If the result changes the case, it is handled wi
 (item 2 above) — do not update the note twice. Then add `"reviewed": {"on": "<YYYY-MM-DD>", "text": "<one line: your
 view, and if you disagree with the overnight verdict, why>"}`. Correct a wrong figure or a wrong `take.verdict` in
 place (say so in `reviewed.text`). The calendar shows the review under the result.
+
+**Top 12 pass.** `lib/top-ideas/top-ideas.json` holds twelve ideas for the owner's own portfolio (about 25% a year,
+held to March 2030) and a reserve list; the page recomputes returns from live prices, so price moves alone need nothing.
+For each Top 12 or reserve company touched by this run's work (a new call, a results entry, a filing, a call change): check the
+idea's `breaksIt` triggers and `nextChecks` against the new facts. If a trigger is hit, or the facts move FY30 profit or
+the exit P/E, update that idea's numbers and text (FY30 profit, exit P/E, bad case, conviction, the checks) using the
+same rules as before (the exit-P/E scale in its method text; each idea's full research and the method are in
+`ops/top12-research/2026-10-16/`), or move it to the reserve list and promote the best
+reserve name that now earns about 20%+ a year at today's price. Change only on facts, never on price alone. Add one
+dated line per change to `changes` (newest first) and list it in the log. If nothing touched a Top 12 or reserve name,
+change nothing.
 
 Then mark the entry done: add `"handled": "<YYYY-MM-DD>: <one line: what you found and did>"`. Never delete entries.
 

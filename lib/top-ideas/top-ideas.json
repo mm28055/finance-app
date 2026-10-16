@@ -1,0 +1,987 @@
+{
+ "asOf": "2026-10-16",
+ "sellBy": "2030-03-31",
+ "target": 25,
+ "limits": {
+  "stock": 20,
+  "theme": 40
+ },
+ "method": [
+  "I started from all 658 companies the notes cover. A quick screen on each note's growth estimate and today's P/E kept about 70 that might earn 20% a year or more; reading their notes removed those with governance problems (heavy promoter pledges, qualified audits, money moving to promoters) or profit that does not turn into cash. That left 40, mostly fast growers. Because those mostly failed on price, I added 12 cheaper, steadier companies (Sharda Cropchem, SBI, Gulf Oil and others) so the list was not tilted to one style: 52 in all.",
+  "Each of the 52 got a deep dive: both of its latest calls read in full, its filed figures from Screener, everything its note says, and anything announced since. For each I set a clean profit base (one-offs removed), built profit year by year to FY30 from orders, capacity, margins, interest and tax, and haircut the promises of managements that have missed before.",
+  "The selling price is the heart of it, as you said: what P/E the market pays in March 2030 depends on how much growth is still ahead then. I used one scale for every company: about 10–15 times profit for growth under 8% a year, 14–20 for 8–12%, 18–26 for 12–16%, 24–34 for 16–20%, 30–42 for 20–25% and at most 50 above that, lower in each band for weak cash, debt, governance or one big customer, and checked against peers and each stock's own history.",
+  "Return a year = (FY30 profit × that P/E, less any new shares the company issues) against today's market value, over the time left to March 2030, plus dividends. The bad case lowers profit for the most likely disappointment and takes the P/E down one band. Each card also shows what you would earn if the market kept paying today's P/E, because that one assumption decides most of the answer.",
+  "The honest result: at today's prices only V2 Retail clears 25% in the normal case, and it is a starter because it has not yet produced cash. Five more come within three points (J Kumar, CleanMax, Samhi, Sunteck, M&B). Most of the popular growth names (defence, electronics, power equipment, platforms) return under 10% a year on these rules, because they already trade at 60–150 times profit. The last six of the twelve are good businesses at 17–19% today; each card shows the market value at which it would clear 25%.",
+  "Conviction: High would mean clearing 25% with room and a bad case that still makes money (none today). Medium is within reach of 25%, or clears it with one weak spot. Starter clears it but carries a real flag. On a dip means worth owning, but only below the value shown. Your limits are built into the weights column: at most 20% in one stock and 40% in one theme."
+ ],
+ "ideas": [
+  {
+   "company": "J Kumar Infra",
+   "sector": "Construction",
+   "theme": "Construction",
+   "conviction": "Medium",
+   "mcapAtPick": 3363,
+   "profitBase": {
+    "label": "year to June 2026",
+    "value": 381,
+    "note": "No exceptional items or tax credits; ₹77cr of other income (deposit interest on guarantee margin money) kept as recurring; the coming Vizag land-sale gain (₹180cr deal) is excluded."
+   },
+   "base": {
+    "fy30Profit": 640,
+    "exitPe": 11,
+    "annualReturn": 24.8,
+    "profitCagr": 13.4,
+    "growthAfterFy30": 11,
+    "exitPeWhy": "Middle of its own 5-year range and top of peers (9–11x); above today's 8.8 only if the approval-driven revenue stall clears in H2 FY27."
+   },
+   "bad": {
+    "what": "Site handovers keep slipping (Vadhvan land, VDCR, metro awards late), so revenue grows only ~6% a year with a 14% margin.",
+    "fy30Profit": 475,
+    "exitPe": 8,
+    "annualReturn": 4.5
+   },
+   "dilution": 0,
+   "divYield": 0.9,
+   "tailRisk": "A Maharashtra spending freeze or payment delays at Mumbai agencies, which dominate the order book.",
+   "scores": {
+    "balanceSheet": 4,
+    "earningsQuality": 3,
+    "management": 3,
+    "moatRunway": 3
+   },
+   "scoreWhy": {
+    "balanceSheet": "Net cash (₹45cr at June), gross debt ₹840cr falling below ₹800cr, ICRA A+/Positive; but guarantees of ₹4,364cr use 65% of lines.",
+    "earningsQuality": "Four-year operating cash was 70% of operating profit, but only thanks to FY26's advance-led ₹1,128cr; FY23–FY25 was 44%; clean audit, no write-offs.",
+    "management": "Kept 14–15% margins and refused low-margin work, no pledge; but missed the FY26 growth guide by 14 points and moved the ₹7,500cr target a year.",
+    "moatRunway": "Specialist urban tunnels and elevated roads for prompt-paying clients, with a ₹1 lakh crore Mumbai pipeline; but order-cycle exposure and guarantee limits."
+   },
+   "oneLine": "Net-cash specialist contractor at under 9x profit with a 4-year order book; about 25% a year if revenue finally converts in H2 FY27.",
+   "whyOwn": [
+    "Price is 8.8x trailing profit with net cash, against peers at 9–11x and its own 5-year middle of about 11x.",
+    "A record ₹24,700cr order book (with the latest win and Delhi Metro lowest bid) is about 4 years of revenue; FY27 wins already ₹5,500cr against ₹1,039cr in FY26.",
+    "Margin held at 14–15% in every quarter through two flat years, with escalation clauses on every contract."
+   ],
+   "mustGoRight": [
+    "H2 FY27 revenue runs at ₹1,700–1,800cr a quarter as GMLR tunnelling, Chennai and VDCR execute.",
+    "Order wins of at least ₹8,000cr a year, including a Mumbai metro or Uttan–Virar package, with guarantee lines enlarged.",
+    "Margin stays at 14% or above while interest and TBM depreciation are absorbed."
+   ],
+   "breaksIt": [
+    "FY27 revenue growth below 8% (under about ₹6,200cr).",
+    "Margin below 13.5% for two quarters.",
+    "Net debt (company basis) above ₹500cr without a matching rise in revenue."
+   ],
+   "worstFacts": [
+    "FY26 revenue grew about 1% against a 15% guide; Q1 FY27 only +2%.",
+    "₹7,500cr revenue target moved from FY27 to FY28.",
+    "Bank-guarantee lines 65% used; guarantees up 48% to ₹4,364cr.",
+    "FY26 cash of ₹1,128cr leaned on ₹706cr of client advances; net cash fell ₹220cr in Q1.",
+    "All ₹470cr of client advances carry 8.5–10% interest.",
+    "Order book doubled while revenue stayed flat; Orange Gate cancelled; Vadhvan waits on land."
+   ],
+   "nextChecks": [
+    "Q2 FY27 revenue of at least ₹1,550cr (+15% on ₹1,343cr) and H1 at least ₹3,050cr.",
+    "Delhi Metro ₹1,500cr LoA received and FY27 wins past ₹7,000cr.",
+    "Operating margin at least 14% and gross debt at or below ₹840cr."
+   ]
+  },
+  {
+   "company": "V2 Retail",
+   "sector": "Retail",
+   "theme": "Consumer & services",
+   "conviction": "Starter",
+   "mcapAtPick": 6062,
+   "profitBase": {
+    "label": "year to June 2026",
+    "value": 165,
+    "note": "Screener ₹179cr less ₹32cr unexplained Q3 FY26 other income (after tax ~₹24cr), plus ~₹9cr after tax of Q4 FY26 one-off write-offs"
+   },
+   "base": {
+    "fy30Profit": 440,
+    "exitPe": 32,
+    "annualReturn": 27.7,
+    "profitCagr": 30,
+    "growthAfterFy30": 22,
+    "exitPeWhy": "Lower half of the 30–42 band for 20–25% growth: 2,500-store runway, but weak cash conversion and no brand moat; below today's 37."
+   },
+   "bad": {
+    "what": "Same-store growth stays at 0–5% and a value-fashion price war slows openings to ~100 a year with a 4% profit margin.",
+    "fy30Profit": 278,
+    "exitPe": 26,
+    "annualReturn": 5.2
+   },
+   "dilution": 0,
+   "divYield": 0,
+   "tailRisk": "The founder's earlier chain, Vishal Retail, collapsed on debt-funded expansion after 2008; fast openings paid for with stock and debt repeat that pattern.",
+   "scores": {
+    "balanceSheet": 3,
+    "earningsQuality": 2,
+    "management": 3,
+    "moatRunway": 3
+   },
+   "scoreWhy": {
+    "balanceSheet": "Net debt ₹988cr, mostly leases, about 1.9x operating profit; India Ratings A/Positive, but FY26 operating cash was −₹103cr and expansion needs more debt.",
+    "earningsQuality": "Only 33% of FY22–FY26 operating profit became operating cash; 195 inventory days; auditor flagged a ₹12.88cr advance outstanding since 2019.",
+    "management": "Met store and revenue promises (136 vs 130 stores, 58% vs 50%+ growth) but cut the same-store guide to 5–7% from 8–10%; small promoter pledge.",
+    "moatRunway": "Cost edge (₹190 per sq ft, 0.3% marketing) but no brand edge; long runway from 427 stores towards a 2,500-store target."
+   },
+   "oneLine": "Store openings can triple revenue by FY30 for about 28% a year, but cash burn and stalling same-store sales mean start small.",
+   "whyOwn": [
+    "Revenue rose 63% in FY26 and 58% in Q1 FY27; 427 stores at September against a stated room for 2,500, with the next 100 sites already signed.",
+    "New stores sell ₹730–750 per sq ft a month against a ₹500 break-even, so they make an operating profit from month one and pay back in 2.5–3 years.",
+    "It has kept its opening promises (136 net stores in FY26 against 130). At 32x FY30 profit of ₹440cr the stock returns about 28% a year."
+   ],
+   "mustGoRight": [
+    "About 150–180 net new stores a year to FY30, with new stores staying well above the ₹500-per-sq-ft break-even.",
+    "Same-store growth back to at least 4–6% and profit holding near 4.8% of revenue despite price rises and competition.",
+    "Expansion paid for from profit, released supplier prepayments (₹150–200cr) and bank lines, not a new share sale."
+   ],
+   "breaksIt": [
+    "FY27 operating cash negative for a second year.",
+    "Festival-adjusted same-store growth below 3% in Q3 FY27 (the festive quarter) or the FY27 guide cut again.",
+    "Company-wide sales below ₹650 per sq ft a month for two quarters, or a new share sale to fund openings."
+   ],
+   "worstFacts": [
+    "Operating cash −₹103cr in FY26; only 33% of five years' operating profit became cash.",
+    "Q2 FY27 same-store growth 0.5% festival-adjusted (−14.9% calendar); guide cut to 5–7% from 8–10%.",
+    "Sales per sq ft fell to ₹700 a month in Q2 from ₹886 in Q1.",
+    "Margin after rent only 8.0% in Q1; gross margin 28.6%, below the 29–30% guide.",
+    "Auditor emphasis on a ₹12.88cr Times group advance outstanding since 2019; contract end date passed.",
+    "No brand moat: 80% of stores face three or four value rivals; Google rating 3.6 against 4.1–4.2.",
+    "The founder's earlier chain, Vishal Retail, failed on debt-funded expansion.",
+    "Promoter stake down to 51.4% from 54.3%; a small pledge for working capital."
+   ],
+   "nextChecks": [
+    "Q3 FY27 festival-adjusted same-store growth: want 5% or more (0.5% in Q2).",
+    "H1 FY27 cash flow statement (with Q2 results): operating cash should be positive, or at least better than the −₹103cr of FY26.",
+    "Store count: about 470+ by December and 500+ by March, with closures under 2%."
+   ]
+  },
+  {
+   "company": "Sunteck Realty",
+   "sector": "Realty",
+   "theme": "Real estate & hotels",
+   "conviction": "Medium",
+   "mcapAtPick": 4025,
+   "profitBase": {
+    "label": "year to June 2026",
+    "value": 211,
+    "note": "No exceptional items or tax credits; ₹43cr of other income (interest on deposits and JV loans) left in as part of the business."
+   },
+   "base": {
+    "fy30Profit": 475,
+    "exitPe": 18,
+    "annualReturn": 22.3,
+    "profitCagr": 24,
+    "growthAfterFy30": 15,
+    "exitPeWhy": "Bottom of the 12–16% band for weak cash conversion and single-digit ROE; just below today's 19 and below Oberoi and Brigade (about 22)."
+   },
+   "bad": {
+    "what": "Nepean Sea Road slips into FY28, Dubai stays shelved and the Oshiwara rent asset opens a year late (₹120cr rent in FY30), margin 28%.",
+    "fy30Profit": 360,
+    "exitPe": 14,
+    "annualReturn": 5
+   },
+   "dilution": 0.078,
+   "divYield": 0.55,
+   "tailRisk": "Nepean Sea Road approvals fail or stall for years, or the Downtown Dubai plot (₹200–225cr invested) is impaired by the West Asia war.",
+   "scores": {
+    "balanceSheet": 3,
+    "earningsQuality": 2,
+    "management": 3,
+    "moatRunway": 3
+   },
+   "scoreWhy": {
+    "balanceSheet": "Net debt ₹679cr is 2.1x filed operating profit but 1.2x own operating surplus and 0.19x equity; AA-rated; gross debt heading to ₹1,100–1,200cr.",
+    "earningsQuality": "Five-year filed operating cash was 16% of operating profit, and collections were only 45% of FY26 pre-sales.",
+    "management": "Met the FY26 pre-sales guide and the promoter is paying ₹425 a share for warrants, but Nepean Sea Road and Dubai keep slipping and profit was flat for ten years.",
+    "moatRunway": "Trophy Mumbai addresses and a ₹42,700cr pipeline (about 13 years of sales), but Mumbai-only and rent is mostly still a plan."
+   },
+   "oneLine": "Cheap Mumbai luxury developer that can double profit by FY30, but about 22% a year depends on delayed flagships and unbuilt rent.",
+   "whyOwn": [
+    "Pre-sales grew 25% to ₹3,157cr in FY26; new sales carry 35–40% margins, so profit can rise from ₹202cr to about ₹475cr by FY30.",
+    "Rent from Oshiwara could take income from ₹80cr to ₹400cr+ a year by FY31, worth ₹4,000cr+ on its own against a ₹4,025cr market value.",
+    "The stock is at 1.1x book and 19x trailing profit after a 37% fall, and the promoter is paying ₹425 a share against ₹274 today."
+   ],
+   "mustGoRight": [
+    "Nepean Sea Road gets RERA and starts construction by Q4 FY27, so collections catch up with pre-sales.",
+    "The Oshiwara commercial cluster starts in FY27 and earns at least ₹200cr of rent in FY30.",
+    "Pre-sales grow at least 20% a year while gross debt stays under ₹1,200cr."
+   ],
+   "breaksIt": [
+    "FY27 collections below ₹1,700cr (guide implies about ₹1,800–1,850cr).",
+    "No Nepean Sea Road RERA by the Q4 FY27 results.",
+    "Gross debt above ₹1,200cr without a matching rise in collections."
+   ],
+   "worstFacts": [
+    "Five-year filed operating cash only ₹122cr against ₹768cr operating profit; −₹432cr in FY26.",
+    "Collected ₹1,433cr against ₹3,157cr of FY26 pre-sales (45%).",
+    "Nepean Sea Road RERA slipped from Q1 FY27 to 'clarity by Q3 FY27'; Dubai launch deferred.",
+    "Gross debt doubled to ₹774cr; India Ratings expects a ₹1,100–1,200cr peak.",
+    "Profit flat over ten years (₹216cr FY17, ₹202cr FY26); ROE averaged 4%.",
+    "Promoter warrants at ₹425 are underwater with the share at ₹274."
+   ],
+   "nextChecks": [
+    "Q2 FY27 pre-sales at least ₹800cr and H1 collections at least ₹850cr.",
+    "Any Nepean Sea Road RERA registration or construction start.",
+    "Start of construction on the Oshiwara commercial cluster, and gross debt at September below ₹1,000cr."
+   ]
+  },
+  {
+   "company": "Clean Max Env. Energ",
+   "sector": "Solar PV Cells EPC",
+   "theme": "Energy & infra services",
+   "conviction": "Medium",
+   "mcapAtPick": 14758,
+   "profitBase": {
+    "label": "year to June 2026",
+    "value": 165,
+    "note": "Shareholders' share (total ₹157cr); nothing removed, but ₹199cr of other income sits inside ₹255cr pre-tax profit. Valued on EBITDA and net debt, not P/E."
+   },
+   "base": {
+    "fy30Profit": 1100,
+    "exitPe": 30.5,
+    "annualReturn": 23.4,
+    "profitCagr": 66,
+    "growthAfterFy30": 20,
+    "exitPeWhy": "Implied by 13x FY30 EBITDA of ₹5,000cr less ₹29,000cr net debt and ₹2,500cr co-owners; no richer than today's ~14x current-year EBITDA."
+   },
+   "bad": {
+    "what": "Build slows to 1.2 GW a year, curtailment spreads and a state tightens direct-sale rules while rates rise; FY30 EBITDA ₹4,200cr at 11.5x.",
+    "fy30Profit": 750,
+    "exitPe": 25.1,
+    "annualReturn": 4.4
+   },
+   "dilution": 0.1,
+   "divYield": 0,
+   "tailRisk": "A sharp interest-rate rise as net debt passes ₹25,000cr, or a big state reversing group-captive rules.",
+   "scores": {
+    "balanceSheet": 1,
+    "earningsQuality": 3,
+    "management": 3,
+    "moatRunway": 4
+   },
+   "scoreWhy": {
+    "balanceSheet": "Net debt ₹11,809cr is 9 times trailing operating profit and heads to about ₹29,000cr; interest cover was 1.7 times in FY26.",
+    "earningsQuality": "134% of five-year operating profit came in as cash and clients pay in about 22 days, but free cash was −₹4,039cr and the audit trail was off until March.",
+    "management": "Delivered May's promises (403 MW in Q1, cheaper debt, a first battery plan), but the founder pledged about 10% of shares and paid ₹97cr of tax late.",
+    "moatRunway": "23-year contracts, about 600 customers, 80% repeat business and 42% data-centre demand; state open-access rules are the weak spot."
+   },
+   "oneLine": "Contracted, fast-growing green power for companies and data centres; about 23% a year, but the equity is a thin slice on heavy debt.",
+   "whyOwn": [
+    "About 6 GW contracted: 3.5 GW running and 2.5 GW being built at about ₹4.00 a unit on 23-year contracts.",
+    "Management set a floor of ₹3,000cr EBITDA for FY28, 2.3 times FY26's ₹1,295cr; Q1 FY27 EBITDA rose 68% to ₹462cr.",
+    "Data centres are 42% of contracted capacity, up ten times in two years; it wins about 35% of hyperscaler clean-power deals in India."
+   ],
+   "mustGoRight": [
+    "At least 1.5 GW commissioned in FY27 (403 MW in Q1), keeping the ₹3,000cr FY28 EBITDA floor intact.",
+    "Borrowing cost stays near 8.3–8.5% and net debt stays near 5.5 times run-rate EBITDA without big share issues.",
+    "Curtailment stays confined to Bikaner (13% of run-rate EBITDA) and state direct-sale rules hold."
+   ],
+   "breaksIt": [
+    "FY27 commissioning below 1.2 GW, or management lowering the ₹3,000cr FY28 floor.",
+    "A share issue above 15% of the company before FY29.",
+    "Karnataka or Gujarat curbing group-captive or banking rules for existing plants."
+   ],
+   "worstFacts": [
+    "Net debt ₹11,809cr, 9 times trailing operating profit; interest cover 1.7 times in FY26.",
+    "Bikaner plant losing about 70% of output to curtailment, about ₹170cr of FY27 EBITDA.",
+    "Founder and his LLP pledged about 1.16cr shares, about 10% of the company.",
+    "Audit trail switched off in its accounts software until 27 March 2026.",
+    "About ₹97cr of FY26 advance tax paid 6–9 months late.",
+    "Brookfield's 21% stake leaves lock-in in February 2027.",
+    "Free cash flow −₹4,039cr in FY26; return on equity 1.8%.",
+    "Karnataka and Gujarat give 63% of run-rate EBITDA; state rules can change."
+   ],
+   "nextChecks": [
+    "Q2 FY27 results: cumulative power-sales commissioning for FY27 above 600 MW (Q1: 403 MW).",
+    "Net debt at September versus EBITDA: below about ₹14,000cr with half-year EBITDA above ₹850cr.",
+    "Any update on Bikaner curtailment (70%) and the Koppal wind project's October grid bay."
+   ]
+  },
+  {
+   "company": "M & B Engineer.",
+   "sector": "Construction",
+   "theme": "Construction",
+   "conviction": "Medium",
+   "mcapAtPick": 1745,
+   "profitBase": {
+    "label": "year to June 2026",
+    "value": 97,
+    "note": "Nothing removed: no exceptional items; ₹15cr of other income (mostly interest on unspent IPO deposits) kept but shrunk to ₹8cr in the path."
+   },
+   "base": {
+    "fy30Profit": 170,
+    "exitPe": 20,
+    "annualReturn": 21.7,
+    "profitCagr": 16.1,
+    "growthAfterFy30": 14,
+    "exitPeWhy": "Lower half of the 18–26 band and below peers' 22–24; slightly above today's 18 because the cash worry was largely a misclassification the company has corrected."
+   },
+   "bad": {
+    "what": "Steel rises again on fixed-price orders and factory spending slows while all four makers add capacity: revenue +11% a year at a 10% margin.",
+    "fy30Profit": 112,
+    "exitPe": 14,
+    "annualReturn": -2.7
+   },
+   "dilution": 0,
+   "divYield": 0.35,
+   "tailRisk": "US steel duty back to 50% or a freight shock that halts exports (about ₹275cr in FY27, its best-margin work).",
+   "scores": {
+    "balanceSheet": 4,
+    "earningsQuality": 3,
+    "management": 3,
+    "moatRunway": 3
+   },
+   "scoreWhy": {
+    "balanceSheet": "Net cash ₹195cr, borrowings ₹84cr, CRISIL A/Stable; performance guarantees and ₹54cr of older retention receivables.",
+    "earningsQuality": "Corrected five-year operating cash ₹198cr is 43% of operating profit (75% of profit); FY26 +₹90cr after reclassifying ₹121cr of IPO deposits.",
+    "management": "Delivered +27% in FY26 and refuses low-margin orders; but margin slid 2 points, guidance withheld, Q1 under target, IPO mostly promoter sale.",
+    "moatRunway": "US-certified plants, ~75% of self-supported roofing, 60–70% repeat buyers; no pricing power at home, regional plants."
+   },
+   "oneLine": "Its weak FY26 cash figure was mostly ₹121cr of IPO money misfiled as operating spending; at 18 times profit, with capacity rising 48%, about 22% a year.",
+   "whyOwn": [
+    "FY26 operating cash was +₹90cr (97% of profit) once ₹120.81cr of IPO deposits were reclassified, not the −₹31cr Screener shows.",
+    "Capacity rises from 104,000 to 154,000 tonnes by Q3 FY28 while Sanand is full; FY27 revenue guided over 25% (₹1,600cr+).",
+    "Exports grow from ₹166cr to about ₹275cr in FY27 at 15–16% margins against 11% at home; net cash ₹195cr, 23% return on capital."
+   ],
+   "mustGoRight": [
+    "H1 FY27 operating cash positive (the first statement after the reclassification).",
+    "Margin holds at 11% or better while the new Sanand capacity fills.",
+    "Orders return to about ₹100cr a month from Q2 FY27."
+   ],
+   "breaksIt": [
+    "H1 FY27 operating cash negative after excluding IPO deposits.",
+    "Operating margin below 10% for two quarters.",
+    "FY27 revenue growth below 15%."
+   ],
+   "worstFacts": [
+    "Audited FY26 cash flow showed −₹31cr; revised to +₹90cr only by reclassifying ₹121cr of IPO deposits.",
+    "Margin fell from 13.6% to 11.4%; margin guidance withheld two quarters.",
+    "Q1 orders about ₹260cr against ₹100cr a month; order book dipped to ₹1,053cr.",
+    "Inventory 175 days, cash cycle 137 days.",
+    "IPO mostly promoter sale; shares about 20% below the ₹385 issue price.",
+    "Unexplained price jumps of 13.8% (7 Oct) and 12% (16 Oct)."
+   ],
+   "nextChecks": [
+    "H1 FY27 operating cash above zero, excluding IPO deposits.",
+    "Q2 FY27 operating margin at least 11% (company figure; Q1 11.4%).",
+    "Q2 orders at least ₹300cr and order book above ₹1,100cr."
+   ]
+  },
+  {
+   "company": "Samhi Hotels",
+   "sector": "Hotels and Travels",
+   "theme": "Real estate & hotels",
+   "conviction": "Medium",
+   "mcapAtPick": 3224,
+   "profitBase": {
+    "label": "year to June 2026",
+    "value": 100,
+    "note": "Removed ₹311cr deferred-tax income, ~₹83cr impairment reversals, the Kaspia sale gain and unusual other income; taxed at ~22% and after GIC's share. Site P/E 7.65 uses the flattered ₹504cr."
+   },
+   "base": {
+    "fy30Profit": 300,
+    "exitPe": 22,
+    "annualReturn": 23.1,
+    "profitCagr": 30,
+    "growthAfterFy30": 14,
+    "exitPeWhy": "Top of the lower half of the 12–16% band: leverage, borrowed brands and supply hold it down; it equals about 12x operating profit, today's multiple."
+   },
+   "bad": {
+    "what": "Room rates stay weak as mid-market supply arrives: same-store growth about 6%, new hotels late, margin stuck near 34%.",
+    "fy30Profit": 185,
+    "exitPe": 16,
+    "annualReturn": -2.4
+   },
+   "dilution": 0,
+   "divYield": 0,
+   "tailRisk": "A demand shock (war, oil) pushes net debt above CARE's 3.3x trigger and forces the ₹750cr share sale at a low price.",
+   "scores": {
+    "balanceSheet": 2,
+    "earningsQuality": 4,
+    "management": 3,
+    "moatRunway": 3
+   },
+   "scoreWhy": {
+    "balanceSheet": "Net debt ₹1,490cr is 3.2x operating profit (3.8x on Screener with leases), just under CARE's 3.3x trigger; the 2.5x target was pushed to FY28.",
+    "earningsQuality": "Operating cash was 95% of operating profit over five years, with about ₹300cr of free cash after interest in FY26, but reported profit carries ₹311cr of tax income and ~₹83cr of write-backs.",
+    "management": "Kept the 9–11% same-store promise and cut debt ₹516cr, but the margin, leverage target and W Hyderabad slipped, and 'no dilution' became a ₹750cr share authority.",
+    "moatRunway": "Branded hotel clusters by big office districts plus a turnaround skill and GIC capital, but no brand ownership, weak rate power and 58% more industry supply."
+   },
+   "oneLine": "Profit can triple to ~₹300cr by FY30 as interest falls and upscale rooms open, giving ~23% a year; debt and dilution risk cap it.",
+   "whyOwn": [
+    "Same-store revenue growth of 9–11% promised and kept through four shocks; Q1 FY27 RevPAR +9.6% at 79.3% occupancy.",
+    "Interest fell from ₹345cr (FY24) to about ₹150cr a year, so clean profit can rise from about ₹100cr to about ₹300cr by FY30.",
+    "At about 12x operating profit it trades below hotel peers; brokers' targets of ₹201–240 against ₹145 today."
+   ],
+   "mustGoRight": [
+    "Room rates rise in H2 FY27 and the margin climbs back above 36% once the GST cost laps.",
+    "Net debt falls toward 2.5x by FY28 without using the ₹750cr share authority.",
+    "W Hyderabad opens in H2 FY28 and Whitefield's Tribute and Westin follow by FY29."
+   ],
+   "breaksIt": [
+    "A share sale under the ₹750cr authority below about ₹180.",
+    "Net debt above 3.3x operating profit (CARE's trigger) at any quarter end.",
+    "Same-store revenue growth below 7% for two quarters running."
+   ],
+   "worstFacts": [
+    "FY26 profit of ₹567cr included ₹311cr deferred-tax income and ~₹83cr write-backs; clean profit is about ₹100cr.",
+    "Net debt 3.2x operating profit, just under CARE's 3.3x downgrade trigger.",
+    "₹750cr share authority (about 23% of the company) passed with only 79.6% in favour.",
+    "Room rates rose only 2.6–4% in Q1 FY27; occupancy already 79%.",
+    "Q1 margin 32.2% against a 38% FY27 guide; GST cost is permanent.",
+    "Leverage target and W Hyderabad slipped within one quarter."
+   ],
+   "nextChecks": [
+    "Q2 FY27 same-store revenue growth of at least 9%, with room-rate growth above 5%.",
+    "Q2 operating margin at least 34% (PL expects about 35%).",
+    "Net debt at or below 3.1x operating profit, and no share sale under the ₹750cr authority."
+   ]
+  },
+  {
+   "company": "Sharda Cropchem",
+   "sector": "Agrochemical & Fertilizers",
+   "theme": "Materials & packaging",
+   "conviction": "On a dip",
+   "mcapAtPick": 6532,
+   "profitBase": {
+    "label": "year to June 2026",
+    "value": 650,
+    "note": "Reported TTM ₹626cr; added back ~₹29cr of net unrealised currency losses (₹23cr after tax). Interest on ~₹700cr of cash kept."
+   },
+   "base": {
+    "fy30Profit": 870,
+    "exitPe": 13,
+    "annualReturn": 19.2,
+    "profitCagr": 8.1,
+    "growthAfterFy30": 9,
+    "exitPeWhy": "8–10% growth puts it in the 14–20 band; trimmed to 13 for cycle and currency swings, China supply and profit running ahead of free cash; low end of its own 12–19 range."
+   },
+   "bad": {
+    "what": "The euro weakens and the farm-chemical cycle turns down in FY29–FY30, so sales grow 5–8% and the margin slides to 15.5%.",
+    "fy30Profit": 552,
+    "exitPe": 10,
+    "annualReturn": -2.8
+   },
+   "dilution": 0,
+   "divYield": 2,
+   "tailRisk": "A break in Chinese supply, or European regulators withdrawing a large older molecule and forcing a registration write-off.",
+   "scores": {
+    "balanceSheet": 5,
+    "earningsQuality": 3,
+    "management": 3,
+    "moatRunway": 3
+   },
+   "scoreWhy": {
+    "balanceSheet": "No debt and ₹767cr of cash at June 2026; registration spending is paid from cash flow.",
+    "earningsQuality": "66% of five years' operating profit came in as cash, receivables sit at 166 days and quarterly profit swings by up to ₹73cr on currency.",
+    "management": "Clean family governance and rising dividends, but the FY27 sales guide fell from 15–20% to 10–15% and the volume guide from 15% to 5–10% in two quarters.",
+    "moatRunway": "3,016 registrations keep rivals out and allow price pass-through, but the library grew by fewer than 100 in three years and all supply is Chinese."
+   },
+   "oneLine": "Cheap, debt-free and paying 2%, but profit grows only ~8% a year and the P/E stays low for real reasons; about 19% a year.",
+   "whyOwn": [
+    "About 10 times clean profit of ₹650cr, with no debt, ₹767cr of cash and a ₹15 dividend (2% yield).",
+    "Owns 3,016 registrations with 1,027 more pending; Europe earned a 44.2% gross margin in Q1 FY27 even while its sales fell.",
+    "Earned 30% on its capital in FY26; the market paid about 18 times profit within the last year."
+   ],
+   "mustGoRight": [
+    "European volumes recover from Q2 FY27 and FY27 sales grow at least 10% (to about ₹5,800cr).",
+    "The operating margin holds near 18–19% while amortisation rises to ~₹450cr by FY30."
+   ],
+   "breaksIt": [
+    "FY27 revenue growth below 7%, or volume falling for a second straight quarter in Q2 FY27.",
+    "Operating margin (company basis, before currency) below 16% for the full year.",
+    "Any write-off of registrations, or net new registrations below 20 in FY27 while spending stays above ₹480cr."
+   ],
+   "worstFacts": [
+    "Q1 FY27 volume fell 1.6%; the volume guide was cut from about 15% to 5–10%.",
+    "FY27 sales guide cut from 15–20% to 10–15% between the Q3 and Q4 FY26 calls.",
+    "10.3 of FY26's 22% sales growth came from currency; price and mix were negative.",
+    "Fewer than 100 net new registrations in three years; only 5 in Q1 FY27 despite ₹273cr spent.",
+    "Registration spending rising to ₹480–550cr a year; amortisation up from ₹325cr to ~₹372cr.",
+    "Free cash ₹555cr over five years against ₹1,708cr of profit.",
+    "Everything is made under contract, mainly in China.",
+    "Quarterly profit swings with currency: ₹73cr gain in Q1 FY26, ₹26cr loss in Q4 FY26.",
+    "Profit fell to ₹32cr in FY24 in the industry inventory glut.",
+    "LatAm gross margin fell to 16.9% from 28% in Q1 FY27.",
+    "Receivables at 166 days of sales."
+   ],
+   "nextChecks": [
+    "Q2 FY27 (due late October): sales above ₹1,000cr (₹929cr last year) with volume growth positive.",
+    "Gross margin at 35% or more and operating margin (before currency) above 15% in Q2.",
+    "Registration count above 3,016 and the year's spending tracking ₹480–550cr, not higher."
+   ]
+  },
+  {
+   "company": "BLS International",
+   "sector": "Travel Services",
+   "theme": "Consumer & services",
+   "conviction": "On a dip",
+   "mcapAtPick": 9373,
+   "profitBase": {
+    "label": "year to June 2026",
+    "value": 700,
+    "note": "Owners' share only (BLS E-Services minority excluded); removed ~₹5cr one-off currency gain; ₹93cr of deposit interest kept, with no separate credit for net cash"
+   },
+   "base": {
+    "fy30Profit": 1100,
+    "exitPe": 15,
+    "annualReturn": 18.9,
+    "profitCagr": 12.8,
+    "growthAfterFy30": 11,
+    "exitPeWhy": "Lower half of the 14–20 band for 8–12% growth: net cash and 30% returns pull up; Spain probe, related-party sale and acquisition-heavy goodwill hold it near today's 13."
+   },
+   "bad": {
+    "what": "Visa volumes stay flat, re-tenders reprice lower, tax goes to 15% and acquisitions underearn.",
+    "fy30Profit": 850,
+    "exitPe": 11,
+    "annualReturn": 1
+   },
+   "dilution": 0,
+   "divYield": 1.1,
+   "tailRisk": "Spain's court probe of Algiers visa fraud was reported widened to BLS; an adverse finding could cost the Spain contract (about 18–20% of visa revenue) and other EU tenders.",
+   "scores": {
+    "balanceSheet": 5,
+    "earningsQuality": 4,
+    "management": 2,
+    "moatRunway": 4
+   },
+   "scoreWhy": {
+    "balanceSheet": "Net cash ₹1,103cr (Screener, March) to ₹1,617cr (company, June); contingent liabilities only about ₹24cr.",
+    "earningsQuality": "116% of FY22–FY26 operating profit arrived as cash, but goodwill is half of equity and debtor days doubled to 21.",
+    "management": "Growth target cut while called unchanged; Atyati unit sold to a director-linked firm for ₹59 lakh as its auditor quit; MEA debarment and Spain probe.",
+    "moatRunway": "Exclusive 5–10-year contracts in a VFS–BLS duopoly with high entry barriers; market grows 8–9% a year, but contracts are re-tendered on price."
+   },
+   "oneLine": "A high-return, cash-rich business at a low price, but 12–13% growth and governance noise give about 19% a year, short of 25%.",
+   "whyOwn": [
+    "Visa arm earns a 40% margin and about 90% of group operating profit; FY26 operating cash of ₹903cr exceeded operating profit.",
+    "At 13x profit with ₹1,100–1,600cr of net cash, the business itself trades near 12x, against 32–41x in FY23–FY25.",
+    "One of two global visa outsourcers (17% share) in a market growing 8–9% a year, as outsourcing rises from 38% to 50% of applications."
+   ],
+   "mustGoRight": [
+    "Visa applications growing again from the Slovakia, Cyprus and MEA China mandates, with the visa margin at 38–40%.",
+    "Spain probe ending with no finding against BLS and the Spain contract intact.",
+    "Cash used well: deals earning at least 15% or a buyback, not more goodwill-heavy purchases."
+   ],
+   "breaksIt": [
+    "Any Spanish court or government action naming BLS, or loss of the Spain contract.",
+    "Visa applications down year on year in two consecutive quarters.",
+    "Another related-party disposal or a goodwill write-down."
+   ],
+   "worstFacts": [
+    "Spain's court probe of Algiers visa fraud reportedly widened to BLS (Aug 2026); shares fell 13%.",
+    "Atyati sold a ₹100.6cr-turnover unit for ₹59 lakh to a director-linked firm; its auditor resigned.",
+    "Visa applications flat at 11.3 lakh in Q1 FY27; revenue per application now 'stabilised'.",
+    "Growth target cut from 20–25% to 15–20% while presented as unchanged.",
+    "Goodwill ₹1,213cr, about half of equity; value created by deals not quantified.",
+    "Tax rate rising from 9% towards 12–15%.",
+    "MEA debarment in October 2025, later quashed."
+   ],
+   "nextChecks": [
+    "Q2 FY27 visa applications: want growth of 5%+ (flat at 11.3 lakh in Q1).",
+    "Visa segment margin at 38–40% and group tax near 12%.",
+    "Any update on the Spain probe and an explanation of the Atyati sale; any buyback decision."
+   ]
+  },
+  {
+   "company": "EPL",
+   "sector": "Packaging",
+   "theme": "Materials & packaging",
+   "conviction": "On a dip",
+   "mcapAtPick": 7572,
+   "profitBase": {
+    "label": "year to June 2026",
+    "value": 400,
+    "note": "EPL alone: ₹393cr plus ~₹10–15cr Q4 FY26 merger costs, tax normalised to 21%; Indovida adds ₹410cr (2025), pro-forma ₹810cr on 50.5cr shares"
+   },
+   "base": {
+    "fy30Profit": 1290,
+    "exitPe": 16,
+    "annualReturn": 18.6,
+    "profitCagr": 13.2,
+    "growthAfterFy30": 11,
+    "exitPeWhy": "Lower half of 14–20 for 10–12% growth: tube moat and low debt, but a third-plus of profit from preforms under a resin-seller controller; below EPL's 18.5 today."
+   },
+   "bad": {
+    "what": "Indovida stays near its weak 2025 profit, Europe doesn't recover (margin 18.5%) and no synergies arrive.",
+    "fy30Profit": 990,
+    "exitPe": 13,
+    "annualReturn": 3.6
+   },
+   "dilution": 0.58,
+   "divYield": 1.5,
+   "tailRisk": "Indorama, the PET resin maker that will control and supply the merged company, could set related-party terms against minority holders; the merger could also slip or fail.",
+   "scores": {
+    "balanceSheet": 4,
+    "earningsQuality": 4,
+    "management": 3,
+    "moatRunway": 4
+   },
+   "scoreWhy": {
+    "balanceSheet": "Net debt ₹581cr (0.58x operating profit), falling to about 0.25x with Indovida's net cash; AA+ ratings on merger watch.",
+    "earningsQuality": "82% of FY22–FY26 operating profit became cash, but stock days rose every year to 177 and tax swings 14–22%.",
+    "management": "Beat the revenue guide and recovered all Q1 cost inflation, but profit fell 1.4%, Europe is at 4.8% EBIT, the MD is new and control passes to the supplier.",
+    "moatRunway": "World number one in laminated tubes (about 20% share, a third of oral care), qualified on customer lines; beauty runway long; preforms less differentiated."
+   },
+   "oneLine": "A world-leading tube maker whose merger lifts profit per share about 28%, but 13% growth at 16x gives about 19% a year.",
+   "whyOwn": [
+    "Indovida earned ₹410cr in 2025, about as much as EPL, for 58% more shares, so profit per share rises about 28% on completion with no cash paid.",
+    "Q1 FY27 revenue rose 25% (20% underlying) and all polymer, freight and currency inflation was recovered; guidance was raised to high-teens growth.",
+    "Beauty and personal care is now 54% of tubes and growing 20%+, with an aim to double beauty share from 8% to 16%."
+   ],
+   "mustGoRight": [
+    "The merger completes by about Q4 FY27 on the agreed swap, with dividends resuming.",
+    "Indovida's profit grows at least 8% a year from ₹410cr and EPL holds a 20% margin.",
+    "Related-party resin purchases from Indorama disclosed and priced at arm's length."
+   ],
+   "breaksIt": [
+    "The merger delayed past FY27 or its terms changed against EPL holders.",
+    "EPL's underlying margin below 18% for two quarters, or Europe still below 8% EBIT by Q4 FY27.",
+    "Large related-party purchases from Indorama without independent pricing disclosure."
+   ],
+   "worstFacts": [
+    "Merger adds about 58% more shares and gives 51.8% control to Indorama, a resin maker and supplier.",
+    "Indovida's 2025 sales and volumes fell; its Q2 2026 profit jump looks crisis-driven.",
+    "Q1 FY27 profit fell 1.4% on a 22% tax rate.",
+    "Stock days up every year since FY21 to 177.",
+    "Europe earned only 4.8% at the EBIT level in Q1 FY27.",
+    "No dividend until the merger completes.",
+    "New MD since January 2026, new to packaging."
+   ],
+   "nextChecks": [
+    "Q2 FY27 revenue growth of 17%+ with an underlying margin near 20%.",
+    "Europe EBIT margin moving up from 4.8% towards 10%+.",
+    "Tribunal and shareholder meeting dates for the merger; Indovida's Q3 2026 profit versus THB 1.3bn in Q2."
+   ]
+  },
+  {
+   "company": "Sanghvi Movers",
+   "sector": "Commercial Services",
+   "theme": "Energy & infra services",
+   "conviction": "On a dip",
+   "mcapAtPick": 3034,
+   "profitBase": {
+    "label": "year to June 2026",
+    "value": 207,
+    "note": "Added back about ₹8cr after-tax exceptional item in Q3 FY26; Q1 FY27 bad-debt provision left in."
+   },
+   "base": {
+    "fy30Profit": 365,
+    "exitPe": 15,
+    "annualReturn": 19.2,
+    "profitCagr": 17,
+    "growthAfterFy30": 10,
+    "exitPeWhy": "Lower half of the 14–20 band: capital-hungry, negative free cash and cyclical; matches its 13.5–18 P/E history and today's 14.7."
+   },
+   "bad": {
+    "what": "Wind additions stall, Saudi cranes arrive late or idle and Gulf collections stay slow while debt costs still arrive.",
+    "fy30Profit": 260,
+    "exitPe": 11,
+    "annualReturn": -1.1
+   },
+   "dilution": 0,
+   "divYield": 0.57,
+   "tailRisk": "Old sales-tax demands on crane hire of ₹70–160cr each, not counted as contingent liabilities, against ₹1,311cr of net worth.",
+   "scores": {
+    "balanceSheet": 3,
+    "earningsQuality": 3,
+    "management": 3,
+    "moatRunway": 3
+   },
+   "scoreWhy": {
+    "balanceSheet": "Net debt ₹545cr is 1.3 times operating profit, but rising toward a ₹1,000–1,100cr ceiling with ₹652cr of FY27 capex.",
+    "earningsQuality": "Operating cash covers 65–100% of operating profit, but free cash was negative two years and Gulf clients take 201 days.",
+    "management": "On track for FY27 guidance with better disclosure, but the Saudi pipeline was cut within a quarter and the MD's pay needed ratification.",
+    "moatRunway": "World's third-largest crane fleet with few rivals for the biggest cranes, but growth needs ever more capex and follows project cycles."
+   },
+   "oneLine": "A strong crane franchise growing 25–30%, but debt-funded cranes eat the gain; about 19% a year at ₹350.",
+   "whyOwn": [
+    "Q1 FY27 revenue rose 39% to ₹380cr with cranes 86% used; order book ₹1,253cr covers FY27.",
+    "FY27 EBITDA guided at ₹525–575cr against ₹429cr, and FY28 at ₹650–700cr; Q1 is on track.",
+    "Gulf cranes earn a 4.1% monthly yield against 2.29% in India; ₹324cr of new Gulf cranes arrive in H2 FY27."
+   ],
+   "mustGoRight": [
+    "₹560cr of H2 FY27 cranes, including the Saudi fleet, arrive on time and run above 80% use.",
+    "Gulf debtor days fall from 201 toward 150 and the bad-debt provision reverses.",
+    "India's wind additions rise toward 7.5 GW in FY27 and keep the wind E&C business growing at 12–15% margins."
+   ],
+   "breaksIt": [
+    "FY27 EBITDA below ₹500cr (guide ₹525–575cr).",
+    "Net debt above ₹1,100cr before FY28 EBITDA reaches ₹650cr.",
+    "Gulf debtor days above 200 again in the September quarter."
+   ],
+   "worstFacts": [
+    "Margin fell from 63% in FY24 to 33% in Q1 FY27 as low-margin wind construction grew.",
+    "Free cash flow negative: −₹75cr in FY25 and −₹130cr in FY26.",
+    "Gulf customers take 201 days to pay; ₹6.2cr bad-debt provision in Q1.",
+    "Saudi pipeline cut from $50m to $38m in one quarter; Saudi arm lost about ₹10cr in FY26.",
+    "Old sales-tax demands of ₹70–160cr each not shown as contingent liabilities.",
+    "MD's ₹6.46cr pay exceeded the listing-rule limit; independent director resigned in September."
+   ],
+   "nextChecks": [
+    "H1 FY27 EBITDA at least ₹245cr, on track for ₹525cr+ (Q1: ₹139cr company basis).",
+    "Gulf debtor days below 170 and group below 110 in the September quarter.",
+    "Net debt at September below ₹800cr while H2 cranes are ordered."
+   ]
+  },
+  {
+   "company": "Dynamic Cables",
+   "sector": "Cables",
+   "theme": "Power equipment",
+   "conviction": "On a dip",
+   "mcapAtPick": 1983,
+   "profitBase": {
+    "label": "year to June 2026",
+    "value": 91,
+    "note": "Nothing removed; no one-offs, normal 25% tax"
+   },
+   "base": {
+    "fy30Profit": 156,
+    "exitPe": 22,
+    "annualReturn": 17.4,
+    "profitCagr": 15.5,
+    "growthAfterFy30": 14,
+    "exitPeWhy": "About 14% growth after FY30; middle of the 18–26 band: 26% returns and low debt against 48% cash conversion and small size; matches its own five-year median of 23."
+   },
+   "bad": {
+    "what": "The new plant ramps slowly, volume grows about 8%, aluminium falls back and the margin slips to 10%.",
+    "fy30Profit": 107,
+    "exitPe": 17,
+    "annualReturn": -2.4
+   },
+   "dilution": 0,
+   "divYield": 0.12,
+   "tailRisk": "A large private customer such as Adani or Birla moving its cable buying to its own new cable business.",
+   "scores": {
+    "balanceSheet": 4,
+    "earningsQuality": 3,
+    "management": 3,
+    "moatRunway": 3
+   },
+   "scoreWhy": {
+    "balanceSheet": "Net debt about ₹15cr at March 2026 and only about 24% of bank limits used, but ₹208cr of guarantees and promoters' personal guarantees.",
+    "earningsQuality": "48% of five years' operating profit (₹210cr of ₹435cr) became cash; FY26 free cash only about ₹5cr.",
+    "management": "Margin promise kept for nine quarters, but the new plant is 15–18 months late and its rating was withdrawn at its own request.",
+    "moatRunway": "Utility, Power Grid and US approvals with 80–90% metal pass-through, but many rivals are adding capacity."
+   },
+   "oneLine": "Disciplined 26%-return cable maker at a fair 22 times profit; about 17% a year, so buy below about ₹380 or on proof of faster growth.",
+   "whyOwn": [
+    "Operating margin held at 10.3–11.4% for nine quarters through a 59% aluminium rise, because 80–90% of orders pass metal through.",
+    "26% return on capital and net debt of only about ₹15cr; high-voltage cables rose to 68% of sales from 35% in FY19.",
+    "The ₹40–45cr Reengus plant can add ₹280–300cr of sales (about a fifth more) by FY28–FY29; exports reached 13% of Q1 sales."
+   ],
+   "mustGoRight": [
+    "The Reengus plant starts in October–November 2026 and reaches 80% use by March 2028.",
+    "Volume growth returns to 12–15% once metal prices settle, with the order book rising above ₹1,000cr.",
+    "Operating margin stays at 10.5% or more."
+   ],
+   "breaksIt": [
+    "The Reengus plant not producing by March 2027.",
+    "Operating margin below 9.5% for two quarters.",
+    "Order book still at or below ₹811cr in March 2027."
+   ],
+   "worstFacts": [
+    "New plant 15–18 months late; no start announced by 16 October.",
+    "Q1 volume grew only 5–6%; Q2 growth also price-led.",
+    "Order book flat at about ₹811cr for two quarters.",
+    "Only 48% of five years' operating profit became cash.",
+    "India Ratings withdrew its rating at the company's request.",
+    "MD's daughter (HR head) and GM Quality resigned in September 2026."
+   ],
+   "nextChecks": [
+    "Q2 FY27: an announcement that the Reengus plant has started production, and volume growth of at least 8%.",
+    "Order book above ₹850cr at September 2026.",
+    "Operating margin of at least 10.5%."
+   ]
+  },
+  {
+   "company": "Time Technoplast",
+   "sector": "Plastics",
+   "theme": "Materials & packaging",
+   "conviction": "On a dip",
+   "mcapAtPick": 8775,
+   "profitBase": {
+    "label": "year to June 2026",
+    "value": 495,
+    "note": "Screener ₹498cr less ~₹3cr of temporary interest on unused share-sale deposits netted in interest; no other one-offs"
+   },
+   "base": {
+    "fy30Profit": 870,
+    "exitPe": 17,
+    "annualReturn": 16.6,
+    "profitCagr": 16.2,
+    "growthAfterFy30": 12,
+    "exitPeWhy": "Middle of 14–20 / bottom of 18–26 for about 12% growth; resin exposure, 50% cash conversion and half the group audited by others keep it near today's 18."
+   },
+   "bad": {
+    "what": "Volume grows only 8–10% (CRISIL), composite cylinders stay on hold, margin slips to 13–14% and working capital stays above 110 days.",
+    "fy30Profit": 720,
+    "exitPe": 13,
+    "annualReturn": 2.2
+   },
+   "dilution": 0.016,
+   "divYield": 0.8,
+   "tailRisk": "Nine subsidiaries with ₹3,092cr of revenue (about half the group) are audited by other firms, and the MD is also the CFO.",
+   "scores": {
+    "balanceSheet": 4,
+    "earningsQuality": 2,
+    "management": 3,
+    "moatRunway": 3
+   },
+   "scoreWhy": {
+    "balanceSheet": "Net debt ₹153cr at March, down from ₹812cr in FY22 and lower again in Q1; about 0.1x operating profit, though ₹400–500cr of bank guarantees are in use.",
+    "earningsQuality": "Only 50% of FY22–FY26 operating profit became cash (26% in FY26); free cash −₹137cr in FY26; working capital 127 days.",
+    "management": "Meets profit guides (FY26 +21%, Q1 +22%) but missed volume twice; MD doubles as CFO; deal-size discrepancy; ₹340cr of share-sale money idle.",
+    "moatRunway": "About 55% of India's industrial packaging and composite approvals, but packaging is a commodity and composites wait on the oil companies."
+   },
+   "oneLine": "A steady 15–16% compounder at a fair 18x, but weak cash conversion caps the exit multiple; about 17% a year.",
+   "whyOwn": [
+    "Profit rose from ₹316cr (FY24) to ₹477cr (FY26), and FY27 guidance was raised to 23–24% profit growth after Q1 delivered +22%.",
+    "About 70–75% of customers re-price monthly on polymer prices, so the margin held at 13–15% through the March 2026 resin spike.",
+    "Composites (17–18% margin) grew 29% in Q1, and net debt fell from ₹812cr in FY22 to under ₹100cr."
+   ],
+   "mustGoRight": [
+    "Working capital down to about 100 days by March 2027, lifting operating cash to at least 60% of operating profit.",
+    "Volume growth of at least 11% a year, with composites growing 25%.",
+    "Idle share-sale money (about ₹340cr) used for a buyback or a sensible deal, not left in deposits."
+   ],
+   "breaksIt": [
+    "FY27 operating cash below 40% of operating profit again.",
+    "Volume growth below 8% for two quarters.",
+    "Any auditor qualification on the overseas subsidiaries or a large unexplained acquisition."
+   ],
+   "worstFacts": [
+    "Only 26% of FY26 operating profit became cash; five-year conversion 50%; FY26 free cash −₹137cr.",
+    "Nine subsidiaries with ₹3,092cr revenue audited by other firms; MD is also CFO.",
+    "Volume missed the 15% guide: 13.5% in FY26, 11% in Q1 FY27.",
+    "Oil companies paused the 14.2-kg composite LPG cylinder.",
+    "Systoverse deal: ₹25cr in slides vs ₹125–150cr by the MD; ₹340cr of share-sale money idle.",
+    "Promoter stake down to 47.5%; TPL Plastech merger adds 1.6% shares."
+   ],
+   "nextChecks": [
+    "Q2 FY27 working capital: want about 105 days or less (110 in June, 115 in March).",
+    "Q2 volume growth: want 13%+ (11% in Q1); profit growth near 23%.",
+    "Composite order book above ₹185cr and any oil-company tender news."
+   ]
+  }
+ ],
+ "bench": [
+  {
+   "company": "Mahindra Life. Dev",
+   "sector": "Realty",
+   "theme": "Real estate & hotels",
+   "why": "The safest of the developers studied (net cash, AA, Mahindra parent), but about 19% a year at today's price; buy it in a real-estate sell-off.",
+   "mcapAtPick": 7323,
+   "baseReturn": 18.6,
+   "exitValue": 12810,
+   "divYield": 1,
+   "priceIsTheIssue": true
+  },
+  {
+   "company": "Arvind SmartSpaces",
+   "sector": "Realty",
+   "theme": "Real estate & hotels",
+   "why": "Good developer at a fair price, but about 18% a year on sober numbers; profit lags bookings and filed cash is still negative.",
+   "mcapAtPick": 2807,
+   "baseReturn": 18.2,
+   "exitValue": 4941,
+   "divYield": 0.4,
+   "priceIsTheIssue": true
+  },
+  {
+   "company": "Gulf Oil Lubricant",
+   "sector": "Oil",
+   "theme": "Consumer & services",
+   "why": "A steady share-gaining brand with net cash and a 4.7% dividend, fairly priced at ~14 times; about 15% a year.",
+   "mcapAtPick": 5279,
+   "baseReturn": 15.3,
+   "exitValue": 7462,
+   "divYield": 4.7,
+   "priceIsTheIssue": true
+  },
+  {
+   "company": "InfoBeans Technologies",
+   "sector": "Software",
+   "theme": "Internet & software",
+   "why": "Cheap, debt-free and growing ~20% in dollars, but a fair multiple caps the return near 16% a year, short of 25%.",
+   "mcapAtPick": 1581,
+   "baseReturn": 16.5,
+   "exitValue": 2651,
+   "divYield": 0.3,
+   "priceIsTheIssue": true
+  },
+  {
+   "company": "Windlas Biotech",
+   "sector": "Pharma CDMO",
+   "theme": "Pharma & health",
+   "why": "A clean contract drug maker, but a 12–14% fee margin caps the exit P/E; about 15% a year, not 25%.",
+   "mcapAtPick": 1906,
+   "baseReturn": 15,
+   "exitValue": 3028,
+   "divYield": 0.68,
+   "priceIsTheIssue": true
+  },
+  {
+   "company": "Caplin Point Labs",
+   "sector": "Pharma",
+   "theme": "Pharma & health",
+   "why": "Excellent, cash-rich business, but at 26x profit a 2030 exit gives about 11% a year, far below 25%.",
+   "mcapAtPick": 17496,
+   "baseReturn": 10.9,
+   "exitValue": 24720,
+   "divYield": 0.35,
+   "priceIsTheIssue": true
+  },
+  {
+   "company": "Gland Pharma",
+   "sector": "Pharma CDMO",
+   "theme": "Pharma & health",
+   "why": "A strong sterile-injectables maker growing profit ~22% a year, but at 44 times profit the price leaves about 10% a year.",
+   "mcapAtPick": 50597,
+   "baseReturn": 10.3,
+   "exitValue": 69480,
+   "divYield": 0.65,
+   "priceIsTheIssue": true
+  },
+  {
+   "company": "Cartrade Tech",
+   "sector": "Platform Cos",
+   "theme": "Internet & software",
+   "why": "The best business in its group, but at 61 times profit even a doubling of profit by FY30 earns only about 3% a year.",
+   "mcapAtPick": 14409,
+   "baseReturn": 2.8,
+   "exitValue": 15842,
+   "divYield": 0,
+   "priceIsTheIssue": true
+  },
+  {
+   "company": "Acutaas Chemicals",
+   "sector": "Pharma API",
+   "theme": "Pharma & health",
+   "why": "Fine growth engines, but the margin has already doubled; ~20% profit growth at 66 times profit returns about −3% a year.",
+   "mcapAtPick": 25646,
+   "baseReturn": -3,
+   "exitValue": 23008,
+   "divYield": 0.08,
+   "priceIsTheIssue": true
+  },
+  {
+   "company": "Rubicon Research",
+   "sector": "Pharma",
+   "theme": "Pharma & health",
+   "why": "Excellent generics research engine, but at 85 times profit even tripled earnings by FY30 return roughly nothing.",
+   "mcapAtPick": 24451,
+   "baseReturn": -2.9,
+   "exitValue": 22010,
+   "divYield": 0.1,
+   "priceIsTheIssue": true
+  }
+ ],
+ "changes": [
+  {
+   "date": "2026-10-16",
+   "text": "First list: twelve ideas from a deep dive of 52 companies, plus a reserve list of ten good businesses that fail mainly on price."
+  }
+ ]
+}
