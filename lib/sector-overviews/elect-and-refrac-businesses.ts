@@ -54,7 +54,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'HEG',
-        tagline: "An LNJ Bhilwara group company that split in two on 1 September 2026. The listed share is now HEG Advanced Materials (battery materials and clean power); the graphite-electrode business, with the world's largest single-site plant, moved to HEG Graphite, which lists in the second half of October.",
+        tagline: "An LNJ Bhilwara group company that split in two on 1 September 2026. The listed share is now HEG Advanced Materials (battery materials and clean power); the graphite-electrode business, with the world's largest single-site plant, moved to HEG Graphite (renamed HEG Limited on 12 October 2026), which lists in the second half of October.",
         revenue: '₹2,568cr (FY26, consolidated, before the split; almost all electrodes)',
         products: [
             { name: 'Ultra-high-power graphite electrodes (now HEG Graphite)', text: "For electric arc furnaces, from a 100,000-tonne plant at Mandideep, Madhya Pradesh, growing to 115,000 tonnes by early 2028 (₹650cr, from its own cash). It sold 92,800 tonnes in FY26 (+20%). It says it is among the top three electrode producers outside China." },
@@ -80,7 +80,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'GrafTech (US)', note: 'The largest Western producer; HEG owns 9.98% of it.' }, { name: 'Tokai Carbon, Resonac (Japan)', note: 'The other global producers.' }, { name: 'Graphite India', note: 'India’s other electrode maker.' }, { name: 'Chinese producers', note: 'Large capacity, mostly serving China and nearby markets.' }],
         position: "**One of the five electrode producers that matter outside China**, with the largest single plant and among the lowest costs.",
         money: "Before the split, the company held an ₹858cr treasury in June 2026 against ₹783cr of short-term export loans, so it was roughly neither net cash nor net debt; management's ‘debt-free’ means no long-term loans. The listed HEG Advanced Materials expects about ₹1,500cr of gross debt by March 2027 for the anode plant, backed by a ₹1,230cr guarantee to SBI, and will repay ₹600cr of Bhilwara Energy's acquisition debt. The merger issued about 13cr new shares, lifting promoters from 56.3% to **60.7%**. Contingent liabilities are about ₹110cr, mostly income tax; the audit opinion is unmodified.",
-        watch: ["HEG Graphite's listing price in late October and each company's first results of its own.", "Signed offtake contracts for the anode plant.", "US final duties by about 7 December, and electrode price rises against needle-coke costs from November."],
+        watch: ["The electrode company's listing price in late October (as HEG Limited, the name HEG Graphite took on 12 October) and each company's first results of its own.", "Signed offtake contracts for the anode plant.", "US final duties by about 7 December, and electrode price rises against needle-coke costs from November."],
         charts: electAndRefracCharts['HEG'],
     },
     {
