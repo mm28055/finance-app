@@ -698,7 +698,7 @@ export const consumerDurablesSurfaces: SectorOverview = {
         {
             company: 'Greenpanel Inds.', rank: 10, stance: 'CYCLICAL', segment: PANELS,
             what: "India's largest MDF maker (8.9 lakh cubic metres in Uttarakhand and Andhra Pradesh) with a small plywood arm.",
-            view: "**Big plants, half used, in a price war.** Margin recovered from a Q1 FY26 loss to 8–10% and net debt is down to ₹141cr. But utilisation is 51%, the 15% price rise was rolled back within three months, it lost the top domestic volume spot to Century, exports are nil, and the family group faces an income-tax search. Trailing profit is about ₹7cr, so the price needs about {need:Greenpanel Inds.|48}% a year against my ~40%.",
+            view: "**Big plants, half used, in a price war.** Margin recovered from a Q1 FY26 loss to 8–10% and net debt is down to ₹141cr. But utilisation is 51%, the 15% price rise was rolled back within three months, it lost the top domestic volume spot to Century, exports are nil, and the family group faces an income-tax search. Trailing profit is about ₹7cr, so the price needs about {need:Greenpanel Inds.|48}% a year against my ~40%. **Since about 12 October 2026 the dashboard's P/E for Greenpanel reads about 12 against about 260 on Screener (₹1,751cr market value on ₹7cr of trailing profit), so the live ‘fits’ is a data error; the call stays pass.**",
             watch: 'Utilisation above 65% with margins above 12%; MDF exports restarting; the outcome of the tax search.',
         },
         {
