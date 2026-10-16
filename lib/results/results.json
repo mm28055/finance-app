@@ -1,6 +1,682 @@
 {
- "updated": "2026-10-15T19:24:39.034Z",
+ "updated": "2026-10-16T19:20:43.758Z",
  "results": [
+  {
+   "company": "Aurum Proptech",
+   "sector": "Platform Cos",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-16",
+   "readOn": "2026-10-17",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 130.19,
+     "yearAgo": 79.44,
+     "prev": 111.84,
+     "yoy": 63.9,
+     "qoq": 16.4
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 33.86,
+     "yearAgo": 17.42,
+     "prev": 29.32,
+     "yoy": 94.4,
+     "qoq": 15.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 26.01,
+     "yearAgo": 21.93,
+     "prev": 26.22,
+     "yoy": 4.1,
+     "qoq": -0.2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 4.29,
+     "yearAgo": -8.41,
+     "prev": 45.18,
+     "yoy": null,
+     "qoq": -90.5
+    }
+   ],
+   "oneOff": "Other income of ₹7cr is 108% of profit before tax this quarter, so profit may not reflect the business.",
+   "take": {
+    "verdict": "mixed",
+    "text": "Revenue grew 63.9% year-on-year to ₹130.19 crore and operating profit jumped 94.4% to ₹33.86 crore, expanding the operating margin by 4.1 points to 26.01%. However, the ₹4.29 crore net profit was heavily flattered by ₹7 crore in other income, which accounted for 108% of profit before tax. This means the core business missed the expectation of maintaining a pre-tax margin above 5%.",
+    "checks": [
+     {
+      "text": "Pre-tax margin above 5%",
+      "status": "missed",
+      "why": "other income exceeded total profit before tax, meaning core operations were loss-making"
+     },
+     {
+      "text": "No further share issues",
+      "status": "unclear",
+      "why": "headline figures do not disclose updated share counts"
+     }
+    ],
+    "on": "2026-10-17"
+   }
+  },
+  {
+   "company": "Crompt.Greaves Cons.",
+   "sector": "Consumer Durables",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-16",
+   "readOn": "2026-10-17",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 2263,
+     "yearAgo": 1916,
+     "prev": 2235,
+     "yoy": 18.1,
+     "qoq": 1.3
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 205,
+     "yearAgo": 158,
+     "prev": 224,
+     "yoy": 29.7,
+     "qoq": -8.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 9,
+     "yearAgo": 8,
+     "prev": 10,
+     "yoy": 1,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 124,
+     "yearAgo": 75,
+     "prev": 143,
+     "yoy": 65.3,
+     "qoq": -13.3
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "text": "Revenue grew a strong 18.1% from last year to ₹2,263 crore, pushing operating profit up 29.7% to ₹205 crore. While this profit growth easily beats the 16% base-case expectation, the operating margin only reached 9%, missing the 11% target needed to strengthen the long-term investment case.",
+    "checks": [
+     {
+      "text": "Operating margin above 11%",
+      "status": "missed",
+      "why": "Margin came in at 9%"
+     },
+     {
+      "text": "Fan share holding after Q1 stock-outs",
+      "status": "unclear",
+      "why": "Not detailed in headline figures"
+     }
+    ],
+    "on": "2026-10-17"
+   }
+  },
+  {
+   "company": "E2E Networks",
+   "sector": "Software",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-16",
+   "readOn": "2026-10-17",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 224,
+     "yearAgo": 44,
+     "prev": 157,
+     "yoy": 409.1,
+     "qoq": 42.7
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 171,
+     "yearAgo": 18,
+     "prev": 118,
+     "yoy": 850,
+     "qoq": 44.9
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 77,
+     "yearAgo": 41,
+     "prev": 75,
+     "yoy": 36,
+     "qoq": 2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 73,
+     "yearAgo": -13,
+     "prev": 44,
+     "yoy": null,
+     "qoq": 65.9
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "text": "Revenue surged 409.1% from a year ago to ₹224 crore, and operating profit jumped 850% to ₹171 crore. The operating margin held strong at 77%, staying well above the 70% long-term aim. This puts the results comfortably ahead of expectations, proving last quarter's profit was not only repeatable but could grow significantly to ₹73 crore.",
+    "checks": [
+     {
+      "text": "Q1 profit (₹43.9cr) is repeatable",
+      "status": "met",
+      "why": "Net profit grew to ₹73cr"
+     },
+     {
+      "text": "Operating margin stays near ~70%",
+      "status": "met",
+      "why": "Margin expanded to 77%"
+     }
+    ],
+    "on": "2026-10-17"
+   }
+  },
+  {
+   "company": "Himadri Speciality",
+   "sector": "Chemicals",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-16",
+   "readOn": "2026-10-17",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1691,
+     "yearAgo": 1071,
+     "prev": 1432,
+     "yoy": 57.9,
+     "qoq": 18.1
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 315,
+     "yearAgo": 233,
+     "prev": 288,
+     "yoy": 35.2,
+     "qoq": 9.4
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 19,
+     "yearAgo": 22,
+     "prev": 20,
+     "yoy": -3,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 231,
+     "yearAgo": 176,
+     "prev": 228,
+     "yoy": 31.3,
+     "qoq": 1.3
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "text": "Revenue surged 57.9% from last year to ₹1,691 crore, driving a 35.2% increase in operating profit to ₹315 crore. The operating margin dipped to 19% from 22% a year ago, narrowly missing expectations that it would hold at about 20%. Nevertheless, absolute profit growth came in well ahead of our 17% long-term base case.",
+    "checks": [
+     {
+      "text": "Margin holding at about 20%",
+      "status": "missed",
+      "why": "Came in at 19%"
+     },
+     {
+      "text": "Operating cash above 70% of EBITDA",
+      "status": "unclear",
+      "why": "Cash flow figures not provided"
+     },
+     {
+      "text": "No further lending to Dalmia/Birla Tyres",
+      "status": "unclear",
+      "why": "Awaits balance sheet details"
+     },
+     {
+      "text": "First 2,600 tonnes commissioned",
+      "status": "unclear",
+      "why": "Awaits the earnings call"
+     }
+    ],
+    "on": "2026-10-17"
+   }
+  },
+  {
+   "company": "Onward Technologies",
+   "sector": "Software",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-16",
+   "readOn": "2026-10-17",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 170,
+     "yearAgo": 139,
+     "prev": 149,
+     "yoy": 22.3,
+     "qoq": 14.1
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 27,
+     "yearAgo": 20,
+     "prev": 18,
+     "yoy": 35,
+     "qoq": 50
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 16,
+     "yearAgo": 14,
+     "prev": 12,
+     "yoy": 2,
+     "qoq": 4
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 17,
+     "yearAgo": 12,
+     "prev": 11,
+     "yoy": 41.7,
+     "qoq": 54.5
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "text": "Revenue grew a strong 22.3% from a year ago to ₹170 crore, while operating profit jumped 35% to ₹27 crore. The operating margin expanded by two percentage points to 16%, easily beating the expectation of a return to above 13%. These results are well ahead of the management's guidance for double-digit growth.",
+    "checks": [
+     {
+      "text": "Double-digit revenue growth",
+      "status": "met",
+      "why": "Revenue grew 22.3% year-on-year"
+     },
+     {
+      "text": "Offshore share recovering and no top-five client loss",
+      "status": "unclear",
+      "why": "Waiting for the earnings call to confirm operational metrics"
+     },
+     {
+      "text": "New centre starts billing",
+      "status": "unclear",
+      "why": "Waiting for management commentary to confirm the source of the margin boost"
+     }
+    ],
+    "on": "2026-10-17"
+   }
+  },
+  {
+   "company": "SG Finserve",
+   "sector": "Finance",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-16",
+   "readOn": "2026-10-17",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 161,
+     "yearAgo": 75,
+     "prev": 136,
+     "yoy": 114.7,
+     "qoq": 18.4
+    },
+    {
+     "label": "Financing profit",
+     "unit": "cr",
+     "now": 80,
+     "yearAgo": 39,
+     "prev": 72,
+     "yoy": 105.1,
+     "qoq": 11.1
+    },
+    {
+     "label": "Financing margin",
+     "unit": "%",
+     "now": 49,
+     "yearAgo": 52,
+     "prev": 53,
+     "yoy": -3,
+     "qoq": -4
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 59,
+     "yearAgo": 28,
+     "prev": 54,
+     "yoy": 110.7,
+     "qoq": 9.3
+    }
+   ],
+   "take": {
+    "verdict": "in line",
+    "text": "SG Finserve continued its rapid expansion, with revenue more than doubling from a year ago to ₹161 crore and financing profit jumping 105.1% to ₹80 crore. The financing margin narrowed slightly to 49% (down 3 percentage points from last year), but net profit still surged 110.7% to ₹59 crore. This performance is perfectly in line with expectations for a fast-growing and highly profitable business, though the ultimate test of its loan quality remains to be seen.",
+    "checks": [],
+    "on": "2026-10-17"
+   }
+  },
+  {
+   "company": "Shoppers Stop",
+   "sector": "Retail",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-16",
+   "readOn": "2026-10-17",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1366.27,
+     "yearAgo": 1256.62,
+     "prev": 1291.41,
+     "yoy": 8.7,
+     "qoq": 5.8
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 196.28,
+     "yearAgo": 170.39,
+     "prev": 187.35,
+     "yoy": 15.2,
+     "qoq": 4.8
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 14.37,
+     "yearAgo": 13.56,
+     "prev": 14.51,
+     "yoy": 0.8,
+     "qoq": -0.1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 3.11,
+     "yearAgo": -20.11,
+     "prev": -14.25,
+     "yoy": null,
+     "qoq": null
+    }
+   ],
+   "oneOff": "Other income of ₹23cr is 554% of profit before tax this quarter, so profit may not reflect the business.",
+   "take": {
+    "verdict": "in line",
+    "text": "Revenue grew 8.7% year-over-year to ₹1,366.27 crore, aligning well with expectations for 6% like-for-like growth, while operating profit rose 15.2% to ₹196.28 crore. The operating margin expanded by 0.8 percentage points to 14.37%. While the company reported a net profit of ₹3.11 crore, this was heavily flattered by ₹23 crore in other income, meaning the core business remains loss-making at the bottom line.",
+    "checks": [
+     {
+      "text": "Like-for-like sales growth of about 6%",
+      "status": "unclear",
+      "why": "Only total revenue growth (8.7%) is reported"
+     }
+    ],
+    "on": "2026-10-17"
+   }
+  },
+  {
+   "company": "Solara Active Pharma",
+   "sector": "Pharma API",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-16",
+   "readOn": "2026-10-17",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 417,
+     "yearAgo": 314,
+     "prev": 382,
+     "yoy": 32.8,
+     "qoq": 9.2
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 77,
+     "yearAgo": 35,
+     "prev": 62,
+     "yoy": 120,
+     "qoq": 24.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 18,
+     "yearAgo": 11,
+     "prev": 16,
+     "yoy": 7,
+     "qoq": 2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 28,
+     "yearAgo": -10,
+     "prev": 16,
+     "yoy": null,
+     "qoq": 75
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "text": "Revenue grew a strong 32.8% year-on-year to ₹417 crore, and operating profit jumped 120% to ₹77 crore. The overall operating margin improved to 18%, but without a segment breakdown, it is not yet known if the base business achieved its guided 25% margin. While the headline growth easily beats the 10% revenue guidance, the core investment case still waits on the earnings call for the crucial decision on the loss-making ibuprofen unit.",
+    "checks": [
+     {
+      "text": "Ibuprofen decision announced without large write-down",
+      "status": "unclear",
+      "why": "Not detailed in the headline figures; awaits the call"
+     },
+     {
+      "text": "Base-business margin near 25%",
+      "status": "unclear",
+      "why": "Only the overall 18% margin is provided"
+     }
+    ],
+    "on": "2026-10-17"
+   }
+  },
+  {
+   "company": "Urban Company",
+   "sector": "Platform Cos",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-16",
+   "readOn": "2026-10-17",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 537,
+     "yearAgo": 380,
+     "prev": 528,
+     "yoy": 41.3,
+     "qoq": 1.7
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": -196,
+     "yearAgo": -79,
+     "prev": -97,
+     "yoy": null,
+     "qoq": null
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": -36,
+     "yearAgo": -21,
+     "prev": -18,
+     "yoy": -15,
+     "qoq": -18
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": -182,
+     "yearAgo": -59,
+     "prev": -92,
+     "yoy": null,
+     "qoq": null
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "text": "Revenue grew 41.3% year-on-year to ₹537 crore, but the operating loss widened sharply to ₹196 crore from ₹79 crore a year ago. The operating margin deteriorated by 15 percentage points to -36%, indicating that the company is falling behind expectations to control overall losses and progress toward its break-even target.",
+    "checks": [
+     {
+      "text": "InstaHelp absolute loss shrinking",
+      "status": "unclear",
+      "why": "Requires segment breakdown"
+     },
+     {
+      "text": "Core India services margin holding",
+      "status": "unclear",
+      "why": "Requires segment breakdown"
+     }
+    ],
+    "on": "2026-10-17"
+   }
+  },
+  {
+   "company": "CCL Products",
+   "sector": "Food Products",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-15",
+   "readOn": "2026-10-17",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1211,
+     "yearAgo": 1127,
+     "prev": 1200,
+     "yoy": 7.5,
+     "qoq": 0.9
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 212,
+     "yearAgo": 197,
+     "prev": 194,
+     "yoy": 7.6,
+     "qoq": 9.3
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 18,
+     "yearAgo": 18,
+     "prev": 16,
+     "yoy": 0,
+     "qoq": 2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 130,
+     "yearAgo": 101,
+     "prev": 117,
+     "yoy": 28.7,
+     "qoq": 11.1
+    }
+   ],
+   "take": {
+    "verdict": "in line",
+    "text": "Revenue grew 7.5% from a year ago to ₹1,211 crore, and operating profit rose 7.6% to ₹212 crore. The operating margin held steady at 18%, showing consistent core profitability. This steady operating performance helped net profit jump 28.7% to ₹130 crore, keeping the company well on track against our 17% long-term profit growth expectation.",
+    "checks": [
+     {
+      "text": "Operating profit per kilo at ₹135-140",
+      "status": "unclear",
+      "why": "Requires volume data from the earnings call"
+     }
+    ],
+    "on": "2026-10-17"
+   }
+  },
   {
    "company": "Cyient DLM",
    "sector": "EMS & Electronics",
