@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14",
+ "updated": "2026-10-16",
  "method": "A company is listed under a theme only when its own management said something concrete about it in its last two results calls: revenue, orders in hand, approvals, or capex it has committed. Passing mentions, analysts' questions and 'we are exploring' do not count. 'Orders or revenue now' means it already sells or holds orders; 'Building' means money committed or approvals won, but no meaningful revenue yet. Each line says what the company said and where. Read from the calls on 13–14 October 2026 and reviewed each results season as new calls come in. A list of who is exposed to the theme, not a recommendation.",
  "themes": [
   {
@@ -837,6 +837,278 @@
      "company": "Inox India",
      "level": "building",
      "why": "Supplies the ITER fusion project; developing products for nuclear plants.",
+     "source": "Q1 FY27 call, Aug 2026"
+    }
+   ]
+  },
+  {
+   "key": "railways",
+   "label": "Railways",
+   "scope": "Trains, wagons and their parts, railway electronics and Kavach, and building tracks, electrification and metros — across every sector, including Industrial - Railway.",
+   "companies": [
+    {
+     "company": "Titagarh Railsystems",
+     "level": "now",
+     "why": "Order book of ₹13,335cr, ₹10,395cr of it passenger trains; passenger trains were 31% of Q1 revenue.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Jupiter Wagons",
+     "level": "now",
+     "why": "Wagon maker; won ₹264cr of fresh wagon orders and now owns all of its rail-wheel factory.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Texmaco Rail",
+     "level": "now",
+     "why": "Freight wagons plus a rail-infrastructure arm; Q1 revenue ₹753cr, hit by slower wagon execution.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Cosmic CRF",
+     "level": "now",
+     "why": "Wagon and coach bodies; order book of ₹760cr across railway and infrastructure items.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Hind Rectifiers",
+     "level": "now",
+     "why": "First MEMU train propulsion order, about ₹60cr; about ₹5.5cr of its content in each locomotive.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "MV Electrosystems",
+     "level": "now",
+     "why": "Over ₹1,000cr of locomotive and MEMU propulsion orders.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Concord Control",
+     "level": "now",
+     "why": "Railway electronics designer; ₹313cr pipeline, mostly locomotive wireless control systems.",
+     "source": "Q2 FY26 call, Nov 2025"
+    },
+    {
+     "company": "HBL Engineering",
+     "level": "now",
+     "why": "Kavach train-protection supplier; order book ₹2,999cr at December 2025 (CARE), then a ₹1,714cr locomotive Kavach order in May 2026.",
+     "source": "CARE rating, Feb 2026; NSE filing, May 2026"
+    },
+    {
+     "company": "Timken India",
+     "level": "now",
+     "why": "Railway bearings were ₹200cr in Q1, 22% of sales; expanding its rail plant at Jamshedpur.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Pitti Engineering",
+     "level": "now",
+     "why": "Traction-motor and railway parts were 28% of Q1 revenue (33% in FY26).",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Frontier Springs",
+     "level": "now",
+     "why": "Springs and suspension systems, mostly for Indian Railways.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Airfloa Rail Techno.",
+     "level": "now",
+     "why": "Railways are about 70% of its business (coach and metro interiors); ₹1,200cr bid pipeline.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Neetu Yoshi",
+     "level": "now",
+     "why": "Castings for wagons, track, locomotives and coaches; ₹50cr of IPO money spent on a bogie plant.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Amber Enterprises",
+     "level": "now",
+     "why": "Railway subsystems and defence division revenue ₹144cr in Q1, up 18%.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Sona BLW Precision",
+     "level": "now",
+     "why": "Bought a railway business; railway wins add to its ₹24,000cr order book.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "SKF India (Industrial)",
+     "level": "now",
+     "why": "Railways were about 11% of its industrial OEM sales, growing about 12%.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Subros",
+     "level": "now",
+     "why": "Railway air-conditioning: ₹52cr of orders in hand; aims to cross ₹100cr in three years.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Rane (Madras)",
+     "level": "now",
+     "why": "Buying a friction business about 40% of which is railways.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Ramkrishna Forgings",
+     "level": "now",
+     "why": "Railways rose to 7.5% of revenue; won ₹15cr of metro orders; partner in the rail-wheel venture.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Rico Auto Industries",
+     "level": "now",
+     "why": "Targeting about ₹100cr of railway revenue this year.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Ircon Intl.",
+     "level": "now",
+     "why": "Government railway construction company; benefits from about ₹2.93 lakh crore of railway capex.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Rites",
+     "level": "now",
+     "why": "Export order book of about ₹1,775cr for coaches and locomotives, including about 200 coaches for Bangladesh.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "H.G. Infra Engg.",
+     "level": "now",
+     "why": "₹3,054cr of railway and metro work in its ₹14,502cr order book; railways 21% of Q1 revenue.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Power Mech Proj.",
+     "level": "now",
+     "why": "₹783cr of railway work in its order book.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "GPT Infraprojects",
+     "level": "now",
+     "why": "Won a ₹72cr order for concrete sleepers from Eastern Railway.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Kalpataru Proj.",
+     "level": "now",
+     "why": "Urban infrastructure revenue up 49% in FY26 on metro rail projects; ₹2,000cr of metro orders won.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "J Kumar Infra",
+     "level": "now",
+     "why": "Metro projects are 9% of its order book; lowest bidder for a ₹1,500cr Delhi Metro underground project.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Afcons Infra",
+     "level": "now",
+     "why": "Metro and elevated urban projects are the largest part of its pipeline; rail and road 14% of the book.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "KEC International",
+     "level": "now",
+     "why": "Railway electrification and civil work alongside power transmission.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Railtel Corporation of India",
+     "level": "now",
+     "why": "About 23% of its order book is railway work (telecom and signalling networks).",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "KNR Constructions",
+     "level": "building",
+     "why": "Bidding for about ₹700–800cr of railway projects, especially in Andhra Pradesh.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "KRN Heat Exchan",
+     "level": "building",
+     "why": "Railway deliveries of bar-and-plate coolers planned from Q2 FY27.",
+     "source": "Q1 FY27 call, Aug 2026"
+    }
+   ]
+  },
+  {
+   "key": "shipbuilding",
+   "label": "Shipbuilding",
+   "scope": "Building ships and supplying shipyards and the Navy. The listed shipyards (Mazagon Dock, Cochin Shipyard, Garden Reach) are not in this dashboard.",
+   "companies": [
+    {
+     "company": "Titagarh Railsystems",
+     "level": "now",
+     "why": "Its own shipbuilding arm, with about ₹870cr of orders; expanding the yard.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Elecon Engg.Co",
+     "level": "now",
+     "why": "Executing a naval gearbox project for warships.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Elgi Equipments",
+     "level": "now",
+     "why": "Its joint venture's high-pressure compressors are on navy ships, including INS Vikrant.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Shree Refrigrations",
+     "level": "now",
+     "why": "Navy-standard air-conditioning plants for new ships and refits, plus spares.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Krishna Defence & Allied Industries",
+     "level": "now",
+     "why": "Naval-approved supplier; most Indian shipyards are customers.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Syrma SGS Tech.",
+     "level": "now",
+     "why": "Defence and maritime electronics brought about ₹140cr in Q1.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Inox India",
+     "level": "now",
+     "why": "First order from Cochin Shipyard, with more expected.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Action Const.Eq.",
+     "level": "now",
+     "why": "Supplies cranes to almost all Indian shipyards.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Data Patterns (India)",
+     "level": "now",
+     "why": "Initial DRDO orders for a naval radar it is developing.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "KSB",
+     "level": "building",
+     "why": "Pumps developed and approved by the Navy in some areas.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Apollo Micro Systems",
+     "level": "building",
+     "why": "Navy prototype order for an autonomous anti-submarine vessel.",
      "source": "Q1 FY27 call, Aug 2026"
     }
    ]
