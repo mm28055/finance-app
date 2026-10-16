@@ -442,7 +442,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Rubicon Research',
-        inShort: ["**Develops hard-to-copy US generic medicines**, such as slow-release tablets and nasal sprays, and sells them almost entirely in the US.", "**Good:** 88% of its approvals are launched, revenue grew 52% in Q1 FY27 and margin guidance was raised to 23%. **Watch:** it is 99% American with five customers buying about 72% of its output, it has turned only 31% of five years' profit into cash, its private-equity promoter sold 8.4% in August, and it leans on outside contract makers until its own plants open in 2027.", "**Verdict: follow.** The best research engine on the list, but the price already assumes many years of very fast growth."],
+        inShort: ["**Develops hard-to-copy US generic medicines**, such as slow-release tablets and nasal sprays, and sells them almost entirely in the US.", "**Good:** 88% of its approvals are launched, revenue grew 52% in Q1 FY27 and margin guidance was raised to 23%. **Watch:** it is 99% American with five customers buying about 72% of its output, it has turned only 31% of five years' profit into cash, its private-equity promoter sold 8.4% in August, and it leans on outside contract makers until its own plants open in 2027.", "**Verdict: follow.** The best research engine on the list; since mid-October 2026 the price just fits the ~30% a year I expect, so I want Q2's growth and cash flow to confirm it before owning."],
         tagline: "A research-led maker of specialty and complex generic medicines for the US, now adding plants in India and New Jersey and a small Indian brand business.",
         revenue: '₹1,754cr (FY26, consolidated)',
         products: [
