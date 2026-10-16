@@ -957,8 +957,8 @@ export const ironSteel: SectorOverview = {
         {
             company: 'Aeroflex Industries', rank: 15, stance: 'PRICED', segment: STAINLESS,
             what: "Makes stainless-steel flexible hoses, assemblies and bellows, mostly for export, and since late FY26 liquid-cooling skid assemblies for Indian data centres.",
-            view: "**One of the best operators here, priced for years of it.** Q1 revenue up 72% at a 23% margin, skids already 23% of sales, and net cash. But every skid goes to one customer, it has no patents on them, free cash was negative in FY25 and FY26, and a ₹41.8cr tax demand is under appeal. The price needs far more than my ~25% estimate.",
-            watch: '15,000-unit skid capacity by November; a second skid customer or first export skid order; the tax appeal.',
+            view: "**One of the best operators here, priced for years of it.** Q1 revenue up 72% at a 23% margin, skids already 23% of sales, and net cash. But every skid goes to one customer, it has no patents on them, free cash was negative in FY25 and FY26, and a ₹41.8cr tax demand is under appeal. On 14 October 2026 it finished the 20-million-metre hose expansion, reached 12,000 skids a year, and approved ₹202cr more (hoses to 30 million metres with a new assemblies plant, skids to 30,000) by March 2028, partly paid for with new shares. The price needs far more than my ~25% estimate.",
+            watch: '15,000-unit skid capacity by December; a second skid customer or first export skid order; how much new equity funds the ₹202cr expansion; the tax appeal.',
         },
         {
             company: 'Welspun Specialty', rank: 16, stance: 'TURNAROUND', segment: STAINLESS,
