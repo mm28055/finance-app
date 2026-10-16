@@ -222,3 +222,31 @@ Pushed to master; all checks passed (typecheck clean, "All notes pass.").
 - The rest were ordinary: gas supply cuts to fertiliser and tile makers (a temporary allocation), a GST rule on e-commerce warehouses, fund buying and selling, and price moves on filings covered above.
 
 **Results pass:** Transformers & Rectifiers Q2 FY27 reviewed. The figures match Screener and I agree it is ahead: H1 revenue is up about 33% against a 25% guide and the margin is 17%. But the year-ago quarter was unusually weak and Q2 fell just short of the ₹750cr watched for. The note waits for the call.
+
+## 16 October 2026
+
+Pushed to master; all checks passed (typecheck clean, "All notes pass.").
+
+**Follow-ups handled: 5 of 10. 5 stay open, all still waiting:** HEG's electrode company has not listed (it was renamed HEG Limited on 12 October); SKF India has not filed July–September results; Ganesh Benzoplast's ₹1,154cr sale has not closed; the UPI merchant fee has been put off, with NPCI to set a new date after Diwali (press reports, 13 October); the NPPA has not yet notified its cancer-medicine margin cap.
+
+**Calls changed: none.** Three prices moved into the fits band, and each call was kept:
+- **Jash Engineering** stays follow. It needs about 21% a year against my 20%, so it only just fits. Its Q1 profit was a US tariff refund, the ₹875cr guide needs a record second half, and a 100% US tariff is still threatened. I will look again when Q2 results are out.
+- **Rubicon Research** stays follow. It needs about 31% against my 30%, under a point of room on a fast-growth estimate. Five years of operating cash (₹247cr against ₹388cr of profit, 64%) pass the cash test. But Q1 brought in only ₹28.5cr, so I want Q2's growth and half-year cash first. The FDA's Satara inspection (5–9 October) ended with one procedural observation.
+- **Greenpanel** stays pass. The "fits" is a data error: since about 12 October the dashboard shows a P/E of about 12, while Screener shows about 261 (₹1,751cr market value on ₹7cr of trailing profit). I noted this in the verdict. **There is a new Needs-a-session item** to fix the figure the price sync uses.
+
+**Other follow-ups:**
+- **Ganesh Benzoplast** (stays wait). From its 7 October call: about ₹500cr of the sale money by January 2027, ₹300cr by March, and ₹354cr over the following 12–18 months. About ₹200cr of the first payment goes to tax and closing bank lines. About ₹200cr goes to a buyback (the promoters will not take part) and a special dividend. For the business that remains, it hopes for 15–20% profit growth a year, a doubled chemicals plant by July 2027 and construction revenue of about ₹250cr next year. Added to the verdict, card and watch items.
+- **Bajaj Consumer Care**: the holder change is fund rotation with no block deal (HDFC Small Cap 6.85% → 3.89%, 360 ONE Focused 1.56% → 3.87%). I corrected the one sentence the note has on it. An independent director resigned on 14 October for medical reasons and was replaced the same day. That is routine.
+
+**Filings pass, 14–15 October** (notes corrected where the filing made them wrong):
+- **Aequs** (stays wait): on 14 October the Melligeri family trust, one of the promoters, pledged its whole 14.99% stake, worth about ₹2,300cr. That is about a quarter of the promoters' shares, and the filing gives no reason. It comes a week before the 22 October vote on ₹650cr of promoter warrants. Added to the verdict, card and watch items.
+- **Aeroflex**: hose capacity reached 20 million metres and skids 12,000 a year (15,000 by December, a little late). The board approved ₹202cr more by March 2028 (hoses to 30 million metres, a new assemblies plant, skids to 30,000), paid partly with new shares. Management says it can add ₹500–550cr of revenue at peak. Note, card, projects, capacity and checkpoints updated; the hose milestone is met. The 10% price fall on 15 October was the market's reaction.
+- **Australian Premium Solar**: its second 400 MW TOPCon line began production on 14 October, taking capacity to 1.2 GW. The milestone is marked partly met, about two weeks after H1.
+- **Tinna Rubber**: registered 19 of 40 acres in Andhra Pradesh for a recycling complex costing up to ₹250cr over three years. Added to the card and as a project.
+- **HEG**: the electrode company was renamed HEG Limited; note and card updated. A GST demand for FY21 against it was dropped (not in the note).
+- **Neuland**: the FDA closed its August Unit 3 inspection. **Deepak Fertilisers**: ICRA moved its outlook from watch to Positive (the note said "on watch"). **Tega**: the ₹95cr Apollo share issue was allotted. **Virtuoso**: the ₹85cr share issue at ₹503 was allotted (about 5% more shares). **Aegis Logistics**: its JNPA LPG bottling plant is commissioned; project source updated. **Emmvee**: the board approved the 9 GW ingot-and-wafer plan already in the note.
+- Logged only: Tata Technologies' $138m full-vehicle win (in the results review); Sri Lotus's three new Mumbai projects (in the results review); Stallion's GST search (credit reversed, no material impact); Shalby's Jabalpur hospital registration suspended after a minor fire (company says not material); Enviro Infra ₹228cr wind EPC order; Transrail ₹408cr, Ahluwalia ₹310cr, Railtel ₹197cr and Vikram Solar 187 MW orders; AXISCADES's $7m US asset purchase; Pitti's ₹78 lakh GST liability; Landmark Cars' Q2 update; Datamatic's new COO; Indiqube's independent director resigning.
+
+**News pass, 14–15 October:** 9 entries had a clear reason. None is very important, so no note changed. They were price moves on results (Orient Electric, Elecon, Transformers & Rectifiers, Bajaj Consumer), on filings covered above (Aeroflex, Aegis), a global AI selloff (Netweb), a 17% rise in sugar prices (Mrs Bectors) and Kotak MF crossing 5% of MV Electrosystems.
+
+**Results pass:** 13 reviewed. All figures match Screener, and I agree with every overnight verdict. **Ahead:** Sri Lotus, Tips Music, Accent Microcell, Bajaj Consumer Care, Leela. **In line:** Elecon. **Mixed:** Cyient DLM, Orient Electric, CEAT, Tata Technologies. **Behind:** Metro Brands, Sterling and Wilson, Emmvee (₹557cr of operating profit against the ~₹617cr a quarter its target needs). The notes wait for each company's call.
