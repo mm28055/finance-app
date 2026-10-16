@@ -1270,5 +1270,42 @@
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
     "addedOn": "2026-10-15",
     "handled": "2026-10-16: Price needs ~31% against my 30% (fits by under a point). Five-year operating cash ₹247cr against ₹388cr profit (64%) passes the cash test, and the thesis is intact (Satara 483 has one procedural observation). Kept follow until Q2 growth and half-year cash confirm; dated sentence added to verdict, section 1 and Tab 2."
+  },
+  {
+    "company": "Aequs",
+    "sector": "Aerospace defence",
+    "exDate": null,
+    "subject": "Shareholding Sep 2026",
+    "why": "Pledged share of promoter holding jumped to 25.4% from 0% (Jun 2026 → Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-10-16"
+  },
+  {
+    "company": "Hester Biosciences",
+    "sector": "Pharma Others",
+    "exDate": null,
+    "subject": "Shareholding Sep 2026",
+    "why": "Promoter holding fell 9.4 pts (53.7% in Jun 2026 → 44.3% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-10-16"
+  },
+  {
+    "company": "Macfos",
+    "sector": "Platform Cos",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-16"
+  },
+  {
+    "company": "Engineers India",
+    "sector": "Construction",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-16"
+  },
+  {
+    "company": "KSH International",
+    "sector": "Cables",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-16"
   }
 ]
