@@ -108,6 +108,12 @@
   "q": "GEN"
  },
  {
+  "id": "348c1490-2b98-4a70-bdf0-a58aa6a7bb8a",
+  "name": "Special call 07 Oct 2026",
+  "year": 2027,
+  "q": "GEN"
+ },
+ {
   "id": "38a06d79-712e-48c0-8e6c-f1644d2d3719",
   "name": "General 15 Jun 2026",
   "year": 2027,
@@ -172,6 +178,12 @@
   "name": "AGM 20 Aug 2026",
   "year": 2027,
   "q": "GEN"
+ },
+ {
+  "id": "60f42010-c9c2-41bd-8814-a09a5114ec7f",
+  "name": "Q2 FY27",
+  "year": 2027,
+  "q": "Q2"
  },
  {
   "id": "62b09686-d94a-4de0-b900-b516a0bbf033",
