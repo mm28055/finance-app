@@ -13481,6 +13481,31 @@
    "status": "planned",
    "source": "Regulation 30 filing, 15 Oct 2026 (board approval 20 Jul 2026)",
    "updatedOn": "2026-10-16"
+  },
+  {
+   "id": "kanohar-electricals-gangol-expansion",
+   "company": "Kanohar Electricals",
+   "sector": "Electrical Transformers",
+   "name": "Gangol brownfield expansion (+18,000 MVA)",
+   "what": "New machines (vertical winding machines, core-stacking tables) at the existing Gangol plant to roughly double capacity for 500 MVA 400 kV, Scott and traction transformers; the plant will also suit 765 kV",
+   "cost": "₹25.7cr of machines for capacity (₹40cr with tank and radiator automation and efficiency; ₹64.2cr total capex from IPO money including an office and solar)",
+   "expectedStart": "FY29 (in place by end-FY28)",
+   "adds": "18,000 MVA a year, taking capacity from 19,200 to 37,200 MVA",
+   "status": "planned",
+   "source": "Prospectus (Sep 2026), objects of the offer; Q1 FY27 call (Oct 2026) — funded from IPO proceeds",
+   "updatedOn": "2026-10-17",
+   "capacityAdd": "+18,000 MVA a year (about +94% on 19,200 MVA)"
+  },
+  {
+   "id": "kanohar-electricals-765kv",
+   "company": "Kanohar Electricals",
+   "sector": "Electrical Transformers",
+   "name": "Entry into 765 kV transformers",
+   "what": "Design developed in-house with no partner; ready to build a prototype, but it needs a first order and satisfactory field operation before regular 765 kV tenders",
+   "adds": "eligibility for regular 765 kV tenders in three to four years",
+   "status": "planned",
+   "source": "Q1 FY27 call (Oct 2026)",
+   "updatedOn": "2026-10-17"
   }
  ]
 }

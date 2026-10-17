@@ -24,6 +24,7 @@ export const electricalTransformers: SectorOverview = {
         // My base-case earnings growth, % a year over three to five years (section 6).
         myGrowth: {
             'Atlanta Electricals': 26,
+            'Kanohar Electricals': 24,
             'Shilchar Tech.': 17,
             'Voltamp Transformers': 12,
             'Supreme Power': 20,
@@ -35,7 +36,7 @@ export const electricalTransformers: SectorOverview = {
         },
     },
     standfirst:
-        "Nine companies riding India's largest ever grid build-out and a global shortage of transformers. Five make transformers, three make the parts that go inside or alongside them, and one (Schneider) makes medium-voltage equipment for a multinational parent. Every one has a full order book, so the order book does not separate them. What does: which voltage classes each factory is approved for, how much of each contract passes on copper and steel price rises, whether profit turns into cash, and what the annual reports and rating notes say that the calls did not. Every chart uses filed results and five years of history.",
+        "Ten companies riding India's largest ever grid build-out and a global shortage of transformers. Six make transformers, three make the parts that go inside or alongside them, and one (Schneider) makes medium-voltage equipment for a multinational parent. Every one has a full order book, so the order book does not separate them. What does: which voltage classes each factory is approved for, how much of each contract passes on copper and steel price rises, whether profit turns into cash, and what the annual reports and rating notes say that the calls did not. Every chart uses filed results and five years of history.",
     lastUpdated: '2026-09-23',
     asOfQuarter: 'Q1 FY27',
 
@@ -46,10 +47,11 @@ export const electricalTransformers: SectorOverview = {
             unit: '%',
             periods: Q,
             scale: 'sequential',
-            source: 'Filed quarterly results, operating profit ÷ sales (excludes other income). Schneider, Voltamp, Shilchar and Supreme are standalone; the rest consolidated.',
-            note: 'Yash (BSE SME) reports half-yearly: its H1 and H2 FY26 figures sit in the Q2 and Q4 columns. Supreme’s March 2026 quarter is not filed separately on Screener.',
+            source: 'Filed quarterly results, operating profit ÷ sales (excludes other income). Schneider, Voltamp, Shilchar, Supreme and Kanohar are standalone; the rest consolidated.',
+            note: 'Yash (BSE SME) reports half-yearly: its H1 and H2 FY26 figures sit in the Q2 and Q4 columns. Supreme’s March 2026 quarter is not filed separately on Screener. Kanohar relisted in September 2026, so Screener has only its June 2025, March 2026 and June 2026 quarters.',
             values: {
                 'Atlanta Electricals': [16, 17, 19, 20, 17],
+                'Kanohar Electricals': [23, null, null, 29, 28],
                 'Shilchar Tech.': [33, 32, 31, 21, 16],
                 'Voltamp Transformers': [17, 19, 17, 13, 15],
                 'Supreme Power': [14, 16, 10, null, 15],
@@ -64,6 +66,7 @@ export const electricalTransformers: SectorOverview = {
                 'Quality Power El': 'Q1 FY27: company EBITDA margin 25.2%, or 28.3% excluding a ₹7.8cr hyperinflation-accounting loss in Turkey; company figures include other income.',
                 'Schneider Ele. Infra': 'Q1 FY27: fixed-price orders booked before December could not be repriced for copper, oil and the weaker rupee.',
                 'Yash Highvoltage': 'Half-yearly: H1 FY26 in the Q2 column, H2 FY26 in the Q4 column. FY26 company EBITDA margin 25.7%.',
+                'Kanohar Electricals': 'Q2 and Q3 FY26 were never filed separately (it relisted in September 2026). FY26 as a whole was 28%, against 11% in FY24; Q1 FY27 company EBITDA margin 28.3%.',
             },
         },
         {
@@ -73,9 +76,10 @@ export const electricalTransformers: SectorOverview = {
             periods: Q,
             scale: 'diverging',
             source: 'Filed quarterly revenue, each quarter against the same quarter a year earlier.',
-            note: 'Blank where a comparable period is not filed. Quality Power’s FY26 growth includes acquisitions (Endoks, Mehru).',
+            note: 'Blank where a comparable period is not filed. Quality Power’s FY26 growth includes acquisitions (Endoks, Mehru). Kanohar has no filed quarters before June 2025.',
             values: {
                 'Atlanta Electricals': [5, 17, 79, 82, 48],
+                'Kanohar Electricals': [null, null, null, null, 104],
                 'Shilchar Tech.': [49, 31, 10, -34, -15],
                 'Voltamp Transformers': [-1, 21, 30, -1, 28],
                 'Supreme Power': [50, 44, 37, null, 34],
@@ -88,6 +92,7 @@ export const electricalTransformers: SectorOverview = {
             cellNotes: {
                 'Shilchar Tech.': 'Q1 FY27: about ₹30–35cr of export shipments did not move because customers deferred collection when container costs rose three to five times.',
                 'Rishabh Instruments': 'Q1 FY27: instrumentation grew 34%; the die-casting arm shrank 41% as it exited unprofitable contracts on purpose.',
+                'Kanohar Electricals': 'Q1 FY27 against a small Q1 FY26 (₹67cr). FY26 revenue rose 45% for the year, and the March quarter alone was 46% of it.',
                 'Atlanta Electricals': 'Q1 FY27: management called the growth volume-led, but its own figures show units sold (MVA) up about 22% and revenue per MVA up about 22%, as price clauses passed on metal costs.',
             },
         },
@@ -102,6 +107,7 @@ export const electricalTransformers: SectorOverview = {
             note: 'Voltamp and Shilchar carry large investment portfolios (₹995cr and ₹202cr), which lower their reported returns.',
             values: {
                 'Atlanta Electricals': [28, 66, 45, 50, 45],
+                'Kanohar Electricals': [18, 20, 16, 39, 54],
                 'Shilchar Tech.': [24, 54, 75, 71, 51],
                 'Voltamp Transformers': [19, 25, 32, 29, 24],
                 'Supreme Power': [15, 71, 37, 28, 22],
@@ -123,6 +129,7 @@ export const electricalTransformers: SectorOverview = {
             note: 'TARIL built up steel and copper stock through FY26 to protect against price rises. Yash’s jump in FY26 reflects the new plant and the Sukrut acquisition.',
             values: {
                 'Atlanta Electricals': [42, 56, 76, 65, 74],
+                'Kanohar Electricals': [61, 77, 160, 123, 131],
                 'Shilchar Tech.': [129, 96, 93, 120, 105],
                 'Voltamp Transformers': [184, 142, 158, 139, 169],
                 'Supreme Power': [140, 108, 146, 71, 53],
@@ -143,6 +150,7 @@ export const electricalTransformers: SectorOverview = {
             note: 'Operating cash is after tax, so 70–80% is healthy. Negative means the business consumed cash while reporting a profit.',
             values: {
                 'Atlanta Electricals': [0, 37, 74, 43, 53, 48],
+                'Kanohar Electricals': [83, -66, -52, 85, 14, 24],
                 'Shilchar Tech.': [-32, 74, 67, 22, 101, 61],
                 'Voltamp Transformers': [47, 73, 67, 60, 39, 57],
                 'Supreme Power': [-33, 38, -35, 161, 97, 74],
@@ -156,6 +164,7 @@ export const electricalTransformers: SectorOverview = {
                 'Transformers & Rect': 'FY26: −₹105cr of operating cash on ₹383cr of operating profit, as inventory and receivables swelled. Five years: ₹111cr of cash on ₹1,039cr.',
                 'Quality Power El': 'FY22–FY24 look high because profit then came mostly from other income. It spent heavily on acquisitions, which do not show as capex.',
                 'Supreme Power': 'Small numbers swing widely: five-year operating profit was only ₹85cr.',
+                'Kanohar Electricals': 'FY26: ₹26cr of operating cash on ₹181cr of operating profit, as customer bills, stock for FY27 orders and retention money held back by customers rose. Five years: ₹90cr of cash on ₹369cr.',
             },
         },
         {
@@ -169,6 +178,7 @@ export const electricalTransformers: SectorOverview = {
             note: 'Shows who funds growth from its own cash and who needs borrowing or new shares. Acquisitions are not included, which flatters Atlanta (Atlanta Trafo) and Quality Power (Endoks, Mehru).',
             values: {
                 'Atlanta Electricals': [-0.5, 5.1, 6.5, -2.3, 3.7, 2.5],
+                'Kanohar Electricals': [9.9, -8.3, -6.5, 15.7, 3.5, 3.8],
                 'Shilchar Tech.': [-3.3, 11.8, 16.6, 3.5, 25.9, 13.3],
                 'Voltamp Transformers': [4.2, 11.6, 12.2, 8.2, 0.7, 7.0],
                 'Supreme Power': [-2.1, 6.6, -23.4, -2.1, -15.3, -9.4],
@@ -182,6 +192,7 @@ export const electricalTransformers: SectorOverview = {
                 'Supreme Power': 'FY24–FY26: building the new Kannur plant.',
                 'Yash Highvoltage': 'FY25–FY26: building the new bushing plant.',
                 'Transformers & Rect': 'FY26: operating cash was negative as stock and customer bills swelled.',
+                'Kanohar Electricals': 'Positive only because it spends almost nothing on plant (under 1% of sales); operating cash itself was weak. FY26: ₹23cr of free cash on ₹654cr of sales.',
             },
         },
         {
@@ -196,6 +207,7 @@ export const electricalTransformers: SectorOverview = {
             note: 'How many years of operating profit it would take to repay net debt. Below zero means more cash than debt.',
             values: {
                 'Atlanta Electricals': [1.6, 0.3, 0.2, 0.4, -0.1],
+                'Kanohar Electricals': [-2.0, -0.9, 0.4, -0.6, -0.3],
                 'Shilchar Tech.': [0.8, -0.3, -0.7, -0.5, -1.3],
                 'Voltamp Transformers': [-4.1, -3.2, -2.9, -3.0, -3.0],
                 'Supreme Power': [3.2, 0.6, 0.4, 0.4, 1.3],
@@ -208,6 +220,7 @@ export const electricalTransformers: SectorOverview = {
             cellNotes: {
                 'Voltamp Transformers': 'Includes a ₹995cr investment portfolio as cash.',
                 'Transformers & Rect': 'FY26: borrowing rose with working capital (company figure: ₹424cr standalone debt).',
+                'Kanohar Electricals': 'March 2026, before the IPO: about ₹275cr of new money came in September. Part of its cash is margin money behind ₹325cr of bank guarantees and letters of credit.',
             },
         },
         {
@@ -221,6 +234,7 @@ export const electricalTransformers: SectorOverview = {
             note: 'How capital-hungry growth is. Above 10% means the company is building plants much faster than sales.',
             values: {
                 'Atlanta Electricals': [0.5, 0.8, 3.7, 9.1, 6.3, 5.0],
+                'Kanohar Electricals': [0.2, 0.9, 0.7, 1.8, 0.5, 0.9],
                 'Shilchar Tech.': [0.0, 2.1, 2.5, 2.9, 3.5, 2.7],
                 'Voltamp Transformers': [1.7, 0.6, 1.2, 3.1, 5.8, 2.8],
                 'Supreme Power': [0.0, 0.0, 17.8, 27.6, 30.0, 20.5],
@@ -242,6 +256,7 @@ export const electricalTransformers: SectorOverview = {
             note: 'Higher means more sales from each rupee of plant and machinery. A sharp drop usually means a new plant or an acquisition that has not yet filled up.',
             values: {
                 'Atlanta Electricals': [12.7, 18.6, 13.4, 16.4, 3.7],
+                'Kanohar Electricals': [9.1, 12.0, 10.7, 14.5, 21.1],
                 'Shilchar Tech.': [5.0, 7.2, 9.7, 10.6, 9.4],
                 'Voltamp Transformers': [18.2, 20.7, 21.0, 16.4, 18.3],
                 'Supreme Power': [15.7, 25.3, 26.8, 13.2, 2.2],
@@ -255,6 +270,7 @@ export const electricalTransformers: SectorOverview = {
                 'Atlanta Electricals': 'FY26: new plants and the Atlanta Trafo purchase added fixed assets.',
                 'Supreme Power': 'FY26: the new Kannur plant, running at 20–25%.',
                 'Quality Power El': 'FY25: the Endoks and Mehru acquisitions added fixed assets.',
+                'Kanohar Electricals': 'An old, fully used plant: fixed assets are only ₹31cr. Its +18,000 MVA expansion needs just ₹26cr of machinery, so this should stay high.',
             },
         },
         {
@@ -268,6 +284,7 @@ export const electricalTransformers: SectorOverview = {
             note: 'Years of work already booked. Rishabh does not publish an order book. Voltamp and Schneider sell to industry on shorter cycles, so a lower figure is normal for them.',
             values: {
                 'Atlanta Electricals': [1.6],
+                'Kanohar Electricals': [2.8],
                 'Shilchar Tech.': [0.8],
                 'Voltamp Transformers': [0.7],
                 'Supreme Power': [3.1],
@@ -278,6 +295,7 @@ export const electricalTransformers: SectorOverview = {
                 'Schneider Ele. Infra': [0.7],
             },
             cellNotes: {
+                'Kanohar Electricals': '₹2,026cr at June 2026 against about ₹724cr of sales over the last four quarters; it booked a further ₹867cr of orders in Q2.',
                 'Supreme Power': 'Management guides lower revenue than the order book implies, because 10–20% of customers may not be ready to take delivery.',
             },
         },
@@ -294,6 +312,8 @@ export const electricalTransformers: SectorOverview = {
         rows: [
             { company: 'Atlanta Electricals', trend: 'widening', trendNote: 'Power Grid approval for 400 kV at Vadod; bought a 765 kV-capable plant; 765 kV technology tie-up aimed at Q4 FY27.',
                 grades: { qual: { grade: 'A', note: 'Power Grid 400 kV approval; plant built for 765 kV' }, tech: { grade: 'C', note: '765 kV design licensed for a fee and royalty' }, scale: { grade: 'B', note: '63,060 MVA across five plants' }, price: { grade: 'B', note: 'Price variation on about 75% of the order book' }, reach: { grade: 'C', note: '273 customers; no exports yet' } } },
+            { company: 'Kanohar Electricals', trend: 'stable', trendNote: 'Certified for 500 MVA 400 kV units since FY24; adding 18,000 MVA for FY29 and building a 765 kV prototype; management expects new 400 kV makers to qualify.',
+                grades: { qual: { grade: 'A', note: '1 of 5 Indian makers certified for 500 MVA 400 kV; RDSO-approved Scott railway units' }, tech: { grade: 'B', note: 'Own designs; 765 kV prototype built in-house; switchgear licensed from Taiwan' }, scale: { grade: 'C', note: '19,200 MVA at two Meerut plants, doubling by FY29' }, price: { grade: 'A', note: 'Price variation on 31 of 35 contracts (March 2026)' }, reach: { grade: 'D', note: 'Top ten customers 93% of FY26 sales; no real exports' } } },
             { company: 'Shilchar Tech.', trend: 'stable', trendNote: 'Moving from 132 kV to 220 kV with the new plant; export business intact but frozen by freight.',
                 grades: { qual: { grade: 'B', note: 'Export approvals in 25+ countries, up to 132 kV' }, tech: { grade: 'C', note: 'Own designs, standard range' }, scale: { grade: 'C', note: '7,500 MVA, doubling to 14,000' }, price: { grade: 'C', note: 'Ex-works exports; passed on only 50–60% in Q1' }, reach: { grade: 'A', note: 'Exports 48% of FY26 sales' } } },
             { company: 'Voltamp Transformers', trend: 'stable', trendNote: 'Its own report expects margins to normalise; margin down to 15% in Q1; new plant slipped to October 2026.',
@@ -318,15 +338,15 @@ export const electricalTransformers: SectorOverview = {
             heading: '1. Recommendation, up front',
             body: [
                 "**Own Atlanta Electricals, the only name here I would buy today.** **Atlanta** grew revenue 49% in FY26 and 48% in Q1 FY27, its order book reached a record ₹3,117cr after ₹972cr of new orders in the quarter, and it repaid all ₹340cr of its term loans from IPO money and profit. Power Grid approved its Vadod plant for 400 kV in April, and about 75% of its order book carries price-variation clauses that pass on copper and steel costs. But the story is less clean than a quarter ago. About half of Q1's growth came from a higher price per MVA (commodity pass-through), not more units; the margin guide slipped to 17–18% after an 18.6% year; the 400 kV short-circuit test and the 765 kV technology deal have each moved out a quarter; **only about half its operating profit has turned into cash over five years**; and the annual report shows it buys about ₹115cr a year from Amod Stampings, a promoter-linked supplier. The price needs about {need:Atlanta Electricals|26}% a year, in line with my ~26%. **Own it, but know that the step to the top voltages is still a promise.**",
-                "**Follow Shilchar, Yash and Supreme.** **Shilchar** is debt-free, has earned 51–75% on its capital for four years and is nearly doubling capacity to 14,000 MVA by April 2027 for about ₹120cr of its own cash. But FY27 is turning into a lost year: the Middle East, 30% of FY26 revenue, froze when container costs rose three to five times, Q1 revenue fell 15%, its operating margin fell to 16%, and its ₹800cr target needs record quarters from a plant that ran at 60–65%. Its price needs about {need:Shilchar Tech.|19}% a year against my ~17%, just past a fair price, so **I have moved it from own to follow.** **Yash** makes bushings, a genuine bottleneck, at a 45.9% gross margin with an order book that nearly tripled to ₹400cr+; but it turned only ₹9cr of its ₹57cr FY26 operating profit into cash, lost ₹2.1cr to a cyber fraud its auditor flagged, has raised equity twice in 20 months, sells 19% to one customer, and rivals are now making the same bushing cores. **Supreme** is the cheapest name against its growth, but it missed its FY26 target twice and its Q1 guide, it is burning cash on a new plant running at 20–25% and may need new equity in FY27–FY28, and it trades heavily with a partnership in which its two promoters own 10%.",
+                "**Follow Shilchar, Yash, Kanohar and Supreme.** **Shilchar** is debt-free, has earned 51–75% on its capital for four years and is nearly doubling capacity to 14,000 MVA by April 2027 for about ₹120cr of its own cash. But FY27 is turning into a lost year: the Middle East, 30% of FY26 revenue, froze when container costs rose three to five times, Q1 revenue fell 15%, its operating margin fell to 16%, and its ₹800cr target needs record quarters from a plant that ran at 60–65%. Its price needs about {need:Shilchar Tech.|19}% a year against my ~17%, just past a fair price, so **I have moved it from own to follow.** **Yash** makes bushings, a genuine bottleneck, at a 45.9% gross margin with an order book that nearly tripled to ₹400cr+; but it turned only ₹9cr of its ₹57cr FY26 operating profit into cash, lost ₹2.1cr to a cyber fraud its auditor flagged, has raised equity twice in 20 months, sells 19% to one customer, and rivals are now making the same bushing cores. **Kanohar**, back on the market in September after 16 years off it, is one of five Indian makers certified for 500 MVA 400 kV units, has an order book above ₹2,000cr and held a 28% operating margin in its first quarter after listing. But that margin is 8–12 points above its peers' and CRISIL itself budgets 22–25%; only ₹90cr of its ₹369cr of five-year operating profit became cash; ten customers brought 93% of FY26 sales; Bihar's transmission company debarred it in February before lifting the ban on conditions; family members took about 13% of FY26 profit in pay; and most promoter shares unlock around March 2027. Its price needs about {need:Kanohar Electricals|25}% a year against my ~24%, which fits, but **I want to see the cash follow the profit before owning it.** **Supreme** is the cheapest name against its growth, but it missed its FY26 target twice and its Q1 guide, it is burning cash on a new plant running at 20–25% and may need new equity in FY27–FY28, and it trades heavily with a partnership in which its two promoters own 10%.",
                 "**Wait on TARIL, Voltamp and Quality Power; pass on Rishabh; avoid Schneider.** **TARIL** (Transformers & Rectifiers) has a ₹6,630cr order book and a price that fits my ~18%, but it missed both FY26 guides, cut FY27 to +25%, burned ₹105cr of operating cash, and 4.22 crore of its shares held by a director are pledged to its lenders. **Voltamp** has the cleanest balance sheet here, but its margin has fallen from 20% to 15% on mostly fixed-price orders, stock piled up so free cash fell to ₹15cr in FY26, and its price needs about {need:Voltamp Transformers|19–20}% a year against my ~12%. **Quality Power** has excellent niche technology, but a third of its profit belongs to partners in its Turkish and instrument-transformer arms, its ‘EBITDA’ includes other income, it converts little of that EBITDA into cash, and it has just announced a ₹700cr share sale while paying up to ₹272cr for an insulator maker with ₹17cr of revenue; **I have moved it from follow to wait.** **Rishabh** has a strong instruments arm tied to a die-caster that is losing money again; group profit has been flat at about ₹20cr a quarter for five quarters, and its price needs about {need:Rishabh Instruments|20}% a year against my ~16%. **Schneider** earned a 5% operating margin in Q1 and pays about ₹118cr a year in fees to its parent, yet its price needs close to {need:Schneider Ele. Infra|39}% growth a year.",
-                "**Three things to hold onto before reading the rest.** First, **the order book does not separate these companies; the contract and the voltage class do.** Everyone has a full order book. What differs is whether the contract passes on copper and steel prices (Supreme, Atlanta and TARIL mostly do; Schneider and Voltamp mostly do not) and whether the factory is approved for 400 kV and above, where rivals are few. Second, **the risk has moved from demand to supply and margins.** The Central Electricity Authority (CEA) wants 158,339 MVA of 220 kV-and-above transformation added in FY27, 40% more than FY26, but industry capacity roughly doubles from about 375 GVA to 690 GVA by FY28, mostly at 220 kV and below. Third, **read the annual reports.** This year they turned up a share pledge at TARIL, bank stock statements that did not match the books at Atlanta and TARIL, a promoter-linked partnership at Supreme, missing inventory at Schneider, a cyber fraud at Yash and an audit-trail remark at Quality Power, none of which came up on the calls.",
+                "**Three things to hold onto before reading the rest.** First, **the order book does not separate these companies; the contract and the voltage class do.** Everyone has a full order book. What differs is whether the contract passes on copper and steel prices (Supreme, Kanohar, Atlanta and TARIL mostly do; Schneider and Voltamp mostly do not) and whether the factory is approved for 400 kV and above, where rivals are few. Second, **the risk has moved from demand to supply and margins.** The Central Electricity Authority (CEA) wants 158,339 MVA of 220 kV-and-above transformation added in FY27, 40% more than FY26, but industry capacity roughly doubles from about 375 GVA to 690 GVA by FY28, mostly at 220 kV and below. Third, **read the annual reports.** This year they turned up a share pledge at TARIL, bank stock statements that did not match the books at Atlanta, TARIL and Kanohar, a promoter-linked partnership at Supreme, missing inventory at Schneider, a cyber fraud at Yash and an audit-trail remark at Quality Power, none of which came up on the calls.",
             ],
         },
         {
             heading: '2. Charts: margins, growth, returns, cash cycle and cash conversion',
             body: [
-                "The six views that matter most, with four more behind **More measures**. Companies are grouped by business. All figures are filed (Screener): Schneider, Voltamp, Shilchar, Supreme and Yash standalone (their main or only business), the rest consolidated. Yash reports half-yearly, so its quarterly figures sit in two columns. Hover over a starred name for its caveat. **Start with cash conversion and free cash flow**: they separate this sector more than margins do. The cash conversion cycle shows how many days cash is tied up in bills and stock; net debt ÷ operating profit shows who is borrowing to grow; capex ÷ sales and sales per rupee of fixed assets show who is building new plants; order book ÷ yearly sales shows how many years of work each has booked.",
+                "The six views that matter most, with four more behind **More measures**. Companies are grouped by business. All figures are filed (Screener): Schneider, Voltamp, Shilchar, Supreme, Kanohar and Yash standalone (their main or only business), the rest consolidated. Yash reports half-yearly, so its quarterly figures sit in two columns, and Kanohar relisted in September 2026, so only three of its quarters are filed. Hover over a starred name for its caveat. **Start with cash conversion and free cash flow**: they separate this sector more than margins do. The cash conversion cycle shows how many days cash is tied up in bills and stock; net debt ÷ operating profit shows who is borrowing to grow; capex ÷ sales and sales per rupee of fixed assets show who is building new plants; order book ÷ yearly sales shows how many years of work each has booked.",
             ],
             embed: 'metrics',
         },
@@ -346,15 +366,15 @@ export const electricalTransformers: SectorOverview = {
                 },
                 {
                     label: 'Costs: CRGO steel, copper and oil',
-                    text: "CRGO (the grain-oriented steel in a transformer's core) is 25–40% of material cost. India needs about 4–4.5 lakh tonnes a year but makes only 40,000–50,000 tonnes (JSW JFE at Nashik), so about 90% is imported, mainly from China, Japan, South Korea and Russia. On 22 June 2026 the trade regulator (DGTR) opened an anti-dumping probe on those imports at JSW JFE's request, with a decision expected around March 2027; JSW JFE plans 3.5 lakh tonnes from FY28. Copper hit a record of about US$14,500–14,900 a tonne in September 2026, up about 47% in the year, and transformer oil (8–12% of cost) almost doubled between February and May. Who absorbs this depends on the contract: Supreme says 80–85% of its orders carry price-variation clauses, Atlanta about 75%, Schneider 20–25%, and Voltamp's are mostly fixed-price (CARE). **My view: a CRGO duty would be a lasting cost step, and it would hurt fixed-price sellers most.**",
+                    text: "CRGO (the grain-oriented steel in a transformer's core) is 25–40% of material cost. India needs about 4–4.5 lakh tonnes a year but makes only 40,000–50,000 tonnes (JSW JFE at Nashik), so about 90% is imported, mainly from China, Japan, South Korea and Russia. On 22 June 2026 the trade regulator (DGTR) opened an anti-dumping probe on those imports at JSW JFE's request, with a decision expected around March 2027; JSW JFE plans 3.5 lakh tonnes from FY28. Copper hit a record of about US$14,500–14,900 a tonne in September 2026, up about 47% in the year, and transformer oil (8–12% of cost) almost doubled between February and May. Who absorbs this depends on the contract: Supreme says 80–85% of its orders carry price-variation clauses, Kanohar 31 of its 35 contracts, Atlanta about 75%, Schneider 20–25%, and Voltamp's are mostly fixed-price (CARE). **My view: a CRGO duty would be a lasting cost step, and it would hurt fixed-price sellers most.**",
                 },
                 {
                     label: 'The capacity race and where we are in the cycle',
-                    text: "Industry capacity is expected to rise from about 375 GVA in FY25 to about 690 GVA by FY28 (a sector report cited in Shilchar's annual report). CG Power alone is going from 75,000 to about 110,000 MVA by the end of 2026, Hitachi Energy is building a ₹2,000cr plant at Vadodara and Siemens Energy India is adding 30,000 MVA. On this page, Shilchar goes from 7,500 to 14,000 MVA, Supreme from 2,500 to 9,000, TARIL from about 40,200 to 77,200 and Voltamp adds 6,000. Meanwhile delivery on the ground is slipping: FY26 additions missed the CEA target by 10%, only 23% of the FY27 target was added in the first third of the year, and only about 12% of privately bid transmission projects were on time by March 2026 (ICRA). Analysts on Yash's call flagged ‘overcapacity on the lower kV side’, although Shilchar still reports ‘normal’ domestic pricing. **My view: 400 kV and above is still in an up-cycle with 15–24-month lead times; 220 kV and below is mid-to-late cycle, and margins there should drift down once the new plants fill, from FY28.**",
+                    text: "Industry capacity is expected to rise from about 375 GVA in FY25 to about 690 GVA by FY28 (a sector report cited in Shilchar's annual report). CG Power alone is going from 75,000 to about 110,000 MVA by the end of 2026, Hitachi Energy is building a ₹2,000cr plant at Vadodara and Siemens Energy India is adding 30,000 MVA. On this page, Shilchar goes from 7,500 to 14,000 MVA, Supreme from 2,500 to 9,000, TARIL from about 40,200 to 77,200, Kanohar from 19,200 to about 37,200 by FY29 and Voltamp adds 6,000. Meanwhile delivery on the ground is slipping: FY26 additions missed the CEA target by 10%, only 23% of the FY27 target was added in the first third of the year, and only about 12% of privately bid transmission projects were on time by March 2026 (ICRA). Analysts on Yash's call flagged ‘overcapacity on the lower kV side’, although Shilchar still reports ‘normal’ domestic pricing. **My view: 400 kV and above is still in an up-cycle with 15–24-month lead times; 220 kV and below is mid-to-late cycle, and margins there should drift down once the new plants fill, from FY28.**",
                 },
                 {
                     label: 'What these companies actually depend on',
-                    text: "The label says transformers, but each share moves on something different. **Atlanta** and **TARIL** depend on Power Grid and state transmission tenders, and on winning approvals at 400 kV and above. **Shilchar** depends on exports and freight: about half its sales go abroad and customers collect from its factory. **Voltamp** depends on Indian industrial investment, and **Schneider** on data centres, chip plants and distribution tenders rather than the high-voltage grid. **Supreme** depends on filling one new plant with southern utility and EPC orders. **Yash** and **Quality Power** depend on transformer and HVDC makers everywhere buying parts from them, and **Rishabh** on its instruments outgrowing its die-casting losses. **Buy each for what it actually depends on, not for the sector label.**",
+                    text: "The label says transformers, but each share moves on something different. **Atlanta** and **TARIL** depend on Power Grid and state transmission tenders, and on winning approvals at 400 kV and above. **Kanohar** depends on the same tenders for its 400 kV units, on railway contractors for its Scott transformers (26% of FY26 sales), and on a short list of buyers: ten customers brought 93% of its FY26 sales. **Shilchar** depends on exports and freight: about half its sales go abroad and customers collect from its factory. **Voltamp** depends on Indian industrial investment, and **Schneider** on data centres, chip plants and distribution tenders rather than the high-voltage grid. **Supreme** depends on filling one new plant with southern utility and EPC orders. **Yash** and **Quality Power** depend on transformer and HVDC makers everywhere buying parts from them, and **Rishabh** on its instruments outgrowing its die-casting losses. **Buy each for what it actually depends on, not for the sector label.**",
                 },
             ],
             tables: [
@@ -364,7 +384,7 @@ export const electricalTransformers: SectorOverview = {
                     rows: [
                         ['Critical components', 'Yash, Quality Power', '11–28%', '29–32%', '**34–74%**', 'Few qualified makers and multi-year approvals; cash tied up in new plants'],
                         ['Instruments', 'Rishabh', '15–17%', '14%', '**73%**', 'Own brand and 60–70% gross margins, diluted by die-casting'],
-                        ['High-voltage transformer makers', 'Atlanta, TARIL', '11–20%', '23–45%', '**11–48%**', 'Tight 400 kV+ supply; utility customers pay slowly'],
+                        ['High-voltage transformer makers', 'Atlanta, Kanohar, TARIL', '11–29%', '23–54%', '**11–48%**', 'Tight 400 kV+ supply; utility customers pay slowly'],
                         ['Export and industrial makers (up to 160 MVA)', 'Shilchar, Voltamp', '13–33%', '24–51%', '**57–61%**', 'Export premium and short lead times; exposed to freight and fixed prices'],
                         ['Regional utility makers', 'Supreme', '10–16%', '22%', '**74%**', 'Tendered and fragmented; clauses protect margins, competition caps them'],
                         ['Medium-voltage equipment', 'Schneider', '5–17%', '30%', '**71%**', 'Brand and software, but tender pricing and parent fees'],
@@ -403,7 +423,7 @@ export const electricalTransformers: SectorOverview = {
                 },
                 {
                     label: 'Lasting at the top: 400 kV and above',
-                    text: "Approval attaches to a factory, not a company, and each factory must pass a destructive short-circuit test. **Atlanta** won Power Grid's 400 kV approval for Vadod in April 2026, about two years after breaking ground, which it calls among the fastest in the industry; it has eight accredited test labs up to 765 kV and won the ex-BTW plant by outbidding CG Power and TARIL. But its 400 kV short-circuit test has not happened and its 765 kV design will be licensed for a $3–5m fee plus a 2–4% royalty. **TARIL** makes up to 1,200 kV, has a 20-year 765 kV record in the US and passed four dynamic short-circuit tests in Q1. Yet its margins (15–16%) trail smaller peers at 18–20%, and every Indian tender is decided on lowest price. Its HVDC credential is still ahead of it: the PowerGrid HVDC repair needs nine more months, then six months of running before it is listed. **My view: this edge will hold through the capacity boom, but only Atlanta is converting it into margin today.**",
+                    text: "Approval attaches to a factory, not a company, and each factory must pass a destructive short-circuit test. **Atlanta** won Power Grid's 400 kV approval for Vadod in April 2026, about two years after breaking ground, which it calls among the fastest in the industry; it has eight accredited test labs up to 765 kV and won the ex-BTW plant by outbidding CG Power and TARIL. But its 400 kV short-circuit test has not happened and its 765 kV design will be licensed for a $3–5m fee plus a 2–4% royalty. **Kanohar** passed its tests earlier: since FY24 it has been one of five Indian makers certified for 500 MVA 400 kV units and one of four approved by the railways' RDSO for 100 MVA Scott transformers, and in June 2025 it won a ₹568.7cr Power Grid order for 400 kV units. Its limits: it wins about one bid in five, the 400 kV market is only ₹4,000–6,000cr a year, its own management says new entrants are ‘expected and required’, and its 765 kV prototype needs three to four years to qualify for regular tenders. **TARIL** makes up to 1,200 kV, has a 20-year 765 kV record in the US and passed four dynamic short-circuit tests in Q1. Yet its margins (15–16%) trail smaller peers at 18–20%, and every Indian tender is decided on lowest price. Its HVDC credential is still ahead of it: the PowerGrid HVDC repair needs nine more months, then six months of running before it is listed. **My view: this edge will hold through the capacity boom; Atlanta and Kanohar are converting it into margin today, though Kanohar's 28% looks too high to last.**",
                 },
                 {
                     label: 'The clause is the moat',
@@ -436,7 +456,7 @@ export const electricalTransformers: SectorOverview = {
                 },
                 {
                     label: 'Cyclical: transformer makers at a high point',
-                    text: "**Atlanta**'s margin rose from 16% in FY25 to 19% in FY26 and 20% in Q4, then fell to 17% in Q1; its gross margin fell from 29.7% to 27.3% in a quarter and it now guides 17–18%. **TARIL** earned 15% in FY26, but India Ratings puts its standalone margin at 13% after late-delivery fees and provisions for delays; it guides 16% standalone including other income. **Voltamp**'s margin fell from 20% in FY24 to 16% in FY26 and 15% in Q1 even though volume grew 29%, because its price per MVA has stayed at about ₹13 lakh while costs rose. **Supreme** held about 18% on consolidated figures, though oil and copper cost it 1–1.5 points in FY26. **My view: with capacity nearly doubling by FY28, I expect the 220 kV-and-below makers to lose two to four points; Atlanta and TARIL, with more 400 kV work, should lose less.**",
+                    text: "**Atlanta**'s margin rose from 16% in FY25 to 19% in FY26 and 20% in Q4, then fell to 17% in Q1; its gross margin fell from 29.7% to 27.3% in a quarter and it now guides 17–18%. **TARIL** earned 15% in FY26, but India Ratings puts its standalone margin at 13% after late-delivery fees and provisions for delays; it guides 16% standalone including other income. **Voltamp**'s margin fell from 20% in FY24 to 16% in FY26 and 15% in Q1 even though volume grew 29%, because its price per MVA has stayed at about ₹13 lakh while costs rose. **Supreme** held about 18% on consolidated figures, though oil and copper cost it 1–1.5 points in FY26. **Kanohar** is the outlier: its margin rose from 11% in FY24 to 21% in FY25 and 28% in FY26, and held at 28% in Q1 FY27, its first quarter after listing. Three things explain it: low-margin substation and line work fell from 48% of revenue to about 15%, certified 400 kV and Scott units became most of its output, and staff and other costs grew far more slowly than revenue. Management guides a similar margin for FY27 and says new tenders carry ‘stable’ margins, but CRISIL budgets 22–25% and management concedes possible ‘short-term margin pressure’ beyond three to four years. **My view: with capacity nearly doubling by FY28, I expect the 220 kV-and-below makers to lose two to four points; Atlanta and TARIL, with more 400 kV work, should lose less; Kanohar has the most to lose, and I assume about 22% by FY30.**",
                 },
                 {
                     label: 'Not structural: fixed prices, freight and windfalls',
@@ -444,7 +464,7 @@ export const electricalTransformers: SectorOverview = {
                 },
                 {
                     label: 'Working capital: the biggest drains',
-                    text: "**TARIL** tied up ₹848cr of working capital over FY22–FY26, ₹699cr of it in customer bills, and its cash cycle reached 200 days. Its standalone receivables of ₹1,058cr are 42% of its total assets, which its auditor made a key audit matter, and it deliberately stocked raw materials to last until December 2026; management targets 120–130 days. **Atlanta** tied up ₹312cr: its customers now pay in 84 days instead of 145, but it pays suppliers in 112 days instead of 192, and management expects working capital to rise to 80–90 days of sales in FY27–FY28 as 400 kV work grows.",
+                    text: "**TARIL** tied up ₹848cr of working capital over FY22–FY26, ₹699cr of it in customer bills, and its cash cycle reached 200 days. Its standalone receivables of ₹1,058cr are 42% of its total assets, which its auditor made a key audit matter, and it deliberately stocked raw materials to last until December 2026; management targets 120–130 days. **Atlanta** tied up ₹312cr: its customers now pay in 84 days instead of 145, but it pays suppliers in 112 days instead of 192, and management expects working capital to rise to 80–90 days of sales in FY27–FY28 as 400 kV work grows. **Kanohar** turned only ₹90cr of ₹369cr of five-year operating profit into cash. Its customer bills rose from ₹87cr in FY24 to ₹211cr, its stock reached ₹114cr in FY26 as it built for FY27 orders, and customers hold back retention money worth about 51 days of revenue. Its billing bunches in March: about ₹138cr, 21% of FY26 revenue, was booked in March 2026 alone. It is putting ₹155cr of IPO money into working capital this year and guides 110–120 days, which it calls ‘just the nature of the business’.",
                 },
                 {
                     label: 'Working capital: getting worse',
@@ -465,6 +485,7 @@ export const electricalTransformers: SectorOverview = {
                     columns: ['Company', 'What management said', 'Balance sheet'],
                     rows: [
                         ['Atlanta Electricals', 'All term debt repaid by March; cash about ₹93cr; working capital 72 days; tank plant ₹170–180cr with ₹15–20cr spent', 'Net cash ₹49cr (March); CRISIL A/Stable'],
+                        ['Kanohar Electricals', 'No Q1 cash figures; ₹155cr of IPO money set aside for working capital in FY27; net working capital to stay at 110–120 days; ₹64cr of plant spending over FY27–FY28', 'Net cash ₹57cr (March), before about ₹275cr of IPO money; CRISIL A-/Stable'],
                         ['Shilchar Tech.', '₹246cr of cash and liquid funds at March; ₹120cr expansion from own cash; Q1 working-capital days not given', 'Net cash ₹246cr; no borrowings'],
                         ['Voltamp Transformers', 'No calls. CARE: no fund-based debt, ₹667cr of free liquid investments; new plant ₹215cr from own cash', 'Net cash and investments ₹1,068cr; CARE AA/Stable'],
                         ['Supreme Power', 'No equity needed this year, possibly later; tank plant ₹20–22cr on term loans; bank limits being raised', 'Net debt ₹36cr; consolidated borrowings ₹50cr; CRISIL BBB'],
@@ -486,7 +507,7 @@ export const electricalTransformers: SectorOverview = {
             points: [
                 {
                     label: "Growth driver: India's transmission build-out",
-                    text: "The CEA wants 158,339 MVA of 220 kV-and-above transformation added in FY27 and 765 kV substation capacity to about triple by FY32. **Atlanta** expects 400 kV revenue from FY28 and 765 kV bids from Q4 FY27 if its technology deal closes; **TARIL** won a Power Grid order above ₹1,000cr for delivery over 30 months and has a ₹23,000cr enquiry pipeline, of which it historically wins 10–15%. **Yash** and **Quality Power** sell parts into every such transformer and HVDC link. The catch is delivery: FY26 additions missed the target by 10%, the first third of FY27 delivered 23% of the year's target, and government buyers pay slowly. **My view: this is the largest and longest-lasting driver, but it will arrive later than the plans say.**",
+                    text: "The CEA wants 158,339 MVA of 220 kV-and-above transformation added in FY27 and 765 kV substation capacity to about triple by FY32. **Atlanta** expects 400 kV revenue from FY28 and 765 kV bids from Q4 FY27 if its technology deal closes; **TARIL** won a Power Grid order above ₹1,000cr for delivery over 30 months and has a ₹23,000cr enquiry pipeline, of which it historically wins 10–15%. **Kanohar**'s order book more than doubled to ₹2,026cr in two years, government buyers hold 88% of it, and it booked ₹867cr more in Q2, including a central-utility order above ₹250cr. **Yash** and **Quality Power** sell parts into every such transformer and HVDC link. The catch is delivery: FY26 additions missed the target by 10%, the first third of FY27 delivered 23% of the year's target, and government buyers pay slowly. **My view: this is the largest and longest-lasting driver, but it will arrive later than the plans say.**",
                 },
                 {
                     label: 'Growth driver: the global shortage and US policy',
@@ -517,8 +538,12 @@ export const electricalTransformers: SectorOverview = {
                     text: "**Atlanta**'s 400 kV test and 765 kV deal each slipped a quarter and its margin guide eased to 17–18%. **Quality Power** beat FY26, but Sangli now needs about 60 customer audits before meaningful revenue in Q4, and its planned raise grew from under ₹500cr to ₹700cr within weeks. **Rishabh**'s die-casting arm promised ‘not to lose money’ and lost 6.4% at the EBITDA line; breakeven moved to the end of FY27.",
                 },
                 {
+                    label: 'Too new to judge',
+                    text: "**Kanohar** has held only one call since relisting in September, so its track record starts now. It guides about ₹950cr of FY27 revenue (+45%) at a margin similar to FY26's 27.6%, similar growth in FY28, and 18,000 MVA of new capacity for FY29. Q1 delivered ₹137cr, 14% of the year, so the second half must carry most of it, as the March quarter did last year. CRISIL, in March, expected growth of only 10–15% a year. **The first test is H1 FY27, due in November.**",
+                },
+                {
                     label: 'My outlook',
-                    text: "**I expect Yash to grow earnings at about 28% a year, Atlanta about 26%, Quality Power about 22%, Supreme about 20%, TARIL about 18%, Shilchar about 17%, Rishabh about 16%, Schneider about 15% from a depressed base and Voltamp about 12%.** Two estimates are lower than last quarter. **Supreme** falls from 22% to 20% because it has now missed three revenue targets in a row and the new plant's fixed costs arrived before its output (Q1 profit +10% on revenue +37%). **Quality Power** falls from 24% to 22% because a ₹700cr QIP and swap shares for Win-Win will add about 6% more shares, and a third of profit goes to partners. I kept Shilchar at 17%: capacity nearly doubles by April 2027 at about five times asset turns, but a domestic-heavy mix points to margins in the low 20s, not 30%.",
+                    text: "**I expect Yash to grow earnings at about 28% a year, Atlanta about 26%, Kanohar about 24%, Quality Power about 22%, Supreme about 20%, TARIL about 18%, Shilchar about 17%, Rishabh about 16%, Schneider about 15% from a depressed base and Voltamp about 12%.** Two estimates are lower than last quarter. **Supreme** falls from 22% to 20% because it has now missed three revenue targets in a row and the new plant's fixed costs arrived before its output (Q1 profit +10% on revenue +37%). **Quality Power** falls from 24% to 22% because a ₹700cr QIP and swap shares for Win-Win will add about 6% more shares, and a third of profit goes to partners. I kept Shilchar at 17%: capacity nearly doubles by April 2027 at about five times asset turns, but a domestic-heavy mix points to margins in the low 20s, not 30%. **Kanohar** is new at 24%: revenue of about ₹1,950cr by FY30 on the doubled capacity, below management's 45% a year, with the margin fading from 28% to about 22% as new 400 kV makers qualify.",
                 },
             ],
             tables: [
@@ -528,6 +553,7 @@ export const electricalTransformers: SectorOverview = {
                     columns: ['Company', 'What drives it', 'Earnings growth: low / base / high'],
                     rows: [
                         ['Atlanta Electricals', 'Volume at new plants, then 400 kV and 765 kV', '18% / **26%** / 34%'],
+                        ['Kanohar Electricals', 'Capacity doubling for FY29; 400 kV and railway orders; margin fading toward 22%', '12% / **24%** / 34%'],
                         ['Shilchar Tech.', 'Capacity doubling; exports returning; 220 kV', '8% / **17%** / 25%'],
                         ['Voltamp Transformers', 'New 6,000 MVA plant; margins normalising', '6% / **12%** / 18%'],
                         ['Supreme Power', 'Filling the Kannur plant; larger ratings after type tests', '8% / **20%** / 30%'],
@@ -545,6 +571,7 @@ export const electricalTransformers: SectorOverview = {
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
                         ['Atlanta Electricals', 'Revenue +40% (about ₹2,590cr); margin 17–18%; 400 kV revenue from FY28', 'Inverter-duty plant ₹65cr (Dec 2026); tanks and radiators ₹170–180cr', '**Delivered**: revenue +48%; margin guide eased; 400 kV and 765 kV a quarter late'],
+                        ['Kanohar Electricals', 'FY27 revenue about ₹950cr (+45%); margin similar to FY26 (27.6%); similar growth in FY28; working capital 110–120 days', '₹64cr from the IPO, of which ₹26cr is machinery for +18,000 MVA (for FY29)', '**New**: one call since the September 2026 listing, so the track record starts now; Q1 ₹137cr is 14% of the FY27 guide'],
                         ['Shilchar Tech.', '₹800cr kept; 30% margin only if exports return', '₹120cr for +6,500 MVA and 220 kV (Apr 2027)', '**Missed**: Q1 −15% against a ‘normal quarter’; margin 16% against 29–31%'],
                         ['Voltamp Transformers', 'None; ‘margins to normalise’', '₹215cr plant (Oct 2026, was July); ₹90cr dry-type plant (FY28)', '**Slipping**: plant a quarter late, cost up 7.5%'],
                         ['Supreme Power', '₹250–300cr; EBITDA 18–20%; FY28 +30%', 'Tank plant ₹20–22cr on loans, before March 2027', '**Missed**: Q1 ₹48cr against ₹50–60cr; tank plant late'],
@@ -565,27 +592,27 @@ export const electricalTransformers: SectorOverview = {
             points: [
                 {
                     label: 'CRGO steel, copper and oil',
-                    text: "A CRGO anti-dumping duty would raise the cost of a steel that is about 90% imported and up to 40% of material cost; the decision is due around March 2027 and TARIL's management would not comment on it. Copper is at a record and transformer oil almost doubled this year. **Supreme, Atlanta and TARIL** have clauses on most orders. **Voltamp**'s orders are mostly fixed-price, **Schneider** is still executing orders booked before December, and **Shilchar** recovered only 50–60% on old orders. **These three would absorb a duty for two or three quarters before new orders reprice it.**",
+                    text: "A CRGO anti-dumping duty would raise the cost of a steel that is about 90% imported and up to 40% of material cost; the decision is due around March 2027 and TARIL's management would not comment on it. Copper is at a record and transformer oil almost doubled this year. **Supreme, Atlanta, Kanohar and TARIL** have clauses on most orders. **Voltamp**'s orders are mostly fixed-price, **Schneider** is still executing orders booked before December, and **Shilchar** recovered only 50–60% on old orders. **These three would absorb a duty for two or three quarters before new orders reprice it.**",
                 },
                 {
                     label: 'Overcapacity, Chinese entry and delivery delays',
-                    text: "Industry capacity roughly doubles by FY28, Chinese makers are now allowed into public-sector tenders, and every company here is expanding into the same 132–220 kV band. **Voltamp**'s report expects ‘aggressive pricing trends’; **Atlanta** says it has seen no price correction yet. At the same time, customers are not always ready: **Supreme** guides ₹250–300cr against ₹377cr due for delivery, **Schneider**'s EPC customers deferred dispatches in Q4, and **Shilchar**'s buyers left ₹30–35cr of Q1 exports at the factory. **The order book is not the revenue**, and CEA and ICRA data show projects running late across the grid.",
+                    text: "Industry capacity roughly doubles by FY28, Chinese makers are now allowed into public-sector tenders, and every company here is expanding into the same 132–220 kV band. **Voltamp**'s report expects ‘aggressive pricing trends’; **Atlanta** says it has seen no price correction yet. At the same time, customers are not always ready: **Supreme** guides ₹250–300cr against ₹377cr due for delivery, **Schneider**'s EPC customers deferred dispatches in Q4, and **Shilchar**'s buyers left ₹30–35cr of Q1 exports at the factory. Late delivery can also cost a supplier its customer: Bihar's transmission company debarred **Kanohar** for three years in February 2026 over delays and defects on a substation and line job, then lifted the ban in May on condition that the remaining work was finished by June (the company says it was), and it could be reinstated. With ten customers bringing 93% of Kanohar's FY26 sales, losing one utility matters. **The order book is not the revenue**, and CEA and ICRA data show projects running late across the grid.",
                 },
                 {
                     label: 'Pledges and promoter-linked dealings',
-                    text: "**TARIL**'s lenders hold a pledge of 4.22 crore shares held by a director (about 14% of the company and 22% of the promoter stake), plus 10 lakh more for a Bandhan Bank loan and personal guarantees; promoter-controlled firms such as Harsha Engineers International appear among its related parties. **Atlanta** bought ₹114.6cr from promoter-influenced Amod Stampings in FY26 and sold it ₹39.5cr, and its promoter LLP guarantees ₹1,320cr of bank limits; promoters own 87%, so they may have to sell shares to meet listing rules. **Supreme** trades with Danya Electric, a partnership 7.5% owned by its MD and 2.5% by a director: ₹25.6cr of purchases and ₹24.6cr of sales in FY26, a ₹14.7cr guarantee, and approval sought for up to ₹125cr of dealings. **Quality Power**'s shareholders approved pay of up to ₹5cr a year for 25 years for a promoter relative. **Voltamp**'s promoter sold 7.8% in September 2025, leaving the family with 30%.",
+                    text: "**TARIL**'s lenders hold a pledge of 4.22 crore shares held by a director (about 14% of the company and 22% of the promoter stake), plus 10 lakh more for a Bandhan Bank loan and personal guarantees; promoter-controlled firms such as Harsha Engineers International appear among its related parties. **Atlanta** bought ₹114.6cr from promoter-influenced Amod Stampings in FY26 and sold it ₹39.5cr, and its promoter LLP guarantees ₹1,320cr of bank limits; promoters own 87%, so they may have to sell shares to meet listing rules. **Supreme** trades with Danya Electric, a partnership 7.5% owned by its MD and 2.5% by a director: ₹25.6cr of purchases and ₹24.6cr of sales in FY26, a ₹14.7cr guarantee, and approval sought for up to ₹125cr of dealings. **Quality Power**'s shareholders approved pay of up to ₹5cr a year for 25 years for a promoter relative. **Kanohar** paid ₹16.8cr to seven family members in FY26, about 13% of its profit and up from about ₹7cr a year earlier, and each of its four executive directors also gets 1.5% of pre-tax profit. Its promoter trust sold ₹755.7cr of shares in the IPO (72% of the issue), taking the family from 95.5% to 74.6%, and promoter shares above the 20% minimum, about 55% of the company, unlock around March 2027. **Voltamp**'s promoter sold 7.8% in September 2025, leaving the family with 30%.",
                 },
                 {
                     label: 'Audit findings and accounting',
-                    text: "**Schneider**'s auditor reported ₹2.18cr of inventory missing from a warehouse, now under police enquiry, and made receivables and tax disputes key audit matters; contingent tax claims total about ₹117cr, and it pays about ₹118cr a year in group fees plus ₹31cr of interest to group lenders, more than half its FY26 profit. **Yash**'s auditor added an emphasis of matter for a ₹2.10cr cyber fraud, with nothing recovered. **Quality Power**'s auditor reported that the audit trail works only at application level, relies on other auditors for about three-quarters of group revenue (including Endoks in Turkey), and its guarantees rose to about ₹421cr from ₹118cr. **Atlanta**'s stock statements to banks showed ₹44.5–68.1cr more inventory than its books each quarter, and **TARIL**'s differed for reasons including ‘pending reconciliation entries’. **Rishabh** has one unaudited subsidiary and associate and an audit trail not enabled for one system. **Shilchar** is the clean one: no key audit matters.",
+                    text: "**Schneider**'s auditor reported ₹2.18cr of inventory missing from a warehouse, now under police enquiry, and made receivables and tax disputes key audit matters; contingent tax claims total about ₹117cr, and it pays about ₹118cr a year in group fees plus ₹31cr of interest to group lenders, more than half its FY26 profit. **Yash**'s auditor added an emphasis of matter for a ₹2.10cr cyber fraud, with nothing recovered. **Quality Power**'s auditor reported that the audit trail works only at application level, relies on other auditors for about three-quarters of group revenue (including Endoks in Turkey), and its guarantees rose to about ₹421cr from ₹118cr. **Atlanta**'s stock statements to banks showed ₹44.5–68.1cr more inventory than its books each quarter, and **TARIL**'s differed for reasons including ‘pending reconciliation entries’. **Kanohar**'s auditor found the same kind of mismatch in FY25 and FY26; until July 2025 it had no independent directors or proper board committees, which its secretarial auditor qualified, and it has applied to settle six past company-law lapses. **Rishabh** has one unaudited subsidiary and associate and an audit trail not enabled for one system. **Shilchar** is the clean one: no key audit matters.",
                 },
                 {
                     label: 'Cash, funding and dilution',
-                    text: "**TARIL** burned ₹105cr of operating cash in FY26, used 84% of its bank limits, and will lease about ₹500cr of equipment; India Ratings expects its leverage to stay ‘elevated’ for two to three years. It was removed from a World Bank debarment list over a Nigerian project, with no further notice as of July. **Quality Power** plans a ₹700cr QIP, about 6% of its value, plus swap shares, 19 months after its IPO, and is paying up to ₹272cr for Win-Win, an insulator maker with ₹17cr of FY26 revenue. **Yash** followed its December 2024 IPO with a preferential issue of up to ₹151cr in August 2026. **Supreme**'s debt-to-equity doubled to 0.42 and its debt-service cover fell from 8.6 to 2.5; CRISIL names large debt-funded capex as a downgrade trigger. CRISIL expects **Atlanta**'s tank plant to be funded 75% by debt or a QIP.",
+                    text: "**TARIL** burned ₹105cr of operating cash in FY26, used 84% of its bank limits, and will lease about ₹500cr of equipment; India Ratings expects its leverage to stay ‘elevated’ for two to three years. It was removed from a World Bank debarment list over a Nigerian project, with no further notice as of July. **Quality Power** plans a ₹700cr QIP, about 6% of its value, plus swap shares, 19 months after its IPO, and is paying up to ₹272cr for Win-Win, an insulator maker with ₹17cr of FY26 revenue. **Yash** followed its December 2024 IPO with a preferential issue of up to ₹151cr in August 2026. **Supreme**'s debt-to-equity doubled to 0.42 and its debt-service cover fell from 8.6 to 2.5; CRISIL names large debt-funded capex as a downgrade trigger. CRISIL expects **Atlanta**'s tank plant to be funded 75% by debt or a QIP. **Kanohar** is putting ₹155cr of its IPO money into working capital in FY27, more than twice the ₹64cr it is spending on plant.",
                 },
                 {
                     label: 'Management churn and disclosure',
-                    text: "**TARIL** had a CEO for six months, lost its CFO in March and made the promoter's son MD; an investor complained on the call that the former finance director's TV guidance did not match the calls, and it has since hired EY to run investor relations. **Voltamp** holds no calls and publishes no presentations or quarterly order book. **Rishabh** did not deny an August press report that its promoters are talking to buyers at a valuation above ₹3,000cr. **Shilchar**'s annual report said export disruptions were ‘behind us’ weeks before they worsened. **Supreme** and **Yash** are SME-listed, with thin trading and half-yearly (Yash) disclosure.",
+                    text: "**TARIL** had a CEO for six months, lost its CFO in March and made the promoter's son MD; an investor complained on the call that the former finance director's TV guidance did not match the calls, and it has since hired EY to run investor relations. **Voltamp** holds no calls and publishes no presentations or quarterly order book. **Rishabh** did not deny an August press report that its promoters are talking to buyers at a valuation above ₹3,000cr. **Shilchar**'s annual report said export disruptions were ‘behind us’ weeks before they worsened. **Supreme** and **Yash** are SME-listed, with thin trading and half-yearly (Yash) disclosure. **Kanohar** delisted voluntarily in 2010 and relisted in September 2026, so it has one call and three filed quarters, and it names only two of its ten largest customers.",
                 },
             ],
         },
@@ -593,20 +620,20 @@ export const electricalTransformers: SectorOverview = {
             heading: '8. Valuation (comparative)',
             body: [
                 "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it gives credit for cash and charges for debt. Where the two disagree, the balance sheet is the reason.",
-                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **15–16% at 25x, 19% at 33x, 20% at 35x, 26% at 60x, 31% at 88x, 32% at 90x and 39% at 152x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E.",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **15–16% at 25x, 19% at 33x, 20% at 35x, 25% at 55x, 26% at 60x, 31% at 88x, 32% at 90x and 39% at 152x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E.",
             ],
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**Voltamp** (about ₹1,068cr of net cash and investments) and **Shilchar** (₹246cr) are cheaper than their P/Es suggest. **TARIL** and **Schneider** are slightly dearer because they carry net debt, and all of Schneider's is owed to its parent. **Quality Power's EV/EBITDA flatters it**: its operating profit includes all of Endoks and Mehru, but partners took 34.6% of FY26 profit, so shareholders own much less of that operating profit than the figure implies; its P/E is the better guide.",
+                    text: "**Voltamp** (about ₹1,068cr of net cash and investments) and **Shilchar** (₹246cr) are cheaper than their P/Es suggest. **TARIL** and **Schneider** are slightly dearer because they carry net debt, and all of Schneider's is owed to its parent. **Quality Power's EV/EBITDA flatters it**: its operating profit includes all of Endoks and Mehru, but partners took 34.6% of FY26 profit, so shareholders own much less of that operating profit than the figure implies; its P/E is the better guide. **Kanohar**'s EV/EBITDA uses March's ₹57cr of net cash, before about ₹275cr of IPO money arrived, so it looks a little dearer than it is; but ₹155cr of that money is earmarked for working capital, not spare.",
                 },
                 {
                     label: 'Windfalls in the profit the price rests on',
-                    text: "Several trailing profits include income that may not repeat. About 23% of **Voltamp**'s FY26 pre-tax profit came from its treasury, and one quarter's other income swung from −₹10cr to +₹42cr. **Shilchar**'s FY26 profit included a ₹12.1cr currency gain and ₹26cr of other income. Other income was about 28% of **Quality Power**'s FY26 pre-tax profit. **Schneider**'s FY26 profit carried a ₹14cr labour-code charge against an ₹18cr tax-interest gain a year earlier, so its fall looks worse than the business. **Read their P/Es as a little lower in quality than the number suggests.**",
+                    text: "Several trailing profits include income that may not repeat. About 23% of **Voltamp**'s FY26 pre-tax profit came from its treasury, and one quarter's other income swung from −₹10cr to +₹42cr. **Shilchar**'s FY26 profit included a ₹12.1cr currency gain and ₹26cr of other income. Other income was about 28% of **Quality Power**'s FY26 pre-tax profit. **Schneider**'s FY26 profit carried a ₹14cr labour-code charge against an ₹18cr tax-interest gain a year earlier, so its fall looks worse than the business. **Kanohar**'s trailing profit rests on a March-heavy year: about ₹138cr of sales, 21% of FY26, was booked in March 2026, the last month of the year its IPO accounts cover. **Read their P/Es as a little lower in quality than the number suggests.**",
                 },
                 {
                     label: 'Fits',
-                    text: "**Atlanta** needs about {need:Atlanta Electricals|26}% a year against my ~26%. Its guided 40% revenue growth and an order book covering most of FY27 support the next two years; the price also assumes margins hold near 17–18% after the capacity boom, which is why the 400 kV step matters. **TARIL** needs about {need:Transformers & Rect|19}% against my ~18%, fair on paper, but I would wait for positive cash and the pledge released before paying it. **Supreme** needs only about {need:Supreme Power|15–16}% against my ~20%, the widest gap here; the discount reflects three missed targets, the Danya dealings and thin SME trading, which is why it is a follow and not an own.",
+                    text: "**Atlanta** needs about {need:Atlanta Electricals|26}% a year against my ~26%. Its guided 40% revenue growth and an order book covering most of FY27 support the next two years; the price also assumes margins hold near 17–18% after the capacity boom, which is why the 400 kV step matters. **TARIL** needs about {need:Transformers & Rect|19}% against my ~18%, fair on paper, but I would wait for positive cash and the pledge released before paying it. **Supreme** needs only about {need:Supreme Power|15–16}% against my ~20%, the widest gap here; the discount reflects three missed targets, the Danya dealings and thin SME trading, which is why it is a follow and not an own. **Kanohar** needs about {need:Kanohar Electricals|25}% against my ~24%, so it fits on paper; but my estimate already assumes its margin fades from 28% to about 22%, and the price assumes profit finally turns into cash, which is why it too is a follow until it does.",
                 },
                 {
                     label: 'Full',
@@ -641,37 +668,43 @@ export const electricalTransformers: SectorOverview = {
             watch: 'Its own RIP cores passing type tests from October–November 2026; H1 FY27 revenue of ₹140–150cr; operating cash above half of EBITDA.',
         },
         {
-            company: 'Supreme Power', rank: 4, stance: 'SCALEUP', segment: MAKERS,
+            company: 'Kanohar Electricals', rank: 4, stance: 'SCALEUP', segment: MAKERS,
+            what: "Meerut maker of power transformers up to 500 MVA and 400 kV and of Scott transformers for the railways, with some substation and line building; sells to Power Grid, state transmission companies and railway contractors; relisted on the NSE and BSE in September 2026.",
+            view: "**A certified 400 kV maker whose cash has not followed its profit.** It is one of five Indian makers certified for 500 MVA 400 kV units, the order book reached ₹2,026cr in June with ₹867cr more in Q2, and the 28% margin held in its first quarter after listing. But that margin is 8–12 points above its peers', only ₹90cr of ₹369cr of five-year operating profit became cash, ten customers brought 93% of FY26 sales, Bihar's transmission company debarred it in February before lifting the ban on conditions, family pay took about 13% of profit, and promoter shares unlock around March 2027. The price needs about {need:Kanohar Electricals|25}% a year against my ~24%.",
+            watch: 'Operating cash above half of EBITDA and receivables below 110 days in H1 FY27; the margin holding above 25%; promoter selling when the lock-in ends around March 2027; the Bihar debarment staying lifted.',
+        },
+        {
+            company: 'Supreme Power', rank: 5, stance: 'SCALEUP', segment: MAKERS,
             what: "Tamil Nadu maker of power, distribution and solar transformers, now up to 200 MVA and 220 kV after a new plant took capacity from 2,500 to 9,000 MVA; sells to southern utilities, EPC firms and industry; listed on the NSE SME platform.",
             view: "**Cheap against its growth, for reasons.** The ₹590cr order book is about three times FY26 revenue, 77% power transformers, and 80–85% of orders carry price-variation clauses. But it missed its FY26 target twice and its Q1 guide, the new plant runs at 20–25%, debt-to-equity doubled to 0.42, and it trades heavily with Danya, a partnership in which its promoters own 10%. The price needs about {need:Supreme Power|15–16}% a year against my ~20%.",
             watch: 'Quarterly revenue above ₹75cr; the 160 MVA prototype passing its CPRI type test in December–January; Danya dealings and any equity raise.',
         },
         {
-            company: 'Transformers & Rect', rank: 5, stance: 'TURNAROUND', segment: MAKERS,
+            company: 'Transformers & Rect', rank: 6, stance: 'TURNAROUND', segment: MAKERS,
             what: "One of India's largest transformer makers: power transformers and reactors up to 1,000 MVA and 1,200 kV, plus distribution, furnace and rectifier units, from three plants around Ahmedabad.",
             view: "**Orders are not the problem; conversion and credibility are.** The order book is ₹6,630cr after a record ₹2,114cr quarter. But it missed both FY26 guides, cut FY27 to +25%, grew Q1 revenue only 8%, burned ₹105cr of operating cash in FY26, and 4.22 crore shares held by a director are pledged to its lenders. The price needs about {need:Transformers & Rect|19}% a year against my ~18%, fair for a company that has yet to show it can execute.",
             watch: 'Quarterly revenue above ₹750cr in Q2–Q3; positive operating cash in H1 FY27; Changodar and Moraiya reaching 60–65% use and the conductor plant starting in Q2.',
         },
         {
-            company: 'Voltamp Transformers', rank: 6, stance: 'PRICED', segment: MAKERS,
+            company: 'Voltamp Transformers', rank: 7, stance: 'PRICED', segment: MAKERS,
             what: "Vadodara maker of oil-filled power and distribution transformers up to 160 MVA and dry-type units, sold to more than 1,000 industrial customers rather than utilities; it holds no earnings calls.",
             view: "**The cleanest balance sheet, a shrinking margin.** It has no debt, about ₹1,068cr of net cash and investments, 46 debtor days and a CARE AA rating. But its orders are mostly fixed-price, its margin fell from 20% in FY24 to 15% in Q1 FY27 while its price per MVA stayed flat, the order book is only 0.7 times sales, and the new plant slipped from July to October; it began commercial production on 7 October 2026. The price needs about {need:Voltamp Transformers|19–20}% a year against my ~12%.",
             watch: "The new 6,000 MVA plant's first half-year of revenue; the order book rising above ₹2,000cr; any further promoter selling after the 7.8% block sale.",
         },
         {
-            company: 'Quality Power El', rank: 7, stance: 'PRICED', segment: PARTS,
+            company: 'Quality Power El', rank: 8, stance: 'PRICED', segment: PARTS,
             what: "A group of specialist grid-equipment makers in India and Turkey: HVDC reactors and coils, instrument transformers (51%-owned Mehru), and grid-stability systems and storage converters (51%-owned Endoks), sold to global equipment makers and utilities.",
             view: "**Good technology, flattering numbers.** It sells to Hitachi, Siemens and GE, its order book rose 39% in a quarter to ₹1,945cr, and gross margin reached 47.2%. But its ‘EBITDA’ includes other income, partners took 34.6% of FY26 profit, operating cash was ₹80cr against ₹236cr of its own EBITDA, and it plans a ₹700cr QIP after agreeing to pay up to ₹272cr for a ₹17cr-revenue insulator maker. The price needs about {need:Quality Power El|31–32}% a year against my ~22%.",
             watch: "Sangli's first revenue in Q3–Q4 FY27; the QIP price and dilution; the EGM vote on Win-Win; operating cash catching up with profit.",
         },
         {
-            company: 'Rishabh Instruments', rank: 8, stance: 'TURNAROUND', segment: PARTS,
+            company: 'Rishabh Instruments', rank: 9, stance: 'TURNAROUND', segment: PARTS,
             what: "Electrical measuring instruments, current transformers, meters and solar inverters (India, Poland, US, China), plus an aluminium die-casting business in Poland that is losing money again.",
             view: "**A good business inside a weak one.** Instrumentation grew 34% in Q1 at a 24.8% adjusted margin and the group held about ₹161cr of net cash at June (company figure; ₹121cr at March on Screener). But die-casting (31% of FY26 revenue) slipped back to a loss after breaking even, group profit has been flat at about ₹20cr a quarter for five quarters, and the cash cycle is 184 days. The price needs about {need:Rishabh Instruments|20}% a year against my ~16%.",
             watch: 'Die-casting at breakeven by the end of FY27, or an exit; instrument growth once the German grid orders end; any change of control.',
         },
         {
-            company: 'Schneider Ele. Infra', rank: 9, stance: 'AVOID', segment: MV,
+            company: 'Schneider Ele. Infra', rank: 10, stance: 'AVOID', segment: MV,
             what: "Schneider Electric's Indian listed unit: distribution transformers, medium-voltage switchgear and ring main units up to 33 kV, protection relays and grid software.",
             view: "**A good franchise at a price that ignores its margins.** Q1 orders were a record ₹915cr and the backlog ₹2,169cr, with data centres and chip plants over a fifth of it. But the Q1 operating margin was 5%, only 20–25% of the backlog reprices, it pays about ₹118cr a year in fees to its parent, all its borrowing is from the group, and its auditor reported ₹2.18cr of missing inventory. The price needs about {need:Schneider Ele. Infra|39}% growth a year against my ~15%.",
             watch: 'Operating margin back above 12% in Q2–Q3; the promised product-mix disclosure; parent fees as a share of sales.',
@@ -681,14 +714,14 @@ export const electricalTransformers: SectorOverview = {
     closing: {
         heading: '9. Summary review',
         body: [
-            "**Transformer makers.** **Atlanta: own.** The approvals, the growth and contracts that pass on costs, at a price that matches my estimate; watch the 400 kV test and the Amod purchases. **Shilchar: follow**, moved down from own: the highest returns and a debt-free balance sheet, but FY27 is a lost year and the price is just past a fair one. **Supreme: follow**; the cheapest against its growth, but small, behind its own guidance and tied to a promoter-linked partnership, so a small position at most. **TARIL (Transformers & Rectifiers): wait** for positive operating cash and the pledge to be released. **Voltamp: wait**; safe and cash-rich, but its margin is shrinking and its price needs far more growth than I expect.",
+            "**Transformer makers.** **Atlanta: own.** The approvals, the growth and contracts that pass on costs, at a price that matches my estimate; watch the 400 kV test and the Amod purchases. **Shilchar: follow**, moved down from own: the highest returns and a debt-free balance sheet, but FY27 is a lost year and the price is just past a fair one. **Kanohar: follow**; one of few makers certified for 400 kV, with a 28% margin and a price that fits my ~24%, but only a quarter of five years' profit became cash, ten customers bring 93% of sales and promoter shares unlock around March 2027, so I want two quarters of operating cash above half of EBITDA first. **Supreme: follow**; the cheapest against its growth, but small, behind its own guidance and tied to a promoter-linked partnership, so a small position at most. **TARIL (Transformers & Rectifiers): wait** for positive operating cash and the pledge to be released. **Voltamp: wait**; safe and cash-rich, but its margin is shrinking and its price needs far more growth than I expect.",
             "**Component makers.** **Yash: follow**; the best bottleneck in the sector at a full price, with weak cash while it builds; buy on a fall once its own cores pass type tests. **Quality Power: wait**, moved down from follow: excellent niches, but the partners' share, other income inside its EBITDA, weak cash and a ₹700cr share sale make the price hard to justify. **Rishabh: pass**; good instruments held back by a loss-making die-caster.",
             "**Medium-voltage equipment.** **Schneider: avoid.** Good technology and record orders, but little price protection, ₹118cr a year of parent fees, no access to high-voltage transmission and a price that needs close to {need:Schneider Ele. Infra|39}% growth a year.",
-            "**What would change my view.** For the better: Atlanta passing its 400 kV test on time; Gulf freight easing and Shilchar's export share recovering; two quarters of positive cash at TARIL with the director's pledge released, which would move it to follow; US orders from the new restrictions on Chinese equipment reaching Indian makers. For the worse: a CRGO anti-dumping duty, which would hit fixed-price sellers (Voltamp, Schneider, Shilchar's old orders) hardest; signs of price cutting in 132–220 kV tenders; Quality Power's QIP priced well below today's price.",
-            "**What to watch next quarter.** Atlanta's 400 kV test and 765 kV deal; Shilchar's export recovery; Yash's H1 results and core plant; Supreme's revenue run-rate; TARIL's cash flow; Voltamp's new plant; Quality Power's QIP and Sangli audits; Rishabh's die-casting; Schneider's margin; the CRGO probe.",
+            "**What would change my view.** For the better: Atlanta passing its 400 kV test on time; Gulf freight easing and Shilchar's export share recovering; two quarters of positive cash at TARIL with the director's pledge released, which would move it to follow; US orders from the new restrictions on Chinese equipment reaching Indian makers; Kanohar holding a margin above 25% through FY28 with cash conversion above 60%, which would move it to own. For the worse: a CRGO anti-dumping duty, which would hit fixed-price sellers (Voltamp, Schneider, Shilchar's old orders) hardest; signs of price cutting in 132–220 kV tenders; Quality Power's QIP priced well below today's price; Bihar reinstating Kanohar's debarment, or heavy promoter selling when its lock-in ends.",
+            "**What to watch next quarter.** Atlanta's 400 kV test and 765 kV deal; Kanohar's H1 cash flow and receivables; Shilchar's export recovery; Yash's H1 results and core plant; Supreme's revenue run-rate; TARIL's cash flow; Voltamp's new plant; Quality Power's QIP and Sangli audits; Rishabh's die-casting; Schneider's margin; the CRGO probe.",
         ],
         bottomLine:
-            "Buy the approval and the clause, not the order book. Atlanta Electricals has both at a fair price. Shilchar Tech., Yash Highvoltage and Supreme Power are worth following for a better price or better proof; Transformers & Rect, Voltamp Transformers and Quality Power El must first show cash, margins or cleaner accounts; Rishabh Instruments is a pass, and Schneider Ele. Infra's price has lost touch with its margins.",
+            "Buy the approval and the clause, not the order book. Atlanta Electricals has both at a fair price. Shilchar Tech., Yash Highvoltage, Kanohar Electricals and Supreme Power are worth following for a better price or better proof; Transformers & Rect, Voltamp Transformers and Quality Power El must first show cash, margins or cleaner accounts; Rishabh Instruments is a pass, and Schneider Ele. Infra's price has lost touch with its margins.",
     },
 
     sources: [
@@ -705,6 +738,11 @@ export const electricalTransformers: SectorOverview = {
         { label: 'Atlanta Electricals Q1 FY27 investor presentation', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=f61230f1-0371-4ae0-a5cb-8d186f998cf1.pdf' },
         { label: 'Atlanta Electricals Annual Report FY26 (related parties, CARO)', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/296140de-8dca-4c4e-b103-03aa1dece42d.pdf' },
         { label: 'Atlanta Electricals rating rationale — CRISIL, Feb 2026', url: 'https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/AtlantaElectricalsLimited_February%2010_%202026_RR_387012.html' },
+        { label: 'Kanohar Electricals standalone results — Screener.in', url: 'https://www.screener.in/company/KANOHAR/' },
+        { label: 'Kanohar Electricals IPO prospectus, Sep 2026 (customers, debarment, family pay, lock-ins) — SEBI', url: 'https://www.sebi.gov.in/filings/public-issues/sep-2026/kanohar-electricals-limited-prospectus_104483.html' },
+        { label: 'Kanohar Electricals rating rationale — CRISIL, Mar 2026', url: 'https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/KanoharElectricalsLimited_March%2026_%202026_RR_391181.html' },
+        { label: 'Kanohar Electricals Q1 FY27 investor presentation', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a5d439bd-564a-4444-96a7-3d9646838753.pdf' },
+        { label: 'Kanohar Electricals Annual Report FY26 (secretarial audit, CARO)', url: 'https://www.kanohar.com/Asset/newkanweb/Annual_Report_2025-26.pdf' },
         { label: 'Shilchar Technologies Q1 FY27 investor presentation', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=1898a3e0-dddd-4c77-8f54-08d9cab92a13.pdf' },
         { label: 'Shilchar Technologies Annual Report FY26', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/db78880a-b342-4816-b532-c8fb9c0b9e58.pdf' },
         { label: 'Shilchar Technologies rating rationale — CARE, Jul 2026', url: 'https://www.careratings.com/upload/CompanyFiles/PR/202607130731_Shilchar_Technologies_Limited.pdf' },

@@ -1355,6 +1355,133 @@ export const electricalTransformersCharts: Record<string, ProfileCharts> = {
             "inventory5y": -201,
             "payables5y": 230
         }
+    },
+    "Kanohar Electricals": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 61
+                },
+                {
+                    "label": "Power and factory costs",
+                    "share": 2
+                },
+                {
+                    "label": "Staff",
+                    "share": 6
+                },
+                {
+                    "label": "Other costs",
+                    "share": 3
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 28
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "marginVsInput": {
+            "input": "Copper price",
+            "periods": [
+                "Q1 FY26",
+                "Q4 FY26",
+                "Q1 FY27"
+            ],
+            "margin": [
+                22.4,
+                29.4,
+                28.5
+            ],
+            "index": [
+                100,
+                122,
+                130
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                29.0,
+                35.0,
+                31.0,
+                93.0,
+                181.0
+            ],
+            "ocf": [
+                24.0,
+                -23.0,
+                -16.0,
+                79.0,
+                26.0
+            ],
+            "fcf": [
+                23.44,
+                -25.71,
+                -17.88,
+                70.82,
+                22.74
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "55.4x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "39.1x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹57cr net cash",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "24%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "28%"
+            }
+        ],
+        "statsAsOf": "17 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                69,
+                118
+            ],
+            "inventoryDays": [
+                88,
+                104
+            ],
+            "payableDays": [
+                97,
+                91
+            ],
+            "cycleDays": [
+                61,
+                131
+            ],
+            "absorbed5y": -191,
+            "receivables5y": -158,
+            "inventory5y": -67,
+            "payables5y": 45
+        }
     }
 };
 
@@ -1413,5 +1540,11 @@ export const electricalTransformersValuationInputs: Record<string, ValuationInpu
         "ttmEbitda": 336.0,
         "mcapAtWriting": 29444.0,
         "peAtWriting": 152.0
+    },
+    "Kanohar Electricals": {
+        "netDebt": -57,
+        "ttmEbitda": 205.0,
+        "mcapAtWriting": 8075.0,
+        "peAtWriting": 55.4
     }
 };

@@ -32738,6 +32738,79 @@
    "createdOn": "2026-10-16",
    "status": "pending",
    "project": "tinna-rubber-andhra-complex"
+  },
+  {
+   "id": "kanohar-electricals-q4fy27-1",
+   "company": "Kanohar Electricals",
+   "sector": "Electrical Transformers",
+   "text": "FY27 revenue of about ₹950cr (up about 45%), as guided",
+   "metric": "fyRevenueGrowth",
+   "op": ">=",
+   "target": 45,
+   "due": "Q4 FY27",
+   "ifMet": "Supports the growth case; a move towards own needs the cash checkpoint too",
+   "ifMissed": "First miss as a listed company; growth estimate comes down",
+   "createdOn": "2026-10-17",
+   "status": "pending"
+  },
+  {
+   "id": "kanohar-electricals-q4fy27-2",
+   "company": "Kanohar Electricals",
+   "sector": "Electrical Transformers",
+   "text": "FY27 operating margin broadly similar to FY26's 27.6% (at least 26%), as guided",
+   "metric": "fyEbitdaMargin",
+   "op": ">=",
+   "target": 26,
+   "due": "Q4 FY27",
+   "ifMet": "The margin far above peers is holding",
+   "ifMissed": "Margin heading towards CRISIL's 22–25% band; the price would need more than I expect",
+   "createdOn": "2026-10-17",
+   "status": "pending"
+  },
+  {
+   "id": "kanohar-electricals-q4fy27-3",
+   "company": "Kanohar Electricals",
+   "sector": "Electrical Transformers",
+   "text": "Order book at March 2027 at least ₹2,026cr (the June 2026 level), enough to cover most of FY28–FY29 revenue as management said",
+   "metric": "orderBook",
+   "op": ">=",
+   "target": 2026,
+   "due": "Q4 FY27",
+   "ifMet": "Visibility for the FY28 growth guide",
+   "ifMissed": "Order intake is not keeping up with 45% growth",
+   "createdOn": "2026-10-17",
+   "status": "pending"
+  },
+  {
+   "id": "kanohar-electricals-q4fy27-4",
+   "company": "Kanohar Electricals",
+   "sector": "Electrical Transformers",
+   "text": "Net working capital within the guided 110–120 days for FY27, with operating cash above half of EBITDA",
+   "due": "Q4 FY27",
+   "ifMet": "Profit is turning into cash; would support moving from follow to own",
+   "ifMissed": "Cash conversion stays weak; stays a follow at best",
+   "createdOn": "2026-10-17",
+   "status": "pending"
+  },
+  {
+   "id": "kanohar-electricals-gangol-expansion-m1",
+   "company": "Kanohar Electricals",
+   "sector": "Electrical Transformers",
+   "text": "First ₹24.2cr of IPO capex spent at Gangol in FY27, as scheduled",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-17",
+   "status": "pending",
+   "project": "kanohar-electricals-gangol-expansion"
+  },
+  {
+   "id": "kanohar-electricals-gangol-expansion-m2",
+   "company": "Kanohar Electricals",
+   "sector": "Electrical Transformers",
+   "text": "18,000 MVA expansion in place by the end of FY28",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-17",
+   "status": "pending",
+   "project": "kanohar-electricals-gangol-expansion"
   }
  ]
 }
