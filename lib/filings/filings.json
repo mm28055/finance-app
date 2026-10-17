@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-16T18:54:58.935Z",
+ "updated": "2026-10-17T18:04:27.343Z",
  "from": "2026-09-01",
- "to": "2026-10-16",
+ "to": "2026-10-17",
  "companiesBySector": {
   "Mining & Metals Recycle": 8,
   "Aerospace defence": 18,
@@ -12,6 +12,7 @@
   "Hotels and Travels": 11,
   "Cables": 8,
   "Forging": 7,
+  "Electrical Transformers": 10,
   "Industrial - Railway": 7,
   "Chemicals": 48,
   "Agrochemical & Fertilizers": 14,
@@ -33,7 +34,6 @@
   "Plastics": 6,
   "Pumps Comp & Eng": 9,
   "Hospitals": 10,
-  "Electrical Transformers": 9,
   "Bearings": 5,
   "Construction - Power": 5,
   "Commercial Services": 14,
@@ -53,6 +53,102 @@
   "Industrial Machinery": 4
  },
  "filings": [
+  {
+   "company": "Zen Technologies",
+   "sector": "Aerospace defence",
+   "date": "2026-10-17",
+   "category": "Acquisition",
+   "tone": "info",
+   "headline": "Zen Tech to buy 52% stake in AI defence firm Cogknit for ₹135cr",
+   "summary": "Zen Technologies will acquire a 51.98% controlling stake in Cogknit Semantics for up to ₹135.15 crore in cash. Cogknit develops AI-enabled battlefield management and situational-awareness systems. The acquisition size is significant, equating to roughly 20% of Zen's trailing 12-month sales.",
+   "url": "https://nsearchives.nseindia.com/corporate/ZENTEC_17102026195446_Cogknit_Reg30_Board_Outcome_17Oct2026__Clean_.pdf",
+   "impact": "high",
+   "impactWhy": "Significant acquisition of 52% stake in AI firm worth 20% of sales"
+  },
+  {
+   "company": "Sambhv Steel Tubes",
+   "sector": "Iron and Steel",
+   "date": "2026-10-17",
+   "category": "Fund-raise",
+   "tone": "info",
+   "headline": "Allotted 86.95 lakh convertible warrants at ₹115 to raise about ₹100cr",
+   "summary": "The company has allotted 86.95 lakh fully convertible equity warrants to promoter and non-promoter investors at ₹115 each. It has received an initial 25% (₹25 crore) towards the roughly ₹100 crore total issue size. The ₹115 issue price is at a discount to the current ₹172.47 share price, and full conversion will create 2.95% more shares, resulting in a 2.87% dilution for existing shareholders.",
+   "url": "https://nsearchives.nseindia.com/corporate/SAMBHAV2024_17102026171635_Sign.pdf",
+   "impact": "normal",
+   "impactWhy": "Preferential warrant issue results in only 2.87% dilution, below 5% threshold"
+  },
+  {
+   "company": "Amber Enterprises",
+   "sector": "EMS & Electronics",
+   "date": "2026-10-17",
+   "category": "Management change",
+   "tone": "info",
+   "headline": "Satendra Singh appointed CEO of material subsidiary IL JIN Electronics",
+   "summary": "Satendra Singh has been appointed as Chief Executive Officer and Whole-Time Director of material subsidiary IL JIN Electronics for a five-year term. He brings over 35 years of experience and previously served as CEO of listed EMS company Syrma SGS Technology. He replaces Sanjay Kumar Arora, who steps down due to an inter-group transfer within the Amber Group.",
+   "url": "https://nsearchives.nseindia.com/corporate/AMBER_17102026165948_SE_Intimation_ILJIN_17102026_SatendraSingh_SanjayKumarArora.pdf",
+   "impact": "normal",
+   "impactWhy": "CEO appointment is for a subsidiary, not parent company"
+  },
+  {
+   "company": "Quality Power El",
+   "sector": "Electrical Transformers",
+   "date": "2026-10-17",
+   "category": "Operations",
+   "tone": "good",
+   "headline": "Subsidiary commences operations at new PCS manufacturing facility in Türkiye",
+   "summary": "The company's subsidiary, Endoks Energy Systems, has commenced manufacturing operations at its new Power Conversion Systems facility in Niğde, Türkiye. The plant will produce power electronic converters and inverters for utility-scale battery energy storage systems, supporting the execution of its international order book.",
+   "url": "https://nsearchives.nseindia.com/corporate/QPOWER1234_17102026161424_IntimationOfPCSFacilityInTurkey171026Sign.pdf",
+   "impact": "normal",
+   "impactWhy": "New manufacturing plant commencement by subsidiary without disclosed material capacity scale"
+  },
+  {
+   "company": "HDFC Bank",
+   "sector": "Finance",
+   "date": "2026-10-17",
+   "category": "Management change",
+   "tone": "watch",
+   "headline": "Deputy MD Kaizad Bharucha to step down on December 31, 2026",
+   "summary": "Deputy Managing Director Kaizad Bharucha has requested cessation from the bank's services effective December 31, 2026. The board has accepted his request and forwarded it to the Reserve Bank of India for approval, acknowledging his association spanning over three decades and his role in building the bank's credit architecture.",
+   "url": "https://nsearchives.nseindia.com/corporate/HDFCBANK_17102026161248_Stockexchangeintimation_LV_KB.pdf",
+   "impact": "normal",
+   "impactWhy": "Deputy MD stepping down two years in future, not MD or CEO"
+  },
+  {
+   "company": "Rashi Peripheral",
+   "sector": "Hardware",
+   "date": "2026-10-17",
+   "category": "Governance",
+   "tone": "watch",
+   "headline": "Deloitte steps down as joint statutory auditor due to ineligibility",
+   "summary": "Deloitte Haskins & Sells LLP has vacated its office as a joint statutory auditor for the company and its wholly owned subsidiary mid-tenure. The auditor cited ineligibility under Section 141(3)(e) of the Companies Act, which relates to business relationships with the company. The other joint auditor, Pipara & Co. LLP, continues in office for the remainder of its term.",
+   "url": "https://nsearchives.nseindia.com/corporate/RASHI2024_17102026102026_Cessation_of_Auditors_-_SE_Intimation_signed.pdf",
+   "impact": "high",
+   "impactWhy": "Statutory auditor stepping down mid-tenure"
+  },
+  {
+   "company": "OSEL Devices",
+   "sector": "Health Products",
+   "date": "2026-10-17",
+   "category": "Fund-raise",
+   "tone": "info",
+   "headline": "Board approves issue of 1.7 lakh convertible warrants at ₹412 per share",
+   "summary": "The board approved a preferential issue of 1,70,000 convertible warrants to a non-promoter investor at ₹412 per share, raising up to ₹7 crore. This will add 0.96% more shares and dilute existing holders by 0.95%, with the issue price at a premium to the current ₹352 share price. The company also appointed a new strategic consultant and declared a ₹1 interim dividend, which the promoter MD waived for his shares.",
+   "url": "https://nsearchives.nseindia.com/corporate/OSEL_17102026144106_Outcome.pdf",
+   "impact": "normal",
+   "impactWhy": "Warrant issue dilution is under 1% and dividend impact is small"
+  },
+  {
+   "company": "OBSC Perfection",
+   "sector": "Auto Related",
+   "date": "2026-10-17",
+   "category": "Order win",
+   "tone": "good",
+   "headline": "Wins ₹17cr domestic order for flange parts over 5 years",
+   "summary": "OBSC Perfection has received a letter of intent from a domestic component manufacturer to supply flange parts for EGR gas pipes. The order is valued at ₹17 crore and is to be completed over a period of five years, which equals about 6.7% of the company's current yearly sales.",
+   "url": "https://nsearchives.nseindia.com/corporate/OBSCPERFECTION_17102026142637_OBSCP_Disclosure_Receipt_of_Order_17th_October_2026.pdf",
+   "impact": "normal",
+   "impactWhy": "Order value is under 10% of annual sales"
+  },
   {
    "company": "SH Kelkar & Co",
    "sector": "Chemicals",
@@ -376,6 +472,18 @@
    "url": "https://nsearchives.nseindia.com/corporate/ATHERENERGY_15102026224822_SEintimationIRDAICorporateLicenseFinalsigned.pdf",
    "impact": "normal",
    "impactWhy": "Routine receipt of corporate insurance agent license."
+  },
+  {
+   "company": "Metro Brands",
+   "sector": "Consumer Durables",
+   "date": "2026-10-15",
+   "category": "Operations",
+   "tone": "watch",
+   "headline": "Cybersecurity incident under investigation; assessing operational impact",
+   "summary": "Metro Brands reported a cybersecurity incident involving unauthorized activity and suspected credential-access attempts within its IT infrastructure, including its Active Directory. While preliminary assessments show no material financial loss to date, the full extent of potential data exposure and operational impact remains under investigation.",
+   "url": "https://nsearchives.nseindia.com/corporate/METROBRAND_15102026130439_Reg_30_Cyber_security_incidend_reporting_signed.pdf",
+   "impact": "normal",
+   "impactWhy": "Cybersecurity incident with no material financial loss assessed"
   },
   {
    "company": "AXISCADES Technologies",
