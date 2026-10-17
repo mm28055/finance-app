@@ -1,6 +1,432 @@
 {
- "updated": "2026-10-16T19:20:43.758Z",
+ "updated": "2026-10-17T18:23:53.669Z",
  "results": [
+  {
+   "company": "Bajaj Healthcare",
+   "sector": "Pharma API",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-17",
+   "readOn": "2026-10-17",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 176,
+     "yearAgo": 148,
+     "prev": 166,
+     "yoy": 18.9,
+     "qoq": 6
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 31,
+     "yearAgo": 27,
+     "prev": 29,
+     "yoy": 14.8,
+     "qoq": 6.9
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 18,
+     "yearAgo": 18,
+     "prev": 17,
+     "yoy": 0,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 14,
+     "yearAgo": 11,
+     "prev": 14,
+     "yoy": 27.3,
+     "qoq": 0
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "text": "Revenue grew 18.9% from a year ago to ₹176 crore, coming in ahead of the company's 10–15% full-year growth guidance. Operating profit rose 14.8% to ₹31 crore, keeping the operating margin steady year-on-year at 18%. This successfully brings the margin back inside management's 18–20% target range after a slight dip last quarter.",
+    "checks": [
+     {
+      "text": "Operating margin inside 18–20% guide",
+      "status": "met",
+      "why": "margin was 18%"
+     }
+    ],
+    "on": "2026-10-17"
+   }
+  },
+  {
+   "company": "HDFC Bank",
+   "sector": "Finance",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-17",
+   "readOn": "2026-10-17",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 95132,
+     "yearAgo": 86994,
+     "prev": 90575,
+     "yoy": 9.4,
+     "qoq": 5
+    },
+    {
+     "label": "Financing profit",
+     "unit": "cr",
+     "now": -5565,
+     "yearAgo": -4908,
+     "prev": -15342,
+     "yoy": null,
+     "qoq": null
+    },
+    {
+     "label": "Financing margin",
+     "unit": "%",
+     "now": -6,
+     "yearAgo": -6,
+     "prev": -17,
+     "yoy": 0,
+     "qoq": 11
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 21537,
+     "yearAgo": 20364,
+     "prev": 20383,
+     "yoy": null,
+     "qoq": 5.7
+    }
+   ],
+   "oneOff": "Other income of ₹34,227cr is 119% of profit before tax this quarter, so profit may not reflect the business. The year-ago quarter's profit included other income of ₹31,567cr (118% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "mixed",
+    "text": "Revenue grew 9.4% from a year ago to ₹95,132 crore, which is roughly in line with the 10% long-term growth expected. However, core operations remain obscured as financing profit was negative at ₹-5,565 crore with the financing margin flat at -6%. Net profit of ₹21,537 crore does not reflect the underlying business, as it was heavily flattered by ₹34,227 crore of other income.",
+    "checks": [
+     {
+      "text": "New CEO in place before 26 October",
+      "status": "met",
+      "why": "RBI approved Anup Bagchi on 1 October"
+     },
+     {
+      "text": "Margin steadying near 3.3%",
+      "status": "unclear",
+      "why": "Standalone lending margin is not in these headline figures"
+     },
+     {
+      "text": "CASA deposits above 34%",
+      "status": "unclear",
+      "why": "Deposit mix is not in these headline figures"
+     }
+    ],
+    "on": "2026-10-17"
+   }
+  },
+  {
+   "company": "ICICI Bank",
+   "sector": "Finance",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-17",
+   "readOn": "2026-10-17",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 55992,
+     "yearAgo": 48181,
+     "prev": 52241,
+     "yoy": 16.2,
+     "qoq": 7.2
+    },
+    {
+     "label": "Financing profit",
+     "unit": "cr",
+     "now": -9055,
+     "yearAgo": -8901,
+     "prev": -6141,
+     "yoy": null,
+     "qoq": null
+    },
+    {
+     "label": "Financing margin",
+     "unit": "%",
+     "now": -16,
+     "yearAgo": -18,
+     "prev": -12,
+     "yoy": 2,
+     "qoq": -4
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 17389,
+     "yearAgo": 14318,
+     "prev": 16276,
+     "yoy": null,
+     "qoq": 6.8
+    }
+   ],
+   "oneOff": "Other income of ₹32,169cr is 139% of profit before tax this quarter, so profit may not reflect the business. The year-ago quarter's profit included other income of ₹27,966cr (147% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "mixed",
+    "text": "Revenue grew 16.2% from last year to ₹55,992cr, but financing profit remained negative at ₹-9,055cr with a financing margin of -16%. Net profit reached ₹17,389cr, but this was heavily flattered by ₹32,169cr in other income (139% of profit before tax), meaning the headline profit does not reflect the underlying business.",
+    "checks": [
+     {
+      "text": "Deposit growth closing gap with loans",
+      "status": "unclear",
+      "why": "Deposit and loan figures not provided"
+     },
+     {
+      "text": "Core margin near 4.28%",
+      "status": "unclear",
+      "why": "Core margin not provided"
+     },
+     {
+      "text": "Credit cost toward 0.50%",
+      "status": "unclear",
+      "why": "Credit cost not provided"
+     },
+     {
+      "text": "Release of farm-loan provision",
+      "status": "unclear",
+      "why": "Provision details not provided"
+     }
+    ],
+    "on": "2026-10-17"
+   }
+  },
+  {
+   "company": "Kross",
+   "sector": "Auto Related",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-17",
+   "readOn": "2026-10-17",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 235,
+     "yearAgo": 131,
+     "prev": 184,
+     "yoy": 79.4,
+     "qoq": 27.7
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 31,
+     "yearAgo": 15,
+     "prev": 23,
+     "yoy": 106.7,
+     "qoq": 34.8
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 13,
+     "yearAgo": 11,
+     "prev": 12,
+     "yoy": 2,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 20,
+     "yearAgo": 8,
+     "prev": 13,
+     "yoy": 150,
+     "qoq": 53.8
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "text": "Revenue surged 79.4% from last year to ₹235 crore, and operating profit jumped 106.7% to ₹31 crore. The operating margin expanded by two percentage points to 13%, successfully hitting the 13–14% target expected after truck-maker settlements. This strong performance puts profit growth well ahead of the 15% base-case expectation, though working capital improvements remain to be seen.",
+    "checks": [
+     {
+      "text": "Margin back to 13–14%",
+      "status": "met",
+      "why": "operating margin reached 13%"
+     },
+     {
+      "text": "Receivable and stock days falling",
+      "status": "unclear",
+      "why": "not in these figures"
+     },
+     {
+      "text": "Axle-shaft facility commissioned",
+      "status": "unclear",
+      "why": "waits for the call"
+     }
+    ],
+    "on": "2026-10-17"
+   }
+  },
+  {
+   "company": "Le Travenues Techno",
+   "sector": "Travel Services",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-17",
+   "readOn": "2026-10-17",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 321,
+     "yearAgo": 284,
+     "prev": 357,
+     "yoy": 13,
+     "qoq": -10.1
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 16,
+     "yearAgo": -5,
+     "prev": 20,
+     "yoy": null,
+     "qoq": -20
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 4.8,
+     "yearAgo": -1.8,
+     "prev": 6,
+     "yoy": 6.6,
+     "qoq": -1.2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 63,
+     "yearAgo": -3,
+     "prev": 34,
+     "yoy": null,
+     "qoq": 85.3
+    }
+   ],
+   "oneOff": "Other income of ₹63cr is 88% of profit before tax this quarter, so profit may not reflect the business.",
+   "take": {
+    "verdict": "mixed",
+    "text": "Revenue grew 13% from last year to ₹321 crore, and operating profit swung from a ₹5 crore loss to a ₹16 crore profit. The operating margin improved year-over-year to 4.8% but dipped from the previous quarter's 6%, while the ₹63 crore net profit was heavily flattered by other income making up 88% of profit before tax. This is a mixed result that shows underlying progress, but the core business still needs faster growth to meet the high expectations priced into the stock.",
+    "checks": [
+     {
+      "text": "Contribution margin stays above 36-37%",
+      "status": "unclear",
+      "why": "Not disclosed in these figures"
+     }
+    ],
+    "on": "2026-10-17"
+   }
+  },
+  {
+   "company": "Rossari Biotech",
+   "sector": "Chemicals",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-17",
+   "readOn": "2026-10-17",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 698,
+     "yearAgo": 586,
+     "prev": 697,
+     "yoy": 19.1,
+     "qoq": 0.1
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 87,
+     "yearAgo": 72,
+     "prev": 81,
+     "yoy": 20.8,
+     "qoq": 7.4
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 12,
+     "yearAgo": 12,
+     "prev": 12,
+     "yoy": 0,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 39,
+     "yearAgo": 37,
+     "prev": 35,
+     "yoy": 5.4,
+     "qoq": 11.4
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "text": "Revenue grew 19.1% year-on-year to ₹698 crore and operating profit rose 20.8% to ₹87 crore, both comfortably beating the management's 15% growth guidance. However, the operating margin held flat at 12%, missing the expectation of a recovery above 13%. Net profit grew just 5.4% to ₹39 crore, confirming the ongoing concern that bottom-line growth is not keeping pace with sales.",
+    "checks": [
+     {
+      "text": "Margin back above 13%",
+      "status": "missed",
+      "why": "margin remained at 12%"
+     },
+     {
+      "text": "Free cash positive and net debt below ₹200cr",
+      "status": "unclear",
+      "why": "cash flow and debt figures not provided"
+     },
+     {
+      "text": "Consumer arm sold or closed",
+      "status": "unclear",
+      "why": "no update in the earnings figures"
+     }
+    ],
+    "on": "2026-10-17"
+   }
+  },
   {
    "company": "Aurum Proptech",
    "sector": "Platform Cos",
@@ -611,6 +1037,10 @@
       "why": "Requires segment breakdown"
      }
     ],
+    "on": "2026-10-17"
+   },
+   "call": {
+    "text": "The call revealed that the severe margin deterioration was entirely driven by deliberate cash burn to aggressively scale the new InstaHelp segment, whereas the core business actually generated a profitable ₹30 crore Adjusted EBITDA. This context, alongside a surprise ₹2,500 crore fundraise to fund M&A and outspend rivals, upgrades the verdict from \"behind\" to a cautious \"solid compounder.",
     "on": "2026-10-17"
    }
   },
