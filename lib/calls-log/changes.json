@@ -2,6 +2,15 @@
  "changes": [
   {
    "date": "2026-10-17",
+   "company": "Kanohar Electricals",
+   "sector": "Electrical Transformers",
+   "from": null,
+   "to": "follow",
+   "price": 1019.8,
+   "why": "The price roughly fits the growth I expect, but the margin is far above its rivals' and the cash has not yet followed the profit."
+  },
+  {
+   "date": "2026-10-17",
    "company": "M & B Engineer.",
    "sector": "Construction",
    "from": "wait",

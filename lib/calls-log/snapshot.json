@@ -2485,6 +2485,10 @@
    "call": "own",
    "sector": "Electrical Transformers"
   },
+  "Kanohar Electricals": {
+   "call": "follow",
+   "sector": "Electrical Transformers"
+  },
   "Shilchar Tech.": {
    "call": "follow",
    "sector": "Electrical Transformers"
