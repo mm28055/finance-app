@@ -685,7 +685,7 @@ export const platformCos: SectorOverview = {
         {
             company: 'Macfos', rank: 4, stance: 'SCALEUP', segment: B2B,
             what: "Runs Robu.in, an online store for about 1.07 lakh electronic components, robotics and drone parts, and is starting to design its own products; SME-listed.",
-            view: "**Fast growth, but the profit is not arriving as cash.** Operating cash was −₹22cr against ₹68cr of profit over FY22–FY26, and −₹8cr against ₹26cr of profit in FY26, as stock grew and debt rose to ₹36cr. FY26 grew about 67% like for like at a 34% return on capital, but Q1 slowed to 38% with a lower margin, and a customs notice of undisclosed size is pending. The price needs about {need:Macfos|22–23}% a year against my ~20%; it returns to follow when operating cash turns positive and covers most of its profit.",
+            view: "**Fast growth, but the profit is not arriving as cash.** Operating cash was −₹22cr against ₹68cr of profit over FY22–FY26, and −₹8cr against ₹26cr of profit in FY26, as stock grew and debt rose to ₹36cr. FY26 grew about 67% like for like at a 34% return on capital, but Q1 slowed to 38% with a lower margin, and a customs notice of undisclosed size is pending. The price needs about {need:Macfos|22–23}% a year against my ~20%; it returns to follow when operating cash turns positive and covers most of its profit. On 18 October 2026 the price moved to fits, but the call stays wait: the cash test, not the price, is what holds it back.",
             watch: 'Operating cash turning positive; growth back above 45%; the size of the customs claim.',
         },
         {
