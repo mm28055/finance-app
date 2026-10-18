@@ -153,7 +153,7 @@ evening job, so a call heard on a Friday would otherwise sit unjudged for days. 
 presentation gives (a segment's loss or margin) count. Only a checkpoint the call truly leaves open stays pending.
 
 **Top 12 pass.** `lib/top-ideas/top-ideas.json` holds twelve ideas for the owner's own portfolio (about 25% a year,
-held to March 2030) and a reserve list; the page recomputes returns from live prices, so price moves alone need nothing.
+held to March 2030) and a reserve list; the dashboard shows only the twelve names (its "★ Top 12" filter), so price moves alone need nothing.
 For each Top 12 or reserve company touched by this run's work (a new call, a results entry, a filing, a call change): check the
 idea's `breaksIt` triggers and `nextChecks` against the new facts. If a trigger is hit, or the facts move FY30 profit or
 the exit P/E, update that idea's numbers and text (FY30 profit, exit P/E, bad case, conviction, the checks) using the
