@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14",
+ "updated": "2026-10-18",
  "companies": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -969,9 +969,16 @@
     },
     {
      "name": "Shashidhar S.K.",
-     "role": "Group Chief Financial Officer",
+     "role": "Group Chief Financial Officer (retires 31 December 2026)",
      "family": false,
      "bio": "A Bangalore University commerce graduate with CGMA, FCMA and FCS qualifications and risk-management training from Singapore Management University. He has nearly three decades in corporate finance and governance. He was CFO of Stove Kraft, where he oversaw its turnaround and IPO, VP and global CFO of WaterHealth Inc., and CFO of Tata Advanced Materials for over eight years."
+    },
+    {
+     "name": "Uttam Kumar Bhageria",
+     "role": "Chief Financial Officer – Designate (CFO from 1 January 2027)",
+     "since": "21 October 2026",
+     "family": false,
+     "bio": "A finance executive with over two decades in listed, multinational and promoter-led companies. The company's filing credits him with leading a ₹3,000 crore acquisition, corporate restructuring and capital-market work, and with experience in capital allocation, M&A, treasury and investor relations; it does not name his past employers. Not related to any director."
     },
     {
      "name": "K.P. Mohanakrishnan",
@@ -1008,7 +1015,7 @@
      "bio": "Holds a master's in machine design from IIT Roorkee and began his career at L&T on a national defence project. Over 32 years he worked at Ansys India, Altair Engineering, Altran India, Segula Technologies (where he started its India operations), SmartSoC and Siemens Technology. He leads the electronics and AI platform: embedded systems, semiconductor services, thermal management and hardware."
     }
    ],
-   "changes": "Promoter Jupiter Capital sold 46.2 lakh shares (10.86%) on 28–29 Sep 2026, cutting its stake from 55.7% to 44.8%. Alfonso Martinez stepped down as CEO & MD on 22 Aug 2025 (now CEO of international operations). Board: Abhay Maheshwari (Jupiter nominee) joined Jun 2026; independent Mariam Mathew resigned 11 Aug 2026, replaced by Ashmita Sethi, ex-Pratt & Whitney India head.",
+   "changes": "CFO Shashidhar S.K. retires on 31 Dec 2026; Uttam Kumar Bhageria joins as CFO-designate on 21 Oct 2026 and becomes CFO on 1 Jan 2027 (board, 16 Oct 2026). Promoter Jupiter Capital sold 46.2 lakh shares (10.86%) on 28–29 Sep 2026, cutting its stake from 55.7% to 44.8%. Alfonso Martinez stepped down as CEO & MD on 22 Aug 2025 (now CEO of international operations). Board: Abhay Maheshwari (Jupiter nominee) joined Jun 2026; independent Mariam Mathew resigned 11 Aug 2026, replaced by Ashmita Sethi, ex-Pratt & Whitney India head.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_31545_AXISCADES_2025_2026_A_27281175_05092026164206.pdf",
     "https://www.axiscades.com/management/",
@@ -1016,9 +1023,10 @@
     "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1697237_20072026060506_WEB.xml",
     "https://www.whalesbook.com/corporate-news/Hinglish/other/Axiscades-Technologies-Jupiter-Capital-Divests-1086percent-Stake-via-Open-Market/6abb7235f2017017ae74e464",
     "https://en.wikipedia.org/wiki/Rajeev_Chandrasekhar",
-    "https://www.manufacturingtodayindia.com/axiscades-welcomes-dr-sampath-ravinarayanan-as-non-executive-director"
+    "https://www.manufacturingtodayindia.com/axiscades-welcomes-dr-sampath-ravinarayanan-as-non-executive-director",
+    "https://nsearchives.nseindia.com/corporate/AXISCADES_16102026182808_OutcomeBM_16102026.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-18"
   },
   {
    "company": "Rossell Techsys",
@@ -14879,7 +14887,7 @@
     },
     {
      "name": "Kaizad Bharucha",
-     "role": "Deputy Managing Director",
+     "role": "Deputy Managing Director (leaving 31 December 2026, subject to RBI approval)",
      "since": "Joined October 1995; board since 2014; Deputy MD since 19 April 2023 (re-appointed to 18 April 2029)",
      "family": false,
      "stake": "4,592,082 shares, about 0.03% (31 March 2026, Form 20-F)",
@@ -14922,16 +14930,17 @@
      "bio": "An engineering graduate from the National Institute of Technology, Karnataka, with a postgraduate diploma in management from IIM Bangalore. He has over 37 years in banking, with particular expertise in interest-rate and currency markets. He now heads the branch network, deposits, payments, treasury, marketing and digital channels, which makes him central to the bank's push to rebuild its share of cheap current and savings deposits."
     }
    ],
-   "changes": "CEO Sashidhar Jagdishan will not seek a third term (ends 26 October 2026); the board sent two names to the RBI on 12 September 2026, and on 1 October the RBI approved Anup Bagchi (MD & CEO of ICICI Prudential Life) as MD & CEO for three years from 27 October 2026. Executive Director Bhavesh Zaveri left on 18 April 2026 at the end of his term. CFO Srinivasan Vaidyanathan retires in November 2026; Puneet Sharma (ex-Axis Bank CFO) joined as CFO-designate on 1 September. Jigar Shah (ex-KKR India) becomes General Counsel on 1 October 2026. Chairman Atanu Chakraborty resigned in March 2026; Rajiv Kumar became part-time chairman on 15 July 2026. On 12 September the board also approved Jimmy Tata as an executive director and a fourth whole-time director post, both pending RBI approval.",
+   "changes": "Deputy MD Kaizad Bharucha, with the bank for over three decades and credited by the board as a principal architect of its credit framework, asked to leave from 31 Dec 2026; the board accepted on 17 Oct 2026 and sent it to the RBI. CEO Sashidhar Jagdishan will not seek a third term (ends 26 October 2026); the board sent two names to the RBI on 12 September 2026, and on 1 October the RBI approved Anup Bagchi (MD & CEO of ICICI Prudential Life) as MD & CEO for three years from 27 October 2026. Executive Director Bhavesh Zaveri left on 18 April 2026 at the end of his term. CFO Srinivasan Vaidyanathan retires in November 2026; Puneet Sharma (ex-Axis Bank CFO) joined as CFO-designate on 1 September. Jigar Shah (ex-KKR India) becomes General Counsel on 1 October 2026. Chairman Atanu Chakraborty resigned in March 2026; Rajiv Kumar became part-time chairman on 15 July 2026. On 12 September the board also approved Jimmy Tata as an executive director and a fourth whole-time director post, both pending RBI approval.",
    "sources": [
     "https://www.sec.gov/Archives/edgar/data/1144967/000119312526322004/d88195d20f.htm",
     "https://www.business-standard.com/companies/news/hdfc-bank-md-ceo-shortlist-two-names-rbi-sashidhar-jagdishan-successor-126091200618_1.html",
     "https://www.investywise.com/hdfc-bank-board-approves-key-appointments-and-director-creation",
     "https://zeenews.india.com/economy/hdfc-bank-proposes-two-names-for-md-and-ceo-posts-re-appoints-executive-director-v-srinivasa-rangan-3071263.html",
     "https://www.kotakneo.com/news/stocks/hdfc-bank-md-ceo-announcement-rbi-decision-anup-bagchi-kaizad-bharucha/",
-    "https://nsearchives.nseindia.com/corporate/HDFCBANK3_01102026182319_SE_Intimation-_Anup_Bagchi.pdf"
+    "https://nsearchives.nseindia.com/corporate/HDFCBANK3_01102026182319_SE_Intimation-_Anup_Bagchi.pdf",
+    "https://nsearchives.nseindia.com/corporate/HDFCBANK_17102026161248_Stockexchangeintimation_LV_KB.pdf"
    ],
-   "updatedOn": "2026-10-04"
+   "updatedOn": "2026-10-18"
   },
   {
    "company": "State Bank of India",

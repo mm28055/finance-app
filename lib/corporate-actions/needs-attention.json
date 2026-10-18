@@ -4,7 +4,7 @@
     "sector": "Elect and Refrac",
     "exDate": "07-Sep-2026",
     "subject": "Demerger",
-    "why": "Demerger — note updated 28 Sep 2026. Still open: add the electrode company (HEG Graphite Ltd, renamed HEG Limited on 12 Oct 2026; listing expected second half of October 2026) to Elect and Refrac once it trades, and put HEG Advanced Materials into the live table once it files results of its own. Not listed as of 16 Oct.",
+    "why": "Demerger — note updated 28 Sep 2026. Still open: add the electrode company (HEG Graphite Ltd, renamed HEG Limited on 12 Oct 2026; listing expected second half of October 2026) to Elect and Refrac once it trades, and put HEG Advanced Materials into the live table once it files results of its own. Not listed as of 16 Oct. 18 Oct 2026: still not listed (no Screener page yet).",
     "addedOn": "2026-09-28"
   },
   {
@@ -12,7 +12,7 @@
     "sector": "Bearings",
     "exDate": "01-Oct-2025",
     "subject": "Demerger (automotive / industrial split)",
-    "why": "Put SKF India into the live table once July–September 2026 results are filed (first four clean post-split quarters); until then its trailing P/E uses too small a profit base.",
+    "why": "Put SKF India into the live table once July–September 2026 results are filed (first four clean post-split quarters); until then its trailing P/E uses too small a profit base. 18 Oct 2026: July–September results not yet filed (Screener's last quarter is June 2026).",
     "addedOn": "2026-09-28"
   },
   {
@@ -313,7 +313,7 @@
     "company": "Ganesh Benzoplast",
     "sector": "Oil",
     "subject": "Waiting: storage and rail-logistics sale to close",
-    "why": "Ganesh Benzoplast is selling its storage and rail-logistics businesses for ₹1,154cr (more than its market value). Each run, check NSE filings for completion of the sale. Until it closes, leave this entry open. Once it closes, rewrite its section in the Oil note (both tabs) for the chemicals-and-EPC company that remains, decide its call, update its projects, capacity and expectations, and then mark this handled. Timing from the 7 Oct 2026 investor call (transcript filed 13 Oct): about ₹500cr expected before January 2027, ₹300cr before March 2027 and ₹354cr over the following 12–18 months; ₹190–200cr of the first tranche goes to tax and bank lines and about ₹200cr to a buyback and special dividend.",
+    "why": "Ganesh Benzoplast is selling its storage and rail-logistics businesses for ₹1,154cr (more than its market value). Each run, check NSE filings for completion of the sale. Until it closes, leave this entry open. Once it closes, rewrite its section in the Oil note (both tabs) for the chemicals-and-EPC company that remains, decide its call, update its projects, capacity and expectations, and then mark this handled. Timing from the 7 Oct 2026 investor call (transcript filed 13 Oct): about ₹500cr expected before January 2027, ₹300cr before March 2027 and ₹354cr over the following 12–18 months; ₹190–200cr of the first tranche goes to tax and bank lines and about ₹200cr to a buyback and special dividend. 18 Oct 2026: no completion filing yet.",
     "addedOn": "2026-09-30"
   },
   {
@@ -1221,14 +1221,14 @@
     "company": "Pine Labs",
     "sector": "Platform Cos",
     "subject": "Waiting: official confirmation of UPI merchant fee (MDR)",
-    "why": "Press reports (15 Sep 2026) say NPCI's UPI steering committee set a 0.4% merchant fee on person-to-merchant UPI payments above ₹2,000 from 15 October 2026 (₹300 cap; ₹5 flat for railways, telecom, insurance and fuel; small merchants under ₹1 lakh a month exempt; reported split issuer bank ~40%, acquirer 30%, app 20%, app's bank 10%). The Finance Ministry said in August that no framework was final, and the NPCI circular could not be read on 14 Oct (site returned 403). Each run, look for the NPCI circular or a government notification. Once confirmed, it is very important for the payment companies in the Platform note (Pine Labs, AvenuesAI, One Mobikwik Systems): add it once to the sector sections and to each company's section, add a checkpoint where it creates a testable expectation, reconsider their calls, then mark this handled. 16 Oct 2026: press reports (DT Next, 13 Oct) say NPCI deferred the fee, with a new date to be set after Diwali; still nothing official in force. Keep waiting.",
+    "why": "Press reports (15 Sep 2026) say NPCI's UPI steering committee set a 0.4% merchant fee on person-to-merchant UPI payments above ₹2,000 from 15 October 2026 (₹300 cap; ₹5 flat for railways, telecom, insurance and fuel; small merchants under ₹1 lakh a month exempt; reported split issuer bank ~40%, acquirer 30%, app 20%, app's bank 10%). The Finance Ministry said in August that no framework was final, and the NPCI circular could not be read on 14 Oct (site returned 403). Each run, look for the NPCI circular or a government notification. Once confirmed, it is very important for the payment companies in the Platform note (Pine Labs, AvenuesAI, One Mobikwik Systems): add it once to the sector sections and to each company's section, add a checkpoint where it creates a testable expectation, reconsider their calls, then mark this handled. 16 Oct 2026: press reports (DT Next, 13 Oct) say NPCI deferred the fee, with a new date to be set after Diwali; still nothing official in force. Keep waiting. 18 Oct 2026: still deferred; NPCI (13 Oct) said a revised date will be announced separately. Nothing in force.",
     "addedOn": "2026-10-14"
   },
   {
     "company": "Beta Drugs",
     "sector": "Pharma",
     "subject": "Waiting: final NPPA notification of the 30% trade-margin cap on cancer medicines",
-    "why": "On 8 Oct 2026 the NPPA approved in principle a 30% cap on trade margins (of MRP) for non-scheduled anti-cancer medicines, expected to cut their retail prices by 20–70%; a DGHS expert committee is to finalise the list of medicines before NPPA notifies it. A draft is not a rule. Each run, check NPPA/PIB for the final notification and list. Once notified, check which of Beta Drugs' (and other covered pharma companies') brands are on the list, correct the notes, reconsider the call, then mark this handled. 16 Oct 2026: no final notification yet (reports say the DGHS list covers about 110 drugs).",
+    "why": "On 8 Oct 2026 the NPPA approved in principle a 30% cap on trade margins (of MRP) for non-scheduled anti-cancer medicines, expected to cut their retail prices by 20–70%; a DGHS expert committee is to finalise the list of medicines before NPPA notifies it. A draft is not a rule. Each run, check NPPA/PIB for the final notification and list. Once notified, check which of Beta Drugs' (and other covered pharma companies') brands are on the list, correct the notes, reconsider the call, then mark this handled. 16 Oct 2026: no final notification yet (reports say the DGHS list covers about 110 drugs). 18 Oct 2026: press reports (Tribune, ETV Bharat, Medical Dialogues, 17 Oct) say the NPPA issued the final order, Gazette S.O. 5690(E) of 17 Oct 2026, capping trade margins at 30% for 137 non-scheduled cancer drugs (including patented ones and direct hospital supply), with lower MRPs from 9 Nov 2026 based on March 2026 net sales realisation. Reported list includes pemetrexed, abiraterone, azacitidine, anastrozole, erlotinib, sunitinib, everolimus, bevacizumab and many newer patented drugs, but not bortezomib, capecitabine, imatinib, temozolomide, docetaxel, gemcitabine, paclitaxel, oxaliplatin or the platinum drugs. The official NPPA, Gazette and Department of Pharmaceuticals sites could not be reached from this session, so the order is not yet confirmed from the source; next run, confirm it and check Beta Drugs', Natco's and Shilpa Medicare's exposure to the listed molecules.",
     "addedOn": "2026-10-14"
   },
   {
@@ -1277,7 +1277,8 @@
     "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Pledged share of promoter holding jumped to 25.4% from 0% (Jun 2026 → Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
-    "addedOn": "2026-10-16"
+    "addedOn": "2026-10-16",
+    "handled": "2026-10-18: The 25.4% is the Melligeri family trust's whole 14.99% stake, pledged on 21 Sep, freed on 9 Oct and pledged again on 14 Oct (likely a change of lender; no reason given). Already in the note from the 16 Oct filings pass; corrected the dates in the verdict, watch item and card. Call stays wait."
   },
   {
     "company": "Hester Biosciences",
@@ -1285,27 +1286,38 @@
     "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 9.4 pts (53.7% in Jun 2026 → 44.3% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
-    "addedOn": "2026-10-16"
+    "addedOn": "2026-10-16",
+    "handled": "2026-10-18: Not a sale: shareholders approved in September reclassifying two family members (9.45%) as public, so the formal promoter stake fell to 44.3%. Card updated to say so. Call stays wait."
   },
   {
     "company": "Macfos",
     "sector": "Platform Cos",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-16"
+    "addedOn": "2026-10-16",
+    "handled": "2026-10-18: Needs about 21% against my 20%, so it fits, but it stays wait: operating cash was −₹22cr against ₹68cr of profit over FY22–FY26 and the note waits for cash, not price. No filings in the last 6 weeks. Dated sentence added to the verdict."
   },
   {
     "company": "Engineers India",
     "sector": "Construction",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-16"
+    "addedOn": "2026-10-16",
+    "handled": "2026-10-18: Needs about 13% against my 11% (just fits), but stays follow: only 27% of FY22–FY26 profit arrived as operating cash, below the half that owning needs, and the FY26 profit base includes a ₹221cr one-off. No new filings. Dated sentence added to the verdict."
   },
   {
     "company": "KSH International",
     "sector": "Cables",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-16"
+    "addedOn": "2026-10-16",
+    "handled": "2026-10-18: Needs about 24% against my 22% (fits), but stays wait: operating cash was negative in four of five years. Filings in the last 6 weeks are routine (independent director change; Supa plant consent to operate). Dated sentence added to the verdict."
+  },
+  {
+    "company": "TruAlt Bioenergy",
+    "sector": "Oil",
+    "subject": "Waiting: official confirmation of the 2026-27 ethanol tender terms (no sugar-based ethanol)",
+    "why": "Press reports (Business Standard, Reuters via inkl, BW Businessworld, 16–17 Oct 2026) say the oil companies' 2026-27 tender (about 1,100 crore litres, supply year from November) invites no ethanol from cane juice, sugar syrup or B-heavy molasses, on a government direction to cut sugar diversion to zero after a poor cane crop, and cuts the maize ethanol price from ₹71.86 to ₹68.86 a litre (incentive ₹5.79 → ₹2.79). One report says C-heavy molasses is still allowed. If confirmed this is very important for TruAlt: sugar-based ethanol was ₹277cr of ₹591cr of Q1 FY27 ethanol revenue, about 700 of its 2,000 klpd can only run on molasses, and ₹3 a litre comes off a maize margin the note already puts at ₹6–7 at today's prices. The tender document could not be read from this session (oil-company portals). Each run, look for the tender document or an oil-ministry statement. Once confirmed: correct the TruAlt section (both tabs) and the Oil note's ethanol sections once (feedstock prices, what the tender allows), add a checkpoint for its 2026-27 allocation, reconsider its call (now wait), check other covered companies that depend on sugar-based ethanol, then mark this handled.",
+    "addedOn": "2026-10-18"
   }
 ]
