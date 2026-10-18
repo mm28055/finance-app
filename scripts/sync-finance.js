@@ -281,19 +281,43 @@ async function fetchScreenerHtml(company) {
         return null;
     }
 
-    const cached = pageCache.get(url);
-    if (cached) {
-        pageCache.delete(url);
-        return cached;
+    let html = pageCache.get(url);
+    if (html) pageCache.delete(url);
+    else {
+        try {
+            const response = await screenerGet(url);
+            if (!response.ok) return null;
+            html = await response.text();
+        } catch (e) {
+            console.error(`Screener error for ${company.ticker}:`, e.message);
+            return null;
+        }
     }
+    return currentAccounts(company, url, html);
+}
 
+// A consolidated page whose quarters stopped long ago still shows a P/E on that old profit
+// (Greenpanel stopped filing group accounts after Mar 2024: P/E 12 on FY24 profit, against 260
+// on the standalone page). When its latest quarter is over nine months old, read the standalone
+// page instead if that one is more recent.
+const latestQuarterTime = (html) => {
+    const t = Date.parse(`1 ${parseQuarterTable(html)?.columns.at(-1) || ''}`);
+    return Number.isFinite(t) ? t : null;
+};
+async function currentAccounts(company, url, html) {
+    if (!/\/consolidated\/?$/.test(url)) return html;
+    const latest = latestQuarterTime(html);
+    if (latest === null || Date.now() - latest < 270 * 86400000) return html;
     try {
-        const response = await screenerGet(url);
-        if (!response.ok) return null;
-        return await response.text();
+        const res = await screenerGet(url.replace(/consolidated\/?$/, ''));
+        if (!res.ok) return html;
+        const standalone = await res.text();
+        const theirs = latestQuarterTime(standalone);
+        if (theirs === null || theirs <= latest) return html;
+        console.log(`\n   ${company.name.trim()}: consolidated figures stop at ${parseQuarterTable(html).columns.at(-1)}; using the standalone page`);
+        return standalone;
     } catch (e) {
-        console.error(`Screener error for ${company.ticker}:`, e.message);
-        return null;
+        return html;
     }
 }
 

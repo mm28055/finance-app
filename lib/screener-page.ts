@@ -37,12 +37,15 @@ export async function screenerPageUrl(companyId: string, view?: ScreenerView): P
     const v = view || defaultView;
     const consolidatedUrl = `${base.replace(/\/?$/, '/')}consolidated/`;
     // A company that only recently began filing group accounts (Bajaj Healthcare) has an empty
-    // consolidated page; unless consolidated was asked for, show its standalone figures instead.
+    // consolidated page, and one that stopped (Greenpanel, after Mar 2024) a stale one; unless
+    // consolidated was asked for, show its standalone figures instead.
     if (!view && v === 'consolidated') {
         const html = await fetchScreenerPage(consolidatedUrl, FILED, key);
         const pl = html ? screenerTable(html, 'profit-loss') : null;
         const filled = pl?.rows.some(r => r.values.filter(x => x !== null).length >= 2);
-        if (html && !filled) return { url: base, view: 'standalone', key };
+        const lastQuarter = Date.parse(`1 ${(html && screenerTable(html, 'quarters')?.columns.at(-1)) || ''}`);
+        const stale = Number.isFinite(lastQuarter) && Date.now() - lastQuarter > 270 * 86400000;
+        if (html && (!filled || stale)) return { url: base, view: 'standalone', key };
     }
     return { url: v === 'consolidated' ? consolidatedUrl : base, view: v, key };
 }
