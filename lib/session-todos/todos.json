@@ -10,18 +10,13 @@
    "id": "tijori-retirement",
    "text": "Compare the exchange transcript pull with Tijori for the Q2 season, then decide whether to retire Tijori.",
    "addedOn": "2026-09-29",
-   "notBefore": "2026-10-15"
+   "notBefore": "2026-11-15"
   },
   {
    "id": "skf-india-live-table",
    "text": "SKF India has filed Q2 results: put it into the Bearings live table.",
    "addedOn": "2026-09-29",
    "notBefore": "2026-11-01"
-  },
-  {
-   "id": "greenpanel-pe-data",
-   "text": "The dashboard's P/E for Greenpanel is about 12 while Screener shows about 260 (₹7cr trailing profit), so its live price check wrongly says fits; fix the profit figure the daily price sync uses.",
-   "addedOn": "2026-10-16"
   }
  ]
 }
