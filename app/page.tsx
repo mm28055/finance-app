@@ -4,7 +4,7 @@ import { TranscriptStats } from "@/components/TranscriptStats";
 import { SessionTodos } from "@/components/SessionTodos";
 import { HelpButton } from "@/components/HelpButton";
 import { sessionTodos } from "@/lib/session-todos";
-import { ScrollText, Target, Trophy } from "lucide-react";
+import { ScrollText, Trophy } from "lucide-react";
 
 export const dynamic = 'force-dynamic';
 
@@ -32,7 +32,6 @@ export default async function Home() {
             <div className="flex items-stretch gap-2 max-md:gap-1.5">
               {[
                 { href: '/filings', label: 'Filings', Icon: ScrollText },
-                { href: '/scorecard', label: 'Scorecard', Icon: Target },
                 { href: '/top12', label: 'Top 12', Icon: Trophy },
               ].map(({ href, label, Icon }) => (
                 <a key={href} href={href} className="w-[60px] max-md:w-[54px] max-md:py-1.5 flex flex-col items-center justify-center gap-1 bg-white rounded-lg border border-gray-200 shadow-sm text-[10px] leading-none font-semibold text-gray-600 hover:border-[#6B9FCC] hover:text-[#4A7AAF] transition-colors">
