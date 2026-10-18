@@ -10,6 +10,14 @@ and P/E for every company are in `lib/corporate-actions/companies.json` (refresh
 sub-agents. Today's date: run `date`.
 
 ## 1. What to do
+**First, rescue stranded work.** Run `git fetch origin` and `git branch -r --no-merged origin/master`. Any
+`origin/weekly-review/*` branch listed holds an earlier run's finished work that never reached the site. Merge each
+into master (on a conflict keep the newer facts), run the section-3 checks and push to master before anything else,
+and say so in the log. Follow-ups that branch already handled are then done; do not redo them.
+
+Before you edit anything, also run `npx tsx scripts/check-notes.ts` once on the untouched checkout and keep its list
+of problems: those were already on master and are not yours (see section 3).
+
 Two inputs: the open follow-ups in `lib/corporate-actions/needs-attention.json` (entries WITHOUT a `handled` field),
 and the week's material filings in `lib/filings/filings.json` and market news in `lib/news/news.json` (dated after the last
 entry in `ops/weekly-log.md`), and the quarter results in `lib/results/results.json` without a `reviewed` field.
@@ -137,6 +145,11 @@ the overnight verdict is right. If the result changes the case, it is handled wi
 (item 2 above) — do not update the note twice. Then add `"reviewed": {"on": "<YYYY-MM-DD>", "text": "<one line: your
 view, and if you disagree with the overnight verdict, why>"}`. Correct a wrong figure or a wrong `take.verdict` in
 place (say so in `reviewed.text`). The calendar shows the review under the result.
+If the entry has a `call` (the call has been analysed), also judge now that company's pending checkpoints due that
+quarter, by the Checkpoints rules below, from the call transcript (NSE/BSE filing, or Screener's "Concalls" list) and
+the results presentation. Do not wait for a "New results call" follow-up: that one is raised only by the weekday
+evening job, so a call heard on a Friday would otherwise sit unjudged for days. Segment figures that only the call or
+presentation gives (a segment's loss or margin) count. Only a checkpoint the call truly leaves open stays pending.
 
 **Top 12 pass.** `lib/top-ideas/top-ideas.json` holds twelve ideas for the owner's own portfolio (about 25% a year,
 held to March 2030) and a reserve list; the page recomputes returns from live prices, so price moves alone need nothing.
@@ -181,10 +194,14 @@ Then mark the entry done: add `"handled": "<YYYY-MM-DD>: <one line: what you fou
 
 ## 3. Check, then publish
 1. `npm ci` (once), then `npx tsc --noEmit -p .` — must be clean.
-2. `npx tsx scripts/check-notes.ts` — must print "All notes pass."
+2. `npx tsx scripts/check-notes.ts` — must print "All notes pass.", except for problems that were already in the list
+   you took before editing (section 1): those are not caused by this run and never block the push. Name them at the
+   top of the log entry and still push to master. Only a problem your own edits added, and that you cannot fix, sends
+   the run to a branch.
 3. Append a short entry to `ops/weekly-log.md`: the date, each entry handled (company — what changed), and any call
    changed (old → new, one-line reason). Plain English; the owner reads this.
 4. Commit per note ("<Sector>: <what changed>"), plus one commit for needs-attention.json and the log; end every
    commit message with the line `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
 5. Push to `master` (the site publishes itself). If checks fail and you cannot fix them, or the push to master is
-   refused, push to a branch `weekly-review/<YYYY-MM-DD>` instead and say so at the top of the log entry.
+   refused, push to a branch `weekly-review/<YYYY-MM-DD>` instead and say so at the top of the log entry. The next run merges
+   that branch first (section 1), so the work is never lost.
