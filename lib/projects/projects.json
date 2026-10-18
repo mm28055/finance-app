@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14",
+ "updated": "2026-10-18",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -5801,9 +5801,9 @@
    "what": "A battery power-conversion (PCS/BESS) plant using its own technology; civil work is complete",
    "expectedStart": "Q3 FY27",
    "adds": "about US$60m of orders already in hand",
-   "status": "building",
-   "source": "Q1 FY27 call; Q4 FY26 call targeted December 2026",
-   "updatedOn": "2026-09-29",
+   "status": "started",
+   "source": "NSE filing 17 Oct 2026: Endoks began manufacturing at the Niğde PCS plant (Q4 FY26 call had targeted December 2026)",
+   "updatedOn": "2026-10-18",
    "capacityAdd": "About 4 GW a year of battery-storage converters (new line for Endoks)"
   },
   {

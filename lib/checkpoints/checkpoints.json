@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14",
+ "updated": "2026-10-18",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -9374,7 +9374,11 @@
    "text": "Turkey battery-converter plant starts in Q3 FY27",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Production began 17 Oct 2026 (NSE filing)",
+   "resolvedOn": "2026-10-18",
+   "resolvedBy": "review",
+   "outcome": "Stays as is; a step towards executing the US$60m storage order book"
   },
   {
    "id": "quality-power-el-q2fy27-1",
@@ -26618,8 +26622,12 @@
    "text": "Nigde converter plant begins operations",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "quality-power-el-nigde"
+   "status": "met",
+   "project": "quality-power-el-nigde",
+   "actual": "Production began 17 Oct 2026 (NSE filing)",
+   "resolvedOn": "2026-10-18",
+   "resolvedBy": "review",
+   "outcome": "Stays as is; a step towards executing the US$60m storage order book"
   },
   {
    "id": "quality-power-el-win-win-m1",
