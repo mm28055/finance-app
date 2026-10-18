@@ -13,8 +13,8 @@ type Data = { to: string; filings: Props['filings']; news: Props['news']; result
 export function FilingsDrawer() {
     const { open, link, close } = usePanelForLink('/filings');
     const company = link?.dataset.company || '';
-    // A company marker opens its filings or news; the header button opens My portfolio.
-    const tab = link?.dataset.tab === 'news' ? 'news' : link?.dataset.tab === 'filings' ? 'filings' : link?.dataset.tab === 'calendar' ? 'calendar' : 'portfolio';
+    // A company marker opens its filings or news; the header button opens Filings, the first tab.
+    const tab = link?.dataset.tab === 'news' ? 'news' : link?.dataset.tab === 'calendar' ? 'calendar' : 'filings';
     // A company name in Results or Calls finds that company on the dashboard.
     const showCompany = (name: string) => {
         window.dispatchEvent(new CustomEvent('dashboard-search', { detail: name }));
@@ -35,7 +35,7 @@ export function FilingsDrawer() {
 
     return (
         <SlidePanel open={open} onClose={close} title="Filings"
-            subtitle={`Filings, dates ahead, news, results, calls and call changes, across every company${data && data !== 'error' ? ` · up to ${data.to}` : ''}`}>
+            subtitle={`Filings, news, results, calls, call changes and dates ahead, across every company${data && data !== 'error' ? ` · up to ${data.to}` : ''}`}>
             {open && data === null && <div className="h-40 bg-gray-100 rounded-xl animate-pulse" />}
             {data === 'error' && <p className="text-sm text-gray-400">The filings could not be loaded. Close and try again.</p>}
             {/* Kept mounted once loaded, so the filters chosen are still there when it is opened again. */}

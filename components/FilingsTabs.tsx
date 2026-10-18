@@ -13,7 +13,7 @@ type CalendarData = { updated: string; today: string; events: React.ComponentPro
 // around them (market and policy events, and sharp price moves with the reason found); results as
 // they come in, with the overnight view; the earnings calls analysed in the last two months; and
 // every change in the notes' own calls (own, follow, wait, pass, avoid).
-export function FilingsTabs({ filings, news, results = [], calls = [], callsComplete = false, callChanges = [], holdings = [], initialTab = 'portfolio', initialCompany = '', onCompany }: {
+export function FilingsTabs({ filings, news, results = [], calls = [], callsComplete = false, callChanges = [], holdings = [], initialTab = 'filings', initialCompany = '', onCompany }: {
     filings: Rows; news: Rows; results?: ResultRow[]; calls?: CallRow[]; callChanges?: CallChangeRow[]; holdings?: Holding[]; initialTab?: Tab;
     /** False when `calls` holds only the holdings' calls: the Calls tab then loads the full list when first opened. */ callsComplete?: boolean;
     /** Open on one company (from its row's marker). */ initialCompany?: string;
@@ -42,7 +42,7 @@ export function FilingsTabs({ filings, news, results = [], calls = [], callsComp
         fetch('/api/calendar').then(r => (r.ok ? r.json() : Promise.reject())).then(setCalendar).catch(() => setCalendar('error'));
     }, [tab, calendar]);
     const tabClass = (active: boolean) => `px-3 max-md:px-[5px] py-2 text-xs max-md:text-[11px] font-semibold border-b-2 whitespace-nowrap shrink-0 ${active ? 'text-[#4A7AAF] border-[#6B9FCC]' : 'text-gray-400 border-transparent hover:text-gray-600'}`;
-    const tabs: [Tab, string][] = [['portfolio', 'Portfolio'], ['filings', 'Filings'], ['calendar', 'Calendar'], ['news', 'Market & Policy'], ['results', 'Results'], ['calls', 'Calls'], ['changes', 'Call changes']];
+    const tabs: [Tab, string][] = [['filings', 'Filings'], ['news', 'Market & Policy'], ['portfolio', 'Portfolio'], ['results', 'Results'], ['calls', 'Calls'], ['changes', 'Call changes'], ['calendar', 'Calendar']];
     return (
         <div>
             <div className="sticky -top-4 z-20 -mt-4 pt-4 -mx-4 px-4 bg-[#FAFBFC] flex gap-1 max-md:gap-0 shadow-[inset_0_-1px_0_#e5e7eb] mb-4 overflow-x-auto overflow-y-hidden overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" role="tablist">
