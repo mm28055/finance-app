@@ -16742,7 +16742,7 @@
    "sector": "Pharma Others",
    "text": "Government PPR and goat pox vaccine tenders placed",
    "due": "Q2 FY27",
-   "ifMet": "The event the wait is for",
+   "ifMet": "Ends the wait; the call can move up",
    "createdOn": "2026-09-29",
    "status": "pending"
   },
@@ -18036,10 +18036,14 @@
    "sector": "Platform Cos",
    "text": "InstaHelp's absolute loss shrinking, not just per order (₹132cr in Q1)",
    "due": "Q2 FY27",
-   "ifMet": "The event the wait is for",
+   "ifMet": "Ends the wait; the call can move up",
    "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "₹174cr in Q2, up from ₹132cr in Q1; only the loss per order fell (19%, from ₹346 to ₹279)",
+   "resolvedOn": "2026-10-18",
+   "resolvedBy": "review",
+   "outcome": "Stays wait; management is spending more on InstaHelp by choice and now puts its break-even as far out as FY31"
   },
   {
    "id": "urban-company-q2fy27-2",
@@ -18048,7 +18052,11 @@
    "text": "Core India services margin holding (6.9% in Q1) in the seasonally weaker Q2, heading to 9–10%",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "3.5% of NTV in Q2, down from 6.9% in Q1; up from 2.4% a year earlier",
+   "resolvedOn": "2026-10-18",
+   "resolvedBy": "review",
+   "outcome": "Stays wait; the year-on-year gain keeps the 9–10% goal in view, but the margin halves in the weak quarter"
   },
   {
    "id": "pine-labs-q4fy27-1",
