@@ -594,7 +594,7 @@ export const cables: SectorOverview = {
         {
             company: 'KSH International', rank: 3, stance: 'PRICED', segment: QUAL,
             what: "Magnet winding wire, mainly continuously transposed conductor (the insulated copper bundles inside large power transformers), for 120-plus transformer and motor makers; listed December 2025.",
-            view: "**The best niche in the sector, still priced ahead of it.** Q1 volume grew 30%, profit per tonne reached ₹93,000, and management raised its FY27 aims to about 26% volume and about ₹75,000 a tonne; I raise my estimate to about 22%. But operating cash was negative in four of five years, the top ten customers are 51% of sales, and the CEO resigned in March without mention on either call. The price needs about {need:KSH International|25}% a year.",
+            view: "**The best niche in the sector, still priced ahead of it.** Q1 volume grew 30%, profit per tonne reached ₹93,000, and management raised its FY27 aims to about 26% volume and about ₹75,000 a tonne; I raise my estimate to about 22%. But operating cash was negative in four of five years, the top ten customers are 51% of sales, and the CEO resigned in March without mention on either call. The price needs about {need:KSH International|24}% a year. On 18 October 2026 the price moved into fits, but it stays wait: operating cash has been negative in four of the last five years, and cash has to arrive before I buy.",
             watch: 'Profit per tonne near ₹75,000 as Phase 2 adds standard wire; working-capital days falling from 60 toward 30–35; positive operating cash in FY27.',
         },
         {
