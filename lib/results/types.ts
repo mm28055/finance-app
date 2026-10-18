@@ -40,7 +40,7 @@ export interface QuarterResult {
     /** Set when other income makes up a large part of profit before tax, so profit growth overstates the business. */
     oneOff?: string;
     /** The overnight view (Gemini), judged against guidance, the note and the tracked expectations. */
-    take?: { verdict: ResultVerdict; text: string; checks: ResultCheck[]; on: string };
+    take?: { verdict: ResultVerdict; /** The main points, shown first. */ points?: string[]; /** The points as one paragraph (older entries: the whole view). */ text: string; checks: ResultCheck[]; on: string };
     /** What the earnings call added, once it has been analysed. */
     call?: { text: string; on: string };
     /** Set in the weekly review once Claude has read the result (and changed the note if needed). */

@@ -142,9 +142,10 @@ entries with `"dot": false` (no clear reason found). List what you did in the lo
 the results came out, with an overnight view (`take`, written by Gemini) and, once the call is analysed, `call`. For
 each entry without `reviewed`: check the figures against Screener, read the take and the call note, and decide whether
 the overnight verdict is right. If the result changes the case, it is handled with the company's new results call
-(item 2 above) — do not update the note twice. Then add `"reviewed": {"on": "<YYYY-MM-DD>", "text": "<one line: your
-view, and if you disagree with the overnight verdict, why>"}`. Correct a wrong figure or a wrong `take.verdict` in
-place (say so in `reviewed.text`). The calendar shows the review under the result.
+(item 2 above) — do not update the note twice. Then add `"reviewed": {"on": "<YYYY-MM-DD>", "text": "<one line: only
+what the points miss, and if you disagree with the overnight verdict, why>"}` — no "Figures match Screener" or
+restating the points. Correct a wrong figure, a wrong `take.verdict` or a wrong point in `take.points` in place (say so
+in `reviewed.text`). The page leads with `take.points`, then the table; the review sits folded at the bottom.
 If the entry has a `call` (the call has been analysed), also judge now that company's pending checkpoints due that
 quarter, by the Checkpoints rules below, from the call transcript (NSE/BSE filing, or Screener's "Concalls" list) and
 the results presentation. Do not wait for a "New results call" follow-up: that one is raised only by the weekday

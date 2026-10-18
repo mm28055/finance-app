@@ -2,9 +2,9 @@
 import React from 'react';
 import type { QuarterResult, ResultRow } from '@/lib/results/types';
 
-// A quarter's results under its date in the calendar: the figures against last year and the
-// quarter before, the overnight view (and how the tracked expectations fared), and what the
-// earnings call added once it has been analysed.
+// A quarter's results under its date in the calendar: the main points first, then the figures
+// against last year and the quarter before, how the tracked expectations fared, what the earnings
+// call added once it has been analysed, and Claude's check from the weekly review (folded away).
 
 const VERDICT: Record<string, { label: string; chip: string }> = {
     ahead: { label: 'Ahead', chip: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
@@ -21,8 +21,13 @@ const change = (r: ResultRow, v: number | null) => {
     return <span className={v > 0 ? 'text-emerald-600' : v < 0 ? 'text-rose-500' : 'text-gray-500'}>{text}</span>;
 };
 
+// Older entries have the view as one paragraph: show its sentences as the points.
+const sentences = (text: string) => text.split(/(?<=[.!?])\s+(?=[A-Z₹])/).map(s => s.trim()).filter(Boolean);
+const shortDate = (iso: string) => new Date(iso + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' });
+
 export function ResultCard({ result: r }: { result: QuarterResult }) {
     const v = r.take ? VERDICT[r.take.verdict] : null;
+    const points = r.take?.points?.length ? r.take.points : r.take?.text ? sentences(r.take.text) : [];
     return (
         <div className="w-full mt-1.5 rounded-lg border border-gray-100 bg-[#FAFBFC] p-2.5 flex flex-col gap-2">
             <div className="flex flex-wrap items-center gap-2">
@@ -30,6 +35,13 @@ export function ResultCard({ result: r }: { result: QuarterResult }) {
                 {v && <span className={`px-1.5 rounded border text-[10px] font-semibold ${v.chip}`}>{v.label}</span>}
                 <span className="text-[10px] text-gray-400 capitalize">{r.view}</span>
             </div>
+
+            {points.length > 0 && (
+                <ul className="list-disc pl-4 flex flex-col gap-0.5 text-[12px] text-gray-800 leading-snug marker:text-gray-300">
+                    {points.map((p, k) => <li key={k}>{p}</li>)}
+                </ul>
+            )}
+            {r.oneOff && <p className="text-[11px] text-amber-700 leading-snug">{r.oneOff}</p>}
 
             <table className="w-full text-[11px] tabular-nums">
                 <thead>
@@ -52,8 +64,6 @@ export function ResultCard({ result: r }: { result: QuarterResult }) {
                 </tbody>
             </table>
 
-            {r.oneOff && <p className="text-[10px] text-amber-700 leading-snug">{r.oneOff}</p>}
-            {r.take?.text && <p className="text-[12px] text-gray-700 leading-relaxed">{r.take.text}</p>}
             {r.take && r.take.checks.length > 0 && (
                 <ul className="flex flex-col gap-0.5">
                     {r.take.checks.map((c, k) => (
@@ -63,13 +73,15 @@ export function ResultCard({ result: r }: { result: QuarterResult }) {
                     ))}
                 </ul>
             )}
-            {r.call && (
-                <p className="text-[12px] text-gray-700 leading-relaxed"><span className="font-semibold text-gray-800">After the call: </span>{r.call.text}</p>
+            {r.call?.text && (
+                <p className="text-[12px] text-gray-700 leading-relaxed"><span className="font-semibold text-gray-800">What the call added: </span>{r.call.text}</p>
             )}
-            <p className="text-[10px] text-gray-400">
-                {r.reviewed ? `Reviewed by Claude on ${r.reviewed.on}${r.reviewed.text ? `: ${r.reviewed.text}` : ''}` : 'Overnight view, written automatically; Claude reviews it in the weekly review.'}
-                {!r.call && ' The call note is added once the earnings call has been analysed.'}
-            </p>
+            {r.reviewed?.text && (
+                <details className="text-[11px] text-gray-500 leading-snug">
+                    <summary className="cursor-pointer text-[10px] text-gray-400 select-none">Claude's check, {shortDate(r.reviewed.on)}</summary>
+                    <p className="mt-0.5">{r.reviewed.text}</p>
+                </details>
+            )}
         </div>
     );
 }

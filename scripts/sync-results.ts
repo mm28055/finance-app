@@ -166,14 +166,15 @@ ${exp.due.length ? exp.due.map((c, k) => `${k + 1}. ${c.text}`).join('\n') : 'No
 
 Write:
 1. "verdict": one of "ahead", "in line", "behind", "mixed" — against the guidance and the note's expectations (not against the market's).
-2. "text": two or three plain sentences for a non-specialist: how revenue and operating profit grew against last year, whether the margin held, and what that means against what was expected. Use only the figures above; do not invent any. If other income or a one-off flatters profit, say so.
+2. "points": the two to four main points, most important first, for a non-specialist who reads them before the table: how revenue and operating profit grew against last year, whether the margin held, and how that compares with what was expected. Each point one short line (at most 15 words), figures rounded as in the table (growth to whole %, e.g. "Revenue up 19% to ₹176cr, above the 10–15% guided"). Use only the figures above; do not invent any. If other income or a one-off flatters profit, make that a point.
 3. "checks": for each tracked expectation above, in order, {"text": <the expectation, shortened>, "status": "met" | "missed" | "unclear", "why": <a few words>}. "unclear" when these figures cannot settle it (most non-financial expectations wait for the call). Empty list if none.
 
-Answer with JSON only: {"verdict": "...", "text": "...", "checks": [...]}`;
+Answer with JSON only: {"verdict": "...", "points": ["...", "..."], "checks": [...]}`;
     const raw = await ask(prompt);
     const j = JSON.parse(raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1));
     const verdict = ['ahead', 'in line', 'behind', 'mixed'].includes(j.verdict) ? j.verdict : 'mixed';
-    return { verdict, text: String(j.text || '').trim(), checks: Array.isArray(j.checks) ? j.checks.filter((c: any) => c && c.text).map((c: any) => ({ text: String(c.text), status: ['met', 'missed'].includes(c.status) ? c.status : 'unclear', why: String(c.why || '') })) : [], on: todayIst() };
+    const points: string[] = (Array.isArray(j.points) ? j.points : []).map((p: any) => String(p).trim()).filter(Boolean).slice(0, 4);
+    return { verdict, points, text: points.join(' '), checks:Array.isArray(j.checks) ? j.checks.filter((c: any) => c && c.text).map((c: any) => ({ text: String(c.text), status: ['met', 'missed'].includes(c.status) ? c.status : 'unclear', why: String(c.why || '') })) : [], on: todayIst() };
 }
 
 /** Once the quarter's call has been analysed: a line or two on what it changed. */
@@ -191,7 +192,8 @@ ${a.keyHighlights ? `Highlights: ${String(a.keyHighlights).slice(0, 2000)}` : ''
 ${a.guidanceText ? `Guidance: ${a.guidanceText.slice(0, 1500)}` : ''}
 
 In one or two plain sentences, say what the call added that the figures alone did not: guidance raised, kept or cut; the reason behind the margin or growth; an order, a delay or a one-off explained. If it changes the verdict above, say how. Plain text only.`;
-    const text = (await ask(prompt)).trim().replace(/^["']|["']$/g, '');
+    // Strip quotes only when they wrap the whole answer, so a quote that ends the text survives.
+    const text = (await ask(prompt)).trim().replace(/^"([\s\S]*)"$/, '$1');
     return text ? { text, on: todayIst() } : null;
 }
 
