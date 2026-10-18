@@ -7417,6 +7417,25 @@
     "Reported profit was reduced by exceptional items, including new labour codes, deal costs, and the Naturell liquidation."
    ],
    "researchedOn": "2026-09-27"
+  },
+  {
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "year": "FY26",
+   "url": "https://nsearchives.nseindia.com/corporate/HCG1_27082026215424_SE_Intimation_Notice_of_AGM_27_August_2026.pdf",
+   "auditor": "B S R & Co. (KPMG network) gave an unmodified opinion. The key audit matter was impairment of goodwill (₹388cr) and other non-financial assets. The audit trail (edit log) was not enabled for privileged and database-level changes at the parent and four subsidiaries, and not at all at four other group companies. Under CARO, title deeds of two properties in Bengaluru and Vijayawada (₹49.5cr gross) are still in the names of merged companies. Eleven subsidiaries and seven step-down subsidiaries (₹875cr of assets) were audited by other firms.",
+   "relatedParties": "HCG paid ₹58.1cr in cash to buy back 16.2 lakh vested options at the change of control, including ₹17.1cr to former CEO Meghraj Gore and ₹2.0cr to the former CFO; this was charged to equity, so it never reached profit. CVC's parent separately paid ₹48.3cr of bonuses directly to HCG employees on 30 May 2025. The founder and chairman, Dr B.S. Ajaikumar, received ₹2.57cr of medical consultancy charges and ₹2.0cr of professional fees after becoming non-executive, plus ₹1.0cr of salary for April–May. After the year, the Milann fertility business was sold to Inviga Healthcare Fund I, which he controls, for an enterprise value of ₹63.2cr.",
+   "contingent": "Contingent liabilities were ₹103cr (₹69cr a year earlier), of which ₹76.1cr is customs duty under EPCG export-promotion licences (₹52.2cr). An ₹8.3cr misclassification demand carries a 100% penalty and personal penalties on employees, and there is a ₹10.4cr GST demand on FDG, the PET-scan tracer, plus old VAT, sales-tax and excise disputes. Undiscounted lease commitments are ₹1,453cr, ₹150cr of it due within a year.",
+   "outlook": "Management says about 400 beds already built but not in use can be opened over three to four years. Mature hospitals (over ₹10cr of revenue a month) earn a 26% margin and 27% return on capital, against 5% and −22% for the six smallest, so filling the newer ones is the main lever.",
+   "other": "FY26 revenue was ₹2,538cr: West ₹1,133cr, South ₹995cr, East ₹283cr, Kenya ₹74cr (2.9%) and Milann ₹60cr. Doctors are paid largely as consultants (₹549cr, 21.6% of revenue). Owners' profit was ₹13.8cr after ₹44.6cr of exceptional items (₹31.9cr Milann goodwill write-down, ₹12.7cr labour-code gratuity). Lease liabilities were ₹825cr, with ₹85.9cr of lease interest and ₹84.5cr of right-of-use depreciation below operating profit. The report's own return on capital ratio was 6.63%, against the 14% pre-Ind AS figure management quotes. KKR (Hector Asia) owns 54.27% and the founder 9.30%.",
+   "flags": [
+    "The Milann fertility business was sold to a fund controlled by the chairman, at about one times sales after a ₹31.9cr write-down.",
+    "₹58cr was paid in cash to buy back staff options at the change of control (₹17.1cr to the former CEO), charged to equity so it never touched profit.",
+    "Contingent customs-duty claims under EPCG licences rose to ₹76cr from ₹52cr, one carrying a 100% penalty and personal penalties on employees.",
+    "The audit trail was not enabled for privileged changes at the parent and four subsidiaries, and not at all at four other group companies.",
+    "The report's own return on capital was 6.63%, far below the 14% management quotes."
+   ],
+   "researchedOn": "2026-10-18"
   }
  ],
  "skipped": [

@@ -9,7 +9,7 @@ const FY = ['FY22', 'FY23', 'FY24', 'FY25', 'FY26'];
 // Segment labels. The metric grid, the moat table and the company cards are grouped by these.
 const LARGE = 'Large chains across several states';
 const REGIONAL = 'Regional chains — a few big hospitals in one region';
-const SPECIAL = 'Single-speciality chains — children, mothers and eyes';
+const SPECIAL = 'Single-speciality chains — children, mothers, eyes and cancer';
 
 export const hospitals: SectorOverview = {
     sector: 'Hospitals',
@@ -33,11 +33,12 @@ export const hospitals: SectorOverview = {
             "Dr Agarwal's Health Care": 22,
             'Krishna Inst.Medi': 25,
             'Shalby': 12,
+            'HealthCare Global (HCG)': 22,
         },
     },
     standfirst:
-        "Ten listed hospital chains. Narayana Health, Medanta and KIMS run large hospitals across several states; Yatharth (Delhi NCR and Uttar Pradesh), Jupiter (Thane, Pune, Indore), Artemis (Gurugram), GPT Healthcare (ILS Hospitals in Kolkata, Agartala and Raipur) and Shalby (Gujarat, joint replacements) are regional; Rainbow (children and mothers) and Dr Agarwal's (eyes) are single-speciality chains. Demand is steady, but the sector is slowing from price to volume: ICRA now expects 13–15% revenue growth in FY27, and almost every chain is building new hospitals that depress margins, profit and returns for a year or two before they fill. This update draws on each company's last two calls, its FY26 annual report and its latest rating report, which turned up pledges, off-balance-sheet leases and an unprovided tax demand. Every chart uses filed results and five years of history. Two dashboard errors: Yatharth's stored Q1 FY27 figures are wrong, so the text uses the company's; and the ‘(Agilus)’ label on GPT Healthcare is wrong, because GPT runs ILS Hospitals while Agilus is Fortis's unlisted lab business. GPT Healthcare moved here from the Healthcare note on 1 October 2026.",
-    lastUpdated: '2026-10-01',
+        "Eleven listed hospital chains. Narayana Health, Medanta and KIMS run large hospitals across several states; Yatharth (Delhi NCR and Uttar Pradesh), Jupiter (Thane, Pune, Indore), Artemis (Gurugram), GPT Healthcare (ILS Hospitals in Kolkata, Agartala and Raipur) and Shalby (Gujarat, joint replacements) are regional; Rainbow (children and mothers), Dr Agarwal's (eyes) and HCG (cancer) are single-speciality chains. Demand is steady, but the sector is slowing from price to volume: ICRA now expects 13–15% revenue growth in FY27, and almost every chain is building new hospitals that depress margins, profit and returns for a year or two before they fill. This update draws on each company's last two calls, its FY26 annual report and its latest rating report, which turned up pledges, off-balance-sheet leases and an unprovided tax demand. Every chart uses filed results and five years of history. Two dashboard errors: Yatharth's stored Q1 FY27 figures are wrong, so the text uses the company's; and the ‘(Agilus)’ label on GPT Healthcare is wrong, because GPT runs ILS Hospitals while Agilus is Fortis's unlisted lab business. GPT Healthcare moved here from the Healthcare note on 1 October 2026, and HealthCare Global (HCG) joined on 18 October 2026.",
+    lastUpdated: '2026-10-18',
     asOfQuarter: 'Q1 FY27',
 
     metrics: [
@@ -48,7 +49,7 @@ export const hospitals: SectorOverview = {
             periods: Q,
             scale: 'sequential',
             source: 'Filed quarterly results (Screener), consolidated except GPT Healthcare (standalone; it has no subsidiaries). Operating profit ÷ revenue.',
-            note: 'The single-speciality chains (Rainbow, Dr Agarwal’s) earn 26–33%; most multi-speciality chains 17–25%. New hospitals lose money for their first year or two, which pulls margins down while a chain expands.',
+            note: 'The single-speciality chains Rainbow and Dr Agarwal’s earn 26–33%; HCG, the cancer chain, only 17–19%, because a third of its patients come through government schemes; most multi-speciality chains earn 17–25%. New hospitals lose money for their first year or two, which pulls margins down while a chain expands.',
             values: {
                 'Yatharth Hospital': [25, 23, 23, 23, 23],
                 "Rainbow Children's Medicare": [29, 33, 33, 32, 29],
@@ -60,11 +61,13 @@ export const hospitals: SectorOverview = {
                 "Dr Agarwal's Health Care": [26, 27, 27, 29, 28],
                 'Krishna Inst.Medi': [22, 21, 20, 19, 19],
                 'Shalby': [14, 15, 11, 10, 13],
+                'HealthCare Global (HCG)': [18, 19, 17, 19, 18],
             },
             cellNotes: {
                 'Jupiter Life Line Hospitals': 'Q1 FY27 includes start-up losses at its new Dombivli hospital.',
                 'GPT Healthcare (Agilus)': "Standalone (it has no subsidiaries). This is GPT Healthcare, which runs ILS Hospitals; the dashboard's ‘(Agilus)’ label is wrong. Its new Raipur hospital loses about ₹3cr a quarter.",
                 'Yatharth Hospital': 'Q1 FY27 uses the company’s figures (revenue ₹393cr, margin 23.3%); the dashboard’s stored ₹321cr and 30.2% are wrong.',
+                'HealthCare Global (HCG)': 'Rent on leased hospitals (about ₹131cr in FY26) sits below operating profit. The company’s “adjusted” Q1 FY27 margin of 19.4% leaves out North Bangalore’s ₹7.0cr start-up loss and a ₹4.6cr customs-duty provision.',
             },
         },
         {
@@ -86,6 +89,10 @@ export const hospitals: SectorOverview = {
                 "Dr Agarwal's Health Care": [21, 20, 23, 23, 26],
                 'Krishna Inst.Medi': [27, 24, 29, 35, 35],
                 'Shalby': [6, 6, -1, 8, 12],
+                'HealthCare Global (HCG)': [17, 17, 13, 12, 13],
+            },
+            cellNotes: {
+                'HealthCare Global (HCG)': 'Q1–Q2 FY26 include about 5 points from the Vizag hospital bought in October 2024. From Q2 FY27 growth loses about 2.5 points because the fertility business (Milann) was sold in June.',
             },
         },
         {
@@ -107,6 +114,10 @@ export const hospitals: SectorOverview = {
                 "Dr Agarwal's Health Care": [17, 13, 11, 10, 11],
                 'Krishna Inst.Medi': [34, 24, 17, 15, 10],
                 'Shalby': [10, 10, 11, 6, 6],
+                'HealthCare Global (HCG)': [5, 8, 9, 9, 8],
+            },
+            cellNotes: {
+                'HealthCare Global (HCG)': 'Screener’s measure. The company quotes 14%, before lease accounting and without its fertility business; its own annual report shows 6.6%.',
             },
         },
         {
@@ -130,6 +141,7 @@ export const hospitals: SectorOverview = {
                 "Dr Agarwal's Health Care": [-215, -183, -190, -79, -76],
                 'Krishna Inst.Medi': [-67, null, null, null, null],
                 'Shalby': [495, 654, 673, 715, 692],
+                'HealthCare Global (HCG)': [-112, -116, -127, -111, -93],
             },
             cellNotes: {
                 'Shalby': 'Its implant business and other stock push inventory days far above a normal hospital’s.',
@@ -157,6 +169,10 @@ export const hospitals: SectorOverview = {
                 "Dr Agarwal's Health Care": [88, 85, 94, 77, 90, 87],
                 'Krishna Inst.Medi': [62, 71, 80, 73, 63, 70],
                 'Shalby': [16, 49, 11, -3, 0, 14],
+                'HealthCare Global (HCG)': [94, 85, 87, 83, 76, 84],
+            },
+            cellNotes: {
+                'HealthCare Global (HCG)': 'FY26 is lowered by a one-off ₹58cr cash buyout of employee options. Rent of about ₹131cr a year is paid out of financing cash flow, so it never appears here.',
             },
         },
         {
@@ -179,6 +195,10 @@ export const hospitals: SectorOverview = {
                 "Dr Agarwal's Health Care": [13.4, 7.4, 8.6, 2.1, 2.8, 5.5],
                 'Krishna Inst.Medi': [9.3, -6.5, -5.0, -14.1, -23.5, -11.0],
                 'Shalby': [-8.0, 6.2, -2.9, -6.9, -13.1, -5.5],
+                'HealthCare Global (HCG)': [10.8, 7.5, 5.3, 5.0, 2.3, 5.6],
+            },
+            cellNotes: {
+                'HealthCare Global (HCG)': 'Before rent: after about ₹131cr of lease payments, FY26 free cash was about −₹72cr. Purchases of hospitals (Vizag: ₹206cr in FY25 and ₹154.5cr in April 2026) are not included.',
             },
         },
         {
@@ -190,7 +210,7 @@ export const hospitals: SectorOverview = {
             invert: true,
             legend: ['More debt', 'Net cash'],
             source: 'Filed balance sheets and profit and loss (Screener): borrowings (including leases) minus cash and treasury investments, ÷ operating profit.',
-            note: 'Below zero means more cash than debt. KIMS (5.0x) and Shalby (3.5x) have borrowed most for expansion; Narayana’s rose to 1.9x after its acquisition.',
+            note: 'Below zero means more cash than debt. KIMS (5.0x) and Shalby (3.5x) have borrowed most for expansion; Narayana’s rose to 1.9x after its acquisition; HCG’s 2.6x is mostly leases.',
             values: {
                 'Yatharth Hospital': [2.2, 1.7, -0.8, -2.2, -0.0],
                 "Rainbow Children's Medicare": [1.2, 1.2, 1.0, 0.4, 0.8],
@@ -202,9 +222,11 @@ export const hospitals: SectorOverview = {
                 "Dr Agarwal's Health Care": [2.8, 2.5, 1.0, 1.0, 1.4],
                 'Krishna Inst.Medi': [-0.5, 0.9, 1.8, 3.0, 5.0],
                 'Shalby': [0.2, 0.2, 1.5, 2.6, 3.5],
+                'HealthCare Global (HCG)': [3.1, 2.4, 3.0, 3.9, 2.6],
             },
             cellNotes: {
                 'GPT Healthcare (Agilus)': 'Of ₹87cr of net debt at March 2026, ₹75cr is lease liabilities (mostly Raipur); bank debt was ₹16.1cr.',
+                'HealthCare Global (HCG)': 'Includes ₹825cr of lease liabilities; bank net debt alone was ₹369cr (0.8x). The April 2026 Vizag payment took net debt to roughly ₹1,320cr.',
             },
         },
         {
@@ -227,6 +249,7 @@ export const hospitals: SectorOverview = {
                 "Dr Agarwal's Health Care": [10.2, 15.5, 17.4, 18.8, 22.2, 18.2],
                 'Krishna Inst.Medi': [10.3, 26.2, 25.9, 33.2, 36.6, 28.8],
                 'Shalby': [10.7, 2.2, 5.0, 6.5, 13.1, 7.7],
+                'HealthCare Global (HCG)': [5.1, 7.9, 9.7, 9.4, 11.5, 9.1],
             },
             cellNotes: {
                 'GPT Healthcare (Agilus)': 'Low because its newer hospitals are in buildings leased from developers.',
@@ -252,9 +275,11 @@ export const hospitals: SectorOverview = {
                 "Dr Agarwal's Health Care": [1.0, 0.8, 0.8, 0.7, 0.7],
                 'Krishna Inst.Medi': [1.6, 1.2, 1.0, 0.9, 0.7],
                 'Shalby': [1.0, 1.2, 1.0, 1.1, 1.1],
+                'HealthCare Global (HCG)': [0.9, 1.1, 1.1, 0.9, 1.0],
             },
             cellNotes: {
                 'GPT Healthcare (Agilus)': 'Not compiled: GPT Healthcare moved here from the Healthcare note on 1 October 2026, where this measure was not tracked.',
+                'HealthCare Global (HCG)': 'Fixed assets include ₹388cr of goodwill and ₹648cr of leased buildings.',
             },
         },
     ],
@@ -284,6 +309,8 @@ export const hospitals: SectorOverview = {
                 grades: { clin: { grade: 'A', note: 'Quaternary care, Dr Trehan’s institution' }, loc: { grade: 'A', note: 'NCR, Lucknow, Patna, Indore' }, price: { grade: 'B', note: 'ARPOB ₹70,244' }, build: { grade: 'A', note: 'Noida turning faster than expected' }, cash: { grade: 'A', note: 'Almost no net debt' } } },
             { company: "Dr Agarwal's Health Care", trend: 'stable', trendNote: 'Mature centres grew 14%; 60 new centres planned this year.',
                 grades: { clin: { grade: 'A', note: 'Specialist eye surgeons, 1,000+ doctors' }, loc: { grade: 'B', note: '269 facilities in 155 cities' }, price: { grade: 'A', note: '62% of revenue paid by patients directly' }, build: { grade: 'B', note: 'New centres lost ₹30cr in FY26' }, cash: { grade: 'B', note: 'Converts 87% of profit into cash' } } },
+            { company: 'HealthCare Global (HCG)', trend: 'widening', trendNote: 'Low-paying government and drug business being cut; seven hospitals now earn over ₹10cr a month (four a year ago); Whitefield slipped to end-FY28.',
+                grades: { clin: { grade: 'A', note: 'India’s largest cancer-only chain; 450+ oncologists' }, loc: { grade: 'B', note: '25 Indian hospitals in 19 cities; top three in 16 of 19 markets (company)' }, price: { grade: 'C', note: 'ARPOB about ₹45,000; government schemes a third' }, build: { grade: 'C', note: 'North Bangalore on plan; Whitefield and two expansions slipped' }, cash: { grade: 'C', note: 'Converts 84%, but rent sits below EBITDA; net debt 2.6x with leases' } } },
             { company: 'Krishna Inst.Medi', trend: 'stable', trendNote: 'New hospitals improving (Mahadevapura at breakeven) but still pulling margins down.',
                 grades: { clin: { grade: 'B', note: 'Strong in Telangana and Andhra' }, loc: { grade: 'B', note: 'Moving into Bengaluru, Kerala, Maharashtra' }, price: { grade: 'C', note: 'ARPOB growth guided at only 4–5%' }, build: { grade: 'C', note: 'Many new units at once' }, cash: { grade: 'C', note: 'Net debt 5x at March; about 2x after its share sale' } } },
             { company: 'Shalby', trend: 'narrowing', trendNote: 'Rating cut to A; a new Mumbai hospital under discussion after a “minimal capex” promise.',
@@ -298,8 +325,8 @@ export const hospitals: SectorOverview = {
                 "**No hospital here is a buy at today's prices; Yatharth Hospital is the closest.** It buys half-built or struggling hospitals in Delhi NCR and Uttar Pradesh and fills them. Q1 FY27 revenue was ₹393cr, up 51%, against a promise to beat FY26's 36%, and its Faridabad Sector-20 hospital broke even in nine months against a 12–14 month plan. (The dashboard stores Q1 revenue of ₹321cr and a 30.2% margin; both are wrong, and this note uses the company's ₹393cr and 23.3%.) But profit is not keeping up: the margin (23.3%) sat below the 24–25% it guided in May, and on the Q1 call management loosened that to “close to or upwards of 24%”; profit after tax grew only 8% as depreciation and interest jumped, 29% of the money owed to it is more than a year old, and a ₹59.7cr tax demand arrived in September that it has not provided for. I expect earnings to compound at about 22% a year; the price asks for about {need:Yatharth Hospital|27}%. **Follow it**, and buy on a weak quarter or once cash collection and the tax appeal come right.",
                 "**Follow Rainbow, Artemis and GPT Healthcare too; wait on Jupiter.** **Rainbow** is India's leading children's and maternity chain: Q1 revenue rose 33% (24% without acquisitions), it holds ₹613cr of cash and it has laid out 2,500 more beds for ₹2,200cr. But it quietly lowered its margin anchor to 24–25% before rent, against 26.3% last year, its occupancy is only 41% as new beds open, and its auditor flagged a ₹31.5cr loan to the owner of its Delhi building. **Jupiter** runs large suburban hospitals where 99% of revenue comes from cash and insured patients, and revenue per bed rose 9.2% in Q1; but its new Dombivli hospital lost ₹9.5cr in the quarter, the margin fell to 19.3% and it now guides only 20–21% for FY27; it is willing to borrow up to 3 times operating profit where ICRA's review trigger is 1.8 times, and a CFO exit and a purchase from promoter-group members came within two months. So I expect only about 15% earnings growth against the {need:Jupiter Life Line Hospitals|23}% its price needs. **Artemis** earns the most per bed here (₹85,690 a day) and its Gurugram margin keeps rising, but it has opened Raipur, taken on a South Delhi hospital, raised three-year capex from a “capex-light” ₹100cr to about ₹800cr plus a ₹250cr deposit, may sell up to ₹700cr of new shares, turned only about 60% of FY26 operating profit into cash, and paid its MD ₹52.7cr in FY26. Rainbow's price asks for about {need:Rainbow Children's Medicare|24}% a year against my 20%, and Artemis's about {need:Artemis Medicare|23}% against my 18%.",
                 "**GPT Healthcare is the small chain worth following.** It runs five ILS Hospitals (719 beds) in Kolkata, Howrah, Agartala and Raipur. (The dashboard's ‘(Agilus)’ label is wrong: GPT runs ILS Hospitals in Kolkata, Agartala and Raipur, while Agilus is Fortis's unlisted lab business.) Its four mature hospitals earn a 23% margin, patients pay at once so working capital is negative, it pays out about half its profit, and management raised its FY27 margin guide to about 21%. But its new Raipur hospital runs at 17.4% occupancy and loses about ₹3cr a quarter, every mature hospital is behind its occupancy target, and family pay is about a fifth of profit. I expect about 15% a year of earnings growth; the price asks for about {need:GPT Healthcare (Agilus)|17}%. That was the smallest gap in this note when it joined, but on the smallest and least proven chain, which is why it ranks behind the three above. **Follow it**, and buy on a weak quarter once Raipur nears break-even.",
-                "**Wait on Medanta, Dr Agarwal's, KIMS and Narayana as well; pass on Shalby.** **Medanta** is the best-run large chain here: inpatient volumes grew 28% and its new Noida hospital is almost at break-even. But profit after tax fell 1% in Q1 as depreciation and interest rose, its price needs about {need:Global Health (Medanta)|28}% a year of earnings growth, and it has signed a lease for a Pitampura hospital with ₹1,770cr of future payments that sit outside the balance sheet. **Dr Agarwal's** grew 26% with mature centres up 16%, but new centres lost about ₹20cr in Q1 alone against ₹30–40cr expected for the whole year, net cash fell to ₹62cr from ₹278cr, promoters have pledged shares up to 11.9% of the company to secure its loan, a ₹333cr buyout may fall due, and the price needs {need:Dr Agarwal's Health Care|34}% a year. **KIMS**'s profit fell 42% in FY26 and 56% in Q1 as new hospitals and debt piled up, its margin sits at CRISIL's review level, it needed a ₹1,500cr share sale and ₹600cr of promoter warrants to cut debt of about 5 times operating profit, and its founder has pledged shares for ₹750cr of personal loans. **Narayana**'s Indian hospitals are excellent, but its UK arm earns an 8.8% margin after heatwave outages, its two insurers lost about ₹54cr in Q1, three of six Indian projects slipped a year, ₹1,001cr of its deposits are pledged to lenders, and its price needs about {need:Narayana Hrudayalaya|22}% a year against my 15%. **Shalby** turned almost no profit into cash for two years, carries 651 days of implant stock, was downgraded in July, and has put a ₹300cr Mumbai project in its annual report three months after promising minimal capex.",
-                "**Three things to hold onto before reading the rest.** First, **the sector is slowing from price to volume**: ICRA, the rating agency, now expects the large chains to grow revenue 13–15% in FY27, against 18% achieved in FY26, because revenue per bed will rise 6–8% instead of 9%. Growth now depends on filling new beds. Second, **new hospitals hide good ones**: a chain that is expanding fast reports lower margins, returns and profit for two to four years, so look at the mature hospitals and at how fast the new ones fill. Third, **read the notes, not just the results**: pledged shares, off-balance-sheet leases, an unprovided tax demand, a doubtful loan and related-party purchases turned up in the annual reports and rating reports of seven of the ten this year.",
+                "**Wait on Medanta, Dr Agarwal's, HCG, KIMS and Narayana as well; pass on Shalby.** **Medanta** is the best-run large chain here: inpatient volumes grew 28% and its new Noida hospital is almost at break-even. But profit after tax fell 1% in Q1 as depreciation and interest rose, its price needs about {need:Global Health (Medanta)|28}% a year of earnings growth, and it has signed a lease for a Pitampura hospital with ₹1,770cr of future payments that sit outside the balance sheet. **Dr Agarwal's** grew 26% with mature centres up 16%, but new centres lost about ₹20cr in Q1 alone against ₹30–40cr expected for the whole year, net cash fell to ₹62cr from ₹278cr, promoters have pledged shares up to 11.9% of the company to secure its loan, a ₹333cr buyout may fall due, and the price needs {need:Dr Agarwal's Health Care|34}% a year. **HCG** (HealthCare Global) is India's largest cancer-only chain, with 26 hospitals and 2,855 beds in use, controlled by KKR since May 2025. Its four biggest hospitals earn a 26% margin and 27% on capital, and the new owner is cutting low-paying government and drug business. But the group earns 8% on capital, a third of its patients come through government schemes, revenue per bed is about ₹45,000 a day (close to Shalby's), and about ₹131cr a year of rent sits below its operating profit, so free cash after rent was about −₹72cr in FY26. It sold its fertility business to a fund controlled by its chairman and granted new options below the market price, and its price needs about {need:HealthCare Global (HCG)|41}% a year against my ~22%. **KIMS**'s profit fell 42% in FY26 and 56% in Q1 as new hospitals and debt piled up, its margin sits at CRISIL's review level, it needed a ₹1,500cr share sale and ₹600cr of promoter warrants to cut debt of about 5 times operating profit, and its founder has pledged shares for ₹750cr of personal loans. **Narayana**'s Indian hospitals are excellent, but its UK arm earns an 8.8% margin after heatwave outages, its two insurers lost about ₹54cr in Q1, three of six Indian projects slipped a year, ₹1,001cr of its deposits are pledged to lenders, and its price needs about {need:Narayana Hrudayalaya|22}% a year against my 15%. **Shalby** turned almost no profit into cash for two years, carries 651 days of implant stock, was downgraded in July, and has put a ₹300cr Mumbai project in its annual report three months after promising minimal capex.",
+                "**Three things to hold onto before reading the rest.** First, **the sector is slowing from price to volume**: ICRA, the rating agency, now expects the large chains to grow revenue 13–15% in FY27, against 18% achieved in FY26, because revenue per bed will rise 6–8% instead of 9%. Growth now depends on filling new beds. Second, **new hospitals hide good ones**: a chain that is expanding fast reports lower margins, returns and profit for two to four years, so look at the mature hospitals and at how fast the new ones fill. Third, **read the notes, not just the results**: pledged shares, off-balance-sheet leases, an unprovided tax demand, a doubtful loan and related-party purchases turned up in the annual reports and rating reports of eight of the eleven this year.",
             ],
         },
         {
@@ -321,7 +348,7 @@ export const hospitals: SectorOverview = {
                 },
                 {
                     label: 'Where the demand comes from',
-                    text: "India is well short of the national target of 2 beds per 1,000 people, and patients keep moving from small nursing homes to organised chains for complex care. Insurance is the second engine: GST on individual health policies was cut to zero from 22 September 2025, which CRISIL expects to support take-up, and insured patients pay more per bed than government schemes. Foreign patients are the third: 6.44 lakh came for treatment in 2024, three-quarters of them from Bangladesh, a flow that fell sharply after India curbed visas in 2024 (at Apollo, Bangladeshis fell from about 30% of foreign patients to 7–8%); India reopened tourist visas for Bangladeshis on 28 June 2026. **GPT Healthcare**'s Agartala hospital shows the same thing on a small scale: Bangladeshi patients fell from about 10% of its volumes to about 3%, and occupancy there slipped to 45.3% in Q1. **For these ten companies demand is not the question; filling their own new beds at good prices is.**",
+                    text: "India is well short of the national target of 2 beds per 1,000 people, and patients keep moving from small nursing homes to organised chains for complex care. Insurance is the second engine: GST on individual health policies was cut to zero from 22 September 2025, which CRISIL expects to support take-up, and insured patients pay more per bed than government schemes. Foreign patients are the third: 6.44 lakh came for treatment in 2024, three-quarters of them from Bangladesh, a flow that fell sharply after India curbed visas in 2024 (at Apollo, Bangladeshis fell from about 30% of foreign patients to 7–8%); India reopened tourist visas for Bangladeshis on 28 June 2026. **GPT Healthcare**'s Agartala hospital shows the same thing on a small scale: Bangladeshi patients fell from about 10% of its volumes to about 3%, and occupancy there slipped to 45.3% in Q1. **For these eleven companies demand is not the question; filling their own new beds at good prices is.**",
                 },
                 {
                     label: 'Cycles and policy',
@@ -329,7 +356,7 @@ export const hospitals: SectorOverview = {
                 },
                 {
                     label: 'What these companies actually depend on',
-                    text: "**Yatharth** on filling hospitals it has bought in NCR and UP, collecting from government schemes and winning its tax appeal; **Rainbow** on children's hospitals in Mumbai, NCR and Pune filling like the southern ones; **Jupiter** on Dombivli and a four-project building programme in Mumbai and Pune; **Artemis** on its one Gurugram hospital, foreign patients and Raipur; **GPT Healthcare** on filling Raipur and Agartala and opening Jamshedpur on time; **Narayana** on its UK business and two small insurers as much as on India; **Medanta** on Noida and five greenfield hospitals; **Dr Agarwal's** on opening 60 eye centres a year without the losses running ahead; **KIMS** on new hospitals breaking even and debt falling; **Shalby** on its implant business and its balance sheet. **Buy each for what it actually depends on, not for the sector label.**",
+                    text: "**Yatharth** on filling hospitals it has bought in NCR and UP, collecting from government schemes and winning its tax appeal; **Rainbow** on children's hospitals in Mumbai, NCR and Pune filling like the southern ones; **Jupiter** on Dombivli and a four-project building programme in Mumbai and Pune; **Artemis** on its one Gurugram hospital, foreign patients and Raipur; **GPT Healthcare** on filling Raipur and Agartala and opening Jamshedpur on time; **Narayana** on its UK business and two small insurers as much as on India; **Medanta** on Noida and five greenfield hospitals; **Dr Agarwal's** on opening 60 eye centres a year without the losses running ahead; **HCG** on filling North Bangalore, cutting government-scheme patients without losing volume, and on its owner KKR, which will want to sell within a few years; **KIMS** on new hospitals breaking even and debt falling; **Shalby** on its implant business and its balance sheet. **Buy each for what it actually depends on, not for the sector label.**",
                 },
             ],
             tables: [
@@ -339,7 +366,7 @@ export const hospitals: SectorOverview = {
                     rows: [
                         ['Large chains across several states', 'Narayana, Medanta, KIMS', '17–24%', '10–17%', '**70–91%**', 'Complex care; margins diluted by new hospitals (KIMS) and new businesses (Narayana)'],
                         ['Regional chains', 'Yatharth, Jupiter, Artemis, GPT Healthcare, Shalby', '10–25%', '6–20%', '**14–92%**', 'One or two big hospitals decide the year; payer mix swings the cash'],
-                        ['Single-speciality chains', 'Rainbow, Dr Agarwal’s', '26–33%', '11–17%', '**77–87%**', 'Many smaller units, mostly cash and insured patients; rent sits below operating profit'],
+                        ['Single-speciality chains', 'Rainbow, Dr Agarwal’s, HCG', '17–33%', '8–17%', '**77–87%**', 'Many smaller units, mostly cash and insured patients; rent sits below operating profit; HCG’s cancer care earns less because a third of its patients come through government schemes'],
                     ],
                 },
                 {
@@ -374,6 +401,7 @@ export const hospitals: SectorOverview = {
                         ['Narayana Hrudayalaya', '5,955 in use (India 5,461; Cayman 164; UK 330)', 'Not reported (“typically 60–65%”)', '₹1.92cr a bed a year (company measure), from ₹1.76cr'],
                         ['Shalby', '1,365 in use (after closing two units)', '51% (45% a year ago)', '₹44,711 (−2.1%)'],
                         ['Dr Agarwal’s Health Care', 'No beds: 304 facilities (285 in India, 19 in Africa)', '—', '91,082 surgeries (+15.5%)'],
+                        ['HealthCare Global (HCG)', '3,304 capacity; 2,855 in use; North Bangalore opened May 2026', 'Not reported; “centre utilisation” 58% in FY26 (CARE: 68.7% in H1 FY26)', 'Not reported; about ₹45,188 (CARE, H1 FY26); revenue per patient visit ₹85,943 (+2%)'],
                     ],
                     note: 'ARPOB depends heavily on the mix of patients and specialities, so compare each chain with its own history rather than with the others.',
                 },
@@ -393,7 +421,7 @@ export const hospitals: SectorOverview = {
                 },
                 {
                     label: 'Lasting but narrower: owning a speciality',
-                    text: "**Dr Agarwal's** holds about a quarter of the eye-care chain market (CRISIL, cited by ICRA), roughly 1.7 times the next chain, and 64% of its revenue is paid by patients directly. Its mature centres grew 16.3% in Q1, half from more patients and half from pricier procedures, while list prices rose only 0.5%, which is pricing power through mix rather than rate. Senior-doctor attrition is 2–3% a year, helped by its own optometry schools. **Rainbow**'s full-time consultant model keeps key doctors (ICRA notes attrition has been low since inception), and mature-hospital ARPOB rose about 10% in Q1 from price and case mix. The switching cost is trust: parents stay with the paediatrician who treated a sick newborn, and an eye patient returns for the second eye.",
+                    text: "**Dr Agarwal's** holds about a quarter of the eye-care chain market (CRISIL, cited by ICRA), roughly 1.7 times the next chain, and 64% of its revenue is paid by patients directly. Its mature centres grew 16.3% in Q1, half from more patients and half from pricier procedures, while list prices rose only 0.5%, which is pricing power through mix rather than rate. Senior-doctor attrition is 2–3% a year, helped by its own optometry schools. **Rainbow**'s full-time consultant model keeps key doctors (ICRA notes attrition has been low since inception), and mature-hospital ARPOB rose about 10% in Q1 from price and case mix. The switching cost is trust: parents stay with the paediatrician who treated a sick newborn, and an eye patient returns for the second eye. **HCG** is the only listed cancer-only chain, with 450-plus oncologists, weekly national tumour boards and 88% doctor retention, and cancer treatment runs over months, so patients rarely switch mid-course. Its mature hospitals show the moat: four earn over ₹10cr a month at a 26% margin and 27% return on capital. But it shows in volume, not price: revenue per patient visit rose only 2–3%, and government schemes still pay for about a third of its patients.",
                 },
                 {
                     label: 'Local: being the big hospital in a growing suburb',
@@ -409,14 +437,14 @@ export const hospitals: SectorOverview = {
                 },
                 {
                     label: 'Competitors outside the list, and what they pay',
-                    text: "**Apollo**, **Max Healthcare**, **Fortis**, **Aster** (merging with Quality Care into about 10,600 beds) and **Manipal**, which listed on 5 August 2026 with 13,000-plus beds at about 85 times FY26 earnings; **Cloudnine** and **Motherhood** in maternity; ASG, Centre for Sight and Maxivision in eye care. Private buyers are paying record prices, about ₹4.3cr a bed for Sahyadri in Pune, which says an established hospital in a good catchment is worth far more than the cost of building one.",
+                    text: "**Apollo**, **Max Healthcare**, **Fortis**, **Aster** (merging with Quality Care into about 10,600 beds) and **Manipal**, which listed on 5 August 2026 with 13,000-plus beds at about 85 times FY26 earnings; **Cloudnine** and **Motherhood** in maternity; ASG, Centre for Sight and Maxivision in eye care; and in cancer care, the oncology centres of Apollo, Manipal and Narayana, and the Tata Memorial network. Private buyers are paying record prices, about ₹4.3cr a bed for Sahyadri in Pune, which says an established hospital in a good catchment is worth far more than the cost of building one.",
                 },
             ],
         },
         {
             heading: '5. Margins (comparative)',
             body: [
-                "Are the margins structural? For mature hospitals, yes; the swings come from new hospitals, new businesses and payer mix. One accounting point matters: since 2019 rent has been booked below operating profit, so chains that lease buildings (Rainbow, Dr Agarwal's) look more profitable than those that own them (Jupiter). Where companies give an after-rent figure, it is quoted.",
+                "Are the margins structural? For mature hospitals, yes; the swings come from new hospitals, new businesses and payer mix. One accounting point matters: since 2019 rent has been booked below operating profit, so chains that lease buildings (Rainbow, Dr Agarwal's, HCG) look more profitable than those that own them (Jupiter). Where companies give an after-rent figure, it is quoted.",
                 "Whether the profit turns into cash is in section 2 (the **Cash conversion** and **Free cash flow** tabs) and on each company card in Tab 2.",
             ],
             points: [
@@ -430,7 +458,7 @@ export const hospitals: SectorOverview = {
                 },
                 {
                     label: 'Not structural: thin or diluted',
-                    text: "**Shalby**'s standalone hospitals fell to 18.4% from 21.6% on new-doctor costs and more government patients, its implant business made ₹0.16cr of operating profit on ₹47.2cr of revenue, and its Gurugram hospital earned 6.9%. Management promised “significant upside” by Q2 and now asks for another quarter. **Narayana**'s group margin was 18.8% against 23.9% a year earlier: the UK business earned 8.8% after a heatwave broke air-conditioning and cancelled operating days, and its two insurers lost about ₹54cr between them in the quarter. Those are business-mix problems, not hospital problems, but they are the group's margin now.",
+                    text: "**Shalby**'s standalone hospitals fell to 18.4% from 21.6% on new-doctor costs and more government patients, its implant business made ₹0.16cr of operating profit on ₹47.2cr of revenue, and its Gurugram hospital earned 6.9%. Management promised “significant upside” by Q2 and now asks for another quarter. **Narayana**'s group margin was 18.8% against 23.9% a year earlier: the UK business earned 8.8% after a heatwave broke air-conditioning and cancelled operating days, and its two insurers lost about ₹54cr between them in the quarter. Those are business-mix problems, not hospital problems, but they are the group's margin now. **HCG** earned 17.6% in Q1, flat on a year earlier. Its ‘adjusted’ 19.4% leaves out North Bangalore's ₹7.0cr loss and a ₹4.6cr customs-duty provision, and its ₹58cr cash buyout of employee options went through equity, never through profit. After interest and depreciation of ₹421cr it made only ₹27cr before tax in FY26 on ₹2,538cr of revenue. Management now targets 21–22% within two years and 24–25% in four to five.",
                 },
                 {
                     label: 'Working capital: the biggest drains',
@@ -446,7 +474,7 @@ export const hospitals: SectorOverview = {
                 },
                 {
                     label: 'Working capital: built into the business',
-                    text: "Most hospitals collect before they pay suppliers and doctors, so negative cash cycles and 75–90% cash conversion are normal (**Narayana 91%**, **Artemis 92%**, **Dr Agarwal's 87%**, **Rainbow 77%** over five years). **Jupiter**, with almost no government patients, is owed only about 20 days of revenue; **Narayana**'s UK business is paid mostly in quarterly advances by the NHS. **GPT Healthcare**, with about 90% of revenue from cash and insured patients, runs a cash cycle of −112 days and has turned 86% of five years' operating profit into cash. **Judge each against its own payer mix.**",
+                    text: "Most hospitals collect before they pay suppliers and doctors, so negative cash cycles and 75–90% cash conversion are normal (**Narayana 91%**, **Artemis 92%**, **Dr Agarwal's 87%**, **Rainbow 77%** over five years). **Jupiter**, with almost no government patients, is owed only about 20 days of revenue; **Narayana**'s UK business is paid mostly in quarterly advances by the NHS. **GPT Healthcare**, with about 90% of revenue from cash and insured patients, runs a cash cycle of −112 days and has turned 86% of five years' operating profit into cash. **HCG** runs a cycle of −93 days and has converted 84% over five years, though the cycle has lengthened from −127 days in FY24. **Judge each against its own payer mix.**",
                 },
             ],
             tables: [
@@ -462,6 +490,7 @@ export const hospitals: SectorOverview = {
                         ['Narayana Hrudayalaya', 'Net debt “less than 1” times operating profit; will rise during the build', 'Net debt ₹1,967cr at June; ₹1,001cr of deposits pledged to lenders; £150m UK loan'],
                         ['Global Health (Medanta)', '“Very low leverage”; ₹161cr capex in Q1 of ₹800–900cr for FY27', 'Net cash ₹591cr at March; ₹1,770cr of Pitampura lease payments not yet on the balance sheet'],
                         ['Dr Agarwal’s Health Care', '₹25cr of deferred acquisition payments made in Q1', 'Net cash ₹62cr (₹278cr a year earlier); ₹333cr option for the rest of Thind Eye Care'],
+                        ['HealthCare Global (HCG)', '₹170cr of debt repaid from the ₹425cr rights issue; Q1 operating cash about ₹70cr on ₹122cr of operating profit; capex about ₹75cr in Q1, about ₹250cr a year in all', 'Bank debt ₹910cr and ₹825cr of leases against ₹541cr of cash (March); ₹154.5cr paid for more of Vizag in April; ICRA and CARE A+'],
                         ['Krishna Inst.Medi', '₹1,125cr repaid from the ₹1,500cr share sale; debt ~₹2,400cr in early July; ₹505cr cash', 'Plus about ₹1,009cr of leases; ₹600cr of promoter warrants, 25% paid'],
                         ['Shalby', 'Net debt ₹463.6cr (₹446.2cr in March), only ₹54.5cr in the hospitals', 'ICRA cut to A in July; ₹493.6cr of guarantees for subsidiaries'],
                     ],
@@ -477,11 +506,11 @@ export const hospitals: SectorOverview = {
             points: [
                 {
                     label: 'Growth driver: new beds',
-                    text: "The biggest driver by far, and the most expensive. **Medanta** has about ₹4,850cr of projects, including 750 beds in Mumbai (₹1,238cr), 650 in Guwahati (about ₹970cr) and leased hospitals in Pitampura and Varanasi, with revenue mostly from FY30. **Rainbow** plans 2,500 beds for about ₹2,200cr (about ₹88 lakh a bed), 70% of them outside the South. **Jupiter** plans about 1,700 beds at about ₹1.5cr each including land, taking it to nearly 3,000. **Artemis** aims for about 2,000 beds by 2029–30 through Tower IV in Gurugram and a 650-bed South Delhi hospital. **Narayana** targets 7,600-plus beds by FY30 but says nothing meaningful opens for two to three years. **GPT Healthcare**, at the small end, is filling its 158-bed Raipur hospital, building a 150–155-bed hospital in a leased building in Jamshedpur for about ₹75cr (due late in FY27 or early FY28), and aims for 1,000 beds within two years, which still needs a seventh hospital for which no site is chosen. Bastion Research's rule of thumb is useful: a brownfield bed costs ₹0.8–1.1cr and earns within a year, a greenfield bed ₹1.5cr-plus and takes 18–24 months to break even, and greenfields are now about half of all new beds. Jefferies thinks listed capacity will actually grow only about 5% a year because projects slip, and Narayana's record suggests it is right.",
+                    text: "The biggest driver by far, and the most expensive. **Medanta** has about ₹4,850cr of projects, including 750 beds in Mumbai (₹1,238cr), 650 in Guwahati (about ₹970cr) and leased hospitals in Pitampura and Varanasi, with revenue mostly from FY30. **Rainbow** plans 2,500 beds for about ₹2,200cr (about ₹88 lakh a bed), 70% of them outside the South. **Jupiter** plans about 1,700 beds at about ₹1.5cr each including land, taking it to nearly 3,000. **Artemis** aims for about 2,000 beds by 2029–30 through Tower IV in Gurugram and a 650-bed South Delhi hospital. **Narayana** targets 7,600-plus beds by FY30 but says nothing meaningful opens for two to three years. **GPT Healthcare**, at the small end, is filling its 158-bed Raipur hospital, building a 150–155-bed hospital in a leased building in Jamshedpur for about ₹75cr (due late in FY27 or early FY28), and aims for 1,000 beds within two years, which still needs a seventh hospital for which no site is chosen. **HCG** plans about 940 more beds to FY30, to about 3,670 in use, mostly brownfield at ₹45–58 lakh a bed, plus three greenfields; its North Bangalore hospital (₹129cr, up to 132 beds) opened in May, while Whitefield slipped to the end of FY28. Bastion Research's rule of thumb is useful: a brownfield bed costs ₹0.8–1.1cr and earns within a year, a greenfield bed ₹1.5cr-plus and takes 18–24 months to break even, and greenfields are now about half of all new beds. Jefferies thinks listed capacity will actually grow only about 5% a year because projects slip, and Narayana's record suggests it is right.",
                 },
                 {
                     label: 'Growth driver: price per bed',
-                    text: "ICRA expects ARPOB to rise 6–8% a year, down from 9.2% in FY26, and Jefferies warns chains may accept poorer payers to fill new beds. In Q1, **KIMS** (+9.7%), **Jupiter** (+9.2%) and **GPT Healthcare** (+8.8%, before its October tariff rise) beat that; **Artemis** (+7.4%) and **Yatharth** (+7%, against its 9–10% guide) matched it; **Rainbow** (+6%) and **Medanta** (+5.5%) sat a little below; **Shalby** fell 2.1%. The CGHS rate rise helps chains with more government patients: Yatharth says it added about 5% to revenue, while Shalby's promised 7–8% has not shown up. Much of the rest comes from shorter stays: Medanta's average stay has fallen from 3.76 days in FY22 to 2.87.",
+                    text: "ICRA expects ARPOB to rise 6–8% a year, down from 9.2% in FY26, and Jefferies warns chains may accept poorer payers to fill new beds. In Q1, **KIMS** (+9.7%), **Jupiter** (+9.2%) and **GPT Healthcare** (+8.8%, before its October tariff rise) beat that; **Artemis** (+7.4%) and **Yatharth** (+7%, against its 9–10% guide) matched it; **Rainbow** (+6%) and **Medanta** (+5.5%) sat a little below; **Shalby** fell 2.1%. **HCG**'s revenue per patient visit rose only 2%, and CGHS price caps cost it about 1.5% of revenue. The CGHS rate rise helps chains with more government patients: Yatharth says it added about 5% to revenue, while Shalby's promised 7–8% has not shown up. Much of the rest comes from shorter stays: Medanta's average stay has fallen from 3.76 days in FY22 to 2.87.",
                 },
                 {
                     label: 'Growth driver: buying hospitals',
@@ -493,7 +522,7 @@ export const hospitals: SectorOverview = {
                 },
                 {
                     label: 'Delivering or beating',
-                    text: "**Medanta**: Noida's quarterly loss fell from ₹23.6cr to ₹4.9cr and break-even was pulled forward, while Gurugram's cluster held 24.1%. **Rainbow**: revenue +33% against 20%, and the five-year plan arrived on time. **Dr Agarwal's**: +26% against “a similar pace” to FY26 (about 22%), with the margin stable. **KIMS**: repaid ₹1,125cr of debt against a promised ₹1,000cr, Mahadevapura broke even early and Telangana grew profit 16% against 10–12%. **Artemis**: Gurugram grew 15.4%, inside its 15–17% range, and the Gurugram margin target was raised to 23–24%. **Narayana**: the Cayman insurer's loss fell from $5.2m to $3.7m, as promised.",
+                    text: "**Medanta**: Noida's quarterly loss fell from ₹23.6cr to ₹4.9cr and break-even was pulled forward, while Gurugram's cluster held 24.1%. **Rainbow**: revenue +33% against 20%, and the five-year plan arrived on time. **Dr Agarwal's**: +26% against “a similar pace” to FY26 (about 22%), with the margin stable. **KIMS**: repaid ₹1,125cr of debt against a promised ₹1,000cr, Mahadevapura broke even early and Telangana grew profit 16% against 10–12%. **Artemis**: Gurugram grew 15.4%, inside its 15–17% range, and the Gurugram margin target was raised to 23–24%. **Narayana**: the Cayman insurer's loss fell from $5.2m to $3.7m, as promised. **HCG**: the fertility sale closed on time, interest cost fell, North Bangalore is ramping on plan, and the adjusted margin rose 1.2 points.",
                 },
                 {
                     label: 'Cautious',
@@ -501,7 +530,7 @@ export const hospitals: SectorOverview = {
                 },
                 {
                     label: 'Missed or walked back',
-                    text: "**Shalby**: the hospital margin fell instead of rising, net debt rose instead of falling, the implant arm's profit vanished, and a ₹300cr Mumbai project appeared after the “minimal capex” promise. **Yatharth**: the margin came in below its 24–25% band and the wording softened; ARPOB grew 7% against about 10%; and the tax matter it said would close “with no financial liability” produced a ₹59.7cr demand. **Narayana**: the UK margin fell to 8.8% and its software rollout slipped 4–6 months, and two Indian projects moved from FY28 to FY29 and one from FY29 to FY30 within weeks of the annual report. **KIMS**: Thane, due to be at break-even, lost ₹8.0cr. **Dr Agarwal's**: new centres lost about ₹20cr in one quarter against ₹30–40cr for the year, and the Chennai flagship, due in October, was not mentioned.",
+                    text: "**Shalby**: the hospital margin fell instead of rising, net debt rose instead of falling, the implant arm's profit vanished, and a ₹300cr Mumbai project appeared after the “minimal capex” promise. **Yatharth**: the margin came in below its 24–25% band and the wording softened; ARPOB grew 7% against about 10%; and the tax matter it said would close “with no financial liability” produced a ₹59.7cr demand. **Narayana**: the UK margin fell to 8.8% and its software rollout slipped 4–6 months, and two Indian projects moved from FY28 to FY29 and one from FY29 to FY30 within weeks of the annual report. **KIMS**: Thane, due to be at break-even, lost ₹8.0cr. **Dr Agarwal's**: new centres lost about ₹20cr in one quarter against ₹30–40cr for the year, and the Chennai flagship, due in October, was not mentioned. **HCG**: revenue grew 13% against about 15%, the reported margin was flat, Whitefield moved a year to end-FY28, the Cuttack and Vizag expansions moved to FY28–29, and the day-care plan was not mentioned in August.",
                 },
                 {
                     label: 'Mixed',
@@ -509,7 +538,7 @@ export const hospitals: SectorOverview = {
                 },
                 {
                     label: 'My outlook',
-                    text: "Revenue across these ten should grow in the mid-to-high teens as beds are added, a little above ICRA's 13–15% for FY27 because several are opening more beds relative to their size. **Profit will lag revenue for a year or two**: in Q1 profit after tax rose only 8% at Yatharth and 6% at Narayana, fell 1% at Medanta, 15% at Jupiter and 56% at KIMS, while Artemis (+48%), Dr Agarwal's (+45%) and Rainbow (+16%) grew. **I expect KIMS to compound earnings at about 25% (from a depressed base), Yatharth and Dr Agarwal's at about 22%, Rainbow and Medanta at about 20%, Artemis at about 18%, Jupiter, Narayana and GPT Healthcare at about 15% and Shalby at about 12%.** I have trimmed Yatharth (from 25%) and Jupiter (from 18%) because profit is lagging revenue at both: Yatharth's pre-tax profit rose 4% in Q1, and Jupiter guides its FY27 margin down to 20–21%. GPT Healthcare's figure starts from profits depressed by Raipur's losses, so part of its growth is recovery.",
+                    text: "Revenue across these eleven should grow in the mid-to-high teens as beds are added, a little above ICRA's 13–15% for FY27 because several are opening more beds relative to their size. **Profit will lag revenue for a year or two**: in Q1 profit after tax rose only 8% at Yatharth and 6% at Narayana, fell 1% at Medanta, 15% at Jupiter and 56% at KIMS, while Artemis (+48%), Dr Agarwal's (+45%) and Rainbow (+16%) grew. **I expect KIMS to compound earnings at about 25% (from a depressed base), Yatharth, Dr Agarwal's and HCG at about 22%, Rainbow and Medanta at about 20%, Artemis at about 18%, Jupiter, Narayana and GPT Healthcare at about 15% and Shalby at about 12%.** I have trimmed Yatharth (from 25%) and Jupiter (from 18%) because profit is lagging revenue at both: Yatharth's pre-tax profit rose 4% in Q1, and Jupiter guides its FY27 margin down to 20–21%. GPT Healthcare's figure starts from profits depressed by Raipur's losses, so part of its growth is recovery. HCG's starts from very thin profit (about ₹65cr adjusted over the last year), so most of it is margin recovery, which its price already assumes.",
                 },
             ],
             tables: [
@@ -521,6 +550,7 @@ export const hospitals: SectorOverview = {
                         ['Yatharth Hospital', 'Filling 735 unused beds; Gurugram; lower government share; tax and receivables', '12% / **22%** / 28%'],
                         ['Krishna Inst.Medi', 'New hospitals breaking even; interest falling after the share sale', '12% / **25%** / 35%'],
                         ["Dr Agarwal's Health Care", '60 centres a year; premium procedures in mature centres', '15% / **22%** / 28%'],
+                        ['HealthCare Global (HCG)', 'Margin from 18% towards 21–22%; brownfield beds and North Bangalore; interest falling; new option costs', '12% / **22%** / 30%'],
                         ["Rainbow Children's Medicare", '2,500 new beds; new cities; margin reset to 24–25% before rent', '14% / **20%** / 26%'],
                         ['Global Health (Medanta)', 'Noida; theatres in Gurugram; greenfields from FY30', '14% / **20%** / 25%'],
                         ['Artemis Medicare', 'Gurugram margin to 23–24%; Raipur; South Delhi', '10% / **18%** / 24%'],
@@ -544,6 +574,7 @@ export const hospitals: SectorOverview = {
                         ['Narayana Hrudayalaya', 'No guidance; Cayman losses to fall; four projects in FY28', '~₹3,000cr over 3–4 years; Q1 spend ₹106cr', '**Slipped**: Cayman on track, UK margin 8.8%, three projects a year late'],
                         ['Global Health (Medanta)', 'Noida break-even in H2 FY27; Cluster 1 at 24–25%; capex ₹800–900cr', '~₹4,850cr of projects; ₹161cr in Q1', '**Beat**: Noida loss ₹4.9cr; break-even brought forward'],
                         ["Dr Agarwal's Health Care", 'Growth like FY26; stable margin; 60 centres; ₹30–40cr of new-centre losses', '₹380–400cr', '**Mixed**: +26% and 18 openings; ₹20cr of losses in one quarter'],
+                        ['HealthCare Global (HCG)', 'Growth close to 15%; another 100 bp of margin; fertility sale in Q1; interest cost down', '~₹150cr of bed capex in FY27 plus ~₹100cr of upkeep; ~₹300cr in FY28–29', '**Mixed**: +13%; adjusted margin +1.2 points, reported flat; sale closed; Whitefield a year late'],
                         ['Krishna Inst.Medi', 'Repay ~₹1,000cr; new-unit losses under half of ₹129cr; Thane at break-even', '₹100–125cr in nine months; ₹1,150cr committed at March', '**Mixed**: ₹1,125cr repaid; Thane lost ₹8.0cr; insurer approvals late'],
                         ['Shalby', '“Significant upside” to margin by Q2; minimal capex; debt ratios to improve', '₹300cr Mumbai project in the annual report', '**Walked back**: margin 18.4%, net debt up, Mumbai revived'],
                     ],
@@ -562,19 +593,19 @@ export const hospitals: SectorOverview = {
                 },
                 {
                     label: 'Price control and government payers',
-                    text: "A parliamentary committee recommended in August 2026 capping room rents at nearby 3-star hotel tariffs in large metros, fixing package prices for standard procedures and doubling free or subsidised beds to 20%; it compared an average private hospital stay of ₹50,508 with ₹6,631 in government hospitals. The Supreme Court has said it could impose CGHS rates on private hospitals if the government and states do not agree rate ranges, and the case is reported to be pending. These are recommendations, and Yatharth's management noted that past proposals were not implemented, but **the risk is highest for high-ARPOB metro chains (Medanta, Artemis)**. At the other end, government schemes pay low rates slowly: they are about 40% of Yatharth's revenue and 32% of Shalby's hospital revenue, and both have seen revenue per bed or collections suffer for it.",
+                    text: "A parliamentary committee recommended in August 2026 capping room rents at nearby 3-star hotel tariffs in large metros, fixing package prices for standard procedures and doubling free or subsidised beds to 20%; it compared an average private hospital stay of ₹50,508 with ₹6,631 in government hospitals. The Supreme Court has said it could impose CGHS rates on private hospitals if the government and states do not agree rate ranges, and the case is reported to be pending. These are recommendations, and Yatharth's management noted that past proposals were not implemented, but **the risk is highest for high-ARPOB metro chains (Medanta, Artemis)**. At the other end, government schemes pay low rates slowly: they are about 40% of Yatharth's revenue, 32% of Shalby's hospital revenue and about a third of HCG's, and both have seen revenue per bed or collections suffer for it.",
                 },
                 {
                     label: 'Debt, leases and new shares',
-                    text: "**KIMS**'s net debt reached 4.9 times operating profit at March (CRISIL), and it needed a ₹1,500cr share sale and ₹600cr of promoter warrants to repair it. **Jupiter**'s management is willing to borrow up to 3 times operating profit, but ICRA would review its AA- rating above 1.8 times, about ₹620cr of debt at FY26 profit against ₹508.5cr at March. **Narayana** carries a £150m UK loan whose terms require the promoter to keep at least 51%, and ICRA's trigger is 2 times. **Shalby**'s debt is 4.2 times operating profit with interest covered only 3.7 times. **Medanta**'s ₹1,770cr Pitampura lease will land on the balance sheet when the hospital is handed over. **Artemis** has approval for up to ₹700cr of new shares, about 13% of its market value, for unnamed acquisitions at a time when CRISIL flags acquisition prices as a balance-sheet risk.",
+                    text: "**KIMS**'s net debt reached 4.9 times operating profit at March (CRISIL), and it needed a ₹1,500cr share sale and ₹600cr of promoter warrants to repair it. **Jupiter**'s management is willing to borrow up to 3 times operating profit, but ICRA would review its AA- rating above 1.8 times, about ₹620cr of debt at FY26 profit against ₹508.5cr at March. **Narayana** carries a £150m UK loan whose terms require the promoter to keep at least 51%, and ICRA's trigger is 2 times. **Shalby**'s debt is 4.2 times operating profit with interest covered only 3.7 times. **Medanta**'s ₹1,770cr Pitampura lease will land on the balance sheet when the hospital is handed over. **Artemis** has approval for up to ₹700cr of new shares, about 13% of its market value, for unnamed acquisitions at a time when CRISIL flags acquisition prices as a balance-sheet risk. **HCG**'s ₹825cr of lease liabilities (₹1,453cr of future rent) sit inside its 2.6 times net debt; bank debt alone is 0.8 times.",
                 },
                 {
                     label: 'Governance: pledges, related parties and pay',
-                    text: "**KIMS**'s founder Dr Bhaskara Rao pledged shares for ₹750cr of personal loans, ₹400cr to repay family loans and ₹350cr for loans to promoter-owned companies and investments; 13.3% of his shares were pledged at June, in the same quarter his sons subscribed ₹600cr of warrants. **Dr Agarwal's** promoters have pledged shares up to 11.9% of the company to secure its ICICI loan, and it may have to pay ₹333cr for the rest of Thind Eye Care. **Yatharth**'s chairman's wife cut her stake from 6.47% to 0.62% in FY26, and the company paid ₹2.25cr to a family foundation and borrowed ₹21.1cr from a minority partner. **Jupiter** bought a company from promoter-group members for ₹3.78cr and committed ₹35–40cr to it, and its CFO left after a year, with his predecessor returning. **Rainbow** lent ₹31.5cr, including unpaid interest, to the hospital company that owns its Delhi building; the auditor made it a key audit matter because the borrower lacks the cash to repay. **Artemis** paid its MD ₹52.7cr in FY26, mostly share options, 1,158 times the median employee. **GPT Healthcare**'s family pay was about ₹8.2cr, roughly a fifth of FY26 profit.",
+                    text: "**KIMS**'s founder Dr Bhaskara Rao pledged shares for ₹750cr of personal loans, ₹400cr to repay family loans and ₹350cr for loans to promoter-owned companies and investments; 13.3% of his shares were pledged at June, in the same quarter his sons subscribed ₹600cr of warrants. **Dr Agarwal's** promoters have pledged shares up to 11.9% of the company to secure its ICICI loan, and it may have to pay ₹333cr for the rest of Thind Eye Care. **Yatharth**'s chairman's wife cut her stake from 6.47% to 0.62% in FY26, and the company paid ₹2.25cr to a family foundation and borrowed ₹21.1cr from a minority partner. **Jupiter** bought a company from promoter-group members for ₹3.78cr and committed ₹35–40cr to it, and its CFO left after a year, with his predecessor returning. **Rainbow** lent ₹31.5cr, including unpaid interest, to the hospital company that owns its Delhi building; the auditor made it a key audit matter because the borrower lacks the cash to repay. **Artemis** paid its MD ₹52.7cr in FY26, mostly share options, 1,158 times the median employee. **GPT Healthcare**'s family pay was about ₹8.2cr, roughly a fifth of FY26 profit. **HCG** sold its fertility business, Milann, for about one times sales to a fund controlled by its chairman and founder, which management called a ‘competitive sale process’ on the call; it paid ₹58cr in cash to buy back employee options (₹17cr to its former CEO); and in September it granted options at ₹495, below the market price, that can be exercised early on a change of control, which suits KKR's eventual exit.",
                 },
                 {
                     label: 'Accounting, disclosure and data',
-                    text: "**Yatharth** has not provided for its ₹59.7cr tax demand (about 35% of FY26 profit) and holds ₹108cr of export obligations on duty-free equipment. **Narayana** reclassified UK and Cayman cost lines between quarters and stopped showing figures without the UK. **Artemis**'s Tower IV cost is ₹120cr on the call but ₹160–180cr in the board filing. The auditors of five of these companies noted software audit trails that were missing or not fully enabled; none qualified its opinion. One dashboard error also matters here: **Yatharth**'s stored Q1 figures are wrong, so this note uses the company's.",
+                    text: "**Yatharth** has not provided for its ₹59.7cr tax demand (about 35% of FY26 profit) and holds ₹108cr of export obligations on duty-free equipment. **Narayana** reclassified UK and Cayman cost lines between quarters and stopped showing figures without the UK. **Artemis**'s Tower IV cost is ₹120cr on the call but ₹160–180cr in the board filing. The auditors of six of these companies noted software audit trails that were missing or not fully enabled; none qualified its opinion. One dashboard error also matters here: **Yatharth**'s stored Q1 figures are wrong, so this note uses the company's. In June the regulator suspended the ethics committee at **HCG**'s Bangalore flagship from approving new clinical trials for two years, and HCG's ₹103cr of contingent liabilities include ₹76cr of customs duty on imported equipment.",
                 },
                 {
                     label: 'Overseas patients, overseas businesses and doctors',
@@ -586,12 +617,12 @@ export const hospitals: SectorOverview = {
             heading: '8. Valuation (comparative)',
             body: [
                 "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it gives credit for cash and charges for debt. Where the two disagree, the balance sheet is the reason.",
-                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **17% at 28x, 21% at 40x, 23% at 47x, 24% at 50x, 27% at 62x, 28% at 70x, 34% at 106x and 39% at 160x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **This is an expensive sector**: investors pay for years of bed additions in advance, so most prices ask for more growth than even a good chain can deliver, at a time when ICRA is cutting its growth forecast.",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **17% at 28x, 21% at 40x, 23% at 47x, 24% at 50x, 27% at 62x, 28% at 70x, 34% at 106x, 39% at 160x and 41% at 182x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **This is an expensive sector**: investors pay for years of bed additions in advance, so most prices ask for more growth than even a good chain can deliver, at a time when ICRA is cutting its growth forecast.",
             ],
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**KIMS**'s P/E is several times its EV/EBITDA because interest and depreciation on its new hospitals eat most of its operating profit; as those hospitals fill, the P/E should fall faster than the EV/EBITDA. The live EV/EBITDA also uses March debt, before ₹1,125cr was repaid from the share sale, so on June debt it is a little lower than shown. **Rainbow**'s and **Dr Agarwal's** Screener net debt (₹453cr and ₹785cr) is almost all lease obligations; on their own figures both hold net cash (₹613cr and ₹62cr). **GPT Healthcare** shows ₹87cr of net debt on Screener, of which ₹75cr is lease liabilities. **Medanta**, **Yatharth**, **Jupiter** and **Artemis** have little net debt, so their P/E and EV/EBITDA tell the same story.",
+                    text: "**KIMS**'s P/E is several times its EV/EBITDA because interest and depreciation on its new hospitals eat most of its operating profit; as those hospitals fill, the P/E should fall faster than the EV/EBITDA. The live EV/EBITDA also uses March debt, before ₹1,125cr was repaid from the share sale, so on June debt it is a little lower than shown. **Rainbow**'s and **Dr Agarwal's** Screener net debt (₹453cr and ₹785cr) is almost all lease obligations; on their own figures both hold net cash (₹613cr and ₹62cr). **GPT Healthcare** shows ₹87cr of net debt on Screener, of which ₹75cr is lease liabilities. **Medanta**, **Yatharth**, **Jupiter** and **Artemis** have little net debt, so their P/E and EV/EBITDA tell the same story. **HCG**'s P/E of about {pe:HealthCare Global (HCG)|182} is inflated by a ₹45cr write-down and thin profit; its EV/EBITDA of about 21 times counts ₹825cr of leases as debt while leaving rent out of operating profit, and before lease accounting it is about 26 times.",
                 },
                 {
                     label: 'Full',
@@ -599,11 +630,11 @@ export const hospitals: SectorOverview = {
                 },
                 {
                     label: 'Stretched',
-                    text: "**Medanta** (needs about {need:Global Health (Medanta)|28}% a year against my 20%), **Narayana** (about {need:Narayana Hrudayalaya|22}% against 15%), **Dr Agarwal's** (about {need:Dr Agarwal's Health Care|34}% against 22%), **KIMS** (about {need:Krishna Inst.Medi|39}% against 25%), **Jupiter** (about {need:Jupiter Life Line Hospitals|23}% against 15%) and **Shalby** (about {need:Shalby|21}% against 12%). Medanta and Dr Agarwal's are excellent businesses at prices that already assume excellence; Narayana, at a market value of about {mcap:Narayana Hrudayalaya|₹37,343cr} and a P/E of about {pe:Narayana Hrudayalaya|43}, is priced for growth its group profit has not shown (₹806cr after tax in FY26 against ₹791cr); KIMS needs its margin to climb from 20% back towards 25% and interest to fall; Jupiter needs Dombivli and three more projects to fill while its margin is guided down; Shalby's hospitals grew 7% in Q1, far below the {need:Shalby|21}% its price needs.",
+                    text: "**Medanta** (needs about {need:Global Health (Medanta)|28}% a year against my 20%), **Narayana** (about {need:Narayana Hrudayalaya|22}% against 15%), **Dr Agarwal's** (about {need:Dr Agarwal's Health Care|34}% against 22%), **KIMS** (about {need:Krishna Inst.Medi|39}% against 25%), **Jupiter** (about {need:Jupiter Life Line Hospitals|23}% against 15%) **Shalby** (about {need:Shalby|21}% against 12%) and **HCG** (about {need:HealthCare Global (HCG)|41}% against 22%). Medanta and Dr Agarwal's are excellent businesses at prices that already assume excellence; Narayana, at a market value of about {mcap:Narayana Hrudayalaya|₹37,343cr} and a P/E of about {pe:Narayana Hrudayalaya|43}, is priced for growth its group profit has not shown (₹806cr after tax in FY26 against ₹791cr); KIMS needs its margin to climb from 20% back towards 25% and interest to fall; Jupiter needs Dombivli and three more projects to fill while its margin is guided down; Shalby's hospitals grew 7% in Q1, far below the {need:Shalby|21}% its price needs; HCG's price already assumes years of margin recovery.",
                 },
                 {
                     label: 'A check from the private market',
-                    text: "Manipal listed in August at about 85 times FY26 earnings, and Apollo, Max and Fortis trade at 66–74 times by the same article's count. Private buyers paid about ₹4.3cr a bed for Sahyadri. Against those, most of these ten are not out of line with their larger peers; **the whole sector is priced for growth it has not yet shown in profit**, which is the real risk if ICRA's slowdown arrives.",
+                    text: "Manipal listed in August at about 85 times FY26 earnings, and Apollo, Max and Fortis trade at 66–74 times by the same article's count. Private buyers paid about ₹4.3cr a bed for Sahyadri. Against those, most of these eleven are not out of line with their larger peers; **the whole sector is priced for growth it has not yet shown in profit**, which is the real risk if ICRA's slowdown arrives.",
                 },
             ],
             embed: 'valuation',
@@ -660,13 +691,19 @@ export const hospitals: SectorOverview = {
             watch: 'New-centre losses for the year; same-store growth staying above 12%; the Chennai flagship and the merger.',
         },
         {
-            company: 'Krishna Inst.Medi', rank: 9, stance: 'TURNAROUND', segment: LARGE,
+            company: 'HealthCare Global (HCG)', rank: 9, stance: 'TURNAROUND', segment: SPECIAL,
+            what: "HCG: India's largest cancer-only hospital chain, with 26 hospitals (25 in India and one in Nairobi) and 2,855 beds in use, offering radiation, medical and surgical oncology; controlled by KKR since May 2025.",
+            view: "**A good cancer franchise, improving, priced ahead of it.** Its four biggest hospitals earn a 26% margin and 27% on capital, low-paying business is being cut and interest is falling after a rights issue. But the group earns 8% on capital, revenue per bed is about ₹45,000 a day, a third of patients come through government schemes, about ₹131cr of yearly rent sits below its operating profit, and its fertility business went to the chairman's own fund. The price needs about {need:HealthCare Global (HCG)|41}% a year against my ~22%.",
+            watch: 'The Q2 FY27 reported (not adjusted) margin and the new option cost; North Bangalore’s losses shrinking; the share of government-scheme patients.',
+        },
+        {
+            company: 'Krishna Inst.Medi', rank: 10, stance: 'TURNAROUND', segment: LARGE,
             what: "KIMS: multi-speciality hospitals in Telangana and Andhra Pradesh, recently opened or bought in Bengaluru, Kerala and Maharashtra.",
             view: "**Good hospitals, too many new ones at once.** Volumes rose 27% and four of six new hospitals are now profitable, but profit fell 42% in FY26 and 56% in Q1, the margin (20.1%) is at CRISIL's review level, and the founder has pledged shares for ₹750cr of personal loans. The price needs about {need:Krishna Inst.Medi|39}% against my ~25%.",
             watch: 'Thane and Electronic City breaking even; interest falling from Q2; the founder’s pledge.',
         },
         {
-            company: 'Shalby', rank: 10, stance: 'TURNAROUND', segment: REGIONAL,
+            company: 'Shalby', rank: 11, stance: 'TURNAROUND', segment: REGIONAL,
             what: "Runs hospitals, mainly in Gujarat, known for joint replacements, and an implant business making knee and hip implants in California and selling them in India, the US and Asia.",
             view: "**Weak returns and a broken promise.** Return on capital about 7%, essentially zero operating cash in FY25–FY26, 651 days of implant stock, a July downgrade to A, and a ₹300cr Mumbai project after promising minimal capex. Its oldest hospitals earn 23%, which is the only reason to keep watching. The price needs about {need:Shalby|21}% against my ~12%.",
             watch: 'Hospital margin back near 20%; implant stock and group cash; how Mumbai is funded.',
@@ -677,13 +714,13 @@ export const hospitals: SectorOverview = {
         heading: '9. Summary review',
         body: [
             "**Regional chains.** **Yatharth Hospital: follow**, the closest to a buy in the sector: the growth is real, but profit, cash collection and the tax appeal must follow. **Artemis Medicare: follow** as Raipur and South Delhi take shape. **GPT Healthcare: follow** as its own Raipur hospital breaks even. **Jupiter Life Line Hospitals: wait** through Dombivli's start-up losses, a lower margin guide and a heavy build. **Shalby: pass** until capex discipline and cash return.",
-            "**Single-speciality chains.** **Rainbow Children's Medicare: follow** for a better price after the margin reset. **Dr Agarwal's Health Care: wait**: a good business priced for perfection, with its new-centre losses running ahead of plan.",
+            "**Single-speciality chains.** **Rainbow Children's Medicare: follow** for a better price after the margin reset. **Dr Agarwal's Health Care: wait**: a good business priced for perfection, with its new-centre losses running ahead of plan. **HealthCare Global (HCG): wait**: a cancer franchise improving under KKR, but with rent below the line, a related-party sale and a price that already assumes years of margin recovery.",
             "**Large chains across several states.** **Global Health (Medanta): wait** for a price that fits. **Narayana Hrudayalaya: wait** for the UK and insurance to stop diluting India. **Krishna Inst.Medi (KIMS): wait** for new hospitals to break even, debt to keep falling and the founder's pledge to shrink.",
-            "**What would change my view.** For the better: a market fall that brings Yatharth, Rainbow or Medanta to prices that fit their growth; Yatharth collecting its old receivables and winning its tax appeal; KIMS's new hospitals breaking even early. For the worse: new beds filling more slowly than planned in crowded cities; price controls moving from recommendation to rule; more pledges or related-party dealings.",
-            "**What to watch next quarter.** Yatharth's margin and receivables; Rainbow's occupancy in the busy season; Jupiter's Dombivli and debt; Artemis's Raipur; GPT Healthcare's Raipur and Agartala; Medanta's Noida; Dr Agarwal's new-centre losses; KIMS's Thane and interest cost; Narayana's UK; Shalby's cash.",
+            "**What would change my view.** For the better: a market fall that brings Yatharth, Rainbow or Medanta to prices that fit their growth; Yatharth collecting its old receivables and winning its tax appeal; KIMS's new hospitals breaking even early; HCG's reported margin passing 20% without adjustments. For the worse: new beds filling more slowly than planned in crowded cities; price controls moving from recommendation to rule; more pledges or related-party dealings.",
+            "**What to watch next quarter.** Yatharth's margin and receivables; Rainbow's occupancy in the busy season; Jupiter's Dombivli and debt; Artemis's Raipur; GPT Healthcare's Raipur and Agartala; Medanta's Noida; Dr Agarwal's new-centre losses; HCG's reported margin and option cost; KIMS's Thane and interest cost; Narayana's UK; Shalby's cash.",
         ],
         bottomLine:
-            "No hospital is a buy at today's prices. Follow the fast grower (Yatharth Hospital, the closest to a buy) and the good hospitals priced a little high (Rainbow Children's Medicare, Artemis Medicare, GPT Healthcare); wait on the excellent but expensive and the over-extended (Jupiter Life Line Hospitals, Narayana Hrudayalaya, Global Health (Medanta), Dr Agarwal's Health Care, Krishna Inst.Medi); and pass on Shalby.",
+            "No hospital is a buy at today's prices. Follow the fast grower (Yatharth Hospital, the closest to a buy) and the good hospitals priced a little high (Rainbow Children's Medicare, Artemis Medicare, GPT Healthcare); wait on the excellent but expensive and the over-extended (Jupiter Life Line Hospitals, Narayana Hrudayalaya, Global Health (Medanta), Dr Agarwal's Health Care, HealthCare Global (HCG), Krishna Inst.Medi); and pass on Shalby.",
     },
 
     sources: [
@@ -718,5 +755,11 @@ export const hospitals: SectorOverview = {
         { label: 'KIMS: CRISIL rating rationale, May 2026', url: 'https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/KrishnaInstituteofMedicalSciencesLimited_May%2004_%202026_RR_391682.html' },
         { label: 'Shalby: Q1 FY27 presentation', url: 'https://www.shalby.org/wp-content/uploads/2018/01/39InvestorPresentation.pdf' },
         { label: 'Shalby: ICRA rating rationale, Jul 2026', url: 'https://www.icra.in/Rating/GetRationalReportFilePdf?id=144496' },
+        { label: 'HCG: Q1 FY27 presentation — NSE', url: 'https://nsearchives.nseindia.com/corporate/HCG1_06082026204243_Investor_Presentation_06_August_2026.pdf' },
+        { label: 'HCG: annual report FY26 — NSE', url: 'https://nsearchives.nseindia.com/corporate/HCG1_27082026215424_SE_Intimation_Notice_of_AGM_27_August_2026.pdf' },
+        { label: 'HCG: CARE rating rationale, Jan 2026', url: 'https://www.careratings.com/upload/CompanyFiles/PR/202601130131_Healthcare_Global_Enterprises_Limited.pdf' },
+        { label: 'HCG: ICRA rating rationale, Jun 2026', url: 'https://www.icra.in/Rating/GetRationalReportFilePdf?id=143556' },
+        { label: 'HCG: sale of Milann to Inviga Healthcare Fund — NSE, May 2026', url: 'https://nsearchives.nseindia.com/corporate/HCG1_19052026231046_SE_Intimation_Milann_Divestment.pdf' },
+        { label: 'HCG: suspension of the KR Road ethics committee — NSE, Jun 2026', url: 'https://nsearchives.nseindia.com/corporate/HCG1_17062026235405_SE_Disclosure_Suspension_Order_HCG_KR_Unit_Ethics_Committee_170626.pdf' },
     ],
 };

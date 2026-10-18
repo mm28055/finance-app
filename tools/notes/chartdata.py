@@ -345,6 +345,7 @@ CONFIG = {
         'Artemis Medicare': ('ARTEMISMED', None, None, True),
         'Shalby': ('SHALBY', None, None, True),
         'GPT Healthcare (Agilus)': ('GPTHEALTH_s', None, None, False),
+        'HealthCare Global (HCG)': ('HCG', None, None, True),
     },
     'oil': {
         'Aegis Vopak Terminals': ('AEGISVOPAK', None, None, False),

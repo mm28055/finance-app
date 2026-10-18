@@ -13561,6 +13561,86 @@
    "status": "planned",
    "source": "Q1 FY27 call (6 Oct 2026): agreement not yet signed; Outlook Business, 28 Sep 2026",
    "updatedOn": "2026-10-18"
+  },
+  {
+   "id": "healthcare-global-hcg-north-bangalore",
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "name": "North Bangalore (Hebbal) cancer hospital",
+   "what": "Greenfield cancer hospital for up to 132 beds with an MR-Linac (commissioned July 2026); 56 beds open in Q1 FY27, ₹6.7cr of revenue and a ₹7.0cr operating loss",
+   "cost": "About ₹129cr (about ₹1cr a bed)",
+   "expectedStart": "Q4 FY26",
+   "adds": "Up to 132 beds; management expects monthly break-even in FY27 and 60–65% utilisation in years 3–4",
+   "status": "ramping",
+   "source": "Q1 FY27 call (Aug 2026): 'we have reached the peak EBITDA loss'; NSE filing 19 May 2026",
+   "updatedOn": "2026-10-18",
+   "capacityAdd": "Up to +132 beds (about +5% on 2,855 operational beds)"
+  },
+  {
+   "id": "healthcare-global-hcg-whitefield",
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "name": "Whitefield, Bangalore (second greenfield)",
+   "what": "A second Bangalore cancer hospital of at least 120–130 beds, moved to an alternate site; ₹13.7cr had been spent at the first site",
+   "expectedStart": "Q4 FY28",
+   "adds": "120–130 beds",
+   "status": "planned",
+   "source": "Q1 FY27 call (Aug 2026): one of two greenfields due 'somewhere at the end of FY28'",
+   "updatedOn": "2026-10-18",
+   "capacityAdd": "+120–130 beds (about +4% on 2,855)",
+   "revisions": [
+    {
+     "on": "2026-08-07",
+     "text": "Q1 FY27 call: due around the end of FY28. The Q4 FY26 deck (May 2026) still said FY27, and CARE (January 2026) expected both Bangalore hospitals running by early FY27, so it has slipped about a year."
+    }
+   ]
+  },
+  {
+   "id": "healthcare-global-hcg-brownfield-fy27",
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "name": "Brownfield beds in FY27 (about 188)",
+   "what": "Extra beds in existing hospitals: Ranchi 26, Borivali 19, Nashik 8, Hubli 5 and Kenya 7 added in Q1 FY27; 18 more at the Bangalore centre of excellence during FY27",
+   "cost": "Part of about ₹150cr of FY27 bed capex (about ₹45 lakh a brownfield bed)",
+   "expectedStart": "Q4 FY27",
+   "adds": "About 188 beds in FY27",
+   "status": "started",
+   "source": "Q1 FY27 presentation (slide 12) and call (Aug 2026)",
+   "updatedOn": "2026-10-18",
+   "capacityAdd": "+188 beds (about +7% on 2,855)"
+  },
+  {
+   "id": "healthcare-global-hcg-cuttack-vizag",
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "name": "Cuttack (75 beds) and Vizag (50 beds) expansions",
+   "what": "The two largest brownfield additions, at the Cuttack and Vizag (MG Cancer Hospital) cancer centres",
+   "expectedStart": "H2 FY29",
+   "adds": "125 beds",
+   "status": "planned",
+   "source": "Q1 FY27 presentation (slide 12, Aug 2026): placed in FY28–29",
+   "updatedOn": "2026-10-18",
+   "capacityAdd": "+125 beds (about +4% on 2,855)",
+   "revisions": [
+    {
+     "on": "2026-08-06",
+     "text": "Q1 FY27 presentation places Cuttack and Vizag in FY28–29. In May (Q4 FY26 call) they were part of 200+ brownfield beds promised within 24 months, alongside Ranchi 30, Bhavnagar 20+ and Bangalore ~25; Bhavnagar's timing was not repeated in Q1."
+    }
+   ]
+  },
+  {
+   "id": "healthcare-global-hcg-bed-plan-fy30",
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "name": "Bed plan to FY30 (about 3,670 operational beds)",
+   "what": "+188 beds in FY27, +520 in FY28–29 (180 greenfield) and +230 in FY30: about 370 greenfield and 570 brownfield beds, with three greenfields (Whitefield, one in Maharashtra and one not yet named)",
+   "cost": "About ₹150cr in FY27, ₹300cr over FY28–29 and ₹100cr in FY30, plus about ₹100cr a year of maintenance",
+   "expectedStart": "Q4 FY30",
+   "adds": "About 940 beds, roughly 8% a year against mid-teens revenue growth",
+   "status": "planned",
+   "source": "Q1 FY27 presentation (slide 12) and call (Aug 2026); Q4 FY26 call had said about 1,000 beds by FY30",
+   "updatedOn": "2026-10-18",
+   "capacityAdd": "About +815 net to about 3,670 operational beds (+29% on 2,855)"
   }
  ]
 }

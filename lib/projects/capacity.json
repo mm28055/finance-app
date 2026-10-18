@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14",
+ "updated": "2026-10-18",
  "capacity": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -5168,6 +5168,14 @@
    "fullUse": "Not disclosed in rupees; existing plants add 5–10% volume a year as they fill",
    "capexStatus": "Four boilers (Jhagadia, Nandesari-2, Vapi-3, Pirana; 120 tonnes an hour) for FY27, Tarapur (60) in Q4 FY28 and three IPO-funded boilers (180) in Q1 FY29, taking capacity to 705; about ₹230cr still to spend, and spending on the four under construction is already 17–105% above budget",
    "source": "Prospectus (Sep 2026), Q1 FY27 presentation and call (Oct 2026)"
+  },
+  {
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "today": "3,304 cancer beds of capacity, 2,855 operational and 2,440 revenue beds (including chemo day-beds) at 26 hospitals (25 in India plus Nairobi), with 38 radiotherapy machines (Q1 FY27)",
+   "utilisation": "58% 'centre utilisation' in FY26 (South 68%, West 50%, East 57%); HCG no longer reports occupancy, which CARE put at 68.7% in H1 FY26. About 400 built beds are not yet in use",
+   "capexStatus": "About 188 beds in FY27, 520 in FY28–29 and 230 in FY30, to about 3,670 operational beds; bed capex about ₹150cr in FY27, ₹300cr over FY28–29 and ₹100cr in FY30, plus about ₹100cr a year of maintenance. Whitefield slipped to end-FY28 and Cuttack and Vizag to FY28–29; ₹75cr spent in Q1 FY27",
+   "source": "Q1 FY27 presentation and call (Aug 2026), Q4 FY26 call, CARE (Jan 2026) and sector note"
   }
  ]
 }

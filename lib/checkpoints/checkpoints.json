@@ -32911,6 +32911,94 @@
    "createdOn": "2026-10-18",
    "status": "pending",
    "project": "steamhouse-india-una-bulk-drug-park"
+  },
+  {
+   "id": "healthcare-global-hcg-q2fy27-1",
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "text": "Operating margin at least 19% on Screener's operating basis (the reported figure, not the company's 'adjusted' one; rent sits below this line), level with Q2 FY26 despite North Bangalore's losses and the first charge for the new options",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 19,
+   "due": "Q2 FY27",
+   "ifMet": "The margin recovery is showing up in the reported numbers, not just the adjusted ones",
+   "ifMissed": "The 'adjusted' margin gains are not reaching reported profit; the path to 21–22% looks less likely",
+   "createdOn": "2026-10-18",
+   "status": "pending"
+  },
+  {
+   "id": "healthcare-global-hcg-q2fy27-2",
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "text": "Revenue growth at least 12% (the 'mid-teens' guide less about 2.5 points for the sold Milann business)",
+   "metric": "revenueYoY",
+   "op": ">=",
+   "target": 12,
+   "due": "Q2 FY27",
+   "ifMet": "Growth is holding near the guide after pruning low-margin work",
+   "ifMissed": "Growth is slipping further below the mid-teens guide, as in Q1 (13%)",
+   "createdOn": "2026-10-18",
+   "status": "pending"
+  },
+  {
+   "id": "healthcare-global-hcg-q2fy27-3",
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "text": "North Bangalore's operating loss below Q1's ₹7cr, as management said the loss has peaked",
+   "due": "Q2 FY27",
+   "ifMissed": "The new hospital is filling more slowly than promised",
+   "createdOn": "2026-10-18",
+   "status": "pending"
+  },
+  {
+   "id": "healthcare-global-hcg-q2fy27-4",
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "text": "Government-scheme share of India revenue at or below Q1's 31%, with no new hit from CGHS price caps",
+   "due": "Q2 FY27",
+   "ifMissed": "Pricing pressure from government schemes is growing",
+   "createdOn": "2026-10-18",
+   "status": "pending"
+  },
+  {
+   "id": "healthcare-global-hcg-north-bangalore-m1",
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "text": "North Bangalore reaches monthly operating break-even ('in this year')",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-18",
+   "status": "pending",
+   "project": "healthcare-global-hcg-north-bangalore"
+  },
+  {
+   "id": "healthcare-global-hcg-brownfield-fy27-m1",
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "text": "About 188 beds added in FY27, including 18 at the Bangalore centre of excellence",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-18",
+   "status": "pending",
+   "project": "healthcare-global-hcg-brownfield-fy27"
+  },
+  {
+   "id": "healthcare-global-hcg-whitefield-m1",
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "text": "Whitefield hospital opens ('somewhere at the end of FY28')",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-18",
+   "status": "pending",
+   "project": "healthcare-global-hcg-whitefield"
+  },
+  {
+   "id": "healthcare-global-hcg-cuttack-vizag-m1",
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "text": "Cuttack (75 beds) and Vizag (50 beds) expansions open, as now scheduled for FY28–29",
+   "due": "Q4 FY29",
+   "createdOn": "2026-10-18",
+   "status": "pending",
+   "project": "healthcare-global-hcg-cuttack-vizag"
   }
  ]
 }

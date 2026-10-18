@@ -1069,6 +1069,90 @@ export const hospitalsCharts: Record<string, ProfileCharts> = {
             "inventory5y": -5,
             "payables5y": 18
         }
+    },
+    "HealthCare Global (HCG)": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 27
+                },
+                {
+                    "label": "Power and factory costs",
+                    "share": 29
+                },
+                {
+                    "label": "Staff",
+                    "share": 15
+                },
+                {
+                    "label": "Other costs",
+                    "share": 10
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 18
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                234.0,
+                297.0,
+                327.0,
+                384.0,
+                459.0
+            ],
+            "ocf": [
+                220.0,
+                252.0,
+                285.0,
+                317.0,
+                347.0
+            ],
+            "fcf": [
+                149.0,
+                119.0,
+                99.0,
+                108.0,
+                55.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "182.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "20.8x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹1,180cr",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "84%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "18%"
+            }
+        ],
+        "statsAsOf": "18 Oct 2026"
     }
 };
 
@@ -1133,5 +1217,11 @@ export const hospitalsValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 91.0,
         "mcapAtWriting": 1325.0,
         "peAtWriting": 28.0
+    },
+    "HealthCare Global (HCG)": {
+        "netDebt": 1180,
+        "ttmEbitda": 480.0,
+        "mcapAtWriting": 8782.0,
+        "peAtWriting": 182.0
     }
 };

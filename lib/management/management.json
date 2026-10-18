@@ -35289,6 +35289,71 @@
     "https://steamhouse.in/"
    ],
    "updatedOn": "2026-10-18"
+  },
+  {
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "style": "Professional",
+   "styleNote": "Controlled by KKR: its vehicle Hector Asia bought 54.3% from CVC on 30 May 2025 at ₹445 a share, and with founder Dr B.S. Ajaikumar (9.3%) the promoter group holds 64.2%. A hired CEO, Dr Manish Mattoo (formerly of Apollo), runs the business; the founder is non-executive chairman and is also paid as a consultant. The ten-member board has two KKR nominees (Akshay Tanna and Simrun Mehta), the founder, his daughter Anjali Ajaikumar Rossi, the CEO and five independent directors (Geeta Mathur, Rajagopalan Raghavan, Pradip Kanakia, Rajiv Maliwal and Bijou Kurien); Pradip Kanakia also sits on the board of ICRA, which rates HCG. There is no pledge, but KKR's HSBC acquisition loan carries an undertaking not to sell its shares. As a private-equity owner, KKR is expected to sell within a few years; the new 2026 option scheme lets options vest early on a change of control.",
+   "people": [
+    {
+     "name": "Dr B.S. Ajaikumar",
+     "role": "Non-Executive Chairman",
+     "since": "Founder; CEO from 2005 to January 2021; non-executive since mid-2025",
+     "family": true,
+     "relation": "Founder and promoter; father of director Anjali Ajaikumar Rossi",
+     "stake": "9.30% (FY26 annual report)",
+     "bio": "A radiation and medical oncologist with an MBBS from St John's Medical College, Bangalore, and residencies in radiotherapy at MD Anderson (University of Texas) and in oncology at the University of Virginia. He practised in the US and India for over four decades and built HCG from a Bengaluru cancer centre into a national chain. In FY26 he received ₹2.57cr of medical consultancy charges and ₹2.0cr of professional fees, on top of ₹1.0cr of salary for April–May 2025. His Inviga Healthcare Fund I bought HCG's Milann fertility business in June 2026."
+    },
+    {
+     "name": "Dr Manish Mattoo",
+     "role": "Executive Director & Chief Executive Officer",
+     "since": "Mid-2025, after KKR took control; also interim CFO from December 2025 to May 2026",
+     "family": false,
+     "bio": "Trained as a doctor (MBBS and MD in anaesthesiology, BJ Medical College, Ahmedabad) and holds an MBA from the Indian School of Business. He has over two decades in healthcare management: Regional CEO for Karnataka and the Central Region at Apollo Hospitals, Vice President at Fortis Healthcare, and roles at Medtronic and Monitor Group. He practised earlier at PGI Chandigarh and Civil Hospital, Ahmedabad."
+    },
+    {
+     "name": "Sanjeev Kumar",
+     "role": "Chief Financial Officer",
+     "since": "May 2026",
+     "family": false,
+     "bio": "A chartered accountant and company secretary from Shri Ram College of Commerce, Delhi, with over 30 years in finance. He was Group CFO of Medanta (Global Health), where he led its IPO, Group CFO of InterGlobe Enterprises, and held senior finance roles at Bharti Airtel."
+    },
+    {
+     "name": "Akshay Tanna",
+     "role": "Non-Executive Director (KKR nominee)",
+     "since": "2025, after KKR took control",
+     "family": false,
+     "relation": "Represents KKR (Hector Asia), which owns 54.27%",
+     "bio": "Partner and Head of India Private Equity at KKR, which he joined in Mumbai in 2023 after more than 13 years at TPG, latterly as a Partner. He began in investment banking at Merrill Lynch and Deutsche Bank in New York and London, and has a BS in economics from Wharton. He also sits on the boards of J B Chemicals, Baby Memorial Hospital, Healthium Medtech, Avendus Capital and others."
+    },
+    {
+     "name": "Simrun Mehta",
+     "role": "Non-Executive Director (KKR nominee)",
+     "since": "2025, after KKR took control",
+     "family": false,
+     "relation": "Represents KKR (Hector Asia)",
+     "bio": "Managing Director in KKR's private-equity team, which she joined in 2012; she leads its Indian consumer, retail and hospital investments. She earlier worked at Nomura and Lehman Brothers and has a BA (Hons) in mathematics from St Stephen's College, Delhi. She is also on the boards of Baby Memorial Hospital, Vini Cosmetics and Avendus Capital."
+    },
+    {
+     "name": "Anjali Ajaikumar Rossi",
+     "role": "Non-Executive Director",
+     "since": "With HCG since 2009",
+     "family": true,
+     "relation": "Daughter of the chairman",
+     "bio": "Holds an MBA in entrepreneurship from Babson College. At HCG she helped set up central quality, clinical-excellence, operations and nursing teams and oversaw the Milann fertility centres, which were sold in June 2026 to a fund controlled by her father. She also supports the HCG Foundation and is on the board of Bharath Hospital and Institute of Oncology, Mysore."
+    }
+   ],
+   "changes": "KKR took control from CVC on 30 May 2025, and Dr Manish Mattoo replaced Meghraj (Raj) Gore as CEO; Mr Gore received ₹17.1cr when HCG bought back vested options for ₹58.1cr. The CFO resigned on 2 September 2025, the CEO doubled as interim CFO from 1 December 2025, and Sanjeev Kumar joined as CFO on 25 May 2026. New internal auditors were appointed in December 2025 and again in May 2026. Independent director Rajiv Maliwal was reappointed in May 2026.",
+   "sources": [
+    "https://hcghospitals.com/board-of-directors",
+    "https://hcghospitals.com/management-team",
+    "https://nsearchives.nseindia.com/corporate/HCG1_27082026215424_SE_Intimation_Notice_of_AGM_27_August_2026.pdf",
+    "https://nsearchives.nseindia.com/corporate/HCG1_05102026191738_Letter_to_NSE_SHP_5_Oct_2026.pdf",
+    "https://nsearchives.nseindia.com/corporate/HCG1_19052026231046_SE_Intimation_Milann_Divestment.pdf",
+    "https://scanx.trade/stock-market-news/companies/hcg-re-appoints-rajiv-maliwal-appoints-sanjeev-kumar-cfo/40762799"
+   ],
+   "updatedOn": "2026-10-18"
   }
  ]
 }
