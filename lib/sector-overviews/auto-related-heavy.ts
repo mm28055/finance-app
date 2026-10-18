@@ -9,11 +9,10 @@ const FY = ['FY22', 'FY23', 'FY24', 'FY25', 'FY26'];
 // Segment labels. The metric grid, the moat table and the company cards are grouped by these.
 const TRUCK = 'Truck braking, axles and wheels';
 const OFFHWY = 'Tractor and off-highway drivetrain and linkages';
-const RAIL = 'Rail springs';
 
 export const autoRelatedHeavy: SectorOverview = {
     sector: 'Auto Related',
-    title: 'Auto Related · CV, tractor, off-highway and rail systems',
+    title: 'Auto Related · CV, tractor and off-highway systems',
     format: 'ranked',
     businesses: autoRelatedHeavyBusinesses,
     moatCompact: true,
@@ -30,11 +29,10 @@ export const autoRelatedHeavy: SectorOverview = {
             'Steel Strips Wheels': 14,
             'Wheels India': 15,
             'Kross': 15,
-            'Frontier Springs': 10,
         },
     },
     standfirst:
-        "Eight companies that make heavy parts for trucks, trailers, tractors, construction machines and trains. This is one of five groups on the Auto Related page; the others cover EV, electronics and electrical content, batteries and brand-led replacement, forgings, castings and precision metal parts, and vehicle systems for two-wheeler and car makers. Five serve **trucks**: **ZF CV Control Systems** (formerly WABCO India, about 80% of Indian truck braking), **Automotive Axles** (rear drive axles, mostly for Ashok Leyland), the two big wheel makers **Wheels India** and **Steel Strips Wheels**, and **Kross** (trailer axles and forged truck parts). Two serve **tractors and off-highway machines**: **Carraro India** (axles and transmissions) and **Uniparts India** (tractor hitches and precision pins, sold mostly in the US and Europe). One, **Frontier Springs**, makes coil and air springs for Indian Railways. This edition was built from the last two earnings calls for every company (Wheels India and Frontier hold calls only twice a year), the Q1 FY27 presentations, the FY26 annual reports, rating reports from ICRA, India Ratings and CRISIL, and sector work from ACMA, CRISIL, ICRA and CareEdge. The headline: truck demand was at a record in Q1 FY27, but ICRA expects domestic truck volumes to fall in the second half, so this note judges each company on content per vehicle, new products and exports rather than the latest quarter. The annual reports and calls turned up about ₹900cr of bill discounting and factoring at the two wheel makers that their reported borrowings leave out, Wheels India selling new shares to its promoters at ₹1,461 a share, four days before institutions paid ₹2,088, a ₹210cr income-tax dispute and rising parent fees at Carraro, a co-promoter of Automotive Axles owning a competing axle business, auditors noting that Kross's figures to its banks did not match its books, and Frontier's history of not co-operating with CRISIL.",
+        "Seven companies that make heavy parts for trucks, trailers, tractors and construction machines. This is one of five groups on the Auto Related page; the others cover EV, electronics and electrical content, batteries and brand-led replacement, forgings, castings and precision metal parts, and vehicle systems for two-wheeler and car makers. Five serve **trucks**: **ZF CV Control Systems** (formerly WABCO India, about 80% of Indian truck braking), **Automotive Axles** (rear drive axles, mostly for Ashok Leyland), the two big wheel makers **Wheels India** and **Steel Strips Wheels**, and **Kross** (trailer axles and forged truck parts). Two serve **tractors and off-highway machines**: **Carraro India** (axles and transmissions) and **Uniparts India** (tractor hitches and precision pins, sold mostly in the US and Europe). This edition was built from the last two earnings calls for every company (Wheels India holds calls only twice a year), the Q1 FY27 presentations, the FY26 annual reports, rating reports from ICRA, India Ratings and CRISIL, and sector work from ACMA, CRISIL, ICRA and CareEdge. The headline: truck demand was at a record in Q1 FY27, but ICRA expects domestic truck volumes to fall in the second half, so this note judges each company on content per vehicle, new products and exports rather than the latest quarter. The annual reports and calls turned up about ₹900cr of bill discounting and factoring at the two wheel makers that their reported borrowings leave out, Wheels India selling new shares to its promoters at ₹1,461 a share, four days before institutions paid ₹2,088, a ₹210cr income-tax dispute and rising parent fees at Carraro, a co-promoter of Automotive Axles owning a competing axle business, and auditors noting that Kross's figures to its banks did not match its books.",
     lastUpdated: '2026-09-28',
     asOfQuarter: 'Q1 FY27',
 
@@ -45,8 +43,8 @@ export const autoRelatedHeavy: SectorOverview = {
             unit: '%',
             periods: Q,
             scale: 'sequential',
-            source: 'Filed quarterly results (Screener). Operating profit ÷ revenue. Consolidated unless noted; Automotive Axles, Kross and Frontier Springs have no consolidated page and are standalone.',
-            note: 'Three margin levels. Frontier (24–29%) and Uniparts (19–24%) earn the most: Frontier on railway tenders it won as one of very few approved suppliers, Uniparts on a warehouse model that charges global customers for delivery on demand. ZF earns 13–19% on braking technology and an 80% share. The axle and wheel makers, and Carraro, earn 7–15% because metal is two-thirds of their costs and is passed on at cost. Q1 FY27 was mixed: ZF fell to 13% as aluminium rose faster than it could recover the cost, Carraro to 8% on supplier premiums and emergency imports, and Kross and Frontier slipped on delayed customer settlements and a gas shortage; Steel Strips rose on its first price increases in two decades.',
+            source: 'Filed quarterly results (Screener). Operating profit ÷ revenue. Consolidated unless noted; Automotive Axles and Kross have no consolidated page and are standalone.',
+            note: 'Three margin levels. Uniparts (19–24%) earns the most, on a warehouse model that charges global customers for delivery on demand. ZF earns 13–19% on braking technology and an 80% share. The axle and wheel makers, and Carraro, earn 7–15% because metal is two-thirds of their costs and is passed on at cost. Q1 FY27 was mixed: ZF fell to 13% as aluminium rose faster than it could recover the cost, Carraro to 8% on supplier premiums and emergency imports, and Kross slipped on delayed customer settlements; Steel Strips rose on its first price increases in two decades.',
             values: {
                 'ZF Comm Vehic Contr': [14, 15, 19, 16, 13],
                 'Steel Strips Wheels': [10, 9, 10, 10, 11],
@@ -55,7 +53,6 @@ export const autoRelatedHeavy: SectorOverview = {
                 'Carraro India': [10, 9, 10, 10, 8],
                 'Auto.Axle': [10, 10, 11, 12, 12],
                 'Kross': [12, 11, 13, 15, 12],
-                'Frontier Springs': [27, 27, 25, 29, 24],
             },
             cellNotes: {
                 'ZF Comm Vehic Contr': 'Q3 FY26 was lifted by retrospective price settlements with truck makers (content per vehicle ₹45,500 against ₹39,500 in Q4). Q1 FY27 fell to 13% as aluminium rose from about ₹260 to over ₹360 a kilo; a price rise took effect in July.',
@@ -64,7 +61,6 @@ export const autoRelatedHeavy: SectorOverview = {
                 'Uniparts India': 'The company’s headline Q1 FY27 margin (25.9%) includes ₹7.8cr of other income; its operating figure is 23.6%. Material cost was 33.3% of sales against a normal 34–37%, and a weak rupee added about 2% of sales in Q2 and Q4 FY26.',
                 'Wheels India': 'Q3 FY26 carries a ₹26.16cr stock provision under a stricter new rule, plus warranty and asset write-offs. Company Q1 FY27 margin 7.79%.',
                 'Kross': 'Standalone. Q1 FY27 dipped because truck makers settle steel and conversion-cost increases retrospectively, about a quarter late; the steel settlement came in mid-July.',
-                'Frontier Springs': 'Standalone. Q1 FY27 was hit by an industrial-gas shortage and late deliveries of air-spring bellows; management guides 23–24% for FY27.',
                 'Steel Strips Wheels': 'Q1 FY27 includes 1–5% price increases from car makers for non-metal costs; EBITDA per wheel was ₹314 against ₹262 a year earlier (company).',
             },
         },
@@ -74,8 +70,8 @@ export const autoRelatedHeavy: SectorOverview = {
             unit: '%',
             periods: Q,
             scale: 'diverging',
-            source: 'Filed quarterly revenue, each quarter against the same quarter a year earlier. Consolidated unless noted; Automotive Axles, Kross and Frontier Springs are standalone.',
-            note: 'The truck upturn after the September 2025 GST cut shows from Q3 FY26: Steel Strips, Wheels India and Kross grew 18–32% in the last three quarters. Uniparts grew 27–35% even though large-tractor demand in the US and Europe was still falling, because construction customers ordered more. Automotive Axles grew slowest, as more of the truck market was buses, where it has no current axle. Frontier’s growth faded from 47–60% to 4% as railway deliveries plateaued at about ₹80cr a quarter. Part of the wheel makers’ growth is higher steel and aluminium prices passed on.',
+            source: 'Filed quarterly revenue, each quarter against the same quarter a year earlier. Consolidated unless noted; Automotive Axles and Kross are standalone.',
+            note: 'The truck upturn after the September 2025 GST cut shows from Q3 FY26: Steel Strips, Wheels India and Kross grew 18–32% in the last three quarters. Uniparts grew 27–35% even though large-tractor demand in the US and Europe was still falling, because construction customers ordered more. Automotive Axles grew slowest, as more of the truck market was buses, where it has no current axle. Part of the wheel makers’ growth is higher steel and aluminium prices passed on.',
             values: {
                 'ZF Comm Vehic Contr': [3, 0, 12, 14, 9],
                 'Steel Strips Wheels': [16, 10, 23, 20, 27],
@@ -84,7 +80,6 @@ export const autoRelatedHeavy: SectorOverview = {
                 'Carraro India': [4, 33, 27, 37, 11],
                 'Auto.Axle': [-1, -7, 6, 19, 6],
                 'Kross': [-5, -6, 18, 22, 32],
-                'Frontier Springs': [47, 60, 40, 19, 4],
             },
             cellNotes: {
                 'ZF Comm Vehic Contr': 'Sales only; the dashboard’s figures include other income. Q1 FY27: truck makers +8.6%, aftermarket +15.6%, goods exports +9.7%, services +12.5%.',
@@ -92,7 +87,6 @@ export const autoRelatedHeavy: SectorOverview = {
                 'Carraro India': 'Q1 FY27: domestic +26%, exports −14% on container and ship shortages. Exports go almost entirely to the Carraro parent group.',
                 'Uniparts India': 'Q3–Q4 FY26 grew against a trough a year earlier; a weak rupee added about 2% of sales in Q2 and Q4 FY26.',
                 'Kross': 'Standalone. Trailer-axle volume rose 34% in Q1 FY27, with orders spilling over from a capacity-limited Q4.',
-                'Frontier Springs': 'Standalone. Q1 FY27 lost output to a gas shortage and late bellows deliveries.',
                 'Steel Strips Wheels': 'Exports fell 21% in Q1 FY27 (₹127cr) after US tariffs; domestic car and tractor demand rose after the GST cut.',
             },
         },
@@ -103,8 +97,8 @@ export const autoRelatedHeavy: SectorOverview = {
             periods: FY,
             scale: 'diverging',
             legend: ['Losing money', 'Making money'],
-            source: 'Filed annual ratios (Screener): return on capital employed. Consolidated unless noted; Automotive Axles, Kross and Frontier Springs are standalone.',
-            note: 'Frontier’s 51% comes from a small plant base (net fixed assets of ₹65.5cr against ₹322cr of sales) and margins that rose from 16% to 27%. Carraro rose from 17% to 29% as 4WD tractor and backhoe-loader volumes filled its plants. Wheels India climbed steadily from 11% to 19% as its margin recovered. Kross fell from 33% to 16% after raising IPO money and spending ₹100cr on plants not yet earning. ZF’s 19% is held down by about ₹2,175cr of cash; Steel Strips’ 15% by heavy debt and a new plant bought in insolvency.',
+            source: 'Filed annual ratios (Screener): return on capital employed. Consolidated unless noted; Automotive Axles and Kross are standalone.',
+            note: 'Carraro rose from 17% to 29% as 4WD tractor and backhoe-loader volumes filled its plants. Wheels India climbed steadily from 11% to 19% as its margin recovered. Kross fell from 33% to 16% after raising IPO money and spending ₹100cr on plants not yet earning. ZF’s 19% is held down by about ₹2,175cr of cash; Steel Strips’ 15% by heavy debt and a new plant bought in insolvency.',
             values: {
                 'ZF Comm Vehic Contr': [null, 19, 21, 20, 19],
                 'Steel Strips Wheels': [null, 21, 17, 15, 15],
@@ -113,7 +107,6 @@ export const autoRelatedHeavy: SectorOverview = {
                 'Carraro India': [null, 17, 19, 23, 29],
                 'Auto.Axle': [17, 31, 27, 22, 22],
                 'Kross': [16, 31, 33, 22, 16],
-                'Frontier Springs': [15, 14, 21, 42, 51],
             },
             cellNotes: {
                 'ZF Comm Vehic Contr': 'No FY22 figure on Screener’s consolidated page. Net cash of about ₹2,175cr, about half of it in bank deposits, dilutes the return.',
@@ -122,7 +115,6 @@ export const autoRelatedHeavy: SectorOverview = {
                 'Uniparts India': 'FY25’s 12% was the trough of the global tractor cycle; the company quotes a trailing return above 27% on its own definition.',
                 'Kross': 'Standalone. Diluted by IPO cash (September 2024) and ₹100cr of FY26 capex that is not yet earning.',
                 'Auto.Axle': 'Standalone.',
-                'Frontier Springs': 'Standalone. The company quotes 43.6%.',
             },
         },
         {
@@ -133,7 +125,7 @@ export const autoRelatedHeavy: SectorOverview = {
             periods: FY,
             scale: 'diverging',
             lowerIsBetter: true,
-            source: 'Filed annual ratios (Screener): debtor days + inventory days − payable days. Consolidated unless noted; Automotive Axles, Kross and Frontier Springs are standalone.',
+            source: 'Filed annual ratios (Screener): debtor days + inventory days − payable days. Consolidated unless noted; Automotive Axles and Kross are standalone.',
             note: 'Uniparts ties up the most cash by design: it keeps five to six months of stock in its US, European and Mexican warehouses so customers can order on demand. Kross’s cycle doubled from 74 to 153 days as receivables and stock grew. The two wheel makers look best, but only because their payables include supplier bills that banks have paid early: Wheels India’s ₹469cr of bill discounting takes its cycle below zero, and Steel Strips uses ₹400–500cr of factoring. ZF’s improved as its parent group paid down ₹245cr it owed.',
             values: {
                 'ZF Comm Vehic Contr': [49, 47, 57, 80, 56],
@@ -143,14 +135,12 @@ export const autoRelatedHeavy: SectorOverview = {
                 'Carraro India': [0, 15, 28, 45, 38],
                 'Auto.Axle': [49, 60, 52, 59, 52],
                 'Kross': [112, 74, 100, 139, 153],
-                'Frontier Springs': [139, 97, 111, 92, 119],
             },
             cellNotes: {
                 'Uniparts India': 'Screener measures stock against cost of materials, which is low here; the company’s own measure is 136 days of revenue at March 2026, down from 155.',
                 'Wheels India': 'Payables include ₹469cr of supplier bill discounting and ₹23.1cr of buyers’ credit; the company counts these as debt internally.',
                 'Steel Strips Wheels': 'Helped by ₹400–500cr of factoring that is not in reported debt, and long supplier credit; the aluminium spike tied up about ₹150cr more working capital in Q1 FY27.',
                 'Kross': 'Standalone. This is after ₹34.9cr of receivables discounted with banks; India Ratings puts the cycle at 175 days.',
-                'Frontier Springs': 'Standalone. FY26 rose because payable days fell from 94 to 33 while receivables grew from ₹38cr to ₹61cr.',
                 'ZF Comm Vehic Contr': 'FY25’s 80 days included ₹437cr due from ZF’s global braking arm, cut to ₹192cr in FY26.',
                 'Auto.Axle': 'Standalone. Debtor days rose from 60 to 82 after it began billing truck makers directly.',
             },
@@ -162,8 +152,8 @@ export const autoRelatedHeavy: SectorOverview = {
             periods: [...FY, '5 yrs'],
             scale: 'diverging',
             legend: ['Cash lagging profit', 'Cash following profit'],
-            source: 'Filed cash-flow statements and P&L (Screener). The last column uses all five years. Consolidated unless noted; Automotive Axles, Kross and Frontier Springs are standalone.',
-            note: 'Wheels India (106% over five years), Uniparts (77%), Steel Strips (76%) and Carraro (73%) turn the most operating profit into cash, although the wheel makers are helped by bill discounting and factoring. ZF’s FY26 figure of 123% is a one-time catch-up of money owed by its parent group. Kross (31%) and Frontier (46%) convert poorly: both are growing receivables and stock faster than profit, and Kross is funding a large expansion at the same time.',
+            source: 'Filed cash-flow statements and P&L (Screener). The last column uses all five years. Consolidated unless noted; Automotive Axles and Kross are standalone.',
+            note: 'Wheels India (106% over five years), Uniparts (77%), Steel Strips (76%) and Carraro (73%) turn the most operating profit into cash, although the wheel makers are helped by bill discounting and factoring. ZF’s FY26 figure of 123% is a one-time catch-up of money owed by its parent group. Kross converts poorly (31%): it is growing receivables and stock faster than profit while funding a large expansion.',
             values: {
                 'ZF Comm Vehic Contr': [55, 63, 34, 45, 123, 67],
                 'Steel Strips Wheels': [90, 79, 42, 107, 65, 76],
@@ -172,13 +162,11 @@ export const autoRelatedHeavy: SectorOverview = {
                 'Carraro India': [160, 76, 85, 44, 62, 73],
                 'Auto.Axle': [32, 20, 106, 58, 73, 60],
                 'Kross': [60, 72, 10, 11, 32, 31],
-                'Frontier Springs': [83, 77, 57, 44, 36, 46],
             },
             cellNotes: {
                 'ZF Comm Vehic Contr': 'FY26 operating cash of ₹810cr includes about ₹245cr collected from ZF’s global braking arm; normal years run at 35–65%.',
                 'Wheels India': 'Helped by supplier bill discounting (₹469cr at March 2026), which delays the cash leaving.',
                 'Kross': 'Standalone. FY26 operating cash ₹28cr against ₹88cr of operating profit; India Ratings expects free cash to stay negative in FY27.',
-                'Frontier Springs': 'Standalone. Surplus cash goes into mutual funds (₹38.6cr) and listed shares (₹6.1cr) rather than dividends.',
                 'Auto.Axle': 'Standalone.',
             },
         },
@@ -189,7 +177,7 @@ export const autoRelatedHeavy: SectorOverview = {
             periods: [...FY, '5 yrs'],
             scale: 'diverging',
             legend: ['Burning cash', 'Generating cash'],
-            source: 'Filed cash-flow statements (Screener): operating cash minus spending on fixed assets, as a share of revenue. Consolidated unless noted; Automotive Axles, Kross and Frontier Springs are standalone.',
+            source: 'Filed cash-flow statements (Screener): operating cash minus spending on fixed assets, as a share of revenue. Consolidated unless noted; Automotive Axles and Kross are standalone.',
             note: 'Uniparts is in a class of its own, with free cash of 12.4% of revenue over five years and 12–16% in each of the last four; it paid out 108% of FY26 profit. ZF and Automotive Axles average about 5%. Kross is the only company burning cash, −10.7% of revenue in FY26, as it builds a seamless-tube plant. Steel Strips and Wheels India produce little because they spend heavily, and both are about to spend more: about ₹600cr and ₹400–450cr in FY27.',
             values: {
                 'ZF Comm Vehic Contr': [-1.5, 4.9, -0.1, 3.1, 16.1, 5.1],
@@ -199,7 +187,6 @@ export const autoRelatedHeavy: SectorOverview = {
                 'Carraro India': [2.4, 1.0, 1.5, 1.3, 4.6, 2.3],
                 'Auto.Axle': [1.4, 1.5, 10.8, 4.9, 4.6, 4.9],
                 'Kross': [2.0, 4.7, -3.1, -3.1, -10.7, -3.0],
-                'Frontier Springs': [4.6, 1.4, 3.1, 3.1, 5.1, 3.8],
             },
             cellNotes: {
                 'ZF Comm Vehic Contr': 'FY26’s 16.1% is the one-time collection from the parent group; FY27 capex rises to ₹180–190cr.',
@@ -217,8 +204,8 @@ export const autoRelatedHeavy: SectorOverview = {
             scale: 'diverging',
             invert: true,
             legend: ['More debt', 'Net cash'],
-            source: 'Filed balance sheets and P&L (Screener): borrowings minus cash and treasury investments, ÷ operating profit. Consolidated unless noted; Automotive Axles, Kross and Frontier Springs are standalone.',
-            note: 'Four hold net cash: ZF (about ₹2,175cr), Automotive Axles, Uniparts and Frontier. The two wheel makers carry the most debt, and more than this chart shows: neither figure counts supplier bill discounting or factoring. Wheels India counts these as debt internally: about ₹1,200cr in all (₹710cr of loans at June plus ₹469cr of bill discounting and ₹23cr of buyers’ credit), against ₹686cr of net debt on Screener at March, and Steel Strips uses ₹400–500cr of factoring on top of about ₹826cr of loans. Kross moved from net cash to a little debt as it spent its IPO money.',
+            source: 'Filed balance sheets and P&L (Screener): borrowings minus cash and treasury investments, ÷ operating profit. Consolidated unless noted; Automotive Axles and Kross are standalone.',
+            note: 'Three hold net cash: ZF (about ₹2,175cr), Automotive Axles and Uniparts. The two wheel makers carry the most debt, and more than this chart shows: neither figure counts supplier bill discounting or factoring. Wheels India counts these as debt internally: about ₹1,200cr in all (₹710cr of loans at June plus ₹469cr of bill discounting and ₹23cr of buyers’ credit), against ₹686cr of net debt on Screener at March, and Steel Strips uses ₹400–500cr of factoring on top of about ₹826cr of loans. Kross moved from net cash to a little debt as it spent its IPO money.',
             values: {
                 'ZF Comm Vehic Contr': [-4.2, -2.7, -2.3, -2.3, -3.3],
                 'Steel Strips Wheels': [1.6, 1.3, 2.2, 1.7, 1.6],
@@ -227,7 +214,6 @@ export const autoRelatedHeavy: SectorOverview = {
                 'Carraro India': [1.3, 0.8, 0.8, 0.7, 0.3],
                 'Auto.Axle': [-0.6, -0.1, -0.3, -0.5, -1.6],
                 'Kross': [2.8, 1.3, 1.3, -0.7, 0.3],
-                'Frontier Springs': [-1.0, -0.9, -0.8, -0.5, -0.5],
             },
             cellNotes: {
                 'Wheels India': 'Excludes ₹469cr of bill discounting and ₹23.1cr of buyers’ credit; including them the company puts debt at 2.88 times EBITDA at March 2026 (FY26) and 2.75 times at June (Q1 FY27). A ₹250cr share placement in September 2026 is to repay borrowings.',
@@ -235,7 +221,6 @@ export const autoRelatedHeavy: SectorOverview = {
                 'Kross': 'Standalone. Adding ₹34.9cr of recourse bill discounting, India Ratings puts net adjusted debt at 0.72 times EBITDA for FY26; FY25 was net cash after the IPO.',
                 'Uniparts India': 'Net cash was ₹160cr at March 2026 and ₹190cr at June (company).',
                 'Auto.Axle': 'Standalone. ICRA counted ₹403cr of cash and liquid investments in September 2025.',
-                'Frontier Springs': 'Standalone. Counts ₹38.6cr of mutual funds as cash; borrowings were ₹10.8cr.',
             },
         },
         {
@@ -245,8 +230,8 @@ export const autoRelatedHeavy: SectorOverview = {
             unit: '%',
             periods: [...FY, '5 yrs'],
             scale: 'sequential',
-            source: 'Filed cash-flow statements (Screener): spending on fixed assets as a share of revenue. Consolidated unless noted; Automotive Axles, Kross and Frontier Springs are standalone.',
-            note: 'Kross spent 14.9% of revenue in FY26 on a seamless-tube plant, an axle-beam extrusion line and tipping jacks. Steel Strips (5.1% over five years) and Frontier (5.9%) spend the most otherwise. Automotive Axles (1.5%) and Uniparts (2.8%) need very little: an axle plant turns about ten times its fixed assets into sales. FY27 is a step up almost everywhere: Steel Strips about ₹600cr, Wheels India ₹400–450cr, ZF ₹180–190cr, Carraro ₹130–140cr and Kross about ₹120cr.',
+            source: 'Filed cash-flow statements (Screener): spending on fixed assets as a share of revenue. Consolidated unless noted; Automotive Axles and Kross are standalone.',
+            note: 'Kross spent 14.9% of revenue in FY26 on a seamless-tube plant, an axle-beam extrusion line and tipping jacks. Steel Strips (5.1% over five years) spends the most otherwise. Automotive Axles (1.5%) and Uniparts (2.8%) need very little: an axle plant turns about ten times its fixed assets into sales. FY27 is a step up almost everywhere: Steel Strips about ₹600cr, Wheels India ₹400–450cr, ZF ₹180–190cr, Carraro ₹130–140cr and Kross about ₹120cr.',
             values: {
                 'ZF Comm Vehic Contr': [6.9, 3.7, 5.2, 4.3, 3.5, 4.6],
                 'Steel Strips Wheels': [4.7, 3.4, 8.8, 4.8, 3.7, 5.1],
@@ -255,7 +240,6 @@ export const autoRelatedHeavy: SectorOverview = {
                 'Carraro India': [4.0, 3.7, 4.8, 2.9, 1.4, 3.2],
                 'Auto.Axle': [1.5, 0.7, 0.9, 1.3, 3.4, 1.5],
                 'Kross': [4.0, 3.9, 4.4, 4.5, 14.9, 6.9],
-                'Frontier Springs': [7.3, 8.0, 5.8, 6.4, 4.5, 5.9],
             },
             cellNotes: {
                 'Steel Strips Wheels': 'FY27: about ₹420cr at Bhuj (alloy wheels and knuckles), ₹150cr for a new steel-wheel line and about ₹80cr of other spending.',
@@ -270,9 +254,9 @@ export const autoRelatedHeavy: SectorOverview = {
 
     moat: {
         sources: [
-            { key: 'share', label: 'Share and approvals', description: 'Share of the Indian market, and customer or railway approvals that take a rival years to win.' },
+            { key: 'share', label: 'Share and approvals', description: 'Share of the Indian market, and customer approvals that take a rival years to win.' },
             { key: 'content', label: 'Content and technology', description: 'Rising content per vehicle from safety rules or new products, and technology a rival cannot copy quickly.' },
-            { key: 'pricing', label: 'Pricing power', description: 'Passing on steel and aluminium quickly, and winning price rises from vehicle makers and tender buyers.' },
+            { key: 'pricing', label: 'Pricing power', description: 'Passing on steel and aluminium quickly, and winning price rises from vehicle makers.' },
             { key: 'delivery', label: 'Delivery record', description: 'Doing what was promised on the calls, on time.' },
             { key: 'cash', label: 'Cash and governance', description: 'Whether profit turns into cash without hidden financing, and a clean record with auditors, parents, related parties and shareholders.' },
         ],
@@ -291,8 +275,6 @@ export const autoRelatedHeavy: SectorOverview = {
                 grades: { share: { grade: 'A', note: '76% light-truck, 52% tractor rims' }, content: { grade: 'B', note: 'E-bus air suspension; aluminium' }, pricing: { grade: 'C', note: 'Margin 8%; wage costs negotiated' }, delivery: { grade: 'B', note: 'Growth met; margin goal slipping' }, cash: { grade: 'C', note: '₹469cr bill discounting; cheap promoter issue' } } },
             { company: 'Kross', trend: 'stable', trendNote: 'Trailer-axle volume rose 34% and new products are arriving, but the margin fell to 12.2%, the extrusion line and tipping jacks ran late, and free cash is deeply negative.',
                 grades: { share: { grade: 'B', note: 'Top-three trailer axles' }, content: { grade: 'B', note: 'Extrusion; seamless tubes FY28' }, pricing: { grade: 'C', note: '‘Cannot price above #1’' }, delivery: { grade: 'C', note: 'Revenue beat; margin, projects late' }, cash: { grade: 'D', note: 'FCF −₹72cr; bank figures mismatch' } } },
-            { company: 'Frontier Springs', trend: 'narrowing', trendNote: 'Revenue has been flat at about ₹80cr a quarter for five quarters, Q1 profit fell 18%, the FIBA trial doubled to 12 months and forging and Alstom promises were missed.',
-                grades: { share: { grade: 'B', note: '~40% of rail coil springs (company)' }, content: { grade: 'B', note: 'Air springs; FIBA in trial' }, pricing: { grade: 'B', note: 'Margin 16% → 27%; tender prices fixed' }, delivery: { grade: 'D', note: 'Revenue flat; promises slipped' }, cash: { grade: 'C', note: 'CRISIL non-cooperation; ₹48cr family firms' } } },
         ],
     },
 
@@ -300,17 +282,16 @@ export const autoRelatedHeavy: SectorOverview = {
         {
             heading: '1. Recommendation, up front',
             body: [
-                "**One ‘own’ in this group: Uniparts India. Follow Automotive Axles and Carraro India; wait on ZF CV Control Systems, Steel Strips Wheels, Wheels India and Kross; pass on Frontier Springs.** **Uniparts** makes the three-point linkage (the hitch that attaches a plough or mower to a tractor) and precision pins, bushings and joints for the world's largest tractor and construction-machine makers, shipping from Indian plants to its own warehouses in the US, Europe and Mexico so customers can order on demand. It has the best cash record in the group: free cash averaged 12.4% of revenue over five years, it held ₹190cr of net cash in June, ICRA rates it AA−, and it paid out 108% of FY26 profit including a ₹101cr special dividend. Revenue grew 21% in FY26 and 27% in Q1 FY27 even while large-tractor demand abroad was still falling, because construction customers ordered more and more sales went through its higher-margin warehouses. The price needs about {need:Uniparts India|14}% a year of earnings growth against my ~12%, inside my {Label:Uniparts India|Fits} band. What holds me back from more: Q1's 23.6% operating margin is above the 20% the company itself calls normal over a cycle, helped by a weak rupee and low material costs; the largest customer takes 26–31% of revenue and the US about half; and three years of promised acquisitions have produced none. **Own Uniparts, sized for a cyclical business, and add if large-tractor demand turns in CY2027 as management expects.**",
+                "**One ‘own’ in this group: Uniparts India. Follow Automotive Axles and Carraro India; wait on ZF CV Control Systems, Steel Strips Wheels, Wheels India and Kross.** **Uniparts** makes the three-point linkage (the hitch that attaches a plough or mower to a tractor) and precision pins, bushings and joints for the world's largest tractor and construction-machine makers, shipping from Indian plants to its own warehouses in the US, Europe and Mexico so customers can order on demand. It has the best cash record in the group: free cash averaged 12.4% of revenue over five years, it held ₹190cr of net cash in June, ICRA rates it AA−, and it paid out 108% of FY26 profit including a ₹101cr special dividend. Revenue grew 21% in FY26 and 27% in Q1 FY27 even while large-tractor demand abroad was still falling, because construction customers ordered more and more sales went through its higher-margin warehouses. The price needs about {need:Uniparts India|14}% a year of earnings growth against my ~12%, inside my {Label:Uniparts India|Fits} band. What holds me back from more: Q1's 23.6% operating margin is above the 20% the company itself calls normal over a cycle, helped by a weak rupee and low material costs; the largest customer takes 26–31% of revenue and the US about half; and three years of promised acquisitions have produced none. **Own Uniparts, sized for a cyclical business, and add if large-tractor demand turns in CY2027 as management expects.**",
                 "**Follow Automotive Axles and Carraro.** **Automotive Axles** is India's largest independent maker of rear drive axles for heavy trucks, jointly owned by Cummins's Meritor and Bharat Forge. It is the cheapest company here: the price needs only about {need:Auto.Axle|9}% a year against my ~10%, it holds about ₹385cr of net cash (about 15% of its market value), and it earned 22% on capital in FY26. It is adding 25–30% capacity for about ₹120cr by December. But FY26 sales of ₹2,178cr were still below FY23's ₹2,324cr, Ashok Leyland has given 50–60% of its revenue, its co-promoter Bharat Forge bought American Axle's competing Indian truck-axle business, it pays ₹97.5cr a year in fees to a joint venture of its two owners (more than half its net profit), and management expects the truck market to fall 5–10% this year. **Carraro India** makes axles and transmissions for tractors and construction machines, holds 60–65% of non-captive construction transmissions, earned 29% on capital and is riding India's shift to four-wheel-drive tractors; the price needs about {need:Carraro India|14}% a year against my ~13%. But its core margin fell to about 8.1% in Q1 once other income is removed, a quarter after management said it would not slide, growth guidance was cut to ‘up to 10%’ and exports fell 14%, fees to its Italian parent group reached about 44% of FY26 profit, and ₹210cr of income tax (about 37% of its net worth) is in dispute. **Follow both; buy Automotive Axles when the second-half truck slowdown shows without its margin breaking, and Carraro when a clean margin is back above 10% with the tax dispute and parent fees contained.**",
                 "**Wait on ZF, Steel Strips, Wheels India and Kross.** **ZF CV Control Systems** (formerly WABCO India) is the best business in the group: about 80% of Indian truck braking, about ₹2,175cr of net cash, and nominations at most truck makers for the electronic stability control that becomes compulsory on all trucks over 6 tonnes from October 2027. But the price needs about {need:ZF Comm Vehic Contr|25}% a year against my ~14%, other income is about a quarter of pre-tax profit, operating profit grew only 4% in FY26, its Q1 margin fell to 13% on aluminium, and its German parent has cut its stake from 75% to 60%; the price would need to fall by about half to fit. **Steel Strips** has lifted profit per wheel from ₹262 to ₹314 on its first price increases in two decades, but it plans about ₹600cr of capex against ₹332cr of FY26 operating cash and uses ₹400–500cr of factoring that its reported debt leaves out; exports are running below target, and its managing director's capacity figures conflict with its own presentation; the price needs about {need:Steel Strips Wheels|17}% a year against my ~14%. **Wheels India** has taken its margin from 5% to 8% in two years, but it stalled at 7.8% in Q1 as capex guidance rose to ₹400–450cr, its ₹469cr of bill discounting takes debt to about 2.75 times operating profit at June (company), and in September it sold shares to its promoters at ₹1,461 and to institutions at ₹2,088; the price needs about {need:Wheels India|20}% a year against my ~15%. **Kross** grew revenue 32% in Q1 on trailer axles, but burned ₹72cr of free cash in FY26, its cash cycle has doubled to 153 days, its 12.2% margin missed the 14–15% it spoke of and two new lines ran late, its auditor found its statements to banks did not match its books (for eight quarters), and a planned preferential issue would dilute holders by about 4.4%; the price needs about {need:Kross|18}% a year against my ~15%.",
-                "**Pass on Frontier Springs.** Frontier makes coil springs, air springs and forgings for Indian Railways, claims about 40% of the railways' coil-spring demand, and earned 51% on capital in FY26 after revenue rose 2.4 times in two years. But revenue has been flat at ₹75–83cr a quarter for five quarters, Q1 profit fell 18%, the margin is guided down from 27% to 23–24%, its ₹500cr gross revenue target for FY27 needs a steep second half, its brake-sensing air-spring product (FIBA) now faces a 12-month trial, and promised forging growth and Alstom orders did not come. The annual report and rating history add a governance discount: CRISIL rated it ‘Issuer Not Cooperating’ from 2022 to 2025, dealings with family-linked firms were about ₹48cr (about 15% of revenue), five family directors took about ₹7.2cr, and surplus cash sits in mutual funds and listed shares. The price needs about {need:Frontier Springs|17–18}% a year against my ~10%.",
                 "**Three things to hold onto before reading the rest.** First, **this is a late-cycle group**: truck and tractor volumes were at records, ICRA expects domestic truck volumes to fall year on year in the second half of FY27 and tractors to grow only 1–4%, and the US heavy-truck pre-buy has ended; judge each company on content per vehicle, new products and exports, not on Q1. Second, **count the bank financing**: Wheels India's ₹469cr of bill discounting and Steel Strips' ₹400–500cr of factoring sit outside their reported borrowings, and Kross discounts receivables too. Third, **the parents take a cut**: ZF sells about 30% of its revenue to its own group and pays royalties, Carraro sells about a third of its output to its parent and pays it fees, and Automotive Axles pays 4–4.5% of revenue to a joint venture of its two owners; these links bring technology and exports, but they are how profit can leave.",
             ],
         },
         {
             heading: '2. Charts: margins, growth, returns and cash conversion',
             body: [
-                "The six views that matter most, with two more behind **More measures**. Every figure comes from filed results on Screener, consolidated where the company files consolidated accounts. Automotive Axles and Kross have no subsidiaries and Frontier Springs is shown on Screener's standalone page, so those three are standalone. Carraro listed in December 2024, and ZF, Steel Strips and Carraro have no FY22 return figure on Screener's consolidated pages. Hover over a starred name for its caveat.",
+                "The six views that matter most, with two more behind **More measures**. Every figure comes from filed results on Screener, consolidated where the company files consolidated accounts. Automotive Axles and Kross have no subsidiaries, so those two are standalone. Carraro listed in December 2024, and ZF, Steel Strips and Carraro have no FY22 return figure on Screener's consolidated pages. Hover over a starred name for its caveat.",
                 "**Where the numbers disagree.** Several companies publish an ‘EBITDA’ that differs from the filed operating profit. **Automotive Axles**' Q1 figure of 13.6% includes other income; Screener shows 11.6%. **Carraro**'s 10.4% includes other income (with an ₹8.8cr customs write-back) and is taken on total income; filed operating margin was 8%. **Uniparts**' headline 25.9% includes ₹7.8cr of other income; its own operating figure is 23.6%, Screener's 24%. The dashboard stored **ZF**'s total income, including interest on its cash, as revenue; the charts use sales. **Wheels India** and **Steel Strips** report standalone figures on their slides, close to Screener's consolidated ones. The wheel makers' working-capital and debt charts do not count bill discounting or factoring; section 5 adds them back.",
             ],
             embed: 'metrics',
@@ -318,7 +299,7 @@ export const autoRelatedHeavy: SectorOverview = {
         {
             heading: '3. The sector',
             body: [
-                "ACMA, the component makers' association, puts FY26 industry turnover at ₹7.60 lakh crore (US$85.9bn), up 12.7%, with sales to vehicle makers of ₹6.63 lakh crore, aftermarket sales of ₹1.08 lakh crore and exports of US$24.0bn (+5%). For FY27 ACMA expects 8–10% growth, CareEdge 8–9%, and CRISIL 9–11% with operating margins falling 100–150 basis points to 10.5–11% as steel and aluminium costs rise. ICRA expects vehicle volumes to grow only 3–6% in FY27. This group sits at the heavy end: its parts go into trucks, trailers, buses, tractors, backhoe loaders and railway coaches, whose demand follows freight, farm incomes, construction and government spending rather than consumer car and scooter sales. **My view: this is a late-cycle group. Trucks and tractors had record years, and the next two years depend on content per vehicle, exports and new products, not on volumes.**",
+                "ACMA, the component makers' association, puts FY26 industry turnover at ₹7.60 lakh crore (US$85.9bn), up 12.7%, with sales to vehicle makers of ₹6.63 lakh crore, aftermarket sales of ₹1.08 lakh crore and exports of US$24.0bn (+5%). For FY27 ACMA expects 8–10% growth, CareEdge 8–9%, and CRISIL 9–11% with operating margins falling 100–150 basis points to 10.5–11% as steel and aluminium costs rise. ICRA expects vehicle volumes to grow only 3–6% in FY27. This group sits at the heavy end: its parts go into trucks, trailers, buses, tractors and backhoe loaders, whose demand follows freight, farm incomes and construction rather than consumer car and scooter sales. **My view: this is a late-cycle group. Trucks and tractors had record years, and the next two years depend on content per vehicle, exports and new products, not on volumes.**",
             ],
             points: [
                 {
@@ -334,8 +315,8 @@ export const autoRelatedHeavy: SectorOverview = {
                     text: "About 27% of India's component exports (US$6.24bn) go to the US, and about half of those fall under a 25% Section 232 tariff; an interim trade deal in February 2026 cut the reciprocal tariff on India to 18% and promised quotas for auto parts. The effects differ by company: **Steel Strips**' exports fell about 19% in FY26 to ₹454cr because of US tariffs; **Wheels India**, which exports 26% of revenue, faced effective US tariffs of 33–35% on construction and tractor wheels, mostly paid by its customers; **Uniparts** earns about half its revenue in the US; **ZF**'s goods exports, all to its own group, returned to growth (+9.7%) in Q1; **Carraro**'s exports, all to its parent, fell 14% on shipping shortages. **My view: exports are a second engine for most of this group, but a slow one; the tariff overhang is smaller than a year ago, and a US ‘overcapacity’ probe under Section 301 is still open.**",
                 },
                 {
-                    label: 'Costs, pass-through and the railway budget',
-                    text: "Raw materials are about three-quarters of component makers' costs, steel and aluminium half or more of that, and vehicle makers pass price changes on with a one- to two-quarter lag, ‘not always in full’ (CRISIL). How each company passes costs on matters more than the price: **Automotive Axles** passes steel, castings and forgings on ‘back-to-back’; **Steel Strips** now passes aluminium on monthly; **Kross** gets retrospective settlements about a quarter late; **ZF** has waited more than two quarters for aluminium recovery; and **Frontier** sells at prices fixed for the life of each railway tender, so cost spikes hurt for six to eight months. Frontier's demand comes from a railway capital budget of about ₹2.78 lakh crore for FY27 (its annual report). **My view: metal pass-through protects profit in rupees but shrinks margins in per cent when prices spike; the companies with lagged or fixed pricing (ZF, Kross, Frontier) are the ones whose Q1 margins fell.**",
+                    label: 'Costs and pass-through',
+                    text: "Raw materials are about three-quarters of component makers' costs, steel and aluminium half or more of that, and vehicle makers pass price changes on with a one- to two-quarter lag, ‘not always in full’ (CRISIL). How each company passes costs on matters more than the price: **Automotive Axles** passes steel, castings and forgings on ‘back-to-back’; **Steel Strips** now passes aluminium on monthly; **Kross** gets retrospective settlements about a quarter late; and **ZF** has waited more than two quarters for aluminium recovery. **My view: metal pass-through protects profit in rupees but shrinks margins in per cent when prices spike; the companies with lagged pricing (ZF and Kross) are the ones whose Q1 margins fell.**",
                 },
             ],
             tables: [
@@ -346,9 +327,8 @@ export const autoRelatedHeavy: SectorOverview = {
                         ['Truck braking', 'ZF', '13–19%', '19%', '**67%**', 'Technology and an 80% share; the margin swings with aluminium and a large cash pile dilutes the return'],
                         ['Axles, wheels and trailer parts', 'Automotive Axles, Wheels India, Steel Strips, Kross', '7–15%', '15–22%', '**31–106%**', 'Metal passed through at cost; the margin comes from mix and from price rises that vehicle makers rarely grant'],
                         ['Tractor and off-highway drivetrain and linkages', 'Carraro, Uniparts', '8–24%', '22–29%', '**73–77%**', 'Long validation and a global delivery model; Uniparts earns a service premium, Carraro volume on little capital'],
-                        ['Rail springs', 'Frontier', '24–29%', '51%', '**46%**', 'Approved supplier to one buyer on tender prices; a small plant base, but weak cash conversion'],
                     ],
-                    note: 'Filed figures from Screener; Automotive Axles, Kross and Frontier are standalone. The wheel makers’ cash conversion is helped by bill discounting and factoring.',
+                    note: 'Filed figures from Screener; Automotive Axles and Kross are standalone. The wheel makers’ cash conversion is helped by bill discounting and factoring.',
                 },
                 {
                     caption: 'The market: size, growth and policy (named forecasters)',
@@ -368,7 +348,6 @@ export const autoRelatedHeavy: SectorOverview = {
                         ['Stability control, trucks over 6 tonnes', 'Compulsory on most buses from Sep 2025', 'All such trucks from Oct 2027', 'ZF Q4 FY26 and Q1 FY27 calls'],
                         ['Parivartan scrappage-linked scheme', 'BS-IV and older trucks barred from Delhi NCR from 30 Oct 2026', 'About 13% off a replacement truck', 'Kross Q1 FY27 call'],
                         ['Hot-rolled steel', 'About ₹64,000/t in Sep 2026, a four-year high', 'Expected to stay firm through H2 FY27', 'BigMint, Sep 2026'],
-                        ['Railway capital outlay', 'About ₹2.78 lakh cr for FY27', 'Tender-led supply', 'Frontier Springs annual report FY26'],
                         ['Steel-rim market shares', 'Light trucks 76%, tractors 52%, heavy trucks 37%, cars 35% (Wheels India)', 'H1 FY26', 'ICRA on Wheels India, Feb 2026'],
                     ],
                     note: 'Market sizes are forecasters’ estimates; company shares are the companies’ own or a rating agency’s. No published sector-wide forecast beyond FY27 was found.',
@@ -378,7 +357,7 @@ export const autoRelatedHeavy: SectorOverview = {
         {
             heading: '4. Moat (comparative)',
             body: [
-                "Five things protect profits in this group. The grid grades each company on each one; how each business works is explained in Tab 2. The short version: approvals and share are strong almost everywhere, because heavy-vehicle and railway buyers rarely switch a safety-critical part, but pricing power is rare, because these buyers are large, few and buy on cost.",
+                "Five things protect profits in this group. The grid grades each company on each one; how each business works is explained in Tab 2. The short version: approvals and share are strong almost everywhere, because heavy-vehicle buyers rarely switch a safety-critical part, but pricing power is rare, because these buyers are large, few and buy on cost.",
             ],
             embed: 'moat',
             embedFirst: true,
@@ -400,10 +379,6 @@ export const autoRelatedHeavy: SectorOverview = {
                     text: "**Uniparts** makes linkages and precision pins in India and stocks them in its own warehouses in the US, Europe and Mexico, so a global tractor or construction maker can choose between the lowest price (direct export) and delivery on demand (warehouse), which earns more; warehouse sales reached 56% of revenue in Q1. ICRA calls this model a key strength. Uniparts claims a dominant world share in linkages for tractors under 70 horsepower and says it is the sole or main supplier of the parts it makes for the top three construction-machine makers. The best evidence is that it kept its share through a three-year downturn in which linkage revenue fell about 30%, and it still wins ₹200–225cr of new annual business each year. Its weakness is concentration: the largest customer takes 26–31% of revenue and the top ten 76–84%. **My view: a real service moat that lets it pass on freight, raw-material and tariff costs; it cannot make the tractor cycle go away.**",
                 },
                 {
-                    label: 'Approved by the railways: Frontier',
-                    text: "**Frontier** has supplied Indian Railways for over 40 years, claims about 40% of its coil-spring demand and a similar share of air springs, and says a newly approved supplier waits about two years for a regular order; no new rival has been approved in its products. It says it has supplied almost 15,000 air springs without a single failure, while rivals importing from China see failures. Its margin rose from 16% in FY24 to 27% in FY26 on new tenders. But it sells to one buyer, by lowest-bid tender, at prices fixed for the life of each order, and its new products need railway trials: FIBA is now in a 12-month trial with Frontier approved only as a ‘developmental vendor’. **My view: approval is a moat against new entrants, not against the buyer; margins set in one tender can fall in the next.**",
-                },
-                {
                     label: 'Integration without pricing power: Kross',
                     text: "**Kross** forges, casts, machines and assembles in Jamshedpur, is ‘among the few players with a full product range’ of trailer axles and suspensions (India Ratings), and has built India's first axle-beam extrusion plant, which makes a lighter single-piece beam. It has supplied Tata Motors, Ashok Leyland and TAFE for about two decades and imports only about 12% of its purchases. But management is candid about the limit: ‘We are a #2 player. So, we cannot price our product more than the #1 player’, and truck makers settle steel and conversion-cost increases only retrospectively, about a quarter late. Its margin has been about 13% for three years. **My view: integration gives Kross cost and range, not pricing; the seamless-tube plant will deepen that integration from FY28.**",
                 },
@@ -412,13 +387,13 @@ export const autoRelatedHeavy: SectorOverview = {
         {
             heading: '5. Margins (comparative)',
             body: [
-                "Are the margins structural? Three patterns: margins earned on technology, approvals or a service model (ZF, Uniparts, Frontier, and to a lesser degree Carraro); thin cost-plus margins on metal (Automotive Axles, the two wheel makers and Kross); and a layer of other income, write-backs and currency gains that flatters several headline figures. Q1 FY27 tested the first group harder than the second.",
+                "Are the margins structural? Three patterns: margins earned on technology, approvals or a service model (ZF, Uniparts, and to a lesser degree Carraro); thin cost-plus margins on metal (Automotive Axles, the two wheel makers and Kross); and a layer of other income, write-backs and currency gains that flatters several headline figures. Q1 FY27 tested the first group harder than the second.",
                 "Whether profit turns into cash is in section 2 (the **Cash conversion** and **Free cash flow** tabs) and on each company card in Tab 2.",
             ],
             points: [
                 {
                     label: 'Structural: technology, approvals and a service model',
-                    text: "**ZF**'s filed margin has been 15–16% for three years and swung between 13% and 19% in the last five quarters, mostly on the timing of aluminium recovery and retrospective price settlements with truck makers; in August, after a 13% quarter, management gave no margin view, said recovering costs from truck makers has ‘taken a little longer than usual’ and raised some prices from July (in May its then CFO had expected FY27 margins to be ‘more or less flattish’). **Uniparts** anchors at 20% ‘over a cycle that is peak to trough’; it earned 22% at the FY23 peak and 15% at the FY25 trough. **Frontier** rose from 16% to 27% in two years on new tenders and guides 23–24% for FY27, ‘if not 26%-28%’. **My view: all three margins are real, but ZF's is running below its norm, Uniparts' above it, and Frontier's is coming down from a peak; I treat about 15–16%, 20–21% and 23–24% as normal.**",
+                    text: "**ZF**'s filed margin has been 15–16% for three years and swung between 13% and 19% in the last five quarters, mostly on the timing of aluminium recovery and retrospective price settlements with truck makers; in August, after a 13% quarter, management gave no margin view, said recovering costs from truck makers has ‘taken a little longer than usual’ and raised some prices from July (in May its then CFO had expected FY27 margins to be ‘more or less flattish’). **Uniparts** anchors at 20% ‘over a cycle that is peak to trough’; it earned 22% at the FY23 peak and 15% at the FY25 trough. **My view: both margins are real, but ZF's is running below its norm and Uniparts' above it; I treat about 15–16% and 20–21% as normal.**",
                 },
                 {
                     label: 'Structural but thin: metal at cost plus',
@@ -430,11 +405,11 @@ export const autoRelatedHeavy: SectorOverview = {
                 },
                 {
                     label: 'Not structural: other income, write-backs and currency',
-                    text: "Several headline figures flatter the business. **Automotive Axles** called Q1 ‘probably one of the highest EBITDA percentage we ever achieved’, but nearly all the improvement on Q4 came from other income rising from ₹6cr to ₹10cr; the operating margin equalled Q4's. **Carraro**'s Q1 included an ₹8.8cr customs write-back and FY26 an ₹8.4cr provision reversal; without other income its Q1 EBITDA margin was about 8.1%, against 9.7% a year earlier. **Uniparts** gained about 2% of sales from a weak rupee in two FY26 quarters, and its Q1 material cost of 33.3% was below the normal 34–37%. **ZF**'s other income was ₹173cr in FY26, about 25% of pre-tax profit, and Q1 FY26 included a ₹39cr currency gain. In the other direction, **Wheels India** took a ₹26.16cr stock provision in Q3 FY26, and **Frontier**'s Q1 tax rate jumped to about 33% without explanation. **My view: strip these out; on operating figures, Carraro and ZF went backwards in Q1 and Uniparts is at a peak.**",
+                    text: "Several headline figures flatter the business. **Automotive Axles** called Q1 ‘probably one of the highest EBITDA percentage we ever achieved’, but nearly all the improvement on Q4 came from other income rising from ₹6cr to ₹10cr; the operating margin equalled Q4's. **Carraro**'s Q1 included an ₹8.8cr customs write-back and FY26 an ₹8.4cr provision reversal; without other income its Q1 EBITDA margin was about 8.1%, against 9.7% a year earlier. **Uniparts** gained about 2% of sales from a weak rupee in two FY26 quarters, and its Q1 material cost of 33.3% was below the normal 34–37%. **ZF**'s other income was ₹173cr in FY26, about 25% of pre-tax profit, and Q1 FY26 included a ₹39cr currency gain. In the other direction, **Wheels India** took a ₹26.16cr stock provision in Q3 FY26. **My view: strip these out; on operating figures, Carraro and ZF went backwards in Q1 and Uniparts is at a peak.**",
                 },
                 {
                     label: 'Working capital: the biggest users',
-                    text: "**Uniparts** ties up about 136 days of revenue (company measure) because its warehouses hold five to six months of stock; that is the cost of its service model, and it still converts about 77% of operating profit into cash. **Kross**'s cash cycle has doubled to 153 days on Screener (175 on India Ratings' measure) even after discounting ₹34.9cr of receivables with banks, and its operating cash was only ₹28cr in FY26 against ₹88cr of operating profit. **Frontier**'s cycle rose to 119 days as payable days collapsed from 94 to 33 and receivables grew from ₹38cr to ₹61cr. **My view: Uniparts' is a design choice; Kross's and Frontier's are warning signs, because both cycles lengthened in a year of growth.**",
+                    text: "**Uniparts** ties up about 136 days of revenue (company measure) because its warehouses hold five to six months of stock; that is the cost of its service model, and it still converts about 77% of operating profit into cash. **Kross**'s cash cycle has doubled to 153 days on Screener (175 on India Ratings' measure) even after discounting ₹34.9cr of receivables with banks, and its operating cash was only ₹28cr in FY26 against ₹88cr of operating profit. **My view: Uniparts' is a design choice; Kross's is a warning sign, because its cycle lengthened in a year of growth.**",
                 },
                 {
                     label: 'Working capital: flattered by bank financing',
@@ -442,7 +417,7 @@ export const autoRelatedHeavy: SectorOverview = {
                 },
                 {
                     label: 'Working capital: improving',
-                    text: "**ZF**'s cycle fell from 80 to 56 days as its parent group paid down ₹245cr it owed, taking FY26 operating cash to ₹810cr, while stock rose from 31 to 43 days as it built buffers during aluminium shortages. **Carraro** runs 38 working-capital days (company) and turned ₹135cr of operating cash into ₹102cr of free cash in FY26. **Automotive Axles**' receivables rose from 60 to 82 days after it began billing truck makers directly, but it still converted 73% of FY26 operating profit into cash. **Judge each against its model: the axle, driveline and braking makers should convert 70–90% of operating profit; the wheel makers' conversion should be read net of bank financing; Kross and Frontier still have to show it.**",
+                    text: "**ZF**'s cycle fell from 80 to 56 days as its parent group paid down ₹245cr it owed, taking FY26 operating cash to ₹810cr, while stock rose from 31 to 43 days as it built buffers during aluminium shortages. **Carraro** runs 38 working-capital days (company) and turned ₹135cr of operating cash into ₹102cr of free cash in FY26. **Automotive Axles**' receivables rose from 60 to 82 days after it began billing truck makers directly, but it still converted 73% of FY26 operating profit into cash. **Judge each against its model: the axle, driveline and braking makers should convert 70–90% of operating profit; the wheel makers' conversion should be read net of bank financing; Kross still has to show it.**",
                 },
             ],
             tables: [
@@ -457,9 +432,8 @@ export const autoRelatedHeavy: SectorOverview = {
                         ['Steel Strips Wheels', 'FY27 capex about ₹600cr (Bhuj ~₹420cr, new steel line ₹150cr); debt to rise about ₹200cr; aluminium now passed on monthly', 'Gross debt about ₹826cr at 8–9% plus ₹400–500cr of factoring; loan of ₹133cr to subsidiary AMW; India Ratings AA−/Stable, net adjusted leverage 3.2x (9M FY26)'],
                         ['Wheels India', 'FY27 capex raised to ₹400–450cr; Q1 free cash ‘close to breakeven’; ₹250cr share placement to repay borrowings (Sep 2026)', 'Debt ₹710cr (June) plus ₹469cr bill discounting and ₹23cr buyers’ credit, 2.75x EBITDA including them (company); ₹180cr promoter issue; ICRA A/Stable (Feb 2026)'],
                         ['Kross', 'Seamless-tube plant about ₹167cr, with a ~₹100cr term loan drawn as machines arrive; FY27 other capex ₹20–25cr; no dividend', 'Borrowings ₹53.7cr plus ₹34.9cr of recourse bills (March); cash ₹25.4cr; India Ratings A/Stable (Jun 2026), which expects free cash to stay negative in FY27'],
-                        ['Frontier Springs', 'No Q1 call; presentation reaffirmed ₹500cr gross FY27 revenue; FY27 capex ₹20–25cr from internal cash (Q4 call)', 'Borrowings ₹10.8cr; mutual funds ₹38.6cr and listed shares ₹6.1cr; payout ~1%; CRISIL rating withdrawn May 2025 after ‘Issuer Not Cooperating’'],
                     ],
-                    note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. Wheels India and Frontier Springs hold calls twice a year; their Q1 lines come from presentations and the Q4 calls.',
+                    note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. Wheels India holds calls twice a year; its Q1 line comes from its presentation and the Q4 call.',
                 },
             ],
         },
@@ -482,10 +456,6 @@ export const autoRelatedHeavy: SectorOverview = {
                     text: "**Carraro** targets ₹3,500–4,000cr of revenue by FY30 against ₹2,255cr in FY26, about 12–15% a year, from 4WD tractors, high-horsepower transmissions (a Turkish programme started in FY27, an Indian one follows in FY28), telehandler axles for an international maker and two new tractor projects due to earn in 18–24 months. It is tripling capex to ₹130–140cr in FY27, still modest for a business turning about six times its fixed assets into sales. **Uniparts** has only a single-digit share in linkages for tractors above 70 horsepower, its main runway, wins ₹200–225cr of new annual business a year, opens its Mexico warehouse in Q3 FY27 and is building up fabrication; capex stays at 2.5–3.5% of revenue. **My view: both have long runways at low capital cost; Carraro's is structural (4WD in India), Uniparts' is mostly cyclical (large tractors abroad) plus steady share gains.**",
                 },
                 {
-                    label: 'Growth driver: rail springs need new products',
-                    text: "**Frontier** reaffirmed ₹500cr of gross revenue for FY27 in its Q1 presentation, against ₹322cr of revenue in FY26, and hopes for ₹1,000cr in five years; closing that gap needs new products. Its air-spring line can make about 300 coach sets a month but made 180–200; FIBA, a system that senses a failed air spring and applies the brakes, is in a 12-month trial, with ₹20–25cr of revenue hoped for from FY28; forging was meant to reach ₹75–80cr in FY26 and came in at about ₹60cr (gross). It disclosed an order book of about ₹370cr in June and spends only ₹20–25cr a year. **My view: the railway budget is large and steady, but Frontier's revenue has been flat for five quarters; the next leg depends on trials and tenders it does not control.**",
-                },
-                {
                     label: 'Delivering or beating',
                     text: "**Uniparts** promised FY26 growth in the ‘mid-teens’ and delivered 21%, said Q1 FY27 would match Q4 and delivered ₹347cr against ₹339cr, then raised FY27 guidance to ‘a couple of percentage points better’ than 21%. **Steel Strips** promised EBITDA of close to ₹300 a wheel for FY27 and earned ₹314 in Q1, with profit up 43% against a 15–20% guide. **Automotive Axles** held its margin through a 22% fall in quarterly sales, as promised, and kept its capacity programme on schedule for December. **Kross** grew revenue 32% against a 22% full-year guide. **Wheels India** grew 16% in FY26 against the 8–10% it promised in October and reached 18.7% return on capital about a year early.",
                 },
@@ -495,7 +465,7 @@ export const autoRelatedHeavy: SectorOverview = {
                 },
                 {
                     label: 'Missed',
-                    text: "**Carraro** said in May, ‘We reached 10.8%, we will move upward, we're not going to slide backward’, and Q1 slid to 10.4% on its own basis and about 8.1% without other income; exports fell 14% and local content fell from 78% to 74%. **Frontier** hoped to ‘break that 82 crore’ of quarterly revenue in Q1 and fell to ₹78cr, with profit down 18%; its FIBA trial doubled to 12 months, forging missed, and the Alstom orders described as imminent in November 2025 have not appeared. **Kross** printed a 12.2% margin against the 14–15% it spoke of in May (it had warned Q1 would be weak), its extrusion line started commercial production two to three months late, and it sold 226 tipping-jack kits against a target of 300. **ZF**'s margin fell to 13% against a ‘flattish’ expectation.",
+                    text: "**Carraro** said in May, ‘We reached 10.8%, we will move upward, we're not going to slide backward’, and Q1 slid to 10.4% on its own basis and about 8.1% without other income; exports fell 14% and local content fell from 78% to 74%. **Kross** printed a 12.2% margin against the 14–15% it spoke of in May (it had warned Q1 would be weak), its extrusion line started commercial production two to three months late, and it sold 226 tipping-jack kits against a target of 300. **ZF**'s margin fell to 13% against a ‘flattish’ expectation.",
                 },
                 {
                     label: 'Mixed',
@@ -503,7 +473,7 @@ export const autoRelatedHeavy: SectorOverview = {
                 },
                 {
                     label: 'My outlook',
-                    text: "**I expect earnings growth of about 15% a year at Wheels India and Kross, 14% at ZF and Steel Strips, 13% at Carraro, 12% at Uniparts, and 10% at Automotive Axles and Frontier.** These are three- to five-year rates and assume truck volumes fall in H2 FY27 and recover slowly. Wheels India's figure is mostly margin recovery from about 8% towards 9–10% and lower interest after the share placement, less the 10% more shares now in issue. Kross's assumes seamless tubes and exports add from FY28 but a truck slowdown costs FY27–FY28. ZF's is the stability-control content from FY28, held back by aluminium and slower growth in other income. Steel Strips' assumes its FY27–FY28 EBITDA guidance is largely met but higher interest and depreciation absorb part of it. Uniparts' assumes its margin drifts back towards 20–21% as large tractors recover. Automotive Axles' assumes a flat FY27 and growth from new capacity after that; Frontier's assumes flat revenue until new products pass their trials. **My view: the most certain growth per rupee of capital is at ZF, Carraro and Automotive Axles; the least certain is at Kross and Frontier.**",
+                    text: "**I expect earnings growth of about 15% a year at Wheels India and Kross, 14% at ZF and Steel Strips, 13% at Carraro, 12% at Uniparts, and 10% at Automotive Axles.** These are three- to five-year rates and assume truck volumes fall in H2 FY27 and recover slowly. Wheels India's figure is mostly margin recovery from about 8% towards 9–10% and lower interest after the share placement, less the 10% more shares now in issue. Kross's assumes seamless tubes and exports add from FY28 but a truck slowdown costs FY27–FY28. ZF's is the stability-control content from FY28, held back by aluminium and slower growth in other income. Steel Strips' assumes its FY27–FY28 EBITDA guidance is largely met but higher interest and depreciation absorb part of it. Uniparts' assumes its margin drifts back towards 20–21% as large tractors recover. Automotive Axles' assumes a flat FY27 and growth from new capacity after that. **My view: the most certain growth per rupee of capital is at ZF, Carraro and Automotive Axles; the least certain is at Kross.**",
                 },
             ],
             tables: [
@@ -519,7 +489,6 @@ export const autoRelatedHeavy: SectorOverview = {
                         ['Steel Strips Wheels', 'EBITDA guide ₹650cr (FY27) and ₹700–750cr (FY28); Bhuj alloy wheels and knuckles; interest and depreciation rise with ₹600cr capex', '5% / **14%** / 22%'],
                         ['Wheels India', 'Margin towards 9–10%; aluminium wheels, wind machining and air suspension; interest falls after the placement but 10% more shares', '5% / **15%** / 22%'],
                         ['Kross', 'Trailer axles, tractors and exports; seamless tubes from FY28; margin 13–14%; a truck slowdown after the Parivartan pull-forward', '3% / **15%** / 25%'],
-                        ['Frontier Springs', 'Rail springs flat to rising; margin guided to 23–24% from 27%; FIBA and forging slow to arrive', '0% / **10%** / 20%'],
                     ],
                     note: 'My own judgement, not guidance. The growth each price needs is in the live valuation table in section 8.',
                 },
@@ -535,7 +504,6 @@ export const autoRelatedHeavy: SectorOverview = {
                         ['Steel Strips Wheels', 'FY27 revenue ~₹6,500cr, EBITDA ~₹650cr, above ₹310 a wheel, profit +15–20%, exports ₹600cr; FY28 EBITDA ₹700–750cr', '~₹600cr in FY27 (raised from ~₹550cr)', '**Mixed**: ₹314 a wheel, profit +43%; exports ₹127cr; capex up'],
                         ['Wheels India', 'Double-digit EBITDA margin in 1–2 years; exports faster in FY28; plants support ₹6,000–6,500cr of revenue', '₹400–450cr in FY27 (from ₹280–300cr)', '**Mixed**: revenue +18%; margin flat at 7.8%; capex raised'],
                         ['Kross', 'FY27 revenue +22%; margin to expand quarter to quarter (May’s 14–15% not repeated); exports 8% of revenue in two years', 'Seamless tubes ~₹167cr (revenue FY28); other ₹20–25cr', '**Mixed**: revenue +32%; margin 12.2%; extrusion and jacks late'],
-                        ['Frontier Springs', '₹500cr gross FY27 revenue (reaffirmed); margin 23–24%; ₹1,000cr in five years', '₹20–25cr in FY27', '**Missed**: Q1 revenue +4%, profit −18%; FIBA trial doubled'],
                     ],
                 },
             ],
@@ -543,7 +511,7 @@ export const autoRelatedHeavy: SectorOverview = {
         {
             heading: '7. Risk factors',
             body: [
-                "The risks fall into six groups. Several of the most important came from annual reports, rating rationales and related-party notes rather than the calls. All eight FY26 audit opinions were unmodified, but the notes behind them differ a great deal.",
+                "The risks fall into six groups. Several of the most important came from annual reports, rating rationales and related-party notes rather than the calls. All seven FY26 audit opinions were unmodified, but the notes behind them differ a great deal.",
             ],
             points: [
                 {
@@ -556,19 +524,19 @@ export const autoRelatedHeavy: SectorOverview = {
                 },
                 {
                     label: 'Parents, fees and related parties',
-                    text: "**ZF** paid about ₹101cr of royalty to group companies and ₹45.3cr of IT charges to ZF AG in FY26, together about 3.5% of sales and rising faster than sales; roughly 30% of its revenue comes from ZF group companies at prices the parent sets; and ZF cut its stake from 75% to 60% in 2024–25 for its own ‘liquidity and financial flexibility’. **Carraro** sold ₹774cr (about 34% of revenue) to its parent's Italian arm and paid about ₹57.5cr of royalty, service charges and professional fees, about 44% of FY26 net profit, with service charges up 38%. **Automotive Axles** paid ₹97.5cr of technical and service fees to MHVSIL, a joint venture of its two owners, more than half its net profit. At **Frontier**, dealings with promoter-linked firms came to roughly ₹48cr (about 15% of revenue) and five family directors took about ₹7.2cr, about 12% of profit. **My view: the parent links bring technology and export orders, but they are the main channel through which profit can leave; watch every renewal of these agreements.**",
+                    text: "**ZF** paid about ₹101cr of royalty to group companies and ₹45.3cr of IT charges to ZF AG in FY26, together about 3.5% of sales and rising faster than sales; roughly 30% of its revenue comes from ZF group companies at prices the parent sets; and ZF cut its stake from 75% to 60% in 2024–25 for its own ‘liquidity and financial flexibility’. **Carraro** sold ₹774cr (about 34% of revenue) to its parent's Italian arm and paid about ₹57.5cr of royalty, service charges and professional fees, about 44% of FY26 net profit, with service charges up 38%. **Automotive Axles** paid ₹97.5cr of technical and service fees to MHVSIL, a joint venture of its two owners, more than half its net profit. **My view: the parent links bring technology and export orders, but they are the main channel through which profit can leave; watch every renewal of these agreements.**",
                 },
                 {
                     label: 'Equity raises and capital allocation',
-                    text: "In September **Wheels India** allotted ₹180cr of shares to its promoters at ₹1,461 each and, four days later, ₹250cr to institutions at ₹2,088; the lower price follows SEBI's formula but gives the promoters about 30% off, and the two issues together raised the share count 9.9% (the institutional placement alone about 4.7%). It also bought ₹22.68cr of Axles India shares from its promoter company TSF and aims to raise that stake to 15–25%. **Steel Strips** has lent ₹133.15cr to its AMW subsidiary, paid its key managers ₹15.7cr (its managing director 268 times the median employee), and was asked by an analyst on the Q1 call to raise equity. **Uniparts** has promised an acquisition since its December 2022 listing; two near-deals collapsed, and a large one could dilute its returns. **Frontier** holds ₹6.1cr of listed shares and ₹38.6cr of mutual funds while paying out about 1% of profit. **My view: Wheels India's pricing needs the most watching; the promoters are putting money in, but on better terms than everyone else.**",
+                    text: "In September **Wheels India** allotted ₹180cr of shares to its promoters at ₹1,461 each and, four days later, ₹250cr to institutions at ₹2,088; the lower price follows SEBI's formula but gives the promoters about 30% off, and the two issues together raised the share count 9.9% (the institutional placement alone about 4.7%). It also bought ₹22.68cr of Axles India shares from its promoter company TSF and aims to raise that stake to 15–25%. **Steel Strips** has lent ₹133.15cr to its AMW subsidiary, paid its key managers ₹15.7cr (its managing director 268 times the median employee), and was asked by an analyst on the Q1 call to raise equity. **Uniparts** has promised an acquisition since its December 2022 listing; two near-deals collapsed, and a large one could dilute its returns. **My view: Wheels India's pricing needs the most watching; the promoters are putting money in, but on better terms than everyone else.**",
                 },
                 {
                     label: 'Audit, tax and disclosure findings',
-                    text: "**Carraro** has ₹210cr of disputed income tax (about 37% of net worth), which its auditor, Deloitte Haskins & Sells, made its key audit matter; its dealings with group companies are subject to transfer-pricing studies. **ZF** reported a new ₹57cr GST claim in FY26, and **Wheels India**'s disputed taxes not provided for rose from ₹19.7cr to ₹47cr. At **Kross**, the auditor's report says quarterly statements to banks ‘are not in agreement with the books’ (receivables of ₹197.2cr in the books against ₹208.7cr reported for March 2026), a gap that has recurred for eight quarters, and in the years around its IPO Kross was rated ‘Issuer Not Cooperating’ by CARE (2022–24) and India Ratings (2023). **Frontier** was rated ‘Issuer Not Cooperating’ by CRISIL from 2022 until it asked for the rating to be withdrawn in 2025. **Uniparts**' auditor made its related-party dealings with overseas subsidiaries a key audit matter. **My view: Carraro's tax case and Kross's bank-statement gaps are the two to track; neither is a loss yet, but both are unusual for companies of this size.**",
+                    text: "**Carraro** has ₹210cr of disputed income tax (about 37% of net worth), which its auditor, Deloitte Haskins & Sells, made its key audit matter; its dealings with group companies are subject to transfer-pricing studies. **ZF** reported a new ₹57cr GST claim in FY26, and **Wheels India**'s disputed taxes not provided for rose from ₹19.7cr to ₹47cr. At **Kross**, the auditor's report says quarterly statements to banks ‘are not in agreement with the books’ (receivables of ₹197.2cr in the books against ₹208.7cr reported for March 2026), a gap that has recurred for eight quarters, and in the years around its IPO Kross was rated ‘Issuer Not Cooperating’ by CARE (2022–24) and India Ratings (2023). **Uniparts**' auditor made its related-party dealings with overseas subsidiaries a key audit matter. **My view: Carraro's tax case and Kross's bank-statement gaps are the two to track; neither is a loss yet, but both are unusual for companies of this size.**",
                 },
                 {
                     label: 'People and customers',
-                    text: "Four finance chiefs changed within a year: at **ZF** (a new CFO from 1 September 2026, after its managing director left in June 2025), **Automotive Axles** (an interim CFO since November 2025), **Uniparts** (March 2026) and **Steel Strips** (November 2025); **Wheels India**'s chairman stepped down in March 2026. Customer concentration is high across the group: Uniparts' top ten take 84% of Q1 revenue, Carraro's major customers 48.9%, Kross's top five 59.5%, and Frontier sells almost entirely to Indian Railways. **My view: concentration is normal for suppliers of heavy-vehicle and railway parts, but in a turning cycle it means one customer's plans can move a year's profit.**",
+                    text: "Four finance chiefs changed within a year: at **ZF** (a new CFO from 1 September 2026, after its managing director left in June 2025), **Automotive Axles** (an interim CFO since November 2025), **Uniparts** (March 2026) and **Steel Strips** (November 2025); **Wheels India**'s chairman stepped down in March 2026. Customer concentration is high across the group: Uniparts' top ten take 84% of Q1 revenue, Carraro's major customers 48.9% and Kross's top five 59.5%. **My view: concentration is normal for suppliers of heavy-vehicle parts, but in a turning cycle it means one customer's plans can move a year's profit.**",
                 },
             ],
         },
@@ -576,12 +544,12 @@ export const autoRelatedHeavy: SectorOverview = {
             heading: '8. Valuation (comparative)',
             body: [
                 "Two yardsticks. **P/E** compares the share price with profit after tax. **EV/EBITDA** compares the value of the whole business (market value plus debt, minus cash) with operating profit, so it charges for debt and credits cash. In this group the gap between them is widest at ZF and Automotive Axles, which hold large cash balances, and at the two wheel makers, which carry debt, and more of it once bank financing is counted.",
-                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **3% at 8x, 8% at 12x, 12% at 18x, 16% at 26x, 24% at 50x and 33% at 100x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **Three of the eight fit my estimates (Uniparts, Automotive Axles and Carraro), three are full (Steel Strips, Wheels India and Kross) and two are stretched (ZF and Frontier). The market pays least for the off-highway and axle businesses and most for braking technology and the wheel makers' recovery.**",
+                "To earn about 12% a year while the P/E drifts to 18x over ten years, earnings must compound at roughly **3% at 8x, 8% at 12x, 12% at 18x, 16% at 26x, 24% at 50x and 33% at 100x.** The quality-vs-price chart at the top of this tab shows return on capital against the P/E. **Three of the seven fit my estimates (Uniparts, Automotive Axles and Carraro), three are full (Steel Strips, Wheels India and Kross) and one is stretched (ZF). The market pays least for the off-highway and axle businesses and most for braking technology and the wheel makers' recovery.**",
             ],
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**Automotive Axles**' net cash of about ₹385cr is about 15% of its {mcap:Auto.Axle|₹2,584cr} market value, and **ZF**'s ₹2,177cr is about 8% of {mcap:ZF Comm Vehic Contr|₹26,792cr}, so both look cheaper once cash is credited. **Steel Strips**' ₹807cr of net debt adds about 14% to its {mcap:Steel Strips Wheels|₹5,956cr} market value and **Wheels India**'s ₹686cr about 12% to {mcap:Wheels India|₹5,894cr}; neither figure includes bill discounting or factoring, which would add roughly another ₹400–500cr each. **Uniparts** (₹97cr of net cash) and **Frontier** (₹41cr) change little, and **Carraro** (₹65cr of net debt) and **Kross** (₹23cr) hardly at all. **My view: counted properly, the wheel makers are more expensive than their live figures suggest, and Automotive Axles cheaper.**",
+                    text: "**Automotive Axles**' net cash of about ₹385cr is about 15% of its {mcap:Auto.Axle|₹2,584cr} market value, and **ZF**'s ₹2,177cr is about 8% of {mcap:ZF Comm Vehic Contr|₹26,792cr}, so both look cheaper once cash is credited. **Steel Strips**' ₹807cr of net debt adds about 14% to its {mcap:Steel Strips Wheels|₹5,956cr} market value and **Wheels India**'s ₹686cr about 12% to {mcap:Wheels India|₹5,894cr}; neither figure includes bill discounting or factoring, which would add roughly another ₹400–500cr each. **Uniparts** (₹97cr of net cash) changes little, and **Carraro** (₹65cr of net debt) and **Kross** (₹23cr) hardly at all. **My view: counted properly, the wheel makers are more expensive than their live figures suggest, and Automotive Axles cheaper.**",
                 },
                 {
                     label: 'Fits: the price asks for no more than I expect',
@@ -592,8 +560,8 @@ export const autoRelatedHeavy: SectorOverview = {
                     text: "**Steel Strips** needs about {need:Steel Strips Wheels|17}% a year against my ~14%; that assumes its ₹650cr FY27 and ₹700–750cr FY28 EBITDA guidance is met and Bhuj fills on time, while interest rises with ₹600cr of capex. **Wheels India** needs about {need:Wheels India|20}% a year against my ~15%; that assumes the double-digit margin arrives within two years, as it has been promised for more than a year, on a share count now 10% larger. **Kross** needs about {need:Kross|18}% a year against my ~15%; that assumes margins recover to 14–15% and the seamless-tube plant earns from FY28 while trucks slow. **My view: all three are good operating stories priced as if the truck cycle will not interrupt them.**",
                 },
                 {
-                    label: 'Stretched: prices that need more than the business shows',
-                    text: "**ZF** needs about {need:ZF Comm Vehic Contr|25}% a year against my ~14%. It is the best business in the group, and stability control will lift content from FY28, but about a quarter of its pre-tax profit is interest on cash, its operating profit grew only 4% in FY26, and its parent has been selling shares. For ZF to fit my estimate the price would need to fall by about half. **Frontier** needs about {need:Frontier Springs|17–18}% a year against my ~10%; its revenue has been flat for five quarters, its margin is guided down from 27% to 23–24%, and its FY27 target needs an unusually strong second half. **My view: ZF is a quality business priced as if stability control arrives early and in full; Frontier is a pass until growth resumes and governance improves.**",
+                    label: 'Stretched: a price that needs more than the business shows',
+                    text: "**ZF** needs about {need:ZF Comm Vehic Contr|25}% a year against my ~14%. It is the best business in the group, and stability control will lift content from FY28, but about a quarter of its pre-tax profit is interest on cash, its operating profit grew only 4% in FY26, and its parent has been selling shares. For ZF to fit my estimate the price would need to fall by about half. **My view: ZF is a quality business priced as if stability control arrives early and in full.**",
                 },
                 {
                     label: 'A check from capacity and capex',
@@ -647,12 +615,6 @@ export const autoRelatedHeavy: SectorOverview = {
             view: "**Fast growth that consumes cash.** Revenue rose 32% in Q1 on trailer-axle volume up 34%, and tractors and exports are growing. But FY26 free cash was −₹72cr, its cash cycle has doubled to 153 days, the 12.2% margin missed its 14–15% hope, and its auditor found statements to banks that did not match its books. The price needs about {need:Kross|18}% a year against my ~15%. On 9 Oct 2026 the price moved into the fits band; it stays wait, because the growth is still being paid for with working capital and borrowing, and the only filing in six weeks is the corrected notice for the preferential issue.",
             watch: 'Margin back to 13–14% after truck-maker settlements; receivable and stock days falling; statements to banks agreeing with the books; seamless-tube commissioning in Q4 FY27; the result of the postal vote, closed on 30 September, on 15 lakh shares and 15 lakh warrants for promoters and others (about 4.4% dilution).',
         },
-        {
-            company: 'Frontier Springs', rank: 8, stance: 'PRICED', segment: RAIL,
-            what: "A Kanpur maker of coil springs, air springs and forgings for Indian Railways' wagons, coaches and locomotives, including Vande Bharat trains, with about 40% of the railways' coil-spring demand by its own figure.",
-            view: "**A railway winner that has stopped growing.** Revenue rose 2.4 times in two years, the margin from 16% to 27% and return on capital to 51%, with little debt. But revenue has been flat at ₹75–83cr a quarter for five quarters, Q1 profit fell 18%, the margin is guided down to 23–24%, several promises slipped, and it has a history of not co-operating with CRISIL, about ₹48cr of family-linked dealings and cash parked in shares. The price needs about {need:Frontier Springs|17–18}% a year against my ~10%.",
-            watch: 'Q2 revenue above ₹90cr; air springs above 250 coach sets a month; the FIBA trial results.',
-        },
     ],
 
     closing: {
@@ -660,12 +622,11 @@ export const autoRelatedHeavy: SectorOverview = {
         body: [
             "**Truck braking, axles and wheels.** **Automotive Axles: follow**; the cheapest company here, with about ₹385cr of net cash, to buy when the second-half truck slowdown shows without the margin breaking. **ZF CV Control Systems: wait**; the best business in the group, with stability-control content coming from FY28, at a price that needs far more growth than I expect. **Steel Strips Wheels: wait** for exports and Bhuj to deliver and for its factoring to be disclosed plainly. **Wheels India: wait** for the double-digit margin it keeps promising and for capex to stop rising. **Kross: wait** for margins, cash flow and clean reconciliations with its banks.",
             "**Tractor and off-highway drivetrain and linkages.** **Uniparts India: own**; the best free cash, net cash and a global niche at a price that does not assume its peak margin lasts, to be held through the tractor cycle. **Carraro India: follow**; a genuine 4WD growth story that fits my estimates, once its core margin recovers and its tax dispute and parent fees stay contained.",
-            "**Rail springs.** **Frontier Springs: pass**; a high-return railway supplier whose growth has stalled, priced as if it will resume, with governance habits I would want to see improve first.",
-            "**What would change my view.** For the better: large-tractor orders turning for Uniparts; Automotive Axles winning a new truck maker or Cummins export work; Carraro's clean margin back above 10%; ZF's price falling towards what stability control can justify; Steel Strips' exports recovering with the factoring disclosed; Wheels India's margin passing 9%; Kross turning cash-positive; Frontier's revenue breaking out of its plateau. For the worse: truck volumes falling for more than a year; Ashok Leyland shifting axle share to Bharat Forge; a Carraro tax demand; more capex increases at the wheel makers; further ZF stake sales; another Kross mismatch with its banks.",
-            "**What to watch next quarter.** Uniparts' Q2 revenue against Q1; Automotive Axles' margin as trucks slow; Carraro's export recovery; ZF's aluminium recovery; Steel Strips' export run-rate; Wheels India's margin; Kross's margin and receivables; Frontier's Q2 revenue and air-spring output.",
+            "**What would change my view.** For the better: large-tractor orders turning for Uniparts; Automotive Axles winning a new truck maker or Cummins export work; Carraro's clean margin back above 10%; ZF's price falling towards what stability control can justify; Steel Strips' exports recovering with the factoring disclosed; Wheels India's margin passing 9%; Kross turning cash-positive. For the worse: truck volumes falling for more than a year; Ashok Leyland shifting axle share to Bharat Forge; a Carraro tax demand; more capex increases at the wheel makers; further ZF stake sales; another Kross mismatch with its banks.",
+            "**What to watch next quarter.** Uniparts' Q2 revenue against Q1; Automotive Axles' margin as trucks slow; Carraro's export recovery; ZF's aluminium recovery; Steel Strips' export run-rate; Wheels India's margin; Kross's margin and receivables.",
         ],
         bottomLine:
-            "Own Uniparts, the group's best cash generator at a price that fits. Follow Automotive Axles for its cash and low hurdle and Carraro for 4WD growth; wait on ZF (best business, too dear), Steel Strips and Wheels India (hidden bank financing, heavy capex) and Kross (cash-hungry); pass on Frontier, whose growth has stalled.",
+            "Own Uniparts, the group's best cash generator at a price that fits. Follow Automotive Axles for its cash and low hurdle and Carraro for 4WD growth; wait on ZF (best business, too dear), Steel Strips and Wheels India (hidden bank financing, heavy capex) and Kross (cash-hungry).",
     },
 
     sources: [
@@ -701,9 +662,6 @@ export const autoRelatedHeavy: SectorOverview = {
         { label: 'Kross Annual Report FY26 (CARO bank-statement note, contingent liabilities) — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/01745faa-f3d3-4363-9d0b-e1eb630b14cb.pdf' },
         { label: 'Kross Q1 FY27 investor presentation — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=0a75808c-91b8-4932-8002-14bcb6bc0aa8.pdf' },
         { label: 'Kross rating rationale — India Ratings, Jun 2026', url: 'https://www.indiaratings.co.in/pressrelease/83241' },
-        { label: 'Frontier Springs Annual Report FY26 (related parties, remuneration) — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a08476af-27ef-4a24-9c33-3fb157989df0.pdf' },
-        { label: 'Frontier Springs Q1 FY27 investor presentation — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2121a392-c92c-4c11-98de-2f3dd87f519d.pdf' },
-        { label: 'Frontier Springs rating rationale (withdrawal) — CRISIL, May 2025', url: 'https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/FrontierSpringsLimited_May%2020_%202025_RR_368953.html' },
         { label: 'Company earnings calls and presentations, Q4 FY26 and Q1 FY27', url: 'https://www.bseindia.com/' },
     ],
 };

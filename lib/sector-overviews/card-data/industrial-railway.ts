@@ -978,6 +978,163 @@ export const industrialRailwayCharts: Record<string, ProfileCharts> = {
             }
         ],
         "statsAsOf": "23 Sep 2026"
+    },
+    "Frontier Springs": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 46
+                },
+                {
+                    "label": "Power and factory costs",
+                    "share": 13
+                },
+                {
+                    "label": "Staff",
+                    "share": 4
+                },
+                {
+                    "label": "Other costs",
+                    "share": 10
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 27
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "marginVsInput": {
+            "input": "Alloy and stainless steel bars price",
+            "periods": [
+                "Q1 FY24",
+                "Q2 FY24",
+                "Q3 FY24",
+                "Q4 FY24",
+                "Q1 FY25",
+                "Q2 FY25",
+                "Q3 FY25",
+                "Q4 FY25",
+                "Q1 FY26",
+                "Q2 FY26",
+                "Q3 FY26",
+                "Q4 FY26",
+                "Q1 FY27"
+            ],
+            "margin": [
+                12.0,
+                15.2,
+                15.2,
+                15.9,
+                19.6,
+                21.2,
+                20.7,
+                24.3,
+                26.7,
+                26.5,
+                24.7,
+                28.9,
+                24.4
+            ],
+            "index": [
+                100,
+                97,
+                97,
+                94,
+                96,
+                94,
+                91,
+                91,
+                92,
+                89,
+                90,
+                93,
+                99
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                12.0,
+                13.0,
+                21.0,
+                50.0,
+                87.0
+            ],
+            "ocf": [
+                10.0,
+                10.0,
+                12.0,
+                22.0,
+                31.0
+            ],
+            "fcf": [
+                3.84,
+                1.4700000000000006,
+                4.18,
+                7.23,
+                16.43
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "29.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "19.5x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹41cr net cash",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "46%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "27%"
+            }
+        ],
+        "statsAsOf": "23 Sep 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                74,
+                69
+            ],
+            "inventoryDays": [
+                215,
+                83
+            ],
+            "payableDays": [
+                150,
+                33
+            ],
+            "cycleDays": [
+                139,
+                119
+            ],
+            "absorbed5y": -59,
+            "receivables5y": -42,
+            "inventory5y": -17,
+            "payables5y": -1
+        }
     }
 };
 
@@ -1024,5 +1181,11 @@ export const industrialRailwayValuationInputs: Record<string, ValuationInput> = 
         "ttmEbitda": 79.0,
         "mcapAtWriting": 1245.0,
         "peAtWriting": 24.6
+    },
+    "Frontier Springs": {
+        "netDebt": -41,
+        "ttmEbitda": 85.0,
+        "mcapAtWriting": 1700.0,
+        "peAtWriting": 29.0
     }
 };

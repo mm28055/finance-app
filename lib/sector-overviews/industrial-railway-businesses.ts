@@ -32,8 +32,8 @@ const intro: OverviewSection[] = [
                 text: "**Kavach** is India's automatic train-protection system that stops trains from colliding. **Distributed power control** lets locomotives spread along a long freight train act together.",
             },
             {
-                label: 'Wheels, axles and brakes',
-                text: "Forged wheels and axles, mostly imported today, and brake systems. New Indian plants are being built to replace imports.",
+                label: 'Wheels, axles, springs and brakes',
+                text: "Forged wheels and axles, mostly imported today, and brake systems. New Indian plants are being built to replace imports. **Coil springs** and **air springs** cushion wagons and coaches on their bogies; each needs railway approval, and only two or three firms, Frontier Springs among them, hold it.",
             },
         ],
     },
@@ -46,7 +46,7 @@ const intro: OverviewSection[] = [
             {
                 columns: ['Model', 'Who', 'How the price is set', 'How fast the cash comes'],
                 rows: [
-                    ['**Indian Railways tenders**', 'All seven (Cosmic CRF for refurbishment parts)', 'Lowest bid, with quantities spread across approved suppliers', 'Annual cycle; heavy in the fourth quarter'],
+                    ['**Indian Railways tenders**', 'All eight (Cosmic CRF for refurbishment parts)', 'Lowest bid, with quantities spread across approved suppliers; Frontier Springs’ prices are fixed for the life of each order', 'Annual cycle; heavy in the fourth quarter'],
                     ['**Private and export wagon buyers**', 'Texmaco, Titagarh, Jupiter', 'Negotiated', 'Faster, but orders are lumpy'],
                     ['**Metro corporations and consortiums**', 'Titagarh, Hind Rectifiers', 'Tenders for complete trains or systems', 'Milestone payments'],
                     ['**Wagon builders and infrastructure contractors**', 'Cosmic CRF', 'Per order, as a conversion margin over steel', 'About 15–20 days from wagon builders; slower from contractors'],
@@ -247,6 +247,36 @@ const profiles: BusinessProfile[] = [
         money: "Net debt of about **₹554cr** (Screener, March 2026), up from net cash a year earlier. Capex was ₹508cr in FY25 and ₹535cr in FY26. The Odisha wheel plant costs about ₹2,600cr in total on the Q1 call (about ₹3,000cr in the annual report), of which Jupiter now puts in ₹600cr of equity (down from ₹900cr after the Italian investment); the ₹400cr battery project is extra. Borrowings doubled to ₹996cr in FY26, capex committed but not yet spent rose from ₹705cr to ₹1,506cr, and operating cash was only ₹9cr on ₹354cr of operating profit. Stone India lost ₹29.7cr before tax in FY26 before starting production. **Related parties and governance:** it bought ₹45.3cr of equipment in FY25 from Log9 Material Scientific, a firm it or its managers significantly influence; its Slovak promoter Tatravagonka is also a wheel customer and partner; and the board wants to switch ₹43.6cr of 2023 share-sale money, unused for two years, from a foundry to general purposes. The auditor's opinion is clean; CRISIL rates it AA−. Promoters hold **68.31%**, down from 72.37% in September 2023.",
         watch: ["Wagon volumes and margin recovering from 9.7%, and the order book growing again from ₹4,550cr.", "The wheel plant staying on time and budget, and finding buyers alongside Titagarh's.", "How the ₹400cr battery-storage project is funded."],
         charts: industrialRailwayCharts['Jupiter Wagons'],
+    },
+    {
+        company: 'Frontier Springs',
+        inShort: ["**A Kanpur maker of coil springs, air springs and forgings for Indian Railways'** wagons, coaches and locomotives, including Vande Bharat trains, with about 40% of the railways' coil-spring demand by its own figure.", "**Good:** revenue rose 2.4 times in two years, the margin went from 16% to 27% and return on capital to 51%, with little debt. **Bad:** revenue has been flat at ₹75–83cr a quarter for five quarters, Q1 FY27 profit fell 18%, the margin is guided down to 23–24%, several promises slipped, and it has a history of not co-operating with CRISIL.", "**Verdict: pass.** A high-return railway supplier whose growth has stalled, priced as if it will resume."],
+        tagline: "A railway spring maker: coil springs, air springs and forged parts for Indian Railways, sold by tender.",
+        revenue: '₹322cr (FY26, standalone)',
+        products: [
+            { name: 'Coil springs', text: "Hot-coiled steel springs for the suspension of wagons, coaches and locomotives; about ₹175cr of FY26 gross sales. It claims about 40% of Indian Railways' demand, with one or two other approved makers." },
+            { name: 'Air springs', text: "Rubber air bags that cushion passenger coaches, made with German technology (ContiTech); about ₹150cr of FY26 gross sales at about ₹1.25 lakh each, four per coach. It makes 180–200 coach sets a month against capacity of about 300." },
+            { name: 'Forgings', text: "Forged parts for rolling stock from 1-, 3- and 6-tonne hammers, ‘₹60-plus cr’ of FY26 gross sales against a ₹75–80cr target; it claims 20–25% of the railways' demand, with seven or eight rivals." },
+            { name: 'FIBA', text: "A system that senses a failed air spring and applies the brakes; approved only as a ‘developmental vendor’, now in a 12-month trial, with ₹20–25cr of revenue hoped for from FY28." },
+        ],
+        revenueText: "The company reports no segments. By management's FY26 gross figures (including GST), **coil springs were about ₹175cr, air springs about ₹150cr and forgings ‘₹60-plus cr’**. Almost all revenue comes from Indian Railways' coach and locomotive factories; wagon builders are only 10–15%, and exports are nil. The order book was about ₹370cr in June.",
+        mixes: [
+            { caption: 'Gross sales by division, FY26 (Q4 FY26 call)', parts: [{ label: 'Coil springs', share: 45 }, { label: 'Air springs', share: 39 }, { label: 'Forgings', share: 16 }], note: 'Management’s rounded gross figures, including GST.' },
+        ],
+        customers: ["**Indian Railways' production units**: the coach, wagon and locomotive factories (ICF, RCF, MCF, CLW, BLW, PLW), which buy by lowest-bid tender at prices fixed for each order.", "**Wagon builders** such as Titagarh, Texmaco and Jupiter, 10–15% of revenue.", "**A promoter-linked firm**, Frontier Alloy Steels, bought ₹13.4cr in FY26; dealings with family-linked firms came to about ₹48cr (about 15% of revenue)."],
+        difficulty: { level: 'High', text: "Every product needs approval from the railways' standards body (RDSO), and a newly approved maker waits about two years for a regular order; no new rival has been approved in its products. It says it has supplied almost 15,000 air springs without a single failure, while rivals importing from China see failures." },
+        moat: "Forty years of approved supply and a large share of a market with only two or three approved makers keep new entrants out. The weakness is the buyer: one customer that buys by tender at fixed prices, so a margin won in one tender can be lost in the next, and new products wait on railway trials.",
+        salesDrivers: ["**The railway capital budget**: about ₹2.78 lakh crore for FY27, and the pace at which coaches, Vande Bharat trains and wagons are ordered and delivered.", "**Tender wins and delivery schedules**: revenue has been stuck at ₹75–83cr a quarter for five quarters; Q1 FY27 was hit by an industrial-gas shortage and late air-spring bellows, which management says are behind it.", "**More air springs**: output of 180–200 coach sets a month against capacity of about 300; its own target is above 250.", "**New products**: FIBA from FY28 if trials pass, and forgings, where it wants more work because ‘automotive has no margin’. Promised Alstom air-spring orders have not appeared.", "**Guidance**: ₹500cr of gross FY27 revenue (reaffirmed in August) and ₹1,000cr in five years; FY27 capex is only ₹20–25cr, from its own cash, since plants run at about 70%."],
+        inputs: "**Spring-steel bars** (alloy steel) for coil springs, **rubber bellows and fittings** for air springs, some imported, and **steel billets** for forgings, plus industrial gas and power for heating and forging. Materials were 46% of sales in FY26.",
+        costEffect: "**Not protected within a tender.** Prices are fixed for the life of each railway order, so a steel or energy spike hurts for six to eight months until new tenders reprice. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points (27% to 22%). **What happened:** India's alloy-steel bar price index was almost flat, 100 in Q1 FY24 and 99 in Q1 FY27, yet the operating margin doubled from 12.0% to 24.4%. The rise came from new tenders at better prices and from air springs filling a small plant, not from cheaper steel; the margin peaked at 28.9% in Q4 FY26, and management guides 23–24% for FY27 on steel and energy inflation.",
+        competitors: [
+            { name: 'Other RDSO-approved spring makers', note: 'One or two other approved makers in coil and air springs; rivals importing air springs from China report failures, it says.' },
+            { name: 'Railway forging suppliers', note: 'Seven or eight approved forgers, where its share is only 20–25%.' },
+        ],
+        position: "**About 40% of Indian Railways' coil-spring demand and a similar share of air springs** (company), and 20–25% in forgings.",
+        money: "Net cash of **₹41cr** on Screener's figures; borrowings are ₹10.8cr, against ₹38.6cr of mutual funds and ₹6.1cr of listed shares. FY26 operating cash was ₹31cr, only about 36% of its ~₹87cr operating profit, as receivables rose and supplier credit shrank, and free cash was about ₹16cr. FY27 capex is ₹20–25cr from internal cash. It pays out only about 1% of profit, while five family directors took about ₹7.2cr. CRISIL rated it ‘Issuer Not Cooperating’ from 2022 until the rating was withdrawn in 2025. No equity raised. Promoters hold **51.76%**, unchanged over three years.",
+        watch: ["Q2 FY27 revenue above ₹90cr.", "Air springs above 250 coach sets a month.", "The FIBA trial results."],
+        charts: industrialRailwayCharts['Frontier Springs'],
     },
 ];
 

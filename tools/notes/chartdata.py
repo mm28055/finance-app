@@ -155,6 +155,7 @@ CONFIG = {
         'Texmaco Rail': ('TEXRAIL', None, HR, False),
         'MV Electrosystems': ('MVELECTRO_s', None, PCB, False),
         'Concord Control': ('543619', None, PCB, False),
+        'Frontier Springs': ('FRONTSP_s', None, ALLOYSTEEL, True),
     },
     'industrial-machinery': {
         'Jyoti CNC Auto.': ('JYOTICNC', None, CASTING, False),
@@ -732,7 +733,6 @@ CONFIG = {
         'Rico Auto Industries': ('RICOAUTO', None, ALU, True),
         'NDR Auto Components': ('NDRAUTO', None, None, True),
         'Kross': ('KROSS_s', None, None, True),
-        'Frontier Springs': ('FRONTSP_s', None, ALLOYSTEEL, True),
         'Menon Bearings': ('MENONBE', None, None, True),
         'Poojaa Precision Engg': ('544844_s', None, None, True),
         'Studds Accessories': ('STUDDS', None, PP, True),

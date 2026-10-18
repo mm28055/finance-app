@@ -1,9 +1,9 @@
 import { BusinessProfile, OverviewSection } from './types';
 import { autoRelatedCharts } from './card-data/auto-related';
 
-// Tab 2 of the Auto Related · CV, tractor, off-highway and rail systems note: what each company actually does.
+// Tab 2 of the Auto Related · CV, tractor and off-highway systems note: what each company actually does.
 // Revenue totals are the filed figures (Screener: consolidated where the company files consolidated accounts;
-// Automotive Axles, Kross and Frontier Springs standalone). Splits, capacities and customers come from the
+// Automotive Axles and Kross standalone). Splits, capacities and customers come from the
 // companies' latest calls, presentations, annual reports and rating reports; where a figure is not disclosed,
 // the text says so.
 
@@ -11,13 +11,13 @@ const intro: OverviewSection[] = [
     {
         heading: 'How to read this tab',
         body: [
-            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it does, where the money comes from and its charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed figures (Automotive Axles, Kross and Frontier Springs standalone, the others consolidated); splits are from each company's latest call, presentation or annual report. Four companies have a cost chart that sets their margin against an Indian wholesale price index for their main input: **hot-rolled steel** for Wheels India and Steel Strips Wheels, **steel forgings** for Automotive Axles, and **alloy-steel bars** for Frontier Springs. The other four buy a mix of castings, forgings, bars and aluminium with no single index that fits, so their cards explain in words what drives costs and how their contracts with vehicle makers pass metal prices on. One caution on debt: **the two wheel makers use about ₹900cr of bill discounting and factoring** that their reported borrowings, and so the net-debt figures here, leave out.",
+            "One profile per company, grouped as in Tab 1. Each card opens with a three-line summary and the key numbers (P/E and EV/EBITDA are live), then what it does, where the money comes from and its charts; customers, costs, competitors and ownership are under **More detail**. Revenue totals are filed figures (Automotive Axles and Kross standalone, the others consolidated); splits are from each company's latest call, presentation or annual report. Three companies have a cost chart that sets their margin against an Indian wholesale price index for their main input: **hot-rolled steel** for Wheels India and Steel Strips Wheels, and **steel forgings** for Automotive Axles. The other four buy a mix of castings, forgings, bars and aluminium with no single index that fits, so their cards explain in words what drives costs and how their contracts with vehicle makers pass metal prices on. One caution on debt: **the two wheel makers use about ₹900cr of bill discounting and factoring** that their reported borrowings, and so the net-debt figures here, leave out.",
         ],
     },
     {
         heading: 'The businesses, in plain words',
         body: [
-            "Eight companies that make heavy parts for trucks, trailers, tractors, construction machines and trains, in three groups.",
+            "Seven companies that make heavy parts for trucks, trailers, tractors and construction machines, in two groups.",
         ],
         points: [
             {
@@ -27,10 +27,6 @@ const intro: OverviewSection[] = [
             {
                 label: 'Tractor and off-highway drivetrain and linkages',
                 text: "Carraro India makes axles and transmissions for Indian tractors and backhoe loaders, and exports through its Italian parent; Uniparts makes tractor hitches and precision pins for the world's big tractor and construction-machine makers, sold mostly from its own warehouses in the US and Europe. **Long approval cycles keep customers, and India's shift to four-wheel-drive tractors adds value per tractor**, but both follow farm incomes and building activity, at home and abroad.",
-            },
-            {
-                label: 'Rail springs',
-                text: "Frontier Springs makes coil springs, air springs and forgings for Indian Railways. **One buyer, lowest-bid tenders and prices fixed for the life of each order** decide the margin; railway approval keeps new rivals out, but new products wait on railway trials.",
             },
         ],
     },
@@ -47,7 +43,6 @@ const intro: OverviewSection[] = [
                     ['**Supplies to the parent group**', 'ZF (about 30% of revenue), Carraro (about 34%), Automotive Axles (exports to Cummins)', 'Goods and engineering services at prices the group sets, while royalties and fees flow back to it', 'Group terms; ZF’s parent paid down ₹245cr it owed in FY26'],
                     ['**Replacement parts and open-market sales**', 'ZF (aftermarket 14%), Kross (trailer axles), Steel Strips (export aftermarket wheels), Uniparts (about 12%)', 'Dealer or list prices set by the company, though Kross can only follow the market leader’s price in trailer axles', 'Dealers pay fairly quickly, but trailer builders and export buyers take longer; Kross’s cash cycle is 153 days'],
                     ['**Stock held abroad for delivery on demand**', 'Uniparts (warehouse sales 56% of Q1 FY27)', 'A premium over direct exports for delivering to global machine makers from local stock', 'Slow: five to six months of stock and about 136 days of revenue tied up, but high free cash'],
-                    ['**Railway tenders**', 'Frontier Springs', 'A price fixed for the life of each order, won by lowest bid', 'Receivables of about 70 days, plus retention money; FY26 operating cash was only about 36% of operating profit (₹31cr of about ₹87cr)'],
                 ],
             },
         ],
@@ -283,36 +278,6 @@ const profiles: BusinessProfile[] = [
         money: "Net debt of **₹23cr** on Screener's figures; borrowings were ₹53.7cr in March plus ₹34.9cr of bills discounted with recourse, and cash fell to ₹25.4cr as the ₹250cr raised at the September 2024 listing was spent. India Ratings rates it A/Stable and expects free cash to stay negative in FY27. FY26 capex was ₹100cr and free cash −₹72cr; the seamless-tube plant is funded partly by a ~₹100cr term loan drawn as machines arrive, with ₹20–25cr of other capex in FY27. No dividend. Its auditor noted that quarterly statements to banks did not agree with the books, a gap seen for eight quarters. Promoters hold **68.57%**, up slightly from 67.7% at listing.",
         watch: ["Margin back to 13–14% after truck-maker settlements.", "Receivable and stock days falling.", "Quarterly statements to banks agreeing with the books.", "Seamless-tube commissioning in Q4 FY27."],
         charts: autoRelatedCharts['Kross'],
-    },
-    {
-        company: 'Frontier Springs',
-        inShort: ["**A Kanpur maker of coil springs, air springs and forgings for Indian Railways'** wagons, coaches and locomotives, including Vande Bharat trains, with about 40% of the railways' coil-spring demand by its own figure.", "**Good:** revenue rose 2.4 times in two years, the margin went from 16% to 27% and return on capital to 51%, with little debt. **Bad:** revenue has been flat at ₹75–83cr a quarter for five quarters, Q1 FY27 profit fell 18%, the margin is guided down to 23–24%, several promises slipped, and it has a history of not co-operating with CRISIL.", "**Verdict: pass.** A high-return railway supplier whose growth has stalled, priced as if it will resume."],
-        tagline: "A railway spring maker: coil springs, air springs and forged parts for Indian Railways, sold by tender.",
-        revenue: '₹322cr (FY26, standalone)',
-        products: [
-            { name: 'Coil springs', text: "Hot-coiled steel springs for the suspension of wagons, coaches and locomotives; about ₹175cr of FY26 gross sales. It claims about 40% of Indian Railways' demand, with one or two other approved makers." },
-            { name: 'Air springs', text: "Rubber air bags that cushion passenger coaches, made with German technology (ContiTech); about ₹150cr of FY26 gross sales at about ₹1.25 lakh each, four per coach. It makes 180–200 coach sets a month against capacity of about 300." },
-            { name: 'Forgings', text: "Forged parts for rolling stock from 1-, 3- and 6-tonne hammers, ‘₹60-plus cr’ of FY26 gross sales against a ₹75–80cr target; it claims 20–25% of the railways' demand, with seven or eight rivals." },
-            { name: 'FIBA', text: "A system that senses a failed air spring and applies the brakes; approved only as a ‘developmental vendor’, now in a 12-month trial, with ₹20–25cr of revenue hoped for from FY28." },
-        ],
-        revenueText: "The company reports no segments. By management's FY26 gross figures (including GST), **coil springs were about ₹175cr, air springs about ₹150cr and forgings ‘₹60-plus cr’**. Almost all revenue comes from Indian Railways' coach and locomotive factories; wagon builders are only 10–15%, and exports are nil. The order book was about ₹370cr in June.",
-        mixes: [
-            { caption: 'Gross sales by division, FY26 (Q4 FY26 call)', parts: [{ label: 'Coil springs', share: 45 }, { label: 'Air springs', share: 39 }, { label: 'Forgings', share: 16 }], note: 'Management’s rounded gross figures, including GST.' },
-        ],
-        customers: ["**Indian Railways' production units**: the coach, wagon and locomotive factories (ICF, RCF, MCF, CLW, BLW, PLW), which buy by lowest-bid tender at prices fixed for each order.", "**Wagon builders** such as Titagarh, Texmaco and Jupiter, 10–15% of revenue.", "**A promoter-linked firm**, Frontier Alloy Steels, bought ₹13.4cr in FY26; dealings with family-linked firms came to about ₹48cr (about 15% of revenue)."],
-        difficulty: { level: 'High', text: "Every product needs approval from the railways' standards body (RDSO), and a newly approved maker waits about two years for a regular order; no new rival has been approved in its products. It says it has supplied almost 15,000 air springs without a single failure, while rivals importing from China see failures." },
-        moat: "Forty years of approved supply and a large share of a market with only two or three approved makers keep new entrants out. The weakness is the buyer: one customer that buys by tender at fixed prices, so a margin won in one tender can be lost in the next, and new products wait on railway trials.",
-        salesDrivers: ["**The railway capital budget**: about ₹2.78 lakh crore for FY27, and the pace at which coaches, Vande Bharat trains and wagons are ordered and delivered.", "**Tender wins and delivery schedules**: revenue has been stuck at ₹75–83cr a quarter for five quarters; Q1 FY27 was hit by an industrial-gas shortage and late air-spring bellows, which management says are behind it.", "**More air springs**: output of 180–200 coach sets a month against capacity of about 300; its own target is above 250.", "**New products**: FIBA from FY28 if trials pass, and forgings, where it wants more work because ‘automotive has no margin’. Promised Alstom air-spring orders have not appeared.", "**Guidance**: ₹500cr of gross FY27 revenue (reaffirmed in August) and ₹1,000cr in five years; FY27 capex is only ₹20–25cr, from its own cash, since plants run at about 70%."],
-        inputs: "**Spring-steel bars** (alloy steel) for coil springs, **rubber bellows and fittings** for air springs, some imported, and **steel billets** for forgings, plus industrial gas and power for heating and forging. Materials were 46% of sales in FY26.",
-        costEffect: "**Not protected within a tender.** Prices are fixed for the life of each railway order, so a steel or energy spike hurts for six to eight months until new tenders reprice. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points (27% to 22%). **What happened:** India's alloy-steel bar price index was almost flat, 100 in Q1 FY24 and 99 in Q1 FY27, yet the operating margin doubled from 12.0% to 24.4%. The rise came from new tenders at better prices and from air springs filling a small plant, not from cheaper steel; the margin peaked at 28.9% in Q4 FY26, and management guides 23–24% for FY27 on steel and energy inflation.",
-        competitors: [
-            { name: 'Other RDSO-approved spring makers', note: 'One or two other approved makers in coil and air springs; rivals importing air springs from China report failures, it says.' },
-            { name: 'Railway forging suppliers', note: 'Seven or eight approved forgers, where its share is only 20–25%.' },
-        ],
-        position: "**About 40% of Indian Railways' coil-spring demand and a similar share of air springs** (company), and 20–25% in forgings.",
-        money: "Net cash of **₹41cr** on Screener's figures; borrowings are ₹10.8cr, against ₹38.6cr of mutual funds and ₹6.1cr of listed shares. FY26 operating cash was ₹31cr, only about 36% of its ~₹87cr operating profit, as receivables rose and supplier credit shrank, and free cash was about ₹16cr. FY27 capex is ₹20–25cr from internal cash. It pays out only about 1% of profit, while five family directors took about ₹7.2cr. CRISIL rated it ‘Issuer Not Cooperating’ from 2022 until the rating was withdrawn in 2025. No equity raised. Promoters hold **51.76%**, unchanged over three years.",
-        watch: ["Q2 FY27 revenue above ₹90cr.", "Air springs above 250 coach sets a month.", "The FIBA trial results."],
-        charts: autoRelatedCharts['Frontier Springs'],
     },
 ];
 
