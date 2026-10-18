@@ -10,7 +10,8 @@ import { companyHref } from '@/lib/company-link';
 // top two takeaways). Company names find the company on the dashboard.
 
 type Extra = { call?: string; inPortfolio?: boolean };
-export type ResultRow = QuarterResult & Extra;
+/** `call` is the note's call here; the result's own call note is `callNote`. */
+export type ResultRow = Omit<QuarterResult, 'call'> & Extra & { callNote?: QuarterResult['call'] };
 export type CallRow = Extra & {
     company: string; sector: string; quarter: string; general: boolean; date: string;
     score: number | null; guidance: { min: number | null; max: number | null; fy?: string } | null; points: string[];
@@ -94,7 +95,7 @@ export function ResultsFeed({ results, onCompany }: { results: ResultRow[]; onCo
                         {list.map(r => (
                             <div key={`${r.company}-${r.quarter}`} className="px-3 py-2.5">
                                 <div className="flex flex-wrap items-center gap-2"><Name r={r} onCompany={onCompany} /><span className="text-[10px] text-gray-400">{r.sector}</span></div>
-                                <ResultCard result={r} />
+                                <ResultCard result={{ ...r, call: r.callNote }} />
                             </div>
                         ))}
                     </div>

@@ -50,8 +50,9 @@ export async function filingsFeed(opts: { calls?: 'all' | 'portfolio' } = {}) {
         category: n.kind === 'move' ? 'Price move' : n.kind === 'holder' ? 'Large holder' : 'Market and policy',
         url: n.url || '', source: n.source, impact: (n.dot ? 'high' : 'normal') as 'high' | 'normal',
     }));
-    // Results read the night they came out (lib/results), newest first.
-    const results = (store as unknown as ResultsStore).results.map(withCall);
+    // Results read the night they came out (lib/results), newest first. The note's call goes in `call`
+    // like every other row, so the result's own call note moves to `callNote`.
+    const results = (store as unknown as ResultsStore).results.map(({ call: callNote, ...r }) => ({ ...withCall(r), callNote }));
 
     // Earnings calls, AGMs and special calls: the last two months for the Calls tab; six months for holdings
     // (the My portfolio tab's longer views).
