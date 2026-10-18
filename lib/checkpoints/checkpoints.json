@@ -32827,6 +32827,90 @@
    "createdOn": "2026-10-17",
    "status": "pending",
    "project": "kanohar-electricals-gangol-expansion"
+  },
+  {
+   "id": "steamhouse-india-q4fy27-1",
+   "company": "Steamhouse India",
+   "sector": "Chemicals",
+   "text": "At least ₹1,000 of operating profit per tonne of steam in Q3 and Q4 FY27 (Q1 was ₹1,011; FY26 ₹783), as guided",
+   "due": "Q4 FY27",
+   "ifMet": "The Q1 margin was not a one-off; supports the growth estimate",
+   "ifMissed": "Q1 was helped by timing of coal pass-through; growth estimate comes down",
+   "createdOn": "2026-10-18",
+   "status": "pending"
+  },
+  {
+   "id": "steamhouse-india-q4fy27-2",
+   "company": "Steamhouse India",
+   "sector": "Chemicals",
+   "text": "FY27 operating profit of at least ₹108cr, the first year of the guided 30–35% a year (from ₹83.5cr in FY26)",
+   "due": "Q4 FY27",
+   "ifMet": "On management's path; the price question remains",
+   "ifMissed": "First miss as a listed company against a price that assumes the plan",
+   "createdOn": "2026-10-18",
+   "status": "pending"
+  },
+  {
+   "id": "steamhouse-india-q4fy27-3",
+   "company": "Steamhouse India",
+   "sector": "Chemicals",
+   "text": "Gross debt down to about ₹220cr after ₹180cr of IPO money repays loans, with FY27 finance cost below FY26's ₹21.7cr and debt under 2.5 times operating profit (ICRA's trigger)",
+   "due": "Q4 FY27",
+   "ifMet": "Balance sheet repaired; the conditional re-pledge falls away",
+   "ifMissed": "Debt rising again with capex overruns; stays a pass",
+   "createdOn": "2026-10-18",
+   "status": "pending"
+  },
+  {
+   "id": "steamhouse-india-q4fy27-4",
+   "company": "Steamhouse India",
+   "sector": "Chemicals",
+   "text": "Steam bought from the promoter's Sanjoo Dyeing and other group dealings falling well below FY26's ₹362.5cr (74% of revenue)",
+   "due": "Q4 FY27",
+   "ifMet": "Needed before any move towards follow",
+   "ifMissed": "Related-party dependence stays; remains a pass",
+   "createdOn": "2026-10-18",
+   "status": "pending"
+  },
+  {
+   "id": "steamhouse-india-fy27-four-boilers-m1",
+   "company": "Steamhouse India",
+   "sector": "Chemicals",
+   "text": "Jhagadia, Nandesari-2, Vapi-3 and Pirana running in FY27, taking capacity to 465 tonnes an hour",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-18",
+   "status": "pending",
+   "project": "steamhouse-india-fy27-four-boilers"
+  },
+  {
+   "id": "steamhouse-india-tarapur-m1",
+   "company": "Steamhouse India",
+   "sector": "Chemicals",
+   "text": "Tarapur 60 tonnes-an-hour boiler running by the end of FY28",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-18",
+   "status": "pending",
+   "project": "steamhouse-india-tarapur"
+  },
+  {
+   "id": "steamhouse-india-ipo-boilers-m1",
+   "company": "Steamhouse India",
+   "sector": "Chemicals",
+   "text": "Ankleshwar-3, Panoli-2 and Dahej GIDC-2 running in Q1 FY29, taking capacity to 705 tonnes an hour",
+   "due": "Q1 FY29",
+   "createdOn": "2026-10-18",
+   "status": "pending",
+   "project": "steamhouse-india-ipo-boilers"
+  },
+  {
+   "id": "steamhouse-india-una-bulk-drug-park-m1",
+   "company": "Steamhouse India",
+   "sector": "Chemicals",
+   "text": "The ₹311cr Una agreement signed",
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-18",
+   "status": "pending",
+   "project": "steamhouse-india-una-bulk-drug-park"
   }
  ]
 }

@@ -35214,6 +35214,81 @@
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=a5d439bd-564a-4444-96a7-3d9646838753.pdf"
    ],
    "updatedOn": "2026-10-17"
+  },
+  {
+   "company": "Steamhouse India",
+   "sector": "Chemicals",
+   "style": "Promoter-run",
+   "styleNote": "Founded in 2015 and run by its promoter, Vishal Budhia of Surat, who started Gujarat's first community boiler in 2014 and is Chairman and Managing Director. He holds 70.5% directly after the IPO, and three family trusts (trustees he and his wife Ritu; beneficiaries include their daughters) hold another 6.75%; promoters and group own 77.96%. The family's Sanjoo Dyeing & Printing group is both a large customer and a steam supplier, and the two executive directors came from Sanjoo-linked mills. Three of six directors are independent, one of whom sits with the promoter on another company's board. Executive pay is modest: the chairman was paid ₹0.54cr in FY26.",
+   "people": [
+    {
+     "name": "Vishal Budhia",
+     "role": "Chairman & Managing Director",
+     "since": "Director since the company was formed in 2015; managing director since March 2021 (reappointed to March 2031); chairman since June 2023",
+     "family": true,
+     "relation": "Promoter and founder; husband of Ritu Budhia",
+     "stake": "70.5% after the IPO (86.97% before; sold 75.3 lakh shares in the offer for sale), plus trusteeship of three family trusts holding 6.75%",
+     "bio": "Vishal Budhia, 50, attended the B.Sc. course at South Gujarat University and has more than 30 years in textile processing and 11 in community boilers. He is secretary of the South Gujarat Textile Processors Welfare body and a director of Sachin Infra Environment (a common effluent plant), the family's Sanjoo companies, Aerohouse Aviation and Sanjoo Dyeing Inc. (US), from which Steamhouse charters an aircraft. He was paid ₹0.54cr in FY26 plus ₹0.29cr of reimbursed expenses."
+    },
+    {
+     "name": "Ritu Budhia",
+     "role": "Promoter (not on the board)",
+     "since": "Promoter",
+     "family": true,
+     "relation": "Wife of Vishal Budhia",
+     "stake": "300 shares directly; trustee of the VSB, Budhia and VB Business Trusts",
+     "bio": "Ritu Budhia, 49, is a commerce graduate of the University of Mumbai and earlier ran a proprietorship, Green Energy. She is a trustee of the three promoter trusts set up in August 2023."
+    },
+    {
+     "name": "Yadav Lalankumar Dayanand",
+     "role": "Executive Director",
+     "since": "August 2018",
+     "family": false,
+     "bio": "Yadav Lalankumar, 52, has no formal education and about 14 years in management, earlier at Sanjoo Dyeing; he is also a director of the Sanjoo companies and Aerohouse Aviation. He was paid ₹0.07cr in FY26 and holds no shares."
+    },
+    {
+     "name": "Ramprakash B. Sharma",
+     "role": "Executive Director",
+     "since": "July 2020",
+     "family": false,
+     "bio": "Ramprakash Sharma, 61, is a commerce graduate of the University of Rajasthan and an associate company secretary with 22 years of experience, earlier at Shilpa Dyeing & Printing Mills. He was paid ₹0.21cr in FY26."
+    },
+    {
+     "name": "Vaibhav Gattani",
+     "role": "Chief Financial Officer",
+     "since": "June 2022",
+     "family": false,
+     "bio": "Vaibhav Gattani is a chartered accountant and commerce graduate of JNV University, Jodhpur, and worked as a banker at Axis, Federal, Kotak, AU Small Finance and YES Bank before joining. He led the Q1 FY27 call's guidance on volumes and ₹1,000-a-tonne profit. He was paid ₹0.64cr in FY26."
+    },
+    {
+     "name": "Suchi Goenka",
+     "role": "Chief Project Officer",
+     "since": "July 2015",
+     "family": false,
+     "bio": "Suchi Goenka is a commerce graduate of VNSGU, Surat, and joined from Sanjoo Dyeing when the company was formed. She was paid ₹0.24cr in FY26."
+    },
+    {
+     "name": "Mehulkumar B. Chatniwala",
+     "role": "Deputy Chief Operating Officer",
+     "since": "Joined January 2023; promoted July 2024",
+     "family": false,
+     "bio": "Mehulkumar Chatniwala is a mechanical engineer from South Gujarat University who worked at Hindalco (Birla Copper), GHCL, Nirma, Baroda Rayon and Gujarat Glass. He was paid ₹0.18cr in FY26."
+    },
+    {
+     "name": "Shyam Bhadresh Kapadia",
+     "role": "Company Secretary & Compliance Officer",
+     "since": "July 2022",
+     "family": false,
+     "bio": "Shyam Kapadia holds commerce and law degrees from VNSGU and is a fellow company secretary; he worked at Laxmi Diamond and Bigbloc Construction before joining. He was paid ₹0.13cr in FY26."
+    }
+   ],
+   "changes": "Head of projects and design Himmat Singh Chauhan retired in May 2026. The board of six (three independent: Richa Goyal, Vinay Sonthalia and Baldevsinh Rathod, a retired Gujarat pollution-board scientist) is unchanged for three years. One promoter-group member, Ambika Agarwal, refused to give information for the prospectus. No changes filed since listing on 17 September 2026.",
+   "sources": [
+    "https://www.sebi.gov.in/filings/public-issues/sep-2026/steamhouse-india-limited-prospectus_104485.html",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=3566973f-5ed0-4863-aad7-828db9a73be1.pdf",
+    "https://steamhouse.in/"
+   ],
+   "updatedOn": "2026-10-18"
   }
  ]
 }

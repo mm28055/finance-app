@@ -13506,6 +13506,61 @@
    "status": "planned",
    "source": "Q1 FY27 call (Oct 2026)",
    "updatedOn": "2026-10-17"
+  },
+  {
+   "id": "steamhouse-india-fy27-four-boilers",
+   "company": "Steamhouse India",
+   "sector": "Chemicals",
+   "name": "Four boilers for FY27 (Jhagadia, Nandesari-2, Vapi-3, Pirana)",
+   "what": "Jhagadia 30 tonnes an hour on coal (second-hand equipment), Nandesari-2 30 on refuse-derived fuel and farm waste, Vapi-3 30 on farm waste, refuse fuel or light oil, and Pirana (Ahmedabad) 30 on municipal-waste fuel for the city corporation, half-funded by its grant; 105 tonnes an hour of 'green' capacity once done",
+   "cost": "₹164cr budgeted; ₹143cr spent by 31 July 2026 with about ₹60cr still needed (Jhagadia ₹30.8cr against ₹15cr, Nandesari-2 ₹46.3cr against ₹39.4cr, Vapi-3 ₹54.9cr against ₹40cr, Pirana ₹11.5cr of ₹69.5cr)",
+   "expectedStart": "FY27 (call); Pirana was due by April 2025 and has sought an extension to June 2027",
+   "adds": "120 tonnes an hour, taking capacity from 345 to 465",
+   "status": "building",
+   "source": "Prospectus (Sep 2026); Q1 FY27 call and presentation (Oct 2026)",
+   "updatedOn": "2026-10-18",
+   "capacityAdd": "+120 tonnes an hour (+35% on 345)"
+  },
+  {
+   "id": "steamhouse-india-tarapur",
+   "company": "Steamhouse India",
+   "sector": "Chemicals",
+   "name": "Tarapur boiler (first outside Gujarat)",
+   "what": "A 60 tonnes-an-hour coal boiler and pipelines in the Tarapur industrial estate, Maharashtra",
+   "cost": "₹45cr, 75% debt; ₹13.8cr spent by July 2026",
+   "expectedStart": "Q4 FY28",
+   "adds": "60 tonnes an hour (525 in all)",
+   "status": "building",
+   "source": "Prospectus (Sep 2026); Q1 FY27 call (Oct 2026)",
+   "updatedOn": "2026-10-18",
+   "capacityAdd": "+60 tonnes an hour"
+  },
+  {
+   "id": "steamhouse-india-ipo-boilers",
+   "company": "Steamhouse India",
+   "sector": "Chemicals",
+   "name": "Three IPO-funded boilers (Ankleshwar-3, Panoli-2, Dahej GIDC-2)",
+   "what": "Three 60 tonnes-an-hour coal boilers, each with about 3km of pipeline, in estates where it already sells steam",
+   "cost": "₹114.1cr from IPO money (₹37.98cr, ₹37.98cr and ₹38.17cr): ₹48.2cr in FY27, ₹64.9cr in FY28, ₹1.05cr in FY29",
+   "expectedStart": "Q1 FY29",
+   "adds": "180 tonnes an hour, taking capacity to 705",
+   "status": "planned",
+   "source": "Prospectus (Sep 2026), objects of the offer; Q1 FY27 call (Oct 2026)",
+   "updatedOn": "2026-10-18",
+   "capacityAdd": "+180 tonnes an hour"
+  },
+  {
+   "id": "steamhouse-india-una-bulk-drug-park",
+   "company": "Steamhouse India",
+   "sector": "Chemicals",
+   "name": "Una bulk-drug park steam and power plant (build and operate)",
+   "what": "Build a 300 tonnes-an-hour steam plant with 30 MW of co-generation for the Himachal Pradesh bulk-drug park over about 24 months, then run it for 25 years; the park company pays for the plant and takes a 9% revenue share",
+   "cost": "₹311cr contract including GST, funded by the park company; no capex by Steamhouse",
+   "expectedStart": "About late 2028, if signed",
+   "adds": "Building revenue, then operating income at an expected 8–10% margin",
+   "status": "planned",
+   "source": "Q1 FY27 call (6 Oct 2026): agreement not yet signed; Outlook Business, 28 Sep 2026",
+   "updatedOn": "2026-10-18"
   }
  ]
 }

@@ -2472,6 +2472,114 @@ export const chemicalsCharts: Record<string, ProfileCharts> = {
             "payables5y": -17
         }
     },
+    "Steamhouse India": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Fuel for its own boilers",
+                    "share": 33
+                },
+                {
+                    "label": "Bought-in steam and traded coal",
+                    "share": 39
+                },
+                {
+                    "label": "Staff",
+                    "share": 3
+                },
+                {
+                    "label": "Other costs",
+                    "share": 8
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 17
+                }
+            ],
+            "note": "Company expense split (prospectus); Screener shows fuel, bought-in steam and coal together as materials (70%). Coal trading stopped in April 2026."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                24.0,
+                58.0,
+                68.0,
+                69.0,
+                83.0
+            ],
+            "ocf": [
+                27.0,
+                46.0,
+                21.0,
+                107.0,
+                100.0
+            ],
+            "fcf": [
+                5.0,
+                -36.0,
+                -79.0,
+                -33.0,
+                -39.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "77.3x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "41.5x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹325cr",
+                "note": "Borrowings including leases, minus cash, March 2026, before the September IPO; ₹180cr of IPO money is to repay debt."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "100%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "17%"
+            }
+        ],
+        "statsAsOf": "18 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                35,
+                29
+            ],
+            "inventoryDays": [
+                7,
+                44
+            ],
+            "payableDays": [
+                74,
+                99
+            ],
+            "cycleDays": [
+                -32,
+                -26
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        }
+    },
     "Laxmi Organic": {
         "costSplit": {
             "year": "FY26",
@@ -5455,6 +5563,12 @@ export const chemicalsValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 123.0,
         "mcapAtWriting": 5193.0,
         "peAtWriting": 43.0
+    },
+    "Steamhouse India": {
+        "netDebt": 325,
+        "ttmEbitda": 95.0,
+        "mcapAtWriting": 3616.0,
+        "peAtWriting": 77.3
     },
     "Laxmi Organic": {
         "netDebt": 445,
