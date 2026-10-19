@@ -1,6 +1,24 @@
 {
  "changes": [
   {
+   "date": "2026-10-20",
+   "company": "Steamhouse India",
+   "sector": "Chemicals",
+   "from": null,
+   "to": "pass",
+   "price": 129.44,
+   "why": "A useful utility, but the price already assumes management's 30–35% growth path, and the group dealings must shrink first."
+  },
+  {
+   "date": "2026-10-20",
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "from": null,
+   "to": "wait",
+   "price": 569.7,
+   "why": "A good cancer franchise that is improving, but the price already assumes years of margin recovery."
+  },
+  {
    "date": "2026-10-17",
    "company": "Kanohar Electricals",
    "sector": "Electrical Transformers",

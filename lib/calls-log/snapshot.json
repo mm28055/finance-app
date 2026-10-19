@@ -1,5 +1,5 @@
 {
- "date": "2026-10-17",
+ "date": "2026-10-20",
  "calls": {
   "Anthem Biosciences": {
    "call": "follow",
@@ -211,10 +211,6 @@
   },
   "Kross": {
    "call": "wait",
-   "sector": "Auto Related"
-  },
-  "Frontier Springs": {
-   "call": "pass",
    "sector": "Auto Related"
   },
   "Tenneco Clean Air": {
@@ -603,6 +599,10 @@
   },
   "Ellen. Indl. Gas": {
    "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Steamhouse India": {
+   "call": "pass",
    "sector": "Chemicals"
   },
   "SH Kelkar & Co": {
@@ -1557,6 +1557,10 @@
    "call": "wait",
    "sector": "Hospitals"
   },
+  "HealthCare Global (HCG)": {
+   "call": "wait",
+   "sector": "Hospitals"
+  },
   "Krishna Inst.Medi": {
    "call": "wait",
    "sector": "Hospitals"
@@ -2450,6 +2454,10 @@
    "sector": "Industrial - Railway"
   },
   "Jupiter Wagons": {
+   "call": "pass",
+   "sector": "Industrial - Railway"
+  },
+  "Frontier Springs": {
    "call": "pass",
    "sector": "Industrial - Railway"
   },
