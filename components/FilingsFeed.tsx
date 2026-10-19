@@ -65,7 +65,7 @@ export function FilingsFeed({ filings, kind = 'filings', initialCompany = '' }: 
 
     return (
         <div className="flex flex-col gap-4">
-            <div className="flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
+            <div className="sticky top-[var(--filters-top,0px)] z-10 shadow-[0_0_0_8px_#FAFBFC] flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
                 {news ? (
                     <>
                         <button className={chip(all)} onClick={() => setAll(true)} title="Including price moves with no clear reason found">All</button>

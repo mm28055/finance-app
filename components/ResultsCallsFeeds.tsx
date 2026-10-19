@@ -79,7 +79,7 @@ export function ResultsFeed({ results, onCompany }: { results: ResultRow[]; onCo
     const shown = results.filter(r => (verdict === 'any' || r.take?.verdict === verdict) && who.ok(r) && (!q || r.company.toLowerCase().includes(q.toLowerCase())));
     return (
         <div className="flex flex-col gap-4">
-            <div className="flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
+            <div className="sticky top-[var(--filters-top,0px)] z-10 shadow-[0_0_0_8px_#FAFBFC] flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
                 {[['any', 'All'], ['ahead', 'Ahead'], ['in line', 'In line'], ['behind', 'Behind'], ['mixed', 'Mixed']].map(([k, l]) => (
                     <button key={k} className={chip(verdict === k)} onClick={() => setVerdict(k)}>{l}</button>
                 ))}
@@ -128,7 +128,7 @@ export function CallsFeed({ calls, onCompany }: { calls: CallRow[]; onCompany?: 
     };
     return (
         <div className="flex flex-col gap-4">
-            <div className="flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
+            <div className="sticky top-[var(--filters-top,0px)] z-10 shadow-[0_0_0_8px_#FAFBFC] flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
                 <button className={chip(kind === 'results')} onClick={() => setKind('results')}>Results calls</button>
                 <button className={chip(kind === 'other')} onClick={() => setKind('other')}>AGMs and special calls</button>
                 <span className="w-px h-5 bg-gray-200 mx-1" />
@@ -220,7 +220,7 @@ export function CallChangesFeed({ changes, onCompany }: { changes: CallChangeRow
         && (sector === 'any' || c.sector === sector) && (!q || c.company.toLowerCase().includes(q.toLowerCase())));
     return (
         <div className="flex flex-col gap-4">
-            <div className="flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
+            <div className="sticky top-[var(--filters-top,0px)] z-10 shadow-[0_0_0_8px_#FAFBFC] flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
                 <button className={chip(dir === 'any')} onClick={() => setDir('any')}>All</button>
                 <button className={chip(dir === 'up')} onClick={() => setDir('up')}>Upgrades</button>
                 <button className={chip(dir === 'down')} onClick={() => setDir('down')}>Downgrades</button>

@@ -41,11 +41,22 @@ export function FilingsTabs({ filings, news, results = [], calls = [], callsComp
         if (tab !== 'calendar' || calendar) return;
         fetch('/api/calendar').then(r => (r.ok ? r.json() : Promise.reject())).then(setCalendar).catch(() => setCalendar('error'));
     }, [tab, calendar]);
+    // Each tab's filter bar sticks just under the tab bar (8px below it), so the tab bar's height is measured.
+    const bar = React.useRef<HTMLDivElement>(null);
+    const [barH, setBarH] = React.useState(50);
+    React.useEffect(() => {
+        const el = bar.current;
+        if (!el) return;
+        const ro = new ResizeObserver(() => setBarH(el.offsetHeight));
+        ro.observe(el);
+        return () => ro.disconnect();
+    }, []);
     const tabClass = (active: boolean) => `px-3 max-md:px-[5px] py-2 text-xs max-md:text-[11px] font-semibold border-b-2 whitespace-nowrap shrink-0 ${active ? 'text-[#4A7AAF] border-[#6B9FCC]' : 'text-gray-400 border-transparent hover:text-gray-600'}`;
     const tabs: [Tab, string][] = [['filings', 'Filings'], ['news', 'Market & Policy'], ['portfolio', 'Portfolio'], ['results', 'Results'], ['calls', 'Calls'], ['changes', 'Call changes'], ['calendar', 'Calendar']];
     return (
-        <div>
-            <div className="sticky -top-4 z-20 -mt-4 pt-4 -mx-4 px-4 bg-[#FAFBFC] flex gap-1 max-md:gap-0 shadow-[inset_0_-1px_0_#e5e7eb] mb-4 overflow-x-auto overflow-y-hidden overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" role="tablist">
+        // The tab bar sits 16px above the top when stuck (its top padding hidden), hence barH - 16.
+        <div style={{ '--filters-top': `${barH - 16 + 8}px` } as React.CSSProperties}>
+            <div ref={bar} className="sticky -top-4 z-20 -mt-4 pt-4 -mx-4 px-4 bg-[#FAFBFC] flex gap-1 max-md:gap-0 shadow-[inset_0_-1px_0_#e5e7eb] mb-4 overflow-x-auto overflow-y-hidden overscroll-x-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" role="tablist">
                 {tabs.map(([k, label]) => (
                     <button key={k} role="tab" aria-selected={tab === k} className={tabClass(tab === k)} onClick={() => setTab(k)}>
                         {/* "Changes" on a phone, so all six tabs fit across the screen. */}

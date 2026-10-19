@@ -62,7 +62,7 @@ export function PortfolioFeed({ holdings, filings, news, results, calls, callCha
 
     return (
         <div className="flex flex-col gap-4">
-            <div className="flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
+            <div className="sticky top-[var(--filters-top,0px)] z-10 shadow-[0_0_0_8px_#FAFBFC] flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
                 {[7, 30, 90, 180].map(d => <button key={d} className={chip(days === d)} onClick={() => setDays(d)}>Last {d} days</button>)}
                 <label className="flex items-center gap-1.5 px-2 py-1 rounded-lg border border-gray-200 bg-white text-[11px] text-gray-500">
                     <Search className="w-3.5 h-3.5" />
