@@ -1,6 +1,211 @@
 {
- "updated": "2026-10-17T18:23:53.669Z",
+ "updated": "2026-10-19T20:49:50.600Z",
  "results": [
+  {
+   "company": "Sobha",
+   "sector": "Realty",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-19",
+   "readOn": "2026-10-20",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 967,
+     "yearAgo": 1408,
+     "prev": 1278,
+     "yoy": -31.3,
+     "qoq": -24.3
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 69,
+     "yearAgo": 96,
+     "prev": 78,
+     "yoy": -28.1,
+     "qoq": -11.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 7,
+     "yearAgo": 7,
+     "prev": 6,
+     "yoy": 0,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 33,
+     "yearAgo": 73,
+     "prev": 51,
+     "yoy": null,
+     "qoq": -35.3
+    }
+   ],
+   "oneOff": "Other income of ₹50cr is 106% of profit before tax this quarter, so profit may not reflect the business. The year-ago quarter's profit included other income of ₹62cr (63% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue fell 31% YoY to ₹967cr; operating profit dropped 28% to ₹69cr.",
+     "Operating margin stayed flat at 7%, still far from the 15% expected by Q4.",
+     "Net profit of ₹33cr is misleading, as other income of ₹50cr exceeded pre-tax profit."
+    ],
+    "text": "Revenue fell 31% YoY to ₹967cr; operating profit dropped 28% to ₹69cr. Operating margin stayed flat at 7%, still far from the 15% expected by Q4. Net profit of ₹33cr is misleading, as other income of ₹50cr exceeded pre-tax profit.",
+    "checks": [],
+    "on": "2026-10-20"
+   }
+  },
+  {
+   "company": "Tatva Chintan",
+   "sector": "Chemicals",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-19",
+   "readOn": "2026-10-20",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 217,
+     "yearAgo": 124,
+     "prev": 167,
+     "yoy": 75,
+     "qoq": 29.9
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 41,
+     "yearAgo": 22,
+     "prev": 32,
+     "yoy": 86.4,
+     "qoq": 28.1
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 19,
+     "yearAgo": 18,
+     "prev": 19,
+     "yoy": 1,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 21,
+     "yearAgo": 10,
+     "prev": 16,
+     "yoy": 110,
+     "qoq": 31.3
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue surged 75% to ₹217cr, far ahead of the 25% full-year guidance.",
+     "Operating profit jumped 86% to ₹41cr, outpacing revenue growth.",
+     "Operating margin rose slightly to 19%, but missed the expected 20–22% band.",
+     "Net profit more than doubled, up 110% to ₹21cr."
+    ],
+    "text": "Revenue surged 75% to ₹217cr, far ahead of the 25% full-year guidance. Operating profit jumped 86% to ₹41cr, outpacing revenue growth. Operating margin rose slightly to 19%, but missed the expected 20–22% band. Net profit more than doubled, up 110% to ₹21cr.",
+    "checks": [
+     {
+      "text": "Margin back inside 20–22% band",
+      "status": "missed",
+      "why": "came in at 19%"
+     }
+    ],
+    "on": "2026-10-20"
+   }
+  },
+  {
+   "company": "Waaree Renewables",
+   "sector": "Solar PV Cells EPC",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-19",
+   "readOn": "2026-10-20",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1058,
+     "yearAgo": 775,
+     "prev": 924,
+     "yoy": 36.5,
+     "qoq": 14.5
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 160,
+     "yearAgo": 158,
+     "prev": 173,
+     "yoy": 1.3,
+     "qoq": -7.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 15,
+     "yearAgo": 20,
+     "prev": 19,
+     "yoy": -5,
+     "qoq": -4
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 81,
+     "yearAgo": 116,
+     "prev": 119,
+     "yoy": -30.2,
+     "qoq": -31.9
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue grew 37% to ₹1,058cr, but operating profit grew just 1% to ₹160cr.",
+     "Operating margin fell 5 points to 15%, exactly meeting the lowered expectation.",
+     "Net profit dropped 30% to ₹81cr, well below the 12% base-case growth."
+    ],
+    "text": "Revenue grew 37% to ₹1,058cr, but operating profit grew just 1% to ₹160cr. Operating margin fell 5 points to 15%, exactly meeting the lowered expectation. Net profit dropped 30% to ₹81cr, well below the 12% base-case growth.",
+    "checks": [
+     {
+      "text": "Solar book above 2,425 MWp",
+      "status": "unclear",
+      "why": "Not in the financial figures"
+     },
+     {
+      "text": "Margin holds at or above ~15%",
+      "status": "met",
+      "why": "Margin was exactly 15%"
+     }
+    ],
+    "on": "2026-10-20"
+   }
+  },
   {
    "company": "Bajaj Healthcare",
    "sector": "Pharma API",
@@ -1556,6 +1761,10 @@
    "reviewed": {
     "on": "2026-10-16",
     "text": "Figures match Screener. Agree it is ahead: revenue +53%, a 40% margin and pre-sales up 83% to ₹470cr, plus three new Mumbai projects (₹2,700–2,800cr of sale value). Property revenue is booked as projects finish, so one quarter's margin is lumpy; collections against the ~₹1,000cr target are the test."
+   },
+   "call": {
+    "text": "The call maintained full-year guidance and explained that the exceptional margin expansion was driven by zero debt, minimal marketing spend, and premium pricing power. It also clarified that a sharp drop in cash collections was due to early-stage milestone billing and noted regulatory delays for the Lotus Monarch project, which does not change the overall positive verdict.",
+    "on": "2026-10-20"
    }
   },
   {
@@ -2213,6 +2422,10 @@
    "reviewed": {
     "on": "2026-10-16",
     "text": "Figures match Screener. Agree it is mixed: revenue +28% and a $138m full-vehicle win (about 19% of yearly sales) are strong, but the margin stayed at 16% against the 17% watched for and net profit rose only 3%."
+   },
+   "call": {
+    "text": "The call revealed that flat margins were caused by salary hikes, German market weakness, and subcontractor costs needed to ramp up a newly announced $138M European OEM deal, prompting management to delay their near-term 18% margin target. While this confirms the profitability friction seen in the figures, the massive new deal and explanations of accounting and FX drags keep the long-term outlook solidly intact.",
+    "on": "2026-10-20"
    }
   },
   {
