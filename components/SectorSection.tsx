@@ -7,7 +7,8 @@ import { useSectorChat } from '@/context/SectorChatContext';
 import { useNotes } from '@/context/NotesContext';
 import { SectorSnapshot } from '@/components/SectorSnapshot';
 import { SectorOverview } from '@/components/SectorOverview';
-import { getSectorOverview } from '@/lib/sector-overviews';
+import type { SectorOverview as SectorOverviewData } from '@/lib/sector-overviews/shared';
+import { loadSectorNote } from '@/lib/sector-notes-client';
 import { SECTOR_FILING_DAYS } from '@/lib/filings/types';
 import { SectorFilings } from '@/components/SectorFilings';
 
@@ -15,6 +16,8 @@ import { EnrichedCompany } from './SectorList';
 
 interface SectorSectionProps {
     name: string;
+    /** The sector has a written note (lib/sector-overviews), so it gets the Overview tab. */
+    hasNote?: boolean;
     count: number;
     companies?: EnrichedCompany[];
     /** Every company on the dashboard, for notes that discuss a company since moved elsewhere. */
@@ -23,15 +26,27 @@ interface SectorSectionProps {
     defaultOpen?: boolean;
 }
 
-export function SectorSection({ name, count, companies = [], allCompanies, children, defaultOpen = false }: SectorSectionProps) {
+export function SectorSection({ name, hasNote = false, count, companies = [], allCompanies, children, defaultOpen = false }: SectorSectionProps) {
     const [isOpen, setIsOpen] = useState(defaultOpen);
     // Snapshot and Overview behave as tabs: at most one is open at a time.
     const [panel, setPanel] = useState<'none' | 'snapshot' | 'overview' | 'filings'>('none');
     const { openChat } = useSectorChat();
     const { openSectorNotes } = useNotes();
 
-    // Only sectors with a written note in lib/sector-overviews get the tab.
-    const overview = getSectorOverview(name);
+    // Only sectors with a written note in lib/sector-overviews get the tab. The note itself
+    // is fetched the first time the tab opens (pointing at the tab starts it early).
+    const [overview, setOverview] = useState<SectorOverviewData | null>(null);
+    const [overviewFailed, setOverviewFailed] = useState(false);
+    const [overviewTry, setOverviewTry] = useState(0);
+    useEffect(() => {
+        if (!hasNote || !isOpen || panel !== 'overview' || overview) return;
+        let cancelled = false;
+        setOverviewFailed(false);
+        loadSectorNote(name)
+            .then(note => { if (!cancelled) setOverview(note); })
+            .catch(err => { console.error('Failed to load the sector note', err); if (!cancelled) setOverviewFailed(true); });
+        return () => { cancelled = true; };
+    }, [hasNote, isOpen, panel, overview, name, overviewTry]);
     // Filings tab: shown when any company here has a material filing in the last
     // month. Counts come from the headlines already on each company.
     const monthAgo = React.useMemo(() => {
@@ -104,9 +119,10 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
                     </div>
                     {/* Overview Button — only where a note has been written (its column stays, so the rest line up) */}
                     <span className="w-20 shrink-0 flex">
-                    {overview && (
+                    {hasNote && (
                         <div
                             onClick={togglePanel('overview')}
+                            onPointerEnter={() => { loadSectorNote(name).catch(() => {}); }}
                             className={`px-1.5 py-1 rounded transition-all cursor-pointer flex items-center gap-1 ${panel === 'overview' ? 'text-[#6B9FCC] bg-[#D4E5F7]' : 'text-gray-400 hover:text-[#6B9FCC] hover:bg-[#D4E5F7]'}`}
                             title={`${name} sector overview`}
                         >
@@ -159,8 +175,16 @@ export function SectorSection({ name, count, companies = [], allCompanies, child
             )}
 
             {/* Sector Overview */}
-            {isOpen && panel === 'overview' && overview && (
-                <SectorOverview overview={overview} companies={companies} lookup={allCompanies} />
+            {isOpen && panel === 'overview' && hasNote && (
+                overview ? (
+                    <SectorOverview overview={overview} companies={companies} lookup={allCompanies} />
+                ) : (
+                    <div className="ml-5 max-md:ml-0 mb-2 px-4 py-6 bg-white border border-gray-200 rounded-xl text-xs text-gray-400">
+                        {overviewFailed ? (
+                            <>The note did not load. <button onClick={() => setOverviewTry(n => n + 1)} className="text-[#4A7AAF] hover:underline">Try again</button></>
+                        ) : 'Loading the note…'}
+                    </div>
+                )
             )}
 
             {/* Material filings */}

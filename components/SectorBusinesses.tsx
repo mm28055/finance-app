@@ -5,7 +5,7 @@
  * is to make, and why customers stay. Grouped by segment in ranking order.
  */
 import React from 'react';
-import { BusinessProfile, CompanyVerdict, LiveValuation, MixPart, MOVE_FLAG, ProfileCharts, STANCE_CONFIG, ValuationBlock, liveValuation } from '@/lib/sector-overviews';
+import { BusinessProfile, CompanyVerdict, LiveValuation, MixPart, MOVE_FLAG, ProfileCharts, STANCE_CONFIG, ValuationBlock, liveValuation } from '@/lib/sector-overviews/shared';
 import { PriceCheckBadge, RichText, StancePill, byRank } from './SectorOverviewBlocks';
 import type { EnrichedCompany } from './SectorList';
 

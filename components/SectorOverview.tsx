@@ -11,7 +11,7 @@ import {
     Stance,
     STANCE_CONFIG,
     liveValuation,
-} from '@/lib/sector-overviews';
+} from '@/lib/sector-overviews/shared';
 import { EnrichedCompany } from './SectorList';
 import {
     RichText,

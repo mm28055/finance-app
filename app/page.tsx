@@ -4,6 +4,7 @@ import { TranscriptStats } from "@/components/TranscriptStats";
 import { SessionTodos } from "@/components/SessionTodos";
 import { HelpButton } from "@/components/HelpButton";
 import { sessionTodos } from "@/lib/session-todos";
+import { noteIndex } from "@/lib/sector-overviews";
 import { ScrollText } from "lucide-react";
 
 export const dynamic = 'force-dynamic';
@@ -46,7 +47,7 @@ export default async function Home() {
 
       {/* Sector List */}
       <div className="max-w-6xl">
-        <SectorList sectors={sectorList} />
+        <SectorList sectors={sectorList} noteIndex={noteIndex()} />
       </div>
 
       <footer className="max-w-6xl mt-8 pt-4 border-t border-gray-200 text-center text-gray-400 text-[11px]">

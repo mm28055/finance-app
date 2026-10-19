@@ -17,7 +17,7 @@ import type { ThemesStore, ThemeCompany } from '@/lib/themes/types';
 const THEMES = (themesStore as unknown as ThemesStore);
 // The twelve ideas for about 25% a year to March 2030 (lib/top-ideas, rechecked in each review).
 const TOP_12 = new Set(TOP_IDEAS.ideas.map(i => i.company));
-import { allSectorOverviews, companyCallInfo, livePriceCheck, CALLS, type Call } from '@/lib/sector-overviews';
+import { livePriceCheck, CALLS, type Call, type NoteIndex } from '@/lib/sector-overviews/shared';
 
 export const COLOR_THEMES = {
     blue: { name: 'Blue', bg: 'bg-[#D4E5F7]', text: 'text-[#4A7AAF]', dot: 'bg-[#4A7AAF]' },
@@ -158,7 +158,7 @@ export interface SectorData {
     companies: EnrichedCompany[];
 }
 
-export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
+export const SectorList = ({ sectors, noteIndex }: { sectors: SectorData[]; noteIndex: NoteIndex }) => {
     // Keep the card servers awake while the page is open, so cards open without a wake-up delay.
     useEffect(() => {
         warmCardRoutes();
@@ -224,8 +224,10 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
     const [themeKey, setThemeKey] = useState('');
     const activeTheme = THEMES.themes.find(t => t.key === themeKey);
     const themeBy = useMemo(() => new Map<string, ThemeCompany>((activeTheme?.companies || []).map(c => [c.company, c])), [activeTheme]);
-    // The call each sector note gives a company (own / follow / wait / pass / avoid).
-    const callInfo = useMemo(() => companyCallInfo(allSectorOverviews()), []);
+    // The call each sector note gives a company (own / follow / wait / pass / avoid), from the
+    // small index the page sends; the notes themselves load when a sector or card is opened.
+    const callInfo = useMemo(() => new Map(Object.entries(noteIndex.calls)), [noteIndex]);
+    const noteSectors = useMemo(() => new Set(noteIndex.sectors), [noteIndex]);
     const calls = useMemo(() => new Map([...callInfo].map(([k, v]) => [k, v.call])), [callInfo]);
     const [callFilter, setCallFilter] = useState<Call | ''>('');
     const callCounts = useMemo(() => {
@@ -521,6 +523,7 @@ export const SectorList = ({ sectors }: { sectors: SectorData[] }) => {
                 <SectorSection
                     key={s.sector}
                     name={s.sector}
+                    hasNote={noteSectors.has(s.sector.toLowerCase())}
                     count={s.companies.length}
                     companies={s.companies}
                     allCompanies={allCompanies}

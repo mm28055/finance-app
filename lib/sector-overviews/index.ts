@@ -1,4 +1,7 @@
-import { SectorOverview, BusinessProfile, CompanyVerdict, ValuationBlock } from './types';
+// Every note's full text (~13 MB): server code only. Browser components import from './shared'.
+import { SectorOverview, ValuationBlock } from './types';
+import { companyCallInfo } from './calls';
+import type { BusinessFound, NoteIndex } from './shared';
 import { pharmaCdmo } from './pharma-cdmo';
 import { software } from './software';
 import { chemicals } from './chemicals';
@@ -51,6 +54,7 @@ import { media } from './media';
 export * from './types';
 export * from './live-valuation';
 export * from './calls';
+export type { BusinessFound, NoteIndex } from './shared';
 
 /**
  * Every written overview, keyed by the sector name it belongs to.
@@ -69,8 +73,27 @@ export function allSectorOverviews(): SectorOverview[] {
     return OVERVIEWS;
 }
 
+/**
+ * The small index the dashboard is sent instead of the notes: which sectors have one, and each
+ * company's call with its valuation cut down to that company's own inputs.
+ */
+export function noteIndex(): NoteIndex {
+    const calls: NoteIndex['calls'] = {};
+    for (const [name, info] of companyCallInfo(OVERVIEWS)) {
+        const v = info.valuation;
+        const valuation: ValuationBlock | undefined = v && {
+            writtenOn: v.writtenOn,
+            ...(v.lender ? { lender: true } : {}),
+            inputs: v.inputs[info.key] ? { [info.key]: v.inputs[info.key] } : {},
+            myGrowth: info.key in v.myGrowth ? { [info.key]: v.myGrowth[info.key] } : {},
+        };
+        calls[name] = { call: info.call, key: info.key, valuation };
+    }
+    return { sectors: OVERVIEWS.map(o => o.sector.toLowerCase()), calls };
+}
+
 /** A company's "what the company does" card, wherever it is written (bucket notes included). */
-export function businessFor(company: string): { profile: BusinessProfile; verdict?: CompanyVerdict; valuation?: ValuationBlock } | undefined {
+export function businessFor(company: string): BusinessFound | undefined {
     const key = company.trim().toLowerCase();
     const search = (o: SectorOverview): ReturnType<typeof businessFor> => {
         const profile = o.businesses?.profiles.find(p => p.company.trim().toLowerCase() === key);

@@ -27,7 +27,8 @@ import { CompanyBusinessCard } from './SectorBusinesses';
 import { CompanyNews, useUnseenNews } from './CompanyNews';
 import { AnnualReportCard } from './AnnualReportCard';
 import { BusinessShiftCard } from './BusinessShiftCard';
-import { businessFor } from '@/lib/sector-overviews';
+import type { BusinessFound } from '@/lib/sector-overviews/shared';
+import { loadCompanyBusiness } from '@/lib/sector-notes-client';
 import { displayCase } from '@/lib/display-name';
 
 const CONVICTION_CYCLE: (ConvictionLevel | null)[] = [null, 'HIGH', 'MEDIUM', 'LOW'];
@@ -165,7 +166,16 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
     // Prefer fetched detail (richer) over the light homepage object.
     const effective = detail || company;
     // The "what it does" card from the sector note, when one is written for this company.
-    const business = useMemo(() => businessFor(company.name), [company.name]);
+    // Loaded when the card opens (lib/sector-notes-client), not shipped with the dashboard.
+    const [business, setBusiness] = useState<BusinessFound | null>(null);
+    useEffect(() => {
+        if (!expanded) return;
+        let cancelled = false;
+        loadCompanyBusiness(company.name)
+            .then(found => { if (!cancelled) setBusiness(found); })
+            .catch(err => console.error('Failed to load the business card', err));
+        return () => { cancelled = true; };
+    }, [expanded, company.name]);
 
     // Get selected quarter data. Capped at ROW_QUARTERS — older quarters are
     // still analysed and retained, they just don't get a tab in the row.
@@ -334,7 +344,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                 ref={rowHeaderRef}
                 data-company-row={company.name}
                 onClick={() => setExpanded(!expanded)}
-                onPointerEnter={() => { if (!expanded && !detail) prefetchDetail(company.id); }}
+                onPointerEnter={() => { if (!expanded && !detail) { prefetchDetail(company.id); loadCompanyBusiness(company.name).catch(() => {}); } }}
                 className={`scroll-mt-28 flex items-center px-3 2xl:px-4 py-2.5 bg-white ${!isAdminMode ? 'hover:bg-[#F8FAFC] cursor-pointer' : ''} transition-colors group md:overflow-visible max-md:pl-0 max-md:overflow-x-auto max-md:overscroll-x-contain max-md:[scrollbar-width:none] max-md:[&::-webkit-scrollbar]:hidden`}
             >
                 {/* Company Info - Single Line */}

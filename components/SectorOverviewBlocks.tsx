@@ -21,7 +21,7 @@ import {
     heldReturn,
     fairPe,
     HOLD_YEARS,
-} from '@/lib/sector-overviews';
+} from '@/lib/sector-overviews/shared';
 import { EnrichedCompany } from './SectorList';
 
 /**

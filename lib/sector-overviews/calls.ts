@@ -49,7 +49,7 @@ export function movedSinceNote(info: CallInfo | undefined, live: { marketCap?: n
     return liveValuation(info.key, info.valuation, live)?.moved ?? null;
 }
 
-export function livePriceCheck(info: CallInfo | undefined, live: { marketCap?: number | null; peRatio?: number | null } | undefined): PriceCheck {
+export function livePriceCheck(info: Pick<CallInfo, 'key' | 'valuation'> | undefined, live: { marketCap?: number | null; peRatio?: number | null } | undefined): PriceCheck {
     if (!info) return 'n/a';
     return liveValuation(info.key, info.valuation, live)?.check ?? 'n/a';
 }
