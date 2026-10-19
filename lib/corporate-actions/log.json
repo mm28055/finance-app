@@ -94,5 +94,13 @@
     "old": null,
     "new": "Standard Engineering Technology",
     "source": "NSE name change → Standard Engineering Technology Limited"
+  },
+  {
+    "date": "2026-10-19T18:48:22.798Z",
+    "company": "AvenuesAI",
+    "field": "isin",
+    "old": "INE483S01020",
+    "new": "INE483S01038",
+    "source": "NSE symbol CCAVENUE"
   }
 ]

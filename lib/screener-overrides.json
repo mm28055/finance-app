@@ -7,7 +7,6 @@
     "INE00M201021": "/company/SWSOLAR/consolidated/",
     "INE994E01018": "/company/3BBLACKBIO/consolidated/",
     "INE019J01013": "/company/533259/consolidated/",
-    "INE483S01020": "/company/CCAVENUE/consolidated/",
     "INE811A01038": "/company/KIRLPNU/",
     "INE288301026": "/company/544844/",
     "INE618R01015": "/company/SGFIN/",
@@ -16,5 +15,6 @@
     "INE316L01019": "/company/BHARATWIRE/",
     "INE05CZ01011": "/company/RATNAVEER/",
     "INE877D01025": "/company/KANOHAR/",
-    "INE0FRO01022": "/company/STEAMHOUSE/"
+    "INE0FRO01022": "/company/STEAMHOUSE/",
+    "INE483S01038": "/company/CCAVENUE/consolidated/"
 }
