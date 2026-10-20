@@ -634,6 +634,11 @@
    "read": "positive",
    "change": "The company announced the complete divestment of its core Liquid Storage Terminal business to KKR for ₹1,154 crore, pivoting entirely to the Chemical and EPC segments while using the proceeds to become debt-free and return ₹200 crore to shareholders.",
    "on": "2026-10-14"
+  },
+  "Sterlite Technologies|Special call 03 Sep 2026": {
+   "read": "positive",
+   "change": "Introduced 'Project Lakshya' with aggressive FY29 targets of ₹20,000 Cr in revenue and 27%+ EBITDA margins, alongside a ₹1,000 Cr annual capex plan.",
+   "on": "2026-10-21"
   }
  }
 }
