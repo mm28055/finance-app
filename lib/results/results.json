@@ -1,6 +1,68 @@
 {
- "updated": "2026-10-19T20:49:50.600Z",
+ "updated": "2026-10-20T19:01:33.984Z",
  "results": [
+  {
+   "company": "HFCL",
+   "sector": "Cables",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-10-19",
+   "readOn": "2026-10-21",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 2542,
+     "yearAgo": 1043,
+     "prev": 1915,
+     "yoy": 143.7,
+     "qoq": 32.7
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 630,
+     "yearAgo": 190,
+     "prev": 414,
+     "yoy": 231.6,
+     "qoq": 52.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 25,
+     "yearAgo": 18,
+     "prev": 22,
+     "yoy": 7,
+     "qoq": 3
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 394,
+     "yearAgo": 72,
+     "prev": 246,
+     "yoy": 447.2,
+     "qoq": 60.2
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue surged 144% to ₹2,542cr, well ahead of the 40% full-year guidance.",
+     "Operating profit jumped 232% to ₹630cr; the 25% margin beat the 23% threshold.",
+     "Net profit soared 447% to ₹394cr, far exceeding the 18% base-case growth expectation."
+    ],
+    "text": "Revenue surged 144% to ₹2,542cr, well ahead of the 40% full-year guidance. Operating profit jumped 232% to ₹630cr; the 25% margin beat the 23% threshold. Net profit soared 447% to ₹394cr, far exceeding the 18% base-case growth expectation.",
+    "checks": [],
+    "on": "2026-10-21"
+   }
+  },
   {
    "company": "Sobha",
    "sector": "Realty",
@@ -131,6 +193,69 @@
      }
     ],
     "on": "2026-10-20"
+   }
+  },
+  {
+   "company": "Varmora Granito",
+   "sector": "Consumer Durables",
+   "quarter": "Q1 FY27",
+   "resultsDate": "2026-10-19",
+   "readOn": "2026-10-21",
+   "view": "consolidated",
+   "periods": {
+    "now": "Jun 2026",
+    "yearAgo": null,
+    "prev": "Mar 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 315.28,
+     "yearAgo": null,
+     "prev": 452.87,
+     "yoy": null,
+     "qoq": -30.4
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 28.23,
+     "yearAgo": null,
+     "prev": 70.77,
+     "yoy": null,
+     "qoq": -60.1
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 8.95,
+     "yearAgo": null,
+     "prev": 15.63,
+     "yoy": null,
+     "qoq": -6.7
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 9.71,
+     "yearAgo": null,
+     "prev": 38.55,
+     "yoy": null,
+     "qoq": -74.8
+    }
+   ],
+   "take": {
+    "verdict": "in line",
+    "points": [
+     "Revenue fell 30% sequentially to ₹315.28cr; year-ago figures are unavailable.",
+     "Operating profit dropped 60% sequentially to ₹28.23cr.",
+     "Operating margin contracted 6.7 points sequentially to 8.95%.",
+     "Net profit plunged 75% sequentially to ₹9.71cr."
+    ],
+    "text": "Revenue fell 30% sequentially to ₹315.28cr; year-ago figures are unavailable. Operating profit dropped 60% sequentially to ₹28.23cr. Operating margin contracted 6.7 points sequentially to 8.95%. Net profit plunged 75% sequentially to ₹9.71cr.",
+    "checks": [],
+    "on": "2026-10-21"
    }
   },
   {
