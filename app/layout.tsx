@@ -12,6 +12,8 @@ import { FilingsDrawer } from "@/components/FilingsDrawer";
 import { ShiftsDrawer } from "@/components/ShiftsDrawer";
 import { Toaster } from 'sonner';
 import { Menu } from 'lucide-react';
+// Vercel's visitor counter: page views show in the Vercel dashboard's Analytics tab.
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -53,6 +55,7 @@ export default function RootLayout({
             {children}
           </div>
           <Toaster position="bottom-right" richColors />
+          <Analytics />
         </Providers>
       </body>
     </html>
