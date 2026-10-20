@@ -1,6 +1,24 @@
 {
  "changes": [
   {
+   "date": "2026-10-21",
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "from": null,
+   "to": "pass",
+   "price": 887.25,
+   "why": "A better business than a year ago, but on reported profit the price needs far more growth than I expect, at what looks like the top of the fibre cycle."
+  },
+  {
+   "date": "2026-10-21",
+   "company": "HFCL",
+   "sector": "Cables",
+   "from": null,
+   "to": "avoid",
+   "price": 268.81,
+   "why": "Today's profit is real but it is peak-cycle profit, and the cash and governance record do not earn the benefit of the doubt."
+  },
+  {
    "date": "2026-10-20",
    "company": "Steamhouse India",
    "sector": "Chemicals",

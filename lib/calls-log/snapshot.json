@@ -1,5 +1,5 @@
 {
- "date": "2026-10-20",
+ "date": "2026-10-21",
  "calls": {
   "Anthem Biosciences": {
    "call": "follow",
@@ -2218,6 +2218,14 @@
    "sector": "Cables"
   },
   "JD Cables": {
+   "call": "avoid",
+   "sector": "Cables"
+  },
+  "Sterlite Technologies": {
+   "call": "pass",
+   "sector": "Cables"
+  },
+  "HFCL": {
    "call": "avoid",
    "sector": "Cables"
   },
