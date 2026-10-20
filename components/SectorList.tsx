@@ -334,6 +334,12 @@ export const SectorList = ({ sectors, noteIndex }: { sectors: SectorData[]; note
             })).filter(sector => sector.companies.length > 0);
         }
 
+        // 7b. While searching or filtering, ZPortfolio would only repeat companies
+        // already shown under their own sector, so it is left out.
+        const filtering = !!searchQuery.trim() || convictionFilter !== 'ALL' || guidanceOnly || scoreBand !== null
+            || bigMoveOnly || holdingOnly || top12Only || !!activeTag || !!activeTheme || !!callFilter;
+        if (filtering) result = result.filter(sector => !isPortfolioSector(sector.sector));
+
         // 8. Sort
         return result.map(sector => {
             const sortedCompanies = [...sector.companies].sort((a, b) => {
