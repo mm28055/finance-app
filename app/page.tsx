@@ -6,14 +6,18 @@ import { HelpButton } from "@/components/HelpButton";
 import { sessionTodos } from "@/lib/session-todos";
 import { noteIndex } from "@/lib/sector-overviews";
 import { ScrollText } from "lucide-react";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/auth";
 
 export const dynamic = 'force-dynamic';
 
 export default async function Home() {
+  // "Needs a session" is only for Manish: visitors who are not signed in get no list at all.
+  const session = await getServerSession(authOptions);
   const [sectorList, stats, todos] = await Promise.all([
     getDashboardDataLight(),
     getTranscriptStats(),
-    sessionTodos()
+    session ? sessionTodos() : Promise.resolve([])
   ]);
 
   return (
