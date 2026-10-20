@@ -10,6 +10,7 @@ const FY = ['FY22', 'FY23', 'FY24', 'FY25', 'FY26'];
 const BRAND = 'Branded house wire — sold through dealers and electricians';
 const QUAL = 'Qualified cables and transformer conductor — sold on approvals';
 const TENDER = 'Utility cables, conductors and projects — sold by tender';
+const FIBRE = 'Optical fibre, fibre cable and telecom networks — sold to telcos, data centres and governments';
 
 export const cables: SectorOverview = {
     sector: 'Cables',
@@ -31,10 +32,12 @@ export const cables: SectorOverview = {
             'Paramount Communications': 15,
             'Advait Energy': 15,
             'JD Cables': 10,
+            'Sterlite Technologies': 25,
+            'HFCL': 18,
         },
     },
     standfirst:
-        "Eight companies selling copper and aluminium wrapped in plastic. That sounds like a commodity and mostly is, except in two places. In house wiring, India is one of the few countries where wire is a branded consumer purchase, and the brand and dealer network are worth more than the factory. In high-voltage and transformer products, the barrier is an approval that takes years and a customer who will not risk a failure. Everything else is a conversion fee on metal, and should be valued as one. This year is unusual: Crisil expects industry revenue to rise 28–30% on only about 10% more volume, capacity to grow twice as fast as demand, and UltraTech started its wire plant on 1 September. Every chart uses filed results and five years of history.",
+        "Ten companies in two very different trades. Eight sell copper and aluminium wrapped in plastic. That sounds like a commodity and mostly is, except in two places. In house wiring, India is one of the few countries where wire is a branded consumer purchase, and the brand and dealer network are worth more than the factory. In high-voltage and transformer products, the barrier is an approval that takes years and a customer who will not risk a failure. Everything else is a conversion fee on metal, and should be valued as one. This year is unusual: Crisil expects industry revenue to rise 28–30% on only about 10% more volume, capacity to grow twice as fast as demand, and UltraTech started its wire plant on 1 September. **The other two, Sterlite Technologies and HFCL, sell glass, not metal**: optical fibre and fibre cable, mostly to overseas telecom and data-centre buyers. There is no metal to pass through; a glass rod called preform is 65–70% of the cost of fibre, and the selling price itself is the cycle. Chinese fibre prices rose about five times in a year from a very low base, and the cycle looks near its peak, so their margins are the most borrowed in the note. Every chart uses filed results and five years of history.",
     lastUpdated: '2026-09-27',
     asOfQuarter: 'Q1 FY27',
 
@@ -46,7 +49,7 @@ export const cables: SectorOverview = {
             periods: Q,
             scale: 'sequential',
             source: 'Filed quarterly results (Screener), operating profit ÷ sales. KSH, Dynamic and JD Cables standalone; the rest consolidated.',
-            note: 'Metal is passed through, so when copper and aluminium rise the percentage margin falls even if rupee profit per tonne holds. JD Cables (SME) reports half-yearly: H1 and H2 FY26 sit in the Q2 and Q4 columns. Laser Power listed recently and has gaps.',
+            note: 'Metal is passed through, so when copper and aluminium rise the percentage margin falls even if rupee profit per tonne holds. The two fibre makers are the opposite: their margin follows fibre prices. JD Cables (SME) reports half-yearly: H1 and H2 FY26 sit in the Q2 and Q4 columns. Laser Power listed recently and has gaps.',
             values: {
                 'RR Kabel Ltd.': [7, 8, 8, 9, 9],
                 'Finolex Cables': [10, 11, 10, 9, 12],
@@ -56,8 +59,12 @@ export const cables: SectorOverview = {
                 'Paramount Communications': [3, 1, 3, 5, 7],
                 'Advait Energy': [12, 11, 11, 13, 14],
                 'JD Cables': [null, 16, null, 12, null],
+                'Sterlite Technologies': [13, 13, 10, 14, 20],
+                'HFCL': [3, 18, 19, 17, 22],
             },
             cellNotes: {
+                'HFCL': 'Q1 FY26’s 3% came at the bottom of the fibre price slump, after a loss-making Q4 FY25, so it is not a normal base. Q2 FY27 (out 19 October, after these columns end) was 25%, even though its government network arm lost ₹123cr in that quarter.',
+                'Sterlite Technologies': 'Q3 FY26’s 10% was hit by the 50% US tariff (the company says by about 7.6 points); Q1 FY27’s 20% came with the fibre shortage and data-centre orders.',
                 'Finolex Cables': 'Q1 FY27: the optical-fibre business earned about 30% on fibre bought cheaply before prices spiked; management said not to annualise it.',
                 'Paramount Communications': 'FY26: US exports carried a 50% duty and ran at a loss; the duty has since been struck down.',
                 'KSH International': 'A low percentage is normal: copper is most of the price and is passed through; what KSH earns is a fee per tonne.',
@@ -70,7 +77,7 @@ export const cables: SectorOverview = {
             periods: Q,
             scale: 'diverging',
             source: 'Filed quarterly revenue, each quarter against the same quarter a year earlier.',
-            note: 'Mostly metal prices, not volume: RR Kabel grew revenue 54% in Q1 on 17% more volume, Paramount 17% on about 4% more metal and Dynamic 33% on 5–6%.',
+            note: 'Mostly metal prices, not volume: RR Kabel grew revenue 54% in Q1 on 17% more volume, Paramount 17% on about 4% more metal and Dynamic 33% on 5–6%. For the fibre makers it is fibre prices and data-centre orders, off a weak base.',
             values: {
                 'RR Kabel Ltd.': [14, 20, 42, 34, 54],
                 'Finolex Cables': [13, 5, 35, 22, 44],
@@ -80,6 +87,12 @@ export const cables: SectorOverview = {
                 'Paramount Communications': [40, 20, 18, 13, 17],
                 'Advait Energy': [97, 241, 115, 18, 52],
                 'JD Cables': [null, 13, null, 70, null],
+                'Sterlite Technologies': [17, -4, 26, 37, 87],
+                'HFCL': [-25, -5, 20, 128, 120],
+            },
+            cellNotes: {
+                'HFCL': 'The 128% and 120% jumps are against weak quarters a year earlier, when sales had fallen. Q2 FY27 (out 19 October, after these columns end) grew 144%.',
+                'Sterlite Technologies': 'Continuing business only: the services arm moved to STL Networks in March 2025. Q1 FY27 grew 87% as data centres rose from 1% of FY26 revenue to 21%.',
             },
         },
         {
@@ -90,7 +103,7 @@ export const cables: SectorOverview = {
             periods: FY,
             scale: 'sequential',
             source: 'Filed annual ratios (Screener): return on capital employed.',
-            note: 'Finolex’s returns are held down by about ₹4,200cr of investments it carries.',
+            note: 'Finolex’s returns are held down by about ₹4,200cr of investments it carries. The fibre makers earned single-digit returns through the 2023–25 price slump; FY27 will look very different.',
             values: {
                 'RR Kabel Ltd.': [18, 16, 22, 20, 28],
                 'Finolex Cables': [21, 16, 19, 18, 16],
@@ -100,6 +113,12 @@ export const cables: SectorOverview = {
                 'Paramount Communications': [4, 13, 15, 16, 12],
                 'Advait Energy': [24, 28, 37, 27, 28],
                 'JD Cables': [21, 16, 47, 66, 34],
+                'Sterlite Technologies': [8, 11, 3, 3, 8],
+                'HFCL': [19, 15, 13, 8, 11],
+            },
+            cellNotes: {
+                'Sterlite Technologies': 'FY22–FY23 include the services business demerged to STL Networks in March 2025; only FY24–FY26 compare.',
+                'HFCL': 'About ₹2,545cr, roughly 45% of its equity, sits in a government network arm that is making losses, which drags returns down.',
             },
         },
         {
@@ -120,6 +139,12 @@ export const cables: SectorOverview = {
                 'Paramount Communications': [134, 123, 155, 102, 101],
                 'Advait Energy': [-25, -102, -22, -77, -62],
                 'JD Cables': [69, 39, 80, 96, 168],
+                'Sterlite Technologies': [-83, -50, -151, 22, 16],
+                'HFCL': [72, 127, 175, 141, 218],
+            },
+            cellNotes: {
+                'Sterlite Technologies': 'FY22–FY23 include the services business demerged to STL Networks in March 2025, and FY24 also looks distorted by the split; compare FY25–FY26 only. It stays short because suppliers wait about 204 days against 139 days of stock.',
+                'HFCL': 'Government network customers pay slowly: debtors took 163–181 days in FY24–FY26.',
             },
         },
         {
@@ -139,6 +164,12 @@ export const cables: SectorOverview = {
                 'Paramount Communications': [75, 23, -113, 85, -58, -3],
                 'Advait Energy': [120, 76, -25, 88, -12, 26],
                 'JD Cables': [0, 100, -186, -53, -154, -114],
+                'Sterlite Technologies': [88, 25, 168, 84, 91, 82],
+                'HFCL': [32, 38, -8, 88, -49, 13],
+            },
+            cellNotes: {
+                'Sterlite Technologies': 'FY22–FY23 include the services business demerged to STL Networks, and FY24 also looks distorted by the split; FY25–FY26 (84–91%) are the clean read.',
+                'HFCL': 'Five years of operating cash came to ₹413cr against ₹1,484cr of net profit. H1 FY27 operating cash was +₹455cr, after these columns end.',
             },
         },
         {
@@ -159,6 +190,12 @@ export const cables: SectorOverview = {
                 'Paramount Communications': [2.1, 0.3, -14.4, 2.8, -4.8, -3.2],
                 'Advait Energy': [-2.5, 4.8, -9.1, 8.0, -17.2, -7.1],
                 'JD Cables': [-0.0, 2.4, -14.5, -10.1, -25.2, -16.1],
+                'Sterlite Technologies': [-1.9, -2.1, 12.5, 5.3, 6.9, 3.2],
+                'HFCL': [0.5, -2.3, -10.2, -0.3, -14.6, -5.6],
+            },
+            cellNotes: {
+                'Sterlite Technologies': 'FY22–FY23 include the services business demerged to STL Networks; only FY24–FY26 compare.',
+                'HFCL': 'Free cash was −₹1,271cr over five years, −₹723cr in FY26 alone.',
             },
         },
         {
@@ -180,8 +217,12 @@ export const cables: SectorOverview = {
                 'Paramount Communications': [8.7, 2.7, 0.9, -0.1, 1.4],
                 'Advait Energy': [-0.1, -0.2, 0.4, -0.5, -0.2],
                 'JD Cables': [5.0, 4.0, 2.4, 1.2, 1.2],
+                'Sterlite Technologies': [4.4, 3.7, 6.3, 3.5, 2.8],
+                'HFCL': [0.4, 1.0, 1.1, 2.3, 1.9],
             },
             cellNotes: {
+                'Sterlite Technologies': 'FY22–FY23 include the services business demerged to STL Networks. A ₹1,500cr share sale in June 2026, 75% for repaying debt, came after these columns; the June “net cash” claim also counts about ₹391cr held against a US court case.',
+                'HFCL': 'Net debt was about ₹1,275cr at 30 September 2026 (₹1,869cr of borrowings, ₹595cr of cash), including ₹206cr of short-term loans from other companies at 12–15%.',
                 'Finolex Cables': 'Its ₹4,195cr of investments include a stake in Finolex Industries as well as treasury funds.',
                 'Laser Power & Infra': 'FY26 is before its July 2026 listing; it has since repaid about ₹490cr of debt from the IPO.',
                 'KSH International': 'FY26 includes money from its share sale; the company says it is not yet generating operating cash.',
@@ -195,7 +236,7 @@ export const cables: SectorOverview = {
             periods: [...FY, '5 yrs'],
             scale: 'sequential',
             source: 'Filed cash-flow statements (Screener): spending on fixed assets as a share of sales. The last column uses five-year totals.',
-            note: 'Cable plants are cheap relative to sales; Advait’s spending is on new businesses unrelated to cables.',
+            note: 'Cable plants are cheap relative to sales; fibre and preform plants are not. Advait’s spending is on new businesses unrelated to cables.',
             values: {
                 'RR Kabel Ltd.': [1.6, 1.9, 2.9, 4.8, 3.0, 3.0],
                 'Finolex Cables': [1.8, 0.7, -0.0, 4.4, 2.4, 2.0],
@@ -205,6 +246,12 @@ export const cables: SectorOverview = {
                 'Paramount Communications': [0.5, 1.1, 5.0, 3.8, 2.8, 3.0],
                 'Advait Energy': [17.7, 7.7, 4.8, 3.5, 15.8, 10.6],
                 'JD Cables': [0.0, -0.0, 1.6, 2.9, 4.9, 3.3],
+                'Sterlite Technologies': [12.6, 5.4, 6.9, 3.4, 4.1, 6.6],
+                'HFCL': [3.9, 7.2, 9.2, 10.1, 7.0, 7.4],
+            },
+            cellNotes: {
+                'Sterlite Technologies': 'Spending doubles to about ₹1,000cr a year for three years (announced 3 September 2026), roughly a fifth of FY26 sales a year.',
+                'HFCL': 'About ₹1,800cr is approved for fibre, cable and a preform plant by October 2028, plus defence and data-centre plants.',
             },
         },
         {
@@ -215,7 +262,7 @@ export const cables: SectorOverview = {
             periods: FY,
             scale: 'sequential',
             source: 'Filed accounts (Screener): sales ÷ net fixed assets at year end.',
-            note: 'High across the sector because metal is most of the sales value; compare each company with its own history.',
+            note: 'High for the cable makers because metal is most of the sales value; much lower for the fibre makers, whose glass-making plants are costly. Compare each company with its own history.',
             values: {
                 'RR Kabel Ltd.': [11.0, 10.8, 12.3, 9.9, 8.3],
                 'Finolex Cables': [9.9, 10.3, 11.3, 9.1, 7.5],
@@ -225,6 +272,12 @@ export const cables: SectorOverview = {
                 'Paramount Communications': [4.3, 6.2, 6.3, 7.1, 7.4],
                 'Advait Energy': [5.3, 3.0, 5.0, 8.0, 8.4],
                 'JD Cables': [27.5, 20.5, 33.7, 25.1, 17.4],
+                'Sterlite Technologies': [1.6, 2.1, 1.3, 1.4, 1.6],
+                'HFCL': [9.0, 8.7, 6.8, 4.8, 4.1],
+            },
+            cellNotes: {
+                'Sterlite Technologies': 'Making preform and fibre needs heavy plant: low turnover is the price of owning the whole glass chain.',
+                'HFCL': 'Falling as it builds fibre lines; it will fall further once its ₹1,250cr preform plant is built.',
             },
         },
         {
@@ -234,7 +287,7 @@ export const cables: SectorOverview = {
             unit: 'x',
             periods: ['Latest'],
             scale: 'sequential',
-            source: 'Latest order book from the Q1 FY27 call or presentation ÷ yearly sales (Screener).',
+            source: 'Latest order book from the Q1 FY27 call or presentation (HFCL: Q2 FY27) ÷ FY26 sales (Screener).',
             note: 'Most cable makers sell from stock or on short orders and do not publish a book; blank where not disclosed.',
             values: {
                 'RR Kabel Ltd.': [null],
@@ -245,8 +298,12 @@ export const cables: SectorOverview = {
                 'Paramount Communications': [null],
                 'Advait Energy': [null],
                 'JD Cables': [null],
+                'Sterlite Technologies': [3.9],
+                'HFCL': [5.8],
             },
             cellNotes: {
+                'Sterlite Technologies': '₹18,618cr at June ÷ FY26 sales. More than ₹10,000cr of it is a $1.11bn hyperscaler award letter counted in full at its “potential value”; purchase orders are released over time, so it is not a firm order.',
+                'HFCL': '₹28,911cr at September (Q2 FY27) ÷ FY26 sales. It includes ₹5,070cr of maintenance work spread over years and ₹10,105cr from government customers; 57% is export.',
                 'Dynamic Cables': '₹811cr, flat for a quarter: customers now book only two to four months ahead while metal prices are high.',
                 'Laser Power & Infra': '₹2,788cr across cables and turnkey projects, ÷ FY26 sales.',
             },
@@ -259,7 +316,7 @@ export const cables: SectorOverview = {
             { key: 'qual', label: 'Approvals', description: 'Voltage-class, utility and transformer-maker approvals that take years.' },
             { key: 'sticky', label: 'Customer stickiness', description: 'Repeat business under annual or programme contracts rather than one-off tenders.' },
             { key: 'scale', label: 'Scale and cost', description: 'Capacity, range and purchasing power.' },
-            { key: 'pass', label: 'Metal pass-through', description: 'A = metal passed through quickly; D = fixed-price tenders or long lags.' },
+            { key: 'pass', label: 'Cost pass-through', description: 'How well the margin is protected when input costs or prices swing. Cable makers: A = metal passed through quickly; D = fixed-price tenders or long lags. Fibre makers: graded on preform cost and on how far the margin swings with fibre prices.' },
         ],
         rows: [
             { company: 'RR Kabel Ltd.', trend: 'widening', trendNote: 'Volume +17% against an industry at 10–12%; 20–25,000 retailers added last year; consumer arm at breakeven.',
@@ -278,6 +335,10 @@ export const cables: SectorOverview = {
                 grades: { brand: { grade: 'C', note: 'Utility sales' }, qual: { grade: 'B', note: 'Approved by 10+ utility boards' }, sticky: { grade: 'C', note: 'Tender-based' }, scale: { grade: 'D', note: '₹715cr across seven businesses' }, pass: { grade: 'C', note: 'Project pricing' } } },
             { company: 'JD Cables', trend: 'narrowing', trendNote: 'Capacity doubled cheaply, but a ₹407cr highway job sits outside its skills and guidance was cut within a quarter.',
                 grades: { brand: { grade: 'D', note: 'State-board sales' }, qual: { grade: 'C', note: 'Eastern state-board registrations' }, sticky: { grade: 'C', note: 'Tenders' }, scale: { grade: 'D', note: '₹365cr' }, pass: { grade: 'C', note: 'Tender prices' } } },
+            { company: 'Sterlite Technologies', trend: 'widening', trendNote: 'Data centres from 1% of FY26 revenue to 21% in Q1; two hyperscaler agreements of about $1.1–1.2bn; share of the cable market outside China up from 8% to 9%.',
+                grades: { brand: { grade: 'C', note: 'Sells to telcos and data-centre owners' }, qual: { grade: 'A', note: 'Hyperscaler approvals; 785+ patents' }, sticky: { grade: 'B', note: 'Multi-year deals with capped penalties, not take-or-pay' }, scale: { grade: 'A', note: 'India’s largest; makes its own preform' }, pass: { grade: 'C', note: 'Own preform, but margin swung 21–23% → 10% → 20%' } } },
+            { company: 'HFCL', trend: 'widening', trendNote: 'Five-year export deal worth up to about $1.1bn and 7,000-fibre cables; but no own preform until October 2028, and most of the margin jump is the price cycle.',
+                grades: { brand: { grade: 'C', note: 'Sells to telcos, data centres and government' }, qual: { grade: 'B', note: 'Telcordia approval; 6,912-fibre cable' }, sticky: { grade: 'B', note: 'Five-year supply deal with minimum volumes' }, scale: { grade: 'B', note: '28m fibre-km fibre, 39m cable, both full' }, pass: { grade: 'D', note: 'Buys preform; telecom margin 6% → 31% in 18 months' } } },
         ],
     },
 
@@ -285,16 +346,17 @@ export const cables: SectorOverview = {
         {
             heading: '1. Recommendation, up front',
             body: [
-                "**Start with who is missing: the leaders of this industry are not on this list.** Polycab, KEI and Havells are filed elsewhere on the dashboard, and Polycab alone lifted its share of the organised domestic market to 30–31% in FY26 from 26–27%, then grew its wire-and-cable sales 39% in Q1 FY27. The eight companies here are the second tier and the specialists. So the question for each is what it owns that the leaders, and two new conglomerate entrants, cannot copy: UltraTech started its ₹1,800cr wire plant in Gujarat on 1 September 2026, three months early, and Adani has laid a foundation stone near Ahmedabad.",
+                "**Start with who is missing: the leaders of this industry are not on this list.** Polycab, KEI and Havells are filed elsewhere on the dashboard, and Polycab alone lifted its share of the organised domestic market to 30–31% in FY26 from 26–27%, then grew its wire-and-cable sales 39% in Q1 FY27. The eight cable makers here are the second tier and the specialists, and the two fibre makers, **Sterlite Technologies** and **HFCL**, compete with Corning, Prysmian and the Chinese rather than with Polycab. So the question for each is what it owns that the leaders, and two new conglomerate entrants in wire, cannot copy: UltraTech started its ₹1,800cr wire plant in Gujarat on 1 September 2026, three months early, and Adani has laid a foundation stone near Ahmedabad.",
                 "**Dynamic Cables is the one to own.** It has held a 10.5–11% operating margin for six straight quarters through the sharpest metal spike in years, earns about 26% on capital, carries almost no net debt and has a clean audit. High-voltage cables rose from 35% of its sales in FY19 to 63% in FY26, and exports reached 13% of Q1 sales with its first US shipments. The weak spots are real: volume grew only 5–6% in Q1, the order book has sat at ₹808–811cr for two quarters, and its ₹40–45cr new plant is 15 months late. I have trimmed my estimate from 20% to about 18% a year for that reason; the price needs about {need:Dynamic Cables|15–16}%, so it still fits.",
                 "**Follow RR Kabel; wait on KSH, Finolex and Laser Power.** **RR Kabel** is the best-executed business here: wire-and-cable volume grew 17% in Q1 against an industry at 10–12%, its segment margin rose from 7.4% in FY25 to 9.9%, its fans-and-lights arm reached break-even after missing that target in FY26, and India Ratings upgraded it to AA in September. But its Q1 profit was lifted by forex gains and a one-off credit, FY26 free cash flow was close to zero, and ₹1,107cr of interest-bearing supplier credit sits inside its payables. The price needs about {need:RR Kabel Ltd.|23}% a year against my ~20%, so I move it from own to follow and would buy it on weakness. **KSH** raised every target in Q1 and I raise my estimate to about 22%, but the price needs about {need:KSH International|25}% and it has not produced operating cash in four of the last five years; debt was back up to ₹481cr in Q1, and its CEO resigned in March without a word on either call. **Finolex** is earning a fibre windfall under a family control dispute, while building-wire volume barely grew and operating cash fell to ₹49cr in FY26. **Laser Power**'s interest savings are real, but its revenue fell about 10% in FY26, operating cash was −₹119cr, customers take 216 days to pay, and its company secretary resigned two months after listing.",
-                "**Pass on Paramount; avoid Advait Energy and JD Cables.** Paramount's recovery is the removal of a US tariff plus one-off insurance money, volume grew only 4% against a ‘minimum 10%’, and it has just issued ₹122cr of new shares; Advait is spending more than its net worth on batteries and hydrogen with negative operating cash; JD Cables cut its guidance within 16 weeks and ended FY26 with ₹0.54cr of cash. **Two things to hold onto before reading the rest.** First, **read tonnes, not revenue**: Crisil expects industry revenue to rise 28–30% this year on volume of only about 10%, because copper and aluminium are passed through. Second, **cash conversion is the real test**: five of these eight companies had negative operating cash flow in FY26, because dearer metal ties up money in stock and unpaid bills even when contracts pass the price on.",
+                "**The two fibre makers: pass on Sterlite Technologies, avoid HFCL.** Both ride the same boom: AI data centres need many times more fibre than older ones, preform is scarce, and Chinese fibre prices rose about five times in a year from a very low base. **Sterlite** is the better business. It makes every step from preform to data-centre connectors, data centres went from 1% of its FY26 revenue to 21% in Q1 FY27, its margin reached 20%, and it turned 82% of five years' operating profit into cash. But its FY26 profit was only ₹56cr, so on reported profit the price needs about {need:Sterlite Technologies|42}% a year against my ~25%; its $1.11bn award is a letter of potential value, not firm orders; a $101m US court judgment won by Prysmian is not provided for; and its promoters hold warrants at ₹110, priced weeks before that award. **HFCL** earned about 31% on fibre cable in Q2 FY27 and sales grew 144%, but over five years it turned only ₹413cr of operating cash out of ₹1,484cr of profit, about ₹2,545cr sits in loss-making government network contracts, and its promoters cut their stake from 37.8% to 28.3%, mostly by selling, before taking warrants at ₹74. Both shares have risen four to ten times from their lows and sit in NSE's strictest surveillance stage, where every trade must be settled by delivery. **Peak-cycle margins deserve a peak-cycle discount, and neither earns the benefit of the doubt on cash or governance.**",
+                "**Pass on Paramount; avoid Advait Energy and JD Cables.** Paramount's recovery is the removal of a US tariff plus one-off insurance money, volume grew only 4% against a ‘minimum 10%’, and it has just issued ₹122cr of new shares; Advait is spending more than its net worth on batteries and hydrogen with negative operating cash; JD Cables cut its guidance within 16 weeks and ended FY26 with ₹0.54cr of cash. **Two things to hold onto before reading the rest.** First, **read tonnes, not revenue**: Crisil expects industry revenue to rise 28–30% this year on volume of only about 10%, because copper and aluminium are passed through. Second, **cash conversion is the real test**: six of these ten companies, HFCL among them, had negative operating cash flow in FY26, because dearer metal ties up money in stock and unpaid bills even when contracts pass the price on, and government customers pay late.",
             ],
         },
         {
             heading: '2. Charts: margins, growth, returns, cash cycle and cash conversion',
             body: [
-                "The six views that matter most, with four more behind **More measures**. Companies are grouped by how they sell. All figures are filed (Screener): KSH, Dynamic and JD Cables standalone, the rest consolidated. JD Cables reports half-yearly and Laser Power listed recently. **Start with cash conversion and free cash flow, and read the growth tab with care**: most of the growth is metal prices. Hover over a starred name for its caveat.",
+                "The six views that matter most, with four more behind **More measures**. Companies are grouped by how they sell. All figures are filed (Screener): KSH, Dynamic and JD Cables standalone, the rest consolidated. JD Cables reports half-yearly and Laser Power listed recently. Sterlite's years before FY24 include a services business it has since demerged, and HFCL's Q2 FY27 results (out 19 October) came after the last column. **Start with cash conversion and free cash flow, and read the growth tab with care**: most of the growth is metal prices. Hover over a starred name for its caveat.",
             ],
             embed: 'metrics',
         },
@@ -310,15 +372,23 @@ export const cables: SectorOverview = {
                 },
                 {
                     label: 'Where the demand is coming from',
-                    text: "**The grid is the largest driver.** The Central Electricity Authority's transmission plan calls for about ₹9.15 lakh crore of investment and about 1.9 lakh circuit-km of new lines by 2032, and Polycab expects line additions to run above 20,000 km a year against about 15,000 historically. Renewables add solar cable, high-tension cable and conductor: India added 44.6 GW of renewable capacity in FY26, and Dynamic's solar cables more than doubled to 18–19% of its sales. **Housing is softer**: sales in the top seven cities fell 6% in April–June 2026 (ANAROCK), and building-wire volume grew only in low single digits in Q1 as dealers cut stock when aluminium fell 18–20% in June. **Data centres** are the story every company tells; Polycab sizes it at ₹20,000–25,000cr over six to eight years, but RR says its own data-centre sales are ‘very less’ and Dynamic and JD call the market nascent. **My view: grid spending is the demand that lasts to 2032; house wire is where the cycle will show first.**",
+                    text: "**The grid is the largest driver.** The Central Electricity Authority's transmission plan calls for about ₹9.15 lakh crore of investment and about 1.9 lakh circuit-km of new lines by 2032, and Polycab expects line additions to run above 20,000 km a year against about 15,000 historically. Renewables add solar cable, high-tension cable and conductor: India added 44.6 GW of renewable capacity in FY26, and Dynamic's solar cables more than doubled to 18–19% of its sales. **Housing is softer**: sales in the top seven cities fell 6% in April–June 2026 (ANAROCK), and building-wire volume grew only in low single digits in Q1 as dealers cut stock when aluminium fell 18–20% in June. **Data centres** are the story every company tells; Polycab sizes it at ₹20,000–25,000cr over six to eight years, but RR says its own data-centre sales are ‘very less’ and Dynamic and JD call the market nascent. The fibre makers are the exception: data centres were 21% of Sterlite's Q1 FY27 revenue, and HFCL expects about ₹800cr of data-centre connectivity sales in FY27. **My view: grid spending is the demand that lasts to 2032; house wire is where the cycle will show first.**",
                 },
                 {
                     label: 'The cycle: capacity and metal prices',
                     text: "Industry plants ran at about 75% in FY26, and capacity rises 20–22% by March 2027 against about 10% more volume (Crisil). **UltraTech**'s Ultravolt plant at Bharuch (10.98 lakh km a year) started commercial production on 1 September, aimed at house wire and light-duty cable; Adani has not given a start date. Incumbents are spending too: Polycab ₹1,200–1,600cr a year, Havells ₹1,400cr this year mostly on cables, RR Kabel ₹1,200cr over FY26–FY28, and Crisil counted ₹8,000–8,500cr of sector capex in FY25–FY26 alone. The new capacity lands where there is already slack: RR runs its wire lines at 65–70% against 90%-plus for cables. **Metal prices are the other swing**: J.P. Morgan (August 2026) expects aluminium about 14% cheaper in 2027 and copper roughly flat, so FY28 revenue growth should fall back toward volume growth, and anyone holding dear stock when prices turn books a loss. **My view: expect margin pressure first in house wire and commodity low-tension cable, least in high-voltage and export-approved products.**",
                 },
                 {
+                    label: 'The fourth group: glass, not metal',
+                    text: "Optical fibre is made in four steps, each with a different profit. A **preform**, a thick rod of ultra-pure glass built up from silicon chemicals with germanium in its core, is heated and drawn into hair-thin **fibre**, sold by the fibre-kilometre; fibres are bundled into **cable** (1 km of a 288-fibre cable counts as 288 fibre-km); and **connectivity** (connectors and ready-made assemblies) wires up data centres. Preform is the hard step: HFCL says it is 65–70% of the cost of fibre, and new preform capacity takes 18–24 months to build. **Sterlite** makes all four steps itself, which few companies outside China do; **HFCL** draws its own fibre but buys about 1,000 tonnes of preform a year until its ₹1,250cr plant arrives in October 2028; **Finolex** has started making preform for part of its fibre; **Paramount** makes only small telecom cables. The profit sits at the top of the chain: YOFC's preform, fibre and cable arm had a 63% gross margin in H1 2026, and Sterlite's Q1 gross margin of 49.6% compares with 38.8% at HFCL (Arihant Capital). Below the factories sit government network-building contracts such as BharatNet, the weakest layer: HFCL's lost ₹123cr in Q2 FY27 alone. **My view: owning the preform is the moat in this trade; building networks for the government is a cash trap.**",
+                },
+                {
+                    label: 'The fibre cycle: from glut to shortage',
+                    text: "World demand for optical cable was about 549 million fibre-km in 2025, and CRU expects 700 million by 2030, with North America growing about 14% a year and data-centre fibre about 21% a year, passing half of all demand by 2030. India itself bought only about 4.7 million fibre-km in Q1 2026 against 137 million worldwide, so Indian makers live on exports. Supply has not kept up: China's spot price for standard fibre went from RMB 15.5 a fibre-km in May 2025 to 81.9 a year later and about 100 by July 2026 (PhotonCap, 36Kr), US prices rose up to 50% in H1 2026 (CoBank), and Corning's optical profit rose 77% in its June quarter. But this follows a crash: oversupply and US stock-building in 2023–25 cut Sterlite's margin from about 21% to 10%, and after the 2018 peak China's price fell about 60%. New preform lines from HFCL, Birla Furukawa, Sterlite and Furukawa all land around 2028, and China holds about 60% of world capacity. In April HFCL's MD said prices had ‘reached to their almost the final level’; in July he said spot prices were not falling. **My view: AI data-centre demand is real, but prices are near a peak after a five-fold rise, and the 2028 capacity wave is the risk. Value these two on mid-cycle margins, not on this year's.**",
+                },
+                {
                     label: 'What these companies actually depend on',
-                    text: "**RR Kabel** depends on housing, on holding shelf space against UltraTech and on its ₹1,200cr cable expansion landing on time. **Finolex** depends on building wire and on a fibre shortage that is already easing (standard fibre fell from $17–18 a km to $12–13). **KSH** depends on transformer makers' three-to-five-year order books and on funding its working capital. **Dynamic** depends on private project and solar spending and on its late new plant. **Laser** and **JD** depend on state distribution companies' tenders and payments. **Paramount** depends on US trade policy and a plant due in FY28, and **Advait** on Gujarat utilities and on its battery and hydrogen plants working. **Buy each for what it actually depends on, not for the sector label.**",
+                    text: "**RR Kabel** depends on housing, on holding shelf space against UltraTech and on its ₹1,200cr cable expansion landing on time. **Finolex** depends on building wire and on a fibre shortage that is already easing (standard fibre fell from $17–18 a km to $12–13). **KSH** depends on transformer makers' three-to-five-year order books and on funding its working capital. **Dynamic** depends on private project and solar spending and on its late new plant. **Laser** and **JD** depend on state distribution companies' tenders and payments. **Paramount** depends on US trade policy and a plant due in FY28, and **Advait** on Gujarat utilities and on its battery and hydrogen plants working. **Sterlite** depends on hyperscaler purchase orders arriving behind its award letters and on fibre prices holding up; **HFCL** on fibre prices, on its export contracts and on collecting from government network customers. **Buy each for what it actually depends on, not for the sector label.**",
                 },
             ],
             tables: [
@@ -329,6 +399,7 @@ export const cables: SectorOverview = {
                         ['Branded house wire', 'RR Kabel, Finolex', '7–12%', '16–28%', '**62–71%**', 'Dealers pay fast; the brand holds price'],
                         ['Qualified cables and conductor', 'KSH, Dynamic', '6–11%', '21–26%', '**−15% to 48%**', 'Approvals protect the fee; growth eats cash'],
                         ['Utility cables and projects', 'Laser, Paramount, Advait, JD', '1–16%', '12–34%', '**−114% to 26%**', 'Tenders set price; state boards pay slowly'],
+                        ['Optical fibre and networks', 'Sterlite, HFCL', '3–22%', '8–11%', '**13% to 82%**', 'Fibre prices set the margin; own preform keeps more of it; government networks drain cash'],
                     ],
                 },
                 {
@@ -344,15 +415,19 @@ export const cables: SectorOverview = {
                         ['Housing', 'Top-7-city sales −6% in Apr–Jun 2026; launches +7%', 'Building-wire volume low single digits in Q1', 'ANAROCK; Finolex and Polycab calls'],
                         ['Quality rules', 'BIS mark compulsory for PVC (IS 694) and heavy-duty (IS 1554) cables', 'No new cable quality order pending', 'BIS, Sep 2026'],
                         ['US trade', 'IEEPA tariffs struck down 20 Feb 2026', 'A temporary 10% tariff ran to 24 July 2026; refunds under way', 'Miller & Chevalier; ICRA on Paramount'],
+                        ['Optical cable demand (world)', '549 million fibre-km in 2025, up ~4%', '**700 million fibre-km by 2030**; data-centre fibre ~21% a year, over half of demand by 2030', 'CRU, in Sterlite deck and YOFC interim report'],
+                        ['Fibre prices', 'China standard fibre RMB 15.5/fibre-km (May 2025) → 81.9 (May 2026) → ~100 (Jul 2026)', 'Preform takes 18–24 months to add; new lines land around 2028; China has ~60% of capacity', 'PhotonCap; 36Kr; CRU'],
+                        ['Fibre trade rules', 'EU duties on Indian cable (Sterlite 8.8% + 3.7%, HFCL 8.1%); China renewed its duty on Indian fibre in Aug 2026', 'US: extra 10% duty on Indian goods since 24 Jul 2026, no end date', 'EU Reg 2025/1135; Xinhua; The Week'],
+                        ['BharatNet Phase III', 'About ₹1.39 lakh crore; 78,899 of ~2.64 lakh village councils had working connections by Feb 2026', 'BSNL aims to finish by end-2028', 'ThePrint; tele.net'],
                     ],
-                    note: 'Crisil covers about 70% of organised revenue through 17 rated makers. The rupee conversion of the dollar forecast depends on the exchange rate.',
+                    note: 'Crisil covers about 70% of organised revenue through 17 rated makers. The rupee conversion of the dollar forecast depends on the exchange rate. Fibre demand forecasts for 2026 range from 550 to 760 million fibre-km depending on the source and what is counted.',
                 },
             ],
         },
         {
             heading: '4. Moat (comparative)',
             body: [
-                "Five things protect profits here. The grid grades each company on each one; hover over a grade for the reason. How each company's advantage works is explained in Tab 2.",
+                "Five things protect profits here; for the two fibre makers the last column grades how well the margin survives swings in preform and fibre prices, not metal. The grid grades each company on each one; hover over a grade for the reason. How each company's advantage works is explained in Tab 2.",
             ],
             embed: 'moat',
             embedFirst: true,
@@ -366,27 +441,31 @@ export const cables: SectorOverview = {
                     text: "**RR Kabel** reaches 2.15 lakh-plus retail touchpoints and has 6.65 lakh electricians on loyalty programmes. It grew volume 16–17% against an industry at 10–12% by management's estimate, resets prices whenever metal moves 2–3%, and held its gross margin at about 18.5% through the copper spike, which is evidence of real pricing power. **Finolex** claims 23.9% of organised wire and about 2.15 lakh retailers, but it made 14 price changes in FY26 (net +24–25%), dealers resisted holding stock, and building-wire volume barely grew. Money buys shelf space faster than it buys approvals, which is exactly why UltraTech is entering. **My view: RR's moat is the stronger of the two and is still widening; Finolex's is being tested first.**",
                 },
                 {
+                    label: 'Real but cyclical: the glass chain and hyperscaler contracts',
+                    text: "**Sterlite** owns the whole chain from glass to connectors, holds 785-plus patents (a rival Fujikura patent was revoked in July 2026), and pays the lowest trade duties among Indian makers: 7.4% into China against 24.5–30.6% for most others. Its hyperscaler deals carry capped penalties on both sides if either falls short, which is real lock-in but not take-or-pay. **HFCL** signed a five-year deal with an unnamed ‘global multinational’ with minimum volumes for 2026–28, worth up to about $1.1bn at today's prices, and a second of $244m; management says only 2 of about 20 Indian cable makers can make 7,000-fibre cables. Against that, ICRA says ‘stiff competition limits’ Sterlite's pricing, HFCL has no preform of its own until 2028, and Corning and Prysmian are adding capacity. Compare **Finolex**, whose own preform covers only about half its doubled fibre lines and whose fibre margin swung from 2.8% to 30%, and **Paramount**, which does not make high-fibre-count cable at all. **My view: Sterlite's integration is a real, lasting edge; but most of both companies' current margin is the cycle, and the long contracts are priced at prevailing rates.**",
+                },
+                {
                     label: 'Real but narrow: technology and niche share',
-                    text: "**Finolex** is one of only two Indian makers of fibre preform, the glass rod fibre is drawn from, which saves a 5% import duty and should cost 5–10% below market once stable. But more than half its fibre revenue is on year-long fixed-price contracts, which caps the upside when prices rise. **Advait** claims about half of India's stringing-tool market and the first Indian-made emergency restoration towers, won Power Grid approval for optical ground wire in Q1, and its transmission products have earned 16–17% for three years. But optical ground wire carries no metal price-variation clause, so a metal spike comes out of its margin.",
+                    text: "**Finolex** is one of only two Indian makers of fibre preform (Sterlite is the other), the glass rod fibre is drawn from, which saves a 5% import duty and should cost 5–10% below market once stable. But more than half its fibre revenue is on year-long fixed-price contracts, which caps the upside when prices rise. **Advait** claims about half of India's stringing-tool market and the first Indian-made emergency restoration towers, won Power Grid approval for optical ground wire in Q1, and its transmission products have earned 16–17% for three years. But optical ground wire carries no metal price-variation clause, so a metal spike comes out of its margin.",
                 },
                 {
                     label: 'Temporary: full plants in a tight market',
-                    text: "**Paramount** runs both plants at about 100% (‘the problem is not selling, the problem is manufacturing’), **Dynamic** at about 85%, and **RR** at 90%-plus in cables. Tight capacity flatters margins until the industry's 20–22% of new lines arrive. The opposite cases show it: **Laser** ran at 62% in FY26 after lifting capacity 38%, and **JD Cables** has just doubled its capacity to 56,000 km, so neither has scarcity to sell.",
+                    text: "**Paramount** runs both plants at about 100% (‘the problem is not selling, the problem is manufacturing’), **Dynamic** at about 85%, and **RR** at 90%-plus in cables. **HFCL** runs its fibre and cable lines full and says it is choosing which customers to turn away, and **Sterlite**, at about 70% overall, says it has ‘to pick and choose the orders’ because preform, germanium and helium are short. Tight capacity flatters margins until the industry's 20–22% of new lines arrive. The opposite cases show it: **Laser** ran at 62% in FY26 after lifting capacity 38%, and **JD Cables** has just doubled its capacity to 56,000 km, so neither has scarcity to sell.",
                 },
                 {
                     label: 'Barely a moat: tenders and borrowed technology',
-                    text: "**Laser**, **JD Cables** and **Paramount** sell mostly by tender, and their raters say so: ICRA finds Paramount has ‘limited pricing power in an intensely competitive market’, and Infomerics describes JD's field as fragmented with a ‘significant price war’; JD's MD says he cannot raise prices without losing contractors. Advanced high-temperature conductors (HTLS) are the differentiator everyone cites, but Laser and Dynamic both hold tie-ups with the same US licensor, Apar and Sterlite use a rival technology, and tenders are open to all. Laser has bid for about ₹1,250cr of ₹3,500cr of tenders; on 5 October 2026 it disclosed its first commercial HTLS order, ₹72.8cr from POWERGRID to re-conductor about 164 circuit-km of 132 kV lines within 12 months. **Treat it as marketing until the purchase orders show in revenue.**",
+                    text: "**Laser**, **JD Cables** and **Paramount** sell mostly by tender, and their raters say so: ICRA finds Paramount has ‘limited pricing power in an intensely competitive market’, and Infomerics describes JD's field as fragmented with a ‘significant price war’; JD's MD says he cannot raise prices without losing contractors. Advanced high-temperature conductors (HTLS) are the differentiator everyone cites, but Laser and Dynamic both hold tie-ups with the same US licensor, Apar and Sterlite Power (a separate company from Sterlite Technologies) use a rival technology, and tenders are open to all. Laser has bid for about ₹1,250cr of ₹3,500cr of tenders; on 5 October 2026 it disclosed its first commercial HTLS order, ₹72.8cr from POWERGRID to re-conductor about 164 circuit-km of 132 kV lines within 12 months. **Treat it as marketing until the purchase orders show in revenue.**",
                 },
                 {
                     label: 'Competitors outside the list',
-                    text: "Polycab (30–31% of the organised domestic market), KEI Industries (strong in extra-high-voltage cable, with a ₹793cr order book there), Havells (cables margin fell from about 12.6% to 10.4% in Q1), Apar (conductors and cables), V-Guard, UltraTech's Ultravolt, Adani's planned plant, and many unorganised local makers.",
+                    text: "Polycab (30–31% of the organised domestic market), KEI Industries (strong in extra-high-voltage cable, with a ₹793cr order book there), Havells (cables margin fell from about 12.6% to 10.4% in Q1), Apar (conductors and cables), V-Guard, UltraTech's Ultravolt, Adani's planned plant, and many unorganised local makers. In optical fibre: Corning, Prysmian, YOFC, Fujikura and China's Hengtong, FiberHome and ZTT abroad, and Birla Furukawa, Birla Cable, Vindhya Telelinks and Corning India at home.",
                 },
             ],
         },
         {
             heading: '5. Margins (comparative)',
             body: [
-                "Are the margins structural? Metal inflation made this year's revenue growth close to meaningless; the honest measures are volume, margin per tonne and cash. Crisil expects the industry's operating profit to grow less than half as fast as revenue in FY27, and Havells' cables margin already fell two points in Q1 as input costs rose faster than prices.",
+                "Are the margins structural? Metal inflation made this year's revenue growth close to meaningless; the honest measures are volume, margin per tonne and cash. Crisil expects the industry's operating profit to grow less than half as fast as revenue in FY27, and Havells' cables margin already fell two points in Q1 as input costs rose faster than prices. For the two fibre makers the question runs the other way: their margins are riding a price boom, and the test is how much of it survives when prices fall.",
                 "Whether the profit turns into cash is in section 2 (the **Cash conversion** and **Free cash flow** tabs) and on each company card in Tab 2.",
             ],
             points: [
@@ -399,12 +478,16 @@ export const cables: SectorOverview = {
                     text: "**Finolex**'s communication arm earned about 30% in Q1 against 2.8% in FY26, on fibre bought cheaply in November–December 2025; management said ‘I do not think 30% is sustainable’ and expects low double digits by year-end, and standard fibre prices have already fallen from $17–18 a km to $12–13. **RR Kabel**'s Q1 profit rose 129%, but other income jumped to ₹32.9cr from ₹12.4cr (mostly forex, ‘not a normal run rate’) and a ₹13.8cr credit reversed part of a labour-code charge. **Paramount**'s FY26 profit included ₹27.8cr of key-man insurance maturities and about ₹11cr of forex gains, and FY27 will include US tariff refunds (₹8cr received, ₹20–22cr expected). **Laser**'s FY26 consolidated profit included a one-time ₹32cr gain. **Treat all of these as windfalls, not run-rate.**",
                 },
                 {
+                    label: 'Cyclical: the fibre price boom',
+                    text: "**HFCL**'s telecom products segment earned 5.6% in FY25, 26.1% in FY26 and 30.8% in Q2 FY27, and its group operating margin went from 3% in Q1 FY26 to 25% in Q2 FY27. **Sterlite**'s optical segment went from 13.5% in FY26 to 21.8% in Q1 FY27; management raised its FY27 goal from 20% (April) to 23% (July) and on 3 September set 27%-plus for FY29. Part of Sterlite's rise is mix: data-centre connectivity earns more, and connectors rose to 16% of its cable revenue, with 25% targeted by Q4. But Sterlite earned 21–23% in FY17–FY20 and only 10% in FY25 on much the same plants, and HFCL's MD said in July that a 23% margin is the ‘minimum we would be able to protect’, a promise that rests on prices nobody controls. **Finolex**'s 30% fibre margin, which its own management calls unsustainable, is the same windfall on a smaller scale. **My view: these margins are cyclical; I assume something between the last trough and today's peak.**",
+                },
+                {
                     label: 'Recovering, or changing with the mix',
                     text: "**Paramount**'s operating margin fell to 1.4% in the September 2025 quarter, when US exports ran at about a 4% loss under a 50% duty, and recovered to 6.6% in Q1; management wants FY25's 7.7–8% back by Q4 FY27. **Advait**'s margin fell from 17% in FY24 to 12% in FY26 as 5%-margin solar contracting grew, then rose to 13.8% in Q1 largely because solar revenue collapsed to ₹3.1cr: a mix effect, not an improvement. **Laser**'s rose from about 10% to 13% on more high-tension cable and project work. **JD Cables**' fell from 16% in H1 FY26 to 12% in H2, as other expenses jumped from about ₹4cr to ₹24cr on its first highway job.",
                 },
                 {
                     label: 'Working capital: the biggest drains',
-                    text: "**JD Cables** had negative operating cash for three straight years (−₹13cr, −₹18cr, −₹74cr), a 168-day cash cycle and ₹0.54cr of cash at March 2026, and over five years tied up ₹175cr, about half a year's sales. **Laser** tied up ₹736cr over five years, mostly customer bills (₹901cr): customers take 216 days to pay, its own working-capital days rose from 77 to 129 in two years, and ₹800cr of new projects are at the cash-hungry stage. **KSH** tied up ₹519cr, mostly stock (₹384cr); its FY26 free cash of −₹228cr was paid for by the IPO.",
+                    text: "**JD Cables** had negative operating cash for three straight years (−₹13cr, −₹18cr, −₹74cr), a 168-day cash cycle and ₹0.54cr of cash at March 2026, and over five years tied up ₹175cr, about half a year's sales. **Laser** tied up ₹736cr over five years, mostly customer bills (₹901cr): customers take 216 days to pay, its own working-capital days rose from 77 to 129 in two years, and ₹800cr of new projects are at the cash-hungry stage. **KSH** tied up ₹519cr, mostly stock (₹384cr); its FY26 free cash of −₹228cr was paid for by the IPO. **HFCL** is the largest drain in rupees: five years of operating cash came to ₹413cr against ₹1,484cr of net profit, free cash was −₹1,271cr, customers took 163–181 days to pay in FY24–FY26, and about ₹2,545cr, some 45% of its equity, is tied up in government network contracts that lost ₹123cr in Q2 FY27. H1 FY27 was better, with ₹455cr of operating cash, but ₹436cr of capex took nearly all of it.",
                 },
                 {
                     label: 'Working capital: getting worse',
@@ -416,7 +499,7 @@ export const cables: SectorOverview = {
                 },
                 {
                     label: 'Working capital: built into the business',
-                    text: "Dealers pay quickly (RR 37 days, Finolex 21), so wire makers run short cycles; utility suppliers wait for state boards. **Advait**'s cycle is negative only because its suppliers wait 192 days, and CRISIL counted 307 days of gross current assets at March 2025. **Judge each against its own history, not against the others.**",
+                    text: "Dealers pay quickly (RR 37 days, Finolex 21), so wire makers run short cycles; utility suppliers wait for state boards. **Advait**'s cycle is negative only because its suppliers wait 192 days, and CRISIL counted 307 days of gross current assets at March 2025. **Sterlite** also leans on suppliers, who wait about 204 days against 139 days of stock; that is why it turned 82% of five years' operating profit into cash, though depreciation and interest left only ₹48cr of net profit over the same five years. Its ‘net-debt free’ claim at June counts ₹1,500cr of new share money and about ₹391cr held against the Prysmian appeal. **Judge each against its own history, not against the others.**",
                 },
             ],
             tables: [
@@ -432,6 +515,8 @@ export const cables: SectorOverview = {
                         ['Paramount Communications', '‘We have not taken any debt as yet’ for the new plant; debt-to-equity to stay under 0.3', 'Borrowings ₹123cr; free cash ~₹5cr (ICRA); ₹99.95cr of new equity received'],
                         ['Advait Energy', 'No Q1 call; FY27 capex ₹300–350cr, ‘predominantly … debt’', 'Borrowings ₹95cr; borrowing limit raised to ₹1,500cr at the AGM'],
                         ['JD Cables', 'Reports half-yearly; ~₹20cr capex now and ₹15–20cr more in FY27', 'Borrowings ₹57cr, including ₹10.8cr from the MD; cash ₹0.54cr'],
+                        ['Sterlite Technologies', '‘Net-debt free’ at June, counting the ₹1,500cr share sale and ~₹391cr held for the Prysmian appeal; capex ~₹1,000cr a year for three years (3 September)', 'Gross debt ₹1,827cr, net ₹1,128cr at March (company); rated AA by ICRA and CRISIL'],
+                        ['HFCL', 'Capex ₹640cr in FY27 and ₹615cr in FY28 (Q1 call), before ₹1,220cr more was approved; H1 FY27 operating cash ₹455cr against ₹436cr of capex (Q2 results)', 'Borrowings ₹1,869cr, cash ₹595cr at 30 September; ₹206cr of loans from other companies at 12–15%; CARE A (Positive)'],
                     ],
                     note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. Balance-sheet figures are March 2026 (annual reports, Screener, rating reports).',
                 },
@@ -460,16 +545,20 @@ export const cables: SectorOverview = {
                     text: "**Finolex** is taking fibre drawing from 4 to 8 million fibre-km a year by September for about ₹100cr (with the first preform phase); at $11 a km that is about $88 million a year of fibre, so the payback is fast if prices hold, but its own preform covers only about 4 million and fibre is a boom-and-bust market. **Advait** is building a 2.5 GWh battery plant (machinery due in Q3 FY27), electrolysers (a 100 MW phase by Q4 FY27) and owned battery-storage projects, and its deck shows FY27 revenue of ₹1,251cr, up 75%. By its own figures, owned assets return 12–15% against 25–30% for manufacturing. **My view: Finolex's bet is cheap and quick; Advait's is large, slow and moves it into its lowest-return work.**",
                 },
                 {
+                    label: 'Growth driver: AI data centres and fibre export contracts',
+                    text: "**Sterlite** set out its ‘Lakshya’ plan on 3 September: ₹20,000cr of revenue and a 27%-plus margin by FY29, from ₹4,745cr and about 12% in FY26, on about ₹3,000cr of capex for 50% more preform, fibre and cable capacity, plus a new connectivity plant in India and up to $100m in the US. Its order book reached ₹18,618cr at June, more than ₹10,000cr of it a $1.11bn hyperscaler award, and a second hyperscaler agreement of about $1.2bn followed on 1 October. But a four-fold revenue rise on 50% more capacity needs plants near full and far more value per unit, and CRISIL models less capex than the company plans. **HFCL** now expects FY27 revenue up ‘at least 80%’ and ₹10,000cr well before FY29, with fibre capacity going from 28 to 43 million fibre-km and cable from 39 to 62 million by July 2028, data-centre assemblies (about ₹800cr expected in FY27) and defence (₹500cr guided for FY27 against ₹79cr in H1). **My view: the volume growth is real and partly contracted, but price is doing much of the work; I take Sterlite at about 25% a year from its current run-rate and HFCL at about 18%, both well below their plans.**",
+                },
+                {
                     label: 'Delivering or beating',
-                    text: "**KSH** beat on every count: volume +30% against ‘at least’ 21%, ₹93,000 a tonne against ₹65–74,000, working capital down to 60 days, and its upcasting plant ahead of the ‘H2’ promise. **RR Kabel** delivered volume +17% inside its 16–18% range, a 9.9% segment margin against 9.5% guided, and break-even in consumer goods. **Dynamic** held its 10.5–11% margin band and reached 13% exports ahead of plan.",
+                    text: "**KSH** beat on every count: volume +30% against ‘at least’ 21%, ₹93,000 a tonne against ₹65–74,000, working capital down to 60 days, and its upcasting plant ahead of the ‘H2’ promise. **RR Kabel** delivered volume +17% inside its 16–18% range, a 9.9% segment margin against 9.5% guided, and break-even in consumer goods. **Dynamic** held its 10.5–11% margin band and reached 13% exports ahead of plan. **Sterlite** reached a 20.8% margin in Q1, three quarters ahead of the 20% it promised for the end of FY27, with revenue 30% above its executable order book. **HFCL** raised its FY27 growth guide twice, from 20–25% (April) to ‘40% and above’ (July) to ‘at least 80%’ (19 October), and Q2 sales rose 144%.",
                 },
                 {
                     label: 'Cautious',
-                    text: "**RR** kept its guidance rather than raising it and warned that consumer goods may slip back into loss in Q2. **Finolex** gives no guidance and says its fibre margin will fall. **Dynamic** says customers book only two to four months ahead while metal is high (‘price is king’), so volume stays slow.",
+                    text: "**RR** kept its guidance rather than raising it and warned that consumer goods may slip back into loss in Q2. **Finolex** gives no guidance and says its fibre margin will fall. **Dynamic** says customers book only two to four months ahead while metal is high (‘price is king’), so volume stays slow. **Sterlite** stopped disclosing capacity in April and gives no volumes or prices, so its targets cannot be checked line by line; its Q2 results are due on 23 October.",
                 },
                 {
                     label: 'Missed',
-                    text: "**Dynamic**'s new plant, promised for Q2 FY26, slipped about 15 months; the call says September 2026, its own deck printed September 2027, and no start had been announced by 27 September. **JD Cables** cut its growth guide from 50–60% to 40–50% in 16 weeks, dropped its plan to bid for more highway work, and started its new unit about six weeks late. **Advait**'s battery factory moved from October to machinery arriving in Q3 FY27, full solar contracts promised for this year have not appeared, and a ₹90–100cr outside raise for its renewable arm was never announced. **Paramount** grew volume 4% against a ‘minimum 10%’.",
+                    text: "**Dynamic**'s new plant, promised for Q2 FY26, slipped about 15 months; the call says September 2026, its own deck printed September 2027, and no start had been announced by 27 September. **JD Cables** cut its growth guide from 50–60% to 40–50% in 16 weeks, dropped its plan to bid for more highway work, and started its new unit about six weeks late. **Advait**'s battery factory moved from October to machinery arriving in Q3 FY27, full solar contracts promised for this year have not appeared, and a ₹90–100cr outside raise for its renewable arm was never announced. **Paramount** grew volume 4% against a ‘minimum 10%’. **HFCL** said in April that its government network arm would turn profitable once an Army maintenance contract was signed in Q2; the contract is still awaited and the loss widened from ₹88cr in Q1 to ₹123cr in Q2. Its defence deal documents, due by 31 May, were signed on 3 June.",
                 },
                 {
                     label: 'Mixed',
@@ -477,7 +566,7 @@ export const cables: SectorOverview = {
                 },
                 {
                     label: 'My outlook',
-                    text: "Industry volume should grow about 10% in FY27 and 10–12% a year after that, with revenue swinging with metal. **I now expect KSH to compound earnings at about 22% (up from 18%, as volume and profit-per-tonne guidance both rose), RR Kabel at about 20%, Dynamic at about 18% (down from 20%, on flat orders and a late plant), Laser at about 18%, Paramount and Advait at about 15%, Finolex at about 12% and JD Cables at about 10%.** The risk to all of these is the same: 20–22% more capacity and cheaper aluminium in 2027 could take half a point to a point and a half off margins by FY28.",
+                    text: "Industry volume should grow about 10% in FY27 and 10–12% a year after that, with revenue swinging with metal. **I now expect KSH to compound earnings at about 22% (up from 18%, as volume and profit-per-tonne guidance both rose), RR Kabel at about 20%, Dynamic at about 18% (down from 20%, on flat orders and a late plant), Laser at about 18%, Paramount and Advait at about 15%, Finolex at about 12% and JD Cables at about 10%. Of the fibre makers, I expect Sterlite at about 25% from its current run-rate and HFCL at about 18%, well below their own plans because fibre prices should fall from here.** The risk to all the cable makers is the same: 20–22% more capacity and cheaper aluminium in 2027 could take half a point to a point and a half off margins by FY28. For the fibre makers it is bigger: the wave of new preform and fibre capacity due around 2028 could take back much of the ten-plus points their margins have gained since FY25.",
                 },
             ],
             tables: [
@@ -486,16 +575,18 @@ export const cables: SectorOverview = {
                     numericColumns: [2],
                     columns: ['Company', 'What drives it', 'Earnings growth: low / base / high'],
                     rows: [
+                        ['Sterlite Technologies', 'Hyperscaler orders behind the award letters; connectors; +50% capacity by FY29; fibre prices', '5% / **25%** / 40%'],
                         ['KSH International', 'Capacity to 59,045 tonnes; profit per tonne ~₹75,000; working capital', '14% / **22%** / 28%'],
                         ['RR Kabel Ltd.', 'Cables to 220 kV; margin to 10.5%; exports; UltraTech in wire', '14% / **20%** / 26%'],
                         ['Dynamic Cables', 'Reengus plant; high-voltage and solar mix; US exports', '12% / **18%** / 24%'],
                         ['Laser Power & Infra', 'Interest saving; high-tension mix; state payments', '10% / **18%** / 25%'],
+                        ['HFCL', 'Export cable deals; capacity to 2028; own preform; network losses; fibre prices', '0% / **18%** / 30%'],
                         ['Paramount Communications', 'Margin recovery; Narmadapuram from FY28; US policy', '8% / **15%** / 25%'],
                         ['Advait Energy', 'Transmission products; batteries and electrolysers', '0% / **15%** / 25%'],
                         ['Finolex Cables', 'House wire under attack; fibre after the windfall', '5% / **12%** / 18%'],
                         ['JD Cables', 'Doubled capacity; cash and guidance record', '0% / **10%** / 20%'],
                     ],
-                    note: 'My own judgement, not guidance. Earnings, not revenue: metal prices move revenue without moving profit. The growth each price needs is in the live valuation table in section 8.',
+                    note: 'My own judgement, not guidance. Earnings, not revenue: metal prices move revenue without moving profit. Sterlite’s estimate starts from its Q1 FY27 run-rate, not its thin FY26 profit. The growth each price needs is in the live valuation table in section 8.',
                 },
                 {
                     caption: 'Guidance, capex and track record (Q4 FY26 call promise against Q1 FY27 delivery)',
@@ -510,6 +601,8 @@ export const cables: SectorOverview = {
                         ['Paramount Communications', 'Revenue +15–20%; FY25 margin by Q4 FY27; exports ₹700–800cr', '₹300cr Narmadapuram plus ₹50–55cr a year', '**On track**: revenue +17.4%, margin 6.6%; volume +4%'],
                         ['Advait Energy', 'Revenue 40%-plus (deck: ₹1,251cr, +75%); margin +1 point', '₹300–350cr in FY27, mostly debt', '**Slipping**: margin met; battery plant and solar contracts late'],
                         ['JD Cables', 'Revenue +40–50% (cut from 50–60%); no new highway work', '~₹20cr now and ₹15–20cr more', '**Walked back**: guide cut within 16 weeks'],
+                        ['Sterlite Technologies', 'FY27 margin 23% (raised from 20% in April); ₹20,000cr revenue and 27%-plus margin by FY29; data centres plus enterprise 50% of FY27 revenue', '~₹1,000cr a year for three years (+50% capacity by FY29); up to $100m US plant', '**Beat**: 20.8% margin in Q1 against 20% promised for end-FY27; Q2 due 23 October'],
+                        ['HFCL', 'FY27 revenue +80% or more (from 20–25% in April, 40%-plus in July); margin above 27% by FY29; defence ~₹500cr in FY27', '~₹1,800cr for fibre, cable and a 600-tonne preform plant by October 2028; ₹230cr grenade and ₹215cr data-centre plants', '**Beat, except networks**: Q2 sales +144%; network loss widened to ₹123cr instead of turning to profit'],
                     ],
                 },
             ],
@@ -517,7 +610,7 @@ export const cables: SectorOverview = {
         {
             heading: '7. Risk factors',
             body: [
-                "The risks fall into six groups. For each, what management addressed and what it left unanswered; several of the most important came from annual reports and rating reports, not from the calls.",
+                "The risks fall into seven groups. For each, what management addressed and what it left unanswered; several of the most important came from annual reports and rating reports, not from the calls.",
             ],
             points: [
                 {
@@ -525,24 +618,28 @@ export const cables: SectorOverview = {
                     text: "Capacity rises 20–22% by March 2027 against about 10% more volume, nearly half of it from new players (Crisil). **UltraTech** is already producing, aimed at house wire, where **RR Kabel** and **Finolex** earn most; RR says it saw ‘nothing special’ in pricing in Q1, and Finolex did not set out a response beyond its brand. India Ratings flagged the entry in RR's upgrade. **A price war would show first in dealer margins and in building-wire volume, the line that is already weakest.**",
                 },
                 {
+                    label: 'The fibre cycle turning, and exchange surveillance',
+                    text: "Fibre prices rose about five times in a year. The last downturn, in 2023–25, halved Sterlite's margin, and after the 2018 peak China's fibre price fell about 60%. New preform lines from HFCL, Birla Furukawa, Sterlite and Furukawa all arrive around 2028, and China, with about 60% of world capacity, exports more whenever its home prices cool. CARE's trigger for cutting HFCL's rating is a margin below 12%, and CRISIL's for Sterlite a margin stuck below 15%. Customers are concentrated too: Sterlite's $1.11bn award and HFCL's ₹10,159cr export deal are each a large part of their order books. Both shares sit in NSE's long-term surveillance Stage IV, the strictest stage, after rising about 4.5 times (HFCL) and 10.5 times (Sterlite) from their lows: trades settle only by delivery, buyers must pay in full, and HFCL can move only 5% a day. **When the cycle turns these two will fall fastest, and surveillance makes them harder to sell.**",
+                },
+                {
                     label: 'Metal prices and working capital',
                     text: "Rising metal swells stock and bills; falling metal causes dealers to cut stock, as they did in June when aluminium fell 18–20%. Project customers delay orders while prices are high (**Dynamic**'s book is flat), and when prices fall anyone holding dear stock books a loss (**Finolex**'s fibre windfall runs the other way). J.P. Morgan's forecast of aluminium 14% cheaper in 2027 would reverse this year's revenue inflation. **KSH**'s interest cost more than doubled in Q1 to ₹17cr, and every tonne of new capacity needs about two months of copper to fund.",
                 },
                 {
                     label: 'Governance: control, related parties and group dealings',
-                    text: "**Finolex** has a promoter control dispute: it is appealing in the Bombay High Court against a Pune court order on votes cast by Orbit Electricals (30.70%) and Finolex Industries (14.51%), which it in turn owns 32.39% of; seven non-executive directors served terms of weeks to months in 2024. **Advait**'s Q4 battery revenue (about ₹43cr) was contracting for its own project, and its consolidated revenue equals standalone plus subsidiary with no visible elimination; subsidiaries with 38% of revenue are audited by other auditors, and one foreign subsidiary is unaudited. **Paramount**'s shareholders rejected promoter warrants at ₹60 in August 2025, then approved new ones at ₹42 in 2026, with only 25% paid upfront. **JD Cables**' MD sold about ₹11.6cr of shares in the IPO while lending ₹10.8cr back to the company at interest.",
+                    text: "**Finolex** has a promoter control dispute: it is appealing in the Bombay High Court against a Pune court order on votes cast by Orbit Electricals (30.70%) and Finolex Industries (14.51%), which it in turn owns 32.39% of; seven non-executive directors served terms of weeks to months in 2024. **Advait**'s Q4 battery revenue (about ₹43cr) was contracting for its own project, and its consolidated revenue equals standalone plus subsidiary with no visible elimination; subsidiaries with 38% of revenue are audited by other auditors, and one foreign subsidiary is unaudited. **Paramount**'s shareholders rejected promoter warrants at ₹60 in August 2025, then approved new ones at ₹42 in 2026, with only 25% paid upfront. **JD Cables**' MD sold about ₹11.6cr of shares in the IPO while lending ₹10.8cr back to the company at interest. **HFCL**'s promoters cut their stake from 37.84% (December 2023) to 28.29%, mostly by selling (they held about 11cr fewer shares in September 2025 than in June 2024), then took warrants for 7.5cr shares at ₹74, with ₹416cr still to pay by about November 2027; 90 lakh promoter shares are pledged. Its new defence subsidiary will be only 51% owned, with the MD's relative Anant Nahata holding 6.5%; it bought ₹64cr from promoter-group Exicom in FY26; and a 2007 SEBI order found it and its promoters gave ₹448cr (net) to Ketan Parekh entities in 2000–01, settled in 2010. **Sterlite**'s promoters took 4.53cr warrants at ₹110 in March 2026, priced weeks before the $1.11bn award, with ₹373.7cr due on conversion against a value of about ₹4,000cr at the 20 October price. It guarantees ₹347cr for the demerged STL Networks while still handling ₹3,434cr of its banking and collections, bought ₹295cr from and sold ₹350cr to promoter-group companies in FY26, and paid ₹11cr of managerial pay above the legal limit.",
                 },
                 {
                     label: 'Tax disputes, guarantees and audit remarks',
-                    text: "**RR Kabel**'s contingent income-tax demands jumped from ₹11.5cr to ₹105.3cr (2008-09 to 2023-24, under appeal); its auditor found one accounting system without full edit logs until November 2025, and it has a comfort letter for up to BDT 75cr of loans to its Bangladesh joint venture. **Finolex** carries its extra-high-voltage joint venture at ₹110.9cr after ₹208.6cr of past write-downs (its auditor's key audit matter) and guarantees ₹185.7cr of its bank lines. Contingent liabilities are ₹363cr at **Advait** (from ₹212cr), ₹208cr at **Dynamic** (mostly bank guarantees), ₹179cr at **Finolex** and about ₹151cr at **Paramount**, whose auditor noted late advance-tax payments. **KSH** must export ₹201.8cr of goods to keep ₹33.6cr of duty savings. **Laser**'s FY25 auditor found its stock statement to banks ₹93.4cr below its books.",
+                    text: "**RR Kabel**'s contingent income-tax demands jumped from ₹11.5cr to ₹105.3cr (2008-09 to 2023-24, under appeal); its auditor found one accounting system without full edit logs until November 2025, and it has a comfort letter for up to BDT 75cr of loans to its Bangladesh joint venture. **Finolex** carries its extra-high-voltage joint venture at ₹110.9cr after ₹208.6cr of past write-downs (its auditor's key audit matter) and guarantees ₹185.7cr of its bank lines. Contingent liabilities are ₹363cr at **Advait** (from ₹212cr), ₹208cr at **Dynamic** (mostly bank guarantees), ₹179cr at **Finolex** and about ₹151cr at **Paramount**, whose auditor noted late advance-tax payments. **KSH** must export ₹201.8cr of goods to keep ₹33.6cr of duty savings. **Laser**'s FY25 auditor found its stock statement to banks ₹93.4cr below its books. **Sterlite** has not provided for a $101.25m (about ₹900cr) US judgment won by Prysmian over trade secrets; it is under appeal with a $41.53m bond posted, its auditor PwC flags it as an emphasis of matter, and the Q1 call did not mention it. **HFCL** carries ₹764cr of bank guarantees and a ₹265cr guarantee for its affiliate HTL, and most of its bank loans also carry the MD's personal guarantee; its audit opinion is clean.",
                 },
                 {
                     label: 'Management changes',
-                    text: "**KSH**'s CEO resigned on 31 March 2026, three months after listing, and neither call mentioned it. **Laser**'s company secretary resigned on 23 September, two months after listing, and its presentation and rating agency give order books ₹800cr apart. **Finolex** named a new CEO and CFO in mid-2026 amid its board fight. **RR**'s founder stepped down as executive chairman in May 2025 and its CFO changed in November 2025. **Advait**'s CFO, the MD's wife, stepped down in November 2025; **Dynamic** had India Ratings withdraw its rating at its own request in June (CRISIL's A rating remains), and the MD's daughter resigned as head of HR in September.",
+                    text: "**KSH**'s CEO resigned on 31 March 2026, three months after listing, and neither call mentioned it. **Laser**'s company secretary resigned on 23 September, two months after listing, and its presentation and rating agency give order books ₹800cr apart. **Finolex** named a new CEO and CFO in mid-2026 amid its board fight. **RR**'s founder stepped down as executive chairman in May 2025 and its CFO changed in November 2025. **Advait**'s CFO, the MD's wife, stepped down in November 2025; **Dynamic** had India Ratings withdraw its rating at its own request in June (CRISIL's A rating remains), and the MD's daughter resigned as head of HR in September. **HFCL** has no CEO and no regular chairman, and its president for products left in January 2026; **Sterlite** changed its CFO in May 2025.",
                 },
                 {
                     label: 'Government customers and export policy',
-                    text: "**Laser** gets about 65% of revenue from government, and its customers take 216 days to pay; **JD Cables** says state boards pay in 60–90 days; **Advait**'s orders are dominated by Gujarat utilities. **Paramount** earns about 30% of sales in one export market, and FY26 showed a US tariff can turn that margin negative within a quarter; the temporary 10% tariff that replaced it was set to run only to 24 July, so US policy remains the swing. **RR**'s Middle East sales, about 12% of revenue, were disrupted by the war in Q4. **Buy these for the balance sheet you can see, not the payments you are promised.**",
+                    text: "**Laser** gets about 65% of revenue from government, and its customers take 216 days to pay; **JD Cables** says state boards pay in 60–90 days; **Advait**'s orders are dominated by Gujarat utilities. **Paramount** earns about 30% of sales in one export market, and FY26 showed a US tariff can turn that margin negative within a quarter; the temporary 10% tariff that replaced it was set to run only to 24 July, so US policy remains the swing. **RR**'s Middle East sales, about 12% of revenue, were disrupted by the war in Q4. **HFCL** has ₹10,105cr of government work in its order book, and BharatNet's record is poor: after ₹40,635cr spent, only 78,899 of about 2.64 lakh village councils had working connections by February 2026. Both fibre makers pay EU anti-dumping or anti-subsidy duties, Indian goods pay an extra 10% in the US with no end date, and Sterlite says its US tariff bill was ‘north of INR 100 crores’, with refunds sought but no timeline. **Buy these for the balance sheet you can see, not the payments you are promised.**",
                 },
             ],
         },
@@ -555,7 +652,7 @@ export const cables: SectorOverview = {
             points: [
                 {
                     label: 'What EV/EBITDA changes',
-                    text: "**Finolex** shows ₹4,344cr of net cash, so it looks much cheaper on EV/EBITDA than on P/E, but part of that is its stake in Finolex Industries, which owns part of Finolex in return; count the treasury cash, not the cross-holding. **RR Kabel**'s small net cash leaves out ₹1,107cr of interest-bearing supplier credit, which India Ratings treats as debt. **Laser**'s ₹711cr of net debt is from before the IPO repaid about ₹490cr, and **KSH**'s debt rose again to ₹481cr in Q1 as copper and volume grew.",
+                    text: "**Finolex** shows ₹4,344cr of net cash, so it looks much cheaper on EV/EBITDA than on P/E, but part of that is its stake in Finolex Industries, which owns part of Finolex in return; count the treasury cash, not the cross-holding. **RR Kabel**'s small net cash leaves out ₹1,107cr of interest-bearing supplier credit, which India Ratings treats as debt. **Laser**'s ₹711cr of net debt is from before the IPO repaid about ₹490cr, and **KSH**'s debt rose again to ₹481cr in Q1 as copper and volume grew. **HFCL**'s ₹1,428cr of net debt leaves out ₹764cr of bank guarantees and the ₹2,545cr tied up in government networks. **Sterlite**'s ₹1,619cr was before its ₹1,500cr share sale, but the unprovided Prysmian judgment, about ₹900cr, is debt in all but name and the live figures ignore it.",
                 },
                 {
                     label: 'Fits: prices that ask for about what I expect',
@@ -570,8 +667,12 @@ export const cables: SectorOverview = {
                     text: "**Paramount** needs about {need:Paramount Communications|19}% against my ~15%, **Finolex** about {need:Finolex Cables|17}% against ~12%, and **Advait** about {need:Advait Energy|21}% against ~15%, the widest gap and close to Stretched. For Paramount and Advait, the price assumes new plants (Narmadapuram, the battery and electrolyser lines) arrive on time and earn well; for Finolex it assumes the fibre windfall is the new normal, which management itself denies.",
                 },
                 {
+                    label: 'The fibre makers: priced for the peak',
+                    text: "**HFCL** needs about {need:HFCL|23}% a year against my ~18%, which reads {label:HFCL|full} and is close to Stretched. Its Q2 run-rate makes it look cheaper, but that is peak-cycle fibre profit from a company whose last five years of profit produced little cash. **Sterlite** needs about {need:Sterlite Technologies|42}% a year on reported profit against my ~25%, which is {label:Sterlite Technologies|stretched}. That figure is distorted by a low base: FY26 profit was ₹56cr and the last twelve months ₹243cr. On Q1 FY27's profit annualised (about ₹790cr), the price when this was written was about 58 times earnings and would need about 26% a year, close to my estimate. But Q1 was a peak-cycle quarter, the house rule uses reported profit, and the full ₹20,000cr plan, which implies about ₹3,500cr of FY29 profit, is largely in the price already. **Neither price leaves room for the cycle turning.**",
+                },
+                {
                     label: 'Earnings quality: which P/Es flatter',
-                    text: "The live P/E uses reported profit, and four of these include one-offs. **Paramount**'s includes key-man insurance and, this year, tariff refunds; **RR Kabel**'s Q1 includes forex gains and a one-off credit; **Laser**'s FY26 includes a ₹32cr gain; **Finolex**'s includes the fibre stock gain and other income of ₹370cr in FY26, 60% of its operating profit, much of it treasury and associate income. **On core profit, each of these is a little more expensive than the table shows.**",
+                    text: "The live P/E uses reported profit, and four of these include one-offs; HFCL's is flattered by the price cycle, while Sterlite's is held down by a thin base year. **Paramount**'s includes key-man insurance and, this year, tariff refunds; **RR Kabel**'s Q1 includes forex gains and a one-off credit; **Laser**'s FY26 includes a ₹32cr gain; **Finolex**'s includes the fibre stock gain and other income of ₹370cr in FY26, 60% of its operating profit, much of it treasury and associate income. **HFCL**'s trailing profit includes its best quarter ever, earned at peak fibre prices. **On core or mid-cycle profit, each of these five is a little more expensive than the table shows.**",
                 },
             ],
             embed: 'valuation',
@@ -616,13 +717,25 @@ export const cables: SectorOverview = {
             watch: 'Exports running toward ₹700–800cr; term debt tied up for Narmadapuram; the margin back to FY25 levels by Q4 FY27.',
         },
         {
-            company: 'Advait Energy', rank: 7, stance: 'AVOID', segment: TENDER,
+            company: 'Sterlite Technologies', rank: 7, stance: 'CYCLICAL', segment: FIBRE,
+            what: "India's largest optical fibre and cable maker, making everything from glass preform to fibre, cable and data-centre connectors, sold mainly to US and European telcos and hyperscale data centres; part of the Vedanta group.",
+            view: "**A better business than a year ago, priced as if the boom lasts.** Data centres rose from 1% of FY26 revenue to 21% in Q1 FY27, the margin reached 20%, and it turned 82% of five years' operating profit into cash. But FY26 profit was only ₹56cr, the $1.11bn award is potential value rather than firm orders, a $101m Prysmian judgment is not provided for, and promoter warrants at ₹110 were priced weeks before that award. The price needs about {need:Sterlite Technologies|42}% a year on reported profit against my ~25%; even on the Q1 run-rate it needs about 26%, at a peak-cycle margin.",
+            watch: 'Q2 results on 23 October: revenue against the ₹2,228cr executable book and a margin of 20.8% or more; hyperscaler purchase orders flowing from Q3; the Prysmian appeal.',
+        },
+        {
+            company: 'HFCL', rank: 8, stance: 'AVOID', segment: FIBRE,
+            what: "Maker of optical fibre and fibre cable, mostly exported to US data-centre and telecom buyers, plus telecom equipment, a young defence arm and government fibre-network contracts such as BharatNet.",
+            view: "**Peak-cycle profit on a poor cash and governance record.** Telecom products earned 30.8% in Q2 FY27 and sales grew 144%. But five years of profit (₹1,484cr) produced only ₹413cr of operating cash, about ₹2,545cr sits in loss-making government networks, and promoters cut their stake from 37.8% to 28.3%, mostly by selling, before taking warrants at ₹74; the shares are in NSE's strictest surveillance stage. The price needs about {need:HFCL|23}% a year against my ~18%.",
+            watch: 'Operating cash staying positive and debtors under 100 days; the network loss shrinking once the Army maintenance contract is signed; the margin holding at 23% or more as fibre prices cool.',
+        },
+        {
+            company: 'Advait Energy', rank: 9, stance: 'AVOID', segment: TENDER,
             what: "Transmission-line products and services (optical ground wire, emergency restoration towers, stringing tools, live-line work), plus solar and battery contracting, electrolysers, fuel cells and owned battery-storage projects.",
             view: "**A good core funding a capital-hungry pivot.** Transmission products earned 17.2% on ₹459cr of FY26 revenue, but the group plans ₹300–350cr of capex this year, more than its ₹291cr net worth and mostly with debt, while operating cash was −₹10cr. Part of its battery revenue was contracting for its own project, and contingent liabilities rose to ₹363cr. The price needs about {need:Advait Energy|21}% a year against my ~15%.",
             watch: 'Operating cash; the battery plant installed in Q3 FY27; clean separation of work done for its own projects.',
         },
         {
-            company: 'JD Cables', rank: 8, stance: 'AVOID', segment: TENDER,
+            company: 'JD Cables', rank: 10, stance: 'AVOID', segment: TENDER,
             what: "Small Kolkata maker of low-tension aerial bunched cables, power cables and aluminium conductors for state boards and contractors in the East and North-East, with one ₹407cr highway contract.",
             view: "**Cheap for reasons that show in the cash.** Revenue grew 46% in FY26 but volume only 4%, operating cash was −₹74cr, and it ended the year with ₹0.54cr of cash while the MD lent it ₹10.8cr. Guidance was cut from 50–60% to 40–50% within 16 weeks and its highway strategy reversed. The price needs only about {need:JD Cables|9}% a year against my ~10%, but I would not buy on that.",
             watch: 'H1 FY27 results (due November) showing positive operating cash; the new unit above 50% use; progress on the highway job.',
@@ -635,11 +748,12 @@ export const cables: SectorOverview = {
             "**Qualified cables and conductor.** **Dynamic Cables: own.** Pass-through contracts, a rising high-voltage mix and 26% returns at a price that asks for less than I expect; the late plant and flat orders are the reasons I trimmed my estimate, not the reasons to sell. **KSH International: wait.** The best niche here and a management that beat every promise, but the price needs more than my raised estimate and the business has yet to produce cash.",
             "**Branded house wire.** **RR Kabel: follow**, and buy on a weak quarter. The route to the electrician is the durable asset and RR is executing well, but the price now asks for a little more than I expect, and its cash and supplier credit need to improve. **Finolex: wait.** A great brand and a cheap fibre bet, but the windfall is fading, house wire faces a funded entrant, and control is in court.",
             "**Utility cables and projects.** **Laser Power: wait.** Lower interest is real, but revenue fell, payments are slow and governance signals are early. **Paramount: pass.** A tariff removed and an insurance payout are not a moat. **Advait Energy: avoid.** Profit is not becoming cash, and the group is spending more than its net worth on its lowest-return work. **JD Cables: avoid.** Cheap on paper, empty in the bank.",
-            "**What would change my view.** For the better: KSH turning operating cash positive; RR's price falling below the growth it needs; Dynamic's plant running and its order book growing; UltraTech competing on capacity rather than price. For the worse: a house-wire price war, aluminium falling fast enough to leave stock losses, or state boards slowing payments.",
-            "**What to watch next quarter.** RR's margin and cash; Dynamic's plant and orders; KSH's profit per tonne and working capital; Finolex's fibre margin and the court case; Laser's operating cash; Paramount's exports and term loan; Advait's battery plant; JD's H1 results.",
+            "**Optical fibre and telecom networks.** **Sterlite Technologies: pass.** The only maker here that owns the whole glass chain, and a genuine data-centre winner, but on reported profit the price needs far more growth than I expect, the big award is not yet firm orders, and an unprovided US judgment and cheap promoter warrants sit beside it. **HFCL: avoid.** Record profit on a fibre boom, but five years of profit did not become cash, ₹2,545cr is stuck in loss-making government work, and its promoters sold before taking cheap warrants.",
+            "**What would change my view.** For the better: KSH turning operating cash positive; RR's price falling below the growth it needs; Dynamic's plant running and its order book growing; UltraTech competing on capacity rather than price; Sterlite winning the Prysmian appeal and turning its award letters into purchase orders at a lower price; HFCL producing a full year of operating cash with its network loss halved. For the worse: a house-wire price war, aluminium falling fast enough to leave stock losses, state boards slowing payments, or fibre prices falling before the 2028 capacity arrives.",
+            "**What to watch next quarter.** RR's margin and cash; Dynamic's plant and orders; KSH's profit per tonne and working capital; Finolex's fibre margin and the court case; Laser's operating cash; Paramount's exports and term loan; Advait's battery plant; JD's H1 results; Sterlite's Q2 on 23 October; HFCL's Q3 revenue (at least about ₹2,200cr is needed for its 80% guide) and network loss.",
         ],
         bottomLine:
-            "Copper passes through, so rupee growth means little this year; what matters is who owns the route to the customer and who turns profit into cash. Own the disciplined qualified maker (Dynamic Cables), follow the best distributor for a better price (RR Kabel Ltd.), wait on KSH International, Finolex Cables and Laser Power & Infra, pass on Paramount Communications, and avoid Advait Energy and JD Cables until profit becomes cash.",
+            "Copper passes through, so rupee growth means little this year, and a fibre boom flatters the two glass makers; what matters is who owns the route to the customer and who turns profit into cash. Own the disciplined qualified maker (Dynamic Cables), follow the best distributor for a better price (RR Kabel Ltd.), wait on KSH International, Finolex Cables and Laser Power & Infra, pass on Paramount Communications and Sterlite Technologies, and avoid HFCL, Advait Energy and JD Cables until profit becomes cash.",
     },
 
     sources: [
@@ -663,5 +777,19 @@ export const cables: SectorOverview = {
         { label: 'Advait Energy Transitions annual report FY26 — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/b8988b55-22b0-4a78-ac33-8078e02fa552.pdf' },
         { label: 'Paramount Communications rating rationale — ICRA, Jul 2026', url: 'https://www.icra.in/Rating/ShowRationalReportFilePdfViewer/144200' },
         { label: 'JD Cables rating rationale — Infomerics, Jul 2026', url: 'https://www.infomerics.com/admin/uploads/Pr-JD-Cables03Jul26.pdf' },
+        { label: 'Optical fibre prices rise as preform availability tightens — CRU, Feb 2026', url: 'https://www.crugroup.com/en/communities/thought-leadership/2026/optical-fibre-prices-rise-as-preform-availability-tightens/' },
+        { label: 'AI’s growing pull on the supply chain — CoBank, Jul 2026', url: 'https://www.cobank.com/knowledge-exchange/ais-growing-pull-on-the-supply-chain-creates-challenges-for-broadband-operators' },
+        { label: 'Fibre supply shortfall and price outlook — 36Kr, Sep 2026', url: 'https://eu.36kr.com/en/p/3980105812245253' },
+        { label: 'Corning Q2 2026 results (optical communications) — SEC filing', url: 'https://www.sec.gov/Archives/edgar/data/0000024741/000002474126000253/glw-20260728xex99xq22026.htm' },
+        { label: 'YOFC interim report 2026 (CRU demand forecasts) — HKEX', url: 'https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0821/2026082101705.pdf' },
+        { label: 'EU anti-subsidy duties on Indian optical fibre cable — EU Regulation 2025/1135', url: 'https://eur-lex.europa.eu/eli/reg_impl/2025/1135/oj/eng' },
+        { label: 'BharatNet: ₹40,635cr later, under a third of village councils connected — ThePrint, Aug 2026', url: 'https://theprint.in/india/governance/bharatnet-still-loading-rs-40635-cr-later-less-than-a-third-gram-panchayats-have-broadband-points/3010627/' },
+        { label: 'Sterlite Technologies annual report FY26 — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/dd5015f0-cbf9-4237-b96c-b72ded707e24.pdf' },
+        { label: 'Sterlite Technologies Q1 FY27 results and presentation — NSE', url: 'https://nsearchives.nseindia.com/corporate/STLTECH_24072026144505_NSE_Results_Outcome-signed.pdf' },
+        { label: 'Sterlite Technologies rating rationale — ICRA, Jul 2026', url: 'https://www.icra.in/Rating/ShowRationalReportFilePdfViewer/144100' },
+        { label: 'HFCL annual report FY26 — BSE', url: 'https://www.bseindia.com/xml-data/corpfiling/AttachHis/60894750-bb6f-4e13-8e70-876062e55b18.pdf' },
+        { label: 'HFCL Q2 FY27 results and press release — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2e9e286f-aad3-4a3f-aa7d-72edbfa7323e.pdf' },
+        { label: 'HFCL Q2 FY27 investor presentation — BSE', url: 'https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=52bcff6e-34cb-4d4b-88ca-a59046342f27.pdf' },
+        { label: 'HFCL rating rationale — CARE, Jul 2026', url: 'https://www.careratings.com/upload/CompanyFiles/PR/202607140729_HFCL_Limited.pdf' },
     ],
 };

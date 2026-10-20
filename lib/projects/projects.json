@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18",
+ "updated": "2026-10-20",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -13641,6 +13641,122 @@
    "source": "Q1 FY27 presentation (slide 12) and call (Aug 2026); Q4 FY26 call had said about 1,000 beds by FY30",
    "updatedOn": "2026-10-18",
    "capacityAdd": "About +815 net to about 3,670 operational beds (+29% on 2,855)"
+  },
+  {
+   "id": "hfcl-fibre-cable-expansion",
+   "company": "HFCL",
+   "sector": "Cables",
+   "name": "Optical fibre and cable expansion",
+   "what": "Fibre from 28 to 33.9 mn fibre-km a year by December 2026 and 43.1 by July 2028; cable from 39 to 42.36 by December 2026 and 62.0 by July 2028, for the hyperscaler and data-centre supply deals",
+   "cost": "Part of a ~₹1,800cr fibre, cable and preform plan; ₹1,220cr of approvals in August (₹400cr) and September (₹820cr) 2026",
+   "expectedStart": "Q3 FY27 (first step); Q2 FY29 (full)",
+   "adds": "Room beyond today's fully used plants for the USD 1.1bn five-year and USD 244m three-year supply agreements",
+   "status": "building",
+   "source": "NSE filings 4 August and 14 September 2026; Q2 FY27 presentation (Oct 2026)",
+   "updatedOn": "2026-10-20",
+   "capacityAdd": "Fibre +15.1 mn fkm (+54% on 28); cable +23 mn fkm (+59% on 39)"
+  },
+  {
+   "id": "hfcl-preform",
+   "company": "HFCL",
+   "sector": "Cables",
+   "name": "Preform plant, Madhya Pradesh",
+   "what": "Own plant for preform, the glass rod fibre is drawn from; HFCL now buys about 1,000 t a year",
+   "cost": "About ₹1,250cr; nothing spent from the warrant money by September 2026",
+   "expectedStart": "Q3 FY29 (October 2028)",
+   "adds": "Preform at least 30% cheaper than buying, cutting cable material cost by about 10–12% (management)",
+   "status": "planned",
+   "source": "NSE filing 14 September 2026; Q1 FY27 call (Jul 2026); monitoring agency report Q2 FY27",
+   "updatedOn": "2026-10-20",
+   "capacityAdd": "600 t a year (none today; HFCL buys about 1,000 t a year)",
+   "revisions": [
+    {
+     "on": "2026-09-14",
+     "text": "Doubled and brought forward: first announced in March 2026 as 300 t for ₹580cr by July 2029; now 600 t for about ₹1,250cr by October 2028. The saving claimed rose from 15–20% (Q4 FY26 call) to at least 30% (Q1 FY27 call)."
+    }
+   ]
+  },
+  {
+   "id": "hfcl-dci-assemblies",
+   "company": "HFCL",
+   "sector": "Cables",
+   "name": "Data-centre connectivity assemblies (HTL)",
+   "what": "Plant for 2.7 lakh data-centre assemblies a year at subsidiary HTL, raising HTL capacity five-fold",
+   "cost": "₹215cr",
+   "expectedStart": "Q2 FY28 (September 2027)",
+   "adds": "Supports data-centre connectivity sales, guided at about ₹800cr in FY27 with more than ₹850cr of orders",
+   "status": "planned",
+   "source": "NSE filing 22 July 2026; Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-10-20",
+   "capacityAdd": "2.7 lakh assemblies a year (HTL capacity five times today's)"
+  },
+  {
+   "id": "hfcl-grenade-plant",
+   "company": "HFCL",
+   "sector": "Cables",
+   "name": "Grenade and ammunition plant",
+   "what": "Plant for 40 lakh grenades a year under a DRDO licence; foundation laid 15 May 2026",
+   "cost": "₹230cr",
+   "expectedStart": "Q3 FY28 (December 2027)",
+   "adds": "Part of the defence push: ₹3,000cr+ of defence sales targeted in FY29",
+   "status": "building",
+   "source": "NSE filing 14 May 2026; Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-10-20",
+   "capacityAdd": "40 lakh grenades a year (new product line)"
+  },
+  {
+   "id": "hfcl-haspl-aerospace",
+   "company": "HFCL",
+   "sector": "Cables",
+   "name": "Defence subsidiary HASPL and aerospace acquisition",
+   "what": "HFCL buys 51% of HASPL for ₹89.25cr and moves its thermal-sight business (₹50cr) and 80% of Raddef (₹75cr) into it; the MD's relative will own 6.5%, the sellers 9.5% with veto rights",
+   "cost": "₹89.25cr for 51%; ₹90cr of warrant money set aside, deferred to 31 December 2026",
+   "expectedStart": "Q3 FY27",
+   "adds": "Defence sales of about ₹500cr in FY27 including the acquisition (₹77cr in FY26), ₹3,000cr+ in FY29",
+   "status": "planned",
+   "source": "NSE filings 25 March and 3 June 2026; Q2 FY27 press release (Oct 2026): deal to close this quarter",
+   "updatedOn": "2026-10-20"
+  },
+  {
+   "id": "sterlite-technologies-capacity-expansion",
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "name": "+50% preform, fibre and cable capacity",
+   "what": "Adds half again to preform, optical fibre and cable capacity, alongside a greenfield connectivity plant in India, under the FY29 \"Lakshya\" plan",
+   "cost": "About ₹3,000cr over three years (about ₹1,000cr a year), from internal accruals and/or debt",
+   "expectedStart": "Q4 FY29",
+   "adds": "Part of the ₹20,000cr FY29 revenue target (₹4,750cr in FY26)",
+   "status": "planned",
+   "source": "NSE filing and investor day, 3 September 2026",
+   "updatedOn": "2026-10-20",
+   "capacityAdd": "+50% on today's capacity (not disclosed; about 70% used)",
+   "revisions": [
+    {
+     "on": "2026-09-03",
+     "text": "Capex doubled: the Q4 FY26 call (April) guided about ₹500cr for FY27 and the Q1 FY27 call (July) ₹500cr a year for three years; the 3 September investor day raised it to about ₹1,000cr a year."
+    }
+   ]
+  },
+  {
+   "id": "sterlite-technologies-india-connectivity",
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "name": "Greenfield connectivity plant, India",
+   "what": "New plant for connectivity products (pre-terminated data-centre trunks and fibre-to-home kits)",
+   "status": "planned",
+   "source": "Investor day, 3 September 2026 (no cost or date given)",
+   "updatedOn": "2026-10-20"
+  },
+  {
+   "id": "sterlite-technologies-us-connectivity",
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "name": "US connectivity plant",
+   "what": "Connectivity plant in the US with 400–500 jobs, adding to the Lugoff (South Carolina) cable plant and reducing tariff exposure",
+   "cost": "Up to $100m over five years",
+   "status": "planned",
+   "source": "Announced May 2026; Q1 FY27 call (Jul 2026): details due at the Q2 FY27 call",
+   "updatedOn": "2026-10-20"
   }
  ]
 }

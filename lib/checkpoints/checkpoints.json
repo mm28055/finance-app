@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18",
+ "updated": "2026-10-20",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -32999,6 +32999,234 @@
    "createdOn": "2026-10-18",
    "status": "pending",
    "project": "healthcare-global-hcg-cuttack-vizag"
+  },
+  {
+   "id": "hfcl-q3fy27-1",
+   "company": "HFCL",
+   "sector": "Cables",
+   "text": "Q3 FY27 revenue of at least about ₹2,200cr, on the way to the \"at least 80%\" FY27 growth guided on 19 October (H2 needs ₹4,451cr or more)",
+   "metric": "revenue",
+   "op": ">=",
+   "target": 2200,
+   "due": "Q3 FY27",
+   "ifMet": "The twice-raised FY27 guide is on track",
+   "ifMissed": "First miss after two raises; the peak-cycle growth is fading",
+   "createdOn": "2026-10-20",
+   "status": "pending"
+  },
+  {
+   "id": "hfcl-q3fy27-2",
+   "company": "HFCL",
+   "sector": "Cables",
+   "text": "EBITDA margin of at least 23% in Q3 FY27 on the company's own basis (includes other income; Screener's operating margin ran about 1–1.7 points lower in Q1 and Q2), the 'minimum' management said it can protect",
+   "due": "Q3 FY27",
+   "ifMet": "Fibre pricing is holding above the level management called \"almost final\" in April",
+   "ifMissed": "Fibre prices are normalising; the peak-margin risk is showing",
+   "createdOn": "2026-10-20",
+   "status": "pending"
+  },
+  {
+   "id": "hfcl-q3fy27-3",
+   "company": "HFCL",
+   "sector": "Cables",
+   "text": "Turnkey (EPC) segment loss well below Q2's ₹123cr, with the Army maintenance contract (about ₹170cr a year) signed",
+   "due": "Q3 FY27",
+   "ifMet": "The ₹2.5k cr tied up in turnkey work starts earning",
+   "ifMissed": "The EPC profit promised in April keeps slipping; the loss-making arm weighs on cash",
+   "createdOn": "2026-10-20",
+   "status": "pending"
+  },
+  {
+   "id": "hfcl-q4fy27-1",
+   "company": "HFCL",
+   "sector": "Cables",
+   "text": "FY27 revenue growth of at least 80% (₹8,908cr or more), as guided on 19 October",
+   "metric": "fyRevenueGrowth",
+   "op": ">=",
+   "target": 80,
+   "due": "Q4 FY27",
+   "ifMet": "Guidance delivered for a third time",
+   "ifMissed": "The raised guide was too high",
+   "createdOn": "2026-10-20",
+   "status": "pending"
+  },
+  {
+   "id": "hfcl-q4fy27-2",
+   "company": "HFCL",
+   "sector": "Cables",
+   "text": "Defence revenue near ₹500cr in FY27 (₹79cr in H1, so about ₹420cr needed in H2), with the aerospace acquisition included",
+   "due": "Q4 FY27",
+   "ifMet": "The defence push is real, supporting the ₹3,000cr FY29 goal",
+   "ifMissed": "Defence stays a promise; the ₹3,000cr FY29 goal looks unlikely",
+   "createdOn": "2026-10-20",
+   "status": "pending"
+  },
+  {
+   "id": "hfcl-q4fy27-3",
+   "company": "HFCL",
+   "sector": "Cables",
+   "text": "Positive operating cash in Q3 and Q4 FY27 with receivables under 100 days of sales (about 94 days on Q2 annualised sales, ₹2,630cr)",
+   "due": "Q4 FY27",
+   "ifMet": "Profit is turning into cash, unlike FY22–FY26; would improve the view",
+   "ifMissed": "Cash conversion stays poor; the profit jump is not reaching cash",
+   "createdOn": "2026-10-20",
+   "status": "pending"
+  },
+  {
+   "id": "hfcl-fibre-cable-expansion-m1",
+   "company": "HFCL",
+   "sector": "Cables",
+   "text": "Fibre at 33.9 and cable at 42.36 mn fibre-km a year commissioned by December 2026",
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-20",
+   "status": "pending",
+   "project": "hfcl-fibre-cable-expansion"
+  },
+  {
+   "id": "hfcl-haspl-aerospace-m1",
+   "company": "HFCL",
+   "sector": "Cables",
+   "text": "HASPL aerospace acquisition (₹89.25cr for 51%) closed by December 2026",
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-20",
+   "status": "pending",
+   "project": "hfcl-haspl-aerospace"
+  },
+  {
+   "id": "hfcl-grenade-plant-m1",
+   "company": "HFCL",
+   "sector": "Cables",
+   "text": "Grenade plant (40 lakh a year) running by December 2027",
+   "due": "Q3 FY28",
+   "createdOn": "2026-10-20",
+   "status": "pending",
+   "project": "hfcl-grenade-plant"
+  },
+  {
+   "id": "hfcl-preform-m1",
+   "company": "HFCL",
+   "sector": "Cables",
+   "text": "600 t preform plant running by October 2028",
+   "due": "Q3 FY29",
+   "createdOn": "2026-10-20",
+   "status": "pending",
+   "project": "hfcl-preform"
+  },
+  {
+   "id": "sterlite-technologies-q2fy27-1",
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "text": "Q2 FY27 revenue of at least ₹2,228cr, the executable order book for the quarter (Q1 beat its book by 30%)",
+   "metric": "revenue",
+   "op": ">=",
+   "target": 2228,
+   "due": "Q2 FY27",
+   "ifMet": "Delivery is keeping up with the order wins",
+   "ifMissed": "Capacity or input limits (germanium, helium) are holding back revenue",
+   "createdOn": "2026-10-20",
+   "status": "pending"
+  },
+  {
+   "id": "sterlite-technologies-q2fy27-2",
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "text": "Operating margin at least 20% on Screener's basis in Q2 FY27 (Q1 20.2%; the company's own figure, which adds other income, was 20.8%), holding the Q1 step-up",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 20,
+   "due": "Q2 FY27",
+   "ifMet": "The Q1 margin was not a one-off",
+   "ifMissed": "Q1 was a peak; the path to 23% and 27% looks less likely",
+   "createdOn": "2026-10-20",
+   "status": "pending"
+  },
+  {
+   "id": "sterlite-technologies-q2fy27-3",
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "text": "Attach rate (connectivity ÷ cable revenue) above 20% from Q2 FY27, as guided (16% in Q1; 25% targeted by Q4)",
+   "due": "Q2 FY27",
+   "ifMissed": "The higher-value connectivity mix is slower than promised",
+   "createdOn": "2026-10-20",
+   "status": "pending"
+  },
+  {
+   "id": "sterlite-technologies-q2fy27-4",
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "text": "Order book above Q1's ₹18,618cr after about ₹16,000cr of July–October wins",
+   "metric": "orderBook",
+   "op": ">=",
+   "target": 18618,
+   "due": "Q2 FY27",
+   "ifMet": "Wins are adding to the book faster than revenue draws it down",
+   "ifMissed": "Order intake is slowing, or the award letters are not being counted as firm",
+   "createdOn": "2026-10-20",
+   "status": "pending"
+  },
+  {
+   "id": "sterlite-technologies-q2fy27-5",
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "text": "Gross debt down by about ₹1,125cr (75% of the ₹1,500cr QIP, as said on the Q1 call) from ₹1,827cr in March",
+   "due": "Q2 FY27",
+   "ifMet": "The balance-sheet repair is real, not just cash parked from the QIP",
+   "ifMissed": "\"Net debt-free\" rests on QIP cash rather than lower debt",
+   "createdOn": "2026-10-20",
+   "status": "pending"
+  },
+  {
+   "id": "sterlite-technologies-q3fy27-1",
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "text": "Purchase orders under the $1.11bn hyperscaler award flowing into revenue, with shipments from Q3 FY27",
+   "due": "Q3 FY27",
+   "ifMet": "The award letter is turning into firm orders",
+   "ifMissed": "The award is potential value only; the order book is softer than shown",
+   "createdOn": "2026-10-20",
+   "status": "pending"
+  },
+  {
+   "id": "sterlite-technologies-q4fy27-1",
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "text": "FY27 EBITDA margin of 23% on the company's own basis (includes other income), as guided in July — not Screener's operating margin, which ran 0.6 points lower in Q1",
+   "due": "Q4 FY27",
+   "ifMet": "On the path to the 27%+ FY29 target",
+   "ifMissed": "Margin guidance was raised too fast; the FY29 plan looks stretched",
+   "createdOn": "2026-10-20",
+   "status": "pending"
+  },
+  {
+   "id": "sterlite-technologies-q4fy27-2",
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "text": "Data centre plus large enterprise reaching about 50% of revenue in FY27, as guided (39% in Q1; 18% in FY26)",
+   "due": "Q4 FY27",
+   "ifMet": "The shift away from telecom customers is lasting",
+   "ifMissed": "Still a telecom-cycle business; more exposed to a fibre downturn",
+   "createdOn": "2026-10-20",
+   "status": "pending"
+  },
+  {
+   "id": "sterlite-technologies-us-connectivity-m1",
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "text": "Details of the up-to-$100m US connectivity plant (site, cost, timing) given at the Q2 FY27 call, as promised",
+   "due": "Q2 FY27",
+   "createdOn": "2026-10-20",
+   "status": "pending",
+   "project": "sterlite-technologies-us-connectivity"
+  },
+  {
+   "id": "sterlite-technologies-capacity-expansion-m1",
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "text": "+50% preform, fibre and cable capacity in place by the end of FY29",
+   "due": "Q4 FY29",
+   "createdOn": "2026-10-20",
+   "status": "pending",
+   "project": "sterlite-technologies-capacity-expansion"
   }
  ]
 }

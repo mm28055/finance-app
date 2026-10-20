@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18",
+ "updated": "2026-10-20",
  "capacity": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -5176,6 +5176,24 @@
    "utilisation": "58% 'centre utilisation' in FY26 (South 68%, West 50%, East 57%); HCG no longer reports occupancy, which CARE put at 68.7% in H1 FY26. About 400 built beds are not yet in use",
    "capexStatus": "About 188 beds in FY27, 520 in FY28–29 and 230 in FY30, to about 3,670 operational beds; bed capex about ₹150cr in FY27, ₹300cr over FY28–29 and ₹100cr in FY30, plus about ₹100cr a year of maintenance. Whitefield slipped to end-FY28 and Cuttack and Vizag to FY28–29; ₹75cr spent in Q1 FY27",
    "source": "Q1 FY27 presentation and call (Aug 2026), Q4 FY26 call, CARE (Jan 2026) and sector note"
+  },
+  {
+   "company": "HFCL",
+   "sector": "Cables",
+   "today": "Optical fibre 28 mn fibre-km and cable 39 mn fibre-km a year, including a ribbon-cable (IBR) line of about 14 mn fibre-km; no own preform (buys about 1,000 t a year); data-centre assembly and defence capacity not disclosed",
+   "utilisation": "Fibre and cable both fully used (September 2026); management says it is choosing which orders to turn down",
+   "fullUse": "Not disclosed; FY26 sales were about 4.1 times net block",
+   "capexStatus": "About ₹1,800cr for fibre (to 43.1 mn fkm) and cable (to 62.0) by July 2028 and a 600 t preform plant by October 2028, plus ₹215cr for data-centre assemblies and ₹230cr for a grenade plant; guidance of ₹640cr for FY27 and ₹615cr for FY28 predates ₹1,220cr of later approvals; ₹436cr spent in H1 FY27; funded by internal cash, debt and promoter warrant money",
+   "source": "NSE filings 4 August and 14 September 2026, Q1 FY27 call (Jul 2026) and Q2 FY27 results (Oct 2026)"
+  },
+  {
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "today": "Preform, fibre, cable and connectivity capacity not disclosed since April 2026; fibre at Aurangabad and Jiangsu (China), cable and connectivity at Silvassa, Dadra, Dello (Italy) and Lugoff (South Carolina); preform made in-house. Fibre was about 50 mn fibre-km in 2023, the last public figure",
+   "utilisation": "About 70% blended (3 September 2026 filing); management says it now picks orders by capacity, and germanium and helium supply also limits orders",
+   "fullUse": "Not disclosed; the ₹20,000cr FY29 target on +50% capacity would need near-full use and much more value per unit (₹4,750cr in FY26)",
+   "capexStatus": "About ₹1,000cr a year for three years (₹3,000cr to end FY29) for +50% preform, fibre and cable and a greenfield connectivity plant in India, from accruals and/or debt (doubled from ₹500cr a year in July); plus up to $100m over five years for a US connectivity plant",
+   "source": "NSE filing and investor day (3 September 2026), Q1 FY27 call (Jul 2026), Q4 FY26 call and Outlook Business (Oct 2023)"
   }
  ]
 }

@@ -1177,6 +1177,272 @@ export const cablesCharts: Record<string, ProfileCharts> = {
             "inventory5y": -77,
             "payables5y": 16
         }
+    },
+    "HFCL": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 55
+                },
+                {
+                    "label": "Power and factory costs",
+                    "share": 11
+                },
+                {
+                    "label": "Staff",
+                    "share": 9
+                },
+                {
+                    "label": "Other costs",
+                    "share": 9
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 16
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "marginVsInput": {
+            "input": "Optical fibre cable price",
+            "periods": [
+                "Q2 FY24",
+                "Q3 FY24",
+                "Q4 FY24",
+                "Q1 FY25",
+                "Q2 FY25",
+                "Q3 FY25",
+                "Q4 FY25",
+                "Q1 FY26",
+                "Q2 FY26",
+                "Q3 FY26",
+                "Q4 FY26",
+                "Q1 FY27",
+                "Q2 FY27"
+            ],
+            "margin": [
+                12.0,
+                11.3,
+                14.8,
+                15.1,
+                14.4,
+                15.0,
+                -4.6,
+                3.2,
+                18.2,
+                18.8,
+                17.2,
+                21.6,
+                24.8
+            ],
+            "index": [
+                100,
+                99,
+                96,
+                93,
+                90,
+                88,
+                89,
+                90,
+                91,
+                92,
+                96,
+                105,
+                null
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                650.0,
+                619.0,
+                582.0,
+                449.0,
+                764.0
+            ],
+            "ocf": [
+                205.0,
+                235.0,
+                -45.0,
+                396.0,
+                -378.0
+            ],
+            "fcf": [
+                22.0,
+                -107.0,
+                -455.0,
+                -13.0,
+                -723.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "47.4x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "26.8x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹1,428cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "13%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "15%"
+            }
+        ],
+        "statsAsOf": "20 Oct 2026"
+    },
+    "Sterlite Technologies": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 50
+                },
+                {
+                    "label": "Power and factory costs",
+                    "share": 13
+                },
+                {
+                    "label": "Staff",
+                    "share": 14
+                },
+                {
+                    "label": "Other costs",
+                    "share": 11
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 12
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "marginVsInput": {
+            "input": "Optical fibre cable price",
+            "periods": [
+                "Q1 FY24",
+                "Q2 FY24",
+                "Q3 FY24",
+                "Q4 FY24",
+                "Q1 FY25",
+                "Q2 FY25",
+                "Q3 FY25",
+                "Q4 FY25",
+                "Q1 FY26",
+                "Q2 FY26",
+                "Q3 FY26",
+                "Q4 FY26",
+                "Q1 FY27"
+            ],
+            "margin": [
+                14.1,
+                14.3,
+                6.8,
+                3.7,
+                7.3,
+                10.9,
+                10.6,
+                11.9,
+                13.0,
+                12.5,
+                9.5,
+                13.5,
+                20.2
+            ],
+            "index": [
+                100,
+                102,
+                100,
+                98,
+                95,
+                91,
+                89,
+                90,
+                91,
+                92,
+                94,
+                98,
+                107
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                665.0,
+                895.0,
+                471.0,
+                416.0,
+                569.0
+            ],
+            "ocf": [
+                584.0,
+                228.0,
+                791.0,
+                348.0,
+                520.0
+            ],
+            "fcf": [
+                -103.0,
+                -147.0,
+                511.0,
+                211.0,
+                327.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "193.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "57.0x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹1,619cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "82%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "12%"
+            }
+        ],
+        "statsAsOf": "20 Oct 2026"
     }
 };
 
@@ -1229,5 +1495,17 @@ export const cablesValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 47.0,
         "mcapAtWriting": 428.0,
         "peAtWriting": 13.5
+    },
+    "HFCL": {
+        "netDebt": 1428,
+        "ttmEbitda": 1586.0,
+        "mcapAtWriting": 41144.0,
+        "peAtWriting": 47.4
+    },
+    "Sterlite Technologies": {
+        "netDebt": 1619,
+        "ttmEbitda": 829.0,
+        "mcapAtWriting": 45610.0,
+        "peAtWriting": 193.0
     }
 };

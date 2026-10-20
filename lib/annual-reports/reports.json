@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02T05:04:41.656Z",
+ "updated": "2026-10-20T04:08:56.245Z",
  "reports": [
   {
    "company": "Aartech Solonics",
@@ -2856,6 +2856,25 @@
    "researchedOn": "2026-09-27"
   },
   {
+   "company": "HealthCare Global (HCG)",
+   "sector": "Hospitals",
+   "year": "FY26",
+   "url": "https://nsearchives.nseindia.com/corporate/HCG1_27082026215424_SE_Intimation_Notice_of_AGM_27_August_2026.pdf",
+   "auditor": "B S R & Co. (KPMG network) gave an unmodified opinion. The key audit matter was impairment of goodwill (₹388cr) and other non-financial assets. The audit trail (edit log) was not enabled for privileged and database-level changes at the parent and four subsidiaries, and not at all at four other group companies. Under CARO, title deeds of two properties in Bengaluru and Vijayawada (₹49.5cr gross) are still in the names of merged companies. Eleven subsidiaries and seven step-down subsidiaries (₹875cr of assets) were audited by other firms.",
+   "relatedParties": "HCG paid ₹58.1cr in cash to buy back 16.2 lakh vested options at the change of control, including ₹17.1cr to former CEO Meghraj Gore and ₹2.0cr to the former CFO; this was charged to equity, so it never reached profit. CVC's parent separately paid ₹48.3cr of bonuses directly to HCG employees on 30 May 2025. The founder and chairman, Dr B.S. Ajaikumar, received ₹2.57cr of medical consultancy charges and ₹2.0cr of professional fees after becoming non-executive, plus ₹1.0cr of salary for April–May. After the year, the Milann fertility business was sold to Inviga Healthcare Fund I, which he controls, for an enterprise value of ₹63.2cr.",
+   "contingent": "Contingent liabilities were ₹103cr (₹69cr a year earlier), of which ₹76.1cr is customs duty under EPCG export-promotion licences (₹52.2cr). An ₹8.3cr misclassification demand carries a 100% penalty and personal penalties on employees, and there is a ₹10.4cr GST demand on FDG, the PET-scan tracer, plus old VAT, sales-tax and excise disputes. Undiscounted lease commitments are ₹1,453cr, ₹150cr of it due within a year.",
+   "outlook": "Management says about 400 beds already built but not in use can be opened over three to four years. Mature hospitals (over ₹10cr of revenue a month) earn a 26% margin and 27% return on capital, against 5% and −22% for the six smallest, so filling the newer ones is the main lever.",
+   "other": "FY26 revenue was ₹2,538cr: West ₹1,133cr, South ₹995cr, East ₹283cr, Kenya ₹74cr (2.9%) and Milann ₹60cr. Doctors are paid largely as consultants (₹549cr, 21.6% of revenue). Owners' profit was ₹13.8cr after ₹44.6cr of exceptional items (₹31.9cr Milann goodwill write-down, ₹12.7cr labour-code gratuity). Lease liabilities were ₹825cr, with ₹85.9cr of lease interest and ₹84.5cr of right-of-use depreciation below operating profit. The report's own return on capital ratio was 6.63%, against the 14% pre-Ind AS figure management quotes. KKR (Hector Asia) owns 54.27% and the founder 9.30%.",
+   "flags": [
+    "The Milann fertility business was sold to a fund controlled by the chairman, at about one times sales after a ₹31.9cr write-down.",
+    "₹58cr was paid in cash to buy back staff options at the change of control (₹17.1cr to the former CEO), charged to equity so it never touched profit.",
+    "Contingent customs-duty claims under EPCG licences rose to ₹76cr from ₹52cr, one carrying a 100% penalty and personal penalties on employees.",
+    "The audit trail was not enabled for privileged changes at the parent and four subsidiaries, and not at all at four other group companies.",
+    "The report's own return on capital was 6.63%, far below the 14% management quotes."
+   ],
+   "researchedOn": "2026-10-18"
+  },
+  {
    "company": "HEG",
    "sector": "Elect and Refrac",
    "year": "FY26",
@@ -2870,6 +2889,24 @@
     "The company has extended a large ₹1,230 crore corporate guarantee for TACC."
    ],
    "researchedOn": "2026-09-27"
+  },
+  {
+   "company": "HFCL",
+   "sector": "Cables",
+   "year": "FY26",
+   "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/60894750-bb6f-4e13-8e70-876062e55b18.pdf",
+   "auditor": "The auditor's opinion and the CARO statutory checklist report are clean.",
+   "relatedParties": "The company purchased ₹64 crore in goods from promoter-group Exicom in FY26, up from ₹11 crore in FY25. The managing director's pay increased to ₹12.07 crore from ₹7.50 crore. Anant Nahata, a relative of key management, is MD and CEO of Exicom and will hold 6.5% of the defence subsidiary HASPL.",
+   "contingent": "The company has ₹764 crore in bank guarantees and ₹358 crore in letters of credit. It also provided a ₹265 crore guarantee for its subsidiary HTL.",
+   "other": "The business operates in four segments: Telecom Products, Defence, Turnkey Contracts, and Others. FY26 telecom revenue was ₹2,931 crore with a 26.1% margin, while the turnkey segment posted a ₹113 crore loss. Exports reached ₹2,047 crore. One customer generated ₹646 crore of sales, and Reliance Jio made up 13–14%. The company holds ₹206 crore in short-term loans from other companies costing 12–15%. Most bank loans include personal and promoter guarantees, plus a 23.9% pledge of subsidiary HTL.",
+   "flags": [
+    "Purchases from promoter-group company Exicom jumped sharply to ₹64 crore from ₹11 crore the previous year.",
+    "There is no regular chairman on the company's board of directors.",
+    "A single customer accounted for ₹646 crore, representing over 10% of total FY26 sales.",
+    "Most bank loans require the managing director's personal guarantee and a promoter guarantee, alongside a pledge of 23.9% of subsidiary HTL.",
+    "The company pays high interest rates of 12–15% on ₹206 crore of short-term loans from other companies."
+   ],
+   "researchedOn": "2026-10-20"
   },
   {
    "company": "Himadri Speciality",
@@ -6225,6 +6262,23 @@
    "researchedOn": "2026-09-27"
   },
   {
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "year": "FY26",
+   "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/dd5015f0-cbf9-4237-b96c-b72ded707e24.pdf",
+   "auditor": "Auditor PwC included an emphasis of matter regarding a $101.25 million (about ₹900 crore) unprovided judgment against the US subsidiary. The CARO report confirmed no debt defaults and noted guarantees of ₹45 crore and ₹347 crore. CARO also reported slight delays in depositing taxes and provident-fund dues.",
+   "relatedParties": "In FY26, group purchases were ₹295 crore, including about ₹265 crore from Vedanta Ltd. Group sales were ₹350 crore, comprising ₹176 crore to Vedanta Ltd, ₹57 crore to Hindustan Zinc, and ₹56 crore to STL Networks. The non-STL-Networks part of ₹294 crore roughly matched STL Digital's revenue. The company gave a ₹347 crore guarantee for STL Networks and had ₹3,434 crore in pass-through banking and collections pending separation.",
+   "contingent": "The company has not provided for a $101.25 million (about ₹900 crore) trade-secrets judgment against its US subsidiary, which is currently on appeal with a $41.53 million bond posted. It has also issued guarantees of ₹45 crore and a ₹347 crore guarantee specifically for STL Networks.",
+   "other": "In FY26, the optical segment generated ₹4,486 crore in revenue and ₹606 crore in EBITDA, representing a 13.5% margin. The STL Digital IT-services arm reported ₹284 crore in revenue and ₹3 crore in EBITDA. No promoter shares were declared as pledged in FY26. Managerial pay exceeded legal limits by ₹11 crore, which required shareholder approval at the AGM.",
+   "flags": [
+    "The auditor included an emphasis of matter regarding a $101.25 million (about ₹900 crore) unprovided judgment against the US subsidiary.",
+    "Managerial pay exceeded legal limits by ₹11 crore and required shareholder approval.",
+    "The auditor noted slight delays in depositing statutory tax and provident-fund dues.",
+    "The company has ₹3,434 crore in pass-through banking and collections pending separation with related party STL Networks."
+   ],
+   "researchedOn": "2026-10-20"
+  },
+  {
    "company": "Stove Kraft",
    "sector": "Consumer Durables",
    "year": "FY26",
@@ -7417,25 +7471,6 @@
     "Reported profit was reduced by exceptional items, including new labour codes, deal costs, and the Naturell liquidation."
    ],
    "researchedOn": "2026-09-27"
-  },
-  {
-   "company": "HealthCare Global (HCG)",
-   "sector": "Hospitals",
-   "year": "FY26",
-   "url": "https://nsearchives.nseindia.com/corporate/HCG1_27082026215424_SE_Intimation_Notice_of_AGM_27_August_2026.pdf",
-   "auditor": "B S R & Co. (KPMG network) gave an unmodified opinion. The key audit matter was impairment of goodwill (₹388cr) and other non-financial assets. The audit trail (edit log) was not enabled for privileged and database-level changes at the parent and four subsidiaries, and not at all at four other group companies. Under CARO, title deeds of two properties in Bengaluru and Vijayawada (₹49.5cr gross) are still in the names of merged companies. Eleven subsidiaries and seven step-down subsidiaries (₹875cr of assets) were audited by other firms.",
-   "relatedParties": "HCG paid ₹58.1cr in cash to buy back 16.2 lakh vested options at the change of control, including ₹17.1cr to former CEO Meghraj Gore and ₹2.0cr to the former CFO; this was charged to equity, so it never reached profit. CVC's parent separately paid ₹48.3cr of bonuses directly to HCG employees on 30 May 2025. The founder and chairman, Dr B.S. Ajaikumar, received ₹2.57cr of medical consultancy charges and ₹2.0cr of professional fees after becoming non-executive, plus ₹1.0cr of salary for April–May. After the year, the Milann fertility business was sold to Inviga Healthcare Fund I, which he controls, for an enterprise value of ₹63.2cr.",
-   "contingent": "Contingent liabilities were ₹103cr (₹69cr a year earlier), of which ₹76.1cr is customs duty under EPCG export-promotion licences (₹52.2cr). An ₹8.3cr misclassification demand carries a 100% penalty and personal penalties on employees, and there is a ₹10.4cr GST demand on FDG, the PET-scan tracer, plus old VAT, sales-tax and excise disputes. Undiscounted lease commitments are ₹1,453cr, ₹150cr of it due within a year.",
-   "outlook": "Management says about 400 beds already built but not in use can be opened over three to four years. Mature hospitals (over ₹10cr of revenue a month) earn a 26% margin and 27% return on capital, against 5% and −22% for the six smallest, so filling the newer ones is the main lever.",
-   "other": "FY26 revenue was ₹2,538cr: West ₹1,133cr, South ₹995cr, East ₹283cr, Kenya ₹74cr (2.9%) and Milann ₹60cr. Doctors are paid largely as consultants (₹549cr, 21.6% of revenue). Owners' profit was ₹13.8cr after ₹44.6cr of exceptional items (₹31.9cr Milann goodwill write-down, ₹12.7cr labour-code gratuity). Lease liabilities were ₹825cr, with ₹85.9cr of lease interest and ₹84.5cr of right-of-use depreciation below operating profit. The report's own return on capital ratio was 6.63%, against the 14% pre-Ind AS figure management quotes. KKR (Hector Asia) owns 54.27% and the founder 9.30%.",
-   "flags": [
-    "The Milann fertility business was sold to a fund controlled by the chairman, at about one times sales after a ₹31.9cr write-down.",
-    "₹58cr was paid in cash to buy back staff options at the change of control (₹17.1cr to the former CEO), charged to equity so it never touched profit.",
-    "Contingent customs-duty claims under EPCG licences rose to ₹76cr from ₹52cr, one carrying a 100% penalty and personal penalties on employees.",
-    "The audit trail was not enabled for privileged changes at the parent and four subsidiaries, and not at all at four other group companies.",
-    "The report's own return on capital was 6.63%, far below the 14% management quotes."
-   ],
-   "researchedOn": "2026-10-18"
   }
  ],
  "skipped": [

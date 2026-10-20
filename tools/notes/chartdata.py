@@ -51,6 +51,7 @@ PHOSACID = ('Nitric Acid/Phosphoric Acid', 'Phosphoric and nitric acid')
 ROCK = ('Phosphorite', 'Rock phosphate')
 SULPHUR = ('Sulphur', 'Sulphur')
 PEST = ('Insecticide & Pesticide', 'Pesticides (technical and formulated)')
+OFC = ('Optical fibre cables', 'Optical fibre cable')
 PCB = ('Printed Circuit Boards (whether or not mounted with IC chips /components)', 'Circuit boards')
 
 # company name → (card file for annual/valuation, card file for quarterly chart, WPI input, investments count as cash?)
@@ -147,6 +148,8 @@ CONFIG = {
         'Advait Energy': ('ADVAIT', None, ALU, False),
         'Paramount Communications': ('PARACABLES', None, COPPER, False),
         'JD Cables': ('544524_s', None, ALU, False),
+        'HFCL': ('HFCL', None, OFC, False),
+        'Sterlite Technologies': ('STLTECH', None, OFC, False),
     },
     'industrial-railway': {
         'Hind Rectifiers': ('HIRECT_s', None, COPPER, False),
