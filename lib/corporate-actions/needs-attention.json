@@ -1438,5 +1438,546 @@
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
     "addedOn": "2026-10-19"
+  },
+  {
+    "company": "Gland Pharma",
+    "sector": "Pharma CDMO",
+    "exDate": null,
+    "subject": "Shareholding Sep 2026",
+    "why": "Promoter holding fell 6 pts (51.8% in Jun 2026 → 45.8% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Sequent Scientific",
+    "sector": "Pharma Others",
+    "exDate": null,
+    "subject": "Shareholding Sep 2026",
+    "why": "Promoter holding fell 12.1 pts (61.3% in Jun 2026 → 49.2% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Archean Chemical Industries",
+    "sector": "Chemicals",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Sbi Small Cap Fund (DII) cut its stake from 6.88% to 3.51%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Clean Max Env. Energ",
+    "sector": "Solar PV Cells EPC",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Augment India I Holdings Llc (public holder) cut its stake from 9.5% to 2.24%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "WeWork India",
+    "sector": "Commercial Services",
+    "subject": "Big holder change: Sep 2026",
+    "why": "1 Ariel Way Tenant Limited (FII) cut its stake from 14.82% to 12.27%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Behari Lal Engineering",
+    "sector": "Forging",
+    "subject": "Not in the Forging note",
+    "why": "Add a company section to the Forging note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Hy-Tech Engineers",
+    "sector": "Industrials",
+    "subject": "Not in the Industrials note",
+    "why": "Add a company section to the Industrials note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Lohia Corp",
+    "sector": "Industrial Machinery",
+    "subject": "Not in the Industrial Machinery note",
+    "why": "Add a company section to the Industrial Machinery note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Bonfiglioli Transmissions",
+    "sector": "Industrial Machinery",
+    "subject": "Not in the Industrial Machinery note",
+    "why": "Add a company section to the Industrial Machinery note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Vedanta Power",
+    "sector": "Utilities",
+    "subject": "Not in the Utilities note",
+    "why": "Add a company section to the Utilities note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Glottis",
+    "sector": "Logistics",
+    "subject": "Not in the Logistics note",
+    "why": "Add a company section to the Logistics note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Allcargo Global",
+    "sector": "Logistics",
+    "subject": "Not in the Logistics note",
+    "why": "Add a company section to the Logistics note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Orkla India",
+    "sector": "Food Products",
+    "subject": "Not in the Food Products note",
+    "why": "Add a company section to the Food Products note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "iValue Infosolutions",
+    "sector": "Software",
+    "subject": "Not in the Software note",
+    "why": "Add a company section to the Software note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Euro Pratik Sales",
+    "sector": "Consumer Durables",
+    "subject": "Not in the Consumer Durables note",
+    "why": "Add a company section to the Consumer Durables note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Park Medi World",
+    "sector": "Hospitals",
+    "subject": "Not in the Hospitals note",
+    "why": "Add a company section to the Hospitals note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Anawil Wire",
+    "sector": "Electrical Equipment",
+    "subject": "Not in the Electrical Equipment note",
+    "why": "Add a company section to the Electrical Equipment note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Jain Resource Recycling",
+    "sector": "Mining & Metals Recycle",
+    "subject": "Not in the Mining & Metals Recycle note",
+    "why": "Add a company section to the Mining & Metals Recycle note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Midwest",
+    "sector": "Mining & Metals Recycle",
+    "subject": "Not in the Mining & Metals Recycle note",
+    "why": "Add a company section to the Mining & Metals Recycle note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "JSW Cement",
+    "sector": "Construction",
+    "subject": "Not in the Construction note",
+    "why": "Add a company section to the Construction note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Arisinfra Solutions",
+    "sector": "Platform Cos",
+    "subject": "Not in the Platform Cos note",
+    "why": "Add a company section to the Platform Cos note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Bluspring Enterprises",
+    "sector": "Commercial Services",
+    "subject": "Not in the Commercial Services note",
+    "why": "Add a company section to the Commercial Services note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Patel Retail",
+    "sector": "Retail",
+    "subject": "Not in the Retail note",
+    "why": "Add a company section to the Retail note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Regaal Resources",
+    "sector": "Food Products",
+    "subject": "Not in the Food Products note",
+    "why": "Add a company section to the Food Products note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Om Power Transmission",
+    "sector": "Construction - Power",
+    "subject": "Not in the Construction - Power note",
+    "why": "Add a company section to the Construction - Power note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Fujiyama Power Systems",
+    "sector": "Solar PV Cells EPC",
+    "subject": "Not in the Solar PV Cells EPC note",
+    "why": "Add a company section to the Solar PV Cells EPC note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Kalpataru",
+    "sector": "Realty",
+    "subject": "Not in the Realty note",
+    "why": "Add a company section to the Realty note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Vikran Engineering",
+    "sector": "Construction - Power",
+    "subject": "Not in the Construction - Power note",
+    "why": "Add a company section to the Construction - Power note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Gem Aromatics",
+    "sector": "Chemicals",
+    "subject": "Not in the Chemicals note",
+    "why": "Add a company section to the Chemicals note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Milky Mist Dairy",
+    "sector": "Food Products",
+    "subject": "Not in the Food Products note",
+    "why": "Add a company section to the Food Products note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Shankara Buildpro",
+    "sector": "Retail",
+    "subject": "Not in the Retail note",
+    "why": "Add a company section to the Retail note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Vidya Wires",
+    "sector": "Cables",
+    "subject": "Not in the Cables note",
+    "why": "Add a company section to the Cables note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Anlon Healthcare",
+    "sector": "Pharma API",
+    "subject": "Not in the Pharma API note",
+    "why": "Add a company section to the Pharma API note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Kusumgar",
+    "sector": "Industrials",
+    "subject": "Not in the Industrials note",
+    "why": "Add a company section to the Industrials note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Manipal Payment & Identity",
+    "sector": "Commercial Services",
+    "subject": "Not in the Commercial Services note",
+    "why": "Add a company section to the Commercial Services note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Prasol Chemicals",
+    "sector": "Chemicals",
+    "subject": "Not in the Chemicals note",
+    "why": "Add a company section to the Chemicals note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Purple Style Labs",
+    "sector": "Retail",
+    "subject": "Not in the Retail note",
+    "why": "Add a company section to the Retail note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Rentomojo",
+    "sector": "Platform Cos",
+    "subject": "Not in the Platform Cos note",
+    "why": "Add a company section to the Platform Cos note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "ESDS Software",
+    "sector": "Software",
+    "subject": "Not in the Software note",
+    "why": "Add a company section to the Software note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Vedanta Oil & Gas",
+    "sector": "Oil",
+    "subject": "Not in the Oil note",
+    "why": "Add a company section to the Oil note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Glass Wall Systems",
+    "sector": "Construction",
+    "subject": "Not in the Construction note",
+    "why": "Add a company section to the Construction note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Horizon Industrial Parks",
+    "sector": "Realty",
+    "subject": "Not in the Realty note",
+    "why": "Add a company section to the Realty note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Influx Healthtech",
+    "sector": "Pharma Others",
+    "subject": "Not in the Pharma Others note",
+    "why": "Add a company section to the Pharma Others note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Juniper Green Energy",
+    "sector": "Utilities",
+    "subject": "Not in the Utilities note",
+    "why": "Add a company section to the Utilities note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Amanta Healthcare",
+    "sector": "Pharma Others",
+    "subject": "Not in the Pharma Others note",
+    "why": "Add a company section to the Pharma Others note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Skyways Air Services",
+    "sector": "Logistics",
+    "subject": "Not in the Logistics note",
+    "why": "Add a company section to the Logistics note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Symbiotec Pharmalab",
+    "sector": "Pharma API",
+    "subject": "Not in the Pharma API note",
+    "why": "Add a company section to the Pharma API note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Karamtara Engineering",
+    "sector": "Construction - Power",
+    "subject": "Not in the Construction - Power note",
+    "why": "Add a company section to the Construction - Power note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Varmora Granito",
+    "sector": "Consumer Durables",
+    "subject": "Not in the Consumer Durables note",
+    "why": "Add a company section to the Consumer Durables note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Vedanta Iron & Steel",
+    "sector": "Iron and Steel",
+    "subject": "Not in the Iron and Steel note",
+    "why": "Add a company section to the Iron and Steel note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Sacheerome",
+    "sector": "Chemicals",
+    "subject": "Not in the Chemicals note",
+    "why": "Add a company section to the Chemicals note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Safe Enterprises Retail Fixtures",
+    "sector": "Retail",
+    "subject": "Not in the Retail note",
+    "why": "Add a company section to the Retail note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Seshaasai Technologies",
+    "sector": "Commercial Services",
+    "subject": "Not in the Commercial Services note",
+    "why": "Add a company section to the Commercial Services note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Simca Advertising",
+    "sector": "Media and Entertainment",
+    "subject": "Not in the Media and Entertainment note",
+    "why": "Add a company section to the Media and Entertainment note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Travel Food Services",
+    "sector": "Hotels and Travels",
+    "subject": "Not in the Hotels and Travels note",
+    "why": "Add a company section to the Hotels and Travels note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Waterways Leisure Tourism",
+    "sector": "Hotels and Travels",
+    "subject": "Not in the Hotels and Travels note",
+    "why": "Add a company section to the Hotels and Travels note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Gaudium IVF",
+    "sector": "Hospitals",
+    "subject": "Not in the Hospitals note",
+    "why": "Add a company section to the Hospitals note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "GSP Crop Science",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "Not in the Agrochemical & Fertilizers note",
+    "why": "Add a company section to the Agrochemical & Fertilizers note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "KRM Ayurveda",
+    "sector": "Pharma Others",
+    "subject": "Not in the Pharma Others note",
+    "why": "Add a company section to the Pharma Others note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Leap India",
+    "sector": "Logistics",
+    "subject": "Not in the Logistics note",
+    "why": "Add a company section to the Logistics note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Monolithisch India",
+    "sector": "Elect and Refrac",
+    "subject": "Not in the Elect and Refrac note",
+    "why": "Add a company section to the Elect and Refrac note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Apsis Aerocom",
+    "sector": "Aerospace defence",
+    "subject": "Not in the Aerospace defence note",
+    "why": "Add a company section to the Aerospace defence note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Blue Water Logistics",
+    "sector": "Logistics",
+    "subject": "Not in the Logistics note",
+    "why": "Add a company section to the Logistics note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "E to E Transportation",
+    "sector": "Construction",
+    "subject": "Not in the Construction note",
+    "why": "Add a company section to the Construction note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Excelsoft Technologies",
+    "sector": "Software",
+    "subject": "Not in the Software note",
+    "why": "Add a company section to the Software note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Pace Digitek",
+    "sector": "Construction",
+    "subject": "Not in the Construction note",
+    "why": "Add a company section to the Construction note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Prostarm Info Systems",
+    "sector": "Electrical Equipment",
+    "subject": "Not in the Electrical Equipment note",
+    "why": "Add a company section to the Electrical Equipment note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Parth Electricals",
+    "sector": "Electrical Equipment",
+    "subject": "Not in the Electrical Equipment note",
+    "why": "Add a company section to the Electrical Equipment note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Kirloskar Ferrous",
+    "sector": "Iron and Steel",
+    "subject": "Not in the Iron and Steel note",
+    "why": "Add a company section to the Iron and Steel note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Kwality Pharmaceuticals",
+    "sector": "Pharma",
+    "subject": "Not in the Pharma note",
+    "why": "Add a company section to the Pharma note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Piccadily Agro",
+    "sector": "Food Products",
+    "subject": "Not in the Food Products note",
+    "why": "Add a company section to the Food Products note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Jyoti Resins",
+    "sector": "Chemicals",
+    "subject": "Not in the Chemicals note",
+    "why": "Add a company section to the Chemicals note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Physicswallah",
+    "sector": "Platform Cos",
+    "subject": "Not in the Platform Cos note",
+    "why": "Add a company section to the Platform Cos note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Fabtech Technologies",
+    "sector": "Industrials",
+    "subject": "Not in the Industrials note",
+    "why": "Add a company section to the Industrials note (or write the note if the sector has none).",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Tata Technologies",
+    "sector": "Software",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Sri Lotus",
+    "sector": "Realty",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-20"
+  },
+  {
+    "company": "Tata Technologies",
+    "sector": "Software",
+    "subject": "Checkpoint partly: tata-technologies-q2fy27-1",
+    "why": "Quarterly operating margin reaching 17% or better (stuck at 16%) — actual 16.1% (partly). Keep waiting for a lower price Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-20"
   }
 ]

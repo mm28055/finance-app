@@ -19970,7 +19970,10 @@
    "ifMet": "Case to stop waiting (margin proof)",
    "ifMissed": "Keep waiting for a lower price",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "16.1%",
+   "resolvedOn": "2026-10-20",
+   "resolvedBy": "auto"
   },
   {
    "id": "tata-technologies-q4fy27-1",
