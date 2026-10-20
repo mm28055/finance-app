@@ -1,7 +1,21 @@
 {
-  "updated": "2026-10-19T20:31:20.530Z",
+  "updated": "2026-10-20T18:50:49.812Z",
   "movesDate": "2026-10-19",
   "items": [
+    {
+      "id": "2026-10-20|TruAlt Bioenergy|policy|maize-ethanol-price-cut",
+      "company": "TruAlt Bioenergy",
+      "sector": "Oil",
+      "date": "2026-10-20",
+      "kind": "policy",
+      "tone": "watch",
+      "headline": "The government cut the purchase price of ethanol made from maize by ₹3 per litre.",
+      "summary": "A large portion of the company's 2,000-kilolitre-a-day ethanol capacity runs on maize. The lower purchase price directly reduces its revenue and squeezes profit margins.",
+      "reason": "policy",
+      "url": "https://www.thehindubusinessline.com/economy/agri-business/indian-govts-price-correction-of-ethanol-from-maize-may-help-balance-distortion/article71604610.ece",
+      "source": "Business Line",
+      "dot": true
+    },
     {
       "id": "2026-10-19|3B Blackbio Diagnostics|move",
       "company": "3B Blackbio Diagnostics",
