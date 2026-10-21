@@ -521,7 +521,7 @@ export const bearings: SectorOverview = {
         {
             company: 'NRB Bearing', rank: 2, stance: 'SCALEUP', segment: OWN,
             what: "India's largest home-grown bearing maker: needle and cylindrical roller bearings for gearboxes, steering and chassis, with plants in India, Thailand and the US, an aerospace unit and an Italian joint venture for industrial bearings.",
-            view: "**The best business here, under a governance cloud.** It owns its designs, holds 65–70% of its Indian niche, grew 19% in Q1 at a 17% margin and cut debt. But 77.7% of promoter shares were pledged in March, promoters sold 6.47% of the company in the June quarter and the MD and a family trust sold about 0.8% more in September, and the auditor flagged its inventory. The price needs about {need:NRB Bearing|20}% a year against my ~17%.",
+            view: "**The best business here, under a governance cloud.** It owns its designs, holds 65–70% of its Indian niche, grew 19% in Q1 at a 17% margin and cut debt. But 77.7% of promoter shares were pledged in March, promoters sold 6.47% of the company in the June quarter and the MD and a family trust sold about 0.8% more in September, and the auditor flagged its inventory. The price needs about {need:NRB Bearing|20}% a year against my ~17%. **21 Oct 2026:** the price now fits and cash is sound (81% of five years' profit), but it stays follow until promoter selling stops and the pledge is released.",
             watch: 'Promoter selling actually stopping (the MD and a family trust sold about 0.8% more in September) and the rest of the pledge released; Q2 margin above 16% despite power and freight costs; new lines and the Unitec joint venture running by April 2027.',
         },
         {
