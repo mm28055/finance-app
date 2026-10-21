@@ -39,9 +39,13 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
                 </div>
 
                 {/* Title, above the notes. Clicking it reloads the dashboard fresh (and drops any ?company= from a link). */}
-                <a href="/" title="Refresh the dashboard" className="block px-5 pt-5 pb-3 border-b border-gray-100 hover:opacity-80">
-                    <h1 className="text-lg font-semibold text-gray-800 tracking-tight">Manish Dashboard</h1>
-                    <p className="text-gray-400 text-xs">Real-Time Earning Intelligence</p>
+                <a href="/" title="Refresh the dashboard" className="flex items-center gap-3 px-5 pt-5 pb-3 border-b border-gray-100 hover:opacity-80">
+                    {/* Same picture as the browser-tab icon (app/icon.png) */}
+                    <img src="/logo.png" alt="" className="w-9 h-9 rounded-lg flex-shrink-0" />
+                    <div>
+                        <h1 className="text-lg font-semibold text-gray-800 tracking-tight">Manish Dashboard</h1>
+                        <p className="text-gray-400 text-[11px] whitespace-nowrap">Real-Time Earning Intelligence</p>
+                    </div>
                 </a>
 
                 {/* Navigation */}
