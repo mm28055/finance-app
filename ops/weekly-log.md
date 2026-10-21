@@ -295,3 +295,59 @@ Pushed to master; all checks passed (typecheck clean, "All notes pass.").
 **Results pass:** 16 reviewed, and all figures match Screener. I changed one overnight verdict: **ICICI Bank** from mixed to in line. The "mixed" came from how Screener lays out bank accounts; revenue grew 16% and profit 21%. I agree with the rest. For HDFC Bank I gave a different reason: profit grew only 5.8%. For Urban Company I disagree with the call note's upgrade. **Ahead:** Bajaj Healthcare, Kross, E2E, Himadri, Onward. **In line:** ICICI Bank, SG Finserve, Shoppers Stop, CCL. **Mixed:** HDFC Bank, ixigo, Rossari, Aurum, Crompton, Solara. **Behind:** Urban Company (operating loss doubled to ₹196cr; a ₹2,500cr fund-raise was announced on the call). The notes wait for each company's call.
 
 **Top 12:** nothing this run touched a Top 12 or reserve name in a way that matters (EPL and Gulf Oil appear only in the crude-price news), so no change.
+
+## 21 October 2026
+
+**Checks:** the notes check lists 30 problems, all "company in the sector with no verdict". They were on master before this run (they are the new companies below that still need sections), so they did not block the push. The typecheck is clean. No unmerged weekly-review branch was found.
+
+**Follow-ups handled: 25. Still open: 75.** Six are waiting entries (below). The other 69 are recently listed or moved companies that have no section in their sector note yet (Behari Lal, Hy-Tech, Lohia, Bonfiglioli, Vedanta's four demerged companies, Orkla India, JSW Cement, Physicswallah and others, across 30 notes). Each needs the full add-company research and two tabs, so I did not squeeze thin sections into this run. I added a Needs-a-session item asking for a dedicated add-companies session.
+
+**Calls changed: none.**
+
+**New results calls:**
+- **Urban Company** (stays wait). Core India bookings grew 26% in Q2 at 3.5% of bookings, against 2.4% a year earlier. But InstaHelp lost ₹174cr (₹132cr in Q1), the filed loss doubled to ₹182cr, and management expects InstaHelp's loss to stay high for a few more quarters. The board approved selling up to ₹2,500cr of new shares, on top of ₹1,901cr of cash. Break-even is still targeted for Q3 FY28. Three checkpoints were added.
+- **Tata Technologies** (stays wait). Revenue grew 22% in constant currency, and it won five large deals, including a $138m full-vehicle programme for a European luxury car maker. The margin held at 16.1% through a salary round, so the 17% checkpoint was only partly met. Management now calls 18–20% a "North Star" with no date. Profit rose only 3% because of currency losses. Net cash fell to ₹330cr after a ₹475cr dividend.
+- **Sri Lotus** (stays wait). H1 pre-sales were ₹879cr (+176%), the FY27 guide was kept and three Mumbai projects were added. But it collected only ₹60cr in Q2 and ₹209cr in H1, against the ₹1,000cr FY27 target, which it did not repeat. Lotus Monarch slipped by a year.
+
+**Price drift (all calls kept; a dated reason was added to each verdict):**
+- **Vishnu Chemicals** stays follow. Cash is sound (87% of five years' profit), but the note waits for the captive ore due in Q3 to lift the gross margin.
+- **DEE Development** stays follow. Only 26% of FY26 profit arrived as cash, and the audit qualification is still open.
+- **GMM Pfaudler** stays follow. It waits for Q2 to show the margin back above 12%.
+- **NRB Bearing** stays follow until promoter selling stops.
+- **Neuland** stays follow. The US FDA closed its Unit 3 inspection on 14 October, but the P/E rests on a 35% margin that management expects to fall back toward 25%.
+- **Kilburn** stays wait and **SPML** stays pass. Operating cash was negative in FY25 and FY26 at both.
+
+**Shareholding:**
+- **Gland Pharma** (stays own): Fosun sold about 6% on 4 September (a ₹2,121cr block to Indian funds) to fund its own research and debt. It still controls 45.8%.
+- **Sequent (Viyash)** (stays follow): Carlyle's companies sold about 10.9% on 26 August for ₹1,259cr. Promoters now hold 49.2%.
+- **Sedemac**: pre-IPO investors sold 11.05% in one ₹1,469cr block on 24 September. The note had the split wrong, and I corrected it.
+- **CleanMax**: Augment sold about 7.25% (₹1,096cr) on 28 September.
+- **WeWork India**: WeWork Global sold about 2.5% in August and holds 12.3%.
+- **Urban Company**: Accel's selling is now described correctly.
+- Logged only (fund buying or selling, nothing in the business): Cartrade, Capillary, TAC Security, Aartech, Samhi, Wakefit, Archean, and Mirae's sale in Gland.
+
+**Still waiting (checked today):**
+- HEG's electrode company has not listed.
+- SKF India has not filed July–September results.
+- Ganesh Benzoplast's sale has not closed.
+- The UPI merchant fee has no new date.
+- **Cancer-drug margin cap:** more outlets (ThePrint, Business Today, PTI) report a 17 October Gazette notice covering 137 medicines, with prices due to fall from 9 November. The NPPA and Gazette sites still return no response or a 503, so I have not confirmed the official order.
+- **Ethanol tender:** reports now agree on the detail. BPCL issued it on 16 October. It allows ethanol from maize, rice and C-heavy molasses only, and pays ₹68.86 a litre for maize ethanol. Neither BPCL's site nor PIB carries it, so TruAlt's section is still unchanged.
+
+**Filings pass, 18–20 October** (notes corrected where the filing made them wrong):
+- **Fractal**: Shilpa Kedia, formerly CFO of J&J's India MedTech business, became CFO on 19 October. The "new CFO" checkpoint is met, and the management record and watch items are updated.
+- **Cemindia**: it sold ₹1,400cr of shares to institutions at ₹1,108, 4.4% below the floor price. That is about 7.4% more shares. Added to the verdict, the card and the guidance and cash tables.
+- **Venus Pipes**: part of the spool plant started on 20 October, ahead of the December plan. The project is marked started and its milestone met. The ₹185cr letter of intent is still to become firm orders.
+- **Solex**: its subsidiary approved ₹150cr of debentures that can convert into Solex shares, a first step in funding the cell plant. The investor and the conversion price are not disclosed.
+- **Supriya**: the Supreme Court admitted its case on 19 October and barred coercive action against its directors while it is heard.
+- Logged only: Sudarshan's outlook raised to Positive; Karamtara's rating upgrade and Varmora's first results (neither has a note section yet); Transrail's ₹20cr for 49% of a solar developer; Indiqube's ₹35cr investment; Sobha's record H1 bookings and a related-party slump-sale purchase; Ceigall's completion certificate; Power Mech's ₹327cr O&M order; Jupiter's ₹500cr capex loan; Alpex's CRISIL upgrade to A−; Amber buying out Power-One.
+
+**News pass, 19–20 October:** 7 entries had a clear reason. The ethanol price cut for TruAlt is the waiting item above. The other 6 changed no note: EU approval of more seafood plants (Apex, Avanti), and results-day moves (Cyient DLM, Kross, ixigo, Urban Company).
+
+**Results pass:** 5 reviewed. I corrected **Varmora**'s entry: the year-ago quarter is on Screener, so revenue was down 3% and profit swung from a loss. I agree with the other verdicts:
+- **HFCL** is ahead: one quarter's profit beat all of FY26.
+- **Sobha** is behind: Q2 bookings slowed to ₹2,206cr.
+- **Tatva Chintan** is mixed: the margin is 19%, still under the 20–22% band.
+- **Waaree Renewables** is mixed: interest and depreciation from its debt-funded acquisition cut pre-tax profit to ₹105cr from ₹163cr.
+
+**Top 12:** CleanMax and Samhi (and the reserve names Gland and Cartrade) were touched only by holder changes. No trigger was hit, so nothing changed.
