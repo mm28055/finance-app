@@ -727,7 +727,7 @@ export const pharmaCdmo: SectorOverview = {
         {
             company: 'Neuland Laboratories', rank: 3, stance: 'PRICED', segment: INNOV,
             what: "Makes complex active ingredients: mostly commercial ingredients for innovators' drugs under contract, plus its own generic APIs, with a peptide plant that started in September.",
-            view: "**Excellent execution, concentrated.** Q1 revenue more than doubled at a 35% margin, working capital fell from 137 to 84 days, net cash was ₹308cr at June (company; ₹54cr at March on Screener) and CRISIL raised its outlook to Positive. But three customer groups are about 53% of revenue, management itself guides the margin back to 25%-plus, and it is buying land for a new large site. The price needs about {need:Neuland Laboratories|26}% a year against my ~22%.",
+            view: "**Excellent execution, concentrated.** Q1 revenue more than doubled at a 35% margin, working capital fell from 137 to 84 days, net cash was ₹308cr at June (company; ₹54cr at March on Screener) and CRISIL raised its outlook to Positive. But three customer groups are about 53% of revenue, management itself guides the margin back to 25%-plus, and it is buying land for a new large site. The price needs about {need:Neuland Laboratories|26}% a year against my ~22%. **21 Oct 2026:** the price now just fits, and the US FDA closed its August inspection of Unit 3 on 14 October, but it stays follow: the trailing P/E rests on a 35% margin that management itself expects to fall back toward 25%.",
             watch: 'A new commercial molecule of scale; peptide module 2 and its anchor customer; the margin in Q2–Q3 against the 25% guide.',
         },
         {
