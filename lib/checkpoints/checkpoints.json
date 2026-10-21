@@ -33230,6 +33230,39 @@
    "createdOn": "2026-10-20",
    "status": "pending",
    "project": "sterlite-technologies-capacity-expansion"
+  },
+  {
+   "id": "urban-company-q3fy27-1",
+   "company": "Urban Company",
+   "sector": "Platform Cos",
+   "text": "InstaHelp's quarterly adjusted loss no higher than Q2's ₹174cr as festive orders fill the supply built ahead",
+   "due": "Q3 FY27",
+   "ifMet": "A first sign the burn has peaked; still wait until it falls for two quarters",
+   "ifMissed": "Stays wait",
+   "createdOn": "2026-10-21",
+   "status": "pending"
+  },
+  {
+   "id": "urban-company-q3fy27-2",
+   "company": "Urban Company",
+   "sector": "Platform Cos",
+   "text": "Up-to-₹2,500cr share sale approved by shareholders and priced; dilution under 10% of shares",
+   "due": "Q3 FY27",
+   "ifMet": "Funding settled at a fair price",
+   "ifMissed": "Heavier dilution weighs on value per share",
+   "createdOn": "2026-10-21",
+   "status": "pending"
+  },
+  {
+   "id": "urban-company-q3fy28-1",
+   "company": "Urban Company",
+   "sector": "Platform Cos",
+   "text": "Group adjusted EBITDA break-even by Q3 FY28, as guided on 16 Oct 2026",
+   "due": "Q3 FY28",
+   "ifMet": "The call can move up to follow",
+   "ifMissed": "Stays wait or lower; the core cannot carry InstaHelp",
+   "createdOn": "2026-10-21",
+   "status": "pending"
   }
  ]
 }
