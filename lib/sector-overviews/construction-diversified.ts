@@ -641,7 +641,7 @@ export const constructionDiversified: SectorOverview = {
         {
             company: 'SPML Infra', rank: 8, stance: 'TURNAROUND', segment: DIV_STATE,
             what: "A Kolkata-based builder of water schemes and power substations, out of a long debt restructuring, now assembling battery-storage packs near Pune for a ₹1,128cr NTPC order; order book about ₹5,100cr.",
-            view: "**A turnaround with weak cash.** Debt fell from ₹1,771cr to ₹358cr, ratings are back to BBB and Q1 revenue rose 82%. But return on capital is 6%, operating cash was negative in FY25 and FY26, debtor days are 216, it pays almost no tax, and three joint operations went unaudited. The price needs about {need:SPML Infra|11}% a year against my ~8%.",
+            view: "**A turnaround with weak cash.** Debt fell from ₹1,771cr to ₹358cr, ratings are back to BBB and Q1 revenue rose 82%. But return on capital is 6%, operating cash was negative in FY25 and FY26, debtor days are 216, it pays almost no tax, and three joint operations went unaudited. The price needs about {need:SPML Infra|11}% a year against my ~8%. **21 Oct 2026:** the price now fits, but pass stays: operating cash was −₹85cr and −₹113cr in FY25 and FY26 against ₹123cr of profit, and no filing since the note changes that.",
             watch: 'NTPC approving the battery designs by December; operating cash turning positive in FY27; the unaudited joint operations brought into the audit.',
         },
     ],
