@@ -158,7 +158,8 @@ export interface SectorData {
     companies: EnrichedCompany[];
 }
 
-export const SectorList = ({ sectors, noteIndex }: { sectors: SectorData[]; noteIndex: NoteIndex }) => {
+// `toolbarExtras` (help, session list, Filings, transcript counts) sits on the search row, to its right.
+export const SectorList = ({ sectors, noteIndex, toolbarExtras }: { sectors: SectorData[]; noteIndex: NoteIndex; toolbarExtras?: React.ReactNode }) => {
     // Keep the card servers awake while the page is open, so cards open without a wake-up delay.
     useEffect(() => {
         warmCardRoutes();
@@ -378,8 +379,13 @@ export const SectorList = ({ sectors, noteIndex }: { sectors: SectorData[]; note
         <div className="space-y-4">
             {/* Toolbar: Search + Sort + Conviction Filter */}
             <div className="sticky max-md:static top-0 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 z-30 py-2.5 -mx-2 px-3 border-b border-gray-100 shadow-sm mb-4 flex flex-col gap-2">
-                {/* Row 1: Search + Sort (one line on a phone too) */}
-                <div className="flex gap-3 items-center max-md:gap-2">
+                {/* Row 1: Search + Sort + page cards; on a phone the cards take their own line above */}
+                <div className="flex gap-3 items-center max-md:gap-2 max-md:flex-wrap">
+                    {toolbarExtras && (
+                        <div className="flex items-center gap-3 flex-shrink-0 order-last max-md:order-first max-md:w-full max-md:flex-wrap max-md:gap-2">
+                            {toolbarExtras}
+                        </div>
+                    )}
                     <div className="relative flex-1 min-w-0">
                         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                         <input
