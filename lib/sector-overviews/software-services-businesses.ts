@@ -244,7 +244,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Accenture and the big consultancies', note: 'Much larger AI and data practices; they compete for the same programmes at the largest companies.' }, { name: 'TCS, Infosys and other Indian IT majors', note: 'Bundle data and AI into large outsourcing deals and increasingly bid for mid-size work.' }, { name: 'Latent View and other analytics specialists', note: 'Smaller, with a narrower client base; Fractal wins on scale, products and partner access.' }],
         position: "**India's largest listed pure-play AI and analytics company**, with $374M of FY26 revenue and 58 clients paying over $1M a year.",
         money: "Screener shows **₹1,985cr of net cash**. The company had ₹1,639cr of cash in June after repaying ₹286cr of debt in April; it is now debt-free apart from leases. Capex is mostly capitalised R&D, about ₹20cr a quarter. It raised equity in its FY26 IPO and pays no dividend yet. Promoters hold **16.97%**, unchanged since listing.",
-        watch: ["Tech-client revenue growing again in Q2.", "Cogentiq revenue disclosed and rising.", "A new CFO named."],
+        watch: ["Tech-client revenue growing again in Q2.", "Cogentiq revenue disclosed and rising.", "A new chief commercial officer named (a new CFO joined on 19 October 2026)."],
         charts: softwareCharts['Fractal Analytics'],
     },
     {

@@ -32975,15 +32975,23 @@
      "relation": "Promoter; wife of co-founder Srikanth Velamakanni",
      "stake": "63,77,155 shares, 3.71% (31 Mar 2026, FY26 annual report)",
      "bio": "Holds a bachelor's degree in social and legal sciences and a law degree from the University of Pune, and a diploma in international business from Symbiosis Institute of International Business. She previously worked at e-Serve International. She advised Fractal pro bono on CSR from 2017 and joined as an employee in 2020; she heads its CSR and sustainability work."
+    },
+    {
+     "name": "Shilpa Kedia",
+     "role": "Chief Financial Officer and Group Chief Financial Officer",
+     "since": "19 October 2026",
+     "family": false,
+     "bio": "A chartered accountant (all-India rank) with a B.Com from Narsee Monjee College. She joins from Johnson & Johnson, where she was CFO of its India MedTech (medical devices) business; before that she spent four years at Hindustan Unilever as Head of Investor Relations, Group Finance Controller and Head of M&A, Treasury and Insurance, nearly a decade at J&J's consumer and medtech businesses, and five years at Nokia India. She began in the Tata Administrative Services programme."
     }
    ],
-   "changes": "CFO and Group CFO Ashwath Bhat, appointed 1 Aug 2025, resigned on 6 Jul 2026 and left on 24 Jul 2026; no successor had been named when the note was written. Chief Growth Officer Shailendra Pratap Singh (May 2026) and Chief Design Officer Raja Rajeswari Aradhyula (Apr 2026) left senior management; CPGR practice head Mrunali Majmudar left in Mar 2026.",
+   "changes": "CFO and Group CFO Ashwath Bhat, appointed 1 Aug 2025, resigned on 6 Jul 2026 and left on 24 Jul 2026; Shilpa Kedia (from J&J India MedTech) joined as CFO and Group CFO on 19 Oct 2026. Chief Commercial Officer and Cogentiq head left in Sep 2026. Chief Growth Officer Shailendra Pratap Singh (May 2026) and Chief Design Officer Raja Rajeswari Aradhyula (Apr 2026) left senior management; CPGR practice head Mrunali Majmudar left in Mar 2026.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_30533_FRACTAL_2025_2026_A_7535390_24082026124254.pdf",
     "https://www.chittorgarh.net/reports/ipo_notes/fractal-analytics-rhp.pdf",
-    "https://fractal.ai/about-us/leadership-team/"
+    "https://fractal.ai/about-us/leadership-team/",
+    "https://nsearchives.nseindia.com/corporate/FRACTAL_19102026124950_Reg_30_5__and_Press_Release.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-21"
   },
   {
    "company": "Happiest Minds",
