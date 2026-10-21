@@ -549,7 +549,7 @@ export const industrialsHeavy: SectorOverview = {
         {
             company: 'DEE Development', rank: 2, stance: 'SCALEUP', segment: CODE,
             what: "High-pressure process piping, bends and fittings for power plants, gas turbines and refineries, from plants in India and Thailand, plus a new seamless-pipe plant and a biomass power arm.",
-            view: "**Approvals, capacity built and a record book, with an audit problem attached.** Revenue +31.6% in Q1, a ₹2,531cr book at September (₹225cr of orders that month) and ₹2,500cr of revenue targeted for FY29; the ₹300cr share issue should take net debt to about ₹400–425cr by March. But free cash was −₹447cr over two years, the auditor qualified its opinion again over the Malwa power plant, and GE's order is delayed. The price needs about {need:DEE Development|27}% a year against my ~22%.",
+            view: "**Approvals, capacity built and a record book, with an audit problem attached.** Revenue +31.6% in Q1, a ₹2,531cr book at September (₹225cr of orders that month) and ₹2,500cr of revenue targeted for FY29; the ₹300cr share issue should take net debt to about ₹400–425cr by March. But free cash was −₹447cr over two years, the auditor qualified its opinion again over the Malwa power plant, and GE's order is delayed. The price needs about {need:DEE Development|27}% a year against my ~22%. **21 Oct 2026:** the price now just fits, but it stays follow: only 26% of FY26 profit arrived as cash and the audit qualification is not yet cleared.",
             watch: 'A clean audit opinion by Q3 as promised; margin moving toward 19%; net debt at ₹400–425cr by March 2027.',
         },
         {

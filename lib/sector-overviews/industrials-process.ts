@@ -527,7 +527,7 @@ export const industrialsProcess: SectorOverview = {
         {
             company: 'GMM Pfaudler', rank: 2, stance: 'CYCLICAL', segment: GLASS,
             what: "Glass-lined reactors and storage, mixing, filtration, drying and sealing equipment, process systems and heavy engineering, sold worldwide under the Pfaudler brand.",
-            view: "**A world leader whose profit is lost between operating profit and shareholders.** Half the big glass-lined market, a ₹2,289cr backlog and ₹310–370cr of free cash a year; but FY26 operating profit of ₹403cr became ₹52cr of net profit after interest and a 49% tax rate, the Q1 margin fell to 10.1% and the group CFO resigned in September. The price needs about {need:GMM Pfaudler|24}% a year against my ~22%.",
+            view: "**A world leader whose profit is lost between operating profit and shareholders.** Half the big glass-lined market, a ₹2,289cr backlog and ₹310–370cr of free cash a year; but FY26 operating profit of ₹403cr became ₹52cr of net profit after interest and a 49% tax rate, the Q1 margin fell to 10.1% and the group CFO resigned in September. The price needs about {need:GMM Pfaudler|24}% a year against my ~22%. **21 Oct 2026:** the price now just fits and cash is strong, but it stays follow until Q2 shows the margin back above 12%; the CEO of the international business also retired on 31 August.",
             watch: 'Margin back above 12–13% in Q2–Q3; the refinancing and tax restructuring; the investor-day targets.',
         },
         {
@@ -539,7 +539,7 @@ export const industrialsProcess: SectorOverview = {
         {
             company: 'Kilburn Engg.', rank: 4, stance: 'CYCLICAL', segment: PLANT,
             what: "Industrial dryers, nuclear process equipment, waste-heat recovery (ME Energy) and radio-frequency drying and sheet-metal work (Monga Strayfield) for fertiliser, chemical, steel and nuclear plants.",
-            view: "**A high-margin niche whose orders have stalled.** FY26 revenue grew 48% at a 23% margin, and it won a first global fertiliser order from Casale. But FY27 guidance was cut to about ₹700cr at 20%, the ₹485cr book is under a year of sales, operating cash was negative in FY25 and FY26, and subsidiaries carry audit remarks. I cut my estimate from 20% to 15%; the price needs about {need:Kilburn Engg.|19}% a year.",
+            view: "**A high-margin niche whose orders have stalled.** FY26 revenue grew 48% at a 23% margin, and it won a first global fertiliser order from Casale. But FY27 guidance was cut to about ₹700cr at 20%, the ₹485cr book is under a year of sales, operating cash was negative in FY25 and FY26, and subsidiaries carry audit remarks. I cut my estimate from 20% to 15%; the price needs about {need:Kilburn Engg.|19}% a year. **21 Oct 2026:** the price now just fits, but wait stays: operating cash was negative in FY25 and FY26 against ₹158cr of profit, and no new order has been filed since the note.",
             watch: 'Q2 order intake above ₹200cr; debtor days back under 100; the promoter-guarantee fee and subsidiary audit remarks cleaned up.',
         },
         {
