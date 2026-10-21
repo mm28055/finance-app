@@ -21,7 +21,7 @@ export default async function Home() {
   ]);
 
   return (
-    <main className="min-h-screen bg-[#FAFBFC] p-6 max-md:p-3">
+    <main className="min-h-screen bg-[#FAFBFC] p-6 pt-0 max-md:p-3">
       {/* Sector List. The title now sits at the top of the sidebar; the help, session list,
           Filings and transcript cards sit on the search row. */}
       <div className="max-w-6xl">

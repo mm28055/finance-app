@@ -378,7 +378,7 @@ export const SectorList = ({ sectors, noteIndex, toolbarExtras }: { sectors: Sec
     return (
         <div className="space-y-4">
             {/* Toolbar: Search + Sort + Conviction Filter */}
-            <div className="sticky max-md:static top-0 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 z-30 py-2.5 -mx-2 px-3 border-b border-gray-100 shadow-sm mb-4 flex flex-col gap-2">
+            <div className="sticky max-md:static top-0 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 z-30 py-2.5 md:h-[96px] justify-center -mx-2 px-3 border-b border-gray-100 shadow-sm mb-4 flex flex-col gap-2">
                 {/* Row 1: Search + Sort + page cards; on a phone the cards take their own line above */}
                 <div className="flex gap-3 items-center max-md:gap-2 max-md:flex-wrap">
                     {toolbarExtras && (
