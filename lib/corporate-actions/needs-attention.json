@@ -2004,5 +2004,251 @@
     "why": "Quarterly operating margin reaching 17% or better (stuck at 16%) — actual 16.1% (partly). Keep waiting for a lower price Weigh it in the call and write the outcome on the checkpoint.",
     "addedOn": "2026-10-20",
     "handled": "2026-10-21: 16.1% against 17% — partly. Weighed in the Q2 update; outcome written (\"Stays wait\"). No call change."
+  },
+  {
+    "company": "Tenneco Clean Air",
+    "sector": "Auto Related",
+    "exDate": null,
+    "subject": "Shareholding Sep 2026",
+    "why": "Promoter holding fell 15 pts (74.8% in Jun 2026 → 59.8% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Ashapura Minechem",
+    "sector": "Mining & Metals Recycle",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Albula Investment Fund Ltd (FII) cut its stake from 4.08% to 1.04%; Eriska Investment Fund Ltd (FII) raised its stake from 4.62% to 7.66%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Ather Energy",
+    "sector": "Vehicles",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Caladium Investment Pte Ltd (FII) cut its stake from 7.56% to 3.23%; Sbi Small Cap Fund (DII) cut its stake from 6.2% to 3.45%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Divgi Torqtransfer",
+    "sector": "Auto Related",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Icici Prudential Transportation And Logistics Fund (DII) cut its stake from 7.25% to 4%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Jyothy Labs",
+    "sector": "Consumer Durables",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Nalanda India Equity Fund Limited (FII) raised its stake from 5.96% to 8.27%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Pondy Oxides & Chem.",
+    "sector": "Mining & Metals Recycle",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Icici Prudential Smallcap Fund (DII) raised its stake from 1.55% to 4.93%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "V-Guard Industri",
+    "sector": "Consumer Durables",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Icici Prudential Multi-Asset Fund (DII) cut its stake from 7.64% to 4.81%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Mobavenue Ai Tech",
+    "sector": "Software",
+    "subject": "Call drift: pass → Fits",
+    "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "SJS Enterprises",
+    "sector": "Auto Related",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Solarworld Energy So",
+    "sector": "Construction",
+    "subject": "Call drift: pass → Fits",
+    "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Syrma SGS Tech.",
+    "sector": "EMS & Electronics",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "TD Power Systems",
+    "sector": "Electrical Equipment",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Techno Electric &Eng",
+    "sector": "Construction - Power",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Vintage Coffee",
+    "sector": "Food Products",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Aditya Birla Lifesty",
+    "sector": "Retail",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Yatharth Hospital",
+    "sector": "Hospitals",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Zaggle Prepaid",
+    "sector": "Software",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Aimtron",
+    "sector": "EMS & Electronics",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Bajaj Consumer Care",
+    "sector": "Consumer Durables",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "AvenuesAI",
+    "sector": "Platform Cos",
+    "subject": "Call drift: pass → Fits",
+    "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Cera Sanitaryware",
+    "sector": "Consumer Durables",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Clean Max Env. Energ",
+    "sector": "Solar PV Cells EPC",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "eMudhra",
+    "sector": "Software",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Freshara Agro",
+    "sector": "Food Products",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "GE Power",
+    "sector": "Electrical Equipment",
+    "subject": "Call drift: pass → Fits",
+    "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "IFB Industries",
+    "sector": "Consumer Durables",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Himadri Speciality",
+    "sector": "Chemicals",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "IOL Chem & Pharma",
+    "sector": "Pharma API",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "KEC International",
+    "sector": "Construction - Power",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Menon Bearings",
+    "sector": "Auto Related",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "MM Forgings",
+    "sector": "Forging",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "OBSC Perfection",
+    "sector": "Auto Related",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Orient Bell",
+    "sector": "Consumer Durables",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Anawil Wire",
+    "sector": "Electrical Equipment",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Waterways Leisure Tourism",
+    "sector": "Hotels and Travels",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-21"
   }
 ]
