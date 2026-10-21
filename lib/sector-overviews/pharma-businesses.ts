@@ -727,6 +727,105 @@ const profiles: BusinessProfile[] = [
         watch: ["7-ACA first batch in March 2027 and how fast it stabilises.", "A US licensing deal for Exblifep.", "Whether cephalosporin prices recover in the second half."],
         charts: pharmaCharts['Orchid Pharma'],
     },
+    {
+        "company": "Kwality Pharmaceuticals",
+        "inShort": [
+            "**An Amritsar maker of generic injectables, tablets and cancer drugs** that sells mainly through distributors and partners into Latin America, the Middle East, Africa and Asia, about half of it exported directly, and is now building biosimilar and hormone plants.",
+            "**Good:** sales up 36% to ₹503cr in FY26 and 46% in Q1 FY27, a 24–25% margin, EU and PIC/S-approved lines, and dozens of new country registrations a year. **Bad:** customers took **203 days** to pay in FY26, so only ₹17cr of the ₹118cr operating profit became cash; five family members are executive directors, a small local firm audits it while KPMG keeps being promised, it dealt with a firm co-owned by the promoter and a key distributor's associate, and it stopped cooperating with rating agencies for years until May 2026.",
+            "**Verdict: pass.** The growth is real, but customers take 203 days to pay, FY26 operating cash was only ₹17cr, ICRA rated it 'not cooperating' until May 2026 and the promised KPMG audit has not happened, at about 43 times earnings."
+        ],
+        "tagline": "A family-run Indian generic-medicine maker, founded in 1983, with injectable, oncology, cephalosporin and oral-solid plants in Amritsar and Himachal Pradesh, selling mostly in emerging markets.",
+        "revenue": "₹503cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "General injectables and oral solids",
+                "text": "The core: generic injections, tablets, capsules and syrups from the Amritsar 'general' unit, about 75–80% used, now EU-GMP approved. Management puts general, cephalosporin and beta-lactam products at roughly two-thirds or more of sales."
+            },
+            {
+                "name": "Oncology (cancer) injectables",
+                "text": "Cytotoxic drugs from the Himachal unit, about 75–80% used and being expanded by 45–50%. ₹30–35cr in Q1 FY27 against ₹100–110cr guided for FY27; delays in foreign registrations cut its share to about 20% from 26%."
+            },
+            {
+                "name": "Cephalosporins and beta-lactams",
+                "text": "Antibiotic injectables and orals from separate dedicated units, only about 20–25% used."
+            },
+            {
+                "name": "Biologics and hormones (coming)",
+                "text": "Erythropoietin (EPO, for anaemia) enters clinical trials around November 2026 for sale before end-2027; a Keytruda (pembrolizumab) biosimilar is targeted for its 2028 patent expiry; a hormone plant (Unit 6) is due in November 2026. None of these is in the guidance."
+            }
+        ],
+        "revenueText": "**Direct exports were ₹250cr in FY26, about half of revenue**, and ICRA notes that many domestic buyers re-export too. The CFO said **35–40% of sales come from Latin America**, with the Middle East, North Africa and Gulf next; about 35–40% still comes from lower-priced 'rest of world' markets, which keeps gross margin at 53%. Injectables were more than 55% of 9M FY26 revenue (ICRA). The annual report describes 90% of the business as out-licensing and supply to partners, and each new country registration adds about $1.5–2m a year of sales; it got 60–70 in the last three quarters.",
+        "mixes": [
+            {
+                "caption": "Revenue by type, Q1 FY27 (approximate, company call)",
+                "parts": [
+                    {
+                        "label": "General, cephalosporin and beta-lactam",
+                        "share": 80
+                    },
+                    {
+                        "label": "Oncology",
+                        "share": 20
+                    }
+                ],
+                "note": "Management said oncology fell to about 20% from 26%; biologics were about 1%."
+            },
+            {
+                "caption": "Direct exports vs India, FY26 (annual report)",
+                "parts": [
+                    {
+                        "label": "Exports",
+                        "share": 50
+                    },
+                    {
+                        "label": "India (much of it re-exported)",
+                        "share": 50
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Overseas distributors and marketing partners** in Latin America (Mexico, Colombia, Peru, Chile, Venezuela), North Africa (Algeria, Morocco, Tunisia), the Gulf and Africa, often through tenders for health ministries.",
+            "**Mana Pharma (Europe) and its Indian arm SD Biopharmaceuticals**, which paid for dossiers in several countries and buy from Kwality in India to export to Latin America; a Mozambique subsidiary also buys from it.",
+            "**Indian buyers who re-export**, part of the roughly half of sales billed in India."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Sterile injectables and cancer drugs need dedicated, inspected plants, and each country needs its own registration dossier; Kwality has more than 600 filings and passes frequent foreign audits. But it makes copies of known molecules, and only its planned liposomal and long-acting injectables and biosimilars are genuinely hard."
+        },
+        "moat": "A library of ready dossiers and many approved injectable lines let it file one product in dozens of emerging markets cheaply and be the first or second generic there. That is a head start, not a lock: larger Indian and Chinese makers could chase the same markets, and the partners who sell its products own the customer relationships.",
+        "salesDrivers": [
+            "**Registrations**: 18–19 new approvals in Mexico from 70 filings, 12–13 filings in Saudi Arabia expected to start selling in Q3 FY27, and 6–7 approvals a quarter expected.",
+            "**Guidance**: FY27 revenue above ₹700cr at a 26–27% EBITDA margin; at least 25% growth in FY28; about ₹1,000cr by FY29 and ₹1,400–1,500cr by FY30.",
+            "**A 40-product bioequivalence programme**: filings finish by Q1 FY28, with ₹80–100cr hoped for in FY28 and ₹400–500cr by FY29, including liposomal amphotericin B, octreotide LAR and leuprolide.",
+            "**New plants**: hormones (₹70–80cr in FY28 from tenders, ₹200cr later) and biologics (EPO ₹80–100cr in India in FY28), both outside guidance and dependent on approvals.",
+            "**Foreign health-ministry timing**, which management says it cannot control."
+        ],
+        "inputs": "**Active ingredients (APIs), 80–85% bought in India and about 15% from China**, plus vials, packaging and excipients. Materials were 51% of sales in FY26 and power and fuel about 5%.",
+        "costEffect": "**Partly protected; mix matters more than input prices.** Products are sold to partners and tenders at agreed prices, so cost rises pass through slowly. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points (24% to 19%). **What happened:** the operating margin has held at 20–25% every quarter since mid-2023 and rose to 25% in Q1 FY27; gross margin fell from 56–57% to 53% in Q1 on more lower-priced ROW sales, and management expects it to settle at 47–51% as volume grows.",
+        "competitors": [
+            {
+                "name": "Large Indian injectable exporters",
+                "note": "Bigger Indian sterile-injectable makers have far more scale; Kwality avoids the US and targets smaller emerging markets where fewer of them register products."
+            },
+            {
+                "name": "Chinese and local generic makers",
+                "note": "Compete on price in tender markets; management says few rivals have 25–30 approved injectable lines plus Mexican and Colombian approvals."
+            },
+            {
+                "name": "Contract manufacturers and domestic brands",
+                "note": "ICRA notes stiff competition that limits pricing power."
+            }
+        ],
+        "position": "**A small but fast-growing emerging-market injectable exporter**, with more than 1,000 formulations developed, more than 600 regulatory filings and sales to 70+ countries; its general and oncology units run at 75–80%.",
+        "money": "Screener shows **₹130cr of borrowings** at March 2026 against about ₹4cr of cash, so net debt of about **₹127cr**; ICRA upgraded it to BBB+ in May 2026 after years in the non-cooperating category. **Over FY22–FY26 it turned ₹497cr of operating profit into ₹215cr of operating cash (43%)**, and only ₹17cr in FY26 as receivables rose to ₹280cr; free cash was −₹29cr. Planned spending is ₹185–190cr (hormone ₹70cr, oncology ₹50cr, bioequivalence ₹25–30cr, R&D), plus ₹150cr for biosimilar trials in FY28–FY29, funded from cash flow and unused bank lines. A ₹3.15cr GST demand on IGST refunds (plus equal penalty) is under appeal. It has not raised equity; promoters hold **54.86%**.",
+        "watch": [
+            "Debtor days falling to 165–170 by March 2027 and operating cash finally tracking profit.",
+            "KPMG actually appointed, and no further dealings with the Kaler Biopharmachem land deal.",
+            "FY27 revenue above ₹700cr with the margin at 26% or more as ROW share falls."
+        ],
+        charts: pharmaCharts["Kwality Pharmaceuticals"],
+    },
 ];
 
 export const pharmaBusinesses = { intro, profiles };

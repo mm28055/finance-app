@@ -472,6 +472,100 @@ export const electAndRefracCharts: Record<string, ProfileCharts> = {
             "inventory5y": -231,
             "payables5y": 94
         }
+    },
+    "Monolithisch India": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "93.4x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "70x",
+                "note": "Market value minus net cash, ÷ operating profit over the last four quarters (₹38cr)."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹17cr",
+                "note": "Cash (about ₹23cr) minus borrowings (₹6cr), March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "24%",
+                "note": "28% in Q1 FY27."
+            },
+            {
+                "label": "Capacity",
+                "value": "5.76 lakh t",
+                "note": "After the September 2026 greenfield plant; about 8.75 lakh t planned by late 2027."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Raw materials (stone, additives, traded goods)",
+                    "share": 46
+                },
+                {
+                    "label": "Staff",
+                    "share": 3
+                },
+                {
+                    "label": "Freight, power and other costs",
+                    "share": 27
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 24
+                }
+            ],
+            "note": "Consolidated P&L, FY26 annual report: revenue ₹135.3cr; materials ₹56.5cr, traded goods ₹7.1cr, stock change −₹1.8cr, staff ₹4.1cr, other expenses ₹37.5cr (including inward freight)."
+        },
+        "workingCapital": {
+            "fromYear": "FY25",
+            "toYear": "FY26",
+            "debtorDays": [
+                72,
+                63
+            ],
+            "inventoryDays": [
+                127,
+                226
+            ],
+            "payableDays": [
+                53,
+                21
+            ],
+            "cycleDays": [
+                147,
+                268
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                21,
+                32
+            ],
+            "ocf": [
+                4,
+                14
+            ],
+            "fcf": [
+                -3,
+                -10
+            ],
+            "note": "Screener has two years of consolidated figures, since the 2025 listing."
+        }
     }
 };
 
@@ -488,5 +582,11 @@ export const electAndRefracValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 137.0,
         "mcapAtWriting": 1403.0,
         "peAtWriting": 32.8
+    },
+    "Monolithisch India": {
+        "netDebt": -17,
+        "ttmEbitda": 38,
+        "mcapAtWriting": 2690,
+        "peAtWriting": 93.4
     }
 };

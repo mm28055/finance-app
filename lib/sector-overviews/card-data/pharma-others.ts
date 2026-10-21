@@ -1118,6 +1118,294 @@ export const pharmaOthersCharts: Record<string, ProfileCharts> = {
             "inventory5y": -25,
             "payables5y": -8
         }
+    },
+    "KRM Ayurveda": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "20.3x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "13.1x",
+                "note": "Market value minus investments (no debt), ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹38cr",
+                "note": "No borrowings; ₹38cr of investments at March 2026. Cash balance not shown separately."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "30%"
+            },
+            {
+                "label": "Bed occupancy",
+                "value": "69%",
+                "note": "About 223 beds, FY26 (company call); older hospitals above 90%."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY23",
+            "toYear": "FY26",
+            "debtorDays": [
+                32,
+                82
+            ],
+            "inventoryDays": [
+                13,
+                225
+            ],
+            "payableDays": [
+                100,
+                80
+            ],
+            "cycleDays": [
+                -55,
+                227
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                11,
+                8,
+                19,
+                30
+            ],
+            "ocf": [
+                4,
+                -1,
+                3,
+                1
+            ],
+            "fcf": [
+                -20,
+                -1,
+                -1,
+                0
+            ],
+            "note": "Only four years are filed."
+        }
+    },
+    "Amanta Healthcare": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "40.7x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "13.0x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹151cr",
+                "note": "Borrowings minus cash and fixed deposits, March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "21%"
+            },
+            {
+                "label": "Capacity use",
+                "value": "96%",
+                "note": "Across LVP, SVP and SteriPort lines, FY26 (annual report)."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 34
+                },
+                {
+                    "label": "Staff",
+                    "share": 15
+                },
+                {
+                    "label": "Other costs (incl. power)",
+                    "share": 30
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 21
+                }
+            ],
+            "note": "From the FY26 P&L in the Q1 FY27 investor presentation; materials include bought-in goods and changes in stock."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                73,
+                55
+            ],
+            "inventoryDays": [
+                338,
+                530
+            ],
+            "payableDays": [
+                185,
+                230
+            ],
+            "cycleDays": [
+                226,
+                354
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                52,
+                53,
+                58,
+                60,
+                60
+            ],
+            "ocf": [
+                62,
+                43,
+                58,
+                47,
+                48
+            ],
+            "fcf": [
+                52,
+                36,
+                46,
+                26,
+                -32
+            ],
+            "note": "FY26 free cash is negative because of the new SteriPort, SVP and solar capex."
+        }
+    },
+    "Influx Healthtech": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "32.2x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "19.8x",
+                "note": "Market value minus net cash, ÷ operating profit over the last two half-years."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹25cr",
+                "note": "No borrowings; cash as stated by the company for March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "20%"
+            },
+            {
+                "label": "Top 10 clients",
+                "value": "49%",
+                "note": "Share of revenue per the investor presentation, as an analyst quoted it on the call; the MD put his top 10–20 clients at 30–40%."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 59
+                },
+                {
+                    "label": "Staff",
+                    "share": 8
+                },
+                {
+                    "label": "Other costs",
+                    "share": 13
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 20
+                }
+            ],
+            "note": "FY26 P&L, annual report. Materials include changes in stock."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                64,
+                84
+            ],
+            "inventoryDays": [
+                14,
+                98
+            ],
+            "payableDays": [
+                88,
+                118
+            ],
+            "cycleDays": [
+                -10,
+                64
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                6,
+                11,
+                17,
+                21,
+                30
+            ],
+            "ocf": [
+                4,
+                7,
+                9,
+                7,
+                4
+            ],
+            "fcf": [
+                1,
+                2,
+                1,
+                -1,
+                -21
+            ]
+        }
     }
 };
 
@@ -1183,5 +1471,23 @@ export const pharmaOthersValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 52.1,
         "mcapAtWriting": 803.0,
         "peAtWriting": 21.6
+    },
+    "KRM Ayurveda": {
+        "netDebt": -38,
+        "ttmEbitda": 36,
+        "mcapAtWriting": 510,
+        "peAtWriting": 20.3
+    },
+    "Amanta Healthcare": {
+        "netDebt": 151,
+        "ttmEbitda": 59.5,
+        "mcapAtWriting": 624,
+        "peAtWriting": 40.7
+    },
+    "Influx Healthtech": {
+        "netDebt": -25,
+        "ttmEbitda": 29.9,
+        "mcapAtWriting": 616,
+        "peAtWriting": 32.2
     }
 };

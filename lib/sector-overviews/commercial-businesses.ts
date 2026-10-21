@@ -433,6 +433,306 @@ const profiles: BusinessProfile[] = [
         watch: ["Occupancy at East Bridge and East Side after they open in H2.", "The rent-adjusted margin moving above 20%.", "Cash flow once security deposits and fit-out spending ease.", "Payments to the related party, Talbotforce."],
         charts: commercialCharts['Smartworks Coworking'],
     },
+    {
+        "company": "Bluspring Enterprises",
+        "inShort": [
+            "**Supplies outsourced staff-heavy services**: office and campus upkeep and canteens, security guards, telecom tower and industrial maintenance, and now power-plant operation (STEAG India) and airline catering at Bengaluru (LSG), with about 97,000 people; it also owns the loss-making job site foundit.",
+            "**Good:** revenue excluding foundit grew 20% in Q1 FY27, STEAG has won about ₹5,200cr of five-year contracts, and management guides FY27 EBITDA above ₹200cr (up 65%). **Bad:** margins are only 2–4% because almost 80% of sales go on wages, the group still made a net loss in FY26 and over the last four quarters because of foundit, both acquisitions were paid for largely with debt, and the stock is up more than three times from its low.",
+            "**Verdict: wait.** The plan is credible but almost all of it is promised, not delivered; I want two quarters of STEAG revenue, a better margin and foundit at breakeven first."
+        ],
+        "tagline": "The infrastructure-services arm demerged from Quess Corp in 2025: facility management and food, security, telecom and industrial maintenance, and power-plant operation and maintenance, plus the foundit job site.",
+        "revenue": "₹3,382cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Facility and food services",
+                "text": "Cleaning, technical upkeep and canteens for offices, factories, hospitals and schools, now including LSG's Bengaluru airline kitchen (about ₹112cr of FY26 revenue at a high-teens margin, airport concession to 2039). ₹520cr in Q1 FY27 at a 4.6% margin."
+            },
+            {
+                "name": "Security services",
+                "text": "About 25,000 guards. ₹187cr in Q1 FY27 at a 2.8% margin."
+            },
+            {
+                "name": "Smart Infra, Energy and Engineering",
+                "text": "Telecom tower and fibre maintenance, industrial services (Hofincons) and, since 21 May 2026, STEAG India, which operates and maintains power plants, mostly coal-fired, for clients such as Vedanta. ₹223cr in Q1 FY27 at a 9.2% margin."
+            },
+            {
+                "name": "foundit",
+                "text": "An online job site (formerly Monster India), held as an investment: ₹19cr of revenue and a ₹14cr EBITDA loss in Q1 FY27."
+            }
+        ],
+        "revenueText": "**Facility and food services were about 55% of Q1 FY27 revenue of ₹949cr**, Smart Infra, Energy and Engineering 23%, security 20% and foundit 2%. STEAG added ₹76cr in its first 40 days and should add about ₹1,000cr in FY27, taking industrial work from about 23% to over 40% of revenue. The top 30 clients give under half of revenue, and client retention is about 95%. STEAG's four new contracts (including two Vedanta power plants worth ₹1,437cr and ₹406cr) run for five years.",
+        "mixes": [
+            {
+                "caption": "Revenue by segment, Q1 FY27 (company call)",
+                "parts": [
+                    {
+                        "label": "Facility and food",
+                        "share": 55
+                    },
+                    {
+                        "label": "Smart Infra, Energy and Engineering",
+                        "share": 23
+                    },
+                    {
+                        "label": "Security",
+                        "share": 20
+                    },
+                    {
+                        "label": "foundit",
+                        "share": 2
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Large Indian and multinational companies** buying facility, food and security services on multi-year contracts; 77 new contracts worth ₹132cr a year were added in Q1 FY27.",
+            "**Power-plant owners**: STEAG runs about 14–16 GW of mostly thermal plants; the new five-year contracts include Vedanta plants.",
+            "**Telecom operators and tower companies** for network maintenance, whose spending dipped in Q1 and was expected to pick up from Q2.",
+            "**Airlines at Bengaluru airport** (IndiGo, Etihad, Qatar Airways, Lufthansa) through LSG India."
+        ],
+        "difficulty": {
+            "level": "Low",
+            "text": "Facility and security work is easy to enter and won mostly on price; the hard part is hiring and managing tens of thousands of workers. Power-plant O&M and airline catering are harder, needing technical record, safety standards and licences."
+        },
+        "moat": "Mostly scale: a national workforce of about 97,000 lets it bid for big clients that want one vendor for everything, as in the STEAG power-plant contracts that bundle O&M, facility and security. In its core services there is little pricing power; STEAG's German engineering record and LSG's airport concession are the stronger assets.",
+        "salesDrivers": [
+            "**Acquisitions**: STEAG (about ₹1,000cr in FY27) and LSG (about ₹110cr a year) drive most of the guided 42% FY27 growth; organically management expects 15–16% growth.",
+            "**Outsourcing and vendor consolidation**: about two-thirds of facility management is still done in-house, and the labour codes and GST push work to formal providers.",
+            "**Guidance**: FY27 revenue above ₹4,700cr, EBITDA above ₹200cr and profit above ₹100cr (all excluding foundit), an exit margin above 5%, and 20% return on equity with a 5.5–6% margin by FY29.",
+            "**Telecom capex**, which sets the telecom maintenance business's volumes.",
+            "**foundit**: sales of ₹25cr a quarter must reach ₹38–40cr for breakeven by Q4 FY27."
+        ],
+        "inputs": "**Wages.** Staff costs were about 80% of FY26 sales, materials (mainly food) about 8% and other costs (largely subcontracting) about 10%. LPG and food prices matter for the canteens.",
+        "costEffect": "**Mostly passed on, with a lag.** Contracts are priced on wages plus a fee, so statutory wage rises are usually billed on, but food inflation (LPG prices in Q1 FY27) and the delay before repricing squeeze the thin margin. **Rule of thumb:** with a 2–4% margin, costs 1% higher than billed would wipe out a third to half of operating profit. **What happened:** the filed operating margin was 2.9% in Q2 FY25, fell to 0.6% in Q4 FY25 as it dropped low-margin contracts and foundit lost money, and recovered to 2.9% in Q4 FY26; it was 2.2% in Q1 FY27.",
+        "competitors": [
+            {
+                "name": "Updater Services, SIS, Krystal Integrated",
+                "note": "Listed Indian facility and security providers of similar size or smaller, with similar thin margins."
+            },
+            {
+                "name": "ISS, Sodexo, Compass, CBRE and JLL",
+                "note": "Global facility and food-service firms serving the same multinational clients."
+            },
+            {
+                "name": "Utilities' own O&M teams and other contractors",
+                "note": "STEAG's rivals for power-plant operation work; management says STEAG is now the largest independent thermal O&M player in India."
+            },
+            {
+                "name": "Naukri (Info Edge) and LinkedIn",
+                "note": "Dominate the job-site market in which foundit is a distant challenger."
+            }
+        ],
+        "position": "**One of India's larger integrated facility-services firms**, with about 97,000 staff, and, after STEAG, the largest independent operator of thermal power plants in India by its own account.",
+        "money": "At 30 June 2026 gross debt was **₹307cr against ₹135cr of cash (net debt ₹172cr)**, and about ₹125cr more was borrowed in August for LSG (₹166cr including ₹57cr of LSG's cash). STEAG cost ₹180cr in cash. Management expects about ₹150cr of acquisition debt by March 2027 and net debt below one year's EBITDA, and wants to sell foundit once it breaks even to repay debt. **The group made a net loss of ₹23cr in FY26 and ₹17cr over the last four quarters** because of foundit and a ₹37cr exceptional charge; operating cash was ₹52cr in FY26 after −₹22cr in FY25. Customers took 95 days to pay in FY26, and management expects working capital to rise from 37 to about 45 days with STEAG. No dividend. Promoters (Fairfax and Ajit Isaac) hold **58.4%**.",
+        "watch": [
+            "Q2 and Q3 revenue showing STEAG's ₹1,000cr for FY27.",
+            "The margin moving toward 5% by Q4, and foundit reaching breakeven or being sold.",
+            "Debt and working capital after two debt-funded acquisitions."
+        ],
+        charts: commercialCharts["Bluspring Enterprises"],
+    },
+    {
+        "company": "Seshaasai Technologies",
+        "inShort": [
+            "**Makes and personalises bank cards, cheque books and secure documents for Indian banks and insurers**, and a growing line of RFID tags and SIM cards, from 24 plants; it says it had 31.9% of India's debit and credit card issuance in FY25.",
+            "**Good:** a 26% operating margin, about ₹332cr of net cash after its 2025 IPO, about 19 times earnings, and IoT revenue up 145% in Q1 FY27. **Bad:** card revenue fell from ₹1,052cr in FY24 to ₹720cr in FY26 and total revenue fell 1.5% in FY26; the cash cycle doubled from 64 to 127 days in two years; one customer is about 15% of sales and ten are 63%; and the founders own 82%, leaving little free float.",
+            "**Verdict: follow.** Cheap and cash-rich, but I want to see the card business stop shrinking and working capital come back down before buying."
+        ],
+        "tagline": "A Mumbai-based maker of payment cards, cheque books, secure communications and RFID/SIM products for banks, insurers and enterprises, founded in 1993 and listed in 2025.",
+        "revenue": "₹1,441cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Payment solutions",
+                "text": "Debit, credit, prepaid and transit cards (including metal and biometric cards) made and personalised for 66-plus banks, plus cheque books, where it says it was India's largest maker in FY25. ₹720cr in FY26, half of revenue."
+            },
+            {
+                "name": "Communication and fulfilment",
+                "text": "Printing and dispatching statements, policy kits, welcome packs and other secure mail for banks and insurers, with logistics and tracking. ₹561cr in FY26 (39%)."
+            },
+            {
+                "name": "IoT solutions",
+                "text": "RFID tags and traceability systems for retailers and pharma, data loggers and SIM/eSIM cards (it supplies 20–25% of one large telecom operator's SIMs). ₹154cr in FY26 (11%) and 18% of Q1 FY27 revenue."
+            }
+        ],
+        "revenueText": "**Payment solutions were 50% of FY26 revenue**, communication and fulfilment 39% and IoT 11%. Card revenue has fallen two years running (₹1,052cr in FY24, ₹915cr in FY25, ₹720cr in FY26) as banks issued and renewed fewer cards; communication and IoT grew. In Q1 FY27 revenue rose 21% to ₹377cr, with payments 42% (up 5%), communication 40% (up 13%) and IoT 18% (up 145%). Banks and other financial firms were about 83% of FY26 revenue. The **largest customer was 15.5%** of FY26 revenue, the top five 48% and the top ten 63%; over 95% of revenue comes from existing clients.",
+        "mixes": [
+            {
+                "caption": "Revenue by segment, FY26 (investor presentation)",
+                "parts": [
+                    {
+                        "label": "Payment solutions",
+                        "share": 50
+                    },
+                    {
+                        "label": "Communication and fulfilment",
+                        "share": 39
+                    },
+                    {
+                        "label": "IoT solutions",
+                        "share": 11
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by segment, Q1 FY27 (company call)",
+                "parts": [
+                    {
+                        "label": "Payment solutions",
+                        "share": 42
+                    },
+                    {
+                        "label": "Communication and fulfilment",
+                        "share": 40
+                    },
+                    {
+                        "label": "IoT solutions",
+                        "share": 18
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Banks**: 10 of 12 public-sector banks and 15 of 21 private banks; two multi-year public-sector bank tenders worth about ₹73cr were won in Q1 FY27.",
+            "**Insurers and fintechs**: 13 life and 9 general insurers, and fintechs issuing premium cards.",
+            "**Retailers, pharma and telecom** for RFID and SIM cards; a large fashion retailer's RFID roll-out began in FY26.",
+            "**Concentration**: the largest customer was 15.5% of FY26 revenue and the top ten 63%."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "Card and cheque production needs card-scheme, RuPay, PCI security and bank certifications, secure plants and data-handling approvals that take years to win; it has a GSMA certificate for SIM/eSIM work held by few firms worldwide. The products themselves are commoditised once certified."
+        },
+        "moat": "Certifications, secure capacity and 10-plus-year relationships with most of its top customers make it hard for banks to switch suppliers quickly. But card volumes depend on banks' issuance cycles, prices are set by tender, and UPI is reducing the role of debit cards.",
+        "salesDrivers": [
+            "**Card issuance and renewals** by banks, which slowed in FY25–FY26; management argues UPI growth has peaked and premium and co-branded cards are rising.",
+            "**Metal cards and exports**: a new 50,000 sq ft Bengaluru plant for metal cards is due by December 2026; early exports to Africa and Europe, and a global payment-card company has qualified its plant.",
+            "**IoT**: RFID traceability (retail, pharma) and SIM/eSIM; management expects about 45% growth in FY27 and 35–40% in FY28.",
+            "**Guidance**: 8–12% revenue growth in FY27, with H2 stronger as bank demand is seasonal; no margin guidance.",
+            "**Capex** of ₹140–160cr a year, funded from IPO money and cash; plants run at 65–70% on average."
+        ],
+        "inputs": "**Card chips, plastic and metal sheets, paper and RFID inlays**, many of them imported in dollars. Materials were about 54% of FY26 sales; in Q1 FY27 they rose to about 58% of sales as the rupee weakened and freight costs rose.",
+        "costEffect": "**Partly passed on, with a lag.** Contracts are mostly tendered at fixed prices, so higher chip costs and a weaker rupee hit the gross margin until it renegotiates; it is holding extra chip stock and seeking price revisions. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points (26% to 21%). **What happened:** the gross margin fell from 44.5% in Q1 FY26 to 41.7% in Q1 FY27 (management says 40–45% of the hit was the rupee, the rest war-related costs), yet the filed operating margin held at 23% on cost control.",
+        "competitors": [
+            {
+                "name": "Manipal Payment and Identity Solutions",
+                "note": "The other large Indian card and secure-print maker, also recently listed."
+            },
+            {
+                "name": "IDEMIA, Thales and other global card makers",
+                "note": "Supply cards and SIMs to Indian banks and telecom operators."
+            },
+            {
+                "name": "Printing and RFID specialists",
+                "note": "Compete for statement printing, cheques and RFID tags; the field is fragmented outside cards."
+            }
+        ],
+        "position": "**One of India's two largest payment-card makers, with 31.9% of card issuance in FY25** (Frost & Sullivan, quoted by the company), and the largest maker of cheque leaves; plants run at about 65–70% of capacity.",
+        "money": "At March 2026 it had about **₹416cr of cash and bank deposits against ₹84cr of debt including leases (net cash about ₹332cr)**, after repaying most loans from its 2025 IPO; cash was ₹369cr at June. Finance costs fell 39% in FY26. **Working capital has grown fast: debtor days rose from 52 to 83 and inventory days from 63 to 98 over FY24–FY26**, so operating cash was ₹220cr against ₹380cr of operating profit in FY26, and free cash only ₹59cr after capex. Capex of ₹140–160cr a year is planned. It pays a dividend (₹2.50 a share final for FY26). CRISIL rates its debt. Promoters hold **81.8%**, unchanged since listing.",
+        "watch": [
+            "Card revenue stabilising, helped by metal cards and exports from the Bengaluru plant.",
+            "The cash cycle coming back toward 2024's 64 days.",
+            "The gross margin recovering as price revisions catch up with the rupee and chip costs."
+        ],
+        charts: commercialCharts["Seshaasai Technologies"],
+    },
+    {
+        "company": "Manipal Payment & Identity",
+        "inShort": [
+            "**India's largest maker of bank cards**, with about 31.7% of domestic payment cards and 36.4% of credit cards, plus government ID cards and driving licences, branch kiosks, liquor tax stamps, metal cards and growing exports; part of the Pai family's Manipal Group, listed in 2026.",
+            "**Good:** revenue up 48% in Q1 FY27 with a 30% operating margin, no bank debt plus IPO cash, 43% return on capital, and exports up to 15% of revenue. **Bad:** revenue grew only 1% in FY25 and 6% in FY26 before Q1's jump, stock has piled up (inventory days rose from 69 to 146 in two years), ten customers give 58% of revenue, and it has only one quarter of listed results.",
+            "**Verdict: follow.** A strong franchise at a fair price (about 24 times earnings), but I want two or three listed quarters showing the 30–35% growth and cash keeping up before buying."
+        ],
+        "tagline": "A Manipal Group company that makes and personalises payment cards, ID cards and secure documents for banks and governments in India and 15-plus countries, founded and run within the Pai family's group.",
+        "revenue": "₹1,327cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Domestic payment cards and bundles (core)",
+                "text": "Debit, credit, prepaid and NCMC transit cards personalised for almost every Indian bank and 60-plus fintechs, often bundled with cheque books, welcome kits and secure delivery to 19,000 pin codes. Capacity about 12cr plastic cards a year."
+            },
+            {
+                "name": "Government ID and digital automation (core)",
+                "text": "Over 1bn national ID cards in 12 languages, polycarbonate driving licences for Maharashtra (8 years), Chhattisgarh (10) and Andaman (5), and more than 5,000 branch kiosks for instant account opening, card issue and passbook printing."
+            },
+            {
+                "name": "Exports (emerging)",
+                "text": "Base cards made in India and personalised locally (a bureau in Nigeria, kiosks in Spanish airports): ₹95cr in FY26 (7.2%) and ₹64cr (15.3%) in Q1 FY27."
+            },
+            {
+                "name": "Metal cards, tax stamps and RFID (emerging)",
+                "text": "Metal cards for India's four largest issuers (selling for 20–25 times a plastic card), intaglio-printed liquor tax stamps with field-verification software for several states, and RFID tags for a large retailer."
+            }
+        ],
+        "revenueText": "**The core business was 63% of Q1 FY27 revenue of ₹419cr** (up 22%) and emerging businesses 37% (₹157cr, up 2.3 times from ₹69cr). Revenue grew from ₹902cr in FY23 to ₹1,326cr in FY26 (14% a year), but the filed accounts show only ₹1,248cr in FY24, ₹1,256cr in FY25 and ₹1,327cr in FY26. Exports rose from about 1% of revenue in FY23 to 7.2% in FY26. Bank revenue is split evenly between public-sector and private banks. **The top ten customers gave 58% of FY26 revenue** (about 62% earlier), and they have been customers for 12 years on average.",
+        "mixes": [
+            {
+                "caption": "Revenue by business, Q1 FY27 (company call)",
+                "parts": [
+                    {
+                        "label": "Core (domestic cards, ID, kiosks)",
+                        "share": 63
+                    },
+                    {
+                        "label": "Emerging (exports, metal, tax stamps, RFID)",
+                        "share": 37
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by market, Q1 FY27 (company call)",
+                "parts": [
+                    {
+                        "label": "India",
+                        "share": 85
+                    },
+                    {
+                        "label": "International",
+                        "share": 15
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Indian banks and fintechs**: almost every bank, with 15-plus-year relationships with the top banks, and 60-plus fintechs; nine contracts won and one large public-sector contract renewed in Q1 FY27.",
+            "**State and central governments**: 17-plus multi-year contracts for ID cards, driving licences (88-plus RTOs) and liquor tax stamps.",
+            "**Overseas banks and fintechs** in 15-plus countries across Africa, the Middle East, Europe, Latin America and Southeast Asia; 10 new ones added in Q1 FY27.",
+            "**Concentration**: the top ten customers were 58% of FY26 revenue."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "Card-scheme, RuPay, PCI DSS and CERT-In certifications, secure data handling and long bank qualification keep new entrants out; it writes its own RuPay chip software, makes its own inlays and holds a metal-card patent. Intaglio printing for tax stamps is rare outside currency printers."
+        },
+        "moat": "Scale and certifications in an oligopoly: four players hold about 90% of Indian cards, and the company has about a third of them, with bundled services that make banks reluctant to switch. Government contracts run five to ten years. The risks are tender pricing, a few large customers and slow growth in plain plastic cards.",
+        "salesDrivers": [
+            "**Indian card volumes**: about 32.7cr cards shipped in India last year, growing about 13% a year, with co-branded, credit and transit (NCMC) cards growing fastest.",
+            "**Exports**: management targets 20–25% of revenue from abroad, adding a personalisation bureau in a developed market (about ₹30cr each).",
+            "**Metal cards**: about 2–2.2m issued in India last year, growing about 47% a year; it plans to triple its metal-card capacity from 6.7 lakh.",
+            "**Tax stamps**: states moving from polyester labels to paper intaglio stamps; a new multi-year contract was added in Q1 FY27.",
+            "**Guidance**: 30–35% revenue growth in FY27 and a margin of about 30%; contracts are lumpy."
+        ],
+        "inputs": "**Chips, PVC and polycarbonate sheets, metal blanks, inlays and security paper**, the top items bought from several countries and many imported in dollars. The detailed FY26 cost split was not available in the sources read.",
+        "costEffect": "**Partly protected.** Exports give a natural dollar hedge and it hedges the net exposure under a board policy; contracts carry force-majeure clauses but tendered prices are fixed. **What happened:** in Q1 FY27 a weaker rupee (about 86 to 95 to the dollar) and costlier materials took the operating margin to 29.6%, 0.8 points lower than a year earlier but 1.7 points higher than Q4 FY26, as fixed costs fell from 36.5% to 30% of revenue. **Rule of thumb:** not available, as the materials share of sales was not found.",
+        "competitors": [
+            {
+                "name": "Seshaasai Technologies",
+                "note": "The other large Indian card maker (31.9% card share by its own FY25 figure), stronger in statements and cheques and growing in RFID and SIM cards."
+            },
+            {
+                "name": "IDEMIA, Thales, CPI Card Group and other global makers",
+                "note": "The top ten makers hold about 71% of the world's 20bn cards; Manipal says it ranks 10th in Visa and Mastercard shipments outside China."
+            },
+            {
+                "name": "Currency and security printers",
+                "note": "Compete for tax stamps and secure documents."
+            }
+        ],
+        "position": "**India's largest payment-card maker with about 31.7% of domestic card shipments and 36.4% of credit cards**, in a market where four players hold about 90%.",
+        "money": "It says it has **no bank debt**; Screener shows ₹153cr of borrowings (mostly leases) at March 2026 against more than ₹220cr of cash and ₹61cr of investments, and the IPO then brought ₹320cr of fresh money, ₹238cr of it for capex (₹100–120cr in FY27). **Inventory days rose from 69 in FY24 to 146 in FY26**, and operating cash fell from ₹309cr to ₹208cr while operating profit rose; management calls 70 days its normal working-capital cycle. Interest was ₹109cr in FY25 and ₹48cr in FY26 (₹34cr in Q1 FY26 alone), falling to ₹5cr a quarter now. No dividend yet; the board is setting a policy. Promoters hold **53.92%**.",
+        "watch": [
+            "Whether the 30–35% growth holds beyond Q1's lumpy contract wins.",
+            "Inventory and operating cash coming back in line with profit.",
+            "Customer concentration falling as exports grow."
+        ],
+        charts: commercialCharts["Manipal Payment & Identity"],
+    },
 ];
 
 export const commercialBusinesses = { intro, profiles };

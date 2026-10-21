@@ -279,6 +279,176 @@ const profiles: BusinessProfile[] = [
         watch: ["Financial closure and a binding concentrate contract.", "Any tax demand on the DyStar award.", "The tube plant starting by June 2027.", "The promoters' ₹288.9cr warrant issue: 60.8 lakh warrants at ₹475, about 12% below the market price when proposed, adding 9.3% to the share count (8.5% dilution); whether they pay up and convert."],
         charts: chemicalsCharts['Kiri Industries'],
     },
+    {
+        "company": "Jyoti Resins",
+        "inShort": [
+            "**Makes white wood glue under the Euro 7000 brand**, sold straight to about 13,000 hardware shops through its own 54 branches and pushed through a loyalty scheme for 2.1 lakh carpenters, from one plant near Ahmedabad.",
+            "**Good:** no debt, about ₹166cr of cash, a 27% operating margin in FY26 and 36% return on capital, at about 15 times earnings. **Bad:** sales grew only about 6% a year over FY23–FY26 and profit fell in FY26, the margin crashed to 14% in Q1 FY27 when its raw material doubled, customers take about 185 days to pay, only about a quarter of five years' operating profit came in as cash, and a promised Big Four auditor was shelved.",
+            "**Verdict: follow.** A cheap, high-return brand, but it must show the margin back above 23% and customer dues falling toward 120 days before I would buy."
+        ],
+        "tagline": "An Ahmedabad maker of PVA wood adhesive (white glue) for carpenters and furniture makers, sold under the Euro 7000 brand, the main challenger to Pidilite's Fevicol in western and southern India.",
+        "revenue": "₹315cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "Euro 7000 wood adhesives",
+                "text": "White glue made from vinyl acetate monomer (VAM) and sold in packs from small tubs to 50–60 kg drums, used by carpenters for plywood, laminates and furniture. Adhesives are 100% of sales."
+            },
+            {
+                "name": "OEM supply",
+                "text": "Glue for modular kitchen and furniture factories, about 6% of revenue, which management wants to raise to 10–12%."
+            }
+        ],
+        "revenueText": "**All revenue comes from wood adhesives in India.** It sells directly to about 13,000 retailers in about 15 states through 54 branches, rather than through distributors; the older core states are Gujarat, Rajasthan, Madhya Pradesh, Maharashtra and Karnataka (about 15% market share in Karnataka), with Uttar Pradesh, Jharkhand, Telangana, West Bengal and the north newly entered. Sales were ₹315cr in FY26 (up 11%) and ₹88cr in Q1 FY27 (up 17%: about 10% volume and 7% price). The March quarter is the busiest (2,400 tonnes in March 2026 against about 1,300 tonnes a month on average).",
+        "mixes": [
+            {
+                "caption": "Revenue by channel, Q1 FY27 (approximate, management)",
+                "parts": [
+                    {
+                        "label": "Retail through hardware shops",
+                        "share": 94
+                    },
+                    {
+                        "label": "OEM furniture makers",
+                        "share": 6
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**About 13,000 hardware and plywood retailers**, billed directly; management says bad debts have stayed below 0.5% over 15–20 years.",
+            "**About 2.1 lakh registered carpenters** (1.7 lakh a year earlier), who choose the glue and earn loyalty points worth roughly 7–13% of sales; about ₹90cr of earned but unredeemed points sits on the balance sheet.",
+            "**Modular kitchen and furniture factories (OEMs)**, about 6% of revenue."
+        ],
+        "difficulty": {
+            "level": "Low",
+            "text": "The glue itself is simple chemistry and the plant cheap (the 75% capacity expansion cost about ₹7cr). What is hard is the brand and the carpenter and retailer network, which takes years per state; management says new states lose money for the first two to three years."
+        },
+        "moat": "A brand trusted by carpenters plus a direct-to-retailer network built over about 20 years in its core states. It is far smaller than Pidilite, which has spent decades building Fevicol, and its direct model means it carries retailers' credit itself.",
+        "salesDrivers": [
+            "**Home building, furniture and interiors**: demand follows housing, renovation and furniture making; projects were put on hold briefly in Q1 FY27 after the price rise, and July was normal.",
+            "**New states**: Uttar Pradesh (more than 1,500 shops), Jharkhand, the north and one more state in Q2. The MD targets ₹500cr of revenue by FY29 at 23–25% margins, which it says needs 15–20% volume growth a year.",
+            "**Capacity**: rising from 2,000 to 3,500 tonnes a month in Q2 FY27 (about 65–70% used in Q1), said to support ₹600–650cr of sales; a later greenfield plant (₹45–50cr, 1,500 tonnes a month) is for a ₹1,000cr 'vision'.",
+            "**Spending to grow**: sales promotion (mainly the loyalty scheme) was about ₹45–50cr in FY26, and advertising and trade marketing are budgeted at 6–7% of revenue; 54 dealer meets cost ₹4.5cr in Q1.",
+            "**Track record**: sales rose from ₹101cr in FY21 to ₹261cr in FY23, then only to ₹315cr by FY26."
+        ],
+        "inputs": "**Vinyl acetate monomer (VAM)**, a crude-oil-linked chemical mostly imported, is the key raw material, plus packaging. Materials were only about 30% of sales in FY26, because the brand, the carpenter loyalty points and selling costs (32% of sales in 'other costs') are the big expenses.",
+        "costEffect": "**Passed on, with a lag.** It keeps only about 30 days of raw material, so a sudden VAM jump hits the margin before price rises catch up. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 3 points (27% to 24%). **What happened:** VAM went from about ₹75–78/kg to ₹170–180/kg in late March 2026; the company raised prices about 4% in April and 11% in mid-May, the filed margin fell from 27% in Q4 FY26 to 14% in Q1 FY27 (management blames 6–7 points on VAM and the rest on dealer meets and hiring), and with VAM back to about ₹100/kg it expects 23–25% in Q2. It has since signed 90-day supply contracts.",
+        "competitors": [
+            {
+                "name": "Pidilite (Fevicol)",
+                "note": "The national leader by a wide margin, with decades of brand and carpenter loyalty; it led the 2026 price rise and kept its margin."
+            },
+            {
+                "name": "Jivanjor, Bondtite and other brands",
+                "note": "Named by analysts on the August call; management says competition has grown in the last three to four years."
+            },
+            {
+                "name": "Unbranded local glue makers",
+                "note": "Part of a market the MD puts at about ₹8,000cr."
+            }
+        ],
+        "position": "**A small challenger with about 4% of a roughly ₹8,000cr market** (₹315cr of sales against management's market estimate), stronger in its core western states and about 15% in Karnataka.",
+        "money": "**No debt and about ₹166cr of cash and investments** at March 2026 (about ₹160cr at June). Customers took **185 days to pay in FY26** against 129 in FY22, because it lends to retailers directly; at June dues were about ₹145–150cr. Over FY22–FY26 it turned ₹344cr of operating profit into only ₹94cr of operating cash (27%), though FY26 was better at ₹48cr. The ₹90cr of carpenter points not yet redeemed is interest-free money it holds. Capex is tiny; a ₹45–50cr greenfield plant would come from its own cash. It pays a dividend (₹9 a share final for FY26), and a buyback discussed in early 2026 is on hold. Promoters hold **54.75%**, up from 50.83% in mid-2025, with no pledge.",
+        "watch": [
+            "The Q2 FY27 margin back at 23% or more.",
+            "Customer dues falling toward 120 days, and operating cash keeping up with profit.",
+            "Volume growth of 15% or more as the new states mature; a Big Four auditor and the promised NSE listing."
+        ],
+        charts: chemicalsCharts["Jyoti Resins"],
+    },
+    {
+        "company": "Prasol Chemicals",
+        "inShort": [
+            "**Makes specialty chemicals from acetone and phosphorus** at Khopoli and Mahad in Maharashtra, used in paints, inks, lubricant additives, crop chemicals, medicines and personal care, for 1,600-plus customers in India and 60-plus countries. Listed in September 2026.",
+            "**Good:** a widely spread customer base (the largest buys only about 4% of sales), 22% growth in FY26, guidance of 26–34% growth for FY27, and low debt. **Watch:** Q1 FY27's 21% margin was flattered by a ₹25cr gain on cheap stock, the normal margin is closer to 11–16%, only 58% of five years' operating profit came in as cash, and the shares trade at about 35 times earnings.",
+            "**Verdict: follow.** A well-spread, well-run chemical maker, but the price already assumes this year's guidance is met; I want to see margins after the Q1 windfall fades."
+        ],
+        "tagline": "A Navi Mumbai specialty-chemicals maker founded by Nishith Shah in 1992, built on acetone and phosphorus chemistry and making more than 150 products.",
+        "revenue": "₹1,233cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "Acetone-based specialty chemicals",
+                "text": "Solvents and derivatives such as diacetone alcohol and isophorone for coatings, inks, construction chemicals, mining, crop chemicals, medicines and personal care; about 43% of FY26 revenue."
+            },
+            {
+                "name": "Phosphorus-based specialty chemicals",
+                "text": "For crop chemicals, lubricant additives, mining and medicines; about 38% of FY26 revenue and the fastest-growing part. Some lines run 9–10 streams, each tuned to one customer's purity needs."
+            },
+            {
+                "name": "Other specialty chemicals",
+                "text": "Custom products and distributed chemicals, about 19%; the plan is to make in-house what it first distributes, and shrink this share to about 10% in five years."
+            }
+        ],
+        "revenueText": "**Acetone chemistry about 43% of FY26 revenue, phosphorus 38% and other specialty chemicals 19%**; in Q1 FY27 the split was about 40/40/20 and **exports 27%** (usually 25–30%). It sells more than 150 products to more than 1,600 customers; the top 10% of customers bring about 24–25% of sales and the largest about ₹55–60cr a year. Its website shows Lubrizol, UPL, Clean Science, Yasho and Supriya Lifescience among customers.",
+        "mixes": [
+            {
+                "caption": "Revenue by chemistry, FY26 (approximate, from management)",
+                "parts": [
+                    {
+                        "label": "Acetone-based",
+                        "share": 43
+                    },
+                    {
+                        "label": "Phosphorus-based",
+                        "share": 38
+                    },
+                    {
+                        "label": "Other specialty",
+                        "share": 19
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by region, Q1 FY27 (approximate, from management)",
+                "parts": [
+                    {
+                        "label": "India",
+                        "share": 73
+                    },
+                    {
+                        "label": "Exports",
+                        "share": 27
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Global and Indian chemical, lubricant, crop-chemical, pharma and personal-care makers**, many served for 10–20 years; its website shows Lubrizol, UPL, Clean Science, Yasho and Supriya.",
+            "**Very spread out**: 1,600-plus customers in 60-plus countries; the largest is about 4% of sales; stock points in Houston, Rotterdam and Shanghai for just-in-time supply."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Each product is tuned to a customer's purity and application needs and approval can take 2–2.5 years, which keeps customers. But the base chemistry is well known, and Chinese and European makers can supply many of the same molecules."
+        },
+        "moat": "Modest but real: long customer approvals, tight purity specifications and a very wide product and customer spread. It does not own proprietary molecules; its edge is process tuning and service.",
+        "salesDrivers": [
+            "**Guidance**: FY27 revenue ₹1,550–1,650cr and EBITDA ₹240–250cr (excluding Q1's ₹25cr gain), and ₹2,800–3,000cr of revenue within five years.",
+            "**Capacity**: 98,000 tonnes (Khopoli 78,800 at full use; Mahad 19,900, up from 13% use in FY24 to 44% in FY26 and 60%-plus in Q1 FY27). Phase 1 adds about 60,000 tonnes for ₹250–300cr over two years and should bring ₹500–550cr of sales at peak; Phase 2 is another ₹250–300cr for new products.",
+            "**New products**: an antibacterial ingredient made by a new 3-step process for a multinational (more than 100 tonnes a month to start, from about early 2027), mining chemicals approved in the US, lubricant additives; 13 launched in three years.",
+            "**China-plus-one and European plant closures**, which management says bring multinationals to India.",
+            "**Acetone and phosphorus prices**, which lift revenue when they rise."
+        ],
+        "inputs": "**Acetone (a petrochemical) and phosphorus-based raw materials**, much of them imported; it is a net importer. Materials were about 70% of FY26 sales (from gross profit).",
+        "costEffect": "**Partly passed on, with a lag that can help or hurt.** Prices follow raw materials, so stock bought earlier gains when prices rise (₹25cr in Q1 FY27) and loses when they fall. Management sees a normal gross margin of 30–32%; Q1 was 37.9%. **Rule of thumb:** with materials at about 70% of sales, a 5% raw-material rise not recovered would cut the margin by about 3.5 points. **What happened:** the operating margin was 15% in FY22, 7% in FY24 and 11% in FY26, then 21% in Q1 FY27 when acetone jumped with the West Asia conflict.",
+        "competitors": [
+            {
+                "name": "Chinese and European specialty-chemical makers",
+                "note": "Supply many of the same acetone and phosphorus derivatives; management says some European capacity is closing on high energy costs."
+            },
+            {
+                "name": "Large global chemical companies",
+                "note": "Management says they lack the patience for small, tailored grades, which is where Prasol competes."
+            }
+        ],
+        "position": "**A mid-sized, highly diversified specialty-chemical maker**; it says it holds more than half the Indian market in some products it first distributed and then began making.",
+        "money": "**Net debt about ₹87cr** at March 2026 (₹111cr of borrowings, about ₹24cr of cash, data provider). The September 2026 IPO's new shares raised **₹80cr**, of which ₹60cr repaid debt; management says it has since paid off the debt it set out to. Phase 1 (₹250–300cr) will be paid for from profits and possibly some new debt. **Over FY22–FY26 operating cash was ₹297cr against ₹510cr of operating profit (58%), and free cash ₹118cr.** The working-capital cycle widened from 22 days in FY22 to 58 days in FY26 as customers paid more slowly and supplier credit shortened. Promoters hold **75.25%**.",
+        "watch": [
+            "Q2 and Q3 FY27 margins once the Q1 stock gain is gone.",
+            "The antibacterial plant and lubricant debottlenecking on time.",
+            "Operating cash keeping pace with profit as the expansion is spent."
+        ],
+        charts: chemicalsCharts["Prasol Chemicals"],
+    },
 ];
 
 export const chemicalsAdditivesBusinesses = { intro, profiles };

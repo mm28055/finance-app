@@ -2101,6 +2101,211 @@ export const realtyCharts: Record<string, ProfileCharts> = {
             "inventory5y": -487,
             "payables5y": -11
         }
+    },
+    "Horizon Industrial Parks": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "n.m.",
+                "note": "Loss-making after tax (FY26 loss ₹204cr; Q1 FY27 loss ₹12cr)."
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "26.2x",
+                "note": "Market value ₹13,212cr plus the company's pro forma net debt after the IPO (about ₹2,500cr at June 2026), ÷ last-four-quarter operating profit of ₹599cr. About 20x on the ~₹770cr operating profit implied by contracted rent."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹2,500cr",
+                "note": "Company's pro forma figure at June 2026 after IPO repayments; Screener shows ₹6,904cr of borrowings at March 2026, before the IPO."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "77%",
+                "note": "Screener basis, excluding other income; the RHP's 79% includes other income. Q1 FY27: 80%."
+            },
+            {
+                "label": "Contracted rent",
+                "value": "₹967cr",
+                "note": "Annual rent run-rate on signed leases at June 2026, against FY26 revenue of ₹691cr."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Operating and maintenance",
+                    "share": 8
+                },
+                {
+                    "label": "Staff",
+                    "share": 4
+                },
+                {
+                    "label": "Other costs",
+                    "share": 11
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 77
+                }
+            ],
+            "note": "Restated consolidated expense split from the RHP (₹53cr, ₹31cr and ₹76cr on ₹691cr of revenue), matching Screener's ₹160cr of expenses. Interest (₹539cr) and depreciation (₹266cr) come after operating profit."
+        },
+        "workingCapital": {
+            "fromYear": "FY23",
+            "toYear": "FY26",
+            "debtorDays": [
+                20,
+                18
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                20,
+                18
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                19,
+                137,
+                290,
+                531
+            ],
+            "ocf": [
+                89,
+                129,
+                235,
+                464
+            ],
+            "fcf": [
+                -320,
+                -662,
+                -1348,
+                -4276
+            ],
+            "note": "Screener consolidated. Free cash here is operating cash minus all investing cash (land, buildings and acquisitions of parks), because Screener's own free-cash line does not capture the spending on investment property. Only four years are filed."
+        }
+    },
+    "Kalpataru": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "42.3x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "132x",
+                "note": "Market value plus net debt, ÷ filed operating profit over the last four quarters (₹101cr). Filed profit is depressed by interest charged into project costs, so this overstates the multiple; it is still very high."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹8,106cr",
+                "note": "Company figure, March 2026 (Screener borrowings ₹9,168cr); ₹8,229cr at June 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "3.5%",
+                "note": "Filed (Screener). The company's adjusted EBITDA margin, before interest charged into projects, was 29.8%."
+            },
+            {
+                "label": "Net debt to equity",
+                "value": "2.0x",
+                "note": "Company, March and June 2026."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Project and construction costs (incl. land and interest charged to projects)",
+                    "share": 80
+                },
+                {
+                    "label": "Staff and other costs",
+                    "share": 16
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 4
+                }
+            ],
+            "note": "Cost of revenue (₹2,764cr) from the filed FY26 income statement as shown by StockAnalysis; staff and other costs are the rest of filed expenses (Screener, ₹3,317cr), not split further in the sources read."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                249,
+                68
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                null,
+                null
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                -48,
+                -80,
+                -129,
+                57,
+                119
+            ],
+            "ocf": [
+                402,
+                2139,
+                376,
+                488,
+                848
+            ],
+            "fcf": [
+                385,
+                2123,
+                391,
+                449,
+                742
+            ],
+            "note": "Filed operating cash runs far ahead of filed operating profit because customer advances come in before revenue is booked and interest paid is counted under financing; borrowings still rose over the period."
+        }
     }
 };
 
@@ -2226,5 +2431,18 @@ export const realtyValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 45.0,
         "mcapAtWriting": 753.0,
         "peAtWriting": 20.8
+    },
+    "Horizon Industrial Parks": {
+        "netDebt": 2500,
+        "ttmEbitda": 599,
+        "mcapAtWriting": 13212,
+        "peAtWriting": null,
+        "lossMaking": true
+    },
+    "Kalpataru": {
+        "netDebt": 8106,
+        "ttmEbitda": 101,
+        "mcapAtWriting": 5198,
+        "peAtWriting": 42.3
     }
 };

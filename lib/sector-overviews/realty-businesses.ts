@@ -590,6 +590,207 @@ const profiles: BusinessProfile[] = [
         watch: ["The promoter loans repaid or settled in the merger.", "NCLT approval and the swap terms.", "Operating cash turning positive."],
         charts: realtyCharts['Marathon NextgenReal'],
     },
+    {
+        "company": "Horizon Industrial Parks",
+        "inShort": [
+            "**India's largest owner of rented warehouses and factory sheds**, built by Blackstone since 2020: 46 parks and city centres in 10 markets, about 29.5 mn sq ft operating and as much again on land it already owns; listed in August 2026.",
+            "**Good:** rent-like income with a 77–80% operating margin, 5% yearly rent increases, 7-year average leases, and the IPO cut net debt to about ₹2,500cr. **Bad:** it has never made a reported profit (FY26 loss ₹204cr; FY26 interest of ₹539cr exceeded operating profit of ₹531cr), top-10 tenants pay 43% of revenue, much of the network was bought from the promoter and others, and Blackstone, at 75.4%, will sell one day.",
+            "**Verdict: follow.** A real, growing rent business at a sensible price after a 24% fall from the IPO price, but wait to see reported profit and how Blackstone exits."
+        ],
+        "tagline": "A Blackstone-owned developer, owner and landlord of Grade A warehouses, factory buildings and in-city logistics centres across 10 Indian markets.",
+        "revenue": "₹691cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Fulfilment centres (warehouses)",
+                "text": "Large modern warehouses of 50,000 to over 500,000 sq ft for e-commerce, FMCG, retail and logistics firms: 16.3 mn sq ft, 57% of the operating area in May 2026, 91.6% let. Typical rent is about ₹24 per sq ft a month."
+            },
+            {
+                "name": "Industrial facilities",
+                "text": "Ready-made or built-to-order factory buildings for assembly and light manufacturing (renewables, EVs, auto parts, electronics, packaging): 11.4 mn sq ft, 40% of operating area, 96% let. Rents run about ₹29 per sq ft, roughly 20% above warehouses, and leases often run 9–15 years. Three-quarters of Q1 FY27 leasing came from this segment."
+            },
+            {
+                "name": "In-city centres",
+                "text": "Multi-storey logistics buildings inside cities for quick commerce, dark stores and last-mile delivery: 17 sites (6.9 mn sq ft) in seven cities, only 0.79 mn sq ft operating. 13 of the sites are on Central Warehousing Corporation land under a 45-year revenue-share concession. Expected rents are ₹70–75 per sq ft, 2.5–3 times a big-box warehouse."
+            },
+            {
+                "name": "Add-on services",
+                "text": "Rooftop solar sold to tenants (about 21 MW running, 17 MW being added), worker hostels (6,000–7,000 beds being built), a 115-room hotel at Dobbaspet (Bengaluru), cold storage and fit-outs; management hopes these reach 5–10% of revenue in 4–5 years."
+            }
+        ],
+        "revenueText": "**Almost all revenue is rent and maintenance charges** from about 120 tenants on leases with ~5% yearly increases and an average 7.1 years left. **Contracted annual rent was ₹967cr at June 2026**, against FY26 revenue of ₹691cr, so revenue should keep rising as signed space starts paying. Q1 FY27 revenue was ₹201cr (Screener), up 56% on filed numbers and 23% on the company's pro forma basis, which includes assets bought during the year. **Top-10 tenants were 42.6% of FY26 pro forma revenue**, and Delhi-NCR, Chennai, Bengaluru and Pune together 79%. About 1.4 mn sq ft of leases expire in the rest of FY27 and 2.2 mn sq ft in FY28; Q1's renewals were re-let 12% higher.",
+        "mixes": [
+            {
+                "caption": "Operating area by format, May 2026 (RHP)",
+                "parts": [
+                    {
+                        "label": "Fulfilment centres",
+                        "share": 57
+                    },
+                    {
+                        "label": "Industrial facilities",
+                        "share": 40
+                    },
+                    {
+                        "label": "In-city centres",
+                        "share": 3
+                    }
+                ],
+                "note": "Share of 28.55 mn sq ft of operating space, not of revenue; the company does not split revenue by format."
+            },
+            {
+                "caption": "Revenue by market, FY26 pro forma (RHP)",
+                "parts": [
+                    {
+                        "label": "Delhi-NCR, Chennai, Bengaluru, Pune",
+                        "share": 79
+                    },
+                    {
+                        "label": "Other markets",
+                        "share": 21
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**E-commerce, retail and FMCG**: Amazon, Unilever, Colgate and Zara among others named on the call.",
+            "**Manufacturers**: Schneider Electric (0.73 mn sq ft at Hosur), Vestas (1.01 mn sq ft at Oragadam), Lumax, SIG, Fosroc, Tata group firms and TD Connex.",
+            "**Concentration**: 54% of let space is with Fortune 500 companies; top-10 tenants were 42.6% of FY26 pro forma revenue (54% in FY24)."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Building warehouses is not technically hard; the hard parts are assembling 50–100-acre land parcels with clear title and approvals near big cities, and finding in-city land at all. Horizon already owns about 2,300 acres, fully paid, enough for roughly 30 mn sq ft more."
+        },
+        "moat": "Scale, paid-for land in the best logistics clusters and the hard-to-copy in-city sites give it an edge in winning large multi-site tenants. But warehouses are a commodity product, rival institutional landlords (many also foreign-funded) compete for the same tenants and land, and tenants can move at lease end.",
+        "salesDrivers": [
+            "**Built-in rent growth**: about 5% a year in leases (some 15% every three years) plus re-letting gains of 12–15% on expiring leases.",
+            "**New buildings**: FY27 targets of 6.5 mn sq ft leased and 6 mn sq ft delivered; the land bank allows the large-park footprint to double in 4–5 years.",
+            "**In-city centres**: about 6 mn sq ft over three years at 2.5–3 times big-box rents; management says they could reach about 25% of revenue when complete, though 13 sites face a Delhi High Court challenge to the CWC tender.",
+            "**Demand**: e-commerce and quick commerce, plus factories moving to India under PLI schemes; JLL expects Grade A stock to grow about 25% a year to 2030.",
+            "**Yield on new spending**: management guides 13–14% on incremental capex (11–12% on big parks historically)."
+        ],
+        "inputs": "**Land, steel structures, concrete, roofing and labour** for new buildings, which are capitalised rather than expensed. Running costs are small: in FY26 operating and maintenance costs were 8% of sales, staff 4% and other costs 11%. Construction costs about ₹4,500 per sq ft for the in-city buildings.",
+        "costEffect": "**Well protected on the running business.** Rent is fixed by lease with yearly increases, and maintenance costs are largely charged back to tenants, so input prices barely touch the operating margin. **Rule of thumb:** a 10% rise in all running costs would cut the margin by only about 2 points (77% to 75%). The real exposures are building costs on new projects (management says rents are rising faster than construction costs) and **interest rates**: FY26 interest of ₹539cr was larger than operating profit, so the cost of debt matters far more than steel or cement. **What happened:** the filed operating margin rose from 13% in FY23 to 77% in FY26 and 80% in Q1 FY27 as the leased area grew; there is no single input index to chart.",
+        "competitors": [
+            {
+                "name": "IndoSpace, ESR, Welspun One, Embassy Industrial Parks and other institutional landlords",
+                "note": "Unlisted, mostly foreign-funded warehouse platforms; JLL says Horizon is the largest by total network. No listed pure-play peer exists in India."
+            },
+            {
+                "name": "Mahindra Lifespace Developers",
+                "note": "Develops industrial parks in Chennai and Jaipur but sells plots rather than renting buildings."
+            },
+            {
+                "name": "Local developers of older Grade B and C sheds",
+                "note": "Hold over 90% of India's warehouse stock; Horizon's pitch is that tenants are moving to compliant Grade A buildings."
+            }
+        ],
+        "position": "**India's largest industrial and logistics park platform** by total network (about 61 mn sq ft including undeveloped land, per the RHP and JLL), with 28.55 mn sq ft operating at **93.6% committed occupancy** in May 2026 and the largest in-city network.",
+        "money": "Screener shows **₹6,904cr of borrowings** at March 2026 (net external debt ₹4,242cr in the RHP). It raised about ₹4,250cr of new equity between December 2025 and August 2026, including the **₹2,600cr IPO at ₹60**, and says pro forma net debt fell to **about ₹2,500cr** at June after repayments, at an 8.2% average cost that it hopes to cut by 40–50 basis points. It has reported **net losses of ₹151–204cr in each of FY23–FY26** and ₹12cr in Q1 FY27, because depreciation (₹266cr) and interest (₹539cr) exceeded FY26 operating profit of ₹531cr. Operating cash was **₹917cr over FY23–FY26, about 94% of operating profit**, but investing (land, buildings and acquisitions) took ₹7,523cr, funded by debt and equity. Planned capex is ₹1,500–2,000cr over three years, a third from internal cash and two-thirds new debt; new buildings are usually 80–90% financed by construction loans that convert to rent-backed loans. One subsidiary (Embassy Industrial Park Hosur) was rated CRISIL BBB+ in August 2025; the parent's rating is not disclosed. 31.6 acres of land held by the Hoskote subsidiary has been marked for acquisition by the Karnataka government. Promoters (Blackstone) hold **75.40%**, unpledged; the shares trade at about ₹45.8, 24% below the IPO price.",
+        "watch": [
+            "Reported net profit turning positive by Q3 FY27, as the CEO guided.",
+            "FY27 leasing of 6.5 mn sq ft and the Pimpri in-city centre delivered and let in Q4.",
+            "How and when Blackstone sells down, and any further asset purchases from Blackstone-linked sellers."
+        ],
+        charts: realtyCharts["Horizon Industrial Parks"],
+    },
+    {
+        "company": "Kalpataru",
+        "inShort": [
+            "**A Mumbai and Thane home builder** from the five-decade-old Kalpataru group, best known for the Kalpataru Parkcity township in Thane, luxury towers such as Vian at Lokhandwala, and housing-society redevelopments; listed in July 2025.",
+            "**Good:** an old brand with about 18.4 mn sq ft delivered, about 15 mn sq ft due for completion over FY27–FY29, and refinancing has cut its borrowing cost to about 11%. **Bad:** **₹8,229cr of net debt (2.0 times equity)**, pre-sales were flat in H1 FY27 against a 23% growth target, CRISIL cut its rating to BBB in September, and five years of filed operating cash plus about ₹3,000cr of new equity barely dented borrowings.",
+            "**Verdict: pass.** Too much costly debt for a business whose sales have stalled; the handover profits that could fix it are an FY28–FY29 story, and FY27 net debt is guided flat."
+        ],
+        "tagline": "A Mumbai-region developer of premium homes, townships and society redevelopments, carrying one of the heaviest debt loads among listed developers.",
+        "revenue": "₹3,436cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Townships",
+                "text": "Kalpataru Parkcity in Thane, where more than 2,000 families already live; its Q1 FY27 pre-sales rose about 350% on a weak base, and Tower C of Estella was launched there. With K. One in Worli it made up about 47% of the sales value of ongoing projects in March 2025 (ICRA)."
+            },
+            {
+                "name": "Premium and luxury towers",
+                "text": "Projects such as Kalpataru Vian at Lokhandwala (3, 4 and 4.5-bedroom homes on a private four-acre plot, launched June 2026) and Kalpataru Elitus in Mulund."
+            },
+            {
+                "name": "Society redevelopment",
+                "text": "Rebuilding old housing societies, such as five in Ashok Nagar, Kandivali (2.8 acres, about ₹1,250cr of sale value, signed in Q1 FY27) and Elaara in Goregaon West (2.37 acres); it has delivered six projects in Kandivali before."
+            },
+            {
+                "name": "Offices and other cities",
+                "text": "A few office and retail assets that it is selling to raise cash (Kalpataru Infinia in Pune went for about ₹119cr in Q1 FY27), plus projects in Pune and earlier in Hyderabad, Noida and Nagpur."
+            }
+        ],
+        "revenueText": "Revenue is booked only when a project gets its occupation certificate (the completion method), so filed revenue jumps around: **₹1,694cr of FY26's ₹3,436cr came in Q4 alone**, and Q1 FY27 showed a ₹29cr loss. Sales signed are the better guide: **FY26 pre-sales were ₹5,280cr** (+17%) and **collections ₹4,960cr** (+34%); H1 FY27 pre-sales were ₹2,587cr, flat, with Q2 down 5% to ₹1,258cr, while H1 collections rose 9% to ₹2,554cr. In Q1 the area sold rose 48% but value only 6%, which management put down to project mix. About 85% of FY25 collections came from the Mumbai region (CRISIL). The company reports an 'adjusted' FY26 EBITDA of ₹1,022cr (29.8%), against Screener's operating profit of ₹119cr (3.5%); the gap is mainly interest that is charged into project costs.",
+        "mixes": [
+            {
+                "caption": "Sales value of ongoing projects, March 2025 (ICRA)",
+                "parts": [
+                    {
+                        "label": "Parkcity Thane and K. One Worli",
+                        "share": 47
+                    },
+                    {
+                        "label": "Other ongoing projects",
+                        "share": 53
+                    }
+                ]
+            },
+            {
+                "caption": "FY27 pre-sales by source, approximate (management, August 2026)",
+                "parts": [
+                    {
+                        "label": "Existing projects",
+                        "share": 75
+                    },
+                    {
+                        "label": "New launches",
+                        "share": 25
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Well-off Mumbai and Thane families** upgrading to larger homes in gated projects with amenities, the buyers management says are driving demand.",
+            "**Housing societies** that pick a redeveloper on trust and track record, as in Kandivali and Goregaon.",
+            "**Land owners and partners** in joint developments; the company says it will add projects this way rather than by buying land."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "Mumbai projects need long chains of approvals; CRISIL says delayed environmental approvals for key projects held back FY26 sales and collections. Redevelopment needs the trust of every society member. Building itself is contracted out."
+        },
+        "moat": "A 50-year name, about 18.4 mn sq ft delivered and a top-five position in organised Mumbai housing (CRISIL) win it societies and buyers. The weakness is money: at about 11% it borrows far dearer than AA-rated rivals, and two projects carry much of the book.",
+        "salesDrivers": [
+            "**Launches**: about 5 mn sq ft worth about ₹7,800cr in FY27, spread over the year; Estella and Hari Niketan were due in Q2, Blossom, Ardene and Suman Nagar later.",
+            "**Pre-sales target**: about ₹6,500cr in FY27 (+23%), against a flat H1.",
+            "**Completions**: about 5.5 mn sq ft in FY27 and about 15 mn sq ft over FY27–FY29, which is when profit gets booked.",
+            "**Pricing**: management called prices 'stable and strong' and plans increases as projects progress.",
+            "**Interest rates**: about ₹5,300cr refinanced since the IPO saves about ₹180cr a year; lower rates would help further."
+        ],
+        "inputs": "**Construction (cement, steel, labour, contractors), approval premiums, rent and corpus paid to societies, and interest on project loans.** In FY26, project and construction costs were about 80% of revenue and staff and other costs about 16%.",
+        "costEffect": "**Partly protected on unsold flats, not on interest.** Unsold homes can be repriced, but flats sold years ago are fixed, and interest on about ₹9,200cr of borrowing is the biggest swing cost. **Rule of thumb:** a 10% rise in project costs not passed on would cut the filed margin by about 8 points (3.5% to about −4.5%). **What happened:** there is no single price index for a developer's costs, so no input chart. The filed operating margin went from −7% in FY24 to 3.5% in FY26 as projects were handed over; it is low mainly because interest charged into project costs sits inside expenses.",
+        "competitors": [
+            {
+                "name": "Lodha, Godrej Properties, Oberoi",
+                "note": "Larger, better-rated Mumbai developers bidding for the same buyers and land."
+            },
+            {
+                "name": "Keystone Realtors (Rustomjee), Sunteck",
+                "note": "Listed Mumbai developers with redevelopment and luxury books and far less debt."
+            },
+            {
+                "name": "Puravankara, Mahindra Lifespace, Raymond Realty",
+                "note": "Rivals in Mumbai redevelopment and the Thane market."
+            }
+        ],
+        "position": "**One of the top five organised residential developers in Mumbai** (CRISIL), with 77 projects and about 18.4 mn sq ft delivered and 25 projects (about 25.1 mn sq ft) under way at March 2025 (ICRA).",
+        "money": "Screener shows **₹9,168cr of borrowings** at March 2026; the company put net debt at **₹8,106cr (2.0 times equity)**, rising to ₹8,229cr at June (gross ₹9,189cr, cash ₹959cr), and expects FY27 to end about flat. The FY26 profit and loss shows only ₹70cr of interest because most is charged into project costs. **Over FY22–FY26 it generated ₹4,253cr of filed operating cash and raised about ₹3,030cr of equity (₹1,440cr from promoters, ₹1,590cr in the IPO, ~75% of it used to repay debt), yet borrowings ended above the ₹7,374cr of March 2021**; most of the cash went on interest. CRISIL cut its rating to BBB in September 2026 and expects debt to stay above 3.5 times yearly operating cash through FY28; ICRA's BBB was withdrawn at the company's request. Filed return on equity is 2.7%. No dividend. The share trades at about ₹252, against the ₹414 IPO price and the promoters' ₹517.25. Promoters hold **81.34%**, unchanged since listing, with no pledge.",
+        "watch": [
+            "Q2 results (due by 14 November) and H2 pre-sales reaching about ₹3,900cr.",
+            "Occupation certificates in H2 for the 5.5 mn sq ft completion target.",
+            "Net debt at March 2027 against the ₹8,106cr ceiling, and the next rating actions."
+        ],
+        charts: realtyCharts["Kalpataru"],
+    },
 ];
 
 export const realtyBusinesses = { intro, profiles };

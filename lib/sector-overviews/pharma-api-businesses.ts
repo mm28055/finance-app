@@ -471,6 +471,214 @@ const profiles: BusinessProfile[] = [
         watch: ["The ibuprofen decision and write-down at Q2 results.", "Base-business margin holding near 25%.", "Net debt at about ₹440cr by March 2027."],
         charts: pharmaApiCharts['Solara Active Pharma'],
     },
+    {
+        "company": "Symbiotec Pharmalab",
+        "inShort": [
+            "**One of the world's largest makers of steroid and hormone active ingredients** (corticosteroids such as prednisolone and dexamethasone, and hormones such as progesterone and testosterone), made from soyabean sterols through its own fermentation, plus two new businesses: contract fermentation and ready-to-use injectables.",
+            "**Good:** about 38% of world corticosteroid API volume by its IPO filing, 44 US drug master files, long customer relationships and a near-30% API margin. **Bad:** the API business grows only in high single digits, about ₹1,000cr has gone into new plants that earn nothing yet and cost ₹34cr a quarter, Q1 profit fell to ₹14cr, the top ten customers buy about 58%, and 13% of shares were pledged for a family-company loan.",
+            "**Verdict: wait.** A strong niche franchise, but at about 78 times trailing earnings the price already counts on the new businesses working; I want to see their first revenue and milestone income first."
+        ],
+        "tagline": "An Indore-based, backward-integrated maker of corticosteroid and steroid-hormone APIs, founded by Anil Satwani in 1995 and listed in September 2026, now adding biotech contract manufacturing and complex injectables.",
+        "revenue": "₹869cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Steroid and hormone APIs",
+                "text": "About 60 corticosteroids and steroid hormones from plants at Rau and Pithampur (Indore), running at 70–80%; ₹835cr, or 96% of FY26 revenue. It makes its own starting materials for more than 80% of products by revenue, from plant sterols."
+            },
+            {
+                "name": "Complex injectables (dual-chamber vials)",
+                "text": "A ready-to-use vial that holds drug and diluent in separate chambers, made at a new Mhow plant (subsidiary Knovea). First US filing made in September 2026, a second due in Q4; a US multinational has signed a term sheet to sell them. ₹33cr of milestone income in FY26, none in Q1 FY27."
+            },
+            {
+                "name": "Biotech contract manufacturing (CDMO)",
+                "text": "A 400-kilolitre fermentation plant at Ujjain making products for other companies: a 10-year take-or-pay deal with a US alternative-protein firm, a term sheet with a European one and a 5-year insulin supply deal. ₹1cr of revenue in FY26; first sales expected in Q4 FY27."
+            }
+        ],
+        "revenueText": "**APIs were 96% of FY26 revenue (₹835cr)**, injectables milestones 3.8% and CDMO 0.1%. **Exports were about 67% of FY26 revenue**, with the US about 13%; in FY25 Europe was 30%, the rest of Asia and Africa 19% and India 45%. It sells to more than 200 drug companies in 40+ countries; **the top ten customers took about 58% of FY26 product sales** and the top five products 62% of revenue. Sales are mostly by purchase order, not long contracts, though 70% of FY26 revenue came from customers of more than seven years. Q1 FY27 revenue was ₹218cr, up 7%, with API sales up 6% on volume.",
+        "mixes": [
+            {
+                "caption": "Revenue by business, FY26 (IPO prospectus)",
+                "parts": [
+                    {
+                        "label": "Steroid and hormone APIs",
+                        "share": 96
+                    },
+                    {
+                        "label": "Complex injectables (milestones)",
+                        "share": 4
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by market, FY25 (DRHP)",
+                "parts": [
+                    {
+                        "label": "India",
+                        "share": 45
+                    },
+                    {
+                        "label": "Europe",
+                        "share": 30
+                    },
+                    {
+                        "label": "Rest of Asia and Africa",
+                        "share": 19
+                    },
+                    {
+                        "label": "US",
+                        "share": 4
+                    },
+                    {
+                        "label": "China",
+                        "share": 2
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Global innovator and generic drug companies** that name Symbiotec as their API source in their filings; two of the top five customers are steroid-hormone innovators, and top-five relationships average more than ten years.",
+            "**Indian formulation makers**, about 45% of FY25 revenue.",
+            "**New contract customers**: a US alternative-protein company (10-year take-or-pay), a European one (term sheet), an insulin customer (5 years), and a US multinational for the injectables (term sheet)."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "Steroid chemistry is many-step and partly biological: it turns plant sterols into steroid building blocks by fermentation, which few companies outside China and a handful of Western firms can do, and each API must pass US, European and Japanese inspections."
+        },
+        "moat": "Being written into customers' regulatory filings makes it slow and costly to replace, and owning the fermentation step lets it make or buy its intermediates, protecting margins. The new businesses have no such moat yet; they depend on start-up customers and on US approvals.",
+        "salesDrivers": [
+            "**API volumes and regulated-market wins**: management expects high-single-digit growth in APIs, with gross margin around 60% and EBITDA near 30%.",
+            "**Guidance**: FY27 revenue up about 20% and EBITDA up about 25%, each plus or minus 5 points; net profit growth lower because of new depreciation.",
+            "**Milestone payments** in H2 FY27 from the injectables and CDMO partners, which management says will offset the ₹23cr a quarter of running costs.",
+            "**New capacity**: a 600-kilolitre fermentation expansion (Phase 1) to start construction in Q3 FY27, with ₹200–250cr of capex a year for two to three years, partly funded by customers.",
+            "**Insulin and US approvals**: insulin sales need DCGI approval and start early FY28; the generic Premarin API depends on a partner's formulation."
+        ],
+        "inputs": "**Plant sterols (phytosterols), fermentation-based intermediates, solvents and reagents.** It imported ₹170cr of raw materials from China in FY26, and some sterols come from the US.",
+        "costEffect": "**Mostly protected by backward integration.** It can make or buy its key intermediates, so it is not dictated by outside suppliers; solvents and freight are the exposed part. **What happened:** the operating margin dipped to 12% in FY23 and recovered to 24–27% in FY24–FY26; Q1 FY27 fell to 21% only because the new plants' costs (₹23cr) now flow through the P&L, while the API business alone earned about 31% (₹66cr on ₹215cr).",
+        "competitors": [
+            {
+                "name": "Curia, Axplora, Aspen API, EURO API, Pfizer CentreOne, Bayer",
+                "note": "Western steroid API makers named in its prospectus as global peers."
+            },
+            {
+                "name": "Tianjin Tianyao, Henan Lihua, Zhejiang Xianju",
+                "note": "Large Chinese steroid makers with integrated supply chains."
+            },
+            {
+                "name": "Lupin, Cipla, Dr Reddy's, Sun Pharma, Coral Drugs, Mahima Life Sciences",
+                "note": "Indian makers of some of the same steroid APIs; most are not backward-integrated to the same extent."
+            }
+        ],
+        "position": "**By its IPO filing, about 38% of world corticosteroid API volume and 24% of steroid-hormone API volume in FY26**, with 44 US drug master files and 25 European certificates, one of the largest such filing sets in the world.",
+        "money": "Screener shows **₹391cr of borrowings** at March 2026; management put net debt at ₹398cr in June and about **₹326cr** after ₹142cr of net IPO money in September. **Over FY22–FY26 it turned ₹815cr of operating profit into ₹497cr of operating cash (61%) but free cash was −₹543cr**, because about ₹1,000cr went into the Ujjain and Mhow plants; capex was ₹68cr in Q1 FY27 and is guided at ₹200–250cr a year. Stock is heavy at **274 days of inventory**. The IPO was mostly a sale by existing holders (₹1,607cr of ₹1,757cr). Promoters hold **33.28%**, and 13.2% of the company's shares were pledged to a Nomura affiliate for the family holding company's debentures.",
+        "watch": [
+            "Milestone income and first CDMO revenue arriving in H2 FY27, offsetting the new plants' costs.",
+            "The US injectables licence signed and the US FDA's clean report (EIR) for Pithampur received.",
+            "Whether promoters' pledged shares are released or the pledge grows."
+        ],
+        charts: pharmaApiCharts["Symbiotec Pharmalab"],
+    },
+    {
+        "company": "Anlon Healthcare",
+        "inShort": [
+            "**A small Rajkot maker of painkiller ingredients** (loxoprofen, ketoprofen, dexketoprofen) and their intermediates, listed in August 2025, which has since bought two chemical makers and a small tablet maker to grow fast.",
+            "**Good:** sales of ₹87.6cr in Q1 FY27, up from ₹33.3cr, and a few hard-to-make NSAID ingredients with Brazilian and Chinese approvals. **Bad:** operating cash flow has been negative every year since FY21 (−₹59cr in FY26), customers take about 220 days to pay and stock sits for 393 days, the Q1 margin fell to 17.9% against a promised 24–25%, and the founders are selling their own stakes in the acquired companies to Anlon for new shares at many times what Anlon paid for its first stakes months earlier.",
+            "**Verdict: avoid.** The profit has never turned into cash, and the way the subsidiaries are being bought from the promoters puts their interests ahead of outside shareholders'."
+        ],
+        "tagline": "A Rajkot-based maker of pain-relief APIs and pharmaceutical intermediates, founded in 2013 and listed in 2025, expanding by acquisition into fine chemicals, formulations, peptides and implants.",
+        "revenue": "₹172cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "APIs",
+                "text": "Loxoprofen sodium, ketoprofen, ketoprofen lysinate and dexketoprofen trometamol for pain and inflammation, plus L-carnitine tartrate (a supplement); 58% of FY26 standalone revenue and 50% in Q1 FY27."
+            },
+            {
+                "name": "Pharmaceutical intermediates",
+                "text": "Starting materials such as ketonitrile and loxoprofen acid (for its own APIs) and guaiacol glycidyl ether (for ranolazine); 36% of FY26 and 44% of Q1 FY27 standalone revenue."
+            },
+            {
+                "name": "Industrial and fine chemicals (Apiqo, Bizotic)",
+                "text": "Acquired in FY26–FY27; Apiqo made about ₹45cr and Bizotic about ₹12cr in Q1 FY27, and management expects ₹120–150cr and about ₹60cr from them in FY27. Apiqo is 'fully booked', per the MD."
+            },
+            {
+                "name": "New ventures",
+                "text": "Remember India (tablets and capsules, 63.98% bought for ₹5.38cr in May 2026, FY25 sales ₹0.83cr), three CDMO molecules for two innovators in validation, and new subsidiaries for peptides (Anlon Biologics) and surgical implants (Anlon Medicare), with revenue hoped for in FY28."
+            }
+        ],
+        "revenueText": "**Q1 FY27 revenue was ₹87.6cr**: Apiqo about ₹45cr, Anlon itself ₹31–32cr (down from ₹33cr) and Bizotic about ₹12cr. Standalone FY26 revenue was 58% APIs, 36% intermediates and 6% nutraceuticals. It sells to about 125 customers in 15 countries, but the MD said a B2B business like his has **hardly 10–15 customers**. Management targets ₹350–400cr in FY27 and ₹700cr in FY28, the latter only if a new 1,200-tonne plant starts on time.",
+        "mixes": [
+            {
+                "caption": "Standalone revenue by product type, FY26 (company presentation)",
+                "parts": [
+                    {
+                        "label": "APIs",
+                        "share": 58
+                    },
+                    {
+                        "label": "Pharmaceutical intermediates",
+                        "share": 36
+                    },
+                    {
+                        "label": "Nutraceuticals",
+                        "share": 6
+                    }
+                ]
+            },
+            {
+                "caption": "Consolidated revenue by company, Q1 FY27 (approximate, company call)",
+                "parts": [
+                    {
+                        "label": "Apiqo Organics",
+                        "share": 51
+                    },
+                    {
+                        "label": "Anlon standalone",
+                        "share": 36
+                    },
+                    {
+                        "label": "Bizotic Lifescience",
+                        "share": 13
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Generic drug makers** buying painkiller APIs, in India and 15 countries including South Korea, Japan, Brazil and China, where it has approvals.",
+            "**API makers** buying its intermediates as starting materials; it also makes ingredients for nutraceutical, personal-care and animal-health customers.",
+            "**Industrial and fine-chemical buyers** served by Apiqo, and **two global innovators** for whom it is developing three CDMO molecules."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Loxoprofen and dexketoprofen need multi-step chemistry and approvals (21 drug master files filed, a European CEP for ketoprofen, Brazilian and Chinese approvals for loxoprofen). But these are old, generic painkillers, and Anlon itself says it cannot raise prices quickly when solvent costs jump."
+        },
+        "moat": "Few Indian makers produce loxoprofen and dexketoprofen, and regulatory filings make customers slow to switch. It is still a small price-taker: Q1 FY27 showed it had to absorb a doubling of solvent costs on existing orders.",
+        "salesDrivers": [
+            "**Acquisitions**: Apiqo and Bizotic more than doubled revenue; the remaining stakes are being bought for new shares.",
+            "**Capacity**: Anlon's own 400-tonne plant is full; a ₹130cr expansion adding 1,200 tonnes (funded with ₹70cr of debt at about 8.5%) is due in Q1 FY28, initially at 50–60% use.",
+            "**Guidance**: FY27 revenue of ₹350–400cr at a 25–27% EBITDA margin and 12–13% net margin; ₹700cr in FY28; about 30% a year over three years.",
+            "**New filings**: seven new APIs and their drug master files planned in FY27; a US FDA audit expected after a Sanofi partnership.",
+            "**Seasonality**: H2 is usually larger, about 45:55."
+        ],
+        "inputs": "**Petrochemical solvents and chemicals, and key starting materials.** Solvents are about 40% of API cost, by the MD's estimate; methanol went from ₹22 to ₹58–60 a kg during the 2026 war. Materials were 61% of FY26 consolidated sales.",
+        "costEffect": "**Passed on slowly, with a lag of one or two quarters.** Prices are agreed per order with a few big customers, so a sudden solvent jump has to be absorbed on orders already taken. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 6 points (28% to 22%). **What happened:** in Q1 FY27 solvent prices doubled or tripled and the consolidated margin fell to 17.8% from about 30% in Q4 FY26; quarterly margins have swung between 6% and 35% since FY25.",
+        "competitors": [
+            {
+                "name": "Chinese and Japanese loxoprofen and ketoprofen makers",
+                "note": "The main global suppliers of these older NSAIDs; Anlon sells partly into Japan, Korea and China."
+            },
+            {
+                "name": "Indian mid-sized API makers",
+                "note": "Many make NSAIDs and intermediates at larger scale; management names none."
+            }
+        ],
+        "position": "**One of a few Indian makers of loxoprofen sodium and dexketoprofen trometamol**, still very small: 400 tonnes of its own capacity running full, and 1,400–1,600 tonnes including the acquired plants at 62–70% use.",
+        "money": "Its presentation shows **₹44cr of borrowings and ₹4cr of cash at March 2026 (net debt about ₹39cr)**, after a ₹121cr IPO in August 2025; it is now borrowing ₹70cr for the expansion. **Operating cash flow has been negative every year from FY21 to FY26 (−₹59cr consolidated in FY26)**, because receivables (₹104cr, 220 days) and inventory (₹113cr, 393 days) grow faster than profit; free cash was −₹95cr in FY26. The MD says payment terms are 90 days but customers pay in 130–180. It also did a 1:1 bonus and a 1:5 split. The share swap for Apiqo and Bizotic would add about 16% more shares. Promoters hold **52.68%**.",
+        "watch": [
+            "Operating cash flow turning positive in FY27, as promised.",
+            "Whether shareholders approve the share swap that buys the promoters' own stakes in Apiqo and Bizotic.",
+            "Margins back to 25% by Q3 FY27 and the 1,200-tonne plant on time for Q1 FY28."
+        ],
+        charts: pharmaApiCharts["Anlon Healthcare"],
+    },
 ];
 
 export const pharmaApiBusinesses = { intro, profiles };

@@ -2638,6 +2638,172 @@ export const ironSteelCharts: Record<string, ProfileCharts> = {
             "inventory5y": -54,
             "payables5y": 0
         }
+    },
+    "Vedanta Iron & Steel": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "Loss",
+                "note": "Carved-out FY26 net loss of ₹2,935cr; Q1 FY27 profit of ₹121cr annualised would be about 23 times."
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "10.4x",
+                "note": "Market value plus the company's June net debt (₹2,733cr), ÷ operating profit over the last year (₹1,308cr)."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹2,733cr",
+                "note": "Company figure, June 2026: borrowings plus ₹960cr owed to Vedanta Ltd, minus cash including ₹352cr restricted."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "8%",
+                "note": "14% in Q1 FY27."
+            },
+            {
+                "label": "Steel EBITDA a tonne, Q1 FY27",
+                "value": "₹5,864",
+                "note": "Up from ₹3,668 a year earlier."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 49
+                },
+                {
+                    "label": "Power and fuel",
+                    "share": 3
+                },
+                {
+                    "label": "Staff",
+                    "share": 4
+                },
+                {
+                    "label": "Other costs (royalties, freight, contractors)",
+                    "share": 36
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 8
+                }
+            ],
+            "note": "Filed carve-out P&L (Q1 FY27 results, FY26 column). Materials include purchases and changes in stock; most coal and coke sit in materials. Other costs are not split in the filing."
+        }
+    },
+    "Kirloskar Ferrous": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "19.5x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "10.0x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹914cr",
+                "note": "Borrowings including leases, minus cash and bank balances, March 2026."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "84%",
+                "note": "Operating cash ÷ operating profit over FY22–FY26; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "12%"
+            },
+            {
+                "label": "Castings volume, Q1 FY27",
+                "value": "+18%",
+                "note": "Tonnes sold against Q1 FY26 (company)."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 57
+                },
+                {
+                    "label": "Staff",
+                    "share": 5
+                },
+                {
+                    "label": "Power, fuel and other costs",
+                    "share": 26
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 12
+                }
+            ],
+            "note": "Consolidated FY26 profit and loss (annual report). Materials include bought-in goods and changes in stock. Power and fuel are inside other costs; standalone power cost was about 8% of revenue."
+        },
+        "workingCapital": {
+            "fromYear": "FY23",
+            "toYear": "FY26",
+            "debtorDays": [
+                47,
+                58
+            ],
+            "inventoryDays": [
+                106,
+                101
+            ],
+            "payableDays": [
+                102,
+                111
+            ],
+            "cycleDays": [
+                51,
+                48
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                643,
+                836,
+                857,
+                762,
+                850
+            ],
+            "ocf": [
+                345,
+                798,
+                563,
+                656,
+                942
+            ],
+            "fcf": [
+                -79,
+                382,
+                35,
+                177,
+                494
+            ],
+            "note": "FY22 is before the ISMT tubes business was consolidated."
+        }
     }
 };
 
@@ -2744,5 +2910,18 @@ export const ironSteelValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 126.0,
         "mcapAtWriting": 1116.0,
         "peAtWriting": 16.2
+    },
+    "Vedanta Iron & Steel": {
+        "netDebt": 2733,
+        "ttmEbitda": 1308,
+        "mcapAtWriting": 10910,
+        "peAtWriting": null,
+        "lossMaking": true
+    },
+    "Kirloskar Ferrous": {
+        "netDebt": 914,
+        "ttmEbitda": 841,
+        "mcapAtWriting": 7484,
+        "peAtWriting": 19.5
     }
 };

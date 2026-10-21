@@ -355,6 +355,205 @@ const profiles: BusinessProfile[] = [
         watch: ["The standalone hospital margin getting back toward 20%.", "MedTech reaching a double-digit margin and cutting inventory.", "Whether the Mumbai hospital goes ahead, and how it is paid for."],
         charts: hospitalsCharts['Shalby'],
     },
+    {
+        "company": "Gaudium IVF",
+        "inShort": [
+            "**A Delhi-based chain of IVF (fertility) clinics** with 8 hubs and 28 smaller centres in 9 states, plus a pharmacy business selling fertility drugs and a small women's hospital business.",
+            "**Good:** high reported success rates, a plan funded by IPO money to add 19 hubs, and a fast-growing, underserved market. **Bad:** customers owed it **₹53cr at March 2026, about half a year's revenue**, which is odd for a clinic where patients pay upfront; only 35% of five years' operating profit came through as cash; ₹34cr of tax demands and a ₹29cr IPO-adviser claim are disputed; Q1 profit fell 42%.",
+            "**Verdict: avoid.** The receivables and cash record do not fit a cash-paid clinic business, and I would need them explained and fixed first."
+        ],
+        "tagline": "An IVF clinic chain founded by Dr Manika Khanna, with hubs in Delhi, Mumbai, Bengaluru, Patna, Ludhiana and Srinagar, and a fertility-pharmacy subsidiary.",
+        "revenue": "₹104cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "IVF treatment",
+                "text": "Fertility treatment packages starting at about ₹2 lakh (average ₹3.5 lakh a patient), egg and embryo freezing and related surgery; 64% of FY26 revenue. It reports a 62% first-attempt pregnancy rate and uses two AI tools (SiD and ERICA) for sperm and embryo selection."
+            },
+            {
+                "name": "Pharmacy",
+                "text": "Fertility drugs and consumables sold to its patients through the subsidiary Gaudium International; 31% of FY26 revenue, at a lower margin (standalone FY26 margin 48% against 36% consolidated)."
+            },
+            {
+                "name": "Hospital and women’s health",
+                "text": "Gynaecology, obstetrics and keyhole surgery; 4% of revenue. A women's hospital in Lucknow (up to ₹15cr) is planned for FY28–FY29."
+            }
+        ],
+        "revenueText": "**IVF was 64% of FY26 consolidated revenue, pharmacy 31% and hospital services 4%.** International patients are about 25–30% of patients. Q1 and Q3 are seasonally weak (summer heat and festivals); Q2 and Q4 are strong. Revenue grew 46% in FY26 but only 9% in Q1 FY27.",
+        "mixes": [
+            {
+                "caption": "Revenue by service, FY26 (annual report)",
+                "parts": [
+                    {
+                        "label": "IVF treatment",
+                        "share": 64.4
+                    },
+                    {
+                        "label": "Pharmacy",
+                        "share": 31.4
+                    },
+                    {
+                        "label": "Hospital",
+                        "share": 4.2
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Couples paying for fertility treatment**, in packages often paid in instalments; about 70% of the package is meant to be collected by egg retrieval.",
+            "**International patients** (25–30%), with referral spokes in Paris, Nigeria and Sydney.",
+            "**Tier 2 and 3 patients** financed through an HDFC Bank loan tie-up."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "IVF needs trained embryologists, clean labs and a good success record, and rules under the ART Act are raising the bar. But many clinics and much larger chains compete, and a new hub costs only about ₹2.5cr."
+        },
+        "moat": "A known brand in Delhi with a doctor-led, standardised process and early use of AI embryology tools. Larger, better-funded chains compete in every city, and the company is still small.",
+        "salesDrivers": [
+            "**New hubs**: 10 in FY27, 8 in FY28 and 1 in FY29 from IPO money; each is said to break even in about three months.",
+            "**Market growth**: about 27.5 million infertile couples but only about 3 lakh IVF cycles a year in India.",
+            "**Regulation**: the ART Act should squeeze small unregistered clinics as states implement it, over about another year.",
+            "**Medical tourism**: IVF in India costs about a fifth of the US price.",
+            "**Season**: Q2 and Q4 are the strong quarters."
+        ],
+        "inputs": "**Doctors, embryologists and nurses, fertility drugs and lab consumables, and rented clinic space.** Q1 FY27 included ₹2.5cr of one-time marketing for the AI tools.",
+        "costEffect": "**Prices are set package by package, so costs are a matter of mix and scale rather than input prices.** The margin depends on how full the hubs are and on marketing: the consolidated operating margin was 41% in FY24–FY25, 36% in FY26 and 12.5% in Q1 FY27 as new hubs and marketing were paid for ahead of revenue.",
+        "competitors": [
+            {
+                "name": "Indira IVF",
+                "note": "India’s largest IVF chain, with far more centres."
+            },
+            {
+                "name": "Nova IVF and Birla Fertility & IVF",
+                "note": "Large, well-funded national chains."
+            },
+            {
+                "name": "Small local clinics",
+                "note": "About 70% of the market is unorganised, according to management."
+            }
+        ],
+        "position": "**A small, listed IVF chain** with 8 hubs and 28 spokes; management calls it the first IVF company listed in India.",
+        "money": "Borrowings were ₹25cr at March 2026 against **₹81cr of IPO money in fixed deposits**; at June cash was ₹8cr against ₹6.7cr of loans (deposits not stated). **Over FY22–FY26 it turned ₹120cr of operating profit into ₹42cr of operating cash.** **Trade receivables were ₹53cr (consolidated) at March 2026**, up from ₹33cr, about 187 days of sales; in the standalone books ₹21cr was over a year old. Income-tax demands of ₹34cr are under appeal, and an IPO adviser claims ₹29cr in arbitration. Promoters hold **71.29%**.",
+        "watch": [
+            "Receivables falling and operating cash rising in line with profit.",
+            "The tax appeals and the Neomile arbitration.",
+            "Q2 and H2 revenue against the 30% growth guidance."
+        ],
+        charts: hospitalsCharts["Gaudium IVF"],
+    },
+    {
+        "company": "Park Medi World",
+        "inShort": [
+            "**A north Indian hospital chain** (Park Hospitals) with 3,960 beds in six north Indian states (Uttarakhand was added in 2026), treating mostly government-scheme patients at affordable prices.",
+            "**Good:** a 27% operating margin, revenue up 19% and profit 35% in Q1 FY27, a low cost per bed (about ₹36–37 lakh, which it says is the lowest among listed peers), almost no term debt, and clear guidance to 5,740 beds by FY28. **Bad:** 77% of revenue comes from government schemes, so customers take about 129 days to pay; occupancy fell to 56% as beds were added; growth now depends on buying hospitals; promoters must sell about 8% by 2028.",
+            "**Verdict: follow.** A well-run, cash-generating chain at about 35 times earnings with 24% guided growth; I would buy on evidence that the acquired hospitals fill up and the payer mix shifts."
+        ],
+        "tagline": "A Delhi-NCR and Punjab-focused hospital group founded by Dr Ajit Gupta, offering super-speciality care at low prices, largely to government-scheme patients.",
+        "revenue": "₹1,679cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Super-speciality hospitals",
+                "text": "About 17 units with 3,960 beds at June 2026, including Gurgaon, Ambala, Mohali, Panchkula, Bhatinda, Agra and, since August, Rudrapur. High-end specialties were 62% of Q1 FY27 revenue: neurology 14.5%, cardiology 12%, urology 11%, oncology 9–10%, joint replacement 9.5%, gastro 7%."
+            },
+            {
+                "name": "Outpatient care",
+                "text": "About 5–6% of revenue; OPD is kept cheap or free as a feeder for admissions, with 2.2 lakh OPD visits in Q1 FY27."
+            }
+        ],
+        "revenueText": "**About 77% of Q1 FY27 revenue came from government insurance schemes** (CGHS, the central government health scheme, is the largest), 10% from private insurers and 13% from cash patients; it aims for 70:30. ARPOB (average revenue per occupied bed per day) was ₹30,444, up 12%; occupancy 56%. Inpatients rose 16% to 26,304 in Q1.",
+        "mixes": [
+            {
+                "caption": "Revenue by payer, Q1 FY27 (company call)",
+                "parts": [
+                    {
+                        "label": "Government schemes",
+                        "share": 77
+                    },
+                    {
+                        "label": "Cash",
+                        "share": 13
+                    },
+                    {
+                        "label": "Private insurance (TPA)",
+                        "share": 10
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by specialty, Q1 FY27 (company call, approximate)",
+                "parts": [
+                    {
+                        "label": "Neurology",
+                        "share": 14.5
+                    },
+                    {
+                        "label": "Cardiology",
+                        "share": 12
+                    },
+                    {
+                        "label": "Urology",
+                        "share": 11
+                    },
+                    {
+                        "label": "Oncology",
+                        "share": 9.5
+                    },
+                    {
+                        "label": "Joint replacement",
+                        "share": 9.5
+                    },
+                    {
+                        "label": "Gastroenterology",
+                        "share": 7
+                    },
+                    {
+                        "label": "Other",
+                        "share": 36.5
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Government scheme patients**, mainly under CGHS and allied central and state schemes, paid by the schemes after claims are processed.",
+            "**Cash patients and private insurers**, 23% of revenue and growing.",
+            "**Patients from smaller towns along the Delhi–Chandigarh and Delhi–Jaipur highways**, including trauma cases."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Hospitals need doctors, approvals and years to build trust, but Park's model of buying existing or distressed hospitals at low cost per bed and filling them with scheme patients can be copied by others with capital."
+        },
+        "moat": "Dense clusters in Gurgaon and the Chandigarh Tricity, full-time salaried doctors, low cost per bed (the lowest among listed peers, by its own claim) and a brand in the affordable segment. The weakness is reliance on government rates and slow-paying schemes, and competition from much larger chains in NCR.",
+        "salesDrivers": [
+            "**Beds**: 3,960 in June to 4,740 by March 2027 and 5,740 by March 2028, mostly via acquisitions (Rudrapur ₹177cr, Zirakpur ₹107cr) at a blended ₹36 lakh a bed.",
+            "**Prices**: CGHS rates rose 12–15% in October 2025; management guides ARPOB growth of 10–12% a year.",
+            "**Occupancy**: 64% in FY26, 56% in Q1 FY27; new hospitals take several quarters to fill.",
+            "**Mix**: more cash and insurance patients and more complex surgery.",
+            "**Government policy**: scheme rates and claim settlement speed."
+        ],
+        "inputs": "**Doctors' and staff salaries, drugs and consumables, and hospital buildings and equipment.** All doctors are full-time employees with performance bonuses and ESOPs.",
+        "costEffect": "**Prices are largely set by government scheme rates, so cost increases are absorbed until rates are revised.** The October 2025 CGHS increase should lift revenue by 7–7.5%, but management plans to spend much of it on equipment rather than let it raise the margin. **What happened:** the operating margin was 40% in FY21, fell to 25% in FY24, and has been 27% since FY25.",
+        "competitors": [
+            {
+                "name": "Yatharth Hospital",
+                "note": "A similar affordable, scheme-heavy chain in Delhi-NCR and Uttar Pradesh."
+            },
+            {
+                "name": "Medanta, Max Healthcare and Fortis",
+                "note": "Premium chains in NCR and Mohali with higher prices and more cash and insurance patients."
+            },
+            {
+                "name": "Local hospitals in Tier 2 towns",
+                "note": "Park often buys them."
+            }
+        ],
+        "position": "**One of north India's larger private hospital chains** by beds, with the largest bed base in the Chandigarh Tricity once Zirakpur is added (company claim).",
+        "money": "Screener shows **₹364cr of borrowings at March 2026**, mostly lease liabilities; term debt was only ₹25.6cr at June 2026, against **₹300cr of fixed deposits**. **Over FY22–FY26 it turned ₹1,868cr of operating profit into ₹1,265cr of operating cash (68%), and free cash was ₹748cr.** Customers took 129 days to pay in FY26 (151–168 days in FY22–FY25). It plans ₹767cr of capex and acquisitions over FY27–FY28 from cash and IPO money. Promoters hold **82.89%** and must come down to 75% by December 2028.",
+        "watch": [
+            "Occupancy and margins at Agra, Panchkula and Rudrapur as they ramp up.",
+            "Debtor days and the shift to cash and insurance patients.",
+            "How the promoters bring their stake down to 75% (share sale or new shares)."
+        ],
+        charts: hospitalsCharts["Park Medi World"],
+    },
 ];
 
 export const hospitalsBusinesses = { intro, profiles };

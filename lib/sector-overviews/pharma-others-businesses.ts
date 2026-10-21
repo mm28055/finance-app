@@ -321,6 +321,288 @@ const profiles: BusinessProfile[] = [
         watch: ["Insurance money, expected by September 2026 (no receipt announced by 30 September), and how much.", "Quarterly revenue jumping toward ₹175–185cr to meet guidance.", "A funding plan after the rejected warrant issue, and any pledge invocation or further fall in promoter holding."],
         charts: pharmaOthersCharts['Sigachi Industries'],
     },
+    {
+        "company": "KRM Ayurveda",
+        "inShort": [
+            "**An SME-listed chain of Ayurvedic hospitals and clinics run under the Karma Ayurveda name**, best known for kidney, liver and arthritis treatment, which also makes and sells its own Ayurvedic medicines through telemedicine and its centres.",
+            "**Good:** FY26 revenue up 33% to ₹102cr, the operating margin up from 11% in FY24 to 30% in FY26 and 37% in Q1 FY27, no debt and a P/E near 20. **Bad:** of ₹68cr of operating profit over FY23–FY26 only about ₹7cr came in as cash, receivables jumped to about ₹20cr and stock sits for 225 days, much of the hospital business depends on government panels, and the business rests on its founder-doctor with no CFO on calls.",
+            "**Verdict: wait.** Cheaper than its larger rival Jeena Sikho, but the profit has not yet turned into cash; I want a year of quarterly results showing it does."
+        ],
+        "tagline": "A Delhi-based Ayurvedic healthcare company with six hospitals (about 223 beds), day-care clinics, telemedicine and its own GMP-certified medicine plant, led by Dr Puneet Dhawan.",
+        "revenue": "₹102cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "Hospitals and day care (services)",
+                "text": "Six NABH-accredited hospitals: Gurgaon (95–100 beds), Pitampura in Delhi (30), two in Jaipur (20 and 30), Udaipur (30) and Lucknow (18). Older Delhi and Gurgaon units run above 90% full, newer ones at 35–40%; about ₹8,400 of revenue per occupied bed per day. 54% of FY26 revenue."
+            },
+            {
+                "name": "Own Ayurvedic medicines (products)",
+                "text": "About 80 products and 300 approved SKUs made in its own plant and sold through telemedicine, clinics and hospitals; an e-commerce launch with 20 products and 15 food supplements was planned. 46% of FY26 revenue (about ₹47cr), roughly flat on the year."
+            },
+            {
+                "name": "Clinics and telemedicine",
+                "text": "Super-specialty clinics (Bangalore, Patna, Mumbai, Lucknow, Noida, and new ones in Dwarka, Janakpuri and Faridabad) feed patients to hospitals; a 500-seat telemedicine centre is planned within 1–1.5 years. Some telemedicine patients are in the US and Europe."
+            }
+        ],
+        "revenueText": "**Services were 54% of FY26 revenue (about ₹54cr) and products 46% (about ₹47cr)**, against 35% and 65% a year earlier, as new hospitals opened; service revenue more than doubled in H2 FY26. The MD said government panels (including a Ministry of Defence empanelment) are a large share of hospital revenue, and corporate panels such as Maruti, Hero and Honda add more. The top treatments are kidney disease, arthritis and liver disease. Q1 FY27 revenue was ₹32.3cr, up 31%.",
+        "mixes": [
+            {
+                "caption": "Revenue by business, FY26 (company call)",
+                "parts": [
+                    {
+                        "label": "Services (hospitals, day care)",
+                        "share": 54
+                    },
+                    {
+                        "label": "Products (own medicines)",
+                        "share": 46
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Patients with chronic kidney, liver, joint, skin and lifestyle conditions**, many coming through its YouTube and social-media content and telemedicine calls.",
+            "**Government and defence health schemes and corporate panels** that pay for in-patient treatment; government bills are paid slowly.",
+            "**Overseas telemedicine patients** in the US and Europe who buy its medicines."
+        ],
+        "difficulty": {
+            "level": "Low",
+            "text": "An Ayurvedic clinic or day-care centre costs only ₹15–20 lakh and a hospital bed ₹2.5–3 lakh to set up, so the barrier is building patient trust and panel approvals, not money or technology."
+        },
+        "moat": "A loyal patient base built through online content, referrals and repeat visits, plus its own medicines and NABH-accredited hospitals that win government and corporate panels. Rivals such as Jeena Sikho and Sat Kartar are adding beds in the same Delhi region, and the brand is closely tied to one doctor.",
+        "salesDrivers": [
+            "**Guidance**: at least 50% revenue growth in FY27, with margins 'higher' than FY26's 30.6%; hospital EBITDA is about 35%.",
+            "**Beds**: from about 223 to 350–500 in FY27 (a 100-bed Gurgaon hospital already agreed) and 1,500–2,000 within three years.",
+            "**Clinics**: 30 new super-specialty clinics in FY27 and 100 over three years, feeding the hospitals.",
+            "**Insurance and panels**: a cashless tie-up with General Insurance Corporation was in its final stages; government panels pay slowly.",
+            "**Luxury wellness**: a 25-bed Delhi centre at ₹15,000–20,000 a day, promised within three months of May 2026."
+        ],
+        "inputs": "**Mainly people and advertising, plus herbs and oils for its own medicines.** The MD put staff costs at about 20% of revenue and advertising at 13–14%; all medicines and oils are made in-house.",
+        "costEffect": "**Mostly insulated from material prices; mix and occupancy drive the margin.** Hospitals earn about 10 points more than medicines because they need less advertising. **What happened:** the operating margin rose from 11–13% in FY23–FY24 to 24% in FY25, 30% in FY26 and 37% in Q1 FY27 as services rose from about a third of revenue to more than half.",
+        "competitors": [
+            {
+                "name": "Jeena Sikho Lifecare",
+                "note": "Far larger listed Ayurvedic hospital chain (about 2,400 beds, ₹801cr revenue) expanding in the same regions and into luxury wellness."
+            },
+            {
+                "name": "Sat Kartar",
+                "note": "Ayurvedic brand planning about 300 beds in Delhi NCR, per an analyst on the call."
+            },
+            {
+                "name": "Independent Ayurvedic clinics",
+                "note": "Thousands of small operators; KRM's edge is its online reach and panel approvals."
+            }
+        ],
+        "position": "**A small Ayurvedic hospital chain** with about 223 beds at 69% occupancy and 41 doctors, roughly a tenth of Jeena Sikho's size.",
+        "money": "Screener shows **no borrowings and ₹38cr of investments** at March 2026, after borrowings fell from ₹31cr to nil (about ₹12cr of it repaid from the IPO); a cash balance is not shown separately. **Over FY23–FY26 it turned ₹68cr of operating profit into only about ₹7cr of operating cash**, and FY26 operating cash was ₹1cr on ₹30cr of operating profit, as receivables rose to ₹20cr (82 days) and inventory to 225 days. Capital needs are small (about ₹2.5–3cr per 100-bed hospital, mostly leased). Promoters hold **69.30%**.",
+        "watch": [
+            "Operating cash flow and receivables in the half-yearly accounts.",
+            "Revenue growth catching up to the 50% target after Q1's 31%.",
+            "Occupancy at the newer Jaipur, Udaipur and Lucknow hospitals rising from 35–40%."
+        ],
+        charts: pharmaOthersCharts["KRM Ayurveda"],
+    },
+    {
+        "company": "Amanta Healthcare",
+        "inShort": [
+            "**A Gujarat maker of IV fluids and other sterile liquids in plastic bottles**, led by SteriPort, a polypropylene IV bottle it says holds 50–60% of its niche, plus small-volume eye drops, inhalation solutions and diluents mostly for export.",
+            "**Good:** plants run at about 96% and a new SteriPort line nearly doubles that platform's capacity from September 2026; 84–119% of operating profit has turned into cash in each of the last five years. **Bad:** revenue has barely grown (₹280cr in FY24, ₹288cr in FY26), return on capital is only 11–12%, net debt is about ₹151cr even after the IPO, and everything is made at one site.",
+            "**Verdict: wait.** At about 41 times earnings the price assumes the new lines lift margins to 25%; I want to see the new SteriPort line selling and the margin rise first."
+        ],
+        "tagline": "An Ahmedabad-based maker of IV fluids, injectable formulations, diluents, eye drops and respiratory solutions in plastic containers, with one plant at Hariyala, Kheda, listed in September 2025.",
+        "revenue": "₹288cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "SteriPort IV bottles",
+                "text": "Two-port polypropylene bottles made by injection stretch blow moulding (ISBM), which it says it brought to India first, used in intensive care, cancer, children's and anaesthesia care; about 44% of revenue. Capacity 6.6 crore bottles at 91% use, rising to about 12 crore with Line 3."
+            },
+            {
+                "name": "Conventional IV fluids and infusion formulations (LVP)",
+                "text": "Saline, dextrose, Ringer lactate and infusions such as paracetamol, ciprofloxacin, metronidazole and fluconazole in blow-fill-seal and single-port bottles; 5.7 crore units of capacity."
+            },
+            {
+                "name": "Small-volume parenterals (SVP)",
+                "text": "Diluents (water for injection), injections, eye drops, nebuliser solutions and irrigation fluids in 2–100 ml blow-fill-seal packs; about 20% of FY26 revenue at a 22–27% margin, 90% exported, more than 60% of that to advanced markets such as the UK and Ireland. A new line is due in Q4 FY27."
+            }
+        ],
+        "revenueText": "By therapy, **fluid therapy was 63% of revenue**, formulations 17%, diluents and injectables 9%, eye drops 2%, respiratory 5% and irrigation 5%. **About 68% of revenue is domestic**, sold as branded generics to hospitals through 320+ distributors, and 32% exported to 21 countries, with 47 products registered in 120 jurisdictions. SteriPort is about 42–44% of revenue. Q1 FY27 revenue was ₹69cr, up 5%, on unchanged capacity.",
+        "mixes": [
+            {
+                "caption": "Revenue by therapy, FY26 (company presentation)",
+                "parts": [
+                    {
+                        "label": "Fluid therapy (IV fluids)",
+                        "share": 63
+                    },
+                    {
+                        "label": "Formulations",
+                        "share": 17
+                    },
+                    {
+                        "label": "Diluents and injectables",
+                        "share": 9
+                    },
+                    {
+                        "label": "Respiratory",
+                        "share": 5
+                    },
+                    {
+                        "label": "Irrigation",
+                        "share": 5
+                    },
+                    {
+                        "label": "Ophthalmic",
+                        "share": 2
+                    }
+                ],
+                "note": "Shares as shown in the presentation; they add to 101 because of rounding."
+            },
+            {
+                "caption": "Domestic vs export, FY26 (annual report)",
+                "parts": [
+                    {
+                        "label": "India",
+                        "share": 68
+                    },
+                    {
+                        "label": "Exports",
+                        "share": 32
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Indian hospitals**, especially intensive-care, cancer, children's and anaesthesia departments, reached through 320+ distributors and stockists and about 100 sales staff.",
+            "**Export buyers in the UK and Ireland** (more than 20 years of presence) and in emerging markets such as the Philippines, Cambodia, Sudan and Zimbabwe; earlier it sold diluents in Australia and Canada.",
+            "**Product-partnering customers** in South Korea, Thailand and other markets."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Sterile liquids need aseptic plants, long quarantine and validation, and regulatory approvals, and ISBM bottles need specialised machines. But IV fluids are a commodity with many Indian makers, and the advanced-market ambitions need new PIC/S approvals."
+        },
+        "moat": "A head start in polypropylene SteriPort bottles that hospital specialists prefer, a brand built over 30 years, and plants running near full. The weakness is price competition from large multinationals and Indian rivals in basic IV fluids, and dependence on one site and one product platform.",
+        "salesDrivers": [
+            "**Capacity**: SteriPort Line 3 (₹90cr) adds about ₹110–120cr of annual revenue at full use within 12 months; the SVP line (₹30cr) starts in Q4 FY27.",
+            "**Guidance**: FY27 revenue about ₹370cr and FY28 about ₹425cr, with a 25–26% EBITDA margin (about ₹116cr in FY28) and interest of ₹21cr in FY27 and ₹18–19cr in FY28.",
+            "**Solar power**: a 10.8 MW captive plant (₹34.8cr, mostly debt) commissioned in June 2026 saves about ₹9cr a year.",
+            "**Product pipeline**: 20 inhalation, eye-drop and diluent products for the UK, EU, Australia and Canada; the first inhalation product launches around mid-September 2026.",
+            "**Polymer prices** and hospital demand; the domestic SteriPort market has no regulatory hurdles."
+        ],
+        "inputs": "**Plastics are the main input**: LDPE (27.5% of purchases), two-port closures (18.5%) and polypropylene (12.5%), plus drug ingredients, WFI and power. The top 10 suppliers provide 76% of materials. Materials were about 34% of FY26 sales.",
+        "costEffect": "**Passed on with a lag of a quarter or two.** In 2026 polymer prices jumped 70–80% for about two months; the hit was about ₹2.25 a bottle, and it raised prices by about ₹1.50, which it expects to hold even as polymer eases. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 3 points (21% to 18%). **What happened:** the operating margin has stayed between 19% and 26% every quarter since mid-2024 and was 21% in Q1 FY27.",
+        "competitors": [
+            {
+                "name": "Otsuka (Japan) and Fresenius Kabi (Germany)",
+                "note": "Multinationals active in plastic IV containers with special features; the main competition for SteriPort in hospitals."
+            },
+            {
+                "name": "B. Braun",
+                "note": "Strong but mainly in major cities."
+            },
+            {
+                "name": "Aculife and other Indian IV-fluid makers",
+                "note": "Regional presence; compete mostly on price in basic fluids."
+            }
+        ],
+        "position": "**By its own account, 50–60% of India's polypropylene IV bottle market**, with plants running at about 96% across LVP, SVP and SteriPort lines.",
+        "money": "Screener shows **₹244cr of borrowings** at March 2026 against about ₹93cr of cash and fixed deposits (annual report), so **net debt of about ₹151cr**, after a ₹126cr all-new-share IPO in September 2025 that funds the new lines; it also repaid redeemable preference shares in September 2025. Debt-to-equity fell from 3.4 in FY23 to 1.06 in FY26, and management expects to cut debt by ₹30–35cr a year. **Over FY22–FY26 it turned ₹283cr of operating profit into ₹258cr of operating cash**, though free cash was −₹32cr in FY26 because of capex. Stock is high at about 530 days on Screener's measure, partly because sterile goods sit in quarantine for 15–30 days. Promoters hold **63.80%**.",
+        "watch": [
+            "SteriPort Line 3 selling out within a year, as promised.",
+            "The EBITDA margin moving toward 25% in H2 FY27.",
+            "Net debt falling by ₹30–35cr a year."
+        ],
+        charts: pharmaOthersCharts["Amanta Healthcare"],
+    },
+    {
+        "company": "Influx Healthtech",
+        "inShort": [
+            "**An SME-listed contract manufacturer in Palghar, near Mumbai, that makes nutraceuticals** (tablets, capsules, powders, gummies, protein bars), plus cosmetics, Ayurvedic, pet-care and home-care products, for 718 brand owners such as Novus Lifesciences.",
+            "**Good:** FY26 revenue up 40% to ₹147cr at a 20% margin, no debt, about ₹25cr of cash and a plant 2.5 times larger coming. **Bad:** operating cash flow was only ₹4cr in FY26 against ₹30cr of operating profit, the top 10 clients take about half of sales, and the founder family rents premises to the company, sold it ₹2.19cr of assets and is linked to a packaging supplier.",
+            "**Verdict: wait.** The growth is real and the price (about 32 times earnings) is not extreme, but I want H1 FY27 to show the new plant running and profit turning back into cash."
+        ],
+        "tagline": "A Mumbai-based contract developer and manufacturer (CDMO) of nutraceuticals, cosmetics, Ayurvedic, pet-care and home-care products, started as a small plant in 2003 and listed on NSE Emerge in June 2025.",
+        "revenue": "₹147cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "Nutraceuticals",
+                "text": "Tablets and powders (about 30% of revenue), capsules (15–20%), gummies (15–20%), protein and snack bars (demand more than doubled), plant protein powders and a single-dose 'Quick Snap' format; ₹131cr in FY26, up 40%. Plant runs at about 72%."
+            },
+            {
+                "name": "Cosmetics",
+                "text": "Creams, lotions and aerosols for brands such as SkinInspired; ₹7.4cr in FY26, up 16%, at a 40%+ gross margin; plant about 55% used."
+            },
+            {
+                "name": "Ayurvedic, veterinary and home care",
+                "text": "Ayurvedic products ₹6.1cr (up 89%); pet supplements and food plus home care ₹1.4cr; a 1,000 kg-an-hour pet-food extrusion line has been ordered."
+            },
+            {
+                "name": "Ready-to-drink beverages (new)",
+                "text": "A new subsidiary, Olahey Wellness, is building canning, carbonated and Tetra Pak lines (about 10,000 bottles an hour) for functional drinks and retort-based liquid protein."
+            }
+        ],
+        "revenueText": "**Nutraceuticals were ₹131cr (89%) of FY26 revenue**, cosmetics ₹7.4cr (5%), Ayurvedic ₹6.1cr (4%) and veterinary and home care ₹1.4cr (1%). It served 718 clients with 98% retention and about 3,400 products, but **the top 10 clients gave about 49% of revenue** (investor presentation); Novus Lifesciences is the largest and Octavius second. Exports are about 15–20%, growing 10–15% a year, with approvals in Tanzania and Nigeria and a new UAE office. Revenue was ₹80.1cr in H2 FY26, up 41%.",
+        "mixes": [
+            {
+                "caption": "Revenue by segment, FY26 (company call)",
+                "parts": [
+                    {
+                        "label": "Nutraceuticals",
+                        "share": 89
+                    },
+                    {
+                        "label": "Cosmetics",
+                        "share": 5
+                    },
+                    {
+                        "label": "Ayurvedic",
+                        "share": 4
+                    },
+                    {
+                        "label": "Veterinary and home care",
+                        "share": 1
+                    }
+                ],
+                "note": "Shares computed from the segment revenues the MD gave; they add to 99 because of rounding."
+            }
+        ],
+        "customers": [
+            "**Supplement and wellness brands** (D2C and established), led by Novus Lifesciences and Octavius, with newer clients such as Nykaa (apple cider vinegar), Aristo and Khandelwal Labs; it makes protein brands sold on Amazon such as Plantigo.",
+            "**Cosmetic brands**, including SkinInspired.",
+            "**Export distributors** in Africa (Tanzania, Nigeria, Kenya) and the UAE; no government business."
+        ],
+        "difficulty": {
+            "level": "Low",
+            "text": "Contract manufacturing of supplements and cosmetics needs GMP plants and food (FSSAI) licences, not patents or complex chemistry, and many Indian firms do it. Its edge is breadth: thousands of SKUs, small and large batch sizes, and in-house regulatory, design and printing services."
+        },
+        "moat": "Breadth and service keep 98% of clients, and small clients that grow (as Novus did) become big ones. But clients can move production, big clients squeeze margins, and there are no long-term contracts, only three-to-twelve-month forecasts.",
+        "salesDrivers": [
+            "**Guidance**: at least 25–30% revenue growth in FY27 (the MD aims for 30–40%), EBITDA margin of 20–22% and net margin near 14%; ₹450–500cr of revenue by FY29.",
+            "**New nutraceutical plant**: 75,000 sq ft, 2.5 times current capacity, due July–August 2026, adding ₹40–50cr in H2 FY27 and aiming for US FDA 21 CFR standards.",
+            "**Clients' growth**: big clients such as Novus are waiting for the new plant to expand abroad; protein bars and gummies are growing fastest.",
+            "**Exports**: product registrations in Tanzania (14–15 products), Nigeria and Kenya, and a UAE office.",
+            "**New lines**: RTD beverages (Olahey) and pet food extrusion."
+        ],
+        "inputs": "**Vitamins, minerals, proteins, herbal extracts, gelatin and solvents, plus packaging (foils, PVC, laminates, bottles).** Materials were 59% of FY26 sales and staff 8%; some packaging is bought from a related company (₹3.15cr in FY26).",
+        "costEffect": "**Passed on through cost-plus pricing, with a lag of a few months.** In H2 FY26 packaging and solvent costs rose with the war and gross margin fell from about 44% in H1 to 39% in H2; bigger clients also pay lower margins. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 6 points (20% to 14%). **What happened:** the operating margin rose from 11% in FY22 to 20% in FY25–FY26, but slipped to 19% in H2 FY26 from 22% in H1 as staff were hired ahead of the new plant.",
+        "competitors": [
+            {
+                "name": "Large Indian nutraceutical contract makers",
+                "note": "Several bigger CDMOs compete for the same brand owners; management names none."
+            },
+            {
+                "name": "Brands making in-house",
+                "note": "Larger brands can build their own plants or move to cheaper suppliers."
+            }
+        ],
+        "position": "**A small but fast-growing Indian supplement contract manufacturer**, with four plants in Palghar and 718 clients; nutraceutical capacity about 72% used before the new plant.",
+        "money": "**No debt and about ₹25cr of cash** at March 2026 (company), after a ₹58.6cr SME IPO at ₹96 a share in June 2025 (₹48cr new money, ₹10.6cr sold by the MD). FY26 capex was ₹25cr; ₹13.8cr of IPO capex money had been used by March 2026. **Over FY22–FY26 it turned ₹85cr of operating profit into ₹31cr of operating cash (36%)**, and only ₹4cr in FY26 as receivables and inventory rose; free cash was −₹21cr. Management says no debt or new equity is needed. Promoters hold **73.53%**.",
+        "watch": [
+            "The new plant licensed and producing, and H2 FY27 revenue showing its ₹40–50cr.",
+            "Operating cash flow recovering from ₹4cr in FY26.",
+            "Related-party payments (rent, assets, packaging) not growing."
+        ],
+        charts: pharmaOthersCharts["Influx Healthtech"],
+    },
 ];
 
 export const pharmaOthersBusinesses = { intro, profiles };

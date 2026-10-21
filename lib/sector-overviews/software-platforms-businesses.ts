@@ -249,6 +249,106 @@ const profiles: BusinessProfile[] = [
         watch: ["GPU rental prices after Nvidia's next chip generation.", "Utilisation once the second B200 lot arrives.", "Debt against run-rate revenue, and any disclosure of how much revenue is under contract."],
         charts: softwareCharts['E2E Networks'],
     },
+    {
+        "company": "ESDS Software",
+        "inShort": [
+            "**Rents out cloud computing, data-centre space and managed IT services** from five data centres (Nashik, Navi Mumbai, Bengaluru, Mohali, Noida) to about 2,500 government, bank and enterprise customers, and is moving into renting AI chips (GPUs).",
+            "**Good:** revenue grew from ₹208cr in FY23 to ₹472cr in FY26 at a **50% operating margin**, and it has a ₹3,000cr domestic order book. **Bad:** FY26 included an ₹85cr one-off; it has committed to pay SharonAI about **US$1.25bn over five years** for GPU capacity it resells to one overseas client at a thin 15–20% profit margin; and the shares trade at about **129 times earnings**.",
+            "**Verdict: pass.** A real and growing business, but the price already assumes the risky GPU deal works, and the deal's obligations dwarf the company's ₹544cr net worth."
+        ],
+        "tagline": "A Nashik-based cloud, data-centre and managed-services company founded by Piyush Somani in 2005, listed in September 2026, now building an AI-computing business in India and abroad.",
+        "revenue": "₹472cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Infrastructure as a service",
+                "text": "Its eNlight cloud, community cloud for government and banks, colocation in its five Tier III data centres (75,266 sq ft), and GPU-as-a-service. **43.9% of FY26 revenue, 51.2% in Q1 FY27**; margins above 50%."
+            },
+            {
+                "name": "Managed services",
+                "text": "Running customers' servers, databases (including SAP), security operations and backups. **41.2% of FY26 revenue** (including an ₹85cr one-off design fee for the Australian AI data centre), 31.3% in Q1 FY27."
+            },
+            {
+                "name": "Software as a service",
+                "text": "SWARAJ security and monitoring tools, eMagic, government and lending software and a low-code platform; **14.9% of FY26 revenue**, 17.5% in Q1 FY27, the most profitable line."
+            }
+        ],
+        "revenueText": "**By customer type in FY26, enterprises were 55.1% of revenue, government 27.4% and banks and financial firms 17.5%**, against 47.7%, 34.0% and 18.3% in FY24. It had 2,501 customers in FY26, revenue retention of 94.9%, and existing customers gave 72.6% of revenue. Q1 FY27 revenue was ₹134cr, up 7% but down 20% from Q4 because the ₹85cr one-off did not recur. From Q3 FY27 the Australian GPU contract will dominate reported revenue.",
+        "mixes": [
+            {
+                "caption": "Revenue by segment, FY26 (company, via broker)",
+                "parts": [
+                    {
+                        "label": "Infrastructure (cloud, data centre, GPU)",
+                        "share": 44
+                    },
+                    {
+                        "label": "Managed services",
+                        "share": 41
+                    },
+                    {
+                        "label": "Software (SaaS)",
+                        "share": 15
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by customer type, FY26 (company, via broker)",
+                "parts": [
+                    {
+                        "label": "Enterprise",
+                        "share": 55
+                    },
+                    {
+                        "label": "Government",
+                        "share": 27
+                    },
+                    {
+                        "label": "Banks and finance",
+                        "share": 18
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**About 2,500 Indian enterprises, government bodies and banks** using its cloud, colocation and managed services; government work tends to pay slowly (debtor days of 128–183 over FY22–FY26).",
+            "**One overseas customer** for the 8,200-GPU cluster in Australia, which has paid about ₹1,177cr in advance; the capacity itself is bought from SharonAI."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "Running certified, high-uptime data centres and a home-grown cloud for regulated customers takes years of approvals (MeitY empanelment, banking security standards). The GPU resale business is easier to copy: it needs capital and supplier access more than know-how."
+        },
+        "moat": "Government and bank empanelments, a sovereign 'SWARAJ' cloud and sticky managed-service contracts give it a defensible domestic niche. Against hyperscalers (AWS, Azure) and big Indian data-centre owners it is small, and in GPU renting it is a middleman.",
+        "salesDrivers": [
+            "**India's cloud and data-sovereignty push**: government and banks moving workloads to local clouds; the domestic order book is about ₹3,000cr over three years, growing 30–40% a year, management says.",
+            "**AI computing**: the Australian 8,200-GPU cluster (billing from Q3 FY27) and an international pipeline it puts above 50,000 GPUs; its own GPUs rise to about 1,500 by early 2027.",
+            "**GPU rental prices** (US$5–6 per GPU-hour, per management) and global chip shortages.",
+            "**One-off design and build fees**, such as the ₹85cr booked in FY26, which make quarters lumpy."
+        ],
+        "inputs": "**Servers, GPUs, storage and networking equipment**, data-centre power and cooling, and engineers. For the Australian deal the main cost is SharonAI's fee for managed GPU capacity (about US$250m a year on the announced contract value).",
+        "costEffect": "**Most costs are fixed (equipment depreciation, power, staff), so margins rise with utilisation**: operating margin went from 23% in FY23 to 50% in FY26. The Australian GPU deal is a resale at a targeted 15–20% net margin, so as it starts billing the company-wide margin will fall sharply even if profit rises. Power prices and GPU costs are the main swing factors; customer prices are set in multi-year contracts.",
+        "competitors": [
+            {
+                "name": "AWS, Microsoft Azure, Google Cloud",
+                "note": "Dominant public clouds; ESDS competes on local hosting, price and service for regulated customers."
+            },
+            {
+                "name": "Sify, CtrlS, Yotta, NTT",
+                "note": "Indian data-centre and cloud operators, mostly far larger in capacity."
+            },
+            {
+                "name": "E2E Networks",
+                "note": "Listed Indian GPU cloud rival; management says ESDS is one of two Indian firms offering the full range from GPU cloud to software."
+            }
+        ],
+        "position": "**A mid-sized Indian cloud and managed-services provider** with five Tier III data centres and 2,501 customers; small next to hyperscalers and the large Indian data-centre builders.",
+        "money": "Screener shows **₹96cr of borrowings** at March 2026 and the company held about ₹1,253cr of cash, almost all of it the **₹1,177cr advance from the overseas GPU customer**, which is owed back as service; excluding it, net debt was about ₹20cr. FY26 operating cash of ₹1,368cr is inflated by that advance; without it, five-year operating cash was about 81% of operating profit. The **September 2026 IPO raised ₹720cr of new money at ₹429** (listed at ₹757), mostly for servers, GPUs and data-centre equipment. Management plans about ₹3,000cr of capex including the GPU build-out, funded by customer advances, debt and IPO money in roughly equal parts. The SharonAI contract obliges it to post US$140m of letters of credit or guarantees and cannot be cancelled for 36 months. Promoters hold **39.46%**, with no pledge shown. It lost money in FY22 and FY23.",
+        "watch": [
+            "The Australian cluster billing on time from Q3 FY27, and how much profit it actually adds.",
+            "Whether the overseas customer keeps paying; ESDS owes SharonAI regardless for three years.",
+            "Domestic revenue growing 30% or more without the one-offs."
+        ],
+        charts: softwareCharts["ESDS Software"],
+    },
 ];
 
 export const softwarePlatformsBusinesses = { intro, profiles };

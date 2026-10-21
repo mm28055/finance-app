@@ -1443,6 +1443,106 @@ export const cablesCharts: Record<string, ProfileCharts> = {
             }
         ],
         "statsAsOf": "20 Oct 2026"
+    },
+    "Vidya Wires": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "30.3x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "21.5x",
+                "note": "Market value plus net debt, ÷ operating profit over the last four quarters (₹89cr)."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹12cr",
+                "note": "Borrowings (₹85cr) minus about ₹73cr of cash (data provider), March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "4.7%"
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "−1%",
+                "note": "Operating cash ÷ operating profit, FY22–FY26; 70–80% is healthy."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 93.8
+                },
+                {
+                    "label": "Staff, power and other costs",
+                    "share": 1.5
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 4.7
+                }
+            ],
+            "note": "Materials from FY26 gross profit (data provider), which may include some processing costs; operating profit from Screener; the rest is the balance."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                37,
+                40
+            ],
+            "inventoryDays": [
+                25,
+                28
+            ],
+            "payableDays": [
+                4,
+                5
+            ],
+            "cycleDays": [
+                59,
+                64
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                31,
+                36,
+                45,
+                64,
+                86
+            ],
+            "ocf": [
+                -16,
+                38,
+                2,
+                -17,
+                -9
+            ],
+            "fcf": [
+                -22,
+                29,
+                -2,
+                -24,
+                -111
+            ]
+        }
     }
 };
 
@@ -1507,5 +1607,11 @@ export const cablesValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 829.0,
         "mcapAtWriting": 45610.0,
         "peAtWriting": 193.0
+    },
+    "Vidya Wires": {
+        "netDebt": 12,
+        "ttmEbitda": 89,
+        "mcapAtWriting": 1898,
+        "peAtWriting": 30.3
     }
 };

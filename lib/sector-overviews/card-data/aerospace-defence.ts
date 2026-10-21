@@ -2709,6 +2709,102 @@ export const aerospaceDefenceCharts: Record<string, ProfileCharts> = {
             "inventory5y": -9,
             "payables5y": 5
         }
+    },
+    "Apsis Aerocom": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "92.9x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "58x",
+                "note": "Market value less net cash, ÷ operating profit over the last two half-years (₹11.5cr)."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹32cr",
+                "note": "About ₹36.5cr of cash (data provider) minus ₹4.5cr of borrowings, March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "37.5%"
+            },
+            {
+                "label": "Order book",
+                "value": "₹40.5cr",
+                "note": "June 2026, about 1.3 times FY26 revenue."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 33
+                },
+                {
+                    "label": "Staff, power and other costs",
+                    "share": 29.5
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 37.5
+                }
+            ],
+            "note": "Materials from FY26 gross profit (data provider); operating profit from Screener; the rest is the balance."
+        },
+        "workingCapital": {
+            "fromYear": "FY23",
+            "toYear": "FY26",
+            "debtorDays": [
+                63,
+                48
+            ],
+            "inventoryDays": [
+                88,
+                151
+            ],
+            "payableDays": [
+                234,
+                173
+            ],
+            "cycleDays": [
+                -83,
+                26
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                1.9,
+                4.2,
+                10.2,
+                11.5
+            ],
+            "ocf": [
+                1.3,
+                5.8,
+                0.05,
+                7
+            ],
+            "fcf": [
+                0.8,
+                0.9,
+                -3.4,
+                0.9
+            ]
+        }
     }
 };
 
@@ -2822,5 +2918,11 @@ export const aerospaceDefenceValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 7.1,
         "mcapAtWriting": 164.0,
         "peAtWriting": 30.7
+    },
+    "Apsis Aerocom": {
+        "netDebt": -32,
+        "ttmEbitda": 11.5,
+        "mcapAtWriting": 700,
+        "peAtWriting": 92.9
     }
 };

@@ -573,6 +573,418 @@ const profiles: BusinessProfile[] = [
         watch: ["RetailerShakti turning EBITDA-positive in Q3 FY27.", "Working capital back below 20 days.", "The demerger, and what stays in the treasury."],
         charts: retailCharts['Sastasundar Ventures'],
     },
+    {
+        "company": "Patel Retail",
+        "inShort": [
+            "**A Mumbai-suburb supermarket chain plus a food-processing and export business**: 54 Patel's R Mart stores in Thane and Raigad districts, and plants in Kutch that clean and pack pulses, spices and peanuts, sold under its own brands and exported to 35+ countries.",
+            "**Good:** revenue up 28% in FY26 and 70% in Q1, profit up 55% in FY26, debt down after the IPO, and the shares at about 19 times earnings. **Bad:** operating cash was −₹83cr in FY26 as stock days rose from 31 to 109 in four years, the margin fell to 5–6% in the last two quarters, stores are only about a third of revenue, and over FY22–FY26 it turned ₹251cr of operating profit into almost no operating cash.",
+            "**Verdict: wait.** Cheap for its growth, but the growth so far has gone into stock rather than cash; wait for H1 FY27 to show positive operating cash and the margin back near 7–8%."
+        ],
+        "tagline": "A family-run value supermarket chain in Mumbai's outer suburbs that also processes, brands and exports pulses and spices from Kutch, Gujarat.",
+        "revenue": "₹1,048cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "Patel's R Mart supermarkets",
+                "text": "54 value supermarkets (September 2026) in the outer suburbs of Mumbai, from Ambernath and Kalyan to Raigad, with over 10,000 items: groceries, packaged goods, household items and about 8–9% clothing and general goods. A store sells ₹80–90 lakh a month on average, bills run ₹500–1,000, and online sales were only about ₹50 lakh in Q1 FY27."
+            },
+            {
+                "name": "Processing and own brands",
+                "text": "Two units in Kutch and a site at Ambernath clean, grade and pack pulses, peanuts, cumin, coriander and spices, running at 50–55% of capacity. Own brands: Indian Chaska (spices, now in 8 states and one union territory, with 23 whole spices added in October 2026), Patel Fresh (pulses, dry fruit), Patel Essentials (household) and Blue Nation (menswear)."
+            },
+            {
+                "name": "Exports and bulk trading",
+                "text": "Processed food and farm produce sold abroad (Sri Lanka, UAE, UK, Saudi Arabia, USA and Canada among others) and in bulk at home. Exports were about 40% of Q1 FY27 revenue by the CFO's estimate. Sugar exports were ₹309cr in FY23 and nil in FY25 after India restricted them."
+            }
+        ],
+        "revenueText": "**Retail was 45% of FY25 revenue and manufacturing, processing and trading 54%** (prospectus). Since then the export and processing side has grown faster: in Q1 FY27 store sales were about ₹101cr of ₹310cr (roughly a third) and exports about 40%, which the CFO said bring 35–40% of profit. Own brands were 17.55% of store sales, 37% of exports and 45% of domestic distribution. **The ten largest customers were 15.7% of FY25 revenue**, down from 32.2% in FY23 when bulk sugar exports were large. All stores are in Maharashtra's Thane and Raigad districts.",
+        "mixes": [
+            {
+                "caption": "Revenue by segment, FY25 (prospectus; about 1% not split)",
+                "parts": [
+                    {
+                        "label": "Retail: food",
+                        "share": 33
+                    },
+                    {
+                        "label": "Retail: non-food FMCG",
+                        "share": 9
+                    },
+                    {
+                        "label": "Retail: general goods and clothing",
+                        "share": 3
+                    },
+                    {
+                        "label": "Manufacturing and processing",
+                        "share": 44
+                    },
+                    {
+                        "label": "Bulk trading",
+                        "share": 10
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by business, Q1 FY27 (approximate, from the Q1 FY27 call)",
+                "parts": [
+                    {
+                        "label": "Exports",
+                        "share": 40
+                    },
+                    {
+                        "label": "Retail stores",
+                        "share": 33
+                    },
+                    {
+                        "label": "Domestic manufacturing and distribution",
+                        "share": 27
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Households in Mumbai's outer suburbs and small towns** (Ambernath, Badlapur, Kalyan, Titwala, Rasayani, Uran), buying staples, which are over half of store sales.",
+            "**Overseas importers and wholesalers** in 35+ countries buying processed pulses, spices and produce; the top ten customers were 15.7% of FY25 revenue.",
+            "**Shops and distributors** carrying Indian Chaska and Patel Fresh in Maharashtra, Gujarat and newer states such as Madhya Pradesh (₹10–12 lakh a month so far)."
+        ],
+        "difficulty": {
+            "level": "Low",
+            "text": "Grocery retail and pulse or spice processing are easy to enter and crowded. The edge is local: stores in outer suburbs where DMart and Reliance are thinner, a central warehouse at Ambernath, and its own processing for cheaper own-brand goods."
+        },
+        "moat": "Narrow. Clustering stores in under-served outer suburbs gives it cheaper sites and repeat local shoppers, and owning the processing lets own brands earn more than bought-in goods. But the stores are only about a third of revenue, all in one region; the export and processing side is a commodity business with thin margins, and its brands have little pull outside its own shelves yet.",
+        "salesDrivers": [
+            "**New stores**: 8–10 in FY27 and about 71 by March 2028 (Acuité); a new store costs ₹5,000–6,000 per sq ft, breaks even at the operating level from the start and pays back in about 24 months, by management's account.",
+            "**Export and processing orders**: lumpy and tied to commodity prices; they drove most of the 70% Q1 jump and swing with government export rules (sugar exports went to nil in FY25).",
+            "**Own brands**: 17.55% of store sales; Indian Chaska is moving into new states and categories, with quick-commerce combo packs for Blinkit and Zepto still being negotiated in August.",
+            "**Plant use**: from 50–55% now to 80–82% by FY27–FY28, as guided on 24 August.",
+            "**Guidance**: about 20% revenue growth in FY27 (June) and an 8–9% margin on management's basis."
+        ],
+        "inputs": "**Farm produce and goods for resale**: pulses, peanuts, cumin, coriander and other spices bought from farmers and markets, plus branded goods for the stores. In FY26 materials and goods were 83% of sales (after a ₹76cr stock build), staff 4% and other costs 6%, leaving 7% operating profit. Store leases are a further cost, mostly shown below operating profit.",
+        "costEffect": "**Partly passed on, with a lag; commodity swings set the quarter.** The stores can reprice quickly, but export and processing orders are priced when booked, and management said Q1 prices did not fully cover a jump in raw material costs. **Rule of thumb:** a 10% rise in materials not passed on would cut the margin by about 8 points (7% to a loss). **What happened:** there is no single input index to chart. The operating margin rose from 2.9% in FY22 to 7% in FY24–FY26 (Screener) as it moved away from low-margin bulk trading after the sugar export curbs. Quarterly it went from 8.3% in Q1 FY26 to 5.2% in Q4 FY26 and 6.1% in Q1 FY27 as the export share rose.",
+        "competitors": [
+            {
+                "name": "DMart (Avenue Supermarts)",
+                "note": "The low-price supermarket leader, with a similar store count in the same region at the DRHP (33 against Patel's 31) and far deeper pockets."
+            },
+            {
+                "name": "Reliance Retail and Vishal Mega Mart",
+                "note": "Large national chains; Reliance had 39 stores in the same region at the DRHP."
+            },
+            {
+                "name": "Kirana shops and quick commerce",
+                "note": "Local grocers, and Blinkit, Zepto and Swiggy Instamart, which are building their own private labels."
+            },
+            {
+                "name": "Agro processors and exporters such as KN Agri Resources",
+                "note": "Thin-margin commodity players competing for the same export orders."
+            }
+        ],
+        "position": "**A regional value supermarket chain** with 54 stores in Thane and Raigad districts and about 2.4 lakh sq ft of retail space, plus a processing and export arm that is larger than the stores.",
+        "money": "Borrowings were **₹163cr at March 2026** against ₹23cr of cash and liquid investments, so **net debt was about ₹140cr** (Acuité; Screener's borrowings agree). The August 2025 IPO raised ₹217cr of new money, about ₹59cr for repaying loans and ₹109cr for working capital, lifting net worth to ₹364cr. But **FY26 operating cash was −₹83cr** as stock rose from ₹144cr to ₹260cr and receivables from ₹117cr to ₹162cr; over FY22–FY26 operating cash added up to about −₹2cr against ₹251cr of operating profit, and free cash to about −₹67cr. Bank lines were about 97% used in the six months to August 2026. Acuité upgraded it to BBB+/A2 on 1 October 2026. No dividend has been paid, and the shares trade below the ₹255 IPO price. Promoters hold **70.00%**, unchanged since listing, with no pledge reported.",
+        "watch": [
+            "H1 FY27 operating cash turning positive, with stock days falling from 109.",
+            "The margin back above 7% on Screener's basis as export orders normalise.",
+            "Store openings on track for 8–10 in FY27, and own brands rising above 17.5% of store sales."
+        ],
+        charts: retailCharts["Patel Retail"],
+    },
+    {
+        "company": "Purple Style Labs",
+        "inShort": [
+            "**Runs Pernia's Pop-Up Shop**, India's large multi-designer luxury fashion platform (website plus big experience centres in Mumbai, Delhi, Hyderabad, London and, since March 2026, Madison Avenue in New York), selling bridal and occasion wear from about 1,100 Indian designers.",
+            "**Good:** platform sales (GMV) rose from ₹23cr in FY19 to ₹722cr in FY26 and 45% in Q1 FY27, and the average order is now ₹86,000. **Bad:** it lost **₹285cr in FY26** on ₹558cr of sales, has never had a positive operating cash flow in four years, carried ₹784cr of borrowings and leases at March 2026 against negative net worth, and the founder's stake is only 24%.",
+            "**Verdict: avoid.** Store rents, interest and depreciation swallow far more than the business earns; avoid until it shows it can make money before the IPO cash runs out."
+        ],
+        "tagline": "A Mumbai-based luxury fashion retailer, founded in 2015 by Abhishek Agarwal, that owns Pernia's Pop-Up Shop and sells designer clothes and jewellery online and through large stores in India, London and New York.",
+        "revenue": "₹558cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Women's occasion and bridal wear",
+                "text": "The core: **77.7% of FY26 GMV** was womenswear. Pieces above ₹1 lakh brought ₹312cr of GMV in FY26; the cheaper (below ₹35,000) range was cut back to ₹86cr."
+            },
+            {
+                "name": "Menswear, jewellery, accessories and kids",
+                "text": "Menswear brought ₹132cr of GMV in FY26, up from ₹2cr in FY21. Also owns the Wendell Rodricks and Hemant Trivedi labels."
+            },
+            {
+                "name": "Experience centres and website",
+                "text": "12 centres in India (large stores of 20,000–60,000 sq ft in Mumbai and Delhi) plus London and New York, with the website listing about 2 lakh designer pieces. Store orders average about 2.5 times online orders."
+            }
+        ],
+        "revenueText": "**FY26 GMV (the value of goods sold on the platform) was ₹722cr**, against filed revenue of ₹558cr; the gap is mainly customer advances and how consignment sales are booked. **Mumbai (₹205cr) and Delhi (₹166cr) were just over half of GMV**, and the US ₹77cr (down from ₹138cr in FY24 after cheap online orders were cut). About 50,000 customers brought ₹702cr of the ₹722cr. In Q1 FY27 GMV was ₹193cr (up from ₹133cr) and revenue ₹119cr (up 13%).",
+        "mixes": [
+            {
+                "caption": "GMV by category, FY26 (approximate, from the Q1 FY27 call)",
+                "parts": [
+                    {
+                        "label": "Women's wear above ₹1 lakh",
+                        "share": 43
+                    },
+                    {
+                        "label": "Menswear",
+                        "share": 18
+                    },
+                    {
+                        "label": "Women's wear below ₹35,000",
+                        "share": 12
+                    },
+                    {
+                        "label": "Other women's wear, jewellery, rest",
+                        "share": 27
+                    }
+                ]
+            },
+            {
+                "caption": "GMV by market, FY26 (approximate, from the Q1 FY27 call)",
+                "parts": [
+                    {
+                        "label": "Mumbai",
+                        "share": 28
+                    },
+                    {
+                        "label": "Delhi",
+                        "share": 23
+                    },
+                    {
+                        "label": "USA",
+                        "share": 11
+                    },
+                    {
+                        "label": "Other cities and countries",
+                        "share": 38
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Wealthy Indian families** buying for weddings and occasions, in India and abroad (the US is the largest overseas market); the top 10,000 customers spent ₹406cr in FY26.",
+            "No single customer matters; the risk is that spending on luxury and weddings is discretionary."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Anyone can open a designer store; what is hard is getting about 1,100 designers to supply one platform, running large flagship stores, and holding a wide range without buying deep stock. Many designer agreements are not exclusive, so the same brands sell through rivals and their own stores."
+        },
+        "moat": "Scale and curation: it is the largest multi-designer platform of its kind in India, and its 'backorder' model (the customer pays upfront, the designer makes the piece in 7–90 days) keeps stock low. But designers can sell elsewhere, the brand name itself is under a licence that its original owner has asked to end, and the model has not yet made money.",
+        "salesDrivers": [
+            "**Weddings and luxury spending** in India and among Indians abroad; Q1 is the leanest quarter, the festive and wedding quarters (Q2–Q4) the strongest.",
+            "**The four large stores opened in FY26** (Fort and Linking Road in Mumbai, South Ex in Delhi, Madison Avenue in New York), now in their first full year.",
+            "**Bigger tickets, fewer customers**: the average order rose from ₹46,000 in FY24 to ₹76,000 in FY26 and ₹86,000 in Q1 FY27, as cheap items and small designers were cut.",
+            "**No new stores planned for now**, management said on 29 Sep; growth must come from the existing ones."
+        ],
+        "inputs": "**Designer merchandise**, bought outright, on consignment or to order after the customer pays. Stock was ₹159cr at June 2026 (₹174cr a year earlier). The other big costs are store rents (booked as lease interest and depreciation), staff and marketing.",
+        "costEffect": "**Prices are set by the designers; the platform earns a markdown, so the gross margin stays around 36%** whatever the price level (36% in Q1 FY27 and a year earlier). The problem is fixed cost, not input prices: FY26 operating profit was ₹21cr, but interest (₹97cr) and depreciation (₹101cr), mostly on store leases, took it deep into loss. **Rule of thumb from management:** gross profit of about ₹55cr a quarter breaks even at EBITDA; covering the ₹45cr a quarter of lease interest and depreciation needs about ₹45cr more on top.",
+        "competitors": [
+            {
+                "name": "Aza Fashions, Ogaan, Ensemble",
+                "note": "Other multi-designer luxury stores; none is listed, so there is no direct listed peer."
+            },
+            {
+                "name": "Designers' own stores and websites",
+                "note": "Sabyasachi, Manish Malhotra and others sell directly; many designer agreements are non-exclusive."
+            },
+            {
+                "name": "Online luxury platforms",
+                "note": "Marketplaces such as Tata CLiQ Luxury and Nykaa's luxury arm sell some of the same labels."
+            }
+        ],
+        "position": "**One of India's largest multi-designer luxury fashion platforms**, with ₹722cr of GMV in FY26, about 1,100 active designer brands and 14 experience centres including London and New York.",
+        "money": "**Borrowings including leases were ₹784cr at March 2026** (Screener), of which bank and other loans were ₹371cr, rising to ₹436cr by June 2026; net worth was negative (equity ₹68cr, reserves −₹121cr). **Operating cash flow was negative in every year FY23–FY26 (−₹155cr in total), and free cash flow −₹249cr.** The September 2026 IPO raised **₹680cr in new shares at ₹575** (listed at ₹535, 7% below), earmarked ₹371cr for lease payments on its stores and ₹139cr for marketing through FY30. It has raised about $78m from investors, including the Harish Shah family office and Masaba Gupta; a Premji Invest partner sits on the board. Promoters hold **24.08%**; no pledge is reported.",
+        "watch": [
+            "EBITDA turning positive in Q2–Q3 FY27 without new stores.",
+            "Operating cash flow positive for a full year, and bank debt falling.",
+            "The outcome of the licence notice from Pernia Qureshi over the brand."
+        ],
+        charts: retailCharts["Purple Style Labs"],
+    },
+    {
+        "company": "Shankara Buildpro",
+        "inShort": [
+            "**Sells steel pipes, tubes, roofing and flat steel, plus tiles, sanitaryware and other building materials**, through about 96 stores and over 130 fulfilment centres, mostly in South India, to homeowners, contractors, dealers and builders.",
+            "**Good:** revenue grew 30% to ₹6,826cr in FY26, return on capital is about 39%, and customers pay within about 50 days. **Bad:** it keeps only about **3.3 paise of every rupee** as operating profit, so a steel price fall can wipe out a quarter's gain; it turned only 40% of four years' operating profit into cash; and about ₹500cr of supplier credit (letters of credit) sits outside the reported ₹61cr of borrowings.",
+            "**Verdict: follow.** A well-run, cheap-looking distributor (about 20 times earnings), but Q1 grew volumes only 10%; I want H2 to show the promised 20% before buying."
+        ],
+        "tagline": "A Bengaluru-based retailer and distributor of steel and building materials, split in 2025 from Shankara Building Products, which kept the pipe and roofing factories.",
+        "revenue": "₹6,826cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Steel marketplace",
+                "text": "Pipes and tubes, flat and long steel, sheets and colour-coated roofing from makers such as JSW Steel, SAIL and APL Apollo, with some cutting and processing in-house. **₹1,725cr of Q1 FY27 revenue (91%)**, on 2.5 lakh tonnes."
+            },
+            {
+                "name": "Non-steel building materials",
+                "text": "Plumbing fittings and sanitaryware (Jaquar, Kohler, Roca, Cera), tiles (Kajaria, Somany), electricals, paints, PVC roofing and hardware: about 2 lakh items. ₹165cr in Q1 FY27 (9%)."
+            },
+            {
+                "name": "Own brands",
+                "text": "Private labels such as Ganga, Taurus, Samrat, Loha and Vaigai, which management wants to grow for better retail margins."
+            }
+        ],
+        "revenueText": "**Steel brings about 91% of revenue** (Q1 FY27), non-steel 9%. Roughly **50–55% of volume is retail** (walk-in homeowners, contractors and small builders); the rest goes to dealers, mid-size builders, OEMs and institutions, with order sizes from ₹500 to ₹1.5cr. Same-store sales grew 23% in FY26 and 21% in Q1 FY27. Sales are concentrated in South and West India across about ten states.",
+        "mixes": [
+            {
+                "caption": "Revenue by type, Q1 FY27 (company)",
+                "parts": [
+                    {
+                        "label": "Steel",
+                        "share": 91
+                    },
+                    {
+                        "label": "Non-steel",
+                        "share": 9
+                    }
+                ]
+            },
+            {
+                "caption": "Volume by channel (approximate, management)",
+                "parts": [
+                    {
+                        "label": "Retail",
+                        "share": 52
+                    },
+                    {
+                        "label": "Dealers, builders and institutions",
+                        "share": 48
+                    }
+                ],
+                "note": "Management said 50–55% of volume is retail."
+            }
+        ],
+        "customers": [
+            "**Homeowners, masons and contractors** buying at stores, by phone or online.",
+            "**Dealers, mid-size builders, OEMs and institutions** for larger orders; large-project business is where funded online rivals compete hardest, and management steps back from the most price-driven tube orders."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Selling steel is simple; doing it profitably across thousands of items, nine or ten states and both retail and project customers is not. It took decades to build the store network, supplier terms and credit control."
+        },
+        "moat": "A dense physical network in South India, long supplier relationships and a wide range under one roof give it an edge over local dealers and the venture-funded online platforms. But the products are commodities made by others, and the margin is too thin to absorb price wars.",
+        "salesDrivers": [
+            "**Construction and steel demand**: India's steel use is about 180 million tonnes, with a national aim of 300 million by 2030; management expects 20% volume growth a year and 2 million tonnes in about four years.",
+            "**Steel prices**: higher prices lift revenue and give inventory gains (about ₹15cr in Q4 FY26); falling prices cause losses (about ₹10cr in Q1 FY27).",
+            "**New stores and fulfilment centres**: about eight in FY27, into new territories including North and West.",
+            "**Non-steel recovery**: guided to grow 25% after two flat years; sanitaryware grew 32% in Q1.",
+            "**Competition** from funded B2B platforms has eased in the last couple of quarters, management says."
+        ],
+        "inputs": "**Finished steel and building products bought from makers** (JSW Steel, SAIL, APL Apollo, Jaquar, Kajaria and others); purchases are almost the whole cost. The company also processes some pipes and roofing sheets.",
+        "costEffect": "**A trader's margin: about 3% of sales, so price swings on stock matter more than input costs.** Steel bought earlier and sold after a price fall costs margin; a rise does the reverse. **Rule of thumb:** each ₹10cr inventory loss is about half a point of quarterly margin. **What happened:** prices rose in March–April 2026 and fell in May–June; Q1 FY27 margin was 3.26% after a ₹10cr loss, about 3.8% without it, after a ₹15cr gain had lifted Q4 FY26 to 3.5%.",
+        "competitors": [
+            {
+                "name": "OfBusiness, Infra.Market, JSW One, Tata Nexarc",
+                "note": "Funded online or maker-owned B2B platforms that compete for builder and project orders, often with credit."
+            },
+            {
+                "name": "Local steel and hardware dealers",
+                "note": "The bulk of the market; smaller ones have pulled back after inventory losses, management says."
+            },
+            {
+                "name": "SG Mart",
+                "note": "A listed steel distributor focused on large B2B orders rather than retail stores."
+            }
+        ],
+        "position": "**One of India's largest retailers of steel tubes and pipes**, by its own description, with about 1 million tonnes of steel sold in FY26, about 96 stores and over 130 fulfilment centres.",
+        "money": "Screener shows **₹61cr of borrowings** at March 2026, but the CFO said total borrowing was about **₹575cr at June 2026 including about ₹500cr of letters of credit discounted at the company's cost**, booked under other liabilities; cash was not separately available. Crisil rates it A-/Stable (December 2025) on ₹745cr of bank lines, with limits only about 21% used. **Over FY23–FY26 operating cash was ₹260cr against ₹646cr of operating profit (40%)**, though FY26 converted 59% (₹90cr of ₹227cr); working capital was 22 days. Capex is small (warehousing, cutting lines, stores); acquisitions are 'on the table'. It paid a first dividend (about 9% of FY26 profit). Promoters hold **40.17%**, with no pledge shown.",
+        "watch": [
+            "Volume growth reaching 20% in H2 FY27 after Q1's 10%.",
+            "The margin holding at 3.5% through steel price swings.",
+            "Cash conversion and the letter-of-credit balance as it grows."
+        ],
+        charts: retailCharts["Shankara Buildpro"],
+    },
+    {
+        "company": "Safe Enterprises Retail Fixtures",
+        "inShort": [
+            "**Designs, makes and installs shop fittings** (wall units, display stands, cash counters, trial rooms, lit and electrified fixtures) for clothing, electronics and department-store chains, from leased plants in Mumbai and Pune; listed on NSE's SME board since June 2025.",
+            "**Good:** FY26 revenue grew 57% to ₹218cr (company figure) at a **36% operating margin**, it has about ₹130cr of cash and no debt, and the stock trades at about 17 times earnings. **Bad:** in FY24 **one customer bought 86% of everything it sold** (top five 94%), it turned only 45% of three years' operating profit into cash, and customers take about 76 days to pay.",
+            "**Verdict: wait.** Cheap and very profitable, but it is effectively a supplier to one retail chain; I want H1 FY27 to show 30% growth and a broader customer list first."
+        ],
+        "tagline": "A Mumbai maker of retail shop fixtures under the INSYNC brand, run by the Merchant family since 1991, that fits out new and refurbished stores for large Indian retail chains.",
+        "revenue": "₹218cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Retail fixtures for new stores",
+                "text": "Modular, standardised fixture systems with custom finishes, plus cash counters and trial rooms; **68.9% of FY26 revenue**. Average revenue per store rose 65% to about ₹51 lakh in FY26."
+            },
+            {
+                "name": "Refurbishment",
+                "text": "Refits of existing stores on a three-to-four-year cycle; **24.8% of FY26 revenue**, at the same margin as new stores."
+            },
+            {
+                "name": "WAVE and EVOLV",
+                "text": "WAVE, launched FY26, is an RFID self-checkout built into the fixtures (software by promoter-group firm BizPay); EVOLV applies the same parts to home furniture, not expected to matter before FY28."
+            }
+        ],
+        "revenueText": "**New stores brought 68.9% and refurbishments 24.8% of FY26 revenue.** The number of stores served has been flat (407, 445 and 425 over three years) because plants are over 90% full; growth came from more and pricier work per store. **Customer concentration is extreme: the top customer was 85.9% of FY24 revenue and the top five 94.0%** (prospectus); the company did not disclose a newer figure. Management would not name clients; analysts on the call asked about Trent and Reliance Retail. It works in more than 25 states and exports a little to the US and UAE.",
+        "mixes": [
+            {
+                "caption": "Revenue by type, FY26 (company)",
+                "parts": [
+                    {
+                        "label": "New stores",
+                        "share": 69
+                    },
+                    {
+                        "label": "Refurbishment",
+                        "share": 25
+                    },
+                    {
+                        "label": "Other",
+                        "share": 6
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by customer, FY24 (prospectus)",
+                "parts": [
+                    {
+                        "label": "Top customer",
+                        "share": 86
+                    },
+                    {
+                        "label": "Next four customers",
+                        "share": 8
+                    },
+                    {
+                        "label": "All others",
+                        "share": 6
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Large Indian fashion and lifestyle retail chains** rolling out new stores; the largest single customer bought 85.9% of FY24 sales.",
+            "Terms: 30–70% advance (100% for new clients), the rest in 30–60 days, with 10% held back for six months."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Making fixtures is not hard; delivering hundreds of stores a year on time across the country, with standard parts and quick installation, is what retailers pay for. The company says it never competes on price."
+        },
+        "moat": "Speed and reliability for a chain that opens many stores fast, plus a standardised modular system, give it most of its main customers' business. But that is a relationship, not a lock-in: retailers keep a second vendor for audit reasons and could shift volume.",
+        "salesDrivers": [
+            "**Store openings and refits by large retail chains**, especially value-fashion chains expanding into smaller towns.",
+            "**Capacity**: plants are over 90% used; existing space allows about 30% more revenue, and the Ambernath plant (Q3 FY27) about ₹500cr of revenue.",
+            "**More work per store**: cash counters, trial rooms, premium finishes and self-checkout technology.",
+            "**One customer's rollout plans** decide most of the year's revenue."
+        ],
+        "inputs": "**Steel, wood boards, glass, lighting and powder coating**, plus labour for installation. Cost shares were not disclosed. A gas shortage in March 2026 briefly hit its powder-coating line.",
+        "costEffect": "**Margins have been unusually high and steady (31–36% operating margin over FY24–FY26), so materials are not the swing factor.** Fixtures are quoted per project, which lets it reprice for new orders. The CFO expects the margin to rise when five leased Mumbai plants merge into the owned Ambernath plant, but guides a long-run profit margin of about 25%, below FY26's 29%.",
+        "competitors": [
+            {
+                "name": "Unorganised local fixture makers and carpenters",
+                "note": "Most of the market; retailers move to organised suppliers as chains grow."
+            },
+            {
+                "name": "Visplay (Germany)",
+                "note": "The international benchmark the company says it used in its early years."
+            }
+        ],
+        "position": "**A leading organised supplier of retail fixtures in India by its own account**, serving about 425 stores a year; no market share is published.",
+        "money": "**No borrowings** at March 2026 and about **₹130cr of cash and short-term investments**, mostly unspent IPO money. The June 2025 IPO raised **₹169.74cr at ₹138 a share** (subscribed about 10 times), mainly for the Ambernath plant (about ₹90–95cr in total, ₹58–65cr spent by May 2026). **Over FY24–FY26 operating cash was ₹67cr against ₹148cr of operating profit (45%)**; receivables rose to about 21% of sales. Promoters hold **70.07%**. It is an NSE SME company and plans to move to the main board after three years of listing.",
+        "watch": [
+            "A falling share for the top customer as new clients are added.",
+            "The Ambernath plant on time in Q3 FY27 and filled in FY28.",
+            "Operating cash catching up with profit."
+        ],
+        charts: retailCharts["Safe Enterprises Retail Fixtures"],
+    },
 ];
 
 export const retailBusinesses = { intro, profiles };

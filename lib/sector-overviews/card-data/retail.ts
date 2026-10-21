@@ -2017,6 +2017,344 @@ export const retailCharts: Record<string, ProfileCharts> = {
             "inventory5y": -66,
             "payables5y": 61
         }
+    },
+    "Patel Retail": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "18.6x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "12.0x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹140cr",
+                "note": "Borrowings minus cash and liquid investments, March 2026."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "−1%",
+                "note": "Operating cash ÷ operating profit over FY22–FY26; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "6.9%"
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials and goods bought for resale",
+                    "share": 83
+                },
+                {
+                    "label": "Staff",
+                    "share": 4
+                },
+                {
+                    "label": "Other costs",
+                    "share": 6
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 7
+                }
+            ],
+            "note": "Filed standalone expense split. Materials are net of a ₹76cr rise in stock."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                40,
+                56
+            ],
+            "inventoryDays": [
+                31,
+                109
+            ],
+            "payableDays": [
+                18,
+                37
+            ],
+            "cycleDays": [
+                53,
+                128
+            ],
+            "absorbed5y": -225,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                22,
+                43,
+                54,
+                59,
+                73
+            ],
+            "ocf": [
+                34,
+                -6,
+                25,
+                28,
+                -83
+            ],
+            "fcf": [
+                18,
+                -13,
+                13,
+                16,
+                -101
+            ],
+            "note": "Standalone (Screener). FY26 cash went into stock for new stores and export orders."
+        }
+    },
+    "Purple Style Labs": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "n/a",
+                "note": "Loss-making: net loss ₹285cr in FY26."
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "n/m",
+                "note": "Operating profit over the last year was only ₹13cr."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹784cr",
+                "note": "Borrowings including leases at March 2026, before the ₹680cr IPO in September 2026; cash was not separately available."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "3.8%"
+            },
+            {
+                "label": "GMV FY26",
+                "value": "₹722cr",
+                "note": "Value of goods sold on the platform; revenue was ₹558cr."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY23",
+            "toYear": "FY26",
+            "debtorDays": [
+                2,
+                2
+            ],
+            "inventoryDays": [
+                148,
+                171
+            ],
+            "payableDays": [
+                72,
+                42
+            ],
+            "cycleDays": [
+                79,
+                131
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                0,
+                26,
+                38,
+                21
+            ],
+            "ocf": [
+                -44,
+                -31,
+                -45,
+                -35
+            ],
+            "fcf": [
+                -58,
+                -47,
+                -60,
+                -84
+            ],
+            "note": "Consolidated, Screener. Operating cash flow has been negative every year."
+        }
+    },
+    "Shankara Buildpro": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "20.2x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "13.9x",
+                "note": "Market value plus ₹575cr of borrowings including letters of credit (June 2026), ÷ operating profit over the last year; cash not deducted as it was not disclosed."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹575cr",
+                "note": "Borrowings including about ₹500cr of letters of credit, June 2026 (CFO on the Q1 call); Screener's year-end borrowings were ₹61cr."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "3.3%"
+            },
+            {
+                "label": "Return on capital FY26",
+                "value": "39%"
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY23",
+            "toYear": "FY26",
+            "debtorDays": [
+                46,
+                50
+            ],
+            "inventoryDays": [
+                41,
+                27
+            ],
+            "payableDays": [
+                50,
+                54
+            ],
+            "cycleDays": [
+                37,
+                24
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                118,
+                151,
+                150,
+                227
+            ],
+            "ocf": [
+                92,
+                10,
+                68,
+                90
+            ],
+            "fcf": [
+                48,
+                -18,
+                58,
+                78
+            ],
+            "note": "Consolidated, Screener. FY23–FY24 are the combined business before the demerger."
+        }
+    },
+    "Safe Enterprises Retail Fixtures": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "16.6x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "11.8x",
+                "note": "Market value minus about ₹130cr of cash, ÷ operating profit over the last two half-years."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹130cr",
+                "note": "Cash and short-term investments as discussed on the May 2026 call; no borrowings."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "36%"
+            },
+            {
+                "label": "Top customer, FY24",
+                "value": "86%",
+                "note": "Share of revenue from the largest customer (prospectus)."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY24",
+            "toYear": "FY26",
+            "debtorDays": [
+                78,
+                76
+            ],
+            "inventoryDays": [
+                15,
+                55
+            ],
+            "payableDays": [
+                74,
+                62
+            ],
+            "cycleDays": [
+                20,
+                69
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                32,
+                37,
+                79
+            ],
+            "ocf": [
+                13,
+                20,
+                34
+            ],
+            "fcf": [
+                13,
+                18,
+                -31
+            ],
+            "note": "Consolidated, Screener. FY26 free cash includes plant spending."
+        }
     }
 };
 
@@ -2136,5 +2474,30 @@ export const retailValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": -67.0,
         "mcapAtWriting": 933.0,
         "peAtWriting": null
+    },
+    "Patel Retail": {
+        "netDebt": 140,
+        "ttmEbitda": 76,
+        "mcapAtWriting": 776,
+        "peAtWriting": 18.6
+    },
+    "Purple Style Labs": {
+        "netDebt": 784,
+        "ttmEbitda": 13,
+        "mcapAtWriting": 4118,
+        "peAtWriting": null,
+        "lossMaking": true
+    },
+    "Shankara Buildpro": {
+        "netDebt": 575,
+        "ttmEbitda": 235,
+        "mcapAtWriting": 2686,
+        "peAtWriting": 20.2
+    },
+    "Safe Enterprises Retail Fixtures": {
+        "netDebt": -130,
+        "ttmEbitda": 79,
+        "mcapAtWriting": 1066,
+        "peAtWriting": 16.6
     }
 };

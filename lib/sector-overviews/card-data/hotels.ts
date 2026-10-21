@@ -1149,6 +1149,200 @@ export const hotelsCharts: Record<string, ProfileCharts> = {
             "inventory5y": 0,
             "payables5y": 26
         }
+    },
+    "Waterways Leisure Tourism": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "90.6x",
+                "note": "Includes the one-off $5.2m early-delivery compensation in Q2 FY27."
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "54.9x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year (₹121cr)."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹112cr",
+                "note": "Borrowings including leases minus cash, March 2026; borrowings rose to ₹443cr by September."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "20%"
+            },
+            {
+                "label": "Load factor H1 FY27",
+                "value": "91.2%",
+                "note": "Guests against two per cabin; families push single sailings above 100%."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Fuel",
+                    "share": 12
+                },
+                {
+                    "label": "Port, crew, hotel services, marketing and other",
+                    "share": 68
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 20
+                }
+            ],
+            "note": "Fuel from the RHP's fuel cost per guest-day (₹1,480) times guest-days (4,81,660); total costs and operating profit from Screener. A finer split is not in the filings read."
+        },
+        "workingCapital": {
+            "fromYear": "FY24",
+            "toYear": "FY26",
+            "debtorDays": [
+                2,
+                3
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                2,
+                3
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                107,
+                213,
+                115
+            ],
+            "ocf": [
+                230,
+                130,
+                -96
+            ],
+            "fcf": [
+                157,
+                114,
+                -111
+            ],
+            "note": "Only three years filed. FY26 operating cash went negative mainly because of about ₹220cr of advances for the Sky and Sun ships."
+        }
+    },
+    "Travel Food Services": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "31.9x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "21.7x",
+                "note": "Market value minus net cash, ÷ operating profit over the last year (₹665cr)."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹725cr",
+                "note": "About ₹970cr of cash (June 2026, company) minus ₹245cr of lease liabilities (March 2026)."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "39%"
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "81%",
+                "note": "Operating cash ÷ operating profit over FY22–FY26; 70–80% is healthy."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "Q1 FY27",
+            "parts": [
+                {
+                    "label": "Food and materials",
+                    "share": 14
+                },
+                {
+                    "label": "Staff, concession fees and other costs",
+                    "share": 50
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 36
+                }
+            ],
+            "note": "From the Q1 FY27 call (reported gross margin 85.7%, EBITDA margin 35.8%); about 3 points of lounge-access costs sit in other costs. A full-year split by head is not in the filings read."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                44,
+                58
+            ],
+            "inventoryDays": [
+                32,
+                18
+            ],
+            "payableDays": [
+                131,
+                514
+            ],
+            "cycleDays": [
+                -55,
+                -438
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                24,
+                374,
+                417,
+                554,
+                649
+            ],
+            "ocf": [
+                45,
+                322,
+                353,
+                515,
+                393
+            ],
+            "fcf": [
+                21,
+                285,
+                276,
+                454,
+                354
+            ]
+        }
     }
 };
 
@@ -1219,5 +1413,19 @@ export const hotelsValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 94.0,
         "mcapAtWriting": 846.0,
         "peAtWriting": 31.7
+    },
+    "Waterways Leisure Tourism": {
+        "netDebt": 112,
+        "ttmEbitda": 121,
+        "mcapAtWriting": 6530,
+        "peAtWriting": 90.6,
+        "lossMaking": false
+    },
+    "Travel Food Services": {
+        "netDebt": -725,
+        "ttmEbitda": 665,
+        "mcapAtWriting": 15174,
+        "peAtWriting": 31.9,
+        "lossMaking": false
     }
 };

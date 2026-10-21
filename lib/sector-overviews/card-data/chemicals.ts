@@ -5420,6 +5420,413 @@ export const chemicalsCharts: Record<string, ProfileCharts> = {
             "inventory5y": -28,
             "payables5y": 59
         }
+    },
+    "Jyoti Resins": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "15.4x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "10.7x",
+                "note": "Market value minus net cash, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹166cr",
+                "note": "No borrowings; cash and investments at March 2026 (company)."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "27%",
+                "note": "14% in Q1 FY27 after the VAM spike."
+            },
+            {
+                "label": "Debtor days FY26",
+                "value": "185",
+                "note": "Days customers take to pay; 129 in FY22."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 30
+                },
+                {
+                    "label": "Staff",
+                    "share": 11
+                },
+                {
+                    "label": "Selling, loyalty points and other costs",
+                    "share": 32
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 27
+                }
+            ],
+            "note": "Filed FY26 standalone P&L lines (via MarketsMojo; they add up to Screener's operating profit of ₹85cr). Materials include changes in stock."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                129,
+                185
+            ],
+            "inventoryDays": [
+                36,
+                39
+            ],
+            "payableDays": [
+                8,
+                44
+            ],
+            "cycleDays": [
+                157,
+                180
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                24,
+                61,
+                84,
+                90,
+                85
+            ],
+            "ocf": [
+                3,
+                1,
+                27,
+                15,
+                48
+            ],
+            "fcf": [
+                -5,
+                -2,
+                25,
+                13,
+                44
+            ],
+            "note": "Screener standalone."
+        }
+    },
+    "Sacheerome": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "33.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "24.1x",
+                "note": "Market value less net cash, ÷ operating profit over the last two half-years (₹37cr)."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹45cr",
+                "note": "Cash (data provider), March 2026; no borrowings."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "24%"
+            },
+            {
+                "label": "Capacity use FY26",
+                "value": "124%",
+                "note": "Management, June 2026, before the new plant."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 60
+                },
+                {
+                    "label": "Staff, power and other costs",
+                    "share": 16
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 24
+                }
+            ],
+            "note": "Materials from FY26 gross profit (data provider); operating profit from Screener; the rest is the balance."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                67,
+                47
+            ],
+            "inventoryDays": [
+                113,
+                47
+            ],
+            "payableDays": [
+                71,
+                61
+            ],
+            "cycleDays": [
+                109,
+                33
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                9,
+                10,
+                15,
+                22,
+                37
+            ],
+            "ocf": [
+                9,
+                11,
+                10,
+                22,
+                26
+            ],
+            "fcf": [
+                6,
+                9,
+                0,
+                -2,
+                -14
+            ]
+        }
+    },
+    "Gem Aromatics": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "n/a",
+                "note": "Loss of ₹14cr over the last four quarters."
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "30.6x",
+                "note": "Market value plus net debt, ÷ operating profit over the last four quarters (₹29cr)."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹144cr",
+                "note": "Borrowings (₹152cr) minus about ₹8cr of cash (data provider), March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "11%"
+            },
+            {
+                "label": "Inventory days FY26",
+                "value": "309"
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 76
+                },
+                {
+                    "label": "Staff, power and other costs",
+                    "share": 13
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 11
+                }
+            ],
+            "note": "Materials from FY26 gross profit (data provider); operating profit from Screener; the rest is the balance."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                46,
+                76
+            ],
+            "inventoryDays": [
+                206,
+                309
+            ],
+            "payableDays": [
+                27,
+                25
+            ],
+            "cycleDays": [
+                225,
+                360
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                49,
+                66,
+                78,
+                88,
+                41
+            ],
+            "ocf": [
+                -5,
+                15,
+                40,
+                -25,
+                30
+            ],
+            "fcf": [
+                -19,
+                1,
+                1,
+                -130,
+                -65
+            ]
+        }
+    },
+    "Prasol Chemicals": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "35.1x",
+                "note": "On profit including the Q1 FY27 stock gain."
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "22.9x",
+                "note": "Market value plus net debt, ÷ operating profit over the last four quarters (₹189cr, including Q1 FY27's ₹25cr gain)."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹87cr",
+                "note": "Borrowings (₹111cr) minus about ₹24cr of cash (data provider), March 2026, before ₹60cr of IPO money repaid debt."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "11%"
+            },
+            {
+                "label": "Largest customer",
+                "value": "about 4%",
+                "note": "₹55–60cr of the ₹1,550cr+ expected in FY27 (management)."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 70
+                },
+                {
+                    "label": "Staff, power and other costs",
+                    "share": 19
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 11
+                }
+            ],
+            "note": "Materials from FY26 gross profit (data provider); operating profit from Screener (standalone); the rest is the balance."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                71,
+                83
+            ],
+            "inventoryDays": [
+                85,
+                67
+            ],
+            "payableDays": [
+                133,
+                91
+            ],
+            "cycleDays": [
+                22,
+                58
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                133,
+                87,
+                62,
+                88,
+                140
+            ],
+            "ocf": [
+                81,
+                29,
+                116,
+                22,
+                49
+            ],
+            "fcf": [
+                33,
+                -23,
+                97,
+                0,
+                11
+            ]
+        }
     }
 };
 
@@ -5721,5 +6128,30 @@ export const chemicalsValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 50.0,
         "mcapAtWriting": 686.0,
         "peAtWriting": 17.9
+    },
+    "Jyoti Resins": {
+        "netDebt": -166,
+        "ttmEbitda": 77,
+        "mcapAtWriting": 992,
+        "peAtWriting": 15.4
+    },
+    "Sacheerome": {
+        "netDebt": -45,
+        "ttmEbitda": 37,
+        "mcapAtWriting": 937,
+        "peAtWriting": 33
+    },
+    "Gem Aromatics": {
+        "netDebt": 144,
+        "ttmEbitda": 29,
+        "mcapAtWriting": 743,
+        "peAtWriting": null,
+        "lossMaking": true
+    },
+    "Prasol Chemicals": {
+        "netDebt": 87,
+        "ttmEbitda": 189,
+        "mcapAtWriting": 4237,
+        "peAtWriting": 35.1
     }
 };

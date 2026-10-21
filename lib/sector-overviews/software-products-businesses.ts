@@ -428,6 +428,99 @@ const profiles: BusinessProfile[] = [
         watch: ["The foreign subsidiaries audited by a recognised firm.", "The regulatory inquiries disclosed and closed.", "The ₹150cr raise completed on fair terms, and izmo Microsystems reaching about ₹12cr a quarter."],
         charts: softwareCharts['IZMO'],
     },
+    {
+        "company": "Excelsoft Technologies",
+        "inShort": [
+            "**Builds online exam, proctoring and learning software** (Saras, easyProctor) and does software development for global education publishers and exam boards, from Mysuru; its biggest customer is Pearson.",
+            "**Good:** Q1 FY27 revenue grew 44%, it holds about **₹400cr of cash** (nearly half its market value), converts about 83% of operating profit into cash, and trades at about **18 times earnings**. **Bad:** **Pearson alone was 59% of revenue** (June 2025) and the top five customers 70%; the margin fell to 16% in Q1 from 27% in FY26; and it had guaranteed ₹300cr of its promoter company's debentures.",
+            "**Verdict: wait.** Cheap with a strong cash pile, but I want to see the margin back near 24%, the promoter guarantee released and Pearson's share falling before buying."
+        ],
+        "tagline": "A Mysuru learning and assessment software company founded in 2000 by Dhananjaya Sudhanva, selling exam and learning platforms and development services mainly to publishers and exam boards in the US and UK.",
+        "revenue": "₹273cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Education technology services",
+                "text": "Building and running learning and testing software for clients, increasingly with staff based near clients in the US and UK. **63.4% of Q1 FY27 revenue**, up 177%; the nearshore teams brought about ₹10cr in Q1 and have about ₹40cr secured for FY27."
+            },
+            {
+                "name": "Assessment and proctoring products",
+                "text": "Saras e-assessment (including e-marking for AQA's GCSE exams) and easyProctor for supervised online exams. **23.5% of Q1 revenue**."
+            },
+            {
+                "name": "Learning and student success, learning design",
+                "text": "Learning platforms (Saras LMS, EnablED, OpenPage) and course design. The remaining 13% of Q1 revenue."
+            }
+        ],
+        "revenueText": "**Pearson Education was 58.8% of FY25 revenue and 59.2% in the June 2025 quarter**, up from 41.9% in FY23. In Q1 FY27 **the top five customers gave about 70% and the top ten 83%**. North America was 55% of FY24 revenue, and 63.9% of FY25 sales were in US dollars, unhedged. It served 76 clients in 19 countries (August 2025). Publishing and certification-and-testing customers were 78% of FY25 revenue. Q1 is the slowest quarter (20–22% of the year).",
+        "mixes": [
+            {
+                "caption": "Revenue by business, Q1 FY27 (company)",
+                "parts": [
+                    {
+                        "label": "Education technology services",
+                        "share": 63
+                    },
+                    {
+                        "label": "Assessment and proctoring",
+                        "share": 24
+                    },
+                    {
+                        "label": "Learning platforms and design",
+                        "share": 13
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by customer, June 2025 quarter (prospectus)",
+                "parts": [
+                    {
+                        "label": "Pearson",
+                        "share": 59
+                    },
+                    {
+                        "label": "All others",
+                        "share": 41
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Pearson**, the global education publisher, about 59% of revenue; it can end contracts at will.",
+            "**AQA**, one of England's largest exam boards (e-marking, about US$17m over four years), and other publishers, universities, certification bodies and testing firms; management is also talking to India's National Testing Agency."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "High-stakes exam software must work without a single error for millions of candidates, and boards change suppliers rarely. The development-services half of the business is easier to copy."
+        },
+        "moat": "Long-standing work inside Pearson and a track record on large secure exams make it hard to displace from existing work. But the dependence cuts both ways: one customer's budget decides much of the year, and the services work could move to other Indian IT firms.",
+        "salesDrivers": [
+            "**Pearson's and other publishers' spending** on digital learning and testing.",
+            "**Nearshore teams** in the US, UK, Dubai and a planned Toronto office, which won several new service accounts.",
+            "**Large exam contracts** such as AQA; a possible opening with India's National Testing Agency after recent exam failures.",
+            "**Acquisitions**: management expects about 30% of five-year growth to come from buying companies.",
+            "**The rupee**: about 64% of sales are in dollars and unhedged."
+        ],
+        "inputs": "**Engineers** (about 300 were put through AI training in Q1) plus onsite staff abroad, who cost more. Development spending is partly capitalised (about ₹4cr in Q1) and written off over time (₹6.5cr in Q1).",
+        "costEffect": "**Wages and the rupee set the margin, not materials.** Moving work onshore costs more: nearshore gross margin was about 26% in Q1, aiming for 35–40%. Q1 FY27 margin fell to 16.2% from 18.0% because of new sales staff, nearshore teams and about ₹1.5cr of one-off hiring and training cost; FY26 was 27%. **Rule of thumb:** with about 64% of sales in dollars and no hedging, a 5% rupee move shifts revenue by about 3% and, since costs are mostly in rupees, the margin by roughly 2 points.",
+        "competitors": [
+            {
+                "name": "Mercer Mettl, Questionmark, Cirrus, RM",
+                "note": "Assessment and proctoring platforms competing for exam-board and certification work."
+            },
+            {
+                "name": "Indian IT services firms",
+                "note": "Compete for the development-services work that is now the larger part of revenue."
+            }
+        ],
+        "position": "**A niche Indian supplier of exam and learning software**, small in a global market but long embedded with Pearson and now AQA.",
+        "money": "**About ₹400cr of cash and deposits at June 2026** (CFO on the call) against ₹7cr of borrowings at March 2026. The **November 2025 IPO raised ₹500cr at ₹120 a share**, of which about ₹180cr was new money (going by the rise in share capital) and the rest was sold by existing holders; the shares listed at ₹135 and now trade near ₹78. **Over FY22–FY26 operating cash was ₹275cr against ₹330cr of operating profit (83%).** Fixed assets fell from ₹336cr to ₹135cr in FY25, which lifted that year's free cash to ₹290cr; the reason was not explained in the sources read. The prospectus showed **₹303cr of contingent liabilities, mostly a ₹300cr guarantee for promoter Pedanta's debentures**; whether it has been released was not found. Promoters hold **59.12%**, with no pledge shown.",
+        "watch": [
+            "Release of the ₹300cr guarantee given for the promoter company.",
+            "The margin recovering towards 24–25% in H2 FY27.",
+            "Pearson's share of revenue falling as AQA and new clients grow."
+        ],
+        charts: softwareCharts["Excelsoft Technologies"],
+    },
 ];
 
 export const softwareProductsBusinesses = { intro, profiles };

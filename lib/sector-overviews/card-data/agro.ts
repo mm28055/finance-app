@@ -2175,6 +2175,105 @@ export const agroCharts: Record<string, ProfileCharts> = {
             "inventory5y": -135,
             "payables5y": null
         }
+    },
+    "GSP Crop Science": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "20.1x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "11.9x",
+                "note": "Market value plus March 2026 net debt (₹109cr), ÷ operating profit over the last four quarters (₹185cr)."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹109cr",
+                "note": "Borrowings (₹262cr) minus cash and bank (about ₹153cr, per ICRA), March 2026; loans were repaid further in Q1 FY27."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "12%"
+            },
+            {
+                "label": "Debtor days FY26",
+                "value": "133"
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 64
+                },
+                {
+                    "label": "Staff, power and other costs",
+                    "share": 24
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 12
+                }
+            ],
+            "note": "Materials from FY26 gross profit (data provider); operating profit from Screener; the rest is the balance."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                125,
+                133
+            ],
+            "inventoryDays": [
+                182,
+                146
+            ],
+            "payableDays": [
+                165,
+                158
+            ],
+            "cycleDays": [
+                142,
+                121
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                129,
+                79,
+                124,
+                150,
+                185
+            ],
+            "ocf": [
+                -44,
+                104,
+                207,
+                38,
+                59
+            ],
+            "fcf": [
+                -93,
+                70,
+                179,
+                -34,
+                -17
+            ]
+        }
     }
 };
 
@@ -2263,5 +2362,11 @@ export const agroValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 107.0,
         "mcapAtWriting": 1014.0,
         "peAtWriting": 16.9
+    },
+    "GSP Crop Science": {
+        "netDebt": 109,
+        "ttmEbitda": 185,
+        "mcapAtWriting": 2101,
+        "peAtWriting": 20.1
     }
 };

@@ -160,6 +160,91 @@ const profiles: BusinessProfile[] = [
         watch: ["The margin reaching 7–8% in the second half.", "The share of new orders from outside the Adani group.", "Collection of the Surat Diamond Bourse and UP dues."],
         charts: constructionCharts['PSP Projects'],
     },
+    {
+        "company": "Glass Wall Systems",
+        "inShort": [
+            "**Designs, makes and fits glass-and-aluminium facades** (the outer skin of office towers) for top Indian developers, ships ready-to-fit facade panels to contractors in the US and Australia, and sells luxury windows, from one factory near Mumbai.",
+            "**Good:** an operating margin of about 23%, no net debt, and about 81% of three years' profit turned into cash; the order book is about twice FY26 revenue. **Watch:** the top three clients were 57% of FY26 revenue; the business is small (₹457cr) and lumpy; no big order came in the three months to October; and the family sold its own window company to the firm for ₹155cr in shares just before the IPO.",
+            "**Verdict: wait.** A good, cash-generating niche business at about 25 times earnings, but too dependent on a few clients and too new as a listed company; I want the second-half export orders and new wins to show up first."
+        ],
+        "tagline": "A Mumbai facade contractor and exporter founded in 2002 by Jawahar Hemrajani, with a luxury-windows arm; listed in September 2026.",
+        "revenue": "₹457cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Domestic facades",
+                "text": "Turnkey design, manufacture and installation of glass curtain walls, cladding, louvres and railings, now entirely for commercial buildings such as leased offices, mainly in Mumbai, Pune, Bengaluru, Hyderabad and the Delhi region. **49% of FY26 revenue.** Jobs take 18–24 months."
+            },
+            {
+                "name": "International facade panels",
+                "text": "Engineered, ready-to-install facade units supplied (not installed) to facade contractors in the US and Australia since FY23; billed when they leave the factory and paid in about 60 days. **45% of FY26 revenue**, at higher margins."
+            },
+            {
+                "name": "Fenestration (luxury windows)",
+                "text": "Premium doors and windows for luxury homes, using European partners' engineering with local assembly and installation, through Yes Systems, bought from the family in 2025. 6% of FY26 revenue."
+            }
+        ],
+        "revenueText": "**Domestic facades were 49% of FY26 revenue, exports 45% and luxury windows 6%** (CFO on the call; the RHP gives 48.9% domestic facades and 45.2% overseas). Australia was only ₹24cr in FY26, so exports are mostly to the US, and FY27 exports will be almost all US. **The top three clients were 57% of FY26 revenue and the top ten 86%.** In Q1 FY27 revenue rose 36% to ₹107cr: domestic up 93%, exports down 12% and windows up 127%. The unexecuted order book was **₹982cr** at 31 July 2026, about twice FY26 revenue. The first two quarters are usually slow.",
+        "mixes": [
+            {
+                "caption": "Revenue by business, FY26 (management, Q1 FY27 call)",
+                "parts": [
+                    {
+                        "label": "Domestic facades",
+                        "share": 49
+                    },
+                    {
+                        "label": "International panels",
+                        "share": 45
+                    },
+                    {
+                        "label": "Luxury windows",
+                        "share": 6
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Grade A Indian developers**: Bagmane, Prestige, K Raheja, Embassy and Lodha, mostly building offices already leased to tenants.",
+            "**Overseas facade contractors**: Reflection Window + Wall and Winpro in the US; SRG Global and Multiplex in Australia.",
+            "**Concentrated**: the top three clients were 57% of FY26 revenue and the top ten 86% (RHP); much of the work is repeat business."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "Each building is engineered from scratch to handle wind, water, earthquakes and heat, and developers trust only a few firms with work that decides when a building can be handed over. It has India's only NABL-accredited in-house facade test rig among fabricators, by its own account."
+        },
+        "moat": "Engineering skill, a test lab, a modern factory and a long record with top developers give it an edge over smaller fabricators, and supply-only exports avoid site risk abroad. But it is small, wins work job by job, and relies on a few developers and US contractors.",
+        "salesDrivers": [
+            "**Office construction in big Indian cities**: the domestic facade market is put at about ₹9,000cr growing about 16% a year (industry report quoted on the call); it has about 6–7% and calls itself the second-largest.",
+            "**US building demand**: exports go mostly to US contractors buying from offshore; US tariffs are passed on but could slow demand.",
+            "**Order book**: ₹982cr at July 2026; management aims to keep two years of work and grow 20–25% a year.",
+            "**Seasonality**: the first half is slow and the second half heavy; three export projects are scheduled for Q3 and Q4 FY27.",
+            "**New markets**: Canada and Israel for exports, and B2B luxury housing for windows."
+        ],
+        "inputs": "**Aluminium extrusions** (Hindalco, Global Aluminium), **performance glass** (much of it imported), silicone sealants (Dow) and fixings (Hilti). Materials were 48% of FY26 revenue and imported materials 8.6%.",
+        "costEffect": "**Passed on.** Since COVID all contracts carry pass-through clauses for aluminium and glass, after material inflation hurt margins in 2020–21; export freight, now borne by the company under delivered-duty-paid terms, is billed at cost, which lowers the margin percentage but not profit (about ₹5.5cr in Q1). **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points (23% to 18%). **What happened:** the margin rose from 5% (standalone, FY23) to 23% in FY26 as it moved to commercial jobs, exports and pass-through clauses.",
+        "competitors": [
+            {
+                "name": "Alufit International",
+                "note": "The largest Indian facade contractor, about ₹100cr more revenue than Glass Wall by management's estimate."
+            },
+            {
+                "name": "Innovators Facade Systems, Mero Asia, Durall",
+                "note": "Other organised Indian facade firms named in the RHP; management says none of them exports."
+            },
+            {
+                "name": "Chinese and other offshore panel makers",
+                "note": "Compete for US and Australian supply-only work."
+            }
+        ],
+        "position": "**India's second-largest facade contractor by revenue**, by its own account, with about 6–7% of the domestic market and a factory making about 130 panels a day.",
+        "money": "**Net cash of about ₹78cr at March 2026** (RHP: net debt to equity of −0.30), with borrowings of only ₹7cr. The September 2026 IPO raised ₹428cr, of which only ₹60cr was new money for an ₹80cr glass processing unit; the rest went to the promoters and to private-equity investor India Business Excellence Fund IIA. Over FY24–FY26 it turned ₹189cr of operating cash out of ₹233cr of operating profit (81%), and free cash was positive each year. Customers are paid in milestones (about 75–80% by material delivery), and debtor days were 87 in FY26. No dividend. Promoters hold **53.22%**, with no pledge.",
+        "watch": [
+            "New orders in Q2 and Q3 after a quiet Q1, especially in Canada and Israel.",
+            "Export revenue picking up in the second half as scheduled, and US tariffs not hurting demand.",
+            "Further dealings with family firms (Yes Systems was bought for ₹155cr in shares; MJ Coaters gets 39% of subcontracting)."
+        ],
+        charts: constructionCharts["Glass Wall Systems"],
+    },
 ];
 
 export const constructionBuildingsBusinesses = { intro, profiles };

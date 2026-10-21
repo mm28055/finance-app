@@ -548,6 +548,417 @@ const profiles: BusinessProfile[] = [
         watch: ["Margin reaching 8–9% in H2 FY27.", "The remaining ₹35–40cr of insurance arriving.", "The pledge and the GST disputes."],
         charts: foodProductsCharts['Gopal Snacks'],
     },
+    {
+        "company": "Piccadily Agro",
+        "inShort": [
+            "**A Haryana distiller and sugar maker that owns Indri**, one of the best-known Indian single malt whiskies, plus Whistler, Camikara rum and Cashmir vodka, alongside bulk alcohol, ethanol and a sugar unit it is spinning off.",
+            "**Good:** branded spirits grew 47% in Q1 FY27 to ₹82cr, it holds 87,000 barrels of ageing malt, and management guides about 60% growth in FY27. **Bad:** only about a third of five years' operating profit came through as cash because the whisky must age for years, borrowings rose to ₹531cr, Q1 grew just 18%, the auditor resigned in April 2026, and a group sugar company owed it ₹43cr.",
+            "**Verdict: pass.** A real whisky brand, but the auditor resigned in April 2026 and a group sugar company owed it ₹43cr; at 39 times earnings, governance questions like these rule it out until they are settled."
+        ],
+        "tagline": "An Indian distiller from Indri, Haryana, that is turning from sugar and bulk alcohol into a premium spirits brand owner built around the Indri single malt.",
+        "revenue": "₹1,000cr (FY26, consolidated, as filed on Screener; the company reports total income of ₹1,143cr including other income)",
+        "products": [
+            {
+                "name": "Branded spirits (premium and luxury)",
+                "text": "Indri single malt (the company calls it the world's 13th-largest single malt, growing 18–20% a year), Whistler blended malt (grew almost 100% in FY26), Camikara cane-juice rum and Cashmir vodka. ₹82cr in Q1 FY27, 43.5% of distillery revenue, sold in 31 countries; exports are about 25% of branded sales, led by North America."
+            },
+            {
+                "name": "Bulk alcohol",
+                "text": "Grain spirit (ENA), ethanol for oil companies, country liquor and malt spirit from Indri and the new 210 KLPD Chhattisgarh plant. Management calls this a stop-gap to fill capacity; ethanol earns about 10% and country liquor 15–18%."
+            },
+            {
+                "name": "Sugar",
+                "text": "A cane-crushing sugar unit at Indri; ₹233cr of turnover (about 20% of the total). A scheme to move it into a subsidiary, Piccadily Food & Essential, was filed in April 2026 and is awaiting approvals."
+            }
+        ],
+        "revenueText": "**Distillery was 76% of Q1 FY27 revenue** (71% a year earlier) and sugar 24%. Within distillery, **branded spirits were 43.5%** (₹82cr) and bulk alcohol the rest. In FY26 total income was ₹1,143cr and sugar turnover ₹233cr. Sales are heavily seasonal: 60–65% of branded revenue comes in October–March. Exports are about a quarter of branded sales; the long-term aim is 70% exports.",
+        "mixes": [
+            {
+                "caption": "Revenue by business, Q1 FY27 (company call; branded share computed from 43.5% of distillery)",
+                "parts": [
+                    {
+                        "label": "Bulk alcohol (ENA, ethanol, country liquor)",
+                        "share": 43
+                    },
+                    {
+                        "label": "Branded spirits",
+                        "share": 33
+                    },
+                    {
+                        "label": "Sugar",
+                        "share": 24
+                    }
+                ],
+                "note": "Approximate, from management figures."
+            }
+        ],
+        "customers": [
+            "**State liquor corporations, wholesalers and bars** in India for branded spirits, plus the armed forces canteens (CSD), which began buying Camikara.",
+            "**Importers and duty-free shops** in 31 countries, led by North America.",
+            "**Oil marketing companies** (IOCL, HPCL, BPCL) for ethanol, and other bottlers for bulk spirit."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "A single malt needs at least three years of ageing, so a rival cannot copy Indri quickly; Piccadily says its 87,000 filled barrels are the most in India. Building a spirits brand also takes years of spending. Bulk alcohol and sugar, by contrast, are commodities."
+        },
+        "moat": "Aged malt stock and a brand that has won international awards give it a lead in Indian single malt that takes years to copy. The weakness is that it competes with large multinationals with deep pockets, half of its distillery revenue is still low-margin bulk alcohol, and newer brands are unproven.",
+        "salesDrivers": [
+            "**Brand growth**: Indri 18–20% a year, Whistler and the newer brands much faster; several new launches planned in Q2 and Q3 FY27.",
+            "**Capacity**: malt plant at 30 KLPD running at 80%, Indri distillery expansion at about 60%, Chhattisgarh guided to 50% use by March 2027 and ₹300–400cr of FY27 revenue.",
+            "**Season**: 60–65% of branded sales come in H2 (festivals and winter in north India).",
+            "**Policy**: ethanol orders depend on government allocation; a court order paused ethanol sales in Q1.",
+            "**Exports and duty-free**: new airports and countries each year; the India–UK trade deal halves duty on Scotch imports, which helps its Scottish Portavadie plan more than its Indian sales."
+        ],
+        "inputs": "**Grain (for malt and spirit), sugarcane and molasses, fuel, glass and oak barrels.** Barrel purchases are a running cost that management expects to take filled barrels to 1.15–1.2 lakh by March 2027.",
+        "costEffect": "**Branded spirits absorb input swings; bulk alcohol does not.** Management said grain and fuel prices rose in Q1 and squeezed the distillery margin, while branded spirits felt no pressure. Ethanol prices are fixed by the government and country liquor prices by states. The filed cost split was not available to me, so I give no rule of thumb. **What happened:** the operating margin was 10–12% in FY22–FY23 when it was mostly sugar and bulk alcohol, and 20–23% in FY24–FY26 as branded spirits grew.",
+        "competitors": [
+            {
+                "name": "Radico Khaitan (Rampur), Amrut and John Distilleries (Paul John)",
+                "note": "The other Indian single malt makers."
+            },
+            {
+                "name": "Diageo India and Pernod Ricard India",
+                "note": "Far larger multinationals, with Indian and imported malts and much bigger marketing budgets."
+            },
+            {
+                "name": "Ethanol and grain-spirit distillers",
+                "note": "Many players; bulk alcohol is a price-taker business."
+            }
+        ],
+        "position": "**One of India's leading single malt makers** by its own account, with 87,000 barrels of malt ageing and Indri ranked 13th among single malts worldwide (company claim).",
+        "money": "Screener shows **₹531cr of borrowings** at March 2026, up from ₹172cr in March 2024, after spending on the Chhattisgarh plant, malt capacity and barrels; the cash balance is not on the saved page. **Over FY22–FY26 it turned ₹697cr of operating profit into only ₹224cr of operating cash, and free cash was −₹303cr**, because ageing whisky sits in stock (inventory 369 days) and customers take about 89 days to pay. Management says no big capex is planned in FY27 and debt will not rise. Crisil rated its ₹400cr of bank loans A+/Stable in October 2026; Infomerics upgraded it to A in May 2026. Promoters hold **68.56%**; the sugar unit is being moved into a subsidiary, with one new share for every nine held.",
+        "watch": [
+            "H2 FY27 sales and margin: the 60% growth and 23–24% margin guidance.",
+            "Operating cash and debt as barrel stock keeps building.",
+            "The new auditor's first full-year report and the related-party balances with Piccadily Sugar."
+        ],
+        charts: foodProductsCharts["Piccadily Agro"],
+    },
+    {
+        "company": "Regaal Resources",
+        "inShort": [
+            "**A maize-starch maker in Kishanganj, Bihar**, that grinds maize into starch for paper mills and food companies and sells the by-products as animal feed; it has just doubled its plant and added liquid glucose and maltodextrin.",
+            "**Good:** Q1 FY27 margin rose to 15% as it dropped low-margin maize trading, Bihar maize is cheap and good, and capacity doubled in May 2026. **Bad:** net debt is **₹735cr**, about five and a half times a year's operating profit; five years of operating profit produced only 23% as cash; and the margin swings with maize prices it cannot control.",
+            "**Verdict: wait.** Cheap at 14 times earnings, but I want to see the doubled plant run full and debt fall in H2 before trusting a commodity business this leveraged."
+        ],
+        "tagline": "A Bihar maize wet-milling company that makes native starch, liquid glucose, maltodextrin and feed by-products, now the largest such plant in eastern India.",
+        "revenue": "₹1,134cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "Native and modified starch",
+                "text": "Maize starch sold under the 'Lion' brand, mainly to paper and board mills and food makers; modified starches (cationic, pre-gel, carboxymethyl and others) were due to start by September 2026."
+            },
+            {
+                "name": "Liquid glucose and maltodextrin (value-added)",
+                "text": "A 180 t/day liquid glucose line and a 50 t/day maltodextrin powder line started with the May 2026 expansion; liquid glucose reached about 70% use. Dextrose is planned for Q4 FY27. Value-added products were 3% of FY26 turnover and are guided to 20–22% in FY27."
+            },
+            {
+                "name": "Co-products",
+                "text": "Gluten, germ, fibre and enriched fibre sold mainly to animal-feed and oil makers; about 22% of FY25 revenue."
+            },
+            {
+                "name": "Maize trading",
+                "text": "Resale of maize, about 17% of FY25 revenue and 19.5% of Q1 FY26, cut to 3.3% in Q1 FY27 on purpose."
+            }
+        ],
+        "revenueText": "**Native starch was about 59% of FY25 revenue**, co-products 22% and traded maize 17% (RHP figures as summarised by brokers). In Q1 FY27 trading fell to 3.3% and **exports rose to 10.4%** (Bangladesh, Nepal and Malaysia among buyers). Revenue fell 18% to ₹202cr in Q1 FY27 because trading was dropped and the plant was shut for nine days to connect the new lines. Its top 10 customers were 45% of FY25 revenue.",
+        "mixes": [
+            {
+                "caption": "Revenue by product, FY25 (RHP, via broker notes)",
+                "parts": [
+                    {
+                        "label": "Native maize starch",
+                        "share": 59
+                    },
+                    {
+                        "label": "Co-products (feed)",
+                        "share": 22
+                    },
+                    {
+                        "label": "Traded maize",
+                        "share": 17
+                    },
+                    {
+                        "label": "Other",
+                        "share": 2
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Paper and board mills** such as Emami Paper Mills, Century Pulp & Paper, Genus Paper Board and Krishna Tissues (named in IPO material).",
+            "**Food and pharma companies**, including large MNCs it now bills directly for liquid glucose (unnamed on the call), plus white-label packs.",
+            "**Feed makers** for co-products, such as Kush Proteins and Mayank Cattle Food; top 10 customers were 45% of FY25 revenue."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Wet milling needs a large, continuous plant and steady maize supply, but the process is well known and several bigger rivals run it. Regaal's edge is location: it buys most maize straight from Bihar farmers at its gate, with no freight."
+        },
+        "moat": "Cheap, high-yield Bihar maize at the factory gate and the only large wet-milling plant in eastern India give it a cost edge nearby. Starch itself is a commodity, buyers are large, and bigger rivals in Gujarat and Punjab are also adding capacity.",
+        "salesDrivers": [
+            "**Volume**: crushing to rise from 2.65 lakh tonnes in FY26 to over 4 lakh tonnes in FY27 after capacity doubled to 1,650 t/day on 26 May 2026.",
+            "**Mix**: value-added products from 3% to 20–22% of turnover, about 35% in the longer run.",
+            "**Maize and starch prices**: profit per tonne moves with the gap between maize and starch prices, which management will not forecast.",
+            "**Season**: about 80% of a year's maize is bought in April–July, so stock and debt peak in H1; liquid glucose sells mostly in September–March.",
+            "**Exports**: doubled to 10% of Q1 revenue; a target was not given."
+        ],
+        "inputs": "**Maize**, about 70% of operating income (Crisil), bought mostly from Bihar farmers during the rabi harvest; plus power from its own 15.8 MW cogeneration plant and chemicals for modified starches.",
+        "costEffect": "**Price-linked, with a lag.** Starch prices follow maize, so the rupee profit per tonne tends to hold, but the percentage margin moves and a quick maize spike can hurt before prices catch up. It holds a year's stock bought at harvest, which protects FY27 if maize rises. **Rule of thumb:** with maize at about 70% of sales, a 10% rise in maize not passed on would cut the margin by about 7 points (11% to about 4%). **What happened:** the operating margin was 13% in FY21, 8–9% in FY23–FY24 when maize was dear, 12% in FY25, 11% in FY26 and 15% in Q1 FY27 after trading was cut.",
+        "competitors": [
+            {
+                "name": "Gujarat Ambuja Exports",
+                "note": "India’s largest maize processor, far bigger, and still adding capacity."
+            },
+            {
+                "name": "Sanstar",
+                "note": "Gujarat-based maize-starch and derivatives maker, also adding specialty capacity."
+            },
+            {
+                "name": "Gulshan Polyols and Sukhjit Starch",
+                "note": "Listed peers named in the RHP."
+            }
+        ],
+        "position": "**The largest maize wet-milling plant in eastern India** (company claim) at 1,650 tonnes a day; small against the national leaders.",
+        "money": "**Net debt was ₹735cr at June 2026**, against ₹127cr of FY26 operating profit, after a ₹664cr expansion (₹552cr spent by June) funded mostly with term loans. Interest on those loans is partly paid by Bihar's industrial policy, so net interest is guided at about ₹40cr in FY27. **Over FY22–FY26 it turned ₹383cr of operating profit into ₹88cr of operating cash, and free cash was −₹573cr.** It raised about ₹210cr in the August 2025 IPO. Crisil rates its ₹626cr of bank loans A-/Stable. Promoters hold **71.13%** and had ₹88cr of loans to the company outstanding at March 2025.",
+        "watch": [
+            "Net debt falling in H2 FY27 from the ₹735cr June peak.",
+            "Crushing reaching 4 lakh tonnes and value-added products 20% of sales.",
+            "Maize prices from September, when they usually rise in Bihar."
+        ],
+        charts: foodProductsCharts["Regaal Resources"],
+    },
+    {
+        "company": "Milky Mist Dairy",
+        "inShort": [
+            "**A Tamil Nadu dairy company that sells only value-added products**: paneer (the largest private branded paneer maker in India), cheese, curd, ghee, yogurt and ice cream, made at one large plant in Erode and sold mostly in South India.",
+            "**Good:** revenue grew 34% in FY26 and 44% in Q1 FY27, the margin is rising (15% in Q1), and the ban on fake 'analogue' paneer and zero GST on paneer help. **Bad:** the shares trade at **116 times earnings** after doubling from the ₹140 IPO price; free cash has been negative for four years; one plant and Tamil Nadu milk carry the whole business; contingent liabilities are ₹229cr.",
+            "**Verdict: pass.** A fine dairy brand, but the price assumes many years of near-perfect growth."
+        ],
+        "tagline": "A value-added dairy company from Erode, Tamil Nadu, best known for packaged paneer, cheese and curd, with its own milk collection, trucks and shop coolers.",
+        "revenue": "₹3,138cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Paneer",
+                "text": "₹923cr in FY26 (29% of revenue), including high-protein paneer; 19% share of organised packaged paneer (RHP). Q1 FY27 paneer grew 34% in volume."
+            },
+            {
+                "name": "Cheese, curd, ghee and butter",
+                "text": "Cheese ₹514cr (16%), curd ₹416cr (13%), ghee ₹308cr (10%) and butter ₹191cr (6%) in FY26. A 120 t/day natural cheddar plant started in Q1 FY27."
+            },
+            {
+                "name": "Ice cream and yogurt",
+                "text": "Ice cream ₹211cr (7%) and yogurt, including Greek yogurt and skyr, ₹195cr (6%) in FY26; yogurt sales were ₹84.5cr in Q1 FY27 alone."
+            },
+            {
+                "name": "Whey powder, UHT milk and others",
+                "text": "Whey powder (5%), mostly sold to biscuit makers, UHT products, khova, chocolate and ready-to-cook foods from the Asal and Briyas acquisitions. A whey protein plant is due in 15–18 months."
+            }
+        ],
+        "revenueText": "**Paneer, cheese and curd were 59% of FY26 revenue.** **South India was 69%** (Tamil Nadu and Karnataka about 24% each), the rest of India 27% and exports 4%. By channel, general trade was 38%, modern trade 23%, HoReCa 17% and e-commerce 14%, the fastest-growing. 97% of sales are under the Milky Mist brand.",
+        "mixes": [
+            {
+                "caption": "Revenue by product, FY26 (RHP)",
+                "parts": [
+                    {
+                        "label": "Paneer",
+                        "share": 29
+                    },
+                    {
+                        "label": "Cheese",
+                        "share": 16
+                    },
+                    {
+                        "label": "Curd",
+                        "share": 13
+                    },
+                    {
+                        "label": "Ghee",
+                        "share": 10
+                    },
+                    {
+                        "label": "Ice cream",
+                        "share": 7
+                    },
+                    {
+                        "label": "Yogurt",
+                        "share": 6
+                    },
+                    {
+                        "label": "Butter",
+                        "share": 6
+                    },
+                    {
+                        "label": "Powder",
+                        "share": 5
+                    },
+                    {
+                        "label": "Other",
+                        "share": 8
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by region, FY26 (RHP)",
+                "parts": [
+                    {
+                        "label": "South India",
+                        "share": 69
+                    },
+                    {
+                        "label": "Rest of India",
+                        "share": 27
+                    },
+                    {
+                        "label": "Exports",
+                        "share": 4
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Households through about 4 lakh shops**, served by more than 4,200 distributors and 41,000 coolers and freezers it places in shops.",
+            "**Supermarkets and quick-commerce apps**, its fastest-growing channel.",
+            "**Hotels and restaurants**, plus bulk whey powder to biscuit makers; it does not supply fast-food chains."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Paneer and curd are simple to make, but doing it at scale with steady quality needs a cold chain from farm to shop. It collects milk directly from more than 74,000 farmers and runs its own 375 trucks, which few regional rivals can match."
+        },
+        "moat": "A strong brand in paneer and cheese in the South, direct farmer procurement and an owned cold chain. The weaknesses are one plant, dependence on Tamil Nadu milk, and much larger rivals (Amul, Hatsun) in the same products.",
+        "salesDrivers": [
+            "**Category growth**: value-added dairy is expected to grow from about ₹5.5 lakh crore (FY25) to about ₹10 lakh crore by FY30; organised paneer at 20%+ a year.",
+            "**Regulation**: bans on analogue paneer in several states and zero GST on paneer since September 2025.",
+            "**Pricing**: a 10.5% price increase lifted Q1 FY27; it raises prices 2–3 months after milk costs rise.",
+            "**Capacity**: room to reach 3–3.5 times FY26 revenue at the current plant, plus a planned plant in Maharashtra in about three years.",
+            "**Distribution**: more than 50,000 new coolers and freezers over three years from IPO money."
+        ],
+        "inputs": "**Raw milk, 50–55% of input cost**, bought from farmers at ₹41–42 a litre (₹45 landed); daily procurement averaged 13.2 lakh litres in Q1 FY27. Packaging and fuel for its own fleet are the other big costs.",
+        "costEffect": "**Passed on with a lag of 2–3 months.** It sells no pouch milk, so it can raise product prices; it did by 10.5% in the year to Q1 FY27 and the gross margin rose 2.7 points to 34.2%. Tamil Nadu's state dairy, Aavin, has raised its milk procurement price by ₹3 a litre twice recently, so another round of price increases is due. **Rule of thumb:** with materials at about 66% of sales (gross margin 34%), a 10% rise in material costs not passed on would cut the margin by about 6.6 points (15% to about 8%). **What happened:** the operating margin was 15% in FY21–FY22, 12% in FY24 when milk was dear, and back to 14% in FY26 and 15% in Q1 FY27.",
+        "competitors": [
+            {
+                "name": "Hatsun Agro Product",
+                "note": "The large Tamil Nadu private dairy (Arun ice cream, Hatsun curd and paneer), much bigger and with a large pouch-milk business."
+            },
+            {
+                "name": "Amul (GCMMF)",
+                "note": "The national leader in butter, cheese and paneer."
+            },
+            {
+                "name": "Parag Milk Foods, Britannia and Heritage Foods",
+                "note": "Rivals in cheese and value-added dairy."
+            },
+            {
+                "name": "Unbranded paneer makers",
+                "note": "About 90% of paneer is still sold loose; analogue paneer bans push buyers to brands."
+            }
+        ],
+        "position": "**The largest private branded paneer maker in India** with 19% of organised packaged paneer, about 12% of cheese in the South and about 13% of yogurt among private players (RHP, CRISIL).",
+        "money": "Screener shows **₹1,677cr of borrowings at March 2026**; the IPO added ₹1,428cr of new money in August, of which ₹497cr goes to repay loans and ₹625cr to plant expansion and coolers, so net debt after the IPO is roughly ₹250cr on my estimate (March borrowings less the new money). **Free cash was negative in each of FY23–FY26 (−₹765cr in total)** because it spent heavily on the plant, though operating cash was 81% of operating profit. Promoters hold **79.51%**.",
+        "watch": [
+            "Margin holding near 15% as Tamil Nadu milk prices rise.",
+            "Growth outside the South, now about 31% of sales.",
+            "The whey protein plant and debt repayment from IPO money."
+        ],
+        charts: foodProductsCharts["Milky Mist Dairy"],
+    },
+    {
+        "company": "Orkla India",
+        "inShort": [
+            "**Sells packaged spices and ready-to-cook foods** under MTR (Karnataka), Eastern (Kerala) and Rasoi Magic. Spices are 65% of revenue and convenience foods 35%; 70% of sales come from South India and 21% from exports to the Indian diaspora.",
+            "**Good:** leading brands in their home states, a steady 16–17% operating margin, profit that turns into cash (77% over five years) and about ₹500cr of net cash. **Bad:** sales grew only 5% a year over FY23–FY26, volume rose just 1.7% in Q1 FY27, Eastern is losing share in Kerala while being restructured, and spice prices are rising fast.",
+            "**Verdict: follow.** A good, cash-rich branded business at a fair price, but it needs to show that double-digit growth can last before it earns a place."
+        ],
+        "tagline": "The Indian arm of Norway's Orkla: a Bengaluru food company owning MTR (founded 1924) and Kerala's Eastern Condiments, listed in November 2025.",
+        "revenue": "₹2,509cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Spices",
+                "text": "Pure spices (chilli, coriander, turmeric; about 26% of revenue), priced at roughly 10% above the wholesale market price. Blended masalas (sambar, garam, chicken masala; about 39–40% of revenue) carry higher margins and are priced 15–25% above rivals. **About 65% of FY26 revenue.** No.1 in packaged spices in Karnataka (MTR) and Kerala (Eastern)."
+            },
+            {
+                "name": "Convenience foods",
+                "text": "Ready-to-cook breakfast mixes (rava idli, dosa batter), ready-to-eat meals, sweets, vermicelli and beverages under MTR. **About 35% of FY26 revenue.** Q1 FY27 growth was 11.9%, led by meals; wet batter has entered Hyderabad."
+            },
+            {
+                "name": "International",
+                "text": "Sells to the Indian diaspora in about 45 countries, led by the Gulf (Eastern is No.1 by household reach in the UAE). **About 21% of revenue.** Grew 10.1% in Q1 FY27, with the Gulf up 18.1%."
+            }
+        ],
+        "revenueText": "**Spices were 65% of FY26 revenue and convenience foods 35%.** By region, South India was 70%, international 21% and the rest of India 9%. Q1 FY27 revenue was ₹659cr, up 10.4% (product sales +11.5%), but **volume rose only 1.7%**: most of the growth was price, after spice costs jumped 32.8% (chilli up 78%). Excluding Kerala, domestic volume rose 6.3%. Online sales grew 38% to 8.9% of domestic revenue, and modern trade 18.6%. No single customer is disclosed as significant.",
+        "mixes": [
+            {
+                "caption": "Revenue by category, FY26 (investor presentation)",
+                "parts": [
+                    {
+                        "label": "Spices",
+                        "share": 65
+                    },
+                    {
+                        "label": "Convenience foods",
+                        "share": 35
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by geography, FY26 (investor presentation)",
+                "parts": [
+                    {
+                        "label": "South India",
+                        "share": 70
+                    },
+                    {
+                        "label": "International",
+                        "share": 21
+                    },
+                    {
+                        "label": "Rest of India",
+                        "share": 9
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Households in South India**, reached through about 6.8 lakh retail outlets via distributors (general trade), plus modern trade and quick-commerce/e-commerce apps.",
+            "**Indian diaspora abroad**, through importers and retailers in the Gulf, US, UK, Canada, Australia and about 40 other countries."
+        ],
+        "difficulty": {
+            "level": "Low",
+            "text": "Grinding and blending spices or making ready mixes is simple, and unbranded packers flood in when spice prices fall. The barriers are brand trust built over decades, recipes tuned to each region, and distribution to hundreds of thousands of shops."
+        },
+        "moat": "Strong regional brands: MTR in Karnataka and Eastern in Kerala are household names, and blended masalas sell at a 15–25% premium. The CEO says unbranded rivals fade when spice prices rise, which helps branded players now. But the brands are regional, national giants compete outside the south, and Eastern has been losing share in Kerala.",
+        "salesDrivers": [
+            "**Pricing and spice inflation**: price-led growth rose from 6.5% in Q4 FY26 to 11.4% in Q1 FY27. Management says most needed increases are already taken.",
+            "**Volume**: the stated priority. Ex-Kerala domestic volume grew 6.3% in Q1, overall only 1.7%.",
+            "**Kerala restructuring**: foods distribution done in June 2026 (+14% sales productivity), open-format outlets due by December 2026 and spices by March 2027.",
+            "**Digital commerce (Project Bolt)** and breakfast foods in the top 28 metros; 23 launches in Q1.",
+            "**Exports**: Gulf demand and freight costs; UK/EU entry through non-dairy recipes.",
+            "**No formal guidance**: the company does not give forward guidance; the CEO calls double-digit growth the ambition."
+        ],
+        "inputs": "**Chilli, coriander, turmeric and other spices, wheat (rava) and milk powder, plus packaging.** Materials and bought-in goods were 55% of FY26 sales. Spice costs fell for eight quarters, then rose 32.8% year on year in Q1 FY27.",
+        "costEffect": "**Mostly passed on, with a lag.** Pure spices are re-priced with the wholesale market; blended masalas get calibrated increases to protect margin while keeping a set premium over rivals. **What happened:** the company's spice cost index fell from 100 (Q1 FY25) to 86 (Q2 FY26), then rose to 116 by Q1 FY27, while the operating margin stayed between 14% and 19% a quarter (17.1% in Q1 FY27). Gross margin was helped in Q1 FY26 by falling prices and a PLI incentive. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5.5 points.",
+        "competitors": [
+            {
+                "name": "Local masala brands in each state",
+                "note": "The benchmark rivals for blended spices. Orkla prices 15–25% above them and lost about 0.3 points of share to them in Kerala; its filings do not name them."
+            },
+            {
+                "name": "Unbranded local packers",
+                "note": "Gain share when spice prices fall and fade when they rise, the CEO says."
+            },
+            {
+                "name": "National spice and packaged-food companies",
+                "note": "Larger outside the south, where Orkla earns only 9% of revenue; not named in the company's filings."
+            }
+        ],
+        "position": "**No.1 in packaged spices in Karnataka and Kerala**. It gained 0.3–0.5 points of share in Karnataka and Andhra Pradesh in Q1 FY27 but lost about 0.3 points in Kerala. It has 8 own factories and 22 outsourced ones.",
+        "money": "**Net cash of about ₹500cr**: ₹545cr of current investments and about ₹23cr of cash against about ₹63cr of lease liabilities, with no bank debt (March 2026). **Profit turns into cash**: over FY22–FY26, ₹1,705cr of operating profit produced ₹1,319cr of operating cash and ₹1,136cr of free cash. The balance sheet carries ₹1,012cr of goodwill, mainly from buying Eastern. The IPO was a pure sale, so the company raised no money; before it, a payout of 235% of FY25 profit went to shareholders, mostly Orkla. Orkla ASA holds 75%.",
+        "watch": [
+            "Volume growth back above 4–5% as price rises slow.",
+            "Eastern's Kerala share stabilising once the restructuring is done (by March 2027).",
+            "Whether the net cash is spent on acquisitions, as the CEO hinted, or returned."
+        ],
+        charts: foodProductsCharts["Orkla India"],
+    },
 ];
 
 export const foodProductsBusinesses = { intro, profiles };

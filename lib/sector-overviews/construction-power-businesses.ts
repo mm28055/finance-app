@@ -188,6 +188,298 @@ const profiles: BusinessProfile[] = [
         watch: ["Export orders (₹1,100cr target) and delayed shipments resuming.", "Start-up of the 75,000-tonne expansion.", "Margin moving toward the 12% aim."],
         charts: constructionPowerCharts['Skipper'],
     },
+    {
+        "company": "Karamtara Engineering",
+        "inShort": [
+            "**Makes the steel structures that hold up solar panels**, plus transmission-line towers, wind towers, fasteners and line hardware, from 13 plants in Maharashtra, Gujarat and Italy, selling about 40% abroad, mainly to US solar builders.",
+            "**Good:** revenue grew 37% to ₹4,312cr in FY26 and 72% in Q1 FY27, and over five years about 89% of operating profit turned into cash. **Watch:** solar is 79% of sales and the top 10 customers 49%; the margin is thin at 11–12%; heavy capex left free cash negative for three years; and a CBI charge-sheet over 2013 letters of credit names the Chairman and the CFO.",
+            "**Verdict: pass.** A fast grower with good cash conversion, but a CBI charge-sheet names the chairman and the CFO, solar is 79% of sales and about 45 times earnings already pays for this year's guided growth."
+        ],
+        "tagline": "A Mumbai family-run maker of solar mounting structures, tracker parts, transmission and wind towers and fasteners, founded in 1996 and listed in September 2026.",
+        "revenue": "₹4,312cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Solar structures",
+                "text": "Fixed-tilt mounting structures, tracker piles, torque tubes, couplers and purlins: 492,000 tonnes a year of capacity (about 16.8 GW), the largest in India by capacity according to the RHP's industry report. **79% of FY26 revenue.**"
+            },
+            {
+                "name": "Transmission towers and line hardware",
+                "text": "Lattice towers for lines up to 1,200 kV (a new plant at Bhachau, Gujarat, started recently) and line fittings such as clamps and dampers, partly made at its Italian subsidiary Iselfa. Towers were 6% of FY26 revenue."
+            },
+            {
+                "name": "Wind towers",
+                "text": "Angular (lattice) and tubular towers for wind turbines, started in FY25; about 3% of FY26 revenue. The lattice capacity can switch to transmission towers."
+            },
+            {
+                "name": "Fasteners and new lines",
+                "text": "Bolts, nuts and studs for solar, wind, transmission, railways and cars (5% of revenue); a pre-engineered building plant aimed at data centres due by April 2027; and a planned battery-storage business."
+            }
+        ],
+        "revenueText": "**Solar products were 79% of FY26 revenue**, lattice transmission towers 6%, fasteners 5%, wind towers 3% and the rest line hardware and structural steel. **Exports were 40.5% of FY26 revenue**, down from 57.6% in FY24, mostly to US solar builders; in Q1 FY27 international sales rose to 66%. The 50% US steel tariff is billed on to customers and inflates revenue: about ₹250cr of Q1's ₹1,581cr was tariff, against ₹113cr a year earlier. It sold about 135,000 tonnes in Q1. It does not disclose an order book; domestic solar orders run 4–5 months and export orders 8–9 months.",
+        "mixes": [
+            {
+                "caption": "Revenue by product, FY26 (RHP)",
+                "parts": [
+                    {
+                        "label": "Solar structures",
+                        "share": 79
+                    },
+                    {
+                        "label": "Transmission towers",
+                        "share": 6
+                    },
+                    {
+                        "label": "Fasteners",
+                        "share": 5
+                    },
+                    {
+                        "label": "Wind towers",
+                        "share": 3
+                    },
+                    {
+                        "label": "Other",
+                        "share": 7
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by market, FY26 (RHP)",
+                "parts": [
+                    {
+                        "label": "India",
+                        "share": 59
+                    },
+                    {
+                        "label": "Exports",
+                        "share": 41
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**US solar builders and tracker makers**: it serves 16 of the top 24 US solar EPC firms, and the RHP names Ampacity LLC (8.0% of FY26 revenue) and GameChange (6.2%).",
+            "**Indian solar developers and EPC firms** for fixed and tracker structures, and transmission contractors and utilities for towers.",
+            "**Concentrated**: the top 10 customers were 48.6% of FY26 revenue (63.5% in FY24); it had 42 international customers in March 2026."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Rolling, cutting and galvanising steel at scale is not technically hard, but qualifying with US tracker makers and keeping rejection rates near 0.1% takes years, and its own rolling mills and galvanising lines lower cost."
+        },
+        "moat": "Scale, backward integration (its own rolling mills and galvanising) and years of qualification with US buyers give it a cost and reliability edge. But the products are fabricated steel sold on price in a cyclical solar market, and margins of 11–12% show limited pricing power.",
+        "salesDrivers": [
+            "**Solar installations** in India and the US: management says demand is outrunning supply and it can pick its orders.",
+            "**Transmission**: the new Bhachau tower plant should reach peak output within 6–9 months, and management wants towers to grow the way solar did (from ₹20cr in FY21).",
+            "**Saudi Arabia**: a plant for towers and solar parts starts trials in December 2026; management expects some revenue in FY28 and fuller use 12–18 months after start.",
+            "**Guidance**: FY27 revenue up 60–65%, with 40–42% of the year's sales in the first half.",
+            "**US trade**: its products already pay the 50% Section 232 steel tariff, which customers have absorbed so far."
+        ],
+        "inputs": "**Steel** (billets, hot-rolled and coated coils, wire rods, angles, plates) and **zinc** for galvanising, plus bought washers, castings and forgings. Materials were about 58% of sales in FY26, and the top 10 suppliers about 90% of purchases.",
+        "costEffect": "**Mostly passed on.** Domestic solar orders are delivered in 4–5 months and steel and zinc are booked as soon as an order is won; export orders use imported material bought against the order; longer contracts carry price-variation clauses. Freight is the gap: high shipping and trucking costs cut the Q1 FY27 margin to 11% from 13% a year earlier. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 6 points (12% to 6%).",
+        "competitors": [
+            {
+                "name": "Nextracker, Array Technologies, Arctech",
+                "note": "Global solar tracker companies; customers or rivals depending on the project."
+            },
+            {
+                "name": "Purshotam Profiles, Mahindra Susten, Utkarsh India",
+                "note": "Indian solar structure makers and EPC players named in the RHP's industry report."
+            },
+            {
+                "name": "Skipper, KEC International, Kalpataru Projects",
+                "note": "Indian transmission tower makers; Karamtara is small in towers today."
+            }
+        ],
+        "position": "**India's largest maker of solar mounting structures and tracker parts by capacity** (RHP industry report), with 889,200 tonnes a year of total capacity; its solar tracker-pile plants ran at 85–89% in FY26 but newer lines at 20–45%.",
+        "money": "Borrowings were **₹1,030cr at March 2026** (₹1,105cr with leases on Screener) against about ₹143cr of cash and bank balances, so **net debt was about ₹962cr**; on top of that it owed ₹735cr to banks for supplier letters of credit (acceptances) in July 2026, which also explains its 194 days of supplier credit. The September 2026 IPO raised ₹675cr of new money, of which ₹600cr goes to repaying borrowings and acceptances, plus ₹200cr sold by the promoters, at ₹254 a share. Over FY22–FY26 it turned ₹1,241cr of operating cash out of ₹1,396cr of operating profit (89%), but capex of about ₹900cr in FY26 alone kept free cash negative for three years (−₹247cr in FY26). No dividend. Promoters hold **82.01%**, with no pledge disclosed.",
+        "watch": [
+            "Q2 results: the margin above 11% as promised, and debt down after the IPO repayment.",
+            "The CBI case against the company, Chairman and CFO, and the DRI export-incentive inquiry.",
+            "Solar demand in the US and India, and whether towers and the Saudi plant reduce dependence on solar."
+        ],
+        charts: constructionPowerCharts["Karamtara Engineering"],
+    },
+    {
+        "company": "Om Power Transmission",
+        "inShort": [
+            "**A small Gujarat contractor that builds high-voltage power lines, substations and underground cables**, mostly for GETCO, the state transmission utility, and maintains about 100 substations.",
+            "**Good:** revenue grew 61% to ₹449cr in FY26 with a steady 13% margin, management guides to about 50% more in FY27, and the price is about 12 times earnings. **Watch:** one customer was 64% of FY26 revenue and Gujarat 82% of the order book; over four years it turned only ₹5cr of ₹119cr of operating profit into cash; customers took 180 days to pay in FY26; and the order book has shrunk since December.",
+            "**Verdict: pass.** Cheap and growing, but one customer is 64% of revenue, Gujarat is 82% of orders, and only ₹5cr of ₹119cr operating profit over four years came in as cash."
+        ],
+        "tagline": "A Gujarat power transmission and substation EPC contractor founded in 2011 by three Patel promoters; listed in April 2026.",
+        "revenue": "₹449cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "Transmission lines",
+                "text": "Overhead lines from 66 kV to 400 kV, including specialised pile-foundation river crossings such as the Mahisagar and Dholera lines; over 1,000 circuit km built. **52% of FY26 revenue.**"
+            },
+            {
+                "name": "Substations",
+                "text": "Air- and gas-insulated substations up to 220 kV with SCADA monitoring; its largest job is a 400 kV GIS substation and lines at Dholera worth about ₹200cr. 22% of FY26 revenue."
+            },
+            {
+                "name": "Underground cabling",
+                "text": "High- and extra-high-voltage cables up to 220 kV, 19% of FY26 revenue but only about 2% of the order book after projects finished."
+            },
+            {
+                "name": "Operation and maintenance",
+                "text": "Runs more than 100 substations and 400 km of lines under long-term contracts; 7% of FY26 revenue."
+            }
+        ],
+        "revenueText": "**Transmission lines were 52% of FY26 revenue**, substations 22%, underground cabling 19% and maintenance 7%. **The top customer was ₹288cr, or 64%, of FY26 revenue**; management says most work is for GETCO, and the private-sector share fell from 35% in FY23 to about 15–16% in FY25. The order book was **₹621cr** in March 2026 (lines ₹449cr, substations ₹140cr), 82% from government companies and 82% in Gujarat, with first jobs in Rajasthan, Punjab and Dadra Nagar Haveli; it was ₹745cr in December 2025. Orders take 12–24 months, and about 35% of a year's revenue comes in the first half. Q1 FY27 revenue was ₹122cr, up 37%.",
+        "mixes": [
+            {
+                "caption": "Revenue by business, FY26 (management, Q4 FY26 call)",
+                "parts": [
+                    {
+                        "label": "Transmission lines",
+                        "share": 52
+                    },
+                    {
+                        "label": "Substations",
+                        "share": 22
+                    },
+                    {
+                        "label": "Underground cabling",
+                        "share": 19
+                    },
+                    {
+                        "label": "Maintenance",
+                        "share": 7
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**GETCO (Gujarat Energy Transmission Corporation)**, its anchor client, which rates it an AA-class contractor; the top customer was 64% of FY26 revenue.",
+            "**Other state utilities and PSUs** in Rajasthan, Punjab and Dadra Nagar Haveli, and Dholera industrial-city infrastructure.",
+            "**Private renewable, infrastructure and industrial clients**, about 18% of the order book, taken only at its target margins."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Utility qualifications by voltage class and experience take years, and river-crossing pile foundations are specialised, but it has not yet done 765 kV work and competes with many regional contractors on price."
+        },
+        "moat": "A long record and AA-class status with GETCO, which pays promptly by management's account, give it steady work at home. Outside Gujarat it is a newcomer, and in its home state it depends on one buyer.",
+        "salesDrivers": [
+            "**GETCO's spending**: GETCO is planning its first 765 kV lines and substations, a size Om Power has not built before but says it will qualify for.",
+            "**Order wins**: a pipeline of more than ₹900cr in March 2026 with a 30–40% win rate; order inflow was a record ₹615cr in FY26.",
+            "**New states and distribution work**: Rajasthan, Punjab and 11 kV distribution tenders.",
+            "**IPO money**: part of the ₹133cr raised goes to working capital for bid deposits and guarantees, letting it bid for larger jobs.",
+            "**Guidance**: about 50% revenue growth in FY27 at a 12–13% EBITDA margin."
+        ],
+        "inputs": "**Towers, conductors, insulators, cables, transformers and breakers**, bought against each order, plus subcontracted site labour. Materials were 53% of FY26 revenue and project costs (mostly labour and subcontracting) 24%.",
+        "costEffect": "**Mostly passed on**: almost all its contracts carry price-variation clauses, management says, and it books key items in bulk as soon as an order arrives. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points (13% to 8%). **What happened:** the margin rose from 8% in FY24 to 13% in FY25 and FY26 and was 12% in Q1 FY27, while management keeps gross margin at 23–25%.",
+        "competitors": [
+            {
+                "name": "Rajesh Power Services",
+                "note": "A Gujarat peer with similar margins and more distribution and private-sector work, named on the call."
+            },
+            {
+                "name": "KEC International, Kalpataru Projects, Transrail",
+                "note": "Far larger transmission EPC firms that dominate 765 kV and inter-state work."
+            },
+            {
+                "name": "Regional Gujarat contractors",
+                "note": "Bid for GETCO lines and substations against it."
+            }
+        ],
+        "position": "**A small regional transmission EPC contractor**, among GETCO's AA-class contractors, with a ₹621cr order book; tiny next to national transmission firms.",
+        "money": "Borrowings were **₹48cr** at March 2026 against ₹3cr of cash and ₹4cr of margin-money deposits, so **net debt was about ₹41cr**, before the IPO. The April 2026 IPO at ₹175 raised ₹150cr, ₹133cr of it new money, partly for working capital; the share now trades about 14% below the IPO price. **Over FY23–FY26 it turned only ₹5cr of operating cash out of ₹119cr of operating profit, and FY26 operating cash was −₹26cr**, as debtor days rose to 180, even though management says 80% of each bill is paid within 30 days; ₹66cr was held back as retention money in March 2026. CRISIL upgraded it to BBB+/Stable in April 2026. No dividend. Promoters hold **69.05%**, with no pledge.",
+        "watch": [
+            "Operating cash turning positive and debtor days falling back towards management's 30-day payment claim.",
+            "New orders, especially outside Gujarat and a first 765 kV job.",
+            "Whether margins hold at 12–13% as it bids in new states."
+        ],
+        charts: constructionPowerCharts["Om Power Transmission"],
+    },
+    {
+        "company": "Vikran Engineering",
+        "inShort": [
+            "**A Thane contractor that builds power substations, transmission and distribution lines, solar plants and village water schemes**, mostly for government utilities, and now also owns a 969 MW solar project it is building for itself.",
+            "**Good:** an order book of about ₹6,500cr, roughly five times FY26 revenue, and margins of about 14%. **Bad:** over five years it reported ₹589cr of operating profit but operating cash of −₹603cr; customers owe about ₹1,240cr plus ₹864cr of unbilled work against ₹1,249cr of revenue; one customer was 56% of FY26 revenue; and it took over a customer's ₹4,200cr solar project to settle unpaid dues, a project bigger than the company's market value.",
+            "**Verdict: avoid.** Profit has not turned into cash, and the company has bet its balance sheet on a project it must now fund itself; India Ratings has turned negative."
+        ],
+        "tagline": "A power transmission, distribution, solar and water EPC contractor run by the Markhedkar family, listed in September 2025, now also a solar power developer.",
+        "revenue": "₹1,249cr (FY26, consolidated; the same as standalone, as NOPL was bought after the year)",
+        "products": [
+            {
+                "name": "Power transmission and distribution (T&D)",
+                "text": "Substations up to 765 kV (air- and gas-insulated) and transmission lines for Power Grid and state utilities, and distribution upgrades for MSEDCL and NTPC under government schemes; recent work includes two hill-country lines in Arunachal Pradesh. About 28% of the order book."
+            },
+            {
+                "name": "Solar EPC",
+                "text": "Ground-mounted solar plants and balance-of-system work, for NTPC Renewable and others and above all for NOPL, its own 969 MW farm-solar (PM-KUSUM) portfolio in Maharashtra worth about ₹3,518cr to Vikran. About 62% of the order book."
+            },
+            {
+                "name": "Water and railways",
+                "text": "Rural drinking-water schemes under the Jal Jeevan Mission in Uttar Pradesh, Madhya Pradesh and Chhattisgarh, where payments have been slow, and a first railway overhead electrification order. About 10% of the order book."
+            },
+            {
+                "name": "NOPL Solar (own project)",
+                "text": "A ₹4,200cr solar portfolio with a 25-year agreement to sell power to MSEDCL and ₹1,017cr of central subsidy; management expects about ₹525cr of yearly revenue at an 85–88% margin once complete. 45 MW was running by August 2026."
+            }
+        ],
+        "revenueText": "**One customer was ₹698cr, or 56%, of FY26 revenue** (three customers were each above 10% in FY25). The company does not split revenue by segment. The order book was **about ₹6,496cr** in August 2026: solar 62%, T&D 28% and water 10%, with NOPL's ₹3,518cr the largest piece. In March 2026 it was ₹5,206cr, of which 51% was for private clients. Q1 FY27 standalone revenue rose 28% to ₹204cr, of which ₹62cr was building NOPL; consolidated revenue was only ₹141.6cr because work for its own subsidiary is treated as investment, not sales. Management guides to ₹2,200–2,500cr of standalone revenue in FY27, about ₹1,500cr of it from NOPL, and says the second half is always heavier.",
+        "mixes": [
+            {
+                "caption": "Order book by business, August 2026 (management, Q1 FY27 call)",
+                "parts": [
+                    {
+                        "label": "Solar EPC",
+                        "share": 62
+                    },
+                    {
+                        "label": "Power T&D",
+                        "share": 28
+                    },
+                    {
+                        "label": "Water",
+                        "share": 10
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Its own subsidiary NOPL Solar**, now the largest order, bought from Onix Renewable in April–May 2026.",
+            "**Central and state utilities**: Power Grid, NTPC and NTPC Renewable, MSEDCL (including ADB-funded distribution work worth ₹530cr won in April), MPPTCL and MP Urja Vikas Nigam.",
+            "**State water agencies** under the Jal Jeevan Mission, which owe about ₹120cr."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Substations up to 765 kV and lines in hill terrain need qualifications and a track record, but much of its work (distribution, solar balance-of-system, water pipelines) is open to many bidders on price."
+        },
+        "moat": "Qualifications with Power Grid and NTPC and a record in difficult terrain help in bidding, but it is a mid-sized contractor competing on price, with no lasting edge, and its growth now rests on its own solar project.",
+        "salesDrivers": [
+            "**The NOPL solar build**: about ₹1,500cr of FY27 standalone revenue, funded mostly by a project loan not yet closed in August.",
+            "**Grid spending**: transmission and distribution programmes (RDSS, ADB-funded state schemes, Power Grid substations).",
+            "**Government payments**: Jal Jeevan Mission funds are flowing again (₹23cr received in Q1); slow payment there swelled receivables.",
+            "**New areas**: battery storage, data-centre power and solar parks (no order yet; it targets one by March 2027), and Africa and the Middle East.",
+            "**Seasonality**: the first half is weak because of clients' budget cycles."
+        ],
+        "inputs": "**Bought-in equipment and materials**: transformers, switchgear, conductors, towers, cables, solar panels, inverters and pipes, plus subcontracted site work. Materials were about 35% of FY26 revenue and project and subcontracting costs about 39%.",
+        "costEffect": "**Mostly passed on** through price-variation clauses in government contracts, management says, including recent cost rises linked to the West Asia conflict. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 3.5 points (14% to 10.5%). **What happened:** the margin fell from 18% in FY25 to 14% in FY26 and to 8% on a consolidated basis in Q1 FY27, which management put down to a ₹6.5cr water-receivable provision and NOPL overheads with no matching revenue.",
+        "competitors": [
+            {
+                "name": "KEC International, Kalpataru Projects, Transrail",
+                "note": "Much larger transmission EPC firms with their own tower factories."
+            },
+            {
+                "name": "Techno Electric",
+                "note": "A substation and grid rival with a much stronger balance sheet."
+            },
+            {
+                "name": "Solar EPC contractors",
+                "note": "Many firms, including Sterling and Wilson, bid for solar work at thin margins."
+            }
+        ],
+        "position": "**A mid-sized power and solar EPC contractor** with 47 completed projects across 14 states by March 2026, far smaller than the leading transmission firms.",
+        "money": "Borrowings were ₹301cr at March 2026 against ₹220cr of cash and bank deposits, so **net debt was about ₹82cr**, but about ₹198cr of those deposits were pledged as margin money. **Customers owed about ₹1,237cr and unbilled work was ₹864cr, against FY26 revenue of ₹1,249cr.** Over FY22–FY26 it reported ₹589cr of operating profit but **operating cash of −₹603cr**, and free cash of −₹440cr in FY26 alone. The September 2025 IPO raised ₹721cr of new money at ₹97 a share (plus ₹51cr sold by shareholders), of which ₹541cr went into working capital; the share now trades about 43% below the IPO price. The NOPL project costs about ₹4,000–4,200cr, to be funded about 75% by debt and 25% by equity (about ₹1,000cr), more than two-thirds of its ₹1,425cr market value; management says the equity will come from its own cash and the project's revenue. India Ratings: IND A- with a Negative outlook since April 2026. Promoters hold **56.27%**.",
+        "watch": [
+            "Financial close of the NOPL loan, and how much equity Vikran itself has to put in.",
+            "Receivables and unbilled work falling, and operating cash turning positive.",
+            "Consolidated results, which strip out the self-billed NOPL work, as the true measure of growth."
+        ],
+        charts: constructionPowerCharts["Vikran Engineering"],
+    },
 ];
 
 export const constructionPowerBusinesses = { intro, profiles };

@@ -1069,6 +1069,116 @@ export const industrialsProcessCharts: Record<string, ProfileCharts> = {
             "inventory5y": -332,
             "payables5y": 136
         }
+    },
+    "Fabtech Technologies": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "11.6x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "9.1x",
+                "note": "Market value minus net cash, ÷ operating profit over the last four quarters (₹45cr)."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹149cr",
+                "note": "Cash, bank deposits and liquid investments minus borrowings and leases, March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "9%"
+            },
+            {
+                "label": "Order book",
+                "value": "₹900cr+",
+                "note": "About 2.2 years of FY26 revenue (June 2026)."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "4%",
+                "note": "Operating cash ÷ operating profit over FY22–FY26; 70–80% is healthy."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials and bought-in equipment",
+                    "share": 59
+                },
+                {
+                    "label": "Staff",
+                    "share": 11
+                },
+                {
+                    "label": "Other costs (site execution, freight)",
+                    "share": 22
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 8
+                }
+            ],
+            "note": "Filed consolidated results for FY26 (materials include purchases and stock change). Screener rounds the operating margin to 9%."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                120,
+                215
+            ],
+            "inventoryDays": [
+                17,
+                32
+            ],
+            "payableDays": [
+                136,
+                215
+            ],
+            "cycleDays": [
+                1,
+                32
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                32,
+                25,
+                35,
+                39,
+                37
+            ],
+            "ocf": [
+                -3,
+                -14,
+                60,
+                -36,
+                0
+            ],
+            "fcf": [
+                -4,
+                -14,
+                59,
+                -61,
+                -4
+            ],
+            "note": "Screener, consolidated. Operating cash was ₹0.5cr in FY26."
+        }
     }
 };
 
@@ -1115,5 +1225,11 @@ export const industrialsProcessValuationInputs: Record<string, ValuationInput> =
         "ttmEbitda": 129.0,
         "mcapAtWriting": 8119.0,
         "peAtWriting": 94.9
+    },
+    "Fabtech Technologies": {
+        "netDebt": -149,
+        "ttmEbitda": 45.3,
+        "mcapAtWriting": 561,
+        "peAtWriting": 11.6
     }
 };

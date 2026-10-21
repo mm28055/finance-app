@@ -387,6 +387,298 @@ const profiles: BusinessProfile[] = [
         watch: ["Housing.com's losses falling each quarter from Q3 FY27, its first full quarter in the group.", "Continuing-operations pre-tax margin staying above 5%.", "No further share issues beyond the announced deal."],
         charts: platformCharts['Aurum Proptech'],
     },
+    {
+        "company": "Physicswallah",
+        "inShort": [
+            "**India's largest low-price coaching brand for JEE, NEET and other exams**, sold mostly through cheap online courses and a fast-growing network of 353 offline and hybrid centres, now adding school tuition (K-12), government-exam coaching and skills courses.",
+            "**Good:** revenue grew 35% to ₹3,900cr in FY26, students pay up front so cash arrives before revenue (₹833cr of operating cash against ₹370cr of operating profit), and it holds about ₹5,600cr of cash and investments with no bank debt. **Bad:** profit is thin and seasonal (FY26 net loss of ₹24cr, Q1 FY27 loss of ₹88cr), offline centres are not yet profitable for the year, and the shares trade at about **597 times** earnings.",
+            "**Verdict: wait.** A real franchise with strong cash, but the price needs years of fast profit growth; I want to see the guided doubling of EBITDA and offline break-even first."
+        ],
+        "tagline": "An Indian test-preparation company founded by YouTube teacher Alakh Pandey and Prateek Boob, selling low-priced online courses and running offline and hybrid coaching centres (Vidyapeeth, Pathshala) across India.",
+        "revenue": "₹3,900cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Online courses",
+                "text": "App and YouTube-led live and recorded batches for JEE, NEET, UPSC, CA, GATE, government jobs and more, at about ₹3,800–4,000 per paying student a year, paid up front. Online revenue grew about 39% in FY26 and 33% in Q1 FY27; 4.87 million paid online users in FY26. Mature categories (JEE, NEET, CA) earn high margins (about 27% for online overall in FY26); NEET PG, skills (Earners), Curious Junior and regional-language courses still lose money."
+            },
+            {
+                "name": "Offline and hybrid centres",
+                "text": "353 centres at March 2026 (198 a year earlier): Vidyapeeth classroom centres (about 70% of offline), smaller Pathshala hybrid centres, and subsidiaries Xylem (Kerala) and Utkarsh (Rajasthan, government exams). Offline revenue grew about 31% to ₹1,774cr in FY26 but only 14% in Q1 FY27 as NEET results came late. Fees are about ₹32,000 a student a year; centres opened in 2023–24 already earn 13–15% margins, the target for all."
+            },
+            {
+                "name": "K-12 and early learning",
+                "text": "Online school tuition: foundation classes, Curious Junior for younger children and 14 state boards (up from 7). ₹105cr of revenue in Q1 FY27, up 88%, with enrolments up 41% to 0.78 million."
+            },
+            {
+                "name": "Other",
+                "text": "Books and the PW Books app, skills courses, programmes inside 50-plus partner schools, and the lending arm Finzy, which is being sold."
+            }
+        ],
+        "revenueText": "**Online was about 55% and offline about 45% of FY26 revenue** (offline ₹1,774cr, by the company's FY26 figures). From Q1 FY27 the company reports online and offline as separate segments for the first time, with the year-ago quarter restated. Revenue is spread across the 10–12 month course while fees arrive up front, so the first half brings in cash and Q4 and Q1 show weak margins (operating margin 3.1% in Q4 FY26 and −5% in Q1 FY27, against 17–22% in Q2 and Q3 FY26).",
+        "mixes": [
+            {
+                "caption": "Revenue by channel, FY26 (company figures, approximate)",
+                "parts": [
+                    {
+                        "label": "Online",
+                        "share": 55
+                    },
+                    {
+                        "label": "Offline and others",
+                        "share": 45
+                    }
+                ],
+                "note": "Offline ₹1,774cr of ₹3,900cr."
+            }
+        ],
+        "customers": [
+            "**School students preparing for entrance exams**, mainly JEE (engineering) and NEET (medicine): 5.34 million paid users in FY26, many from smaller towns and families who cannot afford ₹1–2 lakh coaching fees.",
+            "**Adults preparing for government jobs, UPSC, CA, GATE and NEET PG**, through the main app, Utkarsh and other subsidiaries.",
+            "**Younger school children** in K-12 and state-board tuition, the fastest-growing group."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Anyone can put classes online, and many have. What is hard is a trusted teacher brand with millions of YouTube followers that brings students in cheaply, and, in classroom coaching, proven exam results that justify higher fees. Centres need rent, trained faculty and three to four years to mature."
+        },
+        "moat": "Brand and reach: the founder's following lets it sell courses at a fraction of rivals' prices and still earn high online margins, and large selection numbers attract the next batch. In classroom coaching it is a challenger to Allen and Aakash, now competing on results rather than price, and the brand leans heavily on its founders.",
+        "salesDrivers": [
+            "**Exam calendars**: NEET's late results in 2026 pushed enrolments from Q1 into Q2; government-job notifications swing Utkarsh (about 8 lakh fewer enrolments in Q1).",
+            "**Price per student**: offline fees rose 7% in Q1 FY27 after falling in FY26; online about ₹3,800 per paying user.",
+            "**New categories**: K-12, state boards, NEET PG (enrolments up about 50%), skills and regional languages.",
+            "**Slower centre roll-out**: new centres will be decided over the next two quarters and only where the economics work; the focus is filling existing seats (utilisation rose from 1.77 to 1.99 students per seat).",
+            "**Guidance**: FY27 revenue up 30% and EBITDA up 100%, offline near break-even."
+        ],
+        "inputs": "**Teachers and staff, rent and marketing, not materials.** Staff costs were about ₹1,906cr, roughly 49% of FY26 revenue (the four reported quarters added up); marketing was ₹128cr in Q1 FY27 alone. Offline centres add rent (mostly shown as lease depreciation and interest under accounting rules) and faculty.",
+        "costEffect": "**No commodity exposure; the margin is teacher pay, centre rent and marketing against fees.** Fees are paid up front for the year, so higher costs can be passed on only at the next admission season. **What happened:** the operating margin went from −50% in FY24 (including a one-time ₹756cr non-cash charge on preference shares) to 2.5% in FY25 and 9% in FY26 as centres matured and staff costs grew slower than revenue; in Q1 FY27 staff cost excluding share options fell 2.6% while revenue rose 24%.",
+        "competitors": [
+            {
+                "name": "Allen Career Institute and Aakash",
+                "note": "The large classroom chains for JEE and NEET, charging far higher fees; management says their fees are flat or falling while its own rose 7%."
+            },
+            {
+                "name": "Unacademy and Vedantu",
+                "note": "Online test-prep rivals that shrank sharply after the edtech funding boom ended."
+            },
+            {
+                "name": "Regional chains and Sri Chaitanya",
+                "note": "Strong local coaching brands in Kota, Hyderabad and the south."
+            },
+            {
+                "name": "Free YouTube teachers",
+                "note": "The same low-cost channel that built PhysicsWallah."
+            }
+        ],
+        "position": "**One of India's largest test-prep companies by students**, with 5.34 million paid users and 353 centres; it claims the most NEET and JEE selections of any coaching company.",
+        "money": "Screener shows borrowings of ₹1,876cr at March 2026, almost all of it lease liabilities on centres; against that it held about **₹5,027cr of cash and investments** (about ₹5,600cr by June, including about ₹2,000cr of unspent IPO money). The November 2025 IPO at ₹109 raised ₹3,100cr of new money for centres, rent, subsidiaries, cloud and marketing, plus a ₹380cr sale by the founders. Because students pay up front, operating cash (₹833cr in FY26) runs well ahead of operating profit (₹370cr), and free cash was ₹494cr. Management plans to spend mainly on online content and acquisitions, and is selling Finzy. No dividend. Staff share options keep diluting shareholders slightly (options worth about ₹500cr were granted in Q2 FY26). Promoters hold **71.17%**, down from 72.30% only through option allotments.",
+        "watch": [
+            "Q2 FY27 results: offline growth catching up after the NEET delay.",
+            "Progress towards the FY27 targets of 30% revenue growth and double the EBITDA.",
+            "Offline centres reaching break-even, and how the ₹5,600cr of cash is spent on acquisitions."
+        ],
+        charts: platformCharts["Physicswallah"],
+    },
+    {
+        "company": "Arisinfra Solutions",
+        "inShort": [
+            "**Supplies construction materials to builders and contractors** (stone aggregates, ready-mix concrete, asphalt, steel, cement), increasingly from partner plants whose output it reserves, and runs projects for property developers for a fee (Developer-as-a-Service, DaaS).",
+            "**Good:** revenue grew 39% in FY26, the operating margin went from about zero in FY23 to **9%** (11% in Q1 FY27), FY26 operating cash was ₹142cr, and the P/E is about 16. **Bad:** losses until FY24, customers take about **140 days** to pay, the top 10 customers are 45–50% of sales, roughly half of profit comes from fees on about ten developer projects, net debt is rising again, and a promoter pledge appeared in September.",
+            "**Verdict: follow.** Cheap for its growth and the cash finally arrived in FY26, but it is one good cash year in a thin-margin, credit-heavy business; I want Q2 and Q3 to show the margin and collections holding."
+        ],
+        "tagline": "A Mumbai-based, technology-led supplier of construction materials, founded in 2021 by Ronak Morbia and Bhavik Khara and listed in June 2025, that sources from partner plants and runs real-estate projects for developers for a fee.",
+        "revenue": "₹1,067cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "B2B supply",
+                "text": "Buys almost any construction material (cement, steel, aggregates, chemicals, finishing items) from about 2,200 vendors and resells it to builders, with the supplier delivering directly. It earns only about 2–2.5% at the operating level (Q4 FY26 call); about 44% of FY26 revenue and 37% in Q1 FY27."
+            },
+            {
+                "name": "Contract manufacturing",
+                "text": "Reserves output from about ten partner plants (about 9 million tonnes a year, mostly in Maharashtra and Tamil Nadu) by paying refundable deposits, and sells stone aggregates, ready-mix concrete and, since late 2025, asphalt. ₹499cr in FY26 (up 95%) at about a 9–9.5% margin; 53% of Q1 FY27 revenue, with the reserved capacity about 65–70% used."
+            },
+            {
+                "name": "Developer-as-a-Service (DaaS)",
+                "text": "Manages a developer's project for a monthly fee plus a share of construction and sales, without lending or owning the project. ₹98cr of FY26 revenue (up 109%) and ₹28cr in Q1 FY27, at a 55–65% margin by management's account; about ₹1,800cr of project value (GDV) under execution across 10 projects."
+            }
+        ],
+        "revenueText": "**Contract manufacturing and DaaS were 56% of FY26 revenue** (₹499cr and ₹98cr of ₹1,067cr), up from under 40% in FY25, and 63% in Q1 FY27. On management's stated margins, DaaS's ₹98cr earned roughly ₹55cr, about half of FY26 segment profit (my arithmetic). By product, aggregates were 37%, ready-mix concrete 25% and steel 7% of revenue in the nine months to December 2024 (RHP). Sales are concentrated in three states: Maharashtra 52%, Tamil Nadu 30% and Karnataka 12% in the same period. Asphalt reached ₹53cr in Q1 FY27 from ₹30cr in Q4 FY26. The year is back-ended: about 40% of sales in the first half and 60% in the second.",
+        "mixes": [
+            {
+                "caption": "Revenue by business, FY26 (results coverage; B2B is the remainder)",
+                "parts": [
+                    {
+                        "label": "B2B supply",
+                        "share": 44
+                    },
+                    {
+                        "label": "Contract manufacturing",
+                        "share": 47
+                    },
+                    {
+                        "label": "DaaS",
+                        "share": 9
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by business, Q1 FY27 (call, approximate)",
+                "parts": [
+                    {
+                        "label": "B2B supply",
+                        "share": 37
+                    },
+                    {
+                        "label": "Contract manufacturing",
+                        "share": 53
+                    },
+                    {
+                        "label": "DaaS",
+                        "share": 10
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Infrastructure contractors**: named clients include Larsen & Toubro, Tata Projects, Afcons, J Kumar Infraprojects, Capacit'e Infraprojects and Megha Engineering.",
+            "**Property developers**: Wadhwa Group (a ₹650cr-GDV DaaS mandate in Q1 FY27; the CEO is its former COO), Piramal Realty, Godrej, Shapoorji Pallonji and others, for materials and DaaS.",
+            "**Concentration**: about 3,400 customers and 82% of revenue from repeat buyers, but the **top 10 are 45–50% of sales** (Q1 FY27 call) and the largest single customer was 18% in the nine months to December 2024 (RHP)."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Trading materials is easy to copy; the harder parts are reserving plant capacity on long contracts, judging builders' credit across thousands of small accounts, and winning developers' trust to run their projects. None needs much capital or technology that rivals cannot buy."
+        },
+        "moat": "Thin. Its edge is relationships, reserved plant capacity around Mumbai and in Tamil Nadu, and credit data on thousands of builders, which together let it move customers from simple supply into higher-margin products and services. But it owns no plants, B2B supply earns about 2%, larger rivals such as Infra.Market do the same thing, and DaaS fees depend on a handful of developer relationships.",
+        "salesDrivers": [
+            "**Guidance**: revenue up 35–40% in FY27 (reiterated on 6 August), with an operating margin of 10.5–11% held for the next few quarters; FY28–29 guidance promised in coming quarters.",
+            "**Mix shift**: contract manufacturing to 55–60% of revenue and DaaS steady at 9–11%; every point of mix moved out of 2%-margin trading lifts the margin.",
+            "**Capacity**: reserved partner capacity to rise from about 9 to 11 million tonnes a year over two quarters, mainly aggregates in Tamil Nadu, by recycling existing deposits rather than adding new ones.",
+            "**DaaS pipeline**: ₹1,800cr+ of project value under execution, up from ₹1,250cr in March; projects usually run 18–24 months, though the Wadhwa mandate is an eight-month engagement to sell existing stock.",
+            "**Construction cycle and seasons**: tied to Mumbai, Chennai and Bengaluru real estate and infrastructure; the monsoon quarters are slow."
+        ],
+        "inputs": "**Bought-in materials**: aggregates, ready-mix concrete and asphalt from partner plants, plus cement and steel for resale. Goods bought for resale were **83% of FY26 sales** (₹890cr).",
+        "costEffect": "**Largely passed on, so the margin depends on mix, not prices.** Most supply is priced back-to-back, buying and selling at the same time, so it carries almost no stock (2 days). The risk lies in contract-manufacturing price deals and DaaS fees rather than commodity swings. **Rule of thumb:** with materials at 83% of sales, a 1% rise in costs not passed on would cut the margin by about 0.8 of a point (9.4% to 8.6%). **What happened:** the operating margin went from −0.1% in FY23 to 1.8% in FY24, 6% in FY25, 9% in FY26 and 11% in Q1 FY27 as the mix moved away from cement and steel trading, not because input prices changed.",
+        "competitors": [
+            {
+                "name": "Infra.Market and OfBusiness",
+                "note": "Larger, unlisted B2B construction-material platforms with their own plants and brands."
+            },
+            {
+                "name": "Local traders and plant owners",
+                "note": "Most aggregates and ready-mix concrete are still sold by small regional players."
+            },
+            {
+                "name": "Anarock and other sales agencies",
+                "note": "Sell developers' homes for about 2–5% commission (management's figures); DaaS claims a wider role across the whole project."
+            }
+        ],
+        "position": "**A small player in a very fragmented market**: about 8.65 lakh tonnes delivered in Q1 FY27 to about 3,400 customers, with reserved plant capacity of about 9 million tonnes a year running at 65–70%. No market share is disclosed.",
+        "money": "Screener shows **₹70cr of borrowings and ₹101cr of cash at March 2026** (net cash about ₹31cr; the company put it at about ₹65cr). By June net debt was **₹14.5cr**, and management plans to let it rise to ₹75–80cr by March 2027 for working capital, within a 0.5–0.6x net debt-to-equity ceiling; in September it also agreed to pay ₹60cr to take its trading subsidiary Buildmex to 92%. Before the June 2025 IPO (₹500cr of new shares at ₹222, plus ₹80cr pre-IPO) it lost money in FY22–FY24 and borrowings reached ₹343cr; operating cash was −₹269cr, −₹14cr, ₹3cr and −₹21cr in FY22–FY25 before **₹142cr in FY26**. Customers take about **140 days** to pay (Screener, FY26), partly offset by about 90 days of supplier credit through supply-chain finance; it takes undated cheques from buyers as security and says provisions for bad debts total about 0.5% of lifetime sales. Capital work in progress has grown to ₹58cr. Rated BBB (Stable) by Acuité. No dividend. Promoters hold **39.68%** (September 2026), with 5.31% of their shares pledged.",
+        "watch": [
+            "Q2 and Q3 margin at 10.5% or more and revenue up 35%+, the first tests of the new baseline.",
+            "Net debt staying within ₹75–80cr and debtor days falling below 120 as sales grow.",
+            "Why the promoter stake rose and shares were pledged in September; any further pledging would weaken the case."
+        ],
+        charts: platformCharts["Arisinfra Solutions"],
+    },
+    {
+        "company": "Rentomojo",
+        "inShort": [
+            "**India's largest furniture and appliance rental platform**: about 2.54 lakh subscribers in 29 cities rent beds, sofas, fridges, washing machines and ACs by the month, online and through 89 company-run stores; Rentomojo buys, delivers, repairs and re-rents each item over several customers. Listed in September 2026.",
+            "**Good:** revenue up 51% in Q1 FY27 with a steady ~41% operating margin, about 22–26% return on capital, half of orders from repeat customers and 60% of traffic organic, and roughly 45% of the organised market. **Bad:** every rupee of operating cash goes back into buying furniture, so free cash flow has been negative or near zero every year (−₹126cr over FY22–FY26); FY26 profit was flattered by a ₹36.6cr tax credit and Q1's 'normalised profit' is before tax; management gives no guidance; a co-founder's NCLT case is pending; and the shares sell at about 52 times reported profit, nearer 100 times on fully taxed underlying profit (my arithmetic).",
+            "**Verdict: wait.** A genuinely good business priced for many years of 40% growth; I want to see that growth hold through a few listed quarters and free cash flow turn positive, or a lower price."
+        ],
+        "tagline": "A Bengaluru-based rent-instead-of-buy platform for furniture and home appliances, which owns the goods and handles delivery, repairs, relocation and refurbishment.",
+        "revenue": "₹387cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Furniture and appliance rentals",
+                "text": "Beds, mattresses, wardrobes, sofas, fridges, washing machines, TVs, ACs, water purifiers and fitness gear, rented singly or in bundles for an average of about **18 months**; customers can extend, return, relocate or buy. Rentals and subscriptions were **97.9%** of FY26 revenue (RHP). Live items: 8.51 lakh at March 2026, rented out about 83% of the time."
+            },
+            {
+                "name": "Own-label products",
+                "text": "Fridges and washing machines made for it by Dixon Technologies, and own-brand water purifiers; it also rents branded goods (Wakefit, Duroflex, Haier, Samsung) and buys whatever its demand model says customers want."
+            },
+            {
+                "name": "Experience stores",
+                "text": "**89 company-run stores** at June 2026 (82 in March), where people can see the products; offline grew about 83% in Q1 FY27. Management would not give the offline share of revenue on the call (about 18–20% in an October 2025 press report)."
+            }
+        ],
+        "revenueText": "Revenue is monthly rent from **about 2.54 lakh live subscribers** (March 2026), each renting about 2.8 items. It grows with subscribers (+36% in Q1 FY27), items per subscriber (up from about 2.3 historically) and rent per item (₹1,663 in Q1, +6%). Because each order earns for about 18 months, most of a quarter's revenue comes from earlier orders: unbilled contracted rent stood at **₹408cr** at June 2026 (₹293cr in March). Q1 FY27 revenue was ₹126cr, up 51%, on 3.29 lakh items ordered (+46%). The top 10 cities gave **89.5%** of FY26 revenue (RHP).",
+        "mixes": [
+            {
+                "caption": "Revenue by type, FY26 (RHP)",
+                "parts": [
+                    {
+                        "label": "Rentals and subscriptions",
+                        "share": 98
+                    },
+                    {
+                        "label": "Other (sale of used items etc.)",
+                        "share": 2
+                    }
+                ],
+                "note": "Rentals and other recurring subscription revenue were 97.9%."
+            },
+            {
+                "caption": "Revenue by city, FY26 (RHP)",
+                "parts": [
+                    {
+                        "label": "Top 10 metro cities",
+                        "share": 90
+                    },
+                    {
+                        "label": "Other 19 cities",
+                        "share": 10
+                    }
+                ],
+                "note": "Top 10 cities 89.5%; Indore and Lucknow are named as fast-growing newer markets."
+            }
+        ],
+        "customers": [
+            "**Young, mobile working people** in big cities who change jobs and homes every couple of years (average Indian tenancy is about 19 months, per management) and would rather pay monthly than buy, move and resell furniture.",
+            "**Tenants of the roughly 3.8 crore rented homes in its income bracket**, of which management says about 1.8 crore change hands every year; the whole organised rental industry has only about 6–7 lakh subscribers.",
+            "No customer concentration: the RHP says revenue from the top five customers is not applicable."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "Renting a sofa is easy to copy; doing it profitably is not. It needs cheap capital, a demand-and-churn forecast across 200–300 products and thousands of spare parts, warehouses and repair crews in every city, and good collections (99% of billed rent collected in FY26). Earlier rivals with more capital have shrunk."
+        },
+        "moat": "Scale and know-how. The largest player gets the most organic traffic (about 60% of visits) and repeat orders (about 50%), keeping marketing cheap, and its forecasting keeps about 83–86% of items rented. Item cohorts from FY17 earned **5.1 times** their cost by FY26 with 56% still earning (RHP). The limits: rental is still a small habit (rental searches are about 1% of purchase searches, per management), and no-cost EMIs make buying easy.",
+        "salesDrivers": [
+            "**New subscribers**: the biggest lever, helped by job moves (about 2 crore EPFO additions a year, per management) and word of mouth.",
+            "**More items per subscriber**: up from about 2.3 to about 2.8.",
+            "**Stores and new cities**: 89 stores, growing in Indore, Lucknow and other tier-2 cities; management would not give targets.",
+            "**Seasonality**: April–September is strongest for revenue (summer moves and job changes); management says to judge it year on year.",
+            "**Prices**: rent per item is set off purchase cost, so price rises are spread over 18–20 months of rent."
+        ],
+        "inputs": "**The furniture and appliances themselves**, bought as fixed assets (₹175cr of capex in FY26, about 45% of revenue) and charged as depreciation (₹70cr in FY26), not as materials. In operating costs: staff 16% of FY26 revenue, contract workers 10%, logistics 7%, performance marketing 5% and refurbishment 5% (FY26 restated accounts as reported by Inc42).",
+        "costEffect": "**Input prices hit capex and depreciation slowly, not the operating margin.** A 10–15% rise in appliance prices is recovered through higher rents on new orders, spread over 18–20 months, so management says demand and margins are little affected; repairs are about 6% of revenue. Interest rates matter more to profit after interest: borrowing costs averaged 9.58% in Q1 FY27, with new debt at 8.95%. **What happened:** Screener's operating margin rose from −1% in FY22 to 21% in FY23, 33% in FY24 and 43% in FY25, then 41% in FY26 and 40.8% in Q1 FY27, while the company reinvested in stores and marketing. Because depreciation is the real cost of the rented goods, operating margin overstates profit: the company's own EBIT margin is about 23%.",
+        "competitors": [
+            {
+                "name": "Furlenco",
+                "note": "The best-known private rival; FY24 revenue about ₹140cr, down 10% (Inc42)."
+            },
+            {
+                "name": "Cityfurnish and smaller rental firms",
+                "note": "Named in the RHP; management estimates peers and the long tail have about 3 lakh subscribers combined."
+            },
+            {
+                "name": "Buying on no-cost EMI",
+                "note": "Retailers, e-commerce and consumer lenders make buying outright cheap; the RHP names retail credit as competition."
+            },
+            {
+                "name": "Furnished flats and co-living",
+                "note": "An alternative for tenants who want a ready home."
+            }
+        ],
+        "position": "**The largest organised furniture and appliance rental platform in India**, with an estimated **42–47% of subscription revenue** and 50–55% of live subscribers in FY25 (Redseer, in the RHP).",
+        "money": "At March 2026, before the IPO, borrowings were ₹188cr plus ₹46cr of leases against ₹38cr of cash and liquid funds, so **net debt was about ₹196cr**, and net worth ₹296cr; borrowings rose to ₹258cr by June 2026 (RHP). The IPO in September 2026 raised ₹150cr of new money, of which ₹70cr repays debt and ₹42.5cr pays warehouse and store rents; the other ₹1,106cr went to selling investors. Operating cash flow was ₹173cr in FY26 but capex was ₹175cr, and free cash flow was negative or nearly zero every year from FY23 to FY26 (−₹4cr in FY26, Screener). FY26 profit of ₹104cr included a **₹36.6cr deferred-tax credit** from past losses; tax now runs at about 26%. Q1 FY27 profit was ₹7.8cr after an ₹11.4cr fire loss; the company's 'normalised PAT' of ₹21.9cr adds back the fire loss and the whole tax charge. No dividend. Promoters hold **19.75%**, DIIs 37.85% (Screener, September 2026).",
+        "watch": [
+            "Q2 FY27 revenue growth staying near 40–50%, and whether management starts giving guidance.",
+            "Free cash flow after capex and lease payments turning positive.",
+            "The co-founder's NCLT petition, and share sales by venture investors (Accel still about 12.8%) as lock-ins end."
+        ],
+        charts: platformCharts["Rentomojo"],
+    },
 ];
 
 export const platformBusinesses = { intro, profiles };

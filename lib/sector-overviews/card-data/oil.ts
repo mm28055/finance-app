@@ -1217,6 +1217,36 @@ export const oilCharts: Record<string, ProfileCharts> = {
             }
         ],
         "statsAsOf": "23 Sep 2026"
+    },
+    "Vedanta Oil & Gas": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "52.8x",
+                "note": "Flattered by a one-off ₹1,097cr demerger gain; continuing operations lost money."
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "3.6x",
+                "note": "Market value plus net debt, ÷ Screener operating profit over the last year (₹3,250cr, after exploration write-offs). About 2.8x on the company's EBITDA."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹488cr",
+                "note": "CRISIL, March 2026; the company said 'near zero' at June 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "31%",
+                "note": "Screener basis; company EBITDA margin 45%."
+            },
+            {
+                "label": "Gross output Q1 FY27",
+                "value": "77.7 kboepd",
+                "note": "Down 17% from 93.2 a year earlier."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026"
     }
 };
 
@@ -1281,5 +1311,11 @@ export const oilValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 392.0,
         "mcapAtWriting": 3844.0,
         "peAtWriting": 24.6
+    },
+    "Vedanta Oil & Gas": {
+        "netDebt": 488,
+        "ttmEbitda": 3250,
+        "mcapAtWriting": 11356,
+        "peAtWriting": 52.8
     }
 };

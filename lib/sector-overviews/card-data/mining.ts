@@ -1165,6 +1165,167 @@ export const miningCharts: Record<string, ProfileCharts> = {
             "inventory5y": -41,
             "payables5y": -33
         }
+    },
+    "Midwest": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "36.9x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "22.0x",
+                "note": "Market value minus net cash, ÷ operating profit over the last year (₹185cr)."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹34cr",
+                "note": "Cash and short-term investments minus borrowings, March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "28%"
+            },
+            {
+                "label": "Debtor days FY26",
+                "value": "129"
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                29,
+                129
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                29,
+                129
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                108,
+                91,
+                158,
+                175,
+                179
+            ],
+            "ocf": [
+                143,
+                -52,
+                128,
+                87,
+                175
+            ],
+            "fcf": [
+                87,
+                -86,
+                79,
+                -94,
+                48
+            ],
+            "note": "Screener, consolidated."
+        }
+    },
+    "Jain Resource Recycling": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "26.7x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "18.4x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year (₹577cr)."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹911cr",
+                "note": "Borrowings minus cash and short-term investments, March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "5.9%"
+            },
+            {
+                "label": "Operating cash FY26",
+                "value": "−₹591cr",
+                "note": "Against ₹563cr of operating profit."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY23",
+            "toYear": "FY26",
+            "debtorDays": [
+                30,
+                18
+            ],
+            "inventoryDays": [
+                45,
+                62
+            ],
+            "payableDays": [
+                4,
+                14
+            ],
+            "cycleDays": [
+                71,
+                66
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                127,
+                231,
+                371,
+                563
+            ],
+            "ocf": [
+                11,
+                33,
+                4,
+                -591
+            ],
+            "fcf": [
+                -11,
+                8,
+                -30,
+                -693
+            ],
+            "note": "Screener, consolidated."
+        }
     }
 };
 
@@ -1217,5 +1378,17 @@ export const miningValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 123.0,
         "mcapAtWriting": 772.0,
         "peAtWriting": 11.3
+    },
+    "Midwest": {
+        "netDebt": -34,
+        "ttmEbitda": 185,
+        "mcapAtWriting": 4098,
+        "peAtWriting": 36.9
+    },
+    "Jain Resource Recycling": {
+        "netDebt": 911,
+        "ttmEbitda": 577,
+        "mcapAtWriting": 9721,
+        "peAtWriting": 26.7
     }
 };

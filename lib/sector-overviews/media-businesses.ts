@@ -136,6 +136,71 @@ const profiles: BusinessProfile[] = [
         watch: ['Second-half margin back above 20%, as promised.', 'Debtor days and free cash flow.', 'Audited accounts for every subsidiary, and the price of the acquisition.'],
         charts: mediaCharts['Basilic Fly Studio'],
     },
+    {
+        "company": "Simca Advertising",
+        "inShort": [
+            "**A small Mumbai outdoor-advertising company** that sells space on hoardings, gantries, bus shelters and digital LED screens, mostly to banks, insurers, property developers and brands.",
+            "**Good:** FY26 revenue rose 76% to ₹127cr at an 18% operating margin, Q1 FY27 revenue rose 59%, and it has no debt. **Bad:** customers take **114 days** to pay, two orders from one or two finance clients made up about ₹25cr of business, sites are being moved in from outside the listed company on undisclosed terms, it is a thinly traded SME stock, and the price has more than doubled from the ₹183 issue price to about 29 times earnings.",
+            "**Verdict: pass.** Too small, too new and too dependent on a few clients for a 2–4 year holding, at a price that already assumes the growth continues."
+        ],
+        "tagline": "A Mumbai out-of-home (OOH) advertising company, incorporated in 2022 and listed on NSE SME in May 2026, moving from static hoardings to digital LED screens.",
+        "revenue": "₹127cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "Static hoardings and street media",
+                "text": "Billboards, gantries, bus panels, shelters, kiosks and vinyl signage, mainly in Mumbai; 74 static hoardings at July 2026."
+            },
+            {
+                "name": "Digital out-of-home (DOOH)",
+                "text": "LED screens sold in time slots (142 digital slots at July 2026), including new premium sites at Lower Parel and Infinity Mall; IPO money funds more screens."
+            },
+            {
+                "name": "Partner network",
+                "text": "Campaigns outside Mumbai through 250-plus partners in 235-plus towns, so it can sell national campaigns without owning the sites."
+            }
+        ],
+        "revenueText": "The company does not split revenue by product or client in the material I read. **FY26 revenue was ₹127cr, up 76%**, with ₹79cr in the second half. Q1 FY27 revenue was about **₹42.64cr, up 59%**, helped by a ₹15.26cr order from a financial-services client at the start of the year and a ₹10cr order from a banking or insurance client for July. It had 221 clients, of which 4 were government bodies and 64 repeat customers.",
+        "customers": [
+            "**Banks, insurers and financial-services firms**, its biggest recent orders (₹15.26cr and ₹10cr in early FY27).",
+            "**Real-estate developers, entertainment, fashion and lifestyle brands and advertising agencies**, as listed in its offer document.",
+            "**A few government bodies** (4 of 221 clients)."
+        ],
+        "difficulty": {
+            "level": "Low",
+            "text": "Outdoor advertising needs site rights and client relationships but little technology; good sites are won through municipal tenders and landlord deals that bigger rivals also chase."
+        },
+        "moat": "Its premium Mumbai sites are the asset, and good sites are limited, but rights are usually leased or won in time-bound tenders, so the edge can be lost at renewal. Nothing in the material I read shows long contracts with clients.",
+        "salesDrivers": [
+            "**Advertising budgets** of banks, insurers and property developers, which rise and fall with the economy and campaign calendars.",
+            "**Digital screens**: converting hoardings to LED lets it sell many time slots on one site; ₹12.72cr of IPO money is for screens and ₹5cr for a deal to sell 20 screens owned by Capital World Media Services.",
+            "**Premium sites**: new sites at JVPD, Lower Parel and Infinity Mall in Mumbai.",
+            "**Big single orders**: two finance-client orders worth about ₹25cr in April–July 2026."
+        ],
+        "inputs": "**Site rentals and licence fees** paid to landlords and civic bodies, printing and installation, and LED screens. A breakdown of FY26 costs was not available; total operating costs were 82% of revenue.",
+        "costEffect": "**Mostly a margin-on-rent business.** It pays for sites and resells the space; when sites sit empty or rents rise at tender renewal, margins fall. **Rule of thumb:** with costs at about 82% of revenue, a 10% rise in site costs not passed on would cut the margin by about 8 points (18% to 10%). **What happened:** the operating margin was 16% in FY24, 14% in FY25 and 18% in FY26; the March 2025 half-year showed a small operating loss.",
+        "competitors": [
+            {
+                "name": "Bright Outdoor Media, Laqshya Media and other Mumbai OOH firms",
+                "note": "Compete for the same municipal and private sites and brand budgets."
+            },
+            {
+                "name": "Times OOH and national OOH networks",
+                "note": "Larger networks that win big airport, metro and highway contracts."
+            },
+            {
+                "name": "Digital media",
+                "note": "Online and mobile advertising compete for the same marketing budgets."
+            }
+        ],
+        "position": "**A small Mumbai-focused outdoor-advertising player** with 216 media assets (74 static hoardings and 142 digital slots) at July 2026.",
+        "money": "Screener shows **no borrowings** at March 2026 and about ₹10cr of cash, before the May 2026 IPO raised **₹58cr fresh** at ₹183 a share (₹23.5cr for working capital, ₹12.72cr for LED screens, ₹5cr for the Capital World screens deal). **Customers took 114 days to pay in FY26**, with receivables of ₹42cr against payables of ₹27cr. Operating cash was ₹11cr in FY26, 73% of operating profit. No dividend. Promoters hold **73.91%** after listing.",
+        "watch": [
+            "H1 FY27 results (due by November) and whether growth holds beyond a few finance clients.",
+            "Receivable days falling from 114.",
+            "Who the media sites moved into the listed company came from, and on what terms."
+        ],
+        charts: mediaCharts["Simca Advertising"],
+    },
 ];
 
 export const mediaBusinesses = { intro, profiles };

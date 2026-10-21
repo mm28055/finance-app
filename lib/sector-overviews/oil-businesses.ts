@@ -326,6 +326,90 @@ const profiles: BusinessProfile[] = [
         watch: ["The 2026-27 ethanol tender allocation and the court-ordered 15 crore litres.", "The promoter pledge released and operating cash turning positive.", "The first Sumitomo biogas plants running, and how the jet-fuel plant is financed."],
         charts: oilCharts['TruAlt Bioenergy'],
     },
+    {
+        "company": "Vedanta Oil & Gas",
+        "inShort": [
+            "**India's largest private oil producer** (the former Cairn India), pumping crude and gas mainly from the Rajasthan (Barmer) block, about a quarter of India's crude output, and selling at prices linked to Brent.",
+            "**Good:** a low cost of about $17 a barrel, a 45–49% company-reported EBITDA margin, near-zero net debt, an AA+ rating, and a price of under 4 times operating profit. **Bad:** **gross output fell 17% in a year** to 77.7 kboepd, the Rajasthan licence that gives more than 80% of output runs only **until May 2030** per CRISIL, ₹9,545cr of Rajasthan claims are in dispute, reported profit is muddied by write-offs and one-off gains, and a heavily indebted parent depends on dividends and fees from group companies.",
+            "**Verdict: wait.** Cheap and cash-rich, but over a 2–4 year hold the licence end in 2030 and the falling output matter more than this year's cash; I want an extension beyond 2030 and output stabilising first."
+        ],
+        "tagline": "The demerged oil and gas arm of Vedanta (formerly Cairn Oil & Gas), listed in June 2026, producing crude and gas from Rajasthan, the Ravva and Cambay offshore blocks and newer exploration blocks.",
+        "revenue": "₹9,606cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Rajasthan block (RJ-ON-90/1)",
+                "text": "Mangala, Bhagyam, Aishwarya and satellite fields in Barmer: 63.1 kboepd gross in Q1 FY27 (81% of output), down 15% on a year. Kept going by tertiary recovery (polymer and chemical flooding), infill wells and low-cost 'rigless' well work. About 82% of reserves and resources."
+            },
+            {
+                "name": "Offshore: Ravva and Cambay",
+                "text": "Ravva (7 kboepd) off Andhra Pradesh and Cambay (4.6 kboepd) off Gujarat; the Cambay licence extension was refused and is in court, and Q1 FY27 carried an impairment for it."
+            },
+            {
+                "name": "OALP exploration blocks",
+                "text": "Newer blocks won under India's open acreage policy, producing 3.1 kboepd, mostly gas; ₹426cr of exploration cost on four blocks was written off in Q1 FY27."
+            }
+        ],
+        "revenueText": "Revenue is volume times Brent-linked prices. **Q1 FY27 revenue was ₹2,507cr** as realisations of **$99.7 a barrel** (Brent $104.5) offset a 16% fall in working-interest output; only about 85% of production was sold in the quarter. In FY26, revenue was ₹9,582cr on a $68.3 realisation and the company's EBITDA was ₹4,340cr (45%). Screener's operating profit is lower (₹2,941cr in FY26) because it deducts exploration write-offs. **Working-interest output was 51.1 kboepd**, two-thirds of gross, as partners hold the rest.",
+        "mixes": [
+            {
+                "caption": "Gross operated output by block, Q1 FY27 (company presentation)",
+                "parts": [
+                    {
+                        "label": "Rajasthan",
+                        "share": 81
+                    },
+                    {
+                        "label": "Ravva",
+                        "share": 9
+                    },
+                    {
+                        "label": "Cambay",
+                        "share": 6
+                    },
+                    {
+                        "label": "OALP blocks",
+                        "share": 4
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Indian refiners**, state-owned and private, buying crude at prices linked to Brent under government-approved terms.",
+            "**Gas buyers** in Rajasthan and Gujarat for its associated gas; customers are not named in the material I read."
+        ],
+        "difficulty": {
+            "level": "Very high",
+            "text": "Finding and producing oil needs government licences, large capital and specialist reservoir skills; keeping a mature field going with chemical flooding is technically demanding."
+        },
+        "moat": "Ownership of India's biggest onshore private field and a low cost per barrel give it a strong position for now. But it is a price-taker on oil, its main field is declining, and its right to produce depends on a government licence that runs to May 2030.",
+        "salesDrivers": [
+            "**Brent oil price**: Brent's rise from $81 to $104.5 between Q4 FY26 and Q1 FY27 added ₹368cr to quarterly EBITDA in the company's bridge.",
+            "**Output decline**: lower volume took ₹216cr off quarterly EBITDA over the same period; gross output fell 16% in FY26 to 87.2 kboepd.",
+            "**Licence**: the Rajasthan production-sharing contract is valid until May 2030 per CRISIL; the government's profit share rises with oil prices.",
+            "**Capex and wells**: about ₹3,000cr a year over the medium term per CRISIL; in Q1, five wells were drilled and three brought online.",
+            "**Costs**: FY27 direct operating cost guided in line with FY26."
+        ],
+        "inputs": "**Field services, well work, chemicals for flooding, power and staff**, plus royalty, cess and the government's profit-petroleum share. Unit operating cost was **$17.4 a barrel** in Q1 FY27.",
+        "costEffect": "**Revenue swings with oil; costs are fairly fixed.** It sells at Brent-linked prices, so oil prices drive profit directly; there is no input to pass on. Government royalty and profit share take a bigger slice as prices rise. **What happened:** between Q4 FY26 and Q1 FY27 a 29% jump in Brent added ₹368cr to quarterly EBITDA while falling output took off ₹216cr and lower costs added ₹50cr; year on year, EBITDA was roughly flat (₹1,232cr against ₹1,272cr) even though Brent rose 54%, because output fell 17%.",
+        "competitors": [
+            {
+                "name": "ONGC and Oil India",
+                "note": "State-owned producers with far larger reserves; ONGC is also a partner in the Rajasthan block."
+            },
+            {
+                "name": "Reliance (KG basin gas) and smaller private producers",
+                "note": "Other private upstream players; none matches the Rajasthan oil field."
+            }
+        ],
+        "position": "**India's largest private crude producer**, about a quarter of the country's crude output, with about 1.3 billion barrels of oil equivalent of reserves and resources across 44 blocks.",
+        "money": "CRISIL put **net debt at ₹488cr at March 2026**, with about ₹5,358cr of cash; at June the company reported net debt 'near zero' and ₹2,859cr of cash and liquid investments, after a corrected presentation first showed ₹1,126cr. About ₹1,000cr of debt falls due in FY27. Capex is about ₹3,000cr a year, mostly from its own cash. Reported FY26 profit was **−₹493cr** after exploration write-offs of ₹1,252cr; Q1 FY27 profit of ₹945cr included a one-off ₹1,097cr gain from the demerger, and continuing operations lost ₹152cr after a ₹345cr impairment and demerger costs. Contingent claims on the Rajasthan contract total about ₹9,545cr (sub judice). CRISIL and ICRA rate it AA+. Vedanta Resources owns **56.38%**; group firms are expected to pay it dividends and brand fees. Screener had no balance sheet or cash flow for the new company.",
+        "watch": [
+            "Any government decision to extend the Rajasthan licence beyond May 2030.",
+            "Output: whether decline slows from 17% a year.",
+            "Dividends and fees paid up to Vedanta Resources, and the Rajasthan and Cambay disputes."
+        ],
+        charts: oilCharts["Vedanta Oil & Gas"],
+    },
 ];
 
 export const oilBusinesses = { intro, profiles };

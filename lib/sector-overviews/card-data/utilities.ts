@@ -779,6 +779,194 @@ export const utilitiesCharts: Record<string, ProfileCharts> = {
             "inventory5y": 0,
             "payables5y": 73
         }
+    },
+    "Vedanta Power": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "Loss",
+                "note": "Net loss of ₹1,686cr in FY26 and ₹423cr in Q1 FY27 after one-offs; Screener's 19.3x leaves those out."
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "13.6x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year (₹1,432cr)."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹7,621cr",
+                "note": "Company's net debt walk, March 2026 (₹7,704cr at June)."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "18%"
+            },
+            {
+                "label": "Sales under contract",
+                "value": "74%",
+                "note": "Share of power sales under long or medium-term PPAs, Q1 FY27."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "Q4 FY26",
+            "parts": [
+                {
+                    "label": "Power and fuel (mainly coal)",
+                    "share": 68
+                },
+                {
+                    "label": "Other costs",
+                    "share": 10
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 22
+                }
+            ],
+            "note": "The FY26 cost split is not in the filings read; this is Q4 FY26 from the Q1 FY27 presentation, the last quarter before the Sakti accident. In Q1 FY27 fuel took 79% and operating profit 11%."
+        },
+        "workingCapital": {
+            "fromYear": "FY25",
+            "toYear": "FY26",
+            "debtorDays": [
+                67,
+                66
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                67,
+                66
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                1072,
+                1080
+            ],
+            "ocf": [
+                768,
+                556
+            ],
+            "fcf": [
+                738,
+                477
+            ],
+            "note": "Standalone figures (excluding Meenakshi), the only cash flows on Screener; consolidated operating profit was ₹1,558cr in FY26."
+        }
+    },
+    "Juniper Green Energy": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "537x",
+                "note": "Screener's figure; on the last four quarters' profit (₹51cr) it is about 280x. Either way, profit is tiny next to the assets."
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "34.7x",
+                "note": "Market value plus net debt (June 2026, pre-IPO), ÷ operating profit over the last year (₹731cr); about 16x on the ₹1,620cr run-rate management quotes."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹11,217cr",
+                "note": "Company figure at 30 June 2026, before about ₹1,412cr of IPO money repaid debt."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "85%"
+            },
+            {
+                "label": "Interest ÷ operating profit FY26",
+                "value": "66%",
+                "note": "₹400cr of interest against ₹608cr of operating profit."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Plant running, staff and other costs",
+                    "share": 15
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 85
+                }
+            ],
+            "note": "From Screener. Of each ₹100 of sales, interest then took about ₹56 and depreciation ₹33; other income of ₹84cr is what left a small profit."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                49,
+                57
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                49,
+                57
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                146,
+                267,
+                338,
+                425,
+                608
+            ],
+            "ocf": [
+                142,
+                255,
+                322,
+                365,
+                470
+            ],
+            "fcf": [
+                -1083,
+                -360,
+                -506,
+                -2205,
+                -6162
+            ],
+            "note": "Operating profit turns into cash well (87% over five years); free cash is deeply negative because it is building plants with debt."
+        }
     }
 };
 
@@ -813,5 +1001,18 @@ export const utilitiesValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 188.0,
         "mcapAtWriting": 1094.0,
         "peAtWriting": 18.7
+    },
+    "Vedanta Power": {
+        "netDebt": 7621,
+        "ttmEbitda": 1432,
+        "mcapAtWriting": 11845,
+        "peAtWriting": 19.3,
+        "lossMaking": true
+    },
+    "Juniper Green Energy": {
+        "netDebt": 11217,
+        "ttmEbitda": 731,
+        "mcapAtWriting": 14160,
+        "peAtWriting": 537
     }
 };

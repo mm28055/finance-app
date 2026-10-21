@@ -195,6 +195,235 @@ const profiles: BusinessProfile[] = [
         watch: ["Pune waste-to-energy plant restarting in October, and the final write-down and insurance recovery.", "Margin back above 20% as wage escalations are billed (management expects FY28).", "The Supreme Court case on the Kanjurmarg site.", "Debt as the Andhra Pradesh plants are built: CARE would downgrade if the margin stays below 16% or debt tops three times operating profit."],
         charts: utilitiesCharts['Antony Waste Hand'],
     },
+    {
+        "company": "Vedanta Power",
+        "inShort": [
+            "**A coal-fired power producer demerged from Vedanta in May 2026**, owning four plants (4,180 MW) in Punjab, Andhra Pradesh, Odisha and Chhattisgarh; India's fifth-largest private thermal producer by its own count.",
+            "**Good:** the 1,980 MW Talwandi Sabo plant is contracted to Punjab until 2041 with fuel costs passed through, 74% of sales are under contracts, 85% of coal comes from Coal India linkages, and power demand is at a record. **Bad:** a loss of ₹1,686cr in FY26 after ₹2,295cr of one-offs (Talwandi Sabo's mega power benefits reversed and an arbitration settled) and another ₹423cr loss in Q1 FY27; **net debt of ₹7,621cr is about 5.4 times operating profit**; a 600 MW Sakti unit has been down since April; and the promoter's whole stake is pledged for the parent's debt.",
+            "**Verdict: avoid.** A leveraged, loss-making coal generator whose control is collateral for Vedanta Resources' borrowing, priced at about 14 times operating profit."
+        ],
+        "tagline": "A thermal power company that sells electricity from 4,180 MW of coal plants to state utilities under long contracts and on the power exchange, adding a 600 MW unit at Sakti and planning 7,200 MW more by FY33.",
+        "revenue": "₹8,799cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Talwandi Sabo, Punjab (1,980 MW)",
+                "text": "Three 660 MW supercritical units, fully contracted to Punjab's PSPCL until 2041; fixed charges are paid if availability is at least 80% and coal costs pass through. It supplies about 35% of Punjab's power. Availability was 83% in FY26 and 86% in Q1 FY27; losing 'mega power' status means capacity charges are under-recovered."
+            },
+            {
+                "name": "Meenakshi Energy, Andhra Pradesh (1,000 MW)",
+                "text": "A wholly owned subsidiary; 300 MW is contracted until 2031 (part of a 500 MW, five-year Tamil Nadu deal shared with Sakti) and the rest sells short-term. It still uses about 35% imported coal, moving to 100% Indian coal. Record EBITDA of ₹112cr in Q1 FY27."
+            },
+            {
+                "name": "Jharsuguda, Odisha (600 MW)",
+                "text": "Fully contracted to Odisha's GRIDCO until 2037 with fuel pass-through, availability 93% in Q1. A tribunal ruled it is owed about ₹300cr in a short-supply dispute (now in the Supreme Court) and the state regulator allowed about ₹40cr a year of ash-disposal cost."
+            },
+            {
+                "name": "Sakti, Chhattisgarh (600 MW running, 600 MW being built)",
+                "text": "Called Athena Chhattisgarh Power by CRISIL; started in Q2 FY26 with 200 MW contracted until 2031. Unit 1 stopped after a boiler accident on 14 April 2026 (sales fell to 464 MU from 1,087 MU a quarter earlier); Unit 2 is due in Q4 FY27. A further 7,200 MW here is planned from FY30, not yet board-approved."
+            }
+        ],
+        "revenueText": "It sells only electricity. **74% of sales are under long or medium-term contracts** with Punjab, Odisha, Tamil Nadu (500 MW for five years) and Kerala (100 MW for one year at about ₹5.96 a unit); the rest goes to the power exchange or short-term buyers. In FY26 it sold **18,018 million units at about ₹4.9 a unit against ₹4.0 of cost**; Talwandi Sabo was 55% of volume. Q1 FY27 sales rose 38% to 5,224 MU and revenue 31% to ₹2,607cr, but EBITDA fell to ₹291cr after ₹226cr of one-offs (the Sakti outage and an availability dispute).",
+        "mixes": [
+            {
+                "caption": "Power sold by plant, FY26 (company presentation)",
+                "parts": [
+                    {
+                        "label": "Talwandi Sabo",
+                        "share": 55
+                    },
+                    {
+                        "label": "Meenakshi",
+                        "share": 16
+                    },
+                    {
+                        "label": "Sakti",
+                        "share": 15
+                    },
+                    {
+                        "label": "Jharsuguda",
+                        "share": 14
+                    }
+                ]
+            },
+            {
+                "caption": "Operating capacity by plant, June 2026 (4,180 MW)",
+                "parts": [
+                    {
+                        "label": "Talwandi Sabo",
+                        "share": 47
+                    },
+                    {
+                        "label": "Meenakshi",
+                        "share": 24
+                    },
+                    {
+                        "label": "Jharsuguda",
+                        "share": 15
+                    },
+                    {
+                        "label": "Sakti",
+                        "share": 14
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Punjab State Power Corporation (PSPCL)**, the buyer of all Talwandi Sabo output and the largest customer; it has paid on time apart from disputed amounts, but won a Supreme Court case in May 2026 that cost the company about ₹127cr plus late-payment charges.",
+            "**GRIDCO (Odisha)** for Jharsuguda, and **Tamil Nadu and Kerala utilities** for Meenakshi and Sakti.",
+            "**Power exchange buyers** for the roughly 26% of sales not under contract."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "A coal plant takes years, thousands of acres, coal linkages and grid connections to build, and few private companies are adding thermal capacity. But the product is plain electricity, much of the price is set by regulators or the exchange, and renewables with batteries compete for new contracts."
+        },
+        "moat": "Long fixed-charge contracts at Talwandi Sabo and Jharsuguda, Coal India linkages for about 85% of capacity and 29% of capacity sited near coal mines give it steady volume. It has no pricing power: contracted tariffs are regulated and the rest earns whatever the exchange pays.",
+        "salesDrivers": [
+            "**Power demand**: India hit a record 271 GW peak in May 2026, and exchange prices were about ₹1 a unit higher than a year earlier, per management.",
+            "**Plant availability**: fixed charges at Talwandi Sabo depend on availability of at least 80%.",
+            "**Sakti**: Unit 1 restart (targeted end-September or early October 2026) and Unit 2 in Q4 FY27 add up to 1,200 MW.",
+            "**New contracts**: management is choosing to wait for 'respectable' tariffs on uncontracted capacity rather than lock in low rates.",
+            "**Regulatory rulings**: the loss of mega power status, the PSPCL penalty and the Jharsuguda refund all move earnings."
+        ],
+        "inputs": "**Coal**: about 85% from long-term Coal India linkages (Mahanadi, South Eastern and Northern Coalfields); Meenakshi still burns about 35% imported coal. Power and fuel were about 68% of sales in Q4 FY26 and 79% in Q1 FY27.",
+        "costEffect": "**Mostly passed on for the contracted plants, not for the rest.** Talwandi Sabo and Jharsuguda (62% of capacity) pass fuel costs to the buyer; Meenakshi and Sakti sell at fixed competitive tariffs or market prices and bear coal costs themselves. **Rule of thumb:** a 10% rise in fuel costs not passed on would cut the margin by about 7 points (22% to 15%), but only on the unprotected part. **What happened:** imported coal prices rose over 60% in the year to Q1 FY27; Meenakshi cut its coal cost 12% by switching to Indian coal, but company-wide cost per unit rose from ₹4.0 in FY26 to ₹4.4 in Q1 FY27 against realisations of ₹4.9 to ₹5.0. The operating margin fell from 22% in Q4 FY26 to 11% in Q1 FY27, mainly because of the Sakti outage.",
+        "competitors": [
+            {
+                "name": "Adani Power",
+                "note": "India's largest private thermal producer, also adding large capacity."
+            },
+            {
+                "name": "JSW Energy, Tata Power",
+                "note": "Private generators with thermal and growing renewable fleets."
+            },
+            {
+                "name": "NTPC",
+                "note": "The state-owned giant; sets the benchmark for regulated thermal tariffs."
+            },
+            {
+                "name": "Renewables with batteries",
+                "note": "Firm solar-wind-battery projects (such as Juniper Green's) now bid for round-the-clock contracts that once went to coal."
+            }
+        ],
+        "position": "**India's fifth-largest private thermal power producer** (company's claim), with 4,180 MW running and 4,780 MW expected by March 2027.",
+        "money": "The company's own net debt walk shows **₹7,621cr of net debt at March 2026** (₹8,466cr of debt, ₹845cr of cash) and ₹7,704cr at June; net debt was 5.38 times operating profit in Q1. Debt and principal-plus-interest payments of ₹1,600–1,700cr this year are rated AA- (CRISIL, ICRA); a Vedanta Ltd guarantee lifts some loans to AA+ (CE). FY26 ended with a **net loss of ₹1,686cr** after ₹2,295cr of one-offs, and Q1 FY27 lost ₹423cr after ₹487cr of one-offs (including the ₹127cr Supreme Court penalty). Free cash before capex was just ₹26cr in Q1. Sakti Unit 2 still needs ₹1,745cr of its ₹5,209cr budget, and a 7,200 MW expansion is planned from FY30. **The promoter's entire 56.38% stake is encumbered for parent Vedanta Resources' loans and bonds.** No dividend yet.",
+        "watch": [
+            "Sakti Unit 1 restart in the Q2 results on 29 October and Unit 2 by Q4 FY27.",
+            "Net debt falling below 4 times operating profit, and any group demand for dividends to service Vedanta Resources' debt.",
+            "Supreme Court outcomes on the Jharsuguda refund and Talwandi Sabo disputes, and the ED matter."
+        ],
+        charts: utilitiesCharts["Vedanta Power"],
+    },
+    {
+        "company": "Juniper Green Energy",
+        "inShort": [
+            "**A renewable power producer** that builds and owns solar, wind and battery plants and sells their power to state and central utilities on 25-year contracts, specialising in 'firm' power (solar, wind and batteries combined to supply set hours). Listed in August 2026.",
+            "**Good:** about 2,575 MW running with a run-rate operating profit of ₹1,620cr that management expects to reach ₹2,700–2,750cr by March 2027 and ₹4,500cr in FY28; 98% of capacity on long contracts; a 90% operating margin and buyers paying in 19 days. **Watch:** borrowings of ₹13,761cr at March 2026 against ₹40cr of FY26 profit, interest that takes two-thirds of operating profit, a 3% return on capital, two state utilities giving 86% of FY26 revenue, and growth that needs about ₹6,000cr more capex this year.",
+            "**Verdict: wait.** The contracts are good, but at well over 250 times earnings and 35 times operating profit the price already counts on 6 GW being built on time; I want to see the new firm-power plants earn before buying."
+        ],
+        "tagline": "An independent power producer backed by Singapore's AT Holdings and Vitol, building wind-solar hybrid and firm-and-dispatchable (FDRE) projects with batteries in Gujarat, Maharashtra, Rajasthan and Madhya Pradesh, with an 11.2 GW portfolio.",
+        "revenue": "₹719cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Solar, wind and hybrid power",
+                "text": "About 2,575 MW commissioned by August 2026 (760 MW added since April); fleet load factor 30.2% in Q1 FY27 and 944 million units generated, up 72%. The 190 MW wind fleet ran at 49.9%."
+            },
+            {
+                "name": "Firm and dispatchable power (FDRE)",
+                "text": "Solar, wind and batteries combined so it can promise four peak hours a day (two in the evening, two in the morning). It commissioned India's first FDRE project under an SJVN tender in Q1 FY27; FDRE and hybrid make up 84% of the 11.2 GW portfolio."
+            },
+            {
+                "name": "Battery storage",
+                "text": "About 0.5 GWh running, 4.5 GWh ordered from Envision (AESC cells) at about $100–110 a kWh all-in, aiming for 4.5 GWh by June 2027 and 10 GWh by March 2028. About 1.5 GWh not yet tied to a project will sell power on the exchange at night for one to two years."
+            },
+            {
+                "name": "Round-the-clock ('thermal mimic') power",
+                "text": "Won a SECI tender in August 2026 to supply power like a coal plant (about 75% of the year) from about 870 MW of solar and wind plus 2.2 GWh of batteries at ₹5.26 a unit; the PPA is not yet signed."
+            }
+        ],
+        "revenueText": "It earns a fixed tariff per unit for 25 years: the blended portfolio tariff is about **₹3.7 a unit** (ICRA puts contracted tariffs at ₹2.63–4.76). **Maharashtra's MSEDCL and Gujarat's GUVNL gave 86.1% of FY26 revenue**; as new projects start, central buyers (SECI, NTPC, NHPC, SJVN) take over, at about 55% of contracted capacity in February 2026. Revenue depends on how much the sun and wind deliver, since tariffs are single-part. Of the 11.2 GW portfolio, more than 6.2 GW is operating or under signed PPAs and about 5 GW is awarded but unsigned. Q1 FY27 operating income was ₹291cr, up 81%.",
+        "mixes": [
+            {
+                "caption": "Contracted capacity by buyer, February 2026 (ICRA)",
+                "parts": [
+                    {
+                        "label": "Central buyers (SECI, NTPC, NHPC, SJVN)",
+                        "share": 55
+                    },
+                    {
+                        "label": "GUVNL (Gujarat)",
+                        "share": 20
+                    },
+                    {
+                        "label": "MSEDCL (Maharashtra)",
+                        "share": 18
+                    },
+                    {
+                        "label": "Others",
+                        "share": 7
+                    }
+                ],
+                "note": "By revenue, MSEDCL and GUVNL were 86.1% of FY26 because the central-buyer projects are newer."
+            },
+            {
+                "caption": "Portfolio by project type, August 2026 (company call)",
+                "parts": [
+                    {
+                        "label": "FDRE and wind-solar hybrid",
+                        "share": 84
+                    },
+                    {
+                        "label": "Plain solar, wind and other",
+                        "share": 16
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**State utilities**: MSEDCL and GUVNL (rated AA-), 86.1% of FY26 revenue; both have paid on time, and receivables were 19 days at June 2026.",
+            "**Central agencies**: SECI, NTPC, NHPC and SJVN (mostly AAA-rated), buyers for most of the projects being built; 98% of contracted capacity is with buyers rated A or better.",
+            "**Power exchange**: a small Bikaner merchant plant and spare batteries sell at market prices."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Anyone with capital can bid for solar and wind contracts, and tariffs are won in reverse auctions. Firm-power projects are harder: they need land (14,000 acres banked), grid connections (4.5 GW of spare connectivity) and the skill to run batteries to a strict schedule, and Juniper is among the first to deliver them."
+        },
+        "moat": "An early lead in firm-power contracts, an in-house construction team and surplus grid connectivity, which management says earned higher returns on its first FDRE projects. Beyond that, the product is regulated electricity sold at auction-set prices, and new tenders are expected to earn only 'higher teens' returns.",
+        "salesDrivers": [
+            "**Commissioning**: 2 GW in FY27 and about 6 GW operating by FY28 with a run-rate EBITDA of about ₹4,500cr, per management.",
+            "**PPA signing**: about 5 GW of awarded capacity still lacks signed contracts; the government now asks SECI to line up buyers before tenders, which management expects to help.",
+            "**Weather and plant performance**: single-part tariffs mean less sun or wind means less revenue; FDRE contracts carry penalties for missed peak hours.",
+            "**Grid**: about 2–2.5% of output was curtailed on a 50 MW Bikaner plant using temporary grid access; management is adding batteries there.",
+            "**Merchant battery income**: charging at about ₹1–1.5 a unit in the day and selling at night, at up to ₹20 on the high-price market."
+        ],
+        "inputs": "No fuel. The main costs are the plants: **solar modules (closed at about ₹12.1–12.2 a watt for imported-cell modules; about ₹17 assumed for Indian-cell modules)**, wind turbines (Envision) and **batteries at about $100–110 a kWh installed**. Capex was about ₹16,000cr at June 2026 and is planned at about ₹22,000cr by March 2027. Running costs were only 15% of FY26 sales.",
+        "costEffect": "**Revenue is fixed by contract, so the swing factor is interest, not inputs.** Over 95% of its debt is at floating rates while tariffs are fixed; operating-portfolio debt costs about 8.5% after refinancing ₹1,700cr below 8%. **Rule of thumb:** a 1-point rise in interest rates on ₹13,761cr of borrowings would cost about ₹138cr a year, more than three times FY26 profit of ₹40cr. Module and battery prices matter only for plants not yet built: cheaper batteries made it switch new projects from wind-heavy designs to solar plus batteries.",
+        "competitors": [
+            {
+                "name": "ACME Solar Holdings",
+                "note": "A listed peer also winning FDRE and battery tenders; valued at about 52 times earnings at Juniper's IPO."
+            },
+            {
+                "name": "NTPC Green Energy, Adani Green Energy",
+                "note": "Much larger renewable producers bidding in the same central tenders."
+            },
+            {
+                "name": "KPI Green Energy",
+                "note": "A smaller Gujarat-based listed peer, about 16 times earnings at Juniper's IPO."
+            },
+            {
+                "name": "Clean Max Enviro Energy",
+                "note": "Sells green power to companies rather than utilities, at about ₹4 a unit."
+            }
+        ],
+        "position": "**A top-10 Indian renewable producer by portfolio** (its IPO claim), and among the first to commission an FDRE project.",
+        "money": "Screener shows **₹13,761cr of borrowings** at March 2026, up from ₹5,971cr a year earlier; the company put **net debt at ₹11,217cr at June 2026** (₹7,183cr on operating projects), 3.24 times net worth, before the IPO. The **₹1,800cr IPO in August 2026 at ₹225 (all new shares)** went mainly to repay about ₹1,412cr of debt, lifting net worth to about ₹5,200cr. Interest was ₹400cr against ₹608cr of operating profit in FY26 and ₹176cr against ₹261cr in Q1 FY27, so FY26 profit was only ₹40cr; free cash was −₹6,162cr in FY26 as it built plants. ICRA rated the parent A+ (Positive) in February 2026, with debt at about 18 times operating profit in H1 FY26 on its measure. Promoters hold **85.94%**, and some promoter shares are pledged to IREDA.",
+        "watch": [
+            "2 GW commissioned in FY27 and run-rate EBITDA near ₹2,700cr by March 2027.",
+            "PPAs signed for the thermal-mimic award and the remaining FDRE capacity.",
+            "Interest cover and profit after tax as the debt-funded plants start earning."
+        ],
+        charts: utilitiesCharts["Juniper Green Energy"],
+    },
 ];
 
 export const utilitiesBusinesses = { intro, profiles };

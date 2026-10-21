@@ -4645,6 +4645,256 @@ export const softwareCharts: Record<string, ProfileCharts> = {
             "inventory5y": null,
             "payables5y": null
         }
+    },
+    "ESDS Software": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "129x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "67x",
+                "note": "Market value plus about ₹20cr of net debt (excluding the customer advance), ÷ operating profit over the last year, which includes an ₹85cr one-off."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹20cr",
+                "note": "March 2026 borrowings of ₹96cr minus cash after setting aside the ₹1,177cr customer advance; the ₹720cr IPO came later."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "50%"
+            },
+            {
+                "label": "GPU commitment",
+                "value": "US$1.25bn",
+                "note": "Five-year contract value with SharonAI (SharonAI 8-K, March 2026), against FY26 revenue of ₹472cr."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                183,
+                128
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                183,
+                128
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                55,
+                47,
+                101,
+                155,
+                234
+            ],
+            "ocf": [
+                16,
+                55,
+                57,
+                163,
+                1368
+            ],
+            "fcf": [
+                -44,
+                19,
+                34,
+                49,
+                1243
+            ],
+            "note": "Consolidated, Screener. FY26 cash includes about ₹1,177cr of advance from one GPU customer."
+        }
+    },
+    "iValue Infosolutions": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "11.1x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "8.0x",
+                "note": "Market value minus ₹84cr (investments less borrowings, March 2026), ÷ operating profit over the last year; bank cash not deducted."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹84cr",
+                "note": "Investments of ₹153cr minus borrowings of ₹69cr, March 2026; excludes bank balances."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "13%",
+                "note": "On filed revenue; about 5% on gross sales."
+            },
+            {
+                "label": "Recurring share of sales",
+                "value": "46%",
+                "note": "Annuity renewals, Q1 FY27 gross sales."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                120,
+                336
+            ],
+            "inventoryDays": [
+                9,
+                3
+            ],
+            "payableDays": [
+                97,
+                341
+            ],
+            "cycleDays": [
+                32,
+                -1
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                64,
+                84,
+                101,
+                115,
+                136
+            ],
+            "ocf": [
+                33,
+                -23,
+                66,
+                46,
+                108
+            ],
+            "fcf": [
+                31,
+                -25,
+                62,
+                45,
+                108
+            ],
+            "note": "Consolidated, Screener. Day counts use filed revenue, which is far smaller than gross sales, so they look long."
+        }
+    },
+    "Excelsoft Technologies": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "18.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "6.7x",
+                "note": "Market value minus about ₹393cr of net cash, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹393cr",
+                "note": "About ₹400cr of cash and deposits (June 2026, CFO) minus ₹7cr of borrowings (March 2026)."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "27%"
+            },
+            {
+                "label": "Largest customer",
+                "value": "59%",
+                "note": "Pearson's share of revenue, June 2025 quarter (prospectus)."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                83,
+                62
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                83,
+                62
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                61,
+                68,
+                55,
+                73,
+                73
+            ],
+            "ocf": [
+                61,
+                56,
+                56,
+                52,
+                50
+            ],
+            "fcf": [
+                58,
+                41,
+                40,
+                290,
+                -15
+            ],
+            "note": "Consolidated, Screener. FY25 free cash includes a fall in fixed assets from ₹336cr to ₹135cr."
+        }
     }
 };
 
@@ -4920,5 +5170,23 @@ export const softwareValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 652.0,
         "mcapAtWriting": 8296.0,
         "peAtWriting": 22.4
+    },
+    "ESDS Software": {
+        "netDebt": 20,
+        "ttmEbitda": 238,
+        "mcapAtWriting": 15974,
+        "peAtWriting": 129
+    },
+    "iValue Infosolutions": {
+        "netDebt": -84,
+        "ttmEbitda": 138,
+        "mcapAtWriting": 1188,
+        "peAtWriting": 11.1
+    },
+    "Excelsoft Technologies": {
+        "netDebt": -393,
+        "ttmEbitda": 75,
+        "mcapAtWriting": 898,
+        "peAtWriting": 18
     }
 };

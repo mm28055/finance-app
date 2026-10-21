@@ -1939,6 +1939,318 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
             "inventory5y": -13,
             "payables5y": 2
         }
+    },
+    "Parth Electricals": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "49.6x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "32x",
+                "note": "Market value minus net cash, ÷ operating profit over the last two half-years (₹21cr)."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹26cr",
+                "note": "Cash (₹44cr) minus borrowings (₹17cr), March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "11%",
+                "note": "10.5% on the company's own basis."
+            },
+            {
+                "label": "Order book",
+                "value": "₹272cr",
+                "note": "1.4 times FY26 revenue; 53% EPC (May 2026)."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials (net of stock change)",
+                    "share": 74
+                },
+                {
+                    "label": "Staff",
+                    "share": 7
+                },
+                {
+                    "label": "Other costs (incl. subcontracting)",
+                    "share": 9
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 10
+                }
+            ],
+            "note": "Standalone P&L, FY26 annual report: revenue ₹198.0cr; materials ₹163.7cr less ₹17.9cr stock build; staff ₹14.3cr; other expenses ₹17.0cr."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                157,
+                64
+            ],
+            "inventoryDays": [
+                62,
+                104
+            ],
+            "payableDays": [
+                240,
+                95
+            ],
+            "cycleDays": [
+                -21,
+                72
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                0,
+                4,
+                9,
+                18,
+                21
+            ],
+            "ocf": [
+                0,
+                3,
+                8,
+                0,
+                -4
+            ],
+            "fcf": [
+                0,
+                3,
+                0,
+                -11,
+                -25
+            ]
+        }
+    },
+    "Anawil Wire": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "28.6x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "17.4x",
+                "note": "Market value plus about ₹12cr of net debt after the IPO-funded repayment, ÷ FY26 operating profit (₹61cr)."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹12cr",
+                "note": "₹128cr of borrowings at March 2026 less about ₹115cr of IPO money earmarked to repay them and a little cash; the repayment is not yet reported."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "43%",
+                "note": "Management expects it to fall as integrated-supply orders grow."
+            },
+            {
+                "label": "Top-10 customers",
+                "value": "97%",
+                "note": "Share of FY26 revenue; the largest customer was 29%."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials (net of stock change)",
+                    "share": 32
+                },
+                {
+                    "label": "Staff",
+                    "share": 3
+                },
+                {
+                    "label": "Other costs (job work, power, freight)",
+                    "share": 22
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 43
+                }
+            ],
+            "note": "Restated FY26 P&L in the prospectus: revenue ₹143.3cr; materials ₹47.3cr less ₹2.0cr stock change; staff ₹4.2cr; other expenses ₹32.4cr."
+        },
+        "workingCapital": {
+            "fromYear": "FY23",
+            "toYear": "FY26",
+            "debtorDays": [
+                1,
+                99
+            ],
+            "inventoryDays": [
+                64,
+                409
+            ],
+            "payableDays": [
+                101,
+                376
+            ],
+            "cycleDays": [
+                -36,
+                132
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                13,
+                22,
+                30,
+                61
+            ],
+            "ocf": [
+                -3,
+                9,
+                10,
+                18
+            ],
+            "fcf": [
+                -70,
+                2,
+                3,
+                -75
+            ],
+            "note": "FY23 and FY26 free cash reflect the Koppal and Kutch plant builds."
+        }
+    },
+    "Prostarm Info Systems": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "20.1x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "15.0x",
+                "note": "Market value plus net debt, ÷ operating profit over the last four quarters (₹49cr)."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹20cr",
+                "note": "Borrowings (₹93cr) minus cash (about ₹74cr), March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "12%",
+                "note": "8.5% in Q1 FY27."
+            },
+            {
+                "label": "Debtor days FY26",
+                "value": "241",
+                "note": "74 in FY22; mostly one government project."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials and traded goods",
+                    "share": 72
+                },
+                {
+                    "label": "Staff",
+                    "share": 8
+                },
+                {
+                    "label": "Other costs",
+                    "share": 8
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 12
+                }
+            ],
+            "note": "Consolidated P&L, FY26 annual report: revenue ₹385.8cr; materials ₹78.8cr, traded goods ₹211.0cr, stock change −₹10.0cr; staff ₹29.1cr; other expenses ₹30.6cr."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                74,
+                241
+            ],
+            "inventoryDays": [
+                89,
+                96
+            ],
+            "payableDays": [
+                134,
+                191
+            ],
+            "cycleDays": [
+                29,
+                146
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                16,
+                28,
+                35,
+                46,
+                47
+            ],
+            "ocf": [
+                4,
+                -14,
+                -8,
+                -3,
+                -49
+            ],
+            "fcf": [
+                -1,
+                -25,
+                -16,
+                -6,
+                -72
+            ]
+        }
     }
 };
 
@@ -2021,5 +2333,23 @@ export const electricalEquipmentValuationInputs: Record<string, ValuationInput> 
         "ttmEbitda": 10.2,
         "mcapAtWriting": 1525.0,
         "peAtWriting": 214.0
+    },
+    "Parth Electricals": {
+        "netDebt": -26,
+        "ttmEbitda": 21,
+        "mcapAtWriting": 707,
+        "peAtWriting": 49.6
+    },
+    "Anawil Wire": {
+        "netDebt": 12,
+        "ttmEbitda": 61,
+        "mcapAtWriting": 1048,
+        "peAtWriting": 28.6
+    },
+    "Prostarm Info Systems": {
+        "netDebt": 20,
+        "ttmEbitda": 49,
+        "mcapAtWriting": 717,
+        "peAtWriting": 20.1
     }
 };

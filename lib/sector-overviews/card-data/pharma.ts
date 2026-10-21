@@ -3686,6 +3686,115 @@ export const pharmaCharts: Record<string, ProfileCharts> = {
             "inventory5y": -64,
             "payables5y": 112
         }
+    },
+    "Kwality Pharmaceuticals": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "43.5x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "27.2x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹127cr",
+                "note": "Borrowings minus cash, March 2026 (annual report)."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "24%"
+            },
+            {
+                "label": "Debtor days FY26",
+                "value": "203",
+                "note": "Days customers take to pay; 152 in FY25 and 55 in FY22."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 51
+                },
+                {
+                    "label": "Power and fuel",
+                    "share": 5
+                },
+                {
+                    "label": "Staff",
+                    "share": 11
+                },
+                {
+                    "label": "Other costs",
+                    "share": 9
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 24
+                }
+            ],
+            "note": "Consolidated P&L, FY26 annual report. Materials include bought-in goods and changes in stock."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                55,
+                203
+            ],
+            "inventoryDays": [
+                97,
+                111
+            ],
+            "payableDays": [
+                63,
+                144
+            ],
+            "cycleDays": [
+                90,
+                170
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                172,
+                61,
+                66,
+                80,
+                118
+            ],
+            "ocf": [
+                61,
+                41,
+                43,
+                53,
+                17
+            ],
+            "fcf": [
+                5,
+                -4,
+                17,
+                28,
+                -29
+            ],
+            "note": "FY22 was an unusual year: sales of ₹456cr at a 38% margin, before falling to ₹251cr in FY23."
+        }
     }
 };
 
@@ -3834,5 +3943,11 @@ export const pharmaValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 44.0,
         "mcapAtWriting": 6599.0,
         "peAtWriting": 365.0
+    },
+    "Kwality Pharmaceuticals": {
+        "netDebt": 127,
+        "ttmEbitda": 135,
+        "mcapAtWriting": 3550,
+        "peAtWriting": 43.5
     }
 };

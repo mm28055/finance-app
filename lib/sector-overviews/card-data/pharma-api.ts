@@ -2006,6 +2006,194 @@ export const pharmaApiCharts: Record<string, ProfileCharts> = {
             }
         ],
         "statsAsOf": "23 Sep 2026"
+    },
+    "Symbiotec Pharmalab": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "78.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "35.8x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹326cr",
+                "note": "Company figure after the September 2026 IPO money; ₹391cr of borrowings at March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "27%"
+            },
+            {
+                "label": "Share of world corticosteroid APIs",
+                "value": "38%",
+                "note": "By volume, FY26, per its IPO prospectus."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                77,
+                83
+            ],
+            "inventoryDays": [
+                252,
+                274
+            ],
+            "payableDays": [
+                91,
+                160
+            ],
+            "cycleDays": [
+                238,
+                197
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                131,
+                70,
+                172,
+                203,
+                239
+            ],
+            "ocf": [
+                18,
+                69,
+                188,
+                47,
+                175
+            ],
+            "fcf": [
+                -55,
+                -155,
+                -22,
+                -261,
+                -50
+            ],
+            "note": "Free cash is negative because about ₹1,000cr went into the new Ujjain and Mhow plants."
+        }
+    },
+    "Anlon Healthcare": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "43.1x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "24.6x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹39cr",
+                "note": "Borrowings minus cash, March 2026 (company presentation)."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "28%"
+            },
+            {
+                "label": "Cash cycle FY26",
+                "value": "467 days",
+                "note": "Days of sales tied up in stock and unpaid bills, less supplier credit."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 61
+                },
+                {
+                    "label": "Staff",
+                    "share": 3
+                },
+                {
+                    "label": "Other costs",
+                    "share": 8
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 28
+                }
+            ],
+            "note": "Consolidated P&L from the Q1 FY27 investor presentation."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                130,
+                220
+            ],
+            "inventoryDays": [
+                225,
+                393
+            ],
+            "payableDays": [
+                128,
+                147
+            ],
+            "cycleDays": [
+                226,
+                467
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                6,
+                13,
+                16,
+                32,
+                48
+            ],
+            "ocf": [
+                -2,
+                -3,
+                -3,
+                -22,
+                -59
+            ],
+            "fcf": [
+                -2,
+                -3,
+                -7,
+                -19,
+                -95
+            ],
+            "note": "FY22–FY24 standalone (the company had no subsidiaries); FY25–FY26 consolidated. FY22 working-capital days are standalone."
+        }
     }
 };
 
@@ -2088,5 +2276,17 @@ export const pharmaApiValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 109.0,
         "mcapAtWriting": 1128.0,
         "peAtWriting": 62.7
+    },
+    "Symbiotec Pharmalab": {
+        "netDebt": 326,
+        "ttmEbitda": 226,
+        "mcapAtWriting": 7759,
+        "peAtWriting": 78
+    },
+    "Anlon Healthcare": {
+        "netDebt": 39,
+        "ttmEbitda": 57,
+        "mcapAtWriting": 1362,
+        "peAtWriting": 43.1
     }
 };

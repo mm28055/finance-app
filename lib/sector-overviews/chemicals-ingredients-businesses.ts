@@ -382,6 +382,137 @@ const profiles: BusinessProfile[] = [
         watch: ["Unbilled ash revenue turning into cash.", "The promoter pledge actually falling.", "The income-tax search order and wind margins."],
         charts: chemicalsCharts['Refex Industries'],
     },
+    {
+        "company": "Sacheerome",
+        "inShort": [
+            "**Creates and makes fragrances and flavours** in Noida, the scent in soaps, shampoos and detergents and the taste in food products, for Indian consumer-goods companies. Listed on NSE's SME board in 2025.",
+            "**Good:** sales grew 41% to ₹152cr in FY26 at a 24% operating margin, there is no debt, and 84% of five years' operating profit turned into cash. **Watch:** the old plant is running at 124% of rated capacity, and a ₹184cr plant (more than its whole FY26 sales) arrives two months late with about ₹60cr of new debt; management's own plan has sales doubling in three years while capacity quadruples, so returns on capital will fall for a while.",
+            "**Verdict: wait.** A good small business at a fair 33 times earnings, but I want to see the new plant running and holding the margin before buying."
+        ],
+        "tagline": "A Delhi-NCR fragrance and flavour house founded by perfumer Manoj Arora in the early 1980s, supplying custom scents and tastes to consumer-goods makers.",
+        "revenue": "₹152cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "Fragrances",
+                "text": "Custom scents made to each customer's brief for personal care, home care and other consumer products; about 94% of FY26 revenue. It uses its own encapsulation and long-lasting fragrance technologies."
+            },
+            {
+                "name": "Flavours",
+                "text": "Tastes for food and drink products; about 6% of revenue and growing faster. The new plant has a separate tower for flavours."
+            }
+        ],
+        "revenueText": "**Fragrances were about 94% of FY26 revenue and flavours 6%**; **domestic sales about 94%, exports about 6%** (about ₹9.5cr, up from ₹8cr). Of FY26's ₹44.85cr revenue increase, ₹31.24cr came from existing customers and ₹13.61cr from new ones. It says it has made 10,000 products for customers in 30 countries.",
+        "mixes": [
+            {
+                "caption": "Revenue by product, FY26 (approximate, from management)",
+                "parts": [
+                    {
+                        "label": "Fragrances",
+                        "share": 94
+                    },
+                    {
+                        "label": "Flavours",
+                        "share": 6
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Indian consumer-goods (FMCG) companies**, from large to small; none named and no concentration disclosed.",
+            "**Overseas buyers**, about 6% of sales; it exhibited at the World Perfumery Congress in the US in June 2026."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "Each fragrance is a secret formula made to a customer's brief, and once a product launches with it the customer rarely changes it. That takes trained perfumers, a library of formulas and years of trust. Global fragrance houses have the same skills at far larger scale."
+        },
+        "moat": "A real but small one: customers stay because changing a product's scent risks their brand, and it creates to each brief. Against it, global houses dominate the industry and Sacheerome is, in its MD's words, 'very tiny'.",
+        "salesDrivers": [
+            "**Capacity**: about 760 tonnes a year today, running at about 124%; YEIDA lifts it to about 2,760 tonnes from August 2026.",
+            "**Guidance**: ₹200cr in FY27, ₹250cr in FY28, ₹300cr in FY29, which management calls conservative.",
+            "**Indian consumer spending**: more products per household and more premium launches by Indian FMCG companies.",
+            "**Flavours and exports**: both small, both targeted with the new plant."
+        ],
+        "inputs": "**Aroma chemicals and essential oils**, partly imported. Materials were about 60% of FY26 sales (from gross profit).",
+        "costEffect": "**Mostly protected.** Each fragrance is priced per customer and can be repriced; management said West Asia-related cost increases would not hurt much. **What happened:** the operating margin rose every year from 13% in FY22 to 24% in FY26 as sales grew on a fixed plant.",
+        "competitors": [
+            {
+                "name": "Global fragrance and flavour houses",
+                "note": "Management says the industry is dominated by global companies; Indian houses are gaining share."
+            },
+            {
+                "name": "SH Kelkar, Oriental Aromatics",
+                "note": "Larger listed Indian peers in this note, which also make aroma ingredients; Sacheerome makes only finished fragrances and flavours."
+            }
+        ],
+        "position": "**A small Indian fragrance house** running beyond its rated capacity; no market share is disclosed.",
+        "money": "**Net cash of about ₹45cr** at March 2026 with no borrowings (data provider). The YEIDA plant costs about **₹184cr**: ₹76.59cr was spent by March (₹28.79cr from IPO money, ₹47.80cr from its own cash), and about ₹60cr of debt will be drawn as needed. **Over FY22–FY26, operating cash was ₹78cr against ₹93cr of operating profit (84%)**, but free cash turned negative in FY25–FY26 with the plant (−₹14cr in FY26). Working capital improved from a 109-day cycle in FY22 to 33 days. Promoters hold **71.54%**. No dividend.",
+        "watch": [
+            "YEIDA in commercial production and H2 FY27 sales showing it.",
+            "FY27 revenue near ₹200cr with the margin near 24%.",
+            "How much of the ₹60cr loan is drawn."
+        ],
+        charts: chemicalsCharts["Sacheerome"],
+    },
+    {
+        "company": "Gem Aromatics",
+        "inShort": [
+            "**Makes mint and clove oils and the chemicals derived from them** (menthol-type products, eugenol) for flavour, fragrance, oral-care and pharma buyers, and is starting a ₹270cr plant at Dahej for newer aroma and specialty chemicals. Listed in 2025.",
+            "**Good:** a long-established export business and a new plant whose cooling agents are already approved by the two largest buyers. **Bad:** consolidated sales fell 27% in FY26 and it lost money in three of the last four quarters (−₹7.9cr in Q1 FY27), stock takes about 309 days to sell, and five years of operating profit produced only 17% as cash, with free cash at −₹212cr.",
+            "**Verdict: pass.** Loss-making in three of the last four quarters, stock takes 309 days to sell and free cash over FY22–FY26 was −₹212cr; until it is back in profit with cash following, there is nothing to value."
+        ],
+        "tagline": "A Mumbai-based maker of essential oils and aroma chemicals, founded in 1997 by Vipul Parekh, moving from mint and clove derivatives into specialty aroma ingredients.",
+        "revenue": "₹366cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Mint products",
+                "text": "Oils and crystals made from Indian mint, harvested May–July and sold largely for export; the traditional core that management wants to rely on less."
+            },
+            {
+                "name": "Clove products",
+                "text": "Clove-leaf oil imported mainly from Madagascar and East Africa and processed into eugenol and its derivatives for oral care and fragrance; hit in Q1 FY27 when floods shut Madagascar's port for about a month."
+            },
+            {
+                "name": "Krystal Ingredients (Dahej)",
+                "text": "A new multi-purpose plant: cooling agents (Gemcool 3, 5, 23; about 500 tonnes), Safranal from citral, and phenol derivatives; commercial supplies ramp up through FY27, and management expects Krystal to be more than half of revenue in FY28."
+            }
+        ],
+        "revenueText": "No split by product or region was given on the call. In Q1 FY27 **standalone revenue (the older business) was ₹83cr at a 10.3% EBITDA margin, while consolidated revenue was ₹99cr at 3.3%**, because Dahej's costs arrived before its sales. FY26 consolidated revenue fell to ₹366cr from ₹504cr, after an unusually large Q4 FY25 (₹202cr).",
+        "customers": [
+            "**Flavour, fragrance, oral-care, confectionery and pharma companies**, many of them multinationals, in India and abroad (US and Latin America); none named and no concentration disclosed.",
+            "**Traders and distributors** abroad, used to sell new products faster while large customers finish approvals."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Natural-oil processing is a trading-and-processing skill open to many players; the newer synthetic products need chemistry and long customer approvals (stability tests, trial batches), which take quarters to years."
+        },
+        "moat": "Weak today. The mint and clove business is a natural-product processor exposed to crops, weather and prices; the new specialty products could build switching costs once approved by large buyers, but that is still ahead.",
+        "salesDrivers": [
+            "**Krystal approvals**: cooling agents meaningful from Q3 FY27, Safranal from Q2–Q3, phenol derivatives commercial in Q3 and meaningful in Q4.",
+            "**Crops and weather**: the mint harvest (May–July) and clove supply from Madagascar.",
+            "**Exports**: demand from the US and Latin America; shipping delays held back Q1 sales; a Brazil subsidiary is being set up.",
+            "**Guidance**: none for FY27, which management calls a ramp-up year; it promised guidance for FY28 around the end of 2026."
+        ],
+        "inputs": "**Mint oil from Indian farmers, clove-leaf oil from Madagascar and East Africa, and phenol and citral** for the new products. Materials were about 76% of FY26 sales (from gross profit).",
+        "costEffect": "**Exposed.** Natural-oil prices swing with harvests and weather, and it must hold large stocks through the year. It hedges currency on its import-and-export contracts. **What happened:** after Madagascar's floods, higher clove costs and a weaker mix cut the consolidated gross margin to 16.7% in Q1 FY27; the operating margin went from 22.7% in Q4 FY25 to 3.4% in Q2 FY26 and 3.3% in Q1 FY27.",
+        "competitors": [
+            {
+                "name": "Clean Science and Technology, Vinati Organics",
+                "note": "Established makers of phenol derivatives (MEHQ, BHA, anisole) that Gem is entering, per the custom-chemicals note."
+            },
+            {
+                "name": "Indian mint processors and Chinese synthetic menthol",
+                "note": "Set prices in the core mint business; not named by management."
+            }
+        ],
+        "position": "**A mid-sized natural-oil processor and exporter** moving into synthetic aroma chemicals; no market share is disclosed.",
+        "money": "**Net debt about ₹144cr** at March 2026: ₹152cr of borrowings against only about ₹8cr of cash (data provider). The Dahej plant cost about **₹270cr**, ₹265cr of it already spent, funded by IPO money (reserves rose ₹164cr in FY26) and loans. **Over FY22–FY26 operating cash was ₹55cr against ₹322cr of operating profit (17%) and free cash −₹212cr**, because stock days rose from 206 to 309 and customers took 76 days to pay. Depreciation jumped to ₹9.1cr a quarter. It has started factoring receivables. Promoters hold **57.44%**. No dividend.",
+        "watch": [
+            "Krystal revenue showing up in Q3 and Q4 FY27 results.",
+            "A return to consolidated profit and positive free cash.",
+            "Stock days falling from 309."
+        ],
+        charts: chemicalsCharts["Gem Aromatics"],
+    },
 ];
 
 export const chemicalsIngredientsBusinesses = { intro, profiles };

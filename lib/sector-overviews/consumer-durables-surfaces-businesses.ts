@@ -350,6 +350,210 @@ const profiles: BusinessProfile[] = [
         watch: ["Tribunal approval of the demerger.", "Pipes margin above 5% for two quarters.", "Net bank debt below ₹550cr."],
         charts: consumerDurablesCharts['Hindware Home Innov.'],
     },
+    {
+        "company": "Euro Pratik Sales",
+        "inShort": [
+            "**Designs and sells decorative wall panels and laminates** under the Euro Pratik and Gloirio brands, without owning a factory: 36–44 contract makers in India, South Korea, China and elsewhere produce its designs, and about 200 distributors sell them.",
+            "**Good:** a fast-fashion design model (about 1,000 new designs a year) that earned a 34% operating margin in FY26 with almost no plant, and no net debt. **Bad:** the parent company's own sales fell 4% in FY26. Growth now comes from buying lower-margin dealers and retailers: the margin fell to 26% in Q1 FY27, stock takes 255 days to sell, and over three years only about ₹85cr of ₹294cr operating profit came back as cash.",
+            "**Verdict: wait.** A clever, asset-light brand, but growth is being bought and profit is not turning into cash; wait for a year of positive free cash with the margin holding."
+        ],
+        "tagline": "A Mumbai brand founded by the Singhvi brothers that designs decorative wall panels and laminates, has them made by contract manufacturers, and sells them through about 200 distributors.",
+        "revenue": "₹334cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Decorative wall panels",
+                "text": "PVC, louvre, fluted, charcoal, translucent and other panels that replace wallpaper, wood or paint: 19 product ranges (Chisel, Louvers, Miga Edge and others). This is **57% of FY26 revenue**."
+            },
+            {
+                "name": "Decorative laminates",
+                "text": "11 ranges of designer laminates and acrylic surfaces, sold mainly under Gloirio: **31% of FY26 revenue**."
+            },
+            {
+                "name": "Films, adhesives and acquired trading lines",
+                "text": "Interior films, adhesives, catalogues, plus veneers, plywood and other products sold through the acquired Uro Veneer World (South India), Chawla Brothers (Punjab) and, from October 2026, Fabwood (timber, South India): 11% of FY26 revenue, rising to 19.5% in Q1 FY27."
+            }
+        ],
+        "revenueText": "**All but about 1% of sales are in India**, and **South India was 47% of FY26 revenue**, West 26% and North 16%. In FY26 wall panels were 57%, laminates 31% and others 11%. In Q1 FY27 the split was 51%, 30% and 19.5%, as acquired dealers added other products. There is no single big customer: the top 30 distributors were 36% of FY25 revenue (RHP). The parent company's own revenue fell to ₹210cr in FY26 from ₹219cr; consolidated growth of 18% came from subsidiaries and acquisitions. Q1 FY27 revenue was ₹103cr, up 60%.",
+        "mixes": [
+            {
+                "caption": "Revenue by product, FY26 (annual report)",
+                "parts": [
+                    {
+                        "label": "Wall panels",
+                        "share": 57.3
+                    },
+                    {
+                        "label": "Laminates",
+                        "share": 31.4
+                    },
+                    {
+                        "label": "Films, adhesives and others",
+                        "share": 11.3
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by region, FY26 (annual report)",
+                "parts": [
+                    {
+                        "label": "South",
+                        "share": 47
+                    },
+                    {
+                        "label": "West",
+                        "share": 26.1
+                    },
+                    {
+                        "label": "North",
+                        "share": 15.9
+                    },
+                    {
+                        "label": "East",
+                        "share": 8.2
+                    },
+                    {
+                        "label": "Central",
+                        "share": 2.7
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Distributors and dealers**: 205 distributors in 148 cities in June 2026 (203 in India, 2 in Nepal). The top 30 were 36% of FY25 revenue.",
+            "**Architects, interior designers and carpenters**, who choose the product. Homeowners, offices, hotels and hospitals are the end users.",
+            "**Its own acquired retailers**: Uro Veneer World (51%, Bengaluru region), Chawla Brothers (51%, Punjab) and Fabwood (56%, from October 2026) sell straight to contractors, builders and homeowners."
+        ],
+        "difficulty": {
+            "level": "Low",
+            "text": "It makes nothing. Designs come from an in-house team and are made by contract manufacturers; the top supplier, Miga of South Korea, supplied 24% of FY25 purchases (71% in FY24). The skill is choosing designs and stocking them fast. Management itself says designs are copied far faster than they used to be."
+        },
+        "moat": "A recognised brand among interior designers, a dedicated distributor network and a rapid design cycle give it a lead in organised wall panels. By its own Technopak-sourced claim it had about 16% of that market in FY23. But there is no manufacturing or technology barrier, and rivals can copy a design quickly. Buying dealers secures shelf space but brings in lower-margin trading revenue.",
+        "salesDrivers": [
+            "**Guidance**: on 24 September 2026 the CMD said FY27 revenue would grow at least 35–40%, with a consolidated PAT margin of 20–22%.",
+            "**Acquisitions**: Uro Veneer World (51%, ₹76.5cr, December 2025; about ₹115cr of FY27 revenue projected), Chawla Brothers (51%, ₹33.2cr, March 2026; about ₹80cr projected) and Fabwood (56%, ₹42.7cr, October 2026; ₹50–53cr projected). Together that is roughly ₹245cr of projected revenue against FY26's ₹335cr.",
+            "**New designs**: it targets more than 1,000 designs a year and about two new catalogues a month. Products launched in September and October 2026 install straight onto walls.",
+            "**Housing and interiors spending**: demand follows home building and refurbishment, with the organised share rising (Technopak).",
+            "**Seasonality**: Q1 is usually the weakest quarter, management says."
+        ],
+        "inputs": "**Finished goods bought from contract manufacturers**, much of it imported: 55% of FY25 purchases were in foreign currency (92% in FY24), mostly dollars and yuan, with no hedging (RHP). Cost of goods was 52% of FY26 sales. Fabwood's timber is 90–95% imported from Europe and the US.",
+        "costEffect": "**Mostly passed on, but exposed to currency and mix.** Gross margin rose from 36% in FY23 to 45.5% in FY25 and 47.8% in FY26, then fell to **39.0% in Q1 FY27** because the acquired dealers earn thinner margins. The Q1 operating margin was 26%, against 34% a year earlier. Management says Fabwood passes on timber and currency moves in full. **Rule of thumb:** a 10% rise in the cost of goods not passed on would cut the operating margin by about 5 points. FY26 results cited volatile crude-linked raw material prices, which feed into PVC panels at its suppliers.",
+        "competitors": [
+            {
+                "name": "Greenlam Industries",
+                "note": "Much larger laminate maker with its own factories. The only close listed peer the RHP names in its own field (the others are paint companies)."
+            },
+            {
+                "name": "Stylam Industries, Merino, Century Plyboards",
+                "note": "Laminate and panel makers with factories. Euro Pratik competes on design range rather than cost."
+            },
+            {
+                "name": "Unorganised importers and local brands",
+                "note": "Most of the wall-panel market. It is easy to copy designs and import from China."
+            }
+        ],
+        "position": "**A leader in organised decorative wall panels**, with about 16% of that market in FY23 (Technopak, in the RHP), 3,750 SKUs and 205 distributors. As it owns no plants, capacity use does not apply.",
+        "money": "Screener shows **borrowings (with leases) of ₹24cr** at March 2026 against about ₹16cr of cash and ₹14cr of investments, so **about ₹8cr of net cash**. The ₹42.7cr Fabwood payment, due within 120 days of October 2026, will use most of it. **Cash is the weak point.** Over FY24–FY26, ₹294cr of operating profit produced only ₹85cr of operating cash and ₹27cr of free cash. Stock rose to 255 days of sales from 103, and the cash cycle to 321 days. Acquisitions have cost about ₹152cr since December 2025. The September 2025 IPO raised no money for the company: the family sold ₹451cr of shares at ₹247, then bought about ₹100cr back. The share price is about ₹188.",
+        "watch": [
+            "Operating cash flow positive for FY27 and stock days falling back towards 150.",
+            "Operating margin holding near 25% or above as Uro Veneer, Chawla and Fabwood are consolidated.",
+            "The parent company's own sales growing again, not just acquired revenue."
+        ],
+        charts: consumerDurablesCharts["Euro Pratik Sales"],
+    },
+    {
+        "company": "Varmora Granito",
+        "inShort": [
+            "**A Morbi, Gujarat tile maker** selling mainly glazed vitrified tiles under the Varmora brand through about 286 franchise showrooms and 2,000 multi-brand dealers, plus exports to over 100 countries and some bathware.",
+            "**Good:** Q2 FY27 was strong (revenue up 9%, operating margin 16%), and the IPO money should make it close to debt-free. **Watch:** returns are low (return on equity about 7–8%), power and gas eat about 22% of sales and the Middle East conflict shut plants in April 2026, profit growth is helped by a change in depreciation method, and Carlyle still owns a large stake it may sell.",
+            "**Verdict: pass.** A mid-sized, low-return Morbi tile maker whose earnings depend on gas prices, at about 34 times earnings, a richer price than Somany or Orient Bell for weaker returns."
+        ],
+        "tagline": "A Morbi-based maker of vitrified and ceramic tiles and bathware, founded in 2003 by the Varmora family and backed by Carlyle; listed in September 2026.",
+        "revenue": "₹1,512cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Glazed vitrified and technical tiles",
+                "text": "Large-format glazed vitrified tiles (GVT) and 'technical' surfaces such as slabs and stone-look ranges, made in eight Morbi-area plants and through contract makers. **74% of FY26 revenue.**"
+            },
+            {
+                "name": "Ceramic and other tiles",
+                "text": "Wall and floor ceramic tiles; the Solaris ceramic plant has shut and will be converted to GVT, and the Simola subsidiary was sold in September 2026."
+            },
+            {
+                "name": "Bathware and adhesives",
+                "text": "Sanitaryware, faucets and tile adhesives through its Varmora Sanitarywares subsidiary; about 9% of H1 FY27 revenue."
+            }
+        ],
+        "revenueText": "**Glazed vitrified and technical tiles were 74% of FY26 revenue.** **Exports were 21% of product sales in FY26** (₹317cr) and India 79%. In India, franchise showrooms and multi-brand dealers were 67% of domestic sales and builders, architects and government 33%. About 80% of what it sells is made in its own plants (82% of FY26 revenue from in-house plants), the rest bought from 304 contract makers. In H1 FY27 revenue was ₹714cr, up 3%, held back by the Simola sale (about ₹52cr less) and a 23% fall in Q2 exports; domestic revenue rose 9% in H1 and 18% in Q2.",
+        "mixes": [
+            {
+                "caption": "Revenue by market, FY26 (RHP, share of product sales)",
+                "parts": [
+                    {
+                        "label": "India",
+                        "share": 79
+                    },
+                    {
+                        "label": "Exports",
+                        "share": 21
+                    }
+                ]
+            },
+            {
+                "caption": "Domestic sales by channel, FY26 (RHP)",
+                "parts": [
+                    {
+                        "label": "Showrooms and dealers",
+                        "share": 67
+                    },
+                    {
+                        "label": "Builders and projects",
+                        "share": 33
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Home buyers and renovators** through about 286 franchise-run Varmora showrooms and more than 2,000 multi-brand dealers in 949 cities.",
+            "**Builders, contractors, architects and government buyers** (33% of domestic sales).",
+            "**Overseas importers** in over 100 countries; exports fell 23% in Q2 FY27 on scarce and costly freight."
+        ],
+        "difficulty": {
+            "level": "Low",
+            "text": "Tile making in Morbi is a mature process run by hundreds of plants; scale, design and a brand matter more than technology."
+        },
+        "moat": "A known brand and a franchise showroom network give it some pricing power over unbranded Morbi makers, but it is far smaller than Kajaria or Somany and competes in an oversupplied cluster.",
+        "salesDrivers": [
+            "**Housing and renovation demand** in India, and the shift to larger glazed vitrified tiles.",
+            "**Distribution**: more showrooms and a push into East and Northeast India, helped by the new Tezpur plant.",
+            "**Exports**: about a fifth of sales, exposed to freight costs, Gulf conflict and trade barriers.",
+            "**Gas supply and prices**: fuel shortages from the Middle East conflict shut plants in April 2026.",
+            "**Capacity use**: most plants ran at about 59–87% in FY26."
+        ],
+        "inputs": "**Clay, feldspar and glazes** plus **natural gas and propane** to fire the kilns, and bought-in tiles from contract makers. In FY26 materials and bought-in tiles were about 42% of revenue and power and fuel about 22%.",
+        "costEffect": "**Partly passed on, with a lag.** Gas is the swing cost: power and fuel rose to 24.5% of income in FY25 before easing to 21% in FY26, and the operating margin moved from 11% in FY23 to 8% in FY24 and back to 11% in FY25–FY26. Its plants can run on propane or natural gas. **Rule of thumb:** a 10% rise in gas and power costs not passed on would cut the margin by about 2 points (11% to 9%). **What happened:** fuel shortages in April 2026 cut Q1 FY27's margin to 9%; it recovered to 16% in Q2.",
+        "competitors": [
+            {
+                "name": "Kajaria Ceramics",
+                "note": "India's largest tile maker, about three times Varmora's revenue, with far higher returns."
+            },
+            {
+                "name": "Somany Ceramics, Orient Bell",
+                "note": "Branded peers named in the RHP; Somany is larger, Orient Bell smaller."
+            },
+            {
+                "name": "Asian Granito and unbranded Morbi makers",
+                "note": "Hundreds of Morbi plants compete hard on price, especially in exports."
+            }
+        ],
+        "position": "**A mid-sized branded Morbi tile maker** with about 39 million square metres a year of tile capacity in the plants listed in the RHP (including the Solaris plant now shut), much smaller than Kajaria and Somany.",
+        "money": "Borrowings were **₹377cr at March 2026** and ₹327cr at September 2026 on Screener; after the IPO it held ₹372cr of cash and deposits at September, so it was **roughly net-cash (about ₹45cr)**, and the company itself reports net cash. The IPO at ₹148 (29 September 2026) raised ₹320cr of new money, of which ₹245cr is to repay loans, plus ₹388cr that went to Carlyle's Katsura Investments; the share is now about 9% below the IPO price. Over FY22–FY26 it turned ₹443cr of operating cash out of ₹667cr of operating profit (66%), but heavy capex left five-year free cash at −₹123cr. **Depreciation changed from the declining-balance to the straight-line method from April 2026**, which raised H1 FY27 profit before tax by ₹22.5cr (consolidated). Return on equity was about 7–8% in FY26. Stock was 156 days of sales in FY26. No dividend. Promoters hold **47.04%**.",
+        "watch": [
+            "The first earnings call on 23 October 2026: guidance, gas costs and export recovery.",
+            "Profit growth excluding the depreciation change, and whether return on equity rises above 10%.",
+            "Further share sales by Carlyle once lock-ins end."
+        ],
+        charts: consumerDurablesCharts["Varmora Granito"],
+    },
 ];
 
 export const consumerDurablesSurfacesBusinesses = { intro, profiles };

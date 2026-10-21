@@ -780,6 +780,323 @@ export const constructionPowerCharts: Record<string, ProfileCharts> = {
             "inventory5y": -457,
             "payables5y": 1059
         }
+    },
+    "Karamtara Engineering": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "44.7x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "22.4x",
+                "note": "Market value plus March 2026 net debt (before the IPO money), ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹962cr",
+                "note": "Borrowings including leases (₹1,105cr) minus cash and bank balances (about ₹143cr), March 2026, before the IPO. Excludes ₹735cr of supplier acceptances."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "12%"
+            },
+            {
+                "label": "Solar share of revenue",
+                "value": "79%",
+                "note": "FY26, RHP."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 58
+                },
+                {
+                    "label": "Staff",
+                    "share": 5
+                },
+                {
+                    "label": "Other costs (freight, US tariff, job work, power)",
+                    "share": 25
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 12
+                }
+            ],
+            "note": "From the RHP's restated FY26 profit and loss. Materials include changes in stock."
+        },
+        "workingCapital": {
+            "fromYear": "FY21",
+            "toYear": "FY26",
+            "debtorDays": [
+                91,
+                111
+            ],
+            "inventoryDays": [
+                262,
+                84
+            ],
+            "payableDays": [
+                215,
+                194
+            ],
+            "cycleDays": [
+                137,
+                1
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                130,
+                155,
+                264,
+                347,
+                500
+            ],
+            "ocf": [
+                182,
+                241,
+                40,
+                103,
+                675
+            ],
+            "fcf": [
+                126,
+                181,
+                -74,
+                -221,
+                -247
+            ]
+        }
+    },
+    "Om Power Transmission": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "12.2x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "9.3x",
+                "note": "Market value plus March 2026 net debt (before the IPO money), ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹41cr",
+                "note": "Borrowings (₹48cr) minus cash and margin-money deposits (₹7cr), March 2026, before the IPO."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "13%"
+            },
+            {
+                "label": "Order book ÷ FY26 sales",
+                "value": "1.4x",
+                "note": "₹621cr at March 2026."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 53
+                },
+                {
+                    "label": "Project costs (labour, subcontracting, site)",
+                    "share": 24
+                },
+                {
+                    "label": "Staff",
+                    "share": 8
+                },
+                {
+                    "label": "Other costs",
+                    "share": 2
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 13
+                }
+            ],
+            "note": "From the FY26 annual report's profit and loss."
+        },
+        "workingCapital": {
+            "fromYear": "FY23",
+            "toYear": "FY26",
+            "debtorDays": [
+                176,
+                180
+            ],
+            "inventoryDays": [
+                24,
+                24
+            ],
+            "payableDays": [
+                229,
+                190
+            ],
+            "cycleDays": [
+                -29,
+                15
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                12,
+                14,
+                36,
+                57
+            ],
+            "ocf": [
+                10,
+                4,
+                17,
+                -26
+            ],
+            "fcf": [
+                8,
+                3,
+                16,
+                -30
+            ]
+        }
+    },
+    "Vikran Engineering": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "15.7x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "9.0x",
+                "note": "Market value plus net debt, ÷ consolidated operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹82cr",
+                "note": "Borrowings (₹301cr) minus cash and bank deposits (₹220cr, of which about ₹198cr pledged as margin money), March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "14%"
+            },
+            {
+                "label": "Order book ÷ FY26 sales",
+                "value": "5.2x",
+                "note": "About ₹6,496cr in August 2026, including ₹3,518cr for its own NOPL project."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 35
+                },
+                {
+                    "label": "Project and subcontracting costs",
+                    "share": 39
+                },
+                {
+                    "label": "Staff",
+                    "share": 7
+                },
+                {
+                    "label": "Other costs",
+                    "share": 5
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 14
+                }
+            ],
+            "note": "From the FY26 profit and loss in the May 2026 investor presentation."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                283,
+                296
+            ],
+            "inventoryDays": [
+                38,
+                60
+            ],
+            "payableDays": [
+                228,
+                596
+            ],
+            "cycleDays": [
+                94,
+                -240
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                34,
+                80,
+                134,
+                162,
+                179
+            ],
+            "ocf": [
+                23,
+                6,
+                -66,
+                -129,
+                -437
+            ],
+            "fcf": [
+                18,
+                5,
+                -69,
+                -132,
+                -440
+            ],
+            "note": "Standalone filings (the same as consolidated until FY26)."
+        }
     }
 };
 
@@ -814,5 +1131,23 @@ export const constructionPowerValuationInputs: Record<string, ValuationInput> = 
         "ttmEbitda": 586.0,
         "mcapAtWriting": 6427.0,
         "peAtWriting": 27.6
+    },
+    "Karamtara Engineering": {
+        "netDebt": 962,
+        "ttmEbitda": 554,
+        "mcapAtWriting": 11466,
+        "peAtWriting": 44.7
+    },
+    "Om Power Transmission": {
+        "netDebt": 41,
+        "ttmEbitda": 60,
+        "mcapAtWriting": 517,
+        "peAtWriting": 12.2
+    },
+    "Vikran Engineering": {
+        "netDebt": 82,
+        "ttmEbitda": 168,
+        "mcapAtWriting": 1425,
+        "peAtWriting": 15.7
     }
 };

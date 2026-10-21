@@ -565,6 +565,224 @@ const profiles: BusinessProfile[] = [
         watch: ["CCL Line 1 starting by early 2027 with named customer approvals.", "Operating cash turning positive and receivables falling back under 40 days.", "Capitalised in-house 'R&D' falling sharply."],
         charts: ironSteelCharts['Ratnaveer Precision'],
     },
+    {
+        "company": "Vedanta Iron & Steel",
+        "inShort": [
+            "**Vedanta's iron ore mines in Goa, Karnataka and Odisha plus two steel plants**: a pig-iron and met-coke works in Goa and ESL Steel at Bokaro, which makes bars, wire rod and ductile-iron pipes. Demerged from Vedanta Ltd and listed in June 2026, so all history before May 2026 is a carve-out.",
+            "**Good:** Q1 FY27 EBITDA rose 54% to ₹515cr, CRISIL rates it AA, and about ₹13,138cr of intercompany debt was waived at the demerger. **Bad:** the carved-out FY26 shows a **₹2,935cr loss** (a ₹1,471cr write-off in Liberia and ₹1,816cr of interest), steel earned about 5% margins, the Bokaro plant has run without a valid environmental clearance since 2018, and the parent takes a 3% brand fee and has tied up every promoter share for its own loans.",
+            "**Verdict: pass.** At about 10 times trailing EV/EBITDA for a low-margin commodity business with one quarter of standalone history, a Bokaro plant still waiting for clearances and a heavily indebted parent drawing fees, the risks outweigh the 4x profit plan."
+        ],
+        "tagline": "An iron ore miner and steel maker carved out of Vedanta Ltd in 2026: mines in Goa, Karnataka and Odisha, a pig-iron plant in Goa, the ESL Steel plant at Bokaro and written-down mines in Liberia.",
+        "revenue": "₹13,587cr (FY26, consolidated, carved-out figures prepared as if the demerger applied from April 2025)",
+        "products": [
+            {
+                "name": "Iron ore",
+                "text": "Six Indian mines produced 11.4 million wet tonnes of run-of-mine ore in FY26 (Karnataka 5.6, Goa 2.9, Odisha 2.9); 89% was sold to outside buyers, much of it low-grade Goa ore exported through Mormugao. Q1 FY27 saleable output was 2.6 million dry tonnes and outside sales earned about ₹1,226 a tonne. Karnataka output fell 49% in Q2 under a revised mine plan."
+            },
+            {
+                "name": "Pig iron, met coke and pipes in Goa",
+                "text": "The Goa plant (the Value Added Business) turns ore from mines under 30km away into pig iron, the raw iron foundries melt for castings: a record 238,000 tonnes in Q1 FY27. Met coke (coal baked for blast furnaces) is made at its own coke plants, bought from a fellow Vedanta company in April 2026 for ₹1. A 0.42 MTPA ductile-iron pipe plant is being built (₹722cr, ₹380cr left at June)."
+            },
+            {
+                "name": "ESL Steel, Bokaro",
+                "text": "An integrated plant bought out of insolvency (the former Electrosteel Steels) with about 1.7 MTPA of hot metal: in Q1 FY27 it made 132,000 tonnes of TMT bars, 109,000 of wire rod, 30,000 of ductile-iron water pipes and some pig iron and billets. Its ore comes from the Odisha mines about 280km away. Phase 1A (₹2,975cr) takes hot metal to 3.2 MTPA by March 2027."
+            },
+            {
+                "name": "Liberia (Western Cluster)",
+                "text": "Three iron ore concessions with about 3.7 billion tonnes of resources but no production. The company wrote off ₹1,471cr of assets there in Q4 FY26, citing doubts over viability, yet its May 2026 plan still lists a US$360m first phase awaiting approval."
+            }
+        ],
+        "revenueText": "**Steel was about 72% of FY26 revenue** (₹9,557cr) and iron ore about 28% (₹4,529cr before ₹747cr of ore used inside the group), but **iron ore earned about 60% of segment EBITDA** (₹708cr against ₹471cr for steel, about a 5% steel margin). In Q1 FY27 steel was ₹2,839cr of revenue at ₹336cr EBITDA (₹5,864 a tonne, up 60%) and iron ore ₹773cr net at ₹179cr. Customers and export share are not disclosed in figures; management cited discounts on low-grade ore and higher ocean freight, so a good part of the ore goes overseas. All periods before May 2026 are carve-outs from Vedanta Ltd's books and include the met-coke business, which was bought in April 2026.",
+        "mixes": [
+            {
+                "caption": "Revenue by segment, FY26 (filed, carve-out)",
+                "parts": [
+                    {
+                        "label": "Steel",
+                        "share": 72
+                    },
+                    {
+                        "label": "Iron ore (net of internal sales)",
+                        "share": 28
+                    }
+                ]
+            },
+            {
+                "caption": "Segment EBITDA, FY26 (filed, carve-out)",
+                "parts": [
+                    {
+                        "label": "Iron ore",
+                        "share": 60
+                    },
+                    {
+                        "label": "Steel",
+                        "share": 40
+                    }
+                ],
+                "note": "In Q1 FY27 steel was 65% of segment EBITDA, after better steel prices."
+            }
+        ],
+        "customers": [
+            "**Steel mills in India and abroad** buying iron ore; Goa's low-grade ore sells at a discount and is shipped through Mormugao, where it was the top exporter by tonnage. Captive use was only 11% of ore in FY26; the plan is 49% by FY29.",
+            "**Foundries** buying pig iron from Goa and Bokaro.",
+            "**Builders, dealers and water-supply projects** buying TMT bars, wire rod and ductile-iron pipes from Bokaro. The company names no customers and gives no concentration figures."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Ore, pig iron and bars are commodities. What is hard to copy is mining leases and approvals: new leases are auctioned, and ESL's experience (eight years without a valid environmental clearance) shows how slowly steel plants get permits. Its own mines, river barges and railway sidings near the plants are the real assets."
+        },
+        "moat": "Owning ore near its plants and its own logistics (25 barges and a transhipper in Goa, private sidings) gives a cost edge over buyers of ore. But it sells at market prices, much of its ore is low grade sold at a discount, and its steel plant is small (1.7 MTPA) beside JSW, Tata and SAIL.",
+        "salesDrivers": [
+            "**Iron ore and steel prices**: Q1 FY27 EBITDA rose 54% mainly on better steel and ore prices; the plan assumes ore at about US$104 a tonne for FY27.",
+            "**Ore volumes and the monsoon**: Goa mines stop in the rains, and Q2 FY27 saleable ore fell 13% to 1.52 million tonnes, with Karnataka down 49% under a revised mine plan.",
+            "**Bokaro expansion**: hot metal from 1.7 to 3.2 MTPA by March 2027 if Stage II forest clearance comes (expected by end of Q2 FY27), then about 5 MTPA by FY29 with US$454m of Phase 1B still awaiting approval.",
+            "**Value-added products**: ductile-iron pipe, wire rod and bar capacity is planned to grow from 1.7 to 5 MTPA by FY29.",
+            "**Its own plan**: EBITDA from US$133m in FY26 to US$526m (about ₹4,734cr) in FY29, with steel 70% of it; management says net debt will stay under 2 times EBITDA."
+        ],
+        "inputs": "**Coking coal and coke** for the blast furnaces, **its own iron ore**, and diesel for mining and shipping. Materials were 49% of FY26 sales; 'other expenses', which include royalties, freight and mining contractors but are not split in the filing, were another 36%. In Q1 FY27 management said dearer iron ore, coal and diesel offset part of the price gain.",
+        "costEffect": "**Not protected; it sells at market prices.** Owning ore shields the Goa plant and part of Bokaro's ore needs, but coal is bought and selling prices follow the market. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 5 points (8% to 3%). **What happened:** the margin went from 11% in Q1 FY26 to 14% in Q4 FY26 and Q1 FY27 as steel prices rose faster than coal and ore costs, and steel EBITDA a tonne rose from ₹3,668 to ₹5,864. No longer price index is used here because the history is only five carved-out quarters.",
+        "competitors": [
+            {
+                "name": "NMDC, Odisha Mining Corporation and private Odisha miners",
+                "note": "Larger iron ore sellers in the same domestic market; NMDC is India's biggest ore producer."
+            },
+            {
+                "name": "JSW Steel, Tata Steel, SAIL, JSPL",
+                "note": "Integrated mills many times ESL's size that set bar and wire-rod prices."
+            },
+            {
+                "name": "Electrosteel Castings, Jindal Saw",
+                "note": "Established ductile-iron pipe makers; VISL's planned pipe capacity would be about 12% of India's by its own count."
+            }
+        ],
+        "position": "**India's second-largest iron ore exporter by its own count (citing BigMint)**, with about 4 billion tonnes of reserves and resources including Liberia; a small steel maker at 2.8 MTPA of hot metal across Goa and Bokaro in FY26.",
+        "money": "The company reports **net debt of ₹2,733cr at June 2026**: ₹2,792cr of bank debt plus ₹960cr owed to Vedanta Ltd, less ₹1,018cr of cash, of which ₹352cr is restricted deposits; Screener has no balance sheet or cash flows yet. Before the demerger the business carried ₹9,434cr of intercompany loans; about ₹13,138cr of loans and interest owed to other Vedanta companies was waived in April 2026, which is why FY26 interest was ₹1,816cr and Q1 FY27 only ₹207cr. CRISIL rated it AA/Stable in July 2026. Unspent approved capex was ₹1,132cr at June, and a further US$870m (about ₹7,830cr) is 'under approval', including Liberia. **A brand fee of 3% of turnover goes to a parent-group company** (FY26 revenue of ₹13,339cr implies about ₹400cr a year if charged on all of it, against ₹1,127cr of operating profit). No dividend yet; the group says to model a 4–5% yield. Promoters hold **56.38%**, not pledged but fully under non-disposal covenants for Vedanta Resources' US$2.25bn loan and bonds; Vedanta Resources still owes about US$5bn.",
+        "watch": [
+            "Q2 FY27 results (about 29 October, date not yet confirmed by the company): profit after a 13% fall in ore output, and whether net debt fell as the monsoon stock was sold.",
+            "Stage II forest clearance and then environmental clearance for Bokaro, and the 3.2 MTPA expansion by March 2027.",
+            "Money flowing to the parent: brand fees, the ₹960cr owed to Vedanta Ltd, and any dividend while Vedanta Resources cuts its debt."
+        ],
+        charts: ironSteelCharts["Vedanta Iron & Steel"],
+    },
+    {
+        "company": "Kirloskar Ferrous",
+        "inShort": [
+            "**A Kirloskar Group maker of pig iron, engine castings, alloy steel and seamless steel tubes** with plants in Karnataka, Maharashtra and Punjab. It turns its own pig iron into cylinder blocks and heads for tractor, truck and engine makers, and since buying ISMT in 2022 also makes bearing steel and seamless tubes.",
+            "**Good:** castings volumes grew 18% in Q1 FY27 with prices holding, it is one of India's largest foundry groups, rated ICRA AA, and has turned four of the last five years' profit into free cash. **Bad:** the operating margin has been stuck at 11–13% since FY23 (17% in FY22), underlying profit has not grown in four years (FY26's ₹507cr includes a one-off tax credit), tube volumes fell 14% in Q1, power costs jumped after state rule changes, a ₹331cr forest-fee case is pending in the Supreme Court, and ₹3,000–3,500cr of projects lie ahead.",
+            "**Verdict: follow.** A fair price (about 10 times EBITDA) for a well-run, integrated group, but profit has been flat for four years and the margin needs to break above 12% before a big four-year spending plan starts."
+        ],
+        "tagline": "An integrated Kirloskar Group iron and steel company: pig iron from its own blast furnaces, engine and tractor castings, alloy steel bars and seamless tubes (the former ISMT).",
+        "revenue": "₹6,889cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Seamless steel tubes",
+                "text": "Tubes pierced from solid steel, 6–273mm across, for car and truck parts, bearings, boilers, hydraulics and oil and gas wells (OCTG: casing and tubing that line wells), made at Baramati and Ahilyanagar from its own Jejuri steel. 1,88,704 tonnes sold in FY26 at ₹1,12,899 a tonne (down 9%). Plans: premium couplings for oil-well tubes, and an expander mill to make tubes up to 18 inches, about two years away."
+            },
+            {
+                "name": "Pig iron",
+                "text": "Iron made in mini blast furnaces at Koppal and Hiriyur (Karnataka), sold to foundries, pump and pipe makers and steel makers, and used in its own castings. 5,13,043 tonnes sold outside in FY26 at ₹38,032 a tonne (down 6%); about ₹42,383 in Q1 FY27 as prices recovered. Own coke ovens, waste-heat power and the Bharath iron-ore mine cut costs."
+            },
+            {
+                "name": "Iron castings",
+                "text": "Cylinder blocks, cylinder heads, housings and transmission parts, mostly over 50kg, poured at Koppal, Solapur and Rajpura (Punjab) and increasingly machined ready for assembly. 1,40,245 tonnes sold in FY26 at about ₹1.25 lakh a tonne; Rajpura is sold out and a large-castings line (pieces up to about 3 tonnes) is starting at Solapur."
+            },
+            {
+                "name": "Alloy steel",
+                "text": "Steel bars and rounds from an electric furnace at Jejuri, mostly bearing-quality steel; most of its 3.5 lakh tonnes goes into its own tubes and the rest is sold (85,644 tonnes in FY26, up 17%, at ₹70,571 a tonne). Rolling is being expanded so external sales can reach 2.4 lakh tonnes once a Koppal steel plant feeds it, about two years away."
+            }
+        ],
+        "revenueText": "**Tubes were 31% of FY26 revenue, pig iron 28%, castings 27% and steel 9%**, with by-products the last 5% (annual report). Profit is concentrated: the castings segment (which includes pig iron) earned **₹397cr of FY26 segment profit, tubes ₹181cr and steel ₹57cr**. In Q1 FY27 pig iron brought ₹546cr, castings ₹527cr, tubes ₹475cr (down 14%) and steel ₹168cr (up 17%). By volume, 40% of Q1 FY27 castings went to tractors and 34% to trucks (domestic and deemed-export); 69% of FY26 steel went to bearing makers. Customer concentration in castings is high (ICRA) but not quantified.",
+        "mixes": [
+            {
+                "caption": "Revenue by product, FY26 (annual report)",
+                "parts": [
+                    {
+                        "label": "Seamless tubes",
+                        "share": 31
+                    },
+                    {
+                        "label": "Pig iron",
+                        "share": 28
+                    },
+                    {
+                        "label": "Castings",
+                        "share": 27
+                    },
+                    {
+                        "label": "Steel",
+                        "share": 9
+                    },
+                    {
+                        "label": "By-products",
+                        "share": 5
+                    }
+                ]
+            },
+            {
+                "caption": "Segment profit before interest and tax, FY26 (annual report)",
+                "parts": [
+                    {
+                        "label": "Castings and pig iron",
+                        "share": 62
+                    },
+                    {
+                        "label": "Tubes",
+                        "share": 28
+                    },
+                    {
+                        "label": "Steel",
+                        "share": 9
+                    },
+                    {
+                        "label": "Unallocated",
+                        "share": 1
+                    }
+                ],
+                "note": "₹637cr in total; pig iron is reported inside the castings segment."
+            }
+        ],
+        "customers": [
+            "**Tractor, truck and engine makers** for castings: about 80% of castings sales are to the truck and tractor industries (ICRA), and KFIL is usually the single source for the part. The annual report names Volvo, Daimler, Caterpillar, Mahindra, Escorts Kubota and group firm Kirloskar Oil Engines.",
+            "**Foundries, pump and pipe makers and steel makers** for pig iron: auto foundries 34%, pumps 23% and steel 16% of FY26 volume.",
+            "**Bearing, car-part, boiler and oil companies** for steel and tubes: bearings are 69% of steel volume; in tubes, boilers and traders were 22% each and oil-well tubes 10% in FY26. ONGC and Oil India ordered 6,321 and 17,000 tonnes of casing and tubing in FY26."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Pig iron and ordinary tubes are commodities. The harder parts are complex engine castings, which need OEM approval for each part and are often single-sourced, and oil-well tubes and couplings, which need customer qualification. Its real edge is the integrated chain from iron ore and coke to castings and tubes, which few Indian foundries have."
+        },
+        "moat": "Scale and integration: own coke, waste-heat power, iron ore and pig iron feed its foundries, and OEMs that single-source a cylinder block rarely switch. Castings prices held through FY26 even as commodity prices fell. The weaker half is commodity pig iron and tubes, which face market prices and Chinese dumping, and energy costs exposed to state power rules.",
+        "salesDrivers": [
+            "**Tractor and truck demand**: castings are the growth engine, with Q1 FY27 volume up 18% and demand 'very strong' across tractors, trucks, engines and earth-moving. Capacity rises from Rajpura (25,000 to 40–45,000 tonnes within about eight months, later 70,000) and the Solapur large-castings line, towards 2.7 lakh tonnes of castings capacity in about three years.",
+            "**Pig iron prices**: the MD blames pig iron for four poor years; prices turned up in Q1 FY27 (₹42,383 a tonne, up 9%) helped by exports of about 30,000 tonnes.",
+            "**Oil and gas tubes**: tubes depend on ONGC and Oil India tenders and exports; Q1 volume fell 14% on Chinese dumping and weak oil activity, with more low-margin line pipe sold. Management says it is in 'wait and watch' on tubes.",
+            "**Guidance**: FY27 volume up at least 15% overall, castings 15%+, steel 1–1.1 lakh tonnes, tubes +10%; a medium-term aspiration of ₹14,000cr revenue (about twice FY26) with 3 lakh tonnes of castings and 3.5–4 lakh tonnes of tubes in three to four years.",
+            "**Value added**: more machined castings, large castings and premium tube couplings, which earn more a tonne."
+        ],
+        "inputs": "**Imported coking coal** (it keeps about three months' stock) and **iron ore** (partly from its own Bharath mine) for pig iron; its own pig iron and **scrap** for castings and steel; **power, LPG and fuel**, which jumped after the Middle East war. Materials were 57% of FY26 sales; power cost was 9.3% of revenue in Q1 FY27 against 6.2% a year earlier.",
+        "costEffect": "**Partly.** Castings contracts pass on cost changes, with a lag; steel prices follow 'with delay'; pig iron and tubes are sold at market prices. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 6 points (12% to 6%). **What happened:** pig iron prices fell 6% in FY26 and the margin still held at 12%, helped by castings pricing and cheaper materials (53.7% of standalone revenue in Q1 FY27 against 58.6% a year earlier). But in Q1 FY27 power and fuel rose ₹58cr from a year earlier, about half from higher rates, the state cut green-power use from 17 to 8 hours a day and banned power trading (about ₹10cr a year lost), and the margin slipped from 12.8% to 12.2%.",
+        "competitors": [
+            {
+                "name": "Other Indian foundries (Nelcast and others) and OEMs' own foundries",
+                "note": "Compete for tractor and truck castings; KFIL claims 19–20% of its castings market and sits among the top two or three foundry groups by volume."
+            },
+            {
+                "name": "Other pig iron makers",
+                "note": "Foundry-grade pig iron makers across India; KFIL claims 22–25% of the market (ICRA, from management)."
+            },
+            {
+                "name": "Maharashtra Seamless and Chinese imports",
+                "note": "India's largest seamless pipe maker, with about 55% of the domestic market, and Chinese pipe that the MD says is still being dumped."
+            }
+        ],
+        "position": "**One of India's leading foundry-grade pig iron makers (22–25% share) and castings makers (19–20%)**, by management's count (ICRA). Capacities: about 6.1 lakh tonnes of pig iron, 1.7 lakh tonnes of castings at Koppal and Solapur plus 28,000 at Rajpura, 3.5 lakh tonnes of steel and 3.71 lakh tonnes of tubes (ICRA), so the tube mills ran at roughly half capacity in FY26.",
+        "money": "Screener shows **net debt of about ₹914cr** at March 2026 (borrowings ₹1,036cr less ₹122cr of cash and bank balances in the annual report), about 1.1 times operating profit; standalone gross debt was ₹1,156cr at June 2026. ICRA rates it AA (Stable). Free cash was positive in four of the last five years (₹494cr in FY26). Spending now steps up: ₹600–700cr in FY27 and **₹3,000–3,500cr over four years** for the Koppal steel plant, the tube expander mill, a pellet plant and mine, and the Hiriyur furnace upgrade; the board approved raising debentures in May 2026. Contingent liabilities include **₹331cr of Karnataka forest development fee**, won in the High Court and awaiting a Supreme Court order, plus ₹66cr of income-tax claims. FY26 profit of ₹507cr includes about ₹141cr of deferred tax recognised on merging Oliver Engineering and Adicca. Promoters hold **50.78%**, down from 56.4% after the 2024 ISMT merger; no pledge found. Dividend yield about 1.3%.",
+        "watch": [
+            "The margin moving above 12.5% as price increases land and the solar and wind plants cut power costs.",
+            "Tube volumes and the oil-well order mix recovering after Q1's 14% fall.",
+            "The Supreme Court order on the ₹331cr forest fee, and how the ₹3,000–3,500cr project plan is paid for."
+        ],
+        charts: ironSteelCharts["Kirloskar Ferrous"],
+    },
 ];
 
 export const ironSteelBusinesses = { intro, profiles };

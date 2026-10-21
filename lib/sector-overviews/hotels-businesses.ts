@@ -352,6 +352,169 @@ const profiles: BusinessProfile[] = [
         watch: ["The outcome of the Finland review in FY27.", "The 400 renovated rooms returning and H2 profit recovery.", "Whether revenue growth picks up toward the 2030 target.", "NFRA's revenue-accounting query and the ₹431cr service-tax case."],
         charts: hotelsCharts['Mahindra Holi.&Resor'],
     },
+    {
+        "company": "Waterways Leisure Tourism",
+        "inShort": [
+            "**Runs Cordelia Cruises, India's home-grown cruise line**: short cruises from Mumbai and Chennai to Goa, Kochi, Lakshadweep and Sri Lanka on one ship built in 1990, with a second ship (Sky) starting on 23 October 2026 and a third (Sun) due in late 2027.",
+            "**Good:** a first mover in a tiny, fast-growing market, with ships about 91% full in H1 FY27 and capacity more than doubling. **Watch:** underlying Q2 operating profit was only ₹10cr, FY26 operating cash was −₹96cr, each new ship carries about $16m a year of lease rent, a promoter in Mauritius owns 89%, and ₹429cr sits with an unnamed middleman for a fourth ship.",
+            "**Verdict: pass.** A real business, but ₹429cr was advanced to an unnamed intermediary for a fourth ship and the latest profit leans on ₹49cr of one-off compensation; at about 90 times earnings that is too much to take on trust."
+        ],
+        "tagline": "The company behind Cordelia Cruises, India's only home-grown ocean cruise line, which sells short cruise holidays to Indian families, couples and wedding parties.",
+        "revenue": "₹580cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Cruise tickets",
+                "text": "Two- to five-night cruises sold per guest per day, covering cabin, food and entertainment, mostly from Mumbai (and Chennai in the monsoon) to Goa, Kochi, Lakshadweep and Sri Lanka, with some trips to Thailand, Malaysia and Singapore. Tickets were **91% of FY26 revenue**; the average ticket was ₹10,980 in FY26 and ₹10,300 in Q2 FY27."
+            },
+            {
+                "name": "Onboard spending",
+                "text": "Drinks, speciality dining, shore trips and shopping; about 9–13% of revenue in past years. Management says the new ships, with more bars and restaurants, can raise onboard spending potential from 50% to 90%."
+            },
+            {
+                "name": "Weddings, events and charters",
+                "text": "Destination weddings, company outings and full-ship charters; management expects about 95 wedding dates in FY28 against a usual 65–70. Not reported separately."
+            }
+        ],
+        "revenueText": "All revenue is cruising, reported as one segment. **Tickets were 91.22% of FY26 revenue**, the rest onboard spending. FY26 revenue was ₹580cr, slightly below FY25's ₹591cr, from one ship (MV Empress, 796 cabins, up to 2,005 guests). In H1 FY27 revenue rose 16% to ₹323cr; the load factor (guests against two per cabin) was 91.2% and average revenue per guest ₹12,930. Management says Sky will earn about twice what Empress earns per sailing and Sun about 2.5 times, because they have far more suites and balcony cabins (260 and 600 against Empress's 69).",
+        "mixes": [
+            {
+                "caption": "Revenue by type, FY26 (RHP)",
+                "parts": [
+                    {
+                        "label": "Cruise tickets",
+                        "share": 91
+                    },
+                    {
+                        "label": "Onboard and other",
+                        "share": 9
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Indian leisure travellers**: families, couples and groups on short domestic and nearby foreign cruises; no customer is material, and many bookings come direct, which saves agent commission.",
+            "**Weddings, company events and full-ship charters**, which management is targeting with the new ships.",
+            "A loyalty scheme, the Chairman's Club, was launched in October 2026 to win repeat trips."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Running a cruise ship is regulated and costly, but Cordelia outsources the technical work: crew and ship management, hotel services and purchasing are bought from third parties, and the ships are leased second-hand from Norwegian Cruise Line. A global cruise company could deploy a ship to India if the market grows."
+        },
+        "moat": "It is the only established Indian cruise brand, with experience of Indian ports, food and festivals and close work with the government's Cruise Bharat Mission. That is a head start, not a lock: holiday buyers switch easily, and global lines such as Royal Caribbean and MSC already sail some Indian itineraries and have far deeper pockets.",
+        "salesDrivers": [
+            "**Capacity**: Sky (1,002 cabins, up to 2,400 guests) adds about 126% from 23 October 2026; Sun (1,002 cabins, 600 of them suites or balconies) is due around October 2027, and a fourth ship is under negotiation.",
+            "**Season**: Q3 and Q4 (Diwali, Christmas, New Year, weddings, Holi) are the strong quarters; in the monsoon the ship moves to Chennai and runs below full while testing new routes, so Q2 is weak (−₹6cr operating profit in Q2 FY26, ₹10cr in Q2 FY27).",
+            "**Price and cabin mix**: average revenue per guest rose 32% in Q2 FY27 to ₹13,645, helped by a $15–20 a day fuel surcharge.",
+            "**Market growth**: CRISIL expects India's overnight cruise market (about ₹830cr in FY25) to grow 20–25% a year to FY31, helped by new cruise terminals.",
+            "**Shocks**: one old ship means any breakdown, accident or bad publicity stops most of the revenue until Sky is running."
+        ],
+        "inputs": "**Fuel (very low sulphur fuel oil)**, priced off Singapore rates and bought about a week ahead: about 18% of revenue in 9M FY25 and about 12% in FY26 (₹1,480 per guest-day). Other big costs are port charges, crew and outsourced hotel and food services (budgeted at a fixed cost per guest per day), marketing, and lease rent for the ships (about $16m a year for Sky, much of it booked as depreciation and interest rather than as an operating cost).",
+        "costEffect": "**Fuel is not hedged and is only partly passed on.** Fuel cost per available guest-day rose 72% to ₹2,471 in Q2 FY27 from ₹1,434 a year earlier; a $15–20 a day surcharge recovered part of it, but **about ₹28cr of extra fuel cost hit H1**, roughly a quarter of FY26 operating profit, and management expects a gap of about ₹12cr a quarter to remain until prices fall. It says two ships allow fuel hedging. **What happened:** the underlying operating margin fell from 31% in Q1 FY26 to 24% in Q1 FY27 and 7% in Q2 FY27.",
+        "competitors": [
+            {
+                "name": "Royal Caribbean, MSC, Norwegian Cruise Line and Costa",
+                "note": "Global lines that sail seasonal Indian or nearby itineraries with much larger fleets; Norwegian is also Cordelia's ship supplier."
+            },
+            {
+                "name": "Air travel and resort holidays",
+                "note": "Goa, Kerala, Dubai and Thailand trips compete for the same holiday money."
+            }
+        ],
+        "position": "**One of the few domestic ocean cruise operators in India and the only listed one**, carrying 730,819 guests since 2021. India saw about 4.8 lakh cruise passenger movements in 2025, so Cordelia is a large share of a very small market. Load factor was 91.2% in H1 FY27.",
+        "money": "Screener shows **₹118cr of borrowings and about ₹6cr of cash at March 2026**, so about ₹112cr of net debt; by September borrowings had risen to ₹443cr after ₹344cr of short-term loans taken to fund a **₹429cr interest-bearing advance, passed through a subsidiary to an unnamed intermediary**, to secure a fourth ship. The June 2026 IPO raised ₹585cr of new money, 82% earmarked for deposits and lease rent on Sky and Sun paid to its own IFSC subsidiary. Each new ship is on a 10-year hire-purchase lease (about $16m a year for Sky, owned for $1 at the end), commitments far larger than its ₹121cr of operating profit over the last year. **FY26 operating cash was −₹96cr**, mainly because about ₹220cr went in advances for the new ships; FY24 and FY25 brought in ₹230cr and ₹130cr. Net worth was negative until FY25, and the auditor flagged going-concern doubt for FY24. Shares listed on 1 July 2026 about 16% below the ₹808 issue price, were later split ten for one, and now trade near ₹90, about 12% above the issue price. Promoters hold **89.35%**; no dividend.",
+        "watch": [
+            "Q3 FY27: Sky's first season, and whether the underlying margin (excluding the ₹49cr Norwegian compensation in Q2) recovers above 25%.",
+            "What happens to the ₹429cr advance: a named fourth ship on sensible terms, or money returned.",
+            "Fuel prices and the surcharge, and operating cash turning positive once the new-ship deposits are paid."
+        ],
+        charts: hotelsCharts["Waterways Leisure Tourism"],
+    },
+    {
+        "company": "Travel Food Services",
+        "inShort": [
+            "**India's largest airport food and lounge operator**: food courts and quick-service outlets (KFC, Wagamama and its own brands) and private lounges at 21 airports, plus outlets in Malaysia and Hong Kong.",
+            "**Good:** debt-free with about ₹970cr of cash, a **39% operating margin** in FY26 and 81% of five years' operating profit turned into cash. **Watch:** revenue barely moved in FY26 (₹1,648cr against ₹1,688cr), Delhi T3 leaves the consolidated accounts from October, Chennai and Kolkata come up for renewal in 2027, and air traffic is flat.",
+            "**Verdict: follow.** A high-quality, cash-rich franchise at a fair price, but I want to see growth return through the Delhi change and the 2027 renewals before buying."
+        ],
+        "tagline": "Runs restaurants, food courts and private lounges inside Indian airports under long concessions, promoted by the Kapur family and the UK's SSP Group.",
+        "revenue": "₹1,648cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Travel quick-service restaurants",
+                "text": "About 540 outlets system-wide (June 2026), from 153 brands: international names it licenses such as KFC, Wagamama and Gordon Ramsay, regional favourites and its own concepts. Its adjusted gross margin, after food costs, is about 81%."
+            },
+            {
+                "name": "Lounges",
+                "text": "About 40 lounges in India, Malaysia and Hong Kong, paid for mostly by banks and card networks whose customers get free access, plus walk-ins. CRISIL put its share of India's airport lounge market at **45%** in FY25."
+            },
+            {
+                "name": "Passenger services and new lines",
+                "text": "Meet-and-greet and porter services under Elite Assist, started at Noida in 2026; highway food courts under the government's wayside amenities plan are a later opportunity."
+            }
+        ],
+        "revenueText": "Revenue comes from food and lounge sales at airports it runs directly or through subsidiaries. Much more is earned through joint ventures with airport owners (Adani, GMR) and in Malaysia, which show only as a share of profit: **system-wide sales were ₹2,527cr in FY25, of which ₹839cr sat in joint ventures** outside the consolidated revenue. FY26 consolidated revenue fell 2% to ₹1,648cr partly because a JV was moved out of the consolidated accounts; Q1 FY27 revenue rose 20.6% to ₹452cr on new outlets, with like-for-like sales up 4.2%. From October 2026 the Delhi T3 outlets, consolidated until now, move to a GMR joint venture in which it owns 30%. Its split between food and lounges is not given in what I read.",
+        "shares": [
+            {
+                "title": "Market share, FY25 (CRISIL, including joint ventures)",
+                "source": "Investor presentation, November 2025",
+                "groups": [
+                    {
+                        "rows": [
+                            {
+                                "name": "Indian airport lounges",
+                                "share": 45
+                            },
+                            {
+                                "name": "Indian airport quick-service food",
+                                "share": 26
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Air travellers**, buying food at 21 airports; domestic traffic is the bulk, international travellers spend more.",
+            "**Banks and card networks**, which pay for their customers' lounge visits.",
+            "**Airport owners as landlords and partners**: it pays them a minimum guarantee or a share of sales, whichever is higher, and runs joint ventures with Adani and GMR at their airports."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Running food at an airport means security-cleared staff, kitchens in cramped space, long hours and brand deals; winning tenders needs a record and capital. But rivals such as Devyani bid for the same tenders and the airport owner holds the power."
+        },
+        "moat": "Scale and relationships: the largest lounge network, licences for global brands, joint ventures with the two biggest private airport owners, and a 92% contract renewal rate. The weak point is that every site is a concession of five to ten years, so the moat has to be re-won at each tender, and when airports open new terminals sales can migrate away.",
+        "salesDrivers": [
+            "**Passenger traffic**: the single biggest driver; flat in Q1 FY27 because of route cuts during the Middle East conflict. Management expects a bounce in H2 FY27.",
+            "**Spending per traveller**: like-for-like sales usually grow 5–7 points faster than traffic through menus, bundles and premium brands; price rises were held back this year.",
+            "**New contracts**: about 90 units opened in the last year (Noida, Cochin, Navi Mumbai, Delhi) and over 50 more are being built; new units take 12–18 months to mature, 18–24 months at new airports.",
+            "**Renewals**: Delhi T3 moved to a 30% joint venture from October 2026 (to 2036); Chennai and Kolkata come up at the end of March 2027 and early FY28.",
+            "**Overseas and highways**: entities set up in Dubai and Indonesia to bid; highway food courts are a medium-term plan."
+        ],
+        "inputs": "**Food and packaged goods** are only about 14–19% of sales (gross margin about 81% adjusted). The big costs are **concession fees paid to airports** (a minimum guarantee or a share of sales), staff (more than 5,000 employees) and common-area charges; about 8–10% of costs are truly fixed.",
+        "costEffect": "**Margins are set by rent and staffing more than by food prices.** Food inflation is small against an 81% gross margin and can be priced, since travellers have few alternatives. The risk is fixed minimum guarantees and early staffing at new sites when traffic is weak. **What happened:** the operating margin dipped to 36% in Q1 FY27 from 39% a year earlier as staff were hired ahead of new openings, while traffic was flat.",
+        "competitors": [
+            {
+                "name": "SSP Group",
+                "note": "World-leading travel food operator and TFS's own co-promoter; in India it works through TFS."
+            },
+            {
+                "name": "Devyani International and other food operators",
+                "note": "Bid for the same airport food tenders; Devyani won Delhi T3 packages alongside TFS and SSP in the original award."
+            },
+            {
+                "name": "Airport-owned operators",
+                "note": "Adani and GMR increasingly run retail through joint ventures, in which TFS is the partner for now."
+            }
+        ],
+        "position": "**India's largest airport food and lounge operator**: 45% of the airport lounge market and 26% of airport quick-service food in FY25 (CRISIL, including joint ventures), present at 21 airports with 580 outlets and lounges.",
+        "money": "**Debt-free with about ₹970cr of cash** at June 2026, by its own count; Screener's ₹245cr of borrowings at March 2026 are lease obligations. Over FY22–FY26 it turned **₹1,628cr of operating cash out of ₹2,018cr of operating profit (81%)**, and free cash was ₹1,390cr. Suppliers are paid far later than food is sold, so working capital is negative. New outlets are funded from cash. Other income, mostly interest on the cash pile, was ₹161cr in FY26, about 27% of pre-tax profit. It paid out 31% of FY26 profit as dividends. The July 2025 IPO was entirely a ₹2,000cr sale by the Kapur Family Trust, so no money came to the company. Promoters hold **86.19%**, unchanged since listing.",
+        "watch": [
+            "Q2 and Q3 FY27 results: growth after Delhi T3 leaves the consolidated accounts, and whether the H2 traffic bounce arrives.",
+            "Chennai and Kolkata renewals in 2027.",
+            "The margin returning to about 38–40% as new outlets mature."
+        ],
+        charts: hotelsCharts["Travel Food Services"],
+    },
 ];
 
 export const hotelsBusinesses = { intro, profiles };

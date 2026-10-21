@@ -1153,6 +1153,172 @@ export const hospitalsCharts: Record<string, ProfileCharts> = {
             }
         ],
         "statsAsOf": "18 Oct 2026"
+    },
+    "Gaudium IVF": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "29.7x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "18.1x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹56cr",
+                "note": "IPO money in fixed deposits (₹81cr) less borrowings (₹25cr) at March 2026; ordinary cash not counted."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "36%"
+            },
+            {
+                "label": "Debtor days FY26",
+                "value": "187",
+                "note": "Days of sales owed by customers (Screener); high for a clinic paid largely upfront."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                65,
+                187
+            ],
+            "inventoryDays": [
+                29,
+                38
+            ],
+            "payableDays": [
+                114,
+                133
+            ],
+            "cycleDays": [
+                -20,
+                92
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                14,
+                20,
+                19,
+                29,
+                38
+            ],
+            "ocf": [
+                -1,
+                24,
+                3,
+                9,
+                7
+            ],
+            "fcf": [
+                -2,
+                9,
+                1,
+                0,
+                1
+            ],
+            "note": "Screener, consolidated."
+        }
+    },
+    "Park Medi World": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "34.6x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "20.8x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹64cr",
+                "note": "Borrowings incl. leases at March 2026 (₹364cr) less fixed deposits at June 2026 (₹300cr)."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "27%"
+            },
+            {
+                "label": "Beds (June 2026)",
+                "value": "3,960",
+                "note": "Guided to 4,740 by March 2027 and 5,740 by March 2028."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                151,
+                129
+            ],
+            "inventoryDays": [
+                14,
+                4
+            ],
+            "payableDays": [
+                101,
+                134
+            ],
+            "cycleDays": [
+                64,
+                -2
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                345,
+                391,
+                312,
+                374,
+                446
+            ],
+            "ocf": [
+                155,
+                199,
+                367,
+                215,
+                329
+            ],
+            "fcf": [
+                64,
+                106,
+                299,
+                70,
+                209
+            ],
+            "note": "Screener, consolidated."
+        }
     }
 };
 
@@ -1223,5 +1389,17 @@ export const hospitalsValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 480.0,
         "mcapAtWriting": 8782.0,
         "peAtWriting": 182.0
+    },
+    "Gaudium IVF": {
+        "netDebt": -56,
+        "ttmEbitda": 34.9,
+        "mcapAtWriting": 688,
+        "peAtWriting": 29.7
+    },
+    "Park Medi World": {
+        "netDebt": 64,
+        "ttmEbitda": 465,
+        "mcapAtWriting": 9615,
+        "peAtWriting": 34.6
     }
 };

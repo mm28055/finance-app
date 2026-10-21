@@ -342,6 +342,120 @@ const profiles: BusinessProfile[] = [
         watch: ["The cell line passing ALMM inspection and ramping up.", "Whether H2 delivers the ₹6,000cr revenue and 12% margin guidance.", "The debt path and a permanent finance chief."],
         charts: solarCharts['Saatvik Green'],
     },
+    {
+        "company": "Fujiyama Power Systems",
+        "inShort": [
+            "**A Delhi-based maker of rooftop solar kits for homes**: panels, inverters and batteries sold as a package under the UTL Solar and Fujiyama Solar brands through about 10,100 distributors, dealers and own-brand shops, mostly in north and east India.",
+            "**Good:** revenue up 72% to ₹2,654cr in FY26 and 125% in Q1 FY27 with a steady 19% margin, helped by its own 1 GW cell plant that makes the Indian-cell panels the PM Surya Ghar subsidy requires. **Watch:** profit is not turning into cash (operating cash was −₹3cr in FY26 and only ₹120cr over five years against ₹938cr of operating profit) because stock has piled up to 180 days of sales; growth leans on a government subsidy; and 2026 brought two BIS seizures and a plant fire.",
+            "**Verdict: wait.** The growth and margin are real, but I want to see operating cash turn positive and inventory fall toward the 100–110 days CRISIL expects before paying about 26 times earnings."
+        ],
+        "tagline": "A rooftop solar company that designs and makes its own panels, solar cells, inverters and batteries and sells them as complete home systems through a large dealer network, with plants at Greater Noida, Dadri, Parwanoo, Bawal and Ratlam.",
+        "revenue": "₹2,654cr (FY26, standalone; consolidated figures are the same)",
+        "products": [
+            {
+                "name": "Solar panels",
+                "text": "3,568 MW of panel lines after a 2,000 MW plant at Ratlam, Madhya Pradesh, started in May 2026; older plants run at 70–80%. Panels with Indian cells (DCR) let customers claim the PM Surya Ghar subsidy. Panels were **43% of FY25 revenue** (RHP)."
+            },
+            {
+                "name": "Inverters and power electronics",
+                "text": "On-grid, off-grid and hybrid inverters, UPS and chargers from 4,180 MW of capacity after a 2,000 MW Ratlam line started in August 2026 (one shift at first, 40–50% use). It sells about two watts of inverter for every watt of panel. 24% of FY25 revenue."
+            },
+            {
+                "name": "Batteries",
+                "text": "Lithium-ion and tubular lead-acid batteries, 21% of FY25 revenue. The tubular plant at Bawal burned down in May 2026; it now buys from outside and plans to rent another plant. A 2 GWh lithium-ion line at Ratlam is due in Q2 FY27."
+            },
+            {
+                "name": "Solar cells",
+                "text": "A 1 GW Mono-PERC cell plant, running above 80%, feeds its DCR panels; a 1.2 GW TOPCon cell line (about ₹350cr) has its building ready and machines ordered, due in roughly nine months from August 2026."
+            },
+            {
+                "name": "Other products",
+                "text": "E-rickshaw chargers, online UPS and services (about 12% of FY25 revenue), plus a 50% stake in Zayo Energy and Zayo Cable, which will make frames, ribbon, junction boxes, cable and EVA sheet from about FY28."
+            }
+        ],
+        "revenueText": "Management stopped giving a product split after listing, saying it confused investors; the last disclosed split (FY25, RHP) was **panels 43%, inverters and UPS 24%, batteries 21% and other products 12%**. **About 90% of revenue is sold to households through its own channel (B2C)**; exports are about 2%. Uttar Pradesh alone was 36% of retail sales in FY25 and the top states 72%. Growth now comes mainly from on-grid systems for PM Surya Ghar, which it could enter properly only after making its own DCR cells; off-grid kits for villages (a 1 kVA system costs about ₹50,000) still grow. Distributors pay about ₹25–30 a watt for a full system with battery.",
+        "mixes": [
+            {
+                "caption": "Revenue by product, FY25 (RHP)",
+                "parts": [
+                    {
+                        "label": "Solar panels",
+                        "share": 43
+                    },
+                    {
+                        "label": "Inverters and UPS",
+                        "share": 24
+                    },
+                    {
+                        "label": "Batteries",
+                        "share": 21
+                    },
+                    {
+                        "label": "Other (chargers, online UPS, services)",
+                        "share": 12
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by channel, FY25 (RHP)",
+                "parts": [
+                    {
+                        "label": "Households via dealers (B2C)",
+                        "share": 90
+                    },
+                    {
+                        "label": "Businesses (B2B)",
+                        "share": 10
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Households** buying rooftop systems, about 90% of sales, many under the PM Surya Ghar scheme (1 crore homes targeted, about half done; about 1 GW a month being installed).",
+            "**About 10,100 channel partners** at June 2026 (over 1,150 distributors plus dealers and exclusive 'Shoppes'), aiming for 15,000 by March 2028; a state counts as covered when it has a distributor and service engineer in almost every district.",
+            "**Government tenders and other brands**, supplied as an OEM (for example micro-inverters), a small share."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Panels, inverters and batteries are each crowded markets, and big panel makers are now selling their own kits. Its edge is the package plus service: a dealer and engineer network built since 2008 in small towns, about 500 SKUs, and its own DCR cells, which few rooftop brands have."
+        },
+        "moat": "A large, service-led dealer network in north and east India and the ability to supply a whole subsidy-eligible system from its own plants. Against that, every component can be bought elsewhere, CRISIL calls the inverter market intensely competitive, and demand leans on PM Surya Ghar subsidies.",
+        "salesDrivers": [
+            "**PM Surya Ghar subsidy**: the main driver of on-grid growth; a 'Surya Ghar 2.0' that may add battery support is being discussed but is not notified.",
+            "**Its own guidance**: FY27 revenue growth raised to 70% (from 50%) in August; CRISIL expects revenue above ₹3,000cr.",
+            "**Dealer additions**: from 8,900 to 10,100 partners in one quarter, with Odisha and Uttarakhand newly covered.",
+            "**DCR supply**: industry-wide shortage of Indian-cell panels slows installations; its own cells give it supply others lack.",
+            "**Seasonality**: Q2 and Q3 are weaker, Q4 strongest."
+        ],
+        "inputs": "**Solar cells (its own 1 GW plus bought-in DCR and imported cells), glass, aluminium frames and EVA** for panels; **electronic components, transformers and PCBs** for inverters; **lithium cells and lead** for batteries. Materials (cost of goods) were about 70% of sales in FY26.",
+        "costEffect": "**Partly passed on.** It sells at list prices through distributors and can reprice quickly, but it chose to pass part of its cost savings to customers in Q1 to win share, and cheaper non-DCR panels have squeezed that segment. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 7 points (19% to 12%). **What happened:** there is no Indian price index for its product mix. The operating margin rose from 8% in FY23 to 16% in FY25 and 19% in FY26 as volumes and DCR panels grew, and held at 19% in Q1 FY27; the Bawal fire forced it to buy tubular batteries outside, which management puts at under half a point of gross margin.",
+        "competitors": [
+            {
+                "name": "Luminous Power Technologies",
+                "note": "Named in the RHP as a key rival in inverters and batteries; a large established brand."
+            },
+            {
+                "name": "Waaree Energies, Premier Energies",
+                "note": "Much larger panel and cell makers, listed peers in the RHP, now also selling rooftop kits."
+            },
+            {
+                "name": "Tata Power (rooftop)",
+                "note": "Its rooftop arm is about ₹4,000cr of sales, per an analyst citing Tata Power's call."
+            },
+            {
+                "name": "Insolation Energy, Exicom",
+                "note": "Other listed peers in the RHP; Insolation sells panels through dealers in the same states."
+            }
+        ],
+        "position": "**About 10% of India's on-grid rooftop market**, by management's own estimate, and among the leaders in off-grid home solar.",
+        "money": "Screener shows **₹520cr of borrowings** at March 2026 against about ₹140cr of cash (balance sheet), so **net debt of about ₹380cr**; CRISIL rates it A/Stable with gearing of 0.38x. **The IPO cash went into stock and plants: inventory rose from 128 to 180 days of sales in FY26 and operating cash was −₹3cr**; free cash was −₹515cr in FY26 and −₹727cr over five years. FY27 capex is about ₹500cr (₹200cr debt, ₹100cr of remaining IPO money, ₹200cr own cash), taking gross block to about ₹1,300cr, plus about ₹50cr of equity into Zayo. It booked a ₹143.6cr exceptional loss for the May 2026 Bawal fire and expects insurance to repay it by March 2027. It raised ₹600cr of new shares at ₹228 in November 2025 and says no further equity is planned this year. Promoters hold **86.63%** (June 2026); no dividend.",
+        "watch": [
+            "Operating cash turning positive and inventory falling from 180 days.",
+            "The 70% FY27 growth guide and an 18–19% margin as Ratlam's new capacity ramps up.",
+            "The fire insurance payout, the BIS cases, and any change to PM Surya Ghar subsidies."
+        ],
+        charts: solarCharts["Fujiyama Power Systems"],
+    },
 ];
 
 export const solarBusinesses = { intro, profiles };

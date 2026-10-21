@@ -145,6 +145,70 @@ const profiles: BusinessProfile[] = [
         watch: ["Monocon UK and Hofmann reaching break-even in FY27.", "The Indian company's margin back above 12%.", "A new site and funding for Khordha or the joint venture."],
         charts: electAndRefracCharts['IFGL Refractories'],
     },
+    {
+        "company": "Monolithisch India",
+        "inShort": [
+            "**Makes ramming mass**, a ready-mixed silica powder that lines the induction furnaces of small and mid-sized steel mills and is used up every few days, from three plants in West Bengal and Jharkhand, close to India's biggest induction-furnace steel cluster.",
+            "**Good:** sales grew 64% in Q1 FY27 at a 28% margin, capacity has just doubled to 5.76 lakh tonnes, and its own quartzite mine should cut stone cost from early 2027. **Bad:** a P/E of about 93, stock held for 226 days, free cash negative, the Ranchi plant bought from the promoter family with the MD's money, and FY28 guidance (₹500–550cr) that needs revenue to quadruple in two years.",
+            "**Verdict: pass.** A fast-growing, well-placed niche maker, but the price already assumes the FY28 target is met, and the family dealings and weak cash call for proof first."
+        ],
+        "tagline": "A Ranchi family's maker of pre-mixed silica ramming mass, the consumable furnace lining used by induction-furnace steel mills, listed on NSE's SME platform in June 2025.",
+        "revenue": "₹135cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Premium ramming mass (SGB Limited)",
+                "text": "Launched in 2025 with a guaranteed 52–55 hours of furnace heat and 15–20% longer lining life. It sells for about ₹700–900 a tonne more at about ₹200–300 extra cost. It was about **50% of Q1 FY27 revenue** (about 20,500 of 52,000 tonnes), with 60–65% expected in Q2."
+            },
+            {
+                "name": "Standard grades",
+                "text": "SGB-777, LG-86, SLM-999, BG-77 and the post-mix SLM-980, for different furnace conditions in steel, iron and foundries. Realisation is about ₹8–9 a kg delivered."
+            },
+            {
+                "name": "Trading and silica side-lines",
+                "text": "Some additives and lower grades are bought and resold (about ₹1.5cr a quarter). It plans to sell surplus quartzite from its mine as silica sand, and talks of future high-purity silica products, so far undisclosed."
+            }
+        ],
+        "revenueText": "Almost all revenue is ramming mass sold to **induction-furnace steel mills in eastern India**. Exports, mainly to Nepal and Bangladesh through traders, are only about ₹2–3cr a quarter. **The top 10 customers were 59% of FY25 revenue** (RHP). Management says it is 25–35% if each plant site is counted separately, and that it supplies 6 of the top 10 secondary steel makers. Volume was about 52,000 tonnes in Q1 FY27. No segment split is reported.",
+        "customers": [
+            "**Secondary steel mills with induction furnaces** in West Bengal, Jharkhand and Odisha, mostly integrated units. Management says it holds 70–85% of the ramming mass needs of many of them.",
+            "**Foundries and iron makers**, plus exports to Nepal and Bangladesh through Indian traders."
+        ],
+        "difficulty": {
+            "level": "Low",
+            "text": "Crushing and grading quartzite and mixing in boric acid is not hard. Plant capex is small: ₹45cr buys 3 lakh tonnes of new capacity. The edge is consistent quality across a furnace campaign, nearness to customers (freight decides who wins), and now a captive quartzite mine."
+        },
+        "moat": "Location and freight. Its plants sit in the densest cluster of induction-furnace mills, so delivered cost is low, and the family has supplied these mills for decades. The won Nawada mine block fixes stone cost for five years, which rivals buying from local miners cannot match. But the product is a consumable that others can make, and its closest listed peer is adding capacity too.",
+        "salesDrivers": [
+            "**Guidance**: Q2 FY27 revenue ₹55–60cr and FY27 about ₹250cr (27 July). FY28 ₹500–550cr from the existing 5.76 lakh tonnes plus mine surplus (30 September). EBITDA margin guided at 22–25%, with 4–5 points more hoped for once the mine runs.",
+            "**Capacity**: up from 2.56 to 5.76 lakh tonnes with the Purulia greenfield plant (trials in September 2026). New plants are planned near Hospet, Karnataka (1.25 lakh tonnes, ₹20cr, July 2027) and Udaipur, Rajasthan (1.75 lakh tonnes, ₹25cr, November 2027), taking capacity to about 8.75 lakh tonnes.",
+            "**Steel demand**: induction-furnace steel output in eastern India. Management cites ₹30,000–40,000cr of mill investment committed in the Purulia–Raghunathpur belt.",
+            "**Product mix**: moving customers to the premium SGB Limited grade lifts the price per tonne."
+        ],
+        "inputs": "**Quartzite stone and boric acid/boron oxide additives.** Raw materials (net of stock change) were 46% of FY26 sales: ₹42cr of stone and ₹17cr of additives bought in FY26. Inward freight and stores add to 'other costs'. Additives cost about ₹150–155 a kg in Q1 FY27, against ₹130–135 earlier.",
+        "costEffect": "**Prices are not fixed by contract.** It has no price agreements with customers and sells at delivered prices, so freight and stone swings hit the margin until passed on. The operating margin has held at 19–28% a quarter (22% in FY25, 24% in FY26, 28% in Q1 FY27 as the premium grade grew). From early 2027 the mine should cut stone cost by about ₹1,300–1,400 a tonne, roughly 15% of the selling price. **Rule of thumb:** a 10% rise in raw material cost not passed on would cut the margin by about 4.5 points.",
+        "competitors": [
+            {
+                "name": "Raghav Productivity Enhancers",
+                "note": "The only listed peer (RHP) and the largest ramming mass maker, based in Rajasthan; also adding capacity to about 8 lakh tonnes."
+            },
+            {
+                "name": "Regional unorganised makers",
+                "note": "Dozens of small eastern and Rajasthan units; Monolithisch says the mine gives it a stone-cost edge over them."
+            },
+            {
+                "name": "Private makers in the south",
+                "note": "Two or three unlisted firms around Bengaluru, Chennai and Hyderabad, where its Hospet plant will compete."
+            }
+        ],
+        "position": "**One of the two largest ramming mass makers in India** by capacity (5.76 lakh tonnes after September 2026). It sold about 52,000 tonnes in Q1 FY27, around a third of the new capacity on an annual basis.",
+        "money": "At March 2026 Screener shows **borrowings of ₹6cr against about ₹23cr of cash**, so about ₹17cr of net cash, after an ₹82cr IPO in June 2025. **Cash has lagged profit**: FY25–FY26 operating profit of ₹53cr produced ₹18cr of operating cash, and free cash was −₹13cr. Stock rose to 226 days of sales from 127 because it hoarded stone to secure supply. The mine needs about ₹17–18cr in January–February 2027 plus a ₹6–7cr deposit; management will fund it by cutting stone stock. The new plants (₹45cr) are to come from cash, IPO money and perhaps a short ₹5–10cr loan. No equity raise is planned. The family's ₹18cr loan and the related-party purchase of its Ranchi plant are the governance flags.",
+        "watch": [
+            "Q2 and Q3 revenue tracking the ₹250cr FY27 guide as the new plant fills.",
+            "The mine starting on time and stock days falling well below 200.",
+            "Fewer and smaller dealings with promoter-family companies."
+        ],
+        charts: electAndRefracCharts["Monolithisch India"],
+    },
 ];
 
 export const electAndRefracBusinesses = { intro, profiles };

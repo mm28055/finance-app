@@ -452,6 +452,315 @@ const profiles: BusinessProfile[] = [
         watch: ["Silicon-carbide wafers qualified by customers, and first revenue.", "The bank loan and phase 2 funding.", "Clear disclosure of what RIR owns in the technology.", "Core thyristor sales growing again."],
         charts: electricalEquipmentCharts["RIR Power Electr"],
     },
+    {
+        "company": "Parth Electricals",
+        "inShort": [
+            "**A Vadodara maker of medium-voltage switchgear**: ring main units (RMUs, the boxes that switch underground distribution cables), compact substations and panels, mostly built under Schneider Electric technology licences. It also does substation installation and service, and now EPC work.",
+            "**Good:** a service team trusted up to 765kV, a ₹272cr order book (1.4 times FY26 sales), first exports (US, Zambia) and a data-centre order from Reliance. **Bad:** an operating margin of only about 10%, no operating cash in FY25–FY26, RMU sales down a third in FY26, four equity raises in 14 months, and the MD's own US company as a customer.",
+            "**Verdict: pass.** A capable service-led switchgear firm, but at about 50 times earnings with no operating cash yet, the price assumes the new plants and margins work out."
+        ],
+        "tagline": "A Gujarat switchgear and substation-services company founded by ex-Siemens engineer Jignesh Patel in 2005, listed on NSE's SME platform in August 2025.",
+        "revenue": "₹198cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "Ring main units (RMUs)",
+                "text": "11–22kV gas-insulated switching units for discoms' underground networks, made under a Schneider Electric technology transfer. **₹88cr in FY26 (44% of revenue), down from ₹133cr** as Gujarat RDSS orders slowed. 33kV RMUs are due from the new GIS plant."
+            },
+            {
+                "name": "Panels, compact substations and E-houses",
+                "text": "MV and LV panels (as a Schneider licensee), control and relay panels up to 132kV, compact/package substations up to 5 MVA (₹11cr) and motor control centres. Panels were ₹29cr in FY26. A ₹45.4cr compact-substation order for Reliance's Jamnagar AI data centre is being executed."
+            },
+            {
+                "name": "Services and EPC",
+                "text": "Installation, testing and commissioning of substations and cables up to 220kV, GIS service up to 400–765kV, and RMU refurbishment. **₹55cr in FY26 (27.5% of revenue), up from ₹9cr.** It is now taking EPC jobs: PGVCL underground cabling (₹84cr) and a Kandla port 66kV GIS substation (₹45cr)."
+            }
+        ],
+        "revenueText": "In FY26, **RMUs were 44% of revenue, services and EPC 27.5%, panels 15%**, and compact substations 6%. **Exports were ₹31cr (16%)**, its first year, to the US (an intelligent motor-control order needing UL certification), Zambia's ZESCO (₹10.6cr), Nepal and Bhutan. The MD targets exports of 20–25% of manufacturing revenue. The ₹271.6cr order book is 53% EPC, 41% manufacturing and 6% services, mostly for FY27.",
+        "mixes": [
+            {
+                "caption": "Revenue by product, FY26 (annual report)",
+                "parts": [
+                    {
+                        "label": "RMUs",
+                        "share": 44.3
+                    },
+                    {
+                        "label": "Services and EPC",
+                        "share": 27.5
+                    },
+                    {
+                        "label": "Panels",
+                        "share": 14.6
+                    },
+                    {
+                        "label": "Compact substations",
+                        "share": 5.8
+                    },
+                    {
+                        "label": "Other and unallocated",
+                        "share": 7.8
+                    }
+                ]
+            },
+            {
+                "caption": "Order book by segment, ₹271.6cr (May 2026)",
+                "parts": [
+                    {
+                        "label": "EPC",
+                        "share": 53
+                    },
+                    {
+                        "label": "Manufacturing and supply",
+                        "share": 41
+                    },
+                    {
+                        "label": "Services",
+                        "share": 6
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**State power distributors**: Gujarat discoms under the RDSS scheme, including PGVCL; GETCO and UPPTCL for substations; Tata Power's Odisha discom (TPCODL).",
+            "**Large private users**: Reliance (Jamnagar refinery and AI data centre), Adani, Tata Power, CESC, IOCL, Linde, plus Siemens Energy and GE Vernova as service clients.",
+            "**Schneider Electric**, whose designs it makes under licence; Parth earlier supplied MV panels only as Schneider's outsourcing partner.",
+            "**Export utilities and buyers**: ZESCO (Zambia) and a US customer, partly through the MD's US company A K & J Electric."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "RMUs and panels must pass type tests and utility approvals; the products themselves come from Schneider technology licences. Its own gas-insulated switchgear is still being developed and type-tested. The service side needs trained engineers (Pfisterer and Raychem certifications); that is its real edge, but the business is small and labour-based."
+        },
+        "moat": "Quick, skilled field service that big makers often cannot match, and utility approvals built over 20 years, win repeat work. But the products are licensed rather than its own, competitors are far larger (Schneider, Siemens, ABB, CG), and utility tenders are won on price. A 10% margin shows little pricing power.",
+        "salesDrivers": [
+            "**Guidance (21 May 2026)**: revenue growth of 20–30% a year for the next two to three years, and the EBITDA margin up at least 100 basis points a year.",
+            "**Order book**: ₹271.6cr, mostly for FY27, plus more than ₹100cr in the pipeline.",
+            "**New capacity**: a GIS plant at Karachiya, Vadodara (₹20cr of IPO money, opening September 2026, up to ₹200cr of revenue at full use) and a rented Odisha unit (₹19cr planned, up to ₹100cr).",
+            "**Government spending**: RDSS discom upgrades and the National Electricity Plan's ₹9.16 lakh crore of transmission spending; data centres; renewables and battery storage.",
+            "**Exports**: US (UL-certified products), Africa and the Middle East."
+        ],
+        "inputs": "**Bought-in switchgear parts, copper, steel and aluminium**, plus cables for EPC work. Materials were 74% of FY26 sales, so it is mostly an assembler.",
+        "costEffect": "**Mostly not protected.** Industrial customers and its product tenders give no price-variation clause; only EPC cable supply has one. The MD says new bids now carry a contingency for metal prices. Gross margin moved from 27.6% (FY24) to 20.9% (FY25) and 26.3% (FY26). **Rule of thumb:** a 5% rise in material costs not passed on would cut the operating margin by about 3.7 points, a third of today's 10.5%.",
+        "competitors": [
+            {
+                "name": "Schneider Electric, Siemens, ABB/Hitachi Energy, CG Power",
+                "note": "Global and Indian majors; Parth licenses Schneider designs and competes with them on price and service speed."
+            },
+            {
+                "name": "Voltamp Transformers",
+                "note": "Bid against Parth, Siemens, ABB and CG in Tata Power's Odisha compact-substation tender, which Parth won after a reverse auction (₹9.2cr)."
+            },
+            {
+                "name": "Local panel builders and service contractors",
+                "note": "Small rivals in services; Parth claims higher-voltage skills."
+            }
+        ],
+        "position": "**A small regional player**: FY26 revenue of ₹198cr against multi-thousand-crore rivals. It leads in Gujarat discom RMU supply and in specialised substation services. Capacity use is not disclosed.",
+        "money": "Debt fell to **₹17cr at March 2026 against ₹44cr of cash**, so about ₹26cr of net cash, after ₹62cr was raised in pre-IPO rounds and the August 2025 IPO at ₹170. A further ₹10.3cr of shares plus promoter warrants were sold at ₹344 in July 2026 for working capital. **Cash is the problem.** Operating cash was zero in FY25 and −₹4cr in FY26 on ₹39cr of operating profit, and free cash was −₹36cr over the two years. Inventory nearly tripled to ₹42cr, partly a delayed US order, and stock days went from 39 to 104. ₹39cr of IPO money is for the GIS and Odisha plants. Promoters hold 61.22%.",
+        "watch": [
+            "Operating cash turning clearly positive in FY27 as the inventory unwinds.",
+            "RMU revenue recovering and the GIS plant producing its own-design products.",
+            "Further dealings with the MD's US company, and whether that company is folded into Parth."
+        ],
+        charts: electricalEquipmentCharts["Parth Electricals"],
+    },
+    {
+        "company": "Anawil Wire",
+        "inShort": [
+            "**Fabricates steel towers for wind turbines** (up to 140 metres) at Koppal, Karnataka and, since March 2026, Kutch, Gujarat, mostly as job work on steel supplied by turbine makers such as Sany and Envision.",
+            "**Good:** sales grew 82% in FY26 at a 43% operating margin, the order book was ₹360cr at March plus a ₹134cr order in September, and IPO money cuts debt. **Bad:** the top customer was 29% and the top ten 97% of FY26 sales, the plants were 48% used, stock sits for 409 days, free cash was −₹75cr, and the promoters are new to the industry and deal heavily with their own construction firm.",
+            "**Verdict: pass.** Profitable in a wind-installation boom, but too concentrated, too new and too entangled with the family's other firm to trust through a downturn."
+        ],
+        "tagline": "A Vapi-based maker of tubular steel towers for onshore wind turbines, set up in 2021 by the Vashi family and listed on NSE's SME platform in August 2026 at ₹270 a share.",
+        "revenue": "₹143cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "Pure conversion",
+                "text": "Rolls and welds the customer's own steel plates into tower sections: about ₹50–60 lakh revenue and ₹25–30 lakh EBITDA a tower (44–50% margin). About 45–50% of towers in the order book."
+            },
+            {
+                "name": "Conversion plus internals and paint",
+                "text": "Adds ladders, platforms and painting: about ₹1.0–1.1cr revenue and ₹35–40 lakh EBITDA a tower. About 30–35% of towers. An internals plant at Koppal is being built up."
+            },
+            {
+                "name": "Integrated supply",
+                "text": "Buys the steel and parts too: about ₹3.0–3.5cr revenue but only ₹40–50 lakh EBITDA a tower (14–16% margin). About 20% of towers. The ₹134cr order is likely of this kind (₹3.5cr a tower)."
+            }
+        ],
+        "revenueText": "**Tower fabrication was 94% of FY26 revenue** (₹135cr); boiler and paper-machinery parts made up the rest (₹8cr). Karnataka was 94% of sales and Gujarat 6%. **Customers are few**: the largest bought 29% of FY26 revenue, the top five 79% and the top ten 97%. It made 210 towers in FY26 (135 in FY25), earning about ₹29 lakh of EBITDA a tower. About 70% of revenue comes in October–March, as the monsoon halts site work.",
+        "mixes": [
+            {
+                "caption": "Order book by tower count, ~379 towers (October 2026, approximate, management)",
+                "parts": [
+                    {
+                        "label": "Pure conversion",
+                        "share": 47.5
+                    },
+                    {
+                        "label": "Conversion plus internals",
+                        "share": 32.5
+                    },
+                    {
+                        "label": "Integrated supply",
+                        "share": 20
+                    }
+                ],
+                "note": "Midpoints of the ranges management gave; shares by value differ because integrated-supply towers earn about six times the revenue."
+            }
+        ],
+        "customers": [
+            "**Wind turbine makers and wind developers**: the March 2026 order book named Sany (123 towers, ₹72cr) and Envision. Four other customers were not named; one order (₹108cr, 34 towers) is the largest.",
+            "**Six customers** held the ₹360cr order book at March 2026 (379 towers, due by March 2027). A further ₹134cr order (38 towers) for an Andhra Pradesh hybrid wind project came in September 2026."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Rolling and welding 70mm steel plate into 140-metre towers needs heavy machines, certified welding (ISO 3834) and turbine-maker approval for each design. But the work is mostly job-work fabrication on the customer's steel and design, and many Indian fabricators do it."
+        },
+        "moat": "Location and approvals. Towers are huge and costly to move, so plants near wind sites in Karnataka and Kutch save freight, and each turbine maker must approve the plant. There is little else. Customers own the design and often the steel, and they can split orders among fabricators.",
+        "salesDrivers": [
+            "**Wind installations in India**, especially in Karnataka, Gujarat and Andhra Pradesh, and turbine makers' outsourcing of towers.",
+            "**Order book**: ₹360cr at March 2026 plus ₹134cr won in September 2026, against FY26 revenue of ₹143cr.",
+            "**Capacity**: 612 towers a year after Kutch, against 210 made in FY26 (48% use).",
+            "**Scope**: more integrated-supply orders raise revenue per tower five- or six-fold but cut the margin. Management asks to be judged on EBITDA per tower.",
+            "**Seasonality**: about 70% of sales come in the second half."
+        ],
+        "inputs": "**Mild-steel plates** (usually supplied by the customer in conversion orders), welding consumables, shot, grit and paint, and internals such as ladders and platforms. Materials were 32% of FY26 sales, and the top ten suppliers 90% of purchases.",
+        "costEffect": "**Mostly protected today**, because in pure conversion the customer owns the steel. As integrated-supply orders grow, it will carry steel prices on fixed orders. **Rule of thumb:** in an integrated tower, a 10% rise in steel not passed on would cut that order's 14–16% margin roughly in half. Margins so far: 41% (FY24), 38% (FY25), 43% (FY26).",
+        "competitors": [
+            {
+                "name": "Unlisted regional and national fabricators",
+                "note": "The prospectus says no listed Indian company does a similar business, and names no rivals. It lists competition from regional and national players as a risk."
+            }
+        ],
+        "position": "**A small regional fabricator**: 210 towers in FY26 against a capacity of 612 (48% used). Its market share is not disclosed.",
+        "money": "At March 2026 **borrowings were ₹128cr** after it built the Kutch plant (FY26 investment ₹97cr). The August 2026 IPO raised ₹143cr of new money at ₹270 a share, of which about ₹115cr is to repay loans, so net debt should be roughly **₹12cr** after repayment (not yet reported). **Cash lags profit**: over FY23–FY26, ₹126cr of operating profit produced ₹34cr of operating cash, and free cash was −₹140cr. Stock days were 409 in FY26 and customers took 99 days to pay. The promoters' firm Darpan Infrastructure supplies services, construction and guarantees. Promoters hold 65.26%.",
+        "watch": [
+            "Customer spread: the top customer below 25% and new turbine makers added.",
+            "Operating cash close to operating profit in FY27, with stock days falling.",
+            "Dealings with Darpan Infrastructure shrinking, and any developments in its criminal case."
+        ],
+        charts: electricalEquipmentCharts["Anawil Wire"],
+    },
+    {
+        "company": "Prostarm Info Systems",
+        "inShort": [
+            "**Makes and sells power-backup equipment** (UPS systems, inverters, lithium battery packs, voltage stabilisers), resells batteries and IT hardware, and is moving into battery-energy-storage (BESS) projects and a 1.2 GWh BESS assembly plant.",
+            "**Good:** a ₹1,090cr order book, 467 dealers and a long record with government, bank and railway buyers. **Bad:** **operating cash has been negative in each of the last four years** (−₹74cr in total), customers took 241 days to pay in FY26 (much of it one police-IT project), half of FY26 sales were resold third-party goods or IT hardware, and the BESS plant is late.",
+            "**Verdict: pass.** It looks cheap at 20 times earnings, but profit has not turned into cash for four years and the BESS plans need more money."
+        ],
+        "tagline": "A Navi Mumbai power-electronics company founded in 2008 that makes UPS and inverter systems, resells batteries and IT equipment, and is building a battery-storage business; listed in June 2025.",
+        "revenue": "₹386cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Own-make power products",
+                "text": "UPS systems up to 600 kVA, lift and solar-hybrid inverters, lithium battery packs, servo stabilisers and isolation transformers, made in Pune and Navi Mumbai (plant use 16–45%). **₹145cr in FY26 (38% of revenue).**"
+            },
+            {
+                "name": "System integration and third-party products",
+                "text": "IT hardware, CCTV and command-centre systems for government projects (₹121cr, 31%), plus resold batteries, solar panels and spares (₹105cr, 27%). These are low-margin trading lines."
+            },
+            {
+                "name": "BESS and solar EPC",
+                "text": "Battery-storage projects: ₹4cr in FY26, then ₹31cr in Q1 FY27 (40% of the quarter) from an Adani Electricity project. It also builds rooftop solar (10.56 MW so far) and has a ₹165cr solar EPC order from Solarium Green Energy. Two developer projects (Bihar 120 MWh and Karnataka 300 MWh) make up ₹854cr of the order book."
+            },
+            {
+                "name": "Services",
+                "text": "UPS rental (mainly at ATMs), AMCs and after-sales service: ₹9cr in FY26."
+            }
+        ],
+        "revenueText": "In FY26, **own-make products were 38% of revenue, system integration 31%, resold third-party products 27%**, services 2% and BESS 1%. By channel, about two-thirds goes through tenders, government e-marketplace (GeM) and direct sales, and the rest through dealers and OEMs. In Q1 FY27, 71% of revenue was from western India. The order book was ₹1,085cr in June 2026, 82% from government; ₹854cr of it is the two BESS developer projects, which earn rent over 12 years rather than sales. Excluding those, orders were about ₹236cr.",
+        "mixes": [
+            {
+                "caption": "Revenue by segment, FY26 (annual report)",
+                "parts": [
+                    {
+                        "label": "Own-make power products",
+                        "share": 37.6
+                    },
+                    {
+                        "label": "System integration",
+                        "share": 31.4
+                    },
+                    {
+                        "label": "Third-party products",
+                        "share": 27.3
+                    },
+                    {
+                        "label": "Services",
+                        "share": 2.4
+                    },
+                    {
+                        "label": "BESS EPC",
+                        "share": 1.1
+                    },
+                    {
+                        "label": "Solar EPC",
+                        "share": 0.1
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by segment, Q1 FY27 (investor presentation)",
+                "parts": [
+                    {
+                        "label": "BESS EPC",
+                        "share": 40
+                    },
+                    {
+                        "label": "Third-party products",
+                        "share": 30
+                    },
+                    {
+                        "label": "Own-make power products",
+                        "share": 28
+                    },
+                    {
+                        "label": "Services",
+                        "share": 1
+                    },
+                    {
+                        "label": "Other",
+                        "share": 1
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Government and PSU buyers through tenders**: state police IT (the CCTNS project behind most receivables), SAIL, South Eastern Railway, RailTel, NTPC Vidyut Vyapar, the Airport Authority, public-sector banks and state departments.",
+            "**Private companies**: Adani Electricity (BESS), L&T, Solarium Green Energy (solar EPC), plus healthcare, BFSI, telecom and data-centre users.",
+            "**Dealers and OEMs**: 467 dealers, and white-label supply to some UPS and solar-inverter brands."
+        ],
+        "difficulty": {
+            "level": "Low",
+            "text": "UPS and inverters are assembled from bought-in electronics; much of the UPS range is imported and customised. Lithium packs and BESS containers are assembled from imported (mostly Chinese) cells. Tender qualifications and a service network matter more than technology."
+        },
+        "moat": "A service network and tender approvals with government, banks and railways bring repeat orders, and battery replacement brings recurring sales. But products are not differentiated, rivals are many and larger, and over half of sales are resold goods at thin margins.",
+        "salesDrivers": [
+            "**Guidance (13 August 2026)**: FY27 revenue growth of at least 25%, EBITDA margin 12–13% and PAT margin 8.5–9%. BESS plant use 20–25% in FY27 and 40–50% in FY28, with about ₹500cr of FY28 BESS revenue targeted.",
+            "**Order book**: ₹1,090cr including L1, plus more than ₹2,000cr of bids under evaluation (two large ones worth about ₹1,800cr).",
+            "**BESS**: moving from utility projects (where bidders are 'bleeding', management says) to commercial and industrial users. The Jhajjar plant was held back over Chinese cell and freight costs.",
+            "**Government spending** on police IT, railways, banks and power; Q1 is seasonally weak and the second half strong."
+        ],
+        "inputs": "**Electronic parts, imported UPS units, lead-acid and lithium cells (mainly from China), and resold IT hardware and batteries.** Bought-in goods and materials were 72% of FY26 sales, with ₹211cr of traded goods alone.",
+        "costEffect": "**Weakly protected.** Tenders are fixed-price. Management says China's restrictions on battery exports and higher freight are hurting BESS margins, which is why the plant was delayed. Margin history: 9% (FY22), 14% (FY24), 13% (FY25), 12% (FY26), 8.5% in Q1 FY27. **Rule of thumb:** a 5% rise in bought-in costs not passed on would cut the margin by about 3.6 points, nearly a third of it.",
+        "competitors": [
+            {
+                "name": "Large UPS and power-electronics makers",
+                "note": "The annual report names none; it competes in tenders and dealer markets with many organised and unorganised suppliers."
+            },
+            {
+                "name": "BESS integrators and EPC firms",
+                "note": "Management cites HG Infra, Pace Digitek and Vikram Solar as utility-BESS players suffering margin erosion; it is avoiding that segment."
+            }
+        ],
+        "position": "**A mid-sized power-backup supplier** with three plants. Plant use was 16–45% before the new BESS and UPS units, and more than 2 lakh installations. Market share is not disclosed.",
+        "money": "At March 2026 Screener shows **borrowings of ₹93cr against about ₹74cr of cash**, so roughly ₹20cr of net debt, even after a ₹168cr IPO in June 2025. **Cash is the weak point.** Operating cash was negative in each of FY23–FY26 (−₹74cr in total, −₹49cr in FY26), and free cash was −₹120cr over FY22–FY26. Receivables reached ₹254cr (241 days of sales) at March 2026, mostly the CCTNS police project. Management says ₹46cr was collected in Q1 and expects about half to be cleared by end-Q2. The BESS developer projects will be funded in subsidiaries, with SBI debt for Bihar, while the Karnataka project may be sold. ₹43.3cr of warrants at ₹147 were approved in August 2026 for working capital. Promoters hold 72.83%.",
+        "watch": [
+            "Receivables falling towards 120–150 days and a first positive operating-cash year.",
+            "The Jhajjar BESS plant running, and C&I storage orders replacing the one-off Adani project.",
+            "Any further equity raise beyond the ₹43cr of warrants."
+        ],
+        charts: electricalEquipmentCharts["Prostarm Info Systems"],
+    },
 ];
 
 export const electricalEquipmentBusinesses = { intro, profiles };

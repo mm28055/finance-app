@@ -336,6 +336,99 @@ const profiles: BusinessProfile[] = [
         watch: ["Operating cash staying positive and customers paying in under 100 days.", "The network loss shrinking once the Army maintenance contract is signed.", "The margin holding at 23% or more as fibre prices cool, and the preform plant on time for October 2028."],
         charts: cablesCharts['HFCL'],
     },
+    {
+        "company": "Vidya Wires",
+        "inShort": [
+            "**Makes copper and aluminium winding wires and strips** in Gujarat, the insulated conductors that go inside transformers, motors and generators, and is doubling capacity through a new subsidiary, ALCU Industries. Listed in December 2025.",
+            "**Good:** steady growth (sales up 24% to ₹1,840cr in FY26, 33% in Q1 FY27), metal prices passed straight to customers, and debt mostly repaid from the IPO. **Watch:** it earns only about 4–5 paise per rupee of sales, and over five years ₹262cr of operating profit produced **no operating cash at all** (−₹2cr), while the shares trade at about 30 times earnings.",
+            "**Verdict: pass.** A respectable converter, but 30 times earnings is a high price for a 4.7% margin whose profit has not turned into cash."
+        ],
+        "tagline": "A Gujarat maker of copper and aluminium winding wires, strips and paper-covered conductors for transformers, motors and solar, founded in 1981 by the Rathi family.",
+        "revenue": "₹1,840cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Enamelled and paper-covered copper wires and strips",
+                "text": "The core business: insulated copper conductors for transformers, motors, pumps and electricals, more than 6,400 sizes. Copper was about 96% of FY26 revenue."
+            },
+            {
+                "name": "Aluminium conductors",
+                "text": "Enamelled and paper-covered aluminium wires and strips, mainly for transformers; about 4% of revenue, expected to reach about 10% as ALCU's aluminium lines fill. Aluminium needs about 3.5 times more processing, so it earns more per tonne."
+            },
+            {
+                "name": "New products at ALCU",
+                "text": "Started 7 February 2026: solar PV round ribbon, multi-paper-covered copper conductors, copper bus bars and foils for switchgear and transformers, and CTC (3,000 tonnes in the first phase, from about October 2026)."
+            }
+        ],
+        "revenueText": "By end use, **power and transmission (mostly transformers) was about 51% of revenue**, electricals 27%, general engineering 13%, renewables and EV 7% and consumer durables 3% (management, May 2026). **Exports were about 12%**, against a target of 25%. FY26 volume was about 18,024 tonnes, up about 6.5%; most of the revenue growth came from higher copper prices. It has served more than 370 customers over three years; none are named.",
+        "mixes": [
+            {
+                "caption": "Revenue by end market, FY26 (approximate, from management)",
+                "parts": [
+                    {
+                        "label": "Power and transmission",
+                        "share": 51
+                    },
+                    {
+                        "label": "Electricals",
+                        "share": 27
+                    },
+                    {
+                        "label": "General engineering",
+                        "share": 13
+                    },
+                    {
+                        "label": "Renewables and EV",
+                        "share": 7
+                    },
+                    {
+                        "label": "Consumer durables",
+                        "share": 3
+                    }
+                ],
+                "note": "Management figures; they add to 101 because of rounding."
+            }
+        ],
+        "customers": [
+            "**Transformer, motor and electrical-equipment makers** in India, plus some global clients; more than 370 customers over three years, none named and no concentration disclosed.",
+            "Orders are short: delivery in 20–45 days, priced off the London Metal Exchange copper price booked on the day."
+        ],
+        "difficulty": {
+            "level": "Low",
+            "text": "Winding wire is a well-known process; new products need customer audits and trial lots, which take two to three months. Peers are adding capacity too, and barriers are mainly money and customer approvals."
+        },
+        "moat": "Little. It is a converter that earns a processing fee on metal it passes through; its strengths are a wide product range, about 35–40% of plant that can switch between products, and tight stock control.",
+        "salesDrivers": [
+            "**Transformer and grid spending**: about half of sales go into power and transmission, which management calls strong for four to five years.",
+            "**Copper prices**: they move revenue a lot but not profit, because metal is passed through.",
+            "**Capacity**: from about 19,700 tonnes to 35,000–36,000 by late 2026; management expects 50–60% use of the total in FY27 and about 80% (its practical maximum) in FY28.",
+            "**Guidance**: none in numbers; the MD said FY27 will be 'full of growth' and EBITDA per tonne will improve.",
+            "**Exports**: 12% now, aiming for 25% over time; freight costs rose with the West Asia conflict."
+        ],
+        "inputs": "**Copper rod and cathode** (and aluminium), 40–50% imported, plus enamel and paper insulation. Materials were about 94% of FY26 sales (from gross profit).",
+        "costEffect": "**Protected on metal, not on conversion costs.** Each order books copper on the LME and Vidya books the same quantity with its supplier, so metal price swings pass through; the margin depends on processing charges, freight, packing and power. **Rule of thumb:** with about 94% of sales in materials, a 1% conversion-cost slip it cannot recover costs about a fifth of its margin. **What happened:** operating margin stayed in a narrow 3.4–4.9% range from FY22 to Q1 FY27 even as copper rose sharply.",
+        "competitors": [
+            {
+                "name": "Precision Wires India",
+                "note": "Named by the MD; a larger winding-wire maker."
+            },
+            {
+                "name": "Ram Ratna Wires",
+                "note": "Named by the MD; overlaps on many products."
+            },
+            {
+                "name": "KSH International",
+                "note": "Named by the MD; listed peer in this note. The MD says Vidya overlaps with these peers on 50–60% of products."
+            }
+        ],
+        "position": "**A mid-sized winding-wire maker** that says its capacity share will rise from 5.7% to 11.3% after the expansion (company presentation, as quoted on the call).",
+        "money": "**Net debt about ₹12cr** at March 2026: ₹85cr of borrowings against about ₹73cr of cash (data provider). The December 2025 IPO added roughly ₹250cr of equity (reserves rose ₹309cr in FY26 with ₹58cr of profit); ₹100cr repaid working-capital loans and much of the rest is funding ALCU (₹72cr of work in progress at March). **Operating cash was −₹2cr over FY22–FY26 against ₹262cr of operating profit, and free cash −₹130cr**; FY26 operating cash was −₹9cr as receivables and stock grew with copper prices. The Gujarat government will refund GST worth 45–50% of the ALCU investment over 10 years. Promoters hold **72.77%**. No dividend.",
+        "watch": [
+            "Operating cash turning positive with the cycle back near 50 days.",
+            "ALCU's new lines filling and lifting the margin above 4.7%.",
+            "CTC output starting after October 2026."
+        ],
+        charts: cablesCharts["Vidya Wires"],
+    },
 ];
 
 export const cablesBusinesses = { intro, profiles };

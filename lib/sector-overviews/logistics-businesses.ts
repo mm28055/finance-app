@@ -166,6 +166,550 @@ const profiles: BusinessProfile[] = [
         watch: ["Supply-chain margin back to 9% in Q2 and 9.5–10% by Q4.", "Progress toward a 4% pre-tax margin, now targeted for FY28.", "Freight rates, and a possible global slowdown hitting forwarding."],
         charts: logisticsCharts['TVS Supply Chain Sol'],
     },
+    {
+        "company": "Allcargo Global",
+        "inShort": [
+            "**The world's largest LCL consolidator**: through ECU Worldwide it fills shared containers with small shipments from freight forwarders on about 2,400 direct sea routes, plus full-container and air freight, mostly outside India.",
+            "**Good:** about 14.5% of the global LCL market by its own count, an asset-light model, and operating profit back above zero (₹28cr in Q1 FY27 against a ₹32cr loss a year earlier). **Bad:** a **₹290cr net loss in FY26**, an operating margin of 0.1%, LCL volumes about 10% below two years ago, ₹942cr of net debt including leases, and no profit guidance.",
+            "**Verdict: wait.** A real market leader, but it lost money last year and management itself needs 12–15% more volume before returns look normal; I want two clean quarters of profit and falling debt first."
+        ],
+        "tagline": "A global less-than-container-load (LCL) sea freight consolidator, demerged from Allcargo Logistics and listed in July 2026, that also does full-container and air forwarding.",
+        "revenue": "₹12,758cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "LCL consolidation",
+                "text": "Its core: it books whole containers from shipping lines and sells space by the cubic metre to forwarders, running fixed weekly or fortnightly sailings on about 2,400 direct routes. Average shipment is 3–4 cubic metres. Management calls it the most profitable product, with the lowest working capital."
+            },
+            {
+                "name": "Full container load (FCL)",
+                "text": "Forwarding whole containers. Less than 1% of a fragmented global market, lower margins, and more exposed to the Middle East, where volumes fell sharply in 2026."
+            },
+            {
+                "name": "Air freight",
+                "text": "A small line that moves with LCL demand; margins sit between LCL and FCL."
+            },
+            {
+                "name": "Digital platform",
+                "text": "Its own booking system (ECU360) takes about 70% of export bookings; management says no rival LCL player runs fully in-house software."
+            }
+        ],
+        "revenueText": "Revenue mostly passes ocean freight through to customers, so management tells investors to watch **gross profit per cubic metre or per container**, not revenue. Q1 FY27 revenue was ₹3,522cr and gross profit ₹733cr. **About 15% of the business is in India and 80–85% abroad**; LCL and FCL split roughly two-thirds and one-third by management's description. Year on year in Q1 FY27, LCL volume fell about 4% and FCL about 13%, while quarter on quarter LCL and air rose about 5% and FCL 1%.",
+        "mixes": [
+            {
+                "caption": "Business by location (approximate, Q1 FY27 call)",
+                "parts": [
+                    {
+                        "label": "Outside India",
+                        "share": 85
+                    },
+                    {
+                        "label": "India",
+                        "share": 15
+                    }
+                ],
+                "note": "Management said 80–85% sits outside India."
+            },
+            {
+                "caption": "LCL vs FCL (approximate, Q1 FY27 call)",
+                "parts": [
+                    {
+                        "label": "LCL",
+                        "share": 67
+                    },
+                    {
+                        "label": "FCL",
+                        "share": 33
+                    }
+                ],
+                "note": "Management's 'two-thirds, one-third' description; air is small and not split out."
+            }
+        ],
+        "customers": [
+            "**Freight forwarders worldwide**, who lack the volume to fill their own containers and buy LCL space from it; no customer is named or sized.",
+            "**Shippers using its FCL and air services**, with growth in Latin America, transatlantic lanes, Southeast Asia and India offsetting weaker Europe and the US."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "Running scheduled LCL sailings needs steady cargo on each route, like an airline needs passengers; management says that density takes decades to build and only a handful of global players have it."
+        },
+        "moat": "Network density and the in-house booking platform make it hard for a newcomer to match its schedules, and shipping lines carry only a tiny share of LCL. But the moat has not protected profit: volumes have shrunk with world trade, and the business earned almost nothing in FY26.",
+        "salesDrivers": [
+            "**World trade volumes**: the industry's LCL volume fell about 13–14% over two years by management's estimate; the base case is no market growth for 12 months.",
+            "**Yield per unit**: management says today's gross profit per cubic metre can be held, so profit rises with volume; it will publish a monthly yield index.",
+            "**Freight rates**: higher rates usually mean fuller containers and better margins; disruption in the Middle East cut FCL volume but lifted rates.",
+            "**Costs**: staff and admin to stay flat in dollar terms using offshoring to India and AI tools.",
+            "**Recovery target**: management says 12–15% more volume would put returns back toward the 20%-plus return on capital it used to earn."
+        ],
+        "inputs": "**Ocean and air freight bought from carriers**, the bulk of costs: gross profit was about 21% of Q1 FY27 revenue, so carrier and direct costs took about 79%. The rest is staff and admin (about ₹705cr a quarter), mostly in euros and dollars.",
+        "costEffect": "**Passed on; the risk is volume, not cost.** Freight is a pass-through priced per cubic metre or container, and higher freight rates have usually meant better container fill and more profit, not less. **Rule of thumb:** with gross profit at about 21% of revenue, a 10% rise in carrier costs not passed on would wipe out more than the whole operating profit; in practice it is repriced within weeks. **What happened:** operating margin was 2.4% in FY25, 0.1% in FY26 and 0.8% in Q1 FY27 as volumes, not costs, moved. Rupee swings change reported costs because most are in euros and dollars.",
+        "competitors": [
+            {
+                "name": "Other global LCL consolidators",
+                "note": "A handful of long-established networks; the company calls itself the leader with about 14.5% share."
+            },
+            {
+                "name": "Shipping lines (Maersk, MSC and others)",
+                "note": "Handle big FCL accounts directly but carry only a tiny share of LCL, management says."
+            },
+            {
+                "name": "Global forwarders such as DHL, Kuehne+Nagel, DSV",
+                "note": "Large in FCL and air, where Allcargo Global has under 1% share."
+            }
+        ],
+        "position": "**World's largest LCL consolidator** by its own count, about 14.5% global share, with offices in 60-plus countries through ECU Worldwide.",
+        "money": "Screener shows **₹1,338cr of borrowings** at March 2026, of which ₹399cr is leases, against ₹396cr of cash and short-term investments, so **net debt of about ₹942cr including leases**; the company put net debt at about ₹570cr at June 2026 excluding leases, with consolidated gross debt of ₹942cr, mostly working capital. Customers took 57 days to pay in FY26. Operating cash was ₹89cr in FY26 after nothing in FY25 and −₹220cr in the eight months of FY24. Management plans to cut net debt 'significantly' in two to three quarters through working capital and $10–15m of warehouse and office sales. Large past acquisitions left goodwill and other non-cash charges: depreciation was ₹190cr in FY26. No dividend. Promoters hold **63.28%**.",
+        "watch": [
+            "Two quarters in a row of operating profit and a shrinking net loss.",
+            "The monthly yield index and LCL volume recovery.",
+            "Net debt falling from ₹570cr (company basis) and who buys the properties being sold."
+        ],
+        charts: logisticsCharts["Allcargo Global"],
+    },
+    {
+        "company": "Glottis",
+        "inShort": [
+            "**A Chennai freight forwarder** that books sea and air cargo, mostly imports from Asia into India, for Indian companies, especially renewable-energy equipment makers, and is now buying its own trucks and containers.",
+            "**Good:** Q1 FY27 revenue rose 39.5%, it has about ₹47cr of net cash after the IPO, and the shares trade at about 13 times earnings. **Bad:** FY26 revenue fell 23% and profit 32%, **operating cash was −₹69cr in FY26** as customers took 87 days to pay (41 in FY25), container volume fell 17% year on year, the top five customers are 29% of revenue, and the MD and CFO gave conflicting figures on the same call.",
+            "**Verdict: pass.** A small forwarder with no clear edge, shrinking volumes and profit that is not turning into cash; the low P/E does not make up for that."
+        ],
+        "tagline": "A Chennai-based freight forwarder, founded in 2004 and listed in October 2025, handling sea imports from Asia plus exports, air freight and trucking.",
+        "revenue": "₹723cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "Sea imports",
+                "text": "Booking container space and handling customs and delivery for goods shipped into India, mostly from the Far East. ₹165cr in Q1 FY27, up 24%."
+            },
+            {
+                "name": "Sea exports",
+                "text": "Outbound containers, growing fastest toward the US and Africa. ₹47cr in Q1 FY27, up 83.5%."
+            },
+            {
+                "name": "Air freight",
+                "text": "Air imports and exports, about 5% of revenue but more than doubling."
+            },
+            {
+                "name": "Road transport and warehousing",
+                "text": "Its own trucks for first- and last-mile delivery (80 vehicles at June 2026, up from 17 in December 2025) and a new warehousing line (₹0.9cr in Q1)."
+            }
+        ],
+        "revenueText": "**Sea imports were 70% of Q1 FY27 revenue**, sea exports 20%, air 5% and trucking 5%. **Asia was 84%**, North America about 10%, Europe 3% and Africa 2%. The Q1 jump came from higher freight rates and richer shipments, not volume: it handled 21,841 containers (TEUs) against 26,278 a year earlier and 31,402 in Q4 FY26. Renewable energy is the largest industry served: the CFO put it at 38% of Q1 revenue (the MD said about 13%), and the IPO papers put it at about 47.5% of FY25 revenue. The top five customers were about 29%.",
+        "mixes": [
+            {
+                "caption": "Revenue by service, Q1 FY27 (company call)",
+                "parts": [
+                    {
+                        "label": "Sea imports",
+                        "share": 70
+                    },
+                    {
+                        "label": "Sea exports",
+                        "share": 20
+                    },
+                    {
+                        "label": "Air freight",
+                        "share": 5
+                    },
+                    {
+                        "label": "Road and warehousing",
+                        "share": 5
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by region, Q1 FY27 (company call)",
+                "parts": [
+                    {
+                        "label": "Asia",
+                        "share": 84
+                    },
+                    {
+                        "label": "North America",
+                        "share": 10
+                    },
+                    {
+                        "label": "Europe",
+                        "share": 3
+                    },
+                    {
+                        "label": "Africa",
+                        "share": 2
+                    },
+                    {
+                        "label": "Rest",
+                        "share": 1
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Renewable-energy companies** importing solar and related equipment from Asia, the largest group (38% of Q1 revenue by the CFO's figure).",
+            "**Consumer durables (10%), chemicals (7%) and engineering (8%) companies**, with 260 new customers added in Q1 and about 75% of business from repeat customers.",
+            "Management wants the top five customers down from about 29% to 15–20% in two to three years."
+        ],
+        "difficulty": {
+            "level": "Low",
+            "text": "Freight forwarding needs relationships, licences and working capital, but no special assets; anyone with carrier contacts can compete, and price usually decides."
+        },
+        "moat": "None to speak of. Its edge is relationships with Indian importers on Asian routes; buying trucks and containers may make service steadier but also adds asset and utilisation risk.",
+        "salesDrivers": [
+            "**Freight rates**: higher rates lifted revenue per shipment in Q1 FY27 even as volume fell.",
+            "**Solar and renewable imports**: its largest industry, which swings with India's solar build-out and import rules.",
+            "**New lanes and services**: exports to the US and Africa, air freight, and new offices in Hyderabad, Kolkata and Ahmedabad.",
+            "**Owned assets**: ₹132cr of IPO money for trucks and containers, containers from Q3 FY27.",
+            "**Guidance**: FY27 revenue above FY25's ₹941cr and a slightly better margin."
+        ],
+        "inputs": "**Freight bought from shipping lines and airlines**, mostly on spot terms, plus trucking, handling and customs charges. Operating costs were about 93% of revenue in FY26.",
+        "costEffect": "**Partly passed on, with risk.** It buys space mostly at spot prices; the IPO papers note some fixed-rate customer contracts that do not automatically pass on fuel or freight rises. **Rule of thumb:** with costs at about 93% of revenue, a 10% rise in freight cost not passed on would wipe out the whole margin. **What happened:** the operating margin was about 10% in most of FY25, fell to 2.8% in Q3 FY26, and recovered to 7% in Q1 FY27.",
+        "competitors": [
+            {
+                "name": "Allcargo group, Transport Corporation of India",
+                "note": "Larger Indian logistics groups named in its IPO papers as peers."
+            },
+            {
+                "name": "Global forwarders (DHL, Kuehne+Nagel, DSV and others)",
+                "note": "Much larger networks competing for the same Indian importers."
+            },
+            {
+                "name": "Many small local forwarders",
+                "note": "A fragmented market where price often decides."
+            }
+        ],
+        "position": "**A small, mid-tier Indian forwarder**: about 1.1 lakh TEUs in FY25, concentrated on Asia-to-India sea imports.",
+        "money": "Screener shows ₹53cr of borrowings at March 2026 against about ₹100cr of cash and short-term investments, so **net cash of about ₹47cr**, mostly unspent IPO money. **Operating cash was −₹69cr in FY26** and free cash −₹89cr, as receivables rose to ₹188cr (87 days of sales; 77 days at June). Over FY23–FY26 it made ₹204cr of operating profit but turned out −₹32cr of operating cash. The IPO raised ₹160cr fresh at ₹129 a share; ₹132cr goes to trucks and containers by March 2027. No dividend. Promoters hold **74.23%**, unchanged since listing.",
+        "watch": [
+            "Container volume (TEUs) turning back to growth.",
+            "Receivable days falling back toward 40 and operating cash turning positive.",
+            "Consistent figures from management between the MD and CFO."
+        ],
+        charts: logisticsCharts["Glottis"],
+    },
+    {
+        "company": "Blue Water Logistics",
+        "inShort": [
+            "**A Hyderabad freight forwarder** that books sea and air cargo for Indian exporters and importers, runs a leased fleet of about 1,700 ISO tank containers for liquid chemicals, and moves containers by road and rail.",
+            "**Good:** revenue nearly doubled to ₹386cr in FY26 and Q1 FY27 alone brought ₹211cr, backed by real volume growth, at a P/E near 16. **Bad:** operating cash was negative in three of four years (−₹53cr in FY26), customers take about 134 days to pay, debt tripled and is guided to nearly double again, and the promoters' new overseas entities and a warrant issue came soon after a 'debt only' promise.",
+            "**Verdict: pass.** Growth is real and the price low, but operating cash was −₹53cr in FY26, customers take 134 days to pay, warrants followed the CFO's 'debt only' promise, and it bought into a Thai company run by its promoters without calling it a related-party deal."
+        ],
+        "tagline": "A Hyderabad-based multimodal freight forwarder, founded as a partnership in 2010 and listed on NSE's SME platform in June 2025, that books ocean and air cargo and runs a leased fleet of ISO tank containers.",
+        "revenue": "₹386cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "Ocean freight forwarding",
+                "text": "Books container space with shipping lines for exporters and importers and arranges the paperwork and delivery; about 70% of revenue. It handled 5,757 containers (counted in 20-foot units) in Q1 FY27, up 264% on a year earlier."
+            },
+            {
+                "name": "Air freight",
+                "text": "Books cargo space on airlines, mainly for Hyderabad's pharma makers, helped by an exclusive tie-up with Turkish Airlines; 13% of FY26 revenue and 21% in Q1 FY27 (930 tonnes, up 520%)."
+            },
+            {
+                "name": "NVOCC and ISO tanks",
+                "text": "Acts as a carrier in its own right using about 1,708 ISO tank containers (steel tanks in a frame for liquid chemicals), bought on seven-year instalment deals; 8% of FY26 revenue but only 4.6% in Q1 FY27, with tank use at 83–84%."
+            },
+            {
+                "name": "Road, rail and customs",
+                "text": "Over 100 container trailers (used at above 90%) plus hired trucks, rail freight and customs clearance; together about 4% of Q1 FY27 revenue. It is starting project cargo (a ₹15cr job for HSIL) and dry containers."
+            }
+        ],
+        "revenueText": "**Ocean freight was about 70% of FY26 and Q1 FY27 revenue**, air freight 13% in FY26 rising to 21% in Q1, NVOCC 8% falling to 4.6%, and road, rail and customs the rest. Growth comes mostly from new branches (Mumbai, Ahmedabad, Indore, Tada, Nellore) and new customers added in the second half of FY26. **About 85% of business is with direct customers** and the rest comes from other freight forwarders, by the MD's count; before the IPO, freight forwarders were about a third of revenue and the largest single customer 23–24%. Almost all billing is in India; it has a Dubai office, a new Thai associate and a Tanzanian subsidiary.",
+        "mixes": [
+            {
+                "caption": "Revenue by service, Q1 FY27 (CFO on the call)",
+                "parts": [
+                    {
+                        "label": "Ocean freight",
+                        "share": 70
+                    },
+                    {
+                        "label": "Air freight",
+                        "share": 21
+                    },
+                    {
+                        "label": "NVOCC / ISO tanks",
+                        "share": 5
+                    },
+                    {
+                        "label": "Road, rail and customs",
+                        "share": 4
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by service, FY26 (approximate, management)",
+                "parts": [
+                    {
+                        "label": "Ocean freight",
+                        "share": 70
+                    },
+                    {
+                        "label": "Air freight",
+                        "share": 13
+                    },
+                    {
+                        "label": "NVOCC / ISO tanks",
+                        "share": 8
+                    },
+                    {
+                        "label": "Road, rail and customs",
+                        "share": 9
+                    }
+                ],
+                "note": "Management's rounded shares; the last slice is the remainder."
+            }
+        ],
+        "customers": [
+            "**Indian exporters and importers** in confectionery and food (where it calls itself a leading forwarder), chemicals, pharma, crockery, engineering, paper and textiles; Q1 FY27 additions included Gujarat Ambuja Cement, HFCL, Mukand Steel and Toshiba.",
+            "**Other freight forwarders**, who resell its space: about 15% of business now by the MD's estimate, and 34–35% before the IPO.",
+            "**Concentration:** the top customer was about 23% of revenue and the top ten about 52–55% in FY24 and H1 FY25 (prospectus); no later figure is disclosed."
+        ],
+        "difficulty": {
+            "level": "Low",
+            "text": "Freight forwarding needs relationships with shipping lines and airlines, a branch network and working capital, but little else; thousands of Indian firms do it. ISO tank operation is more specialised but is entered by leasing tanks, as Blue Water itself did in 2025."
+        },
+        "moat": "Thin. It owns no ships or planes and resells space at a margin of about 11%; customers can switch on price and service. Its edge is doing every step in-house for mid-sized exporters, a niche in confectionery and chemicals, and fast-rising volumes, none of which stops a rival from copying it.",
+        "salesDrivers": [
+            "**Branch openings and new customers**: most of the FY26–Q1 FY27 jump came from branches opened in the last year; Kerala, Goa, Kolkata and Mangaluru are still uncovered.",
+            "**Freight rates**: revenue includes the freight it passes on, so higher sea and air rates lift sales without lifting profit much; the MD said vessel shortages from China's export surge would make Q2 uneven.",
+            "**Guidance**: FY27 revenue to roughly double again (FY26: 97% growth), margins flat or slightly better; in May the MD said about 100% growth for the next two years and NVOCC rising to about 20% of revenue and air freight to about 30% in FY27.",
+            "**Overseas offices**: Indonesia, Vietnam, Malaysia, Thailand and China planned, plus East Africa; these are early and loss-making at first, by management's own account.",
+            "**Fleet**: ISO tanks to grow from about 1,708 to 5,000-plus within three years, on instalment deals."
+        ],
+        "inputs": "**Freight bought from shipping lines and airlines**, plus truck hire, port and handling charges and tank instalments. In FY26 these and all other running costs were about ₹330cr (85% of sales) and staff about ₹12cr (3%).",
+        "costEffect": "**Pass-through, with a thin spread.** It quotes customers a price over what it pays carriers, so rate swings mostly change revenue, not profit; the risk is when it has booked space and rates fall, or customers resist an increase. **Rule of thumb:** with about ₹89 of every ₹100 of sales going to carriers and running costs, a 1% rise in costs not passed on takes nearly a point off the 11% margin. **What happened:** the operating margin moved between 8% and 14% by quarter from Q3 FY25 to Q1 FY27, and slipped to 11.2% in Q1 FY27 from 12.9% a year earlier as new branches and more outsourced air freight were added.",
+        "competitors": [
+            {
+                "name": "Allcargo / ECU Worldwide",
+                "note": "India's largest consolidator and NVOCC, with a global network Blue Water lacks."
+            },
+            {
+                "name": "Global forwarders (DHL, Kuehne+Nagel, DSV)",
+                "note": "Serve large multinational accounts with their own networks and IT."
+            },
+            {
+                "name": "Listed SME forwarders and tank operators",
+                "note": "Many small peers compete on price for the same exporters; ISO tank operators include global firms such as Stolt and local lessors."
+            }
+        ],
+        "position": "A small but fast-growing forwarder: ₹386cr of FY26 revenue against an Indian freight-forwarding market measured in lakhs of crores. Tank use is 83–84% and trailer use above 90%, by management's count.",
+        "money": "Borrowings were **₹108cr at March 2026**, up from ₹37cr a year earlier, against about ₹16cr of cash, so net debt was about ₹92cr; management expects debt to reach about ₹200cr by March 2027, at 8.5–10%, from Axis Bank and Citibank, with HSBC in talks. **Operating cash was −₹53cr in FY26** on ₹44cr of operating profit, and negative in three of the four years shown, because customers take about 134 days to pay (up from 70–84 days) and it gets no advances; receivables were ₹141cr at March and about ₹220cr by late July. The IPO raised about ₹40cr at ₹132–135 in May 2025 for trucks and working capital, and 10 lakh warrants at ₹410 (about ₹41cr) were approved in August 2026. ISO tanks are bought on seven-year instalments, kept in capital work in progress rather than shown as leases (it is not on Ind AS). Management says it has a BBB+ rating; I did not find the rationale. No dividend. Promoters hold **69.55%**, unchanged since listing, with no pledge.",
+        "watch": [
+            "Operating cash turning positive and receivables back under 90 days of sales while revenue doubles.",
+            "Whether NVOCC really rises toward the 20% of revenue promised in May (4.6% in Q1), and the margin holds at 11% or more.",
+            "Who receives the ₹410 warrants, and any money moving to the Thai associate and Tanzanian subsidiary where the promoters are directors."
+        ],
+        charts: logisticsCharts["Blue Water Logistics"],
+    },
+    {
+        "company": "Skyways Air Services",
+        "inShort": [
+            "**India's largest air freight forwarder**: it books cargo space on about 56 airlines for exporters and importers, and also handles ocean freight, express parcels and trucking, through about 9,500 customers.",
+            "**Good:** air export volume grew 23% in Q1 FY27 against 3.8% for India, its share rose to 6.2%, and IPO money cut debt. **Bad:** it keeps only about 4–5 rupees of every 100 as operating profit, revenue swings with fuel surcharges, five years turned only 45% of operating profit into cash, and the company and a listed subsidiary are accused in an open criminal case alleging bribery and over-invoicing.",
+            "**Verdict: avoid.** An open police case alleges bribes and over-invoicing of at least ₹44cr, and its customs status was suspended this year; with a 4% margin at about 28 times earnings, nothing here is worth that governance risk."
+        ],
+        "tagline": "A Delhi-based freight forwarder founded in 1984 that is India's largest by air export volume, with ocean, express, trucking and pharma cold-chain arms; listed on NSE and BSE in September 2026.",
+        "revenue": "₹2,813cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Air cargo",
+                "text": "Buys space on passenger and freighter flights and sells it to shippers with pick-up, customs and delivery: ₹2,166cr in FY26 (77%) and 80% in Q1 FY27, when it moved 23,486 tonnes at an average ₹416 a kg (₹259 a year earlier, mostly higher fuel surcharges)."
+            },
+            {
+                "name": "Ocean cargo",
+                "text": "Container bookings with shipping lines, run with its subsidiary Forin Container Line and listed subsidiary Brace Port Logistics: ₹423cr (15%) in FY26; Q1 FY27 volume grew 18% and revenue 63%."
+            },
+            {
+                "name": "Express, trucking and other",
+                "text": "Courier and parcel service (₹163cr in FY26; 59,700 shipments across 31 locations in Q1), trucking (₹39cr), warehousing and value-added services; a pharma cold-chain warehouse is due next."
+            },
+            {
+                "name": "Pharma logistics (Odyssey)",
+                "text": "51% of Mumbai-based Odyssey Logistics, bought in April 2025 with ₹55cr of term loans, lifted pharma to about 23% of business from 8–9%; Odyssey's own revenue was ₹182cr in Q1 FY27."
+            }
+        ],
+        "revenueText": "**Air cargo is 77% of FY26 revenue** (80% in Q1 FY27), ocean 15%, express 6% and trucking, warehousing and services the rest. Revenue mostly passes through what it pays airlines and shipping lines, so it rises and falls with freight rates: FY24 revenue fell below FY23's as rates eased, and of Q1 FY27's 90% jump management put only 23–25% down to volume. Customers are widely spread: **the top ten were 20.7% of FY26 revenue** (11.6% in FY25). Pharma, textiles and garments, cars and parts, and consumer electronics are the main cargoes. It has offices in Hong Kong, Thailand, Vietnam, Cambodia, Bangladesh, the UAE, Saudi Arabia, the UK and Germany.",
+        "mixes": [
+            {
+                "caption": "Revenue by service, FY26 (prospectus)",
+                "parts": [
+                    {
+                        "label": "Air cargo",
+                        "share": 77
+                    },
+                    {
+                        "label": "Ocean cargo",
+                        "share": 15
+                    },
+                    {
+                        "label": "Express",
+                        "share": 6
+                    },
+                    {
+                        "label": "Trucking and other",
+                        "share": 2
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by service, Q1 FY27 (presentation)",
+                "parts": [
+                    {
+                        "label": "Air cargo",
+                        "share": 80
+                    },
+                    {
+                        "label": "Ocean cargo",
+                        "share": 13
+                    },
+                    {
+                        "label": "Express",
+                        "share": 5
+                    },
+                    {
+                        "label": "Trucking and other",
+                        "share": 2
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**About 9,500 active shippers** (from about 7,400), named in the prospectus as including Parle, Britannia, Tata Motors, Eicher, Honeywell and JCB; top ten 20.7% of FY26 revenue.",
+            "**Pharma exporters**, about 23% of business since the Odyssey purchase.",
+            "**Carriers on the other side:** Lufthansa, Qatar Airways, Air India, Turkish, Virgin Atlantic, British Airways, Air France-KLM among its top ten suppliers, who took 49% of its cost of service in FY26."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Anyone can be a forwarder, but buying space in bulk at good rates needs tonnage, airline contracts with volume incentives (it has them with Air India, Saudia, Lufthansa and Qatar) and enough working capital to pay airlines before customers pay; scale is the barrier."
+        },
+        "moat": "Scale with airlines. As India's largest air consolidator it gets capacity and volume rebates others cannot, which it says won customers when the Gulf war cut about 20% of air capacity. But it owns no planes, margins are 4–5%, and global forwarders and many local rivals compete for the same shippers.",
+        "salesDrivers": [
+            "**Volumes**: air export tonnage grew 43% in FY26 and 19% in Q1 FY27 against 3.8% for India; management aims to keep outgrowing the market and 'try to give a volume guidance' each quarter.",
+            "**Freight rates and fuel**: Brent rose from $61 to $110 between January and May 2026; fuel is passed on, so revenue swings with it in both directions (FY26 air yield fell 8%, then Q1 FY27 rose 60%).",
+            "**India's air cargo push**: the government targets 10 million tonnes in five years from about 4 million.",
+            "**Overseas offices**: ₹30cr approved for China, Malaysia, the Philippines and two other Asian markets (EBITDA break-even in 15–18 months, profit in 2–3 years) and ₹20cr for the UAE, Saudi Arabia and Vietnam.",
+            "**ASAP platform**: an online booking tool for smaller shippers in smaller cities, due by about November."
+        ],
+        "inputs": "**Airline and shipping-line freight**, which is about **89% of sales** as cost of service in FY26, plus trucking and handling. The top ten carriers took 49% of that cost. Staff were about 4% of sales.",
+        "costEffect": "**Pass-through on a thin spread.** Fuel and freight increases go to customers through surcharges, but management said it absorbs some of the rise to keep customers. **Rule of thumb:** with about ₹89 of every ₹100 of sales paid to carriers, a 1% rise in freight cost not passed on would wipe out about a fifth of the 4.6% operating margin. **What happened:** the yearly operating margin held between 3.8% and 4.6% over FY22–FY26 through big rate swings, and was 4.1% in Q1 FY27 when fuel nearly doubled.",
+        "competitors": [
+            {
+                "name": "DHL Global Forwarding, Kuehne + Nagel, DSV, Expeditors",
+                "note": "Global forwarders with their own worldwide networks; Skyways says it is the only Indian firm in WorldACD's global top 50 (44th)."
+            },
+            {
+                "name": "Allcargo Logistics",
+                "note": "Larger in ocean consolidation, smaller in air."
+            },
+            {
+                "name": "Listed peers (TVS Supply Chain, Mahindra Logistics, Delhivery)",
+                "note": "Different mixes but compete for shippers' logistics budgets; most earn a higher operating margin than Skyways' 4–5% but lower returns on capital."
+            }
+        ],
+        "position": "**India's No. 1 air freight forwarder** by WorldACD chargeable weight, with **6.2% of India's air exports** in Q1 FY27 (5.6% in FY26, 4.6% in FY25), and 44th in the world.",
+        "money": "At March 2026 borrowings were **₹627cr** against about ₹397cr of cash and deposits (₹267cr of it pledged to lenders), so net debt was about **₹230cr**; the fresh issue of ₹399cr in August 2026 was mainly for repaying debt (about ₹140cr repaid by September) and working capital, which should leave it near net cash. **Over FY22–FY26 it turned ₹181cr of operating cash out of ₹406cr of operating profit (45%)**, though FY26 was strong at ₹114cr. Customers take about 75 days to pay (56 in FY22). Routine capex is ₹35–40cr a year. It guarantees about ₹135cr of subsidiaries' bank lines. CRISIL rates it A/Stable (upgraded in 2026) and CARE A/Stable. The ₹583cr IPO at ₹138 included ₹184cr of shares sold by the promoters and two directors; the shares trade about 24% below the issue price. Brace Port, its 51%-owned SME-listed subsidiary, is down 35% from its 2024 issue price. Promoters hold **56.82%**, with no pledge.",
+        "watch": [
+            "The Economic Offences Wing case and SEBI's response to the complainant: any charge sheet against the company or Brace Port.",
+            "Air volume growth staying near 20% as fuel surcharges fade, with the operating margin at 4% or more.",
+            "Finance cost falling after the IPO repayment, and operating cash staying positive."
+        ],
+        charts: logisticsCharts["Skyways Air Services"],
+    },
+    {
+        "company": "Leap India",
+        "inShort": [
+            "**India's dominant pallet-pooling company**: it rents out about 9 million wooden pallets plus plastic crates, containers and electric forklifts to about 1,000 manufacturers, warehouses and retailers, collecting, repairing and re-sending them across 10,500 sites.",
+            "**Good:** about 90% of India's pooled pallets, no customer lost since starting, built-in yearly price rises of 5–6%, and a 49% operating margin. **Bad:** depreciation and interest take most of that, so return on capital is about 8%; net debt was ₹1,144cr; a promoter-family company formed in 2025 sold it ₹94.5cr of assets in FY26; and the shares trade near 98 times earnings.",
+            "**Verdict: wait.** A real moat, but the price needs far more growth than an 8% return on capital supports, and I want the related-party purchases to shrink before buying."
+        ],
+        "tagline": "A Mumbai-based pallet, crate and forklift pooling company founded in 2013 by ex-CHEP executive Sunu Mathew, backed by KKR, which bought CHEP's Indian business in 2025 and listed in August 2026.",
+        "revenue": "₹730cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Pallet pooling",
+                "text": "Rents about 9 million wooden pallets, either kept at one site ('static hire', a daily rent) or moved with the goods to the next customer ('movement hire', higher-yielding); Leap collects, repairs and reuses them. Rental was ₹417cr in FY26 (57% of revenue); yield was ₹1.54 per pallet per day in Q1 FY27."
+            },
+            {
+                "name": "Container and crate pooling",
+                "text": "Plastic crates, foldable large containers and utility boxes, mainly for car and component makers; ₹154cr (21%) in FY26, boosted by CHEP India's book. Growth is being held back because crate prices have nearly doubled."
+            },
+            {
+                "name": "Forklift rental (TARON)",
+                "text": "About 1,440 lithium-ion electric forklifts and other handling equipment rented through subsidiary TARON; ₹111cr (15%) in FY26 and ₹35.3cr in Q1 FY27, up 33%. Lower margin but better return on capital, per management."
+            },
+            {
+                "name": "Product sales",
+                "text": "Sells some pallets and containers to customers who insist on owning them (₹35cr, 5% of FY26), which management expects to return to pooling later."
+            }
+        ],
+        "revenueText": "**Pallet rental is about 57% of FY26 revenue**, containers 21%, forklifts 15% and outright sales 5%. FY26 revenue rose 56%, much of it from the CHEP India purchase (January 2025); management now guides 20%-plus, with pallet pooling alone at 17–18%. Revenue is seasonal: about 22% in Q1, 24% Q2, 25% Q3 and 29% Q4. Customers span 38 industries; **the top ten were 26.7% of FY26 revenue**, down from 39.5% in FY24. Contracts run one to five years with yearly price rises tied to a German wood price index. Almost all revenue is in India; Gulf entities are set up but deployment is paused by the war.",
+        "mixes": [
+            {
+                "caption": "Revenue by line, FY26 (prospectus)",
+                "parts": [
+                    {
+                        "label": "Pallet rental",
+                        "share": 57
+                    },
+                    {
+                        "label": "Container rental",
+                        "share": 21
+                    },
+                    {
+                        "label": "Forklift rental",
+                        "share": 15
+                    },
+                    {
+                        "label": "Product sales",
+                        "share": 5
+                    },
+                    {
+                        "label": "Other",
+                        "share": 2
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**FMCG, beverage and food companies** (a major cola maker, Gulf Oil, dairies, noodle and confectionery makers), the core of pallet pooling.",
+            "**Car and component makers** (Bosch, Autoliv, Lear, Minda), about 20% of revenue after the CHEP purchase, targeted at 22–25%.",
+            "**Logistics and e-commerce firms** (DP World, DHL, Yusen, Blinkit/Zomato), plus textiles, paints, agro and seeds; 48 new customers were signed in Q1 FY27 against a usual 18–20."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "Pooling only pays with a dense national network to collect and redeploy pallets cheaply; Leap has 10,500 touchpoints and 28 depots built over about 12 years, and says only a handful of companies worldwide run this model. Buying pallets is easy; recovering them is not."
+        },
+        "moat": "Strong in India: network density, about 90% of pooled pallets after absorbing CHEP, and customers whose suppliers and warehouses all use the same pallets. The weak spot is economics, not competition: the assets are costly and long-lived, so returns depend on keeping each pallet moving and on prices rising faster than timber.",
+        "salesDrivers": [
+            "**Palletisation of Indian supply chains**: only about 14–17% of goods move on pallets against about 90% in developed markets, and each Indian pallet moves about 0.4 times a year against about 4 globally.",
+            "**Movement hire**: management aims to move 3.7 million pallets in FY27 against about 2.9 million in FY26; movement hire rose only 8% in Q1 because textiles slowed.",
+            "**Price**: contracts carry 5–6% yearly increases; 24 contracts renewed in Q1.",
+            "**Pool growth**: about 850,000 net pallets planned for FY27, and utilisation at 89.2% (aiming for 90–92%).",
+            "**Gulf**: licences in Saudi Arabia and the UAE; ₹150–200cr of revenue hoped for in three years, on hold while the war lasts.",
+            "**Acquisitions**: the board is looking at targets in India and abroad, with more news promised in Q2–Q3."
+        ],
+        "inputs": "**Timber and plastic for new pallets and crates**, bought as fixed assets (₹76cr of capex in Q1 FY27, ₹110cr a year earlier), some of it from promoter-group company Plenova. Running costs in FY26 were staff 18% of sales and other costs 29% (transport ₹77cr, repairs ₹40cr, contract labour ₹28cr, warehouse rent), plus ₹204cr of depreciation and ₹94cr of interest below the operating line.",
+        "costEffect": "**Mostly protected on price, exposed on capex.** Contracts raise rents 5–6% a year on a wood price index, so running costs are passed on with a lag. Dearer timber and plastic hit the cost of new assets instead, cutting return on capital: crates that cost ₹650 now cost ₹1,000–1,200, so Leap is buying fewer. **Rule of thumb:** each 1% of extra yearly rent adds about ₹7cr, nearly all to operating profit. **What happened:** the yearly operating margin stayed between 48% and 56% from FY21 to FY26 and was 51% in Q1 FY27; return on capital stayed at 7–8%.",
+        "competitors": [
+            {
+                "name": "CHEP (Brambles)",
+                "note": "The global leader; its Indian arm was bought by Leap in January 2025."
+            },
+            {
+                "name": "Smaller Indian poolers and pallet makers",
+                "note": "Leap puts its share of pooled pallets at about 90%; most pallets in India are cheap one-way pallets that customers own."
+            },
+            {
+                "name": "Forklift rental firms and OEMs",
+                "note": "Compete with TARON in material-handling equipment."
+            }
+        ],
+        "position": "**India's largest pallet-pooling company with about 90% of pooled pallets** (about 9 million of 10 million), and No. 1 in car-component container pooling after CHEP; 14.9 million assets in all, at 89.2% utilisation.",
+        "money": "Net debt was **₹1,144cr at March 2026** including lease liabilities, against ₹1,006cr of equity. The IPO's ₹480cr of new money (August 2026) includes up to ₹360cr for repaying debt. Over the five years Screener shows (FY21 and FY23–FY26) it turned ₹911cr of operating cash out of ₹1,024cr of operating profit (89%), but free cash was negative in three years (−₹94cr in FY26) because it keeps buying pallets, and lease payments (₹93cr of principal in FY26) are counted separately. Customers took 131 days to pay in FY26, 119 at June. Return on capital is about 8%. **₹94.5cr of FY26 fixed-asset purchases came from Plenova, a company set up in January 2025 within the founder's promoter group.** The IPO at ₹159 was mostly KKR selling (₹1,999cr); the shares trade about 18% below it. No dividend. Promoters hold **55.64%**; Matyas's shares are to be re-pledged after lock-in.",
+        "watch": [
+            "Plenova: how much of Leap's asset buying still goes through the founder's company.",
+            "Return on capital rising above 8% as movement hire and utilisation rise and debt is repaid.",
+            "20%-plus growth each quarter, and the acquisitions management is hinting at."
+        ],
+        charts: logisticsCharts["Leap India"],
+    },
 ];
 
 export const logisticsBusinesses = { intro, profiles };

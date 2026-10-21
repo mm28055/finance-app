@@ -424,6 +424,100 @@ const profiles: BusinessProfile[] = [
         watch: ["Whether the titanium dioxide plant restarts or is written off.", "Crop-protection volumes recovering without giving up the ~20% margin.", "Debt falling by the planned ₹130cr in FY27."],
         charts: agroCharts['Meghmani Organics'],
     },
+    {
+        "company": "GSP Crop Science",
+        "inShort": [
+            "**Makes crop-protection chemicals in Gujarat**, both the active ingredients (technicals) and the finished sprays farmers buy (formulations), and sells them under its own brands, to other agrochemical companies and abroad, mainly to Brazil and the US. Listed in March 2026.",
+            "**Good:** a growing share of its own patented combination products (about 20–22% of branded sales), debt mostly repaid from the IPO, an ICRA A+ rating and a modest price of about 20 times earnings. **Watch:** customers take about 133 days to pay, only 55% of five years' operating profit came in as cash, about 40% of raw materials come from China, Q1 revenue barely grew, and a land sale to a promoter company flattered Q1 profit.",
+            "**Verdict: follow.** The price is reasonable for 15% growth, but I want a strong Q2 season and better cash collection before buying."
+        ],
+        "tagline": "A Gujarat agrochemical maker founded in 1985 by Vrajmohan Shah, making insecticides, herbicides, fungicides and plant-growth products from active ingredient to branded pack.",
+        "revenue": "₹1,517cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Formulations",
+                "text": "Finished sprays sold to farmers (more than 200 products in India, 175-plus for export), about 75% of revenue. Includes 12 patented combination products launched in about three years, such as PCT 410 and Fighter, which earn better margins than generics."
+            },
+            {
+                "name": "Technicals",
+                "text": "Active ingredients (70-plus) made in multi-product plants, about 25% of revenue; it aims to be first in India with molecules coming off patent. A backward-integration plant at Saykha (Dahej) was capitalised in Q1 FY27."
+            }
+        ],
+        "revenueText": "In Q1 FY27 **own-brand sales were about 45%, sales to other agrochemical companies about 45% and exports about 10%**; for a full year management puts exports at about 20%, since Brazil's season falls in India's second half. ICRA says no single product is above 10% of sales and exports go to 39 countries. Patented products were 18–20% of revenue in FY26 (ICRA). The business is Kharif-led: Q2 alone usually brings about 60% of the year's profit.",
+        "mixes": [
+            {
+                "caption": "Revenue by channel, Q1 FY27 (approximate, from management)",
+                "parts": [
+                    {
+                        "label": "Own brands (B2C)",
+                        "share": 45
+                    },
+                    {
+                        "label": "Other agrochemical companies (B2B)",
+                        "share": 45
+                    },
+                    {
+                        "label": "Exports",
+                        "share": 10
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by format (approximate, from management)",
+                "parts": [
+                    {
+                        "label": "Formulations",
+                        "share": 75
+                    },
+                    {
+                        "label": "Technicals",
+                        "share": 25
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Farmers through its own brands**: more than 6,000 distributors, strongest in Maharashtra and Gujarat; credit insurance covers the branded business.",
+            "**Other agrochemical companies** that buy technicals and co-market its patented products.",
+            "**Export buyers** in Brazil, the US, Latin America, Africa and Southeast Asia; Brazil is cautious because of credit problems there."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Registering a new product takes 3–5 years of trials and data, and making technicals needs chemical plants and approvals. But most of its products are generics that many Indian and Chinese makers can sell, and formulation is a simple mixing step that can be outsourced."
+        },
+        "moat": "A narrow one from more than 100 granted patents on combination products and first-mover launches of molecules coming off patent, which carry better prices for a few years. The rest is a generic business with about 3–3.5% of the Indian market.",
+        "salesDrivers": [
+            "**Monsoon and Kharif acreage**: management said July rains lifted cotton, soybean and chilli acreage after a slow, delayed start to the season.",
+            "**Patented products**: from about 20–22% of branded sales towards double that in 2–3 years, with new herbicide and potato products planned.",
+            "**Exports to Brazil**: delayed buying and faster Chinese delivery cost it orders in Q1; demand was expected to pick up from September.",
+            "**Capacity**: technical plants run at 70–75%, formulation plants at 25–30% (built for the peak season), so growth needs little new capex.",
+            "**Guidance**: about 15% growth a year, EBITDA margin 12–13% (later said 13–14% within 2–3 years), market share from 3.5% to 7–8% over time."
+        ],
+        "inputs": "**Chemical intermediates, many petrochemical-based**; imports are about 40% of raw-material purchases, mostly from China (ICRA). Materials were about 64% of FY26 sales (from gross profit).",
+        "costEffect": "**Partly passed on, with a lag.** Sales to other companies and exports can be repriced (it passed on 10–15% of recent increases, says ICRA); own-brand prices follow with a delay covered by inventory. A 10–11% fall in the rupee raised costs in Q1. It hedges only 20–40% of currency exposure for 30–45 days and does not hedge commodity prices. **What happened:** the margin fell to 7% in FY23 when prices dropped, and was 1% in Q3 FY25 and 5% in Q3 FY26 in the off-season, against 20% in the peak Q2 FY26.",
+        "competitors": [
+            {
+                "name": "PI Industries, Sumitomo Chemical India, Dhanuka, Rallis",
+                "note": "Larger Indian peers named in the IPO comparison; stronger brands and distribution."
+            },
+            {
+                "name": "Bharat Rasayan, India Pesticides",
+                "note": "Technical makers of similar size, also in the IPO peer table."
+            },
+            {
+                "name": "Chinese suppliers",
+                "note": "Won some Brazilian orders in Q1 FY27 on faster delivery; also supply much of its raw material."
+            }
+        ],
+        "position": "**A mid-sized integrated maker** with about 3–3.5% of India's crop-protection market (management estimate), 524 product registrations (September 2025) and exports to 39 countries.",
+        "money": "Borrowings were ₹262cr and cash about ₹153cr at March 2026, so **net debt about ₹109cr** before the IPO money finished repaying loans in Q1 FY27. The **₹400cr IPO in March 2026 at ₹320** was ₹240cr of new shares (₹170cr for debt repayment) and ₹160cr sold by promoters. **Over FY22–FY26, operating cash was ₹364cr against ₹667cr of operating profit (55%), and free cash was ₹105cr**; FY26 operating cash was only ₹59cr. Customers took 133 days to pay in FY26 and it holds ₹20–25cr of doubtful-debt provisions. Promoters hold **71.72%**; foreign funds fell from 11.54% to 9.19% in the June quarter. ICRA rates it A+ (Stable).",
+        "watch": [
+            "Q2 FY27 revenue up 15% or more in the peak season.",
+            "Debtor days falling from 133 and operating cash catching up with profit.",
+            "No more deals with promoter-group companies."
+        ],
+        charts: agroCharts["GSP Crop Science"],
+    },
 ];
 
 export const agroBusinesses = { intro, profiles };

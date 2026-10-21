@@ -1109,6 +1109,108 @@ export const solarCharts: Record<string, ProfileCharts> = {
             }
         ],
         "statsAsOf": "23 Sep 2026"
+    },
+    "Fujiyama Power Systems": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "26.2x",
+                "note": "Screener's figure; on reported profit of the last four quarters (₹294cr, after the ₹143.6cr fire write-off) it is about 37x."
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "17.7x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year (₹639cr)."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹380cr",
+                "note": "Borrowings (₹520cr) minus cash (about ₹140cr), March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "19%"
+            },
+            {
+                "label": "Inventory days FY26",
+                "value": "180",
+                "note": "Up from 128 in FY25; CRISIL expects 100–110 days in the medium term."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 70
+                },
+                {
+                    "label": "Staff, selling and other costs",
+                    "share": 12
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 18
+                }
+            ],
+            "note": "Materials (cost of goods ₹1,847cr) from the filed income statement; total costs and operating profit (₹493cr) from Screener. Staff costs are not split out in the figures read."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                28,
+                19
+            ],
+            "inventoryDays": [
+                174,
+                180
+            ],
+            "payableDays": [
+                45,
+                71
+            ],
+            "cycleDays": [
+                158,
+                128
+            ],
+            "absorbed5y": -621,
+            "receivables5y": -107,
+            "inventory5y": -837,
+            "payables5y": 323
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                45,
+                52,
+                99,
+                249,
+                493
+            ],
+            "ocf": [
+                -58,
+                78,
+                85,
+                18,
+                -3
+            ],
+            "fcf": [
+                -91,
+                -60,
+                38,
+                -99,
+                -515
+            ],
+            "note": "Five-year operating cash of ₹120cr against ₹938cr of operating profit (13%); stock build-up absorbed ₹837cr."
+        }
     }
 };
 
@@ -1179,5 +1281,11 @@ export const solarValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 1287.0,
         "mcapAtWriting": 16125.0,
         "peAtWriting": 103.0
+    },
+    "Fujiyama Power Systems": {
+        "netDebt": 380,
+        "ttmEbitda": 639,
+        "mcapAtWriting": 10931,
+        "peAtWriting": 26.2
     }
 };

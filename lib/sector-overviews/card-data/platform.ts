@@ -1460,6 +1460,331 @@ export const platformCharts: Record<string, ProfileCharts> = {
             "inventory5y": null,
             "payables5y": -18
         }
+    },
+    "Physicswallah": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "597x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "85.7x",
+                "note": "Market value minus net cash, ÷ operating profit over the last four quarters (₹389cr)."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹3,151cr",
+                "note": "Cash and investments of about ₹5,027cr (company, March 2026) minus borrowings and leases of ₹1,876cr."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "9%"
+            },
+            {
+                "label": "Paid users FY26",
+                "value": "5.34 million",
+                "note": "Online 4.87 million plus offline 0.47 million (company)."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Staff",
+                    "share": 49
+                },
+                {
+                    "label": "Other costs (marketing, rent, content, technology)",
+                    "share": 42
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 9
+                }
+            ],
+            "note": "Staff is the sum of the four reported quarters (about ₹1,906cr); other costs are the rest of filed expenses (Screener). Most centre rent sits below operating profit as lease depreciation and interest."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                0,
+                8
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                0,
+                8
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                134,
+                -22,
+                -975,
+                73,
+                370
+            ],
+            "ocf": [
+                59,
+                270,
+                212,
+                507,
+                833
+            ],
+            "fcf": [
+                37,
+                124,
+                1,
+                340,
+                494
+            ],
+            "note": "Students pay fees up front, so operating cash runs ahead of profit. The FY24 operating loss includes a one-time ₹756cr non-cash charge on preference shares."
+        }
+    },
+    "Arisinfra Solutions": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "16.5x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "9.4x",
+                "note": "Market value less net cash, ÷ operating profit over the last four quarters (₹113cr)."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹31cr",
+                "note": "Borrowings ₹70cr less cash ₹101cr, March 2026 (Screener); the company reported ₹14.5cr of net debt in June."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "9%",
+                "note": "11% in Q1 FY27."
+            },
+            {
+                "label": "Debtor days FY26",
+                "value": "140",
+                "note": "Days of sales owed by customers (Screener); 155 in FY25."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials (goods for resale)",
+                    "share": 83
+                },
+                {
+                    "label": "Staff",
+                    "share": 4
+                },
+                {
+                    "label": "Other costs",
+                    "share": 4
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 9
+                }
+            ],
+            "note": "Filed FY26 consolidated P&L lines (via MarketsMojo; they add up to Screener's operating profit of ₹101cr on ₹1,067cr of sales). Materials include changes in stock."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                211,
+                140
+            ],
+            "inventoryDays": [
+                1,
+                2
+            ],
+            "payableDays": [
+                23,
+                71
+            ],
+            "cycleDays": [
+                189,
+                71
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                -1,
+                -1,
+                13,
+                48,
+                101
+            ],
+            "ocf": [
+                -269,
+                -14,
+                3,
+                -21,
+                142
+            ],
+            "fcf": [
+                -271,
+                -24,
+                -8,
+                -37,
+                120
+            ],
+            "note": "Screener, consolidated. FY22 was the first year of operations, when receivables were built up."
+        }
+    },
+    "Rentomojo": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "52",
+                "note": "Screener, on reported profit, which includes a ₹36.6cr FY26 tax credit; about 100 on fully taxed underlying profit (my arithmetic)."
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "34x",
+                "note": "Market value ₹5,742cr plus net debt ₹196cr, ÷ operating profit over the last year (₹177cr)."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹196cr",
+                "note": "March 2026, before the IPO: borrowings ₹188cr plus leases ₹46cr, minus cash and liquid funds ₹38cr. The IPO added ₹150cr of new money."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "41%"
+            },
+            {
+                "label": "Free cash flow, FY22–FY26",
+                "value": "−₹126cr",
+                "note": "Operating cash minus capex (Screener, standalone); the rented goods are capex."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Staff",
+                    "share": 16
+                },
+                {
+                    "label": "Contract workers",
+                    "share": 10
+                },
+                {
+                    "label": "Logistics",
+                    "share": 7
+                },
+                {
+                    "label": "Performance marketing",
+                    "share": 5
+                },
+                {
+                    "label": "Refurbishment",
+                    "share": 5
+                },
+                {
+                    "label": "Other costs",
+                    "share": 16
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 41
+                }
+            ],
+            "note": "Sales ₹387cr and operating profit ₹159cr from Screener (consolidated); cost lines from the FY26 restated accounts as reported by Inc42; other costs is the remainder. Depreciation of the rented goods (₹70cr, 18% of sales) comes after operating profit."
+        },
+        "workingCapital": {
+            "fromYear": "FY23",
+            "toYear": "FY26",
+            "debtorDays": [
+                56,
+                39
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                56,
+                39
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                -1,
+                25,
+                64,
+                114,
+                163
+            ],
+            "ocf": [
+                21,
+                30,
+                82,
+                116,
+                173
+            ],
+            "fcf": [
+                12,
+                -44,
+                -66,
+                -24,
+                -4
+            ],
+            "note": "Standalone (Screener; consolidated history starts in FY26, operating profit ₹159cr). Capex is mostly the furniture and appliances it rents out, so free cash stays near zero while it grows; lease rents for stores and warehouses are paid out of financing cash and are not deducted here."
+        }
     }
 };
 
@@ -1545,5 +1870,23 @@ export const platformValuationInputs: Record<string, ValuationInput> = {
         "mcapAtWriting": 2256.0,
         "peAtWriting": null,
         "lossMaking": true
+    },
+    "Physicswallah": {
+        "netDebt": -3151,
+        "ttmEbitda": 389,
+        "mcapAtWriting": 36504,
+        "peAtWriting": 597
+    },
+    "Arisinfra Solutions": {
+        "netDebt": -31,
+        "ttmEbitda": 113,
+        "mcapAtWriting": 1089,
+        "peAtWriting": 16.5
+    },
+    "Rentomojo": {
+        "netDebt": 196,
+        "ttmEbitda": 177,
+        "mcapAtWriting": 5742,
+        "peAtWriting": 52
     }
 };

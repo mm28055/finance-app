@@ -1461,6 +1461,273 @@ export const commercialCharts: Record<string, ProfileCharts> = {
             "inventory5y": -6,
             "payables5y": 104
         }
+    },
+    "Bluspring Enterprises": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "Loss-making",
+                "note": "Net loss over the last four quarters (consolidated); excluding foundit the company guides FY27 profit above ₹100cr."
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "28.3x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year (₹87cr); about 12x on the guided FY27 EBITDA of ₹200cr."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹172cr",
+                "note": "Company figure at 30 June 2026; LSG added about ₹125cr of loans in August."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "1.6%",
+                "note": "Screener consolidated; 3.8% in Q1 FY27 on the company's basis excluding foundit."
+            },
+            {
+                "label": "Order book (STEAG)",
+                "value": "₹5,200cr",
+                "note": "Four five-year power-plant O&M contracts won in 2026."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Staff",
+                    "share": 80
+                },
+                {
+                    "label": "Materials (mainly food)",
+                    "share": 8
+                },
+                {
+                    "label": "Subcontracting and other costs",
+                    "share": 10
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 2
+                }
+            ],
+            "note": "Filed FY26 consolidated P&L lines (via MarketsMojo), which put operating profit at ₹78cr; Screener shows ₹54cr, classifying some items differently."
+        },
+        "workingCapital": {
+            "fromYear": "FY25",
+            "toYear": "FY26",
+            "debtorDays": [
+                81,
+                95
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                81,
+                95
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                83,
+                54
+            ],
+            "ocf": [
+                -22,
+                52
+            ],
+            "fcf": [
+                -49,
+                24
+            ],
+            "note": "Screener consolidated. FY25 is a 14-month period (carve-out accounts after the demerger); no earlier comparable years."
+        }
+    },
+    "Seshaasai Technologies": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "18.7x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "11.7x",
+                "note": "Market value minus net cash, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹332cr",
+                "note": "Cash and bank deposits minus borrowings and leases, March 2026 (FY26 results)."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "26%"
+            },
+            {
+                "label": "Top customer",
+                "value": "15.5%",
+                "note": "Share of FY26 revenue; top ten 63%."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 54
+                },
+                {
+                    "label": "Staff",
+                    "share": 5
+                },
+                {
+                    "label": "Other costs",
+                    "share": 15
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 26
+                }
+            ],
+            "note": "Filed FY26 consolidated P&L (company results). Materials include purchases and changes in stock."
+        },
+        "workingCapital": {
+            "fromYear": "FY24",
+            "toYear": "FY26",
+            "debtorDays": [
+                52,
+                83
+            ],
+            "inventoryDays": [
+                63,
+                98
+            ],
+            "payableDays": [
+                51,
+                54
+            ],
+            "cycleDays": [
+                64,
+                127
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                292,
+                361,
+                380
+            ],
+            "ocf": [
+                200,
+                167,
+                220
+            ],
+            "fcf": [
+                84,
+                52,
+                59
+            ],
+            "note": "Screener consolidated; three years available."
+        }
+    },
+    "Manipal Payment & Identity": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "24.3x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "14.7x",
+                "note": "Market value minus net cash (including IPO money), ÷ operating profit over the last year (₹464cr)."
+            },
+            {
+                "label": "Net cash",
+                "value": "about ₹448cr",
+                "note": "₹128cr at March 2026 (Screener) plus ₹320cr of fresh IPO money."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "32%"
+            },
+            {
+                "label": "Domestic card share",
+                "value": "31.7%",
+                "note": "Company figure; four players hold about 90%."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY24",
+            "toYear": "FY26",
+            "debtorDays": [
+                35,
+                54
+            ],
+            "inventoryDays": [
+                69,
+                146
+            ],
+            "payableDays": [
+                54,
+                98
+            ],
+            "cycleDays": [
+                49,
+                102
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                335,
+                391,
+                426
+            ],
+            "ocf": [
+                309,
+                284,
+                208
+            ],
+            "fcf": [
+                297,
+                219,
+                126
+            ],
+            "note": "Screener standalone (consolidated history not available); three years."
+        }
     }
 };
 
@@ -1549,5 +1816,24 @@ export const commercialValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 85.0,
         "mcapAtWriting": 901.0,
         "peAtWriting": 13.8
+    },
+    "Bluspring Enterprises": {
+        "netDebt": 172,
+        "ttmEbitda": 87,
+        "mcapAtWriting": 2288,
+        "peAtWriting": 151,
+        "lossMaking": true
+    },
+    "Seshaasai Technologies": {
+        "netDebt": -332,
+        "ttmEbitda": 395,
+        "mcapAtWriting": 4941,
+        "peAtWriting": 18.7
+    },
+    "Manipal Payment & Identity": {
+        "netDebt": -448,
+        "ttmEbitda": 464,
+        "mcapAtWriting": 7280,
+        "peAtWriting": 24.3
     }
 };

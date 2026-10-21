@@ -5185,6 +5185,212 @@ export const consumerDurablesCharts: Record<string, ProfileCharts> = {
             "inventory5y": -18,
             "payables5y": 26
         }
+    },
+    "Euro Pratik Sales": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "22.2x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "16.0x",
+                "note": "Market value minus net cash, ÷ operating profit over the last four quarters (₹119cr)."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹8cr",
+                "note": "Borrowings including leases (₹24cr) minus cash (₹16cr) and investments (₹14cr), March 2026; before the ₹42.7cr Fabwood payment."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "34%",
+                "note": "26% in Q1 FY27."
+            },
+            {
+                "label": "Inventory days FY26",
+                "value": "255",
+                "note": "103 in FY24."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Goods bought (net of stock change)",
+                    "share": 52
+                },
+                {
+                    "label": "Staff",
+                    "share": 5
+                },
+                {
+                    "label": "Other costs",
+                    "share": 9
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 34
+                }
+            ],
+            "note": "Consolidated P&L from the Q1 FY27 investor presentation: revenue ₹335.0cr, cost of goods ₹174.9cr, staff ₹16.8cr, other expenses ₹30.2cr. Asset-light, so no power or factory costs."
+        },
+        "workingCapital": {
+            "fromYear": "FY24",
+            "toYear": "FY26",
+            "debtorDays": [
+                73,
+                107
+            ],
+            "inventoryDays": [
+                103,
+                255
+            ],
+            "payableDays": [
+                1,
+                42
+            ],
+            "cycleDays": [
+                175,
+                321
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                81,
+                100,
+                113
+            ],
+            "ocf": [
+                75,
+                -31,
+                41
+            ],
+            "fcf": [
+                74,
+                -33,
+                -14
+            ],
+            "note": "Screener has three years of consolidated figures, since listing in September 2025."
+        }
+    },
+    "Varmora Granito": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "33.6x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "14.4x",
+                "note": "Market value minus net cash, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹45cr",
+                "note": "Cash and deposits (₹372cr, company) minus borrowings (₹327cr, Screener), September 2026, after the IPO."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "11%"
+            },
+            {
+                "label": "Power and fuel ÷ income",
+                "value": "21%",
+                "note": "FY26, RHP."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials and bought-in tiles",
+                    "share": 42
+                },
+                {
+                    "label": "Power and fuel",
+                    "share": 22
+                },
+                {
+                    "label": "Staff",
+                    "share": 7
+                },
+                {
+                    "label": "Other costs (freight, marketing, other)",
+                    "share": 18
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 11
+                }
+            ],
+            "note": "From the RHP's restated FY26 profit and loss. Materials include changes in stock."
+        },
+        "workingCapital": {
+            "fromYear": "FY21",
+            "toYear": "FY26",
+            "debtorDays": [
+                106,
+                92
+            ],
+            "inventoryDays": [
+                66,
+                156
+            ],
+            "payableDays": [
+                119,
+                138
+            ],
+            "cycleDays": [
+                53,
+                110
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                114,
+                116,
+                113,
+                153,
+                171
+            ],
+            "ocf": [
+                68,
+                -10,
+                88,
+                63,
+                234
+            ],
+            "fcf": [
+                -4,
+                -23,
+                -258,
+                -40,
+                202
+            ]
+        }
     }
 };
 
@@ -5451,5 +5657,17 @@ export const consumerDurablesValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 264.0,
         "mcapAtWriting": 6364.0,
         "peAtWriting": 28.5
+    },
+    "Euro Pratik Sales": {
+        "netDebt": -8,
+        "ttmEbitda": 119,
+        "mcapAtWriting": 1916,
+        "peAtWriting": 22.2
+    },
+    "Varmora Granito": {
+        "netDebt": -45,
+        "ttmEbitda": 207,
+        "mcapAtWriting": 3034,
+        "peAtWriting": 33.6
     }
 };

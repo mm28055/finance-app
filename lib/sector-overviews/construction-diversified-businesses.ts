@@ -274,6 +274,170 @@ const profiles: BusinessProfile[] = [
         watch: ["NTPC approving the battery designs by December.", "Operating cash turning positive in FY27.", "The unaudited joint operations brought into the audit."],
         charts: constructionCharts["SPML Infra"],
     },
+    {
+        "company": "JSW Cement",
+        "inShort": [
+            "**The JSW Group's cement company and, by its own account, India's largest maker of GGBS**, a cement substitute made from JSW Steel's blast-furnace slag, with plants in the south, west, east and, since early 2026, Rajasthan in the north.",
+            "**Good:** the lowest clinker use in the industry (55%), cheap slag from its parent, volumes up 15% in Q1 FY27 and a clear path to 43.5 MTPA. **Bad:** net debt of ₹3,856cr is at the board's 3-times-EBITDA limit with about ₹7,500cr of capex ahead, return on capital was only 5–11% in recent years, Q1 EBITDA fell 7.5% on fuel costs and a ₹40cr North loss, and it depends on group companies for slag.",
+            "**Verdict: wait.** A sound low-cost model, but about 16 times EBITDA is a full price for 11% returns on capital and a debt-funded build-out; wait for the North to turn profitable and costs to fall."
+        ],
+        "tagline": "A JSW Group company making cement, GGBS (slag-based cement substitute), ready-mix concrete and construction chemicals, with an operation in Fujairah, UAE.",
+        "revenue": "₹6,501cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Cement",
+                "text": "Mostly blended (slag and fly-ash) cement sold under the JSW brand, about half to retail buyers. 2.34 MT sold in Q1 FY27 (up 27%, or 8% without the North) at ₹4,951 a tonne."
+            },
+            {
+                "name": "GGBS (ground granulated blast-furnace slag)",
+                "text": "Steel-plant slag ground into a powder that replaces part of the cement in concrete, sold mainly to infrastructure projects and ready-mix makers. About 1.5 MT in Q1 FY27 (up 2.6%) at ₹3,807 a tonne."
+            },
+            {
+                "name": "Ready-mix concrete and other products",
+                "text": "15 ready-mix plants (planned to reach 35), with revenue targeted above ₹1,000cr in FY27 (about ₹180cr in Q1), plus construction chemicals; the Fujairah (UAE) operation added about ₹13cr to Q1 profit before tax."
+            }
+        ],
+        "revenueText": "**Total sales were 3.81 MT in Q1 FY27**, of which cement 2.34 MT (61%) and GGBS about 1.47 MT (39%). Revenue was ₹1,896cr, up 22%, helped by the North, where plants ran at 55% in the quarter and 68% in June. Trade (retail) is 51% of cement sales. The South, West and East are the established markets; the North (Rajasthan, Haryana, then Punjab and Uttar Pradesh) is new.",
+        "mixes": [
+            {
+                "caption": "Sales volume by product, Q1 FY27 (company call)",
+                "parts": [
+                    {
+                        "label": "Cement",
+                        "share": 61
+                    },
+                    {
+                        "label": "GGBS",
+                        "share": 39
+                    }
+                ]
+            },
+            {
+                "caption": "Cement sales by channel, Q1 FY27 (company call)",
+                "parts": [
+                    {
+                        "label": "Trade (retail)",
+                        "share": 51
+                    },
+                    {
+                        "label": "Non-trade (projects)",
+                        "share": 49
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Home builders through dealers**: about half of cement is sold through the retail trade.",
+            "**Infrastructure projects and ready-mix makers**: GGBS and project cement go to roads, metros, the bullet train and other public works; approvals for over 29 large projects were won in Q1 FY27.",
+            "**JSW Group projects**, which give its ready-mix business a captive buyer."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Cement is a commodity, but plants need limestone reserves, environmental clearances and large capital, and a distribution network takes years. GGBS needs a steady slag supply, which JSW Steel provides and rivals lack."
+        },
+        "moat": "A cost edge from cheap slag supplied by JSW Steel and the lowest clinker-to-cement ratio in the industry (55%), which saves fuel and limestone and lowers emissions. Against that, it is a mid-sized player against much larger rivals, and its slag supply depends on a group company.",
+        "salesDrivers": [
+            "**Government and infrastructure spending**: central capex grew 24% in Q1 FY27; projects drive non-trade cement and GGBS.",
+            "**North expansion**: Nagaur grinding capacity rises to 3.5 MTPA by about October 2026, with plants planned in Punjab (land bought, about ₹50–60cr) and Uttar Pradesh.",
+            "**Capacity**: from 24.1 MTPA to 43.5 MTPA for about ₹7,500–7,600cr of capex (₹2,300cr in FY27, ₹2,000cr in FY28), and later 68 MTPA.",
+            "**Guidance**: high-teens volume growth in FY27 including the North, GGBS up in high single digits.",
+            "**State incentives**: a 23% capital subsidy on eligible North investment, not yet booked."
+        ],
+        "inputs": "**Fuel (imported coal, petcoke, lignite), power, limestone, slag from JSW Steel, fly ash, gypsum, packing and freight.** The detailed FY26 cost split was not available in the sources read.",
+        "costEffect": "**Not protected; cement prices follow regional supply, not costs.** Fuel cost rose to ₹1.80 per Mcal in Q1 FY27 from ₹1.49 in Q4 FY26; it is switching to domestic coal and lignite and adding waste-heat power, an overland conveyor and alternative fuel at Nagaur, and expects costs to fall from Q3 (Q2 similar to Q1). Renewable power was 30% of use in Q1, targeted at 60%-plus by FY27-end. **What happened:** the filed operating margin went from 7% in Q2 FY25 to 19–21% through FY26 as prices recovered, then 16% in Q1 FY27 when fuel rose and the North launch cost ₹33cr of marketing; EBITDA per tonne was ₹784 (₹979 without the North).",
+        "competitors": [
+            {
+                "name": "UltraTech and Ambuja/ACC (Adani)",
+                "note": "The two national leaders, each several times its size, adding capacity fast."
+            },
+            {
+                "name": "Shree Cement, Dalmia Bharat, JK Cement",
+                "note": "Large regional rivals in the North, East and South where it sells."
+            },
+            {
+                "name": "Other slag-cement and GGBS suppliers",
+                "note": "Fewer, because slag supply is tied to steel plants."
+            }
+        ],
+        "position": "**India's largest GGBS maker by its own account** and a mid-sized cement company with 24.1 MTPA of capacity, growing toward 43.5 MTPA.",
+        "money": "**Net debt was ₹3,856cr at June 2026, 2.95 times EBITDA**, against the board's limit of 3 times; average borrowing cost 7.63%. Borrowings fell from ₹6,563cr to ₹4,464cr in FY26 after the August 2025 IPO and conversion of the preference shares, but about ₹7,500cr of capex is planned. **Free cash flow was negative in four of the last five years** (−₹791cr in FY26) because of capex, though operating cash roughly matches operating profit and suppliers fund the working capital. Reported profit swings: a ₹1,444cr charge on the preference shares in Q1 FY26 and a tax credit in Q4 FY26. Return on capital was 5% in FY25 and 11% in FY26. Promoters hold **72.0%**.",
+        "watch": [
+            "The North breaking even from September and fuel costs falling from Q3.",
+            "Net debt staying under 3 times EBITDA as capex rises.",
+            "GGBS volumes picking up with infrastructure demand."
+        ],
+        charts: constructionCharts["JSW Cement"],
+    },
+    {
+        "company": "E to E Transportation",
+        "inShort": [
+            "**A Bengaluru railway systems contractor (e2E Rail)** that installs signalling, telecom and overhead electrification for Indian Railways, metros and private sidings, and is developing its own Kavach train-protection system through a subsidiary; listed on the NSE SME platform.",
+            "**Good:** revenue up 51% to ₹380cr in FY26, an order book of about ₹860cr (2.3 times sales) and a first Kavach approval step in May 2026. **Bad:** operating cash has been negative in four of the last five years (−₹102cr in FY26 against ₹38cr of operating profit), customers took 220 days to pay, borrowings rose from ₹66cr to ₹164cr in a year, the margin is only about 10%, and promoters own just 32.5% of a thinly traded share at about 29 times earnings.",
+            "**Verdict: pass.** Fast growth, but it is funded with borrowed money and unpaid bills; the price leaves no room for that risk."
+        ],
+        "tagline": "A railway signalling, telecom and electrification contractor (e2E Rail) founded in 2010, moving into its own railway-safety products and maintenance contracts.",
+        "revenue": "₹380cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "System integration (core)",
+                "text": "Signalling, telecom, overhead electrification and composite railway projects for Indian Railways zones, metros and industrial sidings, run over 18–24 months; it recently won a single ₹200cr-plus composite signalling and electrification job in South Central Railway."
+            },
+            {
+                "name": "Engineering and design (EDRC)",
+                "text": "In-house signalling and system design, which it wants to sell separately and abroad."
+            },
+            {
+                "name": "NOVA Control Tecnologix (products)",
+                "text": "A 100% subsidiary developing Kavach, India's automatic train-protection system, with Tata Elxsi; it won the RDSO approval to build prototypes on 15 May 2026. Management expects field-trial orders around end-H1 FY27, about ₹20cr in FY28 and ₹150–200cr a year only from FY29."
+            },
+            {
+                "name": "Operations and maintenance",
+                "text": "Maintenance contracts for metros (led by DMRC) and private sidings, targeted at 5–6% of FY27 revenue."
+            }
+        ],
+        "revenueText": "**Most revenue comes from government railway work (B2G)**, with private industrial sidings (B2B) a smaller share that pays faster; no split is disclosed. Revenue grew from ₹78cr in FY22 to ₹380cr in FY26, and it is heavily back-ended: about ₹170–180cr was billed in March 2026 alone, and H2 FY26 was ₹269cr of the year's ₹380cr. The executable order book including L1 positions was about **₹860cr plus GST** at May 2026, after ₹350cr of orders in the first 45 days of FY27.",
+        "customers": [
+            "**Indian Railways zones and their construction arms** for signalling and electrification, its main customers.",
+            "**Metro rail companies**, including DMRC for maintenance.",
+            "**Private industrial companies** with their own railway sidings, which pay faster."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Signalling work needs Railway and RDSO approvals, qualified engineers and track record to bid for larger jobs, but many contractors compete in tenders. Kavach is much harder: safety-critical certification takes years, and NOVA has only reached the prototype stage."
+        },
+        "moat": "Thin. It is one of many system integrators bidding in railway tenders, winning on price and track record; management claims combining its execution with its own Kavach products will set it apart, but that is years away and unproven.",
+        "salesDrivers": [
+            "**Railway modernisation spending**: signalling upgrades, electrification and the Kavach safety roll-out.",
+            "**Order wins**: management targets ₹1,000cr of new orders in FY27, with a 20–25% bid win rate.",
+            "**Guidance**: 45–50% revenue growth, about ₹200cr in H1 FY27 and ₹160–170cr a quarter in H2, with margins flat at FY26's level; ₹1,000cr of revenue by FY29 ('Vision 2029').",
+            "**Kavach**: field trials from late FY27 and full roll-out from FY29 if approvals arrive.",
+            "**Capex**: about ₹15cr into NOVA in FY27 from its own accruals."
+        ],
+        "inputs": "**Copper and steel (signalling and power cables, masts), signalling equipment from OEMs, and subcontracted labour.** No cost split was available in the sources read.",
+        "costEffect": "**Partly protected by price-variation clauses**, which pass on copper and steel changes, but only if the timing of supply allows; in FY26 the March billing rush meant about ₹2cr of commodity rises was not recovered. **What happened:** the filed operating margin has stayed at 9–11% since FY22 (11% in FY25, 10% in FY26), with ESOP costs (about ₹1.5cr) and NOVA spending also weighing in FY26.",
+        "competitors": [
+            {
+                "name": "HBL Engineering, Kernex Microsystems and Medha",
+                "note": "Kavach makers that are already approved and supplying; NOVA is only at the prototype stage."
+            },
+            {
+                "name": "Larger railway contractors",
+                "note": "Companies such as KEC International and RVNL bid for big signalling and electrification jobs."
+            },
+            {
+                "name": "Small listed railway contractors",
+                "note": "Many SME and small-cap firms compete for the same tenders."
+            }
+        ],
+        "position": "**A small railway signalling and electrification contractor**: FY26 revenue of ₹380cr and an order book of about ₹860cr.",
+        "money": "**Borrowings rose to ₹164cr at March 2026 from ₹66cr a year earlier**, as operating cash was −₹102cr in FY26. Over FY22–FY26 it earned ₹108cr of operating profit but used ₹116cr in operating cash; debtor days rose from 136 to 220, and about a third of revenue sits as unbilled work. Management says ₹90cr was collected in the 45 days after March and the adjusted debt-to-equity ratio is 0.68. Interest rose from ₹7cr in FY24 to ₹18cr in FY26, about half of operating profit. Cash balances were not available in the sources read. It raised equity in its SME IPO in FY26 and pays no dividend. Promoters hold **32.54%**.",
+        "watch": [
+            "Operating cash turning positive and debtor days falling from 220.",
+            "H1 FY27 revenue near ₹200cr, which would show execution spreading through the year.",
+            "Kavach field-trial orders and further RDSO approvals."
+        ],
+        charts: constructionCharts["E to E Transportation"],
+    },
 ];
 
 export const constructionDiversifiedBusinesses = { intro, profiles };

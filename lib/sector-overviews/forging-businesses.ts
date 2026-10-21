@@ -243,6 +243,132 @@ const profiles: BusinessProfile[] = [
         watch: ["Q2 and Q3 sales catching up with the ₹500cr FY27 target.", "The margin recovering from 7% as price indexation catches up.", "Debt, and funding for the planned 100,000-tonne expansion."],
         charts: forgingCharts['Synergy Green'],
     },
+    {
+        "company": "Behari Lal Engineering",
+        "inShort": [
+            "**A Punjab steel foundry and rolling mill** that melts scrap into rolls for steel mills, large castings for crushers and power plants, and alloy-steel bars, and supplies about 11.5% of India's metal-roll demand.",
+            "**Good:** the operating margin rose from 10% to 17% in three years as it shifted to higher-value products, returns are about 27%, and it has net cash. **Bad:** stock and receivables are rising (Screener's cash cycle went from 106 to 175 days and FY26 operating cash was only ₹28cr against ₹89cr of operating profit), the plant is already 90% full, and the top 10 customers are 38% of sales.",
+            "**Verdict: follow.** A well-run, debt-free business at a fair 28 times earnings; I want Unit 3 on time and profit turning into cash before buying."
+        ],
+        "tagline": "A family-run steel company from Mandi Gobindgarh, Punjab, making mill rolls, heavy castings and special alloy bars from recycled scrap.",
+        "revenue": "₹533cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "Alloy steel products",
+                "text": "Bars of carbon, alloy and stainless steel from 6 mm to 230 mm, including newer valve, tool and die steels; ₹245cr in FY26 (46%). The lower-value bars go to auto forging firms; the company is shifting this steel into higher grades."
+            },
+            {
+                "name": "Metal rolls",
+                "text": "Rolls that steel mills use to roll bars and sections; ₹141cr in FY26 (26%), sold to mills such as SAIL, JSW, Tata Steel and many secondary mills. It plans imported-type ICDP and high-speed-steel rolls from Unit 3."
+            },
+            {
+                "name": "Engineering castings",
+                "text": "Single pieces from 500 kg to about 25 tonnes for crushers, power plants, mining and heavy equipment; ₹104cr in FY26 (20%). Buyers include Metso, Propel and Kleemann."
+            },
+            {
+                "name": "Forging ingots, shafts and job work",
+                "text": "Ingots and forged shafts for forging companies (4%), plus job-work rolling for nearby mills (2%), both being reduced."
+            }
+        ],
+        "revenueText": "**Alloy steel was 46% of FY26 revenue, rolls 26% and castings 20%** (RHP). High-value products (rolls, castings and special grades) were 58% of FY26 revenue and 60.4% in Q1 FY27. By end use in Q1 FY27, automotive was 33%, infrastructure 26%, industrial equipment 15%, crushers 14% and thermal power 11%. **Exports were 9% of FY26 revenue** to 21 countries. The order book was ₹162cr at June 2026.",
+        "mixes": [
+            {
+                "caption": "Revenue by product, FY26 (RHP)",
+                "parts": [
+                    {
+                        "label": "Alloy steel products",
+                        "share": 46
+                    },
+                    {
+                        "label": "Metal rolls",
+                        "share": 26
+                    },
+                    {
+                        "label": "Engineering castings",
+                        "share": 20
+                    },
+                    {
+                        "label": "Forging ingots & shafts",
+                        "share": 4
+                    },
+                    {
+                        "label": "Job work and other",
+                        "share": 4
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by end user, Q1 FY27 (company call)",
+                "parts": [
+                    {
+                        "label": "Automotive",
+                        "share": 33
+                    },
+                    {
+                        "label": "Infrastructure",
+                        "share": 26
+                    },
+                    {
+                        "label": "Industrial equipment",
+                        "share": 15
+                    },
+                    {
+                        "label": "Aggregate crushers",
+                        "share": 14
+                    },
+                    {
+                        "label": "Thermal power",
+                        "share": 11
+                    },
+                    {
+                        "label": "Other",
+                        "share": 1
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Steel mills** for rolls: SAIL, JSW, Tata Steel and Vizag Steel, plus many secondary mills such as Shyam Metalics, Jai Balaji and Madhav KRG.",
+            "**Equipment makers** for castings: Metso, Propel and Kleemann (crushers), thermal-power equipment makers, and PSUs such as BHEL, BEML and BDL.",
+            "**Forging and auto-parts firms** for alloy bars. 1,871 customers at June 2026; the top 10 were 38% of FY26 revenue."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Large rolls and 20-tonne castings need metallurgy skill, vacuum degassing and heavy machining, and customers take time to approve a supplier. But Mandi Gobindgarh has many foundries, and alloy bars are close to a commodity."
+        },
+        "moat": "One melt shop that can switch between rolls, castings and bars keeps the plant full, and long relationships with 1,800 customers help. It is still a small player, much of its revenue is commodity-like bars, and its edge in new rolls depends on Unit 3 working.",
+        "salesDrivers": [
+            "**Mix**: high-value share from 58% to about 70% over time; EBITDA per tonne rose from about ₹9,100 to ₹11,500 in FY26 and ₹13,500 in Q1 FY27.",
+            "**Capacity**: melt shop at 94% and rolling mill at 87.5%; Unit 3 due in Q1 FY28; melting capacity has doubled every three to four years.",
+            "**Steel and power capex**: India's steel capacity push needs rolls; thermal power customers show orders to 2035.",
+            "**Defence**: prototype orders from BDL and NPCIL; meaningful revenue expected from FY28.",
+            "**Scrap prices**: range-bound in Q1 FY27."
+        ],
+        "inputs": "**Steel scrap (100% recycled)** plus ferro-alloys and power. Materials were 51% of revenue in Q1 FY27 (52.6% a year earlier); power and fuel 5.9%.",
+        "costEffect": "**Mostly passed on, as products are priced on order.** Management says the margin gain came from mix, not cheap scrap. **Rule of thumb:** with materials at about 51% of revenue, a 10% rise in scrap not passed on would cut the margin by about 5 points (18% to 13%). **What happened:** the operating margin rose from 10% in FY23 to 13%, 14% and 17% in FY24–FY26 and 18% in Q1 FY27 while scrap prices moved around.",
+        "competitors": [
+            {
+                "name": "Imported ICDP and HSS rolls",
+                "note": "Most of these advanced rolls are imported today; Unit 3 is aimed at them."
+            },
+            {
+                "name": "Other Indian roll makers and Mandi Gobindgarh foundries",
+                "note": "Many small rivals; not named in what I read."
+            },
+            {
+                "name": "AIA Engineering",
+                "note": "Much larger maker of wear castings for crushers and mills, an overlap in castings."
+            }
+        ],
+        "position": "**One of India's largest metal-roll makers**, with about 10–11.5% of national demand in FY26 (CRISIL, cited in the RHP); capacity use 90.5% in Q1 FY27.",
+        "money": "**Net cash of about ₹41cr at June 2026** (₹52cr of cash against ₹11cr of borrowings), before ₹93cr of IPO money arrived in August. **Over FY23–FY26 it turned ₹264cr of operating profit into ₹140cr of operating cash, and free cash was ₹51cr**; FY26 operating cash fell to ₹28cr as inventory rose to 136 days on Screener. FY27 capex is about ₹80cr from IPO money and profits. Returns: ROE about 24%, ROCE about 27–31%. Promoters hold **70.84%**.",
+        "watch": [
+            "Operating cash recovering and the cash cycle held near 90–100 days.",
+            "Unit 3 commissioning in Q1 FY28 and its capex figure.",
+            "High-value share and profit per tonne each quarter."
+        ],
+        charts: forgingCharts["Behari Lal Engineering"],
+    },
 ];
 
 export const forgingBusinesses = { intro, profiles };

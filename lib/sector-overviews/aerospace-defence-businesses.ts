@@ -574,6 +574,90 @@ const profiles: BusinessProfile[] = [
         watch: ["Margin back to 20–21% from Q3 FY27, as management expects.", "Approval of the ₹1,000cr modernisation.", "The ₹449cr of contingent liabilities, including ₹310cr of claims not acknowledged as debt."],
         charts: aerospaceDefenceCharts['Mishra Dhatu Nigam (MIDHANI)'],
     },
+    {
+        "company": "Apsis Aerocom",
+        "inShort": [
+            "**Machines precision metal parts** for aerospace, defence and medical equipment in Bengaluru, mostly for foreign aircraft and defence makers that must buy part of their content in India. Listed on NSE's SME board in March 2026.",
+            "**Good:** sales grew 50% to ₹30.65cr in FY26 at a 37.5% operating margin, it says about 40% of revenue comes from parts only it supplies, and it has net cash. **Watch:** it is tiny, the top five customers are 87% of sales and the largest 35%, the margin fell from 49.8%, it reports only twice a year, and the shares trade at about 93 times earnings after rising more than five times from the ₹110 IPO price.",
+            "**Verdict: pass.** A well-run niche workshop, but at 93 times earnings and 23 times sales the price already assumes the jump to ₹500cr of revenue that management hopes for by FY31."
+        ],
+        "tagline": "A Bengaluru precision-machining firm, founded as a partnership in 2012, that makes complex metal parts for aerospace, defence and healthcare customers.",
+        "revenue": "₹30.65cr (FY26, standalone)",
+        "products": [
+            {
+                "name": "Defence parts",
+                "text": "Machined components for military aircraft and naval programmes, sold mostly to foreign makers with Indian joint ventures that need Indian content (offsets). About ₹20cr, or 65% of FY26 revenue."
+            },
+            {
+                "name": "Aerospace parts",
+                "text": "Precision parts for civil and military aircraft assemblies; about ₹7.85cr, or 26% of FY26 revenue. More than 15 new aerospace parts were approved in FY26."
+            },
+            {
+                "name": "Healthcare parts",
+                "text": "Components for medical equipment; about ₹2.36cr, or 8% of FY26 revenue. A new version of its main medical system was about to start production in June."
+            }
+        ],
+        "revenueText": "**Defence was about 65% of FY26 revenue, aerospace 26% and healthcare 8%**, per the CFO. About 90% of parts are delivered inside India even though most buyers are foreign makers; the offer document lists customers in the US, the Netherlands, Spain and Israel. The order book was **₹40.5cr** in June 2026 (₹25cr defence, ₹12.9cr aerospace), about 1.3 times FY26 revenue and almost all due within 12 months. Management expects defence to stay about 60% of the mix.",
+        "mixes": [
+            {
+                "caption": "Revenue by segment, FY26 (approximate, from management)",
+                "parts": [
+                    {
+                        "label": "Defence",
+                        "share": 65
+                    },
+                    {
+                        "label": "Aerospace",
+                        "share": 26
+                    },
+                    {
+                        "label": "Healthcare",
+                        "share": 8
+                    },
+                    {
+                        "label": "Other",
+                        "share": 1
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Foreign aerospace and defence makers** with Indian joint ventures or offices, buying under India's offset rules for Air Force and Navy programmes. None are named.",
+            "**15 to 20 customers in all**; 7–8 have been with it since the start. The largest customer fell from 52% to 35% of sales in FY26 and the top five from 94% to 87%.",
+            "About four new customers were added between February and June 2026."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "Customers keep the design drawings, but Apsis owns the machining programs and process; the MD says customers tried other suppliers for five years without success on some parts. Parts need customer audits and approval before supply. But NADCAP-type special-process approvals are not needed for its work, and a shop of 105 people can be copied by larger rivals with money."
+        },
+        "moat": "A small but real one: about 40% of revenue, the MD says, comes from parts where it is the only approved supplier, and approvals take years. It is still a contract machinist working to customers' drawings, with 15–20 customers and the top five at 87% of sales.",
+        "salesDrivers": [
+            "**Capacity**: the first plant is full at about ₹30cr of sales a year; Unit 2, twice its size, starts in August 2026 and should be full in FY28, which management says supports ₹90–100cr a year.",
+            "**Guidance**: ₹48cr for FY27 (₹30cr plant 1, ₹18cr Unit 2 at under 50% use) and a ₹500cr annual revenue target for FY31, which needs a third plant for assemblies (Unit 3, worth ₹70cr-plus of sales; investment not yet given).",
+            "**Orders**: ₹40.5cr in hand and a pipeline of more than ₹100cr, of which it usually wins about 30%; it turns work away for lack of capacity.",
+            "**Defence offsets and 'Make in India'**: foreign makers must source part of their Indian contracts locally."
+        ],
+        "inputs": "**Aerospace-grade metal bar and forgings**, much of it imported from the US and Europe, plus tooling. Materials were about 33% of FY26 sales (from gross profit).",
+        "costEffect": "**Partly protected.** Prices are fixed per order; the MD says new quotes allow for current metal and currency prices, but existing orders absorb increases. In FY26 the CFO blamed higher raw-material costs, along with listing costs and Unit 2's fixed costs arriving before its revenue, for the margin fall from 49.8% to 37.5%.",
+        "competitors": [
+            {
+                "name": "Other Indian precision machinists",
+                "note": "The MD says there are one or two Indian rivals on most of its parts and none on about 40% of revenue."
+            },
+            {
+                "name": "Azad Engineering, Unimech Aerospace, Aequs",
+                "note": "Much larger listed Indian aerospace parts makers; not named by Apsis as direct rivals."
+            }
+        ],
+        "position": "**A small niche supplier**: 105 people, one plant running full and a second being equipped. No market share is disclosed.",
+        "money": "**Net cash of about ₹32cr**: about ₹36.5cr of cash (March 2026, data provider figure) against ₹4.5cr of borrowings. It raised **₹35.77cr in a March 2026 SME IPO at ₹110**, all new shares, with ₹27.02cr earmarked for machines; management puts Unit 2's total cost at about ₹60cr, and how the rest is paid for was not explained. Operating cash was ₹7.0cr in FY26 against ₹11.5cr of operating profit, after only ₹0.05cr in FY25; stock days rose from 45 to 151 over two years. Promoters hold **73.02%**. No dividend.",
+        "watch": [
+            "Unit 2 running from August 2026 and fully equipped by December.",
+            "FY27 revenue near ₹48cr with the margin holding at 37–40%.",
+            "The largest customer's share falling further below 35%."
+        ],
+        charts: aerospaceDefenceCharts["Apsis Aerocom"],
+    },
 ];
 
 export const aerospaceDefenceBusinesses = { intro, profiles };

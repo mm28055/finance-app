@@ -235,6 +235,104 @@ const profiles: BusinessProfile[] = [
         watch: ["The result of the 30 September 2026 AGM vote on moving IPO money into the cell venture (due within two working days).", "Q2 revenue above ₹400cr.", "Operating cash turning positive in H1 FY27."],
         charts: constructionCharts['Solarworld Energy So'],
     },
+    {
+        "company": "Pace Digitek",
+        "inShort": [
+            "**Builds telecom and battery-storage projects in India**: towers and fibre networks for BSNL, and grid batteries (BESS) that it assembles in its own Bengaluru plant, some of which it also owns and rents to state utilities.",
+            "**Good:** a ₹10,800cr order book, more than three years of revenue, a fast-growing battery business and a low price of about 11 times earnings. **Bad:** over five years it reported ₹1,405cr of operating profit but operating cash was −₹791cr; two customers were 58% of FY26 revenue; about ₹900cr of revenue so far came from a battery project it owns itself, booked upfront though paid over 12 years; and a firm linked to directors' relatives does its project work.",
+            "**Verdict: avoid.** The low price reflects profit that has not turned into cash, revenue booked on its own project, and heavy dependence on two state customers."
+        ],
+        "tagline": "A Bengaluru telecom-infrastructure contractor, founded by Venugopalrao Maddisetty, that has pivoted to battery-storage manufacturing and projects; listed in October 2025.",
+        "revenue": "₹2,641cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Telecom and ICT projects",
+                "text": "Built about 9,550 towers for BSNL's 4G saturation project (₹7,568cr including six years of upkeep), plus BharatNet fibre networks, railway Kavach and power systems for telecom sites. ₹1,440cr of FY26 revenue; telecom earns the better margin."
+            },
+            {
+                "name": "Battery storage (BESS) EPC",
+                "text": "Designs, supplies and builds grid batteries for NLC, DVC, NTPC and SECI, and solar plants for MAHAGENCO and Bondada, at a 12–15% margin by its own account. Containers are worth ₹4–4.5cr each; it delivered 90 in Q1 and plans 210 in Q2."
+            },
+            {
+                "name": "Battery projects it owns (BOO)",
+                "text": "Builds, owns and runs storage for MSEDCL (Maharashtra), KPTCL, KREDL and SECI on 12–25-year contracts, about ₹4,074cr of the order book. Under 'dealer-lessor' accounting the MSEDCL sites are booked as a sale when commissioned (about ₹900cr so far), while the utility pays rent over 12 years."
+            },
+            {
+                "name": "Manufacturing",
+                "text": "Subsidiary Lineage Power makes power systems, lithium battery packs and BESS containers: 5 GWh a year now, 10 GWh planned by December 2026, plus its own container fabrication. Cells are bought from China."
+            }
+        ],
+        "revenueText": "**Telecom was 55% of FY26 revenue (₹1,440cr) and energy 45% (₹1,195cr)**, but energy was 79.5% in Q1 FY27 as the BSNL tower project winds down. **Two customers were ₹1,526cr, or 58%, of FY26 revenue**; in FY25 one customer, BSNL, was ₹2,063cr, or 85%. Revenue is bunched into March: Q4 FY26 was ₹1,097cr of the year's ₹2,641cr. The order book was **₹10,803cr** in June 2026 (energy ₹8,453cr, telecom ₹2,350cr). In Q1 FY27 consolidated revenue rose 51% to ₹555cr, but standalone revenue fell 22%; the growth came from sales to its own project subsidiaries and outside battery customers.",
+        "mixes": [
+            {
+                "caption": "Revenue by segment, FY26 (annual report)",
+                "parts": [
+                    {
+                        "label": "Telecom",
+                        "share": 55
+                    },
+                    {
+                        "label": "Energy",
+                        "share": 45
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by segment, Q1 FY27 (results)",
+                "parts": [
+                    {
+                        "label": "Energy",
+                        "share": 80
+                    },
+                    {
+                        "label": "Telecom",
+                        "share": 20
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**BSNL**: the 4G saturation tower project and BharatNet fibre networks (a ₹265cr Sikkim order in Q1); 85% of FY25 revenue.",
+            "**State utilities and power companies**: MSEDCL (its own battery project), KPTCL, KREDL, SECI, NLC, DVC, NTPC and MAHAGENCO.",
+            "**Private buyers**: Bondada Engineering (solar), Reliance and Tata Teleservices (power systems and upkeep), and first small orders for commercial batteries and from Saudi Arabia."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Assembling battery containers from imported Chinese cells and building tower and fibre networks are learnable skills; dozens of firms bid for battery tenders (51 in one Rajasthan tender). Executing at scale for government buyers and financing projects it owns are the harder parts."
+        },
+        "moat": "Early scale in battery assembly and a long record with BSNL help it win tenders, but the work is won by bidding against many rivals, it depends on Chinese cells, and its customers are a handful of government bodies.",
+        "salesDrivers": [
+            "**State battery-storage tenders**, backed by central viability-gap funding: it is bidding for about 27 GWh, and management says bidding has become less aggressive since a 4 GWh Maharashtra award was cancelled.",
+            "**Order execution**: FY27 revenue guided at ₹3,200–3,400cr and FY28 at ₹4,000–4,200cr, mostly from the existing order book.",
+            "**Own projects**: four BOO projects should add about ₹750cr of yearly rent once all are commissioned, but tie up large amounts of capital; it is seeking outside investors.",
+            "**Telecom work**: BharatNet, railway Kavach (about 30% done) and new fibre orders as the BSNL 4G project ends.",
+            "**New lines**: commercial batteries (4–5 points better margin, management says), AI data-centre power with Megmeet, African sales with NEC XON, and a cell-making plan under the government incentive scheme."
+        ],
+        "inputs": "**Lithium-ion battery cells bought from China**, about 60% of the cost of a battery system, plus power converters, steel containers (now made in-house), telecom towers, fibre cable and solar panels. Materials were about 74% of FY26 sales.",
+        "costEffect": "**Partly protected.** Newer battery tenders carry price-variation clauses; older ones do not, and it relies on a contingency built into bids and on stock bought in March for Q1. Management says its FY27 profit-margin guidance already allows for higher cell prices. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 7 points (17% to 10%). **What happened:** the operating margin fell from 20% in FY25 to 17% in FY26 and 15.5% in Q1 FY27 as low-margin battery work replaced telecom.",
+        "competitors": [
+            {
+                "name": "Other battery-storage contractors and integrators",
+                "note": "Dozens of bidders in state tenders, including large solar and power groups adding storage; several who bid low have walked away from awards."
+            },
+            {
+                "name": "HFCL, Sterlite Technologies",
+                "note": "Rivals in BharatNet and government fibre-network contracts."
+            },
+            {
+                "name": "Chinese battery makers",
+                "note": "Its own cell suppliers, and the source of most integrated storage systems in India."
+            }
+        ],
+        "position": "**Claims to be India's largest operating battery-storage assembly plant** (5 GWh, going to 10 GWh by December 2026) and has built about 8,000 greenfield telecom towers; its own figures are not independently verified.",
+        "money": "Borrowings were **₹981cr at March 2026** (₹96cr a year earlier), mostly an IREDA loan of ₹606cr for its own MSEDCL battery project, against ₹270cr of cash and ₹499cr of other bank deposits, so **net debt was about ₹212cr**. **Customers owed ₹2,443cr** (₹2,067cr due within a year), stock was ₹540cr and finance-lease receivables from its own battery project ₹728cr, against FY26 revenue of ₹2,641cr. **Over FY22–FY26 it reported ₹1,405cr of operating profit but operating cash of −₹791cr**, including −₹842cr in FY26; free cash was −₹932cr in FY26. The October 2025 IPO raised ₹819cr at ₹219 (₹630cr for the MSEDCL battery project); ₹216cr was still unspent in March. The share trades about 30% below the IPO price. CRISIL rates it A-/Stable. No dividend. Promoters hold **69.52%**, unchanged since listing.",
+        "watch": [
+            "Operating cash turning positive by March 2027, as the CFO expects, and receivables falling.",
+            "How much revenue keeps coming from projects it owns itself rather than from outside customers.",
+            "Battery tender wins with price-variation clauses, and the 10 GWh plant on time."
+        ],
+        charts: constructionCharts["Pace Digitek"],
+    },
 ];
 
 export const constructionEnergyBusinesses = { intro, profiles };

@@ -2305,6 +2305,392 @@ export const foodProductsCharts: Record<string, ProfileCharts> = {
             "inventory5y": -18,
             "payables5y": 21
         }
+    },
+    "Piccadily Agro": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "39.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "25.2x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Borrowings",
+                "value": "₹531cr",
+                "note": "Gross borrowings at March 2026 (Screener); cash balance not available, so net debt is a little lower."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "23%"
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "32%",
+                "note": "Operating cash ÷ operating profit, FY22–FY26; ageing whisky stock absorbs cash."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                32,
+                89
+            ],
+            "inventoryDays": [
+                185,
+                369
+            ],
+            "payableDays": [
+                123,
+                76
+            ],
+            "cycleDays": [
+                94,
+                381
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                69,
+                62,
+                150,
+                183,
+                233
+            ],
+            "ocf": [
+                45,
+                37,
+                51,
+                -27,
+                118
+            ],
+            "fcf": [
+                18,
+                -5,
+                29,
+                -270,
+                -75
+            ],
+            "note": "Screener, consolidated."
+        }
+    },
+    "Regaal Resources": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "13.8x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "12.2x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹735cr",
+                "note": "Company figure at 30 June 2026, after the capex and seasonal maize buying."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "11%"
+            },
+            {
+                "label": "Net debt ÷ operating profit",
+                "value": "5.5x",
+                "note": "Net debt at June 2026 over the last four quarters’ operating profit."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                33,
+                48
+            ],
+            "inventoryDays": [
+                78,
+                34
+            ],
+            "payableDays": [
+                24,
+                32
+            ],
+            "cycleDays": [
+                87,
+                50
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                46,
+                41,
+                56,
+                113,
+                127
+            ],
+            "ocf": [
+                17,
+                35,
+                -23,
+                -11,
+                70
+            ],
+            "fcf": [
+                -27,
+                -35,
+                -127,
+                -139,
+                -245
+            ],
+            "note": "Screener, standalone. The March year-end understates working capital: the company put its cash cycle at 130 days in June."
+        }
+    },
+    "Milky Mist Dairy": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "116x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "43.9x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt (after IPO)",
+                "value": "₹249cr",
+                "note": "Borrowings at March 2026 (₹1,677cr) less the ₹1,428cr of new money raised in August 2026; an estimate."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "14%"
+            },
+            {
+                "label": "Paneer share of revenue FY26",
+                "value": "29%"
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY23",
+            "toYear": "FY26",
+            "debtorDays": [
+                18,
+                21
+            ],
+            "inventoryDays": [
+                53,
+                82
+            ],
+            "payableDays": [
+                14,
+                26
+            ],
+            "cycleDays": [
+                57,
+                76
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                197,
+                217,
+                305,
+                429
+            ],
+            "ocf": [
+                175,
+                140,
+                315,
+                302
+            ],
+            "fcf": [
+                -217,
+                -152,
+                -233,
+                -163
+            ],
+            "note": "Screener, consolidated (four years available)."
+        }
+    },
+    "Orkla India": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "24.6x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "16.8x",
+                "note": "Market value minus net cash, ÷ operating profit over the last four quarters (₹419cr)."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹504cr",
+                "note": "Current investments and cash (about ₹567cr) minus lease liabilities (₹63cr), March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "17%",
+                "note": "17.1% in Q1 FY27."
+            },
+            {
+                "label": "Volume growth Q1 FY27",
+                "value": "1.7%",
+                "note": "Revenue +10.4%; 4.4% volume excluding Kerala."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Raw and packing materials, bought-in goods",
+                    "share": 55
+                },
+                {
+                    "label": "Staff",
+                    "share": 10
+                },
+                {
+                    "label": "Other costs (ads, freight, outsourcing)",
+                    "share": 18
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 17
+                }
+            ],
+            "note": "Consolidated P&L, FY26 annual report: revenue ₹2,509cr; materials ₹1,109cr, traded goods ₹284cr, stock change −₹3cr; staff ₹251cr; other expenses ₹449cr."
+        },
+        "marginVsInput": {
+            "input": "Spice cost index (company, consumption-weighted)",
+            "periods": [
+                "Q1 FY25",
+                "Q2 FY25",
+                "Q3 FY25",
+                "Q4 FY25",
+                "Q1 FY26",
+                "Q2 FY26",
+                "Q3 FY26",
+                "Q4 FY26",
+                "Q1 FY27"
+            ],
+            "margin": [
+                null,
+                18.2,
+                14,
+                15.9,
+                18.8,
+                16.3,
+                16.2,
+                15.5,
+                17.1
+            ],
+            "index": [
+                100,
+                98,
+                98,
+                93,
+                88,
+                86,
+                88,
+                99,
+                116
+            ],
+            "note": "Margin: Screener quarterly operating margin (Q1 FY25 not on the saved page). Index: Orkla India's Q1 FY27 investor presentation."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                20,
+                27
+            ],
+            "inventoryDays": [
+                104,
+                77
+            ],
+            "payableDays": [
+                71,
+                66
+            ],
+            "cycleDays": [
+                52,
+                37
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                238,
+                312,
+                341,
+                396,
+                418
+            ],
+            "ocf": [
+                180,
+                190,
+                296,
+                392,
+                261
+            ],
+            "fcf": [
+                153,
+                113,
+                258,
+                372,
+                240
+            ]
+        }
     }
 };
 
@@ -2417,5 +2803,29 @@ export const foodProductsValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 85.0,
         "mcapAtWriting": 646.0,
         "peAtWriting": 14.2
+    },
+    "Piccadily Agro": {
+        "netDebt": 531,
+        "ttmEbitda": 239,
+        "mcapAtWriting": 5481,
+        "peAtWriting": 39
+    },
+    "Regaal Resources": {
+        "netDebt": 735,
+        "ttmEbitda": 134,
+        "mcapAtWriting": 896,
+        "peAtWriting": 13.8
+    },
+    "Milky Mist Dairy": {
+        "netDebt": 249,
+        "ttmEbitda": 492,
+        "mcapAtWriting": 21352,
+        "peAtWriting": 116
+    },
+    "Orkla India": {
+        "netDebt": -504,
+        "ttmEbitda": 419,
+        "mcapAtWriting": 7523,
+        "peAtWriting": 24.6
     }
 };

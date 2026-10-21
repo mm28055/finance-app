@@ -1422,6 +1422,85 @@ export const industrialsComponentsCharts: Record<string, ProfileCharts> = {
             "inventory5y": -32,
             "payables5y": 8
         }
+    },
+    "Hy-Tech Engineers": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "33.1x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "18.4x",
+                "note": "Market value plus borrowings minus investments, ÷ FY26 operating profit (₹42cr); cash not deducted."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹28cr",
+                "note": "Borrowings minus investments, March 2026, before cash and the September IPO money."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "22%"
+            },
+            {
+                "label": "Cash conversion, 4 yrs",
+                "value": "55%",
+                "note": "Operating cash ÷ operating profit over FY22 and FY24–FY26; 70–80% is healthy."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                110,
+                96
+            ],
+            "inventoryDays": [
+                189,
+                157
+            ],
+            "payableDays": [
+                145,
+                82
+            ],
+            "cycleDays": [
+                153,
+                171
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                34,
+                23,
+                36,
+                42
+            ],
+            "ocf": [
+                8,
+                19,
+                17,
+                30
+            ],
+            "fcf": [
+                -3,
+                -10,
+                5,
+                19
+            ],
+            "note": "FY23 is not on the filed page."
+        }
     }
 };
 
@@ -1487,5 +1566,12 @@ export const industrialsComponentsValuationInputs: Record<string, ValuationInput
         "ttmEbitda": 64.0,
         "mcapAtWriting": 1314.0,
         "peAtWriting": 33.5
+    },
+    "Hy-Tech Engineers": {
+        "netDebt": 28,
+        "ttmEbitda": 42,
+        "mcapAtWriting": 745,
+        "peAtWriting": 33.1,
+        "lossMaking": false
     }
 };

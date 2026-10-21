@@ -10,6 +10,8 @@
  *                that must not touch existing rows; the next normal run prunes)
  *   --store-only store the transcripts but leave analysis and profile for
  *                scripts/claude-analysis.ts (calls read by Claude, not Gemini)
+ *   --via-screener  with --source=screener: read the window for every selected
+ *                company from Screener (when NSE is refusing our requests)
  *
  * Sources:
  *   nse       NSE's corporate-announcements feed: our companies' filings whose
@@ -340,6 +342,7 @@ async function main() {
     const dryRun = measure || process.argv.includes('--dry-run');
     const noPrune = process.argv.includes('--no-prune');
     const storeOnly = process.argv.includes('--store-only');
+    const viaScreener = process.argv.includes('--via-screener');
     const verbose = process.argv.includes('--verbose'); // adds the source file to each line
     const source = (arg('source') || 'both').toLowerCase();
     const limit = arg('limit') ? parseInt(arg('limit')!, 10) : Infinity;
@@ -552,7 +555,11 @@ async function main() {
         };
 
         let listed: Set<string> | null = null;
-        try { listed = await nseListedIsins(); } catch (e: any) { console.warn(`NSE equity lists unavailable (${e.message}) — BSE-only read skipped`); }
+        if (viaScreener) {
+            // NSE is refusing us: read every selected company's window from Screener instead.
+            for (const co of companies) add(co, { from: fromDate, to: toDate, windowCheck: true });
+            console.log(`Screener: reading the window for all ${companies.length} companies (--via-screener)`);
+        } else try { listed = await nseListedIsins(); } catch (e: any) { console.warn(`NSE equity lists unavailable (${e.message}) — BSE-only read skipped`); }
         if (listed) {
             const bseOnly = companies.filter(c => c.isin && !listed!.has(c.isin));
             for (const co of bseOnly) add(co, { from: fromDate, to: toDate, windowCheck: true });

@@ -4038,6 +4038,379 @@ export const constructionCharts: Record<string, ProfileCharts> = {
             "inventory5y": -104,
             "payables5y": 455
         }
+    },
+    "JSW Cement": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "19.6x",
+                "note": "Last year's profit includes a large tax credit in Q4 FY26."
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "15.9x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹3,856cr",
+                "note": "Company figure, 30 June 2026; 2.95 times EBITDA."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "19%",
+                "note": "16% in Q1 FY27."
+            },
+            {
+                "label": "EBITDA per tonne",
+                "value": "₹784",
+                "note": "Q1 FY27; ₹979 excluding the North."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                60,
+                48
+            ],
+            "inventoryDays": [
+                143,
+                132
+            ],
+            "payableDays": [
+                336,
+                317
+            ],
+            "cycleDays": [
+                -133,
+                -136
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                756,
+                663,
+                853,
+                617,
+                1242
+            ],
+            "ocf": [
+                339,
+                653,
+                1408,
+                737,
+                1170
+            ],
+            "fcf": [
+                -715,
+                -979,
+                476,
+                -409,
+                -791
+            ],
+            "note": "Screener consolidated."
+        }
+    },
+    "E to E Transportation": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "29.3x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "17.3x",
+                "note": "Market value plus gross borrowings (cash not available), ÷ FY26 operating profit."
+            },
+            {
+                "label": "Borrowings",
+                "value": "₹164cr",
+                "note": "March 2026, up from ₹66cr; cash not available."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "10%"
+            },
+            {
+                "label": "Order book",
+                "value": "₹860cr",
+                "note": "Executable incl. L1, excluding GST, May 2026; 2.3 times FY26 revenue."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                152,
+                220
+            ],
+            "inventoryDays": [
+                7,
+                7
+            ],
+            "payableDays": [
+                190,
+                248
+            ],
+            "cycleDays": [
+                -31,
+                -21
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                7,
+                15,
+                19,
+                29,
+                38
+            ],
+            "ocf": [
+                -11,
+                -1,
+                7,
+                -9,
+                -102
+            ],
+            "fcf": [
+                -11,
+                -2,
+                5,
+                -14,
+                -112
+            ],
+            "note": "Screener consolidated."
+        }
+    },
+    "Pace Digitek": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "11.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "7.6x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹212cr",
+                "note": "Borrowings including leases (₹981cr) minus cash (₹270cr) and other bank deposits (₹499cr), March 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "17%"
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "−56%",
+                "note": "Operating cash ÷ operating profit, FY22–FY26; 70–80% is healthy."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials and project costs",
+                    "share": 74
+                },
+                {
+                    "label": "Staff",
+                    "share": 4
+                },
+                {
+                    "label": "Other costs",
+                    "share": 5
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 17
+                }
+            ],
+            "note": "Materials and staff from the FY26 annual report; other costs are the rest of Screener's filed expenses."
+        },
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                301,
+                286
+            ],
+            "inventoryDays": [
+                158,
+                182
+            ],
+            "payableDays": [
+                800,
+                603
+            ],
+            "cycleDays": [
+                -340,
+                -136
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                29,
+                29,
+                403,
+                485,
+                459
+            ],
+            "ocf": [
+                57,
+                -44,
+                214,
+                -176,
+                -842
+            ],
+            "fcf": [
+                54,
+                -50,
+                208,
+                -212,
+                -932
+            ]
+        }
+    },
+    "Glass Wall Systems": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "24.9x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "17.9x",
+                "note": "Market value minus net cash, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹78cr",
+                "note": "Cash and bank balances minus borrowings, March 2026, before the IPO's ₹60cr of new money (RHP)."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "23%"
+            },
+            {
+                "label": "Order book ÷ FY26 sales",
+                "value": "2.1x",
+                "note": "₹982cr at July 2026."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 48
+                },
+                {
+                    "label": "Subcontracting",
+                    "share": 12
+                },
+                {
+                    "label": "Staff",
+                    "share": 8
+                },
+                {
+                    "label": "Other costs",
+                    "share": 9
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 23
+                }
+            ],
+            "note": "From the RHP's restated FY26 accounts; other costs are the rest of Screener's filed expenses."
+        },
+        "workingCapital": {
+            "fromYear": "FY24",
+            "toYear": "FY26",
+            "debtorDays": [
+                76,
+                87
+            ],
+            "inventoryDays": [
+                70,
+                65
+            ],
+            "payableDays": [
+                90,
+                108
+            ],
+            "cycleDays": [
+                56,
+                44
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                55,
+                73,
+                105
+            ],
+            "ocf": [
+                43,
+                73,
+                73
+            ],
+            "fcf": [
+                38,
+                69,
+                50
+            ],
+            "note": "Only three years are filed on a consolidated basis, restated to include Yes Systems."
+        }
     }
 };
 
@@ -4234,5 +4607,29 @@ export const constructionValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 149.0,
         "mcapAtWriting": 1168.0,
         "peAtWriting": 9.98
+    },
+    "JSW Cement": {
+        "netDebt": 3856,
+        "ttmEbitda": 1217,
+        "mcapAtWriting": 15474,
+        "peAtWriting": 19.6
+    },
+    "E to E Transportation": {
+        "netDebt": null,
+        "ttmEbitda": 38,
+        "mcapAtWriting": 492,
+        "peAtWriting": 29.3
+    },
+    "Pace Digitek": {
+        "netDebt": 212,
+        "ttmEbitda": 461,
+        "mcapAtWriting": 3276,
+        "peAtWriting": 11
+    },
+    "Glass Wall Systems": {
+        "netDebt": -78,
+        "ttmEbitda": 107,
+        "mcapAtWriting": 1997,
+        "peAtWriting": 24.9
     }
 };

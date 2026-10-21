@@ -245,6 +245,80 @@ export const mediaCharts: Record<string, ProfileCharts> = {
             }
         ],
         "statsAsOf": "28 Sep 2026"
+    },
+    "Simca Advertising": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "28.7x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "20.4x",
+                "note": "Market value minus net cash, ÷ operating profit over the last two half-years (₹23cr)."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹10cr",
+                "note": "March 2026, before the ₹58cr IPO in May."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "18%"
+            },
+            {
+                "label": "Debtor days FY26",
+                "value": "114"
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY24",
+            "toYear": "FY26",
+            "debtorDays": [
+                116,
+                114
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                116,
+                114
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                8,
+                10,
+                23
+            ],
+            "ocf": [
+                2,
+                3,
+                11
+            ],
+            "fcf": [
+                2,
+                3,
+                6
+            ],
+            "note": "Screener, standalone."
+        }
     }
 };
 
@@ -267,5 +341,11 @@ export const mediaValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 79.0,
         "mcapAtWriting": 421.0,
         "peAtWriting": 8.76
+    },
+    "Simca Advertising": {
+        "netDebt": -10,
+        "ttmEbitda": 23,
+        "mcapAtWriting": 479,
+        "peAtWriting": 28.7
     }
 };

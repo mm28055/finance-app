@@ -269,6 +269,190 @@ const profiles: BusinessProfile[] = [
         watch: ["Operating cash turning positive as working capital settles.", "EU and US curbs on scrap exports.", "Profit per tonne holding at the ₹12,000 now guided as the new plants fill."],
         charts: miningCharts['CMR Green Tech'],
     },
+    {
+        "company": "Midwest",
+        "inShort": [
+            "**India's largest producer and exporter of Black Galaxy granite**, quarrying and processing granite blocks at 16-plus mines in Telangana and Andhra Pradesh and selling mostly to Chinese buyers, now adding quartz processing and planning rare-earth and mineral-sand projects abroad.",
+            "**Good:** a steady 27–28% operating margin, FY27 revenue guided up about 30% to ₹840cr, and net cash after the IPO. **Bad:** customers take **129 days** to pay, more than half of export sales go to China and the top ten customers were 51% of FY25 revenue, the promoter carries adverse findings from a government investigation, and the shares trade at about 37 times earnings while the new ventures are still years from cash.",
+            "**Verdict: pass.** A good quarry business, but at this price the governance history, the China dependence and the slow collections are not paid for."
+        ],
+        "tagline": "A granite quarrying and export company (Black Galaxy and Absolute Black) from Telangana and Andhra Pradesh, listed in October 2025, branching into quartz, heavy mineral sands and rare earths.",
+        "revenue": "₹646cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Black Galaxy and Absolute Black granite",
+                "text": "Raw and processed granite blocks from 16-plus mines, sold for countertops, flooring and monuments. Its share of India's Black Galaxy export volume was about 23% in FY24. Q1 FY27 granite volume rose about 10% and revenue more than 30%. One Black Galaxy mine pays a revenue share to a state-owned lessor."
+            },
+            {
+                "name": "Quartz",
+                "text": "A first-phase plant that crushes and purifies quartz for engineered stone (about 65%) and solar-grade uses (35%). 5,000 tonnes and about ₹5cr in Q1 FY27 at about ₹10,000 a tonne; guided ₹100–120cr in FY27 and ₹180–200cr in FY28. A second phase (about ₹125cr) is due in 10–12 months."
+            },
+            {
+                "name": "New ventures",
+                "text": "Sri Lankan heavy mineral sands (about ₹120cr, revenue expected FY29), a rare-earth pilot with Kerala's state-owned KMML (stalled after a change of government), an Indonesian rare-earth joint venture with state-owned PERMINAS (revenue expected FY29), and a Sierra Leone subsidiary still looking for concessions."
+            }
+        ],
+        "revenueText": "Nearly all revenue is granite. **FY27 guidance is about ₹840cr: ₹720cr granite and ₹100–120cr quartz**, against ₹646cr in FY26. Sales are seasonal: Q4 brings 30–40% of the year because Chinese buyers restock after their New Year. The offer document says more than half of export revenue came from customers in China, and the top ten customers were 51% of FY25 revenue (63% in the June 2025 quarter). Shipments are mostly FOB, so the buyer pays the freight.",
+        "mixes": [
+            {
+                "caption": "FY27 revenue guided by business (approximate, Q1 FY27 call)",
+                "parts": [
+                    {
+                        "label": "Granite",
+                        "share": 86
+                    },
+                    {
+                        "label": "Quartz",
+                        "share": 14
+                    }
+                ],
+                "note": "₹720cr granite and ₹100–120cr quartz out of about ₹840cr."
+            }
+        ],
+        "customers": [
+            "**Chinese granite processors and distributors**, more than half of export revenue per the offer document; China acts as a global hub for cutting and resale.",
+            "**Buyers in 17 countries**, with the top ten customers at about half of revenue.",
+            "**Engineered-stone and solar-glass makers** for the new quartz line."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Granite quarrying needs mining leases, environmental approvals and years of building quarries; Black Galaxy comes from a limited area, which helps. Processing itself is simple, and the new ventures depend on foreign governments' approvals."
+        },
+        "moat": "Leases on scarce Black Galaxy deposits and a long export record give it real scale. But granite is a commodity sold to a concentrated set of Chinese buyers, and none of the new ventures has earned money yet.",
+        "salesDrivers": [
+            "**Chinese demand** for Indian granite, which sets volume and the Q4 peak.",
+            "**Price**: it raised granite prices by about 3–5% in Q1 FY27.",
+            "**Granite volume**: about 10% growth in Q1; management assumes 10–12% a year.",
+            "**Quartz ramp-up**: 10,000 tonnes a month by end-Q2, more than 15,000 by Q4; breakeven at about 10,000 tonnes.",
+            "**New projects**: Sri Lanka and Indonesia both pointed at FY29."
+        ],
+        "inputs": "**Diesel, explosives, equipment and labour** for quarrying; management says diesel is about 13% of costs. It is moving its truck fleet to electric and adding solar power to cut fuel use.",
+        "costEffect": "**Partly passed on, with a lag.** Diesel rose from about ₹85 to ₹125–130 a litre in early 2026, and the Q1 FY27 margin fell 1.9 points year on year; price increases of about 3–5% and electric trucks are meant to restore it. **Rule of thumb:** with diesel at about 13% of costs (roughly 9–10% of revenue), a 10% rise not passed on would cut the margin by about 1 point. **What happened:** the operating margin moved between 20% and 32% a quarter in FY25–FY27, mostly with the seasonal mix (Q4 highest), and was 25% in Q1 FY27.",
+        "competitors": [
+            {
+                "name": "Other Indian granite quarry owners in Telangana, Andhra Pradesh, Karnataka and Tamil Nadu",
+                "note": "Many smaller, often unlisted miners selling similar black granite."
+            },
+            {
+                "name": "Pokarna",
+                "note": "Listed Telangana granite and engineered-quartz maker."
+            },
+            {
+                "name": "Brazilian and other foreign granite exporters",
+                "note": "Compete for Chinese and global buyers."
+            }
+        ],
+        "position": "**India's largest producer and exporter of Black Galaxy granite**, about 23% of India's Black Galaxy export volume in FY24, with 16-plus mines and 25 more sites planned.",
+        "money": "Screener shows ₹192cr of borrowings at March 2026 against about ₹226cr of cash and short-term investments, so **net cash of about ₹34cr**; management calls gearing 0.2 times. **Receivables were about ₹246cr, 129 days of sales** (140 in FY25, 29 in FY22). Operating cash was ₹175cr in FY26; over FY22–FY26 it turned ₹711cr of operating profit into ₹481cr of operating cash (68%), but capex took most of it. Planned spending: about ₹125cr for quartz phase two (₹60–70cr in Q2–Q3), about ₹120cr for Sri Lanka from its own cash, and an Indonesian project expected to cost more than Kerala. The IPO raised ₹250cr fresh in October 2025. No dividend. Promoters hold **77.12%**.",
+        "watch": [
+            "Quartz volumes against the 10,000-tonne-a-month mark and breakeven in Q3.",
+            "Receivable days coming down from 129.",
+            "Any dealings between the listed company and the promoter's magnet company in Indonesia."
+        ],
+        charts: miningCharts["Midwest"],
+    },
+    {
+        "company": "Jain Resource Recycling",
+        "inShort": [
+            "**A Chennai recycler of copper, lead and aluminium scrap**, mostly imported, that melts it into ingots and alloys sold in India and to more than 20 countries, and is now adding copper anode, cathode, wire rod and busbar plants.",
+            "**Good:** FY26 revenue rose 48% to ₹9,543cr and profit 56% to ₹347cr, with a 26% return on capital, a 100% price-hedging policy and an LME-registered lead brand. **Bad:** **operating cash was −₹591cr in FY26** as inventory piled up, net debt is about ₹911cr, the margin is only about 4–6%, copper profit per tonne fell from about ₹36,000 to ₹31,000, and 75–80% of scrap is imported.",
+            "**Verdict: wait.** A fast-growing recycler, but at about 27 times earnings I want to see the new copper plants lift profit per tonne and cash finally follow profit."
+        ],
+        "tagline": "One of India's largest non-ferrous metal recyclers, from Gummidipoondi near Chennai, listed in October 2025 and moving from ingots into copper cathode, rod and busbar.",
+        "revenue": "₹9,543cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Copper and copper products",
+                "text": "Copper ingots from scrap, and from Q1 FY27 copper anodes (1,600 t a month installed; about 600 t sold so far). Cathode (1,500 t a month) is due in Q2 FY27 and wire rod and busbar in Q3. A joint venture at Ahmedabad with C&Y Group began trial runs and should process about 72,000 t of scrap a year. 67% of Q1 FY27 revenue."
+            },
+            {
+                "name": "Lead and lead alloys",
+                "text": "Refined lead and alloys from used batteries and scrap, registered as a brand on the London Metal Exchange; about 1.85 lakh tonnes in FY26, with 15–20% more capacity awaiting approval. 29% of Q1 FY27 revenue."
+            },
+            {
+                "name": "Aluminium, tin, antimony and plastic",
+                "text": "Aluminium alloys (3% of revenue), and planned recovery of antimony (about 100 t a month from Q3 FY27), tin and plastic from its own process waste."
+            }
+        ],
+        "revenueText": "**Copper was 67% of Q1 FY27 revenue** (55% in FY26), lead 29% and aluminium 3%. Exports went to more than 20 countries and were **60% of FY25 revenue**, per its IPO papers. Profit is earned per tonne: about **₹31,000 a tonne on copper in Q1 FY27** against an FY26 average of about ₹36,000 (around ₹13,000–15,000 in Q4 FY26); lead earns about 7–7.5% of sales. More than half of revenue came from the top ten customers, per the IPO papers.",
+        "mixes": [
+            {
+                "caption": "Revenue by metal, Q1 FY27 (company call)",
+                "parts": [
+                    {
+                        "label": "Copper",
+                        "share": 67
+                    },
+                    {
+                        "label": "Lead",
+                        "share": 29
+                    },
+                    {
+                        "label": "Aluminium",
+                        "share": 3
+                    },
+                    {
+                        "label": "Other",
+                        "share": 1
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by market, FY25 (IPO papers)",
+                "parts": [
+                    {
+                        "label": "Exports",
+                        "share": 60
+                    },
+                    {
+                        "label": "India",
+                        "share": 40
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Battery makers and lead users** in India and abroad for its LME-registered lead.",
+            "**Copper users and traders**, including buyers in China, and new customers for cathode, rod and busbar who management says are mostly different from its existing ones.",
+            "The top ten customers are more than half of revenue (IPO papers); customers are not named."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Recycling is well understood, but pollution permits (each new plant took about 15 months), a global scrap-buying network, LME registration and strict hedging take years. Copper cathode and busbar need tighter quality control than ingots."
+        },
+        "moat": "Scale, a worldwide scrap-buying network and full hedging give it cheaper and steadier supply than informal recyclers, and new rules require producers to use recycled copper, aluminium and zinc from FY28. The weakness is that it earns a thin spread on traded metal, depends on imported scrap, and competes with Gravita and many smaller recyclers.",
+        "salesDrivers": [
+            "**Scrap supply**: 75–80% is imported; the West Asia conflict cut flows and left about ₹20–30cr of material stuck at sea, so it bought more in India at higher prices.",
+            "**Metal prices**: revenue rises with copper and lead prices, but hedging keeps profit tied to tonnes, not prices.",
+            "**New copper plants**: management expects value-added products to add about 2 points of margin on that volume.",
+            "**Recycling rules**: producers of cables, conductors and similar goods must use at least 5% recycled content from FY28, rising to 10%.",
+            "**Capacity**: FY27 capex of about ₹87cr; 15–20% more lead capacity once approved."
+        ],
+        "inputs": "**Copper, lead and aluminium scrap**, 75–80% imported, plus fuel and power for its furnaces. With operating costs at about 94% of revenue in FY26, almost all of that is metal.",
+        "costEffect": "**Passed on: it earns a spread per tonne.** Scrap is bought and metal sold at prices linked to the London Metal Exchange and every position is hedged, so metal-price rises flow to customers; the percentage margin shrinks when prices rise even if profit per tonne holds. The risk is the spread between scrap and metal, which narrowed when Gulf scrap stopped and local scrap cost more. **Rule of thumb:** a 10% rise in scrap cost not passed on would wipe out the whole 4–6% margin, which is why it hedges. **What happened:** the quarterly operating margin went from 6% in FY25 to 8% in Q2 FY26 and down to 3.5% in Q4 FY26 and 4.0% in Q1 FY27; management says to judge two quarters together because hedging gains land at quarter ends.",
+        "competitors": [
+            {
+                "name": "Gravita India",
+                "note": "Larger listed lead, aluminium and copper recycler with plants in India and abroad and its own LME lead brand."
+            },
+            {
+                "name": "Pondy Oxides & Chemicals",
+                "note": "Listed lead recycler moving into copper."
+            },
+            {
+                "name": "Informal recyclers",
+                "note": "Unlicensed local players that compete for domestic scrap, often on price."
+            }
+        ],
+        "position": "**One of India's largest non-ferrous recyclers**, with about 3.1 lakh tonnes of capacity across three plants at Gummidipoondi (IPO papers) and about 1.85 lakh tonnes of lead output in FY26.",
+        "money": "Screener shows **₹1,276cr of borrowings** at March 2026 against about ₹365cr of cash and short-term investments, so **net debt of about ₹911cr**, even after the IPO repaid about ₹375cr. **Operating cash was −₹591cr in FY26** and free cash −₹693cr: inventory rose to 62 days of sales from 42. Over FY23–FY26 it made ₹1,292cr of operating profit but operating cash was −₹543cr. The company put the working-capital cycle at about 60 days in June 2026. LME brokers give it more than $30m of margin limits for its hedges. FY27 capex is about ₹87cr. No dividend. Promoters hold **73.59%**; FIIs fell from 6.4% to 0.8% in a year.",
+        "watch": [
+            "Copper EBITDA per tonne climbing back above ₹36,000 as cathode and busbar start.",
+            "Operating cash turning positive and inventory days falling.",
+            "Imported scrap flows returning after the West Asia disruption."
+        ],
+        charts: miningCharts["Jain Resource Recycling"],
+    },
 ];
 
 export const miningBusinesses = { intro, profiles };

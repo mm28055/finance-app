@@ -277,6 +277,75 @@ const profiles: BusinessProfile[] = [
         watch: ["Margin recovery, which management hopes for by Q3 FY27.", "New meter orders at higher prices, and the order book growing again.", "Whether Adani buys a meter maker of its own."],
         charts: industrialsProductsCharts['HPL Electric'],
     },
+    {
+        "company": "Kusumgar",
+        "inShort": [
+            "**Makes engineered nylon and polyester fabrics and finished defence products**: parachute and military clothing fabric, complete parachute and camouflage systems, industrial and car fabrics, and fabric for global outdoor brands, from seven plants in Gujarat and Uttar Pradesh.",
+            "**Good:** hard-to-win military approvals, India's only Kevlar filament weaver, and a margin that rose to **31% in Q1 FY27**. **Watch:** operating cash was only ₹92cr against ₹577cr of operating profit over FY23–FY26, stock (278 days) and receivables (123 days) ballooned in FY26, revenue is lumpy, and management gives no guidance or order book.",
+            "**Verdict: pass.** A real niche, but only ₹92cr of ₹577cr operating profit over FY23–FY26 (16%) arrived as cash, at about 45 times earnings; it can return to the list when operating cash covers most of its profit."
+        ],
+        "tagline": "A Gujarat maker of engineered technical fabrics and defence textile products such as parachutes, listed in July 2026 and run by the Kusumgar family with a professional CEO.",
+        "revenue": "₹692cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Aerospace and defence fabrics",
+                "text": "Nylon and polyester fabrics with polyurethane coatings for parachute canopies, high-altitude and winter clothing, rainwear, rucksacks, sleeping bags, tents and bulletproof jackets. It says it is one of two makers worldwide of a zero-porosity parachute fabric and India's only Kevlar filament fabric maker."
+            },
+            {
+                "name": "Aerospace and defence solutions",
+                "text": "Complete parachute systems (made under licence from a foreign technology partner), camouflage and protective systems and rapid-deployment shelters. This forward step from fabric to finished product drove most of the recent growth."
+            },
+            {
+                "name": "Industrial and automotive fabrics",
+                "text": "A decades-old, steady line of technical fabrics for car and general industrial uses."
+            },
+            {
+                "name": "Outdoor and lifestyle fabrics",
+                "text": "Performance fabrics for global outdoor and activewear brands, started a few years ago and growing as each brand approves products season by season."
+            }
+        ],
+        "revenueText": "It reports one segment and does not split revenue by its four markets; fabrics are still the majority and finished defence systems the fast-growing part. **About 10–15% of revenue comes from the United States.** Revenue fell 11% in FY26 to ₹692cr after ₹779cr in FY25, with an unusually large Q4 (₹313cr) as US shipments held up by tariffs and part of a parachute contract went out together; Q1 FY27 revenue was ₹247cr, up 102% on a weak Q1 FY26. Management says revenue grew about 35% a year from FY20 to FY26.",
+        "customers": [
+            "**The Indian armed forces**, served directly for parachutes and camouflage, and indirectly through clothing and equipment makers and state firms such as Gliders India and Troop Comforts, which buy its fabric.",
+            "**Foreign militaries**, often through registered local agents.",
+            "**Global outdoor and activewear brands**, and **automotive and industrial** customers. No customer names or concentration figures are disclosed in what I read."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "Military fabrics need years of testing and approval, special chemistry (polyurethane coatings, zero-porosity weaves, fine deniers from 25 GSM) and control of the whole chain from weaving to coating; management says about 90% of its business rests on long-standing product approvals, and some products took more than a decade."
+        },
+        "moat": "Approvals and know-how: once qualified with a military or a brand, switching is slow and costly, and exclusive foreign technology partnerships add designs and licences. The limits are that defence demand comes in tender-driven surges, Gliders India has products reserved for it by the government, and simpler fabrics such as rainwear have many competitors.",
+        "salesDrivers": [
+            "**Defence spending and indigenisation**: steady replacement demand (uniforms, parachutes wear out) plus surges when conflicts break out; tender timing makes quarters lumpy.",
+            "**New approvals**: about 90% of revenue rests on product approvals whose timing is uncertain; stealth, camouflage and carbon-composite materials are being developed with foreign partners (an analyst named Russian and Japanese firms; management would not discuss them).",
+            "**Exports and China-plus-one**: foreign militaries and global brands shifting supply away from China; US tariffs held up shipments in FY26.",
+            "**Capacity**: a large expansion finished in FY26, so plants run at only 55–60%; only maintenance capex (5–10% of gross block a year) is planned for the core business."
+        ],
+        "inputs": "**Nylon (polyamide) and polyester filament yarn, aramid (Kevlar) yarn and polyurethane coating chemicals**, sourced globally; shares of cost are not disclosed in what I read.",
+        "costEffect": "**Not clearly disclosed.** Management has not explained how yarn and chemical prices are passed on; product mix has mattered more to the margin. **What happened:** the operating margin moved from 22% (FY23) to 28%, 24% and 27% in FY24–FY26, and from 19% in Q1 FY26 to 37% in Q4 FY26 and 30% in Q1 FY27, driven by the mix of parachute contracts rather than input prices.",
+        "competitors": [
+            {
+                "name": "Gliders India",
+                "note": "State-owned parachute maker with products reserved for it by the government; management calls it a peer and also a customer route."
+            },
+            {
+                "name": "Kohli Enterprises and other Indian makers",
+                "note": "Named by an analyst as a defence-textile rival; management says competition is heavier in simpler fabrics such as rainwear."
+            },
+            {
+                "name": "Global technical-fabric makers",
+                "note": "Abroad Kusumgar is a challenger winning qualifications one product at a time."
+            }
+        ],
+        "position": "**An incumbent supplier of many fabric products to the Indian military** and one of two makers worldwide of a zero-porosity parachute fabric, by its own account; more than 1,000 fabric types and about 2,000 staff. Plants run at 55–60%.",
+        "money": "Screener shows **₹290cr of borrowings at March 2026** against ₹15cr of investments and cash it does not split out. **Over FY23–FY26 it turned ₹577cr of operating profit into only ₹92cr of operating cash**, and free cash was −₹180cr after the expansion; FY25 operating cash was −₹155cr and FY26 ₹28cr. At March 2026 stock was 278 days of sales and receivables 123 days; management says Q4's large sales inflated the receivables and expects positive operating cash in FY27. Interest cost rose to ₹26cr in FY26. No dividend. Promoters hold **75.01%**.",
+        "watch": [
+            "Operating cash and receivables in the H1 FY27 results (due in November).",
+            "Lumpy quarters: whether H2 parachute and export orders keep FY27 above FY26.",
+            "New approvals from the stealth and composite partnerships."
+        ],
+        charts: industrialsProductsCharts["Kusumgar"],
+    },
 ];
 
 export const industrialsProductsBusinesses = { intro, profiles };

@@ -160,6 +160,193 @@ const profiles: BusinessProfile[] = [
         watch: ["The new site opening within 12 months, as the current plant is nearly full.", "Margin moving from 16% towards the 18–20% target as more parts are made in-house.", "Conversion of the ₹304cr of defence bids into orders.", "Stock falling from 259 days so profit turns into cash, and the 60-acre land actually signed after repeated slips."],
         charts: industrialMachineryCharts['Macpower CNC'],
     },
+    {
+        "company": "Lohia Corp",
+        "inShort": [
+            "**Makes the machines that turn plastic granules into woven sacks and fabric**: tape lines, circular looms, winders, coating and bag-making machines used for cement, fertiliser and food-grain bags, bulk bags, tarpaulins and geotextiles, sold to about 2,000 customers in India and roughly 100 developing countries.",
+            "**Good:** a leading global maker with a ₹1,778cr order book backed by about 20% advances, revenue up 60% in Q1 FY27 at a **20% operating margin**, and net cash. **Watch:** the margin was about 8% as recently as FY24, the order book tripled in a year (customers' capex comes in cycles), stock is held about 150 days, and only two years of figures are filed.",
+            "**Verdict: follow.** A strong niche leader at about 24 times earnings, but today's profit comes near the top of a capital-spending cycle; I want to see the 20% margin and orders hold for a few quarters."
+        ],
+        "tagline": "A Kanpur-based maker of machinery for woven plastic sacks and technical textiles, run by the Lohia family and listed in July 2026.",
+        "revenue": "₹1,717cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Woven-fabric production lines",
+                "text": "Tape extrusion lines (about ₹3cr each), circular looms (about ₹10–11 lakh), winders, coating and lamination lines and bag converting machines, sold as whole plant packages; a cement-bag plant might take one tape line, about 250 winders and 40 looms. New in 2026: the CoEx 1600 multi-layer coating line and the nova 6 plus high-speed loom."
+            },
+            {
+                "name": "Spare parts and service",
+                "text": "About 10–12% of revenue; a customer buys spares worth roughly 2–3% of its plant's cost every year for the machine's 20–25-year life, at gross margins 2–3 points higher than machines. Also rebuilding, remote assistance and operator training."
+            },
+            {
+                "name": "New lines",
+                "text": "Polyolefin plastic recycling machines and monofilament lines, about 5–6% of revenue; shredding and granulating lines are planned."
+            }
+        ],
+        "revenueText": "Revenue comes from machine orders executed over 6–9 months, plus spares. **Exports were about 41% of Q1 FY27 revenue** (historically 45–55%), but only about 30% of the current order book, because Indian customers are expanding faster; management expects exports to return to about half. Management's target mix is 80–85% machines, 10–12% spares and 5–6% new products. FY26 revenue rose 25% to ₹1,717cr and Q1 FY27 rose 60% to ₹503cr. The order book was ₹1,778cr at June 2026, up from ₹1,358cr in March and about ₹769cr in FY24.",
+        "mixes": [
+            {
+                "caption": "Revenue by market, Q1 FY27 (results call)",
+                "parts": [
+                    {
+                        "label": "India",
+                        "share": 59
+                    },
+                    {
+                        "label": "Exports",
+                        "share": 41
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by product, target mix (management, approximate)",
+                "parts": [
+                    {
+                        "label": "Woven-plastic machines",
+                        "share": 83
+                    },
+                    {
+                        "label": "Spare parts",
+                        "share": 11
+                    },
+                    {
+                        "label": "Recycling and new lines",
+                        "share": 6
+                    }
+                ],
+                "note": "Midpoints of the ranges given on the Q1 FY27 call."
+            }
+        ],
+        "customers": [
+            "**Woven sack and fabric makers** in India and about 100 developing countries (Asia, Africa, Latin America), who make bags for cement, fertiliser, chemicals and food grain, bulk bags, tarpaulins, ground cover and geotextiles; about 2,000 customers worldwide.",
+            "Mostly existing customers adding capacity; replacement of old machines is 3–5% of the order book but expected to grow, since Lohia has sold in India for about 40 years and abroad since about 2002."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "Precision textile machinery needs decades of design know-how, in-house machining and electronics, and a global service network; the CMD says there are only two or three known machine makers worldwide for about 2,000 bag producers. Making the bags, by contrast, is easy."
+        },
+        "moat": "Technology, a large installed base that keeps buying spares, and service: it says it charges 15–20% more than Chinese makers, whose weakness is after-sales service. Customs duty on imported Chinese and European machines also helps in India. But its customers' spending comes in cycles, and Chinese competition is a constant in Southeast Asia.",
+        "salesDrivers": [
+            "**Customers' capital spending**: after a post-COVID slump, orders have risen steeply since FY24; management says the peak is still ahead.",
+            "**New uses for woven plastic**: non-packaging uses (geotextiles, roofing underlay, tarpaulins) are growing, and woven sacks are not classed as single-use plastic.",
+            "**Capacity**: plants at Kanpur and Bengaluru plus the US and Italy run at about 70–75%, and can reach about ₹2,400–2,500cr of revenue; beyond that about ₹80–100cr of capex per ₹500cr of revenue, buildable in 5–6 months.",
+            "**Exports and the rupee**: export prices are 12–15% higher than in India, and a weaker rupee helps against Starlinger and Chinese rivals."
+        ],
+        "inputs": "**Steel, castings, electronic and bought-in parts**, partly made in-house and partly by a large vendor base; shares of cost are not disclosed in what I read. Research spending is about 3% of revenue.",
+        "costEffect": "**Partly protected, with a lag.** Order prices are fixed when booked but material purchases are not, so a cost spike between order and delivery (6–9 months) hits margins. The company re-prices new orders to current input costs, signs short- and medium-term supply deals and adjusts discounts. **What happened:** the margin was about 8.4% in FY24, 16% in FY25, 11% in Q1 FY26 and 20% in Q1 FY27 as volumes recovered.",
+        "competitors": [
+            {
+                "name": "Starlinger (Austria)",
+                "note": "The main rival in more developed markets; a premium European maker."
+            },
+            {
+                "name": "Chinese machinery makers",
+                "note": "The main rivals in Southeast Asia and elsewhere; Lohia says it charges 15–20% more and wins on service."
+            }
+        ],
+        "position": "**Calls itself a leading global maker of woven-plastic machinery and has a large share of the Indian market**, where it has sold for about 40 years; capacity use is about 70–75%.",
+        "money": "Screener shows **₹175cr of borrowings against ₹157cr of investments at March 2026**, plus cash it does not split out; the company says it is net cash. Operating cash was ₹325cr in FY26 against ₹321cr of operating profit, and ₹141cr in FY25 against ₹221cr (86% over the two years filed). About 20% customer advances fund the order book, but stock is held about 150 days and the cash cycle is about 126 days. Little capex is needed until revenue nears ₹2,500cr. No dividend yet. Promoters hold **68.66%**.",
+        "watch": [
+            "Q2 FY27 results (board meets 4 November): a margin of 20% or more and an order book still above ₹1,778cr.",
+            "Exports recovering toward half of sales, which carry higher prices.",
+            "Signs that customers' capex is peaking, such as falling orders or bigger discounts."
+        ],
+        charts: industrialMachineryCharts["Lohia Corp"],
+    },
+    {
+        "company": "Bonfiglioli Transmissions",
+        "inShort": [
+            "**The Indian arm of Italy's Bonfiglioli**: makes gear motors and gearboxes for factories, travel and swing drives for excavators and construction machines, and yaw and pitch drives for wind turbines, from plants in Chennai and Pune; lists on 23 October 2026.",
+            "**Good:** leading shares in India (about 68% of wind-turbine drives, 24% of off-highway drives, 25% of small gear motors, per its industry report), no debt and ₹163cr of cash, an 18% margin. **Watch:** it pays the parent a 4.4% royalty, about 15% of sales go to group companies, one customer is 11% of revenue, and only 57% of operating profit turned into cash over five years.",
+            "**Verdict: wait.** A good franchise, but the IPO is entirely the parent selling, the price is not in what I read, and I want to see its first listed results and how group dealings are handled."
+        ],
+        "tagline": "A Chennai-based maker of industrial gear motors, construction-equipment drives and wind-turbine drives, owned by Italy's Bonfiglioli group.",
+        "revenue": "₹2,014cr (CY2025, standalone; year ends December)",
+        "products": [
+            {
+                "name": "Industrial and automation drives",
+                "text": "Gear motors, helical, worm and planetary gearboxes and drive electronics for material handling, packaging, logistics, cement, steel, food and general machinery; assembled at Sriperumbudur and Pune."
+            },
+            {
+                "name": "Mobility (off-highway) drives",
+                "text": "Travel/track, swing, wheel and slew drives for excavators, concrete mixers, mining, road and farm machinery, from 1,000 Nm to 3,000 kNm."
+            },
+            {
+                "name": "Wind drives",
+                "text": "Yaw and pitch drives for turbines from 225 kW to 5 MW, made at Thirumudivakkam, Chennai, with India's only yaw and pitch drive test lab (per its industry report); sold to turbine makers; its industry report cites Suzlon as an OEM that relies on such suppliers."
+            }
+        ],
+        "revenueText": "CY2025 revenue was ₹2,014cr, up 9%, almost all from selling goods (₹1,975cr), plus ₹12.8cr of government grants and ₹8cr of transfer-pricing adjustment from the parent. **About ₹305cr (15%) was sold to other Bonfiglioli companies**, the largest buyers being Bonfiglioli USA (₹79cr), Riduttori (₹47cr) and Germany (₹44cr). **One customer took ₹227cr (11%)**. The split between industrial, mobility and wind and between India and exports is in the RHP, which I could not read.",
+        "shares": [
+            {
+                "title": "Market share in India by value, FY2025 (industry report by Frost & Sullivan for the IPO)",
+                "source": "Industry Report, 2026",
+                "groups": [
+                    {
+                        "rows": [
+                            {
+                                "name": "Wind-turbine yaw and pitch drives",
+                                "share": 68
+                            },
+                            {
+                                "name": "Off-highway equipment drives",
+                                "share": 24
+                            },
+                            {
+                                "name": "Gear motors below 15 kNm",
+                                "share": 25
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Construction and mining equipment makers** (excavators, concrete mixers, loaders) in India.",
+            "**Wind-turbine makers** (the industry report points to Suzlon); one customer was 11% of CY2025 revenue (not named in the accounts).",
+            "**Industrial machine builders and dealers** across material handling, packaging, cement, steel and food.",
+            "**Bonfiglioli group companies** worldwide, which bought about 15% of its output in CY2025."
+        ],
+        "difficulty": {
+            "level": "High",
+            "text": "Precision gearing for wind turbines and heavy machines needs long OEM qualification, field reliability and testing; the group's global designs and India's local machining give it a head start that new entrants would find hard to match."
+        },
+        "moat": "Group technology and brand, local manufacturing and a service network, and long OEM approvals give it leading shares in wind drives and construction drives. The limit is that the moat partly belongs to the parent, which charges a royalty and decides which markets India serves.",
+        "salesDrivers": [
+            "**Wind installations in India** and repowering, where it has about two-thirds of drive supply.",
+            "**Construction and mining equipment demand**, tied to infrastructure spending.",
+            "**Factory automation and capex** in cement, steel, logistics and food.",
+            "**Group export orders**, which depend on the parent's sourcing decisions."
+        ],
+        "inputs": "**Bought-in castings, forgings, gears, bearings and motors, plus parts from the group**: materials were about 62% of CY2025 revenue, and about ₹188cr of purchases came from Bonfiglioli companies, mainly Bonfiglioli Riduttori.",
+        "costEffect": "**Not disclosed how quickly steel and part costs are passed on.** Materials took about 62% of revenue in CY2025. **What happened:** the operating margin fell from 20% in 2020 to 14% in 2023 and recovered to 16% in 2024 and 18% in 2025.",
+        "competitors": [
+            {
+                "name": "SEW-Eurodrive, Nord, Power Build",
+                "note": "Main rivals in gear motors; with Bonfiglioli about 73% of the Indian market."
+            },
+            {
+                "name": "Tata Hitachi and L&T (captive), SUNGBO, Nabtesco, Doosan",
+                "note": "Off-highway drive rivals; captive OEM units limit its reach."
+            },
+            {
+                "name": "Liebherr, DHHI and Chinese makers",
+                "note": "Smaller rivals in wind drives in India."
+            },
+            {
+                "name": "Elecon, Shanthi Gears, Flender",
+                "note": "Lead the large-gearbox market, where Bonfiglioli is small."
+            }
+        ],
+        "position": "**India's leading wind-turbine drive maker (about 68% share) and largest non-captive off-highway drive supplier (about 24% of all, 30% of non-captive)**, and roughly a quarter of small gear motors, per the IPO industry report.",
+        "money": "**Debt-free with about ₹163cr of cash and bank deposits at December 2025** (Screener's ₹3cr of borrowings are leases). Over CY2021–CY2025 it turned ₹1,408cr of operating profit into ₹809cr of operating cash (57%) and ₹509cr of free cash, most of it paid to the parent through dividends (106% and 96% of profit in 2021–22) and a 2024 buyback. Receivables were ₹518cr at December 2025, ₹127cr of it owed by group companies. It also lends to a fellow subsidiary. The IPO is entirely a sale by Bonfiglioli S.p.A., so no money comes to the company.",
+        "watch": [
+            "The listing price and valuation on 23 October, and the parent's remaining stake.",
+            "Royalty, group sales and group loans in the first listed results.",
+            "Wind and construction-equipment demand in India."
+        ],
+        charts: industrialMachineryCharts["Bonfiglioli Transmissions"],
+    },
 ];
 
 export const industrialMachineryBusinesses = { intro, profiles };

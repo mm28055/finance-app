@@ -1230,6 +1230,85 @@ export const industrialsProductsCharts: Record<string, ProfileCharts> = {
             "inventory5y": -306,
             "payables5y": 346
         }
+    },
+    "Kusumgar": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "44.7x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "26.2x",
+                "note": "Market value plus borrowings minus investments, ÷ operating profit over the last year (₹240cr); cash not deducted."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹275cr",
+                "note": "Borrowings minus investments, March 2026, before cash, which the saved page does not split out."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "27%"
+            },
+            {
+                "label": "Cash conversion, 4 yrs",
+                "value": "16%",
+                "note": "Operating cash ÷ operating profit over FY23–FY26; 70–80% is healthy."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY23",
+            "toYear": "FY26",
+            "debtorDays": [
+                67,
+                123
+            ],
+            "inventoryDays": [
+                178,
+                278
+            ],
+            "payableDays": [
+                50,
+                95
+            ],
+            "cycleDays": [
+                195,
+                305
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                68,
+                132,
+                189,
+                188
+            ],
+            "ocf": [
+                18,
+                201,
+                -155,
+                28
+            ],
+            "fcf": [
+                0,
+                123,
+                -261,
+                -42
+            ],
+            "note": "Four years filed."
+        }
     }
 };
 
@@ -1277,5 +1356,12 @@ export const industrialsProductsValuationInputs: Record<string, ValuationInput> 
         "ttmEbitda": 287.0,
         "mcapAtWriting": 1815.0,
         "peAtWriting": 19.1
+    },
+    "Kusumgar": {
+        "netDebt": 275,
+        "ttmEbitda": 240,
+        "mcapAtWriting": 6003,
+        "peAtWriting": 44.7,
+        "lossMaking": false
     }
 };

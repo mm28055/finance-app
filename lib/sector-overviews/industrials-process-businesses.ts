@@ -252,6 +252,137 @@ const profiles: BusinessProfile[] = [
         watch: ["Firm, named data-centre orders for GScale.", "Working capital below 200 days by September 2026, as promised; the Q2 results will show.", "Purchases from promoter-family firms, which rose sharply in FY26."],
         charts: industrialsProcessCharts['Standard Glass'],
     },
+    {
+        "company": "Fabtech Technologies",
+        "inShort": [
+            "**Designs and builds whole medicine factories** (cleanrooms, air handling, purified water and process equipment) for drug and vaccine makers and governments, almost entirely abroad: the Gulf, Saudi Arabia and Africa.",
+            "**Good:** a ₹900cr+ order book (over 2x FY26 revenue), about ₹149cr of net cash after its October 2025 IPO, and a P/E near 12. **Bad:** it has turned almost none of its profit into cash (₹7cr of operating cash on ₹168cr of operating profit over FY22–FY26), customers take about 215 days to pay, the operating margin fell from 15% to 9% in two years, about 40% of pre-tax profit is other income, it buys heavily from promoter-group firms, and its biggest market is in a war zone.",
+            "**Verdict: wait.** Cheap on paper, but the profit has not been turning into cash and the related-party web is large; it moves up only if FY27 delivers the guided growth and margin with positive operating cash."
+        ],
+        "tagline": "A Mumbai-based turnkey builder of pharma, vaccine and biotech plants for emerging markets, listed in October 2025, that owns stakes in group firms making cleanroom, air and water systems.",
+        "revenue": "₹411cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Turnkey plants",
+                "text": "Designs, engineers, supplies, installs and validates complete medicine factories, from tablets to IV solutions, injectables, oncology drugs and vaccines, as a single point of responsibility. **76% of FY25 revenue** (92% in FY23); projects run 12–36 months once the client's civil work is ready."
+            },
+            {
+                "name": "Standalone supply and installation",
+                "text": "Equipment supply and installation for clients who have their own designs: **24% of FY25 revenue**, up from 8% in FY23."
+            },
+            {
+                "name": "New lines",
+                "text": "Animal-health vaccine plants (a ₹31cr Botswana order in Q1 FY27 and a ~$7m Saudi plant), pre-engineered buildings (about ₹400cr bid), and civil and building-services work in Saudi Arabia through a 51%-owned local contractor; it has won its first civil order there."
+            }
+        ],
+        "revenueText": "Revenue is booked on shipment and milestones, so it is **heavily weighted to the second half** (Q4 FY26 was ₹159cr, Q3 ₹63cr with a loss). By country, **the UAE (₹127cr, 31%) and Saudi Arabia (₹83cr, 20%) led FY26**, with Kenya at ₹43cr; in Q1 FY27 Saudi grew 130% while the UAE fell on the war. The company says about 78% of revenue comes from the Middle East, Gulf and nearby regions. Customers change every year: **the top five were 56% of FY25 revenue** and repeat customers only about 10% in Q1 FY27.",
+        "mixes": [
+            {
+                "caption": "Revenue by country, FY25 (prospectus)",
+                "parts": [
+                    {
+                        "label": "Saudi Arabia",
+                        "share": 29
+                    },
+                    {
+                        "label": "UAE",
+                        "share": 19
+                    },
+                    {
+                        "label": "India",
+                        "share": 14
+                    },
+                    {
+                        "label": "Kenya",
+                        "share": 4
+                    },
+                    {
+                        "label": "Iraq",
+                        "share": 4
+                    },
+                    {
+                        "label": "Algeria",
+                        "share": 3
+                    },
+                    {
+                        "label": "Rest of world",
+                        "share": 27
+                    }
+                ]
+            },
+            {
+                "caption": "Revenue by country, Q1 FY27 (company presentation)",
+                "parts": [
+                    {
+                        "label": "Rest of world",
+                        "share": 29
+                    },
+                    {
+                        "label": "UAE",
+                        "share": 28
+                    },
+                    {
+                        "label": "Saudi Arabia",
+                        "share": 18
+                    },
+                    {
+                        "label": "India",
+                        "share": 10
+                    },
+                    {
+                        "label": "Kenya",
+                        "share": 10
+                    },
+                    {
+                        "label": "Morocco",
+                        "share": 5
+                    }
+                ],
+                "note": "Approximate, from the company's slide. The call said Morocco and Kenya made ₹27.9cr together, more than the 14% this slide shows; the figures do not reconcile."
+            }
+        ],
+        "customers": [
+            "**Drug and vaccine makers in the Gulf, Saudi Arabia, Africa and Asia**: in FY25 Himalaya (14% of revenue), Qomel Company Arabia (14%) and Massoun Darou (11%) each passed 10%; in FY24 Boston Oncology Arabia (17%) and Premier Food Industries (16%) did.",
+            "**Governments and national vaccine institutes**, often funded by development banks, such as the Botswana Vaccine Institute and an IV-solution plant for the Government of Djibouti.",
+            "**The promoters' older firm**, Fabtech Technologies International, bought 12% of FY24 revenue; none in FY25."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Building a plant that passes US FDA or EU inspection needs design skill and a track record of approved plants, which it has in the Gulf. But much of the hardware is bought in, partly from promoter-group firms, and there are many cleanroom and HVAC contractors in India and Europe."
+        },
+        "moat": "Its reference plants (it claims the first or largest of several plant types in Saudi Arabia, the UAE, Algeria and Egypt) and local companies in the UAE and Saudi Arabia help it win where local presence is now a tender condition. The weakness: every job is a one-off project, repeat business is small, and clients can delay orders whenever money or politics shift.",
+        "salesDrivers": [
+            "**Order conversion**: ₹900cr+ of orders, ₹9,300cr of enquiries and ₹3,800cr of 'hot leads' (July 2026); Q1 FY27 intake was only ₹96.5cr as large orders slipped on the war, though management says none was cancelled.",
+            "**Medicine self-reliance in emerging markets**: post-COVID plant building in Saudi Arabia (Vision 2030 local-content rules), Africa (often donor-funded) and South-East Asia.",
+            "**Guidance**: FY27 revenue up 20–25% organically (trimmed from ~25% in April) with a 9–11% net margin, and ₹1,000cr+ of revenue by 2030; Q2 'steady', the second half stronger.",
+            "**Acquisitions**: a 51% Saudi contractor done; an Italian and a second Saudi acquisition targeted before March 2027.",
+            "**Geopolitics**: the UAE business is hit by the Middle East war; about ₹20–22cr of goods were stuck at port at June."
+        ],
+        "inputs": "**Bought-in cleanroom panels, air-handling units, process and water equipment, steel and installation labour**, partly from promoter-group makers. Materials (purchases and stock change) were 59% of sales in FY26 and other expenses, mostly site execution and freight, 22%.",
+        "costEffect": "**Partly protected.** Contracts carry a clause to pass on raw-material rises above 5%, and quotes are valid only two to three weeks, but management admits it does not always pass costs on. **Rule of thumb:** a 10% rise in material costs not passed on would wipe out most of the margin (about 6 points off FY26's 9%). **What happened:** in FY26 material costs rose about 33% and execution costs about 43% (war-time remobilisation and freight, per management), and the operating margin fell from 12% to 9%; Q1 FY27 recovered to a 46.7% contribution margin on a better country mix.",
+        "competitors": [
+            {
+                "name": "European turnkey pharma engineers",
+                "note": "Management says it competes with Europeans, not Asian firms, on large regulated plants abroad."
+            },
+            {
+                "name": "Nicomac Taikisha, Integrated Cleanroom Technologies, Hvaxs, Lotus Technicals",
+                "note": "Indian cleanroom and HVAC contractors named in the prospectus as peers; none is a close listed match."
+            },
+            {
+                "name": "Fabtech Technologies Cleanrooms",
+                "note": "A separately listed promoter-group company that sells cleanrooms in India and supplies Fabtech's panels."
+            }
+        ],
+        "position": "**A small specialist** (₹411cr revenue) that says it has delivered 500+ projects in 62+ countries; no market share is disclosed.",
+        "money": "**About ₹149cr of net cash** at March 2026 (cash, bank deposits and liquid investments of ₹218cr against ₹70cr of borrowings and leases), after a ₹230cr IPO at ₹191 in October 2025: ₹127cr was for working capital, ₹30cr for acquisitions and the rest general purposes. **Operating cash was ₹0.5cr in FY26 and −₹36cr in FY25**; customers owed ₹204cr at March (about 215 debtor days on Screener), against about ₹110cr of customer advances. About ₹21cr of FY26's ₹48cr pre-tax profit was other income, and FY25 profit included an ₹18cr gain from selling part of TSA Process Equipments to Thermax; the rest of that stake is being sold for ₹14cr at a revised price (September 2026). A ₹24cr injection into the UAE subsidiary and an Egypt subsidiary are approved. CRISIL rates it BBB+/Stable (October 2025). At a market value of about {mcap:Fabtech Technologies|₹561cr} and a P/E of about {pe:Fabtech Technologies|11.6}, the shares are about a third below the IPO price. Promoters hold **69.03%** (September 2026); institutions hold under 3%.",
+        "watch": [
+            "Q2 FY27 results: 'steady' revenue near ₹121cr with a profit, and new orders after the war delays.",
+            "Operating cash turning clearly positive and debtor days falling from about 215.",
+            "The Italy and Saudi acquisitions closing by March 2027, and related-party purchases as a share of costs."
+        ],
+        charts: industrialsProcessCharts["Fabtech Technologies"],
+    },
 ];
 
 export const industrialsProcessBusinesses = { intro, profiles };

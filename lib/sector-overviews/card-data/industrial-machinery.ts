@@ -602,6 +602,187 @@ export const industrialMachineryCharts: Record<string, ProfileCharts> = {
             }
         ],
         "statsAsOf": "23 Sep 2026"
+    },
+    "Lohia Corp": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "24.2x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "15.7x",
+                "note": "Market value plus borrowings minus investments, ÷ operating profit over the last year (₹385cr); cash not deducted."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹18cr",
+                "note": "Borrowings minus investments, March 2026, before cash; the company says it is net cash."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "19%"
+            },
+            {
+                "label": "Order book",
+                "value": "₹1,778cr",
+                "note": "June 2026, about 1.0x FY26 revenue, with about 20% advances."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY25",
+            "toYear": "FY26",
+            "debtorDays": [
+                32,
+                29
+            ],
+            "inventoryDays": [
+                141,
+                150
+            ],
+            "payableDays": [
+                50,
+                53
+            ],
+            "cycleDays": [
+                123,
+                126
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                221,
+                321
+            ],
+            "ocf": [
+                141,
+                325
+            ],
+            "fcf": [
+                108,
+                294
+            ],
+            "note": "Only two years filed."
+        }
+    },
+    "Bonfiglioli Transmissions": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "Not listed yet",
+                "note": "Lists 23 Oct 2026; IPO price not in the documents read."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹160cr",
+                "note": "Cash and bank deposits (₹163cr) minus ₹3cr of leases, December 2025."
+            },
+            {
+                "label": "Operating margin CY2025",
+                "value": "18%"
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "57%",
+                "note": "Operating cash ÷ operating profit over CY2021–CY2025; 70–80% is healthy."
+            },
+            {
+                "label": "Royalty to parent",
+                "value": "4.4%",
+                "note": "₹89.6cr of CY2025 revenue."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "costSplit": {
+            "year": "CY2025",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 62
+                },
+                {
+                    "label": "Staff",
+                    "share": 5
+                },
+                {
+                    "label": "Royalty to parent",
+                    "share": 4
+                },
+                {
+                    "label": "Other costs",
+                    "share": 10
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 19
+                }
+            ],
+            "note": "From the audited CY2025 accounts (materials include stock changes). Operating profit is 18.4% before rounding."
+        },
+        "workingCapital": {
+            "fromYear": "CY2021",
+            "toYear": "CY2025",
+            "debtorDays": [
+                82,
+                94
+            ],
+            "inventoryDays": [
+                108,
+                93
+            ],
+            "payableDays": [
+                120,
+                96
+            ],
+            "cycleDays": [
+                69,
+                91
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "CY2021",
+                "CY2022",
+                "CY2023",
+                "CY2024",
+                "CY2025"
+            ],
+            "ebitda": [
+                243,
+                254,
+                245,
+                295,
+                371
+            ],
+            "ocf": [
+                100,
+                156,
+                177,
+                188,
+                188
+            ],
+            "fcf": [
+                62,
+                90,
+                75,
+                146,
+                136
+            ],
+            "note": "Calendar years; the company's year ends in December."
+        }
     }
 };
 
@@ -630,5 +811,19 @@ export const industrialMachineryValuationInputs: Record<string, ValuationInput> 
         "ttmEbitda": 14.0,
         "mcapAtWriting": 1009.0,
         "peAtWriting": 92.0
+    },
+    "Lohia Corp": {
+        "netDebt": 18,
+        "ttmEbitda": 385,
+        "mcapAtWriting": 6022,
+        "peAtWriting": 24.2,
+        "lossMaking": false
+    },
+    "Bonfiglioli Transmissions": {
+        "netDebt": -160,
+        "ttmEbitda": 371,
+        "mcapAtWriting": null,
+        "peAtWriting": null,
+        "lossMaking": false
     }
 };

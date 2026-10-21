@@ -410,6 +410,98 @@ const profiles: BusinessProfile[] = [
         watch: ["First-half revenue of at least ₹200cr.", "Old receivables collected or provided for.", "A clean first annual report as a listed company."],
         charts: softwareCharts['Xtranet Technologies'],
     },
+    {
+        "company": "iValue Infosolutions",
+        "inShort": [
+            "**A Bengaluru 'value-added distributor' of enterprise technology**: it designs and sells cybersecurity, data-centre, storage and cloud products from over 100 makers (OEMs) through about 800 system integrators to about 2,900 Indian and Asian companies, banks and government bodies.",
+            "**Good:** profit grew from ₹34cr in FY21 to ₹98cr in FY26, about 46% of sales are repeat renewals, and the shares trade at about **11 times earnings**. **Bad:** gross sales grew only 3–12% in the last three quarters, the professional CEO has left, customers take about **336 days of filed revenue to pay** (matched by supplier credit), and only 46% of five years' operating profit turned into cash.",
+            "**Verdict: follow.** The price asks for little growth, but I want H2 FY27 to show the promised 20% and cash to follow profit before buying."
+        ],
+        "tagline": "A Bengaluru IT distributor and solutions designer, founded in 2008 by Sunil Kumar Pillai and Krishna Raj Sharma, that sells security, data-centre and cloud technology through system integrators, listed in September 2025.",
+        "revenue": "₹1,056cr (FY26, consolidated, filed revenue; gross sales are higher)",
+        "products": [
+            {
+                "name": "Cybersecurity",
+                "text": "Firewalls, identity, data security and compliance tools from many vendors, often combined into one solution. **About 44% of Q1 FY27 gross sales**, growing 8%."
+            },
+            {
+                "name": "Data-centre infrastructure",
+                "text": "Servers, networking (Arista is a key vendor) and storage for private AI and GPU data centres; **about 22% of Q1 gross sales**, up about 180%, expected at 18–20% for the year."
+            },
+            {
+                "name": "Information lifecycle, application lifecycle and cloud",
+                "text": "Storage and data management (including Hitachi), developer and cloud tools; information-lifecycle sales fell sharply in Q1 as budgets went to GPUs, while cloud and application tools grew about 47%."
+            }
+        ],
+        "revenueText": "**Q1 FY27 gross sales were ₹641cr**, filed revenue ₹180cr: some software resale is booked net, so filed revenue understates throughput. **About 46% of gross sales is annuity**, renewals in years two to five of multi-year deals. **India gave about 87%** and overseas 13%. In FY25 the top vendor was 16.7% of gross sales, the top five vendors 45.9% and the top 15 about 74% in Q1 FY27; the top five integrators were 25.0%. The open sales pipeline was ₹6,150cr, of which it usually wins 30–35% in a year. Business is heavily skewed to the second half.",
+        "mixes": [
+            {
+                "caption": "Gross sales by line, Q1 FY27 (approximate, company)",
+                "parts": [
+                    {
+                        "label": "Cybersecurity",
+                        "share": 44
+                    },
+                    {
+                        "label": "Data-centre infrastructure",
+                        "share": 22
+                    },
+                    {
+                        "label": "Storage, applications and cloud",
+                        "share": 34
+                    }
+                ]
+            },
+            {
+                "caption": "Gross sales by region, Q1 FY27 (company)",
+                "parts": [
+                    {
+                        "label": "India",
+                        "share": 87
+                    },
+                    {
+                        "label": "Overseas",
+                        "share": 13
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Large Indian enterprises, banks, government, telecom and health groups**, reached through about 800 system integrators who place the orders.",
+            "**Technology makers (OEMs)**: over 100 partners; the top 15 give about three-quarters of sales, so losing one large vendor would hurt."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "Shipping boxes is easy; designing and supporting multi-vendor security and data-centre solutions, with demo labs and pre-sales engineers, takes skill and vendor trust built over years. But vendors can and do change distributors, and larger rivals have more capital."
+        },
+        "moat": "Technical know-how, a centre of excellence that shows customers combined solutions, and renewals that tend to come back through it give a modest edge over plain distributors. It does not own the products, and vendor consolidation (Palo Alto, Cisco, IBM buying smaller makers) can move business away.",
+        "salesDrivers": [
+            "**Enterprise IT budgets**, especially security spending and private data centres for AI.",
+            "**Large one-off deals**: a single ₹150cr government (GSTN) deal lifted Q2 FY26, a tough base for Q2 FY27.",
+            "**Hardware prices and the rupee**: a weaker rupee hurt Q1 FY26 margins; hardware price rises squeeze fixed customer budgets.",
+            "**Overseas expansion** into South-East Asia and the Middle East, still small."
+        ],
+        "inputs": "**Products bought from technology makers**, about two-thirds of them through overseas vendors (FY25), plus pre-sales and support engineers. Its gross margin is only about 8–10% of gross sales.",
+        "costEffect": "**A distributor's spread: the margin depends on the value it adds and on the rupee, not on raw materials.** Gross margin was 8.1% of gross sales in Q1 FY27 against 6.8% a year earlier, when the rupee fell before quotes were hedged and some low-margin deals were taken. **Rule of thumb:** gross profit was ₹266cr in FY26 at roughly 9–10% of gross sales, so each point of gross margin is worth roughly ₹25–30cr of operating profit, about a fifth of the total.",
+        "competitors": [
+            {
+                "name": "Redington, Ingram Micro, Rashi Peripherals",
+                "note": "Much larger broad-line distributors; compete on scale and credit rather than solution design."
+            },
+            {
+                "name": "Inflow Technologies, Savex, Arrow",
+                "note": "Specialist value-added distributors in security and data-centre products."
+            }
+        ],
+        "position": "**A mid-sized specialist IT distributor in India**, with about 2,900 end customers, 800 integrators and 109 vendors in FY25; much smaller than the broad-line distributors.",
+        "money": "Screener shows **₹69cr of borrowings and ₹153cr of investments** at March 2026, so it is roughly net cash before counting bank balances (not separately available). **Receivables were ₹846cr at March 2025**, balanced by similar supplier credit; **over FY22–FY26 operating cash was ₹230cr against ₹500cr of operating profit (46%)**. Capex is minimal. ICRA rates it A (Stable). The September 2025 IPO was ₹560cr at ₹299 a share; Creador sold its remaining stake in 2026. Promoters hold **32.09%**, with no pledge shown.",
+        "watch": [
+            "H2 FY27 gross sales and PAT growth of 20% or more.",
+            "Stability of the senior team after the CEO and other exits.",
+            "Operating cash covering at least two-thirds of profit."
+        ],
+        charts: softwareCharts["iValue Infosolutions"],
+    },
 ];
 
 export const softwareServicesBusinesses = { intro, profiles };

@@ -331,6 +331,100 @@ const profiles: BusinessProfile[] = [
         watch: ["Collection of the ₹214cr of receivables and positive operating cash flow.", "How much research spending goes onto the balance sheet.", "New orders against the ₹500cr revenue guidance."],
         charts: industrialsComponentsCharts['Airfloa Rail Techno.'],
     },
+    {
+        "company": "Hy-Tech Engineers",
+        "inShort": [
+            "**Makes hydraulic fittings**, the small high-pressure steel connectors used in excavators, loaders, tractors and plastic-moulding machines, for about 170 OEMs in India and exports to the US and Europe.",
+            "**Good:** a leader in India with a rival less than half its size, no customer above 15%, and a steady 22% operating margin. **Watch:** growth was only 13% in Q1 against a 20% guide, money is tied up for about 171 days in stock and receivables, only about 55% of operating profit turned into cash over the four years filed, and a quarter of sales go to the US.",
+            "**Verdict: wait.** A well-run niche supplier, but at about 33 times earnings the price assumes the guided 20% growth and 24–25% margin; I want to see Q2 deliver the margin rebound first."
+        ],
+        "tagline": "A Maharashtra-based maker of hydraulic hose fittings and adaptors for construction, farm and industrial machinery makers, founded in 1978 and listed in September 2026.",
+        "revenue": "₹189cr (FY26, consolidated)",
+        "products": [
+            {
+                "name": "Standard hydraulic fittings",
+                "text": "About 80% of sales: fittings to German (DIN), American (SAE, JIC) and O-ring face-seal standards, from about 11,000 types, made from forging to plating in-house; about 35 lakh pieces a month."
+            },
+            {
+                "name": "OEM-specific fittings",
+                "text": "About 20% of sales: fittings designed for a particular machine maker, developed in about two weeks."
+            },
+            {
+                "name": "New lines",
+                "text": "Stainless steel fittings for data-centre cooling and oil and gas (sales expected around FY28–FY29), and approvals for railways (IRIS certification), defence (DRDO) and shipyards (Cochin Shipyard, Mazagon Dock)."
+            }
+        ],
+        "revenueText": "**About 70–80% of revenue goes directly to equipment makers** and about 10% through four Indian distributors. **Exports are about 30%: roughly 25% to the US and 7–8% to Europe**; the CMD plans to reach 50% exports in five years but keep the US at about 25%. No customer is more than 15% of sales. Revenue grew from ₹133cr in FY22 to ₹189cr in FY26 and was ₹43cr in Q1 FY27, up 13%.",
+        "mixes": [
+            {
+                "caption": "Revenue by market, FY27 (management, approximate)",
+                "parts": [
+                    {
+                        "label": "India",
+                        "share": 70
+                    },
+                    {
+                        "label": "US",
+                        "share": 25
+                    },
+                    {
+                        "label": "Europe and others",
+                        "share": 5
+                    }
+                ],
+                "note": "Management gave India about 70%, US about 25% and Europe 7–8%; shares rounded to add up."
+            },
+            {
+                "caption": "Revenue by product, approximate (management)",
+                "parts": [
+                    {
+                        "label": "Standard fittings",
+                        "share": 80
+                    },
+                    {
+                        "label": "OEM-specific fittings",
+                        "share": 20
+                    }
+                ]
+            }
+        ],
+        "customers": [
+            "**Indian makers of excavators, loaders, backhoes, tractors and injection-moulding machines**, about 170 direct customers; new in 2026: Tata Hitachi and Sany (replacing Chinese imports).",
+            "**Overseas plants of global OEMs**: approved at all 47 US plants of John Deere, with 6–7 already buying; it is setting up a US subsidiary and warehouse because the customer wants local supply.",
+            "Relationships with some customers go back up to 48 years; the CMD declines to name most customers."
+        ],
+        "difficulty": {
+            "level": "Medium",
+            "text": "A fitting is only 1–2% of a machine's cost but must hold very high pressure without leaking, so OEMs qualify suppliers carefully; Hy-Tech forges in-house because bought forgings are not good enough. The products are mostly to public standards, though, so a capable rival can copy them."
+        },
+        "moat": "Approvals with almost every Indian OEM, a wide range, in-house forging and quick development; global leader Parker charges about twice its price, and its nearest Indian rival is less than half its size. The weak point is that standard parts invite price pressure, and OEMs expect about 1% price cuts a year.",
+        "salesDrivers": [
+            "**Construction and farm machinery output** in India, which management says grows about 7–8% a year; it aims for 20% by winning more share and new OEMs.",
+            "**Exports**: US plants of existing customers and Europe, where it says it is about 25% cheaper delivered than local makers; US tariffs are a risk.",
+            "**Capacity**: ₹30cr of IPO money takes output from 35 lakh to 50 lakh pieces a month (about ₹100cr more revenue); a 6.5-acre automated plant is planned within two years. Plants run at 60–70%.",
+            "**New sectors**: railways, defence, shipyards and data centres, which management says are on top of the 20% and will take time."
+        ],
+        "inputs": "**Steel**, bought directly from Indian mills (no imports), is the only material it buys; forging, machining and plating are all done in-house. Its share of cost is not disclosed in what I read.",
+        "costEffect": "**Passed through to OEMs with a lag of about a quarter.** When steel and other costs jumped in February–April 2026 it asked OEMs for price rises, granted from 1 April but billed from Q2. **What happened:** the margin dipped to 19.6% in Q1 FY27 from 21.5% a year earlier; management expects 24–25% from Q2. Over FY22–FY26 the margin ranged from 17% (FY24) to 25% (FY22).",
+        "competitors": [
+            {
+                "name": "Parker Hannifin",
+                "note": "Global leader; its fittings cost about twice as much and mostly enter India with foreign-run projects."
+            },
+            {
+                "name": "Indian fitting makers",
+                "note": "The next-largest is less than half Hy-Tech's size, by the CMD's account; no Chinese fitting makers compete in India, he says."
+            }
+        ],
+        "position": "**India's largest hydraulic fittings maker by its own account**, with about 10% of a ₹2,000cr Indian market (the world market is about ₹40,000cr, half of it in the US).",
+        "money": "Screener shows **₹30cr of borrowings at March 2026** against ₹2cr of investments and some cash; the September 2026 IPO added ₹60cr of new money, part of it to repay debt. Over the four years filed (FY22, FY24–FY26) it turned ₹135cr of operating profit into **₹74cr of operating cash (55%)**, and free cash was only ₹11cr, because stock (157 days) and receivables (96 days) are high; the cash cycle widened from 153 to 171 days. The CMD says it has reinvested about half of profits in capex for 25 years. It paid out 15% of FY26 profit. Promoters hold **71.36%**.",
+        "watch": [
+            "Q2 FY27 results: margin back to 24–25% and growth near 20%.",
+            "The US subsidiary and John Deere ramp-up, with the US kept at about a quarter of sales.",
+            "Receivables and stock coming down so more profit turns into cash."
+        ],
+        charts: industrialsComponentsCharts["Hy-Tech Engineers"],
+    },
 ];
 
 export const industrialsComponentsBusinesses = { intro, profiles };

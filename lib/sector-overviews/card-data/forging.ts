@@ -1065,6 +1065,85 @@ export const forgingCharts: Record<string, ProfileCharts> = {
             "inventory5y": -5,
             "payables5y": 1
         }
+    },
+    "Behari Lal Engineering": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "27.6x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "19.7x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net cash",
+                "value": "₹41cr",
+                "note": "Cash ₹52cr less borrowings ₹11cr at 30 June 2026, before ₹93cr of IPO money."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "17%"
+            },
+            {
+                "label": "High-value products, Q1 FY27",
+                "value": "60%",
+                "note": "Rolls, castings and special alloy grades as a share of revenue."
+            }
+        ],
+        "statsAsOf": "21 Oct 2026",
+        "workingCapital": {
+            "fromYear": "FY23",
+            "toYear": "FY26",
+            "debtorDays": [
+                52,
+                66
+            ],
+            "inventoryDays": [
+                67,
+                136
+            ],
+            "payableDays": [
+                13,
+                26
+            ],
+            "cycleDays": [
+                106,
+                175
+            ],
+            "absorbed5y": null,
+            "receivables5y": null,
+            "inventory5y": null,
+            "payables5y": null
+        },
+        "profitVsCash": {
+            "years": [
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                45,
+                57,
+                73,
+                89
+            ],
+            "ocf": [
+                13,
+                37,
+                62,
+                28
+            ],
+            "fcf": [
+                -8,
+                22,
+                36,
+                1
+            ],
+            "note": "Screener, standalone (four years available)."
+        }
     }
 };
 
@@ -1111,5 +1190,11 @@ export const forgingValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 31.0,
         "mcapAtWriting": 859.0,
         "peAtWriting": 34.3
+    },
+    "Behari Lal Engineering": {
+        "netDebt": -41,
+        "ttmEbitda": 94,
+        "mcapAtWriting": 1894,
+        "peAtWriting": 27.6
     }
 };
