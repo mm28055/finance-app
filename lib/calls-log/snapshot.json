@@ -1,5 +1,5 @@
 {
- "date": "2026-10-21",
+ "date": "2026-10-22",
  "calls": {
   "Anthem Biosciences": {
    "call": "follow",
@@ -393,6 +393,14 @@
    "call": "pass",
    "sector": "Consumer Durables"
   },
+  "Euro Pratik Sales": {
+   "call": "wait",
+   "sector": "Consumer Durables"
+  },
+  "Varmora Granito": {
+   "call": "pass",
+   "sector": "Consumer Durables"
+  },
   "Mayur Uniquoters": {
    "call": "own",
    "sector": "Consumer Durables"
@@ -581,6 +589,14 @@
    "call": "avoid",
    "sector": "Chemicals"
   },
+  "Jyoti Resins": {
+   "call": "follow",
+   "sector": "Chemicals"
+  },
+  "Prasol Chemicals": {
+   "call": "follow",
+   "sector": "Chemicals"
+  },
   "Galaxy Surfactants": {
    "call": "follow",
    "sector": "Chemicals"
@@ -627,6 +643,14 @@
   },
   "Refex Industries": {
    "call": "avoid",
+   "sector": "Chemicals"
+  },
+  "Sacheerome": {
+   "call": "wait",
+   "sector": "Chemicals"
+  },
+  "Gem Aromatics": {
+   "call": "pass",
    "sector": "Chemicals"
   },
   "Zensar Technologies": {
@@ -679,6 +703,10 @@
   },
   "Xtranet Technologies": {
    "call": "pass",
+   "sector": "Software"
+  },
+  "iValue Infosolutions": {
+   "call": "follow",
    "sector": "Software"
   },
   "KPIT Technologies": {
@@ -777,6 +805,10 @@
    "call": "avoid",
    "sector": "Software"
   },
+  "Excelsoft Technologies": {
+   "call": "wait",
+   "sector": "Software"
+  },
   "Tanla Platforms": {
    "call": "follow",
    "sector": "Software"
@@ -803,6 +835,10 @@
   },
   "E2E Networks": {
    "call": "follow",
+   "sector": "Software"
+  },
+  "ESDS Software": {
+   "call": "pass",
    "sector": "Software"
   },
   "Engineers India": {
@@ -889,6 +925,14 @@
    "call": "pass",
    "sector": "Construction"
   },
+  "JSW Cement": {
+   "call": "wait",
+   "sector": "Construction"
+  },
+  "E to E Transportation": {
+   "call": "pass",
+   "sector": "Construction"
+  },
   "Ahluwalia Contr.": {
    "call": "follow",
    "sector": "Construction"
@@ -903,6 +947,10 @@
   },
   "PSP Projects": {
    "call": "pass",
+   "sector": "Construction"
+  },
+  "Glass Wall Systems": {
+   "call": "wait",
    "sector": "Construction"
   },
   "M & B Engineer.": {
@@ -931,6 +979,10 @@
   },
   "Solarworld Energy So": {
    "call": "pass",
+   "sector": "Construction"
+  },
+  "Pace Digitek": {
+   "call": "avoid",
    "sector": "Construction"
   },
   "Arvind SmartSpaces": {
@@ -1013,6 +1065,14 @@
    "call": "avoid",
    "sector": "Realty"
   },
+  "Horizon Industrial Parks": {
+   "call": "follow",
+   "sector": "Realty"
+  },
+  "Kalpataru": {
+   "call": "pass",
+   "sector": "Realty"
+  },
   "LT Foods": {
    "call": "own",
    "sector": "Food Products"
@@ -1083,6 +1143,22 @@
   },
   "Gopal Snacks": {
    "call": "pass",
+   "sector": "Food Products"
+  },
+  "Piccadily Agro": {
+   "call": "pass",
+   "sector": "Food Products"
+  },
+  "Regaal Resources": {
+   "call": "wait",
+   "sector": "Food Products"
+  },
+  "Milky Mist Dairy": {
+   "call": "pass",
+   "sector": "Food Products"
+  },
+  "Orkla India": {
+   "call": "follow",
    "sector": "Food Products"
   },
   "V2 Retail": {
@@ -1159,6 +1235,22 @@
   },
   "Sastasundar Ventures": {
    "call": "avoid",
+   "sector": "Retail"
+  },
+  "Patel Retail": {
+   "call": "wait",
+   "sector": "Retail"
+  },
+  "Purple Style Labs": {
+   "call": "avoid",
+   "sector": "Retail"
+  },
+  "Shankara Buildpro": {
+   "call": "follow",
+   "sector": "Retail"
+  },
+  "Safe Enterprises Retail Fixtures": {
+   "call": "wait",
    "sector": "Retail"
   },
   "Indegene": {
@@ -1265,6 +1357,18 @@
    "call": "wait",
    "sector": "Commercial Services"
   },
+  "Bluspring Enterprises": {
+   "call": "wait",
+   "sector": "Commercial Services"
+  },
+  "Seshaasai Technologies": {
+   "call": "follow",
+   "sector": "Commercial Services"
+  },
+  "Manipal Payment & Identity": {
+   "call": "follow",
+   "sector": "Commercial Services"
+  },
   "Sharda Cropchem": {
    "call": "own",
    "sector": "Agrochemical & Fertilizers"
@@ -1321,6 +1425,10 @@
    "call": "pass",
    "sector": "Agrochemical & Fertilizers"
   },
+  "GSP Crop Science": {
+   "call": "follow",
+   "sector": "Agrochemical & Fertilizers"
+  },
   "Lemon Tree Hotels": {
    "call": "own",
    "sector": "Hotels and Travels"
@@ -1365,6 +1473,14 @@
    "call": "wait",
    "sector": "Hotels and Travels"
   },
+  "Waterways Leisure Tourism": {
+   "call": "pass",
+   "sector": "Hotels and Travels"
+  },
+  "Travel Food Services": {
+   "call": "follow",
+   "sector": "Hotels and Travels"
+  },
   "Jeena Sikho Lifecare": {
    "call": "own",
    "sector": "Pharma Others"
@@ -1403,6 +1519,18 @@
   },
   "Sigachi Industries": {
    "call": "pass",
+   "sector": "Pharma Others"
+  },
+  "KRM Ayurveda": {
+   "call": "wait",
+   "sector": "Pharma Others"
+  },
+  "Amanta Healthcare": {
+   "call": "wait",
+   "sector": "Pharma Others"
+  },
+  "Influx Healthtech": {
+   "call": "wait",
    "sector": "Pharma Others"
   },
   "Clean Max Env. Energ": {
@@ -1447,6 +1575,10 @@
   },
   "Saatvik Green": {
    "call": "pass",
+   "sector": "Solar PV Cells EPC"
+  },
+  "Fujiyama Power Systems": {
+   "call": "wait",
    "sector": "Solar PV Cells EPC"
   },
   "Action Const.Eq.": {
@@ -1525,6 +1657,10 @@
    "call": "wait",
    "sector": "Oil"
   },
+  "Vedanta Oil & Gas": {
+   "call": "wait",
+   "sector": "Oil"
+  },
   "Yatharth Hospital": {
    "call": "follow",
    "sector": "Hospitals"
@@ -1569,6 +1705,14 @@
    "call": "pass",
    "sector": "Hospitals"
   },
+  "Gaudium IVF": {
+   "call": "avoid",
+   "sector": "Hospitals"
+  },
+  "Park Medi World": {
+   "call": "follow",
+   "sector": "Hospitals"
+  },
   "Gravita India": {
    "call": "own",
    "sector": "Mining & Metals Recycle"
@@ -1598,6 +1742,14 @@
    "sector": "Mining & Metals Recycle"
   },
   "CMR Green Tech": {
+   "call": "wait",
+   "sector": "Mining & Metals Recycle"
+  },
+  "Midwest": {
+   "call": "pass",
+   "sector": "Mining & Metals Recycle"
+  },
+  "Jain Resource Recycling": {
    "call": "wait",
    "sector": "Mining & Metals Recycle"
   },
@@ -1653,6 +1805,18 @@
    "call": "pass",
    "sector": "Platform Cos"
   },
+  "Physicswallah": {
+   "call": "wait",
+   "sector": "Platform Cos"
+  },
+  "Arisinfra Solutions": {
+   "call": "follow",
+   "sector": "Platform Cos"
+  },
+  "Rentomojo": {
+   "call": "wait",
+   "sector": "Platform Cos"
+  },
   "Steelcast": {
    "call": "own",
    "sector": "Forging"
@@ -1679,6 +1843,10 @@
   },
   "Synergy Green": {
    "call": "pass",
+   "sector": "Forging"
+  },
+  "Behari Lal Engineering": {
+   "call": "follow",
    "sector": "Forging"
   },
   "ICICI Bank": {
@@ -1785,6 +1953,14 @@
    "call": "follow",
    "sector": "Utilities"
   },
+  "Vedanta Power": {
+   "call": "avoid",
+   "sector": "Utilities"
+  },
+  "Juniper Green Energy": {
+   "call": "wait",
+   "sector": "Utilities"
+  },
   "Shyam Metalics": {
    "call": "follow",
    "sector": "Iron and Steel"
@@ -1853,6 +2029,14 @@
    "call": "avoid",
    "sector": "Iron and Steel"
   },
+  "Vedanta Iron & Steel": {
+   "call": "pass",
+   "sector": "Iron and Steel"
+  },
+  "Kirloskar Ferrous": {
+   "call": "follow",
+   "sector": "Iron and Steel"
+  },
   "Kalpataru Proj.": {
    "call": "follow",
    "sector": "Construction - Power"
@@ -1871,6 +2055,18 @@
   },
   "Skipper": {
    "call": "follow",
+   "sector": "Construction - Power"
+  },
+  "Karamtara Engineering": {
+   "call": "pass",
+   "sector": "Construction - Power"
+  },
+  "Om Power Transmission": {
+   "call": "pass",
+   "sector": "Construction - Power"
+  },
+  "Vikran Engineering": {
+   "call": "avoid",
    "sector": "Construction - Power"
   },
   "GNG Electronics": {
@@ -1918,6 +2114,26 @@
    "sector": "Logistics"
   },
   "TVS Supply Chain Sol": {
+   "call": "wait",
+   "sector": "Logistics"
+  },
+  "Allcargo Global": {
+   "call": "wait",
+   "sector": "Logistics"
+  },
+  "Glottis": {
+   "call": "pass",
+   "sector": "Logistics"
+  },
+  "Blue Water Logistics": {
+   "call": "pass",
+   "sector": "Logistics"
+  },
+  "Skyways Air Services": {
+   "call": "avoid",
+   "sector": "Logistics"
+  },
+  "Leap India": {
    "call": "wait",
    "sector": "Logistics"
   },
@@ -2041,6 +2257,10 @@
    "call": "avoid",
    "sector": "Pharma"
   },
+  "Kwality Pharmaceuticals": {
+   "call": "pass",
+   "sector": "Pharma"
+  },
   "Alivus Life Sciences": {
    "call": "own",
    "sector": "Pharma API"
@@ -2091,6 +2311,14 @@
   },
   "Solara Active Pharma": {
    "call": "wait",
+   "sector": "Pharma API"
+  },
+  "Symbiotec Pharmalab": {
+   "call": "wait",
+   "sector": "Pharma API"
+  },
+  "Anlon Healthcare": {
+   "call": "avoid",
    "sector": "Pharma API"
   },
   "Kirloskar Pneumatic": {
@@ -2229,6 +2457,10 @@
    "call": "avoid",
    "sector": "Cables"
   },
+  "Vidya Wires": {
+   "call": "pass",
+   "sector": "Cables"
+  },
   "Raymond": {
    "call": "follow",
    "sector": "Aerospace defence"
@@ -2301,6 +2533,10 @@
    "call": "pass",
    "sector": "Aerospace defence"
   },
+  "Apsis Aerocom": {
+   "call": "pass",
+   "sector": "Aerospace defence"
+  },
   "Inox India": {
    "call": "follow",
    "sector": "Industrials"
@@ -2327,6 +2563,10 @@
   },
   "Standard Glass": {
    "call": "avoid",
+   "sector": "Industrials"
+  },
+  "Fabtech Technologies": {
+   "call": "wait",
    "sector": "Industrials"
   },
   "Jash Engineering": {
@@ -2405,6 +2645,10 @@
    "call": "avoid",
    "sector": "Industrials"
   },
+  "Hy-Tech Engineers": {
+   "call": "wait",
+   "sector": "Industrials"
+  },
   "Ador Welding": {
    "call": "own",
    "sector": "Industrials"
@@ -2434,6 +2678,10 @@
    "sector": "Industrials"
   },
   "HPL Electric": {
+   "call": "pass",
+   "sector": "Industrials"
+  },
+  "Kusumgar": {
    "call": "pass",
    "sector": "Industrials"
   },
@@ -2485,6 +2733,14 @@
    "call": "follow",
    "sector": "Industrial Machinery"
   },
+  "Lohia Corp": {
+   "call": "follow",
+   "sector": "Industrial Machinery"
+  },
+  "Bonfiglioli Transmissions": {
+   "call": "wait",
+   "sector": "Industrial Machinery"
+  },
   "HEG": {
    "call": "wait",
    "sector": "Elect and Refrac"
@@ -2494,6 +2750,10 @@
    "sector": "Elect and Refrac"
   },
   "IFGL Refractories": {
+   "call": "pass",
+   "sector": "Elect and Refrac"
+  },
+  "Monolithisch India": {
    "call": "pass",
    "sector": "Elect and Refrac"
   },
@@ -2589,6 +2849,18 @@
    "call": "avoid",
    "sector": "Electrical Equipment"
   },
+  "Parth Electricals": {
+   "call": "pass",
+   "sector": "Electrical Equipment"
+  },
+  "Anawil Wire": {
+   "call": "pass",
+   "sector": "Electrical Equipment"
+  },
+  "Prostarm Info Systems": {
+   "call": "pass",
+   "sector": "Electrical Equipment"
+  },
   "Avalon Tech": {
    "call": "follow",
    "sector": "EMS & Electronics"
@@ -2650,6 +2922,10 @@
    "sector": "Media and Entertainment"
   },
   "Basilic Fly Studio": {
+   "call": "pass",
+   "sector": "Media and Entertainment"
+  },
+  "Simca Advertising": {
    "call": "pass",
    "sector": "Media and Entertainment"
   }

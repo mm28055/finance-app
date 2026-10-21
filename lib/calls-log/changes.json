@@ -1,6 +1,627 @@
 {
  "changes": [
   {
+   "date": "2026-10-22",
+   "company": "Euro Pratik Sales",
+   "sector": "Consumer Durables",
+   "from": null,
+   "to": "wait",
+   "price": 191.52,
+   "why": "A clever, asset-light brand, but growth is being bought and profit is not turning into cash; wait for a year of positive free cash with the margin holding."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Varmora Granito",
+   "sector": "Consumer Durables",
+   "from": null,
+   "to": "pass",
+   "price": 132.87,
+   "why": "A mid-sized, low-return Morbi tile maker whose earnings depend on gas prices, at about 34 times earnings, a richer price than Somany or Orient Bell for weaker returns."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Jyoti Resins",
+   "sector": "Chemicals",
+   "from": null,
+   "to": "follow",
+   "price": 829.45,
+   "why": "A cheap, high-return brand, but it must show the margin back above 23% and customer dues falling toward 120 days before I would buy."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Prasol Chemicals",
+   "sector": "Chemicals",
+   "from": null,
+   "to": "follow",
+   "price": 708,
+   "why": "A well-spread, well-run chemical maker, but the price already assumes this year's guidance is met; I want to see margins after the Q1 windfall fades."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Sacheerome",
+   "sector": "Chemicals",
+   "from": null,
+   "to": "wait",
+   "price": 425.5,
+   "why": "A good small business at a fair 33 times earnings, but I want to see the new plant running and holding the margin before buying."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Gem Aromatics",
+   "sector": "Chemicals",
+   "from": null,
+   "to": "pass",
+   "price": 142,
+   "why": "Loss-making in three of the last four quarters, stock takes 309 days to sell and free cash over FY22–FY26 was −₹212cr; until it is back in profit with cash following, there is nothing to value."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "iValue Infosolutions",
+   "sector": "Software",
+   "from": null,
+   "to": "follow",
+   "price": 216.54,
+   "why": "The price asks for little growth, but I want H2 FY27 to show the promised 20% and cash to follow profit before buying."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Excelsoft Technologies",
+   "sector": "Software",
+   "from": null,
+   "to": "wait",
+   "price": 80.37,
+   "why": "Cheap with a strong cash pile, but I want to see the margin back near 24%, the promoter guarantee released and Pearson's share falling before buying."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "ESDS Software",
+   "sector": "Software",
+   "from": null,
+   "to": "pass",
+   "price": 1364.7,
+   "why": "A real and growing business, but the price already assumes the risky GPU deal works, and the deal's obligations dwarf the company's ₹544cr net worth."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "JSW Cement",
+   "sector": "Construction",
+   "from": null,
+   "to": "wait",
+   "price": 114.75,
+   "why": "A sound low-cost model, but about 16 times EBITDA is a full price for 11% returns on capital and a debt-funded build-out; wait for the North to turn profitable and costs to fall."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "E to E Transportation",
+   "sector": "Construction",
+   "from": null,
+   "to": "pass",
+   "price": 287.2,
+   "why": "Fast growth, but it is funded with borrowed money and unpaid bills; the price leaves no room for that risk."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Glass Wall Systems",
+   "sector": "Construction",
+   "from": null,
+   "to": "wait",
+   "price": 231.5,
+   "why": "A good, cash-generating niche business at about 25 times earnings, but too dependent on a few clients and too new as a listed company; I want the second-half export orders and new wins to show up first."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Pace Digitek",
+   "sector": "Construction",
+   "from": null,
+   "to": "avoid",
+   "price": 151.82,
+   "why": "The low price reflects profit that has not turned into cash, revenue booked on its own project, and heavy dependence on two state customers."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Horizon Industrial Parks",
+   "sector": "Realty",
+   "from": null,
+   "to": "follow",
+   "price": 45.8,
+   "why": "A real, growing rent business at a sensible price after a 24% fall from the IPO price, but wait to see reported profit and how Blackstone exits."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Kalpataru",
+   "sector": "Realty",
+   "from": null,
+   "to": "pass",
+   "price": 253.15,
+   "why": "Too much costly debt for a business whose sales have stalled; the handover profits that could fix it are an FY28–FY29 story, and FY27 net debt is guided flat."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Piccadily Agro",
+   "sector": "Food Products",
+   "from": null,
+   "to": "pass",
+   "price": 558.75,
+   "why": "A real whisky brand, but the auditor resigned in April 2026 and a group sugar company owed it ₹43cr; at 39 times earnings, governance questions like these rule it out until they are settled."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Regaal Resources",
+   "sector": "Food Products",
+   "from": null,
+   "to": "wait",
+   "price": 86.93,
+   "why": "Cheap at 14 times earnings, but I want to see the doubled plant run full and debt fall in H2 before trusting a commodity business this leveraged."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Milky Mist Dairy",
+   "sector": "Food Products",
+   "from": null,
+   "to": "pass",
+   "price": 277.6,
+   "why": "A fine dairy brand, but the price assumes many years of near-perfect growth."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Orkla India",
+   "sector": "Food Products",
+   "from": null,
+   "to": "follow",
+   "price": 543.45,
+   "why": "A good, cash-rich branded business at a fair price, but it needs to show that double-digit growth can last before it earns a place."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Patel Retail",
+   "sector": "Retail",
+   "from": null,
+   "to": "wait",
+   "price": 234.5,
+   "why": "Cheap for its growth, but the growth so far has gone into stock rather than cash; wait for H1 FY27 to show positive operating cash and the margin back near 7–8%."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Purple Style Labs",
+   "sector": "Retail",
+   "from": null,
+   "to": "avoid",
+   "price": 517.25,
+   "why": "Store rents, interest and depreciation swallow far more than the business earns; avoid until it shows it can make money before the IPO cash runs out."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Shankara Buildpro",
+   "sector": "Retail",
+   "from": null,
+   "to": "follow",
+   "price": 218.2,
+   "why": "A well-run, cheap-looking distributor (about 20 times earnings), but Q1 grew volumes only 10%; I want H2 to show the promised 20% before buying."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Safe Enterprises Retail Fixtures",
+   "sector": "Retail",
+   "from": null,
+   "to": "wait",
+   "price": 228.45,
+   "why": "Cheap and very profitable, but it is effectively a supplier to one retail chain; I want H1 FY27 to show 30% growth and a broader customer list first."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Bluspring Enterprises",
+   "sector": "Commercial Services",
+   "from": null,
+   "to": "wait",
+   "price": 154.35,
+   "why": "The plan is credible but almost all of it is promised, not delivered; I want two quarters of STEAG revenue, a better margin and foundit at breakeven first."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Seshaasai Technologies",
+   "sector": "Commercial Services",
+   "from": null,
+   "to": "follow",
+   "price": 307,
+   "why": "Cheap and cash-rich, but I want to see the card business stop shrinking and working capital come back down before buying."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Manipal Payment & Identity",
+   "sector": "Commercial Services",
+   "from": null,
+   "to": "follow",
+   "price": 314.6,
+   "why": "A strong franchise at a fair price (about 24 times earnings), but I want two or three listed quarters showing the 30–35% growth and cash keeping up before buying."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "GSP Crop Science",
+   "sector": "Agrochemical & Fertilizers",
+   "from": null,
+   "to": "follow",
+   "price": 451.65,
+   "why": "The price is reasonable for 15% growth, but I want a strong Q2 season and better cash collection before buying."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Waterways Leisure Tourism",
+   "sector": "Hotels and Travels",
+   "from": null,
+   "to": "pass",
+   "price": 90.31,
+   "why": "A real business, but ₹429cr was advanced to an unnamed intermediary for a fourth ship and the latest profit leans on ₹49cr of one-off compensation; at about 90 times earnings that is too much to take on trust."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Travel Food Services",
+   "sector": "Hotels and Travels",
+   "from": null,
+   "to": "follow",
+   "price": 1166.2,
+   "why": "A high-quality, cash-rich franchise at a fair price, but I want to see growth return through the Delhi change and the 2027 renewals before buying."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "KRM Ayurveda",
+   "sector": "Pharma Others",
+   "from": null,
+   "to": "wait",
+   "price": 237.9,
+   "why": "Cheaper than its larger rival Jeena Sikho, but the profit has not yet turned into cash; I want a year of quarterly results showing it does."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Amanta Healthcare",
+   "sector": "Pharma Others",
+   "from": null,
+   "to": "wait",
+   "price": 160.18,
+   "why": "At about 41 times earnings the price assumes the new lines lift margins to 25%; I want to see the new SteriPort line selling and the margin rise first."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Influx Healthtech",
+   "sector": "Pharma Others",
+   "from": null,
+   "to": "wait",
+   "price": 262.65,
+   "why": "The growth is real and the price (about 32 times earnings) is not extreme, but I want H1 FY27 to show the new plant running and profit turning back into cash."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Fujiyama Power Systems",
+   "sector": "Solar PV Cells EPC",
+   "from": null,
+   "to": "wait",
+   "price": 356.3,
+   "why": "The growth and margin are real, but I want to see operating cash turn positive and inventory fall toward the 100–110 days CRISIL expects before paying about 26 times earnings."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Vedanta Oil & Gas",
+   "sector": "Oil",
+   "from": null,
+   "to": "wait",
+   "price": 29.19,
+   "why": "Cheap and cash-rich, but over a 2–4 year hold the licence end in 2030 and the falling output matter more than this year's cash; I want an extension beyond 2030 and output stabilising first."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Gaudium IVF",
+   "sector": "Hospitals",
+   "from": null,
+   "to": "avoid",
+   "price": 94.95,
+   "why": "The receivables and cash record do not fit a cash-paid clinic business, and I would need them explained and fixed first."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Park Medi World",
+   "sector": "Hospitals",
+   "from": null,
+   "to": "follow",
+   "price": 222.4,
+   "why": "A well-run, cash-generating chain at about 35 times earnings with 24% guided growth; I would buy on evidence that the acquired hospitals fill up and the payer mix shifts."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Midwest",
+   "sector": "Mining & Metals Recycle",
+   "from": null,
+   "to": "pass",
+   "price": 1137.2,
+   "why": "A good quarry business, but at this price the governance history, the China dependence and the slow collections are not paid for."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Jain Resource Recycling",
+   "sector": "Mining & Metals Recycle",
+   "from": null,
+   "to": "wait",
+   "price": 288.85,
+   "why": "A fast-growing recycler, but at about 27 times earnings I want to see the new copper plants lift profit per tonne and cash finally follow profit."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Physicswallah",
+   "sector": "Platform Cos",
+   "from": null,
+   "to": "wait",
+   "price": 125.54,
+   "why": "A real franchise with strong cash, but the price needs years of fast profit growth; I want to see the guided doubling of EBITDA and offline break-even first."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Arisinfra Solutions",
+   "sector": "Platform Cos",
+   "from": null,
+   "to": "follow",
+   "price": 133.18,
+   "why": "Cheap for its growth and the cash finally arrived in FY26, but it is one good cash year in a thin-margin, credit-heavy business; I want Q2 and Q3 to show the margin and collections holding."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Rentomojo",
+   "sector": "Platform Cos",
+   "from": null,
+   "to": "wait",
+   "price": 550.55,
+   "why": "A genuinely good business priced for many years of 40% growth; I want to see that growth hold through a few listed quarters and free cash flow turn positive, or a lower price."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Behari Lal Engineering",
+   "sector": "Forging",
+   "from": null,
+   "to": "follow",
+   "price": 447.4,
+   "why": "A well-run, debt-free business at a fair 28 times earnings; I want Unit 3 on time and profit turning into cash before buying."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Vedanta Power",
+   "sector": "Utilities",
+   "from": null,
+   "to": "avoid",
+   "price": 30.3,
+   "why": "A leveraged, loss-making coal generator whose control is collateral for Vedanta Resources' borrowing, priced at about 14 times operating profit."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Juniper Green Energy",
+   "sector": "Utilities",
+   "from": null,
+   "to": "wait",
+   "price": 248.95,
+   "why": "The contracts are good, but at well over 250 times earnings and 35 times operating profit the price already counts on 6 GW being built on time; I want to see the new firm-power plants earn before buying."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Vedanta Iron & Steel",
+   "sector": "Iron and Steel",
+   "from": null,
+   "to": "pass",
+   "price": 28.1,
+   "why": "At about 10 times trailing EV/EBITDA for a low-margin commodity business with one quarter of standalone history, a Bokaro plant still waiting for clearances and a heavily indebted parent drawing fees, the risks outweigh the 4x profit plan."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Kirloskar Ferrous",
+   "sector": "Iron and Steel",
+   "from": null,
+   "to": "follow",
+   "price": 456.65,
+   "why": "A fair price (about 10 times EBITDA) for a well-run, integrated group, but profit has been flat for four years and the margin needs to break above 12% before a big four-year spending plan starts."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Karamtara Engineering",
+   "sector": "Construction - Power",
+   "from": null,
+   "to": "pass",
+   "price": 359.1,
+   "why": "A fast grower with good cash conversion, but a CBI charge-sheet names the chairman and the CFO, solar is 79% of sales and about 45 times earnings already pays for this year's guided growth."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Om Power Transmission",
+   "sector": "Construction - Power",
+   "from": null,
+   "to": "pass",
+   "price": 150.67,
+   "why": "Cheap and growing, but one customer is 64% of revenue, Gujarat is 82% of orders, and only ₹5cr of ₹119cr operating profit over four years came in as cash."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Vikran Engineering",
+   "sector": "Construction - Power",
+   "from": null,
+   "to": "avoid",
+   "price": 55.09,
+   "why": "Profit has not turned into cash, and the company has bet its balance sheet on a project it must now fund itself; India Ratings has turned negative."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Allcargo Global",
+   "sector": "Logistics",
+   "from": null,
+   "to": "wait",
+   "price": 11.13,
+   "why": "A real market leader, but it lost money last year and management itself needs 12–15% more volume before returns look normal; I want two clean quarters of profit and falling debt first."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Glottis",
+   "sector": "Logistics",
+   "from": null,
+   "to": "pass",
+   "price": 52.88,
+   "why": "A small forwarder with no clear edge, shrinking volumes and profit that is not turning into cash; the low P/E does not make up for that."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Blue Water Logistics",
+   "sector": "Logistics",
+   "from": null,
+   "to": "pass",
+   "price": 528.2,
+   "why": "Growth is real and the price low, but operating cash was −₹53cr in FY26, customers take 134 days to pay, warrants followed the CFO's 'debt only' promise, and it bought into a Thai company run by its promoters without calling it a related-party deal."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Skyways Air Services",
+   "sector": "Logistics",
+   "from": null,
+   "to": "avoid",
+   "price": 104.07,
+   "why": "An open police case alleges bribes and over-invoicing of at least ₹44cr, and its customs status was suspended this year; with a 4% margin at about 28 times earnings, nothing here is worth that governance risk."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Leap India",
+   "sector": "Logistics",
+   "from": null,
+   "to": "wait",
+   "price": 129.3,
+   "why": "A real moat, but the price needs far more growth than an 8% return on capital supports, and I want the related-party purchases to shrink before buying."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Kwality Pharmaceuticals",
+   "sector": "Pharma",
+   "from": null,
+   "to": "pass",
+   "price": 3427.4,
+   "why": "The growth is real, but customers take 203 days to pay, FY26 operating cash was only ₹17cr, ICRA rated it 'not cooperating' until May 2026 and the promised KPMG audit has not happened, at about 43 times earnings."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Symbiotec Pharmalab",
+   "sector": "Pharma API",
+   "from": null,
+   "to": "wait",
+   "price": 1208.4,
+   "why": "A strong niche franchise, but at about 78 times trailing earnings the price already counts on the new businesses working; I want to see their first revenue and milestone income first."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Anlon Healthcare",
+   "sector": "Pharma API",
+   "from": null,
+   "to": "avoid",
+   "price": 25.63,
+   "why": "The profit has never turned into cash, and the way the subsidiaries are being bought from the promoters puts their interests ahead of outside shareholders'."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Vidya Wires",
+   "sector": "Cables",
+   "from": null,
+   "to": "pass",
+   "price": 89.09,
+   "why": "A respectable converter, but 30 times earnings is a high price for a 4.7% margin whose profit has not turned into cash."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Apsis Aerocom",
+   "sector": "Aerospace defence",
+   "from": null,
+   "to": "pass",
+   "price": 581.1,
+   "why": "A well-run niche workshop, but at 93 times earnings and 23 times sales the price already assumes the jump to ₹500cr of revenue that management hopes for by FY31."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Fabtech Technologies",
+   "sector": "Industrials",
+   "from": null,
+   "to": "wait",
+   "price": 126.55,
+   "why": "Cheap on paper, but the profit has not been turning into cash and the related-party web is large; it moves up only if FY27 delivers the guided growth and margin with positive operating cash."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Hy-Tech Engineers",
+   "sector": "Industrials",
+   "from": null,
+   "to": "wait",
+   "price": 78.46,
+   "why": "A well-run niche supplier, but at about 33 times earnings the price assumes the guided 20% growth and 24–25% margin; I want to see Q2 deliver the margin rebound first."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Kusumgar",
+   "sector": "Industrials",
+   "from": null,
+   "to": "pass",
+   "price": 575.25,
+   "why": "A real niche, but only ₹92cr of ₹577cr operating profit over FY23–FY26 (16%) arrived as cash, at about 45 times earnings; it can return to the list when operating cash covers most of its profit."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Lohia Corp",
+   "sector": "Industrial Machinery",
+   "from": null,
+   "to": "follow",
+   "price": 569.9,
+   "why": "A strong niche leader at about 24 times earnings, but today's profit comes near the top of a capital-spending cycle; I want to see the 20% margin and orders hold for a few quarters."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Bonfiglioli Transmissions",
+   "sector": "Industrial Machinery",
+   "from": null,
+   "to": "wait",
+   "price": null,
+   "why": "A good franchise, but the IPO is entirely the parent selling, the price is not in what I read, and I want to see its first listed results and how group dealings are handled."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Monolithisch India",
+   "sector": "Elect and Refrac",
+   "from": null,
+   "to": "pass",
+   "price": 1233,
+   "why": "A fast-growing, well-placed niche maker, but the price already assumes the FY28 target is met, and the family dealings and weak cash call for proof first."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Parth Electricals",
+   "sector": "Electrical Equipment",
+   "from": null,
+   "to": "pass",
+   "price": 520,
+   "why": "A capable service-led switchgear firm, but at about 50 times earnings with no operating cash yet, the price assumes the new plants and margins work out."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Anawil Wire",
+   "sector": "Electrical Equipment",
+   "from": null,
+   "to": "pass",
+   "price": 409.35,
+   "why": "Profitable in a wind-installation boom, but too concentrated, too new and too entangled with the family's other firm to trust through a downturn."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Prostarm Info Systems",
+   "sector": "Electrical Equipment",
+   "from": null,
+   "to": "pass",
+   "price": 121.27,
+   "why": "It looks cheap at 20 times earnings, but profit has not turned into cash for four years and the BESS plans need more money."
+  },
+  {
+   "date": "2026-10-22",
+   "company": "Simca Advertising",
+   "sector": "Media and Entertainment",
+   "from": null,
+   "to": "pass",
+   "price": 408.35,
+   "why": "Too small, too new and too dependent on a few clients for a 2–4 year holding, at a price that already assumes the growth continues."
+  },
+  {
    "date": "2026-10-21",
    "company": "Sterlite Technologies",
    "sector": "Cables",
