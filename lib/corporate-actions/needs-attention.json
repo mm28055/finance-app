@@ -1346,7 +1346,8 @@
     "sector": "Pharma CDMO",
     "subject": "Big holder change: Sep 2026",
     "why": "Mirae Asset Large & Midcap Fund (DII) cut its stake from 5.69% to 2.92%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-19"
+    "addedOn": "2026-10-19",
+    "handled": "2026-10-21: Mirae Large & Midcap trimmed in the quarter Fosun sold 6% and other funds bought; ordinary fund rotation. Logged only."
   },
   {
     "company": "Samhi Hotels",
@@ -1374,7 +1375,8 @@
     "sector": "Platform Cos",
     "subject": "Big holder change: Sep 2026",
     "why": "Accel India Iv (Mauritius) Limited (FII) cut its stake from 6.99% to 4.84%; SBI Mutual Fund (DII) raised its stake from 6.59% to 9.13%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-19"
+    "addedOn": "2026-10-19",
+    "handled": "2026-10-21: Accel sold down over the quarter, partly in the 13 Aug block deal with Vy Capital and Bessemer in which SBI Mutual Fund bought 2.04%. Venture exit after lock-up, not a business signal. Corrected the holder sentence in the note and the card."
   },
   {
     "company": "Wakefit Innovations",
@@ -1388,56 +1390,64 @@
     "sector": "Construction",
     "subject": "Call drift: pass → Fits",
     "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-19"
+    "addedOn": "2026-10-19",
+    "handled": "2026-10-21: Price now fits (needs ~9.7% vs my 8%), but operating cash was negative in FY25 and FY26 (−₹198cr vs ₹123cr profit); no new filings. Stays pass; dated sentence added to the verdict."
   },
   {
     "company": "Vishnu Chemicals",
     "sector": "Chemicals",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-19"
+    "addedOn": "2026-10-19",
+    "handled": "2026-10-21: Fits by 1.9 points; five-year cash 87% of profit. Stays follow until captive ore (Q3 FY27) lifts the gross margin, the condition the note set. Dated sentence added."
   },
   {
     "company": "DEE Development",
     "sector": "Industrials",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-19"
+    "addedOn": "2026-10-19",
+    "handled": "2026-10-21: Fits by 1.6 points; only 26% of FY26 profit arrived as cash (51% over five years) and the audit qualification is open. Stays follow. Dated sentence added."
   },
   {
     "company": "GMM Pfaudler",
     "sector": "Industrials",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-19"
+    "addedOn": "2026-10-19",
+    "handled": "2026-10-21: Fits by 1 point; cash strong. Stays follow until Q2 results (early November) show the margin back above 12%; international CEO retired 31 Aug. Dated sentence added."
   },
   {
     "company": "Kilburn Engg.",
     "sector": "Industrials",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-19"
+    "addedOn": "2026-10-19",
+    "handled": "2026-10-21: Fits by 1.9 points, but operating cash negative in FY25 and FY26 and no new orders filed. Stays wait. Dated sentence added."
   },
   {
     "company": "NRB Bearing",
     "sector": "Bearings",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-19"
+    "addedOn": "2026-10-19",
+    "handled": "2026-10-21: Fits by 1.1 points; cash 81% over five years. Stays follow until promoter selling stops (MD and a trust sold ~0.8% in September) and the pledge is released. Dated sentence added."
   },
   {
     "company": "Neuland Laboratories",
     "sector": "Pharma CDMO",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-19"
+    "addedOn": "2026-10-19",
+    "handled": "2026-10-21: Fits by 1.9 points; cash 106%; US FDA closed the Unit 3 inspection (EIR, 14 Oct). Stays follow: trailing P/E rides a 35% margin management guides back toward 25%. Dated sentence added."
   },
   {
     "company": "Urban Company",
     "sector": "Platform Cos",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-19"
+    "addedOn": "2026-10-19",
+    "handled": "2026-10-21: Q2 FY27 shareholders' letter read. Core India bookings +26% at 3.5% margin (2.4% a year ago); InstaHelp loss ₹174cr (from ₹132cr); filed loss ₹182cr; cash ₹1,901cr; board approved up to ₹2,500cr share sale; break-even target Q3 FY28 kept. Verdict, card, sections 1/3/4/6 updated; 3 checkpoints added. Stays wait."
   },
   {
     "company": "Gland Pharma",
@@ -1445,7 +1455,8 @@
     "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 6 pts (51.8% in Jun 2026 → 45.8% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-10-21: Fosun Pharma sold about 6% on 4 Sep 2026 (₹2,121cr block at ~₹2,827 to Indian mutual funds, insurers and foreign funds, plus open-market sales) to fund its own R&D, buybacks and debt; still controlling at 45.8%. Card money line rewritten. No call change (stays own)."
   },
   {
     "company": "Sequent Scientific",
