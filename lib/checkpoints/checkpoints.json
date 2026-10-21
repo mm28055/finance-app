@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -19973,7 +19973,8 @@
    "status": "partly",
    "actual": "16.1%",
    "resolvedOn": "2026-10-20",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait; 16.1% through a salary round, but management now gives 18–20% only as a \"North Star\" with no date"
   },
   {
    "id": "tata-technologies-q4fy27-1",
@@ -21093,7 +21094,11 @@
    "text": "A new CFO named",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Shilpa Kedia (CFO of J&J India MedTech, earlier HUL investor relations) joined as CFO and Group CFO on 19 Oct 2026",
+   "resolvedOn": "2026-10-21",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "fractal-analytics-q2fy27-3",
@@ -28857,8 +28862,12 @@
    "text": "Spool plant starts",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "venus-pipes-and-tubes-spools"
+   "status": "met",
+   "project": "venus-pipes-and-tubes-spools",
+   "actual": "Part of the plant started on 20 Oct 2026, ahead of the December plan; the rest follows in phases",
+   "resolvedOn": "2026-10-21",
+   "resolvedBy": "review",
+   "outcome": "No call change; the letter of intent still has to become firm orders"
   },
   {
    "id": "venus-pipes-and-tubes-spools-m2",
@@ -33261,6 +33270,29 @@
    "due": "Q3 FY28",
    "ifMet": "The call can move up to follow",
    "ifMissed": "Stays wait or lower; the core cannot carry InstaHelp",
+   "createdOn": "2026-10-21",
+   "status": "pending"
+  },
+  {
+   "id": "tata-technologies-q3fy27-1",
+   "company": "Tata Technologies",
+   "sector": "Software",
+   "text": "Q3 operating margin of 16.5% or better (16.1% in Q2), as management promised a rise despite furloughs",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 16.5,
+   "due": "Q3 FY27",
+   "ifMet": "A first step toward the 17% I want",
+   "ifMissed": "Stays wait",
+   "createdOn": "2026-10-21",
+   "status": "pending"
+  },
+  {
+   "id": "tata-technologies-q4fy27-3",
+   "company": "Tata Technologies",
+   "sector": "Software",
+   "text": "The $138m European luxury full-vehicle programme ramping and contributing in H2 FY27",
+   "due": "Q4 FY27",
    "createdOn": "2026-10-21",
    "status": "pending"
   }
