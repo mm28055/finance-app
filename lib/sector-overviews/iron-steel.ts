@@ -714,7 +714,7 @@ export const ironSteel: SectorOverview = {
                 },
                 {
                     label: 'Growth driver: AI data centres',
-                    text: "**Aeroflex** sold 1,040 skids worth ₹32.4cr in Q1 FY27, up from 46 in Q3 FY26, and is taking capacity from 9,000 to 15,000 a year by October–November, a quarter later than planned because machine suppliers are late. At about 75% use, management puts skid revenue at ₹325–330cr a year on ₹48cr of capex. **Venus** has a ₹185cr spooling letter of intent from one data-centre owner, backed by ₹70cr of capex, with output due from the end of Q3; **Scoda** hopes to sell welded pipe to data centres from Q4 FY27 but has only enquiries so far. **The pool is new and real, but each company has one anchor customer or none.**",
+                    text: "**Aeroflex** sold 1,040 skids worth ₹32.4cr in Q1 FY27, up from 46 in Q3 FY26, and is taking capacity from 9,000 to 15,000 a year by October–November, a quarter later than planned because machine suppliers are late. At about 75% use, management puts skid revenue at ₹325–330cr a year on ₹48cr of capex. **Venus** has a ₹185cr spooling letter of intent from one data-centre owner, backed by ₹70cr of capex; part of the plant started on 20 October 2026, ahead of the December plan, with the rest in phases over the next few months; **Scoda** hopes to sell welded pipe to data centres from Q4 FY27 but has only enquiries so far. **The pool is new and real, but each company has one anchor customer or none.**",
                 },
                 {
                     label: 'Growth driver: defence, nuclear and smart meters',

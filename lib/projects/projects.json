@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -9130,9 +9130,9 @@
    "cost": "about ₹70cr (of ₹100–110cr FY27 capex)",
    "expectedStart": "Q3 FY27",
    "adds": "about 5% of FY27 revenue and 10–15% in FY28, at better margins",
-   "status": "building",
-   "source": "Q1 FY27 call (Aug 2026): on track to start by end of this year",
-   "updatedOn": "2026-09-29"
+   "status": "started",
+   "source": "Press release 20 Oct 2026: part of the dedicated spooling capacity started ahead of the December 2026 plan; the rest to follow in phases over the next few months; the ₹185cr letter of intent expected to turn into firm orders in the coming days",
+   "updatedOn": "2026-10-21"
   },
   {
    "id": "venus-pipes-and-tubes-seamless-fittings",
