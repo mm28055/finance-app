@@ -102,5 +102,13 @@
     "old": "INE483S01020",
     "new": "INE483S01038",
     "source": "NSE symbol CCAVENUE"
+  },
+  {
+    "date": "2026-10-22T17:28:54.778Z",
+    "company": "Akzo Nobel",
+    "field": "isin",
+    "old": "INE133A01011",
+    "new": "INE133A01029",
+    "source": "NSE symbol JSWDULUX"
   }
 ]

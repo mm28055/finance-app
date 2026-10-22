@@ -47,5 +47,15 @@
     "kind": "bonus",
     "appliedOn": "2026-10-12",
     "factor": 2
+  },
+  {
+    "isin": "INE133A01011",
+    "symbol": "JSWDULUX",
+    "subject": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share",
+    "exDate": "22-Oct-2026",
+    "company": "Akzo Nobel",
+    "kind": "split",
+    "appliedOn": "2026-10-22",
+    "factor": 10
   }
 ]

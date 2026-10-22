@@ -3,7 +3,6 @@
     "INE183A01024": "/company/FINPIPE/consolidated/",
     "INE0M4D01010": "/company/SETL/consolidated/",
     "INE116A01032": "/company/APCOTEXIND/",
-    "INE133A01011": "/company/JSWDULUX/consolidated/",
     "INE00M201021": "/company/SWSOLAR/consolidated/",
     "INE994E01018": "/company/3BBLACKBIO/consolidated/",
     "INE019J01013": "/company/533259/consolidated/",
@@ -20,5 +19,6 @@
     "INE0QJW01029": "/company/LCL/consolidated/",
     "INE1EEM01017": "/company/BLEL/",
     "INE0LEG01024": "/company/HTEL/",
-    "INE1J5V01013": "/company/ANAWIL/"
+    "INE1J5V01013": "/company/ANAWIL/",
+    "INE133A01029": "/company/JSWDULUX/consolidated/"
 }

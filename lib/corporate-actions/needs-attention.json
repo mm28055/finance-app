@@ -2250,5 +2250,187 @@
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
     "addedOn": "2026-10-21"
+  },
+  {
+    "company": "Anupam Rasayan",
+    "sector": "Chemicals",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Jayeshkumar Virendrabhai Patel (public holder) cut its stake from 3.64% to 1.2%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Genus Power",
+    "sector": "Electrical Equipment",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Chiswick Investment Pte Ltd (FII) cut its stake from 15.11% to 2.77%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Honasa Consumer (Mamaearth)",
+    "sector": "Consumer Durables",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Peak Xv Partners Investments Vi (public holder) cut its stake from 14.8% to 11.5%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Rishabh Instruments",
+    "sector": "Electrical Transformers",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Quant Mutual Fund - Quant Small Cap Fund (DII) cut its stake from 4.91% to 1.01%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Somany Ceramics",
+    "sector": "Consumer Durables",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Va Tech Wabag",
+    "sector": "Utilities",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Eureka Forbes",
+    "sector": "Consumer Durables",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "KNR Constructions",
+    "sector": "Construction",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Paradeep Phosphates",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Rajratan Global",
+    "sector": "Auto Related",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Rico Auto Industries",
+    "sector": "Auto Related",
+    "subject": "Call drift: pass → Fits",
+    "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Rushil Decor",
+    "sector": "Consumer Durables",
+    "subject": "Call drift: pass → Fits",
+    "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Sequent Scientific",
+    "sector": "Pharma Others",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Tips Music",
+    "sector": "Media and Entertainment",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Bajaj Consumer Care",
+    "sector": "Consumer Durables",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "SG Finserve",
+    "sector": "Finance",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "E2E Networks",
+    "sector": "Software",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Shoppers Stop",
+    "sector": "Retail",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "CCL Products",
+    "sector": "Food Products",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Emmvee Photovoltaic Power Ltd",
+    "sector": "Solar PV Cells EPC",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Transformers & Rect",
+    "sector": "Electrical Transformers",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Bajaj Consumer Care",
+    "sector": "Consumer Durables",
+    "subject": "Checkpoint met: bajaj-consumer-care-q2fy27-1",
+    "why": "Operating margin holding above 21% through the costlier second quarter — actual 24.6% (met). View improves if it holds 22%+ Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Transformers & Rect",
+    "sector": "Electrical Transformers",
+    "subject": "Checkpoint partly: transformers-and-rect-q2fy27-2",
+    "why": "Quarterly revenue above ₹750cr in Q2–Q3 FY27 — actual ₹739cr (partly).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "E2E Networks",
+    "sector": "Software",
+    "subject": "Checkpoint met: e2e-networks-q2fy27-1",
+    "why": "Q2 shows the Q1 profit (₹43.9cr) is repeatable — actual ₹73cr (met). Buy on a pullback Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "E2E Networks",
+    "sector": "Software",
+    "subject": "Checkpoint met: e2e-networks-q2fy27-2",
+    "why": "Operating margin stays near the ~70% long-term aim (75% in Q1), which management calls sustainable — actual 76.3% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-22"
+  },
+  {
+    "company": "Emmvee Photovoltaic Power Ltd",
+    "sector": "Solar PV Cells EPC",
+    "subject": "Checkpoint partly: emmvee-photovoltaic-power-ltd-q2fy27-1",
+    "why": "Quarterly operating profit above ₹600cr (about ₹617cr a quarter needed for the FY27 target; best so far ₹571cr) — actual ₹557cr (partly).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-22"
   }
 ]

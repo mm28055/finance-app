@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -7732,7 +7732,10 @@
    "due": "Q2 FY27",
    "ifMet": "View improves if it holds 22%+",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "24.6%",
+   "resolvedOn": "2026-10-22",
+   "resolvedBy": "auto"
   },
   {
    "id": "bajaj-consumer-care-q4fy27-1",
@@ -9293,7 +9296,10 @@
    "target": 750,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "₹739cr",
+   "resolvedOn": "2026-10-22",
+   "resolvedBy": "auto"
   },
   {
    "id": "transformers-and-rect-q4fy27-1",
@@ -20153,7 +20159,10 @@
    "ifMet": "Buy on a pullback",
    "ifMissed": "Stay follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹73cr",
+   "resolvedOn": "2026-10-22",
+   "resolvedBy": "auto"
   },
   {
    "id": "e2e-networks-q2fy27-2",
@@ -20165,7 +20174,10 @@
    "target": 70,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "76.3%",
+   "resolvedOn": "2026-10-22",
+   "resolvedBy": "auto"
   },
   {
    "id": "e2e-networks-q3fy27-1",
@@ -21314,7 +21326,10 @@
    "target": 600,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "₹557cr",
+   "resolvedOn": "2026-10-22",
+   "resolvedBy": "auto"
   },
   {
    "id": "emmvee-photovoltaic-power-ltd-q4fy27-1",
