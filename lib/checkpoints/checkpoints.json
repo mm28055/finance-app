@@ -9285,7 +9285,11 @@
    "ifMet": "Two quarters of positive cash (and the pledge released) would move it to follow",
    "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹43.8cr standalone (₹48cr consolidated) in H1 FY27, on ₹197cr of operating profit",
+   "resolvedOn": "2026-10-23",
+   "resolvedBy": "review",
+   "outcome": "Stays wait: the pledge is not released and conversion is thin"
   },
   {
    "id": "transformers-and-rect-q2fy27-2",
@@ -9300,7 +9304,8 @@
    "status": "partly",
    "actual": "₹739cr",
    "resolvedOn": "2026-10-22",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait; Q2 standalone revenue ₹709cr (+66%)"
   },
   {
    "id": "transformers-and-rect-q4fy27-1",
@@ -9321,7 +9326,11 @@
    "text": "Copper-conductor plant starting in Q2 FY27, the first backward-integration step",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Plant being installed; commissioning by Diwali, trial runs Nov–Dec, commercial output in Q4 FY27 (Q2 call, 13 Oct 2026)",
+   "resolvedOn": "2026-10-23",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "voltamp-transformers-q2fy27-1",
@@ -19531,7 +19540,11 @@
    "text": "Like-for-like sales growth of about 6%, as guided (raised)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Department stores +2% reported, +7% adjusting for the festive shift (Q2 FY27 presentation)",
+   "resolvedOn": "2026-10-23",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "shoppers-stop-q4fy27-1",
@@ -19540,7 +19553,13 @@
    "text": "Debt-free by March 2027, as promised",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-16",
+     "text": "Q2 FY27 presentation: on track to be debt-free by Q3 FY27, earlier than March 2027; net debt cut ₹82cr in a year"
+    }
+   ]
   },
   {
    "id": "shoppers-stop-q4fy27-2",
@@ -26577,8 +26596,12 @@
    "text": "Conductor plant commissioned",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "transformers-and-rect-ctc"
+   "status": "missed",
+   "project": "transformers-and-rect-ctc",
+   "actual": "Not commissioned in Q2; now due by Diwali (Q3 FY27)",
+   "resolvedOn": "2026-10-23",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "transformers-and-rect-pressboard-m1",
@@ -36454,6 +36477,15 @@
    "sector": "Consumer Durables",
    "id": "bajaj-consumer-care-q3fy27-1",
    "text": "Almond Drops unit volume still growing after the Q3 price rise of about 5% (half through smaller packs)",
+   "due": "Q3 FY27"
+  },
+  {
+   "createdOn": "2026-10-23",
+   "status": "pending",
+   "company": "Shoppers Stop",
+   "sector": "Retail",
+   "id": "shoppers-stop-q3fy27-1",
+   "text": "Debt-free by December 2026 (Q3 FY27), as now promised",
    "due": "Q3 FY27"
   }
  ]

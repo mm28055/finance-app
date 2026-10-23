@@ -5687,8 +5687,8 @@
    "cost": "about ₹150cr",
    "adds": "lets existing plants support ₹5,000–6,000cr of yearly sales",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026): delayed about three quarters, now on a revised schedule",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (13 Oct 2026): near completion, commercial production around Diwali; Changodar to 35,000 MVA, about 75,000 MVA in all",
+   "updatedOn": "2026-10-23",
    "capacityAdd": "Part of the step from about 40,200 to 77,200 MVA across plants during FY27 (about +90%)"
   },
   {
@@ -5701,9 +5701,15 @@
    "expectedStart": "Q2 FY27",
    "adds": "part of the 2–3 points of margin expected from backward integration from FY28",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "New: 8,000 t a year of copper conductor in phase 1, 24,000 t in phase 2"
+   "source": "Q2 FY27 call (13 Oct 2026); Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-10-23",
+   "capacityAdd": "New: 8,000 t a year of copper conductor in phase 1, 24,000 t in phase 2",
+   "revisions": [
+    {
+     "on": "2026-10-13",
+     "text": "Q2 FY27 call: commissioning slipped to around Diwali (Q3 FY27), trial runs in Nov–Dec, commercial output in Q4 FY27 and outside sales from Q1 FY28; 3,000 t a year, about 60% for its own use"
+    }
+   ]
   },
   {
    "id": "transformers-and-rect-pressboard",
