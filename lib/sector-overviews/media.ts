@@ -188,7 +188,7 @@ export const media: SectorOverview = {
             { key: 'cash', label: 'Profit into cash', description: 'Whether the profit arrives as cash.' },
         ],
         rows: [
-            { company: 'Tips Music', trend: 'stable', trendNote: '85% of revenue from songs over three years old and a 73% margin in FY26; but content spend is rising, the CEO left in April and the YouTube Shorts deal is unsigned.',
+            { company: 'Tips Music', trend: 'stable', trendNote: 'Q2 FY27 revenue +35% at a 70.5% margin; 85% of revenue from songs over three years old; but content spend is rising, the CEO has not been replaced and the YouTube Shorts deal is still unsigned.',
                 grades: { ip: { grade: 'A', note: '38,000+ songs, strongest in 1990s Hindi film music' }, pipeline: { grade: 'C', note: 'A few films a year; a third from the promoters’ Tips Films' }, buyers: { grade: 'B', note: 'Warner and Sony partnerships; platform split not disclosed' }, cost: { grade: 'A', note: 'Content 16% of FY26 revenue; 96 staff' }, cash: { grade: 'A', note: '80% of operating profit over five years; pays out nearly all of it' } } },
             { company: 'Saregama India', trend: 'widening', trendNote: 'No. 1 in new music in several languages, 60% of music revenue from post-2000 songs and exclusive Bhansali albums; bought at a high price.',
                 grades: { ip: { grade: 'A', note: '1.8 lakh songs; the largest old-film catalogue' }, pipeline: { grade: 'A', note: '25–30% of new film music; Bhansali films at a set formula' }, buyers: { grade: 'B', note: 'No. 2 by revenue; short-form deals are flat annual fees' }, cost: { grade: 'C', note: '₹1,000cr of new content over FY25–FY27' }, cash: { grade: 'C', note: '55% over five years; free cash negative in FY26' } } },
@@ -201,7 +201,7 @@ export const media: SectorOverview = {
         {
             heading: '1. Recommendation, up front',
             body: [
-                "**Wait on Tips Music, the best business here, for a better price.** **Tips** owns 38,000-plus songs, most of them 1990s Hindi film hits, and earns 85% of its revenue from songs more than three years old. In FY26 it made ₹217cr of profit on ₹376cr of revenue, a 118% return on capital, and it will hand all of that profit back through dividends and a buyback. But the next three years look harder than the last three: its content budget rises to ₹90–100cr this year from ₹59cr, Q1 profit fell 4% as two film albums were expensed at once, the CEO who ran its platform deals left in April, the YouTube Shorts renewal due in June is still unsigned, and a promoter-owned film company is becoming a bigger supplier. The price needs about {need:Tips Music|21}% a year against my ~17%, which is **{label:Tips Music|full}**.",
+                "**Wait on Tips Music, the best business here, for a better price.** **Tips** owns 38,000-plus songs, most of them 1990s Hindi film hits, and earns 85% of its revenue from songs more than three years old. In FY26 it made ₹217cr of profit on ₹376cr of revenue, a 118% return on capital, and it will hand all of that profit back through dividends and a buyback. But the next three years look harder than the last three: its content budget rises to ₹90–100cr this year from ₹59cr, Q1 profit fell 4% as two film albums were expensed at once (Q2 recovered: revenue +35%, profit +23% at a 70.5% margin, and H1 profit +11%), the CEO who ran its platform deals left in April and has not been replaced, the YouTube Shorts renewal due in June was still unsigned in October (now expected in Q3), and a promoter-owned film company is becoming a bigger supplier. The price needs about {need:Tips Music|21}% a year against my ~17%, which is **{label:Tips Music|full}**.",
                 "**Wait on Saregama India.** **Saregama** is India's second-largest label by revenue, owns 1.8 lakh songs and now wins 25–30% of new film music; its music business grew 39% in Q1 and the heavy buying phase (₹1,000cr of new music over FY25–FY27) ends this year. It also bought 28% of Sanjay Leela Bhansali's production house for ₹325cr to secure his films' music. The catch is capital: profit was flat at ₹198–206cr from FY24 to FY26, return on equity is 13%, and free cash flow was negative ₹114cr in FY26. Its auditors made the Bhansali stake a key audit matter (its value rests on the producer's next three years), and on the Q1 call management could not reconcile its own content-spend figures. The price needs about {need:Saregama India|22}% a year against my ~15%. **Both labels are good businesses priced for more than I expect.**",
                 "**Pass on Basilic Fly Studio, even though the price asks for little.** **Basilic** sells VFX work to Netflix, Amazon and Hollywood studios, mostly done in Chennai and Pune at 30–40% below Western cost, and owns 70% of UK studio One of Us. Its order book (₹250–260cr) and bids (₹700cr) are the largest it has had. But its margin fell to 13.9% in Q1 and profit by 44%; over five years it has turned only about a tenth of its operating profit into cash; ₹59cr of staff time has been capitalised; and its auditor says the accounts of its Canadian subsidiary, about a fifth of group profit, were unaudited. The price needs only about {need:Basilic Fly Studio|4}% a year against my ~10%, so it is **{label:Basilic Fly Studio|fits}**, but cheapness is not enough until the profit turns into cash.",
                 "**Three things to hold onto before reading the rest.** First, **a song is paid for once and earns for decades**, so a label's profit depends on what it pays for new music; the two labels account for that cost in opposite ways (Tips expenses it at once, Saregama spreads it over about ten years). Second, **Indian music is at the very start of paying subscriptions**: about 3% of internet users pay, against 57% in the US, which is the whole bull case. Third, **a VFX studio is a people business with two or three big buyers**, so judge it on cash collected, not on pipelines.",
@@ -351,7 +351,7 @@ export const media: SectorOverview = {
                     caption: 'Q1 FY27 cash and capital, as stated on the calls',
                     columns: ['Company', 'What management said', 'Balance sheet'],
                     rows: [
-                        ['Tips Music', 'Cash and investments about ₹345cr at June; all of FY26 profit (₹217cr) to be returned as dividends and a buyback (up to ₹44.5cr at up to ₹750 a share, promoters excluded)', 'Net cash ₹153cr at March on Screener’s cash and investment lines (bank deposits excluded); no debt'],
+                        ['Tips Music', 'Cash and investments about ₹345cr at June; all of FY26 profit (₹217cr) to be returned as dividends and a buyback (₹44.4cr open-market buyback completed by October; ₹6.5 interim dividend declared in Q2)', 'Net cash ₹153cr at March on Screener’s cash and investment lines (bank deposits excluded); no debt'],
                         ['Saregama India', 'New-music spend ₹300–350cr in FY27, "most of that is already committed"; spending to grow only high single to low double digits from FY28; other income lower because cash went into Bhansali', 'Net cash ₹76cr at March (Screener cash less ₹73cr of working-capital borrowings); CARE counts about ₹203cr of cash and liquid investments, including ₹101cr of unspent QIP money'],
                         ['Basilic Fly Studio', 'Unused QIP ₹37cr and IPO ₹21cr, mostly in deposits; a ₹200–300cr North American acquisition to be paid from cash; March–June collections about twice normal', 'Net debt ₹32cr at March (Screener: borrowings ₹106cr including leases, cash ₹74cr)'],
                     ],
@@ -387,7 +387,7 @@ export const media: SectorOverview = {
                 },
                 {
                     label: 'Cautious',
-                    text: "**Tips** refused to raise its 20% target in April ('we don't want to over-promise') and in July raised its content budget to ₹90–100cr from ₹80–90cr. **Saregama** gives no quarterly guidance and no group margin target, and will not disclose subscription revenue. **Basilic** gave no margin figure in August, having promised in June a 1.5–2.5 point rise and profit of ₹65–70cr.",
+                    text: "**Tips** refused to raise its 20% target in April ('we don't want to over-promise'), in July raised its content budget to ₹90–100cr from ₹80–90cr, and in October said it would exceed 20% without giving a number. **Saregama** gives no quarterly guidance and no group margin target, and will not disclose subscription revenue. **Basilic** gave no margin figure in August, having promised in June a 1.5–2.5 point rise and profit of ₹65–70cr.",
                 },
                 {
                     label: 'Missed (so far)',
@@ -395,7 +395,7 @@ export const media: SectorOverview = {
                 },
                 {
                     label: 'Mixed',
-                    text: "**Tips** met its revenue target but Q1 profit fell 4% as album costs were expensed. **Saregama**'s music business grew, but group profit growth has lagged for three years as amortisation rose from ₹36cr (FY24) to ₹88cr (last four quarters) and interest income fell.",
+                    text: "**Tips** met its revenue target but Q1 profit fell 4% as album costs were expensed; Q2 made up most of it (profit +23%), though the Shorts deal it expected by mid-year is still not signed. **Saregama**'s music business grew, but group profit growth has lagged for three years as amortisation rose from ₹36cr (FY24) to ₹88cr (last four quarters) and interest income fell.",
                 },
                 {
                     label: 'My outlook',
@@ -419,7 +419,7 @@ export const media: SectorOverview = {
                     badgeColumn: 3,
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
-                        ['Tips Music', 'Revenue and profit +20% in FY27; EBITDA margin 65–70% for the year; content ₹90–100cr (₹80–90cr in April)', 'Almost none; content expensed on release (₹44.6cr in Q1)', '**Mixed**: revenue +21%, profit −4%'],
+                        ['Tips Music', 'Revenue and profit +20% in FY27 (October: ‘we would exceed’ it, no new number); EBITDA margin 65–70% for the year; content ₹90–100cr, H2 lighter', 'Almost none; content expensed on release (₹71cr in H1)', '**On track**: H1 revenue +28%, profit +11%; Q2 profit +23%'],
                         ['Saregama India', 'Music revenue +20–23% a year; music EBITDA margin 60–65%; new music ₹300–350cr in FY27, slower after', '₹214cr of rights bought in FY26 (Screener); ₹325cr Bhansali stake', '**Delivered**: music revenue +39%, margin 61%'],
                         ['Basilic Fly Studio', 'Organic growth ~30% or more; no margin figure (in June: +1.5–2.5 points and profit ₹65–70cr)', '₹73cr in FY26 on AI, pipeline and storage; ₹59cr capitalised; Bengaluru; ₹200–300cr acquisition', '**Missed**: margin 13.9%, profit −44%'],
                     ],
@@ -494,8 +494,8 @@ export const media: SectorOverview = {
         {
             company: 'Tips Music', rank: 1, stance: 'PRICED', segment: LABELS,
             what: "A music label owning 38,000-plus songs, strongest in 1990s Hindi film music, licensed to YouTube, streaming apps, broadcasters and brands; controlled by the Taurani family.",
-            view: "**The best economics here, priced for more growth than I expect.** A 73% margin and 118% return on capital in FY26, ₹345cr of cash and all profit paid out. But content spending rises to ₹90–100cr from ₹59cr, Q1 profit fell 4%, the CEO has gone and Tips Films supplies more music. The price needs about {need:Tips Music|21}% a year against my ~17%.",
-            watch: 'Full-year margin holding at 65–70% with the higher content budget; the YouTube Shorts renewal; how much music comes from Tips Films.',
+            view: "**The best economics here, priced for more growth than I expect.** A 73% margin and 118% return on capital in FY26, ₹345cr of cash and all profit paid out; Q2 FY27 revenue grew 35% and profit 23% at a 70.5% margin. But content spending rises to ₹90–100cr from ₹59cr (₹71cr already in H1), the CEO has not been replaced, the Shorts renewal is four months late, and Tips Films supplies more music. 23 Oct 2026: stays wait; the price is still full. The price needs about {need:Tips Music|21}% a year against my ~17%.",
+            watch: 'Full-year margin holding at 65–70% with the higher content budget; the YouTube Shorts renewal, now expected in Q3; a new CEO; how much music comes from Tips Films.',
         },
         {
             company: 'Saregama India', rank: 2, stance: 'PRICED', segment: LABELS,
