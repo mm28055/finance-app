@@ -754,8 +754,8 @@ export const chemicalsCommodity: SectorOverview = {
         {
             company: 'Archean Chemical Industries', rank: 11, stance: 'TURNAROUND', segment: SALT,
             what: "A marine-chemicals producer in the Rann of Kutch: India's largest bromine maker, a large industrial-salt exporter and a new sulphate-of-potash plant, now also building a silicon-carbide chip fab.",
-            view: "**A scarce resource, shrinking output and a far-off bet.** Bromine prices rose about 50% and its derivatives arm broke even. But bromine volume is a third below FY22, salt fell 12%, net debt has replaced net cash, the ₹2,067cr fab is far from its core, the land lease expired in 2018, and one customer is 36% of revenue. The price needs about {need:Archean Chemical Industries|27}% a year against my ~16%.",
-            watch: 'Bromine at a 20,000-tonne run-rate at ~₹300/kg; a signed lease renewal; CRISIL’s outlook.',
+            view: "**A scarce resource, shrinking output and a far-off bet.** Bromine prices rose about 50% and its derivatives arm broke even. But bromine volume is a third below FY22, salt fell 12%, net debt has replaced net cash, the ₹2,067cr fab is far from its core, the land lease expired in 2018, one customer is 36% of revenue, and CRISIL cut it to A− on 22 October 2026 as its rated bank lines rose to ₹1,531cr. The price needs about {need:Archean Chemical Industries|27}% a year against my ~16%.",
+            watch: 'Bromine at a 20,000-tonne run-rate at ~₹300/kg; a signed lease renewal; how much of the ₹1,531cr of new bank lines is drawn.',
         },
         {
             company: 'Fairchem Organics', rank: 12, stance: 'CYCLICAL', segment: STYR,
