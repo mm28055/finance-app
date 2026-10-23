@@ -561,7 +561,7 @@ export const forging: SectorOverview = {
         {
             company: 'MM Forgings', rank: 3, stance: 'TURNAROUND', segment: AUTO,
             what: "Forges and machines axle, steering and engine parts, mainly for trucks in India, the US and Europe, from Tamil Nadu, with a small electric-motor subsidiary.",
-            view: "**Growing again, weighed by debt.** Revenue rose 16% in Q1 inside its ₹1,800–1,900cr guide, machined parts reached 67% and interest is falling. But net debt is ₹1,010cr, return on capital 9%, profit fell two years running, the 16,500-tonne press slipped to Q4 FY27, two subsidiaries lose money and Q1 profit included a ₹56cr land gain. The price needs about {need:MM Forgings|16}% a year against my ~12%, so follow rather than buy.",
+            view: "**Growing again, weighed by debt.** Revenue rose 16% in Q1 inside its ₹1,800–1,900cr guide, machined parts reached 67% and interest is falling. But net debt is ₹1,010cr, return on capital 9%, profit fell two years running, the 16,500-tonne press slipped to Q4 FY27, two subsidiaries lose money and Q1 profit included a ₹56cr land gain. The price needs about {need:MM Forgings|16}% a year against my ~12%, so follow rather than buy. 23 Oct 2026: stays follow though the price now fits; net debt of about ₹1,010cr and a 9% return on capital come first.",
             watch: 'Quarterly tonnes of 23,000–25,000 from Q2; interest toward ₹14cr a quarter; the big press starting with named customers.',
         },
         {

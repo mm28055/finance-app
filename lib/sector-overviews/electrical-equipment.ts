@@ -706,7 +706,7 @@ export const electricalEquipment: SectorOverview = {
         {
             company: 'TD Power Systems', rank: 2, stance: 'PRICED', segment: MACHINES,
             what: "Makes custom generators for gas engines, gas and steam turbines (up to 250 MW) and hydro plants, plus motors, mostly for global engine and turbine makers; about 70% of FY26 sales were exports.",
-            view: "**The best growth in the sector, and the price knows it.** Q1 revenue rose 72% at a 19% margin, FY27 guidance was raised to ₹2,600cr, and a ten-year Siemens Energy agreement was signed in August. But ten customers are 84% of revenue, debtor days have risen to 146, free cash was ₹19cr in FY26, and it is issuing shares. The price needs about {need:TD Power Systems|31}% a year against my ~28%.",
+            view: "**The best growth in the sector, and the price knows it.** Q1 revenue rose 72% at a 19% margin, FY27 guidance was raised to ₹2,600cr, and a ten-year Siemens Energy agreement was signed in August. But ten customers are 84% of revenue, debtor days have risen to 146, free cash was ₹19cr in FY26, and it is issuing shares. The price needs about {need:TD Power Systems|31}% a year against my ~28%. 23 Oct 2026: stays follow though the price now fits; the ₹600cr QIP of 12 October adds 77.4 lakh shares, and 146 debtor days and thin free cash keep it short of own.",
             watch: 'The large-generator capex plan promised for the Q2 call; quarterly order inflow holding near ₹700cr; receivables growing more slowly than sales.',
         },
         {

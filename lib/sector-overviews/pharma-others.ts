@@ -637,7 +637,7 @@ export const pharmaOthers: SectorOverview = {
         {
             company: 'Sequent Scientific', rank: 5, stance: 'SCALEUP', segment: ANIMAL,
             what: "Sequent Scientific, now Viyash Scientific: animal-health medicines and ingredients plus human drug ingredients and US generics, after merging with Carlyle-backed Viyash Life Sciences.",
-            view: "**A merger that worked, reported a little generously.** Revenue +19.5% in Q1, filed margin up from 15% to 19–20% in a year, net debt ₹86cr and a $1bn revenue target for 2032. But its own EBITDA excludes share-option costs, minorities take 15–20% of profit and drug ingredients grew 4%. The price needs about {need:Sequent Scientific|24}% a year against my ~20%.",
+            view: "**A merger that worked, reported a little generously.** Revenue +19.5% in Q1, filed margin up from 15% to 19–20% in a year, net debt ₹86cr and a $1bn revenue target for 2032. But its own EBITDA excludes share-option costs, minorities take 15–20% of profit and drug ingredients grew 4%. The price needs about {need:Sequent Scientific|24}% a year against my ~20%. 23 Oct 2026: stays follow though the price now fits; its own profit measure is generous, minorities take 15–20%, and Carlyle sold about 10.9% in August.",
             watch: 'Drug-ingredient sales in Q2, which management called its best quarter ever; closing Bioforlife; buying out the US and Spanish minorities.',
         },
         {

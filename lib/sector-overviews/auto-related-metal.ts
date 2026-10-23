@@ -811,7 +811,7 @@ export const autoRelatedMetal: SectorOverview = {
         {
             company: 'Rajratan Global', rank: 6, stance: 'CYCLICAL', segment: FORGE,
             what: "A tyre bead-wire maker with 42–43% of the Indian market and Thailand's only plant, supplying MRF, Apollo, CEAT, Bridgestone and Continental, now adding steel cord for conveyor belts.",
-            view: "**Volume engine working, margins permanently lower.** Volumes rose 18% in FY26 and 16% in Q1, the margin recovered to 13.1% as promised, and both CRISIL and ICRA turned more positive. But the margin was 20% in FY22, free cash has been negative three years, debt is ₹324cr and its production-linked subsidy is at risk. The price needs about {need:Rajratan Global|18}% a year against my ~15%.",
+            view: "**Volume engine working, margins permanently lower.** Volumes rose 18% in FY26 and 16% in Q1, the margin recovered to 13.1% as promised, and both CRISIL and ICRA turned more positive. But the margin was 20% in FY22, free cash has been negative three years, debt is ₹324cr and its production-linked subsidy is at risk. The price needs about {need:Rajratan Global|18}% a year against my ~15%. 23 Oct 2026: stays follow though the price now fits; free cash has been negative three years, and Q2 brought margin pressure and a large new expansion plan.",
             watch: 'Positive free cash in FY27 as capex tapers; margin at 13.5–14%; the steel-cord line selling from Q3.',
         },
         {

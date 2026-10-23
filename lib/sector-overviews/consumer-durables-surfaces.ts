@@ -656,7 +656,7 @@ export const consumerDurablesSurfaces: SectorOverview = {
         {
             company: 'Cera Sanitaryware', rank: 3, stance: 'PRICED', segment: BATH,
             what: "A Gujarat maker of sanitaryware and faucets that outsources tiles and about half its volume, with Senator (luxury) and Polipluz (entry) brands.",
-            view: "**Strong brand and balance sheet, margins still to recover.** It holds ₹943cr of cash, turns about 5.5 rupees of sales from each rupee of fixed assets, and Q1 volumes rose 10% in sanitaryware and 18% in faucets. But Q1 margin was 10.1%, the FY27 guide fell from 14–15% to 13.5–14% within a quarter, FY26 profit fell 17%, and a ₹28.7cr tax demand appeared. The price needs about {need:Cera Sanitaryware|19}% a year against my ~14%.",
+            view: "**Strong brand and balance sheet, margins still to recover.** It holds ₹943cr of cash, turns about 5.5 rupees of sales from each rupee of fixed assets, and Q1 volumes rose 10% in sanitaryware and 18% in faucets. But Q1 margin was 10.1%, the FY27 guide fell from 14–15% to 13.5–14% within a quarter, FY26 profit fell 17%, and a ₹28.7cr tax demand appeared. The price needs about {need:Cera Sanitaryware|19}% a year against my ~14%. 23 Oct 2026: stays follow though the price now fits; I want Q2 to show the margin recovering toward the cut 13.5–14% guide first.",
             watch: 'Q2–Q3 margins back at 13–15%; brass staying below ₹950 a kilogram; Senator and Polipluz sales against ₹70–80cr.',
         },
         {

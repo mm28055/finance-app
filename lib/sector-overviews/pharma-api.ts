@@ -683,7 +683,7 @@ export const pharmaApi: SectorOverview = {
         {
             company: 'IOL Chem & Pharma', rank: 4, stance: 'CYCLICAL', segment: VOLUME,
             what: "One of the world's largest ibuprofen makers, integrated into its own chemicals, now adding paracetamol, clopidogrel, metformin and others, plus a tablet plant for European customers and a chemicals business selling ethyl acetate.",
-            view: "**Beating its own guidance, but earning war prices and spending heavily.** Q1 revenue +37% at a 14.6% margin, products beyond ibuprofen at 43% of pharma sales, and a first FY28 view of 15–20% growth; I raise my estimate to about 16%. But it is adding 50% more ibuprofen into a slow market, related-party purchases rose 31%, and return on capital has sat at 9–12% for three years. The price needs about {need:IOL Chem & Pharma|19}% a year.",
+            view: "**Beating its own guidance, but earning war prices and spending heavily.** Q1 revenue +37% at a 14.6% margin, products beyond ibuprofen at 43% of pharma sales, and a first FY28 view of 15–20% growth; I raise my estimate to about 16%. But it is adding 50% more ibuprofen into a slow market, related-party purchases rose 31%, and return on capital has sat at 9–12% for three years. The price needs about {need:IOL Chem & Pharma|19}% a year. 23 Oct 2026: stays follow though the price now fits; return on capital of 9–12% and rising related-party purchases keep it short of own.",
             watch: 'Paracetamol moving from 55% towards 70–75% use; the tablet plant shipping in Q3–Q4 FY27; ibuprofen prices as the new capacity nears.',
         },
         {
