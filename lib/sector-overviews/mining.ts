@@ -614,7 +614,7 @@ export const miningMetalsRecycle: SectorOverview = {
         {
             company: 'Caliber Mining & Log', rank: 7, stance: 'SCALEUP', segment: MINING,
             what: "Removes overburden, digs coal and moves it by road and rail for Coal India subsidiaries in Maharashtra and Madhya Pradesh under multi-year contracts; listed in August 2026.",
-            view: "**A big order book bought with debt, and a web of related parties.** Orders reached ₹9,124cr and revenue rose 67%, but Q1 profit fell 22%, over 80% of revenue is Coal India, unpledged cash was ₹7cr at March, and it did ₹190cr of FY26 business with a joint venture partly owned by promoter relatives. The price needs about {need:Caliber Mining & Log|14}% a year against my ~15%; I want debt to fall first.",
+            view: "**A big order book bought with debt, and a web of related parties.** Orders reached ₹9,124cr and revenue rose 67%, but Q1 profit fell 22%, over 80% of revenue is Coal India, unpledged cash was ₹7cr at March, and it did ₹190cr of FY26 business with a joint venture partly owned by promoter relatives. The price needs about {need:Caliber Mining & Log|14}% a year against my ~15%; I want debt to fall first. 22 Oct 2026: Coal India's subsidiaries will now repay diesel at actual bulk prices, backdated to 20 March, which should restore much of the margin lost to the fuel spike; the call stays wait until debt falls.",
             watch: 'Debt toward ₹750cr by March 2027; margin back to 23%; related-party business against the approved limits.',
         },
         {
