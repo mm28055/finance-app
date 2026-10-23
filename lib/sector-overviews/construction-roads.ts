@@ -622,7 +622,7 @@ export const constructionRoads: SectorOverview = {
         {
             company: 'KNR Constructions', rank: 5, stance: 'TURNAROUND', segment: BUILD,
             what: "A Hyderabad-based highway and irrigation builder and HAM developer, now moving into coal-mine operation, which is 45% of its order book.",
-            view: "**A strong balance sheet with a broken margin.** It has no standalone debt, ₹310cr of cash and a CRISIL AA rating, and it sells HAM projects well (Guruvayur at about 2.5 times invested equity). But its margin fell from 19% to 9% in FY26, the underlying Q1 margin was about 5.5%, Telangana owes it about ₹1,450cr under an auditor's emphasis, and its new mining work needs ₹900cr–₹1,000cr of equipment. The price needs about {need:KNR Constructions|5–6}% a year against my ~2%.",
+            view: "**A strong balance sheet with a broken margin.** It has no standalone debt, ₹310cr of cash and a CRISIL AA rating, and it sells HAM projects well (Guruvayur at about 2.5 times invested equity). But its margin fell from 19% to 9% in FY26, the underlying Q1 margin was about 5.5%, Telangana owes it about ₹1,450cr under an auditor's emphasis, and its new mining work needs ₹900cr–₹1,000cr of equipment. The price needs about {need:KNR Constructions|5–6}% a year against my ~2%. 23 Oct 2026: stays wait though the price now fits; the margin has not recovered, Telangana still owes about ₹1,450cr, and ₹91.85cr of income-tax penalty orders arrived on 30 September (under appeal).",
             watch: 'Telangana paying its ₹70–90cr monthly instalments; H2 margin reaching 10–12%; Kusmunda mine running without eating the cash pile.',
         },
         {
