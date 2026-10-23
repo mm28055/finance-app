@@ -77,6 +77,10 @@
      }
     ],
     "on": "2026-10-23"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "The note's three checks (CRISIL review, H1 exports near ₹55cr, the EU audit) cannot be judged from these figures; the 30% trade-margin cap on cancer medicines from 9 November could bite from Q3."
    }
   },
   {
@@ -139,6 +143,10 @@
     "text": "Operating profit surged 180% year-on-year to ₹3,201cr, well ahead of flat-growth expectations. Revenue grew 26% year-on-year to ₹20,558cr, but fell 25% from the previous quarter. Operating margin jumped 9 points year-on-year to 16%, defying fears of shrinking peak margins.",
     "checks": [],
     "on": "2026-10-23"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "The jump is refining margins ($20.41 a barrel against $9.04 a year ago, per the filing), a cyclical windfall rather than a change in the business; \"defying fears\" overstates what one quarter shows."
    }
   },
   {
@@ -212,6 +220,10 @@
      }
     ],
     "on": "2026-10-23"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "Net profit grew faster (14%) than operating profit (5%), so the beat came from below the operating line, not the business; mixed is right."
    }
   },
   {
@@ -266,13 +278,13 @@
    ],
    "oneOff": "The year-ago quarter's profit included other income of ₹71cr (36% of profit before tax), so net profit growth against it is not shown.",
    "take": {
-    "verdict": "ahead",
+    "verdict": "mixed",
     "points": [
-     "Revenue up 26% to ₹2,235cr, well ahead of the 4–6% full-year guidance.",
+     "Revenue up 26% to ₹2,235cr, mostly from the Kinetic and TAO Digital acquisitions; the core business has not been growing in constant currency.",
      "Operating profit jumped 44% to ₹309cr, with margins expanding two points to 14%.",
      "Net profit was ₹132cr; year-ago profit of ₹143cr was flattered by ₹71cr other income."
     ],
-    "text": "Revenue up 26% to ₹2,235cr, well ahead of the 4–6% full-year guidance. Operating profit jumped 44% to ₹309cr, with margins expanding two points to 14%. Net profit was ₹132cr; year-ago profit of ₹143cr was flattered by ₹71cr other income.",
+    "text": "Revenue up 26% to ₹2,235cr, mostly from the Kinetic and TAO Digital acquisitions; the core business has not been growing in constant currency. Operating profit jumped 44% to ₹309cr, with margins expanding two points to 14%. Net profit was ₹132cr; year-ago profit of ₹143cr was flattered by ₹71cr other income.",
     "checks": [
      {
       "text": "Energy and mining unit stabilising",
@@ -281,6 +293,10 @@
      }
     ],
     "on": "2026-10-23"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "Corrected verdict from ahead to mixed and the first point: the 26% revenue growth is mostly bought (Kinetic, TAO Digital), so comparing it with the 4–6% guide is wrong, and net profit fell 8% from a year ago."
    }
   },
   {
@@ -359,6 +375,10 @@
      }
     ],
     "on": "2026-10-23"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "Missing: on 22 October the board approved buying two plots next to the plant from the chairman and his relatives, value not disclosed, which matters for a pass on governance."
    }
   },
   {
@@ -427,6 +447,10 @@
      }
     ],
     "on": "2026-10-23"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "Missing: management raised the FY27 margin guide by 2 points to 27% (±2) and kept revenue above ₹2,500cr, so the sequential dip to 24% is not a warning."
    }
   },
   {
@@ -490,6 +514,10 @@
     "text": "Revenue grew 78% to ₹32cr, but operating profit remained negative at ₹-55cr. Operating margin improved by 129 percentage points but remained deeply negative at -170%. Net profit of ₹16cr was entirely driven by ₹114cr of other income.",
     "checks": [],
     "on": "2026-10-23"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "Quarterly revenue swings with project completions (₹962cr in Q1, ₹32cr in Q2), so pre-sales and collections, not these figures, are the test."
    }
   },
   {
@@ -552,6 +580,10 @@
     "text": "Revenue rose 24% year-on-year to ₹277cr. Financing profit jumped 31% to ₹93cr, as the financing margin expanded to 34%. Net profit increased 27% from a year ago to ₹66cr.",
     "checks": [],
     "on": "2026-10-23"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "The table cannot show what the note waits for: bad loans after the burst of lending and the promoter pledges."
    }
   },
   {
@@ -625,6 +657,10 @@
      }
     ],
     "on": "2026-10-23"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "Agree."
    }
   },
   {
@@ -693,6 +729,10 @@
      }
     ],
     "on": "2026-10-23"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "Net profit (+13%) lagged operating profit (+23%); on 21 October it also bought Chirok Health (clinical documentation and coding), terms not disclosed."
    }
   },
   {
@@ -766,6 +806,10 @@
      }
     ],
     "on": "2026-10-23"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "The shareholder letter adds B2C order value +24.6% to ₹20,793cr and quick-commerce order value +31.4%; the loss still widened from Q1."
    }
   },
   {
@@ -839,6 +883,10 @@
      }
     ],
     "on": "2026-10-23"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "Missing: a plan to invest up to ₹250cr over three years in an Andhra Pradesh recycling complex, about 44% of a year's sales, and the share of profit from recycling credits is not given."
    }
   },
   {
@@ -912,6 +960,10 @@
      }
     ],
     "on": "2026-10-22"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "Agree."
    }
   },
   {
@@ -991,6 +1043,10 @@
      }
     ],
     "on": "2026-10-22"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "Missing: on 21 October the board approved a third machine-tool unit in Coimbatore."
    }
   },
   {
@@ -1054,6 +1110,10 @@
     "text": "Revenue up 9% to ₹784cr, lagging the 17–18% long-term growth target. Operating profit rose 5% to ₹159cr; operating margin dipped 1 point to 20%. Net profit of ₹20cr does not reflect the business, flattered by ₹36cr other income.",
     "checks": [],
     "on": "2026-10-22"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "The standalone Indian business was weaker than the consolidated figures: revenue +3% and operating profit down about 20% from a year ago."
    }
   },
   {
@@ -1117,6 +1177,10 @@
     "text": "Revenue up 10% to ₹129cr and operating profit up 7% to ₹45cr. Operating margin held roughly steady at 35% versus 36% a year ago. Net profit was ₹45cr; year-ago ₹67cr was flattered by ₹38cr other income.",
     "checks": [],
     "on": "2026-10-22"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "Missing: two Mumbai redevelopment projects (Versova, Sewri) with about ₹900cr of estimated sales value were added in the quarter."
    }
   },
   {
@@ -1195,6 +1259,10 @@
      }
     ],
     "on": "2026-10-22"
+   },
+   "reviewed": {
+    "on": "2026-10-23",
+    "text": "The shares fell 10.7% on 22 October on the margin and a large expansion plan (Reuters); free cash has been negative three years, so a debt-funded plan matters."
    }
   },
   {

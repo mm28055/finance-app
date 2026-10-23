@@ -13763,6 +13763,20 @@
    "status": "planned",
    "source": "Announced May 2026; Q1 FY27 call (Jul 2026): details due at the Q2 FY27 call",
    "updatedOn": "2026-10-20"
+  },
+  {
+   "id": "pitti-engineering-bengaluru",
+   "company": "Pitti Engineering",
+   "sector": "Industrials",
+   "name": "Bengaluru greenfield plant",
+   "what": "A single new plant consolidating its Karnataka units; laminations from 108,000 to 160,000 t a year and machining to 13.14 lakh hours",
+   "cost": "₹450cr, from own cash and debt",
+   "expectedStart": "By FY31 (FY 2030-31)",
+   "adds": "About 48% more lamination capacity",
+   "status": "planned",
+   "source": "Board approval and press release, 22 Oct 2026 (NSE)",
+   "updatedOn": "2026-10-23",
+   "capacityAdd": "+52,000 t of laminations a year (108,000 → 160,000 t)"
   }
  ]
 }

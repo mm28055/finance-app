@@ -2098,14 +2098,16 @@
     "sector": "Construction - Power",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-21"
+    "addedOn": "2026-10-21",
+    "handled": "2026-10-23: Stays wait (price fits). Operating cash −₹590cr in FY26. Dated line added."
   },
   {
     "company": "Vintage Coffee",
     "sector": "Food Products",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-21"
+    "addedOn": "2026-10-21",
+    "handled": "2026-10-23: Stays wait (price fits). Pledge release (8 Oct) already in the note; negative free cash, FX loan for the plant. Dated line added."
   },
   {
     "company": "Aditya Birla Lifesty",
@@ -2128,14 +2130,16 @@
     "sector": "Software",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-21"
+    "addedOn": "2026-10-21",
+    "handled": "2026-10-23: Stays wait (price fits). Free cash negative every year since FY23. Dated line added."
   },
   {
     "company": "Aimtron",
     "sector": "EMS & Electronics",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-21"
+    "addedOn": "2026-10-21",
+    "handled": "2026-10-23: Stays wait (price fits). Negative operating cash, promoter-owned customers. Dated line added."
   },
   {
     "company": "Bajaj Consumer Care",
@@ -2173,14 +2177,16 @@
     "sector": "Software",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-21"
+    "addedOn": "2026-10-21",
+    "handled": "2026-10-23: Price fell ~20% twice (21–22 Oct) after browsers distrusted some of its TLS certificates; it is exiting global SSL/TLS (~1% of revenue, filing of 22 Oct). Stays wait (3i Infotech claim open, reputational risk to a trust business); verdict, card customers and watch updated."
   },
   {
     "company": "Freshara Agro",
     "sector": "Food Products",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-21"
+    "addedOn": "2026-10-21",
+    "handled": "2026-10-23: Stays wait (price fits). Negative operating cash, 328-day cycle. Dated line added."
   },
   {
     "company": "GE Power",
@@ -2194,7 +2200,8 @@
     "sector": "Consumer Durables",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-21"
+    "addedOn": "2026-10-21",
+    "handled": "2026-10-23: Stays wait (price fits). Thin appliance margins, associate purchases. Dated line added."
   },
   {
     "company": "Himadri Speciality",
@@ -2217,14 +2224,16 @@
     "sector": "Construction - Power",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-21"
+    "addedOn": "2026-10-21",
+    "handled": "2026-10-23: Stays wait (price fits). Leverage past CRISIL triggers, bribery case; ₹1,303cr Sept orders routine. Dated line added."
   },
   {
     "company": "Menon Bearings",
     "sector": "Auto Related",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-21"
+    "addedOn": "2026-10-21",
+    "handled": "2026-10-23: Stays wait (price fits). 36% cash conversion, promoter selling. Dated line added."
   },
   {
     "company": "MM Forgings",
@@ -2312,14 +2321,16 @@
     "sector": "Consumer Durables",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-22"
+    "addedOn": "2026-10-22",
+    "handled": "2026-10-23: Stays wait (price fits). GST notice cut to ₹4.5cr and extra 5.9% pledge already in the note; services growth and pledge weigh. Dated line added."
   },
   {
     "company": "KNR Constructions",
     "sector": "Construction",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-22"
+    "addedOn": "2026-10-22",
+    "handled": "2026-10-23: Stays wait (price fits). Note had missed the ₹91.85cr income-tax penalty orders (30 Sep) and the ₹6,864cr related-party approvals; added to the card with the completed Guruvayur sale and CRISIL AA upgrade. Dated line added."
   },
   {
     "company": "Paradeep Phosphates",

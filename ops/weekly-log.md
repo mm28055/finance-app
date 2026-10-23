@@ -351,3 +351,51 @@ Pushed to master; all checks passed (typecheck clean, "All notes pass.").
 - **Waaree Renewables** is mixed: interest and depreciation from its debt-funded acquisition cut pre-tax profit to ₹105cr from ₹163cr.
 
 **Top 12:** CleanMax and Samhi (and the reserve names Gland and Cartrade) were touched only by holder changes. No trigger was hit, so nothing changed.
+
+## 23 October 2026
+
+**Checks:** the notes check lists the same 30 problems as before this run, all "company in the sector with no verdict" (the newly listed companies that still need sections). They were on master already, so they did not block the push. The typecheck is clean. Two older branches, weekly-review/2026-09-30 and weekly-review/2026-10-18, show as unmerged only because master's history was rebuilt on 19 October; the 30 September and 18 October log entries and their note changes are already on master, so I did not merge them.
+
+**Follow-ups handled: 40 (the limit). Still open: 96.** 69 are the recently listed companies with no note section (already a Needs-a-session item), 6 are waiting entries, and 21 are price-drift and holder-change reviews left for the next run: Mobavenue, Solarworld, AvenuesAI, GE Power, Rico and Rushil (pass → fits), OBSC, Orient Bell, Somany and Paradeep (wait → fits), Tenneco's 15-point promoter fall, and ten big-holder changes (Ashapura, Ather, Divgi, Jyothy, Pondy Oxides, V-Guard, Anupam, Genus Power, Honasa, Rishabh).
+
+**Calls changed:**
+- **E2E Networks: follow → own** (small size). Q2 met both conditions the note set: profit repeated (₹73cr, from ₹44cr) and debt stopped outrunning revenue (borrowing flat at about ₹450cr while revenue rose 43%). The price now fits, and operating cash has exceeded profit in each of the last five years; the negative free cash is GPU buying. It is now ranked first in its group.
+- **Bajaj Consumer Care: wait → follow.** The margin held at 25% through the costlier Q2, and the price now fits. Not own yet: the ₹27cr paid to promoter companies for flats is still unexplained.
+
+**New results calls:**
+- **CCL Products** (stays own). Volume grew 10–15% in Q2 (20% in Q1), operating profit 9.5% and profit 29%; the 15% guide for the year was kept. Net debt fell to ₹742cr. The freeze-dried plants could be nearly full within about 18 months, so a new line of about 6,000 t is being weighed.
+- **SG Finserve** (stays follow). The loan book reached about ₹5,700cr, profit was a record ₹59cr, and bad loans are still nil. Management raised its pace to 30–35% a year for the book and 35–40% for profit, and lifted its borrowing limit from 3 to 4 times equity.
+- **Emmvee** (stays follow). The transcript is not filed yet, so I used the presentation. Operating profit was ₹557cr at 35%, short of the ₹600cr pace (checkpoint partly met). The ₹2,400cr FY27 target now needs about ₹648cr a quarter. Only about ₹410cr of H1's ₹1,105cr operating profit arrived as cash.
+- **Tips Music** (stays wait). Revenue grew 35% and profit 23%. The YouTube Shorts deal is still not signed (checkpoint missed; reset for Q3), and the CEO post is still empty.
+- **Shoppers Stop** (stays wait). The transcript is not filed yet. Like-for-like growth was 2% reported and 7% adjusted for Diwali's later date (partly met). It booked a first small filed profit, and debt-free is now promised by December.
+- **Transformers & Rectifiers** (stays wait). Standalone revenue rose 66% at a 16.1% margin, the order book is ₹7,237cr including a first nuclear order, and H1 operating cash was positive (₹44cr; checkpoint met). But the conductor plant slipped from Q2 to Q3 (missed), and the director's pledge is still in place.
+- **Anawil Wire, Waterways Leisure:** no note section yet, so they are left to the add-companies session.
+
+**Price drift (calls kept, a dated reason added to each):**
+- **Follow, price now fits but not own:** SJS, Syrma, TD Power, ABLBL, Cera, CleanMax, IOL, MM Forgings, Va Tech Wabag, Rajratan and Sequent. Each has a named reason: weak cash conversion (Syrma, Va Tech Wabag), debt, governance or open legal items.
+- **Yatharth Hospital** stays follow. The note had missed a ₹3,150cr issue of shares and warrants to Rasmalai of Cyprus (reported as Advent), about 25% of the company, approved on 17 September. I added it.
+- **Himadri** stays follow. The note had missed its plan of 21 September to take in the Birla Tyres business by demerger. I added it.
+- **Wait, price now fits but cash or governance not:** Techno Electric, Vintage Coffee, Zaggle, Aimtron, Freshara, IFB, KEC, Menon, Eureka Forbes and KNR. KNR's ₹91.85cr income-tax penalties and its ₹6,864cr of related-party approvals were missing; I added them.
+- **eMudhra** stays wait after two 20% falls. Browsers distrusted some of its certificates, and it is leaving the global SSL/TLS business (about 1% of revenue). For a company that sells trust, the damage matters more than the revenue.
+
+**Still waiting (checked today):**
+- HEG's electrode company has not listed.
+- SKF India has not filed July–September results.
+- Ganesh Benzoplast's sale has not closed.
+- The UPI merchant fee is still deferred to "after Diwali", with no date.
+- The cancer-drug 30% margin cap (137 medicines, from 9 November) and the ethanol tender terms are widely reported, but the official sites still cannot be reached, so neither is confirmed from the source.
+
+**Filings pass, 21–22 October** (notes corrected):
+- **Archean**: CRISIL cut it to A− while the bank lines it rates rose to ₹1,531cr.
+- **Pitti Engineering**: the board approved the ₹450cr Bengaluru plant (laminations from 108,000 to 160,000 t by FY31; added as a project).
+- **Tinna Rubber**: up to ₹250cr over three years for an Andhra Pradesh recycling complex.
+- **Caliber**: Coal India will now repay diesel at actual bulk prices, backdated to March.
+- **KSH**: Power Grid approved its Supa plant up to 765 kV.
+- **Aegis**: CARE put its rating on watch while the Tristar purchase is funded.
+- Logged only: Sagility's small Chirok Health purchase, JTEKT's CVJ expansion, LMW's new machine-tool unit, Corona's Brazil approval, Apollo Micro's explosives silo, Advait's distribution licence, the Kalpataru (₹2,349cr) and Transrail (₹927cr) orders, Omnitech's first data-centre orders, Juniper's 33 MW, Arihant's director exit, Ganesh Housing's internal-auditor exit, Laxmi Dental's tariff refund and OSEL's warrants.
+
+**News pass, 21–22 October:** 16 entries had a clear reason, and none was very important. They included: record natural rubber prices (₹290/kg, a cost swing for the tyre makers, not a rule change), China's tungsten export ban (MIDHANI), the AI-stock selloff (E2E), a share split (Akzo), and results-day moves (Rajratan, Supreme Power, Waaree Renewables, Fractal, Omnitech). eMudhra is covered above.
+
+**Results pass:** 17 reviewed, and all figures match Screener. I changed one overnight verdict: **Cyient** from ahead to mixed. Its 26% revenue growth is mostly bought (Kinetic, TAO Digital), and net profit fell 8%. I agree with the rest, adding what the points missed: Fairchem's land purchase from its chairman, Garware's margin-guide rise to 27%, Tinna's ₹250cr plan, and the weaker standalone business at Mahindra Holidays.
+
+**Top 12:** CleanMax (price drift only) and Mahindra Lifespace (reserve; lumpy quarterly revenue) were touched, but no trigger was hit, so nothing changed.
