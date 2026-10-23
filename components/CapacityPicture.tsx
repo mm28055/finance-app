@@ -98,26 +98,27 @@ export function CapacityPicture({ milestones }: { milestones: (projectId: string
             </div>
 
             <div>
-                <Heading>What the Hyderabad plant adds (from Q1 FY30)</Heading>
+                <Heading>What the Hyderabad plant adds (in modules from FY28, complete by Q1 FY30)</Heading>
                 <div className="flex flex-col gap-3">
-                    <Bar label="Castings" sub="to 36,000 t a year" right="about +46%">
-                        <Split base={24600} add={11400} baseLabel="today ~24,000 t" addLabel="+11,400 t" />
+                    <Bar label="Castings" sub="to about 36,000 t a year" right="about +48%">
+                        <Split base={24000} add={11400} baseLabel="today 24,000 t" addLabel="+11,400 t" />
                     </Bar>
                     <Bar label="Machine hours" sub="to 10.8 lakh" right="+50%">
                         <Split base={7.2} add={3.6} baseLabel="today 7.2 lakh" addLabel="+3.6 lakh" />
                     </Bar>
                 </div>
                 <p className="text-[11px] text-gray-500 mt-2 sm:ml-[9.25rem]">About ₹350cr of extra sales a year at the guided 1.2x asset turn</p>
+                <p className="text-[10px] text-gray-400 mt-1 sm:ml-[9.25rem]">Management's casting figures don't quite add up: 24,000 t + 11,400 t is 35,400 t, but they say 36,000 t</p>
             </div>
 
             <div>
-                <Heading>What the Bengaluru plant adds (by FY31)</Heading>
+                <Heading>What the ₹450cr Bengaluru capex adds (in phases, by FY31)</Heading>
                 <div className="flex flex-col gap-3">
-                    <Bar label="Laminations" sub="to 160,000 t a year" right="about +48%">
+                    <Bar label="Laminations and sheet metal" sub="to 160,000 t a year" right="about +48%">
                         <Split base={108000} add={52000} baseLabel="today 108,000 t" addLabel="+52,000 t" />
                     </Bar>
                 </div>
-                <p className="text-[11px] text-gray-500 mt-2 sm:ml-[9.25rem]">Machining to 13.14 lakh hours. One new plant that brings its Karnataka units together</p>
+                <p className="text-[11px] text-gray-500 mt-2 sm:ml-[9.25rem]">Machining to 13.14 lakh hours in all. Capacity is added first at existing and leased premises; the new plant then consolidates the laminations operations</p>
             </div>
 
             <div>
@@ -150,10 +151,10 @@ export function CapacityPicture({ milestones }: { milestones: (projectId: string
                         </Stop>
                         <Stop when="Q1 FY30" dot={{ border: `2px solid ${C.added}` }}>
                             <ul className="flex flex-col gap-1.5">{hyderabad.map(c => <Milestone key={c.id} c={c} />)}</ul>
-                            <p className="text-[10px] text-gray-400 mt-1">Land acquisition started; date unchanged since May</p>
+                            <p className="text-[10px] text-gray-400 mt-1">Land acquisition started; date unchanged since May. Modules start coming in from FY28</p>
                         </Stop>
                         <Stop when="By FY31" dot={{ border: '2px dashed #9CA3AF' }}>
-                            <p className="text-[11px] text-gray-600 leading-snug">Bengaluru plant ready: laminations to 160,000 t</p>
+                            <p className="text-[11px] text-gray-600 leading-snug">Bengaluru capex done, in phases: laminations to 160,000 t, machining to 13.14 lakh hours</p>
                             <p className="text-[10px] text-gray-400 mt-1">Board approved 22 Oct 2026</p>
                         </Stop>
                     </div>
