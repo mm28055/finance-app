@@ -748,7 +748,7 @@ export const softwareProducts: SectorOverview = {
         {
             company: 'Zaggle Prepaid', rank: 8, stance: 'TURNAROUND', segment: BANK,
             what: "A Hyderabad-based spend-management company: employee-benefit and expense cards, accounts-payable software (Zoyer), channel rewards (Propel) and fuel cards for 4,065 companies, issued with 19 partner banks.",
-            view: "**A real franchise that has never produced free cash.** Users rose 19%, churn is below 1.5% and net cash is about ₹500cr. But free cash has been negative every year since FY23 (about −₹368cr in total), program-fee growth slowed to 10%, the margin fell to 8.2% as development is now expensed. A new Group CFO, Venkatesh Ramachandran, joined on 18 May 2026 after the previous CFO resigned in April. The price needs about {need:Zaggle Prepaid|12}% a year against my ~10%.",
+            view: "**A real franchise that has never produced free cash.** Users rose 19%, churn is below 1.5% and net cash is about ₹500cr. But free cash has been negative every year since FY23 (about −₹368cr in total), program-fee growth slowed to 10%, the margin fell to 8.2% as development is now expensed. A new Group CFO, Venkatesh Ramachandran, joined on 18 May 2026 after the previous CFO resigned in April. The price needs about {need:Zaggle Prepaid|12}% a year against my ~10%. 23 Oct 2026: stays wait though the price now fits; free cash has been negative every year since FY23.",
             watch: 'A Q2 operating-cash figure, and a positive one by H2; program-fee growth back above 20% as the Dice contracts transfer.',
         },
         {
@@ -760,8 +760,8 @@ export const softwareProducts: SectorOverview = {
         {
             company: 'eMudhra', rank: 10, stance: 'SCALEUP', segment: GOV,
             what: "A Bengaluru-based digital-trust company: India's largest licensed certifying authority, plus identity, certificate-management and e-signature software sold in India, the US, Europe and the Middle East.",
-            view: "**Good products, an open governance question.** Profit rose 27.9% and the margin reached 26.2% in Q1, and shorter certificate lives and post-quantum rules are real tailwinds. But organic growth was about 15% against 18% guided, free cash was −₹52cr in FY26, and the 3i Infotech claim of ₹128cr-plus now involves the police while the chairman owns shares in the claimant. The price needs about {need:eMudhra|23}% a year against my ~18%.",
-            watch: 'The 3i Infotech matter resolved or provided for; trust revenue recovering after token recertification; positive free cash in FY27.',
+            view: "**Good products, an open governance question.** Profit rose 27.9% and the margin reached 26.2% in Q1, and shorter certificate lives and post-quantum rules are real tailwinds. But organic growth was about 15% against 18% guided, free cash was −₹52cr in FY26, and the 3i Infotech claim of ₹128cr-plus now involves the police while the chairman owns shares in the claimant. The price needs about {need:eMudhra|23}% a year against my ~18%. 23 Oct 2026: stays wait though the price now fits after a 20% fall; on 22 October it said it will leave the global SSL/TLS certificate business (about 1% of revenue) after browsers distrusted some of its certificates, and for a company that sells trust that matters more than the revenue. The 3i Infotech claim is still open.",
+            watch: 'The 3i Infotech matter resolved or provided for; no spill-over from the October TLS incident to its Indian licence or enterprise customers; positive free cash in FY27.',
         },
         {
             company: 'Amagi Media Labs', rank: 11, stance: 'PRICED', segment: SAAS,
