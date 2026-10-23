@@ -110,5 +110,13 @@
     "old": "INE133A01011",
     "new": "INE133A01029",
     "source": "NSE symbol JSWDULUX"
+  },
+  {
+    "date": "2026-10-23T17:21:28.927Z",
+    "company": "Bonfiglioli Transmissions",
+    "field": "isin",
+    "old": null,
+    "new": "INE28SO01013",
+    "source": "name match \"Bonfiglioli Transmissions Limited\""
   }
 ]

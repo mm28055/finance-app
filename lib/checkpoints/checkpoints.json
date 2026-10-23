@@ -1816,7 +1816,10 @@
    "target": 13,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "13.2%",
+   "resolvedOn": "2026-10-23",
+   "resolvedBy": "auto"
   },
   {
    "id": "kross-q4fy27-1",
@@ -4683,7 +4686,10 @@
    "ifMet": "Own after two such quarters with positive free cash",
    "ifMissed": "Stay follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "12.5%",
+   "resolvedOn": "2026-10-23",
+   "resolvedBy": "auto"
   },
   {
    "id": "rossari-biotech-q2fy27-2",
@@ -7177,7 +7183,10 @@
    "target": 8,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "6.5%",
+   "resolvedOn": "2026-10-23",
+   "resolvedBy": "auto"
   },
   {
    "id": "orient-electric-q3fy27-1",
