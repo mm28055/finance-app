@@ -1170,3 +1170,6 @@
 
 ## Windlas Biotech
 - capacity.utilisation: "About 65%, near the 60–70% it treats as full" → "About 65% (an analyst's figure, not confirmed by management), near the 60–65% it treats as peak (can stretch to about 70%)" — The 65% came from an analyst's question; management gave 60–65% as peak, stretchable to about 70% (Q1 FY27 call (official NSE transcript): "60% to 65% is the highest peak utilization level for our kind of business")
+
+## Sharda Motor (follow-up check, 23 Oct)
+- capacity.utilisation: "Emissions capacity 'can grow without capex'; ..." → "Emissions capacity is easy to add, with 'very limited' capex (May 2026 call); ..." — official Q4 FY26 transcript: "capacity augmentation is relatively straightforward, and capex involved is also very limited"
