@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-10-23",
  "capacity": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -2273,9 +2273,9 @@
    "company": "CCL Products",
    "sector": "Food Products",
    "today": "About 77,000 t a year of instant coffee: Duggirala and Kuppam (Andhra Pradesh) and Vietnam; room to grow to 1–1.2 lakh t on existing sites",
-   "utilisation": "65–70% overall in Q1 FY27, higher for freeze-dried; target 72–73% this year and 80–85% in FY28",
-   "capexStatus": "Big build done in FY22–FY25 (Vietnam and freeze-dried); no expansion planned for two years, only ₹25–35cr of maintenance; new capacity would be brownfield, 9–12 months to add",
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note"
+   "utilisation": "About 70% overall in Q2 FY27; freeze-dried higher and likely close to full in 12–18 months; spray-dried has room for 2–3 years; expands at 80–85%",
+   "capexStatus": "Big build done in FY22–FY25 (Vietnam and freeze-dried); FY27 capex ₹25–50cr; weighing a brownfield freeze-dried line of about 6,000 t in India or Vietnam (about ₹500cr last time, 9–12 months to build), not yet decided",
+   "source": "Q2 FY27 call (16 Oct 2026), Q1 FY27 call (Jul 2026) and sector note"
   },
   {
    "company": "Godrej Agrovet",
@@ -4652,10 +4652,10 @@
    "company": "E2E Networks",
    "sector": "Software",
    "today": "About 5,100 Nvidia GPUs (H100, H200, B200) in rented data-centre space, including 1,024 B200s live since mid-May 2026",
-   "utilisation": "Near maximum in Q1 FY27 (B200s 'quite a maximal utilization'); about 80% (below 85%) across GPUs and storage in March 2026",
-   "fullUse": "Already running near full: June 2026 run-rate ₹71.8cr a month, about ₹860cr a year",
-   "capexStatus": "Second 1,024-B200 lot being installed, more Blackwell and Vera Rubin GPUs planned; no capex guidance; borrowing up from about ₹103cr to about ₹450cr and rising",
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call and sector note"
+   "utilisation": "The first B200 cluster is fully used on the ₹1,000cr sovereign-AI contract (Q2 FY27 call); management no longer gives a utilisation figure and uses some GPUs for its own platform work",
+   "fullUse": "Run-rate ₹75.1cr a month in September 2026 (₹71.8cr in June), about ₹900cr a year",
+   "capexStatus": "Second 1,024-B200 lot due to go live in Q3 FY27; more Blackwell, B300 and Vera Rubin GPUs to be announced when firm; no capex guidance; borrowings ₹450cr at September",
+   "source": "Q2 FY27 call and presentation (21 Oct 2026), Q1 FY27 call (Jul 2026)"
   },
   {
    "company": "Route Mobile",
@@ -4895,9 +4895,9 @@
    "company": "Emmvee Photovoltaic Power Ltd",
    "sector": "Solar PV Cells EPC",
    "today": "Bengaluru: 10.3 GW of TOPCon modules (two 2.5 GW lines added at Solibele in FY26) and 2.94 GW of TOPCon cells",
-   "utilisation": "Q1 FY27: cells 83% (79% in Q4; peak about 85–90%), modules 45% (peak about 65%, limited by cell supply)",
+   "utilisation": "Cells 89% and modules 44% in Q2 FY27 (83% and 45% in Q1)",
    "capexStatus": "6 GW cell-and-module plant at Devanahalli (about ₹5,500cr, IREDA loan ₹3,306cr; modules by Dec 2026, cells by Mar 2027); 9 GW ingot-and-wafer plant (₹5,000–5,500cr, mainly own cash) planned for FY29–FY30",
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call and sector note"
+   "source": "Q2 FY27 investor presentation (Oct 2026), Q1 FY27 call (Jul 2026)"
   },
   {
    "company": "Clean Max Env. Energ",

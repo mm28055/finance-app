@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21",
+ "updated": "2026-10-23",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -12371,12 +12371,12 @@
    "sector": "Software",
    "name": "Second 1,024-GPU B200 lot",
    "what": "Another 1,024 Nvidia B200 GPUs, after the first lot went live in mid-May 2026 and ran nearly full",
-   "cost": "Not given; borrowing rose from about ₹103cr to about ₹450cr and will rise with this lot",
+   "cost": "Not given; borrowing rose from about ₹103cr to about ₹450cr by June and held there in September; it will rise with this lot",
    "expectedStart": "Q3 FY27",
    "adds": "More rentable capacity; the first lot helped lift the monthly run-rate from ₹37.4cr (March) to ₹71.8cr (June)",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026): 'next couple of months', slipped from 'a couple of months' in April",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (21 Oct 2026): expected to go live 'this quarter'; no contract decided for it yet. Q1 FY27 call (Jul 2026): 'next couple of months'",
+   "updatedOn": "2026-10-23",
    "capacityAdd": "+1,024 B200 GPUs, about +20% on ~5,100 GPUs (doubles its B200s)"
   },
   {

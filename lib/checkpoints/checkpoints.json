@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -7735,7 +7735,8 @@
    "status": "met",
    "actual": "24.6%",
    "resolvedOn": "2026-10-22",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Moved wait → follow (margin 24.6% held and the price now fits)"
   },
   {
    "id": "bajaj-consumer-care-q4fy27-1",
@@ -10204,7 +10205,11 @@
    "text": "Operating profit per kilo holding at ₹135–140 as freeze-dried grows",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹135–140 a kilo held in Q2, the CEO said on the 16 Oct call",
+   "resolvedOn": "2026-10-23",
+   "resolvedBy": "review",
+   "outcome": "Stays own"
   },
   {
    "id": "ccl-products-q4fy27-1",
@@ -10222,7 +10227,13 @@
    "text": "Gross debt down to near ₹1,000cr by March 2027",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-16",
+     "text": "In the Q2 FY27 call the CFO restated FY27 guidance as gross debt of ₹1,000–1,200cr and net debt about ₹800cr; gross was ₹1,192cr and net ₹742cr at September, with the Vietnam buying season ahead"
+    }
+   ]
   },
   {
    "id": "godrej-agrovet-q2fy27-1",
@@ -14494,7 +14505,11 @@
    "due": "Q2 FY27",
    "ifMet": "Price could fit if the deal carries an advertising share",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Still under negotiation at the 15 Oct 2026 call; management expects most of it done in Q3",
+   "resolvedOn": "2026-10-23",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "tips-music-q4fy27-3",
@@ -20162,7 +20177,8 @@
    "status": "met",
    "actual": "₹73cr",
    "resolvedOn": "2026-10-22",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Moved to own (price fits; debt held at ₹450cr)"
   },
   {
    "id": "e2e-networks-q2fy27-2",
@@ -20177,7 +20193,8 @@
    "status": "met",
    "actual": "76.3%",
    "resolvedOn": "2026-10-22",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Moved to own; management keeps a 70%-plus medium-term aim"
   },
   {
    "id": "e2e-networks-q3fy27-1",
@@ -21329,7 +21346,8 @@
    "status": "partly",
    "actual": "₹557cr",
    "resolvedOn": "2026-10-22",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow; H2 now needs about ₹648cr a quarter for the ₹2,400cr target"
   },
   {
    "id": "emmvee-photovoltaic-power-ltd-q4fy27-1",
@@ -36365,6 +36383,78 @@
    "ifMissed": "Capacity sits idle and returns stay low",
    "createdOn": "2026-10-21",
    "status": "pending"
+  },
+  {
+   "createdOn": "2026-10-23",
+   "status": "pending",
+   "id": "ccl-products-q4fy27-3",
+   "company": "CCL Products",
+   "sector": "Food Products",
+   "text": "Net debt about ₹800cr or less at March 2027 after the Vietnam buying season",
+   "due": "Q4 FY27"
+  },
+  {
+   "createdOn": "2026-10-23",
+   "status": "pending",
+   "id": "ccl-products-q4fy27-4",
+   "company": "CCL Products",
+   "sector": "Food Products",
+   "text": "A decision on the next freeze-dried line (about 6,000 t) announced, with its place and cost",
+   "due": "Q4 FY27"
+  },
+  {
+   "createdOn": "2026-10-23",
+   "status": "pending",
+   "company": "SG Finserve",
+   "sector": "Finance",
+   "id": "sg-finserve-q4fy27-1",
+   "text": "Loan book near ₹7,000cr by March 2027 with bad loans (90+ days unpaid) still nil",
+   "due": "Q4 FY27"
+  },
+  {
+   "createdOn": "2026-10-23",
+   "status": "pending",
+   "company": "SG Finserve",
+   "sector": "Finance",
+   "id": "sg-finserve-q4fy27-2",
+   "text": "Pre-tax profit of about ₹300cr for FY27, as guided (₹150cr in H1)",
+   "due": "Q4 FY27"
+  },
+  {
+   "createdOn": "2026-10-23",
+   "status": "pending",
+   "company": "SG Finserve",
+   "sector": "Finance",
+   "id": "sg-finserve-q1fy28-1",
+   "text": "The first of the 12 project-finance borrowers starts commercial operation (6–9 months from the October 2026 call)",
+   "due": "Q1 FY28"
+  },
+  {
+   "createdOn": "2026-10-23",
+   "status": "pending",
+   "company": "E2E Networks",
+   "sector": "Software",
+   "id": "e2e-networks-q4fy27-1",
+   "text": "Monthly revenue run-rate above ₹90cr by March 2027 (₹75.1cr in September) as the second B200 lot fills",
+   "due": "Q4 FY27"
+  },
+  {
+   "createdOn": "2026-10-23",
+   "status": "pending",
+   "company": "Tips Music",
+   "sector": "Media and Entertainment",
+   "id": "tips-music-q3fy27-1",
+   "text": "YouTube Shorts renewal signed (management now expects it in Q3)",
+   "due": "Q3 FY27"
+  },
+  {
+   "createdOn": "2026-10-23",
+   "status": "pending",
+   "company": "Bajaj Consumer Care",
+   "sector": "Consumer Durables",
+   "id": "bajaj-consumer-care-q3fy27-1",
+   "text": "Almond Drops unit volume still growing after the Q3 price rise of about 5% (half through smaller packs)",
+   "due": "Q3 FY27"
   }
  ]
 }

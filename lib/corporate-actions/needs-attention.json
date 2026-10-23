@@ -2137,7 +2137,8 @@
     "sector": "Consumer Durables",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-21"
+    "addedOn": "2026-10-21",
+    "handled": "2026-10-23: Handled with the Q2 call: price now fits and margin held; moved wait → follow (not own until the promoter flat payments are explained)."
   },
   {
     "company": "AvenuesAI",
@@ -2347,28 +2348,32 @@
     "sector": "Media and Entertainment",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-22"
+    "addedOn": "2026-10-22",
+    "handled": "2026-10-23: Q2 revenue +35%, profit +23%, 70.5% margin; H1 content ₹71cr of ₹90–100cr; \"will exceed\" 20% guide; buyback done; Shorts deal still unsigned (checkpoint missed, re-set for Q3); CEO not replaced. Stays wait (price full)."
   },
   {
     "company": "Bajaj Consumer Care",
     "sector": "Consumer Durables",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-22"
+    "addedOn": "2026-10-22",
+    "handled": "2026-10-23: Q2 sales ~+25% to ₹333cr, margin 25% held despite 59.9% gross margin; FY27 high-teens growth expected; ~5% price rise in Q3. Moved wait → follow."
   },
   {
     "company": "SG Finserve",
     "sector": "Finance",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-22"
+    "addedOn": "2026-10-22",
+    "handled": "2026-10-23: Q2 book ~₹5,700cr (+25% q/q), record ₹59cr profit, nil bad loans; guide raised to 30–35% book and 35–40% profit growth, ~₹7,000cr by March; borrowing cap raised to 4x equity. Card and verdict updated, three checkpoints added. Stays follow (no growth estimate until the refresh)."
   },
   {
     "company": "E2E Networks",
     "sector": "Software",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-22"
+    "addedOn": "2026-10-22",
+    "handled": "2026-10-23: Q2 revenue ₹224cr (+43% q/q), profit ₹73cr, 77% margin, debt flat at ₹450cr, run-rate ₹75.1cr; B200 cluster on the ₹1,000cr contract. Both conditions met and price fits: moved follow → own (small size), ranked first."
   },
   {
     "company": "Shoppers Stop",
@@ -2382,14 +2387,16 @@
     "sector": "Food Products",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-22"
+    "addedOn": "2026-10-22",
+    "handled": "2026-10-23: Q2 volume +10–15%, operating profit +9.5%, profit +29%; FY27 15% guide kept; net debt ₹742cr; freeze-dried line being weighed. ₹135–140/kg checkpoint met; debt checkpoint revised. Stays own (price fits)."
   },
   {
     "company": "Emmvee Photovoltaic Power Ltd",
     "sector": "Solar PV Cells EPC",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-22"
+    "addedOn": "2026-10-22",
+    "handled": "2026-10-23: Transcript not yet filed; used the Q2 presentation and filings. Operating profit ₹557cr (35%), cells 89% used, order book 10.4 GW; H1 operating cash ~₹410cr of ₹1,105cr; ₹2,400cr target now needs ~₹648cr/quarter. Stays follow (price fits, cash conversion under half)."
   },
   {
     "company": "Transformers & Rect",
@@ -2403,7 +2410,8 @@
     "sector": "Consumer Durables",
     "subject": "Checkpoint met: bajaj-consumer-care-q2fy27-1",
     "why": "Operating margin holding above 21% through the costlier second quarter — actual 24.6% (met). View improves if it holds 22%+ Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-22"
+    "addedOn": "2026-10-22",
+    "handled": "2026-10-23: 24.6% margin; outcome written (moved to follow)."
   },
   {
     "company": "Transformers & Rect",
@@ -2417,20 +2425,23 @@
     "sector": "Software",
     "subject": "Checkpoint met: e2e-networks-q2fy27-1",
     "why": "Q2 shows the Q1 profit (₹43.9cr) is repeatable — actual ₹73cr (met). Buy on a pullback Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-22"
+    "addedOn": "2026-10-22",
+    "handled": "2026-10-23: Q2 profit ₹73cr repeats Q1; outcome written (moved to own)."
   },
   {
     "company": "E2E Networks",
     "sector": "Software",
     "subject": "Checkpoint met: e2e-networks-q2fy27-2",
     "why": "Operating margin stays near the ~70% long-term aim (75% in Q1), which management calls sustainable — actual 76.3% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-22"
+    "addedOn": "2026-10-22",
+    "handled": "2026-10-23: Q2 margin 76.6%; outcome written."
   },
   {
     "company": "Emmvee Photovoltaic Power Ltd",
     "sector": "Solar PV Cells EPC",
     "subject": "Checkpoint partly: emmvee-photovoltaic-power-ltd-q2fy27-1",
     "why": "Quarterly operating profit above ₹600cr (about ₹617cr a quarter needed for the FY27 target; best so far ₹571cr) — actual ₹557cr (partly).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-22"
+    "addedOn": "2026-10-22",
+    "handled": "2026-10-23: ₹557cr against ₹600cr; outcome written, stays follow."
   }
 ]
