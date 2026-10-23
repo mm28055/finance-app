@@ -4,6 +4,7 @@ import { Eye, Factory } from 'lucide-react';
 import { type Checkpoint, dueRank, formatTarget } from '@/lib/checkpoints/types';
 import { type Project, type Capacity, PROJECT_STATUS_LABEL } from '@/lib/projects/types';
 import { STATUS_STYLE } from './checkpoint-status';
+import { CapacityPicture, PICTURE_COMPANIES } from './CapacityPicture';
 
 // Settled ones first (latest on top), then pending ones soonest first.
 const byStatusThenDue = (a: Checkpoint, b: Checkpoint) => {
@@ -143,6 +144,7 @@ export function CompanyCheckpoints({ checkpoints, projects, capacity }: { checkp
             {(projects.length > 0 || capacity) && (
                 <section className={general.length ? 'pt-4 border-t border-gray-100' : ''}>
                     <SectionTitle icon={Factory}>Capacity and projects</SectionTitle>
+                    {capacity && PICTURE_COMPANIES.has(capacity.company) ? <CapacityPicture milestones={milestones} /> : <>
                     {capacity && (
                         <div className="rounded-lg bg-[#F8FAFC] px-3 py-2.5 mb-3">
                             <dl className="grid grid-cols-[5.5rem_1fr] gap-x-3 gap-y-1.5">
@@ -183,6 +185,7 @@ export function CompanyCheckpoints({ checkpoints, projects, capacity }: { checkp
                             );
                         })}
                     </div>
+                    </>}
                 </section>
             )}
         </div>
