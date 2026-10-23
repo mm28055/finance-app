@@ -96,6 +96,7 @@ export interface EnrichedCompany {
     checkpoints?: import('@/lib/checkpoints').Checkpoint[];
     projects?: import('@/lib/projects/types').Project[];
     capacity?: import('@/lib/projects/types').Capacity;
+    picture?: import('@/lib/projects/types').CapacityPictureData;
     management?: import('@/lib/management/types').Management;
     // Shareholding (lib/shareholding.ts). The light load carries only the latest
     // promoter / pledge figures and the warnings; `rows` (oldest first, up to 12)

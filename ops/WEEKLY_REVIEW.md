@@ -97,7 +97,10 @@ original `expectedStart`, and add the new date as a new milestone. Filings that 
 
 **Capacity** (`lib/projects/capacity.json`: `today`, `utilisation`, `fullUse`, `capexStatus`, `source` per company).
 When a new call gives a new utilisation figure or a plant starts, update that company's entry (and `capacityAdd` on
-the project). **Management** (`lib/management/management.json`): when a filing or call announces a new or departing
+the project). **Capacity pictures** (`lib/projects/pictures.json`): the card draws capacity and projects as bars and
+a timeline. Any edit to a company's capacity entry, projects or project milestones makes its picture stale (the card
+falls back to text), so redraw that company's picture in the same run, by `ops/CAPACITY_PICTURES.md`, then run
+`npx tsx scripts/pictures/stamp.ts "<Company>"` and clear its errors. **Management** (`lib/management/management.json`): when a filing or call announces a new or departing
 MD, CEO, CFO or whole-time director, update `people` (add a sourced bio for a newcomer; never invent), set `changes`
 ("CFO X resigned 12 Oct 2026; Y appointed"), `updatedOn`, and add the source link.
 
@@ -190,11 +193,12 @@ Then mark the entry done: add `"handled": "<YYYY-MM-DD>: <one line: what you fou
   rate-limited: one request every 5 seconds at most.
 - Plain English, short sentences, ₹/cr/lakh, bold company names and conclusions, balanced `**`.
 - Never write notes for the "Misc" sector or the portfolio. Never merge sectors. Do not rewrite whole notes: the
-  quarterly refresh does that. Edit only `lib/sector-overviews/**`, `lib/checkpoints/checkpoints.json`, `lib/projects/projects.json`, `lib/projects/capacity.json`, `lib/management/management.json`, `lib/session-todos/todos.json` and `lib/corporate-actions/needs-attention.json`
+  quarterly refresh does that. Edit only `lib/sector-overviews/**`, `lib/checkpoints/checkpoints.json`, `lib/projects/projects.json`, `lib/projects/capacity.json`, `lib/projects/pictures.json`, `lib/management/management.json`, `lib/session-todos/todos.json` and `lib/corporate-actions/needs-attention.json`
   (and `lib/screener-overrides.json` if a company's Screener page cannot otherwise be found).
 
 ## 3. Check, then publish
-1. `npm ci` (once), then `npx tsc --noEmit -p .` — must be clean.
+1. `npm ci` (once), then `npx tsc --noEmit -p .` — must be clean. Then `npx tsx scripts/pictures/check.ts --stale-ok`:
+   no ERROR lines, and no STALE line for a company this run edited.
 2. `npx tsx scripts/check-notes.ts` — must print "All notes pass.", except for problems that were already in the list
    you took before editing (section 1): those are not caused by this run and never block the push. Name them at the
    top of the log entry and still push to master. Only a problem your own edits added, and that you cannot fix, sends

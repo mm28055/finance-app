@@ -4,7 +4,8 @@ import { Eye, Factory } from 'lucide-react';
 import { type Checkpoint, dueRank, formatTarget } from '@/lib/checkpoints/types';
 import { type Project, type Capacity, PROJECT_STATUS_LABEL } from '@/lib/projects/types';
 import { STATUS_STYLE } from './checkpoint-status';
-import { CapacityPicture, PICTURE_COMPANIES } from './CapacityPicture';
+import { CapacityPicture } from './CapacityPicture';
+import type { CapacityPictureData } from '@/lib/projects/types';
 
 // Settled ones first (latest on top), then pending ones soonest first.
 const byStatusThenDue = (a: Checkpoint, b: Checkpoint) => {
@@ -107,7 +108,7 @@ function Row({ label, children }: { label: string; children: React.ReactNode }) 
 
 // "What we were watching": the note's expectations for this company, grouped by the quarter that
 // settles them, and its capacity and projects (plants and expansions with their milestones).
-export function CompanyCheckpoints({ checkpoints, projects, capacity }: { checkpoints: Checkpoint[]; projects: Project[]; capacity?: Capacity }) {
+export function CompanyCheckpoints({ checkpoints, projects, capacity, picture }: { checkpoints: Checkpoint[]; projects: Project[]; capacity?: Capacity; picture?: CapacityPictureData }) {
     const general = checkpoints.filter(c => !c.project).sort(byStatusThenDue);
     const milestones = (id: string) => checkpoints.filter(c => c.project === id).sort(byStatusThenDue);
     if (!general.length && !projects.length && !capacity) return null;
@@ -144,7 +145,7 @@ export function CompanyCheckpoints({ checkpoints, projects, capacity }: { checkp
             {(projects.length > 0 || capacity) && (
                 <section className={general.length ? 'pt-4 border-t border-gray-100' : ''}>
                     <SectionTitle icon={Factory}>Capacity and projects</SectionTitle>
-                    {capacity && PICTURE_COMPANIES.has(capacity.company) ? <CapacityPicture milestones={milestones} /> : <>
+                    {picture ? <CapacityPicture data={picture} checkpoints={checkpoints} /> : <>
                     {capacity && (
                         <div className="rounded-lg bg-[#F8FAFC] px-3 py-2.5 mb-3">
                             <dl className="grid grid-cols-[5.5rem_1fr] gap-x-3 gap-y-1.5">

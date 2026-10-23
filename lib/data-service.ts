@@ -5,7 +5,7 @@ import { getCompanyEventChips } from './events/server';
 import { annualReportFor } from './annual-reports/server';
 import { shiftFor, shiftChipFor } from './business-shift/server';
 import { checkpointsFor } from './checkpoints';
-import { projectsFor, capacityFor } from './projects';
+import { projectsFor, capacityFor, pictureFor } from './projects';
 import { managementFor } from './management';
 import { SectorData, EnrichedCompany } from '@/components/SectorList';
 import type { CompanyFinancials, MetricData } from '@/components/FinancialMatrix';
@@ -475,6 +475,7 @@ export async function getCompanyDetail(id: string): Promise<EnrichedCompany | nu
         checkpoints: checkpointsFor(co.name),
         projects: projectsFor(co.name),
         capacity: capacityFor(co.name),
+        picture: pictureFor(co.name),
         management: managementFor(co.name),
         filingHeadlines: getCompanyFilingHeadlines(co.name),
         newsFlag: getCompanyNewsFlag(co.name),

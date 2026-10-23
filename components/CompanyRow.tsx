@@ -774,7 +774,7 @@ ${company.shiftChip.segment}: ${company.shiftChip.from}% of revenue now, about $
                                             return trend && trend.length >= 2 ? <FinancialTrendChart history={trend} /> : null;
                                         })()}
                                         {((effective.checkpoints?.length ?? 0) > 0 || (effective.projects?.length ?? 0) > 0 || !!effective.capacity) && (
-                                            <CompanyCheckpoints checkpoints={effective.checkpoints || []} projects={effective.projects || []} capacity={effective.capacity} />
+                                            <CompanyCheckpoints checkpoints={effective.checkpoints || []} projects={effective.projects || []} capacity={effective.capacity} picture={effective.picture} />
                                         )}
                                         {effective.holding?.rows && effective.holding.rows.length > 0 && (
                                             <HoldingCard holding={effective.holding} companyId={company.id} />
