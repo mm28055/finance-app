@@ -585,7 +585,7 @@ export const industrialsComponents: SectorOverview = {
         {
             company: 'Pitti Engineering', rank: 1, stance: 'COMPOUNDER', segment: QUAL,
             what: "Electrical-steel laminations, stator and rotor assemblies, castings and machined parts for motors and generators, sold to Wabtec, Siemens, Cummins, Caterpillar, ABB and Nidec.",
-            view: "**The strongest recurring position in the sector, at a price that fits.** Designed into customers' motors with steel passed through, assemblies +37% in Q1, targets raised and about ₹370cr of FY27 operating profit guided. But return on capital fell from 19% to 15%, profit before tax was flat in Q1, and net leverage sits above Ind-Ra's downgrade trigger while two more plants are planned. The price needs about {need:Pitti Engineering|20}% a year against my ~20%.",
+            view: "**The strongest recurring position in the sector, at a price that fits.** Designed into customers' motors with steel passed through, assemblies +37% in Q1, targets raised and about ₹370cr of FY27 operating profit guided. But return on capital fell from 19% to 15%, profit before tax was flat in Q1, and net leverage sits above Ind-Ra's downgrade trigger while two more plants are built: the ₹290cr Hyderabad casting plant and a ₹450cr Bengaluru lamination plant approved on 22 October, partly with debt. The price needs about {need:Pitti Engineering|20}% a year against my ~20%.",
             watch: 'Margin moving from 16.8% in Q1 FY27 (company’s adjusted figure) towards the 18%-plus management expects as new capacity fills (about 17% in FY28; it gives no quarterly path); net debt below ₹491cr while the ₹290cr plant is built; direct exports growing again.',
         },
         {
