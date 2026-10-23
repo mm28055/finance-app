@@ -1,6 +1,24 @@
 {
  "changes": [
   {
+   "date": "2026-10-24",
+   "company": "Bajaj Consumer Care",
+   "sector": "Consumer Durables",
+   "from": "wait",
+   "to": "follow",
+   "price": 396.95,
+   "why": "A real turnaround at a price that now fits; I would own it once the promoter payments are explained."
+  },
+  {
+   "date": "2026-10-24",
+   "company": "E2E Networks",
+   "sector": "Software",
+   "from": "follow",
+   "to": "own",
+   "price": 566.05,
+   "why": ", in small size. Q2 showed the Q1 profit repeats and debt stopped outrunning revenue, and the price fits my estimate; GPU rents are the risk."
+  },
+  {
    "date": "2026-10-22",
    "company": "Euro Pratik Sales",
    "sector": "Consumer Durables",
