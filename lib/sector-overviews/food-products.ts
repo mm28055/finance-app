@@ -821,7 +821,7 @@ export const foodProducts: SectorOverview = {
         {
             company: 'Vintage Coffee', rank: 11, stance: 'SCALEUP', segment: EXPORT,
             what: "A Hyderabad maker of spray-dried instant coffee for about 20 brand owners, mainly in West Africa, Russia and South-East Asia, on cost-plus terms; building a freeze-dried plant.",
-            view: "**Fast growth, funded by others.** Revenue grew 58% in Q1 at a 19.6% margin, capacity doubled to 11,000 t and is full, and it keeps about 98% of customers. But free cash has been negative in four of five years, the ₹550cr freeze-dried plant needs a ₹300cr foreign-currency loan, promoters own only 34.65% (a pledge on about a quarter of it was released on 6–8 Oct 2026), and there was no investor presentation for the last two quarters. The price needs about {need:Vintage Coffee|19–20}% a year against my ~17%.",
+            view: "**Fast growth, funded by others.** Revenue grew 58% in Q1 at a 19.6% margin, capacity doubled to 11,000 t and is full, and it keeps about 98% of customers. But free cash has been negative in four of five years, the ₹550cr freeze-dried plant needs a ₹300cr foreign-currency loan, promoters own only 34.65% (a pledge on about a quarter of it was released on 6–8 Oct 2026), and there was no investor presentation for the last two quarters. The price needs about {need:Vintage Coffee|19–20}% a year against my ~17%. 23 Oct 2026: stays wait though the price now fits; the pledge release helps, but free cash is negative and the plant is funded with a foreign-currency loan.",
             watch: 'Positive operating cash for FY27 as promised; freeze-dried trials by June 2027; the promoters paying up their warrants in full.',
         },
         {
@@ -833,7 +833,7 @@ export const foodProducts: SectorOverview = {
         {
             company: 'Freshara Agro', rank: 13, stance: 'SCALEUP', segment: EXPORT,
             what: "A Tamil Nadu gherkin processor and exporter working with 4,000+ contract farmers, selling mostly to Russia and Spain, which bought Spain's Sarasa brand out of bankruptcy in 2026; SME-listed, half-yearly results.",
-            view: "**Profits without cash so far.** Revenue has quadrupled since FY24 at a steady 15% filed margin, and FY26 volume of 43,600 t beat its target. But operating cash was −₹57cr in FY26 against ₹38cr of profit, the cash cycle is 328 days, borrowings of ₹180cr equal its net worth and it wants a ₹400cr limit, and a third of sales go to Russia. The price needs about {need:Freshara Agro|17}% a year against my ~14%.",
+            view: "**Profits without cash so far.** Revenue has quadrupled since FY24 at a steady 15% filed margin, and FY26 volume of 43,600 t beat its target. But operating cash was −₹57cr in FY26 against ₹38cr of profit, the cash cycle is 328 days, borrowings of ₹180cr equal its net worth and it wants a ₹400cr limit, and a third of sales go to Russia. The price needs about {need:Freshara Agro|17}% a year against my ~14%. 23 Oct 2026: stays wait though the price now fits; operating cash is negative and the cash cycle is 328 days.",
             watch: 'Positive operating cash in H1 FY27; the Spanish business reaching an 8% profit margin; inventory days falling well below 282.',
         },
         {

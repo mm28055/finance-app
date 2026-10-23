@@ -752,7 +752,7 @@ export const emsElectronics: SectorOverview = {
         {
             company: 'Aimtron', rank: 7, stance: 'SCALEUP', segment: HIGHMIX,
             what: "Vadodara design-led electronics maker (box-builds and boards) for industrial, telecom, power, data-centre, rail and defence customers, with a US rugged-electronics subsidiary (AIC); listed on the NSE SME platform and reporting half-yearly.",
-            view: "**Fast growth that has not yet produced cash.** FY26 revenue rose 89% to ₹301cr at a 20% margin, the group order book was about ₹600cr at the April call (including the US business), and FY27 guidance is ₹450–550cr. But operating cash was −₹40cr, working capital is 256 days, the auditor lists control gaps, and about 27% of FY25 sales went to promoter-owned US companies. The price needs about {need:Aimtron|33}% a year against my ~28%.",
+            view: "**Fast growth that has not yet produced cash.** FY26 revenue rose 89% to ₹301cr at a 20% margin, the group order book was about ₹600cr at the April call (including the US business), and FY27 guidance is ₹450–550cr. But operating cash was −₹40cr, working capital is 256 days, the auditor lists control gaps, and about 27% of FY25 sales went to promoter-owned US companies. The price needs about {need:Aimtron|33}% a year against my ~28%. 23 Oct 2026: stays wait though the price now fits; operating cash is negative and a quarter of sales went to promoter-owned firms.",
             watch: 'H1 FY27 revenue above ₹200cr with positive operating cash; what the ₹205cr raise is spent on; AIC margin rising from 11%.',
         },
         {

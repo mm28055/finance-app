@@ -817,7 +817,7 @@ export const autoRelatedMetal: SectorOverview = {
         {
             company: 'Menon Bearings', rank: 7, stance: 'SCALEUP', segment: ENGINE,
             what: "A Kolhapur maker of bi-metal engine bearings and bushes for tractors, trucks and transmissions, with aluminium die-casting (Menon Alkop) and brake-lining subsidiaries; about a third exported.",
-            view: "**Growing fast with real pricing power, but cash and governance lag.** Q1 sales rose 37% at a 22% margin, it passed on a steep copper rise, and ₹360cr of FY27 revenue looks conservative. But only 36% of FY26 operating profit became cash, debtor days rose to 111, the promoter family sold 1.8% while promoting the story, and ₹19.5cr a year goes to the chairman's firm. The price needs about {need:Menon Bearings|21}% a year against my ~18%.",
+            view: "**Growing fast with real pricing power, but cash and governance lag.** Q1 sales rose 37% at a 22% margin, it passed on a steep copper rise, and ₹360cr of FY27 revenue looks conservative. But only 36% of FY26 operating profit became cash, debtor days rose to 111, the promoter family sold 1.8% while promoting the story, and ₹19.5cr a year goes to the chairman's firm. The price needs about {need:Menon Bearings|21}% a year against my ~18%. 23 Oct 2026: stays wait though the price now fits; only 36% of FY26 operating profit became cash and promoters have been selling.",
             watch: 'Operating cash above 60% of operating profit in FY27; no further promoter selling; first railway brake orders.',
         },
         {
