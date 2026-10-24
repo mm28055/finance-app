@@ -25,7 +25,7 @@ export const realty: SectorOverview = {
         inputs: realtyValuationInputs,
         // My base-case earnings growth, % a year over three to five years (section 6).
         myGrowth: {
-            'Arvind SmartSpaces': 18,
+            'Arvind SmartSpaces': 15,
             'Keystone Realtors': 20,
             'Sunteck Realty': 18,
             'Mahindra Life. Dev': 18,
@@ -680,7 +680,7 @@ export const realty: SectorOverview = {
                 },
                 {
                     label: 'My outlook',
-                    text: "**I expect Sobha to grow earnings at about 22% a year, Keystone at about 20%, Arvind, Sunteck, Mahindra Lifespace, Ashiana and Sri Lotus at about 18%, Brigade and Puravankara at about 15%, Raymond, Shriram and Eldeco at about 12%, Ajmera, Arkade and Arihant at about 10%, Suraj and Marathon at about 6%, and Ganesh at about 5%.** Sobha's and Keystone's figures start from profits held down by old low-price projects, so part of their growth is recovery; Puravankara's depends on interest falling. Raymond's, Ganesh's and Sri Lotus's start near a high point, because Thane profit, land sales and percentage-of-completion accounting have already lifted them. Max Estates and Signatureglobal have no meaningful profit base to grow from, so I give no figure.",
+                    text: "**I expect Sobha to grow earnings at about 22% a year, Keystone at about 20%, Sunteck, Mahindra Lifespace, Ashiana and Sri Lotus at about 18%, Arvind, Brigade and Puravankara at about 15%, Raymond, Shriram and Eldeco at about 12%, Ajmera, Arkade and Arihant at about 10%, Suraj and Marathon at about 6%, and Ganesh at about 5%.** Arvind's is cut from 18% on 24 Oct: its last four quarters include one unusually profitable handover (Orchards Phase 1, a 49% margin in Q1), and the guided 25–30% bookings growth at a 22–25% margin on new sales works out to about 15% a year from that profit. Sobha's and Keystone's figures start from profits held down by old low-price projects, so part of their growth is recovery; Puravankara's depends on interest falling. Raymond's, Ganesh's and Sri Lotus's start near a high point, because Thane profit, land sales and percentage-of-completion accounting have already lifted them. Max Estates and Signatureglobal have no meaningful profit base to grow from, so I give no figure.",
                 },
             ],
             tables: [
@@ -691,7 +691,7 @@ export const realty: SectorOverview = {
                     rows: [
                         ['Sobha', 'Handovers of homes sold at higher prices; margin back to 17–20%', '12% / **22%** / 30%'],
                         ['Keystone Realtors', 'Legacy projects rolling off; cluster launches', '12% / **20%** / 28%'],
-                        ['Arvind SmartSpaces', 'Bookings +25–30% a year; Bengaluru and Mumbai', '10% / **18%** / 25%'],
+                        ['Arvind SmartSpaces', 'Bookings +25–30% a year at a 22–25% margin; trailing profit lifted by one handover', '10% / **15%** / 25%'],
                         ['Sunteck Realty', 'Luxury mix; Nepean Sea Road; rent from FY29', '10% / **18%** / 24%'],
                         ['Mahindra Life. Dev', 'Pre-sales towards ₹10,000cr by FY30; industrial parks', '8% / **18%** / 25%'],
                         ['Ashiana Housing', 'Senior living; FY27 handovers', '10% / **18%** / 25%'],
@@ -790,7 +790,7 @@ export const realty: SectorOverview = {
                 },
                 {
                     label: 'Fits, but some still wait',
-                    text: "**Arvind** needs about {need:Arvind SmartSpaces|10}% a year against my ~18%, **Sunteck** about {need:Sunteck Realty|13}% against ~18%, **Mahindra Lifespace** about {need:Mahindra Life. Dev|15–16}% against ~18%, **Keystone** about {need:Keystone Realtors|21}% against ~20% and **Ashiana** about {need:Ashiana Housing|19}% against ~18% (each about a point short, inside the two-point margin; today's check: Keystone {label:Keystone Realtors|fits}, Ashiana {label:Ashiana Housing|fits}): these are the follow names. **Raymond** needs about {need:Raymond Realty|10–11}% against my ~12%, **Shriram** about {need:Shriram Properties|9}% against ~12%, **Arkade** about {need:Arkade|8–9}% against ~10%, **Ajmera** about {need:Ajmera Realty|10}% against ~10%, **Eldeco** about {need:Eldeco Housing & Ind|14}% against ~12% (on the line between fair and full) and **Suraj** about {need:Suraj Estate|7}% against ~6%. For that second group the price fits but something else does not: Raymond's cash burn, Shriram's approvals and tax claims, Arkade's write-off and guidance cuts, Ajmera's empty quarter, Eldeco's vague plans and Suraj's late taxes. **For small developers, a low P/E is often the market's discount for exactly these problems.**",
+                    text: "**Arvind** needs about {need:Arvind SmartSpaces|10}% a year against my ~15%, **Sunteck** about {need:Sunteck Realty|13}% against ~18%, **Mahindra Lifespace** about {need:Mahindra Life. Dev|15–16}% against ~18%, **Keystone** about {need:Keystone Realtors|21}% against ~20% and **Ashiana** about {need:Ashiana Housing|19}% against ~18% (each about a point short, inside the two-point margin; today's check: Keystone {label:Keystone Realtors|fits}, Ashiana {label:Ashiana Housing|fits}): these are the follow names. **Raymond** needs about {need:Raymond Realty|10–11}% against my ~12%, **Shriram** about {need:Shriram Properties|9}% against ~12%, **Arkade** about {need:Arkade|8–9}% against ~10%, **Ajmera** about {need:Ajmera Realty|10}% against ~10%, **Eldeco** about {need:Eldeco Housing & Ind|14}% against ~12% (on the line between fair and full) and **Suraj** about {need:Suraj Estate|7}% against ~6%. For that second group the price fits but something else does not: Raymond's cash burn, Shriram's approvals and tax claims, Arkade's write-off and guidance cuts, Ajmera's empty quarter, Eldeco's vague plans and Suraj's late taxes. **For small developers, a low P/E is often the market's discount for exactly these problems.**",
                 },
                 {
                     label: 'Full: a few points more than I expect',
@@ -817,7 +817,7 @@ export const realty: SectorOverview = {
         {
             company: 'Arvind SmartSpaces', rank: 1, stance: 'SCALEUP', segment: REGION,
             what: "The Lalbhai group's developer: plotted land, villas and flats in Ahmedabad and Bengaluru, now adding Mumbai redevelopment; 9.8 mn sq ft delivered, with revenue booked on completion.",
-            view: "**Strong bookings, but the cash has not arrived yet.** On Screener, operating cash was −₹164cr against ₹326cr of profit over FY22–FY26 and −₹170cr in FY26, because land buying counts as operating spending (the company's own figure, leaving out ₹638cr of land, was +₹417cr). FY26 bookings rose 22% to ₹1,550cr as guided, Q1 bookings rose 147% to ₹432cr without a launch, collections rose 76%, and India Ratings upgraded it to AA- in June. Debt is rising deliberately: gross debt doubled to ₹577cr in FY26, and India Ratings expects net debt of ₹800–850cr, more than the company's own figure because it counts platform debentures. The price needs about {need:Arvind SmartSpaces|10}% a year against my ~18%; **own it once filed operating cash turns positive.**",
+            view: "**Strong bookings, but the cash has not arrived yet.** On Screener, operating cash was −₹164cr against ₹326cr of profit over FY22–FY26 and −₹170cr in FY26, because land buying counts as operating spending (the company's own figure, leaving out ₹638cr of land, was +₹417cr). FY26 bookings rose 22% to ₹1,550cr as guided, Q1 bookings rose 147% to ₹432cr without a launch, collections rose 76%, and India Ratings upgraded it to AA- in June. Debt is rising deliberately: gross debt doubled to ₹577cr in FY26, and India Ratings expects net debt of ₹800–850cr, more than the company's own figure because it counts platform debentures. The price needs about {need:Arvind SmartSpaces|10}% a year against my ~15%; **own it once filed operating cash turns positive.** **24 Oct 2026:** growth estimate cut from 18% to 15%, because the last four quarters include one unusually profitable handover, and the guided 25–30% bookings growth at a 22–25% margin works out to about 15% a year from that profit.",
             watch: "FY27 bookings reaching ₹2,100–2,200cr; filed operating cash turning positive; the first Mumbai launch (Pen-Khopoli or Goregaon); net debt staying within India Ratings' ₹800–850cr band.",
         },
         {

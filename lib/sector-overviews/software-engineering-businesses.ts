@@ -82,7 +82,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Onward Technologies',
-        inShort: ["**A small engineering-design firm** for 73 industrial, machinery and vehicle makers in the US and Europe, mostly billed by the hour.", "**Good:** revenue grew 12% and the margin has risen from 9% to 12–13% in a year, with net cash and a dividend. **Watch:** 84% of work is billed by the hour, the type of work AI shrinks first; Q1 profit fell 12% and EBITDA grew 7% against a promise of double-digit growth; promoters have sold down from 45% to 40%.", "**Verdict: follow.** Steady progress at a modest price; buy when the new power-equipment centre lifts the margin."],
+        inShort: ["**A small engineering-design firm** for 73 industrial, machinery and vehicle makers in the US and Europe, mostly billed by the hour.", "**Good:** revenue grew 12% and the margin has risen from 9% to 12–13% in a year, with net cash and a dividend. **Watch:** 84% of work is billed by the hour, the type of work AI shrinks first; Q1 profit fell 12% and EBITDA grew 7% against a promise of double-digit growth; promoters have sold down from 45% to 40%.", "**Verdict: follow.** Steady progress, but the price now asks for a little more growth than its guidance supports; buy when the new power-equipment centre lifts the margin."],
         tagline: "A small engineering-design firm for US and European makers of industrial machinery, heavy equipment and vehicle parts, billed mostly by the hour.",
         revenue: '₹544cr (FY26, consolidated)',
         products: [

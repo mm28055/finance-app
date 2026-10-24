@@ -24,7 +24,7 @@ export const oil: SectorOverview = {
         inputs: oilValuationInputs,
         // My base-case earnings growth, % a year over three to five years (section 6).
         myGrowth: {
-            'Deep Industries': 25,
+            'Deep Industries': 18,
             'Gulf Oil Lubricant': 12,
             'Jindal Drilling and Industries': 4,
             'South West Pinnacle': 18,
@@ -511,7 +511,7 @@ export const oil: SectorOverview = {
                 },
                 {
                     label: 'My outlook',
-                    text: "**I expect Deep to compound earnings at about 25%, Aegis Vopak at about 20%, South West Pinnacle at about 18%, Asian Energy at about 15%, Gulf Oil and TruAlt at about 12%, Ganesh Benzoplast at about 10% and Jindal at about 4%.** Deep's targets are credible because the order book and rigs already exist, but they start from reported profit of about ₹224cr over the last twelve months, not the adjusted figure. Aegis Vopak's assets will earn more once JNPA and LPG volumes arrive, but the promoter share sale and rising depreciation will slow profit per share. For **Gandhar** and **Chennai Petroleum**, today's earnings are at a peak, so I expect little or no growth from here over three to five years. **I have cut Jindal to about 4% and Asian Energy to about 15%**: Jindal's revenue will fall this year and its best-paid contracts roll off by October 2027, while Asian Energy has missed its guidance twice running. For TruAlt I start from ₹159cr of trailing profit, which already includes the cheap-maize quarter: higher volumes and biogas should lift it, but dearer maize, about ₹166cr a year of interest and new borrowing for the gas and jet-fuel plants hold it back.",
+                    text: "**I expect Deep to compound earnings at about 18%, Aegis Vopak at about 20%, South West Pinnacle at about 18%, Asian Energy at about 15%, Gulf Oil and TruAlt at about 12%, Ganesh Benzoplast at about 10% and Jindal at about 4%.** Deep's targets are credible because the order book and rigs already exist, but I measure from the trailing profit the price check uses (about ₹400cr), which includes a one-off ₹112.5cr tax credit in Q4 FY26. From there, management's ₹350cr for FY27, ₹500cr for FY28 and “minimum” 25% a year after that work out to about 18% a year (cut from 25% on 24 Oct). Aegis Vopak's assets will earn more once JNPA and LPG volumes arrive, but the promoter share sale and rising depreciation will slow profit per share. For **Gandhar** and **Chennai Petroleum**, today's earnings are at a peak, so I expect little or no growth from here over three to five years. **I have cut Jindal to about 4% and Asian Energy to about 15%**: Jindal's revenue will fall this year and its best-paid contracts roll off by October 2027, while Asian Energy has missed its guidance twice running. For TruAlt I start from ₹159cr of trailing profit, which already includes the cheap-maize quarter: higher volumes and biogas should lift it, but dearer maize, about ₹166cr a year of interest and new borrowing for the gas and jet-fuel plants hold it back.",
                 },
             ],
             tables: [
@@ -520,7 +520,7 @@ export const oil: SectorOverview = {
                     numericColumns: [2],
                     columns: ['Company', 'What drives it', 'Earnings growth: low / base / high'],
                     rows: [
-                        ['Deep Industries', 'Order book; ONGC field new wells; Dubai and offshore', '15% / **25%** / 32%'],
+                        ['Deep Industries', 'Order book; ONGC field new wells; Dubai and offshore; trailing profit lifted by a one-off tax credit', '12% / **18%** / 26%'],
                         ['Aegis Vopak Terminals', 'JNPA, ammonia and new tanks; LPG imports returning', '12% / **20%** / 26%'],
                         ['South West Pinnacle', 'Hindustan Zinc and Reliance; coal block from FY29', '10% / **18%** / 25%'],
                         ['Asian Energy Services', 'Indian growth; Kuiper margins; Oilmax fields; a record of missed guidance', '5% / **15%** / 22%'],
@@ -597,7 +597,7 @@ export const oil: SectorOverview = {
                 },
                 {
                     label: 'Fits: prices that ask for about my growth or less',
-                    text: "**Deep** needs about {need:Deep Industries|8}% a year against my 25%, and even on reported rather than adjusted profit it would need only about 14%. **Gulf Oil** needs about {need:Gulf Oil Lubricant|9}% against my 12%, and **South West Pinnacle** about {need:South West Pinnacle|11}% against my 18%; these three fit comfortably, though Deep is a follow for its promoter loan, not its price. **Ganesh Benzoplast** needs about {need:Ganesh Benzoplast|9–10}% against my 10% (measured before it agreed to sell its tanks, so this check no longer describes what shareholders will own), and **Jindal Drilling** about {need:Jindal Drilling and Industries|4–5}% against my 4%, so both only just fit. For Jindal that is a price for contracted work at a low point, not a bet on better day rates; if its three rigs re-contract below $45,000 a day, even 4% will look generous.",
+                    text: "**Deep** needs about {need:Deep Industries|8}% a year against my 18%, and even on reported rather than adjusted profit it would need only about 14%. **Gulf Oil** needs about {need:Gulf Oil Lubricant|9}% against my 12%, and **South West Pinnacle** about {need:South West Pinnacle|11}% against my 18%; these three fit comfortably, though Deep is a follow for its promoter loan, not its price. **Ganesh Benzoplast** needs about {need:Ganesh Benzoplast|9–10}% against my 10% (measured before it agreed to sell its tanks, so this check no longer describes what shareholders will own), and **Jindal Drilling** about {need:Jindal Drilling and Industries|4–5}% against my 4%, so both only just fit. For Jindal that is a price for contracted work at a low point, not a bet on better day rates; if its three rigs re-contract below $45,000 a day, even 4% will look generous.",
                 },
                 {
                     label: 'Fits only on paper',
@@ -624,7 +624,7 @@ export const oil: SectorOverview = {
         {
             company: 'Deep Industries', rank: 2, stance: 'SCALEUP', segment: SERVICES,
             what: "Rents out gas-compression and gas-processing units and onshore drilling and workover rigs, with crews, mainly to ONGC and Oil India, and runs an old ONGC gas field under a 15-year contract and offshore vessels through Dolphin Offshore.",
-            view: "**Contracted growth at a low price, with governance to watch.** Q1 revenue rose 40% to ₹279cr on a ₹3,047cr order book, and management targets about ₹350cr of profit in FY27 and ₹500cr in FY28 against ₹224cr reported over the last twelve months. Against that sit ₹458cr of Kandla write-offs over two years, two auditor's emphasis paragraphs and a ₹135cr loan to a promoter company, ₹86cr of it repaid. The price needs about {need:Deep Industries|8}% a year (about 14% on reported profit) against my ~25%. **Moved from own to follow (16 October 2026):** I made full repayment of the loan by the end of Q2 FY27 the condition for owning it, and on its 30 September call management said the balance “should be nil by March”.",
+            view: "**Contracted growth at a low price, with governance to watch.** Q1 revenue rose 40% to ₹279cr on a ₹3,047cr order book, and management targets about ₹350cr of profit in FY27 and ₹500cr in FY28 against ₹224cr reported over the last twelve months. Against that sit ₹458cr of Kandla write-offs over two years, two auditor's emphasis paragraphs and a ₹135cr loan to a promoter company, ₹86cr of it repaid. The price needs about {need:Deep Industries|8}% a year (about 14% on reported profit) against my ~18%. **Moved from own to follow (16 October 2026):** I made full repayment of the loan by the end of Q2 FY27 the condition for owning it, and on its 30 September call management said the balance “should be nil by March”. **24 Oct 2026:** growth estimate cut from 25% to 18%, because the trailing profit the price is measured on includes a one-off ₹112.5cr tax credit, and from there management's own targets (₹350cr in FY27, ₹500cr in FY28) work out to about 18% a year.",
             watch: 'The Prabha Energy loan fully repaid by March 2027, as now promised (back to own then, if nothing else has worsened); new wells at the ONGC field producing by Q4 FY27–Q1 FY28; standalone revenue growing from about ₹175cr a quarter.',
         },
         {
