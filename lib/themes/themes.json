@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-16",
- "method": "A company is listed under a theme only when its own management said something concrete about it in its last two results calls: revenue, orders in hand, approvals, or capex it has committed. Passing mentions, analysts' questions and 'we are exploring' do not count. 'Orders or revenue now' means it already sells or holds orders; 'Building' means money committed or approvals won, but no meaningful revenue yet. Each line says what the company said and where. Read from the calls on 13–14 October 2026 and reviewed each results season as new calls come in. A list of who is exposed to the theme, not a recommendation.",
+ "updated": "2026-10-24",
+ "method": "A company is listed under a theme only when its own management said something concrete about it in its last two results calls: revenue, orders in hand, approvals, or capex it has committed. Passing mentions, analysts' questions and 'we are exploring' do not count. 'Orders or revenue now' means it already sells or holds orders; 'Building' means money committed or approvals won, but no meaningful revenue yet. Each line says what the company said and where. Read from the calls on 13–14 October 2026 (medical devices on 24 October) and reviewed each results season as new calls come in. A list of who is exposed to the theme, not a recommendation.",
  "themes": [
   {
    "key": "defence",
@@ -1128,6 +1128,121 @@
      "level": "building",
      "why": "Navy prototype order for an autonomous anti-submarine vessel.",
      "source": "Q1 FY27 call, Aug 2026"
+    }
+   ]
+  },
+  {
+   "key": "medical",
+   "label": "Medical devices",
+   "scope": "Companies that make medical devices (equipment, implants, test kits and machines, dental products, disposables) or make parts and electronics for device makers. Distributors, hospitals and labs are left out, and so are drug makers' pre-filled syringes.",
+   "companies": [
+    {
+     "company": "Poly Medicure",
+     "level": "now",
+     "why": "Makes IV cannulas, infusion sets, stents, dialysis machines and orthopaedic implants; placed about 450 dialysis machines last year and plans ₹200–225cr capex in FY27.",
+     "source": "Q4 FY26 and Q1 FY27 calls, May–Aug 2026"
+    },
+    {
+     "company": "Zydus Lifesciences",
+     "level": "now",
+     "why": "Medical devices (orthopaedics through Amplitude Surgical, kidney and heart devices) brought ₹280cr in Q1, about 3.5% of revenue.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Shaily Engg. Plastic",
+     "level": "now",
+     "why": "Makes injection pens for GLP-1 and insulin drugs; healthcare revenue ₹142cr in Q1, up 85%, with pen capacity going to 75 million a year.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Molbio Diagnostics",
+     "level": "now",
+     "why": "Makes Truenat testing machines and kits: sold 164 machines and 62.4 lakh kits in Q1, on revenue of ₹408cr.",
+     "source": "Q1 FY27 call, Sep 2026"
+    },
+    {
+     "company": "Q-Line Biotech",
+     "level": "now",
+     "why": "Makes blood-test analysers and their reagents; more than 1,550 of its analysers installed, and in-house reagent sales up about 70% last year.",
+     "source": "Q4 FY26 call, Jun 2026"
+    },
+    {
+     "company": "3B Blackbio Diagnostics",
+     "level": "now",
+     "why": "Makes molecular test kits; India sales ₹86.5cr last year, up about 10%, plus a growing European arm.",
+     "source": "Q4 FY26 call, Jun 2026"
+    },
+    {
+     "company": "OSEL Devices",
+     "level": "now",
+     "why": "Hearing aids are 42% of revenue, alongside phones and LED displays.",
+     "source": "Q4 FY26 call, Jun 2026"
+    },
+    {
+     "company": "Laxmi Denta",
+     "level": "now",
+     "why": "Makes dental crowns and clear aligners; the lab business grew about 23% and aligners about 29% in Q1.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Prevest Denpro",
+     "level": "now",
+     "why": "Makes dental materials, root-canal files and dental 3D printers; FY26 revenue ₹71.8cr, up 13.9%.",
+     "source": "Q4 FY26 call, Jun 2026"
+    },
+    {
+     "company": "Anondita Medicare",
+     "level": "now",
+     "why": "Makes condoms (₹118cr last year) plus surgical gloves and other products (about ₹19cr).",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Shalby",
+     "level": "now",
+     "why": "Its orthopaedic implant business grew from ₹28cr to ₹42cr in Q1 but still loses money; targets ₹600–650cr by 2030.",
+     "source": "Q4 FY26 and Q1 FY27 calls, May–Aug 2026"
+    },
+    {
+     "company": "Syrma SGS Tech.",
+     "level": "now",
+     "why": "Makes electronics for medical device companies; expects this MedTech business to cross ₹500cr in FY27.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Cyient DLM",
+     "level": "now",
+     "why": "Medical was 14% of Q2 revenue, up 14%.",
+     "source": "Q2 FY27 call, Oct 2026"
+    },
+    {
+     "company": "Avalon Tech",
+     "level": "now",
+     "why": "Medical grew 15% in Q1; medical and defence together are about 10% of revenue.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Fredun Pharma",
+     "level": "now",
+     "why": "Sells its own-brand braces, BP machines, thermometers and glucometers; this division did about ₹30cr last year.",
+     "source": "Q4 FY26 call, Jun 2026"
+    },
+    {
+     "company": "OBSC Perfection",
+     "level": "building",
+     "why": "Has made cast orthopaedic implant parts; the first ones are supplied and tested, no meaningful revenue yet.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Raymond",
+     "level": "building",
+     "why": "Its engineering arm just received certification to make medical components in titanium and steel.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Avantel",
+     "level": "building",
+     "why": "Its subsidiary iMeds has approvals for about five products (ventilator, CPAP, oxygen concentrator, surgical staplers); sales not started.",
+     "source": "AGM, Jun 2026"
     }
    ]
   }
