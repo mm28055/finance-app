@@ -1,0 +1,456 @@
+{
+ "set": "2026-10-24",
+ "method": "price where the note price check turns green: need <= my growth + 2 points",
+ "targets": [
+  {
+   "company": "Yash Highvoltage",
+   "target": 1643,
+   "priceAtSetting": 1164,
+   "group": "price-only, fits now"
+  },
+  {
+   "company": "EPack Prefab Techno.",
+   "target": 262,
+   "priceAtSetting": 216.7,
+   "group": "price-only, fits now"
+  },
+  {
+   "company": "Crompt.Greaves Cons.",
+   "target": 230,
+   "priceAtSetting": 195.18,
+   "group": "price-only, fits now"
+  },
+  {
+   "company": "Himadri Speciality",
+   "target": 559,
+   "priceAtSetting": 492,
+   "group": "price-only, fits now"
+  },
+  {
+   "company": "TD Power Systems",
+   "target": 703,
+   "priceAtSetting": 639.55,
+   "group": "price-only, fits now"
+  },
+  {
+   "company": "Clean Max Env. Energ",
+   "target": 1241,
+   "priceAtSetting": 1175.9,
+   "group": "price-only, fits now"
+  },
+  {
+   "company": "RR Kabel Ltd.",
+   "target": 2285,
+   "priceAtSetting": 2140,
+   "group": "price-only, fits now"
+  },
+  {
+   "company": "SJS Enterprises",
+   "target": 1952,
+   "priceAtSetting": 1873.5,
+   "group": "price-only, fits now"
+  },
+  {
+   "company": "Va Tech Wabag",
+   "target": 1775,
+   "priceAtSetting": 1710.4,
+   "group": "price-only, fits now"
+  },
+  {
+   "company": "Neuland Laboratories",
+   "target": 19336,
+   "priceAtSetting": 18865,
+   "group": "price-only, fits now"
+  },
+  {
+   "company": "Rainbow Children's Medicare",
+   "target": 1193,
+   "priceAtSetting": 1169.6,
+   "group": "price-only, fits now"
+  },
+  {
+   "company": "Shadowfax Tech.",
+   "target": 273,
+   "priceAtSetting": 274.05,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Kirloskar Pneumatic",
+   "target": 585,
+   "priceAtSetting": 584.7,
+   "group": "price-only, fits now"
+  },
+  {
+   "company": "TCPL Packaging",
+   "target": 3808,
+   "priceAtSetting": 3824.6,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Usha Martin",
+   "target": 457,
+   "priceAtSetting": 460.05,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Shyam Metalics",
+   "target": 1122,
+   "priceAtSetting": 1131.3,
+   "group": "needs a fall"
+  },
+  {
+   "company": "CEAT",
+   "target": 3036,
+   "priceAtSetting": 3060.2,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Vimta Labs",
+   "target": 462,
+   "priceAtSetting": 468,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Aditya Vision",
+   "target": 540,
+   "priceAtSetting": 555,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Innova Captab",
+   "target": 965,
+   "priceAtSetting": 987.3,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Stylam Industrie",
+   "target": 3034,
+   "priceAtSetting": 3105.3,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Arvind Fashions",
+   "target": 352,
+   "priceAtSetting": 363,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Tenneco Clean Air",
+   "target": 428,
+   "priceAtSetting": 439.65,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Rallis India",
+   "target": 190,
+   "priceAtSetting": 194.57,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Lumax Auto Tech",
+   "target": 1747,
+   "priceAtSetting": 1807.7,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Acutaas Chemicals",
+   "target": 2983,
+   "priceAtSetting": 3137.7,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Akums Drugs",
+   "target": 640,
+   "priceAtSetting": 669,
+   "group": "needs a fall"
+  },
+  {
+   "company": "RateGain Travel Tech",
+   "target": 728,
+   "priceAtSetting": 764.1,
+   "group": "needs a fall"
+  },
+  {
+   "company": "V-Mart Retail",
+   "target": 737,
+   "priceAtSetting": 777.2,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Indigo Paints",
+   "target": 964,
+   "priceAtSetting": 1013.9,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Fractal Analytics",
+   "target": 688,
+   "priceAtSetting": 728.4,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Vardhman Special Steels",
+   "target": 318,
+   "priceAtSetting": 339.2,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Indiamart Intermesh",
+   "target": 1476,
+   "priceAtSetting": 1572.8,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Emcure Pharma",
+   "target": 1646,
+   "priceAtSetting": 1770.4,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Asian Energy Services",
+   "target": 370,
+   "priceAtSetting": 398.75,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Artemis Medicare",
+   "target": 263,
+   "priceAtSetting": 284.95,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Zydus Lifesciences",
+   "target": 1048,
+   "priceAtSetting": 1129.4,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Affle 3i",
+   "target": 1216,
+   "priceAtSetting": 1326.2,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Capillary Technologies",
+   "target": 514,
+   "priceAtSetting": 571.45,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Inventurus Knowledge Solutions",
+   "target": 1468,
+   "priceAtSetting": 1618,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Cera Sanitaryware",
+   "target": 4085,
+   "priceAtSetting": 4530,
+   "group": "needs a fall"
+  },
+  {
+   "company": "V-Guard Industri",
+   "target": 242,
+   "priceAtSetting": 269.3,
+   "group": "needs a fall"
+  },
+  {
+   "company": "ASK Automotive",
+   "target": 486,
+   "priceAtSetting": 550.75,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Elgi Equipments",
+   "target": 444,
+   "priceAtSetting": 512.85,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Jyothy Labs",
+   "target": 152,
+   "priceAtSetting": 175.36,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Navin Fluorine Intl",
+   "target": 6562,
+   "priceAtSetting": 7668.5,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Chalet Hotels",
+   "target": 680,
+   "priceAtSetting": 789.4,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Godrej Agrovet",
+   "target": 524,
+   "priceAtSetting": 607.5,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Raymond",
+   "target": 905,
+   "priceAtSetting": 1063.4,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Cemindia Projects",
+   "target": 975,
+   "priceAtSetting": 1149.9,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Indegene",
+   "target": 481,
+   "priceAtSetting": 571.9,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Shaily Engg. Plastic",
+   "target": 2430,
+   "priceAtSetting": 2937.2,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Kajaria Ceramics",
+   "target": 938,
+   "priceAtSetting": 1136.6,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Galaxy Surfactants",
+   "target": 1842,
+   "priceAtSetting": 2221.6,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Data Patterns (India)",
+   "target": 3055,
+   "priceAtSetting": 3792.2,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Kirloskar Brothers",
+   "target": 1304,
+   "priceAtSetting": 1597.6,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Matrimony.com",
+   "target": 391,
+   "priceAtSetting": 477.9,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Shriram Pistons",
+   "target": 3497,
+   "priceAtSetting": 4334.6,
+   "group": "needs a fall"
+  },
+  {
+   "company": "HBL Engineering",
+   "target": 621,
+   "priceAtSetting": 769.85,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Garware Hi-Tech",
+   "target": 5510,
+   "priceAtSetting": 7034,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Kansai Nerolac",
+   "target": 143,
+   "priceAtSetting": 181.2,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Sobha",
+   "target": 890,
+   "priceAtSetting": 1173.4,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Inox India",
+   "target": 1409,
+   "priceAtSetting": 1863.8,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Sansera Engineering",
+   "target": 2971,
+   "priceAtSetting": 3978,
+   "group": "needs a fall"
+  },
+  {
+   "company": "TTK Prestige",
+   "target": 386,
+   "priceAtSetting": 520.3,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Corona Remedies",
+   "target": 1469,
+   "priceAtSetting": 2051.1,
+   "group": "needs a fall"
+  },
+  {
+   "company": "EIH",
+   "target": 209,
+   "priceAtSetting": 288.1,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Nirlon",
+   "target": 451,
+   "priceAtSetting": 625.2,
+   "group": "needs a fall"
+  },
+  {
+   "company": "RHI Magnesita",
+   "target": 232,
+   "priceAtSetting": 351.3,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Metropolis Health.",
+   "target": 331,
+   "priceAtSetting": 522.95,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Poly Medicure",
+   "target": 879,
+   "priceAtSetting": 1444,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Dr Lal PathLabs",
+   "target": 1015,
+   "priceAtSetting": 1838.2,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Anthem Biosciences",
+   "target": 446,
+   "priceAtSetting": 812.8,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Sai Life Sciences",
+   "target": 733,
+   "priceAtSetting": 1395.3,
+   "group": "needs a fall"
+  },
+  {
+   "company": "Hind Rectifiers",
+   "target": 397,
+   "priceAtSetting": 985.6,
+   "group": "needs a fall"
+  }
+ ]
+}
