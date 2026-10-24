@@ -29,7 +29,7 @@ export const electricalTransformers: SectorOverview = {
             'Voltamp Transformers': 12,
             'Supreme Power': 20,
             'Transformers & Rect': 18,
-            'Yash Highvoltage': 28,
+            'Yash Highvoltage': 25,
             'Quality Power El': 22,
             'Rishabh Instruments': 16,
             'Schneider Ele. Infra': 15,
@@ -543,7 +543,7 @@ export const electricalTransformers: SectorOverview = {
                 },
                 {
                     label: 'My outlook',
-                    text: "**I expect Yash to grow earnings at about 28% a year, Atlanta about 26%, Kanohar about 24%, Quality Power about 22%, Supreme about 20%, TARIL about 18%, Shilchar about 17%, Rishabh about 16%, Schneider about 15% from a depressed base and Voltamp about 12%.** Two estimates are lower than last quarter. **Supreme** falls from 22% to 20% because it has now missed three revenue targets in a row and the new plant's fixed costs arrived before its output (Q1 profit +10% on revenue +37%). **Quality Power** falls from 24% to 22% because a ₹700cr QIP and swap shares for Win-Win will add about 6% more shares, and a third of profit goes to partners. I kept Shilchar at 17%: capacity nearly doubles by April 2027 at about five times asset turns, but a domestic-heavy mix points to margins in the low 20s, not 30%. **Kanohar** is new at 24%: revenue of about ₹1,950cr by FY30 on the doubled capacity, below management's 45% a year, with the margin fading from 28% to about 22% as new 400 kV makers qualify.",
+                    text: "**I expect Atlanta to grow earnings at about 26% a year, Yash about 25% (cut from 28% on 24 Oct: H1 FY27 profit roughly doubled, so much of that jump is already in today's earnings, and the stated 15,000-unit capacity, about ₹700cr of revenue, supports about 22% a year from here; extra OIP capacity is the upside), Kanohar about 24%, Quality Power about 22%, Supreme about 20%, TARIL about 18%, Shilchar about 17%, Rishabh about 16%, Schneider about 15% from a depressed base and Voltamp about 12%.** Two estimates are lower than last quarter. **Supreme** falls from 22% to 20% because it has now missed three revenue targets in a row and the new plant's fixed costs arrived before its output (Q1 profit +10% on revenue +37%). **Quality Power** falls from 24% to 22% because a ₹700cr QIP and swap shares for Win-Win will add about 6% more shares, and a third of profit goes to partners. I kept Shilchar at 17%: capacity nearly doubles by April 2027 at about five times asset turns, but a domestic-heavy mix points to margins in the low 20s, not 30%. **Kanohar** is new at 24%: revenue of about ₹1,950cr by FY30 on the doubled capacity, below management's 45% a year, with the margin fading from 28% to about 22% as new 400 kV makers qualify.",
                 },
             ],
             tables: [
@@ -558,7 +558,7 @@ export const electricalTransformers: SectorOverview = {
                         ['Voltamp Transformers', 'New 6,000 MVA plant; margins normalising', '6% / **12%** / 18%'],
                         ['Supreme Power', 'Filling the Kannur plant; larger ratings after type tests', '8% / **20%** / 30%'],
                         ['Transformers & Rect', 'Order book conversion; backward integration', '8% / **18%** / 28%'],
-                        ['Yash Highvoltage', 'Own bushing cores; OIP capacity; exports', '20% / **28%** / 38%'],
+                        ['Yash Highvoltage', 'Own bushing cores; 15,000 units (about ₹700cr of revenue); OIP capacity and exports are the upside', '20% / **25%** / 34%'],
                         ['Quality Power El', 'Sangli coils, storage converters, Win-Win; dilution', '12% / **22%** / 30%'],
                         ['Rishabh Instruments', 'Instrumentation growth; die-casting breakeven', '8% / **16%** / 24%'],
                         ['Schneider Ele. Infra', 'Margin recovery from a low base; new breaker plants', '5% / **15%** / 25%'],
@@ -637,7 +637,7 @@ export const electricalTransformers: SectorOverview = {
                 },
                 {
                     label: 'Full',
-                    text: "**Shilchar** needs about {need:Shilchar Tech.|19}% against my ~17%, just past a fair price, from a depressed trailing profit that still includes a currency gain. **Yash** needs about {need:Yash Highvoltage|31}% against my ~28%: the best bottleneck here, priced close to its own 40% guide, with no room for a slip in the core-plant tests. **Rishabh** needs about {need:Rishabh Instruments|20}% against my ~16%; a possible change of control could help, but I would not pay for a rumour.",
+                    text: "**Shilchar** needs about {need:Shilchar Tech.|19}% against my ~17%, just past a fair price, from a depressed trailing profit that still includes a currency gain. **Yash** needs about {need:Yash Highvoltage|31}% against my ~25%: the best bottleneck here, priced close to its own 40% guide, with no room for a slip in the core-plant tests. **Rishabh** needs about {need:Rishabh Instruments|20}% against my ~16%; a possible change of control could help, but I would not pay for a rumour.",
                 },
                 {
                     label: 'Stretched',
@@ -664,7 +664,7 @@ export const electricalTransformers: SectorOverview = {
         {
             company: 'Yash Highvoltage', rank: 3, stance: 'PRICED', segment: PARTS,
             what: "Makes condenser bushings (the insulated part that carries power through a transformer's wall), with a new plant designed for up to 550 kV to make its own cores; sells to transformer makers and utilities in 60+ countries; listed on the BSE SME platform.",
-            view: "**A real bottleneck, with weak cash.** H2 FY26 revenue rose 46% at a 27.4% margin, gross margin reached 45.9% and the order book nearly tripled to ₹400cr+. But FY26 operating cash was ₹9cr on ₹57cr of operating profit, stock reached 201 days, one customer is 19% of sales, the auditor flagged a ₹2.1cr cyber fraud, and it has raised equity twice in 20 months. The price needs about {need:Yash Highvoltage|31}% a year against my ~28%.",
+            view: "**A real bottleneck, with weak cash.** H2 FY26 revenue rose 46% at a 27.4% margin, gross margin reached 45.9% and the order book nearly tripled to ₹400cr+. But FY26 operating cash was ₹9cr on ₹57cr of operating profit, stock reached 201 days, one customer is 19% of sales, the auditor flagged a ₹2.1cr cyber fraud, and it has raised equity twice in 20 months. The price needs about {need:Yash Highvoltage|31}% a year against my ~25%. **24 Oct 2026:** H1 FY27 (21 Oct): revenue ₹194.5cr (+95%) at a 28.1% margin, profit ₹36.2cr, order book ₹760cr+ (from ₹400cr+ in March) and ₹45cr of operating cash in the half; the Jarod plant now costs ₹220cr (was ₹153cr). Growth estimate cut from 28% to 25%, because much of FY27's jump is now in trailing profit.",
             watch: 'Its own RIP cores passing type tests from October–November 2026; H1 FY27 revenue of ₹140–150cr; operating cash above half of EBITDA.',
         },
         {

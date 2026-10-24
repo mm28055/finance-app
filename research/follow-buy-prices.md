@@ -2,24 +2,19 @@
 
 Worked out on 24 October 2026 from live prices. **Buy at or below** is the price at which each note's price check turns green: the growth today's P/E needs is no more than two points a year above the growth the note expects. It is the same test that moved Caplin Point from follow to own. **Gap** shows how far that price is from today's: + means today's price is already under it, − means it has to fall that much. Prices move daily; growth estimates change only when a note is rewritten.
 
-## 1. Price was the only obstacle, and the price now fits (13)
+**Revised later on 24 October.** Manish asked why TD Power showed green at 75 times earnings. Its growth estimate (28%) was above what management's own capacity plan supports (about 21% a year), so it was cut to 22%. The other green names were then checked the same way: the base estimate may not exceed what the company's latest guidance and capacity plans support. Cut: Yash 28→25%, Neuland 22→16%, Rainbow 20→14%, RR Kabel 20→18%, Elecon 17→15%, SJS 17→14%, Himadri 17→15%. Unchanged: EPack, Crompton, Clean Max, Va Tech Wabag, Kirloskar Pneumatic (only its low case moved, 11→8%). Buy prices on the site were updated to match, except Elecon, where Manish's own ₹400 stays.
+
+## 1. Price was the only obstacle, and the price now fits (6)
 
 These read like Caplin Point did before it moved to own. Most cushion first; each still needs a check of filings and news since its last call before it moves to own.
 
 | Company | Sector | Price today | Buy at or below | Gap | What the note says |
 |---|---|---|---|---|---|
-| Yash Highvoltage | Electrical Transformers | ₹1,164 | ₹1,643 | +41% | The best moat here, priced close to the growth I expect, but rivals are localising bushing cores so the premium should narrow; buy on a… |
 | EPack Prefab Techno. | Construction | ₹217 | ₹262 | +21% | The best momentum and cash of the steel-building makers, but the price already asks for about the growth I… |
 | Crompt.Greaves Cons. | Consumer Durables | ₹195 | ₹230 | +18% | The best-run franchise in the group, but the price needs a little more growth than I… |
-| Himadri Speciality | Chemicals | ₹492 | ₹559 | +14% | The best business here, but the price needs more growth than I… |
-| TD Power Systems | Electrical Equipment | ₹640 | ₹703 | +10% | A great business whose price needs about 31% growth a year, a little more than the 28% I… |
-| Elecon Engg.Co | Electrical Equipment | ₹416 | ₹458 | +10% | The price needs a little more than the 17% a year I expect; a small fall would make it… |
-| RR Kabel Ltd. | Cables | ₹2,140 | ₹2,285 | +7% | The best-run business in this list, but the price asks for about 23% a year against the ~20% I expect; buy on a weak… |
+| Yash Highvoltage | Electrical Transformers | ₹1,164 | ₹1,301 | +12% | The best moat here, priced close to the growth I expect, but rivals are localising bushing cores so the premium should narrow; buy on a… |
 | Clean Max Env. Energ | Solar PV Cells EPC | ₹1,176 | ₹1,241 | +6% | The best business in the note, but the price needs about 33% a year of earnings growth against my… |
-| SJS Enterprises | Auto Related | ₹1,874 | ₹1,952 | +4% | A high-margin niche, priced a little ahead of my growth… |
 | Va Tech Wabag | Utilities | ₹1,710 | ₹1,775 | +4% | The best business in the sector and the closest to a buy, but the price asks for a little more than the ~15% a year I expect; buy on… |
-| Neuland Laboratories | Pharma CDMO | ₹18,865 | ₹19,336 | +2% | Excellent execution, but the price already assumes the fast growth… |
-| Rainbow Children's Medicare | Hospitals | ₹1,170 | ₹1,193 | +2% | A high-quality niche leader, but the price already assumes its plan to double revenue in four years… |
 | Kirloskar Pneumatic | Pumps Comp & Eng | ₹585 | ₹585 | +0% | The best-run business here, but the price needs about 19% a year against my… |
 
 ## 2. The price already fits, but the note is waiting for something else (105)
@@ -134,7 +129,7 @@ A lower price does not change these; the condition in the last column does.
 | Sambhv Steel Tubes | Iron and Steel | ₹157 | ₹157 | +0% | A well-run low-cost maker, but the price asks for a little more growth than I expect until Kesda is visibly on… |
 | Avalon Tech | EMS & Electronics | ₹1,857 | ₹1,859 | +0% | A top business, but the price needs about 36% a year against my ~30%, and operating cash was only ₹102cr against ₹323cr of profit over FY22–FY26 (32%), though FY26 converted… |
 
-## 3. Needs a fall to reach the buy price (67)
+## 3. Needs a fall to reach the buy price (74)
 
 Closest first. The note's other conditions still apply.
 
@@ -154,6 +149,7 @@ Closest first. The note's other conditions still apply.
 | Arvind Fashions | Retail | ₹363 | ₹352 | -3% | Improving brands, swelling stock; the price needs slightly more growth than I… |
 | Lumax Auto Tech | Auto Related | ₹1,808 | ₹1,747 | -3% | Delivering on growth and margin, but the price already assumes more of the… |
 | Akums Drugs | Pharma CDMO | ₹669 | ₹640 | -4% | A sound, cash-rich business, but the price needs more growth than a conversion fee usually… |
+| Himadri Speciality | Chemicals | ₹492 | ₹472 | -4% | The best business here, but growth estimate cut to 15% (24 Oct): the battery-material plant is unproven… |
 | RateGain Travel Tech | Software | ₹764 | ₹728 | -5% | The price needs about 20% a year of earnings growth against my ~17%; a clean beat on filed, not adjusted, profit would make it a… |
 | Acutaas Chemicals | Pharma API | ₹3,138 | ₹2,983 | -5% | The best growth in the group, but the price already assumes about 29% a… |
 | Indigo Paints | Consumer Durables | ₹1,014 | ₹964 | -5% | The best economics in the group, but the price needs more growth than I… |
@@ -165,9 +161,11 @@ Closest first. The note's other conditions still apply.
 | Zydus Lifesciences | Pharma | ₹1,129 | ₹1,048 | -7% | A widening franchise, but FY27 profit is falling (Q1 net profit down about 35%) and the price needs about 15% a year against the roughly 12% I… |
 | Asian Energy Services | Oil | ₹399 | ₹370 | -7% | Strong growth, but operating cash was only ₹21cr against ₹115cr of profit over FY22–FY26 (18%), though FY26 converted all of its profit (₹53cr against ₹52cr). I want to see that cash recovery hold, and the merger terms,… |
 | MTAR Technologies | Aerospace defence | ₹6,460 | ₹5,979 | -7% | A real, funded boom, but too much of it depends on Bloom staying ahead and staying… |
+| Elecon Engg.Co | Electrical Equipment | ₹416 | ₹387 | -7% | Growth estimate cut to 15% (24 Oct); trailing profit is cut by a one-off write-off, so on underlying profit it fits. Your own ₹400 target stays on the site… |
 | Artemis Medicare | Hospitals | ₹285 | ₹263 | -8% | A well-run flagship, but the next phase depends on new hospitals outside… |
 | Affle 3i | Software | ₹1,326 | ₹1,216 | -8% | The best business in the group, but the price asks for a little more growth than I… |
 | Inventurus Knowledge Solutions | Software | ₹1,618 | ₹1,468 | -9% | The best business here, priced for its biggest bet; buy when TruBridge's margin starts to… |
+| RR Kabel Ltd. | Cables | ₹2,140 | ₹1,937 | -9% | The best-run business in this list, but growth estimate cut to 18% (24 Oct): today's profit already holds much of the FY28 margin gain… |
 | Cera Sanitaryware | Consumer Durables | ₹4,530 | ₹4,085 | -10% | A strong brand and balance sheet, but the price needs more growth than I… |
 | V-Guard Industri | Consumer Durables | ₹269 | ₹242 | -10% | Clean and disciplined, but the price needs more growth than its own 15%… |
 | Capillary Technologies | Software | ₹571 | ₹514 | -10% | The price needs about 32% a year of earnings growth against my ~28%; I would buy once the migrations are proven and controls are… |
@@ -189,6 +187,7 @@ Closest first. The note's other conditions still apply.
 | HBL Engineering | Industrials | ₹770 | ₹621 | -19% | A superb niche engineer, but today's profit is a Kavach… |
 | Shriram Pistons | Auto Related | ₹4,335 | ₹3,497 | -19% | The best engine-parts franchise here, but growth is now being bought, and the price needs about 21% a year against my… |
 | Data Patterns (India) | Aerospace defence | ₹3,792 | ₹3,055 | -19% | A real technology franchise, but the price needs more growth than I expect, and profit is slow to arrive as cash: operating cash was ₹162cr against ₹893cr of profit over FY22–FY26 (18%), and FY26 converted only… |
+| SJS Enterprises | Auto Related | ₹1,874 | ₹1,512 | -19% | A high-margin niche, but growth estimate cut to 14% (24 Oct): margin guided below today and growth slowing… |
 | Concord Biotech | Pharma API | ₹1,229 | ₹975 | -21% | A rare asset, but the price needs about 26% a year of growth straight after a year of… |
 | Kansai Nerolac | Consumer Durables | ₹181 | ₹143 | -21% | A sound, cash-rich franchise, but the price needs more growth than I… |
 | Garware Hi-Tech | Plastics | ₹7,034 | ₹5,510 | -22% | A strong business, but the price needs a little more growth than I… |
@@ -199,8 +198,11 @@ Closest first. The note's other conditions still apply.
 | EIH | Hotels and Travels | ₹288 | ₹209 | -28% | A superb, cash-rich franchise, but operating profit has stalled for two years and new hotels keep arriving late; the price needs far more growth than the ~10% I… |
 | Nirlon | Commercial Services | ₹625 | ₹451 | -28% | A steady rent collector, but with no space left to let there is little beyond the dividend and annual rent… |
 | Corona Remedies | Pharma | ₹2,051 | ₹1,469 | -28% | An excellent business, but the price already assumes more than management… |
+| TD Power Systems | Electrical Equipment | ₹640 | ₹438 | -32% | A great business, but growth estimate cut to 22% (24 Oct): its own capacity plan is about 21% a year… |
 | RHI Magnesita | Elect and Refrac | ₹351 | ₹232 | -34% | The best business here, but the price needs about 22% a year against my… |
 | Metropolis Health. | Healthcare Diagnostic | ₹523 | ₹331 | -37% | Improving fast, but the price needs more growth than I… |
+| Neuland Laboratories | Pharma CDMO | ₹18,865 | ₹11,775 | -38% | Excellent execution, but growth estimate cut to 16% (24 Oct): about 20% revenue with the margin guided back toward 25%… |
+| Rainbow Children's Medicare | Hospitals | ₹1,170 | ₹720 | -38% | A high-quality niche leader, but growth estimate cut to 14% (24 Oct): new-bed depreciation, leases and a lower margin… |
 | Poly Medicure | Health Products | ₹1,444 | ₹879 | -39% | A high-quality business, but the price asks for about 25% a year against my 15%, as returns have halved to 12% and treasury income… |
 | Dr Lal PathLabs | Healthcare Diagnostic | ₹1,838 | ₹1,015 | -45% | The best business in the sector, but the price assumes more growth than I… |
 | Anthem Biosciences | Pharma CDMO | ₹813 | ₹446 | -45% | The best business here, but the price already assumes it stays that way for a decade; better bought on a weak… |

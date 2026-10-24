@@ -24,7 +24,7 @@ export const hospitals: SectorOverview = {
         // My base-case earnings growth, % a year over three to five years (section 6).
         myGrowth: {
             'Yatharth Hospital': 22,
-            "Rainbow Children's Medicare": 20,
+            "Rainbow Children's Medicare": 14,
             'Jupiter Life Line Hospitals': 15,
             'Artemis Medicare': 18,
             'GPT Healthcare (Agilus)': 15,
@@ -538,7 +538,7 @@ export const hospitals: SectorOverview = {
                 },
                 {
                     label: 'My outlook',
-                    text: "Revenue across these eleven should grow in the mid-to-high teens as beds are added, a little above ICRA's 13–15% for FY27 because several are opening more beds relative to their size. **Profit will lag revenue for a year or two**: in Q1 profit after tax rose only 8% at Yatharth and 6% at Narayana, fell 1% at Medanta, 15% at Jupiter and 56% at KIMS, while Artemis (+48%), Dr Agarwal's (+45%) and Rainbow (+16%) grew. **I expect KIMS to compound earnings at about 25% (from a depressed base), Yatharth, Dr Agarwal's and HCG at about 22%, Rainbow and Medanta at about 20%, Artemis at about 18%, Jupiter, Narayana and GPT Healthcare at about 15% and Shalby at about 12%.** I have trimmed Yatharth (from 25%) and Jupiter (from 18%) because profit is lagging revenue at both: Yatharth's pre-tax profit rose 4% in Q1, and Jupiter guides its FY27 margin down to 20–21%. GPT Healthcare's figure starts from profits depressed by Raipur's losses, so part of its growth is recovery. HCG's starts from very thin profit (about ₹65cr adjusted over the last year), so most of it is margin recovery, which its price already assumes.",
+                    text: "Revenue across these eleven should grow in the mid-to-high teens as beds are added, a little above ICRA's 13–15% for FY27 because several are opening more beds relative to their size. **Profit will lag revenue for a year or two**: in Q1 profit after tax rose only 8% at Yatharth and 6% at Narayana, fell 1% at Medanta, 15% at Jupiter and 56% at KIMS, while Artemis (+48%), Dr Agarwal's (+45%) and Rainbow (+16%) grew. **I expect KIMS to compound earnings at about 25% (from a depressed base), Yatharth, Dr Agarwal's and HCG at about 22%, Medanta at about 20%, Rainbow at about 14% (cut from 20% on 24 Oct: doubling revenue in four years is about 19% a year, but the margin reset to 24–25%, depreciation and lease costs on 2,500 new beds and falling other income as its cash is spent leave earnings near 14%), Artemis at about 18%, Jupiter, Narayana and GPT Healthcare at about 15% and Shalby at about 12%.** I have trimmed Yatharth (from 25%) and Jupiter (from 18%) because profit is lagging revenue at both: Yatharth's pre-tax profit rose 4% in Q1, and Jupiter guides its FY27 margin down to 20–21%. GPT Healthcare's figure starts from profits depressed by Raipur's losses, so part of its growth is recovery. HCG's starts from very thin profit (about ₹65cr adjusted over the last year), so most of it is margin recovery, which its price already assumes.",
                 },
             ],
             tables: [
@@ -551,7 +551,7 @@ export const hospitals: SectorOverview = {
                         ['Krishna Inst.Medi', 'New hospitals breaking even; interest falling after the share sale', '12% / **25%** / 35%'],
                         ["Dr Agarwal's Health Care", '60 centres a year; premium procedures in mature centres', '15% / **22%** / 28%'],
                         ['HealthCare Global (HCG)', 'Margin from 18% towards 21–22%; brownfield beds and North Bangalore; interest falling; new option costs', '12% / **22%** / 30%'],
-                        ["Rainbow Children's Medicare", '2,500 new beds; new cities; margin reset to 24–25% before rent', '14% / **20%** / 26%'],
+                        ["Rainbow Children's Medicare", '2,500 new beds (revenue about 19% a year); margin reset, depreciation and lease costs', '10% / **14%** / 19%'],
                         ['Global Health (Medanta)', 'Noida; theatres in Gurugram; greenfields from FY30', '14% / **20%** / 25%'],
                         ['Artemis Medicare', 'Gurugram margin to 23–24%; Raipur; South Delhi', '10% / **18%** / 24%'],
                         ['Jupiter Life Line Hospitals', 'Dombivli; ARPOB; four projects to FY29; margin guided to 20–21%', '8% / **15%** / 20%'],
@@ -626,7 +626,7 @@ export const hospitals: SectorOverview = {
                 },
                 {
                     label: 'Full',
-                    text: "**Yatharth** (needs about {need:Yatharth Hospital|27}% a year against my 22%), **Rainbow** (about {need:Rainbow Children's Medicare|24}% against 20%), **Artemis** (about {need:Artemis Medicare|23}% against 18%) and **GPT Healthcare** (about {need:GPT Healthcare (Agilus)|17}% against 15%, only just outside a fair price when it joined this note). **No hospital here fits today**; these four are closest. Each is a sound business asking for a few points more growth than I expect, so they are the names to buy after a weak quarter, when a margin miss, Raipur's start-up losses or the tax appeal hits the price.",
+                    text: "**Yatharth** (needs about {need:Yatharth Hospital|27}% a year against my 22%), **Rainbow** (about {need:Rainbow Children's Medicare|24}% against 14%), **Artemis** (about {need:Artemis Medicare|23}% against 18%) and **GPT Healthcare** (about {need:GPT Healthcare (Agilus)|17}% against 15%, only just outside a fair price when it joined this note). **No hospital here fits today**; these four are closest. Each is a sound business asking for a few points more growth than I expect, so they are the names to buy after a weak quarter, when a margin miss, Raipur's start-up losses or the tax appeal hits the price.",
                 },
                 {
                     label: 'Stretched',
@@ -651,7 +651,7 @@ export const hospitals: SectorOverview = {
         {
             company: "Rainbow Children's Medicare", rank: 2, stance: 'PRICED', segment: SPECIAL,
             what: "India's leading children's and maternity hospital chain, strongest in Hyderabad, Bengaluru, Chennai and Andhra Pradesh, now expanding into Mumbai, Delhi NCR, Pune and Indore.",
-            view: "**Best-in-class speciality, margin reset under way.** Revenue +33% in Q1 (24% organic), mature ARPOB +10% and ₹613cr of cash to fund 2,500 beds. But the margin before rent is guided to 24–25% against 26.3% in FY26, occupancy is 41%, and the auditor flagged a ₹31.5cr loan to its Delhi landlord. The price asks for about {need:Rainbow Children's Medicare|24}% against my ~20%.",
+            view: "**Best-in-class speciality, margin reset under way.** Revenue +33% in Q1 (24% organic), mature ARPOB +10% and ₹613cr of cash to fund 2,500 beds. But the margin before rent is guided to 24–25% against 26.3% in FY26, occupancy is 41%, and the auditor flagged a ₹31.5cr loan to its Delhi landlord. The price asks for about {need:Rainbow Children's Medicare|24}% against my ~14%. **24 Oct 2026:** growth estimate cut from 20% to 14%: revenue can double in four years, but the lower margin, new-hospital depreciation and lease costs, and falling other income hold earnings growth near 14%.",
             watch: 'Occupancy in the busy Q2–Q3 season; pre-rent margin staying at or above 24%; the Delhi loan.',
         },
         {

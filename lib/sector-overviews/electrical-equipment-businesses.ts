@@ -69,7 +69,7 @@ const profiles: BusinessProfile[] = [
     // ── Engineered machines ──────────────────────────────────────────────────
     {
         company: 'Elecon Engg.Co',
-        inShort: ["**India's biggest industrial gearbox maker**, selling to steel, cement, power and sugar plants in India and abroad.", "**Good:** high returns, strong cash generation and ₹683cr of net cash on Screener (about ₹700cr by the company's count). **Watch:** foreign rivals are cutting prices and margins have slipped from 24% to 21%.", "**Verdict: follow, close to buyable.** The price needs a little more than the 17% a year I expect; a small fall would make it fit."],
+        inShort: ["**India's biggest industrial gearbox maker**, selling to steel, cement, power and sugar plants in India and abroad.", "**Good:** high returns, strong cash generation and ₹683cr of net cash on Screener (about ₹700cr by the company's count). **Watch:** foreign rivals are cutting prices and margins have slipped from 24% to 21%.", "**Verdict: follow, close to buyable.** The price needs a little more than the 15% a year I expect, but trailing profit is cut by a one-off write-off; on underlying profit it fits."],
         tagline: "India's leading industrial gearbox maker, with a material-handling equipment business and assembly and sales companies abroad.",
         revenue: '₹2,366cr (FY26, consolidated)',
         products: [
@@ -100,7 +100,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'TD Power Systems',
-        inShort: ["**Makes generators and motors** for global engine and turbine makers; most orders are exports, driven by US data centres.", "**Good:** revenue up 72% with steady margins, and contracts pass on metal costs. **Bad:** ten customers are 84% of revenue, little of its profit has turned into cash, and it is raising equity.", "**Verdict: follow.** A great business whose price needs about {need:TD Power Systems|31}% growth a year, a little more than the 28% I expect."],
+        inShort: ["**Makes generators and motors** for global engine and turbine makers; most orders are exports, driven by US data centres.", "**Good:** revenue up 72% with steady margins, and contracts pass on metal costs. **Bad:** ten customers are 84% of revenue, little of its profit has turned into cash, and it is raising equity.", "**Verdict: follow.** A great business whose price needs about {need:TD Power Systems|31}% growth a year, well above the 22% its own expansion plan supports."],
         tagline: "Bangalore-based maker of generators and motors, sold mostly to global engine and turbine makers; one of the few independent suppliers in its size range.",
         revenue: '₹1,856cr (FY26, consolidated)',
         products: [

@@ -542,7 +542,7 @@ export const pumpsCompEng: SectorOverview = {
                     numericColumns: [2],
                     columns: ['Company', 'What drives it', 'Earnings growth: low / base / high'],
                     rows: [
-                        ['Kirloskar Pneumatic', 'Gas stations, centrifugals, refrigeration; Zephyros from FY28; margin easing from 21%', '11% / **15%** / 20%'],
+                        ['Kirloskar Pneumatic', 'Gas stations, centrifugals, refrigeration; Zephyros from FY28; margin easing from 21%', '8% / **15%** / 20%'],
                         ['Powerica', 'Data-centre gensets; ~300 MW more wind by FY29, mostly on loans; genset margin recovery', '8% / **13%** / 18%'],
                         ['Elgi Equipments', 'Share gains in India and North America; Europe past breakeven; FY31 plan', '10% / **16%** / 20%'],
                         ['Kirloskar Brothers', 'Recovery from a weak FY26; US data centres; nuclear; SPP UK', '10% / **14%** / 18%'],

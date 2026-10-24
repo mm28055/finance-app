@@ -26,7 +26,7 @@ export const pharmaCdmo: SectorOverview = {
         myGrowth: {
             'Anthem Biosciences': 20,
             'Sai Life Sciences': 20,
-            'Neuland Laboratories': 22,
+            'Neuland Laboratories': 16,
             'Piramal Pharma': null,
             'Cohance Lifesciences': 10,
             'Dishman Carbogen (Carbogen Amcis)': null,
@@ -590,7 +590,7 @@ export const pharmaCdmo: SectorOverview = {
                 },
                 {
                     label: 'My outlook',
-                    text: "Global outsourcing grows about 9% a year and India should grow faster as it takes share. **I expect Gland to compound earnings at about 22%, Neuland at about 22%, Anthem and Sai at about 20%, the formulation makers at 17–18%, and the chemical companies to follow their cycles.** Almost everyone is spending ahead of revenue: Sai ₹1,100–1,300cr this year, Jubilant Pharmova about ₹1,650cr, Anthem ₹1,200cr on Unit 4 over two years, Neuland ₹1,460cr approved over 13 quarters plus new land, and Aether ₹2,200–2,300cr on Panoli by 2030. **Reported returns will dip in FY27–FY28 before the new plants fill.**",
+                    text: "Global outsourcing grows about 9% a year and India should grow faster as it takes share. **I expect Gland to compound earnings at about 22%, Anthem and Sai at about 20%, Neuland at about 16% (cut from 22% on 24 Oct: management aims for about 20% revenue growth with the margin back toward 25% and depreciation rising, so earnings cannot outgrow revenue, and today's profit rests on a 35–40% margin), the formulation makers at 17–18%, and the chemical companies to follow their cycles.** Almost everyone is spending ahead of revenue: Sai ₹1,100–1,300cr this year, Jubilant Pharmova about ₹1,650cr, Anthem ₹1,200cr on Unit 4 over two years, Neuland ₹1,460cr approved over 13 quarters plus new land, and Aether ₹2,200–2,300cr on Panoli by 2030. **Reported returns will dip in FY27–FY28 before the new plants fill.**",
                 },
             ],
             tables: [
@@ -600,7 +600,7 @@ export const pharmaCdmo: SectorOverview = {
                     columns: ['Company', 'What drives it', 'Earnings growth: low / base / high'],
                     rows: [
                         ['Gland Pharma', '55-product transfer; margin to 30–35%; Cenexi recovery', '16% / **22%** / 28%'],
-                        ['Neuland Laboratories', 'Three molecules; peptides from FY28; margin back to 25%+', '10% / **22%** / 30%'],
+                        ['Neuland Laboratories', 'Three molecules; peptides from FY28; margin back to 25%+', '10% / **16%** / 24%'],
                         ['Anthem Biosciences', 'Late-phase molecules; Unit 4 from FY28; three large customers', '12% / **20%** / 28%'],
                         ['Sai Life Sciences', 'Big-pharma teams; Bidar blocks; margin capped at 28–30%', '14% / **20%** / 26%'],
                         ['Windlas Biotech', 'Contract volumes; Plant 6; share-option costs fading in FY28', '12% / **18%** / 22%'],
@@ -692,7 +692,7 @@ export const pharmaCdmo: SectorOverview = {
                 },
                 {
                     label: 'Full: close enough to follow',
-                    text: "**Neuland** needs about {need:Neuland Laboratories|26}% against my ~22%; it is the innovator CDMO I would buy first after a weak quarter. **Akums** needs about {need:Akums Drugs|22}% against ~17%, and **Innova** about {need:Innova Captab|23}% against ~18%: both are delivering, but neither margin model supports that much growth for long. **Jubilant Ingrevia** needs about {need:Jubilant Ingrevia|18–19}% against ~14%, and its Q1 profit includes acetyl prices that may not last.",
+                    text: "**Neuland** needs about {need:Neuland Laboratories|26}% against my ~16%; it is still the innovator CDMO I would buy first, but only after a much bigger fall. **Akums** needs about {need:Akums Drugs|22}% against ~17%, and **Innova** about {need:Innova Captab|23}% against ~18%: both are delivering, but neither margin model supports that much growth for long. **Jubilant Ingrevia** needs about {need:Jubilant Ingrevia|18–19}% against ~14%, and its Q1 profit includes acetyl prices that may not last.",
                 },
                 {
                     label: 'Stretched',
@@ -727,7 +727,7 @@ export const pharmaCdmo: SectorOverview = {
         {
             company: 'Neuland Laboratories', rank: 3, stance: 'PRICED', segment: INNOV,
             what: "Makes complex active ingredients: mostly commercial ingredients for innovators' drugs under contract, plus its own generic APIs, with a peptide plant that started in September.",
-            view: "**Excellent execution, concentrated.** Q1 revenue more than doubled at a 35% margin, working capital fell from 137 to 84 days, net cash was ₹308cr at June (company; ₹54cr at March on Screener) and CRISIL raised its outlook to Positive. But three customer groups are about 53% of revenue, management itself guides the margin back to 25%-plus, and it is buying land for a new large site. The price needs about {need:Neuland Laboratories|26}% a year against my ~22%. **21 Oct 2026:** the price now just fits, and the US FDA closed its August inspection of Unit 3 on 14 October, but it stays follow: the trailing P/E rests on a 35% margin that management itself expects to fall back toward 25%.",
+            view: "**Excellent execution, concentrated.** Q1 revenue more than doubled at a 35% margin, working capital fell from 137 to 84 days, net cash was ₹308cr at June (company; ₹54cr at March on Screener) and CRISIL raised its outlook to Positive. But three customer groups are about 53% of revenue, management itself guides the margin back to 25%-plus, and it is buying land for a new large site. The price needs about {need:Neuland Laboratories|26}% a year against my ~16%. **21 Oct 2026:** the price then just fitted, and the US FDA closed its August inspection of Unit 3 on 14 October, but it stays follow: the trailing P/E rests on a 35% margin that management itself expects to fall back toward 25%. **24 Oct 2026:** growth estimate cut from 22% to 16% for that reason; the price no longer fits.",
             watch: 'A new commercial molecule of scale; peptide module 2 and its anchor customer; the margin in Q2–Q3 against the 25% guide.',
         },
         {

@@ -4,9 +4,10 @@
  "targets": [
   {
    "company": "Yash Highvoltage",
-   "target": 1643,
+   "target": 1301,
    "priceAtSetting": 1164,
-   "group": "price-only, fits now"
+   "group": "price-only, fits now",
+   "revised": "2026-10-24: growth estimate lowered to what management guidance supports"
   },
   {
    "company": "EPack Prefab Techno.",
@@ -22,15 +23,17 @@
   },
   {
    "company": "Himadri Speciality",
-   "target": 559,
+   "target": 472,
    "priceAtSetting": 492,
-   "group": "price-only, fits now"
+   "group": "needs a fall",
+   "revised": "2026-10-24: growth estimate lowered to what management guidance supports"
   },
   {
    "company": "TD Power Systems",
-   "target": 703,
+   "target": 438,
    "priceAtSetting": 639.55,
-   "group": "price-only, fits now"
+   "group": "needs a fall",
+   "revised": "2026-10-24: growth estimate lowered to what management guidance supports"
   },
   {
    "company": "Clean Max Env. Energ",
@@ -40,15 +43,17 @@
   },
   {
    "company": "RR Kabel Ltd.",
-   "target": 2285,
+   "target": 1937,
    "priceAtSetting": 2140,
-   "group": "price-only, fits now"
+   "group": "needs a fall",
+   "revised": "2026-10-24: growth estimate lowered to what management guidance supports"
   },
   {
    "company": "SJS Enterprises",
-   "target": 1952,
+   "target": 1512,
    "priceAtSetting": 1873.5,
-   "group": "price-only, fits now"
+   "group": "needs a fall",
+   "revised": "2026-10-24: growth estimate lowered to what management guidance supports"
   },
   {
    "company": "Va Tech Wabag",
@@ -58,15 +63,17 @@
   },
   {
    "company": "Neuland Laboratories",
-   "target": 19336,
+   "target": 11775,
    "priceAtSetting": 18865,
-   "group": "price-only, fits now"
+   "group": "needs a fall",
+   "revised": "2026-10-24: growth estimate lowered to what management guidance supports"
   },
   {
    "company": "Rainbow Children's Medicare",
-   "target": 1193,
+   "target": 720,
    "priceAtSetting": 1169.6,
-   "group": "price-only, fits now"
+   "group": "needs a fall",
+   "revised": "2026-10-24: growth estimate lowered to what management guidance supports"
   },
   {
    "company": "Shadowfax Tech.",
