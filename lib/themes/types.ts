@@ -1,4 +1,4 @@
-// Investment themes (defence outside the aerospace & defence sector, battery storage, data centres, medical devices,
+// Investment themes (defence outside the aerospace & defence sector, battery storage, data centres, medical devices, aerospace,
 // semiconductors, nuclear): which companies have something concrete behind the theme, from their own calls.
 // Kept apart from the owner's own tags, which they edit by hand.
 

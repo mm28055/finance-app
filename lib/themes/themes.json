@@ -1,6 +1,6 @@
 {
  "updated": "2026-10-24",
- "method": "A company is listed under a theme only when its own management said something concrete about it in its last two results calls: revenue, orders in hand, approvals, or capex it has committed. Passing mentions, analysts' questions and 'we are exploring' do not count. 'Orders or revenue now' means it already sells or holds orders; 'Building' means money committed or approvals won, but no meaningful revenue yet. Each line says what the company said and where. Read from the calls on 13–14 October 2026 (medical devices on 24 October) and reviewed each results season as new calls come in. A list of who is exposed to the theme, not a recommendation.",
+ "method": "A company is listed under a theme only when its own management said something concrete about it in its last two results calls: revenue, orders in hand, approvals, or capex it has committed. Passing mentions, analysts' questions and 'we are exploring' do not count. 'Orders or revenue now' means it already sells or holds orders; 'Building' means money committed or approvals won, but no meaningful revenue yet. Each line says what the company said and where. Read from the calls on 13–14 October 2026 (medical devices and aerospace on 24 October) and reviewed each results season as new calls come in. A list of who is exposed to the theme, not a recommendation.",
  "themes": [
   {
    "key": "defence",
@@ -1243,6 +1243,271 @@
      "level": "building",
      "why": "Its subsidiary iMeds has approvals for about five products (ventilator, CPAP, oxygen concentrator, surgical staplers); sales not started.",
      "source": "AGM, Jun 2026"
+    }
+   ]
+  },
+  {
+   "key": "aerospace",
+   "label": "Aerospace & space",
+   "scope": "Companies in any sector, including Aerospace & defence, with parts, materials, electronics, machines or engineering work for aircraft, aero-engines, rockets or satellites, civil or military. Drones, airlines, airports and missiles on their own are left out.",
+   "companies": [
+    {
+     "company": "Aequs",
+     "level": "now",
+     "why": "Aerospace revenue ₹322cr in Q1, up 40%; signed its first contract to make complete Airbus A320 wheels with Safran, and long-term deals with two new aerostructure customers.",
+     "source": "Q1 FY27 call, Jul 2026"
+    },
+    {
+     "company": "Raymond",
+     "level": "now",
+     "why": "Aerospace and defence revenue ₹123cr in Q1, up about 40%; ₹510cr of its 5-year capex plan goes to aerospace.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Unimech Aerospace",
+     "level": "now",
+     "why": "Q1 revenue ₹108cr, up 71%, about three-quarters from aero tooling; signed a long-term deal with FACC (Austria) to supply aircraft-structure parts; confirmed order book ₹280cr.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Sansera Engineering",
+     "level": "now",
+     "why": "Aerospace, defence and chip-equipment parts brought ₹316cr in FY26, up 155%; targets ₹1,300–1,400cr in 2–4 years and supplies ISRO and HAL.",
+     "source": "Q4 FY26 and Q1 FY27 calls, May–Aug 2026"
+    },
+    {
+     "company": "Azad Engineering",
+     "level": "now",
+     "why": "Aerospace and defence revenue crossed ₹100cr in FY26; holds over $200m of aerospace and defence orders, including Pratt & Whitney and Rolls-Royce.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "MTAR Technologies",
+     "level": "now",
+     "why": "Makes parts for foreign aero-engine makers from a dedicated aerospace plant it is expanding; expects volume orders for Tejas Mk1A actuators.",
+     "source": "Q1 FY27 call, Jul 2026"
+    },
+    {
+     "company": "Mishra Dhatu Nigam (MIDHANI)",
+     "level": "now",
+     "why": "Space, including ISRO, is 21% of its business (about ₹93cr in FY26); opened a ₹40cr aerospace fastener plant.",
+     "source": "Q4 FY26 and Q1 FY27 calls, Jun–Aug 2026"
+    },
+    {
+     "company": "Rossell Techsys",
+     "level": "now",
+     "why": "Makes wiring and electronics for Boeing (about 40% of revenue) and won a multi-year space contract worth about ₹400cr.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Astra Microwave Products",
+     "level": "now",
+     "why": "Holds the ₹1,870cr Uttam radar order for the Tejas fighter; a third of its order book is space and weather work.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Apollo Micro Systems",
+     "level": "now",
+     "why": "Has ₹100–150cr of HAL orders for systems on the Tejas (LCA) and expects another ₹150cr from HAL.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Data Patterns (India)",
+     "level": "now",
+     "why": "Won an order to design an antenna for a fighter aircraft and is qualifying its systems to fly on about 250 Su-30s.",
+     "source": "Q1 FY27 call, Jul 2026"
+    },
+    {
+     "company": "Centum Electronics",
+     "level": "now",
+     "why": "Won its second complete radar order for satellite and space-debris tracking; building prototypes for an HAL programme.",
+     "source": "Q4 FY26 and Q1 FY27 calls, May–Aug 2026"
+    },
+    {
+     "company": "Digilogic Systems",
+     "level": "now",
+     "why": "Makes test systems for aircraft and missiles and has delivered test facilities for space programmes.",
+     "source": "Q4 FY26 call, Jun 2026"
+    },
+    {
+     "company": "Avantel",
+     "level": "now",
+     "why": "First order for 9 satellite ground stations for NSIL (India's space agency arm), built with Safran; also supplies satellite terminals to the Navy.",
+     "source": "AGM, Jun 2026"
+    },
+    {
+     "company": "Premier Explosives",
+     "level": "now",
+     "why": "Makes rocket-motor fuel for ISRO under a service contract (about ₹18cr in FY26).",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Cyient DLM",
+     "level": "now",
+     "why": "Aerospace is its largest segment, 47% of Q2 revenue; it completed a Nadcap aerospace audit at Mysore.",
+     "source": "Q1 and Q2 FY27 calls, Jul–Oct 2026"
+    },
+    {
+     "company": "Avalon Tech",
+     "level": "now",
+     "why": "Aerospace is about 8% of revenue, up 47% in Q1; volume orders expected from a satellite-communication customer.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Vinyas Innovativ",
+     "level": "now",
+     "why": "Electronics for defence and aerospace customers with long-term orders; won Nadcap accreditation for circuit-board assembly.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Belrise Industries",
+     "level": "now",
+     "why": "Bought two aerospace machining firms, SDM (France) and Chesterhall (UK); aims for 10% of revenue from aerospace and defence.",
+     "source": "Q4 FY26 and Q1 FY27 calls, May–Aug 2026"
+    },
+    {
+     "company": "Sundram Fasteners",
+     "level": "now",
+     "why": "Aerospace fasteners grew from ₹50cr to a ₹100cr+ target this year, with Nadcap and AS9100 approvals; aims for ₹500cr in 2–3 years.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Inox India",
+     "level": "now",
+     "why": "Won orders for 14 large cryogenic tanks from a space-launch customer and received AS9100D, which lets it make parts that fly.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "LMW",
+     "level": "now",
+     "why": "Its aerospace unit (ATC) made ₹206cr in FY26 and ₹60cr in Q1, mostly exports to Boeing's suppliers, plus ISRO and HAL; order book about ₹1,000cr.",
+     "source": "Q4 FY26 and Q1 FY27 calls, May–Jul 2026"
+    },
+    {
+     "company": "Jyoti CNC Auto.",
+     "level": "now",
+     "why": "Aerospace and defence buyers were 37% of Q1 revenue and 38% of its machine-tool order book.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Kusumgar",
+     "level": "now",
+     "why": "Its mix has shifted to military and aerospace fabrics and products, now the main growth driver.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Airfloa Rail Techno.",
+     "level": "now",
+     "why": "About ₹70cr of its order book is aerospace and defence work, mostly for HAL.",
+     "source": "Q4 FY26 call, Jun 2026"
+    },
+    {
+     "company": "Apsis Aerocom",
+     "level": "now",
+     "why": "Aerospace was over 26% of revenue (about ₹12cr) in FY26; building a second machining plant in Bengaluru's aerospace park.",
+     "source": "Q4 FY26 call, Jun 2026"
+    },
+    {
+     "company": "Pennar Industries",
+     "level": "now",
+     "why": "Has a small aerospace machining and tooling unit, Cadnum, inside its railways business.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "AXISCADES Technologies",
+     "level": "now",
+     "why": "Aerospace engineering services plus early aerospace manufacturing revenue (about ₹6cr in Q1); signed to buy an AS9100-certified parts maker.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Tata Technologies",
+     "level": "now",
+     "why": "Aerospace engineering revenue about $10m in Q1, growing, with strong demand from aircraft makers.",
+     "source": "Q1 and Q2 FY27 calls, Jul–Oct 2026"
+    },
+    {
+     "company": "Cyient",
+     "level": "now",
+     "why": "Engineering and data services for aerospace customers, part of its transport business.",
+     "source": "Q1 FY27 call, Jul 2026"
+    },
+    {
+     "company": "Expleo Solutions",
+     "level": "now",
+     "why": "Aerospace and defence engineering, including test benches for Airbus and Thales, was among its best performers.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "HFCL",
+     "level": "building",
+     "why": "Buying an aerostructures business (deal in its final stage) that lifts its defence order book to about ₹2,230cr; targets ₹3,000cr+ defence and aerospace revenue by FY29.",
+     "source": "Q4 FY26 and Q1 FY27 calls, Apr–Jul 2026"
+    },
+    {
+     "company": "NRB Bearing",
+     "level": "building",
+     "why": "Bought Mahant, an aerospace toolroom with a ₹25cr order book, to enter aerospace with certifications already in place.",
+     "source": "Q4 FY26 and Q1 FY27 calls, May–Aug 2026"
+    },
+    {
+     "company": "Goodluck India",
+     "level": "building",
+     "why": "Part of a ₹400cr capex in its defence and aerospace arm is for aerospace parts; targets ₹200cr aerospace revenue by FY28.",
+     "source": "Q4 FY26 and Q1 FY27 calls, May–Aug 2026"
+    },
+    {
+     "company": "Kaynes Technology",
+     "level": "building",
+     "why": "Has entered space technology: its first three satellites are in prototype, aiming to launch by mid-2027.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Krishna Defence & Allied Industries",
+     "level": "building",
+     "why": "Won AS9100D aerospace certification and a design win for an aircraft arresting-gear system.",
+     "source": "Q4 FY26 call, May 2026"
+    },
+    {
+     "company": "Aimtron",
+     "level": "building",
+     "why": "Won AS9100 aerospace approval; aerospace and defence now add about 2% of revenue.",
+     "source": "Q4 FY26 call, Apr 2026"
+    },
+    {
+     "company": "Omnitech Engineering",
+     "level": "building",
+     "why": "Plants certified to AS9100, Nadcap under way, and four first-article orders from aerospace and defence customers.",
+     "source": "Q4 FY26 and Q1 FY27 calls, May–Aug 2026"
+    },
+    {
+     "company": "Welspun Specialty",
+     "level": "building",
+     "why": "Won AS9100D aerospace accreditation for its alloy steels; volumes are still small.",
+     "source": "Q4 FY26 and Q1 FY27 calls, May–Jul 2026"
+    },
+    {
+     "company": "Rolex Rings",
+     "level": "building",
+     "why": "Has its first aerospace registrations, approvals and certification.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Carborundum Univer.",
+     "level": "building",
+     "why": "New aerospace and defence ceramic lines are in qualification; meaningful revenue expected from FY28.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Ramkrishna Forgings",
+     "level": "building",
+     "why": "Running aerospace alloy trials and quoting to aerospace makers; aluminium and titanium forgings planned.",
+     "source": "Q4 FY26 and Q1 FY27 calls, May–Jul 2026"
+    },
+    {
+     "company": "TVS Supply Chain Sol",
+     "level": "building",
+     "why": "Joint venture with Italy's ALA (a supplier to Boeing, Airbus and Dassault) for aerospace and defence parts logistics, starting in H2 FY27.",
+     "source": "Q1 FY27 call, Aug 2026"
     }
    ]
   }
