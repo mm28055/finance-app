@@ -1,7 +1,49 @@
 {
-  "updated": "2026-10-23T19:28:05.085Z",
+  "updated": "2026-10-24T18:21:39.577Z",
   "movesDate": "2026-10-23",
   "items": [
+    {
+      "id": "2026-10-24|Akzo Nobel|policy|titanium-dioxide-import-duty",
+      "company": "Akzo Nobel",
+      "sector": "Consumer Durables",
+      "date": "2026-10-24",
+      "kind": "policy",
+      "tone": "watch",
+      "headline": "The Finance Ministry notified an anti-dumping duty of $460-$681 per tonne on Chinese titanium dioxide imports for five years.",
+      "summary": "The company relies heavily on titanium dioxide to manufacture its Dulux decorative paints, so the steep duty on this crucial raw material will negatively impact its profitability.",
+      "reason": "policy",
+      "url": "https://economictimes.indiatimes.com/industry/cons-products/paints/china-faces-fresh-indian-duties-on-titanium-dioxide-imports-anti-dumping-levy-of-460-681-per-tonne-reimposed-for-five-years/articleshow/135170362.cms",
+      "source": "Economic Times",
+      "dot": true
+    },
+    {
+      "id": "2026-10-24|Indigo Paints|policy|titanium-dioxide-import-duty",
+      "company": "Indigo Paints",
+      "sector": "Consumer Durables",
+      "date": "2026-10-24",
+      "kind": "policy",
+      "tone": "watch",
+      "headline": "The Finance Ministry notified an anti-dumping duty of $460-$681 per tonne on Chinese titanium dioxide imports for five years.",
+      "summary": "Titanium dioxide is the main white pigment used in house paints and accounts for 20-30% of total raw-material costs, so this new duty will squeeze the company's margins.",
+      "reason": "policy",
+      "url": "https://economictimes.indiatimes.com/industry/cons-products/paints/china-faces-fresh-indian-duties-on-titanium-dioxide-imports-anti-dumping-levy-of-460-681-per-tonne-reimposed-for-five-years/articleshow/135170362.cms",
+      "source": "Economic Times",
+      "dot": true
+    },
+    {
+      "id": "2026-10-24|Kansai Nerolac|policy|titanium-dioxide-import-duty",
+      "company": "Kansai Nerolac",
+      "sector": "Consumer Durables",
+      "date": "2026-10-24",
+      "kind": "policy",
+      "tone": "watch",
+      "headline": "The Finance Ministry notified an anti-dumping duty of $460-$681 per tonne on Chinese titanium dioxide imports for five years.",
+      "summary": "As a major maker of decorative and industrial paints, titanium dioxide is one of its largest inputs (roughly 20-30% of raw-material costs), meaning the import levy will noticeably inflate expenses.",
+      "reason": "policy",
+      "url": "https://economictimes.indiatimes.com/industry/cons-products/paints/china-faces-fresh-indian-duties-on-titanium-dioxide-imports-anti-dumping-levy-of-460-681-per-tonne-reimposed-for-five-years/articleshow/135170362.cms",
+      "source": "Economic Times",
+      "dot": true
+    },
     {
       "id": "2026-10-23|Aartech Solonics|move",
       "company": "Aartech Solonics",
