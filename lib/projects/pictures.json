@@ -32690,8 +32690,8 @@
   },
   {
    "company": "Shakti Pumps",
-   "fingerprint": "cadc39a59fa09083",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "935a12a13e2bc101",
+   "checkedOn": "2026-10-25",
    "lines": {
     "heading": "How full the plants are (Q1 FY27)",
     "items": [
@@ -32729,7 +32729,7 @@
       "name": "0.5 GW domestic-content module line",
       "sub": "500 MW a year, roughly the 50–60 MW a month of panels it now buys",
       "right": "part of ₹1,500–1,700cr",
-      "status": "building",
+      "status": "started",
       "projectId": "shakti-pumps-module-0-5gw"
      },
      {
@@ -32744,11 +32744,16 @@
    "timeline": [
     {
      "when": "Q2 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "shakti-pumps-module-0-5gw-m1"
      ],
-     "sub": "Q1 FY27 call: September 2026, first month at 40–50% output, then 60–70%, then about 85%. The May call had promised end of Q1. No start announced in the filings seen"
+     "sub": "Q1 FY27 call: September 2026, first month at 40–50% output, then 60–70%, then about 85%. The May call had promised end of Q1. Filing of 23 Oct 2026: trial production began only in October"
+    },
+    {
+     "when": "Oct 2026",
+     "tone": "done",
+     "text": "0.5 GW module line in trial production (filing of 23 Oct 2026)"
     },
     {
      "when": "Q3 FY27",
@@ -32775,7 +32780,7 @@
    "notes": [
     "Pump, motor and solar-structure plants (pump count not given)"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note"
+   "source": "Filing of 23 Oct 2026, Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Shalby",

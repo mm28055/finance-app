@@ -566,7 +566,7 @@ export const pumpsCompEng: SectorOverview = {
                         ['Kirloskar Oil', 'US$2bn (about ₹16,000–16,600cr) revenue by FY30; no FY27 numbers', '₹700cr by April 2027, then ₹1,400cr', '**Mixed**: no FY27 target to miss, but the margin fell to 11.2% from 13.5% weeks after it said there was ‘absolutely no margin deterioration’; exports −11%'],
                         ['Powerica', 'Double-digit revenue; genset margin guidance withdrawn; 638 MW of wind by FY29', '₹1,130cr for ~153 MW of wind, 70–75% debt', '**Mixed**: revenue +27%; genset margin 5.6%, not a brief dip'],
                         ['Greaves Cotton', 'Core growth 16–20%; core margin 13–15%; scooters EBITDA-positive in 4–6 quarters', '₹500–700cr over 4–5 years; ₹381cr into investees in Q1', '**Mixed**: core growth on target; margin 12.6% below band; scooter IPO dropped'],
-                        ['Shakti Pumps', '₹5,000cr revenue by 2029; no margin target', '₹1,500–1,700cr by September 2027', '**Slipped**: module plant from June to September; KUSUM 2.0 still awaited; margin 9.6%'],
+                        ['Shakti Pumps', '₹5,000cr revenue by 2029; no margin target', '₹1,500–1,700cr by September 2027', '**Slipped**: module plant from June to September, then trial production only in October (filed 23 Oct 2026); KUSUM 2.0 still awaited; margin 9.6%, then 8.6% in Q2'],
                         ['Oswal Pumps', 'FY27 revenue +20–25% (kept); EBITDA margin 15–17% (cut from 22–23%)', '~₹350cr in FY27', '**Walked back**: margin guide cut 6 points; Q1 revenue −7.9%'],
                     ],
                 },

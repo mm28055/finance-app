@@ -18569,7 +18569,11 @@
    "text": "Module line running from September 2026",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Trial production began in October 2026 (filed 23 Oct), not September",
+   "resolvedOn": "2026-10-25",
+   "resolvedBy": "review",
+   "outcome": "Stays pass"
   },
   {
    "id": "shakti-pumps-q2fy27-2",
@@ -30716,8 +30720,12 @@
    "text": "0.5 GW module plant starts (September 2026)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "shakti-pumps-module-0-5gw"
+   "status": "missed",
+   "project": "shakti-pumps-module-0-5gw",
+   "actual": "Trial production began in October 2026 (filed 23 Oct), not September",
+   "resolvedOn": "2026-10-25",
+   "resolvedBy": "review",
+   "outcome": "Stays pass; about a month late"
   },
   {
    "id": "shakti-pumps-cell-2-2gw-m1",

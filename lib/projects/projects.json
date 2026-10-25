@@ -11890,10 +11890,16 @@
    "what": "Domestic-content solar module line so solar pumps can use Indian-made panels (now buying 50–60 MW a month); ramps from about 40–50% output to about 85% within three months",
    "cost": "part of ₹1,500–1,700cr for modules and cells",
    "expectedStart": "Q2 FY27",
-   "status": "building",
-   "source": "Q1 FY27 call (Jul 2026): completion September 2026; promised for end of Q1 in May",
-   "updatedOn": "2026-10-23",
-   "capacityAdd": "500 MW of modules a year (roughly its current 600–720 MW a year of bought panels); about 40–50% output in the first month, 60–70% in the second, then about 85%"
+   "status": "started",
+   "source": "Filing of 23 Oct 2026 (trial production from October 2026); Q1 FY27 call (Jul 2026): completion September 2026; promised for end of Q1 in May",
+   "updatedOn": "2026-10-25",
+   "capacityAdd": "500 MW of modules a year (roughly its current 600–720 MW a year of bought panels); about 40–50% output in the first month, 60–70% in the second, then about 85%",
+   "revisions": [
+    {
+     "on": "2026-10-25",
+     "text": "Filing of 23 Oct 2026: trial production of the 0.5 GW line began in October 2026, a month after the September date given on the Q1 FY27 call"
+    }
+   ]
   },
   {
    "id": "shakti-pumps-cell-2-2gw",
