@@ -671,7 +671,7 @@ export const autoRelatedSystems: SectorOverview = {
             company: 'Tenneco Clean Air', rank: 1, stance: 'PRICED', segment: RIDE,
             what: "The Indian arm of the Apollo-owned Tenneco group: exhaust and after-treatment systems, spark plugs, gaskets and bearings, plus Monroe shock absorbers and struts, for truck, car and off-highway makers; listed November 2025.",
             view: "**The best business here, priced a little ahead of me.** It holds 58% of truck exhausts and 55% of car dampers, earns a 61% return on capital, has ₹519cr of net cash and a ₹12,400cr lifetime order book, and its ride business grew 27.9% in Q1. But the value-added margin fell to 17.9% from 19.6%, Q1 profit fell 1.7%, half of revenue comes from three customers and the exhaust half has no EV content. The price needs about {need:Tenneco Clean Air|19}% a year against my ~15%.",
-            watch: 'The half-year order book against ₹12,400cr; value-added margin back above 18.5%; FY27 capex landing in the ₹350–450cr range with plants starting on time.',
+            watch: 'The half-year order book against ₹12,400cr; value-added margin back above 18.5%; FY27 capex landing in the ₹350–450cr range with plants starting on time; further share sales by the parent, which sold about 15% (₹2,078.5cr) in September 2026 and now holds 59.8%.',
         },
         {
             company: 'Sharda Motor', rank: 2, stance: 'HARVEST', segment: RIDE,
