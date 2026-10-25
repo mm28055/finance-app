@@ -853,13 +853,13 @@ export const autoRelatedMetal: SectorOverview = {
         {
             company: 'OBSC Perfection', rank: 13, stance: 'SCALEUP', segment: CAST,
             what: "A build-to-print maker of precision shafts, rods and forged, cast and stamped parts for Tenneco, ZF, Mahle and Tata AutoComp, with plants in Pune, Chennai and Faridabad, listed on the NSE SME platform.",
-            view: "**Spectacular growth, paid for with outside money.** Sales rose 85% in Q1 and the ₹1,200cr order book is 5.5 times FY26 sales, over half export. But operating cash was negative in FY26, it issued shares twice in a year, ₹31cr of steel comes from promoter companies, and the margin has not risen. The price needs about {need:OBSC Perfection|29}% a year against my ~25%.",
+            view: "**Spectacular growth, paid for with outside money.** Sales rose 85% in Q1 and the ₹1,200cr order book is 5.5 times FY26 sales, over half export. But operating cash was negative in FY26, it issued shares twice in a year, ₹31cr of steel comes from promoter companies, and the margin has not risen. The price needs about {need:OBSC Perfection|29}% a year against my ~25%. By 25 Oct 2026 the price had moved into the fits band, and October brought a ₹77.5cr five-year Tenneco order and a first defence order (₹8.9cr, from an Elbit Systems company); it stays wait, because the growth is still funded by share issues (₹86.5cr at ₹601 in September) rather than operating cash.",
             watch: 'Positive operating cash in FY27; export share towards 30%; no further share issues.',
         },
         {
             company: 'Rico Auto Industries', rank: 14, stance: 'TURNAROUND', segment: CAST,
             what: "A Gurugram aluminium and iron die-caster and machinist for Hero, Maruti, Toyota, BMW and Ford, with alloy wheels, pumps, friction materials and a new hybrid-parts plant at Hosur.",
-            view: "**Revenue is growing, but promises are not being kept.** Q1 revenue rose 39% (about 20% in volume) and 55 new single-source programmes are ramping. But the margin fell to 4.6% ten weeks after management promised above 10%, it is below CRISIL's 8% downgrade trigger, net debt is ₹706cr, and return on capital has been 6–9% for a decade. The price needs about {need:Rico Auto Industries|24}% a year against my ~20%.",
+            view: "**Revenue is growing, but promises are not being kept.** Q1 revenue rose 39% (about 20% in volume) and 55 new single-source programmes are ramping. But the margin fell to 4.6% ten weeks after management promised above 10%, it is below CRISIL's 8% downgrade trigger, net debt is ₹706cr, and return on capital has been 6–9% for a decade. The price needs about {need:Rico Auto Industries|24}% a year against my ~20%. By 25 Oct 2026 the price had moved into the fits band; it stays pass until the margin is back above 9% and the land sale has cut the ₹706cr of net debt.",
             watch: 'Margin back above 9% by Q3; the Gurugram land sale used to cut debt; CRISIL’s rating.',
         },
         {
