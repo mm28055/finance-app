@@ -399,3 +399,56 @@ Pushed to master; all checks passed (typecheck clean, "All notes pass.").
 **Results pass:** 17 reviewed, and all figures match Screener. I changed one overnight verdict: **Cyient** from ahead to mixed. Its 26% revenue growth is mostly bought (Kinetic, TAO Digital), and net profit fell 8%. I agree with the rest, adding what the points missed: Fairchem's land purchase from its chairman, Garware's margin-guide rise to 27%, Tinna's ₹250cr plan, and the weaker standalone business at Mahindra Holidays.
 
 **Top 12:** CleanMax (price drift only) and Mahindra Lifespace (reserve; lumpy quarterly revenue) were touched, but no trigger was hit, so nothing changed.
+
+## 25 October 2026
+
+**Checks:** the notes check lists the same 30 problems as before this run, all "company in the sector with no verdict" (the newly listed companies that still need sections). They were on master already, so they did not block the push. The typecheck is clean and no capacity picture is out of date or in error. The two older branches, weekly-review/2026-09-30 and weekly-review/2026-10-18, again showed as unmerged only because this copy of the repository was shallow; once the full history was fetched, both were already part of master, so there was nothing to merge.
+
+**Follow-ups handled: 40 (the limit). Still open: 138.** 69 are the recently listed companies with no note section (already a Needs-a-session item), 6 are waiting entries, 34 are price-drift reviews raised on 23 October (Shilchar, Advanced Enzyme, Aegis, Welspun Enterprises, Accent Microcell, Action Construction, ADF Foods, Afcons, Avanti Feeds, Bajaj Consumer, BlackBuck, Avalon, Crompton, Datamatic, DCW, Deepak Fertilisers, Finolex Cables, Granules, IFGL, JK Tyre, Kirloskar Pneumatic, Jyoti CNC, Macpower, Krsnaa, Laxmi Dental, Minda Corp, MSTC, NBCC, Powerica, Puravankara, Quess, RACL, Rainbow and RR Kabel), 27 are capacity-picture date fixes, and 2 are new projects from this week's filings (Kajaria's ₹554cr and Lumax's ₹150cr plans).
+
+**Calls changed:** none.
+
+**New results calls (transcripts read):**
+- **Kross** (stays wait). Q2 revenue rose 80% and the margin recovered to 13.0% (checkpoint met). Receivable days fell to about 90 (checkpoint met). But borrowing more than doubled to about ₹117cr for the seamless-tube plant, about ₹110cr more capex is due in H2, and management cannot say when the 14–15% margin returns. Seamless-tube trials are set for Feb–Mar 2027. The tipping-jack aim was cut to 50–60% of capacity.
+- **Elecon** (stays follow). Revenue rose 10.5% and the margin recovered to 23.1% (gear EBIT 22.1%), on price rises and exports up 31%. The order book is a record ₹1,635cr, and H2 growth is guided at about 15%. Some finished goods were still waiting to ship (checkpoint partly met). The Navy frigate orders are now expected only at the start of FY29.
+- **Leela Palaces** (stays wait). RevPAR rose 30%, revenue 33% and operating profit 36% (38% in H1), and high-teens growth is guided for H2. Net debt fell to ₹1,215cr. Bandhavgarh slipped from FY27 to late 2027 (recorded as a revision with a new milestone). Leela will also help buy the full building rights at BKC, which needs a shareholder vote.
+- **Rossari** (stays follow). Revenue rose 19% to a record ₹698cr, and the margin was 12.5% against the 13% needed (partly met). ₹131cr of H1 cash flow cut net debt to ₹221cr, still above the ₹200cr checkpoint (partly met). The consumer arm broke even but is not sold (missed). The new ethoxylation unit is only about 30% used, so its milestone moves to about Q1 FY28.
+- **Orient Electric** (stays wait). Revenue rose 25%, but the gross margin fell for a fourth quarter to 29.0% (missed), the operating margin was 6.5% against the 8% checkpoint (missed), and working capital rose to 34 days. The double-digit margin is again "four to six quarters" away.
+- **Aurum Proptech** (stays pass). Revenue rose 64%, continuing operations made ₹6.8cr before tax (5.2%; met), and no new shares were issued beyond the deal (met). Housing.com closed on 29 September and is promised to be profitable within 12–18 months (added as a checkpoint).
+
+**Shareholding and big holders:**
+- **Tenneco Clean Air** (stays follow). The promoter fell from 74.8% to 59.8% because the two Tenneco Mauritius companies sold about 15% for ₹2,078.5cr in September through HSBC and JM Financial. I added it to the card and the watch items.
+- **Genus Power** (stays wait). GIC sold most of its 15.1% stake (11.03% for about ₹956cr on 30 June) but keeps 74% of the metering platform. I added it to the card.
+- **Shadowfax** (stays follow). Pre-IPO holders sold after the lock-in: Flipkart down to 1.5%, Eight Roads to 1.5% and TPG's Newquest to 7.4%, while ICICI Pru bought up to 9%. The view now gives the figures.
+- **Rubicon:** General Atlantic's 8.38% sale (₹2,300cr, 26 August) was already in the note.
+- **Fund trades only, no change:** Ashapura, Ather, Divgi, Jyothy, Pondy Oxides, V-Guard, Anupam (a public holder), Honasa (Peak XV selling down), Rishabh, EPL, Indigo Paints, Rallis and Sona BLW.
+
+**Price drift (calls kept, a dated reason added to each):**
+- **Pass, price now fits:** Mobavenue (promoter-linked structure), Solarworld (a ₹420cr cell venture instead of the funded plan; order book corrected to ₹3,155cr), AvenuesAI (net revenue not growing, UPI fee deferred), GE Power (one-off profit, ₹450cr lent to its group) and Rico (margin and debt).
+- **Rushil** stays pass; its price is back to full.
+- **Wait, price now fits:** OBSC (growth funded by share issues; October orders from Tenneco ₹77.5cr and a first defence order), Orient Bell, Somany, Paradeep (debt near CRISIL's trigger, plus a new ₹4,750cr Odisha MoU with no funding plan) and Bharat Wire Ropes.
+
+**Still waiting (checked today):**
+- HEG's electrode company has not listed.
+- SKF India has not filed July–September results.
+- Ganesh Benzoplast's sale has not closed.
+- The UPI merchant fee is still deferred, with no date. One report says 1 January 2027.
+- The cancer-drug margin cap is now also reported by All India Radio, but the NPPA and Gazette sites still cannot be reached, so the order itself has not been read.
+- The ethanol tender terms are still not confirmed from the tender document.
+
+**Filings pass, 23–24 October** (notes corrected):
+- **Sterlite Technologies** (stays pass) filed over ₹27,600cr of multi-year orders won in H1 and an order book of ₹35,274cr, about five times a year's sales. It also reported a 32% Q2 margin.
+- **Newgen** (stays own, small) filed that its founder-chairman, Diwakar Nigam, is unwell and unable to carry out his duties regularly, three months after a new chief executive took over. I added this to the view, the card and the management record.
+- **KEC**'s largest-ever domestic transmission order: ₹2,872cr of 765 kV lines from Power Grid, which had banned it until recently.
+- **IFB**: CRISIL raised its debentures to AA/Stable.
+- **Natco**: the ₹1,279cr rights issue has been allotted.
+- **Shakti Pumps**: the 0.5 GW module line started trial production in October, a month late (two checkpoints missed). The project and its picture are updated.
+- **Steel Strips**: the scanned filing is hard to read. It shows Pranav Jain appointed as Vice President (Finance & Accounts), and the filings digest says he is the new CFO, but I could not confirm that, so the management record is unchanged.
+- **Logged only:** Raymond's new name, Wheels India's ICRA upgrade to A+, Orchid's Latin American licence (up to $80m over ten years), Granules' promoter allotment (already in the note), Gland's four and Gufic's three US FDA observations (Gland calls them procedural), OnEMI's ₹832cr placement, Jupiter's ₹150cr Pune land purchase, GK Energy's ₹330cr pump order, Vikram Solar's cell plant on schedule for December, Elica's 2027 MD and CFO change (Whirlpool), Patil Automation's allotment, ideaForge's ended US venture, Avantel's new business lines, PG Electroplast's subsidiary auditor change, Arisinfra's related-party vote and Park Medi World's tax inspection.
+- **Left for the next run** (40-entry limit): projects for Kajaria's ₹554cr expansion and Lumax's ₹150cr Manesar plant.
+
+**News pass, 23–24 October:** 7 entries had a clear reason, and none was very important. They were the five-year anti-dumping duty on Chinese titanium dioxide (Akzo, Indigo, Kansai Nerolac; a modest cost rise, not a rule that resets the industry), stricter enforcement of the ban on reusing single-use devices (Poly Medicure), and results-day moves at Cyient, Steel Strips and Swiggy.
+
+**Results pass:** 18 reviewed, and all operating figures match Screener. I changed one overnight verdict: **JK Tyre** from mixed to behind. Operating profit fell 36% and net profit 71%, with the margin at 7% against 13%. I agree with the rest, adding what the points missed: Kajaria's and Lumax's new capex, Sterlite's ₹27,600cr of orders, Steel Strips' new plant, Jupiter's land purchase, Newgen's chairman, Shakti's module trial and Monolithisch's new plant. None had an analysed call, so no checkpoints were judged from them.
+
+**Top 12:** EPL (a fund buying) was touched, along with Rubicon and Gland, which appear only in the research text. No trigger was hit, so nothing changed.
