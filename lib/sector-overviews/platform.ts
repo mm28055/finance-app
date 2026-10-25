@@ -727,8 +727,8 @@ export const platformCos: SectorOverview = {
         {
             company: 'AvenuesAI', rank: 11, stance: 'SCALEUP', segment: B2B,
             what: "AvenuesAI (renamed from Infibeam Avenues): the CCAvenue online payment gateway and bill-payment platform for more than 10 million merchants in India and the Gulf, plus 82.66% of Rediff (email, business software and the RediffPay UPI app).",
-            view: "**Cheap-looking, standing still.** It is profitable, generates cash and holds net cash, and Q1 profit rose 45%. But payment volume rose 74% while the revenue it keeps fell 3%, the fee per payment halved, the profit rise came from cost cuts, and management guides FY27 earnings per share at −7% to +1% after a ₹700cr rights issue. The price needs about {need:AvenuesAI|12}% a year against my ~8%, so I pass.",
-            watch: 'Net revenue growing again; its share of the UPI fee from 15 October; how the rights-issue money set aside for unnamed acquisitions is spent.',
+            view: "**Cheap-looking, standing still.** It is profitable, generates cash and holds net cash, and Q1 profit rose 45%. But payment volume rose 74% while the revenue it keeps fell 3%, the fee per payment halved, the profit rise came from cost cuts, and management guides FY27 earnings per share at −7% to +1% after a ₹700cr rights issue. The price needs about {need:AvenuesAI|12}% a year against my ~8%, so I pass. By 25 Oct 2026 the price had moved into the fits band; it stays pass, because net revenue is still not growing and the UPI merchant fee that could change that has been deferred with no new date.",
+            watch: 'Net revenue growing again; its share of the UPI merchant fee, deferred by NPCI in October 2026 to a date after Diwali not yet set; how the rights-issue money set aside for unnamed acquisitions is spent.',
         },
         {
             company: 'Turtlemint Fintech', rank: 12, stance: 'TURNAROUND', segment: B2B,
