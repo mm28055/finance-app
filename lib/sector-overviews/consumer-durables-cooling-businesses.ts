@@ -167,7 +167,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Orient Electric',
-        inShort: ["**A CK Birla group maker of fans, coolers, water heaters and small appliances**, plus LED lighting, switchgear and new house wires, from plants in Faridabad, Kolkata, Noida and Hyderabad.", "**Good:** revenue grew 23.5% in Q1 FY27, fan share is rising, lighting has beaten the market for 10–12 quarters, and it holds net cash. **Bad:** gross margin fell for a third quarter to 29.8%, its double-digit margin goal keeps slipping, and it faces GST anti-evasion demands of ₹29.25cr plus an equal penalty.", "**Verdict: wait.** Good growth, but the price asks more margin than it has shown."],
+        inShort: ["**A CK Birla group maker of fans, coolers, water heaters and small appliances**, plus LED lighting, switchgear and new house wires, from plants in Faridabad, Kolkata, Noida and Hyderabad.", "**Good:** revenue grew 25% in Q2 FY27 (24.3% in H1), fan share is rising, wires more than doubled, and lighting has beaten the market for 10–12 quarters. **Bad:** gross margin fell for a fourth quarter to 29.0%, the operating margin was 6.5%, working capital rose to 34 days, its double-digit margin goal keeps slipping (now ‘four to six quarters’), and it faces GST anti-evasion demands of ₹29.25cr plus an equal penalty.", "**Verdict: wait.** Good growth, but the price asks more margin than it has shown."],
         tagline: "A mid-sized fan and lighting brand with design awards and export reach, still trying to lift its margin to double digits.",
         revenue: '₹3,326cr (FY26, standalone)',
         products: [
@@ -176,7 +176,7 @@ const profiles: BusinessProfile[] = [
             { name: 'Lighting', text: "LED lamps and luminaires for homes (luminaires are 60% of the lighting mix) and professional lighting for streets and building facades." },
             { name: 'Switchgear and wires', text: "Switches, MCBs (a new 6kA range) and house wires, added in FY25, which more than doubled; wire prices are reset about every 15 days with copper." },
         ],
-        revenueText: "Consumer durables (fans and appliances) were **70% of Q1 FY27 revenue** (₹669cr, earning 8.7%) and lighting and switchgear **30%** (₹281cr, earning 15.0%). About **45% of fans are bought between March and June**, so the summer quarter dominates. The company does not split revenue between fans and appliances.",
+        revenueText: "Consumer durables (fans and appliances) were **70% of Q1 FY27 revenue** (₹669cr, earning 8.7%) and lighting and switchgear **30%** (₹281cr, earning 15.0%). In Q2 FY27 consumer durables were ₹550cr (+24.9%) and lighting and switchgear ₹329cr (+25.7%). About **45% of fans are bought between March and June**, so the summer quarter dominates. The company does not split revenue between fans and appliances.",
         mixes: [
             { caption: 'Revenue by segment, Q1 FY27 (investor presentation)', parts: [{ label: 'Fans and appliances', share: 70 }, { label: 'Lighting, switchgear and wires', share: 30 }] },
         ],
@@ -189,7 +189,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Crompton', note: 'The fan and pump leader, about 2.5 times its size and quicker to pass on costs.' }, { name: 'Havells, Bajaj Electricals, V-Guard, Usha', note: 'National fan, appliance and lighting brands.' }, { name: 'Philips (Signify), Syska and others', note: 'Rivals in LED lighting, a crowded market.' }, { name: 'Atomberg and other BLDC specialists', note: 'Online-first fan brands that set the pace in energy-saving fans.' }],
         position: "**A top-tier fan brand and exporter**, which gained 30–40 bps of fan share in FY26, with a lighting business that has outgrown the market for 10–12 quarters.",
         money: "Screener shows **net debt of about zero** at March 2026; the company put its net cash at ₹133cr in June. Its payables include ₹139cr of bank-paid acceptances and ₹26cr of TReDS borrowing, a form of supplier finance. No large capex: the Hyderabad plant is built, and spending is on tooling and automation (₹73cr invested in FY26). It faces GST anti-evasion demands of ₹29.25cr plus an equal penalty, which it is contesting. Promoters hold **38.3%**, unchanged.",
-        watch: ["Gross margin back above 31%.", "Operating margin above 8% outside the summer.", "The outcome of the GST demands."],
+        watch: ["Gross margin back above 31% as the October price rise of about 3% sticks.", "Operating margin above 8% in Q3 FY27.", "Working capital back from 34 days toward 25.", "The outcome of the GST demands."],
         charts: consumerDurablesCharts['Orient Electric'],
     },
     {
