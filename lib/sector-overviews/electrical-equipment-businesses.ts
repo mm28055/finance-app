@@ -69,7 +69,7 @@ const profiles: BusinessProfile[] = [
     // ── Engineered machines ──────────────────────────────────────────────────
     {
         company: 'Elecon Engg.Co',
-        inShort: ["**India's biggest industrial gearbox maker**, selling to steel, cement, power and sugar plants in India and abroad.", "**Good:** high returns, strong cash generation and ₹683cr of net cash on Screener (about ₹700cr by the company's count). **Watch:** foreign rivals are cutting prices and margins have slipped from 24% to 21%.", "**Verdict: follow, close to buyable.** The price needs a little more than the 15% a year I expect, but trailing profit is cut by a one-off write-off; on underlying profit it fits."],
+        inShort: ["**India's biggest industrial gearbox maker**, selling to steel, cement, power and sugar plants in India and abroad.", "**Good:** high returns, strong cash generation and ₹683cr of net cash on Screener (about ₹700cr by the company's count). **Watch:** the margin slipped from 24% to 21% in FY26 and recovered to 23.1% in Q2 FY27 on price rises and exports, but domestic demand is flat.", "**Verdict: follow, close to buyable.** The price needs a little more than the 15% a year I expect, but trailing profit is cut by a one-off write-off; on underlying profit it fits."],
         tagline: "India's leading industrial gearbox maker, with a material-handling equipment business and assembly and sales companies abroad.",
         revenue: '₹2,366cr (FY26, consolidated)',
         products: [
@@ -77,9 +77,9 @@ const profiles: BusinessProfile[] = [
             { name: 'Material-handling equipment', text: "Custom conveyor systems, stacker-reclaimers, wagon tipplers and crushers, mostly for power plants, cement and ports." },
             { name: 'Overseas businesses', text: "Benzler (Europe), Radicon (UK and US) and a Singapore unit, which assemble and sell gearboxes close to customers." },
         ],
-        revenueText: "Gears were **80% of Q1 FY27 revenue** and material handling 20%. Overseas revenue was 29% of the quarter; in FY26 it was ₹463cr, led by Europe (₹171cr), the UK (₹102cr) and the US (₹102cr).",
+        revenueText: "Gears were **76% of Q2 FY27 revenue** (₹488cr) and material handling 24% (₹151cr); in Q1 they were 80% and 20%. Overseas revenue was ₹159cr in Q2 (+31%) and 27% of H1; in FY26 it was ₹463cr, led by Europe (₹171cr), the UK (₹102cr) and the US (₹102cr).",
         mixes: [
-            { caption: 'Revenue by division, Q1 FY27', parts: [{ label: 'Gears', share: 80 }, { label: 'Material handling', share: 20 }] },
+            { caption: 'Revenue by division, Q2 FY27', parts: [{ label: 'Gears', share: 76 }, { label: 'Material handling', share: 24 }] },
             { caption: 'Overseas revenue by region, FY26 (₹463cr)', parts: [{ label: 'Europe (Benzler)', share: 37 }, { label: 'UK', share: 22 }, { label: 'US', share: 22 }, { label: 'Middle East', share: 14 }, { label: 'Singapore', share: 5 }] },
         ],
         customers: [
@@ -95,7 +95,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{"name": "Flender (formerly Siemens)", "note": "German gear major with Indian plants; strongest in large engineered gearboxes."}, {"name": "SEW-Eurodrive, Bonfiglioli, NORD", "note": "Multinationals expanding Indian capacity in catalogue gear motors; management expects price pressure from them on new projects."}, {"name": "Shanthi Gears (Murugappa group)", "note": "Listed Indian gear maker, smaller and more custom-focused."}, {"name": "TRF, thyssenkrupp Industries India, FLSmidth", "note": "Competitors in conveyors and bulk material handling."}],
         position: "**India's largest maker of industrial gears**, with 38–40% of the market (ICRA) and one of the broadest ranges. Elecon says customers prefer it for fast delivery.",
         money: "The company puts its net cash at about ₹700cr (June 2026 call); Screener shows ₹683cr. Capex of ₹400cr over FY26–FY28 is funded from its own cash. Promoters hold **59%**, unchanged over three years. No equity raised. Its auditor lists sales, purchases and services with several promoter-group companies as a key audit matter, and FY26 profit was cut by a ₹102cr non-cash write-off of goodwill on its 2010-11 purchase of Benzlers-Radicon.",
-        watch: ["Gear margin getting back toward the 24% target as cheaper rival stock runs out.", "The naval gearbox order and conversion of the record ₹1,518cr order book.", "Whether multinationals' new Indian plants push catalogue prices down."],
+        watch: ["H2 revenue growth of about 15% (guided 15 Oct 2026) from the record ₹1,635cr order book.", "Gear margin holding near Q2's 22% EBIT; material handling back to 22–24%.", "Whether multinationals' new Indian plants push catalogue prices down.", "Navy frigate (P-17 Bravo) gear orders, now expected at the start of FY29."],
         charts: electricalEquipmentCharts["Elecon Engg.Co"],
     },
     {
