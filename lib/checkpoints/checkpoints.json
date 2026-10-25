@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23",
+ "updated": "2026-10-25",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -1819,7 +1819,8 @@
    "status": "met",
    "actual": "13.2%",
    "resolvedOn": "2026-10-23",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait: margin back to 13.0%, but cash still negative and no date for 14–15%"
   },
   {
    "id": "kross-q4fy27-1",
@@ -1840,7 +1841,11 @@
    "text": "Receivable and stock days falling",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Receivable days about 90 in H1 FY27 (81 in Q2; company) against more than 110 a year earlier; stock ₹110cr against about ₹106cr in March on much higher sales",
+   "resolvedOn": "2026-10-25",
+   "resolvedBy": "review",
+   "outcome": "Stays wait: working capital improving, but borrowing doubled for capex"
   },
   {
    "id": "kross-q4fy27-2",
@@ -1849,7 +1854,13 @@
    "text": "Seamless-tube plant commissioned in Q4 FY27",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-25",
+     "text": "Q2 FY27 call (19 Oct 2026): last equipment due by Nov–Dec 2026; production trials in Feb–Mar 2027, not full production; own axles fully on own tubes by the end of H1 FY28"
+    }
+   ]
   },
   {
    "id": "frontier-springs-q2fy27-1",
@@ -4689,7 +4700,8 @@
    "status": "partly",
    "actual": "12.5%",
    "resolvedOn": "2026-10-23",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow: 12.5% is up from 11.6%, but not yet the 13% needed"
   },
   {
    "id": "rossari-biotech-q2fy27-2",
@@ -4700,7 +4712,11 @@
    "ifMet": "Own (with two quarters above 13% margin)",
    "ifMissed": "Stay follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "₹131cr of H1 cash flow (company) cut net debt to ₹221cr, still above ₹200cr",
+   "resolvedOn": "2026-10-25",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "rossari-biotech-q2fy27-3",
@@ -4709,7 +4725,11 @@
    "text": "Consumer arm sold or closed",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Not sold or closed; the institutional and consumer arm made ₹0.2cr of EBITDA in Q2 (from a ₹3.7cr loss); sale of non-core businesses still only hoped for",
+   "resolvedOn": "2026-10-25",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "rossari-biotech-q4fy27-1",
@@ -7171,7 +7191,11 @@
    "due": "Q2 FY27",
    "ifMet": "Wait can end",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "29.0% (Q2 FY27), down from 29.8% in Q1",
+   "resolvedOn": "2026-10-25",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "orient-electric-q2fy27-2",
@@ -7186,7 +7210,8 @@
    "status": "missed",
    "actual": "6.5%",
    "resolvedOn": "2026-10-23",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait: 6.5% outside the summer, gross margin still falling"
   },
   {
    "id": "orient-electric-q3fy27-1",
@@ -8674,7 +8699,13 @@
    "target": 10,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-25",
+     "text": "Q2 FY27 call (15 Oct 2026): about 15% (mid double-digit) growth guided for H2 FY27; H1 grew 11% on an adjusted base"
+    }
+   ]
   },
   {
    "id": "elecon-engg-co-q2fy27-1",
@@ -8683,7 +8714,11 @@
    "text": "Q2 converts the record ₹1,518cr order book without more finished goods slipping past quarter-end",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Q2 revenue ₹639cr, up 23% on Q1 and 10.5% on a year ago; management said some finished goods were still waiting to ship",
+   "resolvedOn": "2026-10-25",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "elecon-engg-co-q4fy27-2",
@@ -8701,7 +8736,13 @@
    "text": "The Navy carrier-gear order booked, expected in Q4 FY27",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-25",
+     "text": "Q2 FY27 call (15 Oct 2026): budgetary offers submitted for the P-17 Bravo frigates; final RFP expected Q2–Q3 FY28 and orders at the start of FY29 (Q1 FY29); no Navy order mentioned for Q4 FY27"
+    }
+   ]
   },
   {
    "id": "td-power-systems-q4fy27-1",
@@ -12370,7 +12411,13 @@
    "text": "FY27 operating-profit growth in the mid-to-high teens (guidance, company basis)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-25",
+     "text": "Q2 FY27 call (14 Oct 2026): H1 operating EBITDA +38%; high-teens growth guided for H2, so FY27 'much better' than the mid-teens first guided"
+    }
+   ]
   },
   {
    "id": "leela-palaces-hotels-q4fy27-2",
@@ -18200,7 +18247,11 @@
    "text": "Continuing-operations pre-tax margin above 5%",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹6.8cr of continuing pre-tax profit on ₹130.2cr of revenue (5.2%; 4.8% on total income, company measure), before Housing.com",
+   "resolvedOn": "2026-10-25",
+   "resolvedBy": "review",
+   "outcome": "Stays pass: Housing.com's losses arrive from Q3"
   },
   {
    "id": "aurum-proptech-q2fy27-2",
@@ -18209,7 +18260,11 @@
    "text": "No further share issues beyond the announced Housing.com deal",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "No new issue: 1.98cr shares to REA for Housing.com and the already-approved promoter warrants (₹29.5cr paid 13 Oct 2026)",
+   "resolvedOn": "2026-10-25",
+   "resolvedBy": "review",
+   "outcome": "Stays pass"
   },
   {
    "id": "aurum-proptech-q3fy27-1",
@@ -23412,7 +23467,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "kross-tipping-jacks"
+   "project": "kross-tipping-jacks",
+   "revisions": [
+    {
+     "on": "2026-10-25",
+     "text": "Q2 FY27 call (19 Oct 2026): Q2 volumes about the same as Q1 (226 kits); aim for Q4 FY27 cut to at least 50–60% of the 800-kit capacity"
+    }
+   ]
   },
   {
    "id": "cie-automotive-foundry-line-m1",
@@ -25206,7 +25267,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "rossari-biotech-dahej-ethox"
+   "project": "rossari-biotech-dahej-ethox",
+   "revisions": [
+    {
+     "on": "2026-10-25",
+     "text": "Q2 FY27 call (19 Oct 2026): new ethoxylation unit at about 30% use, held back by ethylene-oxide supply; more EO only once Reliance's expansion comes 'in 2, 3 quarters'; peak use by the end of FY28"
+    }
+   ]
   },
   {
    "id": "privi-speciality-che-phase1-m1",
@@ -27868,7 +27935,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "leela-palaces-hotels-bandhavgarh"
+   "project": "leela-palaces-hotels-bandhavgarh",
+   "revisions": [
+    {
+     "on": "2026-10-25",
+     "text": "Q2 FY27 call (14 Oct 2026) moved the opening to the end of calendar 2027 (about Q3 FY28)"
+    }
+   ]
   },
   {
    "id": "leela-palaces-hotels-srinagar-m1",
@@ -36496,6 +36569,54 @@
    "id": "shoppers-stop-q3fy27-1",
    "text": "Debt-free by December 2026 (Q3 FY27), as now promised",
    "due": "Q3 FY27"
+  },
+  {
+   "id": "leela-palaces-hotels-bandhavgarh-m2",
+   "company": "Leela Palaces Hotels",
+   "sector": "Hotels and Travels",
+   "text": "Bandhavgarh opens by the end of calendar 2027 (new date from the Q2 FY27 call)",
+   "due": "Q3 FY28",
+   "createdOn": "2026-10-25",
+   "status": "pending",
+   "project": "leela-palaces-hotels-bandhavgarh"
+  },
+  {
+   "id": "rossari-biotech-dahej-ethox-m2",
+   "company": "Rossari Biotech",
+   "sector": "Chemicals",
+   "text": "New ethoxylation unit well used once Reliance supplies more ethylene oxide (new date from the Q2 FY27 call)",
+   "due": "Q1 FY28",
+   "createdOn": "2026-10-25",
+   "status": "pending",
+   "project": "rossari-biotech-dahej-ethox"
+  },
+  {
+   "id": "rossari-biotech-q4fy27-2",
+   "company": "Rossari Biotech",
+   "sector": "Chemicals",
+   "text": "Net debt below ₹200cr by March 2027 as cash goes to debt reduction (19 Oct 2026 call)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-25",
+   "status": "pending"
+  },
+  {
+   "id": "orient-electric-q3fy27-2",
+   "company": "Orient Electric",
+   "sector": "Consumer Durables",
+   "text": "Gross margin back above 31% as the October price rise sticks (29.0% in Q2)",
+   "due": "Q3 FY27",
+   "ifMet": "Wait can end",
+   "createdOn": "2026-10-25",
+   "status": "pending"
+  },
+  {
+   "id": "aurum-proptech-q4fy28-1",
+   "company": "Aurum Proptech",
+   "sector": "Platform Cos",
+   "text": "Housing.com profitable within 12–18 months, as promised on the 16 Oct 2026 call",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-25",
+   "status": "pending"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23",
+ "updated": "2026-10-25",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -1111,8 +1111,8 @@
    "expectedStart": "Q4 FY27",
    "adds": "revenue from FY28; better margin on imported tubes",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-10-23"
+   "source": "Q2 FY27 call (19 Oct 2026) and Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-10-25"
   },
   {
    "id": "kross-moulding",
@@ -1159,8 +1159,8 @@
    "what": "New tipping-jack line for trailer and tipper builders, capacity 800 a month",
    "adds": "a new product line",
    "status": "ramping",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (19 Oct 2026): Q2 volumes about the same as Q1; at least 50–60% use by Q4 FY27",
+   "updatedOn": "2026-10-25",
    "capacityAdd": "800 tipping-jack kits a month (new product line)"
   },
   {
@@ -3625,8 +3625,14 @@
    "expectedStart": "Q4 FY26",
    "status": "ramping",
    "source": "Q2 FY27 call (19 Oct 2026): new ethoxylation unit at about 30% use, held back by ethylene oxide supply; healthy use expected next year once Reliance's expansion adds supply (from about Q1 FY28, also said Q2 or Q3 of next year), peak by end FY28",
-   "updatedOn": "2026-10-23",
-   "capacityAdd": "Ethoxylation to 66,000 t a year; full use expected to take 2–3 years"
+   "updatedOn": "2026-10-25",
+   "capacityAdd": "Ethoxylation to 66,000 t a year; full use expected to take 2–3 years",
+   "revisions": [
+    {
+     "on": "2026-10-25",
+     "text": "Q2 FY27 call (19 Oct 2026): meaningful use of the new unit slips from Q3 FY27 to about Q1 FY28, when Reliance's extra ethylene oxide is expected"
+    }
+   ]
   },
   {
    "id": "rossari-biotech-capex-192",
@@ -7842,10 +7848,16 @@
    "sector": "Hotels and Travels",
    "name": "Bandhavgarh resort",
    "what": "New wildlife resort at Bandhavgarh; villa construction has started",
-   "expectedStart": "Q3 FY28",
+   "expectedStart": "Q4 FY27",
    "status": "building",
-   "source": "Q2 FY27 call (Oct 2026): 'Srinagar and Bandhavgarh would open towards the end of calendar year '27'",
-   "updatedOn": "2026-10-23"
+   "source": "Q2 FY27 call (14 Oct 2026): opening towards the end of calendar 2027; Q1 FY27 call (Jul 2026) had 'Bandhavgarh by the end of this year'",
+   "updatedOn": "2026-10-25",
+   "revisions": [
+    {
+     "on": "2026-10-25",
+     "text": "Q2 FY27 call (14 Oct 2026): 'Srinagar and Bandhavgarh would open towards the end of calendar year '27' (about Q3 FY28), not by the end of FY27 as read from the July call"
+    }
+   ]
   },
   {
    "id": "leela-palaces-hotels-srinagar",

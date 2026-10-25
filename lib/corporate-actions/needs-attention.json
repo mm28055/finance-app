@@ -2513,7 +2513,8 @@
     "sector": "Chemicals",
     "subject": "Capacity picture follow-up: milestone",
     "why": "The Q3 FY27 milestone for the ethoxylation unit will likely slip to FY28 (unit at about 30% use per the Q2 FY27 call). (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-25: revision on dahej-ethox-m1 and the project (unit at ~30%, EO-limited); new milestone m2 for Q1 FY28; picture redrawn and stamped."
   },
   {
     "company": "LT Foods",
@@ -2541,7 +2542,8 @@
     "sector": "Auto Related",
     "subject": "Capacity picture follow-up: milestone",
     "why": "Milestone kross-tipping-jacks-m1 says 65–70%; the Q2 FY27 call cut the aim to at least 50–60%. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-25: revision added to kross-tipping-jacks-m1 (aim cut to at least 50–60% on the 19 Oct call; still judged on 65–70%); picture already showed the cut; re-stamped."
   },
   {
     "company": "EPack Prefab Techno.",
@@ -2569,7 +2571,8 @@
     "sector": "Hotels and Travels",
     "subject": "Capacity picture follow-up: milestone",
     "why": "Bandhavgarh milestone: the Q2 FY27 call (14 Oct) puts the opening in Q3 FY28, not Q4 FY27. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-25: Bandhavgarh slip recorded: project expectedStart restored to Q4 FY27 with a revision, revision on milestone m1, new milestone m2 (Q3 FY28); picture redrawn and stamped."
   },
   {
     "company": "Yatharth Hospital",
@@ -2976,62 +2979,71 @@
     "sector": "Auto Related",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-25: Q2 FY27 call read (19 Oct transcript, presentation). Revenue +80%, margin 13.0%, receivable days ~90 (checkpoint met); borrowing up to ₹117cr for the seamless plant, trials Feb–Mar 2027; tipping-jack aim cut to 50–60%. View, card, guidance row and watch items updated; stays wait."
   },
   {
     "company": "Elecon Engg.Co",
     "sector": "Electrical Equipment",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-25: Q2 FY27 call read (15 Oct transcript). Revenue +10.5%, margin 23.1% (gear EBIT 22.1%), order book ₹1,635cr, exports +31%; H2 guided ~15%; Navy frigate orders now Q1 FY29. View, card, guidance row and watch items updated; checkpoint partly met; stays follow."
   },
   {
     "company": "Leela Palaces Hotels",
     "sector": "Hotels and Travels",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-25: Q2 FY27 call read (14 Oct transcript). Revenue +33%, RevPAR +30%, operating EBITDA +36% (H1 +38%), high-teens guided for H2; net debt ₹1,215cr (1.4x); Bandhavgarh to end-CY27; BKC FSI purchase needs a shareholder vote. View, card, debt and guidance rows, watch items updated; stays wait."
   },
   {
     "company": "Rossari Biotech",
     "sector": "Chemicals",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-25: Q2 FY27 call read (19 Oct transcript). Revenue +19% to ₹698cr, margin 12.5%, net debt ₹221cr on ₹131cr H1 cash flow, consumer arm break-even, Saudi land leased. View, card, debt and guidance rows, watch items updated; checkpoints settled (debt partly, consumer arm missed); stays follow."
   },
   {
     "company": "Orient Electric",
     "sector": "Consumer Durables",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-25: Q2 FY27 call read (15 Oct transcript). Revenue +25%, gross margin 29.0% (4th fall), EBITDA margin 6.5%, working capital 34 days; double-digit margin now 'four to six quarters' away; growth guide 'more than 15%'. View, card, guidance row, watch updated; gross-margin checkpoint missed, re-set for Q3; stays wait."
   },
   {
     "company": "Aurum Proptech",
     "sector": "Platform Cos",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-25: Q2 FY27 call read (16 Oct transcript). Revenue +64%, continuing PBT ₹6.8cr (5.2%), H1 operating cash ₹60.8cr, Housing.com closed 29 Sep and to be profitable in 12–18 months; promoter warrants 25% paid. View, card, guidance row, watch updated; two checkpoints met, one added; stays pass."
   },
   {
     "company": "Kross",
     "sector": "Auto Related",
     "subject": "Checkpoint met: kross-q2fy27-1",
     "why": "Operating margin back to 13–14% after truck-maker settlements — actual 13.2% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-25: margin 13.0% met the 13–14% checkpoint; weighed with the call (above). Stays wait: free cash still negative and management gives no date for 14–15%. Outcome written on the checkpoint."
   },
   {
     "company": "Rossari Biotech",
     "sector": "Chemicals",
     "subject": "Checkpoint partly: rossari-biotech-q2fy27-1",
     "why": "Operating margin back above 13% (first of the two quarters needed) — actual 12.5% (partly). Stay follow Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-25: margin 12.5% partly met the 13% checkpoint; stays follow, as the note set (own needs two quarters above 13% with positive free cash). Outcome written."
   },
   {
     "company": "Orient Electric",
     "sector": "Consumer Durables",
     "subject": "Checkpoint missed: orient-electric-q2fy27-2",
     "why": "Operating margin above 8% outside the summer (Q2 FY27) — actual 6.5% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-25: 6.5% against the 8% checkpoint (missed); with the gross margin still falling it stays wait (the note never had it at follow). Outcome written."
   }
 ]

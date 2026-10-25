@@ -21333,8 +21333,8 @@
   },
   {
    "company": "Kross",
-   "fingerprint": "16b115eebd1a15e0",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "4dc18256625e1c6a",
+   "checkedOn": "2026-10-25",
    "lines": {
     "heading": "How full each line is (Q2 FY27)",
     "items": [
@@ -21944,8 +21944,8 @@
   },
   {
    "company": "Leela Palaces Hotels",
-   "fingerprint": "3b039f96cafff6da",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "d24186dc59f15838",
+   "checkedOn": "2026-10-25",
    "lines": {
     "heading": "How full the hotels are (Q2 FY27 call, October 2026)",
     "items": [
@@ -22063,16 +22063,20 @@
     {
      "when": "Q4 FY27",
      "tone": "next",
-     "text": "Jaisalmer resort and the Leela Luxury Residences, Mumbai, due in FY27 (both in pre-opening)"
+     "text": "Jaisalmer resort and the Leela Luxury Residences, Mumbai, due in FY27 (both in pre-opening)",
+     "milestones": [
+      "leela-palaces-hotels-bandhavgarh-m1"
+     ],
+     "sub": "Bandhavgarh had been read as by the end of FY27 from the July call; the 14 Oct 2026 call moved it to the end of calendar 2027"
     },
     {
      "when": "Q3 FY28",
      "tone": "next",
      "milestones": [
-      "leela-palaces-hotels-bandhavgarh-m1",
+      "leela-palaces-hotels-bandhavgarh-m2",
       "leela-palaces-hotels-srinagar-m1"
      ],
-     "sub": "October–December 2027, latest call. Bandhavgarh had been read as end of FY27 from the July call; the note had late 2027. Srinagar: mock-up rooms done, civil work on fast track; Bandhavgarh: villa building under way"
+     "sub": "October–December 2027, latest call (14 Oct 2026). Srinagar: mock-up rooms done, civil work on fast track; Bandhavgarh: villa building under way, structural work on schedule"
     },
     {
      "when": "2028",
@@ -29833,8 +29837,8 @@
   },
   {
    "company": "Rossari Biotech",
-   "fingerprint": "e17b3303de91c467",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "94143efeac71f81e",
+   "checkedOn": "2026-10-25",
    "lines": {
     "heading": "How full the plants are (Q2 FY27)",
     "items": [
@@ -29889,7 +29893,7 @@
      "milestones": [
       "rossari-biotech-dahej-ethox-m1"
      ],
-     "sub": "Q2 FY27 call: new unit at about 30%; healthy use only expected next year, once Reliance supplies more ethylene oxide"
+     "sub": "Q2 FY27 call (19 Oct 2026): new unit at about 30%; healthy use only expected next year, once Reliance supplies more ethylene oxide, so this date is likely to slip to about Q1 FY28"
     },
     {
      "when": "H2 FY27",
@@ -29900,7 +29904,10 @@
      "when": "Q1 FY28",
      "tone": "next",
      "text": "Reliance's expansion expected, with more ethylene oxide for Rossari (no quantity confirmed)",
-     "sub": "Also said 'Q2 or Q3 of next year' in the same call"
+     "sub": "Also said 'Q2 or Q3 of next year' in the same call",
+     "milestones": [
+      "rossari-biotech-dahej-ethox-m2"
+     ]
     },
     {
      "when": "End FY28",
