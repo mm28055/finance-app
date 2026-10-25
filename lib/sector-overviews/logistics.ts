@@ -524,7 +524,7 @@ export const logistics: SectorOverview = {
         {
             company: 'Shadowfax Tech.', rank: 2, stance: 'SCALEUP', segment: PARCEL,
             what: "A delivery company for online marketplaces, quick-commerce apps and brands, using gig riders: next-day parcels, ten-minute local deliveries, heavy goods and shared dark stores; listed in January 2026.",
-            view: "**The fastest grower, riding two customers.** Revenue rose 65% in Q1, the FY27 guide was raised to 38–40%, its after-rent margin rose from 2.9% to 4.9% and it holds ₹1,537cr of cash with no bank debt. But two customers gave about 64% of FY26 revenue, Flipkart sold down after the lock-in, and its auditor flagged manually calculated revenue. The price needs about {need:Shadowfax Tech.|33}% a year against my ~30%.",
+            view: "**The fastest grower, riding two customers.** Revenue rose 65% in Q1, the FY27 guide was raised to 38–40%, its after-rent margin rose from 2.9% to 4.9% and it holds ₹1,537cr of cash with no bank debt. But two customers gave about 64% of FY26 revenue, pre-IPO holders sold after the lock-in (by September 2026 Flipkart was down from 7.3% to 1.5%, Eight Roads from 9.5% to 1.5% and TPG's Newquest from 11.5% to 7.4%, and Qualcomm had left), and its auditor flagged manually calculated revenue. The price needs about {need:Shadowfax Tech.|33}% a year against my ~30%.",
             watch: 'The top two customers’ share falling below half; Q2–Q3 growth against the 38–40% guide; after-rent margin rising 1–1.2 points a year.',
         },
         {
