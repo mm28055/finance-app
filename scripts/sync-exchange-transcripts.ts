@@ -61,7 +61,7 @@ import { generalSlotDate } from '../lib/doc-label';
 import { notAResultsQuarter, screenerShowsCall, tooEarlyForResults } from '../lib/reporting';
 import { nseAnnouncements, nseListedIsins, parseNseDate, NSE_UA } from '../lib/filings/nse';
 import { nseSymbolForIsin } from '../lib/corporate-actions/nse-lists';
-import { supabaseAdmin, transcriptCloudKey, uploadTranscriptPdf, deleteStoredPdf } from '../lib/transcript-storage';
+import { deleteStoredPdf } from '../lib/transcript-storage';
 
 const DAY = 86400000;
 const IST = 330 * 60000;
@@ -353,8 +353,6 @@ async function main() {
     const fromDate = parseDdMmYyyy(from), toDate = parseDdMmYyyy(to, true);
     const only = (arg('only') || '').split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
 
-    if (!dryRun && !supabaseAdmin) throw new Error('Supabase storage is not configured (NEXT_PUBLIC_SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY) — refusing to store transcripts on local disk.');
-
     let companies: Company[] = (await prisma.company.findMany({
         where: { status: 'ACTIVE', isin: { not: null } },
         select: { id: true, name: true, isin: true, sector: true, ticker: true, aliases: true, isVisible: true },
@@ -485,7 +483,10 @@ async function main() {
 
         // --- Store exactly as smart-sync does, then analyse. ---
         try {
-            const fileUrl = await uploadTranscriptPdf(transcriptCloudKey(d.co.sector, d.co.name, slot), d.buffer!);
+            // The PDF icon opens the filing where it lives (NSE, BSE or the company's own
+            // site, as Screener links it). No copy goes to Supabase storage: that kept
+            // using up the free plan's egress, and a blocked upload used to drop the call.
+            const fileUrl = d.url;
             const [qName, qYear] = kind
                 ? [GENERAL_Q, fiscalYearOf(callDate)]
                 : [fyq.split(' ')[0], 2000 + parseInt(fyq.split('FY')[1], 10)];

@@ -38,6 +38,8 @@ export async function deleteStoredPdf(fileUrl: string | null, companyName: strin
     if (!fileUrl || !fileUrl.startsWith('http') || !supabaseAdmin) return;
     try {
         const storagePath = storagePathFromUrl(fileUrl);
+        // Calls stored since 25 Oct 2026 link to the exchange's own PDF: nothing of ours to delete.
+        if (!storagePath && !fileUrl.includes('.supabase.co/')) return;
         if (!storagePath) {
             console.error(`   ⚠️ Could not derive storage path for ${companyName} ${qName}: ${fileUrl}`);
             return;
