@@ -706,8 +706,8 @@ export const softwareProducts: SectorOverview = {
         {
             company: 'Newgen Software', rank: 1, stance: 'COMPOUNDER', segment: BANK,
             what: "A New Delhi-based maker of document, workflow and loan-origination software for banks, insurers and governments in about 79 countries, sold as licences in India and the Middle East and as subscriptions in the US, UK and Australia.",
-            view: "**The one to own: a cash-generating franchise at a price that asks little.** Annuity revenue was 71% of Q1 and SaaS grew 40%; filed return on capital has been 24–28% for five years and net cash is ₹1,076cr, about a sixth of its value. The price needs about {need:Newgen Software|13}% a year of earnings growth against my ~12%. Debtor days of 145 are above CRISIL's trigger and the chief executive left in June, so start small and add as receivables fall.",
-            watch: 'Debtor days back below 130 by Q3; implementation revenue catching up in Q2–Q3 as promised; the first disclosure of remaining contract value or ARR.',
+            view: "**The one to own: a cash-generating franchise at a price that asks little.** Annuity revenue was 71% of Q1 and SaaS grew 40%; filed return on capital has been 24–28% for five years and net cash is ₹1,076cr, about a sixth of its value. The price needs about {need:Newgen Software|13}% a year of earnings growth against my ~12%. Debtor days of 145 are above CRISIL's trigger, the long-time chief executive left in June (COO Tarun Nandwani took over on 1 August), and on 23 Oct 2026 it said the chairman and managing director and founder, Diwakar Nigam, is unwell and unable to carry out his duties regularly; so start small and add as receivables fall and the leadership settles.",
+            watch: 'Debtor days back below 130 by Q3; implementation revenue catching up in Q3 after a 5% Q2; how the new chief executive runs the company while the founder-chairman is unwell; the first disclosure of remaining contract value or ARR.',
         },
         {
             company: 'Intellect Design Arena', rank: 2, stance: 'SCALEUP', segment: BANK,

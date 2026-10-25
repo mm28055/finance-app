@@ -84,7 +84,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Pega, Appian', note: 'Global low-code and business-process automation vendors that set the price ceiling in the US and Europe.' }, { name: 'Oracle Flexcube, Temenos', note: 'Larger core-banking vendors competing for some of the same bank technology budgets.' }],
         position: "**A Forrester Wave Leader in content platforms**, with about 500 active customers in 79 countries and one of the largest annuity revenue bases among Indian-owned banking-software companies.",
         money: "Screener puts net cash at **₹1,076cr**, against a market value of {mcap:Newgen Software|₹6,740cr}; borrowings are ₹39cr of leases. It paid a ₹6 dividend for FY26 (28% payout) and has discussed a buyback with its board without acting on one. Promoters hold **53.45%**, down from 55.16% three years ago; no pledge.",
-        watch: ["Debtor days back below 130 by Q3.", "Implementation revenue catching up after a 23% Q1 fall.", "The first disclosure of ARR or remaining contract value."],
+        watch: ["Debtor days back below 130 by Q3.", "Implementation revenue catching up after a 23% Q1 fall and a 5% Q2.", "Leadership while founder-chairman Diwakar Nigam is unwell (filed 23 Oct 2026) and new CEO Tarun Nandwani settles in.", "The first disclosure of ARR or remaining contract value."],
         charts: softwareCharts['Newgen Software'],
     },
     {
