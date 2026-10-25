@@ -736,7 +736,7 @@ export const electricalEquipment: SectorOverview = {
         {
             company: 'GE Power', rank: 7, stance: 'TURNAROUND', segment: MACHINES,
             what: "The Indian services arm of GE Vernova's steam power business: repairs, upgrades and spares for steam turbines and boilers, including other makers' fleets. Its Durgapur factory is being demerged to JSW Energy.",
-            view: "**A finished turnaround with flattered earnings.** Operating losses have become an underlying 11–14% margin, it holds about ₹880cr of liquidity and it paid its first dividend in four years. But about ₹156cr of FY26's ₹340cr pre-tax profit was one-off, ₹450cr of its cash is lent on demand to a GE Vernova group company, contingent liabilities of about ₹458cr are close to its net worth, and its market is coal. I cut my estimate to ~5%; the price needs about {need:GE Power|8}%.",
+            view: "**A finished turnaround with flattered earnings.** Operating losses have become an underlying 11–14% margin, it holds about ₹880cr of liquidity and it paid its first dividend in four years. But about ₹156cr of FY26's ₹340cr pre-tax profit was one-off, ₹450cr of its cash is lent on demand to a GE Vernova group company, contingent liabilities of about ₹458cr are close to its net worth, and its market is coal. I cut my estimate to ~5%; the price needs about {need:GE Power|8}%. By 25 Oct 2026 the price had moved into the fits band; it stays pass, because the fit rests on profit flattered by one-offs and nothing filed since has changed the ₹450cr group deposit.",
             watch: 'NCLT sanction of the Durgapur demerger (ICRA expects Q3 FY27); whether the ₹450cr group deposit is recalled or grows; core services orders in FY27.',
         },
         {
