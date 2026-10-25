@@ -683,7 +683,7 @@ export const agrochemicalFertilizers: SectorOverview = {
         {
             company: 'Paradeep Phosphates', rank: 6, stance: 'CYCLICAL', segment: FERT,
             what: "One of India's largest private makers of DAP and NPK (about 14% of complex fertilisers), with urea at Goa and Mangalore after merging Mangalore Chemicals, its own sulphuric and phosphoric acid, and rock from its Moroccan partner OCP.",
-            view: "**A temporary peak and a lot of debt.** Farmer sales grew 15–16% against about 1% for the industry, but Q1's ₹7,000 a tonne came from cheap stock and FY27 is guided at about ₹5,000. Net debt is 2.85 times operating profit against CRISIL's 3-times trigger, subsidy owed rose to ₹4,600cr, and the auditor flagged the merger accounting. The price needs about {need:Paradeep Phosphates|10}% a year against my ~7%.",
+            view: "**A temporary peak and a lot of debt.** Farmer sales grew 15–16% against about 1% for the industry, but Q1's ₹7,000 a tonne came from cheap stock and FY27 is guided at about ₹5,000. Net debt is 2.85 times operating profit against CRISIL's 3-times trigger, subsidy owed rose to ₹4,600cr, and the auditor flagged the merger accounting. The price needs about {need:Paradeep Phosphates|10}% a year against my ~7%. By 25 Oct 2026 the price had moved into the fits band; it stays wait, because debt is near CRISIL's trigger and on 23 Oct 2026 it signed an MoU with Odisha to invest ₹4,750cr in new fertiliser plants, with no funding plan yet.",
             watch: 'Profit per tonne in Q2–Q3 against ~₹5,000; subsidy receivables and CRISIL’s leverage line; phosphoric acid reaching 0.6 million tonnes by December 2026.',
         },
         {
