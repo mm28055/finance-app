@@ -662,7 +662,7 @@ export const consumerDurablesSurfaces: SectorOverview = {
         {
             company: 'Somany Ceramics', rank: 4, stance: 'CYCLICAL', segment: TILES,
             what: "India's second-largest branded tile maker (about 80 million sq m including partner plants), with sanitaryware, faucets and a small construction-chemicals arm.",
-            view: "**Better margins, same volume problem.** Margin rose from 8.0% to 11.6% as own plants filled and JVs turned profitable, and net debt is down to about ₹107cr. But tile volume grew only 3%, two-thirds of volume comes from partners, the premium over Morbi narrowed, ₹36.5cr is lent to loss-making Somany Max, and the Tirupati plant's ownership is unclear. The price needs about {need:Somany Ceramics|15}% a year against my ~12%.",
+            view: "**Better margins, same volume problem.** Margin rose from 8.0% to 11.6% as own plants filled and JVs turned profitable, and net debt is down to about ₹107cr. But tile volume grew only 3%, two-thirds of volume comes from partners, the premium over Morbi narrowed, ₹36.5cr is lent to loss-making Somany Max, and the Tirupati plant's ownership is unclear. The price needs about {need:Somany Ceramics|15}% a year against my ~12%. By 25 Oct 2026 the price had moved into the fits band; it stays wait, because tile volume is still growing only low single digits and the Tirupati plant's ownership is still unexplained.",
             watch: 'Margin above 11% after Morbi normalises; a clear statement of who owns and funds the Tirupati plant; tile volume at mid-single digits.',
         },
         {
@@ -680,7 +680,7 @@ export const consumerDurablesSurfaces: SectorOverview = {
         {
             company: 'Orient Bell', rank: 7, stance: 'TURNAROUND', segment: TILES,
             what: "A small, debt-free tile maker with plants in UP, Karnataka and Gujarat plus two Morbi associates (42.4 million sq m), selling through 381 boutiques and 3,000+ dealers.",
-            view: "**Four flat years, then a sharp recovery that is partly the Morbi shock.** Volume rose 23% and prices 16% in Q1, utilisation rose to 73%, and the company holds ₹47.7cr of net cash. But the price rises may not last: management has made no cuts yet but will follow the market if gas falls, return on capital was only 6% in FY26, and key managers earned ₹8.4cr against a ₹12cr profit. The price needs about {need:Orient Bell|17}% a year against my ~14%.",
+            view: "**Four flat years, then a sharp recovery that is partly the Morbi shock.** Volume rose 23% and prices 16% in Q1, utilisation rose to 73%, and the company holds ₹47.7cr of net cash. But the price rises may not last: management has made no cuts yet but will follow the market if gas falls, return on capital was only 6% in FY26, and key managers earned ₹8.4cr against a ₹12cr profit. The price needs about {need:Orient Bell|17}% a year against my ~14%. By 25 Oct 2026 the price had moved into the fits band; it stays wait until Q2–Q3 show the margin holding as Morbi's gas supply settles.",
             watch: 'Margin above 7% through Q2–Q3 as Morbi recovers; the expansion decision and how it uses its ₹75cr; Morbi export levels.',
         },
         {
@@ -692,7 +692,7 @@ export const consumerDurablesSurfaces: SectorOverview = {
         {
             company: 'Rushil Decor', rank: 9, stance: 'CYCLICAL', segment: PANELS,
             what: "A Gujarat-based maker of MDF (3.3 lakh cubic metres in Karnataka and Andhra Pradesh) and VIR laminates, including a new Jumbo large-format line.",
-            view: "**Sub-scale and indebted in an oversupplied market.** Laminates grew 65% and the Jumbo line earns about 20% at low use, and debt is falling ₹50cr+ a year. But MDF utilisation fell from 83% to 66%, MDF margin was 8.4%, exports vanished, targets were cut, realisations trail peers by 12–16%, and interest cover of about 2.3 times sits near a 2-times rating trigger. The price needs about {need:Rushil Decor|14}% a year against my ~10%.",
+            view: "**Sub-scale and indebted in an oversupplied market.** Laminates grew 65% and the Jumbo line earns about 20% at low use, and debt is falling ₹50cr+ a year. But MDF utilisation fell from 83% to 66%, MDF margin was 8.4%, exports vanished, targets were cut, realisations trail peers by 12–16%, and interest cover of about 2.3 times sits near a 2-times rating trigger. The price needs about {need:Rushil Decor|14}% a year against my ~10%. The price briefly fitted in October 2026 and is back to full by 25 Oct; it stays pass while MDF use and interest cover stay weak.",
             watch: 'MDF exports back above 4,000 cubic metres a month; MDF margin above 10%; interest cover staying above 2 times.',
         },
         {
