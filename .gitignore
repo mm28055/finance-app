@@ -79,3 +79,7 @@ tools/notes/__pycache__/
 
 # Database record backups made before manual fixes (kept locally, not published)
 backups/
+
+# local copy of call transcripts for research (lib/local-transcripts.ts)
+/.local-transcripts/
+/.egress-snapshots/
