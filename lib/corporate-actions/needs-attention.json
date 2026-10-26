@@ -3087,5 +3087,156 @@
     "subject": "Projects: ₹150cr Manesar mechatronics plant approved 24 Oct 2026",
     "why": "New mechatronics plant at Manesar, ₹150cr from debt and own cash, peak revenue about ₹500cr a year, commissioned in two phases from Q3 FY28 (filing of 24 Oct 2026). Add it to projects.json with milestones, mention once in the note and card, then redraw and stamp the picture. Left from the 25 Oct 2026 run (40-entry limit reached).",
     "addedOn": "2026-10-25"
+  },
+  {
+    "company": "Eureka Forbes",
+    "sector": "Consumer Durables",
+    "exDate": null,
+    "subject": "Shareholding Sep 2026",
+    "why": "Pledged share of promoter holding jumped to 81.5% from 53.7% (Jun 2026 → Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "EPL",
+    "sector": "Packaging",
+    "exDate": null,
+    "subject": "Shareholding Sep 2026",
+    "why": "Promoter holding fell 26.4 pts (26.4% in Jun 2026 → 0% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "AXISCADES Technologies",
+    "sector": "Aerospace defence",
+    "exDate": null,
+    "subject": "Shareholding Sep 2026",
+    "why": "Promoter holding fell 13.2 pts (58% in Jun 2026 → 44.8% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "United Heat Transfer",
+    "sector": "Industrials",
+    "exDate": null,
+    "subject": "Shareholding Oct 2026",
+    "why": "Promoter holding fell 9.2 pts (67.8% in Sep 2026 → 58.6% in Oct 2026) — find out why (sale, dilution, pledge) and update the sector note",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "TruAlt Bioenergy",
+    "sector": "Oil",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "Waaree Renewables",
+    "sector": "Solar PV Cells EPC",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "Eris Lifesciences",
+    "sector": "Pharma",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "GNFC",
+    "sector": "Chemicals",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "Krystal Integrated Services",
+    "sector": "Commercial Services",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "Oswal Pumps",
+    "sector": "Pumps Comp & Eng",
+    "subject": "Call drift: pass → Fits",
+    "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "Cyient DLM",
+    "sector": "EMS & Electronics",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "Sterling and Wilson",
+    "sector": "Construction",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "Solara Active Pharma",
+    "sector": "Pharma API",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "Metro Brands",
+    "sector": "Consumer Durables",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "ICICI Bank",
+    "sector": "Finance",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "HDFC Bank",
+    "sector": "Finance",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "Crompt.Greaves Cons.",
+    "sector": "Consumer Durables",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "Sterling and Wilson",
+    "sector": "Construction",
+    "subject": "Checkpoint partly: sterling-and-wilson-q2fy27-1",
+    "why": "Q2 FY27 revenue near ₹1,600cr — actual ₹1,528cr (partly).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "Crompt.Greaves Cons.",
+    "sector": "Consumer Durables",
+    "subject": "Checkpoint missed: crompt-greaves-cons-q2fy27-1",
+    "why": "Operating margin above 11% in Q2 FY27 (first of two quarters needed) — actual 9.1% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "Cyient DLM",
+    "sector": "EMS & Electronics",
+    "subject": "Checkpoint missed: cyient-dlm-q2fy27-1",
+    "why": "Operating margin reaching the promised 11–13% (current guide 10–11%) — actual 8.7% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-26"
+  },
+  {
+    "company": "Cyient DLM",
+    "sector": "EMS & Electronics",
+    "subject": "Checkpoint met: cyient-dlm-q2fy27-2",
+    "why": "Revenue growth in every quarter, as guided — actual 26.4% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-26"
   }
 ]

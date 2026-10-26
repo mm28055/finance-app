@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -6224,7 +6224,10 @@
    "target": 1600,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "₹1,528cr",
+   "resolvedOn": "2026-10-26",
+   "resolvedBy": "auto"
   },
   {
    "id": "sterling-and-wilson-q3fy27-1",
@@ -7026,7 +7029,10 @@
    "target": 11,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "9.1%",
+   "resolvedOn": "2026-10-26",
+   "resolvedBy": "auto"
   },
   {
    "id": "crompt-greaves-cons-q3fy27-1",
@@ -9696,7 +9702,10 @@
    "target": 11,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "8.7%",
+   "resolvedOn": "2026-10-26",
+   "resolvedBy": "auto"
   },
   {
    "id": "cyient-dlm-q2fy27-2",
@@ -9708,7 +9717,10 @@
    "target": 0,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "26.4%",
+   "resolvedOn": "2026-10-26",
+   "resolvedBy": "auto"
   },
   {
    "id": "cyient-dlm-q2fy27-3",
