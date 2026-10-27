@@ -3238,5 +3238,68 @@
     "subject": "Checkpoint met: cyient-dlm-q2fy27-2",
     "why": "Revenue growth in every quarter, as guided — actual 26.4% (met).  Weigh it in the call and write the outcome on the checkpoint.",
     "addedOn": "2026-10-26"
+  },
+  {
+    "company": "Yash Highvoltage",
+    "sector": "Electrical Transformers",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from stretched to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-27"
+  },
+  {
+    "company": "Onward Technologies",
+    "sector": "Software",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-27"
+  },
+  {
+    "company": "Sobha",
+    "sector": "Realty",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-27"
+  },
+  {
+    "company": "LMW",
+    "sector": "Industrial Machinery",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-27"
+  },
+  {
+    "company": "CIE Automotive",
+    "sector": "Auto Related",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-27"
+  },
+  {
+    "company": "Supreme Power",
+    "sector": "Electrical Transformers",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-27"
+  },
+  {
+    "company": "Garware Hi-Tech",
+    "sector": "Plastics",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-27"
+  },
+  {
+    "company": "HFCL",
+    "sector": "Cables",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-27"
+  },
+  {
+    "company": "Onward Technologies",
+    "sector": "Software",
+    "subject": "Checkpoint met: onward-technologies-q2fy27-1",
+    "why": "Double-digit revenue growth, as guided (12% in Q1) — actual 22.3% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-27"
   }
 ]
