@@ -2769,84 +2769,96 @@
     "sector": "Electrical Transformers",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Price just fits (needs ~19% vs my 17%); no filings, Q2 not out, exports still frozen. Dated sentence added; stays follow."
   },
   {
     "company": "Advanced Enzyme",
     "sector": "Pharma Others",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Price fitted briefly on 23 Oct, now back to full (needs ~12% vs my 10%); no filings or news. Dated sentence added; stays follow."
   },
   {
     "company": "Aegis Logistics",
     "sector": "Logistics",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Fitted only before the 24 Oct cut to 14%; now needs ~19%. Q2 profit +31% on revenue −3.5%; Tristar purchase (US$809mn) and CARE rating watch already in the note. Dated sentence added; stays follow."
   },
   {
     "company": "Welspun Enterp",
     "sector": "Construction",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Fitted only before the 24 Oct cut to 10%; now needs ~16%. Filings: ₹351cr sewer orders, CRISIL AA upgrade (already in note). Dated sentence added; stays follow."
   },
   {
     "company": "Accent Microcell",
     "sector": "Pharma Others",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Price fits (needs ~17% vs my 18%); H1 FY27 revenue +26%, profit +72%. Unit III delay, promoter-firm trading and CRISIL non-cooperation unresolved. Dated sentence added; stays follow."
   },
   {
     "company": "Action Const.Eq.",
     "sector": "Vehicles",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Fitted only before the 24 Oct cut to 13%; now needs ~17%. No new filings. Dated sentence added; stays follow."
   },
   {
     "company": "ADF Foods",
     "sector": "Food Products",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Price fits (needs ~17% vs my 15%) but Q2 not out and the margin target unproven. Filing: Ascot case settled for US$1.75m over 52 months (watch item corrected). Dated sentence added; stays follow."
   },
   {
     "company": "Afcons Infra",
     "sector": "Construction",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Price about fits (needs ~20.5% vs my 20%); cash, Negative outlook and full promoter pledge unchanged, no new filings. Dated sentence added; stays wait."
   },
   {
     "company": "Avanti Feeds",
     "sector": "Food Products",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Price fits (needs ~11% vs my 10%); fish meal not eased, Q2 flagged weak; EU plant approvals not very important. Dated sentence added; stays wait."
   },
   {
     "company": "Bajaj Consumer Care",
     "sector": "Consumer Durables",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Already moved to follow on 23 Oct; price still fits (needs ~13% vs 13%). Q2 revenue +26%, profit +67%; independent director (audit committee) resigned 14 Oct for health reasons; flat payments to promoter companies still unexplained. Dated sentence added; stays follow."
   },
   {
     "company": "BlackBuck",
     "sector": "Platform Cos",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Fitted only before the 24 Oct cut to 15%; now needs ~26%. No new filings. Dated sentence added; stays follow."
   },
   {
     "company": "Avalon Tech",
     "sector": "EMS & Electronics",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Fitted briefly before the 24 Oct cut; stretched again (needs ~34% vs 27%). Filings: ₹425cr warrants to Zollner at ₹2,193 (2.8% dilution), 25-acre SIPCOT lease, promoter-family 6% sale (in note). Dated sentence and watch updated; stays follow."
   },
   {
     "company": "Crompt.Greaves Cons.",
@@ -2861,21 +2873,24 @@
     "sector": "Software",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Price fits (needs ~11% vs my 10%) but organic growth ~8% and order book undisclosed; new COO (ex-Persistent). Dated sentence added; stays follow."
   },
   {
     "company": "DCW",
     "sector": "Chemicals",
     "subject": "Call drift: pass → Fits",
     "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Fitted briefly; now full (needs ~12% vs 9%). Governance flags and cut target unchanged. Dated sentence added; stays pass."
   },
   {
     "company": "Deepak Fert & Petro",
     "sector": "Chemicals",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Fitted briefly; now just full (needs ~10% vs 8%). ICRA outlook Positive (15 Oct); gas supply cuts to fertiliser plants (12 Oct); plants not yet running. Dated sentence added; stays wait."
   },
   {
     "company": "Finolex Cables",
