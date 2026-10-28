@@ -951,8 +951,8 @@ export const ironSteel: SectorOverview = {
         {
             company: 'Venus Pipes & Tubes', rank: 14, stance: 'PRICED', segment: STAINLESS,
             what: "Makes stainless-steel seamless and welded pipes in Kutch, Gujarat, now adding fittings and pre-built piping sections (spools), for power, chemicals, oil and gas and data centres.",
-            view: "**Fast growth, flat profit, new shares.** Sales grew 28% a year for three years and the order book reached ₹600cr plus a ₹185cr data-centre letter of intent, but quarterly profit has sat at ₹24–28cr since early 2024, the FY27 margin guide was cut below 17%, and a ₹372cr share issue at about 26% below market goes to a vote on 8 October. The price needs far more than my ~15% estimate.",
-            watch: 'The share-issue vote on 8 October; spool revenue from Q3 and the letter of intent turning firm; margin above 17%.',
+            view: "**Fast growth, flat profit, new shares.** Sales grew 28% a year for three years and the order book reached ₹600cr plus a ₹185cr data-centre letter of intent, but quarterly profit has sat at ₹24–28cr since early 2024, the FY27 margin guide was cut below 17%, and it allotted ₹372cr of new shares at ₹1,670 on 27 October (about 10.8% more shares). The price needs far more than my ~15% estimate.",
+            watch: 'How the ₹372cr raised on 27 October is used; spool revenue from Q3 and the letter of intent turning firm; margin above 17%.',
         },
         {
             company: 'Aeroflex Industries', rank: 15, stance: 'PRICED', segment: STAINLESS,

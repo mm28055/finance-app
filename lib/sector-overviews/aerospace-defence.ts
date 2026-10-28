@@ -812,7 +812,7 @@ export const aerospaceDefence: SectorOverview = {
             company: 'Unimech Aerospace', rank: 8, stance: 'PRICED', segment: AERO,
             what: "Aero-engine and airframe tooling for engine makers and licensed repair shops (76% of Q1 revenue), precision parts for aerospace, nuclear and chip-equipment customers and, since May 2026, Hobel Bellows (metal bellows for locomotives, gensets and power).",
             view: "**A high-quality niche priced for a fast transition.** Q1 revenue grew 71% (37% without Hobel) at a 36.5% margin, and the FY27 margin guide rose to 34–35%. But the top customer was 44.5% of FY26 revenue and the US 76%, treasury income worth 57% of FY26 pre-tax profit went into the ₹450cr Hobel purchase, and working capital is guided to 160+ days. The price needs about {need:Unimech Aerospace|36}% a year against my ~25%.",
-            watch: 'Serial parts and the FACC contract replacing one-off tooling; utilisation above 70% from 58%; the size and price of the ₹750cr share sale.',
+            watch: 'Serial parts, the FACC contract and the 10-year Honeywell aero-engine agreement (signed 26 October, April 2026 to November 2036) replacing one-off tooling; utilisation above 70% from 58%; the size and price of the ₹750cr share sale.',
         },
         {
             company: 'Zen Technologies', rank: 9, stance: 'PRICED', segment: ELEC,
@@ -824,7 +824,7 @@ export const aerospaceDefence: SectorOverview = {
             company: 'Aequs', rank: 10, stance: 'TURNAROUND', segment: AERO,
             what: "Vertically integrated aircraft structures and parts (forging to assembly) for Airbus, Boeing and Safran at Belagavi (81% of Q1 revenue), plus a consumer contract-manufacturing arm making electronics casings, toys and cookware.",
             view: "**A real aerospace franchise behind a loss-making consumer arm.** Aerospace grew 40% at a 23% segment margin, with a $1.004bn order book and the first outsourced A320 wheel programme. But consumer lost ₹36cr of operating profit in Q1 at 22% utilisation, the group lost ₹53cr, it is rated BBB−, and months after saying no raise was planned this year it approved ₹650cr of promoter warrants below market. The Melligeri family trust, one of the promoters, has pledged its entire 14.99% of the company (about a quarter of the promoters' shares) since 21 September 2026; it freed the shares on 9 October and pledged them again on 14 October, which looks like a change of lender rather than a new loan, and the filings give no reason. Loss-making, so no growth estimate.",
-            watch: 'Consumer utilisation reaching 40–50% and breakeven by Q4 FY27; consolidated operating cash turning positive; the 22 October shareholder vote on the ₹650cr of promoter warrants at ₹231.55 (about 6% below the market, about 4% dilution), and whether the promoters’ 15% pledge (held since 21 September) is used to pay for them or grows.',
+            watch: 'Consumer utilisation reaching 40–50% and breakeven by Q4 FY27; consolidated operating cash turning positive (Q2 FY27 revenue rose 45% to ₹409cr, but the quarter's loss widened to about ₹52cr); the ₹650cr of promoter warrants at ₹231.55 (about 6% below the market, about 4% dilution) and whether the promoters’ 15% pledge (held since 21 September) is used to pay for them or grows.',
         },
         {
             company: 'ideaForge Technology', rank: 11, stance: 'CYCLICAL', segment: ELEC,

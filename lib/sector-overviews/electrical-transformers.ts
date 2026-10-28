@@ -683,7 +683,7 @@ export const electricalTransformers: SectorOverview = {
             company: 'Transformers & Rect', rank: 6, stance: 'TURNAROUND', segment: MAKERS,
             what: "One of India's largest transformer makers: power transformers and reactors up to 1,000 MVA and 1,200 kV, plus distribution, furnace and rectifier units, from three plants around Ahmedabad.",
             view: "**Orders are not the problem; conversion and credibility are.** The order book is ₹7,237cr, including a first nuclear order (NPCIL's Kaiga), and Q2 FY27 standalone revenue grew 66% at a 16.1% margin with H1 operating cash a positive ₹44cr. But it missed both FY26 guides, cut FY27 to +25%, burned ₹105cr of operating cash in FY26, its debt rose to ₹575cr, its conductor plant slipped from Q2 to Q3, and 4.22 crore shares held by a director are pledged to its lenders. 23 Oct 2026: stays wait until the pledge is released and cash conversion improves. The price needs about {need:Transformers & Rect|19}% a year against my ~18%, fair for a company that has yet to show it can execute.",
-            watch: 'H2 revenue near ₹900cr a quarter, which the FY27 guide needs; working capital falling toward 120 days; Changodar starting around Diwali and the conductor plant in Q3; the pledge released.',
+            watch: 'H2 revenue near ₹900cr a quarter, which the FY27 guide needs; working capital falling toward 120 days; Changodar starting around Diwali; the three Chiyada component plants, now ₹1,250cr and due in Q1 FY28 (27 Oct release); the pledge released.',
         },
         {
             company: 'Voltamp Transformers', rank: 7, stance: 'PRICED', segment: MAKERS,

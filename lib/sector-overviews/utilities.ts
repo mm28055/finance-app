@@ -543,7 +543,7 @@ export const utilities: SectorOverview = {
             company: 'Va Tech Wabag', rank: 1, stance: 'PRICED', segment: WATERTECH,
             what: "Designs, builds and runs water, wastewater and desalination plants for cities and industry in India, the Middle East, Africa and Europe, subcontracting most of the civil work and avoiding state-funded jobs.",
             view: "**The best position in water and the closest to a buy, but the price is full: follow.** A record ₹19,394cr order book, ₹965cr of net cash, 21% revenue growth in Q1 and an AA- rating. But the Q1 margin was about 9% without a ₹37cr currency gain, receivables and retention money grew 25% in FY26, and only 44% of five years' profit arrived as cash. The price needs a little more than my ~15% estimate. 23 Oct 2026: stays follow though the price now fits; only 44% of five years' profit arrived as cash, short of the half an own needs.",
-            watch: 'Underlying margin back above 11% by Q3; Kuwait start and Perur commissioning; receivable days and disputed tax claims.',
+            watch: 'Underlying margin back above 11% by Q3; Kuwait start, Perur commissioning and the Reliance Jamnagar desalination plant (over ₹1,000cr, about a quarter of a year's sales, won 27 October, 25 months); receivable days and disputed tax claims.',
         },
         {
             company: 'Antony Waste Hand', rank: 2, stance: 'TURNAROUND', segment: CIVIC,

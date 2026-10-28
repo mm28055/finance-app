@@ -571,7 +571,7 @@ export const softwarePlatforms: SectorOverview = {
             company: 'E2E Networks', rank: 1, stance: 'CYCLICAL', segment: AI,
             what: "An Indian GPU cloud that rents Nvidia chips by the hour to AI start-ups, companies, researchers and IndiaAI allottees; L&T owns 18.45% and is also a partner and customer.",
             view: "**Outstanding execution, now at a price that fits; own in small size.** Its monthly revenue run-rate nearly doubled to ₹71.8cr in Q1, and Q2 FY27 showed it repeats: revenue ₹224cr (+43% on the quarter), profit ₹73cr at a 77% operating margin, borrowing held at about ₹450cr, and the B200 cluster moved onto a ₹1,000cr sovereign-AI contract to June 2029. But depreciation takes about half of the operating profit, the run-rate grew only 5% in Q2 while it waits for the next GPU lot, management gives no guidance on revenue, capex or peak debt, and GPU rents fall when supply catches up. The price needs about {need:E2E Networks|40}% a year against my ~40%. 23 Oct 2026: moved from follow to own; Q2 met both conditions I set.",
-            watch: 'GPU rental prices after the next Nvidia generation; the second B200 lot going live in Q3 and being let; debt against run-rate revenue.',
+            watch: 'GPU rental prices after the next Nvidia generation; the second B200 lot going live in Q3 and being let; the 5.4 MW (about 59%) expansion to 14.6 MW announced on 26 October, paid from cash flow and debt; debt against run-rate revenue.',
         },
         {
             company: 'Tanla Platforms', rank: 2, stance: 'HARVEST', segment: MSG,

@@ -537,7 +537,7 @@ export const healthcare: SectorOverview = {
         {
             company: 'Syngene International', rank: 5, stance: 'TURNAROUND', segment: SERV,
             what: "India's largest listed contract research, development and manufacturing company for drug makers, with about 400 clients and plants in Bengaluru, Hyderabad, Mangaluru and Baltimore; 52.6% owned by Biocon.",
-            view: "**A turnaround with a strong balance sheet.** It holds ₹1,541cr of net cash by its own June count (₹1,116cr on Screener), is rated AA+ and has BMS signed to 2035. But dollar revenue has been flat for three years, Q1 revenue fell 16% after losing Librela, FY27 guidance was cut within 90 days, return on capital is down to 10%, and the CEO, general counsel and an independent director have left. The price needs about {need:Syngene International|24–25}% a year against my ~15% from a depressed base.",
+            view: "**A turnaround with a strong balance sheet.** It holds ₹1,541cr of net cash by its own June count (₹1,116cr on Screener), is rated AA+ and has BMS signed to 2035. But dollar revenue has been flat for three years, Q1 revenue fell 16% after losing Librela, FY27 guidance was cut within 90 days, return on capital is down to 10%, and the CEO, general counsel and an independent director have left; on 27 October 2026 the CFO resigned too (staying until at least the end of Q3) as Q2 revenue fell 9% to ₹833cr. The price needs about {need:Syngene International|24–25}% a year against my ~15% from a depressed base.",
             watch: 'H2 margin reaching 27–30% (CRISIL’s trigger is 25%); named manufacturing wins at Bayview; no further guidance cuts.',
         },
         {

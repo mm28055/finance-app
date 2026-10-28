@@ -595,7 +595,7 @@ export const cables: SectorOverview = {
                     rows: [
                         ['RR Kabel Ltd.', 'Wire-and-cable volume ~18%; margin 9.5% (aiming for 10%), 10.5% by FY28; consumer goods +20% at break-even', '₹1,200cr over FY26–FY28, ₹600–650cr in FY27; ₹77cr fibre-cable purchase', '**Delivered**: volume +17%, margin 9.9%, break-even in consumer goods'],
                         ['KSH International', 'Volume ~26%; ~₹75,000 a tonne (‘not guidance’); working capital 30–35 days', 'Phase 2 ₹150–160cr, done by March 2027', '**Beat**: volume +30% against 21%; ₹93,000 a tonne; upcasting early'],
-                        ['Dynamic Cables', '18–20% a year over the long run; margin 10.5–11%', '₹40–45cr Reengus plant', '**Slipping**: margin met; plant 15 months late and not yet announced'],
+                        ['Dynamic Cables', '18–20% a year over the long run; margin 10.5–11%', '₹40–45cr Reengus plant', '**Slipping**: margin met; plant 15 months late, machinery installed 26 Oct 2026 but production not yet started'],
                         ['Finolex Cables', 'None formal; fibre margin to low double digits; consumer goods ₹500cr by FY28', '~₹300cr in FY27, from own cash', '**Mixed**: fibre expansion pulled forward; preform still stabilising'],
                         ['Laser Power & Infra', 'Revenue +15–16% a year; stable margin; ~₹40cr interest saving', 'Phased; land offered at Kharagpur', '**Unproven**: first call; FY26 revenue fell ~10%'],
                         ['Paramount Communications', 'Revenue +15–20%; FY25 margin by Q4 FY27; exports ₹700–800cr', '₹300cr Narmadapuram plus ₹50–55cr a year', '**On track**: revenue +17.4%, margin 6.6%; volume +4%'],
@@ -683,7 +683,7 @@ export const cables: SectorOverview = {
         {
             company: 'Dynamic Cables', rank: 1, stance: 'COMPOUNDER', segment: QUAL,
             what: "Jaipur-based maker of medium and high-voltage power cables, low-voltage and solar cables and niche conductors, sold mostly to private project contractors and solar developers, and since Q1 FY27 to US distributors.",
-            view: "**The most disciplined business here, at a price that fits.** Its 10.5–11% margin has held for six quarters, return on capital is about 26%, net debt is about ₹15cr, and high-voltage cables are 68% of Q1 sales. But Q1 volume grew only 5–6%, the order book has been flat at about ₹811cr, and the ₹40–45cr Reengus plant is 15 months late. The price needs about {need:Dynamic Cables|15–16}% a year against my ~18%.",
+            view: "**The most disciplined business here, at a price that fits.** Its 10.5–11% margin has held for six quarters, return on capital is about 26%, net debt is about ₹15cr, and high-voltage cables are 68% of Q1 sales. But Q1 volume grew only 5–6%, the order book has been flat at about ₹811cr, and the ₹40–45cr Reengus plant is 15 months late; its machinery was finally installed on 26 October 2026, with production, when it starts, adding about 20% to capacity. The price needs about {need:Dynamic Cables|15–16}% a year against my ~18%.",
             watch: 'The Reengus plant starting and adding revenue from Q4 FY27; the order book moving above ₹811cr; repeat US orders with the margin above 10%.',
         },
         {
@@ -701,7 +701,7 @@ export const cables: SectorOverview = {
         {
             company: 'Finolex Cables', rank: 4, stance: 'CYCLICAL', segment: BRAND,
             what: "One of India's best-known wire brands (23.9% of organised wire by its own count), plus auto, farm and solar cables, optical fibre with its own preform, and a high-voltage joint venture with Sumitomo.",
-            view: "**A strong brand earning a windfall under a governance cloud.** Q1's 30% fibre margin came from fibre bought cheaply in late 2025, and building wire grew only in low single digits. Operating cash fell to ₹49cr in FY26, the joint venture needs a ₹185.7cr guarantee, and a promoter control dispute is before the Bombay High Court. The price needs about {need:Finolex Cables|17}% a year against my ~12%.",
+            view: "**A strong brand earning a windfall under a governance cloud.** Q1's 30% fibre margin came from fibre bought cheaply in late 2025, and building wire grew only in low single digits. Operating cash fell to ₹49cr in FY26, the joint venture needs a ₹185.7cr guarantee, and a promoter control dispute is before the Bombay High Court. The price needs about {need:Finolex Cables|17}% a year against my ~12%. **28 Oct 2026:** the price fitted briefly and is now full again; no new filing changes the case, so it stays wait.",
             watch: 'The fibre margin once the cheap stock runs out; building-wire volume against UltraTech; the court outcome on control.',
         },
         {

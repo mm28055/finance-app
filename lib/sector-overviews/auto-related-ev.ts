@@ -680,7 +680,7 @@ export const autoRelatedEv: SectorOverview = {
         {
             company: 'Sona BLW Precision', rank: 7, stance: 'PRICED', segment: DRIVE,
             what: "Makes differential gears and assemblies, EV traction and suspension motors, radars and railway equipment for global and Indian vehicle makers; about 59% of revenue from India and Asia.",
-            view: "**Real technology, a ₹24,000cr order book, and a price well ahead of it.** Electric revenue doubled and Denso will pay it royalties. But margin has fallen from 28% to 23% with mix, 49% of the 2W/3W motor business goes to Denso, and a family dispute surrounds the promoter trusts. The price needs about {need:Sona BLW Precision|28}% a year against my ~18%.",
+            view: "**Real technology, a ₹25,100cr order book, and a price well ahead of it.** Electric revenue doubled, Denso will pay it royalties, and it won ₹3,600cr of new orders in Q2 FY27 (₹1,250cr of traction motors, ₹700cr of EV car differentials), about 73% of a year's sales. But margin has fallen from 28% to 23% with mix, 49% of the 2W/3W motor business goes to Denso, and a family dispute surrounds the promoter trusts. The price needs about {need:Sona BLW Precision|28}% a year against my ~18%.",
             watch: 'Margin back above 24% from Q2; the size and timing of Denso’s payment; any spill-over of the Kapur dispute into the board.',
         },
         {

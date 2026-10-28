@@ -842,7 +842,7 @@ export const realty: SectorOverview = {
             company: 'Ashiana Housing', rank: 5, stance: 'SCALEUP', segment: NORTH,
             what: "A 40-year-old developer of senior-living communities and family homes in Jaipur, Bhiwadi, Gurugram, Pune, Chennai and Jamshedpur, funded mostly by customer advances.",
             view: "**Conservative and cash-rich, with a soft patch in sales.** It holds about ₹785cr of net cash (company figure; Screener shows ₹302cr), senior-living bookings rose 55% to ₹570cr in FY26, and ₹2,040cr of booked homes are due for handover in FY27. But Q1 bookings fell to ₹358cr from ₹431cr, management warns pre-sales may dip for a year or two, and it now spends ₹800–1,000cr on land, some in cities new to it. The price needs about {need:Ashiana Housing|19}% a year against my ~18%.",
-            watch: "Aaroham Phase 3 launching in Q3–Q4; FY27 profit as handovers land; how much net cash the land plan uses.",
+            watch: "Aaroham Phase 3 launching in Q3–Q4; FY27 profit as handovers land; how much net cash the land plan uses (CareEdge raised it to A+ on 27 October 2026).",
         },
         {
             company: 'Brigade Enterprises', rank: 6, stance: 'PRICED', segment: LARGE,

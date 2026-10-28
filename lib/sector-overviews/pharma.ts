@@ -904,7 +904,7 @@ export const pharma: SectorOverview = {
         {
             company: 'Granules India', rank: 10, stance: 'TURNAROUND', segment: EXPORT,
             what: "Makes paracetamol, metformin and other high-volume drugs from raw chemical to finished tablet, is a large US supplier of ADHD and other controlled medicines, and owns a Swiss peptide contract maker.",
-            view: "**A consistent operator held back by one inspection.** Gross margin rose from 50% to 65% in four years, Q1 cash cut net debt to ₹101cr and the promoter's ₹1,096cr of warrant money leaves it net cash. But nine approved US launches wait behind a warning letter now 19 months old, the peptide arm lost ₹12.4cr in Q1, and the warrants added 10% to the share count. The price needs about {need:Granules India|20}% a year against my ~16%.",
+            view: "**A consistent operator held back by one inspection.** Gross margin rose from 50% to 65% in four years, Q1 cash cut net debt to ₹101cr and the promoter's ₹1,096cr of warrant money leaves it net cash. But nine approved US launches wait behind a warning letter now 19 months old, the peptide arm lost ₹12.4cr in Q1, and the warrants added 10% to the share count. The price needs about {need:Granules India|20}% a year against my ~16%. **28 Oct 2026:** the price fitted briefly and is full again; the promoter warrants converted on 23 October (9.2% at about ₹439) and it filed a likely first-to-file challenge on extended-release ruxolitinib, but the Gagillapur re-inspection is still unscheduled, so it stays wait.",
             watch: 'The Gagillapur re-inspection; the peptide arm turning profitable for FY27; Genome Valley past 50% use.',
         },
         {

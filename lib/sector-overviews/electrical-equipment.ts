@@ -712,7 +712,7 @@ export const electricalEquipment: SectorOverview = {
         {
             company: 'Genus Power', rank: 3, stance: 'SCALEUP', segment: GRID,
             what: "One of India's largest smart-meter makers, and a meter service provider (AMISP) that installs, owns and runs meters for utilities under 8–9 year concessions through a platform owned 74% by GIC and 26% by Genus.",
-            view: "**Superb execution, but the boom has an end date.** Revenue nearly doubled in FY26 and all 24 projects are live. But operating cash has been negative for three years, net debt is ₹1,573cr and heading for about ₹2,000cr, the order book is shrinking, RDSS ends in March 2028, and its auditor flags an Enforcement Directorate complaint now before a Patna court. I cut my estimate to ~12%; the price needs about {need:Genus Power|10}%.",
+            view: "**Superb execution, but the boom has an end date.** Revenue nearly doubled in FY26 and all 24 projects are live. But operating cash has been negative for three years, net debt is ₹1,573cr and heading for about ₹2,000cr, the order book is shrinking, RDSS ends in March 2028, and its auditor flags an Enforcement Directorate complaint now before a Patna court. I cut my estimate to ~12%; the price needs about {need:Genus Power|10}%. On 26 October 2026 the board approved a ₹148.2cr buyback at ₹312 a share (1.56% of shares, record date 30 October), cash returned while operating cash is negative and debt is rising.",
             watch: 'Q2 installs and a margin of 18% or better; new metering awards to refill the ₹24,020cr order book; any step in the Patna PMLA case.',
         },
         {

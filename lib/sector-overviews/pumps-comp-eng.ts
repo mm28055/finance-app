@@ -640,8 +640,8 @@ export const pumpsCompEng: SectorOverview = {
         {
             company: 'Kirloskar Pneumatic', rank: 1, stance: 'PRICED', segment: COMP,
             what: "Makes air compressors, refrigeration compressors (for cold storage, dairies, food) and gas compression packages (CNG, oil and gas, biogas), and maintains more than 1,000 CNG stations. It makes its own forgings and castings.",
-            view: "**The best-run business in the sector, priced a little ahead of its growth.** Return on capital rose every year from 18% to 30%, it has no debt and about ₹460cr of cash, and material cost fell from 47.6% to 43.9% of sales in Q1. But FY26 sales grew about 8% and Q1 10% against a 20%-plus guide, and management calls FY26's 21% margin an exception. The price needs about {need:Kirloskar Pneumatic|19}% a year against my ~15%.",
-            watch: 'H1 sales of ₹750–800cr at about a 19% margin; Middle East package orders restarting; Zephyros repeat orders.',
+            view: "**The best-run business in the sector, priced a little ahead of its growth.** Return on capital rose every year from 18% to 30%, it has no debt and about ₹460cr of cash, and material cost fell from 47.6% to 43.9% of sales in Q1. But FY26 sales grew about 8% and Q1 10% against a 20%-plus guide, and management calls FY26's 21% margin an exception. The price needs about {need:Kirloskar Pneumatic|19}% a year against my ~15%. **28 Oct 2026:** the price now fits only because the shares fell 10% on Q2 results: revenue fell 15% and operating profit 29% at a 13% margin, far off the H1 aim of ₹750–800cr at about 19%. It stays follow until the Q2 call shows whether the FY27 guide holds; a cut would move it to wait.",
+            watch: 'Whether the Q2 call keeps the 20%-plus FY27 guide after Q2 sales fell 15%; Middle East package orders restarting; Zephyros repeat orders.',
         },
         {
             company: 'Powerica', rank: 2, stance: 'SCALEUP', segment: ENG,

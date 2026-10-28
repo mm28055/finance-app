@@ -606,7 +606,7 @@ export const vehicles: SectorOverview = {
             company: 'Ather Energy', rank: 5, stance: 'SCALEUP', segment: EV,
             what: "India's premium electric-scooter maker, with its own software and charging network, a full factory in Hosur, a second opening in Aurangabad and a cheaper EL range just launched.",
             view: "**Winning, and priced for it.** Revenue rose 89% in Q1 to ₹1,217cr and EBITDA turned positive for the first time (₹9cr), with 1.5 lakh paid pre-orders. But the factory is full, share slipped to about 16% in August, the subsidy has ended and gross margin fell three points. At about 14 times sales it has no earnings to value yet.",
-            watch: 'The Aurangabad plant reaching 42,000 a month; EBITDA staying positive without the subsidy; share against TVS and Bajaj.',
+            watch: 'The Aurangabad plant reaching 42,000 a month and the ₹122cr expansion to 11.4 lakh units a year by Q2 FY28 (approved 26 October); EBITDA staying positive without the subsidy (Q2 FY27: income +62% to ₹1,527cr, a 4.9% margin and its first quarterly profit); share against TVS and Bajaj.',
         },
         {
             company: 'VST Tillers Tractors', rank: 6, stance: 'HARVEST', segment: FARM,

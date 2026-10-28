@@ -621,7 +621,7 @@ export const industrialsComponents: SectorOverview = {
         {
             company: 'Subros', rank: 7, stance: 'CYCLICAL', segment: TAKER,
             what: "Car, truck, bus and railway air-conditioning systems and compressors on Denso technology; 82% of FY26 sales went to related parties, chiefly Maruti Suzuki.",
-            view: "**A supplier whose customer holds the power.** It has about 41% of car and truck air-conditioning, and the truck rule and electric compressors add content. But Q1 operating profit fell while revenue rose 17.5%, guidance was withdrawn, the 12% margin goal is pushed out, operating cash fell 40% in FY26 and contingent liabilities rose to ₹79.5cr. The price needs about {need:Subros|17}% a year against my ~10%.",
+            view: "**A supplier whose customer holds the power.** It has about 41% of car and truck air-conditioning, and the truck rule and electric compressors add content. But Q1 operating profit fell while revenue rose 17.5%, guidance was withdrawn, the 12% margin goal is pushed out, operating cash fell 40% in FY26 and contingent liabilities rose to ₹79.5cr. On 27 October 2026 Maruti awarded it HVAC assemblies worth about ₹1,225cr over a seven-year model life, about 31% of a year's sales, which shows the customer link but is spread thin. The price needs about {need:Subros|17}% a year against my ~10%.",
             watch: 'Customers compensating the wage rises (margin back above 9.5%); Kharkhoda starting in Q3 FY27; operating cash back above ₹200cr.',
         },
         {

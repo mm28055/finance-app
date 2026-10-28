@@ -848,7 +848,7 @@ export const autoRelatedMetal: SectorOverview = {
             company: 'Sterling Tools', rank: 12, stance: 'TURNAROUND', segment: CAST,
             what: "India's second-largest automotive fastener maker, plus loss-making EV subsidiaries making motor controllers, chargers and high-voltage contactors under Chinese licences.",
             view: "**A good fastener business carrying an EV arm that lost its customer.** Fasteners grew 24% at a 15.4% margin with plants full. But the EV arms lose about ₹10cr a quarter after losing ₹280cr of revenue, a ₹21cr bad debt was booked, and management pay of ₹18.3cr compares with ₹29cr of profit. The price needs about {need:Sterling Tools|23}% a year against my ~18%.",
-            watch: 'EV losses falling below ₹5cr a quarter; fastener margin above 15% as steel costs rise; the ₹80cr capex on time.',
+            watch: 'EV losses falling below ₹5cr a quarter (about ₹10cr in Q2 FY27); the standalone margin back above 15% as costs are passed on (12.1% in Q2); FY27 capex, raised to about ₹135cr, on time; the new charger lines (commissioned in Q2) starting supplies.',
         },
         {
             company: 'OBSC Perfection', rank: 13, stance: 'SCALEUP', segment: CAST,

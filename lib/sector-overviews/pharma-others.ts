@@ -643,7 +643,7 @@ export const pharmaOthers: SectorOverview = {
         {
             company: 'Sudeep Pharma', rank: 6, stance: 'PRICED', segment: INGREDIENTS,
             what: "Makes mineral-based excipients and nutrition ingredients (phosphates, carbonates, bisglycinates) for drug, food and infant-formula makers, and is building a battery-materials business.",
-            view: "**A strong niche, weak cash, priced for a new business.** A steady 35% margin and costs passed on, but only about 30% of FY26 profit became cash, stock covers 356 days and its main segment earned less than a year earlier. The battery plant has 44 prospects and no binding contract. The price needs about {need:Sudeep Pharma|29}% a year against my ~18%.",
+            view: "**A strong niche, weak cash, priced for a new business.** A steady 35% margin and costs passed on, but only about 30% of FY26 profit became cash, stock covers 356 days and its main segment earned less than a year earlier. The battery plant has 44 prospects and no binding contract. On 26 October 2026 the new 51,200-tonne Nandesari plant got its Gujarat FDA approval, with supplies due in H2 FY27. The price needs about {need:Sudeep Pharma|29}% a year against my ~18%.",
             watch: 'A binding battery contract with price terms; margin back to 37–38% in H2; operating cash catching up with profit.',
         },
         {

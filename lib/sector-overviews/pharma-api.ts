@@ -672,7 +672,7 @@ export const pharmaApi: SectorOverview = {
             company: 'Acutaas Chemicals', rank: 2, stance: 'PRICED', segment: ANCHOR,
             what: "Makes advanced intermediates (the last chemical steps before an active ingredient) for innovators and generic makers, led by a 10-year contract on darolutamide, plus battery-electrolyte additives and semiconductor chemicals in India and Korea.",
             view: "**Best growth and best new engines, priced for most of it.** Revenue +59% in Q1, a margin that rose from 18% to 36% in two years, ₹314cr of net cash at June (company; ₹189cr at March on Screener), a sold-out battery plant and a Korean plant opened early. But contract growth rests on one molecule, free cash has been negative every year since FY21, and inventory days are rising. The price needs about {need:Acutaas Chemicals|29}% a year against my ~25%.",
-            watch: 'Revenue on track for +25% as H2 carries 60% of the year; the four validated contract products ramping in FY28; a fourth battery contract signed with capex.',
+            watch: 'Revenue growth of about 30% for FY27 and a 38–40% margin, both raised on 27 October after Q2 revenue rose 43%; the four validated contract products ramping in FY28; a fourth battery contract signed with capex.',
         },
         {
             company: 'Aarti Drugs', rank: 3, stance: 'CYCLICAL', segment: VOLUME,

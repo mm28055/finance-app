@@ -515,7 +515,7 @@ export const tyres: SectorOverview = {
         {
             company: 'JK Tyre & Indust', rank: 3, stance: 'CYCLICAL', segment: TRUCK,
             what: "A truck-and-bus radial leader with car, farm and two-wheeler tyres, nine Indian plants including the merged Cavendish plants, and JK Tornel in Mexico.",
-            view: "**Full plants, heavy debt, slow payback.** Indian volumes grew about 25% and plants run at 95%, but the Q1 margin fell to 6.5%, Mexico's sales all but stopped, and net debt of ₹4,945cr is heading towards 3.0–3.5 times operating profit as it builds ₹6,110cr of capacity. Promoter pay of about ₹83cr is high for a company of this size. The price needs about {need:JK Tyre & Indust|9–10}% a year against my ~6%.",
+            view: "**Full plants, heavy debt, slow payback.** Indian volumes grew about 25% and plants run at 95%, but the Q1 margin fell to 6.5%, Mexico's sales all but stopped, and net debt of ₹4,945cr is heading towards 3.0–3.5 times operating profit as it builds ₹6,110cr of capacity. Promoter pay of about ₹83cr is high for a company of this size. The price needs about {need:JK Tyre & Indust|9–10}% a year against my ~6%. **28 Oct 2026:** the price fits on trailing profit, but Q2 operating profit fell 36% and net profit 71% at a 7% margin, and natural rubber hit a record ₹290 a kilo on 22 October, so the margin recovery I am waiting for has not started; it stays wait.",
             watch: 'Margin back to 11–13% in H2 FY27; Mexico’s sales recovering in Q2; net debt staying inside CARE’s 3.5-times trigger.',
         },
     ],

@@ -757,7 +757,7 @@ export const pharmaCdmo: SectorOverview = {
         {
             company: 'Jubilant Ingrevia', rank: 8, stance: 'CYCLICAL', segment: CHEM,
             what: "A chemicals company: world-leading pyridines, vitamin B3 and nutrition, and acetyls, with a growing contract business including a $300m five-year agrochemical contract.",
-            view: "**A fairly priced cycle with a contract book attached.** Q1 EBITDA rose 37% and it guides ₹750–800cr for the year, with net debt down to about one year's EBITDA. But most of the gain came from acetyl prices, its anchor contract customer paused volumes, and contingent liabilities rose to ₹454cr. The price needs about {need:Jubilant Ingrevia|18–19}% a year against my ~14%.",
+            view: "**A fairly priced cycle with a contract book attached.** Q1 EBITDA rose 37% and it guides ₹750–800cr for the year, with net debt down to about one year's EBITDA. But most of the gain came from acetyl prices, its anchor contract customer paused volumes, and contingent liabilities rose to ₹454cr. Q2 FY27 profit rose 61% to ₹111cr on revenue up 24%, but it is also paying ₹189.2cr for 40% of ZettaOne Technologies, an electronics contract maker far from its chemistry. The price needs about {need:Jubilant Ingrevia|18–19}% a year against my ~14%.",
             watch: 'Volumes restored on the paused agrochemical contract by Q3; acetyl prices after the war spike; the Gajraula plant starting by December 2026.',
         },
         {
@@ -775,7 +775,7 @@ export const pharmaCdmo: SectorOverview = {
         {
             company: 'Piramal Pharma', rank: 11, stance: 'TURNAROUND', segment: INNOV,
             what: "A global contract developer and manufacturer (about 52% of Q1 revenue) with sites in India, the US, the UK and Canada, plus hospital generics and Indian consumer brands.",
-            view: "**Good assets, no returns yet.** Q1 revenue rose 17% and the company margin 400 basis points, but 9–10 points of growth was currency and it still lost money after tax. Net debt is about 3.6–4.3 times operating profit, above CARE's downgrade line, Carlyle's 18% stake is pledged, and Morpeth drew seven FDA observations. No growth estimate until it earns.",
+            view: "**Good assets, no returns yet.** Q1 revenue rose 17% and the company margin 400 basis points, but 9–10 points of growth was currency and it still lost money after tax. Net debt is about 3.6–4.3 times operating profit, above CARE's downgrade line, Carlyle's 18% stake is pledged, and Morpeth drew seven FDA observations. On 27 October 2026 it raised its FY27 revenue growth outlook to 19–20%, with 'meaningfully higher profitability'. No growth estimate until it earns.",
             watch: 'The FY27 margin clearing 16% with net debt below 3 times EBITDA; Morpeth closing without escalation; overseas site utilisation.',
         },
         {
