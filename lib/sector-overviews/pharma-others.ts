@@ -625,13 +625,13 @@ export const pharmaOthers: SectorOverview = {
         {
             company: 'Advanced Enzyme', rank: 3, stance: 'HARVEST', segment: INGREDIENTS,
             what: "Makes enzymes and probiotics by fermentation for pharma, supplement, food, feed and industrial customers in India, the US and Europe.",
-            view: "**Cash-rich and steady, but barely growing.** ₹668cr of net cash, 68–72% cash conversion and a ₹69.7cr buyback, but sales have compounded about 8% a year for five years, Q1 revenue rose 2% and the margin fell to 27%. ₹369cr of goodwill sits on a US business that has not grown. The price asks for about {need:Advanced Enzyme|14}% a year, a few points more than my ~10%, so I follow rather than own it.",
+            view: "**Cash-rich and steady, but barely growing.** ₹668cr of net cash, 68–72% cash conversion and a ₹69.7cr buyback, but sales have compounded about 8% a year for five years, Q1 revenue rose 2% and the margin fell to 27%. ₹369cr of goodwill sits on a US business that has not grown. The price asks for about {need:Advanced Enzyme|14}% a year, a few points more than my ~10%, so I follow rather than own it. **28 Oct 2026:** the price briefly fitted on 23 October and is back to full; with Q2 results not yet out and growth still near 2%, it stays follow.",
             watch: 'Margin back near 30% in Q2; US growth of 8–10% showing up; any goodwill write-down or capacity decision.',
         },
         {
             company: 'Accent Microcell', rank: 4, stance: 'SCALEUP', segment: INGREDIENTS,
             what: "Makes microcrystalline cellulose and other excipients that bind and fill tablets, 63% exported; SME-listed, reports half-yearly.",
-            view: "**A strong export plant held back by delays and disclosure.** Dahej earns about 23% before interest and tax and FY26 revenue rose 32%, but mostly through ₹95cr of low-margin trading, about half bought from promoter firms. Unit III is about nine months late, receivables are ageing, and CRISIL cut it to B for not cooperating. The price needs about {need:Accent Microcell|20}% a year, a little more than my ~18%.",
+            view: "**A strong export plant held back by delays and disclosure.** Dahej earns about 23% before interest and tax and FY26 revenue rose 32%, but mostly through ₹95cr of low-margin trading, about half bought from promoter firms. Unit III is about nine months late, receivables are ageing, and CRISIL cut it to B for not cooperating. The price needs about {need:Accent Microcell|20}% a year, a little more than my ~18%. **28 Oct 2026:** the price now fits, and H1 FY27 revenue rose 26% with profit up 72% at a 24% margin; but Unit III, the promoter-firm trading and the CRISIL non-cooperation rating are unresolved, so it stays follow until the half-year filing shows less trading and the plant running.",
             watch: 'A filing confirming Unit III commercial production; H1 FY27 results (about November) with less trading; receivables falling from ₹91cr.',
         },
         {
