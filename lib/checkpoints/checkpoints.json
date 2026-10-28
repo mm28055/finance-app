@@ -6227,7 +6227,8 @@
    "status": "partly",
    "actual": "₹1,528cr",
    "resolvedOn": "2026-10-26",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays pass; FY27 guide cut to up to 10% growth"
   },
   {
    "id": "sterling-and-wilson-q3fy27-1",
@@ -6239,7 +6240,13 @@
    "target": 2600,
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "in the Q2 FY27 call management said Q3 and Q4 will not each reach ₹2,600cr; Q3 better than Q2, Q4 the strongest; FY27 guide cut to up to 10% growth"
+    }
+   ]
   },
   {
    "id": "sterling-and-wilson-q2fy27-2",
@@ -6249,7 +6256,11 @@
    "due": "Q2 FY27",
    "ifMet": "View improves",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Not placed by the Q2 call (22 Oct 2026); management says only that work ‘is going to start soon’",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays pass"
   },
   {
    "id": "sterling-and-wilson-q2fy27-3",
@@ -6259,7 +6270,11 @@
    "due": "Q2 FY27",
    "ifMissed": "View worsens",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "No new legacy charge in Q2 and the Chile claim was settled; about ₹156cr of indemnity expected from the former owners in FY27, not yet received",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays pass"
   },
   {
    "id": "solarworld-energy-so-q2fy27-1",
@@ -7847,7 +7862,11 @@
    "text": "Profit margin inside the 13–15% guide",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "10.6% in Q2 FY27 (unchanged on a year; Q2 is the seasonal low and part of the festive season moved into Q3)",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "metro-brands-q4fy27-1",
@@ -7856,7 +7875,13 @@
    "text": "Store openings back near 100 a year (only 9 in Q1)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "21 net stores in H1 FY27 (34 opened, 13 closed); in the Q2 FY27 call management dropped the triple-digit aim (‘not fixated on a number’) and expects H2 to beat H1"
+    }
+   ]
   },
   {
    "id": "metro-brands-q4fy27-2",
@@ -12707,7 +12732,11 @@
    "due": "Q2 FY27",
    "ifMet": "A sharper textile upturn could end the wait",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Textile utilisation about 60% in Q2 FY27, though the active order book rose to ₹2,600cr from ₹2,400cr",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "lmw-q2fy27-2",
@@ -12725,7 +12754,13 @@
    "text": "Machine tools grow 15–20% in FY27 on current capacity (guidance)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "in the Q2 FY27 call management spoke of about 50% machine-tool growth this year (H1 sales +43% to ₹794cr with the foundry)"
+    }
+   ]
   },
   {
    "id": "lmw-q2fy27-3",
@@ -12735,7 +12770,11 @@
    "due": "Q2 FY27",
    "ifMissed": "Changes the view for the worse",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "No move into unrelated businesses, but the overseas holding company (Dubai, China) investment rose from ₹206cr to ₹377cr while Dubai still loses money",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "mamata-machinery-q2fy27-1",
@@ -15908,7 +15947,11 @@
    "due": "Q2 FY27",
    "ifMet": "Would change my view for the better",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Not announced; the review was pushed back about 12 weeks in the Q2 call (23 Oct 2026); ibuprofen near break-even in Q2 on temporary prices",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "solara-active-pharma-q2fy27-2",
@@ -15917,7 +15960,11 @@
    "text": "Base-business margin holding near 25% (±1), as guided (23.5% in Q1)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "23.6% in Q2 FY27 (gross margin squeezed by war-driven input costs)",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "solara-active-pharma-q4fy27-1",
@@ -36789,6 +36836,24 @@
    "company": "Cyient DLM",
    "sector": "EMS & Electronics",
    "text": "Working capital below 140 days (153 at September 2026)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-28",
+   "status": "pending"
+  },
+  {
+   "id": "solara-active-pharma-q4fy27-3",
+   "company": "Solara Active Pharma",
+   "sector": "Pharma API",
+   "text": "Ibuprofen review concluded (multi-product conversion or sale), as now promised for about mid-January 2027",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-28",
+   "status": "pending"
+  },
+  {
+   "id": "metro-brands-q4fy27-4",
+   "company": "Metro Brands",
+   "sector": "Consumer Durables",
+   "text": "Stock back to normal levels by March 2027, as promised in the Q2 call",
    "due": "Q4 FY27",
    "createdOn": "2026-10-28",
    "status": "pending"
