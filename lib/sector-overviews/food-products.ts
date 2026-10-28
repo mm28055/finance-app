@@ -779,8 +779,8 @@ export const foodProducts: SectorOverview = {
         {
             company: 'ADF Foods', rank: 4, stance: 'SCALEUP', segment: EXPORT,
             what: "An exporter of Indian ready meals, frozen breads, pickles and pastes under Ashoka (for the diaspora) and Truly Indian (for US supermarkets), with its own US warehouses.",
-            view: "**A steady branded exporter with freight and subsidy headwinds.** Revenue grew 26% in Q1, Ashoka more than 30%, and the Surat plant can add nearly ₹300cr of sales. But the underlying Q1 margin was under 14% against a high-teens target, the ₹16cr-a-year PLI subsidy ends after FY27, inventory days doubled to 205, and promoters own only 36%. The price needs about {need:ADF Foods|18}% a year against my ~15%.",
-            watch: 'Margin back above 17% without one-offs in H2 once freight is passed on; Surat sales of ₹40–50cr this year; recovery of the $2.8m court award from Ascot.',
+            view: "**A steady branded exporter with freight and subsidy headwinds.** Revenue grew 26% in Q1, Ashoka more than 30%, and the Surat plant can add nearly ₹300cr of sales. But the underlying Q1 margin was under 14% against a high-teens target, the ₹16cr-a-year PLI subsidy ends after FY27, inventory days doubled to 205, and promoters own only 36%. The price needs about {need:ADF Foods|18}% a year against my ~15%. **28 Oct 2026:** after a fall the price now fits, but Q2 results are not out and the margin target is unproven, so it stays follow; on 10 October its US arm settled the Ascot case for US$1.75m over 52 months (US$450,000 already received), less than the US$2.8m award.",
+            watch: 'Margin back above 17% without one-offs in H2 once freight is passed on; Surat sales of ₹40–50cr this year; the US$1.75m Ascot settlement being paid over 52 months (agreed October 2026).',
         },
         {
             company: 'KRBL', rank: 5, stance: 'CYCLICAL', segment: RICE,
@@ -797,7 +797,7 @@ export const foodProducts: SectorOverview = {
         {
             company: 'Avanti Feeds', rank: 7, stance: 'CYCLICAL', segment: PROTEIN,
             what: "India's largest shrimp-feed maker (51–53% share, five plants in Andhra Pradesh and Gujarat) and a shrimp processor-exporter; Thai Union owns 24.21% and provides technical support.",
-            view: "**A dominant, cash-rich franchise at the bottom of its cost cycle.** Feed volume grew 17% in Q1 and it holds about ₹1,687cr of net cash, but the feed margin collapsed from 18.8% to 7.5% as fish meal doubled, the state now has a say in feed prices, and Q2 will be weak too. Its chairman was paid ₹52.1cr in FY26 and ₹420cr of related sales are not attributed. The price needs about {need:Avanti Feeds|13}% a year against my ~10%.",
+            view: "**A dominant, cash-rich franchise at the bottom of its cost cycle.** Feed volume grew 17% in Q1 and it holds about ₹1,687cr of net cash, but the feed margin collapsed from 18.8% to 7.5% as fish meal doubled, the state now has a say in feed prices, and Q2 will be weak too. Its chairman was paid ₹52.1cr in FY26 and ₹420cr of related sales are not attributed. The price needs about {need:Avanti Feeds|13}% a year against my ~10%. **28 Oct 2026:** the price now fits, but fish meal has not eased and Q2 was flagged as weak, so it stays wait; the EU's approval of more Indian seafood plants helps its smaller processing arm only.",
             watch: 'Fish-meal prices after the monsoon and the Andhra Pradesh pricing formula; the feed margin back above 12%; a clear explanation of the ₹420cr related-party sales.',
         },
         {
