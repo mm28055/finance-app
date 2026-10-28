@@ -3536,7 +3536,7 @@
     },
     {
      "name": "Anish Agarwal",
-     "role": "Whole-time Director & Chief Financial Officer; heads Sterling Tech-Mobility",
+     "role": "Whole-time Director; heads Sterling Tech-Mobility (CFO from 15 May 2026 until Amit Dhadda was appointed CFO on 27 Oct 2026)",
      "since": "Director before FY26 (non-executive); CFO and Whole-time Director since 15 May 2026",
      "family": true,
      "relation": "Son of Chairman Anil Aggarwal; brother of Whole-time Director Akhill Aggarwal",
@@ -3549,18 +3549,27 @@
      "since": "Nov 2025",
      "family": false,
      "bio": "An MBA with 32 years of experience, he joined on 11 Nov 2025 from Endurance Technologies. He is 53 and is among the company's highest-paid employees named in the FY26 annual report."
+    },
+    {
+     "name": "Amit Dhadda",
+     "role": "Chief Financial Officer (also Vice President, Finance & Accounts)",
+     "since": "CFO and key managerial person from 27 October 2026",
+     "family": false,
+     "stake": "not disclosed",
+     "bio": "Already the company's Vice President, Finance & Accounts when he was made CFO. The company says he has nearly three decades of experience in finance, compliance, fundraising and corporate governance (Q2 FY27 results release, 27 Oct 2026)."
     }
    ],
-   "changes": "CFO Pankaj Gupta resigned with effect from 31 Dec 2025; Anish Agarwal became CFO and Whole-time Director from 15 May 2026 (approved by shareholders 26 Jun 2026). Company Secretary Komal Malik (joined Aug 2025) left on 28 Feb 2026; Pragya Saxena is CS from 23 Mar 2026. Roney John joined as Chief Manufacturing Officer in Nov 2025.",
+   "changes": "CFO Pankaj Gupta resigned with effect from 31 Dec 2025; Anish Agarwal became CFO and Whole-time Director from 15 May 2026 (approved by shareholders 26 Jun 2026). Company Secretary Komal Malik (joined Aug 2025) left on 28 Feb 2026; Pragya Saxena is CS from 23 Mar 2026. Roney John joined as Chief Manufacturing Officer in Nov 2025. Amit Dhadda, Vice President, Finance & Accounts, was appointed CFO from 27 Oct 2026.",
    "sources": [
     "https://stlfasteners.com/assets/upload/investors/20260810102548-annual-report-25-26-458916171668.pdf",
     "https://stlfasteners.com/our-leadership",
     "https://businessindia.co/magazine/corporate-report/sterling-tools-electrifying-effect",
     "https://stlfasteners.com/news/sterling-tools-revamps-leadership-eyes-innovation-and-new-verticals-manufacturing-today-india",
     "https://scanx.trade/stock-market-news/companies/sterling-tools-appoints-anish-agarwal-as-whole-time-director/44087793",
-    "https://www.whalesbook.com/corporate-news/English/industrial-goodsservices/Sterling-Tools-Appoints-Anish-Agarwal-as-Director-Seeks-Shareholder-Vote-on-Pay/6a158479e81643778dfb1616"
+    "https://www.whalesbook.com/corporate-news/English/industrial-goodsservices/Sterling-Tools-Appoints-Anish-Agarwal-as-Director-Seeks-Shareholder-Vote-on-Pay/6a158479e81643778dfb1616",
+    "https://nsearchives.nseindia.com/corporate/STERTOOLS_27102026233316_PRESSRELEASESIGN.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-28"
   },
   {
    "company": "OBSC Perfection",
@@ -17490,7 +17499,7 @@
     },
     {
      "name": "Deepak Jain",
-     "role": "Chief Financial Officer (also supply chain, legal and secretarial)",
+     "role": "Chief Financial Officer (also supply chain, legal and secretarial); resigned 27 Oct 2026, staying at least until the end of Q3 FY27",
      "since": "CFO (serving through FY26)",
      "family": false,
      "bio": "A chartered accountant with a B.Com from Calcutta University and over 25 years of experience. He started at Ernst & Young India, held leadership roles at Procter & Gamble, and was India CFO for Apple and for First Advantage. Before Syngene he was CFO of Ather Energy for four years. At Syngene he also runs supply chain, legal and secretarial."
@@ -17524,15 +17533,16 @@
      "bio": "Has nearly three decades in HR across biopharma, IT services and consulting. She was CHRO of Biocon, Global CHRO of Mastek (40+ countries), and held senior roles at Accenture and Firstsource Solutions. She joined Syngene as CHRO in May 2026."
     }
    ],
-   "changes": "MD & CEO Peter Bains resigned in Mar 2026 and left on 30 Jun 2026; Siddharth Mittal replaced him on 1 Jul 2026. Interim CCO Caroline Hempstead left Mar 2026; CHRO Andrew Webster and SynVent head Dr Kenneth Barr left Apr 2026. Independent director Kush Parmar resigned on 29 Jul 2026. Head of Corporate Affairs Pramuch Goel resigned on 21 Sep 2026. New Executive Committee members in Aug 2025: Ajay Tandon (strategy), Gaurav Kushwaha (CTO), Dr Mrinal Kammili (clinical research), Dr Subhendu Kumar (chemistry).",
+   "changes": "CFO Deepak Jain resigned on 27 Oct 2026 for personal reasons, to pursue outside opportunities; he stays at least until the close of Q3 FY27. MD & CEO Peter Bains resigned in Mar 2026 and left on 30 Jun 2026; Siddharth Mittal replaced him on 1 Jul 2026. Interim CCO Caroline Hempstead left Mar 2026; CHRO Andrew Webster and SynVent head Dr Kenneth Barr left Apr 2026. Independent director Kush Parmar resigned on 29 Jul 2026. Head of Corporate Affairs Pramuch Goel resigned on 21 Sep 2026. New Executive Committee members in Aug 2025: Ajay Tandon (strategy), Gaurav Kushwaha (CTO), Dr Mrinal Kammili (clinical research), Dr Subhendu Kumar (chemistry).",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_29540_SYNGENE_2025_2026_A_4857021_02072026190242.pdf",
     "https://nsearchives.nseindia.com/corporate/SYNGENE2_01072026173255_PR_SM.pdf",
     "https://nsearchives.nseindia.com/corporate/SYNGENE2_03072026171724_SEIntimationPBResignation.pdf",
     "https://nsearchives.nseindia.com/corporate/SYNGENE2_29072026200047_SEIntimationKush.pdf",
-    "https://nsearchives.nseindia.com/corporate/SYNGENE2_21092026224924_SEDisclosure_Sept212026.pdf"
+    "https://nsearchives.nseindia.com/corporate/SYNGENE2_21092026224924_SEDisclosure_Sept212026.pdf",
+    "https://nsearchives.nseindia.com/corporate/SYNGENE2_27102026203515_PRQ2FY2027_Signed.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-28"
   },
   {
    "company": "Molbio Diagnostics",

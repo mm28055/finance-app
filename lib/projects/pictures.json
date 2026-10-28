@@ -636,8 +636,8 @@
   },
   {
    "company": "Acutaas Chemicals",
-   "fingerprint": "c68e8e280599caf4",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "43e5aad75371bdd9",
+   "checkedOn": "2026-10-28",
    "lines": {
     "heading": "How full each site is (Q1 FY27)",
     "items": [
@@ -682,7 +682,7 @@
      },
      {
       "name": "IndiChem semiconductor-chemicals plant (Korea)",
-      "sub": "75%-owned joint venture; R&D centre already running, building ahead of schedule",
+      "sub": "75%-owned joint venture; R&D centre already running; plant inaugurated early (27 Oct 2026 release)",
       "right": "about ₹190–200cr (₹190cr put into the JV in FY26)",
       "status": "building",
       "projectId": "acutaas-chemicals-indichem-korea"
@@ -714,7 +714,7 @@
       "acutaas-chemicals-third-additive-m1",
       "acutaas-chemicals-indichem-korea-m1"
      ],
-     "sub": "Third additive: Q1 FY27 call says capex done by end-Q2 FY27 and trial runs very soon (Q4 FY26 call had said Q1 FY27). Sachin pilot plant also due, late because equipment arrived late"
+     "sub": "Third additive: Q1 FY27 call says capex done by end-Q2 FY27 and trial runs very soon (Q4 FY26 call had said Q1 FY27). Sachin pilot plant also due, late because equipment arrived late. Korean plant inaugurated early (27 Oct 2026 release)"
     },
     {
      "when": "Q1 FY28",
@@ -743,7 +743,7 @@
    "notes": [
     "Specialty chemicals: overall capacity largely unchanged; minor capex to switch plants from old commodity products to new ones, so there may be a gap while revenue moves over"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (Apr 2026) and sector note"
+   "source": "Q2 FY27 release (27 Oct 2026), Q1 FY27 call (Jul 2026), Q4 FY26 call (Apr 2026) and sector note"
   },
   {
    "company": "ADF Foods",
@@ -10882,8 +10882,8 @@
   },
   {
    "company": "Dynamic Cables",
-   "fingerprint": "4df987283a4c3a7c",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "f63e202a9cf61188",
+   "checkedOn": "2026-10-28",
    "lines": {
     "heading": "How full the plants are (Q1 FY27)",
     "items": [
@@ -10900,7 +10900,7 @@
     "items": [
      {
       "name": "Reengus greenfield cable plant",
-      "sub": "about ₹270–315cr of sales at full use, worked out from about ₹45cr at 6–7x asset turns; about a fifth more than today; first E-beam line",
+      "sub": "about ₹270–315cr of sales at full use, worked out from about ₹45cr at 6–7x asset turns; about a fifth more than today; first E-beam line; installation finished 26 Oct 2026",
       "right": "₹40–45cr (about ₹45cr per the Q1 FY27 call)",
       "status": "building",
       "projectId": "dynamic-cables-reengus"
@@ -10910,11 +10910,16 @@
    "timeline": [
     {
      "when": "Q2 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "dynamic-cables-reengus-m1"
      ],
-     "sub": "Q1 FY27 call: commissioning from September 2026, about 15 months late (approvals, late imported machinery). The company's deck printed September 2027; no start announced by 27 Sep"
+     "sub": "Missed: the Q1 FY27 call had promised commissioning from September 2026, about 15 months late already (approvals, late imported machinery). The company's deck printed September 2027"
+    },
+    {
+     "when": "Q3 FY27",
+     "tone": "next",
+     "text": "26 Oct 2026 filing: plant and machinery installed; production, when it starts, adds about 20% to installed capacity"
     },
     {
      "when": "Q4 FY27",
@@ -10931,9 +10936,10 @@
     }
    ],
    "notes": [
-    "After Reengus, smaller brownfield capex each year to keep up with growth; the next capex is not yet decided"
+    "After Reengus, smaller brownfield capex each year to keep up with growth; the next capex is not yet decided",
+    "Management changed this (28 Oct 2026 review): the September 2026 commissioning slipped; installation finished only on 26 Oct 2026"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note",
+   "source": "Filing of 26 Oct 2026, Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note",
    "recheck": {
     "changes": [
      "Reengus sales at full use: ₹240–300cr replaced by about ₹270–315cr, labelled worked out from the official call's ₹45cr capex at 6–7x turns (two new corrections)",
@@ -22407,14 +22413,14 @@
   },
   {
    "company": "M & B Engineer.",
-   "fingerprint": "3d8af34b829e5f37",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "af9976a67a49c03e",
+   "checkedOn": "2026-10-28",
    "lines": {
     "heading": "How full each plant is (Q1 FY27 call, with FY26)",
     "items": [
      {
       "name": "Sanand (steel buildings)",
-      "size": "72,000 t a year, plus 12,000 t of heavy structural steel",
+      "size": "72,000 t a year when measured (92,000 t since 26 Oct 2026), plus 12,000 t of heavy structural steel",
       "usedPct": 77.5,
       "usedLabel": "75–80% used: near full (management, Aug call)",
       "tight": true,
@@ -22435,7 +22441,7 @@
    },
    "adds": [
     {
-     "heading": "What the Sanand expansion adds (commissioning October 2026, Q3 FY27)",
+     "heading": "What the Sanand expansion added (commercial production from 26 Oct 2026, Q3 FY27)",
      "projectId": "m-and-b-engineer-sanand",
      "bars": [
       {
@@ -22443,13 +22449,13 @@
        "sub": "to 92,000 t a year",
        "base": 72000,
        "add": 20000,
-       "baseLabel": "today 72,000 t",
+       "baseLabel": "before 72,000 t",
        "addLabel": "+20,000 t",
        "right": "about +28%"
       }
      ],
      "notes": [
-      "Brownfield, at the export-certified plant; benefits from Q3–Q4 FY27, as Sanand is currently full"
+      "Brownfield, at the export-certified plant; Phase I started on 26 Oct 2026 (filing), taking total steel-building capacity up about 19% to 123,800 t (company)"
      ]
     },
     {
@@ -22496,7 +22502,7 @@
      {
       "name": "Sanand expansion",
       "right": "part of about ₹100cr of FY27 capex",
-      "status": "building",
+      "status": "started",
       "projectId": "m-and-b-engineer-sanand"
      },
      {
@@ -22523,11 +22529,11 @@
     },
     {
      "when": "Q3 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "m-and-b-engineer-sanand-m1"
      ],
-     "sub": "Slipped: the Q4 FY26 call (May 2026) had said Q2 FY27"
+     "sub": "Commercial production started 26 Oct 2026 (filing). It slipped once: the Q4 FY26 call (May 2026) had said Q2 FY27"
     },
     {
      "when": "Q1 FY28",
@@ -22559,7 +22565,7 @@
     "Output 72,000 t in FY26; 85,000–90,000 t targeted for FY27",
     "Proflex roofing: 21 lakh m² a year, from mobile units"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note",
+   "source": "Filing of 26 Oct 2026, Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note",
    "recheck": {
     "changes": [
      "Sanand bar redrawn from 100% ('full') to the official 75–80% (Aug: 'near full capacity. 75% to 80%'; May: about 75% is the peak for its product mix); correction to the stored utilisation added",
@@ -35162,8 +35168,8 @@
   },
   {
    "company": "Sterling Tools",
-   "fingerprint": "37dd366b16538639",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "59010a930cc3394b",
+   "checkedOn": "2026-10-28",
    "lines": {
     "heading": "How full the fastener plants are (Q1 FY27)",
     "items": [
@@ -35207,12 +35213,12 @@
       "name": "Onboard-charger and multi-function-unit lines",
       "sub": "Sterling E-Mobility lines for onboard chargers, DC-DC converters and multi-function units for electric buses and trucks",
       "right": "cost not given",
-      "status": "building",
+      "status": "started",
       "projectId": "sterling-tools-obc-mfu"
      },
      {
       "name": "High-voltage contactor plant, Bengaluru",
-      "sub": "automated Sterling Tech-Mobility plant for EV and storage contactors and relays, with Kunshan GLVAC technology; capacity for about ₹140cr of revenue",
+      "sub": "automated Sterling Tech-Mobility plant for EV and storage contactors and relays, with Kunshan GLVAC technology; capacity for about ₹140cr of revenue; commercial supplies began (Q2 FY27 release)",
       "right": "cost not given",
       "status": "ramping",
       "projectId": "sterling-tools-contactors"
@@ -35227,11 +35233,11 @@
     },
     {
      "when": "Q2 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "sterling-tools-obc-mfu-m1"
      ],
-     "sub": "Q1 FY27 call: on track, by the end of the quarter; customers then run road trials"
+     "sub": "Commissioned as planned (Q2 FY27 results release, 27 Oct 2026); customers then run road trials"
     },
     {
      "when": "Q3 FY27",
@@ -35257,9 +35263,10 @@
     }
    ],
    "notes": [
-    "EV arms: Sterling E-Mobility (controllers, about ₹300cr of capacity) and Sterling Tech-Mobility contactors (about ₹140cr), together about ₹440cr; about ₹60cr of revenue against that"
+    "EV arms: Sterling E-Mobility (controllers, about ₹300cr of capacity) and Sterling Tech-Mobility contactors (about ₹140cr), together about ₹440cr; about ₹60cr of revenue against that",
+    "FY27 capex plan raised to about ₹135cr across all businesses (Q2 FY27 results release, 27 Oct 2026)"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
+   "source": "Q2 FY27 results release (27 Oct 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Sterlite Technologies",
@@ -35727,8 +35734,8 @@
   },
   {
    "company": "Sudeep Pharma",
-   "fingerprint": "2a0a4a8349f7e99f",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "7496bdb809b6b0a2",
+   "checkedOn": "2026-10-28",
    "lines": {
     "heading": "How full each business's plants are (Q4 FY26 call, May 2026)",
     "items": [
@@ -35780,7 +35787,7 @@
     "items": [
      {
       "name": "New greenfield ingredients plant",
-      "sub": "51,200 t a year; approved for food and nutrition, FDA approval and customer audits pending",
+      "sub": "51,200 t a year at Nandesari; approved for food and nutrition, Gujarat FDA approval received 26 Oct 2026, customer audits pending",
       "total": 150,
       "right": "about ₹150cr; ₹80cr spent in FY26, about ₹10cr left to finish in FY27",
       "status": "building",
@@ -35808,7 +35815,7 @@
      "milestones": [
       "sudeep-pharma-greenfield-m1"
      ],
-     "sub": "Q1 FY27 call: FDA approval and customer approvals expected this quarter"
+     "sub": "Q1 FY27 call: FDA approval and customer approvals expected this quarter. The Gujarat FDA approval came on 26 Oct 2026 (filing), a few weeks late; commercial supplies expected in H2 FY27"
     },
     {
      "when": "Q3 FY27",
@@ -35841,7 +35848,7 @@
    "notes": [
     "Five plants: four in Gujarat, one in Ireland"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
+   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note; filing of 26 Oct 2026"
   },
   {
    "company": "Sumitomo Chemical India",
@@ -38538,8 +38545,8 @@
   },
   {
    "company": "Transformers & Rect",
-   "fingerprint": "89e1201c97227570",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "4042963d3f6d783f",
+   "checkedOn": "2026-10-28",
    "lines": {
     "heading": "How full each plant is (Q1 FY27; the Q2 call gave no plant figures)",
     "items": [
@@ -38589,7 +38596,7 @@
     }
    ],
    "money": {
-    "heading": "Backward integration: ₹900–1,000cr in all, so 80–85% of inputs are made in-house; from QIP money, leasing (about ₹500cr), internal accruals and debt if needed",
+    "heading": "Backward integration: ₹900–1,000cr in all (July call), so 80–85% of inputs are made in-house; the 27 Oct 2026 release puts the three Chiyada component plants alone at ₹1,250cr. Funded from QIP money, leasing (about ₹500cr), internal accruals and debt if needed",
     "items": [
      {
       "name": "Changodar plant expansion",
@@ -38602,21 +38609,21 @@
      {
       "name": "Copper conductor (CTC) plant",
       "sub": "8,000 t a year in phase 1, 24,000 t in phase 2; own use first",
-      "right": "part of ₹900–1,000cr",
+      "right": "part of ₹900–1,000cr (July call); the three Chiyada plants ₹1,250cr together (Oct release)",
       "status": "building",
       "projectId": "transformers-and-rect-ctc"
      },
      {
       "name": "Pressboard and insulation plant",
       "sub": "5,000 t a year in phase 1, 10,000 t in phase 2",
-      "right": "part of ₹900–1,000cr",
+      "right": "part of ₹900–1,000cr (July call); the three Chiyada plants ₹1,250cr together (Oct release)",
       "status": "building",
       "projectId": "transformers-and-rect-pressboard"
      },
      {
       "name": "RIP bushings plant",
       "sub": "3,000 a year in phase 1, 6,000 in phase 2; bushings are a big bottleneck today",
-      "right": "part of ₹900–1,000cr",
+      "right": "part of ₹900–1,000cr (July call); the three Chiyada plants ₹1,250cr together (Oct release)",
       "status": "building",
       "projectId": "transformers-and-rect-rip-bushings"
      },
@@ -38651,7 +38658,7 @@
       "transformers-and-rect-changodar-m1",
       "transformers-and-rect-pressboard-m1"
      ],
-     "sub": "Changodar commercial production around Diwali; Q1 FY27 call had said August 2026"
+     "sub": "Changodar commercial production around Diwali; Q1 FY27 call had said August 2026. Management changed this 27 Oct 2026: pressboard now with the other Chiyada plants in Q1 FY28"
     },
     {
      "when": "Q4 FY27",
@@ -38659,15 +38666,18 @@
      "milestones": [
       "transformers-and-rect-rip-bushings-m1"
      ],
-     "text": "Conductor plant making for own transformers"
+     "text": "Conductor plant making for own transformers",
+     "sub": "Management changed this 27 Oct 2026: bushings now with the other Chiyada plants in Q1 FY28"
     },
     {
      "when": "Q1 FY28",
      "tone": "next",
      "milestones": [
-      "transformers-and-rect-fabrication-m1"
+      "transformers-and-rect-fabrication-m1",
+      "transformers-and-rect-chiyada-m1"
      ],
-     "text": "Conductor sold outside too; backward integration adds 2–3 points of margin from FY28 and about ₹800–1,000cr of extra sales in phase 2, with 60–65% of output for own use"
+     "text": "Conductor sold outside too; backward integration adds 2–3 points of margin from FY28 and about ₹800–1,000cr of extra sales in phase 2, with 60–65% of output for own use",
+     "sub": "27 Oct 2026 release: bushings, pressboard and conductor plants at Chiyada start commercial operations this quarter (construction began December 2025), about ₹2,000cr of yearly revenue potential at full use, in a wholly owned subsidiary"
     },
     {
      "when": "After Changodar",
@@ -38680,7 +38690,7 @@
     "Three plants around Ahmedabad: Changodar, Moraiya and Odhav",
     "Odhav: an analyst read '100%' use off the Q1 presentation; management didn't confirm it, so no bar"
    ],
-   "source": "Q2 FY27 call (13 Oct 2026), Q1 FY27 call (Jul 2026), results release 13 Oct 2026 (NSE) and sector note",
+   "source": "Release of 27 Oct 2026 (NSE), Q2 FY27 call (13 Oct 2026), Q1 FY27 call (Jul 2026), results release 13 Oct 2026 (NSE) and sector note",
    "recheck": {
     "changes": [
      "Official Q2 FY27 transcript (filed 21 Oct) confirms 12,000 to 35,000 MVA at Changodar, the \"yes\" to +25,000, 75,000 MVA in all, ₹150cr, 9,500 MVA output, 66% growth, the 3,000 MTPA analyst figure with \"around 60% is captive\", Diwali commissioning, trials in Nov–Dec, Q4 own use and Q1 sales, 30% more space at Moraiya and the 90% ideal; Q1 figures (27%, 57%, 60–65% then 80–85%, 40,000/35,000/22,000 MVA, ₹500cr leasing) confirmed too",

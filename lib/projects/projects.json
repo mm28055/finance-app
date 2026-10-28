@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25",
+ "updated": "2026-10-28",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -1504,9 +1504,9 @@
    "name": "Onboard-charger and multi-function-unit lines",
    "what": "Sterling E-Mobility production lines for onboard chargers, DC-DC converters and multi-function units for electric buses and trucks",
    "expectedStart": "Q2 FY27",
-   "status": "building",
-   "source": "Q1 FY27 call (Aug 2026): commissioning on track for Q2 FY27",
-   "updatedOn": "2026-09-29"
+   "status": "started",
+   "source": "Q2 FY27 results release (27 Oct 2026): onboard-charger and multi-function-unit lines commissioned as planned; Q1 FY27 call (Aug 2026) had said Q2 FY27",
+   "updatedOn": "2026-10-28"
   },
   {
    "id": "sterling-tools-contactors",
@@ -1516,8 +1516,8 @@
    "what": "Automated Sterling Tech-Mobility plant making EV and storage contactors and relays with Kunshan GLVAC technology; serial production began July–August 2026",
    "adds": "capacity for about ₹140cr of revenue; break-even at about ₹70cr",
    "status": "ramping",
-   "source": "Q1 FY27 call (Aug 2026) and note",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 results release (27 Oct 2026): commercial supplies of high-voltage DC contactors and relays have begun; Q1 FY27 call (Aug 2026) and note",
+   "updatedOn": "2026-10-28",
    "capacityAdd": "About ₹140cr of revenue a year"
   },
   {
@@ -2265,9 +2265,15 @@
    "expectedStart": "Q2 FY27",
    "adds": "about ₹270–315cr of sales at full use, worked out from about ₹45cr of capex at 6–7x asset turns, ramping over 12–18 months",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026): commissioning from September 2026; the company's deck printed September 2027 and no start was announced by 27 Sep",
-   "updatedOn": "2026-10-23",
-   "capacityAdd": "about ₹270–315cr of sales at full use (worked out: 6–7x turns on about ₹45cr), about a fifth more than today"
+   "source": "Filing 26 Oct 2026: plant and machinery installed at Reengus; production, when it starts, adds about 20% to installed capacity. Q1 FY27 call (Jul 2026) had promised commissioning from September 2026",
+   "updatedOn": "2026-10-28",
+   "capacityAdd": "about ₹270–315cr of sales at full use (worked out: 6–7x turns on about ₹45cr), about a fifth more than today",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "Commissioning promised for September 2026 (Q2 FY27) slipped again: installation finished only on 26 Oct 2026 and production had not started"
+    }
+   ]
   },
   {
    "id": "paramount-communications-narmadapuram",
@@ -4141,9 +4147,9 @@
    "cost": "Part of about ₹100cr of FY27 capex",
    "expectedStart": "Q3 FY27",
    "adds": "Benefits from Q3–Q4 FY27; Sanand is currently full",
-   "status": "building",
-   "source": "Q1 FY27 call (Aug 2026); slipped from Q2 FY27 (May call) to October 2026",
-   "updatedOn": "2026-09-29",
+   "status": "started",
+   "source": "Filing 26 Oct 2026: commercial production started under Phase I; Sanand now 92,000 t, total steel-building capacity up about 19% to 123,800 t. Q1 FY27 call (Aug 2026) had said October 2026, slipped from Q2 FY27 (May call)",
+   "updatedOn": "2026-10-28",
    "capacityAdd": "+20,000 t a year: Sanand from 72,000 to 92,000 t (+28%)"
   },
   {
@@ -5716,13 +5722,17 @@
    "expectedStart": "Q2 FY27",
    "adds": "part of the 2–3 points of margin expected from backward integration from FY28",
    "status": "building",
-   "source": "Q2 FY27 call (13 Oct 2026); Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-10-23",
+   "source": "Release of 27 Oct 2026 (NSE); Q2 FY27 call (13 Oct 2026); Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-10-28",
    "capacityAdd": "New: 8,000 t a year of copper conductor in phase 1, 24,000 t in phase 2",
    "revisions": [
     {
      "on": "2026-10-13",
      "text": "Q2 FY27 call: commissioning slipped to around Diwali (Q3 FY27), trial runs in Nov–Dec, commercial output in Q4 FY27 and outside sales from Q1 FY28; an analyst put the size at 3,000 t a year (planned 8,000 t in phase 1) and management said about 60% is for its own use"
+    },
+    {
+     "on": "2026-10-28",
+     "text": "27 Oct 2026 release: the bushings (OIP, RIP and RIF up to 800 kV), pressboard-and-insulation and CTC plants at Chiyada will cost ₹1,250cr together (the July call put all backward integration, with fabrication, at ₹900–1,000cr), sit in a wholly owned subsidiary, began construction in December 2025 and start commercial operations in Q1 FY28, with about ₹2,000cr of yearly revenue potential at full use"
     }
    ]
   },
@@ -5735,9 +5745,15 @@
    "cost": "part of ₹900–1,000cr backward integration",
    "expectedStart": "Q3 FY27",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "New: 5,000 t a year of pressboard and insulation in phase 1, 10,000 t in phase 2"
+   "source": "Release of 27 Oct 2026 (NSE); Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-10-28",
+   "capacityAdd": "New: 5,000 t a year of pressboard and insulation in phase 1, 10,000 t in phase 2",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "27 Oct 2026 release: the bushings (OIP, RIP and RIF up to 800 kV), pressboard-and-insulation and CTC plants at Chiyada will cost ₹1,250cr together (the July call put all backward integration, with fabrication, at ₹900–1,000cr), sit in a wholly owned subsidiary, began construction in December 2025 and start commercial operations in Q1 FY28, with about ₹2,000cr of yearly revenue potential at full use"
+    }
+   ]
   },
   {
    "id": "transformers-and-rect-rip-bushings",
@@ -5748,9 +5764,15 @@
    "cost": "part of ₹900–1,000cr backward integration",
    "expectedStart": "Q4 FY27",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "New: 3,000 RIP bushings a year in phase 1, 6,000 in phase 2"
+   "source": "Release of 27 Oct 2026 (NSE); Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-10-28",
+   "capacityAdd": "New: 3,000 RIP bushings a year in phase 1, 6,000 in phase 2",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "27 Oct 2026 release: the bushings (OIP, RIP and RIF up to 800 kV), pressboard-and-insulation and CTC plants at Chiyada will cost ₹1,250cr together (the July call put all backward integration, with fabrication, at ₹900–1,000cr), sit in a wholly owned subsidiary, began construction in December 2025 and start commercial operations in Q1 FY28, with about ₹2,000cr of yearly revenue potential at full use"
+    }
+   ]
   },
   {
    "id": "transformers-and-rect-fabrication",
@@ -10276,13 +10298,13 @@
    "company": "Acutaas Chemicals",
    "sector": "Pharma API",
    "name": "IndiChem semiconductor-chemicals plant (Korea)",
-   "what": "A plant for semiconductor chemicals in South Korea through the 75%-owned IndiChem joint venture; R&D centre already running, construction ahead of schedule",
+   "what": "A plant for semiconductor chemicals in South Korea through the 75%-owned IndiChem joint venture; R&D centre already running; plant inaugurated early, in October 2026",
    "cost": "about ₹190–200cr",
    "expectedStart": "Q1 FY28",
    "adds": "about ₹200cr of revenue in 3–4 years (management)",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 release (27 Oct 2026): plant inaugurated ahead of schedule; Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-10-28"
   },
   {
    "id": "acutaas-chemicals-rnd-land",
@@ -11083,13 +11105,13 @@
    "company": "Sudeep Pharma",
    "sector": "Pharma Others",
    "name": "New greenfield ingredients plant",
-   "what": "51,200-tonne plant for phosphates, bisglycinates, gluconates and citrates; approved for food and nutrition, FDA approval and customer audits pending",
+   "what": "51,200-tonne plant at Nandesari for phosphates, bisglycinates, gluconates and citrates; approved for food and nutrition, Gujarat FDA approval received 26 Oct 2026, customer audits under way",
    "cost": "about ₹150cr",
    "expectedStart": "Q3 FY27",
    "adds": "about a third used in FY28; business can reach ₹1,000–1,200cr of revenue without more capex once it fills",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026)",
-   "updatedOn": "2026-09-29",
+   "source": "Filing 26 Oct 2026: Gujarat FDA approval authorising operations; commercial supplies expected in H2 FY27. Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-10-28",
    "capacityAdd": "+51,200 t a year (about +70% on roughly 72,000 t)"
   },
   {

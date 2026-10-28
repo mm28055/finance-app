@@ -2296,7 +2296,11 @@
    "due": "Q2 FY27",
    "ifMet": "Meets the condition to stop waiting",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Consolidated Q2 profit ₹3.0cr against ₹13.6cr standalone, so the EV arms lost about ₹10.6cr",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "sterling-tools-q2fy27-2",
@@ -2305,7 +2309,11 @@
    "text": "Standalone fastener margin stays above 15% as dearer steel arrives",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Standalone Q2 EBITDA margin 12.1% (H1 13.7%) on dearer inputs; pass-through comes with a lag",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "sterling-tools-q4fy27-1",
@@ -2314,7 +2322,13 @@
    "text": "The ₹80cr fastener capex completed on time in FY27",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "FY27 capex plan raised to about ₹135cr across businesses (Q2 FY27 results release)"
+    }
+   ]
   },
   {
    "id": "sterling-tools-q4fy27-2",
@@ -15760,7 +15774,13 @@
    "target": 25,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "raised the FY27 revenue growth guide to about 30% after Q2 revenue rose 43% (27 Oct 2026 release)"
+    }
+   ]
   },
   {
    "id": "acutaas-chemicals-q2fy27-1",
@@ -15787,7 +15807,13 @@
    "text": "FY27 margin similar to FY26's 35.9%, as guided",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "raised the FY27 EBITDA margin guide to 38–40% (27 Oct 2026 release)"
+    }
+   ]
   },
   {
    "id": "aarti-drugs-q2fy27-1",
@@ -23850,8 +23876,12 @@
    "text": "Charger and multi-function-unit lines commissioned",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "sterling-tools-obc-mfu"
+   "status": "met",
+   "project": "sterling-tools-obc-mfu",
+   "actual": "Lines commissioned as planned (Q2 FY27 results release, 27 Oct 2026)",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays wait; EV losses still about ₹10cr a quarter"
   },
   {
    "id": "sterling-tools-obc-mfu-m2",
@@ -24340,8 +24370,18 @@
    "text": "Reengus plant commissioned",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "dynamic-cables-reengus"
+   "status": "missed",
+   "project": "dynamic-cables-reengus",
+   "actual": "Installation finished 26 Oct 2026; production not yet started",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays own; the plant is late again but nearly ready",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "installation complete on 26 Oct 2026 (filing); production start now tracked by the Q4 FY27 checkpoint on Reengus adding revenue"
+    }
+   ]
   },
   {
    "id": "dynamic-cables-reengus-m2",
@@ -25740,8 +25780,12 @@
    "text": "Sanand expansion commissioned (October 2026)",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "m-and-b-engineer-sanand"
+   "status": "met",
+   "project": "m-and-b-engineer-sanand",
+   "actual": "Commercial production started 26 Oct 2026 (filing); Sanand 92,000 t a year",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "On time against the August promise"
   },
   {
    "id": "m-and-b-engineer-heavy-line-m1",
@@ -26815,7 +26859,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "transformers-and-rect-pressboard"
+   "project": "transformers-and-rect-pressboard",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "27 Oct 2026 release: the three Chiyada component plants start commercial operations in Q1 FY28"
+    }
+   ]
   },
   {
    "id": "transformers-and-rect-rip-bushings-m1",
@@ -26825,7 +26875,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "transformers-and-rect-rip-bushings"
+   "project": "transformers-and-rect-rip-bushings",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "27 Oct 2026 release: the three Chiyada component plants start commercial operations in Q1 FY28"
+    }
+   ]
   },
   {
    "id": "transformers-and-rect-fabrication-m1",
@@ -29884,8 +29940,12 @@
    "text": "IndiChem plant capex completed",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "acutaas-chemicals-indichem-korea"
+   "status": "met",
+   "project": "acutaas-chemicals-indichem-korea",
+   "actual": "Korean semiconductor-chemicals plant inaugurated early (27 Oct 2026 release)",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "acutaas-chemicals-indichem-korea-m2",
@@ -30324,8 +30384,12 @@
    "text": "FDA approval for the new plant",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "sudeep-pharma-greenfield"
+   "status": "met",
+   "project": "sudeep-pharma-greenfield",
+   "actual": "Gujarat FDA approval received 26 Oct 2026, a few weeks after Q2",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Supplies due in H2 FY27"
   },
   {
    "id": "sudeep-pharma-greenfield-m2",
@@ -36857,6 +36921,16 @@
    "due": "Q4 FY27",
    "createdOn": "2026-10-28",
    "status": "pending"
+  },
+  {
+   "id": "transformers-and-rect-chiyada-m1",
+   "company": "Transformers & Rect",
+   "sector": "Electrical Transformers",
+   "text": "Chiyada component plants (bushings, pressboard, conductor) in commercial operation, as the 27 Oct 2026 release now says",
+   "due": "Q1 FY28",
+   "createdOn": "2026-10-28",
+   "status": "pending",
+   "project": "transformers-and-rect-pressboard"
   }
  ]
 }
