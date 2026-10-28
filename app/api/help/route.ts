@@ -51,6 +51,7 @@ const GUIDE: { title: string; items: [string, string][] }[] = [
             ['Name colour', 'Blue: last results call guided 20%+ revenue growth. Grey: below 20%. Black: no number.'],
             ['Markers', '"filings" and "news" open them in the Filings panel; "Results Oct 14" opens the calendar.'],
             ['Figures', 'Price, % below the 52-week high, market cap, P/E, P/B, P/S, ROCE, and Gemini Pro’s score of the latest call.'],
+            ['Hide (eye)', 'Hides a company from the dashboard, calendar, filings, scorecard and shifts. It is still tracked every night. A company you hold always shows. "Show hidden" at the bottom of the sidebar brings them all back.'],
         ],
     },
     {

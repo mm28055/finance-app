@@ -2,6 +2,7 @@ import { CHECKPOINTS } from "@/lib/checkpoints";
 import { allSectorOverviews, companyCallInfo } from "@/lib/sector-overviews";
 import { ScorecardBoard } from "@/components/ScorecardBoard";
 import { prisma } from "@/lib/prisma";
+import { shownFilter } from "@/lib/hidden";
 
 // Read on each visit, so the portfolio filter follows changes to the portfolio.
 export const dynamic = "force-dynamic";
@@ -14,7 +15,8 @@ export const metadata = { title: "Scorecard · Manish Dashboard" };
 export default async function Scorecard() {
     const calls = companyCallInfo(allSectorOverviews());
     const portfolio = new Set((await prisma.company.findMany({ where: { inPortfolio: true }, select: { name: true } })).map(c => c.name));
-    const rows = CHECKPOINTS.map(c => ({ ...c, call: calls.get(c.company.trim().toLowerCase())?.call, inPortfolio: portfolio.has(c.company) }));
+    const shown = await shownFilter();
+    const rows = CHECKPOINTS.filter(c => shown(c.company)).map(c => ({ ...c, call: calls.get(c.company.trim().toLowerCase())?.call, inPortfolio: portfolio.has(c.company) }));
     return (
         <main className="min-h-screen bg-[#FAFBFC] p-6">
             <header className="flex justify-between items-center mb-6 pb-4 border-b border-gray-200">

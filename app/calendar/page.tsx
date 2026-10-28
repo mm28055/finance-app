@@ -2,6 +2,7 @@ import { getAllEvents } from "@/lib/events/server";
 import { allSectorOverviews, companyCallInfo } from "@/lib/sector-overviews";
 import { EventsCalendar } from "@/components/EventsCalendar";
 import { prisma } from "@/lib/prisma";
+import { shownFilter } from "@/lib/hidden";
 
 // Read on each visit, so "today" and the portfolio filter are current.
 export const dynamic = "force-dynamic";
@@ -14,7 +15,8 @@ export default async function CalendarPage() {
     const { updated, events } = getAllEvents();
     const calls = companyCallInfo(allSectorOverviews());
     const portfolio = new Set((await prisma.company.findMany({ where: { inPortfolio: true }, select: { name: true } })).map(c => c.name));
-    const rows = events.map(e => ({ ...e, call: calls.get(e.company.trim().toLowerCase())?.call, inPortfolio: portfolio.has(e.company) }));
+    const shown = await shownFilter();
+    const rows = events.filter(e => shown(e.company)).map(e => ({ ...e, call: calls.get(e.company.trim().toLowerCase())?.call, inPortfolio: portfolio.has(e.company) }));
     const today = new Date(Date.now() + 5.5 * 3600000).toISOString().slice(0, 10);
     return (
         <main className="min-h-screen bg-[#FAFBFC] p-6">

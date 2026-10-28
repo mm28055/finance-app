@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { ShieldAlert } from 'lucide-react';
 import { useAdmin } from '@/context/AdminContext';
 import { GeneralNotesList } from './GeneralNotesList';
+import { ShowHiddenSwitch } from './ShowHiddenSwitch';
 
 interface SidebarProps {
     isOpen?: boolean;
@@ -57,6 +58,7 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
                     clicking when on signs out. Anyone sees the toggle, but only
                     valid credentials unlock edit mode. */}
                 <div className="p-4 border-t border-gray-100 bg-gray-50/50">
+                    <ShowHiddenSwitch />
                     <div className="flex items-center justify-between mb-3">
                         <span className="text-[10px] font-medium text-gray-500 flex items-center gap-1.5">
                             <ShieldAlert className="w-3 h-3" />

@@ -103,6 +103,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             sector: true,
             aliases: true,
             isSme: true,
+            hidden: true,
             colorTag: true,
             conviction: true,
             marketCap: true,
@@ -281,6 +282,7 @@ export async function getDashboardDataLight(): Promise<SectorData[]> {
             // weaker number the row follows it down on its own.
             guidance: latestA?.guidanceBasis ? guidanceOf(latestA, latestA.quarter.name) : undefined,
             isSme: co.isSme,
+            hidden: co.hidden || undefined,
             // A renamed company is shown by its current name (the last one recorded from NSE's
             // name changes); the stored name stays as the key the sector notes use.
             displayName: co.aliases ? co.aliases.split(',').map(x => x.trim()).filter(Boolean).pop() : undefined,

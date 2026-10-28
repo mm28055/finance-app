@@ -38,9 +38,14 @@ function takeaways(summary: string | null, n = 4): string[] {
     });
 }
 
-/** `calls`: 'all' = every company's calls of the last two months; 'portfolio' = only holdings', six months (the panel loads the rest in the background). */
-export async function filingsFeed(opts: { calls?: 'all' | 'portfolio' } = {}) {
+/**
+ * `calls`: 'all' = every company's calls of the last two months; 'portfolio' = only holdings', six months (the panel loads the rest in the background).
+ * `shown`: leaves out companies it returns false for (the hidden ones, lib/hidden).
+ */
+export async function filingsFeed(opts: { calls?: 'all' | 'portfolio'; shown?: (company: string) => boolean } = {}) {
     const callScope = opts.calls ?? 'all';
+    const shown = opts.shown ?? (() => true);
+    const keep = <T extends { company: string }>(rows: T[]) => rows.filter(r => shown(r.company));
     const { to, filings } = getAllFilings();
     const calls = companyCallInfo(allSectorOverviews());
     const portfolio = new Set((await prisma.company.findMany({ where: { inPortfolio: true }, select: { name: true } })).map(c => c.name));
@@ -121,5 +126,5 @@ export async function filingsFeed(opts: { calls?: 'all' | 'portfolio' } = {}) {
             };
         });
 
-    return { to, filings: filings.map(withCall), news, results, calls: callsList, callChanges, holdings };
+    return { to, filings: keep(filings).map(withCall), news: keep(news), results: keep(results), calls: keep(callsList), callChanges: keep(callChanges), holdings };
 }

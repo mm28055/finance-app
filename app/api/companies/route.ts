@@ -96,6 +96,8 @@ export async function PUT(req: NextRequest) {
             notes: body.notes,
             conviction: body.conviction ?? undefined,
             inPortfolio: typeof body.inPortfolio === 'boolean' ? body.inPortfolio : undefined,
+            // Hidden from the everyday view (lib/hidden); tracking carries on.
+            hidden: typeof body.hidden === 'boolean' ? body.hidden : undefined,
             // null clears the target; undefined (field absent) leaves it alone.
             targetPrice: body.targetPrice === undefined ? undefined : body.targetPrice
         }

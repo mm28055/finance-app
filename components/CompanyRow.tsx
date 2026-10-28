@@ -3,8 +3,9 @@ import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { FinancialMatrix } from './FinancialMatrix';
 import { AnalysisPanel } from './AnalysisPanel';
 import { FinancialTrendChart } from './FinancialTrendChart';
-import { Trash2, ArrowRight, FileText, Briefcase } from 'lucide-react';
+import { Trash2, ArrowRight, FileText, Briefcase, EyeOff } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import { toast } from 'sonner';
 import type { EnrichedCompany } from './SectorList';
 import { useAdmin } from '@/context/AdminContext';
 import { ANALYSIS_WINDOW } from '@/lib/retention';
@@ -89,6 +90,7 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
         (company.conviction as ConvictionLevel) || null
     );
     const [inPortfolio, setInPortfolio] = useState(Boolean(company.inPortfolio));
+    const [isHidden, setIsHidden] = useState(Boolean(company.hidden));
     const router = useRouter();
 
     // On-demand company detail.
@@ -299,6 +301,27 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
             .catch((err) => { console.error(err); setInPortfolio(!next); });
     };
 
+    // Hide from the everyday view (lib/hidden), or bring back. Tracking carries on either way.
+    const handleHiddenClick = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        const next = !isHidden;
+        setIsHidden(next);
+        fetch('/api/companies', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: company.id, hidden: next })
+        })
+            .then((res) => {
+                if (!res.ok) throw new Error(`Save failed (${res.status})`);
+                toast.success(next
+                    ? `${company.displayName || company.name} hidden${inPortfolio ? ' (still shown while you hold it)' : ''}`
+                    : `${company.displayName || company.name} back in the everyday view`);
+                // The lists are filtered on the server; refetch so the row leaves (or stays, in full view).
+                router.refresh();
+            })
+            .catch((err) => { console.error(err); setIsHidden(!next); toast.error('Could not save — are you signed in?'); });
+    };
+
     const handleDelete = async (e: React.MouseEvent) => {
         e.stopPropagation();
         if (!confirm(`Delete "${company.name}"?`)) return;
@@ -485,6 +508,19 @@ ${company.shiftChip.segment}: ${company.shiftChip.from}% of revenue now, about $
                                 className={`flex-shrink-0 ${isAdminMode ? '' : 'cursor-default'}`}
                             >
                                 <Briefcase className={`w-3 h-3 ${inPortfolio ? 'text-[#4A7AAF]' : 'text-gray-200 hover:text-gray-400'}`} />
+                            </button>
+                        )}
+                        {/* Hide marker — shown on hidden companies (seen only with "Show hidden" on), clickable in edit mode */}
+                        {(isHidden || isAdminMode) && (
+                            <button
+                                onClick={handleHiddenClick}
+                                disabled={!isAdminMode}
+                                title={isHidden
+                                    ? `Hidden from the everyday view${isAdminMode ? ' — click to bring back' : ''}`
+                                    : 'Click to hide from the everyday view (still tracked)'}
+                                className={`flex-shrink-0 ${isAdminMode ? '' : 'cursor-default'}`}
+                            >
+                                <EyeOff className={`w-3 h-3 ${isHidden ? 'text-rose-400' : 'text-gray-200 hover:text-gray-400'}`} />
                             </button>
                         )}
                     </div>

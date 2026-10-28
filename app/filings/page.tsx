@@ -1,5 +1,6 @@
 import { filingsFeed } from "@/lib/filings/feed";
 import { FilingsTabs } from "@/components/FilingsTabs";
+import { shownFilter } from "@/lib/hidden";
 
 // Read on each visit, so the portfolio filter follows changes to the portfolio.
 export const dynamic = "force-dynamic";
@@ -9,7 +10,7 @@ export const metadata = { title: "Filings · Manish Dashboard" };
 // All companies' material filings in one list, newest first, defaulting to the ones that can
 // move the share price (marked nightly by the filings job).
 export default async function FilingsPage() {
-    const { to, filings: rows, news, results, calls, callChanges, holdings } = await filingsFeed();
+    const { to, filings: rows, news, results, calls, callChanges, holdings } = await filingsFeed({ shown: await shownFilter() });
     return (
         <main className="min-h-screen bg-[#FAFBFC] p-6">
             <header className="flex justify-between items-center mb-6 pb-4 border-b border-gray-200">

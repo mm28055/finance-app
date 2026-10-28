@@ -136,6 +136,8 @@ export interface EnrichedCompany {
     geminiScoreDelta?: number;
     /** Listed on NSE Emerge / BSE SME. Set by `scripts/mark-sme.ts`. */
     isSme?: boolean;
+    /** Hidden from the everyday view (lib/hidden); only listed while "Show hidden" is on. */
+    hidden?: boolean;
     /** Current name after a rename (the stored `name` stays, as the notes' key). */
     displayName?: string;
     /** Held in the portfolio, so also listed under ZPortfolio. */

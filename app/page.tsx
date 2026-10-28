@@ -8,17 +8,26 @@ import { noteIndex } from "@/lib/sector-overviews";
 import { ScrollText } from "lucide-react";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
+import { showingHidden, isHiddenCo } from "@/lib/hidden";
 
 export const dynamic = 'force-dynamic';
 
 export default async function Home() {
   // "Needs a session" is only for Manish: visitors who are not signed in get no list at all.
   const session = await getServerSession(authOptions);
-  const [sectorList, stats, todos] = await Promise.all([
+  const [allSectors, stats, todos, showHidden] = await Promise.all([
     getDashboardDataLight(),
     getTranscriptStats(),
-    session ? sessionTodos() : Promise.resolve([])
+    session ? sessionTodos() : Promise.resolve([]),
+    showingHidden()
   ]);
+  // Hidden companies (lib/hidden) leave the list unless "Show hidden" is on.
+  const sectorList = showHidden ? allSectors : allSectors
+    .map(s => {
+      const companies = s.companies.filter(c => !isHiddenCo(c));
+      return { ...s, companies, stats: { ...s.stats, companies: companies.length } };
+    })
+    .filter(s => s.companies.length > 0);
 
   return (
     <main className="min-h-screen bg-[#FAFBFC] p-6 pt-0 max-md:p-3">

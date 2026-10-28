@@ -1,12 +1,13 @@
 import { shiftsFeed } from "@/lib/business-shift/feed";
 import { ShiftsList } from "@/components/ShiftsList";
+import { shownFilter } from "@/lib/hidden";
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Shifts · Manish Dashboard" };
 
 // Companies whose business will look different in three years (lib/business-shift).
 export default async function ShiftsPage() {
-    const shifts = await shiftsFeed();
+    const shifts = await shiftsFeed(await shownFilter());
     return (
         <main className="min-h-screen bg-[#FAFBFC] p-6 max-md:p-3">
             <header className="flex justify-between items-center mb-6 pb-4 border-b border-gray-200">

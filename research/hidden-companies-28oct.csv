@@ -1,0 +1,95 @@
+company,sector,sme,market_cap_cr,call,reason
+"Aartech Solonics","Aerospace defence",no,144,avoid,under 1000 cr
+"Apsis Aerocom","Aerospace defence",yes,647,pass,SME
+"Digilogic Systems","Aerospace defence",yes,544,pass,SME
+"Dharmaj Crop Guard","Agrochemical & Fertilizers",no,847,follow,under 1000 cr
+"Poojaa Precision Engg","Auto Related",yes,1779,pass,SME
+"Precision Camshafts","Auto Related",no,924,pass,under 1000 cr
+"Remsons Industries","Auto Related",no,305,wait,under 1000 cr
+"Sterling Tools","Auto Related",no,764,wait,under 1000 cr
+"JD Cables","Cables",yes,390,avoid,SME
+"Chembond Chemicals","Chemicals",no,545,wait,under 1000 cr
+"Fairchem Organics","Chemicals",no,869,pass,under 1000 cr
+"Gem Aromatics","Chemicals",no,721,pass,under 1000 cr
+"Sacheerome","Chemicals",yes,843,wait,SME
+"Krystal Integrated Services","Commercial Services",no,805,wait,under 1000 cr
+"E to E Transportation","Construction",yes,484,pass,SME
+"Solarworld Energy So","Construction",no,964,pass,under 1000 cr
+"Om Power Transmission","Construction - Power",no,443,pass,under 1000 cr
+"Orient Bell","Consumer Durables",no,542,wait,under 1000 cr
+"Rushil Decor","Consumer Durables",no,436,pass,under 1000 cr
+"Monolithisch India","Elect and Refrac",yes,2755,pass,SME
+"Anawil Wire","Electrical Equipment",yes,1059,pass,SME
+"KP Green Engg.","Electrical Equipment",yes,1310,pass,SME
+"Parth Electricals","Electrical Equipment",yes,658,pass,SME
+"Prostarm Info Systems","Electrical Equipment",no,699,pass,under 1000 cr
+"RMC Switchgears","Electrical Equipment",no,203,avoid,under 1000 cr
+"Salzer Electronics","Electrical Equipment",no,841,pass,under 1000 cr
+"Supreme Power","Electrical Transformers",yes,692,follow,SME
+"Aimtron","EMS & Electronics",yes,3464,wait,SME
+"Maxvolt Energy Indus","EMS & Electronics",yes,381,avoid,SME
+"Sahasra Electronic","EMS & Electronics",yes,1054,avoid,SME
+"Vinyas Innovativ","EMS & Electronics",yes,1808,wait,SME
+"Manba Finance","Finance",no,714,pass,under 1000 cr
+"Apex Frozen Foods","Food Products",no,946,pass,under 1000 cr
+"Freshara Agro","Food Products",yes,824,wait,SME
+"Ganesh Consumer Prod","Food Products",no,659,wait,under 1000 cr
+"Regaal Resources","Food Products",no,910,wait,under 1000 cr
+"Neetu Yoshi","Forging",yes,822,follow,SME
+"Synergy Green","Forging",no,858,pass,under 1000 cr
+"Control Print","Hardware",no,945,wait,under 1000 cr
+"TVS Electronics","Hardware",no,685,avoid,under 1000 cr
+"Anondita Medicare","Health Products",yes,1928,pass,SME
+"Laxmi Denta","Health Products",no,994,follow,under 1000 cr
+"OSEL Devices","Health Products",yes,599,pass,SME
+"Prevest Denpro","Health Products",yes,455,own,SME
+"Vasa Denticity","Health Products",yes,739,pass,SME
+"Gaudium IVF","Hospitals",no,719,avoid,under 1000 cr
+"Royal Orchid Hotels","Hotels and Travels",no,750,wait,under 1000 cr
+"Concord Control","Industrial - Railway",yes,2435,wait,SME
+"Cosmic CRF","Industrial - Railway",yes,794,wait,SME
+"Mamata Machinery","Industrial Machinery",no,928,wait,under 1000 cr
+"Airfloa Rail Techno.","Industrials",yes,1184,avoid,SME
+"Fabtech Technologies","Industrials",no,564,wait,under 1000 cr
+"Hy-Tech Engineers","Industrials",no,732,wait,under 1000 cr
+"Patil Automation","Industrials",yes,729,wait,SME
+"Shree Refrigrations","Industrials",yes,1200,wait,SME
+"United Heat Transfer","Industrials",yes,395,avoid,SME
+"Vilas Transcore","Industrials",yes,883,pass,SME
+"Scoda Tubes","Iron and Steel",no,649,wait,under 1000 cr
+"Blue Water Logistics","Logistics",yes,589,pass,SME
+"Glottis","Logistics",no,500,pass,under 1000 cr
+"Basilic Fly Studio","Media and Entertainment",yes,455,pass,SME
+"Simca Advertising","Media and Entertainment",yes,592,pass,SME
+"20 Microns","Mining & Metals Recycle",no,666,own,under 1000 cr
+"Ganesh Benzoplast","Oil",no,653,wait,under 1000 cr
+"South West Pinnacle","Oil",no,536,follow,under 1000 cr
+"Ester Industries","Packaging",no,919,pass,under 1000 cr
+"Kanpur Plastipack","Packaging",no,592,wait,under 1000 cr
+"Pyramid Technoplast","Packaging",no,546,wait,under 1000 cr
+"Shree Ganesh Remed.","Pharma API",no,850,avoid,under 1000 cr
+"Accent Microcell","Pharma Others",yes,1537,follow,SME
+"Amanta Healthcare","Pharma Others",no,612,wait,under 1000 cr
+"Hexagon Nutrition","Pharma Others",no,710,follow,under 1000 cr
+"Influx Healthtech","Pharma Others",yes,588,wait,SME
+"KRM Ayurveda","Pharma Others",yes,489,wait,SME
+"Sigachi Industries","Pharma Others",no,1000,pass,under 1000 cr
+"Macfos","Platform Cos",yes,1102,wait,SME
+"Arihant Superstruct.","Realty",no,903,pass,under 1000 cr
+"Eldeco Housing & Ind","Realty",no,783,wait,under 1000 cr
+"Suraj Estate","Realty",no,845,pass,under 1000 cr
+"Patel Retail","Retail",no,791,wait,under 1000 cr
+"Safe Enterprises Retail Fixtures","Retail",yes,1103,wait,SME
+"Sastasundar Ventures","Retail",no,876,avoid,under 1000 cr
+"GRP","Rubber",no,933,pass,under 1000 cr
+"Excelsoft Technologies","Software",no,867,wait,under 1000 cr
+"Onward Technologies","Software",no,901,follow,under 1000 cr
+"TAC Security (Tac Infosec)","Software",yes,778,avoid,SME
+"Unicomm. eSolutions","Software",no,919,wait,under 1000 cr
+"Alpex Solar","Solar PV Cells EPC",yes,1777,wait,SME
+"Australian Prem","Solar PV Cells EPC",yes,422,wait,SME
+"Oriana Power","Solar PV Cells EPC",yes,2451,follow,SME
+"Solex Energy","Solar PV Cells EPC",no,575,wait,under 1000 cr
+"Antony Waste Hand","Utilities",no,812,follow,under 1000 cr
+"Indo Farm","Vehicles",no,563,pass,under 1000 cr
+"Zelio E-Mobility","Vehicles",yes,2157,wait,SME

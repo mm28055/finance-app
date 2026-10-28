@@ -31,6 +31,9 @@ model Company {
   profileUpdatedAt DateTime? @db.Timestamptz(6)
   aliases         String?
   isVisible       Boolean      @default(true)
+  // Hidden from the everyday view (dashboard, calendar, feeds) but still tracked in full;
+  // the "Show hidden" switch brings these back. isVisible=false, by contrast, stops tracking.
+  hidden          Boolean      @default(false)
   status          String       @default("ACTIVE")
   colorTag        String?      // Stores the custom color theme key (e.g. 'purple', 'emerald')
   notes           String?
