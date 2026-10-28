@@ -231,7 +231,7 @@ const profiles: BusinessProfile[] = [
             { name: 'Power transformers and reactors', text: "Up to 1,000 MVA and 1,200 kV; with reactors, 80% of the order book." },
             { name: 'Distribution transformers', text: "About 10% of the order book." },
             { name: 'Furnace, rectifier and specialty transformers', text: "For steel furnaces, smelters, electrolysis and mobile substations; about 5% of the order book." },
-            { name: 'Backward integration', text: "₹900–1,000cr being spent to make its own copper conductor, pressboard, bushings, tanks and CRGO processing." },
+            { name: 'Backward integration', text: "₹1,250cr for three plants at Chiyada making copper conductor, pressboard and bushings up to 800 kV (27 Oct 2026; ₹900–1,000cr in July), due Q1 FY28 with about ₹2,000cr of sales potential; it also processes its own CRGO and builds its own tanks." },
         ],
         revenueText: "The ₹6,630cr order book is **80% power transformers and reactors**. By customer (FY26 order book, India Ratings): EPC contractors 32%, state utilities 31%, central utilities 13%, exports 9%, industry 8% and renewables 5%. Management expects exports to stay at 10–15% of revenue. It does not publish a revenue split.",
         mixes: [
