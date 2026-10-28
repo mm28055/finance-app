@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -7032,7 +7032,8 @@
    "status": "missed",
    "actual": "9.1%",
    "resolvedOn": "2026-10-26",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow; Q2 is the off-season and the margin rose 0.4 points on a year, but the two-quarter 11% test before buying is not met"
   },
   {
    "id": "crompt-greaves-cons-q3fy27-1",
@@ -7054,7 +7055,11 @@
    "text": "Fan share holding after the Q1 stock-outs",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Fans grew double digits in Q2 despite 17–18% price rises in nine months and BLDC fans grew 40% in general trade; no share figure given",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "crompt-greaves-cons-q3fy27-2",
@@ -7063,7 +7068,11 @@
    "text": "Rooftop-solar installations turning into revenue in Q2–Q3",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "About 20,000 of the 38,000 Andhra rooftop systems installed and billed over Q1–Q2; new businesses about 10% of Q2 revenue",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "v-guard-industri-q2fy27-1",
@@ -9300,7 +9309,11 @@
    "target": 75,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "H1 FY27 income ₹135.6cr against about ₹51cr in Q1, so about ₹84cr in Q2 (half-yearly filer)",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; cash must follow in H2"
   },
   {
    "id": "supreme-power-q4fy27-1",
@@ -9318,7 +9331,13 @@
    "text": "FY27 revenue of ₹250–300cr, as guided",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "raised the FY27 revenue guide to ₹300–350cr in the H1 FY27 call (22 Oct 2026)"
+    }
+   ]
   },
   {
    "id": "supreme-power-q4fy27-3",
@@ -9330,7 +9349,13 @@
    "target": 18,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "H1 FY27 EBITDA margin was 17.4%; the profit-margin guide widened to 9–12% from 10–12% on CRGO and oil costs (H1 FY27 call)"
+    }
+   ]
   },
   {
    "id": "transformers-and-rect-q2fy27-1",
@@ -9705,7 +9730,8 @@
    "status": "missed",
    "actual": "8.7%",
    "resolvedOn": "2026-10-26",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait; FY27 margin guide cut to about 9%"
   },
   {
    "id": "cyient-dlm-q2fy27-2",
@@ -9720,7 +9746,8 @@
    "status": "met",
    "actual": "26.4%",
    "resolvedOn": "2026-10-26",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait; growth on track but the margin is not"
   },
   {
    "id": "cyient-dlm-q2fy27-3",
@@ -9729,7 +9756,11 @@
    "text": "Working capital falling from 161 days toward 120",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "153 days at September against 161 in June",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "cyient-dlm-q2fy27-4",
@@ -9738,7 +9769,11 @@
    "text": "First AI-hardware and robotics orders",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "No orders; management is ‘just started exploring’ AI data-centre and robotics work and will update by the end of FY27",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "aimtron-h1fy27-1",
@@ -10073,7 +10108,11 @@
    "text": "Margin steadying near 3.3% as bonds roll off (3.26% in Q1)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "3.16% on total assets in Q2 FY27 (3.32% on earning assets), down from 3.26%",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays own; management says Q2 was the bottom, so Q3 is the test"
   },
   {
    "id": "hdfc-bank-q2fy27-3",
@@ -10082,7 +10121,11 @@
    "text": "Cheap current and savings deposits back above 34% of deposits (32% in Q1)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "32% at September 2026, flat on the quarter",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays own; the new CEO is to set out a deposit plan"
   },
   {
    "id": "state-bank-of-india-q2fy27-1",
@@ -17770,7 +17813,11 @@
    "text": "Q2 margin within the 25% ±2 guide once the one-off tariff refund is stripped out",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "27.2% company measure (24% filed); about 25.6% after the ₹11cr refund booked so far",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; guide raised to 27% ±2"
   },
   {
    "id": "garware-hi-tech-q3fy27-1",
@@ -17800,7 +17847,13 @@
    "target": 23,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "raised the FY27 EBITDA margin guide by 2 points to 27% ±2 (company measure) in the Q2 FY27 call"
+    }
+   ]
   },
   {
    "id": "shaily-engg-plastic-q2fy27-1",
@@ -20055,7 +20108,11 @@
    "ifMet": "Buy (move up from follow)",
    "ifMissed": "Stay follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "15.6% in Q2 FY27 (about 13.9% without a one-off UK research credit)",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Moved to own"
   },
   {
    "id": "onward-technologies-q2fy27-1",
@@ -20070,7 +20127,8 @@
    "status": "met",
    "actual": "22.3%",
    "resolvedOn": "2026-10-27",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Moved to own (with the margin checkpoint met and guidance raised)"
   },
   {
    "id": "onward-technologies-q2fy27-2",
@@ -20079,7 +20137,11 @@
    "text": "Offshore share of work recovering from 68%, with no loss among the top five clients",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Management says offshore delivery and utilisation rose as clients shifted work offshore; no share figure given; no client loss mentioned",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "review",
+   "outcome": "Moved to own"
   },
   {
    "id": "tata-technologies-q2fy27-1",
@@ -32206,7 +32268,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-10-07",
    "status": "pending",
-   "source": "business-shift"
+   "source": "business-shift",
+   "revisions": [
+    {
+     "on": "2026-10-28",
+     "text": "14 studios at Q2 FY27, 12 more planned in Q3; target of 50 moved to December 2027 in the Q2 FY27 call"
+    }
+   ]
   },
   {
    "id": "garware-hi-tech-shift-4",
@@ -36639,6 +36707,90 @@
    "text": "Housing.com profitable within 12–18 months, as promised on the 16 Oct 2026 call",
    "due": "Q4 FY28",
    "createdOn": "2026-10-25",
+   "status": "pending"
+  },
+  {
+   "id": "hdfc-bank-q3fy27-1",
+   "company": "HDFC Bank",
+   "sector": "Finance",
+   "text": "Margin on total assets above Q2’s 3.16%, as management says Q2 was the bottom",
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-28",
+   "status": "pending"
+  },
+  {
+   "id": "hdfc-bank-q3fy27-2",
+   "company": "HDFC Bank",
+   "sector": "Finance",
+   "text": "New CEO Anup Bagchi sets out his plan for deposits, liquidity cover and growth to analysts",
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-28",
+   "status": "pending"
+  },
+  {
+   "id": "crompt-greaves-cons-q4fy27-1",
+   "company": "Crompt.Greaves Cons.",
+   "sector": "Consumer Durables",
+   "text": "Solar pumps growing again in H2 FY27 as PM-KUSUM 2.0 orders arrive, after slowing in Q2",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-28",
+   "status": "pending"
+  },
+  {
+   "id": "crompt-greaves-cons-q4fy27-2",
+   "company": "Crompt.Greaves Cons.",
+   "sector": "Consumer Durables",
+   "text": "Greenfield plant for fans, appliances and wires decided and costed (evaluation in advanced stages in October 2026)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-28",
+   "status": "pending"
+  },
+  {
+   "id": "onward-technologies-q4fy27-1",
+   "company": "Onward Technologies",
+   "sector": "Software",
+   "text": "FY27 revenue growth within the raised 15–18% guide",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-28",
+   "status": "pending"
+  },
+  {
+   "id": "onward-technologies-q4fy27-2",
+   "company": "Onward Technologies",
+   "sector": "Software",
+   "text": "Receivable days back to 65–70 from 80 at September, as management expects within two quarters",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-28",
+   "status": "pending"
+  },
+  {
+   "id": "cyient-dlm-q4fy27-1",
+   "company": "Cyient DLM",
+   "sector": "EMS & Electronics",
+   "text": "H2 FY27 revenue growth above 30%, as guided in the Q2 call",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-28",
+   "status": "pending"
+  },
+  {
+   "id": "cyient-dlm-q1fy28-1",
+   "company": "Cyient DLM",
+   "sector": "EMS & Electronics",
+   "text": "Operating margin back in double digits from Q1 FY28, as promised after the FY27 guide cut to about 9%",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 10,
+   "due": "Q1 FY28",
+   "createdOn": "2026-10-28",
+   "status": "pending"
+  },
+  {
+   "id": "cyient-dlm-q4fy27-2",
+   "company": "Cyient DLM",
+   "sector": "EMS & Electronics",
+   "text": "Working capital below 140 days (153 at September 2026)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-28",
    "status": "pending"
   }
  ]

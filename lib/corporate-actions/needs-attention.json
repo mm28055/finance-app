@@ -2853,7 +2853,8 @@
     "sector": "Consumer Durables",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-28: Price now about fits (needs ~16% vs my 16%). Thesis intact (18% growth, cash, no debt) but the Q2 margin of 9.0% misses the two-quarter 11% test set before buying; dated sentence added in the view, price-check paragraph and count line corrected. Stays follow."
   },
   {
     "company": "Datamatic Global Ser",
@@ -3167,7 +3168,8 @@
     "sector": "EMS & Electronics",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-10-28: Q2 FY27 call read (15 Oct). Revenue +26.5%, order book ₹2,813cr (1.6x book-to-bill), box build +85%, working capital 153 days; margin 8.7% and FY27 margin guide cut to ~9% (double digits from FY28); another ₹18.2cr earn-out reversal; AI/robotics only exploring. View, watch, card and guidance row updated; two checkpoints judged, three added. Stays wait (price full)."
   },
   {
     "company": "Sterling and Wilson",
@@ -3202,14 +3204,16 @@
     "sector": "Finance",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-10-28: Q2 FY27 call read (17 Oct). Margin fell to 3.16% on total assets (management: the bottom, rising from Q3), CASA flat at 32%, GNPA 1.11%, profit +4.7% (+12.6% ex trading gains), LCR 113%; Bagchi CEO from 27 Oct, deputy MD Bharucha leaving in December, draft insurance-commission cut a fee risk. View, watch, card, guidance row and management record updated; two checkpoints missed, two added. Stays own (price only just fits)."
   },
   {
     "company": "Crompt.Greaves Cons.",
     "sector": "Consumer Durables",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-10-28: Q2 FY27 call read (16 Oct). Revenue +18.2%, operating profit +24.1%, margin 9.0%; all segments double digit, exports +70%, stock normalised, prices up 11–15% covering ~80% of costs; solar pumps slowed, AP rooftop half done; greenfield plant in advanced evaluation. View, watch, card and sections updated; three checkpoints judged, two added. Stays follow."
   },
   {
     "company": "Sterling and Wilson",
@@ -3223,21 +3227,24 @@
     "sector": "Consumer Durables",
     "subject": "Checkpoint missed: crompt-greaves-cons-q2fy27-1",
     "why": "Operating margin above 11% in Q2 FY27 (first of two quarters needed) — actual 9.1% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-10-28: Missed (9.1% vs 11%). Q2 is the off-season and the margin rose on a year, but the note's buy test (two quarters at 11%+) is not met; outcome written. Stays follow."
   },
   {
     "company": "Cyient DLM",
     "sector": "EMS & Electronics",
     "subject": "Checkpoint missed: cyient-dlm-q2fy27-1",
     "why": "Operating margin reaching the promised 11–13% (current guide 10–11%) — actual 8.7% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-10-28: Missed (8.7% vs 11%); management cut the FY27 margin guide to ~9%. Outcome written; stays wait."
   },
   {
     "company": "Cyient DLM",
     "sector": "EMS & Electronics",
     "subject": "Checkpoint met: cyient-dlm-q2fy27-2",
     "why": "Revenue growth in every quarter, as guided — actual 26.4% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-10-28: Met (26.4%); H2 growth guided above 30%. Outcome written; stays wait because the margin is not following."
   },
   {
     "company": "Yash Highvoltage",
@@ -3251,7 +3258,8 @@
     "sector": "Software",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-27"
+    "addedOn": "2026-10-27",
+    "handled": "2026-10-28: Q2 FY27 call read (16 Oct). Revenue +22.4% (17.7% constant currency), record 15.6% margin (~13.9% ex UK R&D credit), FY27 guide raised to 15–18% growth and 13.8–14.3% margin, ₹44.5cr renewal; receivables 80 days. myGrowth 10 → 13; margin checkpoint met (its stated trigger was buy). Call follow → own (price fits at ~12% needed), stance COMPOUNDER; view, section 1, sections 6–7, closing and card updated; two checkpoints added."
   },
   {
     "company": "Sobha",
@@ -3279,14 +3287,16 @@
     "sector": "Electrical Transformers",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-27"
+    "addedOn": "2026-10-27",
+    "handled": "2026-10-28: H1 FY27 call read (22 Oct). Income +80% to ₹135.6cr, margin 17.4%, ₹209cr orders, order book ₹565.8cr; FY27 guide raised to ₹300–350cr (FY28 up to ₹550cr), PAT margin guide 9–12%; working capital jumped, cash promised positive in H2. View, watch, card and guidance row updated; Q2 revenue checkpoint met, revisions on two FY27 checkpoints (no room for new ones: 4+ pending). Stays follow."
   },
   {
     "company": "Garware Hi-Tech",
     "sector": "Plastics",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-27"
+    "addedOn": "2026-10-27",
+    "handled": "2026-10-28: Q2 FY27 call read (22 Oct). Record revenue ₹696cr (+22%), EBITDA +42% (27.2% own, 24% filed), cash ₹933cr; FY27 margin guide raised to 27% ±2, revenue ≥₹2,500cr kept; TPU on track for Q3; tariff refund smaller (₹11cr booked, ₹16cr more in Q3); 50 studios now December 2027. View, watch, card, guidance row and refund text corrected; Q2 margin checkpoint met, revisions added. Stays follow (price full)."
   },
   {
     "company": "HFCL",
@@ -3300,6 +3310,7 @@
     "sector": "Software",
     "subject": "Checkpoint met: onward-technologies-q2fy27-1",
     "why": "Double-digit revenue growth, as guided (12% in Q1) — actual 22.3% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-27"
+    "addedOn": "2026-10-27",
+    "handled": "2026-10-28: Met (22.3% vs 10%); with the margin checkpoint also met and guidance raised, moved to own; outcome written."
   }
 ]
