@@ -452,3 +452,43 @@ Pushed to master; all checks passed (typecheck clean, "All notes pass.").
 **Results pass:** 18 reviewed, and all operating figures match Screener. I changed one overnight verdict: **JK Tyre** from mixed to behind. Operating profit fell 36% and net profit 71%, with the margin at 7% against 13%. I agree with the rest, adding what the points missed: Kajaria's and Lumax's new capex, Sterlite's ₹27,600cr of orders, Steel Strips' new plant, Jupiter's land purchase, Newgen's chairman, Shakti's module trial and Monolithisch's new plant. None had an analysed call, so no checkpoints were judged from them.
 
 **Top 12:** EPL (a fund buying) was touched, along with Rubicon and Gland, which appear only in the research text. No trigger was hit, so nothing changed.
+
+## 28 October 2026
+
+**Checks:** the notes check lists the same 30 problems as before this run, all "company in the sector with no verdict" (the newly listed companies that still need sections). They were on master already, so they did not block the push. The typecheck is clean and no capacity picture is out of date or in error. One slip: a commit pushed mid-run had two unescaped apostrophes (Utilities and Aerospace notes) that broke the build for a few minutes; the next commit fixed it. The two older branches, weekly-review/2026-09-30 and weekly-review/2026-10-18, again showed as unmerged only because this copy was shallow; both are already part of master.
+
+**Follow-ups handled: 40 (the limit), plus 2 capacity-picture follow-ups settled by this week's filings. Still open: 128.** 69 are the recently listed companies with no note section (already a Needs-a-session item), 4 are waiting entries, 17 are price-drift reviews (Laxmi Dental, Minda Corp, MSTC, NBCC, Powerica, Puravankara, Quess, RACL, Rainbow, RR Kabel, TruAlt, Waaree Renewables, Eris, GNFC, Krystal, Oswal Pumps, Yash Highvoltage), 25 are capacity-picture date fixes, 4 are new projects (Kajaria, Lumax, and two added today: Ather's ₹122cr expansion and E2E's 5.4 MW), 4 are holder changes (Eureka Forbes, EPL, AXISCADES, United Heat), 2 are demergers (HEG, SKF), and 3 are results calls whose transcripts are not filed yet (ICICI Bank, Sobha, CIE Automotive).
+
+**Calls changed:**
+- **Onward Technologies: follow → own** (in small size). Q2 revenue rose 22% (18% in constant currency), the margin hit a record 15.6%, and management raised its FY27 guide to 15–18% growth at a 13.8–14.3% margin. That met the margin test I had set for buying. I raised my growth estimate from 10% to 13%, and the price fits.
+
+**New results calls (transcripts read):**
+- **HDFC Bank** (stays own). The margin slipped again, to 3.16% on total assets; management says it has hit bottom and will rise from Q3 as the October rate rise flows through. Cheap deposits stayed at 32%, bad loans fell to 1.11%, and profit rose 4.7% (12.6% without trading gains). Anup Bagchi became CEO on 27 October and will set out his plan in about a month. The deputy MD leaves in December, and a draft cut to insurance commissions would hurt fee income. Two checkpoints were missed (margin, cheap deposits); I added two for Q3. The price only just fits.
+- **Crompton** (stays follow, though the price now about fits). Revenue rose 18% and operating profit 24%, but the margin was 9.0% against the 11% I want for two quarters before buying.
+- **Supreme Power** (stays follow). H1 income rose 80%, the FY27 guide went up to ₹300–350cr, and it says ₹550cr is possible in FY28. But stock and receivables jumped, and cash is only promised for H2.
+- **Garware Hi-Tech** (stays follow). Revenue hit a record ₹696cr and the margin guide rose to 27% ±2. I corrected the US tariff refund: it is about ₹27cr to its own books, not the ₹50cr-plus first indicated. The 50-studio target moved to December 2027.
+- **Cyient DLM** (stays wait). Revenue rose 26.5% and the order book is a record ₹2,813cr. But management cut the FY27 margin guide to about 9% (checkpoint missed), and Q2 profit again includes an earn-out reversal.
+- **Solara** (stays wait). Its best quarter in five years, but the ibuprofen decision slipped another 12 weeks and net debt rose to about ₹500cr.
+- **Metro Brands** (stays wait). Revenue rose 12% and the profit margin was 10.6%, below the 13–15% guide. Management dropped the 100-stores-a-year aim.
+- **LMW** (stays wait). Revenue rose 30% and textile profit is back, but textile plants still run at about 60%. Machine tools are heading for about 50% growth.
+- **Sterling and Wilson** (stays pass). Revenue fell 13%, the guide was cut to "up to 10%" growth, and the Reliance order is still only "soon". About ₹156cr of indemnity money is expected this year.
+- **HFCL** (stays avoid). The guidance was already in the note. New: a board committee advised by EY is about to recommend a restructuring, with the loss-making EPC arm under review.
+
+**Price drift (calls kept, a dated reason added to each):**
+- **Price now fits, call kept:** Shilchar, Accent Microcell, ADF Foods (and its Ascot case settled for US$1.75m), Afcons, Avanti, Bajaj Consumer, Datamatics, IFGL, JK Tyre (Q2 profit −71%), Kirloskar Pneumatic (Q2 revenue −15%; a guide cut on the call would move it to wait), Macpower (cash conversion fails the own test) and Krsnaa.
+- **Fitted only briefly, now full or stretched again:** Advanced Enzyme, Aegis, Welspun Enterprises, Action Construction, BlackBuck, Avalon (₹425cr of warrants to Zollner), DCW, Deepak Fertilisers, Finolex Cables, Granules and Jyoti CNC.
+
+**Still waiting (checked today):** HEG's electrode company has not listed. SKF India has not filed Q2. Ganesh Benzoplast's sale has not closed. The UPI fee is still deferred with no date. The cancer-drug margin cap and the ethanol tender terms are still confirmed only by press reports; the official sites cannot be reached from here.
+
+**Filings pass, 26–27 October** (notes corrected):
+- **Plants:** M&B's Sanand expansion started on 26 October (milestone met). Dynamic Cables' Reengus machinery was installed but production has not started (milestone missed, again late). Sudeep got its Gujarat FDA approval for the new plant. Sterling Tools commissioned its charger lines. Acutaas opened its Korean plant early. TARIL's three component plants now cost ₹1,250cr and start in Q1 FY28, later than promised (recorded as revisions, with a new milestone). All six pictures were redrawn.
+- **Management:** Sterling Tools has a new CFO (Amit Dhadda). Syngene's CFO resigned as Q2 revenue fell 9%. HDFC Bank's CEO changed on 27 October.
+- **Guidance and orders:** Piramal Pharma raised its FY27 growth outlook to 19–20%; Acutaas to about 30% at a 38–40% margin. Subros won a ₹1,225cr Maruti order. Wabag won a Reliance desalination plant worth over ₹1,000cr. Sona won ₹3,600cr of orders (book ₹25,100cr). Unimech signed a 10-year Honeywell agreement.
+- **Capital:** Venus Pipes allotted ₹372cr of new shares. Genus approved a ₹148cr buyback while its cash flow is negative. E2E plans 59% more GPU capacity. Ather plans ₹122cr for 11.4 lakh units. Jubilant Ingrevia is buying 40% of an electronics maker for ₹189cr. CareEdge upgraded Ashiana to A+.
+- **Logged only:** Gulf Oil's warehouse fire, PG Electroplast's washing-machine line (already ramping), Everest Kanto's Egypt plant (already ramping), JSW Cement's ₹1,078cr expansion, Karamtara's and Leap India's news (no note sections yet), Waaree Renewables' and Vikram Solar's orders, KNR's cancelled ₹157.5cr flyover, Mahindra Lifespace's Bengaluru deal, Raymond Realty's ₹210cr from an AIF, Steamhouse's MoU and Amara Raja's new business head.
+
+**News pass, 25–27 October:** 27 entries had a clear reason, and none was very important. They were Indian crude above $120 (a price swing, not a rule), a cut in wheat supply to millers, defence purchase approvals, and results-day moves. eMudhra's certificate-key lapse was already in the note from the 23 October run.
+
+**Results pass:** 45 reviewed, and all figures match Screener. I changed two verdicts: **Concord Biotech** from ahead to in line (profit only matched the base case), and **Kirloskar Brothers** from ahead to mixed (the margin slipped and net profit grew 4%). I added what the points missed, such as Piramal's and Acutaas's raised guides, Sterling Tools' EV losses and Syngene's CFO exit. None had an analysed call, so no checkpoints were judged from them.
+
+**Top 12:** M&B (Sanand started), Dynamic Cables (plant installed, Q2 margin 10%), Sunteck (Q2 results), and the reserve names Acutaas, Gulf Oil and Mahindra Lifespace were touched. No trigger was hit, so nothing changed. Dynamic's margin of 10% misses one of its next checks (10.5%), but its trigger (below 9.5% for two quarters) was not hit.
