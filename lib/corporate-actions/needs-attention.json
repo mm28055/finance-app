@@ -3357,5 +3357,180 @@
     "subject": "Projects: 5.4 MW AI-capacity expansion announced 26 Oct 2026",
     "why": "E2E plans to add about 5.4 MW of GPU capacity (NVIDIA HGX B300 and other Blackwell systems), about 59% more than today's 9.2 MW, to reach 14.6 MW, paid from cash flow and debt (filings of 26 Oct 2026). Check it against the existing 'More Blackwell and Vera Rubin GPUs' project, add or update it in projects.json with dated milestones, update capacity.json, then redraw and stamp the capacity picture.",
     "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Chalet Hotels",
+    "sector": "Hotels and Travels",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Hdfc Mutual Fund - Hdfc Bse 500 Etf (DII) raised its stake from 7.34% to 9.62%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Entero",
+    "sector": "Retail",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Surbhi Singh(Prasid Uno Family Trust) (public holder) cut its stake from 10.45% to 3.05%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Northern ARC Capital",
+    "sector": "Finance",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Augusta Investments Ii Pte. Ltd. (public holder) cut its stake from 16.02% to 13.81%; Leapfrog Financial Inclusion India (Ii) Ltd (public holder) cut its stake from 16.15% to 12.45%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Piramal Pharma",
+    "sector": "Pharma CDMO",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Hdfc Trustee Company Limited-Hdfc Flexi Cap Fund (DII) cut its stake from 7.68% to 5.65%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "RateGain Travel Tech",
+    "sector": "Software",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Sundaram Mutual Fund A/C Sundaram Long Term Micro (DII) raised its stake from 1.89% to 5.32%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Punjab Chem. & Corp",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Vardhman Special Steels",
+    "sector": "Iron and Steel",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Poojaa Precision Engg",
+    "sector": "Auto Related",
+    "subject": "Call drift: pass → Fits",
+    "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Stylam Industrie",
+    "sector": "Consumer Durables",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Mahindra Holi.&Resor",
+    "sector": "Hotels and Travels",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Varmora Granito",
+    "sector": "Consumer Durables",
+    "subject": "New Special call 23 Oct 2026",
+    "why": "Special call 23 Oct 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Fairchem Organics",
+    "sector": "Chemicals",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Bajaj Healthcare",
+    "sector": "Pharma API",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Pitti Engineering",
+    "sector": "Industrials",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Sterlite Technologies",
+    "sector": "Cables",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Rajratan Global",
+    "sector": "Auto Related",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Le Travenues Techno",
+    "sector": "Travel Services",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Ador Welding",
+    "sector": "Industrials",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Rajratan Global",
+    "sector": "Auto Related",
+    "subject": "Checkpoint missed: rajratan-global-q2fy27-1",
+    "why": "Operating margin at 13.5–14% ('safely', as guided) — actual 12.4% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Fairchem Organics",
+    "sector": "Chemicals",
+    "subject": "Checkpoint met: fairchem-organics-q2fy27-1",
+    "why": "Operating margin held at about 10% (company: 'we will be able to maintain') — actual 10.8% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Ador Welding",
+    "sector": "Industrials",
+    "subject": "Checkpoint partly: ador-welding-q2fy27-1",
+    "why": "Operating margin back above 12% (Q1 FY27 11.6%) — actual 11.0% (partly). Margins slipping again would change the view for the worse Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Bajaj Healthcare",
+    "sector": "Pharma API",
+    "subject": "Checkpoint partly: bajaj-healthcare-q2fy27-1",
+    "why": "Operating margin inside the 18–20% guide (17.5% filed in Q1) — actual 17.6% (partly).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Sterlite Technologies",
+    "sector": "Cables",
+    "subject": "Checkpoint met: sterlite-technologies-q2fy27-1",
+    "why": "Q2 FY27 revenue of at least ₹2,228cr, the executable order book for the quarter (Q1 beat its book by 30%) — actual ₹2,529cr (met). Delivery is keeping up with the order wins Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Sterlite Technologies",
+    "sector": "Cables",
+    "subject": "Checkpoint met: sterlite-technologies-q2fy27-2",
+    "why": "Operating margin at least 20% on Screener's basis in Q2 FY27 (Q1 20.2%; the company's own figure, which adds other income, was 20.8%), holding the Q1 step-up — actual 32.1% (met). The Q1 margin was not a one-off Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Sterlite Technologies",
+    "sector": "Cables",
+    "subject": "Checkpoint met: sterlite-technologies-q2fy27-4",
+    "why": "Order book above Q1's ₹18,618cr after about ₹16,000cr of July–October wins — actual ₹35,274cr (met). Wins are adding to the book faster than revenue draws it down Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-28"
   }
 ]

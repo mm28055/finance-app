@@ -2066,7 +2066,10 @@
    "target": 13.5,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "12.4%",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "auto"
   },
   {
    "id": "rajratan-global-q3fy27-1",
@@ -4009,7 +4012,10 @@
    "target": 10,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "10.8%",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "auto"
   },
   {
    "id": "fairchem-organics-q2fy27-2",
@@ -13523,7 +13529,10 @@
    "due": "Q2 FY27",
    "ifMissed": "Margins slipping again would change the view for the worse",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "11.0%",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "auto"
   },
   {
    "id": "ador-welding-q4fy27-1",
@@ -32146,7 +32155,10 @@
    "target": 18,
    "due": "Q2 FY27",
    "createdOn": "2026-09-30",
-   "status": "pending"
+   "status": "partly",
+   "actual": "17.6%",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "auto"
   },
   {
    "id": "bajaj-healthcare-q4fy27-2",
@@ -33476,7 +33488,10 @@
    "ifMet": "Delivery is keeping up with the order wins",
    "ifMissed": "Capacity or input limits (germanium, helium) are holding back revenue",
    "createdOn": "2026-10-20",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹2,529cr",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "auto"
   },
   {
    "id": "sterlite-technologies-q2fy27-2",
@@ -33490,7 +33505,10 @@
    "ifMet": "The Q1 margin was not a one-off",
    "ifMissed": "Q1 was a peak; the path to 23% and 27% looks less likely",
    "createdOn": "2026-10-20",
-   "status": "pending"
+   "status": "met",
+   "actual": "32.1%",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "auto"
   },
   {
    "id": "sterlite-technologies-q2fy27-3",
@@ -33514,7 +33532,10 @@
    "ifMet": "Wins are adding to the book faster than revenue draws it down",
    "ifMissed": "Order intake is slowing, or the award letters are not being counted as firm",
    "createdOn": "2026-10-20",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹35,274cr",
+   "resolvedOn": "2026-10-28",
+   "resolvedBy": "auto"
   },
   {
    "id": "sterlite-technologies-q2fy27-5",
