@@ -454,7 +454,7 @@ export const plastics: SectorOverview = {
                     columns: ['Company', 'Guidance', 'Capex', 'Track record (May promise vs Q1)'],
                     rows: [
                         ['Time Technoplast', 'Volume +15%; operating profit +19–20% and net profit +23–24% (raised in August); working capital about 100 days by March 2027', '₹350cr in FY27 (normal ₹250–300cr); ₹75cr in Q1', '**On track**: profit +22% and guide raised; volume +11% against 15%'],
-                        ['Garware Hi-Tech', 'Revenue at least ₹2,500cr; margin 25% ±2; ₹3,500cr in 3–4 years', 'TPU ₹118cr (Q3 FY27); sun-control line ₹191–192cr (June 2027; CARE says June 2028)', '**Beat**: ₹633cr at 27% filed (30.3% own); 9 of 50 home studios'],
+                        ['Garware Hi-Tech', 'Revenue at least ₹2,500cr; margin 25% ±2, raised to 27% ±2 in Q2; ₹3,500cr in 3–4 years', 'TPU ₹118cr (Q3 FY27); sun-control line ₹191–192cr (H1 FY28; CARE says June 2028)', '**Beat**: Q2 ₹696cr at 24% filed (27.2% own); 14 home studios, 50 now by December 2027'],
                         ['Shaily Engg. Plastic', 'Beyond 36mn pens in FY27; about 50mn in FY28', 'Pen capacity to about 75mn by September; Abu Dhabi by end-FY28; ₹80–100cr electronics plant', '**Mixed**: pens on track; second line late; consumer −24%'],
                         ['Prince Pipes', 'Volume +12–15%; margin 11–13%; stock 65–75 days', '₹200–210cr, mostly maintenance and the Bhuj bathware plant', '**Mixed**: margin 13%; volume −7%, stock 100 days, bathware a quarter late'],
                         ['Finolex Inds', 'Volume high single to low double digit (“too early”); margin below 15%', '₹125–200cr, debottlenecking', '**Missed**: volume −27%; margin 12%, within its guide'],
@@ -516,7 +516,7 @@ export const plastics: SectorOverview = {
                 },
                 {
                     label: 'Garware: the best business, at a full price',
-                    text: "**Garware** needs about {need:Garware Hi-Tech|21}% a year against my ~17%. Its guidance (15–20% revenue growth, with margins heading toward 27–28%) could come close to that, and the tariff risk has fallen, but Q2 will include a one-off tariff refund of ₹50cr-plus and its new sun-control line may be a year later than it says. **A very good business at a price that leaves little room for a slip: follow, and buy on weakness.**",
+                    text: "**Garware** needs about {need:Garware Hi-Tech|21}% a year against my ~17%. Its guidance (15–20% revenue growth, with margins heading toward 27–28%) could come close to that, and the tariff risk has fallen, and it raised its margin guide in Q2, but the tariff refund is only about ₹27cr to its own books across Q2–Q3, not the ₹50cr-plus it first indicated, and its new sun-control line may be a year later than it says. **A very good business at a price that leaves little room for a slip: follow, and buy on weakness.**",
                 },
                 {
                     label: 'Not measurable on earnings: Apollo Pipes',
@@ -524,7 +524,7 @@ export const plastics: SectorOverview = {
                 },
                 {
                     label: 'Quality of earnings',
-                    text: "**Garware**'s and **Shaily**'s own EBITDA figures include other income, so use the filed margins, and Garware's Q2 will carry the one-off refund. **Finolex**'s profit includes ₹53–76cr a quarter of treasury income that moves with bond yields, its FY25 profit had ₹703cr of other income, and its Q4 FY26 margin had ₹35–40cr of stock gains. **Prince**'s Q4 FY26 volume was bought by passing stock gains to dealers. **Strip these out before comparing.**",
+                    text: "**Garware**'s and **Shaily**'s own EBITDA figures include other income, so use the filed margins, and Garware's Q2 and Q3 carry about ₹11cr and ₹16cr of one-off tariff refunds. **Finolex**'s profit includes ₹53–76cr a quarter of treasury income that moves with bond yields, its FY25 profit had ₹703cr of other income, and its Q4 FY26 margin had ₹35–40cr of stock gains. **Prince**'s Q4 FY26 volume was bought by passing stock gains to dealers. **Strip these out before comparing.**",
                 },
             ],
             embed: 'valuation',
@@ -541,8 +541,8 @@ export const plastics: SectorOverview = {
         {
             company: 'Garware Hi-Tech', rank: 2, stance: 'PRICED', segment: ENGINEERED,
             what: "Makes specialty polyester films from its own chips: heat-blocking window film for cars and buildings, paint-protection film for cars and industrial films, about three-quarters exported.",
-            view: "**The best business in the group, priced for a little more than I expect.** Its filed margin rose from 17% in FY24 to a record 27% in Q1 FY27, it holds about ₹850cr of cash, and the US tariff has fallen from 50% to 10%. But the US is about 45% of revenue, promoter pay takes about 12% of profit, and CARE dates its new line a year later than the company. The price needs about {need:Garware Hi-Tech|21}% a year against my ~17% estimate.",
-            watch: 'The TPU line in Q3 FY27; the margin holding within its 25% ±2 guide once the Q2 refund is stripped out; the sun-control line date.',
+            view: "**The best business in the group, priced for a little more than I expect.** Its filed margin rose from 17% in FY24 to a record 27% in Q1 FY27, it holds about ₹850cr of cash, and the US tariff has fallen from 50% to 10%. But the US is about 45% of revenue, promoter pay takes about 12% of profit, and CARE dates its new line a year later than the company. Q2 FY27 (call of 22 October) was another record: revenue ₹696cr (+22%), operating profit +42% at 24% filed (27.2% by its own measure, which includes other income), cash ₹933cr, and the FY27 margin guide raised by 2 points to 27% ±2 with revenue still above ₹2,500cr. The tariff refund is smaller than it said (₹11cr booked so far, about ₹16cr more in Q3), and the 50-studio home business target moved to December 2027. The price needs about {need:Garware Hi-Tech|22}% a year against my ~17% estimate.",
+            watch: 'The TPU line in Q3 FY27, as reaffirmed; the margin within the raised 27% ±2 guide; the sun-control line in H1 FY28; new capex the board may approve.',
         },
         {
             company: 'Shaily Engg. Plastic', rank: 3, stance: 'PRICED', segment: ENGINEERED,
@@ -576,7 +576,7 @@ export const plastics: SectorOverview = {
             "**Engineered plastics and films.** **Time Technoplast: own.** Steady profit growth, costs passed on and a price that asks for less than I expect; the cash cycle is the thing to watch. **Garware Hi-Tech: follow.** The best business here, at a full price. **Shaily: follow.** A real pen business, with a partner's pause, a promoter sale and slow lines to clear first.",
             "**Plastic pipes.** **Prince Pipes: wait** for volume to follow the margin; its price is on the edge of fitting. **Finolex: wait** for its share to stop falling and a plan for the cash. **Apollo Pipes: avoid** until it delivers what it promises.",
             "**What would change my view.** For the better: a stable PVC regime after January and pipe volumes recovering in H2; Time's working capital falling to 100 days; Shaily winning a contract with an original drug maker. For the worse: another resin crash; CRISIL's volume fall proving right; Dr Reddy's restart slipping; Garware losing its largest US customer.",
-            "**What to watch next quarter.** Time Technoplast's working capital and composite orders; Garware's TPU line and its Q2 margin without the refund; Shaily's pen volumes and second line; the pipe makers' Q2 volumes, Prince's stock days and Apollo's promised double-digit growth.",
+            "**What to watch next quarter.** Time Technoplast's working capital and composite orders; Garware's TPU start-up and Q3 margin; Shaily's pen volumes and second line; the pipe makers' Q2 volumes, Prince's stock days and Apollo's promised double-digit growth.",
         ],
         bottomLine:
             "Buy the specified products, not the commodity pipes, and check the cash. Own Time Technoplast; follow Garware Hi-Tech and Shaily Engg. Plastic for a better price; wait on Prince Pipes and Finolex Inds; avoid Apollo Pipes.",
