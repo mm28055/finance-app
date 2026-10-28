@@ -658,7 +658,7 @@ export const electricalTransformers: SectorOverview = {
         {
             company: 'Shilchar Tech.', rank: 2, stance: 'CYCLICAL', segment: MAKERS,
             what: "Debt-free Gujarat maker of power, distribution, solar and wind transformers up to 50 MVA and 132 kV, about half exported to Europe, the Middle East and North America; it does not sell to state utilities.",
-            view: "**High returns, a lost year.** It has earned 51–75% on capital for four years and is nearly doubling capacity to 14,000 MVA for about ₹120cr of its own cash, adding 220 kV. But Middle East freight froze its exports, Q1 revenue fell 15%, the operating margin fell to 16%, and the ₹800cr FY27 target needs record quarters. The price needs about {need:Shilchar Tech.|19}% a year against my ~17%, just past a fair price.",
+            view: "**High returns, a lost year.** It has earned 51–75% on capital for four years and is nearly doubling capacity to 14,000 MVA for about ₹120cr of its own cash, adding 220 kV. But Middle East freight froze its exports, Q1 revenue fell 15%, the operating margin fell to 16%, and the ₹800cr FY27 target needs record quarters. The price needs about {need:Shilchar Tech.|19}% a year against my ~17%, just past a fair price. **28 Oct 2026:** after a fall the price now just fits (about {need:Shilchar Tech.|19}% needed against my ~17%), but exports are still frozen and Q2 results are not out, so it stays follow until they show exports recovering.",
             watch: 'Exports back above 40% of sales as Gulf freight eases; any formal cut to the ₹800cr target; 220 kV approvals after the April 2027 start.',
         },
         {
