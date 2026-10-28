@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21",
+ "updated": "2026-10-28",
  "companies": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -14867,11 +14867,11 @@
    "company": "HDFC Bank",
    "sector": "Finance",
    "style": "Professional",
-   "styleNote": "HDFC Bank has had no promoter since its 2023 merger with parent HDFC Limited; it is widely held by institutions. It is run by career bankers, most of whom joined in the 1990s. The top job is changing: CEO Sashidhar Jagdishan leaves on 26 October 2026, and the RBI has approved Anup Bagchi, an ICICI Group banker since 1992, to succeed him from 27 October for three years. The part-time chairman is former Finance Secretary Rajiv Kumar (since July 2026); former HDFC Ltd heads Keki Mistry and Renu Karnad sit as non-executive directors. No director or senior manager owns 1% or more, and none are related.",
+   "styleNote": "HDFC Bank has had no promoter since its 2023 merger with parent HDFC Limited; it is widely held by institutions. It is run by career bankers, most of whom joined in the 1990s. The top job changed on 27 October 2026: Anup Bagchi, an ICICI Group banker since 1992, succeeded Sashidhar Jagdishan as MD & CEO for three years. The part-time chairman is former Finance Secretary Rajiv Kumar (since July 2026); former HDFC Ltd heads Keki Mistry and Renu Karnad sit as non-executive directors. No director or senior manager owns 1% or more, and none are related.",
    "people": [
     {
      "name": "Sashidhar Jagdishan",
-     "role": "Managing Director & CEO (term ends 26 October 2026; Anup Bagchi succeeds him)",
+     "role": "Managing Director & CEO until 26 October 2026 (term ended; succeeded by Anup Bagchi)",
      "since": "Joined 1996; MD & CEO since 27 October 2020",
      "family": false,
      "stake": "3,567,800 shares, about 0.02% (31 March 2026, Form 20-F)",
@@ -14879,7 +14879,7 @@
     },
     {
      "name": "Anup Bagchi",
-     "role": "Managing Director & CEO from 27 October 2026 (additional director from 2 October 2026)",
+     "role": "Managing Director & CEO since 27 October 2026 (additional director from 2 October 2026)",
      "since": "Appointed 1 October 2026 (RBI approval the same day) for three years from 27 October 2026",
      "family": false,
      "stake": "not disclosed",
@@ -14930,7 +14930,7 @@
      "bio": "An engineering graduate from the National Institute of Technology, Karnataka, with a postgraduate diploma in management from IIM Bangalore. He has over 37 years in banking, with particular expertise in interest-rate and currency markets. He now heads the branch network, deposits, payments, treasury, marketing and digital channels, which makes him central to the bank's push to rebuild its share of cheap current and savings deposits."
     }
    ],
-   "changes": "Deputy MD Kaizad Bharucha, with the bank for over three decades and credited by the board as a principal architect of its credit framework, asked to leave from 31 Dec 2026; the board accepted on 17 Oct 2026 and sent it to the RBI. CEO Sashidhar Jagdishan will not seek a third term (ends 26 October 2026); the board sent two names to the RBI on 12 September 2026, and on 1 October the RBI approved Anup Bagchi (MD & CEO of ICICI Prudential Life) as MD & CEO for three years from 27 October 2026. Executive Director Bhavesh Zaveri left on 18 April 2026 at the end of his term. CFO Srinivasan Vaidyanathan retires in November 2026; Puneet Sharma (ex-Axis Bank CFO) joined as CFO-designate on 1 September. Jigar Shah (ex-KKR India) becomes General Counsel on 1 October 2026. Chairman Atanu Chakraborty resigned in March 2026; Rajiv Kumar became part-time chairman on 15 July 2026. On 12 September the board also approved Jimmy Tata as an executive director and a fourth whole-time director post, both pending RBI approval.",
+   "changes": "Deputy MD Kaizad Bharucha, with the bank for over three decades and credited by the board as a principal architect of its credit framework, asked to leave from 31 Dec 2026; the board accepted on 17 Oct 2026 and sent it to the RBI. Anup Bagchi took over as MD & CEO on 27 Oct 2026, when Sashidhar Jagdishan's second term ended; the board sent two names to the RBI on 12 September 2026, and on 1 October the RBI approved Anup Bagchi (MD & CEO of ICICI Prudential Life) as MD & CEO for three years from 27 October 2026. Executive Director Bhavesh Zaveri left on 18 April 2026 at the end of his term. CFO Srinivasan Vaidyanathan retires in November 2026; Puneet Sharma (ex-Axis Bank CFO) joined as CFO-designate on 1 September. Jigar Shah (ex-KKR India) becomes General Counsel on 1 October 2026. Chairman Atanu Chakraborty resigned in March 2026; Rajiv Kumar became part-time chairman on 15 July 2026. On 12 September the board also approved Jimmy Tata as an executive director and a fourth whole-time director post, both pending RBI approval.",
    "sources": [
     "https://www.sec.gov/Archives/edgar/data/1144967/000119312526322004/d88195d20f.htm",
     "https://www.business-standard.com/companies/news/hdfc-bank-md-ceo-shortlist-two-names-rbi-sashidhar-jagdishan-successor-126091200618_1.html",
@@ -14938,9 +14938,10 @@
     "https://zeenews.india.com/economy/hdfc-bank-proposes-two-names-for-md-and-ceo-posts-re-appoints-executive-director-v-srinivasa-rangan-3071263.html",
     "https://www.kotakneo.com/news/stocks/hdfc-bank-md-ceo-announcement-rbi-decision-anup-bagchi-kaizad-bharucha/",
     "https://nsearchives.nseindia.com/corporate/HDFCBANK3_01102026182319_SE_Intimation-_Anup_Bagchi.pdf",
-    "https://nsearchives.nseindia.com/corporate/HDFCBANK_17102026161248_Stockexchangeintimation_LV_KB.pdf"
+    "https://nsearchives.nseindia.com/corporate/HDFCBANK_17102026161248_Stockexchangeintimation_LV_KB.pdf",
+    "https://nsearchives.nseindia.com/corporate/HDFCBANK_27102026080232_SEIntimation_appt_of_AB.pdf"
    ],
-   "updatedOn": "2026-10-18"
+   "updatedOn": "2026-10-28"
   },
   {
    "company": "State Bank of India",
