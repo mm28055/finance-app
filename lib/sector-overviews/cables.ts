@@ -725,8 +725,8 @@ export const cables: SectorOverview = {
         {
             company: 'HFCL', rank: 8, stance: 'AVOID', segment: FIBRE,
             what: "Maker of optical fibre and fibre cable, mostly exported to US data-centre and telecom buyers, plus telecom equipment, a young defence arm and government fibre-network contracts such as BharatNet.",
-            view: "**Peak-cycle profit on a poor cash and governance record.** Telecom products earned 30.8% in Q2 FY27 and sales grew 144%. But five years of profit (₹1,484cr) produced only ₹413cr of operating cash, about ₹2,545cr sits in loss-making government networks, and promoters cut their stake from 37.8% to 28.3%, mostly by selling, before taking warrants at ₹74; the shares are in NSE's strictest surveillance stage. The price needs about {need:HFCL|23}% a year against my ~18%.",
-            watch: 'Operating cash staying positive and debtors under 100 days; the network loss shrinking once the Army maintenance contract is signed; the margin holding at 23% or more as fibre prices cool.',
+            view: "**Peak-cycle profit on a poor cash and governance record.** Telecom products earned 30.8% in Q2 FY27 and sales grew 144%. But five years of profit (₹1,484cr) produced only ₹413cr of operating cash, about ₹2,545cr sits in loss-making government networks, and promoters cut their stake from 37.8% to 28.3%, mostly by selling, before taking warrants at ₹74; the shares are in NSE's strictest surveillance stage. On the Q2 call (19 October) the MD said a board committee advised by EY is about to recommend a restructuring, with the loss-making turnkey (EPC) arm 'under active consideration', and that debt will start falling this year. The price needs about {need:HFCL|23}% a year against my ~18%.",
+            watch: 'The restructuring decision, due within weeks of the 19 October call, and what it does with the EPC arm; operating cash staying positive and debtors under 100 days; the margin holding at 23% or more as fibre prices cool.',
         },
         {
             company: 'Advait Energy', rank: 9, stance: 'AVOID', segment: TENDER,
