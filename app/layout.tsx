@@ -46,11 +46,19 @@ export default function RootLayout({
           </div>
 
           <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
+          {/* iPad only (globals.css): the notes sidebar is tucked away; this opens it */}
+          <button
+            onClick={() => setIsSidebarOpen(true)}
+            title="Notes and sign-in"
+            className="tablet-menu-btn"
+          >
+            <Menu className="w-5 h-5" />
+          </button>
           <SectorChat />
           <NotesPanel />
           <FilingsDrawer />
           <ShiftsDrawer />
-          <div className="pt-14 md:pt-0 md:pl-[260px] 2xl:pl-72 transition-all duration-300">
+          <div className="sidebar-shift pt-14 md:pt-0 md:pl-[260px] 2xl:pl-72 transition-all duration-300">
             {children}
           </div>
           <Toaster position="bottom-right" richColors />
