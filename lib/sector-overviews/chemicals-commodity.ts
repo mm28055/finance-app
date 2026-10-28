@@ -718,7 +718,7 @@ export const chemicalsCommodity: SectorOverview = {
         {
             company: 'Deepak Fert & Petro', rank: 5, stance: 'CYCLICAL', segment: NITRO,
             what: "A gas-to-ammonia-to-nitrates chain at Taloja: technical ammonium nitrate for mining explosives, nitric acid, isopropyl alcohol and nitrophosphate fertilisers.",
-            view: "**A real expansion, late, with promoter dealings to explain.** Gopalpur and Dahej should add about 60% to ammonium nitrate and 35% to nitric acid, and Equinor gas saves about ₹300cr a year. But Q1's 26% margin was a war peak, the plants slipped twice, FY26 cash was only 12% of operating profit, trailing net debt is about 2.3x, and a promoter entity holds high-yield subsidiary debentures and runs a fund that took group money. The price needs about {need:Deepak Fert & Petro|12}% a year against my ~8%.",
+            view: "**A real expansion, late, with promoter dealings to explain.** Gopalpur and Dahej should add about 60% to ammonium nitrate and 35% to nitric acid, and Equinor gas saves about ₹300cr a year. But Q1's 26% margin was a war peak, the plants slipped twice, FY26 cash was only 12% of operating profit, trailing net debt is about 2.3x, and a promoter entity holds high-yield subsidiary debentures and runs a fund that took group money. The price needs about {need:Deepak Fert & Petro|12}% a year against my ~8%. **28 Oct 2026:** the price fitted briefly and is now just past it; ICRA moved its outlook to Positive on 15 October, but the government cut gas supplies to fertiliser plants on 12 October and the plants are not yet running, so it stays wait.",
             watch: 'Both plants commissioned and at 80% by Q4 FY27; net debt falling from ₹4,719cr; an end to promoter-linked financing.',
         },
         {
@@ -748,7 +748,7 @@ export const chemicalsCommodity: SectorOverview = {
         {
             company: 'DCW', rank: 10, stance: 'CYCLICAL', segment: SALT,
             what: "A Tamil Nadu and Gujarat maker of caustic soda, PVC, soda ash and synthetic rutile, with specialty CPVC resin and iron-oxide pigments.",
-            view: "**Good specialty products inside a sub-scale commodity business, with governance flags.** Specialty earns about 30% and 80% of operating profit, and net debt is small. But the ₹400cr target became ₹300cr, basic chemicals lost money in Q1, the auditor flags four disputes with no provision, and family pay was up to ₹37cr against ₹48cr of profit. The price needs about {need:DCW|13}% a year against my ~9%.",
+            view: "**Good specialty products inside a sub-scale commodity business, with governance flags.** Specialty earns about 30% and 80% of operating profit, and net debt is small. But the ₹400cr target became ₹300cr, basic chemicals lost money in Q1, the auditor flags four disputes with no provision, and family pay was up to ₹37cr against ₹48cr of profit. The price needs about {need:DCW|13}% a year against my ~9%. **28 Oct 2026:** the price fitted briefly and is now full again; nothing has changed on the governance flags or the cut target, so it stays pass.",
             watch: 'Basic chemicals back in profit in Q2; the buyback decision; the land-repossession and electricity-tax cases.',
         },
         {
