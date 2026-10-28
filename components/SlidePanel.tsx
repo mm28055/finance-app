@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import { createPortal } from 'react-dom';
 import { X } from 'lucide-react';
 
 /**
@@ -28,11 +29,18 @@ export function usePanelForLink(href: string) {
     return { open, link, close: () => setOpen(false) };
 }
 
-/** A panel that slides in from the right over about half the screen, the page dimmed behind it. */
+/**
+ * A panel that slides in from the right over about half the screen, the page dimmed behind it.
+ * Rendered straight into <body>: a parent with a blur or transform (the sticky search row has
+ * backdrop-blur) would otherwise pin the hidden panel to that parent, leaving it poking out on the right.
+ */
 export function SlidePanel({ open, onClose, title, subtitle, children }: {
     open: boolean; onClose: () => void; title: string; subtitle?: string; children: React.ReactNode;
 }) {
-    return (
+    const [mounted, setMounted] = React.useState(false);
+    React.useEffect(() => setMounted(true), []);
+    if (!mounted) return null;
+    return createPortal(
         <>
             <div onClick={onClose} aria-hidden
                 className={`fixed inset-0 z-[60] bg-black/20 transition-opacity duration-300 ${open ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} />
@@ -47,6 +55,7 @@ export function SlidePanel({ open, onClose, title, subtitle, children }: {
                 </header>
                 <div className="flex-1 overflow-y-auto p-4 custom-scrollbar">{children}</div>
             </aside>
-        </>
+        </>,
+        document.body
     );
 }
