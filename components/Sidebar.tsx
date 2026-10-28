@@ -19,14 +19,14 @@ export const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
             {/* Backdrop for Mobile */}
             {isOpen && (
                 <div
-                    className="fixed inset-0 bg-black/50 z-40 md:hidden animate-in fade-in duration-200"
+                    className="sidebar-backdrop fixed inset-0 bg-black/50 z-40 md:hidden animate-in fade-in duration-200"
                     onClick={onClose}
                 />
             )}
 
             <aside className={cn(
-                "w-[260px] 2xl:w-72 bg-white border-r border-gray-200 flex flex-col h-screen fixed left-0 top-0 overflow-hidden shadow-sm transition-transform duration-300 z-50",
-                isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
+                "sidebar-panel w-[260px] 2xl:w-72 bg-white border-r border-gray-200 flex flex-col h-screen fixed left-0 top-0 overflow-hidden shadow-sm transition-transform duration-300 z-50",
+                isOpen ? "sidebar-open translate-x-0" : "-translate-x-full md:translate-x-0"
             )}>
                 {/* Close button, phones only (the brand block was removed) */}
                 <div className="px-5 pt-4 flex items-center justify-end md:hidden">

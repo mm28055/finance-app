@@ -32,6 +32,22 @@
   --breakpoint-md: 60rem;
 }
 
+/* iPad (a touch screen at desktop width, portrait or landscape): no notes sidebar, so the
+   dashboard gets the full width. The small menu button at the bottom left slides it in. */
+.tablet-menu-btn {
+  display: none;
+  position: fixed; left: 20px; bottom: 20px; z-index: 40;
+  width: 44px; height: 44px; align-items: center; justify-content: center;
+  border-radius: 9999px; background: #fff; color: #4b5563;
+  border: 1px solid #e5e7eb; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+@media (min-width: 60rem) and (pointer: coarse) {
+  .sidebar-panel:not(.sidebar-open) { transform: translateX(-100%); }
+  .sidebar-shift { padding-left: 0; }
+  .sidebar-backdrop { display: block; }
+  .tablet-menu-btn { display: flex; }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
