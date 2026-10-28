@@ -517,7 +517,7 @@ export const softwareBpm: SectorOverview = {
         {
             company: 'Datamatic Global Ser', rank: 3, stance: 'SCALEUP', segment: BPM_GEN,
             what: "Datamatics Global Services: a Kanodia-family-run mix of publishing services (9 of the 10 largest publishers), finance and document processing, IT projects, call centres and AI products; 54% of revenue from the US.",
-            view: "**A steadier, richer business that grows slowly.** The margin reached a record 18.7% in FY26 and about 20% in Q1, cash conversion is strong and net cash is about ₹500cr after the TNQ payout. But organic growth is guided at about 8%, two of three segments shrank in FY26, the order book is still undisclosed, and the ₹3,000cr revenue goal needs acquisitions. The price needs about {need:Datamatic Global Ser|12–13}% a year against my ~10%.",
+            view: "**A steadier, richer business that grows slowly.** The margin reached a record 18.7% in FY26 and about 20% in Q1, cash conversion is strong and net cash is about ₹500cr after the TNQ payout. But organic growth is guided at about 8%, two of three segments shrank in FY26, the order book is still undisclosed, and the ₹3,000cr revenue goal needs acquisitions. The price needs about {need:Datamatic Global Ser|12–13}% a year against my ~10%. **28 Oct 2026:** the price now fits, but growth is still about 8% organic and the order book undisclosed; it appointed Rajesh Gharpure, ex-Persistent, as COO on 15 October. It stays follow.",
             watch: 'A disclosed order book; call-centre revenue growing again; TruAI and KAiBRE producing named revenue.',
         },
         {
