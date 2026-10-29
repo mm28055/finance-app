@@ -644,6 +644,11 @@
    "read": "positive",
    "change": "As this is the first call on record, the major development is the allocation of ₹320 crore in fresh IPO proceeds strictly for debt repayment to achieve a near-zero interest burden, alongside a 21% jump in average realizations.",
    "on": "2026-10-28"
+  },
+  "Chembond Chemicals|Special call 24 Oct 2026": {
+   "read": "concerning",
+   "change": "Management introduced a new long-term revenue target of ₹1,000 Cr over the next 3 years, but severe raw material inflation caused Q2 EBITDA to plummet 40% sequentially.",
+   "on": "2026-10-30"
   }
  }
 }
