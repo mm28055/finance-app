@@ -1,5 +1,5 @@
 {
- "date": "2026-10-28",
+ "date": "2026-10-30",
  "calls": {
   "Anthem Biosciences": {
    "call": "follow",
@@ -714,7 +714,7 @@
    "sector": "Software"
   },
   "Onward Technologies": {
-   "call": "follow",
+   "call": "own",
    "sector": "Software"
   },
   "Tata Technologies": {
