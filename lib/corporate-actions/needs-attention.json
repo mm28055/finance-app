@@ -3532,5 +3532,110 @@
     "subject": "Checkpoint met: sterlite-technologies-q2fy27-4",
     "why": "Order book above Q1's ₹18,618cr after about ₹16,000cr of July–October wins — actual ₹35,274cr (met). Wins are adding to the book faster than revenue draws it down Weigh it in the call and write the outcome on the checkpoint.",
     "addedOn": "2026-10-28"
+  },
+  {
+    "company": "Apollo Tyres",
+    "sector": "Tyres",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Emerald Sage Investment Ltd (public holder) cut its stake from 9.93% to 5.67%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-29"
+  },
+  {
+    "company": "Crompt.Greaves Cons.",
+    "sector": "Consumer Durables",
+    "subject": "Big holder change: Sep 2026",
+    "why": "Mirae Asset Large Cap Fund (DII) raised its stake from 7.72% to 9.95%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
+    "addedOn": "2026-10-29"
+  },
+  {
+    "company": "Yasho Industries",
+    "sector": "Chemicals",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from stretched to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-29"
+  },
+  {
+    "company": "Brigade Enterprises",
+    "sector": "Realty",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-29"
+  },
+  {
+    "company": "Sakar Healthcare",
+    "sector": "Pharma",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from stretched to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-29"
+  },
+  {
+    "company": "Cyient",
+    "sector": "Software",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-29"
+  },
+  {
+    "company": "Waaree Renewables",
+    "sector": "Solar PV Cells EPC",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-29"
+  },
+  {
+    "company": "Beta Drugs",
+    "sector": "Pharma",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-29"
+  },
+  {
+    "company": "Himadri Speciality",
+    "sector": "Chemicals",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-29"
+  },
+  {
+    "company": "Paisalo Digital",
+    "sector": "Finance",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-29"
+  },
+  {
+    "company": "Mastek",
+    "sector": "Software",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-29"
+  },
+  {
+    "company": "Mahindra Life. Dev",
+    "sector": "Realty",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-29"
+  },
+  {
+    "company": "Rallis India",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-29"
+  },
+  {
+    "company": "Himadri Speciality",
+    "sector": "Chemicals",
+    "subject": "Checkpoint missed: himadri-speciality-q2fy27-1",
+    "why": "Operating margin holding at about 20% — actual 18.6% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-29"
+  },
+  {
+    "company": "Waaree Renewables",
+    "sector": "Solar PV Cells EPC",
+    "subject": "Checkpoint met: waaree-renewables-q2fy27-2",
+    "why": "Operating margin holds at or above the new ~15% aim (18.8% in Q1) — actual 15.1% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-29"
   }
 ]

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28",
+ "updated": "2026-10-29",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -3430,7 +3430,10 @@
    "target": 20,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "18.6%",
+   "resolvedOn": "2026-10-29",
+   "resolvedBy": "auto"
   },
   {
    "id": "himadri-speciality-q2fy27-2",
@@ -21660,7 +21663,10 @@
    "target": 15,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "15.1%",
+   "resolvedOn": "2026-10-29",
+   "resolvedBy": "auto"
   },
   {
    "id": "waaree-renewables-q4fy27-1",
