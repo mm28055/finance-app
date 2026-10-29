@@ -75,8 +75,11 @@ function byDay<T extends { date: string }>(rows: T[]) {
 export function ResultsFeed({ results, onCompany }: { results: ResultRow[]; onCompany?: (c: string) => void }) {
     const [verdict, setVerdict] = React.useState('any');
     const [q, setQ] = React.useState('');
+    const [sector, setSector] = React.useState('any');
     const who = useWho();
-    const shown = results.filter(r => (verdict === 'any' || r.take?.verdict === verdict) && who.ok(r) && (!q || r.company.toLowerCase().includes(q.toLowerCase())));
+    const sectors = React.useMemo(() => [...new Set(results.map(r => r.sector).filter(Boolean))].sort(), [results]);
+    const shown = results.filter(r => (verdict === 'any' || r.take?.verdict === verdict) && who.ok(r)
+        && (sector === 'any' || r.sector === sector) && (!q || r.company.toLowerCase().includes(q.toLowerCase())));
     return (
         <div className="flex flex-col gap-4">
             <div className="sticky top-[var(--filters-top,0px)] z-10 shadow-[0_0_0_8px_#FAFBFC] flex flex-wrap items-center gap-2 bg-white border border-gray-200 rounded-xl p-3">
@@ -85,6 +88,10 @@ export function ResultsFeed({ results, onCompany }: { results: ResultRow[]; onCo
                 ))}
                 <span className="w-px h-5 bg-gray-200 mx-1" />
                 {who.control}
+                <select className={select} value={sector} onChange={e => setSector(e.target.value)}>
+                    <option value="any">All sectors</option>
+                    {sectors.map(s => <option key={s} value={s}>{s}</option>)}
+                </select>
                 <SearchBox q={q} setQ={setQ} />
                 <span className="ml-auto text-[11px] text-gray-400">{shown.length} results</span>
             </div>

@@ -18,7 +18,7 @@ jobs:
   filings:
     name: Summarise material filings
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 300
 
     steps:
       - name: Checkout code
@@ -95,6 +95,31 @@ jobs:
           git commit -m "Update market news, price moves and the results calendar"
           git pull --rebase
           git push
+
+      # The day's results figures and view, before the slow transcript step: on a busy night
+      # (28 Oct, 53 results) the job hit its time cap during transcripts and no results were saved.
+      # The second pass after transcripts only adds call notes.
+      - name: Results figures and the overnight view (first pass)
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        timeout-minutes: 60
+        run: |
+          npx tsx scripts/sync-results.ts
+          if git diff --quiet lib/results; then
+            echo "No results changes."
+            exit 0
+          fi
+          git config user.name "filings-bot"
+          git config user.email "filings-bot@users.noreply.github.com"
+          git add lib/results/results.json
+          git commit -m "Update quarter results and the overnight view"
+          git pull --rebase
+          git push
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+          GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
+          GOOGLE_AI_KEYS: ${{ secrets.GOOGLE_AI_KEYS }}
 
       # Call transcripts filed on NSE (and, for companies NSE does not list, on
       # Screener) over the last three days: results calls go to their quarter,
