@@ -1,6 +1,6 @@
 
 import { prisma } from './prisma';
-import { nextClient } from './gemini';
+import { nextClient, isRateLimit, rateLimitWaitMs } from './gemini';
 
 const MODEL_NAME = "gemini-embedding-001";
 const CHUNK_SIZE = 1000;
@@ -32,7 +32,9 @@ async function embedWithRetry(text: string): Promise<number[] | null> {
                 console.error(`[RAG] Embedding failed after ${EMBED_RETRIES} attempts: ${e.message}`);
                 return null;
             }
-            await new Promise(r => setTimeout(r, attempt * 1500));
+            // A rate limit needs a real wait (Google's own hint, or 20s/40s); other errors a short one.
+            const ms = isRateLimit(e) ? rateLimitWaitMs(e, attempt - 1) : attempt * 1500;
+            await new Promise(r => setTimeout(r, ms));
         }
     }
     return null;

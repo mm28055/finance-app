@@ -34,6 +34,24 @@ export function nextClient(): GoogleGenerativeAI {
 /** Number of keys available, so callers can size their own concurrency. */
 export const GEMINI_KEY_COUNT = ALL_KEYS.length;
 
+export function isRateLimit(error: any): boolean {
+    return error?.status === 429 || String(error?.message ?? '').includes('429');
+}
+
+/**
+ * How long to wait after a rate limit. Google usually says ("retry in 37s"); otherwise
+ * back off 20s, 40s, 80s, then 2 minutes. This is what lets the app run on one key.
+ */
+export function rateLimitWaitMs(error: any, round: number): number {
+    const msg = String(error?.message ?? '');
+    const hint = msg.match(/retry in ([\d.]+)s/i) || msg.match(/"retryDelay":"(\d+)s"/);
+    const ms = hint ? Math.ceil(parseFloat(hint[1])) * 1000 + 1000 : 20000 * 2 ** round;
+    return Math.min(ms, 120000);
+}
+
+const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
+const MAX_WAITS = 5; // about 6 minutes of waiting at most, then give up
+
 class RotatingModel {
     private modelName: string;
     private tools?: any[];
@@ -45,15 +63,11 @@ class RotatingModel {
 
     // Proxy specifically for generateContent which is the main method used
     async generateContent(prompt: any): Promise<any> {
-        let attempts = 0;
-        // Try each key at least once if needed
-        const maxAttempts = Math.max(ALL_KEYS.length, 3);
-
-        // Track the starting index to avoid infinite loops if all fail
         let keyIdx = currentKeyIndex;
+        let limitedThisRound = 0;
+        let waits = 0;
 
-        for (let i = 0; i < maxAttempts; i++) {
-            // Get current key safely
+        while (true) {
             const key = ALL_KEYS[keyIdx];
             keyIdx = (keyIdx + 1) % ALL_KEYS.length;
 
@@ -63,19 +77,27 @@ class RotatingModel {
             try {
                 return await model.generateContent(prompt);
             } catch (error: any) {
-                // If 429 (Too Many Requests), we retry with next key
-                if (error.status === 429 || (error.message && error.message.includes('429'))) {
+                // Anything other than a rate limit (bad request, safety block...) fails straight away.
+                if (!isRateLimit(error)) throw error;
+
+                // Another key not yet tried this round: switch to it.
+                limitedThisRound++;
+                if (limitedThisRound < ALL_KEYS.length) {
                     console.warn(`[Gemini] Key ...${key.slice(-4)} hit rate limit (429). Rotating...`);
-                    // Continue to next iteration -> next key
                     continue;
                 }
 
-                // If it's another error, throw it immediately (e.g. 400 Bad Request, safety, etc.)
-                throw error;
+                // Every key is limited (always the case with one key): wait, then try again.
+                if (waits >= MAX_WAITS) {
+                    throw new Error(`Gemini still rate limited (429) after waiting ${MAX_WAITS} times.`);
+                }
+                const ms = rateLimitWaitMs(error, waits);
+                waits++;
+                limitedThisRound = 0;
+                console.warn(`[Gemini] Rate limited (429). Waiting ${Math.round(ms / 1000)}s before try ${waits}/${MAX_WAITS}...`);
+                await sleep(ms);
             }
         }
-
-        throw new Error(`All ${ALL_KEYS.length} Gemini keys exhausted (Rate Limited).`);
     }
 
     // Expose other methods if needed by wrapping them similarly, 
