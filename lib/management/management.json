@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28",
+ "updated": "2026-10-30",
  "companies": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -11020,7 +11020,7 @@
    "people": [
     {
      "name": "Shekhar Bajaj",
-     "role": "Executive Chairman",
+     "role": "Executive Chairman (to 31 Dec 2026; then Non-Executive Director and Chairman Emeritus)",
      "since": "Joined 1980; MD 1984; CMD 1990; Executive Chairman (stepped back as KMP in Apr 2025)",
      "family": true,
      "relation": "Promoter; grandson of Jamnalal Bajaj; father-in-law of Executive Director Pooja Bajaj; elder brother of the late director Madhur Bajaj",
@@ -11073,7 +11073,7 @@
      "bio": "Has over 22 years in healthcare and FMCG marketing at Johnson & Johnson, Marico, Dabur, Henkel and GSK. Her last role was Country Director, Vision Care at Johnson & Johnson India. She joined in June 2026 to run marketing for the Bajaj and Morphy Richards brands."
     }
    ],
-   "changes": "Ashween Anand (ex-Tata Starbucks CFO) became CFO in May 2026, after E C Prasad left in Dec 2025 and Suketu Shah served as interim CFO. Tiny Sengupta joined as CMO (Jun 2026) and Krishnan Sundaram as Chief Growth & New Business Officer (Aug 2026).",
+   "changes": "Shekhar Bajaj steps down as Executive Chairman on 31 Dec 2026 to become Non-Executive Director and Chairman Emeritus; independent director Sudarshan Sampathkumar becomes Non-Executive Chairman from 1 Jan 2027. Ashween Anand (ex-Tata Starbucks CFO) became CFO in May 2026, after E C Prasad left in Dec 2025 and Suketu Shah served as interim CFO. Tiny Sengupta joined as CMO (Jun 2026) and Krishnan Sundaram as Chief Growth & New Business Officer (Aug 2026).",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_29705_BAJAJELEC_2025_2026_A_5023392_10072026152552.pdf",
     "https://nsearchives.nseindia.com/corporate/BAJAJELEC_28032025155935_SignedSEIntimationforMarch282025.pdf",
@@ -11082,9 +11082,10 @@
     "https://nsearchives.nseindia.com/corporate/BAJAJELEC_13072024111126_SignedFSEIntimationApptofVishalChaddaasCOO.pdf",
     "https://nsearchives.nseindia.com/corporate/BAJAJELEC_15052026204532_SignedDraftIntimationPressRelease.pdf",
     "https://nsearchives.nseindia.com/corporate/BAJAJELEC_02072026215931_SignedSEIntimationPressReleaseForApptOfCMO.pdf",
-    "https://nsearchives.nseindia.com/corporate/BAJAJELEC_11082026202058_SignedSEIntimationPressRelease11082026.pdf"
+    "https://nsearchives.nseindia.com/corporate/BAJAJELEC_11082026202058_SignedSEIntimationPressRelease11082026.pdf",
+    "https://nsearchives.nseindia.com/corporate/BAJAJELEC_28102026220026_SignedDraftSEIntimationPressRelease.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-30"
   },
   {
    "company": "Epack Durable",
@@ -11112,7 +11113,7 @@
     },
     {
      "name": "Rajesh Kumar Mittal",
-     "role": "Chief Financial Officer",
+     "role": "Chief Financial Officer (resigned, effective 31 Oct 2026)",
      "since": "CFO (listed as KMP at 31 Mar 2026)",
      "family": false,
      "bio": "Epack's CFO and a key managerial person. After Executive Director & Group CFO Narayan Lodha left in April 2026, he is the senior finance executive. The company's filings do not give his education or earlier career."
@@ -11125,7 +11126,7 @@
      "bio": "Has been with Epack since it was set up and oversees its manufacturing operations. He was President – Manufacturing and Operations before being made Chief Operating Officer in May 2025. The company's filings do not give his education."
     }
    ],
-   "changes": "Executive Director & Group CFO Narayan Lodha resigned (effective 30 Apr 2026). Esha Gupta became company secretary in May 2026. Senior managers who left: HR head Sumedh Singh (Jun 2026), CIO Mohammed Kaishulla (Jul 2026), and SVP R&D & Sourcing Maneesh Bahuguna, who was removed by the board (Aug 2026).",
+   "changes": "CFO Rajesh Kumar Mittal resigned for personal reasons, effective 31 Oct 2026; no successor named. Executive Director & Group CFO Narayan Lodha resigned (effective 30 Apr 2026). Esha Gupta became company secretary in May 2026. Senior managers who left: HR head Sumedh Singh (Jun 2026), CIO Mohammed Kaishulla (Jul 2026), and SVP R&D & Sourcing Maneesh Bahuguna, who was removed by the board (Aug 2026).",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_30691_EPACK_2025_2026_A_9419387_27082026000307.pdf",
     "https://nsearchives.nseindia.com/corporate/EPACKNSE_23042026152729_ResignationNarayanLodhaF.pdf",
@@ -11133,9 +11134,10 @@
     "https://nsearchives.nseindia.com/corporate/EPACKNSE_01052025175528_Intimation__01-05-2025.pdf",
     "https://nsearchives.nseindia.com/corporate/EPACKNSE_15062026154505_Intimation_Resignation_Sumedh_Singh.pdf",
     "https://nsearchives.nseindia.com/corporate/EPACKNSE_18072026175807_Intimation_Resignation_Kaishulla.pdf",
-    "https://nsearchives.nseindia.com/corporate/EPACKNSE_21082026180657_Intimation_Cessation_Maneesh_Bahuguna.pdf"
+    "https://nsearchives.nseindia.com/corporate/EPACKNSE_21082026180657_Intimation_Cessation_Maneesh_Bahuguna.pdf",
+    "https://nsearchives.nseindia.com/corporate/EPACKNSE_29102026195825_Final_Outcome_V2_Signed.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-30"
   },
   {
    "company": "Carysil",
@@ -15984,7 +15986,7 @@
    "company": "Kaveri Seed Company",
    "sector": "Food Products",
    "style": "Promoter-run",
-   "styleNote": "A founder-family company from Secunderabad. Founder G.V. Bhaskar Rao (over 75) is Chairman and MD; his wife Vanaja Devi (over 70) and son Dr G. Pawan are whole-time directors, and his daughter Dr G. Madhushree is a non-executive director. Two brothers from the wider promoter group, C. Vamsheedhar and C. Mithun Chand, are also whole-time directors; the annual report says they are not related to the Gundavaram family. Mithun Chand is the public face on results calls. There is no hired CEO, and the CFO post has been vacant since July 2026. Directors and the family trusts hold 60.5%.",
+   "styleNote": "A founder-family company from Secunderabad. Founder G.V. Bhaskar Rao (over 75) is Chairman and MD; his wife Vanaja Devi (over 70) and son Dr G. Pawan are whole-time directors, and his daughter Dr G. Madhushree is a non-executive director. Two brothers from the wider promoter group, C. Vamsheedhar and C. Mithun Chand, are also whole-time directors; the annual report says they are not related to the Gundavaram family. Mithun Chand is the public face on results calls. There is no hired CEO; the CFO post, vacant since July 2026, was filled on 28 October 2026. Directors and the family trusts hold 60.5%.",
    "people": [
     {
      "name": "G.V. Bhaskar Rao",
@@ -16030,15 +16032,22 @@
      "relation": "Promoter-group member; brother of C. Mithun Chand; not related to the Gundavaram family",
      "stake": "1.76% (9,07,349 shares, 31 Mar 2026, FY26 annual report)",
      "bio": "A group promoter whom the company credits with over three decades of experience. He has driven marketing strategy, product development and oversight of research, and has led the company's digital work to reach farmers and improve efficiency. He is being re-appointed for five years from November 2026; he was paid about ₹2.4cr a year."
+    },
+    {
+     "name": "M. Bhanu Prakash",
+     "role": "Chief Financial Officer (from 28 Oct 2026)",
+     "family": false,
+     "bio": "Appointed CFO on 28 October 2026, with 26 years of experience across sectors (company filing). Earlier employers are not given in the filing summary reviewed."
     }
    ],
-   "changes": "CFO K.V. Chalapathi Reddy (CFO since February 2019) retired on 31 July 2026; the company said a successor would be announced, and none had been named by the Q1 call on 14 August. The AGM votes on new five-year terms for all four promoter whole-time directors and the CMD from 15 Nov 2026.",
+   "changes": "M. Bhanu Prakash appointed CFO on 28 Oct 2026, filling a post vacant since July. CFO K.V. Chalapathi Reddy (CFO since February 2019) retired on 31 July 2026; the company said a successor would be announced, and none had been named by the Q1 call on 14 August. The AGM votes on new five-year terms for all four promoter whole-time directors and the CMD from 15 Nov 2026.",
    "sources": [
     "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=def40f42-cb1c-4a5a-9355-2f29fb00e3ed.pdf",
     "https://www.investywise.com/kaveri-seed-company-limited-cfo-retirement-announcement/",
-    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=995362d8-81c6-4d3b-b0f2-449700930751.pdf"
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=995362d8-81c6-4d3b-b0f2-449700930751.pdf",
+    "https://nsearchives.nseindia.com/corporate/KSCL_28102026141614_CFO_APPOINTMENT.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-30"
   },
   {
    "company": "Zydus Wellness",
@@ -21567,7 +21576,7 @@
     },
     {
      "name": "Mustafa Abid Kachwala",
-     "role": "Whole-time Director & Chief Financial Officer",
+     "role": "Whole-time Director (CFO until 27 Nov 2026)",
      "since": "With the company since 2010; re-appointed whole-time director from April 2026 to March 2029",
      "family": false,
      "stake": "500 shares (FY26 annual report), negligible",
@@ -21598,15 +21607,22 @@
      "role": "Vice President – Production & Planning",
      "family": false,
      "bio": "The FY26 annual report names him as the senior manager in charge of production and planning. The company has not published his background."
+    },
+    {
+     "name": "Drashti Bhil",
+     "role": "Chief Financial Officer (from 28 Nov 2026)",
+     "family": false,
+     "bio": "Appointed CFO effective 28 November 2026, succeeding Mustafa Kachwala (board outcome, 28 Oct 2026). Earlier career is not given in the filing summary reviewed."
     }
    ],
-   "changes": "COO Kiran Kagalkar resigned in May 2025, and the FY26 annual report lists no replacement. Company Secretary Kinjal Shah resigned in July 2025 and Ruthu Parampogi took over. In June 2026 the board promoted Shah Alam, Anshul Gupta and Narender Bhakhri (procurement and supply chain) to senior management.",
+   "changes": "Drashti Bhil to become CFO on 28 Nov 2026, succeeding Mustafa Kachwala, who stays a whole-time director. COO Kiran Kagalkar resigned in May 2025, and the FY26 annual report lists no replacement. Company Secretary Kinjal Shah resigned in July 2025 and Ruthu Parampogi took over. In June 2026 the board promoted Shah Alam, Anshul Gupta and Narender Bhakhri (procurement and supply chain) to senior management.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_29466_AEROFLEX_2025_2026_A_14347317_27062026163212.pdf",
     "https://nsearchives.nseindia.com/corporate/AEROFLEXINDIA_18062026193657_ailbmoutcome18062026signed.pdf",
-    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1694495_16072026062122_WEB.xml"
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1694495_16072026062122_WEB.xml",
+    "https://nsearchives.nseindia.com/corporate/AEROFLEXINDIA_28102026181947_BMOutcomesigned.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-30"
   },
   {
    "company": "Venus Pipes & Tubes",
@@ -26023,22 +26039,23 @@
      "bio": "Has more than three decades of experience in pharmaceuticals and specialty chemicals. As Managing Director he oversees operations, projects, regulatory compliance and sustainability. He has been on the board since the company was set up in 2021, and shareholders raised his salary ceiling in 2025 and granted him stock options under the company's 2023 option plan."
     },
     {
-     "name": "Piyush Lakhani",
-     "role": "Chief Financial Officer",
+     "name": "Vibha Thakkar",
+     "role": "Chief Financial Officer (from Oct 2026)",
      "family": false,
-     "bio": "The company's Chief Financial Officer and a key managerial person, who signs the financial statements. His education and earlier career are not given in the sources reviewed."
+     "bio": "Appointed CFO in October 2026; previously with NOCIL (board outcome, 28 Oct 2026). Further career details are not given in the filing summary reviewed."
     }
    ],
-   "changes": "From 1 Oct 2026 Rashesh C. Gogri moves from non-executive Chairman to Managing Director and Hetal Gogri Gala from MD to Whole-time Director; approved at the 22 Sep 2026 AGM with heavy institutional opposition. Rajendra V. Gogri retired from the board at that AGM and was not replaced.",
+   "changes": "CFO Piyush Lakhani resigned effective 30 Oct 2026; Vibha Thakkar (ex-NOCIL) appointed CFO. From 1 Oct 2026 Rashesh C. Gogri moves from non-executive Chairman to Managing Director and Hetal Gogri Gala from MD to Whole-time Director; approved at the 22 Sep 2026 AGM with heavy institutional opposition. Rajendra V. Gogri retired from the board at that AGM and was not replaced.",
    "sources": [
     "https://www.aartipharmalabs.com/investors/annual-report-fy-2025-26.pdf",
     "https://www.aartipharmalabs.com/investors/annual-report-fy24-25.pdf",
     "https://www.aartipharmalabs.com/board-of-directors",
     "https://businessupturn.com/business/aarti-pharmalabs-announces-directorate-changes-post-agm/",
     "https://www.whalesbook.com/corporate-news/English/healthcarebiotech/Aarti-Pharmalabs-AGM-Shareholders-Approve-Rs-2-Dividend-and-Leadership-Changes/6ab3cc48f2017017ae718dc1",
-    "https://www.screener.in/company/AARTIPHARM/consolidated/"
+    "https://www.screener.in/company/AARTIPHARM/consolidated/",
+    "https://nsearchives.nseindia.com/corporate/AARTIPHARMA_28102026215648_Outcomefinalclearsigned.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-10-30"
   },
   {
    "company": "Piramal Pharma",
