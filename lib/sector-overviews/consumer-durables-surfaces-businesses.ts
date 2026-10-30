@@ -525,9 +525,10 @@ const profiles: BusinessProfile[] = [
         "salesDrivers": [
             "**Housing and renovation demand** in India, and the shift to larger glazed vitrified tiles.",
             "**Distribution**: more showrooms and a push into East and Northeast India, helped by the new Tezpur plant.",
-            "**Exports**: about a fifth of sales, exposed to freight costs, Gulf conflict and trade barriers.",
+            "**Exports**: about a fifth of sales, exposed to freight costs, Gulf conflict and trade barriers; export revenue fell about 18% in H1 FY27 for lack of containers, while domestic glazed-vitrified volume grew 14%.",
+            "**Guidance** (first call, 23 Oct 2026): about 15% revenue growth and 10% volume growth in FY27 if exports revive; average price up about ₹75 a square metre in a year (₹50 from price rises, ₹25 from larger, dearer sizes); no immediate capex.",
             "**Gas supply and prices**: fuel shortages from the Middle East conflict shut plants in April 2026.",
-            "**Capacity use**: most plants ran at about 59–87% in FY26."
+            "**Capacity use**: most plants ran at about 59–87% in FY26; management puts capacity at 50.6 million square metres, used 72% in FY26 and 76% in H1 FY27 (63% in Q1, 89% in Q2), aiming for 80–85% next year. The new Northeast plant ran at 50% in Q2 and should reach 75% in Q3."
         ],
         "inputs": "**Clay, feldspar and glazes** plus **natural gas and propane** to fire the kilns, and bought-in tiles from contract makers. In FY26 materials and bought-in tiles were about 42% of revenue and power and fuel about 22%.",
         "costEffect": "**Partly passed on, with a lag.** Gas is the swing cost: power and fuel rose to 24.5% of income in FY25 before easing to 21% in FY26, and the operating margin moved from 11% in FY23 to 8% in FY24 and back to 11% in FY25–FY26. Its plants can run on propane or natural gas. **Rule of thumb:** a 10% rise in gas and power costs not passed on would cut the margin by about 2 points (11% to 9%). **What happened:** fuel shortages in April 2026 cut Q1 FY27's margin to 9%; it recovered to 16% in Q2.",
@@ -548,7 +549,7 @@ const profiles: BusinessProfile[] = [
         "position": "**A mid-sized branded Morbi tile maker** with about 39 million square metres a year of tile capacity in the plants listed in the RHP (including the Solaris plant now shut), much smaller than Kajaria and Somany.",
         "money": "Borrowings were **₹377cr at March 2026** and ₹327cr at September 2026 on Screener; after the IPO it held ₹372cr of cash and deposits at September, so it was **roughly net-cash (about ₹45cr)**, and the company itself reports net cash. The IPO at ₹148 (29 September 2026) raised ₹320cr of new money, of which ₹245cr is to repay loans, plus ₹388cr that went to Carlyle's Katsura Investments; the share is now about 9% below the IPO price. Over FY22–FY26 it turned ₹443cr of operating cash out of ₹667cr of operating profit (66%), but heavy capex left five-year free cash at −₹123cr. **Depreciation changed from the declining-balance to the straight-line method from April 2026**, which raised H1 FY27 profit before tax by ₹22.5cr (consolidated). Return on equity was about 7–8% in FY26. Stock was 156 days of sales in FY26. No dividend. Promoters hold **47.04%**.",
         "watch": [
-            "The first earnings call on 23 October 2026: guidance, gas costs and export recovery.",
+            "FY27 growth of about 15% (10% in volume), as guided on the first call, and exports recovering from an 18% fall in H1.",
             "Profit growth excluding the depreciation change, and whether return on equity rises above 10%.",
             "Further share sales by Carlyle once lock-ins end."
         ],
