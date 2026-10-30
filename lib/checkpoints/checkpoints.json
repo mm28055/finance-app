@@ -3111,7 +3111,10 @@
    "ifMet": "View improves",
    "ifMissed": "Flat orders remain a reason for a trimmed estimate",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹829cr",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "auto"
   },
   {
    "id": "dynamic-cables-q2fy27-2",
@@ -3123,7 +3126,10 @@
    "target": 10,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "9.9%",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "auto"
   },
   {
    "id": "dynamic-cables-q4fy27-1",
@@ -20601,7 +20607,10 @@
    "target": 13,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "14.9%",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "auto"
   },
   {
    "id": "netweb-technologies-q3fy27-1",
@@ -36361,7 +36370,10 @@
    "ifMet": "The ramp to the ₹250cr year is on track",
    "ifMissed": "The new plant or demand is slower than promised",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "partly",
+   "actual": "₹54cr",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "auto"
   },
   {
    "id": "monolith-q2fy27-2",
@@ -36375,7 +36387,10 @@
    "ifMet": "The premium SGB Limited grade is holding the margin as volumes double",
    "ifMissed": "New capacity is being filled at lower prices",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "29.6%",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "auto"
   },
   {
    "id": "monolith-q4fy27-1",

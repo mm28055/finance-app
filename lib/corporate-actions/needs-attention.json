@@ -3678,5 +3678,208 @@
     "why": "Operating margin holds at or above the new ~15% aim (18.8% in Q1) — actual 15.1% (met).  Weigh it in the call and write the outcome on the checkpoint.",
     "addedOn": "2026-10-29",
     "handled": "2026-10-30: 15.1% met the new ~15% aim; outcome written; new H2 checkpoint added. Stays follow."
+  },
+  {
+    "company": "Shree Refrigrations",
+    "sector": "Industrials",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from stretched to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Thomas Cook India",
+    "sector": "Travel Services",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Vilas Transcore",
+    "sector": "Industrials",
+    "subject": "Call drift: pass → Fits",
+    "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Aditya Vision",
+    "sector": "Retail",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Arvind Fashions",
+    "sector": "Retail",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Asian Energy Services",
+    "sector": "Oil",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Capillary Technologies",
+    "sector": "Software",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Jubilant Ingrevia",
+    "sector": "Pharma CDMO",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Rishabh Instruments",
+    "sector": "Electrical Transformers",
+    "subject": "Call drift: pass → Fits",
+    "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Sagility",
+    "sector": "Software",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Dynamic Cables",
+    "sector": "Cables",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "TruAlt Bioenergy",
+    "sector": "Oil",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Tinna Rubber",
+    "sector": "Rubber",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Chembond Chemicals",
+    "sector": "Chemicals",
+    "subject": "New Special call 24 Oct 2026",
+    "why": "Special call 24 Oct 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Swiggy",
+    "sector": "Platform Cos",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Monolithisch India",
+    "sector": "Elect and Refrac",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Netweb Technologies",
+    "sector": "Software",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Indoco Remedies",
+    "sector": "Pharma",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "SG Mart",
+    "sector": "Retail",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Aequs",
+    "sector": "Aerospace defence",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Jupiter Life Line Hospitals",
+    "sector": "Hospitals",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Kajaria Ceramics",
+    "sector": "Consumer Durables",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Newgen Software",
+    "sector": "Software",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Horizon Industrial Parks",
+    "sector": "Realty",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Dynamic Cables",
+    "sector": "Cables",
+    "subject": "Checkpoint met: dynamic-cables-q2fy27-1",
+    "why": "Order book moving above ₹811cr — actual ₹829cr (met). View improves Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Dynamic Cables",
+    "sector": "Cables",
+    "subject": "Checkpoint partly: dynamic-cables-q2fy27-2",
+    "why": "Operating margin holding above 10% (guide 10.5–11%) — actual 9.9% (partly).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Netweb Technologies",
+    "sector": "Software",
+    "subject": "Checkpoint met: netweb-technologies-q2fy27-2",
+    "why": "Operating margin within the 13–14% guided — actual 14.9% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Monolithisch India",
+    "sector": "Elect and Refrac",
+    "subject": "Checkpoint partly: monolith-q2fy27-1",
+    "why": "Q2 FY27 revenue of ₹55–60cr, as guided on 27 July (Q1 was ₹47cr), with the new Purulia (Metalurgica) plant through its September trial runs — actual ₹54cr (partly). The new plant or demand is slower than promised Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-30"
+  },
+  {
+    "company": "Monolithisch India",
+    "sector": "Elect and Refrac",
+    "subject": "Checkpoint met: monolith-q2fy27-2",
+    "why": "Operating margin of at least 22% in Q2 FY27, the bottom of the 22–25% range management keeps guiding (Q1 was 28%). The company's EBITDA and Screener's operating margin matched in Q1; inward freight sits in other expenses — actual 29.6% (met). The premium SGB Limited grade is holding the margin as volumes double Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-10-30"
   }
 ]
