@@ -499,7 +499,7 @@ export const pharmaApi: SectorOverview = {
                         ['NGL Fine-Chem', 'No Q1 call; plant cost ₹210cr, ₹182.75cr spent by March', 'Borrowings ₹123cr (March) against ₹39cr of investments'],
                         ['Blue Jet Healthcare', '₹800cr raised from institutions in July; capex about ₹400cr in FY27', '₹400cr of liquid assets in March, plus the new money'],
                         ['SMS Pharmaceuticals', 'No Q1 call; ₹121cr of the ₹281cr project spent by June (₹35cr loan, ₹86cr own cash)', 'Borrowings ₹365cr (March); CARE projects ₹503cr by March 2027'],
-                        ['Bajaj Healthcare', 'First call; receivables 131 days in June (145 in March), aiming for 110–120; stock built against the war; capex ₹40–50cr a year', 'Net debt ₹211cr (March); cash ₹37cr; India Ratings upgraded to A in August'],
+                        ['Bajaj Healthcare', 'Receivables 131 days in June (145 in March), aiming for 110–120; inventory up again in Q2 against raw-material inflation; capex ₹65–80cr in FY27', 'Net debt ₹211cr (March); debt about 0.5 times equity at September; India Ratings upgraded to A in August'],
                         ['Shree Ganesh Remed.', 'No Q1 call; Block 7 (about ₹34cr) due in Q2 FY27', 'Borrowings ₹31cr against ₹13cr of investments'],
                     ],
                     note: 'Indian companies file cash flows only half-yearly, so Q1 figures are management’s. SMS, NGL and Shree Ganesh held no Q1 FY27 call; their figures come from presentations, annual reports and rating reports.',
@@ -587,7 +587,7 @@ export const pharmaApi: SectorOverview = {
                         ['NGL Fine-Chem', 'Margin 15–18%; ₹150cr a quarter to stabilise', 'Phase II ₹210cr (from ₹160cr)', '**Slipping**: debt above its cap; plant a quarter late; Q1 ₹139cr'],
                         ['Blue Jet Healthcare', 'Contrast media double-digit growth; bempedoic line to pass its FY25 peak', '~₹400cr in FY27; Vizag ~₹1,000cr over three years', '**Delivering**: bempedoic line back; Mahad ahead; contrast media dipped on shipping timing'],
                         ['SMS Pharmaceuticals', 'Revenue +15%; margin towards 22%', '₹281cr (₹121cr spent); start July 2027 per CARE', '**Missed**: Q1 +6% at 20%; FY26 +13% against 20%'],
-                        ['Bajaj Healthcare', 'Revenue +10–15% in FY27 and FY28 with profit alike; margin 18–20%; ₹900–1,000cr of revenue in two to three years (first call, July 2026)', '₹40–50cr a year; peptide plant and R&D centre ~₹50cr', '**Slipping**: no earlier call to compare; peptide plant was due March 2026, now Q4 FY27; cancer-drug plant from 2027 to Q4 FY28'],
+                        ['Bajaj Healthcare', 'Revenue +10–15% in FY27 and FY28 with profit alike; margin 18–20%; ₹900–1,000cr of revenue in two to three years (first call, July 2026)', '₹40–50cr a year; peptide plant and R&D centre ~₹50cr', '**On track (Q2)**: H1 revenue +15%, profit +21%; peptide plant held at 31 March 2027; cancer-drug plant brought forward to Q2 FY28; FY29 aim ₹900–1,000cr at an 18–21% margin'],
                         ['Shree Ganesh Remed.', 'FY27 “non-linear growth” withdrawn in August', 'Block 7 ~₹34cr in Q2 FY27', '**Walked back**: Q1 revenue −42%; EU distributor lost'],
                     ],
                 },
@@ -725,8 +725,8 @@ export const pharmaApi: SectorOverview = {
         {
             company: 'Bajaj Healthcare', rank: 11, stance: 'SCALEUP', segment: VOLUME,
             what: "A Thane-based maker of volume active ingredients (vitamin C and its salts, chlorhexidine, anti-epileptics), a nutraceutical ingredient for a US patent holder and formulations for government and contract customers; it also processes opium for the government, and is building peptide and cancer-drug plants.",
-            view: "**A cleaner balance sheet, but the record needs time.** Revenue grew 12.6% in FY26 and 11.3% in Q1 at a 17.5% filed margin, net debt is down to 2.0 times operating profit from 4.3 in FY24 after ₹70cr of warrant money, and India Ratings upgraded it to A in August. But FY26 profit halved when it reversed ₹33.2cr of know-how income booked in FY25, the cash cycle is 256 days, five-year cash conversion is 31%, and both new plants have slipped about a year. The price needs about {need:Bajaj Healthcare|27}% a year on reported profit against my ~12%.",
-            watch: 'The peptide plant commissioned in Q4 FY27 as now promised; receivables down to 110–120 days and cash conversion above 60%; a buyer for the last two Tarapur units.',
+            view: "**A cleaner balance sheet, but the record needs time.** Revenue grew 12.6% in FY26 and 11.3% in Q1 at a 17.5% filed margin, net debt is down to 2.0 times operating profit from 4.3 in FY24 after ₹70cr of warrant money, and India Ratings upgraded it to A in August. But FY26 profit halved when it reversed ₹33.2cr of know-how income booked in FY25, the cash cycle is 256 days, five-year cash conversion is 31%, and both new plants have slipped about a year. The price needs about {need:Bajaj Healthcare|27}% a year on reported profit against my ~12%. 30 Oct 2026: stays wait after the Q2 call (19 Oct). Revenue rose 18.9% and profit 26.9%, formulations grew 82% on the cenobamate launch, API exports 28.5%, and the 10–15% guide is on track; but the margin was 17.6% on Screener's basis (18.2% on the company's), just under the 18–20% guide, inventory rose, and capex goes up to ₹65–80cr this year.",
+            watch: 'The peptide plant complete by 31 March 2027 as now promised; receivables down to 110–120 days and inventory easing; cash conversion above 60%; the Nashik plant by Q1 FY28.',
         },
         {
             company: 'SMS Pharmaceuticals', rank: 12, stance: 'CYCLICAL', segment: VOLUME,
