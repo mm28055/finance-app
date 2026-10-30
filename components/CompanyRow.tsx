@@ -3,7 +3,7 @@ import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { FinancialMatrix } from './FinancialMatrix';
 import { AnalysisPanel } from './AnalysisPanel';
 import { FinancialTrendChart } from './FinancialTrendChart';
-import { Trash2, ArrowRight, FileText, Briefcase, EyeOff } from 'lucide-react';
+import { Trash2, ArrowRight, FileText, Briefcase, EyeOff, Newspaper, CalendarDays, Mic } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { toast } from 'sonner';
 import type { EnrichedCompany } from './SectorList';
@@ -433,10 +433,10 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                 data-company={company.name}
                                 data-tab="filings"
                                 onClick={(e) => e.stopPropagation()}
-                                className={`flex-shrink-0 cursor-pointer hover:opacity-80 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border ${TONE_STYLE[companyFilings.some(f => f.tone === 'watch') ? 'watch' : companyFilings.some(f => f.tone === 'good') ? 'good' : 'info'].chip}`}
-                                title={companyFilings.map(f => `${hoverDate(f.date)}: ${f.headline}`).join('\n')}
+                                className={`flex-shrink-0 cursor-pointer hover:opacity-80 inline-flex items-center gap-0.5 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border ${TONE_STYLE[companyFilings.some(f => f.tone === 'watch') ? 'watch' : companyFilings.some(f => f.tone === 'good') ? 'good' : 'info'].chip}`}
+                                title={`${companyFilings.length} ${companyFilings.length === 1 ? 'filing' : 'filings'}\n` + companyFilings.map(f => `${hoverDate(f.date)}: ${f.headline}`).join('\n')}
                             >
-                                {companyFilings.length} {companyFilings.length === 1 ? 'filing' : 'filings'}
+                                <FileText className="w-2.5 h-2.5" />{companyFilings.length}
                             </a>
                         )}
                         {company.newsFlag && (
@@ -447,9 +447,9 @@ export const CompanyRow = ({ company, colorTheme = { bg: 'bg-[#D4E5F7]', text: '
                                 data-tab="news"
                                 onClick={(e) => { e.stopPropagation(); markNewsSeen(); }}
                                 className="flex-shrink-0 cursor-pointer hover:opacity-80 inline-flex items-center gap-1 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border bg-[#FDF6E7] text-[#946200] border-[#F0DDAE]"
-                                title={`${hoverDate(company.newsFlag.date)}: ${company.newsFlag.headline}`}
+                                title={`News, ${hoverDate(company.newsFlag.date)}: ${company.newsFlag.headline}`}
                             >
-                                {newsUnseen && <span className="w-1.5 h-1.5 rounded-full bg-[#E0A030]" />} news
+                                {newsUnseen && <span className="w-1.5 h-1.5 rounded-full bg-[#E0A030]" />}<Newspaper className="w-2.5 h-2.5" />
                             </a>
                         )}
                         {company.shiftChip && (
@@ -470,10 +470,10 @@ ${company.shiftChip.segment}: ${company.shiftChip.from}% of revenue now, about $
                                 data-company={company.name}
                                 data-tab="calendar"
                                 onClick={(e) => e.stopPropagation()}
-                                className="flex-shrink-0 hover:opacity-80 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border bg-[#EAF2FA] text-[#35577A] border-[#C9DCEF] whitespace-nowrap"
+                                className="flex-shrink-0 hover:opacity-80 inline-flex items-center gap-0.5 text-[9px] font-semibold px-1.5 py-0.5 rounded-full border bg-[#EAF2FA] text-[#35577A] border-[#C9DCEF] whitespace-nowrap"
                                 title={company.events.map(ev => `${ev.kind === 'results' ? 'Results' : 'Earnings call'}: ${hoverDate(ev.date)}${ev.time ? `, ${ev.time}` : ''}`).join('\n')}
                             >
-                                {company.events[0].kind === 'results' ? 'Results' : 'Call'} {hoverDate(company.events[0].date)}
+                                {company.events[0].kind === 'results' ? <CalendarDays className="w-2.5 h-2.5" /> : <Mic className="w-2.5 h-2.5" />}{hoverDate(company.events[0].date)}
                             </a>
                         )}
                         {company.isSme && (

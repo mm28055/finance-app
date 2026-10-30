@@ -13,7 +13,8 @@ const SHOWN_AS: Record<string, string> = {
 export function displayCase(name: string): string {
     // "(India)" and "(I)" are legal padding and go. Brackets that tell companies apart or carry the
     // name people know stay: SKF India (Industrial), Rane (Madras), Honasa Consumer (Mamaearth).
-    return SHOWN_AS[name] ?? name.replace(/\s*\((India|I)\)/g, '').trim();
+    // A trailing "Ltd" / "Limited" is legal padding too.
+    return SHOWN_AS[name] ?? name.replace(/\s*\((India|I)\)/g, '').replace(/\s+(Ltd\.?|Limited)$/i, '').trim();
 }
 
 // Names people use for companies whose short form is not simply the first word.
