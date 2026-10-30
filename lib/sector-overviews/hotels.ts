@@ -452,7 +452,7 @@ export const hotelsAndTravels: SectorOverview = {
                         ['Viceroy Hotels', 'Net debt ₹220cr before the rights issue; ~₹39–40cr repaid a year', '₹105.8cr rights issue allotted 15 September, for debt repayment'],
                         ['Royal Orchid Hotels', 'Bank debt about ₹91cr against cash of about ₹88cr at March', 'Screener borrowings ₹641cr, mostly the Iconiqa lease; ₹127cr of guarantees'],
                         ['Brigade Hotel Ven.', 'Net cash ₹108cr; ₹53cr of capex in Q1 against ₹500cr for FY27', 'Plan turns to 60% debt-funded after FY28; ₹28.7cr tax dispute unprovided'],
-                        ['Mahindra Holi.&Resor', 'Cash ₹1,420cr; ₹5,825cr of members’ money not yet booked as revenue', 'Screener net debt ₹3,032cr including leases and Finland; ~₹1,510cr of contingent liabilities'],
+                        ['Mahindra Holi.&Resor', 'Cash ₹1,329cr at September; ₹5,828cr of members’ money not yet booked as revenue; H1 capex ₹312cr', 'Screener net debt ₹3,032cr including leases and Finland; ~₹1,510cr of contingent liabilities'],
                     ],
                     note: 'Company and Screener figures differ mainly because Screener counts lease liabilities as debt. Indian companies file cash flows only half-yearly, so Q1 figures are management’s.',
                 },
@@ -536,7 +536,7 @@ export const hotelsAndTravels: SectorOverview = {
                         ['Viceroy Hotels', 'Double-digit growth; margin above 30%; room rate ₹9,000–9,500 soon; phase 2 in FY27', '₹100cr-plus renovation; ₹120–130cr Madhapur', '**Mixed**: sales +77%, rights done; rate −12%, margin 26%'],
                         ['Royal Orchid Hotels', 'Guidance after Q1; 7–8 hotels in 2–3 months; Iconiqa profitable before lease accounting in FY27', '₹5–10cr per revenue-share hotel', '**Walked back**: no guidance; 5 hotels; Iconiqa still slightly loss-making'],
                         ['Brigade Hotel Ven.', '₹7–8cr of Q1 cancellations; ~37.5% margin without one-offs; mid-teens FY27 growth', '₹500cr in FY27 (₹53cr in Q1); ₹3,600cr in all', '**Behind**: ₹14cr cancelled; sales +2%; margin 34.8%'],
-                        ['Mahindra Holi.&Resor', 'Operating-profit trajectory to continue; 1,000+ gross keys in FY27; first luxury resort in FY28', '₹331cr committed at March; rebuilds at ₹40–50 lakh a key', '**Missed**: consolidated loss; net keys down to 5,865; Theog late FY28'],
+                        ['Mahindra Holi.&Resor', 'Operating-profit trajectory to continue; 1,000+ gross keys in FY27; first luxury resort in FY28', '₹331cr committed at March; rebuilds at ₹40–50 lakh a key', '**Missed**: Q1 consolidated loss, Q2 back to ₹19.7cr profit; net keys down to 5,762 in September; about 1,000 gross keys still promised by March; Theog late FY28'],
                     ],
                     note: 'Juniper held no Q1 call; its Q1 figures and plans come from its Investor Day presentation of 17 August 2026. Operating-profit figures in this column are the companies’ own.',
                 },
@@ -674,8 +674,8 @@ export const hotelsAndTravels: SectorOverview = {
         {
             company: 'Mahindra Holi.&Resor', rank: 11, stance: 'TURNAROUND', segment: MANAGERS,
             what: "Club Mahindra: sells long-term holiday memberships and runs about 111 resorts in India, plus Holiday Club Resorts in Finland.",
-            view: "**Cash-rich, profit-poor, under review.** Membership prices +73%, occupancy 86.7% and ₹5,825cr of members' money not yet booked as revenue. But Q1 was a consolidated loss of ₹8.6cr, net keys fell to 5,865, NFRA has questioned its revenue accounting and a ₹431cr service-tax demand is in court. On P/E the price needs about {need:Mahindra Holi.&Resor|31}% a year against my ~15%; on operating profit it is far lower.",
-            watch: 'Renovated keys returning and H2 profit; the Finland decision this year; the service-tax case.',
+            view: "**Cash-rich, profit-poor, under review.** Membership prices +73%, occupancy 86.7% and ₹5,825cr of members' money not yet booked as revenue. But Q1 was a consolidated loss of ₹8.6cr, net keys fell to 5,865, NFRA has questioned its revenue accounting and a ₹431cr service-tax demand is in court. On P/E the price needs about {need:Mahindra Holi.&Resor|31}% a year against my ~15%; on operating profit it is far lower. 30 Oct 2026: stays wait after the Q2 call (21 Oct). The group returned to a ₹19.7cr profit (+17%), resort revenue grew 15% and upgrades 26%, and Finland's loss narrowed to €0.3M; but India standalone operating profit fell 12%, net keys fell again to 5,762, 442 keys are still being renovated, and some projects are late and costlier.",
+            watch: 'The 442 renovated keys returning in Q3–Q4 and about 1,000 gross keys added by March; H2 profit; the Finland decision this year; the service-tax case.',
         },
     ],
 
