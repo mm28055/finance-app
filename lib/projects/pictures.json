@@ -5685,14 +5685,14 @@
   },
   {
    "company": "Bajaj Healthcare",
-   "fingerprint": "cf6bde5e270b9768",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "5276202ba20131a1",
+   "checkedOn": "2026-10-30",
    "money": {
-    "heading": "Capex about ₹40–50cr a year",
+    "heading": "Capex about ₹65–80cr in FY27 (Q2 call; ₹40–50cr a year earlier)",
     "items": [
      {
       "name": "Peptide API plant",
-      "sub": "about 250 kg a year, semaglutide first; India to begin with, designed for global markets; partly funded by the FY26 warrant money",
+      "sub": "about 250 kg a year, semaglutide first; pharma, nutraceutical and cosmetic peptides, six ready at pilot scale; partly funded by the FY26 warrant money",
       "total": 50,
       "right": "about ₹50cr with the new R&D centre (India Ratings)",
       "status": "building",
@@ -5700,14 +5700,14 @@
      },
      {
       "name": "Cancer-drug API plant",
-      "sub": "for its own Bajaj Oncocare brands and others; sales not quantified",
+      "sub": "for its own Bajaj Oncocare brands and others; about ₹200cr of revenue two to three years after start",
       "right": "cost not disclosed",
       "status": "building",
       "projectId": "bajaj-healthcare-oncology-api"
      },
      {
       "name": "GenRx formulation plant, Nashik",
-      "sub": "solid-dosage plant bought from GenRx Pharmaceuticals (in liquidation); NCLT approval received Oct 2026, licences still needed; adds formulation and cancer-drug capacity",
+      "sub": "tablets, sachets, capsules, nasal, oral cancer drugs, nutraceuticals and ointments; bought from GenRx Pharmaceuticals (in liquidation); NCLT approval received Oct 2026; about ₹200–250cr of revenue in two to three years",
       "right": "₹10.85cr invested by March 2026; full cost not given",
       "status": "planned",
       "projectId": "bajaj-healthcare-genrx-nashik"
@@ -5721,36 +5721,36 @@
      "text": "NCLT approval received to acquire GenRx (Q2 update, 17 Oct). Non-operational Dahej unit sold for about ₹14.67cr (12 Oct)"
     },
     {
-     "when": "H2 FY27",
-     "tone": "next",
-     "text": "GenRx Nashik plant starts commercial production once licences are in",
-     "sub": "Q1 FY27 call: 'by second half of 2027'"
-    },
-    {
      "when": "Q4 FY27",
      "tone": "next",
      "milestones": [
       "bajaj-healthcare-q4fy27-1"
      ],
-     "sub": "Management changed this: the December 2025 presentation said commercialisation by March 2026 (Q4 FY26); on the July 2026 call, commissioning in Q4 FY27. Management said 'Q4 2027' and, for the cancer plant, 'Q4 2028'; read as fiscal years, as the analyst's 'Q4 FY28' was accepted on the call"
+     "sub": "Q2 FY27 call: complete by 31 March 2027. Management changed this earlier: the December 2025 presentation said commercialisation by March 2026 (Q4 FY26); the July 2026 call gave Q4 FY27"
     },
     {
-     "when": "FY28",
-     "tone": "later",
-     "text": "Peptide revenue starts, ramping over 2–3 years to ₹200–300cr a year at full use, at an 18–20% operating margin (management)"
+     "when": "Q1 FY28",
+     "tone": "next",
+     "text": "GenRx Nashik formulation plant operational",
+     "sub": "Management changed this on 30 Oct 2026 (Q2 call): by Q1 FY28; the note had H2 FY27, from the July call's 'second half of 2027'"
     },
     {
-     "when": "Q4 FY28",
+     "when": "Q2 FY28",
      "tone": "later",
-     "text": "Cancer-drug API plant commercialised",
-     "sub": "Management changed this: the December 2025 presentation said ready by 2027; on the July 2026 call, Q4 FY28"
+     "text": "Cancer-drug API plant commences",
+     "sub": "Management changed this on 30 Oct 2026 (Q2 call): from Q2 FY28, earlier than the Q4 FY28 given in July; the December 2025 presentation said ready by 2027"
+    },
+    {
+     "when": "FY28–FY29",
+     "tone": "later",
+     "text": "Peptide revenue starts after 6–10 months of customer approvals: about ₹70–100cr in the first full year (Oct 2026), ₹200–300cr a year at full use at an 18–20% margin (July 2026)"
     }
    ],
    "notes": [
     "Capacity today: 730 t a month of active ingredients, 94 t a month of intermediates, 100 million tablets and capsules a month; opium processing of 250 t of gum and 2,500 t of poppy straw a year (for the Government of India)",
     "How full the plants run, and what they could sell at full use, are not disclosed"
    ],
-   "source": "Q1 FY27 call (Jul 2026), December 2025 investor presentation, India Ratings (Aug 2026), FY26 annual report, Q2 update 17 Oct 2026 and Dahej sale 12 Oct 2026 (NSE)"
+   "source": "Q2 FY27 call (19 Oct 2026), Q1 FY27 call (Jul 2026), December 2025 investor presentation, India Ratings (Aug 2026), FY26 annual report, Q2 update 17 Oct 2026 and Dahej sale 12 Oct 2026 (NSE)"
   },
   {
    "company": "Balaji Amines",
@@ -12571,27 +12571,27 @@
   },
   {
    "company": "Fairchem Organics",
-   "fingerprint": "ea77092155b62de5",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "e369b3a7d49f4091",
+   "checkedOn": "2026-10-30",
    "lines": {
-    "heading": "How full the plant is (Q1 FY27)",
+    "heading": "How full the plant is (Q2 FY27)",
     "items": [
      {
       "name": "Oleochemicals plant",
       "size": "80,000 t a year",
-      "usedPct": 60,
-      "usedLabel": "about 60% used",
+      "usedPct": 62.5,
+      "usedLabel": "60–65% used",
       "marker": {
        "pct": 72.5,
        "label": "aim to end FY27 at 70–75% (dashed at 72.5%)"
       },
-      "note": "65–66% in FY26, about 45,000 t made; at full use about ₹800cr of sales (FY26's ₹460cr scaled from about 45,000 t to 80,000 t)"
+      "note": "About 60% in Q1 FY27; 65–66% in FY26, about 45,000 t made; at full use about ₹800cr of sales (FY26’s ₹460cr scaled from about 45,000 t to 80,000 t)"
      }
     ]
    },
    "adds": [
     {
-     "heading": "What the new 40,000 t line adds (trial run from Q2 FY27, full use in about five years)",
+     "heading": "What the new 40,000 t line adds (start moved to Q3 FY27, full use in about five years)",
      "projectId": "fairchem-organics-novel-40k",
      "bars": [
       {
@@ -12637,11 +12637,19 @@
     },
     {
      "when": "Q2 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "fairchem-organics-novel-40k-m1"
      ],
-     "sub": "Q1 FY27 call: trial run starting, ramp-up after it stabilises. Q4 FY26 call had said the plant starts by end-Q2"
+     "sub": "Missed: management changed this on 30 Oct 2026 (Q2 call); the plant is being modified on R&D advice. Q1 FY27 call had a trial run starting; Q4 FY26 call said the plant starts by end-Q2"
+    },
+    {
+     "when": "Q3 FY27",
+     "tone": "next",
+     "milestones": [
+      "fairchem-organics-novel-40k-m2"
+     ],
+     "sub": "After Diwali; management expects teething troubles with the novel process"
     },
     {
      "when": "End FY27",
@@ -12666,7 +12674,7 @@
     "Further spending on the new line in FY28 depends on how the new product picks up",
     "22 Oct 2026: board approved buying two plots next to the plant from the chairman and his relatives (value not disclosed)"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026), board outcome 22 Oct 2026 (NSE) and sector note",
+   "source": "Q2 FY27 call (Oct 2026), Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026), board outcome 22 Oct 2026 (NSE) and sector note",
    "recheck": {
     "changes": [
      "Official transcripts (Q1 FY27, Q4 FY26) confirm the figures and both corrections; one wording tightened: new-line revenue needs at least 2–2.5 years of validation (official Q4 FY26: \"minimum two, two and a half years\"), not about two"

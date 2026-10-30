@@ -3426,7 +3426,8 @@
     "sector": "Hotels and Travels",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-10-30: Q2 call read (21 Oct). Group back to ₹19.7cr profit (+17%), resort revenue +15%, upgrades +26%, Finland loss €0.3M; India standalone operating profit −12%, net keys 5,762, 442 under renovation (back Q3–Q4), ~1,000 gross keys promised in six months, some projects late. Checkpoints stay pending. Stays wait."
   },
   {
     "company": "Varmora Granito",
@@ -3440,14 +3441,16 @@
     "sector": "Chemicals",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-10-30: Q2 call read. Revenue +50%, margin ~10.5% on ₹135/kg realisation; 12,300t sold, utilisation 60–65%; new line slipped to Q3 (milestone missed, revisions, new milestone, capacity and picture updated); US exports on hold. Stays pass."
   },
   {
     "company": "Bajaj Healthcare",
     "sector": "Pharma API",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-10-30: Q2 call read (19 Oct). Revenue +18.9%, profit +26.9%, formulations +82% (cenobamate), API exports +28.5%; guide on track; FY29 aim ₹900–1,000cr at 18–21%; peptide plant by 31 Mar 2027; oncology plant brought forward to Q2 FY28 and Nashik by Q1 FY28 (project revisions, picture redrawn); capex ₹65–80cr. Stays wait."
   },
   {
     "company": "Pitti Engineering",
@@ -3462,7 +3465,8 @@
     "sector": "Cables",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-10-30: Q2 call read (23 Oct). Revenue +145%, underlying margin 27.1% (32% incl. a ₹161cr tariff refund; note corrected), order book ₹35,274cr (₹3,021cr for Q3), attach rate 24% (met), net cash ₹703cr, FY29 margin target raised to ~30%; US-plant details not given (milestone missed); new Q3 revenue checkpoint. Stays pass."
   },
   {
     "company": "Rajratan Global",
@@ -3477,7 +3481,8 @@
     "sector": "Travel Services",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-10-30: Q2 call read (19 Oct). GTV +22%, trains +16% revenue (~64% OTA rail), buses +24%, hotels now disclosed (2.6x, contribution −15%); flights revenue −8%, October soft; adjusted EBITDA −17%; record PAT from a one-off Freshbus gain. Contribution 38.9% (checkpoint met). Stays wait."
   },
   {
     "company": "Ador Welding",
@@ -3499,7 +3504,8 @@
     "sector": "Chemicals",
     "subject": "Checkpoint met: fairchem-organics-q2fy27-1",
     "why": "Operating margin held at about 10% (company: 'we will be able to maintain') — actual 10.8% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-10-30: 10.8% vs ~10%; held on price, not volume; outcome written. Stays pass."
   },
   {
     "company": "Ador Welding",
@@ -3513,28 +3519,32 @@
     "sector": "Pharma API",
     "subject": "Checkpoint partly: bajaj-healthcare-q2fy27-1",
     "why": "Operating margin inside the 18–20% guide (17.5% filed in Q1) — actual 17.6% (partly).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-10-30: 17.6% (company 18.2%) vs 18–20%; outcome written. Stays wait."
   },
   {
     "company": "Sterlite Technologies",
     "sector": "Cables",
     "subject": "Checkpoint met: sterlite-technologies-q2fy27-1",
     "why": "Q2 FY27 revenue of at least ₹2,228cr, the executable order book for the quarter (Q1 beat its book by 30%) — actual ₹2,529cr (met). Delivery is keeping up with the order wins Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-10-30: Met; outcome written (margin underlying 27.1% excl. one-off). Stays pass."
   },
   {
     "company": "Sterlite Technologies",
     "sector": "Cables",
     "subject": "Checkpoint met: sterlite-technologies-q2fy27-2",
     "why": "Operating margin at least 20% on Screener's basis in Q2 FY27 (Q1 20.2%; the company's own figure, which adds other income, was 20.8%), holding the Q1 step-up — actual 32.1% (met). The Q1 margin was not a one-off Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-10-30: Met; outcome written (margin underlying 27.1% excl. one-off). Stays pass."
   },
   {
     "company": "Sterlite Technologies",
     "sector": "Cables",
     "subject": "Checkpoint met: sterlite-technologies-q2fy27-4",
     "why": "Order book above Q1's ₹18,618cr after about ₹16,000cr of July–October wins — actual ₹35,274cr (met). Wins are adding to the book faster than revenue draws it down Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-10-30: Met; outcome written (margin underlying 27.1% excl. one-off). Stays pass."
   },
   {
     "company": "Apollo Tyres",
@@ -3606,7 +3616,8 @@
     "sector": "Finance",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-29"
+    "addedOn": "2026-10-29",
+    "handled": "2026-10-30: Q2 call read (22 Oct). AUM ₹7,266cr (+33%), H1 disbursements +77%, GNPA 0.66%, CE 98.3%, credit cost 0.4%, CAR 30.7%, CoF 10%, NIM ~6% guided; drought pockets tightened; nothing on pledges. Two checkpoints added. Stays wait."
   },
   {
     "company": "Mastek",

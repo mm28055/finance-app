@@ -4044,7 +4044,8 @@
    "status": "met",
    "actual": "10.8%",
    "resolvedOn": "2026-10-28",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays pass: the margin held on price (₹135 a kg against ₹106), while utilisation is still 60–65%"
   },
   {
    "id": "fairchem-organics-q2fy27-2",
@@ -22124,7 +22125,11 @@
    "text": "Contribution margin stays above the 36–37% floor (40.6% in Q1)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Contribution ₹124.9cr on ₹321cr of revenue, 38.9%",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays wait: unit economics held while it leaned into trains and hotels; the price is the issue"
   },
   {
    "id": "le-travenues-techno-q3fy27-1",
@@ -25046,8 +25051,18 @@
    "text": "New line starts trial production",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "fairchem-organics-novel-40k"
+   "status": "missed",
+   "project": "fairchem-organics-novel-40k",
+   "actual": "Not started in Q2; plant built but being modified on R&D advice, start expected after Diwali in Q3 with teething troubles",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays pass",
+   "revisions": [
+    {
+     "on": "2026-10-30",
+     "text": "Q2 FY27 call: start moved to Q3 FY27 (after Diwali) while the plant is upgraded on R&D suggestions"
+    }
+   ]
   },
   {
    "id": "chemplast-sanmar-r32-m1",
@@ -32241,7 +32256,8 @@
    "status": "partly",
    "actual": "17.6%",
    "resolvedOn": "2026-10-28",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait: 17.6% on Screener's basis, 18.2% on the company's; growth and the guide are on track, the record still needs time"
   },
   {
    "id": "bajaj-healthcare-q4fy27-2",
@@ -33574,7 +33590,8 @@
    "status": "met",
    "actual": "₹2,529cr",
    "resolvedOn": "2026-10-28",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays pass: delivery is keeping up, but the price already assumes it"
   },
   {
    "id": "sterlite-technologies-q2fy27-2",
@@ -33591,7 +33608,8 @@
    "status": "met",
    "actual": "32.1%",
    "resolvedOn": "2026-10-28",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays pass: 27.1% underlying (32.1% on Screener includes a one-off ₹161cr US tariff refund); the Q1 step-up held"
   },
   {
    "id": "sterlite-technologies-q2fy27-3",
@@ -33601,7 +33619,11 @@
    "due": "Q2 FY27",
    "ifMissed": "The higher-value connectivity mix is slower than promised",
    "createdOn": "2026-10-20",
-   "status": "pending"
+   "status": "met",
+   "actual": "24% in H1 FY27 (20% a year earlier)",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays pass"
   },
   {
    "id": "sterlite-technologies-q2fy27-4",
@@ -33618,7 +33640,8 @@
    "status": "met",
    "actual": "₹35,274cr",
    "resolvedOn": "2026-10-28",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays pass: the book is ₹35,274cr, but only ₹3,021cr is scheduled for Q3"
   },
   {
    "id": "sterlite-technologies-q2fy27-5",
@@ -33671,8 +33694,12 @@
    "text": "Details of the up-to-$100m US connectivity plant (site, cost, timing) given at the Q2 FY27 call, as promised",
    "due": "Q2 FY27",
    "createdOn": "2026-10-20",
-   "status": "pending",
-   "project": "sterlite-technologies-us-connectivity"
+   "status": "missed",
+   "project": "sterlite-technologies-us-connectivity",
+   "actual": "No site, cost or timing given on the Q2 FY27 call",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays pass"
   },
   {
    "id": "sterlite-technologies-capacity-expansion-m1",
@@ -37124,6 +37151,46 @@
    "sector": "Agrochemical & Fertilizers",
    "text": "Cash and liquid funds rebuilt above ₹309cr (the June level) by March as inventory eases (about ₹211cr at September)",
    "due": "Q4 FY27",
+   "createdOn": "2026-10-30",
+   "status": "pending"
+  },
+  {
+   "id": "paisalo-digital-q4fy27-1",
+   "company": "Paisalo Digital",
+   "sector": "Finance",
+   "text": "Gross bad loans stay below 1% as H1 FY27's 77% jump in lending seasons (0.66% at September)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-30",
+   "status": "pending"
+  },
+  {
+   "id": "paisalo-digital-q4fy27-2",
+   "company": "Paisalo Digital",
+   "sector": "Finance",
+   "text": "Net interest margin closes FY27 at about 6%, as guided on the Q2 call",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-30",
+   "status": "pending"
+  },
+  {
+   "id": "fairchem-organics-novel-40k-m2",
+   "company": "Fairchem Organics",
+   "sector": "Chemicals",
+   "text": "New line starts production (after Diwali, as now promised)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-30",
+   "status": "pending",
+   "project": "fairchem-organics-novel-40k"
+  },
+  {
+   "id": "sterlite-technologies-q3fy27-2",
+   "company": "Sterlite Technologies",
+   "sector": "Cables",
+   "text": "Q3 FY27 revenue of at least ₹3,021cr, the part of the order book scheduled for the quarter",
+   "metric": "revenue",
+   "op": ">=",
+   "target": 3021,
+   "due": "Q3 FY27",
    "createdOn": "2026-10-30",
    "status": "pending"
   }
