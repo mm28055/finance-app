@@ -769,7 +769,7 @@ export const pharma: SectorOverview = {
                         ['Gufic Biosciences', '15–20% growth, “bare minimum”; ~₹1,100cr; margin ~18%', '~₹20cr a year', '**Mixed**: +14.9% at 18.1%; EU certificate still awaited'],
                         ['Wockhardt', 'Zaynich US ramp from early 2027; break-even in 12–18 months; biosimilars to double in 2–3 years', '₹200–300cr; ₹3,000cr raise approved', '**Mixed**: approvals on time; US launch a year later than first said'],
                         ['Fredun Pharma', '~₹800cr (+25–30%); 12–13% operating margin within 12 quarters', '₹30–40cr a year', '**Beat**: +90%, partly orders pulled forward'],
-                        ['Beta Drugs', '+20–25% (~₹530cr); margin 23–24%; exports ~₹100cr', 'Under ₹25cr over two years', '**Missed**: exports ₹17.2cr against ₹20–22cr; EU audit slipped again'],
+                        ['Beta Drugs', '+20–25% (~₹530cr); margin 23–24%; exports ~₹100cr', 'Under ₹25cr over two years', '**Missed**: Q1 exports ₹17.2cr against ₹20–22cr, H1 ₹43cr against ~₹55cr; export guide cut to ₹90–100cr; EU audit slipped again; revenue guide ₹535cr+ kept'],
                         ['Sai Parenterals', '₹750cr at ~17% margin', '₹440cr own-funded, incl. Adelaide', '**Mixed**: revenue on track; margin 14.9%; IPO plan changed'],
                         ['Sanofi India', 'No numbers; partner-sold brands to recover in 2027, not 2026', 'Minimal', '**Mixed**: insulin +14%; partnerships +2%'],
                         ['Indoco Remedies', 'Double-digit margin; repay ₹110cr more this year and ₹150cr next', '₹40–50cr', '**Missed**: margin 8.8%; exports short; re-inspection still awaited'],
@@ -964,8 +964,8 @@ export const pharma: SectorOverview = {
         {
             company: 'Beta Drugs', rank: 20, stance: 'SCALEUP', segment: SPECIAL,
             what: "Cancer medicines under its own brands, for other companies and for export tenders, plus active ingredients, a skin range and a newly bought fertility (IVF) business, Nivian.",
-            view: "**A good core caught in a promise-and-slip cycle.** Its own cancer brands grow about 20% at 35–36% margins, but FY26 guidance was missed, Q1 exports fell 47%, the EU audit has slipped three times, and CRISIL said on 25 September that it is awaiting information from the company. The price needs about {need:Beta Drugs|25}% a year against my ~15%; moved from wait to pass.",
-            watch: 'CRISIL completing its review; H1 exports reaching about ₹55cr; the EU audit actually taking place.',
+            view: "**A good core caught in a promise-and-slip cycle.** Its own cancer brands grow about 20% at 35–36% margins, but FY26 guidance was missed, Q1 exports fell 47%, the EU audit has slipped three times, and CRISIL said on 25 September that it is awaiting information from the company. The price needs about {need:Beta Drugs|25}% a year against my ~15%; moved from wait to pass. 30 Oct 2026: stays pass after the Q2 call (22 Oct). H1 revenue rose 29% and profit 45%, and the ₹535cr FY27 guide was kept; but H1 exports were ₹43cr against about ₹55cr promised and the export guide slipped to ₹90–100cr, own brands grew 17% against 20–22%, and the EU audit is still only “expected this year”.",
+            watch: 'CRISIL completing its review; exports reaching ₹90–100cr in FY27 (₹43cr in H1); the EU audit actually taking place; the intermediate plant starting by March.',
         },
         {
             company: 'Sai Parenterals', rank: 21, stance: 'SCALEUP', segment: EXPORT,
