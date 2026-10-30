@@ -677,7 +677,7 @@ export const autoRelatedMetal: SectorOverview = {
                         ['RACL Geartech', 'BMW, Royal Enfield, Kawasaki and ZF ramps; currency gains removed from the base; tax normalises', '8% / **17%** / 24%'],
                         ['ASK Automotive', 'High-teens net revenue; alloy wheels ₹250cr in FY28; southern plant; more interest and depreciation', '10% / **16%** / 22%'],
                         ['Talbros Auto Compont', 'Gaskets +17%; Marelli JV on the Stellantis order; forging order from October; margin ~17%', '8% / **15%** / 20%'],
-                        ['Rajratan Global', 'Volume +17–18%; margin 13.5–14%; steel cord ~₹150cr at peak; Chennai to 60,000 t', '6% / **15%** / 22%'],
+                        ['Rajratan Global', 'Volume about 1.6 lakh t in FY27 (raised Oct 2026); margin about 13% as the floor; Thailand +50,000 t within a year; steel cord at good use in FY28', '6% / **15%** / 22%'],
                         ['Alicon Castalloy', 'Revenue +12–15% excluding aluminium; margin back to 11–12%; new plant from FY28; Europe', '5% / **15%** / 25%'],
                         ['Shriram Pistons', 'A full year of Antolin; legacy margin recovery; EV motor arm; flex-fuel content; exports flat', '8% / **15%** / 20%'],
                         ['CIE Automotive', 'India 12–15%; US casting order; Europe margin held; no acquisition assumed', '5% / **11%** / 15%'],
@@ -696,7 +696,7 @@ export const autoRelatedMetal: SectorOverview = {
                         ['Rolex Rings', 'FY27 ‘mid-teen’ growth kept; FY28 ‘approaching 20%’; margin 21–22% (floor raised)', '₹30–40cr a year; capacity 63–65% used', '**Missed**: Q1 revenue +4% against 15–17%; margin beat'],
                         ['Shriram Pistons', 'No numbers; outgrow the market; Antolin to near standalone margin in under three years; group ‘high teens’', '~₹200cr a year for 2–3 years; ₹1,000cr share sale for growth and acquisitions', '**Mixed**: capex and share sale delivered; standalone margin −250 bps; exports flat'],
                         ['ASK Automotive', 'FY27 revenue ‘high teens’ (raised from mid-teens); margin 13.5–14% if aluminium eases', '~₹700cr (from ₹400cr) for a new southern plant; debt/equity below 0.5', '**Beat**: net growth 25%; alloy wheels a quarter early; margin 12.0% against 13.1%'],
-                        ['Rajratan Global', 'Volume +17–18% to ~1.55 lakh t; margin 13.5–14% ‘safely’', 'Steel cord ₹70cr (₹25cr left); Chennai ₹25cr to 60,000 t', '**Delivered**: margin back to 13.1% as promised; volume +16%'],
+                        ['Rajratan Global', 'Volume +17–18% to ~1.55 lakh t; margin 13.5–14% ‘safely’', 'Steel cord ₹70cr (₹25cr left); Chennai ₹25cr to 60,000 t', '**Mixed**: H1 volume +17% and the target raised to ~1.6 lakh t, but the Q2 margin was 12.4%; steel cord slipped to FY28; Chennai at 40,000 t rated, 60,000 t gradually'],
                         ['Menon Bearings', '₹360cr in FY27 (‘conservative’); margin 21.5–22%; ₹500cr in 2–3 years', 'Bearings ₹25cr over two years at ~2.5x turns; aluminium arm ₹7cr', '**On track**: sales +37%, margin 22%; test rig a year late'],
                         ['RACL Geartech', '~₹570cr FY27 revenue (16–17%); 15–20% next year; ₹1,000cr in 3–5 years', '₹77cr in FY27 (~₹40cr replacing furnaces); ZF steering capex next', '**Beat**: operating revenue +31.5%; BMW sign-off moved to 24 October'],
                         ['Sundram Fasteners', 'Trucks +8%, cars +10%, tractors +6–7%, exports +15–20%; margin ~16.5%', '₹400cr in FY27 (from ‘not less than ₹300cr’), from own cash', '**Beat**: revenue +20%, exports +23%; margin 16.1%'],
@@ -811,8 +811,8 @@ export const autoRelatedMetal: SectorOverview = {
         {
             company: 'Rajratan Global', rank: 6, stance: 'CYCLICAL', segment: FORGE,
             what: "A tyre bead-wire maker with 42–43% of the Indian market and Thailand's only plant, supplying MRF, Apollo, CEAT, Bridgestone and Continental, now adding steel cord for conveyor belts.",
-            view: "**Volume engine working, margins permanently lower.** Volumes rose 18% in FY26 and 16% in Q1, the margin recovered to 13.1% as promised, and both CRISIL and ICRA turned more positive. But the margin was 20% in FY22, free cash has been negative three years, debt is ₹324cr and its production-linked subsidy is at risk. The price needs about {need:Rajratan Global|18}% a year against my ~15%. 23 Oct 2026: stays follow though the price now fits; free cash has been negative three years, and Q2 brought margin pressure and a large new expansion plan.",
-            watch: 'Positive free cash in FY27 as capex tapers; margin at 13.5–14%; the steel-cord line selling from Q3.',
+            view: "**Volume engine working, margins permanently lower.** Volumes rose 18% in FY26 and 17% in H1 FY27, and the FY27 target went up to about 1.6 lakh tonnes on the 22 October 2026 call. But the Q2 margin was 12.4%, short of the 13.5–14% promised, and management now calls about 13% the floor, with no margin gain in India this year. The margin was 20% in FY22, free cash has been negative three years, borrowings rose by about ₹90cr in H1, and a new ₹100cr Thailand expansion (+50,000 t, within a year) delays the turn to free cash. The price needs about {need:Rajratan Global|18}% a year against my ~15%. 30 Oct 2026: stays follow though the price fits; the free-cash turn I follow it for is now further off.",
+            watch: 'Free cash in FY27 now that ₹100cr goes into Thailand; margin holding about 13% as the floor; Thailand margins improving in H2 as promised; steel-cord samples approved (no sales counted this year).',
         },
         {
             company: 'Menon Bearings', rank: 7, stance: 'SCALEUP', segment: ENGINE,
