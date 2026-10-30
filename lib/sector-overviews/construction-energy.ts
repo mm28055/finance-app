@@ -428,7 +428,7 @@ export const constructionEnergy: SectorOverview = {
             points: [
                 {
                     label: 'Growth driver: new plants arriving in FY27',
-                    text: "**Interarch** reached 245,000 tonnes when its Andhra Pradesh heavy-steel plant began commercial production on 24 September, and two more phases follow by December 2027. **EPack** adds a sandwich-panel line at Ghiloth in October–November and a 50,000-tonne plant in Gujarat by about Q3 FY27, and sees peak revenue of ₹2,700–2,900cr once all are full, against ₹1,525cr in FY26. **M&B** adds 20,000 tonnes at Sanand in October and more at Cheyyar by Q3 FY28, and targets 85,000–90,000 tonnes of output in FY27 against 72,000. **Pennar** is starting a car-body plant for Hyundai that should double that unit's revenue. **My view: capacity will not hold these companies back for long; filling it at a 10% margin while rivals add capacity too is the test.**",
+                    text: "**Interarch** reached 245,000 tonnes when its Andhra Pradesh heavy-steel plant began commercial production on 24 September, and two more phases follow by December 2027. **EPack** started its Ghiloth plant on 28 October 2026 (8 lakh m² of panels and 11,300 tonnes of steel buildings, ₹100cr) and adds a 50,000-tonne plant in Gujarat from April 2027, and sees peak revenue of ₹2,700–2,900cr once all are full, against ₹1,525cr in FY26. **M&B** adds 20,000 tonnes at Sanand in October and more at Cheyyar by Q3 FY28, and targets 85,000–90,000 tonnes of output in FY27 against 72,000. **Pennar** is starting a car-body plant for Hyundai that should double that unit's revenue. **My view: capacity will not hold these companies back for long; filling it at a 10% margin while rivals add capacity too is the test.**",
                 },
                 {
                     label: 'Growth driver: utility solar and battery orders',
@@ -564,7 +564,7 @@ export const constructionEnergy: SectorOverview = {
             company: 'EPack Prefab Techno.', rank: 1, stance: 'SCALEUP', segment: STEEL,
             what: "A Noida-based maker of pre-engineered steel buildings and insulated sandwich panels, with a smaller packaging-foam business, serving solar, data-centre, auto and warehouse projects; listed in October 2025.",
             view: "**The best momentum and cash in the group, at a full price.** Q1 revenue rose 24%, record bookings of ₹580cr lifted the order book to about ₹1,380cr, the steel spike cost one point of margin rather than two, FY26 operating cash was 85% of operating profit, and borrowings fell to ₹115cr. But three new plants arrive in FY27, its first panel line ran at only 25% in year one, its data-centre venture has lost its first two bids, and contracts are mostly fixed-price. The price needs about {need:EPack Prefab Techno.|16}% a year against my ~15%.",
-            watch: 'Margin back to 10.5% from Q2; the Ghiloth and Gujarat plants starting on time; orders on track for ₹2,000cr in FY27.',
+            watch: 'Margin back to 10.5% from Q2; Ghiloth filling up after its 28 October start and the Gujarat plant from April 2027; orders on track for ₹2,000cr in FY27.',
         },
         {
             company: 'M & B Engineer.', rank: 2, stance: 'SCALEUP', segment: STEEL,
