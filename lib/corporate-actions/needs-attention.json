@@ -2963,14 +2963,16 @@
     "sector": "Health Products",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-30: Price check back to Full (needs ~17% vs my 15%, P/E 28). Only filing since: a ₹5.9cr US tariff refund. Stays follow; nothing to change."
   },
   {
     "company": "Minda Corp",
     "sector": "Auto Related",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-30: Price check back to Full (needs ~21% vs my 18%). No filings since the note. Stays wait."
   },
   {
     "company": "MSTC",
@@ -2984,42 +2986,48 @@
     "sector": "Construction",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-30: Price check back to Full (needs ~17% vs my 15%). The ₹5,191cr Delhi flat auction (29 Oct) is normal business for its model. Stays follow."
   },
   {
     "company": "Powerica",
     "sector": "Pumps Comp & Eng",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-30: Price check back to Full (needs ~14% vs my 11%). Only filing: a 50 MW GUVNL wind LOI. Stays follow."
   },
   {
     "company": "Puravankara",
     "sector": "Realty",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-30: Price check back to Full (needs ~18% vs my 15%; net debt ~5x operating profit). Land deals in Sept–Oct (Goregaon, NCR, Bengaluru) already logged. Stays wait."
   },
   {
     "company": "Quess Corp",
     "sector": "Commercial Services",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-30: Price check back to Full (needs ~12.5% vs my 10%). No filings since. Stays follow."
   },
   {
     "company": "RACL Geartech",
     "sector": "Auto Related",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-30: Price check back to Full (needs ~20% vs my 17%). No filings since. Stays wait."
   },
   {
     "company": "Rainbow Children's Medicare",
     "sector": "Hospitals",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-30: Price check back to Stretched (needs ~22% vs my 14%). New CFO and hospital openings already logged. Stays follow."
   },
   {
     "company": "RR Kabel Ltd.",
@@ -3158,14 +3166,16 @@
     "sector": "Solar PV Cells EPC",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-10-30: Price check back to Full (needs ~10% vs my 8%), and the Q2 call was read today (margin 15.1%, profit −30%). Stays follow."
   },
   {
     "company": "Eris Lifesciences",
     "sector": "Pharma",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-10-30: Price check back to Full (needs ~14% vs my 12%). COO exit already logged. Stays wait."
   },
   {
     "company": "GNFC",
@@ -3186,7 +3196,8 @@
     "sector": "Pumps Comp & Eng",
     "subject": "Call drift: pass → Fits",
     "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-10-30: Price check back to Full (P/E 7; I expect no growth). ICRA's negative outlook on receivables and the IPO-money switch to a ₹456cr cell plant support pass. Stays pass."
   },
   {
     "company": "Cyient DLM",
@@ -3224,7 +3235,7 @@
     "company": "ICICI Bank",
     "sector": "Finance",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 28 Oct 2026: transcript not yet filed (Screener lists none and the company site has none); left open for the next run.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 28 Oct 2026: transcript not yet filed (Screener lists none and the company site has none); left open for the next run. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run.",
     "addedOn": "2026-10-26"
   },
   {
@@ -3294,7 +3305,7 @@
     "company": "Sobha",
     "sector": "Realty",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 28 Oct 2026: transcript not yet filed (Screener lists none and the company site has none); left open for the next run.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 28 Oct 2026: transcript not yet filed (Screener lists none and the company site has none); left open for the next run. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run.",
     "addedOn": "2026-10-27"
   },
   {
@@ -3309,7 +3320,7 @@
     "company": "CIE Automotive",
     "sector": "Auto Related",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 28 Oct 2026: transcript not yet filed (Screener lists none and the company site has none); left open for the next run.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 28 Oct 2026: transcript not yet filed (Screener lists none and the company site has none); left open for the next run. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run.",
     "addedOn": "2026-10-27"
   },
   {
@@ -3434,7 +3445,8 @@
     "sector": "Consumer Durables",
     "subject": "New Special call 23 Oct 2026",
     "why": "Special call 23 Oct 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-10-30: First call (23 Oct) read: FY27 ~15% value / 10% volume growth if exports revive; capacity 50.6m sq m, 76% used in H1 (Q2 89%), 80–85% next year; no immediate capex; Northeast plant 50% → 75% in Q3; exports −18%, domestic GVT volume +14%. Card's drivers and watch updated; two checkpoints added. (The company has a card but no verdict yet.)"
   },
   {
     "company": "Fairchem Organics",
@@ -3488,7 +3500,7 @@
     "company": "Ador Welding",
     "sector": "Industrials",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run.",
     "addedOn": "2026-10-28"
   },
   {
@@ -3512,7 +3524,8 @@
     "sector": "Industrials",
     "subject": "Checkpoint partly: ador-welding-q2fy27-1",
     "why": "Operating margin back above 12% (Q1 FY27 11.6%) — actual 11.0% (partly). Margins slipping again would change the view for the worse Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-10-30: Margin 11.0% vs above 12%, revenue +23%. Stays own for now; dated sentence added and a Q3 margin checkpoint (missing it moves Ador to follow)."
   },
   {
     "company": "Bajaj Healthcare",
@@ -3585,7 +3598,7 @@
     "company": "Cyient",
     "sector": "Software",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run.",
     "addedOn": "2026-10-29"
   },
   {
@@ -3601,7 +3614,8 @@
     "sector": "Pharma",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-29"
+    "addedOn": "2026-10-29",
+    "handled": "2026-10-30: Q2 call read (22 Oct). H1 revenue +29%, profit +45%, ₹535cr guide kept; exports ₹43cr vs ~₹55cr (missed) and FY27 export guide cut to ₹90–100cr; EU audit not held (missed); own brands +17%; management says the NPPA trade-margin cap has negligible impact. Two checkpoints added. Stays pass."
   },
   {
     "company": "Himadri Speciality",

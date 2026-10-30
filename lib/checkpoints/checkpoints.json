@@ -13566,7 +13566,8 @@
    "status": "partly",
    "actual": "11.0%",
    "resolvedOn": "2026-10-28",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays own for now: revenue +23%; a third quarter below 12% after the price rises would move it to follow"
   },
   {
    "id": "ador-welding-q4fy27-1",
@@ -17753,7 +17754,11 @@
    "due": "Q2 FY27",
    "ifMissed": "Stays pass",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "H1 FY27 exports ₹43cr",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays pass"
   },
   {
    "id": "beta-drugs-q2fy27-3",
@@ -17762,7 +17767,11 @@
    "text": "The EU audit actually takes place",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Not held; four EU dossiers filed and an audit 'expected in this financial year'",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays pass"
   },
   {
    "id": "beta-drugs-q4fy27-1",
@@ -37190,6 +37199,58 @@
    "metric": "revenue",
    "op": ">=",
    "target": 3021,
+   "due": "Q3 FY27",
+   "createdOn": "2026-10-30",
+   "status": "pending"
+  },
+  {
+   "id": "beta-drugs-q4fy27-2",
+   "company": "Beta Drugs",
+   "sector": "Pharma",
+   "text": "FY27 exports of ₹90–100cr (cut from ₹105–110cr; ₹43cr in H1)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-30",
+   "status": "pending"
+  },
+  {
+   "id": "beta-drugs-q4fy27-3",
+   "company": "Beta Drugs",
+   "sector": "Pharma",
+   "text": "The EU audit held in FY27, as now expected",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-30",
+   "status": "pending"
+  },
+  {
+   "id": "ador-welding-q3fy27-1",
+   "company": "Ador Welding",
+   "sector": "Industrials",
+   "text": "Operating margin back above 12% in Q3 FY27 as price rises catch up with steel costs (11% in Q1 and Q2)",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 12,
+   "due": "Q3 FY27",
+   "ifMissed": "Moves from own to follow",
+   "createdOn": "2026-10-30",
+   "status": "pending"
+  },
+  {
+   "id": "varmora-granito-q4fy27-1",
+   "company": "Varmora Granito",
+   "sector": "Consumer Durables",
+   "text": "FY27 revenue growth of about 15% (about 10% in volume), as guided on the first call if exports revive",
+   "metric": "fyRevenueGrowth",
+   "op": ">=",
+   "target": 15,
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-30",
+   "status": "pending"
+  },
+  {
+   "id": "varmora-granito-q3fy27-1",
+   "company": "Varmora Granito",
+   "sector": "Consumer Durables",
+   "text": "Northeast (Tezpur) plant at about 75% use in Q3 FY27 (50% in Q2)",
    "due": "Q3 FY27",
    "createdOn": "2026-10-30",
    "status": "pending"
