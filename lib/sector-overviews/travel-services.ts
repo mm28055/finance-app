@@ -445,7 +445,7 @@ export const travelServices: SectorOverview = {
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
                         ['BLS International', 'Revenue 15–20% a year for five years (20–25% in May); visa margin ~40%, digital 7–8%; tax ~12%', 'Aadhaar ₹125cr (₹75cr spent); Atyati ₹138cr; ~₹2,000cr of acquisitions over 4–5 years', '**Beat, target cut**: revenue +25%, profit +12%'],
-                        ['Le Travenues Techno', 'No numbers; contribution margin floor ~36–37%; now plans for no early relief on train rules (in May it hoped a new railway ticketing system in August or September would help)', 'Small; some AI spend capitalised; Brevistay ₹65.69cr; Trenes ~₹125cr', '**Delivered**: bookings +19%; adjusted EBITDA −7%'],
+                        ['Le Travenues Techno', 'No numbers; contribution margin floor ~36–37%; now plans for no early relief on train rules (in May it hoped a new railway ticketing system in August or September would help)', 'Small; some AI spend capitalised; Brevistay ₹65.69cr; Trenes ~₹125cr', '**Delivered**: bookings +19% in Q1 and +22% in Q2; contribution margin 38.9% in Q2, above the floor; adjusted EBITDA −7% and −17%'],
                         ['Yatra Online', 'No FY27 guidance; gross margin +20% and adjusted EBITDA +30% a year over 2–3 years; ~20% EBITDA/gross margin in H2', '₹43cr in FY26; people and technology', '**Behind**: adjusted EBITDA −39%; card delayed'],
                         ['Thomas Cook India', 'Double-digit earnings growth withdrawn; travel margin 4–5%; H2 better than H1', 'Commitments ₹41cr; Sterling rooms mostly leased or managed', '**Missed**: travel 2.4%; DEI loss wider; Sterling beat'],
                     ],
@@ -532,8 +532,8 @@ export const travelServices: SectorOverview = {
         {
             company: 'Le Travenues Techno', rank: 3, stance: 'PRICED', segment: ONLINE,
             what: "ixigo: an online travel app for trains, buses (AbhiBus), flights and now budget hotels, strongest with travellers from smaller towns; Prosus owns 10.1%.",
-            view: "**A strong niche, priced for more.** It holds 63% of app-based train bookings, grew bus bookings 39% and keeps a 40% contribution margin. But Q1 operating profit (₹20cr) was smaller than its interest income (₹29cr), adjusted EBITDA fell 7% as it funds hotels, and IRCTC and two airlines set its limits. The price needs about {need:Le Travenues Techno|30}% a year against my ~20%.",
-            watch: 'Hotel contribution turning positive within four to six quarters; airline seats returning from the festive season; how the unspent ₹740cr is used.',
+            view: "**A strong niche, priced for more.** It holds 63% of app-based train bookings, grew bus bookings 39% and keeps a 40% contribution margin. But Q1 operating profit (₹20cr) was smaller than its interest income (₹29cr), adjusted EBITDA fell 7% as it funds hotels, and IRCTC and two airlines set its limits. The price needs about {need:Le Travenues Techno|30}% a year against my ~20%. 30 Oct 2026: stays wait after the Q2 call (19 Oct). Bookings rose 22%, trains recovered (+16% revenue, about 64% of OTA rail), buses grew 32% and hotels, now reported, grew 2.6x with the contribution loss down to 15% of revenue; but flight revenue fell 8% on dear fares and cut seats, October started soft, adjusted operating profit fell 17%, and record profit came from a one-off gain on selling part of Freshbus.",
+            watch: 'Hotel contribution turning positive within four to six quarters (−15% of revenue in Q2); airline seats returning (October was soft); the train recovery lasting past the festive season; how the unspent ₹740cr is used.',
         },
         {
             company: 'Yatra Online', rank: 4, stance: 'TURNAROUND', segment: ONLINE,
