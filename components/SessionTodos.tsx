@@ -6,8 +6,8 @@ export function SessionTodos({ todos }: { todos: SessionTodo[] }) {
     if (!todos.length) return null;
     return (
         <details className="relative z-50">
-            <summary className="list-none cursor-pointer select-none flex items-center gap-1.5 bg-[#F5F3FF] border border-[#DDD6FE] text-[#6D28D9] px-2.5 py-1 rounded-lg text-[11px] font-medium">
-                <MessageSquare className="w-3.5 h-3.5" /> Needs a session · {todos.length}
+            <summary title="Needs a session" aria-label={`Needs a session: ${todos.length}`} className="list-none cursor-pointer select-none flex items-center gap-1 bg-[#F5F3FF] border border-[#DDD6FE] text-[#6D28D9] px-2 py-1 rounded-lg text-[11px] font-medium">
+                <MessageSquare className="w-3.5 h-3.5" /> {todos.length}
             </summary>
             <div className="absolute right-0 max-md:right-auto max-md:left-0 mt-2 w-80 max-w-[90vw] z-50 bg-white border border-gray-200 rounded-xl shadow-lg p-3">
                 <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-2">Open a session with Claude for</p>
