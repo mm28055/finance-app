@@ -33949,7 +33949,11 @@
    "ifMet": "The deleveraging is reaching the P&L, which is what the profit turnaround depends on",
    "ifMissed": "Interest is still eating most of the operating profit; the turnaround moves out",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "Finance cost ₹116cr in Q2 FY27 against ₹131cr in Q1 (Screener)",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Debt repayment from the IPO money is showing"
   },
   {
    "id": "horizonind-q3fy27-1",
