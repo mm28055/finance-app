@@ -477,7 +477,7 @@ export const agrochemicalFertilizers: SectorOverview = {
                         ['Madhya Bharat Agro Products', 'Dhule ₹675cr (₹460cr spent by April); phase 2 “could be through pure equity”', 'Borrowings ₹856cr (₹318cr a year earlier); ₹300.5cr preferential issue (₹317.5cr planned); ₹1,000cr share authority'],
                         ['Krishana Phoschem', 'More than ₹700cr collected in Q1; working-capital limits 70% used in June', 'Borrowings ₹733cr (₹376cr); CRISIL rating on watch'],
                         ['Sumitomo Chemical India', 'No Q1 call. Cash and liquid investments ₹2,549cr at June; ₹150cr Dahej plant', 'Debt ₹63cr (leases); contingent claims ₹601cr'],
-                        ['Rallis India', 'Cash ₹541cr at March, ₹309cr at June; working capital up 15–20 days', 'Net cash ₹489cr (Screener)'],
+                        ['Rallis India', 'Cash ₹541cr at March, ₹309cr at June, about ₹211cr at September as inventory stayed high (seed stock and war-time raw materials)', 'Net cash ₹489cr (Screener, March)'],
                         ['Dhanuka Agritech', '₹70cr buyback at ₹1,400; Nagpur plant up to ₹200cr', 'Net cash ₹360cr; GST claims ₹135cr'],
                         ['Insecticides (India)', '₹70cr of the ₹200cr Sotanala plant spent; no working-capital target', 'Borrowings ₹157cr at March; ~₹800cr of stock entering kharif'],
                         ['India Pesticides', 'Cash ₹59cr at June; ~₹100cr a year of capex; inventory ~200 days', 'Borrowings ₹110cr at March (₹26cr two years earlier), mostly short-term against deposits; ~₹27cr term loan in a new subsidiary'],
@@ -563,7 +563,7 @@ export const agrochemicalFertilizers: SectorOverview = {
                         ['Sharda Cropchem', 'Revenue +10–15%; volume ~15%; gross margin ~35%; operating margin 18–20%', '₹480–550cr a year on registrations', '**Mixed**: revenue +9%, volume −1.6%, gross margin 36.7%; volume guide cut to 5–10%'],
                         ['Chambal Fert & Chem', 'Ammonium nitrate at 75–80% in FY27; urea volume above FY26; Moroccan venture expanded by December 2026', '~₹500cr on ammonium nitrate and urea; fourth plant ₹9,500–10,000cr under study', '**Slipping**: nitrate a quarter late; urea revenue −8%; venture to April–June 2027'],
                         ['GSFC', 'NPK margins within ±5–10%; chemicals to offset fertiliser; Sikka line converted by July–August', 'Sikka acid project and Dahej, costs not given', '**Mixed**: fertiliser margin halved; chemicals ₹116cr; profit +14%'],
-                        ['Rallis India', 'Seeds “mid-teen” growth; crop protection maybe double digit; margins stable to soft', '₹70–140cr a year (CRISIL)', '**Mixed**: branded +19%; seeds +6%; exports −28%; ₹24cr one-off'],
+                        ['Rallis India', 'Seeds “mid-teen” growth; crop protection maybe double digit; margins stable to soft', '₹70–140cr a year (CRISIL)', '**Missed**: Q1 branded +19% but Q2 branded volume −6% and seeds −31% on a dry kharif; H1 revenue +3%, profit +6%'],
                         ['Dharmaj Crop Guard', 'FY27 +18–20% in every business; margin +0.5–0.75 points', '~₹50cr herbicide unit, Q3 FY27', '**Behind**: Q1 +5%, brands flat; margin 14.9%'],
                         ['Krishana Phoschem', 'FY27 ₹2,900–3,000cr and “35–40%”; margins under pressure', 'Expansion done; next plans not disclosed', '**Mixed**: margin 16.7%; new line at 43%; guidance softened to 30–35%'],
                         ['Paradeep Phosphates', 'Stock and receivables to unwind in Q1; acid to 0.7m t in FY27; acid-plant decision within the quarter', '~₹600cr in FY27; ₹3,500–3,600cr later', '**Mixed**: debt −₹700cr; subsidy owed +₹800cr; projects slipped a year'],
@@ -665,8 +665,8 @@ export const agrochemicalFertilizers: SectorOverview = {
         {
             company: 'Rallis India', rank: 4, stance: 'HARVEST', segment: BRANDS,
             what: "The Tata group's crop-protection and seeds company: branded pesticides for Indian farmers, generic technicals and contract manufacturing for export, and hybrid seeds.",
-            view: "**A steady brand that struggles to grow.** Branded domestic sales rose 19% on 15% more volume and seeds earned 30%, with ₹541cr of cash at March. But about ₹24cr of Q1 operating profit was one-off, exports fell 28%, seeds missed the ‘mid-teen’ promise and revenue has grown about 3% a year for five years. The price needs about {need:Rallis India|11–12}% a year against my ~10%.",
-            watch: 'Branded volume in Q2–Q3 without extra returns provisions; seed sales against the mid-to-high single-digit outlook; export volumes and contract orders.',
+            view: "**A steady brand that struggles to grow.** Branded domestic sales rose 19% on 15% more volume and seeds earned 30%, with ₹541cr of cash at March. But about ₹24cr of Q1 operating profit was one-off, exports fell 28%, seeds missed the ‘mid-teen’ promise and revenue has grown about 3% a year for five years. The price needs about {need:Rallis India|11–12}% a year against my ~10%. 30 Oct 2026: stays follow after a weak Q2 (call 23 Oct): a dry kharif left revenue flat at ₹858cr, branded domestic volume fell 6%, seeds fell 31% and broke even, operating profit fell 18%, and cash and liquid funds dropped to about ₹211cr as stock bought at war-time prices piled up. H1 profit still rose 6%, and contract manufacturing jumped to ₹27cr.",
+            watch: 'Rabi demand and branded volume returning in Q3–Q4 after a 6% fall in Q2; inventory and cash rebuilding from about ₹211cr; seeds recovering in kharif 2027; contract manufacturing building on ₹27cr in Q2.',
         },
         {
             company: 'Dharmaj Crop Guard', rank: 5, stance: 'SCALEUP', segment: MAKERS,
