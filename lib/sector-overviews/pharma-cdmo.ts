@@ -769,7 +769,7 @@ export const pharmaCdmo: SectorOverview = {
         {
             company: 'Aarti Pharmalabs', rank: 10, stance: 'CYCLICAL', segment: CHEM,
             what: "Mostly a maker of caffeine and related xanthines (57% of Q1 standalone revenue), plus generic APIs and a contract business for innovators (7% of Q1).",
-            view: "**A caffeine company with a contract option.** Q1 grew 39% on caffeine prices management expects to fall back about halfway. FY26 profit fell 36%, borrowings rose to ₹754cr, return on capital fell to 11%, and its auditor highlighted a missed forward contract that cost ₹29.7cr. The contract business did ₹37cr in Q1 against a 40–50% growth guide. The price needs about {need:Aarti Pharmalabs|20}% a year against my ~12%.",
+            view: "**A caffeine company with a contract option.** Q1 grew 39% on caffeine prices management expects to fall back about halfway. FY26 profit fell 36%, borrowings rose to ₹754cr, return on capital fell to 11%, and its auditor highlighted a missed forward contract that cost ₹29.7cr. The contract business did ₹37cr in Q1 against a 40–50% growth guide. The price needs about {need:Aarti Pharmalabs|20}% a year against my ~12%. 30 Oct 2026: the CFO resigned and the auditor flagged a contested ₹59.5cr stamp-duty demand from a past demerger; stays wait.",
             watch: 'Contract revenue of ₹350cr-plus in the last three quarters; caffeine prices; borrowings as Atali Block 2 is built; any further promoter selling after promoter-group members sold 2.8% of the company in September.',
         },
         {
