@@ -554,7 +554,7 @@ export const industrialsProducts: SectorOverview = {
         {
             company: 'Ador Welding', rank: 1, stance: 'HARVEST', segment: CONSUME,
             what: "Welding consumables (electrodes, wires, fluxes) and welding and cutting equipment, sold mainly through 400-plus distributors, with shipyard and nuclear approvals; the flare-projects arm is now a small product line.",
-            view: "**The clearest pricing power here, at a price that fits.** In FY26 it held prices and lifted gross margin 2.5 points to 38%, the welding segment earned 15.2%, and it turned 83% of five years' operating profit into cash with about ₹140cr of cash and investments. Q1 gross margin fell 240 basis points and the 1–2 point margin rise is not yet showing, and a ₹36.4cr BIS penalty is unprovided. The price needs about {need:Ador Welding|15}% a year against my ~14%.",
+            view: "**The clearest pricing power here, at a price that fits.** In FY26 it held prices and lifted gross margin 2.5 points to 38%, the welding segment earned 15.2%, and it turned 83% of five years' operating profit into cash with about ₹140cr of cash and investments. Q1 gross margin fell 240 basis points and the 1–2 point margin rise is not yet showing, and a ₹36.4cr BIS penalty is unprovided. The price needs about {need:Ador Welding|15}% a year against my ~14%. 30 Oct 2026: stays own. Q2 revenue rose 23% to ₹345cr, but the margin slipped again to 11% against the 12%-plus I watched; I keep the call while the rise in sales holds, and a third quarter below 12% after the promised price rises would move it to follow.",
             watch: 'Operating margin back above 12% with volume growth above 8%; gross margin recovering from Q1’s 36.5%; the BIS penalty case.',
         },
         {
