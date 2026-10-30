@@ -615,7 +615,7 @@ export const chemicalsCommodity: SectorOverview = {
                         ['Tata Chemicals', 'Net debt ‘similar’ to March; India margin ~18% sustainable; UK EBITDA-positive', 'At or below depreciation (~₹1,200cr); salt and silica projects by 2028', '**Mixed**: debt down ₹270cr via asset sales; UK break-even slips again'],
                         ['DCW', '₹300cr ‘steady-state’ operating profit (was ₹400cr for FY27); FY27 better than FY26', '₹250cr over 2–3 years: pigments +15,000 t by Q4 FY28', '**Walked back**: target cut; Q1 ₹41cr; net-debt-free plan dropped'],
                         ['Archean Chemical Industries', 'Bromine 20,000–25,000 t exit rate; potash 9,000–10,000 t; hold ~₹300/kg', 'Chip fab ₹2,067cr (~75% government-funded); bromine to 40,000 t decided in H2 FY28', '**Mixed**: bromine price +50%; salt −12%; subsidiaries still losing'],
-                        ['Fairchem Organics', 'Margin ~10% ‘we will be able to maintain’; utilisation exit 70–75% (was ~80%)', 'None needed; new 40,000 t line starts with ~8,000 t', '**Beat**: margin 10.1% against 8%; utilisation and exports behind'],
+                        ['Fairchem Organics', 'Margin ~10% ‘we will be able to maintain’; utilisation exit 70–75% (was ~80%)', 'None needed; new 40,000 t line starts with ~8,000 t', '**Beat on margin**: 10.1% in Q1 and about 10.5% in Q2 against 8%; utilisation (60–65%), exports and the new line behind'],
                         ['Chemplast Sanmar', '‘Reasonable performance from Q3’; PVC spread ~$160/t from September; custom chemicals ₹1,000cr', 'R-32 to 14,000 t by March 2027; paste PVC +7,000 t', '**Missed**: operating loss ₹115cr against ‘near break-even’; duty lapsed'],
                     ],
                     note: 'Promises are from the official Q4 FY26 call transcripts, checked against Q1 FY27 results and calls. Where the stored dashboard transcripts were machine-made, the official exchange filings were used.',
@@ -760,8 +760,8 @@ export const chemicalsCommodity: SectorOverview = {
         {
             company: 'Fairchem Organics', rank: 12, stance: 'CYCLICAL', segment: STYR,
             what: "A Fairfax-controlled Gujarat maker of dimer acid, linoleic and isostearic acids from vegetable-oil refinery waste, selling mainly to paint and ink makers.",
-            view: "**A small spread business priced for a full recovery.** Q1 margin rose to 10% on prices about 30% higher as Chinese dumping eased. But volume fell from 63,000 to 44,000 tonnes over two years, the company says it cannot stop dumping if it returns, it bought back shares with borrowed money in a ₹6cr-profit year, and the chairman's pay was about 43% of profit. The price needs about {need:Fairchem Organics|26}% a year against my ~16%.",
-            watch: 'Margins near 10% in Q2–Q3 with utilisation rising; isostearic orders; operating cycle back under 120 days.',
+            view: "**A small spread business priced for a full recovery.** Q1 margin rose to 10% on prices about 30% higher as Chinese dumping eased. But volume fell from 63,000 to 44,000 tonnes over two years, the company says it cannot stop dumping if it returns, it bought back shares with borrowed money in a ₹6cr-profit year, and the chairman's pay was about 43% of profit. The price needs about {need:Fairchem Organics|26}% a year against my ~16%. 30 Oct 2026: stays pass after the Q2 call. Revenue rose 50% and the margin held at about 10.5% on prices of ₹135 a kg (₹106 a year ago) as Chinese dumping eased; but volume was only 12,300 tonnes, the plant runs at 60–65%, the new line slipped to Q3, and US exports wait for freight costs to fall.",
+            watch: 'Utilisation rising from 60–65% as cheaper soybean oil improves raw-material supply; the new line starting after Diwali; operating cycle back under 120 days; any return of Chinese dumping.',
         },
         {
             company: 'Chemplast Sanmar', rank: 13, stance: 'AVOID', segment: SALT,
