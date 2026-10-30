@@ -2979,7 +2979,8 @@
     "sector": "Commercial Services",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-30: Fits now (needs ~11.5% vs my 10%) after a ~24% fall; no filings in six weeks; the C&AG profit finding and coal-exchange risk stand. Stays follow; dated sentence added."
   },
   {
     "company": "NBCC",
@@ -3034,7 +3035,8 @@
     "sector": "Cables",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-10-30: Fits now (needs ~20% vs my 18%); Q2 revenue +52%; land buy and U M Cables deal logged. Stays follow until the Q2 call shows cash recovering (FY26: ₹295cr of ₹786cr). Dated sentence added."
   },
   {
     "company": "Kross",
@@ -3159,7 +3161,8 @@
     "sector": "Oil",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-10-30: Fits now (needs ~9% vs my 12%) after the share fell; Q2 margin 12% on maize as warned; more promoter pledges in September; FY26 operating cash −₹296cr; tender terms unconfirmed. Stays wait; dated sentence added."
   },
   {
     "company": "Waaree Renewables",
@@ -3182,14 +3185,16 @@
     "sector": "Chemicals",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-10-30: Fits now (needs ~2.4% vs my 1%); new MD in September. Stays follow, not own: war-peak profit, treasury income, unresolved ₹21,370cr telecom demand. Dated sentence added."
   },
   {
     "company": "Krystal Integrated Services",
     "sector": "Commercial Services",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-10-30: Still fits (needs ~8% vs my 7%); no filings since; loan not repaid. Stays wait; dated sentence added."
   },
   {
     "company": "Oswal Pumps",
