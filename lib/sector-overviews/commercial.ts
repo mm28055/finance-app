@@ -666,7 +666,7 @@ export const commercialServices: SectorOverview = {
         {
             company: 'MSTC', rank: 3, stance: 'HARVEST', segment: SPECIAL,
             what: "A government company running online auctions of scrap, coal, mineral blocks, land and licences for public bodies, now purely fee-earning after closing its trading arm.",
-            view: "**A high-margin platform with audit and policy questions.** Auction fees rose 28% in Q1 at a 61% margin and ROCE is about 30%. But the C&AG says FY26 profit was overstated, contingent claims rose to ₹560cr, ₹785cr of its cash is bidders' deposits, and the coal-exchange rules could stop its coal-sale auctions. The price needs about {need:MSTC|14–15}% a year against my ~10%.",
+            view: "**A high-margin platform with audit and policy questions.** Auction fees rose 28% in Q1 at a 61% margin and ROCE is about 30%. But the C&AG says FY26 profit was overstated, contingent claims rose to ₹560cr, ₹785cr of its cash is bidders' deposits, and the coal-exchange rules could stop its coal-sale auctions. The price needs about {need:MSTC|14–15}% a year against my ~10%. 30 Oct 2026: after a fall of about a quarter in the share price it now needs about {need:MSTC|11}% and reads {label:MSTC|fits}, but it stays follow: no filing has answered the C&AG's finding that FY26 profit was overstated, and the coal-exchange rules could still take away its coal auctions.",
             watch: 'A credit-loss policy in the FY27 accounts; the first coal exchange licence; EPR exchange go-live.',
         },
         {
@@ -708,7 +708,7 @@ export const commercialServices: SectorOverview = {
         {
             company: 'Krystal Integrated Services', rank: 10, stance: 'TURNAROUND', segment: PEOPLE,
             what: "Provides housekeeping, security, staffing and catering, about 70% for government hospitals, schools and public bodies.",
-            view: "**A turnaround case: orders, but cash and governance are slipping.** It has a ₹2,500cr-plus consolidated order book and a steady 6–7% margin. But FY26 revenue grew 5% against an 18–20% target, receivables reached 118 days, it lent ₹77.8cr to a former promoter-group firm, and CRISIL cut it to BBB+ (negative) without a word on the call. The price needs about {need:Krystal Integrated Services|9}% a year against my ~7%. By 28 September the price had fallen about 3% and the price check reads {label:Krystal Integrated Services|fits}; the call stays wait until the ₹77.8cr loan is repaid and the rating steadies.",
+            view: "**A turnaround case: orders, but cash and governance are slipping.** It has a ₹2,500cr-plus consolidated order book and a steady 6–7% margin. But FY26 revenue grew 5% against an 18–20% target, receivables reached 118 days, it lent ₹77.8cr to a former promoter-group firm, and CRISIL cut it to BBB+ (negative) without a word on the call. The price needs about {need:Krystal Integrated Services|9}% a year against my ~7%. By 28 September the price had fallen about 3% and the price check reads {label:Krystal Integrated Services|fits}; the call stays wait until the ₹77.8cr loan is repaid and the rating steadies. 30 Oct 2026: still {label:Krystal Integrated Services|fits}, and still wait; no filing since shows the loan repaid or the rating steadied.",
             watch: 'The ₹77.8cr loan being repaid; receivables below 110 days; the ₹300cr share sale.',
         },
         {
