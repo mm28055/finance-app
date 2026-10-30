@@ -11755,8 +11755,8 @@
   },
   {
    "company": "EPack Prefab Techno.",
-   "fingerprint": "e0a2a69c20b0ca72",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "5ce05daf5681f9e1",
+   "checkedOn": "2026-10-30",
    "lines": {
     "heading": "How full each line is (Q1 FY27)",
     "items": [
@@ -11782,7 +11782,7 @@
    },
    "adds": [
     {
-     "heading": "What the new steel-building lines add (Mambattu and Ghiloth from Q3 FY27; Gujarat from April 2027)",
+     "heading": "What the new steel-building lines add (Ghiloth started October 2026; Mambattu second line Q3 FY27; Gujarat from April 2027)",
      "projectId": "epack-prefab-techno-gujarat-peb",
      "bars": [
       {
@@ -11806,11 +11806,12 @@
      ],
      "notes": [
       "The Gujarat (Vithalapur) plant alone adds about 34% on today's 1,47,122 t; it serves Gujarat and Maharashtra, and could bring ₹500–600cr of sales at peak (May call)",
-      "With all three new plants, peak revenue of ₹2,700–2,900cr against ₹1,525cr in FY26"
+      "With all three new plants, peak revenue of ₹2,700–2,900cr against ₹1,525cr in FY26",
+      "Ghiloth's share is 11,300 t (filing, 28 Oct 2026), taking capacity to 1,58,422 t"
      ]
     },
     {
-     "heading": "What the Ghiloth panel line adds (commercial production from Q3 FY27)",
+     "heading": "What the Ghiloth panel line adds (commercial production from 28 Oct 2026)",
      "projectId": "epack-prefab-techno-ghiloth",
      "bars": [
       {
@@ -11833,10 +11834,11 @@
     "items": [
      {
       "name": "Ghiloth sandwich-panel line (Rajasthan)",
-      "sub": "greenfield plant, second continuous panel line",
-      "right": "part of the ₹150cr",
-      "status": "building",
-      "projectId": "epack-prefab-techno-ghiloth"
+      "sub": "greenfield plant, second continuous panel line plus 11,300 t of steel buildings; IPO money",
+      "right": "₹100cr (part of the ₹150cr)",
+      "status": "started",
+      "projectId": "epack-prefab-techno-ghiloth",
+      "total": 100
      },
      {
       "name": "Gujarat steel-building plant",
@@ -11870,19 +11872,21 @@
     },
     {
      "when": "Q3 FY27",
-     "tone": "next",
-     "text": "Mambattu second fabrication line and Ghiloth running, taking steel buildings to about 1,70,000 t and panels to about 21.1 lakh m²",
+     "tone": "done",
+     "text": "Ghiloth in commercial production (28 Oct 2026): steel buildings to 1,58,422 t and panels to about 21.1 lakh m²; Mambattu second fabrication line due this quarter",
      "milestones": [
-      "epack-prefab-techno-ghiloth-m1"
-     ]
+      "epack-prefab-techno-ghiloth-m1",
+      "epack-prefab-techno-gujarat-peb-m1"
+     ],
+     "sub": "The Gujarat plant was due now; management changed this (Aug call): commissioning in Q4 FY27, production from April 2027"
     },
     {
      "when": "Q1 FY28",
      "tone": "later",
      "milestones": [
-      "epack-prefab-techno-gujarat-peb-m1"
+      "epack-prefab-techno-gujarat-peb-m2"
      ],
-     "sub": "Slipped: Aug call says commissioning in Q4 FY27 and production from April 2027; the May call had all three plants online in FY27"
+     "sub": "Aug call: commissioning in Q4 FY27 and production from April 2027; the May call had all three plants online in FY27"
     },
     {
      "when": "FY28",
@@ -11891,7 +11895,7 @@
      "sub": "FY27 target ₹1,900–1,950cr"
     }
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note",
+   "source": "Ghiloth filing (28 Oct 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note",
    "recheck": {
     "changes": [
      "Removed the Q4 FY26 utilisation correction (83% → above 90%): the official May transcript gives 83% (58/77/67/83% by quarter, 'about 83%-84%'); the Aug call's 'above 90%' was an offhand recollection, so the stored 83% stands and the line note and Q4 FY26 stop show 83% with the Aug wording as an aside",
@@ -35667,11 +35671,11 @@
   },
   {
    "company": "Subros",
-   "fingerprint": "87e690a3426ef6c9",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "3822d05033f22c9a",
+   "checkedOn": "2026-10-30",
    "adds": [
     {
-     "heading": "What the Kharkhoda plant adds (production from Q3 FY27; phase 2 not dated)",
+     "heading": "What the Kharkhoda plant adds (production began October 2026; phase 2 not dated)",
      "projectId": "subros-kharkhoda",
      "bars": [
       {
@@ -35695,7 +35699,8 @@
      ],
      "notes": [
       "Next to Maruti's new Sonipat/Kharkhoda factory: supplies Brezza, Vitara and later Kharkhoda models",
-      "Lines at full use (90–95%) in about 2 years; about ₹200–250cr of sales a year then (May call)"
+      "Lines at full use (90–95%) in about 2 years; about ₹200–250cr of sales a year then (May call)",
+      "The start filing (28 Oct 2026) gives 4.5 lakh units a year of HVAC and hoses and tubes, against 4.75 lakh in the plan"
      ],
      "caveat": "Today's 26 lakh is spread over nine plants (May 2026). Other capacity: hose and tube 23 lakh, compressors 22 lakh, heat exchangers 24–25 lakh"
     }
@@ -35707,7 +35712,7 @@
       "sub": "on approved long-term loans",
       "total": 150,
       "right": "₹150cr",
-      "status": "building",
+      "status": "started",
       "projectId": "subros-kharkhoda"
      },
      {
@@ -35723,11 +35728,11 @@
    "timeline": [
     {
      "when": "Q3 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "subros-kharkhoda-m1"
      ],
-     "sub": "May call had promised the end of Q2; slipped a quarter"
+     "sub": "Started 28 Oct 2026 (filing); the May call had promised the end of Q2, a quarter earlier"
     },
     {
      "when": "Q4 FY27",
@@ -35763,7 +35768,7 @@
     "Noida compressor plant fully used; the Gujarat plant adds ICE compressor capacity too",
     "Electric compressor: 3.5 to 4 times the compressor content per car on electric models; about ₹250cr a year of sales at peak over a roughly 7-year programme (₹1,200cr Maruti order, May call)"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
+   "source": "Kharkhoda filing (28 Oct 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Sudeep Pharma",

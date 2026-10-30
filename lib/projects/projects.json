@@ -4208,12 +4208,14 @@
    "company": "EPack Prefab Techno.",
    "sector": "Construction",
    "name": "Ghiloth sandwich-panel line (Rajasthan)",
-   "what": "Greenfield plant with a second continuous insulated sandwich-panel line",
-   "cost": "Part of about ₹150cr of FY27 capex for three plants",
+   "what": "Greenfield plant with a second continuous insulated sandwich-panel line plus steel-building (PEB) capacity",
+   "cost": "₹100cr, from IPO money (part of about ₹150cr of FY27 capex for three plants)",
    "expectedStart": "Q3 FY27",
-   "status": "building",
-   "source": "Q4 FY26 call (May 2026) and sector note",
-   "updatedOn": "2026-09-29"
+   "status": "started",
+   "source": "Stock-exchange filing, 28 Oct 2026: commercial production of steel buildings and panels began at Ghiloth",
+   "updatedOn": "2026-10-30",
+   "adds": "11,300 t a year of steel buildings and 8 lakh m² a year of panels",
+   "capacityAdd": "+11,300 t of steel buildings (1,47,122 → 1,58,422 t) and +8 lakh m² of panels (13.1 → 21.1 lakh m²)"
   },
   {
    "id": "epack-prefab-techno-gujarat-peb",
@@ -8551,9 +8553,9 @@
    "cost": "₹150cr, on approved long-term loans",
    "expectedStart": "Q3 FY27",
    "adds": "supplies Brezza, Vitara and later Kharkhoda models; lines at full use in about 2 years",
-   "status": "building",
-   "source": "Q1 FY27 call (Aug 2026): start of production Q3 FY27, a quarter later than the end-Q2 promised in May",
-   "updatedOn": "2026-09-29",
+   "status": "started",
+   "source": "Stock-exchange filing, 28 Oct 2026: commercial production began; 4.5 lakh units a year of HVAC and hoses and tubes; Q1 FY27 call had given Q3 FY27",
+   "updatedOn": "2026-10-30",
    "capacityAdd": "4.75 lakh AC units a year in phase 1, 9.5 lakh with phase 2"
   },
   {

@@ -25930,8 +25930,12 @@
    "text": "Commercial production at Ghiloth (October–November 2026)",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "epack-prefab-techno-ghiloth"
+   "status": "met",
+   "project": "epack-prefab-techno-ghiloth",
+   "actual": "Commercial production started at Ghiloth (filing 28 Oct 2026): +11,300 t of steel buildings and +8 lakh m² of panels",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "epack-prefab-techno-gujarat-peb-m1",
@@ -25941,7 +25945,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "epack-prefab-techno-gujarat-peb"
+   "project": "epack-prefab-techno-gujarat-peb",
+   "revisions": [
+    {
+     "on": "2026-10-30",
+     "text": "Q1 FY27 call (Aug 2026): commissioning in Q4 FY27 and production from April 2027"
+    }
+   ]
   },
   {
    "id": "epack-prefab-techno-datacentre-unit-m1",
@@ -28820,8 +28830,12 @@
    "text": "Kharkhoda starts production",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "subros-kharkhoda"
+   "status": "met",
+   "project": "subros-kharkhoda",
+   "actual": "Commercial production started (filing 28 Oct 2026); 4.5 lakh units a year of HVAC and hoses and tubes",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays pass"
   },
   {
    "id": "subros-e-compressor-m1",
@@ -37254,6 +37268,16 @@
    "due": "Q3 FY27",
    "createdOn": "2026-10-30",
    "status": "pending"
+  },
+  {
+   "id": "epack-prefab-techno-gujarat-peb-m2",
+   "company": "EPack Prefab Techno.",
+   "sector": "Construction",
+   "text": "Gujarat plant in production (from April 2027, as now promised)",
+   "due": "Q1 FY28",
+   "createdOn": "2026-10-30",
+   "status": "pending",
+   "project": "epack-prefab-techno-gujarat-peb"
   }
  ]
 }
