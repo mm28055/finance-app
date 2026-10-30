@@ -492,3 +492,58 @@ Pushed to master; all checks passed (typecheck clean, "All notes pass.").
 **Results pass:** 45 reviewed, and all figures match Screener. I changed two verdicts: **Concord Biotech** from ahead to in line (profit only matched the base case), and **Kirloskar Brothers** from ahead to mixed (the margin slipped and net profit grew 4%). I added what the points missed, such as Piramal's and Acutaas's raised guides, Sterling Tools' EV losses and Syngene's CFO exit. None had an analysed call, so no checkpoints were judged from them.
 
 **Top 12:** M&B (Sanand started), Dynamic Cables (plant installed, Q2 margin 10%), Sunteck (Q2 results), and the reserve names Acutaas, Gulf Oil and Mahindra Lifespace were touched. No trigger was hit, so nothing changed. Dynamic's margin of 10% misses one of its next checks (10.5%), but its trigger (below 9.5% for two quarters) was not hit.
+
+## 30 October 2026 (Friday, results season)
+
+**Checks:** the notes check lists the same 30 problems as before this run, all "company in the sector with no verdict" (the newly listed companies that still need sections). They were on master already, so they did not block the push. The typecheck is clean and no capacity picture is out of date or in error. Both older branches, weekly-review/2026-09-30 and weekly-review/2026-10-18, turned out to be fully merged into master once the full history was fetched, so there was nothing to rescue.
+
+**Follow-ups handled: 40 (the limit), plus one capacity-picture follow-up settled by this week's filings. Still open: 127.** 69 are the recently listed companies with no note section (already a Needs-a-session item). 24 are capacity-picture date fixes, which have now waited a week, so I added a Needs-a-session item for them. 8 are price-drift reviews (Yash Highvoltage, Punjab Chemicals, Vardhman Special Steels, Poojaa, Stylam, Yasho, Brigade, Sakar). 7 are big holder changes and 4 are shareholding changes. 5 are results calls whose transcripts are still not filed (ICICI Bank, Sobha, CIE Automotive, Ador Welding, Cyient). 4 are new projects, 4 are waiting entries and 2 are demergers (HEG, SKF).
+
+**Calls changed:** none. Every company reviewed today keeps its call; the reasons are below.
+
+**New results calls (transcripts read):**
+- **Pitti Engineering** (stays own). Volumes rose 26% and the ₹370cr operating-profit guide held. But the margin slipped to 15.8% on forex, fuel and consumables (fuel is passed on from January), and net debt rose to about ₹539cr, so the debt checkpoint was missed. Operating cash was a strong ₹323cr in H1. The new ₹450cr Bengaluru plant takes planned spending to ₹740cr, of which ₹250–260cr is committed.
+- **Rajratan Global** (stays follow). H1 volume rose 17% and the FY27 target went up to about 1.6 lakh tonnes. But the Q2 margin was 12.4% against the 13.5–14% promised, and management now calls about 13% the floor. A new ₹100cr Thailand expansion (+50,000 tonnes within a year) pushes back the turn to free cash I follow it for. Steel cord slipped to FY28, and Chennai is filling in steps (40,000 tonnes rated now). I added the Thailand project and redrew the picture.
+- **Waaree Renewables** (stays follow). Revenue rose 37%, and the solar order book refilled to about 3,226 MWp after 1.7 GWp of new orders. But the margin fell to 15.1%, and interest and depreciation from the APS purchase cut profit by 30%. Who placed the new orders is not disclosed, so I judged the third-party-orders checkpoint only partly met.
+- **Himadri** (stays follow). Revenue rose 58%, profit rose 31% and the ₹1,100cr FY28 profit goal was reaffirmed. But H1 operating cash was −₹154cr and borrowings rose to about ₹1,156cr, so the cash checkpoint was missed. The margin was 18.6%, though profit per tonne rose. Anthraquinone and carbazole will now start all at once in Q4 FY27. LFP still has only non-disclosure agreements, no named customer.
+- **Mastek** (stays follow). The UK grew 4.1% and net cash rose to about ₹583cr. But the margin fell to 14.4%, the 12-month backlog fell 7.7% and the $25M US federal deal will not start until after the US midterms.
+- **Mahindra Lifespace** (stays follow; Top 12 reserve, nothing changes). H1 pre-sales were ₹1,988cr (+66%) and ₹7,100cr of new projects were added. Collections and industrial land were slow, and Mahalakshmi was not among the H2 launches named.
+- **Rallis** (stays follow). A dry kharif cut branded volume 6% and seeds 31%, operating profit fell 18%, and cash dropped to about ₹211cr on high stock. Both Q2 checkpoints were missed. H1 profit was still up 6%.
+- **Mahindra Holidays** (stays wait). The group is back to a ₹19.7cr profit, but India operating profit fell 12% and net keys fell to 5,762.
+- **Bajaj Healthcare** (stays wait). Revenue rose 19% and profit 27%, and the guide is on track. The cancer-drug plant moved earlier to Q2 FY28 and the Nashik plant is due by Q1 FY28; picture redrawn.
+- **ixigo** (stays wait). Bookings rose 22% and hotels grew 2.6 times (now reported). But flights fell 8%, adjusted operating profit fell 17%, and record profit came from a one-off Freshbus gain.
+- **Paisalo Digital** (stays wait). The book grew 33%, with bad loans at 0.66%. But H1 lending was up 77%, and another promoter pledge was filed on 28 October.
+- **Fairchem** (stays pass). The margin held at about 10.5% on price, but the plant runs at 60–65% and the new line slipped to Q3; picture redrawn.
+- **Sterlite Technologies** (stays pass). Q2's 32% margin included a one-off ₹161cr US tariff refund; the underlying figure was 27.1%. I corrected the note. The FY29 margin target was raised to about 30%. Only ₹3,021cr of the ₹35,274cr order book is scheduled for Q3, and the promised US-plant details were not given.
+- **Beta Drugs** (stays pass). H1 exports were ₹43cr against about ₹55cr promised, the export guide was cut to ₹90–100cr, and the EU audit has still not happened.
+- **Varmora Granito** (first call; it has a card but no verdict yet). It guides about 15% growth if exports revive. Plants were 89% used in Q2, and there is no new capex.
+- **Ador Welding** (stays own for now). The margin was 11% against the 12%-plus I watched, while revenue rose 23%. A third quarter below 12% would move it to follow; I added a checkpoint for that. The transcript is not filed yet.
+
+**Price drift:** 11 companies had drifted back to a full or stretched price by today, so the trigger had gone and their calls stand (Laxmi Dental, Minda Corp, NBCC, Powerica, Puravankara, Quess, RACL, Rainbow, Waaree Renewables, Eris and Oswal Pumps). Five still fit and keep their calls, each with a dated reason in its note:
+- **MSTC** stays follow: the C&AG finding on overstated profit is unanswered.
+- **RR Kabel** stays follow until its Q2 call shows cash recovering.
+- **TruAlt** stays wait: there were more pledges, operating cash was negative, and the tender terms are still unconfirmed.
+- **GNFC** stays follow: its profit is at a war peak and the telecom demand is unresolved.
+- **Krystal** stays wait: its ₹77.8cr loan is still outstanding.
+
+**Still waiting (checked today):** HEG's electrode company has not listed. SKF India has not filed Q2. Ganesh Benzoplast's sale has not closed. The UPI fee is still deferred. The cancer-drug margin cap is still unconfirmed officially; Beta says it barely affects it. The ethanol tender terms are still only in press reports.
+
+**Filings pass, 28–29 October** (notes corrected):
+- **Plants:** EPack Prefab's Ghiloth plant started (milestone met; its Gujarat milestone got a revision and a new date), and Subros's Kharkhoda plant started (milestone met). Both pictures were redrawn.
+- **Management:** CFO exits at Aarti Pharmalabs (with a contested ₹59.5cr stamp-duty demand) and at Epack Durable (its second in six months, while it sells its half of the motor venture). New CFOs at Kaveri Seed and Aeroflex. Shekhar Bajaj steps back as Bajaj Electricals' executive chairman on 31 December. All recorded in the management records.
+- **Orders and contracts:** Afcons won ₹3,469cr in Uttar Pradesh, and Navin's HFO contract was extended to 2032 (+$180m).
+- **Pledges:** another 1.1% of Paisalo pledged by a promoter company.
+- **Logged only:** wagon orders for Jupiter (₹1,140cr), Titagarh (₹1,717cr) and Texmaco (₹412cr). Capacity plans at Schneider (₹211cr), Greenply (₹125cr), Sambhv (₹148cr), Aeroflex (₹202cr) and Senores (₹43cr). Godavari's small melt-shop increase. Buybacks at DCW and Genus. Epigral's CRISIL AA. KIMS's Kakinada purchase and its lost Supreme Court petition on the Chennai lease (no stay on the project). Raymond Realty's joint auditor resigning over fees. Stylam's share split. Natco's promoter buying. Camlin's small pledge. Ashiana's Gurugram deal. Praj's BPCL venture. NBCC's ₹5,191cr flat auction.
+
+**News pass, 28–29 October:** 13 entries had a clear reason, and none was very important: results-day moves, one fund buying Jubilant Ingrevia, and Raymond Realty's auditor exit (a filing).
+
+**Results pass:** 78 reviewed, and every figure matches Screener. I changed five verdicts:
+- **Thyrocare** from mixed to ahead. The profit fall was a one-off charge; profit before it rose 26%. I corrected the point that said otherwise.
+- **Epack Durable** from mixed to behind: the loss widened and the CFO left.
+- **Praj** from mixed to behind: revenue was flat and operating profit fell.
+- **KPIT** from in line to behind: operating profit fell 10%.
+- **Aequs** from in line to behind, following its call note (break-even aim withdrawn). No transcript is filed, so I could not check that note myself.
+
+Where it mattered, the reviews add what the points missed, mostly profit flattered by other income or low tax (BlackBuck, DCW, Shadowfax, Pine Labs, Praj), rising interest (Deepak Nitrite, Steamhouse, Goodluck, Refex, RR Kabel) and one-off losses (Greaves Cotton). From Horizon's call I judged one checkpoint: finance cost fell to ₹116cr from ₹131cr (met).
+
+**Top 12:** only reserve names were touched: Mahindra Lifespace (Q2 update), and Gulf Oil, InfoBeans and Cartrade (results reviewed). Reserve names carry no triggers, and nothing moved their FY30 profit, so nothing changed.
