@@ -3454,7 +3454,8 @@
     "sector": "Industrials",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-10-30: Q2 call read (23 Oct). Volumes +26%, ₹370cr operating-profit guide and 82,000t target held; margin slipped to 15.8% (forex, fuel, consumables; fuel passed on from January); ₹450cr Bengaluru plant detailed (₹150cr in FY28; ₹740cr of plants in all, ₹250–260cr committed); net debt about ₹539cr, so the debt checkpoint was missed; incentive claim deferred to FY28. Stays own."
   },
   {
     "company": "Sterlite Technologies",
@@ -3468,7 +3469,8 @@
     "sector": "Auto Related",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-10-30: Q2 call read (22 Oct). H1 volume +17%, FY27 target raised to ~1.6 lakh t; Q2 margin 12.4% with ~13% now called the floor; new ₹100cr Thailand +50,000 t expansion within a year (project, milestone and picture added); Chennai rated 40,000 t, rising in steps (milestone missed); steel cord slipped to FY28 (revisions, new milestone). Stays follow."
   },
   {
     "company": "Le Travenues Techno",
@@ -3489,7 +3491,8 @@
     "sector": "Auto Related",
     "subject": "Checkpoint missed: rajratan-global-q2fy27-1",
     "why": "Operating margin at 13.5–14% ('safely', as guided) — actual 12.4% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-10-30: Margin 12.4% vs 13.5–14%; management now calls ~13% the floor. Weighed in the call: stays follow; outcome written."
   },
   {
     "company": "Fairchem Organics",
@@ -3580,7 +3583,8 @@
     "sector": "Solar PV Cells EPC",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-29"
+    "addedOn": "2026-10-29",
+    "handled": "2026-10-30: Q2 call read (21 Oct). Revenue +37%, margin 15.1%, profit −30% on APS interest and depreciation; order book ~₹5,500cr (₹3,300cr solar/BESS, ₹2,200cr T&D); solar book back to ~3,226 MWp after 1.7 GWp of orders (third-party share not disclosed; checkpoint partly); T&D margin 9–10%. Stays follow."
   },
   {
     "company": "Beta Drugs",
@@ -3594,7 +3598,8 @@
     "sector": "Chemicals",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-29"
+    "addedOn": "2026-10-29",
+    "handled": "2026-10-30: Q2 call read (22 Oct). Revenue +58%, profit +31%, ₹1,100cr FY28 goal reaffirmed; margin 18.6% but ₹21,000/t vs ₹17,900; H1 operating cash −₹154cr and borrowings ~₹1,156cr (cash checkpoint missed; new FY27 cash checkpoint); anthraquinone/carbazole now all 5,300t in Q4 FY27 (milestone missed, revisions, new milestone, picture redrawn); LFP still only NDAs. Stays follow."
   },
   {
     "company": "Paisalo Digital",
@@ -3608,34 +3613,39 @@
     "sector": "Software",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-29"
+    "addedOn": "2026-10-29",
+    "handled": "2026-10-30: Q2 call read. Revenue 07.3M (+2.4% q/q), UK +4.1% at 18% margin, net cash ~₹583cr; margin 14.4%, 12-month backlog −7.7% q/q; US federal deal delayed until after the midterms (revision on its checkpoint; margin checkpoint added). Stays follow."
   },
   {
     "company": "Mahindra Life. Dev",
     "sector": "Realty",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-29"
+    "addedOn": "2026-10-29",
+    "handled": "2026-10-30: Q2 update read (22 Oct). H1 pre-sales ₹1,988cr (+66%), ₹7,100cr GDV added, net debt/equity −0.28, company operating cash ₹341cr; collections ₹1,152cr, industrial slow (Q3 deals), Q2 PAT ₹16cr; Mahalunge launches December, Mahalakshmi not named (revision on the launch checkpoint). Stays follow. Top 12 reserve: nothing changes (no trigger; a price story)."
   },
   {
     "company": "Rallis India",
     "sector": "Agrochemical & Fertilizers",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-29"
+    "addedOn": "2026-10-29",
+    "handled": "2026-10-30: Q2 call read (23 Oct). Dry kharif: revenue flat, branded volume −6%, seeds −31%, operating profit −18%, cash down to ~₹211cr on high inventory; contract manufacturing ₹27cr. Both Q2 checkpoints missed; cash checkpoint added. Stays follow (H1 profit +6%; a weather miss)."
   },
   {
     "company": "Himadri Speciality",
     "sector": "Chemicals",
     "subject": "Checkpoint missed: himadri-speciality-q2fy27-1",
     "why": "Operating margin holding at about 20% — actual 18.6% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-29"
+    "addedOn": "2026-10-29",
+    "handled": "2026-10-30: 18.6% vs ~20%, but profit per tonne rose year on year; outcome written. Stays follow."
   },
   {
     "company": "Waaree Renewables",
     "sector": "Solar PV Cells EPC",
     "subject": "Checkpoint met: waaree-renewables-q2fy27-2",
     "why": "Operating margin holds at or above the new ~15% aim (18.8% in Q1) — actual 15.1% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-29"
+    "addedOn": "2026-10-29",
+    "handled": "2026-10-30: 15.1% met the new ~15% aim; outcome written; new H2 checkpoint added. Stays follow."
   }
 ]

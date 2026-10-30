@@ -16469,8 +16469,8 @@
   },
   {
    "company": "Himadri Speciality",
-   "fingerprint": "9b5136f3b4e32177",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "65b377be3708198e",
+   "checkedOn": "2026-10-30",
    "lines": {
     "heading": "How full the plants are (Q1 FY27)",
     "items": [
@@ -16488,7 +16488,7 @@
     ]
    },
    "money": {
-    "heading": "About ₹2,000cr announced: about ₹1,000cr this year and ₹1,000cr next",
+    "heading": "About ₹2,000cr announced over FY27–FY28; ₹800–900cr expected in FY27 (Q2 call)",
     "items": [
      {
       "name": "LFP battery cathode, Phase 1",
@@ -16524,7 +16524,7 @@
      },
      {
       "name": "Anthraquinone and carbazole",
-      "sub": "5,300 t a year from coal tar, in two phases; about ₹250–300cr of sales",
+      "sub": "5,300 t a year from coal tar, now all at once in Q4 FY27 (was two phases); about ₹250–300cr of sales",
       "right": "cost not given separately",
       "status": "building",
       "projectId": "himadri-speciality-aq-carbazole"
@@ -16539,11 +16539,11 @@
     },
     {
      "when": "Q2 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "himadri-speciality-aq-carbazole-m1"
      ],
-     "sub": "Not yet confirmed"
+     "sub": "Missed: management changed this on 30 Oct 2026 (Q2 call): both phases start together in Q4 FY27 to avoid a three-month shutdown"
     },
     {
      "when": "Q3 FY27",
@@ -16557,7 +16557,8 @@
      "when": "Q4 FY27",
      "tone": "next",
      "milestones": [
-      "himadri-speciality-cnt-m1"
+      "himadri-speciality-cnt-m1",
+      "himadri-speciality-aq-carbazole-m3"
      ]
     },
     {
@@ -16565,7 +16566,8 @@
      "tone": "later",
      "milestones": [
       "himadri-speciality-aq-carbazole-m2"
-     ]
+     ],
+     "sub": "Brought forward to Q4 FY27 on the Q2 FY27 call"
     },
     {
      "when": "Q4 FY28",
@@ -16593,7 +16595,7 @@
    "notes": [
     "Birla Tyres is held through Dalmia Bharat Refractories (DBRL), funded partly by Himadri's ~₹935cr of debentures. On 21 Sep 2026 Himadri's board approved bringing DBRL's tyre business (₹149cr of sales last year) into Himadri by demerger, issuing Himadri shares to DBRL shareholders"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (Apr 2026), board outcome 21 Sep 2026 (NSE) and sector note",
+   "source": "Q2 FY27 call (22 Oct 2026), Q1 FY27 call (Jul 2026), Q4 FY26 call (Apr 2026), board outcome 21 Sep 2026 (NSE) and sector note",
    "recheck": {
     "changes": [
      "Official Q4 FY26 transcript confirms the phrase dropped earlier ('progressively brought onstream over the subsequent 12 months', FY29 for full Phase 1 operations); restored in the Q4 FY29 stop. It fits the newest call's 'operational in FY28', so the lfp-m2 correction stands"
@@ -28999,41 +29001,25 @@
   },
   {
    "company": "Rajratan Global",
-   "fingerprint": "1b8fc4b11c3a2e17",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "985a17b97021d79b",
+   "checkedOn": "2026-10-30",
    "lines": {
-    "heading": "How full each plant is (FY26)",
+    "heading": "How full each plant is (Q2 FY27)",
     "items": [
      {
-      "name": "Chennai",
-      "size": "30,000 t a year",
-      "usedPct": 87.5,
-      "usedLabel": "85–90% used",
-      "tight": true,
-      "tightLabel": "at its March peak; being doubled"
-     },
-     {
-      "name": "Pithampur",
-      "size": "bead wire",
-      "usedPct": 90,
-      "usedLabel": "about 90% used",
-      "tight": true,
-      "tightLabel": "at peak"
-     },
-     {
       "name": "Thailand",
-      "size": "bead wire",
-      "usedPct": 90,
-      "usedLabel": "about 90% used",
+      "size": "about 15,000 t a quarter",
+      "usedPct": 97,
+      "usedLabel": "about 97% used (14,600 t made in Q2)",
       "tight": true,
-      "tightLabel": "at peak",
-      "note": "91% on the Oct 2025 call; debottlenecking to lift volume from about 51,000 t to 55,000–56,000 t in FY27"
+      "tightLabel": "about 100%; turning orders away",
+      "note": "Being expanded by 50,000 t a year"
      }
     ]
    },
    "adds": [
     {
-     "heading": "What the Chennai expansion adds (by Q2 FY27, filled gradually)",
+     "heading": "What the Chennai expansion adds (in steps, no end date; rated 40,000 t at October 2026)",
      "projectId": "rajratan-global-chennai-60k",
      "bars": [
       {
@@ -29041,58 +29027,104 @@
        "sub": "to 60,000 t a year",
        "base": 30000,
        "add": 30000,
-       "baseLabel": "today 30,000 t",
+       "baseLabel": "first phase 30,000 t",
        "addLabel": "+30,000 t",
        "right": "+100%"
       }
      ],
      "notes": [
-      "Balance equipment only"
+      "Rated 40,000 t at October 2026; machines added month by month (3,500 → 4,000 → 4,500 t a month)",
+      "FY27 output 37,000–38,000 t, already above the first 30,000 t",
+      "Management changed this on 30 Oct 2026 (Q2 call): no single start date; the April call had said 60,000 t by Q2 FY27"
      ]
+    },
+    {
+     "heading": "What the Thailand expansion adds (within about a year of October 2026)",
+     "projectId": "rajratan-global-thailand-50k",
+     "bars": [
+      {
+       "name": "Thailand bead wire",
+       "sub": "brownfield, mostly machines",
+       "base": 60000,
+       "add": 50000,
+       "baseLabel": "today about 60,000 t (15,000 t a quarter)",
+       "addLabel": "+50,000 t",
+       "right": "about +83%"
+      }
+     ],
+     "notes": [
+      "Management expects to fill it within two years of start, on approvals from global tyre makers and demand for low-carbon bead wire"
+     ],
+     "caveat": "Today's Thai base is inferred from about 15,000 t a quarter given on the call"
     }
    ],
    "money": {
-    "heading": "No other capex planned for FY27; land secured in Thailand for later",
+    "heading": "Spending in FY27–FY28; another 60,000 t at Chennai foreseen in about two years, not approved",
     "items": [
      {
       "name": "Chennai bead-wire plant to 60,000 t",
-      "sub": "balance equipment",
-      "total": 25,
-      "right": "about ₹25cr",
-      "status": "building",
+      "sub": "balance machines, added in steps",
+      "right": "about ₹30–35cr on top of the ₹270cr first phase (April call: about ₹25cr)",
+      "status": "ramping",
       "projectId": "rajratan-global-chennai-60k"
      },
      {
       "name": "Steel-cord line for conveyor belts, Pithampur",
-      "sub": "new 10,000 t a year line; about ₹150cr of sales at full use, about two years after start",
+      "sub": "new 10,000 t a year line; about ₹150cr of sales at full use; some equipment still to install",
       "total": 70,
       "right": "about ₹70cr: ₹45–50cr spent by April, ₹25cr to go",
       "status": "building",
       "projectId": "rajratan-global-steel-cord"
+     },
+     {
+      "name": "Thailand expansion (+50,000 t)",
+      "sub": "local loans below 4% and own cash; a closed factory across the road already bought for storage",
+      "total": 100,
+      "right": "about ₹100cr from here (about ₹125cr with the ₹20cr factory)",
+      "status": "planned",
+      "projectId": "rajratan-global-thailand-50k"
      }
     ]
    },
    "timeline": [
     {
-     "when": "Mar 2026",
-     "tone": "done",
-     "text": "Chennai at its peak, 85–90% used"
-    },
-    {
      "when": "Q2 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "rajratan-global-chennai-60k-m1",
       "rajratan-global-steel-cord-m1"
      ],
-     "sub": "No update since the April call (no Q1 FY27 transcript held)"
+     "sub": "Chennai rated 40,000 t; steel-cord trial lots from bought-in wire"
     },
     {
      "when": "Q3 FY27",
      "tone": "next",
      "milestones": [
       "rajratan-global-steel-cord-m2"
+     ],
+     "sub": "Management changed this on 30 Oct 2026: samples in November, no steel-cord sales counted in FY27"
+    },
+    {
+     "when": "Q4 FY27",
+     "tone": "next",
+     "milestones": [
+      "rajratan-global-chennai-60k-m2"
      ]
+    },
+    {
+     "when": "Q2 FY28",
+     "tone": "next",
+     "milestones": [
+      "rajratan-global-thailand-50k-m1"
+     ]
+    },
+    {
+     "when": "Q4 FY28",
+     "tone": "later",
+     "milestones": [
+      "rajratan-global-steel-cord-m3"
+     ],
+     "sub": "ISO and BIS approval needed first"
     },
     {
      "when": "About FY29",
@@ -29101,17 +29133,10 @@
     }
    ],
    "notes": [
-    "Q1 FY27 output 33,300 t (India 19,710 t, Thailand 13,590 t)",
-    "FY27 plan: sell about 35,000 t from Chennai; Thailand volume growth held to about 10–14% by its capacity limit (Apr 2026 call)"
+    "Pithampur: 72,000 t, of which 60,000 t bead wire",
+    "H1 FY27 output about 71,000 t (up 17%); FY27 target about 1.6 lakh t"
    ],
-   "source": "Q4 FY26 call (Apr 2026), Q2 FY26 call (Oct 2025) and sector note (no Q1 FY27 transcript)",
-   "recheck": {
-    "changes": [
-     "Thailand utilisation: newest official transcript (Apr 2026) says 90%, so bar 90% with the Oct 2025 91% as a note (correction added)",
-     "Restored figures dropped for lack of an official transcript, now confirmed: about 35,000 t to sell from Chennai in FY27; Thailand growth about 10–14% held by capacity, debottlenecking 51,000 → 55,000–56,000 t",
-     "Official text confirms 85–90% Chennai, 60,000 t by Q2, ₹25cr, ₹70cr steel cord with ₹45–50cr spent, 10,000 t, ₹150cr in 2 years"
-    ]
-   }
+   "source": "Q2 FY27 call and presentation (22 Oct 2026); Q4 FY26 call (Apr 2026) for the steel-cord cost"
   },
   {
    "company": "Ramkrishna Forgings",

@@ -1328,10 +1328,16 @@
    "cost": "about ₹25cr",
    "expectedStart": "Q2 FY27",
    "adds": "30,000 tonnes a year of capacity, filled gradually",
-   "status": "building",
-   "source": "Q4 FY26 call (Apr 2026); no Q1 FY27 transcript held",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+30,000 t of bead wire a year (doubles Chennai to 60,000 t)"
+   "status": "ramping",
+   "source": "Q2 FY27 call (22 Oct 2026): rated 40,000 t now, machines added month by month towards 60,000 t; about ₹30–35cr on top of the ₹270cr first phase",
+   "updatedOn": "2026-10-30",
+   "capacityAdd": "+30,000 t of bead wire a year (doubles Chennai to 60,000 t)",
+   "revisions": [
+    {
+     "on": "2026-10-30",
+     "text": "Q2 FY27 call: not a one-step start; rated 40,000 t at October 2026, rising monthly (3,500 → 4,000 → 4,500 t a month) towards 60,000 t with no end date; FY27 output 37,000–38,000 t"
+    }
+   ]
   },
   {
    "id": "rajratan-global-steel-cord",
@@ -1343,9 +1349,15 @@
    "expectedStart": "Q3 FY27",
    "adds": "about ₹150cr of sales at full use, about two years after start",
    "status": "building",
-   "source": "Q4 FY26 call (Apr 2026); first sales from Q3 FY27 per note",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "10,000 t a year of conveyor-belt steel cord; about ₹150cr of sales at full use (new product)"
+   "source": "Q2 FY27 call (22 Oct 2026): some equipment still to be bought and installed; trial lots from bought-in semi-finished wire; samples in November; ISO and BIS approval needed",
+   "updatedOn": "2026-10-30",
+   "capacityAdd": "10,000 t a year of conveyor-belt steel cord; about ₹150cr of sales at full use (new product)",
+   "revisions": [
+    {
+     "on": "2026-10-30",
+     "text": "Q2 FY27 call: first sales slip from Q3 FY27; no steel-cord revenue counted in FY27, good use expected in FY28"
+    }
+   ]
   },
   {
    "id": "menon-bearings-bearing-capacity",
@@ -2403,9 +2415,15 @@
    "expectedStart": "Q2 FY27",
    "adds": "about ₹250–300cr of sales",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "5,300 t a year of anthraquinone and carbazole (2,600 t Q2 FY27, 2,700 t Q2 FY28); about ₹250–300cr of sales"
+   "source": "Q2 FY27 call (22 Oct 2026): full 5,300 t to be commissioned together in Q4 FY27",
+   "updatedOn": "2026-10-30",
+   "capacityAdd": "5,300 t a year of anthraquinone and carbazole (2,600 t Q2 FY27, 2,700 t Q2 FY28); about ₹250–300cr of sales",
+   "revisions": [
+    {
+     "on": "2026-10-30",
+     "text": "Q2 FY27 call: the first 2,600 t did not start in Q2 FY27; both phases now start together in Q4 FY27 (Phase 2 brought forward from Q2 FY28) to avoid a three-month shutdown"
+    }
+   ]
   },
   {
    "id": "himadri-speciality-cnt",
@@ -13836,6 +13854,20 @@
    "source": "Board approval and press release, 22 Oct 2026 (NSE)",
    "updatedOn": "2026-10-23",
    "capacityAdd": "+52,000 t of laminations a year (108,000 → 160,000 t)"
+  },
+  {
+   "id": "rajratan-global-thailand-50k",
+   "company": "Rajratan Global",
+   "sector": "Auto Related",
+   "name": "Thailand bead-wire expansion (+50,000 t)",
+   "what": "Brownfield expansion of the Thai plant, which runs at about 100% and is turning away orders; mostly machines, as a closed factory across the road was bought for storage",
+   "cost": "about ₹100cr from here (about ₹125cr including the ₹20cr factory already bought), from local loans below 4% and its own cash",
+   "expectedStart": "Within about a year of October 2026 (three to four quarters)",
+   "adds": "50,000 t a year, which management expects to fill within two years of start",
+   "status": "planned",
+   "source": "Q2 FY27 presentation and call (22 Oct 2026)",
+   "updatedOn": "2026-10-30",
+   "capacityAdd": "+50,000 t a year in Thailand"
   }
  ]
 }

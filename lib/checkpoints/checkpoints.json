@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -806,7 +806,11 @@
    "due": "Q2 FY27",
    "ifMissed": "Stays follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Q2 branded domestic volume −6% (crop protection −7%); kharif returns booked and provided for",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays follow: a dry kharif, not lost share; H1 profit still +6%"
   },
   {
    "id": "rallis-india-q2fy27-2",
@@ -815,7 +819,11 @@
    "text": "Seed sales growing in the mid-to-high single digits (after missing the mid-teen promise)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Seed sales −31% in Q2 (volume −26%) and −3% in H1, at about zero operating profit in Q2",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; seeds wait for kharif 2027"
   },
   {
    "id": "rallis-india-q4fy27-1",
@@ -2069,7 +2077,8 @@
    "status": "missed",
    "actual": "12.4%",
    "resolvedOn": "2026-10-28",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow: management now calls about 13% the floor and expects no margin gain in India this year"
   },
   {
    "id": "rajratan-global-q3fy27-1",
@@ -2078,7 +2087,13 @@
    "text": "Steel-cord line selling from Q3 FY27",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-30",
+     "text": "Q2 FY27 call: no steel-cord sales counted in FY27; good use expected in FY28"
+    }
+   ]
   },
   {
    "id": "rajratan-global-q4fy27-1",
@@ -2097,7 +2112,13 @@
    "text": "FY27 volume up 17–18% to about 1.55 lakh tonnes",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-30",
+     "text": "Q2 FY27 call: FY27 target raised to about 1.6 lakh tonnes (H1 about 71,000 t, up 17%)"
+    }
+   ]
   },
   {
    "id": "menon-bearings-q4fy27-1",
@@ -3433,7 +3454,8 @@
    "status": "missed",
    "actual": "18.6%",
    "resolvedOn": "2026-10-29",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow: operating profit per tonne still rose to about ₹21,000 from ₹17,900 a year ago; management says ₹20,000–25,000 a tonne, not a percentage, is the measure"
   },
   {
    "id": "himadri-speciality-q2fy27-2",
@@ -3443,7 +3465,11 @@
    "due": "Q2 FY27",
    "ifMet": "Buy trigger (with a named LFP customer)",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "H1 FY27 operating cash −₹154cr against ₹608cr pre-tax profit (working capital −₹686cr)",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays follow, but the buy trigger is further off; cash is now the main worry"
   },
   {
    "id": "himadri-speciality-q2fy27-3",
@@ -12872,7 +12898,11 @@
    "due": "Q2 FY27",
    "ifMissed": "Debt is the thing to watch; worse if a debt-funded plant comes before the last two earn",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Net debt about ₹539cr at September (borrowings ₹641cr less ₹102cr cash and bank), after about ₹140cr of H1 capex cash including land",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays own: operating cash of ₹323cr in H1 was strong; debt is the thing to watch as ₹740cr of plants are built"
   },
   {
    "id": "pitti-engineering-q4fy27-3",
@@ -18911,7 +18941,13 @@
    "text": "Mahalakshmi and the other H2 launches go ahead (about ₹10,000cr of launches guided)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-30",
+     "text": "Q2 FY27 update: H2 launches named are Mahalunge Rivenza (early December) and two or three of the remaining projects, including WestEra; Mahalakshmi was not mentioned"
+    }
+   ]
   },
   {
    "id": "ashiana-housing-q4fy27-1",
@@ -21232,7 +21268,13 @@
    "ifMet": "Case to own",
    "ifMissed": "Stay follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-10-30",
+     "text": "Q2 FY27 call: the US federal deal's start is delayed until after the November 2026 midterm elections, shifting it out of the 12-month backlog"
+    }
+   ]
   },
   {
    "id": "mastek-q3fy27-1",
@@ -21651,7 +21693,11 @@
    "due": "Q2 FY27",
    "ifMet": "Meets one of the two conditions for moving beyond follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Solar book about 3,226 MWp at September after 1.7 GWp of new orders (presentation chart); the customers are not named, so the third-party share is not confirmed",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; the book refilled, but whether from third parties is still the question"
   },
   {
    "id": "waaree-renewables-q2fy27-2",
@@ -21666,7 +21712,8 @@
    "status": "met",
    "actual": "15.1%",
    "resolvedOn": "2026-10-29",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow: the margin landed on the new ~15% aim, as APS (9–10%) came in for a full quarter"
   },
   {
    "id": "waaree-renewables-q4fy27-1",
@@ -23741,8 +23788,12 @@
    "text": "Chennai at 60,000-tonne capacity",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "rajratan-global-chennai-60k"
+   "status": "missed",
+   "project": "rajratan-global-chennai-60k",
+   "actual": "Rated 40,000 t at October 2026; machines added month by month towards 60,000 t with no end date (37,000–38,000 t of output in FY27)",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; the plant is filling, just in steps"
   },
   {
    "id": "rajratan-global-steel-cord-m1",
@@ -23751,8 +23802,12 @@
    "text": "Steel-cord trials start",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "rajratan-global-steel-cord"
+   "status": "partly",
+   "project": "rajratan-global-steel-cord",
+   "actual": "Trial lots from bought-in semi-finished wire while the last equipment is installed; first samples to customers in November 2026",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; steel cord is not in my numbers"
   },
   {
    "id": "rajratan-global-steel-cord-m2",
@@ -23762,7 +23817,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "rajratan-global-steel-cord"
+   "project": "rajratan-global-steel-cord",
+   "revisions": [
+    {
+     "on": "2026-10-30",
+     "text": "Q2 FY27 call: no steel-cord sales counted in FY27; the rest of the year goes in trials, samples and ISO/BIS approval, with good use expected in FY28"
+    }
+   ]
   },
   {
    "id": "racl-geartech-heat-treatment-m1",
@@ -24535,8 +24596,18 @@
    "text": "First 2,600 tonnes commissioned",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "himadri-speciality-aq-carbazole"
+   "status": "missed",
+   "project": "himadri-speciality-aq-carbazole",
+   "actual": "Not commissioned in Q2; management now starts all 5,300 t together in Q4 FY27",
+   "resolvedOn": "2026-10-30",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; a delay of the first phase, offset by bringing the second forward",
+   "revisions": [
+    {
+     "on": "2026-10-30",
+     "text": "Q2 FY27 call: both phases to be commissioned together, full 5,300 t in Q4 FY27, to avoid a three-month shutdown for Phase 2"
+    }
+   ]
   },
   {
    "id": "himadri-speciality-aq-carbazole-m2",
@@ -24546,7 +24617,13 @@
    "due": "Q2 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "himadri-speciality-aq-carbazole"
+   "project": "himadri-speciality-aq-carbazole",
+   "revisions": [
+    {
+     "on": "2026-10-30",
+     "text": "Q2 FY27 call: brought forward; the full 5,300 t is now due together in Q4 FY27"
+    }
+   ]
   },
   {
    "id": "himadri-speciality-cnt-m1",
@@ -36958,6 +37035,97 @@
    "createdOn": "2026-10-28",
    "status": "pending",
    "project": "transformers-and-rect-pressboard"
+  },
+  {
+   "id": "rajratan-global-q4fy27-3",
+   "company": "Rajratan Global",
+   "sector": "Auto Related",
+   "text": "FY27 volume about 1.6 lakh tonnes (raised target; 1.33 lakh in FY26)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-30",
+   "status": "pending"
+  },
+  {
+   "id": "rajratan-global-chennai-60k-m2",
+   "company": "Rajratan Global",
+   "sector": "Auto Related",
+   "text": "Chennai output 37,000–38,000 t in FY27",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-30",
+   "status": "pending",
+   "project": "rajratan-global-chennai-60k"
+  },
+  {
+   "id": "rajratan-global-steel-cord-m3",
+   "company": "Rajratan Global",
+   "sector": "Auto Related",
+   "text": "Steel-cord line running at good use",
+   "due": "Q4 FY28",
+   "createdOn": "2026-10-30",
+   "status": "pending",
+   "project": "rajratan-global-steel-cord"
+  },
+  {
+   "id": "rajratan-global-thailand-50k-m1",
+   "company": "Rajratan Global",
+   "sector": "Auto Related",
+   "text": "Thailand expansion (+50,000 t) up and running",
+   "due": "Q2 FY28",
+   "createdOn": "2026-10-30",
+   "status": "pending",
+   "project": "rajratan-global-thailand-50k"
+  },
+  {
+   "id": "waaree-renewables-q4fy27-2",
+   "company": "Waaree Renewables",
+   "sector": "Solar PV Cells EPC",
+   "text": "Operating margin stays above 15% in H2 FY27, as management promised on the Q2 call",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 15,
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-30",
+   "status": "pending"
+  },
+  {
+   "id": "himadri-speciality-aq-carbazole-m3",
+   "company": "Himadri Speciality",
+   "sector": "Chemicals",
+   "text": "Full 5,300 t of anthraquinone and carbazole commissioned in one go",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-30",
+   "status": "pending",
+   "project": "himadri-speciality-aq-carbazole"
+  },
+  {
+   "id": "himadri-speciality-q4fy27-1",
+   "company": "Himadri Speciality",
+   "sector": "Chemicals",
+   "text": "Operating cash positive for FY27 after −₹154cr in H1",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-30",
+   "status": "pending"
+  },
+  {
+   "id": "mastek-q4fy27-3",
+   "company": "Mastek",
+   "sector": "Software",
+   "text": "Operating margin back above 15% in Q4 FY27 (14.4% in Q2), as US and Middle East margins improve from Q3",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 15,
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-30",
+   "status": "pending"
+  },
+  {
+   "id": "rallis-india-q4fy27-2",
+   "company": "Rallis India",
+   "sector": "Agrochemical & Fertilizers",
+   "text": "Cash and liquid funds rebuilt above ₹309cr (the June level) by March as inventory eases (about ₹211cr at September)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-10-30",
+   "status": "pending"
   }
  ]
 }
