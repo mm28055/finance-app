@@ -420,7 +420,7 @@ export const industrialsComponents: SectorOverview = {
                     caption: 'Q1 FY27 cash and capital, as stated on the calls',
                     columns: ['Company', 'What management said', 'Balance sheet'],
                     rows: [
-                        ['Pitti Engineering', '₹150cr expansion commissioned early; ₹290cr foundry and machining under way (₹60cr spent); only ₹20–30cr more working-capital release', 'Net debt ₹491cr at June (₹555cr in March); Ind-Ra net leverage 2.4x at December against a 2.0x trigger'],
+                        ['Pitti Engineering', '₹150cr expansion commissioned early; ₹290cr Hyderabad and ₹450cr Bengaluru plants (about ₹140cr of capex cash in H1 FY27, including land)', 'Net debt about ₹539cr at September (₹491cr at June on the company’s figure); H1 operating cash ₹323cr; Ind-Ra net leverage 2.4x at December against a 2.0x trigger'],
                         ['Gala Precision Engi.', 'Wada capex of ₹40–45cr pushed mostly to FY28; KPMG working-capital study; a ₹3cr dispatch held back for non-payment', 'Borrowings ₹38cr against about ₹28cr of unspent IPO money; Crisil BBB+/Positive'],
                         ['KRN Heat Exchan', '₹350cr placement received end-June, “for next two year” of working capital; about ₹100cr of new plant capex', 'Borrowings ₹187cr (March); only ₹17–18cr of ₹46cr cash unencumbered (Crisil)'],
                         ['Omnitech Engineering', 'Working capital 294 → 233 days; ₹250cr Chhapara capex, part slipping into FY28; ₹24.3cr GST refund due', 'Debt about ₹390cr, cash ₹134cr (June); net debt to equity 0.34 → 0.41'],
@@ -502,7 +502,7 @@ export const industrialsComponents: SectorOverview = {
                     badgeColumn: 3,
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
-                        ['Pitti Engineering', 'Laminations 82,000t and castings 17,000t in FY27 (raised); operating profit about ₹370cr; FY28 revenue about ₹2,500cr', '₹290cr foundry and machining; possible ₹400cr Bengaluru plant', '**Beat**: targets raised; expansion a quarter early; net debt ahead of path'],
+                        ['Pitti Engineering', 'Laminations 82,000t and castings 17,000t in FY27 (held in Q2); operating profit about ₹370cr (on track, 23 Oct 2026); FY28 revenue about ₹2,500cr; about ₹3,800cr of revenue potential by FY31 at 17%-plus', '₹290cr Hyderabad foundry and machining; ₹450cr Bengaluru plant approved Oct 2026 (₹150cr in FY28)', '**In line**: volumes +26% in Q2, but the margin slipped to 15.8% and net debt rose'],
                         ['Gala Precision Engi.', 'Revenue +20–25%; margin 17–19% by FY27 end', 'Chennai phase 2 in Q3–Q4; Wada ₹40–45cr mostly FY28', '**Slipping**: growth kept at 19.5%, margin 16.3%; three milestones late'],
                         ['KRN Heat Exchan', 'Above ₹1,000cr in FY27; ₹2,000cr in FY28; margin “20-plus”', '₹30–40cr plus ~₹100cr for Bangalore and Rajasthan', '**Delivering**: revenue +119%; Vertiv only samples; incentives unbooked'],
                         ['Omnitech Engineering', 'Growth 35–40%; margin “30% and above”', '₹250cr at Chhapara, partly into FY28', '**Delivering**: +61.5% and working capital down; margin at the band’s floor'],
@@ -585,8 +585,8 @@ export const industrialsComponents: SectorOverview = {
         {
             company: 'Pitti Engineering', rank: 1, stance: 'COMPOUNDER', segment: QUAL,
             what: "Electrical-steel laminations, stator and rotor assemblies, castings and machined parts for motors and generators, sold to Wabtec, Siemens, Cummins, Caterpillar, ABB and Nidec.",
-            view: "**The strongest recurring position in the sector, at a price that fits.** Designed into customers' motors with steel passed through, assemblies +37% in Q1, targets raised and about ₹370cr of FY27 operating profit guided. But return on capital fell from 19% to 15%, profit before tax was flat in Q1, and net leverage sits above Ind-Ra's downgrade trigger while two more plants are built: the ₹290cr Hyderabad casting plant and a ₹450cr Bengaluru lamination plant approved on 22 October, partly with debt. The price needs about {need:Pitti Engineering|20}% a year against my ~20%.",
-            watch: 'Margin moving from 16.8% in Q1 FY27 (company’s adjusted figure) towards the 18%-plus management expects as new capacity fills (about 17% in FY28; it gives no quarterly path); net debt below ₹491cr while the ₹290cr plant is built; direct exports growing again.',
+            view: "**The strongest recurring position in the sector, at a price that fits.** Designed into customers' motors with steel passed through, lamination volumes +26% in Q2 and the ₹370cr FY27 operating-profit guide held on 23 October 2026. But the Q2 margin slipped to 15.8% (forex loss, fuel and consumables; fuel costs are passed on from January), return on capital fell from 19% to 15%, net debt rose to about ₹539cr at September, and net leverage sits above Ind-Ra's downgrade trigger while two more plants are built: the ₹290cr Hyderabad casting plant and a ₹450cr Bengaluru lamination plant approved on 22 October, partly with debt. The price needs about {need:Pitti Engineering|20}% a year against my ~20%.",
+            watch: 'Margin back above 17% by Q4 FY27 from 15.8% in Q2 (company’s adjusted figures), as fuel costs pass through from January and new staff fill the capacity; net debt back below ₹539cr while ₹740cr of plants are built (about ₹250–260cr of it committed); the Maharashtra incentive (about ₹40cr a year) resuming in FY28.',
         },
         {
             company: 'Gala Precision Engi.', rank: 2, stance: 'SCALEUP', segment: QUAL,
