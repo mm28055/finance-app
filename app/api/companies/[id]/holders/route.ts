@@ -21,22 +21,34 @@ export async function GET(req: NextRequest, { params }: { params: Promise<{ id: 
         const sid = html ? screenerCompanyId(html) : null;
         if (!sid) return NextResponse.json({ error: 'Screener page unavailable' }, { status: 502 });
 
-        const periods = new Set<string>();
-        const groups: Record<string, { name: string; values: Record<string, number> }[]> = {};
-        for (const g of GROUPS) {
-            const res = await cachedFetch(FILED)(keyed(`https://www.screener.in/api/3/${sid}/investors/${g}/quarterly/`, page.key));
+        const toDate = (p: string) => new Date(`1 ${p}`).getTime();
+        const read = async (g: string, key: string) => {
+            const res = await cachedFetch(FILED)(keyed(`https://www.screener.in/api/3/${sid}/investors/${g}/quarterly/`, key));
             const data = res.ok ? await res.json() : {};
-            groups[g] = Object.entries(data as Record<string, Record<string, unknown>>).map(([name, byPeriod]) => {
+            return Object.entries(data as Record<string, Record<string, unknown>>).map(([name, byPeriod]) => {
                 const values: Record<string, number> = {};
                 for (const [p, v] of Object.entries(byPeriod)) {
                     if (p === 'setAttributes' || v === null || v === '') continue;
                     const n = Number(String(v).replace(/,/g, ''));
-                    if (Number.isFinite(n) && n > 0) { values[p] = n; periods.add(p); }
+                    if (Number.isFinite(n) && n > 0) values[p] = n;
                 }
                 return { name: name.trim(), values };
             }).filter(h => Object.keys(h.values).length > 0);
+        };
+        const lastOf = (list: { values: Record<string, number> }[]) =>
+            Math.max(-Infinity, ...list.flatMap(h => Object.keys(h.values).map(toDate)));
+
+        const groups: Record<string, { name: string; values: Record<string, number> }[]> = {};
+        for (const g of GROUPS) groups[g] = await read(g, page.key);
+        // Each group is cached on its own, so one can be a week older than another: the
+        // promoters' copy already has the new quarter while the FII copy doesn't, and every
+        // FII then looks "exited" (Capacite, Sep 2026). Re-read a group that lags, once per new quarter.
+        const newest = Math.max(...GROUPS.map(g => lastOf(groups[g])));
+        if (Number.isFinite(newest)) {
+            const tag = `${page.key}q${new Date(newest).toISOString().slice(0, 7).replace('-', '')}`;
+            for (const g of GROUPS) if (groups[g].length && lastOf(groups[g]) < newest) groups[g] = await read(g, tag);
         }
-        const toDate = (p: string) => new Date(`1 ${p}`).getTime();
+        const periods = new Set(GROUPS.flatMap(g => groups[g].flatMap(h => Object.keys(h.values))));
         return NextResponse.json(
             { periods: [...periods].sort((a, b) => toDate(a) - toDate(b)), groups },
             { headers: { 'Cache-Control': 'private, max-age=600' } },
