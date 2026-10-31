@@ -19,16 +19,28 @@ import checkpointsStore from '../checkpoints/checkpoints.json';
 function takeaways(summary: string | null, n = 4): string[] {
     if (!summary) return [];
     // The points listed under "Top Takeaways", bold heading or not; failing that, any list points.
-    const all = summary.split('\n').map(l => l.trim());
+    const raw = summary.split('\n');
+    const all = raw.map(l => l.trim());
+    const indent = (i: number) => raw[i].length - raw[i].trimStart().length;
     const start = all.findIndex(l => /top takeaways/i.test(l));
     // A list point: "- ...", "* ...", "• ..." or "1. ...".
     const MARK = /^([-*•]|\d{1,2}[.)])\s+/;
     const bullet = (l: string) => MARK.test(l) && !/top takeaways/i.test(l) && l.replace(MARK, '').replace(/\*\*/g, '').trim().length > 25;
+    // The list ends at the next part of the verdict block ("The Narrative", "Analyst Verdict"...), a heading,
+    // or a point less indented than the takeaways themselves.
+    const NEXT = /^([-*•]\s+)?\*\*(the narrative|the reality check|analyst verdict|key risks?|bottom line)/i;
     let lines: string[] = [];
     if (start >= 0) {
-        for (const l of all.slice(start + 1)) {
-            if (bullet(l)) lines.push(l);
-            else if (lines.length && (/^#/.test(l) || /^[-*•]\s+\*\*[^*]+\*\*:?\s*$/.test(l))) break;
+        // Written as one paragraph after the label: its sentences are the takeaways.
+        const inline = all[start].replace(/^.*top takeaways\**\s*:?\**\s*/i, '').trim();
+        if (inline.length > 40) lines = inline.split(/(?<=[.!?])\s+(?=[A-Z₹"])/).filter(s => s.length > 25).map(s => `- ${s}`);
+        else {
+            let level = -1;
+            for (let i = start + 1; i < all.length; i++) {
+                const l = all[i];
+                if (/^#/.test(l) || NEXT.test(l) || (level >= 0 && bullet(l) && indent(i) < level)) break;
+                if (bullet(l)) { if (level < 0) level = indent(i); lines.push(l); }
+            }
         }
     }
     if (!lines.length) lines = all.filter(bullet);
@@ -90,7 +102,7 @@ export async function filingsFeed(opts: { calls?: 'all' | 'portfolio'; shown?: (
             source: t.filePath && /nseindia\.com|bseindia\.com/.test(t.filePath)
                 ? { url: t.filePath, label: /bseindia/.test(t.filePath) ? 'BSE filing' : 'NSE filing' }
                 : t.fileUrl && /^https?:/.test(t.fileUrl) ? { url: t.fileUrl, label: 'Transcript PDF' } : null,
-            guidance: g, points: takeaways(a.summary && a.summary.trim().length > 20 ? a.summary : a.investorBrief),
+            guidance: g, points: takeaways(a.investorBrief && a.investorBrief.trim().length > 20 ? a.investorBrief : a.summary),
         })];
     }).sort((x, y) => y.date.localeCompare(x.date) || x.company.localeCompare(y.company));
 

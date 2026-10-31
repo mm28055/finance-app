@@ -129,7 +129,7 @@ Write a COMPREHENSIVE INVESTOR BRIEF (MAX 1,200 words) using the following EXACT
 Use bullet points extensively for metrics, targets, and key findings to ensure high scannability (as requested by the user). Lead with the most important data in each section. Do NOT use icons in section headers.
 
 ## Key Highlights & Analyst Verdict
-- Summarize the 3-5 most important takeaways. Lead with the single most important insight.
+- **Top Takeaways**: Then, on their own lines indented under this label, EXACTLY 3 or 4 sub-bullets, most important first, each in this form: \`  - **Short Lead-in (2-5 words):** one or two sentences with the key numbers.\` Never write the takeaways as a paragraph, and never leave out the bold lead-in.
 - **The Narrative**: What is the main story management is telling?
 - **The Reality Check**: Does the data support this story?
 - **Analyst Verdict**: Is this a thesis-affirming or thesis-breaking quarter?
