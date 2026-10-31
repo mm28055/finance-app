@@ -27,6 +27,8 @@ export const authOptions: NextAuthOptions = {
         })
     ],
     session: {
-        strategy: "jwt"
+        strategy: "jwt",
+        // Stay signed in for a year on each browser (default was 30 days).
+        maxAge: 365 * 24 * 60 * 60
     }
 };
