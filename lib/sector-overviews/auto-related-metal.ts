@@ -865,7 +865,7 @@ export const autoRelatedMetal: SectorOverview = {
         {
             company: 'Poojaa Precision Engg', rank: 15, stance: 'SCALEUP', segment: CAST,
             what: "A Pune aluminium die-caster and machinist (cylinder heads, EGR housings, manifolds), half for trucks, listed on the BSE SME platform in August 2026.",
-            view: "**Good numbers, too little evidence.** Revenue rose 3.4 times in five years at 18–19% margins and 33% return on capital, and Unit III multiplies capacity. But there are no calls or quarterly results, customers are unnamed (one is a third of sales), inventory days doubled, and the annual report contains a drafting note and two profit figures. The price needs about {need:Poojaa Precision Engg|25}% a year against my ~22%.",
+            view: "**Good numbers, too little evidence.** Revenue rose 3.4 times in five years at 18–19% margins and 33% return on capital, and Unit III multiplies capacity. But there are no calls or quarterly results, customers are unnamed (one is a third of sales), inventory days doubled, and the annual report contains a drafting note and two profit figures. The price needs about {need:Poojaa Precision Engg|25}% a year against my ~22%. 1 Nov 2026: the price reads {label:Poojaa Precision Engg|fits} even after a 21% rise, but it stays pass: there are still no calls, no named customers and no quarterly results; the first half-year results are due in November.",
             watch: 'First half-year results in November; Unit III utilisation; customer names and a first earnings call.',
         },
         {
