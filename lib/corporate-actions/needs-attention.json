@@ -3116,7 +3116,8 @@
     "sector": "Consumer Durables",
     "subject": "Projects: ₹554cr capex approved 24 Oct 2026",
     "why": "Board approved revised capacity and cost for two tile expansions (₹340cr for 12.50 MSM at Srikalahasti, ₹180cr for 11 MSM at Gailpur, both by mid-2027) and ₹34cr for a 9,000 t a month tile-adhesive plant at Durgapur (filing of 24 Oct 2026). Record them in projects.json (revisions where existing projects' cost or size changed, 1–3 milestones each), mention once in the note and card, then redraw and stamp the picture. Left from the 25 Oct 2026 run (40-entry limit reached).",
-    "addedOn": "2026-10-25"
+    "addedOn": "2026-10-25",
+    "handled": "2026-11-01: Recorded: revisions on Srikalahasti (12.5m sq m, ₹340cr, end-June 2027) and Gailpur (₹180cr, mid-2027) with milestone revisions; new ₹34cr Durgapur adhesive project with a Q3 FY28 milestone; capacity entry and picture redrawn and stamped; mentioned in note and card."
   },
   {
     "company": "Lumax Auto Tech",
@@ -3241,7 +3242,7 @@
     "company": "ICICI Bank",
     "sector": "Finance",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 28 Oct 2026: transcript not yet filed (Screener lists none and the company site has none); left open for the next run. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 28 Oct 2026: transcript not yet filed (Screener lists none and the company site has none); left open for the next run. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run. 1 Nov 2026: transcript still not filed (Screener lists only the presentation); left open for the next run.",
     "addedOn": "2026-10-26"
   },
   {
@@ -3311,7 +3312,7 @@
     "company": "Sobha",
     "sector": "Realty",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 28 Oct 2026: transcript not yet filed (Screener lists none and the company site has none); left open for the next run. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 28 Oct 2026: transcript not yet filed (Screener lists none and the company site has none); left open for the next run. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run. 1 Nov 2026: transcript still not filed (Screener lists only the presentation); left open for the next run.",
     "addedOn": "2026-10-27"
   },
   {
@@ -3326,7 +3327,7 @@
     "company": "CIE Automotive",
     "sector": "Auto Related",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 28 Oct 2026: transcript not yet filed (Screener lists none and the company site has none); left open for the next run. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 28 Oct 2026: transcript not yet filed (Screener lists none and the company site has none); left open for the next run. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run. 1 Nov 2026: transcript still not filed (Screener lists only the presentation); left open for the next run.",
     "addedOn": "2026-10-27"
   },
   {
@@ -3506,7 +3507,7 @@
     "company": "Ador Welding",
     "sector": "Industrials",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run. 1 Nov 2026: transcript still not filed (Screener lists only the presentation); left open for the next run.",
     "addedOn": "2026-10-28"
   },
   {
@@ -3604,7 +3605,7 @@
     "company": "Cyient",
     "sector": "Software",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run. 1 Nov 2026: transcript still not filed (Screener lists only the presentation); left open for the next run.",
     "addedOn": "2026-10-29"
   },
   {
@@ -3747,14 +3748,16 @@
     "sector": "Software",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Q2 call read: adjusted margin 26.3% (FY27 guide raised to 25–26%), organic growth 11.9% cc, net cash ₹113cr, Chirok Health bought. Note and card updated; stays own; Q2 margin checkpoint met."
   },
   {
     "company": "Dynamic Cables",
     "sector": "Cables",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Q2 call read: revenue +29% on aluminium, volume about 6%, margin 10% (guide 10–11% kept), order book ₹829cr, new plant to add ₹240–250cr of sales over 3–4 quarters, US shipments stalled. Note and card updated; stays own."
   },
   {
     "company": "TruAlt Bioenergy",
@@ -3768,7 +3771,8 @@
     "sector": "Rubber",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Q2 call read: revenue +31%, profit +45%, ₹700cr FY27 guide kept, pyrolysis oil selling, credits down to ₹4.6cr, South Africa 3–4 months late, Andhra land acquired. Note, card, checkpoints, projects, capacity and picture updated; stays follow."
   },
   {
     "company": "Chembond Chemicals",
@@ -3831,35 +3835,40 @@
     "sector": "Consumer Durables",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Q2 call read: volume +10% (checkpoint met), revenue +24%, margin 19.5% to hold, double-digit volume promised for H2; Srikalahasti raised to 12.5m sq m and slipped to end-June 2027. Note and card updated; stays follow."
   },
   {
     "company": "Newgen Software",
     "sector": "Software",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Q2 call read: revenue +5.4% (H1 +8.8%), India licences slipped, SaaS +36%, margin ~26%, DSO 144, double-digit FY27 target kept. Note and card updated; stays own (just); ARR checkpoint missed."
   },
   {
     "company": "Horizon Industrial Parks",
     "sector": "Realty",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Q2 call read: revenue +30%, 81% margin, first reported profit ₹14cr (on ₹39cr other income), net debt ₹2,765cr, 4.4 mn sq ft leased in H1, Pune in-city on track for Q4. Card updated (the company still has no note verdict, a known gap); stays follow."
   },
   {
     "company": "Dynamic Cables",
     "sector": "Cables",
     "subject": "Checkpoint met: dynamic-cables-q2fy27-1",
     "why": "Order book moving above ₹811cr — actual ₹829cr (met). View improves Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Weighed with the Q2 call: order book ₹829cr, a small rise; stays own. Outcome written."
   },
   {
     "company": "Dynamic Cables",
     "sector": "Cables",
     "subject": "Checkpoint partly: dynamic-cables-q2fy27-2",
     "why": "Operating margin holding above 10% (guide 10.5–11%) — actual 9.9% (partly).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Weighed with the Q2 call: margin 9.9%, management blames order mix and keeps 10–11%; stays own; new Q3 margin checkpoint added."
   },
   {
     "company": "Netweb Technologies",

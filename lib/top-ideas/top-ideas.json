@@ -769,7 +769,7 @@
    "whyOwn": [
     "Operating margin held at 10.3–11.4% for nine quarters through a 59% aluminium rise, because 80–90% of orders pass metal through.",
     "26% return on capital and net debt of only about ₹15cr; high-voltage cables rose to 68% of sales from 35% in FY19.",
-    "The ₹40–45cr Reengus plant can add ₹280–300cr of sales (about a fifth more) by FY28–FY29; exports reached 13% of Q1 sales."
+    "The ₹40–45cr Reengus plant can add about ₹240–250cr of sales (about a fifth more) once ramped up over three to four quarters (Q2 FY27 call); exports reached 13% of Q1 sales but fell to 8% in H1 as US shipments stalled."
    ],
    "mustGoRight": [
     "The Reengus plant starts in October–November 2026 and reaches 80% use by March 2028.",
@@ -783,16 +783,16 @@
    ],
    "worstFacts": [
     "New plant 15–18 months late; no start announced by 16 October.",
-    "Q1 volume grew only 5–6%; Q2 growth also price-led.",
-    "Order book flat at about ₹811cr for two quarters.",
+    "Volume grew only 5–6% in Q1 and about 6% in Q2; growth is price-led.",
+    "Order book only ₹829cr in September 2026, up from about ₹811cr for two quarters.",
     "Only 48% of five years' operating profit became cash.",
     "India Ratings withdrew its rating at the company's request.",
     "MD's daughter (HR head) and GM Quality resigned in September 2026."
    ],
    "nextChecks": [
-    "Q2 FY27: an announcement that the Reengus plant has started production, and volume growth of at least 8%.",
-    "Order book above ₹850cr at September 2026.",
-    "Operating margin of at least 10.5%."
+    "Q3 FY27: the Reengus plant producing, and volume growth above 6%.",
+    "Operating margin back to at least 10.5% (Q2 was 10%).",
+    "Order book above ₹850cr at December 2026."
    ]
   },
   {
@@ -979,6 +979,10 @@
   }
  ],
  "changes": [
+  {
+   "date": "2026-11-01",
+   "text": "Dynamic Cables: Q2 call missed all three next checks (plant not yet producing, volume +6%, order book ₹829cr, margin 10%) but hit no trigger; the plant’s sales potential is now put at ₹240–250cr, too small a change to move FY30 profit. Numbers kept; checks rolled to Q3."
+  },
   {
    "date": "2026-10-16",
    "text": "First list: twelve ideas from a deep dive of 52 companies, plus a reserve list of ten good businesses that fail mainly on price."

@@ -20248,8 +20248,8 @@
   },
   {
    "company": "Kajaria Ceramics",
-   "fingerprint": "74494ad1bb96787b",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "741fb3190a07f2e5",
+   "checkedOn": "2026-11-01",
    "lines": {
     "heading": "How full the own tile plants are (since mid-April 2026)",
     "items": [
@@ -20266,7 +20266,7 @@
    },
    "adds": [
     {
-     "heading": "What the two large-format lines add (both due March–April 2027)",
+     "heading": "What the two large-format lines add (Gailpur by mid-2027, Srikalahasti by end-June 2027)",
      "projectId": "kajaria-ceramics-gailpur",
      "bars": [
       {
@@ -20280,47 +20280,56 @@
       },
       {
        "name": "Srikalahasti line (Andhra Pradesh)",
-       "sub": "large-format tiles",
+       "sub": "large-format tiles; raised from 10m sq m on 24 Oct 2026",
        "base": 80,
-       "add": 10,
+       "add": 12.5,
        "baseLabel": "own plants today about 80m sq m",
-       "addLabel": "+10m sq m",
-       "right": "about +12%"
+       "addLabel": "+12.5m sq m",
+       "right": "about +16%"
       },
       {
        "name": "Both lines",
-       "sub": "to about 101 million sq m a year",
+       "sub": "to about 103.5 million sq m a year",
        "base": 80,
-       "add": 21,
+       "add": 23.5,
        "baseLabel": "own plants today about 80m sq m",
-       "addLabel": "+21m sq m",
-       "right": "+26%"
+       "addLabel": "+23.5m sq m",
+       "right": "about +29%"
       }
      ],
      "notes": [
-      "Gailpur alone: ₹400–450cr of sales a year. Together, turnover of more than twice the ₹375cr invested. Cuts Morbi outsourcing 'drastically' from FY28"
+      "Gailpur alone: ₹400–450cr of sales a year. Together (as first planned), turnover of more than twice the ₹375cr then budgeted. Cuts Morbi outsourcing 'drastically' from FY28",
+      "Management changed this on 24 Oct 2026: Srikalahasti from 10 to 12.5 million sq m and ₹210cr to ₹340cr, Gailpur ₹165cr to ₹180cr; the Q1 FY27 call had both due March–April 2027"
      ],
-     "caveat": "Own capacity isn't stated; about 80 million sq m is implied by the new 21 million sq m being 26% more"
+     "caveat": "Own capacity isn't stated; about 80 million sq m is implied by the first-planned 21 million sq m being 26% more"
     }
    ],
    "money": {
-    "heading": "Paid from cash (about ₹793cr net cash)",
+    "heading": "₹554cr approved on 24 Oct 2026, paid from cash (about ₹793cr net cash in June)",
     "items": [
      {
       "name": "Gailpur large-format line",
-      "sub": "11 million sq m",
-      "total": 165,
-      "right": "about ₹165cr",
+      "sub": "11 million sq m; revised from about ₹165cr",
+      "total": 180,
+      "right": "₹180cr",
       "status": "building",
       "projectId": "kajaria-ceramics-gailpur"
      },
      {
       "name": "Srikalahasti large-format line",
-      "sub": "10 million sq m",
-      "total": 210,
-      "right": "about ₹210cr",
+      "sub": "12.5 million sq m; revised from 10 million sq m and about ₹210cr",
+      "total": 340,
+      "right": "₹340cr",
       "status": "building",
       "projectId": "kajaria-ceramics-srikalahasti"
+     },
+     {
+      "name": "Durgapur tile-adhesive plant",
+      "sub": "9,000 t a month, West Bengal; adds +9,000 t a month of tile adhesive",
+      "total": 34,
+      "right": "₹34cr",
+      "status": "planned",
+      "projectId": "kajaria-ceramics-durgapur-adhesive"
      },
      {
       "name": "Erode tile-adhesive plant",
@@ -20338,19 +20347,32 @@
      "text": "Own plants at full production from mid-April. Erode adhesive plant running from May: Q1 adhesive sales ₹45cr, up from ₹25cr"
     },
     {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "Board approved ₹554cr (24 Oct 2026); adhesive sales ₹54cr, up 69%"
+    },
+    {
      "when": "Q1 FY28",
      "tone": "next",
      "milestones": [
       "kajaria-ceramics-gailpur-m1",
       "kajaria-ceramics-srikalahasti-m1"
      ],
-     "sub": "FY27 capex about ₹400cr, spilling into April 2027"
+     "sub": "Gailpur by mid-2027; Srikalahasti by end-June 2027 (Q1 FY27 call had said March–April 2027 for both; FY27 capex was then about ₹400cr, spilling into April 2027)"
+    },
+    {
+     "when": "Q3 FY28",
+     "tone": "later",
+     "milestones": [
+      "kajaria-ceramics-durgapur-adhesive-m1"
+     ],
+     "sub": "By December 2027: the filing gives April–December 2027 for the three projects"
     }
    ],
    "notes": [
     "Own tile plants in Rajasthan, Uttar Pradesh, Andhra Pradesh, Telangana and Morbi, plus JV and outsourced supply; sells about 130 million sq m a year in all"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (Apr 2026) and sector note"
+   "source": "Q2 FY27 call (26 Oct 2026), board outcome (NSE, 24 Oct 2026), Q1 FY27 call (Jul 2026), Q4 FY26 call (Apr 2026) and sector note"
   },
   {
    "company": "Kanohar Electricals",
@@ -38308,41 +38330,45 @@
   },
   {
    "company": "Tinna Rubber",
-   "fingerprint": "1c4d692af225833a",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "fe6318c9e62f754b",
+   "checkedOn": "2026-11-01",
    "lines": {
-    "heading": "How full each line is (Q1 FY27)",
+    "heading": "How full each line is (Q2 FY27)",
     "items": [
      {
       "name": "India tyre crushing",
       "size": "185,000 t a year at five sites",
       "usedPct": 88,
-      "usedLabel": "about 88% used",
-      "note": "90% in FY26"
+      "usedLabel": "85–90% used",
+      "note": "Q2 FY27 call; about 88% in Q1, 90% in FY26"
      },
      {
       "name": "Masterbatch, original line",
       "size": "6,000 t a year (18,000 t in all after the Haryana expansion)",
       "usedPct": 82,
-      "note": "Whole masterbatch business expected to reach about 60% this year"
+      "note": "Q1 FY27 figure; whole masterbatch business expected to reach about 60% this year"
      },
      {
       "name": "Oman plant",
-      "size": "size not given",
-      "usedPct": 78,
-      "note": "85% in FY26; West Asia conflict cut Q1 volumes"
+      "size": "15,000 t a year",
+      "usedPct": 90,
+      "usedLabel": "90% used in H1 FY27",
+      "note": "78% in Q1 when the West Asia conflict cut volumes; margin up to 11.5% from 6.4% in FY26",
+      "tight": true,
+      "tightLabel": "near full"
      },
      {
       "name": "Kolkata construction chemicals",
       "size": "started Q4 FY26",
       "usedPct": 25,
-      "usedLabel": "under 25% used (FY26)"
+      "usedLabel": "under 25% used (FY26)",
+      "note": "FY26 figure"
      }
     ]
    },
    "adds": [
     {
-     "heading": "What the crushing expansion adds (by end-FY27)",
+     "heading": "What the crushing expansion was to add by end-FY27 (now via Andhra and Saudi)",
      "projectId": "tinna-rubber-crumb-235k",
      "bars": [
       {
@@ -38354,7 +38380,8 @@
        "addLabel": "+50,000 t",
        "right": "+27%"
       }
-     ]
+     ],
+     "caveat": "Q2 FY27 call: India capacity still 185,000 t; further India capacity will come from the Andhra greenfield complex, and the 24,000 t Saudi plant is disturbed by the West Asia conflict; management changed this in the 26 Oct 2026 call"
     },
     {
      "heading": "What the fine-powder (MRP) expansion adds (by Q3 FY27)",
@@ -38373,11 +38400,11 @@
     }
    ],
    "money": {
-    "heading": "Money: about ₹100cr over FY27–FY28 (₹27cr spent in Q1; about ₹60cr to be capitalised in FY27), after ₹100cr-plus in FY26; plus the Andhra complex",
+    "heading": "Money: about ₹100cr over FY27–FY28 (₹45cr spent in H1 FY27), after ₹100cr-plus in FY26; plus the Andhra complex",
     "items": [
      {
       "name": "Varle pyrolysis and carbon-black plant",
-      "sub": "pyrolysis fuel oil plus a recovered-carbon-black line; largely built",
+      "sub": "pyrolysis fuel oil plus a recovered-carbon-black line; oil selling since Q2 FY27",
       "total": 40,
       "right": "about ₹40cr",
       "status": "started",
@@ -38385,14 +38412,14 @@
      },
      {
       "name": "South Africa phase 2",
-      "sub": "full-scale tyre recycling at the joint venture: 9,000 t of tyres a year into crumb rubber (about +5% on India crushing); equipment on its way",
+      "sub": "full-scale tyre recycling at the joint venture: 9,000 t of tyres a year into crumb rubber (about +5% on India crushing); crumb line under commissioning, 3–4 months late (Q2 FY27 call)",
       "right": "cost not given",
       "status": "building",
       "projectId": "tinna-rubber-south-africa"
      },
      {
       "name": "Andhra Pradesh recycling complex",
-      "sub": "tyre and plastic recycling, pyrolysis and carbon black on 40 acres; 19 acres registered, due diligence on the other 21 advanced",
+      "sub": "tyre and plastic recycling, pyrolysis and carbon black on 40 acres; all 40 acres acquired (Q2 FY27 call)",
       "total": 250,
       "right": "up to ₹250cr over three years",
       "status": "planned",
@@ -38408,11 +38435,11 @@
     },
     {
      "when": "Q2 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "tinna-rubber-pyrolysis-m1"
      ],
-     "sub": "Oil sales expected from Q2, stable by Q3; ₹50–60cr of FY27 revenue from the plant at 15–19% margins. May call had said both plants in full operation by Q3 FY27"
+     "sub": "Oil commercial sales began, to be stable by Q3; ₹45cr capex in H1; all 40 Andhra acres acquired. Earlier guide: ₹50–60cr of FY27 revenue from the plant at 15–19% margins"
     },
     {
      "when": "Q3 FY27",
@@ -38421,12 +38448,12 @@
       "tinna-rubber-mrp-m1",
       "tinna-rubber-south-africa-m1"
      ],
-     "sub": "South Africa now Q2 or Q3 (May call: early Q2). MRP date restated in the 22 Oct 2026 press release"
+     "sub": "MRP on track (Q2 call). South Africa crumb line was due now; Q2 call says 3–4 months late (Q1 call had said Q2 or Q3; May call early Q2). Carbon-black production starts"
     },
     {
-     "when": "Late 2026",
+     "when": "H2 FY27",
      "tone": "maybe",
-     "text": "24,000 t Saudi plant: construction hoped to start toward end-2026 if the Middle East settles (about ₹20–25cr)"
+     "text": "24,000 t Saudi plant: plot allotted, construction hoped to begin, subject to the West Asia situation (about ₹20–25cr)"
     },
     {
      "when": "Q4 FY27",
@@ -38434,21 +38461,22 @@
      "milestones": [
       "tinna-rubber-pyrolysis-m2",
       "tinna-rubber-crumb-235k-m1",
-      "tinna-rubber-andhra-complex-m1"
+      "tinna-rubber-andhra-complex-m1",
+      "tinna-rubber-south-africa-m2"
      ],
-     "sub": "Carbon-black production starts in Q3, sales by Q4"
+     "sub": "Carbon-black sales from Q4"
     },
     {
      "when": "Over three years (to about 2029)",
      "tone": "later",
      "text": "Andhra Pradesh complex built (up to ₹250cr)",
-     "sub": "Board approval 20 Jul 2026; 19 of 40 acres registered 15 Oct 2026 (NSE)"
+     "sub": "Board approval 20 Jul 2026; 19 of 40 acres registered 15 Oct 2026 (NSE); all 40 acquired by the 26 Oct call"
     }
    ],
    "notes": [
     "The Andhra plan is about 44% of yearly sales of ₹572cr (our arithmetic); CARE raised the rating to BBB/Stable (1 Oct 2026)"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026), land filing 15 Oct and press release 22 Oct 2026 (NSE), and sector note"
+   "source": "Q2 FY27 call (26 Oct 2026), Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026), land filing 15 Oct and press release 22 Oct 2026 (NSE), and sector note"
   },
   {
    "company": "Titagarh Railsystems",

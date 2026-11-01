@@ -5127,9 +5127,15 @@
    "expectedStart": "Q1 FY28",
    "adds": "₹400–450cr of sales a year; cuts Morbi outsourcing 'drastically' from FY28",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026): completed around March–April 2027",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+11 million sq m a year of large-format tiles (about +14% of own capacity), ₹400–450cr of sales a year"
+   "source": "Q2 FY27 call (26 Oct 2026) and board outcome (NSE, 24 Oct 2026)",
+   "updatedOn": "2026-11-01",
+   "capacityAdd": "+11 million sq m a year of large-format tiles (about +14% of own capacity), ₹400–450cr of sales a year",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Board on 24 Oct 2026 revised the cost to ₹180cr (from about ₹165cr), completion by mid-2027; on track in the Q2 FY27 call"
+    }
+   ]
   },
   {
    "id": "kajaria-ceramics-srikalahasti",
@@ -5141,9 +5147,15 @@
    "expectedStart": "Q1 FY28",
    "adds": "together with Gailpur, turnover of more than twice the ₹375cr invested",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026): FY27 capex about ₹400cr, spilling into April 2027",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+10 million sq m a year (about +12%); with Gailpur, 21 million sq m or +26%"
+   "source": "Q2 FY27 call (26 Oct 2026) and board outcome (NSE, 24 Oct 2026)",
+   "updatedOn": "2026-11-01",
+   "capacityAdd": "+10 million sq m a year (about +12%); with Gailpur, 21 million sq m or +26%",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Board on 24 Oct 2026 raised it to 12.5 million sq m and ₹340cr (from 10 million sq m and about ₹210cr); the Q2 FY27 call says it has just started and will be commissioned by end-June 2027"
+    }
+   ]
   },
   {
    "id": "kajaria-ceramics-erode-adhesive",
@@ -12275,8 +12287,8 @@
    "expectedStart": "Q2 FY27",
    "adds": "₹50–60cr of FY27 revenue at 15–19% margins",
    "status": "started",
-   "source": "Q1 FY27 call (Jul 2026): oil trials began in Q1; in May both plants were due in full operation by Q3 FY27",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (26 Oct 2026): oil began commercial sales in Q2 and should stabilise by Q3; carbon-black production starts in Q3, with sales from Q4",
+   "updatedOn": "2026-11-01"
   },
   {
    "id": "tinna-rubber-crumb-235k",
@@ -12284,12 +12296,18 @@
    "sector": "Rubber",
    "name": "Tyre-crushing capacity to 235,000 tonnes",
    "what": "Lift India tyre-crushing capacity 27%, from 185,000 to 235,000 tonnes a year (plants run at about 88%)",
-   "cost": "part of about ₹100cr of capex over FY27–FY28 (₹27cr spent in Q1)",
+   "cost": "part of about ₹100cr of capex over FY27–FY28 (₹45cr spent in H1)",
    "expectedStart": "Q4 FY27",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+50,000 t a year of tyre crushing (185,000 to 235,000 t, +27%)"
+   "source": "Q2 FY27 call (26 Oct 2026)",
+   "updatedOn": "2026-11-01",
+   "capacityAdd": "+50,000 t a year of tyre crushing (185,000 to 235,000 t, +27%)",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: India capacity still 185,000 t (85–90% used) plus 15,000 t in Oman; further India capacity will come from the Andhra greenfield complex, and Saudi (24,000 t) construction is disturbed by the West Asia conflict"
+    }
+   ]
   },
   {
    "id": "tinna-rubber-mrp",
@@ -12299,8 +12317,8 @@
    "what": "3,500 tonnes more micronised rubber powder capacity, taking the total to 20,000 tonnes a year",
    "expectedStart": "Q3 FY27",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (26 Oct 2026): on track for Q3 FY27",
+   "updatedOn": "2026-11-01",
    "capacityAdd": "+3,500 t a year of fine rubber powder (to 20,000 t, about +21%)"
   },
   {
@@ -12311,9 +12329,15 @@
    "what": "Full-scale tyre recycling at the South African joint venture: equipment to process 9,000 tonnes of tyres into crumb rubber",
    "expectedStart": "Q3 FY27",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026): now Q2 or Q3; in May it was early Q2",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "9,000 t a year of tyres into crumb rubber (about +5% on India crushing)"
+   "source": "Q2 FY27 call (26 Oct 2026)",
+   "updatedOn": "2026-11-01",
+   "capacityAdd": "9,000 t a year of tyres into crumb rubber (about +5% on India crushing)",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: phase 1 complete and exporting semi-processed material; the 9,000 t crumb line is under commissioning, 3–4 months late because equipment was stuck in the Middle East"
+    }
+   ]
   },
   {
    "id": "grp-rcb",
@@ -13577,11 +13601,11 @@
    "company": "Tinna Rubber",
    "sector": "Rubber",
    "name": "Andhra Pradesh integrated recycling complex",
-   "what": "A tyre-recycling, plastic-recycling, pyrolysis and recovered-carbon-black complex on a 40-acre site in Andhra Pradesh; 19 acres registered, due diligence on the other 21 advanced",
+   "what": "A tyre-recycling, plastic-recycling, pyrolysis and recovered-carbon-black complex on a 40-acre site in Andhra Pradesh; all 40 acres acquired by October 2026",
    "cost": "Up to ₹250cr over three years",
    "status": "planned",
-   "source": "Regulation 30 filing, 15 Oct 2026 (board approval 20 Jul 2026)",
-   "updatedOn": "2026-10-16"
+   "source": "Q2 FY27 call (26 Oct 2026); Regulation 30 filing, 15 Oct 2026 (board approval 20 Jul 2026)",
+   "updatedOn": "2026-11-01"
   },
   {
    "id": "kanohar-electricals-gangol-expansion",
@@ -13886,6 +13910,19 @@
    "source": "Q2 FY27 presentation and call (22 Oct 2026)",
    "updatedOn": "2026-10-30",
    "capacityAdd": "+50,000 t a year in Thailand"
+  },
+  {
+   "id": "kajaria-ceramics-durgapur-adhesive",
+   "company": "Kajaria Ceramics",
+   "sector": "Consumer Durables",
+   "name": "Durgapur tile-adhesive plant",
+   "what": "A new 9,000-tonne-a-month tile-adhesive plant at Durgapur, West Bengal",
+   "cost": "₹34cr",
+   "expectedStart": "by December 2027 (the filing gives April–December 2027 for the three approved projects)",
+   "status": "planned",
+   "source": "Board outcome (NSE, 24 Oct 2026)",
+   "updatedOn": "2026-11-01",
+   "capacityAdd": "+9,000 t a month of tile adhesive"
   }
  ]
 }

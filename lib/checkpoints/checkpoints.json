@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30",
+ "updated": "2026-11-01",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -3114,7 +3114,8 @@
    "status": "met",
    "actual": "₹829cr",
    "resolvedOn": "2026-10-30",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays own; orders edged up to ₹829cr but are still mostly price, not volume"
   },
   {
    "id": "dynamic-cables-q2fy27-2",
@@ -3129,7 +3130,8 @@
    "status": "partly",
    "actual": "9.9%",
    "resolvedOn": "2026-10-30",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays own; management keeps its 10–11% guide and blames the order mix"
   },
   {
    "id": "dynamic-cables-q4fy27-1",
@@ -3148,7 +3150,11 @@
    "text": "Repeat orders from US distributors after the first shipments",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "US shipments stalled in Q2 on sea freight and insurance costs; exports fell to 8% of H1 sales",
+   "resolvedOn": "2026-11-01",
+   "resolvedBy": "review",
+   "outcome": "Stays own; exports are a small part of the case"
   },
   {
    "id": "rr-kabel-ltd-q2fy27-1",
@@ -8296,7 +8302,11 @@
    "text": "Double-digit tile volume growth in Q2 FY27, as promised",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Volume +10% in Q2 FY27 (revenue +24%)",
+   "resolvedOn": "2026-11-01",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; the price still asks for more growth than I expect"
   },
   {
    "id": "kajaria-ceramics-q3fy27-1",
@@ -8324,7 +8334,13 @@
    "due": "Q4 FY27",
    "ifMet": "Buy once they run full at 18% margins with gas back to normal",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Board on 24 Oct 2026 and Q2 FY27 call: Srikalahasti raised to 12.5 million sq m and ₹340cr, commissioned by end-June 2027; Gailpur ₹180cr by mid-2027"
+    }
+   ]
   },
   {
    "id": "stylam-industrie-q3fy27-1",
@@ -19981,7 +19997,13 @@
    "target": 24,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: about ₹700cr of FY27 revenue kept, with operating profit of about ₹126cr and net profit of about ₹70cr"
+    }
+   ]
   },
   {
    "id": "tinna-rubber-q2fy27-1",
@@ -19990,7 +20012,11 @@
    "text": "Pyrolysis oil sales start from Q2 FY27",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Pyrolysis oil began commercial sales in Q2 FY27; to stabilise by Q3",
+   "resolvedOn": "2026-11-01",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "tinna-rubber-q4fy27-2",
@@ -20061,7 +20087,11 @@
    "ifMet": "Stay own",
    "ifMissed": "Case weakens (wages absorbed only because of the rupee)",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "26.3% adjusted margin with the full ₹14.8cr wage hit",
+   "resolvedOn": "2026-11-01",
+   "resolvedBy": "review",
+   "outcome": "Stays own; FY27 margin guide raised to 25–26%"
   },
   {
    "id": "sagility-q4fy27-1",
@@ -20070,7 +20100,13 @@
    "text": "FY27 organic constant-currency growth at low double digits, as guided (14.9% in Q1)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: low double-digit organic growth kept; Q2 was 11.9% and seasonal enrolment revenue is expected about 1 point lower than last year"
+    }
+   ]
   },
   {
    "id": "sagility-q4fy27-2",
@@ -20673,7 +20709,13 @@
    "ifMet": "Add to the position",
    "ifMissed": "Stay small; CRISIL action on receivables would worsen the view",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27: net debtor days 144, against 145 in Q1; Middle East collections delayed"
+    }
+   ]
   },
   {
    "id": "newgen-software-q3fy27-2",
@@ -20694,7 +20736,13 @@
    "target": 10,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: now ‘targeting’ and ‘confident of meeting’ double-digit growth after 8.8% in H1"
+    }
+   ]
   },
   {
    "id": "newgen-software-q2fy27-1",
@@ -20703,7 +20751,11 @@
    "text": "First disclosure of ARR or remaining contract value",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "No ARR or remaining contract value given in the Q2 call or results",
+   "resolvedOn": "2026-11-01",
+   "resolvedBy": "review",
+   "outcome": "Stays own; disclosure still wanted"
   },
   {
    "id": "intellect-design-arena-q2fy27-1",
@@ -26530,7 +26582,13 @@
    "due": "Q1 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "kajaria-ceramics-gailpur"
+   "project": "kajaria-ceramics-gailpur",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Board on 24 Oct 2026: cost revised to ₹180cr, completion by mid-2027"
+    }
+   ]
   },
   {
    "id": "kajaria-ceramics-srikalahasti-m1",
@@ -26540,7 +26598,13 @@
    "due": "Q1 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "kajaria-ceramics-srikalahasti"
+   "project": "kajaria-ceramics-srikalahasti",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: raised to 12.5 million sq m (₹340cr); commissioning by end-June 2027, not March–April"
+    }
+   ]
   },
   {
    "id": "stylam-industrie-manak-tabra-2-m1",
@@ -31357,8 +31421,12 @@
    "text": "Commercial sales of pyrolysis oil begin",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "tinna-rubber-pyrolysis"
+   "status": "met",
+   "project": "tinna-rubber-pyrolysis",
+   "actual": "Commercial sales of pyrolysis oil began in Q2 FY27 (Q2 call)",
+   "resolvedOn": "2026-11-01",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "tinna-rubber-pyrolysis-m2",
@@ -31378,7 +31446,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "tinna-rubber-crumb-235k"
+   "project": "tinna-rubber-crumb-235k",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: India capacity still 185,000 t (plus 15,000 t in Oman); further India capacity will come from the new Andhra complex, and the 24,000 t Saudi plant is disturbed by the West Asia conflict"
+    }
+   ]
   },
   {
    "id": "tinna-rubber-mrp-m1",
@@ -31398,7 +31472,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "tinna-rubber-south-africa"
+   "project": "tinna-rubber-south-africa",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: the 9,000 t crumb line is under commissioning, delayed 3–4 months because equipment was stuck in the Middle East; now tracked by a Q4 FY27 milestone"
+    }
+   ]
   },
   {
    "id": "grp-rcb-m1",
@@ -33987,7 +34067,13 @@
    "ifMet": "Volume growth of about 20% a year is real, on top of 5% yearly rent increases",
    "ifMissed": "Leasing is slower than promised; empty new buildings would drag occupancy and returns",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: 4.4 mn sq ft leased and 2.7 mn sq ft delivered in H1; on track for both FY27 targets and about 35 mn sq ft operating by March 2027; stabilised occupancy 94%"
+    }
+   ]
   },
   {
    "id": "horizonind-q4fy27-2",
@@ -37297,6 +37383,51 @@
    "createdOn": "2026-10-30",
    "status": "pending",
    "project": "epack-prefab-techno-gujarat-peb"
+  },
+  {
+   "createdOn": "2026-11-01",
+   "status": "pending",
+   "id": "dynamic-cables-q3fy27-1",
+   "company": "Dynamic Cables",
+   "sector": "Cables",
+   "text": "Operating margin back to at least 10.5% in Q3 FY27 (guide 10–11%; Q2 was 9.9%)",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 10.5,
+   "due": "Q3 FY27",
+   "ifMet": "Q2 was the order mix, as management says",
+   "ifMissed": "A second quarter near 10% points to price pressure; the Top 12 trigger is below 9.5% for two quarters"
+  },
+  {
+   "createdOn": "2026-11-01",
+   "status": "pending",
+   "id": "sagility-q4fy27-3",
+   "company": "Sagility",
+   "sector": "Software",
+   "text": "FY27 company-adjusted EBITDA margin of 25–26%, as raised in the Q2 call",
+   "due": "Q4 FY27",
+   "ifMet": "Stays own",
+   "ifMissed": "The raise leaned on the rupee"
+  },
+  {
+   "createdOn": "2026-11-01",
+   "status": "pending",
+   "id": "tinna-rubber-south-africa-m2",
+   "company": "Tinna Rubber",
+   "sector": "Rubber",
+   "text": "South Africa 9,000 t crumb line running, after a 3–4 month slip",
+   "due": "Q4 FY27",
+   "project": "tinna-rubber-south-africa"
+  },
+  {
+   "createdOn": "2026-11-01",
+   "status": "pending",
+   "id": "kajaria-ceramics-durgapur-adhesive-m1",
+   "company": "Kajaria Ceramics",
+   "sector": "Consumer Durables",
+   "text": "Durgapur tile-adhesive plant (9,000 t a month) running",
+   "due": "Q3 FY28",
+   "project": "kajaria-ceramics-durgapur-adhesive"
   }
  ]
 }
