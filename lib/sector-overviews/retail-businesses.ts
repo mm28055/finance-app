@@ -800,7 +800,7 @@ const profiles: BusinessProfile[] = [
         "inShort": [
             "**Sells steel pipes, tubes, roofing and flat steel, plus tiles, sanitaryware and other building materials**, through about 96 stores and over 130 fulfilment centres, mostly in South India, to homeowners, contractors, dealers and builders.",
             "**Good:** revenue grew 30% to ₹6,826cr in FY26, return on capital is about 39%, and customers pay within about 50 days. **Bad:** it keeps only about **3.3 paise of every rupee** as operating profit, so a steel price fall can wipe out a quarter's gain; it turned only 40% of four years' operating profit into cash; and about ₹500cr of supplier credit (letters of credit) sits outside the reported ₹61cr of borrowings.",
-            "**Verdict: follow.** A well-run, cheap-looking distributor (about 20 times earnings), but Q1 grew volumes only 10%; I want H2 to show the promised 20% before buying."
+            "**Verdict: follow.** A well-run, cheap-looking distributor (about 20 times earnings), but Q1 grew volumes only 10%; I want H2 to show the promised 20% before buying. Its founder and Managing Director, Sukumar Srinivas, died on 30 October 2026; no successor has been named yet."
         ],
         "tagline": "A Bengaluru-based retailer and distributor of steel and building materials, split in 2025 from Shankara Building Products, which kept the pipe and roofing factories.",
         "revenue": "₹6,826cr (FY26, consolidated)",
@@ -885,7 +885,8 @@ const profiles: BusinessProfile[] = [
         "watch": [
             "Volume growth reaching 20% in H2 FY27 after Q1's 10%.",
             "The margin holding at 3.5% through steel price swings.",
-            "Cash conversion and the letter-of-credit balance as it grows."
+            "Cash conversion and the letter-of-credit balance as it grows.",
+            "Who succeeds founder and Managing Director Sukumar Srinivas, who died on 30 October 2026, and whether the second line Crisil credits holds the business together."
         ],
         charts: retailCharts["Shankara Buildpro"],
     },

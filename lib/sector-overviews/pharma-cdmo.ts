@@ -763,7 +763,7 @@ export const pharmaCdmo: SectorOverview = {
         {
             company: 'Onesource Specialty', rank: 9, stance: 'SCALEUP', segment: STERILE,
             what: "Drug-device combinations (pens and cartridges for GLP-1 weight-loss drugs), biologics, soft-gel capsules and sterile injectables for other companies.",
-            view: "**The one company monetising a capacity shortage today, priced for FY28.** Line 1 is full, the margin recovered to 27.5% and India Ratings upgraded it to A/Positive. But FY28 needs EBITDA to rise about 4.5 times, capex is all borrowed, promoters have pledged 37% of their stake, about 28% of revenue comes from promoter-group companies, and a ₹1,286cr arbitration claim is pending.",
+            view: "**The one company monetising a capacity shortage today, priced for FY28.** Line 1 is full, the margin recovered to 27.5% and India Ratings upgraded it to A/Positive. But FY28 needs EBITDA to rise about 4.5 times, capex is all borrowed, promoters have pledged 37% of their stake, about 28% of revenue comes from promoter-group companies, and a ₹1,286cr arbitration claim is pending. 1 Nov 2026: the FDA closed its inspection of the Bengaluru sterile site with an inspection report classed voluntary action indicated (filing of 30 October), so the site stays cleared for US supply.",
             watch: 'Line 2 running in Q2 and revenue stepping up; operating cash turning positive; the Prestige arbitration.',
         },
         {

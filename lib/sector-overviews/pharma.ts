@@ -874,8 +874,8 @@ export const pharma: SectorOverview = {
         {
             company: 'Rubicon Research', rank: 5, stance: 'PRICED', segment: EXPORT,
             what: "Develops and makes hard-to-copy US generics (modified-release, liquids, nasal sprays) and a few US brands, and is building its own plants in India and New Jersey.",
-            view: "**The best research engine here, priced for it.** It turns 88% of approvals into launches, grew 52% in Q1 and raised its margin guide to at least 23%. But it is 99% American, five customers buy about 72%, Q1 operating cash was only ₹28.5cr, and its private-equity promoter sold 8.4% in August. The price needs about {need:Rubicon Research|31}% a year against my ~30%. **By 16 October 2026 the price had moved into the fits band, but by less than a point, on a 30%-a-year estimate held for a decade; I keep follow until the Q2 results and half-year cash flow (Q1 brought in only ₹28.5cr) confirm both. The FDA's 5–9 October Satara inspection ended with one procedural observation.**",
-            watch: 'Operating cash catching up once GST refunds arrive; Pithampur and New Jersey starting in 2027; any US tariff move on generics.',
+            view: "**The best research engine here, priced for it.** It turns 88% of approvals into launches, grew 52% in Q1 and raised its margin guide to at least 23%. But it is 99% American, five customers buy about 72%, Q1 operating cash was only ₹28.5cr, and its private-equity promoter sold 8.4% in August. The price needs about {need:Rubicon Research|31}% a year against my ~30%. **By 16 October 2026 the price had moved into the fits band, but by less than a point, on a 30%-a-year estimate held for a decade; I keep follow until the Q2 results and half-year cash flow (Q1 brought in only ₹28.5cr) confirm both. The FDA's 5–9 October Satara inspection ended with one procedural observation.** **1 Nov 2026: the FDA's inspection of the Ambernath plant ended with a Form 483 of five observations (filing of 30 October); its answers are now a watch item.**",
+            watch: 'Operating cash catching up once GST refunds arrive; its answers to the five Ambernath observations; Pithampur and New Jersey starting in 2027; any US tariff move on generics.',
         },
         {
             company: 'Corona Remedies', rank: 6, stance: 'PRICED', segment: INDIA,
@@ -904,8 +904,8 @@ export const pharma: SectorOverview = {
         {
             company: 'Granules India', rank: 10, stance: 'TURNAROUND', segment: EXPORT,
             what: "Makes paracetamol, metformin and other high-volume drugs from raw chemical to finished tablet, is a large US supplier of ADHD and other controlled medicines, and owns a Swiss peptide contract maker.",
-            view: "**A consistent operator held back by one inspection.** Gross margin rose from 50% to 65% in four years, Q1 cash cut net debt to ₹101cr and the promoter's ₹1,096cr of warrant money leaves it net cash. But nine approved US launches wait behind a warning letter now 19 months old, the peptide arm lost ₹12.4cr in Q1, and the warrants added 10% to the share count. The price needs about {need:Granules India|20}% a year against my ~16%. **28 Oct 2026:** the price fitted briefly and is full again; the promoter warrants converted on 23 October (9.2% at about ₹439) and it filed a likely first-to-file challenge on extended-release ruxolitinib, but the Gagillapur re-inspection is still unscheduled, so it stays wait.",
-            watch: 'The Gagillapur re-inspection; the peptide arm turning profitable for FY27; Genome Valley past 50% use.',
+            view: "**A consistent operator held back by one inspection.** Gross margin rose from 50% to 65% in four years, Q1 cash cut net debt to ₹101cr and the promoter's ₹1,096cr of warrant money leaves it net cash. But nine approved US launches wait behind a warning letter now 19 months old, the peptide arm lost ₹12.4cr in Q1, and the warrants added 10% to the share count. The price needs about {need:Granules India|20}% a year against my ~16%. **28 Oct 2026:** the price fitted briefly and is full again; the promoter warrants converted on 23 October (9.2% at about ₹439) and it filed a likely first-to-file challenge on extended-release ruxolitinib, but the Gagillapur re-inspection is still unscheduled, so it stays wait. **1 Nov 2026:** the FDA has now re-inspected Gagillapur and issued 11 observations (filing of 30 October), so the warning letter will not lift until those are answered; it stays wait.",
+            watch: 'The FDA’s response to the 11 observations from the Gagillapur re-inspection; the peptide arm turning profitable for FY27; Genome Valley past 50% use.',
         },
         {
             company: 'Jagsonpal Pharma', rank: 11, stance: 'SCALEUP', segment: INDIA,
@@ -916,8 +916,8 @@ export const pharma: SectorOverview = {
         {
             company: 'Alembic Pharma', rank: 12, stance: 'TURNAROUND', segment: HYBRID,
             what: "An Indian branded maker with a large US generics business, new cancer and injectable plants now filling, and its first US branded product, Pivya.",
-            view: "**Finally being paid for its plants, but India is still slipping.** Q1 revenue +26% and guidance raised, with the new US plants filling, but part of it is a bosutinib exclusivity that ends around November, India grew 7% as share and senior people left, and gross debt rose to about ₹1,600cr on receivables. The price needs about {need:Alembic Pharma|14}% a year against my ~12%.",
-            watch: 'US sales after the bosutinib window closes; India back to market growth under its new head; Pivya breaking even by Q4.',
+            view: "**Finally being paid for its plants, but India is still slipping.** Q1 revenue +26% and guidance raised, with the new US plants filling, but part of it is a bosutinib exclusivity that ends around November, India grew 7% as share and senior people left, and gross debt rose to about ₹1,600cr on receivables. The price needs about {need:Alembic Pharma|14}% a year against my ~12%. 1 Nov 2026: the FDA approved its venetoclax tablets with 180 days of exclusivity in a $1.58bn US market (filing of 30 October), a second exclusive launch as bosutinib's window closes; it stays wait until India recovers.",
+            watch: 'US sales as bosutinib’s window closes and venetoclax’s 180-day exclusivity begins; India back to market growth under its new head; Pivya breaking even by Q4.',
         },
         {
             company: 'Eris Lifesciences', rank: 13, stance: 'SCALEUP', segment: INDIA,

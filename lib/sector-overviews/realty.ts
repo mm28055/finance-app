@@ -931,7 +931,7 @@ export const realty: SectorOverview = {
         {
             company: 'Marathon NextgenReal', rank: 20, stance: 'AVOID', segment: MUMLUX,
             what: "The listed arm of Mumbai's Marathon group: Monte South (Byculla), Nexzone (Panvel), the Neo projects (Bhandup) and Futurex offices, with a merger of promoter entities pending.",
-            view: "**A listed company that lends to its promoter.** A ₹900cr QIP cleared its bank debt, and the merger would bring in about 418 acres. But it has lent ₹822.9cr on demand to its promoter's holding company (₹605.9cr a year earlier), its auditor notes loans given ‘without specifying terms or period of repayment’, shareholders were asked to allow up to ₹1,000cr, other income was 57% of FY26 pre-tax profit, and Q1 bookings were ₹86cr. The price needs about {need:Marathon NextgenReal|9}% a year against my ~6%.",
+            view: "**A listed company that lends to its promoter.** A ₹900cr QIP cleared its bank debt, and the merger would bring in about 418 acres. But it has lent ₹822.9cr on demand to its promoter's holding company (₹605.9cr a year earlier), its auditor notes loans given ‘without specifying terms or period of repayment’, shareholders were asked to allow up to ₹1,000cr, other income was 57% of FY26 pre-tax profit, and Q1 bookings were ₹86cr. The price needs about {need:Marathon NextgenReal|9}% a year against my ~6%. 1 Nov 2026: the board approved buying Adani's 60% of the Monte South project in Byculla for about ₹335cr, taking it to 100% (about 59% of a year's sales); it stays avoid while the loans to its promoter remain.",
             watch: "The promoter loans repaid or settled in the merger; NCLT approval and the swap terms; operating cash turning positive.",
         },
     ],

@@ -555,8 +555,8 @@ export const constructionPower: SectorOverview = {
         {
             company: 'Skipper', rank: 3, stance: 'SCALEUP', segment: MAKER,
             what: "India's largest maker of transmission towers and poles, with a domestic transmission-construction arm and a plastic-pipes business; Power Grid bought about 57% of its FY26 output.",
-            view: "**Scale and a stronger balance sheet, tied to one buyer.** Return on capital rose to 24%, the Q1 margin reached 10.7%, profit rose 26%, and ₹433.5cr of new equity is repaying loans. But Q1 revenue grew 4.5%, exports halved, free cash has been negative for two years and the 75,000-tonne expansion has slipped twice. The price needs about {need:Skipper|17}% a year against my ~16%.",
-            watch: 'The expansion running in the second half; export orders towards ₹1,100cr (it won ₹797cr of domestic and export orders, including Australia, on 23 September); margin moving towards 12% and less reliance on Power Grid.',
+            view: "**Scale and a stronger balance sheet, tied to one buyer.** Return on capital rose to 24%, the Q1 margin reached 10.7%, profit rose 26%, and ₹433.5cr of new equity is repaying loans. But Q1 revenue grew 4.5%, exports halved, free cash has been negative for two years and the 75,000-tonne expansion has slipped twice. The price needs about {need:Skipper|17}% a year against my ~16%. 1 Nov 2026: its Q2 update put the order book at a record ₹10,065cr with ₹1,054cr of export orders, and the board approved buying Sansha Fastener; it stays follow until the expansion runs.",
+            watch: 'The expansion running in the second half; the ₹1,054cr of export orders (Q2 update) turning into revenue; margin moving towards 12% and less reliance on Power Grid.',
         },
         {
             company: 'KEC International', rank: 4, stance: 'TURNAROUND', segment: EPC,

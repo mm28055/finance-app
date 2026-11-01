@@ -732,7 +732,7 @@ export const commercialServices: SectorOverview = {
         {
             company: 'Smartworks Coworking', rank: 14, stance: 'PRICED', segment: SPACE,
             what: "Leases whole buildings and runs them as managed office campuses for large companies (10.4m sq ft operating); listed in 2025.",
-            view: "**Big campuses, tiny filed profit.** Revenue rose 44% in Q1, ₹5,400cr of revenue is contracted and its after-rent margin reached 19.6%. But filed profit was ₹13cr, cash conversion missed its guide, seat retention fell to 74%, and it paid ₹108.7cr in FY26 to a related party for housekeeping and security. The price needs about {need:Smartworks Coworking|44}% a year against my ~20%.",
+            view: "**Big campuses, tiny filed profit.** Revenue rose 44% in Q1, ₹5,400cr of revenue is contracted and its after-rent margin reached 19.6%. But filed profit was ₹13cr, cash conversion missed its guide, seat retention fell to 74%, and it paid ₹108.7cr in FY26 to a related party for housekeeping and security. The price needs about {need:Smartworks Coworking|44}% a year against my ~20%. 1 Nov 2026: it raised its FY27 revenue growth guide to 33–35% (filing of 30 October); it stays wait, because the price still asks for more than twice the growth I expect.",
             watch: 'Occupancy at the Vikhroli and Pune mega-campuses; operating cash back above 1.1x EBITDA; related-party payments.',
         },
     ],
