@@ -627,7 +627,7 @@ export const industrialsComponents: SectorOverview = {
         {
             company: 'Vilas Transcore', rank: 8, stance: 'CYCLICAL', segment: TAKER,
             what: "Transformer cores and laminations from imported electrical steel, plus radiators, nanocrystalline cores and copper conductors; SME-listed.",
-            view: "**Growing into a transformer boom as a price-taker.** Volume rose 65% in FY26 and capacity tripled, but revenue grew only about 30% as steel prices fell, guidance was cut within four months, and operating cash has been negative for two years. It buys ₹35cr a year from its MD's own company and keeps 75% of a new venture with the promoter. The price needs about {need:Vilas Transcore|16}% a year against my ~12%.",
+            view: "**Growing into a transformer boom as a price-taker.** Volume rose 65% in FY26 and capacity tripled, but revenue grew only about 30% as steel prices fell, guidance was cut within four months, and operating cash has been negative for two years. It buys ₹35cr a year from its MD's own company and keeps 75% of a new venture with the promoter. The price needs about {need:Vilas Transcore|16}% a year against my ~12%. 1 Nov 2026: the price now reads {label:Vilas Transcore|fits} after a 17% fall, but it stays pass: operating cash has been negative for two years and the related-party buying continues; no new filings.",
             watch: 'Positive operating cash in H1 FY27; related-party purchases from Atlas; PAT margin holding at 7% or more.',
         },
         {
