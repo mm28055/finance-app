@@ -878,8 +878,8 @@ export const retail: SectorOverview = {
         {
             company: 'SG Mart', rank: 15, stance: 'SCALEUP', segment: B2B,
             what: "Processes and distributes steel (cut sheets, profiles, solar mounting structures) through seven service centres; controlled since June 2026 by Sanjay Gupta, chairman of APL Apollo Tubes.",
-            view: "**Real progress, promises running ahead.** Its margin rose from 1% to 4.5% as trading shrank, profit grew, and CRISIL upgraded it to AA-. But Q1 solar volume was under half of May's promise, per-tonne margins were cut without comment, capex rose to ₹1,500cr while Q1 free cash was −₹66cr, and about 45% of FY26 pre-tax profit was treasury income. The price needs about {need:SG Mart|29}% a year against my ~22%.",
-            watch: 'Solar above 8,000 tonnes a month; FY27 EBITDA near ₹300cr; related-party dealings with APL Apollo in the FY27 annual report.',
+            view: "**Real progress, promises running ahead.** Its margin rose from 1% to 4.5% as trading shrank, profit grew, and CRISIL upgraded it to AA-. But Q1 solar volume was under half of May's promise, per-tonne margins were cut without comment, capex rose to ₹1,500cr while Q1 free cash was −₹66cr, and about 45% of FY26 pre-tax profit was treasury income. The price needs about {need:SG Mart|29}% a year against my ~22%. 1 Nov 2026: stays wait after the Q2 call. Operating profit rose to ₹72cr at a 4.6% margin, processing volume rose 16% on the quarter to 2.06 lakh tonnes, H1 operating cash beat operating profit and paid for ₹250cr of capex, and the ₹300cr FY27 guide stands (₹131cr in H1). But solar runs at about 11,000 tonnes a quarter, under half the monthly rate I watched for, and the 6–7% margin target rests on a Raipur coating plant still 9–12 months away.",
+            watch: 'H2 operating profit of about ₹170cr for the ₹300cr guide; solar volume against the 1.3–1.5 lakh tonne aim; the Raipur coating plant in 9–12 months; related-party dealings with APL Apollo in the FY27 annual report.',
         },
         {
             company: 'Landmark Cars', rank: 16, stance: 'CYCLICAL', segment: DURABLE,
