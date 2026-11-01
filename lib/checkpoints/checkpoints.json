@@ -364,7 +364,13 @@
    "ifMet": "Condition to leave wait",
    "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call (26 Oct 2026): Q4 FY27 consumer break-even target withdrawn, no new date; consumer utilisation fell to 17% from 22%; break-even is at about 50% use"
+    }
+   ]
   },
   {
    "id": "aequs-q3fy27-1",
@@ -12218,7 +12224,11 @@
    "due": "Q2 FY27",
    "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Dombivli EBITDA loss ₹0.2cr in Q2 (₹9.5cr in Q1), helped by seasonal admissions; occupancy in the mid-30s; insurer empanelment takes about a year",
+   "resolvedOn": "2026-11-01",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "jupiter-life-line-hospitals-q2fy27-2",
@@ -12245,7 +12255,13 @@
    "text": "Mira Road digging started by the end of 2026",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: Mira Bhayandar is in the regulatory stage; the next phase of work is expected before the end of FY27"
+    }
+   ]
   },
   {
    "id": "narayana-hrudayalaya-q2fy27-1",
@@ -15444,7 +15460,11 @@
    "text": "Q2 FY27 ethanol volume meets its 11 crore litre plan",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "10.78 crore litres sold in Q2 FY27 against an 11 crore litre plan",
+   "resolvedOn": "2026-11-01",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "trualt-bioenergy-q2fy27-2",
@@ -15453,7 +15473,11 @@
    "text": "Promoter pledge (about 26% of shares) released this quarter, as promised in July",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Not released; promoter companies pledged more shares to fund further buying (Q2 call)",
+   "resolvedOn": "2026-11-01",
+   "resolvedBy": "review",
+   "outcome": "Stays wait; pledges are a stated concern"
   },
   {
    "id": "trualt-bioenergy-q4fy27-1",
@@ -15462,7 +15486,13 @@
    "text": "FY27 ethanol volume of 44 crore litres, as guided in July (court-ordered 15 crore litres on top)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: the 2025-26 allocation ended at about 40 crore litres (24.5 + 10 after the Supreme Court judgment + 5 more); H1 FY27 sold 19.07 crore litres; hopes for 40–42 crore litres in 2026-27"
+    }
+   ]
   },
   {
    "id": "trualt-bioenergy-q4fy27-2",
@@ -15471,7 +15501,13 @@
    "text": "Operating cash turns positive in FY27 (FY26: −₹296cr)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: H1 operating cash +₹192cr, mostly from running down stock"
+    }
+   ]
   },
   {
    "id": "epl-q2fy27-1",
@@ -17865,7 +17901,11 @@
    "ifMet": "View changes for the better",
    "ifMissed": "Stays pass",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Re-inspection held, with seven observations; responses sent; the earliest verdict is early December 2026 (Q2 call)",
+   "resolvedOn": "2026-11-01",
+   "resolvedBy": "review",
+   "outcome": "Stays pass until the FDA decides"
   },
   {
    "id": "indoco-remedies-q4fy27-1",
@@ -17875,7 +17915,13 @@
    "due": "Q4 FY27",
    "ifMissed": "Stays pass",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: about ₹65cr repaid at consolidated level in H1; on track for the year"
+    }
+   ]
   },
   {
    "id": "indoco-remedies-q4fy27-2",
@@ -18326,7 +18372,11 @@
    "text": "Instamart order value growing 10%+ a quarter while its contribution margin stays within 0 to −1%",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Instamart order value +13.4% on the quarter; the Q2 contribution margin itself was not given in the call (the range of 0 to −1% is kept)",
+   "resolvedOn": "2026-11-01",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "urban-company-q2fy27-1",
@@ -19864,7 +19914,11 @@
    "text": "Solar volumes above 8,000 tonnes a month (under half of plan in Q1)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Solar about 11,000 t a quarter (about 3,700 t a month) in Q2 FY27",
+   "resolvedOn": "2026-11-01",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "sg-mart-q4fy27-1",
@@ -19874,7 +19928,13 @@
    "due": "Q4 FY27",
    "ifMissed": "Stays wait; further guidance cuts would worsen the view",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: ₹300cr kept; ₹131cr in H1, so H2 needs about ₹170cr"
+    }
+   ]
   },
   {
    "id": "landmark-cars-q4fy27-1",
@@ -20631,7 +20691,11 @@
    "due": "Q2 FY27",
    "ifMissed": "Keep waiting",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Inventory 117 days at September 2026 (company), held up to execute the order book",
+   "resolvedOn": "2026-11-01",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "netweb-technologies-q2fy27-2",
@@ -20646,7 +20710,8 @@
    "status": "met",
    "actual": "14.9%",
    "resolvedOn": "2026-10-30",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait; the margin held but the price is stretched"
   },
   {
    "id": "netweb-technologies-q3fy27-1",
@@ -23118,7 +23183,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "aequs-hubballi-consumer"
+   "project": "aequs-hubballi-consumer",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: utilisation fell to 17% in Q2; management still targets 40–50%"
+    }
+   ]
   },
   {
    "id": "aequs-hubballi-consumer-m2",
@@ -23128,7 +23199,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "aequs-hubballi-consumer"
+   "project": "aequs-hubballi-consumer",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: Q4 FY27 break-even withdrawn; no new date given"
+    }
+   ]
   },
   {
    "id": "apollo-micro-systems-unit-3-m1",
@@ -28098,7 +28175,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "jupiter-life-line-hospitals-mira-road"
+   "project": "jupiter-life-line-hospitals-mira-road",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: still in the regulatory stage; next phase expected before March 2027"
+    }
+   ]
   },
   {
    "id": "artemis-medicare-raipur-m1",
@@ -29884,7 +29967,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "trualt-bioenergy-sumitomo-cbg"
+   "project": "trualt-bioenergy-sumitomo-cbg",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: first 20 TPD Sumitomo plant commissioned and ramping; the other two due within Q3"
+    }
+   ]
   },
   {
    "id": "trualt-bioenergy-sumitomo-cbg-m2",
@@ -31051,8 +31140,12 @@
    "text": "About 75 new dark stores opened",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "swiggy-dark-stores"
+   "status": "met",
+   "project": "swiggy-dark-stores",
+   "actual": "Store network grew about 6% in Q2 FY27 (Q2 call), about 70 stores on roughly 1,170 (our arithmetic)",
+   "resolvedOn": "2026-11-01",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "kirloskar-oil-kagal-50k-m1",
@@ -31272,7 +31365,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "sg-mart-service-centres"
+   "project": "sg-mart-service-centres",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call: ₹250cr spent in H1 and ₹250–300cr more expected in H2"
+    }
+   ]
   },
   {
    "id": "sg-mart-service-centres-m2",
@@ -31292,7 +31391,13 @@
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "sg-mart-raipur-coating"
+   "project": "sg-mart-raipur-coating",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Q2 FY27 call (27 Oct 2026): first backward-integration plant at Raipur to start in 9–12 months, lifting the margin 2–3 points"
+    }
+   ]
   },
   {
    "id": "v2-retail-stores-fy27-m1",
@@ -36459,7 +36564,8 @@
    "status": "partly",
    "actual": "₹54cr",
    "resolvedOn": "2026-10-30",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays pass; H2 must lift sharply for the ₹250cr year"
   },
   {
    "id": "monolith-q2fy27-2",
@@ -36476,7 +36582,8 @@
    "status": "met",
    "actual": "29.6%",
    "resolvedOn": "2026-10-30",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays pass; the margin is real, the price already assumes the FY28 target"
   },
   {
    "id": "monolith-q4fy27-1",
@@ -37428,6 +37535,39 @@
    "text": "Durgapur tile-adhesive plant (9,000 t a month) running",
    "due": "Q3 FY28",
    "project": "kajaria-ceramics-durgapur-adhesive"
+  },
+  {
+   "createdOn": "2026-11-01",
+   "status": "pending",
+   "id": "swiggy-q3fy27-2",
+   "company": "Swiggy",
+   "sector": "Platform Cos",
+   "text": "Adjusted operating margin about 1 point better in Q3 FY27 than Q2, as guided in the Q2 call (before the move to an inventory model)",
+   "due": "Q3 FY27",
+   "ifMet": "Losses are shrinking as promised",
+   "ifMissed": "Stays wait"
+  },
+  {
+   "createdOn": "2026-11-01",
+   "status": "pending",
+   "id": "netweb-technologies-q4fy27-1",
+   "company": "Netweb Technologies",
+   "sector": "Software",
+   "text": "FY27 revenue of about ₹4,000cr, as the CMD suggested in the Q2 call (H1: ₹2,143cr)",
+   "due": "Q4 FY27",
+   "ifMet": "The step-up holds after the strategic order",
+   "ifMissed": "Orders did not refill fast enough"
+  },
+  {
+   "createdOn": "2026-11-01",
+   "status": "pending",
+   "id": "indoco-remedies-q3fy27-1",
+   "company": "Indoco Remedies",
+   "sector": "Pharma",
+   "text": "US FDA clears Goa Plants II–III after the re-inspection’s seven observations (verdict expected from early December 2026)",
+   "due": "Q3 FY27",
+   "ifMet": "Can give a growth estimate and reconsider the pass",
+   "ifMissed": "Stays pass"
   }
  ]
 }

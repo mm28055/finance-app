@@ -1317,7 +1317,7 @@
     "company": "TruAlt Bioenergy",
     "sector": "Oil",
     "subject": "Waiting: official confirmation of the 2026-27 ethanol tender terms (no sugar-based ethanol)",
-    "why": "Press reports (Business Standard, Reuters via inkl, BW Businessworld, 16–17 Oct 2026) say the oil companies' 2026-27 tender (about 1,100 crore litres, supply year from November) invites no ethanol from cane juice, sugar syrup or B-heavy molasses, on a government direction to cut sugar diversion to zero after a poor cane crop, and cuts the maize ethanol price from ₹71.86 to ₹68.86 a litre (incentive ₹5.79 → ₹2.79). One report says C-heavy molasses is still allowed. If confirmed this is very important for TruAlt: sugar-based ethanol was ₹277cr of ₹591cr of Q1 FY27 ethanol revenue, about 700 of its 2,000 klpd can only run on molasses, and ₹3 a litre comes off a maize margin the note already puts at ₹6–7 at today's prices. The tender document could not be read from this session (oil-company portals). Each run, look for the tender document or an oil-ministry statement. Once confirmed: correct the TruAlt section (both tabs) and the Oil note's ethanol sections once (feedstock prices, what the tender allows), add a checkpoint for its 2026-27 allocation, reconsider its call (now wait), check other covered companies that depend on sugar-based ethanol, then mark this handled. 21 Oct 2026: further reports (Business Today, Deccan Chronicle, The Federal, The Hindu news entry of 20 Oct) agree: BPCL issued the tender on 16 Oct for about 1,100 crore litres, 1 Nov 2026–31 Oct 2027; allowed feedstocks are maize, broken rice, FCI rice and C-heavy molasses; maize price ₹66.07 + ₹2.79 incentive = ₹68.86. The BPCL tender page and PIB have nothing on it, so still not confirmed from the source. 23 Oct 2026: Deccan Chronicle, Swarajya and Madhyamam repeat the same terms (no cane juice, syrup or B-heavy; maize ₹68.86); the BPCL tender page and PIB still carry nothing, so not confirmed from the source. 25 Oct 2026: Autocar, Deccan Chronicle and others repeat the terms; ISMA has welcomed the exclusion. The tender document, BPCL's page and PIB still carry nothing readable from this session, so not confirmed from the source. 28 Oct 2026: still press reports only (PTI, Reuters, CNBC-TV18 copies; maize ₹68.86 a litre, C-heavy molasses reportedly still allowed); the tender document itself has not been read. 30 Oct 2026: still only press reports; no official tender document seen.",
+    "why": "Press reports (Business Standard, Reuters via inkl, BW Businessworld, 16–17 Oct 2026) say the oil companies' 2026-27 tender (about 1,100 crore litres, supply year from November) invites no ethanol from cane juice, sugar syrup or B-heavy molasses, on a government direction to cut sugar diversion to zero after a poor cane crop, and cuts the maize ethanol price from ₹71.86 to ₹68.86 a litre (incentive ₹5.79 → ₹2.79). One report says C-heavy molasses is still allowed. If confirmed this is very important for TruAlt: sugar-based ethanol was ₹277cr of ₹591cr of Q1 FY27 ethanol revenue, about 700 of its 2,000 klpd can only run on molasses, and ₹3 a litre comes off a maize margin the note already puts at ₹6–7 at today's prices. The tender document could not be read from this session (oil-company portals). Each run, look for the tender document or an oil-ministry statement. Once confirmed: correct the TruAlt section (both tabs) and the Oil note's ethanol sections once (feedstock prices, what the tender allows), add a checkpoint for its 2026-27 allocation, reconsider its call (now wait), check other covered companies that depend on sugar-based ethanol, then mark this handled. 21 Oct 2026: further reports (Business Today, Deccan Chronicle, The Federal, The Hindu news entry of 20 Oct) agree: BPCL issued the tender on 16 Oct for about 1,100 crore litres, 1 Nov 2026–31 Oct 2027; allowed feedstocks are maize, broken rice, FCI rice and C-heavy molasses; maize price ₹66.07 + ₹2.79 incentive = ₹68.86. The BPCL tender page and PIB have nothing on it, so still not confirmed from the source. 23 Oct 2026: Deccan Chronicle, Swarajya and Madhyamam repeat the same terms (no cane juice, syrup or B-heavy; maize ₹68.86); the BPCL tender page and PIB still carry nothing, so not confirmed from the source. 25 Oct 2026: Autocar, Deccan Chronicle and others repeat the terms; ISMA has welcomed the exclusion. The tender document, BPCL's page and PIB still carry nothing readable from this session, so not confirmed from the source. 28 Oct 2026: still press reports only (PTI, Reuters, CNBC-TV18 copies; maize ₹68.86 a litre, C-heavy molasses reportedly still allowed); the tender document itself has not been read. 30 Oct 2026: still only press reports; no official tender document seen. 1 Nov 2026: TruAlt’s MD said in the filed Q2 call (26 Oct) that the new tender bars cane juice and B-heavy molasses (C-heavy still allowed); the note now says so, attributed to him. The maize price (₹68.86) is still only in press reports; the tender document itself still not seen, so left open.",
     "addedOn": "2026-10-18"
   },
   {
@@ -3764,7 +3764,8 @@
     "sector": "Oil",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Q2 call read: revenue ₹811cr on 10.8 crore litres (volume checkpoint partly met), margin 14% on dear maize, H1 operating cash +₹192cr, more promoter pledges (checkpoint missed), MD confirms cane-juice/B-heavy exclusion. Note and card updated; stays wait."
   },
   {
     "company": "Tinna Rubber",
@@ -3786,13 +3787,14 @@
     "sector": "Platform Cos",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Q2 call read: revenue +36%, net loss ₹922cr (narrower on the year, wider on the quarter), Instamart NOV +13.4% QoQ, 0 to −1% margin range kept, 1 point adjusted-margin gain guided for Q3. Note and card updated; stays wait; new Q3 checkpoint."
   },
   {
     "company": "Monolithisch India",
     "sector": "Elect and Refrac",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 1 Nov 2026: the transcript is filed only on NSE, which this session cannot reach (Screener links the NSE copy); its two checkpoints were weighed from the filed results; left open for the transcript.",
     "addedOn": "2026-10-30"
   },
   {
@@ -3800,35 +3802,40 @@
     "sector": "Software",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Q2 call read: revenue ₹1,323cr (4.4x), margin 14.9%, ₹1,200cr raised, net cash ₹14cr, stock 117 days (checkpoint missed), order book plus L1 ₹3,282cr, ~₹4,000cr FY27 suggested. Note and card updated; stays wait."
   },
   {
     "company": "Indoco Remedies",
     "sector": "Pharma",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Q2 call read: revenue ₹507cr (+7%), regulated markets +21%, India −6%, margin 9.2%, profit from other income, FDA re-inspection with 7 observations (verdict from early December). Note and card updated; stays pass; new FDA checkpoint."
   },
   {
     "company": "SG Mart",
     "sector": "Retail",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Q2 call read: operating profit ₹72cr (4.6%), processing volume +16% QoQ, H1 cash funded ₹250cr capex, ₹300cr FY27 guide kept, solar ~11,000 t a quarter (checkpoint missed), Raipur in 9–12 months. Note and card updated; stays wait."
   },
   {
     "company": "Aequs",
     "sector": "Aerospace defence",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Q2 call read: aerospace +44% at ~22% margin, order book $1.1bn, new Safran agreement; consumer use 17%, loss ₹40cr, Q4 break-even withdrawn; net debt 0.5x equity; capex cut to ~₹320cr. Note and card updated; stays wait."
   },
   {
     "company": "Jupiter Life Line Hospitals",
     "sector": "Hospitals",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Q2 call read: Dombivli loss ₹0.2cr (seasonal help), occupancy mid-30s, margin ~23%, Pune South land ₹150cr, Mira Road still in approvals. Note and card updated; stays wait; Dombivli checkpoint partly met."
   },
   {
     "company": "Kajaria Ceramics",
@@ -3875,20 +3882,23 @@
     "sector": "Software",
     "subject": "Checkpoint met: netweb-technologies-q2fy27-2",
     "why": "Operating margin within the 13–14% guided — actual 14.9% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Weighed with the Q2 call: margin 14.9% met, but the price is stretched and stock rose; stays wait. Outcome written."
   },
   {
     "company": "Monolithisch India",
     "sector": "Elect and Refrac",
     "subject": "Checkpoint partly: monolith-q2fy27-1",
     "why": "Q2 FY27 revenue of ₹55–60cr, as guided on 27 July (Q1 was ₹47cr), with the new Purulia (Metalurgica) plant through its September trial runs — actual ₹54cr (partly). The new plant or demand is slower than promised Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Weighed from filed Q2 results: ₹54cr against ₹55–60cr guided, new plant producing since 10 Oct; stays pass. Dated sentence on the card, outcome written."
   },
   {
     "company": "Monolithisch India",
     "sector": "Elect and Refrac",
     "subject": "Checkpoint met: monolith-q2fy27-2",
     "why": "Operating margin of at least 22% in Q2 FY27, the bottom of the 22–25% range management keeps guiding (Q1 was 28%). The company's EBITDA and Screener's operating margin matched in Q1; inward freight sits in other expenses — actual 29.6% (met). The premium SGB Limited grade is holding the margin as volumes double Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Weighed from filed Q2 results: margin about 30% against a 22% floor; stays pass on price. Outcome written."
   }
 ]
