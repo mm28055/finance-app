@@ -669,8 +669,8 @@ export const hospitals: SectorOverview = {
         {
             company: 'Jupiter Life Line Hospitals', rank: 5, stance: 'PRICED', segment: REGIONAL,
             what: "Runs large owned hospitals in Thane, Pune (Baner) and Indore, opened a fourth in Dombivli in February 2026, and plans about 1,700 more beds.",
-            view: "**Strong suburban franchise, a heavy build ahead.** ARPOB rose 9.2% to ₹73,500 and government patients are under 1%, but Dombivli lost ₹9.5cr in Q1, the margin fell to 19.3% and FY27 is guided at 20–21%. It will borrow up to 3 times operating profit where ICRA's trigger is 1.8, and a CFO exit and a related-party purchase came within two months of each other. The price asks for about {need:Jupiter Life Line Hospitals|23}% against my ~15%.",
-            watch: 'Dombivli insurer approvals and occupancy above 40%; debt against ICRA’s 1.8x; progress at BKC and Mira Road.',
+            view: "**Strong suburban franchise, a heavy build ahead.** ARPOB rose 9.2% to ₹73,500 and government patients are under 1%, but Dombivli lost ₹9.5cr in Q1, the margin fell to 19.3% and FY27 is guided at 20–21%. It will borrow up to 3 times operating profit where ICRA's trigger is 1.8, and a CFO exit and a related-party purchase came within two months of each other. The price asks for about {need:Jupiter Life Line Hospitals|23}% against my ~15%. 1 Nov 2026: stays wait after the Q2 call. Dombivli's loss shrank to ₹0.2cr from ₹9.5cr, partly on seasonal infections, and the group margin was back at about 23%; but Dombivli's occupancy is only in the mid-30s, Q3 is usually weaker, and it is buying the Pune South land for ₹150cr (₹100cr more cash) as three new hospitals get under way.",
+            watch: 'Dombivli holding near break-even in the weaker Q3, with occupancy above 40% and insurer approvals (about a year); debt against ICRA’s 1.8x; progress at BKC and Mira Road.',
         },
         {
             company: 'Narayana Hrudayalaya', rank: 6, stance: 'PRICED', segment: LARGE,
