@@ -36606,7 +36606,7 @@
    "people": [
     {
      "name": "Sukumar Srinivas",
-     "role": "Managing Director",
+     "role": "Managing Director (died 30 Oct 2026)",
      "since": "Founder, October 1995",
      "family": true,
      "relation": "Founder and promoter",
@@ -36626,15 +36626,16 @@
      "bio": "CFO of the trading business, previously CFO of Shankara Building Products before the demerger (the old company appointed a new CFO in October 2025). Education and earlier career not found."
     }
    ],
-   "changes": "With the demerger, the old Shankara Building Products appointed a new CFO (Satyanarayana J W) and moved Dhananjay Srinivas to a non-executive role there in October 2025; Alex Varghese stayed with Buildpro. A five-for-one share split (record date 8 October 2026) has been done.",
+   "changes": "Founder and Managing Director Sukumar Srinivas died on 30 Oct 2026 and ceased to be classed as a promoter; no successor named in the filing. Earlier: With the demerger, the old Shankara Building Products appointed a new CFO (Satyanarayana J W) and moved Dhananjay Srinivas to a non-executive role there in October 2025; Alex Varghese stayed with Buildpro. A five-for-one share split (record date 8 October 2026) has been done.",
    "sources": [
     "Q1 FY27 earnings call transcript, 7 Aug 2026 (database)",
     "https://www.crisil.com/mnt/winshare/Ratings/RatingList/RatingDocs/ShankaraBuildproLtd_December 31_ 2025_RR_381129.html",
     "https://hdfcsky.com/news/shankara-building-products-fixes-record-date-for-demerger-share-allotment",
     "https://filingreader.com/news-wire/mumbai/2025-10-09/shankara-building-products-announces-new-cfo-and-company-secretary",
-    "https://www.sahi.com/news/shankara-build-sets-october-8-record-date-to-split-10-shares-into-five-2-shares"
+    "https://www.sahi.com/news/shankara-build-sets-october-8-record-date-to-split-10-shares-into-five-2-shares",
+    "https://nsearchives.nseindia.com/corporate/BUILDPRO_30102026195541_Letter.pdf"
    ],
-   "updatedOn": "2026-10-21"
+   "updatedOn": "2026-11-01"
   },
   {
    "company": "Safe Enterprises Retail Fixtures",

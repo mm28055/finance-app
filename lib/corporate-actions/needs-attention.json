@@ -4,7 +4,7 @@
     "sector": "Elect and Refrac",
     "exDate": "07-Sep-2026",
     "subject": "Demerger",
-    "why": "Demerger — note updated 28 Sep 2026. Still open: add the electrode company (HEG Graphite Ltd, renamed HEG Limited on 12 Oct 2026; listing expected second half of October 2026) to Elect and Refrac once it trades, and put HEG Advanced Materials into the live table once it files results of its own. Not listed as of 16 Oct. 18 Oct 2026: still not listed (no Screener page yet). 21 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 23 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 25 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 28 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 30 Oct 2026: still not listed (Screener finds only HEG Advanced Materials).",
+    "why": "Demerger — note updated 28 Sep 2026. Still open: add the electrode company (HEG Graphite Ltd, renamed HEG Limited on 12 Oct 2026; listing expected second half of October 2026) to Elect and Refrac once it trades, and put HEG Advanced Materials into the live table once it files results of its own. Not listed as of 16 Oct. 18 Oct 2026: still not listed (no Screener page yet). 21 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 23 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 25 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 28 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 30 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 1 Nov 2026: the electrode company is still not on the dashboard list (companies.json shows only HEG); left open.",
     "addedOn": "2026-09-28"
   },
   {
@@ -12,7 +12,7 @@
     "sector": "Bearings",
     "exDate": "01-Oct-2025",
     "subject": "Demerger (automotive / industrial split)",
-    "why": "Put SKF India into the live table once July–September 2026 results are filed (first four clean post-split quarters); until then its trailing P/E uses too small a profit base. 18 Oct 2026: July–September results not yet filed (Screener's last quarter is June 2026). 21 Oct 2026: July–September results not yet filed (Screener's last quarter is still June 2026). 23 Oct 2026: July–September results not yet filed (Screener's last quarter is still June 2026). 25 Oct 2026: July–September results not yet filed (Screener's last quarter is still June 2026). 28 Oct 2026: July–September results not yet filed (Screener's last quarter is still June 2026). 30 Oct 2026: still no Q2 FY27 results filed for SKF India (no results entry); left open.",
+    "why": "Put SKF India into the live table once July–September 2026 results are filed (first four clean post-split quarters); until then its trailing P/E uses too small a profit base. 18 Oct 2026: July–September results not yet filed (Screener's last quarter is June 2026). 21 Oct 2026: July–September results not yet filed (Screener's last quarter is still June 2026). 23 Oct 2026: July–September results not yet filed (Screener's last quarter is still June 2026). 25 Oct 2026: July–September results not yet filed (Screener's last quarter is still June 2026). 28 Oct 2026: July–September results not yet filed (Screener's last quarter is still June 2026). 30 Oct 2026: still no Q2 FY27 results filed for SKF India (no results entry); left open. 1 Nov 2026: no July–September results for SKF India in the results or filings digests yet; left open.",
     "addedOn": "2026-09-28"
   },
   {
@@ -122,7 +122,6 @@
   {
     "company": "DEE Development",
     "sector": "Industrials",
-    "exDate": null,
     "subject": "Shareholding Jul 2026",
     "why": "Promoter holding fell 5.1 pts (70.2% in Jun 2026 → 65.1% in Jul 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-09-28",
@@ -131,7 +130,6 @@
   {
     "company": "Leela Palaces Hotels",
     "sector": "Hotels and Travels",
-    "exDate": null,
     "subject": "Shareholding Jun 2026",
     "why": "Pledged share of promoter holding jumped to 73.7% from 0% (Mar 2026 → Jun 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-09-28",
@@ -140,7 +138,6 @@
   {
     "company": "Hemant Surgical Inds",
     "sector": "Healthcare",
-    "exDate": null,
     "subject": "Shareholding May 2026",
     "why": "Promoter holding fell 6.1 pts (58.9% in Mar 2026 → 52.8% in May 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-09-28",
@@ -149,7 +146,6 @@
   {
     "company": "Craftsman Automation",
     "sector": "Auto Related",
-    "exDate": null,
     "subject": "Shareholding Jun 2026",
     "why": "Promoter holding fell 6.3 pts (48.7% in Mar 2026 → 42.4% in Jun 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-09-28",
@@ -158,7 +154,6 @@
   {
     "company": "Skipper",
     "sector": "Construction - Power",
-    "exDate": null,
     "subject": "Shareholding Jul 2026",
     "why": "Promoter holding fell 5 pts (66.5% in Jun 2026 → 61.5% in Jul 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-09-28",
@@ -167,7 +162,6 @@
   {
     "company": "NRB Bearing",
     "sector": "Bearings",
-    "exDate": null,
     "subject": "Shareholding Jun 2026",
     "why": "Promoter holding fell 6.5 pts (51.2% in Mar 2026 → 44.7% in Jun 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-09-28",
@@ -176,7 +170,6 @@
   {
     "company": "Afcons Infra",
     "sector": "Construction",
-    "exDate": null,
     "subject": "Shareholding Jun 2026",
     "why": "Pledged share of promoter holding jumped to 100% from 60.1% (Mar 2026 → Jun 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-09-28",
@@ -185,7 +178,6 @@
   {
     "company": "ICE Make Refrig.",
     "sector": "Industrials",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 9.7 pts (74.2% in Jun 2026 → 64.5% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-09-28",
@@ -194,7 +186,6 @@
   {
     "company": "Beta Drugs",
     "sector": "Pharma",
-    "exDate": null,
     "subject": "Shareholding Jun 2026",
     "why": "Promoter holding fell 5.5 pts (64.6% in Mar 2026 → 59.1% in Jun 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-09-28",
@@ -203,7 +194,6 @@
   {
     "company": "Belrise Industries",
     "sector": "Auto Related",
-    "exDate": null,
     "subject": "Shareholding Jul 2026",
     "why": "Promoter holding fell 5.3 pts (66.5% in Jun 2026 → 61.1% in Jul 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-09-28",
@@ -212,7 +202,6 @@
   {
     "company": "Viceroy Hotels",
     "sector": "Hotels and Travels",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 10.1 pts (84.1% in Jun 2026 → 74% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-09-28",
@@ -221,7 +210,6 @@
   {
     "company": "Cohance Lifesciences",
     "sector": "Pharma CDMO",
-    "exDate": null,
     "subject": "Shareholding Jun 2026",
     "why": "Pledged share of promoter holding jumped to 94.6% from 0% (Mar 2026 → Jun 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-09-28",
@@ -230,7 +218,6 @@
   {
     "company": "KRN Heat Exchan",
     "sector": "Industrials",
-    "exDate": null,
     "subject": "Shareholding Jun 2026",
     "why": "Promoter holding fell 5.1 pts (70.8% in Mar 2026 → 65.7% in Jun 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-09-28",
@@ -239,7 +226,6 @@
   {
     "company": "Blue Jet Healthcare",
     "sector": "Pharma API",
-    "exDate": null,
     "subject": "Shareholding Jul 2026",
     "why": "Promoter holding fell 6.7 pts (79.8% in Jun 2026 → 73.2% in Jul 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-09-28",
@@ -313,7 +299,7 @@
     "company": "Ganesh Benzoplast",
     "sector": "Oil",
     "subject": "Waiting: storage and rail-logistics sale to close",
-    "why": "Ganesh Benzoplast is selling its storage and rail-logistics businesses for ₹1,154cr (more than its market value). Each run, check NSE filings for completion of the sale. Until it closes, leave this entry open. Once it closes, rewrite its section in the Oil note (both tabs) for the chemicals-and-EPC company that remains, decide its call, update its projects, capacity and expectations, and then mark this handled. Timing from the 7 Oct 2026 investor call (transcript filed 13 Oct): about ₹500cr expected before January 2027, ₹300cr before March 2027 and ₹354cr over the following 12–18 months; ₹190–200cr of the first tranche goes to tax and bank lines and about ₹200cr to a buyback and special dividend. 18 Oct 2026: no completion filing yet. 21 Oct 2026: no completion filing yet. 23 Oct 2026: no completion filing yet (latest filings are the 7 and 13 Oct investor-call outcomes). 25 Oct 2026: no completion filing yet. 28 Oct 2026: no completion filing yet. 30 Oct 2026: no filing on closing the sale; still waiting.",
+    "why": "Ganesh Benzoplast is selling its storage and rail-logistics businesses for ₹1,154cr (more than its market value). Each run, check NSE filings for completion of the sale. Until it closes, leave this entry open. Once it closes, rewrite its section in the Oil note (both tabs) for the chemicals-and-EPC company that remains, decide its call, update its projects, capacity and expectations, and then mark this handled. Timing from the 7 Oct 2026 investor call (transcript filed 13 Oct): about ₹500cr expected before January 2027, ₹300cr before March 2027 and ₹354cr over the following 12–18 months; ₹190–200cr of the first tranche goes to tax and bank lines and about ₹200cr to a buyback and special dividend. 18 Oct 2026: no completion filing yet. 21 Oct 2026: no completion filing yet. 23 Oct 2026: no completion filing yet (latest filings are the 7 and 13 Oct investor-call outcomes). 25 Oct 2026: no completion filing yet. 28 Oct 2026: no completion filing yet. 30 Oct 2026: no filing on closing the sale; still waiting. 1 Nov 2026: no completion filing in the digest to 31 October; left open.",
     "addedOn": "2026-09-30"
   },
   {
@@ -943,7 +929,6 @@
   {
     "company": "Aurum Proptech",
     "sector": "Platform Cos",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 9.8 pts (47.9% in Jun 2026 → 38.1% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-10-07",
@@ -1104,7 +1089,6 @@
   {
     "company": "Thyrocare Technologies",
     "sector": "Healthcare Diagnostic",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 9.9 pts (60.9% in Jun 2026 → 51% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-10-12",
@@ -1113,7 +1097,6 @@
   {
     "company": "Ratnaveer Precision",
     "sector": "Iron and Steel",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 6.8 pts (45.5% in Jun 2026 → 38.7% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-10-12",
@@ -1170,7 +1153,6 @@
   {
     "company": "Xtranet Technologies",
     "sector": "Software",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 21 pts (83.6% in Jul 2026 → 62.6% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-10-13",
@@ -1179,7 +1161,6 @@
   {
     "company": "Nephrocare Health",
     "sector": "Healthcare",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 5.5 pts (63.9% in Jun 2026 → 58.3% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-10-13",
@@ -1221,14 +1202,14 @@
     "company": "Pine Labs",
     "sector": "Platform Cos",
     "subject": "Waiting: official confirmation of UPI merchant fee (MDR)",
-    "why": "Press reports (15 Sep 2026) say NPCI's UPI steering committee set a 0.4% merchant fee on person-to-merchant UPI payments above ₹2,000 from 15 October 2026 (₹300 cap; ₹5 flat for railways, telecom, insurance and fuel; small merchants under ₹1 lakh a month exempt; reported split issuer bank ~40%, acquirer 30%, app 20%, app's bank 10%). The Finance Ministry said in August that no framework was final, and the NPCI circular could not be read on 14 Oct (site returned 403). Each run, look for the NPCI circular or a government notification. Once confirmed, it is very important for the payment companies in the Platform note (Pine Labs, AvenuesAI, One Mobikwik Systems): add it once to the sector sections and to each company's section, add a checkpoint where it creates a testable expectation, reconsider their calls, then mark this handled. 16 Oct 2026: press reports (DT Next, 13 Oct) say NPCI deferred the fee, with a new date to be set after Diwali; still nothing official in force. Keep waiting. 18 Oct 2026: still deferred; NPCI (13 Oct) said a revised date will be announced separately. Nothing in force. 21 Oct 2026: no NPCI circular or government notification found with a new date; press coverage still dates from the September announcement. Keep waiting. 23 Oct 2026: still deferred to \"after Diwali\" with no new date; no NPCI circular found (npci.org.in returns 403). Keep waiting. 25 Oct 2026: still deferred to a date 'to be notified separately'; one report (Deccan Chronicle) says 1 January 2027 is likely, but NPCI has said nothing (npci.org.in returns 403). Keep waiting. 28 Oct 2026: still deferred; no new date from NPCI (only 'after Diwali', notified separately). 30 Oct 2026: no official notice of the fee; still deferred.",
+    "why": "Press reports (15 Sep 2026) say NPCI's UPI steering committee set a 0.4% merchant fee on person-to-merchant UPI payments above ₹2,000 from 15 October 2026 (₹300 cap; ₹5 flat for railways, telecom, insurance and fuel; small merchants under ₹1 lakh a month exempt; reported split issuer bank ~40%, acquirer 30%, app 20%, app's bank 10%). The Finance Ministry said in August that no framework was final, and the NPCI circular could not be read on 14 Oct (site returned 403). Each run, look for the NPCI circular or a government notification. Once confirmed, it is very important for the payment companies in the Platform note (Pine Labs, AvenuesAI, One Mobikwik Systems): add it once to the sector sections and to each company's section, add a checkpoint where it creates a testable expectation, reconsider their calls, then mark this handled. 16 Oct 2026: press reports (DT Next, 13 Oct) say NPCI deferred the fee, with a new date to be set after Diwali; still nothing official in force. Keep waiting. 18 Oct 2026: still deferred; NPCI (13 Oct) said a revised date will be announced separately. Nothing in force. 21 Oct 2026: no NPCI circular or government notification found with a new date; press coverage still dates from the September announcement. Keep waiting. 23 Oct 2026: still deferred to \"after Diwali\" with no new date; no NPCI circular found (npci.org.in returns 403). Keep waiting. 25 Oct 2026: still deferred to a date 'to be notified separately'; one report (Deccan Chronicle) says 1 January 2027 is likely, but NPCI has said nothing (npci.org.in returns 403). Keep waiting. 28 Oct 2026: still deferred; no new date from NPCI (only 'after Diwali', notified separately). 30 Oct 2026: no official notice of the fee; still deferred. 1 Nov 2026: no NPCI or government notice in the filings or news digests (Pine Labs’ Q2 results on 29 Oct said nothing on it); left open.",
     "addedOn": "2026-10-14"
   },
   {
     "company": "Beta Drugs",
     "sector": "Pharma",
     "subject": "Waiting: final NPPA notification of the 30% trade-margin cap on cancer medicines",
-    "why": "On 8 Oct 2026 the NPPA approved in principle a 30% cap on trade margins (of MRP) for non-scheduled anti-cancer medicines, expected to cut their retail prices by 20–70%; a DGHS expert committee is to finalise the list of medicines before NPPA notifies it. A draft is not a rule. Each run, check NPPA/PIB for the final notification and list. Once notified, check which of Beta Drugs' (and other covered pharma companies') brands are on the list, correct the notes, reconsider the call, then mark this handled. 16 Oct 2026: no final notification yet (reports say the DGHS list covers about 110 drugs). 18 Oct 2026: press reports (Tribune, ETV Bharat, Medical Dialogues, 17 Oct) say the NPPA issued the final order, Gazette S.O. 5690(E) of 17 Oct 2026, capping trade margins at 30% for 137 non-scheduled cancer drugs (including patented ones and direct hospital supply), with lower MRPs from 9 Nov 2026 based on March 2026 net sales realisation. Reported list includes pemetrexed, abiraterone, azacitidine, anastrozole, erlotinib, sunitinib, everolimus, bevacizumab and many newer patented drugs, but not bortezomib, capecitabine, imatinib, temozolomide, docetaxel, gemcitabine, paclitaxel, oxaliplatin or the platinum drugs. The official NPPA, Gazette and Department of Pharmaceuticals sites could not be reached from this session, so the order is not yet confirmed from the source; next run, confirm it and check Beta Drugs', Natco's and Shilpa Medicare's exposure to the listed molecules. 21 Oct 2026: more outlets (ThePrint, Business Today, Moneylife, PTI) confirm a Gazette notification of 17 Oct covering 137 formulations, new prices from 9 Nov, makers to report revised prices within 7 days and keep production levels. The NPPA, Gazette and Department of Pharmaceuticals sites still could not be reached (no response or 503), and PIB has no release on it, so it is still not confirmed from the source. 23 Oct 2026: Deccan Chronicle and Upstox also report the 30% cap on 137 formulations from 9 Nov under paragraph 19 of the DPCO; NPPA and Gazette sites still give no response from this session, so not confirmed from the source. 25 Oct 2026: All India Radio (newsonair.gov.in, 19 Oct) also reports the cap on 137 formulations from 9 Nov under paragraph 19 of the DPCO, but the NPPA and Gazette sites still give no response from this session, so the order itself is not yet read. 28 Oct 2026: still only press and All India Radio reports (137 drugs, lower MRPs from 9 Nov 2026); the NPPA and Gazette sites still cannot be reached from this session, so the order itself has not been read. 30 Oct 2026: still no final notification seen; on its 22 Oct call Beta said the cap would have negligible impact on it (orals sold through distributors; most injectables already price-controlled).",
+    "why": "On 8 Oct 2026 the NPPA approved in principle a 30% cap on trade margins (of MRP) for non-scheduled anti-cancer medicines, expected to cut their retail prices by 20–70%; a DGHS expert committee is to finalise the list of medicines before NPPA notifies it. A draft is not a rule. Each run, check NPPA/PIB for the final notification and list. Once notified, check which of Beta Drugs' (and other covered pharma companies') brands are on the list, correct the notes, reconsider the call, then mark this handled. 16 Oct 2026: no final notification yet (reports say the DGHS list covers about 110 drugs). 18 Oct 2026: press reports (Tribune, ETV Bharat, Medical Dialogues, 17 Oct) say the NPPA issued the final order, Gazette S.O. 5690(E) of 17 Oct 2026, capping trade margins at 30% for 137 non-scheduled cancer drugs (including patented ones and direct hospital supply), with lower MRPs from 9 Nov 2026 based on March 2026 net sales realisation. Reported list includes pemetrexed, abiraterone, azacitidine, anastrozole, erlotinib, sunitinib, everolimus, bevacizumab and many newer patented drugs, but not bortezomib, capecitabine, imatinib, temozolomide, docetaxel, gemcitabine, paclitaxel, oxaliplatin or the platinum drugs. The official NPPA, Gazette and Department of Pharmaceuticals sites could not be reached from this session, so the order is not yet confirmed from the source; next run, confirm it and check Beta Drugs', Natco's and Shilpa Medicare's exposure to the listed molecules. 21 Oct 2026: more outlets (ThePrint, Business Today, Moneylife, PTI) confirm a Gazette notification of 17 Oct covering 137 formulations, new prices from 9 Nov, makers to report revised prices within 7 days and keep production levels. The NPPA, Gazette and Department of Pharmaceuticals sites still could not be reached (no response or 503), and PIB has no release on it, so it is still not confirmed from the source. 23 Oct 2026: Deccan Chronicle and Upstox also report the 30% cap on 137 formulations from 9 Nov under paragraph 19 of the DPCO; NPPA and Gazette sites still give no response from this session, so not confirmed from the source. 25 Oct 2026: All India Radio (newsonair.gov.in, 19 Oct) also reports the cap on 137 formulations from 9 Nov under paragraph 19 of the DPCO, but the NPPA and Gazette sites still give no response from this session, so the order itself is not yet read. 28 Oct 2026: still only press and All India Radio reports (137 drugs, lower MRPs from 9 Nov 2026); the NPPA and Gazette sites still cannot be reached from this session, so the order itself has not been read. 30 Oct 2026: still no final notification seen; on its 22 Oct call Beta said the cap would have negligible impact on it (orals sold through distributors; most injectables already price-controlled). 1 Nov 2026: no final NPPA notification in the digests; Jupiter Life Line’s Q2 call (26 Oct) said a cap is to apply from 1 November, unconfirmed; left open.",
     "addedOn": "2026-10-14"
   },
   {
@@ -1274,7 +1255,6 @@
   {
     "company": "Aequs",
     "sector": "Aerospace defence",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Pledged share of promoter holding jumped to 25.4% from 0% (Jun 2026 → Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-10-16",
@@ -1283,7 +1263,6 @@
   {
     "company": "Hester Biosciences",
     "sector": "Pharma Others",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 9.4 pts (53.7% in Jun 2026 → 44.3% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-10-16",
@@ -1459,7 +1438,6 @@
   {
     "company": "Gland Pharma",
     "sector": "Pharma CDMO",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 6 pts (51.8% in Jun 2026 → 45.8% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-10-20",
@@ -1468,7 +1446,6 @@
   {
     "company": "Sequent Scientific",
     "sector": "Pharma Others",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 12.1 pts (61.3% in Jun 2026 → 49.2% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-10-20",
@@ -2008,7 +1985,6 @@
   {
     "company": "Tenneco Clean Air",
     "sector": "Auto Related",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 15 pts (74.8% in Jun 2026 → 59.8% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-10-21",
@@ -2713,7 +2689,6 @@
   {
     "company": "Rubicon Research",
     "sector": "Pharma",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 8.5 pts (59.8% in Jun 2026 → 51.3% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-10-23",
@@ -3129,7 +3104,6 @@
   {
     "company": "Eureka Forbes",
     "sector": "Consumer Durables",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Pledged share of promoter holding jumped to 81.5% from 53.7% (Jun 2026 → Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-10-26",
@@ -3138,7 +3112,6 @@
   {
     "company": "EPL",
     "sector": "Packaging",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 26.4 pts (26.4% in Jun 2026 → 0% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-10-26",
@@ -3147,7 +3120,6 @@
   {
     "company": "AXISCADES Technologies",
     "sector": "Aerospace defence",
-    "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 13.2 pts (58% in Jun 2026 → 44.8% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-10-26",
@@ -3156,7 +3128,6 @@
   {
     "company": "United Heat Transfer",
     "sector": "Industrials",
-    "exDate": null,
     "subject": "Shareholding Oct 2026",
     "why": "Promoter holding fell 9.2 pts (67.8% in Sep 2026 → 58.6% in Oct 2026) — find out why (sale, dilution, pledge) and update the sector note",
     "addedOn": "2026-10-26",
@@ -3921,5 +3892,68 @@
     "why": "Operating margin of at least 22% in Q2 FY27, the bottom of the 22–25% range management keeps guiding (Q1 was 28%). The company's EBITDA and Screener's operating margin matched in Q1; inward freight sits in other expenses — actual 29.6% (met). The premium SGB Limited grade is holding the margin as volumes double Weigh it in the call and write the outcome on the checkpoint.",
     "addedOn": "2026-10-30",
     "handled": "2026-11-01: Weighed from filed Q2 results: margin about 30% against a 22% floor; stays pass on price. Outcome written."
+  },
+  {
+    "company": "Quality Power El",
+    "sector": "Electrical Transformers",
+    "subject": "Projects: Sangli and Türkiye facilities started operations 31 Oct 2026",
+    "why": "Filing of 2026-10-31: The company commenced manufacturing operations at its new Global Coil Factory in Sangli and a Power Conversion Systems facility in Türkiye in October 2026. The earnings release also highlighted a strong consolidated order book of ₹2,010 crore, which is twice the trailing twelve-month sales. Move the matching project's status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 1 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/QPOWER1234_31102026202355_IntimationofPressReleaseResults31102026Sign.pdf",
+    "addedOn": "2026-11-01"
+  },
+  {
+    "company": "Madhya Bharat Agro Products",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "Projects: Dhule fertiliser plant commissioned 31 Oct 2026, awaiting licence",
+    "why": "Filing of 2026-10-31: Madhya Bharat Agro Products has successfully commissioned its DAP/NPK fertilizer plant at Dhule, Maharashtra. However, the start of commercial production has been postponed as the company awaits a requisite statutory license for raw materials, which is expected anytime. Move the matching project's status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 1 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/MBAPL_31102026151513_MBAPL.pdf",
+    "addedOn": "2026-11-01"
+  },
+  {
+    "company": "Aarti Industries",
+    "sector": "Chemicals",
+    "subject": "Projects: Zone IV Phase I commissioned and ₹1,500cr supply contract (30 Oct 2026)",
+    "why": "Filing of 2026-10-30: Aarti Industries has commissioned Phase I of its Zone IV facility, with operations starting at the Calcium Chloride plant and part of the Multipurpose Plant. The company also expanded its fuel additives capacity from 290 KTPA to 360 KTPA and signed a 10-year global supply agreement with a cumulative revenue potential of approximately ₹1,500 crore. Move the matching project's status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 1 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/AARTIIND_30102026192621_AARTIIND_PressRelease.pdf",
+    "addedOn": "2026-11-01"
+  },
+  {
+    "company": "Studds Accessories",
+    "sector": "Auto Related",
+    "subject": "Projects: Faridabad facility began commercial production 30 Oct 2026",
+    "why": "Filing of 2026-10-30: Studds Accessories has commenced commercial production at its Manufacturing Facility-V in Faridabad, Haryana, effective October 30, 2026. The company has received its Consent to Operate for the new plant, expanding its manufacturing footprint. Move the matching project's status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 1 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/Studds1983_30102026124650_Intimation_Commencement_of_Plant_V_final.pdf",
+    "addedOn": "2026-11-01"
+  },
+  {
+    "company": "Narayana Hrudayalaya",
+    "sector": "Hospitals",
+    "subject": "Projects: new Bengaluru hospital commissioned (30 Oct 2026)",
+    "why": "Filing of 2026-10-30: Narayana Hrudayalaya reported Q2 FY27 consolidated revenue of ₹2,844 crore, up 73% year-on-year, and EBITDA of ₹605 crore, up 42%. During the quarter, the company commissioned its Banashankari hospital in Bengaluru and signed an agreement for a 120-bed hospital in Kolkata, taking its capacity pipeline to about 1,555 beds. Move the matching project's status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 1 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/Narayana_30102026185357_SEPressreleaseOct30NHL.pdf",
+    "addedOn": "2026-11-01"
+  },
+  {
+    "company": "Shyam Metalics",
+    "sector": "Iron and Steel",
+    "subject": "Projects: new capacities commissioned and 51% of a coal-mine SPV with ₹184cr initial capex (31 Oct 2026)",
+    "why": "Filing of 2026-10-31: Shyam Metalics reported a 96.2% YoY jump in Q2 PAT to ₹511 crore, with revenue rising 33.4% to ₹5,960 crore. The company commissioned a 1.5 MTPA beneficiation plant and 18,000 TPA of aluminium foil capacity at its Sambalpur facility. It also announced the acquisition of a 51% stake in Alom Solar for ₹183.6 crore to secure a captive coal block. Move the matching project's status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 1 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/SHYAMMETL_31102026165844_SMELPressRelease31102026.pdf",
+    "addedOn": "2026-11-01"
+  },
+  {
+    "company": "OBSC Perfection",
+    "sector": "Auto Related",
+    "subject": "Projects: new capacity commissioned (H1 FY27 update, 31 Oct 2026)",
+    "why": "Filing of 2026-10-31: The company reported a 91% YoY increase in H1 FY27 total income to ₹172.7 crore and a 108% rise in PAT to ₹21.8 crore. During the half-year, it commissioned new stamping capacity and installed 12,000 tons p.a. of forging capacity. The current order book stands at over ₹1,200 crore, nearly five times trailing 12-month sales. Move the matching project's status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 1 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/OBSCPERFECTION_31102026172959_Press_Release_31st_Oct_2026.pdf",
+    "addedOn": "2026-11-01"
+  },
+  {
+    "company": "Venus Pipes & Tubes",
+    "sector": "Iron and Steel",
+    "subject": "Projects: pipe-spooling capacity commissioned ahead of schedule (30 Oct 2026)",
+    "why": "Filing of 2026-10-30: Venus Pipes & Tubes has commenced operations at its new pipe spooling facility ahead of the planned December 2026 timeline. Concurrently, the company received a ₹29 crore firm order from a data centre customer, forming part of a previously announced ₹185 crore letter of intent. The capacity start marks the company's expansion into value-added pipe spooling solutions. Move the matching project's status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 1 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/VENUSPIPES_30102026190708_Press_Release_-_Reciept_of_Order.pdf",
+    "addedOn": "2026-11-01"
+  },
+  {
+    "company": "Atlanta Electricals",
+    "sector": "Electrical Transformers",
+    "subject": "Projects: subsidiary approved ₹193.58cr capex for a new facility (31 Oct 2026)",
+    "why": "Filing of 2026-10-31: Wholly-owned subsidiary AE Components Pvt Ltd has approved a capital expenditure of ₹193.58 crore to set up a new manufacturing plant for transformer tanks and radiators. The project aims at backward integration, targets completion within one year, and represents a notable investment at nearly 10% of the company's annual sales. Move the matching project's status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 1 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/ATLANTAIPO123_31102026172134_Approval_of_Capex_AE_Components_31102026.pdf",
+    "addedOn": "2026-11-01"
   }
 ]
