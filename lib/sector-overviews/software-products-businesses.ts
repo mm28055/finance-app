@@ -157,7 +157,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Epsilon, Merkle', note: 'Marketing agencies that still handle most loyalty-programme budgets outside dedicated software.' }, { name: 'About 90 loyalty companies of US$10–100M revenue', note: "A long list of smaller rivals that management treats as acquisition targets rather than threats." }],
         position: "**A Forrester Wave leader in loyalty software**, with ARR of ₹1,027cr and 465 brand customers, competing mainly against in-house teams and marketing agencies rather than other dedicated loyalty vendors.",
         money: "Cash was about **₹441cr net cash** on Screener's count, including unspent IPO proceeds of ₹323cr; borrowings are ₹45cr. Operating cash flow of ₹150cr in FY26 exceeded its ₹107cr of company-adjusted EBITDA, because customers pay upfront. No dividend. The promoter (a Singapore holding company) group holds **51.45%**, down from 52.29% at listing; venture investors are among its largest shareholders.",
-        watch: ["The KPMG forensic review and insurance claim on the fraud loss closing without new findings.", "Kognitiv and SessionM migrations lifting gross margin.", "Organic net revenue retention back to 115%."],
+        watch: ["The insurance claim on the €3.04m fraud loss (KPMG's forensic review, filed 31 October 2026, confirmed the amount and found the group's systems sound).", "Kognitiv and SessionM migrations lifting gross margin.", "Organic net revenue retention back to 115%."],
         charts: softwareCharts['Capillary Technologies'],
     },
     {
