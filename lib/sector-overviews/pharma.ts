@@ -982,8 +982,8 @@ export const pharma: SectorOverview = {
         {
             company: 'Indoco Remedies', rank: 23, stance: 'TURNAROUND', segment: INDIA,
             what: "An Indian branded maker with leading dental brands and Cyclopam, European contract work, and a US business held back by an uncleared sterile plant in Goa.",
-            view: "**A decent Indian franchise buried under a failed expansion.** FY26 operating profit of ₹142cr did not cover ₹248cr of interest and depreciation, Q1's profit was an asset-sale gain, debt is about ₹930cr and its auditor flagged a going-concern doubt at its US subsidiary. No growth estimate until the Goa sterile plant clears.",
-            watch: 'The FDA re-inspection of Goa Plants II–III; debt below ₹800cr; margin back into double digits.',
+            view: "**A decent Indian franchise buried under a failed expansion.** FY26 operating profit of ₹142cr did not cover ₹248cr of interest and depreciation, Q1's profit was an asset-sale gain, debt is about ₹930cr and its auditor flagged a going-concern doubt at its US subsidiary. No growth estimate until the Goa sterile plant clears. 1 Nov 2026: stays pass after the Q2 call. Revenue passed ₹500cr a quarter for the first time on 21% growth in regulated markets, but Indian sales fell about 6%, the margin was 9.2%, profit came from ₹39cr of other income, and the FDA's re-inspection of Goa ended with seven observations; the earliest verdict is early December.",
+            watch: 'The FDA verdict on Goa Plants II–III after seven observations (earliest early December); debt below ₹800cr (about ₹65cr repaid in H1); Indian sales growing again; margin back into double digits.',
         },
         {
             company: 'Orchid Pharma', rank: 24, stance: 'AVOID', segment: SPECIAL,
