@@ -150,7 +150,7 @@ const profiles: BusinessProfile[] = [
         "inShort": [
             "**Makes ramming mass**, a ready-mixed silica powder that lines the induction furnaces of small and mid-sized steel mills and is used up every few days, from three plants in West Bengal and Jharkhand, close to India's biggest induction-furnace steel cluster.",
             "**Good:** sales grew 64% in Q1 FY27 at a 28% margin, capacity has just doubled to 5.76 lakh tonnes, and its own quartzite mine should cut stone cost from early 2027. **Bad:** a P/E of about 93, stock held for 226 days, free cash negative, the Ranchi plant bought from the promoter family with the MD's money, and FY28 guidance (₹500–550cr) that needs revenue to quadruple in two years.",
-            "**Verdict: pass.** A fast-growing, well-placed niche maker, but the price already assumes the FY28 target is met, and the family dealings and weak cash call for proof first."
+            "**Verdict: pass.** A fast-growing, well-placed niche maker, but the price already assumes the FY28 target is met, and the family dealings and weak cash call for proof first. 1 Nov 2026: Q2 FY27 revenue of ₹54cr fell just short of the ₹55–60cr guided while the margin rose to about 30% against a 22% floor (Screener); the new plant began commercial production on 10 October, so H2 must lift sharply for the ₹250cr year. Stays pass."
         ],
         "tagline": "A Ranchi family's maker of pre-mixed silica ramming mass, the consumable furnace lining used by induction-furnace steel mills, listed on NSE's SME platform in June 2025.",
         "revenue": "₹135cr (FY26, consolidated)",
@@ -203,7 +203,7 @@ const profiles: BusinessProfile[] = [
         "position": "**One of the two largest ramming mass makers in India** by capacity (5.76 lakh tonnes after September 2026). It sold about 52,000 tonnes in Q1 FY27, around a third of the new capacity on an annual basis.",
         "money": "At March 2026 Screener shows **borrowings of ₹6cr against about ₹23cr of cash**, so about ₹17cr of net cash, after an ₹82cr IPO in June 2025. **Cash has lagged profit**: FY25–FY26 operating profit of ₹53cr produced ₹18cr of operating cash, and free cash was −₹13cr. Stock rose to 226 days of sales from 127 because it hoarded stone to secure supply. The mine needs about ₹17–18cr in January–February 2027 plus a ₹6–7cr deposit; management will fund it by cutting stone stock. The new plants (₹45cr) are to come from cash, IPO money and perhaps a short ₹5–10cr loan. No equity raise is planned. The family's ₹18cr loan and the related-party purchase of its Ranchi plant are the governance flags.",
         "watch": [
-            "Q2 and Q3 revenue tracking the ₹250cr FY27 guide as the new plant fills.",
+            "Q3 and Q4 revenue lifting sharply for the ₹250cr FY27 guide (H1: about ₹101cr) as the new plant, producing since 10 October, fills.",
             "The mine starting on time and stock days falling well below 200.",
             "Fewer and smaller dealings with promoter-family companies."
         ],
