@@ -713,7 +713,7 @@ export const agrochemicalFertilizers: SectorOverview = {
         {
             company: 'Punjab Chem. & Corp', rank: 11, stance: 'SCALEUP', segment: MAKERS,
             what: "Makes agrochemical technicals and intermediates, specialty and pharma chemicals and food-grade phosphoric acid at Derabassi and Lalru, about half on contract for a few European and Japanese customers.",
-            view: "**Concentrated and thin, with a tax dispute.** Q1 exports rose 28% and operating profit 19%, but sales grew 8.7% against 15–20% guided, contract deals are slower, the top five customers are 60–65% of sales, and a ₹45cr IGST refund dispute sits mostly outside its contingent liabilities. Promoters hold 39%. The price needs about {need:Punjab Chem. & Corp|13}% a year against my ~10%.",
+            view: "**Concentrated and thin, with a tax dispute.** Q1 exports rose 28% and operating profit 19%, but sales grew 8.7% against 15–20% guided, contract deals are slower, the top five customers are 60–65% of sales, and a ₹45cr IGST refund dispute sits mostly outside its contingent liabilities. Promoters hold 39%. The price needs about {need:Punjab Chem. & Corp|13}% a year against my ~10%. 1 Nov 2026: the price now reads {label:Punjab Chem. & Corp|fits} after a fall of about 11%, and CARE raised its bank-loan rating to A- on 30 September, but it stays wait until the second half shows the 15–20% growth it guided; Q1 grew 8.7%.",
             watch: 'Second-half growth toward 15–20%; the MoU products scaling from Q4 FY27; the IGST case.',
         },
         {
