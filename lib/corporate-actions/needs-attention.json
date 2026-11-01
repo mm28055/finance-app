@@ -3132,7 +3132,8 @@
     "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Pledged share of promoter holding jumped to 81.5% from 53.7% (Jun 2026 → Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-11-01: The jump is Advent’s Lunolux topping up its pledge (5.9% of the company on 24 Sep 2026, to Catalyst Trusteeship for lenders under an existing facility): 51% of the company, 81.5% of its stake. Note’s wrong 57% figure corrected and the card’s ownership line rewritten; stays wait."
   },
   {
     "company": "EPL",
@@ -3140,7 +3141,8 @@
     "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 26.4 pts (26.4% in Jun 2026 → 0% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-11-01: Blackstone’s Epsilon Bidco sold its remaining 26.4% in the open market in September 2026, so EPL has no promoter on record until the Indovida merger gives Indorama control. Card ownership text corrected (it still showed Blackstone at 26.4% and 16.6% after the merger). No call change; Top 12 checked, no trigger hit."
   },
   {
     "company": "AXISCADES Technologies",
@@ -3148,7 +3150,8 @@
     "exDate": null,
     "subject": "Shareholding Sep 2026",
     "why": "Promoter holding fell 13.2 pts (58% in Jun 2026 → 44.8% in Sep 2026) — find out why (sale, dilution, pledge) and update the sector note",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-11-01: Explained by promoter Jupiter Capital’s 10.86% market sale on 28–29 Sep 2026 (₹843cr at about ₹1,825); already in the note’s view, watch and card from the 30 Sep run. No change; stays pass."
   },
   {
     "company": "United Heat Transfer",
@@ -3156,7 +3159,8 @@
     "exDate": null,
     "subject": "Shareholding Oct 2026",
     "why": "Promoter holding fell 9.2 pts (67.8% in Sep 2026 → 58.6% in Oct 2026) — find out why (sale, dilution, pledge) and update the sector note",
-    "addedOn": "2026-10-26"
+    "addedOn": "2026-10-26",
+    "handled": "2026-11-01: Explained by dilution: the 12 Oct 2026 preferential allotment of 29.68 lakh shares at ₹105.50 to 17 outside investors (+15.6% shares) took promoters from 67.8% to 58.6%; no promoter sale. One clause added to the card; stays avoid."
   },
   {
     "company": "TruAlt Bioenergy",
@@ -3298,7 +3302,8 @@
     "sector": "Electrical Transformers",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from stretched to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-27"
+    "addedOn": "2026-10-27",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Yash Highvoltage: stays follow; price fits but cash conversion (₹9cr of ₹57cr in FY26) fails the own test; no new filings."
   },
   {
     "company": "Onward Technologies",
@@ -3416,28 +3421,32 @@
     "sector": "Agrochemical & Fertilizers",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Punjab Chem. & Corp: stays wait; price fits after an 11% fall and CARE upgraded to A-, but H2 must show the 15–20% growth guided."
   },
   {
     "company": "Vardhman Special Steels",
     "sector": "Iron and Steel",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Vardhman Special Steels: stays follow; price fits and Q2 strong (+39% revenue, +49% profit), but volume is capped and ₹1,200cr of equity is coming; revisit with the Q2 call."
   },
   {
     "company": "Poojaa Precision Engg",
     "sector": "Auto Related",
     "subject": "Call drift: pass → Fits",
     "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Poojaa Precision Engg: stays pass; fits even after a 21% rise, but no calls, quarterly results or named customers; H1 results due November."
   },
   {
     "company": "Stylam Industrie",
     "sector": "Consumer Durables",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Stylam Industrie: stays follow; fits after a 10% fall on a flat Q2; new plant commercial from 29 Oct; split approved."
   },
   {
     "company": "Mahindra Holi.&Resor",
@@ -3585,21 +3594,24 @@
     "sector": "Chemicals",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from stretched to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-29"
+    "addedOn": "2026-10-29",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Yasho Industries: stays wait; fits after a 24% fall and Q2 revenue nearly doubled, but debt of ~₹552cr and doubled capex."
   },
   {
     "company": "Brigade Enterprises",
     "sector": "Realty",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-29"
+    "addedOn": "2026-10-29",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Brigade Enterprises: stays follow; fits; Q2 operating profit +29%, ₹40,000cr plan; waiting for pre-sales to turn."
   },
   {
     "company": "Sakar Healthcare",
     "sector": "Pharma",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from stretched to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-29"
+    "addedOn": "2026-10-29",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Sakar Healthcare: stays wait one more quarter; fits and Q2 revenue ₹87cr hit the ₹85–90cr target early; a repeat would move it to follow. Watch rewritten."
   },
   {
     "company": "Cyient",
@@ -3685,56 +3697,64 @@
     "sector": "Industrials",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from stretched to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Shree Refrigrations: stays wait; fits after a 19% fall; November H1 results are the test."
   },
   {
     "company": "Thomas Cook India",
     "sector": "Travel Services",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Thomas Cook India: stays wait; fits after a 19% fall; guidance still withdrawn, no new filings."
   },
   {
     "company": "Vilas Transcore",
     "sector": "Industrials",
     "subject": "Call drift: pass → Fits",
     "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Vilas Transcore: stays pass; fits after a 17% fall; negative operating cash and related-party buying."
   },
   {
     "company": "Aditya Vision",
     "sector": "Retail",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Aditya Vision: stays follow; fits; Q2 revenue +28%; five-year cash conversion 20% fails the own test."
   },
   {
     "company": "Arvind Fashions",
     "sector": "Retail",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Arvind Fashions: stays follow; fits after an 18% fall; stock rising and licence term undisclosed."
   },
   {
     "company": "Asian Energy Services",
     "sector": "Oil",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Asian Energy Services: stays follow; fits; Q2 margin ~11% still below guide and five-year cash conversion 18%."
   },
   {
     "company": "Capillary Technologies",
     "sector": "Software",
     "subject": "Call drift: follow → Fits",
     "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Capillary Technologies: stays follow; fits after a 16% fall; KPMG review (31 Oct) confirmed the €3.04m fraud and cleared systems; watch items rewritten in note and card."
   },
   {
     "company": "Jubilant Ingrevia",
     "sector": "Pharma CDMO",
     "subject": "Call drift: wait → Fits",
     "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Call drift reviewed (filings and news of six weeks checked). Jubilant Ingrevia: stays wait; fits; anchor contract still paused and the ZettaOne electronics stake; Q2 call to be read when filed."
   },
   {
     "company": "Rishabh Instruments",
@@ -3780,7 +3800,8 @@
     "sector": "Chemicals",
     "subject": "New Special call 24 Oct 2026",
     "why": "Special call 24 Oct 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-01: Investor meet read: H1 revenue +32% (volume-led), data-centre customers, Q2 operating profit ₹8.4cr (<9%) on input costs, no visibility on margin recovery. Dated sentence and watch added to the note; stays wait; margin checkpoint revised."
   },
   {
     "company": "Swiggy",

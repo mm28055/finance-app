@@ -4713,7 +4713,13 @@
    "target": 15,
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-01",
+     "text": "Investor meet 24 Oct 2026: Q2 margin under 9% (₹8.4cr on ₹95.8cr); Q3 so far like Q2; the chairman gives no date for margins to normalise"
+    }
+   ]
   },
   {
    "id": "chembond-chemicals-q2fy27-1",
