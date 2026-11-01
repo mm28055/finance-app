@@ -940,8 +940,8 @@ export const pharma: SectorOverview = {
         {
             company: 'Sakar Healthcare', rank: 16, stance: 'SCALEUP', segment: SPECIAL,
             what: "Makes cancer drugs for Indian and European partners at an EU-approved plant at Bavla, using cancer active ingredients it makes in-house, plus contract-made general medicines at a second plant.",
-            view: "**The plant is built; the sales are late.** Bavla runs at about 29% and could support ₹800–1,000cr, free cash turned positive and debt is about one times operating profit. But revenue has been ₹70–73cr for three quarters, the ₹200cr cancer-drug plan needs exports to rise about tenfold, and its tax rate is rising to about 25%. The price needs about {need:Sakar Healthcare|29}% a year against my ~22%, cut from 25%; moved from follow to wait.",
-            watch: 'Quarterly revenue reaching ₹85–90cr by Q3; cancer-drug exports above ₹15cr a quarter; inventory days falling.',
+            view: "**The plant is built; the sales are late.** Bavla runs at about 29% and could support ₹800–1,000cr, free cash turned positive and debt is about one times operating profit. But revenue has been ₹70–73cr for three quarters, the ₹200cr cancer-drug plan needs exports to rise about tenfold, and its tax rate is rising to about 25%. The price needs about {need:Sakar Healthcare|29}% a year against my ~22%, cut from 25%; moved from follow to wait. 1 Nov 2026: the price now reads {label:Sakar Healthcare|fits}, and Q2 FY27 revenue reached ₹87cr (+50%) at a 28% margin, a quarter ahead of the ₹85–90cr I was waiting for. It stays wait for one more quarter, to see whether cancer-drug exports drive it and whether it repeats; a second quarter at this level would move it back to follow.",
+            watch: 'Q3 revenue holding at ₹85–90cr or more after Q2’s ₹87cr; cancer-drug exports above ₹15cr a quarter; inventory days falling.',
         },
         {
             company: 'Gufic Biosciences', rank: 17, stance: 'SCALEUP', segment: SPECIAL,

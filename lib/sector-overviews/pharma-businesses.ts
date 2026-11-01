@@ -606,7 +606,7 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**A small but specialised contract maker of cancer drugs with its own ingredients**, and its 40th global cancer-drug agreement (with Zydus) signed in Q1 FY27. It is sub-scale next to global contract makers.",
         money: "Screener puts **net debt at ₹71cr**. The heavy spending is done: capex fell from ₹98cr in FY22 to ₹28cr in FY26, and management expects no major capex for three to four years. Cash is tied up as it grows: stock rose to 207 days of sales in FY26. Promoters hold **52.5%**, down from 54.2% in September 2023; the promoter family's pay rose to about ₹4.4cr in FY26, roughly 14% of profit, and the tax rate is rising to about 25%.",
-        watch: ["Cancer-drug exports rising from ₹6.5cr a quarter toward the ₹60–70cr full-year target.", "Quarterly revenue reaching ₹85–90cr by Q3.", "Licences abroad doubling from 16 this year."],
+        watch: ["Cancer-drug exports rising from ₹6.5cr a quarter toward the ₹60–70cr full-year target.", "Quarterly revenue holding at ₹85–90cr or more (Q2 FY27: ₹87cr, a quarter early).", "Licences abroad doubling from 16 this year."],
         charts: pharmaCharts['Sakar Healthcare'],
     },
     {
