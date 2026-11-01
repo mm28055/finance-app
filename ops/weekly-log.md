@@ -547,3 +547,55 @@ Pushed to master; all checks passed (typecheck clean, "All notes pass.").
 Where it mattered, the reviews add what the points missed, mostly profit flattered by other income or low tax (BlackBuck, DCW, Shadowfax, Pine Labs, Praj), rising interest (Deepak Nitrite, Steamhouse, Goodluck, Refex, RR Kabel) and one-off losses (Greaves Cotton). From Horizon's call I judged one checkpoint: finance cost fell to ₹116cr from ₹131cr (met).
 
 **Top 12:** only reserve names were touched: Mahindra Lifespace (Q2 update), and Gulf Oil, InfoBeans and Cartrade (results reviewed). Reserve names carry no triggers, and nothing moved their FY30 profit, so nothing changed.
+
+## 1 November 2026 (Sunday)
+
+**Checks:** the notes check lists the same 30 problems as before this run, all "company in the sector with no verdict" (the newly listed companies that still need sections, plus Horizon Industrial Parks and Monolithisch India, which have cards but no note section). They were on master already, so they did not block the push. The typecheck is clean and no capacity picture is out of date or in error. No weekly-review branch was waiting: both older ones are fully merged.
+
+**Follow-ups handled: 40 (the limit). Still open: 125.** 69 are the recently listed companies with no note section and 24 are capacity-picture date fixes (both already Needs-a-session items). 12 are project follow-ups: three left from before (Lumax's Manesar plant, Ather's expansion, E2E's GPU capacity) and nine I raised today from this week's filings, because each needs its project, milestone and picture redrawn (Quality Power, Madhya Bharat, Aarti Industries, Studds, Narayana, Shyam Metalics, OBSC, Venus Pipes and Atlanta Electricals). 7 are big holder changes. 6 are results calls still waiting for transcripts: ICICI Bank, Sobha, CIE Automotive, Ador Welding and Cyient (still not filed), and Monolithisch (filed only on NSE, which this session cannot reach). 4 are waiting entries (checked, nothing new), 2 are demergers (HEG's electrode company not yet on the dashboard; SKF India's Q2 not yet filed) and 1 is a price-drift review (Rishabh Instruments).
+
+**Calls changed:** none. Every company reviewed today keeps its call; the reasons are below.
+
+**New results calls (transcripts read):**
+- **Dynamic Cables** (stays own; Top 12). Revenue rose 29%, but almost all of it was aluminium price: volume grew only about 6%. The margin slipped to 10% on the order mix (guide still 10–11%), the order book edged up to ₹829cr (checkpoint met), and US shipments stalled on freight and insurance costs. The new plant should add about ₹240–250cr of sales over three to four quarters. **Top 12:** all three Q2 checks were missed (plant not producing, volume +6%, order book under ₹850cr, margin under 10.5%), but no trigger was hit, and the smaller plant figure barely moves FY30 profit, so the numbers stay; I rolled the checks to Q3.
+- **Sagility** (stays own). The adjusted margin rose to 26.3% with the full wage hit (checkpoint met) and the FY27 margin guide went up to 25–26%. Organic growth slowed to 11.9%, it now has about ₹113cr of net cash, and it bought Chirok Health for $20m.
+- **Newgen Software** (stays own, only just). Revenue grew 5.4% as Indian licence deals slipped; debtor days barely moved to 144; the double-digit FY27 target now needs a much stronger second half. No ARR figure again (checkpoint missed).
+- **Tinna Rubber** (stays follow). Revenue +31%, profit +45%, ₹700cr FY27 guide kept, pyrolysis oil began selling (checkpoint met), and recycling-credit income fell to about ₹4.6cr in Q2. South Africa's crumb line is 3–4 months late. Projects, capacity and picture updated.
+- **Kajaria Ceramics** (stays follow). Volume grew 10% as promised (checkpoint met) with a 19.5% margin. The board raised the two new lines' cost to ₹520cr (from about ₹375cr) and Srikalahasti's size to 12.5 million sq m; it now starts by end-June 2027. I recorded the revisions, added the ₹34cr Durgapur adhesive plant, and redrew the picture.
+- **Horizon Industrial Parks** (card says follow). Revenue +30% and its first reported profit (₹14cr), but only thanks to ₹39cr of other income. Net debt fell to ₹2,765cr and leasing is on track.
+- **TruAlt Bioenergy** (stays wait). Q2 volume was 10.8 crore litres against 11 planned (partly met). Dear maize cut the margin to 14%, and H1 operating cash turned positive at ₹192cr. The promoters pledged more shares to buy more (checkpoint missed). The MD confirmed the new tender bars cane juice and B-heavy molasses; the maize price is still only in press reports, so that waiting entry stays open.
+- **Swiggy** (stays wait). Instamart order value grew 13.4% on the quarter, but the net loss widened from Q1 to ₹922cr. Management guides a 1-point better adjusted margin in Q3; I added a checkpoint for it.
+- **Netweb** (stays wait). Revenue rose 4.4 times at a 14.9% margin (checkpoint met), and the ₹1,200cr share sale left ₹14cr of net cash. But stock rose to 117 days (checkpoint missed), and most of the strategic order has now been delivered.
+- **SG Mart** (stays wait). Operating profit ₹72cr; the ₹300cr FY27 guide holds. Solar is only about 11,000 tonnes a quarter (checkpoint missed).
+- **Aequs** (stays wait). Aerospace grew 44%, but consumer use fell to 17% and management withdrew the Q4 FY27 break-even target, with no new date. Net debt is now 0.5 times equity and capex is being cut.
+- **Jupiter Life Line** (stays wait). Dombivli's loss shrank to ₹0.2cr on seasonal admissions, but occupancy is only in the mid-30s (partly met).
+- **Indoco** (stays pass). Revenue passed ₹500cr a quarter. The FDA re-inspection of Goa ended with seven observations; the earliest verdict is early December (partly met; new checkpoint).
+- **Monolithisch India** (card says pass): its two Q2 checkpoints were weighed from the filed results (revenue ₹54cr against ₹55–60cr, partly met; margin about 30%, met).
+- **Chembond** (stays wait; first investor meet, 24 Oct): H1 revenue rose 32%, but Q2 operating profit fell to ₹8.4cr on input costs, and the chairman gives no date for a recovery.
+
+**Shareholding:**
+- **EPL** (own; Top 12): Blackstone's Epsilon sold its last 26.4% in the open market in September, so EPL has no promoter until the Indovida merger. I corrected the card, which still showed Blackstone. No trigger was hit.
+- **Eureka Forbes**: the jump is Advent's pledge top-up. 81.5% of the promoter's stake (51% of the company) is now pledged; I corrected the note's wrong 57% figure.
+- **AXISCADES**: Jupiter Capital's 10.86% sale, already in the note.
+- **United Heat Transfer**: dilution from the October share issue to 17 investors at ₹105.50.
+
+**Price drift:** 16 companies whose price now fits keep their calls, each with a dated reason in its note. Yash Highvoltage, Aditya Vision and Asian Energy fail the cash test for own. Vardhman's volume is capped and it still has equity to raise. Stylam had a flat Q2. Brigade's pre-sales are still falling. Arvind Fashions' stock is still rising. Capillary: KPMG confirmed the €3.04m fraud and cleared its systems. **Sakar Healthcare** reached its ₹85–90cr revenue target a quarter early, and one more such quarter would move it back to follow. Punjab Chemicals, Yasho, Shree Refrigrations, Thomas Cook and Jubilant Ingrevia stay wait; Poojaa and Vilas stay pass. Rishabh Instruments is left for the next run.
+
+**Filings pass, 30–31 October** (notes corrected):
+- Granules: the FDA issued 11 observations at Gagillapur, so the warning letter will not lift soon.
+- Skipper: record ₹10,065cr order book and the Sansha Fastener purchase.
+- Smartworks: FY27 growth guide raised to 33–35%.
+- Alembic: venetoclax approved with 180-day exclusivity.
+- Oswal Pumps: ₹236cr MSEDCL order.
+- Rubicon (Top 12 reserve): five observations at Ambernath.
+- OneSource: Bengaluru site cleared (EIR).
+- Marathon: buying Adani's 60% of Monte South for ₹335cr.
+- Shankara Buildpro: founder and MD Sukumar Srinivas died on 30 October; management record and card updated.
+- Plant starts and new capex: nine follow-ups raised (above).
+- **Logged only:** NCC's ₹1,862cr of orders. Rating upgrades at Apollo Pipes, Rolex Rings, Borosil Renewables and Juniper. Tax demands dropped at Rallis (₹408cr) and SMS Pharma (₹45.6cr). A new ₹112cr tax demand at Bajaj Electricals. Neogen's ₹152cr insurance approval and ₹500cr guarantee. Kross's ₹63.6cr share issue. Gland's new Cenexi head. Zydus's new head of international markets. Shakti's small promoter purchase. Symphony's ₹27cr land sale. Oriental Aromatics' Unilever tie-up. Ramkrishna's rail-wheel investment. eMudhra's KPMG review. Pace Digitek's raised guide. Amanta's COO exit.
+
+**News pass, 30–31 October:** 15 entries had a clear reason, and none was very important. The proposed 12% safeguard duty on flat steel (Goodluck, Man Industries, Sambhv) is only a proposal. The press reports EQT selling 12% of Sagility, but there is no exchange disclosure yet. Tencent left Swiggy. The rest were results-day moves.
+
+**Results pass:** 57 reviewed, and all figures match Screener. **Shriram Pistons** is left for the next run because Screener's search does not find it. I changed five verdicts: **Gem Aromatics** from mixed to behind (the net loss widened to ₹7cr), **Nucleus Software** from mixed to behind (operating profit fell 30%; other income was most of pre-tax profit), **Studds** and **Suraj Estate** from mixed to behind (profit fell 29% and 30%), and **Updater Services** from in line to ahead (profit up 60% against an 8% base case). I corrected one wrong point: Crizac's other income (₹9cr) did not exceed its operating profit (₹35cr). Where it mattered, the reviews add what the points missed: this week's filings (new plants, orders, ratings) and other income that made up a large share of profit (Aditya Birla Lifestyle, Quality Power). None of these entries had an analysed call yet, so no checkpoints were judged from them.
+
+**Top 12:** Dynamic Cables (checks rolled, numbers kept), EPL (Blackstone gone, no trigger hit) and Sharda Cropchem (Q2 sales ₹1,052cr pass the check; the margin is 16% on Screener) were touched, as was the reserve name Rubicon (FDA observations; reserve names carry no triggers). Only Dynamic Cables' text changed.
