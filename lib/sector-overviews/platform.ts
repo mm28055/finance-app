@@ -697,8 +697,8 @@ export const platformCos: SectorOverview = {
         {
             company: 'Swiggy', rank: 6, stance: 'TURNAROUND', segment: CONSUMER,
             what: "One of India's two big food-delivery apps, plus Instamart, which delivers groceries and household goods from about 1,170 small local warehouses within minutes.",
-            view: "**Food profitable, Instamart losing ground.** Food delivery earns 3.1% of order value and the company holds ₹14,367cr of cash. But Instamart lost 9.8% of order value, grew 3% on the quarter against Blinkit's much faster growth, and management reversed its May promises and lost the Instamart chief within 90 days. It still loses money, so I have no estimate.",
-            watch: 'Cash break-even within two quarters, as targeted; Instamart order value growing 10%+ a quarter inside a −1% margin; the gig-levy rate.',
+            view: "**Food profitable, Instamart losing ground.** Food delivery earns 3.1% of order value and the company holds ₹14,367cr of cash. But Instamart lost 9.8% of order value, grew 3% on the quarter against Blinkit's much faster growth, and management reversed its May promises and lost the Instamart chief within 90 days. It still loses money, so I have no estimate. 1 Nov 2026: stays wait after the Q2 call. Revenue rose 36% and the net loss narrowed to ₹922cr from ₹1,092cr a year ago, but it widened from Q1. Instamart order value grew 13.4% on the quarter as promised, with management keeping its 0 to −1% contribution range and guiding double-digit growth again in Q3; the food guide of 18–20% holds while its cheap-food app Toing is still on trial for another quarter or two.",
+            watch: 'Cash break-even, targeted by Q3 FY27; the adjusted operating margin improving about 1 point in Q3, as guided; Instamart order value growing 10%+ a quarter inside a −1% margin; the gig-levy rate.',
         },
         {
             company: 'Urban Company', rank: 7, stance: 'TURNAROUND', segment: CONSUMER,
