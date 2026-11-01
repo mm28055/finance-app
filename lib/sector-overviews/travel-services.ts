@@ -526,7 +526,7 @@ export const travelServices: SectorOverview = {
         {
             company: 'Thomas Cook India', rank: 2, stance: 'TURNAROUND', segment: FULL,
             what: "Foreign exchange, corporate travel and events, holidays (Thomas Cook, SOTC), Sterling Holidays resorts (to be demerged) and an overseas souvenir-photo business; controlled by Fairfax.",
-            view: "**Two good franchises inside a thin, Gulf-exposed travel business.** Forex earns 45% and Sterling had its best quarter, but travel earned 2.4%, DEI lost ₹15.2cr and FY27 guidance was withdrawn; CRISIL expects revenue to fall 2–5%. The annual report shows 47 unaudited subsidiaries, disputed resort titles and ₹382cr of contingent claims. The price needs about {need:Thomas Cook India|14}% a year against my ~10%.",
+            view: "**Two good franchises inside a thin, Gulf-exposed travel business.** Forex earns 45% and Sterling had its best quarter, but travel earned 2.4%, DEI lost ₹15.2cr and FY27 guidance was withdrawn; CRISIL expects revenue to fall 2–5%. The annual report shows 47 unaudited subsidiaries, disputed resort titles and ₹382cr of contingent claims. The price needs about {need:Thomas Cook India|14}% a year against my ~10%. 1 Nov 2026: the price now reads {label:Thomas Cook India|fits} after a 19% fall, but it stays wait: guidance is still withdrawn, the Gulf businesses have not been shown back in profit, and there are no new filings.",
             watch: 'DEI and Desert Adventures back to profit in Q2–Q3; the Sterling demerger approved by NCLT; travel margin back to 4%.',
         },
         {
