@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -1519,7 +1519,10 @@
    "target": 24,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "22.5%",
+   "resolvedOn": "2026-11-02",
+   "resolvedBy": "auto"
   },
   {
    "id": "sona-blw-precision-q4fy27-1",
@@ -3965,7 +3968,10 @@
    ],
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "7.7%",
+   "resolvedOn": "2026-11-02",
+   "resolvedBy": "auto"
   },
   {
    "id": "tata-chemicals-q2fy27-1",
@@ -5444,7 +5450,10 @@
    "target": 0,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹20cr",
+   "resolvedOn": "2026-11-02",
+   "resolvedBy": "auto"
   },
   {
    "id": "wework-india-q4fy27-1",
@@ -12738,7 +12747,10 @@
    "target": 16.2,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "16.7%",
+   "resolvedOn": "2026-11-02",
+   "resolvedBy": "auto"
   },
   {
    "id": "macpower-cnc-q3fy27-1",
@@ -19497,7 +19509,10 @@
    "target": 10,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "9.7%",
+   "resolvedOn": "2026-11-02",
+   "resolvedBy": "auto"
   },
   {
    "id": "indiamart-intermesh-q2fy27-2",

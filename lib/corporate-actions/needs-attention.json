@@ -3955,5 +3955,180 @@
     "subject": "Projects: subsidiary approved ₹193.58cr capex for a new facility (31 Oct 2026)",
     "why": "Filing of 2026-10-31: Wholly-owned subsidiary AE Components Pvt Ltd has approved a capital expenditure of ₹193.58 crore to set up a new manufacturing plant for transformer tanks and radiators. The project aims at backward integration, targets completion within one year, and represents a notable investment at nearly 10% of the company's annual sales. Move the matching project's status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 1 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/ATLANTAIPO123_31102026172134_Approval_of_Capex_AE_Components_31102026.pdf",
     "addedOn": "2026-11-01"
+  },
+  {
+    "company": "Sterlite Technologies",
+    "sector": "Cables",
+    "subject": "Call drift: pass → Fits",
+    "why": "Call is pass; the price check has moved from stretched to fits since the note. Revisit the call.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Indigo Paints",
+    "sector": "Consumer Durables",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "KRN Heat Exchan",
+    "sector": "Industrials",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from stretched to fits since the note. Revisit the call.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "JK Tyre & Indust",
+    "sector": "Tyres",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Macpower CNC",
+    "sector": "Industrial Machinery",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Ather Energy",
+    "sector": "Vehicles",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "WeWork India",
+    "sector": "Commercial Services",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Sumitomo Chemical India",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Steel Strips Wheels",
+    "sector": "Auto Related",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Sunteck Realty",
+    "sector": "Realty",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Raymond Realty",
+    "sector": "Realty",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "InfoBeans Technologies",
+    "sector": "Software",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Manba Finance",
+    "sector": "Finance",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Leap India",
+    "sector": "Logistics",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Indiamart Intermesh",
+    "sector": "Retail",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Shakti Pumps",
+    "sector": "Pumps Comp & Eng",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Gravita India",
+    "sector": "Mining & Metals Recycle",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Supreme Petrochem",
+    "sector": "Chemicals",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Sona BLW Precision",
+    "sector": "Auto Related",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Unimech Aerospace",
+    "sector": "Aerospace defence",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Sona BLW Precision",
+    "sector": "Auto Related",
+    "subject": "Checkpoint missed: sona-blw-precision-q2fy27-1",
+    "why": "Operating margin back above 24% from Q2 FY27, as promised — actual 22.5% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Supreme Petrochem",
+    "sector": "Chemicals",
+    "subject": "Checkpoint missed: supreme-petrochem-q2fy27-3",
+    "why": "Operating margin back to a normal 9–11% — actual 7.7% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "WeWork India",
+    "sector": "Commercial Services",
+    "subject": "Checkpoint met: wework-india-q2fy27-1",
+    "why": "Filed profit after tax turns positive (Q1: loss of ₹4cr) — actual ₹20cr (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Macpower CNC",
+    "sector": "Industrial Machinery",
+    "subject": "Checkpoint met: macpower-cnc-q2fy27-1",
+    "why": "Operating margin rises in Q2 FY27 from Q1's 16.2% (management: margin to rise each quarter) — actual 16.7% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-02"
+  },
+  {
+    "company": "Indiamart Intermesh",
+    "sector": "Retail",
+    "subject": "Checkpoint partly: indiamart-intermesh-q2fy27-1",
+    "why": "Revenue grows in double digits, as guided — actual 9.7% (partly).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-02"
   }
 ]
