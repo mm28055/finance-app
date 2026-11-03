@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -7492,7 +7492,10 @@
    "target": 8,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "1.4%",
+   "resolvedOn": "2026-11-03",
+   "resolvedBy": "auto"
   },
   {
    "id": "bajaj-electricals-q3fy27-1",
@@ -14573,7 +14576,10 @@
    "target": 23,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "24.2%",
+   "resolvedOn": "2026-11-03",
+   "resolvedBy": "auto"
   },
   {
    "id": "aeroflex-industries-q4fy27-1",
@@ -15643,7 +15649,10 @@
    "target": 18,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "12.5%",
+   "resolvedOn": "2026-11-03",
+   "resolvedBy": "auto"
   },
   {
    "id": "knack-packaging-q2fy27-2",
@@ -15751,7 +15760,10 @@
    "target": 8,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "7.8%",
+   "resolvedOn": "2026-11-03",
+   "resolvedBy": "auto"
   },
   {
    "id": "huhtamaki-india-q3fy27-1",
@@ -20043,7 +20055,10 @@
    "due": "Q2 FY27",
    "ifMissed": "View turns worse (margin below 12% is a named downgrade trigger)",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "11.6%",
+   "resolvedOn": "2026-11-03",
+   "resolvedBy": "auto"
   },
   {
    "id": "apcotex-inds-q4fy27-1",
