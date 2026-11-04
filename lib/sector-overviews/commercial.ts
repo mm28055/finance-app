@@ -575,7 +575,7 @@ export const commercialServices: SectorOverview = {
                         ['Awfis Space Solutions', 'Revenue above ₹1,800cr (cut from +25–27%); cash EBITDA ₹190–200cr', '₹200–210cr', '**Missed**: guide cut; mature occupancy down'],
                         ['Krystal Integrated Services', 'Revenue “upwards of 20%”', 'Little; ₹29cr guest house', '**Missed**: FY26 +5%; Q1 +12%'],
                         ['Updater Services', 'None formal; “9–12%”', 'Little', '**Mixed**: growth met; acquisition on hold'],
-                        ['WeWork India', 'Revenue and EBITDA above 20%; margin 19–20%', '₹500–600cr', '**Slipping**: revenue beat; 7,000 desks against 14,000'],
+                        ['WeWork India', 'Revenue and EBITDA above 20%; margin 20–23% next year (Q2 call); 1.50–1.55 lakh desks by March 2027', '₹500–600cr', '**Beat** (Q2 call): 22,900 desks added since April against 22,000; margin 21.2%; net cash'],
                         ['Indiqube Spaces', 'Revenue +25–30%; ~2m sq ft a year', 'Fit-outs; solar cut to ₹100–120cr', '**Missed**: no area added; cash flow withheld'],
                         ['Smartworks Coworking', 'Revenue +28–30%; margin 19–20%', '₹550–600cr (raised)', '**On track**: revenue +44%; cash conversion 0.9x'],
                     ],
@@ -720,8 +720,8 @@ export const commercialServices: SectorOverview = {
         {
             company: 'WeWork India', rank: 12, stance: 'PRICED', segment: SPACE,
             what: "Runs WeWork-branded offices in India under licence (79 centres, about 1.34 lakh desks); promoted by the Embassy group; listed in 2025.",
-            view: "**Strong brand, full price, pledged shares.** Revenue rose 28.5% in Q1, occupancy is 84.9% and its after-rent margin 19.8%, and ICRA upgraded it to A+. But on the filed accounts it lost ₹4cr in Q1, it opened half the desks it promised, and about 15% of its shares are pledged for promoter debt. The price needs about {need:WeWork India|34}% a year against my ~20%.",
-            watch: 'The pledge released without a big block sale; filed profit after tax; renewals of the 53% of leases due in FY27 (ICRA).',
+            view: "**Strong brand, full price, pledged shares.** Revenue rose 28.5% in Q1, occupancy is 84.9% and its after-rent margin 19.8%, and ICRA upgraded it to A+. But on the filed accounts it lost ₹4cr in Q1, it opened half the desks it promised, and about 15% of its shares are pledged for promoter debt. The price needs about {need:WeWork India|34}% a year against my ~20%. **4 Nov 2026:** stays wait after the Q2 call. It opened a record 11,700 desks in Q2 (about 22,900 since April, past the 22,000 target), revenue rose 32%, the after-rent margin rose to 21.2% and filed profit turned positive; it ended September with about ₹23cr of net cash. Management expects 1.50–1.55 lakh desks by March 2027 and a 20–23% margin next year. But the promoter says there is ‘no hurry’ to release the pledge, with three years to repay that debt and no block sale at today's prices.",
+            watch: 'The pledge released without a big block sale (no hurry, says the promoter); after-rent margin holding at 20–23% while new desks fill; renewals of the 53% of leases due in FY27 (ICRA).',
         },
         {
             company: 'Indiqube Spaces', rank: 13, stance: 'TURNAROUND', segment: SPACE,
