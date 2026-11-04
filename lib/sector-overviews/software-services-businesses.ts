@@ -84,7 +84,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'InfoBeans Technologies',
-        inShort: ["**An Indore-based software engineering firm** of about 1,800 people serving 50 large enterprises in the US and Germany, with Salesforce and ServiceNow practices and a push into AI-assisted development.", "**Good:** revenue up 37% in Q1 (about 20% in dollars), return on capital back to 29%, no debt and 94% of clients returning. **Watch:** promoters are selling, its slides count receivables as cash, margins are being stepped down to fund AI and US sales, and it is unhedged, so a rupee recovery would hit it hardest.", "**Verdict: own.** The one company here growing fast in dollars; keep the position small."],
+        inShort: ["**An Indore-based software engineering firm** of about 1,800 people serving 50 large enterprises in the US and Germany, with Salesforce and ServiceNow practices and a push into AI-assisted development.", "**Good:** revenue up 30% in Q2 (22% in dollars, the seventh quarter in a row of 6%+ growth on the quarter), the company-basis margin back at its 24% target, return on capital 29%, no debt and 94% of clients returning. **Watch:** promoters are selling, its slides count receivables as cash, margins are being stepped down to fund AI and US sales, and it is unhedged, so a rupee recovery would hit it hardest.", "**Verdict: own.** The one company here growing fast in dollars; keep the position small."],
         tagline: "A mid-size custom software engineering company from Indore serving large US and German enterprises.",
         revenue: '₹514cr (FY26, consolidated)',
         products: [
@@ -105,7 +105,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Persistent, Coforge and Indian IT majors', note: 'Larger Salesforce, ServiceNow and engineering practices.' }, { name: 'Saksoft, R Systems, Happiest Minds', note: 'Similar-sized rivals for mid-market engineering work.' }],
         position: "**A small, fast-growing Indian engineering exporter** with ₹514cr of FY26 revenue and elite Salesforce and ServiceNow partner status.",
         money: "Screener shows **₹209cr of net cash**; it has only ₹15cr of lease borrowings, and true cash and investments are about ₹230–240cr, although its slides show ₹360cr by adding ₹119cr of receivables. It is buying land for an Indore campus (amount not disclosed). In FY26 it bought back shares and issued a 3:1 bonus. Promoters hold **72.82%**, down from 74.18% three years ago, and may sell or pledge up to 3% until October.",
-        watch: ["Dollar growth holding near 20%.", "The margin heading back towards the company's 24% target.", "Promoter selling stopping after October."],
+        watch: ["Dollar growth holding near 20% (22% in Q2).", "The margin staying near the company's 24% target while it hires US and European sales staff.", "Promoter selling stopping after October."],
         charts: softwareCharts['InfoBeans Technologies'],
     },
     {

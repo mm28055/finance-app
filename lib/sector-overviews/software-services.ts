@@ -616,7 +616,7 @@ export const softwareServices: SectorOverview = {
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
                         ['Zensar Technologies', 'No revenue guidance; margins near Q1 level through Q3, then recovery; Q2 revenue above Q1', 'Small; acquisitions of $150–200M revenue', '**Mixed**: ‘no decline’ met; margin held by a bonus reversal; recovery pushed a quarter'],
-                        ['InfoBeans Technologies', 'No revenue guidance; ‘EBITDA’ 24% and profit 14% targets; double revenue every three years', 'Indore campus land (amount not disclosed)', '**Delivered**: revenue +7.6% from Q4; profit margin met; ‘EBITDA’ 22.6%'],
+                        ['InfoBeans Technologies', 'No revenue guidance; ‘EBITDA’ 24% and profit 14–15% targets; double revenue every three years', 'Indore campus land (amount not disclosed)', '**Delivered** (Q2 call, 30 Oct): revenue +6% from Q1 and +22% in dollars; ‘EBITDA’ back to 24%; profit margin 16%'],
                         ['Mastek', 'FY27 better than FY26; no margin guidance; wage rise and ESOP cost from Q2', 'Negligible; small AI stakes and acquisitions', '**Missed**: 15.4% against 16% in Q1 and 14.4% in Q2; FCA, North America and the US federal deal pushed out; 12-month backlog −7.7% in Q2'],
                         ['Birlasoft', 'FY27 margin ‘at or about 15% or slightly better’; tax 29–30%; no negative quarters', 'Negligible; sales hires through the P&L', '**Beat**: margin 16.1%; first positive quarter; sellers not yet added'],
                         ['R Systems International', 'Adjusted EBITDA 18–19% (raised from 17%+); no revenue guidance', 'Negligible', '**Delivered**: 20.1%, mostly from the rupee; organic flat'],
@@ -711,8 +711,8 @@ export const softwareServices: SectorOverview = {
         {
             company: 'InfoBeans Technologies', rank: 2, stance: 'SCALEUP', segment: SERV,
             what: "An Indore-based software engineering firm of about 1,800 people serving 50 large enterprises in the US and Germany, with Salesforce and ServiceNow practices and a push into AI-assisted development.",
-            view: "**The one company here growing fast in dollars; own a small position.** Revenue rose 37% in Q1 (about 20% in dollars), return on capital is 29% and it has no debt. But a third of the rupee growth is currency, it is unhedged, margins are stepping down to fund AI and US sales, promoters are selling, and its slides count receivables as cash. The price needs about {need:InfoBeans Technologies|11}% a year against my ~15%.",
-            watch: 'Dollar growth holding near 20%; the company-basis margin back towards 24% by H2; promoter sales stopping after October.',
+            view: "**The one company here growing fast in dollars; own a small position.** Revenue rose 37% in Q1 (about 20% in dollars), return on capital is 29% and it has no debt. But a third of the rupee growth is currency, it is unhedged, margins are stepping down to fund AI and US sales, promoters are selling, and its slides count receivables as cash. The price needs about {need:InfoBeans Technologies|11}% a year against my ~15%. **4 Nov 2026:** stays own after the Q2 call. Revenue rose 30% (22% in dollars and 6% on the quarter, the seventh such quarter in a row), the company-basis margin came back to its 24% target and profit rose 21% on the quarter to ₹26cr. It is now an Anthropic Claude services partner. Its US arm lent co-founder Mitesh Bohra about ₹8cr under a staff-loan policy; he repaid it within 3–4 months.",
+            watch: 'Dollar growth holding near 20%; the margin staying near 24% while sales hiring goes on; promoter sales stopping after October.',
         },
         {
             company: 'Mastek', rank: 3, stance: 'SCALEUP', segment: SERV,
