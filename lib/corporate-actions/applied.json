@@ -57,5 +57,15 @@
     "kind": "split",
     "appliedOn": "2026-10-22",
     "factor": 10
+  },
+  {
+    "isin": "INE338H01029",
+    "symbol": "CONCORDBIO",
+    "subject": "Bonus 1:1",
+    "exDate": "04-Nov-2026",
+    "company": "Concord Biotech",
+    "kind": "bonus",
+    "appliedOn": "2026-11-04",
+    "factor": 2
   }
 ]

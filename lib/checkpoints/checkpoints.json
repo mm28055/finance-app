@@ -1350,7 +1350,10 @@
    "ifMet": "Buy (if debt is also flat)",
    "ifMissed": "Stay follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "8.2%",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "auto"
   },
   {
    "id": "lumax-industries-q2fy27-2",
@@ -3123,7 +3126,10 @@
    "target": 20,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "18.7%",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "auto"
   },
   {
    "id": "timken-india-q3fy27-1",
@@ -4362,7 +4368,10 @@
    "due": "Q2 FY27",
    "ifMissed": "Stay wait",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "21.0%",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "auto"
   },
   {
    "id": "yasho-industries-q2fy27-2",
@@ -6295,7 +6304,10 @@
    "target": 1000,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "₹788cr",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "auto"
   },
   {
    "id": "gk-energy-q2fy27-2",
@@ -6307,7 +6319,10 @@
    "target": 12,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "17.6%",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "auto"
   },
   {
    "id": "gk-energy-q4fy27-1",
@@ -13490,7 +13505,10 @@
    "target": 7,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "6.1%",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "auto"
   },
   {
    "id": "hpl-electric-q3fy27-1",
@@ -14722,7 +14740,10 @@
    "target": 38,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "56.6%",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "auto"
   },
   {
    "id": "shadowfax-tech-q4fy27-1",
@@ -17238,7 +17259,10 @@
    "due": "Q2 FY27",
    "ifMet": "View changes for the better (with pay tied to profit)",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹3cr",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "auto"
   },
   {
    "id": "zota-health-care-q4fy27-1",
@@ -17669,7 +17693,10 @@
    "target": 20,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "17.7%",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "auto"
   },
   {
    "id": "jagsonpal-pharma-q2fy27-2",

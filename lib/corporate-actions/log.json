@@ -118,5 +118,13 @@
     "old": null,
     "new": "INE28SO01013",
     "source": "name match \"Bonfiglioli Transmissions Limited\""
+  },
+  {
+    "date": "2026-11-04T19:57:48.157Z",
+    "company": "Concord Biotech",
+    "field": "targetPrice",
+    "old": "1300",
+    "new": "650",
+    "source": "Bonus 1:1 (ex 04-Nov-2026), ÷2"
   }
 ]
