@@ -89,7 +89,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Indiamart Intermesh',
-        inShort: ["**India's largest online marketplace for business buyers and suppliers**: about 2.18 lakh mostly small suppliers pay yearly subscriptions to be found by 41m buyers, who use it free.", "**Good:** customers pay in advance, a 30% margin, no debt and ₹3,553cr of cash and treasury. **Bad:** paying suppliers have not grown for a year (1,852 lost in Q1, when a recovery was expected), buyer enquiries fell 11% in Q1, and AI answers on Google threaten its free traffic.", "**Verdict: follow.** A cash machine whose engine has stalled; the price needs slightly more growth than I expect."],
+        inShort: ["**India's largest online marketplace for business buyers and suppliers**: about 2.18 lakh mostly small suppliers pay yearly subscriptions to be found by 41m buyers, who use it free.", "**Good:** customers pay in advance, a 30% margin, no debt and ₹3,553cr of cash and treasury. **Bad:** paying suppliers have not grown for over a year (1,852 lost in Q1 and 615 in Q2, when a recovery was expected), buyer enquiries keep falling, and AI answers on Google threaten its free traffic.", "**Verdict: follow.** A cash machine whose engine has stalled; the price needs slightly more growth than I expect."],
         tagline: "India's largest business-to-business listings marketplace, earning subscription fees from small suppliers, with Busy accounting software on the side.",
         revenue: '₹1,569cr (FY26, consolidated)',
         products: [
@@ -111,7 +111,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Google and AI answer engines', note: 'Not listings rivals, but they control its free traffic; AI answers push its links below the first screen on phones.' }, { name: 'Amazon Business, Moglix, OfBusiness and Udaan', note: 'They buy and sell or handle the transaction, rather than charging suppliers for leads.' }, { name: 'Tally and other accounting software', note: "Busy's rivals; Livekeeping is a mobile add-on for Tally users." }],
         position: "**India's largest online B2B marketplace**: about 50 lakh of India's 1.6 crore GST-registered businesses are registered on it.",
         money: "Screener shows **₹3,860cr of net cash**; the company put cash and treasury at ₹3,553cr in June 2026, against a market value of {mcap:Indiamart Intermesh|₹9,700cr}. There is no debt beyond ₹23cr of leases and almost no capex (free cash ₹687cr in FY26). It pays out 40–60% of cash generated: ₹60 a share for FY26, including a ₹30 special. The ₹750cr of start-up stakes needed a ₹16cr write-down in FY26. Promoters hold **49.1%**, roughly unchanged since 2023; no pledge.",
-        watch: ["Two quarters of positive net supplier additions.", "Buyer enquiries stabilising as AI search spreads.", "Collections growth staying above 8%."],
+        watch: ["Net supplier additions turning positive (−615 in Q2 FY27).", "Buyer enquiries stabilising as AI search spreads.", "Collections growth staying above 8%."],
         charts: retailCharts['Indiamart Intermesh'],
     },
     {

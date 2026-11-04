@@ -700,7 +700,7 @@ export const retail: SectorOverview = {
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
                         ['V2 Retail', 'Revenue +50% or more; 170–200 stores; same-store 8–10%; gross margin 29–30%', '~₹1.2cr a store plus stock', '**On track**: +58%, 56 stores; same-store and gross margin just under range'],
-                        ['Indiamart Intermesh', '‘Double-digit growth’; no supplier guidance', 'Negligible; investments instead', '**Mixed**: revenue +11%; collections +8%; suppliers −1,852'],
+                        ['Indiamart Intermesh', '‘Double-digit growth’; no supplier guidance', 'Negligible; investments instead', '**Mixed** (Q2 call): revenue +10%; collections +9%; suppliers −615 after −1,852 in Q1'],
                         ['Aditya Birla Lifesty', 'Double-digit revenue; same-store ~7%; 300+ gross stores, 150–200 net', '₹250–300cr', '**Delivered**: +11%, same-store 8%; stores back-ended'],
                         ['V-Mart Retail', '90+ gross stores; same-store mid-to-high single digit; weaker Q2', '₹170–180cr', '**Kept**: same-store 9%; Q2 warning'],
                         ['Aditya Vision', 'Margin 8–10%; more than 30 stores in four states', '₹80–90 lakh a store plus stock', '**Beat**: +27%, 10.4%; 3 stores so far'],
@@ -800,8 +800,8 @@ export const retail: SectorOverview = {
         {
             company: 'Indiamart Intermesh', rank: 2, stance: 'HARVEST', segment: B2B,
             what: "India's largest online directory of business suppliers: about 2.18 lakh small firms pay yearly subscriptions to reach 41 million buyers; also owns Busy accounting software.",
-            view: "**A cash machine whose engine has stalled.** It has ₹3,553cr of cash and treasury, no debt, a 30–32% margin and customers who prepay. But paying suppliers have been flat for a year, buyer enquiries fell 11%, collections grew 8%, and about 30% of pre-tax profit is treasury income; AI search is an open question. The price needs about {need:Indiamart Intermesh|13}% a year against my ~10%.",
-            watch: 'Two quarters of positive net supplier additions; buyer enquiries stabilising; collections growth staying above 8%.',
+            view: "**A cash machine whose engine has stalled.** It has ₹3,553cr of cash and treasury, no debt, a 30–32% margin and customers who prepay. But paying suppliers have been flat for a year, buyer enquiries fell 11%, collections grew 8%, and about 30% of pre-tax profit is treasury income; AI search is an open question. The price needs about {need:Indiamart Intermesh|13}% a year against my ~10%. **4 Nov 2026:** stays follow after the Q2 call. Revenue rose 10% to ₹429cr, collections 9% and deferred revenue 16%, and the company-basis margin reached 37%. But paying suppliers fell again, by 615 to about 2.17 lakh, on churn among the cheapest (Silver) plans, and management accepts losing 10–20% of search traffic as it keeps data behind a login against AI scrapers. Other income was −₹8cr on bond losses it expects to reverse.",
+            watch: 'Net supplier additions turning positive (−615 in Q2); buyer enquiries stabilising as AI search spreads; collections growth staying above 8%.',
         },
         {
             company: 'Aditya Birla Lifesty', rank: 3, stance: 'SCALEUP', segment: FASHION,
