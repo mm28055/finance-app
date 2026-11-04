@@ -624,7 +624,7 @@ export const softwareProducts: SectorOverview = {
                         ['RateGain Travel Tech', 'Revenue ~₹3,100cr; adjusted margin 22.5–23.5% (raised); debt-free by FY28', 'Small; loan repayment first', '**Beat**: organic 17.5%, margin raised'],
                         ['Capillary Technologies', 'Beat ₹1,065cr revenue and ₹172cr adjusted EBITDA (kept); new contract value +30–40%', 'Development ~5% of revenue; tuck-ins', '**Beat**: margin 17.2%; fraud loss'],
                         ['Aurionpro Solutions', 'None; Q2 ‘pickup’, Q3–Q4 ‘much more significant’', 'Development ₹150–200cr over four quarters', '**Missed**: margin 17%; revenue +6%'],
-                        ['Unicomm. eSolutions', 'Uniware 15%+ and Shipway 20%+ from Q4; Shipway breakeven Q3', 'Opex investment, front-loaded in H1', '**Delivered**: double-digit growth; FY27 profit promise dropped'],
+                        ['Unicomm. eSolutions', 'Uniware 15%+ and Shipway 20%+ from Q4; Shipway breakeven Q3', 'Opex investment, front-loaded in H1', '**Mixed** (Q2 call): revenue +15%; adjusted margin 17% against 22% a year ago; Shipway break-even still promised for Q3'],
                         ['Protean eGov', 'None; margins to ‘stabilize from Q2 or Q3’', 'Aadhaar-centre fit-outs; cloud', '**Missed**: profit −75%'],
                         ['Zaggle Prepaid', 'Consolidated ~40%, standalone ~25% (was 25–30%); 14–15% margin in 5–7 years (was 5)', 'Less capitalisation; Dice ₹68cr', '**Behind**: +28%, standalone +18%'],
                         ['Nucleus Software', 'None', 'Sales hires and R&D through the P&L', '**Missed**: revenue −3.4%, margin 3.6%'],
@@ -736,8 +736,8 @@ export const softwareProducts: SectorOverview = {
         {
             company: 'Unicomm. eSolutions', rank: 6, stance: 'PRICED', segment: SAAS,
             what: "Unicommerce, a Gurugram-based e-commerce operations company: Uniware order and warehouse software (1,228 enterprise clients), the Shipway courier aggregator and ConvertWay marketing tools; part of the AceVector (Snapdeal) group.",
-            view: "**A strong core wrapped in a weak add-on.** Uniware grew 12.8% at a 35.3% company-adjusted margin, debtor days are 20 and cash is ₹92.6cr with no debt. But Shipway is low-margin and not sticky, the group's filed margin fell to 10.6%, related-party subcontracting to AceVector rose 303%, and the promise of higher FY27 profit was dropped. The price needs about {need:Unicomm. eSolutions|23}% a year against my ~18%.",
-            watch: 'Shipway breakeven in Q3; Uniware growth reaching 15% by Q4; group adjusted margin back above 20% in H2.',
+            view: "**A strong core wrapped in a weak add-on.** Uniware grew 12.8% at a 35.3% company-adjusted margin, debtor days are 20 and cash is ₹92.6cr with no debt. But Shipway is low-margin and not sticky, the group's filed margin fell to 10.6%, related-party subcontracting to AceVector rose 303%, and the promise of higher FY27 profit was dropped. The price needs about {need:Unicomm. eSolutions|23}% a year against my ~18%. **4 Nov 2026:** stays wait after the Q2 call. Revenue rose 15% to ₹59cr, Shipway grew about 16% to a ₹100cr yearly run rate, and cash reached ₹104cr. But the company-adjusted margin was 17% (22% a year ago) as it keeps investing; management again promises Shipway break-even in Q3 and profit from Q4, with the group margin improving in H2.",
+            watch: 'Shipway breakeven in Q3 and profit in Q4, as promised again; Uniware growth reaching 15% by Q4; group adjusted margin back above 20% in H2 (17% in Q2).',
         },
         {
             company: 'Protean eGov', rank: 7, stance: 'TURNAROUND', segment: GOV,
