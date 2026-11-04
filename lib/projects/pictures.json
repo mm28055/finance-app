@@ -3876,8 +3876,8 @@
   },
   {
    "company": "Apcotex Inds",
-   "fingerprint": "c3e5cbb6c2d4d974",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "55deb971cc4a7a45",
+   "checkedOn": "2026-11-04",
    "lines": {
     "heading": "How full each line is (Q4 FY26)",
     "items": [
@@ -3893,7 +3893,7 @@
       "name": "Nitrile (glove) latex",
       "size": "tonnage not given",
       "usedPct": 100,
-      "usedLabel": "almost 100% used",
+      "usedLabel": "almost 100% used (close to full, Q2 FY27)",
       "tight": true,
       "tightLabel": "full"
      },
@@ -3908,7 +3908,7 @@
    },
    "adds": [
     {
-     "heading": "What the NBR debottleneck adds (from about April 2027; final date due on the Q3 call)",
+     "heading": "What the NBR debottleneck adds (on track for April 2027, Q2 FY27 call; use ramps up over two to three years)",
      "projectId": "apcotex-inds-nbr",
      "bars": [
       {
@@ -3927,7 +3927,7 @@
     }
    ],
    "money": {
-    "heading": "Money: ₹220cr programme for both projects (about ₹150cr to be borrowed); about 15–20% spent by July",
+    "heading": "Money: ₹220cr programme for both projects (about ₹150cr to be borrowed); about ₹65cr spent by September 2026, ₹155cr to come",
     "items": [
      {
       "name": "NBR debottleneck",
@@ -3945,7 +3945,7 @@
      },
      {
       "name": "Second nitrile-latex phase",
-      "sub": "plan ready, little civil work needed; deferred over new capacity in China and Malaysia",
+      "sub": "plan ready, little civil work needed; still undecided in October 2026 (board wants a couple more quarters of steady margins)",
       "right": "cost not given",
       "status": "on hold",
       "projectId": "apcotex-inds-nitrile-latex-2"
@@ -3959,12 +3959,17 @@
      "text": "About 15–20% of the ₹220cr spent"
     },
     {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "About ₹65cr of the ₹220cr spent by September"
+    },
+    {
      "when": "Q3 FY27",
      "tone": "next",
      "milestones": [
       "apcotex-inds-nbr-m1"
      ],
-     "sub": "Second nitrile-latex phase: decision expected about now (deferred three to four months in July)"
+     "sub": "Second nitrile-latex phase: decision now expected in the next couple of quarters (Q2 FY27 call)"
     },
     {
      "when": "Q1 FY28",
@@ -3973,13 +3978,21 @@
       "apcotex-inds-nbr-m2",
       "apcotex-inds-latex-m1"
      ],
-     "sub": "NBR about April 2027 (was end of FY27 in February, a quarter late); latex a couple of months later, about June"
+     "sub": "NBR on track for April 2027 (was end of FY27 in February, a quarter late); latex had been planned for about June"
+    },
+    {
+     "when": "Q2 FY28",
+     "tone": "later",
+     "milestones": [
+      "apcotex-inds-latex-m2"
+     ],
+     "sub": "Management changed this on 29 Oct 2026: synthetic latex may now start a quarter after NBR"
     }
    ],
    "notes": [
     "Also synthetic latex and high-styrene rubber plants (tonnages not given)"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note"
+   "source": "Q2 FY27 call (29 Oct 2026), Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Apex Frozen Foods",

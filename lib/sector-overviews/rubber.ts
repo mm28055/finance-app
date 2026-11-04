@@ -409,7 +409,7 @@ export const rubber: SectorOverview = {
                     numericColumns: [2],
                     columns: ['Company', 'What drives it', 'Earnings growth: low / base / high'],
                     rows: [
-                        ['Apcotex Inds', 'New NBR and latex capacity from April–June 2027; margin back to 15–16% from 22%', '7% / **12%** / 17%'],
+                        ['Apcotex Inds', 'New NBR capacity from April 2027 and latex by Q2 FY28; margin between Q2’s 12% and the 15–16% average', '7% / **12%** / 17%'],
                         ['Tinna Rubber', 'Capacity, higher-value products and pyrolysis; credits flat at about ₹29cr', '8% / **15%** / 22%'],
                         ['GRP', 'Reclaim volumes; carbon black approved or not; credits', '0% / **20%** / 35%'],
                     ],
@@ -420,7 +420,7 @@ export const rubber: SectorOverview = {
                     badgeColumn: 3,
                     columns: ['Company', 'Guidance (Q4 call → Q1 call)', 'Capex', 'Track record'],
                     rows: [
-                        ['Apcotex Inds', 'Q4: FY27 margin above FY26’s average, volume up low double digits. Q1: 15–16% average margin, FY27 volume may not grow, about ₹600cr of added revenue', '₹220cr (about ₹150cr borrowed); NBR about April 2027, latex about June 2027, a quarter later than February’s plan', '**Beat** on margin (22% against 12%); volume fell 10–12%'],
+                        ['Apcotex Inds', 'Q4: FY27 margin above FY26’s average, volume up low double digits. Q1: 15–16% average margin, FY27 volume may not grow, about ₹600cr of added revenue', '₹220cr (about ₹150cr borrowed; about ₹65cr spent by September); NBR on track for April 2027, latex now perhaps Q2 FY28 (was about June 2027)', '**Mixed** (Q2 call): volume +7% and exports back, but margin 11.7% (about 1.5 points of stock loss) against 15–16%'],
                         ['Tinna Rubber', 'Q4: FY27 revenue up 20–25%, margin about 18%. Q1: ₹670–700cr, “18% plus” (also “18–20%”); ₹1,000cr by FY29', 'About ₹100cr over FY27–FY28, ₹27cr spent in Q1; up to ₹20cr of debt', '**Mixed**: margin 22% (about 18% without credits); revenue +20% trails the guide; three projects late'],
                         ['GRP', 'Q4: no numbers; margins to recover; carbon black in H2; pyrolysis credits by H1. Q1: FY27 revenue +20%-plus; reclaim margin 10–14%; Pyrova ₹250–300cr at maturity', '₹90–100cr in FY27 within a ₹250cr plan; about ₹100cr still uncommitted', '**Mixed**: margin back to 11%; carbon black 4–8 months late; credit and reclaim-line promises not updated'],
                     ],
@@ -495,8 +495,8 @@ export const rubber: SectorOverview = {
         {
             company: 'Apcotex Inds', rank: 1, stance: 'COMPOUNDER', segment: SYNTH,
             what: "India's only maker of nitrile rubber (NBR), nitrile latex and high-styrene rubber, and a large maker of synthetic latex for paper, carpets, construction, tyre cord and gloves.",
-            view: "**The only local NBR maker, with the cleanest books in the group.** Q1 FY27's 22% margin was a windfall (rivals shut, about 2 points of stock gains); management expects 15–16% on average, and FY27 volume may not grow after Q1's 10–12% fall. A ₹220cr expansion, about ₹150cr of it borrowed, nearly doubles NBR from about April 2027 and should add about ₹600cr of revenue, while net cash (₹67cr at March) and an AA- rating leave room. The price needs about {need:Apcotex Inds|13}% a year against my ~12%.",
-            watch: 'The NBR start date confirmed on the Q3 call; margins settling at 15–16% as crude and stock gains unwind; the second nitrile-latex expansion decision.',
+            view: "**The only local NBR maker, with the cleanest books in the group.** Q1 FY27's 22% margin was a windfall (rivals shut, about 2 points of stock gains); management expects 15–16% on average, and FY27 volume may not grow after Q1's 10–12% fall. A ₹220cr expansion, about ₹150cr of it borrowed, nearly doubles NBR from about April 2027 and should add about ₹600cr of revenue, while net cash (₹67cr at March) and an AA- rating leave room. The price needs about {need:Apcotex Inds|13}% a year against my ~12%. **4 Nov 2026:** stays own after the Q2 call. Revenue rose 48% and volume 7% as exports came back, but the margin fell to about 12% (11.7%), of which about 1.5 points was a stock loss as prices dipped in July–August; management would like about 15% but is putting volume and return on capital first. NBR is on track for April 2027; the latex plant may slip to Q2 FY28. About ₹65cr of the ₹220cr is spent and the company is still net cash.",
+            watch: 'Margin recovering from 12% towards 15% as October price rises pass through; NBR starting in April 2027 and latex by Q2 FY28; the second nitrile-latex decision (next couple of quarters).',
         },
         {
             company: 'Tinna Rubber', rank: 2, stance: 'SCALEUP', segment: RECYCLE,

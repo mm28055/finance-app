@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28",
+ "updated": "2026-11-04",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -12249,8 +12249,8 @@
    "expectedStart": "Q1 FY28",
    "adds": "with the latex expansion, about ₹600cr of extra sales",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026); was end of FY27 in February, so a quarter late",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (29 Oct 2026): on track for April 2027, use to ramp up over two to three years; Q1 FY27 call (Jul 2026) had moved it from end of FY27",
+   "updatedOn": "2026-11-04",
    "capacityAdd": "About +21,000 t a year of NBR (nearly doubles the 21,000 t plant); with the latex project, about ₹600cr of extra sales (about 40% more throughput)"
   },
   {
@@ -12263,9 +12263,15 @@
    "expectedStart": "Q1 FY28",
    "adds": "shares the ₹600cr extra-sales target with NBR",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "New synthetic latex capacity (tonnage not given); shares the ₹600cr extra-sales target with NBR"
+   "source": "Q2 FY27 call (29 Oct 2026); Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-11-04",
+   "capacityAdd": "New synthetic latex capacity (tonnage not given); shares the ₹600cr extra-sales target with NBR",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call (29 Oct 2026): the Valia synthetic (SBR) latex plant may now start in Q2 FY28, a quarter after NBR (was about June 2027)"
+    }
+   ]
   },
   {
    "id": "apcotex-inds-nitrile-latex-2",
@@ -12274,8 +12280,14 @@
    "name": "Second nitrile-latex expansion",
    "what": "Phase two of nitrile-latex (glove) capacity; plan is ready and needs little civil work, but deferred by another three to four months because of new capacity in China and Malaysia",
    "status": "on hold",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (29 Oct 2026); Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-11-04",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call (29 Oct 2026): the board has still not decided; it wants a couple more quarters of steady margins and expects to decide in the next couple of quarters"
+    }
+   ]
   },
   {
    "id": "tinna-rubber-pyrolysis",
