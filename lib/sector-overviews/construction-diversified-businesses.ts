@@ -278,7 +278,7 @@ const profiles: BusinessProfile[] = [
         "company": "JSW Cement",
         "inShort": [
             "**The JSW Group's cement company and, by its own account, India's largest maker of GGBS**, a cement substitute made from JSW Steel's blast-furnace slag, with plants in the south, west, east and, since early 2026, Rajasthan in the north.",
-            "**Good:** the lowest clinker use in the industry (55%), cheap slag from its parent, volumes up 15% in Q1 FY27 and a clear path to 43.5 MTPA. **Bad:** net debt of ₹3,856cr is at the board's 3-times-EBITDA limit with about ₹7,500cr of capex ahead, return on capital was only 5–11% in recent years, Q1 EBITDA fell 7.5% on fuel costs and a ₹40cr North loss, and it depends on group companies for slag.",
+            "**Good:** the lowest clinker use in the industry (55%), cheap slag from its parent, volumes up 15% in Q1 FY27 and 26% in Q2, the North plant at break-even in Q2 at 75% use, and a clear path to 43.5 MTPA. **Bad:** net debt rose to ₹4,287cr at September, 3.2 times EBITDA and above the board's 3-times limit, with about ₹7,500cr of capex ahead; the Q2 margin fell to 15% as prices dipped early in the quarter; return on capital was only 5–11% in recent years, Q1 EBITDA fell 7.5% on fuel costs and a ₹40cr North loss, and it depends on group companies for slag.",
             "**Verdict: wait.** A sound low-cost model, but about 16 times EBITDA is a full price for 11% returns on capital and a debt-funded build-out; wait for the North to turn profitable and costs to fall."
         ],
         "tagline": "A JSW Group company making cement, GGBS (slag-based cement substitute), ready-mix concrete and construction chemicals, with an operation in Fujairah, UAE.",
@@ -362,8 +362,8 @@ const profiles: BusinessProfile[] = [
         "position": "**India's largest GGBS maker by its own account** and a mid-sized cement company with 24.1 MTPA of capacity, growing toward 43.5 MTPA.",
         "money": "**Net debt was ₹3,856cr at June 2026, 2.95 times EBITDA**, against the board's limit of 3 times; average borrowing cost 7.63%. Borrowings fell from ₹6,563cr to ₹4,464cr in FY26 after the August 2025 IPO and conversion of the preference shares, but about ₹7,500cr of capex is planned. **Free cash flow was negative in four of the last five years** (−₹791cr in FY26) because of capex, though operating cash roughly matches operating profit and suppliers fund the working capital. Reported profit swings: a ₹1,444cr charge on the preference shares in Q1 FY26 and a tax credit in Q4 FY26. Return on capital was 5% in FY25 and 11% in FY26. Promoters hold **72.0%**.",
         "watch": [
-            "The North breaking even from September and fuel costs falling from Q3.",
-            "Net debt staying under 3 times EBITDA as capex rises.",
+            "Costs falling in Q3 and Q4 as Nagaur's waste-heat power, conveyor and extra grinding unit (all commissioned by October) work, and the September–October price rises holding.",
+            "Net debt getting back under the board's 3-times-EBITDA limit (3.2 times at September) as capex rises.",
             "GGBS volumes picking up with infrastructure demand."
         ],
         charts: constructionCharts["JSW Cement"],
