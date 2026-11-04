@@ -493,7 +493,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Jubilant Ingrevia',
-        inShort: ["**A chemicals company with three businesses**: pyridines and chemicals made to order (including a contract, or CDMO, arm for pharma and farm-chemical companies), vitamins and nutrition, and acetyls (bulk chemicals such as acetic anhydride).", "**Good:** a world leader in pyridines, 82% of five years' operating profit turned into cash, and EBITDA +37% in Q1 FY27. **Bad:** most of the jump came from acetyl prices, and its biggest contract customer paused volumes.", "**Verdict: wait.** A fair price for a chemical cycle; I would wait for the big contract's volumes to return."],
+        inShort: ["**A chemicals company with three businesses**: pyridines and chemicals made to order (including a contract, or CDMO, arm for pharma and farm-chemical companies), vitamins and nutrition, and acetyls (bulk chemicals such as acetic anhydride).", "**Good:** a world leader in pyridines, 82% of five years' operating profit turned into cash, and EBITDA +37% in Q1 FY27 and +51% in Q2, with FY27 now guided to the upper end of ₹750–800cr. **Bad:** much of the jump came from acetyl prices, its biggest contract customer paused volumes (a decision is promised within weeks), and it is buying 40% of ZettaOne, an electronics maker far from its chemistry.", "**Verdict: wait.** A fair price for a chemical cycle; I would wait for the big contract's volumes to return."],
         tagline: "An integrated maker of pyridines, vitamin B3 and acetyls, with a growing contract-manufacturing business for pharma and agrochemical companies.",
         revenue: '₹4,388cr (FY26, consolidated)',
         products: [
