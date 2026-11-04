@@ -497,7 +497,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Strides Pharma',
-        inShort: ["**Makes niche generic medicines (soft gels, liquids, slow-release tablets, controlled drugs)** for the US, Europe, Australia and Africa, including from its own US plant.", "**Good:** return on capital recovered to about 18% after a decade that included losses, the margin has held near 18–20%, and sales outside the US grew 17% in Q1. **Bad:** US sales are flat at about $68m a quarter, the US drug agency refused a larger controlled-drug quota, net debt is still about ₹1,500cr, and promoters have pledged 27.3% of their 27.9% holding.", "**Verdict: wait.** Wait for the DEA quota decision and for debt to come down."],
+        inShort: ["**Makes niche generic medicines (soft gels, liquids, slow-release tablets, controlled drugs)** for the US, Europe, Australia and Africa, including from its own US plant.", "**Good:** return on capital recovered to about 18% after a decade that included losses, the margin has held near 18–20%, and sales outside the US grew 17% in Q1. **Bad:** US sales were flat at about $68m a quarter until Q2 FY27 ($73m) and the $375m US target slipped past FY28, the US drug agency refused a larger controlled-drug quota, net debt is still about ₹1,500cr, and promoters have pledged 27.3% of their 27.9% holding.", "**Verdict: wait.** Wait for the DEA quota decision and for debt to come down."],
         tagline: "A maker of niche generic formats for regulated markets, with a US plant, an African brands business and institutional supply for aid-funded programmes.",
         revenue: '₹4,859cr (FY26, consolidated)',
         products: [
@@ -580,7 +580,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sakar Healthcare',
-        inShort: ["**Makes cancer drugs for other drug companies** at an EU-approved plant at Bavla in Gujarat, using 21 cancer-drug ingredients it makes itself, plus an older non-cancer business at Changodar.", "**Good:** the plant is built (management says it can support ₹800–1,000cr of sales with no more capex, against ₹272cr today) and the margin is 29%. **Bad:** growth depends on partners winning tenders and on slow foreign approvals, so sales arrive in lumps.", "**Verdict: wait.** The capacity is real, but revenue has been flat at ₹70–73cr for three quarters; I want to see cancer-drug exports ramp up before the price makes sense."],
+        inShort: ["**Makes cancer drugs for other drug companies** at an EU-approved plant at Bavla in Gujarat, using 21 cancer-drug ingredients it makes itself, plus an older non-cancer business at Changodar.", "**Good:** the plant is built (management says it can support ₹800–1,000cr of sales with no more capex, against ₹272cr today) and the margin is 29%. **Bad:** growth depends on partners winning tenders and on slow foreign approvals, so sales arrive in lumps.", "**Verdict: wait.** The capacity is real and Q2 FY27 revenue jumped to ₹87cr after three flat quarters at ₹70–73cr; I want one more such quarter and cancer-drug exports ramping up before moving it back to follow."],
         tagline: "A contract maker of cancer (cytotoxic) medicines and their active ingredients for Indian and global drug companies, with a legacy non-cancer generics business.",
         revenue: '₹251cr (FY26, consolidated)',
         products: [
