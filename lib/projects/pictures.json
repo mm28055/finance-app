@@ -6764,8 +6764,8 @@
   },
   {
    "company": "Brigade Hotel Ven.",
-   "fingerprint": "566493de62353546",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "ff61a7d88e2c1b04",
+   "checkedOn": "2026-11-04",
    "lines": {
     "heading": "How full the hotels are (Q1 FY27)",
     "items": [
@@ -6823,8 +6823,8 @@
       "name": "1,700-key luxury build-out",
       "sub": "about 60% debt, rest from own cash; ₹500cr to be spent in FY27",
       "total": 3600,
-      "spent": 400,
-      "right": "₹400cr of ₹3,600cr spent by FY26",
+      "spent": 484,
+      "right": "₹484cr of ₹3,600cr spent by September 2026",
       "status": "building",
       "projectId": "brigade-hotel-ven-1700-keys"
      }
@@ -6842,19 +6842,26 @@
      "text": "₹53cr spent in the quarter (about ₹45cr building work, ₹3.5cr renovation, ₹4cr on a new restaurant); the rest of the FY27 ₹500cr over the next three quarters"
     },
     {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "₹84cr spent in H1 FY27; ₹484cr of the ₹3,600cr in all by September"
+    },
+    {
      "when": "Q3 FY27",
      "tone": "next",
      "milestones": [
       "brigade-hotel-ven-chennai-courtyard-m1"
      ],
-     "sub": "Management said in August this was on track"
+     "sub": "Had been due in October 2026 (Q1 FY27 call)"
     },
     {
      "when": "Q4 FY27",
      "tone": "next",
      "milestones": [
-      "brigade-hotel-ven-1700-keys-m1"
-     ]
+      "brigade-hotel-ven-1700-keys-m1",
+      "brigade-hotel-ven-chennai-courtyard-m2"
+     ],
+     "sub": "Management changed this on 27 Oct 2026: the Chennai Courtyard now opens in H2 FY27"
     },
     {
      "when": "FY28",
@@ -6876,7 +6883,7 @@
    "notes": [
     "Borrowing for the build-out, about 60% of the cost, comes mainly after FY28"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (Apr 2026) and sector note",
+   "source": "Q2 FY27 call (27 Oct 2026), Q1 FY27 call (Aug 2026) and sector note",
    "recheck": {
     "changes": [],
     "note": "Official Q1 FY27 transcript confirms 74.5% was the year-earlier figure (\"improved the Y-o-Y portfolio number from 74.5% to 76%\") and all other figures; no change"
@@ -35240,8 +35247,8 @@
   },
   {
    "company": "Sterling Tools",
-   "fingerprint": "59010a930cc3394b",
-   "checkedOn": "2026-10-28",
+   "fingerprint": "34fb84979b87b1af",
+   "checkedOn": "2026-11-04",
    "lines": {
     "heading": "How full the fastener plants are (Q1 FY27)",
     "items": [
@@ -35276,8 +35283,8 @@
     "items": [
      {
       "name": "Fastener capacity expansion",
-      "sub": "in existing plants (Bengaluru and the NCR), mostly in the second half",
-      "right": "₹80–88cr in FY27 plus ₹25–30cr in FY28",
+      "sub": "in existing plants (Bengaluru and the NCR), mostly in the second half; management raised the cost on 28 Oct 2026",
+      "right": "about ₹110cr (raised from ₹80–88cr in FY27; ₹25cr spent by Q2) plus ₹25–30cr in FY28",
       "status": "building",
       "projectId": "sterling-tools-fasteners"
      },

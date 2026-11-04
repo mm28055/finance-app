@@ -2391,6 +2391,10 @@
     {
      "on": "2026-10-28",
      "text": "FY27 capex plan raised to about ₹135cr across businesses (Q2 FY27 results release)"
+    },
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: fastener capex raised to about ₹110cr (₹25cr spent); group FY27 capex about ₹150cr"
     }
    ]
   },
@@ -10975,7 +10979,11 @@
    "text": "Stock falling as production is cut",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Stock about ₹1,200cr at September, about ₹150cr higher than a year earlier (Q2 FY27 call); maize production stopped for the year",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "zydus-wellness-q4fy27-1",
@@ -12720,7 +12728,13 @@
    "text": "Chennai WTC Courtyard opening in October 2026",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: the Courtyard now opens in H2 FY27 (not October)"
+    }
+   ]
   },
   {
    "id": "brigade-hotel-ven-q4fy27-1",
@@ -14626,7 +14640,11 @@
    "due": "Q2 FY27",
    "ifMet": "Changes the view for the better",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Still one skid customer, a large US company it works with exclusively in India (Q2 FY27 call)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "aeroflex-industries-q2fy27-2",
@@ -14641,7 +14659,8 @@
    "status": "met",
    "actual": "24.2%",
    "resolvedOn": "2026-11-03",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait: the price needs far more growth and skids rest on one customer"
   },
   {
    "id": "aeroflex-industries-q4fy27-1",
@@ -17804,7 +17823,11 @@
    "text": "Sandoz Africa deal closes in Q2 and contributes from H2",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Not closed in Q2; awaiting antitrust approval in a few countries, now expected in Q3 (Q2 FY27 call)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "sakar-healthcare-q3fy27-1",
@@ -21147,7 +21170,13 @@
    "due": "Q3 FY27",
    "ifMissed": "Keep waiting",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: Shipway adjusted-EBITDA profit ‘starting Q3 FY27’ and PAT profit from Q4 FY27, repeated"
+    }
+   ]
   },
   {
    "id": "unicomm-esolutions-q4fy27-1",
@@ -28696,7 +28725,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "brigade-hotel-ven-chennai-courtyard"
+   "project": "brigade-hotel-ven-chennai-courtyard",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: now on track to open in H2 FY27"
+    }
+   ]
   },
   {
    "id": "mahindra-holi-andresor-theog-m1",
@@ -35366,7 +35401,11 @@
    "ifMet": "The year stays on track for the second-half-heavy plan",
    "ifMissed": "Middle East delays are hurting more than management admits; the full-year guide is at risk",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Q2 FY27 revenue ₹92cr against ₹121cr a year earlier (−24%), profit ₹15cr of which other income ₹14cr (Screener)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait; H2 must grow about 50% for the year’s guide"
   },
   {
    "id": "fabtech-q4fy27-1",
@@ -35380,7 +35419,13 @@
    "ifMet": "Guidance kept after one trim; the order book is converting",
    "ifMissed": "A second miss on growth; the order book is not turning into revenue",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: guide not withdrawn (25–30% a year talked of over three to five years); H1 revenue ₹167cr, so H2 needs about 50% growth"
+    }
+   ]
   },
   {
    "id": "fabtech-q4fy27-2",
@@ -35394,7 +35439,13 @@
    "ifMet": "The margin recovery from FY26's 9% operating margin is real",
    "ifMissed": "Margins stay squeezed by freight, input costs and war-time execution costs",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: now ‘an adjusted PAT margin of 8% to 9%’ for FY27"
+    }
+   ]
   },
   {
    "id": "fabtech-q4fy27-3",
@@ -35405,7 +35456,13 @@
    "ifMet": "The IPO money is being put to work and cash starts coming in",
    "ifMissed": "Acquisitions keep slipping and receivables stay high; the IPO cash sits idle",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: the European acquisition expected to close within six months or in Q1 of next year"
+    }
+   ]
   },
   {
    "id": "visl-q2fy27-1",
@@ -35873,7 +35930,11 @@
    "ifMet": "The North entry is working and stops dragging profits",
    "ifMissed": "The North costs more than planned; margins stay below the old 18–19%",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "Nagaur reached EBITDA break-even in Q2 FY27 at about 75% use (Q2 call)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait: net debt is now above the board’s limit"
   },
   {
    "id": "jswcement-q2fy27-2",
@@ -35884,7 +35945,11 @@
    "ifMet": "Clinker costs should fall from Q3 as promised",
    "ifMissed": "Cost savings are delayed into FY28",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "Waste-heat power and alternative-fuel systems commissioned in Q2; the extra 1 MTPA grinding unit and the overland conveyor in early October (Q2 call)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "jswcement-q4fy27-1",
@@ -35906,7 +35971,13 @@
    "ifMet": "The expansion is being funded without stretching the balance sheet",
    "ifMissed": "Debt is outrunning profits; equity or slower expansion may follow",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: net debt ₹4,287cr at September, 3.2 times EBITDA (above the 3-times limit) after ₹820cr of H1 capex"
+    }
+   ]
   },
   {
    "id": "e2erail-h1fy27-1",
@@ -37911,6 +37982,34 @@
    "createdOn": "2026-11-04",
    "status": "pending",
    "project": "supreme-petrochem-xps-compounding"
+  },
+  {
+   "id": "brigade-hotel-ven-chennai-courtyard-m2",
+   "company": "Brigade Hotel Ven.",
+   "sector": "Hotels and Travels",
+   "text": "Chennai WTC Courtyard opens (now H2 FY27, Q2 FY27 call)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-04",
+   "status": "pending",
+   "project": "brigade-hotel-ven-chennai-courtyard"
+  },
+  {
+   "id": "strides-pharma-q3fy27-3",
+   "company": "Strides Pharma",
+   "sector": "Pharma",
+   "text": "Sandoz Africa deal closes in Q3 FY27, as now expected",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-04",
+   "status": "pending"
+  },
+  {
+   "id": "kaveri-seed-company-q4fy27-1",
+   "company": "Kaveri Seed Company",
+   "sector": "Food Products",
+   "text": "Stock below a year earlier by March 2027 now that maize seed production has stopped (about ₹1,200cr at September)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-04",
+   "status": "pending"
   }
  ]
 }

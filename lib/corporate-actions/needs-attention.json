@@ -4209,21 +4209,24 @@
     "sector": "Industrials",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-04: Q2 call read. Revenue ₹92cr (−24%; 'steady' checkpoint missed), profit mostly other income; ₹900cr order book plus ₹800–850cr pipeline; FY27 needs H2 +50%; PAT margin now 8–9%; Italy deal within six months. Card updated (no note section). Stays wait."
   },
   {
     "company": "Brigade Hotel Ven.",
     "sector": "Hotels and Travels",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-04: Q2 call read. Revenue +10%, margin 37%, profit doubled; Chennai Courtyard slips from October to H2 FY27 (project revision, new milestone, picture redrawn); ₹484cr of ₹3,600cr spent; net cash ₹29cr. Stays wait."
   },
   {
     "company": "Sterling Tools",
     "sector": "Auto Related",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-04: Q2 call read. Standalone revenue +32%, margin ~12% (costs ahead of prices, H2 pass-through); EV arms still losing (break-even ~₹150cr revenue); fastener capex raised to ~₹110cr; new CFO. Stays wait."
   },
   {
     "company": "Refex Industries",
@@ -4237,14 +4240,16 @@
     "sector": "Pharma",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-04: Q2 call read. Revenue ₹87cr (+52%), margin 28%; 22 marketing approvals, 33 tech transfers; oncology ~50% of revenue; export split not given (export and inventory checkpoints left pending). Stays wait until Q3 repeats."
   },
   {
     "company": "JSW Cement",
     "sector": "Construction",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-04: Q2 call read. Volume +26%, Nagaur break-even and new grinding/WHRS/conveyor commissioned (both Q2 checkpoints met); margin 15%; net debt ₹4,287cr = 3.2x, above the 3x limit. Card updated (no note section). Stays wait."
   },
   {
     "company": "Bajaj Electricals",
@@ -4266,20 +4271,22 @@
     "sector": "Pharma",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-04: Q2 call read. Revenue +17% (record), US 3m (+9% q/q), ex-US now matches US; margin 17.6%; 75m US target moved beyond FY28; net debt 1.72x; Sandoz Africa slips to Q3 (checkpoint missed, new one). FDA Bengaluru not addressed (left pending). Stays wait."
   },
   {
     "company": "Aeroflex Industries",
     "sector": "Iron and Steel",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-04: Q2 call read. Revenue +87% (₹207cr), margin 24%; skids ~30% of revenue, still one customer (checkpoint missed); 15,000 skids by December; ₹202cr expansion funded from cash/loans first. Stays wait (Stretched)."
   },
   {
     "company": "Gandhar Oil Refinery (India)",
     "sector": "Oil",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 4 Nov 2026: transcript not yet filed (Screener lists only the presentation); left open for the next run.",
     "addedOn": "2026-11-03"
   },
   {
@@ -4295,7 +4302,8 @@
     "sector": "Software",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-04: Q2 call read. Revenue +15%, adjusted margin 17% (22% a year ago), Shipway ₹100cr run rate with break-even promised for Q3, cash ₹104cr. Stays wait."
   },
   {
     "company": "Kalpataru",
@@ -4339,7 +4347,8 @@
     "sector": "Food Products",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-04: Q2 call read. H1 revenue ~−10% (maize −36%), cotton steady; stock ~₹1,200cr (+₹150cr y/y; checkpoint missed, new Q4 one); maize production stopped. Tax hearing not addressed on the call (checkpoint left pending). Stays wait."
   },
   {
     "company": "Arkade",
@@ -4368,7 +4377,8 @@
     "sector": "Iron and Steel",
     "subject": "Checkpoint met: aeroflex-industries-q2fy27-2",
     "why": "Operating margin about 23% (guidance) — actual 24.2% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-04: Weighed: margin 24.2% against ~23%; the price is stretched and skids rest on one customer, so stays wait; outcome written."
   },
   {
     "company": "Knack Packaging",

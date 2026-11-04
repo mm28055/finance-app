@@ -1506,8 +1506,14 @@
    "adds": "capacity for about ₹1,000cr of fastener revenue (from ~₹800cr)",
    "status": "building",
    "source": "Q1 FY27 call (Aug 2026)",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "Fastener capacity from about ₹800cr to about ₹1,000cr of revenue (+25%)"
+   "updatedOn": "2026-11-04",
+   "capacityAdd": "Fastener capacity from about ₹800cr to about ₹1,000cr of revenue (+25%)",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call (28 Oct 2026): fastener capex raised to about ₹110cr (from ₹80cr), ₹25cr spent so far; group FY27 capex about ₹150cr"
+    }
+   ]
   },
   {
    "id": "sterling-tools-obc-mfu",
@@ -8027,8 +8033,8 @@
    "cost": "₹3,600cr (₹400cr spent by FY26, ₹500cr in FY27), about 60% debt",
    "adds": "keys from about 1,600 to 3,300; luxury mix from 14% to 38%",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026); ₹53cr spent in Q1",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (27 Oct 2026): ₹484cr of the ₹3,600cr invested by September 2026, ₹84cr of it in H1 FY27; Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-04",
    "capacityAdd": "+1,700 keys (1,604 → about 3,300, roughly doubling)"
   },
   {
@@ -8040,9 +8046,15 @@
    "expectedStart": "Q3 FY27",
    "adds": "45 keys",
    "status": "building",
-   "source": "Note (Q1 FY27 call, Aug 2026)",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+45 keys (+3% on 1,604)"
+   "source": "Q2 FY27 call (27 Oct 2026); note (Q1 FY27 call, Aug 2026)",
+   "updatedOn": "2026-11-04",
+   "capacityAdd": "+45 keys (+3% on 1,604)",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call (27 Oct 2026): the 45-key Courtyard now ‘on track to open in H2 of FY27’ (was October 2026)"
+    }
+   ]
   },
   {
    "id": "mahindra-holi-andresor-theog",
