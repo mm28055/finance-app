@@ -783,7 +783,7 @@ export const chemicalsCustom: SectorOverview = {
         {
             company: 'Camlin Fine', rank: 12, stance: 'AVOID', segment: NICHE,
             what: "Makes food and feed antioxidants (TBHQ, BHA and 200+ custom blends) and vanillin, with plants in India, Mexico, Brazil, France and Belgium; its Italian arm is in liquidation.",
-            view: "**Loss-making, and the balance sheet cannot carry idle plants.** The blends business grows, but the diphenol plant has been shut since May, vanillin runs below 30%, the Q1 margin was 1.8% against May’s 12–14% promise (since cut to 10–12%), interest takes nearly all operating profit, and it is rated BBB- with covenant-waiver language and an equity raise under consideration. It has no meaningful P/E, so no growth estimate.",
+            view: "**Loss-making, and the balance sheet cannot carry idle plants.** The blends business grows, but the diphenol plant has been shut since May, vanillin runs below 30%, the Q1 margin was 1.8% against May’s 12–14% promise (since cut to 10–12%), interest takes nearly all operating profit, and it is rated BBB- with covenant-waiver language and an equity raise under consideration. It has no meaningful P/E, so no growth estimate. **4 Nov 2026:** the board approved a rights issue of up to ₹250cr (about 14% of its market value); price and ratio to come.",
             watch: 'Double-digit margins in Q3 as promised; how new capital is raised and at what dilution; the diphenol plant decision.',
         },
     ],
