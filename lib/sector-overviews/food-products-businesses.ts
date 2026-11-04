@@ -443,7 +443,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Kaveri Seed Company',
-        inShort: ["**A Secunderabad hybrid-seed company** selling rice, maize, cotton, bajra and vegetable seed to Indian farmers, with almost all its profit earned in April–June, when farmers buy for the monsoon crop.", "**Good:** net cash, about 19% return on capital, and newer hybrids gaining share (37% of cotton sales, from 22%). **Bad:** profit has sat near ₹300cr for a decade, Q1 FY27 revenue fell 14% as maize seed sales collapsed, unsold stock turned FY26 operating cash negative, and its 1–5% tax rate is disputed.", "**Verdict: wait.** High returns but no growth; wait for the tax ruling and for stock to turn into cash."],
+        inShort: ["**A Secunderabad hybrid-seed company** selling rice, maize, cotton, bajra and vegetable seed to Indian farmers, with almost all its profit earned in April–June, when farmers buy for the monsoon crop.", "**Good:** net cash, about 19% return on capital, and newer hybrids gaining share (37% of cotton sales, from 22%). **Bad:** profit has sat near ₹300cr for a decade, Q1 FY27 revenue fell 14% as maize seed sales collapsed, unsold stock turned FY26 operating cash negative and was still about ₹1,200cr in September (₹150cr more than a year earlier), and its 1–5% tax rate is disputed.", "**Verdict: wait.** High returns but no growth; wait for the tax ruling and for stock to turn into cash."],
         tagline: "A hybrid-seed breeder and seller for Indian farmers, strongest in rice, maize and cotton, earning its year's profit in one season.",
         revenue: '₹1,395cr (FY26, consolidated)',
         products: [

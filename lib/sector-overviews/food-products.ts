@@ -681,7 +681,7 @@ export const foodProducts: SectorOverview = {
                         ['Hindustan Foods', 'Profit ₹200–220cr', '₹500cr+ of projects', '**On track**: profit +33%; footwear loss'],
                         ['Freshara Agro', 'Revenue about ₹575cr (was ₹600cr); ₹1,000cr by FY30', 'None', '**Trimmed**: guide cut; cash negative'],
                         ['Mrs Bectors Food', 'Mid-teens growth; 14% margin as a Q4 exit rate', 'About ₹200cr', '**Slipping**: +16%; margin 13.1%'],
-                        ['Kaveri Seed Company', 'No number (was +15–20%)', '₹50–150cr a year', '**Walked back**: revenue −14%'],
+                        ['Kaveri Seed Company', 'No number (was +15–20%)', '₹50–150cr a year', '**Walked back**: H1 revenue about −10% (maize −36%); stock about ₹150cr higher than a year ago (Q2 call)'],
                         ['Zydus Wellness', 'Margin 17–18% within two years; ‘double-digit’ growth for non-summer brands', 'About ₹100cr', '**Missed**: summer brands −12%; margin 16.8%'],
                         ['Apex Frozen Foods', 'Volume about 12,000 t (14,000 t spoken of in June)', '₹2–8cr', '**Walked back**: volume −13%; margin 12.7%'],
                         ['Gopal Snacks', 'Revenue ₹1,800–1,900cr; margin 8–9%', '₹40–45cr', '**Mixed**: +31%; margin 7.4%'],
@@ -845,8 +845,8 @@ export const foodProducts: SectorOverview = {
         {
             company: 'Kaveri Seed Company', rank: 15, stance: 'HARVEST', segment: MAKERS,
             what: "A Secunderabad hybrid-seed company selling rice, maize, cotton, bajra and vegetable seed, with almost all its profit earned in April–June.",
-            view: "**High returns, no growth and a tax question.** It holds net cash and earns about 19% on capital, but profit has hovered around ₹300cr since FY15, Q1 revenue fell 14% as maize seed sales collapsed, and unsold stock turned FY26 operating cash negative. Its 1–5% tax rate depends on a farm-income exemption now before a tax tribunal. The price needs about {need:Kaveri Seed Company|11}% a year against my ~6%.",
-            watch: 'The tribunal hearing on 15 October 2026; stock falling as production is cut; a buyback once stock turns to cash.',
+            view: "**High returns, no growth and a tax question.** It holds net cash and earns about 19% on capital, but profit has hovered around ₹300cr since FY15, Q1 revenue fell 14% as maize seed sales collapsed, and unsold stock turned FY26 operating cash negative. Its 1–5% tax rate depends on a farm-income exemption now before a tax tribunal. The price needs about {need:Kaveri Seed Company|11}% a year against my ~6%. **4 Nov 2026:** stays wait after the Q2 call. H1 revenue fell about 10%, dragged by maize (volume −36%), while cotton held and new hybrids rose to 38% of cotton sales. Stock is about ₹1,200cr, roughly ₹150cr higher than a year ago, because yields were high and sales fell short; management has stopped maize seed production for this year and sees no write-off. Cash has fallen as a result.",
+            watch: 'The tribunal ruling on the farm-income exemption; stock falling from about ₹1,200cr now that maize production has stopped; a buyback once stock turns to cash.',
         },
         {
             company: 'Zydus Wellness', rank: 16, stance: 'PRICED', segment: BRAND,
