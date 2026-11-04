@@ -3588,7 +3588,7 @@
     "company": "Cyient",
     "sector": "Software",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run. 1 Nov 2026: transcript still not filed (Screener lists only the presentation); left open for the next run.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run. 1 Nov 2026: transcript still not filed (Screener lists only the presentation); left open for the next run. 4 Nov 2026: transcript still not filed (Screener lists only the presentation); left open for the next run.",
     "addedOn": "2026-10-29"
   },
   {
@@ -3982,7 +3982,8 @@
     "sector": "Tyres",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-02"
+    "addedOn": "2026-11-02",
+    "handled": "2026-11-04: Q2 call read. India volume +22%, Mexico recovered (checkpoint met), margin 7.1% with costs +9% and another 4–5% in Q3; net debt +₹751cr to ₹5,696cr (~3.3x vs CARE 3.5x). Stays wait. Verdict, card, section-6 row, debt checkpoint revision."
   },
   {
     "company": "Macpower CNC",
@@ -3997,21 +3998,24 @@
     "sector": "Vehicles",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-02"
+    "addedOn": "2026-11-02",
+    "handled": "2026-11-04: Q2 call read. Volume +42%, EBITDA positive without subsidy (checkpoint met), first profit; capacity to 11.4 lakh/yr by Q2 FY28; AURIC trials in weeks. Market-share checkpoint left pending (no share figure on the call). Stays wait. Ather's project follow-up handled separately."
   },
   {
     "company": "WeWork India",
     "sector": "Commercial Services",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-02"
+    "addedOn": "2026-11-02",
+    "handled": "2026-11-04: Q2 call read. Revenue +32%, record 11,700 desks (22,900 since April; desk milestone met), after-rent margin 21.2% (checkpoint met), net cash ₹23cr; 20–23% margin guide for next year; promoter in no hurry on the pledge. Stays wait (Stretched)."
   },
   {
     "company": "Sumitomo Chemical India",
     "sector": "Agrochemical & Fertilizers",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-02"
+    "addedOn": "2026-11-02",
+    "handled": "2026-11-04: Q2 call read. Revenue −2% (H1 −1%) after a weak monsoon; exports −23% on timing; H2 'challenging'; inventory 115 days; cash ₹2,523cr. Stays wait (price needs far more growth). Verdict, card, two section rows, checkpoint revision."
   },
   {
     "company": "Steel Strips Wheels",
@@ -4120,7 +4124,8 @@
     "sector": "Commercial Services",
     "subject": "Checkpoint met: wework-india-q2fy27-1",
     "why": "Filed profit after tax turns positive (Q1: loss of ₹4cr) — actual ₹20cr (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-02"
+    "addedOn": "2026-11-02",
+    "handled": "2026-11-04: Weighed: filed profit turned positive (₹20cr); price still stretched and the pledge stays, so stays wait; outcome written."
   },
   {
     "company": "Macpower CNC",
@@ -4186,7 +4191,8 @@
     "sector": "Iron and Steel",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-04: Q2 call read. EC approval recommended, letter awaited; FY27 volume ~260,000t; ₹9,000–12,000/t guide; funding to 1:1 debt-equity, smaller rights issue in H2 CY2027; plant costs up. Stays follow (price Fits; own once approval and cost are known). Two checkpoints added."
   },
   {
     "company": "Fabtech Technologies",
@@ -4300,7 +4306,8 @@
     "sector": "Packaging",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-04: Q2 call read. Revenue +52% to ₹290cr (sales checkpoint met); margin 13% (company 16.4%) on polypropylene and freight, recovery guided from Q3; volume +3% q/q at ~91% use; Mexico JV −₹6cr H1; ₹150cr/yr US contract renewed. Stays follow. New Q3 margin checkpoint."
   },
   {
     "company": "Huhtamaki India",
@@ -4314,7 +4321,8 @@
     "sector": "Pharma API",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-04: Q2 call read. Revenue +43%, margin 40%; FY27 guide raised to ~30% growth and 38–40% margin; CDMO ₹1,000cr in FY27 (a year early), ₹2,000cr by FY30; battery sales began (checkpoint met); no fourth battery contract (missed); phase-2 additive capex not done (milestone missed). Stays follow (Full; myGrowth kept at 25%). Top 12 reserve: no change."
   },
   {
     "company": "Kaveri Seed Company",
@@ -4335,7 +4343,8 @@
     "sector": "Realty",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-04: Q2 call read. Pre-sales ₹1,827cr (−10% y/y, +72% q/q; H1 ₹2,888cr), ₹9,000cr guide kept on ₹7,600cr of H2 launches; collections ₹1,633cr; net debt ₹2,765cr. Stays follow until pre-sales grow again. Two checkpoint revisions."
   },
   {
     "company": "Bajaj Electricals",
@@ -4356,7 +4365,8 @@
     "sector": "Packaging",
     "subject": "Checkpoint missed: knack-packaging-q2fy27-1",
     "why": "Operating margin holding above 18% as polymer prices swing — actual 12.5% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-04: Weighed: 12.5% against 18%, from a 50%+ polypropylene jump passed on with a lag; not a thesis break, so stays follow; outcome written."
   },
   {
     "company": "Huhtamaki India",

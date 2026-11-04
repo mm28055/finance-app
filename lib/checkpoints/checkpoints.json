@@ -1048,7 +1048,13 @@
    "target": 5,
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: H2 expected to be challenging (strong El Niño, reservoirs 25% below last year); management aims to grow on last year where the market allows"
+    }
+   ]
   },
   {
    "id": "sumitomo-chemical-india-q4fy27-2",
@@ -5453,7 +5459,8 @@
    "status": "met",
    "actual": "₹20cr",
    "resolvedOn": "2026-11-02",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait: the price is stretched and the pledge stays"
   },
   {
    "id": "wework-india-q4fy27-1",
@@ -5462,7 +5469,13 @@
    "text": "Promoter pledge released during FY27 without a big block sale",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: the promoter is in no hurry to release the pledge (three years to repay that debt) and will not sell a block at today’s prices"
+    }
+   ]
   },
   {
    "id": "wework-india-q4fy27-2",
@@ -5483,7 +5496,11 @@
    "text": "Rent-adjusted margin holding at 19–20% as 20,000 new desks open",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "After-rent EBITDA margin 21.2% in Q2 FY27 (19.8% in Q1) while 11,700 desks opened",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "indiqube-spaces-q2fy27-1",
@@ -15675,7 +15692,8 @@
    "status": "missed",
    "actual": "12.5%",
    "resolvedOn": "2026-11-03",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow: polypropylene jumped over 50% and about half of customers pass costs through a quarter or two late; recovery expected from Q3"
   },
   {
    "id": "knack-packaging-q2fy27-2",
@@ -15684,7 +15702,11 @@
    "text": "Quarterly sales held at the Q1 FY27 level until the new plant starts, as management said",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Q2 FY27 revenue ₹290cr against ₹257cr in Q1 (Screener)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "cosmo-first-q4fy27-1",
@@ -15934,6 +15956,10 @@
     {
      "on": "2026-10-28",
      "text": "raised the FY27 revenue growth guide to about 30% after Q2 revenue rose 43% (27 Oct 2026 release)"
+    },
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: FY27 revenue growth guide raised from 25% to about 30%"
     }
    ]
   },
@@ -15944,7 +15970,11 @@
    "text": "Third battery additive supplying by end-Q2 FY27",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "First commercial shipments of the third battery product dispatched in Q2 FY27 (Q2 call)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "acutaas-chemicals-q2fy27-2",
@@ -15953,7 +15983,11 @@
    "text": "A fourth battery contract signed, with capex",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "No fourth contract yet; pilot validation batches of the fourth product sent to customers (Q2 FY27 call)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "acutaas-chemicals-q4fy27-2",
@@ -15967,6 +16001,10 @@
     {
      "on": "2026-10-28",
      "text": "raised the FY27 EBITDA margin guide to 38–40% (27 Oct 2026 release)"
+    },
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: FY27 margin guide raised to 38–40%"
     }
    ]
   },
@@ -19120,7 +19158,13 @@
    "due": "Q4 FY27",
    "ifMet": "Buy when launches arrive on time (at a fitting price)",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: Brigade Barcelona at Neopolis launched in Q2 (₹475cr sold); two large Bengaluru townships planned for Q3, 7 mn sq ft (₹7,600cr) of launches in H2"
+    }
+   ]
   },
   {
    "id": "brigade-enterprises-q4fy27-2",
@@ -19129,7 +19173,13 @@
    "text": "FY27 pre-sales above ₹7,500cr (at least +20%)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: ₹9,000cr guide kept; H1 pre-sales ₹2,888cr"
+    }
+   ]
   },
   {
    "id": "sobha-q4fy27-1",
@@ -22496,7 +22546,11 @@
    "ifMet": "Case to stop waiting",
    "ifMissed": "Keep waiting",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "JK Tornel revenue ₹479cr and operating profit ₹23cr in Q2 FY27 (Q2 call)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait: the margin and debt are the bigger worries"
   },
   {
    "id": "jk-tyre-and-indust-q4fy27-2",
@@ -22505,7 +22559,13 @@
    "text": "Net debt stays inside CARE's 3.5-times operating-profit trigger (debt to rise only ₹500–700cr in FY27, as guided)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: net debt rose ₹751cr in the quarter to ₹5,696cr (more than the ₹500–700cr guided for the year), on dearer stock and capex; about 3.3 times trailing operating profit"
+    }
+   ]
   },
   {
    "id": "jk-tyre-and-indust-q4fy27-3",
@@ -22876,7 +22936,11 @@
    "due": "Q2 FY27",
    "ifMissed": "Keep waiting",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Q2 FY27 EBITDA 4.9% of revenue (about 0.8% without other income) after the subsidy ended; first quarterly profit",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait: priced for years of fast, profitable growth"
   },
   {
    "id": "ather-energy-q4fy27-1",
@@ -22885,7 +22949,13 @@
    "text": "Aurangabad (AURIC) plant starts trial output this festive season and reaches 42,000 a month by March 2027",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: trial output at AURIC in the next few weeks (Q3 FY27), capex installation done by Q4 FY27, and the 42,000-a-month base about two quarters to ramp"
+    }
+   ]
   },
   {
    "id": "ather-energy-q2fy27-2",
@@ -25907,8 +25977,12 @@
    "text": "About 20,000 new desks open",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "wework-india-fy27-desks"
+   "status": "met",
+   "project": "wework-india-fy27-desks",
+   "actual": "About 18,400 desks added in H1 FY27 and 4,500 more in October (Q2 call)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "wework-india-fy27-desks-m2",
@@ -25918,7 +25992,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "wework-india-fy27-desks"
+   "project": "wework-india-fy27-desks",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: about 1.45 lakh desks at September; 1.50–1.55 lakh expected by March 2027"
+    }
+   ]
   },
   {
    "id": "smartworks-coworking-fy27-campuses-m1",
@@ -30305,8 +30385,12 @@
    "text": "Phase 2 capex completed and trial runs started",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "acutaas-chemicals-third-additive"
+   "status": "missed",
+   "project": "acutaas-chemicals-third-additive",
+   "actual": "Phase 2 not complete: ₹45cr of second-phase electrolyte-additive capex is planned for H2 FY27 (Q2 call)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "acutaas-chemicals-indichem-korea-m1",
@@ -37696,6 +37780,49 @@
    "text": "Net paying-supplier additions positive in Q3 and Q4 FY27 (−615 in Q2)",
    "due": "Q4 FY27",
    "ifMet": "A buy if supplier numbers turn",
+   "createdOn": "2026-11-04",
+   "status": "pending"
+  },
+  {
+   "id": "vardhman-special-steels-q4fy27-1",
+   "company": "Vardhman Special Steels",
+   "sector": "Iron and Steel",
+   "text": "Final environmental approval letter for 3.6 lakh tonnes of melting received (committee recommended it by October 2026)",
+   "due": "Q4 FY27",
+   "ifMet": "A candidate for own once the new plant’s cost is known",
+   "createdOn": "2026-11-04",
+   "status": "pending"
+  },
+  {
+   "id": "vardhman-special-steels-q4fy27-2",
+   "company": "Vardhman Special Steels",
+   "sector": "Iron and Steel",
+   "text": "FY27 sales volume about 260,000 tonnes, as raised on the Q2 FY27 call",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-04",
+   "status": "pending"
+  },
+  {
+   "id": "knack-packaging-q3fy27-1",
+   "company": "Knack Packaging",
+   "sector": "Packaging",
+   "text": "Operating margin back above 15% in Q3 FY27 as price rises pass through (13% in Q2 on Screener)",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 15,
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-04",
+   "status": "pending"
+  },
+  {
+   "id": "acutaas-chemicals-q4fy27-3",
+   "company": "Acutaas Chemicals",
+   "sector": "Pharma API",
+   "text": "FY27 revenue up about 30% at a 38–40% margin, as raised on the Q2 FY27 call",
+   "metric": "fyRevenueGrowth",
+   "op": ">=",
+   "target": 30,
+   "due": "Q4 FY27",
    "createdOn": "2026-11-04",
    "status": "pending"
   }
