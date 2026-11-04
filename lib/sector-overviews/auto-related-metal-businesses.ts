@@ -396,7 +396,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sterling Tools',
-        inShort: ["**India's second-largest automotive fastener maker**, plus loss-making subsidiaries making EV motor controllers, chargers and high-voltage contactors under Chinese technology licences.", "**Good:** fasteners grew 24% in Q1 FY27 at a 15.4% margin with plants 90–95% full, and steel is passed on. **Watch:** the EV arm lost ₹280cr of revenue when its anchor customer made the part itself, loses about ₹10cr a quarter, and booked a ₹21cr bad debt; management pay of ₹18.3cr compares with ₹29.3cr of profit.", "**Verdict: wait.** A good fastener business carrying an EV arm that has to stop losing money first."],
+        inShort: ["**India's second-largest automotive fastener maker**, plus loss-making subsidiaries making EV motor controllers, chargers and high-voltage contactors under Chinese technology licences.", "**Good:** fasteners grew 24% in Q1 FY27 and 32% in Q2 with plants 90–95% full, and steel is passed on, though with a lag (the Q2 margin slipped to about 12%). **Watch:** the EV arm lost ₹280cr of revenue when its anchor customer made the part itself, loses about ₹10cr a quarter, and booked a ₹21cr bad debt; management pay of ₹18.3cr compares with ₹29.3cr of profit.", "**Verdict: wait.** A good fastener business carrying an EV arm that has to stop losing money first."],
         tagline: "High-tensile fastener maker for Indian vehicle makers, with EV electronics subsidiaries (Sterling E-Mobility and Sterling Tech-Mobility) built on Chinese partners' technology.",
         revenue: '₹828cr (FY26, consolidated)',
         products: [
@@ -423,7 +423,7 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**India's second-largest automotive fastener maker, with 25–30% of domestic automotive fastener buying** (company).",
         money: "Net cash of **₹12cr** on Screener; group borrowings are ₹147cr, and the fastener business on its own has no net debt. Operating cash fell to ₹56cr in FY26 from ₹124cr as stock and receivables in the EV arm rose, and free cash was about nil. Fastener capex of about ₹80cr is paid from its own cash. Dividend payout 34%. ICRA AA- (outlook cut to Stable in November 2025). Management pay was ₹18.3cr against ₹29.3cr of profit. Promoters hold **64.9%**, down slightly from 65.8% in September 2023.",
-        watch: ["EV losses falling below ₹5cr a quarter.", "Fastener margin above 15% as dearer steel arrives.", "The ₹80cr fastener capex on time."],
+        watch: ["EV losses falling below ₹5cr a quarter (break-even needs about ₹150cr of EV revenue).", "Fastener margin back above 15% as price rises reach H2.", "The fastener capex, raised to about ₹110cr, on time."],
         charts: autoRelatedCharts['Sterling Tools'],
     },
     {
