@@ -457,7 +457,7 @@ export const healthcareDiagnostic: SectorOverview = {
                         ['Dr Lal PathLabs', 'Revenue +13–15% (leaning mid-teens); margin 27–28%', '₹140–150cr (from ₹100–120cr)', '**Beat**: +19% and 31%; price rise deferred'],
                         ['Vijaya Diagnostic Centre', 'Revenue ‘high double digit’; margin above 40%', '₹190–195cr (from ₹140–150cr)', '**Beat**: +23% and 42.7%; 1–1.5% price rise dropped'],
                         ['Metropolis Health.', 'Revenue +14–15%; margin +100–150bp', 'About ₹65cr', '**Beat**: +17% and +210bp; guide held'],
-                        ['Thyrocare Technologies', 'Revenue mid- to high-teens; margin flat', 'About ₹40cr', '**Beat**: +24%; consumables launch late'],
+                        ['Thyrocare Technologies', 'Revenue mid- to high-teens; margin flat', 'About ₹40cr', '**Beat** (Q2 call): revenue +25%; record franchisee additions; ₹45cr one-off Nueclear write-down'],
                         ['Suraksha Diagnostic', 'Revenue +15%; margin at least 34% (raised)', '₹70–80cr (from ₹70cr)', '**Beat**: +21% and 36%'],
                         ['Krsnaa Diagnostics', 'Rajasthan ₹100–150cr; profit margin back to ‘double digits’', 'About ₹500cr capitalised', '**Walked back**: profit margin 7% against about 13%'],
                     ],
@@ -544,8 +544,8 @@ export const healthcareDiagnostic: SectorOverview = {
         {
             company: 'Thyrocare Technologies', rank: 3, stance: 'PRICED', segment: PATH,
             what: "A low-cost pathology factory that tests samples sent by about 11,730 franchisees and health-tech partners; 51% owned by Docon, part of PharmEasy's parent API Holdings.",
-            view: "**Excellent operations, and the owner's pledge is gone.** Revenue grew 24% in Q1 at a 32% margin, return on capital is about 35% and it has no bank debt. Docon sold 10% in October 2025 and another 9.9% on 13 August 2026, and the parent's debenture repayment freed all its shares from pledge on 17 August 2026. But it still takes dividends above 100% of profit, and PharmEasy is also a customer; the radiology sale takes ₹59.5cr in unlisted shares. The price needs about {need:Thyrocare Technologies|24}% a year against my ~17%.",
-            watch: 'Whether Docon sells more now that its debt is repaid; the dividend payout falling back towards profit; franchisee additions sticking; the shareholder vote on the Nueclear sale and what is done with its ₹81.9cr of cash.',
+            view: "**Excellent operations, and the owner's pledge is gone.** Revenue grew 24% in Q1 at a 32% margin, return on capital is about 35% and it has no bank debt. Docon sold 10% in October 2025 and another 9.9% on 13 August 2026, and the parent's debenture repayment freed all its shares from pledge on 17 August 2026. But it still takes dividends above 100% of profit, and PharmEasy is also a customer; the radiology sale takes ₹59.5cr in unlisted shares. The price needs about {need:Thyrocare Technologies|24}% a year against my ~17%. **4 Nov 2026:** stays wait after the Q2 call. Revenue rose 25% (pathology 27%) at a 33% margin, it added about 1,180 franchisees, the most in three years (12,911 in all), and opened five labs. Filed profit fell to ₹15cr only because of a one-off, non-cash ₹45cr goodwill write-down on Nueclear, which is being sold for about ₹141cr in cash and shares; the shareholder vote is under way.",
+            watch: 'Whether Docon sells more now that its debt is repaid; the dividend payout falling back towards profit; franchisee additions holding near Q2’s record; the Nueclear sale closing and what is done with its cash.',
         },
         {
             company: 'Vijaya Diagnostic Centre', rank: 4, stance: 'PRICED', segment: INTG,
