@@ -599,3 +599,63 @@ Where it mattered, the reviews add what the points missed, mostly profit flatter
 **Results pass:** 57 reviewed, and all figures match Screener. **Shriram Pistons** is left for the next run because Screener's search does not find it. I changed five verdicts: **Gem Aromatics** from mixed to behind (the net loss widened to ₹7cr), **Nucleus Software** from mixed to behind (operating profit fell 30%; other income was most of pre-tax profit), **Studds** and **Suraj Estate** from mixed to behind (profit fell 29% and 30%), and **Updater Services** from in line to ahead (profit up 60% against an 8% base case). I corrected one wrong point: Crizac's other income (₹9cr) did not exceed its operating profit (₹35cr). Where it mattered, the reviews add what the points missed: this week's filings (new plants, orders, ratings) and other income that made up a large share of profit (Aditya Birla Lifestyle, Quality Power). None of these entries had an analysed call yet, so no checkpoints were judged from them.
 
 **Top 12:** Dynamic Cables (checks rolled, numbers kept), EPL (Blackstone gone, no trigger hit) and Sharda Cropchem (Q2 sales ₹1,052cr pass the check; the margin is 16% on Screener) were touched, as was the reserve name Rubicon (FDA observations; reserve names carry no triggers). Only Dynamic Cables' text changed.
+
+## 4 November 2026 (Wednesday)
+
+**Checks:** the notes check lists the same 30 problems as before this run, all "company in the sector with no verdict" (the newly listed companies that still need sections, plus Horizon Industrial Parks and Monolithisch India, which have cards but no note section). They were on master already, so they did not block the push. The typecheck is clean and no capacity picture is out of date or in error. No weekly-review branch was waiting: the two older ones only looked unmerged because this copy was shallow, and both are fully part of master. Work was pushed to master in five batches during the run.
+
+**Follow-ups handled: 40 (the limit). Still open: 154.** 69 are the recently listed companies with no note section and 24 are capacity-picture date fixes (both already Needs-a-session items). 22 are project follow-ups: twelve from before and ten I raised today from this week's filings (plant starts at Balaji Amines, Saatvik, Century Plyboards, Gopal Snacks, KIMS and Sai Parenterals; new capex at Nelcast, HEG, Amara Raja and Medanta). 16 are results calls: ICICI Bank, CIE Automotive, Ador Welding, Cyient, Steel Strips Wheels and Gandhar still have no transcript filed; Huhtamaki, Arkade, Monolithisch, Manba, Shakti Pumps, Bajaj Electricals, Kalpataru, Paramount and Refex wait for the next run, along with two checkpoint entries (Huhtamaki, Bajaj Electricals). 7 are big holder changes, 6 price-drift reviews, 1 shareholding, 2 demergers (SKF India's Q2 is now filed, so it can be done next run; HEG's electrode company is still not listed) and 5 waiting entries (checked; nothing final yet).
+
+**Calls changed:** none. Every company reviewed today keeps its call; the reasons are below.
+
+**New results calls (transcripts read):**
+- **InfoBeans** (stays own, small; Top 12 reserve). Revenue +30%, 22% in dollars and the seventh quarter in a row of 6%+ growth on the quarter; the company-basis margin is back at its 24% target (checkpoint met). It is now an Anthropic services partner. Its US arm lent a co-founder about ₹8cr under a staff-loan policy; it was repaid within 3–4 months.
+- **Gravita** (stays own). Revenue +38% but profit only +6% (H1 about +10% against the 25–30% target), as lead volume fell about 11% on missing Gulf scrap. Copper earned ₹84,671 a tonne; the new guide is ₹65,000–70,000. A ₹64cr Mundra copper plan is noted in the text.
+- **Apcotex** (stays own). Volume +7% and exports back, but the margin was about 12% (checkpoint partly met; about 1.5 points was a one-off stock loss, so the downgrade trigger is not pulled). NBR is on track for April 2027; the latex plant may slip to Q2 FY28 (project, milestone and picture updated).
+- **20 Microns** (stays own). Revenue +3%, margin 11.6% on power and freight; captive mines start in December and 9 MW of solar in Q4.
+- **Macpower CNC** (stays follow). FY27 growth guide raised again, to about 35%; order book ₹476cr. The 60-acre land is still not signed (checkpoint missed). It stays follow because only a third of five years of profit arrived as cash.
+- **Sunteck Realty** (stays follow; Top 12). Pre-sales ₹824cr, but H1 collections only ₹780cr; Nepean Sea Road RERA missed again (now promised before March 2027); Dubai taken out of the launch list; borrowings ₹940cr. **Top 12:** no trigger hit, numbers kept, checks rolled to Q3.
+- **Indiamart** (stays follow). Revenue +10%, collections +9% (checkpoint met); paying suppliers fell again, by 615, so the two-positive-quarters checkpoint is missed.
+- **Vardhman Special Steels** (stays follow). The environmental approval for more melting has been recommended but not issued; FY27 volume raised to about 260,000 tonnes; the new plant will use more debt, so the 2027 rights issue is smaller. I would look at own once the approval letter arrives.
+- **Knack Packaging** (stays follow). Revenue +52%, but the margin fell to 13% as polypropylene jumped over 50% (checkpoint missed); price rises pass through from Q3.
+- **Acutaas** (stays follow; Top 12 reserve). FY27 guide raised to about 30% growth at a 38–40% margin; contract revenue of ₹1,000cr expected a year early. No fourth battery contract yet (missed).
+- **Brigade Enterprises** (stays follow). Pre-sales −10% year on year (sixth fall); the ₹9,000cr guide needs about ₹6,100cr in H2.
+- **JK Tyre** (stays wait). Mexico recovered (met), but the margin is stuck near 7% and net debt jumped ₹751cr in one quarter to about 3.3 times operating profit, close to CARE's 3.5-times trigger.
+- **Ather** (stays wait). First profit, EBITDA positive without the subsidy (met); capacity to 11.4 lakh a year by Q2 FY28.
+- **WeWork India** (stays wait). Record desk openings (milestone met), margin 21.2% (met), net cash; the promoter is in no hurry to release the pledge.
+- **Sumitomo Chemical** (stays wait). Revenue −2% after a weak monsoon; a hard rabi season expected; stock at 115 days.
+- **Raymond Realty** (stays wait). Bookings +111% in H1; net debt up to ₹912cr (still under one times equity, met).
+- **Leap India** (stays wait; card only). Revenue +18% on Screener (+22.5% company; partly met); payment days 122, promised under 90 by March; buying Vimprotech and TIPS for ₹142cr.
+- **Supreme Petrochem** (stays wait). Volume back to 95,242 tonnes (met), but the margin was about 8% (missed) and ABS still runs at about 55% (missed); compounding slips to about Q3 FY28 (project and picture updated).
+- **Sona BLW** (stays wait). Revenue +35%, order book ₹25,100cr, but the margin stayed at 23% instead of recovering (missed).
+- **Unimech** (stays wait). Revenue nearly doubled at a 40% margin and the order book is ₹855cr, but parts are still small outside Hobel (partly met); no share sale yet.
+- **Craftsman** (stays wait). Revenue +47% but margin 13%; gross debt rose to ₹3,618cr despite the June raise. DR Axion's second plant is on trial early (met); no new raise or promoter sale (met).
+- **Jubilant Ingrevia** (stays wait). EBITDA +51%; FY27 now at the upper end of ₹750–800cr; the big contract's future volumes are still being negotiated.
+- **Thyrocare** (stays wait). Revenue +25%, record franchisee additions; filed profit cut by a one-off ₹45cr Nueclear write-down.
+- **Fabtech** (stays wait; card only). Revenue −24% (missed); H2 must grow about 50% for the year's guide.
+- **Brigade Hotel Ventures** (stays wait). Revenue +10%, margin 37%; the Chennai Courtyard slips from October to H2 FY27 (project and picture updated).
+- **Sterling Tools** (stays wait). Fastener revenue +32% but margin about 12%; fastener capex raised to about ₹110cr (project and picture updated).
+- **Sakar Healthcare** (stays wait). Revenue ₹87cr (+52%) with more approvals, but no cancer-drug export figure; one more such quarter would move it back to follow.
+- **JSW Cement** (stays wait; card only). Nagaur at break-even and new units running (both met), but net debt is 3.2 times EBITDA, above the board's 3-times limit.
+- **Strides** (stays wait). US sales back to $73m, but the $375m US target moved past FY28 and the Sandoz Africa deal slipped to Q3 (missed).
+- **Aeroflex** (stays wait). Revenue +87% at 24% (margin checkpoint met), but skids still have one customer (missed).
+- **Unicommerce** (stays wait). Revenue +15%, adjusted margin 17%; Shipway break-even promised again for Q3.
+- **Kaveri Seed** (stays wait). H1 revenue about −10% on maize; stock rose to about ₹1,200cr (missed); maize seed production stopped.
+
+**Filings pass, 1–3 November** (notes corrected):
+- Affle: buying Perion Network for about $420m in cash, funded mostly by bank loans; closing early 2027.
+- Expleo: shareholders refused the ₹280cr related-party loan limits (watch item rewritten).
+- Raymond Realty: joint auditor left after a fee dispute; ₹210cr from ICICI Prudential's fund.
+- JNK: a ₹300–600cr heater order from its own promoter, a third to two-thirds of a year's sales.
+- HEG: ₹2,581cr of new anode, crucible and graphene capex.
+- Medanta: ₹997cr for a 500-bed Ghaziabad hospital.
+- Camlin Fine: ₹250cr rights issue.
+- Sri Lotus: promoter selling up to 5.89% through an offer for sale.
+- Plant starts and new capex: ten follow-ups raised (above).
+- **Logged only:** order wins at Man Infra (₹583cr), Rites (₹400cr, lowest bidder), Jupiter Wagons (₹324cr), NBCC and Krsnaa. Vishnu Chemicals' upgrade to ICRA A. Om Power's CFO resignation. Go Fashion's pledge release. Gujarat Fluorochemicals' ₹600cr into its battery-chemicals arm. Arkade's ₹146cr Bhandup land (already in the note). Clean Max's ₹65cr tax win. Balaji Amines' court summons under the Drugs and Cosmetics Act. Ola Electric's rights-issue allotment. Sh. Pushkar's warrants. A ₹5cr cyber fraud at SG Finserve.
+
+**News pass, 2–3 November:** 32 entries had a clear reason. One may be very important: news reports that NPPA cut the maximum retail prices of 1,085 anti-cancer medicines, which could hit **HCG**'s pharmacy margin and may be the final notice that the **Beta Drugs** entry is waiting for. I could not confirm the official order today, so I changed nothing and raised a waiting entry for HCG. The rest were not very important: natural rubber at a record ₹300 a kilo (tyre makers), US crude down 7% (paint and lubricant makers), new railway wagon orders, and results-day moves.
+
+**Results pass:** 98 of 111 reviewed, and every figure checked matches Screener; no verdict or point needed correcting. Where it mattered, the reviews add what the points missed: other income that made up about a third of pre-tax profit (Shalby, Capillary, KEC) or negative other income that hid a better operating result (Dhoot Transmission, Carborundum). 13 are left for the next run because this session's Screener lookup could not find the right page: Chambal Fertilisers, Datamatics, H.G. Infra, India Pesticides, Ion Exchange, JG Chemicals, Manipal Payment, Punjab Chemicals, Rane (Madras) (the lookup found Rane Holdings), S H Kelkar, Shree Pushkar, Thomas Cook and Shriram Pistons. None of the entries had an analysed call yet, so no checkpoints were judged from them.
+
+**Top 12:** Sunteck Realty (Q2 call: one check met, one partly, one missed; no trigger hit) and Clean Max (H1 filing: EBITDA check met, 550 MW commissioned against 600 MW; no trigger hit) had their checks rolled to Q3 with numbers kept. BLS, Samhi, V2 Retail and Sanghvi Movers had results entries; their checks need the calls, which come next run, and none of the filed figures hits a trigger. Reserve names InfoBeans and Acutaas had calls (reserve names carry no triggers).
