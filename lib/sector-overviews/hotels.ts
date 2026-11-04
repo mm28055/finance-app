@@ -535,7 +535,7 @@ export const hotelsAndTravels: SectorOverview = {
                         ['Leela Palaces Hotels', 'Double-digit revenue and profit growth in Q1; FY27 RevPAR double-digit, operating profit mid-to-high teens', '₹700–800cr a year (CRISIL); ₹1,432cr for five owned hotels (₹150cr spent, ₹450cr by March 2027)', '**Beat**: H1 revenue +30%, operating profit +38%; high-teens growth guided for H2'],
                         ['Viceroy Hotels', 'Double-digit growth; margin above 30%; room rate ₹9,000–9,500 soon; phase 2 in FY27', '₹100cr-plus renovation; ₹120–130cr Madhapur', '**Mixed**: sales +77%, rights done; rate −12%, margin 26%'],
                         ['Royal Orchid Hotels', 'Guidance after Q1; 7–8 hotels in 2–3 months; Iconiqa profitable before lease accounting in FY27', '₹5–10cr per revenue-share hotel', '**Walked back**: no guidance; 5 hotels; Iconiqa still slightly loss-making'],
-                        ['Brigade Hotel Ven.', '₹7–8cr of Q1 cancellations; ~37.5% margin without one-offs; mid-teens FY27 growth', '₹500cr in FY27 (₹53cr in Q1); ₹3,600cr in all', '**Behind**: ₹14cr cancelled; sales +2%; margin 34.8%'],
+                        ['Brigade Hotel Ven.', '₹7–8cr of Q1 cancellations; ~37.5% margin without one-offs; mid-teens FY27 growth', '₹500cr in FY27 (₹53cr in Q1); ₹3,600cr in all', '**Behind** (Q2 call): revenue +10% in Q2 but about +6% in H1 against mid-teens; Chennai hotel slips from October to H2'],
                         ['Mahindra Holi.&Resor', 'Operating-profit trajectory to continue; 1,000+ gross keys in FY27; first luxury resort in FY28', '₹331cr committed at March; rebuilds at ₹40–50 lakh a key', '**Missed**: Q1 consolidated loss, Q2 back to ₹19.7cr profit; net keys down to 5,762 in September; about 1,000 gross keys still promised by March; Theog late FY28'],
                     ],
                     note: 'Juniper held no Q1 call; its Q1 figures and plans come from its Investor Day presentation of 17 August 2026. Operating-profit figures in this column are the companies’ own.',
@@ -662,8 +662,8 @@ export const hotelsAndTravels: SectorOverview = {
         {
             company: 'Brigade Hotel Ven.', rank: 9, stance: 'SCALEUP', segment: BRANDED,
             what: "Owns the Brigade group's nine hotels (1,604 keys), mostly in Bengaluru, run by Marriott, Accor and IHG, and plans to reach about 3,300 keys.",
-            view: "**Net cash now, a ₹3,600cr build ahead.** Room rates +7% and profit +140% as interest halved, with ₹108cr of net cash. But sales grew 2% as ₹14cr of events were cancelled, the COO left, and the auditor flags an unprovided ₹28.7cr property-tax dispute and an income-tax survey. The price needs about {need:Brigade Hotel Ven.|19}% a year against my ~12%.",
-            watch: 'H2 growth toward the mid-teens promise; the Chennai WTC hotel in October 2026 and the two Fairfields in FY28; land and lease deals with the parent.',
+            view: "**Net cash now, a ₹3,600cr build ahead.** Room rates +7% and profit +140% as interest halved, with ₹108cr of net cash. But sales grew 2% as ₹14cr of events were cancelled, the COO left, and the auditor flags an unprovided ₹28.7cr property-tax dispute and an income-tax survey. The price needs about {need:Brigade Hotel Ven.|19}% a year against my ~12%. **4 Nov 2026:** stays wait after the Q2 call. Revenue rose 10% as events came back, Bangalore room rates rose 8% at 81% occupancy, the margin reached 37% (company) and profit doubled to ₹22cr. But the Chennai WTC Courtyard, due in October, now opens ‘in H2 FY27’; ₹484cr of the ₹3,600cr plan is spent and net cash is down to ₹29cr.",
+            watch: 'H2 growth toward the mid-teens promise (H1 about +6%); the Chennai WTC hotel in H2 FY27 and the two Fairfields in FY28; land and lease deals with the parent.',
         },
         {
             company: 'Royal Orchid Hotels', rank: 10, stance: 'TURNAROUND', segment: MANAGERS,
