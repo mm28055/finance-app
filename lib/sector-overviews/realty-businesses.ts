@@ -120,7 +120,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sunteck Realty',
-        inShort: ["**A Mumbai luxury developer**, from BKC and Nepean Sea Road to large townships at Naigaon and Vasai, with two rented office buildings and a half-share in a Downtown Dubai plot.", "**Good:** pre-sales grew 25% in FY26 and 20% in Q1 FY27, new sales carry 35–40% margins and India Ratings rates it AA. **Bad:** it collected under half of FY26 pre-sales, gross debt doubled to buy land, and both flagships, Nepean Sea Road and Dubai, are delayed.", "**Verdict: follow.** Steady growth, slow cash: ₹122cr of operating cash against ₹449cr of profit over FY22–FY26 (27%), and −₹432cr in FY26 as it bought land; follow it until collections catch up with sales."],
+        inShort: ["**A Mumbai luxury developer**, from BKC and Nepean Sea Road to large townships at Naigaon and Vasai, with two rented office buildings and a half-share in a Downtown Dubai plot.", "**Good:** pre-sales grew 25% in FY26 and 19% in H1 FY27 (₹1,611cr), new sales carry 35–40% margins and India Ratings rates it AA. **Bad:** it collected under half of FY26 pre-sales and only ₹780cr in H1, borrowings rose to ₹940cr to buy land, Nepean Sea Road is now promised by March 2027 and Dubai has been taken out of the launch list.", "**Verdict: follow.** Steady growth, slow cash: ₹122cr of operating cash against ₹449cr of profit over FY22–FY26 (27%), and −₹432cr in FY26 as it bought land; follow it until collections catch up with sales."],
         tagline: "A Mumbai-region developer selling across three luxury bands, from ultra-luxury in BKC to low-cost townships at Naigaon, with a growing rental plan.",
         revenue: '₹1,124cr (FY26, consolidated)',
         products: [
@@ -143,7 +143,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Lodha and Oberoi', note: 'Luxury leaders in south and western Mumbai.' }, { name: 'Godrej Properties', note: 'Large rival in the Mumbai suburbs.' }, { name: 'Keystone and Sri Lotus', note: 'Listed Mumbai redevelopment and luxury peers.' }],
         position: "**A mid-sized Mumbai luxury developer** with trophy projects at BKC and Nepean Sea Road and a large low-cost township book.",
         money: "Screener shows **₹679cr of net debt** at March 2026; the company puts net debt at 0.06–0.07 times equity. Gross debt doubled to ₹774cr in FY26 to buy land, India Ratings expects a peak of ₹1,100–1,200cr, and filed operating cash was −₹432cr; collections lag pre-sales badly. Promoters are putting ₹500cr back in through warrants, ₹375cr of it still due by about mid-2027. Dubai has taken no more than ₹200–225cr. Rated AA by India Ratings. Promoters hold **63.1%**, down from 67.2% in September 2023; no pledges.",
-        watch: ["Nepean Sea Road RERA and construction start.", "FY27 collections above ₹1,800cr.", "Gross debt staying under ₹1,100–1,200cr."],
+        watch: ["Nepean Sea Road RERA before the end of FY27, as now promised.", "FY27 collections above ₹1,800cr (₹780cr in H1).", "Gross debt staying under ₹1,100–1,200cr (₹940cr at September)."],
         charts: realtyCharts['Sunteck Realty'],
     },
     {
