@@ -256,7 +256,7 @@ const profiles: BusinessProfile[] = [
         "company": "Fabtech Technologies",
         "inShort": [
             "**Designs and builds whole medicine factories** (cleanrooms, air handling, purified water and process equipment) for drug and vaccine makers and governments, almost entirely abroad: the Gulf, Saudi Arabia and Africa.",
-            "**Good:** a ₹900cr+ order book (over 2x FY26 revenue), about ₹149cr of net cash after its October 2025 IPO, and a P/E near 12. **Bad:** it has turned almost none of its profit into cash (₹7cr of operating cash on ₹168cr of operating profit over FY22–FY26), customers take about 215 days to pay, the operating margin fell from 15% to 9% in two years, about 40% of pre-tax profit is other income, it buys heavily from promoter-group firms, and its biggest market is in a war zone.",
+            "**Good:** a ₹900cr+ order book (over 2x FY26 revenue) with another ₹800–850cr being worked on, about ₹149cr of net cash after its October 2025 IPO, and a P/E near 19. **Bad:** it has turned almost none of its profit into cash (₹7cr of operating cash on ₹168cr of operating profit over FY22–FY26), customers take about 215 days to pay, the operating margin fell from 15% to 9% in two years, about 40% of pre-tax profit is other income, it buys heavily from promoter-group firms, and its biggest market is in a war zone. Q2 FY27 revenue fell 24% to ₹92cr (H1 ₹167cr against ₹189cr), so the 20–25% FY27 growth guide now needs H2 up about 50%; management kept an 8–9% profit margin and talks of 25–30% a year over three to five years.",
             "**Verdict: wait.** Cheap on paper, but the profit has not been turning into cash and the related-party web is large; it moves up only if FY27 delivers the guided growth and margin with positive operating cash."
         ],
         "tagline": "A Mumbai-based turnkey builder of pharma, vaccine and biotech plants for emerging markets, listed in October 2025, that owns stakes in group firms making cleanroom, air and water systems.",
@@ -377,9 +377,9 @@ const profiles: BusinessProfile[] = [
         "position": "**A small specialist** (₹411cr revenue) that says it has delivered 500+ projects in 62+ countries; no market share is disclosed.",
         "money": "**About ₹149cr of net cash** at March 2026 (cash, bank deposits and liquid investments of ₹218cr against ₹70cr of borrowings and leases), after a ₹230cr IPO at ₹191 in October 2025: ₹127cr was for working capital, ₹30cr for acquisitions and the rest general purposes. **Operating cash was ₹0.5cr in FY26 and −₹36cr in FY25**; customers owed ₹204cr at March (about 215 debtor days on Screener), against about ₹110cr of customer advances. About ₹21cr of FY26's ₹48cr pre-tax profit was other income, and FY25 profit included an ₹18cr gain from selling part of TSA Process Equipments to Thermax; the rest of that stake is being sold for ₹14cr at a revised price (September 2026). A ₹24cr injection into the UAE subsidiary and an Egypt subsidiary are approved. CRISIL rates it BBB+/Stable (October 2025). At a market value of about {mcap:Fabtech Technologies|₹561cr} and a P/E of about {pe:Fabtech Technologies|11.6}, the shares are about a third below the IPO price. Promoters hold **69.03%** (September 2026); institutions hold under 3%.",
         "watch": [
-            "Q2 FY27 results: 'steady' revenue near ₹121cr with a profit, and new orders after the war delays.",
+            "H2 FY27 revenue up about 50% (needed for the 20–25% guide) as the ₹900cr order book moves into execution.",
             "Operating cash turning clearly positive and debtor days falling from about 215.",
-            "The Italy and Saudi acquisitions closing by March 2027, and related-party purchases as a share of costs."
+            "The European (Italy) acquisition closing within six months, as now promised, and related-party purchases as a share of costs."
         ],
         charts: industrialsProcessCharts["Fabtech Technologies"],
     },
