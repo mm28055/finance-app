@@ -257,7 +257,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Raymond Realty',
-        inShort: ["**The Raymond group's developer**: a 100-acre Thane township on the group's old factory land plus eight joint developments in Bandra, BKC, Wadala, Sion, Mahim, Kandivali and Parel; listed in July 2025.", "**Good:** Q1 FY27 bookings rose 129%, joint developments now bring 64% of them, and CARE rates it A+. **Bad:** operating cash was −₹910cr in FY26, it expects two more cash-negative years, interest cut Q1 profit to ₹13cr, and Thane, its cash engine, sells less each year.", "**Verdict: wait.** Growing fast on borrowed time; the cash burn has to end first."],
+        inShort: ["**The Raymond group's developer**: a 100-acre Thane township on the group's old factory land plus eight joint developments in Bandra, BKC, Wadala, Sion, Mahim, Kandivali and Parel; listed in July 2025.", "**Good:** H1 FY27 bookings rose 111% to ₹1,602cr, collections rose 67% in Q2, joint developments bring most of the sales, and CARE rates it A+. **Bad:** operating cash was −₹910cr in FY26, it expects two more cash-negative years, interest cut Q1 profit to ₹13cr, and Thane, its cash engine, sells less each year.", "**Verdict: wait.** Growing fast on borrowed time; the cash burn has to end first."],
         tagline: "A Mumbai-region developer moving from one paid-for Thane township to capital-light joint developments in prime Mumbai.",
         revenue: '₹2,991cr (FY26, consolidated)',
         products: [
@@ -278,7 +278,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Lodha, Adani, Oberoi, Kalpataru, Piramal', note: 'Large developers crowding the Thane market.' }, { name: 'Keystone (Rustomjee) and Mahindra Lifespace', note: 'Listed rivals for Mumbai society and joint-development deals.' }, { name: 'Godrej Properties', note: 'Aggressive bidder for Mumbai joint developments.' }],
         position: "**One of the larger sellers in Thane** through its township, now building a ₹52,000cr pipeline across prime Mumbai through joint developments.",
         money: "Screener shows **₹659cr of net debt** at March 2026; the company puts it at ₹824cr at June, 0.7 times equity against an internal cap of 1 times, at 9.6%. Filed operating cash was −₹910cr in FY26 as it paid approval premiums and landowner deposits for joint developments; Thane releases about ₹450–500cr a year, and management says the company will stay cash-negative for two more years. Interest of ₹100–120cr is guided for FY27, including interest on approval-premium instalments. Project-level fund money is an option. Management called new equity the ‘last resort’, but on 11 September 2026 the board approved up to ₹409cr of warrants at ₹614 for promoter-group company J K Investors (Bombay), and holders approved them on 8 October; full conversion adds 10% more shares (about 9% dilution) and raises the promoter stake. Rated A+ by CARE; an income-tax survey in September 2025 is being monitored. Promoters hold **50.9%**, up from 48.9% in June 2025; no pledges.",
-        watch: ["The two Mahim launches between November and March.", "Operating margin reaching 17%.", "Net debt staying below one times equity.", "Thane bookings holding at ₹1,300–1,500cr a year."],
+        watch: ["The two Mahim launches, one in Q3 and one in Q4 FY27.", "Operating margin reaching 17% (15% in Q2).", "Net debt (₹912cr at September) staying below one times equity.", "Thane bookings holding at ₹1,300–1,500cr a year."],
         charts: realtyCharts['Raymond Realty'],
     },
     {
