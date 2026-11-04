@@ -681,7 +681,7 @@ export const hospitals: SectorOverview = {
         {
             company: 'Global Health (Medanta)', rank: 7, stance: 'PRICED', segment: LARGE,
             what: "Runs six Medanta hospitals in Gurugram, Lucknow, Patna, Ranchi, Indore and Noida, founded by heart surgeon Dr Naresh Trehan and known for complex surgery and transplants.",
-            view: "**Excellent operator, price ahead of it.** Inpatient volumes +28%, Noida's loss down to ₹4.9cr and net cash of ₹591cr at March, but profit after tax fell 1% in Q1 as depreciation and interest rose, and ₹4,850cr of projects plus a ₹1,770cr lease lie ahead. The price needs about {need:Global Health (Medanta)|28}% against my ~20%.",
+            view: "**Excellent operator, price ahead of it.** Inpatient volumes +28%, Noida's loss down to ₹4.9cr and net cash of ₹591cr at March, but profit after tax fell 1% in Q1 as depreciation and interest rose, and ₹4,850cr of projects plus a ₹1,770cr lease lie ahead. The price needs about {need:Global Health (Medanta)|28}% against my ~20%. **4 Nov 2026:** the board approved ₹997cr for a 500-bed hospital in Ghaziabad on land allotted by the UP housing board, about a fifth of a year's sales.",
             watch: 'Noida at break-even; Gurugram growth as rivals open nearby; Mumbai approvals.',
         },
         {
