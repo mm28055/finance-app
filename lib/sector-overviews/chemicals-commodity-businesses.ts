@@ -250,7 +250,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Supreme Petrochem',
-        inShort: ["**India's largest polystyrene and expandable-polystyrene (thermocol) maker**, owned jointly by the Raheja group and Supreme Industries, with over half of both markets, plus a new ABS line, insulation boards and plastic compounds.", "**Good:** debt-free with ₹874cr of surplus cash (company, June; ₹592cr on Screener), supplies 'practically every refrigerator manufacturer', and pays out about 60% of profit. **Bad:** it buys all its styrene and prices at import parity, Q1 FY27 volume fell 24.5%, its new ABS line runs at 65% after failing, and the Q1 margin was a windfall its CFO called 'an aberration'.", "**Verdict: wait.** Well run, but the price assumes today's windfall and new lines that are years away."],
+        inShort: ["**India's largest polystyrene and expandable-polystyrene (thermocol) maker**, owned jointly by the Raheja group and Supreme Industries, with over half of both markets, plus a new ABS line, insulation boards and plastic compounds.", "**Good:** debt-free with ₹874cr of surplus cash (company, June; ₹592cr on Screener), supplies 'practically every refrigerator manufacturer', and pays out about 60% of profit. **Bad:** it buys all its styrene and prices at import parity, Q1 FY27 volume fell 24.5% before recovering 24% in Q2, its new ABS line still runs at about 55% of rated capacity after failing, the Q1 margin was a windfall its CFO called 'an aberration', and Q2's fell to about 8% under cheap imports.", "**Verdict: wait.** Well run, but the price assumes today's windfall and new lines that are years away."],
         tagline: "India's market leader in polystyrene and EPS, a debt-free styrene converter adding ABS, insulation boards and compounds.",
         revenue: '₹5,338cr (FY26, standalone)',
         products: [
@@ -272,7 +272,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Asian polystyrene exporters (Thailand, Taiwan, Korea, Iran, Singapore)', note: 'Set the landed price; redirected to India as China became self-sufficient.' }, { name: 'Styrenix Performance', note: 'The largest Indian ABS maker and a smaller polystyrene maker.' }, { name: 'Other Indian EPS and polystyrene makers', note: 'Smaller; Supreme has the largest capacity.' }],
         position: "**Market leader in Indian polystyrene and EPS, with over 50% share** and the largest capacity; a new and so far troubled entrant in ABS.",
         money: "**Net cash of ₹592cr** on Screener; the company reports surplus cash of ₹874cr in June 2026 and no bank debt. All planned capex (about ₹900cr) is to come from its own cash. CRISIL rates it AA- but cut its outlook from Positive to Stable in February 2026 over margins and the ABS setback. The audit is clean, contingent liabilities are about ₹20cr, and it sold ₹129cr of goods to its shareholder Supreme Industries at market rates. It pays ₹10.5 a share (60% of profit). Promoters (Supreme Industries and R. Raheja Investments, 30.78% each) hold **64.2%**, unchanged.",
-        watch: ["ABS above 80% of capacity.", "Quarterly volume back above 90,000 tonnes at 9–11% margins.", "Any stock losses as styrene falls."],
+        watch: ["ABS repaired and above 80% of capacity (about 55% in Q2 FY27).", "Margins back to 9–11% with volume above 90,000 tonnes a quarter (95,242 t at 8% in Q2).", "Any stock losses as styrene falls."],
         charts: chemicalsCharts['Supreme Petrochem'],
     },
     {

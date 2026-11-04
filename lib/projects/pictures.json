@@ -36176,21 +36176,21 @@
   },
   {
    "company": "Supreme Petrochem",
-   "fingerprint": "b73b8cf5e7e56c63",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "078eb7b289b82a38",
+   "checkedOn": "2026-11-04",
    "lines": {
-    "heading": "How full the lines run (ABS now; EPS in FY26)",
+    "heading": "How full the lines run (ABS in Q2 FY27; EPS in FY26)",
     "items": [
      {
       "name": "ABS",
       "size": "70,000 t a year",
-      "usedPct": 65,
-      "usedLabel": "about 65% used (held there until the failed equipment is fixed)",
+      "usedPct": 55,
+      "usedLabel": "about 55% of rated capacity (85% of the reduced 65%, Q2 FY27 call)",
       "marker": {
        "pct": 85,
        "label": "this year's hope: 80–90% (Q4 FY26 call; dashed at 85%, the midpoint)"
       },
-      "note": "Proprietary Versalis equipment failed in December 2025; a stop-gap lets it run at 65% of rated capacity; insured"
+      "note": "Proprietary Versalis equipment failed in December 2025 and is still not fully repaired; a stop-gap lets it run at 65% of rated capacity; insured"
      },
      {
       "name": "EPS (thermocol)",
@@ -36221,7 +36221,7 @@
      ]
     },
     {
-     "heading": "What the wide XPS line and compounding expansion add (by June 2027, filled over about two years)",
+     "heading": "What the wide XPS line and compounding expansion add (was by June 2027; compounding now about Q3 FY28)",
      "projectId": "supreme-petrochem-xps-compounding",
      "bars": [
       {
@@ -36331,7 +36331,7 @@
      "milestones": [
       "supreme-petrochem-abs-line1-m1"
      ],
-     "sub": "Aim from the Q4 FY26 call (Apr 2026); no update on the Q1 FY27 call"
+     "sub": "Aim from the Q4 FY26 call (Apr 2026); at Q2 FY27 the equipment was still not fully repaired"
     },
     {
      "when": "Q1 FY28",
@@ -36339,7 +36339,15 @@
      "milestones": [
       "supreme-petrochem-xps-compounding-m1"
      ],
-     "sub": "Commissioning by June 2027"
+     "sub": "Commissioning had been by June 2027 (Q1 FY27 call)"
+    },
+    {
+     "when": "Q3 FY28",
+     "tone": "later",
+     "milestones": [
+      "supreme-petrochem-xps-compounding-m2"
+     ],
+     "sub": "Management changed this in Nov 2026: compounding to 80,000 t now about Q3 FY28; no new XPS date"
     },
     {
      "when": "Q3 FY29",
@@ -36365,7 +36373,7 @@
     "Today: polystyrene 3 lakh t a year at Amdoshi; EPS 1.43 lakh t; ABS 70,000 t; XPS boards 72,000 cubic metres; compounding 50,000 t",
     "Polystyrene runs full in peak months (no figure given)"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (Apr 2026) and sector note"
+   "source": "Q2 FY27 call (Nov 2026), Q1 FY27 call (Jul 2026), Q4 FY26 call (Apr 2026) and sector note"
   },
   {
    "company": "Supreme Power",

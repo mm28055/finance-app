@@ -2814,9 +2814,15 @@
    "cost": "₹450cr together with the new polystyrene line",
    "expectedStart": "Q1 FY28",
    "status": "building",
-   "source": "Q1 FY27 call (29 Jul 2026): capacity by June 2027, filled over about two years",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "Wide XPS line of 1.5 lakh cubic metres (about 3x today's 72,000) and compounding 50,000 t to 80,000 t (+60%)"
+   "source": "Q2 FY27 call (Nov 2026); Q1 FY27 call (29 Jul 2026): capacity by June 2027, filled over about two years",
+   "updatedOn": "2026-11-04",
+   "capacityAdd": "Wide XPS line of 1.5 lakh cubic metres (about 3x today's 72,000) and compounding 50,000 t to 80,000 t (+60%)",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call (Nov 2026): compounding to 80,000 t now ‘sometime in the third quarter of FY28’ (was June 2027); no new date given for the XPS line"
+    }
+   ]
   },
   {
    "id": "supreme-petrochem-abs-line1",
@@ -2825,8 +2831,8 @@
    "name": "ABS line recovery",
    "what": "70,000-tonne ABS line started September 2025; proprietary Versalis equipment failed in December 2025 and it runs at 65% until fixed (insured)",
    "status": "ramping",
-   "source": "Q4 FY26 call (28 Apr 2026) aimed for 80–90% use this year; no update on the Q1 FY27 call",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (Nov 2026): equipment still not fully repaired; running at about 85% of the reduced 65% capacity (about 55% of rated). Q4 FY26 call (28 Apr 2026) had aimed for 80–90% use this year",
+   "updatedOn": "2026-11-04",
    "capacityAdd": "70,000 t ABS line, running at about 65% until repaired"
   },
   {
