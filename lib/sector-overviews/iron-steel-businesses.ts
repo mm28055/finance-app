@@ -484,7 +484,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Aeroflex Industries',
-        inShort: ["**A maker of stainless-steel flexible hoses and hose assemblies**, sold mostly to industry abroad, that has quickly become a supplier of liquid-cooling skids for Indian data centres.", "**Good:** revenue rose 72% in Q1 FY27 to a record ₹145cr, the margin is about 23% and it has net cash. **Bad:** the skid business, now almost a quarter of sales, rests on one customer and has no patents behind it; free cash was negative in FY25 and FY26; and it is appealing a ₹41.76cr tax demand, about three-quarters of FY26 profit.", "**Verdict: wait.** A good business, but the price needs far more growth than I expect: it already assumes the data-centre boom runs for years."],
+        inShort: ["**A maker of stainless-steel flexible hoses and hose assemblies**, sold mostly to industry abroad, that has quickly become a supplier of liquid-cooling skids for Indian data centres.", "**Good:** revenue rose 72% in Q1 FY27 and 87% in Q2 to a record ₹207cr, the margin is about 23–24% and it has net cash. **Bad:** the skid business, now almost a quarter of sales, rests on one customer and has no patents behind it; free cash was negative in FY25 and FY26; and it is appealing a ₹41.76cr tax demand, about three-quarters of FY26 profit.", "**Verdict: wait.** A good business, but the price needs far more growth than I expect: it already assumes the data-centre boom runs for years."],
         tagline: "A maker of stainless-steel flexible hoses, hose assemblies and metal bellows that now also builds liquid-cooling pipe skids for data centres.",
         revenue: '₹442cr (FY26, consolidated)',
         products: [
