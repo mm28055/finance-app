@@ -291,7 +291,11 @@
    "due": "Q2 FY27",
    "ifMet": "Condition to leave wait",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Order book ₹855cr on multi-year deals and FACC starting, but parts and assemblies were 33% of H1 FY27 revenue, most of it Hobel (30% of the total)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "unimech-aerospace-q4fy27-1",
@@ -321,7 +325,11 @@
    "text": "Size and price of the ₹750cr share sale",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "No share sale made by the Q2 FY27 call (still authorised)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait; dilution still to come"
   },
   {
    "id": "zen-technologies-q3fy27-1",
@@ -1528,7 +1536,8 @@
    "status": "missed",
    "actual": "22.5%",
    "resolvedOn": "2026-11-02",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait: the mix shift to traction motors and inflation kept the margin at 23%; the price already leaves no room"
   },
   {
    "id": "sona-blw-precision-q4fy27-1",
@@ -1540,7 +1549,13 @@
    "target": 23,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: 23–25% band kept; near-term margins hard to predict as traction motors (lower margin) grow and input costs rise"
+    }
+   ]
   },
   {
    "id": "sedemac-mechatronics-q2fy27-1",
@@ -2261,7 +2276,13 @@
    "due": "Q4 FY27",
    "ifMet": "Part of the condition to stop waiting",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: heavy H1 capex and working capital lifted gross debt to ₹3,618cr; management expects 1.7–1.8 times net debt to operating profit for FY27 and self-funding from next year"
+    }
+   ]
   },
   {
    "id": "craftsman-automation-q4fy27-3",
@@ -2282,7 +2303,11 @@
    "text": "No further equity raise or promoter selling",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "No equity raise in Q2 FY27; promoters steady at 42.41% (Screener, June and September)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait: free cash and Sunbeam come first"
   },
   {
    "id": "alicon-castalloy-q2fy27-1",
@@ -3950,7 +3975,11 @@
    "text": "New ABS line running above 80% of capacity",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "About 85% of the reduced 65% capacity, so about 55% of rated; equipment still not fully repaired (Q2 FY27 call)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "supreme-petrochem-q2fy27-2",
@@ -3959,7 +3988,11 @@
    "text": "Quarterly volume back above 90,000 tonnes",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "95,242 tonnes in Q2 FY27, up 24% year on year and 35% on Q1",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "supreme-petrochem-q2fy27-3",
@@ -3977,7 +4010,8 @@
    "status": "missed",
    "actual": "7.7%",
    "resolvedOn": "2026-11-02",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait: volume came back but cheap ASEAN and Chinese imports held prices down in July–August"
   },
   {
    "id": "tata-chemicals-q2fy27-1",
@@ -16644,7 +16678,13 @@
    "text": "Volumes restored on the paused $300m agrochemical contract by Q3",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: first lot delivered; future volumes still being negotiated, a decision ‘hopefully within next few weeks’"
+    }
+   ]
   },
   {
    "id": "jubilant-ingrevia-q3fy27-2",
@@ -16662,7 +16702,13 @@
    "text": "FY27 EBITDA of ₹750–800cr, as guided",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: guidance kept, now expected ‘closer to the upper end’ of ₹750–800cr"
+    }
+   ]
   },
   {
    "id": "onesource-specialty-q2fy27-1",
@@ -19211,7 +19257,11 @@
    "text": "Net debt stays below one times equity",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Net debt ₹912cr at September, about 0.8 times equity on the company’s count (Q2 FY27 call)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait: debt is still rising and cash comes later"
   },
   {
    "id": "raymond-realty-q4fy27-1",
@@ -19220,7 +19270,13 @@
    "text": "The two Mahim launches between November 2026 and March 2027",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: one Mahim launch in Q3 and one in Q4, about ₹4,100cr of GDV together"
+    }
+   ]
   },
   {
    "id": "raymond-realty-q4fy27-2",
@@ -24187,8 +24243,12 @@
    "text": "DR Axion Sriperumbudur plant starts (December 2026)",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "craftsman-automation-dr-axion"
+   "status": "met",
+   "project": "craftsman-automation-dr-axion",
+   "actual": "DR Axion plant 2 had started trial production by the Q2 FY27 call (Nov 2026), ahead of December",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "craftsman-automation-hosur-3-m1",
@@ -25272,7 +25332,13 @@
    "due": "Q1 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "supreme-petrochem-xps-compounding"
+   "project": "supreme-petrochem-xps-compounding",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: compounding to 80,000 t now about Q3 FY28"
+    }
+   ]
   },
   {
    "id": "supreme-petrochem-abs-line1-m1",
@@ -35541,7 +35607,11 @@
    "ifMet": "The roadshow promise holds in the festive quarter",
    "ifMissed": "Growth is slowing toward the pooling-only 17–18% the CEO also cited",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Q2 FY27 revenue +18% on Screener (₹211cr); the company counts +22.5% (₹216cr)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "leapind-q4fy27-1",
@@ -35580,7 +35650,13 @@
    "ifMet": "Cash conversion improves and borrowing needs fall",
    "ifMissed": "Receivables stay near four months of sales, as in FY24–FY26",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: payment days 122 at September (128 at the start of the year, 119 at June on the earlier count); the CEO now promises under 90 days by the end of FY27"
+    }
+   ]
   },
   {
    "id": "jyotires-q2fy27-1",
@@ -37825,6 +37901,16 @@
    "due": "Q4 FY27",
    "createdOn": "2026-11-04",
    "status": "pending"
+  },
+  {
+   "id": "supreme-petrochem-xps-compounding-m2",
+   "company": "Supreme Petrochem",
+   "sector": "Chemicals",
+   "text": "Compounding at 80,000 tonnes (now about Q3 FY28, Q2 FY27 call)",
+   "due": "Q3 FY28",
+   "createdOn": "2026-11-04",
+   "status": "pending",
+   "project": "supreme-petrochem-xps-compounding"
   }
  ]
 }
