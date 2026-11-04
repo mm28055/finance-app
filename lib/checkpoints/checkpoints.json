@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03",
+ "updated": "2026-11-04",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -12753,7 +12753,8 @@
    "status": "met",
    "actual": "16.7%",
    "resolvedOn": "2026-11-02",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow: the price fits, but only a third of five years of profit arrived as cash"
   },
   {
    "id": "macpower-cnc-q3fy27-1",
@@ -12779,7 +12780,13 @@
    "target": 30,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: FY27 revenue growth guide raised to about 35%; 25–30% a year for the next three years"
+    }
+   ]
   },
   {
    "id": "macpower-cnc-q2fy27-2",
@@ -12789,7 +12796,11 @@
    "due": "Q2 FY27",
    "ifMet": "Changes the view for the better",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Not signed; still waiting for Gujarat’s defence policy (Q2 FY27 call, 27 Oct 2026)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; the 13-acre site carries the growth until then"
   },
   {
    "id": "jyoti-cnc-auto-q4fy27-1",
@@ -14882,7 +14893,13 @@
    "text": "Copper earning about ₹60,000 a tonne by March 2027, as guided (₹55,151 in Q1)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: copper earned ₹84,671 a tonne in Q2 (partly one-off high-value orders); management now expects about ₹65,000–70,000 a tonne for the next few quarters"
+    }
+   ]
   },
   {
    "id": "gravita-india-q4fy27-2",
@@ -14891,7 +14908,13 @@
    "text": "FY27 profit growth within the 25–30% a year target (Q1 +14%)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27: profit +6% year on year (H1 about +10%); management kept the 25–30% target and says lead volume recovers from Q3"
+    }
+   ]
   },
   {
    "id": "gravita-india-q3fy27-1",
@@ -19005,7 +19028,11 @@
    "text": "Nepean Sea Road gets RERA registration and construction starts",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "No RERA yet; demolition under way, RERA now promised before the end of FY27 (Q2 FY27 call, 27 Oct 2026)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; a Top 12 trigger only if there is no RERA by the Q4 FY27 results"
   },
   {
    "id": "sunteck-realty-q4fy27-1",
@@ -19024,7 +19051,13 @@
    "text": "FY27 pre-sales up 25–30%, as guided (raised)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: management now speaks of about 25% FY27 pre-sales growth (H1 +19%), with ₹7,000cr of launches in H2"
+    }
+   ]
   },
   {
    "id": "sunteck-realty-q4fy27-3",
@@ -19524,7 +19557,8 @@
    "status": "partly",
    "actual": "9.7%",
    "resolvedOn": "2026-11-02",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow: about 10% on Screener and the company, but supplier numbers are still falling"
   },
   {
    "id": "indiamart-intermesh-q2fy27-2",
@@ -19533,7 +19567,11 @@
    "text": "Cash collections growth stays above 8%",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Consolidated collections +9% (standalone +8%) in Q2 FY27",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "indiamart-intermesh-q3fy27-1",
@@ -19543,7 +19581,11 @@
    "due": "Q3 FY27",
    "ifMet": "A buy if supplier numbers turn",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Net paying suppliers −615 in Q2 FY27 (−1,852 in Q1), so two positive quarters by Q3 is no longer possible",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; not a buy until supplier numbers turn"
   },
   {
    "id": "aditya-birla-lifesty-q2fy27-1",
@@ -20058,7 +20100,8 @@
    "status": "partly",
    "actual": "11.6%",
    "resolvedOn": "2026-11-03",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays own: about 1.5 points of the shortfall was a one-off inventory loss, and profit per tonne and return on capital stayed healthy"
   },
   {
    "id": "apcotex-inds-q4fy27-1",
@@ -21410,7 +21453,11 @@
    "ifMet": "Add to the small position",
    "ifMissed": "Keep the position small",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "22% year-on-year in dollars in Q2 FY27 (30% in rupees; +6% on the quarter)",
+   "resolvedOn": "2026-11-04",
+   "resolvedBy": "review",
+   "outcome": "Stays own; a small position"
   },
   {
    "id": "infobeans-technologies-q4fy27-1",
@@ -31553,7 +31600,13 @@
    "due": "Q1 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "apcotex-inds-latex"
+   "project": "apcotex-inds-latex",
+   "revisions": [
+    {
+     "on": "2026-11-04",
+     "text": "Q2 FY27 call: the synthetic latex plant may now start in Q2 FY28"
+    }
+   ]
   },
   {
    "id": "tinna-rubber-pyrolysis-m1",
@@ -37604,6 +37657,47 @@
    "due": "Q3 FY27",
    "ifMet": "Can give a growth estimate and reconsider the pass",
    "ifMissed": "Stays pass"
+  },
+  {
+   "id": "apcotex-inds-latex-m2",
+   "company": "Apcotex Inds",
+   "sector": "Rubber",
+   "text": "Synthetic latex plant at Valia starts (now perhaps Q2 FY28, Q2 FY27 call)",
+   "due": "Q2 FY28",
+   "createdOn": "2026-11-04",
+   "status": "pending",
+   "project": "apcotex-inds-latex"
+  },
+  {
+   "id": "macpower-cnc-q4fy27-2",
+   "company": "Macpower CNC",
+   "sector": "Industrial Machinery",
+   "text": "FY27 revenue growth of about 35% (guide raised again on the Q2 FY27 call)",
+   "metric": "fyRevenueGrowth",
+   "op": ">=",
+   "target": 35,
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-04",
+   "status": "pending"
+  },
+  {
+   "id": "sunteck-realty-q4fy27-4",
+   "company": "Sunteck Realty",
+   "sector": "Realty",
+   "text": "Nepean Sea Road launched with RERA before the end of FY27, as promised on the Q2 FY27 call",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-04",
+   "status": "pending"
+  },
+  {
+   "id": "indiamart-intermesh-q4fy27-1",
+   "company": "Indiamart Intermesh",
+   "sector": "Retail",
+   "text": "Net paying-supplier additions positive in Q3 and Q4 FY27 (−615 in Q2)",
+   "due": "Q4 FY27",
+   "ifMet": "A buy if supplier numbers turn",
+   "createdOn": "2026-11-04",
+   "status": "pending"
   }
  ]
 }
