@@ -220,7 +220,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Acutaas Chemicals',
-        inShort: ["**Makes advanced intermediates**, the last chemical steps before a medicine's active ingredient, for drug innovators and generic makers, plus battery-electrolyte additives and semiconductor chemicals. It will not make the final ingredient: “we do not compete with our customers”.", "**Good:** revenue up 59% in Q1, margins of 34–42%, and a battery plant fully contracted for three years. **Bad:** contract growth leans on one anchor product, and free cash flow was negative in each of the last five years.", "**Verdict: follow.** The best growth in the group, but the price already assumes about {need:Acutaas Chemicals|29}% a year."],
+        inShort: ["**Makes advanced intermediates**, the last chemical steps before a medicine's active ingredient, for drug innovators and generic makers, plus battery-electrolyte additives and semiconductor chemicals. It will not make the final ingredient: “we do not compete with our customers”.", "**Good:** revenue up 59% in Q1 and 43% in Q2, FY27 guidance raised to about 30% growth at a 38–40% margin, contract revenue of ₹1,000cr expected a year early, and a battery plant fully contracted for three years. **Bad:** contract growth leans on one anchor product, and free cash flow was negative in each of the last five years.", "**Verdict: follow.** The best growth in the group, but the price already assumes about {need:Acutaas Chemicals|29}% a year."],
         tagline: "Formerly Ami Organics: a maker of advanced pharmaceutical intermediates and contract-made molecules, adding battery and semiconductor chemicals.",
         revenue: '₹1,339cr (FY26, consolidated)',
         products: [
@@ -247,7 +247,7 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**A leading Indian maker of advanced pharmaceutical intermediates**, with 500-plus intermediates, about 600 customers and a claimed 50–90% world share in key intermediates (annual report). Its main Sachin plant runs at 83%.",
         money: "**₹189cr of net cash** on Screener (₹225cr of cash against ₹36cr of borrowings); the company put net cash at about ₹314cr at 30 June 2026. FY27 capex is about ₹95cr (₹50cr finishing the battery and pilot plants, ₹45cr maintenance), plus an R&D centre and land not yet costed; Q1 capex was ₹56cr. Working capital lengthened from 91 to 99 days in Q1. It gave 10% of its electrolyte subsidiary to its business partner ARZ. The auditor's report is clean and contingent liabilities are ₹17cr, but ₹75.3cr was paid to small suppliers after the legal due date in FY26, and in September shareholders rejected share options for its subsidiaries' employees (72.6% in favour against 75% needed). Promoters hold **32.7%**, down from 38.9% in September 2023.",
-        watch: ["Four validated contract products ramping towards ₹50–100cr each in FY28.", "Battery revenue ramping up (not disclosed) and IndiChem's first sales in FY28.", "Working capital back below 99 days, and free cash flow turning positive."],
+        watch: ["Four validated contract products ramping towards ₹50–100cr each in FY28.", "Battery revenue ramping up after the first commercial quarter (Q2 FY27), the fourth battery product moving past pilot batches, and IndiChem's first sales in FY28.", "Working capital back below 99 days, and free cash flow turning positive."],
         charts: pharmaApiCharts['Acutaas Chemicals'],
     },
     {
