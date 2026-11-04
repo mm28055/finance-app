@@ -476,7 +476,7 @@ export const agrochemicalFertilizers: SectorOverview = {
                         ['GSFC', '“No cash surplus”: ₹500cr short-term borrowing at June; ~₹500cr of subsidy outstanding in August', 'Net cash and investments ₹4,783cr (Screener); ₹1,332cr of “other” claims'],
                         ['Madhya Bharat Agro Products', 'Dhule ₹675cr (₹460cr spent by April); phase 2 “could be through pure equity”', 'Borrowings ₹856cr (₹318cr a year earlier); ₹300.5cr preferential issue (₹317.5cr planned); ₹1,000cr share authority'],
                         ['Krishana Phoschem', 'More than ₹700cr collected in Q1; working-capital limits 70% used in June', 'Borrowings ₹733cr (₹376cr); CRISIL rating on watch'],
-                        ['Sumitomo Chemical India', 'No Q1 call. Cash and liquid investments ₹2,549cr at June; ₹150cr Dahej plant', 'Debt ₹63cr (leases); contingent claims ₹601cr'],
+                        ['Sumitomo Chemical India', 'Cash and liquid investments ₹2,523cr at September (Q2 call); ₹150cr Dahej plant; working capital 76 days against 55', 'Debt ₹63cr (leases); contingent claims ₹601cr'],
                         ['Rallis India', 'Cash ₹541cr at March, ₹309cr at June, about ₹211cr at September as inventory stayed high (seed stock and war-time raw materials)', 'Net cash ₹489cr (Screener, March)'],
                         ['Dhanuka Agritech', '₹70cr buyback at ₹1,400; Nagpur plant up to ₹200cr', 'Net cash ₹360cr; GST claims ₹135cr'],
                         ['Insecticides (India)', '₹70cr of the ₹200cr Sotanala plant spent; no working-capital target', 'Borrowings ₹157cr at March; ~₹800cr of stock entering kharif'],
@@ -569,7 +569,7 @@ export const agrochemicalFertilizers: SectorOverview = {
                         ['Paradeep Phosphates', 'Stock and receivables to unwind in Q1; acid to 0.7m t in FY27; acid-plant decision within the quarter', '~₹600cr in FY27; ₹3,500–3,600cr later', '**Mixed**: debt −₹700cr; subsidy owed +₹800cr; projects slipped a year'],
                         ['Dhanuka Agritech', 'Low double-digit growth; margin −1 point; Dahej ₹75cr; “June will be strong”', 'Nagpur up to ₹200cr', '**Missed**: sales −12.6%; guide cut to low single digits and −2 points'],
                         ['India Pesticides', 'Growth 15–20%; margin 18–20%; Hamirpur ₹70–80cr', '~₹100cr a year', '**Missed**: sales −9%; growth cut to low single digits; margin ~15.5%'],
-                        ['Sumitomo Chemical India', '“Cautiously optimistic”; Q1 “constructive”; margins sustainable', '₹150cr Dahej for FY29', '**Mixed**: margin 21.9%; sales +1%; clean profit ~+10%'],
+                        ['Sumitomo Chemical India', 'H2 ‘challenging’ (El Niño, low reservoirs) but aims to grow on last year; margins protected (Q2 call)', '₹150cr Dahej for FY29; all projects on plan', '**Behind** (Q2 call): Q2 revenue −2%, H1 −1%; margin about 21%; stock 115 days'],
                         ['Insecticides (India)', 'Growth “visible from the first quarter itself”; finance cost −25–30%; 120-day cycle', '₹200cr Sotanala (₹70cr spent)', '**Missed**: sales −12%, profit −24%; Sotanala six months late'],
                         ['Punjab Chem. & Corp', 'Growth 15–20% “on the upper side”; MoU products commercial in FY27', '₹105–130cr in FY27', '**Behind**: Q1 +8.7%; MoU volumes from Q4 FY27'],
                         ['Madhya Bharat Agro Products', '+50–60% in FY27; ₹4,000cr by FY28; Dhule NPK before October', 'Dhule ₹675cr; phase 2 funding open', '**Behind**: Q1 +1.5%; no exact forecast; equity being raised'],
@@ -701,8 +701,8 @@ export const agrochemicalFertilizers: SectorOverview = {
         {
             company: 'Sumitomo Chemical India', rank: 9, stance: 'PRICED', segment: BRANDS,
             what: "The Indian arm of Japan's Sumitomo Chemical: branded insecticides, herbicides, plant-growth products, biologicals and grain fumigants sold through 15,000 distributors, plus manufacturing for the parent.",
-            view: "**High quality, high price, flat sales.** A 21.9% Q1 margin, ₹2,549cr of cash and real pricing power, but Q1 sales rose 1%, FY26 sales were below FY23, clean Q1 profit rose about 10% (the headline 20% includes a ₹27cr insurance receipt), and the Dahej plant's revenue slipped to FY29. Contingent claims rose to ₹601cr. The price needs about {need:Sumitomo Chemical India|21–22}% a year against my ~12%.",
-            watch: 'Rabi sales growth; a second Dahej project or a use for the cash; the glyphosate court case and ₹335cr of tax demands.',
+            view: "**High quality, high price, flat sales.** A 21.9% Q1 margin, ₹2,549cr of cash and real pricing power, but Q1 sales rose 1%, FY26 sales were below FY23, clean Q1 profit rose about 10% (the headline 20% includes a ₹27cr insurance receipt), and the Dahej plant's revenue slipped to FY29. Contingent claims rose to ₹601cr. The price needs about {need:Sumitomo Chemical India|21–22}% a year against my ~12%. **4 Nov 2026:** stays wait after its first post-results call under the new management (30 Oct). Q2 revenue fell 2% to ₹907cr (H1 −1%) after the weakest monsoon since 2015; volume fell by a high single digit, domestic sales still rose 2% and exports fell 23% on shipment timing. Management expects a hard H2 (a strong El Niño and reservoirs 25% below last year) but aims to grow on last year. Stock rose to 115 days from 95, and cash reached ₹2,523cr.",
+            watch: 'Rabi sales growth despite El Niño; stock days coming down from 115; a second Dahej project or a use for the ₹2,523cr of cash; the glyphosate court case and ₹335cr of tax demands.',
         },
         {
             company: 'Insecticides (India)', rank: 10, stance: 'CYCLICAL', segment: BRANDS,
