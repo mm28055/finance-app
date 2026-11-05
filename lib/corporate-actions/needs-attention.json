@@ -4738,5 +4738,131 @@
     "subject": "Checkpoint missed: jagsonpal-pharma-q2fy27-1",
     "why": "Operating margin held above 20% after the wellness deal — actual 17.7% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
     "addedOn": "2026-11-04"
+  },
+  {
+    "company": "MTAR Technologies",
+    "sector": "Aerospace defence",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "LT Foods",
+    "sector": "Food Products",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "PG Electroplast",
+    "sector": "EMS & Electronics",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "Deepak Nitrite",
+    "sector": "Chemicals",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "Kirloskar Brothers",
+    "sector": "Pumps Comp & Eng",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "Motherson Sumi Wirin",
+    "sector": "Auto Related",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "Cartrade Tech",
+    "sector": "Platform Cos",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "Vimta Labs",
+    "sector": "Healthcare",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "Pine Labs",
+    "sector": "Platform Cos",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "OnEMI Technology",
+    "sector": "Finance",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "Manaksia Coated Metals",
+    "sector": "Iron and Steel",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "Goodluck India",
+    "sector": "Iron and Steel",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "Birlasoft",
+    "sector": "Software",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "Motherson Sumi Wirin",
+    "sector": "Auto Related",
+    "subject": "Checkpoint met: motherson-sumi-wirin-q2fy27-1",
+    "why": "Operating margin back above 9% — actual 9.2% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "Vimta Labs",
+    "sector": "Healthcare",
+    "subject": "Checkpoint missed: vimta-labs-q2fy27-1",
+    "why": "Revenue growth of 15% or more in Q2 (first of two quarters; Q1: +11.8%) — actual 9.8% (missed). Stays follow Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "Manaksia Coated Metals",
+    "sector": "Iron and Steel",
+    "subject": "Checkpoint partly: manaksia-coated-metals-q2fy27-1",
+    "why": "Operating margin holding near 11% (guidance) — actual 10.7% (partly).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "Cartrade Tech",
+    "sector": "Platform Cos",
+    "subject": "Checkpoint met: cartrade-tech-q2fy27-1",
+    "why": "Operating margin above 31% in Q2, as guided for Q2–Q4 — actual 35.7% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-05"
+  },
+  {
+    "company": "Birlasoft",
+    "sector": "Software",
+    "subject": "Checkpoint met: birlasoft-q2fy27-1",
+    "why": "Operating margin at or above 15% after the July wage rise, as guided — actual 15.2% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-05"
   }
 ]
