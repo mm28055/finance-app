@@ -4954,5 +4954,82 @@
     "subject": "Projects: Board approves ₹185cr capex to expand winding wire capacity by 25% (4 Nov 2026)",
     "why": "Filing of 2026-11-04: The board has approved a capital expenditure of ₹185 crore to expand its specialized magnet winding wire capacity at the Supa facility. The expansion will increase total capacity from 57,845 MT to 72,200 MT by Q1 FY29, driven by increasing customer demand. Move the matching project’s status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 6 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/INTERNATIONAL_04112026194229_KSHIntimationofCapacityExpansion_04112026FinalSigned.pdf",
     "addedOn": "2026-11-06"
+  },
+  {
+    "company": "JNK",
+    "sector": "Industrials",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "Tenneco Clean Air",
+    "sector": "Auto Related",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "3B Blackbio Diagnostics",
+    "sector": "Healthcare",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "Alembic Pharma",
+    "sector": "Pharma",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "GNG Electronics",
+    "sector": "Hardware",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "Netweb Technologies",
+    "sector": "Software",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from stretched to fits since the note. Revisit the call.",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "Nocil",
+    "sector": "Chemicals",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from stretched to fits since the note. Revisit the call.",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "RateGain Travel Tech",
+    "sector": "Software",
+    "subject": "Call drift: follow → Fits",
+    "why": "Call is follow; the price check has moved from full to fits since the note — a possible upgrade to own. Revisit the call.",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "Raymond",
+    "sector": "Aerospace defence",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "Aarti Pharmalabs",
+    "sector": "Pharma CDMO",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "Borosil Renewables",
+    "sector": "Industrials",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-06"
   }
 ]
