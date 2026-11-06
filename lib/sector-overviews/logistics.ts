@@ -440,7 +440,7 @@ export const logistics: SectorOverview = {
                     rows: [
                         ['Aegis Logistics', 'Earnings per share +25% a year; distribution above 1 million tonnes this year and 2 million by FY28–FY29 (was ‘by FY28’); margin ₹7,000+ a tonne; terminal volume +25% a year at worst', 'About $1.2bn cumulative by March 2027; up to ₹5,000cr in FY28; $5bn by 2030', '**Mixed**: ammonia terminal on time; terminal volume −3% against +25%; JNPA a quarter late'],
                         ['Delhivery', 'Express volume +20–30% (better end); freight +18–22%; express margin 16–18% in H2; freight exit margin 15–15.5%', 'Below 4.5% of revenue (3.1% in Q1)', '**Missed**: volumes on plan; express margin 15.6% after ‘firmly at the upper end’'],
-                        ['Shadowfax Tech.', 'FY27 revenue +38–40% (raised from 27–30%); after-rent margin +1–1.2 points a year to FY28', '₹180–190cr (about ₹60cr in Q1)', '**Beat**: revenue +65%; margin +2 points; heavy-goods target met early'],
+                        ['Shadowfax Tech.', 'FY27 revenue +38–40% (raised from 27–30%); after-rent margin +1–1.2 points a year to FY28', '₹180–190cr (about ₹60cr in Q1)', '**Beat** (Q2): revenue +57%, H1 +60%; after-rent margin 5%, a first; guide kept until Q3'],
                         ['TVS Supply Chain Sol', 'Revenue mid-teens (raised from early teens); supply-chain margin 9.5–10% by Q4 (was ‘moving forward’); 4% pre-tax margin by FY28 (was this year)', 'Small; growth through leased space', '**Slipping**: revenue beat; supply-chain margin 8.1%; pre-tax target a year later'],
                     ],
                 },
@@ -524,8 +524,8 @@ export const logistics: SectorOverview = {
         {
             company: 'Shadowfax Tech.', rank: 2, stance: 'SCALEUP', segment: PARCEL,
             what: "A delivery company for online marketplaces, quick-commerce apps and brands, using gig riders: next-day parcels, ten-minute local deliveries, heavy goods and shared dark stores; listed in January 2026.",
-            view: "**The fastest grower, riding two customers.** Revenue rose 65% in Q1, the FY27 guide was raised to 38–40%, its after-rent margin rose from 2.9% to 4.9% and it holds ₹1,537cr of cash with no bank debt. But two customers gave about 64% of FY26 revenue, pre-IPO holders sold after the lock-in (by September 2026 Flipkart was down from 7.3% to 1.5%, Eight Roads from 9.5% to 1.5% and TPG's Newquest from 11.5% to 7.4%, and Qualcomm had left), and its auditor flagged manually calculated revenue. The price needs about {need:Shadowfax Tech.|33}% a year against my ~30%.",
-            watch: 'The top two customers’ share falling below half; Q2–Q3 growth against the 38–40% guide; after-rent margin rising 1–1.2 points a year.',
+            view: "**The fastest grower, riding two customers.** Revenue rose 65% in Q1, the FY27 guide was raised to 38–40%, its after-rent margin rose from 2.9% to 4.9% and it holds ₹1,537cr of cash with no bank debt. But two customers gave about 64% of FY26 revenue, pre-IPO holders sold after the lock-in (by September 2026 Flipkart was down from 7.3% to 1.5%, Eight Roads from 9.5% to 1.5% and TPG's Newquest from 11.5% to 7.4%, and Qualcomm had left), and its auditor flagged manually calculated revenue. Q2 (call of 29 Oct 2026) kept the pace: revenue +57% to ₹1,538cr (H1 +60%), orders +70%, a first 5% after-rent margin and ₹67cr of profit, even with the festive season moving into Q3; management kept the 38–40% guide until it sees Q3 and gave no update on customer concentration. The price needs about {need:Shadowfax Tech.|33}% a year against my ~30%.",
+            watch: 'The top two customers’ share falling below half (not disclosed on the Q2 call); Q3 festive volumes and any raise of the 38–40% guide; after-rent margin rising 1–1.2 points a year from 5%.',
         },
         {
             company: 'Delhivery', rank: 3, stance: 'SCALEUP', segment: PARCEL,
