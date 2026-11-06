@@ -3099,7 +3099,8 @@
     "sector": "Auto Related",
     "subject": "Projects: ₹150cr Manesar mechatronics plant approved 24 Oct 2026",
     "why": "New mechatronics plant at Manesar, ₹150cr from debt and own cash, peak revenue about ₹500cr a year, commissioned in two phases from Q3 FY28 (filing of 24 Oct 2026). Add it to projects.json with milestones, mention once in the note and card, then redraw and stamp the picture. Left from the 25 Oct 2026 run (40-entry limit reached).",
-    "addedOn": "2026-10-25"
+    "addedOn": "2026-10-25",
+    "handled": "2026-11-06: Done with the Q2 call: the Manesar project now records the ₹150cr cost and the two-phase start from Q3 FY28 as a revision, its Q3 FY27 milestone is missed and a Q3 FY28 milestone added (no capacity picture to redraw); note and card updated."
   },
   {
     "company": "Eureka Forbes",
@@ -4904,5 +4905,54 @@
     "why": "Operating margin at or above 15% after the July wage rise, as guided — actual 15.2% (met).  Weigh it in the call and write the outcome on the checkpoint.",
     "addedOn": "2026-11-05",
     "handled": "2026-11-06: Margin 15.2% after the July wage rise, as guided; stays follow. Outcome written."
+  },
+  {
+    "company": "Exide Industries",
+    "sector": "Auto Related",
+    "subject": "Projects: Commissioned 6 GWh lithium-ion cell gigafactory; Q2 revenue up 20% (4 Nov 2026)",
+    "why": "Filing of 2026-11-04: Exide Industries has completed the commissioning of its 6 GWh lithium-ion cell gigafactory in Bengaluru through its subsidiary EESL. The company also reported strong Q2 FY27 results, with standalone revenue growing 20.3% year-on-year to ₹5,026 crore and net profit rising 75.1% to ₹386 crore. Move the matching project’s status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 6 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/EXIDEIND_04112026132756_signedOUTCOMEOFBM041126.pdf",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "Windlas Biotech",
+    "sector": "Pharma CDMO",
+    "subject": "Projects: Plant-6 commercialised and EU GMP certification received for Plants 4 & 5 (5 Nov 2026)",
+    "why": "Filing of 2026-11-05: The company announced the commercialisation of its new Plant-6 in September 2026, adding key manufacturing capacity. Additionally, Plant-4 and Plant-5 (Injectable Facility) received EU GMP certification, advancing its long-term export strategy. Move the matching project’s status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 6 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/WINDLAS_05112026175127_PRSEP26_UP.pdf",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "Amanta Healthcare",
+    "sector": "Pharma Others",
+    "subject": "Projects: Commissioned SteriPort Line 3, expected to add ₹110-120cr in peak annual revenue (4 Nov 2026)",
+    "why": "Filing of 2026-11-04: Alongside its Q2FY27 earnings, the company announced the commissioning of SteriPort Line 3 at its Kheda facility in September 2026. This increases SteriPort capacity by 75% to 11.6 crore bottles and is projected to generate ₹110-120 crore annually at optimal utilization, significant against its ₹303 crore trailing sales. A 10.8 MW captive solar plant is also fully operational, expected to save around ₹9 crore annually. Move the matching project’s status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 6 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/AMANTA_04112026113222_Press_Release.pdf",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "Jain Resource Recycling",
+    "sector": "Mining & Metals Recycle",
+    "subject": "Projects: Subsidiary begins Copper Cathode production with 750 MT/month capacity (5 Nov 2026)",
+    "why": "Filing of 2026-11-05: Jain Green Technologies, a wholly owned subsidiary, has commenced commercial operations of its Copper Cathode production line in Gummidipoondi, Tamil Nadu. The new facility has an initial production capacity of 750 MT per month, which is expected to expand the company's product portfolio and strengthen its recycling infrastructure. Move the matching project’s status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 6 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/JAINMETAL_05112026180857_NSEBSEPC-CopperCathode.pdf",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "M & B Engineer.",
+    "sector": "Construction",
+    "subject": "Projects: Q2 revenue up 25% YoY to ₹385cr; starts Phase-I Sanand expansion (5 Nov 2026)",
+    "why": "Filing of 2026-11-05: M&B Engineering reported Q2FY27 revenue of ₹385 crore, up 25.4% YoY, with profit after tax rising 32.8% to ₹29 crore. The company commenced Phase-I of its Sanand brownfield expansion, taking total PEB manufacturing capacity to 124,000 MTPA. Management highlighted an order book of ₹1,109 crore and guided for over 25% revenue growth in FY27. Move the matching project’s status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 6 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/MBENG_05112026131805_PR_intimation.pdf",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "Happy Forgings",
+    "sector": "Forging",
+    "subject": "Projects: Board approves ₹500 crore capex to expand forging and machining capacity (5 Nov 2026)",
+    "why": "Filing of 2026-11-05: The board has approved an additional capital expenditure of around ₹500 crores to enhance machining and supplement forging capacities. This investment, representing about 30% of yearly sales, will support growth across key segments as existing capacity utilization nears its peak. Move the matching project’s status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 6 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/9876964720_05112026170752_Pressrelease05112026.pdf",
+    "addedOn": "2026-11-06"
+  },
+  {
+    "company": "KSH International",
+    "sector": "Cables",
+    "subject": "Projects: Board approves ₹185cr capex to expand winding wire capacity by 25% (4 Nov 2026)",
+    "why": "Filing of 2026-11-04: The board has approved a capital expenditure of ₹185 crore to expand its specialized magnet winding wire capacity at the Supa facility. The expansion will increase total capacity from 57,845 MT to 72,200 MT by Q1 FY29, driven by increasing customer demand. Move the matching project’s status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 6 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/INTERNATIONAL_04112026194229_KSHIntimationofCapacityExpansion_04112026FinalSigned.pdf",
+    "addedOn": "2026-11-06"
   }
 ]
