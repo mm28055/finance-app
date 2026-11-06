@@ -160,7 +160,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Three other global turpentine processors (not named)', note: 'The only rivals with the same advanced crude-turpentine route.' }, { name: 'Chinese pine-chemical makers', note: 'Rely on gum turpentine, whose price swings more; dominant in maltol.' }, { name: 'Oriental Aromatics', note: 'Smaller Indian rival in camphor and aroma chemicals, buying imported pinene at spot prices.' }],
         position: "**India's largest aroma-chemical maker and one of four global crude-turpentine processors**; ICRA AA.",
         money: "**Net debt of ₹897cr** (Screener, March 2026); the company puts it at ₹865cr in June, about 1.3 times EBITDA. Capex of ₹850–900cr over FY27–FY29 is to come 'primarily' from internal cash, but ICRA sizes it at about ₹1,200cr with ₹500–600cr of new debt. No equity raised, but Privi Fine Sciences, owned by the promoters, is being merged in for shares (vote on 27 October 2026). Promoters hold **60.60%**, down from 74.05%, after selling 9.28% in a ₹1,086cr block deal in December 2025.",
-        watch: ["The Privi Fine Sciences merger terms and vote on 27 October.", "Phase 1 running full by Q4, and Phase 2 dates holding.", "Net debt staying below 2 times EBITDA as capex rises."],
+        watch: ["The Privi Fine Sciences merger terms and vote on 27 October.", "Phase 1 (completed by Q2 FY27) at 85–90% use in Q4, and Phase 2 dates holding.", "Net debt staying below 2 times EBITDA as capex rises."],
         charts: chemicalsCharts['Privi Speciality Che'],
     },
     {
