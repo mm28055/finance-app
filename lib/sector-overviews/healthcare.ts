@@ -447,7 +447,7 @@ export const healthcare: SectorOverview = {
                         ['Molbio Diagnostics', 'Revenue about +25%; margin 24–25%', 'IPO-funded automation and R&D centre', '**New**: first call; Q1 margin 25%'],
                         ['Indegene', 'Quarterly margin 19% plus by Q4 FY27 (kept on the Q2 call); organic growth above FY26; H2 stronger than H1', 'About ₹45cr a year', '**Holding** (Q2): margin 16.7% after a 1.5-point wage hit; outcome-deal revenue mostly in Q4'],
                         ['Nephrocare Health', 'Revenue +15–20% a year over three to five years', 'No formal guide; ₹44cr in Q1', '**Mixed**: +24%; Saudi slipped'],
-                        ['Vimta Labs', 'No numbers in July; 20–25% ‘stretch’ ambition in May', 'About ₹80cr', '**Missed**: +11.8%; run-rate target missed twice'],
+                        ['Vimta Labs', 'No numbers; H2 ‘typically’ better than H1 (Q2 call); 20–25% ‘stretch’ ambition in May', 'About ₹80cr (₹45–50cr maintenance)', '**Missed**: Q1 +11.8%, Q2 about +10%; run-rate target missed twice'],
                         ['3B Blackbio Diagnostics', 'Revenue +15–20% excluding Coris; Coris slightly positive', '₹4–5cr would double capacity', '**Behind**: +11.8% excluding Coris; Coris loss'],
                     ],
                 },
@@ -519,8 +519,8 @@ export const healthcare: SectorOverview = {
         {
             company: 'Vimta Labs', rank: 2, stance: 'SCALEUP', segment: SERV,
             what: "A Hyderabad lab that tests and runs studies for drug makers, and tests food and electronics; about 40% of revenue is exports, and Eurofins, a global rival, owns 19.72%.",
-            view: "**High margin, slowing growth.** It earns about 35%, has no debt and about 100 regulatory audits behind it, and its new Genome Valley labs give room for four to five years of growth. But Q1 revenue rose 11.8% and was flat on the quarter against the 20–25% it aimed for in May, its ₹500cr run-rate target has slipped twice, and assets turn less than once a year, so the new labs must fill before returns rise. The price needs about {need:Vimta Labs|19}% a year against my ~14%.",
-            watch: 'Two quarters of 15%+ growth; overseas biologics orders; food-testing samples recovering after the Middle East disruption.',
+            view: "**High margin, slowing growth.** It earns about 35%, has no debt and about 100 regulatory audits behind it, and its new Genome Valley labs give room for four to five years of growth. But Q1 revenue rose 11.8% and was flat on the quarter against the 20–25% it aimed for in May, its ₹500cr run-rate target has slipped twice, and assets turn less than once a year, so the new labs must fill before returns rise. Q2 (call of 30 Oct 2026) was slower still: revenue about +10%, operating profit +10.5% at a 35.5% margin and profit +3.5%, which management put down to ‘a certain lull’ in drug makers' research pipelines; it expects H2 to be better, as usual, and food-testing samples have begun to recover. The price needs about {need:Vimta Labs|19}% a year against my ~14%.",
+            watch: 'Growth back above 15% in H2, which it has not managed in FY27 so far; a couple more biologics clients signed this quarter, as hoped; food-testing samples recovering after the Middle East disruption.',
         },
         {
             company: '3B Blackbio Diagnostics', rank: 3, stance: 'HARVEST', segment: KITS,

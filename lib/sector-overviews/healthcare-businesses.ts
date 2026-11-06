@@ -82,7 +82,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Vimta Labs',
-        inShort: ["**A Hyderabad testing and research lab** that tests drugs and runs studies for pharma companies, and tests food and electronics; about 40% of revenue is exports, and Eurofins, a global rival, owns 19.72%.", "**Good:** a margin of about 35%, no debt, about 100 regulatory audits passed, and new labs with room for four to five years of growth. **Bad:** Q1 FY27 revenue grew 11.8% and was flat on the quarter against the 20–25% it aimed for in May, and its ₹500cr run-rate target has slipped twice.", "**Verdict: follow.** A clean, high-margin business; I would want two quarters of 15%+ growth before buying."],
+        inShort: ["**A Hyderabad testing and research lab** that tests drugs and runs studies for pharma companies, and tests food and electronics; about 40% of revenue is exports, and Eurofins, a global rival, owns 19.72%.", "**Good:** a margin of about 35%, no debt, about 100 regulatory audits passed, and new labs with room for four to five years of growth. **Bad:** Q1 FY27 revenue grew 11.8% and Q2 about 10% against the 20–25% it aimed for in May, as drug makers' research spending paused, and its ₹500cr run-rate target has slipped twice.", "**Verdict: follow.** A clean, high-margin business; I would want two quarters of 15%+ growth before buying."],
         tagline: "A contract research and testing company that checks the quality and safety of medicines, food and electronic equipment for manufacturers, exporters and regulators.",
         revenue: '₹407cr (FY26, standalone)',
         products: [
@@ -104,7 +104,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Eurofins', note: 'A global testing giant with Indian labs, and owner of 19.72% of Vimta.' }, { name: 'Other testing labs', note: 'Food testing is ‘more and more levelled ground for everybody’, management says.' }, { name: 'Indian contract research firms', note: 'Syngene and clinical research organisations compete for preclinical and clinical studies.' }],
         position: "**A leading Indian independent pharma testing lab**, which says it is the largest in pharma analytical testing and among the top three in preclinical studies.",
         money: "Screener shows **₹62cr of net cash**; borrowings are about ₹3cr and it has not used its bank limits. Capex was about ₹100cr in FY26; FY27 capex is about ₹80cr on the company's figure (CARE says about ₹60cr), and almost all operating cash is reinvested. Working capital is heavy, with 95 debtor days in FY26. It pays out only 7–12% of profit. Promoters hold **35.7%**, down from 37.0% in September 2023; Eurofins holds 19.72%.",
-        watch: ["Two quarters of 15%+ growth.", "Overseas biologics orders.", "Food-testing samples recovering after the Middle East disruption."],
+        watch: ["Two quarters of 15%+ growth (Q2 FY27 was about 10%).", "More biologics clients beyond the first order; management hoped to add a couple in Q3.", "Food-testing samples recovering after the Middle East disruption."],
         charts: healthcareCharts['Vimta Labs'],
     },
     {
