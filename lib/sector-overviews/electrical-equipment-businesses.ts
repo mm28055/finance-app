@@ -398,7 +398,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{"name": "Delta Electronics, Vertiv, Eaton", "note": "Global rivals in telecom power systems."}, {"name": "Delta, ABB E-mobility, Servotech", "note": "Rivals in Indian EV chargers."}, {"name": "ABB, Kempower, Alpitronic", "note": "Rivals to Tritium in DC fast chargers abroad."}],
         position: "**Estimated over 50% share of home EV chargers** in India (company), and about 60% of BharatNet power systems through its partners.",
         money: "The company reported ₹370cr of net debt at June 2026, less than the Screener figure, which includes leases. It is loss-making at the group level, so debt cannot be measured against profit. CARE rates it BBB with a negative outlook and relies on ‘continued timely promoter support’; the promoter has lent money and pledged 25,66,585 shares to lenders. Promoter holding fell from **70% to 65%**. In August 2026 customs demanded ₹14.49cr of duty plus interest and penalties, which it will appeal.",
-        watch: ["Group operating breakeven in Q2–Q3 FY27, and Tritium's by Q4.", "Use of the new Hyderabad plant.", "Debt and working capital as Tritium grows."],
+        watch: ["A binding sale of Tritium near the $85m indicated on 4 Nov 2026, which would make the company debt-free.", "Use of the new Hyderabad plant.", "Debt and working capital as Tritium grows."],
         charts: electricalEquipmentCharts["Exicom Tele-Sys."],
     },
     {

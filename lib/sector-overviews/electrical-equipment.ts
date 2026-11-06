@@ -748,8 +748,8 @@ export const electricalEquipment: SectorOverview = {
         {
             company: 'Exicom Tele-Sys.', rank: 9, stance: 'TURNAROUND', segment: POWERELEC,
             what: "Power systems and lithium batteries for telecom towers and BharatNet, EV chargers (home wallbox and DC fast chargers), and Tritium, a DC fast-charger maker it bought out of administration; part of the HFCL group.",
-            view: "**A profitable Indian business carrying a loss-making acquisition.** Standalone Q1 revenue rose 57% at an 8.8% margin, but Tritium pushed the group to a ₹21.9cr operating loss and a ₹74cr net loss, after operating break-even in Q4. It is rated BBB with a negative outlook, relies on promoter loans, and part of the promoter's stake is pledged. Management promises group break-even in Q2–Q3 and Tritium break-even in Q4 FY27; there is no P/E to judge.",
-            watch: 'Two quarters of consolidated operating break-even; Tritium’s $20.8m of bookings turning into revenue; operating cash turning positive.',
+            view: "**A profitable Indian business carrying a loss-making acquisition.** Standalone Q1 revenue rose 57% at an 8.8% margin, but Tritium pushed the group to a ₹21.9cr operating loss and a ₹74cr net loss, after operating break-even in Q4. It is rated BBB with a negative outlook, relies on promoter loans, and part of the promoter's stake is pledged. Management promised group break-even in Q2–Q3 and Tritium break-even in Q4 FY27, but on 4 Nov 2026 the board approved a non-binding term sheet to sell Tritium at an indicative $85m enterprise value, which it says would make Exicom debt-free; it is also moving Gurugram output (about 10% of FY26 standalone sales) to Hyderabad and Solan. There is no P/E to judge.",
+            watch: 'A binding Tritium sale near the $85m indication, and what the cash repays; the standalone business holding its margin through the Gurugram move; operating cash turning positive.',
         },
         {
             company: 'Inox Wind', rank: 10, stance: 'AVOID', segment: WIND,
