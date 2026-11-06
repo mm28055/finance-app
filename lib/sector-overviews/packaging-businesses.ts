@@ -139,7 +139,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Huhtamaki India',
-        inShort: ["**Indian arm of Finland's Huhtamaki**, printing flexible packaging, labels and recyclable films for big consumer-goods brands, with about 30% of volume exported.", "**Good:** net cash, ₹395cr of cash and funds, and a 10.5% margin in the June 2026 quarter, its best in years. **Bad:** part of that quarter was customers stockpiling, the managing director and finance chief both resigned within seven weeks, and fees to the parent are heavy.", "**Verdict: wait.** I want to see volumes hold once the stockpiling ends."],
+        inShort: ["**Indian arm of Finland's Huhtamaki**, printing flexible packaging, labels and recyclable films for big consumer-goods brands, with about 30% of volume exported.", "**Good:** net cash, ₹395cr of cash and funds, and a 10.5% margin in the June 2026 quarter, its best in years. **Bad:** the margin fell back to about 8% in July–September as material costs passed through late (volumes did hold, up about 7%), the managing director and finance chief both resigned within seven weeks, and fees to the parent are heavy.", "**Verdict: wait.** I want to see volumes hold once the stockpiling ends."],
         tagline: "Flexible-packaging and label converter for multinational and Indian consumer brands; Indian subsidiary of the Finnish Huhtamaki group.",
         revenue: '₹2,469cr (CY2025, standalone)',
         products: [
@@ -161,7 +161,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Uflex', note: 'Large Indian flexible-packaging and film maker, integrated back into film.' }, { name: 'Constantia and other global converters', note: 'Compete for multinational brand accounts.' }, { name: 'Regional converters', note: 'A long tail of smaller printers competing on price for standard packs.' }],
         position: "**One of India's largest flexible-packaging converters**, strongest with multinational brands and in recyclable packs.",
         money: "Screener shows **net cash of about ₹349cr** at December 2025 (₹299cr cash and ₹194cr investments against ₹144cr of borrowings). The company puts liquidity at ₹395cr in mid-2026, with ₹427cr of unused bank lines, and plans to repay a ₹100cr loan from its parent early. That loan's due date was moved from February 2026 to June 2027. A solar plant at Khopoli will cover half that site's power, and the Baddi label plant closes from October 2026. Payments to the parent for IT and ‘centralised services’ were ₹105.3cr in CY2025, up from ₹80.5cr and about two-thirds of pre-tax profit. An ₹8.8cr depreciation shortfall for 2024–25 was booked in early 2026 rather than restated. CRISIL rates it AA-/Stable. Promoters (the Huhtamaki group) hold **67.7%**, unchanged.",
-        watch: ["Volumes after customer stockpiling unwinds.", "Stability under the new managing director and finance chief (the CFO changed twice in 2026).", "Fees paid to the Finnish parent."],
+        watch: ["The margin recovering towards 9–10% as price rises catch up with material costs.", "Stability under the new managing director and finance chief (the CFO changed twice in 2026).", "Fees paid to the Finnish parent."],
         charts: packagingCharts['Huhtamaki India'],
     },
     {
