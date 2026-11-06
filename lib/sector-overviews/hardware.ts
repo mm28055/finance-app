@@ -506,7 +506,7 @@ export const hardware: SectorOverview = {
             company: 'Rashi Peripheral', rank: 1, stance: 'CYCLICAL', segment: TRADE,
             what: "A national distributor of PCs, components, servers and accessories for about 80 global brands including Dell, Intel, AMD and NVIDIA, now adding IT services (VDA Infosolutions) and chip distribution (a joint venture with Japan's Restar).",
             view: "**A well-run, thin-margin distributor at the top of a price cycle.** Revenue +62% in Q1, profit +69.5% and working capital down to 56 days. But 30–35 points of that growth was price, the operating margin slipped to 3.04%, operating cash was −₹717cr against ₹942cr of profit over FY22–FY26 (FY26 was the first positive year, at ₹114cr or 40% of profit), and it carries ₹344cr of disputed GST demands and a new ₹368.5cr stake in VDA. The price asks for about my ~12% estimate.",
-            watch: 'Q2 growth and how much of it is price; dealer stock and any write-downs; gearing after VDA against CRISIL’s ~0.63x.',
+            watch: 'Q2 growth and how much of it is price; dealer stock and any write-downs; gearing after VDA against CRISIL’s ~0.63x; the up-to-₹900cr fund-raise the board enabled and the 26% sale of its chip-distribution arm to Restar (5 Nov 2026), alongside Price Waterhouse replacing Deloitte, which became ineligible, as joint auditor.',
         },
         {
             company: 'GNG Electronics', rank: 2, stance: 'SCALEUP', segment: TRADE,
