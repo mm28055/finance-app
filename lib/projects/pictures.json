@@ -22391,11 +22391,11 @@
   },
   {
    "company": "LT Foods",
-   "fingerprint": "b537e0b5b616bc61",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "efb135a43363cd16",
+   "checkedOn": "2026-11-06",
    "adds": [
     {
-     "heading": "What the second US ready-to-heat plant adds (₹ of sales; plant due Q2 FY27, sales to double in about three years)",
+     "heading": "What the second US ready-to-heat plant adds (₹ of sales; plant was due Q2 FY27 and is late, sales to double in about three years)",
      "projectId": "lt-foods-us-rth",
      "bars": [
       {
@@ -22434,16 +22434,24 @@
     },
     {
      "when": "Q2 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "lt-foods-us-rth-m1"
      ],
-     "sub": "Slipped: the Q4 FY26 call had said production would start by July"
+     "sub": "Missed: not commissioned by the 28 Oct 2026 call (the Q4 FY26 call had said by July, the Q1 FY27 call Q2)"
     },
     {
      "when": "FY27",
      "tone": "next",
      "text": "About ₹330cr of capex, mostly Indian capacity and warehousing"
+    },
+    {
+     "when": "Q4 FY27",
+     "tone": "next",
+     "milestones": [
+      "lt-foods-us-rth-m3"
+     ],
+     "sub": "No new start date given on the Q2 call (28 Oct 2026); placed here by this review. H1 ready-to-heat sales grew 7% before the new capacity"
     },
     {
      "when": "About FY29",
@@ -22458,7 +22466,7 @@
     "Rice milling and packing in India (about 8 lakh t a year of paddy-to-rice milling, including a new Raichur, Karnataka facility), a plant in Europe, packing lines in the UK, and US ready-to-heat meal plants (capacity just doubled)",
     "Organic plants underused after the switch to consumer packs"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note",
+   "source": "Q2 FY27 call (Oct 2026), Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note",
    "recheck": {
     "changes": [
      "Restored the 8 lakh t India milling capacity from the official May transcript (stored said tonnage not given); added to the notes",

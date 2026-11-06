@@ -6323,9 +6323,15 @@
    "expectedStart": "Q2 FY27",
    "adds": "ready-to-heat sales from about ₹150cr (FY26) to about ₹300cr in about three years (Jul 2026 call; the May call had said two years)",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026); start slipped from 'by July' to Q2",
-   "updatedOn": "2026-10-23",
-   "capacityAdd": "Doubles US ready-to-heat capacity (+100%); sales from about ₹150cr to about ₹300cr in about three years"
+   "source": "Q2 FY27 call (28 Oct 2026): not yet commissioned; Q1 FY27 call (Jul 2026) had moved the start from \"by July\" to Q2",
+   "updatedOn": "2026-11-06",
+   "capacityAdd": "Doubles US ready-to-heat capacity (+100%); sales from about ₹150cr to about ₹300cr in about three years",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call (28 Oct 2026): still not commissioned; H1 ready-to-heat sales grew 7% \"even before the enhanced RTH capacity has become operational\"; no new start date given"
+    }
+   ]
   },
   {
    "id": "godrej-agrovet-specialty-fats",

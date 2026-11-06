@@ -1353,7 +1353,8 @@
    "status": "missed",
    "actual": "8.2%",
    "resolvedOn": "2026-11-04",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow"
   },
   {
    "id": "lumax-industries-q2fy27-2",
@@ -1363,7 +1364,11 @@
    "due": "Q2 FY27",
    "ifMet": "Part of the buy condition",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Net long-term debt ₹188cr at September against ₹209cr in June; net debt 2.2 times EBITDA (Q2 call)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "lumax-industries-q4fy27-1",
@@ -1377,7 +1382,13 @@
    "ifMet": "The order book fits the price",
    "ifMissed": "Does not fit the price",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call: full-year margin aim softened to 'double-digit' (was 10.5–11%) after 8.2% in Q2"
+    }
+   ]
   },
   {
    "id": "lumax-industries-q4fy27-2",
@@ -1389,7 +1400,13 @@
    "target": 15,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call: FY27 revenue guide raised to 25% plus (from 20% plus)"
+    }
+   ]
   },
   {
    "id": "pricol-q2fy27-1",
@@ -10477,7 +10494,11 @@
    "text": "US ready-to-heat plant starting in Q2 FY27 (slipped from 'by July')",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Not started by the 28 Oct 2026 call: margins carried costs 'ahead of the commissioning of RTH facility in the U.S.'",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays own"
   },
   {
    "id": "lt-foods-q4fy27-1",
@@ -10495,7 +10516,13 @@
    "text": "FY27 margin about 12% on the company's measure, as guided",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call: margin 11.0% in Q2 and 11.2% in H1; management did not revise the about-12% guide, blaming freight (40 bps) and brand spend"
+    }
+   ]
   },
   {
    "id": "lt-foods-q4fy27-3",
@@ -11782,7 +11809,11 @@
    "text": "Revenue from the $10 million-plus outcome deal starting in Q3",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Revenue started early: a small amount was recognised in Q2 FY27; the larger part is expected in Q4 after the February–March data lock (Q2 call)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "indegene-q3fy27-2",
@@ -16192,7 +16223,13 @@
    "target": 18,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call: FY27 growth 'slightly better than our historical growth of 18%'; H1 +26% with Q3 visible"
+    }
+   ]
   },
   {
    "id": "concord-biotech-q2fy27-2",
@@ -16201,7 +16238,11 @@
    "text": "Injectables plant above 30% use (5% now)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Injectables plant at about 5% use (Q2 call, 28 Oct 2026); contracts still being negotiated",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "shilpa-medicare-q2fy27-1",
@@ -18389,7 +18430,8 @@
    "status": "met",
    "actual": "35.7%",
    "resolvedOn": "2026-11-05",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays own"
   },
   {
    "id": "cartrade-tech-q3fy27-1",
@@ -18411,7 +18453,11 @@
    "due": "Q2 FY27",
    "ifMet": "View changes for the better",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "No policy; management said on the Q2 call that rules bar a dividend or buyback this year while standalone tax shelters remain",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays own"
   },
   {
    "id": "cartrade-tech-q2fy27-3",
@@ -18420,7 +18466,11 @@
    "text": "Disclosed revenue from Elite Buyer and the Spinny deal",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Not disclosed on the Q2 call; Elite Buyer described only as a 'massive uptake', no Spinny figure",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays own"
   },
   {
    "id": "blackbuck-q2fy27-1",
@@ -20547,7 +20597,11 @@
    "ifMet": "Add to the position",
    "ifMissed": "Hold at modest size; another cancelled programme would change the view",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Revenue +0.5% on the quarter in constant currency, +1% in rupees (Q2 call, 28 Oct 2026)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Moved to follow (on price; the quarter was as guided)"
   },
   {
    "id": "kpit-technologies-q3fy27-1",
@@ -20565,7 +20619,13 @@
    "text": "Revenue growth back by Q4, as management now expects",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call: H2 better than H1 and growth expected in Q4, no figure given"
+    }
+   ]
   },
   {
    "id": "kpit-technologies-q4fy27-2",
@@ -21702,7 +21762,8 @@
    "status": "met",
    "actual": "15.2%",
    "resolvedOn": "2026-11-05",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow"
   },
   {
    "id": "birlasoft-q3fy27-1",
@@ -21712,7 +21773,13 @@
    "due": "Q3 FY27",
    "ifMissed": "Stay follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27: +2.1% on the quarter in constant currency (first of the two quarters met); management expects a better H2 but Q3 furloughs"
+    }
+   ]
   },
   {
    "id": "birlasoft-q4fy27-1",
@@ -27814,8 +27881,12 @@
    "text": "US ready-to-heat plant operational",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "lt-foods-us-rth"
+   "status": "missed",
+   "project": "lt-foods-us-rth",
+   "actual": "Not operational by the Q2 FY27 call (28 Oct 2026); no new date given",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays own"
   },
   {
    "id": "lt-foods-us-rth-m2",
@@ -38051,6 +38122,76 @@
    "text": "Stock below a year earlier by March 2027 now that maize seed production has stopped (about ₹1,200cr at September)",
    "due": "Q4 FY27",
    "createdOn": "2026-11-04",
+   "status": "pending"
+  },
+  {
+   "id": "cartrade-tech-q3fy27-2",
+   "company": "Cartrade Tech",
+   "sector": "Platform Cos",
+   "text": "OLX revenue growth above 30% in Q3, as promised on the Q2 call (26% in Q2)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "cartrade-tech-q3fy27-3",
+   "company": "Cartrade Tech",
+   "sector": "Platform Cos",
+   "text": "Group operating profit up about 20% on Q2 (₹76cr) in Q3, its 'best ever quarter', as guided",
+   "metric": "ebitda",
+   "op": ">=",
+   "target": 90,
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "kpit-technologies-q4fy27-3",
+   "company": "KPIT Technologies",
+   "sector": "Software",
+   "text": "Company-reported margin rising each quarter from 17.8% (Q2), as management said on the Q2 call",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "lt-foods-us-rth-m3",
+   "company": "LT Foods",
+   "sector": "Food Products",
+   "text": "US ready-to-heat plant operational (slipped past Q2 FY27; no new date given on the Q2 call)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending",
+   "project": "lt-foods-us-rth"
+  },
+  {
+   "id": "concord-biotech-q4fy27-2",
+   "company": "Concord Biotech",
+   "sector": "Pharma API",
+   "text": "Injectables plant above 30% use once the 'near term' contracts are signed (5% at Q2)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "indegene-q4fy27-3",
+   "company": "Indegene",
+   "sector": "Healthcare",
+   "text": "Most of the $10 million-plus outcome deal's revenue recognised in Q4 FY27, after the client's February–March confirmation",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "lumax-industries-q4fy27-3",
+   "company": "Lumax Industries",
+   "sector": "Auto Related",
+   "text": "FY27 revenue growth of 25% or more, as raised on the Q2 call",
+   "metric": "fyRevenueGrowth",
+   "op": ">=",
+   "target": 25,
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-06",
    "status": "pending"
   }
  ]

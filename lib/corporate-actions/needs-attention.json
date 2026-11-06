@@ -4555,7 +4555,8 @@
     "sector": "Pharma API",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Q2 call read. Revenue +25% (H1 +26%), FY27 guided slightly above 18%; gross margin down ~4 points on solvents; injectables still at 5% (checkpoint missed, re-set for Q4); no inventory figure, so that checkpoint stays open. Stays follow (price Full)."
   },
   {
     "company": "Menon Bearings",
@@ -4611,7 +4612,8 @@
     "sector": "Auto Related",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Q2 call read. Revenue +33%, FY27 guide raised to 25%+; margin 8.2% on electronics and polymer costs, full-year aim softened to 'double-digit'; net long-term debt down to ₹188cr (debt checkpoint met). Stays follow; guidance revisions and a 25% revenue checkpoint added."
   },
   {
     "company": "Sambhv Steel Tubes",
@@ -4667,21 +4669,24 @@
     "sector": "Healthcare",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Q2 call read. Dollar revenue +27.5% (BioPharm-aided), +4.4% on the quarter; margin 16.7% after a 1.5-point wage hit; 19%+ by Q4 kept; outcome deal mostly booked in Q4 (checkpoint met early, Q4 one added). Stays follow (price Full)."
   },
   {
     "company": "KPIT Technologies",
     "sector": "Software",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Q2 call read. Flat quarter as guided (+0.5% constant currency), margin 17.8%, trucks/off-highway +27%, products +25%; two shrinking clients bottom out in a couple of quarters. Moved own → follow: live price needs ~16% against my ~13% (Full), which a flat FY27 does not support; ranks swapped with Onward. Checkpoint met; margin checkpoint added."
   },
   {
     "company": "Lumax Industries",
     "sector": "Auto Related",
     "subject": "Checkpoint missed: lumax-industries-q2fy27-1",
     "why": "Q2 FY27 operating margin above 10%, as management promised — actual 8.2% (missed). Stay follow Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Margin 8.2% against 10% promised; cost recovery lags. Stays follow (price fits but the margin must recover first). Outcome written."
   },
   {
     "company": "Timken India",
@@ -4751,7 +4756,8 @@
     "sector": "Food Products",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-05"
+    "addedOn": "2026-11-05",
+    "handled": "2026-11-06: Q2 call read. Revenue +17% (H1 +18% normalised), H2 to match H1; margin 11.0% on freight and ads (H1 11.2% vs ~12% guide, not revised); organic profit doubled on the quarter; ₹247cr seasonal net cash. US ready-to-heat plant still not started (checkpoint and milestone missed; project revision, new milestone, picture redrawn). Stays own (price fits)."
   },
   {
     "company": "PG Electroplast",
@@ -4786,7 +4792,8 @@
     "sector": "Platform Cos",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-05"
+    "addedOn": "2026-11-05",
+    "handled": "2026-11-06: Q2 call read. Margin 36% (guide met), record revenue ₹213cr (+10%), OLX +26%; no payout this year by management's account (two checkpoints missed). Stays own; note, card, guidance row and checkpoints updated."
   },
   {
     "company": "Vimta Labs",
@@ -4828,7 +4835,8 @@
     "sector": "Software",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-05"
+    "addedOn": "2026-11-05",
+    "handled": "2026-11-06: Q2 call read. +2.1% on the quarter in dollars (second positive quarter), margin 15.2% through the wage rise, receivable days 51, $116M signed; Q3 furloughs and one energy client's cut. Stays follow (one more growth quarter needed before own); view, card, guidance row and checkpoints updated."
   },
   {
     "company": "Motherson Sumi Wirin",
@@ -4856,13 +4864,15 @@
     "sector": "Platform Cos",
     "subject": "Checkpoint met: cartrade-tech-q2fy27-1",
     "why": "Operating margin above 31% in Q2, as guided for Q2–Q4 — actual 35.7% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-05"
+    "addedOn": "2026-11-05",
+    "handled": "2026-11-06: Margin 35.7% against 31% guided; supports the own call (stays own). Outcome written; Q2 call worked in."
   },
   {
     "company": "Birlasoft",
     "sector": "Software",
     "subject": "Checkpoint met: birlasoft-q2fy27-1",
     "why": "Operating margin at or above 15% after the July wage rise, as guided — actual 15.2% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-05"
+    "addedOn": "2026-11-05",
+    "handled": "2026-11-06: Margin 15.2% after the July wage rise, as guided; stays follow. Outcome written."
   }
 ]
