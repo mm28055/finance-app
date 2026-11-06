@@ -138,7 +138,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Birlasoft',
-        inShort: ["**The CK Birla group's IT services firm**, installing and running SAP, Oracle and JD Edwards business software plus digital, data and AI work for manufacturers, insurers and energy firms, 83% in the Americas.", "**Good:** its first positive constant-currency quarter after six, a margin of 16.1% against 12.4% a year ago, and ₹2,496cr of net cash. **Bad:** dollar revenue is still 3.6% below last year, net-new wins fell about 25%, the top five clients are 43% of revenue, senior managers keep leaving, and FY26 operating cash fell as unbilled work rose 65%.", "**Verdict: follow.** It has stopped shrinking but has not yet shown it can grow."],
+        inShort: ["**The CK Birla group's IT services firm**, installing and running SAP, Oracle and JD Edwards business software plus digital, data and AI work for manufacturers, insurers and energy firms, 83% in the Americas.", "**Good:** two positive constant-currency quarters after six falling ones (+2.1% in dollars in Q2 FY27), a margin held at 15.2% through the July wage rise, receivable days down to 51 and ₹2,496cr of net cash (Screener, March). **Bad:** dollar revenue is still 3.6% below last year, net-new wins fell about 25%, the top five clients are 43% of revenue, senior managers keep leaving, and FY26 operating cash fell as unbilled work rose 65%.", "**Verdict: follow.** It has stopped shrinking but has not yet shown it can grow."],
         tagline: "A mid-size IT services company of the CK Birla group, strongest in business-software (ERP) work for US manufacturers, insurers and energy companies.",
         revenue: '₹5,310cr (FY26, consolidated)',
         products: [
@@ -160,7 +160,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'TCS, Infosys, Wipro, HCLTech', note: 'Large SAP and Oracle practices; now bidding for mid-size deals.' }, { name: 'Coforge, Persistent, LTIMindtree', note: 'Mid-tier rivals growing faster.' }, { name: 'Zensar, Mastek, Sonata', note: 'Similar-sized firms; Mastek also competes in Oracle Cloud.' }],
         position: "**A mid-size Indian IT exporter with $598M of FY26 revenue**, known mainly for ERP work in US manufacturing.",
         money: "Screener shows **₹2,496cr of net cash**; the company reports cash of ₹2,878.6cr against a market value of {mcap:Birlasoft|₹7,520cr}, and ₹141cr of mostly lease borrowings. Capex is small; the FY26 dividend was ₹6.50 a share (payout about 35%) and there is no buyback. Contingent tax liabilities rose to ₹184cr. Promoters hold **40.38%**, from 40.97% three years ago.",
-        watch: ["Two more quarters of constant-currency growth.", "Margin at or above 15% after the wage rise.", "A buyback or higher payout."],
+        watch: ["A third straight quarter of constant-currency growth in Q3, despite furloughs and an energy client's cut.", "The ‘better financial performance in H2’ management promised on the Q2 call, at a margin of about 15% or better.", "A buyback or higher payout from about $300M of cash."],
         charts: softwareCharts['Birlasoft'],
     },
     {
