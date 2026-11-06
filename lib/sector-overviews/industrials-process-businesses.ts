@@ -168,7 +168,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Praj Industries',
-        inShort: ["**India's leading ethanol and biofuel plant technology company**, which designs and builds distilleries, water-treatment systems and process equipment worldwide.", "**Good:** it owns its process technology, has a ₹4,590cr order book and net cash, and is winning abroad (a large Brazil plant) and in data-centre modules. **Bad:** new ethanol plant orders in India have stopped now that the 20% blending target is met, the margin has fallen to 3–5%, and the Mangalore yard has ₹183cr of losses funded by ₹291cr of parent loans.", "**Verdict: wait.** Wait for a blending decision beyond 20% or for the new businesses to lift margins."],
+        inShort: ["**India's leading ethanol and biofuel plant technology company**, which designs and builds distilleries, water-treatment systems and process equipment worldwide.", "**Good:** it owns its process technology, has a ₹4,460cr order book (September 2026) and ₹533cr of cash, and is winning abroad (a large Brazil plant) and in data-centre modules. **Bad:** new ethanol plant orders in India have stopped now that the 20% blending target is met, the margin has fallen to 3–6%, and the Mangalore yard has ₹183cr of losses funded by ₹291cr of parent loans.", "**Verdict: wait.** Wait for a blending decision beyond 20% or for the new businesses to lift margins."],
         tagline: "Process technology and engineering for ethanol, biogas and sustainable aviation fuel plants, plus high-purity water, wastewater and modular fabrication.",
         revenue: '₹3,168cr (FY26, consolidated)',
         products: [

@@ -454,7 +454,7 @@ export const industrialsProcess: SectorOverview = {
                         ['GMM Pfaudler', 'No numbers; 15% margin an aim with no date', 'Below depreciation; acquisitions “largely behind us”', '**Missed**: margin 10.1% against 12.7% a year ago; tax fix pushed out'],
                         ['The Anup Enginee', 'Revenue +5–10%; margin about 15%; orders ₹200–250cr a quarter', '₹40–50cr a year (CARE)', '**Cautious**: record intake and net cash; Q1 revenue −29%'],
                         ['Kilburn Engg.', 'Revenue about ₹700cr (was ₹750–800cr); margin 20% (was 22–23%)', 'About ₹40cr; plants due end-October', '**Walked back**: guidance cut; orders ₹190cr against ₹450–500cr promised'],
-                        ['Praj Industries', 'No numeric guidance; Mangalore yard to break even in FY27', 'None major', '**Mixed**: promised orders all arrived; margin still about 4%'],
+                        ['Praj Industries', 'No numeric guidance; Mangalore yard to break even in FY27', 'None major', '**Mixed** (Q2): ₹715cr of orders, backlog ₹4,460cr; margin about 6%; GenX revenue only ‘trickling in’'],
                         ['HLE Glascoat', '16% margin excluding Omeras in two years; ₹2,000cr revenue', '₹35cr Omeras India plant', '**Missed**: 16% for H2 FY26 not met; Q1 FY27 margin 7%'],
                         ['Standard Glass', 'FY27 revenue ₹1,450cr incl. ₹250cr GScale; core margin 17–18%', '₹130cr greenfield over 2–3 years plus ₹260cr of deals', '**Mixed**: guidance raised; US$3.5m export order missed again'],
                     ],
@@ -545,8 +545,8 @@ export const industrialsProcess: SectorOverview = {
         {
             company: 'Praj Industries', rank: 5, stance: 'CYCLICAL', segment: PLANT,
             what: "Ethanol, biogas and bio-fuel process plants on its own technology, ultra-pure water systems, and modular fabrication at Mangalore (GenX), sold in India and abroad.",
-            view: "**Owns the technology; its main market has stopped.** Q1 brought ₹1,000cr of orders, including Brazil, a first bio-isobutanol plant and a data-centre framework, and it holds ₹616cr of cash. But margins are about 4%, FY26 profit was ₹24cr, the Mangalore yard has ₹183cr of accumulated losses funded by ₹291cr of parent loans, and domestic ethanol plants wait for E25–E30. The price needs about {need:Praj Industries|35}% a year against my ~10%.",
-            watch: 'A dated E25–E30 mandate; the Mangalore yard breaking even in FY27; margin back above 7–8%.',
+            view: "**Owns the technology; its main market has stopped.** Q1 brought ₹1,000cr of orders, including Brazil, a first bio-isobutanol plant and a data-centre framework, and it holds ₹616cr of cash. But margins are about 4%, FY26 profit was ₹24cr, the Mangalore yard has ₹183cr of accumulated losses funded by ₹291cr of parent loans, and domestic ethanol plants wait for E25–E30. Q2 (call of 3 Nov 2026) brought ₹715cr of orders (38% abroad), a margin of about 6% and a backlog of ₹4,460cr, with cash down to ₹533cr; E100 is now legal for flex-fuel vehicles but there is still no dated E25–E30 mandate, the oil companies' 2026-27 tender squeezed molasses distillers, and the board approved up to ₹100cr for a biogas venture with BPCL. Mangalore (GenX) revenue should ramp in H2. The price needs about {need:Praj Industries|35}% a year against my ~10%.",
+            watch: 'A dated E25–E30 mandate; the Mangalore yard breaking even in FY27 as GenX revenue ramps in H2; margin back above 7–8%; terms of the BPCL biogas venture.',
         },
         {
             company: 'HLE Glascoat', rank: 6, stance: 'TURNAROUND', segment: GLASS,
