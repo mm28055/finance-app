@@ -1,6 +1,4232 @@
 {
- "updated": "2026-11-05T01:07:12.644Z",
+ "updated": "2026-11-06T01:58:48.326Z",
  "results": [
+  {
+   "company": "ADF Foods",
+   "sector": "Food Products",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 201,
+     "yearAgo": 163,
+     "prev": 167,
+     "yoy": 23.3,
+     "qoq": 20.4
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 39,
+     "yearAgo": 36,
+     "prev": 30,
+     "yoy": 8.3,
+     "qoq": 30
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 19,
+     "yearAgo": 22,
+     "prev": 18,
+     "yoy": -3,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 25,
+     "yearAgo": 26,
+     "prev": 17,
+     "yoy": -3.8,
+     "qoq": 47.1
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue grew 23% to ₹201cr, and operating profit rose 8% to ₹39cr.",
+     "Operating margin recovered to 19%, beating the 17% target earlier than expected.",
+     "Net profit fell 4% year-on-year to ₹25cr."
+    ],
+    "text": "Revenue grew 23% to ₹201cr, and operating profit rose 8% to ₹39cr. Operating margin recovered to 19%, beating the 17% target earlier than expected. Net profit fell 4% year-on-year to ₹25cr.",
+    "checks": [
+     {
+      "text": "Recovery of $2.8m Ascot award",
+      "status": "missed",
+      "why": "Settled for US$1.75m instead"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Aditya Birla Fashion & Retail",
+   "sector": "Retail",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 2030,
+     "yearAgo": 1982,
+     "prev": 2026,
+     "yoy": 2.4,
+     "qoq": 0.2
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 7,
+     "yearAgo": 62,
+     "prev": 111,
+     "yoy": -88.7,
+     "qoq": -93.7
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 0.3,
+     "yearAgo": 3.1,
+     "prev": 5,
+     "yoy": -2.8,
+     "qoq": -4.7
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": -376,
+     "yearAgo": -295,
+     "prev": -249,
+     "yoy": null,
+     "qoq": null
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue grew just 2% to ₹2,030cr, well below the >20% full-year guidance.",
+     "Operating profit plunged 89% to ₹7cr, with margins collapsing to 0.3%.",
+     "Net loss widened significantly to ₹376cr from ₹295cr a year ago."
+    ],
+    "text": "Revenue grew just 2% to ₹2,030cr, well below the >20% full-year guidance. Operating profit plunged 89% to ₹7cr, with margins collapsing to 0.3%. Net loss widened significantly to ₹376cr from ₹295cr a year ago.",
+    "checks": [],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Amagi Media Labs",
+   "sector": "Software",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 476,
+     "yearAgo": 375,
+     "prev": 437,
+     "yoy": 26.9,
+     "qoq": 8.9
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 64,
+     "yearAgo": -3,
+     "prev": 30,
+     "yoy": null,
+     "qoq": 113.3
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 13,
+     "yearAgo": -0.9,
+     "prev": 7,
+     "yoy": 13.9,
+     "qoq": 6
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 75,
+     "yearAgo": 3,
+     "prev": 34,
+     "yoy": null,
+     "qoq": 120.6
+    }
+   ],
+   "oneOff": "The year-ago quarter's profit included other income of ₹15cr (300% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue rose 27% to ₹476cr, slightly missing the ~30% growth aspiration.",
+     "Operating profit swung to ₹64cr, as the operating margin jumped to 13%.",
+     "Net profit hit ₹75cr; the year-ago figure was flattered by other income."
+    ],
+    "text": "Revenue rose 27% to ₹476cr, slightly missing the ~30% growth aspiration. Operating profit swung to ₹64cr, as the operating margin jumped to 13%. Net profit hit ₹75cr; the year-ago figure was flattered by other income.",
+    "checks": [
+     {
+      "text": "Gross margin back towards 69%",
+      "status": "unclear",
+      "why": "Not in these figures"
+     },
+     {
+      "text": "Revenue growth around 30%",
+      "status": "missed",
+      "why": "Came in at 27%"
+     },
+     {
+      "text": "AI products revenue disclosed",
+      "status": "unclear",
+      "why": "Not in these figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Apollo Pipes",
+   "sector": "Plastics",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 309.64,
+     "yearAgo": 235.71,
+     "prev": 295.43,
+     "yoy": 31.4,
+     "qoq": 4.8
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 11.5,
+     "yearAgo": 15.77,
+     "prev": 3.05,
+     "yoy": -27.1,
+     "qoq": 277
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 3.71,
+     "yearAgo": 6.69,
+     "prev": 1.03,
+     "yoy": -3,
+     "qoq": 2.7
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 0.63,
+     "yearAgo": 1.39,
+     "prev": -11.12,
+     "yoy": null,
+     "qoq": null
+    }
+   ],
+   "oneOff": "Other income of ₹8cr is 1181% of profit before tax this quarter, so profit may not reflect the business. The year-ago quarter's profit included other income of ₹5cr (130% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue grew 31% to ₹310cr, meeting the promised double-digit growth.",
+     "Operating profit fell 27% to ₹12cr; margin dropped to 3.7%, missing the 7-8% target.",
+     "Net profit of ₹1cr was heavily flattered by ₹8cr of other income."
+    ],
+    "text": "Revenue grew 31% to ₹310cr, meeting the promised double-digit growth. Operating profit fell 27% to ₹12cr; margin dropped to 3.7%, missing the 7-8% target. Net profit of ₹1cr was heavily flattered by ₹8cr of other income.",
+    "checks": [
+     {
+      "text": "Double-digit revenue growth",
+      "status": "met",
+      "why": "Revenue grew 31% YoY"
+     },
+     {
+      "text": "Stock days falling from 80",
+      "status": "unclear",
+      "why": "Not in these figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Arvind SmartSpaces",
+   "sector": "Realty",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 157,
+     "yearAgo": 141,
+     "prev": 318,
+     "yoy": 11.3,
+     "qoq": -50.6
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 55,
+     "yearAgo": 30,
+     "prev": 156,
+     "yoy": 83.3,
+     "qoq": -64.7
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 35,
+     "yearAgo": 21,
+     "prev": 49,
+     "yoy": 14,
+     "qoq": -14
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 23,
+     "yearAgo": 18,
+     "prev": 97,
+     "yoy": 27.8,
+     "qoq": -76.3
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue rose 11% to ₹157cr, and operating profit jumped 83% to ₹55cr.",
+     "Operating margin expanded 14 points to 35%, driving the strong profit growth.",
+     "Net profit grew 28% to ₹23cr, beating the 15% base-case growth expectation."
+    ],
+    "text": "Revenue rose 11% to ₹157cr, and operating profit jumped 83% to ₹55cr. Operating margin expanded 14 points to 35%, driving the strong profit growth. Net profit grew 28% to ₹23cr, beating the 15% base-case growth expectation.",
+    "checks": [
+     {
+      "text": "Net debt within ₹800–850cr band",
+      "status": "unclear",
+      "why": "Not in these figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Ashapura Minechem",
+   "sector": "Mining & Metals Recycle",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1063,
+     "yearAgo": 952,
+     "prev": 1616,
+     "yoy": 11.7,
+     "qoq": -34.2
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 125,
+     "yearAgo": 131,
+     "prev": 181,
+     "yoy": -4.6,
+     "qoq": -30.9
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 12,
+     "yearAgo": 14,
+     "prev": 11,
+     "yoy": -2,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 70,
+     "yearAgo": 106,
+     "prev": 108,
+     "yoy": -34,
+     "qoq": -35.2
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue grew 12% to ₹1,063cr, but operating profit fell 5% to ₹125cr.",
+     "Operating margin shrank 2 points year-on-year to 12%.",
+     "Net profit dropped 34% to ₹70cr, trailing the 7% long-term growth expectation."
+    ],
+    "text": "Revenue grew 12% to ₹1,063cr, but operating profit fell 5% to ₹125cr. Operating margin shrank 2 points year-on-year to 12%. Net profit dropped 34% to ₹70cr, trailing the 7% long-term growth expectation.",
+    "checks": [
+     {
+      "text": "Profit per tonne holding at $5.5-6, moving toward $10",
+      "status": "unclear",
+      "why": "needs volume data from the call"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Ashoka Buildcon",
+   "sector": "Construction",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1505,
+     "yearAgo": 1851,
+     "prev": 1500,
+     "yoy": -18.7,
+     "qoq": 0.3
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 210,
+     "yearAgo": 585,
+     "prev": 258,
+     "yoy": -64.1,
+     "qoq": -18.6
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 14,
+     "yearAgo": 32,
+     "prev": 17,
+     "yoy": -18,
+     "qoq": -3
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": -119,
+     "yearAgo": 91,
+     "prev": 127,
+     "yoy": -230.8,
+     "qoq": -193.7
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue fell 19% to ₹1,505cr, well behind the 10–15% full-year growth guidance.",
+     "Operating profit crashed 64% to ₹210cr as the operating margin plunged 18 points to 14%.",
+     "Net profit swung to a ₹119cr loss, down 231% from last year."
+    ],
+    "text": "Revenue fell 19% to ₹1,505cr, well behind the 10–15% full-year growth guidance. Operating profit crashed 64% to ₹210cr as the operating margin plunged 18 points to 14%. Net profit swung to a ₹119cr loss, down 231% from last year.",
+    "checks": [
+     {
+      "text": "Delhi HC ruling on NHAI suspension",
+      "status": "unclear",
+      "why": "Not in the financial figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Bikaji Foods",
+   "sector": "Food Products",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 939,
+     "yearAgo": 830,
+     "prev": 734,
+     "yoy": 13.1,
+     "qoq": 27.9
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 119,
+     "yearAgo": 128,
+     "prev": 99,
+     "yoy": -7,
+     "qoq": 20.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 13,
+     "yearAgo": 15,
+     "prev": 13,
+     "yoy": -2,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 69,
+     "yearAgo": 78,
+     "prev": 59,
+     "yoy": -11.5,
+     "qoq": 16.9
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue grew 13% to ₹939cr, missing the 15% growth guided and expected.",
+     "Operating profit fell 7% to ₹119cr; margin dropped 2 points to 13%.",
+     "Net profit fell 12% to ₹69cr, missing the 13% long-term growth base case."
+    ],
+    "text": "Revenue grew 13% to ₹939cr, missing the 15% growth guided and expected. Operating profit fell 7% to ₹119cr; margin dropped 2 points to 13%. Net profit fell 12% to ₹69cr, missing the 13% long-term growth base case.",
+    "checks": [],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Blue Jet Healthcare",
+   "sector": "Pharma API",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 376,
+     "yearAgo": 165,
+     "prev": 293,
+     "yoy": 127.9,
+     "qoq": 28.3
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 119,
+     "yearAgo": 55,
+     "prev": 98,
+     "yoy": 116.4,
+     "qoq": 21.4
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 32,
+     "yearAgo": 33,
+     "prev": 33,
+     "yoy": -1,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 103,
+     "yearAgo": 52,
+     "prev": 78,
+     "yoy": null,
+     "qoq": 32.1
+    }
+   ],
+   "oneOff": "The year-ago quarter's profit included other income of ₹24cr (35% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue surged 128% to ₹376cr, strongly meeting expectations of returning to growth.",
+     "Operating profit jumped 116% to ₹119cr, with the margin dipping slightly to 32%.",
+     "Net profit was ₹103cr; year-ago comparison is excluded due to past high other income."
+    ],
+    "text": "Revenue surged 128% to ₹376cr, strongly meeting expectations of returning to growth. Operating profit jumped 116% to ₹119cr, with the margin dipping slightly to 32%. Net profit was ₹103cr; year-ago comparison is excluded due to past high other income.",
+    "checks": [
+     {
+      "text": "Revenue growth returning",
+      "status": "met",
+      "why": "Revenue surged 128% year-on-year"
+     },
+     {
+      "text": "First phase of R&D centre operating",
+      "status": "unclear",
+      "why": "Not in these financial figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Campus Activewear",
+   "sector": "Consumer Durables",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 452,
+     "yearAgo": 387,
+     "prev": 385,
+     "yoy": 16.8,
+     "qoq": 17.4
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 57,
+     "yearAgo": 50,
+     "prev": 55,
+     "yoy": 14,
+     "qoq": 3.6
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 13,
+     "yearAgo": 13,
+     "prev": 14,
+     "yoy": 0,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 24,
+     "yearAgo": 20,
+     "prev": 26,
+     "yoy": 20,
+     "qoq": -7.7
+    }
+   ],
+   "take": {
+    "verdict": "in line",
+    "points": [
+     "Revenue grew 17% to ₹452cr, meeting the mid-double-digit growth guidance.",
+     "Operating profit rose 14% to ₹57cr, with margins flat year-on-year at 13%.",
+     "Net profit grew 20% to ₹24cr, beating the 15% base-case growth expectation."
+    ],
+    "text": "Revenue grew 17% to ₹452cr, meeting the mid-double-digit growth guidance. Operating profit rose 14% to ₹57cr, with margins flat year-on-year at 13%. Net profit grew 20% to ₹24cr, beating the 15% base-case growth expectation.",
+    "checks": [],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Ceigall India",
+   "sector": "Construction",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1022,
+     "yearAgo": 807,
+     "prev": 970,
+     "yoy": 26.6,
+     "qoq": 5.4
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 174,
+     "yearAgo": 114,
+     "prev": 143,
+     "yoy": 52.6,
+     "qoq": 21.7
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 17,
+     "yearAgo": 14,
+     "prev": 15,
+     "yoy": 3,
+     "qoq": 2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 92,
+     "yearAgo": 56,
+     "prev": 64,
+     "yoy": 64.3,
+     "qoq": 43.8
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue rose 27% to ₹1,022cr, well ahead of the minimum 15% guided.",
+     "Operating profit jumped 53% to ₹174cr as the margin expanded three points to 17%.",
+     "Net profit surged 64% to ₹92cr, easily beating the 12% base-case growth expectation."
+    ],
+    "text": "Revenue rose 27% to ₹1,022cr, well ahead of the minimum 15% guided. Operating profit jumped 53% to ₹174cr as the margin expanded three points to 17%. Net profit surged 64% to ₹92cr, easily beating the 12% base-case growth expectation.",
+    "checks": [
+     {
+      "text": "Operating cash turning positive",
+      "status": "unclear",
+      "why": "Not in these figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Cello World",
+   "sector": "Consumer Durables",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 633,
+     "yearAgo": 587,
+     "prev": 527,
+     "yoy": 7.8,
+     "qoq": 20.1
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 122,
+     "yearAgo": 128,
+     "prev": 99,
+     "yoy": -4.7,
+     "qoq": 23.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 19,
+     "yearAgo": 22,
+     "prev": 19,
+     "yoy": -3,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 82,
+     "yearAgo": 91,
+     "prev": 73,
+     "yoy": -9.9,
+     "qoq": 12.3
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue grew 8% to ₹633cr, but operating profit fell 5% to ₹122cr.",
+     "Operating margin fell 3 points year-on-year to 19%, showing no recovery yet.",
+     "Net profit dropped 10% to ₹82cr, well below the 12% growth expected."
+    ],
+    "text": "Revenue grew 8% to ₹633cr, but operating profit fell 5% to ₹122cr. Operating margin fell 3 points year-on-year to 19%, showing no recovery yet. Net profit dropped 10% to ₹82cr, well below the 12% growth expected.",
+    "checks": [
+     {
+      "text": "Volume growth in Q2",
+      "status": "unclear",
+      "why": "Needs the earnings call for volume split"
+     },
+     {
+      "text": "New guidance numbers given",
+      "status": "unclear",
+      "why": "Awaits the earnings call"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Cemindia Projects",
+   "sector": "Construction",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 2749,
+     "yearAgo": 2195,
+     "prev": 2721,
+     "yoy": 25.2,
+     "qoq": 1
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 267,
+     "yearAgo": 202,
+     "prev": 275,
+     "yoy": 32.2,
+     "qoq": -2.9
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 10,
+     "yearAgo": 9,
+     "prev": 10,
+     "yoy": 1,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 131,
+     "yearAgo": 108,
+     "prev": 141,
+     "yoy": 21.3,
+     "qoq": -7.1
+    }
+   ],
+   "take": {
+    "verdict": "in line",
+    "points": [
+     "Revenue up 25% to ₹2,749cr, perfectly in line with the 25% growth guidance.",
+     "Operating profit rose 32% to ₹267cr as the margin expanded to 10%.",
+     "Net profit grew 21% to ₹131cr, though it dipped 7% from the previous quarter."
+    ],
+    "text": "Revenue up 25% to ₹2,749cr, perfectly in line with the 25% growth guidance. Operating profit rose 32% to ₹267cr as the margin expanded to 10%. Net profit grew 21% to ₹131cr, though it dipped 7% from the previous quarter.",
+    "checks": [
+     {
+      "text": "Margin '10% plus'",
+      "status": "met",
+      "why": "Margin came in at 10%"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Dr Agarwal's Health Care",
+   "sector": "Hospitals",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 655,
+     "yearAgo": 499,
+     "prev": 614,
+     "yoy": 31.3,
+     "qoq": 6.7
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 176,
+     "yearAgo": 136,
+     "prev": 170,
+     "yoy": 29.4,
+     "qoq": 3.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 27,
+     "yearAgo": 27,
+     "prev": 28,
+     "yoy": 0,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 57,
+     "yearAgo": 36,
+     "prev": 55,
+     "yoy": 58.3,
+     "qoq": 3.6
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue up 31% to ₹655cr, well ahead of the 22% base-case growth expectation.",
+     "Operating profit rose 29% to ₹176cr, with the operating margin holding steady at 27%.",
+     "Net profit jumped 58% to ₹57cr, further beating the 22% growth expectation."
+    ],
+    "text": "Revenue up 31% to ₹655cr, well ahead of the 22% base-case growth expectation. Operating profit rose 29% to ₹176cr, with the operating margin holding steady at 27%. Net profit jumped 58% to ₹57cr, further beating the 22% growth expectation.",
+    "checks": [
+     {
+      "text": "Same-store growth above 12%",
+      "status": "unclear",
+      "why": "Not in headline figures"
+     },
+     {
+      "text": "12 more centres opened",
+      "status": "unclear",
+      "why": "Not in headline figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Eldeco Housing & Ind",
+   "sector": "Realty",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 51.84,
+     "yearAgo": 33.05,
+     "prev": 49.07,
+     "yoy": 56.9,
+     "qoq": 5.6
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 12.52,
+     "yearAgo": 3.29,
+     "prev": 17.43,
+     "yoy": 280.5,
+     "qoq": -28.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 24.15,
+     "yearAgo": 9.95,
+     "prev": 35.52,
+     "yoy": 14.2,
+     "qoq": -11.4
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 7.38,
+     "yearAgo": 2.63,
+     "prev": 15.11,
+     "yoy": null,
+     "qoq": -51.2
+    }
+   ],
+   "oneOff": "The year-ago quarter's profit included other income of ₹2cr (52% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue grew 57% to ₹51.84cr, with no specific guidance provided for the quarter.",
+     "Operating profit jumped 281% to ₹12.52cr as operating margin expanded 14.2 points to 24.15%.",
+     "Net profit was ₹7.38cr; year-ago profit was flattered by ₹2cr of other income."
+    ],
+    "text": "Revenue grew 57% to ₹51.84cr, with no specific guidance provided for the quarter. Operating profit jumped 281% to ₹12.52cr as operating margin expanded 14.2 points to 24.15%. Net profit was ₹7.38cr; year-ago profit was flattered by ₹2cr of other income.",
+    "checks": [],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Electronics Mart Ind",
+   "sector": "Retail",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1900,
+     "yearAgo": 1591,
+     "prev": 2419,
+     "yoy": 19.4,
+     "qoq": -21.5
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 131,
+     "yearAgo": 82,
+     "prev": 239,
+     "yoy": 59.8,
+     "qoq": -45.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 7,
+     "yearAgo": 5,
+     "prev": 10,
+     "yoy": 2,
+     "qoq": -3
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 40,
+     "yearAgo": 16,
+     "prev": 121,
+     "yoy": null,
+     "qoq": -66.9
+    }
+   ],
+   "oneOff": "The year-ago quarter's profit included other income of ₹17cr (77% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "in line",
+    "points": [
+     "Revenue grew 19% to ₹1,900cr, in line with the 18–20% guided for FY27.",
+     "Operating profit jumped 60% to ₹131cr as the margin expanded to 7%.",
+     "Net profit was ₹40cr; year-ago profit of ₹16cr was flattered by other income."
+    ],
+    "text": "Revenue grew 19% to ₹1,900cr, in line with the 18–20% guided for FY27. Operating profit jumped 60% to ₹131cr as the margin expanded to 7%. Net profit was ₹40cr; year-ago profit of ₹16cr was flattered by other income.",
+    "checks": [],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Excelsoft Technologies",
+   "sector": "Software",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 80.9,
+     "yearAgo": 64.61,
+     "prev": 80.26,
+     "yoy": 25.2,
+     "qoq": 0.8
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 13.23,
+     "yearAgo": 17.51,
+     "prev": 13.04,
+     "yoy": -24.4,
+     "qoq": 1.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 16.35,
+     "yearAgo": 27.1,
+     "prev": 16.25,
+     "yoy": -10.7,
+     "qoq": 0.1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 8.28,
+     "yearAgo": 10.61,
+     "prev": 9.23,
+     "yoy": -22,
+     "qoq": -10.3
+    }
+   ],
+   "oneOff": "Other income of ₹6cr is 51% of profit before tax this quarter, so profit may not reflect the business.",
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue up 25% to ₹80.9cr, missing the 30%+ growth guided for FY27.",
+     "Operating profit fell 24% to ₹13.23cr; margin dropped to 16.35%, missing 25% expectations.",
+     "Net profit of ₹8.28cr was flattered by ₹6cr other income (51% of pre-tax profit)."
+    ],
+    "text": "Revenue up 25% to ₹80.9cr, missing the 30%+ growth guided for FY27. Operating profit fell 24% to ₹13.23cr; margin dropped to 16.35%, missing 25% expectations. Net profit of ₹8.28cr was flattered by ₹6cr other income (51% of pre-tax profit).",
+    "checks": [],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Gala Precision Engi.",
+   "sector": "Industrials",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 94,
+     "yearAgo": 71,
+     "prev": 75,
+     "yoy": 32.4,
+     "qoq": 25.3
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 16,
+     "yearAgo": 11,
+     "prev": 12,
+     "yoy": 45.5,
+     "qoq": 33.3
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 17,
+     "yearAgo": 16,
+     "prev": 16,
+     "yoy": 1,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 11,
+     "yearAgo": 8,
+     "prev": 8,
+     "yoy": 37.5,
+     "qoq": 37.5
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue grew 32% YoY to ₹94cr, beating the 20–25% full-year guidance.",
+     "Operating profit jumped 46% YoY to ₹16cr, well above the 22% base-case expectation.",
+     "Operating margin expanded 1 percentage point to 17%, entering the expected 17–19% range.",
+     "Net profit rose 38% YoY to ₹11cr."
+    ],
+    "text": "Revenue grew 32% YoY to ₹94cr, beating the 20–25% full-year guidance. Operating profit jumped 46% YoY to ₹16cr, well above the 22% base-case expectation. Operating margin expanded 1 percentage point to 17%, entering the expected 17–19% range. Net profit rose 38% YoY to ₹11cr.",
+    "checks": [
+     {
+      "text": "No material demand from IT search",
+      "status": "unclear",
+      "why": "Not detailed in headline figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Greenlam Industries",
+   "sector": "Consumer Durables",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 875,
+     "yearAgo": 808,
+     "prev": 797,
+     "yoy": 8.3,
+     "qoq": 9.8
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 85,
+     "yearAgo": 104,
+     "prev": 80,
+     "yoy": -18.3,
+     "qoq": 6.3
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 10,
+     "yearAgo": 13,
+     "prev": 10,
+     "yoy": -3,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 24,
+     "yearAgo": 32,
+     "prev": 21,
+     "yoy": -25,
+     "qoq": 14.3
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue grew 8% to ₹875cr, well below the 18% full-year guidance.",
+     "Operating profit fell 18% to ₹85cr as the margin dropped 3 points to 10%.",
+     "Net profit fell 25% to ₹24cr compared to last year."
+    ],
+    "text": "Revenue grew 8% to ₹875cr, well below the 18% full-year guidance. Operating profit fell 18% to ₹85cr as the margin dropped 3 points to 10%. Net profit fell 25% to ₹24cr compared to last year.",
+    "checks": [
+     {
+      "text": "Explanation of ₹63cr tax disputes",
+      "status": "unclear",
+      "why": "Needs the earnings call"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Happy Forgings",
+   "sector": "Forging",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 501,
+     "yearAgo": 377,
+     "prev": 449,
+     "yoy": 32.9,
+     "qoq": 11.6
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 153,
+     "yearAgo": 116,
+     "prev": 141,
+     "yoy": 31.9,
+     "qoq": 8.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 31,
+     "yearAgo": 31,
+     "prev": 31,
+     "yoy": 0,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 98,
+     "yearAgo": 73,
+     "prev": 91,
+     "yoy": 34.2,
+     "qoq": 7.7
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue up 33% to ₹501cr, well ahead of the 17–19% full-year guidance.",
+     "Operating profit rose 32% to ₹153cr, with the margin holding steady at 31%.",
+     "Net profit grew 34% to ₹98cr, beating the 20% base-case growth expectation."
+    ],
+    "text": "Revenue up 33% to ₹501cr, well ahead of the 17–19% full-year guidance. Operating profit rose 32% to ₹153cr, with the margin holding steady at 31%. Net profit grew 34% to ₹98cr, beating the 20% base-case growth expectation.",
+    "checks": [
+     {
+      "text": "Operating margin above 30%",
+      "status": "met",
+      "why": "margin held at 31%"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Hester Biosciences",
+   "sector": "Pharma Others",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 98,
+     "yearAgo": 71,
+     "prev": 77,
+     "yoy": 38,
+     "qoq": 27.3
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 33,
+     "yearAgo": 12,
+     "prev": 23,
+     "yoy": 175,
+     "qoq": 43.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 33,
+     "yearAgo": 17,
+     "prev": 29,
+     "yoy": 16,
+     "qoq": 4
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 21,
+     "yearAgo": 14,
+     "prev": 97,
+     "yoy": null,
+     "qoq": -78.4
+    }
+   ],
+   "oneOff": "The year-ago quarter's profit included other income of ₹12cr (71% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue grew 38% to ₹98cr, and operating profit surged 175% to ₹33cr.",
+     "Operating margin expanded by 16 percentage points year-on-year to a strong 33%.",
+     "Net profit was ₹21cr, showing clean earnings after Q1's ₹85cr one-off gain.",
+     "Year-ago profit included ₹12cr other income, so net profit growth is not shown."
+    ],
+    "text": "Revenue grew 38% to ₹98cr, and operating profit surged 175% to ₹33cr. Operating margin expanded by 16 percentage points year-on-year to a strong 33%. Net profit was ₹21cr, showing clean earnings after Q1's ₹85cr one-off gain. Year-ago profit included ₹12cr other income, so net profit growth is not shown.",
+    "checks": [
+     {
+      "text": "Govt PPR and goat pox tenders placed",
+      "status": "unclear",
+      "why": "Not in headline figures"
+     },
+     {
+      "text": "Profit without one-off gains",
+      "status": "met",
+      "why": "Net profit of ₹21cr appears clean"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "HPL Electric",
+   "sector": "Industrials",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 608,
+     "yearAgo": 434,
+     "prev": 515,
+     "yoy": 40.1,
+     "qoq": 18.1
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 71,
+     "yearAgo": 66,
+     "prev": 63,
+     "yoy": 7.6,
+     "qoq": 12.7
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 12,
+     "yearAgo": 15,
+     "prev": 12,
+     "yoy": -3,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 23,
+     "yearAgo": 22,
+     "prev": 19,
+     "yoy": 4.5,
+     "qoq": 21.1
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue surged 40% to ₹608cr, well ahead of the guided double-digit growth.",
+     "Operating profit rose just 8% to ₹71cr as margins fell 3 points to 12%.",
+     "Net profit grew 5% to ₹23cr, trailing the 12% base-case growth expectation."
+    ],
+    "text": "Revenue surged 40% to ₹608cr, well ahead of the guided double-digit growth. Operating profit rose just 8% to ₹71cr as margins fell 3 points to 12%. Net profit grew 5% to ₹23cr, trailing the 12% base-case growth expectation.",
+    "checks": [
+     {
+      "text": "Higher priced meter orders and growing book",
+      "status": "unclear",
+      "why": "Awaits earnings call commentary"
+     },
+     {
+      "text": "Debt starting to fall",
+      "status": "unclear",
+      "why": "Balance sheet not provided"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "IG Petrochem.",
+   "sector": "Chemicals",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 759,
+     "yearAgo": 465,
+     "prev": 618,
+     "yoy": 63.2,
+     "qoq": 22.8
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 132,
+     "yearAgo": 20,
+     "prev": 112,
+     "yoy": 560,
+     "qoq": 17.9
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 17,
+     "yearAgo": 4.3,
+     "prev": 18,
+     "yoy": 12.7,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 85,
+     "yearAgo": -2,
+     "prev": 66,
+     "yoy": null,
+     "qoq": 28.8
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue surged 63% to ₹759cr; operating profit jumped 560% to ₹132cr.",
+     "Operating margin expanded to 17%, up 13 percentage points from last year.",
+     "Net profit swung to ₹85cr from a ₹2cr loss a year ago."
+    ],
+    "text": "Revenue surged 63% to ₹759cr; operating profit jumped 560% to ₹132cr. Operating margin expanded to 17%, up 13 percentage points from last year. Net profit swung to ₹85cr from a ₹2cr loss a year ago.",
+    "checks": [
+     {
+      "text": "Phthalic volume back to 50,000 tonnes",
+      "status": "unclear",
+      "why": "Volume data not in headline figures"
+     },
+     {
+      "text": "First plasticiser sales and margin",
+      "status": "unclear",
+      "why": "Segment details not provided"
+     },
+     {
+      "text": "Explanation of Dubai subsidiary",
+      "status": "unclear",
+      "why": "Awaits management commentary on call"
+     },
+     {
+      "text": "Plasticiser commercial production starts",
+      "status": "unclear",
+      "why": "Operational updates not in headline figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Insecticides (India)",
+   "sector": "Agrochemical & Fertilizers",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 686,
+     "yearAgo": 638,
+     "prev": 612,
+     "yoy": 7.5,
+     "qoq": 12.1
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 92,
+     "yearAgo": 89,
+     "prev": 68,
+     "yoy": 3.4,
+     "qoq": 35.3
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 13,
+     "yearAgo": 14,
+     "prev": 11,
+     "yoy": -1,
+     "qoq": 2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 56,
+     "yearAgo": 59,
+     "prev": 44,
+     "yoy": -5.1,
+     "qoq": 27.3
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue up 8% to ₹686cr, missing the 15–19% guided.",
+     "Operating profit rose 3% to ₹92cr, as margin slipped one point to 13%.",
+     "Net profit fell 5% to ₹56cr from ₹59cr a year ago."
+    ],
+    "text": "Revenue up 8% to ₹686cr, missing the 15–19% guided. Operating profit rose 3% to ₹92cr, as margin slipped one point to 13%. Net profit fell 5% to ₹56cr from ₹59cr a year ago.",
+    "checks": [
+     {
+      "text": "Revised targets and falling inventory/receivables",
+      "status": "unclear",
+      "why": "Awaits balance sheet and earnings call"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Ipca Laboratories",
+   "sector": "Pharma",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 2910,
+     "yearAgo": 2556,
+     "prev": 2788,
+     "yoy": 13.8,
+     "qoq": 4.4
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 673,
+     "yearAgo": 545,
+     "prev": 670,
+     "yoy": 23.5,
+     "qoq": 0.4
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 23,
+     "yearAgo": 21,
+     "prev": 24,
+     "yoy": 2,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 389,
+     "yearAgo": 281,
+     "prev": 424,
+     "yoy": 38.4,
+     "qoq": -8.3
+    }
+   ],
+   "take": {
+    "verdict": "in line",
+    "points": [
+     "Revenue grew 14% to ₹2,910cr, meeting the lower end of the 14–16% guidance.",
+     "Operating profit rose 24% to ₹673cr, with the margin holding at the 23% guided.",
+     "Net profit jumped 38% to ₹389cr, easily beating the 15% base-case growth expectation."
+    ],
+    "text": "Revenue grew 14% to ₹2,910cr, meeting the lower end of the 14–16% guidance. Operating profit rose 24% to ₹673cr, with the margin holding at the 23% guided. Net profit jumped 38% to ₹389cr, easily beating the 15% base-case growth expectation.",
+    "checks": [
+     {
+      "text": "Margin above 23% without tender/currency help",
+      "status": "unclear",
+      "why": "margin was exactly 23%, breakdown unknown"
+     },
+     {
+      "text": "No further associate write-offs",
+      "status": "unclear",
+      "why": "not detailed in these figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "IRB Infra.Devl.",
+   "sector": "Construction",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1897,
+     "yearAgo": 1751,
+     "prev": 2137,
+     "yoy": 8.3,
+     "qoq": -11.2
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 1055,
+     "yearAgo": 925,
+     "prev": 1153,
+     "yoy": 14.1,
+     "qoq": -8.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 56,
+     "yearAgo": 53,
+     "prev": 54,
+     "yoy": 3,
+     "qoq": 2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 260,
+     "yearAgo": 141,
+     "prev": 306,
+     "yoy": 84.4,
+     "qoq": -15
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue rose 8% to ₹1,897cr; operating profit grew 14% to ₹1,055cr.",
+     "Operating margin expanded by 3 points year-on-year to 56%.",
+     "Net profit jumped 84% to ₹260cr, well ahead of the 13% expected growth."
+    ],
+    "text": "Revenue rose 8% to ₹1,897cr; operating profit grew 14% to ₹1,055cr. Operating margin expanded by 3 points year-on-year to 56%. Net profit jumped 84% to ₹260cr, well ahead of the 13% expected growth.",
+    "checks": [
+     {
+      "text": "New toll-road win at 15-16% return",
+      "status": "unclear",
+      "why": "Not in headline figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Juniper Hotels",
+   "sector": "Hotels and Travels",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 250,
+     "yearAgo": 230,
+     "prev": 250,
+     "yoy": 8.7,
+     "qoq": 0
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 83,
+     "yearAgo": 83,
+     "prev": 86,
+     "yoy": 0,
+     "qoq": -3.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 33,
+     "yearAgo": 36,
+     "prev": 35,
+     "yoy": -3,
+     "qoq": -2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 37,
+     "yearAgo": 17,
+     "prev": 33,
+     "yoy": 117.6,
+     "qoq": 12.1
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue grew 9% to ₹250cr, but operating profit stayed flat at ₹83cr.",
+     "Operating margin fell three points year-on-year to 33%.",
+     "Net profit jumped 118% to ₹37cr, likely aided by past tax losses."
+    ],
+    "text": "Revenue grew 9% to ₹250cr, but operating profit stayed flat at ₹83cr. Operating margin fell three points year-on-year to 33%. Net profit jumped 118% to ₹37cr, likely aided by past tax losses.",
+    "checks": [
+     {
+      "text": "No related-party loans to promoters",
+      "status": "unclear",
+      "why": "Not in these headline figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Jyoti Resins",
+   "sector": "Chemicals",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 98,
+     "yearAgo": 74,
+     "prev": 88,
+     "yoy": 32.4,
+     "qoq": 11.4
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 22,
+     "yearAgo": 20,
+     "prev": 13,
+     "yoy": 10,
+     "qoq": 69.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 23,
+     "yearAgo": 28,
+     "prev": 14,
+     "yoy": -5,
+     "qoq": 9
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 18,
+     "yearAgo": 17,
+     "prev": 12,
+     "yoy": 5.9,
+     "qoq": 50
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue surged 32% to ₹98cr, well ahead of the 15% growth expected.",
+     "Operating margin recovered to 23%, hitting the expected 23-25% target after last quarter's 14%.",
+     "Operating profit grew 10% to ₹22cr, held back by a lower year-on-year margin.",
+     "Net profit rose 6% to ₹18cr, tracking the operating profit growth."
+    ],
+    "text": "Revenue surged 32% to ₹98cr, well ahead of the 15% growth expected. Operating margin recovered to 23%, hitting the expected 23-25% target after last quarter's 14%. Operating profit grew 10% to ₹22cr, held back by a lower year-on-year margin. Net profit rose 6% to ₹18cr, tracking the operating profit growth.",
+    "checks": [
+     {
+      "text": "EBITDA margin back to 23-25%",
+      "status": "met",
+      "why": "Margin recovered to exactly 23%"
+     },
+     {
+      "text": "Revenue up at least 15% YoY",
+      "status": "met",
+      "why": "Revenue grew 32% to ₹98cr"
+     },
+     {
+      "text": "Santej brownfield expansion running",
+      "status": "unclear",
+      "why": "Needs confirmation on the earnings call"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Kalpataru Proj.",
+   "sector": "Construction - Power",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 7004,
+     "yearAgo": 6529,
+     "prev": 6408,
+     "yoy": 7.3,
+     "qoq": 9.3
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 581,
+     "yearAgo": 561,
+     "prev": 562,
+     "yoy": 3.6,
+     "qoq": 3.4
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 8,
+     "yearAgo": 9,
+     "prev": 9,
+     "yoy": -1,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 292,
+     "yearAgo": 237,
+     "prev": 312,
+     "yoy": 23.2,
+     "qoq": -6.4
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue grew 7% to ₹7,004cr, well below the 15% top-line growth guided.",
+     "Operating profit rose 4% to ₹581cr; the margin fell one point to 8%.",
+     "Net profit jumped 23% to ₹292cr, beating the 15% base-case growth expectation."
+    ],
+    "text": "Revenue grew 7% to ₹7,004cr, well below the 15% top-line growth guided. Operating profit rose 4% to ₹581cr; the margin fell one point to 8%. Net profit jumped 23% to ₹292cr, beating the 15% base-case growth expectation.",
+    "checks": [],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Karamtara Engineering",
+   "sector": "Construction - Power",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Jun 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1647,
+     "yearAgo": 918,
+     "prev": 1581,
+     "yoy": 79.4,
+     "qoq": 4.2
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 196,
+     "yearAgo": 120,
+     "prev": 174,
+     "yoy": 63.3,
+     "qoq": 12.6
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 12,
+     "yearAgo": 13,
+     "prev": 11,
+     "yoy": -1,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 95,
+     "yearAgo": 60,
+     "prev": 87,
+     "yoy": 58.3,
+     "qoq": 9.2
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue surged 79% YoY to ₹1,647cr, beating the 60–65% full-year guidance.",
+     "Operating profit rose 63% YoY to ₹196cr, with margins improving sequentially to 12%.",
+     "Net profit grew 58% YoY to ₹95cr."
+    ],
+    "text": "Revenue surged 79% YoY to ₹1,647cr, beating the 60–65% full-year guidance. Operating profit rose 63% YoY to ₹196cr, with margins improving sequentially to 12%. Net profit grew 58% YoY to ₹95cr.",
+    "checks": [
+     {
+      "text": "Q2 operating margin clearly above Q1's 11%",
+      "status": "met",
+      "why": "Margin rose to 12%"
+     },
+     {
+      "text": "Borrowings down after IPO repayment",
+      "status": "unclear",
+      "why": "Debt figures not provided"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Kiri Industries",
+   "sector": "Chemicals",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 299,
+     "yearAgo": 213,
+     "prev": 312,
+     "yoy": 40.4,
+     "qoq": -4.2
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": -5,
+     "yearAgo": -14,
+     "prev": 16,
+     "yoy": null,
+     "qoq": -131.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": -1.6,
+     "yearAgo": -6,
+     "prev": 5,
+     "yoy": 4.4,
+     "qoq": -6.6
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": -23,
+     "yearAgo": 20,
+     "prev": 291,
+     "yoy": -215,
+     "qoq": -107.9
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue grew 40% YoY to ₹299cr, but fell 4% from the previous quarter.",
+     "Operating loss narrowed YoY to ₹5cr, with margins remaining negative at -1.6%.",
+     "Net profit collapsed to a ₹23cr loss, worse than the expected 15% decline."
+    ],
+    "text": "Revenue grew 40% YoY to ₹299cr, but fell 4% from the previous quarter. Operating loss narrowed YoY to ₹5cr, with margins remaining negative at -1.6%. Net profit collapsed to a ₹23cr loss, worse than the expected 15% decline.",
+    "checks": [
+     {
+      "text": "Copper project financial closure and concentrate contract",
+      "status": "unclear",
+      "why": "Awaits the earnings call"
+     },
+     {
+      "text": "No tax demand on the DyStar award",
+      "status": "unclear",
+      "why": "Not in headline figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Kusumgar",
+   "sector": "Industrials",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Jun 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 251,
+     "yearAgo": 122,
+     "prev": 247,
+     "yoy": 105.7,
+     "qoq": 1.6
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 67,
+     "yearAgo": 23,
+     "prev": 75,
+     "yoy": 191.3,
+     "qoq": -10.7
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 27,
+     "yearAgo": 19,
+     "prev": 30,
+     "yoy": 8,
+     "qoq": -3
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 41,
+     "yearAgo": 7,
+     "prev": 43,
+     "yoy": null,
+     "qoq": -4.7
+    }
+   ],
+   "oneOff": "The year-ago quarter's profit included other income of ₹4cr (44% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "in line",
+    "points": [
+     "Revenue jumped 106% to ₹251cr and operating profit surged 191% to ₹67cr.",
+     "Operating margin expanded 8 percentage points year-on-year to 27%.",
+     "Net profit was ₹41cr; year-ago profit of ₹7cr was flattered by other income."
+    ],
+    "text": "Revenue jumped 106% to ₹251cr and operating profit surged 191% to ₹67cr. Operating margin expanded 8 percentage points year-on-year to 27%. Net profit was ₹41cr; year-ago profit of ₹7cr was flattered by other income.",
+    "checks": [],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Laxmi Organic",
+   "sector": "Chemicals",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1083,
+     "yearAgo": 700,
+     "prev": 968,
+     "yoy": 54.7,
+     "qoq": 11.9
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 108,
+     "yearAgo": 37,
+     "prev": 114,
+     "yoy": 191.9,
+     "qoq": -5.3
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 10,
+     "yearAgo": 5,
+     "prev": 12,
+     "yoy": 5,
+     "qoq": -2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 57,
+     "yearAgo": 11,
+     "prev": 68,
+     "yoy": 418.2,
+     "qoq": -16.2
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue surged 55% to ₹1,083cr, driving a 192% jump in operating profit.",
+     "Operating margin held at 10%, beating the expected mid-single-digit cycle average.",
+     "Net profit soared 418% to ₹57cr, though it dipped 16% sequentially."
+    ],
+    "text": "Revenue surged 55% to ₹1,083cr, driving a 192% jump in operating profit. Operating margin held at 10%, beating the expected mid-single-digit cycle average. Net profit soared 418% to ₹57cr, though it dipped 16% sequentially.",
+    "checks": [
+     {
+      "text": "Dahej plant starts charging chemicals",
+      "status": "unclear",
+      "why": "Needs earnings call to confirm"
+     },
+     {
+      "text": "No impairment of fluorination assets",
+      "status": "unclear",
+      "why": "Not visible in headline figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "MM Forgings",
+   "sector": "Forging",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 548,
+     "yearAgo": 384,
+     "prev": 420,
+     "yoy": 42.7,
+     "qoq": 30.5
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 104,
+     "yearAgo": 67,
+     "prev": 75,
+     "yoy": 55.2,
+     "qoq": 38.7
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 19,
+     "yearAgo": 17,
+     "prev": 18,
+     "yoy": 2,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 42,
+     "yearAgo": 18,
+     "prev": 89,
+     "yoy": 133.3,
+     "qoq": -52.8
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue surged 43% to ₹548cr, well ahead of the 15–18% full-year guidance.",
+     "Operating profit jumped 55% to ₹104cr as the margin expanded two points to 19%.",
+     "Net profit rose 133% to ₹42cr; the sequential drop reflects Q1's ₹56cr land gain."
+    ],
+    "text": "Revenue surged 43% to ₹548cr, well ahead of the 15–18% full-year guidance. Operating profit jumped 55% to ₹104cr as the margin expanded two points to 19%. Net profit rose 133% to ₹42cr; the sequential drop reflects Q1's ₹56cr land gain.",
+    "checks": [
+     {
+      "text": "Quarterly volume of 23,000–25,000 tonnes",
+      "status": "unclear",
+      "why": "Needs the earnings call"
+     },
+     {
+      "text": "Net debt cut below ₹900cr",
+      "status": "unclear",
+      "why": "Awaiting balance sheet details"
+     },
+     {
+      "text": "Quarterly volume of 23,000–25,000 tonnes",
+      "status": "unclear",
+      "why": "Needs the earnings call"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "NBCC",
+   "sector": "Construction",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 3396,
+     "yearAgo": 2914,
+     "prev": 2260,
+     "yoy": 16.5,
+     "qoq": 50.3
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 225,
+     "yearAgo": 104,
+     "prev": 155,
+     "yoy": 116.3,
+     "qoq": 45.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 7,
+     "yearAgo": 3.6,
+     "prev": 7,
+     "yoy": 3.4,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 210,
+     "yearAgo": 157,
+     "prev": 158,
+     "yoy": null,
+     "qoq": 32.9
+    }
+   ],
+   "oneOff": "The year-ago quarter's profit included other income of ₹103cr (50% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue grew 17% to ₹3,396cr, missing our ₹4,000cr expectation for the quarter.",
+     "Operating profit jumped 116% to ₹225cr, with margins holding steady at the guided 7%.",
+     "Net profit was ₹210cr; year-ago comparison is omitted due to a ₹103cr one-off then."
+    ],
+    "text": "Revenue grew 17% to ₹3,396cr, missing our ₹4,000cr expectation for the quarter. Operating profit jumped 116% to ₹225cr, with margins holding steady at the guided 7%. Net profit was ₹210cr; year-ago comparison is omitted due to a ₹103cr one-off then.",
+    "checks": [
+     {
+      "text": "Q2 revenue above ₹4,000cr",
+      "status": "missed",
+      "why": "Revenue was ₹3,396cr"
+     },
+     {
+      "text": "Cabinet approval of 5 Delhi colonies",
+      "status": "unclear",
+      "why": "Not in financial results"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "NCC",
+   "sector": "Construction",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 6015,
+     "yearAgo": 4543,
+     "prev": 5812,
+     "yoy": 32.4,
+     "qoq": 3.5
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 528,
+     "yearAgo": 393,
+     "prev": 545,
+     "yoy": 34.4,
+     "qoq": -3.1
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 9,
+     "yearAgo": 9,
+     "prev": 9,
+     "yoy": 0,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 199,
+     "yearAgo": 167,
+     "prev": 229,
+     "yoy": 19.2,
+     "qoq": -13.1
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue up 32% to ₹6,015cr, well ahead of the 8–10% FY27 guidance.",
+     "Operating profit rose 34% to ₹528cr; margin held at 9%, meeting guidance.",
+     "Net profit grew 19% to ₹199cr, beating the 9% base-case expectation."
+    ],
+    "text": "Revenue up 32% to ₹6,015cr, well ahead of the 8–10% FY27 guidance. Operating profit rose 34% to ₹528cr; margin held at 9%, meeting guidance. Net profit grew 19% to ₹199cr, beating the 9% base-case expectation.",
+    "checks": [
+     {
+      "text": "UP water-scheme dues below ₹1,000cr",
+      "status": "unclear",
+      "why": "Not in the headline figures"
+     },
+     {
+      "text": "Operating margin of 8.5–9%",
+      "status": "met",
+      "why": "Margin held at 9%"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Patel Engineering",
+   "sector": "Construction",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1211,
+     "yearAgo": 1208,
+     "prev": 1281,
+     "yoy": 0.2,
+     "qoq": -5.5
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 150,
+     "yearAgo": 159,
+     "prev": 180,
+     "yoy": -5.7,
+     "qoq": -16.7
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 12,
+     "yearAgo": 13,
+     "prev": 14,
+     "yoy": -1,
+     "qoq": -2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 87,
+     "yearAgo": 73,
+     "prev": 98,
+     "yoy": null,
+     "qoq": -11.2
+    }
+   ],
+   "oneOff": "Other income of ₹48cr is 45% of profit before tax this quarter, so profit may not reflect the business. The year-ago quarter's profit included other income of ₹32cr (36% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue was flat at ₹1,211cr and operating profit fell 6% to ₹150cr.",
+     "Operating margin shrank to 12%, missing the 13–14% guided expectation.",
+     "Net profit of ₹87cr was flattered by ₹48cr of other income."
+    ],
+    "text": "Revenue was flat at ₹1,211cr and operating profit fell 6% to ₹150cr. Operating margin shrank to 12%, missing the 13–14% guided expectation. Net profit of ₹87cr was flattered by ₹48cr of other income.",
+    "checks": [
+     {
+      "text": "Promoter pledge falling by 15–20% or more",
+      "status": "unclear",
+      "why": "Not in these figures"
+     },
+     {
+      "text": "No further write-downs",
+      "status": "unclear",
+      "why": "Not in these figures"
+     },
+     {
+      "text": "Operating margin of 13–14%",
+      "status": "missed",
+      "why": "Margin came in at 12%"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Poly Medicure",
+   "sector": "Health Products",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 581,
+     "yearAgo": 444,
+     "prev": 525,
+     "yoy": 30.9,
+     "qoq": 10.7
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 138,
+     "yearAgo": 115,
+     "prev": 125,
+     "yoy": 20,
+     "qoq": 10.4
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 24,
+     "yearAgo": 26,
+     "prev": 24,
+     "yoy": -2,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 95,
+     "yearAgo": 92,
+     "prev": 85,
+     "yoy": 3.3,
+     "qoq": 11.8
+    }
+   ],
+   "take": {
+    "verdict": "in line",
+    "points": [
+     "Revenue jumped 31% to ₹581cr, slightly below the ₹592cr expected run-rate.",
+     "Operating profit rose 20% to ₹138cr; margins held at 24%, meeting the 23–25% guidance.",
+     "Net profit grew just 3% to ₹95cr, trailing the 15% base-case growth expectation."
+    ],
+    "text": "Revenue jumped 31% to ₹581cr, slightly below the ₹592cr expected run-rate. Operating profit rose 20% to ₹138cr; margins held at 24%, meeting the 23–25% guidance. Net profit grew just 3% to ₹95cr, trailing the 15% base-case growth expectation.",
+    "checks": [
+     {
+      "text": "Revenue run-rate toward ₹592cr",
+      "status": "missed",
+      "why": "came in at ₹581cr"
+     },
+     {
+      "text": "Anti-dumping duty on dialysers",
+      "status": "unclear",
+      "why": "not in the earnings release"
+     },
+     {
+      "text": "Margin in 23–25% range",
+      "status": "met",
+      "why": "margin was exactly 24%"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Protean eGov",
+   "sector": "Software",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 271,
+     "yearAgo": 250,
+     "prev": 251,
+     "yoy": 8.4,
+     "qoq": 8
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 24,
+     "yearAgo": 29,
+     "prev": 12,
+     "yoy": -17.2,
+     "qoq": 100
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 9,
+     "yearAgo": 12,
+     "prev": 5,
+     "yoy": -3,
+     "qoq": 4
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 16,
+     "yearAgo": 24,
+     "prev": 6,
+     "yoy": null,
+     "qoq": 166.7
+    }
+   ],
+   "oneOff": "Other income of ₹19cr is 90% of profit before tax this quarter, so profit may not reflect the business. The year-ago quarter's profit included other income of ₹15cr (47% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue grew 8% to ₹271cr, but operating profit fell 17% to ₹24cr.",
+     "Operating margin recovered to 9% from 5% last quarter, showing expected stabilization.",
+     "Other income of ₹19cr made up 90% of profit before tax, flattering net profit."
+    ],
+    "text": "Revenue grew 8% to ₹271cr, but operating profit fell 17% to ₹24cr. Operating margin recovered to 9% from 5% last quarter, showing expected stabilization. Other income of ₹19cr made up 90% of profit before tax, flattering net profit.",
+    "checks": [
+     {
+      "text": "Margins stabilising from Q2 or Q3",
+      "status": "met",
+      "why": "margin improved to 9% from 5%"
+     },
+     {
+      "text": "PAN 2.0 contract terms disclosed",
+      "status": "unclear",
+      "why": "not in the financial figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Rashi Peripheral",
+   "sector": "Hardware",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 6185,
+     "yearAgo": 4155,
+     "prev": 5102,
+     "yoy": 48.9,
+     "qoq": 21.2
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 220,
+     "yearAgo": 104,
+     "prev": 155,
+     "yoy": 111.5,
+     "qoq": 41.9
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 3.6,
+     "yearAgo": 2.5,
+     "prev": 3,
+     "yoy": 1.1,
+     "qoq": 0.6
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 131,
+     "yearAgo": 59,
+     "prev": 105,
+     "yoy": 122,
+     "qoq": 24.8
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue up 49% to ₹6,185cr, missing the 62% expected but beating 20% guidance.",
+     "Operating profit surged 112% to ₹220cr as operating margin expanded 1.1 points to 3.6%.",
+     "Net profit jumped 122% to ₹131cr, reflecting the strong margin improvement."
+    ],
+    "text": "Revenue up 49% to ₹6,185cr, missing the 62% expected but beating 20% guidance. Operating profit surged 112% to ₹220cr as operating margin expanded 1.1 points to 3.6%. Net profit jumped 122% to ₹131cr, reflecting the strong margin improvement.",
+    "checks": [
+     {
+      "text": "Revenue growth near Q1's 62%",
+      "status": "missed",
+      "why": "Growth was 49%"
+     },
+     {
+      "text": "Gearing near CRISIL's ~0.63x",
+      "status": "unclear",
+      "why": "Balance sheet figures not provided"
+     },
+     {
+      "text": "VDA consolidated in Q2",
+      "status": "unclear",
+      "why": "Cannot confirm from headline figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "RateGain Travel Tech",
+   "sector": "Software",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 745,
+     "yearAgo": 295,
+     "prev": 785,
+     "yoy": 152.5,
+     "qoq": -5.1
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 153,
+     "yearAgo": 54,
+     "prev": 172,
+     "yoy": 183.3,
+     "qoq": -11
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 21,
+     "yearAgo": 18,
+     "prev": 22,
+     "yoy": 3,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 75,
+     "yearAgo": 51,
+     "prev": 95,
+     "yoy": 47.1,
+     "qoq": -21.1
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue surged 153% YoY to ₹745cr, beating 70% guidance, but fell 5% sequentially.",
+     "Operating profit jumped 183% YoY to ₹153cr; margins hit the 21% expectation.",
+     "Net profit grew 47% YoY to ₹75cr, beating the 20% growth needed."
+    ],
+    "text": "Revenue surged 153% YoY to ₹745cr, beating 70% guidance, but fell 5% sequentially. Operating profit jumped 183% YoY to ₹153cr; margins hit the 21% expectation. Net profit grew 47% YoY to ₹75cr, beating the 20% growth needed.",
+    "checks": [
+     {
+      "text": "Organic growth above 15% post-FIFA",
+      "status": "unclear",
+      "why": "Organic split not in figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Rubicon Research",
+   "sector": "Pharma",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 576,
+     "yearAgo": 412,
+     "prev": 534,
+     "yoy": 39.8,
+     "qoq": 7.9
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 144,
+     "yearAgo": 94,
+     "prev": 129,
+     "yoy": 53.2,
+     "qoq": 11.6
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 25,
+     "yearAgo": 23,
+     "prev": 24,
+     "yoy": 2,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 90,
+     "yearAgo": 54,
+     "prev": 85,
+     "yoy": 66.7,
+     "qoq": 5.9
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue grew 40% to ₹576cr and operating profit jumped 53% to ₹144cr.",
+     "Operating margin expanded to 25%, beating the previous guidance of at least 23%.",
+     "Net profit surged 67% to ₹90cr, well ahead of the 30% base-case growth."
+    ],
+    "text": "Revenue grew 40% to ₹576cr and operating profit jumped 53% to ₹144cr. Operating margin expanded to 25%, beating the previous guidance of at least 23%. Net profit surged 67% to ₹90cr, well ahead of the 30% base-case growth.",
+    "checks": [
+     {
+      "text": "H1 operating cash catching up",
+      "status": "unclear",
+      "why": "cash flow not in these figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Sandhar Technologies",
+   "sector": "Auto Related",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1618,
+     "yearAgo": 1270,
+     "prev": 1382,
+     "yoy": 27.4,
+     "qoq": 17.1
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 137,
+     "yearAgo": 118,
+     "prev": 105,
+     "yoy": 16.1,
+     "qoq": 30.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 8,
+     "yearAgo": 9,
+     "prev": 8,
+     "yoy": -1,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 56,
+     "yearAgo": 73,
+     "prev": 37,
+     "yoy": null,
+     "qoq": 51.4
+    }
+   ],
+   "oneOff": "The year-ago quarter's profit included other income of ₹39cr (41% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue grew 27% to ₹1,618cr, well ahead of the ~13% guided for FY27.",
+     "Operating profit rose 16% to ₹137cr, though the margin fell one point to 8%.",
+     "Net profit was ₹56cr; the year-ago figure included ₹39cr of other income."
+    ],
+    "text": "Revenue grew 27% to ₹1,618cr, well ahead of the ~13% guided for FY27. Operating profit rose 16% to ₹137cr, though the margin fell one point to 8%. Net profit was ₹56cr; the year-ago figure included ₹39cr of other income.",
+    "checks": [],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Schneider Ele. Infra",
+   "sector": "Electrical Transformers",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 779,
+     "yearAgo": 650,
+     "prev": 651,
+     "yoy": 19.8,
+     "qoq": 19.7
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 60,
+     "yearAgo": 84,
+     "prev": 34,
+     "yoy": -28.6,
+     "qoq": 76.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 8,
+     "yearAgo": 13,
+     "prev": 5,
+     "yoy": -5,
+     "qoq": 3
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 30,
+     "yearAgo": 52,
+     "prev": 12,
+     "yoy": -42.3,
+     "qoq": 150
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue rose 20% to ₹779cr, but operating profit fell 29% year-on-year to ₹60cr.",
+     "Operating margin fell 5 points year-on-year to 8%, missing the 12% recovery target.",
+     "Net profit dropped 42% year-on-year to ₹30cr, despite a strong sequential rebound."
+    ],
+    "text": "Revenue rose 20% to ₹779cr, but operating profit fell 29% year-on-year to ₹60cr. Operating margin fell 5 points year-on-year to 8%, missing the 12% recovery target. Net profit dropped 42% year-on-year to ₹30cr, despite a strong sequential rebound.",
+    "checks": [
+     {
+      "text": "Product-mix disclosure published",
+      "status": "unclear",
+      "why": "Not in these figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Shankara Buildpro",
+   "sector": "Retail",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 2280,
+     "yearAgo": 1595,
+     "prev": 1890,
+     "yoy": 42.9,
+     "qoq": 20.6
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 78,
+     "yearAgo": 50,
+     "prev": 61,
+     "yoy": 56,
+     "qoq": 27.9
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 3.4,
+     "yearAgo": 3.1,
+     "prev": 3.2,
+     "yoy": 0.3,
+     "qoq": 0.2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 46,
+     "yearAgo": 29,
+     "prev": 36,
+     "yoy": 58.6,
+     "qoq": 27.8
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue surged 43% to ₹2,280cr, easily beating the 20% growth expected.",
+     "Operating profit jumped 56% to ₹78cr alongside the strong sales.",
+     "Operating margin expanded to 3.4% from 3.1% a year ago.",
+     "Net profit grew 59% to ₹46cr."
+    ],
+    "text": "Revenue surged 43% to ₹2,280cr, easily beating the 20% growth expected. Operating profit jumped 56% to ₹78cr alongside the strong sales. Operating margin expanded to 3.4% from 3.1% a year ago. Net profit grew 59% to ₹46cr.",
+    "checks": [
+     {
+      "text": "Q2 revenue up at least 20% to ₹1,914cr or more",
+      "status": "met",
+      "why": "Revenue grew 43% to ₹2,280cr"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Shilpa Medicare",
+   "sector": "Pharma API",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 529,
+     "yearAgo": 370,
+     "prev": 466,
+     "yoy": 43,
+     "qoq": 13.5
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 142,
+     "yearAgo": 108,
+     "prev": 136,
+     "yoy": 31.5,
+     "qoq": 4.4
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 27,
+     "yearAgo": 29,
+     "prev": 29,
+     "yoy": -2,
+     "qoq": -2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 79,
+     "yearAgo": 44,
+     "prev": 101,
+     "yoy": 79.5,
+     "qoq": -21.8
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue surged 43% to ₹529cr and operating profit grew 32% to ₹142cr.",
+     "Operating margin fell two points to 27%, missing expectations of about 30%.",
+     "Net profit jumped 80% year-on-year to ₹79cr, but fell 22% sequentially."
+    ],
+    "text": "Revenue surged 43% to ₹529cr and operating profit grew 32% to ₹142cr. Operating margin fell two points to 27%, missing expectations of about 30%. Net profit jumped 80% year-on-year to ₹79cr, but fell 22% sequentially.",
+    "checks": [
+     {
+      "text": "Clean US re-inspection at Jadcherla",
+      "status": "unclear",
+      "why": "Waits for the call"
+     },
+     {
+      "text": "Profit without one-offs",
+      "status": "unclear",
+      "why": "Needs full statements"
+     },
+     {
+      "text": "Margin staying around 30%",
+      "status": "missed",
+      "why": "Fell to 27%"
+     },
+     {
+      "text": "Free cash flow turning positive",
+      "status": "unclear",
+      "why": "Not in headline figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Shiprocket",
+   "sector": "Platform Cos",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Jun 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 673.65,
+     "yearAgo": 442.5,
+     "prev": 592.09,
+     "yoy": 52.2,
+     "qoq": 13.8
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": -2.62,
+     "yearAgo": -17.61,
+     "prev": -10.87,
+     "yoy": null,
+     "qoq": null
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": -0.39,
+     "yearAgo": -3.98,
+     "prev": -1.84,
+     "yoy": 3.6,
+     "qoq": 1.5
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 0.6,
+     "yearAgo": -18.03,
+     "prev": -13.71,
+     "yoy": null,
+     "qoq": null
+    }
+   ],
+   "oneOff": "Other income of ₹20cr is 3310% of profit before tax this quarter, so profit may not reflect the business.",
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue jumped 52% to ₹674cr, easily beating the ₹600cr expectation.",
+     "Operating loss shrank to ₹3cr, improving the margin by 3.6 points to -0.4%.",
+     "Net profit of ₹1cr was heavily flattered by ₹20cr in other income."
+    ],
+    "text": "Revenue jumped 52% to ₹674cr, easily beating the ₹600cr expectation. Operating loss shrank to ₹3cr, improving the margin by 3.6 points to -0.4%. Net profit of ₹1cr was heavily flattered by ₹20cr in other income.",
+    "checks": [
+     {
+      "text": "Adjusted EBITDA positive, per transaction above ₹1.45",
+      "status": "unclear",
+      "why": "Not in these figures"
+     },
+     {
+      "text": "Contribution margin near 19%, newer loss stops growing",
+      "status": "unclear",
+      "why": "Segment details not provided"
+     },
+     {
+      "text": "Revenue of at least ₹600cr",
+      "status": "met",
+      "why": "Revenue reached ₹674cr"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Signatureglobal Ind.",
+   "sector": "Realty",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 817,
+     "yearAgo": 338,
+     "prev": 552,
+     "yoy": 141.7,
+     "qoq": 48
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 75,
+     "yearAgo": -74,
+     "prev": -45,
+     "yoy": null,
+     "qoq": null
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 9,
+     "yearAgo": -22,
+     "prev": -8,
+     "yoy": 31,
+     "qoq": 17
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 67,
+     "yearAgo": -47,
+     "prev": -17,
+     "yoy": null,
+     "qoq": null
+    }
+   ],
+   "oneOff": "Other income of ₹53cr is 59% of profit before tax this quarter, so profit may not reflect the business.",
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue jumped 142% year-on-year to ₹817cr, well ahead of the shrinking sales narrative.",
+     "Operating profit turned positive to ₹75cr (9% margin), beating expectations of continued core losses.",
+     "Net profit of ₹67cr was flattered by ₹53cr of other income (59% of PBT)."
+    ],
+    "text": "Revenue jumped 142% year-on-year to ₹817cr, well ahead of the shrinking sales narrative. Operating profit turned positive to ₹75cr (9% margin), beating expectations of continued core losses. Net profit of ₹67cr was flattered by ₹53cr of other income (59% of PBT).",
+    "checks": [
+     {
+      "text": "Collections back above about ₹1,100cr a quarter",
+      "status": "unclear",
+      "why": "Not in these figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Sonata Software",
+   "sector": "Software",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 2445,
+     "yearAgo": 2119,
+     "prev": 3279,
+     "yoy": 15.4,
+     "qoq": -25.4
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 179,
+     "yearAgo": 173,
+     "prev": 171,
+     "yoy": 3.5,
+     "qoq": 4.7
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 7,
+     "yearAgo": 8,
+     "prev": 5,
+     "yoy": -1,
+     "qoq": 2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 116,
+     "yearAgo": 120,
+     "prev": 108,
+     "yoy": -3.3,
+     "qoq": 7.4
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue rose 15% YoY to ₹2,445cr, but dropped 25% from the previous quarter.",
+     "Operating profit grew 4% YoY to ₹179cr; margin dipped 1 point to 7%.",
+     "Net profit fell 3% YoY to ₹116cr, missing the 8% base-case growth expectation."
+    ],
+    "text": "Revenue rose 15% YoY to ₹2,445cr, but dropped 25% from the previous quarter. Operating profit grew 4% YoY to ₹179cr; margin dipped 1 point to 7%. Net profit fell 3% YoY to ₹116cr, missing the 8% base-case growth expectation.",
+    "checks": [
+     {
+      "text": "Top five international clients growing",
+      "status": "unclear",
+      "why": "needs segment breakdown"
+     },
+     {
+      "text": "No further Microsoft direct billing",
+      "status": "unclear",
+      "why": "waits for the call"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Standard Glass",
+   "sector": "Industrials",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 297,
+     "yearAgo": 183,
+     "prev": 248,
+     "yoy": 62.3,
+     "qoq": 19.8
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 50,
+     "yearAgo": 29,
+     "prev": 40,
+     "yoy": 72.4,
+     "qoq": 25
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 17,
+     "yearAgo": 16,
+     "prev": 16,
+     "yoy": 1,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 28,
+     "yearAgo": 20,
+     "prev": 27,
+     "yoy": 40,
+     "qoq": 3.7
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue surged 62% to ₹297cr, beating the 40–50% full-year guidance.",
+     "Operating profit jumped 72% to ₹50cr, with margins expanding 1 point to 17%.",
+     "Net profit grew 40% to ₹28cr, well above the 15% base-case expectation."
+    ],
+    "text": "Revenue surged 62% to ₹297cr, beating the 40–50% full-year guidance. Operating profit jumped 72% to ₹50cr, with margins expanding 1 point to 17%. Net profit grew 40% to ₹28cr, well above the 15% base-case expectation.",
+    "checks": [
+     {
+      "text": "Working capital below 200 days",
+      "status": "unclear",
+      "why": "Not in these figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "TCPL Packaging",
+   "sector": "Packaging",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 540,
+     "yearAgo": 438,
+     "prev": 474,
+     "yoy": 23.3,
+     "qoq": 13.9
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 94,
+     "yearAgo": 67,
+     "prev": 81,
+     "yoy": 40.3,
+     "qoq": 16
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 17,
+     "yearAgo": 15,
+     "prev": 17,
+     "yoy": 2,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 45,
+     "yearAgo": 28,
+     "prev": 38,
+     "yoy": 60.7,
+     "qoq": 18.4
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue grew 23% to ₹540cr and operating profit jumped 40% to ₹94cr.",
+     "Net profit surged 61% to ₹45cr, well ahead of the 15% base-case growth.",
+     "Operating margin held steady at 17%, matching the expected 17–18% range."
+    ],
+    "text": "Revenue grew 23% to ₹540cr and operating profit jumped 40% to ₹94cr. Net profit surged 61% to ₹45cr, well ahead of the 15% base-case growth. Operating margin held steady at 17%, matching the expected 17–18% range.",
+    "checks": [
+     {
+      "text": "Margin holding near 17–18%",
+      "status": "met",
+      "why": "Margin held at 17%"
+     },
+     {
+      "text": "Net debt below 1.5 times operating profit",
+      "status": "unclear",
+      "why": "Debt figures not provided"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "TeamLease Services",
+   "sector": "Commercial Services",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 3076,
+     "yearAgo": 3032,
+     "prev": 3035,
+     "yoy": 1.5,
+     "qoq": 1.4
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 36,
+     "yearAgo": 38,
+     "prev": 31,
+     "yoy": -5.3,
+     "qoq": 16.1
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 1.2,
+     "yearAgo": 1.3,
+     "prev": 1,
+     "yoy": -0.1,
+     "qoq": 0.2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 23,
+     "yearAgo": 28,
+     "prev": 34,
+     "yoy": -17.9,
+     "qoq": -32.4
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue rose just 2% to ₹3,076cr, reflecting the slow growth expected.",
+     "Operating profit fell 5% to ₹36cr, with the margin dipping slightly to 1.2%.",
+     "Net profit dropped 18% to ₹23cr, missing the 6% long-term growth target."
+    ],
+    "text": "Revenue rose just 2% to ₹3,076cr, reflecting the slow growth expected. Operating profit fell 5% to ₹36cr, with the margin dipping slightly to 1.2%. Net profit dropped 18% to ₹23cr, missing the 6% long-term growth target.",
+    "checks": [],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Tega Industries",
+   "sector": "Industrials",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 4254,
+     "yearAgo": 405,
+     "prev": 1723,
+     "yoy": 950.4,
+     "qoq": 146.9
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 489,
+     "yearAgo": 69,
+     "prev": 56,
+     "yoy": 608.7,
+     "qoq": 773.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 12,
+     "yearAgo": 17,
+     "prev": 3.2,
+     "yoy": -5,
+     "qoq": 8.8
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": -59,
+     "yearAgo": 45,
+     "prev": -108,
+     "yoy": -231.1,
+     "qoq": null
+    }
+   ],
+   "oneOff": "Other income of ₹44cr is 60% of profit before tax this quarter, so profit may not reflect the business.",
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue surged 950% to ₹4,254cr and operating profit grew 609% to ₹489cr.",
+     "Operating margin fell to 12%, missing the 15% expected for the combined group.",
+     "Net loss was ₹59cr, and profit before tax was flattered by ₹44cr other income."
+    ],
+    "text": "Revenue surged 950% to ₹4,254cr and operating profit grew 609% to ₹489cr. Operating margin fell to 12%, missing the 15% expected for the combined group. Net loss was ₹59cr, and profit before tax was flattered by ₹44cr other income.",
+    "checks": [
+     {
+      "text": "Group operating margin about 15%",
+      "status": "missed",
+      "why": "margin came in at 12%"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Texmaco Rail",
+   "sector": "Industrial - Railway",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 868,
+     "yearAgo": 1258,
+     "prev": 757,
+     "yoy": -31,
+     "qoq": 14.7
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 75,
+     "yearAgo": 124,
+     "prev": 57,
+     "yoy": -39.5,
+     "qoq": 31.6
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 9,
+     "yearAgo": 10,
+     "prev": 8,
+     "yoy": -1,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 111,
+     "yearAgo": 64,
+     "prev": 50,
+     "yoy": 73.4,
+     "qoq": 122
+    }
+   ],
+   "oneOff": "Other income of ₹89cr is 71% of profit before tax this quarter, so profit may not reflect the business.",
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue fell 31% to ₹868cr, missing the 15–20% full-year growth guidance.",
+     "Operating profit dropped 40% to ₹75cr, with margins dipping one point to 9%.",
+     "Net profit rose 73% to ₹111cr, heavily flattered by ₹89cr of other income."
+    ],
+    "text": "Revenue fell 31% to ₹868cr, missing the 15–20% full-year growth guidance. Operating profit dropped 40% to ₹75cr, with margins dipping one point to 9%. Net profit rose 73% to ₹111cr, heavily flattered by ₹89cr of other income.",
+    "checks": [
+     {
+      "text": "No use or write-back of ₹700cr provision",
+      "status": "unclear",
+      "why": "Not disclosed in headline figures"
+     },
+     {
+      "text": "Wagon output above 2,000 a quarter",
+      "status": "unclear",
+      "why": "Awaits earnings call"
+     },
+     {
+      "text": "Collection of ₹765cr unbilled work",
+      "status": "unclear",
+      "why": "Not disclosed in headline figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Time Technoplast",
+   "sector": "Plastics",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1994,
+     "yearAgo": 1511,
+     "prev": 1693,
+     "yoy": 32,
+     "qoq": 17.8
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 263,
+     "yearAgo": 223,
+     "prev": 224,
+     "yoy": 17.9,
+     "qoq": 17.4
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 13,
+     "yearAgo": 15,
+     "prev": 13,
+     "yoy": -2,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 148,
+     "yearAgo": 117,
+     "prev": 118,
+     "yoy": 26.5,
+     "qoq": 25.4
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue surged 32% to ₹1,994cr, easily beating the 15% full-year growth guidance.",
+     "Operating profit rose 18% to ₹263cr, though margins fell from 15% to 13%.",
+     "Net profit jumped 27% to ₹148cr, well ahead of the 18% base-case estimate."
+    ],
+    "text": "Revenue surged 32% to ₹1,994cr, easily beating the 15% full-year growth guidance. Operating profit rose 18% to ₹263cr, though margins fell from 15% to 13%. Net profit jumped 27% to ₹148cr, well ahead of the 18% base-case estimate.",
+    "checks": [
+     {
+      "text": "Composite cylinder orders",
+      "status": "unclear",
+      "why": "needs the earnings call"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Va Tech Wabag",
+   "sector": "Utilities",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1000,
+     "yearAgo": 834,
+     "prev": 887,
+     "yoy": 19.9,
+     "qoq": 12.7
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 124,
+     "yearAgo": 89,
+     "prev": 80,
+     "yoy": 39.3,
+     "qoq": 55
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 12,
+     "yearAgo": 11,
+     "prev": 9,
+     "yoy": 1,
+     "qoq": 3
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 104,
+     "yearAgo": 85,
+     "prev": 90,
+     "yoy": null,
+     "qoq": 15.6
+    }
+   ],
+   "oneOff": "The year-ago quarter's profit included other income of ₹43cr (39% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue grew 20% to ₹1,000cr, hitting the top of the 15–20% guided range.",
+     "Operating profit jumped 39% to ₹124cr as the margin expanded to 12%.",
+     "The 12% margin beats expectations for a return above 11% by Q3.",
+     "Net profit was ₹104cr; year-ago profit was flattered by ₹43cr of other income."
+    ],
+    "text": "Revenue grew 20% to ₹1,000cr, hitting the top of the 15–20% guided range. Operating profit jumped 39% to ₹124cr as the margin expanded to 12%. The 12% margin beats expectations for a return above 11% by Q3. Net profit was ₹104cr; year-ago profit was flattered by ₹43cr of other income.",
+    "checks": [],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Vedant Fashions (Manyavar)",
+   "sector": "Retail",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 269,
+     "yearAgo": 263,
+     "prev": 301,
+     "yoy": 2.3,
+     "qoq": -10.6
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 105,
+     "yearAgo": 111,
+     "prev": 131,
+     "yoy": -5.4,
+     "qoq": -19.8
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 39,
+     "yearAgo": 42,
+     "prev": 43,
+     "yoy": -3,
+     "qoq": -4
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 56,
+     "yearAgo": 56,
+     "prev": 81,
+     "yoy": 0,
+     "qoq": -30.9
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue grew just 2% to ₹269cr; operating profit fell 5% to ₹105cr.",
+     "Operating margin shrank 3 points year-on-year to 39%.",
+     "Net profit was flat at ₹56cr, missing the 10% base-case growth expected."
+    ],
+    "text": "Revenue grew just 2% to ₹269cr; operating profit fell 5% to ₹105cr. Operating margin shrank 3 points year-on-year to 39%. Net profit was flat at ₹56cr, missing the 10% base-case growth expected.",
+    "checks": [
+     {
+      "text": "Dividend or buyback policy announced",
+      "status": "unclear",
+      "why": "Not in these figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Venus Pipes & Tubes",
+   "sector": "Iron and Steel",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 361,
+     "yearAgo": 292,
+     "prev": 321,
+     "yoy": 23.6,
+     "qoq": 12.5
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 52,
+     "yearAgo": 48,
+     "prev": 52,
+     "yoy": 8.3,
+     "qoq": 0
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 14,
+     "yearAgo": 16,
+     "prev": 16,
+     "yoy": -2,
+     "qoq": -2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 26,
+     "yearAgo": 26,
+     "prev": 26,
+     "yoy": 0,
+     "qoq": 0
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue grew 24% to ₹361cr, meeting the guidance of over 20% growth.",
+     "Operating profit rose just 8% to ₹52cr as the margin fell to 14%.",
+     "Net profit was flat at ₹26cr, remaining stuck in its recent range."
+    ],
+    "text": "Revenue grew 24% to ₹361cr, meeting the guidance of over 20% growth. Operating profit rose just 8% to ₹52cr as the margin fell to 14%. Net profit was flat at ₹26cr, remaining stuck in its recent range.",
+    "checks": [
+     {
+      "text": "Operating margin above 17%",
+      "status": "missed",
+      "why": "margin fell to 14%"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "VST Tillers Tractors",
+   "sector": "Vehicles",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 322,
+     "yearAgo": 315,
+     "prev": 313,
+     "yoy": 2.2,
+     "qoq": 2.9
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 35,
+     "yearAgo": 40,
+     "prev": 40,
+     "yoy": -12.5,
+     "qoq": -12.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 11,
+     "yearAgo": 13,
+     "prev": 13,
+     "yoy": -2,
+     "qoq": -2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 22,
+     "yearAgo": 25,
+     "prev": 48,
+     "yoy": -12,
+     "qoq": -54.2
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue rose 2% to ₹322cr, but operating profit fell 13% to ₹35cr.",
+     "Operating margin shrank 2 points to 11% from 13% a year ago.",
+     "Net profit fell 12% to ₹22cr, missing the 10% base-case growth estimate."
+    ],
+    "text": "Revenue rose 2% to ₹322cr, but operating profit fell 13% to ₹35cr. Operating margin shrank 2 points to 11% from 13% a year ago. Net profit fell 12% to ₹22cr, missing the 10% base-case growth estimate.",
+    "checks": [
+     {
+      "text": "FY27 guidance given",
+      "status": "unclear",
+      "why": "waits for the call"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Welspun Enterp",
+   "sector": "Construction",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1035,
+     "yearAgo": 784,
+     "prev": 774,
+     "yoy": 32,
+     "qoq": 33.7
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 383,
+     "yearAgo": 172,
+     "prev": 151,
+     "yoy": 122.7,
+     "qoq": 153.6
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 37,
+     "yearAgo": 22,
+     "prev": 19,
+     "yoy": 15,
+     "qoq": 18
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 296,
+     "yearAgo": 98,
+     "prev": 56,
+     "yoy": 202,
+     "qoq": 428.6
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue grew 32% to ₹1,035cr, easily beating the ~15% full-year guidance.",
+     "Operating profit jumped 123% to ₹383cr as margins expanded 15 points to 37%.",
+     "Net profit soared 202% to ₹296cr, tracking the strong operating performance."
+    ],
+    "text": "Revenue grew 32% to ₹1,035cr, easily beating the ~15% full-year guidance. Operating profit jumped 123% to ₹383cr as margins expanded 15 points to 37%. Net profit soared 202% to ₹296cr, tracking the strong operating performance.",
+    "checks": [
+     {
+      "text": "Revenue back above ₹1,000cr",
+      "status": "met",
+      "why": "Revenue reached ₹1,035cr"
+     },
+     {
+      "text": "Aunta-Simaria sale closing",
+      "status": "unclear",
+      "why": "Not detailed in these figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
   {
    "company": "Afcons Infra",
    "sector": "Construction",
@@ -272,6 +4498,80 @@
      }
     ],
     "on": "2026-11-05"
+   }
+  },
+  {
+   "company": "All Time Plastic",
+   "sector": "Consumer Durables",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-04",
+   "readOn": "2026-11-06",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 174,
+     "yearAgo": 147.4,
+     "prev": 161.06,
+     "yoy": 18,
+     "qoq": 8
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 13.71,
+     "yearAgo": 16.28,
+     "prev": 23.03,
+     "yoy": -15.8,
+     "qoq": -40.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 7.88,
+     "yearAgo": 11.04,
+     "prev": 14.3,
+     "yoy": -3.2,
+     "qoq": -6.4
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 4.22,
+     "yearAgo": 4.22,
+     "prev": 12.1,
+     "yoy": 0,
+     "qoq": -65.1
+    }
+   ],
+   "oneOff": "Other income of ₹3cr is 47% of profit before tax this quarter, so profit may not reflect the business.",
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue up 18% to ₹174cr, in line with the 15–20% guided growth.",
+     "Operating profit fell 16% to ₹13.71cr as the margin dropped to 7.88%.",
+     "Net profit was flat at ₹4.22cr, flattered by ₹3cr of other income."
+    ],
+    "text": "Revenue up 18% to ₹174cr, in line with the 15–20% guided growth. Operating profit fell 16% to ₹13.71cr as the margin dropped to 7.88%. Net profit was flat at ₹4.22cr, flattered by ₹3cr of other income.",
+    "checks": [
+     {
+      "text": "Margin above 14% CRISIL trigger",
+      "status": "missed",
+      "why": "Margin fell to 7.88%"
+     },
+     {
+      "text": "Bamboo machinery installed",
+      "status": "unclear",
+      "why": "Not in these figures"
+     }
+    ],
+    "on": "2026-11-06"
    }
   },
   {
@@ -1229,6 +5529,227 @@
    }
   },
   {
+   "company": "Ellen. Indl. Gas",
+   "sector": "Chemicals",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-04",
+   "readOn": "2026-11-06",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 114,
+     "yearAgo": 89,
+     "prev": 99,
+     "yoy": 28.1,
+     "qoq": 15.2
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 40,
+     "yearAgo": 33,
+     "prev": 38,
+     "yoy": 21.2,
+     "qoq": 5.3
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 35,
+     "yearAgo": 38,
+     "prev": 38,
+     "yoy": -3,
+     "qoq": -3
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 36,
+     "yearAgo": 37,
+     "prev": 35,
+     "yoy": -2.7,
+     "qoq": 2.9
+    }
+   ],
+   "oneOff": "Other income of ₹17cr is 35% of profit before tax this quarter, so profit may not reflect the business.",
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue up 28% to ₹114cr, beating the 20% growth guidance.",
+     "Operating profit rose 21% to ₹40cr, though margin fell 3 points to 35%.",
+     "Net profit fell 3% to ₹36cr; ₹17cr of other income flattered pre-tax profit."
+    ],
+    "text": "Revenue up 28% to ₹114cr, beating the 20% growth guidance. Operating profit rose 21% to ₹40cr, though margin fell 3 points to 35%. Net profit fell 3% to ₹36cr; ₹17cr of other income flattered pre-tax profit.",
+    "checks": [
+     {
+      "text": "Onsite contract win above 600 tonnes/day",
+      "status": "unclear",
+      "why": "not in these figures"
+     },
+     {
+      "text": "No more investment write-downs",
+      "status": "unclear",
+      "why": "not in these figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "eMudhra",
+   "sector": "Software",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-04",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 207,
+     "yearAgo": 173,
+     "prev": 191,
+     "yoy": 19.7,
+     "qoq": 8.4
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 50,
+     "yearAgo": 41,
+     "prev": 50,
+     "yoy": 22,
+     "qoq": 0
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 24,
+     "yearAgo": 24,
+     "prev": 26,
+     "yoy": 0,
+     "qoq": -2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 33,
+     "yearAgo": 26,
+     "prev": 32,
+     "yoy": 26.9,
+     "qoq": 3.1
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue grew 20% to ₹207cr, beating the 18% full-year guidance.",
+     "Operating profit rose 22% to ₹50cr, and net profit jumped 27% to ₹33cr.",
+     "Operating margin held at 24% year-on-year, slightly below the ~25% expected."
+    ],
+    "text": "Revenue grew 20% to ₹207cr, beating the 18% full-year guidance. Operating profit rose 22% to ₹50cr, and net profit jumped 27% to ₹33cr. Operating margin held at 24% year-on-year, slightly below the ~25% expected.",
+    "checks": [
+     {
+      "text": "3i Infotech claim resolved or provided for",
+      "status": "unclear",
+      "why": "not in these headline figures"
+     },
+     {
+      "text": "Trust-services revenue recovering",
+      "status": "unclear",
+      "why": "segment breakdown not provided here"
+     },
+     {
+      "text": "Operating margin around ~25%",
+      "status": "missed",
+      "why": "came in at 24%"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Entero",
+   "sector": "Retail",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-04",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 2087,
+     "yearAgo": 1571,
+     "prev": 1940,
+     "yoy": 32.8,
+     "qoq": 7.6
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 111,
+     "yearAgo": 62,
+     "prev": 97,
+     "yoy": 79,
+     "qoq": 14.4
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 5,
+     "yearAgo": 4,
+     "prev": 5,
+     "yoy": 1,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 61,
+     "yearAgo": 37,
+     "prev": 52,
+     "yoy": 64.9,
+     "qoq": 17.3
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue up 33% to ₹2,087cr, well above the 23–25% guided for the year.",
+     "Operating profit jumped 79% to ₹111cr, easily beating the 24% base-case growth.",
+     "Operating margin held at the 5% target, up 1 percentage point from last year.",
+     "Net profit grew 65% to ₹61cr."
+    ],
+    "text": "Revenue up 33% to ₹2,087cr, well above the 23–25% guided for the year. Operating profit jumped 79% to ₹111cr, easily beating the 24% base-case growth. Operating margin held at the 5% target, up 1 percentage point from last year. Net profit grew 65% to ₹61cr.",
+    "checks": [
+     {
+      "text": "Margin holds at 5% target",
+      "status": "met",
+      "why": "Operating margin was exactly 5%"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
    "company": "EPL",
    "sector": "Packaging",
    "quarter": "Q2 FY27",
@@ -1865,6 +6386,68 @@
    }
   },
   {
+   "company": "Influx Healthtech",
+   "sector": "Pharma Others",
+   "quarter": "H1 FY27",
+   "resultsDate": "2026-11-04",
+   "readOn": "2026-11-06",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": null
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 85,
+     "yearAgo": 67,
+     "prev": 80,
+     "yoy": 26.9,
+     "qoq": null
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 18,
+     "yearAgo": 15,
+     "prev": 15,
+     "yoy": 20,
+     "qoq": null
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 21,
+     "yearAgo": 22,
+     "prev": 19,
+     "yoy": -1,
+     "qoq": null
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 12,
+     "yearAgo": 10,
+     "prev": 11,
+     "yoy": 20,
+     "qoq": null
+    }
+   ],
+   "take": {
+    "verdict": "in line",
+    "points": [
+     "Revenue up 27% to ₹85cr, in line with the 25–30% guided.",
+     "Operating profit grew 20% to ₹18cr, with margin dipping one point to 21%.",
+     "Net profit rose 20% to ₹12cr compared to the previous year."
+    ],
+    "text": "Revenue up 27% to ₹85cr, in line with the 25–30% guided. Operating profit grew 20% to ₹18cr, with margin dipping one point to 21%. Net profit rose 20% to ₹12cr compared to the previous year.",
+    "checks": [],
+    "on": "2026-11-06"
+   }
+  },
+  {
    "company": "Interarch Building",
    "sector": "Construction",
    "quarter": "Q2 FY27",
@@ -1940,6 +6523,85 @@
      }
     ],
     "on": "2026-11-05"
+   }
+  },
+  {
+   "company": "Ircon Intl.",
+   "sector": "Construction",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-04",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 2272,
+     "yearAgo": 1977,
+     "prev": 1956,
+     "yoy": 14.9,
+     "qoq": 16.2
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 227,
+     "yearAgo": 141,
+     "prev": 192,
+     "yoy": 61,
+     "qoq": 18.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 10,
+     "yearAgo": 7,
+     "prev": 10,
+     "yoy": 3,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 100,
+     "yearAgo": 137,
+     "prev": 92,
+     "yoy": null,
+     "qoq": 8.7
+    }
+   ],
+   "oneOff": "Other income of ₹92cr is 57% of profit before tax this quarter, so profit may not reflect the business. The year-ago quarter's profit included other income of ₹156cr (91% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue rose 15% to ₹2,272cr, well ahead of the flat guidance for the year.",
+     "Operating profit jumped 61% to ₹227cr, as operating margin expanded 3 points to 10%.",
+     "Other income of ₹92cr was 57% of pre-tax profit, continuing to flatter net profit."
+    ],
+    "text": "Revenue rose 15% to ₹2,272cr, well ahead of the flat guidance for the year. Operating profit jumped 61% to ₹227cr, as operating margin expanded 3 points to 10%. Other income of ₹92cr was 57% of pre-tax profit, continuing to flatter net profit.",
+    "checks": [
+     {
+      "text": "Order book above ₹30,000cr",
+      "status": "missed",
+      "why": "Currently at ₹23,366cr"
+     },
+     {
+      "text": "Permanent chairman and RVNL merger",
+      "status": "unclear",
+      "why": "Not in earnings release"
+     },
+     {
+      "text": "Own margin of 4.0-4.5%",
+      "status": "missed",
+      "why": "Reported higher at 10%"
+     }
+    ],
+    "on": "2026-11-06"
    }
   },
   {
@@ -2580,6 +7242,79 @@
    }
   },
   {
+   "company": "Lohia Corp",
+   "sector": "Industrial Machinery",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-04",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Jun 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 594,
+     "yearAgo": 315,
+     "prev": 503,
+     "yoy": 88.6,
+     "qoq": 18.1
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 115,
+     "yearAgo": 36,
+     "prev": 100,
+     "yoy": 219.4,
+     "qoq": 15
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 19,
+     "yearAgo": 11,
+     "prev": 20,
+     "yoy": 8,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 78,
+     "yearAgo": 17,
+     "prev": 66,
+     "yoy": 358.8,
+     "qoq": 18.2
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue surged 89% YoY to ₹594cr, well ahead of the 20-25% guided.",
+     "Operating profit jumped 219% YoY to ₹115cr, but the 19% margin missed expectations.",
+     "Net profit soared 359% YoY to ₹78cr, up 18% from the previous quarter."
+    ],
+    "text": "Revenue surged 89% YoY to ₹594cr, well ahead of the 20-25% guided. Operating profit jumped 219% YoY to ₹115cr, but the 19% margin missed expectations. Net profit soared 359% YoY to ₹78cr, up 18% from the previous quarter.",
+    "checks": [
+     {
+      "text": "Operating margin of about 20%",
+      "status": "missed",
+      "why": "Margin came in at 19%"
+     },
+     {
+      "text": "Order book at or above ₹1,778cr",
+      "status": "unclear",
+      "why": "Not disclosed in these figures"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
    "company": "Marksans Pharma",
    "sector": "Pharma",
    "quarter": "Q2 FY27",
@@ -2651,6 +7386,75 @@
      }
     ],
     "on": "2026-11-05"
+   }
+  },
+  {
+   "company": "Max Estates",
+   "sector": "Realty",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-04",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 52.77,
+     "yearAgo": 48.77,
+     "prev": 51.91,
+     "yoy": 8.2,
+     "qoq": 1.7
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 5.23,
+     "yearAgo": 10.09,
+     "prev": 8.12,
+     "yoy": -48.2,
+     "qoq": -35.6
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 9.91,
+     "yearAgo": 20.69,
+     "prev": 15.64,
+     "yoy": -10.8,
+     "qoq": -5.7
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 4.68,
+     "yearAgo": 7.81,
+     "prev": 8.35,
+     "yoy": null,
+     "qoq": -44
+    }
+   ],
+   "oneOff": "Other income of ₹27cr is 371% of profit before tax this quarter, so profit may not reflect the business. The year-ago quarter's profit included other income of ₹26cr (222% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue rose 8% to ₹52.77cr, but operating profit fell 48% to ₹5.23cr.",
+     "Operating margin dropped 11 points year-on-year to 9.91%.",
+     "Net profit of ₹4.68cr was heavily flattered by ₹27cr of other income."
+    ],
+    "text": "Revenue rose 8% to ₹52.77cr, but operating profit fell 48% to ₹5.23cr. Operating margin dropped 11 points year-on-year to 9.91%. Net profit of ₹4.68cr was heavily flattered by ₹27cr of other income.",
+    "checks": [
+     {
+      "text": "No further related-party deals",
+      "status": "unclear",
+      "why": "Not detailed in these figures"
+     }
+    ],
+    "on": "2026-11-06"
    }
   },
   {
@@ -4186,6 +8990,158 @@
      }
     ],
     "on": "2026-11-05"
+   }
+  },
+  {
+   "company": "Stove Kraft",
+   "sector": "Consumer Durables",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-04",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Dec 2020",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 582,
+     "yearAgo": 295,
+     "prev": 479,
+     "yoy": 97.3,
+     "qoq": 21.5
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 72,
+     "yearAgo": 43,
+     "prev": 52,
+     "yoy": 67.4,
+     "qoq": 38.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 12,
+     "yearAgo": 15,
+     "prev": 11,
+     "yoy": -3,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 29,
+     "yearAgo": 33,
+     "prev": 17,
+     "yoy": -12.1,
+     "qoq": 70.6
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue surged 97% to ₹582cr, massively beating the 15–20% guidance.",
+     "Operating profit grew 67% to ₹72cr, and the 12% margin beat expectations.",
+     "However, net profit fell 12% to ₹29cr, missing the 18% growth expectation."
+    ],
+    "text": "Revenue surged 97% to ₹582cr, massively beating the 15–20% guidance. Operating profit grew 67% to ₹72cr, and the 12% margin beat expectations. However, net profit fell 12% to ₹29cr, missing the 18% growth expectation.",
+    "checks": [
+     {
+      "text": "H1 FY27 margin above 11%",
+      "status": "met",
+      "why": "Q2 margin was 12%"
+     },
+     {
+      "text": "Working capital under 30 days",
+      "status": "unclear",
+      "why": "Not in these figures"
+     },
+     {
+      "text": "IKEA billing visibly from Q2",
+      "status": "unclear",
+      "why": "Awaits the earnings call"
+     }
+    ],
+    "on": "2026-11-06"
+   }
+  },
+  {
+   "company": "Tenneco Clean Air",
+   "sector": "Auto Related",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-04",
+   "readOn": "2026-11-06",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1718,
+     "yearAgo": 1281,
+     "prev": 1545,
+     "yoy": 34.1,
+     "qoq": 11.2
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 262,
+     "yearAgo": 217,
+     "prev": 247,
+     "yoy": 20.7,
+     "qoq": 6.1
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 15,
+     "yearAgo": 17,
+     "prev": 16,
+     "yoy": -2,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 173,
+     "yearAgo": 151,
+     "prev": 165,
+     "yoy": 14.6,
+     "qoq": 4.8
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue up 34% to ₹1,718cr, well ahead of the double-digit growth guidance.",
+     "Operating profit grew 21% to ₹262cr, beating the 15% base-case profit expectation.",
+     "Operating margin fell 2 points to 15% from 17% a year ago.",
+     "Net profit rose 15% to ₹173cr, matching the 15% base-case growth expectation."
+    ],
+    "text": "Revenue up 34% to ₹1,718cr, well ahead of the double-digit growth guidance. Operating profit grew 21% to ₹262cr, beating the 15% base-case profit expectation. Operating margin fell 2 points to 15% from 17% a year ago. Net profit rose 15% to ₹173cr, matching the 15% base-case growth expectation.",
+    "checks": [
+     {
+      "text": "Half-year order book at or above ₹12,400cr",
+      "status": "unclear",
+      "why": "Not disclosed in these figures"
+     },
+     {
+      "text": "Value-added margin back above 18.5%",
+      "status": "unclear",
+      "why": "Value-added revenue not provided"
+     }
+    ],
+    "on": "2026-11-06"
    }
   },
   {
@@ -16188,6 +21144,10 @@
    "reviewed": {
     "on": "2026-11-01",
     "text": "Agree."
+   },
+   "call": {
+    "text": "The call revealed that the revenue surge included a 12% copper inflation pass-through, while the sequential margin recovery was driven by successfully absorbing Q1 wage shocks and reaching optimal utilization at three new plants. These operational details firmly support the initial \"ahead\" verdict, even though management cautioned that second-half growth will optically slow due to a high base effect.",
+    "on": "2026-11-06"
    }
   },
   {
@@ -17167,6 +22127,10 @@
    "reviewed": {
     "on": "2026-11-01",
     "text": "Agree."
+   },
+   "call": {
+    "text": "The call explained that the revenue miss stemmed from longer pharma decision cycles and geopolitical hits to food exports, while management guided for a 100-200 bps medium-term margin compression as the new biologics division scales. This context softens the initial \"behind\" verdict, reassuring analysts that the company remains a solid long-term compounder despite temporary macro headwinds.",
+    "on": "2026-11-06"
    }
   },
   {
@@ -17896,6 +22860,10 @@
    "reviewed": {
     "on": "2026-10-30",
     "text": "Agree. Interest rose to ₹29cr from ₹8cr a year ago as the polycarbonate build is funded; the margin held near Q1's level."
+   },
+   "call": {
+    "text": "The call explained that the massive margin and profit growth was driven by the Phenolics segment capitalizing on domestic supply shortages and reinstated import duties, which easily offset temporary margin compression in the Advanced Intermediates segment caused by customers switching to cheaper imports. This context fully affirms the initial positive verdict while detailing a heavy capex pipeline to fund their long-term Polycarbonate integration.",
+    "on": "2026-11-06"
    }
   },
   {
@@ -19172,6 +24140,10 @@
    "reviewed": {
     "on": "2026-10-30",
     "text": "Agree. Other income was 43% of pre-tax profit; the operating-profit gain is the better guide."
+   },
+   "call": {
+    "text": "The earnings call added that management upgraded full-year revenue guidance and maintained their 21% margin target, explaining that near-term margin drags stem from upfront sales investments and product mix-shifts. The call also clarified that elevated first-half capex was a one-off due to delayed chip procurement, keeping the initial positive verdict firmly intact.",
+    "on": "2026-11-06"
    }
   },
   {
@@ -21250,6 +26222,10 @@
    "reviewed": {
     "on": "2026-10-30",
     "text": "Agree."
+   },
+   "call": {
+    "text": "The call revealed that margins were protected from wage hikes through offshore shifts and AI-driven efficiencies, while a sharp drop in order bookings was explained as deals being delayed to the second half of the year. This weak book-to-bill ratio shifts the verdict to a cautious \"watchlist\" until the newly overhauled sales team proves it can convert the pipeline.",
+    "on": "2026-11-06"
    }
   },
   {
@@ -21333,6 +26309,10 @@
    "reviewed": {
     "on": "2026-10-30",
     "text": "Agree on profit, but revenue growth slowed to 10% and the share fell 12.6% on it; growth, not margin, is now the question."
+   },
+   "call": {
+    "text": "The call explained that the margin jump was driven by operating leverage following Q1 wage hikes, while overall revenue was dragged down by a delayed festive season stalling the core Consumer segment at just 4% growth. This underlying weakness, along with a one-to-two-year delay on share buybacks due to tax constraints, tempers the initial \"ahead\" verdict by preventing a strong buy rating despite management guiding for a record third quarter.",
+    "on": "2026-11-06"
    }
   },
   {
@@ -21638,6 +26618,10 @@
    "reviewed": {
     "on": "2026-10-30",
     "text": "Agree. Interest rose to ₹40cr from ₹26cr a year ago, and the board approved merging its defence and green-energy arms into the company."
+   },
+   "call": {
+    "text": "The call revealed that the revenue beat was driven by an 18% volume increase and strong exports, while margins absorbed a 150 basis point hit from elevated freight and gas prices. Management kept full-year guidance intact and announced a major corporate restructuring to absorb subsidiaries, which elevates conviction in the positive verdict despite a delay in defense order execution to H2.",
+    "on": "2026-11-06"
    }
   },
   {
@@ -22188,6 +27172,10 @@
    "reviewed": {
     "on": "2026-10-30",
     "text": "Agree."
+   },
+   "call": {
+    "text": "The call revealed that the strong growth and margins were driven by favorable European export quotas and a strategic pivot to bulk shipping to bypass high freight costs, alongside a swelling ₹525cr order book. This exceptional operational execution, despite a slight one-quarter delay in capacity commissioning, upgrades the verdict from merely \"in line\" to a thesis-affirming top pick.",
+    "on": "2026-11-06"
    }
   },
   {
@@ -22260,6 +27248,10 @@
    "reviewed": {
     "on": "2026-10-30",
     "text": "Agree."
+   },
+   "call": {
+    "text": "The call revealed an aggressive upgrade to FY27 AUM growth guidance to over 60% and explained that the massive profit beat was driven by falling credit costs, early profitability in secured lending, and a one-off tax benefit from historical ESOP expenses. These details strongly reinforce the initial \"ahead\" verdict, cementing the company as a thesis-affirming compounder.",
+    "on": "2026-11-06"
    }
   },
   {
@@ -24148,6 +29140,10 @@
    "reviewed": {
     "on": "2026-10-28",
     "text": "Verdict changed from ahead to mixed: revenue beat, but the margin slipped a point and net profit grew only 4%."
+   },
+   "call": {
+    "text": "The call explained that the margin dip was caused by raw material inflation and a lower-margin international product mix, while management maintained their double-digit growth guidance. However, a massive 68% surge in order intake and successful nuclear qualifications upgrade the verdict from \"mixed\" to a strong positive due to exceptional multi-year revenue visibility.",
+    "on": "2026-11-06"
    }
   },
   {
@@ -24388,6 +29384,10 @@
    "reviewed": {
     "on": "2026-10-28",
     "text": "Agree."
+   },
+   "call": {
+    "text": "The earnings call upgraded the initial \"mixed\" verdict to a positive one by explaining that the margin slip was driven by transient Red Sea freight costs and conscious brand investments rather than structural weakness. Furthermore, management maintained their medium-term margin guidance and highlighted a massive reduction in working capital days that transitioned the company to a strong net cash position.",
+    "on": "2026-11-06"
    }
   },
   {
@@ -24702,6 +29702,10 @@
    "reviewed": {
     "on": "2026-10-28",
     "text": "Misses that the 1.8 million-unit washing-machine line came online."
+   },
+   "call": {
+    "text": "The earnings call upgraded the initial \"mixed\" verdict to a strong positive by clarifying that apparent margin pressures are purely optical, resulting from passing high commodity costs through a fixed per-unit margin model. Additionally, management maintained its 20-25% volume growth guidance and confirmed that key margin-accretive compressor and refrigerator plants remain on schedule.",
+    "on": "2026-11-06"
    }
   },
   {
