@@ -760,7 +760,7 @@ export const pharma: SectorOverview = {
                         ['Ajanta Pharma', 'High-teens revenue; margin 27% ±1 before currency; US mid-single digits; Asia softened', '~₹400cr (₹300cr Pithampur)', '**Mixed**: +25%, US +57%; Asia −16%, recovery missed again'],
                         ['RPG Life Sciences', 'API arm +25% a year to ₹1,000cr in 5–6 years; India 1.5x market', '₹215cr of deals; up to ₹700cr with its PE partner', '**Delivered**: both deals closed, API +35.6%; Walmart launch not updated'],
                         ['Granules India', 'Margin 22–23% (reinstated); peptide arm profitable in FY27; $50m at 30%+ in about three years', '₹600cr', '**Beat**: net debt ₹101cr instead of rising; peptide arm lost ₹12.4cr'],
-                        ['Jagsonpal Pharma', 'Growth 1.5x the market; Aequitas to ~₹100cr and ₹10cr profit in ~2.5 years', 'Brand deals only', '**Mixed**: primary +9%; margin +241 bp'],
+                        ['Jagsonpal Pharma', 'Growth 1.5x the market; Aequitas to ~₹100cr and ₹10cr profit in ~2.5 years', 'Brand deals only', '**Mixed** (Q2): organic H1 +9.3% against ~15% secondary; filed Q2 margin ~18%; Q3 revenue above ₹100cr promised'],
                         ['Alembic Pharma', 'Revenue about mid-teens (raised); US mid-to-high teens; margin ~flat, 20% in 2–3 years', '₹300–350cr', '**Beat**: +26%; India +7%, still below market'],
                         ['Eris Lifesciences', 'Indian brands 300 bp above market; margin 36% back-loaded; international cut to flat', '₹88cr in Q1; Bhopal started August', '**Mixed**: India +14% met; exports and analogues delayed'],
                         ['Natco Pharma', 'Profit ~₹750cr incl. Adcock (kept); revenue ₹3,300–3,400cr (trimmed ₹100cr)', '₹250–300cr; ₹1,279cr rights for deals', '**Mixed**: Q1 profit ₹206cr, 41% from Adcock; sales pace ~₹2,900cr'],
@@ -910,8 +910,8 @@ export const pharma: SectorOverview = {
         {
             company: 'Jagsonpal Pharma', rank: 11, stance: 'SCALEUP', segment: INDIA,
             what: "A small asset-light Indian branded company in gynaecology, orthopaedics and skin, controlled by a private-equity fund, that has bought Aequitas to reach hospitals and a wellness portfolio.",
-            view: "**Clean balance sheet and shareholder-friendly** (a buyback, a 62% payout, ₹170cr of cash). The margin rose 241 basis points to about 21%, but primary sales grew 9% while secondary sales grew 18.9%, and its acquisitions move it into lower-margin channels. The price needs about {need:Jagsonpal Pharma|18}% a year against my ~15%.",
-            watch: 'Primary sales converging with secondary sales; Aequitas profit against its ₹10cr target; margin held above 20% after the wellness deal.',
+            view: "**Clean balance sheet and shareholder-friendly** (a buyback, a 62% payout, ₹170cr of cash). The margin rose 241 basis points to about 21%, but primary sales grew 9% while secondary sales grew 18.9%, and its acquisitions move it into lower-margin channels. On the Q2 call (29 Oct 2026) organic H1 growth was 9.3% against about 15% in chemists' data, the filed Q2 margin fell to about 18% as it spent ahead of the wellness brands joining on 1 October (company H1 margin 22.9%), and cash fell to ₹135cr; it expects quarterly revenue above ₹100cr from Q3 and ₹500cr by 2028. The price needs about {need:Jagsonpal Pharma|18}% a year against my ~15%.",
+            watch: 'Q3 revenue above ₹100cr with the wellness brands in; primary sales converging with secondary sales; Aequitas profit against its ₹10cr target; the filed margin back above 20%.',
         },
         {
             company: 'Alembic Pharma', rank: 12, stance: 'TURNAROUND', segment: HYBRID,

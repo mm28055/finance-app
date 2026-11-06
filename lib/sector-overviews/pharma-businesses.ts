@@ -141,7 +141,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Jagsonpal Pharma',
-        inShort: ["**A small Indian branded medicine company** in women's health, orthopaedics and skin, controlled since 2022 by the private-equity fund Infinity Holdings, which has just bought a hospital-supply business and a wellness range.", "**Good:** no debt, about ₹170cr of cash, 99% of profit turned into cash over five years, and a buyback and large dividend. **Bad:** reported growth of about 9% trails the 19% its brands sell at in chemists, and the new hospital business earns thin margins.", "**Verdict: wait.** Reported growth needs to catch up before the price makes sense."],
+        inShort: ["**A small Indian branded medicine company** in women's health, orthopaedics and skin, controlled since 2022 by the private-equity fund Infinity Holdings, which has just bought a hospital-supply business and a wellness range.", "**Good:** no debt, about ₹170cr of cash, 99% of profit turned into cash over five years, and a buyback and large dividend. **Bad:** reported organic growth of 9.3% in H1 FY27 trails the 15–19% its brands sell at in chemists, the filed Q2 margin fell to about 18%, and the new hospital business earns thin margins.", "**Verdict: wait.** Reported growth needs to catch up before the price makes sense."],
         tagline: "Indian branded medicines for gynaecology, orthopaedics and dermatology, plus a new hospital-supply arm (Aequitas).",
         revenue: '₹287cr (FY26, standalone)',
         products: [
@@ -163,7 +163,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Corona Remedies, Emcure', note: "Larger rivals in women's health; Corona is growing faster." }, { name: 'Mankind, Alkem', note: 'Large Indian companies with big field forces in the same therapies.' }, { name: 'Jan Aushadhi and trade generics', note: 'Cheap unbranded medicines that threaten any small branded company.' }],
         position: "**Five brands are number one for their molecule and 14 are in the top five.** It is a small player overall, growing faster than the market at the chemist.",
         money: "Screener shows **net cash of ₹98cr**; the company says it holds about ₹170cr of cash after a ₹40cr buyback at about a 40% premium. The board proposed a 200% dividend, including a 75% special dividend. It paid ₹20.8cr for 85% of Aequitas, over ₹90cr for the Yash Pharma brands in 2024, and on 23 September 2026 agreed to buy Group Pharmaceuticals' wellness range (₹24.6cr of FY26 sales) for ₹23.7cr upfront plus up to ₹23cr more tied to FY28 sales. Capex is tiny. Promoters hold **69.1%**, up from 68.7% in September 2023 after the buyback.",
-        watch: ["Reported growth catching up with 19% secondary sales.", "Aequitas EBITDA against the ₹10cr target.", "Margin held above 20% after the wellness deal."],
+        watch: ["Q3 revenue above ₹100cr, as promised, and reported growth catching up with secondary sales.", "Aequitas EBITDA against the ₹10cr target.", "Margin held above 20% after the wellness deal."],
         charts: pharmaCharts['Jagsonpal Pharma'],
     },
     {
