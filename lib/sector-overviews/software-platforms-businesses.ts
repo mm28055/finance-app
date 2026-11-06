@@ -135,7 +135,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Tanla Platforms', note: "India's largest, stronger in bank OTPs and WhatsApp; its enterprise messaging earns a similar ~20% gross margin." }, { name: 'Global messaging firms (Sinch, Infobip, Twilio)', note: "Larger rivals abroad; peers earn 30–35% of revenue from non-SMS products against Route's 8%." }],
         position: "**One of India's two large listed business-messaging companies**, with 280+ direct operator connections and a global reach through Proximus's BICS and Telesign; revenue per billable message is about 25 paise.",
         money: "Net cash of **₹1,364cr** (Screener); the company says ₹1,345cr in June, against a market value of {mcap:Route Mobile|₹2,818cr}, with borrowings of ₹42cr. Capex is 'not a meaningful number', and Heltar was bought from internal cash for an undisclosed sum. FY26 free cash was about ₹555cr, and the dividend was raised 50% to ₹16.5 a share a year. Promoters hold **74.85%**, up from 58.15% in Sep 2023, when the founders were the promoters; Proximus took control in 2024.",
-        watch: ["Gross margin back above 22% in Q2–Q3.", "No further prepayment write-offs, and the cost of the cyber incident at Masivian.", "Cash returned through a buyback or special dividend."],
+        watch: ["Gross margin holding above 22% (22.4% in Q2 FY27, from 20.9%).", "No further prepayment write-offs, and the cost of the cyber incident at Masivian.", "Cash returned through a buyback or special dividend, rather than the acquisitions management is now evaluating."],
         charts: softwareCharts['Route Mobile'],
     },
     {
