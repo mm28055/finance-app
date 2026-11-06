@@ -91,7 +91,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Concord Biotech',
-        inShort: ["**Grows active ingredients with microbes (fermentation)** rather than building them by chemistry: transplant drugs, cancer drugs, anti-infectives and antifungals. It also sells finished injections and tablets.", "**Good:** the low-cost producer in its main molecules, 1,250 cubic metres of fermenters already built, and no debt. **Bad:** FY26 sales fell 12%, stock on hand reached 485 days of sales, ₹68cr of receivables were more than six months overdue, and Q1's share gains were partly bought with price cuts.", "**Verdict: follow.** A rare asset, but the price needs about {need:Concord Biotech|26}% a year of growth straight after a year of decline."],
+        inShort: ["**Grows active ingredients with microbes (fermentation)** rather than building them by chemistry: transplant drugs, cancer drugs, anti-infectives and antifungals. It also sells finished injections and tablets.", "**Good:** the low-cost producer in its main molecules, 1,250 cubic metres of fermenters already built, and no debt. **Bad:** FY26 sales fell 12%, stock on hand reached 485 days of sales, ₹68cr of receivables were more than six months overdue, and Q1's share gains were partly bought with price cuts. Q2 FY27 revenue rose 25%, but solvent costs cut the gross margin about 4 points and the injectables plant still runs at 5%.", "**Verdict: follow.** A rare asset, but the price needs about {need:Concord Biotech|26}% a year of growth straight after a year of decline."],
         tagline: "A leading maker of fermentation-based active pharmaceutical ingredients (APIs), moving into finished injectables, US sales and contract manufacturing.",
         revenue: '₹1,055cr (FY26, consolidated)',
         products: [
@@ -119,7 +119,7 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**Among the world's leading fermentation API makers and the low-cost producer in its key molecules**, per management. It says it is the only Indian company integrated from fermentation API to finished injectable.",
         money: "**₹503cr of net cash** on Screener (₹491cr of investments and ₹14cr of cash against ₹2cr of borrowings); the company reported more than ₹442cr of cash at 30 June 2026 and no debt. Capex was only ₹9.5cr in Q1 because the plants are built; new API capacity will be added only when Unit 3 reaches 80–85% use (ICRA, though, puts FY27 capex at ₹120–130cr). Of ₹465cr of receivables at March 2026, about ₹68cr were overdue by more than six months and ₹40cr by more than a year. Rated [ICRA]AA- (Stable), reaffirmed in September 2026. Management is weighing acquisitions next to fermentation (peptides, veterinary). No equity raised. Promoters hold **44.1%**, unchanged over three years.",
-        watch: ["Inventory falling from 485 days while sales grow.", "The injectables plant filling from 5%; management could not say where it breaks even.", "Whether 26% growth holds once the currency gain and FY26 spill-over fade."],
+        watch: ["Injectables contracts, which management expected to finalise ‘in the near term’ on the Q2 call, filling the plant from 5%.", "Inventory falling from 485 days while sales grow.", "FY27 growth ‘slightly better’ than 18%, as guided (H1 +26%), once the currency gain and FY26 spill-over fade."],
         charts: pharmaApiCharts['Concord Biotech'],
     },
     {
