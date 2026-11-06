@@ -458,7 +458,7 @@ export const platformCos: SectorOverview = {
             points: [
                 {
                     label: 'Structural: the cost of one more user is tiny',
-                    text: "**CarTrade**'s filed margin was 33% in FY26 and 31% in Q1 FY27, down from 35% in Q4 because pay rises land each April; management says 31% ‘will get surpassed’ in Q2–Q4 and aims for a ‘40-40’ company (40% profit growth, margins above 40%). Two cautions: treasury income is about 30% of pre-tax profit, and 44.57% of Shriram Automall's profit belongs to minority holders (₹21cr of FY26's ₹244cr). **Matrimony.com**'s margin jumped from 11% to 20% in Q1, but mostly because about ₹28cr of FY26 billing on one-year plans is now reaching revenue while marketing held at ₹46.5cr; its FY26 matchmaking margin fell to 19% from 20.5%. **BlackBuck**'s 93% contribution margin, with 60–85% of extra core revenue reaching operating profit, is the clearest structural economics here. **My view: CarTrade's and BlackBuck's payment margins are structural; Matrimony.com's Q1 is a catch-up, not a new level.**",
+                    text: "**CarTrade**'s filed margin was 33% in FY26 and 31% in Q1 FY27, down from 35% in Q4 because pay rises land each April; it was back at 36% in Q2 (34% for H1; OLX 32%), beating the promised 31% and aims for a ‘40-40’ company (40% profit growth, margins above 40%). Two cautions: treasury income is about 30% of pre-tax profit, and 44.57% of Shriram Automall's profit belongs to minority holders (₹21cr of FY26's ₹244cr). **Matrimony.com**'s margin jumped from 11% to 20% in Q1, but mostly because about ₹28cr of FY26 billing on one-year plans is now reaching revenue while marketing held at ₹46.5cr; its FY26 matchmaking margin fell to 19% from 20.5%. **BlackBuck**'s 93% contribution margin, with 60–85% of extra core revenue reaching operating profit, is the clearest structural economics here. **My view: CarTrade's and BlackBuck's payment margins are structural; Matrimony.com's Q1 is a catch-up, not a new level.**",
                 },
                 {
                     label: 'Rising, with caveats: business platforms',
@@ -582,7 +582,7 @@ export const platformCos: SectorOverview = {
                     badgeColumn: 3,
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
-                        ['Cartrade Tech', 'Margin above 31% in Q2–Q4; ‘40-40’ goal; ~₹1,000cr profit in 4–5 years', 'Little (₹27cr in FY26)', '**Delivered**: OLX +29% against a promised step-up; all segments’ margins up; payout still years away'],
+                        ['Cartrade Tech', 'Q3 its best quarter ever, with group operating profit up about 20% on Q2 again; OLX growth above 30–35%; ‘40-40’ goal; ~₹1,000cr profit in 4–5 years (Q2 call)', 'Little (₹27cr in FY26)', '**Delivered** (Q2 call): margin 36% against the 31% promised, OLX +26% with operating profit +36%; no payout this year'],
                         ['BlackBuck', 'No numbers; vehicle finance profitable by end-FY27; Superloads figures in 3–4 quarters', 'Tracking devices, ₹60–80cr a year (ICRA)', '**Mixed**: warned slowdown bit (core +1% on quarter); growth arms +44%; pre-tax profit −8%'],
                         ['Matrimony.com', 'Q2: double-digit matchmaking billing and revenue growth; profit similar to or slightly above Q1 (triple-digit growth year on year)', 'Little', '**Delivered**: profit +127.5% as promised; billing +7.8%, low end'],
                         ['Macfos', 'No Q1 call; ~50% growth for 2–3 years (Oct 2025); ~8% profit margin', 'Small; bigger warehouse under study', '**Missed**: Q1 +38%; profit margin 7.1%'],
@@ -667,8 +667,8 @@ export const platformCos: SectorOverview = {
         {
             company: 'Cartrade Tech', rank: 1, stance: 'COMPOUNDER', segment: LISTINGS,
             what: "Runs CarWale and BikeWale for new-vehicle research, OLX India classifieds for used cars and other goods, and Shriram Automall vehicle auctions.",
-            view: "**Operating leverage, proven.** The filed margin rose from 16% to 33% in two years, OLX grew 29% in Q1 with operating profit up 76%, 95% of traffic is free and it holds ₹1,321cr of cash with no debt. But revenue slipped 1% on the quarter, 30% of pre-tax profit is treasury income, there is no payout policy and the chairman's children hold senior roles. The price needs about {need:Cartrade Tech|27}% a year against my ~25%.",
-            watch: 'Margin above 31% in Q2–Q4; disclosed Elite Buyer and Spinny revenue; a dividend or buyback policy.',
+            view: "**Operating leverage, proven.** The filed margin rose from 16% to 33% in two years, OLX grew 29% in Q1 with operating profit up 76%, 95% of traffic is free and it holds ₹1,321cr of cash with no debt. On the Q2 call (28 Oct 2026) the margin rose to 36% (guide met), revenue was a record ₹213cr (+10%), OLX grew 26% with operating profit +36%, and cash passed ₹1,400cr; profit rose only 3% because of last year's write-backs and OLX now paying tax. But 30% of pre-tax profit is treasury income, management says rules bar a dividend or buyback this year, and the chairman's children hold senior roles. The price needs about {need:Cartrade Tech|27}% a year against my ~25%.",
+            watch: 'Margin above 31% in Q3–Q4; OLX growth passing 30% as promised for Q3; Elite Buyer and transaction revenue disclosed; a payout once the rules allow it.',
         },
         {
             company: 'BlackBuck', rank: 2, stance: 'SCALEUP', segment: B2B,
