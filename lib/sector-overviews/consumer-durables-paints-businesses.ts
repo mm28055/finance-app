@@ -147,7 +147,7 @@ const profiles: BusinessProfile[] = [
         ],
         position: "**Fourth in Indian paints**, with about 5% of house paints and 7% of industrial paints; together with JSW Paints it aims for second place overall by 2030–31.",
         money: "**₹245cr of net cash** on Screener; no bank debt (₹79cr of leases), and ICRA put unencumbered cash at ₹324cr at March 2026 (rated AA-/Stable, September 2026). FY26 cash went on the ₹1,152cr brand purchase and about ₹940cr of dividends (₹206 a share, including a ₹156 special from the powder-coatings sale); FY26 capex was only ₹47cr. A ₹108cr tax refund arrived in Q1 FY27. JSW Paints holds **61.2%**; AkzoNobel held 74.8% in September 2023 and sold out in December 2025.",
-        watch: ["Margin back inside 13–15% by Q3.", "The SAP systems switch around Diwali.", "Any merger ratio with JSW Paints; the whistle-blower outcome."],
+        watch: ["Margin back inside 13–15% by Q3.", "The SAP systems switch around Diwali.", "Any merger ratio with JSW Paints, now also needing the consent of the trustee for JSW Paints' ₹2,950cr debentures, whose covenants bind the company (5 Nov 2026); the whistle-blower outcome."],
         charts: consumerDurablesCharts['Akzo Nobel'],
     },
     {

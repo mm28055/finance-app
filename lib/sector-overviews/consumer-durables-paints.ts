@@ -538,8 +538,8 @@ export const consumerDurablesPaints: SectorOverview = {
         {
             company: 'Akzo Nobel', rank: 3, stance: 'SCALEUP', segment: DECO,
             what: "JSW Dulux Ltd (the former Akzo Nobel India, listed as Akzo Nobel), 61.2% owned by JSW Paints: Dulux and Sadolin house paints and wood care (about 60% of sales), car refinish, marine, protective and coil coatings; five plants.",
-            view: "**Fast growth bought with margin, under a new owner still integrating.** Volume grew 25% and like-for-like revenue 18.8% in Q1 after JSW cut Dulux's old price premium and widened distribution, with spare plants to grow into. But the margin is 11.9% against about 16% two years ago, FY26 operating cash was ₹93cr, a whistle-blower complaint was under investigation, and the JSW Paints merger terms are unknown. The price needs about {need:Akzo Nobel|21}% a year against my ~16%.",
-            watch: 'Margin back inside 13–15% by Q3; the SAP switch around Diwali passing without disruption; any merger ratio and the whistle-blower outcome.',
+            view: "**Fast growth bought with margin, under a new owner still integrating.** Volume grew 25% and like-for-like revenue 18.8% in Q1 after JSW cut Dulux's old price premium and widened distribution, with spare plants to grow into. But the margin is 11.9% against about 16% two years ago, FY26 operating cash was ₹93cr, a whistle-blower complaint was under investigation, and the JSW Paints merger terms are unknown. On 5 Nov 2026 it disclosed that its promoter JSW Paints' ₹2,950cr debenture deed restricts the company too: restructuring, asset sales and new borrowing now need the trustee's consent, although the company is not a party. The price needs about {need:Akzo Nobel|21}% a year against my ~16%.",
+            watch: 'Margin back inside 13–15% by Q3; the SAP switch around Diwali passing without disruption; any merger ratio, which now needs the debenture trustee’s consent, and the whistle-blower outcome.',
         },
         {
             company: 'Sirca Paints', rank: 4, stance: 'SCALEUP', segment: WOOD,
