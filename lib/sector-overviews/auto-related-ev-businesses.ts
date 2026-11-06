@@ -112,7 +112,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Lumax Industries',
-        inShort: ["**India's leading car-lamp maker** and a large two-wheeler lamp supplier, 37.5% owned by Stanley Electric of Japan.", "**Good:** the order book rose to ₹2,500cr, about 90% LED, and Q1 FY27 revenue grew 33%. **Bad:** the Q1 margin was 9.2% against a 10.5–11% guide, FY27 capex has doubled after FY26's ran well over plan, free cash was negative in three of the last five years, and the royalty to Stanley was about a third of FY26 profit.", "**Verdict: follow.** The price fits my growth estimate if the margin gets back above 10% with debt flat; I want to see that first."],
+        inShort: ["**India's leading car-lamp maker** and a large two-wheeler lamp supplier, 37.5% owned by Stanley Electric of Japan.", "**Good:** the order book is ₹2,580cr, about 80–88% LED, revenue grew 33% in both Q1 and Q2 FY27, and the FY27 revenue guide was raised to 25% plus. **Bad:** the margin fell to 9.2% in Q1 and 8.2% in Q2 against a promised 10%-plus, on dearer electronics recovered from carmakers only with a lag, FY27 capex has doubled after FY26's ran well over plan, free cash was negative in three of the last five years, and the royalty to Stanley was about a third of FY26 profit.", "**Verdict: follow.** The price fits my growth estimate if the margin gets back above 10% with debt flat; I want to see that first."],
         tagline: "A car and two-wheeler lamp maker working on Stanley Electric technology, which also sells the model-specific moulds for each new launch.",
         revenue: '₹4,184cr (FY26, consolidated)',
         products: [
@@ -135,7 +135,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Uno Minda', note: 'The largest Indian lighting rival, strong in both cars and two-wheelers.' }, { name: 'India Japan Lighting and Marelli Motherson', note: 'Car-lamp rivals backed by Japanese and European lighting groups (ICRA).' }, { name: 'Fiem Industries', note: 'The two-wheeler lamp leader for TVS and Honda, earning about 14% against Lumax’s 10%.' }],
         position: "**India's leading car-lamp supplier and third in two-wheeler lamps** (ICRA). With its associate SL Lumax, it covers makers of about 92% of Indian car output.",
         money: "Screener shows **net debt of ₹669cr**. Borrowings rose from ₹723cr in March 2024 to ₹973cr including leases, and ICRA (April 2026) puts gross debt excluding leases at about 2.5 times operating profit, against about 1.5 times on Screener's net debt, after three years of debt-funded capex, even though the annual report calls FY26 capex internally funded. Net long-term debt was ₹209cr in June with ₹85–90cr to repay in FY27, but working-capital debt will rise. Suppliers fund much of the business (paid after 145 days). FY26 free cash was ₹86cr, the first positive year in three, and ICRA upgraded it to AA- (Stable) in April 2026. Promoters (the Jain family and Stanley, 37.5% each) hold **75%**, unchanged.",
-        watch: ["Q2 margin above 10%, as promised.", "Debt staying flat through the doubled capex.", "The customs appeal over Stanley's design fees on imported moulds."],
+        watch: ["An H2 margin above 10%, which the full-year ‘double-digit’ aim needs after 8.2% in Q2.", "Net long-term debt staying near ₹188cr (September) through the doubled capex.", "The customs appeal over Stanley's design fees on imported moulds."],
         charts: autoRelatedCharts['Lumax Industries'],
     },
     {

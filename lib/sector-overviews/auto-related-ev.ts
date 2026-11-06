@@ -558,7 +558,7 @@ export const autoRelatedEv: SectorOverview = {
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
                         ['Fiem Industries', 'Revenue +15–20% a year; margin ~14%; 4W about 2.5% of revenue in FY27 (was ₹100–150cr)', '~₹100cr in FY27, mostly Hosur; no greenfield', '**Walked back**: 4W target cut ten weeks after it was given; core business on guide'],
-                        ['Lumax Industries', 'FY27 revenue +15–20% (new); margin 10.5–11% kept; ~13% in 3–4 years; ₹9,000cr+ revenue by FY30–31', '₹200–250cr in FY27 (doubled); ₹150–200cr in FY28', '**Mixed**: revenue +33% beat; margin 9.2% below the band; monthly resets refused'],
+                        ['Lumax Industries', 'FY27 revenue raised to 25% plus (Q2 call; was 20% plus); full-year margin ‘double-digit’ (was 10.5–11%); ~13% in 3–4 years; ₹9,000cr+ revenue by FY30–31', '₹200–250cr in FY27 (kept); ₹150–200cr in FY28', '**Mixed** (Q2): revenue +33% beat again; margin 8.2% missed the promised 10%'],
                         ['Pricol', 'Margin 12.5–13% steady state; ~75% of revenue re-priced in Q2; FY31 revenue ₹8,000cr ‘fully intact’', '₹700cr over 18–24 months (was ₹680–700cr ‘this year’)', '**Mixed**: revenue beat a gloomy Q4 tone; margin fell as warned; acquisitions paused'],
                         ['Minda Corp', 'Growth at least 50% above industry; margin 11.5–12%; Vision 2030 ₹17,500cr (group basis)', '~₹400cr in FY27; ₹2,000cr over FY26–FY30', '**Beat**: revenue +33% against ≥20%; margin guide trimmed'],
                         ['Varroc Engineering', '20–25% FY27 growth as ‘ambition’; 10% PBT margin in ~3 years; zero net debt by FY28', '₹500–550cr in FY27 (raised); ₹300–400cr in FY28', '**Mixed**: revenue +30% beat; margin 8.5% against ‘higher than 9.4%’'],
@@ -650,8 +650,8 @@ export const autoRelatedEv: SectorOverview = {
         {
             company: 'Lumax Industries', rank: 2, stance: 'SCALEUP', segment: LIGHT,
             what: "India’s leading car-lamp maker and a large two-wheeler lamp supplier, 37.5% owned by Stanley Electric of Japan, with a 21.28% stake in Hyundai-Kia supplier SL Lumax.",
-            view: "**Content and orders are growing; margin has to follow.** The order book rose to ₹2,500cr, ~90% LED, with ~₹1,500cr starting in FY28, and revenue grew 33% in Q1. But the margin was 9.2% against a 10.5–11% guide, capex doubled to ₹200–250cr, gross debt is ~2.5 times operating profit (ICRA) and the Stanley royalty is a third of profit. The price needs about {need:Lumax Industries|17}% a year against my ~17%.",
-            watch: 'Q2 margin above 10% as management promised; debt flat through the capex; the customs appeal on mould values.',
+            view: "**Content and orders are growing; margin has to follow.** The order book rose to ₹2,500cr, ~90% LED, with ~₹1,500cr starting in FY28, and revenue grew 33% in Q1. But the margin was 9.2% against a 10.5–11% guide, capex doubled to ₹200–250cr, gross debt is ~2.5 times operating profit (ICRA) and the Stanley royalty is a third of profit. Q2 (call of 27 Oct 2026) repeated the pattern: revenue +33% and the FY27 guide raised to 25% plus, but the margin fell to 8.2% against the promised 10% on dearer electronics and polymers, with recovery from carmakers ‘with a lag’; the full-year aim is now just ‘double-digit’. Net long-term debt did fall, to ₹188cr. The price needs about {need:Lumax Industries|17}% a year against my ~17%.",
+            watch: 'H2 margin above 10%, which the ‘double-digit’ full-year aim now needs; cost recovery from carmakers; net debt staying near ₹188cr through ₹200–250cr of capex; the customs appeal on mould values.',
         },
         {
             company: 'Pricol', rank: 3, stance: 'SCALEUP', segment: WIRE,
