@@ -128,7 +128,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'GK Energy',
-        inShort: ["**A leading installer of solar water pumps for farmers**, working under the national PM-KUSUM scheme and state schemes, mainly in Maharashtra, and now adding rooftop solar and battery storage.", "**Good:** a filed margin of 16–19%, about 41% return on capital and ₹237cr of net cash after its IPO (Screener; ₹240.6cr on its own count). **Bad:** a plan to double revenue rests on a ₹541cr order book and a new scheme (PM-KUSUM 2.0) with no firm date, price per pump is falling, its margin fell from 20.4% in FY26 to 17.05% in Q1, and the order book shrank from ₹710cr to ₹541cr.", "**Verdict: wait.** Cheap if the new scheme arrives; I would wait until it does."],
+        inShort: ["**A leading installer of solar water pumps for farmers**, working under the national PM-KUSUM scheme and state schemes, mainly in Maharashtra, and now adding rooftop solar and battery storage.", "**Good:** a filed margin of 16–19%, about 41% return on capital and ₹237cr of net cash after its IPO (Screener; ₹240.6cr on its own count). **Bad:** a plan to double revenue rests on a ₹541cr order book and a new scheme (PM-KUSUM 2.0) with no firm date, price per pump is falling, its margin fell from 20.4% in FY26 to 17–18.5% in Q1–Q2, Q2 FY27 revenue was flat on the year, receivables reached ₹1,012cr in September, and the order book is only ₹788cr.", "**Verdict: wait.** Cheap if the new scheme arrives; I would wait until it does."],
         tagline: "Pune-based contractor that supplies and installs solar-powered farm water pumps under government subsidy schemes, with a small rooftop-solar business and a first battery-storage project.",
         revenue: '₹1,715cr (FY26, consolidated)',
         products: [
@@ -150,7 +150,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Shakti Pumps', note: "A pump maker that also installs solar pumps under PM-KUSUM; unlike GK, it makes its own pumps and motors." }, { name: 'Oswal Pumps and other empanelled installers', note: "Compete in the same state tenders, where price decides most awards." }],
         position: "**One of the leading PM-KUSUM Component B installers** (CARE), with more than 164,500 systems installed and its strongest position in Maharashtra, the largest market.",
         money: "Net cash of **₹237cr** (Screener); the company gives ₹240.6cr for FY26 after its September 2025 IPO at ₹153 a share, which raised ₹400cr of new money (promoters also sold ₹64.26cr). Q1 interest halved to ₹5cr as IPO money replaced bank loans. The weak spot is working capital: debtor days were 140 in FY26 because state schemes pay slowly. Spending on the battery project has not been disclosed. CARE rates it BBB+/Stable. Promoters hold **79.2%**.",
-        watch: ["A formal PM-KUSUM 2.0 launch and new Magel Tyala phases.", "The order book rebuilding above ₹1,000cr.", "Margin staying above CARE's 12% trigger."],
+        watch: ["A formal PM-KUSUM 2.0 launch (expected in Q3, management said on the Q2 call) and new Magel Tyala phases.", "Receivables falling from ₹1,012cr (September) as H2 collections arrive.", "The order book rebuilding above ₹1,000cr (₹788cr at Q2).", "Margin staying above CARE's 12% trigger."],
         charts: constructionCharts['GK Energy'],
     },
     {
