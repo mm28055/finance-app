@@ -523,7 +523,7 @@ export const constructionRoads: SectorOverview = {
                         ['Welspun Enterp', 'Revenue ‘closer to 15%’ (was 15–20%); margin 18%+; orders ₹8,000–10,000cr', 'Pune–Shirur equity ~₹1,500cr', '**Softened**: revenue −8%; orders slipping to H2'],
                         ['KNR Constructions', 'Revenue ₹2,200–2,300cr; margin 8–9% (was ~10%); orders ₹8,000–10,000cr', '₹350–400cr, mostly mining', '**Cut**: underlying margin ~5.5%'],
                         ['Dilip Buildcon', 'Revenue +30–40% from Q3; margin 10–12% (was 11–12%); debt −₹600–800cr', 'Under ₹100cr standalone; mine plant ₹2,730cr in its project company', '**Slipping**: revenue −9%; mines far behind; debt up'],
-                        ['PNC Infratech', 'Revenue ~₹6,000cr; margin ~12%; orders ₹12,000–15,000cr; coal ~₹500cr (was ₹600cr)', '~₹150cr; project equity ₹226cr', '**Mixed**: +34%, but guidance predates the NHAI ban'],
+                        ['PNC Infratech', 'Revenue ~₹5,800cr at ~12% excluding claims (Q2 call; was ~₹6,000cr); orders ₹12,000–15,000cr; coal ~₹500cr; water ~₹1,000cr', '~₹150cr; project equity ₹226cr', '**Mixed** (Q2): +17% at 12.1%; guide trimmed; two NHAI HAM wins under the stay'],
                         ['H.G. Infra Engg.', 'Revenue ₹6,000–6,500cr (was ₹6,500cr+); margin 13.5–14%; debt to ₹900cr', 'Equity ₹583cr in rest of FY27', '**Walked back**: margin 8.5%, loss, debt up'],
                         ['Ashoka Buildcon', 'Revenue +10–15% (was 20%); margin 9–9.5% (was ~10%); orders ₹6,000–8,000cr', '~₹125cr', '**Walked back**: three cuts in 12 weeks; sale delayed'],
                     ],
@@ -634,8 +634,8 @@ export const constructionRoads: SectorOverview = {
         {
             company: 'PNC Infratech', rank: 7, stance: 'TURNAROUND', segment: BUILD,
             what: "An Agra-based highway builder and HAM developer that also builds water schemes, canals and airports and has started coal-mining work; it sold 12 projects to KKR's Vertis trust.",
-            view: "**A sound balance sheet cut off from its main client.** It has standalone net cash of ₹133cr and a ₹19,100cr order book, and grew standalone revenue 34% in Q1. But NHAI barred it from national-highway bidding for three years, a ban the Delhi High Court stayed on 12 October only while the case is heard, CARE's rating is on watch Negative, Q1 profit included ₹217.66cr of arbitration claims, and ₹925cr is owed on water schemes. The price needs roughly no growth against my −5%.",
-            watch: 'The Delhi High Court’s final ruling on the debarment, now stayed; whether it wins NHAI bids while the stay holds; non-NHAI orders replacing highway work; water-scheme dues coming in.',
+            view: "**A sound balance sheet cut off from its main client.** It has standalone net cash of ₹133cr and a ₹19,100cr order book, and grew standalone revenue 34% in Q1. But NHAI barred it from national-highway bidding for three years, a ban the Delhi High Court stayed on 12 October only while the case is heard, CARE's rating is on watch Negative, Q1 profit included ₹217.66cr of arbitration claims, and ₹925cr is owed on water schemes. The price needs roughly no growth against my −5%. Q2 (call of early Nov 2026): standalone revenue +17% at a 12.1% margin, two new NHAI HAM projects won while the stay holds, an order book above ₹18,000cr and ₹16,600cr of bids awaiting opening; water dues are down to ₹786cr. The FY27 guide was trimmed to ₹5,800cr at about 12% (excluding claims).",
+            watch: 'The Delhi High Court’s final ruling on the debarment, now stayed; NHAI bids won while the stay holds (two so far); the ₹16,600cr of bids awaiting opening; water-scheme dues (₹786cr) coming in.',
         },
         {
             company: 'H.G. Infra Engg.', rank: 8, stance: 'TURNAROUND', segment: BUILD,

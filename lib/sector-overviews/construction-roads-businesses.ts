@@ -234,7 +234,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'GR, KNR and H.G. Infra', note: "Road builders with the same HAM model, all still free to bid for NHAI work." }, { name: 'Dilip Buildcon', note: "A far larger coal-mine operator; PNC's mining business is new and has already cut its targets." }, { name: 'Water EPC contractors', note: "Compete for state water schemes, where payments are slow." }],
         position: "**Once one of NHAI's fastest road builders**, now shut out of national-highway bidding for three years; mid-sized by revenue.",
         money: "Net debt of **₹2,932cr** (Screener), almost all in its project companies; consolidated debt was ₹5,448cr against ₹2,870cr of cash at June, after the Vertis sale cut borrowings from ₹9,364cr to ₹5,170cr in FY26. The building arm has ₹133cr of net cash. HAM equity of ₹436cr is still due (₹226cr in FY27), plus about ₹400cr for two new HAMs and ₹400cr for solar; capex about ₹150cr. CARE's AA+ is on watch Negative and will be cut if the margin falls below 12%. Promoters hold **56.07%**, unchanged over three years, with no pledge.",
-        watch: ["The Delhi High Court's final ruling on the NHAI debarment, stayed on 12 October 2026 while the case is heard.", "Non-NHAI orders replacing highway work.", "Water-scheme dues coming in."],
+        watch: ["The Delhi High Court's final ruling on the NHAI debarment, stayed on 12 October 2026 while the case is heard.", "Non-NHAI orders replacing highway work, and NHAI wins while the stay holds (two HAM projects by the Q2 FY27 call).", "Water-scheme dues coming in (₹786cr outstanding at Q2 FY27, from ₹925cr)."],
         charts: constructionCharts['PNC Infratech'],
     },
     {
