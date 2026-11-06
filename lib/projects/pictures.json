@@ -24298,8 +24298,8 @@
   },
   {
    "company": "Motherson Sumi Wirin",
-   "fingerprint": "24106e75970289f7",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "48a9e59e593146ac",
+   "checkedOn": "2026-11-06",
    "lines": {
     "heading": "How full the plants are (Q4 FY26; Q1 FY27 'almost the same')",
     "items": [
@@ -24358,6 +24358,11 @@
      "text": "Same run rate of about ₹450cr; profit contribution pushed out one or two quarters"
     },
     {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "New plants 'contributed meaningfully' to 47% revenue growth and now run 'at an optimal utilization level' (no plant figures given)"
+    },
+    {
      "when": "Q3 FY27",
      "tone": "next",
      "milestones": [
@@ -24374,7 +24379,7 @@
     "Earlier aim for the three new plants together: about ₹2,000–2,100cr a year, to be reached 'soon' if customers' forecast volumes come (Q4 FY26 call); Q4 FY26 revenue from them was 'INR400-plus crores'",
     "Capex about ₹190cr a year (FY26 and FY27), from own cash; fixed assets turn into revenue about 15 times a year"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (Apr 2026) and sector note",
+   "source": "Q2 FY27 call (Oct 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (Apr 2026) and sector note",
    "recheck": {
     "changes": [
      "Official Q4 FY26 transcript now available: plant-level 80% / 80% / 60% / 50% confirmed as management's figures",
@@ -38288,21 +38293,28 @@
   },
   {
    "company": "Timken India",
-   "fingerprint": "cee5238be3792019",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "d6e34e71845dd451",
+   "checkedOn": "2026-11-06",
    "lines": {
-    "heading": "How full the new Bharuch plant is (Q1 FY27)",
+    "heading": "How full the new Bharuch plant is (Q2 FY27)",
     "items": [
      {
       "name": "Spherical roller lines",
       "size": "Bharuch (no unit capacity given)",
-      "usedPct": 42.5,
-      "usedLabel": "about 40–45% used",
+      "usedPct": 70,
+      "usedLabel": "about 70% used (40–45% in Q1)",
       "marker": {
        "pct": 70,
-       "label": "aim 70% by August–September 2026 (dashed)"
+       "label": "aim 70% by August–September 2026, reached"
       },
-      "note": "Small lines (up to 250 mm) were already near full in May; larger lines wait on customer part approvals"
+      "note": "Small lines (up to 250 mm) near full; larger lines wait on customer part approvals"
+     },
+     {
+      "name": "Whole Bharuch plant",
+      "size": "spherical and cylindrical lines together",
+      "usedPct": 60,
+      "usedLabel": "about 60% used",
+      "note": "Cylindrical lines are 'still below 60%' (Q2 FY27 call)"
      }
     ]
    },
@@ -38348,11 +38360,11 @@
     },
     {
      "when": "Q2 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "timken-india-bharuch-m1"
      ],
-     "sub": "Q1 FY27 call: August–September. Q4 FY26 call had said July"
+     "sub": "Reached on time (Q2 FY27 call); Bharuch sales about ₹75cr in the quarter, against ₹50cr in Q1"
     },
     {
      "when": "Q3 FY27",
@@ -38361,7 +38373,7 @@
       "timken-india-bharuch-m2",
       "timken-india-jamshedpur-rail-m1"
      ],
-     "sub": "Rail line producing by November, customer approvals from December, commercial by calendar year-end"
+     "sub": "Rail line trial runs in November–December, then customer approvals (Q2 FY27 call: 'on target'); plain-bearing line to be commissioned 'very soon'"
     },
     {
      "when": "Later",
@@ -38374,7 +38386,7 @@
     "About 65% of sales made in India, 35% imported from the group",
     "Bharuch's ₹700–740cr at full use is roughly a fifth of FY26 revenue of ₹3,419cr; cylindrical lines run lower than spherical"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note",
+   "source": "Q2 FY27 call (Oct 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note",
    "recheck": {
     "changes": [],
     "note": "Official transcripts confirm 40–45% and 70% by August–September (July earlier), up to 250 mm lines full, ₹350cr building, ₹120cr rail producing by November and December, ₹3,419cr FY26, 65/35, 0–8 inch capacity under discussion, heavy rain delay, 8–10% capex"

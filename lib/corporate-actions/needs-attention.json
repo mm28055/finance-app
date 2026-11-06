@@ -4332,7 +4332,8 @@
     "sector": "Packaging",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-06: Jul–Sep call read. Sales +23%, volume about +7% (pull-forward did not reverse; checkpoint met); margin about 8% on lagging cost pass-through; profit −19% against prior one-offs. Stays wait; margin checkpoint added."
   },
   {
     "company": "Acutaas Chemicals",
@@ -4393,7 +4394,8 @@
     "sector": "Packaging",
     "subject": "Checkpoint partly: huhtamaki-india-q2fy27-2",
     "why": "Operating margin holding at 8–9% or better — actual 7.8% (partly).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-06: Margin 7.8% against 8–9%; stays wait. Outcome written."
   },
   {
     "company": "Apcotex Inds",
@@ -4492,7 +4494,8 @@
     "sector": "Industrials",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Q2 call read. Orders ₹715cr, backlog ₹4,460cr, margin about 6%, cash ₹533cr; no dated E25–E30 mandate (missed, re-set for Q4); up to ₹100cr for a BPCL biogas venture; GenX revenue to ramp in H2. Stays wait."
   },
   {
     "company": "Shilchar Tech.",
@@ -4507,7 +4510,8 @@
     "sector": "Bearings",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Q2 call read. Sales +25%, exports +60%; Bharuch ₹75cr (partly) with spherical lines at 70% (met; milestone met); rail low on delayed tenders; Jamshedpur trials Nov–Dec. Capacity, projects and picture updated. Stays wait (price stretched)."
   },
   {
     "company": "Onesource Specialty",
@@ -4600,7 +4604,8 @@
     "sector": "Pharma",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Q2 call read. Organic H1 +9.3% vs ~15% secondary (checkpoint missed); filed margin ~18% on pre-integration spend; cash ₹135cr; Q3 revenue >₹100cr promised (checkpoint added). Stays wait."
   },
   {
     "company": "Kanpur Plastipack",
@@ -4698,7 +4703,8 @@
     "sector": "Bearings",
     "subject": "Checkpoint missed: timken-india-q2fy27-2",
     "why": "Operating margin back over 20% — actual 18.7% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Margin 18.7% (company 19.2%) against 20%, on low rail sales; stays wait. Outcome written."
   },
   {
     "company": "Yasho Industries",
@@ -4728,7 +4734,8 @@
     "sector": "Industrials",
     "subject": "Checkpoint partly: praj-industries-q2fy27-2",
     "why": "Operating margin back above 7–8% (about 4% now) — actual 6.1% (partly).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Margin 6.1% against 7–8%; stays wait. Outcome written."
   },
   {
     "company": "Shadowfax Tech.",
@@ -4750,7 +4757,8 @@
     "sector": "Pharma",
     "subject": "Checkpoint missed: jagsonpal-pharma-q2fy27-1",
     "why": "Operating margin held above 20% after the wellness deal — actual 17.7% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Filed margin 17.7% against 20% (company H1 22.9%); stays wait. Outcome written."
   },
   {
     "company": "MTAR Technologies",
@@ -4793,7 +4801,8 @@
     "sector": "Auto Related",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-05"
+    "addedOn": "2026-11-05",
+    "handled": "2026-11-06: Q2 call read. Revenue +47%, margin 9.2% (met), new plants at 'optimal utilization' (project and picture updated); wage recovery still under negotiation (missed, re-set for Q4). Stays wait (price stretched)."
   },
   {
     "company": "Cartrade Tech",
@@ -4853,7 +4862,8 @@
     "sector": "Auto Related",
     "subject": "Checkpoint met: motherson-sumi-wirin-q2fy27-1",
     "why": "Operating margin back above 9% — actual 9.2% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-05"
+    "addedOn": "2026-11-05",
+    "handled": "2026-11-06: Margin 9.2% above 9%; stays wait, since the price needs ~20% a year against my ~13%. Outcome written."
   },
   {
     "company": "Vimta Labs",

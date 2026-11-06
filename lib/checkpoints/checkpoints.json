@@ -1526,7 +1526,8 @@
    "status": "met",
    "actual": "9.2%",
    "resolvedOn": "2026-11-05",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait (price stretched)"
   },
   {
    "id": "motherson-sumi-wirin-q2fy27-2",
@@ -1535,7 +1536,11 @@
    "text": "Wage-cost recovery agreed with customers",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Still 'under negotiation' at the Q2 call (30 Oct 2026); price rises expected over three to six months",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "motherson-sumi-wirin-q2fy27-3",
@@ -3144,7 +3149,11 @@
    "ifMet": "Part of the proof needed (with a lower price) to reach Fits",
    "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "About ₹75cr in Q2 FY27 (₹50cr in Q1), just short of ₹80cr (Q2 call)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "timken-india-q2fy27-2",
@@ -3159,7 +3168,8 @@
    "status": "missed",
    "actual": "18.7%",
    "resolvedOn": "2026-11-04",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait"
   },
   {
    "id": "timken-india-q3fy27-1",
@@ -3177,7 +3187,11 @@
    "text": "Bharuch spherical lines at about 70% use by August–September",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Spherical (SRB) lines reached 70% for the quarter, as promised; cylindrical lines below 60%",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "dynamic-cables-q2fy27-1",
@@ -13570,7 +13584,11 @@
    "due": "Q2 FY27",
    "ifMet": "The blending decision it is waiting for",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "No dated E25–E30 mandate by the Q2 call (3 Nov 2026); only E100 recognised as a fuel for certified flex-fuel vehicles",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "praj-industries-q4fy27-1",
@@ -13594,7 +13612,8 @@
    "status": "partly",
    "actual": "6.1%",
    "resolvedOn": "2026-11-04",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait"
   },
   {
    "id": "hpl-electric-q3fy27-1",
@@ -15961,7 +15980,11 @@
    "text": "July–September volumes hold up after the customer pull-forward (results 27 October)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Volume up about 7% on the year in July–September and 4% for nine months; sales +23% (call of 27 Oct 2026)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "huhtamaki-india-q2fy27-2",
@@ -15976,7 +15999,8 @@
    "status": "partly",
    "actual": "7.8%",
    "resolvedOn": "2026-11-03",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait"
   },
   {
    "id": "huhtamaki-india-q3fy27-1",
@@ -17800,7 +17824,8 @@
    "status": "missed",
    "actual": "17.7%",
    "resolvedOn": "2026-11-04",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait"
   },
   {
    "id": "jagsonpal-pharma-q2fy27-2",
@@ -17810,7 +17835,11 @@
    "due": "Q2 FY27",
    "ifMet": "Reason for the wait resolved",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Organic H1 FY27 growth 9.3% against about 15–17% secondary sales (Q2 call)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "alembic-pharma-q2fy27-1",
@@ -24907,8 +24936,12 @@
    "text": "Spherical roller lines reach about 70% use",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "timken-india-bharuch"
+   "status": "met",
+   "project": "timken-india-bharuch",
+   "actual": "Spherical lines at 70% in Q2 FY27 (Q2 call)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "timken-india-bharuch-m2",
@@ -38307,6 +38340,48 @@
    "company": "GK Energy",
    "sector": "Construction",
    "text": "Receivables falling well below ₹1,012cr (September) by March 2027 as H2 collections arrive",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "huhtamaki-india-q3fy27-2",
+   "company": "Huhtamaki India",
+   "sector": "Packaging",
+   "text": "Operating margin back above 9% in October–December as price rises catch up",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 9,
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "jagsonpal-pharma-q3fy27-1",
+   "company": "Jagsonpal Pharma",
+   "sector": "Pharma",
+   "text": "Quarterly revenue above ₹100cr in Q3, as promised on the Q2 call, with the wellness brands in",
+   "metric": "revenue",
+   "op": ">=",
+   "target": 100,
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "motherson-sumi-wirin-q4fy27-1",
+   "company": "Motherson Sumi Wirin",
+   "sector": "Auto Related",
+   "text": "Minimum-wage cost recovery agreed with customers within three to six months of the Q2 call",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "praj-industries-q4fy27-2",
+   "company": "Praj Industries",
+   "sector": "Industrials",
+   "text": "A dated E25–E30 blending mandate by March 2027",
    "due": "Q4 FY27",
    "createdOn": "2026-11-06",
    "status": "pending"
