@@ -428,7 +428,7 @@ export const finance: SectorOverview = {
                         ['HDFC Bank', 'No loan or margin number; in Q2, margin ‘at the bottom’ and rising from Q3; liquidity cover kept at 110–120%', 'Core capital 17.4%', '**Mixed**: business banking +28% in Q2; margin 3.26% (Q1) → 3.16% (Q2); cheap deposits flat at 32%'],
                         ['State Bank of India', 'Loans 14–15% (raised from 13–15%); domestic margin about 3%; credit cost within 0.5%', 'Core capital 12.9% after ₹25,000cr raise', '**Delivered**: margin 3.00%, credit cost 0.27%; ECL number slipped to Q2'],
                         ['Northern ARC Capital', 'Loans 22–23% (from 22–25%); margin 9.5% next quarter, about 10% by March', '22.7%; no equity for two years', '**Slipping**: margin 9.8% → 9.3%, profit −14% on the quarter; credit cost beat'],
-                        ['OnEMI Technology', 'Loans above 40%; credit cost down about 15%; bad loans below 2.25%', '40.2%, yet ₹832cr share sale', '**Mixed**: growth and returns beat; bad loans at the ceiling; cheaper funding delayed'],
+                        ['OnEMI Technology', 'AUM growth raised to 60% plus (Q2 call, from 40% plus); impairment cost down more than 15%; return on equity above 20%; bad loans below 2.25%', '₹832cr preferential issue completed (Q2)', '**Beat** (Q2): AUM +68%, profit doubled, credit cost 6.2%, bad loans 2.18%, borrowing cost down about 0.7 points'],
                         ['Manba Finance', 'Loans 35–40%; return on assets about 3.5%; margin 13–14%', '24.4%; ₹100cr issue at ₹135', '**Missed**: loans +1% on the quarter; borrowing cost up to 10.86%'],
                     ],
                 },
@@ -526,8 +526,8 @@ export const finance: SectorOverview = {
         {
             company: 'OnEMI Technology', rank: 5, stance: 'SCALEUP', segment: NBFC,
             what: "OnEMI: runs Kissht, an app that makes digital personal loans in minutes, plus loans against property; more than half its loans sit on partner lenders' books, with OnEMI covering first losses.",
-            view: "**High returns, untested loans, more capital than promised.** Loans up 61%, return on assets 5.05% and credit cost down to 6.80%, but guarantee payments add about a point of losses outside that figure, bad loans sit at its 2.25% ceiling and cover has fallen to 84%. Four months after listing it approved an ₹832cr share sale, having said in May it was comfortably capitalised. The price needs about {need:OnEMI Technology|13}% a year against my ~19%; I want a full credit cycle before owning.",
-            watch: 'Bad loans and collections through the second half; borrowing cost down a point by March 2027; RBI rules on first-loss guarantees.',
+            view: "**High returns, untested loans, more capital than promised.** Loans up 61%, return on assets 5.05% and credit cost down to 6.80%, but guarantee payments add about a point of losses outside that figure, bad loans sit at its 2.25% ceiling and cover has fallen to 84%. Four months after listing it approved an ₹832cr share sale, having said in May it was comfortably capitalised. Q2 (call of 29 Oct 2026) was better on every count: AUM ₹9,317cr (+68%), profit ₹125cr (doubled), return on assets 5.78%, credit cost 6.2%, bad loans 2.18% and borrowing cost down to 13.76%; the FY27 growth guide was raised to 60% plus, and the ₹832cr preferential issue was completed. The price needs about {need:OnEMI Technology|13}% a year against my ~19%; I still want a full credit cycle before owning, and growth at 60% makes that test harder, not easier.",
+            watch: 'Bad loans and collections as AUM grows 60% plus; borrowing cost down a point by March 2027 (13.76% from 14.45% so far); RBI rules on first-loss guarantees, which it will use more to grow partner books.',
         },
         {
             company: 'SG Finserve', rank: 6, stance: 'SCALEUP', segment: NBFC,
