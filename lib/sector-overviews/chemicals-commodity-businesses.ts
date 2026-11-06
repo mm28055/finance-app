@@ -217,7 +217,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Chinese, Korean and Taiwanese phenol makers', note: 'Set the import price; Chinese capacity additions caused the FY24–FY26 slump.' }, { name: 'Aarti Industries and other Indian nitration companies', note: 'Compete in some intermediates; Chinese makers set many prices.' }, { name: 'Global polycarbonate makers', note: 'The new plant will sell against established global producers.' }],
         position: "**India's only large phenol and acetone producer, with over half the market**, and the largest optical-brightener maker outside China.",
         money: "**Net debt of ₹1,156cr** on Screener; the company put it at ₹1,064cr in March, with borrowings up from ₹73cr in March 2023 to ₹1,638cr. Peak debt is guided at ₹8,000–8,500cr, and free cash flow will stay negative through about FY29 while polycarbonate is built; management says debt will not exceed equity. It pays 19% of profit as dividends. The audit is clean, with no key audit matters and contingent liabilities of only ₹0.5cr. Promoters hold **49.3%**, steady, with no pledge.",
-        watch: ["Phenol margins once imports resume.", "The polycarbonate cost and H2 FY29 timeline holding.", "New intermediates selling from January 2027."],
+        watch: ["Phenol margins once imports resume (phenolics earned about 22% in Q2 FY27).", "The polycarbonate cost and dates holding: resin plant in FY29, the chain from propylene now FY30 (Q2 FY27 deck).", "New intermediates selling from January 2027."],
         charts: chemicalsCharts['Deepak Nitrite'],
     },
     {
