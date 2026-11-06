@@ -63,7 +63,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'LT Foods',
-        inShort: ["**A global basmati-rice company**: Daawat is India's second-largest basmati brand, Royal takes more than 60% of US basmati imports and Golden Star leads US jasmine rice; North America is half of revenue.", "**Good:** basmati volume rose 11% in Q1 FY27 at a steady 13% segment margin despite 20–25% dearer paddy, FY26 free cash was ₹554cr and CRISIL upgraded it to AA. **Bad:** organic foods earn 4%, ready-to-heat meals lose money, and a ₹134cr insurance claim is still in court.", "**Verdict: own.** The best-placed rice company, at a price that fits my estimate."],
+        inShort: ["**A global basmati-rice company**: Daawat is India's second-largest basmati brand, Royal takes more than 60% of US basmati imports and Golden Star leads US jasmine rice; North America is half of revenue.", "**Good:** basmati volume rose 11% in Q1 FY27 at a steady 13% segment margin despite 20–25% dearer paddy, FY26 free cash was ₹554cr and CRISIL upgraded it to AA. **Bad:** organic foods earn little (6% in H1 FY27), ready-to-heat meals lose money and the second US plant is late, the Q2 margin slipped to 11.0% on freight and advertising (company figure), and a ₹134cr insurance claim is still in court.", "**Verdict: own.** The best-placed rice company, at a price that fits my estimate."],
         tagline: "A branded basmati and specialty-rice company that buys, ages, mills and packs rice in India and sells it in 85+ countries, with organic foods and ready meals on the side.",
         revenue: '₹10,946cr (FY26, consolidated)',
         products: [
@@ -85,7 +85,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'KRBL (India Gate)', note: 'The leader in Indian branded basmati with 37–41%; weaker in the US.' }, { name: 'Fortune’s Kohinoor', note: 'A third Indian brand gaining share in basmati.' }, { name: 'Pakistani exporters', note: 'Sold basmati at about $990 a tonne against about $1,150 for Indian Pusa in January 2026.' }, { name: 'Tilda and US private labels', note: 'Compete for mainstream shoppers in the UK and US.' }],
         position: "**Second in Indian basmati (23.1% Nielsen share, first in Maharashtra, Gujarat and Madhya Pradesh), first in US basmati imports (Royal, 60%+) and first in US jasmine rice (Golden Star).**",
         money: "Net debt was **₹1,273cr** on Screener at March 2026, about half a year's operating profit on the company's own measure; about 100 days of supplier financing keeps it there but raises interest. FY27 capex is about ₹330cr, funded from cash flow. The parent has guaranteed ₹617cr of related parties' working-capital loans. CRISIL rates it AA (stable). Promoters hold **51.0%**, unchanged over three years, with no pledge.",
-        watch: ["Organic-foods margin reaching 7–8% by March 2027.", "The US ready-to-heat plant starting in Q2 FY27.", "The 2026 paddy price and the insurance appeal."],
+        watch: ["FY27 margin near the guided 12% on the company's measure (11.2% in H1).", "Organic-foods margin reaching 7–8% by March 2027 (6% in H1; ₹22cr of operating profit in Q2).", "The US ready-to-heat plant starting, after slipping past Q2 FY27 (not yet commissioned at the 28 Oct call).", "The 2026 paddy price, the working capital it ties up again from December, and the insurance appeal."],
         charts: foodProductsCharts['LT Foods'],
     },
     {

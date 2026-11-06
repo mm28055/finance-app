@@ -667,7 +667,7 @@ export const foodProducts: SectorOverview = {
                     badgeColumn: 3,
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
-                        ['LT Foods', 'Organic growth 10–12% a year; FY27 margin about 12%', 'About ₹330cr', '**Beat**: +19% normalised; margin 11.5% (company)'],
+                        ['LT Foods', 'Organic growth 10–12% a year; H2 like H1 (Q2 call); FY27 margin about 12%, not revised', 'About ₹330cr', '**Mixed** (Q2): +17% revenue, H1 +18% normalised; margin 11.0% (company) on freight and ads; US ready-to-heat plant late again'],
                         ['CCL Products', 'Volume and operating profit +15%; ₹135–140 a kilo', '₹25–50cr', '**On track**: Q1 volume +20%, operating profit +22%; Q2 volume +10–15%, operating profit +9.5%'],
                         ['Godrej Agrovet', 'Revenue ‘early double digit’; profit before tax ‘double-digit’ (was mid-teens)', '₹300–350cr a year', '**Walked back**: profit before tax −8%'],
                         ['ADF Foods', 'Revenue ‘upwards of ₹900cr’ (was ₹925–1,000cr); margin high teens', '₹20–25cr', '**Mixed**: +26%; margin under 14% without the refund'],
@@ -761,8 +761,8 @@ export const foodProducts: SectorOverview = {
         {
             company: 'LT Foods', rank: 1, stance: 'COMPOUNDER', segment: RICE,
             what: "A global basmati and specialty-rice company: Daawat in India (second-largest brand), Royal and Golden Star in the US, sold in 85+ countries; North America is half of revenue.",
-            view: "**The best-placed rice company, at a fair price.** Basmati volume rose 11% in Q1 at a steady 13% segment margin despite 20–25% dearer paddy, FY26 free cash was ₹554cr, and CRISIL upgraded it to AA. But organic foods earn 4%, ready-to-heat meals lose money, Indian share slipped to 23.1%, and the auditor flagged a ₹134cr insurance claim still in court. The price needs about {need:LT Foods|15}% a year against my ~13%.",
-            watch: 'Organic-foods margin reaching 7–8% by March 2027; the US ready-to-heat plant starting in Q2; the 2026 paddy price and the insurance appeal.',
+            view: "**The best-placed rice company, at a fair price.** Basmati volume rose 11% in Q1 at a steady 13% segment margin despite 20–25% dearer paddy, FY26 free cash was ₹554cr, and CRISIL upgraded it to AA. But organic foods earn 4%, ready-to-heat meals lose money, Indian share slipped to 23.1%, and the auditor flagged a ₹134cr insurance claim still in court. On the Q2 call (28 Oct 2026) revenue rose 17% and H1 18% on the company's normalised measure, H2 is expected to match H1, organic foods' operating profit doubled on the quarter to ₹22cr, and seasonal stock release left ₹247cr of net cash in September; but the company's margin slipped to 11.0% on freight and advertising (H1 11.2% against about 12% guided) and the US ready-to-heat plant has still not started. The price needs about {need:LT Foods|15}% a year against my ~13%.",
+            watch: 'FY27 margin near the guided 12% (H1 11.2%); organic-foods margin reaching 7–8% by March 2027 (6% in H1); the US ready-to-heat plant finally starting; the 2026 paddy price and the insurance appeal.',
         },
         {
             company: 'CCL Products', rank: 2, stance: 'COMPOUNDER', segment: EXPORT,
