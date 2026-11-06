@@ -167,7 +167,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Lumax Auto Tech',
-        inShort: ["**A multi-product parts maker for Indian car and two-wheeler makers**: plastic interiors (IAC), gear shifters, two-wheeler frames, sensors and telematics through Japanese and Israeli partners, and CNG fuel systems (Greenfuel).", "**Good:** revenue up 34% in FY26 and 33% in Q1 FY27, the margin at 15.1% (company), an order book of ₹1,601cr and a 21% return on capital. **Bad:** much of the growth was bought, IAC sells over 90% to Mahindra, FY26 profit had a one-off low tax rate, gross debt is about ₹1,000cr (company, March), and a quarter of the 20% growth goal needs acquisitions.", "**Verdict: follow.** Delivering on growth and margin, but the price already assumes more of the same."],
+        inShort: ["**A multi-product parts maker for Indian car and two-wheeler makers**: plastic interiors (IAC), gear shifters, two-wheeler frames, sensors and telematics through Japanese and Israeli partners, and CNG fuel systems (Greenfuel).", "**Good:** revenue up 34% in FY26 and 35% in Q2 FY27, FY27 growth guidance raised to 20–25%, the margin near 15% (company), an order book of ₹1,879cr and a 21% return on capital. **Bad:** much of the growth was bought, IAC sells over 90% to Mahindra, FY26 profit had a one-off low tax rate, gross debt is about ₹1,000cr (company, March), and a quarter of the 20% growth goal needs acquisitions.", "**Verdict: follow.** Delivering on growth and margin, but the price already assumes more of the same."],
         tagline: "A Lumax-group supplier of interiors, gear shifters, frames, electronics and CNG kits, built largely through acquisitions and joint ventures.",
         revenue: '₹4,870cr (FY26, consolidated)',
         products: [
@@ -191,7 +191,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Motherson', note: 'Much larger maker of plastic interiors and modules for all car makers.' }, { name: 'Minda Corporation and Uno Minda', note: 'Broad rivals in switches, sensors, telematics and two-wheeler parts.' }, { name: 'Other CNG kit makers', note: 'Management says only two or three large players make CNG delivery systems for car makers.' }],
         position: "**India's leading car gear-shifter maker** (Lumax Mannoh) and one of the two or three large CNG-system suppliers, with IAC a major interiors supplier to Mahindra.",
         money: "**₹572cr of net debt** on Screener at March (borrowings ₹1,231cr, including leases). The company put total debt at about ₹1,000cr at March, and at June counted ₹415cr of free cash against ₹508cr of long-term debt (net long-term debt only ₹93cr), over 90% of it taken to buy IAC and Greenfuel, and expects it to ‘die down’ in three to four years. CRISIL rates it AA. FY27 capex ₹300cr from its own cash; ₹38.9cr of deposits are pledged for a subsidiary's loan. Promoters hold **55.98%**, unchanged for three years.",
-        watch: ["Mechatronics reaching about ₹400cr of revenue in FY27.", "A second large customer for IAC.", "The price of the next acquisition."],
+        watch: ["Mechatronics reaching about ₹400cr of revenue in FY27 (₹177cr in H1).", "The new ₹150cr Manesar electronics plant starting in Q3 FY28, as now planned, and the Chakan IV interiors plant's launch in December–January.", "A second large customer for IAC.", "The price of the next acquisition."],
         charts: autoRelatedCharts['Lumax Auto Tech'],
     },
     {
