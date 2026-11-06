@@ -54,7 +54,7 @@ const intro: OverviewSection[] = [
 const profiles: BusinessProfile[] = [
     {
         company: 'KPIT Technologies',
-        inShort: ["**India's largest pure-play automotive software engineering company**, writing, testing and integrating the software inside cars, trucks and off-highway machines for global carmakers, mostly in Europe.", "**Good:** near-100% cash conversion and about ₹900cr of net cash even in a bad quarter. **Watch:** European clients cut work hard in FY27, the margin fell from 20.6% to 17.2% in one quarter and the FY27 margin guide was dropped; Q2 is guided flat, the top 25 clients are 87% of revenue, and goodwill is 39% of assets.", "**Verdict: own.** A specialist in a bad year, priced for the recovery it has the cash and contracts to deliver."],
+        inShort: ["**India's largest pure-play automotive software engineering company**, writing, testing and integrating the software inside cars, trucks and off-highway machines for global carmakers, mostly in Europe.", "**Good:** near-100% cash conversion and about ₹900cr of net cash even in a bad quarter. **Watch:** European clients cut work hard in FY27, the margin fell from 20.6% to 17.2% in one quarter and the FY27 margin guide was dropped; Q2 was flat as guided (+0.5% in constant currency, margin 17.8%), the top 25 clients are 87% of revenue, and goodwill is 39% of assets.", "**Verdict: follow.** A specialist in a bad year; the price now asks for a little more than a flat FY27 supports (moved from own, 6 Nov 2026)."],
         tagline: "A pure-play automotive software engineer for car, truck and off-highway makers, selling some of its own in-car products alongside engineer-hour and fixed-price work.",
         revenue: '₹6,455cr (FY26, consolidated)',
         products: [
@@ -77,7 +77,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'HCLTech, Tech Mahindra, LTTS, Capgemini, Akkodis', note: "General IT and engineering firms that also bid for automotive software work, though none is a pure-play like KPIT." }, { name: "Carmakers' own in-house software teams, such as Volkswagen's", note: "The biggest long-term competitor, as OEMs try to build software capability themselves." }],
         position: "**India's largest pure-play automotive software engineering company**, with a leading position in software-defined-vehicle work for European carmakers.",
         money: "Net cash was about ₹900cr on the company's own count and about ₹675cr on Screener's (which treats lease payments as debt). Capex is small; the real spending has been about $400m of acquisitions (Technica, Caresoft, Cymotive and others) that pushed goodwill to ₹2,798cr. Promoters hold **38.59%**, down from 39.47% three years ago.",
-        watch: ["Q2 revenue holding no worse than Q1.", "The two troubled European clients stabilising in Q3, and no further programme cancellations.", "Products and solutions growing above 30% a year."],
+        watch: ["Revenue growth back in Q4, as management repeated on the Q2 call.", "The two shrinking clients (one in Japan, one in Europe) bottoming out within ‘a couple of quarters’, and no further programme cancellations.", "The margin rising each quarter from 17.8% towards 20%, which management expects only early next year.", "Products and solutions growing above 25–30% a year (+25% in Q2)."],
         charts: softwareCharts['KPIT Technologies'],
     },
     {
