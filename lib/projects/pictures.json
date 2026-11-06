@@ -31118,8 +31118,8 @@
   },
   {
    "company": "Sambhv Steel Tubes",
-   "fingerprint": "c22d3af85b2fc184",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "7c6f2427285e3edf",
+   "checkedOn": "2026-11-06",
    "lines": {
     "heading": "How full each line is (Q1 FY27)",
     "items": [
@@ -31230,6 +31230,14 @@
       "right": "about ₹150cr",
       "status": "planned",
       "projectId": "sambhv-steel-tubes-sarora-power"
+     },
+     {
+      "name": "Seamless stainless pipe plant",
+      "sub": "14,400 t a year in a subsidiary; announced on the Q2 FY27 call",
+      "total": 148,
+      "right": "about ₹148cr",
+      "status": "planned",
+      "projectId": "sambhv-steel-tubes-seamless"
      }
     ]
    },
@@ -31264,6 +31272,14 @@
      "when": "FY28",
      "tone": "later",
      "text": "Kesda about 35% used"
+    },
+    {
+     "when": "March 2028",
+     "tone": "later",
+     "milestones": [
+      "sambhv-steel-tubes-seamless-m1"
+     ],
+     "sub": "14,400 t a year of seamless stainless pipes, ₹148cr (Q2 FY27 call)"
     },
     {
      "when": "By 2030",
@@ -32959,8 +32975,8 @@
   },
   {
    "company": "Shilchar Tech.",
-   "fingerprint": "1a0016524122e792",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "0516c86e0da0b3b6",
+   "checkedOn": "2026-11-06",
    "lines": {
     "heading": "How full the plant is (Q1 FY27)",
     "items": [
@@ -33030,7 +33046,7 @@
      "text": "Next step on 4.5 acres more land bought next door; no product or size given yet"
     }
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note",
+   "source": "Q2 FY27 call (Oct 2026) and earlier calls",
    "recheck": {
     "changes": [
      "Official Q1 FY27 and Q4 FY26 transcripts confirm every figure (60–65%, 7,500 → 14,000 MVA, ₹120cr own cash, April 2027, ₹800cr, ₹1,500cr, 79%, 4.5 acres, 160 MVA/220 kV)",

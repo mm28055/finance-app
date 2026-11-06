@@ -2697,7 +2697,13 @@
    "target": 20,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call: FY27 revenue growth raised to 20–25% (about ₹6,000cr), H2 +15–20%"
+    }
+   ]
   },
   {
    "id": "lumax-auto-tech-q4fy27-2",
@@ -2724,7 +2730,11 @@
    "text": "A second large customer for IAC (beyond Mahindra)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "No second large IAC customer announced on the Q2 FY27 call; the new Chakan IV plant is for Mahindra models",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "suprajit-engineering-q2fy27-1",
@@ -6327,7 +6337,8 @@
    "status": "missed",
    "actual": "₹788cr",
    "resolvedOn": "2026-11-04",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait"
   },
   {
    "id": "gk-energy-q2fy27-2",
@@ -6342,7 +6353,8 @@
    "status": "met",
    "actual": "17.6%",
    "resolvedOn": "2026-11-04",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait"
   },
   {
    "id": "gk-energy-q4fy27-1",
@@ -6354,7 +6366,13 @@
    "target": 100,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call: management now speaks of 35–40% growth even if PM-KUSUM 2.0 is delayed; H1 revenue ₹908cr (+38.9%)"
+    }
+   ]
   },
   {
    "id": "pennar-industries-q2fy27-1",
@@ -9456,7 +9474,11 @@
    "due": "Q2 FY27",
    "ifMet": "Would improve my view",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Exports recovering (North America picked up; margin 20.8% from 16.4%), but management puts exports at about 40% of sales, not above (Q2 call)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "shilchar-tech-q4fy27-1",
@@ -9465,7 +9487,13 @@
    "text": "FY27 revenue of ₹800cr kept, with no formal cut to the target",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call: management calls ₹750cr 'our original target' for FY27 and says it is on track, needing ₹225–230cr a quarter in H2"
+    }
+   ]
   },
   {
    "id": "yash-highvoltage-h1fy27-1",
@@ -10421,7 +10449,11 @@
    "text": "Gross bad loans below the 2.25% ceiling guided",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Gross NPA 2.18% at September (Q2 call), down 7 basis points on the quarter",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "onemi-technology-q4fy27-1",
@@ -10440,7 +10472,13 @@
    "text": "FY27 loan growth above 40%, as guided",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call: FY27 AUM growth guide raised to 60% plus (from 40% plus)"
+    }
+   ]
   },
   {
    "id": "onemi-technology-q4fy27-3",
@@ -10449,7 +10487,13 @@
    "text": "FY27 credit cost down about 15%, as guided",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call: impairment cost now to fall 'emphatically more than 15%' (was 10–15%); credit cost 6.2% of AUM in Q2"
+    }
+   ]
   },
   {
    "id": "manba-finance-q3fy27-1",
@@ -11976,7 +12020,8 @@
    "status": "missed",
    "actual": "9.8%",
    "resolvedOn": "2026-11-05",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow"
   },
   {
    "id": "vimta-labs-q3fy27-1",
@@ -11998,7 +12043,11 @@
    "text": "First overseas biologics orders",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Work started on the first biologics order; talks with several clients, a couple hoped for in Q3; no new overseas order named (Q2 call)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "thyrocare-technologies-q2fy27-1",
@@ -14582,7 +14631,11 @@
    "text": "Operating profit a tonne within the ₹7,500–8,500 guide as pipe prices ease",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "About ₹8,200 a tonne on value-added products in Q2 (₹8,800 in Q1), inside the ₹7,500–8,500 guide (Q2 call)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "sambhv-steel-tubes-q4fy27-2",
@@ -14783,7 +14836,8 @@
    "status": "met",
    "actual": "56.6%",
    "resolvedOn": "2026-11-04",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow"
   },
   {
    "id": "shadowfax-tech-q4fy27-1",
@@ -24579,8 +24633,12 @@
    "text": "Manesar mechatronics plant commissioned",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "lumax-auto-tech-manesar"
+   "status": "missed",
+   "project": "lumax-auto-tech-manesar",
+   "actual": "Delayed: the board approved the ₹150cr plant on 24 Oct 2026 with commissioning in two phases from Q3 FY28 (Q2 call)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "suprajit-engineering-electronics-m1",
@@ -38190,6 +38248,65 @@
    "metric": "fyRevenueGrowth",
    "op": ">=",
    "target": 25,
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "lumax-auto-tech-manesar-m2",
+   "company": "Lumax Auto Tech",
+   "sector": "Auto Related",
+   "text": "Manesar mechatronics plant's first phase commissioned (new date from the Q2 FY27 call)",
+   "due": "Q3 FY28",
+   "createdOn": "2026-11-06",
+   "status": "pending",
+   "project": "lumax-auto-tech-manesar"
+  },
+  {
+   "id": "onemi-technology-q4fy27-4",
+   "company": "OnEMI Technology",
+   "sector": "Finance",
+   "text": "FY27 AUM growth of 60% plus, as raised on the Q2 call",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "sambhv-steel-tubes-seamless-m1",
+   "company": "Sambhv Steel Tubes",
+   "sector": "Iron and Steel",
+   "text": "Seamless stainless pipe plant (14,400 t a year) live by March 2028, as stated on the Q2 FY27 call",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-06",
+   "status": "pending",
+   "project": "sambhv-steel-tubes-seamless"
+  },
+  {
+   "id": "shilchar-tech-q3fy27-1",
+   "company": "Shilchar Tech.",
+   "sector": "Electrical Transformers",
+   "text": "Q3 revenue above ₹225cr, as the ₹750cr year needs (Q2: ₹193cr)",
+   "metric": "revenue",
+   "op": ">=",
+   "target": 225,
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "vimta-labs-q3fy27-2",
+   "company": "Vimta Labs",
+   "sector": "Healthcare",
+   "text": "At least two more biologics clients signed in Q3, as hoped on the Q2 call",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "gk-energy-q4fy27-2",
+   "company": "GK Energy",
+   "sector": "Construction",
+   "text": "Receivables falling well below ₹1,012cr (September) by March 2027 as H2 collections arrive",
    "due": "Q4 FY27",
    "createdOn": "2026-11-06",
    "status": "pending"

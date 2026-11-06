@@ -4499,7 +4499,8 @@
     "sector": "Electrical Transformers",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Q2 call read. Revenue ₹193cr (+12%), margin back to 20.8% on North American exports, order book ₹550cr+, expansion on plan for April 2027; management cites ₹750cr (not ₹800cr) for FY27. Exports checkpoint partly met; Q3 ₹225cr checkpoint added. Stays follow until Q3 shows the H2 quarters (price now fits)."
   },
   {
     "company": "Timken India",
@@ -4570,7 +4571,8 @@
     "sector": "Logistics",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Q2 call read. Revenue +57% (H1 +60%), orders +70%, first 5% after-rent margin, profit ₹67cr; 38–40% guide kept until Q3; no customer-concentration update. Stays follow (two customers still about two-thirds of revenue)."
   },
   {
     "company": "Greenply Industries",
@@ -4620,14 +4622,16 @@
     "sector": "Iron and Steel",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Q2 call read. Revenue +44% to ₹840cr, about ₹8,200 a tonne (inside guide; checkpoint met), operating cash ₹213cr; Kesda 'on track' for March 2027; new ₹148cr seamless stainless pipe plant by March 2028 added as a project with a milestone (picture redrawn). Stays follow."
   },
   {
     "company": "Lumax Auto Tech",
     "sector": "Auto Related",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Q2 call read. Revenue +35% at 14.7%, FY27 guide raised to 20–25%, order book ₹1,879cr; Nashik CNG plant started (project status moved); new ₹150cr Manesar plant now from Q3 FY28 (milestone missed, revision and new milestone added); no second IAC customer (missed). Stays follow (price Full)."
   },
   {
     "company": "Privi Speciality Che",
@@ -4655,7 +4659,8 @@
     "sector": "Construction",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Q2 call read. Revenue flat on the year (H1 +39%), margin 18.5%, receivables ₹1,012cr (about 128 days), order book ₹788cr; PM-KUSUM 2.0 again expected in Q3; 35–40% growth talk replaces the doubling plan. Stays wait; receivables checkpoint added."
   },
   {
     "company": "PNC Infratech",
@@ -4707,14 +4712,16 @@
     "sector": "Construction",
     "subject": "Checkpoint missed: gk-energy-q2fy27-1",
     "why": "Order book rebuilding above ₹1,000cr (₹541cr now) — actual ₹788cr (missed).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Order book ₹788cr against ₹1,000cr; stays wait until PM-KUSUM 2.0 arrives. Outcome written."
   },
   {
     "company": "GK Energy",
     "sector": "Construction",
     "subject": "Checkpoint met: gk-energy-q2fy27-2",
     "why": "Operating margin staying above CARE's 12% trigger — actual 17.6% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Margin 17.6% (company 18.5%) above CARE's 12% trigger; stays wait (scheme timing and receivables, not margin, hold it back). Outcome written."
   },
   {
     "company": "Praj Industries",
@@ -4728,7 +4735,8 @@
     "sector": "Logistics",
     "subject": "Checkpoint met: shadowfax-tech-q2fy27-1",
     "why": "Q2 FY27 revenue growth in line with the raised 38–40% guide — actual 56.6% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-06: Revenue +56.6% against the 38–40% guide; stays follow (concentration, not growth, holds it back). Outcome written."
   },
   {
     "company": "Zota Health Care",
@@ -4800,7 +4808,8 @@
     "sector": "Healthcare",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-05"
+    "addedOn": "2026-11-05",
+    "handled": "2026-11-06: Q2 call read. Revenue about +10%, margin 35.5%, profit +3.5%; a 'lull' in pharma research pipelines; H2 expected better; biologics still one order (checkpoint partly). Stays follow (price Full)."
   },
   {
     "company": "Pine Labs",
@@ -4814,7 +4823,8 @@
     "sector": "Finance",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-05"
+    "addedOn": "2026-11-05",
+    "handled": "2026-11-06: Q2 call read. AUM +68%, profit doubled, ROA 5.78%, credit cost 6.2%, GNPA 2.18% (checkpoint met), borrowing cost 13.76%; AUM guide raised to 60%+; ₹832cr issue done. Stays follow: still unproven through a credit cycle."
   },
   {
     "company": "Manaksia Coated Metals",
@@ -4850,7 +4860,8 @@
     "sector": "Healthcare",
     "subject": "Checkpoint missed: vimta-labs-q2fy27-1",
     "why": "Revenue growth of 15% or more in Q2 (first of two quarters; Q1: +11.8%) — actual 9.8% (missed). Stays follow Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-05"
+    "addedOn": "2026-11-05",
+    "handled": "2026-11-06: Growth 9.8% against 15%; stays follow, as the note said; growth must return before buying. Outcome written."
   },
   {
     "company": "Manaksia Coated Metals",

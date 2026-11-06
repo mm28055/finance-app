@@ -1784,8 +1784,14 @@
    "expectedStart": "Q3 FY27",
    "adds": "mechatronics aimed at about ₹400cr of revenue in FY27",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026)",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (27 Oct 2026) and board approval of 24 Oct 2026; Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-06",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call (27 Oct 2026): the board approved the Manesar mechatronics plant on 24 Oct at about ₹150cr (debt and internal cash), to be commissioned in two phases starting Q3 FY28, with peak sales of about ₹500cr a year; the Q1 call had pointed to Q3 FY27"
+    }
+   ]
   },
   {
    "id": "lumax-auto-tech-iac-chakan",
@@ -1795,8 +1801,8 @@
    "what": "New IAC plant for upcoming Mahindra models, with lines rebalanced against the existing plant",
    "cost": "part of about ₹300cr FY27 capex",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026)",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (27 Oct 2026): Chakan IV in its start-of-production phase, product launch around December–January",
+   "updatedOn": "2026-11-06"
   },
   {
    "id": "lumax-auto-tech-nashik",
@@ -1805,9 +1811,9 @@
    "name": "Greenfuel CNG plant, Nashik",
    "what": "New Greenfuel facility for Mahindra, a new customer, for its first CNG car",
    "cost": "part of about ₹300cr FY27 capex",
-   "status": "building",
-   "source": "Q1 FY27 call (Aug 2026)",
-   "updatedOn": "2026-09-29"
+   "status": "started",
+   "source": "Q2 FY27 call (27 Oct 2026): production started in Q3 FY27, supplying Mahindra",
+   "updatedOn": "2026-11-06"
   },
   {
    "id": "suprajit-engineering-electronics",
@@ -5706,8 +5712,8 @@
    "expectedStart": "Q1 FY28",
    "adds": "about ₹1,500cr of total company sales at full use",
    "status": "building",
-   "source": "Q1 FY27 call: still on track for April 2027",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (29 Oct 2026): on plan for April 2027; civil, PEB and utilities work under way, all major equipment ordered",
+   "updatedOn": "2026-11-06",
    "capacityAdd": "+6,500 MVA a year, 7,500 to 14,000 MVA (+87%), and a step up to 220 kV and 160 MVA units"
   },
   {
@@ -9112,6 +9118,20 @@
    "source": "Q1 FY27 call (Aug 2026): to be used from this year",
    "updatedOn": "2026-09-29",
    "capacityAdd": "Stainless cold-rolled coil from 58,000 to 1,16,000 t a year (doubled)"
+  },
+  {
+   "id": "sambhv-steel-tubes-seamless",
+   "company": "Sambhv Steel Tubes",
+   "sector": "Iron and Steel",
+   "name": "Seamless stainless pipe plant",
+   "what": "First plant for seamless austenitic stainless-steel pipes and tubes, in a subsidiary, using round bars bought in India; capacity may be doubled or tripled later with backward integration",
+   "cost": "₹148cr",
+   "expectedStart": "Q4 FY28",
+   "adds": "14,400 t a year of seamless stainless pipes",
+   "status": "planned",
+   "source": "Q2 FY27 call (30 Oct 2026): 'live by March 2028', about six quarters away",
+   "updatedOn": "2026-11-06",
+   "capacityAdd": "14,400 t a year of seamless stainless pipes (a new product)"
   },
   {
    "id": "man-industries-i-jammu",
