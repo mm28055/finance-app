@@ -445,7 +445,7 @@ export const healthcare: SectorOverview = {
                     rows: [
                         ['Syngene International', 'Revenue: single-digit decline (was flat); margin mid-20s', 'About ₹70cr in Q1', '**Walked back**: revenue −16%; guide cut in 90 days'],
                         ['Molbio Diagnostics', 'Revenue about +25%; margin 24–25%', 'IPO-funded automation and R&D centre', '**New**: first call; Q1 margin 25%'],
-                        ['Indegene', 'Margin 19–20% by Q4 FY27; no revenue guide', 'About ₹45cr a year', '**Slipping**: Q1 margin 16.9%; deal revenue from Q3'],
+                        ['Indegene', 'Quarterly margin 19% plus by Q4 FY27 (kept on the Q2 call); organic growth above FY26; H2 stronger than H1', 'About ₹45cr a year', '**Holding** (Q2): margin 16.7% after a 1.5-point wage hit; outcome-deal revenue mostly in Q4'],
                         ['Nephrocare Health', 'Revenue +15–20% a year over three to five years', 'No formal guide; ₹44cr in Q1', '**Mixed**: +24%; Saudi slipped'],
                         ['Vimta Labs', 'No numbers in July; 20–25% ‘stretch’ ambition in May', 'About ₹80cr', '**Missed**: +11.8%; run-rate target missed twice'],
                         ['3B Blackbio Diagnostics', 'Revenue +15–20% excluding Coris; Coris slightly positive', '₹4–5cr would double capacity', '**Behind**: +11.8% excluding Coris; Coris loss'],
@@ -513,8 +513,8 @@ export const healthcare: SectorOverview = {
         {
             company: 'Indegene', rank: 1, stance: 'SCALEUP', segment: SERV,
             what: "Makes marketing content, runs doctor outreach and writes medical, regulatory and drug-safety documents for life-sciences companies, including all of the top 20; 75% of revenue comes from North America.",
-            view: "**A widening franchise whose profit has stalled.** Clients rose to 105, revenue per employee to $77,100 and FY26 free cash to ₹606cr, with ₹1,460cr of cash and investments. But profit has been flat at about ₹400cr for two years, return on capital fell to 19% after acquisitions, organic growth is no longer disclosed, and the 19–20% margin target now rests on a large outcome-priced deal starting revenue in Q3. The price needs about {need:Indegene|20}% a year against my ~15%.",
-            watch: 'Q3 revenue from the $10 million-plus outcome deal; margin at 19–20% by Q4 FY27; the US class-action final hearing on 12 January 2027 and the ₹43.7cr tax appeal.',
+            view: "**A widening franchise whose profit has stalled.** Clients rose to 105, revenue per employee to $77,100 and FY26 free cash to ₹606cr, with ₹1,460cr of cash and investments. But profit has been flat at about ₹400cr for two years, return on capital fell to 19% after acquisitions, organic growth is no longer disclosed, and the 19–20% margin target now rests on a large outcome-priced deal. On the Q2 call (30 Oct 2026) dollar revenue rose 27.5% (much of it the BioPharm purchase) and 4.4% on the quarter, clients reached 107, and the margin held at 16.7% through a 1.5-point wage hit; management kept ‘19% plus’ by Q4, but most of the outcome deal's revenue now lands only in Q4, after the client confirms results in February–March, and profit rose just 10% as treasury income fell. The price needs about {need:Indegene|20}% a year against my ~15%.",
+            watch: 'Margin at 19% plus in Q4 FY27, with the outcome deal booked after the February–March data lock; organic growth above FY26, as promised; the US class-action final hearing on 12 January 2027 and the ₹43.7cr tax appeal.',
         },
         {
             company: 'Vimta Labs', rank: 2, stance: 'SCALEUP', segment: SERV,

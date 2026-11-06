@@ -77,7 +77,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Advertising and healthcare-communication agencies', note: 'Compete for marketing content and campaigns; typically priced on hours.' }, { name: 'Contract research organisations (CROs)', note: 'Compete in medical writing, regulatory and drug-safety work.' }, { name: 'IT and business-process firms', note: 'Offer life-sciences content and pharmacovigilance at scale.' }],
         position: "**A leading specialist in digital commercialisation for life-sciences companies**, rated a ‘Leader’ by ISG and a ‘Disruptor’ by Avasant in 2026, working for all of the world's top 20 drug companies.",
         money: "Screener shows **₹1,338cr of net cash**; the company had ₹1,460cr of cash and investments in June 2026, down from ₹1,664cr in March 2025 after about ₹725cr of acquisitions. Capex is only about ₹45cr a year. Open items: a ₹43.7cr transfer-pricing tax demand it has not provided for, and a US class action (settlement of up to about $4.72 million against a ₹20.3cr provision; final hearing 12 January 2027). It paid ₹2.25 a share for FY26. There is **no promoter**: it is professionally managed and widely held.",
-        watch: ["Q3 revenue from the $10 million-plus outcome deal.", "Margin at 19–20% by Q4 FY27.", "The class-action final hearing and the tax appeal."],
+        watch: ["Margin at 19% plus by Q4 FY27, as management repeated on the Q2 call (16.7% in Q2).", "The $10 million-plus outcome deal: a little was booked in Q2, most should land in Q4 once the client confirms the year's results in February–March.", "The class-action final hearing and the tax appeal."],
         charts: healthcareCharts['Indegene'],
     },
     {
