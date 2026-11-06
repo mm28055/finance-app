@@ -10210,8 +10210,8 @@
   },
   {
    "company": "Deepak Nitrite",
-   "fingerprint": "007436c6367701a6",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "7c9d8a3be2973fbf",
+   "checkedOn": "2026-11-06",
    "money": {
     "items": [
      {
@@ -10241,7 +10241,7 @@
     {
      "when": "Q2 FY27",
      "tone": "done",
-     "text": "MIBK, MIBC and acetophenone commissioned in August; the rest of the intermediates plant due within Q2. Separately, a ₹300cr chlorination and specialty chemical plant at Dahej (subsidiary Deepak Chem Tech) commissioned 29 Sep 2026",
+     "text": "MIBK, MIBC and acetophenone commissioned in August; the rest of the intermediates plant due within Q2. Separately, a ₹300cr chlorination and specialty chemical plant at Dahej (subsidiary Deepak Chem Tech) commissioned 29 Sep 2026. Q2 FY27 call: MIBK, MIBC and derivatives being scaled up; nitric acid ramping",
      "sub": "Q4 FY26 call had said tail end of Q1 or early Q2"
     },
     {
@@ -10259,7 +10259,12 @@
      "milestones": [
       "deepak-nitrite-polycarbonate-m1"
      ],
-     "sub": "Management changed this in Aug 2026: start-up moved from June 2028 (Q4 FY26 call) to H2 FY29"
+     "sub": "Management changed this in Aug 2026: start-up moved from June 2028 (Q4 FY26 call) to H2 FY29. Q2 FY27 call: the resin plant stays in FY29 on bought feedstock"
+    },
+    {
+     "when": "FY30",
+     "tone": "later",
+     "text": "Fully integrated chain from propylene, timed with feedstock availability (investor deck, Q2 FY27)"
     }
    ],
    "notes": [
@@ -15054,8 +15059,8 @@
   },
   {
    "company": "Greenply Industries",
-   "fingerprint": "f5f9817e05a920b8",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "32422ce4bf6dccca",
+   "checkedOn": "2026-11-06",
    "lines": {
     "heading": "How full the plywood plants are (Q1 FY27)",
     "items": [
@@ -15121,6 +15126,14 @@
       "right": "cost not given; about ₹75–80cr of sales at peak",
       "status": "ramping",
       "projectId": "greenply-industries-wpc-doors"
+     },
+     {
+      "name": "Sandila plywood expansion",
+      "sub": "15 million sq m a year at the Lucknow plant; about ₹320–340cr of sales at full use; debt and equity",
+      "total": 125,
+      "right": "about ₹125cr",
+      "status": "planned",
+      "projectId": "greenply-industries-sandila-ply"
      }
     ]
    },
@@ -15137,16 +15150,19 @@
     },
     {
      "when": "Q3 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "greenply-industries-odisha-ply-m1"
      ],
-     "sub": "On track (Jul 2026)"
+     "sub": "Missed: Q2 FY27 call moved the Odisha plant to Q4 FY27 (Jul 2026 call had said December 2026)"
     },
     {
      "when": "Q4 FY27",
      "tone": "next",
-     "text": "Net debt peaks at ₹710–730cr on 31 March 2027; MDF Line 1 aims to run full before Line 2 arrives"
+     "text": "Net debt peaks at ₹710–730cr on 31 March 2027; MDF Line 1 aims to run full before Line 2 arrives",
+     "milestones": [
+      "greenply-industries-odisha-ply-m2"
+     ]
     },
     {
      "when": "Q2 FY28",
@@ -15154,7 +15170,15 @@
      "milestones": [
       "greenply-industries-mdf-line2-m1"
      ],
-     "sub": "On track (Jul 2026); civil work under way, key machines ordered"
+     "sub": "On track (Q2 FY27 call); civil work under way, key machines ordered"
+    },
+    {
+     "when": "Q4 FY28",
+     "tone": "later",
+     "milestones": [
+      "greenply-industries-sandila-ply-m1"
+     ],
+     "sub": "Announced on the Q2 FY27 call"
     }
    ],
    "notes": [
@@ -15162,7 +15186,7 @@
     "Plywood technology upgrades at the other two plants cost about ₹45–50cr; another plywood plant is likely after Odisha",
     "Furniture-fittings joint venture: partner Samet is putting in new capital, cutting Greenply's stake from 50% to about 19% (board decision 11 Sep 2026)"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (Apr 2026), both official NSE transcripts, board decision 11 Sep 2026 (NSE) and sector note"
+   "source": "Q2 FY27 call (Nov 2026), Q1 FY27 call (Jul 2026) and sector note"
   },
   {
    "company": "GRP",
@@ -28193,8 +28217,8 @@
   },
   {
    "company": "Privi Speciality Che",
-   "fingerprint": "90f0e0f083a78516",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "ea2d6ef470366be6",
+   "checkedOn": "2026-11-06",
    "lines": {
     "heading": "How full the plants are (Q1 FY27)",
     "items": [
@@ -28285,11 +28309,11 @@
    "timeline": [
     {
      "when": "Q2 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "privi-speciality-che-phase1-m1"
      ],
-     "sub": "Q4 FY26 call had said 30 June 2026; July call: September, 'commercialized shortly'. No commercialisation filing seen by 23 Oct 2026"
+     "sub": "Completed by the Q2 FY27 call (Q4 FY26 call had said 30 June 2026; July call: September); output part in Q3, most in Q4 as annual contracts start"
     },
     {
      "when": "Q3 FY27",
@@ -28304,7 +28328,8 @@
      "tone": "next",
      "milestones": [
       "privi-speciality-che-phase1-m2"
-     ]
+     ],
+     "sub": "Expanded capacity at about 85–90% use in Q4, management said on the Q2 FY27 call"
     },
     {
      "when": "Q1 FY28",
@@ -28334,7 +28359,7 @@
    "notes": [
     "Today also: PRIGIV joint-venture plant at Mahad making 40+ specialties for Givaudan"
    ],
-   "source": "Q1 FY27 call (31 Jul 2026), Q4 FY26 call (May 2026) and sector note",
+   "source": "Q2 FY27 call (Nov 2026), Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note",
    "recheck": {
     "changes": [
      "Restored the dropped Phase 3 start (around end-2026 or early 2027) on the Q3 FY27 stop and in the Phase 3 source correction: confirmed in the official Jul 2026 transcript",

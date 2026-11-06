@@ -3984,7 +3984,11 @@
    "text": "Polycarbonate project cost (₹11,500cr) and H2 FY29 timeline holding",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Cost not restated; resin plant kept in FY29, but the investor deck now shows the integrated propylene-to-polycarbonate chain in FY30 (Q2 call)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "deepak-nitrite-q4fy27-1",
@@ -4415,7 +4419,8 @@
    "status": "missed",
    "actual": "21.0%",
    "resolvedOn": "2026-11-04",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait"
   },
   {
    "id": "yasho-industries-q2fy27-2",
@@ -4424,7 +4429,11 @@
    "text": "Debt falling below 2.5 times trailing operating profit",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Debt ₹615cr at September, about 2.8 times trailing operating profit (₹223cr on Screener); management's 2.09 times annualises H1",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "yasho-industries-q1fy28-1",
@@ -4937,7 +4946,11 @@
    "text": "Net debt staying below 2 times EBITDA",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Net debt ₹814.5cr at September, 1.07 times EBITDA (Q2 call)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "privi-speciality-che-q4fy27-1",
@@ -4959,7 +4972,13 @@
    "target": 20,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call: 20% growth for FY27 kept, with H2 stronger, though H1 grew about 15%"
+    }
+   ]
   },
   {
    "id": "ellen-indl-gas-q2fy27-1",
@@ -7144,7 +7163,11 @@
    "text": "Water-scheme dues (₹925cr) coming in",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Water debtors down to ₹786cr from ₹925cr (Q2 FY27 call)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "pnc-infratech-q4fy27-1",
@@ -7153,7 +7176,13 @@
    "text": "FY27 revenue of about ₹6,000cr at about a 12% margin (guidance predates the ban)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call: FY27 guide trimmed to ₹5,800cr at about 12% EBITDA, excluding arbitration claims"
+    }
+   ]
   },
   {
    "id": "pnc-infratech-q4fy27-2",
@@ -8636,7 +8665,13 @@
    "due": "Q3 FY27",
    "ifMet": "Wait can end, if the tax search also closes",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27: plywood revenue ₹625.7cr at a 10.05% core margin, so the first of the two quarters is met"
+    }
+   ]
   },
   {
    "id": "greenply-industries-q2fy27-1",
@@ -14611,7 +14646,8 @@
    "status": "partly",
    "actual": "10.7%",
    "resolvedOn": "2026-11-05",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays wait (cash, not margin, holds it back)"
   },
   {
    "id": "manaksia-coated-metals-q2fy27-2",
@@ -21000,7 +21036,13 @@
    "due": "Q3 FY27",
    "ifMissed": "Keep waiting",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27: gross margin 22.4% (first of the two quarters above 22%)"
+    }
+   ]
   },
   {
    "id": "route-mobile-q2fy27-1",
@@ -21010,7 +21052,11 @@
    "due": "Q2 FY27",
    "ifMissed": "Keep waiting",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "No new supplier-prepayment write-off or provision disclosed on the Q2 FY27 call (one-offs were the Masivian security incident and bonus timing)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "route-mobile-q4fy27-1",
@@ -21019,7 +21065,13 @@
    "text": "Adjusted EBITDA margin moving toward the ~12% guided for the year (9.5% in Q1)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call: adjusted margin 10%; 12% for the year kept, with H2 better as one-offs lapse"
+    }
+   ]
   },
   {
    "id": "route-mobile-q4fy27-2",
@@ -25501,7 +25553,13 @@
    "due": "Q4 FY29",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "deepak-nitrite-polycarbonate"
+   "project": "deepak-nitrite-polycarbonate",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call: resin plant still FY29 on bought feedstock; the integrated chain from propylene moved to FY30 in the investor deck"
+    }
+   ]
   },
   {
    "id": "deepak-nitrite-mibk-agro-m1",
@@ -26152,8 +26210,12 @@
    "text": "Phase 1 commercial (54,000 tonnes)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "privi-speciality-che-phase1"
+   "status": "met",
+   "project": "privi-speciality-che-phase1",
+   "actual": "Expansion completed by the Q2 FY27 call (3 Nov 2026), about a quarter late; output from Q3",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "privi-speciality-che-phase1-m2",
@@ -27248,8 +27310,12 @@
    "text": "Odisha plywood plant commissioned (December 2026)",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "greenply-industries-odisha-ply"
+   "status": "missed",
+   "project": "greenply-industries-odisha-ply",
+   "actual": "Moved to Q4 FY27 on the Q2 FY27 call (was December 2026)",
+   "resolvedOn": "2026-11-06",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "orient-bell-gvt-conversion-m1",
@@ -33085,7 +33151,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-10-07",
    "status": "pending",
-   "source": "business-shift"
+   "source": "business-shift",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call: integrated chain shown in FY30; resin plant FY29 kept"
+    }
+   ]
   },
   {
    "id": "deepak-nitrite-shift-4",
@@ -38385,6 +38457,53 @@
    "due": "Q4 FY27",
    "createdOn": "2026-11-06",
    "status": "pending"
+  },
+  {
+   "id": "yasho-industries-q4fy27-1",
+   "company": "Yasho Industries",
+   "sector": "Chemicals",
+   "text": "Debt below 2.5 times trailing operating profit by March 2027 (about 2.8 at September)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "goodluck-india-q4fy27-1",
+   "company": "Goodluck India",
+   "sector": "Iron and Steel",
+   "text": "Defence revenue of about ₹300cr in FY27, as management repeated on the Q2 call",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "goodluck-india-q4fy27-2",
+   "company": "Goodluck India",
+   "sector": "Iron and Steel",
+   "text": "Swap ratios for merging the defence subsidiary and the promoter's green-energy company disclosed, without heavy dilution of listed holders",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending"
+  },
+  {
+   "id": "greenply-industries-odisha-ply-m2",
+   "company": "Greenply Industries",
+   "sector": "Consumer Durables",
+   "text": "Odisha plywood plant commissioned (new date from the Q2 FY27 call)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-06",
+   "status": "pending",
+   "project": "greenply-industries-odisha-ply"
+  },
+  {
+   "id": "greenply-industries-sandila-ply-m1",
+   "company": "Greenply Industries",
+   "sector": "Consumer Durables",
+   "text": "Sandila plywood expansion in commercial production",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-06",
+   "status": "pending",
+   "project": "greenply-industries-sandila-ply"
   }
  ]
 }

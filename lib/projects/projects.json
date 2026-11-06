@@ -2763,9 +2763,15 @@
    "cost": "₹11,500cr, 60% debt (about ₹1,200cr spent); peak debt ₹8,000–8,500cr",
    "expectedStart": "H2 FY29",
    "status": "building",
-   "source": "Sector note (Q1 FY27 call, 6 Aug 2026): start-up moved from June 2028 to H2 FY29; no revenue target",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "1.65 lakh t of polycarbonate a year (new product), with its own phenol-to-bisphenol-A chain"
+   "source": "Q2 FY27 call (Nov 2026): resin plant still FY29, integrated chain FY30; Q1 FY27 call (6 Aug 2026) had moved start-up from June 2028 to H2 FY29",
+   "updatedOn": "2026-11-06",
+   "capacityAdd": "1.65 lakh t of polycarbonate a year (new product), with its own phenol-to-bisphenol-A chain",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call (Nov 2026): the investor deck now shows the fully integrated propylene-to-polycarbonate chain in FY30, in line with propylene feedstock; management says the polycarbonate resin plant itself stays in FY29, running first on bought feedstock"
+    }
+   ]
   },
   {
    "id": "deepak-nitrite-mibk-agro",
@@ -3701,9 +3707,9 @@
    "what": "Raises aroma-chemical capacity from 48,000 to 54,000 tonnes across existing products (plants already run at about 90%)",
    "cost": "part of ₹850–900cr over FY27–FY29",
    "expectedStart": "Q2 FY27",
-   "status": "building",
-   "source": "Q1 FY27 call (31 Jul 2026): 'expected to be commercialized shortly'; slipped from 30 June to September 2026",
-   "updatedOn": "2026-09-29",
+   "status": "started",
+   "source": "Q2 FY27 call (3 Nov 2026): 'the expansion has been completed'; part of the output in Q3, most in Q4 as new annual contracts start, at about 85–90% use",
+   "updatedOn": "2026-11-06",
    "capacityAdd": "+6,000 t (48,000 t to 54,000 t, +12.5%)"
   },
   {
@@ -5337,8 +5343,8 @@
    "expectedStart": "Q2 FY28",
    "adds": "about 70% more MDF capacity; margin could reach about 18% with operating leverage",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026): on track; peak net debt ₹710–730cr",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (Nov 2026): on track to start in Q2 FY28",
+   "updatedOn": "2026-11-06",
    "capacityAdd": "About 1,000 cubic metres a day of MDF (about +70% MDF capacity) from Q2 FY28"
   },
   {
@@ -5350,8 +5356,14 @@
    "cost": "about ₹130–160cr",
    "expectedStart": "Q3 FY27",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026): on track; Q4 FY26 call put the cost at about ₹130cr",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (Nov 2026): start in Q4 FY27; Q1 FY27 call (Jul 2026) had said December 2026",
+   "updatedOn": "2026-11-06",
+   "revisions": [
+    {
+     "on": "2026-11-06",
+     "text": "Q2 FY27 call (Nov 2026): plywood plant now to start in Q4 FY27 (was December 2026); 'on track' with 'committed timelines'"
+    }
+   ]
   },
   {
    "id": "greenply-industries-flooring",
@@ -5378,6 +5390,20 @@
    "source": "Q4 FY26 call (Apr 2026) and sector note",
    "updatedOn": "2026-09-29",
    "capacityAdd": "New: 6 million kg of doors and 3 million kg of door frames a year, about ₹75–80cr of sales at peak"
+  },
+  {
+   "id": "greenply-industries-sandila-ply",
+   "company": "Greenply Industries",
+   "sector": "Consumer Durables",
+   "name": "Sandila plywood expansion",
+   "what": "New plywood capacity at the existing Sandila, Lucknow plant, funded by debt and equity",
+   "cost": "₹125cr",
+   "expectedStart": "Q4 FY28",
+   "adds": "15 million sq m of plywood a year; about ₹320–340cr of sales at full use",
+   "status": "planned",
+   "source": "Q2 FY27 call (Nov 2026): announced, commercial production in Q4 FY28",
+   "updatedOn": "2026-11-06",
+   "capacityAdd": "15 million sq m of plywood a year"
   },
   {
    "id": "orient-bell-gvt-conversion",
