@@ -442,7 +442,7 @@ export const bearings: SectorOverview = {
                         ['NRB Bearing', '₹2,500cr by FY31, now ‘₹2,730–3,000cr’ by extrapolation; margin 18–20%', '₹270cr (from ₹240cr) plus ₹110cr joint venture', '**Mixed**: revenue +19%; ₹1,100cr nominations retracted; margin band narrowed'],
                         ['SKF India', 'Revenue ‘close to 20%’ in FY27 (was 6–8% a year); EBITDA ~17% for two years', '₹500cr over FY26–FY28; FY27 ₹170–180cr (was ~₹200cr)', '**Beat**: revenue +27%, pre-tax 14.3% against 11–12%; aftermarket down'],
                         ['SKF India (Industrial)', 'Aspiration to double in five years (was ~8% a year); margin ~12% now, 14–16% after 2028', '₹900–950cr Pune plant (was ₹650cr+, then ₹800cr+)', '**Slipping**: revenue +18%; 13% by end-2026 target slipped; capex up 40%'],
-                        ['Timken India', 'No numbers; ‘outgrow the market’; spherical lines 70% by Aug–Sep', '8–10% of sales (was 8–9%); rail line ₹120cr by Dec 2026', '**Slipping**: Bharuch target moved and revenue fell; rail outlook cut; margins held'],
+                        ['Timken India', 'No numbers; ‘outgrow the market’; spherical lines 70% by Aug–Sep', '8–10% of sales (was 8–9%); rail line ₹120cr by Dec 2026', '**Better** (Q2): spherical lines at the promised 70%, Bharuch ₹75cr, exports +60%; rail tenders still delayed; margin 19.2%'],
                     ],
                 },
             ],
@@ -539,8 +539,8 @@ export const bearings: SectorOverview = {
         {
             company: 'Timken India', rank: 5, stance: 'PRICED', segment: MNC,
             what: "Tapered, spherical and cylindrical roller bearings for railways, trucks and tractors, steel, cement and wind, plus exports to the group; 51% owned by The Timken Company of the US.",
-            view: "**India's best railway-bearing franchise, priced far ahead of its earnings.** Q1 sales rose 15% and the gross margin held through a steel rise, but FY26 profit fell 11%, return on capital fell from 29% to 18% as the ₹720cr Bharuch plant ramps up, and rail buying has slowed. Contingent claims total about ₹182cr and FY27 related-party trade roughly doubles. The price needs about {need:Timken India|26}% a year against my ~15%.",
-            watch: 'Bharuch above ₹80cr a quarter and operating margin back over 20%; the Jamshedpur rail line producing by December 2026; the ₹104cr provident-fund appeal.',
+            view: "**India's best railway-bearing franchise, priced far ahead of its earnings.** Q1 sales rose 15% and the gross margin held through a steel rise, but FY26 profit fell 11%, return on capital fell from 29% to 18% as the ₹720cr Bharuch plant ramps up, and rail buying has slowed. Contingent claims total about ₹182cr and FY27 related-party trade roughly doubles. Q2 (call of 30 Oct 2026) was better: sales +25% to ₹969cr with exports up about 60%, Bharuch sold about ₹75cr with its spherical lines at the promised 70%, and the Jamshedpur rail line starts trials in November–December; but rail sales were low as tenders slipped, and the margin was 19.2%, still under 20%. The price needs about {need:Timken India|26}% a year against my ~15%.",
+            watch: 'Bharuch above ₹80cr a quarter, with its cylindrical lines passing 60%; operating margin back over 20% as rail tenders return; the Jamshedpur rail line qualified with customers after its November–December trials; the ₹104cr provident-fund appeal.',
         },
     ],
 
