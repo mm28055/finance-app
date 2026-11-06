@@ -224,7 +224,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Motherson Sumi Wirin',
-        inShort: ["**India's largest wiring-harness maker** (Motherson Sumi Wiring India), jointly controlled by the Motherson group and Japan's Sumitomo Wiring Systems.", "**Good:** revenue up 37% in Q1 FY27 against 17% for the car industry on the company's measure (SIAM car wholesales +25.9%), a 39% return on capital and a 62% payout. **Bad:** operating profit has been flat for three years, the Q1 margin was 7.6%, the new plants' profit has been pushed out again, and about 70% of materials come from its promoter groups.", "**Verdict: wait.** Excellent returns, but profit per rupee of sales keeps shrinking and the price needs more growth than I expect."],
+        inShort: ["**India's largest wiring-harness maker** (Motherson Sumi Wiring India), jointly controlled by the Motherson group and Japan's Sumitomo Wiring Systems.", "**Good:** revenue up 37% in Q1 FY27 against 17% for the car industry on the company's measure (SIAM car wholesales +25.9%), a 39% return on capital and a 62% payout. **Bad:** operating profit has been flat for three years, the margin was 7.6% in Q1 before recovering to 9.2% in Q2 FY27 (revenue +47%), copper and wage rises are recovered only with a lag, and about 70% of materials come from its promoter groups.", "**Verdict: wait.** Excellent returns, but profit per rupee of sales keeps shrinking and the price needs more growth than I expect."],
         tagline: "Wiring harnesses, the copper nervous system of a vehicle, for almost every Indian car, two-wheeler, truck and tractor maker.",
         revenue: '₹11,478cr (FY26, standalone; it has no subsidiaries)',
         products: [
@@ -245,7 +245,7 @@ const profiles: BusinessProfile[] = [
         competitors: [{ name: 'Dhoot Transmission', note: 'The leader in two- and three-wheeler harnesses (about 41%, CRISIL), preparing a high-voltage car-harness venture.' }, { name: 'Minda Corp', note: 'Harnesses mainly for two-wheelers and trucks, with harness sales up 30% in Q1 FY27.' }],
         position: "**India's largest wiring-harness maker**, supplying nearly every major Indian vehicle maker and growing well ahead of the car industry.",
         money: "Screener shows **net debt of ₹164cr**; the company reported ₹40cr of net debt plus ₹199cr of leases in June, after ₹56cr of net cash in March, as dearer copper tied up working capital (debtor days up from 39 in FY24 to 60 in FY26). Capex of about ₹190cr a year is funded internally, and it paid out 62% of FY26 profit. The main money issue is related-party flows: ₹5,243cr of goods bought from its promoter groups in FY26, about ₹99cr of rent and a ₹60.9cr management fee, which the auditor made a key audit matter. Promoters hold **61.7%**, unchanged.",
-        watch: ["Wage-cost recovery agreed with customers.", "New-plant revenue above ₹500cr a quarter.", "Margin back above 9%."],
+        watch: ["Wage-cost recovery agreed with customers (still under negotiation at the Q2 call).", "New-plant revenue above ₹500cr a quarter.", "Margin holding above 9% as copper keeps rising."],
         charts: autoRelatedCharts['Motherson Sumi Wirin'],
     },
     {
