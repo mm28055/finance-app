@@ -850,7 +850,7 @@
    "expectedStart": "Q2 FY27",
    "status": "building",
    "source": "Q1 FY27 call (Aug 2026): start in Q2 FY27 on track, customer trials approved first time",
-   "updatedOn": "2026-10-23"
+   "updatedOn": "2026-11-07"
   },
   {
    "id": "minda-corp-switches",
@@ -862,7 +862,13 @@
    "adds": "about ₹150cr of revenue in FY28",
    "status": "building",
    "source": "Q4 FY26 call (May 2026): coming by March 2027; Q1 FY27 call (Aug 2026): start as late as Q1 FY28, about ₹150cr of revenue in FY28, first peak year FY29, on over ₹1,000cr of lifetime orders",
-   "updatedOn": "2026-10-23"
+   "updatedOn": "2026-11-07",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q1 FY27 call (Aug 2026): start now Q4 FY27 or Q1 FY28 (the Q4 FY26 call had said by March 2027)"
+    }
+   ]
   },
   {
    "id": "minda-corp-cluster-2",
@@ -873,7 +879,7 @@
    "expectedStart": "Q1 FY28",
    "status": "building",
    "source": "Q4 FY26 call (May 2026): ready by Q1 FY27; not updated on the Aug call",
-   "updatedOn": "2026-10-23"
+   "updatedOn": "2026-11-07"
   },
   {
    "id": "minda-corp-pune-diecast",
@@ -1043,25 +1049,37 @@
    "what": "Two plants at the AMW site in Bhuj: 1.2 million alloy wheels a year (mostly export aftermarket) and aluminium steering knuckles (0.6 million in phase 1, 1.1 million in all)",
    "cost": "about ₹420cr",
    "expectedStart": "Q4 FY27",
-   "adds": "₹700–800cr of revenue at full use; alloy capacity to about 6.2 million",
+   "adds": "₹700–800cr of revenue at full use; alloy capacity to about 6.6 million (5.4 million after debottlenecking plus 1.2 million)",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026): trial production now expected to start in Q4 FY27 (the Q4 FY26 call had said October 2026 to January 2027)",
-   "updatedOn": "2026-10-23",
-   "capacityAdd": "+1.2 million alloy wheels a year (about +24% on about 5 million) and 0.6 million knuckles in phase 1 (1.1 million in all, against about 0.5 million today); about ₹700–800cr of revenue at full use"
+   "source": "Q2 FY27 call (Oct 2026): both plants 'progressing as planned'; knuckle commercial production in Q4 FY27, alloy-wheel plant to start in early April 2027; at least 80% use in FY28, full use within 3–4 months of start",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "+1.2 million alloy wheels a year (about +22% on about 5.4 million after October 2026 debottlenecking) and 0.6 million knuckles in phase 1 (1.1 million in all, against about 0.5 million today); about ₹700–800cr of revenue at full use",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (Oct 2026): knuckle commercial production in Q4 FY27 and the alloy-wheel plant from early April 2027 (Q1 FY28); the Q1 FY27 call had said trials from Q4 FY27 and the Q4 FY26 call October 2026 to January 2027"
+    }
+   ]
   },
   {
    "id": "steel-strips-wheels-steel-line",
    "company": "Steel Strips Wheels",
    "sector": "Auto Related",
    "name": "New tractor and car steel-wheel line",
-   "what": "Brownfield line at the mother plant near Chandigarh for tractor wheels, also able to make car wheels; the steel-wheel industry is 'sold out'",
+   "what": "Brownfield line at the mother plant near Chandigarh (Dappar) for tractor wheels, also able to make car wheels; the steel-wheel industry is 'sold out'",
    "cost": "about ₹150cr",
    "expectedStart": "Q3 FY27",
    "adds": "up to 2 million wheels a year",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026): part this year, part next; start by December 2026 per note",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "Up to +2 million tractor and car steel wheels a year (about +10% on about 20.7 million)"
+   "source": "Q2 FY27 call (Oct 2026): ₹120cr this year to add almost 0.5 million tractor sets at Dappar; Q1 FY27 call (Jul 2026): part this year, part next; start by December 2026 per note",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "Up to +2 million tractor and car steel wheels a year (about +10% on about 20.7 million)",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (Oct 2026): FY27 spend now ₹120cr for almost 0.5 million tractor sets at Dappar (Q1 FY27 call had said about ₹150cr for up to 2 million wheels); no new start date given"
+    }
+   ]
   },
   {
    "id": "wheels-india-aluminium",
@@ -1737,8 +1755,8 @@
    "expectedStart": "Q2 FY27",
    "adds": "₹200–250cr of revenue at 2–2.5 times its cost",
    "status": "ramping",
-   "source": "Q1 FY27 call (Aug 2026): commercial operations began August 2026",
-   "updatedOn": "2026-09-29",
+   "source": "Q1 FY27 call (Aug 2026) and Q2 FY27 press release (4 Nov 2026): new chrome-plating facility in commercial production",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "About ₹200–250cr of revenue at 2–2.5 times its cost (aims to double Decoplast's sales in 3–4 years)"
   },
   {
@@ -1751,8 +1769,8 @@
    "expectedStart": "Q2 FY28",
    "adds": "target 10% of a ₹5,000–7,000cr car-display market by 2030",
    "status": "building",
-   "source": "NSE filing 11 Oct 2026: sub-lease signed at Koregaon Bhima, Pune; ~₹65cr plant and machinery plus ~₹16cr lease; operations by September 2027; internal accruals/debt",
-   "updatedOn": "2026-10-14",
+   "source": "NSE filing 11 Oct 2026 (Koregaon Bhima, Pune; ~₹65cr plant and machinery plus ~₹16cr lease; operations by September 2027) and Q2 FY27 press release (4 Nov 2026): operational by Q2 FY28",
+   "updatedOn": "2026-11-07",
    "revisions": [
     {
      "on": "2026-10-14",
@@ -1769,8 +1787,8 @@
    "cost": "₹45cr",
    "adds": "about 20% more capacity",
    "status": "building",
-   "source": "Stock-exchange filing, 7 Oct 2026: ₹45cr from internal cash, commercial production expected in Q3 FY27",
-   "updatedOn": "2026-10-09",
+   "source": "Filing 7 Oct 2026 (₹45cr from internal cash) and Q2 FY27 press release (4 Nov 2026): expansion completed, commercial production to begin in Q3 FY27",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "About +20% capacity at SJS Bangalore",
    "expectedStart": "Q3 FY27"
   },
@@ -2400,10 +2418,9 @@
    "expectedStart": "Q3 FY27",
    "adds": "about ₹3,000cr of sales at full 40,000 tonnes (today's prices)",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026). Q4 FY26 call put full Phase 1 in FY29; the note's table says FY28. No named customer contract yet",
-   "updatedOn": "2026-10-23",
-   "capacityAdd": "2,000 t of LFP cathode first, then 40,000 t in Phase 1 (new product); about ₹3,000cr of sales at full 40,000 t",
-   "milestone himadri-speciality-lfp-m2 due": "Q4 FY28"
+   "source": "Q2 FY27 call (22 Oct 2026): 2,000 t trial production in Q3 FY27 on schedule, plant-scale samples to customers from Q4 FY27 (approval takes 12–18 months); the 40,000 t plant to start at the end of FY28 so approvals are in hand first, LFP sales from FY29 (50%+ use in year 1, 90%+ after). No named customer contract yet. Q4 FY26 call had put full Phase 1 operations in FY29",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "2,000 t of LFP cathode first, then 40,000 t in Phase 1 (new product); about ₹3,000cr of sales at full 40,000 t"
   },
   {
    "id": "himadri-speciality-super-black",
@@ -2412,10 +2429,11 @@
    "name": "Super-speciality carbon black conversion",
    "what": "Converting 6,000 tonnes of existing carbon black capacity to high-purity grades for batteries, plastics, fibres and coatings",
    "cost": "₹170cr",
+   "expectedStart": "Q4 FY28",
    "adds": "about ₹500cr of sales",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026); FY28 timing from the sector note",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (22 Oct 2026): the 6,000 t still targeted for Q4 FY28; NDAs signed with customers",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "Converts 6,000 t of existing carbon black (about 5% of specialty capacity) to high-purity grades; about ₹500cr of sales"
   },
   {
@@ -2446,8 +2464,8 @@
    "cost": "about ₹70cr",
    "expectedStart": "Q4 FY27",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (22 Oct 2026): still targeted for commissioning in Q4 FY27",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "200 t a year of carbon nanotubes (new)"
   },
   {
@@ -2459,8 +2477,8 @@
    "cost": "about ₹500cr",
    "adds": "Birla Tyres target ₹3,000cr of sales in 4–5 years",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026); cost from the sector note. Held through Dalmia Bharat Refractories, funded partly by Himadri's ~₹935cr of debentures; on 21 Sep 2026 Himadri's board approved taking DBRL's tyre business in by demerger (shares to DBRL holders)",
-   "updatedOn": "2026-10-23"
+   "source": "Q2 FY27 call (22 Oct 2026): sales guidance kept; demerger of the tyre business into Himadri proposed. Q1 FY27 call (Jul 2026): car-radial plant by FY28; cost from the sector note. Held through Dalmia Bharat Refractories, funded partly by Himadri's ~₹935cr of debentures; on 21 Sep 2026 Himadri's board approved taking DBRL's tyre business in by demerger (shares to DBRL holders)",
+   "updatedOn": "2026-11-07"
   },
   {
    "id": "sh-pushkar-chem-unit6",
@@ -3952,27 +3970,38 @@
    "company": "Smartworks Coworking",
    "sector": "Commercial Services",
    "name": "FY27 new campuses (incl. East Side, Pune)",
-   "what": "About 3m sq ft of new leased campuses opening over nine months, including East Side in Pune, from 3.5m sq ft already signed; security deposits already paid to book buildings through FY28",
-   "cost": "₹550–600cr capex in FY27 (raised from about ₹450cr in the Q4 call; ₹150cr spent in Q1)",
-   "adds": "Operating area to over 13m sq ft by March 2027",
+   "what": "About 3m sq ft of new leased campuses in FY27, including East Side in Pune; almost 1m sq ft opened in H1 and 4.3m sq ft now under fit-out or awaiting handover, against the 1.6–2.1m sq ft needed live by March 2027; security deposits paid to book buildings through FY28",
+   "cost": "₹550–600cr capex in FY27 (raised from about ₹450cr in the Q4 call; ₹307cr spent in H1)",
+   "adds": "Operating area to 12.5–13m sq ft by March 2027 (Q2 FY27 call; 'about 13 million by March end')",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026); latest call raised capex from the ~₹450cr given in May",
-   "updatedOn": "2026-10-23",
-   "capacityAdd": "+about 3m sq ft, about 29% on today's 10.4m sq ft (to over 13m sq ft by March 2027)",
-   "milestone smartworks-coworking-fy27-campuses-m2 text": "Over 13m sq ft operating"
+   "source": "Q2 FY27 call (Oct 2026)",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "+about 3m sq ft in FY27; 1.6–2.1m sq ft still to open by March 2027 on today's 10.9m sq ft (about +15–19%), to 12.5–13m sq ft",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (Oct 2026): footprint guide is 12.5–13m sq ft by March 2027 ('13 million ... by March end'); the Q1 FY27 call had said over 13m sq ft"
+    }
+   ]
   },
   {
    "id": "smartworks-coworking-east-bridge",
    "company": "Smartworks Coworking",
    "sector": "Commercial Services",
    "name": "East Bridge campus, Vikhroli (Mumbai)",
-   "what": "An 8.15 lakh sq ft managed campus in Vikhroli, which the company calls the world's largest standalone managed campus, already strongly pre-filled",
+   "what": "An 8.15 lakh sq ft managed campus in Vikhroli, which the company calls the world's largest standalone managed campus; about 35% pre-filled across East Bridge and East Side",
    "cost": "Part of the ₹550–600cr FY27 capex",
    "expectedStart": "Q4 FY27",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026)",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+8.15 lakh sq ft, about 8% on today's 10.4m sq ft (part of the 3m sq ft above)"
+   "source": "Q2 FY27 call (Oct 2026)",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "+8.15 lakh sq ft, about 7% on today's 10.9m sq ft (part of the FY27 campuses above)",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (Oct 2026): building still awaits its occupancy certificate; fit-out takes 3–4 months after it, so revenue may start only late in Q4 FY27 (still 'live in H2')"
+    }
+   ]
   },
   {
    "id": "awfis-space-solutions-fy27-seats",
@@ -4381,10 +4410,16 @@
    "name": "Conductor plant expansion (Phase 1)",
    "what": "Brownfield expansion at Silvassa: phase 1 took conductor capacity from 24,000 to 40,800 km a year, finished September 2026; phase 2 doubles the original capacity",
    "expectedStart": "Q2 FY27",
-   "status": "building",
-   "source": "Q1 FY27 call (Aug 2026); slipped from Q1 to Q2 FY27",
-   "updatedOn": "2026-10-23",
-   "capacityAdd": "Conductor from 24,000 to 40,800 km a year (+70%) in phase 1, finished September 2026; phase 2 doubles the original capacity"
+   "status": "started",
+   "source": "Filing 21 Sep 2026 (phase 1 done, 24,000 to 40,800 km) and Q2 FY27 press release (3 Nov 2026): remaining capex on schedule",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "Conductor from 24,000 to 40,800 km a year (+70%) in phase 1, finished September 2026; phase 2 doubles the original capacity",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Phase 1 lifted conductor capacity 70% to 40,800 km a year (21 Sep 2026), not the doubling promised for Q2 FY27 on the Q4 FY26 call; doubling now waits for phase 2, no date given"
+    }
+   ]
   },
   {
    "id": "transrail-lighting-butibori",
@@ -4394,9 +4429,15 @@
    "what": "New tower factory that started commercial production in Q1 FY27, more than doubling tower capacity with the earlier brownfield work",
    "adds": "Tower capacity 1,84,400 tonnes after phase 1 (September 2026), beyond 2,00,000 tonnes after phase 2; faster project supply in H2",
    "status": "ramping",
-   "source": "Q1 FY27 call (Aug 2026)",
-   "updatedOn": "2026-10-23",
-   "capacityAdd": "Tower capacity from about 1,72,400 t to 1,84,400 t after phase 1 (Silvassa +12,000 t, September 2026; +7%), beyond 2,00,000 t after phase 2; with earlier brownfield work, tower capacity more than doubled in FY26"
+   "source": "Filing 30 Sep 2026 (towers to 1,84,400 t) and Q2 FY27 press release (3 Nov 2026)",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "Tower capacity from about 1,72,400 t to 1,84,400 t after phase 1 (Silvassa +12,000 t, September 2026; +7%), beyond 2,00,000 t after phase 2; with earlier brownfield work, tower capacity more than doubled in FY26",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Phase 1 ended at 1,84,400 t of towers (30 Sep 2026), short of the about 1,96,000 t the Q4 FY26 call promised for Q2 FY27; beyond 2,00,000 t in phase 2, no date given"
+    }
+   ]
   },
   {
    "id": "transrail-lighting-site-equipment",
@@ -4429,9 +4470,15 @@
    "cost": "Part of about ₹250cr of FY27 capex",
    "expectedStart": "Q2 FY27",
    "status": "building",
-   "source": "Q1 FY27 call; delayed from March to June 2026, now end of Q2",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+75,000 tonnes a year, 20% on today's 375,000 t (to 450,000 t); about ₹1,000–1,200cr of yearly revenue at full use"
+   "source": "Q2 FY27 call (Oct 2026): on track, commissioned and operational in H2 FY27 — end of Q3 or at the latest early Q4; brownfield at the existing plant",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "+75,000 tonnes a year, 20% on today's 375,000 t (to 450,000 t); about ₹1,000–1,200cr of yearly revenue at full use",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (Oct 2026): not commissioned by end of Q2; now end of Q3 FY27 or at the latest early Q4 FY27 (third slip, after March and June 2026)"
+    }
+   ]
   },
   {
    "id": "kec-international-specialty-cables",
@@ -4966,9 +5013,15 @@
    "expectedStart": "Q1 FY27",
    "adds": "replaces imported bottles that quality rules cut (about ₹100cr of lost sales)",
    "status": "ramping",
-   "source": "Q1 FY27 call (Aug 2026)",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "New: about 36 lakh steel bottles a year from 3 lines, replacing imports"
+   "source": "Q2 FY27 call (Nov 2026): two lines over 80% used, third line January 2027; NSE filing 23 Sep 2026; Q1 FY27 call",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "New: about 36 lakh steel bottles a year from 3 lines, replacing imports",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "NSE filing 23 Sep 2026 and Q2 FY27 call (Nov 2026): third double-walled line now starts commercial production in January 2027 (Q4 FY26 and Q1 FY27 calls had said by end Q2 FY27), held up by equipment from China, port congestion and the supplier's technicians"
+    }
+   ]
   },
   {
    "id": "borosil-bharuch",
@@ -4994,8 +5047,8 @@
    "expectedStart": "Q4 FY28",
    "adds": "about 28% more borosilicate glass output",
    "status": "planned",
-   "source": "Q1 FY27 call (Aug 2026); the May call also said 25 to 32 tonnes a day",
-   "updatedOn": "2026-10-23",
+   "source": "Q2 FY27 call (Nov 2026): \"progressing as per plan\", commissioning by end Q4 FY28; furnace at about 90%",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "Borosilicate furnace 25 to 32 t a day (+28%) with a third forming line, by end-FY28"
   },
   {
@@ -5008,8 +5061,8 @@
    "expectedStart": "Q1 FY27",
    "adds": "lower power cost for its gas- and power-heavy furnaces",
    "status": "started",
-   "source": "Q1 FY27 call (Aug 2026)",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (Nov 2026): three phases now 35.8 MWp with 16.9 MWh battery storage, about 60% of power; about ₹30cr a year of savings after phase 3",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "20 MW solar with battery storage (on top of 15.8 MW), taking solar to about 61% of power needs"
   },
   {
@@ -5688,8 +5741,8 @@
    "expectedStart": "Q3 FY27",
    "adds": "about 5,000 MVA of solar and storage transformer capacity",
    "status": "building",
-   "source": "Sector note; Q4 FY26 call (May 2026) — funded from own cash",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 results (Nov 2026): still targeted for Q3 FY27; Q1 FY27 call (Jul 2026): 'by December end'; funded from own cash",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "+5,000 MVA a year of inverter-duty transformers (about +8% on 63,060 MVA)"
   },
   {
@@ -5700,8 +5753,14 @@
    "what": "The Vadod plant (running since July 2025) won Power Grid's 400 kV approval in 2026; it still has to pass the 400 kV short-circuit test before big 400 kV orders",
    "adds": "first 400 kV order (315 MVA) to be finished within FY27 if the short-circuit test passes; meaningful 400 kV revenue from FY28",
    "status": "ramping",
-   "source": "Q1 FY27 call (Jul 2026) and sector note; the test has slipped a quarter",
-   "updatedOn": "2026-10-23"
+   "source": "Q2 FY27 results (Nov 2026): manufacture of the first 315 MVA 400 kV transformer began in October 2026, short-circuit test targeted by the end of Q3 FY27; 400 kV bids to open after it. Q1 FY27 call (Jul 2026) had expected the unit ready for the test by end-Q2",
+   "updatedOn": "2026-11-07",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 results (Nov 2026): the first 400 kV unit only went into manufacture in October 2026 (the Q1 FY27 call expected it ready for its short-circuit test by end-September); test now targeted by end-December 2026"
+    }
+   ]
   },
   {
    "id": "atlanta-electricals-tanks",
@@ -5712,8 +5771,14 @@
    "cost": "₹170–180cr",
    "adds": "secure supply of tanks and radiators (4–5% of cost); not a margin driver",
    "status": "building",
-   "source": "Q4 FY26 call (May 2026) and sector note; CRISIL expects it to be funded 75% by debt or a QIP",
-   "updatedOn": "2026-09-29"
+   "source": "AE Components capex filing (31 Oct 2026, NSE): ₹193.58cr approved for tanks, frames and radiators, built in phases, completion targeted within one year, funded by internal cash, bank term loans and help from the parent. Q1 FY27 call (Jul 2026): next to Vadod, ₹15–20cr spent. CRISIL had expected 75% debt or a QIP",
+   "updatedOn": "2026-11-07",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "31 Oct 2026 filing: wholly-owned subsidiary AE Components approved ₹193.58cr (was ₹170–180cr), completion targeted within one year, so about October 2027 (the Q4 FY26 call had aimed to start it in FY27)"
+    }
+   ]
   },
   {
    "id": "atlanta-electricals-atlanta-trafo",
@@ -5725,8 +5790,14 @@
    "expectedStart": "Q3 FY26",
    "adds": "a route to 765 kV transformers once a technology licence is signed",
    "status": "ramping",
-   "source": "Q4 FY26 call (May 2026) and sector note",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (2 Nov 2026, per Motilal Oswal note): the 765 kV technology tie-up did not happen; design now in-house, raw materials being ordered, testing targeted by H1. Q4 FY26 call (May 2026) and sector note",
+   "updatedOn": "2026-11-07",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (2 Nov 2026, per Motilal Oswal note): the 765 kV technology tie-up has not materialised; Atlanta is developing 765 kV in-house, with design and raw-material ordering under way and testing targeted by H1 (taken as H1 FY28)"
+    }
+   ]
   },
   {
    "id": "shilchar-tech-gavasad-3",
@@ -7275,23 +7346,35 @@
    "expectedStart": "Q1 FY28",
    "adds": "250 beds at an ARPOB of ₹50,000-plus",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026)",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+250 beds (+10% on 2,555 built)"
+   "source": "Q2 FY27 presentation and press release (3 Nov 2026, NSE); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "+250 beds (+10% on 2,555 built)",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 presentation (3 Nov 2026): \"on track to operationalise by H1 FY28\" (Q1 FY27 call had said Q1 FY28)"
+    }
+   ]
   },
   {
    "id": "yatharth-hospital-noida-brownfield",
    "company": "Yatharth Hospital",
    "sector": "Hospitals",
    "name": "450 extra beds at Noida Extension and Greater Noida",
-   "what": "Brownfield bed additions at the two Noida-cluster hospitals, taking announced capacity to about 3,200 beds",
+   "what": "Brownfield bed additions at the two Noida-cluster hospitals, taking announced capacity to about 3,200 beds: about 200 beds in about 15 months, the other 250 in 18–19 months (from August 2026)",
    "cost": "about ₹75 lakh a bed",
    "expectedStart": "Q3 FY28",
    "adds": "about 450 beds",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026): 'in approximately the next 15 months'",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+about 450 beds (+18% on 2,555 built)"
+   "source": "Q1 FY27 call (Aug 2026): 200 beds in about 15 months, the other 250 in 18–19 months; Q2 FY27 presentation: \"next 24 months\"",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "+about 450 beds (+18% on 2,555 built)",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 presentation (3 Nov 2026) shows the brownfield beds over the \"next 24 months\" (Q1 FY27 call: 200 in about 15 months, 250 in 18–19 months); to confirm from the Q2 call transcript"
+    }
+   ]
   },
   {
    "id": "yatharth-hospital-new-hospitals",
@@ -7301,8 +7384,8 @@
    "what": "Hospitals added in the last year: Model Town New Delhi (300 beds, about ₹8cr a month), Faridabad Sector 20 (400 beds, now at break-even) and Agra (250 beds, 20%-plus margin)",
    "adds": "about 735 unused beds to fill; new hospitals aim for 15–20% margins 15–18 months after break-even",
    "status": "ramping",
-   "source": "Q1 FY27 call (Aug 2026) and the note",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 presentation and press release (3 Nov 2026, NSE): new hospitals 28% of revenue; Faridabad Sector 20 and Agra EBITDA-positive in H1, New Delhi to break even in H2; Q1 FY27 call",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "About 735 built beds still to open (+40% on 1,820 in use)"
   },
   {
@@ -9048,11 +9131,11 @@
    "sector": "Iron and Steel",
    "name": "Stainless flat steel chain at Sambalpur",
    "what": "A 0.6 million-tonne stainless melt shop plus hot and cold rolling at Sambalpur, using about 80% own alloys, pig iron and power",
-   "cost": "₹2,940cr",
+   "cost": "₹2,940cr for all stainless projects in the June 2026 investor presentation (₹644cr spent by 31 March 2026, ₹2,296cr pending), including the ₹1,800cr expansion from 0.5 to 0.6 million t with cold rolling, precision cold rolling, hot annealing and pickling and bright annealing lines approved in May 2026",
    "adds": "stainless flat products competing with Jindal Stainless and imports",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026): under construction, on track; FY28–FY29 schedule per the note",
-   "updatedOn": "2026-09-29",
+   "source": "June 2026 investor presentation (stainless total ₹2,940cr), Q4 FY26 call (May 2026: ₹1,800cr expansion and downstream, commissioning March 2029) and Q1 FY27 call (Jul 2026): on track",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "0.6 million t a year stainless melt shop with hot and cold rolling (a new product line)"
   },
   {
@@ -9072,12 +9155,14 @@
    "company": "Shyam Metalics",
    "sector": "Iron and Steel",
    "name": "Aluminium foil and flat-rolled expansion in Odisha",
-   "what": "New foil-stock and foil capacity (commissioning started July 2026) and an aluminium flat-rolled products plant",
+   "what": "New foil-stock and foil capacity in Odisha (18,000 t a year of foil at Sambalpur, commissioned July 2026, stable by September; total foil about 42,000 t a year) and an aluminium flat-rolled products plant",
    "expectedStart": "Q2 FY27",
    "adds": "more of its most profitable product a tonne (₹53,661 a tonne in Q1); over 60% exported",
    "status": "ramping",
-   "source": "Q1 FY27 call (Jul 2026): foil facility commissioned; flat-rolled plant on track for Q2",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 results press release (31 Oct 2026): 18,000 TPA foil added, total about 42,000 TPA; flat-rolled plant not yet reported commissioned; Q1 FY27 call (Jul 2026)",
+   "updatedOn": "2026-11-07",
+   "cost": "₹800cr for all aluminium projects (₹681cr spent by 31 March 2026: flat-rolled ₹450cr, foil ₹250cr, mill with caster ₹75cr, battery foil ₹25cr; June 2026 investor presentation)",
+   "capacityAdd": "+18,000 t a year of foil, to about 42,000 t (about +75% on the earlier about 24,000 t)"
   },
   {
    "id": "shyam-metalics-colour-coat",
@@ -11293,8 +11378,8 @@
    "cost": "about ₹50cr this year (about ₹130cr in all)",
    "expectedStart": "Q3 FY27",
    "status": "building",
-   "source": "Q1 FY27 call: functional 'in the next quarter or so'",
-   "updatedOn": "2026-09-29",
+   "source": "Q1 FY27 call (Aug 2026): functional \"in the next quarter or so\"; not updated on the Q2 FY27 call (Nov 2026), part of the unchanged ₹123cr FY27 capex",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "About three times today's R&D capacity in the first phase"
   },
   {
@@ -11305,9 +11390,15 @@
    "what": "Fermenters are 70–75% used; infrastructure allows about 50% more quickly, possibly in a subsidiary",
    "cost": "the rest of about ₹123cr of FY27 capex",
    "status": "planned",
-   "source": "Q1 FY27 call: decision next quarter",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "Up to about +50% fermentation capacity (roughly +250 cubic metres on 500)"
+   "source": "Q1 FY27 call (Aug 2026): decision \"in the next quarter\"; Q2 FY27 call (Nov 2026): no decision mentioned, FY27 capex guide of ₹123cr unchanged",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "Up to about +50% fermentation capacity (roughly +250 cubic metres on 500)",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (3 Nov 2026): no capacity decision announced; FY27 capex still about ₹123cr. The Aug 2026 call (stored AI copy) had said the call would be taken \"in the next quarter\", i.e. Q3 FY27"
+    }
+   ]
   },
   {
    "id": "hexagon-nutrition-nashik",
@@ -11353,9 +11444,15 @@
    "expectedStart": "Q4 FY27",
    "adds": "US capacity, which is now the limit on growth; 40-plus products wait to be moved onto new lines",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026); Q4 FY26 call for the ₹510cr left",
-   "updatedOn": "2026-10-23",
-   "capacityAdd": "+5 sterile lines (8 to 13, about +63%), on the way to about 17 lines in 2–3 years"
+   "source": "Q1 FY27 call (Aug 2026, official transcript on the company site, filed with NSE 19 Aug 2026); Q4 FY26 call for the ₹510cr left",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "+5 sterile lines (8 to 13, about +63%), on the way to about 17 lines in 2–3 years",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q1 FY27 call (Aug 2026, official transcript): the 5 new lines come \"this time next year\", about Q2 FY28 (was March 2027, Q4 FY27); the last 3–4 of the 17 lines potentially by 2029 and beyond"
+    }
+   ]
   },
   {
    "id": "caplin-point-labs-onco-api",
@@ -12018,16 +12115,20 @@
    "sector": "Pumps Comp & Eng",
    "name": "0.5 GW DCR solar module plant",
    "what": "Domestic-content solar module line so solar pumps can use Indian-made panels (now buying 50–60 MW a month); ramps from about 40–50% output to about 85% within three months",
-   "cost": "part of ₹1,500–1,700cr for modules and cells",
+   "cost": "part of the ₹1,700cr capex plan",
    "expectedStart": "Q2 FY27",
    "status": "started",
-   "source": "Filing of 23 Oct 2026 (trial production from October 2026); Q1 FY27 call (Jul 2026): completion September 2026; promised for end of Q1 in May",
-   "updatedOn": "2026-10-25",
+   "source": "Q2 FY27 call (Oct 2026): trial production running, commercial production within 1–1.5 months; filing of 23 Oct 2026",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "500 MW of modules a year (roughly its current 600–720 MW a year of bought panels); about 40–50% output in the first month, 60–70% in the second, then about 85%",
    "revisions": [
     {
      "on": "2026-10-25",
      "text": "Filing of 23 Oct 2026: trial production of the 0.5 GW line began in October 2026, a month after the September date given on the Q1 FY27 call"
+    },
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (26 Oct 2026): commercial production expected within 1–1.5 months, i.e. by about mid-December 2026"
     }
    ]
   },
@@ -12037,13 +12138,19 @@
    "sector": "Pumps Comp & Eng",
    "name": "2.2 GW integrated cell and module plant",
    "what": "Backward integration into domestic-content solar cells and modules",
-   "cost": "most of ₹1,500–1,700cr",
+   "cost": "most of the ₹1,700cr capex plan; about ₹200cr spent by October 2026",
    "expectedStart": "Q2 FY28",
    "adds": "about 3 points of EBITDA margin once all capacity runs",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026) targets September 2027; the May call said March 2028",
-   "updatedOn": "2026-10-23",
-   "capacityAdd": "2.2 GW of cells and modules (more than four times the 0.5 GW line)"
+   "source": "Q2 FY27 call (Oct 2026): completion in FY28, strong revenue after March 2028",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "2.2 GW of cells and modules (more than four times the 0.5 GW line)",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (Oct 2026): completion now \"in FY28\" with strong revenue after March 2028 (the Q1 FY27 call had said September 2027)"
+    }
+   ]
   },
   {
    "id": "shakti-pumps-pump-capacity",
@@ -12053,10 +12160,15 @@
    "what": "Ongoing capacity expansion across pumps, motors, VFDs and solar structures, part of a plan to reach ₹5,000cr of revenue in three years",
    "expectedStart": "Q3 FY27",
    "status": "building",
-   "source": "Q4 FY26 call (May 2026): expanded pump capacity from Q2 FY27; Q1 FY27 call (Jul 2026): pump plant ready in November 2026",
-   "updatedOn": "2026-10-23",
-   "milestone shakti-pumps-pump-capacity-m1 due": "Q3 FY27",
-   "capacityAdd": "About double today's pump capacity (ready November 2026)"
+   "source": "Q1 FY27 call (Jul 2026): pump plant ready in November 2026; Q2 FY27 call (Oct 2026): pump and motor facility still being built, VFD and structure facilities completed",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "About double today's pump capacity (ready November 2026)",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (Oct 2026): VFD and structure facilities completed; pump and motor facility still under development (the May call had said from Q2 FY27, the July call November 2026)"
+    }
+   ]
   },
   {
    "id": "oswal-pumps-modules",
@@ -12582,8 +12694,14 @@
    "name": "More Blackwell and Vera Rubin GPUs",
    "what": "Further capacity in smaller Blackwell chips and Nvidia's next-generation Vera Rubin; a new SovCloud subsidiary set up for funding",
    "status": "planned",
-   "source": "Q1 FY27 call (Jul 2026); no dates or cost given",
-   "updatedOn": "2026-09-29"
+   "source": "Q1 FY27 call (Jul 2026); Q2 FY27 call (16 Oct 2026): B300 and Vera Rubin plans to be announced as they firm up; the B300/Blackwell part firmed up as the 5.4 MW plan of 26 Oct 2026",
+   "updatedOn": "2026-11-07",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Filing of 26 Oct 2026: the B300 and other Blackwell part is now a firm 5.4 MW plan, tracked as its own project; Vera Rubin still has no date or cost"
+    }
+   ]
   },
   {
    "id": "tanla-platforms-valuefirst",
@@ -13187,8 +13305,8 @@
    "cost": "₹4,980cr",
    "adds": "about 24% more TBR and PCR capacity",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026) reaffirmed ₹4,980cr for PCR and TBR at Chennai; Q4 FY26 call: whole ₹6,110cr programme done by FY29 (note says FY27–FY30)",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (Oct 2026): about ₹5,000cr to follow in phases after the ₹1,130cr lines; Q1 FY27 call (Aug 2026) reaffirmed ₹4,980cr for PCR and TBR at Chennai; Q4 FY26 call: whole ₹6,110cr programme done by FY29 (note says FY27–FY30)",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "About +24% truck-bus and car radial capacity, in three phases to FY29–FY30"
   },
   {
@@ -13199,8 +13317,8 @@
    "what": "Truck-bus and car radial lines announced in Q3 FY26, funded partly by QIP money",
    "cost": "₹1,130cr",
    "status": "building",
-   "source": "Q4 FY26 call (May 2026) and note: lines due by Q3 FY28",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (Oct 2026): the ₹1,130cr expansion 'is going on'; Q4 FY26 call (May 2026) and note: lines due by Q3 FY28",
+   "updatedOn": "2026-11-07"
   },
   {
    "id": "jk-tyre-and-indust-banmore",
@@ -13211,8 +13329,8 @@
    "expectedStart": "FY28",
    "adds": "about 7% more total capacity",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026, NSE transcript): about 7% more capacity by next financial year, mainly truck radials plus car-tyre balancing at Banmore",
-   "updatedOn": "2026-10-23",
+   "source": "Q1 FY27 call (Aug 2026, NSE transcript): about 7% more capacity by next financial year, mainly truck radials plus car-tyre balancing at Banmore; Q2 FY27 call (Oct 2026) gave no new date",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "About +7% of total capacity by FY28 (roughly 2.7 million tyres on 38 million-plus)"
   },
   {
@@ -13237,29 +13355,35 @@
    "expectedStart": "Q4 FY27",
    "adds": "full value-chain margin (hoped 12–13%) with direct sales to machine makers from FY28",
    "status": "building",
-   "source": "Q4 FY26 call (Apr 2026): upstream facility ready by March 2027; note (Q1 FY27)",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (Oct 2026): upstream project in the Sri Lanka plant 'running on time' but may spill into Q1 FY28; ₹100–150cr of upstream capex this year; about 85% of customers moved by end September, the rest by end November",
+   "updatedOn": "2026-11-07",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (Oct 2026): upstream equipment due by end of FY27 but 'may spill over' into Q1 FY28, when the whole value chain should be running (Q4 FY26 call had said ready by March 2027)"
+    }
+   ]
   },
   {
    "id": "ceat-nagpur",
    "company": "CEAT",
    "sector": "Tyres",
    "name": "Nagpur two-wheeler tyre expansion",
-   "what": "Two-wheeler tyre capacity at Nagpur going to about 1 lakh tyres a day",
+   "what": "Two-wheeler tyre capacity at Nagpur going from 80,000 to 1 lakh tyres a day",
    "status": "building",
-   "source": "Q1 FY27 call (Jul 2026): 'already under implementation'; part of ₹1,300–1,400cr FY27 capex",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "Nagpur two-wheeler tyres to about 1 lakh a day"
+   "source": "Q2 FY27 call (Oct 2026): ₹120cr+ spent in Q2; capex front-loaded in H1 to have it ready for demand in the coming quarters",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "+20,000 two-wheeler tyres a day: Nagpur from 80,000 to 1 lakh a day (+25%)"
   },
   {
    "id": "ceat-chennai-pcr",
    "company": "CEAT",
    "sector": "Tyres",
    "name": "Chennai car-tyre expansion",
-   "what": "Chennai car-radial line rising to 130 lakh tyres a year",
+   "what": "Chennai car-radial line rising to 130 lakh tyres a year; Chennai truck-bus radial capacity being expanded alongside",
    "status": "building",
-   "source": "Note (Q1 FY27): by FY28",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (Oct 2026): about ₹280cr spent in Q2 on Chennai truck-bus and car-tyre expansion; car radials to 130 lakh by FY28 per note",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "Chennai car radials to 130 lakh tyres a year by FY28"
   },
   {
@@ -13328,9 +13452,9 @@
    "what": "New BMC collection and transport contract for seven Mumbai wards, about 1,500 tonnes a day, needing new vehicles funded by debt",
    "expectedStart": "Q3 FY27",
    "adds": "₹1,330cr over seven years, about ₹190cr a year",
-   "status": "building",
-   "source": "Q4 FY26 call (Jun 2026) and note",
-   "updatedOn": "2026-10-23",
+   "status": "ramping",
+   "source": "Q2 FY27 business update (17 Oct 2026): collection volumes up about 11.5% a year to about 0.60 million t, led by the ramp-up of the new BMC operations; Q4 FY26 call (Jun 2026)",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "About +1,500 t a day of collection from Q3 FY27 (about +25% on today's roughly 6,000 t a day)"
   },
   {
@@ -13352,9 +13476,9 @@
    "name": "Hybrid-annuity sewage plants",
    "what": "Five hybrid-annuity (HAM) sewage plants it builds and part-funds, then runs; government pays back over 15 years; includes two new Varanasi plants (60 MLD Lohta, 45 MLD DDU Nagar) worth ₹256.9cr",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026): one plant completed, Mathura nearly done, Saharanpur ahead of time (3 of 8 milestones); the two Varanasi plants start work in October–November; each takes 18–24 months to build, then 3 months to commercial operation",
-   "updatedOn": "2026-10-23",
-   "capacityAdd": "Includes two new Varanasi sewage plants of 60 MLD (Lohta) and 45 MLD (DDU Nagar); sizes of the other three not given"
+   "source": "Q1 FY27 call (Aug 2026): one plant completed, Mathura on the verge of completion, Saharanpur ahead of schedule (3 of 8 milestones), the two Varanasi plants to start work in October–November; Q2 FY27 results release (5 Nov 2026): 60 MLD Mathura in advanced stages of completion, HAM order book ₹346.3cr",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "Five sewage plants including 60 MLD at Mathura and the two new Varanasi plants of 60 MLD (Lohta) and 45 MLD (DDU Nagar); sizes of the other two not given"
   },
   {
    "id": "enviro-infra-engine-suyog",
@@ -13500,8 +13624,8 @@
    "expectedStart": "Q3 FY27",
    "adds": "total capacity from 4.2 lakh to 9.2 lakh units a year",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026): paint shop under trial, go-live later this calendar year; note: full speed may spill into early FY28 (in May it said before March 2027)",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (Oct 2026): trial production 'in the next few weeks', on track for Q3 FY27; commercial output in phases from December 2026; capex installed by Q4 FY27; the 42,000-a-month base takes about two quarters to ramp",
+   "updatedOn": "2026-11-07",
    "capacityAdd": "+5 lakh scooters a year (42,000 a month): total from 4.2 lakh to 9.2 lakh (about +120%)"
   },
   {
@@ -14005,6 +14129,98 @@
    "source": "Board outcome (NSE, 24 Oct 2026)",
    "updatedOn": "2026-11-01",
    "capacityAdd": "+9,000 t a month of tile adhesive"
+  },
+  {
+   "id": "ather-energy-capacity-boost",
+   "company": "Ather Energy",
+   "sector": "Vehicles",
+   "name": "Hosur and AURIC capacity boost",
+   "what": "Board-approved (26 Oct 2026) additions on top of today's plans: Hosur from 4.2 lakh to 4.95 lakh scooters a year, with a new battery line; AURIC phase 1 from 5 lakh to 6.5 lakh a year",
+   "cost": "up to ₹122cr (Hosur up to ₹58cr including ₹53cr for a new battery line; AURIC up to ₹64cr), from debt and internal cash",
+   "expectedStart": "Q3 FY27",
+   "adds": "combined installed capacity of about 11.4 lakh scooters a year by Q2 FY28 (from 9.2 lakh after AURIC phase 1)",
+   "status": "building",
+   "source": "Board filing and press release (26 Oct 2026); Q2 FY27 call (Oct 2026): Hosur addition 'happening right away', live later this quarter",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "+2.25 lakh scooters a year: Hosur +75,000 (about +18% on 4.2 lakh) by December 2026 and AURIC +1.5 lakh (+30% on phase 1's 5 lakh) by Q2 FY28; total about 11.4 lakh"
+  },
+  {
+   "id": "borosil-solar-phase4",
+   "company": "Borosil",
+   "sector": "Consumer Durables",
+   "name": "Solar phase 4 (9.5 MWp)",
+   "what": "Two more captive solar plants at Bikaner: 6.5 MWp with 5 MWh battery storage for Borosil (₹27.6cr) and 3 MWp for the Hydra unit under Stylenest (₹10cr)",
+   "cost": "about ₹37.6cr (₹27.6cr + ₹10cr)",
+   "expectedStart": "Q4 FY27",
+   "adds": "about ₹12cr a year of further power savings",
+   "status": "building",
+   "source": "Q2 FY27 call (Nov 2026): \"under implementation\"; the 3 MWp Hydra plant due in commercial operation in Q4 FY27",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "+9.5 MWp solar (about +27% on 35.8 MWp)"
+  },
+  {
+   "id": "e2e-networks-blackwell-5mw",
+   "company": "E2E Networks",
+   "sector": "Software",
+   "name": "5.4 MW B300 and Blackwell expansion",
+   "what": "About 5.4 MW of new GPU capacity of NVIDIA HGX B300 systems and other Blackwell GPUs, for model training and inference hosted in India",
+   "cost": "Not given (\"will depend on the actual deployment\"); paid from internal accruals and debt",
+   "adds": "Capacity for large-scale training, inference and agentic workloads; built for visible demand (MD)",
+   "status": "planned",
+   "source": "Capacity filing and press release (26 Oct 2026): to be added per the deployment plan and demand, no dates given",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "+about 5.4 MW, nearly 59% on today's about 9.2 MW, to about 14.6 MW"
+  },
+  {
+   "id": "lt-foods-mp-organic",
+   "company": "LT Foods",
+   "sector": "Food Products",
+   "name": "Madhya Pradesh organic-foods facility",
+   "what": "New facility for Nature Bio Foods (the organic arm) that consolidates its Indian manufacturing; near-term cost, meant to improve efficiency and cost",
+   "expectedStart": "Q4 FY27",
+   "status": "building",
+   "source": "Q2 FY27 call (Oct 2026): first phase expected to start operations in this financial year; no cost or capacity given",
+   "updatedOn": "2026-11-07"
+  },
+  {
+   "id": "shyam-metalics-phutamura-coal",
+   "company": "Shyam Metalics",
+   "sector": "Iron and Steel",
+   "name": "Phutamura captive coal block, Chhattisgarh",
+   "what": "Buying 51% of Alom Solar, which holds mining rights to the Phutamura coal block in Raigarh, Chhattisgarh (about 7.3 sq km, about 170 million t of reserves), to secure coal for its captive power and steel plants",
+   "cost": "₹360cr initial capex, Shyam's 51% share about ₹183.6cr (the partner funds 49%); the stake itself costs a nominal ₹51,000",
+   "expectedStart": "Q2 FY28",
+   "adds": "about ₹400cr of extra EBITDA a year by FY31 (company)",
+   "status": "planned",
+   "source": "Filings of 13 Oct 2026 (mining rights; production expected July 2027) and 31 Oct 2026 (board approval, subject to definitive agreements; results press release)",
+   "updatedOn": "2026-11-07"
+  },
+  {
+   "id": "skipper-greenfield",
+   "company": "Skipper",
+   "sector": "Construction - Power",
+   "name": "Greenfield tower plant towards 600,000 tonnes",
+   "what": "New greenfield unit in two phases taking tower capacity from 450,000 t to 600,000 t a year; land in advanced stages of identification",
+   "cost": "Not given; capex intensity similar to past brownfield work plus the cost of land (annual capex about ₹250–300cr)",
+   "expectedStart": "Q4 FY28",
+   "status": "planned",
+   "source": "Q2 FY27 call (Oct 2026): location to be identified this quarter; first phase by end of FY28, second by end of FY29 (the Q4 FY26 call had said 600,000 t by FY28)",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "+150,000 t a year in two phases (about +33% on 450,000 t after the current expansion), to 600,000 t"
+  },
+  {
+   "id": "steel-strips-wheels-sambhajinagar",
+   "company": "Steel Strips Wheels",
+   "sector": "Auto Related",
+   "name": "Sambhajinagar (Aurangabad) greenfield plant",
+   "what": "New plant in Maharashtra for passenger-car and OTR alloy and steel wheels, plus a hot-stamping line for car body parts built for an anchor customer nearby: 2.5 million alloy wheels, 1.6 million steel wheels (1 million car, 0.6 million OTR) and 1.3 million hot-stamping strokes a year",
+   "cost": "about ₹1,400cr (hot-stamping part about ₹170cr)",
+   "expectedStart": "Q3 FY28",
+   "adds": "Hot stamping about ₹400cr of sales; alloy capacity to about 9.1 million; MD expects return on capital above the current 24%",
+   "status": "planned",
+   "source": "Q2 FY27 call (Oct 2026): board approved subject to regulatory clearances; spread over 60 months; funded by debt, internal accruals and likely strategic partners; hot stamping to start production around October–December 2027 or a little later",
+   "updatedOn": "2026-11-07",
+   "capacityAdd": "+2.5 million alloy wheels a year (about +38% on about 6.6 million after Bhuj), +1.6 million steel wheels (about +8% on about 21 million) and a new hot-stamping line of 1.3 million strokes a year"
   }
  ]
 }

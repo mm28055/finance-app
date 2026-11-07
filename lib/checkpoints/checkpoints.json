@@ -9535,7 +9535,11 @@
    "text": "The 765 kV technology deal signed",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "The 765 kV technology tie-up fell through; the company now plans an in-house prototype, tested in H1 FY28",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "765 kV now tracked as an in-house prototype milestone (H1 FY28)"
   },
   {
    "id": "shilchar-tech-q2fy27-1",
@@ -17601,7 +17605,13 @@
    "text": "New US injectable block on time for March 2027",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q1 FY27 call (Aug 2026, official transcript): the 5 more injectable lines come \"this time next year\", about Q2 FY28, later than March 2027"
+    }
+   ]
   },
   {
    "id": "caplin-point-labs-q4fy27-2",
@@ -22988,7 +22998,13 @@
    "ifMet": "Price fits",
    "ifMissed": "Stay follow at best",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 business update (17 Oct 2026): restart now expected by December 2026, not October (still within Q3 FY27); OEMs repairing and recommissioning the equipment"
+    }
+   ]
   },
   {
    "id": "antony-waste-hand-q2fy27-1",
@@ -24123,7 +24139,13 @@
    "due": "Q1 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "minda-corp-sunroof"
+   "project": "minda-corp-sunroof",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "This milestone carries the switches JV's timing by mistake. The sunroof JV start was guided for Q2 FY27: Aug 2026 call said \"completely on track\", customer trials approved first time. See the Q2 FY27 milestone"
+    }
+   ]
   },
   {
    "id": "minda-corp-switches-m1",
@@ -24133,7 +24155,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "minda-corp-switches"
+   "project": "minda-corp-switches",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q1 FY27 call (Aug 2026): start now Q4 FY27 or Q1 FY28"
+    }
+   ]
   },
   {
    "id": "minda-corp-cluster-2-m1",
@@ -24143,7 +24171,13 @@
    "due": "Q1 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "minda-corp-cluster-2"
+   "project": "minda-corp-cluster-2",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Due date misread: the May 2026 call said \"ready by Q1 of next year\", i.e. Q1 FY28 (the project's stored start). Not updated on the Aug 2026 call"
+    }
+   ]
   },
   {
    "id": "minda-corp-pune-diecast-m1",
@@ -24253,7 +24287,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "steel-strips-wheels-bhuj"
+   "project": "steel-strips-wheels-bhuj",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q1 FY27 call (Jul 2026) moved Bhuj trials to Q4 FY27; Q2 FY27 call (Oct 2026): knuckle commercial production in Q4 FY27, alloy-wheel plant from early April 2027 (see milestones m4 and m5)"
+    }
+   ]
   },
   {
    "id": "steel-strips-wheels-bhuj-m2",
@@ -24263,7 +24303,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "steel-strips-wheels-bhuj"
+   "project": "steel-strips-wheels-bhuj",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (Oct 2026): only the knuckle plant in Q4 FY27; the alloy-wheel plant now starts in early April 2027 (Q1 FY28)"
+    }
+   ]
   },
   {
    "id": "steel-strips-wheels-bhuj-m3",
@@ -24731,7 +24777,13 @@
    "due": "Q2 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "sjs-enterprises-displays"
+   "project": "sjs-enterprises-displays",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "The plant is at Koregaon Bhima, Pune, not Hosur (filing 11 Oct 2026); the 4 Nov 2026 press release says operational by Q2 FY28. Judge on first sales from the Pune plant"
+    }
+   ]
   },
   {
    "id": "lumax-auto-tech-manesar-m1",
@@ -24825,7 +24877,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "belrise-industries-bengaluru"
+   "project": "belrise-industries-bengaluru",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Correction: the official Q1 FY27 transcript (Aug 2026) says over ₹65cr a year (INR 650 million), not ₹66cr; start still Q4 FY27"
+    }
+   ]
   },
   {
    "id": "belrise-industries-solar-m1",
@@ -25255,7 +25313,13 @@
    "due": "Q4 FY29",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "himadri-speciality-lfp"
+   "project": "himadri-speciality-lfp",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (22 Oct 2026): the 40,000 t plant is to start at the end of FY28 (new milestone lfp-m3, Q4 FY28); LFP sales from FY29 at 50%+ use in the first year, 90%+ after"
+    }
+   ]
   },
   {
    "id": "himadri-speciality-super-black-m1",
@@ -26407,7 +26471,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "smartworks-coworking-fy27-campuses"
+   "project": "smartworks-coworking-fy27-campuses",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q1 FY27 call (Jul 2026) had said over 13m sq ft by March 2027; the Q2 FY27 call (Oct 2026) is back to 12.5–13m sq ft ('13 million by March end'), so this target stands; 10.9m sq ft operating at Q2"
+    }
+   ]
   },
   {
    "id": "smartworks-coworking-east-bridge-m1",
@@ -26417,7 +26487,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "smartworks-coworking-east-bridge"
+   "project": "smartworks-coworking-east-bridge",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (Oct 2026): occupancy certificate not yet received; 3–4 months of fit-out after it; revenue may start late in Q4 FY27"
+    }
+   ]
   },
   {
    "id": "awfis-space-solutions-fy27-seats-m1",
@@ -26720,8 +26796,13 @@
    "text": "Doubled conductor capacity starts production",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "transrail-lighting-conductor"
+   "status": "partly",
+   "project": "transrail-lighting-conductor",
+   "actual": "Phase 1 done 21 Sep 2026: conductor 24,000 to 40,800 km a year (+70%), not doubled",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "Capacity came on in Q2 but only 70% more; doubling left to phase 2",
+   "correction": true
   },
   {
    "id": "transrail-lighting-butibori-m1",
@@ -26730,8 +26811,12 @@
    "text": "IPO Phase 1 capex finished, tower capacity about 1,96,000 tonnes",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "transrail-lighting-butibori"
+   "status": "partly",
+   "project": "transrail-lighting-butibori",
+   "actual": "Phase 1 done 30 Sep 2026: towers +12,000 t to 1,84,400 t a year",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "Phase 1 finished in Q2 but about 11,600 t short of 1,96,000 t"
   },
   {
    "id": "skipper-75kt-m1",
@@ -26740,8 +26825,12 @@
    "text": "Expansion commissioned",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "skipper-75kt"
+   "status": "missed",
+   "project": "skipper-75kt",
+   "actual": "Not commissioned by September 2026; now end of Q3 or early Q4 FY27",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "Missed: the Q2 FY27 call (Oct 2026) moved commissioning to the end of Q3 or early Q4 FY27"
   },
   {
    "id": "skipper-75kt-m2",
@@ -26751,7 +26840,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "skipper-75kt"
+   "project": "skipper-75kt",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (Oct 2026): the expansion itself now starts only at the end of Q3 or early Q4 FY27, so real use falls later"
+    }
+   ]
   },
   {
    "id": "kec-international-specialty-cables-m1",
@@ -27607,7 +27702,13 @@
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "atlanta-electricals-vadod-400kv"
+   "project": "atlanta-electricals-vadod-400kv",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Earlier than this: the Q1 FY27 call said the first 315 MVA 400 kV order is to be finished within FY27 if the test passes, and the Q2 FY27 results put the test by end-December 2026 (new milestone vadod-400kv-m3, Q4 FY27); meaningful 400 kV revenue from FY28"
+    }
+   ]
   },
   {
    "id": "atlanta-electricals-atlanta-trafo-m1",
@@ -27616,8 +27717,12 @@
    "text": "765 kV technology deal signed and first 765 kV bids made",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "atlanta-electricals-atlanta-trafo"
+   "status": "missed",
+   "project": "atlanta-electricals-atlanta-trafo",
+   "actual": "No deal: the tie-up did not materialise and 765 kV moved to in-house design (Q2 FY27 call, 2 Nov 2026)",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "The 765 kV step is pushed out; in-house prototype testing targeted by H1 FY28"
   },
   {
    "id": "shilchar-tech-gavasad-3-m1",
@@ -28085,7 +28190,13 @@
    "due": "Q4 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "lt-foods-us-rth"
+   "project": "lt-foods-us-rth",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "The official Q1 FY27 call (Jul 2026) says ready-to-heat doubles 'in 3 years' time', about FY29 (the May 2026 call had said two years); the US plant was still not commissioned at the Q2 FY27 call (Oct 2026)"
+    }
+   ]
   },
   {
    "id": "godrej-agrovet-specialty-fats-m1",
@@ -28645,7 +28756,13 @@
    "due": "Q1 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "yatharth-hospital-gurugram"
+   "project": "yatharth-hospital-gurugram",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 presentation (3 Nov 2026): now \"by H1 FY28\"; tracked as yatharth-hospital-gurugram-m2"
+    }
+   ]
   },
   {
    "id": "yatharth-hospital-noida-brownfield-m1",
@@ -28655,7 +28772,13 @@
    "due": "Q3 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "yatharth-hospital-noida-brownfield"
+   "project": "yatharth-hospital-noida-brownfield",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q1 FY27 call (Aug 2026): only about 200 of the 450 beds in about 15 months (Q3 FY28); the other 250 in 18–19 months (Q4 FY28), tracked as yatharth-hospital-noida-brownfield-m2"
+    }
+   ]
   },
   {
    "id": "yatharth-hospital-new-hospitals-m1",
@@ -29897,7 +30020,13 @@
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "shyam-metalics-aluminium"
+   "project": "shyam-metalics-aluminium",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 results release (31 Oct 2026) reports 18,000 TPA of foil added (total about 42,000 TPA) but does not say the flat-rolled plant was commissioned; judge on the Q2 FY27 call"
+    }
+   ]
   },
   {
    "id": "sambhv-steel-tubes-kesda-m1",
@@ -31320,8 +31449,18 @@
    "text": "Decision on new fermentation capacity",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "advanced-enzyme-fermentation"
+   "status": "missed",
+   "project": "advanced-enzyme-fermentation",
+   "actual": "No decision announced by the Q2 FY27 call (3 Nov 2026); capex guide unchanged at about ₹123cr",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "Not decided in Q2; the Aug call's \"next quarter\" points to Q3 FY27, new milestone added",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "The stored (AI-made) Aug 2026 transcript says the decision comes \"in the next quarter\" (Q3 FY27); the official transcript could not be reached to confirm"
+    }
+   ]
   },
   {
    "id": "hexagon-nutrition-nashik-m1",
@@ -31351,7 +31490,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "caplin-point-labs-injectable-block"
+   "project": "caplin-point-labs-injectable-block",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q1 FY27 call (Aug 2026, official transcript): 5 more lines \"this time next year\", about Q2 FY28; new date tracked as caplin-point-labs-injectable-block-m2"
+    }
+   ]
   },
   {
    "id": "rubicon-research-pithampur-m1",
@@ -31441,7 +31586,13 @@
    "due": "Q2 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "orchid-pharma-cefiderocol"
+   "project": "orchid-pharma-cefiderocol",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "The official Aug 2026 (Q1 FY27) call puts Indian approval at \"Q3 of next financial year\", i.e. Q3 FY28, 6–9 months after the plant is ready and only if a clinical trial is waived; see the Q3 FY28 milestone"
+    }
+   ]
   },
   {
    "id": "ipca-laboratories-pisgah-m1",
@@ -31789,7 +31940,13 @@
    "due": "Q2 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "shakti-pumps-cell-2-2gw"
+   "project": "shakti-pumps-cell-2-2gw",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (Oct 2026): completion now \"in FY28\", strong revenue after March 2028"
+    }
+   ]
   },
   {
    "id": "shakti-pumps-pump-capacity-m1",
@@ -31798,8 +31955,13 @@
    "text": "Expanded pump capacity available",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "shakti-pumps-pump-capacity"
+   "status": "missed",
+   "project": "shakti-pumps-pump-capacity",
+   "actual": "Not ready in Q2 FY27: the July call had moved it to November 2026 and the pump and motor facility was still being built at the 26 Oct call",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "Slipped to Q3 FY27 at the earliest; new milestone added",
+   "correction": true
   },
   {
    "id": "oswal-pumps-modules-m1",
@@ -32057,7 +32219,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "shoppers-stop-dept-stores"
+   "project": "shoppers-stop-dept-stores",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (16 Oct 2026): FY27 target raised to 12 new department stores (was 9–10); six opened in H1, seventh in Jaipur in October"
+    }
+   ]
   },
   {
    "id": "apcotex-inds-nbr-m1",
@@ -32299,7 +32467,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "izmo-packaging"
+   "project": "izmo-packaging",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Correction: ₹9.2cr was izmo Microsystems' Q4 FY26 sales, not Q1 FY27 (no Q1 FY27 figure given). Target unchanged: about ₹45–50cr in FY27 against about ₹18–19cr in FY26 (Jun 2026 call)"
+    }
+   ]
   },
   {
    "id": "railtel-corporation-of-india-noida-dc-m1",
@@ -32763,7 +32937,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "jk-tyre-and-indust-banmore"
+   "project": "jk-tyre-and-indust-banmore",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "The official NSE transcript of the Q1 FY27 call (Aug 2026) puts the about 7% addition in the next financial year (FY28), not this year; the Q4 FY27 date came from the AI copy. The Q2 FY27 call gave no new date"
+    }
+   ]
   },
   {
    "id": "ceat-2w-plant-m1",
@@ -32782,8 +32962,12 @@
    "text": "About 90% of Camso customers moved from Michelin",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "ceat-camso-upstream"
+   "status": "partly",
+   "project": "ceat-camso-upstream",
+   "actual": "About 85% moved by end September 2026",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "85% of Camso customers moved by end September, a little short of about 90%; the rest due by end November (Q2 FY27 call)"
   },
   {
    "id": "ceat-camso-upstream-m2",
@@ -32793,7 +32977,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "ceat-camso-upstream"
+   "project": "ceat-camso-upstream",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (Oct 2026): upstream equipment due by end of FY27 but may spill over into Q1 FY28"
+    }
+   ]
   },
   {
    "id": "ceat-chennai-pcr-m1",
@@ -32852,8 +33042,13 @@
    "text": "First HAM plant commissioned",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "enviro-infra-engine-ham-plants"
+   "status": "met",
+   "project": "enviro-infra-engine-ham-plants",
+   "actual": "One of the five HAM plants was already completed by the Q1 FY27 call (12 Aug 2026)",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "First plant done before this milestone was written",
+   "correction": true
   },
   {
    "id": "enviro-infra-engine-suyog-m1",
@@ -32983,7 +33178,13 @@
    "due": "Q1 FY28",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "ather-energy-auric-1"
+   "project": "ather-energy-auric-1",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (Oct 2026): capex installation done by Q4 FY27 and the 42,000-a-month base 'will certainly take 2 quarters to ramp up'; no new date given"
+    }
+   ]
   },
   {
    "id": "ola-electric-cell-6gwh-m1",
@@ -38536,6 +38737,366 @@
    "createdOn": "2026-11-06",
    "status": "pending",
    "project": "greenply-industries-sandila-ply"
+  },
+  {
+   "id": "advanced-enzyme-fermentation-m2",
+   "company": "Advanced Enzyme",
+   "sector": "Pharma Others",
+   "text": "Decision on new fermentation capacity (\"in the next quarter\", Aug 2026 call)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "advanced-enzyme-fermentation"
+  },
+  {
+   "id": "ather-energy-capacity-boost-m1",
+   "company": "Ather Energy",
+   "sector": "Vehicles",
+   "text": "Hosur capacity up to 4.95 lakh a year (by December 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "ather-energy-capacity-boost"
+  },
+  {
+   "id": "ather-energy-capacity-boost-m2",
+   "company": "Ather Energy",
+   "sector": "Vehicles",
+   "text": "AURIC's extra 1.5 lakh a year starts production, taking total installed capacity to about 11.4 lakh (by Q2 FY28)",
+   "due": "Q2 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "ather-energy-capacity-boost"
+  },
+  {
+   "id": "ather-energy-capacity-boost-m3",
+   "company": "Ather Energy",
+   "sector": "Vehicles",
+   "text": "New battery line at Hosur complete (by Q3 FY28)",
+   "due": "Q3 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "ather-energy-capacity-boost"
+  },
+  {
+   "id": "atlanta-electricals-vadod-400kv-m3",
+   "company": "Atlanta Electricals",
+   "sector": "Electrical Transformers",
+   "text": "First 400 kV order (315 MVA) delivered within FY27, after the short-circuit test",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "atlanta-electricals-vadod-400kv"
+  },
+  {
+   "id": "atlanta-electricals-atlanta-trafo-m2",
+   "company": "Atlanta Electricals",
+   "sector": "Electrical Transformers",
+   "text": "First in-house 765 kV prototype tested (targeted by H1)",
+   "due": "H1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "atlanta-electricals-atlanta-trafo"
+  },
+  {
+   "id": "atlanta-electricals-tanks-m1",
+   "company": "Atlanta Electricals",
+   "sector": "Electrical Transformers",
+   "text": "Tank and radiator plant completed (within a year of the 31 Oct 2026 approval)",
+   "due": "Q3 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "atlanta-electricals-tanks"
+  },
+  {
+   "id": "borosil-solar-phase4-m1",
+   "company": "Borosil",
+   "sector": "Consumer Durables",
+   "text": "3 MWp solar plant for the Hydra unit in commercial operation (Q4 FY27)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "borosil-solar-phase4"
+  },
+  {
+   "id": "caplin-point-labs-injectable-block-m2",
+   "company": "Caplin Point Labs",
+   "sector": "Pharma",
+   "text": "5 more injectable lines at the new (Phase 3) facility, \"this time next year\" (about August 2027)",
+   "due": "Q2 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "caplin-point-labs-injectable-block"
+  },
+  {
+   "id": "ceat-camso-upstream-m3",
+   "company": "CEAT",
+   "sector": "Tyres",
+   "text": "Rest of Camso customers moved over from Michelin (by end November 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "ceat-camso-upstream"
+  },
+  {
+   "id": "ceat-camso-upstream-m4",
+   "company": "CEAT",
+   "sector": "Tyres",
+   "text": "Camso's upstream equipment in Sri Lanka ready and the whole value chain running (by Q1 FY28)",
+   "due": "Q1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "ceat-camso-upstream"
+  },
+  {
+   "id": "enviro-infra-engine-ham-plants-m2",
+   "company": "Enviro Infra Engine.",
+   "sector": "Utilities",
+   "text": "Work starts on the two Varanasi HAM plants (October–November 2026, Aug 2026 call)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "enviro-infra-engine-ham-plants"
+  },
+  {
+   "id": "himadri-speciality-lfp-m3",
+   "company": "Himadri Speciality",
+   "sector": "Chemicals",
+   "text": "40,000-tonne Phase 1 LFP plant starts (end of FY28)",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "himadri-speciality-lfp"
+  },
+  {
+   "id": "jk-tyre-and-indust-banmore-m2",
+   "company": "JK Tyre & Indust",
+   "sector": "Tyres",
+   "text": "About 7% extra capacity running, mainly truck radials plus Banmore balancing (by FY28)",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "jk-tyre-and-indust-banmore"
+  },
+  {
+   "id": "lt-foods-us-rth-m4",
+   "company": "LT Foods",
+   "sector": "Food Products",
+   "text": "Ready-to-heat sales of about ₹300cr a year (double FY26's about ₹150cr, 'in 3 years' time' per the Jul 2026 call)",
+   "due": "Q4 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "lt-foods-us-rth"
+  },
+  {
+   "id": "lt-foods-mp-organic-m1",
+   "company": "LT Foods",
+   "sector": "Food Products",
+   "text": "First phase of the Madhya Pradesh organic facility starts operations (this financial year, FY27)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "lt-foods-mp-organic"
+  },
+  {
+   "id": "minda-corp-sunroof-m2",
+   "company": "Minda Corp",
+   "sector": "Auto Related",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "text": "Sunroof JV starts mass production in Q2 FY27, as guided on the Aug 2026 call",
+   "due": "Q2 FY27",
+   "project": "minda-corp-sunroof"
+  },
+  {
+   "id": "minda-corp-switches-m2",
+   "company": "Minda Corp",
+   "sector": "Auto Related",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "text": "Switches JV starts production (Q4 FY27 or Q1 FY28, Aug 2026 call)",
+   "due": "Q1 FY28",
+   "project": "minda-corp-switches"
+  },
+  {
+   "id": "minda-corp-cluster-2-m2",
+   "company": "Minda Corp",
+   "sector": "Auto Related",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "text": "Second instrument-cluster plant ready (by Q1 of next year, May 2026 call)",
+   "due": "Q1 FY28",
+   "project": "minda-corp-cluster-2"
+  },
+  {
+   "id": "orchid-pharma-cefiderocol-m3",
+   "company": "Orchid Pharma",
+   "sector": "Pharma",
+   "text": "Indian approval for cefiderocol, \"Q3 of next financial year\" (Aug 2026 call), if a clinical trial is waived",
+   "due": "Q3 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "orchid-pharma-cefiderocol"
+  },
+  {
+   "id": "shakti-pumps-pump-capacity-m2",
+   "company": "Shakti Pumps",
+   "sector": "Pumps Comp & Eng",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "text": "Expanded pump plant ready (November 2026, Q1 FY27 call)",
+   "due": "Q3 FY27",
+   "project": "shakti-pumps-pump-capacity"
+  },
+  {
+   "id": "shakti-pumps-module-0-5gw-m2",
+   "company": "Shakti Pumps",
+   "sector": "Pumps Comp & Eng",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "text": "0.5 GW module line in commercial production (within 1–1.5 months of the 26 Oct 2026 call)",
+   "due": "Q3 FY27",
+   "project": "shakti-pumps-module-0-5gw"
+  },
+  {
+   "id": "shakti-pumps-cell-2-2gw-m2",
+   "company": "Shakti Pumps",
+   "sector": "Pumps Comp & Eng",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "text": "2.2 GW cell and module plant completed in FY28 (Q2 FY27 call), revenue from after March 2028",
+   "due": "Q4 FY28",
+   "project": "shakti-pumps-cell-2-2gw"
+  },
+  {
+   "id": "shoppers-stop-dept-stores-m2",
+   "company": "Shoppers Stop",
+   "sector": "Retail",
+   "text": "12 new department stores opened in FY27 (six opened in H1)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "shoppers-stop-dept-stores"
+  },
+  {
+   "id": "shyam-metalics-phutamura-coal-m1",
+   "company": "Shyam Metalics",
+   "sector": "Iron and Steel",
+   "text": "Mining starts at the Phutamura coal block (July 2027)",
+   "due": "Q2 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "shyam-metalics-phutamura-coal"
+  },
+  {
+   "id": "sjs-enterprises-displays-m2",
+   "company": "SJS Enterprises",
+   "sector": "Auto Related",
+   "text": "Koregaon Bhima (Pune) display plant operating, by September 2027",
+   "due": "Q2 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "sjs-enterprises-displays"
+  },
+  {
+   "id": "sjs-enterprises-bangalore-m1",
+   "company": "SJS Enterprises",
+   "sector": "Auto Related",
+   "text": "Commercial production starts from the extra 20% Bangalore capacity (Q3 FY27)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "sjs-enterprises-bangalore"
+  },
+  {
+   "id": "skipper-75kt-m3",
+   "company": "Skipper",
+   "sector": "Construction - Power",
+   "text": "75,000 t expansion commissioned (end of Q3 FY27, at the latest early Q4)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "skipper-75kt"
+  },
+  {
+   "id": "skipper-greenfield-m1",
+   "company": "Skipper",
+   "sector": "Construction - Power",
+   "text": "Land for the new greenfield plant identified (target within Q3 FY27)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "skipper-greenfield"
+  },
+  {
+   "id": "skipper-greenfield-m2",
+   "company": "Skipper",
+   "sector": "Construction - Power",
+   "text": "First phase of the greenfield plant running (by end of FY28)",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "skipper-greenfield"
+  },
+  {
+   "id": "skipper-greenfield-m3",
+   "company": "Skipper",
+   "sector": "Construction - Power",
+   "text": "Second phase done, 600,000 t a year in all (by end of FY29)",
+   "due": "Q4 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "skipper-greenfield"
+  },
+  {
+   "id": "steel-strips-wheels-bhuj-m4",
+   "company": "Steel Strips Wheels",
+   "sector": "Auto Related",
+   "text": "Commercial production of aluminium knuckles at Bhuj starts (last quarter of FY27)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "steel-strips-wheels-bhuj"
+  },
+  {
+   "id": "steel-strips-wheels-bhuj-m5",
+   "company": "Steel Strips Wheels",
+   "sector": "Auto Related",
+   "text": "Bhuj alloy-wheel plant starts (early April 2027)",
+   "due": "Q1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "steel-strips-wheels-bhuj"
+  },
+  {
+   "id": "steel-strips-wheels-sambhajinagar-m1",
+   "company": "Steel Strips Wheels",
+   "sector": "Auto Related",
+   "text": "Hot-stamping line at Sambhajinagar starts production (around October–December 2027, maybe a little later)",
+   "due": "Q3 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "steel-strips-wheels-sambhajinagar"
+  },
+  {
+   "id": "yatharth-hospital-noida-brownfield-m2",
+   "company": "Yatharth Hospital",
+   "sector": "Hospitals",
+   "text": "The other about 250 brownfield beds operational (18–19 months from August 2026)",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "yatharth-hospital-noida-brownfield"
+  },
+  {
+   "id": "yatharth-hospital-gurugram-m2",
+   "company": "Yatharth Hospital",
+   "sector": "Hospitals",
+   "text": "Gurugram hospital operational (by H1 FY28, Q2 FY27 presentation)",
+   "due": "H1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "yatharth-hospital-gurugram"
   }
  ]
 }
