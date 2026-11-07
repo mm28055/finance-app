@@ -18,7 +18,7 @@ jobs:
   filings:
     name: Summarise material filings
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 360   # GitHub's ceiling for one job
 
     steps:
       - name: Checkout code
@@ -32,6 +32,29 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      # Call transcripts filed on NSE (and, for companies NSE does not list, on Screener) over the
+      # last seven days: results calls go to their quarter, AGMs and special calls to their own slots.
+      # The transcripts are stored now and their analyses sent to Gemini's batch mode (half price),
+      # which the 7am job (collect-call-batches.yml) saves; this step first saves the profile
+      # refreshes the 7am job sent, and any call batch Google had not finished by the morning.
+      # Runs FIRST: from 3 to 6 Nov 2026 the filings digest took over 3 hours, the job hit its time
+      # cap with this step near the end, and about 60 transcripts were never stored. The seven-day
+      # window lets a night that is cut short be made up the next night. Never fails the job.
+      - name: Fetch call transcripts from the exchange
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        timeout-minutes: 60
+        run: |
+          npx tsx scripts/collect-call-batches.ts
+          npx tsx scripts/sync-exchange-transcripts.ts --batch
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+          GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
+          GOOGLE_AI_KEYS: ${{ secrets.GOOGLE_AI_KEYS }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
 
       - name: Read and summarise the last two days of filings
         run: npx tsx scripts/sync-filings.ts
@@ -121,33 +144,9 @@ jobs:
           GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
           GOOGLE_AI_KEYS: ${{ secrets.GOOGLE_AI_KEYS }}
 
-      # Call transcripts filed on NSE (and, for companies NSE does not list, on
-      # Screener) over the last three days: results calls go to their quarter,
-      # AGMs and special calls to their own slots, each analysed. Runs after the
-      # digest is committed and never fails the job, so a problem here cannot
-      # hold back the filings.
-      # Since 7 Nov 2026 the analyses go to Gemini's batch mode (half price): the transcripts are
-      # stored now and their analyses sent in one batch, which the 7am job (collect-call-batches.yml)
-      # saves. It first saves the profile refreshes the 7am job sent, and any call batch Google
-      # had not finished by the morning.
-      - name: Fetch call transcripts from the exchange
-        if: ${{ !cancelled() }}
-        continue-on-error: true
-        timeout-minutes: 120
-        run: |
-          npx tsx scripts/collect-call-batches.ts
-          npx tsx scripts/sync-exchange-transcripts.ts --batch
-        env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
-          DIRECT_URL: ${{ secrets.DIRECT_URL }}
-          GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
-          GOOGLE_AI_KEYS: ${{ secrets.GOOGLE_AI_KEYS }}
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-
       # Results out in the last five days (dates from the calendar above): the quarter's figures from
       # Screener's quarterly table, a short view on them, and what the call added once it has been
-      # analysed (the step above). Runs last so the call notes can be added the same night; never fails the job.
+      # analysed (the transcript step at the top). Runs last so the call notes can be added; never fails the job.
       - name: Results figures and the overnight view
         if: ${{ !cancelled() }}
         continue-on-error: true

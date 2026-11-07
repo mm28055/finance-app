@@ -2,7 +2,7 @@
  * Call transcripts straight from the exchange — the second source next to the
  * Tijori sync (scripts/smart-sync.ts), run daily after the filings digest.
  *
- *   npx tsx scripts/sync-exchange-transcripts.ts                       (last 3 days)
+ *   npx tsx scripts/sync-exchange-transcripts.ts                       (last 7 days)
  *   npx tsx scripts/sync-exchange-transcripts.ts --from=21-07-2026 --to=28-09-2026 --dry-run
  *   npx tsx scripts/sync-exchange-transcripts.ts --only="Metro Brands,Quess" --source=nse
  *   npx tsx scripts/sync-exchange-transcripts.ts --limit=2              (store at most 2 documents)
@@ -354,7 +354,8 @@ async function main() {
     const screenerCap = arg('screener-cap') ? parseInt(arg('screener-cap')!, 10) : 250;
     const jsonOut = arg('json-out');
     const to = arg('to') || ddmmyyyy(new Date());
-    const from = arg('from') || ddmmyyyy(new Date(Date.now() - 3 * DAY));
+    // Seven days, so a night that is cut short is made up the next night (calls already held are left alone).
+    const from = arg('from') || ddmmyyyy(new Date(Date.now() - 7 * DAY));
     const fromDate = parseDdMmYyyy(from), toDate = parseDdMmYyyy(to, true);
     const only = (arg('only') || '').split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
 
