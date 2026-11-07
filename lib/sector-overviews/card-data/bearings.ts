@@ -781,5 +781,14 @@ export const bearingsValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 245.0,
         "mcapAtWriting": 5276.0,
         "peAtWriting": 35.3
+    },
+    // Added 7 Nov 2026, once the last four quarters (Dec 2025 to Sep 2026) were all after the demerger.
+    // Screener consolidated: operating profit 82 + 33 + 88 + 57; net cash at 30 Sep 2026 = cash 113 + investments 9 − borrowings 2.
+    // Market value and P/E from companies.json on 7 Nov 2026. Trailing profit still carries the ₹61.5cr Mar 2026 tax charge.
+    "SKF India": {
+        "netDebt": -120,
+        "ttmEbitda": 260.0,
+        "mcapAtWriting": 7048.0,
+        "peAtWriting": 44.2
     }
 };

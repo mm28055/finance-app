@@ -3076,7 +3076,11 @@
    "ifMet": "One of two clean quarters needed to move toward Fits",
    "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Pre-tax margin 11.7% (₹70cr on ₹596cr; 14.3% in Q1), no stock gain cited: steel and supplier price rises landed before customer price rises were billed (Q2 call)",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "Stays wait; management expects most of the cost to be recovered, with arrears, in the December quarter"
   },
   {
    "id": "skf-india-q3fy27-1",
@@ -3087,7 +3091,13 @@
    "ifMet": "Two clean quarters could justify a higher estimate",
    "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (5 Nov): Q2 pre-tax margin fell to 11.7%; management expects most of the steel and supplier cost rise to be billed to customers, with arrears, in the December quarter and EBITDA (counting other income) back above 15% within FY27"
+    }
+   ]
   },
   {
    "id": "skf-india-q4fy27-1",
@@ -3099,7 +3109,13 @@
    "target": 18,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (5 Nov): the ‘close to 20%’ FY27 guide was not restated; Q1 product sales grew 27% and Q2 16% against carved-out bases; management spoke of 15% or a little more for FY28"
+    }
+   ]
   },
   {
    "id": "skf-india-q4fy27-2",
@@ -3108,7 +3124,13 @@
    "text": "Haridwar lines starting in Q4 FY27",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (5 Nov): first new line to start in the December 2026 quarter, a second line and a capacity upgrade at Haridwar in March 2027, and a third new line in July 2027"
+    }
+   ]
   },
   {
    "id": "skf-india-industrial-q4fy27-1",
@@ -22792,7 +22814,11 @@
    "text": "A successor to the departing CFO (Gaurav Kumar) is named",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Ravi Kumar Shingari, with Apollo since 2018 (latterly VP accounts, tax, finance, legal and investor relations), appointed CFO from 4 Nov 2026",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "Stays own"
   },
   {
    "id": "apollo-tyres-q4fy27-2",
@@ -24979,7 +25005,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "skf-india-haridwar"
+   "project": "skf-india-haridwar",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Q2 FY27 call (5 Nov): one Haridwar line and a capacity upgrade in March 2027, a further new line in July 2027; a first new line (site not named) in the December 2026 quarter"
+    }
+   ]
   },
   {
    "id": "timken-india-bharuch-m1",
