@@ -274,9 +274,15 @@ export function AnalysisPanel({
         }
 
         if (!activeData) {
+            // A stored transcript without its analysis is waiting for the overnight batch
+            // (sent at 8pm or by a catch-up run, saved by the 7am job), not missing.
+            const item = safeHistory.find(h => h.quarter === activeQuarter);
+            const hasCall = !!(item && 'pdfUrl' in item && item.pdfUrl);
             return (
-                <div className="flex items-center justify-center py-8 text-gray-400 italic text-xs">
-                    No analysis available. Sync data to generate.
+                <div className="flex items-center justify-center py-8 px-6 text-center text-gray-400 italic text-xs">
+                    {hasCall
+                        ? "The call transcript is in. Its analysis is being written and usually appears by 7am the next morning."
+                        : "No call analysis for this quarter."}
                 </div>
             );
         }
