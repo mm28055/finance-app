@@ -29,7 +29,7 @@ import path from 'path';
 // @ts-ignore - pdf-parse ships no types
 import pdfParse from 'pdf-parse';
 import { prisma } from '../lib/prisma';
-import { geminiPro, geminiScreen } from '../lib/gemini';
+import { geminiPro, geminiScreen, geminiLight } from '../lib/gemini';
 import { classifyImpact } from '../lib/filings/impact';
 import { nseAnnouncements, nseInsiderFilings, nsePitDisclosure, parseNseDate, NSE_UA, type PitTrade } from '../lib/filings/nse';
 import { nseSymbolForIsin } from '../lib/corporate-actions/nse-lists';
@@ -333,7 +333,7 @@ ${factsFor(e)}
 Headline already written: "${headline}"
 Write ONE or TWO short plain-English sentences: who did what, the % of the company and value, the price versus today's price, and the holding before → after when given. Say "pledged" plainly (shares given to lenders as security) and, for an invocation, that lenders took or sold pledged shares. Use only the figures above; never invent any. Reply with the sentences only.`;
     try {
-        const res = await geminiPro.generateContent(prompt);
+        const res = await geminiLight.generateContent(prompt);
         const s = res.response.text().trim().replace(/^["']|["']$/g, '');
         if (s && s.length < 600) return s;
     } catch { /* fall back below */ }
@@ -373,18 +373,16 @@ Reply with JSON only:
  "headline": "one plain-English line, under 90 characters, with the key number",
  "summary": "two or three short sentences: what happened, with exact figures from the filing, and why it matters (for example, size versus yearly sales). For ANY share issue, warrant or preferential allotment, state the dilution (percent more shares and percent dilution to existing holders, using the share count above) and the issue price versus the current share price. Never invent numbers; if a figure is not in the text, leave it out."}`;
 
-// Two passes: the cheap, fast model screens every filing; only the few it finds material
-// go to Pro, which makes the final call and writes the headline and summary.
+// Flash makes the call and writes the headline and summary. Until 7 Nov 2026 Pro re-judged every
+// filing Flash found material; the owner moved that to Flash to cut cost. Pro is used only when
+// Flash fails twice, so a filing is never dropped.
 async function judge(c: any, a: any, text: string) {
     const ask = async (model: typeof geminiPro) => {
         const raw = (await model.generateContent(PROMPT(c, a, text))).response.text();
         return JSON.parse(raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1));
     };
-    try {
-        const first = await ask(geminiScreen);
-        if (!first?.material) return first;
-    } catch {
-        // Screening failed: fall through to Pro rather than drop the filing.
+    for (const model of [geminiScreen, geminiLight]) {
+        try { return await ask(model); } catch { /* try again, then fall back to Pro */ }
     }
     return ask(geminiPro);
 }

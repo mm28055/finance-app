@@ -11,7 +11,7 @@
 // and scripts/extract-guidance.ts for bulk runs and re-checks.
 // -----------------------------------------------------------------------------
 import { prisma } from './prisma';
-import { geminiFlash } from './gemini';
+import { geminiLight } from './gemini';
 
 export interface ExtractedGuidance {
     growth_min: number | null;
@@ -157,7 +157,7 @@ export async function extractGuidanceForAnalysis(analysisId: string): Promise<Ex
 
     if (!analysis?.investorBrief) return null;
 
-    const res = await geminiFlash.generateContent(
+    const res = await geminiLight.generateContent(
         PROMPT(analysis.company.name, analysis.quarter.name, analysis.investorBrief, await lastYearRevenue(analysis.companyId))
     );
     const parsed = parseJson((await res.response).text());

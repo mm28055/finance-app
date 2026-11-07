@@ -16,7 +16,7 @@
 import fs from 'fs';
 import path from 'path';
 import { prisma } from '../lib/prisma';
-import { geminiPro } from '../lib/gemini';
+import { geminiLight } from '../lib/gemini';
 import { screenerPageUrl, fetchScreenerPage, screenerTable, type ScreenerTable } from '../lib/screener-page';
 import { businessFor } from '../lib/sector-overviews';
 import type { CompanyEvent } from '../lib/events/types';
@@ -32,7 +32,7 @@ const CHECKPOINTS = path.join(process.cwd(), 'lib/checkpoints/checkpoints.json')
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 // A low temperature, so the same result gets the same verdict if it is ever written again.
 const ask = async (prompt: string): Promise<string> =>
-    (await geminiPro.generateContent({ contents: [{ role: 'user', parts: [{ text: prompt }] }], generationConfig: { temperature: 0.2 } })).response.text();
+    (await geminiLight.generateContent({ contents: [{ role: 'user', parts: [{ text: prompt }] }], generationConfig: { temperature: 0.2 } })).response.text();
 const todayIst = () => new Date(Date.now() + 5.5 * 3600000).toISOString().slice(0, 10);
 const daysAgo = (n: number) => { const d = new Date(todayIst() + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() - n); return d.toISOString().slice(0, 10); };
 

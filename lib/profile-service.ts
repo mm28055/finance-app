@@ -116,7 +116,9 @@ function buildRevisePrompt(opts: {
     fromQuarter: string | null;
     existingProfile: string;
     analysisText: string;
-    transcriptText: string;
+    // Only when the quarter has no write-up. The write-up comes from this same call, so also
+    // sending the transcript paid for a second full read of it (dropped Nov 2026 to save cost).
+    transcriptText?: string;
 }) {
     return `
 Role: You are a Senior Equity Research Analyst maintaining a living company profile for your Investment Committee.
@@ -143,9 +145,7 @@ ${opts.existingProfile}
 ANALYST WRITE-UP FOR THIS QUARTER:
 ${opts.analysisText}
 
-EARNINGS CALL TRANSCRIPT FOR THIS QUARTER:
-${opts.transcriptText.slice(0, 25000)}
-
+${opts.transcriptText ? `EARNINGS CALL TRANSCRIPT FOR THIS QUARTER:\n${opts.transcriptText.slice(0, 25000)}\n` : ''}
 OUTPUT FORMAT (Markdown):
 Return ONLY the complete updated Markdown profile. Start with: # ${opts.name}
 `;
@@ -303,7 +303,7 @@ export async function buildProfilePrompt(
             fromQuarter: company.profileQuarter,
             existingProfile: existing,
             analysisText: analysisContext(analysis),
-            transcriptText: target.rawText
+            transcriptText: analysis?.investorBrief ? undefined : target.rawText
         });
     } else {
         const investorData = await loadInvestorData(company.ticker, company.name.trim(), quarterName);

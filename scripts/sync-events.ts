@@ -12,14 +12,14 @@
  *    kept only when it announces the earnings call for a quarter's results, with its date and time.
  *
  * Writes lib/events/events.json (past events kept 45 days) and lib/events/seen.json (notices read).
- * Companies listed only on BSE are not covered. Reading the notices uses Gemini Pro on short text.
+ * Companies listed only on BSE are not covered. Reading the notices uses Gemini Flash on short text.
  */
 import 'dotenv/config';
 import fs from 'fs';
 import path from 'path';
 import pdfParse from 'pdf-parse';
 import { prisma } from '../lib/prisma';
-import { geminiPro } from '../lib/gemini';
+import { geminiLight } from '../lib/gemini';
 import { nseAnnouncements, nseBoardMeetings, NSE_UA } from '../lib/filings/nse';
 import { EVENTS_KEEP_DAYS, type CompanyEvent } from '../lib/events/types';
 
@@ -123,7 +123,7 @@ Reply with JSON only: [{"i": <notice number>, "date": "YYYY-MM-DD", "time": "<st
 ${chunk.map((a, j) => `NOTICE ${j} — ${a.sm_name}, filed ${a.an_dt}\n${texts[j] || '(the notice could not be read)'}`).join('\n\n')}`;
         let found: any[] = [];
         try {
-            const raw: string = (await geminiPro.generateContent(prompt)).response.text();
+            const raw: string = (await geminiLight.generateContent(prompt)).response.text();
             found = JSON.parse(raw.slice(raw.indexOf('['), raw.lastIndexOf(']') + 1));
         } catch (e: any) { console.warn(`  batch ${i / 8 + 1} failed: ${e.message}`); continue; } // left unread; tried again tomorrow
         for (const f of found) {

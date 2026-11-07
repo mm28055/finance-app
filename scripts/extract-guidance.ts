@@ -54,13 +54,13 @@ const CONCURRENCY = Math.max(1, Math.min(GEMINI_KEY_COUNT, 4));
 /** --dry: same read, no write, so a sample can be reviewed before committing. */
 async function previewOnly(analysisId: string) {
     const { GUIDANCE_PROMPT, parseGuidanceJson, lastYearRevenue } = await import('../lib/guidance-extract');
-    const { geminiFlash } = await import('../lib/gemini');
+    const { geminiLight } = await import('../lib/gemini');
     const a = await prisma.analysis.findUnique({
         where: { id: analysisId },
         select: { companyId: true, investorBrief: true, company: { select: { name: true } }, quarter: { select: { name: true } } }
     });
     if (!a?.investorBrief) return null;
-    const res = await geminiFlash.generateContent(
+    const res = await geminiLight.generateContent(
         GUIDANCE_PROMPT(a.company.name, a.quarter.name, a.investorBrief, await lastYearRevenue(a.companyId))
     );
     return parseGuidanceJson((await res.response).text());
