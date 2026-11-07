@@ -17,13 +17,13 @@
  *    A mover still unexplained gets one web search for what news reports gave as the cause. With no
  *    clear cause the entry says so and is recorded quietly (no dot).
  *
- * Writes lib/news/news.json (kept a year) and lib/news/seen.json (links already screened). Screening uses Gemini Flash; the judgements use Pro.
+ * Writes lib/news/news.json (kept a year) and lib/news/seen.json (links already screened). Screening and the judgements use Gemini Flash (Pro until 7 Nov 2026).
  */
 import 'dotenv/config';
 import fs from 'fs';
 import path from 'path';
 import { prisma } from '../lib/prisma';
-import { geminiPro, geminiScreen, geminiSearch } from '../lib/gemini';
+import { geminiLight, geminiScreen, geminiSearch } from '../lib/gemini';
 import { businessFor } from '../lib/sector-overviews';
 import { nseDay, nseDeals, dailyHeadlines, companyHeadlines, TRUSTED, type DayRow, type Headline } from '../lib/news/sources';
 import { MOVE_PCT, NEWS_KEEP_DAYS, type NewsItem } from '../lib/news/types';
@@ -189,7 +189,7 @@ async function holderNews(fresh: Headline[], store: Store, cos: Co[], today: str
     console.log(`Stakes: ${kept.length} possible stake-change stories`);
     if (!kept.length) return [];
 
-    const answers = await ask(geminiPro, `Below are news headlines about a fund, institution, large investor or promoter changing its stake in a listed
+    const answers = await ask(geminiLight, `Below are news headlines about a fund, institution, large investor or promoter changing its stake in a listed
 Indian company, and the list of companies an investor follows. For each headline about a company ON THE LIST, report it. Leave
 out headlines about other companies, and use the exact name from the list. Say only what the headline and its summary say; do
 not add figures. If two headlines are the same story, use one. Plain English for a non-technical reader, ₹ and crore.
@@ -344,7 +344,7 @@ async function bigMoves(store: Store, cos: Co[], policyToday: NewsItem[]): Promi
             return `COMPANY ${j}: ${m.co.name} (${m.co.sector}; ${businessFor(m.co.name)?.profile.tagline || 'no description'}). Moved ${m.r.pct > 0 ? '+' : ''}${m.r.pct}% on ${date}${m.why ? `, ${m.why}` : ''}.\n` +
                 (ev.length ? ev.map((e, k) => `  [${k}] ${e.text}`).join('\n') : '  (no evidence found)');
         }).join('\n\n');
-        const answers = await ask(geminiPro, `${MOVE_RULES}\n\nThe market that day: the typical share moved ${market > 0 ? '+' : ''}${market}%. A general market fall or rise is never a cause.\n\n${body}`);
+        const answers = await ask(geminiLight, `${MOVE_RULES}\n\nThe market that day: the typical share moved ${market > 0 ? '+' : ''}${market}%. A general market fall or rise is never a cause.\n\n${body}`);
         for (const [j, m] of chunk.entries()) {
             const a = answers.find(x => Number(x.i) === j);
             const ev = a && a.evidence !== null && a.evidence !== undefined ? evidence[i + j][Number(a.evidence)] : undefined;
