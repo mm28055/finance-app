@@ -29,7 +29,10 @@ const fmt = (v: number, metric: Metric) =>
     metric === 'price' ? `₹${v >= 1000 ? Math.round(v).toLocaleString('en-IN') : v.toFixed(v >= 100 ? 0 : 1)}` : `${v.toFixed(1)}x`;
 const monthYear = (d: string) => new Date(d).toLocaleDateString('en-IN', { month: 'short', year: '2-digit' });
 
-export function ValuationHistory({ companyId, embedded = false }: { companyId: string; embedded?: boolean }) {
+// `marketCap` and `price`: today's figures from the company row. On the Price tab the hover box
+// also shows the market value on that day (today's value scaled by the price, so later share
+// issues are ignored) and the move from that day to today's price.
+export function ValuationHistory({ companyId, embedded = false, marketCap = null, price = null }: { companyId: string; embedded?: boolean; marketCap?: number | null; price?: number | null }) {
     const [metric, setMetric] = React.useState<Metric>('price');
     // The measure and the period also switch when the pointer rests on them.
     const hover = useHoverOpen();
@@ -125,8 +128,22 @@ export function ValuationHistory({ companyId, embedded = false }: { companyId: s
                                 <YAxis tick={{ fontSize: 9, fill: '#9CA3AF' }} width={44} axisLine={false} tickLine={false}
                                     tickFormatter={(v: number) => (metric === 'price' ? (v >= 1000 ? `${Number((v / 1000).toFixed(1))}k` : String(Math.round(v))) : `${v}x`)}
                                     domain={['auto', 'auto']} />
-                                <Tooltip formatter={(v) => [fmt(Number(v), metric), tab.label]} labelFormatter={(d) => new Date(String(d)).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}
-                                    contentStyle={{ fontSize: 11, borderRadius: 8, border: '1px solid #E5E7EB' }} />
+                                <Tooltip content={({ active, payload, label }: any) => {
+                                    if (!active || !payload?.length) return null;
+                                    const v = Number(payload[0].value);
+                                    const now = price && price > 0 ? price : latest;
+                                    const showMore = metric === 'price' && v > 0 && now;
+                                    const pct = showMore ? (now! / v - 1) * 100 : null;
+                                    const mcap = showMore && marketCap && marketCap > 0 ? marketCap * v / now! : null;
+                                    return (
+                                        <div className="bg-white rounded-lg border border-gray-200 px-2.5 py-1.5 text-[11px] leading-relaxed shadow-sm">
+                                            <div className="text-gray-700">{new Date(String(label)).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}</div>
+                                            <div className="text-[#4A7AAF]">{tab.label} : {fmt(v, metric)}</div>
+                                            {mcap !== null && <div className="text-gray-600">Market cap : ₹{Math.round(mcap).toLocaleString('en-IN')}cr</div>}
+                                            {pct !== null && <div className={pct >= 0 ? 'text-[#1F7A45]' : 'text-[#6B3FA0]'}>Since then : {pct >= 0 ? '+' : ''}{Math.abs(pct) >= 100 ? pct.toFixed(0) : pct.toFixed(1)}%</div>}
+                                        </div>
+                                    );
+                                }} />
                                 {metric !== 'price' && med !== null && (
                                     <ReferenceLine y={med} stroke="#9CA3AF" strokeDasharray="4 4"
                                         label={{ value: `median ${med.toFixed(1)}x`, position: 'insideTopLeft', fontSize: 9, fill: '#6B7280' }} />

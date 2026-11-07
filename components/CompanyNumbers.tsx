@@ -207,7 +207,7 @@ function DataTable({ table, companyId, section, view }: { table: Table; companyI
     );
 }
 
-export function CompanyNumbers({ companyId }: { companyId: string }) {
+export function CompanyNumbers({ companyId, marketCap, price }: { companyId: string; marketCap?: number | null; price?: number | null }) {
     const [tab, setTab] = React.useState<Tab>('history');
     // Tabs also open when the pointer rests on them.
     const hover = useHoverOpen();
@@ -253,7 +253,7 @@ export function CompanyNumbers({ companyId }: { companyId: string }) {
                 )}
             </div>
 
-            {tab === 'history' && <ValuationHistory companyId={companyId} embedded />}
+            {tab === 'history' && <ValuationHistory companyId={companyId} marketCap={marketCap} price={price} embedded />}
             {tab === 'assumes' && <PriceAssumes companyId={companyId} />}
             {tab === 'peers' && <PeerTable companyId={companyId} />}
 

@@ -800,7 +800,7 @@ ${company.shiftChip.segment}: ${company.shiftChip.from}% of revenue now, about $
                                     {/* items-start so the cards keep their natural height instead
                                         of stretching to the analysis panel's height. */}
                                     <div className="flex-1 min-w-0 flex flex-col gap-4 items-stretch self-start w-full">
-                                        <CompanyNumbers companyId={company.id} />
+                                        <CompanyNumbers companyId={company.id} marketCap={company.marketCap} price={company.currentPrice} />
                                         <FinancialMatrix
                                             financials={figures.financials}
                                             quarterName={figures.quarter}
