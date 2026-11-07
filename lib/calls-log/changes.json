@@ -1,6 +1,15 @@
 {
  "changes": [
   {
+   "date": "2026-11-08",
+   "company": "KPIT Technologies",
+   "sector": "Software",
+   "from": "own",
+   "to": "follow",
+   "price": 540.45,
+   "why": "A specialist in a bad year; the price now asks for a little more than a flat FY27 supports (moved from own, 6 Nov 2026)."
+  },
+  {
    "date": "2026-10-30",
    "company": "Onward Technologies",
    "sector": "Software",

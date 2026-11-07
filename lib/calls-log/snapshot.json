@@ -1,5 +1,5 @@
 {
- "date": "2026-11-03",
+ "date": "2026-11-08",
  "calls": {
   "Anthem Biosciences": {
    "call": "follow",
@@ -710,7 +710,7 @@
    "sector": "Software"
   },
   "KPIT Technologies": {
-   "call": "own",
+   "call": "follow",
    "sector": "Software"
   },
   "Onward Technologies": {
