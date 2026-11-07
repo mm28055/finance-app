@@ -4,7 +4,7 @@
     "sector": "Elect and Refrac",
     "exDate": "07-Sep-2026",
     "subject": "Demerger",
-    "why": "Demerger — note updated 28 Sep 2026. Still open: add the electrode company (HEG Graphite Ltd, renamed HEG Limited on 12 Oct 2026; listing expected second half of October 2026) to Elect and Refrac once it trades, and put HEG Advanced Materials into the live table once it files results of its own. Not listed as of 16 Oct. 18 Oct 2026: still not listed (no Screener page yet). 21 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 23 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 25 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 28 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 30 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 1 Nov 2026: the electrode company is still not on the dashboard list (companies.json shows only HEG); left open. 4 Nov 2026: the electrode company is still not on the dashboard list (companies.json shows only HEG); on 3 Nov the board approved ₹2,581cr of new carbon-materials capex (noted in the HEG section); left open.",
+    "why": "Demerger — note updated 28 Sep 2026. Still open: add the electrode company (HEG Graphite Ltd, renamed HEG Limited on 12 Oct 2026; listing expected second half of October 2026) to Elect and Refrac once it trades, and put HEG Advanced Materials into the live table once it files results of its own. Not listed as of 16 Oct. 18 Oct 2026: still not listed (no Screener page yet). 21 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 23 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 25 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 28 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 30 Oct 2026: still not listed (Screener finds only HEG Advanced Materials). 1 Nov 2026: the electrode company is still not on the dashboard list (companies.json shows only HEG); left open. 4 Nov 2026: the electrode company is still not on the dashboard list (companies.json shows only HEG); on 3 Nov the board approved ₹2,581cr of new carbon-materials capex (noted in the HEG section); left open. 7 Nov 2026: still not listed (NSE's equity list and Screener show only HEG Advanced Materials). When it trades: business card only (no Tab 1 section, per Manish 7 Nov), plus the ₹650cr electrode expansion to 115,000 tonnes (due early 2028) as a project.",
     "addedOn": "2026-09-28"
   },
   {
@@ -13,7 +13,8 @@
     "exDate": "01-Oct-2025",
     "subject": "Demerger (automotive / industrial split)",
     "why": "Put SKF India into the live table once July–September 2026 results are filed (first four clean post-split quarters); until then its trailing P/E uses too small a profit base. 18 Oct 2026: July–September results not yet filed (Screener's last quarter is June 2026). 21 Oct 2026: July–September results not yet filed (Screener's last quarter is still June 2026). 23 Oct 2026: July–September results not yet filed (Screener's last quarter is still June 2026). 25 Oct 2026: July–September results not yet filed (Screener's last quarter is still June 2026). 28 Oct 2026: July–September results not yet filed (Screener's last quarter is still June 2026). 30 Oct 2026: still no Q2 FY27 results filed for SKF India (no results entry); left open. 1 Nov 2026: no July–September results for SKF India in the results or filings digests yet; left open. 4 Nov 2026: the July–September 2026 results are now filed (results digest has Q2 FY27), so this can be done next run; not done today because the run reached its 40-entry limit.",
-    "addedOn": "2026-09-28"
+    "addedOn": "2026-09-28",
+    "handled": "2026-11-07: Q2 FY27 results filed, so SKF India is now in the Bearings live table (four post-split quarters: ₹260cr operating profit, ₹120cr net cash at September). It reads Stretched on today's trailing profit, which still carries the ₹61.5cr March 2026 tax charge. Q2 call worked in (pre-tax margin 11.7%, recovery promised in Q3); Q2 margin checkpoint missed; stays wait."
   },
   {
     "company": "Maxvolt Energy Indus",
@@ -1480,483 +1481,552 @@
     "sector": "Forging",
     "subject": "Not in the Forging note",
     "why": "Add a company section to the Forging note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Hy-Tech Engineers",
     "sector": "Industrials",
     "subject": "Not in the Industrials note",
     "why": "Add a company section to the Industrials note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Lohia Corp",
     "sector": "Industrial Machinery",
     "subject": "Not in the Industrial Machinery note",
     "why": "Add a company section to the Industrial Machinery note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Bonfiglioli Transmissions",
     "sector": "Industrial Machinery",
     "subject": "Not in the Industrial Machinery note",
     "why": "Add a company section to the Industrial Machinery note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Vedanta Power",
     "sector": "Utilities",
     "subject": "Not in the Utilities note",
     "why": "Add a company section to the Utilities note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Glottis",
     "sector": "Logistics",
     "subject": "Not in the Logistics note",
     "why": "Add a company section to the Logistics note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Allcargo Global",
     "sector": "Logistics",
     "subject": "Not in the Logistics note",
     "why": "Add a company section to the Logistics note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Orkla India",
     "sector": "Food Products",
     "subject": "Not in the Food Products note",
     "why": "Add a company section to the Food Products note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "iValue Infosolutions",
     "sector": "Software",
     "subject": "Not in the Software note",
     "why": "Add a company section to the Software note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Euro Pratik Sales",
     "sector": "Consumer Durables",
     "subject": "Not in the Consumer Durables note",
     "why": "Add a company section to the Consumer Durables note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Park Medi World",
     "sector": "Hospitals",
     "subject": "Not in the Hospitals note",
     "why": "Add a company section to the Hospitals note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Anawil Wire",
     "sector": "Electrical Equipment",
     "subject": "Not in the Electrical Equipment note",
     "why": "Add a company section to the Electrical Equipment note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Jain Resource Recycling",
     "sector": "Mining & Metals Recycle",
     "subject": "Not in the Mining & Metals Recycle note",
     "why": "Add a company section to the Mining & Metals Recycle note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Midwest",
     "sector": "Mining & Metals Recycle",
     "subject": "Not in the Mining & Metals Recycle note",
     "why": "Add a company section to the Mining & Metals Recycle note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "JSW Cement",
     "sector": "Construction",
     "subject": "Not in the Construction note",
     "why": "Add a company section to the Construction note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Arisinfra Solutions",
     "sector": "Platform Cos",
     "subject": "Not in the Platform Cos note",
     "why": "Add a company section to the Platform Cos note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Bluspring Enterprises",
     "sector": "Commercial Services",
     "subject": "Not in the Commercial Services note",
     "why": "Add a company section to the Commercial Services note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Patel Retail",
     "sector": "Retail",
     "subject": "Not in the Retail note",
     "why": "Add a company section to the Retail note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Regaal Resources",
     "sector": "Food Products",
     "subject": "Not in the Food Products note",
     "why": "Add a company section to the Food Products note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Om Power Transmission",
     "sector": "Construction - Power",
     "subject": "Not in the Construction - Power note",
     "why": "Add a company section to the Construction - Power note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Fujiyama Power Systems",
     "sector": "Solar PV Cells EPC",
     "subject": "Not in the Solar PV Cells EPC note",
     "why": "Add a company section to the Solar PV Cells EPC note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Kalpataru",
     "sector": "Realty",
     "subject": "Not in the Realty note",
     "why": "Add a company section to the Realty note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Vikran Engineering",
     "sector": "Construction - Power",
     "subject": "Not in the Construction - Power note",
     "why": "Add a company section to the Construction - Power note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Gem Aromatics",
     "sector": "Chemicals",
     "subject": "Not in the Chemicals note",
     "why": "Add a company section to the Chemicals note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Milky Mist Dairy",
     "sector": "Food Products",
     "subject": "Not in the Food Products note",
     "why": "Add a company section to the Food Products note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Shankara Buildpro",
     "sector": "Retail",
     "subject": "Not in the Retail note",
     "why": "Add a company section to the Retail note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Vidya Wires",
     "sector": "Cables",
     "subject": "Not in the Cables note",
     "why": "Add a company section to the Cables note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Anlon Healthcare",
     "sector": "Pharma API",
     "subject": "Not in the Pharma API note",
     "why": "Add a company section to the Pharma API note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Kusumgar",
     "sector": "Industrials",
     "subject": "Not in the Industrials note",
     "why": "Add a company section to the Industrials note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Manipal Payment & Identity",
     "sector": "Commercial Services",
     "subject": "Not in the Commercial Services note",
     "why": "Add a company section to the Commercial Services note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Prasol Chemicals",
     "sector": "Chemicals",
     "subject": "Not in the Chemicals note",
     "why": "Add a company section to the Chemicals note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Purple Style Labs",
     "sector": "Retail",
     "subject": "Not in the Retail note",
     "why": "Add a company section to the Retail note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Rentomojo",
     "sector": "Platform Cos",
     "subject": "Not in the Platform Cos note",
     "why": "Add a company section to the Platform Cos note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "ESDS Software",
     "sector": "Software",
     "subject": "Not in the Software note",
     "why": "Add a company section to the Software note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Vedanta Oil & Gas",
     "sector": "Oil",
     "subject": "Not in the Oil note",
     "why": "Add a company section to the Oil note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Glass Wall Systems",
     "sector": "Construction",
     "subject": "Not in the Construction note",
     "why": "Add a company section to the Construction note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Horizon Industrial Parks",
     "sector": "Realty",
     "subject": "Not in the Realty note",
     "why": "Add a company section to the Realty note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Influx Healthtech",
     "sector": "Pharma Others",
     "subject": "Not in the Pharma Others note",
     "why": "Add a company section to the Pharma Others note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Juniper Green Energy",
     "sector": "Utilities",
     "subject": "Not in the Utilities note",
     "why": "Add a company section to the Utilities note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Amanta Healthcare",
     "sector": "Pharma Others",
     "subject": "Not in the Pharma Others note",
     "why": "Add a company section to the Pharma Others note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Skyways Air Services",
     "sector": "Logistics",
     "subject": "Not in the Logistics note",
     "why": "Add a company section to the Logistics note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Symbiotec Pharmalab",
     "sector": "Pharma API",
     "subject": "Not in the Pharma API note",
     "why": "Add a company section to the Pharma API note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Karamtara Engineering",
     "sector": "Construction - Power",
     "subject": "Not in the Construction - Power note",
     "why": "Add a company section to the Construction - Power note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Varmora Granito",
     "sector": "Consumer Durables",
     "subject": "Not in the Consumer Durables note",
     "why": "Add a company section to the Consumer Durables note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Vedanta Iron & Steel",
     "sector": "Iron and Steel",
     "subject": "Not in the Iron and Steel note",
     "why": "Add a company section to the Iron and Steel note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Sacheerome",
     "sector": "Chemicals",
     "subject": "Not in the Chemicals note",
     "why": "Add a company section to the Chemicals note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Safe Enterprises Retail Fixtures",
     "sector": "Retail",
     "subject": "Not in the Retail note",
     "why": "Add a company section to the Retail note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Seshaasai Technologies",
     "sector": "Commercial Services",
     "subject": "Not in the Commercial Services note",
     "why": "Add a company section to the Commercial Services note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Simca Advertising",
     "sector": "Media and Entertainment",
     "subject": "Not in the Media and Entertainment note",
     "why": "Add a company section to the Media and Entertainment note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Travel Food Services",
     "sector": "Hotels and Travels",
     "subject": "Not in the Hotels and Travels note",
     "why": "Add a company section to the Hotels and Travels note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Waterways Leisure Tourism",
     "sector": "Hotels and Travels",
     "subject": "Not in the Hotels and Travels note",
     "why": "Add a company section to the Hotels and Travels note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Gaudium IVF",
     "sector": "Hospitals",
     "subject": "Not in the Hospitals note",
     "why": "Add a company section to the Hospitals note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "GSP Crop Science",
     "sector": "Agrochemical & Fertilizers",
     "subject": "Not in the Agrochemical & Fertilizers note",
     "why": "Add a company section to the Agrochemical & Fertilizers note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "KRM Ayurveda",
     "sector": "Pharma Others",
     "subject": "Not in the Pharma Others note",
     "why": "Add a company section to the Pharma Others note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Leap India",
     "sector": "Logistics",
     "subject": "Not in the Logistics note",
     "why": "Add a company section to the Logistics note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Monolithisch India",
     "sector": "Elect and Refrac",
     "subject": "Not in the Elect and Refrac note",
     "why": "Add a company section to the Elect and Refrac note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Apsis Aerocom",
     "sector": "Aerospace defence",
     "subject": "Not in the Aerospace defence note",
     "why": "Add a company section to the Aerospace defence note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Blue Water Logistics",
     "sector": "Logistics",
     "subject": "Not in the Logistics note",
     "why": "Add a company section to the Logistics note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "E to E Transportation",
     "sector": "Construction",
     "subject": "Not in the Construction note",
     "why": "Add a company section to the Construction note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Excelsoft Technologies",
     "sector": "Software",
     "subject": "Not in the Software note",
     "why": "Add a company section to the Software note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Pace Digitek",
     "sector": "Construction",
     "subject": "Not in the Construction note",
     "why": "Add a company section to the Construction note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Prostarm Info Systems",
     "sector": "Electrical Equipment",
     "subject": "Not in the Electrical Equipment note",
     "why": "Add a company section to the Electrical Equipment note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Parth Electricals",
     "sector": "Electrical Equipment",
     "subject": "Not in the Electrical Equipment note",
     "why": "Add a company section to the Electrical Equipment note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Kirloskar Ferrous",
     "sector": "Iron and Steel",
     "subject": "Not in the Iron and Steel note",
     "why": "Add a company section to the Iron and Steel note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Kwality Pharmaceuticals",
     "sector": "Pharma",
     "subject": "Not in the Pharma note",
     "why": "Add a company section to the Pharma note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Piccadily Agro",
     "sector": "Food Products",
     "subject": "Not in the Food Products note",
     "why": "Add a company section to the Food Products note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Jyoti Resins",
     "sector": "Chemicals",
     "subject": "Not in the Chemicals note",
     "why": "Add a company section to the Chemicals note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Physicswallah",
     "sector": "Platform Cos",
     "subject": "Not in the Platform Cos note",
     "why": "Add a company section to the Platform Cos note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Fabtech Technologies",
     "sector": "Industrials",
     "subject": "Not in the Industrials note",
     "why": "Add a company section to the Industrials note (or write the note if the sector has none).",
-    "addedOn": "2026-10-20"
+    "addedOn": "2026-10-20",
+    "handled": "2026-11-07: business card, charts, management and checkpoints done 21 Oct; Manish does not want these in the sector note main page"
   },
   {
     "company": "Tata Technologies",
@@ -2475,21 +2545,24 @@
     "sector": "Auto Related",
     "subject": "Capacity picture follow-up: milestone",
     "why": "Milestone steel-strips-wheels-bhuj-m1 (Q3 FY27): the Q1 FY27 call moved Bhuj trials to Q4 FY27. Record the slip as a revision and add the new date. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Bhuj trials milestone (Oct 2026) kept with a revision; new milestones for knuckle production in Q4 FY27 and the alloy plant in early April 2027; tractor-line cost revised to ₹120cr; added the ₹1,400cr Sambhajinagar greenfield plant (alloy, steel, hot stamping); alloy base now about 5.4 million after debottlenecking; picture redrawn"
   },
   {
     "company": "Smartworks Coworking",
     "sector": "Commercial Services",
     "subject": "Capacity picture follow-up: milestone",
     "why": "A milestone of the FY27 campuses project still says 12.5–13m sq ft; the Q1 FY27 call (official) says over 13m sq ft by March 2027. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Q2 FY27 call guides 12.5–13m sq ft by March 2027 again, so the stored milestone stands; added a dated revision noting the Q1 call's 'over 13m', updated area (10.9m sq ft), occupancy, H1 capex ₹307cr, East Bridge occupancy-certificate delay note; dropped a stray key from the campuses project; redrew the picture."
   },
   {
     "company": "Skipper",
     "sector": "Construction - Power",
     "subject": "Capacity picture follow-up: milestone",
     "why": "The 75,000 t expansion is past its due date with no confirmation seen. Check filings and settle the milestone. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: 75,000 t expansion milestone (Q2 FY27) settled missed — Q2 FY27 call now says end of Q3 or early Q4; project revision and new commissioning milestone added; added the greenfield plant towards 600,000 t (phases by end FY28 and FY29) with 3 milestones; utilisation updated to about 80%; picture redrawn"
   },
   {
     "company": "Sterling Tools",
@@ -2504,7 +2577,8 @@
     "sector": "Auto Related",
     "subject": "Capacity picture follow-up: milestone",
     "why": "The display-plant milestone says Hosur; the 11 Oct 2026 filing puts the plant in Pune. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Display milestone said Hosur: added a dated revision and a new Pune milestone (operating by Sep 2027, Q2 FY28); Bangalore expansion completed per 4 Nov press release, production Q3 FY27, added its first milestone; chrome plant source updated; picture redrawn."
   },
   {
     "company": "Rossari Biotech",
@@ -2519,7 +2593,8 @@
     "sector": "Food Products",
     "subject": "Capacity picture follow-up: milestone",
     "why": "Milestone lt-foods-us-rth-m2 (Q4 FY28): the official July call says ready-to-heat doubles \"in 3 years' time\" (about FY29). (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Ready-to-heat ₹300cr milestone (Q4 FY28) kept with a revision; new milestone due Q4 FY29 per the Jul call's 'in 3 years'; added the new Madhya Pradesh organic facility (first phase in FY27) from the Q2 call; capacity text fixed (second US plant not yet commissioned, was 'capacity just doubled'); picture redrawn"
   },
   {
     "company": "Dynamic Cables",
@@ -2534,7 +2609,8 @@
     "sector": "Auto Related",
     "subject": "Capacity picture follow-up: milestone",
     "why": "Milestone minda-corp-sunroof-m1 carries the switches JV's date and wording; the sunroof start is Q2 FY27 (official text). (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Sunroof milestone carried the switches JV dates: added a revision and a new Q2 FY27 sunroof-start milestone; switches slip to Q4 FY27–Q1 FY28 recorded as a revision plus a Q1 FY28 milestone; cluster-plant milestone was dated Q1 FY27 against a \"Q1 next year\" statement, revised and re-added for Q1 FY28; picture redrawn."
   },
   {
     "company": "Kross",
@@ -2557,14 +2633,16 @@
     "sector": "Consumer Durables",
     "subject": "Capacity picture follow-up: milestone",
     "why": "The third bottle line slipped to January 2027; check its milestone date. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Third Hydra line milestone already right (m2, January 2027 = Q4 FY27; Q2 FY27 call of 2 Nov confirms January); added the dated delay revision to the project. From the Q2 call: Hydra lines over 80% used, furnace on plan for Q4 FY28, new ₹37.6cr solar phase 4 project (9.5 MWp, 3 MWp due Q4 FY27) with one milestone; capacity and picture redrawn."
   },
   {
     "company": "Transrail Lighting",
     "sector": "Construction - Power",
     "subject": "Capacity picture follow-up: milestone",
     "why": "Both phase-1 milestones are worded as doubling conductor and 1,96,000 t towers; the 21 and 30 Sep 2026 filings show 40,800 km (+70%) and 1,84,400 t. Settle them. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Settled both phase-1 milestones as partly met (conductor +70% to 40,800 km on 21 Sep, not doubled; towers 1,84,400 t on 30 Sep vs 1,96,000 t promised), added dated revisions to both projects, conductor moved to started, order book updated from the 3 Nov results release; picture redrawn."
   },
   {
     "company": "Leela Palaces Hotels",
@@ -2579,112 +2657,128 @@
     "sector": "Hospitals",
     "subject": "Capacity picture follow-up: milestone",
     "why": "The brownfield milestone puts all 450 beds in Q3 FY28; the call says 200 in about 15 months and 250 in 18–19 months. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Brownfield milestone split per the Aug call (revision on m1: about 200 beds Q3 FY28; new m2: other 250 beds Q4 FY28). From the Q2 FY27 deck (3 Nov): Gurugram now \"by H1 FY28\" (revision on project and m1, new m2 H1 FY28), occupancy 72%, 7,000–8,000-bed goal with Advent; capacity and picture redrawn."
   },
   {
     "company": "Orchid Pharma",
     "sector": "Pharma",
     "subject": "Capacity picture follow-up: milestone",
     "why": "Cefiderocol India approval milestone: the official August call says Q3 of next financial year (Q3 FY28), not Q2 FY28. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Cefiderocol India-approval milestone was dated Q2 FY28: added a dated revision and a new Q3 FY28 milestone per the official Aug call; no Q2 FY27 call yet, other projects unchanged; picture redrawn."
   },
   {
     "company": "Caplin Point Labs",
     "sector": "Pharma",
     "subject": "Capacity picture follow-up: milestone",
     "why": "The 5 new injectable lines milestone (Q4 FY27): the latest call says \"by this time next year\" (about Q2 FY28), but from an AI-made copy only — confirm against the official transcript first. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Confirmed in the official Q1 FY27 transcript (company site, filed with NSE) that the 5 new injectable lines come \"this time next year\": revision on the project and on m1 (Q4 FY27), new m2 due Q2 FY28; capacity text and picture redrawn (last 3–4 of 17 lines now \"2029 and beyond\")."
   },
   {
     "company": "Shakti Pumps",
     "sector": "Pumps Comp & Eng",
     "subject": "Capacity picture follow-up: milestone",
     "why": "Pump plant milestone: the official call puts it in November 2026 (Q3 FY27). (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Pump-plant milestone (Q2 FY27) settled missed with a new November 2026 (Q3 FY27) milestone; Q2 FY27 call: module line commercial in 1–1.5 months (new Q3 milestone), 2.2 GW plant now \"in FY28\", revenue after March 2028 (revision + Q4 FY28 milestone), ₹200cr spent, pumps 68% used; dropped a stray key; picture redrawn."
   },
   {
     "company": "Powerica",
     "sector": "Pumps Comp & Eng",
     "subject": "Capacity picture follow-up: milestone",
     "why": "Owned-wind capacity corrected to 638 MW (official: 633.55 MW was mis-said); check the milestone wording matches. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Milestone already reads 'about 638 MW', matching the correction; nothing to revise (no Q2 FY27 call yet). Picture redrawn with the exact MW arithmetic in the caveat."
   },
   {
     "company": "IZMO",
     "sector": "Software",
     "subject": "Capacity picture follow-up: milestone",
     "why": "Checkpoint izmo-packaging-m1 says ₹9.2cr in Q1; ₹9.2cr was Q4 FY26 sales. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Packaging milestone wrongly said ₹9.2cr in Q1: added a dated correction (₹9.2cr was Q4 FY26; FY27 target ₹45–50cr unchanged); no newer call stored, projects unchanged; picture redrawn."
   },
   {
     "company": "Shoppers Stop",
     "sector": "Retail",
     "subject": "Capacity picture follow-up: milestone",
     "why": "The department-store milestone says 9–10 in FY27; the official 16 Oct call raised it to 12 (six opened in H1). (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Old 9–10 store milestone kept with a dated revision; new milestone added for 12 openings in FY27 (Q2 FY27 call, 16 Oct). Project and capacity already current; picture redrawn with both milestones at Q4 FY27."
   },
   {
     "company": "Shyam Metalics",
     "sector": "Iron and Steel",
     "subject": "Capacity picture follow-up: milestone",
     "why": "The Sambalpur stainless expansion is ₹1,800cr on the official May call against the stored ₹2,940cr — may be a different scope; check and settle. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Stainless cost settled: ₹2,940cr is all stainless projects in the June 2026 presentation (₹644cr spent) and includes the May call's ₹1,800cr expansion; 31 Oct filing: 18,000 t foil (total ~42,000 t) and 1.5 million t beneficiation plant added, aluminium cost ₹800cr (₹681cr spent) added; new Phutamura coal-block project (₹183.6cr share, mining July 2027) with a milestone; flat-rolled milestone given a revision; picture redrawn."
   },
   {
     "company": "JK Tyre & Indust",
     "sector": "Tyres",
     "subject": "Capacity picture follow-up: milestone",
     "why": "Milestone jk-tyre-and-indust-banmore-m1 (Q4 FY27): the official transcript puts the Banmore addition by FY28. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Banmore milestone (Q4 FY27) kept with a revision citing the NSE transcript's 'next financial year'; new FY28 milestone added. Capacity updated from the Q2 FY27 call (India above 90%, FY27 capex about ₹1,300cr, net debt ₹5,696cr); project sources refreshed; picture redrawn."
   },
   {
     "company": "Antony Waste Hand",
     "sector": "Utilities",
     "subject": "Capacity picture follow-up: milestone",
     "why": "The Pune waste-to-energy plant restart moved to December 2026 (17 Oct filing); check its milestone. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Pune waste-to-energy restart checkpoint (October) given a dated revision: now by December 2026 per 17 Oct update, still Q3 FY27; Q2 tonnages added, Mumbai wards contract moved to ramping; picture redrawn."
   },
   {
     "company": "Himadri Speciality",
     "sector": "Chemicals",
     "subject": "Capacity picture follow-up: milestone",
     "why": "The full 40,000 t LFP phase is \"operational in FY28\" (official): move its milestone from Q4 FY29 to Q4 FY28. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Q2 FY27 call: 40,000 t LFP plant now starts at the end of FY28, so lfp-m2 (Q4 FY29) got a revision and a new milestone lfp-m3 (Q4 FY28); carbon black use updated to 88% (Q2); CNT, super-speciality black, car-radial timings confirmed; FY27 capex ₹800–900cr (₹400cr+ spent); picture redrawn"
   },
   {
     "company": "Belrise Industries",
     "sector": "Auto Related",
     "subject": "Capacity picture follow-up: milestone",
     "why": "Milestone m2 text says ₹66cr; the official text says over ₹65cr a year (INR650 million). (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Bengaluru milestone m2 said ₹66cr: added a dated correction (over ₹65cr a year per the official text), date unchanged; no Q2 FY27 call yet, projects unchanged; picture redrawn."
   },
   {
     "company": "Atlanta Electricals",
     "sector": "Electrical Transformers",
     "subject": "Capacity picture follow-up: milestone",
     "why": "The \"First 400 kV transformer revenue\" milestone (Q4 FY28) looks late: the first 315 MVA order is due within FY27 if the short-circuit test passes. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Merged the 31 Oct 2026 AE Components ₹193.58cr tank and radiator plant into the existing tanks project (cost revision, new milestone Q3 FY28); 400 kV: revision on the Q4 FY28 'first revenue' milestone plus new Q4 FY27 milestone for the first 315 MVA order, test now by end-Q3 FY27; 765 kV tie-up dropped, so trafo-m1 settled missed and a new H1 FY28 in-house prototype milestone added; capacity and picture redrawn"
   },
   {
     "company": "Enviro Infra Engine.",
     "sector": "Utilities",
     "subject": "Capacity picture follow-up: milestone",
     "why": "One HAM sewage plant was already completed by August, but the milestone says \"first plant commissioned, Q3 FY27\". (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: \"First HAM plant commissioned, Q3 FY27\" settled met as a correction (one plant was already complete by the Aug call); added a Q3 FY27 milestone for the Varanasi plants starting work (Oct–Nov 2026); Mathura status from the 5 Nov results release; picture redrawn."
   },
   {
     "company": "CEAT",
     "sector": "Tyres",
     "subject": "Capacity picture follow-up: milestone",
     "why": "A Q2 FY27 transcript (19 Oct) exists that the capacity picture did not use; redraw the picture if it changes the facts. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Used the Q2 FY27 call (15 Oct 2026, from CEAT's site): Camso customer move settled 'partly' (85% vs about 90%) with a new end-November milestone; upstream mixing date kept, revision added (may spill into Q1 FY28) plus a new Q1 FY28 milestone; Nagpur base set (80,000 to 1 lakh a day) and Q2 spends added for Nagpur and Chennai; capacity entry and picture redrawn."
   },
   {
     "company": "Advanced Enzyme",
     "sector": "Pharma Others",
     "subject": "Capacity picture follow-up: milestone",
     "why": "The fermentation-decision milestone may be due Q3 FY27 rather than Q2, but only an AI-made copy says so — confirm against the official text. (Found by the capacity-picture checks, 23 Oct 2026; after editing, redraw and stamp the picture.)",
-    "addedOn": "2026-10-23"
+    "addedOn": "2026-10-23",
+    "handled": "2026-11-07: Fermentation-decision milestone (Q2 FY27) settled missed: the 3 Nov Q2 call announced no decision; added a Q3 FY27 milestone per the Aug call's \"next quarter\" and dated revisions; capex ₹123cr unchanged, ₹52cr spent in H1; picture redrawn."
   },
   {
     "company": "Rubicon Research",
@@ -3344,49 +3438,56 @@
     "sector": "Vehicles",
     "subject": "Projects: ₹122cr capacity expansion approved 26 Oct 2026",
     "why": "The board approved ₹122cr to add 2.25 lakh units a year at Hosur and the Aurangabad (AURIC) factory, for 11.4 lakh units of installed capacity by Q2 FY28 (Q2 FY27 release, 26 Oct 2026). Add it to projects.json with 1–3 dated milestones as management states them, update capacity.json, then redraw and stamp the capacity picture.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-11-07: Added the ₹122cr Hosur + AURIC capacity boost (26 Oct 2026 board filing: Hosur +75,000 a year by December 2026, AURIC +1.5 lakh by Q2 FY28, about 11.4 lakh in all; ₹53cr battery line by Q3 FY28) as a new project with 3 milestones; AURIC phase 1 updated from the Q2 FY27 call (trials Q3 FY27 on track, capex done Q4 FY27, two quarters to ramp; revision on the full-speed milestone); capacity entry and picture redrawn."
   },
   {
     "company": "E2E Networks",
     "sector": "Software",
     "subject": "Projects: 5.4 MW AI-capacity expansion announced 26 Oct 2026",
     "why": "E2E plans to add about 5.4 MW of GPU capacity (NVIDIA HGX B300 and other Blackwell systems), about 59% more than today's 9.2 MW, to reach 14.6 MW, paid from cash flow and debt (filings of 26 Oct 2026). Check it against the existing 'More Blackwell and Vera Rubin GPUs' project, add or update it in projects.json with dated milestones, update capacity.json, then redraw and stamp the capacity picture.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-11-07: Added the 26 Oct 2026 5.4 MW B300/Blackwell plan (9.2 MW to about 14.6 MW, +59%, cash flow and debt) as its own project with an MW bar; the old Blackwell-and-Vera-Rubin project now covers Vera Rubin, with a dated revision; capacity updated; no milestone added because no date was given; picture redrawn."
   },
   {
     "company": "Chalet Hotels",
     "sector": "Hotels and Travels",
     "subject": "Big holder change: Sep 2026",
     "why": "Hdfc Mutual Fund - Hdfc Bse 500 Etf (DII) raised its stake from 7.34% to 9.62%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-11-07: HDFC Mutual Fund bought on the open market (9.11% by 20 Jul per its takeover-rule filing, 9.62% at September); no block deal. Routine, note unchanged."
   },
   {
     "company": "Entero",
     "sector": "Retail",
     "subject": "Big holder change: Sep 2026",
     "why": "Surbhi Singh(Prasid Uno Family Trust) (public holder) cut its stake from 10.45% to 3.05%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-11-07: Prasid Uno Family Trust (non-promoter, reportedly linked to a Medlife co-founder) sold about 7.4% in Aug–Sep to 3P India Equity (24 Aug) and HDFC MF (18 Sep); long-term funds took the shares and the 3% left is a small overhang. Note unchanged."
   },
   {
     "company": "Northern ARC Capital",
     "sector": "Finance",
     "subject": "Big holder change: Sep 2026",
     "why": "Augusta Investments Ii Pte. Ltd. (public holder) cut its stake from 16.02% to 13.81%; Leapfrog Financial Inclusion India (Ii) Ltd (public holder) cut its stake from 16.15% to 12.45%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-11-07: Eight Roads, Accion, LeapFrog and Augusta sold about 13% in a 31 Aug block at ₹278; Augusta (13.8%) and LeapFrog (12.5%) still hold about a quarter, which matters with no promoter. Corrected the note's wrong figures (risks, section 1, verdict view, watch item). Stays follow."
   },
   {
     "company": "Piramal Pharma",
     "sector": "Pharma CDMO",
     "subject": "Big holder change: Sep 2026",
     "why": "Hdfc Trustee Company Limited-Hdfc Flexi Cap Fund (DII) cut its stake from 7.68% to 5.65%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-11-07: HDFC Mutual Fund trimmed across schemes on the open market (filings in July and 28 Oct, to about 5%). Routine, note unchanged."
   },
   {
     "company": "RateGain Travel Tech",
     "sector": "Software",
     "subject": "Big holder change: Sep 2026",
     "why": "Sundaram Mutual Fund A/C Sundaram Long Term Micro (DII) raised its stake from 1.89% to 5.32%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-28"
+    "addedOn": "2026-10-28",
+    "handled": "2026-11-07: Sundaram Mutual Fund bought on the open market (takeover-rule filing in June, to about 5.5%); no block deal. Routine, note unchanged."
   },
   {
     "company": "Punjab Chem. & Corp",
@@ -3552,14 +3653,16 @@
     "sector": "Tyres",
     "subject": "Big holder change: Sep 2026",
     "why": "Emerald Sage Investment Ltd (public holder) cut its stake from 9.93% to 5.67%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-29"
+    "addedOn": "2026-10-29",
+    "handled": "2026-11-07: Warburg Pincus's Emerald Sage sold 4.25% in a late-Aug block at about ₹435 (₹1,175cr; ICICI Pru MF and SBI Life among buyers) and keeps 5.7%: added as a watch item in the verdict and card. Also fixed stale CFO text (Ravi Kumar Shingari appointed 4 Nov) and marked the CFO checkpoint met. Stays own."
   },
   {
     "company": "Crompt.Greaves Cons.",
     "sector": "Consumer Durables",
     "subject": "Big holder change: Sep 2026",
     "why": "Mirae Asset Large Cap Fund (DII) raised its stake from 7.72% to 9.95%. Find out why (block deal, share issue, index change, fund exit) and mention it in the company's section only if it matters.",
-    "addedOn": "2026-10-29"
+    "addedOn": "2026-10-29",
+    "handled": "2026-11-07: Mirae Asset kept buying on the open market (filing 10 Feb 2026, 9.95% at September). Routine, note unchanged."
   },
   {
     "company": "Yasho Industries",
@@ -3733,7 +3836,8 @@
     "sector": "Electrical Transformers",
     "subject": "Call drift: pass → Fits",
     "why": "Call is pass; the price check has moved from full to fits since the note. Revisit the call.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-07: Price check now just fits (needs about 17.8% a year against my ~16%); cash passes (₹290cr operating cash vs ₹243cr profit over five years). Nothing the note waited for has happened (Q1 profit flat, die-casting still loses money), so it stays pass; one dated sentence added to the verdict view."
   },
   {
     "company": "Sagility",
@@ -3933,7 +4037,7 @@
     "company": "Shyam Metalics",
     "sector": "Iron and Steel",
     "subject": "Projects: new capacities commissioned and 51% of a coal-mine SPV with ₹184cr initial capex (31 Oct 2026)",
-    "why": "Filing of 2026-10-31: Shyam Metalics reported a 96.2% YoY jump in Q2 PAT to ₹511 crore, with revenue rising 33.4% to ₹5,960 crore. The company commissioned a 1.5 MTPA beneficiation plant and 18,000 TPA of aluminium foil capacity at its Sambalpur facility. It also announced the acquisition of a 51% stake in Alom Solar for ₹183.6 crore to secure a captive coal block. Move the matching project's status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 1 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/SHYAMMETL_31102026165844_SMELPressRelease31102026.pdf",
+    "why": "Filing of 2026-10-31: Shyam Metalics reported a 96.2% YoY jump in Q2 PAT to ₹511 crore, with revenue rising 33.4% to ₹5,960 crore. The company commissioned a 1.5 MTPA beneficiation plant and 18,000 TPA of aluminium foil capacity at its Sambalpur facility. It also announced the acquisition of a 51% stake in Alom Solar for ₹183.6 crore to secure a captive coal block. Move the matching project's status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 1 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/SHYAMMETL_31102026165844_SMELPressRelease31102026.pdf 7 Nov 2026: the projects part is done (projects, milestones, capacity and picture updated in the capacity follow-up session); the note and card still need their one correction.",
     "addedOn": "2026-11-01"
   },
   {
@@ -3954,7 +4058,7 @@
     "company": "Atlanta Electricals",
     "sector": "Electrical Transformers",
     "subject": "Projects: subsidiary approved ₹193.58cr capex for a new facility (31 Oct 2026)",
-    "why": "Filing of 2026-10-31: Wholly-owned subsidiary AE Components Pvt Ltd has approved a capital expenditure of ₹193.58 crore to set up a new manufacturing plant for transformer tanks and radiators. The project aims at backward integration, targets completion within one year, and represents a notable investment at nearly 10% of the company's annual sales. Move the matching project's status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 1 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/ATLANTAIPO123_31102026172134_Approval_of_Capex_AE_Components_31102026.pdf",
+    "why": "Filing of 2026-10-31: Wholly-owned subsidiary AE Components Pvt Ltd has approved a capital expenditure of ₹193.58 crore to set up a new manufacturing plant for transformer tanks and radiators. The project aims at backward integration, targets completion within one year, and represents a notable investment at nearly 10% of the company's annual sales. Move the matching project's status on (or add the new project with 1–3 milestones), settle its due milestone, update capacity, redraw and stamp the picture, and correct the note and card once. Raised by the 1 Nov 2026 weekly review (filings pass), which had reached its 40-entry limit. Source: https://nsearchives.nseindia.com/corporate/ATLANTAIPO123_31102026172134_Approval_of_Capex_AE_Components_31102026.pdf 7 Nov 2026: the projects part is done (projects, milestones, capacity and picture updated in the capacity follow-up session); the note and card still need their one correction.",
     "addedOn": "2026-11-01"
   },
   {
