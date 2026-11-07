@@ -34961,7 +34961,8 @@
      "on": "2026-11-01",
      "text": "Q2 FY27 call: 4.4 mn sq ft leased and 2.7 mn sq ft delivered in H1; on track for both FY27 targets and about 35 mn sq ft operating by March 2027; stabilised occupancy 94%"
     }
-   ]
+   ],
+   "project": "horizon-industrial-parks-fy27-buildings"
   },
   {
    "id": "horizonind-q4fy27-2",
@@ -34972,7 +34973,8 @@
    "ifMet": "The in-city plan (management says up to about 25% of revenue when complete) starts to look real",
    "ifMissed": "The highest-rent part of the story is delayed or priced lower",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "horizon-industrial-parks-in-city"
   },
   {
    "id": "kalpataru-q2fy27-1",
@@ -35160,7 +35162,8 @@
    "ifMet": "IPO money is going into higher-earning digital sites and cash is coming in",
    "ifMissed": "Spending and collections are lagging the story",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "simca-advertising-led-screens"
   },
   {
    "id": "midwestltd-q2fy27-1",
@@ -35221,7 +35224,12 @@
    "ifMet": "The move into higher-value copper is on time",
    "ifMissed": "Value-added copper keeps slipping; margins stay at about 4%",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "missed",
+   "project": "jain-resource-recycling-cathode",
+   "actual": "Cathode commercial production began 5 Nov 2026 (Q3 FY27) at an initial 750 t a month of 1,500 t installed (company filing)",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "Late by about a quarter; ramp to 1,500 t a month now the thing to watch"
   },
   {
    "id": "jainrec-q3fy27-1",
@@ -35326,7 +35334,14 @@
    "ifMet": "Ratlam becomes a full panel-inverter-battery site; less reliance on bought-in batteries after the Bawal fire",
    "ifMissed": "A second delay on the battery line; execution is stretching",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "fujiyama-power-systems-ratlam-battery",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "Not confirmed as commissioned by early November 2026; new date tracked as fujiyama-power-systems-ratlam-battery-m1 (Q3 FY27)"
+    }
+   ]
   },
   {
    "id": "utlsolar-q4fy27-2",
@@ -35381,7 +35396,11 @@
    "ifMet": "Execution stays on the pace needed for 2 GW this year",
    "ifMissed": "First slip against its own commissioning plan",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "316 MWp of solar and wind added in Q2 FY27, plus about 100 MWh of batteries (Q2 call, 2 Nov 2026)",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "On track for about 2 GWp in FY27"
   },
   {
    "id": "jnpr-q3fy27-1",
@@ -35392,7 +35411,8 @@
    "ifMet": "Awarded-but-unsigned capacity (about 5 GW) starts converting into contracted growth",
    "ifMissed": "The pipeline stays on paper; growth beyond FY28 is less certain",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "juniper-green-energy-thermal-mimic"
   },
   {
    "id": "jnpr-q4fy27-1",
@@ -35453,7 +35473,8 @@
    "ifMet": "The second plant is earning its keep and supports the 60% growth target",
    "ifMissed": "Ethanol orders and approvals are slower than planned; the plant adds cost before it adds profit",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "piccadily-agro-chhattisgarh"
   },
   {
    "id": "piccadil-q4fy27-4",
@@ -35608,7 +35629,8 @@
    "ifMet": "The IPO money is being put to work on schedule",
    "ifMissed": "Expansion is slipping; the cash stays idle in deposits",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "gaudium-ivf-new-hubs"
   },
   {
    "id": "parkhosps-q4fy27-1",
@@ -35982,7 +36004,12 @@
    "ifMet": "The main hurdle to the 3.2 MTPA Bokaro plan, and to regularising the plant, is cleared",
    "ifMissed": "The Bokaro expansion and the plant's legal footing stay uncertain; the March 2027 date slips",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "missed",
+   "project": "vedanta-iron-steel-esl-phase-1a",
+   "actual": "Stage II forest clearance not received by end-September; \"on the verge of final approval\" on the 27 Oct 2026 call",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "New date tracked as vedanta-iron-steel-esl-phase-1a-m1 (Q3 FY27)"
   },
   {
    "id": "visl-q2fy27-2",
@@ -36004,7 +36031,8 @@
    "ifMet": "Steel volumes can roughly double from FY28, the base of the company's growth plan",
    "ifMissed": "The growth plan is late; steel profit stays small",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "vedanta-iron-steel-esl-phase-1a"
   },
   {
    "id": "visl-q4fy27-2",
@@ -36040,7 +36068,8 @@
    "ifMet": "Power cost, 9.3% of revenue in Q1 against 6.2% a year earlier, should start to fall",
    "ifMissed": "The power-cost squeeze in Maharashtra lasts longer",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "kirloskar-ferrous-green-power"
   },
   {
    "id": "kirlfer-q3fy27-1",
@@ -36051,7 +36080,8 @@
    "ifMet": "Higher-value castings start, and tube volumes and mix recover from Q1's 14% volume fall",
    "ifMissed": "Tubes stay a drag and the move into large castings slips",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "kirloskar-ferrous-solapur-2part"
   },
   {
    "id": "kirlfer-q4fy27-1",
@@ -36261,7 +36291,8 @@
    "ifMet": "Capacity is ready for the ₹500cr FY29 goal at almost no capital cost",
    "ifMissed": "A simple, cheap project slipping would be a warning on execution",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "jyoti-resins-santej-brownfield"
   },
   {
    "id": "jyotires-q4fy27-1",
@@ -36350,7 +36381,8 @@
    "ifMet": "Capacity is in place for premium and export card growth in FY28",
    "ifMissed": "The payments recovery story slips another year",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "seshaasai-technologies-bengaluru-metal"
   },
   {
    "id": "styl-q4fy27-1",
@@ -36684,7 +36716,12 @@
    "ifMet": "Growth can resume; the old plant is at about 124% of its rated capacity",
    "ifMissed": "A second delay; FY27's ₹200cr target depends on this plant",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "missed",
+   "project": "sacheerome-yeida",
+   "actual": "Trial production from September 2026; commercial start not announced by the end of H1",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "Plant late again; FY27 revenue from it is the next test"
   },
   {
    "id": "sacheerome-q4fy27-1",
@@ -36848,7 +36885,8 @@
    "ifMet": "The next growth leg is on time",
    "ifMissed": "New units are slipping; FY28 growth leans more on registrations",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "kwality-pharmaceuticals-hormone-plant"
   },
   {
    "id": "symbiotec-q4fy27-1",
@@ -36895,7 +36933,8 @@
    "ifMet": "The take-or-pay contracts start paying",
    "ifMissed": "The CDMO story stays a slide; the plant runs at a cost",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "symbiotec-pharmalab-new-plants"
   },
   {
    "id": "ahcl-q2fy27-1",
@@ -37009,7 +37048,12 @@
    "ifMet": "The main FY27 growth engine is running",
    "ifMissed": "A second delay; the FY27 revenue guide is at risk",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "project": "amanta-healthcare-steriport-line3",
+   "actual": "Line 3 commissioned in September 2026 and commercialised (company filing, Nov 2026)",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "About ₹110–120cr of yearly revenue now ramping"
   },
   {
    "id": "amanta-q4fy27-1",
@@ -37048,7 +37092,8 @@
    "ifMet": "The export growth leg for FY28 is in place",
    "ifMissed": "FY28's ₹425cr target slips",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "amanta-healthcare-svp-line"
   },
   {
    "id": "influx-h1fy27-1",
@@ -37373,7 +37418,13 @@
    "ifMet": "Acquisitions remain self-funded",
    "ifMissed": "Deal-making is starting to need debt",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-07",
+     "text": "26 Oct 2026 filing: the Fabwood deal was put on hold while the company takes legal advice; on 5 Nov it agreed instead to buy 51% of Drashti Surfaces for ₹31.1cr plus a loan of up to ₹20cr"
+    }
+   ]
   },
   {
    "id": "monolith-q2fy27-1",
@@ -37437,7 +37488,8 @@
    "ifMet": "The cost edge and the cash release are real; supports the 4–5 point margin lift talked of for FY28",
    "ifMissed": "The cost-saving story slips and inventory keeps tying up cash",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "monolithisch-india-nawada-mine"
   },
   {
    "id": "parth-h1fy27-1",
@@ -37490,7 +37542,8 @@
    "ifMet": "IPO capex is on time; the ₹300cr extra revenue potential becomes testable",
    "ifMissed": "Capex delays push out the growth case",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "parth-electricals-odisha"
   },
   {
    "id": "anawil-q3fy27-1",
@@ -37626,7 +37679,8 @@
    "ifMet": "It keeps its claimed lead in Indian battery-container output",
    "ifMissed": "Capacity slips just as rivals add plants",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "pace-digitek-bess-line3"
   },
   {
    "id": "pacedigitk-q4fy27-1",
@@ -37704,7 +37758,8 @@
    "ifMet": "Backward integration lifts margins and control of supply",
    "ifMissed": "The IPO-funded project slips",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "glass-wall-systems-glass-processing"
   },
   {
    "id": "karamtara-q2fy27-1",
@@ -37754,7 +37809,8 @@
    "ifMet": "Local-content Saudi work, which management says earns better margins, can start adding revenue in FY28",
    "ifMissed": "The next leg of growth slips a year",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "pending",
+   "project": "karamtara-engineering-saudi"
   },
   {
    "id": "ompower-q2fy27-1",
@@ -39097,6 +39153,1281 @@
    "createdOn": "2026-11-07",
    "status": "pending",
    "project": "yatharth-hospital-gurugram"
+  },
+  {
+   "id": "amanta-healthcare-steriport-line3-m1",
+   "company": "Amanta Healthcare",
+   "sector": "Pharma Others",
+   "text": "SteriPort Line 3 at full use in FY28, worth about ₹110–120cr of revenue a year (company guides FY28 revenue about ₹425cr with all lines live)",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "amanta-healthcare-steriport-line3"
+  },
+  {
+   "id": "amanta-healthcare-svp-line-m1",
+   "company": "Amanta Healthcare",
+   "sector": "Pharma Others",
+   "text": "Factory acceptance of the SVP line at the maker in the US (November 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "amanta-healthcare-svp-line"
+  },
+  {
+   "id": "anlon-healthcare-1200t-m1",
+   "company": "Anlon Healthcare",
+   "sector": "Pharma API",
+   "text": "New 1,200 t capacity commissioned by Q1 FY28, as the MD said, if statutory approvals are not delayed",
+   "due": "Q1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "anlon-healthcare-1200t"
+  },
+  {
+   "id": "anlon-healthcare-1200t-m2",
+   "company": "Anlon Healthcare",
+   "sector": "Pharma API",
+   "text": "FY28 revenue of about ₹700cr with the new plant at the 50–60% use management assumes",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "anlon-healthcare-1200t"
+  },
+  {
+   "id": "apsis-aerocom-unit-2-m1",
+   "company": "Apsis Aerocom",
+   "sector": "Aerospace defence",
+   "text": "Partial production starts at Unit 2 (from August 2026)",
+   "due": "Q2 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "apsis-aerocom-unit-2"
+  },
+  {
+   "id": "apsis-aerocom-unit-2-m2",
+   "company": "Apsis Aerocom",
+   "sector": "Aerospace defence",
+   "text": "All Unit 2 machines delivered and installed (by about end-December 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "apsis-aerocom-unit-2"
+  },
+  {
+   "id": "apsis-aerocom-unit-2-m3",
+   "company": "Apsis Aerocom",
+   "sector": "Aerospace defence",
+   "text": "Unit 2 fully running with about 35 machines (FY28), supporting a ₹90–100cr annual run-rate with Unit 1",
+   "due": "Q1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "apsis-aerocom-unit-2"
+  },
+  {
+   "id": "arisinfra-solutions-contract-capacity-m1",
+   "company": "Arisinfra Solutions",
+   "sector": "Platform Cos",
+   "text": "Contract-manufacturing capacity up from about 9 million to about 11 million t a year (2–3 million added over the next two quarters, as said on 6 August 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "arisinfra-solutions-contract-capacity"
+  },
+  {
+   "id": "behari-lal-engineering-unit3-m1",
+   "company": "Behari Lal Engineering",
+   "sector": "Forging",
+   "text": "Unit 3 starts production (first quarter of FY28, as said on 8 September 2026)",
+   "due": "Q1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "behari-lal-engineering-unit3"
+  },
+  {
+   "id": "behari-lal-engineering-ipo-upgrades-m1",
+   "company": "Behari Lal Engineering",
+   "sector": "Forging",
+   "text": "About ₹75cr more capex spent over Q2–Q4 FY27 on the IPO upgrades, Unit 3 and solar (₹80cr for the year, ₹5cr in Q1)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "behari-lal-engineering-ipo-upgrades"
+  },
+  {
+   "id": "e-to-e-transportation-nova-kavach-m1",
+   "company": "E to E Transportation",
+   "sector": "Construction",
+   "text": "Kavach field-trial order won (around the end of H1 FY27)",
+   "due": "Q2 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "e-to-e-transportation-nova-kavach"
+  },
+  {
+   "id": "e-to-e-transportation-nova-kavach-m2",
+   "company": "E to E Transportation",
+   "sector": "Construction",
+   "text": "Kavach orders showing in the order book (Q4 FY27)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "e-to-e-transportation-nova-kavach"
+  },
+  {
+   "id": "e-to-e-transportation-nova-kavach-m3",
+   "company": "E to E Transportation",
+   "sector": "Construction",
+   "text": "Kavach revenue starts (from Q1 FY28)",
+   "due": "Q1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "e-to-e-transportation-nova-kavach"
+  },
+  {
+   "id": "esds-software-own-gpus-m1",
+   "company": "ESDS Software",
+   "sector": "Software",
+   "text": "The new own GPUs start billing in Q1 FY28, after deployment in January–February 2027",
+   "due": "Q1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "esds-software-own-gpus"
+  },
+  {
+   "id": "fujiyama-power-systems-ratlam-m1",
+   "company": "Fujiyama Power Systems",
+   "sector": "Solar PV Cells EPC",
+   "text": "Ratlam panel and power-electronics plants at about 40–50% use this year, up from one shift (Aug 2026 call)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "fujiyama-power-systems-ratlam"
+  },
+  {
+   "id": "fujiyama-power-systems-ratlam-battery-m1",
+   "company": "Fujiyama Power Systems",
+   "sector": "Solar PV Cells EPC",
+   "text": "Ratlam lithium-ion lines (2 GWh plus the extra 1 GWh) confirmed running; promised for Q2 FY27, not yet confirmed",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "fujiyama-power-systems-ratlam-battery"
+  },
+  {
+   "id": "fujiyama-power-systems-hathras-m1",
+   "company": "Fujiyama Power Systems",
+   "sector": "Solar PV Cells EPC",
+   "text": "Hathras tubular battery plant in commercial operation (Q3 FY27, board filing of 25 Aug 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "fujiyama-power-systems-hathras"
+  },
+  {
+   "id": "fujiyama-power-systems-topcon-m1",
+   "company": "Fujiyama Power Systems",
+   "sector": "Solar PV Cells EPC",
+   "text": "TOPCon cell line in commercial operation (Q1 FY28, per the May 2026 board approval)",
+   "due": "Q1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "fujiyama-power-systems-topcon"
+  },
+  {
+   "id": "fujiyama-power-systems-zayo-m1",
+   "company": "Fujiyama Power Systems",
+   "sector": "Solar PV Cells EPC",
+   "text": "Zayo land bought and plants built, 'in a year or so' from August 2026",
+   "due": "Q2 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "fujiyama-power-systems-zayo"
+  },
+  {
+   "id": "gaudium-ivf-new-hubs-m1",
+   "company": "Gaudium IVF",
+   "sector": "Hospitals",
+   "text": "Gurgaon and Nagpur hubs open (late August to September 2026, per the 14 August call)",
+   "due": "Q2 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "gaudium-ivf-new-hubs"
+  },
+  {
+   "id": "gaudium-ivf-new-hubs-m3",
+   "company": "Gaudium IVF",
+   "sector": "Hospitals",
+   "text": "Eight more hubs open in FY28",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "gaudium-ivf-new-hubs"
+  },
+  {
+   "id": "gaudium-ivf-lucknow-hospital-m1",
+   "company": "Gaudium IVF",
+   "sector": "Hospitals",
+   "text": "Lucknow women's hospital in commercial operation (FY28–FY29)",
+   "due": "Q4 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "gaudium-ivf-lucknow-hospital"
+  },
+  {
+   "id": "gem-aromatics-dahej-m1",
+   "company": "Gem Aromatics",
+   "sector": "Chemicals",
+   "text": "Cooling agents running at about 25% of the 500 t a year capacity in FY27, with revenue showing in Q3 and Q4 (management on 14 August 2026: 'fairly close')",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "gem-aromatics-dahej"
+  },
+  {
+   "id": "gem-aromatics-dahej-m2",
+   "company": "Gem Aromatics",
+   "sector": "Chemicals",
+   "text": "Krystal (Dahej) products more than 50% of total revenue in FY28, as management said on 14 August 2026",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "gem-aromatics-dahej"
+  },
+  {
+   "id": "glottis-fleet-m1",
+   "company": "Glottis",
+   "sector": "Logistics",
+   "text": "First owned containers deployed (from Q3 FY27)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "glottis-fleet"
+  },
+  {
+   "id": "glottis-fleet-m2",
+   "company": "Glottis",
+   "sector": "Logistics",
+   "text": "Whole ₹132cr truck and container programme done (by March 2027)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "glottis-fleet"
+  },
+  {
+   "id": "horizon-industrial-parks-in-city-m2",
+   "company": "Horizon Industrial Parks",
+   "sector": "Realty",
+   "text": "About 6 mn sq ft of in-city space delivered over the next 3–4 years (from October 2026)",
+   "due": "Q4 FY30",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "horizon-industrial-parks-in-city"
+  },
+  {
+   "id": "hy-tech-engineers-ipo-machines-m1",
+   "company": "Hy-Tech Engineers",
+   "sector": "Industrials",
+   "text": "₹30cr of new machines installed, taking output to about 50 lakh fittings a month (within a year of September 2026)",
+   "due": "Q2 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "hy-tech-engineers-ipo-machines"
+  },
+  {
+   "id": "hy-tech-engineers-new-plant-m1",
+   "company": "Hy-Tech Engineers",
+   "sector": "Industrials",
+   "text": "Full plan and cost of the 6.5-acre plant shared (November 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "hy-tech-engineers-new-plant"
+  },
+  {
+   "id": "hy-tech-engineers-new-plant-m2",
+   "company": "Hy-Tech Engineers",
+   "sector": "Industrials",
+   "text": "Land for the new plant taken (within 3–4 months of September 2026)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "hy-tech-engineers-new-plant"
+  },
+  {
+   "id": "hy-tech-engineers-new-plant-m3",
+   "company": "Hy-Tech Engineers",
+   "sector": "Industrials",
+   "text": "New automated plant ready (within two years, about September 2028)",
+   "due": "Q2 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "hy-tech-engineers-new-plant"
+  },
+  {
+   "id": "influx-healthtech-nutra-plant-m1",
+   "company": "Influx Healthtech",
+   "sector": "Pharma Others",
+   "text": "New nutraceutical plant operational, licences applied for (August 2026, per the 10 July update)",
+   "due": "Q2 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "influx-healthtech-nutra-plant"
+  },
+  {
+   "id": "influx-healthtech-nutra-plant-m2",
+   "company": "Influx Healthtech",
+   "sector": "Pharma Others",
+   "text": "New plant brings in ₹40–50cr of revenue in H2 FY27",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "influx-healthtech-nutra-plant"
+  },
+  {
+   "id": "influx-healthtech-nutra-plant-m3",
+   "company": "Influx Healthtech",
+   "sector": "Pharma Others",
+   "text": "Revenue of ₹450–500cr by FY29 as the new plant fills (a three-year plan, said May 2026)",
+   "due": "Q4 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "influx-healthtech-nutra-plant"
+  },
+  {
+   "id": "influx-healthtech-olahey-beverages-m1",
+   "company": "Influx Healthtech",
+   "sector": "Pharma Others",
+   "text": "Olahey beverage lines ready and licence applied for (around August 2026)",
+   "due": "Q2 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "influx-healthtech-olahey-beverages"
+  },
+  {
+   "id": "jain-resource-recycling-anode-m1",
+   "company": "Jain Resource Recycling",
+   "sector": "Mining & Metals Recycle",
+   "text": "Anode output settles at the full 1,600 t a month this quarter (CMD's target on 4 August 2026)",
+   "due": "Q2 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "jain-resource-recycling-anode"
+  },
+  {
+   "id": "jain-resource-recycling-wire-rod-busbar-m1",
+   "company": "Jain Resource Recycling",
+   "sector": "Mining & Metals Recycle",
+   "text": "Wire rod (600 t a month) and busbar and profiles (1,500 t a month) lines commissioned (Q3 FY27, as said on 4 August 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "jain-resource-recycling-wire-rod-busbar"
+  },
+  {
+   "id": "jain-resource-recycling-antimony-m1",
+   "company": "Jain Resource Recycling",
+   "sector": "Mining & Metals Recycle",
+   "text": "Antimony plant commissioned (Q3 FY27, as said on 4 August 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "jain-resource-recycling-antimony"
+  },
+  {
+   "id": "jain-resource-recycling-plastic-m1",
+   "company": "Jain Resource Recycling",
+   "sector": "Mining & Metals Recycle",
+   "text": "Plastic recycling plant operational (Q3 FY27, as said on 4 August 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "jain-resource-recycling-plastic"
+  },
+  {
+   "id": "jain-resource-recycling-ahmedabad-jv-m1",
+   "company": "Jain Resource Recycling",
+   "sector": "Mining & Metals Recycle",
+   "text": "Ahmedabad joint-venture operations stabilise after trial production (Q2 FY27, as said on 4 August 2026)",
+   "due": "Q2 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "jain-resource-recycling-ahmedabad-jv"
+  },
+  {
+   "id": "jain-resource-recycling-kuwait-m1",
+   "company": "Jain Resource Recycling",
+   "sector": "Mining & Metals Recycle",
+   "text": "Kuwait investment starts contributing (from Q3 FY27, if shipping normalises, as said on 4 August 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "jain-resource-recycling-kuwait"
+  },
+  {
+   "id": "jsw-cement-nagaur-m1",
+   "company": "JSW Cement",
+   "sector": "Construction",
+   "text": "North (Nagaur) EBITDA of about ₹650–700 a tonne in Q4 FY27, as cheaper clinker from waste-heat power, the conveyor and alternative fuel (₹550–600 a tonne saving) flows through",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "jsw-cement-nagaur"
+  },
+  {
+   "id": "jsw-cement-nagaur-line2-m1",
+   "company": "JSW Cement",
+   "sector": "Construction",
+   "text": "Second 2.5 MTPA grinding unit at Nagaur ready (Q4 FY28)",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "jsw-cement-nagaur-line2"
+  },
+  {
+   "id": "jsw-cement-fujairah-m1",
+   "company": "JSW Cement",
+   "sector": "Construction",
+   "text": "Fujairah 1.7 MTPA running (around May–June 2027)",
+   "due": "Q1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "jsw-cement-fujairah"
+  },
+  {
+   "id": "jsw-cement-vijayanagar-ggbs-m1",
+   "company": "JSW Cement",
+   "sector": "Construction",
+   "text": "Work starts on the Vijayanagar 2 MTPA GGBS unit (December 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "jsw-cement-vijayanagar-ggbs"
+  },
+  {
+   "id": "jsw-cement-vijayanagar-ggbs-m2",
+   "company": "JSW Cement",
+   "sector": "Construction",
+   "text": "Vijayanagar 2 MTPA GGBS unit commissioned (May 2028)",
+   "due": "Q1 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "jsw-cement-vijayanagar-ggbs"
+  },
+  {
+   "id": "jsw-cement-dolvi-m1",
+   "company": "JSW Cement",
+   "sector": "Construction",
+   "text": "Work starts on the Dolvi 2 MTPA grinding unit (January 2027)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "jsw-cement-dolvi"
+  },
+  {
+   "id": "jsw-cement-dolvi-m2",
+   "company": "JSW Cement",
+   "sector": "Construction",
+   "text": "Dolvi 2 MTPA grinding unit commissioned (October 2028)",
+   "due": "Q3 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "jsw-cement-dolvi"
+  },
+  {
+   "id": "juniper-green-energy-fy27-m1",
+   "company": "Juniper Green Energy",
+   "sector": "Utilities",
+   "text": "Fatehgarh-3–Bhadla-3 transmission line (built by Apraava) finished in December 2026, ending temporary grid access at the Juniper Green Stellar project",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "juniper-green-energy-fy27"
+  },
+  {
+   "id": "juniper-green-energy-fy27-m2",
+   "company": "Juniper Green Energy",
+   "sector": "Utilities",
+   "text": "Transmission for the Beta project in place by March 2027 ('in all probability'), with about half of its 1,300 MWh merchant battery running by then",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "juniper-green-energy-fy27"
+  },
+  {
+   "id": "juniper-green-energy-fy28-m1",
+   "company": "Juniper Green Energy",
+   "sector": "Utilities",
+   "text": "Transmission lines for the FY28 projects ready by June 2027 at the latest, as management said on 2 November 2026",
+   "due": "Q1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "juniper-green-energy-fy28"
+  },
+  {
+   "id": "juniper-green-energy-fy28-m2",
+   "company": "Juniper Green Energy",
+   "sector": "Utilities",
+   "text": "About 6 GWp operating and 10 GWh of batteries by March 2028, with run-rate EBITDA of about ₹4,500cr",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "juniper-green-energy-fy28"
+  },
+  {
+   "id": "kalpataru-fy27-launches-m1",
+   "company": "Kalpataru",
+   "sector": "Realty",
+   "text": "Kalpataru Blossoms, Pune launched before December 2026 (RERA applied for)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "kalpataru-fy27-launches"
+  },
+  {
+   "id": "kalpataru-fy27-launches-m2",
+   "company": "Kalpataru",
+   "sector": "Realty",
+   "text": "Suman Nagar, Chembur and Ardene plotting, Nagpur launched in Q4 FY27",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "kalpataru-fy27-launches"
+  },
+  {
+   "id": "kalpataru-completions-m1",
+   "company": "Kalpataru",
+   "sector": "Realty",
+   "text": "The rest of the about 14 mn sq ft of ongoing projects completed in FY28 and FY29, after about 5.5 mn sq ft in FY27",
+   "due": "Q4 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "kalpataru-completions"
+  },
+  {
+   "id": "karamtara-engineering-saudi-m1",
+   "company": "Karamtara Engineering",
+   "sector": "Construction - Power",
+   "text": "Trial production at the Saudi plant (around December 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "karamtara-engineering-saudi"
+  },
+  {
+   "id": "karamtara-engineering-saudi-m3",
+   "company": "Karamtara Engineering",
+   "sector": "Construction - Power",
+   "text": "Saudi plant giving substantial, though partial, revenue in FY28; nearer projected levels 12–18 months after start",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "karamtara-engineering-saudi"
+  },
+  {
+   "id": "karamtara-engineering-bhachau-towers-m1",
+   "company": "Karamtara Engineering",
+   "sector": "Construction - Power",
+   "text": "Bhachau tower plant at peak capacity (within 6–9 months of October 2026)",
+   "due": "Q2 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "karamtara-engineering-bhachau-towers"
+  },
+  {
+   "id": "karamtara-engineering-peb-m1",
+   "company": "Karamtara Engineering",
+   "sector": "Construction - Power",
+   "text": "PEB plant ready (by the beginning of FY28)",
+   "due": "Q1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "karamtara-engineering-peb"
+  },
+  {
+   "id": "kirloskar-ferrous-solapur-2part-m2",
+   "company": "Kirloskar Ferrous",
+   "sector": "Iron and Steel",
+   "text": "Two-part foundry at 500–600 t a month (within 1–1.5 years, said August 2026)",
+   "due": "H2 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "kirloskar-ferrous-solapur-2part"
+  },
+  {
+   "id": "kirloskar-ferrous-rajpura-m1",
+   "company": "Kirloskar Ferrous",
+   "sector": "Iron and Steel",
+   "text": "Rajpura phase 1 done: capacity at 40,000–45,000 t a year (within 8 months of August 2026)",
+   "due": "Q1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "kirloskar-ferrous-rajpura"
+  },
+  {
+   "id": "kirloskar-ferrous-koppal-oxygen-pci-m1",
+   "company": "Kirloskar Ferrous",
+   "sector": "Iron and Steel",
+   "text": "Koppal oxygen plant and enhanced coal injection complete (by February–March 2027)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "kirloskar-ferrous-koppal-oxygen-pci"
+  },
+  {
+   "id": "kirloskar-ferrous-jejuri-rolling-m1",
+   "company": "Kirloskar Ferrous",
+   "sector": "Iron and Steel",
+   "text": "Jejuri rolling at 25,000 t a month (in about 18 months, said August 2026)",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "kirloskar-ferrous-jejuri-rolling"
+  },
+  {
+   "id": "kirloskar-ferrous-koppal-steel-m1",
+   "company": "Kirloskar Ferrous",
+   "sector": "Iron and Steel",
+   "text": "Koppal steel plant commissioned (within about 2 years of the go-ahead expected in late 2026, said August 2026)",
+   "due": "H2 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "kirloskar-ferrous-koppal-steel"
+  },
+  {
+   "id": "krm-ayurveda-gurugram-47-m1",
+   "company": "KRM Ayurveda",
+   "sector": "Pharma Others",
+   "text": "New Sector-47 Gurugram hospital opens (the July 2026 filing said August 2026)",
+   "due": "Q2 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "krm-ayurveda-gurugram-47"
+  },
+  {
+   "id": "krm-ayurveda-luxury-delhi-m1",
+   "company": "KRM Ayurveda",
+   "sector": "Pharma Others",
+   "text": "25-bed luxury wellness centre in Delhi opens (\"within the next three months\", said on 5 May 2026)",
+   "due": "Q2 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "krm-ayurveda-luxury-delhi"
+  },
+  {
+   "id": "kwality-pharmaceuticals-hormone-plant-m1",
+   "company": "Kwality Pharmaceuticals",
+   "sector": "Pharma",
+   "text": "₹70–80cr of hormone-plant sales in FY28",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "kwality-pharmaceuticals-hormone-plant"
+  },
+  {
+   "id": "kwality-pharmaceuticals-hormone-plant-m2",
+   "company": "Kwality Pharmaceuticals",
+   "sector": "Pharma",
+   "text": "Hormone revenue of about ₹200cr by FY29",
+   "due": "Q4 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "kwality-pharmaceuticals-hormone-plant"
+  },
+  {
+   "id": "kwality-pharmaceuticals-oncology-expansion-m1",
+   "company": "Kwality Pharmaceuticals",
+   "sector": "Pharma",
+   "text": "Oncology expansion finished, adding 45–50% capacity (by March 2027)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "kwality-pharmaceuticals-oncology-expansion"
+  },
+  {
+   "id": "kwality-pharmaceuticals-biosimilars-m1",
+   "company": "Kwality Pharmaceuticals",
+   "sector": "Pharma",
+   "text": "Biosimilar clinical trials done (about ₹150cr spent between Q3 FY28 and Q4 FY29)",
+   "due": "Q4 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "kwality-pharmaceuticals-biosimilars"
+  },
+  {
+   "id": "leap-india-fy27-pool-m1",
+   "company": "Leap India",
+   "sector": "Logistics",
+   "text": "About ₹450cr of FY27 capex done and about 850,000 more pallets in the pool by March 2027",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "leap-india-fy27-pool"
+  },
+  {
+   "id": "leap-india-gulf-m1",
+   "company": "Leap India",
+   "sector": "Logistics",
+   "text": "First Gulf revenue (the CEO said 'maybe from next month' on 27 Oct 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "leap-india-gulf"
+  },
+  {
+   "id": "manipal-payment-identity-ipo-capex-m1",
+   "company": "Manipal Payment & Identity",
+   "sector": "Commercial Services",
+   "text": "Metal-card capacity at least three times the 6.7 lakh a year of March 2026, with the ₹238cr of IPO capex spent over three years (management, 5 October 2026; no date given for the metal-card step)",
+   "due": "Q4 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "manipal-payment-identity-ipo-capex"
+  },
+  {
+   "id": "manipal-payment-identity-bureau-m1",
+   "company": "Manipal Payment & Identity",
+   "sector": "Commercial Services",
+   "text": "One more international personalisation bureau, in a developed market, opened in FY27 ('this year we might add one more', 5 October 2026)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "manipal-payment-identity-bureau"
+  },
+  {
+   "id": "midwest-quartz-phase2-m1",
+   "company": "Midwest",
+   "sector": "Mining & Metals Recycle",
+   "text": "Quartz phase 2 commissioned (within 10–12 months of August 2026, 'some time Q2 next year')",
+   "due": "Q2 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "midwest-quartz-phase2"
+  },
+  {
+   "id": "midwest-sri-lanka-m1",
+   "company": "Midwest",
+   "sector": "Mining & Metals Recycle",
+   "text": "Sri Lanka plant running and bringing in cash (expected in FY29, 12–15 months after the licence)",
+   "due": "Q4 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "midwest-sri-lanka"
+  },
+  {
+   "id": "midwest-indonesia-m1",
+   "company": "Midwest",
+   "sector": "Mining & Metals Recycle",
+   "text": "Project report and cost of the Indonesian rare-earth project given (promised for the next call after August 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "midwest-indonesia"
+  },
+  {
+   "id": "midwest-indonesia-m2",
+   "company": "Midwest",
+   "sector": "Mining & Metals Recycle",
+   "text": "Indonesian rare-earth project bringing in revenue (expected in FY29)",
+   "due": "Q4 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "midwest-indonesia"
+  },
+  {
+   "id": "milky-mist-dairy-whey-protein-m1",
+   "company": "Milky Mist Dairy",
+   "sector": "Food Products",
+   "text": "Whey protein concentrate unit running, about 1.5 years from September 2026 as in the RHP",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "milky-mist-dairy-whey-protein"
+  },
+  {
+   "id": "milky-mist-dairy-paneer-200-m1",
+   "company": "Milky Mist Dairy",
+   "sector": "Food Products",
+   "text": "Today's 150 t a day of paneer capacity full in 24–30 months from October 2026, when the extra 200 t a day is needed",
+   "due": "H2 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "milky-mist-dairy-paneer-200"
+  },
+  {
+   "id": "milky-mist-dairy-baramati-m1",
+   "company": "Milky Mist Dairy",
+   "sector": "Food Products",
+   "text": "Baramati plant operational, about three years from October 2026",
+   "due": "Q3 FY30",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "milky-mist-dairy-baramati"
+  },
+  {
+   "id": "monolithisch-india-purulia-m1",
+   "company": "Monolithisch India",
+   "sector": "Elect and Refrac",
+   "text": "Purulia greenfield plant ramped up (8–10 months from 10 October 2026)",
+   "due": "Q2 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "monolithisch-india-purulia"
+  },
+  {
+   "id": "monolithisch-india-hospet-m1",
+   "company": "Monolithisch India",
+   "sector": "Elect and Refrac",
+   "text": "Hospet plant in commercial production (July 2027)",
+   "due": "Q2 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "monolithisch-india-hospet"
+  },
+  {
+   "id": "monolithisch-india-udaipur-m1",
+   "company": "Monolithisch India",
+   "sector": "Elect and Refrac",
+   "text": "Udaipur plant in commercial production (November 2027)",
+   "due": "Q3 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "monolithisch-india-udaipur"
+  },
+  {
+   "id": "park-medi-world-narela-m1",
+   "company": "Park Medi World",
+   "sector": "Hospitals",
+   "text": "Narela 200-bed hospital commissioned (November–December 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "park-medi-world-narela"
+  },
+  {
+   "id": "park-medi-world-palam-vihar-m1",
+   "company": "Park Medi World",
+   "sector": "Hospitals",
+   "text": "Palam Vihar 100-bed extension commissioned (November–December 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "park-medi-world-palam-vihar"
+  },
+  {
+   "id": "park-medi-world-zirakpur-m1",
+   "company": "Park Medi World",
+   "sector": "Hospitals",
+   "text": "Zirakpur purchase completed and its 150 beds commissioned (November–December 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "park-medi-world-zirakpur"
+  },
+  {
+   "id": "park-medi-world-fy28-beds-m1",
+   "company": "Park Medi World",
+   "sector": "Hospitals",
+   "text": "1,000 more beds added, reaching 5,740 beds by March 2028",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "park-medi-world-fy28-beds"
+  },
+  {
+   "id": "parth-electricals-karachiya-gis-m1",
+   "company": "Parth Electricals",
+   "sector": "Electrical Equipment",
+   "text": "Karachiya GIS plant inaugurated and making its own GIS and 33kV RMUs (September 2026, as in the RHP and the May 2026 call)",
+   "due": "Q2 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "parth-electricals-karachiya-gis"
+  },
+  {
+   "id": "patel-retail-new-stores-m1",
+   "company": "Patel Retail",
+   "sector": "Retail",
+   "text": "About 71 stores by March 2028, the plan Acuité reported from management",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "patel-retail-new-stores"
+  },
+  {
+   "id": "piccadily-agro-barrels-m1",
+   "company": "Piccadily Agro",
+   "sector": "Food Products",
+   "text": "More than 1,15,000–1,20,000 filled barrels by March 2027 (Q1 FY27 call; the target had been 1,00,000)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "piccadily-agro-barrels"
+  },
+  {
+   "id": "prasol-chemicals-phase1-m1",
+   "company": "Prasol Chemicals",
+   "sector": "Chemicals",
+   "text": "Two more Phase 1 products start towards March 2027 (management warned they may slip into April)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "prasol-chemicals-phase1"
+  },
+  {
+   "id": "prasol-chemicals-phase1-m2",
+   "company": "Prasol Chemicals",
+   "sector": "Chemicals",
+   "text": "Phase 1 complete, taking capacity to about 150,000–160,000 t, within two years of September 2026",
+   "due": "Q2 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "prasol-chemicals-phase1"
+  },
+  {
+   "id": "prasol-chemicals-antibacterial-m1",
+   "company": "Prasol Chemicals",
+   "sector": "Chemicals",
+   "text": "Antibacterial plant through trial runs and supplying, after mechanical completion around January 2027 and 60–90 days of trials",
+   "due": "Q1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "prasol-chemicals-antibacterial"
+  },
+  {
+   "id": "prostarm-info-systems-jhajjar-bess-m1",
+   "company": "Prostarm Info Systems",
+   "sector": "Electrical Equipment",
+   "text": "Jhajjar 1.2 GWh BESS plant operational (Q2 FY27, end of H1)",
+   "due": "Q2 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "prostarm-info-systems-jhajjar-bess"
+  },
+  {
+   "id": "prostarm-info-systems-gujarat-ups-m1",
+   "company": "Prostarm Info Systems",
+   "sector": "Electrical Equipment",
+   "text": "Gujarat UPS plant operational (Q2 FY27)",
+   "due": "Q2 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "prostarm-info-systems-gujarat-ups"
+  },
+  {
+   "id": "regaal-resources-kishanganj-m1",
+   "company": "Regaal Resources",
+   "sector": "Food Products",
+   "text": "Modified-starch lines (such as cationic and carboxymethyl starch) fully online, within September 2026 as the CMD said",
+   "due": "Q2 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "regaal-resources-kishanganj"
+  },
+  {
+   "id": "regaal-resources-kishanganj-m2",
+   "company": "Regaal Resources",
+   "sector": "Food Products",
+   "text": "Dextrose production starts in Q4 FY27, before March 2027",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "regaal-resources-kishanganj"
+  },
+  {
+   "id": "regaal-resources-kishanganj-m3",
+   "company": "Regaal Resources",
+   "sector": "Food Products",
+   "text": "Doubled plant close to full use within FY27, as the CMD hoped (the company's past level is 90–95%)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "regaal-resources-kishanganj"
+  },
+  {
+   "id": "sacheerome-yeida-m2",
+   "company": "Sacheerome",
+   "sector": "Chemicals",
+   "text": "New plant adds about ₹40–50cr of revenue in FY27, towards the ₹200cr FY27 guidance",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "sacheerome-yeida"
+  },
+  {
+   "id": "safe-enterprises-retail-fixtures-ambernath-m1",
+   "company": "Safe Enterprises Retail Fixtures",
+   "sector": "Retail",
+   "text": "Ambernath plant commissioned (Q3 FY27)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "safe-enterprises-retail-fixtures-ambernath"
+  },
+  {
+   "id": "safe-enterprises-retail-fixtures-ambernath-m2",
+   "company": "Safe Enterprises Retail Fixtures",
+   "sector": "Retail",
+   "text": "Ambernath drives the 'major growth' in FY28, towards about ₹500cr of revenue capacity",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "safe-enterprises-retail-fixtures-ambernath"
+  },
+  {
+   "id": "seshaasai-technologies-bengaluru-metal-m2",
+   "company": "Seshaasai Technologies",
+   "sector": "Commercial Services",
+   "text": "Bengaluru plant 'certainly' contributing revenue in FY28 (Jul 2026 call)",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "seshaasai-technologies-bengaluru-metal"
+  },
+  {
+   "id": "skyways-air-services-cold-chain-m1",
+   "company": "Skyways Air Services",
+   "sector": "Logistics",
+   "text": "Pharma cold-chain warehouse operational (next quarter, said September 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "skyways-air-services-cold-chain"
+  },
+  {
+   "id": "skyways-air-services-asia-offices-m1",
+   "company": "Skyways Air Services",
+   "sector": "Logistics",
+   "text": "New Asian offices at EBITDA break-even (15–18 months from September 2026)",
+   "due": "Q1 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "skyways-air-services-asia-offices"
+  },
+  {
+   "id": "symbiotec-pharmalab-new-plants-m2",
+   "company": "Symbiotec Pharmalab",
+   "sector": "Pharma API",
+   "text": "Insulin (biologics) sales start early in FY28, after validation and DCGI approval (Sep 2026 call)",
+   "due": "Q1 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "symbiotec-pharmalab-new-plants"
+  },
+  {
+   "id": "symbiotec-pharmalab-ujjain-phase1-m1",
+   "company": "Symbiotec Pharmalab",
+   "sector": "Pharma API",
+   "text": "Construction of the 600 kL Phase 1 fermentation plant starts in Q3 FY27 (Sep 2026 call)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "symbiotec-pharmalab-ujjain-phase1"
+  },
+  {
+   "id": "symbiotec-pharmalab-ujjain-phase1-m2",
+   "company": "Symbiotec Pharmalab",
+   "sector": "Pharma API",
+   "text": "Phase 1 plant built about 15–18 months after construction starts, so around Q4 FY28–Q1 FY29",
+   "due": "Q1 FY29",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "symbiotec-pharmalab-ujjain-phase1"
+  },
+  {
+   "id": "travel-food-services-outlet-pipeline-m1",
+   "company": "Travel Food Services",
+   "sector": "Hotels and Travels",
+   "text": "The 50-plus outlets under development open and mature (over 12–18 months from August 2026)",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "travel-food-services-outlet-pipeline"
+  },
+  {
+   "id": "varmora-granito-tezpur-m1",
+   "company": "Varmora Granito",
+   "sector": "Consumer Durables",
+   "text": "About 1% more of Allemby Ceramics bought, making the Tezpur plant a subsidiary (this year)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "varmora-granito-tezpur"
+  },
+  {
+   "id": "vedanta-iron-steel-esl-phase-1a-m1",
+   "company": "Vedanta Iron & Steel",
+   "sector": "Iron and Steel",
+   "text": "Stage II forest clearance for the Bokaro expansion received (\"on the verge of final approval\", 27 Oct 2026 call)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "vedanta-iron-steel-esl-phase-1a"
+  },
+  {
+   "id": "vedanta-iron-steel-esl-phase-1a-m3",
+   "company": "Vedanta Iron & Steel",
+   "sector": "Iron and Steel",
+   "text": "0.2 MTPA ductile-iron pipe line at Bokaro running (FY28)",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "vedanta-iron-steel-esl-phase-1a"
+  },
+  {
+   "id": "vedanta-iron-steel-goa-dip-m1",
+   "company": "Vedanta Iron & Steel",
+   "sector": "Iron and Steel",
+   "text": "0.42 MTPA ductile-iron pipe plant in Goa finished (later part of FY27)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "vedanta-iron-steel-goa-dip"
+  },
+  {
+   "id": "vedanta-iron-steel-goa-mines-m1",
+   "company": "Vedanta Iron & Steel",
+   "sector": "Iron and Steel",
+   "text": "Bicholim at 3.6 MTPA and the 0.5 MTPA Cudnem mine producing (FY27)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "vedanta-iron-steel-goa-mines"
+  },
+  {
+   "id": "vedanta-iron-steel-janthakal-m1",
+   "company": "Vedanta Iron & Steel",
+   "sector": "Iron and Steel",
+   "text": "Janthakal mine in Karnataka producing, about 0.5 MTPA (FY28)",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "vedanta-iron-steel-janthakal"
+  },
+  {
+   "id": "vedanta-iron-steel-liberia-m1",
+   "company": "Vedanta Iron & Steel",
+   "sector": "Iron and Steel",
+   "text": "Liberia project capex triggered (the CFO expects the later part of FY27)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "vedanta-iron-steel-liberia"
+  },
+  {
+   "id": "vedanta-iron-steel-liberia-m2",
+   "company": "Vedanta Iron & Steel",
+   "sector": "Iron and Steel",
+   "text": "First ore from Liberia (FY30, \"if everything goes well\")",
+   "due": "Q4 FY30",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "vedanta-iron-steel-liberia"
+  },
+  {
+   "id": "vedanta-oil-gas-rajasthan-recovery-m1",
+   "company": "Vedanta Oil & Gas",
+   "sector": "Oil",
+   "text": "FY27 gross output within the 73–77 kboepd guidance (H1 averaged about 75: 77.7 in Q1, 72.2 in Q2)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "vedanta-oil-gas-rajasthan-recovery"
+  },
+  {
+   "id": "vedanta-power-sakti-unit2-m1",
+   "company": "Vedanta Power",
+   "sector": "Utilities",
+   "text": "Sakti Unit 2 (600 MW) commissioned, taking capacity to 4,780 MW (by Q4 FY27)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "vedanta-power-sakti-unit2"
+  },
+  {
+   "id": "vedanta-power-7200mw-m1",
+   "company": "Vedanta Power",
+   "sector": "Utilities",
+   "text": "First of the planned 7,200 MW starts producing (from FY30)",
+   "due": "Q4 FY30",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "vedanta-power-7200mw"
+  },
+  {
+   "id": "vidya-wires-alcu-m1",
+   "company": "Vidya Wires",
+   "sector": "Cables",
+   "text": "CTC output starts at ALCU (3,000 t a year in the first phase), 'September or October, or probably before Diwali' 2026",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "vidya-wires-alcu"
+  },
+  {
+   "id": "vidya-wires-alcu-m2",
+   "company": "Vidya Wires",
+   "sector": "Cables",
+   "text": "50–60% of total capacity used in FY27, as the MD said on 14 May 2026",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "vidya-wires-alcu"
+  },
+  {
+   "id": "vidya-wires-alcu-m3",
+   "company": "Vidya Wires",
+   "sector": "Cables",
+   "text": "A full year at 36,000 t of capacity in FY28, at about 80% use (the practical maximum)",
+   "due": "Q4 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "vidya-wires-alcu"
+  },
+  {
+   "id": "vikran-engineering-nopl-solar-m1",
+   "company": "Vikran Engineering",
+   "sector": "Construction - Power",
+   "text": "Project debt for NOPL tied up with IREDA or the Union Bank-led group (final stage in August 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "vikran-engineering-nopl-solar"
+  },
+  {
+   "id": "vikran-engineering-nopl-solar-m2",
+   "company": "Vikran Engineering",
+   "sector": "Construction - Power",
+   "text": "All 969 MW of NOPL solar commissioned (within 12 months of August 2026)",
+   "due": "Q2 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "vikran-engineering-nopl-solar"
+  },
+  {
+   "id": "waterways-leisure-tourism-sky-m1",
+   "company": "Waterways Leisure Tourism",
+   "sector": "Hotels and Travels",
+   "text": "Cordelia Sky starts sailing from Mumbai (from 23 October 2026)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-07",
+   "status": "met",
+   "actual": "Sailing since late October; the 26 Oct 2026 NSE filing confirmed two-ship operations",
+   "resolvedOn": "2026-11-07",
+   "resolvedBy": "review",
+   "outcome": "Delivered a month early and started on time",
+   "correction": true,
+   "project": "waterways-leisure-tourism-sky"
+  },
+  {
+   "id": "waterways-leisure-tourism-sun-m1",
+   "company": "Waterways Leisure Tourism",
+   "sector": "Hotels and Travels",
+   "text": "Cordelia Sun delivered (\"in 11 months\", said on 9 October 2026: about September–October 2027)",
+   "due": "Q2 FY28",
+   "createdOn": "2026-11-07",
+   "status": "pending",
+   "project": "waterways-leisure-tourism-sun"
   }
  ]
 }

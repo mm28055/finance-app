@@ -370,7 +370,7 @@ const profiles: BusinessProfile[] = [
             },
             {
                 "name": "Films, adhesives and acquired trading lines",
-                "text": "Interior films, adhesives, catalogues, plus veneers, plywood and other products sold through the acquired Uro Veneer World (South India), Chawla Brothers (Punjab) and, from October 2026, Fabwood (timber, South India): 11% of FY26 revenue, rising to 19.5% in Q1 FY27."
+                "text": "Interior films, adhesives, catalogues, plus veneers, plywood and other products sold through the acquired Uro Veneer World (South India), Chawla Brothers (Punjab): 11% of FY26 revenue, rising to 19.5% in Q1 FY27. A planned 56% stake in Fabwood (timber, South India) was put on hold on 26 October 2026."
             }
         ],
         "revenueText": "**All but about 1% of sales are in India**, and **South India was 47% of FY26 revenue**, West 26% and North 16%. In FY26 wall panels were 57%, laminates 31% and others 11%. In Q1 FY27 the split was 51%, 30% and 19.5%, as acquired dealers added other products. There is no single big customer: the top 30 distributors were 36% of FY25 revenue (RHP). The parent company's own revenue fell to ₹210cr in FY26 from ₹219cr; consolidated growth of 18% came from subsidiaries and acquisitions. Q1 FY27 revenue was ₹103cr, up 60%.",
@@ -421,7 +421,7 @@ const profiles: BusinessProfile[] = [
         "customers": [
             "**Distributors and dealers**: 205 distributors in 148 cities in June 2026 (203 in India, 2 in Nepal). The top 30 were 36% of FY25 revenue.",
             "**Architects, interior designers and carpenters**, who choose the product. Homeowners, offices, hotels and hospitals are the end users.",
-            "**Its own acquired retailers**: Uro Veneer World (51%, Bengaluru region), Chawla Brothers (51%, Punjab) and Fabwood (56%, from October 2026) sell straight to contractors, builders and homeowners."
+            "**Its own acquired retailers**: Uro Veneer World (51%, Bengaluru region), Chawla Brothers (51%, Punjab) sell straight to contractors, builders and homeowners."
         ],
         "difficulty": {
             "level": "Low",
@@ -430,13 +430,13 @@ const profiles: BusinessProfile[] = [
         "moat": "A recognised brand among interior designers, a dedicated distributor network and a rapid design cycle give it a lead in organised wall panels. By its own Technopak-sourced claim it had about 16% of that market in FY23. But there is no manufacturing or technology barrier, and rivals can copy a design quickly. Buying dealers secures shelf space but brings in lower-margin trading revenue.",
         "salesDrivers": [
             "**Guidance**: on 24 September 2026 the CMD said FY27 revenue would grow at least 35–40%, with a consolidated PAT margin of 20–22%.",
-            "**Acquisitions**: Uro Veneer World (51%, ₹76.5cr, December 2025; about ₹115cr of FY27 revenue projected), Chawla Brothers (51%, ₹33.2cr, March 2026; about ₹80cr projected) and Fabwood (56%, ₹42.7cr, October 2026; ₹50–53cr projected). Together that is roughly ₹245cr of projected revenue against FY26's ₹335cr.",
+            "**Acquisitions**: Uro Veneer World (51%, ₹76.5cr, December 2025; about ₹115cr of FY27 revenue projected), Chawla Brothers (51%, ₹33.2cr, March 2026; about ₹80cr projected). The Fabwood deal (56%, ₹42.7cr, ₹50–53cr of revenue projected) was **put on hold on 26 October 2026** while the company takes legal advice. On 5 November 2026 it agreed to buy **51% of Drashti Surfaces**, a veneer and decorative-laminate maker, for ₹31.1cr plus a loan of up to ₹20cr from internal cash: its first factory of its own.",
             "**New designs**: it targets more than 1,000 designs a year and about two new catalogues a month. Products launched in September and October 2026 install straight onto walls.",
             "**Housing and interiors spending**: demand follows home building and refurbishment, with the organised share rising (Technopak).",
             "**Seasonality**: Q1 is usually the weakest quarter, management says."
         ],
-        "inputs": "**Finished goods bought from contract manufacturers**, much of it imported: 55% of FY25 purchases were in foreign currency (92% in FY24), mostly dollars and yuan, with no hedging (RHP). Cost of goods was 52% of FY26 sales. Fabwood's timber is 90–95% imported from Europe and the US.",
-        "costEffect": "**Mostly passed on, but exposed to currency and mix.** Gross margin rose from 36% in FY23 to 45.5% in FY25 and 47.8% in FY26, then fell to **39.0% in Q1 FY27** because the acquired dealers earn thinner margins. The Q1 operating margin was 26%, against 34% a year earlier. Management says Fabwood passes on timber and currency moves in full. **Rule of thumb:** a 10% rise in the cost of goods not passed on would cut the operating margin by about 5 points. FY26 results cited volatile crude-linked raw material prices, which feed into PVC panels at its suppliers.",
+        "inputs": "**Finished goods bought from contract manufacturers**, much of it imported: 55% of FY25 purchases were in foreign currency (92% in FY24), mostly dollars and yuan, with no hedging (RHP). Cost of goods was 52% of FY26 sales.",
+        "costEffect": "**Mostly passed on, but exposed to currency and mix.** Gross margin rose from 36% in FY23 to 45.5% in FY25 and 47.8% in FY26, then fell to **39.0% in Q1 FY27** because the acquired dealers earn thinner margins. The Q1 operating margin was 26%, against 34% a year earlier. **Rule of thumb:** a 10% rise in the cost of goods not passed on would cut the operating margin by about 5 points. FY26 results cited volatile crude-linked raw material prices, which feed into PVC panels at its suppliers.",
         "competitors": [
             {
                 "name": "Greenlam Industries",
@@ -452,10 +452,10 @@ const profiles: BusinessProfile[] = [
             }
         ],
         "position": "**A leader in organised decorative wall panels**, with about 16% of that market in FY23 (Technopak, in the RHP), 3,750 SKUs and 205 distributors. As it owns no plants, capacity use does not apply.",
-        "money": "Screener shows **borrowings (with leases) of ₹24cr** at March 2026 against about ₹16cr of cash and ₹14cr of investments, so **about ₹8cr of net cash**. The ₹42.7cr Fabwood payment, due within 120 days of October 2026, will use most of it. **Cash is the weak point.** Over FY24–FY26, ₹294cr of operating profit produced only ₹85cr of operating cash and ₹27cr of free cash. Stock rose to 255 days of sales from 103, and the cash cycle to 321 days. Acquisitions have cost about ₹152cr since December 2025. The September 2025 IPO raised no money for the company: the family sold ₹451cr of shares at ₹247, then bought about ₹100cr back. The share price is about ₹188.",
+        "money": "Screener shows **borrowings (with leases) of ₹24cr** at March 2026 against about ₹16cr of cash and ₹14cr of investments, so **about ₹8cr of net cash**. The ₹42.7cr Fabwood payment is on hold (26 October 2026), but the Drashti Surfaces purchase (₹31.1cr plus a loan of up to ₹20cr, 5 November 2026) will use most of it. **Cash is the weak point.** Over FY24–FY26, ₹294cr of operating profit produced only ₹85cr of operating cash and ₹27cr of free cash. Stock rose to 255 days of sales from 103, and the cash cycle to 321 days. Acquisitions have cost about ₹152cr since December 2025. The September 2025 IPO raised no money for the company: the family sold ₹451cr of shares at ₹247, then bought about ₹100cr back. The share price is about ₹188.",
         "watch": [
             "Operating cash flow positive for FY27 and stock days falling back towards 150.",
-            "Operating margin holding near 25% or above as Uro Veneer, Chawla and Fabwood are consolidated.",
+            "Operating margin holding near 25% or above as Uro Veneer, Chawla and Drashti Surfaces are consolidated, and what happens to the Fabwood deal.",
             "The parent company's own sales growing again, not just acquired revenue."
         ],
         charts: consumerDurablesCharts["Euro Pratik Sales"],

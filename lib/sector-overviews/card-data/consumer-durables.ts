@@ -5200,7 +5200,7 @@ export const consumerDurablesCharts: Record<string, ProfileCharts> = {
             {
                 "label": "Net cash",
                 "value": "₹8cr",
-                "note": "Borrowings including leases (₹24cr) minus cash (₹16cr) and investments (₹14cr), March 2026; before the ₹42.7cr Fabwood payment."
+                "note": "Borrowings including leases (₹24cr) minus cash (₹16cr) and investments (₹14cr), March 2026; before the Drashti Surfaces purchase (₹31.1cr, Nov 2026). The ₹42.7cr Fabwood deal is on hold."
             },
             {
                 "label": "Operating margin FY26",
