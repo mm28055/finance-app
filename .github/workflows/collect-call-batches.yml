@@ -1,0 +1,93 @@
+name: Collect call analyses
+
+# The 8pm job sends the day's call analyses to Gemini's batch mode (half price). This job saves
+# Google's answers in the morning: the brief, guidance and profile, then what the call added to the
+# night's results note and the read on AGMs and special calls. A batch Google has not finished by
+# now is collected at the start of the next 8pm job.
+on:
+  schedule:
+    - cron: '30 1 * * *'   # 7:00am IST, every day
+  workflow_dispatch:
+
+concurrency:
+  group: daily-filings-digest
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    name: Save batched call analyses
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Save the analyses Google has finished
+        timeout-minutes: 90
+        run: npx tsx scripts/collect-call-batches.ts
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+          GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
+          GOOGLE_AI_KEYS: ${{ secrets.GOOGLE_AI_KEYS }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
+      # What each call added to its results note, now that the call is analysed. Never fails the job.
+      - name: Results call notes
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        timeout-minutes: 60
+        run: |
+          npx tsx scripts/sync-results.ts
+          if git diff --quiet lib/results; then
+            echo "No results changes."
+            exit 0
+          fi
+          git config user.name "filings-bot"
+          git config user.email "filings-bot@users.noreply.github.com"
+          git add lib/results/results.json
+          git commit -m "Add call notes to the results (morning)"
+          git pull --rebase
+          git push
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+          GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
+          GOOGLE_AI_KEYS: ${{ secrets.GOOGLE_AI_KEYS }}
+
+      # The read on new AGMs and special calls, which needs their analysis. Never fails the job.
+      - name: Read AGMs and special calls
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        timeout-minutes: 30
+        run: |
+          npx tsx scripts/sync-call-reads.ts
+          if git diff --quiet lib/calls-read; then
+            echo "No new reads."
+            exit 0
+          fi
+          git config user.name "filings-bot"
+          git config user.email "filings-bot@users.noreply.github.com"
+          git add lib/calls-read/reads.json
+          git commit -m "Read new AGMs and special calls (morning)"
+          git pull --rebase
+          git push
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+          GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
+          GOOGLE_AI_KEYS: ${{ secrets.GOOGLE_AI_KEYS }}

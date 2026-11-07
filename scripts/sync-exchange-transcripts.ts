@@ -12,6 +12,9 @@
  *                scripts/claude-analysis.ts (calls read by Claude, not Gemini)
  *   --via-screener  with --source=screener: read the window for every selected
  *                company from Screener (when NSE is refusing our requests)
+ *   --batch      store the transcripts and send their analyses to Gemini's batch
+ *                mode (half price); the 7am job collects them (lib/call-batch.ts).
+ *                The nightly job uses this.
  *
  * Sources:
  *   nse       NSE's corporate-announcements feed: our companies' filings whose
@@ -53,15 +56,13 @@ import fs from 'fs';
 import pdfParse from 'pdf-parse';
 import { prisma } from '../lib/prisma';
 import { processTranscript, resolveScreenerUrl } from '../lib/sync-service';
-import { pruneCompany } from '../lib/retention';
-import { updateCompanyProfile } from '../lib/profile-service';
+import { afterCallAnalysis, pendingTranscriptIds, submitCallBatch, type BatchItem } from '../lib/call-batch';
 import { classifyTranscript, isRelatedEntityCall, isAgmDocument, detectCallDate, detectStatedQuarter, looksLikeCallTranscript, quarterEndDate } from '../lib/doc-type';
 import { getFinancialQuarter, generalQuarterName, fiscalYearOf, getAcceptanceCutoff, quarterScore, GENERAL_Q } from '../lib/quarters';
 import { generalSlotDate } from '../lib/doc-label';
 import { notAResultsQuarter, screenerShowsCall, tooEarlyForResults } from '../lib/reporting';
 import { nseAnnouncements, nseListedIsins, parseNseDate, NSE_UA } from '../lib/filings/nse';
 import { nseSymbolForIsin } from '../lib/corporate-actions/nse-lists';
-import { deleteStoredPdf } from '../lib/transcript-storage';
 
 const DAY = 86400000;
 const IST = 330 * 60000;
@@ -342,6 +343,10 @@ async function main() {
     const dryRun = measure || process.argv.includes('--dry-run');
     const noPrune = process.argv.includes('--no-prune');
     const storeOnly = process.argv.includes('--store-only');
+    const batch = process.argv.includes('--batch') && !storeOnly;
+    // Calls already sent in an earlier batch (waiting for Google), and the ones this run sends.
+    const inBatch = batch ? await pendingTranscriptIds() : new Set<string>();
+    const queued: BatchItem[] = [];
     const viaScreener = process.argv.includes('--via-screener');
     const verbose = process.argv.includes('--verbose'); // adds the source file to each line
     const source = (arg('source') || 'both').toLowerCase();
@@ -447,7 +452,14 @@ async function main() {
         if (earlier) { log(d, TYPE_LABEL[type], earlier.slot, 'skipped (same as an earlier filing in this run)', extra); return; }
         if (same) {
             // A row this feed stored earlier whose analysis did not finish is retried.
-            if (!same.hasAnalysis && same.filePath === d.url && !dryRun && !storeOnly) {
+            if (!same.hasAnalysis && same.filePath === d.url && !dryRun && !storeOnly && batch) {
+                if (inBatch.has(same.id) || queued.some(i => i.transcriptId === same.id)) {
+                    log(d, TYPE_LABEL[type], same.quarter.name, 'analysis waiting in batch', extra);
+                } else {
+                    queued.push({ transcriptId: same.id, companyId: d.co.id, company: d.co.name, slot: same.quarter.name, results: same.quarter.q !== GENERAL_Q, noPrune });
+                    log(d, TYPE_LABEL[type], same.quarter.name, 'analysis retry sent to batch', extra);
+                }
+            } else if (!same.hasAnalysis && same.filePath === d.url && !dryRun && !storeOnly) {
                 const r = await processTranscript(same.id);
                 log(d, TYPE_LABEL[type], same.quarter.name, r?.success ? 'analysis retried' : `analysis retry failed (${(r as any)?.error})`, extra);
             } else {
@@ -503,30 +515,12 @@ async function main() {
             });
             stored++;
             if (storeOnly) { log(d, typeLabel, slot, 'stored (analysis left for scripts/claude-analysis.ts)', extra); return; }
+            const item: BatchItem = { transcriptId: id, companyId: d.co.id, company: d.co.name, slot, results: !kind, noPrune };
+            if (batch) { queued.push(item); log(d, typeLabel, slot, `stored, analysis sent to batch${why ? ` (${why})` : ''}`, extra); return; }
             const r = await processTranscript(id);
             if (!r?.success) { log(d, typeLabel, slot, `stored, analysis failed (${(r as any)?.error})`, extra); return; }
-            if (!noPrune) await pruneCompany(prisma, d.co.id, {
-                onTranscriptEvict: async t => {
-                    await deleteStoredPdf(t.fileUrl, d.co.name, t.quarterName);
-                    console.log(`   ${d.co.name.trim()}: rolled off ${t.quarterName} transcript`);
-                },
-                onAnalysisEvict: async a => { console.log(`   ${d.co.name.trim()}: rolled off ${a.quarterName} analysis`); },
-            });
-            // A new results call also refreshes the PROFILE tab, but only when it is newer than the
-            // quarter the profile was written from (a late, older call never rolls it back).
-            // Special calls and AGMs leave it alone. A failure here never undoes the analysis.
-            let profileNote = '';
-            if (!kind) {
-                try {
-                    const co = await prisma.company.findUnique({ where: { id: d.co.id }, select: { profileQuarter: true } });
-                    if (!co?.profileQuarter || quarterScore(slot) > quarterScore(co.profileQuarter)) {
-                        const p = await updateCompanyProfile(d.co.id, slot);
-                        profileNote = p.updated ? ', profile refreshed' : `, profile not refreshed (${p.reason})`;
-                    }
-                } catch (e: any) {
-                    profileNote = `, profile refresh failed (${e.message})`;
-                }
-            }
+            // Roll-off of old quarters, then (results calls only) the PROFILE refresh. A failure there never undoes the analysis.
+            const profileNote = await afterCallAnalysis(item);
             log(d, typeLabel, slot, `stored and analysed${why ? ` (${why})` : ''}${profileNote}`, extra);
         } catch (e: any) {
             log(d, typeLabel, slot, `failed (${e.message})`, extra);
@@ -618,6 +612,7 @@ async function main() {
     }
 
     if (jsonOut) fs.writeFileSync(jsonOut, JSON.stringify(records, null, 1));
+    if (batch) await submitCallBatch(queued);
 
     console.log('\nBy type:');
     for (const [k, v] of Object.entries(byType).sort((a, b) => b[1] - a[1])) console.log(`  ${k.padEnd(34)} ${v}`);

@@ -106,7 +106,8 @@ class RotatingModel {
 
 // Export a proxy object that mimics the real model interface for commonly used methods
 // Usage: High-Intelligence Model for complex reasoning (Upgraded to v3)
-export const geminiPro = new RotatingModel("gemini-3.1-pro-preview");
+export const PRO_MODEL = "gemini-3.1-pro-preview";
+export const geminiPro = new RotatingModel(PRO_MODEL);
 
 // Usage: Fast Model (Overridden to use Pro as per user request to ONLY use this model)
 export const geminiFlash = new RotatingModel("gemini-3.1-pro-preview");
