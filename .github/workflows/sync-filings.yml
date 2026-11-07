@@ -128,7 +128,8 @@ jobs:
       # hold back the filings.
       # Since 7 Nov 2026 the analyses go to Gemini's batch mode (half price): the transcripts are
       # stored now and their analyses sent in one batch, which the 7am job (collect-call-batches.yml)
-      # saves. It first collects any batch Google had not finished by the morning.
+      # saves. It first saves the profile refreshes the 7am job sent, and any call batch Google
+      # had not finished by the morning.
       - name: Fetch call transcripts from the exchange
         if: ${{ !cancelled() }}
         continue-on-error: true

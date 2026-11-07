@@ -1,9 +1,10 @@
 name: Collect call analyses
 
 # The 8pm job sends the day's call analyses to Gemini's batch mode (half price). This job saves
-# Google's answers in the morning: the brief, guidance and profile, then what the call added to the
-# night's results note and the read on AGMs and special calls. A batch Google has not finished by
-# now is collected at the start of the next 8pm job.
+# Google's answers in the morning: the brief and guidance, then what the call added to the night's
+# results note and the read on AGMs and special calls. The profile refreshes those calls need go
+# out as a second batch, saved by the 8pm job, which also collects any call batch Google had not
+# finished by now.
 on:
   schedule:
     - cron: '30 1 * * *'   # 7:00am IST, every day
