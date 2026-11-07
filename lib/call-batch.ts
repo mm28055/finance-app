@@ -15,6 +15,7 @@
  */
 import { prisma } from './prisma';
 import { PRO_MODEL } from './gemini';
+import { recordGeminiUsage } from './gemini-usage';
 import { processTranscript } from './sync-service';
 import { parseAnalysisText } from './ai-analyst';
 import { pruneCompany } from './retention';
@@ -96,6 +97,8 @@ async function collect<T>(key: string, idOf: (i: T) => string, handle: (item: T,
         const answers: any[] = j.response?.inlinedResponses?.inlinedResponses || j.metadata?.output?.inlinedResponses?.inlinedResponses || [];
         const byId = new Map(answers.map(a => [a.metadata?.key, a]));
         console.log(`${b.name}: ${state}, ${answers.length} of ${b.items.length} answers`);
+        // Counted under the job that sent the batch (call briefs or profile refreshes), at batch price.
+        for (const a of answers) if (a?.response) recordGeminiUsage(a.response, PRO_MODEL, true, key === CALLS ? 'call-briefs-batch' : 'profiles-batch');
         for (const item of b.items) {
             const a = byId.get(idOf(item));
             const text = a && !a.error ? textOf(a.response) : '';

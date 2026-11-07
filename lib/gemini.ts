@@ -1,4 +1,5 @@
 import { GoogleGenerativeAI, GenerativeModel } from "@google/generative-ai";
+import { recordGeminiUsage } from "./gemini-usage";
 
 const singleKey = process.env.GOOGLE_AI_KEY;
 const multiKeys = process.env.GOOGLE_AI_KEYS ? process.env.GOOGLE_AI_KEYS.split(',') : [];
@@ -75,7 +76,9 @@ class RotatingModel {
             const model = client.getGenerativeModel({ model: this.modelName, ...(this.tools ? { tools: this.tools } : {}) });
 
             try {
-                return await model.generateContent(prompt);
+                const result = await model.generateContent(prompt);
+                recordGeminiUsage(result?.response, this.modelName);
+                return result;
             } catch (error: any) {
                 // Anything other than a rate limit (bad request, safety block...) fails straight away.
                 if (!isRateLimit(error)) throw error;
