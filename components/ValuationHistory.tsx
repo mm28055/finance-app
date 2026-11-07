@@ -138,12 +138,12 @@ export function ValuationHistory({ companyId, embedded = false, marketCap = null
                                     return (
                                         <div className="bg-white rounded-lg border border-gray-200 px-2 py-1 text-[11px] leading-snug shadow-sm">
                                             <div className="text-gray-700">{new Date(String(label)).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}</div>
-                                            {/* Price · market cap · move since that day, on one line. */}
+                                            {/* Price · market cap on one line, the move since that day below. */}
                                             <div className="whitespace-nowrap">
                                                 <span className="text-[#4A7AAF]">{metric === 'price' ? '' : `${tab.label} `}{fmt(v, metric)}</span>
                                                 {mcap !== null && <span className="text-gray-600"> · ₹{Math.round(mcap).toLocaleString('en-IN')}cr</span>}
-                                                {pct !== null && <span className={pct >= 0 ? 'text-[#1F7A45]' : 'text-[#6B3FA0]'}> · {pct >= 0 ? '+' : ''}{Math.abs(pct) >= 100 ? pct.toFixed(0) : pct.toFixed(1)}%</span>}
                                             </div>
+                                            {pct !== null && <div className={pct >= 0 ? 'text-[#1F7A45]' : 'text-[#6B3FA0]'}>{pct >= 0 ? '+' : ''}{Math.abs(pct) >= 100 ? pct.toFixed(0) : pct.toFixed(1)}%</div>}
                                         </div>
                                     );
                                 }} />
