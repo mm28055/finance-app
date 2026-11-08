@@ -697,7 +697,7 @@ const profiles: BusinessProfile[] = [
         "company": "Kalpataru",
         "inShort": [
             "**A Mumbai and Thane home builder** from the five-decade-old Kalpataru group, best known for the Kalpataru Parkcity township in Thane, luxury towers such as Vian at Lokhandwala, and housing-society redevelopments; listed in July 2025.",
-            "**Good:** an old brand with about 18.4 mn sq ft delivered, about 15 mn sq ft due for completion over FY27–FY29, and refinancing has cut its borrowing cost to about 11%. **Bad:** **₹8,229cr of net debt (2.0 times equity)**, pre-sales were flat in H1 FY27 against a 23% growth target, CRISIL cut its rating to BBB in September, and five years of filed operating cash plus about ₹3,000cr of new equity barely dented borrowings.",
+            "**Good:** an old brand with about 18.4 mn sq ft delivered, about 15 mn sq ft due for completion over FY27–FY29, and refinancing has cut its borrowing cost to about 11%. **Bad:** **₹8,229cr of net debt (2.0 times equity)**, pre-sales were flat in H1 FY27 (₹2,587cr; Q2 ₹1,258cr, down 5%) against a ₹6,500cr target management kept on its Q2 call, net debt rose to ₹8,323cr at September, CRISIL cut its rating to BBB in September, and five years of filed operating cash plus about ₹3,000cr of new equity barely dented borrowings.",
             "**Verdict: pass.** Too much costly debt for a business whose sales have stalled; the handover profits that could fix it are an FY28–FY29 story, and FY27 net debt is guided flat."
         ],
         "tagline": "A Mumbai-region developer of premium homes, townships and society redevelopments, carrying one of the heaviest debt loads among listed developers.",
@@ -785,7 +785,7 @@ const profiles: BusinessProfile[] = [
         "position": "**One of the top five organised residential developers in Mumbai** (CRISIL), with 77 projects and about 18.4 mn sq ft delivered and 25 projects (about 25.1 mn sq ft) under way at March 2025 (ICRA).",
         "money": "Screener shows **₹9,168cr of borrowings** at March 2026; the company put net debt at **₹8,106cr (2.0 times equity)**, rising to ₹8,229cr at June (gross ₹9,189cr, cash ₹959cr), and expects FY27 to end about flat. The FY26 profit and loss shows only ₹70cr of interest because most is charged into project costs. **Over FY22–FY26 it generated ₹4,253cr of filed operating cash and raised about ₹3,030cr of equity (₹1,440cr from promoters, ₹1,590cr in the IPO, ~75% of it used to repay debt), yet borrowings ended above the ₹7,374cr of March 2021**; most of the cash went on interest. CRISIL cut its rating to BBB in September 2026 and expects debt to stay above 3.5 times yearly operating cash through FY28; ICRA's BBB was withdrawn at the company's request. Filed return on equity is 2.7%. No dividend. The share trades at about ₹252, against the ₹414 IPO price and the promoters' ₹517.25. Promoters hold **81.34%**, unchanged since listing, with no pledge.",
         "watch": [
-            "Q2 results (due by 14 November) and H2 pre-sales reaching about ₹3,900cr.",
+            "H2 pre-sales reaching about ₹3,900cr, 60% of the ₹6,500cr guide kept in the Q2 call; prices have risen only 3–5%.",
             "Occupation certificates in H2 for the 5.5 mn sq ft completion target.",
             "Net debt at March 2027 against the ₹8,106cr ceiling, and the next rating actions."
         ],
