@@ -529,7 +529,7 @@ export const constructionBuildings: SectorOverview = {
         {
             company: 'PSP Projects', rank: 4, stance: 'SCALEUP', segment: BLD_CON,
             what: "An Ahmedabad building contractor for factories, offices, housing, temples and government buildings, 34.41% owned by the Adani group, which supplies about 70% of its ₹13,245cr order book.",
-            view: "**Volume without margin.** Revenue rose 65% in Q1, the book doubled, and interest-free Adani advances repaired its cash flow. But its margin fell from 15% in FY22 to 6%, return on equity is about 5%, CARE cut its short-term rating in December, about ₹190cr of old dues are still uncollected, and the 7–8% margin target has moved to H2. The price needs about {need:PSP Projects|22}% a year against my ~18%.",
+            view: "**Volume without margin.** Revenue rose 65% in Q1, the book doubled, and interest-free Adani advances repaired its cash flow. But its margin fell from 15% in FY22 to 6%, return on equity is about 5%, CARE cut its short-term rating in December, about ₹190cr of old dues are still uncollected, and the 7–8% margin target has moved to H2. The price needs about {need:PSP Projects|22}% a year against my ~18%. 8 Nov 2026: Q2 revenue rose 58% but the margin fell to 6% again; the price reads Full, and it stays pass.",
             watch: 'H2 margin at 7–8%; the non-Adani share of new orders; collection of the Surat Diamond Bourse and UP dues.',
         },
     ],
