@@ -735,8 +735,8 @@ export const chemicalsIngredients: SectorOverview = {
         {
             company: 'Steamhouse India', rank: 9, stance: 'SCALEUP', segment: SERV,
             what: "Shared coal and waste-fired boilers in Gujarat's industrial estates (Vapi, Ankleshwar, Sarigam, Nandesari, Panoli) that sell steam by pipeline to about 200 chemical, pharma and textile factories; listed September 2026.",
-            view: "**A useful utility with a promoter-heavy past, priced for its plan.** Operating profit a tonne rose to ₹1,011 in Q1 FY27 and five years of operating cash matched operating profit. But most of the margin jump is the end of coal trading, plants are 41% used, every boiler being built is late or over budget, and debt was ₹400cr in July before ₹180cr is repaid. Dealings with the promoter's Sanjoo companies were 74% of FY26 revenue, and it charters an aircraft from the promoter's US company. The price needs about {need:Steamhouse India|30}% a year against my ~22%.",
-            watch: 'Four boilers live and ₹1,000+ a tonne by Q4 FY27; debt down to about ₹220cr; steam bought from Sanjoo falling; the Una contract signed.',
+            view: "**A useful utility with a promoter-heavy past, priced for its plan.** Operating profit a tonne rose to ₹1,011 in Q1 FY27 and five years of operating cash matched operating profit. But most of the margin jump is the end of coal trading, plants are 41% used, every boiler being built is late or over budget, and debt was ₹400cr in July before ₹180cr is repaid. Dealings with the promoter's Sanjoo companies were 74% of FY26 revenue, and it charters an aircraft from the promoter's US company. In Q2 FY27 operating profit a tonne fell back to about ₹818 on monsoon and cost pressures (H1 ₹916), operating profit was ₹24.7cr and net debt to equity dropped to 0.16x after the IPO repaid loans (Q2 call). The price needs about {need:Steamhouse India|30}% a year against my ~22%.",
+            watch: 'Four boilers live and ₹1,000+ a tonne by Q4 FY27 (about ₹818 in Q2); debt down to about ₹220cr; steam bought from Sanjoo falling; the Una contract signed.',
         },
         {
             company: 'Premier Explosives', rank: 10, stance: 'TURNAROUND', segment: SERV,
@@ -753,7 +753,7 @@ export const chemicalsIngredients: SectorOverview = {
         {
             company: 'Refex Industries', rank: 12, stance: 'AVOID', segment: SERV,
             what: "Once a refrigerant-gas refiller, now a fly-ash and coal logistics firm for 42 power stations (NTPC 28% of revenue) with a new wind-turbine assembly business.",
-            view: "**Cheap for reasons that are not about the business.** Ash profit is growing fast and the price needs only about {need:Refex Industries|9}% a year against my ~12%. But unbilled revenue rose from ₹151cr to ₹696cr, ash receivables and unbilled work are 58% of the segment's assets, the promoter pledge rose to 47% for ‘personal use’, an income-tax search is unresolved and ₹509cr of guarantees back the wind arm.",
+            view: "**Cheap for reasons that are not about the business.** Ash profit is growing fast and the price needs only about {need:Refex Industries|9}% a year against my ~12%. But unbilled revenue rose from ₹151cr to ₹696cr, ash receivables and unbilled work are 58% of the segment's assets, the promoter pledge rose to 47% for ‘personal use’, an income-tax search is unresolved and ₹509cr of guarantees back the wind arm. In Q2 FY27 standalone revenue was ₹560cr at a 16% margin, but wind revenue fell to ₹201cr from ₹297cr, the wind order book is about ₹1,100cr and management now expects only a 2.5–3% net margin there this year (29 Oct 2026 call); the call said nothing on unbilled revenue or the pledge.",
             watch: 'Unbilled revenue turning into cash; the pledge actually falling; the income-tax search order.',
         },
     ],
