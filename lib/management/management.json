@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30",
+ "updated": "2026-11-08",
  "companies": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -10900,7 +10900,7 @@
      "bio": "A management graduate of the Faculty of Management Studies (FMS), Delhi. He joined Voltas in August 2026 from ITC, where he held several leadership roles and was most recently General Manager, Marketing Development in the tobacco division, running large sales teams. He takes over sales of room ACs and other unitary products from Jogesh Jaitly, who retires in March 2027."
     }
    ],
-   "changes": "Head of Sales Jogesh Jaitly retires on 31 Mar 2027; Karan Sehgal (ex-ITC) joined in Aug 2026 to take over from 1 Oct 2026. Vishal Gupta was appointed Head – IT & Digital in Jun 2026. Pradeep Bakshi's term as MD & CEO ended on 31 Aug 2025.",
+   "changes": "Head of Sales Jogesh Jaitly retires on 31 Mar 2027; Karan Sehgal (ex-ITC) joined in Aug 2026 to take over from 1 Oct 2026. Vishal Gupta was appointed Head – IT & Digital in Jun 2026. Pradeep Bakshi's term as MD & CEO ended on 31 Aug 2025. Chairman Noel Tata retires on 11 Nov 2026, succeeded by Sunil Alaric D'Souza; Jayant Balan to succeed MD Mukundan Menon for five years from 25 May 2027 (filing of 6 Nov 2026).",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_29362_VOLTAS_2025_2026_A_17535603_06062026231927.pdf",
     "https://nsearchives.nseindia.com/corporate/VOLTAS_26062023195813_AppointmentofED_IntimationtoSE.pdf",
@@ -10909,9 +10909,10 @@
     "https://nsearchives.nseindia.com/corporate/VOLTAS_RB_13012025194815_SELetter13012025.pdf",
     "https://nsearchives.nseindia.com/corporate/VOLTAS_RB_12052025131645_SEIntimation_Mr_Rakesh_Govindan.pdf",
     "https://nsearchives.nseindia.com/corporate/VOLTAS_RB_28072026160713_changeinkmp280726.pdf",
-    "https://nsearchives.nseindia.com/corporate/VOLTAS_RB_15062026183921_SE_disclosure_Appointment_of_SMP_-_Vishal_Gupta.pdf"
+    "https://nsearchives.nseindia.com/corporate/VOLTAS_RB_15062026183921_SE_disclosure_Appointment_of_SMP_-_Vishal_Gupta.pdf",
+    "https://nsearchives.nseindia.com/corporate/VOLTAS_RB_06112026171132_02SE_Directorssigned.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-08"
   },
   {
    "company": "Blue Star",
@@ -19238,7 +19239,7 @@
     },
     {
      "name": "Nilesh Hirapara",
-     "role": "Chief Financial Officer",
+     "role": "Former CFO (moved to a group role, 6 Nov 2026)",
      "since": "Apr 2023",
      "family": false,
      "bio": "Nilesh Hirapara is a chartered accountant. Before Anup he was Head – Finance, Controlling & Treasury at AIA Engineering, and earlier worked at Larsen & Toubro. His experience covers finance and accounts, treasury, MIS, internal audit, compliance and SAP roll-outs. He became CFO in April 2023, replacing Bhavesh Shah."
@@ -19263,18 +19264,26 @@
      "since": "May 2025",
      "family": false,
      "bio": "Kunal Shah is a commerce graduate with a master's in labour welfare from Gujarat University and a certificate in strategic management from XLRI. He has more than 24 years in human resources, covering hiring, pay structures, career planning, performance management and staffing greenfield projects. He joined as Chief Human Resource Officer in May 2025."
+    },
+    {
+     "name": "Vishal Begwani",
+     "role": "Chief Financial Officer",
+     "since": "6 November 2026",
+     "family": false,
+     "bio": "Over 20 years of finance experience; previously CFO of EIMCO Elecon (company filing, 6 Nov 2026)."
     }
    ],
-   "changes": "No changes in executives since the annual report (July 2026). Rudolph Mathias, appointed Chief Marketing Officer in Aug 2025, left in Oct 2025. Punit Lalbhai replaced his father Sanjay Lalbhai as Chairman in Nov 2025.",
+   "changes": "No changes in executives since the annual report (July 2026). Rudolph Mathias, appointed Chief Marketing Officer in Aug 2025, left in Oct 2025. Punit Lalbhai replaced his father Sanjay Lalbhai as Chairman in Nov 2025. CFO Nilesh Hirapara moved to a larger group role; Vishal Begwani, formerly CFO of EIMCO Elecon, appointed CFO from 6 Nov 2026.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_30115_ANUP_2025_2026_A_5074660_31072026204512.pdf",
     "https://nsearchives.nseindia.com/corporate/ANUP_08102022171027_IntimationforchangesinKMP.pdf",
     "https://nsearchives.nseindia.com/corporate/ANUP_06072024114200_Reg3006072024.pdf",
     "https://nsearchives.nseindia.com/corporate/ANUP_10042023113742_IntimationchangesinKMPRegulation30ofListingRegulation.pdf",
     "https://nsearchives.nseindia.com/corporate/ANUP_13052025121851_SMP.pdf",
-    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1697724_21072026104733_WEB.xml"
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1697724_21072026104733_WEB.xml",
+    "https://nsearchives.nseindia.com/corporate/ANUP_06112026124301_Reg30IntimationChangeinCFO.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-08"
   },
   {
    "company": "DEE Development",
@@ -22534,16 +22543,24 @@
      "family": false,
      "stake": "not disclosed",
      "bio": "A commerce graduate from Maharishi Dayanand University, Rohtak, with more than 19 years in procurement, all at CMR since 2006. He runs the buying of secondary aluminium scrap for all plants and decides trading terms with suppliers."
+    },
+    {
+     "name": "Satish Kumar Kaushik",
+     "role": "Chief Financial Officer",
+     "since": "6 November 2026",
+     "family": false,
+     "bio": "Appointed CFO on 6 Nov 2026 (company filing); no biography published yet."
     }
    ],
-   "changes": "CFO Yugal Kishor Garg resigned on 3 October 2026 for personal reasons, effective 23 October 2026; the board will consider naming Satish Kumar Kaushik, recently appointed President – Finance, as CFO at its November 2026 meeting. CFO Virender Kumar Shimar joined in May 2025 and resigned in August 2025; Yugal Kishor Garg replaced him. Nominee director Peter Francis Amour (Global Scrap Processors) left on 10 August 2026 and Ankur Singh joined as an additional director. Independent director Satpal Arora resigned in May 2025.",
+   "changes": "CFO Yugal Kishor Garg resigned on 3 October 2026 for personal reasons, effective 23 October 2026; the board will consider naming Satish Kumar Kaushik, recently appointed President – Finance, as CFO at its November 2026 meeting. CFO Virender Kumar Shimar joined in May 2025 and resigned in August 2025; Yugal Kishor Garg replaced him. Nominee director Peter Francis Amour (Global Scrap Processors) left on 10 August 2026 and Ankur Singh joined as an additional director. Independent director Satpal Arora resigned in May 2025. Satish Kumar Kaushik appointed CFO from 6 Nov 2026.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_32078_CMRGREEN_2025_2026_U_5876213_24092026115756.pdf",
     "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1693875_16072026122903_WEB.xml",
     "https://nsearchives.nseindia.com/corporate/CMRGREEN_ROID_95723_KMP_Doc.zip",
-    "https://nsearchives.nseindia.com/corporate/CMRGREEN_03102026153846_Intimation_for_Resignation_of_CFO.pdf"
+    "https://nsearchives.nseindia.com/corporate/CMRGREEN_03102026153846_Intimation_for_Resignation_of_CFO.pdf",
+    "https://nsearchives.nseindia.com/corporate/CMRGREEN_06112026145433_Intimation-CFO_Appointment.pdf"
    ],
-   "updatedOn": "2026-10-04"
+   "updatedOn": "2026-11-08"
   },
   {
    "company": "Deep Industries",
@@ -32289,13 +32306,20 @@
     },
     {
      "name": "Venkatesh Ramachandran",
-     "role": "Group Chief Financial Officer",
+     "role": "Group Chief Strategy and Transformation Officer (Group CFO until 6 Nov 2026)",
      "since": "18 May 2026",
      "family": false,
      "bio": "A finance professional with over 27 years across pharmaceuticals, life sciences, vaccines, logistics, IT services, retail, telecom and infrastructure. Most recently he was CFO of vaccine maker Biological E. Before that he was Director and Group CFO of NTC Logistics, and CFO of Aragen Life Sciences and of Prolifics Corporation; earlier he held finance roles at Spencer's Retail, Hutchison Essar and IL&FS. His experience covers M&A, IPOs, private equity, capital raising and restructuring."
+    },
+    {
+     "name": "Samar Vijay Pupala",
+     "role": "Chief Financial Officer",
+     "since": "6 November 2026",
+     "family": false,
+     "bio": "A finance executive with over 30 years of experience (company filing, 6 Nov 2026); no fuller biography published yet."
     }
    ],
-   "changes": "CFO Venkata Aditya Kumar Grandhi resigned on 3 Apr 2026; Rajesh Tummalaganti was interim CFO until 17 May 2026 and stays as Deputy CFO. Venkatesh Ramachandran joined as Group CFO on 18 May 2026. CTO Srikanth Gaddam resigned, last day 27 May 2026. On 14 Aug 2026 director Arun Vijaykumar Gupta was re-designated from independent to non-independent non-executive director. The FY26 annual report had not been filed on NSE by 29 Sep 2026, so stakes are from the FY25 report.",
+   "changes": "CFO Venkata Aditya Kumar Grandhi resigned on 3 Apr 2026; Rajesh Tummalaganti was interim CFO until 17 May 2026 and stays as Deputy CFO. Venkatesh Ramachandran joined as Group CFO on 18 May 2026. CTO Srikanth Gaddam resigned, last day 27 May 2026. On 14 Aug 2026 director Arun Vijaykumar Gupta was re-designated from independent to non-independent non-executive director. The FY26 annual report had not been filed on NSE by 29 Sep 2026, so stakes are from the FY25 report. Group CFO Venkatesh Ramachandran moved to Group Chief Strategy and Transformation Officer; Samar Vijay Pupala appointed CFO from 6 Nov 2026.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_27766_ZAGGLE_2024_2025_A_17581499_27082025164739.pdf",
     "https://nsearchives.nseindia.com/corporate/ZAGGLE_13052026172440_5_Appointment__Resignation_of_CFO.pdf",
@@ -32304,9 +32328,10 @@
     "https://nsearchives.nseindia.com/corporate/ZAGGLE_23052026142904_Resignation_of_SMP.pdf",
     "https://nsearchives.nseindia.com/corporate/ZAGGLE_14082026184256_Redesignation_of_Arun_Gupta.pdf",
     "https://nsearchives.nseindia.com/corporate/ZAGGLE_21072026131452_details_of_Key_Managerial_Personnel.pdf",
-    "https://www.screener.in/company/ZAGGLE/consolidated/"
+    "https://www.screener.in/company/ZAGGLE/consolidated/",
+    "https://nsearchives.nseindia.com/corporate/ZAGGLE_06112026182831_SE_Intimation_-_Change_in_Management.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-08"
   },
   {
    "company": "Nucleus Software",
@@ -32877,18 +32902,26 @@
      "since": "Since 2 October 2025",
      "family": false,
      "bio": "Holds an electronics engineering degree from NIT Kurukshetra and an MBA from IIM Calcutta, with more than two decades in technology, strategy, sales and marketing. Before Birlasoft he was Senior Vice President and head of the high-tech, media and entertainment vertical at Infosys. Based in Dallas, he runs the US, Canada and Latin America business, about 83% of revenue."
+    },
+    {
+     "name": "Madhavan Hariharan",
+     "role": "Chief Executive Officer and Managing Director (from 8 December 2026)",
+     "since": "Appointed 6 Nov 2026, effective 8 Dec 2026",
+     "family": false,
+     "bio": "Previously Group CFO of the CK Birla Group and closely associated with Birlasoft's leadership team (company filing, 6 Nov 2026); no fuller biography published yet."
     }
    ],
-   "changes": "CFO Kamini Shah left 7 Aug 2025. COO Selvakumaran Mannappan, CHRO Priti Kataria and CEO-Rest of World Manjunath Kygonahally all left on 31 Mar 2026; Arun Rao returned as CHRO from 1 Apr 2026. Chief Strategy Officer Ankur Vaish resigned effective 19 Sep 2026.",
+   "changes": "CFO Kamini Shah left 7 Aug 2025. COO Selvakumaran Mannappan, CHRO Priti Kataria and CEO-Rest of World Manjunath Kygonahally all left on 31 Mar 2026; Arun Rao returned as CHRO from 1 Apr 2026. Chief Strategy Officer Ankur Vaish resigned effective 19 Sep 2026. CEO and MD Angan Guha is succeeded by Madhavan Hariharan from 8 Dec 2026 (filing of 6 Nov 2026).",
    "sources": [
     "https://www.birlasoft.com/sites/default/files/resources/downloads/investors/annual-reports/annual-report-2025-26.pdf",
     "https://www.birlasoft.com/company/news/2022/birlasoft-appoints-angan-guha-as-ceo-and-managing-director",
     "https://www.birlasoft.com/leadership/chandrasekar-thyagarajan",
     "https://www.birlasoft.com/company/news/2026/birlasoft-appoints-vikram-puranik-chief-operating-officer",
     "https://www.birlasoft.com/company/news/2025/birlasoft-appoints-komal-jain-ceo-americas",
-    "https://www.investywise.com/birlasoft-ankur-vaish-resigns-as-chief-strategy-officer/"
+    "https://www.investywise.com/birlasoft-ankur-vaish-resigns-as-chief-strategy-officer/",
+    "https://nsearchives.nseindia.com/corporate/BSOFT_06112026183311_SEIntimationPR.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-08"
   },
   {
    "company": "R Systems International",
