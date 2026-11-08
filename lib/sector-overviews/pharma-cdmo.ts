@@ -631,7 +631,7 @@ export const pharmaCdmo: SectorOverview = {
                         ['Akums Drugs', 'Contract margin 14–15%, upper end; volume double digits; API break-even by March', '~₹300cr; Oriflame plants ₹56cr', '**Beat**: contract +18.6% at 17%; Zambia start slipped to Q3–Q4'],
                         ['Innova Captab', 'Volume 20%-plus; margin 15–16% ±2, 17–18% at maturity', '₹40–55cr a year; Baddi plant ‘baseline stage’', '**Beat**: +34%; Jammu EBITDA-positive as promised'],
                         ['Jubilant Ingrevia', 'FY27 EBITDA ₹750–800cr, now ‘closer to the upper end’ (Q2 call)', '₹400–500cr (about ₹120cr in H1); ₹189cr for 40% of ZettaOne', '**Ahead** (Q2 call): H1 EBITDA up 44%; big contract’s volumes still under negotiation'],
-                        ['Onesource Specialty', '$400m revenue at 40% margin in FY28; no FY27 figure', '$100m over FY26–FY28, borrowed', '**On track**: sequential growth; Line 2 not yet proven'],
+                        ['Onesource Specialty', '$400m revenue at 40% margin in FY28; no FY27 figure', '$100m over FY26–FY28, borrowed', '**On track**: Q2 revenue +15% on the quarter at 32%; Line 2 running since September; Line 3 may slip to the start of FY28'],
                         ['Aarti Pharmalabs', '15–18% a year; standalone margin 22–25%; contract +40–50%, H2-heavy', '~₹400cr plus ₹149cr new block', '**Mixed**: caffeine raised; ingredients cut; contract ₹37cr in Q1'],
                         ['Piramal Pharma', 'Early-to-mid-teens growth (kept); 25% EBITDA by FY30', '$120–135m', '**Beat on currency**: +17%, of which 9–10 points currency'],
                         ['Jubilant Pharmova', 'H2 margin 17–18%; Line 3 $60–80m; zero net debt by FY30', '~₹1,650cr, as in FY26', '**Slipping**: margin 11.9%; Montreal warning letter; net debt up'],
@@ -763,8 +763,8 @@ export const pharmaCdmo: SectorOverview = {
         {
             company: 'Onesource Specialty', rank: 9, stance: 'SCALEUP', segment: STERILE,
             what: "Drug-device combinations (pens and cartridges for GLP-1 weight-loss drugs), biologics, soft-gel capsules and sterile injectables for other companies.",
-            view: "**The one company monetising a capacity shortage today, priced for FY28.** Line 1 is full, the margin recovered to 27.5% and India Ratings upgraded it to A/Positive. But FY28 needs EBITDA to rise about 4.5 times, capex is all borrowed, promoters have pledged 37% of their stake, about 28% of revenue comes from promoter-group companies, and a ₹1,286cr arbitration claim is pending. 1 Nov 2026: the FDA closed its inspection of the Bengaluru sterile site with an inspection report classed voluntary action indicated (filing of 30 October), so the site stays cleared for US supply.",
-            watch: 'Line 2 running in Q2 and revenue stepping up; operating cash turning positive; the Prestige arbitration.',
+            view: "**The one company monetising a capacity shortage today, priced for FY28.** Line 1 is full, Line 2 has run commercial batches since September 2026, Q2 FY27 revenue rose 37% at a 32% margin and India Ratings upgraded it to A/Positive. The $400m FY28 target was kept, but Line 3 may only start at the start of FY28 and H1 operating cash was −₹19cr (27 Oct 2026 call and filing). But FY28 needs EBITDA to rise about 4.5 times, capex is all borrowed, promoters have pledged 37% of their stake, about 28% of revenue comes from promoter-group companies, and a ₹1,286cr arbitration claim is pending. 1 Nov 2026: the FDA closed its inspection of the Bengaluru sterile site with an inspection report classed voluntary action indicated (filing of 30 October), so the site stays cleared for US supply.",
+            watch: 'Line 2 ramping up and Line 3 running by the start of FY28; operating cash turning positive (−₹19cr in H1 FY27); the Prestige arbitration.',
         },
         {
             company: 'Aarti Pharmalabs', rank: 10, stance: 'CYCLICAL', segment: CHEM,
