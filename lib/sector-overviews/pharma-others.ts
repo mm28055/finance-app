@@ -536,7 +536,7 @@ export const pharmaOthers: SectorOverview = {
                         ['Hexagon Nutrition', 'July (first call): keep the pace of recent years; margin up; plants 35–40% used', 'Nashik rebuild ₹25–30cr', '**Beat** on growth (+43%) and use (47%); margin fell to 11.3%'],
                         ['Accent Microcell', 'Aug 2025: Unit III phase 1 by Oct–Nov 2025 (~₹70cr in FY26); phase 2 trials July 2026; receivables down', 'About ₹60cr phase 1; ₹55–60cr phase 2', '**Missed**: nothing from Unit III in FY26; phase 2 to March 2027; receivables ₹65cr → ₹91cr'],
                         ['Sequent Scientific', 'May: margin 20–22%; drug ingredients back to double-digit growth; ₹800cr EBITDA internal target', '₹250–300cr a year; Bioforlife about ₹188cr', '**Mixed**: revenue +19.5%, adjusted margin 21.6%; ingredients +4%'],
-                        ['Sudeep Pharma', 'May: margin 37–38% in a couple of quarters; working capital 150–160 days in FY27; battery plant April 2027', '₹25cr core plus ₹300cr battery phase 1', '**Mixed**: revenue +27%; margin 34.7%; working-capital target loosened'],
+                        ['Sudeep Pharma', 'May: margin 37–38% in a couple of quarters; working capital 150–160 days in FY27; battery plant April 2027', '₹25cr core plus ₹300cr battery phase 1', '**Mixed**: margin back to 37.2% in Q2; battery contracts moved to Q4; working capital 214 days, target loosened to 170–180'],
                         ['Q-Line Biotech', 'June (first call): revenue +30–35%; margin slightly above FY26; working capital 90–120 days', '₹25–30cr in FY27 (CARE)', '**Untested**: H1 FY27 results due November'],
                         ['Hester Biosciences', 'May: animal health to “recover from this quarter onwards”; no big capex', 'Little; new plants already capitalised', '**Missed** on animal health (tenders delayed again); poultry +48%'],
                         ['Zota Health Care', 'May: “moderate pace”; marketing in line with sales; losses gone within a year', 'New stores; ₹350cr QIP unspent at March', '**Walked back**: record ₹44cr Q1 loss; breakeven now Q4 FY27–Q1 FY28'],
@@ -643,8 +643,8 @@ export const pharmaOthers: SectorOverview = {
         {
             company: 'Sudeep Pharma', rank: 6, stance: 'PRICED', segment: INGREDIENTS,
             what: "Makes mineral-based excipients and nutrition ingredients (phosphates, carbonates, bisglycinates) for drug, food and infant-formula makers, and is building a battery-materials business.",
-            view: "**A strong niche, weak cash, priced for a new business.** A steady 35% margin and costs passed on, but only about 30% of FY26 profit became cash, stock covers 356 days and its main segment earned less than a year earlier. The battery plant has 44 prospects and no binding contract. On 26 October 2026 the new 51,200-tonne Nandesari plant got its Gujarat FDA approval, with supplies due in H2 FY27. The price needs about {need:Sudeep Pharma|29}% a year against my ~18%.",
-            watch: 'A binding battery contract with price terms; margin back to 37–38% in H2; operating cash catching up with profit.',
+            view: "**A strong niche, weak cash, priced for a new business.** A steady 35% margin and costs passed on, but only about 30% of FY26 profit became cash, stock covers 356 days and its main segment earned less than a year earlier. Q2 FY27 brought record revenue (₹197cr, +21%) at a 37.2% margin and H1 operating cash of ₹43.5cr (47% of profit), but working capital is still 214 days and the binding battery update has moved to Q4 (29 Oct 2026 call). The battery plant has 44 prospects and no binding contract. On 26 October 2026 the new 51,200-tonne Nandesari plant got its Gujarat FDA approval, with supplies due in H2 FY27. The price needs about {need:Sudeep Pharma|29}% a year against my ~18%.",
+            watch: 'A binding battery contract with price terms, now promised in Q4; margin holding near 37%; working capital falling from 214 days.',
         },
         {
             company: 'Q-Line Biotech', rank: 7, stance: 'SCALEUP', segment: ANIMAL,
@@ -661,8 +661,8 @@ export const pharmaOthers: SectorOverview = {
         {
             company: 'Zota Health Care', rank: 9, stance: 'TURNAROUND', segment: CARE,
             what: "Runs Davaindia, India's largest private chain of generic pharmacies selling its own low-priced medicines (2,825 stores, 1,855 company-run).",
-            view: "**Pass: a store model that may work, run with weak governance.** Revenue +68% and older stores earn well, but the net loss has widened to ₹104cr over four quarters, Q1's ₹44cr was the worst yet, and marketing broke its own promise within a quarter. Promoter directors are paid a share of turnover, not profit, their pay more than doubled in a loss-making year, and IiAS opposed four resolutions. No earnings to value.",
-            watch: 'The AGM vote on pay and related-party resolutions; positive operating profit in Q2, as promised; cash breakeven by Q4 FY27–Q1 FY28 without a new share issue.',
+            view: "**Pass: a store model that may work, run with weak governance.** Revenue +68% and older stores earn well, but the net loss has widened to ₹104cr over four quarters, Q1's ₹44cr was the worst yet, and marketing broke its own promise within a quarter. Promoter directors are paid a share of turnover, not profit, their pay more than doubled in a loss-making year, and IiAS opposed four resolutions. No earnings to value. 8 Nov 2026: Q2 FY27 operating profit turned positive at about ₹3cr (1.5% margin) on revenue up 55%, as promised, but the quarter still lost about ₹27cr before tax; one thin quarter does not fix the governance, so it stays pass.",
+            watch: 'The AGM vote on pay and related-party resolutions; operating profit staying positive after Q2’s ₹3cr; cash breakeven by Q4 FY27–Q1 FY28 without a new share issue.',
         },
         {
             company: 'Sigachi Industries', rank: 10, stance: 'TURNAROUND', segment: INGREDIENTS,
