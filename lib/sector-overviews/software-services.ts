@@ -753,7 +753,7 @@ export const softwareServices: SectorOverview = {
         {
             company: 'Latent View Analytic', rank: 9, stance: 'PRICED', segment: DATA,
             what: "A Chennai-based data and analytics firm serving US tech, payments and consumer-goods companies (90% North America), with a large Databricks practice and the Decision Point pricing-analytics unit.",
-            view: "**Growth has stalled and the story is being reset.** Dollar revenue fell 3.5% from Q4 against guidance of −1.5% to −2%, the margin target was cut to 20–21%, a new CEO has just arrived, and the top five clients are 57% of revenue. Its auditor flags a ₹220cr claim over Decision Point against the ₹70cr it expects to pay, and about 28% of pre-tax profit is treasury income. The price needs about {need:Latent View Analytic|16}% a year against my ~12%.",
+            view: "**Growth has stalled and the story is being reset.** Dollar revenue fell 3.5% from Q4 against guidance of −1.5% to −2%, the margin target was cut to 20–21%, a new CEO has just arrived, and the top five clients are 57% of revenue. Its auditor flags a ₹220cr claim over Decision Point against the ₹70cr it expects to pay, and about 28% of pre-tax profit is treasury income. The price needs about {need:Latent View Analytic|16}% a year against my ~12%. 8 Nov 2026: the price now fits after Q2 revenue grew 14% at a 20% margin (Screener), but its call has not been read for the dollar-revenue trend and the Decision Point claim; it stays wait for now.",
             watch: 'Q2 dollar revenue back to growth; the Decision Point claim settled near the company’s figure; the terms of the pending acquisition.',
         },
         {
