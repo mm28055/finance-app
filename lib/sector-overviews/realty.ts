@@ -630,7 +630,7 @@ export const realty: SectorOverview = {
                         ['Shriram Properties', 'Net debt ₹432cr (0.29 times) at about 11%; may rise in FY27; ₹88cr invested in Q1', '₹465cr'],
                         ['Eldeco Housing & Ind', 'No debt figures given; buyback ‘under active consideration’', 'Net cash ₹107cr'],
                         ['Signatureglobal Ind.', 'Net debt ₹390cr at June (₹200cr at March); land ₹1,500–1,800cr; cap of 0.5 times the year’s operating surplus', '₹242cr'],
-                        ['Arkade', 'Net debt ₹5cr at June; construction finance if needed; no equity plan', '₹74cr'],
+                        ['Arkade', 'Debt-free with about ₹60cr of cash at September (Q2 call); construction finance if needed; no equity plan', '₹74cr'],
                         ['Suraj Estate', 'Net debt ₹614cr at June; debt ‘going up temporarily’; Bandra approval premiums ₹300–350cr', '₹595cr'],
                         ['Arihant Superstruct.', 'Net debt ₹818cr at June, about ₹400cr of it promoter loans; ₹500cr hotel programme', '₹854cr'],
                         ['Ganesh Housing', 'Borrowings ₹526cr at March including ₹149cr from group companies; dividend cut to 15%', '₹467cr'],
@@ -732,7 +732,7 @@ export const realty: SectorOverview = {
                         ['Shriram Properties', 'Sales ₹3,300–3,500cr; collections ₹2,100–2,200cr', '₹88cr invested in Q1', '**Behind**: no launch approvals at June'],
                         ['Eldeco Housing & Ind', 'No bookings guide; margins 30–35% and 25% after tax', '50.3-acre contract signed', '**Beat**: Q1 margins 37% and 30%'],
                         ['Signatureglobal Ind.', 'Pre-sales about ₹10,000cr; collections above ₹5,000cr; revenue ₹5,000cr', 'Land ₹1,500–1,800cr (raised)', '**Behind**: Q1 pre-sales −25%; collections 13% of target'],
-                        ['Arkade', 'Pre-sales about ₹1,000cr (was +20–25%); margin 25–26% (was 27–28%)', 'Launches about ₹3,000cr; Filmistan to FY28', '**Walked back**: growth and margin cut'],
+                        ['Arkade', 'Pre-sales about ₹1,000cr (was +20–25%); margin 25–26% (was 27–28%)', 'Launches about ₹3,000cr; Filmistan to FY28', '**Walked back**: growth and margin cut; H1 pre-sales ₹306cr, Q2 margin 24% (29 Oct 2026)'],
                         ['Suraj Estate', 'Pre-sales about ₹700cr; margin 35–37%; launches ₹1,600cr (was about ₹2,000cr)', 'Bandra approval premiums ₹300–350cr', '**Mixed**: pre-sales +74%, collections −25%'],
                         ['Arihant Superstruct.', 'Pre-sales ‘a little higher’ (was +25–30%); 2,500 deliveries', '₹500cr hotels and club over three years', '**Walked back**: growth guide cut'],
                         ['Ganesh Housing', 'Revenue ₹1,000–1,200cr; profit ₹300–325cr (first guide)', 'Land buying; Million Minds Phase 2', '**Walked back**: tower plan became a land sale'],
@@ -907,8 +907,8 @@ export const realty: SectorOverview = {
         {
             company: 'Arkade', rank: 16, stance: 'CYCLICAL', segment: MUMMID,
             what: "A Mumbai developer of mid-premium homes through society redevelopment, now also building on two large bought sites at Thane and Filmistan in Goregaon; listed in September 2024.",
-            view: "**A small company stretching.** Net debt is only ₹5cr and it sells about 95% of stock before completion. But it wrote off ₹182cr on Filmistan tenancy rights (its auditor added an emphasis of matter), cut its FY27 growth and margin guides within a quarter, and moved the Filmistan launch to FY28; Thane and Filmistan are far bigger than anything it has built. The price needs about {need:Arkade|8–9}% a year against my ~10%.",
-            watch: "The Thane launch in Q4; FY27 pre-sales of about ₹1,000cr; Filmistan approvals.",
+            view: "**A small company stretching.** Net debt is only ₹5cr and it sells about 95% of stock before completion. But it wrote off ₹182cr on Filmistan tenancy rights (its auditor added an emphasis of matter), cut its FY27 growth and margin guides within a quarter, and moved the Filmistan launch to FY28; Thane and Filmistan are far bigger than anything it has built. Launches slipped again, so H1 FY27 pre-sales were only ₹306cr against the ₹1,000cr guide it kept (29 Oct 2026 call), with two launches now due in Q3 and Thane in Q4. The price needs about {need:Arkade|8–9}% a year against my ~10%.",
+            watch: "The two Q3 launches and Thane in Q4; FY27 pre-sales of about ₹1,000cr (₹306cr in H1); Filmistan approvals.",
         },
         {
             company: 'Suraj Estate', rank: 17, stance: 'CYCLICAL', segment: MUMLUX,
