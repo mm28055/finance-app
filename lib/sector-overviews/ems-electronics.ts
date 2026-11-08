@@ -764,8 +764,8 @@ export const emsElectronics: SectorOverview = {
         {
             company: 'PG Electroplast', rank: 9, stance: 'CYCLICAL', segment: DURABLES,
             what: "Contract maker of air conditioners, washing machines, coolers, plastic parts and (through a joint venture) TVs for Indian appliance brands; adding refrigerators and compressors.",
-            view: "**Share gains in a seasonal, fixed-fee business.** Q1 revenue grew 35% to ₹2,034cr as AC revenue rose 38% against industry volume of about 15%. But FY26 profit fell 32% on a weak summer, free cash has been negative three years running, inventory stayed above ₹1,000cr against a promise of under ₹900cr, and it no longer gives guidance. The price needs about {need:PG Electroplast|29}% a year against my ~22%.",
-            watch: 'The compressor line in December–January; inventory below ₹900cr; FY27 profit back near FY25’s ~₹288cr, remembering ~₹71cr of it is incentives.',
+            view: "**Share gains in a seasonal, fixed-fee business.** Q1 revenue grew 35% to ₹2,034cr as AC revenue rose 38% against industry volume of about 15%. But FY26 profit fell 32% on a weak summer, free cash has been negative three years running, inventory stayed above ₹1,000cr against a promise of under ₹900cr, and it no longer gives guidance. Q2 FY27 revenue rose 42.5% to ₹934cr with no incentive booked, but management says inventory rose again on high commodity prices; compressor trial output is due by end-November with mass production in January–February, and the refrigerator plant in Q4 (Q2 call). The price needs about {need:PG Electroplast|29}% a year against my ~22%.",
+            watch: 'The compressor line in January–February (trials by end-November); inventory falling below ₹900cr; FY27 profit back near FY25’s ~₹288cr, remembering ~₹71cr of it is incentives.',
         },
         {
             company: 'Amber Enterprises', rank: 10, stance: 'AVOID', segment: DURABLES,
