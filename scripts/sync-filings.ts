@@ -5,6 +5,7 @@
  *   npx tsx scripts/sync-filings.ts --from=21-09-2026 --to=28-09-2026
  *   npx tsx scripts/sync-filings.ts --dry-run
  *   npx tsx scripts/sync-filings.ts --promoter-only      (only promoter trades, pledges and takeover-code filings)
+ *   npx tsx scripts/sync-filings.ts --dry-run --limit=5  (read only the first 5 filings; for testing)
  *
  * 1. Promoter trades and pledges: reads NSE's insider-trading filings (SEBI PIT
  *    Reg 7(2)) for the period, takes the numbers from each filing's XBRL and
@@ -30,6 +31,7 @@ import path from 'path';
 import pdfParse from 'pdf-parse';
 import { prisma } from '../lib/prisma';
 import { geminiPro, geminiScreen, geminiLight } from '../lib/gemini';
+import { askClaude, claudeAvailable } from '../lib/claude-cli';
 import { classifyImpact } from '../lib/filings/impact';
 import { nseAnnouncements, nseInsiderFilings, nsePitDisclosure, parseNseDate, NSE_UA, type PitTrade } from '../lib/filings/nse';
 import { nseSymbolForIsin } from '../lib/corporate-actions/nse-lists';
@@ -378,14 +380,24 @@ Reply with JSON only:
  "headline": "one plain-English line, under 90 characters, with the key number",
  "summary": "two or three short sentences: what happened, with exact figures from the filing, and why it matters (for example, size versus yearly sales). For ANY share issue, warrant or preferential allotment, state the dilution (percent more shares and percent dilution to existing holders, using the share count above) and the issue price versus the current share price. Never invent numbers; if a figure is not in the text, leave it out."}`;
 
-// Flash makes the call and writes the headline and summary. Until 7 Nov 2026 Pro re-judged every
-// filing Flash found material; the owner moved that to Flash to cut cost. Pro is used only when
-// Flash fails twice, so a filing is never dropped.
+// Since 8 Nov 2026 Claude (Opus, on the owner's Claude plan) makes the call and writes the headline
+// and summary; on Gemini this was about ₹2,300 a month. If Claude fails twice in a row (usually the
+// plan's limit), the rest of the night goes to Gemini: Flash, and Pro only when Flash fails twice,
+// so a filing is never dropped.
+const claude = { on: claudeAvailable(), failsInRow: 0, used: 0, gemini: 0 };
 async function judge(c: any, a: any, text: string) {
-    const ask = async (model: typeof geminiPro) => {
-        const raw = (await model.generateContent(PROMPT(c, a, text))).response.text();
-        return JSON.parse(raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1));
-    };
+    const parse = (raw: string) => JSON.parse(raw.slice(raw.indexOf('{'), raw.lastIndexOf('}') + 1));
+    if (claude.on) {
+        try {
+            const v = parse(await askClaude(PROMPT(c, a, text)));
+            claude.failsInRow = 0; claude.used++;
+            return v;
+        } catch (e: any) {
+            if (++claude.failsInRow >= 2) { claude.on = false; console.warn(`  Claude failed twice (${e.message}) — using Gemini for the rest of the run`); }
+        }
+    }
+    claude.gemini++;
+    const ask = async (model: typeof geminiPro) => parse((await model.generateContent(PROMPT(c, a, text))).response.text());
     for (const model of [geminiScreen, geminiLight]) {
         try { return await ask(model); } catch { /* try again, then fall back to Pro */ }
     }
@@ -462,6 +474,8 @@ async function main() {
         for (const a of takeover) console.log(`  takeover ${candidates.includes(a) ? 'READ' : 'skip'}: ${matchOf(a)!.name} — ${String(a.attchmntText || '').slice(0, 110)}`);
     console.log(`NSE ${from}→${to}: ${all.length} filings, ${ours.length} from our companies (${takeover.length} takeover-code), ${candidates.length} to read`);
 
+    const limitArg = process.argv.find(x => x.startsWith('--limit='));
+    if (limitArg) candidates.splice(Number(limitArg.split('=')[1]));
     for (const [i, a] of candidates.entries()) {
         const c = matchOf(a)!;
         const isSast = (a.desc || '').toLowerCase() === TAKEOVER_CATEGORY;
@@ -493,6 +507,7 @@ async function main() {
         await sleep(500);
     }
     const added = addedFrom.pit.length + addedFrom.sast.length + addedFrom.other.length;
+    console.log(`Filings judged by Claude: ${claude.used}; by Gemini: ${claude.gemini}.`);
 
     // Keep a rolling window and record the period covered.
     const cutoff = new Date(Date.now() - FILINGS_KEEP_DAYS * 86400000).toISOString().slice(0, 10);

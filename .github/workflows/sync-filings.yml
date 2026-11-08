@@ -56,9 +56,16 @@ jobs:
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
 
+      # Claude Code, so the filings are judged on the owner's Claude plan (8 Nov 2026). Without the
+      # CLAUDE_CODE_OAUTH_TOKEN secret, or when the plan's limit is reached, the job uses Gemini.
+      - name: Install Claude Code
+        continue-on-error: true
+        run: npm install -g @anthropic-ai/claude-code
+
       - name: Read and summarise the last two days of filings
         run: npx tsx scripts/sync-filings.ts
         env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           DIRECT_URL: ${{ secrets.DIRECT_URL }}
           GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
