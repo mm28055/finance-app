@@ -427,7 +427,7 @@ export const hardware: SectorOverview = {
                     rows: [
                         ['GNG Electronics', 'Revenue +30% in FY27 (raised from 25%); profit margin up 0.75–1 point (from 0.5)', 'No new plant in FY27; spending goes on people and marketing', '**Mixed**: Q1 +32% at a 12.8% margin beat; net debt ₹406cr against about ₹300cr promised'],
                         ['Rashi Peripheral', 'Q2 growth similar to Q1; 20% a year floor into FY28; Restar venture above US$100m in three years', '₹368.5cr for 67% of VDA; the rest over three years', '**Beat**: Q1 +62% against 20%; profit margin 2.05% against 1.5–1.75%'],
-                        ['Control Print', 'Core coding +10–15% (kept); packaging break-even H1 FY28 (was FY27)', '₹31.2cr for the Italian patents; Assam plant on hold', '**Missed**: standalone Q1 +4.2%; break-even pushed back about a year'],
+                        ['Control Print', 'Core coding +10–15% (kept); packaging break-even H1 FY28 (was FY27)', '₹31.2cr for the Italian patents; Assam plant on hold', '**Mixed**: standalone Q1 +4.2% but Q2 +31% (H1 +16%); break-even pushed back about a year'],
                         ['TVS Electronics', 'No numbers; ‘double-digit growth’ and ‘structural’ margins (May)', 'Routine only, after about ₹40cr on the factory and circuit-board lines', '**Missed**: Q1 revenue +9.6%; margin −2.3%; no call held'],
                     ],
                 },
@@ -517,8 +517,8 @@ export const hardware: SectorOverview = {
         {
             company: 'Control Print', rank: 3, stance: 'TURNAROUND', segment: MAKE,
             what: "Makes coding and marking printers that print dates, batch codes and barcodes on packs, and sells the inks, spares and service; also owns a loss-making sachet-packaging business in Italy and a small track-and-trace unit.",
-            view: "**A good core business with an expensive, unaudited detour.** The Indian business earns about 60% gross margin, about 86% of revenue is recurring and it holds net cash. But the foreign subsidiaries lost ₹31.2cr in FY26 in accounts no auditor checked, break-even slipped to H1 FY28 and Q1 standalone revenue grew only 4.2%. The price needs about {need:Control Print|15}% a year against my ~11%.",
-            watch: 'The Italian loss falling towards €1.5m a year; core growth back to 10–15% after the price rise; the final QR-code rule for medicines.',
+            view: "**A good core business with an expensive, unaudited detour.** The Indian business earns about 60% gross margin, about 86% of revenue is recurring and it holds net cash. But the foreign subsidiaries lost ₹31.2cr in FY26 in accounts no auditor checked, break-even slipped to H1 FY28 and Q1 standalone revenue grew only 4.2%. Q2 FY27 then rebounded: standalone revenue +31%, the group margin back to 20%, and subsidiary losses down to about ₹5cr from ₹8cr in Q1 (29 Oct 2026 call). The price needs about {need:Control Print|15}% a year against my ~11%.",
+            watch: 'The Italian loss falling towards €1.5m a year (subsidiary losses about ₹5cr in Q2); core growth holding at 10–15% for the year; the final QR-code rule for medicines.',
         },
         {
             company: 'TVS Electronics', rank: 4, stance: 'AVOID', segment: MAKE,
