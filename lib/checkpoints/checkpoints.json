@@ -3475,7 +3475,11 @@
    "text": "Term debt tied up for the Narmadapuram plant",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Not yet: management says the long-term loan for Narmadapuram 'is being tied up' (27 Oct 2026 call); debt to equity 0.14x",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays pass; equity raised in Q1 covers the plant for now"
   },
   {
    "id": "advait-energy-q3fy27-1",
@@ -5243,7 +5247,13 @@
    "text": "Wind revenue of about ₹1,700cr at a 5–6% net margin, mostly in H2 FY27",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-08",
+     "text": "Q2 FY27 call (29 Oct 2026): H1 wind revenue about ₹498cr, order book about ₹1,100cr; wind margin now guided at 4–5% EBITDA and 2.5–3% net for FY27 and H1 FY28"
+    }
+   ]
   },
   {
    "id": "cms-info-systems-q4fy27-1",
@@ -9440,7 +9450,11 @@
    "text": "The ₹70cr bank loan sanctioned and Phase 2 funding settled",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Bank's internal approvals done but no sanction letter yet (Q2 FY27 call); loan backed by promoter properties and deposits",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays avoid"
   },
   {
    "id": "rir-power-electr-q2fy27-2",
@@ -9449,7 +9463,11 @@
    "text": "Halol plant revenue of ₹30cr-plus a quarter, as guided",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Standalone (Halol) revenue ₹33.98cr in Q2 FY27, +25% on Q1",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays avoid; the core business is not the issue"
   },
   {
    "id": "servotech-renew-q2fy27-1",
@@ -10197,7 +10215,11 @@
    "text": "Inventory below ₹900cr, as promised",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Management says inventory was 'slightly up' in Q2 FY27 on high commodity prices, above the ₹1,000cr-plus of June",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays pass"
   },
   {
    "id": "pg-electroplast-q4fy27-1",
@@ -10206,7 +10228,13 @@
    "text": "Compressor line started in December–January",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-08",
+     "text": "Q2 FY27 call: trial production by end-November, mass production January–February 2027, about 1.5 million compressors in calendar 2027"
+    }
+   ]
   },
   {
    "id": "pg-electroplast-q4fy27-2",
@@ -17040,7 +17068,11 @@
    "text": "Borrowings (₹754cr) contained as Atali Block 2 is built",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Borrowings about ₹836cr at 30 Sep 2026 against ₹686cr at March in the filed balance sheet (₹754cr on Screener); H1 operating cash ₹30cr",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "piramal-pharma-q4fy27-1",
@@ -35071,7 +35103,11 @@
    "ifMet": "Pricing power is real and should lift H2 pre-sales value",
    "ifMissed": "No increase, or discounts, would confirm the slowdown seen in Q2 pre-sales",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "Q2 FY27 call: prices raised 3–5% across projects, which management says covers cost inflation",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays pass; small rises do not change the debt problem"
   },
   {
    "id": "kalpataru-q4fy27-1",
@@ -40563,6 +40599,15 @@
    "text": "Binding battery offtake contracts announced, as now promised for Q4 FY27",
    "due": "Q4 FY27",
    "project": "sudeep-pharma-battery",
+   "createdOn": "2026-11-08",
+   "status": "pending"
+  },
+  {
+   "id": "paramount-communications-q4fy27-4",
+   "company": "Paramount Communications",
+   "sector": "Cables",
+   "text": "Narmadapuram long-term loan tied up, with debt to equity staying below the 0.6x management set (27 Oct 2026)",
+   "due": "Q4 FY27",
    "createdOn": "2026-11-08",
    "status": "pending"
   }

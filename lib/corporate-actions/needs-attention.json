@@ -1203,7 +1203,7 @@
     "company": "Pine Labs",
     "sector": "Platform Cos",
     "subject": "Waiting: official confirmation of UPI merchant fee (MDR)",
-    "why": "Press reports (15 Sep 2026) say NPCI's UPI steering committee set a 0.4% merchant fee on person-to-merchant UPI payments above ₹2,000 from 15 October 2026 (₹300 cap; ₹5 flat for railways, telecom, insurance and fuel; small merchants under ₹1 lakh a month exempt; reported split issuer bank ~40%, acquirer 30%, app 20%, app's bank 10%). The Finance Ministry said in August that no framework was final, and the NPCI circular could not be read on 14 Oct (site returned 403). Each run, look for the NPCI circular or a government notification. Once confirmed, it is very important for the payment companies in the Platform note (Pine Labs, AvenuesAI, One Mobikwik Systems): add it once to the sector sections and to each company's section, add a checkpoint where it creates a testable expectation, reconsider their calls, then mark this handled. 16 Oct 2026: press reports (DT Next, 13 Oct) say NPCI deferred the fee, with a new date to be set after Diwali; still nothing official in force. Keep waiting. 18 Oct 2026: still deferred; NPCI (13 Oct) said a revised date will be announced separately. Nothing in force. 21 Oct 2026: no NPCI circular or government notification found with a new date; press coverage still dates from the September announcement. Keep waiting. 23 Oct 2026: still deferred to \"after Diwali\" with no new date; no NPCI circular found (npci.org.in returns 403). Keep waiting. 25 Oct 2026: still deferred to a date 'to be notified separately'; one report (Deccan Chronicle) says 1 January 2027 is likely, but NPCI has said nothing (npci.org.in returns 403). Keep waiting. 28 Oct 2026: still deferred; no new date from NPCI (only 'after Diwali', notified separately). 30 Oct 2026: no official notice of the fee; still deferred. 1 Nov 2026: no NPCI or government notice in the filings or news digests (Pine Labs’ Q2 results on 29 Oct said nothing on it); left open. 4 Nov 2026: no official MDR notification in the filings or news digests to 3 November; left open.",
+    "why": "Press reports (15 Sep 2026) say NPCI's UPI steering committee set a 0.4% merchant fee on person-to-merchant UPI payments above ₹2,000 from 15 October 2026 (₹300 cap; ₹5 flat for railways, telecom, insurance and fuel; small merchants under ₹1 lakh a month exempt; reported split issuer bank ~40%, acquirer 30%, app 20%, app's bank 10%). The Finance Ministry said in August that no framework was final, and the NPCI circular could not be read on 14 Oct (site returned 403). Each run, look for the NPCI circular or a government notification. Once confirmed, it is very important for the payment companies in the Platform note (Pine Labs, AvenuesAI, One Mobikwik Systems): add it once to the sector sections and to each company's section, add a checkpoint where it creates a testable expectation, reconsider their calls, then mark this handled. 16 Oct 2026: press reports (DT Next, 13 Oct) say NPCI deferred the fee, with a new date to be set after Diwali; still nothing official in force. Keep waiting. 18 Oct 2026: still deferred; NPCI (13 Oct) said a revised date will be announced separately. Nothing in force. 21 Oct 2026: no NPCI circular or government notification found with a new date; press coverage still dates from the September announcement. Keep waiting. 23 Oct 2026: still deferred to \"after Diwali\" with no new date; no NPCI circular found (npci.org.in returns 403). Keep waiting. 25 Oct 2026: still deferred to a date 'to be notified separately'; one report (Deccan Chronicle) says 1 January 2027 is likely, but NPCI has said nothing (npci.org.in returns 403). Keep waiting. 28 Oct 2026: still deferred; no new date from NPCI (only 'after Diwali', notified separately). 30 Oct 2026: no official notice of the fee; still deferred. 1 Nov 2026: no NPCI or government notice in the filings or news digests (Pine Labs’ Q2 results on 29 Oct said nothing on it); left open. 4 Nov 2026: no official MDR notification in the filings or news digests to 3 November; left open. 8 Nov 2026: Pine Labs' Q2 call (29 Oct) said the timing is 'completely in NPCI's court'; no NPCI circular or government notice in the filings or news digests to 7 November. Left open.",
     "addedOn": "2026-10-14"
   },
   {
@@ -3892,7 +3892,8 @@
     "sector": "Elect and Refrac",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 1 Nov 2026: the transcript is filed only on NSE, which this session cannot reach (Screener links the NSE copy); its two checkpoints were weighed from the filed results; left open for the transcript.",
-    "addedOn": "2026-10-30"
+    "addedOn": "2026-10-30",
+    "handled": "2026-11-08: Q2 FY27 call read (27 Oct): revenue ₹53.6cr (+88%) at 29.5%; FY27 ₹250cr and FY28 ₹500cr-plus targets kept; group use ~68–69%; stone stock to be cut to ₹32–34cr. Card updated (no verdict section yet in the note). Stays pass."
   },
   {
     "company": "Netweb Technologies",
@@ -4338,7 +4339,8 @@
     "sector": "Chemicals",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-08: Q2 FY27 call read (29 Oct): standalone revenue ₹560cr at 16%; wind revenue fell to ₹201cr and its net margin guide was cut to 2.5–3% (revision added); nothing on unbilled revenue or the pledge, so those checkpoints stay open. Stays avoid."
   },
   {
     "company": "Sakar Healthcare",
@@ -4416,14 +4418,16 @@
     "sector": "Realty",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-08: Q2 FY27 call read: pre-sales ₹1,258cr (−5%), H1 flat at ₹2,587cr, ₹6,500cr guide kept; prices up 3–5% (checkpoint met); net debt ₹8,323cr (2.1x equity), guided flat for the year; 2.37 mn sq ft completed in H1. Card updated. Stays pass."
   },
   {
     "company": "Paramount Communications",
     "sector": "Cables",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-08: Q2 FY27 call read (27 Oct): revenue +31% (₹560cr) at 7.3%, FY25 margin target for Q4 kept, Narmadapuram partial start Q1 FY28; the plant's term loan still not tied up (checkpoint missed, re-set for Q4). Stays pass."
   },
   {
     "company": "Knack Packaging",
@@ -4650,7 +4654,8 @@
     "sector": "Chemicals",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-08: Q2 FY27 call read: operating profit a tonne fell to ~₹818 (₹1,011 in Q1; H1 ₹916), Q2 operating profit ₹24.7cr; net debt to equity 0.16x after IPO repayments; volumes guided +35% next year. Q4 checkpoints stay open. Stays pass."
   },
   {
     "company": "Symphony",
@@ -4664,7 +4669,8 @@
     "sector": "Electrical Equipment",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-08: Q2 FY27 call read: standalone (Halol) revenue ₹34cr (checkpoint met); the ₹70cr loan still unsanctioned (missed); first epi-wafer revenue promised within three months. Stays avoid."
   },
   {
     "company": "Concord Biotech",
@@ -4900,7 +4906,8 @@
     "sector": "EMS & Electronics",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-05"
+    "addedOn": "2026-11-05",
+    "handled": "2026-11-08: Q2 FY27 call read: revenue +42.5% (₹934cr) with no PLI booked; inventory up again (checkpoint missed); compressors to mass production in Jan–Feb (revision), refrigerators Q4. Stays pass."
   },
   {
     "company": "Deepak Nitrite",
@@ -4946,7 +4953,8 @@
     "sector": "Platform Cos",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-05"
+    "addedOn": "2026-11-05",
+    "handled": "2026-11-08: Q2 FY27 call read (29 Oct): revenue +24%, adjusted EBITDA +27%, H1 adjusted margin ~18% with the CEO still expecting at least 21% for FY27; UPI fee timing 'in NPCI's court' (the Waiting entry stays open). No checkpoint due. Stays wait."
   },
   {
     "company": "OnEMI Technology",
@@ -5137,7 +5145,8 @@
     "sector": "Pharma CDMO",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-06"
+    "addedOn": "2026-11-06",
+    "handled": "2026-11-08: Q2 FY27 call read (29 Oct): revenue +46% at 22%; contract revenue ~₹79cr (nearly double Q1), 40–50% guide kept; H1 operating cash ₹30cr and borrowings up to ~₹836cr (checkpoint missed); Atali Block 2 for H2 FY28. Stays wait (price Stretched)."
   },
   {
     "company": "Borosil Renewables",
