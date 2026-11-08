@@ -1,0 +1,18 @@
+# Manual check that the CLAUDE_CODE_OAUTH_TOKEN secret (the owner's Claude plan, used by the
+# nightly filings digest) still works. Run it from the Actions tab; it asks Claude one short question.
+name: Check Claude key
+on:
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install -g @anthropic-ai/claude-code
+      - name: Ask Claude one question
+        run: claude -p "Reply with exactly: KEY OK" --model opus --tools "" --output-format json
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
