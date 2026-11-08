@@ -436,7 +436,7 @@ export const industrialsProducts: SectorOverview = {
                 },
                 {
                     label: 'Cautious',
-                    text: "**Ador**'s message moved from 1–2 points of margin gain to margins “expected to remain at similar levels”. **Borosil** says prices are near their peak, cut its rooftop target from ₹75cr to ₹36cr, and faces a roughly 90-day rebuild of its older furnaces in the first half of FY28.",
+                    text: "**Ador**'s message moved from 1–2 points of margin gain to margins “expected to remain at similar levels”. **Borosil** says prices are near their peak, cut its rooftop target from ₹75cr to ₹36cr, and faces a 75-day rebuild of each older furnace in the first half of FY28 (30 Oct 2026 call).",
                 },
                 {
                     label: 'Mixed',
@@ -474,7 +474,7 @@ export const industrialsProducts: SectorOverview = {
                         ['Carborundum Univer.', 'Like-for-like sales ~15%; ceramics +23–25%; abrasives margin 9.5–10%', '₹400cr in FY27; ₹53cr spent in Q1', '**Mixed**: growth raised; underlying abrasives margin far below guide'],
                         ['Tega Industries', 'Group margin about 15%; consumables 15% a year; debt to 3x in 3–4 years', 'About US$40m (Tega) and US$28m (Molycop)', '**Mixed**: consumables +36%; equipment −44%; deal costs below the flag'],
                         ['HBL Engineering', 'No formal guidance; Kavach good in FY27–FY28, decline from FY29; FY30 sales over ₹5,000cr', 'Small, internal: batteries, fuzes, lithium cells', '**Mixed**: FY26 beat its ₹3,000cr budget; e-trucks nine months late'],
-                        ['Borosil Renewables', 'Margin 30–33%; ₹400–410cr a quarter; ₹4,000cr revenue in 3–4 years', '₹1,100cr (up ₹150cr), start end-March 2027', '**Mixed**: margin beat; rooftop cut; expansion later and costlier'],
+                        ['Borosil Renewables', 'Margin 30–33%; ₹400–410cr a quarter; ₹4,000cr revenue in 3–4 years', '₹1,100cr (up ₹150cr), start end-March 2027', '**Mixed**: Q2 revenue ₹396cr and margin 30.4%, just under both guides (furnace repairs, surcharge cut); rooftop cut; expansion later and costlier'],
                         ['Aditya Infotech', 'Revenue ₹6,000–6,500cr; margin 14–15%', '₹200–300cr; capacity doubled by FY28', '**On track**: Q1 22–23% of the range; cable venture slipped'],
                         ['HPL Electric', 'Consumer side about ₹1,000cr; margin back “as we reach Q3”', 'Maintenance plus undisclosed projects', '**Mixed**: revenue +35%; margin 12% after “no headwind”'],
                     ],
@@ -578,8 +578,8 @@ export const industrialsProducts: SectorOverview = {
         {
             company: 'Borosil Renewables', rank: 5, stance: 'CYCLICAL', segment: SCARCE,
             what: "India's first and largest merchant maker of solar glass for panels, running 1,000 tonnes a day at full capacity and adding 600 more.",
-            view: "**Excellent economics inside a tariff wall.** Margin went from 4% to 31% on duties, debt is nearly gone and the plant sells all it makes. But management calls prices near peak, domestic capacity (mostly captive to panel makers) nearly triples by March 2027, the expansion is ₹150cr over budget and later, and old furnaces need a 90-day rebuild in FY28. The price needs about {need:Borosil Renewables|13}% a year against my ~10%, on profit that includes a ₹75cr tax write-back. On 9 Oct 2026 the price moved into the fits band; I keep it at follow, not own, because these are near-peak margins resting on import duties, and the only filing since was the 22 Sep delay of the new capacity, which the note already counts.",
-            watch: 'The first new furnace firing by end-March 2027; realisations holding once the fuel surcharge goes; any change to the duties.',
+            view: "**Excellent economics inside a tariff wall.** Margin went from 4% to 31% on duties, debt is nearly gone and the plant sells all it makes. But management calls prices near peak, domestic capacity (mostly captive to panel makers) nearly triples by March 2027, the expansion is ₹150cr over budget and later, and the two old furnaces need a 75-day rebuild each in H1 FY28. Q2 FY27 revenue was ₹396cr, about flat on the year, and the margin slipped to 30.4% on furnace repairs and a trimmed fuel surcharge; management restored the surcharge in October and expects margins back above 31% (30 Oct 2026 call). The price needs about {need:Borosil Renewables|13}% a year against my ~10%, on profit that includes a ₹75cr tax write-back. On 9 Oct 2026 the price moved into the fits band; I keep it at follow, not own, because these are near-peak margins resting on import duties, and the only filing since was the 22 Sep delay of the new capacity, which the note already counts.",
+            watch: 'The first new furnace firing by end-March 2027; the margin back above 31% in Q3 with the fuel surcharge restored; the older furnaces’ rebuilds in H1 FY28; any change to the duties.',
         },
         {
             company: 'Aditya Infotech', rank: 6, stance: 'PRICED', segment: BRAND,
