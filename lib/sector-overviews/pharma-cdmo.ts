@@ -799,8 +799,8 @@ export const pharmaCdmo: SectorOverview = {
         {
             company: 'Cohance Lifesciences', rank: 15, stance: 'AVOID', segment: INNOV,
             what: "Formerly Suven Pharmaceuticals, controlled by Advent International: small-molecule contract manufacturing, conjugate payloads (NJ Bio, US), oligonucleotide building blocks, niche APIs and chemicals.",
-            view: "**Now a governance problem as well as a business one.** Q1 revenue fell 23% at a 2.2% adjusted margin, and return on capital has fallen from 41% to 6%. On top of that, the promoter has pledged 94.6% of its stake, Crisil cut its rating to BB ‘issuer not cooperating’ before withdrawing it, the auditors reported a suspected fraud, the CFO left, and four sites carry FDA findings. The price needs about {need:Cohance Lifesciences|40}% a year against my ~10%.",
-            watch: 'Its plan due by December 2026; the second destocked molecule reordering; clean FDA outcomes and any change in the promoter pledge.',
+            view: "**Now a governance problem as well as a business one.** Q1 revenue fell 23% at a 2.2% adjusted margin, and return on capital has fallen from 41% to 6%. On top of that, the promoter has pledged 94.6% of its stake, Crisil cut its rating to BB ‘issuer not cooperating’ before withdrawing it, the auditors reported a suspected fraud, the CFO left, and four sites carry FDA findings. On 6 Nov 2026 the Telangana pollution board ordered its Suryapet site shut after a worker died in an accident; the company is assessing the cost and seeking to have the order lifted. The price needs about {need:Cohance Lifesciences|40}% a year against my ~10%.",
+            watch: 'The Suryapet closure order lifted, and what the shutdown costs; its plan due by December 2026; the second destocked molecule reordering; clean FDA outcomes and any change in the promoter pledge.',
         },
         {
             company: 'Dishman Carbogen (Carbogen Amcis)', rank: 16, stance: 'AVOID', segment: INNOV,
