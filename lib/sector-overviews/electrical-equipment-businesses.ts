@@ -43,6 +43,10 @@ const intro: OverviewSection[] = [
                 label: 'Power electronics and chargers',
                 text: "Devices that convert and control electricity: **EV chargers** (AC wallbox chargers at home; DC fast chargers in public), **inverters** for solar and batteries, **power systems** for telecom towers (Exicom, Servotech), and the **power semiconductors** inside them, such as thyristors and silicon-carbide chips (RIR).",
             },
+            {
+                label: 'Electrical panels and PDUs',
+                text: "Steel cabinets holding the breakers, busbars and controls that split incoming power among a building's or plant's machines. **Low-voltage panels** run up to 1,000V and **medium-voltage panels** at 3.3–33kV. A **power distribution unit (PDU)** is the panel that feeds rows of servers in a data centre. Panel builders (Vivid) assemble them from bought-in switchgear, often under a switchgear maker's licence.",
+            },
         ],
     },
     {
@@ -55,7 +59,7 @@ const intro: OverviewSection[] = [
                 columns: ['Model', 'Who', 'How the price is set', 'How fast the cash comes'],
                 rows: [
                     ['**To global equipment makers (OEMs)**', 'TD Power, Triveni (partly), Elecon exports', 'Negotiated, often with price-variation clauses', 'Normal credit terms; some advances'],
-                    ['**Private and export projects**', 'Apar exports, Triveni, KP Green (solar structures)', 'Negotiated or bid', 'Milestones; fairly reliable'],
+                    ['**Private and export projects**', 'Apar exports, Triveni, KP Green (solar structures), Vivid (data centres, EPC firms)', 'Negotiated or bid', 'Milestones; fairly reliable, though data-centre jobs hold back 10–20% until commissioning'],
                     ['**Indian government utilities and PSUs**', 'Genus, RMC, Apar (domestic), Elecon (PSUs), KP Green (BSNL)', 'Tenders, often fixed-price', 'Slow; retention money held back'],
                     ['**Group companies**', 'Inox Wind (Inox Clean/Green), KP Green (KP group)', 'Stated to be arm’s length', 'Depends on the group’s own funding'],
                     ['**Dealers, retail and white-label**', 'Salzer, Exicom (wallbox chargers), Servotech', 'Price lists or cost-plus', 'Quick, but thin margins'],
@@ -562,6 +566,38 @@ const profiles: BusinessProfile[] = [
             "Further dealings with the MD's US company, and whether that company is folded into Parth."
         ],
         charts: electricalEquipmentCharts["Parth Electricals"],
+    },
+    {
+        company: 'Vivid Electromech',
+        inShort: ["**A Navi Mumbai maker of low- and medium-voltage electrical panels** and power distribution units (PDUs) for data centres, metros, factories and solar plants. About half its sales are to data centres such as STT, CtrlS and AdaniConneX.", "**Good:** sales tripled in three years to ₹200cr, the operating margin rose from 3% to 23%, it holds a ₹307cr order book, and a new plant at Ambernath triples capacity from December 2026. **Bad:** profit barely turns into cash (customers took 213 days to pay in FY26, and H1 FY27 operating cash was −₹55cr), the plant is four months late, one customer is about a third of sales, and it trades with the promoters' own firms.", "**Verdict: wait.** I expect about 22% a year of earnings growth, more than the {need:Vivid Electromech|17}% the price needs, but I want to see cash collected before trusting it."],
+        tagline: "A family-run electrical panel maker and system integrator founded in 1990 and run by Sameer Attavar; ABB's licensee for ArTu K switchboards; listed on NSE's SME platform in April 2026 at ₹555 a share.",
+        revenue: '₹200cr (FY26, standalone)',
+        products: [
+            { name: 'ABB-licensed LV switchboards (ArTu K)', text: "Low-voltage power and motor control panels built to ABB's design using only ABB switchgear, under a licence that costs only ₹7–10 lakh a year in royalty. **₹129cr, about 65% of FY26 sales**, now shrinking as a share." },
+            { name: 'Own-design LV panels and PDUs (V-Set)', text: "Its own type-tested panels, an 800V range newly tested at CPRI Bhopal, and data-centre PDUs of 500–1,000 kW. These can use ABB, Siemens or Schneider parts, so it can bargain on price and earn more. **₹46cr in H1 FY27, against about ₹30cr in all of FY26.**" },
+            { name: 'Medium-voltage panels', text: "11kV and 33kV vacuum-breaker panels, ring main units, control and relay panels and MV power-factor panels, some type-tested with ABB. **About 17% of H1 FY27 sales.**" },
+            { name: 'Mechtech Infrasolutions', text: "A small Siemens SIEPAN switchboard licensee bought in FY26 for ₹99 lakh from the two promoters, who owned it 50:50. Its turnover was about ₹2cr." },
+        ],
+        revenueText: "In H1 FY27, **data centres were 52% of revenue** (5% in FY24), infrastructure and real estate including metros 24%, industrial plants 17% and solar 7%. By product, **LV panels were 82% and MV 17%**. **Exports were ₹8.1cr (9%)**, to East and West Africa, against ₹2.5cr in all of FY26. Maharashtra was 77% of sales. The ₹307cr order book (26 October 2026) is data centres ₹115cr, metro rail ₹46cr and other ₹146cr, and 22% of it is export.",
+        mixes: [
+            { caption: 'Revenue by industry, H1 FY27 (company)', parts: [{ label: 'Data centres', share: 52 }, { label: 'Infrastructure and real estate', share: 24 }, { label: 'Industrial', share: 17 }, { label: 'Solar and other', share: 7 }] },
+            { caption: 'Revenue by product, H1 FY27 (my split of company figures)', parts: [{ label: 'Own-design LV and PDUs', share: 51 }, { label: 'ABB ArTu K LV', share: 31 }, { label: 'MV panels', share: 17 }, { label: 'Traded and services', share: 1 }], note: "The own-design and MV figures are from the presentation; ArTu K is the remainder of the 82% LV share the CFO gave." },
+        ],
+        customers: [
+            "**Data-centre operators and their contractors**: STT Global Data Centres (a ₹30cr order in July 2026), CtrlS and AdaniConneX. Data-centre jobs pay in stages and hold back 10% for one to two years.",
+            "**Infrastructure and industrial EPC firms**: NCC, Afcons, Shapoorji and JSW, for metros, factories and solar plants, including solar cell and wafer plants.",
+            "**African buyers** (half or more direct, the rest through Indian EPC firms) on letters of credit with a 10% advance. **Concentration is high**: the top customer was 33% of FY25 sales and the top five about 60% in FY26.",
+        ],
+        difficulty: { level: 'Medium', text: "A panel is assembled from bought-in breakers, copper busbars and sheet steel. The hard parts are type tests (IEC 61439 at CPRI or ERDA), OEM licences and approvals, and designing and commissioning to tight data-centre deadlines. Many regional panel builders can make standard panels." },
+        moat: "Licences and approvals from ABB, Siemens, Schneider and L&T, its own type-tested designs, and a record with data-centre operators bring repeat orders: 89% of the order book is from existing customers. But it depends on ABB for about two-thirds of sales, materials are 62% of sales, and rivals are many.",
+        salesDrivers: ["**Guidance (28 October 2026)**: FY27 revenue growth of 35–40% (about ₹270–280cr), so the second half must be roughly double the first. Second-half margins are expected to match H2 FY26's 24.8%, and management calls today's margin a floor.", "**Capacity**: the two existing plants run at about 95%. Ambernath adds 15,000 verticals a year to 7,500, about 5,000 from end-November 2026 and the rest by end-December, with full use in 12–18 months.", "**Data-centre building in India**: data centres are 52% of sales and management wants them to stay at 50–60%. It avoids one- to two-year 'skid' orders that bundle transformers.", "**Metros, factories and solar plants**: ₹46cr of metro orders in hand, and solar cell and wafer plants as a new focus.", "**Exports to Africa**: 22% of the order book, paid by letters of credit."],
+        inputs: "**Switchgear (breakers, mostly ABB), copper busbars, sheet steel** and wiring, bought against confirmed orders. Materials were 62% of sales in FY26.",
+        costEffect: "**Mostly passed on.** Orders are short (2–9 months), materials are bought back-to-back against them, and contracts carry copper price-variation clauses (annual report). It turns down long fixed-price skid orders because of price swings. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 6 points (23% to 17%). **What happened:** hot-rolled steel prices were flat (index 100 in H2 FY25, 100 in H2 FY26) while the half-year margin moved from 20% to 25% and back to 20% in H1 FY27, driven by the mix of data-centre and own-design work and by the light first half, not by input prices.",
+        competitors: [{ name: 'ABB, Siemens, Schneider, L&T', note: "The switchgear makers. Vivid builds panels under their licences, and they also license other panel builders." }, { name: 'Shivalic Power Control, Marine Electricals (India)', note: "Listed Indian panel makers the prospectus names as peers." }, { name: 'Regional panel builders', note: "Many small firms compete on price for standard panels; management left the residential and commercial market because of them." }],
+        position: "**A small, fast-growing panel builder** with ₹200cr of sales, strong in data-centre LV panels and PDUs in Maharashtra. It does not disclose market share.",
+        money: "**Cash is the weak point.** Over FY22–FY26 only ₹27cr of ₹84cr of operating profit came in as cash (32%). That is unpaid customer bills, not plant spending: capex was ₹1–3cr a year until FY26. Receivables were ₹120cr at September 2026, about 60% of a year's sales. Operating cash in H1 FY27 was −₹55cr, or about −₹32cr leaving out IPO money parked in deposits. The April 2026 IPO raised ₹105cr of new money; promoters also sold ₹26cr of shares, and the issue was subscribed only 1.06 times. Screener's net debt was ₹31cr at March 2026; the company reports about ₹1cr of net cash at September, mostly IPO money set aside. The Ambernath plant costs ₹66cr (about ₹34cr spent in H1 FY27), and ₹9cr of its IPO allocation was moved to working capital. In FY26 it sold ₹6.85cr of goods to and bought ₹3.97cr from Vivid Green Energy, where the MD is a director, and bought Mechtech from the promoters. Promoters hold **73.53%**, unchanged since listing.",
+        watch: ["H2 FY27 revenue of about ₹178cr or more at a margin near 24%, as guided.", "Receivables falling at March 2027 (management promised a 'drastic improvement') and operating cash turning positive.", "Ambernath producing from end-November 2026, and any further dealings with the promoters' firms."],
+        charts: electricalEquipmentCharts["Vivid Electromech"],
     },
     {
         "company": "Anawil Wire",

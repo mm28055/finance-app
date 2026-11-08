@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T04:08:56.245Z",
+ "updated": "2026-11-08T05:30:05.144Z",
  "reports": [
   {
    "company": "Aartech Solonics",
@@ -3186,6 +3186,24 @@
     "The auditor flagged the impairment testing of investments in subsidiaries as a key audit matter."
    ],
    "researchedOn": "2026-09-27"
+  },
+  {
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "year": "FY26",
+   "url": "https://nsearchives.nseindia.com/corporate/INNOMET_31082026181725_INNOMETANNUALREPORT2026SD.pdf",
+   "auditor": "Statutory auditor CND & Associates gave an unmodified opinion with no emphasis of matter and no key audit matters reported. Under CARO, the auditor noted ₹4.21 crore of loans or advances given to another entity.",
+   "relatedParties": "Promoters lent money to the company, leaving ₹3.41 crore from the MD and ₹0.57 crore from the CFO outstanding at March 2026. The company purchased goods and fixed assets from directors' proprietorships, Prasad Innovations and Prasad Engineering Works. Filings also cover up to ₹6 crore to Keerthi Enterprises (a relative's firm) for factory construction, up to ₹50 crore with Swastik, and a ₹30 lakh yearly professional fee to the promoters' daughter.",
+   "outlook": "Management notes that Scope Metals acts as its exclusive agent in Israel, securing a ₹15 crore single order in May 2026 with consistent repeat deliveries. The company also plans to set up a DRDO-backed 100 kg vacuum-melting inert-gas atomiser in the next year or so. Funded by an ₹8.73 crore DRDO sanctioned outlay, this will have a capacity of 200–250 tonnes for clean powders.",
+   "other": "For FY26, segment revenues were ₹40.6 crore for powders and ₹13.3 crore for tungsten heavy alloys, with exports making up 18% (₹9.8 crore). Four of the seven board members belong to one family. The accounting policy allows capitalising borrowing costs on qualifying assets, but the FY26 cash flow shows the ₹0.85 crore interest paid exactly matched the P&L finance cost, disclosing no capitalised amount. Segment profits were not maintained before FY26.",
+   "flags": [
+    "Two FY26 accounting write-backs for unbilled revenue and unvalidated capitalised development totaled ₹4.88 crore, making up about 9% of the year's sales.",
+    "The auditor flagged ₹4.21 crore of loans or advances given to another entity under CARO reporting.",
+    "The company engages in extensive related-party transactions, including promoter loans, purchases from directors' firms, and factory construction by a relative's proprietorship.",
+    "Four of the seven board directors belong to a single family.",
+    "Segment profit records were not maintained before FY26, obscuring the historical profitability of its separate divisions."
+   ],
+   "researchedOn": "2026-11-08"
   },
   {
    "company": "Innova Captab",
@@ -7166,6 +7184,24 @@
     "Capital commitments jumped significantly to ₹43.3 crore at the end of FY26 from just ₹8.5 crore in the prior year."
    ],
    "researchedOn": "2026-09-27"
+  },
+  {
+   "company": "Vivid Electromech",
+   "sector": "Electrical Equipment",
+   "year": "FY26",
+   "url": "https://archives.nseindia.com/annual_reports/SME_AR_30168_VIVIDEL_2025_2026_A_4771671_04082026113830.pdf",
+   "auditor": "YRKDAJ & Associates gave a clean opinion. However, the CARO report noted slight delays in depositing TDS and profession tax.",
+   "relatedParties": "The board approved an annual limit of ₹15.5 crore per related party. Dealings included ₹6.85 crore of sales to and ₹3.97 crore of purchases from Vivid Green Energy, which owed ₹2.88 crore in March. The company bought ₹1.64 crore from and sold ₹0.62 crore to Mechtech, a promoter firm. The MD's parents draw a salary. A ₹30 lakh advance to a director's brother and ₹59 lakh of director loans were repaid in FY26.",
+   "contingent": "Contingent liabilities total about ₹14.8 crore. This consists mostly of ₹13.3 crore in bank guarantees, ₹1.3 crore in letters of credit, a ₹19 lakh VAT claim, and a ₹31 lakh cheque-bounce notice.",
+   "outlook": "The management discussion states the execution cycle takes 8 to 10 weeks. It notes the order book stood at ₹210 crore at the end of June. Management also states the new Ambernath plant is already commissioned, though the analyst notes this is incorrect.",
+   "other": "In FY26, the company paid ₹99 lakh to buy 99% of Mechtech Infrasolutions, a Siemens licensee. This was a partnership owned equally by the two promoters, with a turnover of about ₹2 crore in FY26. The management discussion also notes that the top five customers accounted for close to three-fifths of sales in FY26.",
+   "flags": [
+    "The management discussion incorrectly claims the new Ambernath plant is already commissioned.",
+    "The CARO report notes slight delays in paying TDS and profession tax.",
+    "Customer concentration is high, with the top five buyers making up nearly 60% of FY26 sales.",
+    "The company engages in related-party dealings, including buying a firm that was owned by its promoters."
+   ],
+   "researchedOn": "2026-11-08"
   },
   {
    "company": "Voltamp Transformers",

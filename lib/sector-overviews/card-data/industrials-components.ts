@@ -1501,6 +1501,117 @@ export const industrialsComponentsCharts: Record<string, ProfileCharts> = {
             ],
             "note": "FY23 is not on the filed page."
         }
+    },
+    "Innomet Advanced Materials": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 71
+                },
+                {
+                    "label": "Staff",
+                    "share": 6
+                },
+                {
+                    "label": "Other costs",
+                    "share": 13
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 10
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "marginVsInput": {
+            "input": "Alloy and stainless steel bars price",
+            "periods": [
+                "H1 FY24",
+                "H2 FY24",
+                "H1 FY25",
+                "H2 FY25",
+                "H1 FY26",
+                "H2 FY26",
+                "H1 FY27"
+            ],
+            "margin": [
+                10.9,
+                24.9,
+                23.1,
+                9.3,
+                18.1,
+                4.5,
+                14.7
+            ],
+            "index": [
+                100,
+                97,
+                96,
+                93,
+                92,
+                93,
+                null
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                1.69,
+                5.73,
+                4.36,
+                5.05,
+                5.6
+            ],
+            "ocf": [
+                -0.18,
+                3.53,
+                2.62,
+                -18.47,
+                9.26
+            ],
+            "fcf": [
+                -2.66,
+                -1.18,
+                -4.07,
+                -25.46,
+                5.5
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "102.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "47.0x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹12cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "-14%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "10%"
+            }
+        ],
+        "statsAsOf": "8 Nov 2026"
     }
 };
 
@@ -1573,5 +1684,11 @@ export const industrialsComponentsValuationInputs: Record<string, ValuationInput
         "mcapAtWriting": 745,
         "peAtWriting": 33.1,
         "lossMaking": false
+    },
+    "Innomet Advanced Materials": {
+        "netDebt": 12,
+        "ttmEbitda": 9.5,
+        "mcapAtWriting": 436.0,
+        "peAtWriting": 102.0
     }
 };

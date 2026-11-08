@@ -31,6 +31,10 @@ const intro: OverviewSection[] = [
                 label: 'Instruments, production lines and coach fit-outs',
                 text: "**Temperature sensors, specialised cables and electric heaters** for process plants (Tempsens), **robotic welding and assembly lines** for car, battery and ammunition makers (Patil), and **railway coach interiors and seating** (Airfloa).",
             },
+            {
+                label: 'Materials that other makers shape into parts',
+                text: "**Specialty metal powders** that parts makers press and sinter into machine parts, self-lubricating bearings and diamond-tool segments, or use for brazing and coatings, and **tungsten heavy alloy** cubes, balls and weights for rockets, aircraft and radiation shields (Innomet).",
+            },
         ],
     },
     {
@@ -43,7 +47,7 @@ const intro: OverviewSection[] = [
                 columns: ['Model', 'Who', 'How the price is set', 'How fast the cash comes'],
                 rows: [
                     ['**Global equipment makers**', 'Pitti, Gala, KRN, Omnitech', 'Negotiated; metal costs reset quarterly or passed on with a lag', 'Normal credit terms, but stock builds as plants fill'],
-                    ['**Many plant owners and equipment makers**', 'Tempsens', 'Quoted per order, with metal bought against each order', 'Slow: a 210-day cash cycle'],
+                    ['**Many plant owners and equipment makers**', 'Tempsens, Innomet', 'Quoted per order, with metal bought against each order', 'Slow: a 210-day cash cycle at Tempsens and about 190 days at Innomet'],
                     ['**One large customer or a metal price**', 'Subros (Maruti), Vilas (transformer makers), Everest Kanto (vehicle and gas companies)', 'Negotiated by the customer, or set by steel and import prices', 'Fast at Subros; slower where stock and specialist orders build up'],
                     ['**Projects and railways**', 'Patil, Airfloa', 'Quoted per project, or tendered', 'Milestones; slow for railway work'],
                 ],
@@ -336,7 +340,7 @@ const profiles: BusinessProfile[] = [
         "inShort": [
             "**Makes hydraulic fittings**, the small high-pressure steel connectors used in excavators, loaders, tractors and plastic-moulding machines, for about 170 OEMs in India and exports to the US and Europe.",
             "**Good:** a leader in India with a rival less than half its size, no customer above 15%, and a steady 22% operating margin. **Watch:** growth was only 13% in Q1 against a 20% guide, money is tied up for about 171 days in stock and receivables, only about 55% of operating profit turned into cash over the four years filed, and a quarter of sales go to the US.",
-            "**Verdict: wait.** A well-run niche supplier, but at about 33 times earnings the price assumes the guided 20% growth and 24–25% margin; I want to see Q2 deliver the margin rebound first."
+            "**Verdict: wait.** A well-run niche supplier, but the price already assumes the guided 20% growth and 24–25% margin; I want to see Q2 deliver the margin rebound first."
         ],
         "tagline": "A Maharashtra-based maker of hydraulic hose fittings and adaptors for construction, farm and industrial machinery makers, founded in 1978 and listed in September 2026.",
         "revenue": "₹189cr (FY26, consolidated)",
@@ -424,6 +428,38 @@ const profiles: BusinessProfile[] = [
             "Receivables and stock coming down so more profit turns into cash."
         ],
         charts: industrialsComponentsCharts["Hy-Tech Engineers"],
+    },
+    {
+        company: 'Innomet Advanced Materials',
+        inShort: ["**Makes specialty metal powders and tungsten heavy alloy parts** in Hyderabad: copper, bronze, nickel and other powders for parts makers, diamond tools and coatings (68% of H1 FY27 sales), and dense tungsten pieces for rockets, aircraft and radiation shields (32%), with the Pinaka rocket and Astra missile among the users.", "**Good:** H1 FY27 sales more than doubled to ₹55.7cr, exports rose to 46% of sales, the margin recovered to 14.7% from 4.5%, and it bought its tungsten-powder supplier for ₹1.5cr. **Bad:** a small SME-listed company earning only 4–7% on its equity; over FY22–FY26 operating cash was −₹3cr against ₹22cr of operating profit, and H1 FY27 used another ₹7cr as stock rose ₹20cr; ₹4.9cr of FY26 entries were written back; four of its seven directors are one family, with promoter loans and a ₹6cr building contract for a relative's firm; and warrants will add about 17% more shares.", "**Verdict: wait.** I expect earnings per share to grow about 26% a year to FY30, counted from about ₹7.9cr of normal yearly profit (not the ₹4.3cr left after last year's write-backs) and within management's plan of 30–50% sales growth; the price needs about {need:Innomet Advanced Materials|33}% a year, and five years of cash have not matched the profit. I would look again once H2 FY27 turns the stock build into cash."],
+        tagline: "A Hyderabad maker of specialty metal powders and, by its own account, India's first private maker of tungsten heavy alloys, now adding its own tungsten-powder plant.",
+        revenue: '₹53.8cr (FY26, standalone)',
+        products: [
+            { name: 'Metal and alloy powders', text: "More than 50 grades of copper, bronze, brass, nickel, tin, iron and stainless-steel powders, almost all made by breaking molten metal into droplets with a jet of water. Customers press them into machine parts and self-lubricating bearings, or use them in diamond tools, brazing and coatings. H1 FY27 volume rose 39% to 256 tonnes and the price per kilo 55%." },
+            { name: 'Tungsten heavy alloys', text: "Dense tungsten-nickel-iron cubes, balls, bars and custom parts (90–98% tungsten), used as pre-fragments in rockets and missiles, balance weights in helicopters and aircraft, and radiation shields. Sales rose sixfold to ₹17.6cr in H1 FY27, and 87% of them were exported." },
+            { name: 'Tungsten powder (Swastik Tungsten)', text: "A 57.5%-owned unit at Shrirampur in Maharashtra, bought out of insolvency for ₹1.5cr, that turns tungsten-carbide scrap into pure tungsten powder for the alloy business. It restarted at about 2 tonnes a month against 10 tonnes of capacity; carbide products are at least six months away." },
+            { name: 'New materials', text: "A 50 kg gas atomiser for the round powders used in 3D printing and coatings (still in trials), a DRDO-funded 100 kg atomiser with IIT Hyderabad for aerospace powders (FY28), and a high-temperature sintering furnace bought from Germany. Tungsten hexafluoride for chip-making is only a pilot, which the MD calls a moonshot." },
+        ],
+        revenueText: "**Powders were 68% of H1 FY27 revenue (₹38.1cr) and tungsten heavy alloys 32% (₹17.6cr)**, up from 14% a year earlier. **Exports were 46% (₹25.9cr)**, against 18% in FY26: 87% of the tungsten alloys and 28% of the powders went abroad, to Israel, the US, Australia, Europe and Japan. Defence has been 30–40% of tungsten alloy sales, and management expects it to nearly double this year. Orders waiting to ship were ₹36.7cr on 1 October; most powder business comes as small monthly orders that never enter the order book.",
+        mixes: [
+            { caption: 'Revenue by division, H1 FY27 (company)', parts: [{ label: 'Metal powders', share: 68 }, { label: 'Tungsten heavy alloys', share: 32 }] },
+            { caption: 'Revenue by market, H1 FY27 (company)', parts: [{ label: 'India', share: 54 }, { label: 'Exports', share: 46 }] },
+        ],
+        customers: ["**Powder buyers**: Höganäs (a customer for more than 15 years), Federal-Mogul Goetze, Sundram Fasteners, Hilti and diamond-tool makers in India, and Oerlikon Metco and others abroad; it won 18 new powder customers in H1 FY27 and has more than 100 active customers in all.", "**Defence and aerospace**: Bharat Dynamics, HAL, Solar Industries, ordnance factories, BARC and DRDO labs in India, and Israeli defence buyers through Scope Metals, its exclusive agent there, which placed a single order of about ₹15cr in May 2026."],
+        difficulty: { level: 'High', text: "Tungsten alloys are sintered at 1,500–1,800°C and must pass defence tests that take years, and aerospace work needs AS9100D certification, which it won in September 2025. Water-atomised copper and bronze powders are easier to make, and larger makers compete in them." },
+        moat: "Defence approvals and its place as the first private Indian maker of tungsten heavy alloys make buyers slow to switch, and the Swastik plant secures tungsten supply now that China restricts exports. The weakness: most powder sales are standard grades, and the tungsten business rests on a few defence buyers and one Israeli agent.",
+        salesDrivers: ["**Defence restocking and China-plus-one**: China mines about four-fifths of the world's tungsten and restricted exports in 2025, so Western and Israeli buyers want other suppliers; tungsten alloy exports were ₹15.3cr in H1 FY27, against ₹1.3cr in all of FY26.", "**Indian defence**: tungsten pre-fragments for Pinaka rockets and Astra missiles, with penetrators and targets in development, as India's defence budget rises.", "**More powder capacity and better grades**: water atomisation from 600 to 1,200 tonnes a year by FY28, gas-atomised powders from 20 to 150 tonnes, and later the DRDO-funded line; management wants to move into titanium and other harder powders.", "**Management's plan**: FY27 revenue above ₹100cr (H1 sales plus orders in hand already cover more than 90%), 30–50% growth in FY28 and 35–50% a year for two to three years, with long-term margins of 16–20%. It says today's set-up can reach ₹400–500cr; its ₹1,000cr vision needs a new plant that is not yet planned.", "**Tungsten prices**: up about fivefold, which lifts rupee sales but made buyers stop ordering for months; the MD says they are only now coming back."],
+        inputs: "**Copper, tin, nickel and other metals** for the powders, and **tungsten powder** (now partly from Swastik's scrap recycling) for the alloys. Materials were 71% of sales in FY26.",
+        costEffect: "**Partly passed on.** It buys metal only against confirmed orders and has cut the time its quotes stay valid from a month to a few days, but when tungsten and copper jumped within days in FY26 some orders were caught. **Rule of thumb:** a 10% rise in material costs not passed on would cut the margin by about 7 points (10% to 3%). **What happened:** India's alloy and stainless-steel bar price index, the nearest official series, fell from 100 in H1 FY24 to 93 in H2 FY26, while the margin fell from 10.9% to 4.5%. Steel was not the cause: tungsten prices rose about fivefold and copper rose too, and FY26 also carried ₹4.9cr of write-backs. With order-backed buying the margin recovered to 14.7% in H1 FY27.",
+        competitors: [
+            { name: 'A government unit and global tungsten alloy makers', note: "Management names no private Indian rival in tungsten heavy alloys; it competes with a government unit at home and with established makers abroad." },
+            { name: 'Chinese tungsten and carbide producers', note: "Dominate tungsten supply and carbide products; China's export controls since 2025 have pushed buyers to look elsewhere." },
+            { name: 'Bulk metal-powder makers', note: "Larger makers of iron and copper powders; Innomet avoids the bulk grades and sells specialty blends, some of them to Höganäs." },
+        ],
+        position: "**India's first private-sector maker of tungsten heavy alloys**, by its own account, and a small specialty powder supplier; it gives no market shares.",
+        money: "Net debt of **₹12cr** at March 2026 (Screener), and about ₹19cr at September 2026 (₹19.7cr of borrowings, ₹1.0cr of cash) after stock rose ₹20cr. H1 FY27 capex was ₹7cr, paid from profits, bank lines and 30% advances on export orders; DRDO pays for the ₹8.73cr atomiser. Since August 2026 it has raised ₹37.5cr through preferential issues: 4.5 lakh shares at ₹131 to two investment firms, 5 lakh warrants at ₹131 to promoters and 11.92 lakh warrants at ₹210 to investor Mukul Agrawal. About ₹14cr has arrived and the rest is due within 18 months, for working capital; full conversion lifts the share count about 17% from March. Over FY22–FY26 operating cash was **−₹3cr against ₹22cr of operating profit**, and H1 FY27 used ₹7cr more. The promoters have lent it about ₹4cr, it buys goods and equipment from directors' own firms, and shareholders approved up to ₹6cr of building work by a firm owned by a director's relative. In FY26 it wrote back ₹2.96cr of unbilled revenue and ₹1.92cr of capitalised development costs that the auditor could not validate. Promoters hold **55.0%** (56.7% in March 2026, 54.8% a year earlier).",
+        watch: ["H2 FY27: the ₹33cr of stock turning into sales and cash, and FY27 operating cash above zero.", "Swastik reaching 10 tonnes a month, and carbide sales starting.", "Large repeat tungsten alloy orders from Israel and Indian defence, and the margin moving toward 16–20%.", "Any further write-backs, related-party deals or share issues."],
+        charts: industrialsComponentsCharts["Innomet Advanced Materials"],
     },
 ];
 

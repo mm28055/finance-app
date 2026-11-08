@@ -47502,6 +47502,241 @@
     }
    ],
    "source": "Q2 FY27 call (9 Oct 2026), NSE filing of 26 Oct 2026 and sector note"
+  },
+  {
+   "company": "Vivid Electromech",
+   "checkedOn": "2026-11-08",
+   "lines": {
+    "heading": "How full each plant is (H1 FY27)",
+    "items": [
+     {
+      "name": "Navi Mumbai",
+      "size": "5,350 verticals a year; 21,500 sq ft, full manufacturing",
+      "usedPct": 95,
+      "usedLabel": "about 95% used",
+      "tight": true,
+      "tightLabel": "full",
+      "note": "94.4% in FY26 (5,048 made), against 46% in FY23"
+     },
+     {
+      "name": "Pune",
+      "size": "2,150 verticals a year; 12,500 sq ft, assembly only",
+      "usedPct": 95,
+      "usedLabel": "about 95% used",
+      "tight": true,
+      "tightLabel": "full",
+      "note": "70% in FY26 (1,505 made), per the presentation"
+     }
+    ]
+   },
+   "adds": [
+    {
+     "heading": "What the Ambernath plant adds (about 5,000 from end-November 2026, the rest by end-December; full use in 12–18 months)",
+     "projectId": "vivid-electromech-ambernath",
+     "bars": [
+      {
+       "name": "Panel verticals a year",
+       "sub": "14,300 LV and 700 MV; 22,500 in total (21,450 LV, 1,050 MV)",
+       "base": 7500,
+       "add": 15000,
+       "baseLabel": "7,500 today",
+       "addLabel": "+15,000",
+       "right": "+200%"
+      }
+     ],
+     "notes": [
+      "Robotic fabrication, automatic pre-treatment and powder-coating line, in-house 1,000 kW load testing; about 600 workers",
+      "7,978 sq m plot, about 1,19,800 sq ft of buildings"
+     ]
+    }
+   ],
+   "money": {
+    "heading": "Plant cost and funding",
+    "items": [
+     {
+      "name": "Ambernath plant",
+      "sub": "land ₹17.6cr (bought), building ₹16.8cr, machinery and utilities ₹29.7cr, contingency ₹2.3cr; ₹43.8cr from the IPO, less ₹9cr moved to working capital (AGM, 25 Aug 2026); about ₹34cr of capex in H1 FY27",
+      "total": 66.4,
+      "right": "₹66.4cr",
+      "status": "building",
+      "projectId": "vivid-electromech-ambernath"
+     }
+    ]
+   },
+   "timeline": [
+    {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "RHP target date for commercial operation (July 2026) missed; the Sep 2026 presentation said end-October, and the 28 Oct call end-November",
+     "sub": "Listed on NSE Emerge on 7 April 2026; IPO raised ₹104.6cr of new money"
+    },
+    {
+     "when": "Q3 FY27",
+     "tone": "next",
+     "milestones": [
+      "vivid-electromech-ambernath-m1",
+      "vivid-electromech-ambernath-m2"
+     ],
+     "sub": "Machines received and being installed; awaiting the pollution board's consent to operate and a fire NOC"
+    },
+    {
+     "when": "Q1 FY29",
+     "tone": "later",
+     "milestones": [
+      "vivid-electromech-ambernath-m3"
+     ]
+    }
+   ],
+   "notes": [
+    "FY26 output was 6,553 verticals, about ₹3 lakh of revenue each (my calculation); at that rate 22,500 verticals could support about ₹650cr a year, though management gives no target beyond FY27's 35–40% growth",
+    "Utilisation conflict: the CFO said 95% at both plants in H1 FY27, while the presentation shows Pune at 70% for FY26"
+   ],
+   "source": "H1 FY27 call (28 Oct 2026), H1 FY27 and Sep 2026 presentations, RHP (Mar 2026)",
+   "fingerprint": "306ae0c23f77abe2"
+  },
+  {
+   "company": "Innomet Advanced Materials",
+   "checkedOn": "2026-11-08",
+   "adds": [
+    {
+     "heading": "What the larger water atomiser adds (750 t by end FY27, 1,200 t in FY28)",
+     "projectId": "innomet-advanced-materials-water-atomiser",
+     "bars": [
+      {
+       "name": "Water-atomised powders, t a year",
+       "sub": "to 1,200 t (tentative company estimate)",
+       "base": 600,
+       "add": 600,
+       "baseLabel": "today 600 t",
+       "addLabel": "+600 t",
+       "right": "+100%"
+      }
+     ],
+     "notes": [
+      "Order for the larger atomiser under progress. Copper, bronze, brass, nickel, tin and other powders: ₹38.1cr of H1 FY27 sales"
+     ]
+    },
+    {
+     "heading": "What the 50 kg gas atomiser adds (50 t in FY27, 150 t in FY28)",
+     "projectId": "innomet-advanced-materials-gas-atomiser",
+     "bars": [
+      {
+       "name": "Gas-atomised powders, t a year",
+       "sub": "to 150 t (tentative company estimate)",
+       "base": 20,
+       "add": 130,
+       "baseLabel": "today 20 t",
+       "addLabel": "+130 t",
+       "right": "about 7.5 times"
+      }
+     ],
+     "notes": [
+      "Converted from 10 kg to 50 kg; installed and in trials, samples with customers. Round powders for 3D printing, coatings and parts makers, at higher prices; 99.5% of powder sales are water-atomised today. The Q4 FY26 call (3 Jun 2026) had said commercial production within one to two weeks"
+     ]
+    },
+    {
+     "heading": "What the next tungsten alloy step adds (in about two years, FY29)",
+     "projectId": "innomet-advanced-materials-tha-90t",
+     "bars": [
+      {
+       "name": "Tungsten heavy alloys, t a year",
+       "sub": "to about 90 t",
+       "base": 60,
+       "add": 30,
+       "baseLabel": "today 60 t",
+       "addLabel": "+about 30 t",
+       "right": "about +50%"
+      }
+     ],
+     "notes": [
+      "A new furnace already took alloy capacity from 18 t to 60 t; the June call spoke of a back-up furnace for redundancy. Output is about 2–2.5 t a month against 5 t"
+     ]
+    }
+   ],
+   "money": {
+    "heading": "Money",
+    "items": [
+     {
+      "name": "Swastik Tungsten restart",
+      "sub": "57.5% bought out of insolvency (5,00,600 new shares at ₹30); plus secured loans to clear its old bank debts, amount not stated. 120 t a year of tungsten powder (10 t a month), about 2 t a month now",
+      "total": 1.5,
+      "right": "₹1.5cr for 57.5%",
+      "status": "ramping",
+      "projectId": "innomet-advanced-materials-swastik"
+     },
+     {
+      "name": "DRDO-backed 100 kg inert-gas atomiser",
+      "sub": "with IIT Hyderabad and DMRL; very clean nickel and cobalt powders for aerospace, defence and 3D printing; 200–250 t a year when fully running (250 t in the FY29–FY31 roadmap); can also be used commercially, DRDO needs first. The June call said the project was planned over three years, with trials in one to one and a half years",
+      "total": 8.73,
+      "right": "₹8.73cr, paid by DRDO",
+      "status": "planned",
+      "projectId": "innomet-advanced-materials-drdo-atomiser"
+     },
+     {
+      "name": "Spark plasma sintering furnace",
+      "sub": "one machine from Germany, up to 2,400°C under vacuum and pressure; tungsten, composites, silicon carbide; jet vanes and sputtering targets, for defence, aerospace and electronics; early stage, contribution over the medium term; no start date given",
+      "right": "cost not disclosed; advance paid",
+      "status": "building",
+      "projectId": "innomet-advanced-materials-sps-furnace"
+     }
+    ]
+   },
+   "timeline": [
+    {
+     "when": "H1 FY27",
+     "tone": "done",
+     "text": "Swastik deal completed 25 Sep 2026 and plant restarted; 50 kg gas atomiser installed and in trials; ₹7cr of capex in the half"
+    },
+    {
+     "when": "H2 FY27",
+     "tone": "next",
+     "milestones": [
+      "innomet-advanced-materials-swastik-m1",
+      "innomet-advanced-materials-water-atomiser-m1",
+      "innomet-advanced-materials-gas-atomiser-m1"
+     ],
+     "sub": "Powders 800 t and tungsten 180 t (alloys 60 t + Swastik 120 t) in all by end FY27. The June call had said Swastik would reach 10 t a month within 2–3 months"
+    },
+    {
+     "when": "H1 FY28",
+     "tone": "next",
+     "milestones": [
+      "innomet-advanced-materials-swastik-m2"
+     ]
+    },
+    {
+     "when": "H2 FY28",
+     "tone": "later",
+     "milestones": [
+      "innomet-advanced-materials-water-atomiser-m2",
+      "innomet-advanced-materials-gas-atomiser-m2",
+      "innomet-advanced-materials-drdo-atomiser-m1"
+     ],
+     "sub": "Powders 1,350 t in all; about 1,600 t once the DRDO atomiser is in"
+    },
+    {
+     "when": "H2 FY29",
+     "tone": "later",
+     "milestones": [
+      "innomet-advanced-materials-tha-90t-m1"
+     ]
+    },
+    {
+     "when": "Not set",
+     "tone": "maybe",
+     "text": "EIGA atomiser for titanium and zirconium powders being evaluated; a greenfield plant for the ₹1,000cr vision is 'not even on the drawing board' and would need new money"
+    }
+   ],
+   "notes": [
+    "Today: metal powders 620 t a year (600 t water-atomised, 20 t gas-atomised); tungsten heavy alloys 60 t; Swastik Tungsten (57.5% owned) 120 t of tungsten powder",
+    "How full (H1 FY27): powders 256 t in six months, about 43 t a month against about 52 t installed (the MD gives a 50 t run rate and aims for 100); tungsten alloys 2–2.5 t a month against 5 t; Swastik about 2 t against 10 t. The company calls about 75% the practical peak use",
+    "At full use: the MD says today's set-up plus small additions can reach ₹400–500cr of sales, and agreed that the tungsten alloy line is worth about ₹150cr at current prices",
+    "H1 FY27 capex of ₹7cr came from profits, bank lines and 30% advances on export orders. ₹37.5cr of preferential issues committed (₹14cr received), mainly for working capital; the MD says current plants are funded. The June call had said there was no significant capex plan for FY27–FY28",
+    "Swastik turns carbide scrap into tungsten powder for the alloy line and, in time, tungsten carbide powder, ready-to-press powder, carbide parts and pure tungsten for outside customers, a market the company calls several times the size of the tungsten alloy market",
+    "All capacity figures are the company's tentative estimates of installed tonnes, not output"
+   ],
+   "source": "H1 FY27 call (3 Nov 2026) and presentation, Q4 FY26 call (3 Jun 2026), FY26 annual report, NSE filing 25 Sep 2026",
+   "fingerprint": "afb7532034b14310"
   }
  ]
 }

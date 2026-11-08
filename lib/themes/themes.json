@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24",
+ "updated": "2026-11-08",
  "method": "A company is listed under a theme only when its own management said something concrete about it in its last two results calls: revenue, orders in hand, approvals, or capex it has committed. Passing mentions, analysts' questions and 'we are exploring' do not count. 'Orders or revenue now' means it already sells or holds orders; 'Building' means money committed or approvals won, but no meaningful revenue yet. Each line says what the company said and where. Read from the calls on 13–14 October 2026 (medical devices and aerospace on 24 October) and reviewed each results season as new calls come in. A list of who is exposed to the theme, not a recommendation.",
  "themes": [
   {
@@ -204,6 +204,12 @@
      "level": "now",
      "why": "Defence sales of ₹77cr in FY26 (thermal sights, radars, fuzes, grenades); guides about ₹500cr in FY27 and is building an ammunition plant through a 51%-owned subsidiary.",
      "source": "Q1 FY27 call, Jul 2026"
+    },
+    {
+     "company": "Innomet Advanced Materials",
+     "level": "now",
+     "why": "Tungsten heavy alloy pre-fragments used in the Pinaka rocket and Astra missile; defence has been 30–40% of its tungsten alloy sales (₹17.6cr in H1 FY27) and is expected to nearly double this year.",
+     "source": "H1 FY27 call, Nov 2026"
     }
    ]
   },
@@ -572,6 +578,12 @@
      "level": "now",
      "why": "Data centres went from 1% of FY26 revenue to 21% in Q1 FY27, backed by a $1.11bn hyperscaler award letter for FY27–29.",
      "source": "Q1 FY27 call, Jul 2026"
+    },
+    {
+     "company": "Vivid Electromech",
+     "level": "now",
+     "why": "Data centres were 52% of H1 FY27 revenue and ₹115cr of its ₹307cr order book: LV panels and PDUs for STT, CtrlS and AdaniConneX.",
+     "source": "H1 FY27 call, Oct 2026"
     }
    ]
   },
@@ -1055,6 +1067,12 @@
      "level": "building",
      "why": "Railway deliveries of bar-and-plate coolers planned from Q2 FY27.",
      "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Vivid Electromech",
+     "level": "now",
+     "why": "₹46cr of metro-rail panel orders in its ₹307cr order book.",
+     "source": "H1 FY27 call, Oct 2026"
     }
    ]
   },
@@ -1508,6 +1526,12 @@
      "level": "building",
      "why": "Joint venture with Italy's ALA (a supplier to Boeing, Airbus and Dassault) for aerospace and defence parts logistics, starting in H2 FY27.",
      "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Innomet Advanced Materials",
+     "level": "building",
+     "why": "AS9100D aerospace certification won, tungsten balance weights for aircraft and helicopters, and a DRDO-funded ₹8.73cr gas atomiser with IIT Hyderabad for aerospace powders, due FY28; no aerospace revenue figure given.",
+     "source": "H1 FY27 call, Nov 2026; Q4 FY26 call, Jun 2026"
     }
    ]
   }

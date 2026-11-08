@@ -2251,6 +2251,108 @@ export const electricalEquipmentCharts: Record<string, ProfileCharts> = {
                 -72
             ]
         }
+    },
+    "Vivid Electromech": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 62
+                },
+                {
+                    "label": "Staff",
+                    "share": 6
+                },
+                {
+                    "label": "Other costs",
+                    "share": 9
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 23
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "marginVsInput": {
+            "input": "Hot-rolled steel price",
+            "periods": [
+                "H2 FY25",
+                "H1 FY26",
+                "H2 FY26",
+                "H1 FY27"
+            ],
+            "margin": [
+                19.8,
+                18.3,
+                24.6,
+                19.6
+            ],
+            "index": [
+                100,
+                102,
+                100,
+                null
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                1.0,
+                2.0,
+                8.0,
+                28.0,
+                45.0
+            ],
+            "ocf": [
+                3.0,
+                5.0,
+                3.0,
+                7.0,
+                9.0
+            ],
+            "fcf": [
+                2.0,
+                1.54,
+                2.32,
+                5.36,
+                -13.19
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "26.9x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "19.6x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹31cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "32%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "22%"
+            }
+        ],
+        "statsAsOf": "8 Nov 2026"
     }
 };
 
@@ -2351,5 +2453,11 @@ export const electricalEquipmentValuationInputs: Record<string, ValuationInput> 
         "ttmEbitda": 49,
         "mcapAtWriting": 717,
         "peAtWriting": 20.1
+    },
+    "Vivid Electromech": {
+        "netDebt": 31,
+        "ttmEbitda": 50.0,
+        "mcapAtWriting": 949.0,
+        "peAtWriting": 26.9
     }
 };

@@ -70,6 +70,7 @@ CONFIG = {
         'Exicom Tele-Sys.': ('EXICOM', None, PCB, False),
         'Servotech Renew': ('SERVOTECH', None, PCB, False),
         'RIR Power Electr': ('RIR', 'RIR_s', None, False),
+        'Vivid Electromech': ('VIVIDEL_s', None, HR, False),
     },
     'electrical-transformers': {
         'Atlanta Electricals': ('ATLANTAELE', None, COPPER, False),
@@ -201,6 +202,7 @@ CONFIG = {
         'HBL Engineering': ('HBLENGINE', None, LEAD, True),
         'Patil Automation': ('PATILAUTOM_s', None, HR, False),
         'Airfloa Rail Techno.': ('544516_s', None, HR, False),
+        'Innomet Advanced Materials': ('INNOMET_s', None, ALLOYSTEEL, False),
     },
     'packaging': {
         'EPL': ('EPL', None, PE, False),

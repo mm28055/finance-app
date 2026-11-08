@@ -40610,6 +40610,214 @@
    "due": "Q4 FY27",
    "createdOn": "2026-11-08",
    "status": "pending"
+  },
+  {
+   "id": "vivid-electromech-h2fy27-1",
+   "company": "Vivid Electromech",
+   "sector": "Electrical Equipment",
+   "text": "H2 FY27 revenue of at least ₹178cr. After H1's ₹91.5cr, that is what FY27 needs to grow 35% (₹270cr on FY26's ₹200cr). Growth of 35–40% was reaffirmed on 28 October, and the CMD said H2 is usually double H1",
+   "metric": "revenue",
+   "op": ">=",
+   "target": 178,
+   "due": "H2 FY27",
+   "ifMet": "Guidance holds and the ₹307cr order book is converting",
+   "ifMissed": "Growth is nearer H1's 30% and the plant delay is costing sales",
+   "createdOn": "2026-11-08",
+   "status": "pending"
+  },
+  {
+   "id": "vivid-electromech-h2fy27-2",
+   "company": "Vivid Electromech",
+   "sector": "Electrical Equipment",
+   "text": "H2 FY27 operating margin of at least 24%, in line with H2 FY26 (24.6% on Screener, 24.8% on the company's basis), as the CMD said on 28 October. He called today's margins a floor",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 24,
+   "due": "H2 FY27",
+   "ifMet": "The richer data-centre and own-design mix is holding",
+   "ifMissed": "New-plant costs or price competition are eating into margins",
+   "createdOn": "2026-11-08",
+   "status": "pending"
+  },
+  {
+   "id": "vivid-electromech-h2fy27-3",
+   "company": "Vivid Electromech",
+   "sector": "Electrical Equipment",
+   "text": "Receivables clearly lower in days by March 2027 (213 days at March 2026; ₹119.8cr at September 2026) and operating cash positive in H2 FY27. On 28 October the CMD promised a 'drastic improvement' through bank guarantees in place of retention money and payment terms backed by letters of credit",
+   "due": "H2 FY27",
+   "ifMet": "Profit is starting to turn into cash; that would support a move to follow or own",
+   "ifMissed": "A sixth year of weak cash conversion; the call stays wait or worse",
+   "createdOn": "2026-11-08",
+   "status": "pending"
+  },
+  {
+   "id": "vivid-electromech-h2fy27-4",
+   "company": "Vivid Electromech",
+   "sector": "Electrical Equipment",
+   "text": "Executable order book at or above October's ₹307cr at the H2 FY27 results, as booking for later quarters resumes from January 2027 (CMD, 28 October)",
+   "due": "H2 FY27",
+   "ifMet": "Demand is filling the new capacity",
+   "ifMissed": "The tripled capacity may sit idle into FY28",
+   "createdOn": "2026-11-08",
+   "status": "pending"
+  },
+  {
+   "id": "vivid-electromech-ambernath-m1",
+   "company": "Vivid Electromech",
+   "sector": "Electrical Equipment",
+   "text": "Ambernath phase 1 (about 5,000 verticals) in commercial operation, with first despatches by end-November 2026, once the pollution-board consent and fire NOC arrive (28 October call)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-08",
+   "status": "pending",
+   "project": "vivid-electromech-ambernath"
+  },
+  {
+   "id": "vivid-electromech-ambernath-m2",
+   "company": "Vivid Electromech",
+   "sector": "Electrical Equipment",
+   "text": "Ambernath phase 2 done by end-December 2026, completing the 15,000-vertical addition apart from the office block (28 October call)",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-08",
+   "status": "pending",
+   "project": "vivid-electromech-ambernath"
+  },
+  {
+   "id": "vivid-electromech-ambernath-m3",
+   "company": "Vivid Electromech",
+   "sector": "Electrical Equipment",
+   "text": "Ambernath fully used 12–18 months after start-up ('at least a year, year and a half', 28 October call)",
+   "due": "Q1 FY29",
+   "createdOn": "2026-11-08",
+   "status": "pending",
+   "project": "vivid-electromech-ambernath"
+  },
+  {
+   "id": "innomet-advanced-materials-h2fy27-1",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "text": "FY27 revenue above ₹100cr (guided 3 Nov 2026), which needs H2 FY27 revenue of at least ₹44cr after H1's ₹55.7cr; the MD expects H2 to be 'much better than H1'",
+   "metric": "revenue",
+   "op": ">=",
+   "target": 44,
+   "due": "H2 FY27",
+   "ifMet": "The order book and export momentum are real; closer to follow if cash also comes in",
+   "ifMissed": "The jump in H1 was partly one-off; stays wait or lower",
+   "createdOn": "2026-11-08",
+   "status": "pending"
+  },
+  {
+   "id": "innomet-advanced-materials-h2fy27-2",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "text": "H2 FY27 operating margin at least 15% (H1 14.8%), as the tungsten-alloy-heavy order book ships; management sees 16–20% long term",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 15,
+   "due": "H2 FY27",
+   "ifMet": "Mix shift to tungsten alloys and order-backed buying are lifting margins",
+   "ifMissed": "Tungsten costs or marketing spend still squeeze margins",
+   "createdOn": "2026-11-08",
+   "status": "pending"
+  },
+  {
+   "id": "innomet-advanced-materials-h2fy27-3",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "text": "FY27 operating cash positive as the ₹33.5cr of September stock ships (H1 used ₹7cr; CFO said stock and other current assets come down by year-end)",
+   "due": "H2 FY27",
+   "ifMet": "The working-capital build was order-backed, as management says",
+   "ifMissed": "Profit again not turning into cash; a reason to move to pass",
+   "createdOn": "2026-11-08",
+   "status": "pending"
+  },
+  {
+   "id": "innomet-advanced-materials-h2fy28-1",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "text": "FY28 revenue growth of 30–50% (MD on the 3 Nov 2026 call), with margins improving",
+   "due": "H2 FY28",
+   "createdOn": "2026-11-08",
+   "status": "pending"
+  },
+  {
+   "id": "innomet-advanced-materials-swastik-m1",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "text": "Swastik Tungsten producing 10 t of tungsten powder a month (about 2 t in November 2026)",
+   "due": "H2 FY27",
+   "createdOn": "2026-11-08",
+   "status": "pending",
+   "project": "innomet-advanced-materials-swastik"
+  },
+  {
+   "id": "innomet-advanced-materials-swastik-m2",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "text": "Swastik selling tungsten carbide or pure tungsten products to outside customers ('at least six months' from November 2026)",
+   "due": "H1 FY28",
+   "createdOn": "2026-11-08",
+   "status": "pending",
+   "project": "innomet-advanced-materials-swastik"
+  },
+  {
+   "id": "innomet-advanced-materials-water-atomiser-m1",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "text": "Water-atomised powder capacity at 750 t a year by the end of FY27 (600 t today)",
+   "due": "H2 FY27",
+   "createdOn": "2026-11-08",
+   "status": "pending",
+   "project": "innomet-advanced-materials-water-atomiser"
+  },
+  {
+   "id": "innomet-advanced-materials-water-atomiser-m2",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "text": "Larger water atomiser running, taking water-atomised capacity to 1,200 t a year in FY28",
+   "due": "H2 FY28",
+   "createdOn": "2026-11-08",
+   "status": "pending",
+   "project": "innomet-advanced-materials-water-atomiser"
+  },
+  {
+   "id": "innomet-advanced-materials-gas-atomiser-m1",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "text": "First commercial sales of gas-atomised powder (expected two to three months from November 2026; June had said within weeks)",
+   "due": "H2 FY27",
+   "createdOn": "2026-11-08",
+   "status": "pending",
+   "project": "innomet-advanced-materials-gas-atomiser"
+  },
+  {
+   "id": "innomet-advanced-materials-gas-atomiser-m2",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "text": "Gas-atomisation capacity at 150 t a year in FY28 (50 t by end FY27)",
+   "due": "H2 FY28",
+   "createdOn": "2026-11-08",
+   "status": "pending",
+   "project": "innomet-advanced-materials-gas-atomiser"
+  },
+  {
+   "id": "innomet-advanced-materials-drdo-atomiser-m1",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "text": "DRDO-funded 100 kg inert-gas atomiser set up with IIT Hyderabad (FY28)",
+   "due": "H2 FY28",
+   "createdOn": "2026-11-08",
+   "status": "pending",
+   "project": "innomet-advanced-materials-drdo-atomiser"
+  },
+  {
+   "id": "innomet-advanced-materials-tha-90t-m1",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "text": "Tungsten alloy capacity at about 90 t a year (about two years from November 2026)",
+   "due": "H2 FY29",
+   "createdOn": "2026-11-08",
+   "status": "pending",
+   "project": "innomet-advanced-materials-tha-90t"
   }
  ]
 }

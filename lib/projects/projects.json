@@ -15982,6 +15982,109 @@
    "status": "planned",
    "source": "Q2 FY27 call (9 Oct 2026): ₹429cr lent to a subsidiary, interest-bearing, and held by an individual helping close the deal; no ship, price or date given",
    "updatedOn": "2026-11-07"
+  },
+  {
+   "id": "vivid-electromech-ambernath",
+   "company": "Vivid Electromech",
+   "sector": "Electrical Equipment",
+   "name": "Ambernath automated panel plant (Thane)",
+   "what": "New plant for larger data-centre, infrastructure and medium-voltage orders: a 7,978 sq m plot with about 1,19,800 sq ft of buildings, robotic fabrication, an automatic pre-treatment and powder-coating line, in-house 1,000 kW load testing and about 600 workers",
+   "cost": "₹66.4cr in total (land ₹17.6cr, building ₹16.8cr, machinery and utilities ₹29.7cr, contingency ₹2.3cr). ₹43.8cr was to come from the IPO, but the AGM of 25 August 2026 moved ₹9cr of that to working capital. About ₹34cr of capex was spent in H1 FY27",
+   "expectedStart": "Q3 FY27",
+   "adds": "15,000 panel verticals a year (14,300 LV and 700 MV), taking capacity from 7,500 to 22,500",
+   "status": "building",
+   "source": "H1 FY27 call (28 Oct 2026): machines have arrived and are being installed. Phase 1 (about 5,000 verticals, on the ground floor) is to start despatching from end-November 2026, subject to statutory approvals; phase 2 by end-December 2026; full use in about 12–18 months. Cost and funding from the RHP (Mar 2026)",
+   "updatedOn": "2026-11-08",
+   "capacityAdd": "15,000 verticals a year on a base of 7,500, three times today's capacity; about 5,000 in phase 1 from end-November 2026",
+   "revisions": [
+    {
+     "on": "2026-09-05",
+     "text": "The investor presentation put commercial operations at end-October 2026; the RHP (March 2026) schedule had said July 2026"
+    },
+    {
+     "on": "2026-10-28",
+     "text": "The H1 FY27 call and presentation moved commercial operations to end-November 2026, pending the Maharashtra pollution board's consent to operate and a fire NOC"
+    }
+   ]
+  },
+  {
+   "id": "innomet-advanced-materials-swastik",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "name": "Swastik Tungsten restart (tungsten powder)",
+   "what": "57.5% of Swastik Tungsten (Shrirampur, Maharashtra) bought out of insolvency to make tungsten powder from carbide scrap for the tungsten alloy line; later tungsten carbide powder, ready-to-press powder, carbide parts and pure tungsten for outside customers",
+   "cost": "₹1.50cr for 57.5% (5,00,600 new shares at ₹30), plus secured loans to clear its old bank debts (amount not stated)",
+   "expectedStart": "H2 FY27 (10 t a month by the end of FY27)",
+   "adds": "Captive tungsten powder for the alloy business; a new carbide business the company says is several times the size of the tungsten alloy market",
+   "capacityAdd": "120 t a year of tungsten powder (10 t a month); producing about 2 t a month in November 2026",
+   "status": "ramping",
+   "source": "H1 FY27 call (3 Nov 2026) and presentation: operations started, about 2 t a month, 10 t a month by end FY27; acquisition completed 25 Sep 2026 (NSE filing). The June call had said full 10 t a month within 2–3 months and the deal was 'all over'",
+   "updatedOn": "2026-11-08"
+  },
+  {
+   "id": "innomet-advanced-materials-water-atomiser",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "name": "Larger water atomiser (metal powders)",
+   "what": "A larger water atomiser to double water-atomised powder capacity",
+   "expectedStart": "FY28 (750 t by end FY27, 1,200 t in FY28)",
+   "adds": "More copper, bronze and alloy powder output; powders were ₹38.1cr of H1 FY27 sales",
+   "capacityAdd": "Water atomisation from 600 to 1,200 t a year (+100%): 750 t in FY27, 1,200 t in FY28 (tentative company estimate)",
+   "status": "planned",
+   "source": "H1 FY27 presentation (3 Nov 2026): order for a large water atomiser under progress",
+   "updatedOn": "2026-11-08"
+  },
+  {
+   "id": "innomet-advanced-materials-gas-atomiser",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "name": "50 kg gas atomiser (spherical powders)",
+   "what": "Gas atomiser converted from 10 kg to 50 kg, making round powders for 3D printing, surface coatings and parts makers",
+   "expectedStart": "H2 FY27 (first sales expected in two to three months from November 2026)",
+   "adds": "Higher-priced gas-atomised powders; almost all powder sales today (99.5%) are water-atomised",
+   "capacityAdd": "Gas atomisation from 20 t to 50 t a year in FY27 and 150 t in FY28 (tentative company estimate)",
+   "status": "building",
+   "source": "H1 FY27 call (3 Nov 2026): installed, in trials, samples with customers; the Q4 FY26 call (June) had said commercial production would start within one to two weeks",
+   "updatedOn": "2026-11-08"
+  },
+  {
+   "id": "innomet-advanced-materials-drdo-atomiser",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "name": "DRDO-backed 100 kg inert-gas atomiser (aerospace powders)",
+   "what": "Vacuum induction melting and inert-gas atomisation facility with IIT Hyderabad and DMRL (DRDO) for very clean nickel and cobalt alloy powders (oxygen below 150 ppm) for aerospace, defence and 3D printing; may also be used commercially",
+   "cost": "₹8.73cr sanctioned outlay, funded by DRDO",
+   "expectedStart": "FY28",
+   "adds": "Aerospace-grade powders; DRDO needs take priority on the line",
+   "capacityAdd": "200–250 t a year of clean metal powders when fully running (annual report); 250 t in the company's FY29–FY31 roadmap",
+   "status": "planned",
+   "source": "H1 FY27 call (3 Nov 2026): to be set up 'in the next year or so'; presentation: FY28. Q4 FY26 call: projected over three years, trials planned in one to one and a half years",
+   "updatedOn": "2026-11-08"
+  },
+  {
+   "id": "innomet-advanced-materials-sps-furnace",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "name": "Spark plasma sintering furnace",
+   "what": "Production-scale furnace from Germany working up to 2,400°C under vacuum and pressure, for tungsten, tungsten composites, silicon carbide and other high-temperature materials (jet vanes, sputtering targets)",
+   "cost": "Not disclosed (advance paid)",
+   "adds": "New advanced-materials products for defence, aerospace and electronics; early stage, contribution over the medium term",
+   "status": "building",
+   "source": "H1 FY27 call and presentation (3 Nov 2026): one machine being bought, advance paid; no start date given",
+   "updatedOn": "2026-11-08"
+  },
+  {
+   "id": "innomet-advanced-materials-tha-90t",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "name": "Tungsten heavy alloy capacity to about 90 t",
+   "what": "Next step in in-house tungsten alloy capacity after the new furnace that took it from 18 t to 60 t a year",
+   "expectedStart": "About two years from November 2026 (FY29)",
+   "adds": "More tungsten alloy output for defence and aerospace exports",
+   "capacityAdd": "From 60 t to about 90 t a year (+50%)",
+   "status": "planned",
+   "source": "H1 FY27 presentation (3 Nov 2026): next step about 90 t in about two years (tentative); Q4 FY26 call mentioned a back-up furnace for redundancy",
+   "updatedOn": "2026-11-08"
   }
  ]
 }
