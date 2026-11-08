@@ -35,6 +35,11 @@ import { nseAnnouncements, nseInsiderFilings, nsePitDisclosure, parseNseDate, NS
 import { nseSymbolForIsin } from '../lib/corporate-actions/nse-lists';
 
 const DATA_FILE = path.join(process.cwd(), 'lib', 'filings', 'filings.json');
+// Filings already read and judged NOT material, so later nights skip them. Each night reads the
+// last three days, so before 8 Nov 2026 a routine filing was sent to Gemini up to three times.
+// Kept out of filings.json because the website loads that file.
+const CHECKED_FILE = path.join(process.cwd(), 'lib', 'filings', 'checked.json');
+const CHECKED_KEEP_DAYS = 14;
 const FILINGS_KEEP_DAYS = 366; // a year for the Filings page (company cards show the last six months)
 const UA = NSE_UA;
 const DAY = 86400000;
@@ -413,7 +418,8 @@ async function main() {
     const store: Store = fs.existsSync(DATA_FILE)
         ? JSON.parse(fs.readFileSync(DATA_FILE, 'utf-8'))
         : { updated: '', from: '', to: '', companiesBySector: {}, filings: [] };
-    const seen = new Set(store.filings.map(f => f.url));
+    const checked: Record<string, string> = fs.existsSync(CHECKED_FILE) ? JSON.parse(fs.readFileSync(CHECKED_FILE, 'utf-8')) : {};
+    const seen = new Set([...store.filings.map(f => f.url), ...Object.keys(checked)]);
     const sameEvent = (company: string, category: string, day: string) => store.filings.find(f => f.company === company
         && f.category.toLowerCase() === category.toLowerCase()
         && Math.abs(new Date(f.date).getTime() - new Date(day).getTime()) <= EVENT_GAP_DAYS * DAY);
@@ -463,12 +469,16 @@ async function main() {
         if (!text) { console.log(`  [${i + 1}] ${c.name}: no readable text — skipped`); continue; }
         try {
             const v = await judge(c, a, text);
-            if (!v.material) { console.log(`  [${i + 1}] ${c.name}: not material (${a.desc})`); continue; }
+            if (!v.material) {
+                console.log(`  [${i + 1}] ${c.name}: not material (${a.desc})`);
+                checked[a.attchmntFile!] = today.toISOString().slice(0, 10);
+                continue;
+            }
             const tone = ['good', 'watch', 'info'].includes(v.tone) ? v.tone : 'info';
             const day = isoFromNse(a.an_dt);
             const category = String(v.category || a.desc).slice(0, 40);
             const dup = sameEvent(c.name, category, day);
-            if (dup) { console.log(`  [${i + 1}] ${c.name}: same event already recorded (${dup.headline}) — skipped`); seen.add(a.attchmntFile!); continue; }
+            if (dup) { console.log(`  [${i + 1}] ${c.name}: same event already recorded (${dup.headline}) — skipped`); seen.add(a.attchmntFile!); checked[a.attchmntFile!] = today.toISOString().slice(0, 10); continue; }
             const f: Filing = {
                 company: c.name, sector: c.sector, date: day, category,
                 tone, headline: String(v.headline || '').slice(0, 140), summary: String(v.summary || ''), url: a.attchmntFile!,
@@ -510,6 +520,9 @@ async function main() {
     } else {
         fs.mkdirSync(path.dirname(DATA_FILE), { recursive: true });
         fs.writeFileSync(DATA_FILE, JSON.stringify(store, null, 1));
+        const keepFrom = new Date(Date.now() - CHECKED_KEEP_DAYS * DAY).toISOString().slice(0, 10);
+        const kept = Object.fromEntries(Object.entries(checked).filter(([, d]) => d >= keepFrom));
+        fs.writeFileSync(CHECKED_FILE, JSON.stringify(kept, null, 0));
         console.log(`Added ${added} material filings; lib/filings/filings.json now holds ${store.filings.length}.`);
     }
     await prisma.$disconnect();
