@@ -525,7 +525,7 @@ export const healthcare: SectorOverview = {
         {
             company: '3B Blackbio Diagnostics', rank: 3, stance: 'HARVEST', segment: KITS,
             what: "Makes PCR test kits (TRUPCR) in Bhopal for labs' existing machines, and owns a UK distributor and Coris, a Belgian rapid-test maker bought in 2025; formerly Kilpest India.",
-            view: "**A very profitable niche with a cash pile and a loss-maker attached.** The India kit business earns about 55%, its exports grew 38% in Q1, and it holds about ₹230cr of cash against a market value of {mcap:3B Blackbio Diagnostics|₹1,393cr}. But Coris lost ₹3.5cr at EBITDA in Q1, taking the group margin to 25%, its break-even and the sample-to-answer machine keep slipping, and it has cut earnings calls to twice a year. The price needs about 14% a year against my ~12%.",
+            view: "**A very profitable niche with a cash pile and a loss-maker attached.** The India kit business earns about 55%, its exports grew 38% in Q1, and it holds about ₹230cr of cash against a market value of {mcap:3B Blackbio Diagnostics|₹1,393cr}. But Coris lost ₹3.5cr at EBITDA in Q1, taking the group margin to 25%, its break-even and the sample-to-answer machine keep slipping, and it has cut earnings calls to twice a year. The price needs about 14% a year against my ~12%. 8 Nov 2026: the price now fits, but nothing it was waiting for (Coris turning positive, EU certification) has happened; it stays wait.",
             watch: 'Coris turning positive after the December order for sleeping-sickness tests; the price paid for any acquisition; EU certification of 3B’s own kits.',
         },
         {
