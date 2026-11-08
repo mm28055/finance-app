@@ -713,8 +713,8 @@ export const cables: SectorOverview = {
         {
             company: 'Paramount Communications', rank: 6, stance: 'TURNAROUND', segment: TENDER,
             what: "Delhi-based maker of power, telecom and railway cables for Indian industry and government, and a large exporter of low-voltage cable to US distributors.",
-            view: "**A mechanical recovery with thin cash.** The operating margin rose from 1.4% to 6.6% as the US tariff went, and exports recovered to ₹155cr in Q1. But FY26 profit included ₹27.8cr of key-man insurance, volume grew only 4%, operating cash was −₹38cr and its credit rating is BBB. The price needs about {need:Paramount Communications|19}% a year against my ~15%.",
-            watch: 'Exports running toward ₹700–800cr; term debt tied up for Narmadapuram; the margin back to FY25 levels by Q4 FY27.',
+            view: "**A mechanical recovery with thin cash.** The operating margin rose from 1.4% to 6.6% as the US tariff went, and exports recovered to ₹155cr in Q1. But FY26 profit included ₹27.8cr of key-man insurance, volume grew only 4%, operating cash was −₹38cr and its credit rating is BBB. In Q2 FY27 revenue grew 31% to ₹560cr at a 7.3% operating margin, management kept the FY25 margin target for Q4 and partial start of Narmadapuram in Q1 FY28, and the long-term loan for the plant is still being tied up (27 Oct 2026 call). The price needs about {need:Paramount Communications|19}% a year against my ~15%.",
+            watch: 'Exports running toward ₹700–800cr (₹158cr in Q2); term debt tied up for Narmadapuram; the margin back to FY25 levels by Q4 FY27 (7.3% in Q2).',
         },
         {
             company: 'Sterlite Technologies', rank: 7, stance: 'CYCLICAL', segment: FIBRE,
