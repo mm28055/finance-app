@@ -627,7 +627,7 @@ export const chemicalsAdditives: SectorOverview = {
         {
             company: 'Nocil', rank: 6, stance: 'TURNAROUND', segment: RUBBER,
             what: "India's largest rubber-chemicals maker (about 40% share), selling accelerators and antioxidants to domestic and global tyre makers from plants at Dahej and Navi Mumbai.",
-            view: "**A debt-free leader waiting on trade policy.** It holds ₹442cr of net cash, won a sulphenamide duty in June, lifted its Q1 margin to 11% and guides FY27 revenue of ₹1,400–1,600cr at about 10%. But its margin fell from 18% to 8% in four years as imports took its pricing power, the TDQ duty was refused, Q1 benefited from a raw-material price lag, and one promoter's shares are partly pledged. The price needs about {need:Nocil|23}% a year against my ~15%.",
+            view: "**A debt-free leader waiting on trade policy.** It holds ₹442cr of net cash, won a sulphenamide duty in June, lifted its Q1 margin to 11% and guides FY27 revenue of ₹1,400–1,600cr at about 10%. But its margin fell from 18% to 8% in four years as imports took its pricing power, the TDQ duty was refused, Q1 benefited from a raw-material price lag, and one promoter's shares are partly pledged. The price needs about {need:Nocil|23}% a year against my ~15%. 8 Nov 2026: the price fell 28% and now fits, but Q2's margin fell back to 8% from 11% and the Pilflex 13 duty is still undecided; it stays wait.",
             watch: 'The Pilflex 13 duty decision; TDQ plant sales from Q4 FY27; whether exporters absorb the sulphenamide duty.',
         },
         {
