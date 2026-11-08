@@ -636,8 +636,8 @@ export const oil: SectorOverview = {
         {
             company: 'Jindal Drilling and Industries', rank: 3, stance: 'HARVEST', segment: SERVICES,
             what: "Hires out offshore jack-up drilling rigs, with crews, to ONGC for shallow-water wells: six rigs, three owned and three chartered, plus directional drilling and mud logging.",
-            view: "**Cheap, but the earnings peak is behind it for now.** A ₹1,310cr order book and a 36% margin, but three rigs go off hire from September–October for ₹90–110cr refurbishments each, ONGC cut its latest award to about $47,800 a day, and ₹160–163cr may have to be repaid if it loses at the Supreme Court. Its own net cash was ₹183cr at June, far below Screener's ₹785cr. The price needs about {need:Jindal Drilling and Industries|4–5}% a year against my ~4%, so it only just fits.",
-            watch: 'Jindal Pioneer starting work in October 2026; re-contract rates for Virtue-I, Discovery-I and Jindal Star; the Supreme Court ruling.',
+            view: "**Cheap, but the earnings peak is behind it for now.** A ₹1,310cr order book and a 36% margin, but three rigs go off hire from September–October for ₹90–110cr refurbishments each, ONGC cut its latest award to about $47,800 a day (though on 6 Nov 2026 it re-hired Discovery-I for three years at ₹52 lakh, about $54,600, a day, worth about ₹569cr), and ₹160–163cr may have to be repaid if it loses at the Supreme Court. Its own net cash was ₹183cr at June, far below Screener's ₹785cr. The price needs about {need:Jindal Drilling and Industries|4–5}% a year against my ~4%, so it only just fits.",
+            watch: 'Jindal Pioneer starting work in October 2026; re-contract rates for Virtue-I and Jindal Star (Discovery-I re-hired at about $54,600 a day); the Supreme Court ruling.',
         },
         {
             company: 'South West Pinnacle', rank: 4, stance: 'SCALEUP', segment: SERVICES,
