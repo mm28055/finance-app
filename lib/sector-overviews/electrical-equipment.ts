@@ -760,8 +760,8 @@ export const electricalEquipment: SectorOverview = {
         {
             company: 'RIR Power Electr', rank: 11, stance: 'AVOID', segment: POWERELEC,
             what: "A small maker of high-power silicon semiconductors (thyristors, diodes) for industry, railways, defence and HVDC, building India's first silicon-carbide epitaxial-wafer plant in Odisha.",
-            view: "**A story stock tangled with promoter entities.** The core business has ₹91cr of revenue, grew 29% in Q1 and earned 14.7%. But the {mcap:RIR Power Electr|₹1,525cr} market value rests on a ₹618cr silicon-carbide plant whose start has slipped repeatedly and whose ₹70cr bank loan is unsanctioned; ₹41.95cr of its know-how was bought from a company in which a director is interested, and its auditor flagged the sale of its silicon-carbide subsidiary to the chairman's US company. The price needs about {need:RIR Power Electr|43}% a year.",
-            watch: 'Epi-wafer revenue billed in Q3 FY27; the bank loan sanctioned and Phase 2 funded; clear disclosure of what RIR owns in the technology.',
+            view: "**A story stock tangled with promoter entities.** The core business has ₹91cr of revenue, grew 29% in Q1 and earned 14.7%. But the {mcap:RIR Power Electr|₹1,525cr} market value rests on a ₹618cr silicon-carbide plant whose start has slipped repeatedly and whose ₹70cr bank loan is unsanctioned; ₹41.95cr of its know-how was bought from a company in which a director is interested, and its auditor flagged the sale of its silicon-carbide subsidiary to the chairman's US company. In Q2 FY27 standalone revenue rose 25% on the quarter to ₹34cr; the bank has approved the loan internally but not yet issued a sanction letter, and management expects first epi-wafer revenue within three months (30 Oct 2026 call). The price needs about {need:RIR Power Electr|43}% a year.",
+            watch: 'Epi-wafer revenue billed in Q3 FY27, as promised again in October; the bank loan sanctioned and Phase 2 funded; clear disclosure of what RIR owns in the technology.',
         },
         {
             company: 'Servotech Renew', rank: 12, stance: 'AVOID', segment: POWERELEC,
