@@ -13501,35 +13501,24 @@
   },
   {
    "company": "Gandhar Oil Refinery (India)",
-   "fingerprint": "b4f8bbf2518cccd0",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "866256ae443300b0",
+   "checkedOn": "2026-11-08",
    "lines": {
-    "heading": "How full the plants are (Q1 FY27 overall; plant split is FY26)",
+    "heading": "How full the plants are (Q2 FY27)",
     "items": [
      {
       "name": "Overall, three plants",
-      "size": "5,97,403 kL a year on two shifts",
-      "usedPct": 97,
-      "usedLabel": "about 97% used (Q1 FY27)",
-      "tight": true,
-      "tightLabel": "near full; a third shift adds room",
-      "note": "FY26: 93% overall (5,54,212 kL made)"
+      "size": "8,38,637 kL a year on two shifts",
+      "usedPct": 61,
+      "usedLabel": "about 61% used (Q2 FY27)",
+      "note": "Restated in Q2 FY27 after capitalising past capex (was 5,97,403 kL, about 97% used in Q1 FY27)"
      },
      {
       "name": "India (Taloja and Silvassa)",
-      "size": "3,62,109 kL a year on two shifts",
-      "usedPct": 100,
-      "usedLabel": "126% used in FY26",
-      "tight": true,
-      "tightLabel": "above two-shift capacity, using a third shift",
-      "note": "4,58,853 kL made in FY26"
-     },
-     {
-      "name": "Sharjah",
-      "size": "about 2,35,000 kL a year (the rest)",
-      "usedPct": 41,
-      "usedLabel": "about 41% used in FY26 (worked out)",
-      "note": "Spare room; held back by the West Asia disruption"
+      "size": "6,02,713 kL a year on two shifts (was 3,62,109 kL)",
+      "usedPct": 82,
+      "usedLabel": "about 82% used (Q2 FY27, annualised)",
+      "note": "Management expects a little higher in Q3 and Q4; up to about 130% possible on three shifts"
      }
     ]
    },
@@ -13538,7 +13527,7 @@
      {
       "name": "Taloja plant expansion",
       "sub": "on 5 acres bought right next to the Taloja plant; from own cash",
-      "right": "about ₹100cr talked of; plan not yet announced",
+      "right": "about ₹100cr talked of; plan still not announced (Q2 FY27)",
       "status": "planned",
       "projectId": "gandhar-oil-refinery-india-taloja"
      },
@@ -13555,11 +13544,11 @@
    "timeline": [
     {
      "when": "Q2 FY27",
-     "tone": "next",
+     "tone": "done",
      "milestones": [
       "gandhar-oil-refinery-india-taloja-m1"
      ],
-     "sub": "Q1 FY27 call: plans 'in the next quarter or so'; promised on two calls running"
+     "sub": "Q1 FY27 call promised the plan 'in the next quarter or so'; the Q2 call (28 Oct 2026) gave none and no new date"
     },
     {
      "when": "H2 FY27",
@@ -13570,9 +13559,10 @@
    ],
    "notes": [
     "Capacity can be switched between all products, so there is no product-wise split",
-    "Sharjah figures are worked out from the totals: 5,97,403 less 3,62,109 kL of capacity, and 5,54,212 less 4,58,853 kL made"
+    "Sharjah (Texol) is 2,35,924 kL, unchanged; its output was cut by the Hormuz closure, so no separate figure is given",
+    "Management changed this (28 Oct 2026): the Taloja plan promised for Q2 FY27 was not announced"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note"
+   "source": "Q2 FY27 call (28 Oct 2026), Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Ganesh Consumer Prod",
@@ -26343,10 +26333,10 @@
   },
   {
    "company": "Onesource Specialty",
-   "fingerprint": "a6a058e0197812dc",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "6a9dc8826c72f072",
+   "checkedOn": "2026-11-08",
    "lines": {
-    "heading": "How full the cartridge line is (Q1 FY27)",
+    "heading": "How full the cartridge lines are (Q2 FY27)",
     "items": [
      {
       "name": "Cartridge Line 1 (GLP-1 pens)",
@@ -26355,13 +26345,13 @@
       "usedLabel": "fully used (management's words, no % given)",
       "tight": true,
       "tightLabel": "overbooked",
-      "note": "Management: utilisation of all current drug-device capacity is complete; injectables demand is above capacity too"
+      "note": "Management (Q1 FY27): all current drug-device capacity is used; injectables demand is above capacity too. Line 2 started commercial batches in September 2026 and is ramping up; no % given"
      }
     ]
    },
    "adds": [
     {
-     "heading": "What cartridge Lines 2 and 3 add (Line 2 in Q2 FY27, Line 3 within FY27; all three lines running in FY28)",
+     "heading": "What cartridge Lines 2 and 3 add (Line 2 running since September 2026; Line 3 in Q4 FY27 or the start of FY28; all three lines in FY28)",
      "projectId": "onesource-specialty-cartridge-lines",
      "bars": [
       {
@@ -26370,7 +26360,7 @@
        "base": 225,
        "add": 450,
        "baseLabel": "today 225 days (Line 1)",
-       "addLabel": "+450 days (Lines 2 and 3)",
+       "addLabel": "+450 days (Line 2 now, Line 3 next)",
        "right": "+200% (three times)"
       }
      ],
@@ -26388,7 +26378,7 @@
       "name": "Cartridge and pen Lines 2–4",
       "sub": "new drug-device lines for GLP-1 cartridges and pens",
       "right": "most of the $100m, all borrowed",
-      "status": "building",
+      "status": "started",
       "projectId": "onesource-specialty-cartridge-lines"
      },
      {
@@ -26415,17 +26405,17 @@
     },
     {
      "when": "Q2 FY27",
-     "tone": "next",
+     "tone": "done",
      "text": "Shutdown of one sterile injectables site begins, lasting into Q3",
      "milestones": [
       "onesource-specialty-cartridge-lines-m1"
      ],
-     "sub": "Line 2 was installed before May and set for commercial use this quarter (Q1 FY27 call)"
+     "sub": "Line 2 commercial since September 2026, doubling sterile days; about six months later than first planned (Q2 FY27 call)"
     },
     {
      "when": "Q3 FY27",
      "tone": "maybe",
-     "text": "Details of the new soft-gel plant expected 'over the next quarter or so'"
+     "text": "Details of the new soft-gel plant expected 'over the next quarter or so' (Q1 FY27 call)"
     },
     {
      "when": "Q4 FY27",
@@ -26433,27 +26423,29 @@
      "milestones": [
       "onesource-specialty-cartridge-lines-m2"
      ],
-     "sub": "Line 3 ready within FY27"
+     "sub": "Line 3 passed its factory test in Germany and is at site for qualification"
     },
     {
      "when": "Q1 FY28",
      "tone": "next",
      "milestones": [
+      "onesource-specialty-cartridge-lines-m3",
       "onesource-specialty-injectables-upgrade-m1"
      ]
     },
     {
      "when": "FY28",
      "tone": "later",
-     "text": "Three cartridge lines, 675 sterile days; Line 4 later in the year. $400m revenue target. New freeze-drying and syringe capacity a significant contributor. Soft-gel site full in 12–15 months from July 2026"
+     "text": "Three cartridge lines, 675 sterile days; Line 4 later in the year. $400m revenue and $160m EBITDA target, kept in October 2026. New freeze-drying and syringe capacity a significant contributor. Soft-gel site full in 12–15 months from July 2026"
     }
    ],
    "notes": [
     "Also: sterile injectables, biologics and a US FDA-approved penicillin plant",
     "Soft-gel capacity went from 800m to 2.4bn capsules a year; later in the same call management said the site fills over about two years",
-    "Pre-filled syringe capacity at the drug-device site still has most of its room free"
+    "Pre-filled syringe capacity at the drug-device site still has most of its room free",
+    "Management changed this (27 Oct 2026): Line 3 is aimed at Q4 FY27 but may start commercial use at the start of FY28; Line 2 started about six months later than first planned"
    ],
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note"
+   "source": "Q2 FY27 call (27 Oct 2026), Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Onward Technologies",
@@ -36274,8 +36266,8 @@
   },
   {
    "company": "Sudeep Pharma",
-   "fingerprint": "7496bdb809b6b0a2",
-   "checkedOn": "2026-10-28",
+   "fingerprint": "776ba84695a56ba2",
+   "checkedOn": "2026-11-08",
    "lines": {
     "heading": "How full each business's plants are (Q4 FY26 call, May 2026)",
     "items": [
@@ -36364,7 +36356,15 @@
       "sudeep-pharma-greenfield-m2",
       "sudeep-pharma-battery-m1"
      ],
-     "sub": "Two binding battery offtake deals expected 'later this year'; if signed, Phases 2 and 3 are planned sooner"
+     "sub": "Q1 FY27 call: two binding battery offtake deals expected 'later this year'. Large nutrition customers approved in Q2, with commercial revenue from Q3 (Q2 FY27 call)"
+    },
+    {
+     "when": "Q4 FY27",
+     "tone": "next",
+     "milestones": [
+      "sudeep-pharma-battery-m3"
+     ],
+     "sub": "Q2 FY27 call: firm binding offtake update now promised this quarter; most greenfield revenue starts showing here"
     },
     {
      "when": "Q1 FY28",
@@ -36372,7 +36372,7 @@
      "milestones": [
       "sudeep-pharma-battery-m2"
      ],
-     "sub": "Phase 1 commissioning by April 2027, unchanged since May"
+     "sub": "Phase 1 commercial operations from April 2027, unchanged in the Q2 FY27 call (29 Oct 2026)"
     },
     {
      "when": "FY28",
@@ -36386,9 +36386,10 @@
     }
    ],
    "notes": [
-    "Five plants: four in Gujarat, one in Ireland"
+    "Five plants: four in Gujarat, one in Ireland",
+    "Management changed this (29 Oct 2026): the binding battery offtake update moved from 'later this year' to Q4 FY27"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note; filing of 26 Oct 2026"
+   "source": "Q2 FY27 call (29 Oct 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note; filing of 26 Oct 2026"
   },
   {
    "company": "Sumitomo Chemical India",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05",
+ "updated": "2026-11-08",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -43,7 +43,11 @@
    "text": "Late-delivery charges falling (₹9.97cr in FY26) and inventory rebuilding from the ₹16.3cr March low",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Inventory fell further to ₹10.8cr at 30 Sep 2026 (no rebuild); late-delivery charges not given in the Q2 call or presentation",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays own; Q2 growth came from faster execution, and receivables (₹89cr) are now the cash item to watch"
   },
   {
    "id": "astra-microwave-products-q4fy27-1",
@@ -220,7 +224,11 @@
    "text": "Aerospace revenue growth of 25%-plus as committed",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Aerospace revenue +72% in Q2 FY27 (₹139cr), +56% in H1",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; price still stretched"
   },
   {
    "id": "raymond-q4fy27-2",
@@ -238,7 +246,11 @@
    "text": "Use of the promoter warrant money disclosed",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "No use disclosed in the 28 Oct 2026 call; management calls the warrant money a war chest for acquisitions not yet found",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; tracked by raymond-shift-6"
   },
   {
    "id": "azad-engineering-q3fy27-1",
@@ -2196,7 +2208,11 @@
    "due": "Q2 FY27",
    "ifMet": "Part of the condition to stop waiting",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Promoters 66.65% at September 2026, the drop from 68.44% being the 1.8% sale already counted; no promoter sale filed since",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays wait; the cash condition (FY27) is still open"
   },
   {
    "id": "menon-bearings-q4fy27-2",
@@ -2214,7 +2230,11 @@
    "text": "First railway brake orders from the new test rig",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "No railway brake order reported in the Q2 FY27 call (30 Oct 2026)",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "racl-geartech-q2fy27-1",
@@ -7668,7 +7688,8 @@
    "status": "missed",
    "actual": "1.4%",
    "resolvedOn": "2026-11-03",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays pass; growth still far below the 8–10% target"
   },
   {
    "id": "bajaj-electricals-q3fy27-1",
@@ -11584,7 +11605,11 @@
    "ifMet": "Would change my view for the better",
    "ifMissed": "Stays wait",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Subsidiary pre-tax losses about ₹5cr in Q2 FY27, down from ₹8cr in Q1 and ₹12cr in Q4 FY26; Italian figure not disclosed",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays wait; the trend is right but break-even is still H1 FY28"
   },
   {
    "id": "control-print-q2fy27-2",
@@ -11593,7 +11618,11 @@
    "text": "Core (standalone) growth back to 10–15% after the price rise (Q1: +4.2%)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Standalone operating revenue +31% in Q2 FY27 (₹131cr against ₹100cr); H1 +16%",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays wait (price Stretched)"
   },
   {
    "id": "control-print-q4fy27-1",
@@ -14162,7 +14191,11 @@
    "due": "Q2 FY27",
    "ifMissed": "Changes the view for the worse",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Anti-dumping duties on Chinese and Vietnamese glass still in force (30 Oct 2026 call)",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "tempsens-instruments-q4fy27-1",
@@ -15701,7 +15734,11 @@
    "due": "Q2 FY27",
    "ifMissed": "The windfall is lasting",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Spread about ₹29,128 a kL in Q2 FY27 (₹28,000 in Q1)",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "The windfall lasted another quarter; stays wait, my growth stays zero from the peak"
   },
   {
    "id": "gandhar-oil-refinery-india-q2fy27-2",
@@ -15710,7 +15747,11 @@
    "text": "The capex plan promised 'next quarter' on two calls is announced",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "No capex plan in the Q2 call (28 Oct 2026); third call running",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "gandhar-oil-refinery-india-q4fy27-1",
@@ -16948,7 +16989,11 @@
    "due": "Q2 FY27",
    "ifMissed": "View changes for the worse (missing line start-ups)",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Line 2 commercial since September 2026; Q2 revenue ₹516cr (+37%, +15% on the quarter) at a 32% margin",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays wait; the price is still set on FY28"
   },
   {
    "id": "onesource-specialty-q2fy27-2",
@@ -16957,7 +17002,11 @@
    "text": "Operating cash turning positive at the half-year",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "H1 FY27 consolidated operating cash −₹19cr (−₹40cr a year earlier); receivables up on shipping delays",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays wait"
   },
   {
    "id": "onesource-specialty-q4fy27-1",
@@ -16967,7 +17016,13 @@
    "due": "Q4 FY27",
    "ifMissed": "View changes for the worse (missing line start-ups)",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-08",
+     "text": "Q2 FY27 call (27 Oct 2026): Line 3 is at site for qualification and aimed at Q4 FY27, but commercial use may move to the start of FY28"
+    }
+   ]
   },
   {
    "id": "aarti-pharmalabs-q4fy27-1",
@@ -17362,7 +17417,13 @@
    "due": "Q3 FY27",
    "ifMet": "View changes for the better",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-08",
+     "text": "Q2 FY27 call (29 Oct 2026): a firm update on binding offtake contracts is now promised in Q4 FY27"
+    }
+   ]
   },
   {
    "id": "sudeep-pharma-q3fy27-2",
@@ -17384,7 +17445,11 @@
    "due": "Q2 FY27",
    "ifMet": "View changes for the better",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "H1 FY27 operating cash ₹43.5cr against ₹92.4cr of profit (47%, up ₹26cr on the year); working capital still 214 days, target now 170–180 days excluding battery stock",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Stays wait; cash better, working capital not"
   },
   {
    "id": "q-line-biotech-h1fy27-1",
@@ -17452,7 +17517,8 @@
    "status": "met",
    "actual": "₹3cr",
    "resolvedOn": "2026-11-04",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays pass; operating profit ₹3cr but still a ₹27cr pre-tax loss, and governance unchanged"
   },
   {
    "id": "zota-health-care-q4fy27-1",
@@ -30601,8 +30667,12 @@
    "text": "Capex plan for the Taloja expansion announced",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "gandhar-oil-refinery-india-taloja"
+   "status": "missed",
+   "project": "gandhar-oil-refinery-india-taloja",
+   "actual": "Not announced in the Q2 call (28 Oct 2026); no new date",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Project stays planned"
   },
   {
    "id": "chennai-petroleum-corporation-fuel-stations-m1",
@@ -31175,8 +31245,12 @@
    "text": "Line 2 in commercial production",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "onesource-specialty-cartridge-lines"
+   "status": "met",
+   "project": "onesource-specialty-cartridge-lines",
+   "actual": "Line 2 running commercial batches since September 2026",
+   "resolvedOn": "2026-11-08",
+   "resolvedBy": "review",
+   "outcome": "Project moved to started"
   },
   {
    "id": "onesource-specialty-cartridge-lines-m2",
@@ -31186,7 +31260,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "onesource-specialty-cartridge-lines"
+   "project": "onesource-specialty-cartridge-lines",
+   "revisions": [
+    {
+     "on": "2026-11-08",
+     "text": "Q2 FY27 call (27 Oct 2026): Line 3 passed its factory test in Germany and is at site, ready for qualification"
+    }
+   ]
   },
   {
    "id": "onesource-specialty-injectables-upgrade-m1",
@@ -31356,7 +31436,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "sudeep-pharma-battery"
+   "project": "sudeep-pharma-battery",
+   "revisions": [
+    {
+     "on": "2026-11-08",
+     "text": "Q2 FY27 call (29 Oct 2026): binding offtake update moved to Q4 FY27"
+    }
+   ]
   },
   {
    "id": "sudeep-pharma-battery-m2",
@@ -40428,6 +40514,57 @@
    "createdOn": "2026-11-07",
    "status": "pending",
    "project": "waterways-leisure-tourism-sun"
+  },
+  {
+   "id": "krishna-defence-and-allied-industries-q4fy27-2",
+   "company": "Krishna Defence & Allied Industries",
+   "sector": "Aerospace defence",
+   "text": "Receivables back below ₹50cr by March 2027 (₹89cr at September after late-quarter billing; management says 45–60 day payment)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-08",
+   "status": "pending"
+  },
+  {
+   "id": "borosil-renewables-q3fy27-1",
+   "company": "Borosil Renewables",
+   "sector": "Industrials",
+   "text": "Operating margin back above 31% in Q3 FY27 with the fuel surcharge restored (30.4% in Q2)",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 31,
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-08",
+   "status": "pending"
+  },
+  {
+   "id": "gandhar-oil-refinery-india-q3fy27-1",
+   "company": "Gandhar Oil Refinery (India)",
+   "sector": "Oil",
+   "text": "Q3 FY27 spread falls below ₹20,000 a kL (₹29,128 in Q2; management says it will settle between the old ₹8,000–9,000 and today)",
+   "due": "Q3 FY27",
+   "ifMissed": "The windfall is lasting",
+   "createdOn": "2026-11-08",
+   "status": "pending"
+  },
+  {
+   "id": "onesource-specialty-cartridge-lines-m3",
+   "company": "Onesource Specialty",
+   "sector": "Pharma CDMO",
+   "text": "Line 3 in commercial production by the start of FY28",
+   "due": "Q1 FY28",
+   "project": "onesource-specialty-cartridge-lines",
+   "createdOn": "2026-11-08",
+   "status": "pending"
+  },
+  {
+   "id": "sudeep-pharma-battery-m3",
+   "company": "Sudeep Pharma",
+   "sector": "Pharma Others",
+   "text": "Binding battery offtake contracts announced, as now promised for Q4 FY27",
+   "due": "Q4 FY27",
+   "project": "sudeep-pharma-battery",
+   "createdOn": "2026-11-08",
+   "status": "pending"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04",
+ "updated": "2026-11-08",
  "capacity": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -3438,10 +3438,10 @@
   {
    "company": "Gandhar Oil Refinery (India)",
    "sector": "Oil",
-   "today": "5,97,403 kL a year across three plants (Taloja and Silvassa in India 3,62,109 kL on two shifts; Sharjah the rest); capacity fungible across products",
-   "utilisation": "About 97% company-wide in Q1 FY27 on two shifts; FY26 93% overall and 126% in India using a third shift",
-   "capexStatus": "Plans due within a quarter or two: expansion on 5 acres bought next to Taloja (about ₹100cr talked of) and up to ₹50cr in South Africa; from own cash",
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call and sector note"
+   "today": "8,38,637 kL a year after capitalising past capex: Indian plants (Taloja and Silvassa) 6,02,713 kL on two shifts, up from 3,62,109 kL; Sharjah (Texol) 2,35,924 kL, unchanged; capacity fungible across products",
+   "utilisation": "Indian plants about 82% on two shifts (Q2 FY27, annualised); about 61% company-wide, as the Sharjah plant is held back by the Hormuz closure. Earlier: about 97% company-wide in Q1 FY27 on the old 5,97,403 kL base",
+   "capexStatus": "Taloja expansion plan (5 acres next door, about ₹100cr talked of) still not announced after being promised 'next quarter' on two calls; up to ₹50cr in South Africa; growth capex from own cash",
+   "source": "Q2 FY27 call (28 Oct 2026); Q1 FY27 and Q4 FY26 calls"
   },
   {
    "company": "Chennai Petroleum Corporation",
@@ -3720,10 +3720,10 @@
   {
    "company": "Onesource Specialty",
    "sector": "Pharma CDMO",
-   "today": "Drug-device site with one GLP-1 cartridge line (about 225 sterile days a year); soft-gel capacity of 2.4bn capsules; sterile injectables, biologics and a US FDA-approved penicillin plant",
-   "utilisation": "Cartridge Line 1 and all capacities full; the soft-gel site should fill in 12–15 months and cannot grow further",
-   "capexStatus": "$100m programme, about 80% committed and all borrowed: cartridge Lines 2–4 (Line 2 this quarter), freeze-drying and pre-filled syringes at a sterile site, and a new greenfield soft-gel plant",
-   "source": "Q1 FY27 call (Jul 2026), Q4 FY26 call (May 2026) and sector note"
+   "today": "Drug-device site with two GLP-1 cartridge lines since Line 2 began commercial batches in September 2026 (about 450 sterile days a year, double Line 1's 225); soft-gel capacity of 2.4bn capsules; sterile injectables, biologics and a US FDA-approved penicillin plant",
+   "utilisation": "Cartridge Line 1 full; Line 2 ramping up from September 2026 (management: a 'fairly quick' ramp-up); the soft-gel site should fill in 12–15 months from July 2026 and cannot grow further",
+   "capexStatus": "$100m programme, about 80% committed and all borrowed: Line 2 running; Line 3 at site awaiting qualification (aimed at Q4 FY27, may slip to the start of FY28); Line 4 later; freeze-drying and pre-filled syringes at a sterile site; a new greenfield soft-gel plant",
+   "source": "Q2 FY27 call (27 Oct 2026), Q1 FY27 call (Jul 2026) and sector note"
   },
   {
    "company": "Aarti Pharmalabs",

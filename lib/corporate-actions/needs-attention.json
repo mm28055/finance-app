@@ -4392,7 +4392,8 @@
     "sector": "Oil",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 4 Nov 2026: transcript not yet filed (Screener lists only the presentation); left open for the next run.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-08: Q2 FY27 call read (28 Oct): spread about ₹29,128/kL (still a windfall), PAT ₹186cr, H1 volume only +1% (Sharjah hit), group now net cash; capacity restated to 8.39 lakh kL (India 82% used); Taloja plan missing a third time. Two checkpoints and the Taloja milestone missed; Q3 spread checkpoint added; capacity, project and picture redrawn. Stays wait."
   },
   {
     "company": "20 Microns",
@@ -4461,7 +4462,8 @@
     "sector": "Realty",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-08: Q2 FY27 call read (29 Oct): pre-sales ₹151cr (H1 ₹306cr) as launches slipped; ₹1,000cr FY27 guide kept, two launches due in Q3 and Thane in Q4; four redevelopments (~₹5,000cr GDV) added; Q2 margin 24%. No checkpoint due yet. Stays wait."
   },
   {
     "company": "Brigade Enterprises",
@@ -4476,7 +4478,8 @@
     "sector": "Consumer Durables",
     "subject": "Checkpoint missed: bajaj-electricals-q2fy27-1",
     "why": "Revenue growth reaching 8% in Q2 FY27 — actual 1.4% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-03"
+    "addedOn": "2026-11-03",
+    "handled": "2026-11-08: Q2 FY27 revenue +1.4% against the 8% checkpoint (missed), 6% margin; outcome written, dated sentence added. Stays pass. (Its Q2 call has no transcript yet; that entry stays open.)"
   },
   {
     "company": "Aeroflex Industries",
@@ -4623,21 +4626,24 @@
     "sector": "Pharma CDMO",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-08: Q2 FY27 call read (27 Oct): revenue ₹516cr (+37%) at 32%; Line 2 commercial since September (checkpoint and milestone met; project now started); Line 3 at site, may slip to start of FY28 (revisions and a new milestone); H1 operating cash −₹19cr (missed); FY28 $400m target kept. Capacity and picture redrawn. Stays wait."
   },
   {
     "company": "Krishna Defence & Allied Industries",
     "sector": "Aerospace defence",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 6 Nov 2026: the transcript is filed only on NSE, which this session cannot reach; left open for the next run.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-08: Q2 FY27 call read (30 Oct): revenue +56% to ₹75cr at a record 27% margin, but the order book is ₹109cr and H1 grew 15% against the 30% guide (kept); receivables jumped to ₹89cr. Inventory checkpoint missed; receivables checkpoint added. Stays own (the ₹150cr-by-December test still stands)."
   },
   {
     "company": "Sudeep Pharma",
     "sector": "Pharma Others",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-08: Q2 FY27 call read (29 Oct): record revenue ₹197cr (+21%) at 37.2%; H1 operating cash ₹43.5cr (47% of profit) but working capital 214 days (checkpoint partly met); binding battery update moved to Q4 (revisions and a new milestone; picture redrawn); battery plant still April 2027. Stays wait (price Stretched)."
   },
   {
     "company": "Steamhouse India",
@@ -4673,7 +4679,8 @@
     "sector": "Auto Related",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-08: Q2 FY27 call read (30 Oct): sales +57% at a 20% margin, H1 +47%; >30% growth now expected for FY27 and FY28; H1 operating cash ~₹20cr (about half of operating profit). No further promoter selling (met); no railway brake order (missed). Stays wait (price Full)."
   },
   {
     "company": "Shadowfax Tech.",
@@ -4696,7 +4703,8 @@
     "sector": "Hardware",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-08: Q2 FY27 call read (29 Oct): standalone revenue +31% (H1 +16%, checkpoint met), group margin back to 20%, subsidiary losses down to ~₹5cr a quarter (Italy checkpoint partly met); Assam plant still suspended. Stays wait (price Stretched)."
   },
   {
     "company": "Yasho Industries",
@@ -4861,7 +4869,8 @@
     "sector": "Pharma Others",
     "subject": "Checkpoint met: zota-health-care-q2fy27-1",
     "why": "Positive operating profit in Q2, as promised — actual ₹3cr (met). View changes for the better (with pay tied to profit) Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-04"
+    "addedOn": "2026-11-04",
+    "handled": "2026-11-08: Q2 FY27 operating profit ₹3cr (met) on revenue +55%, but still a ₹27cr pre-tax loss and governance unchanged; outcome written, dated sentence added. Stays pass. (Its Q2 call has no transcript yet; that entry stays open.)"
   },
   {
     "company": "Jagsonpal Pharma",
@@ -5120,7 +5129,8 @@
     "sector": "Aerospace defence",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-06"
+    "addedOn": "2026-11-06",
+    "handled": "2026-11-08: Q2 FY27 call read (28 Oct): aerospace +72% at a 21% margin, Bengaluru aerospace capacity raised to ₹700–750cr, mid-20s growth committed, Gudipalli still December 2027; warrant money unspent. Two checkpoints settled (one met, one missed). Stays follow (Stretched)."
   },
   {
     "company": "Aarti Pharmalabs",
@@ -5134,6 +5144,7 @@
     "sector": "Industrials",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-06"
+    "addedOn": "2026-11-06",
+    "handled": "2026-11-08: Q2 FY27 call read (30 Oct): revenue ₹396cr and margin 30.4% (furnace repairs, fuel surcharge trimmed then restored in October); duties intact (checkpoint met); new furnaces still end-March 2027; older furnaces' 75-day rebuilds in H1 FY28. Margin checkpoint added. Stays follow."
   }
 ]
