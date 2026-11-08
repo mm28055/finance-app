@@ -725,3 +725,50 @@ Where it mattered, the reviews add what the points missed, mostly profit flatter
 - **Euro Pratik:** card corrected — the Fabwood deal was put on hold on 26 Oct; it is buying 51% of Drashti Surfaces instead.
 - **HEG Graphite (HEG Limited):** still not listed on 7 Nov; left open.
 - **Calls changed:** none.
+
+## 8 November 2026 (Sunday)
+
+**Checks:** the notes check lists the same 30 problems as before this run, all "company in the sector with no verdict" (newly listed companies still waiting for sections, plus Horizon Industrial Parks and Monolithisch India). They were on master already, so they did not block the push. The typecheck is clean and no capacity picture is out of date or in error. The two old `weekly-review` branches (30 Sep, 18 Oct) showed as unmerged only because this copy was shallow; with the full history fetched, both are part of master, so nothing needed rescuing. The work went to master in four pushes.
+
+**Follow-ups handled: 40. Still open: 42.** Of those, about twenty are project follow-ups from 1–6 November filings (now a Needs-a-session item), fifteen are results calls whose transcripts are still not out (ICICI Bank, CIE Automotive, Ador Welding, Sobha, Kirloskar Pneumatic, Kirloskar Brothers, Cyient, Steel Strips Wheels, Symphony, Kanpur Plastipack, Manaksia, Manba Finance, Shakti Pumps, Bajaj Electricals, Zota), and six are "Waiting" entries (including HEG's electrode listing). I checked each: no UPI merchant-fee notice (Pine Labs said on its call the timing is "in NPCI's court"), no final NPPA trade-margin rule (Beta Drugs) or official cancer-drug price order (HCG), no official ethanol tender terms (TruAlt), no closing of Ganesh Benzoplast's sale, and HEG's electrode company is still not trading.
+
+**Calls changed:** none. Fourteen companies had drifted into the "fits" price band; I kept every call and said why in each note:
+- **MTAR (follow):** Q2 revenue nearly tripled at a 24% margin, but the price only just fits (about 36% needed against my 35%) with Bloom about three-quarters of revenue; too thin a margin of safety for own.
+- **Tenneco Clean Air (follow):** fits at the edge, but its margin fell another two points in Q2 and the parent sold 15% in September.
+- **RateGain (follow):** Q2 revenue +153% with the acquisition and $46m of the loan prepaid; organic growth after the FIFA boost is still to be shown.
+- **Indigo Paints (follow):** the price is back at Full after a weak Q2 (margin 9%, profit −48%).
+- **Wait, still waiting on their own conditions:** KRN (operating cash), Latent View (call not read), JNK (Q2 +3% against a 20–25% guide), 3B Blackbio (Coris still losing), Alembic (India not yet recovering; Q2 profit +81% is mostly US exclusivity), GNG (September-half cash flow), Netweb (stock days, order book), Nocil (margin back to 8%).
+- **Pass:** Sterlite fits only because trailing profit holds a one-off ₹161cr tariff refund; PSP is back at Full with a 6% margin.
+
+**New results calls (transcripts read):**
+- **Krishna Defence** (stays own). Q2 revenue +56% at a record 27% margin, but the order book is only ₹109cr and H1 grew 15% against the 30% guide, which management kept. Receivables jumped to ₹89cr. Inventory checkpoint missed; a receivables checkpoint added. The test of the book above ₹150cr by December still stands.
+- **Raymond** (stays follow). Aerospace +72% at 21%; Bengaluru can now reach ₹700–750cr of aerospace revenue before Gudipalli (December 2027); growth commitment "mid-20s". Warrant money still unspent (missed).
+- **Borosil Renewables** (stays follow). Revenue ₹396cr and margin 30.4%, both a little under guidance (furnace repairs, fuel surcharge trimmed and restored in October). Duties intact (met). Older furnaces need 75-day rebuilds in H1 FY28.
+- **Gandhar** (stays wait). The windfall lasted: spread about ₹29,128 a kL, profit ₹186cr, but H1 volume only +1% (Sharjah hit). Capacity restated to 8.39 lakh kL (India 82% used); the Taloja plan missed a third call. Capacity, project and picture redrawn.
+- **Arkade** (stays wait). Launches slipped, H1 pre-sales ₹306cr against the ₹1,000cr guide it kept; four redevelopments (~₹5,000cr of sale value) signed.
+- **Onesource** (stays wait). Revenue +37% at 32%; Line 2 commercial since September (met; project started); Line 3 may slip to the start of FY28; H1 operating cash −₹19cr (missed). Picture redrawn.
+- **Sudeep Pharma** (stays wait). Record ₹197cr at 37.2%; H1 cash ₹43.5cr, 47% of profit, but working capital still 214 days (partly met). The binding battery-contract update moved to Q4. Picture redrawn.
+- **Menon Bearings** (stays wait). Sales +57% at 20%; more than 30% growth now expected for FY27 and FY28; no further promoter selling (met); still no railway brake order (missed).
+- **Control Print** (stays wait). Standalone revenue +31% (met) and subsidiary losses down to about ₹5cr a quarter (partly met).
+- **Pine Labs** (stays wait). Revenue +24%, adjusted EBITDA +27%; H1 adjusted margin about 18% against the 21% the CEO still expects.
+- **Aarti Pharmalabs** (stays wait). Revenue +46%; contract revenue nearly doubled to about ₹79cr; but H1 cash ₹30cr and borrowings up to about ₹836cr (missed).
+- **Pass and avoid names:** Paramount (Narmadapuram loan not yet tied up, missed), Refex (wind margin guide cut to 2.5–3% net), RIR (loan still unsanctioned, missed; Halol ₹34cr, met), PG Electroplast (inventory up again, missed), Kalpataru (prices up 3–5%, met; pre-sales flat), Steamhouse (profit a tonne down to about ₹818), Monolithisch (targets kept). Bajaj Electricals' growth checkpoint (1.4%) and Zota's first positive operating quarter were weighed; both stay pass.
+
+**Other follow-ups:** Patil Automation's 6-point promoter drop is dilution from a ₹96cr preferential issue to outside investors, not a sale (card corrected). Five project entries (Atlanta, Shyam Metalics, Jain Resource, Amanta, Venus) had already been brought up to date by the 7 Nov session.
+
+**Filings pass, 6–7 November** (notes corrected):
+- Cohance: the Telangana pollution board shut its Suryapet site after a worker died (watch item added).
+- V2 Retail: the promoter group sold 4.4% in a block deal at about ₹160, cutting it to 36.0%.
+- Jindal Drilling: ONGC re-hired Discovery-I for three years at about $54,600 a day (₹569cr), above the $47,800 of its last award.
+- Birlasoft: Madhavan Hariharan, the CK Birla Group's CFO, becomes CEO and MD on 8 December, replacing Angan Guha.
+- HEG: its anode subsidiary was approved for a ₹609.5cr ECMS incentive for the Dewas plant.
+- Antony Waste: a ₹20cr charge for the Pune plant made Q2 a small loss; power output now expected by December.
+- Arvind SmartSpaces: FY27 bookings guidance raised to ₹2,600–2,700cr after record Q2 bookings of ₹906cr.
+- Management records updated: Birlasoft (new CEO), Zaggle (new CFO), Voltas (chairman and MD succession), CMR Green (CFO) and Anup Engineering (CFO).
+- **Logged only:** Remsons' ₹300cr seven-year Stellantis order, Kiri's ₹289cr promoter warrants, Manba's ₹90cr share-and-warrant issue, Max Estates' ₹272cr Noida land, Medplus' ₹130cr buyback, rating upgrades at Cemindia (CARE AA) and Manorama (IND A+), and small promoter buys at Ramkrishna Forgings and Amanta.
+
+**News pass, 6–7 November:** 24 entries had a clear reason; none was very important. The ones that might look it: DGTR recommended two-year import curbs on soda ash (a recommendation, not a final rule; it would help GHCL, Tata Chemicals and DCW and cost Borosil and AGI Greenpac), Brent back above $99, and holder sales at Alivus (Nirma, ₹390cr) and CarTrade (MacRitchie, 3.74%). Nothing in the notes changed.
+
+**Results pass:** 83 of 90 reviewed, and every figure checked matches Screener (revenue, operating profit and net profit), so no figure, verdict or point was corrected. Where it matters, the reviews add what the points miss: other income was larger than the whole pre-tax profit at Vikran Engineering, and most of it at Saatvik Green (82%), Thomas Cook (69%), Virtuoso (58%), JNK (53%) and Voltas (48%); negative other income hid a better operating result at Sudarshan, HCG and Basilic Fly; tax rates distorted profit at AvenuesAI, Clean Max, SH Kelkar, Molbio and Voltas. Seven are left for the next run because the Screener lookup could not find them (Enviro Infra, Schneider Electric Infra, TeamLease, KIMS, Chambal, Datamatics, Punjab Chemicals). Seven entries had an analysed call (CE Info, Ellenbarrie, Clean Max, JG Chemicals, SH Kelkar, Shree Pushkar, Shriram Pistons); none of the call notes settles their Q2 checkpoints (debtor days, an onsite contract, Morbi orders, promoter loans, the legacy margin), so those stay pending until the transcripts are read.
+
+**Top 12:** V2 Retail's promoter block sale (4.4%) is not one of its break triggers (those are a new share sale, negative cash, or weak festive same-store growth), so its numbers are unchanged; I added it to the note's watch items. **M&B Engineering needs a look:** its H1 FY27 operating cash was +₹4.5cr, but only because ₹37.8cr of "other bank balances" was released inside operating cash; without it, about −₹33cr. If that money is IPO deposits, its break trigger is hit. The filing does not say, so I changed nothing and added a Needs-a-session item. Arvind SmartSpaces (reserve) raised its bookings guide, but it sits on the reserve list because of price, so nothing changed. No other Top 12 or reserve name was touched.
