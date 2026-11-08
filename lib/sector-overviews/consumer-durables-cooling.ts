@@ -734,8 +734,8 @@ export const consumerDurablesCooling: SectorOverview = {
         {
             company: 'Bajaj Electricals', rank: 11, stance: 'TURNAROUND', segment: FANS,
             what: "Fans, coolers, mixer-grinders, water heaters and kitchen appliances under Bajaj, Morphy Richards (now owned outright) and Nirlep, plus consumer and professional lighting, switchgear and wires.",
-            view: "**A thin turnaround with hidden leverage.** Consumer products returned to a 3.9% profit and gross margin rose 130 bps, and management now targets 8–10% growth and a 6–7% consumer margin. But Q1 revenue grew 2.3%, profit leaned on ₹26cr of other income, lighting margin fell, fans keep losing share, and ₹1,508cr of factoring and vendor finance sits beside ₹884cr of cash. It lost money over four quarters, so there is no meaningful P/E.",
-            watch: 'Revenue growth reaching 8% in Q2–Q3; trade credits falling; fan share stabilising with new BLDC models.',
+            view: "**A thin turnaround with hidden leverage.** Consumer products returned to a 3.9% profit and gross margin rose 130 bps, and management now targets 8–10% growth and a 6–7% consumer margin. But Q1 revenue grew 2.3%, profit leaned on ₹26cr of other income, lighting margin fell, fans keep losing share, and ₹1,508cr of factoring and vendor finance sits beside ₹884cr of cash. It lost money over four quarters, so there is no meaningful P/E. 8 Nov 2026: Q2 FY27 revenue grew only 1.4% (Screener; ₹1,123cr), short of the 8% I wanted, at a 6% margin; it stays pass.",
+            watch: 'Revenue growth reaching 8% in Q3 after Q2’s 1.4%; trade credits falling; fan share stabilising with new BLDC models.',
         },
         {
             company: 'Epack Durable', rank: 12, stance: 'AVOID', segment: COOL,
