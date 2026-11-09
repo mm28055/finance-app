@@ -635,6 +635,78 @@
      "source": "Q1 FY27 call, Jul 2026"
     },
     {
+     "company": "Black Box",
+     "level": "now",
+     "why": "Builds out hyperscale data centres, mostly in the US; record ~US$950mn backlog including a new US$131mn hyperscaler order, and guides FY27 revenue of ₹7,800–8,000cr against ₹6,322cr.",
+     "source": "Q1 FY27 call, Aug 2026, and call of 29 Sep 2026"
+    },
+    {
+     "company": "Rashi Peripheral",
+     "level": "now",
+     "why": "Delivered and installed a ₹2,000cr, 4,000-GPU AI data centre at Yotta, and is bidding for more; about a quarter of the PCs it sells are AI PCs.",
+     "source": "Q4 FY26 and Q1 FY27 calls, May–Aug 2026"
+    },
+    {
+     "company": "Redington",
+     "level": "now",
+     "why": "Hardware growth is coming from AI GPUs; nearly ₹1,000cr of large data-centre deals in the quarter and a backlog several times the quarter's sales.",
+     "source": "Q1 FY27 call, Jul 2026"
+    },
+    {
+     "company": "Clean Max Env. Energ",
+     "level": "now",
+     "why": "Clean power for data centres, which it calls its 'Data and AI' business: about 35% of hyperscaler power deals signed in India (Meta, Apple, Google, Amazon); the segment grew about 10 times in two years.",
+     "source": "Q1 and Q2 FY27 calls, Aug–Nov 2026"
+    },
+    {
+     "company": "Praj Industries",
+     "level": "now",
+     "why": "Global supply deal to build modular infrastructure for hyperscale data centres, with a minimum of about US$50mn over 2.5 years.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Kirloskar Oil",
+     "level": "now",
+     "why": "Won a large hyperscale data-centre order for its biggest generator sets and is now pitching to other hyperscalers and colocation players.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Powerica",
+     "level": "now",
+     "why": "Data-centre generator orders of ₹900cr (about double a year earlier) across edge, colocation and hyperscaler sites; data centres now over 20% of revenue.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Aurionpro Solutions",
+     "level": "now",
+     "why": "Full-stack data-centre partner to large hyperscale players; data centres are now over 30% of its order book.",
+     "source": "Q1 and Q2 FY27 calls, Jul–Nov 2026"
+    },
+    {
+     "company": "AXISCADES Technologies",
+     "level": "now",
+     "why": "Supplying equipment to 'the world's largest AI and hyperscale technology company' and to a chip-equipment maker, with growth expected quarter on quarter.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Parth Electricals",
+     "level": "now",
+     "why": "Order for the medium-voltage block of Reliance Jio's AI factory (data centre), on a fast-track schedule.",
+     "source": "Q4 FY26 and Q2 FY27 calls, May–Nov 2026"
+    },
+    {
+     "company": "Techno Electric &Eng",
+     "level": "building",
+     "why": "Runs its own data centres and is starting GPU-as-a-service under an anchor customer commitment, at a measured scale.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Ceinsys Tech",
+     "level": "building",
+     "why": "Approved up to ₹25cr for a joint venture with AI Fabric USA to build a sovereign AI cloud (GPU-as-a-service) for Indian government and defence users.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
      "company": "ESDS Software",
      "level": "building",
      "why": "Building a dedicated AI factory (GPU cluster) for Sharon AI under a committed contract; GPUs in final testing, due to go live around November.",
