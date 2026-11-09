@@ -41,13 +41,27 @@ jobs:
       # Runs FIRST: from 3 to 6 Nov 2026 the filings digest took over 3 hours, the job hit its time
       # cap with this step near the end, and about 60 transcripts were never stored. The seven-day
       # window lets a night that is cut short be made up the next night. Never fails the job.
+      # Collecting is its own step: on 7 Nov 2026 it had 109 answers to file (about 2 minutes
+      # each), used the whole hour, and the fetch below never ran, so new transcripts (Capacite
+      # and 36 others) waited. The 7am job collects whatever is left.
+      - name: Collect waiting call analyses
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        timeout-minutes: 45
+        run: npx tsx scripts/collect-call-batches.ts
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+          GOOGLE_AI_KEY: ${{ secrets.GOOGLE_AI_KEY }}
+          GOOGLE_AI_KEYS: ${{ secrets.GOOGLE_AI_KEYS }}
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
       - name: Fetch call transcripts from the exchange
         if: ${{ !cancelled() }}
         continue-on-error: true
         timeout-minutes: 60
-        run: |
-          npx tsx scripts/collect-call-batches.ts
-          npx tsx scripts/sync-exchange-transcripts.ts --batch
+        run: npx tsx scripts/sync-exchange-transcripts.ts --batch
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           DIRECT_URL: ${{ secrets.DIRECT_URL }}
