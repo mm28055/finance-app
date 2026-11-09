@@ -968,7 +968,11 @@ export async function getDashboardData(): Promise<SectorData[]> {
     return sectors.sort((a, b) => a.sector.localeCompare(b.sector));
 }
 
-export async function getTranscriptStats() {
+/** Calls per latest quarter, counting only companies the dashboard lists (hidden ones only while "Show hidden" is on). */
+export async function getTranscriptStats(showHidden = false) {
+    const listed = showHidden
+        ? { isVisible: true }
+        : { isVisible: true, OR: [{ hidden: false }, { inPortfolio: true }] };
     const quarters = await prisma.quarter.findMany({
         // General slots are documents, not quarters — they must not appear as one
         // of the two "latest quarters" in the header stats.
@@ -980,7 +984,7 @@ export async function getTranscriptStats() {
         take: 2,
         include: {
             _count: {
-                select: { transcripts: true }
+                select: { transcripts: { where: { company: listed } } }
             }
         }
     });

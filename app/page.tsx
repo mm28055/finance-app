@@ -15,11 +15,11 @@ export const dynamic = 'force-dynamic';
 export default async function Home() {
   // "Needs a session" is only for Manish: visitors who are not signed in get no list at all.
   const session = await getServerSession(authOptions);
-  const [allSectors, stats, todos, showHidden] = await Promise.all([
+  const showHidden = await showingHidden();
+  const [allSectors, stats, todos] = await Promise.all([
     getDashboardDataLight(),
-    getTranscriptStats(),
-    session ? sessionTodos() : Promise.resolve([]),
-    showingHidden()
+    getTranscriptStats(showHidden),
+    session ? sessionTodos() : Promise.resolve([])
   ]);
   // Hidden companies (lib/hidden) leave the list unless "Show hidden" is on.
   const sectorList = showHidden ? allSectors : allSectors
