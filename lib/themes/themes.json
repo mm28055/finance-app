@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-08",
- "method": "A company is listed under a theme only when its own management said something concrete about it in its last two results calls: revenue, orders in hand, approvals, or capex it has committed. Passing mentions, analysts' questions and 'we are exploring' do not count. 'Orders or revenue now' means it already sells or holds orders; 'Building' means money committed or approvals won, but no meaningful revenue yet. Each line says what the company said and where. Read from the calls on 13–14 October 2026 (medical devices and aerospace on 24 October; aerospace split into Indian defence & space and global on 8 November) and reviewed each results season as new calls come in. A list of who is exposed to the theme, not a recommendation.",
+ "updated": "2026-11-09",
+ "method": "A company is listed under a theme only when its own management said something concrete about it in its last two results calls: revenue, orders in hand, approvals, or capex it has committed. Passing mentions, analysts' questions and 'we are exploring' do not count. 'Orders or revenue now' means it already sells or holds orders; 'Building' means money committed or approvals won, but no meaningful revenue yet. Each line says what the company said and where. Read from the calls on 13–14 October 2026 (medical devices and aerospace on 24 October; aerospace split into Indian defence & space and global on 8 November; AI on 9 November) and reviewed each results season as new calls come in. A list of who is exposed to the theme, not a recommendation.",
  "themes": [
   {
    "key": "defence",
@@ -590,6 +590,67 @@
      "level": "now",
      "why": "₹45cr first-article order for data-centre infrastructure products; building a dedicated facility and sees ₹350–450cr a year from it within 2 years.",
      "source": "Q2 FY27 call, Oct 2026"
+    }
+   ]
+  },
+  {
+   "key": "ai",
+   "label": "AI",
+   "scope": "Companies selling into the AI build-out: GPU cloud and AI servers, fibre for AI data centres, and the power, cooling and piping those data centres need.",
+   "companies": [
+    {
+     "company": "Netweb Technologies",
+     "level": "now",
+     "why": "AI systems were ₹773cr, 58% of Q2 FY27 revenue, more than 11 times a year earlier.",
+     "source": "Q2 FY27 call, Oct 2026"
+    },
+    {
+     "company": "E2E Networks",
+     "level": "now",
+     "why": "Rents out GPU cloud capacity: H1 FY27 revenue up 376% on its new Blackwell GPUs, plus a ~₹1,000cr deal with a sovereign AI company running to June 2029.",
+     "source": "Q2 FY27 call, Oct 2026"
+    },
+    {
+     "company": "Sterlite Technologies",
+     "level": "now",
+     "why": "Optical fibre and connectivity for AI data centres: a new 5-year deal worth up to $1.2bn with a global hyperscaler, on top of last quarter's $1.11bn award from another.",
+     "source": "Q2 FY27 call, Oct 2026"
+    },
+    {
+     "company": "HFCL",
+     "level": "now",
+     "why": "Already delivering fibre and data-centre interconnect on a $1.1bn hyperscaler order, with more hyperscaler orders in its ₹18,500cr fibre and interconnect order book.",
+     "source": "Q2 FY27 call, Oct 2026"
+    },
+    {
+     "company": "TD Power Systems",
+     "level": "now",
+     "why": "Generators going to data centres; management names AI data centres first among the drivers of its order growth.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Aeroflex Industries",
+     "level": "now",
+     "why": "Hoses and liquid-cooling skid assemblies for data centres; skids are its fastest-growing line, tied to the AI build-out.",
+     "source": "Q1 FY27 call, Jul 2026"
+    },
+    {
+     "company": "ESDS Software",
+     "level": "building",
+     "why": "Building a dedicated AI factory (GPU cluster) for Sharon AI under a committed contract; GPUs in final testing, due to go live around November.",
+     "source": "Q2 FY27 call, Nov 2026"
+    },
+    {
+     "company": "Standard Glass",
+     "level": "building",
+     "why": "Buying up to 51% of GScale Energy, which builds power and cooling systems for AI data centres; expects about ₹250cr from it this year.",
+     "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "DEE Development",
+     "level": "building",
+     "why": "One very small first order for data-centre piping so far; data centres are one of its three new targets.",
+     "source": "Q1 FY27 call, Aug 2026, and call of 28 Sep 2026"
     }
    ]
   },
