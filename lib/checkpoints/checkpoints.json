@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -811,7 +811,10 @@
    "target": 7,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "3.0%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "gsfc-q2fy27-3",
@@ -995,7 +998,10 @@
    "due": "Q2 FY27",
    "ifMissed": "Stays wait for growth to return",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "10.0%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "dhanuka-agritech-q2fy27-2",
@@ -1230,7 +1236,10 @@
    "ifMet": "Buy (with Q3 moving back towards 18%)",
    "ifMissed": "Below 13% means the recovery is slower than guided; stay follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "12.6%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "studds-accessories-q4fy27-1",
@@ -2052,7 +2061,10 @@
    "ifMet": "Add (a quarter of mid-teens growth)",
    "ifMissed": "Stay follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "43.5%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "rolex-rings-q4fy27-1",
@@ -3728,7 +3740,10 @@
    "target": 10,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "10.5%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "jg-chemicals-q2fy27-2",
@@ -3878,7 +3893,10 @@
    "target": 22,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "18.2%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "epigral-q4fy27-1",
@@ -4313,7 +4331,10 @@
    "target": 100,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "₹92cr",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "clean-science-q2fy27-2",
@@ -4709,7 +4730,10 @@
    "target": 32,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "34.2%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "navin-fluorine-intl-q2fy27-2",
@@ -5068,7 +5092,10 @@
    "due": "Q2 FY27",
    "ifMissed": "Stay wait",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "12.4%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "sh-kelkar-and-co-q3fy27-1",
@@ -5186,7 +5213,10 @@
    "target": 9,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "7.9%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "oriental-aromatics-q2fy27-2",
@@ -5587,7 +5617,10 @@
    "target": 9,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "11.4%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "updater-services-q3fy27-1",
@@ -6943,7 +6976,10 @@
    "target": 30000,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "₹21,296cr",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "ircon-intl-q2fy27-2",
@@ -7385,7 +7421,10 @@
    "target": 9.5,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "9.1%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "v-guard-industri-q3fy27-1",
@@ -7561,7 +7600,10 @@
    "target": 13,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "11.7%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "eveready-industries-india-q2fy27-3",
@@ -7941,7 +7983,10 @@
    "target": 17,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "18.6%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "borosil-q3fy27-1",
@@ -8005,7 +8050,10 @@
    "target": 22,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "27.6%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "mayur-uniquoters-q2fy27-2",
@@ -8299,7 +8347,10 @@
    "target": 11,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "7.9%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "sheela-foam-q3fy27-1",
@@ -8368,7 +8419,10 @@
    "target": 19,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "15.1%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "indigo-paints-q3fy27-1",
@@ -8874,7 +8928,10 @@
    "target": 12,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "6.7%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "greenpanel-inds-q2fy27-3",
@@ -9897,7 +9954,10 @@
    "target": 10.5,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "9.7%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "syrma-sgs-tech-q2fy27-2",
@@ -11525,7 +11585,10 @@
    "due": "Q2 FY27",
    "ifMissed": "Stays pass",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "₹116cr",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "synergy-green-q2fy27-2",
@@ -11538,7 +11601,10 @@
    "due": "Q2 FY27",
    "ifMissed": "Stays pass",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "9.8%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "synergy-green-q4fy27-1",
@@ -12219,7 +12285,10 @@
    "target": 40,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "44.3%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "vijaya-diagnostic-centre-q2fy27-2",
@@ -13598,7 +13667,10 @@
    "target": 40,
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "86.0%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "shree-refrigrations-h1fy27-2",
@@ -13610,7 +13682,10 @@
    "target": 20,
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "14.0%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "shree-refrigrations-h2fy27-1",
@@ -14188,7 +14263,10 @@
    "target": 400,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "₹397cr",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "borosil-renewables-q2fy27-2",
@@ -14200,7 +14278,10 @@
    "target": 30,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "26.4%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "borosil-renewables-q4fy27-1",
@@ -14643,7 +14724,10 @@
    "target": 14,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "13.8%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "shyam-metalics-q2fy27-2",
@@ -15585,7 +15669,10 @@
    "target": 12,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "11.6%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "gulf-oil-lubricant-q2fy27-2",
@@ -16392,7 +16479,10 @@
    "target": 14,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "13.7%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "iol-chem-and-pharma-q4fy27-2",
@@ -16814,7 +16904,10 @@
    "target": 25,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "21.8%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "neuland-laboratories-q2fy27-2",
@@ -16857,7 +16950,10 @@
    "due": "Q2 FY27",
    "ifMissed": "View changes for the worse (a second broken promise)",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "₹594cr",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "anthem-biosciences-q3fy27-1",
@@ -17356,7 +17452,10 @@
    "target": 29,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "33.5%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "advanced-enzyme-q2fy27-2",
@@ -17598,7 +17697,10 @@
    "target": 175,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "₹130cr",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "marksans-pharma-q2fy27-1",
@@ -17667,7 +17769,10 @@
    "target": 24,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "23.9%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "zydus-lifesciences-q2fy27-2",
@@ -17840,7 +17945,10 @@
    "target": 23,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "23.1%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "ipca-laboratories-q2fy27-2",
@@ -18604,7 +18712,10 @@
    "target": 11,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "12.2%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "prince-pipes-q3fy27-1",
@@ -20064,7 +20175,10 @@
    "target": 10,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "11.2%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "aditya-birla-lifesty-q3fy27-1",
@@ -21524,7 +21638,10 @@
    "target": 19,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "17.1%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "unicomm-esolutions-q3fy27-1",
@@ -21655,7 +21772,10 @@
    "target": 15,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "7.0%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "nucleus-software-q2fy27-3",
@@ -21787,7 +21907,10 @@
    "target": 35,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "32.6%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "network-people-services-q2fy27-1",
@@ -34958,7 +35081,10 @@
    "ifMet": "The richer mix of contract manufacturing and DaaS fees is holding",
    "ifMissed": "Q1's margin was a one-off; the business is still mostly thin-margin trading",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "11.7%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "aris-q4fy27-1",
@@ -35668,7 +35794,10 @@
    "ifMet": "Pricing power is real despite costlier milk",
    "ifMissed": "Milk inflation is outrunning price increases; the margin story is weaker than claimed",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "partly",
+   "actual": "14.4%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "milkymist-q4fy27-1",
@@ -35816,7 +35945,10 @@
    "ifMet": "The four large stores opened in FY26 are starting to carry their costs",
    "ifMissed": "Even the busier festive quarter does not cover the cost base; losses continue",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹0cr",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "perniaspop-q4fy27-1",
@@ -36492,7 +36624,10 @@
    "ifMet": "Price rises and mix are covering the rupee and freight hit",
    "ifMissed": "Input costs are squeezing margins more than management signalled",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "24.9%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "styl-q3fy27-1",
@@ -37070,7 +37205,10 @@
    "ifMet": "Price rises are sticking with its 10–15 big customers",
    "ifMissed": "It cannot pass on solvent costs; the 25% promise is in doubt",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "23.6%",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "ahcl-q3fy27-1",
@@ -37790,7 +37928,10 @@
    "ifMet": "Revenue is less bunched into March than last year, as promised",
    "ifMissed": "The year again depends on a giant fourth quarter, which last year came with ballooning receivables",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹808cr",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "pacedigitk-q3fy27-1",
@@ -37841,7 +37982,10 @@
    "ifMet": "The two years of visibility management aims for is being kept up",
    "ifMissed": "Order wins are lagging execution, which would threaten 25% growth in FY28",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹957cr",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "glasswall-q4fy27-1",
@@ -37946,7 +38090,10 @@
    "ifMet": "The year is on course for the guided growth",
    "ifMissed": "Execution is slowing as the order book runs down",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹128cr",
+   "resolvedOn": "2026-11-09",
+   "resolvedBy": "auto"
   },
   {
    "id": "ompower-q2fy27-2",
