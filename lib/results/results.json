@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T09:33:48.495Z",
+ "updated": "2026-11-10T21:43:48.604Z",
  "results": [
   {
    "company": "Olectra Greentech",
@@ -2046,6 +2046,79 @@
    "reviewed": {
     "on": "2026-11-08",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   }
+  },
+  {
+   "company": "Precision Camshafts",
+   "sector": "Auto Related",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-06",
+   "readOn": "2026-11-11",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 190,
+     "yearAgo": 140,
+     "prev": 160,
+     "yoy": 35.7,
+     "qoq": 18.8
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 21,
+     "yearAgo": 13,
+     "prev": 11,
+     "yoy": 61.5,
+     "qoq": 90.9
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 11,
+     "yearAgo": 9,
+     "prev": 7,
+     "yoy": 2,
+     "qoq": 4
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": -64,
+     "yearAgo": -43,
+     "prev": 15,
+     "yoy": null,
+     "qoq": -526.7
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue rose 36% to ₹190cr, with operating profit up 62% to ₹21cr.",
+     "Operating margin improved to 11%, but remains below the mid-teens target.",
+     "Net loss widened to ₹64cr from ₹43cr a year ago."
+    ],
+    "text": "Revenue rose 36% to ₹190cr, with operating profit up 62% to ₹21cr. Operating margin improved to 11%, but remains below the mid-teens target. Net loss widened to ₹64cr from ₹43cr a year ago.",
+    "checks": [
+     {
+      "text": "A clean exit from EMOSS",
+      "status": "unclear",
+      "why": "Standalone numbers provide no details"
+     },
+     {
+      "text": "Standalone margin back in mid-teens",
+      "status": "missed",
+      "why": "Operating margin reached 11%"
+     }
+    ],
+    "on": "2026-11-11"
    }
   },
   {
