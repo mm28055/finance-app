@@ -1,6 +1,163 @@
 {
- "updated": "2026-11-09T10:07:41.163Z",
+ "updated": "2026-11-10T00:20:02.530Z",
  "results": [
+  {
+   "company": "Olectra Greentech",
+   "sector": "Vehicles",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-09",
+   "readOn": "2026-11-10",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 687,
+     "yearAgo": 657,
+     "prev": 576,
+     "yoy": 4.6,
+     "qoq": 19.3
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 92,
+     "yearAgo": 89,
+     "prev": 68,
+     "yoy": 3.4,
+     "qoq": 35.3
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 13,
+     "yearAgo": 14,
+     "prev": 12,
+     "yoy": -1,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 52,
+     "yearAgo": 49,
+     "prev": 27,
+     "yoy": 6.1,
+     "qoq": 92.6
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue rose 5% to ₹687cr, while operating profit grew 3% to ₹92cr.",
+     "Operating margin held at 13%, above the ~12% expected.",
+     "Net profit rose 6% to ₹52cr, well below the 20% base-case target."
+    ],
+    "text": "Revenue rose 5% to ₹687cr, while operating profit grew 3% to ₹92cr. Operating margin held at 13%, above the ~12% expected. Net profit rose 6% to ₹52cr, well below the 20% base-case target.",
+    "checks": [
+     {
+      "text": "Q2 bus deliveries of about 500",
+      "status": "unclear",
+      "why": "Delivery volumes not disclosed in financial release"
+     },
+     {
+      "text": "BEST dispute resolved and AGM approvals passed",
+      "status": "unclear",
+      "why": "Awaiting AGM and operational updates"
+     },
+     {
+      "text": "Operating margin holding near 12% and receivables falling",
+      "status": "unclear",
+      "why": "Margin held at 13%, but receivables data not reported"
+     },
+     {
+      "text": "About 500 buses delivered in the quarter",
+      "status": "unclear",
+      "why": "Delivery count awaits the earnings call"
+     }
+    ],
+    "on": "2026-11-10"
+   }
+  },
+  {
+   "company": "Whirlpool India",
+   "sector": "Consumer Durables",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-09",
+   "readOn": "2026-11-10",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1873,
+     "yearAgo": 1647,
+     "prev": 2727,
+     "yoy": 13.7,
+     "qoq": -31.3
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 40,
+     "yearAgo": 58,
+     "prev": 139,
+     "yoy": -31,
+     "qoq": -71.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 2.1,
+     "yearAgo": 3.5,
+     "prev": 5,
+     "yoy": -1.4,
+     "qoq": -2.9
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 25,
+     "yearAgo": 42,
+     "prev": 103,
+     "yoy": null,
+     "qoq": -75.7
+    }
+   ],
+   "oneOff": "Other income of ₹58cr is 171% of profit before tax this quarter, so profit may not reflect the business. The year-ago quarter's profit included other income of ₹60cr (103% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue rose 14% to ₹1,873cr, but operating profit fell 31% to ₹40cr.",
+     "Operating margin slumped to 2.1%, well below the 6% target.",
+     "Other income of ₹58cr exceeded profit before tax, masking operating weakness."
+    ],
+    "text": "Revenue rose 14% to ₹1,873cr, but operating profit fell 31% to ₹40cr. Operating margin slumped to 2.1%, well below the 6% target. Other income of ₹58cr exceeded profit before tax, masking operating weakness.",
+    "checks": [
+     {
+      "text": "Operating margin back above 6%",
+      "status": "missed",
+      "why": "Fell to 2.1%"
+     },
+     {
+      "text": "Buyer for controlling stake named, with open-offer price",
+      "status": "unclear",
+      "why": "Awaiting management update or call"
+     }
+    ],
+    "on": "2026-11-10"
+   }
+  },
   {
    "company": "Apsis Aerocom",
    "sector": "Aerospace defence",
@@ -9377,6 +9534,84 @@
    "reviewed": {
     "on": "2026-11-06",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   }
+  },
+  {
+   "company": "Windlas Biotech",
+   "sector": "Pharma CDMO",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-05",
+   "readOn": "2026-11-10",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 264,
+     "yearAgo": 222,
+     "prev": 248,
+     "yoy": 18.9,
+     "qoq": 6.5
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 29,
+     "yearAgo": 29,
+     "prev": 27,
+     "yoy": 0,
+     "qoq": 7.4
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 11,
+     "yearAgo": 13,
+     "prev": 11,
+     "yoy": -2,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 18,
+     "yearAgo": 18,
+     "prev": 18,
+     "yoy": 0,
+     "qoq": 0
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue grew 19% to ₹264cr, driven by steady contract manufacturing demand.",
+     "Operating profit was flat at ₹29cr with margin dropping 2 points to 11%.",
+     "Net profit remained flat at ₹18cr, lagging the 18% base-case growth target."
+    ],
+    "text": "Revenue grew 19% to ₹264cr, driven by steady contract manufacturing demand. Operating profit was flat at ₹29cr with margin dropping 2 points to 11%. Net profit remained flat at ₹18cr, lagging the 18% base-case growth target.",
+    "checks": [
+     {
+      "text": "Plant 6 opens at end of Q2 and starts filling from Q3",
+      "status": "unclear",
+      "why": "waits for earnings call details"
+     },
+     {
+      "text": "Trade generics returning to growth after codeine ban",
+      "status": "unclear",
+      "why": "segment breakdown not in headline results"
+     },
+     {
+      "text": "Plant 6 commercial",
+      "status": "unclear",
+      "why": "commercialisation update pending on call"
+     }
+    ],
+    "on": "2026-11-10"
    }
   },
   {
