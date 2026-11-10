@@ -298,7 +298,7 @@ async function fetchScreenerHtml(company) {
 
 // A consolidated page whose quarters stopped long ago still shows a P/E on that old profit
 // (Greenpanel stopped filing group accounts after Mar 2024: P/E 12 on FY24 profit, against 260
-// on the standalone page). When its latest quarter is over nine months old, read the standalone
+// on the standalone page; RIR Power stopped after Mar 2026). When its latest quarter is over five months old, read the standalone
 // page instead if that one is more recent.
 const latestQuarterTime = (html) => {
     const t = Date.parse(`1 ${parseQuarterTable(html)?.columns.at(-1) || ''}`);
@@ -307,7 +307,7 @@ const latestQuarterTime = (html) => {
 async function currentAccounts(company, url, html) {
     if (!/\/consolidated\/?$/.test(url)) return html;
     const latest = latestQuarterTime(html);
-    if (latest === null || Date.now() - latest < 270 * 86400000) return html;
+    if (latest === null || Date.now() - latest < 150 * 86400000) return html;
     try {
         const res = await screenerGet(url.replace(/consolidated\/?$/, ''));
         if (!res.ok) return html;

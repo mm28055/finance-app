@@ -37,15 +37,20 @@ export async function screenerPageUrl(companyId: string, view?: ScreenerView): P
     const v = view || defaultView;
     const consolidatedUrl = `${base.replace(/\/?$/, '/')}consolidated/`;
     // A company that only recently began filing group accounts (Bajaj Healthcare) has an empty
-    // consolidated page, and one that stopped (Greenpanel, after Mar 2024) a stale one; unless
-    // consolidated was asked for, show its standalone figures instead.
+    // consolidated page, and one that stopped (Greenpanel, after Mar 2024; RIR Power, after Mar 2026)
+    // a stale one; unless consolidated was asked for, show its standalone figures instead.
     if (!view && v === 'consolidated') {
         const html = await fetchScreenerPage(consolidatedUrl, FILED, key);
         const pl = html ? screenerTable(html, 'profit-loss') : null;
         const filled = pl?.rows.some(r => r.values.filter(x => x !== null).length >= 2);
-        const lastQuarter = Date.parse(`1 ${(html && screenerTable(html, 'quarters')?.columns.at(-1)) || ''}`);
-        const stale = Number.isFinite(lastQuarter) && Date.now() - lastQuarter > 270 * 86400000;
-        if (html && (!filled || stale)) return { url: base, view: 'standalone', key };
+        if (html && !filled) return { url: base, view: 'standalone', key };
+        // Five months past its last quarter, a newer quarter should be out: if the standalone page has one, use it.
+        const lastQuarter = (h: string | null) => Date.parse(`1 ${(h && screenerTable(h, 'quarters')?.columns.at(-1)) || ''}`);
+        const ours = lastQuarter(html);
+        if (html && Number.isFinite(ours) && Date.now() - ours > 150 * 86400000) {
+            const theirs = lastQuarter(await fetchScreenerPage(base, FILED, key));
+            if (Number.isFinite(theirs) && theirs > ours) return { url: base, view: 'standalone', key };
+        }
     }
     return { url: v === 'consolidated' ? consolidatedUrl : base, view: v, key };
 }
