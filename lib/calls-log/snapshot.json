@@ -1,5 +1,5 @@
 {
- "date": "2026-11-08",
+ "date": "2026-11-10",
  "calls": {
   "Anthem Biosciences": {
    "call": "follow",
@@ -2649,6 +2649,10 @@
    "call": "wait",
    "sector": "Industrials"
   },
+  "Innomet Advanced Materials": {
+   "call": "wait",
+   "sector": "Industrials"
+  },
   "Ador Welding": {
    "call": "own",
    "sector": "Industrials"
@@ -2851,6 +2855,10 @@
   },
   "Parth Electricals": {
    "call": "pass",
+   "sector": "Electrical Equipment"
+  },
+  "Vivid Electromech": {
+   "call": "wait",
    "sector": "Electrical Equipment"
   },
   "Anawil Wire": {

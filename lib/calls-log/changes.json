@@ -1,6 +1,24 @@
 {
  "changes": [
   {
+   "date": "2026-11-10",
+   "company": "Innomet Advanced Materials",
+   "sector": "Industrials",
+   "from": null,
+   "to": "wait",
+   "price": 358.1,
+   "why": "I expect earnings per share to grow about 26% a year to FY30, counted from about ₹7.9cr of normal yearly profit (not the ₹4.3cr left after last year's write-backs) and within management's plan of 30–50% sales growth; the price needs about {need:Innomet Advanced Materials|33}% a year, and five years of cash have not matched the profit. I would look again once H2 FY27 turns the stock build into cash."
+  },
+  {
+   "date": "2026-11-10",
+   "company": "Vivid Electromech",
+   "sector": "Electrical Equipment",
+   "from": null,
+   "to": "wait",
+   "price": 1065.8,
+   "why": "I expect about 22% a year of earnings growth, more than the {need:Vivid Electromech|17}% the price needs, but I want to see cash collected before trusting it."
+  },
+  {
    "date": "2026-11-08",
    "company": "KPIT Technologies",
    "sector": "Software",
