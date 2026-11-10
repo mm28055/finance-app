@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -4531,7 +4531,10 @@
    "target": 20,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "21.8%",
+   "resolvedOn": "2026-11-10",
+   "resolvedBy": "auto"
   },
   {
    "id": "balaji-amines-q4fy27-1",
@@ -10362,7 +10365,10 @@
    "target": 9,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "11.2%",
+   "resolvedOn": "2026-11-10",
+   "resolvedBy": "auto"
   },
   {
    "id": "virtuoso-optoelectro-q4fy27-1",
@@ -20895,7 +20901,10 @@
    "target": 8,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "11.6%",
+   "resolvedOn": "2026-11-10",
+   "resolvedBy": "auto"
   },
   {
    "id": "datamatic-global-ser-q4fy27-1",
@@ -21825,7 +21834,10 @@
    "target": 25,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "24.2%",
+   "resolvedOn": "2026-11-10",
+   "resolvedBy": "auto"
   },
   {
    "id": "amagi-media-labs-q2fy27-1",
@@ -34628,7 +34640,10 @@
    "ifMet": "The margin recovery is showing up in the reported numbers, not just the adjusted ones",
    "ifMissed": "The 'adjusted' margin gains are not reaching reported profit; the path to 21–22% looks less likely",
    "createdOn": "2026-10-18",
-   "status": "pending"
+   "status": "partly",
+   "actual": "18.2%",
+   "resolvedOn": "2026-11-10",
+   "resolvedBy": "auto"
   },
   {
    "id": "healthcare-global-hcg-q2fy27-2",
@@ -37489,7 +37504,10 @@
    "ifMet": "Pricing and discount discipline is holding at the top of the cycle",
    "ifMissed": "Steel and parts costs or the domestic mix are eating into margins; FY24's 8% is the reminder of how far they can fall",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "partly",
+   "actual": "19.4%",
+   "resolvedOn": "2026-11-10",
+   "resolvedBy": "auto"
   },
   {
    "id": "lcl-q2fy27-2",
