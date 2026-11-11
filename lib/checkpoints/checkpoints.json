@@ -720,7 +720,11 @@
    "ifMet": "Supports staying own",
    "ifMissed": "Thesis weakens (volume guide already cut to 5–10%)",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Gross margin 35.9% (above 35%), but Europe softened again and group volume fell 5.1%",
+   "outcome": "Stays own; Top 12 trigger hit, owner asked to decide",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "sharda-cropchem-q4fy27-1",
@@ -741,7 +745,13 @@
    "text": "FY27 volume growth within the cut 5–10% guide",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (Nov 2026): H1 volume −3.5%; the volume guide was not repeated, only 10–15% revenue and 18–20% margin"
+    }
+   ]
   },
   {
    "id": "sharda-cropchem-q2fy27-2",
@@ -750,7 +760,11 @@
    "text": "No write-off of registrations as spending rises to ₹480–550cr a year",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "No registration write-off in H1 FY27; registrations up to 3,044",
+   "outcome": "Stays own",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "chambal-fert-and-chem-q3fy27-1",
@@ -3948,7 +3962,11 @@
    "due": "Q2 FY27",
    "ifMissed": "Sell",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "No commitment: land and approvals still pending at the Q2 FY27 call (Nov 2026)",
+   "outcome": "Stays own",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "ghcl-q4fy27-1",
@@ -3957,7 +3975,13 @@
    "text": "Bromine and vacuum-salt unit bringing meaningful revenue from Q4 FY27",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (Nov 2026): vacuum salt commercial in Q2, bromine from 12 Oct; bromine at full use only in FY28"
+    }
+   ]
   },
   {
    "id": "ghcl-q2fy27-2",
@@ -3967,7 +3991,11 @@
    "due": "Q2 FY27",
    "ifMet": "Would improve the view",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Safeguard limits still with DGTR in November 2026; only a minimum import price on float glass",
+   "outcome": "Stays own; the view does not rely on it",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "styrenix-performance-q4fy27-1",
@@ -8077,7 +8105,8 @@
    "status": "met",
    "actual": "27.6%",
    "resolvedOn": "2026-11-09",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays own; part of the jump is a labour-code provision reversed and US warehouse stock sold"
   },
   {
    "id": "mayur-uniquoters-q2fy27-2",
@@ -8087,7 +8116,11 @@
    "due": "Q2 FY27",
    "ifMissed": "View turns worse",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "No write-down in Q2 FY27; PU revenue ₹6.3cr, samples with large shoe makers",
+   "outcome": "Stays own",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "mayur-uniquoters-q4fy27-1",
@@ -8096,7 +8129,13 @@
    "text": "The ~₹50cr Jaipur coating line starting by March 2027",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (Nov 2026): installation from the March quarter; production hoped for in Q1 FY28"
+    }
+   ]
   },
   {
    "id": "mayur-uniquoters-q4fy27-2",
@@ -10585,7 +10624,11 @@
    "due": "Q2 FY27",
    "ifMet": "A small ECL cost would improve my view",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Disclosed on the Q2 call: about ₹19,500cr after tax and existing provisions, to be phased in; no capital issue",
+   "outcome": "Stays own",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "state-bank-of-india-q2fy27-2",
@@ -10594,7 +10637,11 @@
    "text": "Domestic margin at or above 3%, as guided",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Domestic margin 3.11% in Q2 FY27",
+   "outcome": "Stays own",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "state-bank-of-india-q2fy27-3",
@@ -10604,7 +10651,11 @@
    "due": "Q2 FY27",
    "ifMissed": "Would worsen my view",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Early-overdue loans (SMA-1 and SMA-2) rose 15% in Q2, mostly SMA-1; more than half repaid since and only about ₹50cr slipped",
+   "outcome": "Stays own",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "state-bank-of-india-q4fy27-1",
@@ -16387,7 +16438,13 @@
    "due": "Q4 FY27",
    "ifMissed": "Glenmark orders collapsing in H2 would change my view for the worse",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (Nov 2026): Glenmark sales +1% in Q2; FY27 Glenmark revenue guided at ₹700–750cr (₹742cr in FY26)"
+    }
+   ]
   },
   {
    "id": "acutaas-chemicals-q4fy27-1",
@@ -23108,7 +23165,13 @@
    "text": "Europe margin heading to the guided 'high teens' once Dutch output has moved to Hungary and India",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (Nov 2026): Europe margin 10.3% on sales −12%; recovery 'has taken longer than initially anticipated'; high teens now a medium-term aim"
+    }
+   ]
   },
   {
    "id": "apollo-tyres-q4fy27-3",
@@ -23117,7 +23180,13 @@
    "text": "FY27 capex runs at the ₹3,500cr plan (Q1 only ₹650cr; pace to rise in Q2–Q3) and Andhra Pradesh stays on its ₹5,810cr budget",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (Nov 2026): H1 capex about ₹1,500cr, 'broadly in line' with the full-year plan; ₹1,250cr raised in debentures"
+    }
+   ]
   },
   {
    "id": "ceat-q3fy27-1",
@@ -25860,7 +25929,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "ghcl-bromine-vacsalt"
+   "project": "ghcl-bromine-vacsalt",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (Nov 2026): vacuum salt at intended capacity by end-FY27; bromine only in FY28"
+    }
+   ]
   },
   {
    "id": "styrenix-performance-abs-expansion-m1",
@@ -27527,7 +27602,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "mayur-uniquoters-coating-line"
+   "project": "mayur-uniquoters-coating-line",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (Nov 2026): production now hoped for in Q1 FY28"
+    }
+   ]
   },
   {
    "id": "campus-activewear-pantnagar-m1",
@@ -41284,6 +41365,38 @@
    "text": "Silvassa expansion ready (new date after the Q2 FY27 call)",
    "due": "Q1 FY28",
    "project": "gulf-oil-lubricant-silvassa-chennai",
+   "createdOn": "2026-11-11",
+   "status": "pending"
+  },
+  {
+   "id": "sharda-cropchem-q4fy27-3",
+   "company": "Sharda Cropchem",
+   "sector": "Agrochemical & Fertilizers",
+   "text": "FY27 operating margin within the 18–20% guide (H1 16.1%)",
+   "metric": "fyEbitdaMargin",
+   "op": ">=",
+   "target": 18,
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-11",
+   "status": "pending"
+  },
+  {
+   "id": "ghcl-bromine-vacsalt-m3",
+   "company": "GHCL",
+   "sector": "Chemicals",
+   "text": "Bromine plant at intended capacity (new date after the Q2 FY27 call)",
+   "due": "Q4 FY28",
+   "project": "ghcl-bromine-vacsalt",
+   "createdOn": "2026-11-11",
+   "status": "pending"
+  },
+  {
+   "id": "mayur-uniquoters-coating-line-m2",
+   "company": "Mayur Uniquoters",
+   "sector": "Consumer Durables",
+   "text": "New Jaipur coating line in production (new date after the Q2 FY27 call)",
+   "due": "Q1 FY28",
+   "project": "mayur-uniquoters-coating-line",
    "createdOn": "2026-11-11",
    "status": "pending"
   }
