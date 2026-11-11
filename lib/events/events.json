@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T21:31:19.079Z",
+ "updated": "2026-11-11T22:12:42.292Z",
  "events": [
   {
    "company": "GSFC",
@@ -9686,19 +9686,19 @@
   {
    "company": "Caliber Mining & Log",
    "sector": "Mining & Metals Recycle",
-   "kind": "results",
-   "date": "2026-11-13",
-   "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_25172_WebXMLFile_20261105_190214151.xml"
-  },
-  {
-   "company": "Caliber Mining & Log",
-   "sector": "Mining & Metals Recycle",
    "kind": "call",
    "date": "2026-11-13",
    "time": "5:00 pm",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/CMLL_10112026173950_Intimation_to_investor_call.pdf"
+  },
+  {
+   "company": "Caliber Mining & Log",
+   "sector": "Mining & Metals Recycle",
+   "kind": "results",
+   "date": "2026-11-13",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_25172_WebXMLFile_20261105_190214151.xml"
   },
   {
    "company": "CMS Info Systems",
@@ -10433,6 +10433,14 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_25013_WebXMLFile_20261103_132132674.xml"
   },
   {
+   "company": "Apsis Aerocom",
+   "sector": "Aerospace defence",
+   "kind": "call",
+   "date": "2026-11-14",
+   "time": "12:00 pm",
+   "url": "https://nsearchives.nseindia.com/corporate/APSIS2025_11112026213956_NSEintimation_Earningscall_30092026.pdf"
+  },
+  {
    "company": "Behari Lal Engineering",
    "sector": "Forging",
    "kind": "results",
@@ -10467,12 +10475,28 @@
    "url": "https://nsearchives.nseindia.com/corporate/CMSINFO_10112026182826_InvestorCallQ22027.pdf"
   },
   {
+   "company": "DEE Development",
+   "sector": "Industrials",
+   "kind": "results",
+   "date": "2026-11-14",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_22583_WebXMLFile_20261111_111837908.xml"
+  },
+  {
    "company": "Expleo Solutions",
    "sector": "Software",
    "kind": "results",
    "date": "2026-11-14",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2923_WebXMLFile_20261105_111012768.xml"
+  },
+  {
+   "company": "Freshara Agro",
+   "sector": "Food Products",
+   "kind": "results",
+   "date": "2026-11-14",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_24152_WebXMLFile_20261111_180243534.xml"
   },
   {
    "company": "Genus Power",
@@ -10546,6 +10570,14 @@
    "date": "2026-11-14",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_24842_WebXMLFile_20261111_004650830.xml"
+  },
+  {
+   "company": "Orchid Pharma",
+   "sector": "Pharma",
+   "kind": "results",
+   "date": "2026-11-14",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_18871_WebXMLFile_20261111_173522890.xml"
   },
   {
    "company": "Park Medi World",
@@ -10639,6 +10671,23 @@
    "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_2163_WebXMLFile_20261027_152045899.xml"
   },
   {
+   "company": "Vikram Solar",
+   "sector": "Solar PV Cells EPC",
+   "kind": "results",
+   "date": "2026-11-14",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_20603_WebXMLFile_20261111_180420716.xml"
+  },
+  {
+   "company": "Ahluwalia Contr.",
+   "sector": "Construction",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "4:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/532811_11112026160432_CONCALL_30092026.pdf"
+  },
+  {
    "company": "Alicon Castalloy",
    "sector": "Auto Related",
    "kind": "call",
@@ -10646,6 +10695,32 @@
    "time": "11:30 am",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/ALICON_07112026141232_Letter_to_SEs_for_concall_invite_Alicon.pdf"
+  },
+  {
+   "company": "Anondita Medicare",
+   "sector": "Health Products",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "4:30 pm",
+   "url": "https://nsearchives.nseindia.com/corporate/ANONDITA_11112026202150_Intimation_of_Schedule_of_Meet_Earning_Call.pdf"
+  },
+  {
+   "company": "Apex Frozen Foods",
+   "sector": "Food Products",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "11:30 am",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/APEX_11112026132242_concallq2.pdf"
+  },
+  {
+   "company": "AXISCADES Technologies",
+   "sector": "Aerospace defence",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "4:30 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/AXISCADES_11112026172410_EarningsWebinar111126.pdf"
   },
   {
    "company": "Belrise Industries",
@@ -10682,6 +10757,14 @@
    "url": "https://nsearchives.nseindia.com/corporate/DCAL_04112026193058_IntimationofConferenceCall.pdf"
   },
   {
+   "company": "E to E Transportation",
+   "sector": "Construction",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "12:00 pm",
+   "url": "https://nsearchives.nseindia.com/corporate/ETOETRANS_11112026185153_Earnings_call_intimation-16th_November_2026.pdf"
+  },
+  {
    "company": "EIH",
    "sector": "Hotels and Travels",
    "kind": "call",
@@ -10707,6 +10790,15 @@
    "time": "11:00 am",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/FCL_07112026160031_FCLConcallInviteIntimation16112026.pdf"
+  },
+  {
+   "company": "Gaudium IVF",
+   "sector": "Hospitals",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "1:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/GAUDIUM_11112026181003_Investor_Call_Intimation.pdf"
   },
   {
    "company": "GE Power",
@@ -10752,6 +10844,15 @@
    "url": "https://nsearchives.nseindia.com/corporate/INNOVACAPTAB_05112026183838_Intimation_of_Earnings_Call.pdf"
   },
   {
+   "company": "Insolation Energy",
+   "sector": "Solar PV Cells EPC",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "3:30 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/INA_11112026185258_BSE_NSE_Investor_Meet_11_11_2026_.pdf"
+  },
+  {
    "company": "J Kumar Infra",
    "sector": "Construction",
    "kind": "call",
@@ -10787,12 +10888,47 @@
    "url": "https://nsearchives.nseindia.com/corporate/JUBLPHARMA_02112026182907_Jubilant_Pharmova_Disclosure_30102026_Signed.pdf"
   },
   {
+   "company": "Jupiter Wagons",
+   "sector": "Industrial - Railway",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "4:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/CEBBCO_11112026175253_SEEarning_Call_Intimation_11112026.pdf"
+  },
+  {
+   "company": "Kaynes Technology",
+   "sector": "EMS & Electronics",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "8:30 am",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/KAYNESTECH_11112026181227_EarningsCallQ2.pdf"
+  },
+  {
+   "company": "KNR Constructions",
+   "sector": "Construction",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "11:30 am",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/KNRCON_11112026141046_Concallnov.pdf"
+  },
+  {
    "company": "Maxvolt Energy Indus",
    "sector": "EMS & Electronics",
    "kind": "call",
    "date": "2026-11-16",
    "time": "12:00 pm",
    "url": "https://nsearchives.nseindia.com/corporate/MAXVOLT2019_11112026003531_INTIMATIONCALL.pdf"
+  },
+  {
+   "company": "OSEL Devices",
+   "sector": "Health Products",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "4:00 pm",
+   "url": "https://nsearchives.nseindia.com/corporate/OSEL_11112026152126_Prior_Intimation.pdf"
   },
   {
    "company": "Pennar Industries",
@@ -10804,6 +10940,15 @@
    "url": "https://nsearchives.nseindia.com/corporate/PENIND_09112026122217_Concall16112026.pdf"
   },
   {
+   "company": "Piccadily Agro",
+   "sector": "Food Products",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "3:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/CSPICCADILY_11112026174536_conference_cal_intimation.pdf"
+  },
+  {
    "company": "Powerica",
    "sector": "Pumps Comp & Eng",
    "kind": "call",
@@ -10811,6 +10956,15 @@
    "time": "2:00 pm",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/PowericaNSE_06112026121631_Intimation_of_analyst_meet_06112026signed.pdf"
+  },
+  {
+   "company": "Rane (Madras)",
+   "sector": "Auto Related",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "15:00 hrs",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/RMLCS_11112026172052_RML_SELtr_EarningsCall_11112026_SD.pdf"
   },
   {
    "company": "Regaal Resources",
@@ -10837,6 +10991,15 @@
    "time": "4:00 pm",
    "quarter": "Q2 FY26",
    "url": "https://nsearchives.nseindia.com/corporate/RISHABH_05112026171138_RIL_Earnings_Call_Intimation_Earning_Call_Executed.pdf"
+  },
+  {
+   "company": "Royal Orchid Hotels",
+   "sector": "Hotels and Travels",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "12:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/ROHLTD_11112026102830_FinalIntimation.pdf"
   },
   {
    "company": "Sandhar Technologies",
@@ -10874,6 +11037,15 @@
    "url": "https://nsearchives.nseindia.com/corporate/SPMLINFRA_10112026113212_Intimation_signed-output__3_.pdf"
   },
   {
+   "company": "Technocraft Industries",
+   "sector": "Iron and Steel",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "11:30 hrs",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/TIIL_11112026101305_upload.pdf"
+  },
+  {
    "company": "TVS Electronics",
    "sector": "Hardware",
    "kind": "call",
@@ -10899,6 +11071,15 @@
    "time": "14:30 hrs India Time",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/VENKEYS_31102026125946_Venkys_Q2FY27_Investor_concall_invite.pdf"
+  },
+  {
+   "company": "Vikram Solar",
+   "sector": "Solar PV Cells EPC",
+   "kind": "call",
+   "date": "2026-11-16",
+   "time": "11:00 am",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/VSLCS_11112026181353_VSLEARNINGSCALLINTIMATIONQ2FY27.pdf"
   },
   {
    "company": "Allcargo Global",
@@ -10928,6 +11109,15 @@
    "url": "https://nsearchives.nseindia.com/corporate/CEINSYSTECH_07112026132551_SEIntimationofInvestorMeetofCTL17112026.pdf"
   },
   {
+   "company": "DEE Development",
+   "sector": "Industrials",
+   "kind": "call",
+   "date": "2026-11-17",
+   "time": "3:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/DDEL_11112026185344_NSEBSE_Earning_Call_Q2H1.pdf"
+  },
+  {
    "company": "Hexagon Nutrition",
    "sector": "Pharma Others",
    "kind": "call",
@@ -10935,6 +11125,15 @@
    "time": "4:00 pm",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/HEXAGONNUTRITION_09112026154422_IR_CALL_INTIMATION_FINAL_Signed.pdf"
+  },
+  {
+   "company": "Madhya Bharat Agro Products",
+   "sector": "Agrochemical & Fertilizers",
+   "kind": "call",
+   "date": "2026-11-17",
+   "time": "12:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/MBAPL_11112026173051_MBAPL.pdf"
   },
   {
    "company": "Skyways Air Services",
@@ -10953,6 +11152,24 @@
    "time": "3:30 pm",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/ICEMAKE_06112026175446_NSEConcallIntimation.pdf"
+  },
+  {
+   "company": "Krishana Phoschem",
+   "sector": "Agrochemical & Fertilizers",
+   "kind": "call",
+   "date": "2026-11-18",
+   "time": "12:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/KRISHANA_11112026175327_NSEINTMEET1811SIGNUP.pdf"
+  },
+  {
+   "company": "Whirlpool India",
+   "sector": "Consumer Durables",
+   "kind": "call",
+   "date": "2026-11-19",
+   "time": "4:30 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/WHIRLPOOL_11112026160204_Intimation_of_Date_and_Schedule_signed__2_.pdf"
   }
  ]
 }
