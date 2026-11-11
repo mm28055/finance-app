@@ -2681,15 +2681,43 @@
    "expectedStart": "Q2 FY27",
    "adds": "₹150–170cr of revenue at 40–45% margins at full use in FY28",
    "status": "started",
-   "source": "NSE filing 12 Oct 2026: commercial production of liquid bromine (2,800 t a year) began at Rajula; vacuum salt not yet announced",
-   "updatedOn": "2026-10-14",
+   "source": "Q2 FY27 call (Nov 2026): vacuum salt in commercial production during Q2 and capitalised in September; bromine commercial from 12 Oct 2026 (NSE filing). Vacuum salt at intended capacity by end-FY27, bromine only in FY28",
+   "updatedOn": "2026-11-11",
    "capacityAdd": "2,800 t bromine and 1.7 lakh t vacuum salt (new); ₹150–170cr of revenue at full use in FY28",
    "revisions": [
     {
      "on": "2026-10-14",
      "text": "Bromine commercial production began on 12 Oct 2026, just after the Q2 FY27 date; vacuum-salt start not yet filed"
+    },
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (Nov 2026): bromine to reach intended capacity only in FY28, not by Q4 FY27; vacuum salt still by end-FY27"
     }
    ]
+  },
+  {
+   "id": "ghcl-salt-works",
+   "company": "GHCL",
+   "sector": "Chemicals",
+   "name": "Salt works expansion and new Zara Zumara salt works",
+   "what": "Expanding its existing salt works and building new salt works at Zara Zumara in phases, to secure its own salt (the main raw material for soda ash)",
+   "cost": "about ₹450cr",
+   "adds": "more of its own salt; less dependence on bought salt",
+   "status": "planned",
+   "source": "Q2 FY27 call (Nov 2026): approved, built in phases; no dates given",
+   "updatedOn": "2026-11-11"
+  },
+  {
+   "id": "ghcl-rail-siding",
+   "company": "GHCL",
+   "sector": "Chemicals",
+   "name": "Own railway siding",
+   "what": "Rail infrastructure to bring salt and other raw materials from Kutch to its plant instead of by truck",
+   "cost": "₹88cr",
+   "adds": "lower transport cost and better control of raw-material supply",
+   "status": "planned",
+   "source": "Q2 FY27 call (Nov 2026): board approved ₹88cr; no date given",
+   "updatedOn": "2026-11-11"
   },
   {
    "id": "ghcl-kutch-greenfield",
@@ -2699,8 +2727,8 @@
    "what": "New 11 lakh-tonne soda-ash plant in Gujarat; Phase I of 5.5 lakh tonnes. Held up by land acquisition; clearances challenged at the National Green Tribunal",
    "cost": "about ₹4,000cr for Phase I (₹2,000–2,500cr of debt)",
    "status": "planned",
-   "source": "Q1 FY27 call (3 Aug 2026): no start date until land is settled; about ₹100cr of FY27 spend",
-   "updatedOn": "2026-09-29",
+   "source": "Q2 FY27 call (Nov 2026): land acquisition and land approvals still pending, 'some improvement'; about 3–3.5 years to build from the zero date plus about a year to stabilise",
+   "updatedOn": "2026-11-11",
    "capacityAdd": "5.5 lakh t soda ash in Phase I (+46% on 12 lakh t); 11 lakh t when complete (about +90%)"
   },
   {
@@ -5099,9 +5127,15 @@
    "expectedStart": "Q4 FY27",
    "adds": "5 lakh metres more capacity, about ₹120–150cr of sales a year",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026): production from February–March 2027; had been end-2026",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+5 lakh metres of coating capacity (about +15% on about 35 lakh metres a month), about ₹120–150cr of sales a year"
+   "source": "Q2 FY27 call (Nov 2026): machinery arrives end-November to December, installation from the March quarter, production 'hopefully' in Q1 FY28",
+   "updatedOn": "2026-11-11",
+   "capacityAdd": "+5 lakh metres of coating capacity (about +15% on about 35 lakh metres a month), about ₹120–150cr of sales a year",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (Nov 2026): production now hoped for in Q1 FY28, not February–March 2027; installation starts in the March quarter"
+    }
+   ]
   },
   {
    "id": "mayur-uniquoters-overseas-plant",
@@ -5111,8 +5145,8 @@
    "what": "A plant outside India for car-maker customers; location not chosen because of US tariffs and the West Asia war",
    "cost": "about ₹250–300cr",
    "status": "on hold",
-   "source": "Q1 FY27 call (Aug 2026): no final call yet",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (Nov 2026): not concluded; if abroad, then Mexico; a new plant in South India is also being considered",
+   "updatedOn": "2026-11-11"
   },
   {
    "id": "campus-activewear-pantnagar",

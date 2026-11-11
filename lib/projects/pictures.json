@@ -13890,10 +13890,10 @@
   },
   {
    "company": "GHCL",
-   "fingerprint": "3ffe76f23fcbb0e8",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "0d449b7b4247c945",
+   "checkedOn": "2026-11-11",
    "lines": {
-    "heading": "How full each line is (FY26)",
+    "heading": "How full each line is (FY26; soda ash still at optimum use in Q2 FY27)",
     "items": [
      {
       "name": "Soda ash, Sutrapada",
@@ -13913,7 +13913,7 @@
    },
    "adds": [
     {
-     "heading": "What the Kutch soda-ash plant would add (no start date; waits on land)",
+     "heading": "What the Kutch soda-ash plant would add (no start date; waits on land; about 3–3.5 years to build from the start)",
      "projectId": "ghcl-kutch-greenfield",
      "bars": [
       {
@@ -13944,11 +13944,26 @@
     "items": [
      {
       "name": "Bromine and vacuum-salt unit",
-      "sub": "2,800 t bromine and 1.7 lakh t vacuum salt from existing brine and spare energy; ₹150–170cr of revenue at 40–45% margins at full use in FY28",
+      "sub": "2,800 t bromine and 1.7 lakh t vacuum salt from existing brine and spare energy; ₹150–170cr of revenue at 40–45% margins at full use",
       "total": 330,
       "right": "₹330cr, built",
       "status": "started",
       "projectId": "ghcl-bromine-vacsalt"
+     },
+     {
+      "name": "Salt works expansion and new Zara Zumara salt works",
+      "sub": "its own salt for soda ash; built in phases, no dates given",
+      "right": "about ₹450cr, approved",
+      "status": "planned",
+      "projectId": "ghcl-salt-works"
+     },
+     {
+      "name": "Own railway siding",
+      "sub": "rail instead of trucks for raw materials from Kutch; no date given",
+      "total": 88,
+      "right": "₹88cr, board approved",
+      "status": "planned",
+      "projectId": "ghcl-rail-siding"
      },
      {
       "name": "Kutch greenfield soda ash, Phase I",
@@ -13967,12 +13982,18 @@
      "text": "Vacuum-salt trial production done; bromine pre-commissioning done"
     },
     {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "Vacuum salt in commercial production (capitalised in September)",
+     "sub": "Q2 FY27 call (Nov 2026)"
+    },
+    {
      "when": "12 Oct 2026",
      "tone": "done",
      "milestones": [
       "ghcl-bromine-vacsalt-m1"
      ],
-     "sub": "Bromine commercial production began at Rajula (2,800 t a year), just after the Q2 FY27 date (noted 14 Oct 2026). Vacuum-salt start not yet filed"
+     "sub": "Bromine commercial production began at Rajula (2,800 t a year), just after the Q2 FY27 date"
     },
     {
      "when": "Q4 FY27",
@@ -13980,31 +14001,29 @@
      "milestones": [
       "ghcl-bromine-vacsalt-m2"
      ],
-     "sub": "Bromine output is low in the monsoon quarter; production expected in Q3 and Q4. Q4 FY26 call: about ₹120cr of revenue from the unit in FY27"
+     "sub": "Vacuum salt at intended capacity by end-FY27. Management changed this on 2 Nov 2026: bromine reaches intended capacity only in FY28. Q4 FY26 call: about ₹120cr of revenue from the unit in FY27"
     },
     {
      "when": "FY28",
      "tone": "later",
-     "text": "First full year at full use: ₹150–170cr of revenue at 40–45% margins"
+     "milestones": [
+      "ghcl-bromine-vacsalt-m3"
+     ],
+     "text": "First full year at full use: ₹150–170cr of revenue at 40–45% margins (bromine margin 'around 40% plus', Q2 FY27 call)"
     },
     {
      "when": "Not dated",
      "tone": "maybe",
      "text": "Kutch plant: start date only once land is settled",
-     "sub": "Q4 FY26 call: about 2.5–3 years to build once investment starts, with most spending towards the end"
+     "sub": "Q2 FY27 call: about 3–3.5 years to build from the zero date and about a year to stabilise (Q4 FY26 call had said 2.5–3 years)"
     }
    ],
    "notes": [
-    "Salt works at Vedaranyam",
-    "FY27 capex ₹140–150cr; net cash over ₹1,000cr",
+    "Salt works at Vedaranyam; about ₹450cr of salt-works expansion and an ₹88cr railway siding approved (Q2 FY27 call, no dates)",
+    "FY27 capex ₹140–150cr; net cash over ₹1,070cr (September 2026)",
     "23 Sep 2026: preferred bidder for the Kadaya limestone block in Gujarat (about 5.67 lakh t of reserves)"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026), filings 23 Sep and 12 Oct 2026 (NSE) and sector note",
-   "recheck": {
-    "changes": [
-     "Official Q4 FY26 transcript now available and confirms both figures dropped earlier: the Kutch plant takes 'two and a half years to three years' once investment starts (added to the undated Kutch stop) and about ₹120cr of bromine/vacuum-salt revenue in FY27 (added, dated to that call)"
-    ]
-   }
+   "source": "Q2 FY27 call (Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026), filings 23 Sep and 12 Oct 2026 (NSE) and sector note"
   },
   {
    "company": "GK Energy",
@@ -23886,10 +23905,10 @@
   },
   {
    "company": "Mayur Uniquoters",
-   "fingerprint": "b7ba58716b7a364b",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "0ff6d6ace71f679c",
+   "checkedOn": "2026-11-11",
    "lines": {
-    "heading": "How full the coating lines are (Q1 FY27)",
+    "heading": "How full the coating lines are (Q1 FY27; unchanged in Q2)",
     "items": [
      {
       "name": "Coating lines, Jaipur",
@@ -23902,7 +23921,7 @@
    },
    "adds": [
     {
-     "heading": "What the new Jaipur coating line adds (production from February–March 2027)",
+     "heading": "What the new Jaipur coating line adds (production now hoped for in Q1 FY28; first promised for end-2026)",
      "projectId": "mayur-uniquoters-coating-line",
      "bars": [
       {
@@ -23917,7 +23936,8 @@
      ],
      "notes": [
       "About ₹120–150cr of extra sales a year",
-      "Already ordered; fitted inside the existing Jaipur plant instead of a new South India site"
+      "Already ordered; fitted inside the existing Jaipur plant instead of a new South India site",
+      "Management changed this on the Q2 FY27 call (Nov 2026): machinery arrives end-November to December, installation from the March quarter, production 'hopefully' in Q1 FY28 (was February–March 2027)"
      ]
     }
    ],
@@ -23933,7 +23953,7 @@
      },
      {
       "name": "Overseas plant",
-      "sub": "for car-maker customers, in North America or elsewhere",
+      "sub": "for car-maker customers; if abroad, then Mexico; a new South India plant is also being considered",
       "right": "about ₹250–300cr, on hold",
       "status": "on hold",
       "projectId": "mayur-uniquoters-overseas-plant"
@@ -23947,19 +23967,28 @@
      "milestones": [
       "mayur-uniquoters-coating-line-m1"
      ],
-     "sub": "Slipped: the Q4 FY26 call (May 2026) had said by the end of calendar 2026"
+     "sub": "The Q1 FY27 call date (February–March 2027); installation now starts in this quarter. The Q4 FY26 call (May 2026) had said by the end of calendar 2026"
+    },
+    {
+     "when": "Q1 FY28",
+     "tone": "next",
+     "milestones": [
+      "mayur-uniquoters-coating-line-m2"
+     ],
+     "sub": "Q2 FY27 call (Nov 2026): 'hopefully it will start in Q1'"
     },
     {
      "when": "Not decided",
      "tone": "maybe",
-     "text": "Overseas plant: location not chosen because of US tariffs and the West Asia war; no final call yet"
+     "text": "Overseas plant (Mexico if abroad) or a new South India plant: not concluded",
+     "sub": "Q2 FY27 call (Nov 2026)"
     }
    ],
    "notes": [
     "India's largest organised synthetic-leather capacity; makes its own knitted base fabric",
     "About ₹1,250cr of sales a year at full use (35 lakh metres a month at about ₹300 a metre)"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
+   "source": "Q2 FY27 call (Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Medplus",
