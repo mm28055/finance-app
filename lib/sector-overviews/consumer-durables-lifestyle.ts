@@ -496,7 +496,7 @@ export const consumerDurablesLifestyle: SectorOverview = {
                     caption: 'Q1 FY27 cash and capital, as stated on the calls',
                     columns: ['Company', 'What management said', 'Balance sheet'],
                     rows: [
-                        ['Mayur Uniquoters', 'About ₹50cr for a new Jaipur coating line, due February–March 2027; a ₹250–300cr plant in North America on hold', 'Borrowings ₹8cr; about ₹285cr of investments (March); CARE AA (Nov 2025)'],
+                        ['Mayur Uniquoters', 'About ₹50cr for a new Jaipur coating line, now due Q1 FY28; a ₹250–300cr plant abroad (Mexico) not decided', 'Borrowings ₹8cr; about ₹285cr of investments (March); CARE AA (Nov 2025)'],
                         ['Jyothy Labs', 'Cash about ₹850cr (August), from about ₹1,000cr in March; capex ‘similar’ to FY26’s ₹67cr; acquisition talks, none signed', 'Debt-free; ₹52cr of leases; CARE AA (Sep 2026); about ₹71cr of tax demands under appeal'],
                         ['Bajaj Consumer Care', 'No numbers given; advertising kept at 15–16% of sales; acquisitions: ‘nothing to disclose’ (October: ‘not at any deal stage’); Banjara’s merged into the parent from 1 May 2026; Guwahati plant handed to a contract maker', 'Net cash ₹390cr (Screener) after a ₹187cr buyback at ₹290 in Oct 2025; no dividend for FY26; CRISIL A1+ (Aug 2026)'],
                         ['Honasa Consumer (Mamaearth)', 'Cash generated ₹83cr in Q1; capital goes into brands and deals (95% of BTM Ventures for ₹198cr); Fluence deal cancelled 25 August', 'No bank debt; ₹135cr of leases; maiden ₹3 dividend; new 25–75% payout policy'],
@@ -578,7 +578,7 @@ export const consumerDurablesLifestyle: SectorOverview = {
                     badgeColumn: 3,
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
-                        ['Mayur Uniquoters', '10–15% growth for three years; margin ‘25 plus 1% or 2%’ (softened)', 'About ₹50cr new line, February–March 2027; global plant on hold', '**Missed**: revenue +25%, but operating margin 22% against 25–26%; line slipped; US price rise not pursued'],
+                        ['Mayur Uniquoters', '10–15% growth for three years; margin ‘25 plus 1% or 2%’ (softened)', 'About ₹50cr new line, now Q1 FY28; global plant (Mexico) not decided', '**Mixed**: Q1 +25% at 22%, Q2 +18% at 28% (one-off help); line slipped twice; US exports weak'],
                         ['Jyothy Labs', 'Double-digit growth excluding Pril and Fa; second-half margin ‘substantially better’; no margin guide', '‘Similar’ to FY26’s ₹67cr', '**Missed**: margin 8.4% against a 13.5% Q4 exit; Pril lost'],
                         ['Bajaj Consumer Care', 'No numbers; margin ‘low to mid 20s’; high-teens growth expected for FY27, double digits after; growth brands to ~₹500cr in three years; about 5% price rise in Q3', 'Negligible (₹5–6cr a year); FY26’s ₹33cr appears to be mostly ₹27cr paid to promoter companies for flats', '**Delivered**: H1 sales +28% (company); Q2 margin 25% despite costlier stock; international rebounded'],
                         ['Honasa Consumer (Mamaearth)', 'FY27 above high-teens growth; margin +1.5–2 points (raised); FY31 ₹5,500cr', 'Negligible; deals instead', '**Beat**: +27% reported (32% like-for-like); Derma Co ₹1,000cr; Fluence deal cancelled'],
@@ -661,8 +661,8 @@ export const consumerDurablesLifestyle: SectorOverview = {
         {
             company: 'Mayur Uniquoters', rank: 1, stance: 'COMPOUNDER', segment: FOOT,
             what: "India's largest organised maker of PVC synthetic leather for car seats and trims, shoes and furnishing, supplying Ford, Stellantis, BMW, Mercedes, Maruti and footwear brands; exports are about 42% of sales.",
-            view: "**Cheap, cash-rich and tied into global car makers.** Auto exports rose from ₹194cr to ₹290cr in FY26, operating margins rose from 20% to 24% over three years, return on capital is 24%, and a ₹50cr line due in early 2027 can add ₹120–150cr of sales. But Q1 FY27 volume grew only 3%, the operating margin fell to 22% as a currency gain dropped out, and a ₹102.7cr polyurethane plant is losing money. The price needs about {need:Mayur Uniquoters|10}% a year against my ~10%.",
-            watch: 'The Jaipur line starting by March 2027; operating margin at 22% or better without other income; any write-down of the polyurethane plant.',
+            view: "**Cheap, cash-rich and tied into global car makers.** Auto exports rose from ₹194cr to ₹290cr in FY26, operating margins rose from 20% to 24% over three years, return on capital is 24%, and a ₹50cr line due in early 2027 can add ₹120–150cr of sales. But Q1 FY27 volume grew only 3% and the margin fell to 22%; Q2 recovered to 28% (helped by a provision reversal) on revenue +18%, while US car exports fell, the new line slipped to Q1 FY28, and a ₹102.7cr polyurethane plant is still losing money (11 Nov 2026: stays own). The price needs about {need:Mayur Uniquoters|10}% a year against my ~10%.",
+            watch: 'US car exports back to ₹75–80cr a quarter; the Jaipur line starting in Q1 FY28; operating margin at 22% or better without other income; any write-down of the polyurethane plant.',
         },
         {
             company: 'Jyothy Labs', rank: 2, stance: 'HARVEST', segment: CARE,
