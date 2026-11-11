@@ -517,7 +517,7 @@ export const chemicalsCommodity: SectorOverview = {
                     columns: ['Company', 'What management said', 'Balance sheet'],
                     rows: [
                         ['Epigral', 'Net debt ₹474cr (June), 0.8x operating profit; capex about ₹400cr in each of FY27 and FY28; epoxy plant 60% debt-funded', 'Borrowings ₹572cr (March); CRISIL gearing 0.26x; dividend ₹5 a share'],
-                        ['GHCL', 'Net cash ‘more than ₹1,000cr’; FY27 capex ₹140–150cr; Q1 dividend of ₹109cr paid', 'Borrowings ₹83cr; CARE AA-/Stable (Aug 2026); ₹300cr buyback in FY26'],
+                        ['GHCL', 'Net cash ‘more than ₹1,070cr’ (September); H1 working capital up ₹217cr, cash down ₹48cr after ₹110cr of dividends; FY27 capex ₹140–150cr', 'Borrowings ₹83cr; CARE AA-/Stable (Aug 2026); ₹300cr buyback in FY26'],
                         ['Styrenix Performance', 'No guidance by policy; ABS expansion ‘this financial year’; surplus cash returned to shareholders', 'Bank debt ₹309cr, mostly a ₹222cr Thai loan backed by parent guarantees; CARE A+ (Positive)'],
                         ['GNFC', 'Cash and liquid assets about ₹4,000cr; FY27 capex cut to ₹1,500–1,800cr (₹300cr in Q1)', 'Borrowings ₹5cr; ₹2,431cr lent unsecured to a state-owned body; Acuité AA+/Stable'],
                         ['Deepak Fert & Petro', 'Net debt ₹4,719cr (June), ‘near peak’; ₹515cr spent in Q1, ₹800–1,000cr more in FY27', 'Gross debt ₹5,057cr; ICRA AA- on watch; ₹800cr subsidiary debentures, ₹300cr held by a promoter entity'],
@@ -605,7 +605,7 @@ export const chemicalsCommodity: SectorOverview = {
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
                         ['Epigral', 'Revenue and profit +15–20% a year for 3–5 years; ₹5,000cr revenue by FY31; ~20% return on new projects', 'ECH and CPVC doubling ~₹650cr (trial runs in November; "within a quarter"); ₹600cr epoxy and multipurpose plant by March 2028', '**Mixed**: Q1 margin 25% held but Q2 18% missed the 22–25% band; H1 revenue +21%; doubling late'],
-                        ['GHCL', 'Margins to ‘moderate’; bromine and vacuum salt ₹150–170cr revenue at 40–45% by FY28', 'FY27 ₹140–150cr; greenfield Phase I ~₹4,000cr, undated, under NGT challenge', '**Behind**: margin beat but called transient; new unit slipped a quarter'],
+                        ['GHCL', 'Margins to ‘moderate’; bromine and vacuum salt ₹150–170cr revenue at 40–45% by FY28', 'FY27 ₹140–150cr; ₹450cr salt works and ₹88cr rail siding approved; greenfield Phase I ~₹4,000cr, undated', '**Behind**: margin moderated to 24.7% as said; both units started late, bromine full use slips to FY28; no safeguard yet'],
                         ['Styrenix Performance', 'None by policy; margins to return to pre-war levels', 'ABS 100,000 → 150,000 t this financial year (CARE: ₹650–700cr over three years)', '**Mixed**: margin a windfall; volume −26%; ABS timing vaguer'],
                         ['GNFC', 'No forecasts; projects to add ₹1,200–1,500cr revenue and ₹500–600cr contribution', 'FY27 cut from ~₹2,800cr to ₹1,500–1,800cr', '**Behind**: power plant April → September; urea energy norm won'],
                         ['Deepak Fert & Petro', 'No margin guide; plants ‘end of this quarter’ (call) or H2 FY27 (annual report); ~80% use by Q4 FY27', '₹4,650cr in all; ₹800–1,000cr left in FY27', '**Mixed**: record profit; plants late twice; ramp target cut'],
@@ -700,8 +700,8 @@ export const chemicalsCommodity: SectorOverview = {
         {
             company: 'GHCL', rank: 2, stance: 'HARVEST', segment: SALT,
             what: "India's second-largest soda-ash maker (12 lakh tonnes at Sutrapada, Gujarat, about 26% of Indian demand), with sodium bicarbonate, salt and a new bromine and vacuum-salt unit.",
-            view: "**A low-cost, cash-rich producer at the bottom of the cycle.** It runs at 96%, holds over ₹1,000cr of net cash, turned all of FY26 operating profit into cash and paid out about 87% of profit. Profit has fallen from ₹1,142cr in FY23 to ₹472cr because imports set the price and no duty was imposed. The price needs about {need:GHCL|4}% a year against my ~4%; the risk is a ₹4,000–5,000cr greenfield now facing an environmental-tribunal challenge.",
-            watch: 'The board’s decision on the greenfield; safeguard limits on soda-ash imports; bromine and vacuum-salt revenue from Q4 FY27.',
+            view: "**A low-cost, cash-rich producer at the bottom of the cycle.** It runs at 96%, holds over ₹1,000cr of net cash, turned all of FY26 operating profit into cash and paid out about 87% of profit. Profit has fallen from ₹1,142cr in FY23 to ₹472cr because imports set the price and no duty was imposed. In Q2 FY27 revenue was flat at a 24.7% company margin, both new units started (bromine at full use only in FY28), the greenfield still waits on land, and ₹217cr went into working capital in H1 (11 Nov 2026: stays own). The price needs about {need:GHCL|4}% a year against my ~4%; the risk is a ₹4,000–5,000cr greenfield now facing an environmental-tribunal challenge.",
+            watch: 'The board’s decision on the greenfield; safeguard limits on soda-ash imports (still with DGTR); vacuum salt at full use by March 2027 and bromine in FY28; working capital released in H2.',
         },
         {
             company: 'Styrenix Performance', rank: 3, stance: 'SCALEUP', segment: STYR,
