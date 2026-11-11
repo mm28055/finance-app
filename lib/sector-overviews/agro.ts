@@ -470,7 +470,7 @@ export const agrochemicalFertilizers: SectorOverview = {
                     caption: 'Q1 FY27 cash and capital, as stated on the calls',
                     columns: ['Company', 'What management said', 'Balance sheet and commitments'],
                     rows: [
-                        ['Sharda Cropchem', '₹767cr of cash, no debt; ₹263–273cr of registration spending in Q1, ₹480–550cr for FY27', 'Net cash ₹581cr at March (Screener)'],
+                        ['Sharda Cropchem', '₹846cr of cash, no debt (September); ₹420cr of registration spending in H1, ₹550–600cr for FY27', 'Net cash ₹581cr at March (Screener)'],
                         ['Chambal Fert & Chem', 'Net borrowing ~₹200cr at June; receivables ₹3,300cr (subsidy ₹2,460cr); ~25% payout; fourth plant ₹9,500–10,000cr', 'Borrowings ₹1,068cr at March; FY26 operating cash ₹138cr; 23% of promoter shares pledged'],
                         ['Paradeep Phosphates', 'Gross debt ~₹6,500cr at June after ₹700cr repaid (Screener net debt ₹6,514cr at March); subsidy owed ₹4,600cr; FY27 capex ~₹600cr', 'CRISIL: net debt 2.85 times operating profit, downgrade trigger above 3 times'],
                         ['GSFC', '“No cash surplus”: ₹500cr short-term borrowing at June; ~₹500cr of subsidy outstanding in August', 'Net cash and investments ₹4,783cr (Screener); ₹1,332cr of “other” claims'],
@@ -560,7 +560,7 @@ export const agrochemicalFertilizers: SectorOverview = {
                     badgeColumn: 3,
                     columns: ['Company', 'Promised on the Q4 call', 'Capex', 'Track record'],
                     rows: [
-                        ['Sharda Cropchem', 'Revenue +10–15%; volume ~15%; gross margin ~35%; operating margin 18–20%', '₹480–550cr a year on registrations', '**Mixed**: revenue +9%, volume −1.6%, gross margin 36.7%; volume guide cut to 5–10%'],
+                        ['Sharda Cropchem', 'Revenue +10–15%; volume ~15%; gross margin ~35%; operating margin 18–20%', '₹480–550cr a year on registrations', '**Mixed**: H1 revenue +11%, volume −3.5% (Q2 −5.1%); gross margin 36.3%; margin 16.1% against 18–20%; registration spend raised to ₹550–600cr'],
                         ['Chambal Fert & Chem', 'Ammonium nitrate at 75–80% in FY27; urea volume above FY26; Moroccan venture expanded by December 2026', '~₹500cr on ammonium nitrate and urea; fourth plant ₹9,500–10,000cr under study', '**Slipping**: nitrate a quarter late; urea revenue −8%; venture to April–June 2027'],
                         ['GSFC', 'NPK margins within ±5–10%; chemicals to offset fertiliser; Sikka line converted by July–August', 'Sikka acid project and Dahej, costs not given', '**Mixed**: fertiliser margin halved; chemicals ₹116cr; profit +14%'],
                         ['Rallis India', 'Seeds “mid-teen” growth; crop protection maybe double digit; margins stable to soft', '₹70–140cr a year (CRISIL)', '**Missed**: Q1 branded +19% but Q2 branded volume −6% and seeds −31% on a dry kharif; H1 revenue +3%, profit +6%'],
@@ -647,8 +647,8 @@ export const agrochemicalFertilizers: SectorOverview = {
         {
             company: 'Sharda Cropchem', rank: 1, stance: 'COMPOUNDER', segment: MAKERS,
             what: "Owns 3,016 crop-protection registrations in its own name in Europe, the Americas and elsewhere, has the products made under contract (mainly in China) and sells them to local distributors; a smaller non-agrochemical arm sells belts and chemicals.",
-            view: "**An asset-light registration library, at a price that asks little.** 30% return on capital, ₹767cr of cash and a gross margin that rose to 36.7% in Q1. But FY26 growth leaned on a 10% euro move, Q1 volume fell 1.6%, the volume guide was cut to 5–10%, and registration spending is rising to ₹480–550cr a year while net additions are slow (fewer than 100 in three years). The price needs about {need:Sharda Cropchem|6–7}% a year against my ~10%.",
-            watch: 'European volumes in Q2–Q3 with gross margin above 35%; new registrations against rising spending and amortisation; any write-off of registrations.',
+            view: "**An asset-light registration library, at a price that asks little.** 30% return on capital, ₹767cr of cash and a gross margin that rose to 36.7% in Q1. But FY26 growth leaned on a 10% euro move, volume fell in Q1 (−1.6%) and again in Q2 FY27 (−5.1%) as Europe's drought kept distributors from restocking, and registration spending was raised to ₹550–600cr for FY27 while net additions are slow (3,044 at September). Q2 sales still rose 13% on price and mix and the 10–15% sales and 18–20% margin guides were kept (11 Nov 2026: stays own while Europe recovers in H2). The price needs about {need:Sharda Cropchem|6–7}% a year against my ~10%.",
+            watch: 'European volumes turning up in H2; the margin rising to 18–20%; new registrations against ₹550–600cr of spending; any write-off of registrations.',
         },
         {
             company: 'Chambal Fert & Chem', rank: 2, stance: 'HARVEST', segment: FERT,
