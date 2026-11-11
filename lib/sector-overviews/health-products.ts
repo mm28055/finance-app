@@ -604,7 +604,7 @@ export const healthProducts: SectorOverview = {
         {
             company: 'Laxmi Denta', rank: 3, stance: 'SCALEUP', segment: DENTAL,
             what: "Laxmi Dental: makes crowns and bridges for dentists in India and for US and European dental groups, plus clear aligners, aligner sheets and 3D-printing resins.",
-            view: "**Recovered, fully priced, with weak cash.** The margin is back to 19.2% and international lab sales grew 37% in Q1, and it has reinstated a 15–20% growth aim. But adjusted operating profit rose only 8%, operating cash was −₹5cr in FY26 and ₹54.7cr of IPO money is idle. The price needs about {need:Laxmi Denta|18}% a year, a little more than my ~15%.",
+            view: "**Recovered, fully priced, with weak cash.** The margin is back to 19.2% and international lab sales grew 37% in Q1, and it has reinstated a 15–20% growth aim. But adjusted operating profit rose only 8% in Q1, operating cash was −₹5cr in FY26 and IPO money sat idle; in Q2 FY27 the lab grew 22.7% and aligners 23.5% at a 19.2% margin, but falling scanner resales held revenue growth to about 10%, and ₹48.1cr of IPO money moves to its own plant (11 Nov 2026: stays follow). The price needs about {need:Laxmi Denta|18}% a year, a little more than my ~15%.",
             watch: 'Operating cash back above ₹30cr; margin holding at 18–20% as scanner sales return; domestic lab growth above 15%.',
         },
         {
