@@ -628,7 +628,7 @@ export const pharmaCdmo: SectorOverview = {
                         ['Neuland Laboratories', 'About 20% in FY27 and FY28; margin 25%-plus', '₹1,460cr approved over 13 quarters, ₹870cr spent; Kakinada land', '**Beat**: revenue +116%, margin 35.5%; peptide plant two months late'],
                         ['Anthem Biosciences', 'No percentage; ‘in line with our historical growth’; margin 38–40%', '~₹700cr in FY27, ~₹500cr in FY28 (Unit 4)', '**Missed**: ‘restocking now’ in May, then Q1 −23%; margin held'],
                         ['Sai Life Sciences', '15–20% growth and 28–30% margin over three years; stronger H2', '₹1,100–1,300cr in FY27', '**Below band**: +12%, margin 27%, manufacturing +6%, as H1 was flagged weak'],
-                        ['Akums Drugs', 'Contract margin 14–15%, upper end; volume double digits; API break-even by March', '~₹300cr; Oriflame plants ₹56cr', '**Beat**: contract +18.6% at 17%; Zambia start slipped to Q3–Q4'],
+                        ['Akums Drugs', 'Contract margin 14–15%, upper end; volume double digits; API break-even by March', '~₹300cr; Oriflame plants ₹56cr', '**Beat**: contract +18.6% then +38.6% at about 15%; Zambia revenue slips to Q1 FY28; API still losing'],
                         ['Innova Captab', 'Volume 20%-plus; margin 15–16% ±2, 17–18% at maturity', '₹40–55cr a year; Baddi plant ‘baseline stage’', '**Beat**: +34%; Jammu EBITDA-positive as promised'],
                         ['Jubilant Ingrevia', 'FY27 EBITDA ₹750–800cr, now ‘closer to the upper end’ (Q2 call)', '₹400–500cr (about ₹120cr in H1); ₹189cr for 40% of ZettaOne', '**Ahead** (Q2 call): H1 EBITDA up 44%; big contract’s volumes still under negotiation'],
                         ['Onesource Specialty', '$400m revenue at 40% margin in FY28; no FY27 figure', '$100m over FY26–FY28, borrowed', '**On track**: Q2 revenue +15% on the quarter at 32%; Line 2 running since September; Line 3 may slip to the start of FY28'],
@@ -745,8 +745,8 @@ export const pharmaCdmo: SectorOverview = {
         {
             company: 'Akums Drugs', rank: 6, stance: 'SCALEUP', segment: CONVERT,
             what: "India's largest contract maker of formulations for brand owners (83% of Q1 revenue), plus its own brands, trade generics and a loss-making API unit.",
-            view: "**Scale and a real share gain.** Contract revenue grew 18.6% at a 17% margin on about 20% volume growth, and a European contract adds exports from FY28. But about ₹1,033cr of its ₹1,616cr ‘cash surplus’ is a customer's prepayment, an income-tax search remains an audit emphasis with new notices, and the API unit still loses money. The price needs about {need:Akums Drugs|22}% a year against my ~17%.",
-            watch: 'Zambia supplies starting in Q3–Q4; the API unit reaching monthly break-even by March 2027; the outcome of the tax proceedings.',
+            view: "**Scale and a real share gain.** Contract revenue grew 18.6% at a 17% margin on about 20% volume growth, and a European contract adds exports from FY28. But about ₹1,033cr of its ₹1,616cr ‘cash surplus’ is a customer's prepayment, an income-tax search remains an audit emphasis with new notices, and the API unit still loses money. Q2 FY27 kept the trend: contract revenue +38.6% at about 15%, but Zambia revenue moves to Q1 FY28 and the API loss widened to ₹5.7cr (11 Nov 2026: stays follow). The price needs about {need:Akums Drugs|22}% a year against my ~17%.",
+            watch: 'Zambia supplies shipped in Q4 and booked in Q1 FY28; the API unit reaching monthly break-even by March 2027; the outcome of the tax proceedings.',
         },
         {
             company: 'Innova Captab', rank: 7, stance: 'SCALEUP', segment: CONVERT,
