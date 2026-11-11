@@ -9876,9 +9876,15 @@
    "expectedStart": "Q3 FY27",
    "adds": "room for volumes growing two to three times the industry",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026): civil work and machinery orders done, installation under way, on plan",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "About +1 lakh kL a year (+70%, to about 2.4 lakh kL)"
+   "source": "Q2 FY27 call (Nov 2026): Chennai on track for end-December 2026; Silvassa slips to Q1 FY28; third shifts run meanwhile",
+   "updatedOn": "2026-11-11",
+   "capacityAdd": "About +1 lakh kL a year (+70%, to about 2.4 lakh kL)",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (Nov 2026): Chennai on track for the end of Q3 FY27, but Silvassa 1–2 months late, now ready in Q1 FY28 against March 2027; cost raised by ₹5–7cr to about ₹60–62cr (board sanctioned)"
+    }
+   ]
   },
   {
    "id": "gulf-oil-lubricant-tirex-plant",
@@ -9889,8 +9895,8 @@
    "expectedStart": "Q3 FY27",
    "adds": "Tirex revenue of ₹300–400cr in three to four years (target; ₹100cr in FY26)",
    "status": "building",
-   "source": "Q4 FY26 call (May 2026): plant operational in Q3 FY27; Q1 FY27 call (Aug 2026) confirmed the move to the new plant without a new date",
-   "updatedOn": "2026-09-29"
+   "source": "Q4 FY26 call (May 2026): plant operational in Q3 FY27; Q2 FY27 call (Nov 2026): expansion hoped to be done this quarter, taking capacity to 3,000 chargers by the end of the year",
+   "updatedOn": "2026-11-11"
   },
   {
    "id": "jindal-drilling-and-industries-rig-refurbishment",

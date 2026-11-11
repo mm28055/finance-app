@@ -15781,11 +15781,11 @@
   },
   {
    "company": "Gulf Oil Lubricant",
-   "fingerprint": "ce3f96ed674a95c3",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "fb93b22d8c68cf3d",
+   "checkedOn": "2026-11-11",
    "adds": [
     {
-     "heading": "What the Silvassa and Chennai expansion adds (Chennai by December 2026, Silvassa by March 2027)",
+     "heading": "What the Silvassa and Chennai expansion adds (Chennai by December 2026; Silvassa now Q1 FY28, first promised by March 2027)",
      "projectId": "gulf-oil-lubricant-silvassa-chennai",
      "bars": [
       {
@@ -15799,7 +15799,8 @@
       }
      ],
      "notes": [
-      "Phased in: Chennai first, then Silvassa, which needs significant civil work. On the Q1 FY27 call an analyst said civil work and machinery orders were done and installation under way; management said it was on plan",
+      "Phased in: Chennai first, then Silvassa, which needs significant civil work. Q2 FY27 call (Nov 2026): Chennai on track for the end of the quarter; Silvassa 1–2 months late, ready in Q1 FY28; third shifts run in the meantime",
+      "Management changed this on 2 Nov 2026: Silvassa from March 2027 to Q1 FY28, and the cost from about ₹55cr to about ₹60–62cr",
       "Gives room for volumes growing two to three times the industry"
      ],
      "caveat": "FY26 lubricant sales were 1.68 lakh kL and Q1 FY27 was 48,000 kL, both above what the stored 1.4 lakh kL figure allows; the calls don't explain the gap"
@@ -15810,14 +15811,13 @@
      {
       "name": "Silvassa and Chennai expansion",
       "sub": "70% more lubricant capacity",
-      "total": 55,
-      "right": "about ₹55cr",
+      "right": "about ₹60–62cr (was ₹55cr; ₹5–7cr more sanctioned in Nov 2026)",
       "status": "building",
       "projectId": "gulf-oil-lubricant-silvassa-chennai"
      },
      {
       "name": "New Tirex EV-charger plant",
-      "sub": "a new, larger factory for fast DC chargers; from equity and borrowings",
+      "sub": "a new, larger factory for fast DC chargers, to reach 3,000 chargers by the end of 2026; from equity and borrowings",
       "right": "cost not given; about ₹225cr has gone into Tirex so far",
       "status": "building",
       "projectId": "gulf-oil-lubricant-tirex-plant"
@@ -15832,13 +15832,21 @@
       "gulf-oil-lubricant-silvassa-chennai-m1",
       "gulf-oil-lubricant-tirex-plant-m1"
      ],
-     "sub": "Tirex date is from the Q4 FY26 call (May 2026); the Q1 FY27 call confirmed the move to the new plant without a new date"
+     "sub": "Chennai on track (Q2 FY27 call); Tirex: Q4 FY26 call date, and the Q2 FY27 call hopes the expansion is done this quarter"
     },
     {
      "when": "Q4 FY27",
      "tone": "next",
      "milestones": [
       "gulf-oil-lubricant-silvassa-chennai-m2"
+     ],
+     "sub": "The original Silvassa date; now expected to slip"
+    },
+    {
+     "when": "Q1 FY28",
+     "tone": "next",
+     "milestones": [
+      "gulf-oil-lubricant-silvassa-chennai-m3"
      ]
     },
     {
@@ -15849,10 +15857,11 @@
     }
    ],
    "notes": [
-    "How full: plants running 'in full stream' (Q1 FY27 call), no % given. Q1 FY27 volume 48,000 kL of lubricants plus 40,000 kL of AdBlue",
-    "Tirex has 8–10% of the DC-charger market; Gulf raised its stake to 65% last year"
+    "How full: plants running 'in full stream' (Q1 FY27 call) and on third shifts where needed (Q2 FY27 call), no % given. Q2 FY27 volume 47,000 kL of lubricants plus 33,000 kL of AdBlue",
+    "Tirex has 8–10% of the DC-charger market; Gulf raised its stake to 65% last year",
+    "A fire at the Valsad site (October 2026) cost about 4–5 days of production; stock is insured"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
+   "source": "Q2 FY27 call (Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "H.G. Infra Engg.",

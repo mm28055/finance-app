@@ -539,7 +539,7 @@ export const oil: SectorOverview = {
                     columns: ['Company', 'Promised on the call', 'Capex', 'Track record'],
                     rows: [
                         ['Deep Industries', 'May: revenue +25–30%; margin 44–45%; production contract delay “1 or 2 quarters”', '₹250–300cr in FY27 (about ₹150cr for new wells)', '**Beat** on growth: revenue +40%, profit +44.5%; new wells slipped to Q4 FY27–Q1 FY28'],
-                        ['Gulf Oil Lubricant', 'May: volumes 2–3x the industry; margin 12–14%; new plants Q3 and Q4 FY27', '₹55cr for 70% more capacity; ~₹225cr into EV chargers', '**Delivered**: volume +17%, margin 12.9%; Tirex slower'],
+                        ['Gulf Oil Lubricant', 'May: volumes 2–3x the industry; margin 12–14%; new plants Q3 and Q4 FY27', '₹60–62cr (was ₹55cr) for 70% more capacity; ~₹225cr into EV chargers', '**Mostly delivered**: volume +17% and +16%; margin 12.9% then 11.6%; Silvassa slips to Q1 FY28'],
                         ['Jindal Drilling and Industries', 'January (no Q4 call): hoped for higher rates; refurbishment ₹50–100cr a rig', '₹90–110cr a rig for three rigs (~₹270–330cr)', '**Mixed**: Pioneer won at ~$47,800 against a $62,000 bid; margin 36%'],
                         ['South West Pinnacle', 'May: ~20% growth; Hindustan Zinc start within two weeks; debt at its lowest by March 2027', 'Rigs; coal block ₹400cr, none in FY27', '**Beat**: revenue +53%, order book +31%; guidance not raised'],
                         ['Ganesh Benzoplast', 'June: first ~50,000 kL by December; ~₹100cr capex; margin recovered in 15–18 months', 'About ₹100cr; scope now 1,22,000 kL', '**Missed**: margin 23% against 30%, profit −3%; no dividend'],
@@ -630,8 +630,8 @@ export const oil: SectorOverview = {
         {
             company: 'Gulf Oil Lubricant', rank: 1, stance: 'COMPOUNDER', segment: PRODUCTS,
             what: "One of India's top private lubricant brands (engine, gear and industrial oils), part of the Hinduja group, with AdBlue exhaust fluid, batteries and a growing EV-charger business through Tirex.",
-            view: "**A brand gaining share, paid in cash.** Lubricant volumes rose 17% in Q1 against a market growing 3–4%, the margin held at 12.9% through a base-oil shortage, and it has about ₹680cr of net cash and pays out about 72% of profit. FY26 profit dipped to ₹345cr on a one-off labour-code charge, and ₹44cr a year goes to the promoter group as royalty. The price needs about {need:Gulf Oil Lubricant|9}% a year against my ~12%.",
-            watch: 'Volume growth after the Q1 stock-up; margin toward 14% as price rises stick or are given back; Tirex losses and further EV spending.',
+            view: "**A brand gaining share, paid in cash.** Lubricant volumes rose 17% in Q1 and 16% in Q2 FY27 against a market growing 3–4%, though the margin slipped to 11.6% in Q2 (just under its 12–14% band) as base oil rose, working capital swelled and Silvassa's new capacity slips to Q1 FY28 (11 Nov 2026: stays own), and it has about ₹680cr of net cash and pays out about 72% of profit. FY26 profit dipped to ₹345cr on a one-off labour-code charge, and ₹44cr a year goes to the promoter group as royalty. The price needs about {need:Gulf Oil Lubricant|9}% a year against my ~12%.",
+            watch: 'H2 volume up about 10%; the margin back inside 12–14%; working capital easing from its peak; Tirex losses and further EV spending.',
         },
         {
             company: 'Jindal Drilling and Industries', rank: 3, stance: 'HARVEST', segment: SERVICES,
