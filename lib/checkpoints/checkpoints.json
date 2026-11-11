@@ -3042,7 +3042,11 @@
    "ifMet": "Supports staying own",
    "ifMissed": "Price may tip the label to Full",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Engineering margin about 19% in Q2 FY27 (₹81.1cr on ₹428cr); India engineering 23.7% as reported",
+   "outcome": "Stays own",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "harsha-engineers-int-q2fy27-1",
@@ -3051,7 +3055,11 @@
    "text": "Foreign units' losses within the ₹2–4cr full-year guide (Romania losses shrinking)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Foreign units lost ₹1.7cr in Q2 FY27, down on FY26, but a run rate above ₹2–4cr a year; Romania to be downsized",
+   "outcome": "Stays own",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "harsha-engineers-int-q4fy27-1",
@@ -3060,7 +3068,13 @@
    "text": "Harsha Advantek at ₹140cr of sales and profitable by March 2027",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (2 Nov 2026): Advantek on track for ₹140cr or more, but lost about ₹7cr in H1; H2 profit expected, full year may still show a small loss"
+    }
+   ]
   },
   {
    "id": "nrb-bearing-q2fy27-1",
@@ -3881,7 +3895,13 @@
    "text": "ECH and CPVC capacity doubling running by December 2026",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (2 Nov 2026): trial runs under way, both plants to be commissioned 'within a quarter'"
+    }
+   ]
   },
   {
    "id": "epigral-q2fy27-1",
@@ -3896,7 +3916,8 @@
    "status": "missed",
    "actual": "18.2%",
    "resolvedOn": "2026-11-09",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays own: one quarter of dearer coal on chlor-alkali; H1 margin 22% and the doubling is close"
   },
   {
    "id": "epigral-q4fy27-1",
@@ -15678,7 +15699,8 @@
    "status": "partly",
    "actual": "11.6%",
    "resolvedOn": "2026-11-09",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays own: 11.8% by the company's count, per-litre margin protected while base oil rose; revenue +46%"
   },
   {
    "id": "gulf-oil-lubricant-q2fy27-2",
@@ -15687,7 +15709,11 @@
    "text": "Lubricant volume growth stays at two to three times the industry after the Q1 stock-up",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Lubricant volume +16% in Q2 FY27 (47,000 kL), H1 +17%, against an industry growing 3–4%",
+   "outcome": "Stays own",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "gulf-oil-lubricant-q4fy27-1",
@@ -15696,7 +15722,13 @@
    "text": "Capacity lifted 70% to 2.4 lakh kL by March 2027 (new plants in Q3 and Q4 FY27)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (2 Nov 2026): Chennai by end-December on track; Silvassa slips to Q1 FY28; cost now about ₹60–62cr"
+    }
+   ]
   },
   {
    "id": "jindal-drilling-and-industries-q3fy27-1",
@@ -20126,7 +20158,13 @@
    "text": "Same-store growth back to 8–10% after the 4–5% price rises from Q3 (7.5% last)",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (4 Nov 2026): FY27 same-store guide now 5–7% (H1 −3.7%); 7–9% expected from old stores in H2"
+    }
+   ]
   },
   {
    "id": "indiamart-intermesh-q2fy27-1",
@@ -25195,8 +25233,12 @@
    "text": "Building construction in China restarts after the seasonal pause",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "harsha-engineers-int-china"
+   "status": "met",
+   "project": "harsha-engineers-int-china",
+   "actual": "China capex under way and being accelerated; spending to finish by about June 2027 (2 Nov 2026 call)",
+   "outcome": "Stays own",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "harsha-engineers-int-china-m2",
@@ -25226,7 +25268,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "harsha-engineers-int-advantek"
+   "project": "harsha-engineers-int-advantek",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (2 Nov 2026): H1 loss about ₹7cr; H2 to be profitable, full year may still show a small loss"
+    }
+   ]
   },
   {
    "id": "nrb-bearing-brownfield-m1",
@@ -25748,7 +25796,13 @@
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "epigral-ech-cpvc"
+   "project": "epigral-ech-cpvc",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (2 Nov 2026): trial runs under way, both plants to be commissioned 'within a quarter'"
+    }
+   ]
   },
   {
    "id": "epigral-ech-cpvc-m2",
@@ -25767,8 +25821,12 @@
    "text": "Epoxy and MPP pilot plant commissioned",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "epigral-epoxy-mpp"
+   "status": "met",
+   "project": "epigral-epoxy-mpp",
+   "actual": "Epoxy and MPP pilot plants ready; customer approvals about to start (2 Nov 2026 call)",
+   "outcome": "Stays own",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "epigral-epoxy-mpp-m2",
@@ -30753,7 +30811,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "gulf-oil-lubricant-silvassa-chennai"
+   "project": "gulf-oil-lubricant-silvassa-chennai",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (2 Nov 2026): Silvassa 1–2 months late, ready in Q1 FY28"
+    }
+   ]
   },
   {
    "id": "gulf-oil-lubricant-tirex-plant-m1",
@@ -32392,7 +32456,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "v2-retail-stores-fy27"
+   "project": "v2-retail-stores-fy27",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (4 Nov 2026): 106 opened in H1 (115–116 by early November) and 60–70 more planned in H2, about 175–185 for the year"
+    }
+   ]
   },
   {
    "id": "v-mart-retail-stores-fy27-m1",
@@ -41188,6 +41258,34 @@
    "createdOn": "2026-11-10",
    "status": "pending",
    "project": "fidel-softech-softenger"
+  },
+  {
+   "id": "harsha-engineers-int-q4fy27-2",
+   "company": "Harsha Engineers Int",
+   "sector": "Bearings",
+   "text": "Romania's operating losses stopped by March 2027 after the downsizing (plan due by Q3 FY27)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-11",
+   "status": "pending"
+  },
+  {
+   "id": "v2-retail-q4fy27-3",
+   "company": "V2 Retail",
+   "sector": "Retail",
+   "text": "Working capital back to 75–80 days by March 2027 as festive stock sells (88 days at September)",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-11",
+   "status": "pending"
+  },
+  {
+   "id": "gulf-oil-lubricant-silvassa-chennai-m3",
+   "company": "Gulf Oil Lubricant",
+   "sector": "Oil",
+   "text": "Silvassa expansion ready (new date after the Q2 FY27 call)",
+   "due": "Q1 FY28",
+   "project": "gulf-oil-lubricant-silvassa-chennai",
+   "createdOn": "2026-11-11",
+   "status": "pending"
   }
  ]
 }
