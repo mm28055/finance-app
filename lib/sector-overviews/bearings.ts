@@ -438,7 +438,7 @@ export const bearings: SectorOverview = {
                     badgeColumn: 3,
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
-                        ['Harsha Engineers Int', 'India engineering mid-to-high teens; group 12–15%; margin back to 18%; Advantek ₹140cr-plus', '₹180–200cr over FY27–FY28; China ₹90–100cr (Q3 FY28)', '**Mixed**: India +21%; margin-expansion promise dropped; foreign losses ahead of guide'],
+                        ['Harsha Engineers Int', 'India engineering mid-to-high teens; group 12–15%; margin back to 18%; Advantek ₹140cr-plus', '₹180–200cr over FY27–FY28; China ₹90–100cr (Q3 FY28)', '**Mixed**: India +21% in Q1 and +24% in Q2; margin back to about 19% in Q2 (met); foreign losses ₹1.7cr in Q2, still above the guide; Advantek may end FY27 slightly in the red'],
                         ['NRB Bearing', '₹2,500cr by FY31, now ‘₹2,730–3,000cr’ by extrapolation; margin 18–20%', '₹270cr (from ₹240cr) plus ₹110cr joint venture', '**Mixed**: revenue +19%; ₹1,100cr nominations retracted; margin band narrowed'],
                         ['SKF India', 'Revenue ‘close to 20%’ in FY27 (August; not restated in Q2); 15%-plus in FY28; EBITDA with other income back above 15% within FY27', '₹500cr-plus over FY26–FY28; FY27 close to ₹200cr (Q2 call), including ₹140cr of new lines', '**Slipping** (Q2): product sales +16%; pre-tax margin 11.7% against 14.3% in Q1 as cost rises went unbilled; aftermarket −7%'],
                         ['SKF India (Industrial)', 'Aspiration to double in five years (was ~8% a year); margin ~12% now, 14–16% after 2028', '₹900–950cr Pune plant (was ₹650cr+, then ₹800cr+)', '**Slipping**: revenue +18%; 13% by end-2026 target slipped; capex up 40%'],
@@ -515,8 +515,8 @@ export const bearings: SectorOverview = {
         {
             company: 'Harsha Engineers Int', rank: 1, stance: 'SCALEUP', segment: OWN,
             what: "India's largest maker of precision bearing cages (brass, steel and plastic), supplying Timken, Schaeffler, SKF, NBC, NSK and NTN at 80-plus plants, plus bushings, stampings and a small solar-contracting arm, with plants in India, China and Romania.",
-            view: "**The industry's volume through its supplier, at a fair price.** Indian engineering grew 21% in Q1 and FY26 profit rose to ₹155cr, but management dropped its margin-expansion promise, Romania lost about ₹14cr on ₹247cr of sales, and FY26 operating cash covered only 28% of operating profit. Its auditor flagged a gap in the accounting audit trail. The price needs about {need:Harsha Engineers Int|17}% a year against my ~15%.",
-            watch: 'Engineering margin back to 18% by Q3 FY27; Advantek at ₹140cr of sales and profitable by March 2027; Romania’s main casting customer returning.',
+            view: "**The industry's volume through its supplier, at a fair price.** Indian engineering grew 21% in Q1 and 24% in Q2 FY27, and the engineering margin recovered to about 19% in Q2 as metal rises were passed on. Romania, which lost about ₹14cr on ₹247cr of sales in FY26, is being downsized to stop its losses by March 2027 (11 Nov 2026). FY26 operating cash covered only 28% of operating profit and the cash cycle rose to 135 days in Q2. Its auditor flagged a gap in the accounting audit trail. The price needs about {need:Harsha Engineers Int|17}% a year against my ~15%.",
+            watch: 'Advantek at ₹140cr of sales and profitable in H2 FY27; the Romania downsizing plan and its cost; operating cash recovering.',
         },
         {
             company: 'NRB Bearing', rank: 2, stance: 'SCALEUP', segment: OWN,
