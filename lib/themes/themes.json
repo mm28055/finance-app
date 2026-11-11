@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "method": "A company is listed under a theme only when its own management said something concrete about it in its last two results calls: revenue, orders in hand, approvals, or capex it has committed. Passing mentions, analysts' questions and 'we are exploring' do not count. 'Orders or revenue now' means it already sells or holds orders; 'Building' means money committed or approvals won, but no meaningful revenue yet. Each line says what the company said and where. Read from the calls on 13–14 October 2026 (medical devices and aerospace on 24 October; aerospace split into Indian defence & space and global on 8 November; AI on 9 November) and reviewed each results season as new calls come in. A list of who is exposed to the theme, not a recommendation.",
  "themes": [
   {
@@ -1321,6 +1321,12 @@
      "level": "building",
      "why": "Navy prototype order for an autonomous anti-submarine vessel.",
      "source": "Q1 FY27 call, Aug 2026"
+    },
+    {
+     "company": "Tonbo Imaging",
+     "level": "now",
+     "why": "Says it has replaced imported stabilised gimbals on Indian naval vessels with its own, and is building a long-range microwave counter-drone system for the Navy under an iDEX contract, with a letter of intent for 5 units.",
+     "source": "Q2 FY27 call, Nov 2026"
     }
    ]
   },
@@ -1750,6 +1756,12 @@
      "level": "building",
      "why": "Adding aerospace components as a new line in its defence and aerospace arm: ₹80cr investment for about ₹180cr of expected business; customers not named.",
      "source": "Q1 and Q2 FY27 calls, Aug–Oct 2026"
+    },
+    {
+     "company": "Sigma Advanced Systems",
+     "level": "now",
+     "why": "Aerospace parts were ₹296cr of Q2 FY27 revenue, from seven UK plants (Nasmyth, Bromford) and Sri City; two Rolls-Royce long-term agreements worth about ₹5,400cr, with Airbus and Boeing programmes also supplied.",
+     "source": "Q2 FY27 call, Nov 2026"
     }
    ]
   }

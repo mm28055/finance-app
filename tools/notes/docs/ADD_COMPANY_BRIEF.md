@@ -33,6 +33,9 @@ rating rationale, and material news. Numbers from Screener (raw page), never the
   valuation input. The company key must be the EXACT database name given in your task.
 
 ## 3. Tab 1 (`R/lib/sector-overviews/<note>.ts`)
+**Skip this step unless Manish asks for it (7 Nov 2026): new and moved companies get the Tab 2 card, card data,
+management, capacity, projects and checkpoints, but are not written into the note's main page.** Without Tab 1, put
+`myGrowth`, the call and the price-check reasoning in the Tab 2 card instead, and skip the Tab 1 checks in step 5.
 Read the whole note first. Then integrate each company as if it had always been there:
 - `myGrowth` (my base-case earnings growth, a judgement from the research; null for loss-makers) and a `verdicts` entry
   (what / view / watch; `rank` placed in order own → follow → wait → pass → avoid, renumbering others; `stance` consistent:

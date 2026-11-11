@@ -2805,7 +2805,254 @@ export const aerospaceDefenceCharts: Record<string, ProfileCharts> = {
                 0.9
             ]
         }
-    }
+    },
+    "Sigma Advanced Systems": {
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "86.8x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "85.2x",
+                "note": "Market value plus net debt (about nil), ÷ operating profit over the last four quarters (₹209cr)."
+            },
+            {
+                "label": "Net debt",
+                "value": "About nil",
+                "note": "September 2026, my reading of the scanned results: borrowings of roughly ₹430cr (₹332cr at March plus ₹102cr raised in H1) against about ₹440cr of cash, deposits and liquid funds after the ₹460cr share issue. Screener's March 2026 figure was ₹308cr."
+            },
+            {
+                "label": "Operating cash, H1 FY27",
+                "value": "−₹213cr",
+                "note": "Company cash-flow statement; −₹210cr in FY26 (Screener). Receivables and stock built up as revenue grew."
+            },
+            {
+                "label": "Operating margin Q2 FY27",
+                "value": "21%",
+                "note": "Screener; the company's 'operational EBITDA' margin is 19.7%. FY26 was 10%."
+            }
+        ],
+        "statsAsOf": "10 Nov 2026",
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 38
+                },
+                {
+                    "label": "Staff",
+                    "share": 29
+                },
+                {
+                    "label": "Other costs",
+                    "share": 23
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 10
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock. FY26 includes only five months of Nasmyth."
+        },
+        "marginVsInput": {
+            "input": "Alloy and stainless steel bars price",
+            "periods": [
+                "Q3 FY26",
+                "Q4 FY26",
+                "Q1 FY27",
+                "Q2 FY27"
+            ],
+            "margin": [
+                4.8,
+                17.0,
+                16.3,
+                20.6
+            ],
+            "index": [
+                100,
+                103,
+                110,
+                null
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average. Starts when the UK aerospace business (Nasmyth) was first consolidated."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY24",
+                "FY25",
+                "FY26",
+                "H1 FY27"
+            ],
+            "ebitda": [
+                -9.0,
+                -24.0,
+                51.0,
+                147.0
+            ],
+            "ocf": [
+                22.0,
+                19.0,
+                -210.0,
+                -213.0
+            ],
+            "fcf": [
+                11.0,
+                2.0,
+                -270.0,
+                -274.0
+            ],
+            "note": "Screener for FY24–FY26; H1 FY27 from the company's cash-flow statement (free cash = operating cash less about ₹61cr of fixed-asset purchases). Before FY26 the company was mostly the Megasoft shell."
+        },
+        "workingCapital": {
+            "fromYear": "FY25",
+            "toYear": "FY26",
+            "debtorDays": [
+                201,
+                270
+            ],
+            "inventoryDays": [
+                99,
+                382
+            ],
+            "payableDays": [
+                99,
+                381
+            ],
+            "cycleDays": [
+                201,
+                271
+            ],
+            "absorbed5y": -265,
+            "receivables5y": -103,
+            "inventory5y": -32,
+            "payables5y": -18
+        }
+    },
+    "Tonbo Imaging": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 49
+                },
+                {
+                    "label": "Staff",
+                    "share": 14
+                },
+                {
+                    "label": "Other costs",
+                    "share": 9
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 29
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "marginVsInput": {
+            "input": "Circuit boards price",
+            "periods": [
+                "Q1 FY26",
+                "Q2 FY26",
+                "Q1 FY27",
+                "Q2 FY27"
+            ],
+            "margin": [
+                21.7,
+                -33.3,
+                -36.1,
+                24.0
+            ],
+            "index": [
+                100,
+                106,
+                104,
+                null
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average. Q3 and Q4 FY26 were not published (unlisted then), so the line jumps from Q2 FY26 to Q1 FY27."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                10.0,
+                112.0,
+                140.0,
+                103.0
+            ],
+            "ocf": [
+                23.0,
+                78.0,
+                -136.0,
+                -65.0
+            ],
+            "fcf": [
+                10.9,
+                -115.5,
+                -164.7,
+                -104.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "104.0x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "70.6x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year (₹124cr: FY26 less H1 FY26 plus H1 FY27, consolidated)."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹87cr",
+                "note": "Borrowings including leases, minus cash, March 2026. About ₹152cr by September 2026 (borrowings ₹176cr, cash ₹24cr)."
+            },
+            {
+                "label": "Cash conversion, FY23–FY26",
+                "value": "−27%",
+                "note": "Operating cash (−₹100cr) ÷ operating profit (₹365cr) over four years; 70–80% is healthy. Standalone; listed only in October 2026."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "29%",
+                "note": "Includes an ₹18.8cr write-back of warranty provisions; about 24% without it."
+            }
+        ],
+        "statsAsOf": "10 Nov 2026",
+        "workingCapital": {
+            "fromYear": "FY23",
+            "toYear": "FY26",
+            "debtorDays": [
+                155,
+                213
+            ],
+            "inventoryDays": [
+                246,
+                453
+            ],
+            "payableDays": [
+                178,
+                66
+            ],
+            "cycleDays": [
+                223,
+                600
+            ],
+            "absorbed5y": -416,
+            "receivables5y": -193,
+            "inventory5y": -204,
+            "payables5y": 30
+        }
+    },
 };
 
 // Fixed valuation inputs as of the note date; market value and P/E are live on the page.
@@ -2924,5 +3171,20 @@ export const aerospaceDefenceValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 11.5,
         "mcapAtWriting": 700,
         "peAtWriting": 92.9
-    }
+    },
+    "Sigma Advanced Systems": {
+        // Adjusted: Screener's March 2026 net debt was ₹308cr. After the ₹460cr preferential issue (July 2026), September
+        // cash, deposits and liquid funds (about ₹440cr) roughly match borrowings (about ₹430cr), from the scanned Q2 results.
+        // Trailing profit (P/E base) still includes about ₹89cr of Q4 FY26 other income, so the live P/E flatters it.
+        "netDebt": 0,
+        "ttmEbitda": 209.0,
+        "mcapAtWriting": 17814.0,
+        "peAtWriting": 86.8
+    },
+    "Tonbo Imaging": {
+        "netDebt": 87,
+        "ttmEbitda": 124.0,
+        "mcapAtWriting": 8667.0,
+        "peAtWriting": 104.0
+    },
 };

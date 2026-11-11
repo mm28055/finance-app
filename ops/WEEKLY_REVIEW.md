@@ -62,7 +62,8 @@ For each entry, by its `subject`/`why`:
 - **Demerger** / new listing: update the company's section to describe the business as it now is; add a newly
   listed company only if the entry asks for it (it will already be on the dashboard in that sector).
 - **Moved sector** / **Not in the <sector> note**: follow `tools/notes/docs/ADD_COMPANY_BRIEF.md` (research, card data
-  with `tools/notes/fetch.py`, `card.py`, `chartdata.py`, Tab 1 and Tab 2). Paths in that brief that start with `S/`
+  with `tools/notes/fetch.py`, `card.py`, `chartdata.py`, and the Tab 2 business card). **Skip the brief's Tab 1
+  step: Manish does not want new or moved companies written into a note's main page (7 Nov 2026).** Paths in that brief that start with `S/`
   mean a temporary folder of your own; the tools live in `tools/notes/`. For a move, cut the company's section from
   the old note and add it to the new one, re-ranked against its new peers. A company **new to the dashboard** (not
   a move) also gets, from the same research, everything the other company cards carry: a `management.json` entry

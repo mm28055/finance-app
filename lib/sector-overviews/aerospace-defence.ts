@@ -853,7 +853,7 @@ export const aerospaceDefence: SectorOverview = {
         {
             company: 'Apollo Micro Systems', rank: 16, stance: 'AVOID', segment: ELEC,
             what: "Missile, torpedo and mine electronics (onboard computers, guidance, actuation and fuzes) as a DRDO development partner, plus IDL Explosives (mining explosives) and an agreed 41.33% stake in Premier Explosives.",
-            view: "**Real positions, too many unknowns.** Standalone margins are about 30%, and 60+ development-partner positions could turn into QRSAM, Pinaka and mine orders from FY28. But Q1 organic growth was 17% against a 40–45% guide, operating cash was −₹130cr in FY26, the parent has lent ₹316cr to subsidiaries on thin paperwork, and a ₹3,322cr share issue (about 18% dilution once the warrants convert) funds about ₹2,500cr for Premier while about 39% of promoter shares stay pledged.",
+            view: "**Real positions, too many unknowns.** Standalone margins are about 30%, and 60+ development-partner positions could turn into QRSAM, Pinaka and mine orders from FY28. Q2 was strong: standalone revenue rose 36% to ₹306cr at a 35% margin (H1 +29%, still short of the 40–45% guide). But debtors are about 216 days, operating cash was −₹130cr in FY26, the parent has lent ₹316cr to subsidiaries on thin paperwork, and a ₹3,322cr share issue (about 18% dilution once the warrants convert) funds about ₹2,500cr for Premier while about 36% of promoter shares stay pledged (39% earlier).",
             watch: 'The underwater-mine order, expected in December–January; Premier consolidating from Q3; the promoter pledge actually falling.',
         },
         {

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-10",
  "capacity": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -5788,6 +5788,30 @@
    "fullUse": "The MD says today's set-up plus small additions can reach ₹400–500cr of sales; he agreed with an analyst that the tungsten alloy line at full use is worth about ₹150cr at current prices",
    "capexStatus": "H1 FY27 capex ₹7cr from profits, bank lines and 30% advances on export orders. Company roadmap (tentative): powders 620 → 800 t in FY27 → 1,350 t in FY28 (larger water atomiser ordered, 600 → 1,200 t; gas atomisation 20 → 50 → 150 t) → about 1,600 t with the DRDO-funded ₹8.73cr 100 kg gas atomiser (FY28 install); tungsten 18 → 180 t in FY27 (alloys 60 t + Swastik 120 t), alloys to about 90 t in about two years. A spark plasma sintering furnace is being bought from Germany (advance paid). An EIGA atomiser for titanium and zirconium powders is being evaluated. ₹37.5cr of preferential issues committed (₹14cr received), mainly for working capital; the MD says current plants are funded and only a greenfield plant for the ₹1,000cr vision would need new money. The June call had said there was no significant capex plan for FY27–FY28",
    "source": "H1 FY27 call (3 Nov 2026) and presentation, Q4 FY26 call (3 Jun 2026), FY26 annual report"
+  },
+  {
+   "company": "Sigma Advanced Systems",
+   "sector": "Aerospace defence",
+   "today": "Seven aerospace factories in the UK (Nasmyth and Bromford; sites include Nottingham, Leicester, Coventry, Bournemouth and Worthing) and plants in India at Hyderabad (defence electronics) and Sri City (aerospace parts and ammunition): about 350,000 sq ft and 800+ staff in all. Sri City phase 1 is 75,000 sq ft with 100,000 machining hours a year, budgeted to reach about 300,000 hours in the same building",
+   "utilisation": "India aerospace capacity about 15% used, ammunition about 20%, defence electronics on a single shift (CEO, 6 Nov 2026 call)",
+   "capexStatus": "Management says the capex already made covers the next few years. About £8–9m went into the UK plants (machines, automation and working capital); fixed-asset spending was ₹60cr in FY26 (Screener) and about ₹61cr in H1 FY27. The rest of the 23-acre, 500,000 sq ft Sri City campus is to be running within about 12 months of September 2026; no cost is disclosed. Growth beyond that is planned through acquisitions funded by up to ₹3,000cr of new equity",
+   "source": "Q2 FY27 call (6 Nov 2026), Q2 FY27 presentation, press release of 10 Sep 2026, Q1 FY27 presentation (Aug 2026)"
+  },
+  {
+   "company": "Tonbo Imaging",
+   "sector": "Aerospace defence",
+   "today": "Fabless: no factories of its own. Pilot units are built at its Bengaluru R&D centre (with an in-house clean room); volume production is outsourced to Kaynes Technology and Avalon Technology under non-exclusive contracts. Capacity is the partners' and is not stated in units",
+   "utilisation": "Not disclosed. The CBO said supplying large volumes is not a concern, and the CFO said common sub-assemblies are kept in stock so tactical orders can be delivered in 3–4 months",
+   "capexStatus": "No plant capex (property, plant and equipment about ₹23cr). Spending goes to R&D: about ₹30cr in FY27, of which about ₹25cr capitalised, plus the ₹160cr first high-power microwave (directed-energy) system over about 2.5 years, funded by a ₹120cr EXIM Bank loan, a ₹25cr iDEX Aditi grant and ₹15cr of its own money",
+   "source": "Q2 FY27 call (6 Nov 2026), RHP (Oct 2026), Q2 FY27 results"
+  },
+  {
+   "company": "Fidel Softech",
+   "sector": "Software",
+   "today": "Asset-light: no plants; capacity is people. 500+ staff across the group (FY26 presentation), including 222 permanent staff in the Indian parent (March 2026) and 200+ professionals in Japan, working from Pune, Hyderabad, Tokyo and the US. Softenger would add about 1,200 people (combined 1,600+, October 2026 presentation)",
+   "utilisation": "Not disclosed. Management says it cut the bench at IM Corp in Q2 FY27 by sharing staff across Fidel and IM accounts",
+   "capexStatus": "No plant capex; Screener shows ₹9.45cr of fixed assets bought in FY26, not explained on the calls. The money goes to acquisitions: about ₹22cr paid for the FY26 deals (Fidel Technologies KK, Techvine, IM Corp), funded partly by ₹16cr of yen loans, and Softenger agreed for about ₹38.5cr (cash plus about ₹8cr in shares), due to complete by 31 December 2026. 3–5% of revenue goes to in-house or joint R&D and start-up investments",
+   "source": "H1 FY27 call (30 Oct 2026), FY26 and Q2 FY27 presentations, FY26 annual report, NSE filing of 30 Oct 2026"
   }
  ]
 }

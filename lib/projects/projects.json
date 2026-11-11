@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-10",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -16085,6 +16085,71 @@
    "status": "planned",
    "source": "H1 FY27 presentation (3 Nov 2026): next step about 90 t in about two years (tentative); Q4 FY26 call mentioned a back-up furnace for redundancy",
    "updatedOn": "2026-11-08"
+  },
+  {
+   "id": "sigma-advanced-systems-sri-city",
+   "company": "Sigma Advanced Systems",
+   "sector": "Aerospace defence",
+   "name": "Sri City aerospace campus (Andhra Pradesh)",
+   "what": "A 23-acre campus planned for 500,000 sq ft of machining, fabrication, surface treatment and testing, to take over high-volume UK aerospace parts (Rolls-Royce and others) and lift group margins; it also makes 155 mm shell bodies from bought-in forgings. About 70% of the manufacturing process is to move to India once the campus is complete, and it should employ 500+ people in two to three years",
+   "cost": "Not disclosed",
+   "expectedStart": "Q2 FY27",
+   "adds": "Lower-cost capacity for parts now made in the UK; management targets +2–4 points of group margin by end FY27 and another +4–6 points by end FY28, and Sri City output growing about 15% a quarter",
+   "capacityAdd": "Phase 1 (75,000 sq ft) has 100,000 machining hours a year, budgeted to reach about 300,000 (three times) in the same building; the remaining campus adds more, not quantified",
+   "status": "ramping",
+   "source": "Press release 10 Sep 2026: production started, first parts shipped to Sigma UK, initial Rolls-Royce source-change approval steps done; rest of the campus running 'in the next 12 months'. Q1 FY27 presentation: fabrication, treatment and testing processes 'going live in Q4 FY27'. Q2 FY27 call (6 Nov 2026): about 15% a quarter ramp-up",
+   "updatedOn": "2026-11-10",
+   "revisions": [
+    {
+     "on": "2026-08-17",
+     "text": "The Q1 FY27 presentation said the facility had reached operational readiness and would start in Q3 FY27"
+    },
+    {
+     "on": "2026-09-10",
+     "text": "Production started in September 2026 (Q2 FY27), slightly ahead of the Q3 date"
+    }
+   ]
+  },
+  {
+   "id": "sigma-advanced-systems-acquisitions",
+   "company": "Sigma Advanced Systems",
+   "sector": "Aerospace defence",
+   "name": "Acquisitions funded by a ₹3,000cr raise",
+   "what": "Purchases of aerospace and defence companies with about $100–150m of revenue each in the UK, Europe or the US, to win new aircraft and engine customers and move work to India; the same playbook as Nasmyth and Bromford",
+   "cost": "Up to ₹3,000cr of new equity (QIP, preferential, rights or other routes), approved by the board on 6 Nov 2026 subject to a postal ballot; at the November share price roughly 17% more shares",
+   "expectedStart": "Q4 FY27",
+   "adds": "Revenue of about $100–150m (roughly ₹850–1,300cr) per company bought; number of deals not decided",
+   "status": "planned",
+   "source": "Board outcome and Q2 FY27 call (6 Nov 2026): CEO said 'possibly Q3, Q4'; Pramod Raju said 'sometime in Q4'; only EBITDA-positive targets",
+   "updatedOn": "2026-11-10"
+  },
+  {
+   "id": "tonbo-imaging-hpm",
+   "company": "Tonbo Imaging",
+   "sector": "Aerospace defence",
+   "name": "WaveStrike high-power microwave (directed-energy) system",
+   "what": "A long-range high-power microwave weapon to disable drones and drone swarms at 3–5 km, built on its own multi-beam klystron, pulse compressor and antennas; land (Army), naval (Indian Navy, under the iDEX Aditi contract) and shorter-range airborne versions. The drone-detection part (T-Rex) is already sold, and a positioning system is being built for a Middle East customer",
+   "cost": "About ₹160cr for the first system: about ₹120cr of materials and hardware, about ₹40cr of soft costs (interest during construction, testing, about ₹20cr of staff cost capitalised over 2.5 years). Funded by a ₹120cr EXIM Bank loan (sanctioned), a ₹25cr iDEX Aditi grant and ₹15cr of its own money",
+   "expectedStart": "FY29–FY30 (first deliveries)",
+   "adds": "A third product line. Letters of intent for 11 units (5 Indian Navy as a minimum order, 6 for a European customer); quoted price about ₹200cr a system in India and about $25m abroad. Management calls it an option, not short-term revenue",
+   "capacityAdd": "Not plant capacity: a new product; the first unit may be kept for demonstrations rather than sold",
+   "status": "building",
+   "source": "Q2 FY27 call (6 Nov 2026): technology readiness level 4; product-engineering and testing risk to be retired by FY29; first deliveries 'not before 29–30'. Investor presentation (Nov 2026): land, naval and airborne HPM under development",
+   "updatedOn": "2026-11-10"
+  },
+  {
+   "id": "fidel-softech-softenger",
+   "company": "Fidel Softech",
+   "sector": "Software",
+   "name": "Softenger acquisition",
+   "what": "100% of Softenger (India) Pvt Ltd with its Singapore and Malaysia subsidiaries, plus Soft Data Middle Eastern IT Solutions LLC in Dubai: managed IT infrastructure, data-centre, cybersecurity and telecom support since 1999; about 1,200 staff and 60+ enterprise clients (Japanese firms, banks, telecom companies, insurers, system integrators); FY26 revenue ₹211.8cr (₹157.5cr in FY25, ₹173.1cr in FY24), EBITDA about ₹10–11cr (about 5.5%), PAT ₹8–9cr, no debt",
+   "cost": "₹34.79cr for Softenger India plus AED 1.54m (about ₹4cr) for the Dubai company, about 3.5–4 times EBITDA. Cash plus share swap: about ₹8cr in Fidel shares, the rest from internal cash or other funding still being arranged in November–December 2026. Key managers stay on with performance-linked incentives",
+   "expectedStart": "Q3 FY27",
+   "adds": "About ₹212cr of yearly revenue against Fidel's ₹102cr in FY26; management puts the combined group at an annualised ₹350–400cr+ of revenue and about ₹25cr+ of PAT",
+   "status": "planned",
+   "source": "Board approval and NSE filing (30 Oct 2026): completion by 31 December 2026, subject to closing conditions; no regulatory approval needed; not a related party. H1 FY27 call and presentation (30 Oct 2026)",
+   "updatedOn": "2026-11-10",
+   "capacityAdd": "Not plant capacity: about 1,200 people, taking the group to 1,600+, and offices in Singapore, Malaysia and Dubai"
   }
  ]
 }

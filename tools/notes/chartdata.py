@@ -123,6 +123,8 @@ CONFIG = {
         'Zen Technologies': ('ZENTEC', None, PCB, True),
         'Apollo Micro Systems': ('APOLLO', None, PCB, False),
         'Unimech Aerospace': ('UNIMECH', None, ALLOYSTEEL, True),
+        'Sigma Advanced Systems': ('SIGMAADV', None, ALLOYSTEEL, False),
+        'Tonbo Imaging': ('TONBO_s', 'TONBO', PCB, False),
         'AXISCADES Technologies': ('AXISCADES', None, PCB, False),
         'Mishra Dhatu Nigam (MIDHANI)': ('MIDHANI', None, ALLOYSTEEL, False),
         'Raymond': ('RAYMOND', None, STEEL_FORGE, False),
@@ -601,6 +603,8 @@ CONFIG = {
         'TAC Security (Tac Infosec)': ('TAC', None, None, True),
         'Unicomm. eSolutions': ('UNIECOM', None, None, True),
         'Onward Technologies': ('ONWARDTEC', None, None, True),
+        # FIDEL card: FY22–FY24 from the standalone page (no consolidated accounts before FY25), FY25–FY26 consolidated
+        'Fidel Softech': ('FIDEL', None, None, True),
     },
     'chemicals': {
         'Gujarat Fluorochemic': ('FLUOROCHEM', None, None, True),

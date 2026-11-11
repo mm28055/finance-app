@@ -4895,6 +4895,107 @@ export const softwareCharts: Record<string, ProfileCharts> = {
             ],
             "note": "Consolidated, Screener. FY25 free cash includes a fall in fixed assets from ₹336cr to ₹135cr."
         }
+    },
+    "Fidel Softech": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Staff",
+                    "share": 39
+                },
+                {
+                    "label": "Other costs",
+                    "share": 46
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 15
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                6.16,
+                6.68,
+                7.38,
+                12.0,
+                15.0
+            ],
+            "ocf": [
+                -2.45,
+                1.8,
+                2.9,
+                9.0,
+                8.0
+            ],
+            "fcf": [
+                -2.52,
+                1.36,
+                2.81,
+                8.86,
+                -1.45
+            ],
+            "note": "FY22–FY24 standalone (Fidel had no subsidiaries then and Screener shows no consolidated figures for those years); FY25–FY26 consolidated. FY26 free cash excludes about ₹37cr paid for acquisitions."
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "17.5x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "14.3x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹9cr",
+                "note": "Borrowings including leases, minus cash and mutual-fund investments, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "41%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "15%"
+            }
+        ],
+        "statsAsOf": "10 Nov 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                81,
+                96
+            ],
+            "inventoryDays": [
+                null,
+                null
+            ],
+            "payableDays": [
+                null,
+                null
+            ],
+            "cycleDays": [
+                81,
+                96
+            ],
+            "absorbed5y": -18,
+            "receivables5y": -24,
+            "inventory5y": null,
+            "payables5y": 7
+        }
     }
 };
 
@@ -5188,5 +5289,11 @@ export const softwareValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 75,
         "mcapAtWriting": 898,
         "peAtWriting": 18
+    },
+    "Fidel Softech": {
+        "netDebt": 9,
+        "ttmEbitda": 18.0,
+        "mcapAtWriting": 248.0,
+        "peAtWriting": 17.5
     }
 };

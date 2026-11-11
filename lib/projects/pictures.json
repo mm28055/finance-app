@@ -47737,6 +47737,227 @@
    ],
    "source": "H1 FY27 call (3 Nov 2026) and presentation, Q4 FY26 call (3 Jun 2026), FY26 annual report, NSE filing 25 Sep 2026",
    "fingerprint": "afb7532034b14310"
+  },
+  {
+   "company": "Sigma Advanced Systems",
+   "checkedOn": "2026-11-10",
+   "lines": {
+    "heading": "How full the Indian plants are (Q2 FY27)",
+    "items": [
+     {
+      "name": "India aerospace (Sri City)",
+      "size": "phase 1: 75,000 sq ft, 100,000 machining hours a year",
+      "usedPct": 15,
+      "usedLabel": "about 15% used",
+      "note": "Started production in September 2026; output growing about 15% a quarter"
+     },
+     {
+      "name": "Ammunition (Sri City)",
+      "size": "155 mm shell bodies from bought-in forgings",
+      "usedPct": 20,
+      "usedLabel": "about 20% used"
+     }
+    ]
+   },
+   "adds": [
+    {
+     "heading": "What Sri City phase 1 adds inside the same building (budgeted; rest of the 500,000 sq ft campus within about 12 months of September 2026)",
+     "projectId": "sigma-advanced-systems-sri-city",
+     "bars": [
+      {
+       "name": "Machining hours a year",
+       "sub": "to about 300,000 in the phase 1 building",
+       "base": 100000,
+       "add": 200000,
+       "baseLabel": "100,000 today",
+       "addLabel": "+200,000",
+       "right": "about +200%"
+      }
+     ],
+     "notes": [
+      "23-acre campus for machining, fabrication, surface treatment and testing, taking over high-volume UK aerospace parts (Rolls-Royce and others); about 70% of the manufacturing process to move to India once complete; 500+ staff in two to three years",
+      "Management targets +2–4 points of group margin by end FY27 and another +4–6 points by end FY28 from the move; the remaining campus adds more, not quantified"
+     ]
+    }
+   ],
+   "money": {
+    "heading": "Cost and funding",
+    "items": [
+     {
+      "name": "Sri City aerospace campus",
+      "sub": "cost not disclosed; fixed-asset spending was ₹60cr in FY26 and about ₹61cr in H1 FY27 across the group",
+      "right": "not disclosed",
+      "status": "ramping",
+      "projectId": "sigma-advanced-systems-sri-city"
+     },
+     {
+      "name": "Acquisitions",
+      "sub": "companies with about $100–150m (roughly ₹850–1,300cr) of revenue each in the UK, Europe or the US, EBITDA-positive only; new equity by QIP, preferential, rights or other routes, roughly 17% more shares at the November price",
+      "right": "up to ₹3,000cr",
+      "status": "planned",
+      "projectId": "sigma-advanced-systems-acquisitions"
+     }
+    ]
+   },
+   "timeline": [
+    {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "Sri City production started (September 2026), first parts shipped to Sigma UK and first Rolls-Royce source-change steps done",
+     "sub": "The Q1 FY27 presentation (17 Aug 2026) had said Q3 FY27"
+    },
+    {
+     "when": "Q3 FY27",
+     "tone": "next",
+     "milestones": [
+      "sigma-advanced-systems-acquisitions-m1"
+     ]
+    },
+    {
+     "when": "Q4 FY27",
+     "tone": "next",
+     "milestones": [
+      "sigma-advanced-systems-sri-city-m1",
+      "sigma-advanced-systems-acquisitions-m2"
+     ],
+     "sub": "Acquisitions 'possibly Q3, Q4' (CEO) or 'sometime in Q4' (Pramod Raju), 6 Nov 2026 call"
+    },
+    {
+     "when": "Q2 FY28",
+     "tone": "later",
+     "milestones": [
+      "sigma-advanced-systems-sri-city-m2"
+     ]
+    }
+   ],
+   "notes": [
+    "Today: seven UK aerospace factories (Nasmyth and Bromford; sites include Nottingham, Leicester, Coventry, Bournemouth and Worthing) plus Hyderabad (defence electronics) and Sri City (aerospace parts and ammunition): about 350,000 sq ft and 800+ staff",
+    "Defence electronics runs on a single shift (no utilisation figure given)",
+    "About £8–9m went into the UK plants (machines, automation and working capital); management says capex already made covers the next few years, and growth beyond that is planned through acquisitions"
+   ],
+   "source": "Q2 FY27 call (6 Nov 2026), Q2 FY27 presentation, press release of 10 Sep 2026, Q1 FY27 presentation (Aug 2026), board outcome of 6 Nov 2026",
+   "fingerprint": "b533e4ebd2d85d51"
+  },
+  {
+   "company": "Tonbo Imaging",
+   "checkedOn": "2026-11-10",
+   "money": {
+    "heading": "The one big project and how it is funded",
+    "items": [
+     {
+      "name": "WaveStrike high-power microwave system (first unit)",
+      "sub": "about ₹120cr of materials and hardware and ₹40cr of soft costs (interest, testing, about ₹20cr of staff cost capitalised over 2.5 years); funded by a ₹120cr EXIM Bank loan (sanctioned), a ₹25cr iDEX Aditi grant and ₹15cr of its own money",
+      "total": 160,
+      "right": "about ₹160cr",
+      "status": "building",
+      "projectId": "tonbo-imaging-hpm"
+     }
+    ]
+   },
+   "timeline": [
+    {
+     "when": "Q3 FY27",
+     "tone": "done",
+     "text": "Technology readiness level 4 (6 Nov 2026 call); the drone-detection part (T-Rex) is already sold"
+    },
+    {
+     "when": "Q4 FY29",
+     "tone": "later",
+     "milestones": [
+      "tonbo-imaging-hpm-m1"
+     ]
+    },
+    {
+     "when": "Q4 FY30",
+     "tone": "later",
+     "milestones": [
+      "tonbo-imaging-hpm-m2"
+     ],
+     "sub": "'Not before 29–30' (CEO); the first unit may be kept for demonstrations rather than sold"
+    }
+   ],
+   "notes": [
+    "Fabless: no factories of its own. Pilot units are built at the Bengaluru R&D centre (in-house clean room); volume production is outsourced to Kaynes Technology and Avalon Technology under non-exclusive contracts, so capacity is the partners' and is not stated in units",
+    "Utilisation not disclosed: the CBO said supplying large volumes is not a concern; common sub-assemblies are kept in stock so tactical orders can be delivered in 3–4 months",
+    "No plant capex (property, plant and equipment about ₹23cr). Other R&D: about ₹30cr in FY27, of which about ₹25cr capitalised",
+    "WaveStrike disables drones and swarms at 3–5 km using its own multi-beam klystron, pulse compressor and antennas; land (Army), naval (Indian Navy, iDEX Aditi) and shorter-range airborne versions; a positioning system is being built for a Middle East customer",
+    "A third product line, called an option rather than short-term revenue: letters of intent for 11 units (5 Indian Navy as a minimum order, 6 for a European customer); quoted price about ₹200cr a system in India and about $25m abroad"
+   ],
+   "source": "Q2 FY27 call (6 Nov 2026), investor presentation (Nov 2026), RHP (Oct 2026), Q2 FY27 results",
+   "fingerprint": "738d0f322e3978c6"
+  },
+  {
+   "company": "Fidel Softech",
+   "fingerprint": "870e04857e7bdced",
+   "checkedOn": "2026-11-10",
+   "adds": [
+    {
+     "heading": "What the Softenger purchase adds (agreed 30 October 2026, to complete by 31 December 2026)",
+     "projectId": "fidel-softech-softenger",
+     "bars": [
+      {
+       "name": "Yearly revenue (FY26)",
+       "sub": "to about ₹314cr on FY26 figures",
+       "base": 102,
+       "add": 212,
+       "baseLabel": "₹102cr Fidel",
+       "addLabel": "+₹212cr Softenger",
+       "right": "about +208%"
+      }
+     ],
+     "notes": [
+      "Softenger: managed IT infrastructure, data-centre, cybersecurity and telecom support since 1999, with subsidiaries in Singapore and Malaysia, plus Soft Data Middle Eastern IT Solutions LLC in Dubai; about 1,200 staff (group to 1,600+) and 60+ enterprise clients (Japanese firms, banks, telecom companies, insurers, system integrators)",
+      "Softenger revenue ₹211.8cr in FY26, ₹157.5cr in FY25 and ₹173.1cr in FY24; EBITDA about ₹10–11cr (about 5.5%), PAT ₹8–9cr, no debt",
+      "Management puts the combined group at an annualised ₹350–400cr+ of revenue and about ₹25cr+ of PAT"
+     ],
+     "caveat": "Management's ₹350–400cr+ is on current run-rates (Fidel about ₹38cr a quarter; Softenger about ₹240cr expected this year), so it is higher than the FY26 sum"
+    }
+   ],
+   "money": {
+    "heading": "Cost and funding",
+    "items": [
+     {
+      "name": "Softenger acquisition",
+      "sub": "about 3.5–4 times EBITDA; cash plus share swap, about ₹8cr in Fidel shares and the rest from internal cash or other funding still being arranged in November–December 2026; key managers stay on with performance-linked incentives",
+      "right": "₹34.79cr + AED 1.54m (about ₹38.5cr)",
+      "status": "planned",
+      "projectId": "fidel-softech-softenger"
+     }
+    ]
+   },
+   "timeline": [
+    {
+     "when": "Q3 FY27",
+     "tone": "done",
+     "text": "30 October 2026: board approves buying 100% of Softenger (India) and Soft Data (Dubai); no regulatory approval needed, not a related party"
+    },
+    {
+     "when": "By 31 Dec 2026",
+     "tone": "next",
+     "milestones": [
+      "fidel-softech-softenger-m1"
+     ]
+    },
+    {
+     "when": "Q4 FY27",
+     "tone": "next",
+     "milestones": [
+      "fidel-softech-softenger-m2"
+     ]
+    },
+    {
+     "when": "In about 3–3.5 years",
+     "tone": "maybe",
+     "text": "Management says the deal shortens its 5X goal (₹500cr of revenue, first set for FY31) to about 3–3.5 years"
+    }
+   ],
+   "notes": [
+    "Asset-light: no plants; capacity is people. 500+ staff across the group (FY26 presentation), including 222 permanent staff in the Indian parent (March 2026) and 200+ professionals in Japan, working from Pune, Hyderabad, Tokyo and the US",
+    "Utilisation not disclosed; management says it cut the bench at IM Corp in Q2 FY27 by sharing staff across Fidel and IM accounts",
+    "No plant capex: Screener shows ₹9.45cr of fixed assets bought in FY26, not explained on the calls. About ₹22cr went on the FY26 deals (Fidel Technologies KK, Techvine, IM Corp), funded partly by ₹16cr of yen loans",
+    "3–5% of revenue goes to in-house or joint R&D and start-up investments"
+   ],
+   "source": "H1 FY27 call and presentation (30 Oct 2026), NSE filing of 30 Oct 2026, FY26 presentation and annual report"
   }
  ]
 }

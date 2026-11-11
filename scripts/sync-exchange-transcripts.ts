@@ -6,6 +6,8 @@
  *   npx tsx scripts/sync-exchange-transcripts.ts --from=21-07-2026 --to=28-09-2026 --dry-run
  *   npx tsx scripts/sync-exchange-transcripts.ts --only="Metro Brands,Quess" --source=nse
  *   npx tsx scripts/sync-exchange-transcripts.ts --limit=2              (store at most 2 documents)
+ *   --fill-window  a company holding fewer results calls than the window keeps (a new
+ *                addition) also takes older calls in the date range, up to the window
  *   --no-prune   skip the rolling-window cleanup after storing (for test runs
  *                that must not touch existing rows; the next normal run prunes)
  *   --store-only store the transcripts but leave analysis and profile for
@@ -63,6 +65,7 @@ import { generalSlotDate } from '../lib/doc-label';
 import { notAResultsQuarter, screenerShowsCall, tooEarlyForResults } from '../lib/reporting';
 import { nseAnnouncements, nseListedIsins, parseNseDate, NSE_UA } from '../lib/filings/nse';
 import { nseSymbolForIsin } from '../lib/corporate-actions/nse-lists';
+import { TRANSCRIPT_WINDOW } from '../lib/retention';
 
 const DAY = 86400000;
 const IST = 330 * 60000;
@@ -342,6 +345,7 @@ async function main() {
     const measure = process.argv.includes('--measure');
     const dryRun = measure || process.argv.includes('--dry-run');
     const noPrune = process.argv.includes('--no-prune');
+    const fillWindow = process.argv.includes('--fill-window');
     const storeOnly = process.argv.includes('--store-only');
     const batch = process.argv.includes('--batch') && !storeOnly;
     // Calls already sent in an earlier batch (waiting for Google), and the ones this run sends.
@@ -452,6 +456,19 @@ async function main() {
             p.url === d.url || p.day === istDayKey(callDate) || sameText(text, p.text));
         if (earlier) { log(d, TYPE_LABEL[type], earlier.slot, 'skipped (same as an earlier filing in this run)', extra); return; }
         if (same) {
+            // A stand-in made from the call's audio recording (stored by hand when a call was asked
+            // for before its transcript was filed) gives way to the filed transcript: text swapped,
+            // analysis redone.
+            if (/\.mp3(\?|$)/i.test(same.filePath || '') && !/\.mp3(\?|$)/i.test(d.url)) {
+                if (dryRun) { log(d, TYPE_LABEL[type], same.quarter.name, 'would replace the audio-made transcript', extra); return; }
+                await prisma.transcript.update({ where: { id: same.id }, data: { rawText: text, filePath: d.url, fileUrl: d.url, hasAnalysis: false } });
+                const item: BatchItem = { transcriptId: same.id, companyId: d.co.id, company: d.co.name, slot: same.quarter.name, results: same.quarter.q !== GENERAL_Q, noPrune };
+                if (storeOnly) { log(d, TYPE_LABEL[type], same.quarter.name, 'replaced the audio-made transcript (analysis left)', extra); return; }
+                if (batch) { queued.push(item); log(d, TYPE_LABEL[type], same.quarter.name, 'replaced the audio-made transcript, analysis sent to batch', extra); return; }
+                const r = await processTranscript(same.id);
+                log(d, TYPE_LABEL[type], same.quarter.name, r?.success ? 'replaced the audio-made transcript and re-analysed' : `replaced the audio-made transcript, analysis failed (${(r as any)?.error})`, extra);
+                return;
+            }
             // A row this feed stored earlier whose analysis did not finish is retried.
             if (!same.hasAnalysis && same.filePath === d.url && !dryRun && !storeOnly && batch) {
                 if (inBatch.has(same.id) || queued.some(i => i.transcriptId === same.id)) {
@@ -482,7 +499,8 @@ async function main() {
                 // Never overwrite a filled quarter: a different call for it is kept as a special call.
                 kind = 'SPECIAL';
                 why = `${fyq} already filled`;
-            } else if (quarterScore(fyq) < await getAcceptanceCutoff(d.co.id)) {
+            } else if (quarterScore(fyq) < await getAcceptanceCutoff(d.co.id)
+                && !(fillWindow && existing.filter(t => t.quarter.q !== GENERAL_Q).length + (accepted.get(d.co.id) || []).filter(p => !/^(AGM|Special)/.test(p.slot)).length < TRANSCRIPT_WINDOW)) {
                 log(d, TYPE_LABEL[type], fyq, 'skipped (older than the quarters kept)', extra);
                 return;
             }

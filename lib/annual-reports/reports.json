@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T05:30:05.144Z",
+ "updated": "2026-11-10T13:45:52.481Z",
  "reports": [
   {
    "company": "Aartech Solonics",
@@ -2292,6 +2292,23 @@
     "The company's tocopherol and sterol plant sat completely idle with zero volumes produced in FY26."
    ],
    "researchedOn": "2026-09-27"
+  },
+  {
+   "company": "Fidel Softech",
+   "sector": "Software",
+   "year": "FY26",
+   "url": "https://www.fidelsoftech.com/Annual-Report/Fidel-Softech-Annual-Report-2025-26.pdf",
+   "auditor": "Kirtane & Pandit gave an unmodified opinion. Revenue recognition and related-party transactions were key audit matters; for the loan and receivables due from LinguaSol, the auditor relied on a personal guarantee from its promoters. Under CARO it noted slight delays in some statutory dues, small unpaid TDS interest from FY23, and ₹15.53cr of loans to the US subsidiary Fidelsoft Inc.",
+   "relatedParties": "Dealings with related parties, subsidiaries and others gave about 28% of the parent's FY26 revenue, and loans and receivables due from them were about 34% of its assets. Fidel Consulting KK bought ₹6.57cr of services, and CoolPro International was paid ₹1.37cr for professional services. The parent paid ₹6.82cr to promoter Sunil Kulkarni to buy Fidel Technologies KK, from which he also draws pay. LinguaSol owes a ₹2.71cr loan at 7% plus ₹0.83cr in receivables, to be cleared by FY30.",
+   "contingent": "None: the accounts show no contingent liabilities at March 2026 or March 2025.",
+   "other": "Statutory segment notes show 95% of FY26 consolidated revenue (₹97.5cr of ₹102.4cr) came from outside India. Group profit included ₹9.3cr from the parent, ₹2.0cr from IM Corp for one quarter, and ₹1.0cr from Techvine. The balance sheet recorded ₹18.6cr of goodwill on consolidation and ₹8.9cr in intangibles. The Indian parent had 222 permanent employees at March 2026.",
+   "flags": [
+    "About 28% of the parent's FY26 revenue came from related parties, and related loans or receivables made up 34% of its assets.",
+    "LinguaSol owes a ₹2.71cr loan and ₹0.83cr in receivables with no provision made, relying entirely on a personal guarantee and expected turnaround.",
+    "The parent paid ₹6.82cr to the promoter to acquire Fidel Technologies KK, a subsidiary from which he also draws pay.",
+    "The secretarial audit noted compliance lapses, including a late FC-GPR filing, an NSE fine for incorrect voting result formats, and occasional disclosure delays."
+   ],
+   "researchedOn": "2026-11-10"
   },
   {
    "company": "Fiem Industries",
@@ -5993,6 +6010,24 @@
    "researchedOn": "2026-09-28"
   },
   {
+   "company": "Sigma Advanced Systems",
+   "sector": "Aerospace defence",
+   "year": "FY26",
+   "url": "https://nsearchives.nseindia.com/annual_reports/AR_31892_SIGMAADV_2025_2026_A_7695356_08092026180505.pdf",
+   "auditor": "The auditor issued an unmodified opinion with an emphasis of matter on the merger accounting and a GST dispute over joint-development transactions, where ₹16.8 crore was paid under protest. Key audit matters included uncertain tax positions and the merger. A separate auditor noted the UK subsidiary generated ₹348 crore in revenue but recorded a ₹19.1 crore net loss.",
+   "relatedParties": "The company lent ₹121 crore to and borrowed ₹165 crore from promoter Chintalapati Holdings during FY26, owing ₹44.5 crore by the end of March. The company also provided a ₹30.7 crore advance to its associate Indrajaal. The CARO report flagged large loans made to an associate during the year.",
+   "contingent": "Contingent liabilities stood at ₹61.7 crore, which consisted almost entirely of guarantees. There is also an ongoing income-tax dispute for ₹20 crore related to the 2012-13 year, which is pending at the Madras High Court.",
+   "other": "Total FY26 revenue was ₹492 crore, with ₹334 crore coming from outside India. Reported net profit was driven by one-off items, including a ₹184.6 crore gain from selling land and a ₹76.9 crore gain from selling most of a Swiss associate. The company also paid ₹197 crore in net cash for the Nasmyth acquisition.",
+   "flags": [
+    "FY26 net profit relied heavily on one-off gains from land and stake sales rather than core operations.",
+    "The audited UK subsidiary reported a net loss of ₹19.1 crore for the year.",
+    "The company engaged in large related-party lending and borrowing with its promoter entity.",
+    "There are pending tax disputes involving a ₹20 crore income tax claim and a ₹16.8 crore GST claim.",
+    "The secretarial audit noted the company was fined by exchanges for not having enough directors during the year."
+   ],
+   "researchedOn": "2026-11-10"
+  },
+  {
    "company": "Sirca Paints",
    "sector": "Consumer Durables",
    "year": "FY26",
@@ -7529,6 +7564,11 @@
    "company": "PCBL Chemical",
    "year": "FY25",
    "why": "FY25 integrated report used instead"
+  },
+  {
+   "company": "Tonbo Imaging",
+   "year": "NONE",
+   "why": "the abridged prospectus, in place of an annual report (there is none as a listed company)"
   }
  ]
 }
