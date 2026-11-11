@@ -551,7 +551,7 @@ export const industrialsProcess: SectorOverview = {
         {
             company: 'HLE Glascoat', rank: 6, stance: 'TURNAROUND', segment: GLASS,
             what: "Glass-lined reactors (India and Thaletec, Germany), filtration and drying equipment, heat exchangers and glass-fused steel tanks (Omeras).",
-            view: "**Good filtration business, broken core.** Filtration grew 51% and heat transfer 65% in FY26, and debt is falling. But Indian glass-lined prices keep sliding, Omeras lost money, the 16% margin promise was missed and deferred two years, Q1 FY27 earned 7% with no call held, and the auditor flagged related-party dealings. The price needs about {need:HLE Glascoat|30}% a year against my ~10%.",
+            view: "**Good filtration business, broken core.** Filtration grew 51% and heat transfer 65% in FY26, and debt is falling. But Indian glass-lined prices keep sliding, Omeras lost money, the 16% margin promise was missed and deferred two years, Q1 FY27 earned 7% with no call held, and the auditor flagged related-party dealings. A $42–48m heat-exchanger order (about 30% of a year's sales, through November 2028) won on 10 Nov 2026 helps the one growing division, but does not fix the core (stays pass). The price needs about {need:HLE Glascoat|30}% a year against my ~10%.",
             watch: 'Omeras at ₹45–50cr of quarterly revenue; two quarters of double-digit margins; debt reduction continuing.',
         },
         {
