@@ -449,7 +449,7 @@ export const pharmaOthers: SectorOverview = {
                     caption: 'Q1 FY27 cash and capital, as stated on the calls',
                     columns: ['Company', 'What management said', 'Balance sheet'],
                     rows: [
-                        ['Advanced Enzyme', 'Capex ₹123cr in FY27 (₹50cr R&D centre); buyback of up to ₹69.7cr, about 15.9 lakh shares bought by 23 September', 'Net cash ₹668cr; CRISIL A+'],
+                        ['Advanced Enzyme', 'Capex ₹123cr in FY27 (₹50cr R&D centre; ₹52cr spent in H1); buyback done in October: 24.1 lakh shares at ₹289', 'Net cash ₹668cr; CRISIL A+'],
                         ['Sequent Scientific', 'Capex ₹250–300cr a year; Bioforlife in Italy for about ₹188cr; minority partners to be bought out in 1–2 years', 'Net debt ₹86cr at June (company); ICRA AA-'],
                         ['Sudeep Pharma', 'Core capex about ₹25cr plus ₹300cr for battery phase 1; working capital “170-odd” days; ₹76cr of IPO money for machinery unspent at March', 'Net debt ₹35cr'],
                         ['Jeena Sikho Lifecare', 'Cash and bank about ₹108cr; ₹31.6cr still due on warrants in Chandan Healthcare', 'Net cash ₹92cr'],
@@ -532,7 +532,7 @@ export const pharmaOthers: SectorOverview = {
                     columns: ['Company', 'Promised on the call', 'Capex', 'Track record'],
                     rows: [
                         ['Jeena Sikho Lifecare', 'June: FY27 profit “minimum ₹300 crores”; 2,800–3,000 beds in 3–4 months; margin above 40%; Ayushman in 1–2 months', 'Leased hospitals; ₹42cr added to fixed assets in FY26', '**Missed** on beds and timing: 2,400 beds; margin 41% met; profit pace about ₹240–265cr'],
-                        ['Advanced Enzyme', 'May: double-digit growth; margin within 1–2 points; EU novel-food approval this year', '₹123cr in FY27, the largest in years', '**Missed**: revenue +2% (+8% adding back ₹10cr in transit); margin 27%; approval 3–6 months later'],
+                        ['Advanced Enzyme', 'May: double-digit growth; margin within 1–2 points; EU novel-food approval this year', '₹123cr in FY27, the largest in years', '**Mixed**: Q1 +2% at 27%, Q2 +16% at 34% (H1 +10%); US still flat; approval 3–6 months later'],
                         ['Hexagon Nutrition', 'July (first call): keep the pace of recent years; margin up; plants 35–40% used', 'Nashik rebuild ₹25–30cr', '**Beat** on growth (+43%) and use (47%); margin fell to 11.3%'],
                         ['Accent Microcell', 'Aug 2025: Unit III phase 1 by Oct–Nov 2025 (~₹70cr in FY26); phase 2 trials July 2026; receivables down', 'About ₹60cr phase 1; ₹55–60cr phase 2', '**Missed**: nothing from Unit III in FY26; phase 2 to March 2027; receivables ₹65cr → ₹91cr'],
                         ['Sequent Scientific', 'May: margin 20–22%; drug ingredients back to double-digit growth; ₹800cr EBITDA internal target', '₹250–300cr a year; Bioforlife about ₹188cr', '**Mixed**: revenue +19.5%, adjusted margin 21.6%; ingredients +4%'],
@@ -625,8 +625,8 @@ export const pharmaOthers: SectorOverview = {
         {
             company: 'Advanced Enzyme', rank: 3, stance: 'HARVEST', segment: INGREDIENTS,
             what: "Makes enzymes and probiotics by fermentation for pharma, supplement, food, feed and industrial customers in India, the US and Europe.",
-            view: "**Cash-rich and steady, but barely growing.** ₹668cr of net cash, 68–72% cash conversion and a ₹69.7cr buyback, but sales have compounded about 8% a year for five years, Q1 revenue rose 2% and the margin fell to 27%. ₹369cr of goodwill sits on a US business that has not grown. The price asks for about {need:Advanced Enzyme|14}% a year, a few points more than my ~10%, so I follow rather than own it. **28 Oct 2026:** the price briefly fitted on 23 October and is back to full; with Q2 results not yet out and growth still near 2%, it stays follow.",
-            watch: 'Margin back near 30% in Q2; US growth of 8–10% showing up; any goodwill write-down or capacity decision.',
+            view: "**Cash-rich and steady, but barely growing.** ₹668cr of net cash, 68–72% cash conversion and a ₹69.7cr buyback, but sales have compounded about 8% a year for five years, Q1 revenue rose 2% and the margin fell to 27%. ₹369cr of goodwill sits on a US business that has not grown. The price asks for about {need:Advanced Enzyme|14}% a year, a few points more than my ~10%, so I follow rather than own it. **28 Oct 2026:** the price briefly fitted on 23 October and is back to full; with Q2 results not yet out and growth still near 2%, it stays follow. **11 Nov 2026:** Q2 revenue rose 16% at a 34% margin and the buyback is done, but the US business is still flat and H1 growth was 10%; the price is Full, so it stays follow.",
+            watch: 'The margin holding at 30–32%; US sales turning up by the year-end; any goodwill write-down or capacity decision.',
         },
         {
             company: 'Accent Microcell', rank: 4, stance: 'SCALEUP', segment: INGREDIENTS,
