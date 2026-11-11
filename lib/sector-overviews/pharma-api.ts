@@ -488,7 +488,7 @@ export const pharmaApi: SectorOverview = {
                     caption: 'Q1 FY27 cash and capital, as stated on the calls',
                     columns: ['Company', 'What management said', 'Balance sheet'],
                     rows: [
-                        ['Alivus Life Sciences', 'Free cash ₹90cr after ₹85cr capex; ~₹540cr capex in FY27 from own cash; more stock to secure supply', 'Cash and short-term investments ₹880cr (June); ₹57cr of borrowings'],
+                        ['Alivus Life Sciences', 'Free cash ₹270cr in H1 after ₹190cr capex; ~₹540cr capex in FY27 from own cash', 'Cash and short-term investments ₹1,012cr (September); ₹53cr of borrowings'],
                         ['Acutaas Chemicals', 'Capex ₹56cr (₹15cr Korea, ₹41cr India); working capital 99 days (91 in Q4)', 'Net cash ₹314cr (June, company), up from ₹198cr in March (company; ₹189cr on Screener)'],
                         ['Aarti Drugs', 'No Q1 cash figure; ₹300–400cr of brownfield capex over 2–3 years', 'Borrowings ₹577cr (March); rated AA- by CRISIL and ICRA'],
                         ['IOL Chem & Pharma', '₹495cr of new projects, ~30% spent by September; ₹200–250cr a year of routine capex, all from own cash', 'Borrowings ₹135cr, all working capital, against ~₹231cr of cash and liquid investments (CARE)'],
@@ -576,7 +576,7 @@ export const pharmaApi: SectorOverview = {
                     badgeColumn: 3,
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
-                        ['Alivus Life Sciences', 'Revenue +10–12% in FY27 (new, second-half weighted); margin 30–32%', '~₹540cr in FY27 from own cash; Solapur by Diwali', '**Mixed**: margin beat; Solapur a quarter late; contract deals not yet signed'],
+                        ['Alivus Life Sciences', 'Revenue +10–12% in FY27 (second-half weighted); margin raised from 30–32% to 35–36% in November', '~₹540cr in FY27 from own cash; Solapur Phase 1 in Q3 FY27', '**Ahead**: H1 revenue +11%, margin 39%; Glenmark +1% in Q2; Solapur a quarter late; no new contract projects'],
                         ['Acutaas Chemicals', 'Revenue about +30% (raised from 25% on the Q2 call); margin 38–40% (raised from FY26’s 35.9%); ₹1,000cr of contract revenue in FY27 (a year early), ₹2,000cr by FY30', 'About ₹300cr in FY27 (₹124cr in H1), including a ₹100cr electronic-grade plant for H1 FY29, plus R&D and land', '**Beat** (Q2 call): revenue +43%, margin 40%; battery sales began; Korean plant early'],
                         ['Aarti Drugs', 'Margin: “14% is quite doable” (13.5–14% in May), and “15% should be very easy” once the new plants fill; volume +10–15% for two years', '₹300–400cr brownfield over 2–3 years', '**Mixed**: margin and methylamines beat; volume +3.5% against 8–10%'],
                         ['IOL Chem & Pharma', 'Revenue +15–20%; margin 14–15%; FY28 +15–20% at 15–17%', '₹495cr of new projects; ₹200–250cr a year; ₹1,200–1,400cr greenfield over 4–5 years', '**Beat**: Q1 +37% at 14.6% against ~15% and 14–14.5%; did not raise'],
@@ -665,8 +665,8 @@ export const pharmaApi: SectorOverview = {
         {
             company: 'Alivus Life Sciences', rank: 1, stance: 'COMPOUNDER', segment: NICHE,
             what: "Makes active ingredients for regulated markets, mainly heart, nervous-system and high-potency (cancer) medicines, for about 900 customers. It was Glenmark's API arm, is now 74.9% owned by Nirma, and Glenmark remains its largest customer.",
-            view: "**The best filing moat in the group at a price that asks for about what I expect.** 617 master files and certificates, clean US inspections, a filed margin of 29–34% and ₹880cr of cash, with sales to customers other than Glenmark up 26.5% in Q1, mostly volume. But Glenmark was 29% of FY26 revenue and fell 52.6% in Q1, the new 10–12% guide needs a strong second half, and Solapur slipped a quarter. The price needs about {need:Alivus Life Sciences|17}% a year against my ~15%.",
-            watch: 'Glenmark orders in H2 FY27 and revenue reaching ₹720–740cr a quarter; Solapur running by Diwali and a regulator inspecting it; the two contract deals being signed.',
+            view: "**The best filing moat in the group at a price that asks for about what I expect.** 617 master files and certificates, clean US inspections, a filed margin of 29–34% and ₹880cr of cash, with sales to customers other than Glenmark up 26.5% in Q1, mostly volume. But Glenmark was 29% of FY26 revenue and fell 52.6% in Q1, the 10–12% guide needs a strong second half, and Solapur slipped a quarter. Q2 FY27 helped: revenue +16%, a margin of about 39% on new launches, the FY27 margin guide raised to 35–36%, Glenmark guided to ₹700–750cr for the year and cash up to ₹1,012cr (11 Nov 2026: stays own). The price needs about {need:Alivus Life Sciences|17}% a year against my ~15%.",
+            watch: 'Glenmark orders in H2 FY27 and revenue reaching ₹720–740cr a quarter; Solapur Phase 1 running in Q3 and a regulator inspecting it; the margin holding 35–36% as launch prices fade; new contract (CDMO) projects signed.',
         },
         {
             company: 'Acutaas Chemicals', rank: 2, stance: 'PRICED', segment: ANCHOR,
