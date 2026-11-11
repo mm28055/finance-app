@@ -11944,7 +11944,11 @@
    "text": "Margin holding in the 18–20% target range as scanner sales return",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Margin 19.2% in Q2 FY27 even with scanner sales down to ₹3.5cr",
+   "outcome": "Stays follow",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "laxmi-denta-q4fy27-2",
@@ -11965,7 +11969,11 @@
    "text": "Domestic lab growth above 15% (was 12%)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Domestic lab +15% in Q2 FY27, level with, not above, 15%",
+   "outcome": "Stays follow",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "tarsons-products-q2fy27-1",
@@ -17114,7 +17122,13 @@
    "text": "Zambia supplies ($25m) starting in Q3–Q4",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (Nov 2026): purchase orders received; goods shipped in Q4 FY27 but revenue booked on delivery in Q1 FY28"
+    }
+   ]
   },
   {
    "id": "akums-drugs-q4fy27-2",
@@ -17132,7 +17146,11 @@
    "text": "Contract (CDMO) margin at the upper end of the 14–15% guide",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Contract operating profit ₹168cr on ₹1,115cr in Q2 FY27, about 15.1%",
+   "outcome": "Stays follow",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "innova-captab-q2fy27-1",
@@ -17550,7 +17568,8 @@
    "status": "met",
    "actual": "33.5%",
    "resolvedOn": "2026-11-09",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow: margin back, but US flat and the price is Full"
   },
   {
    "id": "advanced-enzyme-q2fy27-2",
@@ -17559,7 +17578,11 @@
    "text": "US sales growth of 8–10% showing up",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "US business 'dull' in H1 FY27; pick-up now expected toward the year-end",
+   "outcome": "Stays follow",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "advanced-enzyme-q4fy27-1",
@@ -31688,7 +31711,13 @@
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
    "status": "pending",
-   "project": "akums-drugs-baddi-oral"
+   "project": "akums-drugs-baddi-oral",
+   "revisions": [
+    {
+     "on": "2026-11-11",
+     "text": "Q2 FY27 call (Nov 2026): Phase 1 oral solids (over 6 billion units) to be fully operational by Q1 FY28"
+    }
+   ]
   },
   {
    "id": "piramal-pharma-lexington-m1",

@@ -3383,7 +3383,7 @@
     "company": "Sobha",
     "sector": "Realty",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 28 Oct 2026: transcript not yet filed (Screener lists none and the company site has none); left open for the next run. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run. 1 Nov 2026: transcript still not filed (Screener lists only the presentation); left open for the next run. 6 Nov 2026: transcript still not filed (Screener lists only the presentation and recording); left open for the next run.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 28 Oct 2026: transcript not yet filed (Screener lists none and the company site has none); left open for the next run. 30 Oct 2026: transcript still not filed (Screener lists none); left open for the next run. 1 Nov 2026: transcript still not filed (Screener lists only the presentation); left open for the next run. 6 Nov 2026: transcript still not filed (Screener lists only the presentation and recording); left open for the next run. 11 Nov 2026: transcript still not filed (Screener lists only the presentation or recording); left open for the next run.",
     "addedOn": "2026-10-27"
   },
   {
@@ -4607,7 +4607,7 @@
     "company": "Kirloskar Pneumatic",
     "sector": "Pumps Comp & Eng",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 6 Nov 2026: transcript not yet filed (Screener lists only the recording); left open for the next run.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 6 Nov 2026: transcript not yet filed (Screener lists only the recording); left open for the next run. 11 Nov 2026: transcript still not filed (Screener lists only the presentation or recording); left open for the next run.",
     "addedOn": "2026-11-04"
   },
   {
@@ -4931,7 +4931,7 @@
     "company": "Kirloskar Brothers",
     "sector": "Pumps Comp & Eng",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 6 Nov 2026: transcript not yet filed (Screener lists only the presentation and recording); left open for the next run.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 6 Nov 2026: transcript not yet filed (Screener lists only the presentation and recording); left open for the next run. 11 Nov 2026: transcript still not filed (Screener lists only the presentation or recording); left open for the next run.",
     "addedOn": "2026-11-05"
   },
   {
@@ -5201,7 +5201,7 @@
     "company": "Engineers India",
     "sector": "Construction",
     "subject": "New results call: Q2 FY27",
-    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants. 11 Nov 2026: transcript still not filed (Screener lists only the presentation or recording); left open for the next run.",
     "addedOn": "2026-11-09"
   },
   {
@@ -5230,14 +5230,16 @@
     "sector": "Pharma Others",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-09"
+    "addedOn": "2026-11-09",
+    "handled": "2026-11-11: Q2 FY27 call read (3 Nov): revenue +16% at a 34% margin (H1 +10%), US still flat (checkpoint missed), buyback done (24.1 lakh shares at ₹289), cash ₹640cr. Card, view, guidance rows and watch updated; stays follow (Full)."
   },
   {
     "company": "Laxmi Denta",
     "sector": "Health Products",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-09"
+    "addedOn": "2026-11-09",
+    "handled": "2026-11-11: Q2 FY27 call read: lab +22.7% (international 32%, India 15%, partly), aligners +23.5%, margin 19.2% (met), scanner resales down so revenue +10%; ₹48.1cr of IPO money redirected to own plant. Card, view and watch updated; stays follow (Full)."
   },
   {
     "company": "Epigral",
@@ -5310,7 +5312,8 @@
     "sector": "Pharma CDMO",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-09"
+    "addedOn": "2026-11-09",
+    "handled": "2026-11-11: Q2 FY27 call read (3 Nov): revenue +32%, contract +38.6% at about 15% (met), Zambia revenue to Q1 FY28, API loss ₹5.7cr, Baddi fully running by Q1 FY28, cash ₹1,680cr. Card, view, guidance row and watch updated; stays follow (Full)."
   },
   {
     "company": "Vivid Electromech",
@@ -6546,7 +6549,8 @@
     "sector": "Pharma Others",
     "subject": "Checkpoint met: advanced-enzyme-q2fy27-1",
     "why": "Operating margin back near 30% in Q2 (27% in Q1) — actual 33.5% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-09"
+    "addedOn": "2026-11-09",
+    "handled": "2026-11-11: Met (33.5%). Weighed in the Q2 update; stays follow because the price is Full and the US is flat."
   },
   {
     "company": "Sigachi Industries",
