@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -1036,7 +1036,10 @@
    "target": 14.5,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "13.5%",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "auto"
   },
   {
    "id": "india-pesticides-q3fy27-1",
@@ -1454,7 +1457,10 @@
    "due": "Q2 FY27",
    "ifMet": "Confirms the margin recovery",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "11.3%",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "auto"
   },
   {
    "id": "pricol-q3fy27-1",
@@ -1670,7 +1676,10 @@
    "target": 15,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "14.3%",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "auto"
   },
   {
    "id": "dhoot-transmission-q4fy27-1",
@@ -1712,7 +1721,10 @@
    "target": 20,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "26.6%",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "auto"
   },
   {
    "id": "divgi-torqtransfer-q2fy27-2",
@@ -2629,7 +2641,10 @@
    "ifMet": "Own (if the margin also holds)",
    "ifMissed": "Stay follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹16,500cr",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "auto"
   },
   {
    "id": "tenneco-clean-air-q2fy27-2",
@@ -6134,7 +6149,10 @@
    "target": 8.5,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "8.8%",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "auto"
   },
   {
    "id": "gpt-infraprojects-q4fy27-1",
@@ -6938,7 +6956,10 @@
    "ifMet": "Buy when quarterly revenue shows unstarted projects moving",
    "ifMissed": "Stays follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "₹3,396cr",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "auto"
   },
   {
    "id": "nbcc-q3fy27-1",
@@ -7566,7 +7587,10 @@
    "target": 7,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "5.3%",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "auto"
   },
   {
    "id": "ifb-industries-q3fy27-1",
@@ -16531,7 +16555,10 @@
    "target": 14,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "16.3%",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "auto"
   },
   {
    "id": "aarti-drugs-q2fy27-2",
@@ -16856,7 +16883,10 @@
    "target": 15,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "30.6%",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "auto"
   },
   {
    "id": "sms-pharmaceuticals-q4fy27-1",
@@ -16880,7 +16910,10 @@
    "target": 22,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "21.5%",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "auto"
   },
   {
    "id": "sms-pharmaceuticals-q2fy27-3",
@@ -22802,7 +22835,10 @@
    "due": "Q2 FY27",
    "ifMet": "A floor under the margin is one of the conditions to stop waiting",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "35.5%",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "auto"
   },
   {
    "id": "websol-energy-system-ltd-q2fy27-2",
@@ -23036,7 +23072,10 @@
    "target": 15,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "32.0%",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "auto"
   },
   {
    "id": "bls-international-q4fy27-1",
@@ -38245,7 +38284,10 @@
    "ifMet": "Freight costs are being absorbed and the new plants are starting to cover their fixed costs",
    "ifMissed": "A miss straight after listing; the 'far better' remark was loose talk",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "partly",
+   "actual": "11.9%",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "auto"
   },
   {
    "id": "karamtara-q2fy27-2",

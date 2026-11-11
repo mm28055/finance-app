@@ -6873,5 +6873,390 @@
     "subject": "Checkpoint partly: lcl-q2fy27-1",
     "why": "Operating (EBITDA) margin of about 20% in Q2 FY27, the level the CFO called 'the new normal' and an internal target, even with more lower-priced domestic orders in the mix (Q1: 19.9%; company EBITDA matches Screener's operating profit here, both excluding other income) — actual 19.4% (partly). Steel and parts costs or the domestic mix are eating into margins; FY24's 8% is the reminder of how far they can fall Weigh it in the call and write the outcome on the checkpoint.",
     "addedOn": "2026-11-10"
+  },
+  {
+    "company": "Ganesh Consumer Prod",
+    "sector": "Food Products",
+    "subject": "Call drift: wait → Fits",
+    "why": "Call is wait; the price check has moved from full to fits since the note. Revisit the call.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Bansal Wire Industries",
+    "sector": "Iron and Steel",
+    "subject": "Not in the Iron and Steel note",
+    "why": "Add a company section to the Iron and Steel note (or write the note if the sector has none).",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Fidel Softech",
+    "sector": "Software",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Tonbo Imaging",
+    "sector": "Aerospace defence",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Sigma Advanced Systems",
+    "sector": "Aerospace defence",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "NCC",
+    "sector": "Construction",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Metropolis Health.",
+    "sector": "Healthcare Diagnostic",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Exide Industries",
+    "sector": "Auto Related",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "TeamLease Services",
+    "sector": "Commercial Services",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "SJS Enterprises",
+    "sector": "Auto Related",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Pricol",
+    "sector": "Auto Related",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Dr Lal PathLabs",
+    "sector": "Healthcare Diagnostic",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Diffusion Engineers",
+    "sector": "Industrials",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "NBCC",
+    "sector": "Construction",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Eldeco Housing & Ind",
+    "sector": "Realty",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Redington",
+    "sector": "Commercial Services",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Alembic Pharma",
+    "sector": "Pharma",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "SMS Pharmaceuticals",
+    "sector": "Pharma API",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "V-Mart Retail",
+    "sector": "Retail",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Stylam Industrie",
+    "sector": "Consumer Durables",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Honasa Consumer (Mamaearth)",
+    "sector": "Consumer Durables",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Karamtara Engineering",
+    "sector": "Construction - Power",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Websol Energy System Ltd",
+    "sector": "Solar PV Cells EPC",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "India Pesticides",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Cosmo First",
+    "sector": "Packaging",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Electronics Mart Ind",
+    "sector": "Retail",
+    "subject": "New Special call 05 Nov 2026",
+    "why": "Special call 05 Nov 2026 (held after the note was written). Add any new guidance, targets or plans to this company's section.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "GR Infraprojects",
+    "sector": "Construction",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Global Health (Medanta)",
+    "sector": "Hospitals",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "IFB Industries",
+    "sector": "Consumer Durables",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Dhoot Transmission",
+    "sector": "Auto Related",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Tenneco Clean Air",
+    "sector": "Auto Related",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Standard Glass",
+    "sector": "Industrials",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Centum Electronics",
+    "sector": "EMS & Electronics",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "R Systems International",
+    "sector": "Software",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "BLS International",
+    "sector": "Travel Services",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Akzo Nobel",
+    "sector": "Consumer Durables",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Divgi Torqtransfer",
+    "sector": "Auto Related",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Arihant Superstruct.",
+    "sector": "Realty",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Aegis Vopak Terminals",
+    "sector": "Oil",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Aegis Logistics",
+    "sector": "Logistics",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Aarti Drugs",
+    "sector": "Pharma API",
+    "subject": "New results call: Q2 FY27",
+    "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "India Pesticides",
+    "sector": "Agrochemical & Fertilizers",
+    "subject": "Checkpoint partly: india-pesticides-q2fy27-1",
+    "why": "Operating margin above CARE's 14.5% line — actual 13.5% (partly).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Pricol",
+    "sector": "Auto Related",
+    "subject": "Checkpoint partly: pricol-q2fy27-1",
+    "why": "Q2 FY27 operating margin above 12% after price indexation — actual 11.3% (partly).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Dhoot Transmission",
+    "sector": "Auto Related",
+    "subject": "Checkpoint partly: dhoot-transmission-q2fy27-1",
+    "why": "Operating margin holds at 15–16% as copper settles — actual 14.3% (partly).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Divgi Torqtransfer",
+    "sector": "Auto Related",
+    "subject": "Checkpoint met: divgi-torqtransfer-q2fy27-1",
+    "why": "Operating margin at '20–22% and above' once the Indonesian order fades — actual 26.6% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Tenneco Clean Air",
+    "sector": "Auto Related",
+    "subject": "Checkpoint met: tenneco-clean-air-q2fy27-1",
+    "why": "Half-year lifetime order book at or above ₹12,400cr — actual ₹16,500cr (met). Own (if the margin also holds) Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "NCC",
+    "sector": "Construction",
+    "subject": "Checkpoint met: ncc-q2fy27-2",
+    "why": "Operating margin of 8.5–9% as guided — actual 8.8% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "NBCC",
+    "sector": "Construction",
+    "subject": "Checkpoint missed: nbcc-q2fy27-1",
+    "why": "Q2 FY27 revenue above ₹4,000cr — actual ₹3,396cr (missed). Stays follow Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "IFB Industries",
+    "sector": "Consumer Durables",
+    "subject": "Checkpoint missed: ifb-industries-q2fy27-1",
+    "why": "Operating margin above 7% in Q2 FY27 (CRISIL's upgrade trigger; first of two quarters) — actual 5.3% (missed).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Aarti Drugs",
+    "sector": "Pharma API",
+    "subject": "Checkpoint met: aarti-drugs-q2fy27-1",
+    "why": "Operating margin at 14% or better ('14% is quite doable') — actual 16.3% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "SMS Pharmaceuticals",
+    "sector": "Pharma API",
+    "subject": "Checkpoint met: sms-pharmaceuticals-q2fy27-1",
+    "why": "Growth back towards 15% in Q2–Q3, showing Q1's 6% was a blip — actual 30.6% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "SMS Pharmaceuticals",
+    "sector": "Pharma API",
+    "subject": "Checkpoint partly: sms-pharmaceuticals-q2fy27-2",
+    "why": "Operating margin moving towards 22%, as guided (20% in Q1) — actual 21.5% (partly).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Websol Energy System Ltd",
+    "sector": "Solar PV Cells EPC",
+    "subject": "Checkpoint met: websol-energy-system-ltd-q2fy27-1",
+    "why": "Margin holds at about the lowered 34% anchor (fell every quarter from 47%) — actual 35.5% (met). A floor under the margin is one of the conditions to stop waiting Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "BLS International",
+    "sector": "Travel Services",
+    "subject": "Checkpoint met: bls-international-q2fy27-2",
+    "why": "Revenue growth within the 15–20% target (Q1 was +25%, helped by acquisitions) — actual 32.0% (met).  Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-11"
+  },
+  {
+    "company": "Karamtara Engineering",
+    "sector": "Construction - Power",
+    "subject": "Checkpoint partly: karamtara-q2fy27-1",
+    "why": "Q2 FY27 operating margin clearly above Q1's 11%: on the 7 October call, after the quarter had ended, the Joint MD said Q2 margins were 'far better' despite high freight costs. The company's EBITDA and Screener's operating profit match (both exclude other income). — actual 11.9% (partly). A miss straight after listing; the 'far better' remark was loose talk Weigh it in the call and write the outcome on the checkpoint.",
+    "addedOn": "2026-11-11"
   }
 ]
