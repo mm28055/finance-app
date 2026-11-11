@@ -1,6 +1,478 @@
 {
- "updated": "2026-11-11T09:34:05.762Z",
+ "updated": "2026-11-11T22:27:14.151Z",
  "results": [
+  {
+   "company": "Glottis",
+   "sector": "Logistics",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-11",
+   "readOn": "2026-11-12",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 276.48,
+     "yearAgo": 214.71,
+     "prev": 234.51,
+     "yoy": 28.8,
+     "qoq": 17.9
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 3.62,
+     "yearAgo": 18.13,
+     "prev": 16.3,
+     "yoy": -80,
+     "qoq": -77.8
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 1.31,
+     "yearAgo": 8.44,
+     "prev": 6.95,
+     "yoy": -7.1,
+     "qoq": -5.6
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 0.25,
+     "yearAgo": 12.36,
+     "prev": 10.69,
+     "yoy": -98,
+     "qoq": -97.7
+    }
+   ],
+   "oneOff": "Other income of ₹2cr is 321% of profit before tax this quarter, so profit may not reflect the business.",
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue grew 29% to ₹276cr, but operating profit plunged 80% to ₹4cr.",
+     "Operating margin collapsed to 1.3%, missing expectations of exceeding Q1's 6.9%.",
+     "Net profit dropped 98% to ₹0.25cr, heavily cushioned by ₹2cr other income."
+    ],
+    "text": "Revenue grew 29% to ₹276cr, but operating profit plunged 80% to ₹4cr. Operating margin collapsed to 1.3%, missing expectations of exceeding Q1's 6.9%. Net profit dropped 98% to ₹0.25cr, heavily cushioned by ₹2cr other income.",
+    "checks": [
+     {
+      "text": "EBITDA margin a little above Q1's 6.9%",
+      "status": "missed",
+      "why": "Operating margin collapsed to 1.31%"
+     }
+    ],
+    "on": "2026-11-12"
+   }
+  },
+  {
+   "company": "Mishra Dhatu Nigam (MIDHANI)",
+   "sector": "Aerospace defence",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-11",
+   "readOn": "2026-11-12",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 296,
+     "yearAgo": 210,
+     "prev": 239,
+     "yoy": 41,
+     "qoq": 23.8
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 50,
+     "yearAgo": 33,
+     "prev": 37,
+     "yoy": 51.5,
+     "qoq": 35.1
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 17,
+     "yearAgo": 16,
+     "prev": 15,
+     "yoy": 1,
+     "qoq": 2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 28,
+     "yearAgo": 13,
+     "prev": 16,
+     "yoy": null,
+     "qoq": 75
+    }
+   ],
+   "oneOff": "The year-ago quarter's profit included other income of ₹9cr (47% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue grew 41% to ₹296cr, well above the >12.5% full-year growth guidance.",
+     "Operating profit rose 52% to ₹50cr, with margin expanding 2 pts sequentially to 17%.",
+     "Operating margin of 17% still trails the 20–21% target expected from Q3.",
+     "Net profit rose 75% sequentially to ₹28cr."
+    ],
+    "text": "Revenue grew 41% to ₹296cr, well above the >12.5% full-year growth guidance. Operating profit rose 52% to ₹50cr, with margin expanding 2 pts sequentially to 17%. Operating margin of 17% still trails the 20–21% target expected from Q3. Net profit rose 75% sequentially to ₹28cr.",
+    "checks": [
+     {
+      "text": "Approval of the ₹1,000cr modernisation",
+      "status": "unclear",
+      "why": "Requires management commentary on earnings call"
+     }
+    ],
+    "on": "2026-11-12"
+   }
+  },
+  {
+   "company": "Network People Services",
+   "sector": "Software",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-11",
+   "readOn": "2026-11-12",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 68,
+     "yearAgo": 47,
+     "prev": 56,
+     "yoy": 44.7,
+     "qoq": 21.4
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 16,
+     "yearAgo": 14,
+     "prev": 14,
+     "yoy": 14.3,
+     "qoq": 14.3
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 24,
+     "yearAgo": 29,
+     "prev": 25,
+     "yoy": -5,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 13,
+     "yearAgo": 10,
+     "prev": 11,
+     "yoy": 30,
+     "qoq": 18.2
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue up 45% to ₹68cr, trailing the guided 60–70% annual growth rate.",
+     "Operating profit rose 14% to ₹16cr as margin contracted 5 points to 24%.",
+     "Net profit grew 30% to ₹13cr, outpacing operating growth."
+    ],
+    "text": "Revenue up 45% to ₹68cr, trailing the guided 60–70% annual growth rate. Operating profit rose 14% to ₹16cr as margin contracted 5 points to 24%. Net profit grew 30% to ₹13cr, outpacing operating growth.",
+    "checks": [
+     {
+      "text": "Quarterly revenue of ₹75cr or more",
+      "status": "missed",
+      "why": "Reported ₹68cr"
+     },
+     {
+      "text": "Debtor days falling from 195",
+      "status": "unclear",
+      "why": "Balance sheet details not provided"
+     }
+    ],
+    "on": "2026-11-12"
+   }
+  },
+  {
+   "company": "Power Mech Proj.",
+   "sector": "Construction",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-11",
+   "readOn": "2026-11-12",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1609,
+     "yearAgo": 1238,
+     "prev": 1624,
+     "yoy": 30,
+     "qoq": -0.9
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 176,
+     "yearAgo": 146,
+     "prev": 167,
+     "yoy": 20.5,
+     "qoq": 5.4
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 11,
+     "yearAgo": 12,
+     "prev": 10,
+     "yoy": -1,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 88,
+     "yearAgo": 78,
+     "prev": 89,
+     "yoy": 12.8,
+     "qoq": -1.1
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue rose 30% to ₹1,609cr, beating the 20% full-year growth guidance.",
+     "Operating profit grew 21% to ₹176cr, but operating margin fell to 11%.",
+     "Net profit rose 13% to ₹88cr, trailing the 16% base-case target."
+    ],
+    "text": "Revenue rose 30% to ₹1,609cr, beating the 20% full-year growth guidance. Operating profit grew 21% to ₹176cr, but operating margin fell to 11%. Net profit rose 13% to ₹88cr, trailing the 16% base-case target.",
+    "checks": [],
+    "on": "2026-11-12"
+   }
+  },
+  {
+   "company": "Talbros Auto Compont",
+   "sector": "Auto Related",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-11",
+   "readOn": "2026-11-12",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 263,
+     "yearAgo": 213,
+     "prev": 238,
+     "yoy": 23.5,
+     "qoq": 10.5
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 43,
+     "yearAgo": 32,
+     "prev": 39,
+     "yoy": 34.4,
+     "qoq": 10.3
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 16,
+     "yearAgo": 15,
+     "prev": 16,
+     "yoy": 1,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 33,
+     "yearAgo": 23,
+     "prev": 30,
+     "yoy": 43.5,
+     "qoq": 10
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue grew 24% to ₹263cr, outpacing the 18–20% full-year guidance.",
+     "Operating profit rose 34% to ₹43cr, with margins expanding 1 point to 16%.",
+     "Net profit jumped 44% to ₹33cr, running well ahead of base-case expectations."
+    ],
+    "text": "Revenue grew 24% to ₹263cr, outpacing the 18–20% full-year guidance. Operating profit rose 34% to ₹43cr, with margins expanding 1 point to 16%. Net profit jumped 44% to ₹33cr, running well ahead of base-case expectations.",
+    "checks": [
+     {
+      "text": "Marelli's stake sale in chassis joint venture concludes cleanly",
+      "status": "unclear",
+      "why": "Financial results do not state whether sale concluded"
+     }
+    ],
+    "on": "2026-11-12"
+   }
+  },
+  {
+   "company": "Triveni Turbine",
+   "sector": "Electrical Equipment",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-11",
+   "readOn": "2026-11-12",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 491,
+     "yearAgo": 506,
+     "prev": 443,
+     "yoy": -3,
+     "qoq": 10.8
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 63,
+     "yearAgo": 115,
+     "prev": 51,
+     "yoy": -45.2,
+     "qoq": 23.5
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 13,
+     "yearAgo": 23,
+     "prev": 12,
+     "yoy": -10,
+     "qoq": 1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 53,
+     "yearAgo": 91,
+     "prev": 51,
+     "yoy": -41.8,
+     "qoq": 3.9
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue fell 3% to ₹491cr.",
+     "Operating profit slumped 45% to ₹63cr as operating margin dropped 10 points to 13%.",
+     "Net profit fell 42% to ₹53cr, well short of the 14% base-case growth."
+    ],
+    "text": "Revenue fell 3% to ₹491cr. Operating profit slumped 45% to ₹63cr as operating margin dropped 10 points to 13%. Net profit fell 42% to ₹53cr, well short of the 14% base-case growth.",
+    "checks": [
+     {
+      "text": "First US combined-cycle product order won",
+      "status": "unclear",
+      "why": "Order details not disclosed in headline financial results"
+     }
+    ],
+    "on": "2026-11-12"
+   }
+  },
+  {
+   "company": "Vinyas Innovativ",
+   "sector": "EMS & Electronics",
+   "quarter": "H1 FY27",
+   "resultsDate": "2026-11-11",
+   "readOn": "2026-11-12",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": null,
+    "prev": null
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 290,
+     "yearAgo": null,
+     "prev": 302,
+     "yoy": null,
+     "qoq": null
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 34,
+     "yearAgo": null,
+     "prev": 40,
+     "yoy": null,
+     "qoq": null
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 12,
+     "yearAgo": null,
+     "prev": 13,
+     "yoy": null,
+     "qoq": null
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 14,
+     "yearAgo": null,
+     "prev": 22,
+     "yoy": null,
+     "qoq": null
+    }
+   ],
+   "take": {
+    "verdict": "in line",
+    "points": [
+     "Revenue came in at ₹290cr, tracking on course for the 25–30% guided growth.",
+     "Operating margin held at 12%, matching FY26 levels though down from 13% previously.",
+     "Net profit declined to ₹14cr from ₹22cr in the previous period."
+    ],
+    "text": "Revenue came in at ₹290cr, tracking on course for the 25–30% guided growth. Operating margin held at 12%, matching FY26 levels though down from 13% previously. Net profit declined to ₹14cr from ₹22cr in the previous period.",
+    "checks": [],
+    "on": "2026-11-12"
+   }
+  },
   {
    "company": "Avanti Feeds",
    "sector": "Food Products",
