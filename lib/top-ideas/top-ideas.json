@@ -495,7 +495,8 @@
     "Any write-off of registrations, or net new registrations below 20 in FY27 while spending stays above ₹480cr."
    ],
    "worstFacts": [
-    "Q1 FY27 volume fell 1.6%; the volume guide was cut from about 15% to 5–10%.",
+    "Volume fell in both Q1 (−1.6%) and Q2 FY27 (−5.1%): a break trigger; Europe has not yet recovered.",
+    "FY27 registration spending raised to ₹550–600cr (₹420cr in H1) after a costly US data-compensation arbitration.",
     "FY27 sales guide cut from 15–20% to 10–15% between the Q3 and Q4 FY26 calls.",
     "10.3 of FY26's 22% sales growth came from currency; price and mix were negative.",
     "Fewer than 100 net new registrations in three years; only 5 in Q1 FY27 despite ₹273cr spent.",
@@ -508,9 +509,9 @@
     "Receivables at 166 days of sales."
    ],
    "nextChecks": [
-    "Q2 FY27 (due late October): sales above ₹1,000cr (₹929cr last year) with volume growth positive.",
-    "Gross margin at 35% or more and operating margin (before currency) above 15% in Q2.",
-    "Registration count above 3,016 and the year's spending tracking ₹480–550cr, not higher."
+    "Q3 FY27: volume growth positive, led by European restocking; one more fall ends the case.",
+    "Operating margin (company basis, before currency) above 18% in Q3, toward the 18–20% FY27 guide (H1 16.1%).",
+    "FY27 registration spending within ₹550–600cr, with the count above 3,044 (3,016 in June)."
    ]
   },
   {
@@ -979,6 +980,10 @@
   }
  ],
  "changes": [
+  {
+   "date": "2026-11-11",
+   "text": "Sharda Cropchem: break trigger hit — volume fell a second straight quarter (−5.1% in Q2 FY27 after −1.6%), as Europe's drought kept distributors from restocking. Other checks were met: sales ₹1,052cr (+13% on price and mix), gross margin 35.9%, operating margin 15.6%, registrations 3,044; but FY27 registration spending rose to ₹550–600cr. Revenue and margin guides kept, so FY30 profit is unchanged, and at today's price it still earns about 22% a year. Kept in the twelve for now; the owner is asked to decide (Needs a session). If Q3 volume falls again, swap it for the best reserve name (Mahindra Lifespace, about 22% at today's price)."
+  },
   {
    "date": "2026-11-04",
    "text": "Clean Max: H1 FY27 filing showed EBITDA of ₹1,011cr (check met), profit up six-fold to ₹120cr and the ₹3,000cr+ FY28 EBITDA floor kept, but 550 MW commissioned against the 600 MW check, and ₹2,500cr raised in green bonds (debt, not shares). No trigger hit; numbers kept; checks rolled to Q3."
