@@ -604,7 +604,7 @@ export const chemicalsCommodity: SectorOverview = {
                     badgeColumn: 3,
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
-                        ['Epigral', 'Revenue and profit +15–20% a year for 3–5 years; ₹5,000cr revenue by FY31; ~20% return on new projects', 'ECH and CPVC doubling ~₹650cr (now Q3 FY27); ₹600cr epoxy and multipurpose plant in H2 FY28', '**Mixed**: margin 25% held; volume +5% against 10–12%; doubling a quarter late'],
+                        ['Epigral', 'Revenue and profit +15–20% a year for 3–5 years; ₹5,000cr revenue by FY31; ~20% return on new projects', 'ECH and CPVC doubling ~₹650cr (trial runs in November; "within a quarter"); ₹600cr epoxy and multipurpose plant by March 2028', '**Mixed**: Q1 margin 25% held but Q2 18% missed the 22–25% band; H1 revenue +21%; doubling late'],
                         ['GHCL', 'Margins to ‘moderate’; bromine and vacuum salt ₹150–170cr revenue at 40–45% by FY28', 'FY27 ₹140–150cr; greenfield Phase I ~₹4,000cr, undated, under NGT challenge', '**Behind**: margin beat but called transient; new unit slipped a quarter'],
                         ['Styrenix Performance', 'None by policy; margins to return to pre-war levels', 'ABS 100,000 → 150,000 t this financial year (CARE: ₹650–700cr over three years)', '**Mixed**: margin a windfall; volume −26%; ABS timing vaguer'],
                         ['GNFC', 'No forecasts; projects to add ₹1,200–1,500cr revenue and ₹500–600cr contribution', 'FY27 cut from ~₹2,800cr to ₹1,500–1,800cr', '**Behind**: power plant April → September; urea energy norm won'],
@@ -694,8 +694,8 @@ export const chemicalsCommodity: SectorOverview = {
         {
             company: 'Epigral', rank: 1, stance: 'SCALEUP', segment: SALT,
             what: "A Meghmani-group chlor-alkali maker at Dahej that turns most of its chlorine into ECH (India's only plant), CPVC resin, chloromethanes and hydrogen peroxide, with 132 MW of its own power.",
-            view: "**The group's best growth, funded mostly from its own cash.** Derivatives are 52% of revenue, ECH is protected by a duty of up to $557 a tonne, and the ECH and CPVC doubling plus a ₹600cr epoxy plant target ₹5,000cr of revenue by FY31. Net debt is ₹474cr (company, June). But the doubling is a quarter late, CPVC plants run at 50–55%, and Q1's 25% margin had war help. The price needs about {need:Epigral|11}% a year against my ~12%.",
-            watch: 'ECH and CPVC doubling running by December; the CPVC price holding after start-up; epoxy customer approvals from the pilot plant.',
+            view: "**The group's best growth, funded mostly from its own cash.** Derivatives are 52% of revenue, ECH is protected by a duty of up to $557 a tonne, and the ECH and CPVC doubling plus a ₹600cr epoxy plant target ₹5,000cr of revenue by FY31. Net debt is ₹514cr (company, September). But the doubling is late (trial runs in November, commissioning 'within a quarter'), CPVC plants run at 60–65%, and the Q2 FY27 margin fell to 18% against the 22–25% promised, as coal costs rose (11 Nov 2026: one quarter's energy squeeze, so it stays own). The price needs about {need:Epigral|11}% a year against my ~12%.",
+            watch: 'ECH and CPVC doubling commissioned by about February 2027; the margin back to 22–25% in H2; the CPVC price holding after start-up; epoxy customer approvals from the pilot plants.',
         },
         {
             company: 'GHCL', rank: 2, stance: 'HARVEST', segment: SALT,
