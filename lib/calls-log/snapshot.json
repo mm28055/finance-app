@@ -1,5 +1,5 @@
 {
- "date": "2026-11-11",
+ "date": "2026-11-12",
  "calls": {
   "Anthem Biosciences": {
    "call": "follow",
@@ -694,6 +694,10 @@
    "sector": "Software"
   },
   "Saksoft": {
+   "call": "wait",
+   "sector": "Software"
+  },
+  "Fidel Softech": {
    "call": "wait",
    "sector": "Software"
   },
@@ -2477,6 +2481,10 @@
    "call": "wait",
    "sector": "Aerospace defence"
   },
+  "Sigma Advanced Systems": {
+   "call": "pass",
+   "sector": "Aerospace defence"
+  },
   "Rossell Techsys": {
    "call": "avoid",
    "sector": "Aerospace defence"
@@ -2502,6 +2510,10 @@
    "sector": "Aerospace defence"
   },
   "ideaForge Technology": {
+   "call": "wait",
+   "sector": "Aerospace defence"
+  },
+  "Tonbo Imaging": {
    "call": "wait",
    "sector": "Aerospace defence"
   },

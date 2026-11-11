@@ -1,6 +1,33 @@
 {
  "changes": [
   {
+   "date": "2026-11-12",
+   "company": "Fidel Softech",
+   "sector": "Software",
+   "from": null,
+   "to": "wait",
+   "price": 180,
+   "why": "I expect about 12% a year of earnings growth, close to the {need:Fidel Softech|12}% the price needs, but almost all of it would come from buying Softenger; I want the deal closed and the core business growing again first."
+  },
+  {
+   "date": "2026-11-12",
+   "company": "Sigma Advanced Systems",
+   "sector": "Aerospace defence",
+   "from": null,
+   "to": "pass",
+   "price": 922.35,
+   "why": "I expect about 25% a year of earnings growth, less than the {need:Sigma Advanced Systems|31}% the price needs ({label:Sigma Advanced Systems|stretched}), and cash is going the wrong way while the next ₹3,000cr raise and deals are still unknown."
+  },
+  {
+   "date": "2026-11-12",
+   "company": "Tonbo Imaging",
+   "sector": "Aerospace defence",
+   "from": null,
+   "to": "wait",
+   "price": 1529,
+   "why": "Real, owned technology, but profit is not arriving as cash, and the price needs about {need:Tonbo Imaging|33}% a year of earnings growth against my ~18%."
+  },
+  {
    "date": "2026-11-10",
    "company": "Innomet Advanced Materials",
    "sector": "Industrials",
