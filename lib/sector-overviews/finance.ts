@@ -352,7 +352,7 @@ export const finance: SectorOverview = {
                     rows: [
                         ['ICICI Bank', 'Deposits will not constrain loans; ECL ‘well absorbed’ by buffers', 'Core capital 16.19%; liquidity cover 124%'],
                         ['HDFC Bank', 'Loan-to-deposit ratio ‘not a constraint’; ECL effect ‘nothing material’', 'Core capital 17.4%; ₹37,000cr spare provisions'],
-                        ['State Bank of India', 'No costly bulk deposits; capital enough for about ₹12 lakh crore of loans; ECL number in Q2', 'Core capital 12.89%; borrowings +43%'],
+                        ['State Bank of India', 'No costly bulk deposits; capital enough for about ₹12 lakh crore of loans; ECL number in Q2', 'Core capital 12.89% (June); capital adequacy 16.09% (September); borrowings +43%'],
                         ['Northern ARC Capital', 'Spare liquidity about ₹1,300cr; no equity for two years', 'Capital adequacy 22.7%; debt 3.1x equity'],
                         ['OnEMI Technology', '‘Comfortably capitalized’ (May); borrowing cost down at least 1 point in three quarters', '40.2%; ₹832cr share issue approved 17 September'],
                         ['Manba Finance', 'Equity ‘by September or latest by October’; gearing below 4x', '24.40%; ₹99.99cr issue at ₹135 approved 22 September'],
@@ -426,7 +426,7 @@ export const finance: SectorOverview = {
                     rows: [
                         ['ICICI Bank', 'Margin ‘range bound’; credit cost about 0.5% normalised', 'Core capital 16.2%', '**Delivered**: core margin 4.28%, credit cost 0.32%; farm provision still held, cards −1.9%'],
                         ['HDFC Bank', 'No loan or margin number; in Q2, margin ‘at the bottom’ and rising from Q3; liquidity cover kept at 110–120%', 'Core capital 17.4%', '**Mixed**: business banking +28% in Q2; margin 3.26% (Q1) → 3.16% (Q2); cheap deposits flat at 32%'],
-                        ['State Bank of India', 'Loans 14–15% (raised from 13–15%); domestic margin about 3%; credit cost within 0.5%', 'Core capital 12.9% after ₹25,000cr raise', '**Delivered**: margin 3.00%, credit cost 0.27%; ECL number slipped to Q2'],
+                        ['State Bank of India', 'Loans 14–15% (raised from 13–15%); domestic margin about 3%; credit cost within 0.5%', 'Core capital 12.9% after ₹25,000cr raise', '**Delivered**: margin 3.00% then 3.11%; credit cost 0.27% then about 0.22%; ECL hit ₹19,500cr after tax, disclosed in Q2'],
                         ['Northern ARC Capital', 'Loans 22–23% (from 22–25%); margin 9.5% next quarter, about 10% by March', '22.7%; no equity for two years', '**Slipping**: margin 9.8% → 9.3%, profit −14% on the quarter; credit cost beat'],
                         ['OnEMI Technology', 'AUM growth raised to 60% plus (Q2 call, from 40% plus); impairment cost down more than 15%; return on equity above 20%; bad loans below 2.25%', '₹832cr preferential issue completed (Q2)', '**Beat** (Q2): AUM +68%, profit doubled, credit cost 6.2%, bad loans 2.18%, borrowing cost down about 0.7 points'],
                         ['Manba Finance', 'Loans 35–40%; return on assets about 3.5%; margin 13–14%', '24.4%; ₹100cr issue at ₹135', '**Missed**: loans +1% on the quarter; borrowing cost up to 10.86%'],
@@ -514,8 +514,8 @@ export const finance: SectorOverview = {
         {
             company: 'State Bank of India', rank: 3, stance: 'CYCLICAL', segment: BANKS,
             what: "India's largest bank, mainly government-owned, with the largest deposit base and branch network, lending to households, farmers, small firms and big companies.",
-            view: "**Cheap for a reason, but cheap enough.** Return on equity about 16% on filed figures (17.9% on its own measure), a 3.00% domestic margin, credit cost of 0.27% and loan-growth guidance raised to 14–15%. Against that, deposits grew 9.7% while loans grew 18.6%, bad loans rose in rupees and the ECL number slipped to Q2. The price needs about {need:State Bank of India|6}% a year against my ~10%.",
-            watch: 'The ECL impact due with Q2 results; early-overdue large loans (₹1,687cr, up from ₹932cr); domestic margin at or above 3%.',
+            view: "**Cheap for a reason, but cheap enough.** Return on equity about 16% on filed figures (17.9% on its own measure), a 3.00% domestic margin, credit cost of 0.27% and loan-growth guidance raised to 14–15%. Against that, deposits grew 9.7% while loans grew 18.6% in Q1, bad loans rose in rupees, and the ECL rules will cost about ₹19,500cr after tax (disclosed in Q2, to be phased in). Q2 FY27 kept the case: domestic margin 3.11%, gross bad loans 1.39%, deposits +12.3%, though ₹7,288cr of the ₹23,038cr profit was a one-off stake sale (11 Nov 2026: stays own). The price needs about {need:State Bank of India|6}% a year against my ~10%.",
+            watch: 'How the ₹19,500cr ECL hit is phased in from April 2027; early-overdue loans (up 15% in Q2, mostly repaid since); domestic margin at or above 3%; farm loans in the drought states.',
         },
         {
             company: 'Northern ARC Capital', rank: 4, stance: 'SCALEUP', segment: NBFC,
