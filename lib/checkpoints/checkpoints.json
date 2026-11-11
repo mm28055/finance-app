@@ -21007,7 +21007,11 @@
    "text": "Order-book figure disclosed, as promised twice",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "No order-book figure on the Q2 FY27 call (4 Nov 2026)",
+   "outcome": "Stays as is; checked in the results pass",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "datamatic-global-ser-q2fy27-2",
@@ -21044,7 +21048,11 @@
    "due": "Q2 FY27",
    "ifMet": "Proof that AI products earn real revenue: could move to buy",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Call-centre (Digital Experiences) only 'stable'; no named revenue from TruAI or KAiBRE on the Q2 FY27 call",
+   "outcome": "Stays as is; checked in the results pass",
+   "resolvedOn": "2026-11-11",
+   "resolvedBy": "review"
   },
   {
    "id": "digitide-solutions-q3fy27-1",

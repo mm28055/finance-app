@@ -772,3 +772,52 @@ Where it mattered, the reviews add what the points missed, mostly profit flatter
 **Results pass:** 83 of 90 reviewed, and every figure checked matches Screener (revenue, operating profit and net profit), so no figure, verdict or point was corrected. Where it matters, the reviews add what the points miss: other income was larger than the whole pre-tax profit at Vikran Engineering, and most of it at Saatvik Green (82%), Thomas Cook (69%), Virtuoso (58%), JNK (53%) and Voltas (48%); negative other income hid a better operating result at Sudarshan, HCG and Basilic Fly; tax rates distorted profit at AvenuesAI, Clean Max, SH Kelkar, Molbio and Voltas. Seven are left for the next run because the Screener lookup could not find them (Enviro Infra, Schneider Electric Infra, TeamLease, KIMS, Chambal, Datamatics, Punjab Chemicals). Seven entries had an analysed call (CE Info, Ellenbarrie, Clean Max, JG Chemicals, SH Kelkar, Shree Pushkar, Shriram Pistons); none of the call notes settles their Q2 checkpoints (debtor days, an onsite contract, Morbi orders, promoter loans, the legacy margin), so those stay pending until the transcripts are read.
 
 **Top 12:** V2 Retail's promoter block sale (4.4%) is not one of its break triggers (those are a new share sale, negative cash, or weak festive same-store growth), so its numbers are unchanged; I added it to the note's watch items. **M&B Engineering needs a look:** its H1 FY27 operating cash was +₹4.5cr, but only because ₹37.8cr of "other bank balances" was released inside operating cash; without it, about −₹33cr. If that money is IPO deposits, its break trigger is hit. The filing does not say, so I changed nothing and added a Needs-a-session item. Arvind SmartSpaces (reserve) raised its bookings guide, but it sits on the reserve list because of price, so nothing changed. No other Top 12 or reserve name was touched.
+
+## 11 November 2026 (Wednesday)
+
+**Checks:** the notes check lists the same 30 problems as before this run, all "company in the sector with no verdict" (newly listed companies waiting for sections, plus Sigma Advanced Systems, Tonbo Imaging and Fidel Softech, which by the 7 Nov rule get a business card but no main-page text). They were on master already, so they did not block the push. The typecheck is clean and no capacity picture is out of date or in error. The two old `weekly-review` branches (30 Sep, 18 Oct) again showed as unmerged only because this copy was shallow; with full history both are part of master, so nothing needed rescuing. The work went to master in three pushes.
+
+**Follow-ups handled: 24. Still open: 257** (174 results calls, 21 project follow-ups, 50 automatically settled checkpoints, 5 "Waiting" entries, 4 call drifts, HEG's demerger and two special calls). I added a Needs-a-session item for the backlog. Seven results calls were checked and are still waiting for a filed transcript: ICICI Bank, CIE Automotive, Ador Welding, Sobha, Kirloskar Pneumatic, Kirloskar Brothers and Engineers India. HEG's electrode company is still not listed and Ganesh Benzoplast's sale has not closed; no filing or news since 8 November touched the other Waiting entries (UPI merchant fee, NPPA cancer-drug margins and prices, ethanol tender).
+
+**Calls changed:** none. Every company below keeps its call.
+
+**Already done by your 11 Nov session:** Sigma Advanced Systems, Tonbo Imaging and Fidel Softech had their cards, management, capacity, projects, checkpoints and pictures in place, so I closed those three entries. Sigma's 5-point promoter drop is dilution from the July 2026 share issue at ₹347, not a sale, and the new card already says so.
+
+**New results calls (transcripts read), own names:**
+- **Epigral** (stays own). Revenue +27% to ₹746cr, but the margin fell to 18%, short of the promised 22–25% (missed), as coal rose 60–70% while caustic prices stayed flat. H1 margin was 22%. The ECH and CPVC doubling was still in trial runs on 2 November and is now due "within a quarter". The epoxy pilot plants are ready (met). Net debt ₹514cr.
+- **Harsha Engineers** (stays own). Indian engineering +24% and the engineering margin back to about 19% (met). Foreign units lost ₹1.7cr (partly met). Romania will be downsized to stop its losses by March 2027, and I added a checkpoint for that. Advantek may end FY27 slightly in the red. Borrowings rose to ₹439cr.
+- **V2 Retail** (stays own, small). Revenue +28%, because the festive season moved into Q3. Same-store sales fell 14.9% (+0.5% after adjusting for the shift). Stock is ₹1,448cr and bank borrowing doubled to ₹528cr. The 50%+ growth guide was kept, but FY28 openings were cut to 120–150. I added a working-capital checkpoint.
+- **Gulf Oil** (stays own). Lubricant volume +16% (met) and revenue +46%, but the margin was 11.6%, just under the 12–14% band (partly met). Borrowings rose to ₹852cr as stock and customer bills swelled with prices. Silvassa's new capacity slips to Q1 FY28 and now costs ₹60–62cr; I revised the project, added a new milestone and redrew the picture.
+- **Sharda Cropchem** (stays own). Sales +13% on price and mix, but volume fell 5.1% (Europe's drought), the second fall in a row. Gross margin was 35.9%. The guides were kept, and FY27 registration spending was raised to ₹550–600cr. No registration write-off (met).
+- **Alivus** (stays own). Revenue +16%, margin about 39% on new launches, and the FY27 margin guide raised to 35–36%. Glenmark grew 1% and is guided at ₹700–750cr for the year. Solapur is still due in Q3. Cash ₹1,012cr.
+- **Apollo Tyres** (stays own). India revenue +26%, but the India margin was 11.1%, as raw materials have risen about 25% since April and prices only up to 15%. Europe fell 12% at a 10.3% margin. H1 capex was ₹1,500cr, partly paid with ₹1,250cr of debentures.
+- **GHCL** (stays own). Revenue flat at a 24.7% margin. Vacuum salt and bromine both started, but bromine reaches full use only in FY28 (project revised, new milestone). I added ₹450cr of salt works and an ₹88cr rail siding as projects and redrew the picture. The board has not committed to the greenfield (met), and there is still no import safeguard (missed). ₹217cr went into working capital in H1.
+- **Atlanta Electricals** (stays own, with flags). Rain held back ₹180cr of finished deliveries, so revenue grew only 23%. Old fixed-price orders cut the margin to 15%, and stock nearly doubled to ₹633cr. Q2 orders were only ₹421cr. The 765 kV technology partner fell through because of sanctions, so it is designing 765 kV itself. The 40% growth aim was kept. Cash in H2 is the test.
+- **Mayur Uniquoters** (stays own). The margin was 28% (met), helped by a provision reversal, but US car exports fell to ₹57cr. The Jaipur line slips to Q1 FY28 (project revised, new milestone, picture redrawn). No polyurethane write-down (met).
+- **SBI** (stays own). Domestic margin 3.11% (met). The expected-loss (ECL) rules will cost about ₹19,500cr after tax, phased in (met). Early-overdue loans rose 15% in the quarter but were mostly repaid (partly met). ₹7,288cr of the ₹23,038cr profit was a one-off stake sale.
+
+**New results calls, follow names:**
+- **Advanced Enzyme** (stays follow). Revenue +16% at 34% (margin checkpoint met), but the US is still flat (missed). The buyback is done.
+- **Laxmi Dental** (stays follow). Lab +22.7% and aligners +23.5% at a 19.2% margin (met), with Indian lab growth at exactly 15% (partly met). Falling scanner resales held revenue to +10%. ₹48.1cr of IPO money moves to its own plant.
+- **Akums** (stays follow). Contract manufacturing +38.6% at about a 15% margin (met). Zambia revenue moves to Q1 FY28, and the API loss widened to ₹5.7cr.
+- **Datamatics** (stays follow, at a fitting price). Revenue +12% and margin 21% with headcount flat, and FY27 guidance narrowed to 9–9.5%. The order book was again not disclosed and the AI products still have no named revenue, so both checks were missed.
+
+**Top 12:**
+- **Sharda Cropchem hit a break trigger:** volume fell a second straight quarter. Its other checks were met and the revenue and margin guides kept, so FY30 profit is unchanged, and at today's price it still earns about 22% a year. I kept it, wrote the trigger into its changes and checks, and added a Needs-a-session item for you to decide. Mahindra Lifespace, the best reserve name, also earns about 22% at today's price.
+- **V2 Retail:** no trigger hit (the festive-quarter same-store test is Q3). Its FY28 opening plan (120–150) is below the 150–180 a year the idea needs, so watch it.
+- **Gulf Oil and Windlas (reserve):** nothing changed.
+
+**Filings pass, 8–10 November** (notes corrected):
+- **HLE Glascoat:** subsidiary Kinam won a $42–48m heat-exchanger order, about 30% of a year's sales. It stays pass.
+- **EPack Prefab:** CFO Rahul Agarwal left on 9 November with no successor named. Management record and note updated.
+- **Titagarh:** the Q2 results again restated earlier periods to correct errors, under an unmodified review. Added to its money paragraph.
+- **Logged only:** Ashoka Buildcon's ₹866cr NHAI order, Hind Rectifiers' ₹18cr guarantee to its French subsidiary, Medplus' ₹130cr buyback (already logged), a 0.56% promoter pledge at Camlin, and South West Pinnacle's CRISIL upgrade to BBB+ (already in the card).
+
+**News pass, 8–10 November:** 4 entries had a clear reason, and none was very important: Brent down 5.9% to $92.57 in a day, and price moves at Chemplast, Data Patterns and GNG Electronics. Nothing in the notes changed.
+
+**Results pass:** all 11 open entries were reviewed, and every figure matches Screener (revenue, operating profit and net profit), so no figure, verdict or point was corrected. The reviews add what the points miss:
+- Other income was larger than pre-tax profit at Whirlpool.
+- A ₹71cr non-operating loss, not the business, caused Precision Camshafts' net loss.
+- Interest and depreciation from new capacity ate the profit growth at KIMS, Enviro Infra and Punjab Chemicals.
+- A 13% tax rate held up TeamLease's profit.
+- Datamatics' call was read, and its two Q2 checkpoints that depend on the call (order book, AI revenue) were marked missed.
