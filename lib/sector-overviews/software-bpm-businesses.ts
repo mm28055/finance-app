@@ -103,7 +103,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Datamatic Global Ser',
-        inShort: ["**A family-run mix of publishing services, finance and document processing, IT projects and call centres**, serving nine of the ten largest global publishers.", "**Good:** the margin reached a record 18.7% in FY26 and about 20% in Q1, with about ₹500cr of net cash. **Watch:** organic growth is guided at only about 8%, two of its three divisions shrank in FY26, and a promised order-book figure has still not been given.", "**Verdict: follow.** A steadier, richer business that grows slowly; follow it for a better price or proof its AI products earn real revenue."],
+        inShort: ["**A family-run mix of publishing services, finance and document processing, IT projects and call centres**, serving nine of the ten largest global publishers.", "**Good:** the margin reached a record 18.7% in FY26 and 21% in Q2 FY27 (revenue +12%) with headcount flat, and it has about ₹500cr of net cash. **Watch:** FY27 growth is guided at only 9–9.5%, call centres are merely 'stable', no AI product has named revenue yet, and a promised order-book figure was again not given.", "**Verdict: follow.** A steadier, richer business that grows slowly; follow it for a better price or proof its AI products earn real revenue."],
         tagline: "A Kanodia-family-run mix of publishing-services technology, finance and document processing, IT projects and call centres, serving mostly US and European clients.",
         revenue: '₹1,987cr (FY26, consolidated)',
         products: [
@@ -111,7 +111,7 @@ const profiles: BusinessProfile[] = [
             { name: 'Digital Technologies', text: "App development, cloud and Salesforce work (through Dextara), automated fare-collection systems for transport agencies, and AI products such as TruAI (insurance underwriting) and KAiBRE (rewriting old software code); 30% of Q1 FY27 revenue." },
             { name: 'Digital Experiences', text: "Call centres in India, the Philippines and the US; 12% of Q1 FY27 revenue and the weakest division, losing work to clients' own in-house teams." },
         ],
-        revenueText: "**Digital Operations (publishing, finance and documents) was 58% of Q1 FY27 revenue**, Digital Technologies 30% and Digital Experiences 12%. By geography, the **US was 54% of FY26 revenue**, the UK and Europe 22% and India 16%.",
+        revenueText: "**Digital Operations (publishing, finance and documents) was 58% of Q1 FY27 revenue**, Digital Technologies 30% and Digital Experiences 12%. By geography, the **US was 54% of FY26 revenue**, the UK and Europe 22% and India 16%. **Q2 FY27** revenue was ₹547cr, up 12%: Digital Operations grew 15.6%, Digital Technologies 8.8%, and Digital Experiences (call centres) was stable. Operating profit rose 30% to ₹116cr (21%) as AI tools let revenue grow with headcount flat at about 15,000; FY27 growth guidance was narrowed to 9–9.5%.",
         mixes: [
             { caption: 'Revenue by segment, Q1 FY27', parts: [{ label: 'Digital Operations', share: 58 }, { label: 'Digital Technologies', share: 30 }, { label: 'Digital Experiences', share: 12 }] },
         ],
