@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T22:12:42.292Z",
+ "updated": "2026-11-12T22:34:50.096Z",
  "events": [
   {
    "company": "GSFC",
@@ -10762,7 +10762,7 @@
    "kind": "call",
    "date": "2026-11-16",
    "time": "12:00 pm",
-   "url": "https://nsearchives.nseindia.com/corporate/ETOETRANS_11112026185153_Earnings_call_intimation-16th_November_2026.pdf"
+   "url": "https://nsearchives.nseindia.com/corporate/ETOETRANS_12112026160335_Earnings_call_intimation-16th_November_2026.pdf"
   },
   {
    "company": "EIH",
@@ -11127,6 +11127,23 @@
    "url": "https://nsearchives.nseindia.com/corporate/HEXAGONNUTRITION_09112026154422_IR_CALL_INTIMATION_FINAL_Signed.pdf"
   },
   {
+   "company": "IFGL Refractories",
+   "sector": "Elect and Refrac",
+   "kind": "call",
+   "date": "2026-11-17",
+   "time": "4:00 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/IFGLEXPOR_12112026131802_Letter_signed.pdf"
+  },
+  {
+   "company": "KRM Ayurveda",
+   "sector": "Pharma Others",
+   "kind": "call",
+   "date": "2026-11-17",
+   "time": "4:00 pm",
+   "url": "https://nsearchives.nseindia.com/corporate/KRMIPO_12112026172101_Intimation_Investors_Meet_17112026.pdf"
+  },
+  {
    "company": "Madhya Bharat Agro Products",
    "sector": "Agrochemical & Fertilizers",
    "kind": "call",
@@ -11134,6 +11151,24 @@
    "time": "12:00 pm",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/MBAPL_11112026173051_MBAPL.pdf"
+  },
+  {
+   "company": "Mamata Machinery",
+   "sector": "Industrial Machinery",
+   "kind": "call",
+   "date": "2026-11-17",
+   "time": "11:00 am",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/MAMATA_12112026214124_MML_Earnings_Call_Intimation_17112026.pdf"
+  },
+  {
+   "company": "Orchid Pharma",
+   "sector": "Pharma",
+   "kind": "call",
+   "date": "2026-11-17",
+   "time": "4:30 pm",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/ORCHPHARMA_12112026150031_Stx_letter__investor_meet_sd.pdf"
   },
   {
    "company": "Skyways Air Services",
@@ -11170,6 +11205,15 @@
    "time": "4:30 pm",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/WHIRLPOOL_11112026160204_Intimation_of_Date_and_Schedule_signed__2_.pdf"
+  },
+  {
+   "company": "ZF Comm Vehic Contr",
+   "sector": "Auto Related",
+   "kind": "call",
+   "date": "2026-11-23",
+   "time": "14:30 hrs.",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/WABCOINDIA_12112026174023_SdSEearningscallintimation.pdf"
   }
  ]
 }
