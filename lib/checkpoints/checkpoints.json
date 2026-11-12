@@ -41478,6 +41478,92 @@
    "project": "mayur-uniquoters-coating-line",
    "createdOn": "2026-11-11",
    "status": "pending"
+  },
+  {
+   "id": "bansal-wire-industries-q3fy27-1",
+   "company": "Bansal Wire Industries",
+   "sector": "Iron and Steel",
+   "text": "Q3 FY27 sales volume about 20% above Q3 FY26 (121,702 t), i.e. about 146,000 t, as guided for H2 FY27 on the 23 October 2026 call; October began with a wire-rod shortage",
+   "due": "Q3 FY27",
+   "ifMet": "The 20% growth plan is back on track after H1 grew 10%",
+   "ifMissed": "Growth stays nearer 10–15%; my 16% estimate is at risk",
+   "createdOn": "2026-11-11",
+   "status": "pending"
+  },
+  {
+   "id": "bansal-wire-industries-q3fy27-2",
+   "company": "Bansal Wire Industries",
+   "sector": "Iron and Steel",
+   "text": "Operating margin of at least 7% in Q3 FY27: the MD committed to ₹7,000–7,500 of operating profit a tonne for H2 FY27 (₹8,150 in Q2), which at about ₹1 lakh of revenue a tonne is about 7%",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 7,
+   "due": "Q3 FY27",
+   "ifMet": "Q2 was not a one-off; Dadri cost savings are holding",
+   "ifMissed": "Q2 was flattered by the inventory gain and good industry margins",
+   "createdOn": "2026-11-11",
+   "status": "pending"
+  },
+  {
+   "id": "bansal-wire-industries-q4fy27-1",
+   "company": "Bansal Wire Industries",
+   "sector": "Iron and Steel",
+   "text": "FY27 operating cash flow of about ₹400cr (the FY27 target in the Q1 presentation; ₹339cr in H1), on the way to ₹800cr+ over FY27–FY28, without trade payables rising further (they rose from ₹369cr to ₹628cr in H1 while bank debt fell ₹219cr)",
+   "due": "Q4 FY27",
+   "ifMet": "Cash generation is real, not just supplier credit; supports moving to follow",
+   "ifMissed": "The cash story rests on payable financing; stays wait",
+   "createdOn": "2026-11-11",
+   "status": "pending"
+  },
+  {
+   "id": "bansal-wire-industries-dadri-60k-m1",
+   "company": "Bansal Wire Industries",
+   "sector": "Iron and Steel",
+   "text": "The 60,000 t Dadri expansion completed and capitalised by Q4 FY27 (Q2 FY27 call and presentation)",
+   "due": "Q4 FY27",
+   "project": "bansal-wire-industries-dadri-60k",
+   "createdOn": "2026-11-11",
+   "status": "pending"
+  },
+  {
+   "id": "bansal-wire-industries-iht-oht-m1",
+   "company": "Bansal Wire Industries",
+   "sector": "Iron and Steel",
+   "text": "The 6,000 t OHT line running, taking IHT and OHT capacity to 15,000 t (\"Q3, or if it stretches maybe Q4\", 23 October 2026 call; Q4 FY27 in the presentation)",
+   "due": "Q4 FY27",
+   "project": "bansal-wire-industries-iht-oht",
+   "createdOn": "2026-11-11",
+   "status": "pending"
+  },
+  {
+   "id": "bansal-wire-industries-steel-cord-m1",
+   "company": "Bansal Wire Industries",
+   "sector": "Iron and Steel",
+   "text": "A first commercial (not trial) order for steel tyre cord from at least one of the three tyre makers testing it; the MD expected one to \"click within the next six months\" on 23 October 2026",
+   "due": "Q4 FY27",
+   "project": "bansal-wire-industries-steel-cord",
+   "createdOn": "2026-11-11",
+   "status": "pending"
+  },
+  {
+   "id": "bansal-wire-industries-sanand-m1",
+   "company": "Bansal Wire Industries",
+   "sector": "Iron and Steel",
+   "text": "Sanand spending under way: the plant appearing in capital work in progress (\"from next quarter or the quarter after that\", 23 October 2026 call)",
+   "due": "Q4 FY27",
+   "project": "bansal-wire-industries-sanand",
+   "createdOn": "2026-11-11",
+   "status": "pending"
+  },
+  {
+   "id": "bansal-wire-industries-sanand-m2",
+   "company": "Bansal Wire Industries",
+   "sector": "Iron and Steel",
+   "text": "The 90,000 t Sanand plant commissioned in FY28 (Q2 FY27 presentation: target commissioning FY2028e)",
+   "due": "Q4 FY28",
+   "project": "bansal-wire-industries-sanand",
+   "createdOn": "2026-11-11",
+   "status": "pending"
   }
  ]
 }

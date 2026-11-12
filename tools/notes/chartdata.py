@@ -53,6 +53,7 @@ SULPHUR = ('Sulphur', 'Sulphur')
 PEST = ('Insecticide & Pesticide', 'Pesticides (technical and formulated)')
 OFC = ('Optical fibre cables', 'Optical fibre cable')
 PCB = ('Printed Circuit Boards (whether or not mounted with IC chips /components)', 'Circuit boards')
+WIREROD = ('Wire Rod (Electrod / Mild Steel / Alloy Steel)', 'Steel wire rod')
 
 # company name → (card file for annual/valuation, card file for quarterly chart, WPI input, investments count as cash?)
 CONFIG = {
@@ -288,6 +289,7 @@ CONFIG = {
         'Scoda Tubes': ('SCODATUBES_s', None, ALLOYSTEEL, False),
         'Shyam Metalics': ('SHYAMMETL', None, IRONORE, False),
         'Sambhv Steel Tubes': ('SAMBHV', None, HR, False),
+        'Bansal Wire Industries': ('BANSALWIRE', None, WIREROD, False),
     },
     'utilities': {
         'Va Tech Wabag': ('WABAG', None, STEELPIPE, True),

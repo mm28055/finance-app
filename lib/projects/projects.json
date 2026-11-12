@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -16190,6 +16190,60 @@
    "source": "Board approval and NSE filing (30 Oct 2026): completion by 31 December 2026, subject to closing conditions; no regulatory approval needed; not a related party. H1 FY27 call and presentation (30 Oct 2026)",
    "updatedOn": "2026-11-10",
    "capacityAdd": "Not plant capacity: about 1,200 people, taking the group to 1,600+, and offices in Singapore, Malaysia and Dubai"
+  },
+  {
+   "id": "bansal-wire-industries-dadri-60k",
+   "company": "Bansal Wire Industries",
+   "sector": "Iron and Steel",
+   "name": "Dadri brownfield expansion (+60,000 t)",
+   "what": "More low-carbon and high-carbon wire lines at the Dadri plant, its largest; \"most of the work has already been done\"",
+   "cost": "Not disclosed separately; most of the ₹177–198cr capital work in progress at September 2026",
+   "expectedStart": "Q4 FY27",
+   "adds": "About 60,000 t a year of wire; at FY26 prices about ₹550cr of sales at full use",
+   "capacityAdd": "+60,000 t a year (+9% on 6.8 lakh t)",
+   "status": "building",
+   "source": "Q2 FY27 call (23 Oct 2026): to be capitalised \"in the next quarter or by the end of 4th Quarter\"; Q2 FY27 presentation: expected completion FY2027 Q4",
+   "updatedOn": "2026-11-11"
+  },
+  {
+   "id": "bansal-wire-industries-sanand",
+   "company": "Bansal Wire Industries",
+   "sector": "Iron and Steel",
+   "name": "Sanand (Gujarat) greenfield plant (90,000 t)",
+   "what": "A new plant at Sanand, Gujarat, for stainless-steel and low-carbon (galvanised) wire, to serve western India from closer by; land bought about a year earlier through the subsidiary BWI Steel, and some spare land may be sold",
+   "cost": "About ₹150cr beyond the land",
+   "expectedStart": "Q4 FY28",
+   "adds": "About 90,000 t a year; at the company's usual 4–5x asset turn, about ₹600–750cr of sales",
+   "capacityAdd": "+90,000 t a year (+13% on 6.8 lakh t)",
+   "status": "planned",
+   "source": "Q2 FY27 call (23 Oct 2026): work started, spending to show \"from next quarter or the quarter after that\"; Q2 FY27 presentation: target commissioning FY2028e (dated here at the year end, Q4 FY28)",
+   "updatedOn": "2026-11-11"
+  },
+  {
+   "id": "bansal-wire-industries-iht-oht",
+   "company": "Bansal Wire Industries",
+   "sector": "Iron and Steel",
+   "name": "IHT and OHT spring wire (9,000 → 15,000 t)",
+   "what": "Induction-hardened (IHT, 9,000 t, selling since FY26) and oil-hardened (OHT, 6,000 t, being installed) tempered spring wire for car suspensions and shock absorbers, much of it for electric vehicles; import substitutes",
+   "expectedStart": "Q4 FY27",
+   "adds": "Management expects ₹15,000–20,000 of operating profit a tonne at good use, against ₹7,000–7,500 for its core wire; break-even at about 60% use",
+   "capacityAdd": "+6,000 t a year of OHT, taking IHT and OHT to 15,000 t",
+   "status": "building",
+   "source": "Q2 FY27 call (23 Oct 2026): OHT \"hopefully in the 3rd Quarter or, if it stretches, maybe in the 4th Quarter\"; Q2 FY27 presentation: 15,000 t by Q4 FY2027; IHT reached positive EBITDA in Q1 FY27",
+   "updatedOn": "2026-11-11"
+  },
+  {
+   "id": "bansal-wire-industries-steel-cord",
+   "company": "Bansal Wire Industries",
+   "sector": "Iron and Steel",
+   "name": "Steel tyre cord (20,000 t pilot, goal 2 lakh t)",
+   "what": "Steel cord for radial tyres, which India mostly imports (demand 2.5–3 lakh t a year); the company says it is the first Indian maker. A 20,000 t pilot line at Dadri, delayed 6–8 months by a fire in the C shed on 2 October 2025. Trial orders from one tyre maker, a second expected, samples approved at a third",
+   "cost": "Pilot built; the 2 lakh t goal was put at about ₹2,000–2,500cr of capex for ₹600–800cr of operating profit (Q1 FY27 call)",
+   "adds": "Price about ₹130–140 a kg; the first two quarters of supply to a customer would be slow; no customer above 20–25% of cord sales",
+   "capacityAdd": "20,000 t pilot today; the big expansion is decided only after approvals",
+   "status": "started",
+   "source": "Q2 FY27 call (23 Oct 2026): at least one of three customers to \"click within the next six months, if not sooner\"; commercialisation hoped for \"within this year\"; FY26 annual report note 38.1 (fire)",
+   "updatedOn": "2026-11-11"
   }
  ]
 }

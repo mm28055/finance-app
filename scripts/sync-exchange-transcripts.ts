@@ -500,7 +500,7 @@ async function main() {
                 kind = 'SPECIAL';
                 why = `${fyq} already filled`;
             } else if (quarterScore(fyq) < await getAcceptanceCutoff(d.co.id)
-                && !(fillWindow && existing.filter(t => t.quarter.q !== GENERAL_Q).length + (accepted.get(d.co.id) || []).filter(p => !/^(AGM|Special)/.test(p.slot)).length < TRANSCRIPT_WINDOW)) {
+                && !(fillWindow && new Set([...existing.filter(t => t.quarter.q !== GENERAL_Q).map(t => t.quarter.name), ...(accepted.get(d.co.id) || []).filter(p => !/^(AGM|Special)/.test(p.slot)).map(p => p.slot)]).size < TRANSCRIPT_WINDOW)) {
                 log(d, TYPE_LABEL[type], fyq, 'skipped (older than the quarters kept)', extra);
                 return;
             }

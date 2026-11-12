@@ -47996,6 +47996,168 @@
     "3–5% of revenue goes to in-house or joint R&D and start-up investments"
    ],
    "source": "H1 FY27 call and presentation (30 Oct 2026), NSE filing of 30 Oct 2026, FY26 presentation and annual report"
+  },
+  {
+   "company": "Bansal Wire Industries",
+   "fingerprint": "d35662e7f3f48ac7",
+   "checkedOn": "2026-11-11",
+   "lines": {
+    "heading": "How full the plants are (Q2 FY27)",
+    "items": [
+     {
+      "name": "Overall",
+      "size": "6.8 lakh t a year in five plants (Dadri 4.2 lakh t)",
+      "usedPct": 74,
+      "usedLabel": "about 74% used",
+      "marker": {
+       "pct": 85,
+       "label": "85–90% aim"
+      },
+      "note": "66% in Q1 FY27 and 68% in FY26 (4.58 lakh t sold); 128,867 t sold in Q2 FY27. The company starts each year with 20–25% spare capacity"
+     }
+    ]
+   },
+   "adds": [
+    {
+     "heading": "What the Dadri expansion adds (Q4 FY27)",
+     "projectId": "bansal-wire-industries-dadri-60k",
+     "bars": [
+      {
+       "name": "Total wire capacity",
+       "sub": "low- and high-carbon wire lines; most of the work done",
+       "base": 680000,
+       "add": 60000,
+       "baseLabel": "today 6,80,000 t",
+       "addLabel": "+60,000 t",
+       "right": "about +9%"
+      }
+     ],
+     "notes": [
+      "About ₹550cr of sales a year at full use and FY26 prices (about ₹90,800 a tonne)"
+     ]
+    },
+    {
+     "heading": "What the Sanand plant adds (target FY28)",
+     "projectId": "bansal-wire-industries-sanand",
+     "bars": [
+      {
+       "name": "Total wire capacity",
+       "sub": "stainless and low-carbon (galvanised) wire",
+       "base": 680000,
+       "add": 90000,
+       "baseLabel": "today 6,80,000 t",
+       "addLabel": "+90,000 t",
+       "right": "about +13%"
+      }
+     ],
+     "notes": [
+      "With the Dadri 60,000 t, capacity reaches about 8.3 lakh t by FY28 (company)",
+      "About ₹600–750cr of sales at the company's usual 4–5x asset turn; serves western India from closer by"
+     ],
+     "caveat": "The FY26 annual report says capacity will reach about 8.9 lakh t \"in the coming years\"; the Q2 FY27 presentation says 8.3 lakh t by FY28"
+    },
+    {
+     "heading": "What the OHT line adds (Q4 FY27)",
+     "projectId": "bansal-wire-industries-iht-oht",
+     "bars": [
+      {
+       "name": "IHT and OHT spring wire",
+       "sub": "for car suspensions and shock absorbers",
+       "base": 9000,
+       "add": 6000,
+       "baseLabel": "IHT today 9,000 t",
+       "addLabel": "+6,000 t OHT",
+       "right": "about +67%"
+      }
+     ],
+     "notes": [
+      "Management expects ₹15,000–20,000 of operating profit a tonne at good use against ₹7,000–7,500 for core wire; break-even at about 60% use. IHT reached positive operating profit in Q1 FY27"
+     ]
+    }
+   ],
+   "money": {
+    "heading": "Money: ₹200–225cr of capex a year for five years, from its own cash (over ₹1,200cr spent in the last 3.5 years)",
+    "items": [
+     {
+      "name": "Dadri expansion (+60,000 t)",
+      "sub": "cost not given separately",
+      "right": "most of the ₹177–198cr work in progress",
+      "status": "building",
+      "projectId": "bansal-wire-industries-dadri-60k"
+     },
+     {
+      "name": "Sanand plant (90,000 t)",
+      "sub": "land already bought",
+      "total": 150,
+      "right": "about ₹150cr beyond land",
+      "status": "planned",
+      "projectId": "bansal-wire-industries-sanand"
+     },
+     {
+      "name": "IHT and OHT spring wire",
+      "sub": "OHT 6,000 t being installed",
+      "right": "no cost given",
+      "status": "building",
+      "projectId": "bansal-wire-industries-iht-oht"
+     },
+     {
+      "name": "Steel tyre cord",
+      "sub": "20,000 t pilot built; goal 2 lakh t",
+      "right": "goal about ₹2,000–2,500cr (July call)",
+      "status": "started",
+      "projectId": "bansal-wire-industries-steel-cord"
+     }
+    ]
+   },
+   "timeline": [
+    {
+     "when": "Q3 FY26",
+     "tone": "done",
+     "text": "Fire in the Dadri C shed (2 Oct 2025)",
+     "sub": "Steel cord delayed 6–8 months; insurance claim pending"
+    },
+    {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "Record 128,867 t, about 74% used",
+     "sub": "IHT profitable; steel-cord trial orders from one tyre maker, samples approved at a third"
+    },
+    {
+     "when": "Q4 FY27",
+     "tone": "next",
+     "text": "Capacity about 7.4 lakh t; IHT and OHT 15,000 t",
+     "milestones": [
+      "bansal-wire-industries-dadri-60k-m1",
+      "bansal-wire-industries-iht-oht-m1",
+      "bansal-wire-industries-steel-cord-m1",
+      "bansal-wire-industries-sanand-m1"
+     ]
+    },
+    {
+     "when": "Q4 FY28",
+     "tone": "later",
+     "text": "Capacity about 8.3 lakh t",
+     "milestones": [
+      "bansal-wire-industries-sanand-m2"
+     ]
+    },
+    {
+     "when": "After approvals",
+     "tone": "maybe",
+     "text": "Steel cord to 2 lakh t",
+     "sub": "only once tyre makers approve; about ₹600–800cr of operating profit targeted"
+    }
+   ],
+   "notes": [
+    "Plants: Dadri, Uttar Pradesh (4.2 lakh t, started January 2024, with the specialty lines), Bahadurgarh, Haryana (Bansal Steel & Power) and three at Ghaziabad",
+    "Capacity was 2.62 lakh t in FY24 and 5.59 lakh t in FY25; capex was ₹510cr in FY24, ₹463cr in FY25 and ₹233cr in FY26, funded by the ₹745cr IPO and debt",
+    "At 85–90% use, today's plants would make about 5.8–6.1 lakh t, roughly ₹5,300–5,600cr of sales at FY26 prices (FY26 sales ₹4,159cr)",
+    "Bead wire: 30,000 t nameplate, running at 10,000–15,000 t while balancing equipment is added; LRPC strand is under 1% of sales",
+    "Sanand: land bought about a year before the October 2026 call through the subsidiary BWI Steel; some spare land may be sold; spending to show in work in progress from Q3 or Q4 FY27",
+    "OHT: \"hopefully in the 3rd Quarter or, if it stretches, maybe in the 4th Quarter\" (23 Oct 2026 call); the presentation says Q4 FY27",
+    "Steel cord: Indian demand 2.5–3 lakh t a year, mostly imported; price about ₹130–140 a kg; the MD expects one of three customers to \"click within the next six months\"; supply to a new customer starts slowly for two quarters, and no customer is to take more than 20–25% of cord sales"
+   ],
+   "source": "Q2 FY27 call (23 Oct 2026) and presentation, Q1 FY27 call (23 Jul 2026) and presentation, FY26 annual report (MD&A, note 38.1), Screener"
   }
  ]
 }

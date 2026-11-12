@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "companies": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -39364,6 +39364,76 @@
     "https://nsearchives.nseindia.com/corporate/FIDEL_30042026161628_TRANSCRIPT_OF_CALL_signed.pdf"
    ],
    "updatedOn": "2026-11-10"
+  },
+  {
+   "company": "Bansal Wire Industries",
+   "sector": "Iron and Steel",
+   "style": "Promoter-run",
+   "styleNote": "Founded by Arun Gupta in 1985 from a family wire-trading house dating to 1938; he is Chairman and Whole-Time Director and his son Pranav Bansal is Managing Director and CEO. The promoter family holds 75.0% (September 2026): Anita Gupta 19.74%, Arun Gupta 19.63%, Arun Kumar Gupta (HUF) 11.72% and Pranav Bansal 8.83% at March 2026, the rest with other family members; 77.99% fell to 75.0% when a family member sold 2.99% on the market on 25 June 2026 to meet the 25% public-shareholding rule. No shares are pledged. The family also owns other wire and steel firms (Bansal High Carbons, Balaji Wires, Bansal Aradhya Steel, Paramhans Wires, Bansal Enterprises Inc and others) that bought about ₹194cr and sold about ₹195cr of goods to the group in FY26; the subsidiary Bansal Steel & Power guarantees about ₹100cr of Bansal Aradhya Steel's loans, and the group pays guarantee fees to two family firms for guaranteeing its own bank loans. Four of seven directors were independent at March 2026; independent director Sunita Bindal resigned on 12 August 2026.",
+   "people": [
+    {
+     "name": "Arun Gupta",
+     "role": "Chairman and Whole-Time Director",
+     "since": "Director since 11 December 1985 (founder); executive chairman since 25 August 2023",
+     "family": true,
+     "relation": "Founder and promoter; father of MD Pranav Bansal",
+     "stake": "19.63% (31 March 2026, annual report); with his wife Anita Gupta (19.74%), his HUF (11.72%) and son Pranav (8.83%) the family held 75.0% in September 2026",
+     "bio": "He is 68 and finished secondary school at Dhanpatmal Virmani Senior Secondary School, Delhi. He has worked in the steel wire industry for over four decades and set up the company in 1985 and the group's other companies; in 2019 the family bought Garg Inox through the insolvency process, now the subsidiary Bansal Steel & Power. He received the Manufacturing Today Lifetime Achievement Award in 2025. FY26 pay ₹2.4cr. He is a director of the subsidiaries and gives a personal guarantee for the group's bank loans."
+    },
+    {
+     "name": "Pranav Bansal",
+     "role": "Managing Director and CEO",
+     "since": "Director since 20 February 2018; Managing Director and CEO since 25 August 2023",
+     "family": true,
+     "relation": "Son of the Chairman, Arun Gupta",
+     "stake": "8.83% (31 March 2026, annual report)",
+     "bio": "He has more than ten years in the business, in business planning and expansion, and leads strategy and operations; he built the Dadri plant, the specialty-wire lines and the B2C business, and runs the results calls. He is also Managing Director of the subsidiary Bansal Steel & Power. ET Now named him CEO of the Year 2025 in its wires and cables category. FY26 pay ₹2.64cr."
+    },
+    {
+     "name": "Umesh Kumar Gupta",
+     "role": "Whole-Time Director and Chief Operating Officer",
+     "since": "Director since 16 June 2022; Whole-Time Director and COO since 17 October 2023",
+     "family": false,
+     "bio": "He has more than three decades of operating experience in the steel wire industry and runs manufacturing; he also sits on the board of Bansal Steel & Power. The annual report says no director is related to another except Pranav Bansal and Arun Gupta. FY26 pay ₹0.36cr."
+    },
+    {
+     "name": "Ghanshyam Das Gujrati",
+     "role": "Chief Financial Officer",
+     "since": "Joined in 2010; CFO since August 2023",
+     "family": false,
+     "bio": "A chartered accountant with about three decades in finance, planning and business management. He presents the results on the calls and is also CFO of the subsidiary Bansal Steel & Power. He was named among India's CFO Icons at a 2025 industry awards event. FY26 pay ₹0.46cr."
+    },
+    {
+     "name": "Sumit Gupta",
+     "role": "Company Secretary and Compliance Officer",
+     "since": "With the company since 17 October 2023",
+     "family": false,
+     "bio": "An associate member of the Institute of Company Secretaries of India with over 14 years of experience in corporate-law compliance."
+    },
+    {
+     "name": "Sonakshi Bansal",
+     "role": "Whole-Time Director, Bansal Steel & Power (subsidiary)",
+     "family": true,
+     "relation": "Listed in the annual report among the directors' relatives; the exact relationship is not stated",
+     "bio": "She is a whole-time director of the Bansal Steel & Power subsidiary (Bahadurgarh plant) and a director of BWI Steel, the subsidiary set up for the Sanand project. The annual report gives no other background."
+    },
+    {
+     "name": "Manu Jain",
+     "role": "Head of Investor Relations and Strategy",
+     "since": "Joined in 2026 (introduced on the 23 October 2026 call)",
+     "family": false,
+     "bio": "Introduced by the MD on the Q2 FY27 call as having recently joined to lead investor relations and strategy. No other background is given in the filings read."
+    }
+   ],
+   "changes": "Independent director Sunita Bindal resigned with effect from 12 August 2026; Ramesh Kumar Choubey joined as an additional independent director the same day (approved at the 17 September 2026 AGM). Manu Jain joined as Head of Investor Relations and Strategy (Q2 FY27 call, October 2026).",
+   "sources": [
+    "https://www.bseindia.com/xml-data/corpfiling/AttachHis/3edb931f-32a3-4204-b765-ce819c9696b4.pdf",
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2095cfed-0210-4d5e-bfc2-352da2130167.pdf",
+    "Q2 FY27 call transcript (23 Oct 2026)",
+    "41st AGM transcript (17 Sep 2026)",
+    "https://scanx.trade/stock-market-news/companies/bansal-wire-promoter-to-sell-2-99-stake-by-aug-31-2026/43833265"
+   ],
+   "updatedOn": "2026-11-11"
   }
  ]
 }

@@ -2804,6 +2804,159 @@ export const ironSteelCharts: Record<string, ProfileCharts> = {
             ],
             "note": "FY22 is before the ISMT tubes business was consolidated."
         }
+    },
+    "Bansal Wire Industries": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 77
+                },
+                {
+                    "label": "Staff",
+                    "share": 4
+                },
+                {
+                    "label": "Other costs",
+                    "share": 11
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 8
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock; power, gas and freight sit in other costs."
+        },
+        "marginVsInput": {
+            "input": "Steel wire rod price",
+            "periods": [
+                "Q2 FY24",
+                "Q3 FY24",
+                "Q4 FY24",
+                "Q1 FY25",
+                "Q2 FY25",
+                "Q3 FY25",
+                "Q4 FY25",
+                "Q1 FY26",
+                "Q2 FY26",
+                "Q3 FY26",
+                "Q4 FY26",
+                "Q1 FY27",
+                "Q2 FY27"
+            ],
+            "margin": [
+                6.0,
+                5.9,
+                6.5,
+                7.5,
+                7.8,
+                7.8,
+                7.4,
+                7.7,
+                7.3,
+                8.3,
+                6.7,
+                4.8,
+                8.0
+            ],
+            "index": [
+                100,
+                100,
+                96,
+                101,
+                99,
+                98,
+                97,
+                98,
+                94,
+                93,
+                100,
+                106,
+                null
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                106.0,
+                105.0,
+                144.0,
+                266.0,
+                310.0
+            ],
+            "ocf": [
+                -12.0,
+                103.0,
+                -541.0,
+                -153.0,
+                333.0
+            ],
+            "fcf": [
+                -31.0,
+                16.0,
+                -1051.0,
+                -616.0,
+                100.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "30.5x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "16.7x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹548cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "-29%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "7%"
+            }
+        ],
+        "statsAsOf": "11 Nov 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                41,
+                52
+            ],
+            "inventoryDays": [
+                55,
+                81
+            ],
+            "payableDays": [
+                4,
+                42
+            ],
+            "cycleDays": [
+                92,
+                91
+            ],
+            "absorbed5y": -1070,
+            "receivables5y": -641,
+            "inventory5y": -754,
+            "payables5y": 363
+        }
     }
 };
 
@@ -2923,5 +3076,11 @@ export const ironSteelValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 841,
         "mcapAtWriting": 7484,
         "peAtWriting": 19.5
+    },
+    "Bansal Wire Industries": {
+        "netDebt": 548,
+        "ttmEbitda": 323.0,
+        "mcapAtWriting": 4856.0,
+        "peAtWriting": 30.5
     }
 };

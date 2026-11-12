@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T13:45:52.481Z",
+ "updated": "2026-11-11T02:59:32.356Z",
  "reports": [
   {
    "company": "Aartech Solonics",
@@ -916,6 +916,25 @@
     "The company engages in significant related-party trading, including ₹51 crore in sales to an enterprise where key management has significant influence."
    ],
    "researchedOn": "2026-09-27"
+  },
+  {
+   "company": "Bansal Wire Industries",
+   "sector": "Iron and Steel",
+   "year": "FY26",
+   "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/3edb931f-32a3-4204-b765-ce819c9696b4.pdf",
+   "auditor": "Prateek Gupta & Company gave an unmodified opinion. They noted one key audit matter regarding the recognition of supplier discounts, which are material to the cost of goods sold and net profitability. A subsidiary with ₹1,363 crore in revenue was audited by a different firm.",
+   "relatedParties": "The company sold about ₹194 crore to promoter-group firms and bought about ₹195 crore from them, plus ₹70 crore for job work and ₹19 crore for fixed assets. Receivables from related parties rose to ₹84.8 crore from ₹31.1 crore, with Bansal Enterprises Inc owing ₹38.5 crore on ₹59.5 crore of sales. A subsidiary guaranteed about ₹100 crore in bank loans for promoter company Bansal Aradhya Steel.",
+   "contingent": "Contingent liabilities include ₹0.95 crore for GST and an EPCG export obligation of ₹215 crore. A subsidiary had pre-insolvency tax demands, including a ₹17.2 crore penalty, which the Delhi High Court orally set aside on April 22, 2026, awaiting a written order.",
+   "outlook": "Management targets reaching a 10% market share in two to three years and expects a double-digit EBITDA margin in the medium term. Total capacity is planned to reach about 8.9 lakh tonnes in the coming years.",
+   "other": "The company reports a single segment, with standalone exports at ₹369 crore in FY26. Return on equity was 11.9% (16.9% in FY25). An independent director resigned in August 2026. The board recommended no dividend. A fire at the Dadri plant caused an estimated ₹1.5 crore inventory loss without physical verification, and depreciation on the damaged machines was not charged.",
+   "flags": [
+    "A subsidiary has guaranteed about ₹100 crore of bank loans for a promoter-group company, Bansal Aradhya Steel.",
+    "Receivables from related parties jumped to ₹84.8 crore, with one promoter company owing ₹38.5 crore against just ₹59.5 crore of sales.",
+    "The auditor flagged the recognition of supplier discounts as a key audit matter material to cost of goods sold and net profitability.",
+    "A fire at the Dadri plant caused an estimated ₹1.5 crore inventory loss that was recorded without physical verification.",
+    "The company did not charge depreciation on the machines damaged by the fire while the insurance claim remained unsettled."
+   ],
+   "researchedOn": "2026-11-11"
   },
   {
    "company": "BASF India",
