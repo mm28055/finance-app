@@ -330,6 +330,8 @@ export interface SectorOverview {
     takeaways?: string[];
     metrics?: MetricSeries[];
     moat?: { sources: MoatSource[]; rows: MoatRow[] };
+    /** Set on the sector page's view: the latest quarter most of the companies have filed, from the live figures. */
+    chartsAsOf?: string;
     /** Open Tab 1 with the margin bar chart and the quality-vs-price chart, as the older notes do. */
     leadCharts?: boolean;
     /** Inputs for the live valuation table (`embed: 'valuation'`) and the live numbers on company cards. */

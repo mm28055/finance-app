@@ -1,0 +1,57 @@
+name: Sector Charts
+
+on:
+  schedule:
+    # 7:00am IST every day: results filed the evening before are on Screener by then.
+    - cron: '30 1 * * *'
+  workflow_dispatch:          # Allow manual trigger from GitHub UI
+
+concurrency:
+  group: sector-charts
+  cancel-in-progress: false
+
+# The job commits lib/sector-overviews/live-metrics.json back to the repository, which redeploys
+# the site with the new chart figures.
+permissions:
+  contents: write
+
+jobs:
+  charts:
+    name: Refresh sector chart figures
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Each note company's Screener page: the morning after its results, otherwise weekly
+      # (at most 300 a run, results first).
+      - name: Read filed figures
+        run: npx tsx scripts/sync-sector-charts.ts --limit=300
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DIRECT_URL: ${{ secrets.DIRECT_URL }}
+
+      - name: Commit the chart figures
+        if: ${{ !cancelled() }}
+        run: |
+          if [ -z "$(git status --porcelain lib/sector-overviews/live-metrics.json)" ]; then
+            echo "No chart changes."
+            exit 0
+          fi
+          git config user.name "sector-charts-bot"
+          git config user.email "sector-charts-bot@users.noreply.github.com"
+          git add lib/sector-overviews/live-metrics.json
+          git commit -m "Update sector chart figures"
+          git pull --rebase
+          git push

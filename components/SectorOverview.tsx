@@ -4,7 +4,7 @@ import {
     BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, LabelList,
     ScatterChart, Scatter, ZAxis, ReferenceLine, CartesianGrid
 } from 'recharts';
-import { BookOpen, ExternalLink, Quote } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 import {
     SectorOverview as SectorOverviewData,
     CompanyVerdict,
@@ -20,12 +20,8 @@ import {
     StancePill,
     DataTableView,
     LiveValuationTable,
-    RankingBlock,
     MetricsGrid,
-    SnapshotsBlock,
-    MoatTable,
 } from './SectorOverviewBlocks';
-import { BusinessProfiles } from './SectorBusinesses';
 
 const SUFFIXES = /\s+(Limited|Ltd|Laboratories|Lifesciences|Life Sciences|Industries|Pharmaceutic|Biosciences|Specialty|Biotech|Drugs|Pharmalabs|Pharmova|Pharma|Captab|Ingrevia|Labs|Healthcare|Research|Remedies|India)\.?$/i;
 
@@ -144,10 +140,6 @@ function SingleSectorOverviewBody({ overview, companies, lookup }: {
     companies: EnrichedCompany[];
     lookup?: EnrichedCompany[];
 }) {
-    // A note with a business tab opens on the analysis; Tab 2 explains the companies.
-    const [tab, setTab] = React.useState<1 | 2>(1);
-    const hasBusinessTab = !!overview.businesses;
-
     const byName = React.useMemo(() => {
         const m = new Map<string, EnrichedCompany>();
         (lookup || companies || []).forEach(c => m.set(c.name.trim().toLowerCase(), c));
@@ -159,13 +151,26 @@ function SingleSectorOverviewBody({ overview, companies, lookup }: {
         [overview.verdicts]
     );
 
+    // The bar chart's margin: the company's latest filed quarter in the chart grid (rebuilt from
+    // Screener nightly), else the dashboard's stored quarter.
+    const latestMargin = React.useMemo(() => {
+        const opm = overview.metrics?.find(m => m.key === 'opm');
+        const out = new Map<string, number>();
+        if (!opm) return out;
+        for (const [company, vals] of Object.entries(opm.values)) {
+            const last = [...vals].reverse().find(x => x !== null && x !== undefined);
+            if (last !== undefined && last !== null) out.set(company, last);
+        }
+        return out;
+    }, [overview.metrics]);
+
     const rows: Row[] = React.useMemo(() => overview.verdicts.map(v => {
         const co = byName.get(v.company.trim().toLowerCase());
         return {
             verdict: v,
             company: co,
             label: labels.get(v.company) ?? shortName(v.company),
-            margin: co?.financials?.ebitdaMargin?.currentQ ?? null,
+            margin: latestMargin.get(v.company) ?? co?.financials?.ebitdaMargin?.currentQ ?? null,
             roce: co?.roce ?? null,
             pe: co?.peRatio ?? null,
             marketCap: co?.marketCap ?? null,
@@ -173,7 +178,7 @@ function SingleSectorOverviewBody({ overview, companies, lookup }: {
             orderBook: co?.financials?.orderBook ?? null,
             ttmSales: co?.ttmSales ?? null,
         };
-    }), [overview.verdicts, byName, labels]);
+    }), [overview.verdicts, byName, labels, latestMargin]);
 
     const marginData = rows
         .filter(r => r.margin !== null)
@@ -226,10 +231,6 @@ function SingleSectorOverviewBody({ overview, companies, lookup }: {
         .map(r => ({ ...r, cover: (r.orderBook! / r.ttmSales!) * 12 }))
         .sort((a, b) => b.cover - a.cover);
     const noBook = rows.filter(r => !((r.orderBook ?? 0) > 0)).map(r => r.label);
-
-    // Companies in the sector that the note does not yet cover.
-    const covered = new Set(overview.verdicts.map(v => v.company.trim().toLowerCase()));
-    const uncovered = (companies || []).filter(c => !covered.has(c.name.trim().toLowerCase()));
 
     const usedStances = Array.from(new Set(overview.verdicts.map(v => v.stance)));
 
@@ -332,13 +333,12 @@ function SingleSectorOverviewBody({ overview, companies, lookup }: {
                     </h2>
                 </div>
                 <p className="text-xs text-gray-500 mt-1.5 max-w-2xl leading-relaxed">
-                    <RichText text={overview.standfirst} />
+                    Charts from filed results; they update by themselves the morning after each company reports.
                 </p>
             </div>
             <div className="text-[10px] text-gray-400 text-right flex-shrink-0 leading-relaxed">
-                <div>As of <span className="text-gray-600 font-medium">{overview.asOfQuarter}</span></div>
-                <div>Written {new Date(overview.lastUpdated).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</div>
-                <div>{overview.verdicts.length} companies covered</div>
+                <div>Latest quarter <span className="text-gray-600 font-medium">{overview.chartsAsOf ?? overview.asOfQuarter}</span></div>
+                <div>{overview.verdicts.length} companies</div>
             </div>
         </div>
 
@@ -356,74 +356,10 @@ function SingleSectorOverviewBody({ overview, companies, lookup }: {
         </>
     );
 
-    const closingBlock = (
-        <>
-    {/* ── The opinion ──────────────────────────────────────────── */}
-    {overview.closing && (
-        <div className="px-5 py-5 border-b border-gray-100 bg-gradient-to-b from-[#F4F9FE] to-white">
-            <div className="max-w-3xl">
-                <div className="flex items-center gap-2 mb-3">
-                    <Quote className="w-3.5 h-3.5 text-[#6B9FCC]" />
-                    <h3 className="text-xs font-semibold text-[#4A7AAF] uppercase tracking-wide">
-                        {overview.closing.heading}
-                    </h3>
-                </div>
-
-                <div className="space-y-2.5">
-                    {overview.closing.body.map((p, i) => (
-                        <p key={i} className="text-[12.5px] text-gray-600 leading-relaxed">
-                            <RichText text={p} />
-                        </p>
-                    ))}
-                </div>
-
-                <div className="mt-4 border-l-2 border-[#6B9FCC] pl-3.5 py-1">
-                    <div className="text-[9px] font-semibold text-[#6B9FCC] uppercase tracking-wider mb-1">
-                        Bottom line
-                    </div>
-                    <p className="text-[13.5px] text-gray-800 font-medium leading-relaxed">
-                        {overview.closing.bottomLine}
-                    </p>
-                </div>
-            </div>
-        </div>
-    )}
-        </>
-    );
-
-    const sourcesBlock = (
-        <>
-    {/* ── Sources ──────────────────────────────────────────────── */}
-    <div className="px-5 py-3 bg-[#FAFBFC]">
-        <h3 className="text-[10px] font-semibold text-gray-500 uppercase tracking-wide mb-1.5">
-            Outside reading
-        </h3>
-        <ul className="space-y-1">
-            {overview.sources.map(s => (
-                <li key={s.url}>
-                    <a
-                        href={s.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[10.5px] text-gray-500 hover:text-[#4A7AAF] inline-flex items-start gap-1 transition-colors"
-                    >
-                        <ExternalLink className="w-2.5 h-2.5 mt-[3px] flex-shrink-0" />
-                        {s.label}
-                    </a>
-                </li>
-            ))}
-        </ul>
-        <p className="text-[9.5px] text-gray-400 mt-2.5 leading-relaxed">
-            Personal research notes, not investment advice. Judgement is a snapshot from {overview.asOfQuarter} and will go stale.
-        </p>
-    </div>
-        </>
-    );
-
     const marginCard = (
         <ChartCard
             title="Where the margins are"
-            subtitle={`EBITDA margin, latest reported quarter (${overview.asOfQuarter} for most).`}
+            subtitle={`EBITDA margin, latest reported quarter (${overview.chartsAsOf ?? overview.asOfQuarter} for most).`}
             height={Math.max(220, marginData.length * 24 + 30)}
         >
             <ResponsiveContainer width="100%" height="100%">
@@ -460,15 +396,9 @@ function SingleSectorOverviewBody({ overview, companies, lookup }: {
 
     const renderEmbed = (sec: typeof overview.sections[number]) => (
         <>
-            {sec.embed === 'ranking' && <RankingBlock verdicts={overview.verdicts} takeaways={overview.takeaways} byName={byName} hideWhat={hasBusinessTab} />}
             {sec.embed === 'metrics' && overview.metrics && overview.metrics.length > 0 && (
                 <MetricsGrid series={overview.metrics} verdicts={overview.verdicts} labels={labels} />
             )}
-            {sec.embed === 'snapshots' && <SnapshotsBlock verdicts={overview.verdicts} byName={byName} />}
-            {sec.embed === 'moat' && overview.moat && (
-                <MoatTable sources={overview.moat.sources} rows={overview.moat.rows} verdicts={overview.verdicts} labels={labels} compact={overview.moatCompact} />
-            )}
-            {sec.embed === 'scatter' && <div className="mt-3 max-w-3xl flex">{scatterCard}</div>}
             {sec.embed === 'valuation' && overview.valuation && (
                 <LiveValuationTable verdicts={overview.verdicts} byName={byName} block={overview.valuation} labels={labels} />
             )}
@@ -478,7 +408,7 @@ function SingleSectorOverviewBody({ overview, companies, lookup }: {
     const renderSection = (sec: typeof overview.sections[number]) => (
         <section key={sec.heading}>
             <h3 className="text-xs font-semibold text-[#4A7AAF] uppercase tracking-wide mb-2">
-                {sec.heading}
+                {sec.heading.replace(/^\d+\.\s*/, '')}
             </h3>
             <div className="space-y-2.5 max-w-3xl">
                 {sec.body.map((p, i) => (
@@ -508,54 +438,23 @@ function SingleSectorOverviewBody({ overview, companies, lookup }: {
         </section>
     );
 
-    // The ten-part note: ranking, charts, sector, snapshots, moat, margins,
-    // growth, risks, valuation, then the summary review as the closing.
+    // The sector page: the margin and quality-vs-price charts, the chart grid and the valuation
+    // section. The written analysis and the company profiles are not shown (the profiles are on
+    // each company's card).
     if (overview.format === 'ranked') {
+        const shown = overview.sections.filter(sec => sec.embed === 'metrics' || sec.embed === 'valuation');
         return (
             <div className="ml-5 mb-3 bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden animate-in slide-in-from-top-1 duration-150">
                 {masthead}
-                {hasBusinessTab && (
-                    <div className="px-5 pt-3 flex flex-wrap gap-1.5 border-b border-gray-100" role="tablist">
-                        {([[1, 'Tab 1 · The analysis'], [2, 'Tab 2 · What the companies do']] as const).map(([k, label]) => (
-                            <button
-                                key={k}
-                                role="tab"
-                                aria-selected={tab === k}
-                                onClick={() => setTab(k)}
-                                className={`text-[11.5px] px-3 py-1.5 rounded-t-md border border-b-0 -mb-px transition-colors ${tab === k
-                                    ? 'bg-white border-gray-200 text-[#4A7AAF] font-semibold'
-                                    : 'bg-[#F4F6F8] border-transparent text-gray-500 hover:text-[#4A7AAF]'}`}
-                            >
-                                {label}
-                            </button>
-                        ))}
+                <div className="px-5 py-4 border-b border-gray-100 flex gap-3 flex-col lg:flex-row">
+                    {marginCard}
+                    {scatterCard}
+                </div>
+                {shown.length > 0 && (
+                    <div className="px-5 py-4 space-y-7">
+                        {shown.map(renderSection)}
                     </div>
                 )}
-                {tab === 2 && overview.businesses ? (
-                    <div className="px-5 py-4 border-b border-gray-100 space-y-7">
-                        {overview.businesses.intro.map(renderSection)}
-                        <BusinessProfiles profiles={overview.businesses.profiles} verdicts={overview.verdicts} valuation={overview.valuation} byName={byName} />
-                    </div>
-                ) : (
-                    <>
-                        {overview.leadCharts && (
-                            <div className="px-5 py-4 border-b border-gray-100 flex gap-3 flex-col lg:flex-row">
-                                {marginCard}
-                                {scatterCard}
-                            </div>
-                        )}
-                        <div className="px-5 py-4 border-b border-gray-100 space-y-7">
-                            {overview.sections.map(renderSection)}
-                            {uncovered.length > 0 && (
-                                <p className="text-[10px] text-gray-400">
-                                    Not yet covered by this note: {uncovered.map(c => c.name).join(', ')}.
-                                </p>
-                            )}
-                        </div>
-                        {closingBlock}
-                    </>
-                )}
-                {sourcesBlock}
             </div>
         );
     }
@@ -617,96 +516,6 @@ function SingleSectorOverviewBody({ overview, companies, lookup }: {
                 </div>
             )}
 
-            {/* ── The note ─────────────────────────────────────────────── */}
-            <div className="px-5 py-4 border-b border-gray-100 space-y-6">
-                {overview.sections.map(sec => (
-                    <section key={sec.heading}>
-                        <h3 className="text-xs font-semibold text-[#4A7AAF] uppercase tracking-wide mb-2">
-                            {sec.heading}
-                        </h3>
-                        <div className="space-y-2.5 max-w-3xl">
-                            {sec.body.map((p, i) => (
-                                <p key={i} className="text-[12.5px] text-gray-600 leading-relaxed">
-                                    <RichText text={p} />
-                                </p>
-                            ))}
-                        </div>
-                        {sec.points && (
-                            <ul className="mt-3 space-y-2 max-w-3xl">
-                                {sec.points.map(pt => (
-                                    <li key={pt.label} className="flex gap-2.5">
-                                        <span className="mt-[7px] w-1 h-1 rounded-full bg-[#A5C4E2] flex-shrink-0" />
-                                        <p className="text-[12.5px] text-gray-600 leading-relaxed">
-                                            <span className="font-semibold text-gray-800">
-                                                {/^.*[.?!:]$/.test(pt.label) ? pt.label : `${pt.label}.`}
-                                            </span>{' '}
-                                            <RichText text={pt.text} />
-                                        </p>
-                                    </li>
-                                ))}
-                            </ul>
-                        )}
-                    </section>
-                ))}
-            </div>
-
-            {/* ── Company by company ───────────────────────────────────── */}
-            <div className="px-5 py-4 border-b border-gray-100">
-                <h3 className="text-xs font-semibold text-[#4A7AAF] uppercase tracking-wide mb-1">
-                    Company by company
-                </h3>
-                <p className="text-[10px] text-gray-400 mb-3">
-                    Judgement written {new Date(overview.lastUpdated).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })};
-                    the figures below refresh with the rest of the dashboard.
-                </p>
-
-                <div className="grid gap-2.5 md:grid-cols-2">
-                    {rows.map(r => (
-                        <div
-                            key={r.verdict.company}
-                            className="border border-gray-200 rounded-lg p-3 hover:border-[#A5C4E2] transition-colors bg-white"
-                            style={{ borderLeftWidth: 3, borderLeftColor: STANCE_CONFIG[r.verdict.stance].hex }}
-                        >
-                            <div className="flex items-start justify-between gap-2">
-                                <span className="text-[13px] font-semibold text-gray-800 leading-tight">
-                                    {r.verdict.company}
-                                </span>
-                                <StancePill stance={r.verdict.stance} className="flex-shrink-0" />
-                            </div>
-
-                            {/* Live metrics */}
-                            <div className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1.5 text-[10px] text-gray-400">
-                                <span>MCap <span className="text-gray-600 font-medium">{fmtCr(r.marketCap)}</span></span>
-                                <span>P/E <span className="text-gray-600 font-medium">{fmtNum(r.pe)}</span></span>
-                                <span>ROCE <span className="text-gray-600 font-medium">{fmtNum(r.roce, '%')}</span></span>
-                                <span>Margin <span className="text-gray-600 font-medium">{fmtNum(r.margin, '%')}</span></span>
-                                <span>Rev YoY <span className={`font-medium ${r.growth === null ? 'text-gray-600' : r.growth >= 0 ? 'text-emerald-600' : 'text-rose-500'}`}>
-                                    {r.growth === null ? '—' : `${r.growth > 0 ? '+' : ''}${r.growth.toFixed(0)}%`}
-                                </span></span>
-                            </div>
-
-                            <p className="text-[11.5px] text-gray-500 italic mt-2 leading-relaxed">{r.verdict.what}</p>
-                            <p className="text-[12px] text-gray-600 mt-2 leading-relaxed">
-                                <RichText text={r.verdict.view} />
-                            </p>
-                            <p className="text-[11.5px] text-gray-500 mt-2 leading-relaxed">
-                                <span className="font-semibold text-gray-700">Watch: </span>
-                                <RichText text={r.verdict.watch} />
-                            </p>
-                        </div>
-                    ))}
-                </div>
-
-                {uncovered.length > 0 && (
-                    <p className="text-[10px] text-gray-400 mt-3">
-                        Not yet covered by this note: {uncovered.map(c => c.name).join(', ')}.
-                    </p>
-                )}
-            </div>
-
-            {closingBlock}
-
-            {sourcesBlock}
         </div>
     );
 }
@@ -732,7 +541,6 @@ export function SectorOverview({ overview, companies, lookup }: {
                     <BookOpen className="w-3.5 h-3.5 text-[#6B9FCC]" />
                     <h2 className="text-base font-semibold text-gray-800 tracking-tight">{overview.title} — Sector Overview</h2>
                 </div>
-                <p className="text-xs text-gray-500 mt-1.5 max-w-3xl leading-relaxed"><RichText text={overview.standfirst} /></p>
                 <div className="flex flex-wrap gap-1.5 mt-3" role="tablist" aria-label={`${overview.title} groups`}>
                     {buckets.map((b, i) => (
                         <button

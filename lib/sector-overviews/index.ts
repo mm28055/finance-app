@@ -1,6 +1,8 @@
 // Every note's full text (~13 MB): server code only. Browser components import from './shared'.
 import { SectorOverview, ValuationBlock } from './types';
 import { companyCallInfo } from './calls';
+import { liveSeries, liveValuationBlock, type LiveStore } from './live-metrics';
+import liveStore from './live-metrics.json';
 import type { BusinessFound, NoteIndex } from './shared';
 import { pharmaCdmo } from './pharma-cdmo';
 import { software } from './software';
@@ -68,6 +70,35 @@ export function getSectorOverview(sector: string): SectorOverview | undefined {
     return BY_SECTOR.get(sector.toLowerCase());
 }
 
+const LIVE = liveStore as unknown as LiveStore;
+
+/**
+ * What the sector page shows: the charts and the valuation section only, with the chart figures
+ * and the valuation's net debt and operating profit rebuilt from the filed accounts
+ * (scripts/sync-sector-charts.ts). The written analysis and the company profiles stay in the
+ * note files but are not sent.
+ */
+function chartsView(o: SectorOverview): SectorOverview {
+    const live = liveSeries(o, LIVE);
+    return {
+        ...o,
+        takeaways: undefined,
+        moat: undefined,
+        businesses: undefined,
+        closing: undefined,
+        metrics: live?.metrics ?? o.metrics,
+        chartsAsOf: live?.latestQuarter ?? undefined,
+        valuation: liveValuationBlock(o.valuation, LIVE),
+        sections: o.sections.filter(s => s.embed === 'metrics' || s.embed === 'valuation'),
+        buckets: o.buckets?.map(b => ({ ...b, note: chartsView(b.note) })),
+    };
+}
+
+export function getSectorCharts(sector: string): SectorOverview | undefined {
+    const o = BY_SECTOR.get(sector.toLowerCase());
+    return o && chartsView(o);
+}
+
 /** Every written note, for features that look across all sectors (e.g. the call filter). */
 export function allSectorOverviews(): SectorOverview[] {
     return OVERVIEWS;
@@ -80,7 +111,7 @@ export function allSectorOverviews(): SectorOverview[] {
 export function noteIndex(): NoteIndex {
     const calls: NoteIndex['calls'] = {};
     for (const [name, info] of companyCallInfo(OVERVIEWS)) {
-        const v = info.valuation;
+        const v = liveValuationBlock(info.valuation, LIVE);
         const valuation: ValuationBlock | undefined = v && {
             writtenOn: v.writtenOn,
             ...(v.lender ? { lender: true } : {}),
@@ -97,7 +128,7 @@ export function businessFor(company: string): BusinessFound | undefined {
     const key = company.trim().toLowerCase();
     const search = (o: SectorOverview): ReturnType<typeof businessFor> => {
         const profile = o.businesses?.profiles.find(p => p.company.trim().toLowerCase() === key);
-        if (profile) return { profile, verdict: o.verdicts.find(v => v.company.trim().toLowerCase() === key), valuation: o.valuation };
+        if (profile) return { profile, verdict: o.verdicts.find(v => v.company.trim().toLowerCase() === key), valuation: liveValuationBlock(o.valuation, LIVE) };
         for (const b of o.buckets || []) { const hit = search(b.note); if (hit) return hit; }
         return undefined;
     };
