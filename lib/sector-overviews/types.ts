@@ -17,7 +17,8 @@ export type Stance =
     | 'CYCLICAL'     // earnings set by prices, not contracts
     | 'HARVEST'      // high returns, no growth; own for the cash, not the compounding
     | 'AVOID'        // structural problem, not a timing problem
-    | 'DELISTED';    // no longer trades (merged or acquired); kept only while the dashboard still lists it
+    | 'DELISTED'     // no longer trades (merged or acquired); kept only while the dashboard still lists it
+    | 'ADDED';       // sector page only: has a company card but joined after the note was ranked
 
 export const STANCE_CONFIG: Record<Stance, { label: string; blurb: string; pill: string; dot: string; hex: string }> = {
     COMPOUNDER: {
@@ -75,6 +76,13 @@ export const STANCE_CONFIG: Record<Stance, { label: string; blurb: string; pill:
         pill: 'bg-gray-100 text-gray-500',
         dot: 'bg-gray-300',
         hex: '#9CA3AF',
+    },
+    ADDED: {
+        label: 'Added later',
+        blurb: 'Joined after the note was written. Its call is on its company card.',
+        pill: 'bg-slate-100 text-slate-600',
+        dot: 'bg-slate-500',
+        hex: '#64748B',
     },
 };
 

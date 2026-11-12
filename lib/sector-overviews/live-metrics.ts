@@ -343,7 +343,16 @@ export function liveValuationBlock(block: ValuationBlock | undefined, store: Liv
     return { ...block, inputs };
 }
 
-/** Every company named in a note, bucket notes included. */
+/** Ranked companies plus those with only a company card, as rows for the sector page's charts. */
+export function chartRows(note: SectorOverview): CompanyVerdict[] {
+    const ranked = new Set(note.verdicts.map(v => keyOf(v.company)));
+    const added = (note.businesses?.profiles || [])
+        .filter(p => !ranked.has(keyOf(p.company)))
+        .map((p): CompanyVerdict => ({ company: p.company, stance: 'ADDED', what: p.tagline, view: '', watch: '', segment: 'Added since the note was written' }));
+    return [...note.verdicts, ...added];
+}
+
+/** Every company on a note's charts, bucket notes included. */
 export function noteCompanies(note: SectorOverview): CompanyVerdict[] {
-    return [...note.verdicts, ...(note.buckets || []).flatMap(b => noteCompanies(b.note))];
+    return [...chartRows(note), ...(note.buckets || []).flatMap(b => noteCompanies(b.note))];
 }

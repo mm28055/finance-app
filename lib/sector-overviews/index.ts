@@ -1,7 +1,7 @@
 // Every note's full text (~13 MB): server code only. Browser components import from './shared'.
 import { SectorOverview, ValuationBlock } from './types';
 import { companyCallInfo } from './calls';
-import { liveSeries, liveValuationBlock, type LiveStore } from './live-metrics';
+import { liveSeries, liveValuationBlock, chartRows, type LiveStore } from './live-metrics';
 import liveStore from './live-metrics.json';
 import type { BusinessFound, NoteIndex } from './shared';
 import { pharmaCdmo } from './pharma-cdmo';
@@ -78,7 +78,9 @@ const LIVE = liveStore as unknown as LiveStore;
  * (scripts/sync-sector-charts.ts). The written analysis and the company profiles stay in the
  * note files but are not sent.
  */
-function chartsView(o: SectorOverview): SectorOverview {
+function chartsView(note: SectorOverview): SectorOverview {
+    // Companies with a card but no ranking (added after the note) join the charts too.
+    const o = { ...note, verdicts: chartRows(note) };
     const live = liveSeries(o, LIVE);
     return {
         ...o,
