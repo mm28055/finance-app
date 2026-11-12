@@ -23,6 +23,7 @@ import {
     HOLD_YEARS,
 } from '@/lib/sector-overviews/shared';
 import { EnrichedCompany } from './SectorList';
+import { displayCase } from '@/lib/display-name';
 
 /**
  * Live figures inside a note's text. A note writes `{pe:Company|38.7}` where a
@@ -266,7 +267,7 @@ export function LiveValuationTable({ verdicts, byName, block, labels }: {
                             const nd = lv!.netDebtToEbitda;
                             return (
                                 <tr key={v.company} className={`border-b border-gray-100 last:border-0 ${zebra}`}>
-                                    <td className={`px-2.5 py-1.5 sticky left-0 ${zebra} font-semibold text-gray-800 whitespace-nowrap`}>{labels.get(v.company) ?? v.company}</td>
+                                    <td className={`px-2.5 py-1.5 sticky left-0 ${zebra} font-semibold text-gray-800 whitespace-nowrap`}>{labels.get(v.company) ?? displayCase(v.company)}</td>
                                     <td className="px-2.5 py-1.5"><PriceCheckBadge check={lv!.check} /></td>
                                     {(() => { const r = heldReturn(lv!.pe, lv!.mine, years); return (
                                         <td className={`px-2.5 py-1.5 text-right tabular-nums font-semibold ${heldTone(r)}`}>{r === null ? '—' : `${r < 0 ? '−' : ''}${Math.abs(Math.round(r))}%`}</td>
@@ -329,7 +330,7 @@ export function RankingBlock({ verdicts, takeaways, byName, hideWhat = false }: 
                             <tr key={v.company} className="border-t border-gray-100 align-top">
                                 <td className="px-2.5 py-2 text-gray-400 font-semibold tabular-nums">{v.rank ?? '—'}</td>
                                 <td className="px-2.5 py-2">
-                                    <div className="font-semibold text-gray-800">{v.company}</div>
+                                    <div className="font-semibold text-gray-800">{displayCase(v.company)}</div>
                                     <div className="mt-1"><StancePill stance={v.stance} /></div>
                                     {v.segment && <div className="text-[10px] text-gray-400 mt-1 leading-snug">{v.segment}</div>}
                                     {byName && (() => {
@@ -533,7 +534,7 @@ export function MetricsGrid({ series, verdicts, labels }: {
                                         return (
                                             <tr key={v.company}>
                                                 <td className="sticky left-0 bg-white px-2 py-0.5 text-gray-700 whitespace-nowrap">
-                                                    {labels.get(v.company) ?? v.company}
+                                                    {labels.get(v.company) ?? displayCase(v.company)}
                                                     {s.cellNotes?.[v.company] && <span className="text-gray-400" title={s.cellNotes[v.company]}> *</span>}
                                                 </td>
                                                 {s.periods.map((p, pi) => {
@@ -574,7 +575,7 @@ export function MetricsGrid({ series, verdicts, labels }: {
                         <div className="text-[12px] font-semibold text-gray-900 tabular-nums">
                             {hover.value === null ? 'Not stated' : fmtMetric(hover.value, s.unit) + (s.unit === 'cr' ? ' cr' : s.unit === 'days' ? ' days' : '')}
                         </div>
-                        <div className="text-[10px] text-gray-500">{hover.company} · {hover.period}</div>
+                        <div className="text-[10px] text-gray-500">{displayCase(hover.company)} · {hover.period}</div>
                         {hover.note && <div className="text-[10px] text-gray-400 mt-0.5 leading-snug">{hover.note}</div>}
                     </div>
                 )}
@@ -644,7 +645,7 @@ export function SnapshotsBlock({ verdicts, byName }: {
                                     style={{ borderLeftWidth: 3, borderLeftColor: STANCE_CONFIG[v.stance].hex }}
                                 >
                                     <div className="flex items-start justify-between gap-2">
-                                        <span className="text-[12.5px] font-semibold text-gray-800 leading-tight">{v.company}</span>
+                                        <span className="text-[12.5px] font-semibold text-gray-800 leading-tight">{displayCase(v.company)}</span>
                                         <StancePill stance={v.stance} className="flex-shrink-0" />
                                     </div>
                                     <div className="flex flex-wrap gap-x-3 mt-1 text-[10px] text-gray-400">
@@ -714,7 +715,7 @@ export function MoatTable({ sources, rows, verdicts, labels, compact = false }: 
                         {sorted.map(r => (
                             <tr key={r.company} className="border-t border-gray-100 align-top">
                                 <td className="sticky left-0 bg-white px-2 py-1.5 font-semibold text-gray-800 whitespace-nowrap">
-                                    {labels.get(r.company) ?? r.company}
+                                    {labels.get(r.company) ?? displayCase(r.company)}
                                 </td>
                                 {sources.map(s => {
                                     const g = r.grades[s.key] ?? { grade: '-' as MoatGrade, note: '' };

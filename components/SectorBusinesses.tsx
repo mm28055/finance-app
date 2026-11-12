@@ -8,6 +8,7 @@ import React from 'react';
 import { BusinessProfile, CompanyVerdict, LiveValuation, MixPart, MOVE_FLAG, ProfileCharts, STANCE_CONFIG, ValuationBlock, liveValuation } from '@/lib/sector-overviews/shared';
 import { PriceCheckBadge, RichText, StancePill, byRank } from './SectorOverviewBlocks';
 import type { EnrichedCompany } from './SectorList';
+import { displayCase } from '@/lib/display-name';
 
 // Categorical slices for a stacked bar, dark to light so adjacent parts separate.
 const SLICE = ['#184f95', '#3987e5', '#6da7ec', '#9ec5f4', '#cde2fb', '#94a3b8', '#cbd5e1', '#e2e8f0'];
@@ -462,7 +463,7 @@ function ProfileCard({ p, verdict, lv, writtenOn }: { p: BusinessProfile; verdic
             style={verdict ? { borderLeftWidth: 3, borderLeftColor: STANCE_CONFIG[verdict.stance].hex } : undefined}
         >
             <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
-                <h4 className="text-[15px] font-semibold text-gray-800 leading-tight min-w-0">{p.company}</h4>
+                <h4 className="text-[15px] font-semibold text-gray-800 leading-tight min-w-0">{displayCase(p.company)}</h4>
                 {verdict && <StancePill stance={verdict.stance} />}
             </div>
             <div className="text-[10.5px] text-gray-400 mt-0.5">Revenue <span className="text-gray-700 font-medium">{p.revenue}</span></div>
@@ -694,7 +695,7 @@ export function BusinessProfiles({ profiles, verdicts, valuation, byName }: {
                         href={`#${anchorId(p.company)}`}
                         className="text-[10.5px] px-2 py-0.5 rounded-md border border-gray-200 text-gray-600 hover:border-[#A5C4E2] hover:text-[#4A7AAF] bg-white"
                     >
-                        {p.company}
+                        {displayCase(p.company)}
                     </a>
                 ))}
             </nav>

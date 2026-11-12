@@ -13,6 +13,7 @@ import {
     liveValuation,
 } from '@/lib/sector-overviews/shared';
 import { EnrichedCompany } from './SectorList';
+import { displayCase } from '@/lib/display-name';
 import {
     RichText,
     LiveTextContext,
@@ -26,7 +27,7 @@ import {
 const SUFFIXES = /\s+(Limited|Ltd|Laboratories|Lifesciences|Life Sciences|Industries|Pharmaceutic|Biosciences|Specialty|Biotech|Drugs|Pharmalabs|Pharmova|Pharma|Captab|Ingrevia|Labs|Healthcare|Research|Remedies|India)\.?$/i;
 
 const shortName = (name: string) => {
-    const base = name.replace(/\s*\(.*\)$/, '').trim();
+    const base = displayCase(name).replace(/\s*\(.*\)$/, '').trim();
     const short = base.replace(SUFFIXES, '').trim();
     // "State Bank of India" must not become "State Bank of", nor "Pine Labs" a bare "Pine".
     return /(\bof|\band|&)$/i.test(short) || /^\S{1,4}$/.test(short) ? base : short;
@@ -275,7 +276,7 @@ function SingleSectorOverviewBody({ overview, companies, lookup }: {
                         if (!p) return null;
                         return (
                             <div className="bg-white border border-gray-200 rounded-lg shadow-sm px-2.5 py-2">
-                                <div className="text-[11px] font-semibold text-gray-800">{p.verdict.company}</div>
+                                <div className="text-[11px] font-semibold text-gray-800">{displayCase(p.verdict.company)}</div>
                                 <div className="text-[10px] text-gray-500 mt-0.5">
                                     ROCE {fmtNum(p.roce, '%')} · P/E {fmtNum(p.pe)} · {fmtCr(p.marketCap)}
                                 </div>
