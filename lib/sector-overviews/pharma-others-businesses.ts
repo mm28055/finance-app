@@ -323,6 +323,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "KRM Ayurveda",
+        "segment": "Care for patients — Ayurvedic hospitals and generic pharmacies",
         "inShort": [
             "**An SME-listed chain of Ayurvedic hospitals and clinics run under the Karma Ayurveda name**, best known for kidney, liver and arthritis treatment, which also makes and sells its own Ayurvedic medicines through telemedicine and its centres.",
             "**Good:** FY26 revenue up 33% to ₹102cr, the operating margin up from 11% in FY24 to 30% in FY26 and 37% in Q1 FY27, no debt and a P/E near 20. **Bad:** of ₹68cr of operating profit over FY23–FY26 only about ₹7cr came in as cash, receivables jumped to about ₹20cr and stock sits for 225 days, much of the hospital business depends on government panels, and the business rests on its founder-doctor with no CFO on calls.",
@@ -404,6 +405,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Amanta Healthcare",
+        "segment": "Contract and hospital-product makers",
         "inShort": [
             "**A Gujarat maker of IV fluids and other sterile liquids in plastic bottles**, led by SteriPort, a polypropylene IV bottle it says holds 50–60% of its niche, plus small-volume eye drops, inhalation solutions and diluents mostly for export.",
             "**Good:** plants run at about 96% and a new SteriPort line nearly doubles that platform's capacity from September 2026; 84–119% of operating profit has turned into cash in each of the last five years. **Bad:** revenue has barely grown (₹280cr in FY24, ₹288cr in FY26), return on capital is only 11–12%, net debt is about ₹151cr even after the IPO, and everything is made at one site.",
@@ -515,6 +517,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Influx Healthtech",
+        "segment": "Contract and hospital-product makers",
         "inShort": [
             "**An SME-listed contract manufacturer in Palghar, near Mumbai, that makes nutraceuticals** (tablets, capsules, powders, gummies, protein bars), plus cosmetics, Ayurvedic, pet-care and home-care products, for 718 brand owners such as Novus Lifesciences.",
             "**Good:** FY26 revenue up 40% to ₹147cr at a 20% margin, no debt, about ₹25cr of cash and a plant 2.5 times larger coming. **Bad:** operating cash flow was only ₹4cr in FY26 against ₹30cr of operating profit, the top 10 clients take about half of sales, and the founder family rents premises to the company, sold it ₹2.19cr of assets and is linked to a packaging supplier.",

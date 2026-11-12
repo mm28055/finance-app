@@ -435,6 +435,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Bluspring Enterprises",
+        "segment": "Staffing and facility services",
         "inShort": [
             "**Supplies outsourced staff-heavy services**: office and campus upkeep and canteens, security guards, telecom tower and industrial maintenance, and now power-plant operation (STEAG India) and airline catering at Bengaluru (LSG), with about 97,000 people; it also owns the loss-making job site foundit.",
             "**Good:** revenue excluding foundit grew 20% in Q1 FY27, STEAG has won about ₹5,200cr of five-year contracts, and management guides FY27 EBITDA above ₹200cr (up 65%). **Bad:** margins are only 2–4% because almost 80% of sales go on wages, the group still made a net loss in FY26 and over the last four quarters because of foundit, both acquisitions were paid for largely with debt, and the stock is up more than three times from its low.",
@@ -533,6 +534,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Seshaasai Technologies",
+        "segment": "Specialist services — distribution, cash logistics, e-auctions, crane hire",
         "inShort": [
             "**Makes and personalises bank cards, cheque books and secure documents for Indian banks and insurers**, and a growing line of RFID tags and SIM cards, from 24 plants; it says it had 31.9% of India's debit and credit card issuance in FY25.",
             "**Good:** a 26% operating margin, about ₹332cr of net cash after its 2025 IPO, about 19 times earnings, and IoT revenue up 145% in Q1 FY27. **Bad:** card revenue fell from ₹1,052cr in FY24 to ₹720cr in FY26 and total revenue fell 1.5% in FY26; the cash cycle doubled from 64 to 127 days in two years; one customer is about 15% of sales and ten are 63%; and the founders own 82%, leaving little free float.",
@@ -636,6 +638,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Manipal Payment & Identity",
+        "segment": "Specialist services — distribution, cash logistics, e-auctions, crane hire",
         "inShort": [
             "**India's largest maker of bank cards**, with about 31.7% of domestic payment cards and 36.4% of credit cards, plus government ID cards and driving licences, branch kiosks, liquor tax stamps, metal cards and growing exports; part of the Pai family's Manipal Group, listed in 2026.",
             "**Good:** revenue up 48% in Q1 FY27 with a 30% operating margin, no bank debt plus IPO cash, 43% return on capital, and exports up to 15% of revenue. **Bad:** revenue grew only 1% in FY25 and 6% in FY26 before Q1's jump, stock has piled up (inventory days rose from 69 to 146 in two years), ten customers give 58% of revenue, and it has only one quarter of listed results.",

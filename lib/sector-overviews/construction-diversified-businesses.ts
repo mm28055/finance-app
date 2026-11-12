@@ -276,6 +276,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "JSW Cement",
+        "segment": "Cement and building materials",
         "inShort": [
             "**The JSW Group's cement company and, by its own account, India's largest maker of GGBS**, a cement substitute made from JSW Steel's blast-furnace slag, with plants in the south, west, east and, since early 2026, Rajasthan in the north.",
             "**Good:** the lowest clinker use in the industry (55%), cheap slag from its parent, volumes up 15% in Q1 FY27 and 26% in Q2, the North plant at break-even in Q2 at 75% use, and a clear path to 43.5 MTPA. **Bad:** net debt rose to ₹4,287cr at September, 3.2 times EBITDA and above the board's 3-times limit, with about ₹7,500cr of capex ahead; the Q2 margin fell to 15% as prices dipped early in the quarter; return on capital was only 5–11% in recent years, Q1 EBITDA fell 7.5% on fuel costs and a ₹40cr North loss, and it depends on group companies for slag.",
@@ -370,6 +371,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "E to E Transportation",
+        "segment": "Power-plant and railway services — erection, upkeep, bridges and signalling",
         "inShort": [
             "**A Bengaluru railway systems contractor (e2E Rail)** that installs signalling, telecom and overhead electrification for Indian Railways, metros and private sidings, and is developing its own Kavach train-protection system through a subsidiary; listed on the NSE SME platform.",
             "**Good:** revenue up 51% to ₹380cr in FY26, an order book of about ₹860cr (2.3 times sales) and a first Kavach approval step in May 2026. **Bad:** operating cash has been negative in four of the last five years (−₹102cr in FY26 against ₹38cr of operating profit), customers took 220 days to pay, borrowings rose from ₹66cr to ₹164cr in a year, the margin is only about 10%, and promoters own just 32.5% of a thinly traded share at about 29 times earnings.",

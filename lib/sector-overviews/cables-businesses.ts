@@ -338,6 +338,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Vidya Wires",
+        "segment": "Qualified cables and transformer conductor — sold on approvals",
         "inShort": [
             "**Makes copper and aluminium winding wires and strips** in Gujarat, the insulated conductors that go inside transformers, motors and generators, and is doubling capacity through a new subsidiary, ALCU Industries. Listed in December 2025.",
             "**Good:** steady growth (sales up 24% to ₹1,840cr in FY26, 33% in Q1 FY27), metal prices passed straight to customers, and debt mostly repaid from the IPO. **Watch:** it earns only about 4–5 paise per rupee of sales, and over five years ₹262cr of operating profit produced **no operating cash at all** (−₹2cr), while the shares trade at about 30 times earnings.",

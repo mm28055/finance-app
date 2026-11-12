@@ -237,6 +237,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Pace Digitek",
+        "segment": "Solar, battery-storage and farm-pump contractors",
         "inShort": [
             "**Builds telecom and battery-storage projects in India**: towers and fibre networks for BSNL, and grid batteries (BESS) that it assembles in its own Bengaluru plant, some of which it also owns and rents to state utilities.",
             "**Good:** a ₹10,800cr order book, more than three years of revenue, a fast-growing battery business and a low price of about 11 times earnings. **Bad:** over five years it reported ₹1,405cr of operating profit but operating cash was −₹791cr; two customers were 58% of FY26 revenue; about ₹900cr of revenue so far came from a battery project it owns itself, booked upfront though paid over 12 years; and a firm linked to directors' relatives does its project work.",

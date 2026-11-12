@@ -430,6 +430,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Excelsoft Technologies",
+        "segment": "Vertical SaaS and data platforms",
         "inShort": [
             "**Builds online exam, proctoring and learning software** (Saras, easyProctor) and does software development for global education publishers and exam boards, from Mysuru; its biggest customer is Pearson.",
             "**Good:** Q1 FY27 revenue grew 44%, it holds about **₹400cr of cash** (nearly half its market value), converts about 83% of operating profit into cash, and trades at about **18 times earnings**. **Bad:** **Pearson alone was 59% of revenue** (June 2025) and the top five customers 70%; the margin fell to 16% in Q1 from 27% in FY26; and it had guaranteed ₹300cr of its promoter company's debentures.",

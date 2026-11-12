@@ -344,6 +344,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Fujiyama Power Systems",
+        "segment": "Module assemblers — the crowded part, now building cells",
         "inShort": [
             "**A Delhi-based maker of rooftop solar kits for homes**: panels, inverters and batteries sold as a package under the UTL Solar and Fujiyama Solar brands through about 10,100 distributors, dealers and own-brand shops, mostly in north and east India.",
             "**Good:** revenue up 72% to ₹2,654cr in FY26 and 125% in Q1 FY27 with a steady 19% margin, helped by its own 1 GW cell plant that makes the Indian-cell panels the PM Surya Ghar subsidy requires. **Watch:** profit is not turning into cash (operating cash was −₹3cr in FY26 and only ₹120cr over five years against ₹938cr of operating profit) because stock has piled up to 180 days of sales; growth leans on a government subsidy; and 2026 brought two BIS seizures and a plant fire.",

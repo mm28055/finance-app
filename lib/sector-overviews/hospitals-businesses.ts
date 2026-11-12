@@ -357,6 +357,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Gaudium IVF",
+        "segment": "Single-speciality chains — children, mothers, eyes and cancer",
         "inShort": [
             "**A Delhi-based chain of IVF (fertility) clinics** with 8 hubs and 28 smaller centres in 9 states, plus a pharmacy business selling fertility drugs and a small women's hospital business.",
             "**Good:** high reported success rates, a plan funded by IPO money to add 19 hubs, and a fast-growing, underserved market. **Bad:** customers owed it **₹53cr at March 2026, about half a year's revenue**, which is odd for a clinic where patients pay upfront; only 35% of five years' operating profit came through as cash; ₹34cr of tax demands and a ₹29cr IPO-adviser claim are disputed; Q1 profit fell 42%.",
@@ -442,6 +443,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Park Medi World",
+        "segment": "Regional chains — a few big hospitals in one region",
         "inShort": [
             "**A north Indian hospital chain** (Park Hospitals) with 3,960 beds in six north Indian states (Uttarakhand was added in 2026), treating mostly government-scheme patients at affordable prices.",
             "**Good:** a 27% operating margin, revenue up 19% and profit 35% in Q1 FY27, a low cost per bed (about ₹36–37 lakh, which it says is the lowest among listed peers), almost no term debt, and clear guidance to 5,740 beds by FY28. **Bad:** 77% of revenue comes from government schemes, so customers take about 129 days to pay; occupancy fell to 56% as beds were added; growth now depends on buying hospitals; promoters must sell about 8% by 2028.",

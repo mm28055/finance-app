@@ -251,6 +251,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "ESDS Software",
+        "segment": "AI computers, GPU cloud and data-centre build-out",
         "inShort": [
             "**Rents out cloud computing, data-centre space and managed IT services** from five data centres (Nashik, Navi Mumbai, Bengaluru, Mohali, Noida) to about 2,500 government, bank and enterprise customers, and is moving into renting AI chips (GPUs).",
             "**Good:** revenue grew from ₹208cr in FY23 to ₹472cr in FY26 at a **50% operating margin**, and it has a ₹3,000cr domestic order book. **Bad:** FY26 included an ₹85cr one-off; it has committed to pay SharonAI about **US$1.25bn over five years** for GPU capacity it resells to one overseas client at a thin 15–20% profit margin; and the shares trade at about **129 times earnings**.",

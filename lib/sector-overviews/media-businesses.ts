@@ -138,6 +138,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Simca Advertising",
+        "segment": "Outdoor advertising",
         "inShort": [
             "**A small Mumbai outdoor-advertising company** that sells space on hoardings, gantries, bus shelters and digital LED screens, mostly to banks, insurers, property developers and brands.",
             "**Good:** FY26 revenue rose 76% to ₹127cr at an 18% operating margin, Q1 FY27 revenue rose 59%, and it has no debt. **Bad:** customers take **114 days** to pay, two orders from one or two finance clients made up about ₹25cr of business, sites are being moved in from outside the listed company on undisclosed terms, it is a thinly traded SME stock, and the price has more than doubled from the ₹183 issue price to about 29 times earnings.",

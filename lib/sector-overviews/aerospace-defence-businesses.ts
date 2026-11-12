@@ -169,6 +169,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Sigma Advanced Systems',
+        segment: "Global aircraft supply chain — qualified parts",
         inShort: ["**A Hyderabad group, formerly the Megasoft shell, that now makes aero-engine and airframe parts in seven UK factories (Nasmyth and Bromford) and a new Sri City plant**, plus 155 mm artillery shell bodies, fuzes and base-bleed units for NATO-area customers and missile electronics and anti-drone systems for India.", "**Good:** two Rolls-Royce long-term agreements worth about ₹5,400cr, a ₹10,000cr+ order book, repeat NATO ammunition orders, and the margin up from 16% to about 20% in Q2 FY27. **Bad:** operating cash was −₹210cr in FY26 and −₹213cr in H1 FY27, FY26 profit came mostly from selling land and a stake, the share count rose 2.6 times in 18 months with ₹3,000cr more approved for unnamed acquisitions, and three directors left on 6 November.", "**Verdict: pass.** I expect about 25% a year of earnings growth, less than the {need:Sigma Advanced Systems|31}% the price needs ({label:Sigma Advanced Systems|stretched}), and cash is going the wrong way while the next ₹3,000cr raise and deals are still unknown."],
         tagline: "An aerospace and defence group built by acquisition since 2023: UK aero-engine and airframe parts, Indian ammunition exports, defence electronics and counter-drone systems.",
         revenue: '₹492cr (FY26, consolidated)',
@@ -406,6 +407,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Tonbo Imaging',
+        segment: "Indian defence electronics and systems",
         inShort: ["**A Bengaluru designer of thermal and night-vision sights, camera gimbals, fire-control systems and missile seekers** for armies in India and abroad. It owns its designs, has contract manufacturers build them, and is developing a microwave weapon that knocks out drones. Listed on 23 October 2026.", "**Good:** about half of the Indian government's thermal-imaging purchases (by units), products free of US export rules, and platform systems now 82% of a ₹250cr order book. **Bad:** operating cash was −₹136cr in FY25, −₹65cr in FY26 and −₹48cr in H1 FY27; stock and unpaid bills (₹500cr) equal about a year of sales; FY26 profit included an ₹18.8cr provision write-back; and H1 FY27 profit was only ₹5.8cr.", "**Verdict: wait.** Real, owned technology, but profit is not arriving as cash, and the price needs about {need:Tonbo Imaging|33}% a year of earnings growth against my ~18%."],
         tagline: "An Indian defence-electronics designer founded in 2003 (as Sarnoff Innovative Technologies) and run by its three founders, making electro-optical and infrared systems for soldiers, vehicles, ships, drones and missiles; listed in October 2026 after an IPO that raised no money for the company.",
         revenue: '₹363cr (FY26, consolidated)',
@@ -645,6 +647,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Apsis Aerocom",
+        "segment": "Global aircraft supply chain — qualified parts",
         "inShort": [
             "**Machines precision metal parts** for aerospace, defence and medical equipment in Bengaluru, mostly for foreign aircraft and defence makers that must buy part of their content in India. Listed on NSE's SME board in March 2026.",
             "**Good:** sales grew 50% to ₹30.65cr in FY26 at a 37.5% operating margin, it says about 40% of revenue comes from parts only it supplies, and it has net cash. **Watch:** it is tiny, the top five customers are 87% of sales and the largest 35%, the margin fell from 49.8%, it reports only twice a year, and the shares trade at about 93 times earnings after rising more than five times from the ₹110 IPO price.",

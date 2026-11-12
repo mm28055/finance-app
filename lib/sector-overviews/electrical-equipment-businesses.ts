@@ -458,6 +458,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Parth Electricals",
+        "segment": "Conductors, cables, meters and switchgear — grid spending",
         "inShort": [
             "**A Vadodara maker of medium-voltage switchgear**: ring main units (RMUs, the boxes that switch underground distribution cables), compact substations and panels, mostly built under Schneider Electric technology licences. It also does substation installation and service, and now EPC work.",
             "**Good:** a service team trusted up to 765kV, a ₹272cr order book (1.4 times FY26 sales), first exports (US, Zambia) and a data-centre order from Reliance. **Bad:** an operating margin of only about 10%, no operating cash in FY25–FY26, RMU sales down a third in FY26, four equity raises in 14 months, and the MD's own US company as a customer.",
@@ -569,6 +570,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Vivid Electromech',
+        segment: "Conductors, cables, meters and switchgear — grid spending",
         inShort: ["**A Navi Mumbai maker of low- and medium-voltage electrical panels** and power distribution units (PDUs) for data centres, metros, factories and solar plants. About half its sales are to data centres such as STT, CtrlS and AdaniConneX.", "**Good:** sales tripled in three years to ₹200cr, the operating margin rose from 3% to 23%, it holds a ₹307cr order book, and a new plant at Ambernath triples capacity from December 2026. **Bad:** profit barely turns into cash (customers took 213 days to pay in FY26, and H1 FY27 operating cash was −₹55cr), the plant is four months late, one customer is about a third of sales, and it trades with the promoters' own firms.", "**Verdict: wait.** I expect about 22% a year of earnings growth, more than the {need:Vivid Electromech|17}% the price needs, but I want to see cash collected before trusting it."],
         tagline: "A family-run electrical panel maker and system integrator founded in 1990 and run by Sameer Attavar; ABB's licensee for ArTu K switchboards; listed on NSE's SME platform in April 2026 at ₹555 a share.",
         revenue: '₹200cr (FY26, standalone)',
@@ -601,6 +603,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Anawil Wire",
+        "segment": "Wind turbines and steel structures",
         "inShort": [
             "**Fabricates steel towers for wind turbines** (up to 140 metres) at Koppal, Karnataka and, since March 2026, Kutch, Gujarat, mostly as job work on steel supplied by turbine makers such as Sany and Envision.",
             "**Good:** sales grew 82% in FY26 at a 43% operating margin, the order book was ₹360cr at March plus a ₹134cr order in September, and IPO money cuts debt. **Bad:** the top customer was 29% and the top ten 97% of FY26 sales, the plants were 48% used, stock sits for 409 days, free cash was −₹75cr, and the promoters are new to the industry and deal heavily with their own construction firm.",
@@ -678,6 +681,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Prostarm Info Systems",
+        "segment": "Power electronics and EV charging — early stage",
         "inShort": [
             "**Makes and sells power-backup equipment** (UPS systems, inverters, lithium battery packs, voltage stabilisers), resells batteries and IT hardware, and is moving into battery-energy-storage (BESS) projects and a 1.2 GWh BESS assembly plant.",
             "**Good:** a ₹1,090cr order book, 467 dealers and a long record with government, bank and railway buyers. **Bad:** **operating cash has been negative in each of the last four years** (−₹74cr in total), customers took 241 days to pay in FY26 (much of it one police-IT project), half of FY26 sales were resold third-party goods or IT hardware, and the BESS plant is late.",

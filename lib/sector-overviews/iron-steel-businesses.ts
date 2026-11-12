@@ -318,6 +318,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Bansal Wire Industries',
+        segment: "Special steel, wire and wire rope — made to a customer’s specification",
         inShort: ["**India's largest stainless-steel wire maker and second-largest steel wire maker**, drawing bought-in wire rod into 3,500 kinds of mild-steel, high-carbon, stainless and specialty wire for car parts, cables, fasteners, fencing and farms, mostly from a new plant at Dadri near Delhi.", "**Good:** Q2 FY27 was a record (128,867 tonnes, ₹8,150 of operating profit a tonne, 74% of capacity used) and operating cash was ₹339cr in H1 FY27. **Bad:** H1 volume grew 10% and profit fell 5.5% against a 20% growth target, operating cash was negative over FY22–FY26 as a whole, the H1 cut in bank debt was matched by more supplier credit, and its subsidiary guarantees ₹100cr of loans of a promoter-group company.", "**Verdict: wait.** The new plant is filling, but I expect about 16% a year of earnings growth against the {need:Bansal Wire Industries|18}% the price needs, and the cash and related-party questions should be answered first."],
         tagline: "A steel wire maker (mild-steel, galvanised, high-carbon, stainless and specialty wire) with five plants in Uttar Pradesh and Haryana, listed in July 2024.",
         revenue: '₹4,159cr (FY26, consolidated)',
@@ -595,6 +596,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Vedanta Iron & Steel",
+        "segment": "Integrated steel makers — from iron ore to finished steel",
         "inShort": [
             "**Vedanta's iron ore mines in Goa, Karnataka and Odisha plus two steel plants**: a pig-iron and met-coke works in Goa and ESL Steel at Bokaro, which makes bars, wire rod and ductile-iron pipes. Demerged from Vedanta Ltd and listed in June 2026, so all history before May 2026 is a carve-out.",
             "**Good:** Q1 FY27 EBITDA rose 54% to ₹515cr, CRISIL rates it AA, and about ₹13,138cr of intercompany debt was waived at the demerger. **Bad:** the carved-out FY26 shows a **₹2,935cr loss** (a ₹1,471cr write-off in Liberia and ₹1,816cr of interest), steel earned about 5% margins, the Bokaro plant has run without a valid environmental clearance since 2018, and the parent takes a 3% brand fee and has tied up every promoter share for its own loans.",
@@ -694,6 +696,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Kirloskar Ferrous",
+        "segment": "Integrated steel makers — from iron ore to finished steel",
         "inShort": [
             "**A Kirloskar Group maker of pig iron, engine castings, alloy steel and seamless steel tubes** with plants in Karnataka, Maharashtra and Punjab. It turns its own pig iron into cylinder blocks and heads for tractor, truck and engine makers, and since buying ISMT in 2022 also makes bearing steel and seamless tubes.",
             "**Good:** castings volumes grew 18% in Q1 FY27 with prices holding, it is one of India's largest foundry groups, rated ICRA AA, and has turned four of the last five years' profit into free cash. **Bad:** the operating margin has been stuck at 11–13% since FY23 (17% in FY22), underlying profit has not grown in four years (FY26's ₹507cr includes a one-off tax credit), tube volumes fell 14% in Q1, power costs jumped after state rule changes, a ₹331cr forest-fee case is pending in the Supreme Court, and ₹3,000–3,500cr of projects lie ahead.",

@@ -592,6 +592,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Horizon Industrial Parks",
+        "segment": "Warehouses and industrial parks",
         "inShort": [
             "**India's largest owner of rented warehouses and factory sheds**, built by Blackstone since 2020: 46 parks and city centres in 10 markets, about 29.5 mn sq ft operating and as much again on land it already owns; listed in August 2026.",
             "**Good:** rent-like income with an 80–81% operating margin, 5% yearly rent increases, 7-year average leases, and contracted rent above ₹1,000cr a year; the IPO cut net debt to ₹2,765cr at September 2026. **Bad:** its first reported profit, ₹14cr in Q2 FY27, came only because ₹39cr of other income exceeded the ₹11cr pre-tax profit (FY26 loss ₹204cr; FY26 interest of ₹539cr exceeded operating profit of ₹531cr), top-10 tenants pay 43% of revenue, much of the network was bought from the promoter and others, and Blackstone, at 75.4%, will sell one day.",
@@ -695,6 +696,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Kalpataru",
+        "segment": "Mumbai luxury and redevelopment specialists",
         "inShort": [
             "**A Mumbai and Thane home builder** from the five-decade-old Kalpataru group, best known for the Kalpataru Parkcity township in Thane, luxury towers such as Vian at Lokhandwala, and housing-society redevelopments; listed in July 2025.",
             "**Good:** an old brand with about 18.4 mn sq ft delivered, about 15 mn sq ft due for completion over FY27–FY29, and refinancing has cut its borrowing cost to about 11%. **Bad:** **₹8,229cr of net debt (2.0 times equity)**, pre-sales were flat in H1 FY27 (₹2,587cr; Q2 ₹1,258cr, down 5%) against a ₹6,500cr target management kept on its Q2 call, net debt rose to ₹8,323cr at September, CRISIL cut its rating to BBB in September, and five years of filed operating cash plus about ₹3,000cr of new equity barely dented borrowings.",

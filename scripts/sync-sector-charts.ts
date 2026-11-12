@@ -167,6 +167,32 @@ async function choosePage(found: string): Promise<{ url: string; view: LiveFigur
     return html ? { url: base, view: 'standalone', html } : null;
 }
 
+/**
+ * A company card added without a group would sit in "Not yet placed in a group" on its sector's
+ * charts: list it for the next session (lib/corporate-actions/needs-attention.json) to place.
+ */
+function flagUngrouped() {
+    const file = path.join(process.cwd(), 'lib', 'corporate-actions', 'needs-attention.json');
+    const list = JSON.parse(fs.readFileSync(file, 'utf8')) as { company: string; subject: string; handled?: unknown }[];
+    let added = 0;
+    for (const o of allSectorOverviews()) {
+        for (const n of o.buckets?.length ? o.buckets.map(b => b.note) : [o]) {
+            const ranked = new Set(n.verdicts.map(v => v.company.trim().toLowerCase()));
+            for (const p of n.businesses?.profiles || []) {
+                if (ranked.has(p.company.trim().toLowerCase()) || p.segment) continue;
+                if (list.some(e => e.company === p.company && e.subject === 'Sector chart group' && !e.handled)) continue;
+                list.push({
+                    company: p.company, sector: o.sector, subject: 'Sector chart group',
+                    why: `Its company card has no \`segment\`, so the ${n.title} charts show it under "Not yet placed in a group". Set \`segment\` on its card in the note's -businesses.ts file to the group it belongs in.`,
+                    addedOn: today(),
+                } as never);
+                added++;
+            }
+        }
+    }
+    if (added) { fs.writeFileSync(file, JSON.stringify(list, null, 2) + '\n'); console.log(`Flagged ${added} company card(s) without a chart group.`); }
+}
+
 // ── Run ────────────────────────────────────────────────────────────────────────
 async function main() {
     // Read from disk each run (an import can come from tsx's cache and drop companies read since).
@@ -240,6 +266,7 @@ async function main() {
         }
     }
     save();
+    flagUngrouped();
     console.log(`Read ${done}. Not in the company list: ${unmatched.length}${unmatched.length ? ` — ${unmatched.join(', ')}` : ''}.`);
     console.log(`Failed: ${failed.length}${failed.length ? ` — ${failed.join('; ')}` : ''}.`);
     if (failed.length > 40) process.exitCode = 1;

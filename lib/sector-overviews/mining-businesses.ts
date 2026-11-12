@@ -271,6 +271,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Midwest",
+        "segment": "Miners and mining services — iron ore, bauxite, coal and industrial minerals",
         "inShort": [
             "**India's largest producer and exporter of Black Galaxy granite**, quarrying and processing granite blocks at 16-plus mines in Telangana and Andhra Pradesh and selling mostly to Chinese buyers, now adding quartz processing and planning rare-earth and mineral-sand projects abroad.",
             "**Good:** a steady 27–28% operating margin, FY27 revenue guided up about 30% to ₹840cr, and net cash after the IPO. **Bad:** customers take **129 days** to pay, more than half of export sales go to China and the top ten customers were 51% of FY25 revenue, the promoter carries adverse findings from a government investigation, and the shares trade at about 37 times earnings while the new ventures are still years from cash.",
@@ -353,6 +354,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Jain Resource Recycling",
+        "segment": "Metal recyclers — lead, aluminium and copper from scrap",
         "inShort": [
             "**A Chennai recycler of copper, lead and aluminium scrap**, mostly imported, that melts it into ingots and alloys sold in India and to more than 20 countries, and is now adding copper anode, cathode, wire rod and busbar plants.",
             "**Good:** FY26 revenue rose 48% to ₹9,543cr and profit 56% to ₹347cr, with a 26% return on capital, a 100% price-hedging policy and an LME-registered lead brand. **Bad:** **operating cash was −₹591cr in FY26** as inventory piled up, net debt is about ₹911cr, the margin is only about 4–6%, copper profit per tonne fell from about ₹36,000 to ₹31,000, and 75–80% of scrap is imported.",

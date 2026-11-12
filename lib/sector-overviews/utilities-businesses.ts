@@ -197,6 +197,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Vedanta Power",
+        "segment": "Power generators",
         "inShort": [
             "**A coal-fired power producer demerged from Vedanta in May 2026**, owning four plants (4,180 MW) in Punjab, Andhra Pradesh, Odisha and Chhattisgarh; India's fifth-largest private thermal producer by its own count.",
             "**Good:** the 1,980 MW Talwandi Sabo plant is contracted to Punjab until 2041 with fuel costs passed through, 74% of sales are under contracts, 85% of coal comes from Coal India linkages, and power demand is at a record. **Bad:** a loss of ₹1,686cr in FY26 after ₹2,295cr of one-offs (Talwandi Sabo's mega power benefits reversed and an arbitration settled) and another ₹423cr loss in Q1 FY27; **net debt of ₹7,621cr is about 5.4 times operating profit**; a 600 MW Sakti unit has been down since April; and the promoter's whole stake is pledged for the parent's debt.",
@@ -315,6 +316,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Juniper Green Energy",
+        "segment": "Power generators",
         "inShort": [
             "**A renewable power producer** that builds and owns solar, wind and battery plants and sells their power to state and central utilities on 25-year contracts, specialising in 'firm' power (solar, wind and batteries combined to supply set hours). Listed in August 2026.",
             "**Good:** about 2,575 MW running with a run-rate operating profit of ₹1,620cr that management expects to reach ₹2,700–2,750cr by March 2027 and ₹4,500cr in FY28; 98% of capacity on long contracts; a 90% operating margin and buyers paying in 19 days. **Watch:** borrowings of ₹13,761cr at March 2026 against ₹40cr of FY26 profit, interest that takes two-thirds of operating profit, a 3% return on capital, two state utilities giving 86% of FY26 revenue, and growth that needs about ₹6,000cr more capex this year.",

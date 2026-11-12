@@ -473,6 +473,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Symbiotec Pharmalab",
+        "segment": "Niche APIs — sold on regulatory filings and hard chemistry",
         "inShort": [
             "**One of the world's largest makers of steroid and hormone active ingredients** (corticosteroids such as prednisolone and dexamethasone, and hormones such as progesterone and testosterone), made from soyabean sterols through its own fermentation, plus two new businesses: contract fermentation and ready-to-use injectables.",
             "**Good:** about 38% of world corticosteroid API volume by its IPO filing, 44 US drug master files, long customer relationships and a near-30% API margin. **Bad:** the API business grows only in high single digits, about ₹1,000cr has gone into new plants that earn nothing yet and cost ₹34cr a quarter, Q1 profit fell to ₹14cr, the top ten customers buy about 58%, and 13% of shares were pledged for a family-company loan.",
@@ -579,6 +580,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Anlon Healthcare",
+        "segment": "Volume APIs — price takers that compete on cost",
         "inShort": [
             "**A small Rajkot maker of painkiller ingredients** (loxoprofen, ketoprofen, dexketoprofen) and their intermediates, listed in August 2025, which has since bought two chemical makers and a small tablet maker to grow fast.",
             "**Good:** sales of ₹87.6cr in Q1 FY27, up from ₹33.3cr, and a few hard-to-make NSAID ingredients with Brazilian and Chinese approvals. **Bad:** operating cash flow has been negative every year since FY21 (−₹59cr in FY26), customers take about 220 days to pay and stock sits for 393 days, the Q1 margin fell to 17.9% against a promised 24–25%, and the founders are selling their own stakes in the acquired companies to Anlon for new shares at many times what Anlon paid for its first stakes months earlier.",

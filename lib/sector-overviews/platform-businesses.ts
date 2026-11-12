@@ -389,6 +389,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Physicswallah",
+        "segment": "Consumer services — education and rentals",
         "inShort": [
             "**India's largest low-price coaching brand for JEE, NEET and other exams**, sold mostly through cheap online courses and a fast-growing network of 353 offline and hybrid centres, now adding school tuition (K-12), government-exam coaching and skills courses.",
             "**Good:** revenue grew 35% to ₹3,900cr in FY26, students pay up front so cash arrives before revenue (₹833cr of operating cash against ₹370cr of operating profit), and it holds about ₹5,600cr of cash and investments with no bank debt. **Bad:** profit is thin and seasonal (FY26 net loss of ₹24cr, Q1 FY27 loss of ₹88cr), offline centres are not yet profitable for the year, and the shares trade at about **597 times** earnings.",
@@ -479,6 +480,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Arisinfra Solutions",
+        "segment": "Platforms for businesses — trucks, travel agents, payments, parts, shipping and insurance agents",
         "inShort": [
             "**Supplies construction materials to builders and contractors** (stone aggregates, ready-mix concrete, asphalt, steel, cement), increasingly from partner plants whose output it reserves, and runs projects for property developers for a fee (Developer-as-a-Service, DaaS).",
             "**Good:** revenue grew 39% in FY26, the operating margin went from about zero in FY23 to **9%** (11% in Q1 FY27), FY26 operating cash was ₹142cr, and the P/E is about 16. **Bad:** losses until FY24, customers take about **140 days** to pay, the top 10 customers are 45–50% of sales, roughly half of profit comes from fees on about ten developer projects, net debt is rising again, and a promoter pledge appeared in September.",
@@ -581,6 +583,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Rentomojo",
+        "segment": "Consumer services — education and rentals",
         "inShort": [
             "**India's largest furniture and appliance rental platform**: about 2.54 lakh subscribers in 29 cities rent beds, sofas, fridges, washing machines and ACs by the month, online and through 89 company-run stores; Rentomojo buys, delivers, repairs and re-rents each item over several customers. Listed in September 2026.",
             "**Good:** revenue up 51% in Q1 FY27 with a steady ~41% operating margin, about 22–26% return on capital, half of orders from repeat customers and 60% of traffic organic, and roughly 45% of the organised market. **Bad:** every rupee of operating cash goes back into buying furniture, so free cash flow has been negative or near zero every year (−₹126cr over FY22–FY26); FY26 profit was flattered by a ₹36.6cr tax credit and Q1's 'normalised profit' is before tax; management gives no guidance; a co-founder's NCLT case is pending; and the shares sell at about 52 times reported profit, nearer 100 times on fully taxed underlying profit (my arithmetic).",

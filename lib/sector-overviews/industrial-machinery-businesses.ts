@@ -162,6 +162,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Lohia Corp",
+        "segment": "Textile and packaging machinery — process lines and spares",
         "inShort": [
             "**Makes the machines that turn plastic granules into woven sacks and fabric**: tape lines, circular looms, winders, coating and bag-making machines used for cement, fertiliser and food-grain bags, bulk bags, tarpaulins and geotextiles, sold to about 2,000 customers in India and roughly 100 developing countries.",
             "**Good:** a leading global maker with a ₹1,778cr order book backed by about 20% advances, revenue up 60% in Q1 FY27 at a **20% operating margin**, and net cash. **Watch:** the margin was about 8% as recently as FY24, the order book tripled in a year (customers' capex comes in cycles), stock is held about 150 days, and only two years of figures are filed.",
@@ -255,6 +256,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Bonfiglioli Transmissions",
+        "segment": "Gearboxes and drives",
         "inShort": [
             "**The Indian arm of Italy's Bonfiglioli**: makes gear motors and gearboxes for factories, travel and swing drives for excavators and construction machines, and yaw and pitch drives for wind turbines, from plants in Chennai and Pune; lists on 23 October 2026.",
             "**Good:** leading shares in India (about 68% of wind-turbine drives, 24% of off-highway drives, 25% of small gear motors, per its industry report), no debt and ₹163cr of cash, an 18% margin. **Watch:** it pays the parent a 4.4% royalty, about 15% of sales go to group companies, one customer is 11% of revenue, and only 57% of operating profit turned into cash over five years.",

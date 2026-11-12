@@ -162,6 +162,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Glass Wall Systems",
+        "segment": "Building contractors — paid to build for developers and governments",
         "inShort": [
             "**Designs, makes and fits glass-and-aluminium facades** (the outer skin of office towers) for top Indian developers, ships ready-to-fit facade panels to contractors in the US and Australia, and sells luxury windows, from one factory near Mumbai.",
             "**Good:** an operating margin of about 23%, no net debt, and about 81% of three years' profit turned into cash; the order book is about twice FY26 revenue. **Watch:** the top three clients were 57% of FY26 revenue; the business is small (₹457cr) and lumpy; no big order came in the three months to October; and the family sold its own window company to the firm for ₹155cr in shares just before the IPO.",

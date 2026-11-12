@@ -279,6 +279,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Kusumgar",
+        "segment": "Scarce approvals and protected markets",
         "inShort": [
             "**Makes engineered nylon and polyester fabrics and finished defence products**: parachute and military clothing fabric, complete parachute and camouflage systems, industrial and car fabrics, and fabric for global outdoor brands, from seven plants in Gujarat and Uttar Pradesh.",
             "**Good:** hard-to-win military approvals, India's only Kevlar filament weaver, and a margin that rose to **31% in Q1 FY27**. **Watch:** operating cash was only ₹92cr against ₹577cr of operating profit over FY23–FY26, stock (278 days) and receivables (123 days) ballooned in FY26, revenue is lumpy, and management gives no guidance or order book.",

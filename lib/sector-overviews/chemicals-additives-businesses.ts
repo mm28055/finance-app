@@ -281,6 +281,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Jyoti Resins",
+        "segment": "Adhesives and other specialty chemicals",
         "inShort": [
             "**Makes white wood glue under the Euro 7000 brand**, sold straight to about 13,000 hardware shops through its own 54 branches and pushed through a loyalty scheme for 2.1 lakh carpenters, from one plant near Ahmedabad.",
             "**Good:** no debt, about ₹166cr of cash, a 27% operating margin in FY26 and 36% return on capital, at about 15 times earnings. **Bad:** sales grew only about 6% a year over FY23–FY26 and profit fell in FY26, the margin crashed to 14% in Q1 FY27 when its raw material doubled, customers take about 185 days to pay, only about a quarter of five years' operating profit came in as cash, and a promised Big Four auditor was shelved.",
@@ -358,6 +359,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Prasol Chemicals",
+        "segment": "Adhesives and other specialty chemicals",
         "inShort": [
             "**Makes specialty chemicals from acetone and phosphorus** at Khopoli and Mahad in Maharashtra, used in paints, inks, lubricant additives, crop chemicals, medicines and personal care, for 1,600-plus customers in India and 60-plus countries. Listed in September 2026.",
             "**Good:** a widely spread customer base (the largest buys only about 4% of sales), 22% growth in FY26, guidance of 26–34% growth for FY27, and low debt. **Watch:** Q1 FY27's 21% margin was flattered by a ₹25cr gain on cheap stock, the normal margin is closer to 11–16%, only 58% of five years' operating profit came in as cash, and the shares trade at about 35 times earnings.",

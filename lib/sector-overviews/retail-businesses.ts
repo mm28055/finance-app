@@ -575,6 +575,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Patel Retail",
+        "segment": "Value retail and kids",
         "inShort": [
             "**A Mumbai-suburb supermarket chain plus a food-processing and export business**: 54 Patel's R Mart stores in Thane and Raigad districts, and plants in Kutch that clean and pack pulses, spices and peanuts, sold under its own brands and exported to 35+ countries.",
             "**Good:** revenue up 28% in FY26 and 70% in Q1, profit up 55% in FY26, debt down after the IPO, and the shares at about 19 times earnings. **Bad:** operating cash was −₹83cr in FY26 as stock days rose from 31 to 109 in four years, the margin fell to 5–6% in the last two quarters, stores are only about a third of revenue, and over FY22–FY26 it turned ₹251cr of operating profit into almost no operating cash.",
@@ -689,6 +690,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Purple Style Labs",
+        "segment": "Fashion brands and department stores",
         "inShort": [
             "**Runs Pernia's Pop-Up Shop**, India's large multi-designer luxury fashion platform (website plus big experience centres in Mumbai, Delhi, Hyderabad, London and, since March 2026, Madison Avenue in New York), selling bridal and occasion wear from about 1,100 Indian designers.",
             "**Good:** platform sales (GMV) rose from ₹23cr in FY19 to ₹722cr in FY26 and 45% in Q1 FY27, and the average order is now ₹86,000. **Bad:** it lost **₹285cr in FY26** on ₹558cr of sales, has never had a positive operating cash flow in four years, carried ₹784cr of borrowings and leases at March 2026 against negative net worth, and the founder's stake is only 24%.",
@@ -797,6 +799,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Shankara Buildpro",
+        "segment": "Business marketplaces and distributors",
         "inShort": [
             "**Sells steel pipes, tubes, roofing and flat steel, plus tiles, sanitaryware and other building materials**, through about 96 stores and over 130 fulfilment centres, mostly in South India, to homeowners, contractors, dealers and builders.",
             "**Good:** revenue grew 30% to ₹6,826cr in FY26, return on capital is about 39%, and customers pay within about 50 days. **Bad:** it keeps only about **3.3 paise of every rupee** as operating profit, so a steel price fall can wipe out a quarter's gain; it turned only 40% of four years' operating profit into cash; and about ₹500cr of supplier credit (letters of credit) sits outside the reported ₹61cr of borrowings.",
@@ -892,6 +895,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Safe Enterprises Retail Fixtures",
+        "segment": "Store fixtures",
         "inShort": [
             "**Designs, makes and installs shop fittings** (wall units, display stands, cash counters, trial rooms, lit and electrified fixtures) for clothing, electronics and department-store chains, from leased plants in Mumbai and Pune; listed on NSE's SME board since June 2025.",
             "**Good:** FY26 revenue grew 57% to ₹218cr (company figure) at a **36% operating margin**, it has about ₹130cr of cash and no debt, and the stock trades at about 17 times earnings. **Bad:** in FY24 **one customer bought 86% of everything it sold** (top five 94%), it turned only 45% of three years' operating profit into cash, and customers take about 76 days to pay.",

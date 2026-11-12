@@ -426,6 +426,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "GSP Crop Science",
+        "segment": "Crop-protection brands for Indian farmers",
         "inShort": [
             "**Makes crop-protection chemicals in Gujarat**, both the active ingredients (technicals) and the finished sprays farmers buy (formulations), and sells them under its own brands, to other agrochemical companies and abroad, mainly to Brazil and the US. Listed in March 2026.",
             "**Good:** a growing share of its own patented combination products (about 20–22% of branded sales), debt mostly repaid from the IPO, an ICRA A+ rating and a modest price of about 20 times earnings. **Watch:** customers take about 133 days to pay, only 55% of five years' operating profit came in as cash, about 40% of raw materials come from China, Q1 revenue barely grew, and a land sale to a promoter company flattered Q1 profit.",

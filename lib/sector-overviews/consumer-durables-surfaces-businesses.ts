@@ -352,6 +352,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Euro Pratik Sales",
+        "segment": "Plywood, MDF and laminates",
         "inShort": [
             "**Designs and sells decorative wall panels and laminates** under the Euro Pratik and Gloirio brands, without owning a factory: 36–44 contract makers in India, South Korea, China and elsewhere produce its designs, and about 200 distributors sell them.",
             "**Good:** a fast-fashion design model (about 1,000 new designs a year) that earned a 34% operating margin in FY26 with almost no plant, and no net debt. **Bad:** the parent company's own sales fell 4% in FY26. Growth now comes from buying lower-margin dealers and retailers: the margin fell to 26% in Q1 FY27, stock takes 255 days to sell, and over three years only about ₹85cr of ₹294cr operating profit came back as cash.",
@@ -462,6 +463,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Varmora Granito",
+        "segment": "Tiles",
         "inShort": [
             "**A Morbi, Gujarat tile maker** selling mainly glazed vitrified tiles under the Varmora brand through about 286 franchise showrooms and 2,000 multi-brand dealers, plus exports to over 100 countries and some bathware.",
             "**Good:** Q2 FY27 was strong (revenue up 9%, operating margin 16%), and the IPO money should make it close to debt-free. **Watch:** returns are low (return on equity about 7–8%), power and gas eat about 22% of sales and the Middle East conflict shut plants in April 2026, profit growth is helped by a change in depreciation method, and Carlyle still owns a large stake it may sell.",

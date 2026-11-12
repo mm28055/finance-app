@@ -337,6 +337,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Hy-Tech Engineers",
+        "segment": "Qualified suppliers to equipment makers",
         "inShort": [
             "**Makes hydraulic fittings**, the small high-pressure steel connectors used in excavators, loaders, tractors and plastic-moulding machines, for about 170 OEMs in India and exports to the US and Europe.",
             "**Good:** a leader in India with a rival less than half its size, no customer above 15%, and a steady 22% operating margin. **Watch:** growth was only 13% in Q1 against a 20% guide, money is tied up for about 171 days in stock and receivables, only about 55% of operating profit turned into cash over the four years filed, and a quarter of sales go to the US.",
@@ -431,6 +432,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Innomet Advanced Materials',
+        segment: "Qualified suppliers to equipment makers",
         inShort: ["**Makes specialty metal powders and tungsten heavy alloy parts** in Hyderabad: copper, bronze, nickel and other powders for parts makers, diamond tools and coatings (68% of H1 FY27 sales), and dense tungsten pieces for rockets, aircraft and radiation shields (32%), with the Pinaka rocket and Astra missile among the users.", "**Good:** H1 FY27 sales more than doubled to ₹55.7cr, exports rose to 46% of sales, the margin recovered to 14.7% from 4.5%, and it bought its tungsten-powder supplier for ₹1.5cr. **Bad:** a small SME-listed company earning only 4–7% on its equity; over FY22–FY26 operating cash was −₹3cr against ₹22cr of operating profit, and H1 FY27 used another ₹7cr as stock rose ₹20cr; ₹4.9cr of FY26 entries were written back; four of its seven directors are one family, with promoter loans and a ₹6cr building contract for a relative's firm; and warrants will add about 17% more shares.", "**Verdict: wait.** I expect earnings per share to grow about 26% a year to FY30, counted from about ₹7.9cr of normal yearly profit (not the ₹4.3cr left after last year's write-backs) and within management's plan of 30–50% sales growth; the price needs about {need:Innomet Advanced Materials|33}% a year, and five years of cash have not matched the profit. I would look again once H2 FY27 turns the stock build into cash."],
         tagline: "A Hyderabad maker of specialty metal powders and, by its own account, India's first private maker of tungsten heavy alloys, now adding its own tungsten-powder plant.",
         revenue: '₹53.8cr (FY26, standalone)',

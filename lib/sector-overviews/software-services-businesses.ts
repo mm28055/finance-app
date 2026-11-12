@@ -357,6 +357,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         company: 'Fidel Softech',
+        segment: "Mid-size IT services exporters",
         inShort: ["**A Pune IT services and language-localisation firm built around Japan**: Japanese-speaking IT support, software and data work for Japanese, US and Indian clients, plus translation, subtitling and AI training data. It bought three companies in FY26 and has agreed to buy Softenger, a managed-IT firm twice its size.", "**Good:** revenue doubled to ₹102cr in FY26, returns on capital are about 26%, and its debt is cheap yen loans. **Bad:** the doubling was bought: revenue has sat at about ₹38cr a quarter since January, the Indian parent shrank 11% in FY26, the operating margin fell from 26% to 12%, and the auditor flags related-party dealings, including ₹6.8cr paid to the promoter for a Japanese subsidiary and a ₹2.7cr loan to a promoter-linked company.", "**Verdict: wait.** I expect about 12% a year of earnings growth, close to the {need:Fidel Softech|12}% the price needs, but almost all of it would come from buying Softenger; I want the deal closed and the core business growing again first."],
         tagline: "A promoter-run Pune company founded in 2004 by Sunil Kulkarni, who has worked in Japan for about 30 years, selling IT services and localisation delivered in Japanese and other languages; listed on NSE's SME platform in June 2022.",
         revenue: '₹102cr (FY26, consolidated)',
@@ -445,6 +446,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "iValue Infosolutions",
+        "segment": "Technology distribution",
         "inShort": [
             "**A Bengaluru 'value-added distributor' of enterprise technology**: it designs and sells cybersecurity, data-centre, storage and cloud products from over 100 makers (OEMs) through about 800 system integrators to about 2,900 Indian and Asian companies, banks and government bodies.",
             "**Good:** profit grew from ₹34cr in FY21 to ₹98cr in FY26, about 46% of sales are repeat renewals, and the shares trade at about **11 times earnings**. **Bad:** gross sales grew only 3–12% in the last three quarters, the professional CEO has left, customers take about **336 days of filed revenue to pay** (matched by supplier credit), and only 46% of five years' operating profit turned into cash.",

@@ -328,6 +328,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Vedanta Oil & Gas",
+        "segment": "Oil and gas producers",
         "inShort": [
             "**India's largest private oil producer** (the former Cairn India), pumping crude and gas mainly from the Rajasthan (Barmer) block, about a quarter of India's crude output, and selling at prices linked to Brent.",
             "**Good:** a low cost of about $17 a barrel, a 45–49% company-reported EBITDA margin, near-zero net debt, an AA+ rating, and a price of under 4 times operating profit. **Bad:** **gross output fell 17% in a year** to 77.7 kboepd, the Rajasthan licence that gives more than 80% of output runs only **until May 2030** per CRISIL, ₹9,545cr of Rajasthan claims are in dispute, reported profit is muddied by write-offs and one-off gains, and a heavily indebted parent depends on dividends and fees from group companies.",

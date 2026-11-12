@@ -168,6 +168,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Allcargo Global",
+        "segment": "Contract logistics and freight forwarding — service and scale",
         "inShort": [
             "**The world's largest LCL consolidator**: through ECU Worldwide it fills shared containers with small shipments from freight forwarders on about 2,400 direct sea routes, plus full-container and air freight, mostly outside India.",
             "**Good:** about 14.5% of the global LCL market by its own count, an asset-light model, and operating profit back above zero (₹28cr in Q1 FY27 against a ₹32cr loss a year earlier). **Bad:** a **₹290cr net loss in FY26**, an operating margin of 0.1%, LCL volumes about 10% below two years ago, ₹942cr of net debt including leases, and no profit guidance.",
@@ -267,6 +268,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Glottis",
+        "segment": "Contract logistics and freight forwarding — service and scale",
         "inShort": [
             "**A Chennai freight forwarder** that books sea and air cargo, mostly imports from Asia into India, for Indian companies, especially renewable-energy equipment makers, and is now buying its own trucks and containers.",
             "**Good:** Q1 FY27 revenue rose 39.5%, it has about ₹47cr of net cash after the IPO, and the shares trade at about 13 times earnings. **Bad:** FY26 revenue fell 23% and profit 32%, **operating cash was −₹69cr in FY26** as customers took 87 days to pay (41 in FY25), container volume fell 17% year on year, the top five customers are 29% of revenue, and the MD and CFO gave conflicting figures on the same call.",
@@ -385,6 +387,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Blue Water Logistics",
+        "segment": "Contract logistics and freight forwarding — service and scale",
         "inShort": [
             "**A Hyderabad freight forwarder** that books sea and air cargo for Indian exporters and importers, runs a leased fleet of about 1,700 ISO tank containers for liquid chemicals, and moves containers by road and rail.",
             "**Good:** revenue nearly doubled to ₹386cr in FY26 and Q1 FY27 alone brought ₹211cr, backed by real volume growth, at a P/E near 16. **Bad:** operating cash was negative in three of four years (−₹53cr in FY26), customers take about 134 days to pay, debt tripled and is guided to nearly double again, and the promoters' new overseas entities and a warrant issue came soon after a 'debt only' promise.",
@@ -500,6 +503,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Skyways Air Services",
+        "segment": "Contract logistics and freight forwarding — service and scale",
         "inShort": [
             "**India's largest air freight forwarder**: it books cargo space on about 56 airlines for exporters and importers, and also handles ocean freight, express parcels and trucking, through about 9,500 customers.",
             "**Good:** air export volume grew 23% in Q1 FY27 against 3.8% for India, its share rose to 6.2%, and IPO money cut debt. **Bad:** it keeps only about 4–5 rupees of every 100 as operating profit, revenue swings with fuel surcharges, five years turned only 45% of operating profit into cash, and the company and a listed subsidiary are accused in an open criminal case alleging bribery and over-invoicing.",
@@ -614,6 +618,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Leap India",
+        "segment": "Contract logistics and freight forwarding — service and scale",
         "inShort": [
             "**India's dominant pallet-pooling company**: it rents out about 9 million wooden pallets plus plastic crates, containers and electric forklifts to about 1,000 manufacturers, warehouses and retailers, collecting, repairing and re-sending them across 10,500 sites.",
             "**Good:** about 90% of India's pooled pallets, no customer lost since starting, built-in yearly price rises of 5–6%, a 49–50% operating margin, revenue up 18% in Q2 FY27 (22.5% on the company's count), and India Ratings raised it to A+ in October. **Bad:** depreciation and interest take most of that, so return on capital is about 8%; net debt was ₹1,144cr; a promoter-family company formed in 2025 sold it ₹94.5cr of assets in FY26; and the shares trade near 98 times earnings.",

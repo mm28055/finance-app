@@ -254,6 +254,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Fabtech Technologies",
+        "segment": "Glass-lined and pharma equipment",
         "inShort": [
             "**Designs and builds whole medicine factories** (cleanrooms, air handling, purified water and process equipment) for drug and vaccine makers and governments, almost entirely abroad: the Gulf, Saudi Arabia and Africa.",
             "**Good:** a ₹900cr+ order book (over 2x FY26 revenue) with another ₹800–850cr being worked on, about ₹149cr of net cash after its October 2025 IPO, and a P/E near 19. **Bad:** it has turned almost none of its profit into cash (₹7cr of operating cash on ₹168cr of operating profit over FY22–FY26), customers take about 215 days to pay, the operating margin fell from 15% to 9% in two years, about 40% of pre-tax profit is other income, it buys heavily from promoter-group firms, and its biggest market is in a war zone. Q2 FY27 revenue fell 24% to ₹92cr (H1 ₹167cr against ₹189cr), so the 20–25% FY27 growth guide now needs H2 up about 50%; management kept an 8–9% profit margin and talks of 25–30% a year over three to five years.",

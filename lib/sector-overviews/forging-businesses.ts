@@ -245,6 +245,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Behari Lal Engineering",
+        "segment": "Specialists — wear parts and steel castings for mines, machines and railways",
         "inShort": [
             "**A Punjab steel foundry and rolling mill** that melts scrap into rolls for steel mills, large castings for crushers and power plants, and alloy-steel bars, and supplies about 11.5% of India's metal-roll demand.",
             "**Good:** the operating margin rose from 10% to 17% in three years as it shifted to higher-value products, returns are about 27%, and it has net cash. **Bad:** stock and receivables are rising (Screener's cash cycle went from 106 to 175 days and FY26 operating cash was only ₹28cr against ₹89cr of operating profit), the plant is already 90% full, and the top 10 customers are 38% of sales.",

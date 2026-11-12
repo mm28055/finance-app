@@ -354,6 +354,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Waterways Leisure Tourism",
+        "segment": "Travel services — cruises and airport food",
         "inShort": [
             "**Runs Cordelia Cruises, India's home-grown cruise line**: short cruises from Mumbai and Chennai to Goa, Kochi, Lakshadweep and Sri Lanka on one ship built in 1990, with a second ship (Sky) starting on 23 October 2026 and a third (Sun) due in late 2027.",
             "**Good:** a first mover in a tiny, fast-growing market, with ships about 91% full in H1 FY27 and capacity more than doubling. **Watch:** underlying Q2 operating profit was only ₹10cr, FY26 operating cash was −₹96cr, each new ship carries about $16m a year of lease rent, a promoter in Mauritius owns 89%, and ₹429cr sits with an unnamed middleman for a fourth ship.",
@@ -431,6 +432,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Travel Food Services",
+        "segment": "Travel services — cruises and airport food",
         "inShort": [
             "**India's largest airport food and lounge operator**: food courts and quick-service outlets (KFC, Wagamama and its own brands) and private lounges at 21 airports, plus outlets in Malaysia and Hong Kong.",
             "**Good:** debt-free with about ₹970cr of cash, a **39% operating margin** in FY26 and 81% of five years' operating profit turned into cash. **Watch:** revenue barely moved in FY26 (₹1,648cr against ₹1,688cr), Delhi T3 leaves the consolidated accounts from October, Chennai and Kolkata come up for renewal in 2027, and air traffic is flat.",

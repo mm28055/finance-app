@@ -147,6 +147,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Monolithisch India",
+        "segment": "Refractories — many suppliers, sticky customers",
         "inShort": [
             "**Makes ramming mass**, a ready-mixed silica powder that lines the induction furnaces of small and mid-sized steel mills and is used up every few days, from three plants in West Bengal and Jharkhand, close to India's biggest induction-furnace steel cluster.",
             "**Good:** sales grew 64% in Q1 FY27 at a 28% margin, capacity has just doubled to 5.76 lakh tonnes, and its own quartzite mine should cut stone cost from early 2027. **Bad:** a P/E of about 93, stock held for 226 days, free cash negative, the Ranchi plant bought from the promoter family with the MD's money, and FY28 guidance (₹500–550cr) that needs revenue to quadruple in two years.",

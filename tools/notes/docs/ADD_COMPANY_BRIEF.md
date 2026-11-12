@@ -54,7 +54,10 @@ Read the whole note first. Then integrate each company as if it had always been 
 
 ## 4. Tab 2 (`R/lib/sector-overviews/<note>-businesses.ts`)
 Add one `BusinessProfile` per company following `S/CARD_SPEC.md` exactly (charts: `<ChartsVar>['<exact name>']`),
-in the note's rank order, with the verdict line matching your call (`**Verdict: <call>.**`). If the intro's
+in the note's rank order, with the verdict line matching your call (`**Verdict: <call>.**`). Without a Tab 1 entry,
+set the card's `segment` to the note's group it belongs in (copy one of the `segment` values used in the note's
+`verdicts` exactly, or give a new short group name if none fits): the sector page's charts place the company by it,
+and its figures appear there from the next morning's chart run. If the intro's
 "businesses in plain words" or "ways of earning" table needs the company's segment, add it.
 
 ## 5. Checks (repo root) — all must pass

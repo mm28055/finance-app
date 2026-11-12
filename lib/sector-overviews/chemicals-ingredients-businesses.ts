@@ -384,6 +384,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Sacheerome",
+        "segment": "Fragrance and personal-care ingredients",
         "inShort": [
             "**Creates and makes fragrances and flavours** in Noida, the scent in soaps, shampoos and detergents and the taste in food products, for Indian consumer-goods companies. Listed on NSE's SME board in 2025.",
             "**Good:** sales grew 41% to ₹152cr in FY26 at a 24% operating margin, there is no debt, and 84% of five years' operating profit turned into cash. **Watch:** the old plant is running at 124% of rated capacity, and a ₹184cr plant (more than its whole FY26 sales) arrives two months late with about ₹60cr of new debt; management's own plan has sales doubling in three years while capacity quadruples, so returns on capital will fall for a while.",
@@ -455,6 +456,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Gem Aromatics",
+        "segment": "Fragrance and personal-care ingredients",
         "inShort": [
             "**Makes mint and clove oils and the chemicals derived from them** (menthol-type products, eugenol) for flavour, fragrance, oral-care and pharma buyers, and is starting a ₹270cr plant at Dahej for newer aroma and specialty chemicals. Listed in 2025.",
             "**Good:** a long-established export business and a new plant whose cooling agents are already approved by the two largest buyers. **Bad:** consolidated sales fell 27% in FY26 and it lost money in three of the last four quarters (−₹7.9cr in Q1 FY27), stock takes about 309 days to sell, and five years of operating profit produced only 17% as cash, with free cash at −₹212cr.",

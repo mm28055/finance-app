@@ -729,6 +729,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Kwality Pharmaceuticals",
+        "segment": "Export-led — ships product to foreign buyers",
         "inShort": [
             "**An Amritsar maker of generic injectables, tablets and cancer drugs** that sells mainly through distributors and partners into Latin America, the Middle East, Africa and Asia, about half of it exported directly, and is now building biosimilar and hormone plants.",
             "**Good:** sales up 36% to ₹503cr in FY26 and 46% in Q1 FY27, a 24–25% margin, EU and PIC/S-approved lines, and dozens of new country registrations a year. **Bad:** customers took **203 days** to pay in FY26, so only ₹17cr of the ₹118cr operating profit became cash; five family members are executive directors, a small local firm audits it while KPMG keeps being promised, it dealt with a firm co-owned by the promoter and a key distributor's associate, and it stopped cooperating with rating agencies for years until May 2026.",

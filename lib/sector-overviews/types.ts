@@ -243,6 +243,11 @@ export interface MixPart {
 export interface BusinessProfile {
     /** Must match `Company.name` exactly. */
     company: string;
+    /**
+     * Companies added after the note was ranked: which of the note's groups (a `CompanyVerdict.segment`,
+     * or a new group name) it sits in on the sector page's charts. Set it when the card is written.
+     */
+    segment?: string;
     /** One line: what the business is. */
     tagline: string;
     /** Latest full-year revenue as filed (Screener), e.g. "₹3,951cr (FY26, consolidated)". */

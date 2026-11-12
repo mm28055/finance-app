@@ -348,7 +348,7 @@ export function chartRows(note: SectorOverview): CompanyVerdict[] {
     const ranked = new Set(note.verdicts.map(v => keyOf(v.company)));
     const added = (note.businesses?.profiles || [])
         .filter(p => !ranked.has(keyOf(p.company)))
-        .map((p): CompanyVerdict => ({ company: p.company, stance: 'ADDED', what: p.tagline, view: '', watch: '', segment: 'Added since the note was written' }));
+        .map((p): CompanyVerdict => ({ company: p.company, stance: 'ADDED', what: p.tagline, view: '', watch: '', segment: p.segment || 'Not yet placed in a group' }));
     return [...note.verdicts, ...added];
 }
 

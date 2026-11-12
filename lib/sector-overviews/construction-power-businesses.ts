@@ -190,6 +190,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Karamtara Engineering",
+        "segment": "Tower makers with a contracting arm — make the steel, then build",
         "inShort": [
             "**Makes the steel structures that hold up solar panels**, plus transmission-line towers, wind towers, fasteners and line hardware, from 13 plants in Maharashtra, Gujarat and Italy, selling about 40% abroad, mainly to US solar builders.",
             "**Good:** revenue grew 37% to ₹4,312cr in FY26 and 72% in Q1 FY27, and over five years about 89% of operating profit turned into cash. **Watch:** solar is 79% of sales and the top 10 customers 49%; the margin is thin at 11–12%; heavy capex left free cash negative for three years; and a CBI charge-sheet over 2013 letters of credit names the Chairman and the CFO.",
@@ -300,6 +301,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Om Power Transmission",
+        "segment": "Transmission contractors — build lines and substations",
         "inShort": [
             "**A small Gujarat contractor that builds high-voltage power lines, substations and underground cables**, mostly for GETCO, the state transmission utility, and maintains about 100 substations.",
             "**Good:** revenue grew 61% to ₹449cr in FY26 with a steady 13% margin, management guides to about 50% more in FY27, and the price is about 12 times earnings. **Watch:** one customer was 64% of FY26 revenue and Gujarat 82% of the order book; over four years it turned only ₹5cr of ₹119cr of operating profit into cash; customers took 180 days to pay in FY26; and the order book has shrunk since December.",
@@ -393,6 +395,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Vikran Engineering",
+        "segment": "Transmission contractors — build lines and substations",
         "inShort": [
             "**A Thane contractor that builds power substations, transmission and distribution lines, solar plants and village water schemes**, mostly for government utilities, and now also owns a 969 MW solar project it is building for itself.",
             "**Good:** an order book of about ₹6,500cr, roughly five times FY26 revenue, and margins of about 14%. **Bad:** over five years it reported ₹589cr of operating profit but operating cash of −₹603cr; customers owe about ₹1,240cr plus ₹864cr of unbilled work against ₹1,249cr of revenue; one customer was 56% of FY26 revenue; and it took over a customer's ₹4,200cr solar project to settle unpaid dues, a project bigger than the company's market value.",

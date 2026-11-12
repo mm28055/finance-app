@@ -550,6 +550,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Piccadily Agro",
+        "segment": "Spirits",
         "inShort": [
             "**A Haryana distiller and sugar maker that owns Indri**, one of the best-known Indian single malt whiskies, plus Whistler, Camikara rum and Cashmir vodka, alongside bulk alcohol, ethanol and a sugar unit it is spinning off.",
             "**Good:** branded spirits grew 47% in Q1 FY27 to ₹82cr, it holds 87,000 barrels of ageing malt, and management guides about 60% growth in FY27. **Bad:** only about a third of five years' operating profit came through as cash because the whisky must age for years, borrowings rose to ₹531cr, Q1 grew just 18%, the auditor resigned in April 2026, and a group sugar company owed it ₹43cr.",
@@ -636,6 +637,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Regaal Resources",
+        "segment": "Maize starch and sweeteners",
         "inShort": [
             "**A maize-starch maker in Kishanganj, Bihar**, that grinds maize into starch for paper mills and food companies and sells the by-products as animal feed; it has just doubled its plant and added liquid glucose and maltodextrin.",
             "**Good:** Q1 FY27 margin rose to 15% as it dropped low-margin maize trading, Bihar maize is cheap and good, and capacity doubled in May 2026. **Bad:** net debt is **₹735cr**, about five and a half times a year's operating profit; five years of operating profit produced only 23% as cash; and the margin swings with maize prices it cannot control.",
@@ -729,6 +731,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Milky Mist Dairy",
+        "segment": "Branded snacks, staples and nutrition",
         "inShort": [
             "**A Tamil Nadu dairy company that sells only value-added products**: paneer (the largest private branded paneer maker in India), cheese, curd, ghee, yogurt and ice cream, made at one large plant in Erode and sold mostly in South India.",
             "**Good:** revenue grew 34% in FY26 and 44% in Q1 FY27, the margin is rising (15% in Q1), and the ban on fake 'analogue' paneer and zero GST on paneer help. **Bad:** the shares trade at **116 times earnings** after doubling from the ₹140 IPO price; free cash has been negative for four years; one plant and Tamil Nadu milk carry the whole business; contingent liabilities are ₹229cr.",
@@ -863,6 +866,7 @@ const profiles: BusinessProfile[] = [
     },
     {
         "company": "Orkla India",
+        "segment": "Branded snacks, staples and nutrition",
         "inShort": [
             "**Sells packaged spices and ready-to-cook foods** under MTR (Karnataka), Eastern (Kerala) and Rasoi Magic. Spices are 65% of revenue and convenience foods 35%; 70% of sales come from South India and 21% from exports to the Indian diaspora.",
             "**Good:** leading brands in their home states, a steady 16–17% operating margin, profit that turns into cash (77% over five years) and about ₹500cr of net cash. **Bad:** sales grew only 5% a year over FY23–FY26, volume rose just 1.7% in Q1 FY27, Eastern is losing share in Kerala while being restructured, and spice prices are rising fast.",
