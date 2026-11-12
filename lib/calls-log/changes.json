@@ -1,6 +1,24 @@
 {
  "changes": [
   {
+   "date": "2026-11-13",
+   "company": "MMP Industries",
+   "sector": "Mining & Metals Recycle",
+   "from": null,
+   "to": "wait",
+   "price": 454.75,
+   "why": "I expect about 12% a year of earnings growth against the {need:MMP Industries|15}% the price needs ({label:MMP Industries|full}); I want the PGCIL insulator approval and the wire-rod plant running first."
+  },
+  {
+   "date": "2026-11-13",
+   "company": "Bansal Wire Industries",
+   "sector": "Iron and Steel",
+   "from": null,
+   "to": "wait",
+   "price": 59.44,
+   "why": "The new plant is filling, but I expect about 16% a year of earnings growth against the {need:Bansal Wire Industries|18}% the price needs, and the cash and related-party questions should be answered first."
+  },
+  {
    "date": "2026-11-12",
    "company": "Fidel Softech",
    "sector": "Software",

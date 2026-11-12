@@ -1,5 +1,5 @@
 {
- "date": "2026-11-12",
+ "date": "2026-11-13",
  "calls": {
   "Anthem Biosciences": {
    "call": "follow",
@@ -1749,6 +1749,10 @@
    "call": "wait",
    "sector": "Mining & Metals Recycle"
   },
+  "MMP Industries": {
+   "call": "wait",
+   "sector": "Mining & Metals Recycle"
+  },
   "Midwest": {
    "call": "pass",
    "sector": "Mining & Metals Recycle"
@@ -1994,6 +1998,10 @@
    "sector": "Iron and Steel"
   },
   "Bharat Wire Ropes": {
+   "call": "wait",
+   "sector": "Iron and Steel"
+  },
+  "Bansal Wire Industries": {
    "call": "wait",
    "sector": "Iron and Steel"
   },
