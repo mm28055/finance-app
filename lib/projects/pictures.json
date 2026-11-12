@@ -48158,6 +48158,164 @@
     "Steel cord: Indian demand 2.5–3 lakh t a year, mostly imported; price about ₹130–140 a kg; the MD expects one of three customers to \"click within the next six months\"; supply to a new customer starts slowly for two quarters, and no customer is to take more than 20–25% of cord sales"
    ],
    "source": "Q2 FY27 call (23 Oct 2026) and presentation, Q1 FY27 call (23 Jul 2026) and presentation, FY26 annual report (MD&A, note 38.1), Screener"
+  },
+  {
+   "company": "MMP Industries",
+   "fingerprint": "bfa70c278306d9cb",
+   "checkedOn": "2026-11-12",
+   "lines": {
+    "heading": "How full each line is (Q2 FY27 call, November 2026)",
+    "items": [
+     {
+      "name": "Aluminium powders",
+      "size": "29,100 t a year (atomised 12,000 t, pyro and flake 16,800 t, leafing 300 t)",
+      "usedPct": 80,
+      "usedLabel": "about 80% used",
+      "note": "No powder capacity is planned for two years; growth is to come from exports and richer grades"
+     },
+     {
+      "name": "Foil rolling mill",
+      "size": "8,400 t a year",
+      "usedPct": 75,
+      "usedLabel": "70–80% used",
+      "note": "80–85% on the May 2026 call"
+     },
+     {
+      "name": "Foil conversion",
+      "size": "3,600 t a year (lamination, coating, printing)",
+      "usedPct": 60,
+      "usedLabel": "about 60% used",
+      "note": "45% on the May 2026 call; a lidding-foil line is ready, ₹9–11cr of sales a year at 75% use"
+     }
+    ]
+   },
+   "adds": [
+    {
+     "heading": "What the Umred LT cable plant adds (trials Q4 FY28, meaningful revenue FY29)",
+     "projectId": "mmp-industries-lt-cables-umred",
+     "bars": [
+      {
+       "name": "LT power cable",
+       "sub": "low-voltage power cables and covered conductors, two phases",
+       "base": 1200,
+       "add": 6000,
+       "baseLabel": "today 1,200 t (Bhandara pilot)",
+       "addLabel": "+6,000 t",
+       "right": "to 7,200 t"
+      }
+     ],
+     "notes": [
+      "LT cables are guided at a 14–15% operating margin; machines ordered, with long delivery times",
+      "Management changed this on 3 Nov 2026: the 25 May 2026 call said the first phase would start gradually from FY27"
+     ]
+    }
+   ],
+   "money": {
+    "heading": "Money: FY26 capex ₹49cr; borrowings ₹236cr at September 2026 (CFO's limit: net debt 1 times equity)",
+    "items": [
+     {
+      "name": "Polymer insulators (MMP Electricals)",
+      "sub": "10 lakh pieces a year, 11–765 kV; both phases running",
+      "right": "₹35–40cr invested, ₹8–10cr more for peak output",
+      "status": "started",
+      "projectId": "mmp-industries-polymer-insulators"
+     },
+     {
+      "name": "Aluminium wire rod (18,000 t)",
+      "sub": "for its own conductors and cables, rest sold outside",
+      "right": "₹13–15cr",
+      "status": "building",
+      "projectId": "mmp-industries-wire-rod"
+     },
+     {
+      "name": "LT cable plant, Umred (6,000 t)",
+      "sub": "first ₹40cr in FY27–FY28, partly borrowed (Crisil)",
+      "right": "₹85–90cr over 2–3 years",
+      "status": "building",
+      "projectId": "mmp-industries-lt-cables-umred"
+     },
+     {
+      "name": "LT cable pilot, Bhandara (1,200 t)",
+      "sub": "BIS approved; initial production started",
+      "total": 5,
+      "right": "about ₹5cr (May 2026 presentation)",
+      "status": "started",
+      "projectId": "mmp-industries-lt-cables-bhandara"
+     },
+     {
+      "name": "7 MW group-captive solar park",
+      "sub": "hardware at site, awaiting approvals",
+      "total": 30,
+      "right": "₹30cr",
+      "status": "building",
+      "projectId": "mmp-industries-solar-park"
+     }
+    ]
+   },
+   "timeline": [
+    {
+     "when": "Q1 FY26",
+     "tone": "done",
+     "text": "Explosion and fire at the Umred powder plant (11 Apr 2025)",
+     "sub": "7 killed, 4 injured; powder output stopped about 50 days"
+    },
+    {
+     "when": "Q2 FY27",
+     "tone": "done",
+     "text": "Record revenue; LT cable pilot in initial production",
+     "sub": "Insulator factory inspections done; export orders from Latin America and South Asia"
+    },
+    {
+     "when": "Q4 FY27",
+     "tone": "next",
+     "text": "Wire rod, LT cable sales, solar and the PGCIL approval",
+     "milestones": [
+      "mmp-industries-polymer-insulators-m1",
+      "mmp-industries-wire-rod-m1",
+      "mmp-industries-lt-cables-bhandara-m1",
+      "mmp-industries-solar-park-m1"
+     ]
+    },
+    {
+     "when": "Q1 FY28",
+     "tone": "later",
+     "text": "Insulators bring meaningful revenue; wire rod contributes",
+     "sub": "full use of the insulator plant from H2 FY28"
+    },
+    {
+     "when": "Q4 FY28",
+     "tone": "later",
+     "text": "Umred LT cable trials",
+     "milestones": [
+      "mmp-industries-lt-cables-umred-m1",
+      "mmp-industries-polymer-insulators-m2"
+     ]
+    },
+    {
+     "when": "FY29",
+     "tone": "later",
+     "text": "Umred LT cables bring meaningful revenue",
+     "sub": "any foil expansion only considered for FY29"
+    },
+    {
+     "when": "About FY29",
+     "tone": "maybe",
+     "text": "765 kV insulators",
+     "sub": "PGCIL wants two more years of field record beyond 400 kV"
+    }
+   ],
+   "notes": [
+    "Four plants around Nagpur (Hingna, Umred and Maregaon in Bhandara district) on 110 of 150 acres",
+    "Conductors 7,200 t; conductor volume fell 33% year on year in Q2 FY27 in the monsoon; insulators sold ₹1.1cr in H1 FY27",
+    "FY26 capex ₹49cr: ₹21cr insulators, ₹16cr powders, ₹6cr conductors; capital work in progress ₹56cr at September 2026",
+    "Insulators: approved by several state distribution utilities; PGCIL, GETCO, Sterlite, MPPTCL, KPTCL and others pending after factory inspections; first exports to Nepal and Latin America. In-house FRP rods and silicone, end fittings from Star Circlips",
+    "Insulators: ₹45–50cr of sales in FY28 (May 2026 guide) and ₹130–140cr at peak, 18–20% operating margin, about 3.5x asset turn. Management changed this on 3 Nov 2026: the 25 May call expected PGCIL approval in Q2 FY27, meaningful sales from Q3 FY27 and ₹18–20cr in FY27, which now 'looks a little difficult'",
+    "Wire rod: management expects conductor profit of ₹15,000–18,000 a tonne after it and ₹10,000–12,000 a tonne on rod sold outside; commercial production early Q4 FY27, contribution from Q1 FY28",
+    "LT cable pilot: approvals pending from MSEDCL, PWD, MahaMetro and state boards; guided at 14–15% margin. Management changed this on 3 Nov 2026: the 25 May call expected the launch in June 2026",
+    "Solar park: saves about ₹3–3.5 a unit; renewable share to 35–40% in 3–4 years from about 20% (5.5 MW rooftop solar). Management changed this on 3 Nov 2026: the May presentation said H1 FY27 and the May call Q3 FY27; now about January–February 2027",
+    "Insulators at full use would bring ₹130–140cr of sales after ₹8–10cr more equipment; powders at about 80% have about a quarter more volume before full use"
+   ],
+   "source": "Q2 FY27 call (3 Nov 2026), presentation and press release; Q4 FY26 call and presentation (May 2026); FY26 annual report (note 44); Crisil rationale (27 Apr 2026); Screener"
   }
  ]
 }

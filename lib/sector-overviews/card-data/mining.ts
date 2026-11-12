@@ -1326,6 +1326,159 @@ export const miningCharts: Record<string, ProfileCharts> = {
             ],
             "note": "Screener, consolidated."
         }
+    },
+    "MMP Industries": {
+        "costSplit": {
+            "year": "FY26",
+            "parts": [
+                {
+                    "label": "Materials",
+                    "share": 78
+                },
+                {
+                    "label": "Staff",
+                    "share": 6
+                },
+                {
+                    "label": "Other costs",
+                    "share": 8
+                },
+                {
+                    "label": "Operating profit",
+                    "share": 8
+                }
+            ],
+            "note": "Filed expense split (Screener). Materials include changes in stock."
+        },
+        "marginVsInput": {
+            "input": "Aluminium price",
+            "periods": [
+                "Q2 FY24",
+                "Q3 FY24",
+                "Q4 FY24",
+                "Q1 FY25",
+                "Q2 FY25",
+                "Q3 FY25",
+                "Q4 FY25",
+                "Q1 FY26",
+                "Q2 FY26",
+                "Q3 FY26",
+                "Q4 FY26",
+                "Q1 FY27",
+                "Q2 FY27"
+            ],
+            "margin": [
+                5.6,
+                9.2,
+                8.8,
+                10.9,
+                7.6,
+                10.1,
+                8.1,
+                7.1,
+                6.9,
+                8.9,
+                8.8,
+                9.0,
+                7.5
+            ],
+            "index": [
+                100,
+                101,
+                102,
+                111,
+                111,
+                116,
+                120,
+                117,
+                121,
+                127,
+                140,
+                163,
+                null
+            ],
+            "note": "Margin: filed results. Price: India wholesale price index for the item (Office of Economic Adviser), quarterly average."
+        },
+        "profitVsCash": {
+            "years": [
+                "FY22",
+                "FY23",
+                "FY24",
+                "FY25",
+                "FY26"
+            ],
+            "ebitda": [
+                42.0,
+                35.0,
+                46.0,
+                64.0,
+                65.0
+            ],
+            "ocf": [
+                19.0,
+                33.0,
+                43.0,
+                57.0,
+                53.0
+            ],
+            "fcf": [
+                -23.0,
+                13.0,
+                12.0,
+                7.0,
+                14.0
+            ]
+        },
+        "stats": [
+            {
+                "label": "P/E",
+                "value": "23.3x"
+            },
+            {
+                "label": "EV/EBITDA",
+                "value": "16.9x",
+                "note": "Market value plus net debt, ÷ operating profit over the last year."
+            },
+            {
+                "label": "Net debt",
+                "value": "₹183cr",
+                "note": "Borrowings including leases, minus cash, latest year end."
+            },
+            {
+                "label": "Cash conversion, 5 yrs",
+                "value": "81%",
+                "note": "Operating cash ÷ operating profit over five years; 70–80% is healthy."
+            },
+            {
+                "label": "Operating margin FY26",
+                "value": "8%"
+            }
+        ],
+        "statsAsOf": "12 Nov 2026",
+        "workingCapital": {
+            "fromYear": "FY22",
+            "toYear": "FY26",
+            "debtorDays": [
+                42,
+                39
+            ],
+            "inventoryDays": [
+                84,
+                90
+            ],
+            "payableDays": [
+                23,
+                26
+            ],
+            "cycleDays": [
+                103,
+                103
+            ],
+            "absorbed5y": -15,
+            "receivables5y": -45,
+            "inventory5y": -108,
+            "payables5y": 32
+        }
     }
 };
 
@@ -1390,5 +1543,11 @@ export const miningValuationInputs: Record<string, ValuationInput> = {
         "ttmEbitda": 577,
         "mcapAtWriting": 9721,
         "peAtWriting": 26.7
+    },
+    "MMP Industries": {
+        "netDebt": 183,
+        "ttmEbitda": 79.0,
+        "mcapAtWriting": 1155.0,
+        "peAtWriting": 23.3
     }
 };

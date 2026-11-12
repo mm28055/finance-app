@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T02:59:32.356Z",
+ "updated": "2026-11-12T11:30:17.006Z",
  "reports": [
   {
    "company": "Aartech Solonics",
@@ -4271,6 +4271,24 @@
     "Inventory is extremely high at ₹1,333 crore, which exceeds the company's entire annual revenue."
    ],
    "researchedOn": "2026-09-27"
+  },
+  {
+   "company": "MMP Industries",
+   "sector": "Mining & Metals Recycle",
+   "year": "FY26",
+   "url": "https://archives.nseindia.com/annual_reports/AR_30399_MMP_2025_2026_A_6952096_18082026122854.pdf",
+   "auditor": "Manish N. Jain & Co. gave an unmodified opinion on the accounts. Key audit matters included revenue recognition, the provision matrix for receivables, and the loss and insurance claim from the April 2025 fire. The CARO report was clean, noting no loan defaults, no disputed statutory dues, and that bank stock statements matched the books.",
+   "relatedParties": "Dealings included ₹18 crore in sales to the Toyal MMP joint venture and job-work with associate Star Circlips. Star Circlips is promoter-controlled and holds 4.56% of MMP. Director Rohini Bhandari received ₹30 lakh in legal fees, and salaries were paid to the MD's wife, Saroj Bhandari, and to Sakshi Mayank Bhandari, listed as the wife of a non-executive director. MMP had ₹0.3 crore in unsecured loans from related parties. It also lent ₹2.15 crore to its two wholly owned subsidiaries and guaranteed ₹66.9 crore of their loans.",
+   "contingent": "On a consolidated basis, contingent liabilities included ₹4.5 crore in bank guarantees to MSEDCL and others. On a standalone basis, the company provided corporate guarantees of ₹34 crore for MMP Electricals and ₹32.9 crore for MMP Cables. Capital commitments stood at ₹56 crore at the end of March 2026.",
+   "outlook": "Management expects powder demand to grow, driven by AAC blocks, mining, and explosives. Anti-dumping duties on Chinese foil should help the foil business. The company plans to build an integrated electrical products business through its insulator, LT cable, and wire-rod subsidiaries. Named risks include aluminium price swings, hazardous processes, and project delays. The company noted that safety controls were strengthened after the fatal accident.",
+   "other": "FY26 segment profit before interest showed powders earning ₹59.9 crore (11.9% of sales), foils ₹4.3 crore (2.0%), and conductors ₹4.9 crore (4.9%). The insulator business recorded a ₹3.3 crore loss. An exceptional loss of ₹9.7 crore was booked for the fire and new wage code gratuity costs. MMP paid a dividend of ₹2 a share. Promoters hold 74.48% of the company, led by Arun Bhandari with 27.40%.",
+   "flags": [
+    "Seven workers died and four were injured in an April 2025 explosion at the Umred powder plant.",
+    "Foils make up a quarter of sales but earned only about 2% at the segment level.",
+    "MMP guarantees ₹66.9 crore of its subsidiaries' loans, while these subsidiaries are losing money.",
+    "About a quarter of FY26 profit came from associates, primarily the promoter-controlled Star Circlips, which also owns a 4.56% stake in MMP."
+   ],
+   "researchedOn": "2026-11-12"
   },
   {
    "company": "Mobavenue Ai Tech",

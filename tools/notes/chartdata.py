@@ -342,6 +342,7 @@ CONFIG = {
         'Caliber Mining & Log': ('CMLL', None, HSD, False),
         'Ardee Industries': ('ARDEE_s', None, LEAD, False),
         '20 Microns': ('20MICRONS', None, LIMESTONE, False),
+        'MMP Industries': ('MMP', None, ALU, False),
     },
     'hospitals': {
         'Narayana Hrudayalaya': ('NH', None, None, True),

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "companies": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -39434,6 +39434,91 @@
     "https://scanx.trade/stock-market-news/companies/bansal-wire-promoter-to-sell-2-99-stake-by-aug-31-2026/43833265"
    ],
    "updatedOn": "2026-11-11"
+  },
+  {
+   "company": "MMP Industries",
+   "sector": "Mining & Metals Recycle",
+   "style": "Promoter-run",
+   "styleNote": "A Nagpur family company run by the Bhandaris since the 1980s: Arun Bhandari (70) is Chairman and Managing Director, his cousin Lalit Bhandari (70) a whole-time director, and his son Mayank and daughter Rohini sit on the board as non-executive directors and speak for the new businesses on the calls. Promoters hold 74.48% (unchanged): Arun Bhandari 27.40%, the family company Mayank Fasteners 18.83%, his wife Saroj Bhandari 12.81%, Vivaan Bhandari (a minor) 5.74%, the associate Star Circlips & Engineering 4.56%, Mayank 2.23%, Sakshi Bhandari 1.54%, Rohini 0.88% and Rohini Farms 0.49% (March 2026). Star Circlips is 26.06% owned by MMP and 73.94% by the promoters, so the two companies hold shares in each other; management said on 3 Nov 2026 it will not be merged. Family members are also employed: Saroj Bhandari as a unit head, Sakshi Mayank Bhandari as a manager, and Rohini Bhandari was paid ₹30 lakh for legal advice in FY26. Other related-party dealings are small (₹18cr of powder sold to the Toyal MMP joint venture, which buys only from MMP). The 2026 AGM was asked to let Arun and Lalit Bhandari continue past 70.",
+   "people": [
+    {
+     "name": "Arun Bhandari",
+     "role": "Chairman and Managing Director",
+     "since": "On the board since 5 February 1981; Managing Director, current term to 31 January 2028",
+     "family": true,
+     "relation": "Promoter; father of directors Mayank and Rohini Bhandari, cousin of Lalit Bhandari",
+     "stake": "27.40% (31 March 2026); the promoter group holds 74.48%",
+     "bio": "Born 1955, he holds a B.Tech in chemical engineering from Banaras Hindu University and began in 1977 as a graduate engineer trainee at Shri Ram Chemical Industries, Kota. He has about 45 years in aluminium powder, paste and conductors and in circlips, and led MMP into foils, conductors and insulators. He opens the results calls and chairs the CSR and project-monitoring committees; he is also a director of Star Circlips, Toyal MMP India, Mayank Fasteners and the subsidiaries. The 2026 AGM was asked to approve his continuing as MD past 70."
+    },
+    {
+     "name": "Lalit Bhandari",
+     "role": "Whole-Time Director",
+     "since": "Director since 1 August 2008; with the group since 1981",
+     "family": true,
+     "relation": "Cousin of the Chairman, Arun Bhandari",
+     "stake": "Nil (annual report)",
+     "bio": "Lalit Ranjeet Raj Bhandari, a graduate born in 1956, has about 40 years in the aluminium powder and paste business, mainly in project management. His term runs to 31 March 2027; the 2026 AGM was asked to approve his continuing past 70 and a new five-year term from April 2027 to March 2032."
+    },
+    {
+     "name": "Mayank Bhandari",
+     "role": "Non-Executive Director",
+     "since": "Director since 27 October 2021",
+     "family": true,
+     "relation": "Son of the Chairman, Arun Bhandari; brother of Rohini Bhandari",
+     "stake": "2.23% (31 March 2026)",
+     "bio": "Born 1984, he studied engineering with business management at the University of Birmingham and holds a master's from the University of Warwick (2006). He has about 20 years in the powder and paste business, mainly project management, and answers the questions on insulators, powder exports and strategy on the calls. He is a director of Star Circlips, Toyal MMP India, Mayank Fasteners, the subsidiaries and the listed Bajaj Steel Industries."
+    },
+    {
+     "name": "Rohini Bhandari",
+     "role": "Non-Executive Director",
+     "family": true,
+     "relation": "Daughter of the Chairman, Arun Bhandari",
+     "stake": "0.88% (31 March 2026)",
+     "bio": "She holds an LLM from Columbia University, has been legal head of the group companies for about eight years and leads the launch and marketing of the polymer insulators, which she explained on the May 2026 call. The company paid her ₹30 lakh for legal and professional services in FY26."
+    },
+    {
+     "name": "Tenneti Narasimham Murthy",
+     "role": "Whole-Time Director",
+     "family": false,
+     "bio": "Listed as a whole-time director in the FY26 annual report. The filings read give no other background."
+    },
+    {
+     "name": "Sharad Khandelwal",
+     "role": "Chief Financial Officer",
+     "family": false,
+     "bio": "Presents the financial results on the calls; on 25 May 2026 he guided ROCE of 13–14% for FY27 and above 15% for FY28 and said net debt would not go above 1 times equity."
+    },
+    {
+     "name": "Madhura Singh",
+     "role": "Company Secretary and Compliance Officer",
+     "family": false,
+     "bio": "Signs the company's exchange filings; earlier filings and the presentations give her name as Madhura Ubale."
+    },
+    {
+     "name": "Saroj Bhandari",
+     "role": "Unit Head (employee)",
+     "family": true,
+     "relation": "Wife of the Chairman, Arun Bhandari",
+     "stake": "12.81% (31 March 2026)",
+     "bio": "Employed by the company as a unit head on a salary approved as a related-party arrangement in May 2025."
+    },
+    {
+     "name": "Sakshi Bhandari",
+     "role": "Manager (employee)",
+     "family": true,
+     "relation": "Listed as wife of a non-executive director (Sakshi Mayank Bhandari in the related-party list)",
+     "stake": "1.54% (31 March 2026)",
+     "bio": "A member of the promoter group employed as a manager. The presentation describes her as a quality-assurance specialist trained in the Japanese TPM method, with an integrated master's in manufacturing engineering and management from the University of Warwick (2007)."
+    }
+   ],
+   "changes": "Raj Sethia and Dr Sanjay Arora joined as independent directors in 2026, with their appointments put to the 12 September 2026 AGM, which was also asked to approve Arun Bhandari continuing as MD past 70 (to January 2028) and Lalit Bhandari continuing as whole-time director past 70 and being re-appointed from April 2027 to March 2032.",
+   "sources": [
+    "https://archives.nseindia.com/annual_reports/AR_30399_MMP_2025_2026_A_6952096_18082026122854.pdf",
+    "https://nsearchives.nseindia.com/corporate/MMP_03112026103809_MMPILInvestorPPT30092026.pdf",
+    "Q2 FY27 call transcript (3 Nov 2026)",
+    "Q4 FY26 call transcript (25 May 2026)"
+   ],
+   "updatedOn": "2026-11-12"
   }
  ]
 }

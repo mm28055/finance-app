@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -41563,6 +41563,116 @@
    "due": "Q4 FY28",
    "project": "bansal-wire-industries-sanand",
    "createdOn": "2026-11-11",
+   "status": "pending"
+  },
+  {
+   "id": "mmp-industries-q3fy27-1",
+   "company": "MMP Industries",
+   "sector": "Mining & Metals Recycle",
+   "text": "Q3 FY27 revenue at least 20% above Q3 FY26 (₹203cr), in line with the 20–25% FY27 growth the May 2026 presentation targeted; H1 FY27 grew 31%, helped by aluminium prices",
+   "metric": "revenueYoY",
+   "op": ">=",
+   "target": 20,
+   "due": "Q3 FY27",
+   "ifMet": "Growth is holding up even as aluminium prices cool",
+   "ifMissed": "H1 growth was mostly metal prices; my 12% estimate is at risk",
+   "createdOn": "2026-11-12",
+   "status": "pending"
+  },
+  {
+   "id": "mmp-industries-q3fy27-2",
+   "company": "MMP Industries",
+   "sector": "Mining & Metals Recycle",
+   "text": "Operating margin of at least 8% in Q3 FY27: management expects margins to improve in H2 FY27 on exports and a better mix, after 7.5% in Q2 (₹2.5cr of inventory losses) and 9.0% in Q1",
+   "metric": "ebitdaMargin",
+   "op": ">=",
+   "target": 8,
+   "due": "Q3 FY27",
+   "ifMet": "Q2 was an inventory blip; per-tonne profit guidance holds",
+   "ifMissed": "New-subsidiary losses and metal swings keep the margin in the 7s",
+   "createdOn": "2026-11-12",
+   "status": "pending"
+  },
+  {
+   "id": "mmp-industries-q4fy27-1",
+   "company": "MMP Industries",
+   "sector": "Mining & Metals Recycle",
+   "text": "Conductor and cable revenue in H2 FY27 40–50% above H1 FY27 (₹33cr), i.e. about ₹46–50cr, as guided on the 3 Nov 2026 call after H1 fell 32% in the monsoon and the RDSS slowdown",
+   "due": "Q4 FY27",
+   "ifMet": "The conductor business is recovering ahead of the wire-rod plant",
+   "ifMissed": "Conductors stay a drag; the power-products story weakens",
+   "createdOn": "2026-11-12",
+   "status": "pending"
+  },
+  {
+   "id": "mmp-industries-q4fy27-2",
+   "company": "MMP Industries",
+   "sector": "Mining & Metals Recycle",
+   "text": "First commercial lidding-foil orders from a dairy in the January–March 2027 season (samples with Amul, Mother Dairy and Dinshaw's; 3 Nov 2026 call)",
+   "due": "Q4 FY27",
+   "ifMet": "Foil starts moving to richer products; conversion capacity fills",
+   "ifMissed": "Foil stays a 2%-margin bulk business",
+   "createdOn": "2026-11-12",
+   "status": "pending"
+  },
+  {
+   "id": "mmp-industries-polymer-insulators-m1",
+   "company": "MMP Industries",
+   "sector": "Mining & Metals Recycle",
+   "text": "PGCIL approval for 400 kV transmission insulators received (expected 'quite soon' on the 3 Nov 2026 call; the 25 May call had said Q2 FY27)",
+   "due": "Q4 FY27",
+   "project": "mmp-industries-polymer-insulators",
+   "createdOn": "2026-11-12",
+   "status": "pending"
+  },
+  {
+   "id": "mmp-industries-polymer-insulators-m2",
+   "company": "MMP Industries",
+   "sector": "Mining & Metals Recycle",
+   "text": "Insulator revenue of ₹45–50cr in FY28 (25 May 2026 guidance; the 3 Nov call expects meaningful revenue from Q1 FY28 and optimum use from H2 FY28)",
+   "due": "Q4 FY28",
+   "project": "mmp-industries-polymer-insulators",
+   "createdOn": "2026-11-12",
+   "status": "pending"
+  },
+  {
+   "id": "mmp-industries-wire-rod-m1",
+   "company": "MMP Industries",
+   "sector": "Mining & Metals Recycle",
+   "text": "Commercial production at the 18,000 t aluminium wire-rod plant by Q4 FY27 (3 Nov 2026 call and presentation)",
+   "due": "Q4 FY27",
+   "project": "mmp-industries-wire-rod",
+   "createdOn": "2026-11-12",
+   "status": "pending"
+  },
+  {
+   "id": "mmp-industries-lt-cables-bhandara-m1",
+   "company": "MMP Industries",
+   "sector": "Mining & Metals Recycle",
+   "text": "First commercial LT power-cable sales from Bhandara after MSEDCL and other utility approvals, by Q4 FY27 (3 Nov 2026 call)",
+   "due": "Q4 FY27",
+   "project": "mmp-industries-lt-cables-bhandara",
+   "createdOn": "2026-11-12",
+   "status": "pending"
+  },
+  {
+   "id": "mmp-industries-lt-cables-umred-m1",
+   "company": "MMP Industries",
+   "sector": "Mining & Metals Recycle",
+   "text": "Trial production at the 6,000 t Umred LT cable plant by Q4 FY28 (Q2 FY27 presentation)",
+   "due": "Q4 FY28",
+   "project": "mmp-industries-lt-cables-umred",
+   "createdOn": "2026-11-12",
+   "status": "pending"
+  },
+  {
+   "id": "mmp-industries-solar-park-m1",
+   "company": "MMP Industries",
+   "sector": "Mining & Metals Recycle",
+   "text": "The 7 MW solar park commissioned by Q4 FY27 (January–February 2027 per the 3 Nov 2026 call)",
+   "due": "Q4 FY27",
+   "project": "mmp-industries-solar-park",
+   "createdOn": "2026-11-12",
    "status": "pending"
   }
  ]
