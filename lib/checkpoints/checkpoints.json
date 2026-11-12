@@ -1636,7 +1636,10 @@
    "target": 19,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "19.0%",
+   "resolvedOn": "2026-11-12",
+   "resolvedBy": "auto"
   },
   {
    "id": "sedemac-mechatronics-q2fy27-2",
@@ -5792,7 +5795,10 @@
    "target": 0,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "₹-6cr",
+   "resolvedOn": "2026-11-12",
+   "resolvedBy": "auto"
   },
   {
    "id": "indiqube-spaces-q4fy27-1",
@@ -6471,7 +6477,10 @@
    "target": 570,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "₹505cr",
+   "resolvedOn": "2026-11-12",
+   "resolvedBy": "auto"
   },
   {
    "id": "interarch-building-q4fy27-1",
@@ -7930,7 +7939,10 @@
    "target": 10,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "21.0%",
+   "resolvedOn": "2026-11-12",
+   "resolvedBy": "auto"
   },
   {
    "id": "ttk-prestige-q3fy27-1",
@@ -8803,7 +8815,10 @@
    "target": 11,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "11.6%",
+   "resolvedOn": "2026-11-12",
+   "resolvedBy": "auto"
   },
   {
    "id": "somany-ceramics-q2fy27-2",
@@ -11917,7 +11932,10 @@
    "target": 592,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "₹581cr",
+   "resolvedOn": "2026-11-12",
+   "resolvedBy": "auto"
   },
   {
    "id": "poly-medicure-q4fy27-1",
@@ -16109,7 +16127,10 @@
    "target": 17,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "29.9%",
+   "resolvedOn": "2026-11-12",
+   "resolvedBy": "auto"
   },
   {
    "id": "epl-q3fy27-1",
@@ -16148,7 +16169,10 @@
    "target": 17,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "17.3%",
+   "resolvedOn": "2026-11-12",
+   "resolvedBy": "auto"
   },
   {
    "id": "tcpl-packaging-q2fy27-2",
@@ -18908,7 +18932,10 @@
    "due": "Q2 FY27",
    "ifMissed": "Stays avoid",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "31.2%",
+   "resolvedOn": "2026-11-12",
+   "resolvedBy": "auto"
   },
   {
    "id": "apollo-pipes-q2fy27-2",
