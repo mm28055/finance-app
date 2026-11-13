@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T22:34:50.096Z",
+ "updated": "2026-11-13T22:20:21.235Z",
  "events": [
   {
    "company": "GSFC",
@@ -10414,7 +10414,7 @@
    "kind": "results",
    "date": "2026-11-14",
    "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_3005_WebXMLFile_20261106_165852783.xml"
+   "url": "https://nsearchives.nseindia.com/corporate/xbrl/PRIOR_INTIMATION_3005_WebXMLFile_20261106_170414169.xml"
   },
   {
    "company": "Allcargo Global",
@@ -11196,6 +11196,23 @@
    "time": "12:00 pm",
    "quarter": "Q2 FY27",
    "url": "https://nsearchives.nseindia.com/corporate/KRISHANA_11112026175327_NSEINTMEET1811SIGNUP.pdf"
+  },
+  {
+   "company": "Mishra Dhatu Nigam (MIDHANI)",
+   "sector": "Aerospace defence",
+   "kind": "call",
+   "date": "2026-11-19",
+   "time": "11:00 hrs",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.com/corporate/MIDHANI_13112026154559_MDN_Concall_Intimation_13112026.pdf"
+  },
+  {
+   "company": "United Heat Transfer",
+   "sector": "Industrials",
+   "kind": "call",
+   "date": "2026-11-19",
+   "time": "2:00 pm",
+   "url": "https://nsearchives.nseindia.com/corporate/UNITEDHEAT_13112026224846_UHTL-_Concall_invite.pdf"
   },
   {
    "company": "Whirlpool India",
