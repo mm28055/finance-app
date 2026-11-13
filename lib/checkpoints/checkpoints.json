@@ -6834,7 +6834,13 @@
    "target": 15,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-13",
+     "text": "Q2 FY27 call (30 Oct 2026): H1 revenue +7%; management says FY27 may end 1–2 points below the 15% guide at worst, because customers deferred shipments"
+    }
+   ]
   },
   {
    "id": "skipper-q4fy27-3",
@@ -8545,7 +8551,8 @@
    "status": "missed",
    "actual": "15.1%",
    "resolvedOn": "2026-11-09",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow; standalone growth 14.1%, gross 18.8% before discounts"
   },
   {
    "id": "indigo-paints-q3fy27-1",
@@ -8568,7 +8575,11 @@
    "due": "Q3 FY27",
    "ifMet": "Buy, with about 20% growth",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Q2 FY27 gross margin 38.5% against 45.1% a year earlier (dear raw-material stock and mix); management says it was back near normal from September",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "No buy; stays follow"
   },
   {
    "id": "indigo-paints-q2fy27-2",
@@ -8577,7 +8588,11 @@
    "text": "Jodhpur plant reaching commercial output",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Only trial production in September; management expects the plant on stream by end-November 2026",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "kansai-nerolac-q2fy27-1",
@@ -19071,7 +19086,11 @@
    "ifMet": "Needed before the price fits",
    "ifMissed": "Stays follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Pre-tax profit ₹43cr in Q2 FY27 against ₹39cr a year earlier (+10%, Screener), despite depreciation roughly doubling",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; the price still needs far more than my ~15%"
   },
   {
    "id": "blackbuck-q4fy27-1",
@@ -20469,7 +20488,11 @@
    "text": "Operating cycle falls below 90 days (CARE's trigger is 120)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Inventory back up to ₹865cr at September (₹840cr in March, ₹663cr in June), about 105 days of cost of goods on H1 sales",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; cash conversion still short of own"
   },
   {
    "id": "aditya-vision-q4fy27-1",
@@ -22506,7 +22529,11 @@
    "text": "Tech-client (TMT) revenue growing again in Q2 ('healthy sequential growth' expected)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "TMT revenue grew 6% on the quarter in Q2 FY27 (still a sector in flux)",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "fractal-analytics-q2fy27-2",
@@ -22528,7 +22555,11 @@
    "text": "Cogentiq revenue disclosed and rising",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Products revenue disclosed (₹38cr in Q2, run-rate over ₹150cr a year, +39%; ₹200cr+ contracted), but Cogentiq itself not split out",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "happiest-minds-q3fy27-1",
@@ -27805,8 +27836,12 @@
    "text": "Trial production starts at the Jodhpur water-based plant",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "indigo-paints-jodhpur"
+   "status": "met",
+   "project": "indigo-paints-jodhpur",
+   "actual": "Trial production at the new 90,000 KL water-based plant began in September 2026",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "indigo-paints-jodhpur-m2",
