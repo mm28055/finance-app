@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -660,7 +660,10 @@
    "target": 16,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "13.8%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "rossell-techsys-q4fy27-1",
@@ -1748,7 +1751,10 @@
    "target": 340,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹379cr",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "uniparts-india-q4fy27-1",
@@ -1772,7 +1778,10 @@
    "target": 20,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "21.9%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "uniparts-india-q4fy27-2",
@@ -2707,7 +2716,10 @@
    "target": 11,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "9.8%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "ndr-auto-components-q2fy27-2",
@@ -3118,7 +3130,10 @@
    "target": 16,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "17.4%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "nrb-bearing-q2fy27-2",
@@ -8138,7 +8153,10 @@
    "target": 11,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "12.4%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "stove-kraft-q2fy27-2",
@@ -8604,7 +8622,10 @@
    "target": 13,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "9.7%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "kansai-nerolac-q2fy27-2",
@@ -8804,7 +8825,10 @@
    "target": 13,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "12.1%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "cera-sanitaryware-q3fy27-1",
@@ -10170,7 +10194,10 @@
    "target": 13,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "13.4%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "ikio-technologies-q4fy27-1",
@@ -10339,7 +10366,10 @@
    "target": 200,
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹225cr",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "aimtron-h1fy27-2",
@@ -10360,7 +10390,10 @@
    "target": 20,
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "21.8%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "aimtron-h2fy27-1",
@@ -11355,7 +11388,10 @@
    "target": 13,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "13.2%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "mrs-bectors-food-q4fy27-1",
@@ -13810,7 +13846,10 @@
    "target": 15,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "11.5%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "tega-industries-q4fy27-1",
@@ -14394,7 +14433,10 @@
    "target": 30,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "29.0%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "omnitech-engineering-q4fy27-1",
@@ -16449,7 +16491,10 @@
    "target": 10,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "8.2%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "pyramid-technoplast-q4fy27-1",
@@ -16928,7 +16973,10 @@
    "target": 0,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "127.9%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "blue-jet-healthcare-q3fy27-1",
@@ -37968,7 +38016,10 @@
    "ifMet": "Cost pass-through to OEMs works as the CMD says",
    "ifMissed": "Its pricing power with large OEMs is weaker than claimed",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "partly",
+   "actual": "23.8%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "auto"
   },
   {
    "id": "htel-q4fy27-1",
