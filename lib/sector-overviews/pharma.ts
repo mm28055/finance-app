@@ -755,7 +755,7 @@ export const pharma: SectorOverview = {
                         ['Caplin Point Labs', 'No formal guide; US arm +25–30%; own label ~₹200cr; floors of 55% gross and 25% net margin', '₹1,000cr-plus programme, about half done, from cash', '**Delivered**: US +26%, own label 3x; cash hit by stock and receivables'],
                         ['Emcure Pharma', 'Higher end of low-to-mid-teens growth; margin +70–100 bp; gross margin ~59% (cut)', '₹400–425cr, plus buyouts', '**Mixed**: +22.8% with 6–7 points of currency; margin +50 bp'],
                         ['Rubicon Research', 'Margin at least 23% (raised from 22–23%)', '~₹300cr over FY27–FY28', '**Beat**: 24.2%, revenue +52%; pipeline count now yearly only'],
-                        ['Corona Remedies', '~17% revenue (15% organic), 20% profit', 'Hormone plant done (~₹130cr)', '**Beat**: +21.9% revenue, +30.1% profit; plant on time'],
+                        ['Corona Remedies', '~17% revenue (15% organic), 20% profit (kept 2 Nov)', 'Hormone plant done (~₹130cr)', '**Q2 beat on revenue**: +22.2%, margin 21.7%; profit +15.3% (H1 +22%); Wokadine flat'],
                         ['Ipca Laboratories', 'Revenue +14–16% (from 12–13%); margin 23% (from 22–22.3%); 25–26% in 2–3 years', '₹700–800cr', '**Beat**: +21% at 22.9%; ~₹40cr of tender timing and 5 points of currency'],
                         ['Ajanta Pharma', 'High-teens revenue; margin 27% ±1 before currency; US mid-single digits; Asia softened', '~₹400cr (₹300cr Pithampur)', '**Mixed**: +25%, US +57%; Asia −16%, recovery missed again'],
                         ['RPG Life Sciences', 'API arm +25% a year to ₹1,000cr in 5–6 years; India 1.5x market', '₹215cr of deals; up to ₹700cr with its PE partner', '**Delivered**: both deals closed, API +35.6%; Walmart launch not updated'],
@@ -880,7 +880,7 @@ export const pharma: SectorOverview = {
         {
             company: 'Corona Remedies', rank: 6, stance: 'PRICED', segment: INDIA,
             what: "A pure Indian branded maker in women's health, heart and diabetes, pain and urology, with about 97% of revenue from India, a new hormone plant and a 7-day cash cycle.",
-            view: "**The cleanest India business on the list, at the highest price.** About 92% of its products are outside price control, it gained on both price (+8.7%) and volume (+6.3%), beat its guide again (revenue +21.9%, profit +30.1%) and has a clean audit. But it guides 20% profit growth, raw materials may cost it about 100 basis points, and pre-IPO investors are selling. The price needs about {need:Corona Remedies|27}% a year against my ~20%.",
+            view: "**The cleanest India business on the list, at the highest price.** About 92% of its products are outside price control, it gained on both price (+8.7%) and volume (+6.3%), beat its guide again (revenue +21.9%, profit +30.1%) and has a clean audit. But it guides 20% profit growth, raw materials may cost it about 100 basis points, and pre-IPO investors are selling. 13 Nov 2026, Q2 call: revenue +22% (India +23%, chronic +29%) at a 21.7% margin, but profit +15% on new depreciation and amortisation, and Wokadine only held its base sales; guidance (15% revenue, 20% profit) unchanged. The price needs about {need:Corona Remedies|27}% a year against my ~20%.",
             watch: 'Gross margin through Q2–Q3 as dearer materials arrive; Wokadine returning to growth; further sales by pre-IPO investors.',
         },
         {
