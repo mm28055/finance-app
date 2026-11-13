@@ -2647,21 +2647,22 @@
     },
     {
      "name": "Raman K",
-     "role": "Interim Chief Financial Officer",
+     "role": "Chief Financial Officer (interim from 4 February 2026; confirmed 12 November 2026)",
      "since": "4 Feb 2026",
      "family": false,
      "bio": "A commerce graduate from Madras University and an associate member of the Institute of Chartered Accountants of India. He has about 15 years in global automotive and electronics companies, in corporate finance, business partnering and investor relations. He holds the CFO role until the board appoints a permanent CFO."
     }
    ],
-   "changes": "CFO Ranganathan S retired on 22 Nov 2025; Raman K has been interim CFO since 4 Feb 2026 while the board looks for a permanent CFO. No changes since the annual report.",
+   "changes": "12 Nov 2026: Raman K confirmed as regular CFO. CFO Ranganathan S retired on 22 Nov 2025; Raman K has been interim CFO since 4 Feb 2026. No changes since the annual report.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_29891_AUTOAXLES_2025_2026_A_16112201_18072026164730.pdf",
     "https://nsearchives.nseindia.com/corporate/AUTOAXLES_18032022152711_OutcomeofBoardMeeting.pdf",
     "https://nsearchives.nseindia.com/corporate/AUTOAXLES_04022026203539_Q3Outcome.pdf",
     "https://www.autoaxle.com/seniormanagement",
-    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1693421_15072026053718_WEB.xml"
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1693421_15072026053718_WEB.xml",
+    "https://nsearchives.nseindia.com/corporate/AUTOAXLES_12112026181440_BMOutcome12112026.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-13"
   },
   {
    "company": "Carraro India",
@@ -9091,19 +9092,27 @@
     },
     {
      "name": "Manoj Kumar Digga",
-     "role": "Executive Director & Chief Financial Officer",
+     "role": "Executive Director (Chief Financial Officer until 30 November 2026)",
      "since": "CFO; on the board since May 2024",
      "family": false,
      "bio": "A chartered accountant, company secretary and cost accountant with about 34 years in finance, accounts, tax and corporate transactions, including equity raising and acquisitions. He is the company's CFO and joined the board as an executive director on 30 May 2024. He retires by rotation and is up for re-appointment at the 2026 AGM. The annual report does not name his earlier employers."
+    },
+    {
+     "name": "Arun Kumar Agarwal",
+     "role": "Chief Financial Officer (from 1 December 2026)",
+     "since": "December 2026",
+     "family": false,
+     "bio": "A cost and management accountant with more than 29 years of experience; earlier whole-time director and CFO of VISA Industries and before that at L&T, according to the company's filing of 12 November 2026."
     }
    ],
-   "changes": "T. S. Sivashankar joined as an independent director in June 2026. No executive change since the annual report.",
+   "changes": "12 Nov 2026: CFO Manoj Kumar Digga steps down as CFO from 1 Dec 2026 and stays on the board as Executive Director; Arun Kumar Agarwal appointed CFO from the same date. T. S. Sivashankar joined as an independent director in June 2026. No executive change since the annual report.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_31069_SPMLINFRA_2025_2026_A_4337986_02092026123252.pdf",
     "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1701956_27072026033511_WEB.xml",
-    "https://nsearchives.nseindia.com/corporate/SPMLINFRA_28052026204159_0752_001-output__1_.pdf"
+    "https://nsearchives.nseindia.com/corporate/SPMLINFRA_28052026204159_0752_001-output__1_.pdf",
+    "https://nsearchives.nseindia.com/corporate/SPMLINFRA_12112026184748_Outcome_only-output.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-13"
   },
   {
    "company": "M & B Engineer.",
@@ -9228,7 +9237,7 @@
    "people": [
     {
      "name": "Arvind Nanda",
-     "role": "Managing Director",
+     "role": "Whole-time Director, Executive Chairperson (from 5 November 2026, subject to shareholder approval; Managing Director before)",
      "since": "With the company since its incorporation (1983)",
      "family": true,
      "relation": "Promoter (with the company since incorporation); father of non-executive Director Viraj Nanda",
@@ -9260,15 +9269,16 @@
      "bio": "A chartered accountant with a B.Com from Ajmer University and about 27 years of experience. Before Interarch he worked at Microtek International. He joined as CFO during FY2024-25 and is a key managerial person."
     }
    ],
-   "changes": "Manish Kumar Garg was elevated from Executive Director & CEO to Managing Director & CEO for five years from 5 Nov 2026, subject to shareholder approval. CEO Manish Kumar Garg joined the board as an executive director on 2 February 2026 (approved by shareholders in March 2026). DGM – Safety Sumesh Sehgal resigned in August 2026. The FY26 annual report file on NSE could not be opened in full, so some details come from the FY25 report.",
+   "changes": "4–5 Nov 2026: Arvind Nanda moved from Managing Director to Whole-time Director and Executive Chairperson, and Manish Kumar Garg from Executive Director & CEO to Managing Director & CEO, both for five years from 5 Nov 2026 subject to shareholder approval; Sonali Bhagwati Dalal stepped down as Chairperson and stays an independent director. Manish Kumar Garg was elevated from Executive Director & CEO to Managing Director & CEO for five years from 5 Nov 2026, subject to shareholder approval. CEO Manish Kumar Garg joined the board as an executive director on 2 February 2026 (approved by shareholders in March 2026). DGM – Safety Sumesh Sehgal resigned in August 2026. The FY26 annual report file on NSE could not be opened in full, so some details come from the FY25 report.",
    "sources": [
     "https://nsearchives.nseindia.com/corporate/INTERARCH1983_04112026182019_ChangeinDesignationofMrManishKumarGarg.pdf",
     "https://nsearchives.nseindia.com/annual_reports/AR_28272_INTERARCH_2024_2025_A_8806582_03092025153609.pdf",
     "https://nsearchives.nseindia.com/annual_reports/AR_30327_INTERARCH_2025_2026_A_12531996_13082026172512.pdf",
     "https://nsearchives.nseindia.com/corporate/INTERARCH1983_28032026172234_Regulation_30_change_in_management.pdf",
-    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1697712_21072026103132_WEB.xml"
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1697712_21072026103132_WEB.xml",
+    "https://nsearchives.nseindia.com/corporate/INTERARCH1983_11112026112120_OutcomeofBM04112026.pdf"
    ],
-   "updatedOn": "2026-11-06"
+   "updatedOn": "2026-11-13"
   },
   {
    "company": "GK Energy",
@@ -15517,7 +15527,7 @@
    "people": [
     {
      "name": "Ashish Saraf",
-     "role": "Chairman & Managing Director",
+     "role": "President – Strategic Planning (announced 12 November 2026; Chairman & Managing Director before)",
      "since": "Since the company's start in 2005; Chairman & MD since 23 October 2024",
      "family": true,
      "relation": "Promoter; related to Vinita Saraf and Shrey Saraf (annual report), who by their names are his wife and son",
@@ -15560,7 +15570,7 @@
     },
     {
      "name": "Deep Saraf",
-     "role": "Deputy CEO – Chief Coordinator",
+     "role": "Managing Director (operations and execution; announced 12 November 2026)",
      "since": "Since the company's start",
      "family": false,
      "relation": "Not in the promoter group; the company does not disclose any relation to the promoters",
@@ -15574,14 +15584,15 @@
      "bio": "A mechanical engineer from BIT Durg who completed a management programme at XLRI Jamshedpur, he has over 25 years in operations. He held leadership roles, including plant management, at Vedanta, Bunge India and Britannia before joining Manorama."
     }
    ],
-   "changes": "No change in executive directors or KMP since the FY26 annual report. Independent director Mudit Kumar Singh's term ended on 5 September 2026 and Dr. Rohini Tiwari was appointed in his place.",
+   "changes": "12 Nov 2026: leadership transition announced with the Q2 results: Deep Saraf becomes Managing Director (operations and execution), Mudit Kumar Singh Chairman, and Ashish Saraf moves to President – Strategic Planning. No change in executive directors or KMP since the FY26 annual report. Independent director Mudit Kumar Singh's term ended on 5 September 2026 and Dr. Rohini Tiwari was appointed in his place.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_30746_MANORAMA_2025_2026_A_14950176_27082026194419.pdf",
     "https://manoramagroup.co.in/about-committee",
     "https://nsearchives.nseindia.com/corporate/MANORAMA_04092026202458_Signedoutcome.pdf",
-    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1690931_11072026013921_WEB.xml"
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1690931_11072026013921_WEB.xml",
+    "https://nsearchives.nseindia.com/corporate/MANORAMA_12112026202242_SignedPressReleasemerged.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-13"
   },
   {
    "company": "Avanti Feeds",
@@ -16806,17 +16817,25 @@
      "family": false,
      "stake": "Not disclosed",
      "bio": "Holds a BSc from Ranchi University and a diploma in industrial relations and personnel management. He has more than 30 years in healthcare, medical technology and electronics, with earlier roles at Dr. Reddy's Laboratories, Allergan India and HOYA Medical India, where he was Managing Director for India and South Asia. He heads OSEL's hearing-aid division."
+    },
+    {
+     "name": "Harsh Garg",
+     "role": "Chief Financial Officer (from 19 November 2026)",
+     "since": "November 2026",
+     "family": false,
+     "bio": "A chartered accountant with a little over four years of post-qualification experience, not related to any director (company filing of 12 November 2026)."
     }
    ],
-   "changes": "Whole-time Director & CFO Jyotsna Jawahar (the MD's wife) resigned on 27 August 2026; no successor CFO has been announced. Dipankar Ghoshal became CEO in January 2026, when Deepak Kumar Sharma (Business Head – Hearing Aid) and Capt. Vivek Dobhal (VP Sales – Government & Defence) also joined. Ajay Thakur was appointed Independent Advisor from June 2026. Ms. Diksha is Company Secretary.",
+   "changes": "12 Nov 2026: Harsh Garg appointed CFO from 19 Nov 2026, filling the post left by Jyotsna Jawahar in August. Whole-time Director & CFO Jyotsna Jawahar (the MD's wife) resigned on 27 August 2026. Dipankar Ghoshal became CEO in January 2026, when Deepak Kumar Sharma (Business Head – Hearing Aid) and Capt. Vivek Dobhal (VP Sales – Government & Defence) also joined. Ajay Thakur was appointed Independent Advisor from June 2026. Ms. Diksha is Company Secretary.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/SME_AR_31089_OSELDEVICE_2025_2026_A_20345033_02092026151041.pdf",
     "https://nsearchives.nseindia.com/corporate/OSEL_15012026105321_outcomesigned.pdf",
     "https://nsearchives.nseindia.com/corporate/OSEL_27082026184957_Outcome.pdf",
     "https://nsearchives.nseindia.com/corporate/OSEL_27082026185323_Outcome.pdf",
-    "https://nsearchives.nseindia.com/corporate/OSEL_29052026205818_outcomefinal.pdf"
+    "https://nsearchives.nseindia.com/corporate/OSEL_29052026205818_outcomefinal.pdf",
+    "https://nsearchives.nseindia.com/corporate/OSEL_12112026191258_Results.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-13"
   },
   {
    "company": "Poly Medicure",
@@ -31425,18 +31444,26 @@
     },
     {
      "name": "CA Amita Saxena",
-     "role": "Chief Financial Officer",
+     "role": "Chief Financial Officer (until 11 November 2026)",
      "since": "1 October 2025",
      "family": false,
      "relation": "Professional",
      "bio": "A chartered accountant who replaced Samir Sabharwal, who resigned in September 2025. She co-signs the CEO/CFO certification with the MD for India operations. A deputy CFO, Richa Jain, was added in July 2026. The company does not publish her earlier employers."
+    },
+    {
+     "name": "CA Richa Jain",
+     "role": "Chief Financial Officer (from 12 November 2026)",
+     "since": "November 2026 (Deputy CFO from July 2026)",
+     "family": false,
+     "bio": "A chartered accountant, appointed Deputy CFO in July 2026 and promoted to CFO by the board on 12 November 2026 (company filing)."
     }
    ],
-   "changes": "CFO Samir Sabharwal resigned with effect from 15 Sep 2025; Amita Saxena became CFO on 1 Oct 2025. CEO-designate Surej Kunhithaviyil Poyil resigned in Nov–Dec 2025. Vice Chairman & CEO Prashant Kamat stepped down on 31 Dec 2025 and stayed as a non-executive director (he holds 6,81,344 shares). Chief Marketing Officer Vishal Pawar left on 19 Dec 2025. Independent director Phaneesh Murthy resigned on 28 Apr 2026. Richa Jain was appointed Deputy CFO in July 2026.",
+   "changes": "12 Nov 2026: Deputy CFO Richa Jain promoted to CFO; Bala Pavan Kumar Tsunduru appointed President from 7 Dec 2026; a UAE subsidiary approved in principle. CFO Samir Sabharwal resigned with effect from 15 Sep 2025; Amita Saxena became CFO on 1 Oct 2025. CEO-designate Surej Kunhithaviyil Poyil resigned in Nov–Dec 2025. Vice Chairman & CEO Prashant Kamat stepped down on 31 Dec 2025 and stayed as a non-executive director (he holds 6,81,344 shares). Chief Marketing Officer Vishal Pawar left on 19 Dec 2025. Independent director Phaneesh Murthy resigned on 28 Apr 2026. Richa Jain was appointed Deputy CFO in July 2026.",
    "sources": [
-    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2b917c82-bbaf-4b2e-bb2f-39cf31870b61.pdf"
+    "https://www.bseindia.com/stockinfo/AnnPdfOpen.aspx?Pname=2b917c82-bbaf-4b2e-bb2f-39cf31870b61.pdf",
+    "https://nsearchives.nseindia.com/corporate/CEINSYSTECH_12112026202816_OutcomeofBoardMeeting12112026.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-13"
   },
   {
    "company": "Tanla Platforms",
