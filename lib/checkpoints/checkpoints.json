@@ -13510,7 +13510,13 @@
    "text": "FY27 operating cash improves under the KPMG working-capital plan",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-13",
+     "text": "Q2 FY27 call: KPMG delivered its report; management will start implementing it in early FY28 and expects the benefit to take 1–1.5 years"
+    }
+   ]
   },
   {
    "id": "gala-precision-engi-q2fy27-1",
@@ -16130,7 +16136,8 @@
    "status": "met",
    "actual": "29.9%",
    "resolvedOn": "2026-11-12",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays own; revenue +30% (20% underlying) but profit only +5.6%"
   },
   {
    "id": "epl-q3fy27-1",
@@ -16139,7 +16146,13 @@
    "text": "Europe's margin back towards the mid-teens by Q3 FY27 (4.8% at the EBIT level in Q1)",
    "due": "Q3 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-13",
+     "text": "Q2 FY27 call: Europe's margin fell again because moving printing to Poland ran 6–9 months late on approvals; management now needs 2–3 more quarters to get margins back"
+    }
+   ]
   },
   {
    "id": "epl-q4fy27-1",
@@ -23087,7 +23100,11 @@
    "ifMet": "Lifts the margin of safety on own",
    "ifMissed": "Growth stays price- and acquisition-led",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "About 11 lakh applications in Q2 FY27, down about 3% (Middle East)",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "Stays own; growth still price- and acquisition-led"
   },
   {
    "id": "bls-international-q2fy27-2",
@@ -23102,7 +23119,8 @@
    "status": "met",
    "actual": "32.0%",
    "resolvedOn": "2026-11-11",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays own; revenue +32% beat the range on acquisitions while profit grew 9%"
   },
   {
    "id": "bls-international-q4fy27-1",
@@ -23120,7 +23138,11 @@
    "text": "Visa margin held near 40% and digital near 7–8%, tax rate about 12%, as guided",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Visa margin 41.9%, digital 7.4%, tax about 9% (Screener)",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "Stays own"
   },
   {
    "id": "thomas-cook-india-q3fy27-1",
@@ -41700,6 +41722,17 @@
    "due": "Q4 FY27",
    "project": "mmp-industries-solar-park",
    "createdOn": "2026-11-12",
+   "status": "pending"
+  },
+  {
+   "id": "bls-international-q4fy27-2",
+   "company": "BLS International",
+   "sector": "Travel Services",
+   "text": "Board decision on a share buyback within FY27, as the joint MD expected in the Q2 call",
+   "due": "Q4 FY27",
+   "ifMet": "Cash returned at a modest price lifts the case for own",
+   "ifMissed": "Cash keeps going to acquisitions; judge them on the 17–20% return target",
+   "createdOn": "2026-11-13",
    "status": "pending"
   }
  ]

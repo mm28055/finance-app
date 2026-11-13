@@ -6886,28 +6886,32 @@
     "sector": "Iron and Steel",
     "subject": "Not in the Iron and Steel note",
     "why": "Add a company section to the Iron and Steel note (or write the note if the sector has none).",
-    "addedOn": "2026-11-11"
+    "addedOn": "2026-11-11",
+    "handled": "2026-11-13: Already done by the owner's 12 Nov session: Bansal Wire Industries has its Iron and Steel business card (wait), management, capacity, projects, checkpoints and picture; no Tab 1 section by the 7 Nov rule."
   },
   {
     "company": "Fidel Softech",
     "sector": "Software",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-11"
+    "addedOn": "2026-11-11",
+    "handled": "2026-11-13: Already done by the owner's 11 Nov session: the new Fidel Softech card uses the H1 FY27 results and the 4 Nov call."
   },
   {
     "company": "Tonbo Imaging",
     "sector": "Aerospace defence",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-11"
+    "addedOn": "2026-11-11",
+    "handled": "2026-11-13: Already done by the owner's 11 Nov session: the new Tonbo Imaging card uses the H1 FY27 results and call (operating cash −₹48cr in H1)."
   },
   {
     "company": "Sigma Advanced Systems",
     "sector": "Aerospace defence",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-11"
+    "addedOn": "2026-11-11",
+    "handled": "2026-11-13: Already done by the owner's 11 Nov session: the new Sigma Advanced Systems card uses the 6 Nov 2026 call (FY27 guide ₹1,900–2,000cr at about 20%; H1 operating cash −₹213cr)."
   },
   {
     "company": "NCC",
@@ -7117,7 +7121,8 @@
     "sector": "Travel Services",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-11"
+    "addedOn": "2026-11-11",
+    "handled": "2026-11-13: Q2 FY27 call (4 Nov) read: revenue +32% to a record ₹973cr, profit +9%, visa margin 41.9%, digital 7.4%, visa volumes about −3%; FY30 ambition ₹6,300–6,500cr (20–25% a year) at 28–30%; buyback decision expected this year. Note, card, guidance row and checkpoints updated (volume checkpoint missed, margin checkpoint met, buyback checkpoint added). Stays own; myGrowth kept at 13%."
   },
   {
     "company": "Akzo Nobel",
@@ -7250,7 +7255,8 @@
     "sector": "Travel Services",
     "subject": "Checkpoint met: bls-international-q2fy27-2",
     "why": "Revenue growth within the 15–20% target (Q1 was +25%, helped by acquisitions) — actual 32.0% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-11"
+    "addedOn": "2026-11-11",
+    "handled": "2026-11-13: Revenue +32% against the 15–20% range; weighed with the Q2 call (profit only +9%, volumes down). Stays own; outcome recorded."
   },
   {
     "company": "Karamtara Engineering",
@@ -7271,14 +7277,16 @@
     "sector": "Mining & Metals Recycle",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-12"
+    "addedOn": "2026-11-12",
+    "handled": "2026-11-13: Already done by the owner's 12 Nov session: the new MMP Industries card is written from the Q2 FY27 results and call (H1 revenue +31%, mostly aluminium prices). Stays wait."
   },
   {
     "company": "Bansal Wire Industries",
     "sector": "Iron and Steel",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-12"
+    "addedOn": "2026-11-12",
+    "handled": "2026-11-13: Already done by the owner's 12 Nov session: the new Bansal Wire card is written from the Q2 FY27 results and call (record 128,867 tonnes, ₹8,150 a tonne, H1 operating cash ₹339cr). Stays wait."
   },
   {
     "company": "Apollo Pipes",
@@ -7397,7 +7405,8 @@
     "sector": "Packaging",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-12"
+    "addedOn": "2026-11-12",
+    "handled": "2026-11-13: Q2 FY27 call (4 Nov) read: revenue +30% (20% underlying), underlying margin 20.4%, profit +5.6% (depreciation, 27% tax, currency); beauty tubes passed oral care; FY27 capex ₹625–700cr; Europe needs 2–3 more quarters after the Poland printing delay (checkpoint revised); merger now before the tribunal. Note, card and guidance row updated. Stays own; myGrowth kept at 15%."
   },
   {
     "company": "Minda Corp",
@@ -7530,7 +7539,8 @@
     "sector": "Industrials",
     "subject": "New results call: Q2 FY27",
     "why": "The Q2 FY27 results call is in (the note covers Q1 FY27). Update this company only with what is new: guidance, margins, order book, capex, surprises; change the call if the evidence warrants.",
-    "addedOn": "2026-11-12"
+    "addedOn": "2026-11-12",
+    "handled": "2026-11-13: Q2 FY27 call (6 Nov) read: revenue +31%, margin 16.8%, orders +44%; 25% FY27 growth and 17–19% margin guides kept; KPMG's working-capital plan starts only in early FY28 (checkpoint revised); Wada land still unsigned; capacity ₹450cr now, about ₹550cr for FY28. Note, card and guidance row updated. Stays own."
   },
   {
     "company": "RPG Life Sciences",
@@ -7586,7 +7596,8 @@
     "sector": "Packaging",
     "subject": "Checkpoint met: epl-q2fy27-1",
     "why": "Revenue growth in the 'high teens' for the next few quarters, as guided (raised from 11–13%) — actual 29.9% (met).  Weigh it in the call and write the outcome on the checkpoint.",
-    "addedOn": "2026-11-12"
+    "addedOn": "2026-11-12",
+    "handled": "2026-11-13: Revenue +29.9% against the high-teens guide (met); weighed with the Q2 call, where profit grew only 5.6%. Stays own; outcome recorded."
   },
   {
     "company": "TCPL Packaging",
