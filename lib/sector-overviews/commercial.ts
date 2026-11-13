@@ -564,7 +564,7 @@ export const commercialServices: SectorOverview = {
                     badgeColumn: 3,
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
-                        ['Quess Corp', 'Revenue +12–13%; margin above 2%, ~2.4% in three years; net adds now “30,000 plus”', 'Almost none', '**Slipping**: margin met; core adds ~3,800 against 40,000–50,000 a year'],
+                        ['Quess Corp', 'Revenue +12–13%; margin above 2%, ~2.4% in three years; net adds now “30,000 plus”', 'Almost none', '**Q2 back on track**: about 21,000 net adds; revenue +15% (about 12% underlying); professional staffing +13%'],
                         ['CMS Info Systems', 'Services ₹2,650–2,750cr (cut); margin ~27% (raised)', '₹100–125cr (from ₹351cr)', '**Missed**: ₹625cr against ₹650cr run-rate; margin beat'],
                         ['MSTC', 'Double-digit fee growth; EPR and TReDS awaiting approval', 'Little', '**Beat**: fees +28%; EPR slipped again'],
                         ['Redington', 'Margin ex-Turkey 2.2–2.4%; ROCE above 18%', 'Little', '**Delivered**: 2.28% and 22%; Turkey losses rose'],
@@ -660,7 +660,7 @@ export const commercialServices: SectorOverview = {
         {
             company: 'Quess Corp', rank: 2, stance: 'COMPOUNDER', segment: PEOPLE,
             what: "India's largest domestic staffing company, with 4.8 lakh people on its payroll working at clients, after demerging its other businesses in 2025.",
-            view: "**Thin margins, high returns, more risk than the calls admit.** Revenue rose 15% in Q1 (about 10% without a zero-margin labour-code billing), ROCE reached 24% in FY26 and it has no bank debt. But core staffing added only 3,800 people, the headcount target was cut, and ₹794cr of disputed tax claims sit against about ₹1,166cr of net worth after a turnover of top management. The price needs about {need:Quess Corp|13–14}% a year against my ~10%.",
+            view: "**Thin margins, high returns, more risk than the calls admit.** Revenue rose 15% in Q1 (about 10% without a zero-margin labour-code billing), ROCE reached 24% in FY26 and it has no bank debt. But core staffing added only 3,800 people, the headcount target was cut, and ₹794cr of disputed tax claims sit against about ₹1,166cr of net worth after a turnover of top management. 13 Nov 2026, Q2 call: hiring came back, with about 21,000 net adds (504,000 associates) and professional staffing +13%; revenue +15% (about 12% without a ₹120cr one-time labour-code billing), adjusted EBITDA +20% at 2.1%, net cash ₹471cr and record collections. Profit +44% was helped by a tax credit (Screener's Q2 tax rate is −16%). The price needs about {need:Quess Corp|13–14}% a year against my ~10%.",
             watch: 'Net adds of 10,000+ in Q2; the GST Tribunal and 80JJAA tax rulings; professional staffing growth back in double digits.',
         },
         {
