@@ -821,3 +821,48 @@ Where it mattered, the reviews add what the points missed, mostly profit flatter
 - Interest and depreciation from new capacity ate the profit growth at KIMS, Enviro Infra and Punjab Chemicals.
 - A 13% tax rate held up TeamLease's profit.
 - Datamatics' call was read, and its two Q2 checkpoints that depend on the call (order book, AI revenue) were marked missed.
+
+## 13 November 2026 (Friday, results season)
+
+**Checks:** the notes check lists the same 30 problems as before this run, all "company in the sector with no verdict" (newly listed companies still waiting for sections). They were on master already, so they did not block the push. The typecheck is clean and no capacity picture is out of date or in error. No `weekly-review` branch needed rescuing: the 30 Sep and 18 Oct branches showed as unmerged only in the shallow copy and are part of master once the full history is fetched. The work went to master in four pushes.
+
+**Follow-ups handled: 24. Still open: 339** (about 233 results calls, 69 automatically settled checkpoints, 23 project follow-ups, 6 call drifts, 4 "Waiting" entries, 3 special calls and HEG's demerger). I updated the Needs-a-session backlog item with these numbers. Still no filed transcript for ICICI Bank, CIE Automotive, Ador Welding, Sobha, Kirloskar Brothers, Engineers India or V-Guard. **Kirloskar Pneumatic's** transcript is now on its website but is a scanned image with no text, so I could not read it this run.
+
+**Calls changed:** none. Every company below keeps its call.
+
+**Waiting entry settled: TruAlt Bioenergy (stays wait).** TruAlt's own exchange filing of 12 November confirms the 2026-27 ethanol tender terms: the oil companies allotted it 27.48 crore litres (₹1,715cr), all from surplus and damaged food grain, maize and C-heavy molasses, with **nothing from cane juice or B-heavy molasses**; maize works out at about ₹66 a litre, ₹6 less than last year. With 3 crore litres to Nayara and 7 crore carried over, that is about 37.5 crore litres against the 40–42 it hoped for. I corrected the Oil note's ethanol section, TruAlt's view, price text, watch items and card. No other covered company depends on sugar-based ethanol.
+
+**Already done by your 11–12 Nov sessions:** Bansal Wire (card added, so its "not in the note" and results-call entries are closed), MMP Industries, Fidel Softech, Tonbo Imaging and Sigma Advanced Systems; their new cards already use the Q2 results and calls.
+
+**New results calls (transcripts read), own names:**
+- **BLS International** (stays own). Record revenue of ₹973cr (+32%), but profit +9% as depreciation nearly doubled; visa margin 41.9% and digital 7.4% as guided (met), but visa applications fell about 3% (missed). The FY30 ambition is back at 20–25% a year (₹6,300–6,500cr of revenue at 28–30%). Management expects a buyback decision this financial year; I added a checkpoint. Net cash ₹1,556cr.
+- **EPL** (stays own). Revenue +30% (20% underlying), underlying margin 20.4%, beauty tubes now its largest category; but profit only +5.6% (27% tax, depreciation, currency), FY27 capex up to ₹625–700cr, and Europe needs 2–3 more quarters after a late move of printing to Poland (checkpoint revised). The merger is now before the tribunal.
+- **Gala Precision** (stays own). Revenue +31% at 16.8%, orders +44%, 25% growth and 17–19% margin guides kept. KPMG's working-capital plan starts only in early FY28 (checkpoint revised) and the Wada land is still unsigned.
+
+**New results calls, follow names:**
+- **IOL Chem** — FY27 guidance raised from 15–20% to about 25%; revenue +40%, profit +117%. Return on capital still only about 11–15%.
+- **Corona Remedies** — revenue +22%, profit +15% on new depreciation; Wokadine only held its sales (missed).
+- **Quess** — about 21,000 net adds and professional staffing +13% (both met); profit +44% helped by a tax credit.
+- **RR Kabel** — Q2 volume only high single digits and the FY27 volume aim cut to about 15% (missed); segment margin 9.4% (partly); consumer electricals −₹12cr (missed); debt to rise with capex and ₹200cr of Rajasthan land.
+- **Styrenix** — windfall over as warned (standalone margin 10.8%); Thailand about 11,700 tonnes (missed).
+- **BlackBuck** — pre-tax profit growing again, +10% (met); net revenue +35%.
+- **Skipper** — H1 revenue +7%, so the 15% guide may end 1–2 points short; record ₹2,111cr of Q2 orders; gross debt down to ₹964cr.
+- **Aditya Vision** — same-store +18%, 214 stores, but inventory back up to ₹865cr (operating-cycle checkpoint missed).
+- **Indigo Paints** — gross margin 38.5% from 45.1% on dear March–April stock (missed); management says margins were back to normal from September; Jodhpur in trial since September (met) and on stream by end-November.
+- **Fractal** — 10% constant-currency growth; tech clients back to sequential growth (met); Cogentiq still not split out (partly).
+
+**Top 12:** **BLS's** visa applications fell for the first time (−3%; Q1 was flat). The break trigger is two down quarters in a row, so it is not hit; Q3 is the test. **EPL's** underlying margin held at 20.4%, so no trigger is hit (Europe is judged at Q4 FY27). **Clean Max** signed a non-binding MoU for a ~₹50,000cr clean-energy and computing complex in Andhra Pradesh; it is not a trigger, but watch how anything that size would be funded. **Caplin Point** (reserve) reported in line; it stays reserve on price. No numbers changed.
+
+**Filings pass, 11–12 November** (notes corrected):
+- **DCW:** on 3 November the Madras High Court dismissed Tamil Nadu's appeal, so DCW cannot be evicted from 793 acres at its main plant and may buy the land at a government-set price. Note and card corrected.
+- **Sigma Advanced Systems:** three directors (two independent) resigned together on 6 November, ahead of a ₹3,000cr raise; added to the card's watch items.
+- **Management records updated:** Interarch (MD becomes Executive Chairperson; CEO becomes MD), Manorama (Deep Saraf MD), SPML (new CFO from 1 Dec), Ceinsys (Richa Jain CFO), Auto Axle (CFO confirmed), OSEL (new CFO).
+- **New follow-ups raised for the next run:** Navin Fluorine's new Surat R32 plant started, and Man Industries' ~$110m US pipe plant. Both need project and picture work.
+- **Logged only:** Avalon's ₹425cr warrants to Zollner (about 3% dilution) and a 9.42% promoter reclassification, Kaynes' Vishay chip-packaging joint venture term sheet, Alivus closing IQGEN-X, Astra's ₹2,036cr of Q2 orders, Dilip Buildcon's ₹901cr lowest bid and record book, HFCL's ₹834cr export order, Glottis promoters' ₹60cr interest-free loan, Q-Line's related-party purchase, Gaudium IVF changing its IPO plans, Texmaco's CRISIL A+ upgrade, E2E's extra 12.8 MW, Mahindra Holidays' ₹106cr tax win and EIH's ₹777cr Hyderabad hotel.
+
+**News pass, 11–13 November:** 13 entries had a clear reason, and none was very important. They were the Cabinet's ₹62,370cr Rabi fertiliser subsidy (the usual seasonal support rates, for GSFC, Paradeep, Madhya Bharat and Krishana), price moves at Avanti, E2E, ESDS, Ashoka Buildcon, Netweb, Talbros, Texmaco and Apsis, and a Control Print promoter purchase. Nothing in the notes changed.
+
+**Results pass:** all 29 open entries were reviewed, and every figure matches Screener (revenue, operating profit and net profit). I changed two overnight verdicts: **Apex Frozen Foods** from "in line" to "mixed" (a ₹10.1cr anti-dumping duty provision cut profit 82%), and **Avanti Feeds** from "in line" to "behind" (operating profit −60%, margin 4.5%). The reviews add what the points miss:
+- Tax drove the result at Dilip Buildcon (43% rate), Hind Rectifiers (63%), Viceroy (profit came only from a tax credit) and Rentomojo (no tax a year ago).
+- Other income was a large share of pre-tax profit at Man Industries, Triveni Turbine, Network People and Talbros.
+- No entry had an analysed call, so no checkpoints were judged from this pass.
