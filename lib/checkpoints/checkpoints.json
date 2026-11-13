@@ -3358,7 +3358,11 @@
    "due": "Q2 FY27",
    "ifMissed": "A weak quarter could be the buying opportunity if the franchise holds",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "Wire-and-cable segment margin 9.4% in Q2 FY27 (9.6% in H1)",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "rr-kabel-ltd-q2fy27-2",
@@ -3367,7 +3371,11 @@
    "text": "Wire-and-cable volume growth of about 18% (FY27 guide)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Q2 volume growth high single digits (low teens in H1); FY27 aim cut to about 15%",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; no upgrade at a fitting price"
   },
   {
    "id": "rr-kabel-ltd-q2fy27-3",
@@ -3376,7 +3384,11 @@
    "text": "Consumer electricals staying at break-even through the weak second quarter",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Consumer electricals lost about ₹12cr in Q2 (4.5% of sales); full-year break-even still targeted",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "rr-kabel-ltd-q4fy27-1",
@@ -4033,7 +4045,11 @@
    "text": "Thai plant volume above 18,000 tonnes a quarter",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "About 11,700 tonnes in Q2 FY27 (group 55.1 kt less India 43.4 kt)",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; Thailand's cost base needs another 1.5–2 years"
   },
   {
    "id": "styrenix-performance-q3fy27-1",
@@ -5399,7 +5415,11 @@
    "text": "Net headcount additions of 10,000+ in Q2 FY27 (core staffing added only about 3,800 in Q1)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "About 21,000 net adds in Q2 FY27 (general staffing 20,857), headcount about 504,000",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "Stays follow; price still needs more than the ~10% I expect"
   },
   {
    "id": "quess-corp-q4fy27-1",
@@ -5420,7 +5440,11 @@
    "text": "Professional (IT) staffing growth back in double digits",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Professional staffing revenue +13% to ₹254cr; record 62 new contracts in H1",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "quess-corp-q4fy27-2",
@@ -16105,6 +16129,10 @@
     {
      "on": "2026-11-01",
      "text": "Q2 FY27 call: the 2025-26 allocation ended at about 40 crore litres (24.5 + 10 after the Supreme Court judgment + 5 more); H1 FY27 sold 19.07 crore litres; hopes for 40–42 crore litres in 2026-27"
+    },
+    {
+     "on": "2026-11-13",
+     "text": "Allocation filing (12 Nov 2026): 27.48 crore litres from the state oil companies for 2026-27, plus 3 crore to Nayara and 7 crore carried over from 2025-26"
     }
    ]
   },
@@ -16634,7 +16662,13 @@
    "target": 15,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-13",
+     "text": "Q2 FY27 call (2 Nov 2026): FY27 revenue guidance raised to about 25% at a 14–15% margin"
+    }
+   ]
   },
   {
    "id": "iol-chem-and-pharma-q2fy27-1",
@@ -16649,7 +16683,8 @@
    "status": "partly",
    "actual": "13.7%",
    "resolvedOn": "2026-11-09",
-   "resolvedBy": "auto"
+   "resolvedBy": "auto",
+   "outcome": "Stays follow; company puts the Q2 margin at 14.4%"
   },
   {
    "id": "iol-chem-and-pharma-q4fy27-2",
@@ -18100,7 +18135,11 @@
    "text": "Wokadine returning to growth",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Base sales only maintained in Q2; integration and new business model slower than expected",
+   "resolvedOn": "2026-11-13",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "corona-remedies-q4fy27-1",
