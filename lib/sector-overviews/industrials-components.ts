@@ -503,7 +503,7 @@ export const industrialsComponents: SectorOverview = {
                     columns: ['Company', 'Guidance now', 'Capex', 'Track record'],
                     rows: [
                         ['Pitti Engineering', 'Laminations 82,000t and castings 17,000t in FY27 (held in Q2); operating profit about ₹370cr (on track, 23 Oct 2026); FY28 revenue about ₹2,500cr; about ₹3,800cr of revenue potential by FY31 at 17%-plus', '₹290cr Hyderabad foundry and machining; ₹450cr Bengaluru plant approved Oct 2026 (₹150cr in FY28)', '**In line**: volumes +26% in Q2, but the margin slipped to 15.8% and net debt rose'],
-                        ['Gala Precision Engi.', 'Revenue +20–25%; margin 17–19% by FY27 end', 'Chennai phase 2 in Q3–Q4; Wada ₹40–45cr mostly FY28', '**Slipping**: growth kept at 19.5%, margin 16.3%; three milestones late'],
+                        ['Gala Precision Engi.', 'Revenue +20–25% (25% for FY27, Nov); margin 17–19% (kept Nov)', 'Chennai phase 2 by Q4 FY27; Wada ₹40–45cr in FY28, part running Q4 FY28', '**Q2 on track**: revenue +31%, margin 16.8%, orders +44%; Wada land still unsigned'],
                         ['KRN Heat Exchan', 'Above ₹1,000cr in FY27; ₹2,000cr in FY28; margin “20-plus”', '₹30–40cr plus ~₹100cr for Bangalore and Rajasthan', '**Delivering**: revenue +119%; Vertiv only samples; incentives unbooked'],
                         ['Omnitech Engineering', 'Growth 35–40%; margin “30% and above”', '₹250cr at Chhapara, partly into FY28', '**Delivering**: +61.5% and working capital down; margin at the band’s floor'],
                         ['Tempsens Instruments', 'FY27 growth ~25%; margin “broadly similar” to FY26, recovering in H2', 'Four plants; rupee cost not disclosed', '**Too early**: one call; revenue +33% ahead, margin behind'],
@@ -591,7 +591,7 @@ export const industrialsComponents: SectorOverview = {
         {
             company: 'Gala Precision Engi.', rank: 2, stance: 'SCALEUP', segment: QUAL,
             what: "Disc springs, coil springs and high-strength fasteners for wind turbines, industrial machinery and cars, with vendor codes at Vestas, Siemens Energy, ABB, Schaeffler and John Deere.",
-            view: "**The vendor code is the moat, and the price fits.** It takes 12–24 months to enter a customer and then wins 50–75% of its spend; Q1 grew 19.5% with a firm book of ₹110cr, up 30–40%. But free cash was negative in FY25 and FY26, three milestones slipped in one quarter, and an income-tax search in August has an unknown outcome. The price needs about {need:Gala Precision Engi.|21}% a year against my ~22%.",
+            view: "**The vendor code is the moat, and the price fits.** It takes 12–24 months to enter a customer and then wins 50–75% of its spend; Q2 FY27 revenue grew 31% (about ₹3cr of it held over from Q1) at a 16.8% margin, orders rose 44%, and the 25% growth and 17–19% margin guides were kept on 6 Nov 2026. But free cash was negative in FY25 and FY26, H1 cash stayed modest as export receivables rose, KPMG's working-capital fixes start only in early FY28, the Wada land deal is still unsigned, and an income-tax search in August has an unknown outcome. The price needs about {need:Gala Precision Engi.|21}% a year against my ~22%.",
             watch: 'KPMG’s working-capital plan and FY27 operating cash; any demand from the income-tax search; margin reaching 17–19%.',
         },
         {
