@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T22:20:21.235Z",
+ "updated": "2026-11-14T20:32:17.227Z",
  "events": [
   {
    "company": "GSFC",
@@ -10762,7 +10762,7 @@
    "kind": "call",
    "date": "2026-11-16",
    "time": "12:00 pm",
-   "url": "https://nsearchives.nseindia.com/corporate/ETOETRANS_12112026160335_Earnings_call_intimation-16th_November_2026.pdf"
+   "url": "https://nsearchives.nseindia.in/corporate/ETOETRANS_12112026160335_Earnings_call_intimation-16th_November_2026.pdf"
   },
   {
    "company": "EIH",
@@ -11016,7 +11016,7 @@
    "kind": "results",
    "date": "2026-11-16",
    "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/SANDHAR_23102026184935_BM_Intimation_05112026_signed.pdf"
+   "url": "https://nsearchives.nseindia.in/corporate/SANDHAR_23102026184935_BM_Intimation_05112026_signed.pdf"
   },
   {
    "company": "Sastasundar Ventures",
@@ -11133,7 +11133,7 @@
    "date": "2026-11-17",
    "time": "4:00 pm",
    "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/IFGLEXPOR_12112026131802_Letter_signed.pdf"
+   "url": "https://nsearchives.nseindia.in/corporate/IFGLEXPOR_12112026131802_Letter_signed.pdf"
   },
   {
    "company": "KRM Ayurveda",
@@ -11141,7 +11141,7 @@
    "kind": "call",
    "date": "2026-11-17",
    "time": "4:00 pm",
-   "url": "https://nsearchives.nseindia.com/corporate/KRMIPO_12112026172101_Intimation_Investors_Meet_17112026.pdf"
+   "url": "https://nsearchives.nseindia.in/corporate/KRMIPO_12112026172101_Intimation_Investors_Meet_17112026.pdf"
   },
   {
    "company": "Madhya Bharat Agro Products",
@@ -11159,16 +11159,16 @@
    "date": "2026-11-17",
    "time": "11:00 am",
    "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/MAMATA_12112026214124_MML_Earnings_Call_Intimation_17112026.pdf"
+   "url": "https://nsearchives.nseindia.in/corporate/MAMATA_12112026214124_MML_Earnings_Call_Intimation_17112026.pdf"
   },
   {
    "company": "Orchid Pharma",
    "sector": "Pharma",
    "kind": "call",
    "date": "2026-11-17",
-   "time": "4:30 pm",
+   "time": "4: 30 P.M.",
    "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/ORCHPHARMA_12112026150031_Stx_letter__investor_meet_sd.pdf"
+   "url": "https://nsearchives.nseindia.in/corporate/ORCHPHARMA_12112026150031_Stx_letter__investor_meet_sd.pdf"
   },
   {
    "company": "Skyways Air Services",
@@ -11198,13 +11198,30 @@
    "url": "https://nsearchives.nseindia.com/corporate/KRISHANA_11112026175327_NSEINTMEET1811SIGNUP.pdf"
   },
   {
+   "company": "MV Electrosystems",
+   "sector": "Industrial - Railway",
+   "kind": "call",
+   "date": "2026-11-18",
+   "time": "11:00 am",
+   "quarter": "Q2 FY27",
+   "url": "https://nsearchives.nseindia.in/corporate/MVELECTROSYSTEMS_14112026133645_Covering_with_link.pdf"
+  },
+  {
+   "company": "Australian Prem",
+   "sector": "Solar PV Cells EPC",
+   "kind": "call",
+   "date": "2026-11-19",
+   "time": "10:30 am",
+   "url": "https://nsearchives.nseindia.in/corporate/APS_14112026111129_ScheduleofMeet19112026.pdf"
+  },
+  {
    "company": "Mishra Dhatu Nigam (MIDHANI)",
    "sector": "Aerospace defence",
    "kind": "call",
    "date": "2026-11-19",
    "time": "11:00 hrs",
    "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/MIDHANI_13112026154559_MDN_Concall_Intimation_13112026.pdf"
+   "url": "https://nsearchives.nseindia.in/corporate/MIDHANI_13112026154559_MDN_Concall_Intimation_13112026.pdf"
   },
   {
    "company": "United Heat Transfer",
@@ -11212,7 +11229,7 @@
    "kind": "call",
    "date": "2026-11-19",
    "time": "2:00 pm",
-   "url": "https://nsearchives.nseindia.com/corporate/UNITEDHEAT_13112026224846_UHTL-_Concall_invite.pdf"
+   "url": "https://nsearchives.nseindia.in/corporate/UNITEDHEAT_13112026224846_UHTL-_Concall_invite.pdf"
   },
   {
    "company": "Whirlpool India",
@@ -11230,7 +11247,7 @@
    "date": "2026-11-23",
    "time": "14:30 hrs.",
    "quarter": "Q2 FY27",
-   "url": "https://nsearchives.nseindia.com/corporate/WABCOINDIA_12112026174023_SdSEearningscallintimation.pdf"
+   "url": "https://nsearchives.nseindia.in/corporate/WABCOINDIA_12112026174023_SdSEearningscallintimation.pdf"
   }
  ]
 }
