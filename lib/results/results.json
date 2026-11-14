@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T23:13:36.266Z",
+ "updated": "2026-11-14T08:56:03.044Z",
  "results": [
   {
    "company": "Alpex Solar",
@@ -366,6 +366,79 @@
       "text": "An end to promoter-linked financing",
       "status": "unclear",
       "why": "Related-party disclosures await call"
+     }
+    ],
+    "on": "2026-11-14"
+   }
+  },
+  {
+   "company": "Dishman Carbogen (Carbogen Amcis)",
+   "sector": "Pharma CDMO",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-13",
+   "readOn": "2026-11-14",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 507,
+     "yearAgo": 653,
+     "prev": 678,
+     "yoy": -22.4,
+     "qoq": -25.2
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 46,
+     "yearAgo": 149,
+     "prev": 60,
+     "yoy": -69.1,
+     "qoq": -23.3
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 9,
+     "yearAgo": 23,
+     "prev": 9,
+     "yoy": -14,
+     "qoq": 0
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": -67,
+     "yearAgo": 65,
+     "prev": -58,
+     "yoy": -203.1,
+     "qoq": null
+    }
+   ],
+   "take": {
+    "verdict": "behind",
+    "points": [
+     "Revenue fell 22% to ₹507cr, well behind the 1–9% growth guided for FY27.",
+     "Operating profit dropped 69% to ₹46cr as operating margin crashed 14 points to 9%.",
+     "Net loss deepened to ₹-67cr compared to a profit of ₹65cr last year."
+    ],
+    "text": "Revenue fell 22% to ₹507cr, well behind the 1–9% growth guided for FY27. Operating profit dropped 69% to ₹46cr as operating margin crashed 14 points to 9%. Net loss deepened to ₹-67cr compared to a profit of ₹65cr last year.",
+    "checks": [
+     {
+      "text": "The CHF 200m promoter loan arrives and quarterly interest falls to ₹35–40cr",
+      "status": "unclear",
+      "why": "Requires debt and interest breakdown from the call or detailed filing"
+     },
+     {
+      "text": "Covenant waivers closed and the slipped CHF 10m order arrives",
+      "status": "unclear",
+      "why": "Order delivery and covenant status are not detailed in reported earnings"
      }
     ],
     "on": "2026-11-14"
@@ -798,6 +871,79 @@
    }
   },
   {
+   "company": "Innova Captab",
+   "sector": "Pharma CDMO",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-13",
+   "readOn": "2026-11-14",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 496,
+     "yearAgo": 380,
+     "prev": 471,
+     "yoy": 30.5,
+     "qoq": 5.3
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 70,
+     "yearAgo": 52,
+     "prev": 73,
+     "yoy": 34.6,
+     "qoq": -4.1
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 14,
+     "yearAgo": 14,
+     "prev": 16,
+     "yoy": 0,
+     "qoq": -2
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 42,
+     "yearAgo": 30,
+     "prev": 44,
+     "yoy": 40,
+     "qoq": -4.5
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue grew 31% to ₹496cr, running well ahead of the 20%+ guidance.",
+     "Operating profit rose 35% to ₹70cr as operating margin held steady at 14%.",
+     "Net profit surged 40% to ₹42cr, though dipping 5% quarter-on-quarter."
+    ],
+    "text": "Revenue grew 31% to ₹496cr, running well ahead of the 20%+ guidance. Operating profit rose 35% to ₹70cr as operating margin held steady at 14%. Net profit surged 40% to ₹42cr, though dipping 5% quarter-on-quarter.",
+    "checks": [
+     {
+      "text": "Jammu plant reaching ₹150cr revenue a quarter",
+      "status": "unclear",
+      "why": "Plant-level revenue not disclosed in headline figures"
+     },
+     {
+      "text": "Volume growth staying above 20%",
+      "status": "unclear",
+      "why": "Volume details await the earnings call"
+     }
+    ],
+    "on": "2026-11-14"
+   }
+  },
+  {
    "company": "Inox Wind",
    "sector": "Electrical Equipment",
    "quarter": "Q2 FY27",
@@ -1077,6 +1223,68 @@
       "why": "Discovery-I secured ~$54,600/day; remaining two rigs await call updates"
      }
     ],
+    "on": "2026-11-14"
+   }
+  },
+  {
+   "company": "Jubilant Pharmova",
+   "sector": "Pharma CDMO",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-13",
+   "readOn": "2026-11-14",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 2370,
+     "yearAgo": 1966,
+     "prev": 2229,
+     "yoy": 20.5,
+     "qoq": 6.3
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 240,
+     "yearAgo": 341,
+     "prev": 248,
+     "yoy": -29.6,
+     "qoq": -3.2
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 10,
+     "yearAgo": 17,
+     "prev": 11,
+     "yoy": -7,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 31,
+     "yearAgo": 120,
+     "prev": 56,
+     "yoy": -74.2,
+     "qoq": -44.6
+    }
+   ],
+   "take": {
+    "verdict": "mixed",
+    "points": [
+     "Revenue up 21% to ₹2,370cr, tracking ahead of low double-digit guidance.",
+     "Operating profit fell 30% to ₹240cr as margin contracted 7 points to 10%.",
+     "Net profit slumped 74% to ₹31cr, down 45% sequentially."
+    ],
+    "text": "Revenue up 21% to ₹2,370cr, tracking ahead of low double-digit guidance. Operating profit fell 30% to ₹240cr as margin contracted 7 points to 10%. Net profit slumped 74% to ₹31cr, down 45% sequentially.",
+    "checks": [],
     "on": "2026-11-14"
    }
   },
@@ -1494,6 +1702,84 @@
       "text": "Operating margin above 7% in Q2 FY27",
       "status": "met",
       "why": "9% vs >7% target"
+     }
+    ],
+    "on": "2026-11-14"
+   }
+  },
+  {
+   "company": "Pennar Industries",
+   "sector": "Construction",
+   "quarter": "Q2 FY27",
+   "resultsDate": "2026-11-13",
+   "readOn": "2026-11-14",
+   "view": "consolidated",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": "Jun 2026"
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 1016,
+     "yearAgo": 907,
+     "prev": 870,
+     "yoy": 12,
+     "qoq": 16.8
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 101,
+     "yearAgo": 81,
+     "prev": 93,
+     "yoy": 24.7,
+     "qoq": 8.6
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 10,
+     "yearAgo": 9,
+     "prev": 11,
+     "yoy": 1,
+     "qoq": -1
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 38,
+     "yearAgo": 32,
+     "prev": 35,
+     "yoy": 18.8,
+     "qoq": 8.6
+    }
+   ],
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue grew 12% to ₹1,016cr, returning to double-digit growth.",
+     "Operating profit rose 25% to ₹101cr, with margin expanding 1 point to 10%.",
+     "Net profit rose 19% to ₹38cr, beating the 10% base-case target."
+    ],
+    "text": "Revenue grew 12% to ₹1,016cr, returning to double-digit growth. Operating profit rose 25% to ₹101cr, with margin expanding 1 point to 10%. Net profit rose 19% to ₹38cr, beating the 10% base-case target.",
+    "checks": [
+     {
+      "text": "Segment profit figures published",
+      "status": "unclear",
+      "why": "Not detailed in headline results"
+     },
+     {
+      "text": "Double-digit revenue growth",
+      "status": "met",
+      "why": "Revenue up 12% year-on-year"
+     },
+     {
+      "text": "Debt to equity staying at or below 0.7",
+      "status": "unclear",
+      "why": "Balance sheet figures not provided"
      }
     ],
     "on": "2026-11-14"
@@ -7686,6 +7972,10 @@
    "reviewed": {
     "on": "2026-11-08",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "The call clarified that reported revenue growth was artificially depressed by a ₹180 crore one-time sale in the base quarter and operating margins expanded due to a richer mix of Performance Materials, while management issued strong H2 revenue guidance of ₹2,400–2,500 crore. This upgrades the initial \"mixed\" verdict to decisively positive, confirming that underlying growth and execution are significantly stronger than the headline numbers implied.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -8041,6 +8331,10 @@
    "reviewed": {
     "on": "2026-11-08",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "The call confirmed management maintained its FY27 guidance despite the outperformance, explaining that the surging margins and growth were driven by the full mobilization and integration of high-margin acquisitions, STEAG and LSG. This reinforces the \"ahead\" verdict, affirming that the M&A synergy thesis and debt reduction plans are tracking smoothly.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -9598,6 +9892,10 @@
    "reviewed": {
     "on": "2026-11-08",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "The call revealed a steep cut to full-year EBITDA margin guidance—slashed to 23–25% from 33–35%—driven by a 4–5 month regulatory freeze on high-margin Latin American exports, ₹60 crore in unabsorbed fixed costs from the pre-revenue Ambernath plant, and raw material inflation pushback. This sharply worsens the \"behind\" verdict, shifting the narrative from a single weak quarter into an extended, thesis-damaging drag on profitability.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -10245,6 +10543,10 @@
    "reviewed": {
     "on": "2026-11-08",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "The call reinforced the \"ahead\" verdict as management raised full-year FY27 revenue guidance to ₹6,500–₹6,800 crore and lifted PAT margin targets, while explaining that Q2's margin surge was powered by low-cost pre-stocked chip inventory. Management kept full-year EBITDA margin guidance at 14–15% to account for deliberately absorbing component inflation in H2 to capture market share, alongside noting a fully insured ₹34.4 crore one-off fire loss.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -10328,6 +10630,10 @@
    "reviewed": {
     "on": "2026-11-06",
     "text": "Other income of ₹26cr was about 31% of pre-tax profit, so the operating business earned less than the profit line suggests. The tax rate was 9%, flattering net profit."
+   },
+   "call": {
+    "text": "The call clarified that underlying revenue growth was actually 33% after adjusting for a prior-year revenue-recognition one-off, while exceptional margins were driven by strong structural operating leverage alongside a ~200-bps temporary boost from FX tailwinds and delayed hiring. This flips the initial \"mixed\" verdict to decisively bullish, supported by high cash conversion and confident full-year guidance of >20% constant-currency revenue growth and ~16.5% Adjusted EBITDA margins.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -10706,6 +11012,10 @@
    "reviewed": {
     "on": "2026-11-06",
     "text": "Other income was −₹214cr, which hid a better operating result."
+   },
+   "call": {
+    "text": "Management trimmed full-year revenue growth guidance to approximately 10% citing execution bottlenecks, explained that margins were pressured by early-stage project mobilization, and revealed further delays in collecting cash from HAM asset sales until late FY27 or early FY28. Despite a surging ₹17,222 crore order book, these persistent execution delays and pushed-out deleveraging timelines keep the verdict firmly \"behind.\"",
+    "on": "2026-11-14"
    }
   },
   {
@@ -10778,6 +11088,10 @@
    "reviewed": {
     "on": "2026-11-08",
     "text": "Other income was −₹2.3cr, which hid a better operating result."
+   },
+   "call": {
+    "text": "The call revealed that aggressive depreciation of capitalized AI investments drove the steep profit drop, while surging receivables (₹130 crore) and a delayed Bengaluru facility launch are severely straining cash flow. With management refusing to provide revenue guidance and cementing a 20% EBITDA margin as a lower-for-longer baseline, the new details tilt the initially \"mixed\" verdict toward greater caution.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -11153,6 +11467,10 @@
    "reviewed": {
     "on": "2026-11-06",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "Management reinstated full-year revenue guidance at ~10% YoY, clarifying that consumerware weakness was due to the festive calendar shifting into Q3, while margin compression stemmed from elevated gas prices and operational bottlenecks at its new steel and glassware facilities. This softens the initially negative verdict to a mixed watchlist stance, as channel inventory has cleared and management expects a stronger H2 rebound with margins having bottomed out.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -11974,6 +12292,10 @@
    "reviewed": {
     "on": "2026-11-06",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "Management cut full-year revenue growth guidance to 16–18% and dropped laminate volume targets, explaining that the profit and margin drop was driven by Red Sea freight spikes, export shipment delays, and weak European demand despite strong growth in newer chipboard and plywood segments. This reinforces the \"behind\" verdict, confirming that near-term headwinds in the core business are severe and earnings recovery remains clouded.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -12046,6 +12368,10 @@
    "reviewed": {
     "on": "2026-11-06",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "The call revealed that full-year volume guidance was kept at high-teens while margin expectations were slightly tempered by ocean freight and input inflation, countered by a newly approved ₹500 crore capex and a ₹300 crore annual data center contract through 2033. This keeps the \"ahead\" verdict intact, as strong multi-year demand visibility and capacity expansion outweigh the cautious near-term margin tone.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -12999,6 +13325,10 @@
    "reviewed": {
     "on": "2026-11-08",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "Management maintained its 20% full-year growth guidance, attributing the top-line decline to prolonged client negotiations and a tough prior-year base, while margin expansion was driven by a growing annuity mix and selective deal curation. This does not change the \"behind\" verdict, as meeting the annual target now hinges on an improbable 50% revenue surge in the second half.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -13073,6 +13403,10 @@
    "reviewed": {
     "on": "2026-11-08",
     "text": "Other income of ₹9cr was about 53% of pre-tax profit, so the operating business earned less than the profit line suggests."
+   },
+   "call": {
+    "text": "Management maintained its full-year guidance of 20–25% revenue growth and 12–14% margins, explaining that Q2 was depressed by ₹30–40cr of monsoon and logistics deferrals that shift into a historically stronger H2. This explanation, alongside a major post-quarter ₹500cr Nigeria export order, softens the initial negative verdict to a mixed \"watchlist\" stance, though execution is now heavily back-ended.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -14568,6 +14902,10 @@
    "reviewed": {
     "on": "2026-11-06",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "The call clarified that margin gains were driven by pricing discipline and higher-margin commercial products, but warned of a sharp growth slowdown in H2 and negative operating cash flows that necessitate a ~₹900 crore QIP (a 15% equity dilution). This reinforces the \"mixed\" verdict, as the exceptional profit surge is weighed down by looming shareholder dilution and working capital strain.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -15028,6 +15366,10 @@
    "reviewed": {
     "on": "2026-11-08",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "The call reaffirmed the \"ahead\" verdict by providing FY27 revenue guidance of ₹4,250–₹4,300 Cr, raising capex to ₹800 Cr, and clarifying that margin expansion was driven by a richer aerospace and defense mix that fully absorbed a ₹16.7 Cr statutory wage hike. It also revealed strong pipeline visibility through a ₹5,870 Cr ADS backlog, initial Safran orders, and advanced talks in humanoid robotics, balanced against a paused US plant due to tariff risks.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -15432,6 +15774,10 @@
    "reviewed": {
     "on": "2026-11-06",
     "text": "Other income of ₹53cr was about 59% of pre-tax profit, so the operating business earned less than the profit line suggests."
+   },
+   "call": {
+    "text": "Management reaffirmed its full-year guidance of ₹10,000 crore in pre-sales and ₹5,000 crore in revenue recognition, explaining that the operating turnaround was driven by a richer mix of higher-margin mid-income completions over legacy affordable units. It also clarified that earlier collection lags were merely timing-related, reinforcing the positive verdict as strong cash generation is funding new land additions without increasing debt.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -16043,6 +16389,10 @@
    "reviewed": {
     "on": "2026-11-06",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "The call clarified that the margin contraction was simply a mathematical pass-through of higher polymer raw-material costs, while confirming that management scrapped a risky acquisition and secured a breakthrough NTPC hydrogen cylinder order. With management reaffirming strong guidance of over 20% EBITDA and 25% PAT growth, the call reinforces the initial \"ahead\" verdict.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -16259,6 +16609,10 @@
    "reviewed": {
     "on": "2026-11-06",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "Management explained that margin compression was driven by soaring global freight rates and raw material price increases, but painted a far more positive picture than the mixed figures suggest. By using a fresh equity raise to retire ₹344 crore of debt and commercializing its high-margin data center spooling facility ahead of schedule, the call turns the mixed verdict into a clear inflection thesis for sharp profit growth in the second half.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -16337,6 +16691,10 @@
    "reviewed": {
     "on": "2026-11-08",
     "text": "Other income of ₹3.87cr was larger than the whole pre-tax profit (₹2.8cr), so the business itself lost money before it. The tax rate was 1.79%, flattering net profit."
+   },
+   "call": {
+    "text": "Management clarified that the sharp margin drop was a temporary timing mismatch caused by unrecognised price variation claims and deferred solar panel purchases pending project funding. With a crucial ₹2,941 crore IREDA loan now secured and management guiding for over ₹2,300 crore in full-year revenue at normalized 14–15% margins, the call overturns the \"behind\" verdict by de-risking a massive execution rebound in the second half.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -16556,6 +16914,10 @@
    "reviewed": {
     "on": "2026-11-06",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "The call revealed that the massive margin and profit surge was driven by a one-time ₹194 crore gain from divesting a 51% stake in the MCP road project, while full-year revenue guidance was modestly softened/widened to 10–20% due to execution delays on the Pune-Shirur project. This tempers the headline operational blowout, moderating the verdict to an in-line core performance lifted by asset monetization.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -16638,6 +17000,10 @@
    "reviewed": {
     "on": "2026-11-11",
     "text": "Agree with 'mixed': growth came at a lower margin (11%), so sales growth did not reach profit at all."
+   },
+   "call": {
+    "text": "The call revealed that the apparent profit and margin stagnation was driven by a ₹7 crore non-cash ESOP charge, masking underlying operational strength where adjusted EBITDA margins held firm at 13.7% and core CDMO grew 34%. This turns the initially \"mixed\" view into a decidedly positive verdict, confirming that core profitability remains strong despite management maintaining its strict no-guidance policy.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -18781,6 +19147,10 @@
    "reviewed": {
     "on": "2026-11-06",
     "text": "Other income of ₹15cr was about 30% of pre-tax profit, so the operating business earned less than the profit line suggests."
+   },
+   "call": {
+    "text": "The call revealed that the margin shortfall was driven by a temporary drag from legacy European operations currently being restructured into Poland—masking robust core margins of ~16%—while order intake hit a record ₹1,198 crore with full-year guidance set for double-digit revenue growth. This softens the initial \"behind\" verdict, framing the quarter as a planned structural transition with strong underlying demand rather than core operational weakness.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -20127,6 +20497,10 @@
    "reviewed": {
     "on": "2026-11-06",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "The call reinforced the \"ahead\" verdict, keeping full-year margin guidance at 21–22% while setting ambitious targets to reach ₹4,000cr in revenue by FY28 and ₹5,000cr within three years. Management also clarified that the sequential net profit dip was merely a non-cash accounting change in intangible asset amortization, while underlying growth remained robust across geographies despite a doubling of freight costs.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -21264,6 +21638,10 @@
    "reviewed": {
     "on": "2026-11-06",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "Management maintained its double-digit FY27 revenue guidance, explaining that the Q2 shortfall was merely a timing issue caused by a 10-to-15-day dispatch delay on Bangladesh rail coaches that deferred export revenues into Q3, while also highlighting a new $41M Sri Lanka export win. This does not alter the \"behind\" verdict, as achieving the full-year target now requires an aggressive 14–15% growth ramp in H2 despite an impending Q4 wage-hike provision and a permanent margin reset near 20%.",
+    "on": "2026-11-14"
    }
   },
   {
@@ -35566,6 +35944,10 @@
    "reviewed": {
     "on": "2026-11-01",
     "text": "Agree."
+   },
+   "call": {
+    "text": "The call clarified that the margin drop was temporary—driven by upfront hiring and capacity expansion to fulfill newly secured OEM contracts—while management maintained full-year revenue growth targets around 27% and guided margins to rebound toward 25% in H2. This shifts the verdict from mixed to positive, assuring investors that the profitability squeeze is an intentional, front-loaded investment rather than operational weakness.",
+    "on": "2026-11-14"
    }
   },
   {
