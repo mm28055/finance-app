@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13",
+ "updated": "2026-11-15",
  "checkpoints": [
   {
    "id": "krishna-defence-and-allied-industries-q3fy27-1",
@@ -1766,6 +1766,24 @@
    "target": 23,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-15",
+     "text": "Raised FY27 revenue guidance to 24% growth in the Q2 FY27 call (5 Nov 2026)"
+    }
+   ]
+  },
+  {
+   "id": "uniparts-india-q4fy27-3",
+   "company": "Uniparts India",
+   "sector": "Auto Related",
+   "text": "FY27 revenue growth of 24% (raised guide, Q2 FY27 call)",
+   "metric": "fyRevenueGrowth",
+   "op": ">=",
+   "target": 24,
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-15",
    "status": "pending"
   },
   {
@@ -13045,7 +13063,11 @@
    "ifMet": "Stays own",
    "ifMissed": "Case to own weakens",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "No shares issued by September 2026; on the 4 Nov 2026 call management said the pipeline is funded from its own cash",
+   "resolvedOn": "2026-11-15",
+   "resolvedBy": "review",
+   "outcome": "Stays own"
   },
   {
    "id": "samhi-hotels-q2fy27-2",
@@ -13054,7 +13076,11 @@
    "text": "Same-store RevPAR growth of 9–11% (promise)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Same-store RevPAR about +14% (rate +9%); same-store revenue +12.6%",
+   "resolvedOn": "2026-11-15",
+   "resolvedBy": "review",
+   "outcome": "Stays own"
   },
   {
    "id": "samhi-hotels-q3fy27-1",
@@ -13075,6 +13101,15 @@
    "target": 10,
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
+   "status": "pending"
+  },
+  {
+   "id": "samhi-hotels-q4fy27-2",
+   "company": "Samhi Hotels",
+   "sector": "Hotels and Travels",
+   "text": "Net debt below 3 times trailing EBITDA by the end of FY27 (3.1x at September), as management expects",
+   "due": "Q4 FY27",
+   "createdOn": "2026-11-15",
    "status": "pending"
   },
   {
@@ -17109,7 +17144,11 @@
    "due": "Q2 FY27",
    "ifMissed": "View changes for the worse",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "FY27 15% constant-currency guide kept on 6 Nov 2026; the four-year ~20% was not repeated or withdrawn",
+   "resolvedOn": "2026-11-15",
+   "resolvedBy": "review",
+   "outcome": "Stays own; watch whether the new CEO repeats it"
   },
   {
    "id": "gland-pharma-q2fy27-2",
@@ -17118,7 +17157,11 @@
    "text": "FDA approval of the new bag line (decides whether FY27 beats 15%)",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Bag line still awaiting its FDA inspection at the Q2 call (6 Nov 2026)",
+   "resolvedOn": "2026-11-15",
+   "resolvedBy": "review",
+   "outcome": "Stays own; FY27 guide stays 15%, no beat from bags"
   },
   {
    "id": "gland-pharma-q2fy27-3",
@@ -17127,7 +17170,11 @@
    "text": "Cenexi revenue reaching about €51m a quarter at a high-single-digit margin",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "Q2 FY27 Cenexi revenue €41m with an EBITDA loss of about €6m (planned summer shutdowns)",
+   "resolvedOn": "2026-11-15",
+   "resolvedBy": "review",
+   "outcome": "Stays own; management keeps the €200m FY27 target and expects profit from Q3"
   },
   {
    "id": "gland-pharma-q4fy27-1",
@@ -17136,7 +17183,32 @@
    "text": "FY27 revenue growth at least 15% at constant currency (raised guide)",
    "due": "Q4 FY27",
    "createdOn": "2026-09-29",
+   "status": "pending",
+   "revisions": [
+    {
+     "on": "2026-11-15",
+     "text": "Kept at 15% at constant currency in the Q2 FY27 call (6 Nov 2026) after H1 growth of 21% reported"
+    }
+   ]
+  },
+  {
+   "id": "gland-pharma-q3fy27-1",
+   "company": "Gland Pharma",
+   "sector": "Pharma CDMO",
+   "text": "Cenexi back to a positive EBITDA in Q3 FY27 after the summer-shutdown loss, as management expects",
+   "due": "Q3 FY27",
+   "createdOn": "2026-11-15",
    "status": "pending"
+  },
+  {
+   "id": "gland-pharma-pashamylaram-brownfield-m1",
+   "company": "Gland Pharma",
+   "sector": "Pharma CDMO",
+   "text": "Pashamylaram brownfield vial block in commercial operation",
+   "due": "FY30",
+   "createdOn": "2026-11-15",
+   "status": "pending",
+   "project": "gland-pharma-pashamylaram-brownfield"
   },
   {
    "id": "windlas-biotech-q2fy27-1",
@@ -31778,8 +31850,12 @@
    "text": "FDA approves the new bag line",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending",
-   "project": "gland-pharma-bag-line"
+   "status": "missed",
+   "project": "gland-pharma-bag-line",
+   "actual": "Still awaiting FDA inspection at the Q2 call (6 Nov 2026); no new date given",
+   "resolvedOn": "2026-11-15",
+   "resolvedBy": "review",
+   "outcome": "Milestone slips; no new date to track"
   },
   {
    "id": "gland-pharma-fontenay-ampoule-m1",

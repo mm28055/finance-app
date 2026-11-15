@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-15",
  "capacity": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -367,8 +367,8 @@
    "sector": "Auto Related",
    "today": "Batch plants for tractor and construction-machine linkage parts and precision machining in India, a US factory, and warehouses near customers (Mexico being added); capacity is set by bottleneck processes, not disclosed in units",
    "utilisation": "Not disclosed; management says capacity is not the limit and new business needs only 'balancing capex'",
-   "capexStatus": "Steady 2.5–3.5% of revenue a year, maintenance included (₹12cr in Q1 FY27), spent on bottleneck machines and the Mexico warehouse rather than new plants; Ludhiana finishing shop being restored after a fire (insured)",
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
+   "capexStatus": "2.5–3.5% of revenue a year until now, maintenance included (₹12cr in Q1 FY27, ₹10cr in Q2), spent on bottleneck machines and the Mexico warehouse rather than new plants; about ₹60cr (about 4% of revenue) planned over the next year, mostly approved; Ludhiana finishing shop, restored after a fire (insured), due back by end-2026",
+   "source": "Q2 FY27 call (Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Auto.Axle",
@@ -2760,9 +2760,9 @@
    "company": "Samhi Hotels",
    "sector": "Hotels and Travels",
    "today": "4,899 owned or leased rooms open in business hotels",
-   "utilisation": "Occupancy 79.3% in Q1 FY27 (74.2% a year earlier)",
-   "capexStatus": "₹250–270cr in FY27 within ₹2,200cr over five years for 1,669 rooms (W Hyderabad FY28, Navi Mumbai, Westin Bangalore), funded from free cash and GIC's money",
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call and sector note"
+   "utilisation": "Occupancy 78.6% in Q2 FY27 (75.0% a year earlier) and 79.3% in Q1 (74.2%); 37% of Q2 nights above 90%",
+   "capexStatus": "₹250–270cr in FY27 within about ₹2,400cr over FY27–FY31 (about ₹2,250cr net of GIC's ₹150cr) for 1,669 rooms (W Hyderabad Q2 FY28, Navi Mumbai, Westin Bangalore, Noida, Sriperumbudur), funded from free cash and GIC's money",
+   "source": "Q2 FY27 call (Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call and sector note"
   },
   {
    "company": "Chalet Hotels",
@@ -3654,10 +3654,10 @@
   {
    "company": "Gland Pharma",
    "sector": "Pharma CDMO",
-   "today": "Sterile injectables network in India (vials, ampoules, bags, syringes, freeze-dried) plus Cenexi's four European plants (Fontenay, Hérouville, Osny, Braine-l'Alleud); GLP-1 cartridge capacity of 140m units",
-   "utilisation": "Utilisation rising across Indian lines; the bag line and eye products tight; Cenexi's Osny (oral solids) at 90–100%, other Cenexi sites with room",
-   "capexStatus": "₹2,000cr programme over five years, about ₹550cr in FY27 (₹113cr in Q1): brownfield and greenfield lines, a ₹165cr oncology isolator line, a new bag line awaiting FDA approval, a new cartridge line and a 30m-ampoule line at Fontenay",
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
+   "today": "Sterile injectables network in India (vials, ampoules, bags, syringes, freeze-dried) of about 1.7bn units, plus Cenexi's four European plants (Fontenay, Hérouville, Osny, Braine-l'Alleud); GLP-1 cartridge capacity of 140m units",
+   "utilisation": "Liquid vials 92% used in Q2 FY27, with about 102% demand expected next year; some lines 100% occupied; the bag line and eye products tight. Cenexi's Osny (oral solids) at 90–100%, other Cenexi sites with room",
+   "capexStatus": "₹2,000cr programme over five years, about ₹550cr in FY27 (₹113cr in Q1): brownfield and greenfield lines, a ₹165cr oncology isolator line, a new bag line still awaiting FDA inspection, a new cartridge line and a 30m-ampoule line at Fontenay. Added on 6 Nov 2026: a ₹1,000cr Pashamylaram brownfield block (three isolator vial lines, from FY30) and a Vizag SEZ greenfield site to be costed next quarter; the ₹3,000cr of the first two adds about 300–400m units",
+   "source": "Q2 FY27 call (Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
   },
   {
    "company": "Windlas Biotech",

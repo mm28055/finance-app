@@ -14077,11 +14077,20 @@
   },
   {
    "company": "Gland Pharma",
-   "fingerprint": "20b134c1d3b3a9ed",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "2233d338f3a1d69a",
+   "checkedOn": "2026-11-15",
    "lines": {
-    "heading": "How full the Cenexi sites in Europe are (Q4 FY26 call, May 2026)",
+    "heading": "How full the lines are (India: Q2 FY27 call, Nov 2026; Cenexi: Q4 FY26 call, May 2026)",
     "items": [
+     {
+      "name": "Liquid vials (India)",
+      "size": "part of about 1.7bn units of sterile capacity",
+      "usedPct": 92,
+      "usedLabel": "92% used",
+      "tight": true,
+      "tightLabel": "running out",
+      "note": "About 102% demand expected next year; some lines are 100% occupied and shutdowns are being skipped, hence the new brownfield block"
+     },
      {
       "name": "Fontenay (ampoules)",
       "size": "a line added last year and a 30m-ampoule line coming",
@@ -14120,6 +14129,21 @@
       "projectId": "gland-pharma-capex-programme"
      },
      {
+      "name": "Pashamylaram brownfield block",
+      "sub": "three isolator-based vial lines for newly signed contract work; board approval on 6 Nov 2026",
+      "total": 1000,
+      "right": "about ₹1,000cr; commercial from FY30",
+      "status": "planned",
+      "projectId": "gland-pharma-pashamylaram-brownfield"
+     },
+     {
+      "name": "Vizag SEZ greenfield site",
+      "sub": "for contract and own products; land acquired, project plan in progress",
+      "right": "cost to the board next quarter; management agreed with an analyst's ~₹5,000cr four-year total for all three, implying about ₹2,000cr here",
+      "status": "planned",
+      "projectId": "gland-pharma-vizag-greenfield"
+     },
+     {
       "name": "Oncology isolator line",
       "sub": "for the 55-product contract; to be installed in January (Q1 FY27 call)",
       "total": 165,
@@ -14129,7 +14153,7 @@
      },
      {
       "name": "New IV bag line",
-      "sub": "built, waiting for US FDA approval",
+      "sub": "built; still awaiting its US FDA inspection at the Q2 FY27 call (approval had been expected in August or September)",
       "right": "cost not given",
       "status": "building",
       "projectId": "gland-pharma-bag-line"
@@ -14159,12 +14183,17 @@
     },
     {
      "when": "Q2 FY27",
-     "tone": "next",
+     "tone": "done",
      "text": "Stored start for the extra GLP-1 cartridge line (no call gives this date)",
      "milestones": [
       "gland-pharma-bag-line-m1"
      ],
-     "sub": "Q1 FY27 call: bag line approval expected in the quarter (August or September); if on time, FY27 growth could beat 15%. No news of it since"
+     "sub": "Q1 FY27 call: bag line approval expected in the quarter (August or September); if on time, FY27 growth could beat 15%. Q2 FY27 call (6 Nov 2026): still awaiting the FDA inspection, no new date"
+    },
+    {
+     "when": "Q3 FY27",
+     "tone": "next",
+     "text": "Board to approve the Vizag greenfield capex (a four-year programme)"
     },
     {
      "when": "Q4 FY27",
@@ -14186,18 +14215,46 @@
      "text": "55-product contract launches from 2029; all launched around 2030, about $90–100m a year"
     },
     {
+     "when": "FY30",
+     "tone": "later",
+     "text": "Pashamylaram brownfield vial lines in commercial operation",
+     "milestones": [
+      "gland-pharma-pashamylaram-brownfield-m1"
+     ]
+    },
+    {
      "when": "FY30–FY31",
      "tone": "later",
      "text": "Real GLP-1 revenue only from here, as the big US launches come in 2030; insulin fills 30–40m units of cartridge capacity until then"
     }
    ],
    "notes": [
-    "Indian lines: utilisation rising; the bag line and eye products are tight. Network covers vials, ampoules, bags, syringes and freeze-dried products, plus Cenexi's four European plants (Fontenay, Hérouville, Osny, Braine-l'Alleud)",
+    "Indian lines: liquid vials 92% used (Q2 FY27), with about 102% expected next year; bags and eye products are tight too. Network covers vials, ampoules, bags, syringes and freeze-dried products, plus Cenexi's four European plants (Fontenay, Hérouville, Osny, Braine-l'Alleud)",
     "Isolator line: for cancer injectables, to take over 55 products from a global specialty pharma company (stored: moving from its Western sites)",
     "Cartridge capacity went from about 40m to 140m units with a combined vial-and-cartridge line (Q4 FY26 call)",
     "Also starting: a new block making sterile APIs for depot injections with Neuland (cost not given), and a compounding suite for a licensed product"
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note"
+   "source": "Q2 FY27 call (Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note",
+   "adds": [
+    {
+     "heading": "What the ₹2,000cr programme and the Pashamylaram brownfield add (over about four years; brownfield from FY30)",
+     "projectId": "gland-pharma-pashamylaram-brownfield",
+     "bars": [
+      {
+       "name": "Sterile units a year",
+       "sub": "₹2,000cr of new lines plus the ₹1,000cr brownfield block; the Vizag greenfield would come on top",
+       "base": 1700,
+       "add": 350,
+       "baseLabel": "today about 1,700m",
+       "addLabel": "+about 350m (300–400m)",
+       "right": "about +18–24%"
+      }
+     ],
+     "notes": [
+      "Management's figures on the Q2 FY27 call; the midpoint of 300–400m is drawn"
+     ]
+    }
+   ]
   },
   {
    "company": "Global Health (Medanta)",
@@ -31605,17 +31662,17 @@
   },
   {
    "company": "Samhi Hotels",
-   "fingerprint": "645a5c983f2e0b8a",
-   "checkedOn": "2026-10-23",
+   "fingerprint": "54e4e491e8b710af",
+   "checkedOn": "2026-11-15",
    "lines": {
-    "heading": "How full the hotels are (Q1 FY27)",
+    "heading": "How full the hotels are (Q2 FY27)",
     "items": [
      {
       "name": "Overall occupancy",
       "size": "4,899 owned or leased rooms in business hotels",
-      "usedPct": 79.3,
-      "usedLabel": "79.3% occupied",
-      "note": "74.2% a year earlier; 36% of days in the quarter were above 90%"
+      "usedPct": 78.6,
+      "usedLabel": "78.6% occupied",
+      "note": "75.0% a year earlier (Q1 FY27: 79.3%); 37% of nights in the quarter were above 90%"
      }
     ]
    },
@@ -31635,16 +31692,16 @@
       },
       {
        "name": "of which W Hyderabad",
-       "sub": "260 rooms at One Financial District",
+       "sub": "170 rooms at HITEC City (leased)",
        "base": 4899,
-       "add": 260,
+       "add": 170,
        "baseLabel": "today 4,899",
-       "addLabel": "+260",
-       "right": "+5%"
+       "addLabel": "+170",
+       "right": "+3%"
       },
       {
        "name": "of which Navi Mumbai",
-       "sub": "700 rooms, Westin plus Fairfield by Marriott",
+       "sub": "700 rooms, Westin plus Fairfield by Marriott (about 658 in the current design, Q2 FY27 call)",
        "base": 4899,
        "add": 700,
        "baseLabel": "today 4,899",
@@ -31654,7 +31711,8 @@
      ],
      "notes": [
       "Plus 473 existing rooms being re-branded upscale; upscale share of revenue to rise from about 40% to about 60% by FY30",
-      "Financing visible without new debt: more than ₹3,000cr of free cash expected over FY27–FY31, plus GIC's money"
+      "Financing from its own cash: more than ₹3,000cr of free cash expected over FY27–FY31 against about ₹2,250cr of capex net of GIC's ₹150cr (Q2 FY27 call), so net debt should stay about ₹1,450–1,500cr",
+      "Corrected 15 Nov 2026: the W has 170 rooms at HITEC City; the 260-room hotel at One Financial District is a separate mid-scale hotel opening in FY30 (Q2 FY27 presentation)"
      ]
     }
    ],
@@ -31664,13 +31722,13 @@
       "name": "₹2,200cr development pipeline",
       "sub": "over five years, from free cash and GIC's money",
       "total": 2200,
-      "right": "₹2,200cr; ₹250–270cr in FY27, about the same in FY28",
+      "right": "₹2,200cr (about ₹2,400cr over FY27–FY31 including Navi Mumbai, ₹2,250cr net of GIC); ₹250–270cr in FY27",
       "status": "building",
       "projectId": "samhi-hotels-pipeline"
      },
      {
       "name": "W Hyderabad",
-      "sub": "leased, so the building is not on Samhi's books",
+      "sub": "170 rooms at HITEC City; leased, so the building is not on Samhi's books; expected to add about 10% to FY27 income once settled",
       "right": "about ₹150cr of FY27's spend",
       "status": "building",
       "projectId": "samhi-hotels-w-hyderabad"
@@ -31678,13 +31736,13 @@
      {
       "name": "Navi Mumbai dual-brand hotel",
       "sub": "potential revenue about ₹325cr a year at today's room rates",
-      "right": "cost not given separately; most money goes in once on site",
+      "right": "₹900–1,000cr (Q2 FY27 call); most money goes in once on site",
       "status": "planned",
       "projectId": "samhi-hotels-navi-mumbai"
      },
      {
       "name": "Westin (Tribute) Bangalore",
-      "sub": "inside the GIC platform: GIC holds 35% of a 1,000-room upscale portfolio for about ₹750cr, ₹600cr already in",
+      "sub": "220 new rooms beside the 142-room hotel becoming a Tribute (about 370 in all), inside the GIC platform: GIC holds 35% of a 1,000-room upscale portfolio for about ₹750cr, ₹600cr already in. Basement under construction (Q2 FY27)",
       "right": "GIC's remaining ₹150cr over two years, in step with the build",
       "status": "building",
       "projectId": "samhi-hotels-westin-bangalore"
@@ -31698,7 +31756,7 @@
      "milestones": [
       "samhi-hotels-navi-mumbai-m1"
      ],
-     "sub": "'1st April 2027 is when we hit the ground' (had been end of FY27); first approvals expected in the next few months"
+     "sub": "Q2 FY27 call: work to start early in FY28; Q1 FY27 call: '1st April 2027 is when we hit the ground' (had been end of FY27)"
     },
     {
      "when": "Q3 FY28",
@@ -31706,7 +31764,7 @@
      "milestones": [
       "samhi-hotels-w-hyderabad-m1"
      ],
-     "sub": "Fully open in H2 FY28 or calendar 2027 (could have been about June, but margin kept for approvals and licences). The May call had said towards the end of FY27"
+     "sub": "Q2 FY27 call: on track to open in Q2 FY28, construction largely done by end-FY27, with a cushion for the fire inspection. Q1 FY27 call had said H2 FY28 or calendar 2027; the May call towards the end of FY27"
     },
     {
      "when": "End of FY28",
@@ -31716,7 +31774,7 @@
     {
      "when": "FY29–FY30",
      "tone": "later",
-     "text": "Westin in Bangalore Whitefield, the 162-room IKEA-site hotel in Noida and the 135-room Marriott at Sriperumbudur"
+     "text": "Westin in Bangalore Whitefield (FY30 in the Q2 FY27 presentation), the 162-room IKEA-site hotel in Noida (second-floor slab in Q2 FY27) and the 135-room Marriott at Sriperumbudur (about ₹160cr, 15–17% expected return)"
     },
     {
      "when": "FY30–FY31",
@@ -31724,7 +31782,7 @@
      "text": "Navi Mumbai: three to four years to build from April 2027 (dates worked out); the main spending starts in FY29"
     }
    ],
-   "source": "Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note",
+   "source": "Q2 FY27 call and presentation (Nov 2026), Q1 FY27 call (Aug 2026), Q4 FY26 call (May 2026) and sector note",
    "recheck": {
     "changes": []
    }

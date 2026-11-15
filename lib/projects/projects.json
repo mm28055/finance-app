@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-15",
  "projects": [
   {
    "id": "azad-engineering-dedicated-plants-ramp",
@@ -1000,8 +1000,14 @@
    "expectedStart": "Q3 FY27",
    "adds": "'mid-single-digit million-dollar' revenue in FY27",
    "status": "building",
-   "source": "Q1 FY27 call (Aug 2026)",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (Nov 2026); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-15",
+   "revisions": [
+    {
+     "on": "2026-11-15",
+     "text": "Q2 FY27 call (5 Nov 2026): first customer dispatch in November 2026; revenue now 'single-digit million-dollar' in H2 FY27 from one customer, with two more to ramp up later (Q1 call had said mid-single-digit million dollars in FY27)"
+    }
+   ]
   },
   {
    "id": "auto-axle-phase-1",
@@ -7825,20 +7831,32 @@
    "cost": "₹2,200cr over five years; ₹250–270cr in FY27",
    "adds": "1,669 rooms",
    "status": "building",
-   "source": "Q4 FY26 call (May 2026); financing visible without new debt",
-   "updatedOn": "2026-09-29",
-   "capacityAdd": "+1,669 rooms (+34% on 4,899)"
+   "source": "Q2 FY27 call (Nov 2026); Q4 FY26 call (May 2026)",
+   "updatedOn": "2026-11-15",
+   "capacityAdd": "+1,669 rooms (+34% on 4,899)",
+   "revisions": [
+    {
+     "on": "2026-11-15",
+     "text": "Q2 FY27 call (4 Nov 2026): about ₹2,400cr of capex over FY27–FY31 including Navi Mumbai, of which GIC funds about ₹150cr, so about ₹2,250cr net, all from internal cash; Sriperumbudur becomes a separate 135-room Marriott at about ₹160cr"
+    }
+   ]
   },
   {
    "id": "samhi-hotels-w-hyderabad",
    "company": "Samhi Hotels",
    "sector": "Hotels and Travels",
    "name": "W Hyderabad",
-   "what": "Leased W hotel at One Financial District, Hyderabad",
+   "what": "Leased 170-room W hotel at HITEC City, Hyderabad",
    "expectedStart": "Q3 FY28",
    "status": "building",
-   "source": "Note (Q1 FY27 call, Aug 2026): moved toward late 2027; 'FY28' on the May call",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call and presentation (Nov 2026)",
+   "updatedOn": "2026-11-15",
+   "revisions": [
+    {
+     "on": "2026-11-15",
+     "text": "Q2 FY27 call and presentation (4 Nov 2026): 170 rooms at HITEC City (the stored 260 rooms at One Financial District belong to a separate mid-scale hotel opening in FY30); in the final stretch, on track to open in Q2 FY28, with construction largely done by the end of FY27 and a cushion kept for the fire inspection; expected to add about 10% to FY27 income once settled"
+    }
+   ]
   },
   {
    "id": "samhi-hotels-navi-mumbai",
@@ -7847,8 +7865,15 @@
    "name": "Navi Mumbai dual-brand hotel",
    "what": "Large dual-brand hotel project in Navi Mumbai, taking three to four years to build",
    "status": "planned",
-   "source": "Note (Q1 FY27 call, Aug 2026)",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (Nov 2026); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-15",
+   "cost": "₹900–1,000cr",
+   "revisions": [
+    {
+     "on": "2026-11-15",
+     "text": "Q2 FY27 call (4 Nov 2026): approvals and design progressing; about 658 rooms (Westin and Fairfield) in the current design (700 in the presentation), capex about ₹900–1,000cr as guided, work to start early in FY28; too early to change the opening date"
+    }
+   ]
   },
   {
    "id": "samhi-hotels-westin-bangalore",
@@ -7858,8 +7883,14 @@
    "what": "Upscale hotel development inside the GIC platform (GIC holds 35% of a 1,000-room upscale portfolio)",
    "cost": "GIC's remaining ₹150cr comes in over two years in step with the build",
    "status": "building",
-   "source": "Q4 FY26 call (May 2026)",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call and presentation (Nov 2026)",
+   "updatedOn": "2026-11-15",
+   "revisions": [
+    {
+     "on": "2026-11-15",
+     "text": "Q2 FY27 call (4 Nov 2026): the Westin tower moved from excavation to basement construction; 220 new rooms beside the 142-room hotel being turned into a Tribute, about 370 rooms in all; Westin opening FY30 in the presentation (the call said 'more towards end of FY31')"
+    }
+   ]
   },
   {
    "id": "eih-rajgarh",
@@ -10931,6 +10962,30 @@
    "updatedOn": "2026-10-23"
   },
   {
+   "id": "gland-pharma-pashamylaram-brownfield",
+   "company": "Gland Pharma",
+   "sector": "Pharma CDMO",
+   "name": "Pashamylaram brownfield vial block",
+   "what": "New building at Pashamylaram with three isolator-based vial lines, because liquid vials are 92% used and demand is expected at about 102% next year from newly signed contract work",
+   "cost": "about ₹1,000cr",
+   "expectedStart": "FY30",
+   "adds": "with the ₹2,000cr programme, about 300–400m units on today's ~1.7bn",
+   "status": "planned",
+   "source": "Q2 FY27 call (6 Nov 2026): board approval the same day",
+   "updatedOn": "2026-11-15"
+  },
+  {
+   "id": "gland-pharma-vizag-greenfield",
+   "company": "Gland Pharma",
+   "sector": "Pharma CDMO",
+   "name": "Vizag SEZ greenfield site",
+   "what": "Greenfield plant at Vizag SEZ for both contract and own products; land acquired, project plan in progress",
+   "cost": "not yet costed; goes to the board next quarter (management agreed with an analyst's total of about ₹5,000cr over four years for all three programmes, which implies about ₹2,000cr here)",
+   "status": "planned",
+   "source": "Q2 FY27 call (6 Nov 2026): a four-year programme",
+   "updatedOn": "2026-11-15"
+  },
+  {
    "id": "gland-pharma-oncology-isolator",
    "company": "Gland Pharma",
    "sector": "Pharma CDMO",
@@ -10951,8 +11006,14 @@
    "what": "New bag line built and waiting for US FDA approval",
    "adds": "FY27 growth could beat 15% if approved on time",
    "status": "building",
-   "source": "Note (Q1 FY27 call)",
-   "updatedOn": "2026-09-29"
+   "source": "Q2 FY27 call (Nov 2026); Q1 FY27 call (Aug 2026)",
+   "updatedOn": "2026-11-15",
+   "revisions": [
+    {
+     "on": "2026-11-15",
+     "text": "Q2 FY27 call (6 Nov 2026): the line is still awaiting its US FDA inspection, so approval missed the August–September expectation; no new date given"
+    }
+   ]
   },
   {
    "id": "gland-pharma-fontenay-ampoule",
