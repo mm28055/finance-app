@@ -509,7 +509,7 @@ export const commercialServices: SectorOverview = {
                 },
                 {
                     label: 'Growth driver: outsourcing, platforms and data centres',
-                    text: "**CMS** won about ₹2,000cr of orders in FY26 and ₹500cr in Q1, and its technology arm (AI video surveillance and ATM software) grew to 18% of services revenue with 35–40% growth guided. **MSTC** has new state customers (Telangana land, Karnataka liquor licences) and platforms waiting for approval: an EPR-certificate exchange that has slipped since February, an invoice-discounting (TReDS) licence and a travel portal. **Redington**'s software and cloud business grew 52% and it booked about ₹1,000cr of large deals in Q1, ₹700cr of them for Indian data centres, with a pipeline ‘many multiples’ of that.",
+                    text: "**CMS** won about ₹2,000cr of orders in FY26 and ₹500cr in Q1, and its technology arm (AI video surveillance and ATM software) grew to 18% of services revenue with 35–40% growth guided. **MSTC** has new state customers (Telangana land, Karnataka liquor licences) and platforms waiting for approval: an EPR-certificate exchange that has slipped since February, an invoice-discounting (TReDS) platform, which RBI approved in principle on 11 Nov 2026, and a travel portal. **Redington**'s software and cloud business grew 52% and it booked about ₹1,000cr of large deals in Q1, ₹700cr of them for Indian data centres, with a pipeline ‘many multiples’ of that.",
                 },
                 {
                     label: 'Growth driver: wind and heavy industry',
