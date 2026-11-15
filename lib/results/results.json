@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T20:59:03.078Z",
+ "updated": "2026-11-15T04:39:37.536Z",
  "results": [
   {
    "company": "Ahluwalia Contr.",
@@ -3896,6 +3896,69 @@
    }
   },
   {
+   "company": "United Heat Transfer",
+   "sector": "Industrials",
+   "quarter": "H1 FY27",
+   "resultsDate": "2026-11-13",
+   "readOn": "2026-11-15",
+   "view": "standalone",
+   "periods": {
+    "now": "Sep 2026",
+    "yearAgo": "Sep 2025",
+    "prev": null
+   },
+   "rows": [
+    {
+     "label": "Revenue",
+     "unit": "cr",
+     "now": 32.19,
+     "yearAgo": 21.44,
+     "prev": 51.44,
+     "yoy": 50.1,
+     "qoq": null
+    },
+    {
+     "label": "Operating profit",
+     "unit": "cr",
+     "now": 3.81,
+     "yearAgo": 2.57,
+     "prev": 7.9,
+     "yoy": 48.2,
+     "qoq": null
+    },
+    {
+     "label": "Operating margin",
+     "unit": "%",
+     "now": 11.84,
+     "yearAgo": 11.99,
+     "prev": 15.36,
+     "yoy": -0.2,
+     "qoq": null
+    },
+    {
+     "label": "Net profit",
+     "unit": "cr",
+     "now": 1.47,
+     "yearAgo": 0.84,
+     "prev": 4.17,
+     "yoy": null,
+     "qoq": null
+    }
+   ],
+   "oneOff": "The year-ago quarter's profit included other income of ₹1cr (75% of profit before tax), so net profit growth against it is not shown.",
+   "take": {
+    "verdict": "ahead",
+    "points": [
+     "Revenue up 50% to ₹32.19cr, ahead of the 30–35% growth watched for.",
+     "Operating profit rose 48% to ₹3.81cr, with operating margin steady at 11.84%.",
+     "Net profit reached ₹1.47cr; year-ago profit was distorted by ₹1cr other income."
+    ],
+    "text": "Revenue up 50% to ₹32.19cr, ahead of the 30–35% growth watched for. Operating profit rose 48% to ₹3.81cr, with operating margin steady at 11.84%. Net profit reached ₹1.47cr; year-ago profit was distorted by ₹1cr other income.",
+    "checks": [],
+    "on": "2026-11-15"
+   }
+  },
+  {
    "company": "Usha Martin",
    "sector": "Iron and Steel",
    "quarter": "Q2 FY27",
@@ -4140,7 +4203,7 @@
      "now": 1191,
      "yearAgo": 902,
      "prev": 1042,
-     "yoy": 32.0,
+     "yoy": 32,
      "qoq": 14.3
     },
     {
@@ -4167,7 +4230,7 @@
      "now": 124,
      "yearAgo": 106,
      "prev": 99,
-     "yoy": 17.0,
+     "yoy": 17,
      "qoq": 25.3
     }
    ],
@@ -5783,7 +5846,7 @@
      "now": 88,
      "yearAgo": 55,
      "prev": 82,
-     "yoy": 60.0,
+     "yoy": 60,
      "qoq": 7.3
     }
    ],
@@ -9277,6 +9340,10 @@
    "reviewed": {
     "on": "2026-11-08",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "The call revealed that top-line growth was sustained by pivoting to private capex and non-SLCM equipment to offset stalled state road projects, while sequential margin compression was driven by surging steel prices. Management guided for full-year double-digit revenue growth with margins recovering to 12–12.5% in Q3 via price hikes, keeping the verdict cautiously on watch until H2 proves out that margin rebound.",
+    "on": "2026-11-15"
    }
   },
   {
@@ -9636,6 +9703,10 @@
    "reviewed": {
     "on": "2026-11-08",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "The call reaffirmed >25% FY27 growth while targeting a doubled revenue run rate (>₹1,300 crore) by FY28, explaining that the PAT decline was temporary friction caused by doubled depreciation, front-loaded hiring, and lower other income as all six new facilities were commissioned. This shifts the \"mixed\" verdict to solidly positive, confirming that the profit dip reflects short-term capex absorption rather than operational weakness.",
+    "on": "2026-11-15"
    }
   },
   {
@@ -9862,6 +9933,10 @@
    "reviewed": {
     "on": "2026-11-08",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "The call clarified that the margin miss was driven by a temporary 3–6 month lag in passing on commodity and energy inflation to OEMs, while management nudged full-year revenue growth guidance up to 10–15% and reaffirmed a double-digit margin finish. This shifts the \"mixed\" verdict to a decisively positive one, confirming that underlying domestic 4WD demand is robust and profit recovery is merely delayed rather than structurally impaired.",
+    "on": "2026-11-15"
    }
   },
   {
@@ -13521,6 +13596,10 @@
    "reviewed": {
     "on": "2026-11-08",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "The call clarified that the sequential net profit jump was due to the absence of Q1’s ₹143 crore fire loss rather than a Q2 one-off, while margins were squeezed by unabsorbed costs at the new Ratlam facility and expensive battery outsourcing. With management also deferring its full-year guidance update to Q3 amid surging debt and inventory bloat, the verdict tilts noticeably more cautious.",
+    "on": "2026-11-15"
    }
   },
   {
@@ -13670,6 +13749,10 @@
    "reviewed": {
     "on": "2026-11-08",
     "text": "Nothing material the points miss; the overnight verdict stands."
+   },
+   "call": {
+    "text": "The call reaffirmed full-year guidance of 15–16% revenue growth and ~21% EBITDA margins, crediting margin gains to operating leverage and a shift toward higher-acuity surgeries, but revealed that the Raipur facility’s breakeven is delayed to Q1 FY28 due to doctor poaching by a new competitor. While this adds caution to greenfield expansion timelines, it does not alter the overall \"ahead\" verdict given the exceptional profitability and cash generation of the mature core hospitals.",
+    "on": "2026-11-15"
    }
   },
   {
