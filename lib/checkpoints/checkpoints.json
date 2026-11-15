@@ -1485,7 +1485,11 @@
    "text": "Demerger scheme for the cluster business announced with a credible partner",
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "Warburg Pincus agreed on 13 Nov 2026 to buy the promoters' 38.51% of Pricol Autotech, the demerged clusters company, after it lists",
+   "resolvedOn": "2026-11-15",
+   "resolvedBy": "review",
+   "outcome": "Stays follow"
   },
   {
    "id": "pricol-q2fy27-3",

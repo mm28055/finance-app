@@ -866,3 +866,43 @@ Where it mattered, the reviews add what the points missed, mostly profit flatter
 - Tax drove the result at Dilip Buildcon (43% rate), Hind Rectifiers (63%), Viceroy (profit came only from a tax credit) and Rentomojo (no tax a year ago).
 - Other income was a large share of pre-tax profit at Man Industries, Triveni Turbine, Network People and Talbros.
 - No entry had an analysed call, so no checkpoints were judged from this pass.
+
+## 15 November 2026 (Sunday)
+
+**Checks:** the notes check still lists the same 30 problems it showed before I edited anything (companies in a sector with no verdict, such as Allcargo Global, Kwality Pharmaceuticals and Vidya Wires). They were already on master and are not from this run. Type check and picture check are clean. No stranded weekly-review branches: the 30 Sep and 18 Oct branches are already inside master.
+
+**Follow-ups handled: 3. Still open: 423** (296 results calls, 86 automatically settled checkpoints, 26 project follow-ups, 6 call drifts, 4 "Waiting" entries, 4 special calls and HEG's demerger). Most of this run went on the three "own" results calls and on the filings, news and results passes. I raised three new project follow-ups (Vikram Solar, Steelcast, Solarworld). ICICI Bank, CIE Automotive and Ador Welding still have no filed transcript on Screener.
+
+**Calls changed:** none.
+
+**New results calls, own names (transcripts read):**
+- **Uniparts India** (stays own). Record revenue of ₹379cr (+37%): construction +49%, and large tractors +10% while that market fell about 17%. FY27 revenue guidance raised again, to +24%. I revised the checkpoint and added a new one. Margin was 22% on Screener. Capex rises to about 4% of revenue (about ₹60cr over the next year), the first Mexico dispatch is in November, and net cash is ₹172cr after a ₹41cr dividend.
+- **Gland Pharma** (stays own). Revenue +23%, contract manufacturing +31%, profit +58%, but the FY27 guide stays at 15% at constant currency and the four-year 20% was not repeated (checkpoint partly met). Missed: the bag line is still waiting for its FDA inspection, and Cenexi lost €6m of EBITDA on planned summer shutdowns. Liquid vials are 92% full, so it added a ₹1,000cr brownfield block (running from FY30) and a Vizag greenfield site still to be costed. Both are now projects in the picture. The new CEO joins on 16 November.
+- **Samhi Hotels** (stays own). Same-store revenue +12.6% and RevPAR about +14% (met). The margin was 39.1% before the GST cost, which stops affecting comparisons from Q3. Net debt fell to ₹1,458cr (3.1x), and management expects it below 3x by about the end of FY27 (new checkpoint). The ₹750cr share authority is still unused and the pipeline is paid from its own cash (met). I also corrected a stored mistake: the W Hyderabad has 170 rooms at HITEC City and is on track for Q2 FY28. The 260-room hotel is a separate mid-scale hotel.
+
+**Top 12:** **Samhi** met all four Q2 checks; no trigger hit and I rolled the checks to Q3. **J Kumar Infra's** Q2 revenue of ₹1,539cr was just under its ₹1,550cr check, but H1 (₹3,050cr) and the 14.9% margin met theirs, so no trigger was hit. **Gland** (reserve) kept its guide. No numbers changed.
+
+**Filings pass, 13–14 November** (notes corrected):
+- **Va Tech Wabag:** on 14 November Saudi Arabia's water authority cancelled the 300 MLD Yanbu desalination tender for its own reasons, before it counter-signed the contract. Yanbu was the largest project in the ₹20,207cr September order book, so about ₹2,332cr (11–12%) drops out, leaving roughly ₹17,900cr. I corrected the note's order book, view, card and watch items. It stays follow.
+- **Pricol:** the promoters agreed to sell their 38.51% of the demerged clusters company, Pricol Autotech, to Warburg Pincus once it lists. That triggers an open offer; Pricol itself keeps its promoters. Checkpoint "demerger with a credible partner" is met; stays follow.
+- **Zaggle:** CARE's monitoring report says money from the share sale was mixed with day-to-day funds, and spending has fallen behind schedule with no board approval for the delay. Added to the view, card and watch items. I also fixed a stale card line that said the CFO post was interim. Stays wait.
+- **MSTC:** RBI gave in-principle approval for its TReDS invoice platform (11 November). The note and card no longer say it is "awaiting approval".
+- **Management records updated:** Inox Wind (CEO resigned; Saibaba Vutukuri MD of the wind business), EPack Prefab (new CFO Vikram Kumar Khaitan; note and card corrected), TAC Security, GSP Crop Science, RHI Magnesita, Hindware Home Innovation (new CEO and CFO) and Cyient DLM (new CFOs). Maharashtra Seamless has a new CFO but no management record to update.
+- **Logged only:** Solex's ₹628cr module order, Pennar's ₹1,430cr of orders, Oriana Power's ₹3,870cr battery-storage order, KNR's road-company sale (₹578cr gain), rating upgrades at Sai Life (IND AA), E2E (ICRA A) and Caliber (CRISIL A-), Alembic's FDA approval with exclusivity, a ₹8.27cr court security demand at Ganesh Benzoplast (old forged-guarantee case), SEBI's insider-code notice to PG Electroplast's CFO and company secretaries, Usha Martin's auditor note on the known ED and CBI case, Godavari Power's ₹2,795cr guarantee, Vishnu Chemicals' Parwada plant restarting, non-binding MoUs at Archean and Blue Jet, Relaxo's Kenya joint venture, Technocraft closing its fabric unit, Belrise's merger of H One India and Salzer's Saudi project slipping to April 2027.
+
+**News pass, 13 November:** 11 entries had a clear reason, and none was very important. They were price moves on results at Amber, Automotive Axles, Bonfiglioli, Fiem, Q-Line and Sharda Motor, Apollo Micro's index inclusion, Apsis' order, Sigma's board resignations (already in the note) and a Control Print promoter purchase. MSTC's move came from its TReDS filing, which the filings pass covers. Nothing else in the notes changed.
+
+**Waiting entries:** nothing new for Ganesh Benzoplast's sale, the UPI merchant fee, the NPPA cancer-drug cap (Beta Drugs, HCG) or HEG's electrode company listing; all left open with today's date.
+
+**Results pass:** all 84 open entries were reviewed against Screener. 80 matched. I corrected four in place:
+- **RACL Geartech:** revenue was ₹142cr (+21%), not ₹137cr. Verdict changed from mixed to ahead.
+- **ZF CV:** ₹1,191cr revenue and ₹124cr profit, not ₹1,215cr and ₹128cr.
+- **Manorama:** ₹456cr revenue and ₹88cr profit, not ₹459cr and ₹81cr.
+- **Techno Electric:** operating profit ₹148cr and net profit ₹136cr (+11%), not ₹181cr and ₹158cr. Verdict changed from ahead to mixed.
+
+What the reviews add:
+- Unusual tax rates moved profit at Orchid and SPML (no tax), Royal Orchid, GE Power, IZMO and Black Box (5–11%), and at Jubilant Pharmova (50%), Stallion (57%), Everest Kanto (42%) and Wakefit (40%).
+- **AXISCADES** and **Vikram Solar** earned less before other income than their profit suggests.
+- **KNR's** first half includes a ₹578cr sale gain.
+
+No entry had an analysed call, so no checkpoints were judged from this pass. One note: the overnight call summary for Samhi says a ₹750cr equity raise was "shelved", but the transcript does not say so. I relied only on the transcript.
