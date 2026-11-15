@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-15",
  "companies": [
   {
    "company": "Krishna Defence & Allied Industries",
@@ -9217,17 +9217,25 @@
      "since": "2024",
      "family": false,
      "bio": "A chartered accountant with more than 19 years in finance and strategy. He was earlier CFO of Asian Footwears, Joint Vice President – Business Strategy at JPFL Films and Jindal Poly Films, Associate Vice President – Business Planning at Burger King, Senior Manager – Finance at Ambuja Cements, and Senior Associate at PwC. He joined in 2024, worked on the GEF Capital fund-raise and the 2025 IPO, and now runs financial controls, treasury, use of IPO money and investor communication."
+    },
+    {
+     "name": "Vikram Kumar Khaitan",
+     "role": "Chief Financial Officer (from 14 November 2026)",
+     "since": "2026",
+     "family": false,
+     "bio": "A chartered accountant and company secretary with over two decades of experience; most recently CFO of Kuantum Papers (company filing, 14 Nov 2026)."
     }
    ],
-   "changes": "CFO Rahul Agarwal resigned (letter of 15 July 2026, effective 9 November 2026); no successor named.",
+   "changes": "CFO Rahul Agarwal resigned (letter of 15 July 2026, effective 9 November 2026); no successor named. Vikram Kumar Khaitan was appointed CFO from 14 Nov 2026.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_31143_EPACKPEB_2025_2026_A_10022305_02092026185741.pdf",
     "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1696687_20072026024959_WEB.xml",
     "https://nsearchives.nseindia.com/corporate/EPACKPREFAB_14072026211705_Intimation_SMP_Resignation.pdf",
     "https://nsearchives.nseindia.com/corporate/EPACKPREFAB_30052026193212_Intimation_SMP_30052026.pdf",
-    "https://nsearchives.nseindia.com/corporate/EPACKPREFAB_09112026191925_Intimation_Resignation_CFO.pdf"
+    "https://nsearchives.nseindia.com/corporate/EPACKPREFAB_09112026191925_Intimation_Resignation_CFO.pdf",
+    "https://nsearchives.nseindia.in/corporate/EPACKPREFAB_14112026154716_SE_CFO_14112026__1_.pdf"
    ],
-   "updatedOn": "2026-11-11"
+   "updatedOn": "2026-11-15"
   },
   {
    "company": "Interarch Building",
@@ -12835,9 +12843,21 @@
      "since": "CFO; also CEO since May 2024",
      "family": false,
      "bio": "A chartered accountant, LL.B. and Delhi University commerce graduate with more than 29 years of experience in project finance, investor relations, foreign-currency borrowing, treasury, overseas subsidiaries, indirect tax, insurance, ERP roll-outs, internal audit and accounts. He was the company's CFO and was also made CEO in May 2024 after CEO Salil Kapoor resigned in March 2024. He signs the accounts and the CEO/CFO certificate."
+    },
+    {
+     "name": "Nitesh Raj",
+     "role": "Chief Executive Officer (from 13 November 2026; earlier Business Head – Consumer Business)",
+     "since": "2026",
+     "family": false
+    },
+    {
+     "name": "Amit Bali",
+     "role": "Chief Financial Officer (from 13 November 2026; earlier Finance Controller)",
+     "since": "2026",
+     "family": false
     }
    ],
-   "changes": "CEO & CFO Naveen Malik and company secretary Payal Puri resigned from the listed company effective 3 Nov 2026 in an internal reorganisation; both move to the subsidiary Hindware Limited. No successor named in the filing. Shashvat Somany joined the listed board on 1 Jul 2026 and becomes Joint MD of subsidiary Hindware Limited on 1 Oct 2026. Vice President (sourcing & NPD) Nikhil Maheshwari resigned from 30 Jun 2026. President – Sales Mahesh Choudhary left in October 2025; Nitesh Raj became Business Head – Consumer in August 2025. Non-executive director Girdhari Lal Sultania left in March 2026 and Ram Babu Kabra joined.",
+   "changes": "CEO & CFO Naveen Malik and company secretary Payal Puri resigned from the listed company effective 3 Nov 2026 in an internal reorganisation; both move to the subsidiary Hindware Limited. No successor named in the filing. Shashvat Somany joined the listed board on 1 Jul 2026 and becomes Joint MD of subsidiary Hindware Limited on 1 Oct 2026. Vice President (sourcing & NPD) Nikhil Maheshwari resigned from 30 Jun 2026. President – Sales Mahesh Choudhary left in October 2025; Nitesh Raj became Business Head – Consumer in August 2025. Non-executive director Girdhari Lal Sultania left in March 2026 and Ram Babu Kabra joined. On 13 Nov 2026 the board made Nitesh Raj (business head, consumer business) CEO and Amit Bali (finance controller) CFO, and named Kushal Jain company secretary.",
    "sources": [
     "https://nsearchives.nseindia.com/corporate/SHIL_04112026172146_HHIL_SEDisclsoure_ChangeinKMP.pdf",
     "https://nsearchives.nseindia.com/annual_reports/AR_30004_HINDWAREAP_2025_2026_A_11507255_25072026182220.pdf",
@@ -12845,9 +12865,10 @@
     "https://nsearchives.nseindia.com/corporate/SHIL_29062026170238_SE_JMDAppointment.pdf",
     "https://nsearchives.nseindia.com/corporate/HINDWAREAP_28052024185355_Intimationregardingchangeinmanagement.pdf",
     "https://nsearchives.nseindia.com/corporate/SHIL_19062026182736_SEChangeinSMP.pdf",
-    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1693862_16072026122246_WEB.xml"
+    "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1693862_16072026122246_WEB.xml",
+    "https://nsearchives.nseindia.com/corporate/SHIL_13112026175340_HHIL_BMoutcome_13112026.pdf"
    ],
-   "updatedOn": "2026-11-06"
+   "updatedOn": "2026-11-15"
   },
   {
    "company": "HEG",
@@ -12920,10 +12941,16 @@
     },
     {
      "name": "Azim Syed",
-     "role": "Chief Financial Officer – India Region",
+     "role": "Chief Financial Officer – India Region (moves to a global role in Vienna from 1 Jan 2027)",
      "since": "Head of finance for India since April 2024 (CFO from 1 May 2024); whole-time director until 30 Jun 2026",
      "family": false,
      "bio": "Joined the RHI Magnesita group in 2019, where he was responsible for global supply chain and integrated business planning before moving to India as head of finance in 2024. His earlier career was in supply-chain roles across hi-tech, telecom, consumer goods, retail and manufacturing, focused on supply-chain transformation. He led the transport-management and 'Everest' digital systems roll-outs at the group. He stepped off the board on 30 June 2026 for personal reasons but continues as CFO."
+    },
+    {
+     "name": "Abhishek Bajaj",
+     "role": "Chief Financial Officer from 1 January 2027 (now CFO of the subsidiary RHI Magnesita India Refractories)",
+     "since": "2027",
+     "family": false
     },
     {
      "name": "Sanjay Kumar",
@@ -12954,14 +12981,15 @@
      "bio": "Has about 26 years in manufacturing in chemicals, polymers, pulp and fibre. He worked at Reliance Industries, Indorama Synthetics and SRF before joining the company in 2023, and now runs its Indian plants."
     }
    ],
-   "changes": "Parmod Sagar resigned as MD & CEO on 30 Jun 2026 for personal reasons and stayed as non-executive Chairman; Pankaj Malhan became MD & CEO on 1 Jul 2026. CFO Azim Syed resigned as a whole-time director the same day but continues as CFO. The FY26 annual report was not yet filed when this was written.",
+   "changes": "Parmod Sagar resigned as MD & CEO on 30 Jun 2026 for personal reasons and stayed as non-executive Chairman; Pankaj Malhan became MD & CEO on 1 Jul 2026. CFO Azim Syed resigned as a whole-time director the same day but continues as CFO. The FY26 annual report was not yet filed when this was written. On 13 Nov 2026 the company said CFO Azim Syed moves to a global role in Vienna from 1 Jan 2027, and Abhishek Bajaj (CFO of RHI Magnesita India Refractories) becomes CFO from that date.",
    "sources": [
     "https://nsearchives.nseindia.com/corporate/RHIM_30062026192852_merged_ocred.pdf",
     "https://www.rhimagnesitaindia.com/about/leadership-team",
     "https://nsearchives.nseindia.com/corporate/xbrl/SHP_1694094_16072026031806_WEB.xml",
-    "https://www.thecorporatetreasurer.com/article/rhi-magnesita-india-names-azim-syed-as-cfo/495846"
+    "https://www.thecorporatetreasurer.com/article/rhi-magnesita-india-names-azim-syed-as-cfo/495846",
+    "https://nsearchives.nseindia.com/corporate/RHIM_13112026185528_Press_Release.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-15"
   },
   {
    "company": "IFGL Refractories",
@@ -13481,6 +13509,12 @@
    "styleNote": "Part of the INOXGFL group controlled by Vivek Jain's family. His son Devansh Jain, who started the company, is a whole-time director and leads the group's renewables businesses. A hired CEO runs day-to-day operations, and the group's renewables CEO sits above him. Promoters own about 44%, mainly through Inox Leasing & Finance (27.7%) and two LLPs. The 2026 AGM notice seeks approval for loans of up to ₹600cr from Devansh Jain.",
    "people": [
     {
+     "name": "Saibaba Vutukuri",
+     "role": "Managing Director (Wind Business), INOXGFL Group, from 14 Nov 2026",
+     "since": "2026",
+     "family": false
+    },
+    {
      "name": "Devansh Jain",
      "role": "Whole-time Director (Promoter)",
      "since": "Started Inox Wind in 2009; whole-time director",
@@ -13498,7 +13532,7 @@
     },
     {
      "name": "Sanjeev Agarwal",
-     "role": "Chief Executive Officer",
+     "role": "Chief Executive Officer (resigned 13 Nov 2026; adviser until 31 Dec 2026)",
      "since": "June 2025",
      "family": false,
      "bio": "Sanjeev Agarwal has a mechanical engineering degree from IIT Roorkee and an MBA from Pune University. He has more than 34 years in project execution, sales, supply chain and change management across T&D, fossil power and nuclear steam turbines, in Asia-Pacific, the Americas and Europe. He previously worked at TBW, Alstom, GE and KEC International. He became CEO on 1 June 2025, replacing Kailash Lal Tarachandani, who moved up to group CEO for renewables."
@@ -13518,12 +13552,13 @@
      "bio": "Shivam Tandon is a chartered accountant with more than 17 years in manufacturing finance: reporting, budgeting, cost control, banking, tax and audit. Before the INOXGFL group he worked at the BC Jindal Group, Samvardhana Motherson and Tata Steel. His previous role was CFO of Inox Wind Energy."
     }
    ],
-   "changes": "Sanjeev Agarwal replaced Kailash Tarachandani as CEO on 1 June 2025. Non-executive director Urvashi Saxena left on 30 June 2025. Manoj Dixit was re-appointed as whole-time director from December 2025.",
+   "changes": "Sanjeev Agarwal replaced Kailash Tarachandani as CEO on 1 June 2025. Non-executive director Urvashi Saxena left on 30 June 2025. Manoj Dixit was re-appointed as whole-time director from December 2025. CEO Sanjeev Agarwal resigned with effect from 13 Nov 2026 (adviser until 31 Dec 2026); Saibaba Vutukuri was appointed Managing Director (Wind Business) of the INOXGFL Group from 14 Nov 2026.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_31331_INOXWIND_2025_2026_A_8279078_03092026221810.pdf",
-    "https://www.dnaindia.com/business/report-meet-man-devansh-jain-son-of-billionaire-runs-rs-27221-crore-company-inox-wind-is-married-to-avarna-jain-3121603"
+    "https://www.dnaindia.com/business/report-meet-man-devansh-jain-son-of-billionaire-runs-rs-27221-crore-company-inox-wind-is-married-to-avarna-jain-3121603",
+    "https://nsearchives.nseindia.com/corporate/INOXWIND_13112026180100_IWL_Results_FY2026_27_LR_2.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-15"
   },
   {
    "company": "Exicom Tele-Sys.",
@@ -14237,10 +14272,17 @@
     },
     {
      "name": "R M Subramanian",
-     "role": "Chief Financial Officer",
+     "role": "Chief Financial Officer (resigned 12 Nov 2026)",
      "since": "October 2025",
      "family": false,
      "bio": "An engineer from BITS Pilani and an alumnus of IIM Bangalore, with over 25 years of experience across EMS, energy, manufacturing and consulting. Just before joining he was Group CFO of Avalon Technologies, overseeing corporate finance, reporting, controls, tax and secretarial work. Earlier finance roles include the Sanmar group, Cairn India and Essar Oil. He replaced Shrinivas Kulkarni, who moved to a role within the Cyient group."
+    },
+    {
+     "name": "Suresh Narayan",
+     "role": "Chief Financial Officer (from 13 November 2026)",
+     "since": "2026",
+     "family": false,
+     "bio": "With the Cyient organisation since 2006 and part of the core team for the 2023 IPO; holds an MBA (company filing, 13 Nov 2026)."
     },
     {
      "name": "Kaushal Jadia",
@@ -14258,14 +14300,15 @@
      "bio": "Has more than 20 years of experience in advanced semiconductor packaging, foundry operations, capital equipment and deep-tech manufacturing. He chairs the 3DIC Technical Advisory Board at Sematech and the Packaging Technical Advisory Board at the Semiconductor Research Corporation. He holds an MS in chemical engineering from the University of Kansas and a bachelor's in engineering from Osmania University, Hyderabad. He joined as senior management in May 2026 to lead strategy and growth."
     }
    ],
-   "changes": "CFO Shrinivas Kulkarni stepped down on 24 October 2025 (moved within the Cyient group); R M Subramanian took over. Head of Operations Mujeeb Rahiman resigned with effect from 30 April 2026. Rajendra Velagapudi replaced Anthony Montalbano as CEO from 1 July 2025. Ramakanth Alapati joined as President & Chief Strategy and Growth Officer on 18 May 2026.",
+   "changes": "CFO Shrinivas Kulkarni stepped down on 24 October 2025 (moved within the Cyient group); R M Subramanian took over. Head of Operations Mujeeb Rahiman resigned with effect from 30 April 2026. Rajendra Velagapudi replaced Anthony Montalbano as CEO from 1 July 2025. Ramakanth Alapati joined as President & Chief Strategy and Growth Officer on 18 May 2026. CFO R M Subramanian resigned on 12 Nov 2026; Suresh Narayan, with the group since 2006 and on the 2023 IPO team, became CFO from 13 Nov 2026.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/AR_29367_CYIENTDLM_2025_2026_A_13246172_08062026225948.pdf (FY26 annual report: board, senior leadership, KMP and SMP lists, AGM profile, inter-se relationships)",
     "https://bsmedia.business-standard.com/_media/bs/data/announcements/bse/24102025/ceaf5cd5-0728-4f54-b002-f4aff77d5e1f.pdf (change in KMP, 24 Oct 2025)",
     "https://www.cyient.com/hubfs/dlm/investor/Statutory%20Filings/Cyient_DLM_KMP_Intimation.pdf (CTO appointment and profile)",
-    "https://nsearchives.nseindia.com/corporate/9880504433_18052026212316_Reg_30_SMP_appointment_Rama_Alapati.pdf (senior management appointment, 18 May 2026)"
+    "https://nsearchives.nseindia.com/corporate/9880504433_18052026212316_Reg_30_SMP_appointment_Rama_Alapati.pdf (senior management appointment, 18 May 2026)",
+    "https://nsearchives.nseindia.com/corporate/9880504433_13112026164834_DLM-Change_in_CFO_Nov_26_signed.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-15"
   },
   {
    "company": "Centum Electronics",
@@ -32696,7 +32739,7 @@
     },
     {
      "name": "Charanjit Singh",
-     "role": "Whole-time Director",
+     "role": "Non-Executive Director (whole-time director until Nov 2026)",
      "since": "Board since August 2016",
      "family": true,
      "relation": "Father of Chairman & CEO Trishneet Arora",
@@ -32705,19 +32748,26 @@
     },
     {
      "name": "Malkit Singh Bharaj",
-     "role": "Chief Financial Officer",
+     "role": "Group Finance Director (CFO until 14 Nov 2026)",
      "since": "December 2024",
      "family": false,
      "relation": "Not related",
      "bio": "CFO and KMP since 7 December 2024; he signs the financial statements with the Chairman and the whole-time director. The annual report and website do not give his education or earlier employers."
+    },
+    {
+     "name": "Rajinder Singh",
+     "role": "Chief Financial Officer (from 15 November 2026)",
+     "since": "2026",
+     "family": false
     }
    ],
-   "changes": "Company Secretary Chinmay Chokshi resigned in Mar 2026; Preeti Rathi was appointed in Jun 2026. Trishneet Arora's appointment as Chairman & MD from 2 Sep 2026 is up for shareholder approval at the 2026 AGM. Hector Balderas, a former New Mexico Attorney General, joined as an independent director in May 2026.",
+   "changes": "Company Secretary Chinmay Chokshi resigned in Mar 2026; Preeti Rathi was appointed in Jun 2026. Trishneet Arora's appointment as Chairman & MD from 2 Sep 2026 is up for shareholder approval at the 2026 AGM. Hector Balderas, a former New Mexico Attorney General, joined as an independent director in May 2026. CFO Malkit Singh Bharaj stepped down on 14 Nov 2026 to become Group Finance Director, and Rajinder Singh became CFO from 15 Nov 2026; whole-time director Charanjit Singh became a non-executive director.",
    "sources": [
     "https://nsearchives.nseindia.com/annual_reports/SME_AR_32003_TAC_2025_2026_U_33140436_09092026111057.pdf",
-    "https://tacsecurity.com/about-us/"
+    "https://tacsecurity.com/about-us/",
+    "https://nsearchives.nseindia.in/corporate/TAC_14112026174610_final_outcome.pdf"
    ],
-   "updatedOn": "2026-09-29"
+   "updatedOn": "2026-11-15"
   },
   {
    "company": "IZMO",
@@ -37606,16 +37656,17 @@
      "bio": "Fellow of the Institute of Company Secretaries (FCS 8018)."
     }
    ],
-   "changes": "Listed on NSE and BSE on 24 March 2026. Independent directors listed by data providers include Apurva Mashruwala, Ashish Mehta, Bharat Shah and Nakul Sharedalal; Narayanan Nair is also an independent director of Prasol Chemicals.",
+   "changes": "Listed on NSE and BSE on 24 March 2026. Independent directors listed by data providers include Apurva Mashruwala, Ashish Mehta, Bharat Shah and Nakul Sharedalal; Narayanan Nair is also an independent director of Prasol Chemicals. Whole-time director Shail Jayesh Shah was formally appointed CFO (key managerial person) on 13 Nov 2026; the head of international business retired.",
    "sources": [
     "Q1 FY27 earnings call, 12 August 2026 (transcript filed 17 August 2026)",
     "https://www.icra.in/Rating/GetRationalReportFilePdf?id=142755 (ICRA, 29 April 2026)",
     "https://www.businesstoday.in/amp/markets/ipo-corner/story/gsp-crop-science-ipo-opens-on-march-16-check-price-band-issue-size-key-dates-more-520246-2026-03-12",
     "https://insights.dsij.in/dsijarticledetail/gsp-crop-science-ipo-agrochemical-manufacturer-expanding-product-portfolio-should-you-subscribe-55873",
     "https://www.voguestock.in/fundamental/board-of-directors/gsp-crop-science-ltd",
-    "https://www.tofler.in/shail-jayesh-shah/director/07543594"
+    "https://www.tofler.in/shail-jayesh-shah/director/07543594",
+    "https://nsearchives.nseindia.com/corporate/GSP123_13112026210314_BMOutcomesigned.pdf"
    ],
-   "updatedOn": "2026-10-21"
+   "updatedOn": "2026-11-15"
   },
   {
    "company": "Vidya Wires",
