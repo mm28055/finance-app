@@ -293,7 +293,10 @@
    "target": 32,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "37.7%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "unimech-aerospace-q2fy27-1",
@@ -1857,7 +1860,10 @@
    "ifMet": "Buy",
    "ifMissed": "Stay follow",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "8.0%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "carraro-india-q2fy27-2",
@@ -4546,7 +4552,10 @@
    "target": 13,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "13.1%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "tatva-chintan-q2fy27-1",
@@ -4714,7 +4723,10 @@
    "target": 22,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "23.2%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "anupam-rasayan-q2fy27-2",
@@ -4934,7 +4946,10 @@
    "target": 16,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "11.7%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "tanfac-industries-q3fy27-1",
@@ -6349,7 +6364,10 @@
    "target": 13,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "12.4%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "afcons-infra-q2fy27-1",
@@ -7082,7 +7100,10 @@
    "due": "Q2 FY27",
    "ifMissed": "View worsens",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "21.9%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "rites-q4fy27-1",
@@ -7282,7 +7303,10 @@
    "due": "Q2 FY27",
    "ifMet": "Buy once revenue grows again and Pune–Shirur is financed",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹1,035cr",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "welspun-enterp-q2fy27-2",
@@ -8083,7 +8107,10 @@
    "due": "Q2 FY27",
    "ifMissed": "View turns worse",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "7.8%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "all-time-plastic-q3fy27-1",
@@ -9863,7 +9890,10 @@
    "target": 140,
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹195cr",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "yash-highvoltage-h1fy27-2",
@@ -11720,7 +11750,10 @@
    "target": 30,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "30.5%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "happy-forgings-q3fy27-1",
@@ -13691,7 +13724,10 @@
    "target": 200,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "₹182cr",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "the-anup-enginee-q2fy27-2",
@@ -13703,7 +13739,10 @@
    "target": 15,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "9.6%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "the-anup-enginee-q2fy27-3",
@@ -13814,7 +13853,10 @@
    "target": 14,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "17.4%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "aditya-infotech-q4fy27-1",
@@ -14725,7 +14767,10 @@
    "target": 40,
    "due": "H1 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "93.9%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "concord-control-h2fy27-1",
@@ -15185,7 +15230,10 @@
    "due": "Q2 FY27",
    "ifMet": "Changes the view for the better",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "14.4%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "venus-pipes-and-tubes-q3fy27-1",
@@ -16937,7 +16985,10 @@
    "target": 33,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "21.8%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "supriya-lifescience-q3fy27-1",
@@ -18074,7 +18125,10 @@
    "target": 21,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "22.8%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "marksans-pharma-q4fy27-1",
@@ -19287,7 +19341,10 @@
    "target": 45,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "partly",
+   "actual": "44.2%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "macfos-q2fy27-3",
@@ -19551,7 +19608,10 @@
    "target": 600,
    "due": "Q2 FY27",
    "createdOn": "2026-09-30",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹674cr",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "shiprocket-q4fy27-1",
@@ -20689,7 +20749,10 @@
    "target": 5,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "5.3%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "entero-q4fy27-1",
@@ -21822,7 +21885,10 @@
    "target": 30,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "42.6%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "mobavenue-ai-tech-q2fy27-3",
@@ -21834,7 +21900,10 @@
    "target": 20,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "met",
+   "actual": "20.8%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "mobavenue-ai-tech-q2fy27-4",
@@ -22243,7 +22312,10 @@
    "target": 30,
    "due": "Q2 FY27",
    "createdOn": "2026-09-29",
-   "status": "pending"
+   "status": "missed",
+   "actual": "26.9%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "amagi-media-labs-q4fy27-1",
@@ -36064,7 +36136,10 @@
    "ifMet": "The in-house DCR cells are protecting the margin even as it passes savings to customers",
    "ifMissed": "Price cuts to win volume or falling panel prices are eating the margin",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "partly",
+   "actual": "17.1%",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "utlsolar-q2fy27-2",
@@ -37064,7 +37139,10 @@
    "ifMet": "STEAG is converting its ₹5,200cr order book on schedule",
    "ifMissed": "Contract ramp-up is slower than promised; the FY27 guide is at risk",
    "createdOn": "2026-10-21",
-   "status": "pending"
+   "status": "met",
+   "actual": "₹1,272cr",
+   "resolvedOn": "2026-11-16",
+   "resolvedBy": "auto"
   },
   {
    "id": "bluspring-q4fy27-1",
