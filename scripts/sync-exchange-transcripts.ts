@@ -84,6 +84,8 @@ interface Doc {
     filedOn: Date;          // upper bound for the call date
     subject: string;
     windowCheck: boolean;   // Screener entries are dated by month only: re-check the call date
+    /** Start of the window the call date is checked against (default: the run's --from). */
+    windowFrom?: Date;
     /** Subject did not say "transcript": kept only if the text reads as one. */
     probe?: boolean;
     /** The PDF actually read, when the filing was a cover letter linking to it. */
@@ -312,7 +314,7 @@ async function screenerDocs(targets: ScreenerTarget[], note: (co: Company, actio
                 for (const c of hits) {
                     const monthEnd = Date.UTC(c.month.getUTCFullYear(), c.month.getUTCMonth() + 1, 0, 23, 59);
                     const filedOn = new Date(Math.min(monthEnd, r.to.getTime(), Date.now()));
-                    docs.push({ co, source: 'SCREENER', url: c.url, filedOn, subject: 'Screener concall transcript', windowCheck: r.windowCheck });
+                    docs.push({ co, source: 'SCREENER', url: c.url, filedOn, subject: 'Screener concall transcript', windowCheck: r.windowCheck, windowFrom: r.from });
                 }
             }
         } catch (e: any) {
@@ -403,7 +405,7 @@ async function main() {
 
         // --- What is it, and when was it held? ---
         const callDate = istNoon(detectCallDate(text, d.filedOn) || d.filedOn);
-        if (d.windowCheck && (callDate.getTime() < fromDate.getTime() - DAY || callDate.getTime() > toDate.getTime() + DAY)) {
+        if (d.windowCheck && (callDate.getTime() < (d.windowFrom || fromDate).getTime() - DAY || callDate.getTime() > toDate.getTime() + DAY)) {
             log(d, '?', '-', `skipped (held ${istDayKey(callDate)}, outside the window)`);
             return;
         }
@@ -576,8 +578,12 @@ async function main() {
         } else try { listed = await nseListedIsins(); } catch (e: any) { console.warn(`NSE equity lists unavailable (${e.message}) — BSE-only read skipped`); }
         if (listed) {
             const bseOnly = companies.filter(c => c.isin && !listed!.has(c.isin));
-            for (const co of bseOnly) add(co, { from: fromDate, to: toDate, windowCheck: true });
-            console.log(`Screener: ${bseOnly.length} companies not listed on NSE`);
+            // Screener lists BSE-only (mostly SME) transcripts up to a few weeks after the call, so
+            // these companies get a 30-day window: in Nov 2026 seven such calls held 21 Oct–6 Nov
+            // appeared only after the 7-day window had passed them. Calls already held are skipped.
+            const bseFrom = new Date(Math.min(fromDate.getTime(), toDate.getTime() - 30 * DAY));
+            for (const co of bseOnly) add(co, { from: bseFrom, to: toDate, windowCheck: true });
+            console.log(`Screener: ${bseOnly.length} companies not listed on NSE (window from ${ddmmyyyy(bseFrom)})`);
         }
 
         // Newest quarter with filed results (non-blank figures) per visible company.
